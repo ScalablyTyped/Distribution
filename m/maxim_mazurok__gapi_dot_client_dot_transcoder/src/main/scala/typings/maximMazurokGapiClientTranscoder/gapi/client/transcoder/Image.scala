@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
   /** Target image opacity. Valid values: `1` (solid, default), `0` (transparent). */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Normalized image resolution, based on output video resolution. Valid values: `0.0`–`1.0`. To respect the original image aspect ratio, set either `x` or `y` to `0.0`. To use the
     * original image resolution, set both `x` and `y` to `0.0`.
     */
-  var resolution: js.UndefOr[NormalizedCoordinate] = js.native
+  var resolution: js.UndefOr[NormalizedCoordinate] = js.undefined
   
   /** Required. URI of the image in Cloud Storage. For example, `gs://bucket/inputs/image.jpeg`. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object Image {
   

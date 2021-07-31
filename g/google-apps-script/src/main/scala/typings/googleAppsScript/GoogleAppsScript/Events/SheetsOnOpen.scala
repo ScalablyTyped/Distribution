@@ -5,14 +5,14 @@ import typings.googleAppsScript.GoogleAppsScript.Script.AuthMode
 import typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Spreadsheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // External interfaces
-@js.native
-trait SheetsOnOpen extends AppsScriptEvent {
+trait SheetsOnOpen
+  extends StObject
+     with AppsScriptEvent {
   
-  var source: Spreadsheet = js.native
+  var source: Spreadsheet
 }
 object SheetsOnOpen {
   

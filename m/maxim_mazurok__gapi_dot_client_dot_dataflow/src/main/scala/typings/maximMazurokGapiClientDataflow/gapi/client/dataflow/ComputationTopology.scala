@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComputationTopology extends StObject {
   
   /** The ID of the computation. */
-  var computationId: js.UndefOr[String] = js.native
+  var computationId: js.UndefOr[String] = js.undefined
   
   /** The inputs to the computation. */
-  var inputs: js.UndefOr[js.Array[StreamLocation]] = js.native
+  var inputs: js.UndefOr[js.Array[StreamLocation]] = js.undefined
   
   /** The key ranges processed by the computation. */
-  var keyRanges: js.UndefOr[js.Array[KeyRangeLocation]] = js.native
+  var keyRanges: js.UndefOr[js.Array[KeyRangeLocation]] = js.undefined
   
   /** The outputs from the computation. */
-  var outputs: js.UndefOr[js.Array[StreamLocation]] = js.native
+  var outputs: js.UndefOr[js.Array[StreamLocation]] = js.undefined
   
   /** The state family values. */
-  var stateFamilies: js.UndefOr[js.Array[StateFamilyConfig]] = js.native
+  var stateFamilies: js.UndefOr[js.Array[StateFamilyConfig]] = js.undefined
   
   /** The system stage name. */
-  var systemStageName: js.UndefOr[String] = js.native
+  var systemStageName: js.UndefOr[String] = js.undefined
 }
 object ComputationTopology {
   

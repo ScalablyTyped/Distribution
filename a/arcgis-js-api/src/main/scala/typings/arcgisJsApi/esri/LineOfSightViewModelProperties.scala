@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineOfSightViewModelProperties extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait LineOfSightViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightViewModel.html#observer)
     */
-  var observer: js.UndefOr[PointProperties] = js.native
+  var observer: js.UndefOr[PointProperties] = js.undefined
   
   /**
     * A collection of [LineOfSightTarget](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightTarget.html) containing the target location and the analysis results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightViewModel.html#targets)
     */
-  var targets: js.UndefOr[CollectionProperties[LineOfSightTargetProperties]] = js.native
+  var targets: js.UndefOr[CollectionProperties[LineOfSightTargetProperties]] = js.undefined
   
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightViewModel.html#view)
     */
-  var view: js.UndefOr[SceneViewProperties] = js.native
+  var view: js.UndefOr[SceneViewProperties] = js.undefined
 }
 object LineOfSightViewModelProperties {
   

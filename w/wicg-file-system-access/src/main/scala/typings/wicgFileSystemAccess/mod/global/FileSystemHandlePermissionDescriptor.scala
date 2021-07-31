@@ -2,18 +2,16 @@ package typings.wicgFileSystemAccess.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileSystemHandlePermissionDescriptor extends StObject {
   
-  var mode: js.UndefOr[FileSystemPermissionMode] = js.native
+  var mode: js.UndefOr[FileSystemPermissionMode] = js.undefined
   
   /**
     * @deprecated Old property just for Chromium <=85. Use `mode: ...` in the new API.
     */
-  var writable: js.UndefOr[Boolean] = js.native
+  var writable: js.UndefOr[Boolean] = js.undefined
 }
 object FileSystemHandlePermissionDescriptor {
   

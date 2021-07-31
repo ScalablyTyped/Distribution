@@ -2,51 +2,49 @@ package typings.awsSdk.braketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateQuantumTaskRequest extends StObject {
   
   /**
     * The action associated with the task.
     */
-  var action: JsonValue = js.native
+  var action: JsonValue
   
   /**
     * The client token associated with the request.
     */
-  var clientToken: String64 = js.native
+  var clientToken: String64
   
   /**
     * The ARN of the device to run the task on.
     */
-  var deviceArn: DeviceArn = js.native
+  var deviceArn: DeviceArn
   
   /**
     * The parameters for the device to run the task on.
     */
-  var deviceParameters: js.UndefOr[CreateQuantumTaskRequestDeviceParametersString] = js.native
+  var deviceParameters: js.UndefOr[CreateQuantumTaskRequestDeviceParametersString] = js.undefined
   
   /**
     * The S3 bucket to store task result files in.
     */
-  var outputS3Bucket: CreateQuantumTaskRequestOutputS3BucketString = js.native
+  var outputS3Bucket: CreateQuantumTaskRequestOutputS3BucketString
   
   /**
     * The key prefix for the location in the S3 bucket to store task results in.
     */
-  var outputS3KeyPrefix: CreateQuantumTaskRequestOutputS3KeyPrefixString = js.native
+  var outputS3KeyPrefix: CreateQuantumTaskRequestOutputS3KeyPrefixString
   
   /**
     * The number of shots to use for the task.
     */
-  var shots: CreateQuantumTaskRequestShotsLong = js.native
+  var shots: CreateQuantumTaskRequestShotsLong
   
   /**
     * Tags to be added to the quantum task you're creating.
     */
-  var tags: js.UndefOr[TagsMap] = js.native
+  var tags: js.UndefOr[TagsMap] = js.undefined
 }
 object CreateQuantumTaskRequest {
   

@@ -3,21 +3,21 @@ package typings.reactLeaflet.mod
 import typings.leaflet.mod.LatLngExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.leaflet.mod.LayerOptions because Already inherited
 - typings.leaflet.mod.InteractiveLayerOptions because Already inherited
 - typings.leaflet.mod.PathOptions because Already inherited
-- typings.leaflet.mod.PolylineOptions because var conflicts: attribution, bubblingMouseEvents, className, color, dashArray, dashOffset, fill, fillColor, fillOpacity, fillRule, interactive, lineCap, lineJoin, opacity, pane, renderer, stroke, weight. Inlined noClip, smoothFactor */ @js.native
-trait PolygonProps extends PathProps {
+- typings.leaflet.mod.PolylineOptions because var conflicts: attribution, bubblingMouseEvents, className, color, dashArray, dashOffset, fill, fillColor, fillOpacity, fillRule, interactive, lineCap, lineJoin, opacity, pane, renderer, stroke, weight. Inlined noClip, smoothFactor */ trait PolygonProps
+  extends StObject
+     with PathProps {
   
-  var noClip: js.UndefOr[Boolean] = js.native
+  var noClip: js.UndefOr[Boolean] = js.undefined
   
-  var positions: js.Array[(js.Array[js.Array[LatLngExpression] | LatLngExpression]) | LatLngExpression] = js.native
+  var positions: js.Array[(js.Array[js.Array[LatLngExpression] | LatLngExpression]) | LatLngExpression]
   
-  var smoothFactor: js.UndefOr[Double] = js.native
+  var smoothFactor: js.UndefOr[Double] = js.undefined
 }
 object PolygonProps {
   

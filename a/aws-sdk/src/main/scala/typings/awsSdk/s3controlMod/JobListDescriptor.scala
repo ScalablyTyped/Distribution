@@ -2,51 +2,49 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobListDescriptor extends StObject {
   
   /**
     * A timestamp indicating when the specified job was created.
     */
-  var CreationTime: js.UndefOr[JobCreationTime] = js.native
+  var CreationTime: js.UndefOr[JobCreationTime] = js.undefined
   
   /**
     * The user-specified description that was included in the specified job's Create Job request.
     */
-  var Description: js.UndefOr[NonEmptyMaxLength256String] = js.native
+  var Description: js.UndefOr[NonEmptyMaxLength256String] = js.undefined
   
   /**
     * The ID for the specified job.
     */
-  var JobId: js.UndefOr[typings.awsSdk.s3controlMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.s3controlMod.JobId] = js.undefined
   
   /**
     * The operation that the specified job is configured to run on each object listed in the manifest.
     */
-  var Operation: js.UndefOr[OperationName] = js.native
+  var Operation: js.UndefOr[OperationName] = js.undefined
   
   /**
     * The current priority for the specified job.
     */
-  var Priority: js.UndefOr[JobPriority] = js.native
+  var Priority: js.UndefOr[JobPriority] = js.undefined
   
   /**
     * Describes the total number of tasks that the specified job has run, the number of tasks that succeeded, and the number of tasks that failed.
     */
-  var ProgressSummary: js.UndefOr[JobProgressSummary] = js.native
+  var ProgressSummary: js.UndefOr[JobProgressSummary] = js.undefined
   
   /**
     * The specified job's current status.
     */
-  var Status: js.UndefOr[JobStatus] = js.native
+  var Status: js.UndefOr[JobStatus] = js.undefined
   
   /**
     * A timestamp indicating when the specified job terminated. A job's termination date is the date and time when it succeeded, failed, or was canceled.
     */
-  var TerminationDate: js.UndefOr[JobTerminationDate] = js.native
+  var TerminationDate: js.UndefOr[JobTerminationDate] = js.undefined
 }
 object JobListDescriptor {
   

@@ -2,13 +2,11 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a customer-supplied Signing Key used by Cloud CDN Signed URLs
   */
-@js.native
 trait SchemaSignedUrlKey extends StObject {
   
   /**
@@ -19,13 +17,13 @@ trait SchemaSignedUrlKey extends StObject {
     * be a dash, lowercase letter, or digit, except the last character, which
     * cannot be a dash.
     */
-  var keyName: js.UndefOr[String] = js.native
+  var keyName: js.UndefOr[String] = js.undefined
   
   /**
     * 128-bit key value used for signing the URL. The key value must be a valid
     * RFC 4648 Section 5 base64url encoded string.
     */
-  var keyValue: js.UndefOr[String] = js.native
+  var keyValue: js.UndefOr[String] = js.undefined
 }
 object SchemaSignedUrlKey {
   

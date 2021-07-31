@@ -3,51 +3,77 @@ package typings.pkijs
 import typings.asn1js.mod.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object otherPrimeInfoMod {
   
   @JSImport("pkijs/src/OtherPrimeInfo", JSImport.Default)
   @js.native
-  class default () extends OtherPrimeInfo {
+  class default ()
+    extends StObject
+       with OtherPrimeInfo {
     def this(params: js.Any) = this()
-  }
-  /* static members */
-  object default {
     
-    @JSImport("pkijs/src/OtherPrimeInfo", "default.defaultValues")
-    @js.native
-    def defaultValues(memberName: String): js.Any = js.native
-    
-    @JSImport("pkijs/src/OtherPrimeInfo", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/OtherPrimeInfo", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
-  }
-  
-  @js.native
-  trait OtherPrimeInfo extends StObject {
-    
+    /* CompleteClass */
     var coefficient: Integer = js.native
     
+    /* CompleteClass */
     var exponent: Integer = js.native
     
     /**
       * Convert JSON value into current object
       * @param {JsonOtherPrimeInfo} json
       */
-    def fromJSON(json: JsonOtherPrimeInfo): Unit = js.native
+    /* CompleteClass */
+    override def fromJSON(json: JsonOtherPrimeInfo): Unit = js.native
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
     
+    /* CompleteClass */
     var prime: Integer = js.native
     
-    def toJSON(): js.Any = js.native
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
     
-    def toSchema(): js.Any = js.native
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("pkijs/src/OtherPrimeInfo", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  }
+  
+  trait OtherPrimeInfo extends StObject {
+    
+    var coefficient: Integer
+    
+    var exponent: Integer
+    
+    /**
+      * Convert JSON value into current object
+      * @param {JsonOtherPrimeInfo} json
+      */
+    def fromJSON(json: JsonOtherPrimeInfo): Unit
+    
+    def fromSchema(schema: js.Any): Unit
+    
+    var prime: Integer
+    
+    def toJSON(): js.Any
+    
+    def toSchema(): js.Any
   }
   object OtherPrimeInfo {
     

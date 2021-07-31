@@ -3,31 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.ImagingManifest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyImagingManifestHeaders extends StObject {
   
-  var body: ImagingManifest = js.native
+  var body: ImagingManifest
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ImagingManifest = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ImagingManifest
 }
 object BodyImagingManifestHeaders {
   
   @scala.inline
-  def apply(
-    body: ImagingManifest,
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.ImagingManifest
-  ): BodyImagingManifestHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: ImagingManifest, id: String): BodyImagingManifestHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "ImagingManifest")
     __obj.asInstanceOf[BodyImagingManifestHeaders]
   }
   

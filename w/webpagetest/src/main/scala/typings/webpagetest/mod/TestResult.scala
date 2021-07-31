@@ -3,53 +3,51 @@ package typings.webpagetest.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestResult extends StObject {
   
-  var average: TestRun = js.native
+  var average: TestRun
   
-  var bwDown: Double = js.native
+  var bwDown: Double
   
-  var bwUp: Double = js.native
+  var bwUp: Double
   
-  var completed: Double = js.native
+  var completed: Double
   
-  var connectivity: String = js.native
+  var connectivity: String
   
-  var from: String = js.native
+  var from: String
   
-  var fvonly: Boolean = js.native
+  var fvonly: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var latency: Double = js.native
+  var latency: Double
   
-  var location: String = js.native
+  var location: String
   
-  var median: TestRun = js.native
+  var median: TestRun
   
-  var mobile: Double = js.native
+  var mobile: Double
   
-  var plr: String = js.native
+  var plr: String
   
-  var runs: StringDictionary[TestRun] = js.native
+  var runs: StringDictionary[TestRun]
   
-  var standardDeviation: TestRun = js.native
+  var standardDeviation: TestRun
   
-  var successfulFVRuns: Double = js.native
+  var successfulFVRuns: Double
   
-  var summary: String = js.native
+  var summary: String
   
-  var testUrl: String = js.native
+  var testUrl: String
   
-  var tester: String = js.native
+  var tester: String
   
-  var testerDNS: String = js.native
+  var testerDNS: String
   
-  var url: String = js.native
+  var url: String
 }
 object TestResult {
   

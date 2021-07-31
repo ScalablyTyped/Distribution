@@ -4,37 +4,36 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.miniprogram.LaunchQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictkey
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
   /**
     * Global data can be configured in `App()`. Other pages can get and modify the global data directly.
     */
-  var globalData: js.UndefOr[js.Any] = js.native
+  var globalData: js.UndefOr[js.Any] = js.undefined
   
   /**
     * On js error of the Mini Program
     */
-  var onError: js.UndefOr[js.Function1[/* error */ String, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ String, Unit]] = js.undefined
   
   /**
     * On switching Mini Program from foreground to background
     */
-  var onHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * On completion of Mini Program initialization, invoked only once
     */
-  var onLaunch: js.UndefOr[js.Function1[/* options */ js.UndefOr[LaunchQuery], Unit]] = js.native
+  var onLaunch: js.UndefOr[js.Function1[/* options */ js.UndefOr[LaunchQuery], Unit]] = js.undefined
   
   /**
     * On startup of Mini Program or swithing to foreground from background
     */
-  var onShow: js.UndefOr[js.Function1[/* options */ js.UndefOr[LaunchQuery], Unit]] = js.native
+  var onShow: js.UndefOr[js.Function1[/* options */ js.UndefOr[LaunchQuery], Unit]] = js.undefined
 }
 object Dictkey {
   

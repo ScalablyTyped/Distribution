@@ -2,13 +2,11 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolvedModuleWithFailedLookupLocations extends StObject {
   
-  val resolvedModule: js.UndefOr[ResolvedModuleFull] = js.native
+  val resolvedModule: js.UndefOr[ResolvedModuleFull] = js.undefined
 }
 object ResolvedModuleWithFailedLookupLocations {
   

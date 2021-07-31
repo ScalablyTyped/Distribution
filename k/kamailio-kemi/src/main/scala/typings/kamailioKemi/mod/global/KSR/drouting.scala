@@ -2,44 +2,38 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object drouting {
   
-  @JSGlobal("KSR.drouting.do_routing")
+  @JSGlobal("KSR.drouting")
   @js.native
-  def doRouting(grp_id: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.drouting.do_routing_furi")
-  @js.native
-  def doRoutingFuri(): Double = js.native
+  @scala.inline
+  def doRouting(grp_id: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("do_routing")(grp_id.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.drouting.goes_to_gw")
-  @js.native
-  def goesToGw(): Double = js.native
+  @scala.inline
+  def doRoutingFuri(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("do_routing_furi")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.drouting.goes_to_gw_type")
-  @js.native
-  def goesToGwType(`type`: Double): Double = js.native
+  @scala.inline
+  def goesToGw(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("goes_to_gw")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.drouting.is_from_gw")
-  @js.native
-  def isFromGw(): Double = js.native
+  @scala.inline
+  def goesToGwType(`type`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("goes_to_gw_type")(`type`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.drouting.is_from_gw_type")
-  @js.native
-  def isFromGwType(`type`: Double): Double = js.native
+  @scala.inline
+  def isFromGw(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_from_gw")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.drouting.is_from_gw_type_flags")
-  @js.native
-  def isFromGwTypeFlags(`type`: Double, flags: Double): Double = js.native
+  @scala.inline
+  def isFromGwType(`type`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_from_gw_type")(`type`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.drouting.next_routing")
-  @js.native
-  def nextRouting(): Double = js.native
+  @scala.inline
+  def isFromGwTypeFlags(`type`: Double, flags: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("is_from_gw_type_flags")(`type`.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.drouting.use_next_gw")
-  @js.native
-  def useNextGw(): Double = js.native
+  @scala.inline
+  def nextRouting(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("next_routing")().asInstanceOf[Double]
+  
+  @scala.inline
+  def useNextGw(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("use_next_gw")().asInstanceOf[Double]
 }

@@ -2,26 +2,24 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SdkResponse extends StObject {
   
   /**
     * The binary blob response to GetSdk, which contains the generated SDK.
     */
-  var body: js.UndefOr[_Blob] = js.native
+  var body: js.UndefOr[_Blob] = js.undefined
   
   /**
     * The content-disposition header value in the HTTP response.
     */
-  var contentDisposition: js.UndefOr[String] = js.native
+  var contentDisposition: js.UndefOr[String] = js.undefined
   
   /**
     * The content-type header value in the HTTP response.
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
 }
 object SdkResponse {
   

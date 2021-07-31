@@ -5,7 +5,6 @@ import typings.awsSdkTypes.utilMod.Encoder
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,8 +25,11 @@ object mod {
   /* static members */
   object Int64 {
     
-    @JSImport("@aws-sdk/eventstream-marshaller", "Int64.fromNumber")
+    @JSImport("@aws-sdk/eventstream-marshaller", "Int64")
     @js.native
-    def fromNumber(number: Double): typings.awsSdkEventstreamMarshaller.int64Mod.Int64 = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromNumber(number: Double): typings.awsSdkEventstreamMarshaller.int64Mod.Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[typings.awsSdkEventstreamMarshaller.int64Mod.Int64]
   }
 }

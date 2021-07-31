@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * OtherTotalSpecProp...
   */
-@js.native
 trait IOtherTotalSpecProp extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait IOtherTotalSpecProp extends StObject {
     * the engine can detect that the population of Russia is included in both the continent Asia and Europe.
     * >> The default value is true.
     */
-  var qApplyEvenWhenPossiblyWrongResult: Boolean = js.native
+  var qApplyEvenWhenPossiblyWrongResult: Boolean
   
   /**
     * This parameter is used when qOtherMode is set to:
@@ -32,7 +30,7 @@ trait IOtherTotalSpecProp extends StObject {
     * Set this parameter to true to include text values in the returned values.
     * >> The default value is true.
     */
-  var qForceBadValueKeeping: Boolean = js.native
+  var qForceBadValueKeeping: Boolean
   
   /**
     * This parameter applies to inner dimensions.
@@ -40,20 +38,20 @@ trait IOtherTotalSpecProp extends StObject {
     * All previous dimensions are ignored.
     * >> The default value is false.
     */
-  var qGlobalOtherGrouping: Boolean = js.native
+  var qGlobalOtherGrouping: Boolean
   
   /**
     * If set to true, it collapses the inner dimensions (if any) in the group Others.
     * >> The default value is false.
     */
-  var qOtherCollapseInnerDimensions: Boolean = js.native
+  var qOtherCollapseInnerDimensions: Boolean
   
   /**
     * Number of values to display.
     * The number of values can be entered as a calculated formula.
     * This parameter is used when qOtherMode is set to OTHER_COUNTED.
     */
-  var qOtherCounted: String = js.native
+  var qOtherCounted: String
   
   /**
     * Value used to limit the dimension values.
@@ -65,7 +63,7 @@ trait IOtherTotalSpecProp extends StObject {
     * - OTHER_ABS_ACC_TARGET
     * - OTHER_REL_ACC_TARGET
     */
-  var qOtherLimit: String = js.native
+  var qOtherLimit: String
   
   /**
     * Sets the limit for the Others mode.
@@ -76,7 +74,7 @@ trait IOtherTotalSpecProp extends StObject {
     * - OTHER_ABS_ACC_TARGET
     * - OTHER_REL_ACC_TARGET
     */
-  var qOtherLimitMode: OtherLimitModeType = js.native
+  var qOtherLimitMode: OtherLimitModeType
   
   /**
     * Determines how many dimension values are displayed.
@@ -95,31 +93,31 @@ trait IOtherTotalSpecProp extends StObject {
     *   All rows up to the current row are accumulated and the result is compared to the total of the dimension values.
     *   A percentage is calculated. This percentage is compared to the specified percentage, defined in OtherTotalSpecProp.
     */
-  var qOtherMode: OtherModeType = js.native
+  var qOtherMode: OtherModeType
   
   /**
     * Defines the sort order of the dimension values.
     * >> The default value is OTHER_SORT_DESCENDING.
     */
-  var qOtherSortMode: OtherSortModeType = js.native
+  var qOtherSortMode: OtherSortModeType
   
   /**
     * This parameter applies when there are several measures.
     * Name of the measure to use for the calculation of Others for a specific dimension.
     */
-  var qReferencedExpression: String = js.native
+  var qReferencedExpression: String
   
   /**
     * If set to true, the group Others is not displayed as a dimension value.
     * >> The default value is false.
     */
-  var qSuppressOther: Boolean = js.native
+  var qSuppressOther: Boolean
   
   /**
     * If set to TOTAL_EXPR, the total of the dimension values is returned.
     * >> The default value is TOTAL_OFF.
     */
-  var qTotalMode: TotalModeType = js.native
+  var qTotalMode: TotalModeType
 }
 object IOtherTotalSpecProp {
   

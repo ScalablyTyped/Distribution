@@ -2,51 +2,49 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateApiKeyRequest extends StObject {
   
   /**
     * An AWS Marketplace customer identifier , when integrating with the AWS SaaS Marketplace.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the ApiKey.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether the ApiKey can be used by callers.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether (true) or not (false) the key identifier is distinct from the created API key value. This parameter is deprecated and should not be used.
     */
-  var generateDistinctId: js.UndefOr[Boolean] = js.native
+  var generateDistinctId: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the ApiKey.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * DEPRECATED FOR USAGE PLANS - Specifies stages associated with the API key.
     */
-  var stageKeys: js.UndefOr[ListOfStageKeys] = js.native
+  var stageKeys: js.UndefOr[ListOfStageKeys] = js.undefined
   
   /**
     * The key-value map of strings. The valid character set is [a-zA-Z+-=._:/]. The tag key can be up to 128 characters and must not start with aws:. The tag value can be up to 256 characters.
     */
-  var tags: js.UndefOr[MapOfStringToString] = js.native
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * Specifies a value of the API key.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object CreateApiKeyRequest {
   

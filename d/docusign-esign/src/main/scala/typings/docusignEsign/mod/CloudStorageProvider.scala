@@ -2,41 +2,39 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudStorageProvider extends StObject {
   
   /**
     * The authentication URL used for the cloud storage provider. This information is only included in the response if the user has not passed authentication
     * for the cloud storage provider. If the redirectUrl query string is provided, the returnUrl is appended to the authenticationUrl.
     */
-  var authenticationUrl: js.UndefOr[String] = js.native
+  var authenticationUrl: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The URL the user is redirected to after the cloud storage provider authenticates the user. Using this will append the redirectUrl to the authenticationUrl.
     *
     * The redirectUrl is restricted to URLs in the docusign.com or docusign.net domains.
     */
-  var redirectUrl: js.UndefOr[String] = js.native
+  var redirectUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The service name for the cloud storage provider.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /**
     * The DocuSign-generated ID for the cloud storage provider.
     */
-  var serviceId: js.UndefOr[String] = js.native
+  var serviceId: js.UndefOr[String] = js.undefined
 }
 object CloudStorageProvider {
   

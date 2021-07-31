@@ -2,13 +2,11 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollToFirstRowOnChange extends StObject {
   
-  var scrollToFirstRowOnChange: js.UndefOr[Boolean] = js.native
+  var scrollToFirstRowOnChange: js.UndefOr[Boolean] = js.undefined
 }
 object ScrollToFirstRowOnChange {
   

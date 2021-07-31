@@ -5,33 +5,29 @@ import typings.qIo.QioHTTP.Request
 import typings.qIo.QioHTTP.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpMod {
   
-  @JSImport("q-io/http", "normalizeRequest")
+  @JSImport("q-io/http", JSImport.Namespace)
   @js.native
-  def normalizeRequest(request: Request): Request = js.native
-  @JSImport("q-io/http", "normalizeRequest")
-  @js.native
-  def normalizeRequest(url: String): Request = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("q-io/http", "normalizeResponse")
-  @js.native
-  def normalizeResponse(response: Response): Response = js.native
+  @scala.inline
+  def normalizeRequest(request: Request): Request = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeRequest")(request.asInstanceOf[js.Any]).asInstanceOf[Request]
+  @scala.inline
+  def normalizeRequest(url: String): Request = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeRequest")(url.asInstanceOf[js.Any]).asInstanceOf[Request]
   
-  @JSImport("q-io/http", "read")
-  @js.native
-  def read(request: Request): Promise[String] = js.native
-  @JSImport("q-io/http", "read")
-  @js.native
-  def read(url: String): Promise[String] = js.native
+  @scala.inline
+  def normalizeResponse(response: Response): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeResponse")(response.asInstanceOf[js.Any]).asInstanceOf[Response]
   
-  @JSImport("q-io/http", "request")
-  @js.native
-  def request(request: Request): Promise[Response] = js.native
-  @JSImport("q-io/http", "request")
-  @js.native
-  def request(url: String): Promise[Response] = js.native
+  @scala.inline
+  def read(request: Request): Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(request.asInstanceOf[js.Any]).asInstanceOf[Promise[String]]
+  @scala.inline
+  def read(url: String): Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(url.asInstanceOf[js.Any]).asInstanceOf[Promise[String]]
+  
+  @scala.inline
+  def request(request: Request): Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(request.asInstanceOf[js.Any]).asInstanceOf[Promise[Response]]
+  @scala.inline
+  def request(url: String): Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[Promise[Response]]
 }

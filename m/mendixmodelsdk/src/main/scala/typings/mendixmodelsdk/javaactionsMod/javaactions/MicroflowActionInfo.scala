@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -72,9 +71,8 @@ object MicroflowActionInfo {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.MicroflowActionInfo.create")
-  @js.native
-  def create(model: IModel): MicroflowActionInfo = js.native
+  @scala.inline
+  def create(model: IModel): MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MicroflowActionInfo]
   
   /**
     * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
@@ -85,9 +83,8 @@ object MicroflowActionInfo {
     *  6.6.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.MicroflowActionInfo.createIn")
-  @js.native
-  def createIn(container: JavaAction): MicroflowActionInfo = js.native
+  @scala.inline
+  def createIn(container: JavaAction): MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowActionInfo]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.MicroflowActionInfo.structureTypeName")

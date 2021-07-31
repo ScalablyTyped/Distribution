@@ -9,10 +9,8 @@ import typings.std.HTMLImageElement
 import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeshMaterialProperties extends StObject {
   
   /**
@@ -20,21 +18,21 @@ trait MeshMaterialProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#alphaCutoff)
     */
-  var alphaCutoff: js.UndefOr[Double] = js.native
+  var alphaCutoff: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies how transparency on the object is handled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#alphaMode)
     */
-  var alphaMode: js.UndefOr[auto | blend | opaque | mask] = js.native
+  var alphaMode: js.UndefOr[auto | blend | opaque | mask] = js.undefined
   
   /**
     * Specifies a single, uniform color for the mesh component.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#color)
     */
-  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * Specifies a texture from which to get color information.
@@ -43,14 +41,14 @@ trait MeshMaterialProperties extends StObject {
     */
   var colorTexture: js.UndefOr[
     MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Specifies whether both sides of each triangle are displayed, or only the front sides.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#doubleSided)
     */
-  var doubleSided: js.UndefOr[Boolean] = js.native
+  var doubleSided: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies a texture from which to get normal information.
@@ -59,7 +57,7 @@ trait MeshMaterialProperties extends StObject {
     */
   var normalTexture: js.UndefOr[
     MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String
-  ] = js.native
+  ] = js.undefined
 }
 object MeshMaterialProperties {
   

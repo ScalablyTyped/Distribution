@@ -2,26 +2,24 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildArtifact extends StObject {
   
   /**
     * The artifact ID.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * The name of the artifact.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The actual resource.
     */
-  var resource: ArtifactResource = js.native
+  var resource: ArtifactResource
 }
 object BuildArtifact {
   

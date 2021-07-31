@@ -2,29 +2,27 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EditorBreakpoint...
   */
-@js.native
 trait IEditorBreakpoint extends StObject {
   
   /**
     * If set to true then the breakpoint is enabled (in use).
     */
-  var qEnabled: Boolean = js.native
+  var qEnabled: Boolean
   
   /**
     * Name of the breakpoint.
     */
-  var qbufferName: String = js.native
+  var qbufferName: String
   
   /**
     * Line number in the script where the breakpoint is set.
     */
-  var qlineIx: Double = js.native
+  var qlineIx: Double
 }
 object IEditorBreakpoint {
   

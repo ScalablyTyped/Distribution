@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteResponse extends StObject {
   
   /** The time at which the commit occurred. Any read with an equal or greater `read_time` is guaranteed to see the effects of the write. */
-  var commitTime: js.UndefOr[String] = js.native
+  var commitTime: js.UndefOr[String] = js.undefined
   
   /** The ID of the stream. Only set on the first message, when a new stream was created. */
-  var streamId: js.UndefOr[String] = js.native
+  var streamId: js.UndefOr[String] = js.undefined
   
   /** A token that represents the position of this response in the stream. This can be used by a client to resume the stream at this point. This field is always set. */
-  var streamToken: js.UndefOr[String] = js.native
+  var streamToken: js.UndefOr[String] = js.undefined
   
   /** The result of applying the writes. This i-th write result corresponds to the i-th write in the request. */
-  var writeResults: js.UndefOr[js.Array[WriteResult]] = js.native
+  var writeResults: js.UndefOr[js.Array[WriteResult]] = js.undefined
 }
 object WriteResponse {
   

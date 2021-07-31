@@ -2,7 +2,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,12 +28,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *   }]
   * });
   */
-@js.native
-trait AuthorityInfoAccess extends Extension {
+trait AuthorityInfoAccess
+  extends StObject
+     with Extension {
   
-  def getExtnValueHex(): String = js.native
+  def getExtnValueHex(): String
   
-  def setAccessDescriptionArray(accessDescriptionArray: js.Array[ExtensionParam]): Unit = js.native
+  def setAccessDescriptionArray(accessDescriptionArray: js.Array[ExtensionParam]): Unit
 }
 object AuthorityInfoAccess {
   

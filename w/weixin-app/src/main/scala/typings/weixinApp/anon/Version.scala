@@ -2,17 +2,15 @@ package typings.weixinApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Version extends StObject {
   
   /* 插件 appId     */
-  var appId: String = js.native
+  var appId: String
   
   /* 插件版本号     */
-  var version: String = js.native
+  var version: String
 }
 object Version {
   

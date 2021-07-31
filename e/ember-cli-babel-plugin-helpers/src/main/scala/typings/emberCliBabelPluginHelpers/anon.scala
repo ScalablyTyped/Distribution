@@ -3,15 +3,13 @@ package typings.emberCliBabelPluginHelpers
 import typings.emberCliBabelPluginHelpers.mod.BabelPluginConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Babel extends StObject {
     
-    var babel: js.UndefOr[Plugins] = js.native
+    var babel: js.UndefOr[Plugins] = js.undefined
   }
   object Babel {
     
@@ -32,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Name {
     
@@ -56,10 +53,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Plugins extends StObject {
     
-    var plugins: js.UndefOr[js.Array[BabelPluginConfig]] = js.native
+    var plugins: js.UndefOr[js.Array[BabelPluginConfig]] = js.undefined
   }
   object Plugins {
     

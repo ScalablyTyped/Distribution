@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2", "dialogflow_v2.Resource$Projects$Agent$Sessions$Contexts")
@@ -32,7 +31,7 @@ class ResourceProjectsAgentSessionsContexts protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaGoogleCloudDialogflowV2Context] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Context]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Context] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Context] = js.native
   def create(params: ParamsResourceProjectsAgentSessionsContextsCreate): GaxiosPromise[SchemaGoogleCloudDialogflowV2Context] = js.native
   def create(
     params: ParamsResourceProjectsAgentSessionsContextsCreate,
@@ -64,7 +63,7 @@ class ResourceProjectsAgentSessionsContexts protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourceProjectsAgentSessionsContextsDelete): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsAgentSessionsContextsDelete,
@@ -96,7 +95,7 @@ class ResourceProjectsAgentSessionsContexts protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudDialogflowV2Context] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Context]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Context] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Context] = js.native
   def get(params: ParamsResourceProjectsAgentSessionsContextsGet): GaxiosPromise[SchemaGoogleCloudDialogflowV2Context] = js.native
   def get(
     params: ParamsResourceProjectsAgentSessionsContextsGet,
@@ -130,7 +129,7 @@ class ResourceProjectsAgentSessionsContexts protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudDialogflowV2ListContextsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2ListContextsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2ListContextsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2ListContextsResponse] = js.native
   def list(params: ParamsResourceProjectsAgentSessionsContextsList): GaxiosPromise[SchemaGoogleCloudDialogflowV2ListContextsResponse] = js.native
   def list(
     params: ParamsResourceProjectsAgentSessionsContextsList,
@@ -164,7 +163,7 @@ class ResourceProjectsAgentSessionsContexts protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaGoogleCloudDialogflowV2Context] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Context]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Context] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Context] = js.native
   def patch(params: ParamsResourceProjectsAgentSessionsContextsPatch): GaxiosPromise[SchemaGoogleCloudDialogflowV2Context] = js.native
   def patch(
     params: ParamsResourceProjectsAgentSessionsContextsPatch,

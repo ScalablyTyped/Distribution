@@ -10,9 +10,9 @@ Use Custom Properties Queries in CSS
 | ------------------ | :-------------: |
 | Full name          | postcss-custom-properties |
 | Keywords           | postcss, css, postcss-plugin, custom, properties, declarations, variables, vars, w3c, csswg, specification |
-| # releases         | 12 |
-| # dependents       | 162 |
-| # downloads        | 138628932 |
+| # releases         | 10 |
+| # dependents       | 169 |
+| # downloads        | 161048337 |
 | # stars            | 2 |
 
 ## Links

@@ -8,31 +8,32 @@ import typings.appBuilderLib.mod.PlatformPackager
 import typings.builderUtil.fsMod.FileTransformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object frameworkMod {
   
-  @JSImport("app-builder-lib/out/Framework", "isElectronBased")
+  @JSImport("app-builder-lib/out/Framework", JSImport.Namespace)
   @js.native
-  def isElectronBased(framework: Framework): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def isElectronBased(framework: Framework): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElectronBased")(framework.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait BeforeCopyExtraFilesOptions extends StObject {
     
-    var appOutDir: String = js.native
+    var appOutDir: String
     
-    var asarIntegrity: AsarIntegrity | Null = js.native
+    var asarIntegrity: AsarIntegrity | Null
     
-    var packager: PlatformPackager[_] = js.native
+    var packager: PlatformPackager[js.Any]
     
-    var platformName: String = js.native
+    var platformName: String
   }
   object BeforeCopyExtraFilesOptions {
     
     @scala.inline
-    def apply(appOutDir: String, packager: PlatformPackager[_], platformName: String): BeforeCopyExtraFilesOptions = {
-      val __obj = js.Dynamic.literal(appOutDir = appOutDir.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], platformName = platformName.asInstanceOf[js.Any])
+    def apply(appOutDir: String, packager: PlatformPackager[js.Any], platformName: String): BeforeCopyExtraFilesOptions = {
+      val __obj = js.Dynamic.literal(appOutDir = appOutDir.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], platformName = platformName.asInstanceOf[js.Any], asarIntegrity = null)
       __obj.asInstanceOf[BeforeCopyExtraFilesOptions]
     }
     
@@ -49,43 +50,42 @@ object frameworkMod {
       def setAsarIntegrityNull: Self = StObject.set(x, "asarIntegrity", null)
       
       @scala.inline
-      def setPackager(value: PlatformPackager[_]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
+      def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPlatformName(value: String): Self = StObject.set(x, "platformName", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Framework extends StObject {
     
-    var afterPack: js.UndefOr[js.Function1[/* context */ AfterPackContext, js.Promise[_]]] = js.native
+    var afterPack: js.UndefOr[js.Function1[/* context */ AfterPackContext, js.Promise[js.Any]]] = js.undefined
     
-    var beforeCopyExtraFiles: js.UndefOr[js.Function1[/* options */ BeforeCopyExtraFilesOptions, js.Promise[_]]] = js.native
+    var beforeCopyExtraFiles: js.UndefOr[js.Function1[/* options */ BeforeCopyExtraFilesOptions, js.Promise[js.Any]]] = js.undefined
     
-    var createTransformer: js.UndefOr[js.Function0[FileTransformer | Null]] = js.native
+    var createTransformer: js.UndefOr[js.Function0[FileTransformer | Null]] = js.undefined
     
-    val defaultAppIdPrefix: String = js.native
+    val defaultAppIdPrefix: String
     
-    val distMacOsAppName: String = js.native
+    val distMacOsAppName: String
     
-    var getDefaultIcon: js.UndefOr[js.Function1[/* platform */ Platform, String | Null]] = js.native
+    var getDefaultIcon: js.UndefOr[js.Function1[/* platform */ Platform, String | Null]] = js.undefined
     
-    var getExcludedDependencies: js.UndefOr[js.Function1[/* platform */ Platform, js.Array[String] | Null]] = js.native
+    var getExcludedDependencies: js.UndefOr[js.Function1[/* platform */ Platform, js.Array[String] | Null]] = js.undefined
     
-    var getMainFile: js.UndefOr[js.Function1[/* platform */ Platform, String | Null]] = js.native
+    var getMainFile: js.UndefOr[js.Function1[/* platform */ Platform, String | Null]] = js.undefined
     
-    val isCopyElevateHelper: Boolean = js.native
+    val isCopyElevateHelper: Boolean
     
-    val isNpmRebuildRequired: Boolean = js.native
+    val isNpmRebuildRequired: Boolean
     
-    val macOsDefaultTargets: js.Array[String] = js.native
+    val macOsDefaultTargets: js.Array[String]
     
-    val name: String = js.native
+    val name: String
     
-    def prepareApplicationStageDirectory(options: PrepareApplicationStageDirectoryOptions): js.Promise[_] = js.native
+    def prepareApplicationStageDirectory(options: PrepareApplicationStageDirectoryOptions): js.Promise[js.Any]
     
-    val version: String = js.native
+    val version: String
   }
   object Framework {
     
@@ -97,7 +97,7 @@ object frameworkMod {
       isNpmRebuildRequired: Boolean,
       macOsDefaultTargets: js.Array[String],
       name: String,
-      prepareApplicationStageDirectory: PrepareApplicationStageDirectoryOptions => js.Promise[_],
+      prepareApplicationStageDirectory: PrepareApplicationStageDirectoryOptions => js.Promise[js.Any],
       version: String
     ): Framework = {
       val __obj = js.Dynamic.literal(defaultAppIdPrefix = defaultAppIdPrefix.asInstanceOf[js.Any], distMacOsAppName = distMacOsAppName.asInstanceOf[js.Any], isCopyElevateHelper = isCopyElevateHelper.asInstanceOf[js.Any], isNpmRebuildRequired = isNpmRebuildRequired.asInstanceOf[js.Any], macOsDefaultTargets = macOsDefaultTargets.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prepareApplicationStageDirectory = js.Any.fromFunction1(prepareApplicationStageDirectory), version = version.asInstanceOf[js.Any])
@@ -108,13 +108,13 @@ object frameworkMod {
     implicit class FrameworkMutableBuilder[Self <: Framework] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAfterPack(value: /* context */ AfterPackContext => js.Promise[_]): Self = StObject.set(x, "afterPack", js.Any.fromFunction1(value))
+      def setAfterPack(value: /* context */ AfterPackContext => js.Promise[js.Any]): Self = StObject.set(x, "afterPack", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAfterPackUndefined: Self = StObject.set(x, "afterPack", js.undefined)
       
       @scala.inline
-      def setBeforeCopyExtraFiles(value: /* options */ BeforeCopyExtraFilesOptions => js.Promise[_]): Self = StObject.set(x, "beforeCopyExtraFiles", js.Any.fromFunction1(value))
+      def setBeforeCopyExtraFiles(value: /* options */ BeforeCopyExtraFilesOptions => js.Promise[js.Any]): Self = StObject.set(x, "beforeCopyExtraFiles", js.Any.fromFunction1(value))
       
       @scala.inline
       def setBeforeCopyExtraFilesUndefined: Self = StObject.set(x, "beforeCopyExtraFiles", js.undefined)
@@ -165,28 +165,27 @@ object frameworkMod {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPrepareApplicationStageDirectory(value: PrepareApplicationStageDirectoryOptions => js.Promise[_]): Self = StObject.set(x, "prepareApplicationStageDirectory", js.Any.fromFunction1(value))
+      def setPrepareApplicationStageDirectory(value: PrepareApplicationStageDirectoryOptions => js.Promise[js.Any]): Self = StObject.set(x, "prepareApplicationStageDirectory", js.Any.fromFunction1(value))
       
       @scala.inline
       def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait PrepareApplicationStageDirectoryOptions extends StObject {
     
     /**
       * Platform doesn't process application output directory in any way. Unpack implementation must create or empty dir if need.
       */
-    val appOutDir: String = js.native
+    val appOutDir: String
     
-    val arch: String = js.native
+    val arch: String
     
-    val packager: PlatformPackager[_] = js.native
+    val packager: PlatformPackager[js.Any]
     
-    val platformName: ElectronPlatformName = js.native
+    val platformName: ElectronPlatformName
     
-    val version: String = js.native
+    val version: String
   }
   object PrepareApplicationStageDirectoryOptions {
     
@@ -194,7 +193,7 @@ object frameworkMod {
     def apply(
       appOutDir: String,
       arch: String,
-      packager: PlatformPackager[_],
+      packager: PlatformPackager[js.Any],
       platformName: ElectronPlatformName,
       version: String
     ): PrepareApplicationStageDirectoryOptions = {
@@ -212,7 +211,7 @@ object frameworkMod {
       def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPackager(value: PlatformPackager[_]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
+      def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPlatformName(value: ElectronPlatformName): Self = StObject.set(x, "platformName", value.asInstanceOf[js.Any])

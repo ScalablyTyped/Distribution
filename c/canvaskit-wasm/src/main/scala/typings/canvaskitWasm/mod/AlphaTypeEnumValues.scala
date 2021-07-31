@@ -2,17 +2,17 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AlphaTypeEnumValues extends EmbindEnum {
+trait AlphaTypeEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Opaque: AlphaType = js.native
+  var Opaque: AlphaType
   
-  var Premul: AlphaType = js.native
+  var Premul: AlphaType
   
-  var Unpremul: AlphaType = js.native
+  var Unpremul: AlphaType
 }
 object AlphaTypeEnumValues {
   

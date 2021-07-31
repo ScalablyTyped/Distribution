@@ -2,7 +2,6 @@ package typings.phaser.Phaser.GameObjects
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * face. If you require that, consider using a Polygon instead.
   */
 @js.native
-trait Triangle extends Shape {
+trait Triangle
+  extends StObject
+     with Shape {
   
   /**
     * Sets the data for the lines that make up this Triangle shape.

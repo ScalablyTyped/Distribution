@@ -4,17 +4,15 @@ import typings.node.Buffer
 import typings.ws.mod.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RtmCall[T] extends StObject {
   
-  var message: T = js.native
+  var message: T
   
-  var rawMessage: Data = js.native
+  var rawMessage: Data
   
-  var token: String = js.native
+  var token: String
 }
 object RtmCall {
   
@@ -25,7 +23,7 @@ object RtmCall {
   }
   
   @scala.inline
-  implicit class RtmCallMutableBuilder[Self <: RtmCall[_], T] (val x: Self with RtmCall[T]) extends AnyVal {
+  implicit class RtmCallMutableBuilder[Self <: RtmCall[?], T] (val x: Self & RtmCall[T]) extends AnyVal {
     
     @scala.inline
     def setMessage(value: T): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])

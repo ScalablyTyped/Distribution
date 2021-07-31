@@ -2,21 +2,19 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtectionGroupLimits extends StObject {
   
   /**
     * The maximum number of protection groups that you can have at one time. 
     */
-  var MaxProtectionGroups: Long = js.native
+  var MaxProtectionGroups: Long
   
   /**
     * Limits settings by pattern type in the protection groups for your subscription. 
     */
-  var PatternTypeLimits: ProtectionGroupPatternTypeLimits = js.native
+  var PatternTypeLimits: ProtectionGroupPatternTypeLimits
 }
 object ProtectionGroupLimits {
   

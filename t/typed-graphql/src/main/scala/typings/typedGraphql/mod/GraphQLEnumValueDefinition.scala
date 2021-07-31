@@ -2,19 +2,17 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphQLEnumValueDefinition extends StObject {
   
-  var deprecationReason: String = js.native
+  var deprecationReason: String
   
-  var description: String = js.native
+  var description: String
   
-  var name: String = js.native
+  var name: String
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object GraphQLEnumValueDefinition {
   

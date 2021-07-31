@@ -7,37 +7,35 @@ import typings.ionicReact.routeActionMod.RouteAction
 import typings.ionicReact.routerDirectionMod.RouterDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeInfoMod {
   
-  @js.native
   trait RouteInfo[TOptions] extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var lastPathname: js.UndefOr[String] = js.native
+    var lastPathname: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.native
+    var params: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
     
-    var pathname: String = js.native
+    var pathname: String
     
-    var prevRouteLastPathname: js.UndefOr[String] = js.native
+    var prevRouteLastPathname: js.UndefOr[String] = js.undefined
     
-    var pushedByRoute: js.UndefOr[String] = js.native
+    var pushedByRoute: js.UndefOr[String] = js.undefined
     
-    var routeAction: js.UndefOr[RouteAction] = js.native
+    var routeAction: js.UndefOr[RouteAction] = js.undefined
     
-    var routeAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var routeAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var routeDirection: js.UndefOr[RouterDirection] = js.native
+    var routeDirection: js.UndefOr[RouterDirection] = js.undefined
     
-    var routeOptions: js.UndefOr[TOptions] = js.native
+    var routeOptions: js.UndefOr[TOptions] = js.undefined
     
-    var search: String = js.native
+    var search: String
     
-    var tab: js.UndefOr[String] = js.native
+    var tab: js.UndefOr[String] = js.undefined
   }
   object RouteInfo {
     
@@ -48,7 +46,7 @@ object routeInfoMod {
     }
     
     @scala.inline
-    implicit class RouteInfoMutableBuilder[Self <: RouteInfo[_], TOptions] (val x: Self with RouteInfo[TOptions]) extends AnyVal {
+    implicit class RouteInfoMutableBuilder[Self <: RouteInfo[?], TOptions] (val x: Self & RouteInfo[TOptions]) extends AnyVal {
       
       @scala.inline
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])

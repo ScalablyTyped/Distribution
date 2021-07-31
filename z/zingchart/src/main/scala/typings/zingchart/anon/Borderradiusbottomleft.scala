@@ -2,10 +2,8 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Borderradiusbottomleft extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait Borderradiusbottomleft extends StObject {
     * letely opaque. Please note that values also require the leading 0 before the decimal. Requires Legend. Used only inside individual
     *  series rather than Plot. See red text in upper right box. Works with output flash. 0.3 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the rotation angle of the object/shape. Requires Legend. Used only inside individual series rather than Plot. See red text in
     *  upper right box. Works with output canvas and svg. -45 | 115 | ...
     */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the background color of the object. Colors can be entered by name (e.g. "red", "blue", "yellow"), in hexadecimal notation (e.
@@ -27,69 +25,69 @@ trait Borderradiusbottomleft extends StObject {
     * Used only inside individual series rather than Plot. See red text in upper right box. "none" | "transparent" | "#f00" | "#f00 #00f
     * " | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color`: js.UndefOr[String] = js.native
+  var `background-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the first color of a 2 color background gradient of the object. To be used with background-color-2. Requires Legend. Used onl
     * y inside individual series rather than Plot. See red text in upper right box. "none" | "transparent" | "#f00" | "#f00 #00f" | "red
     *  yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color-1`: js.UndefOr[String] = js.native
+  var `background-color-1`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the second color of a 2 color background gradient of the object. To be used with background-color-1. Requires Legend. Used on
     * ly inside individual series rather than Plot. See red text in upper right box. "none" | "transparent" | "#f00" | "#f00 #00f" | "re
     * d yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color-2`: js.UndefOr[String] = js.native
+  var `background-color-2`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the direction/s on which the background image is being "stretched". Requires Legend. Used only inside individual series rathe
     * r than Plot. See red text in upper right box. "x" | "y" | "xy"
     */
-  var `background-fit`: js.UndefOr[String] = js.native
+  var `background-fit`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets a background image for the object. Value can be a local file or a web image's location. Requires Legend. Used only inside ind
     * ividual series rather than Plot. See red text in upper right box. "image.png" | ...
     */
-  var `background-image`: js.UndefOr[String] = js.native
+  var `background-image`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the position of the background when the background-repeat value is no-repeat. Requires Legend. Used only inside individual se
     * ries rather than Plot. See red text in upper right box. "0 0" | "50 100" | "80% 60%" | ...
     */
-  var `background-position`: js.UndefOr[String] = js.native
+  var `background-position`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the repeating mode for the background image. Requires Legend. Used only inside individual series rather than Plot. See red te
     * xt in upper right box. "no-repeat" | "repeat" | "repeat-x" | "repeat-y"
     */
-  var `background-repeat`: js.UndefOr[String] = js.native
+  var `background-repeat`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets whether the text is displayed with bold characters or not. Requires Legend. Used only inside individual series rather than Pl
     * ot. See red text in upper right box. true | false | 1 | 0
     */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the object's bottom border style. Accepts solid, dashed, and dotted styles. Requires Legend. Used only inside individual seri
     * es rather than Plot. See red text in upper right box. "2px solid #f00" | ...
     */
-  var `border-bottom`: js.UndefOr[String] = js.native
+  var `border-bottom`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border color of the object. Requires Legend. Used only inside individual series rather than Plot. See red text in upper r
     * ight box. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `border-color`: js.UndefOr[String] = js.native
+  var `border-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's left border style. Accepts solid, dashed, and dotted styles. Requires Legend. Used only inside individual series
     *  rather than Plot. See red text in upper right box. "2px solid #f00" | ...
     */
-  var `border-left`: js.UndefOr[String] = js.native
+  var `border-left`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's border radius, for rounded corners. Larger values create rounder corners, while smaller values create sharper co
@@ -98,300 +96,300 @@ trait Borderradiusbottomleft extends StObject {
     *  Legend. Used only inside individual series rather than Plot. See red text in upper right box. 4 | "6px" | "6px 10px 3px 5px" | "-
     * 10px" | ...
     */
-  var `border-radius`: js.UndefOr[js.Any] = js.native
+  var `border-radius`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom-left border radius, for rounded corners. Larger values create rounder corners, while smaller values creat
     * e sharper corners. A negative value will cut a corner off without rounding. Requires Legend. Used only inside individual series ra
     * ther than Plot. See red text in upper right box. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-bottom-left`: js.UndefOr[js.Any] = js.native
+  var `border-radius-bottom-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom-right border radius, for rounded corners. Larger values create rounder corners, while smaller values crea
     * te sharper corners. A negative value will cut a corner off without rounding. Requires Legend. Used only inside individual series r
     * ather than Plot. See red text in upper right box. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-bottom-right`: js.UndefOr[js.Any] = js.native
+  var `border-radius-bottom-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top-left border radius, for rounded corners. Larger values create rounder corners, while smaller values create s
     * harper corners. A negative value will cut a corner off without rounding. Requires Legend. Used only inside individual series rathe
     * r than Plot. See red text in upper right box. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-top-left`: js.UndefOr[js.Any] = js.native
+  var `border-radius-top-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top-right border radius, for rounded corners. Larger values create rounder corners, while smaller values create
     * sharper corners. A negative value will cut a corner off without rounding. Requires Legend. Used only inside individual series rath
     * er than Plot. See red text in upper right box. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-top-right`: js.UndefOr[js.Any] = js.native
+  var `border-radius-top-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's right border style. Accepts solid, dashed, and dotted styles. Requires Legend. Used only inside individual serie
     * s rather than Plot. See red text in upper right box. "2px solid #f00" | ...
     */
-  var `border-right`: js.UndefOr[String] = js.native
+  var `border-right`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's top border style. Values must include the border width, style, and color. Accepts solid, dashed, and dotted styl
     * es. Requires Legend. Used only inside individual series rather than Plot. See red text in upper right box. "2px solid #f00" | ...
     */
-  var `border-top`: js.UndefOr[String] = js.native
+  var `border-top`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border width of the object. Requires Legend. Used only inside individual series rather than Plot. See red text in upper r
     * ight box. 4 | "6px" | ...
     */
-  var `border-width`: js.UndefOr[js.Any] = js.native
+  var `border-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets whether an object will have a callout arrow or not. Requires Legend. Used only inside individual series rather than Plot. See
     *  red text in upper right box. Works with output canvas and svg. true | false | 1 | 0
     */
-  var callout: js.UndefOr[Boolean] = js.native
+  var callout: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the length of the extension that extends beyond the tip of the callout arrow. Requires Legend. Used only inside individual se
     * ries rather than Plot. See red text in upper right box. Works with output canvas and svg. 4 | "6px" | ...
     */
-  var `callout-extension`: js.UndefOr[js.Any] = js.native
+  var `callout-extension`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the height of the object's callout arrow. A larger value will create a taller callout arrow. Requires Legend. Used only insid
     * e individual series rather than Plot. See red text in upper right box. Works with output canvas and svg. 4 | "6px" | ...
     */
-  var `callout-height`: js.UndefOr[js.Any] = js.native
+  var `callout-height`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the point of the tip of the callout arrow to a specified coordinate on the chart, with the starting point of [0,0] being the
     * top left corner of the chart.. Requires Legend. Used only inside individual series rather than Plot. See red text in upper right b
     * ox. Works with output canvas and svg. [200, 50] | ...
     */
-  var `callout-hook`: js.UndefOr[js.Any] = js.native
+  var `callout-hook`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the offset along the callout direction of the arrow's base. Positive and negative values can be used to offset the callout ar
     * row up, down, left, or right depending on the callout-position. Requires Legend. Used only inside individual series rather than Pl
     * ot. See red text in upper right box. Works with output canvas and svg. 4 | "6px" | ...
     */
-  var `callout-offset`: js.UndefOr[js.Any] = js.native
+  var `callout-offset`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the position for the object's callout arrow. The position is "bottom" by default. Requires Legend. Used only inside individua
     * l series rather than Plot. See red text in upper right box. Works with output canvas and svg. "top" | "right" | "bottom" | "left"
     */
-  var `callout-position`: js.UndefOr[String] = js.native
+  var `callout-position`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the width of the object's callout arrow. A larger value will create a wider callout arrow. Requires Legend. Used only inside
     * individual series rather than Plot. See red text in upper right box. Works with output canvas and svg. 4 | "6px" | ...
     */
-  var `callout-width`: js.UndefOr[js.Any] = js.native
+  var `callout-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the color of the text in the legend box. Requires Legend. Used only inside individual series rather than Plot. See red text i
     * n upper right box. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the style of the cursor when hovering over a node. "hand" | "normal"
     */
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the angle of the axis along which the linear gradient is drawn. Requires Legend. Used only inside individual series rather th
     * an Plot. See red text in upper right box. Works with output canvas and svg. -45 | 115 | ...
     */
-  var `fill-angle`: js.UndefOr[Double] = js.native
+  var `fill-angle`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets an X offset to apply to the fill. Requires Legend. Used only inside individual series rather than Plot. See red text in upper
     *  right box. Works with output canvas and svg. 4 | "6px" | ...
     */
-  var `fill-offset-x`: js.UndefOr[js.Any] = js.native
+  var `fill-offset-x`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets an Y offset to apply to the fill. Requires Legend. Used only inside individual series rather than Plot. See red text in upper
     *  right box. Works with output canvas and svg. 4 | "6px" | ...
     */
-  var `fill-offset-y`: js.UndefOr[js.Any] = js.native
+  var `fill-offset-y`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the background gradient fill type to either linear or radial. Requires Legend. Used only inside individual series rather than
     *  Plot. See red text in upper right box. Works with output canvas and svg. "linear" | "radial"
     */
-  var `fill-type`: js.UndefOr[String] = js.native
+  var `fill-type`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's font angle. A positive value will rotate the object by that number of degrees clockwise, while a negative value
     * will rotate the object by that number of degrees counter-clockwise. For the text in the legend box. Requires Legend. Used only ins
     * ide individual series rather than Plot. See red text in upper right box. -45 | 115 | ...
     */
-  var `font-angle`: js.UndefOr[Double] = js.native
+  var `font-angle`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the font color of the text in the legend box. Works like color. Requires Legend. Used only inside individual series rather th
     * an Plot. See red text in upper right box. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `font-color`: js.UndefOr[String] = js.native
+  var `font-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the text's font family in the legend box. Requires Legend. Used only inside individual series rather than Plot. See red text
     * in upper right box. "Arial" | "Tahoma,Verdana" | ...
     */
-  var `font-family`: js.UndefOr[String] = js.native
+  var `font-family`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the text's font size in the legend box. Requires Legend. Used only inside individual series rather than Plot. See red text in
     *  upper right box. 4 | "6px" | ...
     */
-  var `font-size`: js.UndefOr[js.Any] = js.native
+  var `font-size`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the text's font style in the legend box. Requires Legend. Used only inside individual series rather than Plot. See red text i
     * n upper right box. "none" | "italic" | "oblique"
     */
-  var `font-style`: js.UndefOr[String] = js.native
+  var `font-style`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the text's font weight in the legend box. Similar to bold. Requires Legend. Used only inside individual series rather than Pl
     * ot. See red text in upper right box. "normal" | "bold"
     */
-  var `font-weight`: js.UndefOr[String] = js.native
+  var `font-weight`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets a set of colors for a complex background gradient consisting of 2 or more colors. To be used with gradient-stops. Requires Le
     * gend. Used only inside individual series rather than Plot. See red text in upper right box. Works with output canvas and svg. "#f0
     * 0 #0f0 #00f" | ...
     */
-  var `gradient-colors`: js.UndefOr[String] = js.native
+  var `gradient-colors`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the gradient stops for a complex background gradient consisting of 2 or more colors. To be used with gradient-colors. Require
     * s Legend. Used only inside individual series rather than Plot. See red text in upper right box. Works with output canvas and svg.
     * "0.1 0.5 0.9" | ...
     */
-  var `gradient-stops`: js.UndefOr[String] = js.native
+  var `gradient-stops`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's height. Requires Legend. Used only inside individual series rather than Plot. See red text in upper right box. W
     * orks with output canvas and svg. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var height: js.UndefOr[js.Any] = js.native
+  var height: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets whether the text is displayed with italic characters or not. For the legend box. Similar to font-style. Requires Legend. Used
     *  only inside individual series rather than Plot. See red text in upper right box. true | false | 1 | 0
     */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the object's margins. Requires Legend. Used only inside individual series rather than Plot. See red text in upper right box.
     * Works with output canvas and svg. 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var margin: js.UndefOr[js.Any] = js.native
+  var margin: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom margin. Requires Legend. Used only inside individual series rather than Plot. See red text in upper right
     *  box. Works with output canvas and svg. 4 | "6px" | ...
     */
-  var `margin-bottom`: js.UndefOr[js.Any] = js.native
+  var `margin-bottom`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's left margin. Requires Legend. Used only inside individual series rather than Plot. See red text in upper right b
     * ox. Works with output canvas and svg. 4 | "6px" | ...
     */
-  var `margin-left`: js.UndefOr[js.Any] = js.native
+  var `margin-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's right margin. Requires Legend. Used only inside individual series rather than Plot. See red text in upper right
     * box. Works with output canvas and svg. 4 | "6px" | ...
     */
-  var `margin-right`: js.UndefOr[js.Any] = js.native
+  var `margin-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top margin. Requires Legend. Used only inside individual series rather than Plot. See red text in upper right bo
     * x. Works with output canvas and svg. 4 | "6px" | ...
     */
-  var `margin-top`: js.UndefOr[js.Any] = js.native
+  var `margin-top`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the maximum numbers of characters displayed in the object. The value determines how many characters will be displayed before
     * the text is cut and appended with "..." Requires Legend. Used only inside individual series rather than Plot. See red text in uppe
     * r right box. 5 | 10 | ...
     */
-  var `max-chars`: js.UndefOr[Double] = js.native
+  var `max-chars`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the maximum width of the text box. If text is longer than the max-width value, it will overlap the box or will wrap if wrap-t
     * ext is set to true. Requires Legend. Used only inside individual series rather than Plot. See red text in upper right box. Works w
     * ith output canvas and svg. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var `max-width`: js.UndefOr[js.Any] = js.native
+  var `max-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets an X offset to apply when positioning the object/shape. Requires Legend. Used only inside individual series rather than Plot.
     *  See red text in upper right box. Works with output canvas and svg. 4 | "6px" | ...
     */
-  var `offset-x`: js.UndefOr[js.Any] = js.native
+  var `offset-x`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets an Y offset to apply when positioning the object/shape. Requires Legend. Used only inside individual series rather than Plot.
     *  See red text in upper right box. Works with output canvas and svg. 4 | "6px" | ...
     */
-  var `offset-y`: js.UndefOr[js.Any] = js.native
+  var `offset-y`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * To specify the order of the legend items in the legend. 1 | 2 | 3 | 4 | ...
     */
-  var order: js.UndefOr[js.Any] = js.native
+  var order: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's padding around the text. Up to four values can be entered to set the padding for all four sides, starting with t
     * he top and going clockwise. Requires Legend. Used only inside individual series rather than Plot. See red text in upper right box.
     *  10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var padding: js.UndefOr[js.Any] = js.native
+  var padding: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom padding around the text. For single item in Legend. Requires Legend. Used only inside individual series r
     * ather than Plot. See red text in upper right box. 4 | "6px" | ...
     */
-  var `padding-bottom`: js.UndefOr[js.Any] = js.native
+  var `padding-bottom`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's left padding around the text. For single item in Legend. Requires Legend. Used only inside individual series rat
     * her than Plot. See red text in upper right box. 4 | "6px" | ...
     */
-  var `padding-left`: js.UndefOr[js.Any] = js.native
+  var `padding-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's right padding around the text. For single item in Legend. Requires Legend. Used only inside individual series ra
     * ther than Plot. See red text in upper right box. 4 | "6px" | ...
     */
-  var `padding-right`: js.UndefOr[js.Any] = js.native
+  var `padding-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top padding around the text. For single item in Legend. Requires Legend. Used only inside individual series rath
     * er than Plot. See red text in upper right box. 4 | "6px" | ...
     */
-  var `padding-top`: js.UndefOr[js.Any] = js.native
+  var `padding-top`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Renders text right-to-left. Default value is false. true | false | 1 | 0
     */
   @JSName("rtl (right-to-left)")
-  var `rtl Leftparenthesisright-to-leftRightparenthesis`: js.UndefOr[Boolean] = js.native
+  var `rtl Leftparenthesisright-to-leftRightparenthesis`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets whether the object's shadow is visible or not. For single item in Legend. Requires Legend. Used only inside individual series
     *  rather than Plot. See red text in upper right box. Works with output flash. Has limited effect on HTML5 implementation. true | fa
     * lse | 1 | 0
     */
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the transparency of the shadow of the object. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and
@@ -399,93 +397,93 @@ trait Borderradiusbottomleft extends StObject {
     * uires Legend. Used only inside individual series rather than Plot. See red text in upper right box. Works with output flash. Has l
     * imited effect on HTML5 implementation. 0.3 | 0.9 | ...
     */
-  var `shadow-alpha`: js.UndefOr[Double] = js.native
+  var `shadow-alpha`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the angle of the shadow underneath the object. For single item in Legend. Requires Legend. Used only inside individual series
     *  rather than Plot. See red text in upper right box. Works with output flash. Has limited effect on HTML5 implementation. -45 | 115
     *  | ...
     */
-  var `shadow-angle`: js.UndefOr[Double] = js.native
+  var `shadow-angle`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the blur effect size for the shadow of the object. For single item in Legend. Requires Legend. Used only inside individual se
     * ries rather than Plot. See red text in upper right box. Works with output flash. Has limited effect on HTML5 implementation. 4 | "
     * 6px" | ...
     */
-  var `shadow-blur`: js.UndefOr[js.Any] = js.native
+  var `shadow-blur`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the color of the shadow of the object. For single item in Legend. Requires Legend. Used only inside individual series rather
     * than Plot. See red text in upper right box. Works with output flash. Has limited effect on HTML5 implementation. "none" | "transpa
     * rent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `shadow-color`: js.UndefOr[String] = js.native
+  var `shadow-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the distance between the shadow and the object. For single item in Legend. Requires Legend. Used only inside individual serie
     * s rather than Plot. See red text in upper right box. Works with output flash. Has limited effect on HTML5 implementation. 4 | "6px
     * " | ...
     */
-  var `shadow-distance`: js.UndefOr[js.Any] = js.native
+  var `shadow-distance`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the size of the object/shape. 4 | "6px" | ...
     */
-  var size: js.UndefOr[js.Any] = js.native
+  var size: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the text content of the object. For single item in Legend. Requires Legend. Used only inside individual series rather than Pl
     * ot. See red text in upper right box. "Some Text" | ...
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the text's horizontal alignment relative to the object's box. For single item in Legend. Requires Legend. Used only inside in
     * dividual series rather than Plot. See red text in upper right box. "left" | "center" | "right"
     */
-  var `text-align`: js.UndefOr[String] = js.native
+  var `text-align`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the text's transparency independent of the object's transparency. Value must be between 0.0 and 1.0, with 0.0 being 100% tran
     * sparent and 1.0 being 100% opaque. The leading 0 before the decimal is required. For single item in Legend. Requires Legend. Used
     * only inside individual series rather than Plot. See red text in upper right box. 0.3 | 0.9 | ...
     */
-  var `text-alpha`: js.UndefOr[Double] = js.native
+  var `text-alpha`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the text's decoration. Similar to underline. For single item in Legend. Requires Legend. Used only inside individual series r
     * ather than Plot. See red text in upper right box. Use output canvas or flash. "none" | "underline"
     */
-  var `text-decoration`: js.UndefOr[String] = js.native
+  var `text-decoration`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets whether the text is displayed with underlined characters or not. For single item in Legend. Requires Legend. Used only inside
     *  individual series rather than Plot. See red text in upper right box. Use output canvas or flash. true | false | 1 | 0
     */
-  var underline: js.UndefOr[Boolean] = js.native
+  var underline: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets whether the text will wrap, depending on the width of the object. For single item in Legend. Requires Legend. Used only insid
     * e individual series rather than Plot. See red text in upper right box. Use output canvas or flash. "top" | "middle" | "bottom"
     */
-  var `vertical-align`: js.UndefOr[String] = js.native
+  var `vertical-align`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the visibility of the object. true | false | 1 | 0
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the object's width. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var width: js.UndefOr[js.Any] = js.native
+  var width: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets whether the text will wrap, depending on the width of the object. See red text in upper right box. Use output canvas or flash
     * . true | false | 1 | 0
     */
-  var `wrap-text`: js.UndefOr[Boolean] = js.native
+  var `wrap-text`: js.UndefOr[Boolean] = js.undefined
 }
 object Borderradiusbottomleft {
   

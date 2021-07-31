@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterOperationStatus extends StObject {
   
   /** Output only. A message containing any operation metadata details. */
-  var details: js.UndefOr[String] = js.native
+  var details: js.UndefOr[String] = js.undefined
   
   /** Output only. A message containing the detailed operation state. */
-  var innerState: js.UndefOr[String] = js.native
+  var innerState: js.UndefOr[String] = js.undefined
   
   /** Output only. A message containing the operation state. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. The time this state was entered. */
-  var stateStartTime: js.UndefOr[String] = js.native
+  var stateStartTime: js.UndefOr[String] = js.undefined
 }
 object ClusterOperationStatus {
   

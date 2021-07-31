@@ -3,26 +3,24 @@ package typings.consola.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsolaReporterLogObject extends StObject {
   
-  var args: js.Array[_] = js.native
+  var args: js.Array[js.Any]
   
-  var date: Date = js.native
+  var date: Date
   
-  var level: LogLevel = js.native
+  var level: LogLevel
   
-  var tag: String = js.native
+  var tag: String
   
-  var `type`: logType = js.native
+  var `type`: logType
 }
 object ConsolaReporterLogObject {
   
   @scala.inline
-  def apply(args: js.Array[_], date: Date, level: LogLevel, tag: String, `type`: logType): ConsolaReporterLogObject = {
+  def apply(args: js.Array[js.Any], date: Date, level: LogLevel, tag: String, `type`: logType): ConsolaReporterLogObject = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsolaReporterLogObject]
@@ -32,7 +30,7 @@ object ConsolaReporterLogObject {
   implicit class ConsolaReporterLogObjectMutableBuilder[Self <: ConsolaReporterLogObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))

@@ -2,7 +2,6 @@ package typings.onsenui.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,43 +9,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object orientation {
   
+  @JSImport("onsenui", "orientation")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @return {Boolean} Will be true if the current orientation is landscape mode
     * @description Returns whether the current screen orientation is landscape or not
     */
-  @JSImport("onsenui", "orientation.isLandscape")
-  @js.native
-  def isLandscape(): Boolean = js.native
+  @scala.inline
+  def isLandscape(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLandscape")().asInstanceOf[Boolean]
   
   /**
     * @return {Boolean} Will be true if the current orientation is portrait mode
     * @description Returns whether the current screen orientation is portrait or not
     */
-  @JSImport("onsenui", "orientation.isPortrait")
-  @js.native
-  def isPortrait(): Boolean = js.native
+  @scala.inline
+  def isPortrait(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPortrait")().asInstanceOf[Boolean]
   
   /**
     * @description Remove an event listener. If the listener is not specified all listeners for the event type will be removed.
     */
-  @JSImport("onsenui", "orientation.off")
-  @js.native
-  def off(eventName: String): Unit = js.native
-  @JSImport("onsenui", "orientation.off")
-  @js.native
-  def off(eventName: String, listener: js.Function): Unit = js.native
+  @scala.inline
+  def off(eventName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def off(eventName: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @description Add an event listener.
     */
-  @JSImport("onsenui", "orientation.on")
-  @js.native
-  def on(eventName: String, listener: js.Function): Unit = js.native
+  @scala.inline
+  def on(eventName: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @description Add an event listener that's only triggered once.
     */
-  @JSImport("onsenui", "orientation.once")
-  @js.native
-  def once(eventName: String, listener: js.Function): Unit = js.native
+  @scala.inline
+  def once(eventName: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jasmine-expect" : "4.0.3"
+      "jasmine-expect" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jasmine-expect" : "4.0.3"
+      "jasmine-expect" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

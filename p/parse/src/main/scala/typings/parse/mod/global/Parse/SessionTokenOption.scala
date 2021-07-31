@@ -2,13 +2,11 @@ package typings.parse.mod.global.Parse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionTokenOption extends StObject {
   
-  var sessionToken: js.UndefOr[String] = js.native
+  var sessionToken: js.UndefOr[String] = js.undefined
 }
 object SessionTokenOption {
   

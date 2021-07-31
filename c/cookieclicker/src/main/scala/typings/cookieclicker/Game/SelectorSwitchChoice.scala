@@ -2,26 +2,24 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectorSwitchChoice extends StObject {
   
   /**
     * True to make a line
     */
-  var div: Boolean = js.native
+  var div: Boolean
   
-  var icon: Icon = js.native
+  var icon: Icon
   
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var order: js.UndefOr[Double] = js.native
+  var order: js.UndefOr[Double] = js.undefined
   
-  var selected: js.UndefOr[Boolean | PseudoBoolean] = js.native
+  var selected: js.UndefOr[Boolean | PseudoBoolean] = js.undefined
 }
 object SelectorSwitchChoice {
   

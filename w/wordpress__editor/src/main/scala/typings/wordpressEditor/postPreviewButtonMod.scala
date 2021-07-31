@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressEditor.postPreviewButtonMod.PostPreviewButton.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postPreviewButtonMod {
@@ -24,14 +23,13 @@ object postPreviewButtonMod {
   
   object PostPreviewButton {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      var forceIsAutosaveable: js.UndefOr[Boolean] = js.native
+      var forceIsAutosaveable: js.UndefOr[Boolean] = js.undefined
       
-      var forcePreviewLink: js.UndefOr[String] = js.native
+      var forcePreviewLink: js.UndefOr[String] = js.undefined
     }
     object Props {
       

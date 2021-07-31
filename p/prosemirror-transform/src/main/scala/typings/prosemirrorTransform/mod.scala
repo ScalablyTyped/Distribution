@@ -14,14 +14,17 @@ import typings.prosemirrorTransform.anon.Attrs
 import typings.prosemirrorTransform.anon.Instantiable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("prosemirror-transform", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("prosemirror-transform", "AddMarkStep")
   @js.native
-  class AddMarkStep[S /* <: Schema[_, _] */] protected () extends Step[S] {
+  class AddMarkStep[S /* <: Schema[js.Any, js.Any] */] protected () extends Step[S] {
     def this(from: Double, to: Double, mark: Mark[S]) = this()
   }
   
@@ -46,7 +49,9 @@ object mod {
   /**
     * Create a new mapping with the given position maps.
     */
-  class Mapping () extends Mappable {
+  class Mapping ()
+    extends StObject
+       with Mappable {
     def this(maps: js.Array[StepMap]) = this()
     
     /**
@@ -90,9 +95,9 @@ object mod {
       * Create a mapping that maps only through a part of this one.
       */
     def slice(): Mapping = js.native
-    def slice(from: js.UndefOr[scala.Nothing], to: Double): Mapping = js.native
     def slice(from: Double): Mapping = js.native
     def slice(from: Double, to: Double): Mapping = js.native
+    def slice(from: Unit, to: Double): Mapping = js.native
     
     /**
       * The end position in the `maps` array.
@@ -102,13 +107,13 @@ object mod {
   
   @JSImport("prosemirror-transform", "RemoveMarkStep")
   @js.native
-  class RemoveMarkStep[S /* <: Schema[_, _] */] protected () extends Step[S] {
+  class RemoveMarkStep[S /* <: Schema[js.Any, js.Any] */] protected () extends Step[S] {
     def this(from: Double, to: Double, mark: Mark[S]) = this()
   }
   
   @JSImport("prosemirror-transform", "ReplaceAroundStep")
   @js.native
-  class ReplaceAroundStep[S /* <: Schema[_, _] */] protected () extends Step[S] {
+  class ReplaceAroundStep[S /* <: Schema[js.Any, js.Any] */] protected () extends Step[S] {
     /**
       * Create a replace-around step with the given range and gap.
       * `insert` should be the point in the slice into which the content
@@ -129,7 +134,7 @@ object mod {
   
   @JSImport("prosemirror-transform", "ReplaceStep")
   @js.native
-  class ReplaceStep_[S /* <: Schema[_, _] */] protected () extends Step[S] {
+  class ReplaceStep_[S /* <: Schema[js.Any, js.Any] */] protected () extends Step[S] {
     /**
       * The given `slice` should fit the 'gap' between `from` and
       * `to`—the depths must line up, and the surrounding nodes must be
@@ -145,7 +150,7 @@ object mod {
   
   @JSImport("prosemirror-transform", "Step")
   @js.native
-  class Step[S /* <: Schema[_, _] */] () extends StObject {
+  class Step[S /* <: Schema[js.Any, js.Any] */] () extends StObject {
     
     /**
       * Applies this step to the given document, returning a result
@@ -194,13 +199,16 @@ object mod {
   /* static members */
   object Step {
     
+    @JSImport("prosemirror-transform", "Step")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Deserialize a step from its JSON representation. Will call
       * through to the step class' own implementation of this method.
       */
-    @JSImport("prosemirror-transform", "Step.fromJSON")
-    @js.native
-    def fromJSON[S /* <: Schema[_, _] */](schema: S, json: StringDictionary[js.Any]): Step[S] = js.native
+    @scala.inline
+    def fromJSON[S /* <: Schema[js.Any, js.Any] */](schema: S, json: StringDictionary[js.Any]): Step[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Step[S]]
     
     /**
       * To be able to serialize steps to JSON, each step needs a string
@@ -208,14 +216,15 @@ object mod {
       * register an ID for your step classes. Try to pick something
       * that's unlikely to clash with steps from other modules.
       */
-    @JSImport("prosemirror-transform", "Step.jsonID")
-    @js.native
-    def jsonID(id: String, stepClass: Instantiable): Unit = js.native
+    @scala.inline
+    def jsonID(id: String, stepClass: Instantiable): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonID")(id.asInstanceOf[js.Any], stepClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("prosemirror-transform", "StepMap")
   @js.native
-  class StepMap protected () extends Mappable {
+  class StepMap protected ()
+    extends StObject
+       with Mappable {
     /**
       * Create a position map. The modifications to the document are
       * represented as an array of numbers, in which each group of three
@@ -246,19 +255,22 @@ object mod {
   /* static members */
   object StepMap {
     
+    @JSImport("prosemirror-transform", "StepMap")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a map that moves all positions by offset `n` (which may be
       * negative). This can be useful when applying steps meant for a
       * sub-document to a larger document, or vice-versa.
       */
-    @JSImport("prosemirror-transform", "StepMap.offset")
-    @js.native
-    def offset(n: Double): StepMap = js.native
+    @scala.inline
+    def offset(n: Double): StepMap = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(n.asInstanceOf[js.Any]).asInstanceOf[StepMap]
   }
   
   @JSImport("prosemirror-transform", "StepResult")
   @js.native
-  class StepResult[S /* <: Schema[_, _] */] () extends StObject {
+  class StepResult[S /* <: Schema[js.Any, js.Any] */] () extends StObject {
     
     /**
       * The transformed document.
@@ -273,33 +285,34 @@ object mod {
   /* static members */
   object StepResult {
     
+    @JSImport("prosemirror-transform", "StepResult")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a failed step result.
       */
-    @JSImport("prosemirror-transform", "StepResult.fail")
-    @js.native
-    def fail(message: String): StepResult[_] = js.native
+    @scala.inline
+    def fail(message: String): StepResult[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[StepResult[js.Any]]
     
     /**
       * Call [`Node.replace`](#model.Node.replace) with the given
       * arguments. Create a successful result if it succeeds, and a
       * failed one if it throws a `ReplaceError`.
       */
-    @JSImport("prosemirror-transform", "StepResult.fromReplace")
-    @js.native
-    def fromReplace[S /* <: Schema[_, _] */](doc: Node[S], from: Double, to: Double, slice: Slice[S]): StepResult[S] = js.native
+    @scala.inline
+    def fromReplace[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double, to: Double, slice: Slice[S]): StepResult[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromReplace")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[StepResult[S]]
     
     /**
       * Create a successful step result.
       */
-    @JSImport("prosemirror-transform", "StepResult.ok")
-    @js.native
-    def ok[S /* <: Schema[_, _] */](doc: Node[S]): StepResult[S] = js.native
+    @scala.inline
+    def ok[S /* <: Schema[js.Any, js.Any] */](doc: Node[S]): StepResult[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")(doc.asInstanceOf[js.Any]).asInstanceOf[StepResult[S]]
   }
   
   @JSImport("prosemirror-transform", "Transform")
   @js.native
-  class Transform[S /* <: Schema[_, _] */] protected () extends StObject {
+  class Transform[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
     /**
       * Create a transform that starts with the given document.
       */
@@ -364,9 +377,9 @@ object mod {
       * last and first siblings are also joined, and so on.
       */
     def join(pos: Double): this.type = js.native
-    def join(pos: Double, depth: js.UndefOr[scala.Nothing], p1: Boolean): this.type = js.native
     def join(pos: Double, depth: Double): this.type = js.native
     def join(pos: Double, depth: Double, p1: Boolean): this.type = js.native
+    def join(pos: Double, depth: Unit, p1: Boolean): this.type = js.native
     
     /**
       * Split the content in the given range off from its parent, if there
@@ -403,9 +416,9 @@ object mod {
       * given `slice`.
       */
     def replace(from: Double): this.type = js.native
-    def replace(from: Double, to: js.UndefOr[scala.Nothing], slice: Slice[S]): this.type = js.native
     def replace(from: Double, to: Double): this.type = js.native
     def replace(from: Double, to: Double, slice: Slice[S]): this.type = js.native
+    def replace(from: Double, to: Unit, slice: Slice[S]): this.type = js.native
     
     /**
       * Replace a range of the document with a given slice, using `from`,
@@ -445,37 +458,27 @@ object mod {
     def replaceWith(from: Double, to: Double, content: Fragment[S]): this.type = js.native
     def replaceWith(from: Double, to: Double, content: Node[S]): this.type = js.native
     
-    def setBlockType(from: Double, to: js.UndefOr[scala.Nothing], `type`: NodeType[S]): this.type = js.native
-    def setBlockType(from: Double, to: js.UndefOr[scala.Nothing], `type`: NodeType[S], attrs: StringDictionary[js.Any]): this.type = js.native
     /**
       * Set the type of all textblocks (partly) between `from` and `to` to
       * the given node type with the given attributes.
       */
     def setBlockType(from: Double, to: Double, `type`: NodeType[S]): this.type = js.native
     def setBlockType(from: Double, to: Double, `type`: NodeType[S], attrs: StringDictionary[js.Any]): this.type = js.native
+    def setBlockType(from: Double, to: Unit, `type`: NodeType[S]): this.type = js.native
+    def setBlockType(from: Double, to: Unit, `type`: NodeType[S], attrs: StringDictionary[js.Any]): this.type = js.native
     
     /**
       * Change the type, attributes, and/or marks of the node at `pos`.
       * When `nodeType` is null, the existing node type is preserved,
       */
     def setNodeMarkup(pos: Double): this.type = js.native
-    def setNodeMarkup(
-      pos: Double,
-      `type`: js.UndefOr[scala.Nothing],
-      attrs: js.UndefOr[scala.Nothing],
-      marks: js.Array[Mark[S]]
-    ): this.type = js.native
-    def setNodeMarkup(pos: Double, `type`: js.UndefOr[scala.Nothing], attrs: StringDictionary[js.Any]): this.type = js.native
-    def setNodeMarkup(
-      pos: Double,
-      `type`: js.UndefOr[scala.Nothing],
-      attrs: StringDictionary[js.Any],
-      marks: js.Array[Mark[S]]
-    ): this.type = js.native
+    def setNodeMarkup(pos: Double, `type`: Unit, attrs: StringDictionary[js.Any]): this.type = js.native
+    def setNodeMarkup(pos: Double, `type`: Unit, attrs: StringDictionary[js.Any], marks: js.Array[Mark[S]]): this.type = js.native
+    def setNodeMarkup(pos: Double, `type`: Unit, attrs: Unit, marks: js.Array[Mark[S]]): this.type = js.native
     def setNodeMarkup(pos: Double, `type`: NodeType[S]): this.type = js.native
-    def setNodeMarkup(pos: Double, `type`: NodeType[S], attrs: js.UndefOr[scala.Nothing], marks: js.Array[Mark[S]]): this.type = js.native
     def setNodeMarkup(pos: Double, `type`: NodeType[S], attrs: StringDictionary[js.Any]): this.type = js.native
     def setNodeMarkup(pos: Double, `type`: NodeType[S], attrs: StringDictionary[js.Any], marks: js.Array[Mark[S]]): this.type = js.native
+    def setNodeMarkup(pos: Double, `type`: NodeType[S], attrs: Unit, marks: js.Array[Mark[S]]): this.type = js.native
     
     /**
       * Split the node at the given position, and optionally, if `depth` is
@@ -485,9 +488,9 @@ object mod {
       * use after the split.
       */
     def split(pos: Double): this.type = js.native
-    def split(pos: Double, depth: js.UndefOr[scala.Nothing], typesAfter: js.Array[Attrs[S]]): this.type = js.native
     def split(pos: Double, depth: Double): this.type = js.native
     def split(pos: Double, depth: Double, typesAfter: js.Array[Attrs[S]]): this.type = js.native
+    def split(pos: Double, depth: Unit, typesAfter: js.Array[Attrs[S]]): this.type = js.native
     
     /**
       * Apply a new step in this transform, saving the result. Throws an
@@ -508,82 +511,54 @@ object mod {
     def wrap(range: NodeRange[S], wrappers: js.Array[Attrs[S]]): this.type = js.native
   }
   
-  @JSImport("prosemirror-transform", "canJoin")
-  @js.native
-  def canJoin(doc: Node[_], pos: Double): Boolean = js.native
+  @scala.inline
+  def canJoin(doc: Node[js.Any], pos: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canJoin")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-transform", "canSplit")
-  @js.native
-  def canSplit[S /* <: Schema[_, _] */](doc: Node[S], pos: Double): Boolean = js.native
-  @JSImport("prosemirror-transform", "canSplit")
-  @js.native
-  def canSplit[S /* <: Schema[_, _] */](
-    doc: Node[S],
-    pos: Double,
-    depth: js.UndefOr[scala.Nothing],
-    typesAfter: js.Array[js.UndefOr[Attrs[S] | Null]]
-  ): Boolean = js.native
-  @JSImport("prosemirror-transform", "canSplit")
-  @js.native
-  def canSplit[S /* <: Schema[_, _] */](doc: Node[S], pos: Double, depth: Double): Boolean = js.native
-  @JSImport("prosemirror-transform", "canSplit")
-  @js.native
-  def canSplit[S /* <: Schema[_, _] */](doc: Node[S], pos: Double, depth: Double, typesAfter: js.Array[js.UndefOr[Attrs[S] | Null]]): Boolean = js.native
+  @scala.inline
+  def canSplit[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canSplit")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def canSplit[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, depth: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canSplit")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def canSplit[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, depth: Double, typesAfter: js.Array[js.UndefOr[Attrs[S] | Null]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canSplit")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], typesAfter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def canSplit[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, depth: Unit, typesAfter: js.Array[js.UndefOr[Attrs[S] | Null]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canSplit")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], typesAfter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-transform", "dropPoint")
-  @js.native
-  def dropPoint[S /* <: Schema[_, _] */](doc: Node[S], pos: Double, slice: Slice[S]): js.UndefOr[Double | Null] = js.native
+  @scala.inline
+  def dropPoint[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, slice: Slice[S]): js.UndefOr[Double | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("dropPoint")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | Null]]
   
-  @JSImport("prosemirror-transform", "findWrapping")
-  @js.native
-  def findWrapping[S /* <: Schema[_, _] */](range: NodeRange[S], nodeType: NodeType[S]): js.UndefOr[js.Array[Attrs[S]] | Null] = js.native
-  @JSImport("prosemirror-transform", "findWrapping")
-  @js.native
-  def findWrapping[S /* <: Schema[_, _] */](
-    range: NodeRange[S],
-    nodeType: NodeType[S],
-    attrs: js.UndefOr[scala.Nothing],
-    innerRange: NodeRange[S]
-  ): js.UndefOr[js.Array[Attrs[S]] | Null] = js.native
-  @JSImport("prosemirror-transform", "findWrapping")
-  @js.native
-  def findWrapping[S /* <: Schema[_, _] */](range: NodeRange[S], nodeType: NodeType[S], attrs: StringDictionary[js.Any]): js.UndefOr[js.Array[Attrs[S]] | Null] = js.native
-  @JSImport("prosemirror-transform", "findWrapping")
-  @js.native
-  def findWrapping[S /* <: Schema[_, _] */](
+  @scala.inline
+  def findWrapping[S /* <: Schema[js.Any, js.Any] */](range: NodeRange[S], nodeType: NodeType[S]): js.UndefOr[js.Array[Attrs[S]] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findWrapping")(range.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Attrs[S]] | Null]]
+  @scala.inline
+  def findWrapping[S /* <: Schema[js.Any, js.Any] */](range: NodeRange[S], nodeType: NodeType[S], attrs: StringDictionary[js.Any]): js.UndefOr[js.Array[Attrs[S]] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findWrapping")(range.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Attrs[S]] | Null]]
+  @scala.inline
+  def findWrapping[S /* <: Schema[js.Any, js.Any] */](
     range: NodeRange[S],
     nodeType: NodeType[S],
     attrs: StringDictionary[js.Any],
     innerRange: NodeRange[S]
-  ): js.UndefOr[js.Array[Attrs[S]] | Null] = js.native
+  ): js.UndefOr[js.Array[Attrs[S]] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findWrapping")(range.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], innerRange.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Attrs[S]] | Null]]
+  @scala.inline
+  def findWrapping[S /* <: Schema[js.Any, js.Any] */](range: NodeRange[S], nodeType: NodeType[S], attrs: Unit, innerRange: NodeRange[S]): js.UndefOr[js.Array[Attrs[S]] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findWrapping")(range.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], innerRange.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Attrs[S]] | Null]]
   
-  @JSImport("prosemirror-transform", "insertPoint")
-  @js.native
-  def insertPoint[S /* <: Schema[_, _] */](doc: Node[S], pos: Double, nodeType: NodeType[S]): js.UndefOr[Double | Null] = js.native
+  @scala.inline
+  def insertPoint[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, nodeType: NodeType[S]): js.UndefOr[Double | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertPoint")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | Null]]
   
-  @JSImport("prosemirror-transform", "joinPoint")
-  @js.native
-  def joinPoint(doc: Node[_], pos: Double): js.UndefOr[Double | Null] = js.native
-  @JSImport("prosemirror-transform", "joinPoint")
-  @js.native
-  def joinPoint(doc: Node[_], pos: Double, dir: Double): js.UndefOr[Double | Null] = js.native
+  @scala.inline
+  def joinPoint(doc: Node[js.Any], pos: Double): js.UndefOr[Double | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinPoint")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | Null]]
+  @scala.inline
+  def joinPoint(doc: Node[js.Any], pos: Double, dir: Double): js.UndefOr[Double | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinPoint")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | Null]]
   
-  @JSImport("prosemirror-transform", "liftTarget")
-  @js.native
-  def liftTarget(range: NodeRange[_]): js.UndefOr[Double | Null] = js.native
+  @scala.inline
+  def liftTarget(range: NodeRange[js.Any]): js.UndefOr[Double | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("liftTarget")(range.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double | Null]]
   
-  @JSImport("prosemirror-transform", "replaceStep")
-  @js.native
-  def replaceStep[S /* <: Schema[_, _] */](doc: Node[S], from: Double): js.UndefOr[Step[S] | Null] = js.native
-  @JSImport("prosemirror-transform", "replaceStep")
-  @js.native
-  def replaceStep[S /* <: Schema[_, _] */](doc: Node[S], from: Double, to: js.UndefOr[scala.Nothing], slice: Slice[S]): js.UndefOr[Step[S] | Null] = js.native
-  @JSImport("prosemirror-transform", "replaceStep")
-  @js.native
-  def replaceStep[S /* <: Schema[_, _] */](doc: Node[S], from: Double, to: Double): js.UndefOr[Step[S] | Null] = js.native
-  @JSImport("prosemirror-transform", "replaceStep")
-  @js.native
-  def replaceStep[S /* <: Schema[_, _] */](doc: Node[S], from: Double, to: Double, slice: Slice[S]): js.UndefOr[Step[S] | Null] = js.native
+  @scala.inline
+  def replaceStep[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double): js.UndefOr[Step[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStep")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Step[S] | Null]]
+  @scala.inline
+  def replaceStep[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double, to: Double): js.UndefOr[Step[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStep")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Step[S] | Null]]
+  @scala.inline
+  def replaceStep[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double, to: Double, slice: Slice[S]): js.UndefOr[Step[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStep")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Step[S] | Null]]
+  @scala.inline
+  def replaceStep[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double, to: Unit, slice: Slice[S]): js.UndefOr[Step[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStep")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Step[S] | Null]]
   
   @js.native
   trait Mappable extends StObject {

@@ -2,21 +2,19 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableToReload extends StObject {
   
   /**
     * The schema name of the table to be reloaded.
     */
-  var SchemaName: String = js.native
+  var SchemaName: String
   
   /**
     * The table name of the table to be reloaded.
     */
-  var TableName: String = js.native
+  var TableName: String
 }
 object TableToReload {
   

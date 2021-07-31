@@ -5,7 +5,6 @@ import typings.iitc.iitctypesMod.IITC.PortalDataCore
 import typings.iitc.iitctypesMod.IITC.PortalDataDetail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entityDecodeMod {
@@ -21,9 +20,9 @@ object entityDecodeMod {
     @js.native
     class DecodeArray_ () extends StObject {
       
-      def portalDetail(data: js.Array[_]): js.UndefOr[PortalDataDetail] = js.native
+      def portalDetail(data: js.Array[js.Any]): js.UndefOr[PortalDataDetail] = js.native
       
-      def portalSummary(data: js.Array[_]): js.UndefOr[PortalData | PortalDataCore] = js.native
+      def portalSummary(data: js.Array[js.Any]): js.UndefOr[PortalData | PortalDataCore] = js.native
     }
     
     // private but exposed:

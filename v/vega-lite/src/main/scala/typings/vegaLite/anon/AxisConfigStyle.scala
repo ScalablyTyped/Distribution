@@ -2,17 +2,15 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisConfigStyle extends StObject {
   
-  var axisConfigStyle: js.Any = js.native
+  var axisConfigStyle: js.Any
   
-  var vgAxisConfig: js.Any = js.native
+  var vgAxisConfig: js.Any
   
-  var vlOnlyAxisConfig: js.Any = js.native
+  var vlOnlyAxisConfig: js.Any
 }
 object AxisConfigStyle {
   

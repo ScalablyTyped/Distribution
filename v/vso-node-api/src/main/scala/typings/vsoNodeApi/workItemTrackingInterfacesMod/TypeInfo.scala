@@ -23,7 +23,6 @@ import typings.vsoNodeApi.anon.EnumValuesTree
 import typings.vsoNodeApi.anon.EnumValuesWorkItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TypeInfo {

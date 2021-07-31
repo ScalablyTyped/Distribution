@@ -2,21 +2,19 @@ package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStreamSocketControl extends StObject {
   
-  var keepAlive: Boolean = js.native
+  var keepAlive: Boolean
   
-  var noDelay: Boolean = js.native
+  var noDelay: Boolean
   
-  var outboundBufferSizeInBytes: Double = js.native
+  var outboundBufferSizeInBytes: Double
   
-  var outboundUnicastHopLimit: Double = js.native
+  var outboundUnicastHopLimit: Double
   
-  var qualityOfService: SocketQualityOfService = js.native
+  var qualityOfService: SocketQualityOfService
 }
 object IStreamSocketControl {
   

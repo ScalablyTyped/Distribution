@@ -7,23 +7,26 @@ import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(context: String, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  
   @JSImport("koa-proxies", JSImport.Namespace)
   @js.native
-  def apply(context: String, options: Options): Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait Options extends ServerOptions {
+  trait Options
+    extends StObject
+       with ServerOptions {
     
-    var events: js.UndefOr[StringDictionary[js.Function1[/* repeated */ js.Any, Unit]]] = js.native
+    var events: js.UndefOr[StringDictionary[js.Function1[/* repeated */ js.Any, Unit]]] = js.undefined
     
-    var logs: js.UndefOr[Boolean] = js.native
+    var logs: js.UndefOr[Boolean] = js.undefined
     
-    var rewrite: js.UndefOr[js.Function2[/* url */ String, /* ctx */ DefaultContext, String]] = js.native
+    var rewrite: js.UndefOr[js.Function2[/* url */ String, /* ctx */ DefaultContext, String]] = js.undefined
   }
   object Options {
     

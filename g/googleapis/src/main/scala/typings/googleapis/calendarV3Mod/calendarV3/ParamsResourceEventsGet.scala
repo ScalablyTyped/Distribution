@@ -6,11 +6,11 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceEventsGet extends StandardParameters {
+trait ParamsResourceEventsGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Whether to always include a value in the email field for the organizer,
@@ -20,37 +20,37 @@ trait ParamsResourceEventsGet extends StandardParameters {
     * absence of an email address value in the mentioned places. Optional. The
     * default is False.
     */
-  var alwaysIncludeEmail: js.UndefOr[Boolean] = js.native
+  var alwaysIncludeEmail: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Calendar identifier. To retrieve calendar IDs call the calendarList.list
     * method. If you want to access the primary calendar of the currently
     * logged in user, use the "primary" keyword.
     */
-  var calendarId: js.UndefOr[String] = js.native
+  var calendarId: js.UndefOr[String] = js.undefined
   
   /**
     * Event identifier.
     */
-  var eventId: js.UndefOr[String] = js.native
+  var eventId: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of attendees to include in the response. If there are
     * more than the specified number of attendees, only the participant is
     * returned. Optional.
     */
-  var maxAttendees: js.UndefOr[Double] = js.native
+  var maxAttendees: js.UndefOr[Double] = js.undefined
   
   /**
     * Time zone used in the response. Optional. The default is the time zone of
     * the calendar.
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceEventsGet {
   

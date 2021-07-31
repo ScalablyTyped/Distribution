@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBrowserContextRequest extends StObject {
   
   /**
     * If specified, disposes this context when debugging session disconnects.
     */
-  var disposeOnDetach: js.UndefOr[Boolean] = js.native
+  var disposeOnDetach: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Proxy bypass list, similar to the one passed to --proxy-bypass-list
     */
-  var proxyBypassList: js.UndefOr[String] = js.native
+  var proxyBypassList: js.UndefOr[String] = js.undefined
   
   /**
     * Proxy server, similar to the one passed to --proxy-server
     */
-  var proxyServer: js.UndefOr[String] = js.native
+  var proxyServer: js.UndefOr[String] = js.undefined
 }
 object CreateBrowserContextRequest {
   

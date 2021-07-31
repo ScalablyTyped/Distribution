@@ -5,7 +5,6 @@ import typings.icheck.icheckStrings.checkbox
 import typings.icheck.icheckStrings.radio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,63 +12,62 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object ICheck {
   
-  @js.native
   trait Events extends StObject {
     
     /**
       * input's "checked", "disabled" or "indeterminate" state is changed
       */
-    def ifChanged(): Unit = js.native
+    def ifChanged(): Unit
     
     /**
       * input's state is changed to "checked"
       */
-    def ifChecked(): Unit = js.native
+    def ifChecked(): Unit
     
     /**
       * user clicked on a customized input or an assigned label
       */
-    def ifClicked(): Unit = js.native
+    def ifClicked(): Unit
     
     /**
       * input is just customized
       */
-    def ifCreated(): Unit = js.native
+    def ifCreated(): Unit
     
     /**
       * customization is just removed
       */
-    def ifDestroyed(): Unit = js.native
+    def ifDestroyed(): Unit
     
     /**
       * "indeterminate" state is removed
       */
-    def ifDeterminate(): Unit = js.native
+    def ifDeterminate(): Unit
     
     /**
       * input's state is changed to "disabled"
       */
-    def ifDisabled(): Unit = js.native
+    def ifDisabled(): Unit
     
     /**
       * "disabled" state is removed
       */
-    def ifEnabled(): Unit = js.native
+    def ifEnabled(): Unit
     
     /**
       * input's state is changed to "indeterminate"
       */
-    def ifIndeterminate(): Unit = js.native
+    def ifIndeterminate(): Unit
     
     /**
       * input's "checked" state is changed
       */
-    def ifToggled(): Unit = js.native
+    def ifToggled(): Unit
     
     /**
       * "checked" state is removed
       */
-    def ifUnchecked(): Unit = js.native
+    def ifUnchecked(): Unit
   }
   object Events {
     
@@ -129,53 +127,52 @@ object ICheck {
     }
   }
   
-  @js.native
   trait Methods extends StObject {
     
     /**
       * change input's state to 'checked'
       */
-    def check(): Unit = js.native
+    def check(): Unit
     
     /**
       * remove all traces of iCheck
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * remove 'indeterminate' state
       */
-    def determinate(): Unit = js.native
+    def determinate(): Unit
     
     /**
       * change input's state to 'disabled'
       */
-    def disable(): Unit = js.native
+    def disable(): Unit
     
     /**
       * remove 'disabled' state
       */
-    def enable(): Unit = js.native
+    def enable(): Unit
     
     /**
       * change input's state to 'indeterminate'
       */
-    def indeterminate(): Unit = js.native
+    def indeterminate(): Unit
     
     /**
       * toggle 'checked' state
       */
-    def toggle(): Unit = js.native
+    def toggle(): Unit
     
     /**
       * remove 'checked' state
       */
-    def uncheck(): Unit = js.native
+    def uncheck(): Unit
     
     /**
       * apply input changes, which were done outside the plugin
       */
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object Methods {
     
@@ -227,200 +224,199 @@ object ICheck {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Class added on active state (mouse button is pressed on an input)
       * @default "active"
       */
-    var activeClass: js.UndefOr[String] = js.native
+    var activeClass: js.UndefOr[String] = js.undefined
     
     /**
       * Set true to activate ARIA support
       * @default false
       */
-    var aria: js.UndefOr[Boolean] = js.native
+    var aria: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Base class added to customized checkboxes
       * @default "icheckbox"
       */
-    var checkboxClass: js.UndefOr[String] = js.native
+    var checkboxClass: js.UndefOr[String] = js.undefined
     
     /**
       * If not empty, used instead of 'checkedClass' option (checkbox input specific)
       * @default ""
       */
-    var checkedCheckboxClass: js.UndefOr[String] = js.native
+    var checkedCheckboxClass: js.UndefOr[String] = js.undefined
     
     /**
       * Class added on checked state (input.checked = true)
       * @default "checked"
       */
-    var checkedClass: js.UndefOr[String] = js.native
+    var checkedClass: js.UndefOr[String] = js.undefined
     
     /**
       * If not empty, used instead of 'checkedClass' option (radio button input specific)
       * @default ""
       */
-    var checkedRadioClass: js.UndefOr[String] = js.native
+    var checkedRadioClass: js.UndefOr[String] = js.undefined
     
     /**
       * True to set 'pointer' CSS cursor over enabled inputs and 'default' over disabled
       * @default false
       */
-    var cursor: js.UndefOr[Boolean] = js.native
+    var cursor: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If not empty, used instead of 'determinateClass' option (checkbox input specific)
       * @default ""
       */
-    var determinateCheckboxClass: js.UndefOr[String] = js.native
+    var determinateCheckboxClass: js.UndefOr[String] = js.undefined
     
     /**
       * If not empty, added as class name on determinate state (input.indeterminate = false)
       * @default ""
       */
-    var determinateClass: js.UndefOr[String] = js.native
+    var determinateClass: js.UndefOr[String] = js.undefined
     
     /**
       * If not empty, used instead of 'determinateClass' option (radio button input specific)
       * @default ""
       */
-    var determinateRadioClass: js.UndefOr[String] = js.native
+    var determinateRadioClass: js.UndefOr[String] = js.undefined
     
     /**
       * If not empty, used instead of 'disabledClass' option (checkbox input specific)
       * @default ""
       */
-    var disabledCheckboxClass: js.UndefOr[String] = js.native
+    var disabledCheckboxClass: js.UndefOr[String] = js.undefined
     
     /**
       * Class added on disabled state (input.disabled = true)
       * @default "disabled"
       */
-    var disabledClass: js.UndefOr[String] = js.native
+    var disabledClass: js.UndefOr[String] = js.undefined
     
     /**
       * If not empty, used instead of 'disabledClass' option (radio button input specific)
       * @default ""
       */
-    var disabledRadioClass: js.UndefOr[String] = js.native
+    var disabledRadioClass: js.UndefOr[String] = js.undefined
     
     /**
       * If not empty, used instead of 'enabledClass' option (checkbox input specific)
       * @default ""
       */
-    var enabledCheckboxClass: js.UndefOr[String] = js.native
+    var enabledCheckboxClass: js.UndefOr[String] = js.undefined
     
     /**
       * If not empty, added as class name on enabled state (input.disabled = false)
       * @default ""
       */
-    var enabledClass: js.UndefOr[String] = js.native
+    var enabledClass: js.UndefOr[String] = js.undefined
     
     /**
       * If not empty, used instead of 'enabledClass' option (radio button input specific)
       * @default ""
       */
-    var enabledRadioClass: js.UndefOr[String] = js.native
+    var enabledRadioClass: js.UndefOr[String] = js.undefined
     
     /**
       * Class added on focus state (input has gained focus)
       * @default "focus"
       */
-    var focusClass: js.UndefOr[String] = js.native
+    var focusClass: js.UndefOr[String] = js.undefined
     
     /**
       * 'checkbox' or 'radio' to style only checkboxes or radio buttons, both by default
       * @default ""
       */
-    var handle: js.UndefOr[_empty | checkbox | radio] = js.native
+    var handle: js.UndefOr[_empty | checkbox | radio] = js.undefined
     
     /**
       * Class added on hover state (pointer is moved onto an input)
       * @default "hover"
       */
-    var hoverClass: js.UndefOr[String] = js.native
+    var hoverClass: js.UndefOr[String] = js.undefined
     
     /**
       * Increase clickable area by given % (negative number to decrease)
       * @default ""
       */
-    var increaseArea: js.UndefOr[String] = js.native
+    var increaseArea: js.UndefOr[String] = js.undefined
     
     /**
       * If not empty, used instead of 'indeterminateClass' option (checkbox input specific)
       * @default ""
       */
-    var indeterminateCheckboxClass: js.UndefOr[String] = js.native
+    var indeterminateCheckboxClass: js.UndefOr[String] = js.undefined
     
     /**
       * Class added on indeterminate state (input.indeterminate = true)
       * @default "indeterminate"
       */
-    var indeterminateClass: js.UndefOr[String] = js.native
+    var indeterminateClass: js.UndefOr[String] = js.undefined
     
     /**
       * If not empty, used instead of 'indeterminateClass' option (radio button input specific)
       * @default ""
       */
-    var indeterminateRadioClass: js.UndefOr[String] = js.native
+    var indeterminateRadioClass: js.UndefOr[String] = js.undefined
     
     /**
       * Set true to inherit original input's class name
       * @default false
       */
-    var inheritClass: js.UndefOr[Boolean] = js.native
+    var inheritClass: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to true, input's id is prefixed with 'iCheck-' and attached
       * @default false
       */
-    var inheritID: js.UndefOr[Boolean] = js.native
+    var inheritID: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Add HTML code or text inside customized input
       * @default ""
       */
-    var insert: js.UndefOr[String] = js.native
+    var insert: js.UndefOr[String] = js.undefined
     
     /**
       * Adds hoverClass to customized input on label hover and labelHoverClass to label on input hover
       * @default true
       */
-    var labelHover: js.UndefOr[Boolean] = js.native
+    var labelHover: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Class added to label if labelHover set to true
       * @default "hover"
       */
-    var labelHoverClass: js.UndefOr[String] = js.native
+    var labelHoverClass: js.UndefOr[String] = js.undefined
     
     /**
       * Base class added to customized radio buttons
       * @default "iradio"
       */
-    var radioClass: js.UndefOr[String] = js.native
+    var radioClass: js.UndefOr[String] = js.undefined
     
     /**
       * If not empty, used instead of 'uncheckedClass' option (checkbox input specific)
       * @default ""
       */
-    var uncheckedCheckboxClass: js.UndefOr[String] = js.native
+    var uncheckedCheckboxClass: js.UndefOr[String] = js.undefined
     
     /**
       * If not empty, added as class name on unchecked state (input.checked = false)
       * @default ""
       */
-    var uncheckedClass: js.UndefOr[String] = js.native
+    var uncheckedClass: js.UndefOr[String] = js.undefined
     
     /**
       * If not empty, used instead of 'uncheckedClass' option (radio button input specific)
       * @default ""
       */
-    var uncheckedRadioClass: js.UndefOr[String] = js.native
+    var uncheckedRadioClass: js.UndefOr[String] = js.undefined
   }
   object Options {
     

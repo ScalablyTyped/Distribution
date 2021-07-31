@@ -3,13 +3,13 @@ package typings.monacoEditor.mod.languages
 import typings.monacoEditor.mod.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CodeActionList extends IDisposable {
+trait CodeActionList
+  extends StObject
+     with IDisposable {
   
-  val actions: js.Array[CodeAction] = js.native
+  val actions: js.Array[CodeAction]
 }
 object CodeActionList {
   

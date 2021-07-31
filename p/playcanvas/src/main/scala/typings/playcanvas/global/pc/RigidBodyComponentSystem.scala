@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.RigidBodyComponentSystem")
 @js.native
 class RigidBodyComponentSystem protected ()
-  extends typings.playcanvas.pc.RigidBodyComponentSystem {
+  extends StObject
+     with typings.playcanvas.pc.RigidBodyComponentSystem {
   def this(app: typings.playcanvas.pc.Application) = this()
 }

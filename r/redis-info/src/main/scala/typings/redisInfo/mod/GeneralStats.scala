@@ -6,15 +6,13 @@ import typings.redisInfo.anon.Calls
 import typings.redisInfo.anon.Expires
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeneralStats extends StObject {
   
-  var commands: StringDictionary[Calls] = js.native
+  var commands: StringDictionary[Calls]
   
-  var databases: NumberDictionary[Expires] = js.native
+  var databases: NumberDictionary[Expires]
 }
 object GeneralStats {
   

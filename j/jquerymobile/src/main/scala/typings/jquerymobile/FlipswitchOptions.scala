@@ -2,29 +2,27 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlipswitchOptions extends StObject {
   
-  var corners: js.UndefOr[Boolean] = js.native
+  var corners: js.UndefOr[Boolean] = js.undefined
   
-  var defaults: js.UndefOr[Boolean] = js.native
+  var defaults: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var enhanced: js.UndefOr[Boolean] = js.native
+  var enhanced: js.UndefOr[Boolean] = js.undefined
   
-  var mini: js.UndefOr[Boolean] = js.native
+  var mini: js.UndefOr[Boolean] = js.undefined
   
-  var offText: js.UndefOr[String] = js.native
+  var offText: js.UndefOr[String] = js.undefined
   
-  var onText: js.UndefOr[String] = js.native
+  var onText: js.UndefOr[String] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var wrapperClass: js.UndefOr[String] = js.native
+  var wrapperClass: js.UndefOr[String] = js.undefined
 }
 object FlipswitchOptions {
   

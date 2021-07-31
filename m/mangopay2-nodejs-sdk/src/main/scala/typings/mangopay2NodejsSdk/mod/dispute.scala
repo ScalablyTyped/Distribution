@@ -4,73 +4,73 @@ import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
 import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dispute {
   
-  @js.native
-  trait DisputeData extends EntityBaseData {
+  trait DisputeData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * The deadline by which you must contest the dispute (if you wish to contest it)
       */
-    var ContestDeadlineDate: Timestamp = js.native
+    var ContestDeadlineDate: Timestamp
     
     /**
       * The amount you wish to contest
       */
-    var ContestedFunds: MoneyData = js.native
+    var ContestedFunds: MoneyData
     
     /**
       * Info about the reason for the dispute
       */
-    var DisputeReason: typings.mangopay2NodejsSdk.mod.dispute.DisputeReason = js.native
+    var DisputeReason: typings.mangopay2NodejsSdk.mod.dispute.DisputeReason
     
     /**
       * The type of dispute
       */
-    var DisputeType: typings.mangopay2NodejsSdk.mod.dispute.DisputeType = js.native
+    var DisputeType: typings.mangopay2NodejsSdk.mod.dispute.DisputeType
     
     /**
       * The amount of funds that were disputed
       */
-    var DisputedFunds: MoneyData = js.native
+    var DisputedFunds: MoneyData
     
     /**
       * The initial transaction ID
       */
-    var InitialTransactionId: String = js.native
+    var InitialTransactionId: String
     
     /**
       * The initial transaction type
       */
-    var InitialTransactionType: TransactionType = js.native
+    var InitialTransactionType: TransactionType
     
     /**
       * The ID of the associated repudiation transaction
       */
-    var RepudiationId: String = js.native
+    var RepudiationId: String
     
     /**
       * The result code
       */
-    var ResultCode: String = js.native
+    var ResultCode: String
     
     /**
       * A verbal explanation of the ResultCode
       */
-    var ResultMessage: String = js.native
+    var ResultMessage: String
     
     /**
       * The status of the dispute
       */
-    var Status: DisputeStatus = js.native
+    var Status: DisputeStatus
     
     /**
       * Used to communicate information about the dispute status to you
       */
-    var StatusMessage: String = js.native
+    var StatusMessage: String
   }
   object DisputeData {
     
@@ -137,12 +137,11 @@ object dispute {
     }
   }
   
-  @js.native
   trait DisputeReason extends StObject {
     
-    var DisputeReasonMessage: String = js.native
+    var DisputeReasonMessage: String
     
-    var DisputeReasonType: typings.mangopay2NodejsSdk.mod.dispute.DisputeReasonType = js.native
+    var DisputeReasonType: typings.mangopay2NodejsSdk.mod.dispute.DisputeReasonType
   }
   object DisputeReason {
     
@@ -282,10 +281,9 @@ object dispute {
   }
   
   /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.dispute.DisputeData, 'ContestedFunds'> */
-  @js.native
   trait SubmitDispute extends StObject {
     
-    var ContestedFunds: js.UndefOr[MoneyData] = js.native
+    var ContestedFunds: js.UndefOr[MoneyData] = js.undefined
   }
   object SubmitDispute {
     
@@ -307,10 +305,9 @@ object dispute {
   }
   
   /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.dispute.DisputeData, 'Tag'> */
-  @js.native
   trait UpdateDispute extends StObject {
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object UpdateDispute {
     

@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchSourceProperties extends StObject {
   
   /**
@@ -13,126 +11,126 @@ trait SearchSourceProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#autoNavigate)
     */
-  var autoNavigate: js.UndefOr[Boolean] = js.native
+  var autoNavigate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * For filtering suggests or search results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#filter)
     */
-  var filter: js.UndefOr[SearchSourceFilter] = js.native
+  var filter: js.UndefOr[SearchSourceFilter] = js.undefined
   
   /**
     * Function used to get search results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#getResults)
     */
-  var getResults: js.UndefOr[GetResultsHandler] = js.native
+  var getResults: js.UndefOr[GetResultsHandler] = js.undefined
   
   /**
     * Function used to get search suggestions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#getSuggestions)
     */
-  var getSuggestions: js.UndefOr[GetSuggestionsParameters] = js.native
+  var getSuggestions: js.UndefOr[GetSuggestionsParameters] = js.undefined
   
   /**
     * Indicates the maximum number of search results to return.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#maxResults)
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the maximum number of suggestions to return for the widget's input.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#maxSuggestions)
     */
-  var maxSuggestions: js.UndefOr[Double] = js.native
+  var maxSuggestions: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the minimum number of characters required before querying for a suggestion.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#minSuggestCharacters)
     */
-  var minSuggestCharacters: js.UndefOr[Double] = js.native
+  var minSuggestCharacters: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies the fields returned with the search results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#outFields)
     */
-  var outFields: js.UndefOr[js.Array[String]] = js.native
+  var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Used as a hint for the source input text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#placeholder)
     */
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether to display a [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) when a selected result is clicked.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#popupEnabled)
     */
-  var popupEnabled: js.UndefOr[Boolean] = js.native
+  var popupEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The popup template used to display search results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#popupTemplate)
     */
-  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.native
+  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
     * Specify this to prefix the user's input of the search text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#prefix)
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether to show a graphic on the map for the selected source using the [resultSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#resultSymbol).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#resultGraphicEnabled)
     */
-  var resultGraphicEnabled: js.UndefOr[Boolean] = js.native
+  var resultGraphicEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The symbol used to display the result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#resultSymbol)
     */
-  var resultSymbol: js.UndefOr[SymbolProperties] = js.native
+  var resultSymbol: js.UndefOr[SymbolProperties] = js.undefined
   
   /**
     * Specify this to add a suffix to the user's input for the search value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#suffix)
     */
-  var suffix: js.UndefOr[String] = js.native
+  var suffix: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether to display suggestions as the user enters input text in the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#suggestionsEnabled)
     */
-  var suggestionsEnabled: js.UndefOr[Boolean] = js.native
+  var suggestionsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to constrain the search results to the view's extent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#withinViewEnabled)
     */
-  var withinViewEnabled: js.UndefOr[Boolean] = js.native
+  var withinViewEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The set zoom scale for the resulting search result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#zoomScale)
     */
-  var zoomScale: js.UndefOr[Double] = js.native
+  var zoomScale: js.UndefOr[Double] = js.undefined
 }
 object SearchSourceProperties {
   

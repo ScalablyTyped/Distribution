@@ -2,41 +2,39 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStreamingURLRequest extends StObject {
   
   /**
     * The name of the application to launch after the session starts. This is the name that you specified as Name in the Image Assistant.
     */
-  var ApplicationId: js.UndefOr[String] = js.native
+  var ApplicationId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the fleet.
     */
-  var FleetName: String = js.native
+  var FleetName: String
   
   /**
     * The session context. For more information, see Session Context in the Amazon AppStream 2.0 Administration Guide.
     */
-  var SessionContext: js.UndefOr[String] = js.native
+  var SessionContext: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the stack.
     */
-  var StackName: String = js.native
+  var StackName: String
   
   /**
     * The identifier of the user.
     */
-  var UserId: StreamingUrlUserId = js.native
+  var UserId: StreamingUrlUserId
   
   /**
     * The time that the streaming URL will be valid, in seconds. Specify a value between 1 and 604800 seconds. The default is 60 seconds.
     */
-  var Validity: js.UndefOr[Long] = js.native
+  var Validity: js.UndefOr[Long] = js.undefined
 }
 object CreateStreamingURLRequest {
   

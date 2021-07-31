@@ -2,15 +2,13 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumOfSpaces extends StObject {
   
-  var numOfSpaces: Double = js.native
+  var numOfSpaces: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object NumOfSpaces {
   

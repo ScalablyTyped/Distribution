@@ -8,15 +8,15 @@ import typings.node.netMod.Socket
 import typings.node.streamMod.ReadableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServerSessionOptions extends SessionOptions {
+trait ServerSessionOptions
+  extends StObject
+     with SessionOptions {
   
-  var Http1IncomingMessage: js.UndefOr[Instantiable1[/* socket */ Socket, IncomingMessage]] = js.native
+  var Http1IncomingMessage: js.UndefOr[Instantiable1[/* socket */ Socket, IncomingMessage]] = js.undefined
   
-  var Http1ServerResponse: js.UndefOr[Instantiable1[/* req */ IncomingMessage, ServerResponse]] = js.native
+  var Http1ServerResponse: js.UndefOr[Instantiable1[/* req */ IncomingMessage, ServerResponse]] = js.undefined
   
   var Http2ServerRequest: js.UndefOr[
     Instantiable4[
@@ -26,11 +26,11 @@ trait ServerSessionOptions extends SessionOptions {
       /* rawHeaders */ js.Array[String], 
       typings.node.http2Mod.Http2ServerRequest
     ]
-  ] = js.native
+  ] = js.undefined
   
   var Http2ServerResponse: js.UndefOr[
     Instantiable1[/* stream */ ServerHttp2Stream, typings.node.http2Mod.Http2ServerResponse]
-  ] = js.native
+  ] = js.undefined
 }
 object ServerSessionOptions {
   

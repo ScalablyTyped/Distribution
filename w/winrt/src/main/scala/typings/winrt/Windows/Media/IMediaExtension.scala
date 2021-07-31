@@ -3,13 +3,11 @@ package typings.winrt.Windows.Media
 import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMediaExtension extends StObject {
   
-  def setProperties(configuration: IPropertySet): Unit = js.native
+  def setProperties(configuration: IPropertySet): Unit
 }
 object IMediaExtension {
   

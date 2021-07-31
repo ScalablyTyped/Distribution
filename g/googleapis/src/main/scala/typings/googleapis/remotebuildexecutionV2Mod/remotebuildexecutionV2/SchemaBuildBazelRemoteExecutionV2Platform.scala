@@ -2,7 +2,6 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `Platform` is represented as a series of key-value pairs representing the
   * properties that are required of the platform.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2Platform extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaBuildBazelRemoteExecutionV2Platform extends StObject {
     * be lexicographically sorted by name, and then by value. Sorting of
     * strings is done by code point, equivalently, by the UTF-8 bytes.
     */
-  var properties: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2PlatformProperty]] = js.native
+  var properties: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2PlatformProperty]] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2Platform {
   

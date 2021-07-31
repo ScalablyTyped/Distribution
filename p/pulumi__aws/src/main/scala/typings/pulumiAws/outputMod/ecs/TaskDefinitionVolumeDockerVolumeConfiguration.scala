@@ -3,36 +3,34 @@ package typings.pulumiAws.outputMod.ecs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskDefinitionVolumeDockerVolumeConfiguration extends StObject {
   
   /**
     * If this value is `true`, the Docker volume is created if it does not already exist. *Note*: This field is only used if the scope is `shared`.
     */
-  var autoprovision: js.UndefOr[Boolean] = js.native
+  var autoprovision: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Docker volume driver to use. The driver value must match the driver name provided by Docker because it is used for task placement.
     */
-  var driver: js.UndefOr[String] = js.native
+  var driver: js.UndefOr[String] = js.undefined
   
   /**
     * A map of Docker driver specific options.
     */
-  var driverOpts: js.UndefOr[StringDictionary[String]] = js.native
+  var driverOpts: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * A map of custom metadata to add to your Docker volume.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The scope for the Docker volume, which determines its lifecycle, either `task` or `shared`.  Docker volumes that are scoped to a `task` are automatically provisioned when the task starts and destroyed when the task stops. Docker volumes that are `scoped` as shared persist after the task stops.
     */
-  var scope: String = js.native
+  var scope: String
 }
 object TaskDefinitionVolumeDockerVolumeConfiguration {
   

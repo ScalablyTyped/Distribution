@@ -4,15 +4,13 @@ import typings.node.BufferEncoding
 import typings.node.fsMod.OpenMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncodingFlag extends StObject {
   
-  var encoding: BufferEncoding = js.native
+  var encoding: BufferEncoding
   
-  var flag: js.UndefOr[OpenMode] = js.native
+  var flag: js.UndefOr[OpenMode] = js.undefined
 }
 object EncodingFlag {
   

@@ -2,13 +2,11 @@ package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for a push delivery endpoint.
   */
-@js.native
 trait SchemaPushConfig extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaPushConfig extends StObject {
     * example, a Webhook endpoint might use
     * &quot;https://example.com/push&quot;.
     */
-  var pushEndpoint: js.UndefOr[String] = js.native
+  var pushEndpoint: js.UndefOr[String] = js.undefined
 }
 object SchemaPushConfig {
   

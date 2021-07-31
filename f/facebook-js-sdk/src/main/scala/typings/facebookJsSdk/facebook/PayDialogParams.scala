@@ -4,35 +4,35 @@ import typings.facebookJsSdk.facebookJsSdkStrings.pay
 import typings.facebookJsSdk.facebookJsSdkStrings.purchaseitem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PayDialogParams extends DialogParams {
+trait PayDialogParams
+  extends StObject
+     with DialogParams {
   
-  var action: purchaseitem = js.native
+  var action: purchaseitem
   
-  var method: pay = js.native
+  var method: pay
   
-  var pricepoint_id: js.UndefOr[String] = js.native
+  var pricepoint_id: js.UndefOr[String] = js.undefined
   
-  var product: String = js.native
+  var product: String
   
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
   
-  var quantity_max: js.UndefOr[Double] = js.native
+  var quantity_max: js.UndefOr[Double] = js.undefined
   
-  var quantity_min: js.UndefOr[Double] = js.native
+  var quantity_min: js.UndefOr[Double] = js.undefined
   
-  var request_id: js.UndefOr[String] = js.native
+  var request_id: js.UndefOr[String] = js.undefined
   
-  var test_currency: js.UndefOr[String] = js.native
+  var test_currency: js.UndefOr[String] = js.undefined
 }
 object PayDialogParams {
   
   @scala.inline
-  def apply(action: purchaseitem, method: pay, product: String): PayDialogParams = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any])
+  def apply(product: String): PayDialogParams = {
+    val __obj = js.Dynamic.literal(action = "purchaseitem", method = "pay", product = product.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayDialogParams]
   }
   

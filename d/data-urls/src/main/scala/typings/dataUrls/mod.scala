@@ -1,34 +1,33 @@
 package typings.dataUrls
 
 import typings.node.Buffer
-import typings.whatwgMimetype.mod.^
 import typings.whatwgUrl.mod.URLRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(stringInput: String): DataURL | Null = ^.asInstanceOf[js.Dynamic].apply(stringInput.asInstanceOf[js.Any]).asInstanceOf[DataURL | Null]
+  
   @JSImport("data-urls", JSImport.Namespace)
   @js.native
-  def apply(stringInput: String): DataURL | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("data-urls", "fromURLRecord")
-  @js.native
-  def fromURLRecord(urlRecord: URLRecord): DataURL | Null = js.native
+  @scala.inline
+  def fromURLRecord(urlRecord: URLRecord): DataURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURLRecord")(urlRecord.asInstanceOf[js.Any]).asInstanceOf[DataURL | Null]
   
-  @js.native
   trait DataURL extends StObject {
     
-    var body: Buffer = js.native
+    var body: Buffer
     
-    var mimeType: ^ = js.native
+    var mimeType: typings.whatwgMimetype.mod.^
   }
   object DataURL {
     
     @scala.inline
-    def apply(body: Buffer, mimeType: ^): DataURL = {
+    def apply(body: Buffer, mimeType: typings.whatwgMimetype.mod.^): DataURL = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataURL]
     }
@@ -40,7 +39,7 @@ object mod {
       def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMimeType(value: ^): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      def setMimeType(value: typings.whatwgMimetype.mod.^): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     }
   }
 }

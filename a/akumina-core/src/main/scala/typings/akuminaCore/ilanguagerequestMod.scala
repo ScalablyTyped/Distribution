@@ -2,17 +2,15 @@ package typings.akuminaCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ilanguagerequestMod {
   
-  @js.native
   trait ILanguageRequest extends StObject {
     
-    var languageCode: js.UndefOr[String] = js.native
+    var languageCode: js.UndefOr[String] = js.undefined
     
-    var languageId: Double = js.native
+    var languageId: Double
   }
   object ILanguageRequest {
     

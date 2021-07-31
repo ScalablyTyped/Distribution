@@ -3,27 +3,25 @@ package typings.otplibPresetV11
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HOTP extends StObject {
   
-  var HOTP: Instantiable0[typings.otplibPresetV11.HOTP] = js.native
+  var HOTP: Instantiable0[typings.otplibPresetV11.HOTP]
   
-  def check(token: String, secret: String, counter: Double): Boolean = js.native
+  def check(token: String, secret: String, counter: Double): Boolean
   
-  var defaultOptions: HotpOptionsInterface = js.native
+  var defaultOptions: HotpOptionsInterface
   
-  def generate(secret: String, counter: Double): String = js.native
+  def generate(secret: String, counter: Double): String
   
-  var options: HotpOptionsInterface = js.native
+  var options: HotpOptionsInterface
   
-  var optionsAll: HotpOptionsInterface = js.native
+  var optionsAll: HotpOptionsInterface
   
-  def resetOptions(): this.type = js.native
+  def resetOptions(): this.type
   
-  def verify(opts: HotpVerifyOptionsInterface): Boolean = js.native
+  def verify(opts: HotpVerifyOptionsInterface): Boolean
 }
 object HOTP {
   

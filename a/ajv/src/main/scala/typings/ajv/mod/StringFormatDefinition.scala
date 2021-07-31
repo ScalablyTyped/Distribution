@@ -3,19 +3,19 @@ package typings.ajv.mod
 import typings.ajv.ajvStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StringFormatDefinition extends FormatDefinition {
+trait StringFormatDefinition
+  extends StObject
+     with FormatDefinition {
   
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
-  var compare: js.UndefOr[js.Function2[/* data1 */ String, /* data2 */ String, Double]] = js.native
+  var compare: js.UndefOr[js.Function2[/* data1 */ String, /* data2 */ String, Double]] = js.undefined
   
-  var `type`: js.UndefOr[string] = js.native
+  var `type`: js.UndefOr[string] = js.undefined
   
-  var validate: FormatValidator = js.native
+  var validate: FormatValidator
 }
 object StringFormatDefinition {
   

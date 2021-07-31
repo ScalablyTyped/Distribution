@@ -3,13 +3,11 @@ package typings.victory.mod
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Common properties for all data components
   */
-@js.native
 trait VictoryDatableProps extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait VictoryDatableProps extends StObject {
     * categorical data will be plotted in the order it was given in the data array
     * @example ["dogs", "cats", "mice"]
     */
-  var categories: js.UndefOr[CategoryPropType] = js.native
+  var categories: js.UndefOr[CategoryPropType] = js.undefined
   
   /**
     * The data prop specifies the data to be plotted. Data should be in the form of an array
@@ -29,7 +27,7 @@ trait VictoryDatableProps extends StObject {
     * @example [{x: 1, y: 2}, {x: 2, y: 3}], [[1, 2], [2, 3]],
     * [[{x: "a", y: 1}, {x: "b", y: 2}], [{x: "a", y: 2}, {x: "b", y: 3}]]
     */
-  var data: js.UndefOr[js.Array[_]] = js.native
+  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The dataComponent prop takes an entire component which will be used to create an area.
@@ -41,7 +39,7 @@ trait VictoryDatableProps extends StObject {
     * not provided, VictoryArea will use its default Area component.
     * @default <Area/>
     */
-  var dataComponent: js.UndefOr[ReactElement] = js.native
+  var dataComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The domain prop describes the range of values your chart will cover. This prop can be
@@ -51,7 +49,7 @@ trait VictoryDatableProps extends StObject {
     * available information.
     * @example [-1, 1], {x: [0, 100], y: [0, 1]}
     */
-  var domain: js.UndefOr[DomainPropType] = js.native
+  var domain: js.UndefOr[DomainPropType] = js.undefined
   
   /**
     * The x prop specifies how to access the X value of each data point.
@@ -64,7 +62,7 @@ trait VictoryDatableProps extends StObject {
     * @example 0, 'x', 'x.value.nested.1.thing', 'x[2].also.nested', null, d => Math.sin(d)
     * @default "x"
     */
-  var x: js.UndefOr[DataGetterPropType] = js.native
+  var x: js.UndefOr[DataGetterPropType] = js.undefined
   
   /**
     * The y prop specifies how to access the Y value of each data point.
@@ -77,7 +75,7 @@ trait VictoryDatableProps extends StObject {
     * @example 0, 'y', 'y.value.nested.1.thing', 'y[2].also.nested', null, d => Math.sin(d)
     * @default "y"
     */
-  var y: js.UndefOr[DataGetterPropType] = js.native
+  var y: js.UndefOr[DataGetterPropType] = js.undefined
   
   /**
     * Use y0 data accessor prop to determine how the component defines the baseline y0 data.
@@ -85,7 +83,7 @@ trait VictoryDatableProps extends StObject {
     * This prop may be given in a variety of formats.
     * @example 'last_quarter_profit', () => 10, 1, 'employees.salary', ["employees", "salary"]
     */
-  var y0: js.UndefOr[DataGetterPropType] = js.native
+  var y0: js.UndefOr[DataGetterPropType] = js.undefined
 }
 object VictoryDatableProps {
   
@@ -108,7 +106,7 @@ object VictoryDatableProps {
     def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataComponent(value: ReactElement): Self = StObject.set(x, "dataComponent", value.asInstanceOf[js.Any])

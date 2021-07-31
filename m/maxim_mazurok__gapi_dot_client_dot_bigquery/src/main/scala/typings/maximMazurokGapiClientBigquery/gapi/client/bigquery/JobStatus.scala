@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobStatus extends StObject {
   
   /** [Output-only] Final error result of the job. If present, indicates that the job has completed and was unsuccessful. */
-  var errorResult: js.UndefOr[ErrorProto] = js.native
+  var errorResult: js.UndefOr[ErrorProto] = js.undefined
   
   /**
     * [Output-only] The first errors encountered during the running of the job. The final message includes the number of errors that caused the process to stop. Errors here do not
     * necessarily mean that the job has completed or was unsuccessful.
     */
-  var errors: js.UndefOr[js.Array[ErrorProto]] = js.native
+  var errors: js.UndefOr[js.Array[ErrorProto]] = js.undefined
   
   /** [Output-only] Running state of the job. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object JobStatus {
   

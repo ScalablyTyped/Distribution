@@ -8,35 +8,33 @@ import typings.std.Uint16Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Buffer extends StObject {
   
-  var buffer: Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native
+  var buffer: Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array
   
-  var childTileMask: js.UndefOr[Double] = js.native
+  var childTileMask: js.UndefOr[Double] = js.undefined
   
-  var createdByUpsampling: js.UndefOr[Boolean] = js.native
+  var createdByUpsampling: js.UndefOr[Boolean] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var structure: js.UndefOr[js.Any] = js.native
+  var structure: js.UndefOr[js.Any] = js.undefined
   
-  var structureelementMultiplier: js.UndefOr[Double] = js.native
+  var structureelementMultiplier: js.UndefOr[Double] = js.undefined
   
-  var structureelementsPerHeight: js.UndefOr[Double] = js.native
+  var structureelementsPerHeight: js.UndefOr[Double] = js.undefined
   
-  var structureheightOffset: js.UndefOr[Double] = js.native
+  var structureheightOffset: js.UndefOr[Double] = js.undefined
   
-  var structureheightScale: js.UndefOr[Double] = js.native
+  var structureheightScale: js.UndefOr[Double] = js.undefined
   
-  var structureisBigEndian: js.UndefOr[Boolean] = js.native
+  var structureisBigEndian: js.UndefOr[Boolean] = js.undefined
   
-  var structurestride: js.UndefOr[Double] = js.native
+  var structurestride: js.UndefOr[Double] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object Buffer {
   

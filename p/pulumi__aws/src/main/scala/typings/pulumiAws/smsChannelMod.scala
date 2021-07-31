@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object smsChannelMod {
@@ -58,6 +57,10 @@ object smsChannelMod {
   /* static members */
   object SmsChannel {
     
+    @JSImport("@pulumi/aws/pinpoint/smsChannel", "SmsChannel")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SmsChannel resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,50 +70,44 @@ object smsChannelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/pinpoint/smsChannel", "SmsChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SmsChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/smsChannel", "SmsChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SmsChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/smsChannel", "SmsChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SmsChannelState): SmsChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/smsChannel", "SmsChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SmsChannelState, opts: CustomResourceOptions): SmsChannel = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SmsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SmsChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SmsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SmsChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SmsChannelState): SmsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SmsChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SmsChannelState, opts: CustomResourceOptions): SmsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SmsChannel]
     
     /**
       * Returns true if the given object is an instance of SmsChannel.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/pinpoint/smsChannel", "SmsChannel.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/smsChannel.SmsChannel */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/smsChannel.SmsChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/smsChannel.SmsChannel */ Boolean]
   }
   
-  @js.native
   trait SmsChannelArgs extends StObject {
     
     /**
       * The application ID.
       */
-    val applicationId: Input[String] = js.native
+    val applicationId: Input[String]
     
     /**
       * Whether the channel is enabled or disabled. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Sender identifier of your messages.
       */
-    val senderId: js.UndefOr[Input[String]] = js.native
+    val senderId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Short Code registered with the phone provider.
       */
-    val shortCode: js.UndefOr[Input[String]] = js.native
+    val shortCode: js.UndefOr[Input[String]] = js.undefined
   }
   object SmsChannelArgs {
     
@@ -146,38 +143,37 @@ object smsChannelMod {
     }
   }
   
-  @js.native
   trait SmsChannelState extends StObject {
     
     /**
       * The application ID.
       */
-    val applicationId: js.UndefOr[Input[String]] = js.native
+    val applicationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether the channel is enabled or disabled. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Promotional messages per second that can be sent.
       */
-    val promotionalMessagesPerSecond: js.UndefOr[Input[Double]] = js.native
+    val promotionalMessagesPerSecond: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Sender identifier of your messages.
       */
-    val senderId: js.UndefOr[Input[String]] = js.native
+    val senderId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Short Code registered with the phone provider.
       */
-    val shortCode: js.UndefOr[Input[String]] = js.native
+    val shortCode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Transactional messages per second that can be sent.
       */
-    val transactionalMessagesPerSecond: js.UndefOr[Input[Double]] = js.native
+    val transactionalMessagesPerSecond: js.UndefOr[Input[Double]] = js.undefined
   }
   object SmsChannelState {
     

@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.structuresMod.Structure
 import typings.mendixmodelsdk.structuresMod.aliases.IContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unitsMod {
@@ -112,44 +111,45 @@ object unitsMod {
     def unit_MStructuralUnit: this.type = js.native
   }
   
-  @js.native
-  trait IAbstractUnit extends IStructure {
+  trait IAbstractUnit
+    extends StObject
+       with IStructure {
     
     /**
       * The parent unit of this unit.
       */
     @JSName("container")
-    val container_IAbstractUnit: IStructuralUnit = js.native
+    val container_IAbstractUnit: IStructuralUnit
     
     /**
       * Deletes the unit from the model
       */
-    def delete(): Unit = js.native
+    def delete(): Unit
     
     /**
       * Whether this unit and all of its children (recursively) can be loaded.
       */
-    val isLoadable: Boolean = js.native
+    val isLoadable: Boolean
     
     /**
       * Whether this unit and all of its children (recursively) are editable.
       */
-    val isReadOnly: Boolean = js.native
+    val isReadOnly: Boolean
   }
   object IAbstractUnit {
     
     @scala.inline
     def apply(
-      allProperties: () => js.Array[AbstractProperty[_, _]],
+      allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
       container: IStructuralUnit,
       delete: () => Unit,
       id: String,
       isLoadable: Boolean,
       isLoaded: Boolean,
       isReadOnly: Boolean,
-      loadedProperties: () => js.Array[AbstractProperty[_, _]],
+      loadedProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
       model: IAbstractModel,
-      publicProperties: () => js.Array[AbstractProperty[_, _]],
+      publicProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
       structureTypeName: String,
       toJSON: () => js.Object,
       traverse: js.Function1[IAbstractUnit, Unit] => Unit,
@@ -180,54 +180,47 @@ object unitsMod {
   
   @js.native
   trait IAbstractUnitConstructor
-    extends InstanceConstructor
+    extends StObject
        with Instantiable1[
           /* args (repeated) */ js.Any, 
           ModelUnit[IAbstractModel] | StructuralUnit[IAbstractModel]
         ]
+       with InstanceConstructor
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
-  - typings.mendixmodelsdk.unitsMod.IAbstractUnit because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined isLoadable, isReadOnly, delete */ @js.native
-  trait IModelUnit extends IAbstractElement {
+  - typings.mendixmodelsdk.elementsMod.IAbstractElement because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined load, load, load, load, asLoaded */ @js.native
+  trait IModelUnit
+    extends StObject
+       with IAbstractUnit
+       with IContainer {
     
-    @JSName("container")
-    val container_IModelUnit: IStructuralUnit = js.native
+    def asLoaded(): IAbstractElement = js.native
     
-    /**
-      * Deletes the unit from the model
-      */
-    def delete(): Unit = js.native
-    
-    /**
-      * Whether this unit and all of its children (recursively) can be loaded.
-      */
-    val isLoadable: Boolean = js.native
-    
-    /**
-      * Whether this unit and all of its children (recursively) are editable.
-      */
-    val isReadOnly: Boolean = js.native
+    def load(): js.Promise[IAbstractElement] = js.native
+    def load(callback: js.Function1[/* element */ this.type, Unit]): Unit = js.native
+    def load(callback: js.Function1[/* element */ this.type, Unit], forceRefresh: Boolean): Unit = js.native
+    def load(forceRefresh: Boolean): js.Promise[IAbstractElement] = js.native
   }
   
-  @js.native
   trait IStructuralUnit
-    extends IAbstractUnit
+    extends StObject
+       with IAbstractUnit
        with IContainer
   object IStructuralUnit {
     
     @scala.inline
     def apply(
-      allProperties: () => js.Array[AbstractProperty[_, _]],
+      allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
       container: IStructuralUnit,
       delete: () => Unit,
       id: String,
       isLoadable: Boolean,
       isLoaded: Boolean,
       isReadOnly: Boolean,
-      loadedProperties: () => js.Array[AbstractProperty[_, _]],
+      loadedProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
       model: IAbstractModel,
-      publicProperties: () => js.Array[AbstractProperty[_, _]],
+      publicProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
       structureTypeName: String,
       toJSON: () => js.Object,
       traverse: js.Function1[IStructuralUnit, Unit] => Unit,

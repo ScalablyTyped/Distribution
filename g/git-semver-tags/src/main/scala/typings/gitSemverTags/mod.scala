@@ -2,44 +2,44 @@ package typings.gitSemverTags
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(callback: Callback): Unit = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(options: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("git-semver-tags", JSImport.Namespace)
   @js.native
-  def apply(callback: Callback): Unit = js.native
-  @JSImport("git-semver-tags", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, callback: Callback): Unit = js.native
+  val ^ : js.Any = js.native
   
   type Callback = js.Function2[/* error */ js.Any, /* tags */ js.Array[String], Unit]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * What package should lerna style tags be listed for, e.g., `foo-package`.
       */
     @JSName("package")
-    var _package: js.UndefOr[String] = js.native
+    var _package: js.UndefOr[String] = js.undefined
     
     /**
       * Extract lerna style tags (`foo-package@2.0.0`) from the git history, rather
       * than `v1.0.0` format.
       */
-    var lernaTags: js.UndefOr[Boolean] = js.native
+    var lernaTags: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If given, unstable tags (e.g. `x.x.x-alpha.1`, `x.x.x-rc.2`) will be skipped.
       */
-    var skipUnstable: js.UndefOr[Boolean] = js.native
+    var skipUnstable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify a prefix for the git tag to be ignored from the semver checks.
       */
-    var tagPrefix: js.UndefOr[String] = js.native
+    var tagPrefix: js.UndefOr[String] = js.undefined
   }
   object Options {
     

@@ -2,7 +2,6 @@ package typings.jsplumb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jsplumb.jsplumbStrings.ContinuousRight
   - typings.jsplumb.jsplumbStrings.ContinuousTop
 */
-trait AnchorContinuousId extends _AnchorId
+trait AnchorContinuousId
+  extends StObject
+     with _AnchorId
 object AnchorContinuousId {
   
   @scala.inline

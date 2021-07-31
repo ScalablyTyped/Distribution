@@ -3,21 +3,19 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentCompletedEvent extends StObject {
   
-  var comment: String = js.native
+  var comment: String
   
-  var data: StringDictionary[js.Any] = js.native
+  var data: StringDictionary[js.Any]
   
-  var deployment: Deployment = js.native
+  var deployment: Deployment
   
-  var environment: ReleaseEnvironment = js.native
+  var environment: ReleaseEnvironment
   
-  var project: ProjectReference = js.native
+  var project: ProjectReference
 }
 object DeploymentCompletedEvent {
   

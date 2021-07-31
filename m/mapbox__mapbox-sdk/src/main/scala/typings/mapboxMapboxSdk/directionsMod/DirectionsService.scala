@@ -3,13 +3,11 @@ package typings.mapboxMapboxSdk.directionsMod
 import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionsService extends StObject {
   
-  def getDirections(request: DirectionsRequest): MapiRequest = js.native
+  def getDirections(request: DirectionsRequest): MapiRequest
 }
 object DirectionsService {
   

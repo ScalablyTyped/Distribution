@@ -2,16 +2,16 @@ package typings.mmdbLib.responseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.mmdbLib.responseMod.Response because Already inherited */ @js.native
-trait IspResponse extends AsnResponse {
+- typings.mmdbLib.responseMod.Response because Already inherited */ trait IspResponse
+  extends StObject
+     with AsnResponse {
   
-  val isp: String = js.native
+  val isp: String
   
-  val organization: String = js.native
+  val organization: String
 }
 object IspResponse {
   

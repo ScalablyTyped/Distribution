@@ -2,10 +2,8 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageOptions extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait ImageOptions extends StObject {
     *
     * @default `0`
     */
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Restrict images to a maximum width in pixels (wherever possible)
     *
     * @default `0`
     */
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Restrict images to a minimum height in pixels (wherever possible)
     *
     * @default `0`
     */
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Restrict images to a minimum width in pixels (wherever possible)
     *
     * @default `0`
     */
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
 }
 object ImageOptions {
   

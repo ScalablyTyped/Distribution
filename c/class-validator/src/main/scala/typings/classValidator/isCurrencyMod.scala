@@ -5,32 +5,29 @@ import typings.std.PropertyDecorator
 import typings.validator.mod.validator.IsCurrencyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isCurrencyMod {
+  
+  @JSImport("class-validator/types/decorator/string/IsCurrency", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/decorator/string/IsCurrency", "IS_CURRENCY")
   @js.native
   val IS_CURRENCY: /* "isCurrency" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/string/IsCurrency", "IsCurrency")
-  @js.native
-  def IsCurrency_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsCurrency", "IsCurrency")
-  @js.native
-  def IsCurrency_(options: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsCurrency", "IsCurrency")
-  @js.native
-  def IsCurrency_(options: IsCurrencyOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsCurrency", "IsCurrency")
-  @js.native
-  def IsCurrency_(options: IsCurrencyOptions, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsCurrency_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsCurrency")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsCurrency_(options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsCurrency")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsCurrency_(options: IsCurrencyOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsCurrency")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsCurrency_(options: IsCurrencyOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsCurrency")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/string/IsCurrency", "isCurrency")
-  @js.native
-  def isCurrency(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/string/IsCurrency", "isCurrency")
-  @js.native
-  def isCurrency(value: js.Any, options: IsCurrencyOptions): Boolean = js.native
+  @scala.inline
+  def isCurrency(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCurrency")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isCurrency(value: js.Any, options: IsCurrencyOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCurrency")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

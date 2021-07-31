@@ -7,16 +7,18 @@ import typings.awsSdkClientS3Browser.typesGetBucketVersioningInputMod.GetBucketV
 import typings.awsSdkClientS3Browser.typesGetBucketVersioningOutputMod.GetBucketVersioningOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getBucketVersioningCommandMod {
   
   @JSImport("@aws-sdk/client-s3-browser/commands/GetBucketVersioningCommand", "GetBucketVersioningCommand")
   @js.native
-  class GetBucketVersioningCommand protected () extends Command[
+  class GetBucketVersioningCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           GetBucketVersioningInput, 
           OutputTypesUnion, 
@@ -25,11 +27,23 @@ object getBucketVersioningCommandMod {
         ] {
     def this(input: GetBucketVersioningInput) = this()
     
+    /* CompleteClass */
+    override val input: GetBucketVersioningInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[GetBucketVersioningInput, GetBucketVersioningOutput] = js.native
+    
     val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ js.Any = js.native
     
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: S3ResolvedConfiguration
+    ): Handler[GetBucketVersioningInput, GetBucketVersioningOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: S3ResolvedConfiguration,
+      options: js.Any
     ): Handler[GetBucketVersioningInput, GetBucketVersioningOutput] = js.native
   }
 }

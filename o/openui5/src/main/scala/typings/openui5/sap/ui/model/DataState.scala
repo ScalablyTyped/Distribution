@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.base.Object
 import typings.openui5.sap.ui.core.Message_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataState extends Object {
+trait DataState
+  extends StObject
+     with Object {
   
   /**
     * Returns or sets whether the data state is changed.As long as changed was not set to false the data
@@ -118,7 +119,7 @@ trait DataState extends Object {
     * @param the model messages for this data state.
     * @returns <code>this</code> to allow method chaining
     */
-  def setModelMessages(the: js.Array[_]): DataState = js.native
+  def setModelMessages(the: js.Array[js.Any]): DataState = js.native
   
   /**
     * Sets the formatted original value of the data.

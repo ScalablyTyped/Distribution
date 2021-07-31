@@ -2,26 +2,24 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchSynonymsOptions extends StObject {
   
   /**
     * Number of hits per page.
     */
-  val hitsPerPage: js.UndefOr[Double] = js.native
+  val hitsPerPage: js.UndefOr[Double] = js.undefined
   
   /**
     * Page to retrieve.
     */
-  val page: js.UndefOr[Double] = js.native
+  val page: js.UndefOr[Double] = js.undefined
   
   /**
     * The synonym type.
     */
-  val `type`: js.UndefOr[String] = js.native
+  val `type`: js.UndefOr[String] = js.undefined
 }
 object SearchSynonymsOptions {
   

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Gets custom data from a PlayReady-ND license fetch operation. This custom data is an argument from a PlayReady-ND LicenseFetchCompleted event. */
-@js.native
 trait INDLicenseFetchCompletedEventArgs extends StObject {
   
   /** Gets custom data from a license fetch response. */
-  var responseCustomData: INDCustomData = js.native
+  var responseCustomData: INDCustomData
 }
 object INDLicenseFetchCompletedEventArgs {
   

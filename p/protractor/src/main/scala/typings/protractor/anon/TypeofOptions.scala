@@ -5,11 +5,12 @@ import typings.seleniumWebdriver.chromeMod.Options
 import typings.seleniumWebdriver.mod.Capabilities
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofOptions extends Instantiable0[Options] {
+trait TypeofOptions
+  extends StObject
+     with Instantiable0[Options] {
   
   /**
     * Extracts the ChromeDriver specific options from the given capabilities

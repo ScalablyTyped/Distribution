@@ -10,9 +10,9 @@ Check if something is a generator function
 | ------------------ | :-------------: |
 | Full name          | is-generator-fn |
 | Keywords           | generator, function, func, fn, is, check, detect, yield, type |
-| # releases         | 3 |
-| # dependents       | 51 |
-| # downloads        | 305860645 |
+| # releases         | 2 |
+| # dependents       | 70 |
+| # downloads        | 380613389 |
 | # stars            | 0 |
 
 ## Links

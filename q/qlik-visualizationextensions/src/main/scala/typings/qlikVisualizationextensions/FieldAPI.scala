@@ -3,7 +3,6 @@ package typings.qlikVisualizationextensions
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FieldAPI {
@@ -15,15 +14,15 @@ object FieldAPI {
       * Clears a field selection.
       * @return - A promise.
       */
-    def clear(): IPromise[_] = js.native
+    def clear(): IPromise[js.Any] = js.native
     
     /**
       * Clears all fields except the selected one.
       * @param [softlock] - Optional. If true, locked selections can be overridden.
       * @return - A promise.
       */
-    def clearOther(): IPromise[_] = js.native
-    def clearOther(softlock: Boolean): IPromise[_] = js.native
+    def clearOther(): IPromise[js.Any] = js.native
+    def clearOther(softlock: Boolean): IPromise[js.Any] = js.native
     
     /**
       * Gets field data. The values are available as QFieldValue in array
@@ -53,7 +52,7 @@ object FieldAPI {
       * Locks a field selection.
       * @return - A promise.
       */
-    def lock(): IPromise[_] = js.native
+    def lock(): IPromise[js.Any] = js.native
     
     /**
       * Optional. Object with number of values in different states.
@@ -78,34 +77,34 @@ object FieldAPI {
       * @param [softlock] - Optional. If true, locked selections can be overridden.
       * @return - A promise.
       */
-    def select(Array: js.Array[Double]): IPromise[_] = js.native
-    def select(Array: js.Array[Double], toggle: js.UndefOr[scala.Nothing], softlock: Boolean): IPromise[_] = js.native
-    def select(Array: js.Array[Double], toggle: Boolean): IPromise[_] = js.native
-    def select(Array: js.Array[Double], toggle: Boolean, softlock: Boolean): IPromise[_] = js.native
+    def select(Array: js.Array[Double]): IPromise[js.Any] = js.native
+    def select(Array: js.Array[Double], toggle: Boolean): IPromise[js.Any] = js.native
+    def select(Array: js.Array[Double], toggle: Boolean, softlock: Boolean): IPromise[js.Any] = js.native
+    def select(Array: js.Array[Double], toggle: Unit, softlock: Boolean): IPromise[js.Any] = js.native
     
     /**
       * Selects all values in a field.
       * @param [softlock] - Optional. If true, locked selections can be overridden.
       * @return - A promise.
       */
-    def selectAll(): IPromise[_] = js.native
-    def selectAll(softlock: Boolean): IPromise[_] = js.native
+    def selectAll(): IPromise[js.Any] = js.native
+    def selectAll(softlock: Boolean): IPromise[js.Any] = js.native
     
     /**
       * Selects alternative values in a field.
       * @param [softlock] - Optional. If true, locked selections can be overridden.
       * @return - A promise.
       */
-    def selectAlternative(): IPromise[_] = js.native
-    def selectAlternative(softlock: Boolean): IPromise[_] = js.native
+    def selectAlternative(): IPromise[js.Any] = js.native
+    def selectAlternative(softlock: Boolean): IPromise[js.Any] = js.native
     
     /**
       * Selects excluded values in a field.
       * @param [softlock] - Optional. If true, locked selections can be overridden.
       * @return - A promise.
       */
-    def selectExcluded(): IPromise[_] = js.native
-    def selectExcluded(softlock: Boolean): IPromise[_] = js.native
+    def selectExcluded(): IPromise[js.Any] = js.native
+    def selectExcluded(softlock: Boolean): IPromise[js.Any] = js.native
     
     /**
       * Selects matching field values.
@@ -113,16 +112,16 @@ object FieldAPI {
       * @param [softlock] - Optional. If true, locked selections can be overridden.
       * @return - A promise.
       */
-    def selectMatch(`match`: String): IPromise[_] = js.native
-    def selectMatch(`match`: String, softlock: Boolean): IPromise[_] = js.native
+    def selectMatch(`match`: String): IPromise[js.Any] = js.native
+    def selectMatch(`match`: String, softlock: Boolean): IPromise[js.Any] = js.native
     
     /**
       * Selects possible values in a field.
       * @param [softlock] - Optional. If true, locked selections can be overridden.
       * @return - A promise.
       */
-    def selectPossible(): IPromise[_] = js.native
-    def selectPossible(softlock: Boolean): IPromise[_] = js.native
+    def selectPossible(): IPromise[js.Any] = js.native
+    def selectPossible(softlock: Boolean): IPromise[js.Any] = js.native
     
     /**
       * Selects specific values in a field.
@@ -133,10 +132,10 @@ object FieldAPI {
       * @param [softlock] - Optional. If true, locked selections can be overridden.
       * @return - A promise.
       */
-    def selectValues(array: js.Array[IQFieldValue]): IPromise[_] = js.native
-    def selectValues(array: js.Array[IQFieldValue], toggle: js.UndefOr[scala.Nothing], softlock: Boolean): IPromise[_] = js.native
-    def selectValues(array: js.Array[IQFieldValue], toggle: Boolean): IPromise[_] = js.native
-    def selectValues(array: js.Array[IQFieldValue], toggle: Boolean, softlock: Boolean): IPromise[_] = js.native
+    def selectValues(array: js.Array[IQFieldValue]): IPromise[js.Any] = js.native
+    def selectValues(array: js.Array[IQFieldValue], toggle: Boolean): IPromise[js.Any] = js.native
+    def selectValues(array: js.Array[IQFieldValue], toggle: Boolean, softlock: Boolean): IPromise[js.Any] = js.native
+    def selectValues(array: js.Array[IQFieldValue], toggle: Unit, softlock: Boolean): IPromise[js.Any] = js.native
     
     /**
       * Toggles a field selection.
@@ -144,14 +143,14 @@ object FieldAPI {
       * @param [softlock] - Optional. If true, locked selections can be overridden.
       * @return - A promise.
       */
-    def toggleSelect(`match`: String): IPromise[_] = js.native
-    def toggleSelect(`match`: String, softlock: Boolean): IPromise[_] = js.native
+    def toggleSelect(`match`: String): IPromise[js.Any] = js.native
+    def toggleSelect(`match`: String, softlock: Boolean): IPromise[js.Any] = js.native
     
     /**
       * Unlocks field selections.
       * @return - A promise.
       */
-    def unlock(): IPromise[_] = js.native
+    def unlock(): IPromise[js.Any] = js.native
   }
   
   @js.native
@@ -188,9 +187,9 @@ object FieldAPI {
       * @param [softlock] - Optional. If true, locked selections can be overridden.
       * @return - A promise.
       */
-    def select(): IPromise[_] = js.native
-    def select(toggle: js.UndefOr[scala.Nothing], softlock: Boolean): IPromise[_] = js.native
-    def select(toggle: Boolean): IPromise[_] = js.native
-    def select(toggle: Boolean, softlock: Boolean): IPromise[_] = js.native
+    def select(): IPromise[js.Any] = js.native
+    def select(toggle: Boolean): IPromise[js.Any] = js.native
+    def select(toggle: Boolean, softlock: Boolean): IPromise[js.Any] = js.native
+    def select(toggle: Unit, softlock: Boolean): IPromise[js.Any] = js.native
   }
 }

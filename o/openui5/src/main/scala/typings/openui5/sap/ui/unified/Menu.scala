@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Menu extends Control {
+trait Menu
+  extends StObject
+     with Control {
   
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
@@ -86,7 +87,7 @@ trait Menu extends Control {
     * <code>ariaLabelledBy</code>.
     * @since 1.26.3
     */
-  def getAriaLabelledBy(): js.Array[_] = js.native
+  def getAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Gets current value of property <code>enabled</code>.When a menu is disabled none of its items can be
@@ -145,15 +146,6 @@ trait Menu extends Control {
   def insertItem(oItem: MenuItemBase, iIndex: Double): Menu = js.native
   
   def open(bWithKeyboard: Boolean, oOpenerRef: js.Any, sMy: js.Any, sAt: js.Any, oOf: js.Any): Unit = js.native
-  def open(
-    bWithKeyboard: Boolean,
-    oOpenerRef: js.Any,
-    sMy: js.Any,
-    sAt: js.Any,
-    oOf: js.Any,
-    sOffset: js.UndefOr[scala.Nothing],
-    sCollision: js.Any
-  ): Unit = js.native
   def open(bWithKeyboard: Boolean, oOpenerRef: js.Any, sMy: js.Any, sAt: js.Any, oOf: js.Any, sOffset: String): Unit = js.native
   def open(
     bWithKeyboard: Boolean,
@@ -164,16 +156,16 @@ trait Menu extends Control {
     sOffset: String,
     sCollision: js.Any
   ): Unit = js.native
-  def open(bWithKeyboard: Boolean, oOpenerRef: js.Any, sMy: js.Any, sAt: js.Any, oOf: Element): Unit = js.native
   def open(
     bWithKeyboard: Boolean,
     oOpenerRef: js.Any,
     sMy: js.Any,
     sAt: js.Any,
-    oOf: Element,
-    sOffset: js.UndefOr[scala.Nothing],
+    oOf: js.Any,
+    sOffset: Unit,
     sCollision: js.Any
   ): Unit = js.native
+  def open(bWithKeyboard: Boolean, oOpenerRef: js.Any, sMy: js.Any, sAt: js.Any, oOf: Element): Unit = js.native
   def open(
     bWithKeyboard: Boolean,
     oOpenerRef: js.Any,
@@ -189,6 +181,15 @@ trait Menu extends Control {
     sAt: js.Any,
     oOf: Element,
     sOffset: String,
+    sCollision: js.Any
+  ): Unit = js.native
+  def open(
+    bWithKeyboard: Boolean,
+    oOpenerRef: js.Any,
+    sMy: js.Any,
+    sAt: js.Any,
+    oOf: Element,
+    sOffset: Unit,
     sCollision: js.Any
   ): Unit = js.native
   def open(bWithKeyboard: Boolean, oOpenerRef: Element, sMy: js.Any, sAt: js.Any, oOf: js.Any): Unit = js.native
@@ -198,15 +199,6 @@ trait Menu extends Control {
     sMy: js.Any,
     sAt: js.Any,
     oOf: js.Any,
-    sOffset: js.UndefOr[scala.Nothing],
-    sCollision: js.Any
-  ): Unit = js.native
-  def open(
-    bWithKeyboard: Boolean,
-    oOpenerRef: Element,
-    sMy: js.Any,
-    sAt: js.Any,
-    oOf: js.Any,
     sOffset: String
   ): Unit = js.native
   def open(
@@ -216,6 +208,15 @@ trait Menu extends Control {
     sAt: js.Any,
     oOf: js.Any,
     sOffset: String,
+    sCollision: js.Any
+  ): Unit = js.native
+  def open(
+    bWithKeyboard: Boolean,
+    oOpenerRef: Element,
+    sMy: js.Any,
+    sAt: js.Any,
+    oOf: js.Any,
+    sOffset: Unit,
     sCollision: js.Any
   ): Unit = js.native
   /**
@@ -240,15 +241,6 @@ trait Menu extends Control {
     sMy: js.Any,
     sAt: js.Any,
     oOf: Element,
-    sOffset: js.UndefOr[scala.Nothing],
-    sCollision: js.Any
-  ): Unit = js.native
-  def open(
-    bWithKeyboard: Boolean,
-    oOpenerRef: Element,
-    sMy: js.Any,
-    sAt: js.Any,
-    oOf: Element,
     sOffset: String
   ): Unit = js.native
   def open(
@@ -260,13 +252,22 @@ trait Menu extends Control {
     sOffset: String,
     sCollision: js.Any
   ): Unit = js.native
+  def open(
+    bWithKeyboard: Boolean,
+    oOpenerRef: Element,
+    sMy: js.Any,
+    sAt: js.Any,
+    oOf: Element,
+    sOffset: Unit,
+    sCollision: js.Any
+  ): Unit = js.native
   
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @since 1.26.3
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Removes all the controls from the aggregation <code>items</code>.Additionally, it unregisters them

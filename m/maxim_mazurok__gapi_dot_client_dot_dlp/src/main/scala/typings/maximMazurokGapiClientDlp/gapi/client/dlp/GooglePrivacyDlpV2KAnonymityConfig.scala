@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2KAnonymityConfig extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait GooglePrivacyDlpV2KAnonymityConfig extends StObject {
     * but their frequency is taken into account. Important note: a maximum of 1000 rows can be associated to a single entity ID. If more rows are associated with the same entity ID, some
     * might be ignored.
     */
-  var entityId: js.UndefOr[GooglePrivacyDlpV2EntityId] = js.native
+  var entityId: js.UndefOr[GooglePrivacyDlpV2EntityId] = js.undefined
   
   /**
     * Set of fields to compute k-anonymity over. When multiple fields are specified, they are considered a single composite key. Structs and repeated data types are not supported;
     * however, nested fields are supported so long as they are not structs themselves or nested within a repeated field.
     */
-  var quasiIds: js.UndefOr[js.Array[GooglePrivacyDlpV2FieldId]] = js.native
+  var quasiIds: js.UndefOr[js.Array[GooglePrivacyDlpV2FieldId]] = js.undefined
 }
 object GooglePrivacyDlpV2KAnonymityConfig {
   

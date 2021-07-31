@@ -2,14 +2,14 @@ package typings.awsSdkTypes.middlewareMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InitializeHandlerOutput[Output /* <: js.Object */] extends DeserializeHandlerOutput[Output] {
+trait InitializeHandlerOutput[Output /* <: js.Object */]
+  extends StObject
+     with DeserializeHandlerOutput[Output] {
   
   @JSName("output")
-  var output_InitializeHandlerOutput: Output = js.native
+  var output_InitializeHandlerOutput: Output
 }
 object InitializeHandlerOutput {
   
@@ -20,7 +20,7 @@ object InitializeHandlerOutput {
   }
   
   @scala.inline
-  implicit class InitializeHandlerOutputMutableBuilder[Self <: InitializeHandlerOutput[_], Output /* <: js.Object */] (val x: Self with InitializeHandlerOutput[Output]) extends AnyVal {
+  implicit class InitializeHandlerOutputMutableBuilder[Self <: InitializeHandlerOutput[?], Output /* <: js.Object */] (val x: Self & InitializeHandlerOutput[Output]) extends AnyVal {
     
     @scala.inline
     def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])

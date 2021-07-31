@@ -10,9 +10,9 @@ Browser SDK for Amazon Kinesis
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-kinesis-browser |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 1115 |
+| # downloads        | 773 |
 | # stars            | 0 |
 
 ## Links

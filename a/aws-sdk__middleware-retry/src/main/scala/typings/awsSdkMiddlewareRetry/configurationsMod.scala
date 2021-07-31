@@ -5,10 +5,13 @@ import typings.awsSdkTypes.utilMod.Provider
 import typings.awsSdkTypes.utilMod.RetryStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configurationsMod {
+  
+  @JSImport("@aws-sdk/middleware-retry/dist/cjs/configurations", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/middleware-retry/dist/cjs/configurations", "CONFIG_MAX_ATTEMPTS")
   @js.native
@@ -34,25 +37,22 @@ object configurationsMod {
   @js.native
   val NODE_RETRY_MODE_CONFIG_OPTIONS: LoadedConfigSelectors[String] = js.native
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/configurations", "resolveRetryConfig")
-  @js.native
-  def resolveRetryConfig[T](input: T with PreviouslyResolved with RetryInputConfig): T with RetryResolvedConfig = js.native
+  @scala.inline
+  def resolveRetryConfig[T](input: T & PreviouslyResolved & RetryInputConfig): T & RetryResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRetryConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & RetryResolvedConfig]
   
-  @js.native
   trait PreviouslyResolved extends StObject
   
-  @js.native
   trait RetryInputConfig extends StObject {
     
     /**
       * The maximum number of times requests that encounter retryable failures should be attempted.
       */
-    var maxAttempts: js.UndefOr[Double | Provider[Double]] = js.native
+    var maxAttempts: js.UndefOr[Double | Provider[Double]] = js.undefined
     
     /**
       * The strategy to retry the request. Using built-in exponential backoff strategy by default.
       */
-    var retryStrategy: js.UndefOr[RetryStrategy] = js.native
+    var retryStrategy: js.UndefOr[RetryStrategy] = js.undefined
   }
   object RetryInputConfig {
     
@@ -82,13 +82,30 @@ object configurationsMod {
     }
   }
   
-  @js.native
   trait RetryResolvedConfig extends StObject {
     
-    def maxAttempts(): js.Promise[Double] = js.native
+    def maxAttempts(): js.Promise[Double]
     @JSName("maxAttempts")
-    var maxAttempts_Original: Provider[Double] = js.native
+    var maxAttempts_Original: Provider[Double]
     
-    var retryStrategy: RetryStrategy = js.native
+    var retryStrategy: RetryStrategy
+  }
+  object RetryResolvedConfig {
+    
+    @scala.inline
+    def apply(maxAttempts: () => js.Promise[Double], retryStrategy: RetryStrategy): RetryResolvedConfig = {
+      val __obj = js.Dynamic.literal(maxAttempts = js.Any.fromFunction0(maxAttempts), retryStrategy = retryStrategy.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RetryResolvedConfig]
+    }
+    
+    @scala.inline
+    implicit class RetryResolvedConfigMutableBuilder[Self <: RetryResolvedConfig] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setMaxAttempts(value: () => js.Promise[Double]): Self = StObject.set(x, "maxAttempts", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
+    }
   }
 }

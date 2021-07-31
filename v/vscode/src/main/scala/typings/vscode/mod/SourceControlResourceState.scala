@@ -2,17 +2,15 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceControlResourceState extends StObject {
   
   /**
     * The [command](#Command) which should be run when the resource
     * state is open in the Source Control viewlet.
     */
-  val command: js.UndefOr[Command] = js.native
+  val command: js.UndefOr[Command] = js.undefined
   
   /**
     * Context value of the resource state. This can be used to contribute resource specific actions.
@@ -32,18 +30,18 @@ trait SourceControlResourceState extends StObject {
     * ```
     * This will show action `extension.diff` only for resources with `contextValue` is `diffable`.
     */
-  val contextValue: js.UndefOr[String] = js.native
+  val contextValue: js.UndefOr[String] = js.undefined
   
   /**
     * The [decorations](#SourceControlResourceDecorations) for this source control
     * resource state.
     */
-  val decorations: js.UndefOr[SourceControlResourceDecorations] = js.native
+  val decorations: js.UndefOr[SourceControlResourceDecorations] = js.undefined
   
   /**
     * The [uri](#Uri) of the underlying resource inside the workspace.
     */
-  val resourceUri: Uri = js.native
+  val resourceUri: Uri
 }
 object SourceControlResourceState {
   

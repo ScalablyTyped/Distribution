@@ -2,19 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DataTableEx...
   */
-@js.native
 trait IDataTableEx extends StObject {
   
   /**
     * List of the fields in the table.
     */
-  var qFields: js.Array[IDataField] = js.native
+  var qFields: js.Array[IDataField]
   
   /**
     * List of format specification items, within brackets.
@@ -24,12 +22,12 @@ trait IDataTableEx extends StObject {
     *    - embedded labels, no labels
     *    - table is <table name>
     */
-  var qFormatSpec: String = js.native
+  var qFormatSpec: String
   
   /**
     * Name of the table.
     */
-  var qName: String = js.native
+  var qName: String
 }
 object IDataTableEx {
   

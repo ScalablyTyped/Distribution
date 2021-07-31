@@ -3,13 +3,13 @@ package typings.yandexMaps.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IControlParent extends IParentOnMap {
+trait IControlParent
+  extends StObject
+     with IParentOnMap {
   
-  def getChildElement(child: IControl): js.Promise[HTMLElement] = js.native
+  def getChildElement(child: IControl): js.Promise[HTMLElement]
 }
 object IControlParent {
   

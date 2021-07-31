@@ -2,17 +2,15 @@ package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeekRequest extends StObject {
   
-  var currentTime: Double = js.native
+  var currentTime: Double
   
-  var customData: js.Object = js.native
+  var customData: js.Object
   
-  var resumeState: ResumeState = js.native
+  var resumeState: ResumeState
 }
 object SeekRequest {
   

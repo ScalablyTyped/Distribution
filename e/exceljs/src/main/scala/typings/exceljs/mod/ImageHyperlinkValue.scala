@@ -2,15 +2,13 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageHyperlinkValue extends StObject {
   
-  var hyperlink: String = js.native
+  var hyperlink: String
   
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object ImageHyperlinkValue {
   

@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliceClickedEventUIParam extends StObject {
   
   /**
     * Used to obtain index of clicked slice.
     */
-  var index: js.UndefOr[js.Any] = js.native
+  var index: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to obtain reference to clicked slice item.
     */
-  var item: js.UndefOr[js.Any] = js.native
+  var item: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to obtain reference to igFunnelChart.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to check if slice became selected.
     */
-  var selected: js.UndefOr[js.Any] = js.native
+  var selected: js.UndefOr[js.Any] = js.undefined
 }
 object SliceClickedEventUIParam {
   

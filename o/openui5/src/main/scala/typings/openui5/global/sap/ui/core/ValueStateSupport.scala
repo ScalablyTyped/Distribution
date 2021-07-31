@@ -2,10 +2,13 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ValueStateSupport {
+  
+  @JSGlobal("sap.ui.core.ValueStateSupport")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Appends a generic success, warning or error message to the given tooltip text if the given
@@ -14,9 +17,8 @@ object ValueStateSupport {
     * @param sTooltipText the original tooltip text (may be null)
     * @returns the given text, with appended success/warning/error text, if appropriate
     */
-  @JSGlobal("sap.ui.core.ValueStateSupport.enrichTooltip")
-  @js.native
-  def enrichTooltip(oElement: typings.openui5.sap.ui.core.Element, sTooltipText: String): String = js.native
+  @scala.inline
+  def enrichTooltip(oElement: typings.openui5.sap.ui.core.Element, sTooltipText: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("enrichTooltip")(oElement.asInstanceOf[js.Any], sTooltipText.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Returns a ValueState object based on the given integer value 0 : ValueState.None 1 :
@@ -25,9 +27,8 @@ object ValueStateSupport {
     * @param iState the state as an integer
     * @returns the corresponding ValueState object
     */
-  @JSGlobal("sap.ui.core.ValueStateSupport.formatValueState")
-  @js.native
-  def formatValueState(iState: Double): typings.openui5.sap.ui.core.ValueState = js.native
+  @scala.inline
+  def formatValueState(iState: Double): typings.openui5.sap.ui.core.ValueState = ^.asInstanceOf[js.Dynamic].applyDynamic("formatValueState")(iState.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.ValueState]
   
   /**
     * Returns a generic success, warning or error message if the given Elementhas a property "valueState"
@@ -35,10 +36,8 @@ object ValueStateSupport {
     * @param vValue the Element of which the valueState needs to be checked, or the ValueState explicitly
     * @returns the success/warning/error text, if appropriate; otherwise null
     */
-  @JSGlobal("sap.ui.core.ValueStateSupport.getAdditionalText")
-  @js.native
-  def getAdditionalText(vValue: typings.openui5.sap.ui.core.Element): String = js.native
-  @JSGlobal("sap.ui.core.ValueStateSupport.getAdditionalText")
-  @js.native
-  def getAdditionalText(vValue: typings.openui5.sap.ui.core.ValueState): String = js.native
+  @scala.inline
+  def getAdditionalText(vValue: typings.openui5.sap.ui.core.Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdditionalText")(vValue.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getAdditionalText(vValue: typings.openui5.sap.ui.core.ValueState): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdditionalText")(vValue.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -2,19 +2,17 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for CreateStoredInfoType.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CreateStoredInfoTypeRequest extends StObject {
   
   /**
     * Configuration of the storedInfoType to create.
     */
-  var config: js.UndefOr[SchemaGooglePrivacyDlpV2StoredInfoTypeConfig] = js.native
+  var config: js.UndefOr[SchemaGooglePrivacyDlpV2StoredInfoTypeConfig] = js.undefined
   
   /**
     * The storedInfoType ID can contain uppercase and lowercase letters,
@@ -22,7 +20,7 @@ trait SchemaGooglePrivacyDlpV2CreateStoredInfoTypeRequest extends StObject {
     * `[a-zA-Z\\d-_]+`. The maximum length is 100 characters. Can be empty to
     * allow the system to generate one.
     */
-  var storedInfoTypeId: js.UndefOr[String] = js.native
+  var storedInfoTypeId: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CreateStoredInfoTypeRequest {
   

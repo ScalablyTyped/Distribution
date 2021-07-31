@@ -2,181 +2,179 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Observation extends StObject {
   
   /**
     *  The detail type of the CloudWatch Event-based observation, for example, EC2 Instance State-change Notification. 
     */
-  var CloudWatchEventDetailType: js.UndefOr[typings.awsSdk.applicationinsightsMod.CloudWatchEventDetailType] = js.native
+  var CloudWatchEventDetailType: js.UndefOr[typings.awsSdk.applicationinsightsMod.CloudWatchEventDetailType] = js.undefined
   
   /**
     *  The ID of the CloudWatch Event-based observation related to the detected problem. 
     */
-  var CloudWatchEventId: js.UndefOr[typings.awsSdk.applicationinsightsMod.CloudWatchEventId] = js.native
+  var CloudWatchEventId: js.UndefOr[typings.awsSdk.applicationinsightsMod.CloudWatchEventId] = js.undefined
   
   /**
     *  The source of the CloudWatch Event. 
     */
-  var CloudWatchEventSource: js.UndefOr[typings.awsSdk.applicationinsightsMod.CloudWatchEventSource] = js.native
+  var CloudWatchEventSource: js.UndefOr[typings.awsSdk.applicationinsightsMod.CloudWatchEventSource] = js.undefined
   
   /**
     *  The CodeDeploy application to which the deployment belongs. 
     */
-  var CodeDeployApplication: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployApplication] = js.native
+  var CodeDeployApplication: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployApplication] = js.undefined
   
   /**
     *  The deployment group to which the CodeDeploy deployment belongs. 
     */
-  var CodeDeployDeploymentGroup: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployDeploymentGroup] = js.native
+  var CodeDeployDeploymentGroup: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployDeploymentGroup] = js.undefined
   
   /**
     *  The deployment ID of the CodeDeploy-based observation related to the detected problem. 
     */
-  var CodeDeployDeploymentId: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployDeploymentId] = js.native
+  var CodeDeployDeploymentId: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployDeploymentId] = js.undefined
   
   /**
     *  The instance group to which the CodeDeploy instance belongs. 
     */
-  var CodeDeployInstanceGroupId: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployInstanceGroupId] = js.native
+  var CodeDeployInstanceGroupId: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployInstanceGroupId] = js.undefined
   
   /**
     *  The status of the CodeDeploy deployment, for example SUCCESS or  FAILURE. 
     */
-  var CodeDeployState: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployState] = js.native
+  var CodeDeployState: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployState] = js.undefined
   
   /**
     *  The state of the instance, such as STOPPING or TERMINATING. 
     */
-  var Ec2State: js.UndefOr[typings.awsSdk.applicationinsightsMod.Ec2State] = js.native
+  var Ec2State: js.UndefOr[typings.awsSdk.applicationinsightsMod.Ec2State] = js.undefined
   
   /**
     * The time when the observation ended, in epoch seconds.
     */
-  var EndTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.EndTime] = js.native
+  var EndTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.EndTime] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) of the AWS Health Event-based observation.
     */
-  var HealthEventArn: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthEventArn] = js.native
+  var HealthEventArn: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthEventArn] = js.undefined
   
   /**
     *  The description of the AWS Health event provided by the service, such as Amazon EC2. 
     */
-  var HealthEventDescription: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthEventDescription] = js.native
+  var HealthEventDescription: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthEventDescription] = js.undefined
   
   /**
     *  The category of the AWS Health event, such as issue. 
     */
-  var HealthEventTypeCategory: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthEventTypeCategory] = js.native
+  var HealthEventTypeCategory: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthEventTypeCategory] = js.undefined
   
   /**
     *  The type of the AWS Health event, for example, AWS_EC2_POWER_CONNECTIVITY_ISSUE. 
     */
-  var HealthEventTypeCode: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthEventTypeCode] = js.native
+  var HealthEventTypeCode: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthEventTypeCode] = js.undefined
   
   /**
     *  The service to which the AWS Health Event belongs, such as EC2. 
     */
-  var HealthService: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthService] = js.native
+  var HealthService: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthService] = js.undefined
   
   /**
     * The ID of the observation type.
     */
-  var Id: js.UndefOr[ObservationId] = js.native
+  var Id: js.UndefOr[ObservationId] = js.undefined
   
   /**
     * The timestamp in the CloudWatch Logs that specifies when the matched line occurred.
     */
-  var LineTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.LineTime] = js.native
+  var LineTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.LineTime] = js.undefined
   
   /**
     * The log filter of the observation.
     */
-  var LogFilter: js.UndefOr[typings.awsSdk.applicationinsightsMod.LogFilter] = js.native
+  var LogFilter: js.UndefOr[typings.awsSdk.applicationinsightsMod.LogFilter] = js.undefined
   
   /**
     * The log group name.
     */
-  var LogGroup: js.UndefOr[typings.awsSdk.applicationinsightsMod.LogGroup] = js.native
+  var LogGroup: js.UndefOr[typings.awsSdk.applicationinsightsMod.LogGroup] = js.undefined
   
   /**
     * The log text of the observation.
     */
-  var LogText: js.UndefOr[typings.awsSdk.applicationinsightsMod.LogText] = js.native
+  var LogText: js.UndefOr[typings.awsSdk.applicationinsightsMod.LogText] = js.undefined
   
   /**
     * The name of the observation metric.
     */
-  var MetricName: js.UndefOr[typings.awsSdk.applicationinsightsMod.MetricName] = js.native
+  var MetricName: js.UndefOr[typings.awsSdk.applicationinsightsMod.MetricName] = js.undefined
   
   /**
     * The namespace of the observation metric.
     */
-  var MetricNamespace: js.UndefOr[typings.awsSdk.applicationinsightsMod.MetricNamespace] = js.native
+  var MetricNamespace: js.UndefOr[typings.awsSdk.applicationinsightsMod.MetricNamespace] = js.undefined
   
   /**
     * The source resource ARN of the observation.
     */
-  var SourceARN: js.UndefOr[typings.awsSdk.applicationinsightsMod.SourceARN] = js.native
+  var SourceARN: js.UndefOr[typings.awsSdk.applicationinsightsMod.SourceARN] = js.undefined
   
   /**
     * The source type of the observation.
     */
-  var SourceType: js.UndefOr[typings.awsSdk.applicationinsightsMod.SourceType] = js.native
+  var SourceType: js.UndefOr[typings.awsSdk.applicationinsightsMod.SourceType] = js.undefined
   
   /**
     * The time when the observation was first detected, in epoch seconds.
     */
-  var StartTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.StartTime] = js.native
+  var StartTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.StartTime] = js.undefined
   
   /**
     * The unit of the source observation metric.
     */
-  var Unit: js.UndefOr[typings.awsSdk.applicationinsightsMod.Unit] = js.native
+  var Unit: js.UndefOr[typings.awsSdk.applicationinsightsMod.Unit] = js.undefined
   
   /**
     * The value of the source observation metric.
     */
-  var Value: js.UndefOr[typings.awsSdk.applicationinsightsMod.Value] = js.native
+  var Value: js.UndefOr[typings.awsSdk.applicationinsightsMod.Value] = js.undefined
   
   /**
     *  The X-Ray request error percentage for this node. 
     */
-  var XRayErrorPercent: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayErrorPercent] = js.native
+  var XRayErrorPercent: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayErrorPercent] = js.undefined
   
   /**
     *  The X-Ray request fault percentage for this node. 
     */
-  var XRayFaultPercent: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayFaultPercent] = js.native
+  var XRayFaultPercent: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayFaultPercent] = js.undefined
   
   /**
     *  The name of the X-Ray node. 
     */
-  var XRayNodeName: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayNodeName] = js.native
+  var XRayNodeName: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayNodeName] = js.undefined
   
   /**
     *  The type of the X-Ray node. 
     */
-  var XRayNodeType: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayNodeType] = js.native
+  var XRayNodeType: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayNodeType] = js.undefined
   
   /**
     *  The X-Ray node request average latency for this node. 
     */
-  var XRayRequestAverageLatency: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayRequestAverageLatency] = js.native
+  var XRayRequestAverageLatency: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayRequestAverageLatency] = js.undefined
   
   /**
     *  The X-Ray request count for this node. 
     */
-  var XRayRequestCount: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayRequestCount] = js.native
+  var XRayRequestCount: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayRequestCount] = js.undefined
   
   /**
     *  The X-Ray request throttle percentage for this node. 
     */
-  var XRayThrottlePercent: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayThrottlePercent] = js.native
+  var XRayThrottlePercent: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayThrottlePercent] = js.undefined
 }
 object Observation {
   

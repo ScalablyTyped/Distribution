@@ -5,15 +5,14 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sinMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/sin", "sin")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/sin", JSImport.Namespace)
   @js.native
-  def sin[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/sin", "sin")
-  @js.native
-  def sin[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def sin[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 }

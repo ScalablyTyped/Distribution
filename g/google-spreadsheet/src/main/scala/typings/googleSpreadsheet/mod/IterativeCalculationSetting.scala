@@ -2,15 +2,13 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IterativeCalculationSetting extends StObject {
   
-  var convergenceThreshold: Double = js.native
+  var convergenceThreshold: Double
   
-  var maxIterations: Double = js.native
+  var maxIterations: Double
 }
 object IterativeCalculationSetting {
   

@@ -4,7 +4,6 @@ import typings.angularCore.angularCoreStrings.`array-map`
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See: `keyValueArraySet`, `keyValueArrayGet`, `keyValueArrayIndexOf`, `keyValueArrayDelete`.
   */
 @js.native
-trait KeyValueArray[VALUE] extends Array[VALUE | String] {
+trait KeyValueArray[VALUE]
+  extends StObject
+     with Array[VALUE | String] {
   
   var __brand__ : `array-map` = js.native
 }

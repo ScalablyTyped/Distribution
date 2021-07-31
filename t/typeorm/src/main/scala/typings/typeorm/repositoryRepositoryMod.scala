@@ -20,7 +20,6 @@ import typings.typeorm.resultInsertResultMod.InsertResult
 import typings.typeorm.resultUpdateResultMod.UpdateResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repositoryRepositoryMod {
@@ -63,9 +62,9 @@ object repositoryRepositoryMod {
       * Creates a new query builder that can be used to build a sql query.
       */
     def createQueryBuilder(): SelectQueryBuilder[Entity] = js.native
-    def createQueryBuilder(alias: js.UndefOr[scala.Nothing], queryRunner: QueryRunner): SelectQueryBuilder[Entity] = js.native
     def createQueryBuilder(alias: String): SelectQueryBuilder[Entity] = js.native
     def createQueryBuilder(alias: String, queryRunner: QueryRunner): SelectQueryBuilder[Entity] = js.native
+    def createQueryBuilder(alias: Unit, queryRunner: QueryRunner): SelectQueryBuilder[Entity] = js.native
     
     def decrement(conditions: FindConditions[Entity], propertyPath: String, value: String): js.Promise[UpdateResult] = js.native
     /**
@@ -106,9 +105,9 @@ object repositoryRepositoryMod {
       * Finds entities by ids.
       * Optionally find options can be applied.
       */
-    def findByIds(ids: js.Array[_]): js.Promise[js.Array[Entity]] = js.native
-    def findByIds(ids: js.Array[_], conditions: FindConditions[Entity]): js.Promise[js.Array[Entity]] = js.native
-    def findByIds(ids: js.Array[_], options: FindManyOptions[Entity]): js.Promise[js.Array[Entity]] = js.native
+    def findByIds(ids: js.Array[js.Any]): js.Promise[js.Array[Entity]] = js.native
+    def findByIds(ids: js.Array[js.Any], conditions: FindConditions[Entity]): js.Promise[js.Array[Entity]] = js.native
+    def findByIds(ids: js.Array[js.Any], options: FindManyOptions[Entity]): js.Promise[js.Array[Entity]] = js.native
     
     /**
       * Finds first entity that matches given options.
@@ -116,11 +115,11 @@ object repositoryRepositoryMod {
     def findOne(): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne(conditions: FindConditions[Entity]): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne(conditions: FindConditions[Entity], options: FindOneOptions[Entity]): js.Promise[js.UndefOr[Entity]] = js.native
-    def findOne(id: js.UndefOr[scala.Nothing], options: FindOneOptions[Entity]): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne(id: String): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne(id: String, options: FindOneOptions[Entity]): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne(id: Double): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne(id: Double, options: FindOneOptions[Entity]): js.Promise[js.UndefOr[Entity]] = js.native
+    def findOne(id: Unit, options: FindOneOptions[Entity]): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne(id: Date): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne(id: Date, options: FindOneOptions[Entity]): js.Promise[js.UndefOr[Entity]] = js.native
     def findOne(id: ObjectID): js.Promise[js.UndefOr[Entity]] = js.native
@@ -133,11 +132,11 @@ object repositoryRepositoryMod {
     def findOneOrFail(): js.Promise[Entity] = js.native
     def findOneOrFail(conditions: FindConditions[Entity]): js.Promise[Entity] = js.native
     def findOneOrFail(conditions: FindConditions[Entity], options: FindOneOptions[Entity]): js.Promise[Entity] = js.native
-    def findOneOrFail(id: js.UndefOr[scala.Nothing], options: FindOneOptions[Entity]): js.Promise[Entity] = js.native
     def findOneOrFail(id: String): js.Promise[Entity] = js.native
     def findOneOrFail(id: String, options: FindOneOptions[Entity]): js.Promise[Entity] = js.native
     def findOneOrFail(id: Double): js.Promise[Entity] = js.native
     def findOneOrFail(id: Double, options: FindOneOptions[Entity]): js.Promise[Entity] = js.native
+    def findOneOrFail(id: Unit, options: FindOneOptions[Entity]): js.Promise[Entity] = js.native
     def findOneOrFail(id: Date): js.Promise[Entity] = js.native
     def findOneOrFail(id: Date, options: FindOneOptions[Entity]): js.Promise[Entity] = js.native
     def findOneOrFail(id: ObjectID): js.Promise[Entity] = js.native
@@ -200,8 +199,8 @@ object repositoryRepositoryMod {
       * Executes a raw SQL query and returns a raw database results.
       * Raw query execution is supported only by relational databases (MongoDB is not supported).
       */
-    def query(query: String): js.Promise[_] = js.native
-    def query(query: String, parameters: js.Array[_]): js.Promise[_] = js.native
+    def query(query: String): js.Promise[js.Any] = js.native
+    def query(query: String, parameters: js.Array[js.Any]): js.Promise[js.Any] = js.native
     
     /**
       * Query runner provider used for this repository.
@@ -211,21 +210,21 @@ object repositoryRepositoryMod {
     /**
       * Recovers all given entities in the database.
       */
-    def recover[T /* <: DeepPartial[Entity] */](entities: js.Array[T]): js.Promise[js.Array[T with Entity]] = js.native
+    def recover[T /* <: DeepPartial[Entity] */](entities: js.Array[T]): js.Promise[js.Array[T & Entity]] = js.native
     /**
       * Recovers all given entities in the database.
       */
     def recover[T /* <: DeepPartial[Entity] */](entities: js.Array[T], options: SaveOptionsreloadfalse): js.Promise[js.Array[T]] = js.native
-    def recover[T /* <: DeepPartial[Entity] */](entities: js.Array[T], options: SaveOptions): js.Promise[js.Array[T with Entity]] = js.native
+    def recover[T /* <: DeepPartial[Entity] */](entities: js.Array[T], options: SaveOptions): js.Promise[js.Array[T & Entity]] = js.native
     /**
       * Recovers a given entity in the database.
       */
-    def recover[T /* <: DeepPartial[Entity] */](entity: T): js.Promise[T with Entity] = js.native
+    def recover[T /* <: DeepPartial[Entity] */](entity: T): js.Promise[T & Entity] = js.native
     /**
       * Recovers a given entity in the database.
       */
     def recover[T /* <: DeepPartial[Entity] */](entity: T, options: SaveOptionsreloadfalse): js.Promise[T] = js.native
-    def recover[T /* <: DeepPartial[Entity] */](entity: T, options: SaveOptions): js.Promise[T with Entity] = js.native
+    def recover[T /* <: DeepPartial[Entity] */](entity: T, options: SaveOptions): js.Promise[T & Entity] = js.native
     
     /**
       * Removes a given entities from the database.
@@ -255,24 +254,24 @@ object repositoryRepositoryMod {
       * Saves all given entities in the database.
       * If entities do not exist in the database then inserts, otherwise updates.
       */
-    def save[T /* <: DeepPartial[Entity] */](entities: js.Array[T]): js.Promise[js.Array[T with Entity]] = js.native
+    def save[T /* <: DeepPartial[Entity] */](entities: js.Array[T]): js.Promise[js.Array[T & Entity]] = js.native
     /**
       * Saves all given entities in the database.
       * If entities do not exist in the database then inserts, otherwise updates.
       */
     def save[T /* <: DeepPartial[Entity] */](entities: js.Array[T], options: SaveOptionsreloadfalse): js.Promise[js.Array[T]] = js.native
-    def save[T /* <: DeepPartial[Entity] */](entities: js.Array[T], options: SaveOptions): js.Promise[js.Array[T with Entity]] = js.native
+    def save[T /* <: DeepPartial[Entity] */](entities: js.Array[T], options: SaveOptions): js.Promise[js.Array[T & Entity]] = js.native
     /**
       * Saves a given entity in the database.
       * If entity does not exist in the database then inserts, otherwise updates.
       */
-    def save[T /* <: DeepPartial[Entity] */](entity: T): js.Promise[T with Entity] = js.native
+    def save[T /* <: DeepPartial[Entity] */](entity: T): js.Promise[T & Entity] = js.native
     /**
       * Saves a given entity in the database.
       * If entity does not exist in the database then inserts, otherwise updates.
       */
     def save[T /* <: DeepPartial[Entity] */](entity: T, options: SaveOptionsreloadfalse): js.Promise[T] = js.native
-    def save[T /* <: DeepPartial[Entity] */](entity: T, options: SaveOptions): js.Promise[T with Entity] = js.native
+    def save[T /* <: DeepPartial[Entity] */](entity: T, options: SaveOptions): js.Promise[T & Entity] = js.native
     
     /**
       * Records the delete date of entities by a given criteria.
@@ -290,21 +289,21 @@ object repositoryRepositoryMod {
     /**
       * Records the delete date of all given entities.
       */
-    def softRemove[T /* <: DeepPartial[Entity] */](entities: js.Array[T]): js.Promise[js.Array[T with Entity]] = js.native
+    def softRemove[T /* <: DeepPartial[Entity] */](entities: js.Array[T]): js.Promise[js.Array[T & Entity]] = js.native
     /**
       * Records the delete date of all given entities.
       */
     def softRemove[T /* <: DeepPartial[Entity] */](entities: js.Array[T], options: SaveOptionsreloadfalse): js.Promise[js.Array[T]] = js.native
-    def softRemove[T /* <: DeepPartial[Entity] */](entities: js.Array[T], options: SaveOptions): js.Promise[js.Array[T with Entity]] = js.native
+    def softRemove[T /* <: DeepPartial[Entity] */](entities: js.Array[T], options: SaveOptions): js.Promise[js.Array[T & Entity]] = js.native
     /**
       * Records the delete date of a given entity.
       */
-    def softRemove[T /* <: DeepPartial[Entity] */](entity: T): js.Promise[T with Entity] = js.native
+    def softRemove[T /* <: DeepPartial[Entity] */](entity: T): js.Promise[T & Entity] = js.native
     /**
       * Records the delete date of a given entity.
       */
     def softRemove[T /* <: DeepPartial[Entity] */](entity: T, options: SaveOptionsreloadfalse): js.Promise[T] = js.native
-    def softRemove[T /* <: DeepPartial[Entity] */](entity: T, options: SaveOptions): js.Promise[T with Entity] = js.native
+    def softRemove[T /* <: DeepPartial[Entity] */](entity: T, options: SaveOptions): js.Promise[T & Entity] = js.native
     
     /**
       * Returns object that is managed by this repository.

@@ -2,7 +2,6 @@ package typings.iitc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extractNianticParametersMod {
@@ -14,8 +13,7 @@ object extractNianticParametersMod {
       * and it's various member objects, functions, etc.
       * so we need to extract some essential parameters from the code for IITC to use
       */
-    @JSGlobal("extractFromStock")
-    @js.native
-    def extractFromStock(): Unit = js.native
+    @scala.inline
+    def extractFromStock(): Unit = js.Dynamic.global.applyDynamic("extractFromStock")().asInstanceOf[Unit]
   }
 }

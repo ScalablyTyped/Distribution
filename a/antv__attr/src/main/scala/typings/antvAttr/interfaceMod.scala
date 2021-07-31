@@ -3,7 +3,6 @@ package typings.antvAttr
 import typings.antvScale.typesMod.ScaleConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
@@ -15,18 +14,17 @@ object interfaceMod {
     def this(cfg: ScaleConfig) = this()
   }
   
-  @js.native
   trait AttributeCfg extends StObject {
     
-    val callback: js.UndefOr[CallbackType] = js.native
+    val callback: js.UndefOr[CallbackType] = js.undefined
     
-    val names: js.UndefOr[js.Array[String]] = js.native
+    val names: js.UndefOr[js.Array[String]] = js.undefined
     
-    val scales: js.Array[typings.antvScale.mod.Scale] = js.native
+    val scales: js.Array[typings.antvScale.mod.Scale]
     
-    val `type`: js.UndefOr[String] = js.native
+    val `type`: js.UndefOr[String] = js.undefined
     
-    val values: js.UndefOr[js.Any] = js.native
+    val values: js.UndefOr[js.Any] = js.undefined
   }
   object AttributeCfg {
     
@@ -40,7 +38,7 @@ object interfaceMod {
     implicit class AttributeCfgMutableBuilder[Self <: AttributeCfg] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCallback(value: /* repeated */ js.Any => js.Array[js.Any]): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      def setCallback(value: CallbackType): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
@@ -74,5 +72,9 @@ object interfaceMod {
     }
   }
   
-  type CallbackType = js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
+  @js.native
+  trait CallbackType extends StObject {
+    
+    def apply(args: js.Any*): js.Array[js.Any] = js.native
+  }
 }

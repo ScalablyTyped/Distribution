@@ -2,20 +2,20 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ES6 Map interface, only read methods included. */
-@js.native
-trait ReadonlyESMap[K, V] extends ReadonlyCollection[K] {
+trait ReadonlyESMap[K, V]
+  extends StObject
+     with ReadonlyCollection[K] {
   
-  def entries(): Iterator[js.Tuple2[K, V]] = js.native
+  def entries(): Iterator[js.Tuple2[K, V]]
   
-  def forEach(action: js.Function2[/* value */ V, /* key */ K, Unit]): Unit = js.native
+  def forEach(action: js.Function2[/* value */ V, /* key */ K, Unit]): Unit
   
-  def get(key: K): js.UndefOr[V] = js.native
+  def get(key: K): js.UndefOr[V]
   
-  def values(): Iterator[V] = js.native
+  def values(): Iterator[V]
 }
 object ReadonlyESMap {
   
@@ -34,7 +34,7 @@ object ReadonlyESMap {
   }
   
   @scala.inline
-  implicit class ReadonlyESMapMutableBuilder[Self <: ReadonlyESMap[_, _], K, V] (val x: Self with (ReadonlyESMap[K, V])) extends AnyVal {
+  implicit class ReadonlyESMapMutableBuilder[Self <: ReadonlyESMap[?, ?], K, V] (val x: Self & (ReadonlyESMap[K, V])) extends AnyVal {
     
     @scala.inline
     def setEntries(value: () => Iterator[js.Tuple2[K, V]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))

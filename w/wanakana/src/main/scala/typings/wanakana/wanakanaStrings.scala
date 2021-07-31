@@ -3,7 +3,6 @@ package typings.wanakana
 import typings.wanakana.mod.IMEModes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wanakanaStrings {
@@ -14,12 +13,16 @@ object wanakanaStrings {
   def hepburn: hepburn = "hepburn".asInstanceOf[hepburn]
   
   @js.native
-  sealed trait toHiragana extends IMEModes
+  sealed trait toHiragana
+    extends StObject
+       with IMEModes
   @scala.inline
   def toHiragana: toHiragana = "toHiragana".asInstanceOf[toHiragana]
   
   @js.native
-  sealed trait toKatakana extends IMEModes
+  sealed trait toKatakana
+    extends StObject
+       with IMEModes
   @scala.inline
   def toKatakana: toKatakana = "toKatakana".asInstanceOf[toKatakana]
 }

@@ -7,40 +7,39 @@ import typings.axeCore.mod.Spec
 import typings.axePuppeteer.anon.TypeofAxe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserMod {
   
-  @JSImport("axe-puppeteer/dist/browser", "pageIsLoaded")
+  @JSImport("axe-puppeteer/dist/browser", JSImport.Namespace)
   @js.native
-  def pageIsLoaded(): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("axe-puppeteer/dist/browser", "runAxe")
-  @js.native
-  def runAxe(): js.Promise[AxeResults] = js.native
-  @JSImport("axe-puppeteer/dist/browser", "runAxe")
-  @js.native
-  def runAxe(config: js.UndefOr[scala.Nothing], context: js.UndefOr[ElementContext], options: RunOptions): js.Promise[AxeResults] = js.native
-  @JSImport("axe-puppeteer/dist/browser", "runAxe")
-  @js.native
-  def runAxe(config: js.UndefOr[scala.Nothing], context: ElementContext): js.Promise[AxeResults] = js.native
-  @JSImport("axe-puppeteer/dist/browser", "runAxe")
-  @js.native
-  def runAxe(config: Spec): js.Promise[AxeResults] = js.native
-  @JSImport("axe-puppeteer/dist/browser", "runAxe")
-  @js.native
-  def runAxe(config: Spec, context: js.UndefOr[ElementContext], options: RunOptions): js.Promise[AxeResults] = js.native
-  @JSImport("axe-puppeteer/dist/browser", "runAxe")
-  @js.native
-  def runAxe(config: Spec, context: ElementContext): js.Promise[AxeResults] = js.native
+  @scala.inline
+  def pageIsLoaded(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("pageIsLoaded")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def runAxe(): js.Promise[AxeResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("runAxe")().asInstanceOf[js.Promise[AxeResults]]
+  @scala.inline
+  def runAxe(config: Unit, context: Unit, options: RunOptions): js.Promise[AxeResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("runAxe")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AxeResults]]
+  @scala.inline
+  def runAxe(config: Unit, context: ElementContext): js.Promise[AxeResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("runAxe")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AxeResults]]
+  @scala.inline
+  def runAxe(config: Unit, context: ElementContext, options: RunOptions): js.Promise[AxeResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("runAxe")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AxeResults]]
+  @scala.inline
+  def runAxe(config: Spec): js.Promise[AxeResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("runAxe")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AxeResults]]
+  @scala.inline
+  def runAxe(config: Spec, context: Unit, options: RunOptions): js.Promise[AxeResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("runAxe")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AxeResults]]
+  @scala.inline
+  def runAxe(config: Spec, context: ElementContext): js.Promise[AxeResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("runAxe")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AxeResults]]
+  @scala.inline
+  def runAxe(config: Spec, context: ElementContext, options: RunOptions): js.Promise[AxeResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("runAxe")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AxeResults]]
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
-      var axe: TypeofAxe = js.native
+      var axe: TypeofAxe
     }
     object Window {
       

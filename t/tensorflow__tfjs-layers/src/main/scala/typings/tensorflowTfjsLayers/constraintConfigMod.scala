@@ -7,7 +7,6 @@ import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UnitNorm
 import typings.tensorflowTfjsLayers.typesMod.BaseSerialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constraintConfigMod {
@@ -41,12 +40,11 @@ object constraintConfigMod {
   
   type ConstraintSerialization = MaxNormSerialization | NonNegSerialization | UnitNormSerialization | MinMaxNormSerialization
   
-  @js.native
   trait MaxNormConfig extends StObject {
     
-    var axis: js.UndefOr[Double] = js.native
+    var axis: js.UndefOr[Double] = js.undefined
     
-    var max_value: js.UndefOr[Double] = js.native
+    var max_value: js.UndefOr[Double] = js.undefined
   }
   object MaxNormConfig {
     
@@ -75,16 +73,15 @@ object constraintConfigMod {
   
   type MaxNormSerialization = BaseSerialization[MaxNorm, MaxNormConfig]
   
-  @js.native
   trait MinMaxNormConfig extends StObject {
     
-    var axis: js.UndefOr[Double] = js.native
+    var axis: js.UndefOr[Double] = js.undefined
     
-    var max_value: js.UndefOr[Double] = js.native
+    var max_value: js.UndefOr[Double] = js.undefined
     
-    var min_value: js.UndefOr[Double] = js.native
+    var min_value: js.UndefOr[Double] = js.undefined
     
-    var rate: js.UndefOr[Double] = js.native
+    var rate: js.UndefOr[Double] = js.undefined
   }
   object MinMaxNormConfig {
     
@@ -127,10 +124,9 @@ object constraintConfigMod {
   
   type NonNegSerialization = BaseSerialization[NonNeg, Null]
   
-  @js.native
   trait UnitNormConfig extends StObject {
     
-    var axis: js.UndefOr[Double] = js.native
+    var axis: js.UndefOr[Double] = js.undefined
   }
   object UnitNormConfig {
     

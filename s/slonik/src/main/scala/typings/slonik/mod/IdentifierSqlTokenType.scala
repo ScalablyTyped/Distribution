@@ -2,15 +2,15 @@ package typings.slonik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdentifierSqlTokenType extends _SqlTokenType {
+trait IdentifierSqlTokenType
+  extends StObject
+     with _SqlTokenType {
   
-  var names: js.Array[String] = js.native
+  var names: js.Array[String]
   
-  var `type`: js.Symbol = js.native
+  var `type`: js.Symbol
 }
 object IdentifierSqlTokenType {
   

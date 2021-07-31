@@ -2,12 +2,13 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.navermaps.naver.maps.Bounds because Already inherited */ @js.native
-trait LatLngBounds extends PointBounds {
+trait LatLngBounds
+  extends StObject
+     with PointBounds {
   
   def east(): Double = js.native
   

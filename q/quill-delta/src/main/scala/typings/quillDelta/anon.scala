@@ -3,15 +3,13 @@ package typings.quillDelta
 import typings.quillDelta.opMod.Op
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ops extends StObject {
     
-    var ops: js.Array[Op] = js.native
+    var ops: js.Array[Op]
   }
   object Ops {
     

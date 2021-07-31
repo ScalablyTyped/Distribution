@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IChartistCandleChart
-  extends IChartistBase[ICandleChartOptions]
+  extends StObject
+     with IChartistBase[ICandleChartOptions]
      with Instantiable2[/* target */ js.Any, /* data */ IChartistData, IChartistCandleChart]
      with Instantiable3[
       /* target */ js.Any, 
@@ -21,7 +21,7 @@ trait IChartistCandleChart
      with Instantiable4[
       /* target */ js.Any, 
       /* data */ IChartistData, 
-      js.UndefOr[/* options */ ICandleChartOptions], 
+      (/* options */ ICandleChartOptions) | (/* options */ Unit), 
       /* responsiveOptions */ js.Array[IResponsiveOptionTuple[ICandleChartOptions]], 
       IChartistCandleChart
     ]

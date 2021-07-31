@@ -3,42 +3,34 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.ObjectTypeInternalSlot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait ObjectTypeInternalSlot_
-  extends Flow
+- typings.babelTypes.mod._Node because Already inherited */ trait ObjectTypeInternalSlot_
+  extends StObject
      with BaseNode
+     with Flow
      with UserWhitespacable {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var method: Boolean = js.native
+  var method: Boolean
   
-  var optional: Boolean = js.native
+  var optional: Boolean
   
-  var static: Boolean = js.native
+  var static: Boolean
   
   @JSName("type")
-  var type_ObjectTypeInternalSlot_ : ObjectTypeInternalSlot = js.native
+  var type_ObjectTypeInternalSlot_ : ObjectTypeInternalSlot
   
-  var value: FlowType = js.native
+  var value: FlowType
 }
 object ObjectTypeInternalSlot_ {
   
   @scala.inline
-  def apply(
-    id: Identifier_,
-    method: Boolean,
-    optional: Boolean,
-    static: Boolean,
-    `type`: ObjectTypeInternalSlot,
-    value: FlowType
-  ): ObjectTypeInternalSlot_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: Identifier_, method: Boolean, optional: Boolean, static: Boolean, value: FlowType): ObjectTypeInternalSlot_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ObjectTypeInternalSlot")
     __obj.asInstanceOf[ObjectTypeInternalSlot_]
   }
   

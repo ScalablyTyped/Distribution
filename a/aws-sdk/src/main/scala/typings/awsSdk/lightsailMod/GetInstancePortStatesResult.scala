@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstancePortStatesResult extends StObject {
   
   /**
     * An array of objects that describe the firewall port states for the specified instance.
     */
-  var portStates: js.UndefOr[InstancePortStateList] = js.native
+  var portStates: js.UndefOr[InstancePortStateList] = js.undefined
 }
 object GetInstancePortStatesResult {
   

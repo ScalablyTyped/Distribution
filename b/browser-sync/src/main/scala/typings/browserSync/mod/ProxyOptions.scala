@@ -5,29 +5,27 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProxyOptions extends StObject {
   
   var error: js.UndefOr[
     js.Function3[/* err */ ErrnoException, /* req */ IncomingMessage, /* res */ ServerResponse, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var middleware: js.UndefOr[MiddlewareHandler] = js.native
+  var middleware: js.UndefOr[MiddlewareHandler] = js.undefined
   
   var proxyReq: js.UndefOr[
     (js.Array[js.Function1[/* res */ IncomingMessage, Unit]]) | (js.Function1[/* res */ IncomingMessage, Unit])
-  ] = js.native
+  ] = js.undefined
   
-  var proxyRes: js.UndefOr[ProxyResponseMiddleware | js.Array[ProxyResponseMiddleware]] = js.native
+  var proxyRes: js.UndefOr[ProxyResponseMiddleware | js.Array[ProxyResponseMiddleware]] = js.undefined
   
-  var reqHeaders: js.UndefOr[js.Function1[/* config */ js.Object, Hash[js.Object]]] = js.native
+  var reqHeaders: js.UndefOr[js.Function1[/* config */ js.Object, Hash[js.Object]]] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var ws: js.UndefOr[Boolean] = js.native
+  var ws: js.UndefOr[Boolean] = js.undefined
 }
 object ProxyOptions {
   

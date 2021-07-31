@@ -16,7 +16,6 @@ import typings.firefoxWebextBrowser.browser.runtime.SendMessageOptions
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,31 +23,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object runtime {
   
+  @JSGlobal("browser.runtime")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Attempts to connect to connect listeners within an extension/app (such as the background page), or other extensions/apps. This is useful for content scripts connecting to their extension processes, inter-app/extension communication, and web messaging. Note that this does not connect to any listeners in a content script. Extensions may connect to content scripts embedded in tabs via `tabs.connect`.
     * @returns Port through which messages can be sent and received. The port's `runtime.Port onDisconnect` event is fired if the extension/app does not exist.
     */
-  @JSGlobal("browser.runtime.connect")
-  @js.native
-  def connect(): Port = js.native
+  @scala.inline
+  def connect(): Port = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[Port]
   /**
     * Attempts to connect to connect listeners within an extension/app (such as the background page), or other extensions/apps. This is useful for content scripts connecting to their extension processes, inter-app/extension communication, and web messaging. Note that this does not connect to any listeners in a content script. Extensions may connect to content scripts embedded in tabs via `tabs.connect`.
     * @returns Port through which messages can be sent and received. The port's `runtime.Port onDisconnect` event is fired if the extension/app does not exist.
     */
-  @JSGlobal("browser.runtime.connect")
-  @js.native
-  def connect(connectInfo: ConnectConnectInfo): Port = js.native
+  @scala.inline
+  def connect(connectInfo: ConnectConnectInfo): Port = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectInfo.asInstanceOf[js.Any]).asInstanceOf[Port]
   /**
     * Attempts to connect to connect listeners within an extension/app (such as the background page), or other extensions/apps. This is useful for content scripts connecting to their extension processes, inter-app/extension communication, and web messaging. Note that this does not connect to any listeners in a content script. Extensions may connect to content scripts embedded in tabs via `tabs.connect`.
     * @param extensionId The ID of the extension or app to connect to. If omitted, a connection will be attempted with your own extension. Required if sending messages from a web page for web messaging.
     * @returns Port through which messages can be sent and received. The port's `runtime.Port onDisconnect` event is fired if the extension/app does not exist.
     */
-  @JSGlobal("browser.runtime.connect")
-  @js.native
-  def connect(extensionId: String): Port = js.native
-  @JSGlobal("browser.runtime.connect")
-  @js.native
-  def connect(extensionId: String, connectInfo: ConnectConnectInfo): Port = js.native
+  @scala.inline
+  def connect(extensionId: String): Port = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(extensionId.asInstanceOf[js.Any]).asInstanceOf[Port]
+  @scala.inline
+  def connect(extensionId: String, connectInfo: ConnectConnectInfo): Port = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(extensionId.asInstanceOf[js.Any], connectInfo.asInstanceOf[js.Any])).asInstanceOf[Port]
   
   /**
     * Connects to a native application in the host machine.
@@ -57,51 +56,44 @@ object runtime {
     * @param application The name of the registered application to connect to.
     * @returns Port through which messages can be sent and received with the application
     */
-  @JSGlobal("browser.runtime.connectNative")
-  @js.native
-  def connectNative(application: String): Port = js.native
+  @scala.inline
+  def connectNative(application: String): Port = ^.asInstanceOf[js.Dynamic].applyDynamic("connectNative")(application.asInstanceOf[js.Any]).asInstanceOf[Port]
   
   /* runtime functions */
   /**
     * Retrieves the JavaScript 'window' object for the background page running inside the current extension/app. If the background page is an event page, the system will ensure it is loaded before calling the callback. If there is no background page, an error is set.
     */
-  @JSGlobal("browser.runtime.getBackgroundPage")
-  @js.native
-  def getBackgroundPage(): js.Promise[Window] = js.native
+  @scala.inline
+  def getBackgroundPage(): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundPage")().asInstanceOf[js.Promise[Window]]
   
   /** Returns information about the current browser. */
-  @JSGlobal("browser.runtime.getBrowserInfo")
-  @js.native
-  def getBrowserInfo(): js.Promise[BrowserInfo] = js.native
+  @scala.inline
+  def getBrowserInfo(): js.Promise[BrowserInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowserInfo")().asInstanceOf[js.Promise[BrowserInfo]]
   
   /**
     * Returns details about the app or extension from the manifest. The object returned is a serialization of the full manifest file.
     */
-  @JSGlobal("browser.runtime.getManifest")
-  @js.native
-  def getManifest(): WebExtensionManifest = js.native
+  @scala.inline
+  def getManifest(): WebExtensionManifest = ^.asInstanceOf[js.Dynamic].applyDynamic("getManifest")().asInstanceOf[WebExtensionManifest]
   
   /**
     * Returns a DirectoryEntry for the package directory.
     * @deprecated Unsupported on Firefox at this time.
     */
-  @JSGlobal("browser.runtime.getPackageDirectoryEntry")
-  @js.native
-  def getPackageDirectoryEntry(): js.Promise[DirectoryEntry] = js.native
+  @scala.inline
+  def getPackageDirectoryEntry(): js.Promise[DirectoryEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageDirectoryEntry")().asInstanceOf[js.Promise[DirectoryEntry]]
   
   /** Returns information about the current platform. */
-  @JSGlobal("browser.runtime.getPlatformInfo")
-  @js.native
-  def getPlatformInfo(): js.Promise[PlatformInfo] = js.native
+  @scala.inline
+  def getPlatformInfo(): js.Promise[PlatformInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatformInfo")().asInstanceOf[js.Promise[PlatformInfo]]
   
   /**
     * Converts a relative path within an app/extension install directory to a fully-qualified URL.
     * @param path A path to a resource within an app/extension expressed relative to its install directory.
     * @returns The fully-qualified URL to the resource.
     */
-  @JSGlobal("browser.runtime.getURL")
-  @js.native
-  def getURL(path: String): String = js.native
+  @scala.inline
+  def getURL(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getURL")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** The ID of the extension/app. */
   @JSGlobal("browser.runtime.id")
@@ -221,50 +213,42 @@ object runtime {
     *
     * If your Extension does not declare an options page, or the browser failed to create one for some other reason, the callback will set `lastError`.
     */
-  @JSGlobal("browser.runtime.openOptionsPage")
-  @js.native
-  def openOptionsPage(): js.Promise[Unit] = js.native
+  @scala.inline
+  def openOptionsPage(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openOptionsPage")().asInstanceOf[js.Promise[Unit]]
   
   /** Reloads the app or extension. */
-  @JSGlobal("browser.runtime.reload")
-  @js.native
-  def reload(): Unit = js.native
+  @scala.inline
+  def reload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[Unit]
   
   /**
     * Requests an update check for this app/extension.
     * @deprecated Unsupported on Firefox at this time.
     */
-  @JSGlobal("browser.runtime.requestUpdateCheck")
-  @js.native
-  def requestUpdateCheck(): js.Promise[js.Object] = js.native
+  @scala.inline
+  def requestUpdateCheck(): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestUpdateCheck")().asInstanceOf[js.Promise[js.Object]]
   
   /**
     * Restart the device when the app runs in kiosk mode. Otherwise, it's no-op.
     * @deprecated Unsupported on Firefox at this time.
     */
-  @JSGlobal("browser.runtime.restart")
-  @js.native
-  def restart(): Unit = js.native
+  @scala.inline
+  def restart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restart")().asInstanceOf[Unit]
   
   /**
     * Sends a single message to event listeners within your extension/app or a different extension/app. Similar to `runtime.connect` but only sends a single message, with an optional response. If sending to your extension, the `runtime.onMessage` event will be fired in each page, or `runtime.onMessageExternal`, if a different extension. Note that extensions cannot send messages to content scripts using this method. To send messages to content scripts, use `tabs.sendMessage`.
     * @param extensionId The ID of the extension/app to send the message to. If omitted, the message will be sent to your own extension/app. Required if sending messages from a web page for web messaging.
     */
-  @JSGlobal("browser.runtime.sendMessage")
-  @js.native
-  def sendMessage(extensionId: String, message: js.Any): js.Promise[_] = js.native
-  @JSGlobal("browser.runtime.sendMessage")
-  @js.native
-  def sendMessage(extensionId: String, message: js.Any, options: SendMessageOptions): js.Promise[_] = js.native
+  @scala.inline
+  def sendMessage(extensionId: String, message: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def sendMessage(extensionId: String, message: js.Any, options: SendMessageOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   /**
     * Sends a single message to event listeners within your extension/app or a different extension/app. Similar to `runtime.connect` but only sends a single message, with an optional response. If sending to your extension, the `runtime.onMessage` event will be fired in each page, or `runtime.onMessageExternal`, if a different extension. Note that extensions cannot send messages to content scripts using this method. To send messages to content scripts, use `tabs.sendMessage`.
     */
-  @JSGlobal("browser.runtime.sendMessage")
-  @js.native
-  def sendMessage(message: js.Any): js.Promise[_] = js.native
-  @JSGlobal("browser.runtime.sendMessage")
-  @js.native
-  def sendMessage(message: js.Any, options: SendMessageOptions): js.Promise[_] = js.native
+  @scala.inline
+  def sendMessage(message: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def sendMessage(message: js.Any, options: SendMessageOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   /**
     * Send a single message to a native application.
@@ -273,18 +257,15 @@ object runtime {
     * @param application The name of the native messaging host.
     * @param message The message that will be passed to the native messaging host.
     */
-  @JSGlobal("browser.runtime.sendNativeMessage")
-  @js.native
-  def sendNativeMessage(application: String, message: js.Any): js.Promise[_] = js.native
+  @scala.inline
+  def sendNativeMessage(application: String, message: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNativeMessage")(application.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   /**
     * Sets the URL to be visited upon uninstallation. This may be used to clean up server-side data, do analytics, and implement surveys. Maximum 255 characters.
     * @param [url] URL to be opened after the extension is uninstalled. This URL must have an http: or https: scheme. Set an empty string to not open a new tab upon uninstallation.
     */
-  @JSGlobal("browser.runtime.setUninstallURL")
-  @js.native
-  def setUninstallURL(): js.Promise[Unit] = js.native
-  @JSGlobal("browser.runtime.setUninstallURL")
-  @js.native
-  def setUninstallURL(url: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def setUninstallURL(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setUninstallURL")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def setUninstallURL(url: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setUninstallURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

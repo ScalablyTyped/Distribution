@@ -2,26 +2,24 @@ package typings.awsSdk.marketplacemeteringMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterUsageRequest extends StObject {
   
   /**
     * (Optional) To scope down the registration to a specific running software instance and guard against replay attacks.
     */
-  var Nonce: js.UndefOr[typings.awsSdk.marketplacemeteringMod.Nonce] = js.native
+  var Nonce: js.UndefOr[typings.awsSdk.marketplacemeteringMod.Nonce] = js.undefined
   
   /**
     * Product code is used to uniquely identify a product in AWS Marketplace. The product code should be the same as the one used during the publishing of a new product.
     */
-  var ProductCode: typings.awsSdk.marketplacemeteringMod.ProductCode = js.native
+  var ProductCode: typings.awsSdk.marketplacemeteringMod.ProductCode
   
   /**
     * Public Key Version provided by AWS Marketplace
     */
-  var PublicKeyVersion: VersionInteger = js.native
+  var PublicKeyVersion: VersionInteger
 }
 object RegisterUsageRequest {
   

@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IosUpdateConfiguration extends DeviceConfiguration {
+trait IosUpdateConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   // Active Hours End (active hours mean the time window when updates install should not happen)
-  var activeHoursEnd: js.UndefOr[String] = js.native
+  var activeHoursEnd: js.UndefOr[String] = js.undefined
   
   // Active Hours Start (active hours mean the time window when updates install should not happen)
-  var activeHoursStart: js.UndefOr[String] = js.native
+  var activeHoursStart: js.UndefOr[String] = js.undefined
   
   // Days in week for which active hours are configured. This collection can contain a maximum of 7 elements.
-  var scheduledInstallDays: js.UndefOr[js.Array[DayOfWeek]] = js.native
+  var scheduledInstallDays: js.UndefOr[js.Array[DayOfWeek]] = js.undefined
   
   // UTC Time Offset indicated in minutes
-  var utcTimeOffsetInMinutes: js.UndefOr[NullableOption[Double]] = js.native
+  var utcTimeOffsetInMinutes: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object IosUpdateConfiguration {
   

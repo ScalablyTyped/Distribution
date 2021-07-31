@@ -3,7 +3,6 @@ package typings.activexShell.Shell32
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Shell Folder Item */
@@ -36,9 +35,9 @@ trait ShellFolderItem extends StObject {
     * @param vArgs String with one or more arguments to the command specified by vVerb. The format of this string depends on the particular verb.
     */
   def InvokeVerbEx(): Unit = js.native
-  def InvokeVerbEx(vVerb: js.UndefOr[scala.Nothing], vArgs: String): Unit = js.native
   def InvokeVerbEx(vVerb: String): Unit = js.native
   def InvokeVerbEx(vVerb: String, vArgs: String): Unit = js.native
+  def InvokeVerbEx(vVerb: Unit, vArgs: String): Unit = js.native
   
   /** Indicates if the item can be hosted inside a browser or Windows Explorer frame. */
   val IsBrowsable: Boolean = js.native

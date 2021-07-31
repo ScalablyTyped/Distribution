@@ -7,7 +7,6 @@ import typings.typedoc.typedocStrings.readonly
 import typings.typedoc.typedocStrings.unique
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelsTypesMod {
@@ -136,19 +135,21 @@ object modelsTypesMod {
   /* static members */
   object Type {
     
-    @JSImport("typedoc/dist/lib/models/types", "Type.isTypeListEqual")
+    @JSImport("typedoc/dist/lib/models/types", "Type")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def isTypeListEqual(
       a: js.Array[typings.typedoc.typesAbstractMod.Type],
       b: js.Array[typings.typedoc.typesAbstractMod.Type]
-    ): Boolean = js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeListEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("typedoc/dist/lib/models/types", "Type.isTypeListSimilar")
-    @js.native
+    @scala.inline
     def isTypeListSimilar(
       a: js.Array[typings.typedoc.typesAbstractMod.Type],
       b: js.Array[typings.typedoc.typesAbstractMod.Type]
-    ): Boolean = js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeListSimilar")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   @JSImport("typedoc/dist/lib/models/types", "TypeOperatorType")

@@ -2,32 +2,28 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.solidityParserAntlr.mod.Statement because Already inherited */ @js.native
-trait VariableDeclarationStatement
-  extends SimpleStatement
+- typings.solidityParserAntlr.mod.Statement because Already inherited */ trait VariableDeclarationStatement
+  extends StObject
      with BaseASTNode
-     with ASTNode {
+     with ASTNode
+     with SimpleStatement {
   
-  var initialValue: js.UndefOr[Expression] = js.native
+  var initialValue: js.UndefOr[Expression] = js.undefined
   
   @JSName("type")
-  var type_VariableDeclarationStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement = js.native
+  var type_VariableDeclarationStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement
   
-  var variables: js.Array[ASTNode] = js.native
+  var variables: js.Array[ASTNode]
 }
 object VariableDeclarationStatement {
   
   @scala.inline
-  def apply(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement,
-    variables: js.Array[ASTNode]
-  ): VariableDeclarationStatement = {
+  def apply(variables: js.Array[ASTNode]): VariableDeclarationStatement = {
     val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VariableDeclarationStatement")
     __obj.asInstanceOf[VariableDeclarationStatement]
   }
   

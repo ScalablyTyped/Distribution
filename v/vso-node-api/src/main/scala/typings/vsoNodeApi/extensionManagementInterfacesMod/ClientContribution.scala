@@ -2,41 +2,39 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientContribution extends StObject {
   
   /**
     * Description of the contribution/type
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Fully qualified identifier of the contribution/type
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Includes is a set of contributions that should have this contribution included in their targets list.
     */
-  var includes: js.Array[String] = js.native
+  var includes: js.Array[String]
   
   /**
     * Properties/attributes of this contribution
     */
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /**
     * The ids of the contribution(s) that this contribution targets. (parent contributions)
     */
-  var targets: js.Array[String] = js.native
+  var targets: js.Array[String]
   
   /**
     * Id of the Contribution Type
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ClientContribution {
   

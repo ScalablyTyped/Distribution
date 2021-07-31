@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConditionalForwarderRequest extends StObject {
   
   /**
     * The directory ID for which you are deleting the conditional forwarder.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * The fully qualified domain name (FQDN) of the remote domain with which you are deleting the conditional forwarder.
     */
-  var RemoteDomainName: typings.awsSdk.directoryserviceMod.RemoteDomainName = js.native
+  var RemoteDomainName: typings.awsSdk.directoryserviceMod.RemoteDomainName
 }
 object DeleteConditionalForwarderRequest {
   

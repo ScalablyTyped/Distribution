@@ -2,21 +2,19 @@ package typings.sketchapp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSData extends StObject {
   
-  var document: SketchMSDocument = js.native
+  var document: SketchMSDocument
   
-  var meta: SketchMSMeta = js.native
+  var meta: SketchMSMeta
   
-  var pages: js.Array[SketchMSPageLayer] = js.native
+  var pages: js.Array[SketchMSPageLayer]
   
-  var previews: js.Array[SketchMSPreview] = js.native
+  var previews: js.Array[SketchMSPreview]
   
-  var user: SketchMSUser = js.native
+  var user: SketchMSUser
 }
 object SketchMSData {
   

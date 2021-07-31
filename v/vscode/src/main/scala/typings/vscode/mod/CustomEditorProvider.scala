@@ -3,11 +3,11 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEditorProvider[T] {
+trait CustomEditorProvider[T /* <: CustomDocument */]
+  extends StObject
+     with CustomReadonlyEditorProvider[T] {
   
   /**
     * Back up a dirty custom document.
@@ -30,7 +30,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEdit
     * in an operation that takes time to complete, your extension may decide to finish the ongoing backup rather
     * than cancelling it to ensure that VS Code has some valid backup.
     */
-  def backupCustomDocument(document: T, context: CustomDocumentBackupContext, cancellation: CancellationToken): Thenable[CustomDocumentBackup] = js.native
+  def backupCustomDocument(document: T, context: CustomDocumentBackupContext, cancellation: CancellationToken): Thenable[CustomDocumentBackup]
   
   /**
     * Signal that an edit has occurred inside a custom editor.
@@ -52,7 +52,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEdit
     *
     * An editor should only ever fire `CustomDocumentEditEvent` events, or only ever fire `CustomDocumentContentChangeEvent` events.
     */
-  val onDidChangeCustomDocument: Event[CustomDocumentContentChangeEvent[T] | CustomDocumentEditEvent[T]] = js.native
+  val onDidChangeCustomDocument: Event[CustomDocumentContentChangeEvent[T] | CustomDocumentEditEvent[T]]
   
   /**
     * Revert a custom document to its last saved state.
@@ -69,7 +69,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEdit
     *
     * @return Thenable signaling that the change has completed.
     */
-  def revertCustomDocument(document: T, cancellation: CancellationToken): Thenable[Unit] = js.native
+  def revertCustomDocument(document: T, cancellation: CancellationToken): Thenable[Unit]
   
   /**
     * Save a custom document.
@@ -86,7 +86,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEdit
     *
     * @return Thenable signaling that saving has completed.
     */
-  def saveCustomDocument(document: T, cancellation: CancellationToken): Thenable[Unit] = js.native
+  def saveCustomDocument(document: T, cancellation: CancellationToken): Thenable[Unit]
   
   /**
     * Save a custom document to a different location.
@@ -102,7 +102,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEdit
     *
     * @return Thenable signaling that saving has completed.
     */
-  def saveCustomDocumentAs(document: T, destination: Uri, cancellation: CancellationToken): Thenable[Unit] = js.native
+  def saveCustomDocumentAs(document: T, destination: Uri, cancellation: CancellationToken): Thenable[Unit]
 }
 object CustomEditorProvider {
   
@@ -121,7 +121,7 @@ object CustomEditorProvider {
   }
   
   @scala.inline
-  implicit class CustomEditorProviderMutableBuilder[Self <: CustomEditorProvider[_], T /* <: CustomDocument */] (val x: Self with CustomEditorProvider[T]) extends AnyVal {
+  implicit class CustomEditorProviderMutableBuilder[Self <: CustomEditorProvider[?], T /* <: CustomDocument */] (val x: Self & CustomEditorProvider[T]) extends AnyVal {
     
     @scala.inline
     def setBackupCustomDocument(value: (T, CustomDocumentBackupContext, CancellationToken) => Thenable[CustomDocumentBackup]): Self = StObject.set(x, "backupCustomDocument", js.Any.fromFunction3(value))

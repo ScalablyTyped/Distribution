@@ -2,17 +2,15 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobPayloadInput extends StObject {
   
-  var compressedUrn: js.UndefOr[Boolean] = js.native
+  var compressedUrn: js.UndefOr[Boolean] = js.undefined
   
-  var rootFilename: js.UndefOr[String] = js.native
+  var rootFilename: js.UndefOr[String] = js.undefined
   
-  var urn: String = js.native
+  var urn: String
 }
 object JobPayloadInput {
   

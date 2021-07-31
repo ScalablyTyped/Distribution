@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the AutoRepeatModeChangeRequested event. */
-@js.native
 trait AutoRepeatModeChangeRequestedEventArgs extends StObject {
   
   /** Gets a value indicating the requested auto-repeat mode. */
-  var requestedAutoRepeatMode: MediaPlaybackAutoRepeatMode = js.native
+  var requestedAutoRepeatMode: MediaPlaybackAutoRepeatMode
 }
 object AutoRepeatModeChangeRequestedEventArgs {
   

@@ -2,30 +2,28 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/path/
-@js.native
 trait Path extends StObject {
   
-  def basename(path: String): String = js.native
+  def basename(path: String): String
   
-  def dirname(path: String): String = js.native
+  def dirname(path: String): String
   
-  def expanduser(path: String): String = js.native
+  def expanduser(path: String): String
   
-  def extname(path: String): String = js.native
+  def extname(path: String): String
   
-  def isAbsolute(path: String): Boolean = js.native
+  def isAbsolute(path: String): Boolean
   
-  def join(paths: String*): String = js.native
+  def join(paths: String*): String
   
-  def normalize(path: String): String = js.native
+  def normalize(path: String): String
   
-  def split(path: String): js.Array[String] = js.native
+  def split(path: String): js.Array[String]
   
-  def splitext(path: String): js.Tuple2[String, String] = js.native
+  def splitext(path: String): js.Tuple2[String, String]
 }
 object Path {
   

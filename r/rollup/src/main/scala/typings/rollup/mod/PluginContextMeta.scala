@@ -2,15 +2,13 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluginContextMeta extends StObject {
   
-  var rollupVersion: String = js.native
+  var rollupVersion: String
   
-  var watchMode: Boolean = js.native
+  var watchMode: Boolean
 }
 object PluginContextMeta {
   

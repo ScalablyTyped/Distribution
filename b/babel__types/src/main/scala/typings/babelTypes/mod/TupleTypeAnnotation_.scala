@@ -3,27 +3,26 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TupleTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TupleTypeAnnotation_
-  extends Flow
+- typings.babelTypes.mod._Node because Already inherited */ trait TupleTypeAnnotation_
+  extends StObject
      with BaseNode
+     with Flow
      with FlowType {
   
   @JSName("type")
-  var type_TupleTypeAnnotation_ : TupleTypeAnnotation = js.native
+  var type_TupleTypeAnnotation_ : TupleTypeAnnotation
   
-  var types: js.Array[FlowType] = js.native
+  var types: js.Array[FlowType]
 }
 object TupleTypeAnnotation_ {
   
   @scala.inline
-  def apply(`type`: TupleTypeAnnotation, types: js.Array[FlowType]): TupleTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(types: js.Array[FlowType]): TupleTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TupleTypeAnnotation")
     __obj.asInstanceOf[TupleTypeAnnotation_]
   }
   

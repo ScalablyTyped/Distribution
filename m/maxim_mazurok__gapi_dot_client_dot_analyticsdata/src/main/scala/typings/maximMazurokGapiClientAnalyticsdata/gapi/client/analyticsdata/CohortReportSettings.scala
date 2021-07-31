@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CohortReportSettings extends StObject {
   
   /** If true, accumulates the result from first visit day to the end day. Not supported in `RunReportRequest`. */
-  var accumulate: js.UndefOr[Boolean] = js.native
+  var accumulate: js.UndefOr[Boolean] = js.undefined
 }
 object CohortReportSettings {
   

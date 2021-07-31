@@ -2,13 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PDFViewerRenderEvent extends PDFViewerEvent {
+trait PDFViewerRenderEvent
+  extends StObject
+     with PDFViewerEvent {
   
-  var page: js.UndefOr[js.Any] = js.native
+  var page: js.UndefOr[js.Any] = js.undefined
 }
 object PDFViewerRenderEvent {
   

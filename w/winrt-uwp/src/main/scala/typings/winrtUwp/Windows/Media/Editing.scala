@@ -20,7 +20,6 @@ import typings.winrtUwp.Windows.Media.Transcoding.TranscodeFailureReason
 import typings.winrtUwp.Windows.Storage.IStorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for editing, previewing, and saving edited media clips. */
@@ -35,11 +34,15 @@ object Editing {
     
     /** Use the faster trimming algorithm during transcoding. */
     @js.native
-    sealed trait fast extends MediaTrimmingPreference
+    sealed trait fast
+      extends StObject
+         with MediaTrimmingPreference
     
     /** Use the more precise trimming algorithm during transcoding. */
     @js.native
-    sealed trait precise extends MediaTrimmingPreference
+    sealed trait precise
+      extends StObject
+         with MediaTrimmingPreference
   }
   
   @js.native
@@ -51,46 +54,49 @@ object Editing {
     
     /** Use a more precise algorithm to get a thumbnail to the nearest frame. */
     @js.native
-    sealed trait nearestFrame extends VideoFramePrecision
+    sealed trait nearestFrame
+      extends StObject
+         with VideoFramePrecision
     
     /** Use a faster but less precise algorithm to get the thumbnail. */
     @js.native
-    sealed trait nearestKeyFrame extends VideoFramePrecision
+    sealed trait nearestKeyFrame
+      extends StObject
+         with VideoFramePrecision
   }
   
   /** Represents a single audio track for accompanying a video clip. */
-  @js.native
   trait BackgroundAudioTrack extends StObject {
     
     /** Gets the list of audio effect definitions for processing the background audio track. */
-    var audioEffectDefinitions: IVector[IAudioEffectDefinition] = js.native
+    var audioEffectDefinitions: IVector[IAudioEffectDefinition]
     
     /** Specifies how long to wait before starting background audio playback. */
-    var delay: Double = js.native
+    var delay: Double
     
     /**
       * Gets the AudioEncodingProperties for the background audio track.
       * @return The AudioEncodingProperties for the background audio track.
       */
-    def getAudioEncodingProperties(): AudioEncodingProperties = js.native
+    def getAudioEncodingProperties(): AudioEncodingProperties
     
     /** Original playback time of the background audio track, without the effects of the TrimTimeFromStart and TrimTimeFromEnd properties. */
-    var originalDuration: Double = js.native
+    var originalDuration: Double
     
     /** The amount of time to trim from the end of the background audio track. */
-    var trimTimeFromEnd: Double = js.native
+    var trimTimeFromEnd: Double
     
     /** The amount of time to trim from the beginning of the background audio track. */
-    var trimTimeFromStart: Double = js.native
+    var trimTimeFromStart: Double
     
     /** Duration of the background audio track with TrimTimeFromStart and TrimTimeFromEnd applied to playback. */
-    var trimmedDuration: Double = js.native
+    var trimmedDuration: Double
     
     /** An associative collection for storing custom properties associated with the background audio track. */
-    var userData: IMap[String, String] = js.native
+    var userData: IMap[String, String]
     
     /** Gets or sets the volume of the background audio track. */
-    var volume: Double = js.native
+    var volume: Double
   }
   object BackgroundAudioTrack {
     
@@ -143,14 +149,13 @@ object Editing {
   }
   
   /** Represents an audio track embedded in the media clip. */
-  @js.native
   trait EmbeddedAudioTrack extends StObject {
     
     /**
       * Gets the AudioEncodingProperties for the embedded audio track.
       * @return The AudioEncodingProperties for the embedded audio track.
       */
-    def getAudioEncodingProperties(): AudioEncodingProperties = js.native
+    def getAudioEncodingProperties(): AudioEncodingProperties
   }
   object EmbeddedAudioTrack {
     
@@ -169,50 +174,49 @@ object Editing {
   }
   
   /** Represents a single media object. */
-  @js.native
   trait MediaClip extends StObject {
     
     /** Gets the list of audio effect definitions for processing the media clip. */
-    var audioEffectDefinitions: IVector[IAudioEffectDefinition] = js.native
+    var audioEffectDefinitions: IVector[IAudioEffectDefinition]
     
     /** The list of embedded audio tracks in this media clip. */
-    var embeddedAudioTracks: IVectorView[EmbeddedAudioTrack] = js.native
+    var embeddedAudioTracks: IVectorView[EmbeddedAudioTrack]
     
     /** The time when the media clip stops playing within a MediaComposition . */
-    var endTimeInComposition: Double = js.native
+    var endTimeInComposition: Double
     
     /**
       * Gets the VideoEncodingProperties for the media clip.
       * @return The VideoEncodingProperties for the media clip.
       */
-    def getVideoEncodingProperties(): VideoEncodingProperties = js.native
+    def getVideoEncodingProperties(): VideoEncodingProperties
     
     /** Original playback time of the media clip, without the effects of TrimTimeFromStart and TrimTimeFromEnd properties. */
-    var originalDuration: Double = js.native
+    var originalDuration: Double
     
     /** The index of the audio track within the media clip that is used for playback. */
-    var selectedEmbeddedAudioTrackIndex: Double = js.native
+    var selectedEmbeddedAudioTrackIndex: Double
     
     /** The time when the media clip starts playing within a MediaComposition . */
-    var startTimeInComposition: Double = js.native
+    var startTimeInComposition: Double
     
     /** The amount of time to trim from the end of the media clip. */
-    var trimTimeFromEnd: Double = js.native
+    var trimTimeFromEnd: Double
     
     /** The amount of time to trim from the beginning of the media clip. */
-    var trimTimeFromStart: Double = js.native
+    var trimTimeFromStart: Double
     
     /** Duration of the media clip with TrimTimeFromStart and TrimTimeFromEnd applied to playback. */
-    var trimmedDuration: Double = js.native
+    var trimmedDuration: Double
     
     /** An associative collection for storing custom properties associated with the media clip. */
-    var userData: IMap[String, String] = js.native
+    var userData: IMap[String, String]
     
     /** Gets the list of video effect definitions for processing the media clip. */
-    var videoEffectDefinitions: IVector[IVideoEffectDefinition] = js.native
+    var videoEffectDefinitions: IVector[IVideoEffectDefinition]
     
     /** Gets or sets the volume of the media clip. */
-    var volume: Double = js.native
+    var volume: Double
   }
   object MediaClip {
     
@@ -347,7 +351,7 @@ object Editing {
       scaledWidth: Double,
       scaledHeight: Double,
       framePrecision: VideoFramePrecision
-    ): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    ): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
     
     /** Gets the list of overlay layers for the media composition. */
     var overlayLayers: IVector[MediaOverlayLayer] = js.native
@@ -390,23 +394,22 @@ object Editing {
   }
   
   /** Represents an overlay that can be used in a media composition. */
-  @js.native
   trait MediaOverlay extends StObject {
     
     /** Gets or sets a value indicating whether audio is enabled for the MediaOverlay . */
-    var audioEnabled: Boolean = js.native
+    var audioEnabled: Boolean
     
     /** Gets the media clip to be used for the overlay. */
-    var clip: MediaClip = js.native
+    var clip: MediaClip
     
     /** Gets or sets the time span from the start of the clip after which the media overlay should be rendered. */
-    var delay: Double = js.native
+    var delay: Double
     
     /** Gets the opacity of the overlay. */
-    var opacity: Double = js.native
+    var opacity: Double
     
     /** Gets the position of the overlay. */
-    var position: Rect = js.native
+    var position: Rect
   }
   object MediaOverlay {
     
@@ -437,14 +440,13 @@ object Editing {
   }
   
   /** Represents a layer of a media overlay. */
-  @js.native
   trait MediaOverlayLayer extends StObject {
     
     /** Gets the definition of the custom compositor associated with the media overlay layer, if there is one. */
-    var customCompositorDefinition: IVideoCompositorDefinition = js.native
+    var customCompositorDefinition: IVideoCompositorDefinition
     
     /** Gets the list of overlays for this media overlay layer. */
-    var overlays: IVector[MediaOverlay] = js.native
+    var overlays: IVector[MediaOverlay]
   }
   object MediaOverlayLayer {
     

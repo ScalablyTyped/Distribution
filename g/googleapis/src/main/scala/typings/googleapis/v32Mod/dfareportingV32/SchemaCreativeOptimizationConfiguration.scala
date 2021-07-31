@@ -2,13 +2,11 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creative optimization settings.
   */
-@js.native
 trait SchemaCreativeOptimizationConfiguration extends StObject {
   
   /**
@@ -16,23 +14,23 @@ trait SchemaCreativeOptimizationConfiguration extends StObject {
     * when the campaign is inserted or updated. It can be null for existing
     * campaigns.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this creative optimization config. This is a required field and
     * must be less than 129 characters long.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * List of optimization activities associated with this configuration.
     */
-  var optimizationActivitys: js.UndefOr[js.Array[SchemaOptimizationActivity]] = js.native
+  var optimizationActivitys: js.UndefOr[js.Array[SchemaOptimizationActivity]] = js.undefined
   
   /**
     * Optimization model for this configuration.
     */
-  var optimizationModel: js.UndefOr[String] = js.native
+  var optimizationModel: js.UndefOr[String] = js.undefined
 }
 object SchemaCreativeOptimizationConfiguration {
   

@@ -2,19 +2,17 @@ package typings.reachRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait History extends StObject {
   
-  def listen(listener: HistoryListener): HistoryUnsubscribe = js.native
+  def listen(listener: HistoryListener): HistoryUnsubscribe
   
-  val location: HistoryLocation = js.native
+  val location: HistoryLocation
   
-  var navigate: NavigateFn = js.native
+  var navigate: NavigateFn
   
-  val transitioning: Boolean = js.native
+  val transitioning: Boolean
 }
 object History {
   

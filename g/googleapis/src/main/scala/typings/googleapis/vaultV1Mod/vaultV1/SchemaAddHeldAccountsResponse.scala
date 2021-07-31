@@ -2,19 +2,17 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for batch create held accounts.
   */
-@js.native
 trait SchemaAddHeldAccountsResponse extends StObject {
   
   /**
     * The list of responses, in the same order as the batch request.
     */
-  var responses: js.UndefOr[js.Array[SchemaAddHeldAccountResult]] = js.native
+  var responses: js.UndefOr[js.Array[SchemaAddHeldAccountResult]] = js.undefined
 }
 object SchemaAddHeldAccountsResponse {
   

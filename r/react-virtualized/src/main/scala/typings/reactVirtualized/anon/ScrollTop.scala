@@ -2,13 +2,11 @@ package typings.reactVirtualized.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollTop extends StObject {
   
-  var scrollTop: Double = js.native
+  var scrollTop: Double
 }
 object ScrollTop {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateReportGroupInput extends StObject {
   
   /**
     *  A ReportExportConfig object that contains information about where the report group test results are exported. 
     */
-  var exportConfig: ReportExportConfig = js.native
+  var exportConfig: ReportExportConfig
   
   /**
     *  The name of the report group. 
     */
-  var name: ReportGroupName = js.native
+  var name: ReportGroupName
   
   /**
     *  A list of tag key and value pairs associated with this report group.  These tags are available for use by AWS services that support AWS CodeBuild report group tags.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     *  The type of report group. 
     */
-  var `type`: ReportType = js.native
+  var `type`: ReportType
 }
 object CreateReportGroupInput {
   

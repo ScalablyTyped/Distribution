@@ -2,16 +2,14 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2DateTimeValueSpec extends StObject {
   
   /**
     * Control datetime prompts.
     */
-  var dialogSpec: js.UndefOr[GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec] = js.native
+  var dialogSpec: js.UndefOr[GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec] = js.undefined
 }
 object GoogleActionsV2DateTimeValueSpec {
   

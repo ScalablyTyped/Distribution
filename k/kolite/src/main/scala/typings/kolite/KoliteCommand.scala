@@ -2,16 +2,14 @@ package typings.kolite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Command /////////////////////////////////////////////
-@js.native
 trait KoliteCommand extends StObject {
   
-  var canExecute: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any = js.native
+  var canExecute: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any
   
-  def execute(args: js.Any*): js.Any = js.native
+  def execute(args: js.Any*): js.Any
 }
 object KoliteCommand {
   

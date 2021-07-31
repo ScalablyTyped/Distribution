@@ -3,30 +3,28 @@ package typings.minecraftScriptingTypesServer
 import typings.minecraftScriptingTypesShared.MinecraftTrigger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines an array of damages and how the entity reacts to them - including whether the entity ignores that damage or not. Currently Minecraft triggers can't be properly serialized so any existing triggers will be completely replaced when applyComponentChanges().
   */
-@js.native
 trait IDamageSensorComponent extends StObject {
   
   /**
     * Type of damage that triggers this set of events
     */
-  var cause: String = js.native
+  var cause: String
   
   /**
     * If true, the damage dealt to the entity will take away health from it, set to false to make the entity ignore that damage
     * @default true
     */
-  var deals_damage: Boolean = js.native
+  var deals_damage: Boolean
   
   /**
     * List of triggers with the events to call when taking this specific kind of damage, allows specifying filters for entity definitions and events
     */
-  var on_damage: js.Array[MinecraftTrigger] = js.native
+  var on_damage: js.Array[MinecraftTrigger]
 }
 object IDamageSensorComponent {
   

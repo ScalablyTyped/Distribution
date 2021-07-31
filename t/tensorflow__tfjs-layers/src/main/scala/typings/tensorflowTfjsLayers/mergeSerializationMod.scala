@@ -11,7 +11,6 @@ import typings.tensorflowTfjsLayers.topologyConfigMod.BaseLayerSerialization
 import typings.tensorflowTfjsLayers.topologyConfigMod.LayerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mergeSerializationMod {
@@ -24,10 +23,11 @@ object mergeSerializationMod {
   
   type AverageLayerSerialization = BaseLayerSerialization[Average, LayerConfig]
   
-  @js.native
-  trait ConcatenateLayerConfig extends LayerConfig {
+  trait ConcatenateLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var axis: js.UndefOr[Double] = js.native
+    var axis: js.UndefOr[Double] = js.undefined
   }
   object ConcatenateLayerConfig {
     
@@ -50,12 +50,13 @@ object mergeSerializationMod {
   
   type ConcatenateLayerSerialization = BaseLayerSerialization[Concatenate, ConcatenateLayerConfig]
   
-  @js.native
-  trait DotLayerConfig extends LayerConfig {
+  trait DotLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var axes: Double | (js.Tuple2[Double, Double]) = js.native
+    var axes: Double | (js.Tuple2[Double, Double])
     
-    var normalize: js.UndefOr[Boolean] = js.native
+    var normalize: js.UndefOr[Boolean] = js.undefined
   }
   object DotLayerConfig {
     

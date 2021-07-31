@@ -8,26 +8,26 @@ import typings.ffprobe.ffprobeStrings.video
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ffprobe", JSImport.Namespace)
-  @js.native
-  def apply(filePath: String, options: Options): js.Promise[FFProbeResult] = js.native
-  @JSImport("ffprobe", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(filePath: String, options: Options): js.Promise[FFProbeResult] = (^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FFProbeResult]]
+  @scala.inline
   def apply(
     filePath: String,
     options: Options,
     cb: js.Function2[/* err */ Error, /* info */ FFProbeResult, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("ffprobe", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait FFProbeResult extends StObject {
     
-    var streams: js.Array[FFProbeStream] = js.native
+    var streams: js.Array[FFProbeStream]
   }
   object FFProbeResult {
     
@@ -48,84 +48,83 @@ object mod {
     }
   }
   
-  @js.native
   trait FFProbeStream extends StObject {
     
-    var avg_frame_rate: js.UndefOr[String] = js.native
+    var avg_frame_rate: js.UndefOr[String] = js.undefined
     
-    var bit_rate: Double = js.native
+    var bit_rate: Double
     
-    var bits_per_raw_sample: js.UndefOr[Double] = js.native
+    var bits_per_raw_sample: js.UndefOr[Double] = js.undefined
     
-    var bits_per_sample: js.UndefOr[Double] = js.native
+    var bits_per_sample: js.UndefOr[Double] = js.undefined
     
-    var channel_layout: js.UndefOr[String] = js.native
+    var channel_layout: js.UndefOr[String] = js.undefined
     
-    var channels: js.UndefOr[Double] = js.native
+    var channels: js.UndefOr[Double] = js.undefined
     
-    var chroma_location: js.UndefOr[String] = js.native
+    var chroma_location: js.UndefOr[String] = js.undefined
     
-    var codec_long_name: String = js.native
+    var codec_long_name: String
     
-    var codec_name: String = js.native
+    var codec_name: String
     
-    var codec_tag: String = js.native
+    var codec_tag: String
     
-    var codec_tag_string: String = js.native
+    var codec_tag_string: String
     
-    var codec_time_base: String = js.native
+    var codec_time_base: String
     
-    var codec_type: video | audio | images = js.native
+    var codec_type: video | audio | images
     
-    var coded_height: js.UndefOr[Double] = js.native
+    var coded_height: js.UndefOr[Double] = js.undefined
     
-    var coded_width: js.UndefOr[Double] = js.native
+    var coded_width: js.UndefOr[Double] = js.undefined
     
-    var display_aspect_ratio: js.UndefOr[String] = js.native
+    var display_aspect_ratio: js.UndefOr[String] = js.undefined
     
-    var disposition: Attachedpic = js.native
+    var disposition: Attachedpic
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var duration_ts: String = js.native
+    var duration_ts: String
     
-    var has_b_frames: js.UndefOr[Double] = js.native
+    var has_b_frames: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var index: Double = js.native
+    var index: Double
     
-    var is_avc: js.UndefOr[Double] = js.native
+    var is_avc: js.UndefOr[Double] = js.undefined
     
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
-    var nal_length_size: js.UndefOr[Double] = js.native
+    var nal_length_size: js.UndefOr[Double] = js.undefined
     
-    var nb_frames: Double = js.native
+    var nb_frames: Double
     
-    var pix_fmt: js.UndefOr[String] = js.native
+    var pix_fmt: js.UndefOr[String] = js.undefined
     
-    var profile: String = js.native
+    var profile: String
     
-    var r_frame_rate: String = js.native
+    var r_frame_rate: String
     
-    var refs: js.UndefOr[Double] = js.native
+    var refs: js.UndefOr[Double] = js.undefined
     
-    var sample_aspect_ratio: js.UndefOr[String] = js.native
+    var sample_aspect_ratio: js.UndefOr[String] = js.undefined
     
-    var sample_fmt: js.UndefOr[String] = js.native
+    var sample_fmt: js.UndefOr[String] = js.undefined
     
-    var sample_rate: js.UndefOr[Double] = js.native
+    var sample_rate: js.UndefOr[Double] = js.undefined
     
-    var start_pts: Double = js.native
+    var start_pts: Double
     
-    var start_time: Double = js.native
+    var start_time: Double
     
-    var tags: Creationtime = js.native
+    var tags: Creationtime
     
-    var time_base: js.UndefOr[String] = js.native
+    var time_base: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object FFProbeStream {
     
@@ -335,10 +334,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var path: String = js.native
+    var path: String
   }
   object Options {
     

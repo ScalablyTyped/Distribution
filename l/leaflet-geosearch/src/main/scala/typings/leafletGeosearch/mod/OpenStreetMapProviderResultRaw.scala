@@ -2,38 +2,36 @@ package typings.leafletGeosearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * OpenStreetMap
   */
-@js.native
 trait OpenStreetMapProviderResultRaw extends StObject {
   
-  var boundingbox: js.Tuple4[String, String, String, String] = js.native
+  var boundingbox: js.Tuple4[String, String, String, String]
   
-  var `class`: String = js.native
+  var `class`: String
   
-  var display_name: String = js.native
+  var display_name: String
   
-  var icon: String = js.native
+  var icon: String
   
-  var importance: Double = js.native
+  var importance: Double
   
-  var lat: String = js.native
+  var lat: String
   
-  var licence: String = js.native
+  var licence: String
   
-  var lon: String = js.native
+  var lon: String
   
-  var osm_id: Double = js.native
+  var osm_id: Double
   
-  var osm_type: String = js.native
+  var osm_type: String
   
-  var place_id: Double = js.native
+  var place_id: Double
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object OpenStreetMapProviderResultRaw {
   

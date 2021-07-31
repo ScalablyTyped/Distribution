@@ -2,18 +2,16 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParticlesUniform extends StObject {
   
-  var columns: Double = js.native
+  var columns: Double
   
-  var rows: Double = js.native
+  var rows: Double
   
   /** The index into the uniforms array that this uniform begins. */
-  var slot: Double = js.native
+  var slot: Double
 }
 object ParticlesUniform {
   

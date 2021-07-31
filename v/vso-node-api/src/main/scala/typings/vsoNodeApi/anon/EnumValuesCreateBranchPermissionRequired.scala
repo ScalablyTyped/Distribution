@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesCreateBranchPermissionRequired extends StObject {
   
-  var enumValues: CreateBranchPermissionRequired = js.native
+  var enumValues: CreateBranchPermissionRequired
 }
 object EnumValuesCreateBranchPermissionRequired {
   

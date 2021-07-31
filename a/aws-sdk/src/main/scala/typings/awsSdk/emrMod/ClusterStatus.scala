@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterStatus extends StObject {
   
   /**
     * The current state of the cluster.
     */
-  var State: js.UndefOr[ClusterState] = js.native
+  var State: js.UndefOr[ClusterState] = js.undefined
   
   /**
     * The reason for the cluster status change.
     */
-  var StateChangeReason: js.UndefOr[ClusterStateChangeReason] = js.native
+  var StateChangeReason: js.UndefOr[ClusterStateChangeReason] = js.undefined
   
   /**
     * A timeline that represents the status of a cluster over the lifetime of the cluster.
     */
-  var Timeline: js.UndefOr[ClusterTimeline] = js.native
+  var Timeline: js.UndefOr[ClusterTimeline] = js.undefined
 }
 object ClusterStatus {
   

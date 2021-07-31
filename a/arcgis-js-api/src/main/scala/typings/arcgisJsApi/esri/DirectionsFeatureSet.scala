@@ -3,11 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectionsFeatureSet extends FeatureSet {
+trait DirectionsFeatureSet
+  extends StObject
+     with FeatureSet {
   
   /**
     * The extent of the route.
@@ -50,7 +51,7 @@ trait DirectionsFeatureSet extends FeatureSet {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DirectionsFeatureSet.html#strings)
     */
-  var strings: js.Array[_] = js.native
+  var strings: js.Array[js.Any] = js.native
   
   /**
     * Actual drive time calculated for the route.

@@ -4,10 +4,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("xml2js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("xml2js", "Builder")
   @js.native
@@ -25,7 +28,7 @@ object mod {
     def parseString(str: convertableToString): Unit = js.native
     def parseString(str: convertableToString, cb: js.Function): Unit = js.native
     
-    def parseStringPromise(str: convertableToString): js.Promise[_] = js.native
+    def parseStringPromise(str: convertableToString): js.Promise[js.Any] = js.native
     
     def reset(): Unit = js.native
   }
@@ -41,67 +44,61 @@ object mod {
     val `02`: OptionsV2 = js.native
   }
   
-  @JSImport("xml2js", "parseString")
-  @js.native
-  def parseString(str: convertableToString, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): Unit = js.native
-  @JSImport("xml2js", "parseString")
-  @js.native
+  @scala.inline
+  def parseString(str: convertableToString, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(str.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def parseString(
     str: convertableToString,
     options: ParserOptions,
     callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("xml2js", "parseStringPromise")
-  @js.native
-  def parseStringPromise(str: convertableToString): js.Promise[_] = js.native
-  @JSImport("xml2js", "parseStringPromise")
-  @js.native
-  def parseStringPromise(str: convertableToString, options: ParserOptions): js.Promise[_] = js.native
+  @scala.inline
+  def parseStringPromise(str: convertableToString): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStringPromise")(str.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def parseStringPromise(str: convertableToString, options: ParserOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStringPromise")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   object processors {
     
-    @JSImport("xml2js", "processors.firstCharLowerCase")
+    @JSImport("xml2js", "processors")
     @js.native
-    def firstCharLowerCase(name: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("xml2js", "processors.normalize")
-    @js.native
-    def normalize(name: String): String = js.native
+    @scala.inline
+    def firstCharLowerCase(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("firstCharLowerCase")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("xml2js", "processors.parseBooleans")
-    @js.native
-    def parseBooleans(name: String): Boolean = js.native
+    @scala.inline
+    def normalize(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("xml2js", "processors.parseNumbers")
-    @js.native
-    def parseNumbers(name: String): Double = js.native
+    @scala.inline
+    def parseBooleans(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBooleans")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("xml2js", "processors.stripPrefix")
-    @js.native
-    def stripPrefix(name: String): String = js.native
+    @scala.inline
+    def parseNumbers(name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseNumbers")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def stripPrefix(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripPrefix")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @js.native
   trait BuilderOptions extends StObject {
     
-    var allowSurrogateChars: js.UndefOr[Boolean] = js.native
+    var allowSurrogateChars: js.UndefOr[Boolean] = js.undefined
     
-    var attrkey: js.UndefOr[String] = js.native
+    var attrkey: js.UndefOr[String] = js.undefined
     
-    var cdata: js.UndefOr[Boolean] = js.native
+    var cdata: js.UndefOr[Boolean] = js.undefined
     
-    var charkey: js.UndefOr[String] = js.native
+    var charkey: js.UndefOr[String] = js.undefined
     
-    var doctype: js.UndefOr[js.Any] = js.native
+    var doctype: js.UndefOr[js.Any] = js.undefined
     
-    var headless: js.UndefOr[Boolean] = js.native
+    var headless: js.UndefOr[Boolean] = js.undefined
     
-    var renderOpts: js.UndefOr[RenderOptions] = js.native
+    var renderOpts: js.UndefOr[RenderOptions] = js.undefined
     
-    var rootName: js.UndefOr[String] = js.native
+    var rootName: js.UndefOr[String] = js.undefined
     
-    var xmldec: js.UndefOr[XmlDeclarationAttributes] = js.native
+    var xmldec: js.UndefOr[XmlDeclarationAttributes] = js.undefined
   }
   object BuilderOptions {
     
@@ -171,54 +168,53 @@ object mod {
   }
   
   /* Inlined std.Omit<xml2js.xml2js.ParserOptions, 'preserveChildrenOrder' | 'chunkSize'> */
-  @js.native
   trait Options extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var attrNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, _]]] = js.native
+    var attrNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, js.Any]]] = js.undefined
     
-    var attrValueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, _]]] = js.native
+    var attrValueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]] = js.undefined
     
-    var attrkey: js.UndefOr[String] = js.native
+    var attrkey: js.UndefOr[String] = js.undefined
     
-    var charkey: js.UndefOr[String] = js.native
+    var charkey: js.UndefOr[String] = js.undefined
     
-    var charsAsChildren: js.UndefOr[Boolean] = js.native
+    var charsAsChildren: js.UndefOr[Boolean] = js.undefined
     
-    var childkey: js.UndefOr[String] = js.native
+    var childkey: js.UndefOr[String] = js.undefined
     
-    var emptyTag: js.UndefOr[js.Any] = js.native
+    var emptyTag: js.UndefOr[js.Any] = js.undefined
     
-    var explicitArray: js.UndefOr[Boolean] = js.native
+    var explicitArray: js.UndefOr[Boolean] = js.undefined
     
-    var explicitCharkey: js.UndefOr[Boolean] = js.native
+    var explicitCharkey: js.UndefOr[Boolean] = js.undefined
     
-    var explicitChildren: js.UndefOr[Boolean] = js.native
+    var explicitChildren: js.UndefOr[Boolean] = js.undefined
     
-    var explicitRoot: js.UndefOr[Boolean] = js.native
+    var explicitRoot: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreAttrs: js.UndefOr[Boolean] = js.native
+    var ignoreAttrs: js.UndefOr[Boolean] = js.undefined
     
-    var includeWhiteChars: js.UndefOr[Boolean] = js.native
+    var includeWhiteChars: js.UndefOr[Boolean] = js.undefined
     
-    var mergeAttrs: js.UndefOr[Boolean] = js.native
+    var mergeAttrs: js.UndefOr[Boolean] = js.undefined
     
-    var normalize: js.UndefOr[Boolean] = js.native
+    var normalize: js.UndefOr[Boolean] = js.undefined
     
-    var normalizeTags: js.UndefOr[Boolean] = js.native
+    var normalizeTags: js.UndefOr[Boolean] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
-    var tagNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, _]]] = js.native
+    var tagNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, js.Any]]] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
     
-    var validator: js.UndefOr[js.Function] = js.native
+    var validator: js.UndefOr[js.Function] = js.undefined
     
-    var valueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, _]]] = js.native
+    var valueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]] = js.undefined
     
-    var xmlns: js.UndefOr[Boolean] = js.native
+    var xmlns: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -238,7 +234,7 @@ object mod {
       def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       @scala.inline
-      def setAttrNameProcessors(value: js.Array[js.Function1[/* name */ String, _]]): Self = StObject.set(x, "attrNameProcessors", value.asInstanceOf[js.Any])
+      def setAttrNameProcessors(value: js.Array[js.Function1[/* name */ String, js.Any]]): Self = StObject.set(x, "attrNameProcessors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAttrNameProcessorsUndefined: Self = StObject.set(x, "attrNameProcessors", js.undefined)
@@ -247,7 +243,7 @@ object mod {
       def setAttrNameProcessorsVarargs(value: (js.Function1[/* name */ String, js.Any])*): Self = StObject.set(x, "attrNameProcessors", js.Array(value :_*))
       
       @scala.inline
-      def setAttrValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, _]]): Self = StObject.set(x, "attrValueProcessors", value.asInstanceOf[js.Any])
+      def setAttrValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]): Self = StObject.set(x, "attrValueProcessors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAttrValueProcessorsUndefined: Self = StObject.set(x, "attrValueProcessors", js.undefined)
@@ -346,7 +342,7 @@ object mod {
       def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
       @scala.inline
-      def setTagNameProcessors(value: js.Array[js.Function1[/* name */ String, _]]): Self = StObject.set(x, "tagNameProcessors", value.asInstanceOf[js.Any])
+      def setTagNameProcessors(value: js.Array[js.Function1[/* name */ String, js.Any]]): Self = StObject.set(x, "tagNameProcessors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagNameProcessorsUndefined: Self = StObject.set(x, "tagNameProcessors", js.undefined)
@@ -367,7 +363,7 @@ object mod {
       def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
       
       @scala.inline
-      def setValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, _]]): Self = StObject.set(x, "valueProcessors", value.asInstanceOf[js.Any])
+      def setValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]): Self = StObject.set(x, "valueProcessors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueProcessorsUndefined: Self = StObject.set(x, "valueProcessors", js.undefined)
@@ -383,60 +379,131 @@ object mod {
     }
   }
   
-  type OptionsV2 = ParserOptions with BuilderOptions
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.xml2js.mod.BuilderOptions because var conflicts: attrkey, charkey. Inlined rootName, renderOpts, xmldec, doctype, headless, allowSurrogateChars, cdata */ trait OptionsV2
+    extends StObject
+       with ParserOptions {
+    
+    var allowSurrogateChars: js.UndefOr[Boolean] = js.undefined
+    
+    var cdata: js.UndefOr[Boolean] = js.undefined
+    
+    var doctype: js.UndefOr[js.Any] = js.undefined
+    
+    var headless: js.UndefOr[Boolean] = js.undefined
+    
+    var renderOpts: js.UndefOr[RenderOptions] = js.undefined
+    
+    var rootName: js.UndefOr[String] = js.undefined
+    
+    var xmldec: js.UndefOr[XmlDeclarationAttributes] = js.undefined
+  }
+  object OptionsV2 {
+    
+    @scala.inline
+    def apply(): OptionsV2 = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OptionsV2]
+    }
+    
+    @scala.inline
+    implicit class OptionsV2MutableBuilder[Self <: OptionsV2] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAllowSurrogateChars(value: Boolean): Self = StObject.set(x, "allowSurrogateChars", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAllowSurrogateCharsUndefined: Self = StObject.set(x, "allowSurrogateChars", js.undefined)
+      
+      @scala.inline
+      def setCdata(value: Boolean): Self = StObject.set(x, "cdata", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCdataUndefined: Self = StObject.set(x, "cdata", js.undefined)
+      
+      @scala.inline
+      def setDoctype(value: js.Any): Self = StObject.set(x, "doctype", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDoctypeUndefined: Self = StObject.set(x, "doctype", js.undefined)
+      
+      @scala.inline
+      def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
+      
+      @scala.inline
+      def setRenderOpts(value: RenderOptions): Self = StObject.set(x, "renderOpts", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRenderOptsUndefined: Self = StObject.set(x, "renderOpts", js.undefined)
+      
+      @scala.inline
+      def setRootName(value: String): Self = StObject.set(x, "rootName", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRootNameUndefined: Self = StObject.set(x, "rootName", js.undefined)
+      
+      @scala.inline
+      def setXmldec(value: XmlDeclarationAttributes): Self = StObject.set(x, "xmldec", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setXmldecUndefined: Self = StObject.set(x, "xmldec", js.undefined)
+    }
+  }
   
-  @js.native
   trait ParserOptions extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var attrNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, _]]] = js.native
+    var attrNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, js.Any]]] = js.undefined
     
-    var attrValueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, _]]] = js.native
+    var attrValueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]] = js.undefined
     
-    var attrkey: js.UndefOr[String] = js.native
+    var attrkey: js.UndefOr[String] = js.undefined
     
-    var charkey: js.UndefOr[String] = js.native
+    var charkey: js.UndefOr[String] = js.undefined
     
-    var charsAsChildren: js.UndefOr[Boolean] = js.native
+    var charsAsChildren: js.UndefOr[Boolean] = js.undefined
     
-    var childkey: js.UndefOr[String] = js.native
+    var childkey: js.UndefOr[String] = js.undefined
     
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
-    var emptyTag: js.UndefOr[js.Any] = js.native
+    var emptyTag: js.UndefOr[js.Any] = js.undefined
     
-    var explicitArray: js.UndefOr[Boolean] = js.native
+    var explicitArray: js.UndefOr[Boolean] = js.undefined
     
-    var explicitCharkey: js.UndefOr[Boolean] = js.native
+    var explicitCharkey: js.UndefOr[Boolean] = js.undefined
     
-    var explicitChildren: js.UndefOr[Boolean] = js.native
+    var explicitChildren: js.UndefOr[Boolean] = js.undefined
     
-    var explicitRoot: js.UndefOr[Boolean] = js.native
+    var explicitRoot: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreAttrs: js.UndefOr[Boolean] = js.native
+    var ignoreAttrs: js.UndefOr[Boolean] = js.undefined
     
-    var includeWhiteChars: js.UndefOr[Boolean] = js.native
+    var includeWhiteChars: js.UndefOr[Boolean] = js.undefined
     
-    var mergeAttrs: js.UndefOr[Boolean] = js.native
+    var mergeAttrs: js.UndefOr[Boolean] = js.undefined
     
-    var normalize: js.UndefOr[Boolean] = js.native
+    var normalize: js.UndefOr[Boolean] = js.undefined
     
-    var normalizeTags: js.UndefOr[Boolean] = js.native
+    var normalizeTags: js.UndefOr[Boolean] = js.undefined
     
-    var preserveChildrenOrder: js.UndefOr[Boolean] = js.native
+    var preserveChildrenOrder: js.UndefOr[Boolean] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
-    var tagNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, _]]] = js.native
+    var tagNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, js.Any]]] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
     
-    var validator: js.UndefOr[js.Function] = js.native
+    var validator: js.UndefOr[js.Function] = js.undefined
     
-    var valueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, _]]] = js.native
+    var valueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]] = js.undefined
     
-    var xmlns: js.UndefOr[Boolean] = js.native
+    var xmlns: js.UndefOr[Boolean] = js.undefined
   }
   object ParserOptions {
     
@@ -456,7 +523,7 @@ object mod {
       def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       @scala.inline
-      def setAttrNameProcessors(value: js.Array[js.Function1[/* name */ String, _]]): Self = StObject.set(x, "attrNameProcessors", value.asInstanceOf[js.Any])
+      def setAttrNameProcessors(value: js.Array[js.Function1[/* name */ String, js.Any]]): Self = StObject.set(x, "attrNameProcessors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAttrNameProcessorsUndefined: Self = StObject.set(x, "attrNameProcessors", js.undefined)
@@ -465,7 +532,7 @@ object mod {
       def setAttrNameProcessorsVarargs(value: (js.Function1[/* name */ String, js.Any])*): Self = StObject.set(x, "attrNameProcessors", js.Array(value :_*))
       
       @scala.inline
-      def setAttrValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, _]]): Self = StObject.set(x, "attrValueProcessors", value.asInstanceOf[js.Any])
+      def setAttrValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]): Self = StObject.set(x, "attrValueProcessors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAttrValueProcessorsUndefined: Self = StObject.set(x, "attrValueProcessors", js.undefined)
@@ -576,7 +643,7 @@ object mod {
       def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
       @scala.inline
-      def setTagNameProcessors(value: js.Array[js.Function1[/* name */ String, _]]): Self = StObject.set(x, "tagNameProcessors", value.asInstanceOf[js.Any])
+      def setTagNameProcessors(value: js.Array[js.Function1[/* name */ String, js.Any]]): Self = StObject.set(x, "tagNameProcessors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagNameProcessorsUndefined: Self = StObject.set(x, "tagNameProcessors", js.undefined)
@@ -597,7 +664,7 @@ object mod {
       def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
       
       @scala.inline
-      def setValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, _]]): Self = StObject.set(x, "valueProcessors", value.asInstanceOf[js.Any])
+      def setValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]): Self = StObject.set(x, "valueProcessors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueProcessorsUndefined: Self = StObject.set(x, "valueProcessors", js.undefined)
@@ -613,14 +680,13 @@ object mod {
     }
   }
   
-  @js.native
   trait RenderOptions extends StObject {
     
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
-    var newline: js.UndefOr[String] = js.native
+    var newline: js.UndefOr[String] = js.undefined
     
-    var pretty: js.UndefOr[Boolean] = js.native
+    var pretty: js.UndefOr[Boolean] = js.undefined
   }
   object RenderOptions {
     
@@ -653,14 +719,13 @@ object mod {
     }
   }
   
-  @js.native
   trait XmlDeclarationAttributes extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var standalone: js.UndefOr[Boolean] = js.native
+    var standalone: js.UndefOr[Boolean] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object XmlDeclarationAttributes {
     
@@ -690,6 +755,5 @@ object mod {
     }
   }
   
-  @js.native
   trait convertableToString extends StObject
 }

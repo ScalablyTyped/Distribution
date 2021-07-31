@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object endpointSliceMod {
@@ -28,7 +27,7 @@ object endpointSliceMod {
       */
     def this(name: String) = this()
     def this(name: String, args: EndpointSliceArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: EndpointSliceArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -64,6 +63,10 @@ object endpointSliceMod {
   /* static members */
   object EndpointSlice {
     
+    @JSImport("@pulumi/kubernetes/discovery/v1beta1/endpointSlice", "EndpointSlice")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EndpointSlice resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -72,49 +75,45 @@ object endpointSliceMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/discovery/v1beta1/endpointSlice", "EndpointSlice.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EndpointSlice = js.native
-    @JSImport("@pulumi/kubernetes/discovery/v1beta1/endpointSlice", "EndpointSlice.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): EndpointSlice = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EndpointSlice = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EndpointSlice]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): EndpointSlice = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointSlice]
     
     /**
       * Returns true if the given object is an instance of EndpointSlice.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/discovery/v1beta1/endpointSlice", "EndpointSlice.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSlice.EndpointSlice */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSlice.EndpointSlice */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSlice.EndpointSlice */ Boolean]
   }
   
-  @js.native
   trait EndpointSliceArgs extends StObject {
     
     /**
       * addressType specifies the type of address carried by this EndpointSlice. All addresses in this slice must be the same type. This field is immutable after creation. The following address types are currently supported: * IPv4: Represents an IPv4 Address. * IPv6: Represents an IPv6 Address. * FQDN: Represents a Fully Qualified Domain Name.
       */
-    val addressType: Input[String] = js.native
+    val addressType: Input[String]
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[discoveryDotk8sDotioSlashv1beta1]] = js.native
+    val apiVersion: js.UndefOr[Input[discoveryDotk8sDotioSlashv1beta1]] = js.undefined
     
     /**
       * endpoints is a list of unique endpoints in this slice. Each slice may include a maximum of 1000 endpoints.
       */
-    val endpoints: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.discovery.v1beta1.Endpoint]]] = js.native
+    val endpoints: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.discovery.v1beta1.Endpoint]]]
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.EndpointSlice]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.EndpointSlice]] = js.undefined
     
     /**
       * Standard object's metadata.
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
     
     /**
       * ports specifies the list of network ports exposed by each endpoint in this slice. Each port must have a unique name. When ports is empty, it indicates that there are no defined ports. When a port is defined with a nil port value, it indicates "all ports". Each slice may include a maximum of 100 ports.
@@ -123,7 +122,7 @@ object endpointSliceMod {
         Input[
           js.Array[Input[typings.pulumiKubernetes.inputMod.discovery.v1beta1.EndpointPort]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object EndpointSliceArgs {
     

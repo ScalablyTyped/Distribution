@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VeevaConnectorProfileProperties extends StObject {
   
   /**
     *  The location of the Veeva resource. 
     */
-  var instanceUrl: InstanceUrl = js.native
+  var instanceUrl: InstanceUrl
 }
 object VeevaConnectorProfileProperties {
   

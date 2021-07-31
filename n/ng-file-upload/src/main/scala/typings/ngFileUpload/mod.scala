@@ -12,7 +12,6 @@ import typings.std.File
 import typings.std.ProgressEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -31,26 +30,25 @@ object mod extends Shortcut {
     
     object angularFileUpload {
       
-      @js.native
       trait FileResizeOptions extends StObject {
         
-        var centerCrop: js.UndefOr[Boolean] = js.native
+        var centerCrop: js.UndefOr[Boolean] = js.undefined
         
-        var height: js.UndefOr[Double] = js.native
+        var height: js.UndefOr[Double] = js.undefined
         
-        var pattern: js.UndefOr[String] = js.native
+        var pattern: js.UndefOr[String] = js.undefined
         
-        var quality: js.UndefOr[Double] = js.native
+        var quality: js.UndefOr[Double] = js.undefined
         
-        var ratio: js.UndefOr[Double | String] = js.native
+        var ratio: js.UndefOr[Double | String] = js.undefined
         
-        var resizeIf: js.UndefOr[ResizeIfFunction] = js.native
+        var resizeIf: js.UndefOr[ResizeIfFunction] = js.undefined
         
-        var restoreExif: js.UndefOr[Boolean] = js.native
+        var restoreExif: js.UndefOr[Boolean] = js.undefined
         
-        var `type`: js.UndefOr[String] = js.native
+        var `type`: js.UndefOr[String] = js.undefined
         
-        var width: js.UndefOr[Double] = js.native
+        var width: js.UndefOr[Double] = js.undefined
       }
       object FileResizeOptions {
         
@@ -119,92 +117,91 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait FileUploadOptions extends StObject {
         
         /**
           * Standard HTML accept attr, browser specific select popup window
           * @type {string}
           */
-        var ngfAccept: js.UndefOr[String] = js.native
+        var ngfAccept: js.UndefOr[String] = js.undefined
         
         /**
           * Default true, allow dropping files only for Chrome webkit browser
           * @type {boolean}
           */
-        var ngfAllowDir: js.UndefOr[Boolean] = js.native
+        var ngfAllowDir: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Default false, enable firefox image paste by making element contenteditable
           * @type {boolean}
           */
-        var ngfEnableFirefoxPaste: js.UndefOr[Boolean] = js.native
+        var ngfEnableFirefoxPaste: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Default false, hides element if file drag&drop is not
           * @type {boolean}
           */
-        var ngfHideOnDropNotAvailable: js.UndefOr[Boolean] = js.native
+        var ngfHideOnDropNotAvailable: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Validate error name: maxDuration
           * @type {(number|string)}
           */
-        var ngfMaxDuration: js.UndefOr[Double | String] = js.native
+        var ngfMaxDuration: js.UndefOr[Double | String] = js.undefined
         
         /**
           * Maximum number of files allowed to be selected or dropped, validate error name: maxFiles
           * @type {number}
           */
-        var ngfMaxFiles: js.UndefOr[Double] = js.native
+        var ngfMaxFiles: js.UndefOr[Double] = js.undefined
         
         /**
           * Validate error name: maxSize
           * @type {(number|string)}
           */
-        var ngfMaxSize: js.UndefOr[Double | String] = js.native
+        var ngfMaxSize: js.UndefOr[Double | String] = js.undefined
         
         /**
           * Validate error name: maxTotalSize
           * @type {(number|string)}
           */
-        var ngfMaxTotalSize: js.UndefOr[Double | String] = js.native
+        var ngfMaxTotalSize: js.UndefOr[Double | String] = js.undefined
         
         /**
           * Validate error name: minDuration
           * @type {(number|string)}
           */
-        var ngfMinDuration: js.UndefOr[Double | String] = js.native
+        var ngfMinDuration: js.UndefOr[Double | String] = js.undefined
         
         /**
           * Validate error name: minRatio
           * @type {(number|string)}
           */
-        var ngfMinRatio: js.UndefOr[Double | String] = js.native
+        var ngfMinRatio: js.UndefOr[Double | String] = js.undefined
         
         /**
           * Validate error name: minSize
           * @type {(number|string)}
           */
-        var ngfMinSize: js.UndefOr[Double | String] = js.native
+        var ngfMinSize: js.UndefOr[Double | String] = js.undefined
         
         /**
           * Allows selecting multiple files
           * @type {boolean}
           */
-        var ngfMultiple: js.UndefOr[Boolean] = js.native
+        var ngfMultiple: js.UndefOr[Boolean] = js.undefined
         
         /**
           * List of comma separated valid aspect ratio of images in float or 2:3 format
           * @type {string}
           */
-        var ngfRatio: js.UndefOr[String] = js.native
+        var ngfRatio: js.UndefOr[String] = js.undefined
         
         /**
           * Default false, whether to propagate drag/drop events.
           * @type {boolean}
           */
-        var ngfStopPropagation: js.UndefOr[Boolean] = js.native
+        var ngfStopPropagation: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Default false, if true file.$error will be set if the dimension or duration
@@ -212,7 +209,7 @@ object mod extends Shortcut {
           * By default it would assume the file is valid if the duration or dimension cannot be calculated by the browser.
           * @type {boolean}
           */
-        var ngfValidateForce: js.UndefOr[Boolean] = js.native
+        var ngfValidateForce: js.UndefOr[Boolean] = js.undefined
       }
       object FileUploadOptions {
         
@@ -318,13 +315,16 @@ object mod extends Shortcut {
       }
       
       @js.native
-      trait IFileProgressEvent extends ProgressEvent[EventTarget] {
+      trait IFileProgressEvent
+        extends StObject
+           with ProgressEvent[EventTarget] {
         
         var config: IFileUploadConfigFile = js.native
       }
       
-      @js.native
-      trait IFileUploadConfigFile extends IRequestConfig {
+      trait IFileUploadConfigFile
+        extends StObject
+           with IRequestConfig {
         
         /**
           * This is to accommodate server implementations expecting array data object keys in '[i]' or '[]' or
@@ -333,13 +333,13 @@ object mod extends Shortcut {
           * data: {rec: {rec: [f[0], f[1], ...], arrayKey: '[]'} sent as: rec[] -> f[0], rec[] -> f[1],...
           * @type {string}
           */
-        var arrayKey: js.UndefOr[String] = js.native
+        var arrayKey: js.UndefOr[String] = js.undefined
         
         /**
           * Default false, experimental as hotfix for potential library conflicts with other plugins
           * @type {boolean}
           */
-        var disableProgress: js.UndefOr[Boolean] = js.native
+        var disableProgress: js.UndefOr[Boolean] = js.undefined
         
         /**
           * This is to accommodate server implementations expecting nested data object keys in .key or [key] format.
@@ -347,31 +347,31 @@ object mod extends Shortcut {
           * data: {rec: {name: 'N', pic: file}, objectKey: '.k'} sent as: rec.name -> N, rec.pic -> file
           * @type {string}
           */
-        var objectKey: js.UndefOr[String] = js.native
+        var objectKey: js.UndefOr[String] = js.undefined
         
         /**
           * Upload in chunks of specified size
           * @type {(number|string)}
           */
-        var resumeChunkSize: js.UndefOr[Double | String] = js.native
+        var resumeChunkSize: js.UndefOr[Double | String] = js.undefined
         
         /**
           * Function that returns a prommise which will be resolved to the upload file size on the server.
           * @type {[type]}
           */
-        var resumeSize: js.UndefOr[Function] = js.native
+        var resumeSize: js.UndefOr[Function] = js.undefined
         
         /**
           * Reads the uploaded file size from resumeSizeUrl GET response
           * @type {Function}
           */
-        var resumeSizeResponseReader: js.UndefOr[Function] = js.native
+        var resumeSizeResponseReader: js.UndefOr[Function] = js.undefined
         
         /**
           * Uploaded file size so far on the server
           * @type {string}
           */
-        var resumeSizeUrl: js.UndefOr[String] = js.native
+        var resumeSizeUrl: js.UndefOr[String] = js.undefined
       }
       object IFileUploadConfigFile {
         
@@ -429,7 +429,9 @@ object mod extends Shortcut {
       }
       
       @js.native
-      trait IUploadPromise[T] extends IPromise[IHttpResponse[T]] {
+      trait IUploadPromise[T]
+        extends StObject
+           with IPromise[IHttpResponse[T]] {
         
         /**
           * Cancel/abort the upload in progress.
@@ -568,12 +570,11 @@ object mod extends Shortcut {
         def upload[T](config: IFileUploadConfigFile): IUploadPromise[T] = js.native
       }
       
-      @js.native
       trait ImageDimensions extends StObject {
         
-        var height: Double = js.native
+        var height: Double
         
-        var width: Double = js.native
+        var width: Double
       }
       object ImageDimensions {
         

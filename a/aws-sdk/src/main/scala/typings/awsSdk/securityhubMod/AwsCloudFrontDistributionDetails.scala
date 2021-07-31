@@ -2,66 +2,64 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCloudFrontDistributionDetails extends StObject {
   
   /**
     * Provides information about the cache configuration for the distribution.
     */
-  var CacheBehaviors: js.UndefOr[AwsCloudFrontDistributionCacheBehaviors] = js.native
+  var CacheBehaviors: js.UndefOr[AwsCloudFrontDistributionCacheBehaviors] = js.undefined
   
   /**
     * The default cache behavior for the configuration.
     */
-  var DefaultCacheBehavior: js.UndefOr[AwsCloudFrontDistributionDefaultCacheBehavior] = js.native
+  var DefaultCacheBehavior: js.UndefOr[AwsCloudFrontDistributionDefaultCacheBehavior] = js.undefined
   
   /**
     * The object that CloudFront sends in response to requests from the origin (for example, index.html) when a viewer requests the root URL for the distribution (http://www.example.com) instead of an object in your distribution (http://www.example.com/product-description.html). 
     */
-  var DefaultRootObject: js.UndefOr[NonEmptyString] = js.native
+  var DefaultRootObject: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The domain name corresponding to the distribution.
     */
-  var DomainName: js.UndefOr[NonEmptyString] = js.native
+  var DomainName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The entity tag is a hash of the object.
     */
-  var ETag: js.UndefOr[NonEmptyString] = js.native
+  var ETag: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates when that the distribution was last modified. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var LastModifiedTime: js.UndefOr[NonEmptyString] = js.native
+  var LastModifiedTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A complex type that controls whether access logs are written for the distribution.
     */
-  var Logging: js.UndefOr[AwsCloudFrontDistributionLogging] = js.native
+  var Logging: js.UndefOr[AwsCloudFrontDistributionLogging] = js.undefined
   
   /**
     * Provides information about the origin groups in the distribution.
     */
-  var OriginGroups: js.UndefOr[AwsCloudFrontDistributionOriginGroups] = js.native
+  var OriginGroups: js.UndefOr[AwsCloudFrontDistributionOriginGroups] = js.undefined
   
   /**
     * A complex type that contains information about origins for this distribution.
     */
-  var Origins: js.UndefOr[AwsCloudFrontDistributionOrigins] = js.native
+  var Origins: js.UndefOr[AwsCloudFrontDistributionOrigins] = js.undefined
   
   /**
     * Indicates the current status of the distribution.
     */
-  var Status: js.UndefOr[NonEmptyString] = js.native
+  var Status: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A unique identifier that specifies the AWS WAF web ACL, if any, to associate with this distribution.
     */
-  var WebAclId: js.UndefOr[NonEmptyString] = js.native
+  var WebAclId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsCloudFrontDistributionDetails {
   

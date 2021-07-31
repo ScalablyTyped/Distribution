@@ -2,7 +2,6 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,20 +10,20 @@ trait Modules extends StObject {
   def apply(Index: js.Any): js.Any = js.native
   
   def Add(): Module = js.native
-  def Add(Before: js.UndefOr[scala.Nothing], After: js.UndefOr[scala.Nothing], Count: js.Any): Module = js.native
-  def Add(Before: js.UndefOr[scala.Nothing], After: js.Any): Module = js.native
-  def Add(Before: js.UndefOr[scala.Nothing], After: js.Any, Count: js.Any): Module = js.native
   def Add(Before: js.Any): Module = js.native
-  def Add(Before: js.Any, After: js.UndefOr[scala.Nothing], Count: js.Any): Module = js.native
   def Add(Before: js.Any, After: js.Any): Module = js.native
   def Add(Before: js.Any, After: js.Any, Count: js.Any): Module = js.native
+  def Add(Before: js.Any, After: Unit, Count: js.Any): Module = js.native
+  def Add(Before: Unit, After: js.Any): Module = js.native
+  def Add(Before: Unit, After: js.Any, Count: js.Any): Module = js.native
+  def Add(Before: Unit, After: Unit, Count: js.Any): Module = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
   def Copy(): Unit = js.native
-  def Copy(Before: js.UndefOr[scala.Nothing], After: js.Any): Unit = js.native
   def Copy(Before: js.Any): Unit = js.native
   def Copy(Before: js.Any, After: js.Any): Unit = js.native
+  def Copy(Before: Unit, After: js.Any): Unit = js.native
   
   val Count: Double = js.native
   
@@ -39,9 +38,9 @@ trait Modules extends StObject {
   def Item(Index: js.Any): js.Any = js.native
   
   def Move(): Unit = js.native
-  def Move(Before: js.UndefOr[scala.Nothing], After: js.Any): Unit = js.native
   def Move(Before: js.Any): Unit = js.native
   def Move(Before: js.Any, After: js.Any): Unit = js.native
+  def Move(Before: Unit, After: js.Any): Unit = js.native
   
   val Parent: js.Any = js.native
   

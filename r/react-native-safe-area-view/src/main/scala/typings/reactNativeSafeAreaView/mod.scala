@@ -1,6 +1,5 @@
 package typings.reactNativeSafeAreaView
 
-import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
@@ -13,10 +12,13 @@ import typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.right
 import typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("react-native-safe-area-view", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-native-safe-area-view", JSImport.Default)
@@ -42,44 +44,35 @@ object mod extends Shortcut {
   @js.native
   val SafeAreaView: ComponentClass[SafeAreaViewProps, ComponentState] = js.native
   
-  @JSImport("react-native-safe-area-view", "getInset")
-  @js.native
-  def getInset_bottom(key: bottom): Double = js.native
-  @JSImport("react-native-safe-area-view", "getInset")
-  @js.native
-  def getInset_bottom(key: bottom, isLandscape: Boolean): Double = js.native
-  @JSImport("react-native-safe-area-view", "getInset")
-  @js.native
-  def getInset_left(key: left): Double = js.native
-  @JSImport("react-native-safe-area-view", "getInset")
-  @js.native
-  def getInset_left(key: left, isLandscape: Boolean): Double = js.native
-  @JSImport("react-native-safe-area-view", "getInset")
-  @js.native
-  def getInset_right(key: right): Double = js.native
-  @JSImport("react-native-safe-area-view", "getInset")
-  @js.native
-  def getInset_right(key: right, isLandscape: Boolean): Double = js.native
-  @JSImport("react-native-safe-area-view", "getInset")
-  @js.native
-  def getInset_top(key: top): Double = js.native
-  @JSImport("react-native-safe-area-view", "getInset")
-  @js.native
-  def getInset_top(key: top, isLandscape: Boolean): Double = js.native
+  @scala.inline
+  def getInset_bottom(key: bottom): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getInset_bottom(key: bottom, isLandscape: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any], isLandscape.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-native-safe-area-view", "getStatusBarHeight")
-  @js.native
-  def getStatusBarHeight(): Double = js.native
-  @JSImport("react-native-safe-area-view", "getStatusBarHeight")
-  @js.native
-  def getStatusBarHeight(isLandscape: Boolean): Double = js.native
+  @scala.inline
+  def getInset_left(key: left): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getInset_left(key: left, isLandscape: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any], isLandscape.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-native-safe-area-view", "withSafeArea")
-  @js.native
-  def withSafeArea[P /* <: js.Object */](): js.Function1[/* Component */ ComponentType[P], ComponentType[P with SafeAreaViewProps]] = js.native
-  @JSImport("react-native-safe-area-view", "withSafeArea")
-  @js.native
-  def withSafeArea[P /* <: js.Object */](safeAreaViewProps: SafeAreaViewProps): js.Function1[/* Component */ ComponentType[P], ComponentType[P with SafeAreaViewProps]] = js.native
+  @scala.inline
+  def getInset_right(key: right): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getInset_right(key: right, isLandscape: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any], isLandscape.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def getInset_top(key: top): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getInset_top(key: top, isLandscape: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any], isLandscape.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def getStatusBarHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")().asInstanceOf[Double]
+  @scala.inline
+  def getStatusBarHeight(isLandscape: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")(isLandscape.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def withSafeArea[P /* <: js.Object */](): js.Function1[/* Component */ ComponentType[P], ComponentType[P & SafeAreaViewProps]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")().asInstanceOf[js.Function1[/* Component */ ComponentType[P], ComponentType[P & SafeAreaViewProps]]]
+  @scala.inline
+  def withSafeArea[P /* <: js.Object */](safeAreaViewProps: SafeAreaViewProps): js.Function1[/* Component */ ComponentType[P], ComponentType[P & SafeAreaViewProps]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")(safeAreaViewProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ ComponentType[P], ComponentType[P & SafeAreaViewProps]]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.always
@@ -95,10 +88,11 @@ object mod extends Shortcut {
     def never: typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.never = "never".asInstanceOf[typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.never]
   }
   
-  @js.native
-  trait SafeAreaViewProps extends ViewProps {
+  trait SafeAreaViewProps
+    extends StObject
+       with ViewProps {
     
-    var forceInset: js.UndefOr[Bottom] = js.native
+    var forceInset: js.UndefOr[Bottom] = js.undefined
   }
   object SafeAreaViewProps {
     
@@ -118,9 +112,4 @@ object mod extends Shortcut {
       def setForceInsetUndefined: Self = StObject.set(x, "forceInset", js.undefined)
     }
   }
-  
-  type _To = ComponentClass[SafeAreaViewProps, ComponentState]
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: ComponentClass[SafeAreaViewProps, ComponentState] = default
 }

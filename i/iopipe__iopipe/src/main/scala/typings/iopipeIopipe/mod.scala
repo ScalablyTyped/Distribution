@@ -2,49 +2,49 @@ package typings.iopipeIopipe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@iopipe/iopipe", JSImport.Namespace)
-  @js.native
-  def apply(): FunctionWrapper = js.native
-  @JSImport("@iopipe/iopipe", JSImport.Namespace)
-  @js.native
-  def apply(config: LibraryConfig): FunctionWrapper = js.native
+  @scala.inline
+  def apply(): FunctionWrapper = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FunctionWrapper]
+  @scala.inline
+  def apply(config: LibraryConfig): FunctionWrapper = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[FunctionWrapper]
   
-  @JSImport("@iopipe/iopipe", "label")
+  @JSImport("@iopipe/iopipe", JSImport.Namespace)
   @js.native
-  def label(label: String): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def label(label: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("label")(label.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object mark {
     
-    @JSImport("@iopipe/iopipe", "mark.end")
+    @JSImport("@iopipe/iopipe", "mark")
     @js.native
-    def end(label: String): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@iopipe/iopipe", "mark.start")
-    @js.native
-    def start(label: String): Unit = js.native
+    @scala.inline
+    def end(label: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("end")(label.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def start(label: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(label.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("@iopipe/iopipe", "metric")
-  @js.native
-  def metric(label: String, value: Double): Unit = js.native
+  @scala.inline
+  def metric(label: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("metric")(label.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type FunctionWrapper = js.Function1[/* handler */ js.Any, js.Any]
   
-  @js.native
   trait LibraryConfig extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var networkTimeout: js.UndefOr[Double] = js.native
+    var networkTimeout: js.UndefOr[Double] = js.undefined
     
-    var timeoutWindow: js.UndefOr[Double] = js.native
+    var timeoutWindow: js.UndefOr[Double] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
   }
   object LibraryConfig {
     

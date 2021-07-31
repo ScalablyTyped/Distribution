@@ -11,8 +11,8 @@ Chunk string into equal substrings with unicode support
 | Full name          | fast-chunk-string |
 | Keywords           | string, split, chunk, unicode, utf, utf8, substring |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 207749 |
+| # dependents       | 1 |
+| # downloads        | 207989 |
 | # stars            | 0 |
 
 ## Links

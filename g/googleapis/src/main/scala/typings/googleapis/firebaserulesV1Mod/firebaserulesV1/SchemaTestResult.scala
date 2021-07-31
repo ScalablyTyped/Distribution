@@ -2,14 +2,12 @@ package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Test result message containing the state of the test as well as a
   * description and source position for test failures.
   */
-@js.native
 trait SchemaTestResult extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaTestResult extends StObject {
     * evaluation.  For example: ```Unable to read variable [name:
     * &quot;resource&quot;]```
     */
-  var debugMessages: js.UndefOr[js.Array[String]] = js.native
+  var debugMessages: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Position in the `Source` or `Ruleset` where the principle runtime error
@@ -28,7 +26,7 @@ trait SchemaTestResult extends StObject {
     * valid. When there is a `DENY` with an error, the `SourcePosition` is
     * returned.  E.g. `error_position { line: 19 column: 37 }`
     */
-  var errorPosition: js.UndefOr[SchemaSourcePosition] = js.native
+  var errorPosition: js.UndefOr[SchemaSourcePosition] = js.undefined
   
   /**
     * The set of function calls made to service-defined methods.  Function
@@ -36,18 +34,18 @@ trait SchemaTestResult extends StObject {
     * evaluation, are provided for both mocked and unmocked functions, and
     * included on the response regardless of the test `state`.
     */
-  var functionCalls: js.UndefOr[js.Array[SchemaFunctionCall]] = js.native
+  var functionCalls: js.UndefOr[js.Array[SchemaFunctionCall]] = js.undefined
   
   /**
     * State of the test.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * The set of visited expressions for a given test. This returns positions
     * and evaluation results of all visited expressions.
     */
-  var visitedExpressions: js.UndefOr[js.Array[SchemaVisitedExpression]] = js.native
+  var visitedExpressions: js.UndefOr[js.Array[SchemaVisitedExpression]] = js.undefined
 }
 object SchemaTestResult {
   

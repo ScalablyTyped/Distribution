@@ -4,67 +4,65 @@ import typings.maximMazurokGapiClientBooks.gapi.client.books.ReadingPosition
 import typings.maximMazurokGapiClientBooks.gapi.client.books.Review
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcquiredTime extends StObject {
   
   /** Timestamp when this volume was acquired by the user. (RFC 3339 UTC date-time format) Acquiring includes purchase, user upload, receiving family sharing, etc. */
-  var acquiredTime: js.UndefOr[String] = js.native
+  var acquiredTime: js.UndefOr[String] = js.undefined
   
   /** How this volume was acquired. */
-  var acquisitionType: js.UndefOr[Double] = js.native
+  var acquisitionType: js.UndefOr[Double] = js.undefined
   
   /** Copy/Paste accounting information. */
-  var copy: js.UndefOr[LimitType] = js.native
+  var copy: js.UndefOr[LimitType] = js.undefined
   
   /** Whether this volume is purchased, sample, pd download etc. */
-  var entitlementType: js.UndefOr[Double] = js.native
+  var entitlementType: js.UndefOr[Double] = js.undefined
   
   /** Information on the ability to share with the family. */
-  var familySharing: js.UndefOr[FamilyRole] = js.native
+  var familySharing: js.UndefOr[FamilyRole] = js.undefined
   
   /** Whether or not the user shared this volume with the family. */
-  var isFamilySharedFromUser: js.UndefOr[Boolean] = js.native
+  var isFamilySharedFromUser: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not the user received this volume through family sharing. */
-  var isFamilySharedToUser: js.UndefOr[Boolean] = js.native
+  var isFamilySharedToUser: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated: Replaced by familySharing. */
-  var isFamilySharingAllowed: js.UndefOr[Boolean] = js.native
+  var isFamilySharingAllowed: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated: Replaced by familySharing. */
-  var isFamilySharingDisabledByFop: js.UndefOr[Boolean] = js.native
+  var isFamilySharingDisabledByFop: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not this volume is currently in "my books." */
-  var isInMyBooks: js.UndefOr[Boolean] = js.native
+  var isInMyBooks: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not this volume was pre-ordered by the authenticated user making the request. (In LITE projection.) */
-  var isPreordered: js.UndefOr[Boolean] = js.native
+  var isPreordered: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not this volume was purchased by the authenticated user making the request. (In LITE projection.) */
-  var isPurchased: js.UndefOr[Boolean] = js.native
+  var isPurchased: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not this volume was user uploaded. */
-  var isUploaded: js.UndefOr[Boolean] = js.native
+  var isUploaded: js.UndefOr[Boolean] = js.undefined
   
   /** The user's current reading position in the volume, if one is available. (In LITE projection.) */
-  var readingPosition: js.UndefOr[ReadingPosition] = js.native
+  var readingPosition: js.UndefOr[ReadingPosition] = js.undefined
   
   /** Period during this book is/was a valid rental. */
-  var rentalPeriod: js.UndefOr[EndUtcSec] = js.native
+  var rentalPeriod: js.UndefOr[EndUtcSec] = js.undefined
   
   /** Whether this book is an active or an expired rental. */
-  var rentalState: js.UndefOr[String] = js.native
+  var rentalState: js.UndefOr[String] = js.undefined
   
   /** This user's review of this volume, if one exists. */
-  var review: js.UndefOr[Review] = js.native
+  var review: js.UndefOr[Review] = js.undefined
   
   /** Timestamp when this volume was last modified by a user action, such as a reading position update, volume purchase or writing a review. (RFC 3339 UTC date-time format). */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
-  var userUploadedVolumeInfo: js.UndefOr[ProcessingState] = js.native
+  var userUploadedVolumeInfo: js.UndefOr[ProcessingState] = js.undefined
 }
 object AcquiredTime {
   

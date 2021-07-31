@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetDefaultBackgroundColorOverrideRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `76` extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[SetDefaultBackgroundColorOverrideRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[SetDefaultBackgroundColorOverrideRequest]]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `76` {
   

@@ -2,19 +2,17 @@ package typings.nopt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cooked extends StObject {
     
-    var cooked: js.Array[String] = js.native
+    var cooked: js.Array[String]
     
-    var original: js.Array[String] = js.native
+    var original: js.Array[String]
     
-    var remain: js.Array[String] = js.native
+    var remain: js.Array[String]
   }
   object Cooked {
     

@@ -7,45 +7,57 @@ import typings.estree.mod.UnaryOperator
 import typings.estree.mod.UpdateOperator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object estreeStrings {
   
   @js.native
-  sealed trait ^ extends BinaryOperator
+  sealed trait ^
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def ^ : ^ = "^".asInstanceOf[^]
   
   @js.native
-  sealed trait `--` extends UpdateOperator
+  sealed trait `--`
+    extends StObject
+       with UpdateOperator
   @scala.inline
   def `--`: `--` = "--".asInstanceOf[`--`]
   
   @js.native
-  sealed trait `-Equalssign` extends AssignmentOperator
+  sealed trait `-Equalssign`
+    extends StObject
+       with AssignmentOperator
   @scala.inline
   def `-Equalssign`: `-Equalssign` = "-=".asInstanceOf[`-Equalssign`]
   
   @js.native
   sealed trait `-_`
-    extends BinaryOperator
+    extends StObject
+       with BinaryOperator
        with UnaryOperator
   @scala.inline
   def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
-  sealed trait Ampersand extends BinaryOperator
+  sealed trait Ampersand
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
   
   @js.native
-  sealed trait AmpersandAmpersand extends LogicalOperator
+  sealed trait AmpersandAmpersand
+    extends StObject
+       with LogicalOperator
   @scala.inline
   def AmpersandAmpersand: AmpersandAmpersand = "&&".asInstanceOf[AmpersandAmpersand]
   
   @js.native
-  sealed trait AmpersandEqualssign extends AssignmentOperator
+  sealed trait AmpersandEqualssign
+    extends StObject
+       with AssignmentOperator
   @scala.inline
   def AmpersandEqualssign: AmpersandEqualssign = "&=".asInstanceOf[AmpersandEqualssign]
   
@@ -75,22 +87,30 @@ object estreeStrings {
   def AssignmentPattern: AssignmentPattern = "AssignmentPattern".asInstanceOf[AssignmentPattern]
   
   @js.native
-  sealed trait Asterisk extends BinaryOperator
+  sealed trait Asterisk
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
-  sealed trait AsteriskAsterisk extends BinaryOperator
+  sealed trait AsteriskAsterisk
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def AsteriskAsterisk: AsteriskAsterisk = "**".asInstanceOf[AsteriskAsterisk]
   
   @js.native
-  sealed trait AsteriskAsteriskEqualssign extends AssignmentOperator
+  sealed trait AsteriskAsteriskEqualssign
+    extends StObject
+       with AssignmentOperator
   @scala.inline
   def AsteriskAsteriskEqualssign: AsteriskAsteriskEqualssign = "**=".asInstanceOf[AsteriskAsteriskEqualssign]
   
   @js.native
-  sealed trait AsteriskEqualssign extends AssignmentOperator
+  sealed trait AsteriskEqualssign
+    extends StObject
+       with AssignmentOperator
   @scala.inline
   def AsteriskEqualssign: AsteriskEqualssign = "*=".asInstanceOf[AsteriskEqualssign]
   
@@ -175,32 +195,44 @@ object estreeStrings {
   def EmptyStatement: EmptyStatement = "EmptyStatement".asInstanceOf[EmptyStatement]
   
   @js.native
-  sealed trait Equalssign extends AssignmentOperator
+  sealed trait Equalssign
+    extends StObject
+       with AssignmentOperator
   @scala.inline
   def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
-  sealed trait EqualssignEqualssign extends BinaryOperator
+  sealed trait EqualssignEqualssign
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
   
   @js.native
-  sealed trait EqualssignEqualssignEqualssign extends BinaryOperator
+  sealed trait EqualssignEqualssignEqualssign
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def EqualssignEqualssignEqualssign: EqualssignEqualssignEqualssign = "===".asInstanceOf[EqualssignEqualssignEqualssign]
   
   @js.native
-  sealed trait Exclamationmark extends UnaryOperator
+  sealed trait Exclamationmark
+    extends StObject
+       with UnaryOperator
   @scala.inline
   def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
   
   @js.native
-  sealed trait ExclamationmarkEqualssign extends BinaryOperator
+  sealed trait ExclamationmarkEqualssign
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   
   @js.native
-  sealed trait ExclamationmarkEqualssignEqualssign extends BinaryOperator
+  sealed trait ExclamationmarkEqualssignEqualssign
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def ExclamationmarkEqualssignEqualssign: ExclamationmarkEqualssignEqualssign = "!==".asInstanceOf[ExclamationmarkEqualssignEqualssign]
   
@@ -255,32 +287,44 @@ object estreeStrings {
   def FunctionExpression: FunctionExpression = "FunctionExpression".asInstanceOf[FunctionExpression]
   
   @js.native
-  sealed trait Greaterthansign extends BinaryOperator
+  sealed trait Greaterthansign
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends BinaryOperator
+  sealed trait GreaterthansignEqualssign
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait GreaterthansignGreaterthansign extends BinaryOperator
+  sealed trait GreaterthansignGreaterthansign
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def GreaterthansignGreaterthansign: GreaterthansignGreaterthansign = ">>".asInstanceOf[GreaterthansignGreaterthansign]
   
   @js.native
-  sealed trait GreaterthansignGreaterthansignEqualssign extends AssignmentOperator
+  sealed trait GreaterthansignGreaterthansignEqualssign
+    extends StObject
+       with AssignmentOperator
   @scala.inline
   def GreaterthansignGreaterthansignEqualssign: GreaterthansignGreaterthansignEqualssign = ">>=".asInstanceOf[GreaterthansignGreaterthansignEqualssign]
   
   @js.native
-  sealed trait GreaterthansignGreaterthansignGreaterthansign extends BinaryOperator
+  sealed trait GreaterthansignGreaterthansignGreaterthansign
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def GreaterthansignGreaterthansignGreaterthansign: GreaterthansignGreaterthansignGreaterthansign = ">>>".asInstanceOf[GreaterthansignGreaterthansignGreaterthansign]
   
   @js.native
-  sealed trait GreaterthansignGreaterthansignGreaterthansignEqualssign extends AssignmentOperator
+  sealed trait GreaterthansignGreaterthansignGreaterthansignEqualssign
+    extends StObject
+       with AssignmentOperator
   @scala.inline
   def GreaterthansignGreaterthansignGreaterthansignEqualssign: GreaterthansignGreaterthansignGreaterthansignEqualssign = ">>>=".asInstanceOf[GreaterthansignGreaterthansignGreaterthansignEqualssign]
   
@@ -325,22 +369,30 @@ object estreeStrings {
   def LabeledStatement: LabeledStatement = "LabeledStatement".asInstanceOf[LabeledStatement]
   
   @js.native
-  sealed trait Lessthansign extends BinaryOperator
+  sealed trait Lessthansign
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait LessthansignEqualssign extends BinaryOperator
+  sealed trait LessthansignEqualssign
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
-  sealed trait LessthansignLessthansign extends BinaryOperator
+  sealed trait LessthansignLessthansign
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def LessthansignLessthansign: LessthansignLessthansign = "<<".asInstanceOf[LessthansignLessthansign]
   
   @js.native
-  sealed trait LessthansignLessthansignEqualssign extends AssignmentOperator
+  sealed trait LessthansignLessthansignEqualssign
+    extends StObject
+       with AssignmentOperator
   @scala.inline
   def LessthansignLessthansignEqualssign: LessthansignLessthansignEqualssign = "<<=".asInstanceOf[LessthansignLessthansignEqualssign]
   
@@ -390,29 +442,38 @@ object estreeStrings {
   def ObjectPattern: ObjectPattern = "ObjectPattern".asInstanceOf[ObjectPattern]
   
   @js.native
-  sealed trait Percentsign extends BinaryOperator
+  sealed trait Percentsign
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
   
   @js.native
-  sealed trait PercentsignEqualssign extends AssignmentOperator
+  sealed trait PercentsignEqualssign
+    extends StObject
+       with AssignmentOperator
   @scala.inline
   def PercentsignEqualssign: PercentsignEqualssign = "%=".asInstanceOf[PercentsignEqualssign]
   
   @js.native
   sealed trait Plussign
-    extends BinaryOperator
+    extends StObject
+       with BinaryOperator
        with UnaryOperator
   @scala.inline
   def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
   @js.native
-  sealed trait PlussignEqualssign extends AssignmentOperator
+  sealed trait PlussignEqualssign
+    extends StObject
+       with AssignmentOperator
   @scala.inline
   def PlussignEqualssign: PlussignEqualssign = "+=".asInstanceOf[PlussignEqualssign]
   
   @js.native
-  sealed trait PlussignPlussign extends UpdateOperator
+  sealed trait PlussignPlussign
+    extends StObject
+       with UpdateOperator
   @scala.inline
   def PlussignPlussign: PlussignPlussign = "++".asInstanceOf[PlussignPlussign]
   
@@ -427,7 +488,9 @@ object estreeStrings {
   def Property: Property = "Property".asInstanceOf[Property]
   
   @js.native
-  sealed trait QuestionmarkQuestionmark extends LogicalOperator
+  sealed trait QuestionmarkQuestionmark
+    extends StObject
+       with LogicalOperator
   @scala.inline
   def QuestionmarkQuestionmark: QuestionmarkQuestionmark = "??".asInstanceOf[QuestionmarkQuestionmark]
   
@@ -447,12 +510,16 @@ object estreeStrings {
   def SequenceExpression: SequenceExpression = "SequenceExpression".asInstanceOf[SequenceExpression]
   
   @js.native
-  sealed trait Slash extends BinaryOperator
+  sealed trait Slash
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def Slash: Slash = "/".asInstanceOf[Slash]
   
   @js.native
-  sealed trait SlashEqualssign extends AssignmentOperator
+  sealed trait SlashEqualssign
+    extends StObject
+       with AssignmentOperator
   @scala.inline
   def SlashEqualssign: SlashEqualssign = "/=".asInstanceOf[SlashEqualssign]
   
@@ -502,7 +569,9 @@ object estreeStrings {
   def ThrowStatement: ThrowStatement = "ThrowStatement".asInstanceOf[ThrowStatement]
   
   @js.native
-  sealed trait Tilde extends UnaryOperator
+  sealed trait Tilde
+    extends StObject
+       with UnaryOperator
   @scala.inline
   def Tilde: Tilde = "~".asInstanceOf[Tilde]
   
@@ -532,17 +601,23 @@ object estreeStrings {
   def VariableDeclarator: VariableDeclarator = "VariableDeclarator".asInstanceOf[VariableDeclarator]
   
   @js.native
-  sealed trait Verticalline extends BinaryOperator
+  sealed trait Verticalline
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
   
   @js.native
-  sealed trait VerticallineEqualssign extends AssignmentOperator
+  sealed trait VerticallineEqualssign
+    extends StObject
+       with AssignmentOperator
   @scala.inline
   def VerticallineEqualssign: VerticallineEqualssign = "|=".asInstanceOf[VerticallineEqualssign]
   
   @js.native
-  sealed trait VerticallineVerticalline extends LogicalOperator
+  sealed trait VerticallineVerticalline
+    extends StObject
+       with LogicalOperator
   @scala.inline
   def VerticallineVerticalline: VerticallineVerticalline = "||".asInstanceOf[VerticallineVerticalline]
   
@@ -562,7 +637,9 @@ object estreeStrings {
   def YieldExpression: YieldExpression = "YieldExpression".asInstanceOf[YieldExpression]
   
   @js.native
-  sealed trait `^Equalssign` extends AssignmentOperator
+  sealed trait `^Equalssign`
+    extends StObject
+       with AssignmentOperator
   @scala.inline
   def `^Equalssign`: `^Equalssign` = "^=".asInstanceOf[`^Equalssign`]
   
@@ -577,7 +654,9 @@ object estreeStrings {
   def constructor: constructor = "constructor".asInstanceOf[constructor]
   
   @js.native
-  sealed trait delete extends UnaryOperator
+  sealed trait delete
+    extends StObject
+       with UnaryOperator
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   
@@ -587,7 +666,9 @@ object estreeStrings {
   def get: get = "get".asInstanceOf[get]
   
   @js.native
-  sealed trait in extends BinaryOperator
+  sealed trait in
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def in: in = "in".asInstanceOf[in]
   
@@ -597,7 +678,9 @@ object estreeStrings {
   def init: init = "init".asInstanceOf[init]
   
   @js.native
-  sealed trait instanceof extends BinaryOperator
+  sealed trait instanceof
+    extends StObject
+       with BinaryOperator
   @scala.inline
   def instanceof: instanceof = "instanceof".asInstanceOf[instanceof]
   
@@ -627,7 +710,9 @@ object estreeStrings {
   def set: set = "set".asInstanceOf[set]
   
   @js.native
-  sealed trait typeof extends UnaryOperator
+  sealed trait typeof
+    extends StObject
+       with UnaryOperator
   @scala.inline
   def typeof: typeof = "typeof".asInstanceOf[typeof]
   
@@ -637,7 +722,9 @@ object estreeStrings {
   def `var`: `var` = "var".asInstanceOf[`var`]
   
   @js.native
-  sealed trait void extends UnaryOperator
+  sealed trait void
+    extends StObject
+       with UnaryOperator
   @scala.inline
   def void: void = "void".asInstanceOf[void]
 }

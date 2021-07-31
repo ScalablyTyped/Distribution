@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteGameServerGroupOutput extends StObject {
   
   /**
     * An object that describes the deleted game server group resource, with status updated to DELETE_SCHEDULED. 
     */
-  var GameServerGroup: js.UndefOr[typings.awsSdk.gameliftMod.GameServerGroup] = js.native
+  var GameServerGroup: js.UndefOr[typings.awsSdk.gameliftMod.GameServerGroup] = js.undefined
 }
 object DeleteGameServerGroupOutput {
   

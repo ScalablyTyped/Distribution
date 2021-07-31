@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tile extends Widget_ {
+trait Tile
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -30,11 +31,15 @@ object Tile {
     
     ///To set the bottomright of tile badge
     @js.native
-    sealed trait Bottomright extends BadgePosition
+    sealed trait Bottomright
+      extends StObject
+         with BadgePosition
     
     ///To set the topright position of tile badge
     @js.native
-    sealed trait Topright extends BadgePosition
+    sealed trait Topright
+      extends StObject
+         with BadgePosition
   }
   
   @js.native
@@ -45,19 +50,27 @@ object Tile {
     
     ///To set the center alignment of text in tile control
     @js.native
-    sealed trait Center extends CaptionAlignment
+    sealed trait Center
+      extends StObject
+         with CaptionAlignment
     
     ///To set the left alignment of text in tile control
     @js.native
-    sealed trait Left extends CaptionAlignment
+    sealed trait Left
+      extends StObject
+         with CaptionAlignment
     
     ///To set the normal alignment of text in tile control
     @js.native
-    sealed trait Normal extends CaptionAlignment
+    sealed trait Normal
+      extends StObject
+         with CaptionAlignment
     
     ///To set the right alignment of text in tile control
     @js.native
-    sealed trait Right extends CaptionAlignment
+    sealed trait Right
+      extends StObject
+         with CaptionAlignment
   }
   
   @js.native
@@ -68,15 +81,21 @@ object Tile {
     
     ///To set the inner bottom position of the tile text
     @js.native
-    sealed trait Innerbottom extends CaptionPosition
+    sealed trait Innerbottom
+      extends StObject
+         with CaptionPosition
     
     ///To set the inner top position of the tile text
     @js.native
-    sealed trait Innertop extends CaptionPosition
+    sealed trait Innertop
+      extends StObject
+         with CaptionPosition
     
     ///To set the outer position of the tile text
     @js.native
-    sealed trait Outer extends CaptionPosition
+    sealed trait Outer
+      extends StObject
+         with CaptionPosition
   }
   
   @js.native
@@ -88,52 +107,62 @@ object Tile {
     ///To set the bottom center position of tile image
     @js.native
     sealed trait BottomCenter
-      extends typings.ejWebAll.ej.Tile.ImagePosition
+      extends StObject
+         with typings.ejWebAll.ej.Tile.ImagePosition
     
     ///To set the bottomleft position of tile image
     @js.native
     sealed trait BottomLeft
-      extends typings.ejWebAll.ej.Tile.ImagePosition
+      extends StObject
+         with typings.ejWebAll.ej.Tile.ImagePosition
     
     ///To set the bottomright position of tile image
     @js.native
     sealed trait BottomRight
-      extends typings.ejWebAll.ej.Tile.ImagePosition
+      extends StObject
+         with typings.ejWebAll.ej.Tile.ImagePosition
     
     ///To set the center position of tile image
     @js.native
     sealed trait Center
-      extends typings.ejWebAll.ej.Tile.ImagePosition
+      extends StObject
+         with typings.ejWebAll.ej.Tile.ImagePosition
     
     ///To set the fill position of tile image
     @js.native
     sealed trait Fill
-      extends typings.ejWebAll.ej.Tile.ImagePosition
+      extends StObject
+         with typings.ejWebAll.ej.Tile.ImagePosition
     
     ///To set the left center position of tile image
     @js.native
     sealed trait LeftCenter
-      extends typings.ejWebAll.ej.Tile.ImagePosition
+      extends StObject
+         with typings.ejWebAll.ej.Tile.ImagePosition
     
     ///To set the right center position of tile image
     @js.native
     sealed trait RightCenter
-      extends typings.ejWebAll.ej.Tile.ImagePosition
+      extends StObject
+         with typings.ejWebAll.ej.Tile.ImagePosition
     
     ///To set the top center position of tile image
     @js.native
     sealed trait TopCenter
-      extends typings.ejWebAll.ej.Tile.ImagePosition
+      extends StObject
+         with typings.ejWebAll.ej.Tile.ImagePosition
     
     ///To set the topleft position of tile image
     @js.native
     sealed trait TopLeft
-      extends typings.ejWebAll.ej.Tile.ImagePosition
+      extends StObject
+         with typings.ejWebAll.ej.Tile.ImagePosition
     
     ///To set the topright position of tile image
     @js.native
     sealed trait TopRight
-      extends typings.ejWebAll.ej.Tile.ImagePosition
+      extends StObject
+         with typings.ejWebAll.ej.Tile.ImagePosition
   }
   
   @js.native
@@ -144,19 +173,27 @@ object Tile {
     
     ///To set the large size for tile control
     @js.native
-    sealed trait Large extends TileSize
+    sealed trait Large
+      extends StObject
+         with TileSize
     
     ///To set the medium size for tile control
     @js.native
-    sealed trait Medium extends TileSize
+    sealed trait Medium
+      extends StObject
+         with TileSize
     
     ///To set the small size for tile control
     @js.native
-    sealed trait Small extends TileSize
+    sealed trait Small
+      extends StObject
+         with TileSize
     
     ///To set the wide size for tile control
     @js.native
-    sealed trait Wide extends TileSize
+    sealed trait Wide
+      extends StObject
+         with TileSize
   }
   
   @js.native
@@ -167,49 +204,54 @@ object Tile {
     
     ///To set carousel type of liveTile for tile control
     @js.native
-    sealed trait Carousel extends liveTileType
+    sealed trait Carousel
+      extends StObject
+         with liveTileType
     
     ///To set flip type of liveTile for tile control
     @js.native
-    sealed trait Flip extends liveTileType
+    sealed trait Flip
+      extends StObject
+         with liveTileType
     
     ///To set slide type of liveTile for tile control
     @js.native
-    sealed trait Slide extends liveTileType
+    sealed trait Slide
+      extends StObject
+         with liveTileType
   }
   
-  @js.native
   trait Badge extends StObject {
     
     /** Specifies whether to enable badge or not.
       * @Default {false}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies maximum value for tile badge.
       * @Default {100}
       */
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies minimum value for tile badge.
       * @Default {1}
       */
-    var minValue: js.UndefOr[Double] = js.native
+    var minValue: js.UndefOr[Double] = js.undefined
     
     /** Sets position for tile badge.
       * @Default {â€œbottomrightâ€}
       */
-    var position: js.UndefOr[BadgePosition | String] = js.native
+    var position: js.UndefOr[BadgePosition | String] = js.undefined
     
     /** Specifies text instead of number for tile badge.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Sets value for tile badge.
       * @Default {1}
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object Badge {
     
@@ -260,33 +302,32 @@ object Tile {
     }
   }
   
-  @js.native
   trait Caption extends StObject {
     
     /** It is used to align the text of a tile.
       * @Default {normal}
       */
-    var alignment: js.UndefOr[CaptionAlignment | String] = js.native
+    var alignment: js.UndefOr[CaptionAlignment | String] = js.undefined
     
     /** Specifies whether the tile text to be shown or hidden.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** sets the icon instead of text.
       * @Default {null}
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /** It is used to specify the caption position like Inner top,  inner bottom and outer.
       * @Default {Innerbottom}
       */
-    var position: js.UndefOr[CaptionPosition | String] = js.native
+    var position: js.UndefOr[CaptionPosition | String] = js.undefined
     
     /** Changes the text of a tile.
       * @Default {Text}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Caption {
     
@@ -331,43 +372,42 @@ object Tile {
     }
   }
   
-  @js.native
   trait LiveTile extends StObject {
     
     /** Specifies whether to enable liveTile or not.
       * @Default {false}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies liveTile images in CSS classes.
       * @Default {null}
       */
-    var imageClass: js.UndefOr[js.Array[_]] = js.native
+    var imageClass: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies liveTile images in templates.
       * @Default {null}
       */
-    var imageTemplateId: js.UndefOr[js.Array[_]] = js.native
+    var imageTemplateId: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies liveTile images in CSS classes.
       * @Default {null}
       */
-    var imageUrl: js.UndefOr[js.Array[_]] = js.native
+    var imageUrl: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Sets the text to each living tile
       * @Default {Null}
       */
-    var text: js.UndefOr[js.Array[_]] = js.native
+    var text: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies liveTile type for Tile. See orientation
       * @Default {flip}
       */
-    var `type`: js.UndefOr[liveTileType | String] = js.native
+    var `type`: js.UndefOr[liveTileType | String] = js.undefined
     
     /** Specifies time interval between two successive liveTile animation
       * @Default {2000}
       */
-    var updateInterval: js.UndefOr[Double] = js.native
+    var updateInterval: js.UndefOr[Double] = js.undefined
   }
   object LiveTile {
     
@@ -387,7 +427,7 @@ object Tile {
       def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
       @scala.inline
-      def setImageClass(value: js.Array[_]): Self = StObject.set(x, "imageClass", value.asInstanceOf[js.Any])
+      def setImageClass(value: js.Array[js.Any]): Self = StObject.set(x, "imageClass", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImageClassUndefined: Self = StObject.set(x, "imageClass", js.undefined)
@@ -396,7 +436,7 @@ object Tile {
       def setImageClassVarargs(value: js.Any*): Self = StObject.set(x, "imageClass", js.Array(value :_*))
       
       @scala.inline
-      def setImageTemplateId(value: js.Array[_]): Self = StObject.set(x, "imageTemplateId", value.asInstanceOf[js.Any])
+      def setImageTemplateId(value: js.Array[js.Any]): Self = StObject.set(x, "imageTemplateId", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImageTemplateIdUndefined: Self = StObject.set(x, "imageTemplateId", js.undefined)
@@ -405,7 +445,7 @@ object Tile {
       def setImageTemplateIdVarargs(value: js.Any*): Self = StObject.set(x, "imageTemplateId", js.Array(value :_*))
       
       @scala.inline
-      def setImageUrl(value: js.Array[_]): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+      def setImageUrl(value: js.Array[js.Any]): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
@@ -414,7 +454,7 @@ object Tile {
       def setImageUrlVarargs(value: js.Any*): Self = StObject.set(x, "imageUrl", js.Array(value :_*))
       
       @scala.inline
-      def setText(value: js.Array[_]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      def setText(value: js.Array[js.Any]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
@@ -436,92 +476,91 @@ object Tile {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Sets allowSelection to  tile.
       * @Default {false}
       */
-    var allowSelection: js.UndefOr[Boolean] = js.native
+    var allowSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the background color to  tile.
       * @Default {null}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Section for badge specific functionalities and it represents the notification for tile items.
       */
-    var badge: js.UndefOr[Badge] = js.native
+    var badge: js.UndefOr[Badge] = js.undefined
     
     /** Section for caption specific functionalities and it represents the notification for tile items.
       */
-    var caption: js.UndefOr[Caption] = js.native
+    var caption: js.UndefOr[Caption] = js.undefined
     
     /** Sets the root class for Tile theme. This cssClass API helps to use custom skinning option for Tile control. By defining the root class using this API, we need to include this root
       * class in CSS.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Saves current model value to browser cookies for state maintains. While refreshing the page retains the model value applies from browser cookies.
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Customize the tile size height.
       * @Default {null}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies Tile imageClass, using this property we can give images for each tile through CSS classes.
       * @Default {null}
       */
-    var imageClass: js.UndefOr[String] = js.native
+    var imageClass: js.UndefOr[String] = js.undefined
     
     /** Specifies the position of tile image.
       * @Default {center}
       */
-    var imagePosition: js.UndefOr[typings.ejWebAll.ej.ImagePosition | String] = js.native
+    var imagePosition: js.UndefOr[typings.ejWebAll.ej.ImagePosition | String] = js.undefined
     
     /** Specifies the tile image in outside of template content.
       * @Default {null}
       */
-    var imageTemplateId: js.UndefOr[String] = js.native
+    var imageTemplateId: js.UndefOr[String] = js.undefined
     
     /** Specifies the URL of tile image.
       * @Default {null}
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Section for liveTile specific functionalities.
       */
-    var liveTile: js.UndefOr[LiveTile] = js.native
+    var liveTile: js.UndefOr[LiveTile] = js.undefined
     
     /** Set the localization culture for Tile Widget.
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Event triggers when the mouseDown happens in the tile
       */
-    var mouseDown: js.UndefOr[js.Function1[/* e */ MouseDownEventArgs, Unit]] = js.native
+    var mouseDown: js.UndefOr[js.Function1[/* e */ MouseDownEventArgs, Unit]] = js.undefined
     
     /** Event triggers when the mouseUp happens in the tile
       */
-    var mouseUp: js.UndefOr[js.Function1[/* e */ MouseUpEventArgs, Unit]] = js.native
+    var mouseUp: js.UndefOr[js.Function1[/* e */ MouseUpEventArgs, Unit]] = js.undefined
     
     /** Sets the rounded corner to  tile.
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the size of a tile.  See tileSize
       * @Default {small}
       */
-    var tileSize: js.UndefOr[TileSize | String] = js.native
+    var tileSize: js.UndefOr[TileSize | String] = js.undefined
     
     /** Customize the tile size width.
       * @Default {null}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -644,28 +683,27 @@ object Tile {
     }
   }
   
-  @js.native
   trait MouseDownEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the index of current tile item
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the tile model
       */
-    var model: js.UndefOr[Boolean] = js.native
+    var model: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current tile text
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[Boolean] = js.native
+    var `type`: js.UndefOr[Boolean] = js.undefined
   }
   object MouseDownEventArgs {
     
@@ -710,28 +748,27 @@ object Tile {
     }
   }
   
-  @js.native
   trait MouseUpEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the index of current tile item
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the tile model
       */
-    var model: js.UndefOr[Boolean] = js.native
+    var model: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current tile text
       */
-    var text: js.UndefOr[Boolean] = js.native
+    var text: js.UndefOr[Boolean] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[Boolean] = js.native
+    var `type`: js.UndefOr[Boolean] = js.undefined
   }
   object MouseUpEventArgs {
     

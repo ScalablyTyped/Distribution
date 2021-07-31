@@ -10,9 +10,9 @@ Javascript Expression Language: Powerful context-based expression parser and eva
 | ------------------ | :-------------: |
 | Full name          | jexl |
 | Keywords           | JSON, expression, evaluator, parser, target, context, jsep, filter, selector |
-| # releases         | 8 |
-| # dependents       | 43 |
-| # downloads        | 504491 |
+| # releases         | 5 |
+| # dependents       | 44 |
+| # downloads        | 626509 |
 | # stars            | 4 |
 
 ## Links

@@ -4,21 +4,20 @@ import typings.fastCsvParse.parserOptionsMod.ParserOptions
 import typings.fastCsvParse.typesMod.Row
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformsMod {
   
   @JSImport("@fast-csv/parse/build/src/transforms", "HeaderTransformer")
   @js.native
-  class HeaderTransformer[O /* <: Row[_] */] protected ()
+  class HeaderTransformer[O /* <: Row[js.Any] */] protected ()
     extends typings.fastCsvParse.headerTransformerMod.HeaderTransformer[O] {
     def this(parserOptions: ParserOptions) = this()
   }
   
   @JSImport("@fast-csv/parse/build/src/transforms", "RowTransformerValidator")
   @js.native
-  class RowTransformerValidator[I /* <: Row[_] */, O /* <: Row[_] */] ()
+  class RowTransformerValidator[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */] ()
     extends typings.fastCsvParse.rowTransformerValidatorMod.RowTransformerValidator[I, O]
   /* static members */
   object RowTransformerValidator {

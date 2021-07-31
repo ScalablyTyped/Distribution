@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCertificateRequest extends StObject {
   
   /**
     * The name of the certificate to delete. Use the GetCertificates action to get a list of certificate names that you can specify.
     */
-  var certificateName: CertificateName = js.native
+  var certificateName: CertificateName
 }
 object DeleteCertificateRequest {
   

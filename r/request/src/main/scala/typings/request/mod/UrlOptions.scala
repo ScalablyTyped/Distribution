@@ -3,13 +3,13 @@ package typings.request.mod
 import typings.node.urlMod.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UrlOptions extends RequiredUriUrl {
+trait UrlOptions
+  extends StObject
+     with RequiredUriUrl {
   
-  var url: String | Url = js.native
+  var url: String | Url
 }
 object UrlOptions {
   

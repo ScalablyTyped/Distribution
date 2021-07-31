@@ -11,8 +11,8 @@ Replace build blocks in HTML. Like useref but done right.
 | Full name          | gulp-html-replace |
 | Keywords           | gulpplugin, html, replace |
 | # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 642386 |
+| # dependents       | 38 |
+| # downloads        | 660781 |
 | # stars            | 80 |
 
 ## Links

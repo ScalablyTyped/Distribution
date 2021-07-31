@@ -11,8 +11,8 @@ A JavaScript 2D vector class with methods for common vector operations
 | Full name          | victor |
 | Keywords           | vector, 2d |
 | # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 117243 |
+| # dependents       | 37 |
+| # downloads        | 115288 |
 | # stars            | 1 |
 
 ## Links

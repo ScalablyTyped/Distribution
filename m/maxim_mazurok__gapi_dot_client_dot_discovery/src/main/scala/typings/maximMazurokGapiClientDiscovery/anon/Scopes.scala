@@ -3,18 +3,16 @@ package typings.maximMazurokGapiClientDiscovery.anon
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scopes extends StObject {
   
   /** Available OAuth 2.0 scopes. */
   var scopes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: {  description :string | undefined}}
-    */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.Scopes with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.Scopes & TopLevel[js.Any]
+  ] = js.undefined
 }
 object Scopes {
   
@@ -31,7 +29,7 @@ object Scopes {
     def setScopes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: {  description :string | undefined}}
-      */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.Scopes with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.Scopes & TopLevel[js.Any]
     ): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     @scala.inline

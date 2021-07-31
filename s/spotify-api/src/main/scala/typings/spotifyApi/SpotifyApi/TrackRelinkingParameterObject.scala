@@ -2,13 +2,11 @@ package typings.spotifyApi.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrackRelinkingParameterObject extends StObject {
   
-  var market: js.UndefOr[String] = js.native
+  var market: js.UndefOr[String] = js.undefined
 }
 object TrackRelinkingParameterObject {
   

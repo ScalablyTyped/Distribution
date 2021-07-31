@@ -2,31 +2,29 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetViolationDetailsRequest extends StObject {
   
   /**
     * The AWS account ID that you want the details for.
     */
-  var MemberAccount: AWSAccountId = js.native
+  var MemberAccount: AWSAccountId
   
   /**
     * The ID of the AWS Firewall Manager policy that you want the details for. This currently only supports security group content audit policies.
     */
-  var PolicyId: typings.awsSdk.fmsMod.PolicyId = js.native
+  var PolicyId: typings.awsSdk.fmsMod.PolicyId
   
   /**
     * The ID of the resource that has violations.
     */
-  var ResourceId: typings.awsSdk.fmsMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.fmsMod.ResourceId
   
   /**
     * The resource type. This is in the format shown in the AWS Resource Types Reference. Supported resource types are: AWS::EC2::Instance, AWS::EC2::NetworkInterface, AWS::EC2::SecurityGroup, AWS::NetworkFirewall::FirewallPolicy, and AWS::EC2::Subnet. 
     */
-  var ResourceType: typings.awsSdk.fmsMod.ResourceType = js.native
+  var ResourceType: typings.awsSdk.fmsMod.ResourceType
 }
 object GetViolationDetailsRequest {
   

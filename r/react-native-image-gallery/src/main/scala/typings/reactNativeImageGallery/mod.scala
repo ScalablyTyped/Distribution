@@ -59,7 +59,6 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -76,300 +75,305 @@ object mod {
   object ScrollState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ScrollState with String] = js.native
+    def apply(value: String): js.UndefOr[ScrollState & String] = js.native
     
     @js.native
-    sealed trait DRAGGING extends ScrollState
-    /* "dragging" */ val DRAGGING: typings.reactNativeImageGallery.mod.ScrollState.DRAGGING with String = js.native
+    sealed trait DRAGGING
+      extends StObject
+         with ScrollState
+    /* "dragging" */ val DRAGGING: typings.reactNativeImageGallery.mod.ScrollState.DRAGGING & String = js.native
     
     @js.native
-    sealed trait IDLE extends ScrollState
-    /* "idle" */ val IDLE: typings.reactNativeImageGallery.mod.ScrollState.IDLE with String = js.native
+    sealed trait IDLE
+      extends StObject
+         with ScrollState
+    /* "idle" */ val IDLE: typings.reactNativeImageGallery.mod.ScrollState.IDLE & String = js.native
     
     @js.native
-    sealed trait SETTLING extends ScrollState
-    /* "settling" */ val SETTLING: typings.reactNativeImageGallery.mod.ScrollState.SETTLING with String = js.native
+    sealed trait SETTLING
+      extends StObject
+         with ScrollState
+    /* "settling" */ val SETTLING: typings.reactNativeImageGallery.mod.ScrollState.SETTLING & String = js.native
   }
   
   /* Inlined react-native-image-gallery.react-native-image-gallery.Omit<react-native.react-native.FlatListProps<react-native-image-gallery.react-native-image-gallery.Image>, 'style' | 'ref' | 'keyExtractor' | 'scrollEnabled' | 'horizontal' | 'data' | 'renderItem' | 'onLayout' | 'contentOffset'> */
-  @js.native
   trait FlatListProps extends StObject {
     
-    var CellRendererComponent: js.UndefOr[ComponentType[_]] = js.native
+    var CellRendererComponent: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
-    var ItemSeparatorComponent: js.UndefOr[ComponentType[_] | Null] = js.native
+    var ItemSeparatorComponent: js.UndefOr[ComponentType[js.Any] | Null] = js.undefined
     
-    var ListEmptyComponent: js.UndefOr[ComponentType[_] | ReactElement | Null] = js.native
+    var ListEmptyComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
     
-    var ListFooterComponent: js.UndefOr[ComponentType[_] | ReactElement | Null] = js.native
+    var ListFooterComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
     
-    var ListFooterComponentStyle: js.UndefOr[ViewStyle | Null] = js.native
+    var ListFooterComponentStyle: js.UndefOr[ViewStyle | Null] = js.undefined
     
-    var ListHeaderComponent: js.UndefOr[ComponentType[_] | ReactElement | Null] = js.native
+    var ListHeaderComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
     
-    var ListHeaderComponentStyle: js.UndefOr[ViewStyle | Null] = js.native
+    var ListHeaderComponentStyle: js.UndefOr[ViewStyle | Null] = js.undefined
     
-    var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.native
+    var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
     
-    var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+    var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
     
-    var accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+    var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
     
-    var accessibilityHint: js.UndefOr[String] = js.native
+    var accessibilityHint: js.UndefOr[String] = js.undefined
     
-    var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+    var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
     
-    var accessibilityLabel: js.UndefOr[String] = js.native
+    var accessibilityLabel: js.UndefOr[String] = js.undefined
     
-    var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+    var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
     
-    var accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+    var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
     
-    var accessibilityState: js.UndefOr[AccessibilityState] = js.native
+    var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
     
-    var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+    var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
     
-    var accessibilityValue: js.UndefOr[AccessibilityValue] = js.native
+    var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
     
-    var accessibilityViewIsModal: js.UndefOr[Boolean] = js.native
+    var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
     
-    var accessible: js.UndefOr[Boolean] = js.native
+    var accessible: js.UndefOr[Boolean] = js.undefined
     
-    var alwaysBounceHorizontal: js.UndefOr[Boolean] = js.native
+    var alwaysBounceHorizontal: js.UndefOr[Boolean] = js.undefined
     
-    var alwaysBounceVertical: js.UndefOr[Boolean] = js.native
+    var alwaysBounceVertical: js.UndefOr[Boolean] = js.undefined
     
-    var automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.native
+    var automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.undefined
     
-    var bounces: js.UndefOr[Boolean] = js.native
+    var bounces: js.UndefOr[Boolean] = js.undefined
     
-    var bouncesZoom: js.UndefOr[Boolean] = js.native
+    var bouncesZoom: js.UndefOr[Boolean] = js.undefined
     
-    var canCancelContentTouches: js.UndefOr[Boolean] = js.native
+    var canCancelContentTouches: js.UndefOr[Boolean] = js.undefined
     
-    var centerContent: js.UndefOr[Boolean] = js.native
+    var centerContent: js.UndefOr[Boolean] = js.undefined
     
-    var collapsable: js.UndefOr[Boolean] = js.native
+    var collapsable: js.UndefOr[Boolean] = js.undefined
     
-    var columnWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var columnWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var contentInset: js.UndefOr[Insets] = js.native
+    var contentInset: js.UndefOr[Insets] = js.undefined
     
-    var contentInsetAdjustmentBehavior: js.UndefOr[automatic | scrollableAxes | never | always] = js.native
+    var contentInsetAdjustmentBehavior: js.UndefOr[automatic | scrollableAxes | never | always] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var decelerationRate: js.UndefOr[fast | normal | Double] = js.native
+    var decelerationRate: js.UndefOr[fast | normal | Double] = js.undefined
     
-    var directionalLockEnabled: js.UndefOr[Boolean] = js.native
+    var directionalLockEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var disableIntervalMomentum: js.UndefOr[Boolean] = js.native
+    var disableIntervalMomentum: js.UndefOr[Boolean] = js.undefined
     
-    var disableScrollViewPanResponder: js.UndefOr[Boolean] = js.native
+    var disableScrollViewPanResponder: js.UndefOr[Boolean] = js.undefined
     
-    var disableVirtualization: js.UndefOr[Boolean] = js.native
+    var disableVirtualization: js.UndefOr[Boolean] = js.undefined
     
-    var endFillColor: js.UndefOr[ColorValue] = js.native
+    var endFillColor: js.UndefOr[ColorValue] = js.undefined
     
-    var extraData: js.UndefOr[js.Any] = js.native
+    var extraData: js.UndefOr[js.Any] = js.undefined
     
-    var fadingEdgeLength: js.UndefOr[Double] = js.native
+    var fadingEdgeLength: js.UndefOr[Double] = js.undefined
     
-    var focusable: js.UndefOr[Boolean] = js.native
+    var focusable: js.UndefOr[Boolean] = js.undefined
     
-    var getItem: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, Image]] = js.native
+    var getItem: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, Image]] = js.undefined
     
-    var getItemCount: js.UndefOr[js.Function1[/* data */ js.Any, Double]] = js.native
+    var getItemCount: js.UndefOr[js.Function1[/* data */ js.Any, Double]] = js.undefined
     
     var getItemLayout: js.UndefOr[
         js.Function2[/* data */ js.UndefOr[js.Array[Image] | Null], /* index */ Double, Index]
-      ] = js.native
+      ] = js.undefined
     
-    var hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
+    var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
     
-    var hitSlop: js.UndefOr[Insets] = js.native
+    var hitSlop: js.UndefOr[Insets] = js.undefined
     
-    var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+    var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
     
     var indicatorStyle: js.UndefOr[
         typings.reactNativeImageGallery.reactNativeImageGalleryStrings.default | black | white
-      ] = js.native
+      ] = js.undefined
     
-    var initialNumToRender: js.UndefOr[Double] = js.native
+    var initialNumToRender: js.UndefOr[Double] = js.undefined
     
-    var initialScrollIndex: js.UndefOr[Double | Null] = js.native
+    var initialScrollIndex: js.UndefOr[Double | Null] = js.undefined
     
-    var invertStickyHeaders: js.UndefOr[Boolean] = js.native
+    var invertStickyHeaders: js.UndefOr[Boolean] = js.undefined
     
-    var inverted: js.UndefOr[Boolean | Null] = js.native
+    var inverted: js.UndefOr[Boolean | Null] = js.undefined
     
-    var isTVSelectable: js.UndefOr[Boolean] = js.native
+    var isTVSelectable: js.UndefOr[Boolean] = js.undefined
     
-    var keyboardDismissMode: js.UndefOr[none | interactive | `on-drag`] = js.native
+    var keyboardDismissMode: js.UndefOr[none | interactive | `on-drag`] = js.undefined
     
-    var keyboardShouldPersistTaps: js.UndefOr[Boolean | always | never | handled] = js.native
+    var keyboardShouldPersistTaps: js.UndefOr[Boolean | always | never | handled] = js.undefined
     
-    var legacyImplementation: js.UndefOr[Boolean] = js.native
+    var legacyImplementation: js.UndefOr[Boolean] = js.undefined
     
-    var listKey: js.UndefOr[String] = js.native
+    var listKey: js.UndefOr[String] = js.undefined
     
-    var maintainVisibleContentPosition: js.UndefOr[Null | AutoscrollToTopThreshold] = js.native
+    var maintainVisibleContentPosition: js.UndefOr[Null | AutoscrollToTopThreshold] = js.undefined
     
-    var maxToRenderPerBatch: js.UndefOr[Double] = js.native
+    var maxToRenderPerBatch: js.UndefOr[Double] = js.undefined
     
-    var maximumZoomScale: js.UndefOr[Double] = js.native
+    var maximumZoomScale: js.UndefOr[Double] = js.undefined
     
-    var minimumZoomScale: js.UndefOr[Double] = js.native
+    var minimumZoomScale: js.UndefOr[Double] = js.undefined
     
-    var nativeID: js.UndefOr[String] = js.native
+    var nativeID: js.UndefOr[String] = js.undefined
     
-    var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.native
+    var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined
     
-    var nestedScrollEnabled: js.UndefOr[Boolean] = js.native
+    var nestedScrollEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var numColumns: js.UndefOr[Double] = js.native
+    var numColumns: js.UndefOr[Double] = js.undefined
     
-    var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.native
+    var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
     
-    var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onContentSizeChange: js.UndefOr[js.Function2[/* w */ Double, /* h */ Double, Unit]] = js.native
+    var onContentSizeChange: js.UndefOr[js.Function2[/* w */ Double, /* h */ Double, Unit]] = js.undefined
     
-    var onEndReached: js.UndefOr[(js.Function1[/* info */ DistanceFromEnd, Unit]) | Null] = js.native
+    var onEndReached: js.UndefOr[(js.Function1[/* info */ DistanceFromEnd, Unit]) | Null] = js.undefined
     
-    var onEndReachedThreshold: js.UndefOr[Double | Null] = js.native
+    var onEndReachedThreshold: js.UndefOr[Double | Null] = js.undefined
     
-    var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+    var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onMomentumScrollBegin: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+    var onMomentumScrollBegin: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
     
-    var onMomentumScrollEnd: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+    var onMomentumScrollEnd: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
     
-    var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onRefresh: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onRefresh: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onScroll: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
     
-    var onScrollAnimationEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onScrollAnimationEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onScrollBeginDrag: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+    var onScrollBeginDrag: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
     
-    var onScrollEndDrag: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+    var onScrollEndDrag: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
     
-    var onScrollToIndexFailed: js.UndefOr[js.Function1[/* info */ AverageItemLength, Unit]] = js.native
+    var onScrollToIndexFailed: js.UndefOr[js.Function1[/* info */ AverageItemLength, Unit]] = js.undefined
     
-    var onScrollToTop: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+    var onScrollToTop: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
     
-    var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onViewableItemsChanged: js.UndefOr[(js.Function1[/* info */ Changed, Unit]) | Null] = js.native
+    var onViewableItemsChanged: js.UndefOr[(js.Function1[/* info */ Changed, Unit]) | Null] = js.undefined
     
-    var overScrollMode: js.UndefOr[auto | always | never] = js.native
+    var overScrollMode: js.UndefOr[auto | always | never] = js.undefined
     
-    var pagingEnabled: js.UndefOr[Boolean] = js.native
+    var pagingEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var persistentScrollbar: js.UndefOr[Boolean] = js.native
+    var persistentScrollbar: js.UndefOr[Boolean] = js.undefined
     
-    var pinchGestureEnabled: js.UndefOr[Boolean] = js.native
+    var pinchGestureEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.native
+    var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
     
-    var progressViewOffset: js.UndefOr[Double] = js.native
+    var progressViewOffset: js.UndefOr[Double] = js.undefined
     
-    var refreshControl: js.UndefOr[ReactElement] = js.native
+    var refreshControl: js.UndefOr[ReactElement] = js.undefined
     
-    var refreshing: js.UndefOr[Boolean | Null] = js.native
+    var refreshing: js.UndefOr[Boolean | Null] = js.undefined
     
-    var removeClippedSubviews: js.UndefOr[Boolean] = js.native
+    var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
     
-    var renderScrollComponent: js.UndefOr[js.Function1[/* props */ ScrollViewProps, ReactElement]] = js.native
+    var renderScrollComponent: js.UndefOr[js.Function1[/* props */ ScrollViewProps, ReactElement]] = js.undefined
     
-    var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.native
+    var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
     
-    var scrollEventThrottle: js.UndefOr[Double] = js.native
+    var scrollEventThrottle: js.UndefOr[Double] = js.undefined
     
-    var scrollIndicatorInsets: js.UndefOr[Insets] = js.native
+    var scrollIndicatorInsets: js.UndefOr[Insets] = js.undefined
     
-    var scrollPerfTag: js.UndefOr[String] = js.native
+    var scrollPerfTag: js.UndefOr[String] = js.undefined
     
-    var scrollToOverflowEnabled: js.UndefOr[Boolean] = js.native
+    var scrollToOverflowEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var scrollsToTop: js.UndefOr[Boolean] = js.native
+    var scrollsToTop: js.UndefOr[Boolean] = js.undefined
     
-    var shouldRasterizeIOS: js.UndefOr[Boolean] = js.native
+    var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
     
-    var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.native
+    var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.native
+    var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var snapToAlignment: js.UndefOr[start | center | end] = js.native
+    var snapToAlignment: js.UndefOr[start | center | end] = js.undefined
     
-    var snapToEnd: js.UndefOr[Boolean] = js.native
+    var snapToEnd: js.UndefOr[Boolean] = js.undefined
     
-    var snapToInterval: js.UndefOr[Double] = js.native
+    var snapToInterval: js.UndefOr[Double] = js.undefined
     
-    var snapToOffsets: js.UndefOr[js.Array[Double]] = js.native
+    var snapToOffsets: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var snapToStart: js.UndefOr[Boolean] = js.native
+    var snapToStart: js.UndefOr[Boolean] = js.undefined
     
-    var stickyHeaderIndices: js.UndefOr[js.Array[Double]] = js.native
+    var stickyHeaderIndices: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var testID: js.UndefOr[String] = js.native
+    var testID: js.UndefOr[String] = js.undefined
     
-    var tvParallaxMagnification: js.UndefOr[Double] = js.native
+    var tvParallaxMagnification: js.UndefOr[Double] = js.undefined
     
-    var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.native
+    var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
     
-    var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.native
+    var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined
     
-    var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.native
+    var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
     
-    var tvParallaxTiltAngle: js.UndefOr[Double] = js.native
+    var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
     
-    var updateCellsBatchingPeriod: js.UndefOr[Double] = js.native
+    var updateCellsBatchingPeriod: js.UndefOr[Double] = js.undefined
     
-    var viewabilityConfig: js.UndefOr[js.Any] = js.native
+    var viewabilityConfig: js.UndefOr[js.Any] = js.undefined
     
-    var viewabilityConfigCallbackPairs: js.UndefOr[ViewabilityConfigCallbackPairs] = js.native
+    var viewabilityConfigCallbackPairs: js.UndefOr[ViewabilityConfigCallbackPairs] = js.undefined
     
-    var windowSize: js.UndefOr[Double] = js.native
+    var windowSize: js.UndefOr[Double] = js.undefined
     
-    var zoomScale: js.UndefOr[Double] = js.native
+    var zoomScale: js.UndefOr[Double] = js.undefined
   }
   object FlatListProps {
     
@@ -503,7 +507,7 @@ object mod {
       def setCanCancelContentTouchesUndefined: Self = StObject.set(x, "canCancelContentTouches", js.undefined)
       
       @scala.inline
-      def setCellRendererComponent(value: ComponentType[_]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
+      def setCellRendererComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCellRendererComponentUndefined: Self = StObject.set(x, "CellRendererComponent", js.undefined)
@@ -689,7 +693,7 @@ object mod {
       def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
       
       @scala.inline
-      def setItemSeparatorComponent(value: ComponentType[_]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
+      def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
@@ -716,7 +720,7 @@ object mod {
       def setLegacyImplementationUndefined: Self = StObject.set(x, "legacyImplementation", js.undefined)
       
       @scala.inline
-      def setListEmptyComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
+      def setListEmptyComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListEmptyComponentNull: Self = StObject.set(x, "ListEmptyComponent", null)
@@ -725,7 +729,7 @@ object mod {
       def setListEmptyComponentUndefined: Self = StObject.set(x, "ListEmptyComponent", js.undefined)
       
       @scala.inline
-      def setListFooterComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
+      def setListFooterComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListFooterComponentNull: Self = StObject.set(x, "ListFooterComponent", null)
@@ -743,7 +747,7 @@ object mod {
       def setListFooterComponentUndefined: Self = StObject.set(x, "ListFooterComponent", js.undefined)
       
       @scala.inline
-      def setListHeaderComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
+      def setListHeaderComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListHeaderComponentNull: Self = StObject.set(x, "ListHeaderComponent", null)
@@ -1265,42 +1269,41 @@ object mod {
   
   type Gallery = PureComponent[Props, js.Object, js.Any]
   
-  @js.native
   trait GestureState extends StObject {
     
-    var _accountsForMovesUpTo: Double = js.native
+    var _accountsForMovesUpTo: Double
     
-    var _singleTabFailed: js.UndefOr[Boolean] = js.native
+    var _singleTabFailed: js.UndefOr[Boolean] = js.undefined
     
-    var doubleTapUp: Boolean = js.native
+    var doubleTapUp: Boolean
     
-    var dx: Double = js.native
+    var dx: Double
     
-    var dy: Double = js.native
+    var dy: Double
     
-    var moveX: Double = js.native
+    var moveX: Double
     
-    var moveY: Double = js.native
+    var moveY: Double
     
-    var numberActiveTouches: Double = js.native
+    var numberActiveTouches: Double
     
-    var pinch: js.UndefOr[Double] = js.native
+    var pinch: js.UndefOr[Double] = js.undefined
     
-    var previousMoveX: Double = js.native
+    var previousMoveX: Double
     
-    var previousMoveY: Double = js.native
+    var previousMoveY: Double
     
-    var previousPinch: js.UndefOr[Double] = js.native
+    var previousPinch: js.UndefOr[Double] = js.undefined
     
-    var singleTapUp: Boolean = js.native
+    var singleTapUp: Boolean
     
-    var vx: Double = js.native
+    var vx: Double
     
-    var vy: Double = js.native
+    var vy: Double
     
-    var x0: Double = js.native
+    var x0: Double
     
-    var y0: Double = js.native
+    var y0: Double
   }
   object GestureState {
     
@@ -1410,12 +1413,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ImageDimensions extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object ImageDimensions {
     
@@ -1436,12 +1438,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait LocalImage extends Image {
+  trait LocalImage
+    extends StObject
+       with Image {
     
-    var dimensions: ImageDimensions = js.native
+    var dimensions: ImageDimensions
     
-    var source: Double = js.native
+    var source: Double
   }
   object LocalImage {
     
@@ -1464,72 +1467,73 @@ object mod {
   
   type Omit[T, K /* <: /* keyof any */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  @js.native
-  trait Props extends ViewProps {
+  trait Props
+    extends StObject
+       with ViewProps {
     
     /**
       * Custom function to render the page of an image that couldn't be displayed
       */
-    var errorComponent: js.UndefOr[js.Function0[ReactNode]] = js.native
+    var errorComponent: js.UndefOr[js.Function0[ReactNode]] = js.undefined
     
     /**
       * Props to be passed to the underlying FlatList
       * @default { windowSize: 3 }
       */
-    var flatListProps: js.UndefOr[FlatListProps] = js.native
+    var flatListProps: js.UndefOr[FlatListProps] = js.undefined
     
     /**
       * Custom function to render your images, 1st param is the image props, 2nd is its dimensions
       */
     var imageComponent: js.UndefOr[
         js.Function2[/* imageProps */ ImageProps, /* imageDimensions */ ImageDimensions, ReactNode]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Your array of images
       */
-    var images: js.Array[Image] = js.native
+    var images: js.Array[Image]
     
     /**
       * Image displayed first
       * @default 0
       */
-    var initialPage: js.UndefOr[Double] = js.native
+    var initialPage: js.UndefOr[Double] = js.undefined
     
     /**
       * Fired after a long press
       */
-    var onLongPress: js.UndefOr[js.Function1[/* state */ GestureState, Unit]] = js.native
+    var onLongPress: js.UndefOr[js.Function1[/* state */ GestureState, Unit]] = js.undefined
     
     /**
       * Scroll event, see scroll state and events
       */
-    var onPageScroll: js.UndefOr[js.Function1[/* event */ ScrollEvent, Unit]] = js.native
+    var onPageScroll: js.UndefOr[js.Function1[/* event */ ScrollEvent, Unit]] = js.undefined
     
     /**
       * Called when page scrolling state has changed, see scroll state and events
       */
-    var onPageScrollStateChanged: js.UndefOr[js.Function1[/* state */ ScrollState, Unit]] = js.native
+    var onPageScrollStateChanged: js.UndefOr[js.Function1[/* state */ ScrollState, Unit]] = js.undefined
     
     /**
       * Fired with the index of page that has been selected
       */
-    var onPageSelected: js.UndefOr[js.Function1[/* page */ Double, Unit]] = js.native
+    var onPageSelected: js.UndefOr[js.Function1[/* page */ Double, Unit]] = js.undefined
     
     /**
       * Fired after a single tap
       */
-    var onSingleTapConfirmed: js.UndefOr[js.Function1[/* page */ Double, Unit]] = js.native
+    var onSingleTapConfirmed: js.UndefOr[js.Function1[/* page */ Double, Unit]] = js.undefined
     
     /**
       * Blank space to show between images
       */
-    var pageMargin: js.UndefOr[Double] = js.native
+    var pageMargin: js.UndefOr[Double] = js.undefined
     
     /**
       * Custom style for the FlatList component
       */
-    var scrollViewStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var scrollViewStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object Props {
     
@@ -1619,12 +1623,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait RemoteImage extends Image {
+  trait RemoteImage
+    extends StObject
+       with Image {
     
-    var dimensions: js.UndefOr[ImageDimensions] = js.native
+    var dimensions: js.UndefOr[ImageDimensions] = js.undefined
     
-    var source: Uri = js.native
+    var source: Uri
   }
   object RemoteImage {
     
@@ -1648,14 +1653,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ScrollEvent extends StObject {
     
-    var fraction: Double = js.native
+    var fraction: Double
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var position: Double = js.native
+    var position: Double
   }
   object ScrollEvent {
     

@@ -2,36 +2,34 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectAggregateResourceConfigRequest extends StObject {
   
   /**
     * The name of the configuration aggregator.
     */
-  var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName = js.native
+  var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName
   
   /**
     * The SQL query SELECT command. 
     */
-  var Expression: typings.awsSdk.configserviceMod.Expression = js.native
+  var Expression: typings.awsSdk.configserviceMod.Expression
   
   /**
     * The maximum number of query results returned on each page. 
     */
-  var Limit: js.UndefOr[typings.awsSdk.configserviceMod.Limit] = js.native
+  var Limit: js.UndefOr[typings.awsSdk.configserviceMod.Limit] = js.undefined
   
   /**
     * The maximum number of query results returned on each page. AWS Config also allows the Limit request parameter.
     */
-  var MaxResults: js.UndefOr[Limit] = js.native
+  var MaxResults: js.UndefOr[Limit] = js.undefined
   
   /**
     * The nextToken string returned in a previous request that you use to request the next page of results in a paginated response. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.undefined
 }
 object SelectAggregateResourceConfigRequest {
   

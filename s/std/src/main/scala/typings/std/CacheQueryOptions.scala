@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheQueryOptions extends StObject {
   
-  var ignoreMethod: js.UndefOr[scala.Boolean] = js.native
+  var ignoreMethod: js.UndefOr[scala.Boolean] = js.undefined
   
-  var ignoreSearch: js.UndefOr[scala.Boolean] = js.native
+  var ignoreSearch: js.UndefOr[scala.Boolean] = js.undefined
   
-  var ignoreVary: js.UndefOr[scala.Boolean] = js.native
+  var ignoreVary: js.UndefOr[scala.Boolean] = js.undefined
 }
 object CacheQueryOptions {
   

@@ -3,7 +3,6 @@ package typings.pixiJs.PIXI
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait AccessibilityManager extends StObject {
   
   /**
@@ -26,41 +24,41 @@ trait AccessibilityManager extends StObject {
     *
     * @param {PIXI.Rectangle} hitArea - Bounds of the child
     */
-  def capHitArea(hitArea: Rectangle): Unit = js.native
+  def capHitArea(hitArea: Rectangle): Unit
   
   /**
     * Setting this to true will visually show the divs.
     *
     * @type {boolean}
     */
-  var debug: Boolean = js.native
+  var debug: Boolean
   
   /**
     * Destroys the accessibility manager
     *
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * A flag
     * @member {boolean}
     * @readonly
     */
-  val isActive: Boolean = js.native
+  val isActive: Boolean
   
   /**
     * A flag
     * @member {boolean}
     * @readonly
     */
-  val isMobileAccessibility: Boolean = js.native
+  val isMobileAccessibility: Boolean
   
   /**
     * The renderer this accessibility manager works for.
     *
     * @member {PIXI.AbstractRenderer} PIXI.AccessibilityManager#renderer
     */
-  var renderer: AbstractRenderer = js.native
+  var renderer: AbstractRenderer
   
   /**
     * private function that will visually add the information to the
@@ -68,7 +66,7 @@ trait AccessibilityManager extends StObject {
     *
     * @param {HTMLElement} div
     */
-  def updateDebugHTML(div: HTMLElement): Unit = js.native
+  def updateDebugHTML(div: HTMLElement): Unit
 }
 object AccessibilityManager {
   

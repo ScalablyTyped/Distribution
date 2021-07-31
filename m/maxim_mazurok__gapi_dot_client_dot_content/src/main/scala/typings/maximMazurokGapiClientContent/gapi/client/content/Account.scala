@@ -2,56 +2,54 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Account extends StObject {
   
   /**
     * List of linked Ads accounts that are active or pending approval. To create a new link request, add a new link with status `active` to the list. It will remain in a `pending` state
     * until approved or rejected either in the Ads interface or through the AdWords API. To delete an active link, or to cancel a link request, remove it from the list.
     */
-  var adsLinks: js.UndefOr[js.Array[AccountAdsLink]] = js.native
+  var adsLinks: js.UndefOr[js.Array[AccountAdsLink]] = js.undefined
   
   /** Indicates whether the merchant sells adult content. */
-  var adultContent: js.UndefOr[Boolean] = js.native
+  var adultContent: js.UndefOr[Boolean] = js.undefined
   
   /** The business information of the account. */
-  var businessInformation: js.UndefOr[AccountBusinessInformation] = js.native
+  var businessInformation: js.UndefOr[AccountBusinessInformation] = js.undefined
   
   /** ID of CSS the account belongs to. */
-  var cssId: js.UndefOr[String] = js.native
+  var cssId: js.UndefOr[String] = js.undefined
   
   /** The GMB account which is linked or in the process of being linked with the Merchant Center account. */
-  var googleMyBusinessLink: js.UndefOr[AccountGoogleMyBusinessLink] = js.native
+  var googleMyBusinessLink: js.UndefOr[AccountGoogleMyBusinessLink] = js.undefined
   
   /** Required for update. Merchant Center account ID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#account`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** List of label IDs that are assigned to the account by CSS. */
-  var labelIds: js.UndefOr[js.Array[String]] = js.native
+  var labelIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. Display name for the account. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Client-specific, locally-unique, internal ID for the child account. */
-  var sellerId: js.UndefOr[String] = js.native
+  var sellerId: js.UndefOr[String] = js.undefined
   
   /** Users with access to the account. Every account (except for subaccounts) must have at least one admin user. */
-  var users: js.UndefOr[js.Array[AccountUser]] = js.native
+  var users: js.UndefOr[js.Array[AccountUser]] = js.undefined
   
   /** The merchant's website. */
-  var websiteUrl: js.UndefOr[String] = js.native
+  var websiteUrl: js.UndefOr[String] = js.undefined
   
   /**
     * List of linked YouTube channels that are active or pending approval. To create a new link request, add a new link with status `active` to the list. It will remain in a `pending`
     * state until approved or rejected in the YT Creator Studio interface. To delete an active link, or to cancel a link request, remove it from the list.
     */
-  var youtubeChannelLinks: js.UndefOr[js.Array[AccountYouTubeChannelLink]] = js.native
+  var youtubeChannelLinks: js.UndefOr[js.Array[AccountYouTubeChannelLink]] = js.undefined
 }
 object Account {
   

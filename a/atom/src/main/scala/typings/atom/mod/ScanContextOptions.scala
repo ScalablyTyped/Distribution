@@ -2,17 +2,15 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScanContextOptions extends StObject {
   
   /** The number of lines before the matched line to include in the results object. */
-  var leadingContextLineCount: js.UndefOr[Double] = js.native
+  var leadingContextLineCount: js.UndefOr[Double] = js.undefined
   
   /** The number of lines after the matched line to include in the results object. */
-  var trailingContextLineCount: js.UndefOr[Double] = js.native
+  var trailingContextLineCount: js.UndefOr[Double] = js.undefined
 }
 object ScanContextOptions {
   

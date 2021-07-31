@@ -2,31 +2,29 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainSummary extends StObject {
   
   /**
     * The time that the domain was created.
     */
-  var CreatedTime: DateTime = js.native
+  var CreatedTime: DateTime
   
   /**
     * The name to display.
     */
-  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.native
+  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.undefined
   
   /**
     * The name of the domain.
     */
-  var DomainName: typings.awsSdk.worklinkMod.DomainName = js.native
+  var DomainName: typings.awsSdk.worklinkMod.DomainName
   
   /**
     * The status of the domain.
     */
-  var DomainStatus: typings.awsSdk.worklinkMod.DomainStatus = js.native
+  var DomainStatus: typings.awsSdk.worklinkMod.DomainStatus
 }
 object DomainSummary {
   

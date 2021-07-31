@@ -4,27 +4,27 @@ import typings.reactNativeWindowsCli.anon.Latest
 import typings.reactNativeWindowsCli.anon.Requires
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vsInstallsMod {
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/vsInstalls", "enumerateVsInstalls")
+  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/vsInstalls", JSImport.Namespace)
   @js.native
-  def enumerateVsInstalls(opts: Latest): js.Array[VisualStudioInstallation] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/vsInstalls", "findLatestVsInstall")
-  @js.native
-  def findLatestVsInstall(opts: Requires): VisualStudioInstallation | Null = js.native
+  @scala.inline
+  def enumerateVsInstalls(opts: Latest): js.Array[VisualStudioInstallation] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateVsInstalls")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Array[VisualStudioInstallation]]
   
-  @js.native
+  @scala.inline
+  def findLatestVsInstall(opts: Requires): VisualStudioInstallation | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findLatestVsInstall")(opts.asInstanceOf[js.Any]).asInstanceOf[VisualStudioInstallation | Null]
+  
   trait VisualStudioInstallation extends StObject {
     
-    var installationPath: String = js.native
+    var installationPath: String
     
-    var installationVersion: String = js.native
+    var installationVersion: String
     
-    var instanceId: String = js.native
+    var instanceId: String
   }
   object VisualStudioInstallation {
     

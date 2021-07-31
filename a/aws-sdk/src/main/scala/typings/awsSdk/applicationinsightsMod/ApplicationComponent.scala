@@ -2,31 +2,29 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationComponent extends StObject {
   
   /**
     * The name of the component.
     */
-  var ComponentName: js.UndefOr[typings.awsSdk.applicationinsightsMod.ComponentName] = js.native
+  var ComponentName: js.UndefOr[typings.awsSdk.applicationinsightsMod.ComponentName] = js.undefined
   
   /**
     * Indicates whether the application component is monitored. 
     */
-  var Monitor: js.UndefOr[typings.awsSdk.applicationinsightsMod.Monitor] = js.native
+  var Monitor: js.UndefOr[typings.awsSdk.applicationinsightsMod.Monitor] = js.undefined
   
   /**
     * The resource type. Supported resource types include EC2 instances, Auto Scaling group, Classic ELB, Application ELB, and SQS Queue.
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceType] = js.undefined
   
   /**
     * The stack tier of the application component.
     */
-  var Tier: js.UndefOr[typings.awsSdk.applicationinsightsMod.Tier] = js.native
+  var Tier: js.UndefOr[typings.awsSdk.applicationinsightsMod.Tier] = js.undefined
 }
 object ApplicationComponent {
   

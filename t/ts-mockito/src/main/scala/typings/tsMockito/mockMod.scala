@@ -7,7 +7,6 @@ import typings.tsMockito.methodStubMod.MethodStub
 import typings.tsMockito.objectInspectorMod.ObjectInspector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mockMod {
@@ -20,7 +19,7 @@ object mockMod {
     
     var clazz: js.Any = js.native
     
-    /* protected */ def createActionListener(key: String): js.Function0[_] = js.native
+    /* protected */ def createActionListener(key: String): js.Function0[js.Any] = js.native
     
     def createCatchAllHandlerForRemainingPropertiesWithoutGetters(): js.Any = js.native
     
@@ -40,7 +39,7 @@ object mockMod {
     
     def getAllMatchingActions(methodName: String, matchers: js.Array[Matcher]): js.Array[MethodAction] = js.native
     
-    /* protected */ def getEmptyMethodStub(key: String, args: js.Array[_]): MethodStub = js.native
+    /* protected */ def getEmptyMethodStub(key: String, args: js.Array[js.Any]): MethodStub = js.native
     
     def getFirstMatchingAction(methodName: String, matchers: js.Array[Matcher]): MethodAction = js.native
     

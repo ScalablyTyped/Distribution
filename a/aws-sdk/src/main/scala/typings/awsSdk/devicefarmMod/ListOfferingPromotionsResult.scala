@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListOfferingPromotionsResult extends StObject {
   
   /**
     * An identifier to be used in the next call to this operation, to return the next set of items in the list.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * Information about the offering promotions.
     */
-  var offeringPromotions: js.UndefOr[OfferingPromotions] = js.native
+  var offeringPromotions: js.UndefOr[OfferingPromotions] = js.undefined
 }
 object ListOfferingPromotionsResult {
   

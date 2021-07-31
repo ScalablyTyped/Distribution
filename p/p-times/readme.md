@@ -12,7 +12,7 @@ Run promise-returning & async functions a specific number of times concurrently
 | Keywords           | promise, times, number, count, loop, iterate, async, await, promises, concurrently, concurrency, parallel, bluebird |
 | # releases         | 4 |
 | # dependents       | 9 |
-| # downloads        | 335308 |
+| # downloads        | 485188 |
 | # stars            | 0 |
 
 ## Links

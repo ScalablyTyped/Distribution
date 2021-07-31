@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientYoutubereporting.gapi.client.youtubereport
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GdataCompositeMedia extends StObject {
   
   /** gdata */
-  var blobRef: js.UndefOr[String] = js.native
+  var blobRef: js.UndefOr[String] = js.undefined
   
   /** gdata */
-  var blobstore2Info: js.UndefOr[GdataBlobstore2Info] = js.native
+  var blobstore2Info: js.UndefOr[GdataBlobstore2Info] = js.undefined
   
   /** gdata */
-  var cosmoBinaryReference: js.UndefOr[String] = js.native
+  var cosmoBinaryReference: js.UndefOr[String] = js.undefined
   
   /** gdata */
-  var crc32cHash: js.UndefOr[Double] = js.native
+  var crc32cHash: js.UndefOr[Double] = js.undefined
   
   /** gdata */
-  var `inline`: js.UndefOr[String] = js.native
+  var `inline`: js.UndefOr[String] = js.undefined
   
   /** gdata */
-  var length: js.UndefOr[String] = js.native
+  var length: js.UndefOr[String] = js.undefined
   
   /** gdata */
-  var md5Hash: js.UndefOr[String] = js.native
+  var md5Hash: js.UndefOr[String] = js.undefined
   
   /** gdata */
-  var objectId: js.UndefOr[GdataObjectId] = js.native
+  var objectId: js.UndefOr[GdataObjectId] = js.undefined
   
   /** gdata */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** gdata */
-  var referenceType: js.UndefOr[String] = js.native
+  var referenceType: js.UndefOr[String] = js.undefined
   
   /** gdata */
-  var sha1Hash: js.UndefOr[String] = js.native
+  var sha1Hash: js.UndefOr[String] = js.undefined
 }
 object GdataCompositeMedia {
   

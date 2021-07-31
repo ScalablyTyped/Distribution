@@ -2,7 +2,6 @@ package typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * explicit content has been detected in a frame, no annotations are present
   * for that frame.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotation extends StObject {
   
   /**
     * All video frames where explicit content was detected.
     */
-  var frames: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentFrame]] = js.native
+  var frames: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentFrame]] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotation {
   

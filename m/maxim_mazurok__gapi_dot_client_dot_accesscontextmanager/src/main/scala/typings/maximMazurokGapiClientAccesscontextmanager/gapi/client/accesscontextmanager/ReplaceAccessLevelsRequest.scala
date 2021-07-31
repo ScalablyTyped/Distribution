@@ -2,21 +2,19 @@ package typings.maximMazurokGapiClientAccesscontextmanager.gapi.client.accesscon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaceAccessLevelsRequest extends StObject {
   
   /** Required. The desired Access Levels that should replace all existing Access Levels in the Access Policy. */
-  var accessLevels: js.UndefOr[js.Array[AccessLevel]] = js.native
+  var accessLevels: js.UndefOr[js.Array[AccessLevel]] = js.undefined
   
   /**
     * Optional. The etag for the version of the Access Policy that this replace operation is to be performed on. If, at the time of replace, the etag for the Access Policy stored in
     * Access Context Manager is different from the specified etag, then the replace operation will not be performed and the call will fail. This field is not required. If etag is not
     * provided, the operation will be performed as if a valid etag is provided.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
 }
 object ReplaceAccessLevelsRequest {
   

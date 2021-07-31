@@ -12,7 +12,7 @@ Routing library for 'single page' applications
 | Keywords           | ender, path, hash, pushState, routing |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 17699 |
+| # downloads        | 16058 |
 | # stars            | 0 |
 
 ## Links

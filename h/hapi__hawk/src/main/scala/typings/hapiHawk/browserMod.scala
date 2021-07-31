@@ -35,84 +35,74 @@ import typings.std.Storage
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserMod {
   
   object client {
     
-    @JSImport("@hapi/hawk/lib/browser", "client.authenticate")
+    @JSImport("@hapi/hawk/lib/browser", "client")
     @js.native
-    def authenticate(request: Response, credentials: Credentials, artifacts: Artifacts): Boolean = js.native
-    @JSImport("@hapi/hawk/lib/browser", "client.authenticate")
-    @js.native
-    def authenticate(request: Response, credentials: Credentials, artifacts: Artifacts, options: AuthenticateOptions): Boolean = js.native
-    @JSImport("@hapi/hawk/lib/browser", "client.authenticate")
-    @js.native
-    def authenticate(request: XMLHttpRequest, credentials: Credentials, artifacts: Artifacts): Boolean = js.native
-    @JSImport("@hapi/hawk/lib/browser", "client.authenticate")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def authenticate(request: Response, credentials: Credentials, artifacts: Artifacts): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def authenticate(request: Response, credentials: Credentials, artifacts: Artifacts, options: AuthenticateOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def authenticate(request: XMLHttpRequest, credentials: Credentials, artifacts: Artifacts): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
     def authenticate(
       request: XMLHttpRequest,
       credentials: Credentials,
       artifacts: Artifacts,
       options: AuthenticateOptions
-    ): Boolean = js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@hapi/hawk/lib/browser", "client.authenticateTimestamp")
-    @js.native
-    def authenticateTimestamp(message: String, credentials: Credentials): Boolean = js.native
-    @JSImport("@hapi/hawk/lib/browser", "client.authenticateTimestamp")
-    @js.native
-    def authenticateTimestamp(message: String, credentials: Credentials, updateClock: Boolean): Boolean = js.native
+    @scala.inline
+    def authenticateTimestamp(message: String, credentials: Credentials): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateTimestamp")(message.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def authenticateTimestamp(message: String, credentials: Credentials, updateClock: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateTimestamp")(message.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], updateClock.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@hapi/hawk/lib/browser", "client.bewit")
-    @js.native
-    def bewit(uri: String): String = js.native
-    @JSImport("@hapi/hawk/lib/browser", "client.bewit")
-    @js.native
-    def bewit(uri: String, options: BewitOptions): String = js.native
+    @scala.inline
+    def bewit(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bewit")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def bewit(uri: String, options: BewitOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bewit")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@hapi/hawk/lib/browser", "client.header")
-    @js.native
-    def header(uri: String, method: String): Header_ = js.native
-    @JSImport("@hapi/hawk/lib/browser", "client.header")
-    @js.native
-    def header(uri: String, method: String, options: HeaderOptions): Header_ = js.native
-    @JSImport("@hapi/hawk/lib/browser", "client.header")
-    @js.native
-    def header(uri: ParsedUri, method: String): Header_ = js.native
-    @JSImport("@hapi/hawk/lib/browser", "client.header")
-    @js.native
-    def header(uri: ParsedUri, method: String, options: HeaderOptions): Header_ = js.native
+    @scala.inline
+    def header(uri: String, method: String): Header_ = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(uri.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Header_]
+    @scala.inline
+    def header(uri: String, method: String, options: HeaderOptions): Header_ = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(uri.asInstanceOf[js.Any], method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Header_]
+    @scala.inline
+    def header(uri: ParsedUri, method: String): Header_ = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(uri.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Header_]
+    @scala.inline
+    def header(uri: ParsedUri, method: String, options: HeaderOptions): Header_ = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(uri.asInstanceOf[js.Any], method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Header_]
     
-    @JSImport("@hapi/hawk/lib/browser", "client.message")
-    @js.native
-    def message(host: String, port: Double, message: String, options: MessageOptions): Message_ = js.native
+    @scala.inline
+    def message(host: String, port: Double, message: String, options: MessageOptions): Message_ = (^.asInstanceOf[js.Dynamic].applyDynamic("message")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Message_]
   }
   
   object crypto {
+    
+    @JSImport("@hapi/hawk/lib/browser", "crypto")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("@hapi/hawk/lib/browser", "crypto.algorithms")
     @js.native
     val algorithms: js.Array[String] = js.native
     
-    @JSImport("@hapi/hawk/lib/browser", "crypto.calculateMac")
-    @js.native
-    def calculateMac(`type`: String, credentials: Credentials, options: Artifacts): String = js.native
+    @scala.inline
+    def calculateMac(`type`: String, credentials: Credentials, options: Artifacts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateMac")(`type`.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@hapi/hawk/lib/browser", "crypto.calculatePayloadHash")
-    @js.native
-    def calculatePayloadHash(payload: String, algorithm: String, contentType: String): String = js.native
+    @scala.inline
+    def calculatePayloadHash(payload: String, algorithm: String, contentType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePayloadHash")(payload.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@hapi/hawk/lib/browser", "crypto.calculateTsMac")
-    @js.native
-    def calculateTsMac(ts: String, credentials: Credentials): String = js.native
+    @scala.inline
+    def calculateTsMac(ts: String, credentials: Credentials): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateTsMac")(ts.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@hapi/hawk/lib/browser", "crypto.generateNormalizedString")
-    @js.native
-    def generateNormalizedString(`type`: String, options: Artifacts): String = js.native
+    @scala.inline
+    def generateNormalizedString(`type`: String, options: Artifacts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateNormalizedString")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("@hapi/hawk/lib/browser", "crypto.headerVersion")
     @js.native
@@ -120,6 +110,10 @@ object browserMod {
     
     /* was `typeof CryptoJS` */
     object utils {
+      
+      @JSImport("@hapi/hawk/lib/browser", "crypto.utils")
+      @js.native
+      val ^ : js.Any = js.native
       
       @JSImport("@hapi/hawk/lib/browser", "crypto.utils.AES")
       @js.native
@@ -129,30 +123,22 @@ object browserMod {
       @js.native
       val DES: CipherHelper = js.native
       
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.EvpKDF")
-      @js.native
-      def EvpKDF(password: String, salt: String): WordArray = js.native
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.EvpKDF")
-      @js.native
-      def EvpKDF(password: String, salt: String, cfg: Hasher): WordArray = js.native
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.EvpKDF")
-      @js.native
-      def EvpKDF(password: String, salt: WordArray): WordArray = js.native
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.EvpKDF")
-      @js.native
-      def EvpKDF(password: String, salt: WordArray, cfg: Hasher): WordArray = js.native
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.EvpKDF")
-      @js.native
-      def EvpKDF(password: WordArray, salt: String): WordArray = js.native
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.EvpKDF")
-      @js.native
-      def EvpKDF(password: WordArray, salt: String, cfg: Hasher): WordArray = js.native
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.EvpKDF")
-      @js.native
-      def EvpKDF(password: WordArray, salt: WordArray): WordArray = js.native
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.EvpKDF")
-      @js.native
-      def EvpKDF(password: WordArray, salt: WordArray, cfg: Hasher): WordArray = js.native
+      @scala.inline
+      def EvpKDF(password: String, salt: String): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+      @scala.inline
+      def EvpKDF(password: String, salt: String, cfg: Hasher): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+      @scala.inline
+      def EvpKDF(password: String, salt: WordArray): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+      @scala.inline
+      def EvpKDF(password: String, salt: WordArray, cfg: Hasher): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+      @scala.inline
+      def EvpKDF(password: WordArray, salt: String): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+      @scala.inline
+      def EvpKDF(password: WordArray, salt: String, cfg: Hasher): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+      @scala.inline
+      def EvpKDF(password: WordArray, salt: WordArray): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+      @scala.inline
+      def EvpKDF(password: WordArray, salt: WordArray, cfg: Hasher): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("EvpKDF")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
       
       @JSImport("@hapi/hawk/lib/browser", "crypto.utils.HmacMD5")
       @js.native
@@ -190,30 +176,22 @@ object browserMod {
       @js.native
       val MD5: HasherHelper = js.native
       
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.PBKDF2")
-      @js.native
-      def PBKDF2(password: String, salt: String): WordArray = js.native
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.PBKDF2")
-      @js.native
-      def PBKDF2(password: String, salt: String, cfg: KDFOption): WordArray = js.native
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.PBKDF2")
-      @js.native
-      def PBKDF2(password: String, salt: WordArray): WordArray = js.native
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.PBKDF2")
-      @js.native
-      def PBKDF2(password: String, salt: WordArray, cfg: KDFOption): WordArray = js.native
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.PBKDF2")
-      @js.native
-      def PBKDF2(password: WordArray, salt: String): WordArray = js.native
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.PBKDF2")
-      @js.native
-      def PBKDF2(password: WordArray, salt: String, cfg: KDFOption): WordArray = js.native
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.PBKDF2")
-      @js.native
-      def PBKDF2(password: WordArray, salt: WordArray): WordArray = js.native
-      @JSImport("@hapi/hawk/lib/browser", "crypto.utils.PBKDF2")
-      @js.native
-      def PBKDF2(password: WordArray, salt: WordArray, cfg: KDFOption): WordArray = js.native
+      @scala.inline
+      def PBKDF2(password: String, salt: String): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+      @scala.inline
+      def PBKDF2(password: String, salt: String, cfg: KDFOption): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+      @scala.inline
+      def PBKDF2(password: String, salt: WordArray): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+      @scala.inline
+      def PBKDF2(password: String, salt: WordArray, cfg: KDFOption): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+      @scala.inline
+      def PBKDF2(password: WordArray, salt: String): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+      @scala.inline
+      def PBKDF2(password: WordArray, salt: String, cfg: KDFOption): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+      @scala.inline
+      def PBKDF2(password: WordArray, salt: WordArray): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[WordArray]
+      @scala.inline
+      def PBKDF2(password: WordArray, salt: WordArray, cfg: KDFOption): WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("PBKDF2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[WordArray]
       
       @JSImport("@hapi/hawk/lib/browser", "crypto.utils.RC4")
       @js.native
@@ -289,6 +267,10 @@ object browserMod {
           extends typings.cryptoJs.mod.algo.EvpKDF
         object EvpKDF {
           
+          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.algo.EvpKDF")
+          @js.native
+          val ^ : js.Any = js.native
+          
           /**
             * Initializes a newly created key derivation function.
             *
@@ -301,12 +283,10 @@ object browserMod {
             *     var kdf = CryptoJS.algo.EvpKDF.create({ keySize: 8, iterations: 1000 });
             */
           /* static member */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.algo.EvpKDF.create")
-          @js.native
-          def create(): typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.algo.EvpKDF.create")
-          @js.native
-          def create(cfg: Hasher): typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF = js.native
+          @scala.inline
+          def create(): typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF]
+          @scala.inline
+          def create(cfg: Hasher): typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cfg.asInstanceOf[js.Any]).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF]
         }
         
         /**
@@ -318,9 +298,12 @@ object browserMod {
           extends typings.cryptoJs.mod.algo.HMAC
         object HMAC {
           
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.algo.HMAC.create")
+          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.algo.HMAC")
           @js.native
-          def create(hasher: HasherStatic, key: String): typings.cryptoJs.mod.global.CryptoJS.algo.HMAC = js.native
+          val ^ : js.Any = js.native
+          
+          @scala.inline
+          def create(hasher: HasherStatic, key: String): typings.cryptoJs.mod.global.CryptoJS.algo.HMAC = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hasher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.HMAC]
           /**
             * Initializes a newly created HMAC.
             *
@@ -332,9 +315,8 @@ object browserMod {
             *     var hmacHasher = CryptoJS.algo.HMAC.create(CryptoJS.algo.SHA256, key);
             */
           /* static member */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.algo.HMAC.create")
-          @js.native
-          def create(hasher: HasherStatic, key: WordArray): typings.cryptoJs.mod.global.CryptoJS.algo.HMAC = js.native
+          @scala.inline
+          def create(hasher: HasherStatic, key: WordArray): typings.cryptoJs.mod.global.CryptoJS.algo.HMAC = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hasher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.HMAC]
         }
         
         /**
@@ -353,6 +335,10 @@ object browserMod {
           extends typings.cryptoJs.mod.algo.PBKDF2
         object PBKDF2 {
           
+          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.algo.PBKDF2")
+          @js.native
+          val ^ : js.Any = js.native
+          
           /**
             * Initializes a newly created key derivation function.
             *
@@ -365,12 +351,10 @@ object browserMod {
             *     var kdf = CryptoJS.algo.PBKDF2.create({ keySize: 8, iterations: 1000 });
             */
           /* static member */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.algo.PBKDF2.create")
-          @js.native
-          def create(): typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2 = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.algo.PBKDF2.create")
-          @js.native
-          def create(cfg: KDFOption): typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2 = js.native
+          @scala.inline
+          def create(): typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2]
+          @scala.inline
+          def create(cfg: KDFOption): typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cfg.asInstanceOf[js.Any]).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2]
         }
         
         /**
@@ -532,6 +516,10 @@ object browserMod {
           */
         object OpenSSL {
           
+          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.kdf.OpenSSL")
+          @js.native
+          val ^ : js.Any = js.native
+          
           /**
             * Derives a key and IV from a password.
             *
@@ -547,15 +535,12 @@ object browserMod {
             *     var derivedParams = CryptoJS.kdf.OpenSSL.execute('Password', 256/32, 128/32);
             *     var derivedParams = CryptoJS.kdf.OpenSSL.execute('Password', 256/32, 128/32, 'saltsalt');
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.kdf.OpenSSL.execute")
-          @js.native
-          def execute(password: String, keySize: Double, ivSize: Double): CipherParams = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.kdf.OpenSSL.execute")
-          @js.native
-          def execute(password: String, keySize: Double, ivSize: Double, salt: String): CipherParams = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.kdf.OpenSSL.execute")
-          @js.native
-          def execute(password: String, keySize: Double, ivSize: Double, salt: WordArray): CipherParams = js.native
+          @scala.inline
+          def execute(password: String, keySize: Double, ivSize: Double): CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(password.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], ivSize.asInstanceOf[js.Any])).asInstanceOf[CipherParams]
+          @scala.inline
+          def execute(password: String, keySize: Double, ivSize: Double, salt: String): CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(password.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], ivSize.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[CipherParams]
+          @scala.inline
+          def execute(password: String, keySize: Double, ivSize: Double, salt: WordArray): CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(password.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], ivSize.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[CipherParams]
         }
       }
       
@@ -565,6 +550,10 @@ object browserMod {
           * Base object for prototypal inheritance.
           */
         object Base {
+          
+          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.Base")
+          @js.native
+          val ^ : js.Any = js.native
           
           /**
             * Extends this object and runs the init method.
@@ -576,9 +565,8 @@ object browserMod {
             *
             *     var instance = MyType.create();
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.Base.create")
-          @js.native
-          def create(args: js.Any*): js.Any = js.native
+          @scala.inline
+          def create(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
           
           /**
             * Creates a new object that inherits from this object.
@@ -596,9 +584,8 @@ object browserMod {
             *         }
             *     });
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.Base.extend")
-          @js.native
-          def extend(overrides: js.Object): js.Any = js.native
+          @scala.inline
+          def extend(overrides: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(overrides.asInstanceOf[js.Any]).asInstanceOf[js.Any]
           
           /**
             * Copies properties into this object.
@@ -611,9 +598,8 @@ object browserMod {
             *         field: 'value'
             *     });
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.Base.mixIn")
-          @js.native
-          def mixIn(properties: js.Object): js.Any = js.native
+          @scala.inline
+          def mixIn(properties: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixIn")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
         }
         
         /**
@@ -629,6 +615,10 @@ object browserMod {
         
         object Cipher {
           
+          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.Cipher")
+          @js.native
+          val ^ : js.Any = js.native
+          
           /**
             * Creates shortcut functions to a cipher's object interface.
             *
@@ -640,12 +630,15 @@ object browserMod {
             *
             *     var AES = CryptoJS.lib.Cipher._createHelper(CryptoJS.algo.AES);
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.Cipher._createHelper")
-          @js.native
-          def createHelper(cipher: typings.cryptoJs.mod.Cipher): CipherHelper = js.native
+          @scala.inline
+          def createHelper(cipher: typings.cryptoJs.mod.Cipher): CipherHelper = ^.asInstanceOf[js.Dynamic].applyDynamic("_createHelper")(cipher.asInstanceOf[js.Any]).asInstanceOf[CipherHelper]
         }
         
         object CipherParams {
+          
+          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.CipherParams")
+          @js.native
+          val ^ : js.Any = js.native
           
           /**
             * Initializes a newly created cipher params object.
@@ -666,12 +659,15 @@ object browserMod {
             *         formatter: CryptoJS.format.OpenSSL
             *     });
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.CipherParams.create")
-          @js.native
-          def create(cipherParams: PartialCipherParams): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+          @scala.inline
+          def create(cipherParams: PartialCipherParams): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cipherParams.asInstanceOf[js.Any]).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
         }
         
         object Hasher {
+          
+          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.Hasher")
+          @js.native
+          val ^ : js.Any = js.native
           
           /**
             * Creates a shortcut function to a hasher's object interface.
@@ -684,9 +680,8 @@ object browserMod {
             *
             *     var SHA256 = CryptoJS.lib.Hasher._createHelper(CryptoJS.algo.SHA256);
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.Hasher._createHelper")
-          @js.native
-          def createHelper(hasher: HasherStatic): HasherHelper = js.native
+          @scala.inline
+          def createHelper(hasher: HasherStatic): HasherHelper = ^.asInstanceOf[js.Dynamic].applyDynamic("_createHelper")(hasher.asInstanceOf[js.Any]).asInstanceOf[HasherHelper]
           
           /**
             * Creates a shortcut function to the HMAC's object interface.
@@ -699,9 +694,8 @@ object browserMod {
             *
             *     var HmacSHA256 = CryptoJS.lib.Hasher._createHmacHelper(CryptoJS.algo.SHA256);
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.Hasher._createHmacHelper")
-          @js.native
-          def createHmacHelper(hasher: HasherStatic): HmacHasherHelper = js.native
+          @scala.inline
+          def createHmacHelper(hasher: HasherStatic): HmacHasherHelper = ^.asInstanceOf[js.Dynamic].applyDynamic("_createHmacHelper")(hasher.asInstanceOf[js.Any]).asInstanceOf[HmacHasherHelper]
         }
         
         /**
@@ -710,12 +704,14 @@ object browserMod {
           */
         object PasswordBasedCipher {
           
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.PasswordBasedCipher.decrypt")
+          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.PasswordBasedCipher")
           @js.native
-          def decrypt(cipher: CipherStatic, ciphertext: String, password: String): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.PasswordBasedCipher.decrypt")
-          @js.native
-          def decrypt(cipher: CipherStatic, ciphertext: String, password: String, cfg: CipherOption): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
+          val ^ : js.Any = js.native
+          
+          @scala.inline
+          def decrypt(cipher: CipherStatic, ciphertext: String, password: String): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
+          @scala.inline
+          def decrypt(cipher: CipherStatic, ciphertext: String, password: String, cfg: CipherOption): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], password.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
           /**
             * Decrypts serialized ciphertext using a password.
             *
@@ -731,28 +727,24 @@ object browserMod {
             *     var plaintext = CryptoJS.lib.PasswordBasedCipher.decrypt(CryptoJS.algo.AES, formattedCiphertext, 'password', { format: CryptoJS.format.OpenSSL });
             *     var plaintext = CryptoJS.lib.PasswordBasedCipher.decrypt(CryptoJS.algo.AES, ciphertextParams, 'password', { format: CryptoJS.format.OpenSSL });
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.PasswordBasedCipher.decrypt")
-          @js.native
+          @scala.inline
           def decrypt(
             cipher: CipherStatic,
             ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams,
             password: String
-          ): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.PasswordBasedCipher.decrypt")
-          @js.native
+          ): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
+          @scala.inline
           def decrypt(
             cipher: CipherStatic,
             ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams,
             password: String,
             cfg: CipherOption
-          ): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
+          ): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], password.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
           
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.PasswordBasedCipher.encrypt")
-          @js.native
-          def encrypt(cipher: CipherStatic, message: String, password: String): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.PasswordBasedCipher.encrypt")
-          @js.native
-          def encrypt(cipher: CipherStatic, message: String, password: String, cfg: CipherOption): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+          @scala.inline
+          def encrypt(cipher: CipherStatic, message: String, password: String): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
+          @scala.inline
+          def encrypt(cipher: CipherStatic, message: String, password: String, cfg: CipherOption): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], password.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
           /**
             * Encrypts a message using a password.
             *
@@ -768,21 +760,19 @@ object browserMod {
             *     var ciphertextParams = CryptoJS.lib.PasswordBasedCipher.encrypt(CryptoJS.algo.AES, message, 'password');
             *     var ciphertextParams = CryptoJS.lib.PasswordBasedCipher.encrypt(CryptoJS.algo.AES, message, 'password', { format: CryptoJS.format.OpenSSL });
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.PasswordBasedCipher.encrypt")
-          @js.native
+          @scala.inline
           def encrypt(
             cipher: CipherStatic,
             message: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
             password: String
-          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.PasswordBasedCipher.encrypt")
-          @js.native
+          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
+          @scala.inline
           def encrypt(
             cipher: CipherStatic,
             message: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
             password: String,
             cfg: CipherOption
-          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], password.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
         }
         
         /**
@@ -790,17 +780,19 @@ object browserMod {
           */
         object SerializableCipher {
           
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.SerializableCipher.decrypt")
+          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.SerializableCipher")
           @js.native
-          def decrypt(cipher: CipherStatic, ciphertext: String, key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.SerializableCipher.decrypt")
-          @js.native
+          val ^ : js.Any = js.native
+          
+          @scala.inline
+          def decrypt(cipher: CipherStatic, ciphertext: String, key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
+          @scala.inline
           def decrypt(
             cipher: CipherStatic,
             ciphertext: String,
             key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
             cfg: CipherOption
-          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
           /**
             * Decrypts serialized ciphertext.
             *
@@ -816,33 +808,29 @@ object browserMod {
             *     var plaintext = CryptoJS.lib.SerializableCipher.decrypt(CryptoJS.algo.AES, formattedCiphertext, key, { iv: iv, format: CryptoJS.format.OpenSSL });
             *     var plaintext = CryptoJS.lib.SerializableCipher.decrypt(CryptoJS.algo.AES, ciphertextParams, key, { iv: iv, format: CryptoJS.format.OpenSSL });
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.SerializableCipher.decrypt")
-          @js.native
+          @scala.inline
           def decrypt(
             cipher: CipherStatic,
             ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
             key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray
-          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.SerializableCipher.decrypt")
-          @js.native
+          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
+          @scala.inline
           def decrypt(
             cipher: CipherStatic,
             ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
             key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
             cfg: CipherOption
-          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
           
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.SerializableCipher.encrypt")
-          @js.native
-          def encrypt(cipher: CipherStatic, message: String, key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.SerializableCipher.encrypt")
-          @js.native
+          @scala.inline
+          def encrypt(cipher: CipherStatic, message: String, key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
+          @scala.inline
           def encrypt(
             cipher: CipherStatic,
             message: String,
             key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
             cfg: CipherOption
-          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
           /**
             * Encrypts a message.
             *
@@ -859,25 +847,22 @@ object browserMod {
             *     var ciphertextParams = CryptoJS.lib.SerializableCipher.encrypt(CryptoJS.algo.AES, message, key, { iv: iv });
             *     var ciphertextParams = CryptoJS.lib.SerializableCipher.encrypt(CryptoJS.algo.AES, message, key, { iv: iv, format: CryptoJS.format.OpenSSL });
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.SerializableCipher.encrypt")
-          @js.native
+          @scala.inline
           def encrypt(
             cipher: CipherStatic,
             message: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
             key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray
-          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.SerializableCipher.encrypt")
-          @js.native
+          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
+          @scala.inline
           def encrypt(
             cipher: CipherStatic,
             message: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
             key: typings.cryptoJs.mod.global.CryptoJS.lib.WordArray,
             cfg: CipherOption
-          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+          ): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cipher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
           
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.SerializableCipher._parse")
-          @js.native
-          def parse(ciphertext: String, format: Format_): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+          @scala.inline
+          def parse(ciphertext: String, format: Format_): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("_parse")(ciphertext.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
           /**
             * Converts serialized ciphertext to CipherParams,
             * else assumed CipherParams already and returns ciphertext unchanged.
@@ -891,12 +876,15 @@ object browserMod {
             *
             *     var ciphertextParams = CryptoJS.lib.SerializableCipher._parse(ciphertextStringOrParams, format);
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.SerializableCipher._parse")
-          @js.native
-          def parse(ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams, format: Format_): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = js.native
+          @scala.inline
+          def parse(ciphertext: typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams, format: Format_): typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams = (^.asInstanceOf[js.Dynamic].applyDynamic("_parse")(ciphertext.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.CipherParams]
         }
         
         object WordArray {
+          
+          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.WordArray")
+          @js.native
+          val ^ : js.Any = js.native
           
           /**
             * Initializes a newly created word array.
@@ -910,18 +898,14 @@ object browserMod {
             *     var wordArray = CryptoJS.lib.WordArray.create([0x00010203, 0x04050607]);
             *     var wordArray = CryptoJS.lib.WordArray.create([0x00010203, 0x04050607], 6);
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.WordArray.create")
-          @js.native
-          def create(): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.WordArray.create")
-          @js.native
-          def create(words: js.UndefOr[scala.Nothing], sigBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.WordArray.create")
-          @js.native
-          def create(words: js.Array[Double]): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.WordArray.create")
-          @js.native
-          def create(words: js.Array[Double], sigBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
+          @scala.inline
+          def create(): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
+          @scala.inline
+          def create(words: js.Array[Double]): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any]).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
+          @scala.inline
+          def create(words: js.Array[Double], sigBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any], sigBytes.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
+          @scala.inline
+          def create(words: Unit, sigBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any], sigBytes.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
           
           /**
             * Creates a word array filled with random bytes.
@@ -934,9 +918,8 @@ object browserMod {
             *
             *     var wordArray = CryptoJS.lib.WordArray.random(16);
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.WordArray.random")
-          @js.native
-          def random(nBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = js.native
+          @scala.inline
+          def random(nBytes: Double): typings.cryptoJs.mod.global.CryptoJS.lib.WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(nBytes.asInstanceOf[js.Any]).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.lib.WordArray]
         }
       }
       
@@ -1037,6 +1020,10 @@ object browserMod {
         
         object Word {
           
+          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.x64.Word")
+          @js.native
+          val ^ : js.Any = js.native
+          
           /**
             * Initializes a newly created 64-bit word.
             *
@@ -1047,9 +1034,8 @@ object browserMod {
             *
             *     var x64Word = CryptoJS.x64.Word.create(0x00010203, 0x04050607);
             */
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.x64.Word.create")
-          @js.native
-          def create(high: Double, low: Double): X64Word = js.native
+          @scala.inline
+          def create(high: Double, low: Double): X64Word = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(high.asInstanceOf[js.Any], low.asInstanceOf[js.Any])).asInstanceOf[X64Word]
         }
         
         /**
@@ -1074,18 +1060,18 @@ object browserMod {
           */
         object WordArray {
           
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.x64.WordArray.create")
+          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.x64.WordArray")
           @js.native
-          def create(): X64WordArray = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.x64.WordArray.create")
-          @js.native
-          def create(words: js.UndefOr[scala.Nothing], sigBytes: Double): X64WordArray = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.x64.WordArray.create")
-          @js.native
-          def create(words: js.Array[X64WordArray]): X64WordArray = js.native
-          @JSImport("@hapi/hawk/lib/browser", "crypto.utils.x64.WordArray.create")
-          @js.native
-          def create(words: js.Array[X64WordArray], sigBytes: Double): X64WordArray = js.native
+          val ^ : js.Any = js.native
+          
+          @scala.inline
+          def create(): X64WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[X64WordArray]
+          @scala.inline
+          def create(words: js.Array[X64WordArray]): X64WordArray = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any]).asInstanceOf[X64WordArray]
+          @scala.inline
+          def create(words: js.Array[X64WordArray], sigBytes: Double): X64WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any], sigBytes.asInstanceOf[js.Any])).asInstanceOf[X64WordArray]
+          @scala.inline
+          def create(words: Unit, sigBytes: Double): X64WordArray = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(words.asInstanceOf[js.Any], sigBytes.asInstanceOf[js.Any])).asInstanceOf[X64WordArray]
         }
       }
     }
@@ -1093,70 +1079,56 @@ object browserMod {
   
   object utils {
     
-    @JSImport("@hapi/hawk/lib/browser", "utils.base64urlEncode")
+    @JSImport("@hapi/hawk/lib/browser", "utils")
     @js.native
-    def base64urlEncode(value: String): String = js.native
-    @JSImport("@hapi/hawk/lib/browser", "utils.base64urlEncode")
-    @js.native
-    def base64urlEncode(value: String, encoding: BufferEncoding): String = js.native
-    @JSImport("@hapi/hawk/lib/browser", "utils.base64urlEncode")
-    @js.native
-    def base64urlEncode(value: Buffer): String = js.native
-    @JSImport("@hapi/hawk/lib/browser", "utils.base64urlEncode")
-    @js.native
-    def base64urlEncode(value: Buffer, encoding: BufferEncoding): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@hapi/hawk/lib/browser", "utils.escapeHeaderAttribute")
-    @js.native
-    def escapeHeaderAttribute(attribute: String): String = js.native
+    @scala.inline
+    def base64urlEncode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64urlEncode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def base64urlEncode(value: String, encoding: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("base64urlEncode")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def base64urlEncode(value: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64urlEncode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def base64urlEncode(value: Buffer, encoding: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("base64urlEncode")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@hapi/hawk/lib/browser", "utils.getNtpSecOffset")
-    @js.native
-    def getNtpSecOffset(): Double = js.native
+    @scala.inline
+    def escapeHeaderAttribute(attribute: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHeaderAttribute")(attribute.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@hapi/hawk/lib/browser", "utils.now")
-    @js.native
-    def now(): Double = js.native
-    @JSImport("@hapi/hawk/lib/browser", "utils.now")
-    @js.native
-    def now(localtimeOffsetMsec: Double): Double = js.native
+    @scala.inline
+    def getNtpSecOffset(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNtpSecOffset")().asInstanceOf[Double]
     
-    @JSImport("@hapi/hawk/lib/browser", "utils.nowSec")
-    @js.native
-    def nowSec(): Double = js.native
-    @JSImport("@hapi/hawk/lib/browser", "utils.nowSec")
-    @js.native
-    def nowSec(localtimeOffsetMsec: Double): Double = js.native
+    @scala.inline
+    def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
+    @scala.inline
+    def now(localtimeOffsetMsec: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(localtimeOffsetMsec.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("@hapi/hawk/lib/browser", "utils.parseAuthorizationHeader")
-    @js.native
-    def parseAuthorizationHeader(header: String): Record[String, String] = js.native
-    @JSImport("@hapi/hawk/lib/browser", "utils.parseAuthorizationHeader")
-    @js.native
-    def parseAuthorizationHeader(header: String, keys: js.Array[String]): Record[String, String] = js.native
+    @scala.inline
+    def nowSec(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nowSec")().asInstanceOf[Double]
+    @scala.inline
+    def nowSec(localtimeOffsetMsec: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nowSec")(localtimeOffsetMsec.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("@hapi/hawk/lib/browser", "utils.parseContentType")
-    @js.native
-    def parseContentType(): String = js.native
-    @JSImport("@hapi/hawk/lib/browser", "utils.parseContentType")
-    @js.native
-    def parseContentType(header: String): String = js.native
+    @scala.inline
+    def parseAuthorizationHeader(header: String): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAuthorizationHeader")(header.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
+    @scala.inline
+    def parseAuthorizationHeader(header: String, keys: js.Array[String]): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAuthorizationHeader")(header.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
     
-    @JSImport("@hapi/hawk/lib/browser", "utils.parseUri")
-    @js.native
-    def parseUri(input: String): ParsedUri = js.native
+    @scala.inline
+    def parseContentType(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseContentType")().asInstanceOf[String]
+    @scala.inline
+    def parseContentType(header: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseContentType")(header.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@hapi/hawk/lib/browser", "utils.randomString")
-    @js.native
-    def randomString(size: Double): String = js.native
+    @scala.inline
+    def parseUri(input: String): ParsedUri = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUri")(input.asInstanceOf[js.Any]).asInstanceOf[ParsedUri]
     
-    @JSImport("@hapi/hawk/lib/browser", "utils.setNtpSecOffset")
-    @js.native
-    def setNtpSecOffset(offset: Double): Unit = js.native
+    @scala.inline
+    def randomString(size: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(size.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@hapi/hawk/lib/browser", "utils.setStorage")
-    @js.native
-    def setStorage(storage: Storage): Unit = js.native
+    @scala.inline
+    def setNtpSecOffset(offset: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setNtpSecOffset")(offset.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def setStorage(storage: Storage): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStorage")(storage.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("@hapi/hawk/lib/browser", "utils.storage")
     @js.native
@@ -1167,14 +1139,13 @@ object browserMod {
     @js.native
     val uriRegex: RegExp = js.native
     
-    @js.native
     trait ParsedUri extends StObject {
       
-      var host: String = js.native
+      var host: String
       
-      var port: String = js.native
+      var port: String
       
-      var resource: String = js.native
+      var resource: String
     }
     object ParsedUri {
       

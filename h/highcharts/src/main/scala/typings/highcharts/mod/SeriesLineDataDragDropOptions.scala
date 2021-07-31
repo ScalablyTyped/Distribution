@@ -2,79 +2,77 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesLineDataDragDropOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) Options for the drag handles.
     */
-  var dragHandle: js.UndefOr[DragDropHandleOptionsObject] = js.native
+  var dragHandle: js.UndefOr[DragDropHandleOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Set the maximum X value the points can be
     * moved to.
     */
-  var dragMaxX: js.UndefOr[Double] = js.native
+  var dragMaxX: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Set the maximum Y value the points can be
     * moved to.
     */
-  var dragMaxY: js.UndefOr[Double] = js.native
+  var dragMaxY: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Set the minimum X value the points can be
     * moved to.
     */
-  var dragMinX: js.UndefOr[Double] = js.native
+  var dragMinX: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Set the minimum Y value the points can be
     * moved to.
     */
-  var dragMinY: js.UndefOr[Double] = js.native
+  var dragMinY: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The X precision value to drag to for this
     * series. Set to 0 to disable. By default this is disabled, except for
     * category axes, where the default is 1.
     */
-  var dragPrecisionX: js.UndefOr[Double] = js.native
+  var dragPrecisionX: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The Y precision value to drag to for this
     * series. Set to 0 to disable. By default this is disabled, except for
     * category axes, where the default is 1.
     */
-  var dragPrecisionY: js.UndefOr[Double] = js.native
+  var dragPrecisionY: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The amount of pixels to drag the pointer
     * before it counts as a drag operation. This prevents drag/drop to fire
     * when just clicking or selecting points.
     */
-  var dragSensitivity: js.UndefOr[Double] = js.native
+  var dragSensitivity: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Enable dragging in the X dimension.
     */
-  var draggableX: js.UndefOr[Boolean] = js.native
+  var draggableX: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Enable dragging in the Y dimension. Note
     * that this is not supported for TreeGrid axes (the default axis type in
     * Gantt charts).
     */
-  var draggableY: js.UndefOr[Boolean] = js.native
+  var draggableY: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Group the points by a property. Points
     * with the same property value will be grouped together when moving.
     */
-  var groupBy: js.UndefOr[String] = js.native
+  var groupBy: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Style options for the guide box. The guide
@@ -82,13 +80,13 @@ trait SeriesLineDataDragDropOptions extends StObject {
     */
   var guideBox: js.UndefOr[
     SeriesAreaDataDragDropGuideBoxOptions | SeriesArearangeDataDragDropGuideBoxOptions | SeriesAreasplineDataDragDropGuideBoxOptions | SeriesAreasplinerangeDataDragDropGuideBoxOptions | SeriesBarDataDragDropGuideBoxOptions | SeriesBoxplotDataDragDropGuideBoxOptions | SeriesBubbleDataDragDropGuideBoxOptions | SeriesBulletDataDragDropGuideBoxOptions | SeriesCandlestickDataDragDropGuideBoxOptions | SeriesColumnDataDragDropGuideBoxOptions | SeriesColumnpyramidDataDragDropGuideBoxOptions | SeriesColumnrangeDataDragDropGuideBoxOptions | SeriesCylinderDataDragDropGuideBoxOptions | SeriesDumbbellDataDragDropGuideBoxOptions | SeriesErrorbarDataDragDropGuideBoxOptions | SeriesFlagsDataDragDropGuideBoxOptions | SeriesFunnelDataDragDropGuideBoxOptions | SeriesGanttDataDragDropGuideBoxOptions | SeriesGaugeDataDragDropGuideBoxOptions | SeriesHeatmapDataDragDropGuideBoxOptions | SeriesItemDataDragDropGuideBoxOptions | SeriesLineDataDragDropGuideBoxOptions | SeriesLollipopDataDragDropGuideBoxOptions | SeriesNetworkgraphDataDragDropGuideBoxOptions | SeriesOhlcDataDragDropGuideBoxOptions | SeriesPackedbubbleDataDragDropGuideBoxOptions | SeriesParetoDataDragDropGuideBoxOptions | SeriesPieDataDragDropGuideBoxOptions | SeriesPolygonDataDragDropGuideBoxOptions | SeriesPyramidDataDragDropGuideBoxOptions | SeriesScatter3dDataDragDropGuideBoxOptions | SeriesScatterDataDragDropGuideBoxOptions | SeriesSolidgaugeDataDragDropGuideBoxOptions | SeriesSplineDataDragDropGuideBoxOptions | SeriesStreamgraphDataDragDropGuideBoxOptions | SeriesSunburstDataDragDropGuideBoxOptions | SeriesTilemapDataDragDropGuideBoxOptions | SeriesTimelineDataDragDropGuideBoxOptions | SeriesTreemapDataDragDropGuideBoxOptions | SeriesVariablepieDataDragDropGuideBoxOptions | SeriesVariwideDataDragDropGuideBoxOptions | SeriesVectorDataDragDropGuideBoxOptions | SeriesVennDataDragDropGuideBoxOptions | SeriesWaterfallDataDragDropGuideBoxOptions | SeriesWindbarbDataDragDropGuideBoxOptions | SeriesWordcloudDataDragDropGuideBoxOptions | SeriesXrangeDataDragDropGuideBoxOptions | Dictionary[DragDropGuideBoxOptionsObject]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Update points as they are dragged. If
     * false, a guide box is drawn to illustrate the new point size.
     */
-  var liveRedraw: js.UndefOr[Boolean] = js.native
+  var liveRedraw: js.UndefOr[Boolean] = js.undefined
 }
 object SeriesLineDataDragDropOptions {
   

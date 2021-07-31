@@ -5,10 +5,13 @@ import typings.tensorflowTfjsData.lazyIteratorMod.LazyIterator
 import typings.tensorflowTfjsData.typesMod.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datasetMod {
+  
+  @JSImport("@tensorflow/tfjs-data/dist/dataset", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-data/dist/dataset", "Dataset")
   @js.native
@@ -223,9 +226,9 @@ object datasetMod {
       * @doc {heading: 'Data', subheading: 'Classes'}
       */
     def shuffle(bufferSize: Double): Dataset[T] = js.native
-    def shuffle(bufferSize: Double, seed: js.UndefOr[scala.Nothing], reshuffleEachIteration: Boolean): Dataset[T] = js.native
     def shuffle(bufferSize: Double, seed: String): Dataset[T] = js.native
     def shuffle(bufferSize: Double, seed: String, reshuffleEachIteration: Boolean): Dataset[T] = js.native
+    def shuffle(bufferSize: Double, seed: Unit, reshuffleEachIteration: Boolean): Dataset[T] = js.native
     
     val size: Double = js.native
     
@@ -306,20 +309,16 @@ object datasetMod {
     val MAX_BUFFER_SIZE: /* 10000 */ Double = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-data/dist/dataset", "array")
-  @js.native
-  def array[T /* <: TensorContainer */](items: js.Array[T]): Dataset[T] = js.native
+  @scala.inline
+  def array[T /* <: TensorContainer */](items: js.Array[T]): Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(items.asInstanceOf[js.Any]).asInstanceOf[Dataset[T]]
   
-  @JSImport("@tensorflow/tfjs-data/dist/dataset", "datasetFromIteratorFn")
-  @js.native
-  def datasetFromIteratorFn[T /* <: TensorContainer */](iteratorFn: js.Function0[js.Promise[LazyIterator[T]]]): Dataset[T] = js.native
-  @JSImport("@tensorflow/tfjs-data/dist/dataset", "datasetFromIteratorFn")
-  @js.native
-  def datasetFromIteratorFn[T /* <: TensorContainer */](iteratorFn: js.Function0[js.Promise[LazyIterator[T]]], size: Double): Dataset[T] = js.native
+  @scala.inline
+  def datasetFromIteratorFn[T /* <: TensorContainer */](iteratorFn: js.Function0[js.Promise[LazyIterator[T]]]): Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("datasetFromIteratorFn")(iteratorFn.asInstanceOf[js.Any]).asInstanceOf[Dataset[T]]
+  @scala.inline
+  def datasetFromIteratorFn[T /* <: TensorContainer */](iteratorFn: js.Function0[js.Promise[LazyIterator[T]]], size: Double): Dataset[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("datasetFromIteratorFn")(iteratorFn.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Dataset[T]]
   
-  @JSImport("@tensorflow/tfjs-data/dist/dataset", "zip")
-  @js.native
-  def zip[O /* <: TensorContainer */](datasets: DatasetContainer): Dataset[O] = js.native
+  @scala.inline
+  def zip[O /* <: TensorContainer */](datasets: DatasetContainer): Dataset[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(datasets.asInstanceOf[js.Any]).asInstanceOf[Dataset[O]]
   
   type DatasetContainer = Container[Dataset[TensorContainer]]
 }

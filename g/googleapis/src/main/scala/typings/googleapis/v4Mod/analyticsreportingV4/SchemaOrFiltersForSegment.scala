@@ -2,20 +2,18 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of segment filters in the `OR` group are combined with the logical
   * OR operator.
   */
-@js.native
 trait SchemaOrFiltersForSegment extends StObject {
   
   /**
     * List of segment filters to be combined with a `OR` operator.
     */
-  var segmentFilterClauses: js.UndefOr[js.Array[SchemaSegmentFilterClause]] = js.native
+  var segmentFilterClauses: js.UndefOr[js.Array[SchemaSegmentFilterClause]] = js.undefined
 }
 object SchemaOrFiltersForSegment {
   

@@ -12,7 +12,7 @@ Get accurate element dimensions, even if it's hidden!
 | Keywords           | dimensions, measure node, measure element, width, height, hidden element width, hidden element height, actual |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 11562867 |
+| # downloads        | 13874169 |
 | # stars            | 1 |
 
 ## Links

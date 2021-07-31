@@ -2,19 +2,17 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastFetchTs extends StObject {
   
-  var broadcastId: String = js.native
+  var broadcastId: String
   
-  var lastFetchTs: Double | String = js.native
+  var lastFetchTs: Double | String
   
-  var lastSeenTs: Double | String = js.native
+  var lastSeenTs: Double | String
   
-  var lastTotalCount: Double | String = js.native
+  var lastTotalCount: Double | String
 }
 object LastFetchTs {
   

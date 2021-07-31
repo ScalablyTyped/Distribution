@@ -2,26 +2,24 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Lists the messages in the specified HL7v2 store.
   */
-@js.native
 trait SchemaListMessagesResponse extends StObject {
   
   /**
     * The returned message names. Won&#39;t be more values than the value of
     * page_size in the request.
     */
-  var messages: js.UndefOr[js.Array[String]] = js.native
+  var messages: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Token to retrieve the next page of results or empty if there are no more
     * results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListMessagesResponse {
   

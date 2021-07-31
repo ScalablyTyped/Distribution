@@ -3,10 +3,8 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCredentialsForIdentityInput extends StObject {
   
   /**
@@ -15,12 +13,12 @@ trait GetCredentialsForIdentityInput extends StObject {
     *          provider. This parameter is optional for identity providers that do not support role
     *          customization.</p>
     */
-  var CustomRoleArn: js.UndefOr[String] = js.native
+  var CustomRoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * <p>A unique identifier in the format REGION:GUID.</p>
     */
-  var IdentityId: js.UndefOr[String] = js.native
+  var IdentityId: js.UndefOr[String] = js.undefined
   
   /**
     * <p>A set of optional name-value pairs that map provider names to provider tokens. The
@@ -33,7 +31,7 @@ trait GetCredentialsForIdentityInput extends StObject {
     *          examples in the <a href="http://docs.aws.amazon.com/cognito/latest/developerguide/external-identity-providers.html">External Identity Providers</a> section of the Amazon Cognito Developer
     *          Guide.</p>
     */
-  var Logins: js.UndefOr[StringDictionary[String]] = js.native
+  var Logins: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object GetCredentialsForIdentityInput {
   
@@ -43,9 +41,12 @@ object GetCredentialsForIdentityInput {
     __obj.asInstanceOf[GetCredentialsForIdentityInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetCredentialsForIdentityInput.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetCredentialsForIdentityInput")
   @js.native
-  def filterSensitiveLog(obj: GetCredentialsForIdentityInput): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: GetCredentialsForIdentityInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class GetCredentialsForIdentityInputMutableBuilder[Self <: GetCredentialsForIdentityInput] (val x: Self) extends AnyVal {

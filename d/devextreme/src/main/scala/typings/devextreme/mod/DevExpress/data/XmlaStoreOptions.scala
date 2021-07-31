@@ -3,31 +3,29 @@ package typings.devextreme.mod.DevExpress.data
 import typings.devextreme.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XmlaStoreOptions extends StObject {
   
   /**
     * [descr:XmlaStore.Options.beforeSend]
     */
-  var beforeSend: js.UndefOr[js.Function1[/* options */ Data, _]] = js.native
+  var beforeSend: js.UndefOr[js.Function1[/* options */ Data, js.Any]] = js.undefined
   
   /**
     * [descr:XmlaStore.Options.catalog]
     */
-  var catalog: js.UndefOr[String] = js.native
+  var catalog: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:XmlaStore.Options.cube]
     */
-  var cube: js.UndefOr[String] = js.native
+  var cube: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:XmlaStore.Options.url]
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object XmlaStoreOptions {
   
@@ -41,7 +39,7 @@ object XmlaStoreOptions {
   implicit class XmlaStoreOptionsMutableBuilder[Self <: XmlaStoreOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setBeforeSend(value: /* options */ Data => _): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
+    def setBeforeSend(value: /* options */ Data => js.Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)

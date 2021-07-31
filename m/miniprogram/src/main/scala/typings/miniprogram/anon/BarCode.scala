@@ -2,17 +2,15 @@ package typings.miniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BarCode extends StObject {
   
-  var barCode: js.UndefOr[String] = js.native
+  var barCode: js.UndefOr[String] = js.undefined
   
-  var code: String = js.native
+  var code: String
   
-  var qrCode: js.UndefOr[String] = js.native
+  var qrCode: js.UndefOr[String] = js.undefined
 }
 object BarCode {
   

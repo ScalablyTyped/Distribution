@@ -3,13 +3,11 @@ package typings.rcSelect.anon
 import typings.rcSelect.interfaceMod.OptionData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var prevValueOptions: js.UndefOr[js.Array[OptionData]] = js.native
+  var prevValueOptions: js.UndefOr[js.Array[OptionData]] = js.undefined
 }
 object `1` {
   

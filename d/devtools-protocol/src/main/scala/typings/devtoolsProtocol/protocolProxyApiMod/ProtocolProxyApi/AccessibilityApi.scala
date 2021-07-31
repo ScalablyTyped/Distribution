@@ -7,32 +7,30 @@ import typings.devtoolsProtocol.mod.Protocol.Accessibility.QueryAXTreeRequest
 import typings.devtoolsProtocol.mod.Protocol.Accessibility.QueryAXTreeResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessibilityApi extends StObject {
   
   /**
     * Disables the accessibility domain.
     */
-  def disable(): js.Promise[Unit] = js.native
+  def disable(): js.Promise[Unit]
   
   /**
     * Enables the accessibility domain which causes `AXNodeId`s to remain consistent between method calls.
     * This turns on accessibility for the page, which can impact performance until accessibility is disabled.
     */
-  def enable(): js.Promise[Unit] = js.native
+  def enable(): js.Promise[Unit]
   
   /**
     * Fetches the entire accessibility tree
     */
-  def getFullAXTree(): js.Promise[GetFullAXTreeResponse] = js.native
+  def getFullAXTree(): js.Promise[GetFullAXTreeResponse]
   
   /**
     * Fetches the accessibility node and partial accessibility tree for this DOM node, if it exists.
     */
-  def getPartialAXTree(params: GetPartialAXTreeRequest): js.Promise[GetPartialAXTreeResponse] = js.native
+  def getPartialAXTree(params: GetPartialAXTreeRequest): js.Promise[GetPartialAXTreeResponse]
   
   /**
     * Query a DOM node's accessibility subtree for accessible name and role.
@@ -41,7 +39,7 @@ trait AccessibilityApi extends StObject {
     * node is specified, or the DOM node does not exist, the command returns an error. If neither
     * `accessibleName` or `role` is specified, it returns all the accessibility nodes in the subtree.
     */
-  def queryAXTree(params: QueryAXTreeRequest): js.Promise[QueryAXTreeResponse] = js.native
+  def queryAXTree(params: QueryAXTreeRequest): js.Promise[QueryAXTreeResponse]
 }
 object AccessibilityApi {
   

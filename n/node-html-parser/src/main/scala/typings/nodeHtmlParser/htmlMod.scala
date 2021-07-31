@@ -9,10 +9,13 @@ import typings.nodeHtmlParser.anon.Valid
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object htmlMod {
+  
+  @JSImport("node-html-parser/dist/nodes/html", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-html-parser/dist/nodes/html", JSImport.Default)
   @js.native
@@ -29,32 +32,28 @@ object htmlMod {
     def this(
       tagName: String,
       keyAttrs: KeyAttributes,
-      rawAttrs: js.UndefOr[scala.Nothing],
+      rawAttrs: String,
       parentNode: typings.nodeHtmlParser.nodeMod.default
     ) = this()
     def this(
       tagName: String,
       keyAttrs: KeyAttributes,
-      rawAttrs: String,
+      rawAttrs: Unit,
       parentNode: typings.nodeHtmlParser.nodeMod.default
     ) = this()
   }
   
-  @JSImport("node-html-parser/dist/nodes/html", "parse")
-  @js.native
-  def parse(data: String): HTMLElementvalidboolean = js.native
-  @JSImport("node-html-parser/dist/nodes/html", "parse")
-  @js.native
-  def parse(data: String, options: PartialOptions): HTMLElementvalidboolean = js.native
-  @JSImport("node-html-parser/dist/nodes/html", "parse")
-  @js.native
-  def parse(data: String, options: PartialOptionsnoFixfalse): HTMLElementvalidboolean = js.native
-  @JSImport("node-html-parser/dist/nodes/html", "parse")
-  @js.native
-  def parse(data: String, options: PartialOptionsnoFixtrue): (HTMLElement | typings.nodeHtmlParser.textMod.default) with Valid = js.native
-  @JSImport("node-html-parser/dist/nodes/html", "parse")
-  @js.native
-  def parse_Intersection(data: String): (HTMLElement | typings.nodeHtmlParser.textMod.default) with Valid = js.native
+  @scala.inline
+  def parse(data: String): HTMLElementvalidboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[HTMLElementvalidboolean]
+  @scala.inline
+  def parse(data: String, options: PartialOptions): HTMLElementvalidboolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElementvalidboolean]
+  @scala.inline
+  def parse(data: String, options: PartialOptionsnoFixfalse): HTMLElementvalidboolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElementvalidboolean]
+  @scala.inline
+  def parse(data: String, options: PartialOptionsnoFixtrue): (HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid]
+  
+  @scala.inline
+  def parse_Intersection(data: String): (HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[(HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid]
   
   type Attributes = StringDictionary[String]
   
@@ -247,12 +246,11 @@ object htmlMod {
     def beforeend: typings.nodeHtmlParser.nodeHtmlParserStrings.beforeend = "beforeend".asInstanceOf[typings.nodeHtmlParser.nodeHtmlParserStrings.beforeend]
   }
   
-  @js.native
   trait KeyAttributes extends StObject {
     
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
   }
   object KeyAttributes {
     
@@ -279,14 +277,13 @@ object htmlMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var blockTextElements: StringDictionary[Boolean] = js.native
+    var blockTextElements: StringDictionary[Boolean]
     
-    var comment: Boolean = js.native
+    var comment: Boolean
     
-    var lowerCaseTagName: Boolean = js.native
+    var lowerCaseTagName: Boolean
   }
   object Options {
     

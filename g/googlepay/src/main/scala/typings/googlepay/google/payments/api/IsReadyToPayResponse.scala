@@ -4,7 +4,6 @@ import typings.googlepay.googlepayBooleans.`false`
 import typings.googlepay.googlepayBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * }
   * ```
   */
-@js.native
 trait IsReadyToPayResponse extends StObject {
   
   /**
@@ -34,7 +32,7 @@ trait IsReadyToPayResponse extends StObject {
     * [[PaymentsClient|`PaymentsClient`]] is configured for a test
     * environment.
     */
-  var paymentMethodPresent: js.UndefOr[`false` | `true`] = js.native
+  var paymentMethodPresent: js.UndefOr[`false` | `true`] = js.undefined
   
   /**
     * Whether the user is able to provide payment information through the
@@ -46,7 +44,7 @@ trait IsReadyToPayResponse extends StObject {
     * Account and providing one of the payment methods specified in
     * [[IsReadyToPayRequest.allowedPaymentMethods|`IsReadyToPayRequest.allowedPaymentMethods`]].
     */
-  var result: Boolean = js.native
+  var result: Boolean
 }
 object IsReadyToPayResponse {
   

@@ -5,21 +5,23 @@ import typings.rcFieldForm.interfaceMod.NamePath
 import typings.scrollIntoViewIfNeeded.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useFormMod {
   
-  @JSImport("antd/lib/form/hooks/useForm", JSImport.Default)
+  @JSImport("antd/lib/form/hooks/useForm", JSImport.Namespace)
   @js.native
-  def default[Values](): js.Array[FormInstance[Values]] = js.native
-  @JSImport("antd/lib/form/hooks/useForm", JSImport.Default)
-  @js.native
-  def default[Values](form: FormInstance[Values]): js.Array[FormInstance[Values]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[Values](): js.Array[FormInstance[Values]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[FormInstance[Values]]]
+  @scala.inline
+  def default[Values](form: FormInstance[Values]): js.Array[FormInstance[Values]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(form.asInstanceOf[js.Any]).asInstanceOf[js.Array[FormInstance[Values]]]
   
   @js.native
   trait FormInstance[Values]
-    extends typings.rcFieldForm.interfaceMod.FormInstance[Values] {
+    extends StObject
+       with typings.rcFieldForm.interfaceMod.FormInstance[Values] {
     
     /** This is an internal usage. Do not use in your prod */
     var __INTERNAL__ : ItemRef = js.native
@@ -27,6 +29,6 @@ object useFormMod {
     def getFieldInstance(name: NamePath): js.Any = js.native
     
     def scrollToField(name: NamePath): Unit = js.native
-    def scrollToField(name: NamePath, options: Options[_]): Unit = js.native
+    def scrollToField(name: NamePath, options: Options[js.Any]): Unit = js.native
   }
 }

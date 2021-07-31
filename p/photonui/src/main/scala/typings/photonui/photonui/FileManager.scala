@@ -3,22 +3,22 @@ package typings.photonui.photonui
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //Widgets
-@js.native
-trait FileManager extends Base {
+trait FileManager
+  extends StObject
+     with Base {
   
-  var acceptedExts: js.Array[String] = js.native
+  var acceptedExts: js.Array[String]
   
-  var acceptedMimes: js.Array[String] = js.native
+  var acceptedMimes: js.Array[String]
   
-  var dropZone: HTMLElement = js.native
+  var dropZone: HTMLElement
   
-  var multiselect: Boolean = js.native
+  var multiselect: Boolean
   
-  def open(): Unit = js.native
+  def open(): Unit
 }
 object FileManager {
   

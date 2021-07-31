@@ -10,7 +10,6 @@ import typings.angularRouter.mod.ChildrenOutletContexts
 import typings.angularRouter.mod.Router
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular", "IonRouterOutlet")
@@ -26,7 +25,7 @@ class IonRouterOutlet protected ()
     config: typings.ionicAngular.configMod.Config,
     navCtrl: typings.ionicAngular.navControllerMod.NavController,
     commonLocation: Location,
-    elementRef: ElementRef[_],
+    elementRef: ElementRef[js.Any],
     router: Router,
     zone: NgZone,
     activatedRoute: ActivatedRoute
@@ -40,7 +39,7 @@ class IonRouterOutlet protected ()
     config: typings.ionicAngular.configMod.Config,
     navCtrl: typings.ionicAngular.navControllerMod.NavController,
     commonLocation: Location,
-    elementRef: ElementRef[_],
+    elementRef: ElementRef[js.Any],
     router: Router,
     zone: NgZone,
     activatedRoute: ActivatedRoute,

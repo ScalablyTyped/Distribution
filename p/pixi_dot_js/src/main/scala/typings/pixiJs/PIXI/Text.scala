@@ -4,7 +4,6 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,7 +32,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait Text extends Sprite {
+trait Text
+  extends StObject
+     with Sprite {
   
   /**
     * The resolution / device pixel ratio of the canvas.

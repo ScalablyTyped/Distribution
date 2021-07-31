@@ -4,59 +4,59 @@ import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait b2MouseJoint extends b2Joint {
+trait b2MouseJoint
+  extends StObject
+     with b2Joint {
   
   /**
     * Gets the damping ratio.
     * @return Damping ratio.
     **/
-  def GetDampingRatio(): Double = js.native
+  def GetDampingRatio(): Double
   
   /**
     * Gets the frequency.
     * @return Frequency.
     **/
-  def GetFrequency(): Double = js.native
+  def GetFrequency(): Double
   
   /**
     * Gets the max force.
     * @return Max force.
     **/
-  def GetMaxForce(): Double = js.native
+  def GetMaxForce(): Double
   
   /**
     * Gets the target.
     * @return Target.
     **/
-  def GetTarget(): b2Vec2 = js.native
+  def GetTarget(): b2Vec2
   
   /**
     * Sets the damping ratio.
     * @param ratio New damping ratio.
     **/
-  def SetDampingRatio(ratio: Double): Unit = js.native
+  def SetDampingRatio(ratio: Double): Unit
   
   /**
     * Sets the frequency.
     * @param hz New frequency (hertz).
     **/
-  def SetFrequency(hz: Double): Unit = js.native
+  def SetFrequency(hz: Double): Unit
   
   /**
     * Sets the max force.
     * @param maxForce New max force.
     **/
-  def SetMaxForce(maxForce: Double): Unit = js.native
+  def SetMaxForce(maxForce: Double): Unit
   
   /**
     * Use this to update the target point.
     * @param target New target.
     **/
-  def SetTarget(target: b2Vec2): Unit = js.native
+  def SetTarget(target: b2Vec2): Unit
 }
 object b2MouseJoint {
   

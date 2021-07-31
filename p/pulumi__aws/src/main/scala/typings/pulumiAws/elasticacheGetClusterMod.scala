@@ -5,30 +5,30 @@ import typings.pulumiAws.outputMod.elasticache.GetClusterCacheNode
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticacheGetClusterMod {
   
-  @JSImport("@pulumi/aws/elasticache/getCluster", "getCluster")
+  @JSImport("@pulumi/aws/elasticache/getCluster", JSImport.Namespace)
   @js.native
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
-  @JSImport("@pulumi/aws/elasticache/getCluster", "getCluster")
-  @js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
+  @scala.inline
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
+  
   trait GetClusterArgs extends StObject {
     
     /**
       * Group identifier.
       */
-    val clusterId: String = js.native
+    val clusterId: String
     
     /**
       * The tags assigned to the resource
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetClusterArgs {
     
@@ -52,118 +52,117 @@ object elasticacheGetClusterMod {
     }
   }
   
-  @js.native
   trait GetClusterResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The Availability Zone for the cache cluster.
       */
-    val availabilityZone: String = js.native
+    val availabilityZone: String
     
     /**
       * List of node objects including `id`, `address`, `port` and `availabilityZone`.
       * Referenceable e.g. as `${data.aws_elasticache_cluster.bar.cache_nodes.0.address}`
       */
-    val cacheNodes: js.Array[GetClusterCacheNode] = js.native
+    val cacheNodes: js.Array[GetClusterCacheNode]
     
     /**
       * (Memcached only) The DNS name of the cache cluster without the port appended.
       */
-    val clusterAddress: String = js.native
+    val clusterAddress: String
     
-    val clusterId: String = js.native
+    val clusterId: String
     
     /**
       * (Memcached only) The configuration endpoint to allow host discovery.
       */
-    val configurationEndpoint: String = js.native
+    val configurationEndpoint: String
     
     /**
       * Name of the cache engine.
       */
-    val engine: String = js.native
+    val engine: String
     
     /**
       * Version number of the cache engine.
       */
-    val engineVersion: String = js.native
+    val engineVersion: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Specifies the weekly time range for when maintenance
       * on the cache cluster is performed.
       */
-    val maintenanceWindow: String = js.native
+    val maintenanceWindow: String
     
     /**
       * The cluster node type.
       */
-    val nodeType: String = js.native
+    val nodeType: String
     
     /**
       * An Amazon Resource Name (ARN) of an
       * SNS topic that ElastiCache notifications get sent to.
       */
-    val notificationTopicArn: String = js.native
+    val notificationTopicArn: String
     
     /**
       * The number of cache nodes that the cache cluster has.
       */
-    val numCacheNodes: Double = js.native
+    val numCacheNodes: Double
     
     /**
       * Name of the parameter group associated with this cache cluster.
       */
-    val parameterGroupName: String = js.native
+    val parameterGroupName: String
     
     /**
       * The port number on which each of the cache nodes will
       * accept connections.
       */
-    val port: Double = js.native
+    val port: Double
     
     /**
       * The replication group to which this cache cluster belongs.
       */
-    val replicationGroupId: String = js.native
+    val replicationGroupId: String
     
     /**
       * List VPC security groups associated with the cache cluster.
       */
-    val securityGroupIds: js.Array[String] = js.native
+    val securityGroupIds: js.Array[String]
     
     /**
       * List of security group names associated with this cache cluster.
       */
-    val securityGroupNames: js.Array[String] = js.native
+    val securityGroupNames: js.Array[String]
     
     /**
       * The number of days for which ElastiCache will
       * retain automatic cache cluster snapshots before deleting them.
       */
-    val snapshotRetentionLimit: Double = js.native
+    val snapshotRetentionLimit: Double
     
     /**
       * The daily time range (in UTC) during which ElastiCache will
       * begin taking a daily snapshot of the cache cluster.
       */
-    val snapshotWindow: String = js.native
+    val snapshotWindow: String
     
     /**
       * Name of the subnet group associated to the cache cluster.
       */
-    val subnetGroupName: String = js.native
+    val subnetGroupName: String
     
     /**
       * The tags assigned to the resource
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetClusterResult {
     

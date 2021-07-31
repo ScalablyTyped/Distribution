@@ -3,7 +3,6 @@ package typings.appBuilderLib
 import typings.builderUtil.mod.TmpDir
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object macCodeSignMod {
@@ -26,25 +25,19 @@ object macCodeSignMod {
   @js.native
   val appleCertificatePrefixes: js.Array[String] = js.native
   
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "createKeychain")
-  @js.native
-  def createKeychain(hasTmpDirCscLinkCscKeyPasswordCscILinkCscIKeyPasswordCurrentDir: CreateKeychainOptions): js.Promise[CodeSigningInfo] = js.native
+  @scala.inline
+  def createKeychain(hasTmpDirCscLinkCscKeyPasswordCscILinkCscIKeyPasswordCurrentDir: CreateKeychainOptions): js.Promise[CodeSigningInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeychain")(hasTmpDirCscLinkCscKeyPasswordCscILinkCscIKeyPasswordCurrentDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CodeSigningInfo]]
   
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "findIdentity")
-  @js.native
-  def findIdentity(certType: CertType): js.Promise[Identity | Null] = js.native
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "findIdentity")
-  @js.native
-  def findIdentity(certType: CertType, qualifier: js.UndefOr[scala.Nothing], keychain: String): js.Promise[Identity | Null] = js.native
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "findIdentity")
-  @js.native
-  def findIdentity(certType: CertType, qualifier: String): js.Promise[Identity | Null] = js.native
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "findIdentity")
-  @js.native
-  def findIdentity(certType: CertType, qualifier: String, keychain: String): js.Promise[Identity | Null] = js.native
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "findIdentity")
-  @js.native
-  def findIdentity(certType: CertType, qualifier: Null, keychain: String): js.Promise[Identity | Null] = js.native
+  @scala.inline
+  def findIdentity(certType: CertType): js.Promise[Identity | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIdentity")(certType.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Identity | Null]]
+  @scala.inline
+  def findIdentity(certType: CertType, qualifier: String): js.Promise[Identity | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findIdentity")(certType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Identity | Null]]
+  @scala.inline
+  def findIdentity(certType: CertType, qualifier: String, keychain: String): js.Promise[Identity | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findIdentity")(certType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychain.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Identity | Null]]
+  @scala.inline
+  def findIdentity(certType: CertType, qualifier: Null, keychain: String): js.Promise[Identity | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findIdentity")(certType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychain.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Identity | Null]]
+  @scala.inline
+  def findIdentity(certType: CertType, qualifier: Unit, keychain: String): js.Promise[Identity | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findIdentity")(certType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychain.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Identity | Null]]
   
   @JSImport("app-builder-lib/out/codeSign/macCodeSign", "findIdentityRawResult")
   @js.native
@@ -52,105 +45,91 @@ object macCodeSignMod {
   @scala.inline
   def findIdentityRawResult_=(x: js.Promise[js.Array[String]] | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findIdentityRawResult")(x.asInstanceOf[js.Any])
   
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "isSignAllowed")
-  @js.native
-  def isSignAllowed(): Boolean = js.native
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "isSignAllowed")
-  @js.native
-  def isSignAllowed(isPrintWarn: Boolean): Boolean = js.native
+  @scala.inline
+  def isSignAllowed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignAllowed")().asInstanceOf[Boolean]
+  @scala.inline
+  def isSignAllowed(isPrintWarn: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignAllowed")(isPrintWarn.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "removeKeychain")
-  @js.native
-  def removeKeychain(keychainFile: String): js.Promise[_] = js.native
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "removeKeychain")
-  @js.native
-  def removeKeychain(keychainFile: String, printWarn: Boolean): js.Promise[_] = js.native
+  @scala.inline
+  def removeKeychain(keychainFile: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeKeychain")(keychainFile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def removeKeychain(keychainFile: String, printWarn: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeKeychain")(keychainFile.asInstanceOf[js.Any], printWarn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "reportError")
-  @js.native
-  def reportError(
-    isMas: Boolean,
-    certificateType: CertType,
-    qualifier: js.UndefOr[scala.Nothing],
-    keychainFile: js.UndefOr[scala.Nothing],
-    isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "reportError")
-  @js.native
-  def reportError(
-    isMas: Boolean,
-    certificateType: CertType,
-    qualifier: js.UndefOr[scala.Nothing],
-    keychainFile: String,
-    isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "reportError")
-  @js.native
-  def reportError(
-    isMas: Boolean,
-    certificateType: CertType,
-    qualifier: js.UndefOr[scala.Nothing],
-    keychainFile: Null,
-    isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "reportError")
-  @js.native
-  def reportError(
-    isMas: Boolean,
-    certificateType: CertType,
-    qualifier: String,
-    keychainFile: js.UndefOr[scala.Nothing],
-    isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "reportError")
-  @js.native
+  @scala.inline
   def reportError(
     isMas: Boolean,
     certificateType: CertType,
     qualifier: String,
     keychainFile: String,
     isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "reportError")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def reportError(
     isMas: Boolean,
     certificateType: CertType,
     qualifier: String,
     keychainFile: Null,
     isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "reportError")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def reportError(
     isMas: Boolean,
     certificateType: CertType,
-    qualifier: Null,
-    keychainFile: js.UndefOr[scala.Nothing],
+    qualifier: String,
+    keychainFile: Unit,
     isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "reportError")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def reportError(
     isMas: Boolean,
     certificateType: CertType,
     qualifier: Null,
     keychainFile: String,
     isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "reportError")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def reportError(
     isMas: Boolean,
     certificateType: CertType,
     qualifier: Null,
     keychainFile: Null,
     isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def reportError(
+    isMas: Boolean,
+    certificateType: CertType,
+    qualifier: Null,
+    keychainFile: Unit,
+    isForceCodeSigning: Boolean
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def reportError(
+    isMas: Boolean,
+    certificateType: CertType,
+    qualifier: Unit,
+    keychainFile: String,
+    isForceCodeSigning: Boolean
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def reportError(
+    isMas: Boolean,
+    certificateType: CertType,
+    qualifier: Unit,
+    keychainFile: Null,
+    isForceCodeSigning: Boolean
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def reportError(
+    isMas: Boolean,
+    certificateType: CertType,
+    qualifier: Unit,
+    keychainFile: Unit,
+    isForceCodeSigning: Boolean
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("app-builder-lib/out/codeSign/macCodeSign", "sign")
-  @js.native
-  def sign(path: String, name: String, keychain: String): js.Promise[_] = js.native
+  @scala.inline
+  def sign(path: String, name: String, keychain: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(path.asInstanceOf[js.Any], name.asInstanceOf[js.Any], keychain.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.appBuilderLib.appBuilderLibStrings.`Developer ID Application`
@@ -178,10 +157,9 @@ object macCodeSignMod {
     def `Mac Developer`: typings.appBuilderLib.appBuilderLibStrings.`Mac Developer` = ("Mac Developer").asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.`Mac Developer`]
   }
   
-  @js.native
   trait CodeSigningInfo extends StObject {
     
-    var keychainFile: js.UndefOr[String | Null] = js.native
+    var keychainFile: js.UndefOr[String | Null] = js.undefined
   }
   object CodeSigningInfo {
     
@@ -205,20 +183,19 @@ object macCodeSignMod {
     }
   }
   
-  @js.native
   trait CreateKeychainOptions extends StObject {
     
-    var cscIKeyPassword: js.UndefOr[String | Null] = js.native
+    var cscIKeyPassword: js.UndefOr[String | Null] = js.undefined
     
-    var cscILink: js.UndefOr[String | Null] = js.native
+    var cscILink: js.UndefOr[String | Null] = js.undefined
     
-    var cscKeyPassword: String = js.native
+    var cscKeyPassword: String
     
-    var cscLink: String = js.native
+    var cscLink: String
     
-    var currentDir: String = js.native
+    var currentDir: String
     
-    var tmpDir: TmpDir = js.native
+    var tmpDir: TmpDir
   }
   object CreateKeychainOptions {
     

@@ -9,7 +9,6 @@ import typings.winrt.Windows.Storage.NameCollisionOption
 import typings.winrt.Windows.Storage.StorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Playlists {
@@ -21,13 +20,19 @@ object Playlists {
   object PlaylistFormat extends StObject {
     
     @js.native
-    sealed trait m3u extends PlaylistFormat
+    sealed trait m3u
+      extends StObject
+         with PlaylistFormat
     
     @js.native
-    sealed trait windowsMedia extends PlaylistFormat
+    sealed trait windowsMedia
+      extends StObject
+         with PlaylistFormat
     
     @js.native
-    sealed trait zune extends PlaylistFormat
+    sealed trait zune
+      extends StObject
+         with PlaylistFormat
   }
   
   @js.native
@@ -46,10 +51,9 @@ object Playlists {
     def saveAsync(): IAsyncAction = js.native
   }
   
-  @js.native
   trait IPlaylistStatics extends StObject {
     
-    def loadAsync(file: IStorageFile): IAsyncOperation[Playlist] = js.native
+    def loadAsync(file: IStorageFile): IAsyncOperation[Playlist]
   }
   object IPlaylistStatics {
     
@@ -68,5 +72,7 @@ object Playlists {
   }
   
   @js.native
-  trait Playlist extends IPlaylist
+  trait Playlist
+    extends StObject
+       with IPlaylist
 }

@@ -2,13 +2,11 @@ package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISystemConditionFactory extends StObject {
   
-  def create(conditionType: SystemConditionType): SystemCondition = js.native
+  def create(conditionType: SystemConditionType): SystemCondition
 }
 object ISystemConditionFactory {
   

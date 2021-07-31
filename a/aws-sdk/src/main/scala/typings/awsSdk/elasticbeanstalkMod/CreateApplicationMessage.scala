@@ -2,31 +2,29 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateApplicationMessage extends StObject {
   
   /**
     * The name of the application. Must be unique within your account.
     */
-  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName
   
   /**
     * Your description of the application.
     */
-  var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.undefined
   
   /**
     * Specifies an application resource lifecycle configuration to prevent your application from accumulating too many versions.
     */
-  var ResourceLifecycleConfig: js.UndefOr[ApplicationResourceLifecycleConfig] = js.native
+  var ResourceLifecycleConfig: js.UndefOr[ApplicationResourceLifecycleConfig] = js.undefined
   
   /**
     * Specifies the tags applied to the application. Elastic Beanstalk applies these tags only to the application. Environments that you create in the application don't inherit the tags.
     */
-  var Tags: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Tags] = js.undefined
 }
 object CreateApplicationMessage {
   

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logStreamMod {
@@ -43,6 +42,10 @@ object logStreamMod {
   /* static members */
   object LogStream {
     
+    @JSImport("@pulumi/aws/cloudwatch/logStream", "LogStream")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LogStream resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,40 +55,34 @@ object logStreamMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudwatch/logStream", "LogStream.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LogStream = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logStream", "LogStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LogStream = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logStream", "LogStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LogStreamState): LogStream = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logStream", "LogStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LogStreamState, opts: CustomResourceOptions): LogStream = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LogStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LogStreamState): LogStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LogStreamState, opts: CustomResourceOptions): LogStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogStream]
     
     /**
       * Returns true if the given object is an instance of LogStream.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudwatch/logStream", "LogStream.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logStream.LogStream */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logStream.LogStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/logStream.LogStream */ Boolean]
   }
   
-  @js.native
   trait LogStreamArgs extends StObject {
     
     /**
       * The name of the log group under which the log stream is to be created.
       */
-    val logGroupName: Input[String] = js.native
+    val logGroupName: Input[String]
     
     /**
       * The name of the log stream. Must not be longer than 512 characters and must not contain `:`
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object LogStreamArgs {
     
@@ -109,23 +106,22 @@ object logStreamMod {
     }
   }
   
-  @js.native
   trait LogStreamState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the log stream.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the log group under which the log stream is to be created.
       */
-    val logGroupName: js.UndefOr[Input[String]] = js.native
+    val logGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the log stream. Must not be longer than 512 characters and must not contain `:`
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object LogStreamState {
     

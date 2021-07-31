@@ -2,24 +2,22 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An alias to a repo revision.
   */
-@js.native
 trait SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext extends StObject {
   
   /**
     * The alias kind.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The alias name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext {
   

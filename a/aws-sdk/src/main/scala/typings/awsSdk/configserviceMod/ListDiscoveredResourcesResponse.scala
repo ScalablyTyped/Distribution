@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDiscoveredResourcesResponse extends StObject {
   
   /**
     * The string that you use in a subsequent request to get the next page of results in a paginated response.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The details that identify a resource that is discovered by AWS Config, including the resource type, ID, and (if available) the custom resource name.
     */
-  var resourceIdentifiers: js.UndefOr[ResourceIdentifierList] = js.native
+  var resourceIdentifiers: js.UndefOr[ResourceIdentifierList] = js.undefined
 }
 object ListDiscoveredResourcesResponse {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Package extends StObject {
   
   /** The time when the package was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The display name of the package. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The name of the package, for example: "projects/p1/locations/us-central1/repositories/repo1/packages/pkg1". */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The time when the package was last updated. This includes publishing a new version of the package. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Package {
   

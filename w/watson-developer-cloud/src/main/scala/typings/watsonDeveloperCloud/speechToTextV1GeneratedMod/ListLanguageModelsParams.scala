@@ -2,19 +2,17 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `listLanguageModels` operation. */
-@js.native
 trait ListLanguageModelsParams extends StObject {
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The identifier of the language for which custom language or custom acoustic models are to be returned (for example, `en-US`). Omit the parameter to see all custom language or custom acoustic models that are owned by the requesting credentials. */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object ListLanguageModelsParams {
   

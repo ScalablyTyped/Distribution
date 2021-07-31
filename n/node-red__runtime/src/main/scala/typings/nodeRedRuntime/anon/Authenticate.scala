@@ -5,19 +5,17 @@ import typings.nodeRedRuntime.mod.UsernamePermissions
 import typings.nodeRedRuntime.nodeRedRuntimeStrings.credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Authenticate extends StObject {
   
-  def default(): js.Promise[AnonymousPermissions | Null] = js.native
+  def default(): js.Promise[AnonymousPermissions | Null]
   
-  def authenticate(username: String, password: String): js.Promise[UsernamePermissions | Null] = js.native
+  def authenticate(username: String, password: String): js.Promise[UsernamePermissions | Null]
   
-  var `type`: credentials = js.native
+  var `type`: credentials
   
-  def users(username: String): js.Promise[UsernamePermissions | Null] = js.native
+  def users(username: String): js.Promise[UsernamePermissions | Null]
 }
 object Authenticate {
   
@@ -25,11 +23,10 @@ object Authenticate {
   def apply(
     authenticate: (String, String) => js.Promise[UsernamePermissions | Null],
     default: () => js.Promise[AnonymousPermissions | Null],
-    `type`: credentials,
     users: String => js.Promise[UsernamePermissions | Null]
   ): Authenticate = {
     val __obj = js.Dynamic.literal(authenticate = js.Any.fromFunction2(authenticate), default = js.Any.fromFunction0(default), users = js.Any.fromFunction1(users))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("credentials")
     __obj.asInstanceOf[Authenticate]
   }
   

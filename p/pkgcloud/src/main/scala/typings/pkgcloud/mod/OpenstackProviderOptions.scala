@@ -3,37 +3,35 @@ package typings.pkgcloud.mod
 import typings.pkgcloud.pkgcloudStrings.openstack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenstackProviderOptions extends StObject {
   
-  var authUrl: String = js.native
+  var authUrl: String
   
-  var domainId: js.UndefOr[String] = js.native
+  var domainId: js.UndefOr[String] = js.undefined
   
-  var domainName: js.UndefOr[String] = js.native
+  var domainName: js.UndefOr[String] = js.undefined
   
-  var keystoneAuthVersion: js.UndefOr[String] = js.native
+  var keystoneAuthVersion: js.UndefOr[String] = js.undefined
   
-  var password: String = js.native
+  var password: String
   
-  var provider: openstack = js.native
+  var provider: openstack
   
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
-  var tenantId: js.UndefOr[String] = js.native
+  var tenantId: js.UndefOr[String] = js.undefined
   
-  var username: String = js.native
+  var username: String
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object OpenstackProviderOptions {
   
   @scala.inline
-  def apply(authUrl: String, password: String, provider: openstack, username: String): OpenstackProviderOptions = {
-    val __obj = js.Dynamic.literal(authUrl = authUrl.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+  def apply(authUrl: String, password: String, username: String): OpenstackProviderOptions = {
+    val __obj = js.Dynamic.literal(authUrl = authUrl.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], provider = "openstack", username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenstackProviderOptions]
   }
   

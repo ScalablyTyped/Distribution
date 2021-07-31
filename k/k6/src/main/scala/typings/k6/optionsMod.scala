@@ -12,7 +12,6 @@ import typings.k6.k6Strings.`ramping-vus`
 import typings.k6.k6Strings.`shared-iterations`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
@@ -62,17 +61,16 @@ object optionsMod {
     var tags: js.UndefOr[StringDictionary[String]] = js.native
   }
   
-  @js.native
   trait Certificate extends StObject {
     
     /** PEM encoded certificate. */
-    var cert: String = js.native
+    var cert: String
     
     /** Domains certificate is valid for. */
-    var domains: js.Array[String] = js.native
+    var domains: js.Array[String]
     
     /** PEM encoded certificate key. */
-    var key: String = js.native
+    var key: String
   }
   object Certificate {
     
@@ -210,17 +208,16 @@ object optionsMod {
     var vus: js.UndefOr[Double] = js.native
   }
   
-  @js.native
   trait ObjectThreshold extends StObject {
     
     /** Abort test if threshold violated. */
-    var abortOnFail: js.UndefOr[Boolean] = js.native
+    var abortOnFail: js.UndefOr[Boolean] = js.undefined
     
     /** Duration to delay evaluation. Enables collecting additional metrics. */
-    var delayAbortEval: js.UndefOr[String] = js.native
+    var delayAbortEval: js.UndefOr[String] = js.undefined
     
     /** Threshold expression. */
-    var threshold: String = js.native
+    var threshold: String
   }
   object ObjectThreshold {
     
@@ -250,116 +247,115 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** Maximum parallel `http.batch()` connections per VU. */
-    var batch: js.UndefOr[Double] = js.native
+    var batch: js.UndefOr[Double] = js.undefined
     
     /** Maximum parallel `http.batch()` host connections per VU. */
-    var batchPerHost: js.UndefOr[Double] = js.native
+    var batchPerHost: js.UndefOr[Double] = js.undefined
     
     /** Blacklist IP ranges from being called. */
-    var blacklistIPs: js.UndefOr[js.Array[String]] = js.native
+    var blacklistIPs: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Discard response bodies. */
-    var discardResponseBodies: js.UndefOr[Boolean] = js.native
+    var discardResponseBodies: js.UndefOr[Boolean] = js.undefined
     
     /** Test duration. */
-    var duration: js.UndefOr[String] = js.native
+    var duration: js.UndefOr[String] = js.undefined
     
     /** Partition the test run in different segments. https://k6.io/docs/using-k6/options#execution-segment */
-    var executionSegment: js.UndefOr[String] = js.native
+    var executionSegment: js.UndefOr[String] = js.undefined
     
     /** Define the sequence segment to run. https://k6.io/docs/using-k6/options#execution-segment */
-    var executionSegmentSequence: js.UndefOr[String] = js.native
+    var executionSegmentSequence: js.UndefOr[String] = js.undefined
     
     /** Third party collector configuration. */
-    var ext: js.UndefOr[StringDictionary[CollectorOptions]] = js.native
+    var ext: js.UndefOr[StringDictionary[CollectorOptions]] = js.undefined
     
     /** Static hostname mapping. */
-    var hosts: js.UndefOr[StringDictionary[String]] = js.native
+    var hosts: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** Log all HTTP requests and responses. */
-    var httpDebug: js.UndefOr[String] = js.native
+    var httpDebug: js.UndefOr[String] = js.undefined
     
     /** Disable TLS verification. Insecure. */
-    var insecureSkipTLSVerify: js.UndefOr[Boolean] = js.native
+    var insecureSkipTLSVerify: js.UndefOr[Boolean] = js.undefined
     
     /** Iterations to execute. */
-    var iterations: js.UndefOr[Double] = js.native
+    var iterations: js.UndefOr[Double] = js.undefined
     
     /** Persist the k6 process after test completion. */
-    var linger: js.UndefOr[Boolean] = js.native
+    var linger: js.UndefOr[Boolean] = js.undefined
     
     /** Maximum HTTP redirects to follow. */
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
     /** Minimum test iteration duration. */
-    var minIterationDuration: js.UndefOr[String] = js.native
+    var minIterationDuration: js.UndefOr[String] = js.undefined
     
     /** Disable keepalive connections. */
-    var noConnectionReuse: js.UndefOr[Boolean] = js.native
+    var noConnectionReuse: js.UndefOr[Boolean] = js.undefined
     
     /** This disables the default behavior of resetting the cookie jar after each VU iteration. If it's enabled, saved cookies will be persisted across VU iterations.. */
-    var noCookiesReset: js.UndefOr[Boolean] = js.native
+    var noCookiesReset: js.UndefOr[Boolean] = js.undefined
     
     /** Disable usage reports. */
-    var noUsageReport: js.UndefOr[Boolean] = js.native
+    var noUsageReport: js.UndefOr[Boolean] = js.undefined
     
     /** Disable cross-VU TCP connection reuse. */
-    var noVUConnectionReuse: js.UndefOr[Boolean] = js.native
+    var noVUConnectionReuse: js.UndefOr[Boolean] = js.undefined
     
     /** Start test in paused state. */
-    var paused: js.UndefOr[Boolean] = js.native
+    var paused: js.UndefOr[Boolean] = js.undefined
     
     /** Maximum requests per second across all VUs. */
-    var rps: js.UndefOr[Double] = js.native
+    var rps: js.UndefOr[Double] = js.undefined
     
     /** Scenario specifications. */
-    var scenarios: js.UndefOr[StringDictionary[Scenario]] = js.native
+    var scenarios: js.UndefOr[StringDictionary[Scenario]] = js.undefined
     
     /** Setup function timeout. */
-    var setupTimeout: js.UndefOr[String] = js.native
+    var setupTimeout: js.UndefOr[String] = js.undefined
     
     /** Test stage specifications. Program of target VU stages. */
-    var stages: js.UndefOr[js.Array[Stage]] = js.native
+    var stages: js.UndefOr[js.Array[Stage]] = js.undefined
     
     /** Define stats for trend metrics. */
-    var summaryTrendStats: js.UndefOr[js.Array[String]] = js.native
+    var summaryTrendStats: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Which system tags to include in collected metrics. */
-    var systemTags: js.UndefOr[js.Array[String]] = js.native
+    var systemTags: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Tags to set test wide across all metrics. */
-    var tags: js.UndefOr[StringDictionary[String]] = js.native
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** Teardown function timeout. */
-    var teardownTimeout: js.UndefOr[String] = js.native
+    var teardownTimeout: js.UndefOr[String] = js.undefined
     
     /** Threshold specifications. Defines pass and fail conditions. */
-    var thresholds: js.UndefOr[StringDictionary[js.Array[Threshold]]] = js.native
+    var thresholds: js.UndefOr[StringDictionary[js.Array[Threshold]]] = js.undefined
     
     /** Throw error on failed HTTP request. */
-    var `throw`: js.UndefOr[Boolean] = js.native
+    var `throw`: js.UndefOr[Boolean] = js.undefined
     
     /** TLS client certificates. */
-    var tlsAuth: js.UndefOr[js.Array[Certificate]] = js.native
+    var tlsAuth: js.UndefOr[js.Array[Certificate]] = js.undefined
     
     /** Allowed TLS cipher suites. */
-    var tlsCipherSuites: js.UndefOr[js.Array[CipherSuite]] = js.native
+    var tlsCipherSuites: js.UndefOr[js.Array[CipherSuite]] = js.undefined
     
     /** Allowed TLS version. Use `http.SSL_*` `http.TLS_*` constants. */
-    var tlsVersion: js.UndefOr[String | Max] = js.native
+    var tlsVersion: js.UndefOr[String | Max] = js.undefined
     
     /** User agent string to include in HTTP requests. */
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
     
     /** Number of VUs to run concurrently. */
-    var vus: js.UndefOr[Double] = js.native
+    var vus: js.UndefOr[Double] = js.undefined
     
     /** Maximum VUs. Preallocates VUs to enable faster scaling. */
-    var vusMax: js.UndefOr[Double] = js.native
+    var vusMax: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -733,14 +729,13 @@ object optionsMod {
     var vus: js.UndefOr[Double] = js.native
   }
   
-  @js.native
   trait Stage extends StObject {
     
     /** Stage duration. */
-    var duration: String = js.native
+    var duration: String
     
     /** Target number of VUs. */
-    var target: Double = js.native
+    var target: Double
   }
   object Stage {
     

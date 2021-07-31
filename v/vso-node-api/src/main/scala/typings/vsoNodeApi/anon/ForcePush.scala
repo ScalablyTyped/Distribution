@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForcePush extends StObject {
   
-  var create: scala.Double = js.native
+  var create: scala.Double
   
-  var forcePush: scala.Double = js.native
+  var forcePush: scala.Double
   
-  var push: scala.Double = js.native
+  var push: scala.Double
   
-  var rebase: scala.Double = js.native
+  var rebase: scala.Double
   
-  var unknown: scala.Double = js.native
+  var unknown: scala.Double
 }
 object ForcePush {
   

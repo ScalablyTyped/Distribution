@@ -2,7 +2,6 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * lists and various status objects. A resource may have only one of
   * {ObjectMeta, ListMeta}.
   */
-@js.native
 trait SchemaListMeta extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait SchemaListMeta extends StObject {
     * returned when using this continue value will be identical to the value in
     * the first response.
     */
-  var continue: js.UndefOr[String] = js.native
+  var continue: js.UndefOr[String] = js.undefined
   
   /**
     * String that identifies the server&#39;s internal version of this object
@@ -33,13 +31,13 @@ trait SchemaListMeta extends StObject {
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
     * +optional
     */
-  var resourceVersion: js.UndefOr[String] = js.native
+  var resourceVersion: js.UndefOr[String] = js.undefined
   
   /**
     * SelfLink is a URL representing this object. Populated by the system.
     * Read-only. +optional
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaListMeta {
   

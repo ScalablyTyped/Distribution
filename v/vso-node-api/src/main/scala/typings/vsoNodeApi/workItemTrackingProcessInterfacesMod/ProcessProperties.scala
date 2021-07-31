@@ -2,36 +2,34 @@ package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessProperties extends StObject {
   
   /**
     * Class of the process
     */
-  var `class`: ProcessClass = js.native
+  var `class`: ProcessClass
   
   /**
     * Is the process default process
     */
-  var isDefault: Boolean = js.native
+  var isDefault: Boolean
   
   /**
     * Is the process enabled
     */
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
   /**
     * ID of the parent process
     */
-  var parentProcessTypeId: String = js.native
+  var parentProcessTypeId: String
   
   /**
     * Version of the process
     */
-  var version: String = js.native
+  var version: String
 }
 object ProcessProperties {
   

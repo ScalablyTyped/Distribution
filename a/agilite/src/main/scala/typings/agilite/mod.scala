@@ -2,15 +2,64 @@ package typings.agilite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("agilite", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Agilite {
+  class ^ protected ()
+    extends StObject
+       with Agilite {
     def this(config: AgiliteConfig) = this()
+    
+    /* CompleteClass */
+    var ApiKeys: typings.agilite.mod.ApiKeys = js.native
+    
+    /* CompleteClass */
+    var BPM: typings.agilite.mod.BPM = js.native
+    
+    /* CompleteClass */
+    var Connectors: typings.agilite.mod.Connectors = js.native
+    
+    /* CompleteClass */
+    var DataMappings: typings.agilite.mod.DataMappings = js.native
+    
+    /* CompleteClass */
+    var Files: typings.agilite.mod.Files = js.native
+    
+    /* CompleteClass */
+    var Keywords: typings.agilite.mod.Keywords = js.native
+    
+    /* CompleteClass */
+    var Numbering: typings.agilite.mod.Numbering = js.native
+    
+    /* CompleteClass */
+    var Roles: typings.agilite.mod.Roles = js.native
+    
+    /* CompleteClass */
+    var Templates: typings.agilite.mod.Templates = js.native
+    
+    /* CompleteClass */
+    var TierStructures: typings.agilite.mod.TierStructures = js.native
+    
+    /* CompleteClass */
+    var Utils: typings.agilite.mod.Utils = js.native
+    
+    /* CompleteClass */
+    var appName: typings.agilite.mod.appName = js.native
+    
+    /* CompleteClass */
+    var config: AgiliteConfig = js.native
+    
+    /* CompleteClass */
+    override def executeCRUDRequest(appName: String, reqType: String, data: js.Any, headers: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def getConfig(): AgiliteConfig = js.native
+    
+    /* CompleteClass */
+    var reqType: typings.agilite.mod.reqType = js.native
   }
   
   @JSImport("agilite", "ApiKeys")
@@ -281,40 +330,39 @@ object mod {
     var responseType: typings.agilite.mod.responseType = js.native
   }
   
-  @js.native
   trait Agilite extends StObject {
     
-    var ApiKeys: typings.agilite.mod.ApiKeys = js.native
+    var ApiKeys: typings.agilite.mod.ApiKeys
     
-    var BPM: typings.agilite.mod.BPM = js.native
+    var BPM: typings.agilite.mod.BPM
     
-    var Connectors: typings.agilite.mod.Connectors = js.native
+    var Connectors: typings.agilite.mod.Connectors
     
-    var DataMappings: typings.agilite.mod.DataMappings = js.native
+    var DataMappings: typings.agilite.mod.DataMappings
     
-    var Files: typings.agilite.mod.Files = js.native
+    var Files: typings.agilite.mod.Files
     
-    var Keywords: typings.agilite.mod.Keywords = js.native
+    var Keywords: typings.agilite.mod.Keywords
     
-    var Numbering: typings.agilite.mod.Numbering = js.native
+    var Numbering: typings.agilite.mod.Numbering
     
-    var Roles: typings.agilite.mod.Roles = js.native
+    var Roles: typings.agilite.mod.Roles
     
-    var Templates: typings.agilite.mod.Templates = js.native
+    var Templates: typings.agilite.mod.Templates
     
-    var TierStructures: typings.agilite.mod.TierStructures = js.native
+    var TierStructures: typings.agilite.mod.TierStructures
     
-    var Utils: typings.agilite.mod.Utils = js.native
+    var Utils: typings.agilite.mod.Utils
     
-    var appName: typings.agilite.mod.appName = js.native
+    var appName: typings.agilite.mod.appName
     
-    var config: AgiliteConfig = js.native
+    var config: AgiliteConfig
     
-    def executeCRUDRequest(appName: String, reqType: String, data: js.Any, headers: js.Any): js.Any = js.native
+    def executeCRUDRequest(appName: String, reqType: String, data: js.Any, headers: js.Any): js.Any
     
-    def getConfig(): AgiliteConfig = js.native
+    def getConfig(): AgiliteConfig
     
-    var reqType: typings.agilite.mod.reqType = js.native
+    var reqType: typings.agilite.mod.reqType
   }
   object Agilite {
     
@@ -394,14 +442,13 @@ object mod {
     }
   }
   
-  @js.native
   trait AgiliteConfig extends StObject {
     
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
-    var apiServerUrl: js.UndefOr[String] = js.native
+    var apiServerUrl: js.UndefOr[String] = js.undefined
     
-    var teamId: js.UndefOr[String] = js.native
+    var teamId: js.UndefOr[String] = js.undefined
   }
   object AgiliteConfig {
     
@@ -434,32 +481,31 @@ object mod {
     }
   }
   
-  @js.native
   trait appName extends StObject {
     
-    var MODULE_KEY_API_KEYS: String = js.native
+    var MODULE_KEY_API_KEYS: String
     
-    var MODULE_KEY_BOT_BUILDER: String = js.native
+    var MODULE_KEY_BOT_BUILDER: String
     
-    var MODULE_KEY_BPM: String = js.native
+    var MODULE_KEY_BPM: String
     
-    var MODULE_KEY_CONNECTORS: String = js.native
+    var MODULE_KEY_CONNECTORS: String
     
-    var MODULE_KEY_DATA_MAPPING: String = js.native
+    var MODULE_KEY_DATA_MAPPING: String
     
-    var MODULE_KEY_FILES: String = js.native
+    var MODULE_KEY_FILES: String
     
-    var MODULE_KEY_KEYWORDS: String = js.native
+    var MODULE_KEY_KEYWORDS: String
     
-    var MODULE_KEY_NUMBERING: String = js.native
+    var MODULE_KEY_NUMBERING: String
     
-    var MODULE_KEY_ROLES: String = js.native
+    var MODULE_KEY_ROLES: String
     
-    var MODULE_KEY_TEMPLATES: String = js.native
+    var MODULE_KEY_TEMPLATES: String
     
-    var MODULE_KEY_TIER_STRUCTURES: String = js.native
+    var MODULE_KEY_TIER_STRUCTURES: String
     
-    var MODULE_KEY_UTILS: String = js.native
+    var MODULE_KEY_UTILS: String
   }
   object appName {
     
@@ -523,14 +569,13 @@ object mod {
     }
   }
   
-  @js.native
   trait outputFormat extends StObject {
     
-    var ARRAY: String = js.native
+    var ARRAY: String
     
-    var JSON: String = js.native
+    var JSON: String
     
-    var STRING: String = js.native
+    var STRING: String
   }
   object outputFormat {
     
@@ -554,16 +599,15 @@ object mod {
     }
   }
   
-  @js.native
   trait reqType extends StObject {
     
-    var DELETE: String = js.native
+    var DELETE: String
     
-    var GET: String = js.native
+    var GET: String
     
-    var POST: String = js.native
+    var POST: String
     
-    var PUT: String = js.native
+    var PUT: String
   }
   object reqType {
     
@@ -590,20 +634,19 @@ object mod {
     }
   }
   
-  @js.native
   trait responseType extends StObject {
     
-    var ARRAY_BUFFER: String = js.native
+    var ARRAY_BUFFER: String
     
-    var BLOB: String = js.native
+    var BLOB: String
     
-    var DOCUMENT: String = js.native
+    var DOCUMENT: String
     
-    var JSON: String = js.native
+    var JSON: String
     
-    var STREAM: String = js.native
+    var STREAM: String
     
-    var TEXT: String = js.native
+    var TEXT: String
   }
   object responseType {
     
@@ -636,16 +679,15 @@ object mod {
     }
   }
   
-  @js.native
   trait sort extends StObject {
     
-    var ASC: String = js.native
+    var ASC: String
     
-    var ASC_VALUE: String = js.native
+    var ASC_VALUE: String
     
-    var DESC: String = js.native
+    var DESC: String
     
-    var DESC_VALUE: String = js.native
+    var DESC_VALUE: String
   }
   object sort {
     

@@ -2,13 +2,11 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request message for EntityTypes.BatchDeleteEntities.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest extends StObj
     * these are not fully-qualified names, i.e. they don&#39;t start with
     * `projects/&lt;Project ID&gt;`.
     */
-  var entityValues: js.UndefOr[js.Array[String]] = js.native
+  var entityValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The language of entity synonyms defined in `entities`. If not
@@ -25,7 +23,7 @@ trait SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest extends StObj
     * are supported. Note: languages must be enabled in the agent before they
     * can be used.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest {
   

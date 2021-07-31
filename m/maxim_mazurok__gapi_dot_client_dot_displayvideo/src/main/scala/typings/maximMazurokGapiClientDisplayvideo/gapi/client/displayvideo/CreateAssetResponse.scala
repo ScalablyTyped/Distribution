@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAssetResponse extends StObject {
   
   /** The uploaded asset, if successful. */
-  var asset: js.UndefOr[Asset] = js.native
+  var asset: js.UndefOr[Asset] = js.undefined
 }
 object CreateAssetResponse {
   

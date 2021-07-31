@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firewallMod {
@@ -85,6 +84,10 @@ object firewallMod {
   /* static members */
   object Firewall {
     
+    @JSImport("@pulumi/aws/networkfirewall/firewall", "Firewall")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Firewall resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -94,77 +97,71 @@ object firewallMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/networkfirewall/firewall", "Firewall.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Firewall = js.native
-    @JSImport("@pulumi/aws/networkfirewall/firewall", "Firewall.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Firewall = js.native
-    @JSImport("@pulumi/aws/networkfirewall/firewall", "Firewall.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FirewallState): Firewall = js.native
-    @JSImport("@pulumi/aws/networkfirewall/firewall", "Firewall.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FirewallState, opts: CustomResourceOptions): Firewall = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Firewall]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Firewall]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FirewallState): Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Firewall]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FirewallState, opts: CustomResourceOptions): Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Firewall]
     
     /**
       * Returns true if the given object is an instance of Firewall.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/networkfirewall/firewall", "Firewall.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/firewall.Firewall */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/firewall.Firewall */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/networkfirewall/firewall.Firewall */ Boolean]
   }
   
-  @js.native
   trait FirewallArgs extends StObject {
     
     /**
       * A boolean flag indicating whether it is possible to delete the firewall. Defaults to `false`.
       */
-    val deleteProtection: js.UndefOr[Input[Boolean]] = js.native
+    val deleteProtection: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A friendly description of the firewall.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the VPC Firewall policy.
       */
-    val firewallPolicyArn: Input[String] = js.native
+    val firewallPolicyArn: Input[String]
     
     /**
       * A boolean flag indicating whether it is possible to change the associated firewall policy. Defaults to `false`.
       */
-    val firewallPolicyChangeProtection: js.UndefOr[Input[Boolean]] = js.native
+    val firewallPolicyChangeProtection: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A friendly name of the firewall.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A boolean flag indicating whether it is possible to change the associated subnet(s). Defaults to `false`.
       */
-    val subnetChangeProtection: js.UndefOr[Input[Boolean]] = js.native
+    val subnetChangeProtection: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Set of configuration blocks describing the public subnets. Each subnet must belong to a different Availability Zone in the VPC. AWS Network Firewall creates a firewall endpoint in each subnet. See Subnet Mapping below for details.
       */
     val subnetMappings: Input[
         js.Array[Input[typings.pulumiAws.inputMod.networkfirewall.FirewallSubnetMapping]]
-      ] = js.native
+      ]
     
     /**
       * The key:value pairs to associate with the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The unique identifier of the VPC where AWS Network Firewall should create the firewall.
       */
-    val vpcId: Input[String] = js.native
+    val vpcId: Input[String]
   }
   object FirewallArgs {
     
@@ -237,43 +234,42 @@ object firewallMod {
     }
   }
   
-  @js.native
   trait FirewallState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) that identifies the firewall.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A boolean flag indicating whether it is possible to delete the firewall. Defaults to `false`.
       */
-    val deleteProtection: js.UndefOr[Input[Boolean]] = js.native
+    val deleteProtection: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A friendly description of the firewall.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the VPC Firewall policy.
       */
-    val firewallPolicyArn: js.UndefOr[Input[String]] = js.native
+    val firewallPolicyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A boolean flag indicating whether it is possible to change the associated firewall policy. Defaults to `false`.
       */
-    val firewallPolicyChangeProtection: js.UndefOr[Input[Boolean]] = js.native
+    val firewallPolicyChangeProtection: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A friendly name of the firewall.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A boolean flag indicating whether it is possible to change the associated subnet(s). Defaults to `false`.
       */
-    val subnetChangeProtection: js.UndefOr[Input[Boolean]] = js.native
+    val subnetChangeProtection: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Set of configuration blocks describing the public subnets. Each subnet must belong to a different Availability Zone in the VPC. AWS Network Firewall creates a firewall endpoint in each subnet. See Subnet Mapping below for details.
@@ -282,22 +278,22 @@ object firewallMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.networkfirewall.FirewallSubnetMapping]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The key:value pairs to associate with the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A string token used when updating a firewall.
       */
-    val updateToken: js.UndefOr[Input[String]] = js.native
+    val updateToken: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The unique identifier of the VPC where AWS Network Firewall should create the firewall.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object FirewallState {
     

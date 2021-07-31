@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Package extends StObject {
   
   /** The various channels by which a package is distributed. */
-  var distribution: js.UndefOr[js.Array[Distribution]] = js.native
+  var distribution: js.UndefOr[js.Array[Distribution]] = js.undefined
   
   /** Required. Immutable. The name of the package. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Package {
   

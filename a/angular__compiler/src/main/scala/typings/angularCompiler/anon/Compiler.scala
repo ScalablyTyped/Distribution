@@ -4,15 +4,13 @@ import typings.angularCompiler.aotCompilerMod.AotCompiler
 import typings.angularCompiler.staticReflectorMod.StaticReflector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Compiler extends StObject {
   
-  var compiler: AotCompiler = js.native
+  var compiler: AotCompiler
   
-  var reflector: StaticReflector = js.native
+  var reflector: StaticReflector
 }
 object Compiler {
   

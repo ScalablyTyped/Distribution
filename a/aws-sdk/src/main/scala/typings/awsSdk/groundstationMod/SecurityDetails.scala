@@ -2,26 +2,24 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityDetails extends StObject {
   
   /**
     * ARN to a role needed for connecting streams to your instances. 
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
   
   /**
     * The security groups to attach to the elastic network interfaces.
     */
-  var securityGroupIds: SecurityGroupIdList = js.native
+  var securityGroupIds: SecurityGroupIdList
   
   /**
     * A list of subnets where AWS Ground Station places elastic network interfaces to send streams to your instances.
     */
-  var subnetIds: SubnetList = js.native
+  var subnetIds: SubnetList
 }
 object SecurityDetails {
   

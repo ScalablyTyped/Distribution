@@ -3,17 +3,15 @@ package typings.meteorPublishComposite
 import typings.meteor.Mongo.Cursor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishCompositeConfig4[InLevel1, InLevel2, InLevel3, InLevel4, OutLevel] extends StObject {
   
-  var children: js.UndefOr[js.Array[PublishCompositeConfigN]] = js.native
+  var children: js.UndefOr[js.Array[PublishCompositeConfigN]] = js.undefined
   
-  var collectionName: js.UndefOr[String] = js.native
+  var collectionName: js.UndefOr[String] = js.undefined
   
-  def find(arg4: InLevel4, arg3: InLevel3, arg2: InLevel2, arg1: InLevel1): Cursor[OutLevel, OutLevel] = js.native
+  def find(arg4: InLevel4, arg3: InLevel3, arg2: InLevel2, arg1: InLevel1): Cursor[OutLevel, OutLevel]
 }
 object PublishCompositeConfig4 {
   
@@ -24,7 +22,7 @@ object PublishCompositeConfig4 {
   }
   
   @scala.inline
-  implicit class PublishCompositeConfig4MutableBuilder[Self <: PublishCompositeConfig4[_, _, _, _, _], InLevel1, InLevel2, InLevel3, InLevel4, OutLevel] (val x: Self with (PublishCompositeConfig4[InLevel1, InLevel2, InLevel3, InLevel4, OutLevel])) extends AnyVal {
+  implicit class PublishCompositeConfig4MutableBuilder[Self <: PublishCompositeConfig4[?, ?, ?, ?, ?], InLevel1, InLevel2, InLevel3, InLevel4, OutLevel] (val x: Self & (PublishCompositeConfig4[InLevel1, InLevel2, InLevel3, InLevel4, OutLevel])) extends AnyVal {
     
     @scala.inline
     def setChildren(value: js.Array[PublishCompositeConfigN]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

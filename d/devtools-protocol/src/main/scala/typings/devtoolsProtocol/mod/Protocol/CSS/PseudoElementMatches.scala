@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 import typings.devtoolsProtocol.mod.Protocol.DOM.PseudoType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PseudoElementMatches extends StObject {
   
   /**
     * Matches of CSS rules applicable to the pseudo style.
     */
-  var matches: js.Array[RuleMatch] = js.native
+  var matches: js.Array[RuleMatch]
   
   /**
     * Pseudo element type.
     */
-  var pseudoType: PseudoType = js.native
+  var pseudoType: PseudoType
 }
 object PseudoElementMatches {
   

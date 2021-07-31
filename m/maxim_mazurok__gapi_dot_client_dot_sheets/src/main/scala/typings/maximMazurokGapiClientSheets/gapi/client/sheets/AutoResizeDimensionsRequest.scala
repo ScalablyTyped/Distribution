@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoResizeDimensionsRequest extends StObject {
   
   /** The dimensions on a data source sheet to automatically resize. */
-  var dataSourceSheetDimensions: js.UndefOr[DataSourceSheetDimensionRange] = js.native
+  var dataSourceSheetDimensions: js.UndefOr[DataSourceSheetDimensionRange] = js.undefined
   
   /** The dimensions to automatically resize. */
-  var dimensions: js.UndefOr[DimensionRange] = js.native
+  var dimensions: js.UndefOr[DimensionRange] = js.undefined
 }
 object AutoResizeDimensionsRequest {
   

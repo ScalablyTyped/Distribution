@@ -6,21 +6,21 @@ import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.`21`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DialogAlertProps extends DialogProps {
+trait DialogAlertProps
+  extends StObject
+     with DialogProps {
   
-  var confirmAccessibilityLabel: js.UndefOr[String] = js.native
+  var confirmAccessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var confirmText: String = js.native
+  var confirmText: String
   
-  var confirmTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var confirmTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var footerWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var footerWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var onConfirm: js.UndefOr[js.Function2[/* data */ js.Any, /* args */ `21`, Unit]] = js.native
+  var onConfirm: js.UndefOr[js.Function2[/* data */ js.Any, /* args */ `21`, Unit]] = js.undefined
 }
 object DialogAlertProps {
   

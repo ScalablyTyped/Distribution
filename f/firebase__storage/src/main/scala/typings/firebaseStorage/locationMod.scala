@@ -2,7 +2,6 @@ package typings.firebaseStorage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object locationMod {
@@ -27,12 +26,14 @@ object locationMod {
   /* static members */
   object Location {
     
-    @JSImport("@firebase/storage/dist/src/implementation/location", "Location.makeFromBucketSpec")
+    @JSImport("@firebase/storage/dist/src/implementation/location", "Location")
     @js.native
-    def makeFromBucketSpec(bucketString: String): Location = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@firebase/storage/dist/src/implementation/location", "Location.makeFromUrl")
-    @js.native
-    def makeFromUrl(url: String): Location = js.native
+    @scala.inline
+    def makeFromBucketSpec(bucketString: String): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFromBucketSpec")(bucketString.asInstanceOf[js.Any]).asInstanceOf[Location]
+    
+    @scala.inline
+    def makeFromUrl(url: String): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Location]
   }
 }

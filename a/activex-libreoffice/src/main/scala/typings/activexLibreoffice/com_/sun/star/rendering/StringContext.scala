@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A possibly much larger string than later rendered is necessary here, because in several languages, glyph selection is context dependent.
   * @since OOo 2.0
   */
-@js.native
 trait StringContext extends StObject {
   
   /**
@@ -19,17 +17,17 @@ trait StringContext extends StObject {
     *
     * Must be within the range [0,INTMAX].
     */
-  var Length: Double = js.native
+  var Length: Double
   
   /**
     * Start position within the string.
     *
     * The first character has index 0.
     */
-  var StartPosition: Double = js.native
+  var StartPosition: Double
   
   /** The complete text, from which a subset is selected by the parameters below. */
-  var Text: String = js.native
+  var Text: String
 }
 object StringContext {
   

@@ -2,23 +2,21 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITpRegisterRequest extends StObject {
   
   /** TpRegisterRequest family */
-  var family: js.UndefOr[String | Null] = js.native
+  var family: js.UndefOr[String | Null] = js.undefined
   
   /** TpRegisterRequest maxOccupancy */
-  var maxOccupancy: js.UndefOr[Double | Null] = js.native
+  var maxOccupancy: js.UndefOr[Double | Null] = js.undefined
   
   /** TpRegisterRequest namespaces */
-  var namespaces: js.UndefOr[js.Array[String] | Null] = js.native
+  var namespaces: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** TpRegisterRequest version */
-  var version: js.UndefOr[String | Null] = js.native
+  var version: js.UndefOr[String | Null] = js.undefined
 }
 object ITpRegisterRequest {
   

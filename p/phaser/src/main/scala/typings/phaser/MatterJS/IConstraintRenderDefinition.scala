@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConstraintRenderDefinition extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait IConstraintRenderDefinition extends StObject {
     * @property anchorColor
     * @type number
     */
-  var anchorColor: js.UndefOr[Double] = js.native
+  var anchorColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The size of the anchors during rendering.
@@ -22,7 +20,7 @@ trait IConstraintRenderDefinition extends StObject {
     * @property anchorSize
     * @type number
     */
-  var anchorSize: js.UndefOr[Double] = js.native
+  var anchorSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A flag that indicates if the constraint anchors should be rendered.
@@ -31,7 +29,7 @@ trait IConstraintRenderDefinition extends StObject {
     * @type boolean
     * @default true
     */
-  var anchors: js.UndefOr[Boolean] = js.native
+  var anchors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A hex color value that defines the line color to use when rendering the body.
@@ -39,7 +37,7 @@ trait IConstraintRenderDefinition extends StObject {
     * @property lineColor
     * @type number
     */
-  var lineColor: js.UndefOr[Double] = js.native
+  var lineColor: js.UndefOr[Double] = js.undefined
   
   /**
     * A value that defines the line opacity to use when rendering the body.
@@ -47,7 +45,7 @@ trait IConstraintRenderDefinition extends StObject {
     * @property lineOpacity
     * @type number
     */
-  var lineOpacity: js.UndefOr[Double] = js.native
+  var lineOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that defines the line width to use when rendering the body outline.
@@ -55,7 +53,7 @@ trait IConstraintRenderDefinition extends StObject {
     * @property lineThickness
     * @type number
     */
-  var lineThickness: js.UndefOr[Double] = js.native
+  var lineThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * The size of the pins during rendering.
@@ -63,7 +61,7 @@ trait IConstraintRenderDefinition extends StObject {
     * @property pinSize
     * @type number
     */
-  var pinSize: js.UndefOr[Double] = js.native
+  var pinSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The type of constraint.
@@ -72,7 +70,7 @@ trait IConstraintRenderDefinition extends StObject {
     * @type string
     * @default 'line'
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * A flag that indicates if the constraint should be rendered.
@@ -81,7 +79,7 @@ trait IConstraintRenderDefinition extends StObject {
     * @type boolean
     * @default true
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object IConstraintRenderDefinition {
   

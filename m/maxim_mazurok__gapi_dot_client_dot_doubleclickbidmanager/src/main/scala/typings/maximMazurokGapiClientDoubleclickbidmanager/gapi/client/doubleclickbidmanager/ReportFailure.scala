@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportFailure extends StObject {
   
   /** Error code that shows why the report was not created. */
-  var errorCode: js.UndefOr[String] = js.native
+  var errorCode: js.UndefOr[String] = js.undefined
 }
 object ReportFailure {
   

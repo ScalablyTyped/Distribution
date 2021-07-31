@@ -2,24 +2,22 @@ package typings.googleapis.tpuV1Mod.tpuV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A network endpoint over which a TPU worker can be reached.
   */
-@js.native
 trait SchemaNetworkEndpoint extends StObject {
   
   /**
     * The IP address of this network endpoint.
     */
-  var ipAddress: js.UndefOr[String] = js.native
+  var ipAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The port of this network endpoint.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
 }
 object SchemaNetworkEndpoint {
   

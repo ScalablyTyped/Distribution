@@ -3,7 +3,6 @@ package typings.angularForms.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "FormBuilder")
@@ -24,48 +23,48 @@ class FormBuilder () extends StObject {
     * @param asyncValidator A single async validator or array of async validator
     * functions.
     */
-  def array(controlsConfig: js.Array[_]): FormArray = js.native
+  def array(controlsConfig: js.Array[js.Any]): FormArray = js.native
+  def array(controlsConfig: js.Array[js.Any], validatorOrOpts: js.Array[ValidatorFn]): FormArray = js.native
   def array(
-    controlsConfig: js.Array[_],
-    validatorOrOpts: js.UndefOr[scala.Nothing],
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ): FormArray = js.native
-  def array(
-    controlsConfig: js.Array[_],
-    validatorOrOpts: js.UndefOr[scala.Nothing],
-    asyncValidator: AsyncValidatorFn
-  ): FormArray = js.native
-  def array(controlsConfig: js.Array[_], validatorOrOpts: js.Array[ValidatorFn]): FormArray = js.native
-  def array(
-    controlsConfig: js.Array[_],
+    controlsConfig: js.Array[js.Any],
     validatorOrOpts: js.Array[ValidatorFn],
     asyncValidator: js.Array[AsyncValidatorFn]
   ): FormArray = js.native
   def array(
-    controlsConfig: js.Array[_],
+    controlsConfig: js.Array[js.Any],
     validatorOrOpts: js.Array[ValidatorFn],
     asyncValidator: AsyncValidatorFn
   ): FormArray = js.native
-  def array(controlsConfig: js.Array[_], validatorOrOpts: Null, asyncValidator: js.Array[AsyncValidatorFn]): FormArray = js.native
-  def array(controlsConfig: js.Array[_], validatorOrOpts: Null, asyncValidator: AsyncValidatorFn): FormArray = js.native
-  def array(controlsConfig: js.Array[_], validatorOrOpts: AbstractControlOptions): FormArray = js.native
   def array(
-    controlsConfig: js.Array[_],
+    controlsConfig: js.Array[js.Any],
+    validatorOrOpts: Null,
+    asyncValidator: js.Array[AsyncValidatorFn]
+  ): FormArray = js.native
+  def array(controlsConfig: js.Array[js.Any], validatorOrOpts: Null, asyncValidator: AsyncValidatorFn): FormArray = js.native
+  def array(
+    controlsConfig: js.Array[js.Any],
+    validatorOrOpts: Unit,
+    asyncValidator: js.Array[AsyncValidatorFn]
+  ): FormArray = js.native
+  def array(controlsConfig: js.Array[js.Any], validatorOrOpts: Unit, asyncValidator: AsyncValidatorFn): FormArray = js.native
+  def array(controlsConfig: js.Array[js.Any], validatorOrOpts: AbstractControlOptions): FormArray = js.native
+  def array(
+    controlsConfig: js.Array[js.Any],
     validatorOrOpts: AbstractControlOptions,
     asyncValidator: js.Array[AsyncValidatorFn]
   ): FormArray = js.native
   def array(
-    controlsConfig: js.Array[_],
+    controlsConfig: js.Array[js.Any],
     validatorOrOpts: AbstractControlOptions,
     asyncValidator: AsyncValidatorFn
   ): FormArray = js.native
-  def array(controlsConfig: js.Array[_], validatorOrOpts: ValidatorFn): FormArray = js.native
+  def array(controlsConfig: js.Array[js.Any], validatorOrOpts: ValidatorFn): FormArray = js.native
   def array(
-    controlsConfig: js.Array[_],
+    controlsConfig: js.Array[js.Any],
     validatorOrOpts: ValidatorFn,
     asyncValidator: js.Array[AsyncValidatorFn]
   ): FormArray = js.native
-  def array(controlsConfig: js.Array[_], validatorOrOpts: ValidatorFn, asyncValidator: AsyncValidatorFn): FormArray = js.native
+  def array(controlsConfig: js.Array[js.Any], validatorOrOpts: ValidatorFn, asyncValidator: AsyncValidatorFn): FormArray = js.native
   
   /**
     * @description
@@ -91,12 +90,6 @@ class FormBuilder () extends StObject {
     * </code-example>
     */
   def control(formState: js.Any): FormControl = js.native
-  def control(
-    formState: js.Any,
-    validatorOrOpts: js.UndefOr[scala.Nothing],
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ): FormControl = js.native
-  def control(formState: js.Any, validatorOrOpts: js.UndefOr[scala.Nothing], asyncValidator: AsyncValidatorFn): FormControl = js.native
   def control(formState: js.Any, validatorOrOpts: js.Array[ValidatorFn]): FormControl = js.native
   def control(
     formState: js.Any,
@@ -106,6 +99,8 @@ class FormBuilder () extends StObject {
   def control(formState: js.Any, validatorOrOpts: js.Array[ValidatorFn], asyncValidator: AsyncValidatorFn): FormControl = js.native
   def control(formState: js.Any, validatorOrOpts: Null, asyncValidator: js.Array[AsyncValidatorFn]): FormControl = js.native
   def control(formState: js.Any, validatorOrOpts: Null, asyncValidator: AsyncValidatorFn): FormControl = js.native
+  def control(formState: js.Any, validatorOrOpts: Unit, asyncValidator: js.Array[AsyncValidatorFn]): FormControl = js.native
+  def control(formState: js.Any, validatorOrOpts: Unit, asyncValidator: AsyncValidatorFn): FormControl = js.native
   def control(formState: js.Any, validatorOrOpts: AbstractControlOptions): FormControl = js.native
   def control(
     formState: js.Any,

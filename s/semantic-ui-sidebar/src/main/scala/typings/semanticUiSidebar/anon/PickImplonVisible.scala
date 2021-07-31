@@ -3,14 +3,27 @@ package typings.semanticUiSidebar.anon
 import typings.semanticUiSidebar.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sidebar.SemanticUI.SidebarSettings._Impl, 'onVisible'> */
-@js.native
 trait PickImplonVisible extends StObject {
   
-  def onVisible(): Unit = js.native
+  def onVisible(): Unit
   @JSName("onVisible")
-  var onVisible_Original: js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  var onVisible_Original: js.ThisFunction0[/* this */ JQuery, Unit]
+}
+object PickImplonVisible {
+  
+  @scala.inline
+  def apply(onVisible: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonVisible = {
+    val __obj = js.Dynamic.literal(onVisible = onVisible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PickImplonVisible]
+  }
+  
+  @scala.inline
+  implicit class PickImplonVisibleMutableBuilder[Self <: PickImplonVisible] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setOnVisible(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onVisible", value.asInstanceOf[js.Any])
+  }
 }

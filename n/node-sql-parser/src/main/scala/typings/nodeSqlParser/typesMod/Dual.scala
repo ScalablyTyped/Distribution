@@ -3,20 +3,18 @@ package typings.nodeSqlParser.typesMod
 import typings.nodeSqlParser.nodeSqlParserStrings.dual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dual extends StObject {
   
-  var `type`: dual = js.native
+  var `type`: dual
 }
 object Dual {
   
   @scala.inline
-  def apply(`type`: dual): Dual = {
+  def apply(): Dual = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("dual")
     __obj.asInstanceOf[Dual]
   }
   

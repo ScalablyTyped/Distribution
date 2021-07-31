@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrganizationsVersionsSearch extends StandardParameters {
+trait ParamsResourceOrganizationsVersionsSearch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The maximum number of entries that are requested.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A pagination token returned from a previous call to SearchVersions that
     * indicates where this listing should continue from. This field is
     * optional.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The query to filter the versions. Required.  The supported queries are: *
@@ -36,13 +36,13 @@ trait ParamsResourceOrganizationsVersionsSearch extends StandardParameters {
     * name:
     * `name=catalogs/{catalog_id}/products/{product_id}/versions/{version_id}`
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The name of the resource context. See
     * SearchCatalogsRequest.resource for details.
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrganizationsVersionsSearch {
   

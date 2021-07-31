@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientReportDesigner.ReportTabClosed event.
   */
-@js.native
-trait ASPxClientReportDesignerTabEventArgs extends ASPxClientEventArgs {
+trait ASPxClientReportDesignerTabEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Specifies the report tab currently being processed.
     */
-  var Tab: ASPxDesignerNavigateTab = js.native
+  var Tab: ASPxDesignerNavigateTab
 }
 object ASPxClientReportDesignerTabEventArgs {
   

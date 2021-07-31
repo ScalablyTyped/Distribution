@@ -5,7 +5,6 @@ import typings.rxjs.queueSchedulerMod.QueueScheduler
 import typings.rxjs.typesMod.SchedulerAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queueActionMod {
@@ -19,9 +18,9 @@ object queueActionMod {
     ) = this()
     
     /* protected */ def requestAsyncId(scheduler: QueueScheduler): js.Any = js.native
-    /* protected */ def requestAsyncId(scheduler: QueueScheduler, id: js.UndefOr[scala.Nothing], delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: QueueScheduler, id: js.Any): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: QueueScheduler, id: js.Any, delay: Double): js.Any = js.native
+    /* protected */ def requestAsyncId(scheduler: QueueScheduler, id: Unit, delay: Double): js.Any = js.native
     
     @JSName("scheduler")
     var scheduler_QueueAction: QueueScheduler = js.native

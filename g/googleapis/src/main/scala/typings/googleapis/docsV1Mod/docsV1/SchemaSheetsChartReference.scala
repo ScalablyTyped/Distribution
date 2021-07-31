@@ -2,25 +2,23 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reference to a linked chart embedded from Google Sheets.
   */
-@js.native
 trait SchemaSheetsChartReference extends StObject {
   
   /**
     * The ID of the specific chart in the Google Sheets spreadsheet that is
     * embedded.
     */
-  var chartId: js.UndefOr[Double] = js.native
+  var chartId: js.UndefOr[Double] = js.undefined
   
   /**
     * The ID of the Google Sheets spreadsheet that contains the source chart.
     */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
 }
 object SchemaSheetsChartReference {
   

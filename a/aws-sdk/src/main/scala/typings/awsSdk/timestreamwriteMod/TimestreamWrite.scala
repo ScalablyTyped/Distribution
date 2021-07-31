@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TimestreamWrite extends Service {
   
   @JSName("config")
-  var config_TimestreamWrite: ConfigBase with ClientConfiguration = js.native
+  var config_TimestreamWrite: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a new Timestream database. If the KMS key is not specified, the database will be encrypted with a Timestream managed KMS key located in your account. Refer to AWS managed KMS keys for more info. Service quotas apply. For more information, see Access Management in the Timestream Developer Guide. 

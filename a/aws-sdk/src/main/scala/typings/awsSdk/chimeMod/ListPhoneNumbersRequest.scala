@@ -2,41 +2,39 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPhoneNumbersRequest extends StObject {
   
   /**
     * The filter to use to limit the number of results.
     */
-  var FilterName: js.UndefOr[PhoneNumberAssociationName] = js.native
+  var FilterName: js.UndefOr[PhoneNumberAssociationName] = js.undefined
   
   /**
     * The value to use for the filter.
     */
-  var FilterValue: js.UndefOr[String] = js.native
+  var FilterValue: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of results to return in a single call.
     */
-  var MaxResults: js.UndefOr[ResultMax] = js.native
+  var MaxResults: js.UndefOr[ResultMax] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The phone number product type.
     */
-  var ProductType: js.UndefOr[PhoneNumberProductType] = js.native
+  var ProductType: js.UndefOr[PhoneNumberProductType] = js.undefined
   
   /**
     * The phone number status.
     */
-  var Status: js.UndefOr[PhoneNumberStatus] = js.native
+  var Status: js.UndefOr[PhoneNumberStatus] = js.undefined
 }
 object ListPhoneNumbersRequest {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisioningArtifactOutput extends StObject {
   
   /**
     * Description of the provisioning artifact output key.
     */
-  var Description: js.UndefOr[OutputDescription] = js.native
+  var Description: js.UndefOr[OutputDescription] = js.undefined
   
   /**
     * The provisioning artifact output key.
     */
-  var Key: js.UndefOr[ProvisioningArtifactOutputKey] = js.native
+  var Key: js.UndefOr[ProvisioningArtifactOutputKey] = js.undefined
 }
 object ProvisioningArtifactOutput {
   

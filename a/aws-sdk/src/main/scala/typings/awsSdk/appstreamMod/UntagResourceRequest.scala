@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var ResourceArn: Arn = js.native
+  var ResourceArn: Arn
   
   /**
     * The tag keys for the tags to disassociate.
     */
-  var TagKeys: TagKeyList = js.native
+  var TagKeys: TagKeyList
 }
 object UntagResourceRequest {
   

@@ -3,44 +3,42 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParagraphFormat extends StObject {
   
-  var Alignment: PpParagraphAlignment = js.native
+  var Alignment: PpParagraphAlignment
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var BaseLineAlignment: PpBaselineAlignment = js.native
+  var BaseLineAlignment: PpBaselineAlignment
   
-  val Bullet: BulletFormat = js.native
+  val Bullet: BulletFormat
   
-  var FarEastLineBreakControl: MsoTriState = js.native
+  var FarEastLineBreakControl: MsoTriState
   
-  var HangingPunctuation: MsoTriState = js.native
+  var HangingPunctuation: MsoTriState
   
-  var LineRuleAfter: MsoTriState = js.native
+  var LineRuleAfter: MsoTriState
   
-  var LineRuleBefore: MsoTriState = js.native
+  var LineRuleBefore: MsoTriState
   
-  var LineRuleWithin: MsoTriState = js.native
+  var LineRuleWithin: MsoTriState
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.ParagraphFormat_typekey")
-  var PowerPointDotParagraphFormat_typekey: ParagraphFormat = js.native
+  var PowerPointDotParagraphFormat_typekey: ParagraphFormat
   
-  var SpaceAfter: Double = js.native
+  var SpaceAfter: Double
   
-  var SpaceBefore: Double = js.native
+  var SpaceBefore: Double
   
-  var SpaceWithin: Double = js.native
+  var SpaceWithin: Double
   
-  var TextDirection: PpDirection = js.native
+  var TextDirection: PpDirection
   
-  var WordWrap: MsoTriState = js.native
+  var WordWrap: MsoTriState
 }
 object ParagraphFormat {
   

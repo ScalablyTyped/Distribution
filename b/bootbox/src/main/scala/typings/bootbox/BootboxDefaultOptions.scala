@@ -2,24 +2,22 @@ package typings.bootbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Bootbox options available when setting defaults for modals */
-@js.native
 trait BootboxDefaultOptions extends StObject {
   
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var backdrop: js.UndefOr[Boolean] = js.native
+  var backdrop: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var closeButton: js.UndefOr[Boolean] = js.native
+  var closeButton: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object BootboxDefaultOptions {
   

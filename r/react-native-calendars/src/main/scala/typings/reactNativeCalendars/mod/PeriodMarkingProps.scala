@@ -4,21 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNativeCalendars.reactNativeCalendarsStrings.period
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PeriodMarkingProps extends _CalendarMarkingProps {
+trait PeriodMarkingProps
+  extends StObject
+     with _CalendarMarkingProps {
   
-  var markedDates: StringDictionary[PeriodMarking] = js.native
+  var markedDates: StringDictionary[PeriodMarking]
   
-  var markingType: period = js.native
+  var markingType: period
 }
 object PeriodMarkingProps {
   
   @scala.inline
-  def apply(markedDates: StringDictionary[PeriodMarking], markingType: period): PeriodMarkingProps = {
-    val __obj = js.Dynamic.literal(markedDates = markedDates.asInstanceOf[js.Any], markingType = markingType.asInstanceOf[js.Any])
+  def apply(markedDates: StringDictionary[PeriodMarking]): PeriodMarkingProps = {
+    val __obj = js.Dynamic.literal(markedDates = markedDates.asInstanceOf[js.Any], markingType = "period")
     __obj.asInstanceOf[PeriodMarkingProps]
   }
   

@@ -11,17 +11,17 @@ import typings.reactMdCard.reactMdCardStrings.top
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardHeaderMod {
   
   @JSImport("@react-md/card/types/CardHeader", "CardHeader")
   @js.native
-  val CardHeader: ForwardRefExoticComponent[CardHeaderProps with RefAttributes[HTMLDivElement]] = js.native
+  val CardHeader: ForwardRefExoticComponent[CardHeaderProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
-  trait CardHeaderProps extends HTMLAttributes[HTMLDivElement] {
+  trait CardHeaderProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Optional children to render after the main `children` in the component.
@@ -30,13 +30,13 @@ object cardHeaderMod {
       * This using the `TextIconSpacing` component behind the scenes, so some
       * additional margin will be added to separate the content.
       */
-    var afterChildren: js.UndefOr[ReactNode] = js.native
+    var afterChildren: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * This is how to align the items within the header component. It's really
       * just a simple pass-through to `align-items`.
       */
-    var align: js.UndefOr[top | center | bottom | none] = js.native
+    var align: js.UndefOr[top | center | bottom | none] = js.undefined
     
     /**
       * Optional children to render before the main `children` in the component.
@@ -46,7 +46,7 @@ object cardHeaderMod {
       * This using the `TextIconSpacing` component behind the scenes, so some
       * additional margin will be added to separate the content.
       */
-    var beforeChildren: js.UndefOr[ReactNode] = js.native
+    var beforeChildren: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Since it's possible to add content before or after the main children, the
@@ -55,7 +55,7 @@ object cardHeaderMod {
       * vertically. If you need to add additional styles to this element for some
       * reason, you can use this class name to do so.
       */
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
   }
   object CardHeaderProps {
     

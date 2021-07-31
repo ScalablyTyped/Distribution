@@ -2,27 +2,25 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsTransactionsV3MerchantPaymentOption extends StObject {
   
   /**
     * Optional. Id of the default payment method, if any.
     */
-  var defaultMerchantPaymentMethodId: js.UndefOr[String] = js.native
+  var defaultMerchantPaymentMethodId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A link to the action/merchant website for managing payment
     * method.
     */
-  var managePaymentMethodUrl: js.UndefOr[String] = js.native
+  var managePaymentMethodUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Required. List of payment methods provided by Action/Merchant.
     */
-  var merchantPaymentMethod: js.UndefOr[js.Array[GoogleActionsTransactionsV3MerchantPaymentMethod]] = js.native
+  var merchantPaymentMethod: js.UndefOr[js.Array[GoogleActionsTransactionsV3MerchantPaymentMethod]] = js.undefined
 }
 object GoogleActionsTransactionsV3MerchantPaymentOption {
   

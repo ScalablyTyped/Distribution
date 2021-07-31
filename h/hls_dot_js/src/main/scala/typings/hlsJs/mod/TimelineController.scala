@@ -2,19 +2,17 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *  Customized text track syncronization controller.
   */
-@js.native
 trait TimelineController extends StObject {
   
   /**
     * clean-up all used resources
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
 }
 object TimelineController {
   

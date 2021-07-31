@@ -9,11 +9,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.TableCell
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `body.toJSON()`. */
-@js.native
 trait BodyData extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait BodyData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var contentControls: js.UndefOr[js.Array[ContentControlData]] = js.native
+  var contentControls: js.UndefOr[js.Array[ContentControlData]] = js.undefined
   
   /**
     *
@@ -30,7 +28,7 @@ trait BodyData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var font: js.UndefOr[FontData] = js.native
+  var font: js.UndefOr[FontData] = js.undefined
   
   /**
     *
@@ -38,7 +36,7 @@ trait BodyData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var inlinePictures: js.UndefOr[js.Array[InlinePictureData]] = js.native
+  var inlinePictures: js.UndefOr[js.Array[InlinePictureData]] = js.undefined
   
   /**
     *
@@ -46,7 +44,7 @@ trait BodyData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var lists: js.UndefOr[js.Array[ListData]] = js.native
+  var lists: js.UndefOr[js.Array[ListData]] = js.undefined
   
   /**
     *
@@ -54,7 +52,7 @@ trait BodyData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.native
+  var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.undefined
   
   /**
     *
@@ -62,7 +60,7 @@ trait BodyData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -72,7 +70,7 @@ trait BodyData extends StObject {
     */
   var styleBuiltIn: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -80,7 +78,7 @@ trait BodyData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var tables: js.UndefOr[js.Array[TableData]] = js.native
+  var tables: js.UndefOr[js.Array[TableData]] = js.undefined
   
   /**
     *
@@ -88,7 +86,7 @@ trait BodyData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -96,7 +94,7 @@ trait BodyData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var `type`: js.UndefOr[BodyType | Unknown_ | MainDoc | Section | Header | Footer | TableCell] = js.native
+  var `type`: js.UndefOr[BodyType | Unknown_ | MainDoc | Section | Header | Footer | TableCell] = js.undefined
 }
 object BodyData {
   

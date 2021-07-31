@@ -3,26 +3,24 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Snackbar.SnackbarClassKey>> */
-@js.native
 trait PartialStyleRulesSnackbar extends StObject {
   
-  var anchorOriginBottomCenter: js.UndefOr[CSSProperties] = js.native
+  var anchorOriginBottomCenter: js.UndefOr[CSSProperties] = js.undefined
   
-  var anchorOriginBottomLeft: js.UndefOr[CSSProperties] = js.native
+  var anchorOriginBottomLeft: js.UndefOr[CSSProperties] = js.undefined
   
-  var anchorOriginBottomRight: js.UndefOr[CSSProperties] = js.native
+  var anchorOriginBottomRight: js.UndefOr[CSSProperties] = js.undefined
   
-  var anchorOriginTopCenter: js.UndefOr[CSSProperties] = js.native
+  var anchorOriginTopCenter: js.UndefOr[CSSProperties] = js.undefined
   
-  var anchorOriginTopLeft: js.UndefOr[CSSProperties] = js.native
+  var anchorOriginTopLeft: js.UndefOr[CSSProperties] = js.undefined
   
-  var anchorOriginTopRight: js.UndefOr[CSSProperties] = js.native
+  var anchorOriginTopRight: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesSnackbar {
   

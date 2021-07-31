@@ -2,17 +2,15 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationClientOptions extends StObject {
   
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
-  var clientSecret: js.UndefOr[String] = js.native
+  var clientSecret: js.UndefOr[String] = js.undefined
   
-  var domain: String = js.native
+  var domain: String
 }
 object AuthenticationClientOptions {
   

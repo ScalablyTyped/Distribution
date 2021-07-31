@@ -7,102 +7,100 @@ import typings.reactResponsive.reactResponsiveStrings.portrait
 import typings.reactResponsive.reactResponsiveStrings.progressive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<react-responsive.react-responsive.MediaQueryAllQueryable> */
-  @js.native
   trait PartialMediaQueryAllQuery extends StObject {
     
-    var all: js.UndefOr[Boolean] = js.native
+    var all: js.UndefOr[Boolean] = js.undefined
     
-    var aspectRatio: js.UndefOr[String] = js.native
+    var aspectRatio: js.UndefOr[String] = js.undefined
     
-    var aural: js.UndefOr[Boolean] = js.native
+    var aural: js.UndefOr[Boolean] = js.undefined
     
-    var braille: js.UndefOr[Boolean] = js.native
+    var braille: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[Boolean] = js.native
+    var color: js.UndefOr[Boolean] = js.undefined
     
-    var colorIndex: js.UndefOr[Boolean] = js.native
+    var colorIndex: js.UndefOr[Boolean] = js.undefined
     
-    var deviceAspectRatio: js.UndefOr[String] = js.native
+    var deviceAspectRatio: js.UndefOr[String] = js.undefined
     
-    var deviceHeight: js.UndefOr[Double | String] = js.native
+    var deviceHeight: js.UndefOr[Double | String] = js.undefined
     
-    var deviceWidth: js.UndefOr[Double | String] = js.native
+    var deviceWidth: js.UndefOr[Double | String] = js.undefined
     
-    var embossed: js.UndefOr[Boolean] = js.native
+    var embossed: js.UndefOr[Boolean] = js.undefined
     
-    var grid: js.UndefOr[Boolean] = js.native
+    var grid: js.UndefOr[Boolean] = js.undefined
     
-    var handheld: js.UndefOr[Boolean] = js.native
+    var handheld: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var maxAspectRatio: js.UndefOr[String] = js.native
+    var maxAspectRatio: js.UndefOr[String] = js.undefined
     
-    var maxColor: js.UndefOr[Double] = js.native
+    var maxColor: js.UndefOr[Double] = js.undefined
     
-    var maxColorIndex: js.UndefOr[Double] = js.native
+    var maxColorIndex: js.UndefOr[Double] = js.undefined
     
-    var maxDeviceAspectRatio: js.UndefOr[String] = js.native
+    var maxDeviceAspectRatio: js.UndefOr[String] = js.undefined
     
-    var maxDeviceHeight: js.UndefOr[Double | String] = js.native
+    var maxDeviceHeight: js.UndefOr[Double | String] = js.undefined
     
-    var maxDeviceWidth: js.UndefOr[Double | String] = js.native
+    var maxDeviceWidth: js.UndefOr[Double | String] = js.undefined
     
-    var maxHeight: js.UndefOr[Double | String] = js.native
+    var maxHeight: js.UndefOr[Double | String] = js.undefined
     
-    var maxMonochrome: js.UndefOr[Double] = js.native
+    var maxMonochrome: js.UndefOr[Double] = js.undefined
     
-    var maxResolution: js.UndefOr[Double | String] = js.native
+    var maxResolution: js.UndefOr[Double | String] = js.undefined
     
-    var maxWidth: js.UndefOr[Double | String] = js.native
+    var maxWidth: js.UndefOr[Double | String] = js.undefined
     
-    var minAspectRatio: js.UndefOr[String] = js.native
+    var minAspectRatio: js.UndefOr[String] = js.undefined
     
-    var minColor: js.UndefOr[Double] = js.native
+    var minColor: js.UndefOr[Double] = js.undefined
     
-    var minColorIndex: js.UndefOr[Double] = js.native
+    var minColorIndex: js.UndefOr[Double] = js.undefined
     
-    var minDeviceAspectRatio: js.UndefOr[String] = js.native
+    var minDeviceAspectRatio: js.UndefOr[String] = js.undefined
     
-    var minDeviceHeight: js.UndefOr[Double | String] = js.native
+    var minDeviceHeight: js.UndefOr[Double | String] = js.undefined
     
-    var minDeviceWidth: js.UndefOr[Double | String] = js.native
+    var minDeviceWidth: js.UndefOr[Double | String] = js.undefined
     
-    var minHeight: js.UndefOr[Double | String] = js.native
+    var minHeight: js.UndefOr[Double | String] = js.undefined
     
-    var minMonochrome: js.UndefOr[Double] = js.native
+    var minMonochrome: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double | String] = js.native
+    var minResolution: js.UndefOr[Double | String] = js.undefined
     
-    var minWidth: js.UndefOr[Double | String] = js.native
+    var minWidth: js.UndefOr[Double | String] = js.undefined
     
-    var monochrome: js.UndefOr[Boolean] = js.native
+    var monochrome: js.UndefOr[Boolean] = js.undefined
     
-    var orientation: js.UndefOr[portrait | landscape] = js.native
+    var orientation: js.UndefOr[portrait | landscape] = js.undefined
     
-    var print: js.UndefOr[Boolean] = js.native
+    var print: js.UndefOr[Boolean] = js.undefined
     
-    var projection: js.UndefOr[Boolean] = js.native
+    var projection: js.UndefOr[Boolean] = js.undefined
     
-    var resolution: js.UndefOr[Double | String] = js.native
+    var resolution: js.UndefOr[Double | String] = js.undefined
     
-    var scan: js.UndefOr[progressive | interlace] = js.native
+    var scan: js.UndefOr[progressive | interlace] = js.undefined
     
-    var screen: js.UndefOr[Boolean] = js.native
+    var screen: js.UndefOr[Boolean] = js.undefined
     
-    var tty: js.UndefOr[Boolean] = js.native
+    var tty: js.UndefOr[Boolean] = js.undefined
     
-    var tv: js.UndefOr[Boolean] = js.native
+    var tv: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.UndefOr[MediaQueryType] = js.native
+    var `type`: js.UndefOr[MediaQueryType] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object PartialMediaQueryAllQuery {
     
@@ -382,98 +380,97 @@ object anon {
   }
   
   /* Inlined std.Partial<react-responsive.react-responsive.MediaQueryAllQueryable & {  query :string | undefined}> */
-  @js.native
   trait PartialMediaQueryAllQueryAll extends StObject {
     
-    var all: js.UndefOr[Boolean] = js.native
+    var all: js.UndefOr[Boolean] = js.undefined
     
-    var aspectRatio: js.UndefOr[String] = js.native
+    var aspectRatio: js.UndefOr[String] = js.undefined
     
-    var aural: js.UndefOr[Boolean] = js.native
+    var aural: js.UndefOr[Boolean] = js.undefined
     
-    var braille: js.UndefOr[Boolean] = js.native
+    var braille: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[Boolean] = js.native
+    var color: js.UndefOr[Boolean] = js.undefined
     
-    var colorIndex: js.UndefOr[Boolean] = js.native
+    var colorIndex: js.UndefOr[Boolean] = js.undefined
     
-    var deviceAspectRatio: js.UndefOr[String] = js.native
+    var deviceAspectRatio: js.UndefOr[String] = js.undefined
     
-    var deviceHeight: js.UndefOr[Double | String] = js.native
+    var deviceHeight: js.UndefOr[Double | String] = js.undefined
     
-    var deviceWidth: js.UndefOr[Double | String] = js.native
+    var deviceWidth: js.UndefOr[Double | String] = js.undefined
     
-    var embossed: js.UndefOr[Boolean] = js.native
+    var embossed: js.UndefOr[Boolean] = js.undefined
     
-    var grid: js.UndefOr[Boolean] = js.native
+    var grid: js.UndefOr[Boolean] = js.undefined
     
-    var handheld: js.UndefOr[Boolean] = js.native
+    var handheld: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var maxAspectRatio: js.UndefOr[String] = js.native
+    var maxAspectRatio: js.UndefOr[String] = js.undefined
     
-    var maxColor: js.UndefOr[Double] = js.native
+    var maxColor: js.UndefOr[Double] = js.undefined
     
-    var maxColorIndex: js.UndefOr[Double] = js.native
+    var maxColorIndex: js.UndefOr[Double] = js.undefined
     
-    var maxDeviceAspectRatio: js.UndefOr[String] = js.native
+    var maxDeviceAspectRatio: js.UndefOr[String] = js.undefined
     
-    var maxDeviceHeight: js.UndefOr[Double | String] = js.native
+    var maxDeviceHeight: js.UndefOr[Double | String] = js.undefined
     
-    var maxDeviceWidth: js.UndefOr[Double | String] = js.native
+    var maxDeviceWidth: js.UndefOr[Double | String] = js.undefined
     
-    var maxHeight: js.UndefOr[Double | String] = js.native
+    var maxHeight: js.UndefOr[Double | String] = js.undefined
     
-    var maxMonochrome: js.UndefOr[Double] = js.native
+    var maxMonochrome: js.UndefOr[Double] = js.undefined
     
-    var maxResolution: js.UndefOr[Double | String] = js.native
+    var maxResolution: js.UndefOr[Double | String] = js.undefined
     
-    var maxWidth: js.UndefOr[Double | String] = js.native
+    var maxWidth: js.UndefOr[Double | String] = js.undefined
     
-    var minAspectRatio: js.UndefOr[String] = js.native
+    var minAspectRatio: js.UndefOr[String] = js.undefined
     
-    var minColor: js.UndefOr[Double] = js.native
+    var minColor: js.UndefOr[Double] = js.undefined
     
-    var minColorIndex: js.UndefOr[Double] = js.native
+    var minColorIndex: js.UndefOr[Double] = js.undefined
     
-    var minDeviceAspectRatio: js.UndefOr[String] = js.native
+    var minDeviceAspectRatio: js.UndefOr[String] = js.undefined
     
-    var minDeviceHeight: js.UndefOr[Double | String] = js.native
+    var minDeviceHeight: js.UndefOr[Double | String] = js.undefined
     
-    var minDeviceWidth: js.UndefOr[Double | String] = js.native
+    var minDeviceWidth: js.UndefOr[Double | String] = js.undefined
     
-    var minHeight: js.UndefOr[Double | String] = js.native
+    var minHeight: js.UndefOr[Double | String] = js.undefined
     
-    var minMonochrome: js.UndefOr[Double] = js.native
+    var minMonochrome: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double | String] = js.native
+    var minResolution: js.UndefOr[Double | String] = js.undefined
     
-    var minWidth: js.UndefOr[Double | String] = js.native
+    var minWidth: js.UndefOr[Double | String] = js.undefined
     
-    var monochrome: js.UndefOr[Boolean] = js.native
+    var monochrome: js.UndefOr[Boolean] = js.undefined
     
-    var orientation: js.UndefOr[portrait | landscape] = js.native
+    var orientation: js.UndefOr[portrait | landscape] = js.undefined
     
-    var print: js.UndefOr[Boolean] = js.native
+    var print: js.UndefOr[Boolean] = js.undefined
     
-    var projection: js.UndefOr[Boolean] = js.native
+    var projection: js.UndefOr[Boolean] = js.undefined
     
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
-    var resolution: js.UndefOr[Double | String] = js.native
+    var resolution: js.UndefOr[Double | String] = js.undefined
     
-    var scan: js.UndefOr[progressive | interlace] = js.native
+    var scan: js.UndefOr[progressive | interlace] = js.undefined
     
-    var screen: js.UndefOr[Boolean] = js.native
+    var screen: js.UndefOr[Boolean] = js.undefined
     
-    var tty: js.UndefOr[Boolean] = js.native
+    var tty: js.UndefOr[Boolean] = js.undefined
     
-    var tv: js.UndefOr[Boolean] = js.native
+    var tv: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.UndefOr[MediaQueryType] = js.native
+    var `type`: js.UndefOr[MediaQueryType] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object PartialMediaQueryAllQueryAll {
     
@@ -759,34 +756,33 @@ object anon {
   }
   
   /* Inlined std.Partial<react-responsive.react-responsive.MediaQueryMatchers> */
-  @js.native
   trait PartialMediaQueryMatchers extends StObject {
     
-    var aspectRatio: js.UndefOr[String] = js.native
+    var aspectRatio: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[Boolean] = js.native
+    var color: js.UndefOr[Boolean] = js.undefined
     
-    var colorIndex: js.UndefOr[Boolean] = js.native
+    var colorIndex: js.UndefOr[Boolean] = js.undefined
     
-    var deviceAspectRatio: js.UndefOr[String] = js.native
+    var deviceAspectRatio: js.UndefOr[String] = js.undefined
     
-    var deviceHeight: js.UndefOr[Double | String] = js.native
+    var deviceHeight: js.UndefOr[Double | String] = js.undefined
     
-    var deviceWidth: js.UndefOr[Double | String] = js.native
+    var deviceWidth: js.UndefOr[Double | String] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var monochrome: js.UndefOr[Boolean] = js.native
+    var monochrome: js.UndefOr[Boolean] = js.undefined
     
-    var orientation: js.UndefOr[portrait | landscape] = js.native
+    var orientation: js.UndefOr[portrait | landscape] = js.undefined
     
-    var resolution: js.UndefOr[Double | String] = js.native
+    var resolution: js.UndefOr[Double | String] = js.undefined
     
-    var scan: js.UndefOr[progressive | interlace] = js.native
+    var scan: js.UndefOr[progressive | interlace] = js.undefined
     
-    var `type`: js.UndefOr[MediaQueryType] = js.native
+    var `type`: js.UndefOr[MediaQueryType] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object PartialMediaQueryMatchers {
     

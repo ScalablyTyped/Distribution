@@ -10,15 +10,14 @@ import typings.awsSdkClientCodecommitNode.updatePullRequestStatusExceptionsUnion
 import typings.awsSdkClientCodecommitNode.updatePullRequestTitleExceptionsUnionMod.UpdatePullRequestTitleExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPullRequestIdRequiredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PullRequestIdRequiredExceptionDetails> * / any */ @js.native
-  trait PullRequestIdRequiredException
-    extends DescribePullRequestEventsExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PullRequestIdRequiredExceptionDetails> * / any */ trait PullRequestIdRequiredException
+    extends StObject
+       with DescribePullRequestEventsExceptionsUnion
        with GetCommentsForPullRequestExceptionsUnion
        with GetPullRequestExceptionsUnion
        with MergePullRequestByFastForwardExceptionsUnion
@@ -27,15 +26,13 @@ object typesPullRequestIdRequiredExceptionMod {
        with UpdatePullRequestStatusExceptionsUnion
        with UpdatePullRequestTitleExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestIdRequiredException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestIdRequiredException
   }
   object PullRequestIdRequiredException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestIdRequiredException
-    ): PullRequestIdRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): PullRequestIdRequiredException = {
+      val __obj = js.Dynamic.literal(name = "PullRequestIdRequiredException")
       __obj.asInstanceOf[PullRequestIdRequiredException]
     }
     
@@ -49,6 +46,5 @@ object typesPullRequestIdRequiredExceptionMod {
     }
   }
   
-  @js.native
   trait PullRequestIdRequiredExceptionDetails extends StObject
 }

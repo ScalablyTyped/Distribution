@@ -5,7 +5,6 @@ import typings.react.mod.NamedExoticComponent
 import typings.react.mod.PropsWithChildren
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipWrapperMod {
@@ -14,12 +13,11 @@ object tooltipWrapperMod {
   @js.native
   val TooltipWrapper: NamedExoticComponent[PropsWithChildren[TooltipWrapperProps]] = js.native
   
-  @js.native
   trait TooltipWrapperProps extends StObject {
     
-    var anchor: TooltipAnchor = js.native
+    var anchor: TooltipAnchor
     
-    var position: js.Tuple2[Double, Double] = js.native
+    var position: js.Tuple2[Double, Double]
   }
   object TooltipWrapperProps {
     

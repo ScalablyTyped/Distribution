@@ -2,41 +2,39 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#events/event-object
   */
-@js.native
 trait AbstractEventObject extends StObject {
   
   /** a reference to the corresponding core Core */
-  var cy: Core = js.native
+  var cy: Core
   
-  def isDefaultPrevented(): Boolean = js.native
+  def isDefaultPrevented(): Boolean
   
-  def isImmediatePropagationStopped(): Boolean = js.native
+  def isImmediatePropagationStopped(): Boolean
   
-  def isPropagationStopped(): Boolean = js.native
+  def isPropagationStopped(): Boolean
   
   /** the event namespace string (e.g. "foo" for "foo.tap") */
-  var namespace: String = js.native
+  var namespace: String
   
-  def preventDefault(): Unit = js.native
+  def preventDefault(): Unit
   
-  def stopImmediatePropagation(): Unit = js.native
+  def stopImmediatePropagation(): Unit
   
-  def stopPropagation(): Unit = js.native
+  def stopPropagation(): Unit
   
   /** indicates the element or core that first caused the event */
-  var target: js.Any = js.native
+  var target: js.Any
   
   /** Unix epoch time of event in milliseconds */
-  var timeStamp: Double = js.native
+  var timeStamp: Double
   
   /** the event type string (e.g. "tap") */
-  var `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt = js.native
+  var `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt
 }
 object AbstractEventObject {
   

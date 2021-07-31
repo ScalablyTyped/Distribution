@@ -2,14 +2,12 @@ package typings.activexAdodb.ADODB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bookmark extends StObject {
   
   @JSName("ADODB.Bookmark_typekey")
-  var ADODBDotBookmark_typekey: Bookmark = js.native
+  var ADODBDotBookmark_typekey: Bookmark
 }
 object Bookmark {
   

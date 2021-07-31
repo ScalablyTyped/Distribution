@@ -14,7 +14,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudtraceV1Mod {
@@ -133,7 +132,7 @@ object cloudtraceV1Mod {
         */
       def patchTraces(): GaxiosPromise[SchemaEmpty] = js.native
       def patchTraces(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-      def patchTraces(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+      def patchTraces(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
       def patchTraces(params: ParamsResourceProjectsPatchtraces): GaxiosPromise[SchemaEmpty] = js.native
       def patchTraces(params: ParamsResourceProjectsPatchtraces, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
       def patchTraces(
@@ -229,7 +228,7 @@ object cloudtraceV1Mod {
         */
       def get(): GaxiosPromise[SchemaTrace] = js.native
       def get(callback: BodyResponseCallback[SchemaTrace]): Unit = js.native
-      def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTrace] = js.native
+      def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTrace] = js.native
       def get(params: ParamsResourceProjectsTracesGet): GaxiosPromise[SchemaTrace] = js.native
       def get(params: ParamsResourceProjectsTracesGet, callback: BodyResponseCallback[SchemaTrace]): Unit = js.native
       def get(
@@ -332,7 +331,7 @@ object cloudtraceV1Mod {
         */
       def list(): GaxiosPromise[SchemaListTracesResponse] = js.native
       def list(callback: BodyResponseCallback[SchemaListTracesResponse]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTracesResponse] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListTracesResponse] = js.native
       def list(params: ParamsResourceProjectsTracesList): GaxiosPromise[SchemaListTracesResponse] = js.native
       def list(params: ParamsResourceProjectsTracesList, callback: BodyResponseCallback[SchemaListTracesResponse]): Unit = js.native
       def list(
@@ -348,16 +347,17 @@ object cloudtraceV1Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -369,23 +369,24 @@ object cloudtraceV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceProjectsPatchtraces extends StandardParameters {
+    trait ParamsResourceProjectsPatchtraces
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * ID of the Cloud project where the trace data is stored.
         */
-      var projectId: js.UndefOr[String] = js.native
+      var projectId: js.UndefOr[String] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaTraces] = js.native
+      var requestBody: js.UndefOr[SchemaTraces] = js.undefined
     }
     object ParamsResourceProjectsPatchtraces {
       
@@ -418,23 +419,24 @@ object cloudtraceV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceProjectsTracesGet extends StandardParameters {
+    trait ParamsResourceProjectsTracesGet
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * ID of the Cloud project where the trace data is stored.
         */
-      var projectId: js.UndefOr[String] = js.native
+      var projectId: js.UndefOr[String] = js.undefined
       
       /**
         * ID of the trace to return.
         */
-      var traceId: js.UndefOr[String] = js.native
+      var traceId: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceProjectsTracesGet {
       
@@ -467,19 +469,20 @@ object cloudtraceV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceProjectsTracesList extends StandardParameters {
+    trait ParamsResourceProjectsTracesList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * End of the time interval (inclusive) during which the trace data was
         * collected from the application.
         */
-      var endTime: js.UndefOr[String] = js.native
+      var endTime: js.UndefOr[String] = js.undefined
       
       /**
         * An optional filter against labels for the request.  By default, searches
@@ -505,7 +508,7 @@ object cloudtraceV1Mod {
         * `method:VALUE`: Equivalent to `/http/method:VALUE`. *   `url:VALUE`:
         * Equivalent to `/http/url:VALUE`.
         */
-      var filter: js.UndefOr[String] = js.native
+      var filter: js.UndefOr[String] = js.undefined
       
       /**
         * Field used to sort the returned traces. Optional. Can be one of the
@@ -515,37 +518,37 @@ object cloudtraceV1Mod {
         * span)  Descending order can be specified by appending `desc` to the sort
         * field (for example, `name desc`).  Only one sort field is permitted.
         */
-      var orderBy: js.UndefOr[String] = js.native
+      var orderBy: js.UndefOr[String] = js.undefined
       
       /**
         * Maximum number of traces to return. If not specified or <= 0, the
         * implementation selects a reasonable value.  The implementation may return
         * fewer traces than the requested page size. Optional.
         */
-      var pageSize: js.UndefOr[Double] = js.native
+      var pageSize: js.UndefOr[Double] = js.undefined
       
       /**
         * Token identifying the page of results to return. If provided, use the
         * value of the `next_page_token` field from a previous request. Optional.
         */
-      var pageToken: js.UndefOr[String] = js.native
+      var pageToken: js.UndefOr[String] = js.undefined
       
       /**
         * ID of the Cloud project where the trace data is stored.
         */
-      var projectId: js.UndefOr[String] = js.native
+      var projectId: js.UndefOr[String] = js.undefined
       
       /**
         * Start of the time interval (inclusive) during which the trace data was
         * collected from the application.
         */
-      var startTime: js.UndefOr[String] = js.native
+      var startTime: js.UndefOr[String] = js.undefined
       
       /**
         * Type of data returned for traces in the list. Optional. Default is
         * `MINIMAL`.
         */
-      var view: js.UndefOr[String] = js.native
+      var view: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceProjectsTracesList {
       
@@ -621,13 +624,11 @@ object cloudtraceV1Mod {
       * Bar(google.protobuf.Empty) returns (google.protobuf.Empty);     }  The JSON
       * representation for `Empty` is empty JSON object `{}`.
       */
-    @js.native
     trait SchemaEmpty extends StObject
     
     /**
       * The response message for the `ListTraces` method.
       */
-    @js.native
     trait SchemaListTracesResponse extends StObject {
       
       /**
@@ -635,12 +636,12 @@ object cloudtraceV1Mod {
         * and that this value should be passed to the next request to continue
         * retrieving additional traces.
         */
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
       /**
         * List of trace records as specified by the view parameter.
         */
-      var traces: js.UndefOr[js.Array[SchemaTrace]] = js.native
+      var traces: js.UndefOr[js.Array[SchemaTrace]] = js.undefined
     }
     object SchemaListTracesResponse {
       
@@ -675,25 +676,24 @@ object cloudtraceV1Mod {
       * operation. It consists of a set of spans, each of which represent a single
       * timed event within the operation.
       */
-    @js.native
     trait SchemaTrace extends StObject {
       
       /**
         * Project ID of the Cloud project where the trace data is stored.
         */
-      var projectId: js.UndefOr[String] = js.native
+      var projectId: js.UndefOr[String] = js.undefined
       
       /**
         * Collection of spans in the trace.
         */
-      var spans: js.UndefOr[js.Array[SchemaTraceSpan]] = js.native
+      var spans: js.UndefOr[js.Array[SchemaTraceSpan]] = js.undefined
       
       /**
         * Globally unique identifier for the trace. This identifier is a 128-bit
         * numeric value formatted as a 32-byte hex string. For example,
         * `382d4f4c6b7bb2f4a972559d9085001d`.
         */
-      var traceId: js.UndefOr[String] = js.native
+      var traceId: js.UndefOr[String] = js.undefined
     }
     object SchemaTrace {
       
@@ -736,13 +736,12 @@ object cloudtraceV1Mod {
       * subspans for its suboperations. Spans do not need to be contiguous. There
       * may be gaps between spans in a trace.
       */
-    @js.native
     trait SchemaTraceSpan extends StObject {
       
       /**
         * End time of the span in nanoseconds from the UNIX epoch.
         */
-      var endTime: js.UndefOr[String] = js.native
+      var endTime: js.UndefOr[String] = js.undefined
       
       /**
         * Distinguishes between spans generated in a particular context. For
@@ -750,7 +749,7 @@ object cloudtraceV1Mod {
         * `RPC_CLIENT` and `RPC_SERVER` to identify queueing latency associated
         * with the span.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /**
         * Collection of labels associated with the span. Label keys must be less
@@ -768,7 +767,7 @@ object cloudtraceV1Mod {
         * `/http/status_code` *   `/http/url` *   `/http/user_agent` *   `/pid` *
         * `/stacktrace` *   `/tid`
         */
-      var labels: js.UndefOr[StringDictionary[String]] = js.native
+      var labels: js.UndefOr[StringDictionary[String]] = js.undefined
       
       /**
         * Name of the span. Must be less than 128 bytes. The span name is sanitized
@@ -778,23 +777,23 @@ object cloudtraceV1Mod {
         * use a consistent name, which makes it easier to correlate cross-trace
         * spans.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * ID of the parent span, if any. Optional.
         */
-      var parentSpanId: js.UndefOr[String] = js.native
+      var parentSpanId: js.UndefOr[String] = js.undefined
       
       /**
         * Identifier for the span. Must be a 64-bit integer other than 0 and unique
         * within a trace. For example, `2205310701640571284`.
         */
-      var spanId: js.UndefOr[String] = js.native
+      var spanId: js.UndefOr[String] = js.undefined
       
       /**
         * Start time of the span in nanoseconds from the UNIX epoch.
         */
-      var startTime: js.UndefOr[String] = js.native
+      var startTime: js.UndefOr[String] = js.undefined
     }
     object SchemaTraceSpan {
       
@@ -854,13 +853,12 @@ object cloudtraceV1Mod {
     /**
       * List of new or updated traces.
       */
-    @js.native
     trait SchemaTraces extends StObject {
       
       /**
         * List of traces.
         */
-      var traces: js.UndefOr[js.Array[SchemaTrace]] = js.native
+      var traces: js.UndefOr[js.Array[SchemaTrace]] = js.undefined
     }
     object SchemaTraces {
       
@@ -884,68 +882,67 @@ object cloudtraceV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * V1 error format.
         */
       @JSName("$.xgafv")
-      var $Dotxgafv: js.UndefOr[String] = js.native
+      var $Dotxgafv: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth access token.
         */
-      var access_token: js.UndefOr[String] = js.native
+      var access_token: js.UndefOr[String] = js.undefined
       
       /**
         * Data format for response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * JSONP
         */
-      var callback: js.UndefOr[String] = js.native
+      var callback: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Available to use for quota purposes for server-side applications. Can be
         * any arbitrary string assigned to a user, but should not exceed 40
         * characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Legacy upload protocol for media (e.g. "media", "multipart").
         */
-      var uploadType: js.UndefOr[String] = js.native
+      var uploadType: js.UndefOr[String] = js.undefined
       
       /**
         * Upload protocol for media (e.g. "raw", "multipart").
         */
-      var upload_protocol: js.UndefOr[String] = js.native
+      var upload_protocol: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

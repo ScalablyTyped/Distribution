@@ -2,17 +2,15 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
   /** List of remaining keys (besides the x key) to pull data for. */
-  var value: js.Array[String] = js.native
+  var value: js.Array[String]
   
   /** This is the key for the x-value in each row. */
-  var x: js.UndefOr[String] = js.native
+  var x: js.UndefOr[String] = js.undefined
 }
 object Value {
   

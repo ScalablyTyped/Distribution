@@ -2,16 +2,14 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePredictorRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the predictor to delete.
     */
-  var PredictorArn: Arn = js.native
+  var PredictorArn: Arn
 }
 object DeletePredictorRequest {
   

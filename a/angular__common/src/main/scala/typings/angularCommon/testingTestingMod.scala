@@ -12,7 +12,6 @@ import typings.std.Blob
 import typings.std.ErrorEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testingTestingMod {
@@ -31,8 +30,8 @@ object testingTestingMod {
       * If a matching request has been made, fail with an error message including the given request
       * description, if any.
       */
-    def expectNone(matchFn: js.Function1[/* req */ HttpRequest[_], Boolean]): Unit = js.native
-    def expectNone(matchFn: js.Function1[/* req */ HttpRequest[_], Boolean], description: String): Unit = js.native
+    def expectNone(matchFn: js.Function1[/* req */ HttpRequest[js.Any], Boolean]): Unit = js.native
+    def expectNone(matchFn: js.Function1[/* req */ HttpRequest[js.Any], Boolean], description: String): Unit = js.native
     /**
       * Expect that no requests have been made which match the given parameters.
       *
@@ -63,8 +62,8 @@ object testingTestingMod {
       * If no such request has been made, or more than one such request has been made, fail with an
       * error message including the given request description, if any.
       */
-    def expectOne(matchFn: js.Function1[/* req */ HttpRequest[_], Boolean]): TestRequest = js.native
-    def expectOne(matchFn: js.Function1[/* req */ HttpRequest[_], Boolean], description: String): TestRequest = js.native
+    def expectOne(matchFn: js.Function1[/* req */ HttpRequest[js.Any], Boolean]): TestRequest = js.native
+    def expectOne(matchFn: js.Function1[/* req */ HttpRequest[js.Any], Boolean], description: String): TestRequest = js.native
     /**
       * Expect that a single request has been made which matches the given parameters, and return
       * its mock.
@@ -95,7 +94,7 @@ object testingTestingMod {
       * Search for requests that match the given parameter, without any expectations.
       */
     def `match`(`match`: String): js.Array[TestRequest] = js.native
-    def `match`(`match`: js.Function1[/* req */ HttpRequest[_], Boolean]): js.Array[TestRequest] = js.native
+    def `match`(`match`: js.Function1[/* req */ HttpRequest[js.Any], Boolean]): js.Array[TestRequest] = js.native
     def `match`(`match`: RequestMatch): js.Array[TestRequest] = js.native
     
     /**
@@ -114,7 +113,7 @@ object testingTestingMod {
   @JSImport("@angular/common/http/testing/testing", "TestRequest")
   @js.native
   class TestRequest protected () extends StObject {
-    def this(request: HttpRequest[_], observer: Observer[HttpEvent[_]]) = this()
+    def this(request: HttpRequest[js.Any], observer: Observer[HttpEvent[js.Any]]) = this()
     
     /**
       * Whether the request was cancelled after it was sent.
@@ -131,7 +130,7 @@ object testingTestingMod {
       * Deliver an arbitrary `HttpEvent` (such as a progress event) on the response stream for this
       * request.
       */
-    def event(event: HttpEvent[_]): Unit = js.native
+    def event(event: HttpEvent[js.Any]): Unit = js.native
     
     /**
       * Resolve the request by returning a body plus additional HTTP information (such as response
@@ -160,7 +159,7 @@ object testingTestingMod {
     
     var observer: js.Any = js.native
     
-    var request: HttpRequest[_] = js.native
+    var request: HttpRequest[js.Any] = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -199,8 +198,8 @@ object testingTestingMod {
       * If a matching request has been made, fail with an error message including the given request
       * description, if any.
       */
-    def expectNone(`match`: js.Function1[/* req */ HttpRequest[_], Boolean]): Unit = js.native
-    def expectNone(`match`: js.Function1[/* req */ HttpRequest[_], Boolean], description: String): Unit = js.native
+    def expectNone(`match`: js.Function1[/* req */ HttpRequest[js.Any], Boolean]): Unit = js.native
+    def expectNone(`match`: js.Function1[/* req */ HttpRequest[js.Any], Boolean], description: String): Unit = js.native
     /**
       * Expect that no requests have been made which match the given parameters.
       *
@@ -240,8 +239,8 @@ object testingTestingMod {
       * If no such request has been made, or more than one such request has been made, fail with an
       * error message including the given request description, if any.
       */
-    def expectOne(`match`: js.Function1[/* req */ HttpRequest[_], Boolean]): TestRequest = js.native
-    def expectOne(`match`: js.Function1[/* req */ HttpRequest[_], Boolean], description: String): TestRequest = js.native
+    def expectOne(`match`: js.Function1[/* req */ HttpRequest[js.Any], Boolean]): TestRequest = js.native
+    def expectOne(`match`: js.Function1[/* req */ HttpRequest[js.Any], Boolean], description: String): TestRequest = js.native
     /**
       * Expect that a single request has been made which matches the given parameters, and return
       * its mock.
@@ -255,7 +254,7 @@ object testingTestingMod {
     /**
       * Handle an incoming request by queueing it in the list of open requests.
       */
-    def handle(req: HttpRequest[_]): Observable_[HttpEvent[_]] = js.native
+    def handle(req: HttpRequest[js.Any]): Observable_[HttpEvent[js.Any]] = js.native
     
     /**
       * Search for requests in the list of open requests, and return all that match
@@ -265,7 +264,7 @@ object testingTestingMod {
       * Search for requests that match the given parameter, without any expectations.
       */
     def `match`(`match`: String): js.Array[TestRequest] = js.native
-    def `match`(`match`: js.Function1[/* req */ HttpRequest[_], Boolean]): js.Array[TestRequest] = js.native
+    def `match`(`match`: js.Function1[/* req */ HttpRequest[js.Any], Boolean]): js.Array[TestRequest] = js.native
     def `match`(`match`: RequestMatch): js.Array[TestRequest] = js.native
     
     /**
@@ -289,12 +288,11 @@ object testingTestingMod {
     def verify(opts: IgnoreCancelled): Unit = js.native
   }
   
-  @js.native
   trait RequestMatch extends StObject {
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object RequestMatch {
     

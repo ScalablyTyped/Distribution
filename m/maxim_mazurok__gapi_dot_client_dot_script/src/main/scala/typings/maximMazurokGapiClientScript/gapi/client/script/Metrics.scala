@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metrics extends StObject {
   
   /** Number of active users. */
-  var activeUsers: js.UndefOr[js.Array[MetricsValue]] = js.native
+  var activeUsers: js.UndefOr[js.Array[MetricsValue]] = js.undefined
   
   /** Number of failed executions. */
-  var failedExecutions: js.UndefOr[js.Array[MetricsValue]] = js.native
+  var failedExecutions: js.UndefOr[js.Array[MetricsValue]] = js.undefined
   
   /** Number of total executions. */
-  var totalExecutions: js.UndefOr[js.Array[MetricsValue]] = js.native
+  var totalExecutions: js.UndefOr[js.Array[MetricsValue]] = js.undefined
 }
 object Metrics {
   

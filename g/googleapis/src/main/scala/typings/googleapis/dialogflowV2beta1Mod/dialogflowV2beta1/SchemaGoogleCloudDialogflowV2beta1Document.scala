@@ -2,7 +2,6 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `projects.agent.knowledgeBases.documents` is deprecated, please use
   * `projects.knowledgeBases.documents` instead.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1Document extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaGoogleCloudDialogflowV2beta1Document extends StObject {
     * EXTRACTIVE_QA and FAQ knowledge types. Note: This field is in the process
     * of being deprecated, please use raw_content instead.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * The URI where the file content is located.  For documents stored in
@@ -29,23 +27,23 @@ trait SchemaGoogleCloudDialogflowV2beta1Document extends StObject {
     * (i.e. the URL in your browser) are not supported. Instead use the `gs://`
     * format URI described above.
     */
-  var contentUri: js.UndefOr[String] = js.native
+  var contentUri: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The display name of the document. The name must be 1024 bytes
     * or less; otherwise, the creation request fails.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The knowledge type of document content.
     */
-  var knowledgeTypes: js.UndefOr[js.Array[String]] = js.native
+  var knowledgeTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. The MIME type of this document.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * The document resource name. The name must be empty when creating a
@@ -53,13 +51,13 @@ trait SchemaGoogleCloudDialogflowV2beta1Document extends StObject {
     * ID&gt;/knowledgeBases/&lt;Knowledge Base ID&gt;/documents/&lt;Document
     * ID&gt;`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The raw content of the document. This field is only permitted for
     * EXTRACTIVE_QA and FAQ knowledge types.
     */
-  var rawContent: js.UndefOr[String] = js.native
+  var rawContent: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1Document {
   

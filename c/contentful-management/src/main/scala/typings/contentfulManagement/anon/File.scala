@@ -4,17 +4,15 @@ import typings.node.streamMod.Stream
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
-  var contentType: String = js.native
+  var contentType: String
   
-  var file: String | ArrayBuffer | Stream = js.native
+  var file: String | ArrayBuffer | Stream
   
-  var fileName: String = js.native
+  var fileName: String
 }
 object File {
   

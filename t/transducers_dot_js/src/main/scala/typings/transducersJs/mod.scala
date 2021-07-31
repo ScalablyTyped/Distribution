@@ -8,29 +8,33 @@ import typings.std.IterableIterator
 import typings.transducersJs.transducersJsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("transducers.js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("transducers.js", "LazyTransformer")
   @js.native
-  class LazyTransformer[TInput, TOutput] protected () extends IterableIterator[TOutput] {
+  class LazyTransformer[TInput, TOutput] protected ()
+    extends StObject
+       with IterableIterator[TOutput] {
     def this(xf: Transducer[TInput, TOutput], coll: Iterable[TInput]) = this()
   }
   @JSImport("transducers.js", "LazyTransformer")
   @js.native
   val LazyTransformer: LazyTransformerConstructor = js.native
   
-  @js.native
   trait Reduced[T] extends StObject {
     
     @JSName("@@transducer/reduced")
-    var `@@transducerSlashreduced`: `true` = js.native
+    var `@@transducerSlashreduced`: `true`
     
     @JSName("@@transducer/value")
-    var `@@transducerSlashvalue`: T = js.native
+    var `@@transducerSlashvalue`: T
   }
   object Reduced {
     
@@ -39,7 +43,7 @@ object mod {
     val ^ : ReducedConstructor = js.native
     
     @scala.inline
-    implicit class ReducedMutableBuilder[Self <: Reduced[_], T] (val x: Self with Reduced[T]) extends AnyVal {
+    implicit class ReducedMutableBuilder[Self <: Reduced[?], T] (val x: Self & Reduced[T]) extends AnyVal {
       
       @scala.inline
       def `set@@transducerSlashreduced`(value: `true`): Self = StObject.set(x, "@@transducer/reduced", value.asInstanceOf[js.Any])
@@ -52,243 +56,204 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("transducers.js", "Reduced")
   @js.native
-  class ReducedCls[T] protected () extends Reduced[T] {
+  class ReducedCls[T] protected ()
+    extends StObject
+       with Reduced[T] {
     def this(value: T) = this()
+    
+    /* CompleteClass */
+    @JSName("@@transducer/reduced")
+    var `@@transducerSlashreduced`: `true` = js.native
+    
+    /* CompleteClass */
+    @JSName("@@transducer/value")
+    var `@@transducerSlashvalue`: T = js.native
   }
   
-  @JSImport("transducers.js", "cat")
-  @js.native
-  def cat[TResult, TInput](f: Transformer_[TResult, TInput]): Transformer_[TResult, Iterable[TInput]] = js.native
+  @scala.inline
+  def cat[TResult, TInput](f: Transformer_[TResult, TInput]): Transformer_[TResult, Iterable[TInput]] = ^.asInstanceOf[js.Dynamic].applyDynamic("cat")(f.asInstanceOf[js.Any]).asInstanceOf[Transformer_[TResult, Iterable[TInput]]]
   
-  @JSImport("transducers.js", "compose")
-  @js.native
-  def compose(fs: (js.Function1[/* x */ js.Any, _])*): js.Function1[/* x */ js.Any, _] = js.native
+  @scala.inline
+  def compose(fs: (js.Function1[/* x */ js.Any, js.Any])*): js.Function1[/* x */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(fs.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* x */ js.Any, js.Any]]
   
-  @JSImport("transducers.js", "dedupe")
-  @js.native
-  def dedupe[TInput](): Transducer[TInput, TInput] = js.native
+  @scala.inline
+  def dedupe[TInput](): Transducer[TInput, TInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("dedupe")().asInstanceOf[Transducer[TInput, TInput]]
   
-  @JSImport("transducers.js", "drop")
-  @js.native
-  def drop[TInput](n: Double): Transducer[TInput, TInput] = js.native
+  @scala.inline
+  def drop[TInput](n: Double): Transducer[TInput, TInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("drop")(n.asInstanceOf[js.Any]).asInstanceOf[Transducer[TInput, TInput]]
   
-  @JSImport("transducers.js", "dropWhile")
-  @js.native
-  def dropWhile[TInput](pred: js.Function1[/* x */ TInput, Boolean]): Transducer[TInput, TInput] = js.native
+  @scala.inline
+  def dropWhile[TInput](pred: js.Function1[/* x */ TInput, Boolean]): Transducer[TInput, TInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("dropWhile")(pred.asInstanceOf[js.Any]).asInstanceOf[Transducer[TInput, TInput]]
   
-  @JSImport("transducers.js", "filter")
-  @js.native
-  def filter[TInput](pred: js.Function1[/* x */ TInput, Boolean]): Transducer[TInput, TInput] = js.native
+  @scala.inline
+  def filter[TInput](pred: js.Function1[/* x */ TInput, Boolean]): Transducer[TInput, TInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(pred.asInstanceOf[js.Any]).asInstanceOf[Transducer[TInput, TInput]]
   
-  @JSImport("transducers.js", "interpose")
-  @js.native
-  def interpose[TInput](sep: TInput): Transducer[TInput, TInput] = js.native
+  @scala.inline
+  def interpose[TInput](sep: TInput): Transducer[TInput, TInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpose")(sep.asInstanceOf[js.Any]).asInstanceOf[Transducer[TInput, TInput]]
   
-  @JSImport("transducers.js", "into")
-  @js.native
-  def into[TInput](to: String, xf: Transducer[TInput, String], from: Iterable[TInput]): String = js.native
-  @JSImport("transducers.js", "into")
-  @js.native
-  def into[TInput, TOutput](to: js.Array[TOutput], xf: Transducer[TInput, TOutput], from: Iterable[TInput]): js.Array[TOutput] = js.native
-  @JSImport("transducers.js", "into")
-  @js.native
+  @scala.inline
+  def into[TInput](to: String, xf: Transducer[TInput, String], from: Iterable[TInput]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("into")(to.asInstanceOf[js.Any], xf.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def into[TInput, TOutput](to: js.Array[TOutput], xf: Transducer[TInput, TOutput], from: Iterable[TInput]): js.Array[TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("into")(to.asInstanceOf[js.Any], xf.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[js.Array[TOutput]]
+  @scala.inline
   def into[TInput, TOutput](
     to: StringDictionary[TOutput],
     xf: Transducer[TInput, js.Tuple2[String, TOutput]],
     from: Iterable[TInput]
-  ): StringDictionary[TOutput] = js.native
+  ): StringDictionary[TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("into")(to.asInstanceOf[js.Any], xf.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[TOutput]]
   
-  @JSImport("transducers.js", "isReduced")
-  @js.native
-  def isReduced(x: js.Any): Boolean = js.native
+  @scala.inline
+  def isReduced(x: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReduced")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("transducers.js", "iterator")
-  @js.native
-  def iterator[T](coll: Iterable[T]): IterableIterator[T] = js.native
+  @scala.inline
+  def iterator[T](coll: Iterable[T]): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(coll.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[T]]
   
-  @JSImport("transducers.js", "keep")
-  @js.native
-  def keep[TInput](): Transducer[js.UndefOr[TInput | Null], TInput] = js.native
+  @scala.inline
+  def keep[TInput](): Transducer[js.UndefOr[TInput | Null], TInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("keep")().asInstanceOf[Transducer[js.UndefOr[TInput | Null], TInput]]
   
-  @JSImport("transducers.js", "map")
-  @js.native
-  def map[TInput, TOutput](f: js.Function1[/* x */ TInput, TOutput]): Transducer[TInput, TOutput] = js.native
+  @scala.inline
+  def map[TInput, TOutput](f: js.Function1[/* x */ TInput, TOutput]): Transducer[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[Transducer[TInput, TOutput]]
   
-  @JSImport("transducers.js", "mapcat")
-  @js.native
-  def mapcat[TInput, TOutput](f: js.Function1[/* x */ TInput, Iterable[TOutput]]): Transducer[TInput, TOutput] = js.native
+  @scala.inline
+  def mapcat[TInput, TOutput](f: js.Function1[/* x */ TInput, Iterable[TOutput]]): Transducer[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapcat")(f.asInstanceOf[js.Any]).asInstanceOf[Transducer[TInput, TOutput]]
   
-  @JSImport("transducers.js", "partition")
-  @js.native
-  def partition[TInput](n: Double): Transducer[TInput, js.Array[TInput]] = js.native
+  @scala.inline
+  def partition[TInput](n: Double): Transducer[TInput, js.Array[TInput]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(n.asInstanceOf[js.Any]).asInstanceOf[Transducer[TInput, js.Array[TInput]]]
   
-  @JSImport("transducers.js", "partitionBy")
-  @js.native
-  def partitionBy[TInput](f: js.Function1[/* x */ TInput, _]): Transducer[TInput, js.Array[TInput]] = js.native
+  @scala.inline
+  def partitionBy[TInput](f: js.Function1[/* x */ TInput, js.Any]): Transducer[TInput, js.Array[TInput]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionBy")(f.asInstanceOf[js.Any]).asInstanceOf[Transducer[TInput, js.Array[TInput]]]
   
-  @JSImport("transducers.js", "push")
-  @js.native
-  def push[T](arr: js.Array[T], x: T): js.Array[T] = js.native
+  @scala.inline
+  def push[T](arr: js.Array[T], x: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(arr.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("transducers.js", "range")
-  @js.native
-  def range(n: Double): js.Array[Double] = js.native
+  @scala.inline
+  def range(n: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(n.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("transducers.js", "reduce")
-  @js.native
+  @scala.inline
   def reduce[TResult, TInput](
     coll: StringDictionary[TInput],
     xf: Transformer_[TResult, js.Tuple2[String, TInput]],
     init: TResult
-  ): TResult = js.native
-  @JSImport("transducers.js", "reduce")
-  @js.native
-  def reduce[TResult, TInput](coll: Iterable[TInput], xf: Transformer_[TResult, TInput], init: TResult): TResult = js.native
-  @JSImport("transducers.js", "reduce")
-  @js.native
+  ): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  @scala.inline
+  def reduce[TResult, TInput](coll: Iterable[TInput], xf: Transformer_[TResult, TInput], init: TResult): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  
+  @scala.inline
   def reduce_TResultTCompleteResultTInput_TCompleteResult[TResult, TCompleteResult, TInput](
     coll: StringDictionary[TInput],
     xf: CompletingTransformer[TResult, TCompleteResult, js.Tuple2[String, TInput]],
     init: TResult
-  ): TCompleteResult = js.native
-  @JSImport("transducers.js", "reduce")
-  @js.native
-  def reduce_TResultTCompleteResultTInput_TCompleteResult[TResult, TCompleteResult, TInput](coll: Iterable[TInput], xf: CompletingTransformer[TResult, TCompleteResult, TInput], init: TResult): TCompleteResult = js.native
+  ): TCompleteResult = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[TCompleteResult]
+  @scala.inline
+  def reduce_TResultTCompleteResultTInput_TCompleteResult[TResult, TCompleteResult, TInput](coll: Iterable[TInput], xf: CompletingTransformer[TResult, TCompleteResult, TInput], init: TResult): TCompleteResult = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[TCompleteResult]
   
-  @JSImport("transducers.js", "remove")
-  @js.native
-  def remove[TInput](pred: js.Function1[/* x */ TInput, Boolean]): Transducer[TInput, TInput] = js.native
+  @scala.inline
+  def remove[TInput](pred: js.Function1[/* x */ TInput, Boolean]): Transducer[TInput, TInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(pred.asInstanceOf[js.Any]).asInstanceOf[Transducer[TInput, TInput]]
   
-  @JSImport("transducers.js", "repeat")
-  @js.native
-  def repeat[TInput](n: Double): Transducer[TInput, TInput] = js.native
+  @scala.inline
+  def repeat[TInput](n: Double): Transducer[TInput, TInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(n.asInstanceOf[js.Any]).asInstanceOf[Transducer[TInput, TInput]]
   
-  @JSImport("transducers.js", "seq")
-  @js.native
-  def seq[TInput, TOutput](coll: js.Array[TInput], xf: Transducer[TInput, TOutput]): js.Array[TOutput] = js.native
-  @JSImport("transducers.js", "seq")
-  @js.native
+  @scala.inline
+  def seq[TInput, TOutput](coll: js.Array[TInput], xf: Transducer[TInput, TOutput]): js.Array[TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any])).asInstanceOf[js.Array[TOutput]]
+  @scala.inline
   def seq[TInput, TOutput](
     coll: StringDictionary[TInput],
     xf: Transducer[js.Tuple2[String, TInput], js.Tuple2[String, TOutput]]
-  ): StringDictionary[TOutput] = js.native
-  @JSImport("transducers.js", "seq")
-  @js.native
-  def seq[TInput, TOutput](coll: Iterable[TInput], xf: Transducer[TInput, TOutput]): IterableIterator[TOutput] = js.native
+  ): StringDictionary[TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[TOutput]]
+  @scala.inline
+  def seq[TInput, TOutput](coll: Iterable[TInput], xf: Transducer[TInput, TOutput]): IterableIterator[TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[TOutput]]
   
-  @JSImport("transducers.js", "take")
-  @js.native
-  def take[TInput](n: Double): Transducer[TInput, TInput] = js.native
+  @scala.inline
+  def take[TInput](n: Double): Transducer[TInput, TInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("take")(n.asInstanceOf[js.Any]).asInstanceOf[Transducer[TInput, TInput]]
   
-  @JSImport("transducers.js", "takeNth")
-  @js.native
-  def takeNth[TInput](n: Double): Transducer[TInput, TInput] = js.native
+  @scala.inline
+  def takeNth[TInput](n: Double): Transducer[TInput, TInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeNth")(n.asInstanceOf[js.Any]).asInstanceOf[Transducer[TInput, TInput]]
   
-  @JSImport("transducers.js", "takeWhile")
-  @js.native
-  def takeWhile[TInput](pred: js.Function1[/* x */ TInput, Boolean]): Transducer[TInput, TInput] = js.native
+  @scala.inline
+  def takeWhile[TInput](pred: js.Function1[/* x */ TInput, Boolean]): Transducer[TInput, TInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeWhile")(pred.asInstanceOf[js.Any]).asInstanceOf[Transducer[TInput, TInput]]
   
-  @JSImport("transducers.js", "toArray")
-  @js.native
-  def toArray[TInput, TOutput](coll: StringDictionary[TInput]): js.Array[TOutput] = js.native
-  @JSImport("transducers.js", "toArray")
-  @js.native
-  def toArray[TInput, TOutput](coll: StringDictionary[TInput], xf: Transducer[js.Tuple2[String, TInput], TOutput]): js.Array[TOutput] = js.native
-  @JSImport("transducers.js", "toArray")
-  @js.native
-  def toArray[TInput, TOutput](coll: Iterable[TInput]): js.Array[TOutput] = js.native
-  @JSImport("transducers.js", "toArray")
-  @js.native
-  def toArray[TInput, TOutput](coll: Iterable[TInput], xf: Transducer[TInput, TOutput]): js.Array[TOutput] = js.native
+  @scala.inline
+  def toArray[TInput, TOutput](coll: StringDictionary[TInput]): js.Array[TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(coll.asInstanceOf[js.Any]).asInstanceOf[js.Array[TOutput]]
+  @scala.inline
+  def toArray[TInput, TOutput](coll: StringDictionary[TInput], xf: Transducer[js.Tuple2[String, TInput], TOutput]): js.Array[TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any])).asInstanceOf[js.Array[TOutput]]
+  @scala.inline
+  def toArray[TInput, TOutput](coll: Iterable[TInput]): js.Array[TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(coll.asInstanceOf[js.Any]).asInstanceOf[js.Array[TOutput]]
+  @scala.inline
+  def toArray[TInput, TOutput](coll: Iterable[TInput], xf: Transducer[TInput, TOutput]): js.Array[TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any])).asInstanceOf[js.Array[TOutput]]
   
-  @JSImport("transducers.js", "toIter")
-  @js.native
-  def toIter[TInput, TOutput](coll: StringDictionary[TInput]): IterableIterator[TOutput] = js.native
-  @JSImport("transducers.js", "toIter")
-  @js.native
-  def toIter[TInput, TOutput](coll: StringDictionary[TInput], xf: Transducer[js.Tuple2[String, TInput], TOutput]): IterableIterator[TOutput] = js.native
-  @JSImport("transducers.js", "toIter")
-  @js.native
-  def toIter[TInput, TOutput](coll: Iterable[TInput]): IterableIterator[TOutput] = js.native
-  @JSImport("transducers.js", "toIter")
-  @js.native
-  def toIter[TInput, TOutput](coll: Iterable[TInput], xf: Transducer[TInput, TOutput]): IterableIterator[TOutput] = js.native
+  @scala.inline
+  def toIter[TInput, TOutput](coll: StringDictionary[TInput]): IterableIterator[TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("toIter")(coll.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[TOutput]]
+  @scala.inline
+  def toIter[TInput, TOutput](coll: StringDictionary[TInput], xf: Transducer[js.Tuple2[String, TInput], TOutput]): IterableIterator[TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIter")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[TOutput]]
+  @scala.inline
+  def toIter[TInput, TOutput](coll: Iterable[TInput]): IterableIterator[TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("toIter")(coll.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[TOutput]]
+  @scala.inline
+  def toIter[TInput, TOutput](coll: Iterable[TInput], xf: Transducer[TInput, TOutput]): IterableIterator[TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIter")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[TOutput]]
   
-  @JSImport("transducers.js", "toObj")
-  @js.native
+  @scala.inline
   def toObj[TInput, TOutput](
     coll: StringDictionary[TInput],
     xf: Transducer[js.Tuple2[String, TInput], js.Tuple2[String, TOutput]]
-  ): StringDictionary[TOutput] = js.native
-  @JSImport("transducers.js", "toObj")
-  @js.native
-  def toObj[TInput, TOutput](coll: Iterable[TInput]): StringDictionary[TOutput] = js.native
-  @JSImport("transducers.js", "toObj")
-  @js.native
-  def toObj[TInput, TOutput](coll: Iterable[TInput], xf: Transducer[TInput, js.Tuple2[String, TOutput]]): StringDictionary[TOutput] = js.native
+  ): StringDictionary[TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObj")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[TOutput]]
+  @scala.inline
+  def toObj[TInput, TOutput](coll: Iterable[TInput]): StringDictionary[TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObj")(coll.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[TOutput]]
+  @scala.inline
+  def toObj[TInput, TOutput](coll: Iterable[TInput], xf: Transducer[TInput, js.Tuple2[String, TOutput]]): StringDictionary[TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObj")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[TOutput]]
   
-  @JSImport("transducers.js", "transduce")
-  @js.native
+  @scala.inline
   def transduce[TResult, TInput, TOutput](
     coll: StringDictionary[TInput],
     xf: Transducer[js.Tuple2[String, TInput], TOutput],
     f: Reducer[TResult, TOutput],
     init: TResult
-  ): TResult = js.native
-  @JSImport("transducers.js", "transduce")
-  @js.native
+  ): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("transduce")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any], f.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  @scala.inline
   def transduce[TResult, TInput, TOutput](
     coll: Iterable[TInput],
     xf: Transducer[TInput, TOutput],
     f: Reducer[TResult, TOutput],
     init: TResult
-  ): TResult = js.native
-  @JSImport("transducers.js", "transduce")
-  @js.native
+  ): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("transduce")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any], f.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  @scala.inline
   def transduce[TResult, TCompleteResult, TInput, TOutput](
     coll: StringDictionary[TInput],
     xf: Transducer[js.Tuple2[String, TInput], TOutput],
     f: CompletingTransformer[TResult, TCompleteResult, TOutput]
-  ): TCompleteResult = js.native
-  @JSImport("transducers.js", "transduce")
-  @js.native
+  ): TCompleteResult = (^.asInstanceOf[js.Dynamic].applyDynamic("transduce")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[TCompleteResult]
+  @scala.inline
   def transduce[TResult, TCompleteResult, TInput, TOutput](
     coll: StringDictionary[TInput],
     xf: Transducer[js.Tuple2[String, TInput], TOutput],
     f: CompletingTransformer[TResult, TCompleteResult, TOutput],
     init: TResult
-  ): TCompleteResult = js.native
-  @JSImport("transducers.js", "transduce")
-  @js.native
+  ): TCompleteResult = (^.asInstanceOf[js.Dynamic].applyDynamic("transduce")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any], f.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[TCompleteResult]
+  @scala.inline
   def transduce[TResult, TCompleteResult, TInput, TOutput](
     coll: Iterable[TInput],
     xf: Transducer[TInput, TOutput],
     f: CompletingTransformer[TResult, TCompleteResult, TOutput]
-  ): TCompleteResult = js.native
-  @JSImport("transducers.js", "transduce")
-  @js.native
+  ): TCompleteResult = (^.asInstanceOf[js.Dynamic].applyDynamic("transduce")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[TCompleteResult]
+  @scala.inline
   def transduce[TResult, TCompleteResult, TInput, TOutput](
     coll: Iterable[TInput],
     xf: Transducer[TInput, TOutput],
     f: CompletingTransformer[TResult, TCompleteResult, TOutput],
     init: TResult
-  ): TCompleteResult = js.native
+  ): TCompleteResult = (^.asInstanceOf[js.Dynamic].applyDynamic("transduce")(coll.asInstanceOf[js.Any], xf.asInstanceOf[js.Any], f.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[TCompleteResult]
   
-  @JSImport("transducers.js", "transformer")
-  @js.native
-  def transformer[TResult, TInput](reducer: Reducer[TResult, TInput]): Transformer_[TResult, TInput] = js.native
+  @scala.inline
+  def transformer[TResult, TInput](reducer: Reducer[TResult, TInput]): Transformer_[TResult, TInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformer")(reducer.asInstanceOf[js.Any]).asInstanceOf[Transformer_[TResult, TInput]]
   
-  @js.native
   trait CompletingTransformer[TResult, TCompleteResult, TInput] extends StObject {
     
     @JSName("@@transducer/init")
-    def `@@transducerSlashinit`(): TResult | Unit = js.native
+    def `@@transducerSlashinit`(): TResult | Unit
     
     @JSName("@@transducer/result")
-    def `@@transducerSlashresult`(result: TResult): TCompleteResult = js.native
+    def `@@transducerSlashresult`(result: TResult): TCompleteResult
     
     @JSName("@@transducer/step")
-    def `@@transducerSlashstep`(result: TResult, input: TInput): TResult | Reduced[TResult] = js.native
+    def `@@transducerSlashstep`(result: TResult, input: TInput): TResult | Reduced[TResult]
   }
   object CompletingTransformer {
     
@@ -306,7 +271,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CompletingTransformerMutableBuilder[Self <: CompletingTransformer[_, _, _], TResult, TCompleteResult, TInput] (val x: Self with (CompletingTransformer[TResult, TCompleteResult, TInput])) extends AnyVal {
+    implicit class CompletingTransformerMutableBuilder[Self <: CompletingTransformer[?, ?, ?], TResult, TCompleteResult, TInput] (val x: Self & (CompletingTransformer[TResult, TCompleteResult, TInput])) extends AnyVal {
       
       @scala.inline
       def `set@@transducerSlashinit`(value: () => TResult | Unit): Self = StObject.set(x, "@@transducer/init", js.Any.fromFunction0(value))
@@ -321,7 +286,8 @@ object mod {
   
   @js.native
   trait LazyTransformerConstructor
-    extends Instantiable2[
+    extends StObject
+       with Instantiable2[
           /* xf */ Transducer[js.Object, js.Object], 
           /* coll */ Iterable[js.Object], 
           IterableIterator[js.Object]
@@ -329,7 +295,8 @@ object mod {
   
   @js.native
   trait ReducedConstructor
-    extends Instantiable1[/* value */ js.Object, Reduced[js.Object]]
+    extends StObject
+       with Instantiable1[/* value */ js.Object, Reduced[js.Object]]
   
   type Reducer[TResult, TInput] = js.Function2[/* result */ TResult, /* input */ TInput, TResult]
   

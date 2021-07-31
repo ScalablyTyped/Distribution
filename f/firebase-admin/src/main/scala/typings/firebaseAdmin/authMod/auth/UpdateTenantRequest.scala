@@ -3,35 +3,33 @@ package typings.firebaseAdmin.authMod.auth
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface representing the properties to update on the provided tenant.
   */
-@js.native
 trait UpdateTenantRequest extends StObject {
   
   /**
     * The tenant display name.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The email sign in configuration.
     */
-  var emailSignInConfig: js.UndefOr[EmailSignInProviderConfig] = js.native
+  var emailSignInConfig: js.UndefOr[EmailSignInProviderConfig] = js.undefined
   
   /**
     * The multi-factor auth configuration to update on the tenant.
     */
-  var multiFactorConfig: js.UndefOr[MultiFactorConfig] = js.native
+  var multiFactorConfig: js.UndefOr[MultiFactorConfig] = js.undefined
   
   /**
     * The updated map containing the test phone number / code pairs for the tenant.
     * Passing null clears the previously save phone number / code pairs.
     */
-  var testPhoneNumbers: js.UndefOr[StringDictionary[String] | Null] = js.native
+  var testPhoneNumbers: js.UndefOr[StringDictionary[String] | Null] = js.undefined
 }
 object UpdateTenantRequest {
   

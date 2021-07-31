@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object TimedTextFlowDirection extends StObject {
   
   /** Text is flowed left to right. */
   @js.native
-  sealed trait leftToRight extends TimedTextFlowDirection
+  sealed trait leftToRight
+    extends StObject
+       with TimedTextFlowDirection
   
   /** Text is flowed right to left. */
   @js.native
-  sealed trait rightToLeft extends TimedTextFlowDirection
+  sealed trait rightToLeft
+    extends StObject
+       with TimedTextFlowDirection
 }

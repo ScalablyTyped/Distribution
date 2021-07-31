@@ -3,14 +3,16 @@ package typings.nonogramSolver
 import typings.nonogramSolver.anon.RequiredInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(filename: String): Result = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[Result]
+  
   @JSImport("nonogram-solver", JSImport.Namespace)
   @js.native
-  def apply(filename: String): Result = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("nonogram-solver", "Puzzle")
   @js.native
@@ -39,14 +41,13 @@ object mod {
     var width: Double = js.native
   }
   
-  @js.native
   trait Input extends StObject {
     
-    var columns: js.Array[js.Array[Double]] = js.native
+    var columns: js.Array[js.Array[Double]]
     
-    var content: js.UndefOr[js.Array[State]] = js.native
+    var content: js.UndefOr[js.Array[State]] = js.undefined
     
-    var rows: js.Array[js.Array[Double]] = js.native
+    var rows: js.Array[js.Array[Double]]
   }
   object Input {
     
@@ -82,12 +83,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var puzzle: Puzzle = js.native
+    var puzzle: Puzzle
     
-    var status: State = js.native
+    var status: State
   }
   object Result {
     

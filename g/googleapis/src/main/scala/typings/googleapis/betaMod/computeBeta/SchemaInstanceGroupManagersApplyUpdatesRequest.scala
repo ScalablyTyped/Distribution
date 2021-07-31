@@ -2,13 +2,11 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * InstanceGroupManagers.applyUpdatesToInstances
   */
-@js.native
 trait SchemaInstanceGroupManagersApplyUpdatesRequest extends StObject {
   
   /**
@@ -16,19 +14,19 @@ trait SchemaInstanceGroupManagersApplyUpdatesRequest extends StObject {
     * updates on this managed instance group. This can be a full URL or a
     * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
     */
-  var instances: js.UndefOr[js.Array[String]] = js.native
+  var instances: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The minimal action that should be perfomed on the instances. By default
     * NONE.
     */
-  var minimalAction: js.UndefOr[String] = js.native
+  var minimalAction: js.UndefOr[String] = js.undefined
   
   /**
     * The most disruptive action that allowed to be performed on the instances.
     * By default REPLACE.
     */
-  var mostDisruptiveAllowedAction: js.UndefOr[String] = js.native
+  var mostDisruptiveAllowedAction: js.UndefOr[String] = js.undefined
 }
 object SchemaInstanceGroupManagersApplyUpdatesRequest {
   

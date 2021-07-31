@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainMembership extends StObject {
   
   /** True if the person is in the viewer's G Suite domain. */
-  var inViewerDomain: js.UndefOr[Boolean] = js.native
+  var inViewerDomain: js.UndefOr[Boolean] = js.undefined
 }
 object DomainMembership {
   

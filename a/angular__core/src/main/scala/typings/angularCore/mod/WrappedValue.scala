@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "WrappedValue")
@@ -16,21 +15,22 @@ class WrappedValue protected () extends StObject {
 /* static members */
 object WrappedValue {
   
-  /** Returns true if `value` is a wrapped value. */
-  @JSImport("@angular/core", "WrappedValue.isWrapped")
+  @JSImport("@angular/core", "WrappedValue")
   @js.native
-  def isWrapped(value: js.Any): /* is @angular/core.@angular/core.WrappedValue */ Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  /** Returns true if `value` is a wrapped value. */
+  @scala.inline
+  def isWrapped(value: js.Any): /* is @angular/core.@angular/core.WrappedValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWrapped")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/core.@angular/core.WrappedValue */ Boolean]
   
   /**
     * Returns the underlying value of a wrapped value.
     * Returns the given `value` when it is not wrapped.
     **/
-  @JSImport("@angular/core", "WrappedValue.unwrap")
-  @js.native
-  def unwrap(value: js.Any): js.Any = js.native
+  @scala.inline
+  def unwrap(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrap")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** Creates a wrapped value. */
-  @JSImport("@angular/core", "WrappedValue.wrap")
-  @js.native
-  def wrap(value: js.Any): WrappedValue = js.native
+  @scala.inline
+  def wrap(value: js.Any): WrappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(value.asInstanceOf[js.Any]).asInstanceOf[WrappedValue]
 }

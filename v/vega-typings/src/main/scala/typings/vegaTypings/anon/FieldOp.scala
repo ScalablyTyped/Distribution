@@ -8,17 +8,17 @@ import typings.vegaTypings.vegaTypingsStrings.max
 import typings.vegaTypings.vegaTypingsStrings.min
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldOp extends _UnionSortField {
+trait FieldOp
+  extends StObject
+     with _UnionSortField {
   
-  var field: ScaleField = js.native
+  var field: ScaleField
   
-  var op: count | min | max = js.native
+  var op: count | min | max
   
-  var order: js.UndefOr[SortOrder] = js.native
+  var order: js.UndefOr[SortOrder] = js.undefined
 }
 object FieldOp {
   

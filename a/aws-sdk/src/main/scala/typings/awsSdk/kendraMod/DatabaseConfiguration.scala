@@ -2,38 +2,36 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatabaseConfiguration extends StObject {
   
   /**
     * Information about the database column that provides information for user context filtering.
     */
-  var AclConfiguration: js.UndefOr[typings.awsSdk.kendraMod.AclConfiguration] = js.native
+  var AclConfiguration: js.UndefOr[typings.awsSdk.kendraMod.AclConfiguration] = js.undefined
   
   /**
     * Information about where the index should get the document information from the database.
     */
-  var ColumnConfiguration: typings.awsSdk.kendraMod.ColumnConfiguration = js.native
+  var ColumnConfiguration: typings.awsSdk.kendraMod.ColumnConfiguration
   
   /**
     * The information necessary to connect to a database.
     */
-  var ConnectionConfiguration: typings.awsSdk.kendraMod.ConnectionConfiguration = js.native
+  var ConnectionConfiguration: typings.awsSdk.kendraMod.ConnectionConfiguration
   
   /**
     * The type of database engine that runs the database.
     */
-  var DatabaseEngineType: typings.awsSdk.kendraMod.DatabaseEngineType = js.native
+  var DatabaseEngineType: typings.awsSdk.kendraMod.DatabaseEngineType
   
   /**
     * Provides information about how Amazon Kendra uses quote marks around SQL identifiers when querying a database data source.
     */
-  var SqlConfiguration: js.UndefOr[typings.awsSdk.kendraMod.SqlConfiguration] = js.native
+  var SqlConfiguration: js.UndefOr[typings.awsSdk.kendraMod.SqlConfiguration] = js.undefined
   
-  var VpcConfiguration: js.UndefOr[DataSourceVpcConfiguration] = js.native
+  var VpcConfiguration: js.UndefOr[DataSourceVpcConfiguration] = js.undefined
 }
 object DatabaseConfiguration {
   

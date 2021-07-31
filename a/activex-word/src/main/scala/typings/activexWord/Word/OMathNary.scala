@@ -2,36 +2,34 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMathNary extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Char: Double = js.native
+  var Char: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val E: OMath = js.native
+  val E: OMath
   
-  var Grow: Boolean = js.native
+  var Grow: Boolean
   
-  var HideSub: Boolean = js.native
+  var HideSub: Boolean
   
-  var HideSup: Boolean = js.native
+  var HideSup: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Sub: OMath = js.native
+  val Sub: OMath
   
-  var SubSupLim: Boolean = js.native
+  var SubSupLim: Boolean
   
-  val Sup: OMath = js.native
+  val Sup: OMath
   
   @JSName("Word.OMathNary_typekey")
-  var WordDotOMathNary_typekey: OMathNary = js.native
+  var WordDotOMathNary_typekey: OMathNary
 }
 object OMathNary {
   

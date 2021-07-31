@@ -11,8 +11,8 @@ A sandboxed Node.js module loader that lets you inject dependencies into your mo
 | Full name          | sandboxed-module |
 | Keywords           | require, mocking, mocks, stubs, dependency injection, testing |
 | # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 87004 |
+| # dependents       | 16 |
+| # downloads        | 95564 |
 | # stars            | 3 |
 
 ## Links

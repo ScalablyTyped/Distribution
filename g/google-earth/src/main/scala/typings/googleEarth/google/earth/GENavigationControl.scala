@@ -2,10 +2,8 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GENavigationControl extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait GENavigationControl extends StObject {
     * * GEPlugin.NAVIGATION_CONTROL_LARGE
     * * GEPlugin.NAVIGATION_CONTROL_SMALL
     */
-  def getControlType(): GENavigationControlEnum = js.native
+  def getControlType(): GENavigationControlEnum
   
   /**
     * The position of the navigation controls in Google Earth
     */
-  def getScreenXY(): KmlVec2 = js.native
+  def getScreenXY(): KmlVec2
   
   /**
     * Whether Street View is enabled in the navigation controls.
     */
-  def getStreetViewEnabled(): Boolean = js.native
+  def getStreetViewEnabled(): Boolean
   
   /**
     * Whether the control is always visible, always hidden, or visible only when the user intends to use the control.
@@ -37,7 +35,7 @@ trait GENavigationControl extends StObject {
     * * GEPlugin.VISIBILITY_HIDE
     * * GEPlugin.VISIBILITY_AUTO
     */
-  def getVisibility(): GEVisibilityEnum = js.native
+  def getVisibility(): GEVisibilityEnum
   
   /**
     * Specifies the size of the navigation control.
@@ -47,14 +45,14 @@ trait GENavigationControl extends StObject {
     * * GEPlugin.NAVIGATION_CONTROL_LARGE
     * * GEPlugin.NAVIGATION_CONTROL_SMALL
     */
-  def setControlType(controlType: GENavigationControlEnum): Unit = js.native
+  def setControlType(controlType: GENavigationControlEnum): Unit
   
   /**
     * Enables or disables user-initiated entry to Street View imagery.
     * When true, the Pegman icon is present in the navigation controls, allowing a user to drag the Pegman onto a street to initiate Street View.
     * Users can also zoom down to ground level to enter Street View when this is set to true.
     */
-  def setStreetViewEnabled(streetViewEnabled: Boolean): Unit = js.native
+  def setStreetViewEnabled(streetViewEnabled: Boolean): Unit
   
   /**
     * Whether the control is always visible, always hidden, or visible only when the user intends to use the control.
@@ -65,7 +63,7 @@ trait GENavigationControl extends StObject {
     * * GEPlugin.VISIBILITY_HIDE
     * * GEPlugin.VISIBILITY_AUTO
     */
-  def setVisibility(visibility: GEVisibilityEnum): Unit = js.native
+  def setVisibility(visibility: GEVisibilityEnum): Unit
 }
 object GENavigationControl {
   

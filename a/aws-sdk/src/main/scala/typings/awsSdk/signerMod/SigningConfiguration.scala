@@ -2,21 +2,19 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigningConfiguration extends StObject {
   
   /**
     * The encryption algorithm options that are available for a code signing job.
     */
-  var encryptionAlgorithmOptions: EncryptionAlgorithmOptions = js.native
+  var encryptionAlgorithmOptions: EncryptionAlgorithmOptions
   
   /**
     * The hash algorithm options that are available for a code signing job.
     */
-  var hashAlgorithmOptions: HashAlgorithmOptions = js.native
+  var hashAlgorithmOptions: HashAlgorithmOptions
 }
 object SigningConfiguration {
   

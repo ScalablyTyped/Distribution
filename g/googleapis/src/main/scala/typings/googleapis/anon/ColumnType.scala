@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnType extends StObject {
   
-  var columnType: js.UndefOr[String] = js.native
+  var columnType: js.UndefOr[String] = js.undefined
   
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ColumnType {
   

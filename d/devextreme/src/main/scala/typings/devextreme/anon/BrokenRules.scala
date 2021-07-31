@@ -13,35 +13,33 @@ import typings.devextreme.mod.DevExpress.ui.StringLengthRule
 import typings.devextreme.mod.global.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrokenRules[T] extends StObject {
   
   var brokenRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var errorText: js.UndefOr[String] = js.native
+  var errorText: js.UndefOr[String] = js.undefined
   
-  var isValid: js.UndefOr[Boolean] = js.native
+  var isValid: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[js.Any] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var newData: js.UndefOr[js.Any] = js.native
+  var newData: js.UndefOr[js.Any] = js.undefined
   
-  var oldData: js.UndefOr[js.Any] = js.native
+  var oldData: js.UndefOr[js.Any] = js.undefined
   
-  var promise: js.UndefOr[typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit]] = js.native
+  var promise: js.UndefOr[typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit]] = js.undefined
 }
 object BrokenRules {
   
@@ -52,7 +50,7 @@ object BrokenRules {
   }
   
   @scala.inline
-  implicit class BrokenRulesMutableBuilder[Self <: BrokenRules[_], T] (val x: Self with BrokenRules[T]) extends AnyVal {
+  implicit class BrokenRulesMutableBuilder[Self <: BrokenRules[?], T] (val x: Self & BrokenRules[T]) extends AnyVal {
     
     @scala.inline
     def setBrokenRules(

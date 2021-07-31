@@ -7,14 +7,15 @@ import typings.expoConfigureSplashScreen.typesMod.NonPrimitiveAndNonArrayKeys
 import typings.expoConfigureSplashScreen.typesMod.OptionalPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fromJsonValidatorMod {
   
   @JSImport("@expo/configure-splash-screen/build/validators/FromJsonValidator", JSImport.Default)
   @js.native
-  class default[From /* <: JsonShape[To] */, To /* <: js.Object */] () extends FromJsonValidator[From, To]
+  class default[From /* <: JsonShape[To] */, To /* <: js.Object */] ()
+    extends StObject
+       with FromJsonValidator[From, To]
   
   @js.native
   trait FromJsonValidator[From /* <: JsonShape[To] */, To /* <: js.Object */] extends StObject {

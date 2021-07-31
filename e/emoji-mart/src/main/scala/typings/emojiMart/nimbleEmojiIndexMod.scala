@@ -5,34 +5,36 @@ import typings.emojiMart.dataMod.Data
 import typings.emojiMart.emojiMartStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nimbleEmojiIndexMod {
   
   @JSImport("emoji-mart/dist-es/utils/emoji-index/nimble-emoji-index", JSImport.Default)
   @js.native
-  class default protected () extends NimbleEmojiIndex {
+  class default protected ()
+    extends StObject
+       with NimbleEmojiIndex {
     def this(data: Data) = this()
   }
   
-  @js.native
-  trait BaseEmoji extends EmojiData {
+  trait BaseEmoji
+    extends StObject
+       with EmojiData {
     
-    var colons: String = js.native
+    var colons: String
     
     /** Reverse mapping to keyof emoticons */
-    var emoticons: js.Array[String] = js.native
+    var emoticons: js.Array[String]
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var native: String = js.native
+    var native: String
     
-    var skin: EmojiSkin | Null = js.native
+    var skin: EmojiSkin | Null
     
-    var unified: String = js.native
+    var unified: String
   }
   object BaseEmoji {
     
@@ -45,7 +47,7 @@ object nimbleEmojiIndexMod {
       native: String,
       unified: String
     ): BaseEmoji = {
-      val __obj = js.Dynamic.literal(colons = colons.asInstanceOf[js.Any], emoticons = emoticons.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], unified = unified.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(colons = colons.asInstanceOf[js.Any], emoticons = emoticons.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], unified = unified.asInstanceOf[js.Any], skin = null)
       __obj.asInstanceOf[BaseEmoji]
     }
     
@@ -81,25 +83,26 @@ object nimbleEmojiIndexMod {
     }
   }
   
-  @js.native
-  trait CustomEmoji extends EmojiData {
+  trait CustomEmoji
+    extends StObject
+       with EmojiData {
     
     // colons is overridden by :id:
-    var colons: js.UndefOr[String] = js.native
+    var colons: js.UndefOr[String] = js.undefined
     
-    var emoticons: js.UndefOr[js.Array[String]] = js.native
+    var emoticons: js.UndefOr[js.Array[String]] = js.undefined
     
     // id is overridden by short_names[0]
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var imageUrl: String = js.native
+    var imageUrl: String
     
-    var keywords: js.UndefOr[js.Array[String]] = js.native
+    var keywords: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
     /** Must contain at least one name. The first name is used as the unique id. */
-    var short_names: js.Array[String] = js.native
+    var short_names: js.Array[String]
   }
   object CustomEmoji {
     
@@ -160,7 +163,9 @@ object nimbleEmojiIndexMod {
     - typings.emojiMart.nimbleEmojiIndexMod.BaseEmoji
     - typings.emojiMart.nimbleEmojiIndexMod.CustomEmoji
   */
-  trait EmojiData extends EmojiEntry
+  trait EmojiData
+    extends StObject
+       with EmojiEntry
   object EmojiData {
     
     @scala.inline
@@ -172,7 +177,7 @@ object nimbleEmojiIndexMod {
       native: String,
       unified: String
     ): typings.emojiMart.nimbleEmojiIndexMod.BaseEmoji = {
-      val __obj = js.Dynamic.literal(colons = colons.asInstanceOf[js.Any], emoticons = emoticons.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], unified = unified.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(colons = colons.asInstanceOf[js.Any], emoticons = emoticons.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], unified = unified.asInstanceOf[js.Any], skin = null)
       __obj.asInstanceOf[typings.emojiMart.nimbleEmojiIndexMod.BaseEmoji]
     }
     
@@ -199,7 +204,7 @@ object nimbleEmojiIndexMod {
       native: String,
       unified: String
     ): typings.emojiMart.nimbleEmojiIndexMod.BaseEmoji = {
-      val __obj = js.Dynamic.literal(colons = colons.asInstanceOf[js.Any], emoticons = emoticons.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], unified = unified.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(colons = colons.asInstanceOf[js.Any], emoticons = emoticons.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], unified = unified.asInstanceOf[js.Any], skin = null)
       __obj.asInstanceOf[typings.emojiMart.nimbleEmojiIndexMod.BaseEmoji]
     }
     

@@ -2,16 +2,16 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MoveToOptions extends ViewPortOptions {
+trait MoveToOptions
+  extends StObject
+     with ViewPortOptions {
   
   /**
     * The position (in canvas units!) is the position of the central focus point of the camera.
     */
-  var position: js.UndefOr[Position] = js.native
+  var position: js.UndefOr[Position] = js.undefined
 }
 object MoveToOptions {
   

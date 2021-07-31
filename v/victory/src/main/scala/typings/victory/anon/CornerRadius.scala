@@ -3,19 +3,17 @@ package typings.victory.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CornerRadius extends StObject {
   
-  var cornerRadius: js.UndefOr[Double] = js.native
+  var cornerRadius: js.UndefOr[Double] = js.undefined
   
-  var flyoutStyle: js.UndefOr[CSSProperties] = js.native
+  var flyoutStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var pointerLength: js.UndefOr[Double] = js.native
+  var pointerLength: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object CornerRadius {
   

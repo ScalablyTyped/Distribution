@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.mobile.ui.ModalView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofModalView extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): ModalView = js.native
+  def extend(proto: js.Object): ModalView
   
   /* static member */
-  var fn: ModalView = js.native
+  var fn: ModalView
 }
 object TypeofModalView {
   

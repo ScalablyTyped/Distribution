@@ -6,17 +6,15 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reset extends StObject {
   
-  var reset: MouseEventHandler[Element] = js.native
+  var reset: MouseEventHandler[Element]
   
-  var zoomIn: MouseEventHandler[Element] = js.native
+  var zoomIn: MouseEventHandler[Element]
   
-  var zoomOut: MouseEventHandler[Element] = js.native
+  var zoomOut: MouseEventHandler[Element]
 }
 object Reset {
   

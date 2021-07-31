@@ -2,20 +2,18 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgBrowseButtonMethods extends StObject {
   
-  def attachFilePicker(e: js.Object, isHidden: js.Object): Unit = js.native
+  def attachFilePicker(e: js.Object, isHidden: js.Object): Unit
   
   /**
     * $(".selector").igUpload("destroy");
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def getFilePicker(): Unit = js.native
+  def getFilePicker(): Unit
 }
 object IgBrowseButtonMethods {
   

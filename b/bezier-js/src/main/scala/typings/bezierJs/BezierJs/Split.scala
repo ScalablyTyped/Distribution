@@ -2,17 +2,17 @@ package typings.bezierJs.BezierJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Split extends Pair {
+trait Split
+  extends StObject
+     with Pair {
   
-  var _t1: js.UndefOr[Double] = js.native
+  var _t1: js.UndefOr[Double] = js.undefined
   
-  var _t2: js.UndefOr[Double] = js.native
+  var _t2: js.UndefOr[Double] = js.undefined
   
-  var span: js.Array[Point] = js.native
+  var span: js.Array[Point]
 }
 object Split {
   

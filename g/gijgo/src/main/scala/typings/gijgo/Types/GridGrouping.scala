@@ -2,13 +2,11 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridGrouping extends StObject {
   
-  var groupBy: String = js.native
+  var groupBy: String
 }
 object GridGrouping {
   

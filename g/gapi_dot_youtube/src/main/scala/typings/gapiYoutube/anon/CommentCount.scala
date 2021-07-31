@@ -2,31 +2,29 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentCount extends StObject {
   
   /**
     * The number of comments for the channel.
     */
-  var commentCount: Double = js.native
+  var commentCount: Double
   
   /**
     * The number of subscribers that the channel has.
     */
-  var subscriberCount: Double = js.native
+  var subscriberCount: Double
   
   /**
     * The number of videos uploaded to the channel.
     */
-  var videoCount: Double = js.native
+  var videoCount: Double
   
   /**
     * The number of times the channel has been viewed.
     */
-  var viewCount: Double = js.native
+  var viewCount: Double
 }
 object CommentCount {
   

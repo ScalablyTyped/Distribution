@@ -2,23 +2,21 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
   /** The data type of the column. Possible values are float, integer, string, boolean, date, and datetime. */
-  def getDataType(): String = js.native
+  def getDataType(): String
   
   /** The name of the column. */
-  def getFieldName(): String = js.native
+  def getFieldName(): String
   
   /** The number of rows in the returned data. */
-  def getIndex(): Double = js.native
+  def getIndex(): Double
   
   /** Whether the column data is referenced in the visualization. */
-  def getIsReferenced(): Boolean = js.native
+  def getIsReferenced(): Boolean
 }
 object Column {
   

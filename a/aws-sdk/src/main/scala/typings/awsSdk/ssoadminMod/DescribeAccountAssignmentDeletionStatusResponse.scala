@@ -2,16 +2,14 @@ package typings.awsSdk.ssoadminMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccountAssignmentDeletionStatusResponse extends StObject {
   
   /**
     * The status object for the account assignment deletion operation.
     */
-  var AccountAssignmentDeletionStatus: js.UndefOr[AccountAssignmentOperationStatus] = js.native
+  var AccountAssignmentDeletionStatus: js.UndefOr[AccountAssignmentOperationStatus] = js.undefined
 }
 object DescribeAccountAssignmentDeletionStatusResponse {
   

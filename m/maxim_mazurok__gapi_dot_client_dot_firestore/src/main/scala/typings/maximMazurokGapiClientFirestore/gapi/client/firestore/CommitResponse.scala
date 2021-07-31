@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommitResponse extends StObject {
   
   /** The time at which the commit occurred. Any read with an equal or greater `read_time` is guaranteed to see the effects of the commit. */
-  var commitTime: js.UndefOr[String] = js.native
+  var commitTime: js.UndefOr[String] = js.undefined
   
   /** The result of applying the writes. This i-th write result corresponds to the i-th write in the request. */
-  var writeResults: js.UndefOr[js.Array[WriteResult]] = js.native
+  var writeResults: js.UndefOr[js.Array[WriteResult]] = js.undefined
 }
 object CommitResponse {
   

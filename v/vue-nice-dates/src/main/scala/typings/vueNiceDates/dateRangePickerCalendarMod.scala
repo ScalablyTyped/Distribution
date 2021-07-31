@@ -9,13 +9,14 @@ import typings.vueNiceDates.anon.HoveredDate
 import typings.vueNiceDates.anon.OmitDateRangePickerPropsi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateRangePickerCalendarMod {
   
   @js.native
-  trait DateRangePickerCalendar extends VueConstructor[Vue] {
+  trait DateRangePickerCalendar
+    extends StObject
+       with VueConstructor[Vue] {
     
     var computed: DisplayedEndDate = js.native
     

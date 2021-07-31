@@ -2,30 +2,28 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGLengthList extends StObject {
   
   @JSName("MSHTML.SVGLengthList_typekey")
-  var MSHTMLDotSVGLengthList_typekey: SVGLengthList = js.native
+  var MSHTMLDotSVGLengthList_typekey: SVGLengthList
   
-  def appendItem(newItem: SVGLength): SVGLength = js.native
+  def appendItem(newItem: SVGLength): SVGLength
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def getItem(index: Double): SVGLength = js.native
+  def getItem(index: Double): SVGLength
   
-  def initialize(newItem: SVGLength): SVGLength = js.native
+  def initialize(newItem: SVGLength): SVGLength
   
-  def insertItemBefore(newItem: SVGLength, index: Double): SVGLength = js.native
+  def insertItemBefore(newItem: SVGLength, index: Double): SVGLength
   
-  var numberOfItems: Double = js.native
+  var numberOfItems: Double
   
-  def removeItem(index: Double): SVGLength = js.native
+  def removeItem(index: Double): SVGLength
   
-  def replaceItem(newItem: SVGLength, index: Double): SVGLength = js.native
+  def replaceItem(newItem: SVGLength, index: Double): SVGLength
 }
 object SVGLengthList {
   

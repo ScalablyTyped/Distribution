@@ -2,7 +2,6 @@ package typings.officeJsPreview.OneNote
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,38 +14,62 @@ sealed trait NoteTagType extends StObject
 object NoteTagType extends StObject {
   
   @js.native
-  sealed trait address extends NoteTagType
+  sealed trait address
+    extends StObject
+       with NoteTagType
   
   @js.native
-  sealed trait contact extends NoteTagType
+  sealed trait contact
+    extends StObject
+       with NoteTagType
   
   @js.native
-  sealed trait critical extends NoteTagType
+  sealed trait critical
+    extends StObject
+       with NoteTagType
   
   @js.native
-  sealed trait idea extends NoteTagType
+  sealed trait idea
+    extends StObject
+       with NoteTagType
   
   @js.native
-  sealed trait important extends NoteTagType
+  sealed trait important
+    extends StObject
+       with NoteTagType
   
   @js.native
-  sealed trait phoneNumber extends NoteTagType
+  sealed trait phoneNumber
+    extends StObject
+       with NoteTagType
   
   @js.native
-  sealed trait question extends NoteTagType
+  sealed trait question
+    extends StObject
+       with NoteTagType
   
   @js.native
-  sealed trait toDo extends NoteTagType
+  sealed trait toDo
+    extends StObject
+       with NoteTagType
   
   @js.native
-  sealed trait toDoPriority1 extends NoteTagType
+  sealed trait toDoPriority1
+    extends StObject
+       with NoteTagType
   
   @js.native
-  sealed trait toDoPriority2 extends NoteTagType
+  sealed trait toDoPriority2
+    extends StObject
+       with NoteTagType
   
   @js.native
-  sealed trait unknown extends NoteTagType
+  sealed trait unknown
+    extends StObject
+       with NoteTagType
   
   @js.native
-  sealed trait website extends NoteTagType
+  sealed trait website
+    extends StObject
+       with NoteTagType
 }

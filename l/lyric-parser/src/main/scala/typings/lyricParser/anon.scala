@@ -2,23 +2,21 @@ package typings.lyricParser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Album extends StObject {
     
-    var album: String = js.native
+    var album: String
     
-    var artist: String = js.native
+    var artist: String
     
-    var by: String = js.native
+    var by: String
     
-    var offset: String = js.native
+    var offset: String
     
-    var title: String = js.native
+    var title: String
   }
   object Album {
     
@@ -48,12 +46,11 @@ object anon {
     }
   }
   
-  @js.native
   trait LineNum extends StObject {
     
-    var lineNum: Double = js.native
+    var lineNum: Double
     
-    var txt: String = js.native
+    var txt: String
   }
   object LineNum {
     
@@ -74,12 +71,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Time extends StObject {
     
-    var time: Double = js.native
+    var time: Double
     
-    var txt: String = js.native
+    var txt: String
   }
   object Time {
     

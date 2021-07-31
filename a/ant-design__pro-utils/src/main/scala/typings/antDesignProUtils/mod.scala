@@ -16,10 +16,13 @@ import typings.react.mod.EffectCallback
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@ant-design/pro-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ant-design/pro-utils", "FieldLabel")
   @js.native
@@ -45,88 +48,66 @@ object mod {
     * @param dateFormatter
     * @param proColumnsMap
     */
-  @JSImport("@ant-design/pro-utils", "conversionSubmitValue")
-  @js.native
-  def conversionSubmitValue[T](value: T, dateFormatter: DateFormatter, valueTypeMap: StringDictionary[js.Any]): T = js.native
-  @JSImport("@ant-design/pro-utils", "conversionSubmitValue")
-  @js.native
-  def conversionSubmitValue[T](value: T, dateFormatter: DateFormatter, valueTypeMap: StringDictionary[js.Any], parentKey: String): T = js.native
+  @scala.inline
+  def conversionSubmitValue[T](value: T, dateFormatter: DateFormatter, valueTypeMap: StringDictionary[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conversionSubmitValue")(value.asInstanceOf[js.Any], dateFormatter.asInstanceOf[js.Any], valueTypeMap.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def conversionSubmitValue[T](value: T, dateFormatter: DateFormatter, valueTypeMap: StringDictionary[js.Any], parentKey: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conversionSubmitValue")(value.asInstanceOf[js.Any], dateFormatter.asInstanceOf[js.Any], valueTypeMap.asInstanceOf[js.Any], parentKey.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@ant-design/pro-utils", "isBrowser")
-  @js.native
-  def isBrowser(): Boolean = js.native
+  @scala.inline
+  def isBrowser(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowser")().asInstanceOf[Boolean]
   
-  @JSImport("@ant-design/pro-utils", "isDropdownValueType")
-  @js.native
-  def isDropdownValueType(valueType: String): Boolean = js.native
+  @scala.inline
+  def isDropdownValueType(valueType: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDropdownValueType")(valueType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ant-design/pro-utils", "isImg")
-  @js.native
-  def isImg(path: String): Boolean = js.native
+  @scala.inline
+  def isImg(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImg")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ant-design/pro-utils", "isNil")
-  @js.native
-  def isNil(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isNil(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNil")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ant-design/pro-utils", "isUrl")
-  @js.native
-  def isUrl(path: String): Boolean = js.native
+  @scala.inline
+  def isUrl(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ant-design/pro-utils", "omitUndefined")
-  @js.native
-  def omitUndefined[T](obj: T): T = js.native
+  @scala.inline
+  def omitUndefined[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("omitUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@ant-design/pro-utils", "omitUndefinedAndEmptyArr")
-  @js.native
-  def omitUndefinedAndEmptyArr[T](obj: T): T = js.native
+  @scala.inline
+  def omitUndefinedAndEmptyArr[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("omitUndefinedAndEmptyArr")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@ant-design/pro-utils", "parseValueToMoment")
-  @js.native
-  def parseValueToMoment(value: DateValue): js.UndefOr[Moment | js.Array[Moment] | Null] = js.native
-  @JSImport("@ant-design/pro-utils", "parseValueToMoment")
-  @js.native
-  def parseValueToMoment(value: DateValue, formatter: String): js.UndefOr[Moment | js.Array[Moment] | Null] = js.native
+  @scala.inline
+  def parseValueToMoment(value: DateValue): js.UndefOr[Moment | js.Array[Moment] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseValueToMoment")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Moment | js.Array[Moment] | Null]]
+  @scala.inline
+  def parseValueToMoment(value: DateValue, formatter: String): js.UndefOr[Moment | js.Array[Moment] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseValueToMoment")(value.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Moment | js.Array[Moment] | Null]]
   
-  @JSImport("@ant-design/pro-utils", "pickProFormItemProps")
-  @js.native
-  def pickProFormItemProps(props: js.Object): js.Object = js.native
+  @scala.inline
+  def pickProFormItemProps(props: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("pickProFormItemProps")(props.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSImport("@ant-design/pro-utils", "pickProProps")
-  @js.native
-  def pickProProps(props: js.Object): js.Object = js.native
+  @scala.inline
+  def pickProProps(props: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("pickProProps")(props.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSImport("@ant-design/pro-utils", "transformKeySubmitValue")
-  @js.native
-  def transformKeySubmitValue[T](values: T, dataFormatMap: StringDictionary[js.UndefOr[SearchTransformKeyFn]]): T = js.native
+  @scala.inline
+  def transformKeySubmitValue[T](values: T, dataFormatMap: StringDictionary[js.UndefOr[SearchTransformKeyFn]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transformKeySubmitValue")(values.asInstanceOf[js.Any], dataFormatMap.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@ant-design/pro-utils", "useDebounceFn")
-  @js.native
-  def useDebounceFn[T /* <: js.Array[_] */](fn: js.Function1[/* args */ T, js.Promise[_]], deps: Double): ReturnValue[T] = js.native
-  @JSImport("@ant-design/pro-utils", "useDebounceFn")
-  @js.native
-  def useDebounceFn[T /* <: js.Array[_] */](fn: js.Function1[/* args */ T, js.Promise[_]], deps: Double, wait: Double): ReturnValue[T] = js.native
-  @JSImport("@ant-design/pro-utils", "useDebounceFn")
-  @js.native
-  def useDebounceFn[T /* <: js.Array[_] */](fn: js.Function1[/* args */ T, js.Promise[_]], deps: DependencyList): ReturnValue[T] = js.native
-  @JSImport("@ant-design/pro-utils", "useDebounceFn")
-  @js.native
-  def useDebounceFn[T /* <: js.Array[_] */](fn: js.Function1[/* args */ T, js.Promise[_]], deps: DependencyList, wait: Double): ReturnValue[T] = js.native
+  @scala.inline
+  def useDebounceFn[T /* <: js.Array[js.Any] */](fn: js.Function1[/* args */ T, js.Promise[js.Any]], deps: Double): ReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useDebounceFn")(fn.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[ReturnValue[T]]
+  @scala.inline
+  def useDebounceFn[T /* <: js.Array[js.Any] */](fn: js.Function1[/* args */ T, js.Promise[js.Any]], deps: Double, wait: Double): ReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useDebounceFn")(fn.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[ReturnValue[T]]
+  @scala.inline
+  def useDebounceFn[T /* <: js.Array[js.Any] */](fn: js.Function1[/* args */ T, js.Promise[js.Any]], deps: DependencyList): ReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useDebounceFn")(fn.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[ReturnValue[T]]
+  @scala.inline
+  def useDebounceFn[T /* <: js.Array[js.Any] */](fn: js.Function1[/* args */ T, js.Promise[js.Any]], deps: DependencyList, wait: Double): ReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useDebounceFn")(fn.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[ReturnValue[T]]
   
-  @JSImport("@ant-design/pro-utils", "useDeepCompareEffect")
-  @js.native
-  def useDeepCompareEffect(effect: EffectCallback): Unit = js.native
-  @JSImport("@ant-design/pro-utils", "useDeepCompareEffect")
-  @js.native
-  def useDeepCompareEffect(effect: EffectCallback, dependencies: DependencyList): Unit = js.native
+  @scala.inline
+  def useDeepCompareEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useDeepCompareEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def useDeepCompareEffect(effect: EffectCallback, dependencies: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useDeepCompareEffect")(effect.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ant-design/pro-utils", "useDocumentTitle")
-  @js.native
-  def useDocumentTitle(titleInfo: Id, appDefaultTitle: String): Unit = js.native
-  @JSImport("@ant-design/pro-utils", "useDocumentTitle")
-  @js.native
-  def useDocumentTitle_false(titleInfo: Id, appDefaultTitle: `false`): Unit = js.native
+  @scala.inline
+  def useDocumentTitle(titleInfo: Id, appDefaultTitle: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useDocumentTitle")(titleInfo.asInstanceOf[js.Any], appDefaultTitle.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ant-design/pro-utils", "usePrevious")
-  @js.native
-  def usePrevious[T](state: T): js.UndefOr[T] = js.native
+  @scala.inline
+  def useDocumentTitle_false(titleInfo: Id, appDefaultTitle: `false`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useDocumentTitle")(titleInfo.asInstanceOf[js.Any], appDefaultTitle.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def usePrevious[T](state: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePrevious")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
 }

@@ -2,27 +2,25 @@ package typings.instagramPrivateApi.newsRepositoryInboxResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewsRepositoryInboxResponseCounts extends StObject {
   
-  var campaign_notification: js.UndefOr[Double] = js.native
+  var campaign_notification: js.UndefOr[Double] = js.undefined
   
-  var comment_likes: js.UndefOr[Double] = js.native
+  var comment_likes: js.UndefOr[Double] = js.undefined
   
-  var comments: js.UndefOr[Double] = js.native
+  var comments: js.UndefOr[Double] = js.undefined
   
-  var likes: js.UndefOr[Double] = js.native
+  var likes: js.UndefOr[Double] = js.undefined
   
-  var photos_of_you: js.UndefOr[Double] = js.native
+  var photos_of_you: js.UndefOr[Double] = js.undefined
   
-  var relationships: js.UndefOr[Double] = js.native
+  var relationships: js.UndefOr[Double] = js.undefined
   
-  var requests: js.UndefOr[Double] = js.native
+  var requests: js.UndefOr[Double] = js.undefined
   
-  var usertags: js.UndefOr[Double] = js.native
+  var usertags: js.UndefOr[Double] = js.undefined
 }
 object NewsRepositoryInboxResponseCounts {
   

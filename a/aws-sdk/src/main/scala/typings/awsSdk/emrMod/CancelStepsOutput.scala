@@ -2,16 +2,14 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelStepsOutput extends StObject {
   
   /**
     * A list of CancelStepsInfo, which shows the status of specified cancel requests for each StepID specified.
     */
-  var CancelStepsInfoList: js.UndefOr[typings.awsSdk.emrMod.CancelStepsInfoList] = js.native
+  var CancelStepsInfoList: js.UndefOr[typings.awsSdk.emrMod.CancelStepsInfoList] = js.undefined
 }
 object CancelStepsOutput {
   

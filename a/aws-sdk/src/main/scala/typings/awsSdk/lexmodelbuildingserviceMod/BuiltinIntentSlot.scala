@@ -2,16 +2,14 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuiltinIntentSlot extends StObject {
   
   /**
     * A list of the slots defined for the intent.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object BuiltinIntentSlot {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsEc2VpcDetails extends StObject {
   
   /**
     * Information about the IPv4 CIDR blocks associated with the VPC.
     */
-  var CidrBlockAssociationSet: js.UndefOr[CidrBlockAssociationList] = js.native
+  var CidrBlockAssociationSet: js.UndefOr[CidrBlockAssociationList] = js.undefined
   
   /**
     * The identifier of the set of Dynamic Host Configuration Protocol (DHCP) options that are associated with the VPC. If the default options are associated with the VPC, then this is default.
     */
-  var DhcpOptionsId: js.UndefOr[NonEmptyString] = js.native
+  var DhcpOptionsId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Information about the IPv6 CIDR blocks associated with the VPC.
     */
-  var Ipv6CidrBlockAssociationSet: js.UndefOr[Ipv6CidrBlockAssociationList] = js.native
+  var Ipv6CidrBlockAssociationSet: js.UndefOr[Ipv6CidrBlockAssociationList] = js.undefined
   
   /**
     * The current state of the VPC.
     */
-  var State: js.UndefOr[NonEmptyString] = js.native
+  var State: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsEc2VpcDetails {
   

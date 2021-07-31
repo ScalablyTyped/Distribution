@@ -13,51 +13,49 @@ import typings.rrule.weekdayMod.Weekday
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Byeaster extends StObject {
     
-    var byeaster: js.UndefOr[Double | Null] = js.native
+    var byeaster: js.UndefOr[Double | Null] = js.undefined
     
-    var byhour: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var byhour: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var byminute: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var byminute: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var bymonth: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var bymonth: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var bymonthday: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var bymonthday: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var bynmonthday: js.UndefOr[js.Array[Double] | Null] = js.native
+    var bynmonthday: js.UndefOr[js.Array[Double] | Null] = js.undefined
     
-    var bynweekday: js.UndefOr[js.Array[js.Array[Double]] | Null] = js.native
+    var bynweekday: js.UndefOr[js.Array[js.Array[Double]] | Null] = js.undefined
     
-    var bysecond: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var bysecond: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var bysetpos: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var bysetpos: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var byweekday: js.UndefOr[Double | Weekday | MO | TU | WE | TH | FR | SA | SU | js.Array[ByWeekday] | Null] = js.native
+    var byweekday: js.UndefOr[Double | Weekday | MO | TU | WE | TH | FR | SA | SU | js.Array[ByWeekday] | Null] = js.undefined
     
-    var byweekno: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var byweekno: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var byyearday: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var byyearday: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var count: js.UndefOr[Double | Null] = js.native
+    var count: js.UndefOr[Double | Null] = js.undefined
     
-    var dtstart: js.UndefOr[Date | Null] = js.native
+    var dtstart: js.UndefOr[Date | Null] = js.undefined
     
-    var freq: js.UndefOr[Frequency] = js.native
+    var freq: js.UndefOr[Frequency] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var tzid: js.UndefOr[String | Null] = js.native
+    var tzid: js.UndefOr[String | Null] = js.undefined
     
-    var until: js.UndefOr[Date | Null] = js.native
+    var until: js.UndefOr[Date | Null] = js.undefined
     
-    var wkst: js.UndefOr[Double | Weekday | Null] = js.native
+    var wkst: js.UndefOr[Double | Weekday | Null] = js.undefined
   }
   object Byeaster {
     
@@ -270,12 +268,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Div extends StObject {
     
-    var div: Double = js.native
+    var div: Double
     
-    var mod: Double = js.native
+    var mod: Double
   }
   object Div {
     
@@ -296,20 +293,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Dtstart extends StObject {
     
-    var dtstart: js.UndefOr[Date | Null] = js.native
+    var dtstart: js.UndefOr[Date | Null] = js.undefined
     
-    var exdatevals: js.Array[Date] = js.native
+    var exdatevals: js.Array[Date]
     
-    var exrulevals: js.Array[PartialOptions] = js.native
+    var exrulevals: js.Array[PartialOptions]
     
-    var rdatevals: js.Array[Date] = js.native
+    var rdatevals: js.Array[Date]
     
-    var rrulevals: js.Array[PartialOptions] = js.native
+    var rrulevals: js.Array[PartialOptions]
     
-    var tzid: js.UndefOr[String | Null] = js.native
+    var tzid: js.UndefOr[String | Null] = js.undefined
   }
   object Dtstart {
     
@@ -371,10 +367,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ParsedOptions extends StObject {
     
-    var parsedOptions: typings.rrule.typesMod.ParsedOptions = js.native
+    var parsedOptions: typings.rrule.typesMod.ParsedOptions
   }
   object ParsedOptions {
     
@@ -393,18 +388,17 @@ object anon {
   }
   
   /* Inlined std.Partial<rrule.rrule/dist/esm/src/iterresult.IterArgs> */
-  @js.native
   trait PartialIterArgs extends StObject {
     
-    var _value: js.UndefOr[Date | js.Array[Date] | Null] = js.native
+    var _value: js.UndefOr[Date | js.Array[Date] | Null] = js.undefined
     
-    var after: js.UndefOr[Date] = js.native
+    var after: js.UndefOr[Date] = js.undefined
     
-    var before: js.UndefOr[Date] = js.native
+    var before: js.UndefOr[Date] = js.undefined
     
-    var dt: js.UndefOr[Date] = js.native
+    var dt: js.UndefOr[Date] = js.undefined
     
-    var inc: js.UndefOr[Boolean] = js.native
+    var inc: js.UndefOr[Boolean] = js.undefined
   }
   object PartialIterArgs {
     
@@ -456,46 +450,45 @@ object anon {
   }
   
   /* Inlined std.Partial<rrule.rrule/dist/esm/src/types.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var byeaster: js.UndefOr[Double | Null] = js.native
+    var byeaster: js.UndefOr[Double | Null] = js.undefined
     
-    var byhour: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var byhour: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var byminute: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var byminute: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var bymonth: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var bymonth: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var bymonthday: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var bymonthday: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var bynmonthday: js.UndefOr[js.Array[Double] | Null] = js.native
+    var bynmonthday: js.UndefOr[js.Array[Double] | Null] = js.undefined
     
-    var bynweekday: js.UndefOr[js.Array[js.Array[Double]] | Null] = js.native
+    var bynweekday: js.UndefOr[js.Array[js.Array[Double]] | Null] = js.undefined
     
-    var bysecond: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var bysecond: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var bysetpos: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var bysetpos: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var byweekday: js.UndefOr[ByWeekday | js.Array[ByWeekday] | Null] = js.native
+    var byweekday: js.UndefOr[ByWeekday | js.Array[ByWeekday] | Null] = js.undefined
     
-    var byweekno: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var byweekno: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var byyearday: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+    var byyearday: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
-    var count: js.UndefOr[Double | Null] = js.native
+    var count: js.UndefOr[Double | Null] = js.undefined
     
-    var dtstart: js.UndefOr[Date | Null] = js.native
+    var dtstart: js.UndefOr[Date | Null] = js.undefined
     
-    var freq: js.UndefOr[Frequency] = js.native
+    var freq: js.UndefOr[Frequency] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var tzid: js.UndefOr[String | Null] = js.native
+    var tzid: js.UndefOr[String | Null] = js.undefined
     
-    var until: js.UndefOr[Date | Null] = js.native
+    var until: js.UndefOr[Date | Null] = js.undefined
     
-    var wkst: js.UndefOr[Weekday | Double | Null] = js.native
+    var wkst: js.UndefOr[Weekday | Double | Null] = js.undefined
   }
   object PartialOptions {
     
@@ -709,20 +702,19 @@ object anon {
   }
   
   /* Inlined std.Partial<rrule.rrule/dist/esm/src/rrulestr.RRuleStrOptions> */
-  @js.native
   trait PartialRRuleStrOptions extends StObject {
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var compatible: js.UndefOr[Boolean] = js.native
+    var compatible: js.UndefOr[Boolean] = js.undefined
     
-    var dtstart: js.UndefOr[Date | Null] = js.native
+    var dtstart: js.UndefOr[Date | Null] = js.undefined
     
-    var forceset: js.UndefOr[Boolean] = js.native
+    var forceset: js.UndefOr[Boolean] = js.undefined
     
-    var tzid: js.UndefOr[String | Null] = js.native
+    var tzid: js.UndefOr[String | Null] = js.undefined
     
-    var unfold: js.UndefOr[Boolean] = js.native
+    var unfold: js.UndefOr[Boolean] = js.undefined
   }
   object PartialRRuleStrOptions {
     
@@ -780,11 +772,25 @@ object anon {
   }
   
   /* Inlined std.Pick<std.Date, 'getTime'> */
-  @js.native
   trait PickDategetTime extends StObject {
     
-    def getTime(): Double = js.native
+    def getTime(): Double
     @JSName("getTime")
-    var getTime_Original: js.Function0[Double] = js.native
+    var getTime_Original: js.Function0[Double]
+  }
+  object PickDategetTime {
+    
+    @scala.inline
+    def apply(getTime: () => Double): PickDategetTime = {
+      val __obj = js.Dynamic.literal(getTime = js.Any.fromFunction0(getTime))
+      __obj.asInstanceOf[PickDategetTime]
+    }
+    
+    @scala.inline
+    implicit class PickDategetTimeMutableBuilder[Self <: PickDategetTime] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setGetTime(value: () => Double): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
+    }
   }
 }

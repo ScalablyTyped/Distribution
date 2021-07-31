@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Monitoring extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait Monitoring extends StObject {
     * destinations if different aggregations are needed for different sets of metrics associated with that monitored resource type. A monitored resource and metric pair may only be used
     * once in the Monitoring configuration.
     */
-  var consumerDestinations: js.UndefOr[js.Array[MonitoringDestination]] = js.native
+  var consumerDestinations: js.UndefOr[js.Array[MonitoringDestination]] = js.undefined
   
   /**
     * Monitoring configurations for sending metrics to the producer project. There can be multiple producer destinations. A monitored resource type may appear in multiple monitoring
     * destinations if different aggregations are needed for different sets of metrics associated with that monitored resource type. A monitored resource and metric pair may only be used
     * once in the Monitoring configuration.
     */
-  var producerDestinations: js.UndefOr[js.Array[MonitoringDestination]] = js.native
+  var producerDestinations: js.UndefOr[js.Array[MonitoringDestination]] = js.undefined
 }
 object Monitoring {
   

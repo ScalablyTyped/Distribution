@@ -3,7 +3,6 @@ package typings.checkMoreTypes
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,47 +11,124 @@ object mod extends Shortcut {
   @js.native
   val ^ : CheckModeTypes = js.native
   
-  @js.native
-  trait CheckModeTypes extends Predicates {
+  trait CheckModeTypes
+    extends StObject
+       with Predicates {
     
-    var not: Predicates = js.native
+    var not: Predicates
+  }
+  object CheckModeTypes {
+    
+    @scala.inline
+    def apply(
+      defined: /* s */ js.Any => Boolean,
+      empty: /* s */ js.Any => Boolean,
+      fn: /* s */ js.Any => Boolean,
+      not: Predicates,
+      number: /* s */ js.Any => Boolean,
+      `object`: /* s */ js.Any => Boolean,
+      oneOf: js.Any,
+      schema: js.Any,
+      unemptyString: /* s */ js.Any => Boolean,
+      webUrl: /* s */ js.Any => Boolean
+    ): CheckModeTypes = {
+      val __obj = js.Dynamic.literal(defined = js.Any.fromFunction1(defined), empty = js.Any.fromFunction1(empty), fn = js.Any.fromFunction1(fn), not = not.asInstanceOf[js.Any], number = js.Any.fromFunction1(number), oneOf = oneOf.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], unemptyString = js.Any.fromFunction1(unemptyString), webUrl = js.Any.fromFunction1(webUrl))
+      __obj.updateDynamic("object")(js.Any.fromFunction1(`object`))
+      __obj.asInstanceOf[CheckModeTypes]
+    }
+    
+    @scala.inline
+    implicit class CheckModeTypesMutableBuilder[Self <: CheckModeTypes] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setNot(value: Predicates): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait Predicates extends StObject {
     
-    def defined(s: js.Any): Boolean = js.native
+    def defined(s: js.Any): Boolean
     @JSName("defined")
-    var defined_Original: predicate = js.native
+    var defined_Original: predicate
     
-    def empty(s: js.Any): Boolean = js.native
+    def empty(s: js.Any): Boolean
     @JSName("empty")
-    var empty_Original: predicate = js.native
+    var empty_Original: predicate
     
-    def fn(s: js.Any): Boolean = js.native
+    def fn(s: js.Any): Boolean
     @JSName("fn")
-    var fn_Original: predicate = js.native
+    var fn_Original: predicate
     
-    def number(s: js.Any): Boolean = js.native
+    def number(s: js.Any): Boolean
     @JSName("number")
-    var number_Original: predicate = js.native
+    var number_Original: predicate
     
-    def `object`(s: js.Any): Boolean = js.native
+    def `object`(s: js.Any): Boolean
     @JSName("object")
-    var object_Original: predicate = js.native
+    var object_Original: predicate
     
     // for now, should be curried functions
-    var oneOf: js.Any = js.native
+    var oneOf: js.Any
     
-    var schema: js.Any = js.native
+    var schema: js.Any
     
-    def unemptyString(s: js.Any): Boolean = js.native
+    def unemptyString(s: js.Any): Boolean
     @JSName("unemptyString")
-    var unemptyString_Original: predicate = js.native
+    var unemptyString_Original: predicate
     
-    def webUrl(s: js.Any): Boolean = js.native
+    def webUrl(s: js.Any): Boolean
     @JSName("webUrl")
-    var webUrl_Original: predicate = js.native
+    var webUrl_Original: predicate
+  }
+  object Predicates {
+    
+    @scala.inline
+    def apply(
+      defined: /* s */ js.Any => Boolean,
+      empty: /* s */ js.Any => Boolean,
+      fn: /* s */ js.Any => Boolean,
+      number: /* s */ js.Any => Boolean,
+      `object`: /* s */ js.Any => Boolean,
+      oneOf: js.Any,
+      schema: js.Any,
+      unemptyString: /* s */ js.Any => Boolean,
+      webUrl: /* s */ js.Any => Boolean
+    ): Predicates = {
+      val __obj = js.Dynamic.literal(defined = js.Any.fromFunction1(defined), empty = js.Any.fromFunction1(empty), fn = js.Any.fromFunction1(fn), number = js.Any.fromFunction1(number), oneOf = oneOf.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], unemptyString = js.Any.fromFunction1(unemptyString), webUrl = js.Any.fromFunction1(webUrl))
+      __obj.updateDynamic("object")(js.Any.fromFunction1(`object`))
+      __obj.asInstanceOf[Predicates]
+    }
+    
+    @scala.inline
+    implicit class PredicatesMutableBuilder[Self <: Predicates] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDefined(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "defined", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setEmpty(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "empty", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setFn(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setNumber(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "number", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setObject(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "object", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOneOf(value: js.Any): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUnemptyString(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "unemptyString", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setWebUrl(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "webUrl", js.Any.fromFunction1(value))
+    }
   }
   
   type _To = CheckModeTypes

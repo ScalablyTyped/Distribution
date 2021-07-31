@@ -2,19 +2,18 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StarConfig
-  extends DrawOptionsConfig
+  extends StObject
+     with DrawOptionsConfig
      with ObjectOptionsConfig {
   
-  var innerRadius: Double = js.native
+  var innerRadius: Double
   
-  var numPoints: Double = js.native
+  var numPoints: Double
   
-  var outerRadius: Double = js.native
+  var outerRadius: Double
 }
 object StarConfig {
   

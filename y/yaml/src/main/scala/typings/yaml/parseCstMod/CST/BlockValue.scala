@@ -7,24 +7,23 @@ import typings.yaml.yamlStrings.KEEP
 import typings.yaml.yamlStrings.STRIP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockValue
-  extends Scalar
-     with Node {
+  extends StObject
+     with Node
+     with Scalar {
   
-  var blockIndent: Double | Null = js.native
+  var blockIndent: Double | Null
   
-  var chomping: CLIP | KEEP | STRIP = js.native
+  var chomping: CLIP | KEEP | STRIP
   
-  var header: Range = js.native
+  var header: Range
   
-  val strValue: String | Null = js.native
+  val strValue: String | Null
   
   @JSName("type")
-  var type_BlockValue: BLOCK_FOLDED | BLOCK_LITERAL = js.native
+  var type_BlockValue: BLOCK_FOLDED | BLOCK_LITERAL
 }
 object BlockValue {
   
@@ -39,7 +38,7 @@ object BlockValue {
     `type`: BLOCK_FOLDED | BLOCK_LITERAL,
     valueRangeContainsNewline: Boolean
   ): BlockValue = {
-    val __obj = js.Dynamic.literal(chomping = chomping.asInstanceOf[js.Any], hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(chomping = chomping.asInstanceOf[js.Any], hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any], anchor = null, blockIndent = null, comment = null, context = null, error = null, range = null, rawValue = null, strValue = null, tag = null, value = null, valueRange = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockValue]
   }

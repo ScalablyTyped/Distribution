@@ -3,14 +3,15 @@ package typings.rotJs
 import typings.rotJs.anon.PartialOptionsEmissionThreshold
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lightingMod {
   
   @JSImport("rot-js/lib/lighting", JSImport.Default)
   @js.native
-  class default protected () extends Lighting {
+  class default protected ()
+    extends StObject
+       with Lighting {
     def this(reflectivityCallback: ReflectivityCallback) = this()
     def this(reflectivityCallback: ReflectivityCallback, options: PartialOptionsEmissionThreshold) = this()
   }
@@ -91,17 +92,16 @@ object lightingMod {
   /** Will be called for every lit cell */
   type LightingCallback = js.Function3[/* x */ Double, /* y */ Double, /* color */ LightColor, Unit]
   
-  @js.native
   trait Options extends StObject {
     
     /** Cells with emissivity > threshold will be treated as light source in the next pass. Default = 100 */
-    var emissionThreshold: Double = js.native
+    var emissionThreshold: Double
     
     /** Number of passes. 1 equals to simple FOV of all light sources, >1 means a *highly simplified* radiosity-like algorithm. Default = 1 */
-    var passes: Double = js.native
+    var passes: Double
     
     /** Max light range, default = 10 */
-    var range: Double = js.native
+    var range: Double
   }
   object Options {
     

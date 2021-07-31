@@ -2,21 +2,19 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invoice extends StObject {
   
-  var currency: String = js.native
+  var currency: String
   
-  var description: String = js.native
+  var description: String
   
-  var start_parameter: String = js.native
+  var start_parameter: String
   
-  var title: String = js.native
+  var title: String
   
-  var total_amount: Double = js.native
+  var total_amount: Double
 }
 object Invoice {
   

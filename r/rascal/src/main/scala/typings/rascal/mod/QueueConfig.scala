@@ -3,17 +3,15 @@ package typings.rascal.mod
 import typings.amqplib.propertiesMod.Options.AssertQueue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueueConfig extends StObject {
   
-  var assert: js.UndefOr[Boolean] = js.native
+  var assert: js.UndefOr[Boolean] = js.undefined
   
-  var check: js.UndefOr[Boolean] = js.native
+  var check: js.UndefOr[Boolean] = js.undefined
   
-  var options: js.UndefOr[AssertQueue] = js.native
+  var options: js.UndefOr[AssertQueue] = js.undefined
 }
 object QueueConfig {
   

@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgPivotViewDataSourceOptionsXmlaOptionsRequestOptions
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,14 +15,14 @@ trait IgPivotViewDataSourceOptionsXmlaOptionsRequestOptions
   /**
     * A callback to be invoked right before the request is send to the server. Extends beforeSend callback of jQuery.ajax’s options object.
     */
-  var beforeSend: js.UndefOr[js.Function] = js.native
+  var beforeSend: js.UndefOr[js.Function] = js.undefined
   
   /**
     * The value is applied to XmlHttpRequest.withCredentials if supported by the user agent.
     * Setting this property to true will allow IE8/IE9 to make authenticated cross-origin requests to tusted domains through XmlHttpRequest instead of XDomainRequest
     * and will prompt the user for credentials.
     */
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object IgPivotViewDataSourceOptionsXmlaOptionsRequestOptions {
   

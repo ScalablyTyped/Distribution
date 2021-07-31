@@ -2,19 +2,18 @@ package typings.downshift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UseComboboxPropGetters[Item] extends StObject {
   
   def getComboboxProps(): js.Any = js.native
-  def getComboboxProps(options: js.UndefOr[scala.Nothing], otherOptions: GetPropsCommonOptions): js.Any = js.native
+  def getComboboxProps(options: Unit, otherOptions: GetPropsCommonOptions): js.Any = js.native
   def getComboboxProps(options: UseComboboxGetComboboxPropsOptions): js.Any = js.native
   def getComboboxProps(options: UseComboboxGetComboboxPropsOptions, otherOptions: GetPropsCommonOptions): js.Any = js.native
   
   def getInputProps(): js.Any = js.native
-  def getInputProps(options: js.UndefOr[scala.Nothing], otherOptions: GetPropsCommonOptions): js.Any = js.native
+  def getInputProps(options: Unit, otherOptions: GetPropsCommonOptions): js.Any = js.native
   def getInputProps(options: UseComboboxGetInputPropsOptions): js.Any = js.native
   def getInputProps(options: UseComboboxGetInputPropsOptions, otherOptions: GetPropsCommonOptions): js.Any = js.native
   
@@ -24,7 +23,7 @@ trait UseComboboxPropGetters[Item] extends StObject {
   def getLabelProps(options: UseComboboxGetLabelPropsOptions): js.Any = js.native
   
   def getMenuProps(): js.Any = js.native
-  def getMenuProps(options: js.UndefOr[scala.Nothing], otherOptions: GetPropsCommonOptions): js.Any = js.native
+  def getMenuProps(options: Unit, otherOptions: GetPropsCommonOptions): js.Any = js.native
   def getMenuProps(options: UseComboboxGetMenuPropsOptions): js.Any = js.native
   def getMenuProps(options: UseComboboxGetMenuPropsOptions, otherOptions: GetPropsCommonOptions): js.Any = js.native
   

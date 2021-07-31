@@ -2,10 +2,8 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Touchscreen extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Touchscreen extends StObject {
     * @param x The x position.
     * @param y The y position.
     */
-  def tap(x: Double, y: Double): js.Promise[Unit] = js.native
+  def tap(x: Double, y: Double): js.Promise[Unit]
 }
 object Touchscreen {
   

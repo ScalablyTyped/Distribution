@@ -2,26 +2,26 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridFSBucketWriteStreamOptions extends WriteConcern {
+trait GridFSBucketWriteStreamOptions
+  extends StObject
+     with WriteConcern {
   
   /**
     * The chunk size to use, in bytes
     */
-  var chunkSizeBytes: js.UndefOr[scala.Double] = js.native
+  var chunkSizeBytes: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Default false; If true, disables adding an md5 field to file data
     */
-  var disableMD5: js.UndefOr[Boolean] = js.native
+  var disableMD5: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Custom file id for the GridFS file.
     */
-  var id: js.UndefOr[GridFSBucketWriteStreamId] = js.native
+  var id: js.UndefOr[GridFSBucketWriteStreamId] = js.undefined
 }
 object GridFSBucketWriteStreamOptions {
   

@@ -2,23 +2,21 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListClientsResponse extends StObject {
   
   /**
     * The returned list of clients.
     */
-  var clients: js.UndefOr[js.Array[SchemaClient]] = js.native
+  var clients: js.UndefOr[js.Array[SchemaClient]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the
     * ListClientsRequest.pageToken field in the subsequent call to the
     * accounts.clients.list method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListClientsResponse {
   

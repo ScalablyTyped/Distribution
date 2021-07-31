@@ -5,17 +5,15 @@ import typings.reactAsync.mod.PromiseFn
 import typings.std.AbortController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitialValue[T] extends StObject {
   
-  var initialValue: js.UndefOr[typings.std.Error | T] = js.native
+  var initialValue: js.UndefOr[typings.std.Error | T] = js.undefined
   
-  var promise: js.UndefOr[js.Promise[T]] = js.native
+  var promise: js.UndefOr[js.Promise[T]] = js.undefined
   
-  var promiseFn: js.UndefOr[PromiseFn[T]] = js.native
+  var promiseFn: js.UndefOr[PromiseFn[T]] = js.undefined
 }
 object InitialValue {
   
@@ -26,7 +24,7 @@ object InitialValue {
   }
   
   @scala.inline
-  implicit class InitialValueMutableBuilder[Self <: InitialValue[_], T] (val x: Self with InitialValue[T]) extends AnyVal {
+  implicit class InitialValueMutableBuilder[Self <: InitialValue[?], T] (val x: Self & InitialValue[T]) extends AnyVal {
     
     @scala.inline
     def setInitialValue(value: typings.std.Error | T): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])

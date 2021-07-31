@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GmailMessageInfo extends StObject {
   
   /** The `SHA256` hash of email's attachment and all MIME parts. */
-  var attachmentsSha256Hash: js.UndefOr[js.Array[String]] = js.native
+  var attachmentsSha256Hash: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The date the malicious email was sent. */
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
   /** The hash of the message body text. */
-  var md5HashMessageBody: js.UndefOr[String] = js.native
+  var md5HashMessageBody: js.UndefOr[String] = js.undefined
   
   /** The MD5 Hash of email's subject (only available for reported emails). */
-  var md5HashSubject: js.UndefOr[String] = js.native
+  var md5HashSubject: js.UndefOr[String] = js.undefined
   
   /** The snippet of the message body text (only available for reported emails). */
-  var messageBodySnippet: js.UndefOr[String] = js.native
+  var messageBodySnippet: js.UndefOr[String] = js.undefined
   
   /** The message ID. */
-  var messageId: js.UndefOr[String] = js.native
+  var messageId: js.UndefOr[String] = js.undefined
   
   /** The recipient of this email. */
-  var recipient: js.UndefOr[String] = js.native
+  var recipient: js.UndefOr[String] = js.undefined
   
   /** The email subject text (only available for reported emails). */
-  var subjectText: js.UndefOr[String] = js.native
+  var subjectText: js.UndefOr[String] = js.undefined
 }
 object GmailMessageInfo {
   

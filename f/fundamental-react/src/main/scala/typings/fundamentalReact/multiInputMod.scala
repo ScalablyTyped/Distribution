@@ -5,7 +5,6 @@ import typings.fundamentalReact.anon.Text
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiInputMod {
@@ -17,40 +16,40 @@ object multiInputMod {
   
   type MultiInput = Component[MultiInputProps, js.Object, js.Any]
   
-  @js.native
   trait MultiInputProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var buttonProps: js.UndefOr[js.Any] = js.native
+    var buttonProps: js.UndefOr[js.Any] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any]
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var inputProps: js.UndefOr[js.Any] = js.native
+    var inputProps: js.UndefOr[js.Any] = js.undefined
     
-    var listProps: js.UndefOr[js.Any] = js.native
+    var listProps: js.UndefOr[js.Any] = js.undefined
     
-    var onTagsUpdate: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onTagsUpdate: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var popoverProps: js.UndefOr[js.Any] = js.native
+    var popoverProps: js.UndefOr[js.Any] = js.undefined
     
-    var tagProps: js.UndefOr[js.Any] = js.native
+    var tagProps: js.UndefOr[js.Any] = js.undefined
     
-    var validationState: js.UndefOr[Text] = js.native
+    var validationState: js.UndefOr[Text] = js.undefined
   }
   object MultiInputProps {
     
     @scala.inline
-    def apply(data: js.Array[_]): MultiInputProps = {
+    def apply(data: js.Array[js.Any]): MultiInputProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[MultiInputProps]
     }
@@ -77,7 +76,7 @@ object multiInputMod {
       def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
@@ -107,7 +106,7 @@ object multiInputMod {
       def setListPropsUndefined: Self = StObject.set(x, "listProps", js.undefined)
       
       @scala.inline
-      def setOnTagsUpdate(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onTagsUpdate", js.Any.fromFunction1(value))
+      def setOnTagsUpdate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onTagsUpdate", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTagsUpdateUndefined: Self = StObject.set(x, "onTagsUpdate", js.undefined)

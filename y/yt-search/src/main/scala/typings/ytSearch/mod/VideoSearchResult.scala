@@ -3,37 +3,35 @@ package typings.ytSearch.mod
 import typings.ytSearch.ytSearchStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoSearchResult extends StObject {
   
-  var ago: String = js.native
+  var ago: String
   
-  var author: Author = js.native
+  var author: Author
   
-  var description: String = js.native
+  var description: String
   
-  var duration: Duration = js.native
+  var duration: Duration
   
-  var image: String = js.native
+  var image: String
   
-  var seconds: Double = js.native
+  var seconds: Double
   
-  var thumbnail: String = js.native
+  var thumbnail: String
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: video = js.native
+  var `type`: video
   
-  var url: String = js.native
+  var url: String
   
-  var videoId: String = js.native
+  var videoId: String
   
-  var views: Double = js.native
+  var views: Double
 }
 object VideoSearchResult {
   
@@ -48,13 +46,12 @@ object VideoSearchResult {
     thumbnail: String,
     timestamp: String,
     title: String,
-    `type`: video,
     url: String,
     videoId: String,
     views: Double
   ): VideoSearchResult = {
     val __obj = js.Dynamic.literal(ago = ago.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], videoId = videoId.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("video")
     __obj.asInstanceOf[VideoSearchResult]
   }
   

@@ -2,15 +2,13 @@ package typings.winrt.Windows.Media.Protection
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IComponentLoadFailedEventArgs extends StObject {
   
-  var completion: MediaProtectionServiceCompletion = js.native
+  var completion: MediaProtectionServiceCompletion
   
-  var information: RevocationAndRenewalInformation = js.native
+  var information: RevocationAndRenewalInformation
 }
 object IComponentLoadFailedEventArgs {
   

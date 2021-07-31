@@ -3,20 +3,19 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.FunctionTypeParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionTypeParam_
-  extends Node
+  extends StObject
+     with Node
      with Flow {
   
-  var name: Identifier_ = js.native
+  var name: Identifier_
   
-  var typeAnnotation: FlowTypeAnnotation = js.native
+  var typeAnnotation: FlowTypeAnnotation
   
   @JSName("type")
-  var type_FunctionTypeParam_ : FunctionTypeParam = js.native
+  var type_FunctionTypeParam_ : FunctionTypeParam
 }
 object FunctionTypeParam_ {
   
@@ -26,11 +25,10 @@ object FunctionTypeParam_ {
     loc: SourceLocation,
     name: Identifier_,
     start: Double,
-    `type`: FunctionTypeParam,
     typeAnnotation: FlowTypeAnnotation
   ): FunctionTypeParam_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("FunctionTypeParam")
     __obj.asInstanceOf[FunctionTypeParam_]
   }
   

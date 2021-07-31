@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Command extends StObject {
   
   /**
     * Arguments for Amazon EMR to pass to the command for execution.
     */
-  var Args: js.UndefOr[StringList] = js.native
+  var Args: js.UndefOr[StringList] = js.undefined
   
   /**
     * The name of the command.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon S3 location of the command script.
     */
-  var ScriptPath: js.UndefOr[String] = js.native
+  var ScriptPath: js.UndefOr[String] = js.undefined
 }
 object Command {
   

@@ -5,10 +5,13 @@ import typings.std.Blob
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("extract-files", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("extract-files", "ReactNativeFile")
   @js.native
@@ -22,41 +25,35 @@ object mod {
     var uri: String = js.native
   }
   
-  @JSImport("extract-files", "extractFiles")
-  @js.native
-  def extractFiles[TFile](value: js.Any): Clone[TFile] = js.native
-  @JSImport("extract-files", "extractFiles")
-  @js.native
-  def extractFiles[TFile](
-    value: js.Any,
-    path: js.UndefOr[scala.Nothing],
-    isExtractableFile: js.Function1[/* value */ js.Any, /* is TFile */ Boolean]
-  ): Clone[TFile] = js.native
-  @JSImport("extract-files", "extractFiles")
-  @js.native
-  def extractFiles[TFile](value: js.Any, path: String): Clone[TFile] = js.native
-  @JSImport("extract-files", "extractFiles")
-  @js.native
+  @scala.inline
+  def extractFiles[TFile](value: js.Any): Clone[TFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any]).asInstanceOf[Clone[TFile]]
+  @scala.inline
+  def extractFiles[TFile](value: js.Any, path: String): Clone[TFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Clone[TFile]]
+  @scala.inline
   def extractFiles[TFile](
     value: js.Any,
     path: String,
     isExtractableFile: js.Function1[/* value */ js.Any, /* is TFile */ Boolean]
-  ): Clone[TFile] = js.native
+  ): Clone[TFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any], path.asInstanceOf[js.Any], isExtractableFile.asInstanceOf[js.Any])).asInstanceOf[Clone[TFile]]
+  @scala.inline
+  def extractFiles[TFile](
+    value: js.Any,
+    path: Unit,
+    isExtractableFile: js.Function1[/* value */ js.Any, /* is TFile */ Boolean]
+  ): Clone[TFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any], path.asInstanceOf[js.Any], isExtractableFile.asInstanceOf[js.Any])).asInstanceOf[Clone[TFile]]
   
-  @JSImport("extract-files", "isExtractableFile")
-  @js.native
-  def isExtractableFile(value: js.Any): /* is extract-files.extract-files.ExtractableFile */ Boolean = js.native
+  @scala.inline
+  def isExtractableFile(value: js.Any): /* is extract-files.extract-files.ExtractableFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtractableFile")(value.asInstanceOf[js.Any]).asInstanceOf[/* is extract-files.extract-files.ExtractableFile */ Boolean]
   
   type ExtractableFile = File | Blob | ReactNativeFile
   
-  @js.native
   trait ReactNativeFileOptions extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var uri: String = js.native
+    var uri: String
   }
   object ReactNativeFileOptions {
     

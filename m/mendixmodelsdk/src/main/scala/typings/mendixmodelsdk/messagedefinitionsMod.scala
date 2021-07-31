@@ -22,7 +22,6 @@ import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messagedefinitionsMod {
@@ -66,9 +65,8 @@ object messagedefinitionsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.AssociationElement.create")
-      @js.native
-      def create(model: IModel): AssociationElement = js.native
+      @scala.inline
+      def create(model: IModel): AssociationElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[AssociationElement]
       
       /**
         * Creates and returns a new AssociationElement instance in the SDK and on the server.
@@ -79,9 +77,8 @@ object messagedefinitionsMod {
         *  7.10.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.AssociationElement.createInElementUnderChildren")
-      @js.native
-      def createInElementUnderChildren(container: Element): AssociationElement = js.native
+      @scala.inline
+      def createInElementUnderChildren(container: Element): AssociationElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[AssociationElement]
       
       /**
         * Creates and returns a new AssociationElement instance in the SDK and on the server.
@@ -92,9 +89,8 @@ object messagedefinitionsMod {
         *  7.10.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.AssociationElement.createInJsonStructureUnderElements")
-      @js.native
-      def createInJsonStructureUnderElements(container: JsonStructure): AssociationElement = js.native
+      @scala.inline
+      def createInJsonStructureUnderElements(container: JsonStructure): AssociationElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[AssociationElement]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.AssociationElement.structureTypeName")
@@ -138,9 +134,8 @@ object messagedefinitionsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.AttributeElement.create")
-      @js.native
-      def create(model: IModel): AttributeElement = js.native
+      @scala.inline
+      def create(model: IModel): AttributeElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[AttributeElement]
       
       /**
         * Creates and returns a new AttributeElement instance in the SDK and on the server.
@@ -151,9 +146,8 @@ object messagedefinitionsMod {
         *  7.6.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.AttributeElement.createInElementUnderChildren")
-      @js.native
-      def createInElementUnderChildren(container: Element): AttributeElement = js.native
+      @scala.inline
+      def createInElementUnderChildren(container: Element): AttributeElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeElement]
       
       /**
         * Creates and returns a new AttributeElement instance in the SDK and on the server.
@@ -164,9 +158,8 @@ object messagedefinitionsMod {
         *  7.6.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.AttributeElement.createInJsonStructureUnderElements")
-      @js.native
-      def createInJsonStructureUnderElements(container: JsonStructure): AttributeElement = js.native
+      @scala.inline
+      def createInJsonStructureUnderElements(container: JsonStructure): AttributeElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeElement]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.AttributeElement.structureTypeName")
@@ -210,9 +203,8 @@ object messagedefinitionsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.EntityElement.create")
-      @js.native
-      def create(model: IModel): EntityElement = js.native
+      @scala.inline
+      def create(model: IModel): EntityElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[EntityElement]
       
       /**
         * Creates and returns a new EntityElement instance in the SDK and on the server.
@@ -223,9 +215,8 @@ object messagedefinitionsMod {
         *  7.6.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.EntityElement.createInElementUnderChildren")
-      @js.native
-      def createInElementUnderChildren(container: Element): EntityElement = js.native
+      @scala.inline
+      def createInElementUnderChildren(container: Element): EntityElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[EntityElement]
       
       /**
         * Creates and returns a new EntityElement instance in the SDK and on the server.
@@ -236,9 +227,8 @@ object messagedefinitionsMod {
         *  7.6.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.EntityElement.createInJsonStructureUnderElements")
-      @js.native
-      def createInJsonStructureUnderElements(container: JsonStructure): EntityElement = js.native
+      @scala.inline
+      def createInJsonStructureUnderElements(container: JsonStructure): EntityElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[EntityElement]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.EntityElement.structureTypeName")
@@ -297,9 +287,8 @@ object messagedefinitionsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.EntityMessageDefinition.create")
-      @js.native
-      def create(model: IModel): EntityMessageDefinition = js.native
+      @scala.inline
+      def create(model: IModel): EntityMessageDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[EntityMessageDefinition]
       
       /**
         * Creates and returns a new EntityMessageDefinition instance in the SDK and on the server.
@@ -310,9 +299,8 @@ object messagedefinitionsMod {
         *  7.6.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.EntityMessageDefinition.createIn")
-      @js.native
-      def createIn(container: MessageDefinitionCollection): EntityMessageDefinition = js.native
+      @scala.inline
+      def createIn(container: MessageDefinitionCollection): EntityMessageDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[EntityMessageDefinition]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.EntityMessageDefinition.structureTypeName")
@@ -362,9 +350,8 @@ object messagedefinitionsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.ExposedAssociation.create")
-      @js.native
-      def create(model: IModel): ExposedAssociation = js.native
+      @scala.inline
+      def create(model: IModel): ExposedAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ExposedAssociation]
       
       /**
         * Creates and returns a new ExposedAssociation instance in the SDK and on the server.
@@ -375,9 +362,8 @@ object messagedefinitionsMod {
         *  7.6.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.ExposedAssociation.createInElementUnderChildren")
-      @js.native
-      def createInElementUnderChildren(container: Element): ExposedAssociation = js.native
+      @scala.inline
+      def createInElementUnderChildren(container: Element): ExposedAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[ExposedAssociation]
       
       /**
         * Creates and returns a new ExposedAssociation instance in the SDK and on the server.
@@ -388,9 +374,8 @@ object messagedefinitionsMod {
         *  7.6.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.ExposedAssociation.createInJsonStructureUnderElements")
-      @js.native
-      def createInJsonStructureUnderElements(container: JsonStructure): ExposedAssociation = js.native
+      @scala.inline
+      def createInJsonStructureUnderElements(container: JsonStructure): ExposedAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[ExposedAssociation]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.ExposedAssociation.structureTypeName")
@@ -440,9 +425,8 @@ object messagedefinitionsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.ExposedAttribute.create")
-      @js.native
-      def create(model: IModel): ExposedAttribute = js.native
+      @scala.inline
+      def create(model: IModel): ExposedAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ExposedAttribute]
       
       /**
         * Creates and returns a new ExposedAttribute instance in the SDK and on the server.
@@ -453,9 +437,8 @@ object messagedefinitionsMod {
         *  7.6.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.ExposedAttribute.createInElementUnderChildren")
-      @js.native
-      def createInElementUnderChildren(container: Element): ExposedAttribute = js.native
+      @scala.inline
+      def createInElementUnderChildren(container: Element): ExposedAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createInElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[ExposedAttribute]
       
       /**
         * Creates and returns a new ExposedAttribute instance in the SDK and on the server.
@@ -466,9 +449,8 @@ object messagedefinitionsMod {
         *  7.6.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.ExposedAttribute.createInJsonStructureUnderElements")
-      @js.native
-      def createInJsonStructureUnderElements(container: JsonStructure): ExposedAttribute = js.native
+      @scala.inline
+      def createInJsonStructureUnderElements(container: JsonStructure): ExposedAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[ExposedAttribute]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.ExposedAttribute.structureTypeName")
@@ -512,9 +494,8 @@ object messagedefinitionsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.ExposedEntity.create")
-      @js.native
-      def create(model: IModel): ExposedEntity = js.native
+      @scala.inline
+      def create(model: IModel): ExposedEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ExposedEntity]
       
       /**
         * Creates and returns a new ExposedEntity instance in the SDK and on the server.
@@ -525,9 +506,8 @@ object messagedefinitionsMod {
         *  7.6.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.ExposedEntity.createInElementUnderChildren")
-      @js.native
-      def createInElementUnderChildren(container: Element): ExposedEntity = js.native
+      @scala.inline
+      def createInElementUnderChildren(container: Element): ExposedEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[ExposedEntity]
       
       /**
         * Creates and returns a new ExposedEntity instance in the SDK and on the server.
@@ -538,9 +518,8 @@ object messagedefinitionsMod {
         *  7.6.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.ExposedEntity.createInEntityMessageDefinitionUnderExposedEntity")
-      @js.native
-      def createInEntityMessageDefinitionUnderExposedEntity(container: EntityMessageDefinition): ExposedEntity = js.native
+      @scala.inline
+      def createInEntityMessageDefinitionUnderExposedEntity(container: EntityMessageDefinition): ExposedEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityMessageDefinitionUnderExposedEntity")(container.asInstanceOf[js.Any]).asInstanceOf[ExposedEntity]
       
       /**
         * Creates and returns a new ExposedEntity instance in the SDK and on the server.
@@ -551,9 +530,8 @@ object messagedefinitionsMod {
         *  7.6.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.ExposedEntity.createInJsonStructureUnderElements")
-      @js.native
-      def createInJsonStructureUnderElements(container: JsonStructure): ExposedEntity = js.native
+      @scala.inline
+      def createInJsonStructureUnderElements(container: JsonStructure): ExposedEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[ExposedEntity]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.ExposedEntity.structureTypeName")
@@ -697,6 +675,14 @@ object messagedefinitionsMod {
       @JSName("name")
       val name_FMessageDefinition: String = js.native
       
+      /**
+        * Returns the qualified name of this element, or
+        * null if this element is not a part of the model,
+        * or if it or one of its namespace containers does not have a
+        * valid name.
+        */
+      /* CompleteClass */
+      override val qualifiedName: String | Null = js.native
       @JSName("qualifiedName")
       def qualifiedName_MMessageDefinition: String | Null = js.native
     }
@@ -764,9 +750,8 @@ object messagedefinitionsMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.MessageDefinitionCollection.createIn")
-      @js.native
-      def createIn(container: IFolderBase): MessageDefinitionCollection = js.native
+      @scala.inline
+      def createIn(container: IFolderBase): MessageDefinitionCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MessageDefinitionCollection]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.MessageDefinitionCollection.structureTypeName")
@@ -789,14 +774,17 @@ object messagedefinitionsMod {
       * In version 7.6.0: introduced
       */
     @js.native
-    trait IEntityMessageDefinition extends IMessageDefinition
+    trait IEntityMessageDefinition
+      extends StObject
+         with IMessageDefinition
     
     /**
       * In version 7.6.0: introduced
       */
     @js.native
     trait IMessageDefinition
-      extends IElement
+      extends StObject
+         with IElement
          with IByNameReferrable {
       
       val containerAsMessageDefinitionCollection: IMessageDefinitionCollection = js.native
@@ -813,7 +801,9 @@ object messagedefinitionsMod {
       * In version 7.6.0: introduced
       */
     @js.native
-    trait IMessageDefinitionCollection extends IDocument {
+    trait IMessageDefinitionCollection
+      extends StObject
+         with IDocument {
       
       val messageDefinitions: IList[IMessageDefinition] = js.native
     }

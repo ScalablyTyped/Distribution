@@ -3,21 +3,21 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeploymentInput extends BaseDeploymentInput {
+trait DeploymentInput
+  extends StObject
+     with BaseDeploymentInput {
   
-  var artifactsDownloadInput: ArtifactsDownloadInput = js.native
+  var artifactsDownloadInput: ArtifactsDownloadInput
   
-  var demands: js.Array[_] = js.native
+  var demands: js.Array[js.Any]
   
-  var enableAccessToken: Boolean = js.native
+  var enableAccessToken: Boolean
   
-  var queueId: Double = js.native
+  var queueId: Double
   
-  var skipArtifactsDownload: Boolean = js.native
+  var skipArtifactsDownload: Boolean
 }
 object DeploymentInput {
   
@@ -25,7 +25,7 @@ object DeploymentInput {
   def apply(
     artifactsDownloadInput: ArtifactsDownloadInput,
     condition: String,
-    demands: js.Array[_],
+    demands: js.Array[js.Any],
     enableAccessToken: Boolean,
     jobCancelTimeoutInMinutes: Double,
     overrideInputs: StringDictionary[String],
@@ -44,7 +44,7 @@ object DeploymentInput {
     def setArtifactsDownloadInput(value: ArtifactsDownloadInput): Self = StObject.set(x, "artifactsDownloadInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemands(value: js.Array[_]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))

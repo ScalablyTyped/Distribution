@@ -2,79 +2,95 @@ package typings.piCamera
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("pi-camera", JSImport.Namespace)
   @js.native
-  class ^ () extends PiCamera {
+  class ^ ()
+    extends StObject
+       with PiCamera {
     def this(config: CameraConfig) = this()
+    
+    /* CompleteClass */
+    override def get(prop: ConfigKey): ConfigValue = js.native
+    
+    /* CompleteClass */
+    override def record(): js.Promise[String] = js.native
+    
+    /* CompleteClass */
+    override def set(prop: ConfigKey, value: ConfigValue): ConfigValue = js.native
+    
+    /* CompleteClass */
+    override def snap(): js.Promise[String] = js.native
+    
+    /** @async */
+    /* CompleteClass */
+    override def snapDataUrl(): js.Promise[String] = js.native
   }
   
-  @js.native
   trait CameraConfig extends StObject {
     
-    var annotate: js.UndefOr[String | Double] = js.native
+    var annotate: js.UndefOr[String | Double] = js.undefined
     
-    var brightness: js.UndefOr[Double] = js.native
+    var brightness: js.UndefOr[Double] = js.undefined
     
-    var contrast: js.UndefOr[Double] = js.native
+    var contrast: js.UndefOr[Double] = js.undefined
     
-    var datetime: js.UndefOr[Boolean] = js.native
+    var datetime: js.UndefOr[Boolean] = js.undefined
     
-    var demo: js.UndefOr[Double] = js.native
+    var demo: js.UndefOr[Double] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var exif: js.UndefOr[String] = js.native
+    var exif: js.UndefOr[String] = js.undefined
     
-    var framerate: js.UndefOr[Double] = js.native
+    var framerate: js.UndefOr[Double] = js.undefined
     
-    var fullscreen: js.UndefOr[Boolean] = js.native
+    var fullscreen: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var hflip: js.UndefOr[Boolean] = js.native
+    var hflip: js.UndefOr[Boolean] = js.undefined
     
-    var latest: js.UndefOr[String] = js.native
+    var latest: js.UndefOr[String] = js.undefined
     
-    var mode: Mode = js.native
+    var mode: Mode
     
-    var nopreview: js.UndefOr[Boolean] = js.native
+    var nopreview: js.UndefOr[Boolean] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var output: js.UndefOr[String] = js.native
+    var output: js.UndefOr[String] = js.undefined
     
-    var preview: js.UndefOr[String] = js.native
+    var preview: js.UndefOr[String] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var saturation: js.UndefOr[Double] = js.native
+    var saturation: js.UndefOr[Double] = js.undefined
     
-    var shutter: js.UndefOr[Double] = js.native
+    var shutter: js.UndefOr[Double] = js.undefined
     
-    var thumb: js.UndefOr[String] = js.native
+    var thumb: js.UndefOr[String] = js.undefined
     
-    var timelapse: js.UndefOr[Double] = js.native
+    var timelapse: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var timestamp: js.UndefOr[Boolean] = js.native
+    var timestamp: js.UndefOr[Boolean] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var vflip: js.UndefOr[Boolean] = js.native
+    var vflip: js.UndefOr[Boolean] = js.undefined
     
-    var vstab: js.UndefOr[Boolean] = js.native
+    var vstab: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CameraConfig {
     
@@ -316,19 +332,18 @@ object mod {
     def video: typings.piCamera.piCameraStrings.video = "video".asInstanceOf[typings.piCamera.piCameraStrings.video]
   }
   
-  @js.native
   trait PiCamera extends StObject {
     
-    def get(prop: ConfigKey): ConfigValue = js.native
+    def get(prop: ConfigKey): ConfigValue
     
-    def record(): js.Promise[String] = js.native
+    def record(): js.Promise[String]
     
-    def set(prop: ConfigKey, value: ConfigValue): ConfigValue = js.native
+    def set(prop: ConfigKey, value: ConfigValue): ConfigValue
     
-    def snap(): js.Promise[String] = js.native
+    def snap(): js.Promise[String]
     
     /** @async */
-    def snapDataUrl(): js.Promise[String] = js.native
+    def snapDataUrl(): js.Promise[String]
   }
   object PiCamera {
     

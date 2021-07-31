@@ -3,35 +3,33 @@ package typings.ibmMobilefirst.WL
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseBase extends StObject {
   
-  var errorCode: Double = js.native
+  var errorCode: Double
   
-  var errorMsg: String = js.native
+  var errorMsg: String
   
-  var headerJSON: StringDictionary[js.Any] = js.native
+  var headerJSON: StringDictionary[js.Any]
   
-  var invocationContext: js.Any = js.native
-  
-  // JSON Object
-  var readyState: Double = js.native
-  
-  var request: js.Any = js.native
-  
-  var responseJSON: StringDictionary[js.Any] = js.native
+  var invocationContext: js.Any
   
   // JSON Object
-  var responseText: String = js.native
+  var readyState: Double
   
-  var responseXML: String = js.native
+  var request: js.Any
   
-  var status: Double = js.native
+  var responseJSON: StringDictionary[js.Any]
   
-  var statusText: String = js.native
+  // JSON Object
+  var responseText: String
+  
+  var responseXML: String
+  
+  var status: Double
+  
+  var statusText: String
 }
 object ResponseBase {
   

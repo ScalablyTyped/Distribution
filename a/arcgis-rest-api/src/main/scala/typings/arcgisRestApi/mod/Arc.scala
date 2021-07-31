@@ -2,11 +2,11 @@ package typings.arcgisRestApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Arc extends JsonCurve {
+trait Arc
+  extends StObject
+     with JsonCurve {
   
   var a: js.Tuple7[
     Position, 
@@ -22,7 +22,7 @@ trait Arc extends JsonCurve {
   Double, 
     // axis
   Double
-  ] = js.native
+  ]
 }
 object Arc {
   

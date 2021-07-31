@@ -3,15 +3,13 @@ package typings.aliOss.anon
 import typings.aliOss.mod.NormalSuccessResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Res extends StObject {
   
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
   
-  var stream: js.Any = js.native
+  var stream: js.Any
 }
 object Res {
   

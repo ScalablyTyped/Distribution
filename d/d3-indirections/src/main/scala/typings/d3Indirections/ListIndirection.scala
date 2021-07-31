@@ -3,18 +3,17 @@ package typings.d3Indirections
 import typings.d3Indirections.anon.ResourceIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An indirection with a list of resources to choose from.
   */
-@js.native
 trait ListIndirection
-  extends IndirectionBase
+  extends StObject
+     with IndirectionBase
      with Indirection {
   
-  var listIndirection: ResourceIndex = js.native
+  var listIndirection: ResourceIndex
 }
 object ListIndirection {
   

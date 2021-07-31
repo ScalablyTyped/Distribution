@@ -3,25 +3,23 @@ package typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Subject matches the originator of a request, as identified by the request authentication system. There are three ways of matching an originator; by user, group, or service account.
   */
-@js.native
 trait Subject extends StObject {
   
-  var group: js.UndefOr[Input[GroupSubject]] = js.native
+  var group: js.UndefOr[Input[GroupSubject]] = js.undefined
   
   /**
     * Required
     */
-  var kind: Input[String] = js.native
+  var kind: Input[String]
   
-  var serviceAccount: js.UndefOr[Input[ServiceAccountSubject]] = js.native
+  var serviceAccount: js.UndefOr[Input[ServiceAccountSubject]] = js.undefined
   
-  var user: js.UndefOr[Input[UserSubject]] = js.native
+  var user: js.UndefOr[Input[UserSubject]] = js.undefined
 }
 object Subject {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v3", "drive_v3.Resource$Teamdrives")
@@ -31,7 +30,7 @@ class ResourceTeamdrives protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaTeamDrive] = js.native
   def create(callback: BodyResponseCallback[SchemaTeamDrive]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTeamDrive] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTeamDrive] = js.native
   def create(params: ParamsResourceTeamdrivesCreate): GaxiosPromise[SchemaTeamDrive] = js.native
   def create(params: ParamsResourceTeamdrivesCreate, callback: BodyResponseCallback[SchemaTeamDrive]): Unit = js.native
   def create(
@@ -61,7 +60,7 @@ class ResourceTeamdrives protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTeamdrivesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTeamdrivesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -91,7 +90,7 @@ class ResourceTeamdrives protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaTeamDrive] = js.native
   def get(callback: BodyResponseCallback[SchemaTeamDrive]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTeamDrive] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTeamDrive] = js.native
   def get(params: ParamsResourceTeamdrivesGet): GaxiosPromise[SchemaTeamDrive] = js.native
   def get(params: ParamsResourceTeamdrivesGet, callback: BodyResponseCallback[SchemaTeamDrive]): Unit = js.native
   def get(
@@ -123,7 +122,7 @@ class ResourceTeamdrives protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaTeamDriveList] = js.native
   def list(callback: BodyResponseCallback[SchemaTeamDriveList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTeamDriveList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTeamDriveList] = js.native
   def list(params: ParamsResourceTeamdrivesList): GaxiosPromise[SchemaTeamDriveList] = js.native
   def list(params: ParamsResourceTeamdrivesList, callback: BodyResponseCallback[SchemaTeamDriveList]): Unit = js.native
   def list(
@@ -154,7 +153,7 @@ class ResourceTeamdrives protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaTeamDrive] = js.native
   def update(callback: BodyResponseCallback[SchemaTeamDrive]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTeamDrive] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTeamDrive] = js.native
   def update(params: ParamsResourceTeamdrivesUpdate): GaxiosPromise[SchemaTeamDrive] = js.native
   def update(params: ParamsResourceTeamdrivesUpdate, callback: BodyResponseCallback[SchemaTeamDrive]): Unit = js.native
   def update(

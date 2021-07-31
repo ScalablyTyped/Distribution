@@ -7,7 +7,6 @@ import typings.ckeditor.CKEDITOR.editor
 import typings.ckeditor.CKEDITOR.ui.balloonToolbar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object balloontoolbar {
@@ -31,18 +30,17 @@ object balloontoolbar {
     var toolbar: balloonToolbar = js.native
   }
   
-  @js.native
   trait contextDefinition extends StObject {
     
-    var cssSelector: js.UndefOr[String] = js.native
+    var cssSelector: js.UndefOr[String] = js.undefined
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
     var refresh: js.UndefOr[
         js.Function3[/* editor */ editor, /* path */ elementPath, /* selection */ selection, element]
-      ] = js.native
+      ] = js.undefined
     
-    var widgets: js.UndefOr[js.Array[String] | String] = js.native
+    var widgets: js.UndefOr[js.Array[String] | String] = js.undefined
   }
   object contextDefinition {
     

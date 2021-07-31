@@ -2,16 +2,14 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenerHandle extends StObject {
   
   /**
   	 * Removes the listener from the event.j
   	 */
-  def cancel(): Unit = js.native
+  def cancel(): Unit
 }
 object ListenerHandle {
   

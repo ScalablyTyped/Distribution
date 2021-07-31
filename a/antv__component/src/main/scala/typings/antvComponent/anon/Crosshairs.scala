@@ -3,77 +3,75 @@ package typings.antvComponent.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Crosshairs extends StObject {
   
-  var animate: Boolean = js.native
+  var animate: Boolean
   
-  var animateOption: Appear = js.native
+  var animateOption: Appear
   
-  var capture: Boolean = js.native
+  var capture: Boolean
   
-  var containerClassName: String = js.native
+  var containerClassName: String
   
-  var containerTpl: String = js.native
+  var containerTpl: String
   
-  var crosshairs: js.Any = js.native
+  var crosshairs: js.Any
   
-  var crosshairsRegion: js.Any = js.native
+  var crosshairsRegion: js.Any
   
-  var customContent: js.Any = js.native
+  var customContent: js.Any
   
   var defaultStyles: StringDictionary[
     BorderRadius | BoxShadow | Float | LineHeight | ListStyleType | Margin | MarginBottom | MarginLeft
-  ] = js.native
+  ]
   
-  var domStyles: js.Any = js.native
+  var domStyles: js.Any
   
-  var events: js.Any = js.native
+  var events: js.Any
   
-  var id: String = js.native
+  var id: String
   
-  var itemTpl: String = js.native
+  var itemTpl: String
   
-  var items: js.Array[_] = js.native
+  var items: js.Array[js.Any]
   
-  var locationType: String = js.native
+  var locationType: String
   
-  var name: String = js.native
+  var name: String
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var position: String = js.native
+  var position: String
   
   /**
     * tooltip 限制的区域
     * @type {Region}
     */
-  var region: js.Any = js.native
+  var region: js.Any
   
-  var showTitle: Boolean = js.native
+  var showTitle: Boolean
   
-  var title: js.Any = js.native
+  var title: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updateAutoRender: Boolean = js.native
+  var updateAutoRender: Boolean
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var x: Double = js.native
+  var x: Double
   
-  var xCrosshairTpl: String = js.native
+  var xCrosshairTpl: String
   
-  var y: Double = js.native
+  var y: Double
   
-  var yCrosshairTpl: String = js.native
+  var yCrosshairTpl: String
 }
 object Crosshairs {
   
@@ -94,7 +92,7 @@ object Crosshairs {
     events: js.Any,
     id: String,
     itemTpl: String,
-    items: js.Array[_],
+    items: js.Array[js.Any],
     locationType: String,
     name: String,
     offset: Double,
@@ -164,7 +162,7 @@ object Crosshairs {
     def setItemTpl(value: String): Self = StObject.set(x, "itemTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))

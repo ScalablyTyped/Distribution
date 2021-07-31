@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deploymentmanagerMod {
+  
+  @JSImport("googleapis/build/src/apis/deploymentmanager", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -126,9 +129,12 @@ object deploymentmanagerMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/deploymentmanager", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/deploymentmanager", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -172,22 +178,19 @@ object deploymentmanagerMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/deploymentmanager", "deploymentmanager")
-  @js.native
-  def deploymentmanager(options: Options): Deploymentmanager = js.native
-  @JSImport("googleapis/build/src/apis/deploymentmanager", "deploymentmanager")
-  @js.native
-  def deploymentmanager(options: typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Options): typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager = js.native
-  @JSImport("googleapis/build/src/apis/deploymentmanager", "deploymentmanager")
-  @js.native
-  def deploymentmanager(options: typings.googleapis.v2betaMod.deploymentmanagerV2beta.Options): typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager = js.native
-  @JSImport("googleapis/build/src/apis/deploymentmanager", "deploymentmanager")
-  @js.native
-  def deploymentmanager_alpha(version: alpha): Deploymentmanager = js.native
-  @JSImport("googleapis/build/src/apis/deploymentmanager", "deploymentmanager")
-  @js.native
-  def deploymentmanager_v2(version: v2): typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager = js.native
-  @JSImport("googleapis/build/src/apis/deploymentmanager", "deploymentmanager")
-  @js.native
-  def deploymentmanager_v2beta(version: v2beta): typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager = js.native
+  @scala.inline
+  def deploymentmanager(options: Options): Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(options.asInstanceOf[js.Any]).asInstanceOf[Deploymentmanager]
+  @scala.inline
+  def deploymentmanager(options: typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Options): typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager]
+  @scala.inline
+  def deploymentmanager(options: typings.googleapis.v2betaMod.deploymentmanagerV2beta.Options): typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager]
+  
+  @scala.inline
+  def deploymentmanager_alpha(version: alpha): Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(version.asInstanceOf[js.Any]).asInstanceOf[Deploymentmanager]
+  
+  @scala.inline
+  def deploymentmanager_v2(version: v2): typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager]
+  
+  @scala.inline
+  def deploymentmanager_v2beta(version: v2beta): typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager]
 }

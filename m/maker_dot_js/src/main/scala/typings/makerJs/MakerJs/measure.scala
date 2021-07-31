@@ -2,7 +2,6 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object measure {
@@ -14,27 +13,26 @@ object measure {
     * @param atlas Optional atlas to save measurements.
     * @returns object with low and high points.
     */
-  @js.native
   trait Atlas extends StObject {
     
-    def measureModels(): Unit = js.native
+    def measureModels(): Unit
     
-    var modelContext: IModel = js.native
+    var modelContext: IModel
     
     /**
       * Map of model measurements, mapped by routeKey.
       */
-    var modelMap: IMeasureMap = js.native
+    var modelMap: IMeasureMap
     
     /**
       * Flag that models have been measured.
       */
-    var modelsMeasured: Boolean = js.native
+    var modelsMeasured: Boolean
     
     /**
       * Map of path measurements, mapped by routeKey.
       */
-    var pathMap: IMeasureMap = js.native
+    var pathMap: IMeasureMap
   }
   object Atlas {
     
@@ -73,13 +71,14 @@ object measure {
   /**
     * A hexagon which surrounds a model.
     */
-  @js.native
-  trait IBoundingHex extends IModel {
+  trait IBoundingHex
+    extends StObject
+       with IModel {
     
     /**
       * Radius of the hexagon, which is also the length of a side.
       */
-    var radius: Double = js.native
+    var radius: Double
   }
   object IBoundingHex {
     

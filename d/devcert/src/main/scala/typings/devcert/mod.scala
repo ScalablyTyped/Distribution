@@ -4,39 +4,36 @@ import typings.devcert.userInterfaceMod.UserInterface
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("devcert", "certificateFor")
+  @JSImport("devcert", JSImport.Namespace)
   @js.native
-  def certificateFor[O /* <: Options */](domain: String): js.Promise[IReturnData[O]] = js.native
-  @JSImport("devcert", "certificateFor")
-  @js.native
-  def certificateFor[O /* <: Options */](domain: String, options: O): js.Promise[IReturnData[O]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("devcert", "configuredDomains")
-  @js.native
-  def configuredDomains(): js.Array[String] = js.native
+  @scala.inline
+  def certificateFor[O /* <: Options */](domain: String): js.Promise[IReturnData[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("certificateFor")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IReturnData[O]]]
+  @scala.inline
+  def certificateFor[O /* <: Options */](domain: String, options: O): js.Promise[IReturnData[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("certificateFor")(domain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IReturnData[O]]]
   
-  @JSImport("devcert", "hasCertificateFor")
-  @js.native
-  def hasCertificateFor(domain: String): Boolean = js.native
+  @scala.inline
+  def configuredDomains(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("configuredDomains")().asInstanceOf[js.Array[String]]
   
-  @JSImport("devcert", "removeDomain")
-  @js.native
-  def removeDomain(domain: String): Unit = js.native
+  @scala.inline
+  def hasCertificateFor(domain: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasCertificateFor")(domain.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("devcert", "uninstall")
-  @js.native
-  def uninstall(): Unit = js.native
+  @scala.inline
+  def removeDomain(domain: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def uninstall(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")().asInstanceOf[Unit]
+  
   trait ICaBuffer
-    extends IReturnCa[js.Any] {
+    extends StObject
+       with IReturnCa[js.Any] {
     
-    var ca: Buffer = js.native
+    var ca: Buffer
   }
   object ICaBuffer {
     
@@ -54,11 +51,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ICaPath
-    extends IReturnCaPath[js.Any] {
+    extends StObject
+       with IReturnCaPath[js.Any] {
     
-    var caPath: String = js.native
+    var caPath: String
   }
   object ICaPath {
     
@@ -76,12 +73,11 @@ object mod {
     }
   }
   
-  @js.native
   trait IDomainData extends StObject {
     
-    var cert: Buffer = js.native
+    var cert: Buffer
     
-    var key: Buffer = js.native
+    var key: Buffer
   }
   object IDomainData {
     
@@ -114,25 +110,24 @@ object mod {
   */
   trait IReturnCaPath[O /* <: Options */] extends StObject
   
-  type IReturnData[O /* <: Options */] = IDomainData with IReturnCa[O] with IReturnCaPath[O]
+  type IReturnData[O /* <: Options */] = IDomainData & IReturnCa[O] & IReturnCaPath[O]
   
-  @js.native
   trait Options extends StObject {
     
     /** Return the CA certificate data? */
-    var getCaBuffer: js.UndefOr[Boolean] = js.native
+    var getCaBuffer: js.UndefOr[Boolean] = js.undefined
     
     /** Return the path to the CA certificate? */
-    var getCaPath: js.UndefOr[Boolean] = js.native
+    var getCaPath: js.UndefOr[Boolean] = js.undefined
     
     /** If `certutil` is not installed already (for updating nss databases; e.g. firefox), do not attempt to install it */
-    var skipCertutilInstall: js.UndefOr[Boolean] = js.native
+    var skipCertutilInstall: js.UndefOr[Boolean] = js.undefined
     
     /** Do not update your systems host file with the domain name of the certificate */
-    var skipHostsFile: js.UndefOr[Boolean] = js.native
+    var skipHostsFile: js.UndefOr[Boolean] = js.undefined
     
     /** User interface hooks */
-    var ui: js.UndefOr[UserInterface] = js.native
+    var ui: js.UndefOr[UserInterface] = js.undefined
   }
   object Options {
     

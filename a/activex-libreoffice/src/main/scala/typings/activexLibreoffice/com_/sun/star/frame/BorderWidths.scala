@@ -2,24 +2,22 @@ package typings.activexLibreoffice.com_.sun.star.frame
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a border area by offsets from each side. */
-@js.native
 trait BorderWidths extends StObject {
   
   /** specifies the offset from bottom border. */
-  var Bottom: Double = js.native
+  var Bottom: Double
   
   /** specifies the offset from left border. */
-  var Left: Double = js.native
+  var Left: Double
   
   /** specifies the offset from right border. */
-  var Right: Double = js.native
+  var Right: Double
   
   /** specifies the offset from top border. */
-  var Top: Double = js.native
+  var Top: Double
 }
 object BorderWidths {
   

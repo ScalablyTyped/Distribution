@@ -6,50 +6,50 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceObjectaccesscontrolsUpdate extends StandardParameters {
+trait ParamsResourceObjectaccesscontrolsUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of a bucket.
     */
-  var bucket: js.UndefOr[String] = js.native
+  var bucket: js.UndefOr[String] = js.undefined
   
   /**
     * The entity holding the permission. Can be user-userId, user-emailAddress,
     * group-groupId, group-emailAddress, allUsers, or allAuthenticatedUsers.
     */
-  var entity: js.UndefOr[String] = js.native
+  var entity: js.UndefOr[String] = js.undefined
   
   /**
     * If present, selects a specific revision of this object (as opposed to the
     * latest version, the default).
     */
-  var generation: js.UndefOr[String] = js.native
+  var generation: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the object. For information about how to URL encode object names
     * to be path safe, see Encoding URI Path Parts.
     */
-  var `object`: js.UndefOr[String] = js.native
+  var `object`: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaObjectAccessControl] = js.native
+  var requestBody: js.UndefOr[SchemaObjectAccessControl] = js.undefined
   
   /**
     * The project to be billed for this request. Required for Requester Pays
     * buckets.
     */
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceObjectaccesscontrolsUpdate {
   

@@ -9,173 +9,171 @@ import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base File class used by all File Types that the Loader can support.
   * You shouldn't create an instance of a File directly, but should extend it with your own class, setting a custom type and processing methods.
   */
-@js.native
 trait File extends StObject {
   
   /**
     * Adds this file to its target cache upon successful loading and processing.
     * This method is often overridden by specific file types.
     */
-  def addToCache(): Unit = js.native
+  def addToCache(): Unit
   
   /**
     * Updated as the file loads.
     * Only set if loading via XHR.
     */
-  var bytesLoaded: Double = js.native
+  var bytesLoaded: Double
   
   /**
     * The total size of this file.
     * Set by onProgress and only if loading via XHR.
     */
-  var bytesTotal: Double = js.native
+  var bytesTotal: Double
   
   /**
     * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
     */
-  var cache: BaseCache | TextureManager = js.native
+  var cache: BaseCache | TextureManager
   
   /**
     * A config object that can be used by file types to store transitional data.
     */
-  var config: js.Any = js.native
+  var config: js.Any
   
   /**
     * For CORs based loading.
     * If this is undefined then the File will check BaseLoader.crossOrigin and use that (if set)
     */
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
   /**
     * The processed file data, stored here after the file has loaded.
     */
-  var data: js.Any = js.native
+  var data: js.Any
   
   /**
     * Destroy this File and any references it holds.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Checks if a key matching the one used by this file exists in the target Cache or not.
     * This is called automatically by the LoaderPlugin to decide if the file can be safely
     * loaded or will conflict.
     */
-  def hasCacheConflict(): Boolean = js.native
+  def hasCacheConflict(): Boolean
   
   /**
     * Unique cache key (unique within its file type)
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * Does this file have an associated linked file? Such as an image and a normal map.
     * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
     * actually bound by data, where-as a linkFile is.
     */
-  var linkFile: File = js.native
+  var linkFile: File
   
   /**
     * Called by the Loader, starts the actual file downloading.
     * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
     * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
     */
-  def load(): Unit = js.native
+  def load(): Unit
   
   /**
     * A reference to the Loader that is going to load this file.
     */
-  var loader: LoaderPlugin = js.native
+  var loader: LoaderPlugin
   
   /**
     * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
     * to the parent MultiFile. Set and used internally by the Loader or specific file types.
     */
-  var multiFile: MultiFile = js.native
+  var multiFile: MultiFile
   
   /**
     * Called if the file errors while loading, is sent a DOM ProgressEvent.
     * @param xhr The XMLHttpRequest that caused this onload event.
     * @param event The DOM ProgressEvent that resulted from this error.
     */
-  def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+  def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit
   
   /**
     * Called when the file finishes loading, is sent a DOM ProgressEvent.
     * @param xhr The XMLHttpRequest that caused this onload event.
     * @param event The DOM ProgressEvent that resulted from this load.
     */
-  def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+  def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit
   
   /**
     * Usually overridden by the FileTypes and is called by Loader.nextFile.
     * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
     */
-  def onProcess(): Unit = js.native
+  def onProcess(): Unit
   
   /**
     * Called when the File has completed processing.
     * Checks on the state of its multifile, if set.
     */
-  def onProcessComplete(): Unit = js.native
+  def onProcessComplete(): Unit
   
   /**
     * Called when the File has completed processing but it generated an error.
     * Checks on the state of its multifile, if set.
     */
-  def onProcessError(): Unit = js.native
+  def onProcessError(): Unit
   
   /**
     * Called during the file load progress. Is sent a DOM ProgressEvent.
     * @param event The DOM ProgressEvent.
     */
-  def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+  def onProgress(event: ProgressEvent[EventTarget]): Unit
   
   /**
     * Called once the file has been added to its cache and is now ready for deletion from the Loader.
     * It will emit a `filecomplete` event from the LoaderPlugin.
     */
-  def pendingDestroy(): Unit = js.native
+  def pendingDestroy(): Unit
   
   /**
     * A percentage value between 0 and 1 indicating how much of this file has loaded.
     * Only set if loading via XHR.
     */
-  var percentComplete: Double = js.native
+  var percentComplete: Double
   
   /**
     * Resets the XHRLoader instance this file is using.
     */
-  def resetXHR(): Unit = js.native
+  def resetXHR(): Unit
   
   /**
     * Links this File with another, so they depend upon each other for loading and processing.
     * @param fileB The file to link to this one.
     */
-  def setLink(fileB: File): Unit = js.native
+  def setLink(fileB: File): Unit
   
   /**
     * The final URL this file will load from, including baseURL and path.
     * Set automatically when the Loader calls 'load' on this file.
     */
-  var src: String = js.native
+  var src: String
   
   /**
     * The current state of the file. One of the FILE_CONST values.
     */
-  var state: integer = js.native
+  var state: integer
   
   /**
     * The file type string (image, json, etc) for sorting within the Loader.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The URL of the file, not including baseURL.
@@ -184,17 +182,17 @@ trait File extends StObject {
     * 
     * Can also be a JavaScript Object, such as the results of parsing JSON data.
     */
-  var url: js.Object | String = js.native
+  var url: js.Object | String
   
   /**
     * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
     */
-  var xhrLoader: XMLHttpRequest = js.native
+  var xhrLoader: XMLHttpRequest
   
   /**
     * The merged XHRSettings for this file.
     */
-  var xhrSettings: XHRSettingsObject = js.native
+  var xhrSettings: XHRSettingsObject
 }
 object File {
   

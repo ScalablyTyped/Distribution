@@ -2,28 +2,26 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterpriseAdminProvisionAndInviteEnterpriseGroupEndpoint extends StObject {
   
   /**
     * The name of the SCIM group. This must match the GitHub organization that the group maps to.
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * The slug version of the enterprise name. You can also substitute this value with the enterprise id.
     */
-  var enterprise: String = js.native
+  var enterprise: String
   
-  var members: js.UndefOr[js.Array[EnterpriseAdminProvisionAndInviteEnterpriseGroupParamsMembers]] = js.native
+  var members: js.UndefOr[js.Array[EnterpriseAdminProvisionAndInviteEnterpriseGroupParamsMembers]] = js.undefined
   
   /**
     * The SCIM schema URIs.
     */
-  var schemas: js.Array[String] = js.native
+  var schemas: js.Array[String]
 }
 object EnterpriseAdminProvisionAndInviteEnterpriseGroupEndpoint {
   

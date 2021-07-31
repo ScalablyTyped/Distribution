@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneViewHitTestResultResults extends Object {
+trait SceneViewHitTestResultResults
+  extends StObject
+     with Object {
   
   /**
     * The distance from the camera position to the point geometry hit on this graphic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult)
     */
-  var distance: Double = js.native
+  var distance: Double
   
   /**
     * A graphic present in the view that intersects the input screen coordinates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult)
     */
-  var graphic: Graphic = js.native
+  var graphic: Graphic
   
   /**
     * The point geometry in the spatial reference of the view corresponding with the input screen coordinates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult)
     */
-  var mapPoint: Point = js.native
+  var mapPoint: Point
 }
 object SceneViewHitTestResultResults {
   

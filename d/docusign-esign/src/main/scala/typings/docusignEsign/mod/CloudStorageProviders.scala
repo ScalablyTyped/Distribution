@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudStorageProviders extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait CloudStorageProviders extends StObject {
     js.Array[
       /* Contains details about a specific cloud storage provider. */ CloudStorageProvider
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object CloudStorageProviders {
   

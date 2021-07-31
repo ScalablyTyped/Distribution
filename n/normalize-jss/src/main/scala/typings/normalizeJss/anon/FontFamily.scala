@@ -2,19 +2,17 @@ package typings.normalizeJss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontFamily extends StObject {
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontSize: String = js.native
+  var fontSize: String
   
-  var lineHeight: String = js.native
+  var lineHeight: String
   
-  var margin: Double = js.native
+  var margin: Double
 }
 object FontFamily {
   

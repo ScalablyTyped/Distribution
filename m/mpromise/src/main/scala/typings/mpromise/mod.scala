@@ -2,14 +2,15 @@ package typings.mpromise
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("mpromise", JSImport.Namespace)
   @js.native
-  class ^[F, R] () extends Promise[F, R] {
+  class ^[F, R] ()
+    extends StObject
+       with Promise[F, R] {
     def this(fn: IResolveFunction[F, R]) = this()
   }
   @JSImport("mpromise", JSImport.Namespace)

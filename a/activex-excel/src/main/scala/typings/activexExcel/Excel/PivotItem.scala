@@ -3,72 +3,184 @@ package typings.activexExcel.Excel
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotItem extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var Caption: String = js.native
+  var Caption: String
   
-  def ChildItems(Indexes: SafeArray[Double | String]): PivotItems = js.native
-  def ChildItems(Index: String): PivotItem = js.native
-  def ChildItems(Index: Double): PivotItem = js.native
+  def ChildItems(Indexes: SafeArray[Double | String]): PivotItems
+  def ChildItems(Index: String): PivotItem
+  def ChildItems(Index: Double): PivotItem
   @JSName("ChildItems")
-  var ChildItems_Original: PivotItemsResult = js.native
+  var ChildItems_Original: PivotItemsResult
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def DataRange(Address: String): Range = js.native
-  def DataRange(RowIndex: Double): Range = js.native
-  def DataRange(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  def DataRange(Address: String): Range
+  def DataRange(RowIndex: Double): Range
+  def DataRange(RowIndex: Double, ColumnIndex: Double): Range
   @JSName("DataRange")
-  val DataRange_Original: Range = js.native
+  val DataRange_Original: Range
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  def DrillTo(Field: String): Unit = js.native
+  def DrillTo(Field: String): Unit
   
-  var DrilledDown: Boolean = js.native
+  var DrilledDown: Boolean
   
   @JSName("Excel.PivotItem_typekey")
-  var ExcelDotPivotItem_typekey: PivotItem = js.native
+  var ExcelDotPivotItem_typekey: PivotItem
   
-  var Formula: String = js.native
+  var Formula: String
   
-  val IsCalculated: Boolean = js.native
+  val IsCalculated: Boolean
   
-  def LabelRange(Address: String): Range = js.native
-  def LabelRange(RowIndex: Double): Range = js.native
-  def LabelRange(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  def LabelRange(Address: String): Range
+  def LabelRange(RowIndex: Double): Range
+  def LabelRange(RowIndex: Double, ColumnIndex: Double): Range
   @JSName("LabelRange")
-  val LabelRange_Original: Range = js.native
+  val LabelRange_Original: Range
   
-  var Name: String = js.native
+  var Name: String
   
-  val Parent: PivotField = js.native
+  val Parent: PivotField
   
-  val ParentItem: PivotItem = js.native
+  val ParentItem: PivotItem
   
-  val ParentShowDetail: Boolean = js.native
+  val ParentShowDetail: Boolean
   
-  var Position: Double = js.native
+  var Position: Double
   
-  val RecordCount: Double = js.native
+  val RecordCount: Double
   
-  var ShowDetail: Boolean = js.native
+  var ShowDetail: Boolean
   
-  val SourceName: js.Any = js.native
+  val SourceName: js.Any
   
-  val SourceNameStandard: String = js.native
+  val SourceNameStandard: String
   
-  var StandardFormula: String = js.native
+  var StandardFormula: String
   
-  var Value: String = js.native
+  var Value: String
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
   
-  var _Default: String = js.native
+  var _Default: String
+}
+object PivotItem {
+  
+  @scala.inline
+  def apply(
+    Application: Application,
+    Caption: String,
+    ChildItems: PivotItemsResult,
+    Creator: XlCreator,
+    DataRange: Range,
+    Delete: () => Unit,
+    DrillTo: String => Unit,
+    DrilledDown: Boolean,
+    ExcelDotPivotItem_typekey: PivotItem,
+    Formula: String,
+    IsCalculated: Boolean,
+    LabelRange: Range,
+    Name: String,
+    Parent: PivotField,
+    ParentItem: PivotItem,
+    ParentShowDetail: Boolean,
+    Position: Double,
+    RecordCount: Double,
+    ShowDetail: Boolean,
+    SourceName: js.Any,
+    SourceNameStandard: String,
+    StandardFormula: String,
+    Value: String,
+    Visible: Boolean,
+    _Default: String
+  ): PivotItem = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Caption = Caption.asInstanceOf[js.Any], ChildItems = ChildItems.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DataRange = DataRange.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), DrillTo = js.Any.fromFunction1(DrillTo), DrilledDown = DrilledDown.asInstanceOf[js.Any], Formula = Formula.asInstanceOf[js.Any], IsCalculated = IsCalculated.asInstanceOf[js.Any], LabelRange = LabelRange.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], ParentItem = ParentItem.asInstanceOf[js.Any], ParentShowDetail = ParentShowDetail.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], RecordCount = RecordCount.asInstanceOf[js.Any], ShowDetail = ShowDetail.asInstanceOf[js.Any], SourceName = SourceName.asInstanceOf[js.Any], SourceNameStandard = SourceNameStandard.asInstanceOf[js.Any], StandardFormula = StandardFormula.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], Visible = Visible.asInstanceOf[js.Any], _Default = _Default.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.PivotItem_typekey")(ExcelDotPivotItem_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PivotItem]
+  }
+  
+  @scala.inline
+  implicit class PivotItemMutableBuilder[Self <: PivotItem] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setChildItems(value: PivotItemsResult): Self = StObject.set(x, "ChildItems", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDataRange(value: Range): Self = StObject.set(x, "DataRange", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setDrillTo(value: String => Unit): Self = StObject.set(x, "DrillTo", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setDrilledDown(value: Boolean): Self = StObject.set(x, "DrilledDown", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setExcelDotPivotItem_typekey(value: PivotItem): Self = StObject.set(x, "Excel.PivotItem_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsCalculated(value: Boolean): Self = StObject.set(x, "IsCalculated", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLabelRange(value: Range): Self = StObject.set(x, "LabelRange", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParent(value: PivotField): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParentItem(value: PivotItem): Self = StObject.set(x, "ParentItem", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParentShowDetail(value: Boolean): Self = StObject.set(x, "ParentShowDetail", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRecordCount(value: Double): Self = StObject.set(x, "RecordCount", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setShowDetail(value: Boolean): Self = StObject.set(x, "ShowDetail", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSourceName(value: js.Any): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSourceNameStandard(value: String): Self = StObject.set(x, "SourceNameStandard", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStandardFormula(value: String): Self = StObject.set(x, "StandardFormula", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+  }
 }

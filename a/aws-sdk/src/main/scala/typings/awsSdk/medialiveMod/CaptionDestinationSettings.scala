@@ -2,37 +2,35 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptionDestinationSettings extends StObject {
   
-  var AribDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.AribDestinationSettings] = js.native
+  var AribDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.AribDestinationSettings] = js.undefined
   
-  var BurnInDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.BurnInDestinationSettings] = js.native
+  var BurnInDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.BurnInDestinationSettings] = js.undefined
   
-  var DvbSubDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.DvbSubDestinationSettings] = js.native
+  var DvbSubDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.DvbSubDestinationSettings] = js.undefined
   
-  var EbuTtDDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.EbuTtDDestinationSettings] = js.native
+  var EbuTtDDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.EbuTtDDestinationSettings] = js.undefined
   
-  var EmbeddedDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.EmbeddedDestinationSettings] = js.native
+  var EmbeddedDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.EmbeddedDestinationSettings] = js.undefined
   
-  var EmbeddedPlusScte20DestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.EmbeddedPlusScte20DestinationSettings] = js.native
+  var EmbeddedPlusScte20DestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.EmbeddedPlusScte20DestinationSettings] = js.undefined
   
-  var RtmpCaptionInfoDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.RtmpCaptionInfoDestinationSettings] = js.native
+  var RtmpCaptionInfoDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.RtmpCaptionInfoDestinationSettings] = js.undefined
   
-  var Scte20PlusEmbeddedDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.Scte20PlusEmbeddedDestinationSettings] = js.native
+  var Scte20PlusEmbeddedDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.Scte20PlusEmbeddedDestinationSettings] = js.undefined
   
-  var Scte27DestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.Scte27DestinationSettings] = js.native
+  var Scte27DestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.Scte27DestinationSettings] = js.undefined
   
-  var SmpteTtDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.SmpteTtDestinationSettings] = js.native
+  var SmpteTtDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.SmpteTtDestinationSettings] = js.undefined
   
-  var TeletextDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.TeletextDestinationSettings] = js.native
+  var TeletextDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.TeletextDestinationSettings] = js.undefined
   
-  var TtmlDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.TtmlDestinationSettings] = js.native
+  var TtmlDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.TtmlDestinationSettings] = js.undefined
   
-  var WebvttDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.WebvttDestinationSettings] = js.native
+  var WebvttDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.WebvttDestinationSettings] = js.undefined
 }
 object CaptionDestinationSettings {
   

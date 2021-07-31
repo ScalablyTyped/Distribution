@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ChartElementNamed class.
   */
-@js.native
-trait ASPxClientWebChartElementNamed extends ASPxClientWebChartElement {
+trait ASPxClientWebChartElementNamed
+  extends StObject
+     with ASPxClientWebChartElement {
   
   /**
     * Gets the name of the chart element.
     */
-  var name: String = js.native
+  var name: String
 }
 object ASPxClientWebChartElementNamed {
   

@@ -43,88 +43,86 @@ import typings.openfin.webcontentsMod.WindowResourceLoadFailedEvent
 import typings.openfin.webcontentsMod.WindowResourceResponseReceivedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ Type in keyof openfin.openfin/_v2/api/events/window.PropagatedWindowEventMapping<string, string> ]: openfin.openfin/_v2/api/events/window.PropagatedWindowEventMapping<Topic, Type>[Type]} */
-@js.native
 trait PropagatedWindowEvents[Topic] extends StObject {
   
-  var listenerRemoved: String = js.native
+  var listenerRemoved: String
   
-  var newListener: String = js.native
+  var newListener: String
   
-  var `window-begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[Topic, typings.openfin.openfinStrings.`window-begin-user-bounds-changing`] = js.native
+  var `window-begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[Topic, typings.openfin.openfinStrings.`window-begin-user-bounds-changing`]
   
-  var `window-blurred`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-blurred`] = js.native
+  var `window-blurred`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-blurred`]
   
-  var `window-bounds-changed`: WindowBoundsChange[Topic, typings.openfin.openfinStrings.`window-bounds-changed`] = js.native
+  var `window-bounds-changed`: WindowBoundsChange[Topic, typings.openfin.openfinStrings.`window-bounds-changed`]
   
-  var `window-bounds-changing`: WindowBoundsChange[Topic, typings.openfin.openfinStrings.`window-bounds-changing`] = js.native
+  var `window-bounds-changing`: WindowBoundsChange[Topic, typings.openfin.openfinStrings.`window-bounds-changing`]
   
-  var `window-closed`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-closed`] = js.native
+  var `window-closed`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-closed`]
   
-  var `window-closing`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-closing`] = js.native
+  var `window-closing`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-closing`]
   
-  var `window-crashed`: CrashedEvent with (WindowEvent[Topic, typings.openfin.openfinStrings.`window-crashed`]) = js.native
+  var `window-crashed`: CrashedEvent & (WindowEvent[Topic, typings.openfin.openfinStrings.`window-crashed`])
   
-  var `window-disabled-movement-bounds-changed`: WindowBoundsChange[Topic, typings.openfin.openfinStrings.`window-disabled-movement-bounds-changed`] = js.native
+  var `window-disabled-movement-bounds-changed`: WindowBoundsChange[Topic, typings.openfin.openfinStrings.`window-disabled-movement-bounds-changed`]
   
-  var `window-disabled-movement-bounds-changing`: WindowBoundsChange[Topic, typings.openfin.openfinStrings.`window-disabled-movement-bounds-changing`] = js.native
+  var `window-disabled-movement-bounds-changing`: WindowBoundsChange[Topic, typings.openfin.openfinStrings.`window-disabled-movement-bounds-changing`]
   
-  var `window-embedded`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-embedded`] = js.native
+  var `window-embedded`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-embedded`]
   
-  var `window-end-user-bounds-changing`: WindowBeginBoundsChangingEvent[Topic, typings.openfin.openfinStrings.`window-end-user-bounds-changing`] = js.native
+  var `window-end-user-bounds-changing`: WindowBeginBoundsChangingEvent[Topic, typings.openfin.openfinStrings.`window-end-user-bounds-changing`]
   
-  var `window-external-process-exited`: WindowExternalProcessExitedEvent[Topic, typings.openfin.openfinStrings.`window-external-process-exited`] = js.native
+  var `window-external-process-exited`: WindowExternalProcessExitedEvent[Topic, typings.openfin.openfinStrings.`window-external-process-exited`]
   
-  var `window-external-process-started`: WindowExternalProcessStartedEvent[Topic, typings.openfin.openfinStrings.`window-external-process-started`] = js.native
+  var `window-external-process-started`: WindowExternalProcessStartedEvent[Topic, typings.openfin.openfinStrings.`window-external-process-started`]
   
-  var `window-focused`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-focused`] = js.native
+  var `window-focused`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-focused`]
   
-  var `window-group-changed`: WindowGroupChanged[Topic, typings.openfin.openfinStrings.`window-group-changed`] = js.native
+  var `window-group-changed`: WindowGroupChanged[Topic, typings.openfin.openfinStrings.`window-group-changed`]
   
-  var `window-hidden`: WindowHiddenEvent[Topic, typings.openfin.openfinStrings.`window-hidden`] = js.native
+  var `window-hidden`: WindowHiddenEvent[Topic, typings.openfin.openfinStrings.`window-hidden`]
   
-  var `window-hotkey`: InputEvent with (WindowEvent[Topic, typings.openfin.openfinStrings.`window-hotkey`]) = js.native
+  var `window-hotkey`: InputEvent & (WindowEvent[Topic, typings.openfin.openfinStrings.`window-hotkey`])
   
-  var `window-initialized`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-initialized`] = js.native
+  var `window-initialized`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-initialized`]
   
-  var `window-layout-initialized`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-layout-initialized`] = js.native
+  var `window-layout-initialized`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-layout-initialized`]
   
-  var `window-layout-ready`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-layout-ready`] = js.native
+  var `window-layout-ready`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-layout-ready`]
   
-  var `window-maximized`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-maximized`] = js.native
+  var `window-maximized`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-maximized`]
   
-  var `window-minimized`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-minimized`] = js.native
+  var `window-minimized`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-minimized`]
   
-  var `window-navigation-rejected`: WindowNavigationRejectedEvent[Topic, typings.openfin.openfinStrings.`window-navigation-rejected`] = js.native
+  var `window-navigation-rejected`: WindowNavigationRejectedEvent[Topic, typings.openfin.openfinStrings.`window-navigation-rejected`]
   
-  var `window-options-changed`: WindowOptionsChangedEvent[Topic, typings.openfin.openfinStrings.`window-options-changed`] = js.native
+  var `window-options-changed`: WindowOptionsChangedEvent[Topic, typings.openfin.openfinStrings.`window-options-changed`]
   
-  var `window-performance-report`: WindowPerformanceReport[Topic, typings.openfin.openfinStrings.`window-performance-report`] = js.native
+  var `window-performance-report`: WindowPerformanceReport[Topic, typings.openfin.openfinStrings.`window-performance-report`]
   
-  var `window-preload-scripts-state-changed`: WindowPreloadScriptsStateChangeEvent[Topic, typings.openfin.openfinStrings.`window-preload-scripts-state-changed`] = js.native
+  var `window-preload-scripts-state-changed`: WindowPreloadScriptsStateChangeEvent[Topic, typings.openfin.openfinStrings.`window-preload-scripts-state-changed`]
   
-  var `window-preload-scripts-state-changing`: WindowPreloadScriptsStateChangedEvent[Topic, typings.openfin.openfinStrings.`window-preload-scripts-state-changing`] = js.native
+  var `window-preload-scripts-state-changing`: WindowPreloadScriptsStateChangedEvent[Topic, typings.openfin.openfinStrings.`window-preload-scripts-state-changing`]
   
-  var `window-reloaded`: WindowReloadedEvent[Topic, typings.openfin.openfinStrings.`window-reloaded`] = js.native
+  var `window-reloaded`: WindowReloadedEvent[Topic, typings.openfin.openfinStrings.`window-reloaded`]
   
-  var `window-resource-load-failed`: WindowResourceLoadFailedEvent[Topic, typings.openfin.openfinStrings.`window-resource-load-failed`] = js.native
+  var `window-resource-load-failed`: WindowResourceLoadFailedEvent[Topic, typings.openfin.openfinStrings.`window-resource-load-failed`]
   
-  var `window-resource-response-received`: WindowResourceResponseReceivedEvent[Topic, typings.openfin.openfinStrings.`window-resource-response-received`] = js.native
+  var `window-resource-response-received`: WindowResourceResponseReceivedEvent[Topic, typings.openfin.openfinStrings.`window-resource-response-received`]
   
-  var `window-restored`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-restored`] = js.native
+  var `window-restored`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-restored`]
   
-  var `window-shown`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-shown`] = js.native
+  var `window-shown`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-shown`]
   
-  var `window-user-movement-disabled`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-user-movement-disabled`] = js.native
+  var `window-user-movement-disabled`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-user-movement-disabled`]
   
-  var `window-user-movement-enabled`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-user-movement-enabled`] = js.native
+  var `window-user-movement-enabled`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-user-movement-enabled`]
   
-  var `window-will-move`: WillMoveOrResize[Topic, typings.openfin.openfinStrings.`window-will-move`] = js.native
+  var `window-will-move`: WillMoveOrResize[Topic, typings.openfin.openfinStrings.`window-will-move`]
   
-  var `window-will-resize`: WillMoveOrResize[Topic, typings.openfin.openfinStrings.`window-will-resize`] = js.native
+  var `window-will-resize`: WillMoveOrResize[Topic, typings.openfin.openfinStrings.`window-will-resize`]
 }
 object PropagatedWindowEvents {
   
@@ -138,7 +136,7 @@ object PropagatedWindowEvents {
     `window-bounds-changing`: WindowBoundsChange[Topic, `window-bounds-changing`],
     `window-closed`: WindowEvent[Topic, `window-closed`],
     `window-closing`: WindowEvent[Topic, `window-closing`],
-    `window-crashed`: CrashedEvent with (WindowEvent[Topic, `window-crashed`]),
+    `window-crashed`: CrashedEvent & (WindowEvent[Topic, `window-crashed`]),
     `window-disabled-movement-bounds-changed`: WindowBoundsChange[Topic, `window-disabled-movement-bounds-changed`],
     `window-disabled-movement-bounds-changing`: WindowBoundsChange[Topic, `window-disabled-movement-bounds-changing`],
     `window-embedded`: WindowEvent[Topic, `window-embedded`],
@@ -148,7 +146,7 @@ object PropagatedWindowEvents {
     `window-focused`: WindowEvent[Topic, `window-focused`],
     `window-group-changed`: WindowGroupChanged[Topic, `window-group-changed`],
     `window-hidden`: WindowHiddenEvent[Topic, `window-hidden`],
-    `window-hotkey`: InputEvent with (WindowEvent[Topic, `window-hotkey`]),
+    `window-hotkey`: InputEvent & (WindowEvent[Topic, `window-hotkey`]),
     `window-initialized`: WindowEvent[Topic, `window-initialized`],
     `window-layout-initialized`: WindowEvent[Topic, `window-layout-initialized`],
     `window-layout-ready`: WindowEvent[Topic, `window-layout-ready`],
@@ -210,7 +208,7 @@ object PropagatedWindowEvents {
   }
   
   @scala.inline
-  implicit class PropagatedWindowEventsMutableBuilder[Self <: PropagatedWindowEvents[_], Topic] (val x: Self with PropagatedWindowEvents[Topic]) extends AnyVal {
+  implicit class PropagatedWindowEventsMutableBuilder[Self <: PropagatedWindowEvents[?], Topic] (val x: Self & PropagatedWindowEvents[Topic]) extends AnyVal {
     
     @scala.inline
     def setListenerRemoved(value: String): Self = StObject.set(x, "listenerRemoved", value.asInstanceOf[js.Any])
@@ -237,7 +235,7 @@ object PropagatedWindowEvents {
     def `setWindow-closing`(value: WindowEvent[Topic, `window-closing`]): Self = StObject.set(x, "window-closing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setWindow-crashed`(value: CrashedEvent with (WindowEvent[Topic, `window-crashed`])): Self = StObject.set(x, "window-crashed", value.asInstanceOf[js.Any])
+    def `setWindow-crashed`(value: CrashedEvent & (WindowEvent[Topic, `window-crashed`])): Self = StObject.set(x, "window-crashed", value.asInstanceOf[js.Any])
     
     @scala.inline
     def `setWindow-disabled-movement-bounds-changed`(value: WindowBoundsChange[Topic, `window-disabled-movement-bounds-changed`]): Self = StObject.set(x, "window-disabled-movement-bounds-changed", value.asInstanceOf[js.Any])
@@ -267,7 +265,7 @@ object PropagatedWindowEvents {
     def `setWindow-hidden`(value: WindowHiddenEvent[Topic, `window-hidden`]): Self = StObject.set(x, "window-hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setWindow-hotkey`(value: InputEvent with (WindowEvent[Topic, `window-hotkey`])): Self = StObject.set(x, "window-hotkey", value.asInstanceOf[js.Any])
+    def `setWindow-hotkey`(value: InputEvent & (WindowEvent[Topic, `window-hotkey`])): Self = StObject.set(x, "window-hotkey", value.asInstanceOf[js.Any])
     
     @scala.inline
     def `setWindow-initialized`(value: WindowEvent[Topic, `window-initialized`]): Self = StObject.set(x, "window-initialized", value.asInstanceOf[js.Any])

@@ -13,15 +13,13 @@ import typings.cssTree.mod.Property_
 import typings.cssTree.mod.WalkOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ast extends StObject {
     
-    var ast: CssNode = js.native
+    var ast: CssNode
   }
   object Ast {
     
@@ -39,14 +37,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Classes extends StObject {
     
-    var classes: js.UndefOr[js.Array[String]] = js.native
+    var classes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ids: js.UndefOr[js.Array[String]] = js.native
+    var ids: js.UndefOr[js.Array[String]] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Classes {
     

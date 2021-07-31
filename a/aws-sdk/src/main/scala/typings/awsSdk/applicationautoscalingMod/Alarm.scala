@@ -2,21 +2,19 @@ package typings.awsSdk.applicationautoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alarm extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the alarm.
     */
-  var AlarmARN: ResourceId = js.native
+  var AlarmARN: ResourceId
   
   /**
     * The name of the alarm.
     */
-  var AlarmName: ResourceId = js.native
+  var AlarmName: ResourceId
 }
 object Alarm {
   

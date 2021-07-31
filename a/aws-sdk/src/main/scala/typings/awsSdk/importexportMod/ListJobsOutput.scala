@@ -2,15 +2,13 @@ package typings.awsSdk.importexportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsOutput extends StObject {
   
-  var IsTruncated: js.UndefOr[typings.awsSdk.importexportMod.IsTruncated] = js.native
+  var IsTruncated: js.UndefOr[typings.awsSdk.importexportMod.IsTruncated] = js.undefined
   
-  var Jobs: js.UndefOr[JobsList] = js.native
+  var Jobs: js.UndefOr[JobsList] = js.undefined
 }
 object ListJobsOutput {
   

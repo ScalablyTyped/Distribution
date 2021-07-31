@@ -12,25 +12,23 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.s3ColonReduced
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCloudFunctionConfigurationMod {
   
-  @js.native
   trait CloudFunctionConfiguration extends StObject {
     
     /**
       * _CloudFunction shape
       */
-    var CloudFunction: js.UndefOr[String] = js.native
+    var CloudFunction: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Bucket event for which to send notifications.</p>
       */
     var Event: js.UndefOr[
         s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * _EventList shape
@@ -41,17 +39,17 @@ object typesCloudFunctionConfigurationMod {
         ]) | (Iterable[
           s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>Optional unique identifier for configurations in a notification configuration. If you don't provide one, Amazon S3 will assign an ID.</p>
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * _CloudFunctionInvocationRole shape
       */
-    var InvocationRole: js.UndefOr[String] = js.native
+    var InvocationRole: js.UndefOr[String] = js.undefined
   }
   object CloudFunctionConfiguration {
     
@@ -109,8 +107,9 @@ object typesCloudFunctionConfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledCloudFunctionConfiguration extends CloudFunctionConfiguration {
+  trait UnmarshalledCloudFunctionConfiguration
+    extends StObject
+       with CloudFunctionConfiguration {
     
     /**
       * _EventList shape
@@ -120,7 +119,7 @@ object typesCloudFunctionConfigurationMod {
         js.Array[
           s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object UnmarshalledCloudFunctionConfiguration {
     

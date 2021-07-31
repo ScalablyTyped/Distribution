@@ -2,25 +2,23 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockToolsGuiDefinitionsFlagsOptions extends StObject {
   
-  var flagCirclepin: js.UndefOr[StockToolsGuiDefinitionsFlagsFlagCirclepinOptions] = js.native
+  var flagCirclepin: js.UndefOr[StockToolsGuiDefinitionsFlagsFlagCirclepinOptions] = js.undefined
   
-  var flagDiamondpin: js.UndefOr[StockToolsGuiDefinitionsFlagsFlagDiamondpinOptions] = js.native
+  var flagDiamondpin: js.UndefOr[StockToolsGuiDefinitionsFlagsFlagDiamondpinOptions] = js.undefined
   
-  var flagSimplepin: js.UndefOr[StockToolsGuiDefinitionsFlagsFlagSimplepinOptions] = js.native
+  var flagSimplepin: js.UndefOr[StockToolsGuiDefinitionsFlagsFlagSimplepinOptions] = js.undefined
   
-  var flagSquarepin: js.UndefOr[StockToolsGuiDefinitionsFlagsFlagSquarepinOptions] = js.native
+  var flagSquarepin: js.UndefOr[StockToolsGuiDefinitionsFlagsFlagSquarepinOptions] = js.undefined
   
   /**
     * (Highstock) A collection of strings pointing to config options for the
     * items.
     */
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object StockToolsGuiDefinitionsFlagsOptions {
   
@@ -58,7 +56,7 @@ object StockToolsGuiDefinitionsFlagsOptions {
     def setFlagSquarepinUndefined: Self = StObject.set(x, "flagSquarepin", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

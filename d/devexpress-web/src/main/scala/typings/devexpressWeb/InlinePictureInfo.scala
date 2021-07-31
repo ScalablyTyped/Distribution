@@ -2,56 +2,54 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains in-line picture settings.
   */
-@js.native
 trait InlinePictureInfo extends StObject {
   
   /**
     * Gets the actual image height.
     */
-  val actualHeight: Double = js.native
+  val actualHeight: Double
   
-  val actualHeigth: Double = js.native
+  val actualHeigth: Double
   
   /**
     * Gets the actual image width.
     */
-  val actualWidth: Double = js.native
+  val actualWidth: Double
   
   /**
     * Gets the image identifier.
     */
-  val id: Double = js.native
+  val id: Double
   
   /**
     * Gets the initial image height.
     */
-  val initialHeight: Double = js.native
+  val initialHeight: Double
   
   /**
     * Gets the initial image width.
     */
-  val initialWidth: Double = js.native
+  val initialWidth: Double
   
   /**
     * Gets the image position.
     */
-  val position: Double = js.native
+  val position: Double
   
   /**
     * Gets the X-scaling factor of the inline image.
     */
-  val scaleX: Double = js.native
+  val scaleX: Double
   
   /**
     * Gets the Y-scaling factor of the inline image.
     */
-  val scaleY: Double = js.native
+  val scaleY: Double
 }
 object InlinePictureInfo {
   

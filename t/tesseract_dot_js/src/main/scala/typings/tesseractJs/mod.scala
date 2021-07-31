@@ -13,7 +13,6 @@ import typings.std.ImageData
 import typings.tesseractJs.anon.CorePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -22,18 +21,17 @@ object mod extends Shortcut {
   @js.native
   val ^ : TesseractStatic = js.native
   
-  @js.native
   trait Baseline extends StObject {
     
-    var has_baseline: Boolean = js.native
+    var has_baseline: Boolean
     
-    var x0: Double = js.native
+    var x0: Double
     
-    var x1: Double = js.native
+    var x1: Double
     
-    var y0: Double = js.native
+    var y0: Double
     
-    var y1: Double = js.native
+    var y1: Double
   }
   object Baseline {
     
@@ -63,16 +61,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Bbox extends StObject {
     
-    var x0: Double = js.native
+    var x0: Double
     
-    var x1: Double = js.native
+    var x1: Double
     
-    var y0: Double = js.native
+    var y0: Double
     
-    var y1: Double = js.native
+    var y1: Double
   }
   object Bbox {
     
@@ -99,30 +96,29 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Block extends StObject {
     
-    var baseline: Baseline = js.native
+    var baseline: Baseline
     
-    var bbox: Bbox = js.native
+    var bbox: Bbox
     
-    var blocktype: String = js.native
+    var blocktype: String
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var lines: js.Array[Line] = js.native
+    var lines: js.Array[Line]
     
-    var page: Page = js.native
+    var page: Page
     
-    var paragraphs: Paragraph = js.native
+    var paragraphs: Paragraph
     
-    var polygon: js.Any = js.native
+    var polygon: js.Any
     
-    var symbols: js.Array[Symbol] = js.native
+    var symbols: js.Array[Symbol]
     
-    var text: String = js.native
+    var text: String
     
-    var words: js.Array[Word] = js.native
+    var words: js.Array[Word]
   }
   object Block {
     
@@ -191,12 +187,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Choice extends StObject {
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var text: String = js.native
+    var text: String
   }
   object Choice {
     
@@ -219,26 +214,25 @@ object mod extends Shortcut {
   
   type ImageLike = String | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | CanvasRenderingContext2D | File | Blob | ImageData | Buffer
   
-  @js.native
   trait Line extends StObject {
     
-    var baseline: Baseline = js.native
+    var baseline: Baseline
     
-    var bbox: Bbox = js.native
+    var bbox: Bbox
     
-    var block: Block = js.native
+    var block: Block
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var page: Page = js.native
+    var page: Page
     
-    var paragraph: Paragraph = js.native
+    var paragraph: Paragraph
     
-    var symbols: js.Array[Symbol] = js.native
+    var symbols: js.Array[Symbol]
     
-    var text: String = js.native
+    var text: String
     
-    var words: js.Array[Word] = js.native
+    var words: js.Array[Word]
   }
   object Line {
     
@@ -296,30 +290,29 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Page extends StObject {
     
-    var blocks: js.Array[Block] = js.native
+    var blocks: js.Array[Block]
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var html: String = js.native
+    var html: String
     
-    var lines: js.Array[Line] = js.native
+    var lines: js.Array[Line]
     
-    var oem: String = js.native
+    var oem: String
     
-    var paragraphs: js.Array[Paragraph] = js.native
+    var paragraphs: js.Array[Paragraph]
     
-    var psm: String = js.native
+    var psm: String
     
-    var symbols: js.Array[Symbol] = js.native
+    var symbols: js.Array[Symbol]
     
-    var text: String = js.native
+    var text: String
     
-    var version: String = js.native
+    var version: String
     
-    var words: js.Array[Word] = js.native
+    var words: js.Array[Word]
   }
   object Page {
     
@@ -394,28 +387,27 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Paragraph extends StObject {
     
-    var baseline: Baseline = js.native
+    var baseline: Baseline
     
-    var bbox: Bbox = js.native
+    var bbox: Bbox
     
-    var block: Block = js.native
+    var block: Block
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var is_ltr: Boolean = js.native
+    var is_ltr: Boolean
     
-    var lines: js.Array[Line] = js.native
+    var lines: js.Array[Line]
     
-    var page: Page = js.native
+    var page: Page
     
-    var symbols: js.Array[Symbol] = js.native
+    var symbols: js.Array[Symbol]
     
-    var text: String = js.native
+    var text: String
     
-    var words: js.Array[Word] = js.native
+    var words: js.Array[Word]
   }
   object Paragraph {
     
@@ -480,14 +472,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Progress extends StObject {
     
-    var loaded: js.UndefOr[Double] = js.native
+    var loaded: js.UndefOr[Double] = js.undefined
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var status: String = js.native
+    var status: String
   }
   object Progress {
     
@@ -514,36 +505,35 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Symbol extends StObject {
     
-    var baseline: Baseline = js.native
+    var baseline: Baseline
     
-    var bbox: Bbox = js.native
+    var bbox: Bbox
     
-    var block: Block = js.native
+    var block: Block
     
-    var choices: js.Array[Choice] = js.native
+    var choices: js.Array[Choice]
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var image: js.Any = js.native
+    var image: js.Any
     
-    var is_dropcap: Boolean = js.native
+    var is_dropcap: Boolean
     
-    var is_subscript: Boolean = js.native
+    var is_subscript: Boolean
     
-    var is_superscript: Boolean = js.native
+    var is_superscript: Boolean
     
-    var line: Line = js.native
+    var line: Line
     
-    var page: Page = js.native
+    var page: Page
     
-    var paragraph: Paragraph = js.native
+    var paragraph: Paragraph
     
-    var text: String = js.native
+    var text: String
     
-    var word: Word = js.native
+    var word: Word
   }
   object Symbol {
     
@@ -618,18 +608,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait TesseractJob extends StObject {
     
-    def `catch`(callback: js.Function1[/* error */ Error, Unit]): TesseractJob = js.native
+    def `catch`(callback: js.Function1[/* error */ Error, Unit]): TesseractJob
     
-    var error: js.UndefOr[js.Function1[/* error */ Error, this.type]] = js.native
+    var error: js.UndefOr[js.Function1[/* error */ Error, this.type]] = js.undefined
     
-    def `finally`(callback: js.Function1[/* resultOrError */ Error | Page, Unit]): TesseractJob = js.native
+    def `finally`(callback: js.Function1[/* resultOrError */ Error | Page, Unit]): TesseractJob
     
-    def progress(callback: js.Function1[/* progress */ Progress, Unit]): TesseractJob = js.native
+    def progress(callback: js.Function1[/* progress */ Progress, Unit]): TesseractJob
     
-    def `then`(callback: js.Function1[/* result */ Page, Unit]): TesseractJob = js.native
+    def `then`(callback: js.Function1[/* result */ Page, Unit]): TesseractJob
   }
   object TesseractJob {
     
@@ -681,54 +670,53 @@ object mod extends Shortcut {
     def recognize(image: ImageLike, options: js.Any): TesseractJob = js.native
   }
   
-  @js.native
   trait Word extends StObject {
     
-    var baseline: Baseline = js.native
+    var baseline: Baseline
     
-    var bbox: Bbox = js.native
+    var bbox: Bbox
     
-    var block: Block = js.native
+    var block: Block
     
-    var choices: js.Array[Choice] = js.native
+    var choices: js.Array[Choice]
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var direction: String = js.native
+    var direction: String
     
-    var font_id: Double = js.native
+    var font_id: Double
     
-    var font_name: String = js.native
+    var font_name: String
     
-    var font_size: Double = js.native
+    var font_size: Double
     
-    var in_dictionary: Boolean = js.native
+    var in_dictionary: Boolean
     
-    var is_bold: Boolean = js.native
+    var is_bold: Boolean
     
-    var is_italic: Boolean = js.native
+    var is_italic: Boolean
     
-    var is_monospace: Boolean = js.native
+    var is_monospace: Boolean
     
-    var is_numeric: Boolean = js.native
+    var is_numeric: Boolean
     
-    var is_serif: Boolean = js.native
+    var is_serif: Boolean
     
-    var is_smallcaps: Boolean = js.native
+    var is_smallcaps: Boolean
     
-    var is_underlined: Boolean = js.native
+    var is_underlined: Boolean
     
-    var language: String = js.native
+    var language: String
     
-    var line: Line = js.native
+    var line: Line
     
-    var page: Page = js.native
+    var page: Page
     
-    var paragraph: Paragraph = js.native
+    var paragraph: Paragraph
     
-    var symbols: js.Array[Symbol] = js.native
+    var symbols: js.Array[Symbol]
     
-    var text: String = js.native
+    var text: String
   }
   object Word {
     

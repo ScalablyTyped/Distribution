@@ -15,80 +15,78 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/Coachmark/Coachmark.types.ICoachmarkProps> */
-@js.native
 trait PartialICoachmarkProps extends StObject {
   
-  var ariaAlertText: js.UndefOr[String] = js.native
+  var ariaAlertText: js.UndefOr[String] = js.undefined
   
-  var ariaDescribedBy: js.UndefOr[String] = js.native
+  var ariaDescribedBy: js.UndefOr[String] = js.undefined
   
-  var ariaDescribedByText: js.UndefOr[String] = js.native
+  var ariaDescribedByText: js.UndefOr[String] = js.undefined
   
-  var ariaLabelledBy: js.UndefOr[String] = js.native
+  var ariaLabelledBy: js.UndefOr[String] = js.undefined
   
-  var ariaLabelledByText: js.UndefOr[String] = js.native
+  var ariaLabelledByText: js.UndefOr[String] = js.undefined
   
-  var beaconColorOne: js.UndefOr[String] = js.native
+  var beaconColorOne: js.UndefOr[String] = js.undefined
   
-  var beaconColorTwo: js.UndefOr[String] = js.native
+  var beaconColorTwo: js.UndefOr[String] = js.undefined
   
-  var beakHeight: js.UndefOr[Double] = js.native
+  var beakHeight: js.UndefOr[Double] = js.undefined
   
-  var beakWidth: js.UndefOr[Double] = js.native
+  var beakWidth: js.UndefOr[Double] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var componentRef: js.UndefOr[IRefObject[ICoachmark]] = js.native
+  var componentRef: js.UndefOr[IRefObject[ICoachmark]] = js.undefined
   
-  var delayBeforeCoachmarkAnimation: js.UndefOr[Double] = js.native
+  var delayBeforeCoachmarkAnimation: js.UndefOr[Double] = js.undefined
   
-  var delayBeforeMouseOpen: js.UndefOr[Double] = js.native
+  var delayBeforeMouseOpen: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var isCollapsed: js.UndefOr[Boolean] = js.native
+  var isCollapsed: js.UndefOr[Boolean] = js.undefined
   
-  var isPositionForced: js.UndefOr[Boolean] = js.native
+  var isPositionForced: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[typings.react.mod.Key | Null] = js.native
+  var key: js.UndefOr[typings.react.mod.Key | Null] = js.undefined
   
-  var mouseProximityOffset: js.UndefOr[Double] = js.native
+  var mouseProximityOffset: js.UndefOr[Double] = js.undefined
   
-  var onAnimationOpenEnd: js.UndefOr[js.Function0[scala.Unit]] = js.native
+  var onAnimationOpenEnd: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   
-  var onAnimationOpenStart: js.UndefOr[js.Function0[scala.Unit]] = js.native
+  var onAnimationOpenStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   
-  var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], scala.Unit]] = js.native
+  var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
   
-  var onMouseMove: js.UndefOr[js.Function1[/* e */ MouseEvent, scala.Unit]] = js.native
+  var onMouseMove: js.UndefOr[js.Function1[/* e */ MouseEvent, scala.Unit]] = js.undefined
   
-  var persistentBeak: js.UndefOr[Boolean] = js.native
+  var persistentBeak: js.UndefOr[Boolean] = js.undefined
   
-  var positioningContainerProps: js.UndefOr[IPositioningContainerProps] = js.native
+  var positioningContainerProps: js.UndefOr[IPositioningContainerProps] = js.undefined
   
-  var preventDismissOnLostFocus: js.UndefOr[Boolean] = js.native
+  var preventDismissOnLostFocus: js.UndefOr[Boolean] = js.undefined
   
-  var preventFocusOnMount: js.UndefOr[Boolean] = js.native
+  var preventFocusOnMount: js.UndefOr[Boolean] = js.undefined
   
-  var ref: js.UndefOr[LegacyRef[CoachmarkBase]] = js.native
+  var ref: js.UndefOr[LegacyRef[CoachmarkBase]] = js.undefined
   
-  var styles: js.UndefOr[IStyleFunctionOrObject[ICoachmarkStyleProps, ICoachmarkStyles]] = js.native
+  var styles: js.UndefOr[IStyleFunctionOrObject[ICoachmarkStyleProps, ICoachmarkStyles]] = js.undefined
   
-  var target: js.UndefOr[HTMLElement | String | Null] = js.native
+  var target: js.UndefOr[HTMLElement | String | Null] = js.undefined
   
-  var teachingBubbleRef: js.UndefOr[ITeachingBubble] = js.native
+  var teachingBubbleRef: js.UndefOr[ITeachingBubble] = js.undefined
   
-  var theme: js.UndefOr[ITheme] = js.native
+  var theme: js.UndefOr[ITheme] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PartialICoachmarkProps {
   

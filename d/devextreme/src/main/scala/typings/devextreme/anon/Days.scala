@@ -3,29 +3,29 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.viz._VizTimeInterval
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Days extends _VizTimeInterval {
+trait Days
+  extends StObject
+     with _VizTimeInterval {
   
-  var days: js.UndefOr[Double] = js.native
+  var days: js.UndefOr[Double] = js.undefined
   
-  var hours: js.UndefOr[Double] = js.native
+  var hours: js.UndefOr[Double] = js.undefined
   
-  var milliseconds: js.UndefOr[Double] = js.native
+  var milliseconds: js.UndefOr[Double] = js.undefined
   
-  var minutes: js.UndefOr[Double] = js.native
+  var minutes: js.UndefOr[Double] = js.undefined
   
-  var months: js.UndefOr[Double] = js.native
+  var months: js.UndefOr[Double] = js.undefined
   
-  var quarters: js.UndefOr[Double] = js.native
+  var quarters: js.UndefOr[Double] = js.undefined
   
-  var seconds: js.UndefOr[Double] = js.native
+  var seconds: js.UndefOr[Double] = js.undefined
   
-  var weeks: js.UndefOr[Double] = js.native
+  var weeks: js.UndefOr[Double] = js.undefined
   
-  var years: js.UndefOr[Double] = js.native
+  var years: js.UndefOr[Double] = js.undefined
 }
 object Days {
   

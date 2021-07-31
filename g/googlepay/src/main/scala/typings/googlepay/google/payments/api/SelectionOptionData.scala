@@ -2,13 +2,11 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data for a [[SelectionOption|`SelectionOption`]].
   */
-@js.native
 trait SelectionOptionData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SelectionOptionData extends StObject {
     * Must match with [[SelectionOption.id|`SelectionOption.id`]]
     * field.
     */
-  var id: String = js.native
+  var id: String
 }
 object SelectionOptionData {
   

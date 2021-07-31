@@ -13,11 +13,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Top
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `table.toJSON()`. */
-@js.native
 trait TableData extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var alignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.native
+  var alignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var font: js.UndefOr[FontData] = js.native
+  var font: js.UndefOr[FontData] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var headerRowCount: js.UndefOr[Double] = js.native
+  var headerRowCount: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.native
+  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var isUniform: js.UndefOr[Boolean] = js.native
+  var isUniform: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var nestingLevel: js.UndefOr[Double] = js.native
+  var nestingLevel: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var rows: js.UndefOr[js.Array[TableRowData]] = js.native
+  var rows: js.UndefOr[js.Array[TableRowData]] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var shadingColor: js.UndefOr[String] = js.native
+  var shadingColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -106,7 +104,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var styleBandedColumns: js.UndefOr[Boolean] = js.native
+  var styleBandedColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -114,7 +112,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var styleBandedRows: js.UndefOr[Boolean] = js.native
+  var styleBandedRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -124,7 +122,7 @@ trait TableData extends StObject {
     */
   var styleBuiltIn: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -132,7 +130,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var styleFirstColumn: js.UndefOr[Boolean] = js.native
+  var styleFirstColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -140,7 +138,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var styleLastColumn: js.UndefOr[Boolean] = js.native
+  var styleLastColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -148,7 +146,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var styleTotalRow: js.UndefOr[Boolean] = js.native
+  var styleTotalRow: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -156,7 +154,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var tables: js.UndefOr[js.Array[TableData]] = js.native
+  var tables: js.UndefOr[js.Array[TableData]] = js.undefined
   
   /**
     *
@@ -164,7 +162,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var values: js.UndefOr[js.Array[js.Array[String]]] = js.native
+  var values: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
   /**
     *
@@ -172,7 +170,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var verticalAlignment: js.UndefOr[VerticalAlignment | Mixed | Top | Center | Bottom] = js.native
+  var verticalAlignment: js.UndefOr[VerticalAlignment | Mixed | Top | Center | Bottom] = js.undefined
   
   /**
     *
@@ -180,7 +178,7 @@ trait TableData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object TableData {
   

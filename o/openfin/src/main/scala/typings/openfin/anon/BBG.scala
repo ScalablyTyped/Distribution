@@ -3,27 +3,27 @@ package typings.openfin.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BBG extends /* key */ StringDictionary[String] {
+trait BBG
+  extends StObject
+     with /* key */ StringDictionary[String] {
   
-  var BBG: js.UndefOr[String] = js.native
+  var BBG: js.UndefOr[String] = js.undefined
   
-  var CUSIP: js.UndefOr[String] = js.native
+  var CUSIP: js.UndefOr[String] = js.undefined
   
-  var FIGI: js.UndefOr[String] = js.native
+  var FIGI: js.UndefOr[String] = js.undefined
   
-  var ISIN: js.UndefOr[String] = js.native
+  var ISIN: js.UndefOr[String] = js.undefined
   
-  var PERMID: js.UndefOr[String] = js.native
+  var PERMID: js.UndefOr[String] = js.undefined
   
-  var RIC: js.UndefOr[String] = js.native
+  var RIC: js.UndefOr[String] = js.undefined
   
-  var SEDOL: js.UndefOr[String] = js.native
+  var SEDOL: js.UndefOr[String] = js.undefined
   
-  var ticker: js.UndefOr[String] = js.native
+  var ticker: js.UndefOr[String] = js.undefined
 }
 object BBG {
   

@@ -2,27 +2,25 @@ package typings.konva.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawBorder extends StObject {
   
-  var drawBorder: js.UndefOr[Boolean] = js.native
+  var drawBorder: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var imageSmoothingEnabled: js.UndefOr[Boolean] = js.native
+  var imageSmoothingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var pixelRatio: js.UndefOr[Double] = js.native
+  var pixelRatio: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object DrawBorder {
   

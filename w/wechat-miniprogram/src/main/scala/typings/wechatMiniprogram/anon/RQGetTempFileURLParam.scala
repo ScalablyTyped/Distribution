@@ -3,16 +3,14 @@ package typings.wechatMiniprogram.anon
 import typings.wechatMiniprogram.ICloudConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined wechat-miniprogram.RQ<wechat-miniprogram.ICloud.GetTempFileURLParam> */
-@js.native
 trait RQGetTempFileURLParam extends StObject {
   
-  var config: js.UndefOr[ICloudConfig] = js.native
+  var config: js.UndefOr[ICloudConfig] = js.undefined
   
-  var fileList: js.Array[String] = js.native
+  var fileList: js.Array[String]
 }
 object RQGetTempFileURLParam {
   

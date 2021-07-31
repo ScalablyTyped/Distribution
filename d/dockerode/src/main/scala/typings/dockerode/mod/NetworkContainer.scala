@@ -2,21 +2,19 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkContainer extends StObject {
   
-  var EndpointID: String = js.native
+  var EndpointID: String
   
-  var IPv4Address: String = js.native
+  var IPv4Address: String
   
-  var IPv6Address: String = js.native
+  var IPv6Address: String
   
-  var MacAddress: String = js.native
+  var MacAddress: String
   
-  var Name: String = js.native
+  var Name: String
 }
 object NetworkContainer {
   

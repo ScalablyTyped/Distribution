@@ -3,23 +3,22 @@ package typings.awsSdkBuildTypes.apiModelMod
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.character
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Character
-  extends ShapeDef
+  extends StObject
+     with ShapeDef
      with Shape {
   
   @JSName("type")
-  val type_Character: character = js.native
+  val type_Character: character
 }
 object Character {
   
   @scala.inline
-  def apply(`type`: character): Character = {
+  def apply(): Character = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("character")
     __obj.asInstanceOf[Character]
   }
   

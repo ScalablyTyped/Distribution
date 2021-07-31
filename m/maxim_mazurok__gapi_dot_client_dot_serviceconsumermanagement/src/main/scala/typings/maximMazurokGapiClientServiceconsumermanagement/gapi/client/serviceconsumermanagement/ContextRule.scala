@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextRule extends StObject {
   
   /** A list of full type names or extension IDs of extensions allowed in grpc side channel from client to backend. */
-  var allowedRequestExtensions: js.UndefOr[js.Array[String]] = js.native
+  var allowedRequestExtensions: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of full type names or extension IDs of extensions allowed in grpc side channel from backend to client. */
-  var allowedResponseExtensions: js.UndefOr[js.Array[String]] = js.native
+  var allowedResponseExtensions: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of full type names of provided contexts. */
-  var provided: js.UndefOr[js.Array[String]] = js.native
+  var provided: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of full type names of requested contexts. */
-  var requested: js.UndefOr[js.Array[String]] = js.native
+  var requested: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Selects the methods to which this rule applies. Refer to selector for syntax details. */
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
 }
 object ContextRule {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduledWindowExecution extends StObject {
   
   /**
     * The time, in ISO-8601 Extended format, that the maintenance window is scheduled to be run.
     */
-  var ExecutionTime: js.UndefOr[MaintenanceWindowStringDateTime] = js.native
+  var ExecutionTime: js.UndefOr[MaintenanceWindowStringDateTime] = js.undefined
   
   /**
     * The name of the maintenance window to be run.
     */
-  var Name: js.UndefOr[MaintenanceWindowName] = js.native
+  var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   
   /**
     * The ID of the maintenance window to be run.
     */
-  var WindowId: js.UndefOr[MaintenanceWindowId] = js.native
+  var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
 }
 object ScheduledWindowExecution {
   

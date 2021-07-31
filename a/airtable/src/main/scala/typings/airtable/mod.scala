@@ -12,7 +12,6 @@ import typings.airtable.mod.global.Airtable.AirtableOptions
 import typings.airtable.mod.global.Airtable.Base_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,19 +21,19 @@ object mod {
   class ^ () extends Airtable {
     def this(options: AirtableOptions) = this()
   }
+  @JSImport("airtable", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("airtable", "base")
-  @js.native
-  def base(appId: String): Base_ = js.native
+  @scala.inline
+  def base(appId: String): Base_ = ^.asInstanceOf[js.Dynamic].applyDynamic("base")(appId.asInstanceOf[js.Any]).asInstanceOf[Base_]
   
   /* static member */
-  @JSImport("airtable", "configure")
-  @js.native
-  def configure(): Airtable = js.native
-  @JSImport("airtable", "configure")
-  @js.native
-  def configure(options: AirtableOptions): Airtable = js.native
+  @scala.inline
+  def configure(): Airtable = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[Airtable]
+  @scala.inline
+  def configure(options: AirtableOptions): Airtable = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Airtable]
   
   object global {
     
@@ -47,31 +46,31 @@ object mod {
     }
     object Airtable {
       
-      /* static member */
-      @JSGlobal("Airtable.base")
+      @JSGlobal("Airtable")
       @js.native
-      def base(appId: String): Base_ = js.native
+      val ^ : js.Any = js.native
       
       /* static member */
-      @JSGlobal("Airtable.configure")
-      @js.native
-      def configure(): Airtable = js.native
-      @JSGlobal("Airtable.configure")
-      @js.native
-      def configure(options: AirtableOptions): Airtable = js.native
+      @scala.inline
+      def base(appId: String): Base_ = ^.asInstanceOf[js.Dynamic].applyDynamic("base")(appId.asInstanceOf[js.Any]).asInstanceOf[Base_]
       
-      @js.native
+      /* static member */
+      @scala.inline
+      def configure(): Airtable = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[Airtable]
+      @scala.inline
+      def configure(options: AirtableOptions): Airtable = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Airtable]
+      
       trait AirtableOptions extends StObject {
         
-        var apiKey: js.UndefOr[String] = js.native
+        var apiKey: js.UndefOr[String] = js.undefined
         
-        var apiVersion: js.UndefOr[String] = js.native
+        var apiVersion: js.UndefOr[String] = js.undefined
         
-        var endpointUrl: js.UndefOr[String] = js.native
+        var endpointUrl: js.UndefOr[String] = js.undefined
         
-        var noRetryIfRateLimited: js.UndefOr[Boolean] = js.native
+        var noRetryIfRateLimited: js.UndefOr[Boolean] = js.undefined
         
-        var requestTimeout: js.UndefOr[Double] = js.native
+        var requestTimeout: js.UndefOr[Double] = js.undefined
       }
       object AirtableOptions {
         
@@ -116,20 +115,19 @@ object mod {
         }
       }
       
-      @js.native
       trait Attachment extends StObject {
         
-        var filename: String = js.native
+        var filename: String
         
-        var id: String = js.native
+        var id: String
         
-        var size: Double = js.native
+        var size: Double
         
-        var thumbnails: js.UndefOr[Full] = js.native
+        var thumbnails: js.UndefOr[Full] = js.undefined
         
-        var `type`: String = js.native
+        var `type`: String
         
-        var url: String = js.native
+        var url: String
       }
       object Attachment {
         
@@ -168,14 +166,13 @@ object mod {
       
       type Base_ = js.Function1[/* tableName */ String, Table[js.Object]]
       
-      @js.native
       trait Collaborator extends StObject {
         
-        var email: String = js.native
+        var email: String
         
-        var id: String = js.native
+        var id: String
         
-        var name: String = js.native
+        var name: String
       }
       object Collaborator {
         
@@ -205,14 +202,13 @@ object mod {
             ]
           ]
       
-      @js.native
       trait Query[TFields /* <: js.Object */] extends StObject {
         
-        def all(): js.Promise[Records[TFields]] = js.native
+        def all(): js.Promise[Records[TFields]]
         
-        def eachPage(pageCallback: js.Function2[/* records */ Records[TFields], /* next */ js.Function0[Unit], Unit]): js.Promise[Unit] = js.native
+        def eachPage(pageCallback: js.Function2[/* records */ Records[TFields], /* next */ js.Function0[Unit], Unit]): js.Promise[Unit]
         
-        def firstPage(): js.Promise[Records[TFields]] = js.native
+        def firstPage(): js.Promise[Records[TFields]]
       }
       object Query {
         
@@ -227,7 +223,7 @@ object mod {
         }
         
         @scala.inline
-        implicit class QueryMutableBuilder[Self <: Query[_], TFields /* <: js.Object */] (val x: Self with Query[TFields]) extends AnyVal {
+        implicit class QueryMutableBuilder[Self <: Query[?], TFields /* <: js.Object */] (val x: Self & Query[TFields]) extends AnyVal {
           
           @scala.inline
           def setAll(value: () => js.Promise[Records[TFields]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
@@ -242,12 +238,11 @@ object mod {
         }
       }
       
-      @js.native
       trait Record[TFields] extends StObject {
         
-        var fields: TFields = js.native
+        var fields: TFields
         
-        var id: String = js.native
+        var id: String
       }
       object Record {
         
@@ -258,7 +253,7 @@ object mod {
         }
         
         @scala.inline
-        implicit class RecordMutableBuilder[Self <: Record[_], TFields] (val x: Self with Record[TFields]) extends AnyVal {
+        implicit class RecordMutableBuilder[Self <: Record[?], TFields] (val x: Self & Record[TFields]) extends AnyVal {
           
           @scala.inline
           def setFields(value: TFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
@@ -270,26 +265,25 @@ object mod {
       
       type Records[TFields] = js.Array[Record[TFields]]
       
-      @js.native
       trait SelectOptions extends StObject {
         
-        var cellFormat: js.UndefOr[json | string] = js.native
+        var cellFormat: js.UndefOr[json | string] = js.undefined
         
-        var fields: js.UndefOr[js.Array[String]] = js.native
+        var fields: js.UndefOr[js.Array[String]] = js.undefined
         
-        var filterByFormula: js.UndefOr[String] = js.native
+        var filterByFormula: js.UndefOr[String] = js.undefined
         
-        var maxRecords: js.UndefOr[Double] = js.native
+        var maxRecords: js.UndefOr[Double] = js.undefined
         
-        var pageSize: js.UndefOr[Double] = js.native
+        var pageSize: js.UndefOr[Double] = js.undefined
         
-        var sort: js.UndefOr[js.Array[SortParameter]] = js.native
+        var sort: js.UndefOr[js.Array[SortParameter]] = js.undefined
         
-        var timeZone: js.UndefOr[String] = js.native
+        var timeZone: js.UndefOr[String] = js.undefined
         
-        var userLocale: js.UndefOr[String] = js.native
+        var userLocale: js.UndefOr[String] = js.undefined
         
-        var view: js.UndefOr[String] = js.native
+        var view: js.UndefOr[String] = js.undefined
       }
       object SelectOptions {
         
@@ -364,12 +358,11 @@ object mod {
         }
       }
       
-      @js.native
       trait SortParameter extends StObject {
         
-        var direction: js.UndefOr[asc | desc] = js.native
+        var direction: js.UndefOr[asc | desc] = js.undefined
         
-        var field: String = js.native
+        var field: String
       }
       object SortParameter {
         
@@ -401,26 +394,25 @@ object mod {
         def create(records: js.Array[TFields]): js.Promise[Records[TFields]] = js.native
         def create(records: js.Array[TFields], opts: Typecast): js.Promise[Records[TFields]] = js.native
         
-        def destroy(args: js.Any*): js.Promise[_] = js.native
+        def destroy(args: js.Any*): js.Promise[js.Any] = js.native
         
         def find(id: String): js.Promise[Record[TFields]] = js.native
         
-        def replace(args: js.Any*): js.Promise[_] = js.native
+        def replace(args: js.Any*): js.Promise[js.Any] = js.native
         
         def select(): Query[TFields] = js.native
         def select(opt: SelectOptions): Query[TFields] = js.native
         
-        def update(args: js.Any*): js.Promise[_] = js.native
+        def update(args: js.Any*): js.Promise[js.Any] = js.native
       }
       
-      @js.native
       trait Thumbnail extends StObject {
         
-        var height: Double = js.native
+        var height: Double
         
-        var url: String = js.native
+        var url: String
         
-        var width: Double = js.native
+        var width: Double
       }
       object Thumbnail {
         

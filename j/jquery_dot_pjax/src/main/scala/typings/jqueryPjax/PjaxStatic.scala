@@ -4,7 +4,6 @@ import typings.jquery.JQuery.Event
 import typings.jquery.JQueryXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,9 +29,9 @@ trait PjaxStatic extends StObject {
     * - replace: a boolean indicates whether to use replaceState instead of pushState. Default is false.
     */
   def click(event: Event): Unit = js.native
-  def click(event: Event, containerSelector: js.UndefOr[scala.Nothing], options: PjaxSettings): Unit = js.native
   def click(event: Event, containerSelector: String): Unit = js.native
   def click(event: Event, containerSelector: String, options: PjaxSettings): Unit = js.native
+  def click(event: Event, containerSelector: Unit, options: PjaxSettings): Unit = js.native
   def click(event: Event, options: PjaxSettings): Unit = js.native
   
   /**
@@ -66,8 +65,8 @@ trait PjaxStatic extends StObject {
     * - replace: a boolean indicates whether to use replaceState instead of pushState. Default is false.
     */
   def submit(event: Event): Unit = js.native
-  def submit(event: Event, containerSelector: js.UndefOr[scala.Nothing], options: PjaxSettings): Unit = js.native
   def submit(event: Event, containerSelector: String): Unit = js.native
   def submit(event: Event, containerSelector: String, options: PjaxSettings): Unit = js.native
+  def submit(event: Event, containerSelector: Unit, options: PjaxSettings): Unit = js.native
   def submit(event: Event, options: PjaxSettings): Unit = js.native
 }

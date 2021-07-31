@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Graphics.Printing.OptionDetails
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Called when a print task option has changed. */
-@js.native
 trait PrintTaskOptionChangedEventArgs extends StObject {
   
   /** Gets the ID of the print task option that changed. */
-  var optionId: js.Any = js.native
+  var optionId: js.Any
 }
 object PrintTaskOptionChangedEventArgs {
   

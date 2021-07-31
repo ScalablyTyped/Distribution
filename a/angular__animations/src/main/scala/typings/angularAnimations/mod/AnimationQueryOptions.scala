@@ -2,18 +2,18 @@ package typings.angularAnimations.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimationQueryOptions extends AnimationOptions {
+trait AnimationQueryOptions
+  extends StObject
+     with AnimationOptions {
   
   /**
     * A maximum total number of results to return from the query.
     * If negative, results are limited from the end of the query list towards the beginning.
     * By default, results are not limited.
     */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /**
     * True if this query is optional, false if it is required. Default is false.
@@ -21,7 +21,7 @@ trait AnimationQueryOptions extends AnimationOptions {
     * the query is executed. An optional query does not.
     *
     */
-  var optional: js.UndefOr[Boolean] = js.native
+  var optional: js.UndefOr[Boolean] = js.undefined
 }
 object AnimationQueryOptions {
   

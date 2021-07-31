@@ -2,13 +2,11 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Contactemail extends StObject {
   
-  var contact_email: String = js.native
+  var contact_email: String
 }
 object Contactemail {
   

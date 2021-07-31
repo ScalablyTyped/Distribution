@@ -3,7 +3,6 @@ package typings.winrt.Windows.System
 import typings.winrt.Windows.Foundation.IAsyncAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Threading {
@@ -15,10 +14,14 @@ object Threading {
   object WorkItemOptions extends StObject {
     
     @js.native
-    sealed trait none extends WorkItemOptions
+    sealed trait none
+      extends StObject
+         with WorkItemOptions
     
     @js.native
-    sealed trait timeSliced extends WorkItemOptions
+    sealed trait timeSliced
+      extends StObject
+         with WorkItemOptions
   }
   
   @js.native
@@ -28,21 +31,26 @@ object Threading {
   object WorkItemPriority extends StObject {
     
     @js.native
-    sealed trait high extends WorkItemPriority
+    sealed trait high
+      extends StObject
+         with WorkItemPriority
     
     @js.native
-    sealed trait low extends WorkItemPriority
+    sealed trait low
+      extends StObject
+         with WorkItemPriority
     
     @js.native
-    sealed trait normal extends WorkItemPriority
+    sealed trait normal
+      extends StObject
+         with WorkItemPriority
   }
   
   object Core {
     
-    @js.native
     trait IPreallocatedWorkItem extends StObject {
       
-      def runAsync(): IAsyncAction = js.native
+      def runAsync(): IAsyncAction
     }
     object IPreallocatedWorkItem {
       
@@ -60,14 +68,13 @@ object Threading {
       }
     }
     
-    @js.native
     trait IPreallocatedWorkItemFactory extends StObject {
       
-      def createWorkItem(handler: WorkItemHandler): PreallocatedWorkItem = js.native
+      def createWorkItem(handler: WorkItemHandler): PreallocatedWorkItem
       
-      def createWorkItemWithPriority(handler: WorkItemHandler, priority: WorkItemPriority): PreallocatedWorkItem = js.native
+      def createWorkItemWithPriority(handler: WorkItemHandler, priority: WorkItemPriority): PreallocatedWorkItem
       
-      def createWorkItemWithPriorityAndOptions(handler: WorkItemHandler, priority: WorkItemPriority, options: WorkItemOptions): PreallocatedWorkItem = js.native
+      def createWorkItemWithPriorityAndOptions(handler: WorkItemHandler, priority: WorkItemPriority, options: WorkItemOptions): PreallocatedWorkItem
     }
     object IPreallocatedWorkItemFactory {
       
@@ -95,12 +102,11 @@ object Threading {
       }
     }
     
-    @js.native
     trait ISignalNotifier extends StObject {
       
-      def enable(): Unit = js.native
+      def enable(): Unit
       
-      def terminate(): Unit = js.native
+      def terminate(): Unit
     }
     object ISignalNotifier {
       
@@ -131,8 +137,9 @@ object Threading {
       def attachToSemaphore(name: String, handler: SignalHandler, timeout: Double): SignalNotifier = js.native
     }
     
-    @js.native
-    trait PreallocatedWorkItem extends IPreallocatedWorkItem
+    trait PreallocatedWorkItem
+      extends StObject
+         with IPreallocatedWorkItem
     object PreallocatedWorkItem {
       
       @scala.inline
@@ -144,8 +151,9 @@ object Threading {
     
     type SignalHandler = js.Function2[/* signalNotifier */ SignalNotifier, /* timedOut */ Boolean, Unit]
     
-    @js.native
-    trait SignalNotifier extends ISignalNotifier
+    trait SignalNotifier
+      extends StObject
+         with ISignalNotifier
     object SignalNotifier {
       
       @scala.inline
@@ -164,14 +172,13 @@ object Threading {
     def runAsync(handler: WorkItemHandler, priority: WorkItemPriority, options: WorkItemOptions): IAsyncAction = js.native
   }
   
-  @js.native
   trait IThreadPoolTimer extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
-    var delay: Double = js.native
+    var delay: Double
     
-    var period: Double = js.native
+    var period: Double
   }
   object IThreadPoolTimer {
     
@@ -205,11 +212,11 @@ object Threading {
     def createTimer(handler: TimerElapsedHandler, delay: Double, destroyed: TimerDestroyedHandler): ThreadPoolTimer = js.native
   }
   
-  @js.native
   trait ThreadPool extends StObject
   
-  @js.native
-  trait ThreadPoolTimer extends IThreadPoolTimer
+  trait ThreadPoolTimer
+    extends StObject
+       with IThreadPoolTimer
   object ThreadPoolTimer {
     
     @scala.inline

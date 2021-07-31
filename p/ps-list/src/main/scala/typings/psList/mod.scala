@@ -2,7 +2,6 @@ package typings.psList
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,14 +18,15 @@ object mod {
   })();
   ```
   */
-  @JSImport("ps-list", JSImport.Namespace)
-  @js.native
-  def apply(): js.Promise[js.Array[ProcessDescriptor]] = js.native
-  @JSImport("ps-list", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[js.Array[ProcessDescriptor]] = js.native
+  @scala.inline
+  def apply(): js.Promise[js.Array[ProcessDescriptor]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.Array[ProcessDescriptor]]]
+  @scala.inline
+  def apply(options: Options): js.Promise[js.Array[ProcessDescriptor]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ProcessDescriptor]]]
   
+  @JSImport("ps-list", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -34,7 +34,7 @@ object mod {
     		On Windows this has no effect and will always be the users' own processes.
     		@default true
     		*/
-    val all: js.UndefOr[Boolean] = js.native
+    val all: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -55,34 +55,33 @@ object mod {
     }
   }
   
-  @js.native
   trait ProcessDescriptor extends StObject {
     
     /**
     		Not supported on Windows.
     		*/
-    val cmd: js.UndefOr[String] = js.native
+    val cmd: js.UndefOr[String] = js.undefined
     
     /**
     		Not supported on Windows.
     		*/
-    val cpu: js.UndefOr[Double] = js.native
+    val cpu: js.UndefOr[Double] = js.undefined
     
     /**
     		Not supported on Windows.
     		*/
-    val memory: js.UndefOr[Double] = js.native
+    val memory: js.UndefOr[Double] = js.undefined
     
-    val name: String = js.native
+    val name: String
     
-    val pid: Double = js.native
+    val pid: Double
     
-    val ppid: Double = js.native
+    val ppid: Double
     
     /**
     		Not supported on Windows.
     		*/
-    val uid: js.UndefOr[Double] = js.native
+    val uid: js.UndefOr[Double] = js.undefined
   }
   object ProcessDescriptor {
     

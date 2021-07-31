@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object system {
@@ -60,11 +59,12 @@ object system {
     * May be thrown in cases of errors executing a command using the {@link SystemShellExecute} service. {@link com.sun.star.uno.Exception.Message} may
     * contain a system error message, but it is not mandatory. The member PosixError specifies a POSIX conforming error code or -1 for unknown errors.
     */
-  @js.native
-  trait SystemShellExecuteException extends Exception {
+  trait SystemShellExecuteException
+    extends StObject
+       with Exception {
     
     /** A POSIX conforming error code or -1 for unknown errors. */
-    var PosixError: Double = js.native
+    var PosixError: Double
   }
   object SystemShellExecuteException {
     
@@ -104,14 +104,15 @@ object system {
   }
   
   /** Specifies an interface for creating and sending email messages. */
-  @js.native
-  trait XSimpleMailClient extends XInterface {
+  trait XSimpleMailClient
+    extends StObject
+       with XInterface {
     
     /**
       * Create a simple mail message object that implements the interface {@link XSimpleMailMessage} .
       * @returns An object that implements the {@link XSimpleMailMessage} interface.
       */
-    def createSimpleMailMessage(): XSimpleMailMessage = js.native
+    def createSimpleMailMessage(): XSimpleMailMessage
     
     /**
       * Sends a given simple mail message object that implements the interface {@link XSimpleMailMessage} .
@@ -122,7 +123,7 @@ object system {
       * @throws com::sun::star::lang::IllegalArgumentException If invalid or excluding flags have been specified.The flag NO_USER_INTERFACE is specified and no r
       * @throws com::sun::star::uno::Exception if an error occurs while sending the mail. The Message member of the exception may contain an error description.
       */
-    def sendSimpleMailMessage(xSimpleMailMessage: XSimpleMailMessage, aFlag: Double): Unit = js.native
+    def sendSimpleMailMessage(xSimpleMailMessage: XSimpleMailMessage, aFlag: Double): Unit
   }
   object XSimpleMailClient {
     
@@ -153,15 +154,16 @@ object system {
     * Implementations of this interface do provide access to a simple mail client if there is one available
     * @see com.sun.star.system.XSimpleMailClient
     */
-  @js.native
-  trait XSimpleMailClientSupplier extends XInterface {
+  trait XSimpleMailClientSupplier
+    extends StObject
+       with XInterface {
     
     /**
       * Allows a client to query for an object that implements {@link XSimpleMailClient} .
       * @returns An interface to a simple mail client if there is one available on the system or an empty reference else.
       * @see com.sun.star.system.XSimpleMailClient
       */
-    def querySimpleMailClient(): XSimpleMailClient = js.native
+    def querySimpleMailClient(): XSimpleMailClient
   }
   object XSimpleMailClientSupplier {
     
@@ -185,117 +187,118 @@ object system {
   }
   
   /** This interface lets a client set or get the information of a simple mail message. */
-  @js.native
-  trait XSimpleMailMessage extends XInterface {
+  trait XSimpleMailMessage
+    extends StObject
+       with XInterface {
     
     /**
       * To get the attachment of a simple mail message.
       * @returns A sequence of file URLs specifying the files that should be attached to the mail or an empty sequence if no attachments have been specified. The
       */
-    var Attachement: SafeArray[String] = js.native
+    var Attachement: SafeArray[String]
     
     /**
       * To get the BCC recipients of a simple mail message.
       * @returns A sequence with the email addresses of one or more BCC recipients. If no BCC recipients have been specified an empty sequence will be returned.
       */
-    var BccRecipient: SafeArray[String] = js.native
+    var BccRecipient: SafeArray[String]
     
     /**
       * To get the cc recipients of a simple mail message.
       * @returns A sequence with the email addresses of one or more cc recipients. If no cc recipients have been specified an empty sequence will be returned.
       */
-    var CcRecipient: SafeArray[String] = js.native
+    var CcRecipient: SafeArray[String]
     
     /**
       * To get the email address of the originator of a simple mail message.
       * @returns The email address of the originator of the mail. If no originator has been specified an empty string will be returned.
       */
-    var Originator: String = js.native
+    var Originator: String
     
     /**
       * To get the recipient of the simple mail message.
       * @returns The specified email address of a recipient if any has been specified or an empty string.
       */
-    var Recipient: String = js.native
+    var Recipient: String
     
     /**
       * To get the subject of a simple mail message.
       * @returns The subject of the simple mail message. If no subject has been specified an empty string will be returned.
       */
-    var Subject: String = js.native
+    var Subject: String
     
     /**
       * To get the attachment of a simple mail message.
       * @returns A sequence of file URLs specifying the files that should be attached to the mail or an empty sequence if no attachments have been specified. The
       */
-    def getAttachement(): SafeArray[String] = js.native
+    def getAttachement(): SafeArray[String]
     
     /**
       * To get the BCC recipients of a simple mail message.
       * @returns A sequence with the email addresses of one or more BCC recipients. If no BCC recipients have been specified an empty sequence will be returned.
       */
-    def getBccRecipient(): SafeArray[String] = js.native
+    def getBccRecipient(): SafeArray[String]
     
     /**
       * To get the cc recipients of a simple mail message.
       * @returns A sequence with the email addresses of one or more cc recipients. If no cc recipients have been specified an empty sequence will be returned.
       */
-    def getCcRecipient(): SafeArray[String] = js.native
+    def getCcRecipient(): SafeArray[String]
     
     /**
       * To get the email address of the originator of a simple mail message.
       * @returns The email address of the originator of the mail. If no originator has been specified an empty string will be returned.
       */
-    def getOriginator(): String = js.native
+    def getOriginator(): String
     
     /**
       * To get the recipient of the simple mail message.
       * @returns The specified email address of a recipient if any has been specified or an empty string.
       */
-    def getRecipient(): String = js.native
+    def getRecipient(): String
     
     /**
       * To get the subject of a simple mail message.
       * @returns The subject of the simple mail message. If no subject has been specified an empty string will be returned.
       */
-    def getSubject(): String = js.native
+    def getSubject(): String
     
     /**
       * To set an attachment of a simple mail message.
       * @param aAttachement Sets a sequence of file URLs specifying the files that should be attached to the mail. The given file URLs must conform to [Rfc1738]
       * @throws com::sun::star::lang::IllegalArgumentException if at least one of the given file URLs is invalid (doesn't conform to [Rfc1738]{@link url="http://
       */
-    def setAttachement(aAttachement: SeqEquiv[String]): Unit = js.native
+    def setAttachement(aAttachement: SeqEquiv[String]): Unit
     
     /**
       * To set the BCC recipient of a simple mail message.
       * @param aBccRecipient A sequence with the email addresses of one or more BCC recipients. An empty sequence means there are no BCC recipients.
       */
-    def setBccRecipient(aBccRecipient: SeqEquiv[String]): Unit = js.native
+    def setBccRecipient(aBccRecipient: SeqEquiv[String]): Unit
     
     /**
       * To set the cc recipients of a simple mail message.
       * @param aCcRecipient Sets a sequence with the email addresses of one or more cc recipients. The method does not check if the given addresses are valid. A
       */
-    def setCcRecipient(aCcRecipient: SeqEquiv[String]): Unit = js.native
+    def setCcRecipient(aCcRecipient: SeqEquiv[String]): Unit
     
     /**
       * To set the email address of the originator of a simple mail message.
       * @param aOriginator Sets the email address of the originator of the mail.
       */
-    def setOriginator(aOriginator: String): Unit = js.native
+    def setOriginator(aOriginator: String): Unit
     
     /**
       * To set the recipient of the simple mail message.
       * @param aRecipient The email address of a recipient. The method doesn't check if the given email address is valid.
       */
-    def setRecipient(aRecipient: String): Unit = js.native
+    def setRecipient(aRecipient: String): Unit
     
     /**
       * To set the subject of a simple mail message.
       * @param aSubject Sets the subject of the simple mail message.
       */
-    def setSubject(aSubject: String): Unit = js.native
+    def setSubject(aSubject: String): Unit
   }
   object XSimpleMailMessage {
     
@@ -390,10 +393,11 @@ object system {
     * This interface extends {@link XSimpleMailMessage}
     * @since LibreOffice 4.2
     */
-  @js.native
-  trait XSimpleMailMessage2 extends XSimpleMailMessage {
+  trait XSimpleMailMessage2
+    extends StObject
+       with XSimpleMailMessage {
     
-    var Body: String = js.native
+    var Body: String
   }
   object XSimpleMailMessage2 {
     
@@ -435,8 +439,9 @@ object system {
   }
   
   /** Specifies an interface for executing a system command. */
-  @js.native
-  trait XSystemShellExecute extends XInterface {
+  trait XSystemShellExecute
+    extends StObject
+       with XInterface {
     
     /**
       * Executes an arbitrary system command.
@@ -447,7 +452,7 @@ object system {
       * @throws com::sun::star::lang::IllegalArgumentException when the specified flags are wrong or exclude each other; also thrown, with an ArgumentPosition of
       * @throws com::sun::star::system::SystemShellExecuteException in the case of errors when trying to executed the specified command.
       */
-    def execute(aCommand: String, aParameter: String, nFlags: Double): Unit = js.native
+    def execute(aCommand: String, aParameter: String, nFlags: Double): Unit
   }
   object XSystemShellExecute {
     

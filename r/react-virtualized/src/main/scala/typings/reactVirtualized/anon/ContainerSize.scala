@@ -2,19 +2,17 @@ package typings.reactVirtualized.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerSize extends StObject {
   
-  var align: String = js.native
+  var align: String
   
-  var containerSize: Double = js.native
+  var containerSize: Double
   
-  var currentOffset: Double = js.native
+  var currentOffset: Double
   
-  var targetIndex: Double = js.native
+  var targetIndex: Double
 }
 object ContainerSize {
   

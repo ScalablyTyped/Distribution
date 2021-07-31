@@ -2,26 +2,24 @@ package typings.firebaseAdmin.messagingMod.messaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notification extends StObject {
   
   /**
     * The notification body
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * URL of an image to be displayed in the notification.
     */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the notification.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Notification {
   

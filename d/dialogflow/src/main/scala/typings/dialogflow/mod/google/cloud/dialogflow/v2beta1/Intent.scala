@@ -81,7 +81,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an Intent. */
@@ -91,7 +90,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Intent.
   * @param [properties] Properties to set
   */
-class Intent () extends IIntent {
+class Intent ()
+  extends StObject
+     with IIntent {
   def this(properties: IIntent) = this()
   
   /** Intent action. */
@@ -182,6 +183,10 @@ class Intent () extends IIntent {
 }
 object Intent {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Represents a FollowupIntentInfo. */
   @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo")
   @js.native
@@ -189,7 +194,9 @@ object Intent {
     * Constructs a new FollowupIntentInfo.
     * @param [properties] Properties to set
     */
-  class FollowupIntentInfo () extends IFollowupIntentInfo {
+  class FollowupIntentInfo ()
+    extends StObject
+       with IFollowupIntentInfo {
     def this(properties: IFollowupIntentInfo) = this()
     
     /** FollowupIntentInfo followupIntentName. */
@@ -208,18 +215,20 @@ object Intent {
   }
   object FollowupIntentInfo {
     
+    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new FollowupIntentInfo instance using the specified properties.
       * @param [properties] Properties to set
       * @returns FollowupIntentInfo instance
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.create")
-    @js.native
-    def create(): FollowupIntentInfo = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.create")
-    @js.native
-    def create(properties: IFollowupIntentInfo): FollowupIntentInfo = js.native
+    @scala.inline
+    def create(): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FollowupIntentInfo]
+    @scala.inline
+    def create(properties: IFollowupIntentInfo): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
     
     /**
       * Decodes a FollowupIntentInfo message from the specified reader or buffer.
@@ -230,18 +239,14 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.decode")
-    @js.native
-    def decode(reader: Reader): FollowupIntentInfo = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): FollowupIntentInfo = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.decode")
-    @js.native
-    def decode(reader: Uint8Array): FollowupIntentInfo = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): FollowupIntentInfo = js.native
+    @scala.inline
+    def decode(reader: Reader): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
+    @scala.inline
+    def decode(reader: Reader, length: Double): FollowupIntentInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FollowupIntentInfo]
+    @scala.inline
+    def decode(reader: Uint8Array): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): FollowupIntentInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FollowupIntentInfo]
     
     /**
       * Decodes a FollowupIntentInfo message from the specified reader or buffer, length delimited.
@@ -251,12 +256,10 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): FollowupIntentInfo = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): FollowupIntentInfo = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
     
     /**
       * Encodes the specified FollowupIntentInfo message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.verify|verify} messages.
@@ -265,12 +268,10 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.encode")
-    @js.native
-    def encode(message: IFollowupIntentInfo): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.encode")
-    @js.native
-    def encode(message: IFollowupIntentInfo, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IFollowupIntentInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IFollowupIntentInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified FollowupIntentInfo message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.verify|verify} messages.
@@ -279,12 +280,10 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IFollowupIntentInfo): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IFollowupIntentInfo, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IFollowupIntentInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IFollowupIntentInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a FollowupIntentInfo message from a plain object. Also converts values to their respective internal types.
@@ -292,9 +291,8 @@ object Intent {
       * @returns FollowupIntentInfo
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): FollowupIntentInfo = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
     
     /**
       * Creates a plain object from a FollowupIntentInfo message. Also converts values to other types if specified.
@@ -303,12 +301,10 @@ object Intent {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.toObject")
-    @js.native
-    def toObject(message: FollowupIntentInfo): StringDictionary[js.Any] = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.toObject")
-    @js.native
-    def toObject(message: FollowupIntentInfo, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: FollowupIntentInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: FollowupIntentInfo, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a FollowupIntentInfo message.
@@ -316,9 +312,8 @@ object Intent {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.FollowupIntentInfo.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Message. */
@@ -328,7 +323,9 @@ object Intent {
     * Constructs a new Message.
     * @param [properties] Properties to set
     */
-  class Message () extends IMessage {
+  class Message ()
+    extends StObject
+       with IMessage {
     def this(properties: IMessage) = this()
     
     /** Message message. */
@@ -348,6 +345,10 @@ object Intent {
   }
   object Message {
     
+    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /** Represents a BasicCard. */
     @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard")
     @js.native
@@ -355,7 +356,9 @@ object Intent {
       * Constructs a new BasicCard.
       * @param [properties] Properties to set
       */
-    class BasicCard () extends IBasicCard {
+    class BasicCard ()
+      extends StObject
+         with IBasicCard {
       def this(properties: IBasicCard) = this()
       
       /** BasicCard buttons. */
@@ -382,6 +385,10 @@ object Intent {
     }
     object BasicCard {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Represents a Button. */
       @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button")
       @js.native
@@ -389,7 +396,9 @@ object Intent {
         * Constructs a new Button.
         * @param [properties] Properties to set
         */
-      class Button () extends IButton {
+      class Button ()
+        extends StObject
+           with IButton {
         def this(properties: IButton) = this()
         
         /** Button title. */
@@ -404,6 +413,10 @@ object Intent {
       }
       object Button {
         
+        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /** Represents an OpenUriAction. */
         @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction")
         @js.native
@@ -411,7 +424,9 @@ object Intent {
           * Constructs a new OpenUriAction.
           * @param [properties] Properties to set
           */
-        class OpenUriAction () extends IOpenUriAction {
+        class OpenUriAction ()
+          extends StObject
+             with IOpenUriAction {
           def this(properties: IOpenUriAction) = this()
           
           /**
@@ -426,18 +441,20 @@ object Intent {
         }
         object OpenUriAction {
           
+          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction")
+          @js.native
+          val ^ : js.Any = js.native
+          
           /**
             * Creates a new OpenUriAction instance using the specified properties.
             * @param [properties] Properties to set
             * @returns OpenUriAction instance
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.create")
-          @js.native
-          def create(): OpenUriAction = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.create")
-          @js.native
-          def create(properties: IOpenUriAction): OpenUriAction = js.native
+          @scala.inline
+          def create(): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OpenUriAction]
+          @scala.inline
+          def create(properties: IOpenUriAction): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
           
           /**
             * Decodes an OpenUriAction message from the specified reader or buffer.
@@ -448,18 +465,14 @@ object Intent {
             * @throws {$protobuf.util.ProtocolError} If required fields are missing
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.decode")
-          @js.native
-          def decode(reader: Reader): OpenUriAction = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.decode")
-          @js.native
-          def decode(reader: Reader, length: Double): OpenUriAction = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.decode")
-          @js.native
-          def decode(reader: Uint8Array): OpenUriAction = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.decode")
-          @js.native
-          def decode(reader: Uint8Array, length: Double): OpenUriAction = js.native
+          @scala.inline
+          def decode(reader: Reader): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
+          @scala.inline
+          def decode(reader: Reader, length: Double): OpenUriAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUriAction]
+          @scala.inline
+          def decode(reader: Uint8Array): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
+          @scala.inline
+          def decode(reader: Uint8Array, length: Double): OpenUriAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUriAction]
           
           /**
             * Decodes an OpenUriAction message from the specified reader or buffer, length delimited.
@@ -469,12 +482,10 @@ object Intent {
             * @throws {$protobuf.util.ProtocolError} If required fields are missing
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.decodeDelimited")
-          @js.native
-          def decodeDelimited(reader: Reader): OpenUriAction = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.decodeDelimited")
-          @js.native
-          def decodeDelimited(reader: Uint8Array): OpenUriAction = js.native
+          @scala.inline
+          def decodeDelimited(reader: Reader): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
+          @scala.inline
+          def decodeDelimited(reader: Uint8Array): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
           
           /**
             * Encodes the specified OpenUriAction message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.verify|verify} messages.
@@ -483,12 +494,10 @@ object Intent {
             * @returns Writer
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.encode")
-          @js.native
-          def encode(message: IOpenUriAction): Writer = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.encode")
-          @js.native
-          def encode(message: IOpenUriAction, writer: Writer): Writer = js.native
+          @scala.inline
+          def encode(message: IOpenUriAction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+          @scala.inline
+          def encode(message: IOpenUriAction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
           
           /**
             * Encodes the specified OpenUriAction message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.verify|verify} messages.
@@ -497,12 +506,10 @@ object Intent {
             * @returns Writer
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.encodeDelimited")
-          @js.native
-          def encodeDelimited(message: IOpenUriAction): Writer = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.encodeDelimited")
-          @js.native
-          def encodeDelimited(message: IOpenUriAction, writer: Writer): Writer = js.native
+          @scala.inline
+          def encodeDelimited(message: IOpenUriAction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+          @scala.inline
+          def encodeDelimited(message: IOpenUriAction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
           
           /**
             * Creates an OpenUriAction message from a plain object. Also converts values to their respective internal types.
@@ -510,9 +517,8 @@ object Intent {
             * @returns OpenUriAction
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.fromObject")
-          @js.native
-          def fromObject(`object`: StringDictionary[js.Any]): OpenUriAction = js.native
+          @scala.inline
+          def fromObject(`object`: StringDictionary[js.Any]): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
           
           /**
             * Creates a plain object from an OpenUriAction message. Also converts values to other types if specified.
@@ -521,12 +527,10 @@ object Intent {
             * @returns Plain object
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.toObject")
-          @js.native
-          def toObject(message: OpenUriAction): StringDictionary[js.Any] = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.toObject")
-          @js.native
-          def toObject(message: OpenUriAction, options: IConversionOptions): StringDictionary[js.Any] = js.native
+          @scala.inline
+          def toObject(message: OpenUriAction): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+          @scala.inline
+          def toObject(message: OpenUriAction, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
           
           /**
             * Verifies an OpenUriAction message.
@@ -534,9 +538,8 @@ object Intent {
             * @returns `null` if valid, otherwise the reason why it is not
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.OpenUriAction.verify")
-          @js.native
-          def verify(message: StringDictionary[js.Any]): String | Null = js.native
+          @scala.inline
+          def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
         }
         
         /**
@@ -545,12 +548,10 @@ object Intent {
           * @returns Button instance
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.create")
-        @js.native
-        def create(): Button = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.create")
-        @js.native
-        def create(properties: IButton): Button = js.native
+        @scala.inline
+        def create(): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Button]
+        @scala.inline
+        def create(properties: IButton): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Decodes a Button message from the specified reader or buffer.
@@ -561,18 +562,14 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.decode")
-        @js.native
-        def decode(reader: Reader): Button = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): Button = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.decode")
-        @js.native
-        def decode(reader: Uint8Array): Button = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): Button = js.native
+        @scala.inline
+        def decode(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        @scala.inline
+        def decode(reader: Reader, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
+        @scala.inline
+        def decode(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
         
         /**
           * Decodes a Button message from the specified reader or buffer, length delimited.
@@ -582,12 +579,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): Button = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): Button = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Encodes the specified Button message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.verify|verify} messages.
@@ -596,12 +591,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.encode")
-        @js.native
-        def encode(message: IButton): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.encode")
-        @js.native
-        def encode(message: IButton, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IButton): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IButton, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified Button message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.verify|verify} messages.
@@ -610,12 +603,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IButton): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IButton, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IButton): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IButton, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a Button message from a plain object. Also converts values to their respective internal types.
@@ -623,9 +614,8 @@ object Intent {
           * @returns Button
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): Button = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Creates a plain object from a Button message. Also converts values to other types if specified.
@@ -634,12 +624,10 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.toObject")
-        @js.native
-        def toObject(message: Button): StringDictionary[js.Any] = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.toObject")
-        @js.native
-        def toObject(message: Button, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: Button): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: Button, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a Button message.
@@ -647,16 +635,14 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.Button.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
         
         /** Properties of an OpenUriAction. */
-        @js.native
         trait IOpenUriAction extends StObject {
           
           /** OpenUriAction uri */
-          var uri: js.UndefOr[String | Null] = js.native
+          var uri: js.UndefOr[String | Null] = js.undefined
         }
         object IOpenUriAction {
           
@@ -687,12 +673,10 @@ object Intent {
         * @returns BasicCard instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.create")
-      @js.native
-      def create(): BasicCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.create")
-      @js.native
-      def create(properties: IBasicCard): BasicCard = js.native
+      @scala.inline
+      def create(): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BasicCard]
+      @scala.inline
+      def create(properties: IBasicCard): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
       
       /**
         * Decodes a BasicCard message from the specified reader or buffer.
@@ -703,18 +687,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.decode")
-      @js.native
-      def decode(reader: Reader): BasicCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): BasicCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.decode")
-      @js.native
-      def decode(reader: Uint8Array): BasicCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): BasicCard = js.native
+      @scala.inline
+      def decode(reader: Reader): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
+      @scala.inline
+      def decode(reader: Reader, length: Double): BasicCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BasicCard]
+      @scala.inline
+      def decode(reader: Uint8Array): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): BasicCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BasicCard]
       
       /**
         * Decodes a BasicCard message from the specified reader or buffer, length delimited.
@@ -724,12 +704,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): BasicCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): BasicCard = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
       
       /**
         * Encodes the specified BasicCard message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.verify|verify} messages.
@@ -738,12 +716,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.encode")
-      @js.native
-      def encode(message: IBasicCard): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.encode")
-      @js.native
-      def encode(message: IBasicCard, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IBasicCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IBasicCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified BasicCard message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.verify|verify} messages.
@@ -752,12 +728,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IBasicCard): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IBasicCard, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IBasicCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IBasicCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a BasicCard message from a plain object. Also converts values to their respective internal types.
@@ -765,9 +739,8 @@ object Intent {
         * @returns BasicCard
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): BasicCard = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
       
       /**
         * Creates a plain object from a BasicCard message. Also converts values to other types if specified.
@@ -776,12 +749,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.toObject")
-      @js.native
-      def toObject(message: BasicCard): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.toObject")
-      @js.native
-      def toObject(message: BasicCard, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: BasicCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: BasicCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a BasicCard message.
@@ -789,19 +760,17 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BasicCard.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a Button. */
-      @js.native
       trait IButton extends StObject {
         
         /** Button openUriAction */
-        var openUriAction: js.UndefOr[IOpenUriAction | Null] = js.native
+        var openUriAction: js.UndefOr[IOpenUriAction | Null] = js.undefined
         
         /** Button title */
-        var title: js.UndefOr[String | Null] = js.native
+        var title: js.UndefOr[String | Null] = js.undefined
       }
       object IButton {
         
@@ -842,7 +811,9 @@ object Intent {
       * Constructs a new BrowseCarouselCard.
       * @param [properties] Properties to set
       */
-    class BrowseCarouselCard () extends IBrowseCarouselCard {
+    class BrowseCarouselCard ()
+      extends StObject
+         with IBrowseCarouselCard {
       def this(properties: IBrowseCarouselCard) = this()
       
       /** BrowseCarouselCard imageDisplayOptions. */
@@ -861,6 +832,10 @@ object Intent {
     }
     object BrowseCarouselCard {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Represents a BrowseCarouselCardItem. */
       @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem")
       @js.native
@@ -868,7 +843,9 @@ object Intent {
         * Constructs a new BrowseCarouselCardItem.
         * @param [properties] Properties to set
         */
-      class BrowseCarouselCardItem () extends IBrowseCarouselCardItem {
+      class BrowseCarouselCardItem ()
+        extends StObject
+           with IBrowseCarouselCardItem {
         def this(properties: IBrowseCarouselCardItem) = this()
         
         /** BrowseCarouselCardItem description. */
@@ -891,6 +868,10 @@ object Intent {
       }
       object BrowseCarouselCardItem {
         
+        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /** Represents an OpenUrlAction. */
         @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction")
         @js.native
@@ -898,7 +879,9 @@ object Intent {
           * Constructs a new OpenUrlAction.
           * @param [properties] Properties to set
           */
-        class OpenUrlAction () extends IOpenUrlAction {
+        class OpenUrlAction ()
+          extends StObject
+             with IOpenUrlAction {
           def this(properties: IOpenUrlAction) = this()
           
           /**
@@ -917,6 +900,10 @@ object Intent {
         }
         object OpenUrlAction {
           
+          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction")
+          @js.native
+          val ^ : js.Any = js.native
+          
           @js.native
           sealed trait UrlTypeHint extends StObject
           /** UrlTypeHint enum. */
@@ -925,19 +912,25 @@ object Intent {
           object UrlTypeHint extends StObject {
             
             @JSBracketAccess
-            def apply(value: Double): js.UndefOr[UrlTypeHint with Double] = js.native
+            def apply(value: Double): js.UndefOr[UrlTypeHint & Double] = js.native
             
             @js.native
-            sealed trait AMP_ACTION extends UrlTypeHint
-            /* 1 */ val AMP_ACTION: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint.AMP_ACTION with Double = js.native
+            sealed trait AMP_ACTION
+              extends StObject
+                 with UrlTypeHint
+            /* 1 */ val AMP_ACTION: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint.AMP_ACTION & Double = js.native
             
             @js.native
-            sealed trait AMP_CONTENT extends UrlTypeHint
-            /* 2 */ val AMP_CONTENT: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint.AMP_CONTENT with Double = js.native
+            sealed trait AMP_CONTENT
+              extends StObject
+                 with UrlTypeHint
+            /* 2 */ val AMP_CONTENT: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint.AMP_CONTENT & Double = js.native
             
             @js.native
-            sealed trait URL_TYPE_HINT_UNSPECIFIED extends UrlTypeHint
-            /* 0 */ val URL_TYPE_HINT_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint.URL_TYPE_HINT_UNSPECIFIED with Double = js.native
+            sealed trait URL_TYPE_HINT_UNSPECIFIED
+              extends StObject
+                 with UrlTypeHint
+            /* 0 */ val URL_TYPE_HINT_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint.URL_TYPE_HINT_UNSPECIFIED & Double = js.native
           }
           
           /**
@@ -946,12 +939,10 @@ object Intent {
             * @returns OpenUrlAction instance
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.create")
-          @js.native
-          def create(): OpenUrlAction = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.create")
-          @js.native
-          def create(properties: IOpenUrlAction): OpenUrlAction = js.native
+          @scala.inline
+          def create(): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OpenUrlAction]
+          @scala.inline
+          def create(properties: IOpenUrlAction): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
           
           /**
             * Decodes an OpenUrlAction message from the specified reader or buffer.
@@ -962,18 +953,14 @@ object Intent {
             * @throws {$protobuf.util.ProtocolError} If required fields are missing
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.decode")
-          @js.native
-          def decode(reader: Reader): OpenUrlAction = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.decode")
-          @js.native
-          def decode(reader: Reader, length: Double): OpenUrlAction = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.decode")
-          @js.native
-          def decode(reader: Uint8Array): OpenUrlAction = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.decode")
-          @js.native
-          def decode(reader: Uint8Array, length: Double): OpenUrlAction = js.native
+          @scala.inline
+          def decode(reader: Reader): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
+          @scala.inline
+          def decode(reader: Reader, length: Double): OpenUrlAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUrlAction]
+          @scala.inline
+          def decode(reader: Uint8Array): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
+          @scala.inline
+          def decode(reader: Uint8Array, length: Double): OpenUrlAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUrlAction]
           
           /**
             * Decodes an OpenUrlAction message from the specified reader or buffer, length delimited.
@@ -983,12 +970,10 @@ object Intent {
             * @throws {$protobuf.util.ProtocolError} If required fields are missing
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.decodeDelimited")
-          @js.native
-          def decodeDelimited(reader: Reader): OpenUrlAction = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.decodeDelimited")
-          @js.native
-          def decodeDelimited(reader: Uint8Array): OpenUrlAction = js.native
+          @scala.inline
+          def decodeDelimited(reader: Reader): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
+          @scala.inline
+          def decodeDelimited(reader: Uint8Array): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
           
           /**
             * Encodes the specified OpenUrlAction message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.verify|verify} messages.
@@ -997,12 +982,10 @@ object Intent {
             * @returns Writer
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.encode")
-          @js.native
-          def encode(message: IOpenUrlAction): Writer = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.encode")
-          @js.native
-          def encode(message: IOpenUrlAction, writer: Writer): Writer = js.native
+          @scala.inline
+          def encode(message: IOpenUrlAction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+          @scala.inline
+          def encode(message: IOpenUrlAction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
           
           /**
             * Encodes the specified OpenUrlAction message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.verify|verify} messages.
@@ -1011,12 +994,10 @@ object Intent {
             * @returns Writer
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.encodeDelimited")
-          @js.native
-          def encodeDelimited(message: IOpenUrlAction): Writer = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.encodeDelimited")
-          @js.native
-          def encodeDelimited(message: IOpenUrlAction, writer: Writer): Writer = js.native
+          @scala.inline
+          def encodeDelimited(message: IOpenUrlAction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+          @scala.inline
+          def encodeDelimited(message: IOpenUrlAction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
           
           /**
             * Creates an OpenUrlAction message from a plain object. Also converts values to their respective internal types.
@@ -1024,9 +1005,8 @@ object Intent {
             * @returns OpenUrlAction
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.fromObject")
-          @js.native
-          def fromObject(`object`: StringDictionary[js.Any]): OpenUrlAction = js.native
+          @scala.inline
+          def fromObject(`object`: StringDictionary[js.Any]): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
           
           /**
             * Creates a plain object from an OpenUrlAction message. Also converts values to other types if specified.
@@ -1035,12 +1015,10 @@ object Intent {
             * @returns Plain object
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.toObject")
-          @js.native
-          def toObject(message: OpenUrlAction): StringDictionary[js.Any] = js.native
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.toObject")
-          @js.native
-          def toObject(message: OpenUrlAction, options: IConversionOptions): StringDictionary[js.Any] = js.native
+          @scala.inline
+          def toObject(message: OpenUrlAction): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+          @scala.inline
+          def toObject(message: OpenUrlAction, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
           
           /**
             * Verifies an OpenUrlAction message.
@@ -1048,9 +1026,8 @@ object Intent {
             * @returns `null` if valid, otherwise the reason why it is not
             */
           /* static member */
-          @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.verify")
-          @js.native
-          def verify(message: StringDictionary[js.Any]): String | Null = js.native
+          @scala.inline
+          def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
         }
         
         /**
@@ -1059,12 +1036,10 @@ object Intent {
           * @returns BrowseCarouselCardItem instance
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.create")
-        @js.native
-        def create(): BrowseCarouselCardItem = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.create")
-        @js.native
-        def create(properties: IBrowseCarouselCardItem): BrowseCarouselCardItem = js.native
+        @scala.inline
+        def create(): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BrowseCarouselCardItem]
+        @scala.inline
+        def create(properties: IBrowseCarouselCardItem): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
         
         /**
           * Decodes a BrowseCarouselCardItem message from the specified reader or buffer.
@@ -1075,18 +1050,14 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.decode")
-        @js.native
-        def decode(reader: Reader): BrowseCarouselCardItem = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): BrowseCarouselCardItem = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.decode")
-        @js.native
-        def decode(reader: Uint8Array): BrowseCarouselCardItem = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): BrowseCarouselCardItem = js.native
+        @scala.inline
+        def decode(reader: Reader): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
+        @scala.inline
+        def decode(reader: Reader, length: Double): BrowseCarouselCardItem = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCardItem]
+        @scala.inline
+        def decode(reader: Uint8Array): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): BrowseCarouselCardItem = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCardItem]
         
         /**
           * Decodes a BrowseCarouselCardItem message from the specified reader or buffer, length delimited.
@@ -1096,12 +1067,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): BrowseCarouselCardItem = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): BrowseCarouselCardItem = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
         
         /**
           * Encodes the specified BrowseCarouselCardItem message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.verify|verify} messages.
@@ -1110,12 +1079,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.encode")
-        @js.native
-        def encode(message: IBrowseCarouselCardItem): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.encode")
-        @js.native
-        def encode(message: IBrowseCarouselCardItem, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IBrowseCarouselCardItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IBrowseCarouselCardItem, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified BrowseCarouselCardItem message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.verify|verify} messages.
@@ -1124,12 +1091,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IBrowseCarouselCardItem): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IBrowseCarouselCardItem, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IBrowseCarouselCardItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IBrowseCarouselCardItem, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a BrowseCarouselCardItem message from a plain object. Also converts values to their respective internal types.
@@ -1137,9 +1102,8 @@ object Intent {
           * @returns BrowseCarouselCardItem
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): BrowseCarouselCardItem = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
         
         /**
           * Creates a plain object from a BrowseCarouselCardItem message. Also converts values to other types if specified.
@@ -1148,12 +1112,10 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.toObject")
-        @js.native
-        def toObject(message: BrowseCarouselCardItem): StringDictionary[js.Any] = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.toObject")
-        @js.native
-        def toObject(message: BrowseCarouselCardItem, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: BrowseCarouselCardItem): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: BrowseCarouselCardItem, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a BrowseCarouselCardItem message.
@@ -1161,21 +1123,19 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
         
         /** Properties of an OpenUrlAction. */
-        @js.native
         trait IOpenUrlAction extends StObject {
           
           /** OpenUrlAction url */
-          var url: js.UndefOr[String | Null] = js.native
+          var url: js.UndefOr[String | Null] = js.undefined
           
           /** OpenUrlAction urlTypeHint */
           var urlTypeHint: js.UndefOr[
                     UrlTypeHint | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint * / any */ String) | Null
-                  ] = js.native
+                  ] = js.undefined
         }
         object IOpenUrlAction {
           
@@ -1219,27 +1179,37 @@ object Intent {
       object ImageDisplayOptions extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[ImageDisplayOptions with Double] = js.native
+        def apply(value: Double): js.UndefOr[ImageDisplayOptions & Double] = js.native
         
         @js.native
-        sealed trait BLURRED_BACKGROUND extends ImageDisplayOptions
-        /* 4 */ val BLURRED_BACKGROUND: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.BLURRED_BACKGROUND with Double = js.native
+        sealed trait BLURRED_BACKGROUND
+          extends StObject
+             with ImageDisplayOptions
+        /* 4 */ val BLURRED_BACKGROUND: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.BLURRED_BACKGROUND & Double = js.native
         
         @js.native
-        sealed trait CROPPED extends ImageDisplayOptions
-        /* 3 */ val CROPPED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.CROPPED with Double = js.native
+        sealed trait CROPPED
+          extends StObject
+             with ImageDisplayOptions
+        /* 3 */ val CROPPED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.CROPPED & Double = js.native
         
         @js.native
-        sealed trait GRAY extends ImageDisplayOptions
-        /* 1 */ val GRAY: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.GRAY with Double = js.native
+        sealed trait GRAY
+          extends StObject
+             with ImageDisplayOptions
+        /* 1 */ val GRAY: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.GRAY & Double = js.native
         
         @js.native
-        sealed trait IMAGE_DISPLAY_OPTIONS_UNSPECIFIED extends ImageDisplayOptions
-        /* 0 */ val IMAGE_DISPLAY_OPTIONS_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.IMAGE_DISPLAY_OPTIONS_UNSPECIFIED with Double = js.native
+        sealed trait IMAGE_DISPLAY_OPTIONS_UNSPECIFIED
+          extends StObject
+             with ImageDisplayOptions
+        /* 0 */ val IMAGE_DISPLAY_OPTIONS_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.IMAGE_DISPLAY_OPTIONS_UNSPECIFIED & Double = js.native
         
         @js.native
-        sealed trait WHITE extends ImageDisplayOptions
-        /* 2 */ val WHITE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.WHITE with Double = js.native
+        sealed trait WHITE
+          extends StObject
+             with ImageDisplayOptions
+        /* 2 */ val WHITE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.WHITE & Double = js.native
       }
       
       /**
@@ -1248,12 +1218,10 @@ object Intent {
         * @returns BrowseCarouselCard instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.create")
-      @js.native
-      def create(): BrowseCarouselCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.create")
-      @js.native
-      def create(properties: IBrowseCarouselCard): BrowseCarouselCard = js.native
+      @scala.inline
+      def create(): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BrowseCarouselCard]
+      @scala.inline
+      def create(properties: IBrowseCarouselCard): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
       
       /**
         * Decodes a BrowseCarouselCard message from the specified reader or buffer.
@@ -1264,18 +1232,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.decode")
-      @js.native
-      def decode(reader: Reader): BrowseCarouselCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): BrowseCarouselCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.decode")
-      @js.native
-      def decode(reader: Uint8Array): BrowseCarouselCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): BrowseCarouselCard = js.native
+      @scala.inline
+      def decode(reader: Reader): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
+      @scala.inline
+      def decode(reader: Reader, length: Double): BrowseCarouselCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCard]
+      @scala.inline
+      def decode(reader: Uint8Array): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): BrowseCarouselCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCard]
       
       /**
         * Decodes a BrowseCarouselCard message from the specified reader or buffer, length delimited.
@@ -1285,12 +1249,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): BrowseCarouselCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): BrowseCarouselCard = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
       
       /**
         * Encodes the specified BrowseCarouselCard message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.verify|verify} messages.
@@ -1299,12 +1261,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.encode")
-      @js.native
-      def encode(message: IBrowseCarouselCard): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.encode")
-      @js.native
-      def encode(message: IBrowseCarouselCard, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IBrowseCarouselCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IBrowseCarouselCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified BrowseCarouselCard message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.verify|verify} messages.
@@ -1313,12 +1273,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IBrowseCarouselCard): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IBrowseCarouselCard, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IBrowseCarouselCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IBrowseCarouselCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a BrowseCarouselCard message from a plain object. Also converts values to their respective internal types.
@@ -1326,9 +1284,8 @@ object Intent {
         * @returns BrowseCarouselCard
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): BrowseCarouselCard = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
       
       /**
         * Creates a plain object from a BrowseCarouselCard message. Also converts values to other types if specified.
@@ -1337,12 +1294,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.toObject")
-      @js.native
-      def toObject(message: BrowseCarouselCard): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.toObject")
-      @js.native
-      def toObject(message: BrowseCarouselCard, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: BrowseCarouselCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: BrowseCarouselCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a BrowseCarouselCard message.
@@ -1350,28 +1305,26 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a BrowseCarouselCardItem. */
-      @js.native
       trait IBrowseCarouselCardItem extends StObject {
         
         /** BrowseCarouselCardItem description */
-        var description: js.UndefOr[String | Null] = js.native
+        var description: js.UndefOr[String | Null] = js.undefined
         
         /** BrowseCarouselCardItem footer */
-        var footer: js.UndefOr[String | Null] = js.native
+        var footer: js.UndefOr[String | Null] = js.undefined
         
         /** BrowseCarouselCardItem image */
-        var image: js.UndefOr[IImage | Null] = js.native
+        var image: js.UndefOr[IImage | Null] = js.undefined
         
         /** BrowseCarouselCardItem openUriAction */
-        var openUriAction: js.UndefOr[IOpenUrlAction | Null] = js.native
+        var openUriAction: js.UndefOr[IOpenUrlAction | Null] = js.undefined
         
         /** BrowseCarouselCardItem title */
-        var title: js.UndefOr[String | Null] = js.native
+        var title: js.UndefOr[String | Null] = js.undefined
       }
       object IBrowseCarouselCardItem {
         
@@ -1439,7 +1392,9 @@ object Intent {
       * Constructs a new Card.
       * @param [properties] Properties to set
       */
-    class Card () extends ICard {
+    class Card ()
+      extends StObject
+         with ICard {
       def this(properties: ICard) = this()
       
       /** Card buttons. */
@@ -1468,6 +1423,10 @@ object Intent {
     }
     object Card {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Represents a Button. */
       @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button")
       @js.native
@@ -1476,7 +1435,8 @@ object Intent {
         * @param [properties] Properties to set
         */
       class Button ()
-        extends typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton {
+        extends StObject
+           with typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton {
         def this(properties: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton) = this()
         
         /** Button postback. */
@@ -1495,18 +1455,20 @@ object Intent {
       }
       object Button {
         
+        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new Button instance using the specified properties.
           * @param [properties] Properties to set
           * @returns Button instance
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.create")
-        @js.native
-        def create(): Button = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.create")
-        @js.native
-        def create(properties: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton): Button = js.native
+        @scala.inline
+        def create(): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Button]
+        @scala.inline
+        def create(properties: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Decodes a Button message from the specified reader or buffer.
@@ -1517,18 +1479,14 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.decode")
-        @js.native
-        def decode(reader: Reader): Button = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): Button = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.decode")
-        @js.native
-        def decode(reader: Uint8Array): Button = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): Button = js.native
+        @scala.inline
+        def decode(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        @scala.inline
+        def decode(reader: Reader, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
+        @scala.inline
+        def decode(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
         
         /**
           * Decodes a Button message from the specified reader or buffer, length delimited.
@@ -1538,12 +1496,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): Button = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): Button = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Encodes the specified Button message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.verify|verify} messages.
@@ -1552,15 +1508,13 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.encode")
-        @js.native
-        def encode(message: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.encode")
-        @js.native
+        @scala.inline
+        def encode(message: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
         def encode(
           message: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton,
           writer: Writer
-        ): Writer = js.native
+        ): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified Button message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.verify|verify} messages.
@@ -1569,15 +1523,13 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.encodeDelimited")
-        @js.native
+        @scala.inline
+        def encodeDelimited(message: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
         def encodeDelimited(
           message: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton,
           writer: Writer
-        ): Writer = js.native
+        ): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a Button message from a plain object. Also converts values to their respective internal types.
@@ -1585,9 +1537,8 @@ object Intent {
           * @returns Button
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): Button = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Creates a plain object from a Button message. Also converts values to other types if specified.
@@ -1596,12 +1547,10 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.toObject")
-        @js.native
-        def toObject(message: Button): StringDictionary[js.Any] = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.toObject")
-        @js.native
-        def toObject(message: Button, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: Button): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: Button, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a Button message.
@@ -1609,9 +1558,8 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.Button.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -1620,12 +1568,10 @@ object Intent {
         * @returns Card instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.create")
-      @js.native
-      def create(): Card = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.create")
-      @js.native
-      def create(properties: ICard): Card = js.native
+      @scala.inline
+      def create(): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Card]
+      @scala.inline
+      def create(properties: ICard): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Card]
       
       /**
         * Decodes a Card message from the specified reader or buffer.
@@ -1636,18 +1582,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.decode")
-      @js.native
-      def decode(reader: Reader): Card = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): Card = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.decode")
-      @js.native
-      def decode(reader: Uint8Array): Card = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): Card = js.native
+      @scala.inline
+      def decode(reader: Reader): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
+      @scala.inline
+      def decode(reader: Reader, length: Double): Card = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Card]
+      @scala.inline
+      def decode(reader: Uint8Array): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): Card = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Card]
       
       /**
         * Decodes a Card message from the specified reader or buffer, length delimited.
@@ -1657,12 +1599,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): Card = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): Card = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
       
       /**
         * Encodes the specified Card message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Card.verify|verify} messages.
@@ -1671,12 +1611,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.encode")
-      @js.native
-      def encode(message: ICard): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.encode")
-      @js.native
-      def encode(message: ICard, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ICard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ICard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Card message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Card.verify|verify} messages.
@@ -1685,12 +1623,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ICard): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ICard, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ICard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ICard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Card message from a plain object. Also converts values to their respective internal types.
@@ -1698,9 +1634,8 @@ object Intent {
         * @returns Card
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): Card = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Card]
       
       /**
         * Creates a plain object from a Card message. Also converts values to other types if specified.
@@ -1709,12 +1644,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.toObject")
-      @js.native
-      def toObject(message: Card): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.toObject")
-      @js.native
-      def toObject(message: Card, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: Card): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: Card, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Card message.
@@ -1722,19 +1655,17 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Card.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a Button. */
-      @js.native
       trait IButton extends StObject {
         
         /** Button postback */
-        var postback: js.UndefOr[String | Null] = js.native
+        var postback: js.UndefOr[String | Null] = js.undefined
         
         /** Button text */
-        var text: js.UndefOr[String | Null] = js.native
+        var text: js.UndefOr[String | Null] = js.undefined
       }
       object IButton {
         
@@ -1775,7 +1706,9 @@ object Intent {
       * Constructs a new CarouselSelect.
       * @param [properties] Properties to set
       */
-    class CarouselSelect () extends ICarouselSelect {
+    class CarouselSelect ()
+      extends StObject
+         with ICarouselSelect {
       def this(properties: ICarouselSelect) = this()
       
       /** CarouselSelect items. */
@@ -1790,6 +1723,10 @@ object Intent {
     }
     object CarouselSelect {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Represents an Item. */
       @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item")
       @js.native
@@ -1797,7 +1734,9 @@ object Intent {
         * Constructs a new Item.
         * @param [properties] Properties to set
         */
-      class Item () extends IItem {
+      class Item ()
+        extends StObject
+           with IItem {
         def this(properties: IItem) = this()
         
         /** Item description. */
@@ -1816,18 +1755,20 @@ object Intent {
       }
       object Item {
         
+        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new Item instance using the specified properties.
           * @param [properties] Properties to set
           * @returns Item instance
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.create")
-        @js.native
-        def create(): Item = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.create")
-        @js.native
-        def create(properties: IItem): Item = js.native
+        @scala.inline
+        def create(): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Item]
+        @scala.inline
+        def create(properties: IItem): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Decodes an Item message from the specified reader or buffer.
@@ -1838,18 +1779,14 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.decode")
-        @js.native
-        def decode(reader: Reader): Item = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): Item = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.decode")
-        @js.native
-        def decode(reader: Uint8Array): Item = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): Item = js.native
+        @scala.inline
+        def decode(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        @scala.inline
+        def decode(reader: Reader, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
+        @scala.inline
+        def decode(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
         
         /**
           * Decodes an Item message from the specified reader or buffer, length delimited.
@@ -1859,12 +1796,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): Item = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): Item = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Encodes the specified Item message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.verify|verify} messages.
@@ -1873,12 +1808,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.encode")
-        @js.native
-        def encode(message: IItem): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.encode")
-        @js.native
-        def encode(message: IItem, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IItem, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified Item message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.verify|verify} messages.
@@ -1887,12 +1820,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IItem): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IItem, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IItem, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates an Item message from a plain object. Also converts values to their respective internal types.
@@ -1900,9 +1831,8 @@ object Intent {
           * @returns Item
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): Item = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Creates a plain object from an Item message. Also converts values to other types if specified.
@@ -1911,12 +1841,10 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.toObject")
-        @js.native
-        def toObject(message: Item): StringDictionary[js.Any] = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.toObject")
-        @js.native
-        def toObject(message: Item, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: Item): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: Item, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies an Item message.
@@ -1924,9 +1852,8 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.Item.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -1935,12 +1862,10 @@ object Intent {
         * @returns CarouselSelect instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.create")
-      @js.native
-      def create(): CarouselSelect = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.create")
-      @js.native
-      def create(properties: ICarouselSelect): CarouselSelect = js.native
+      @scala.inline
+      def create(): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CarouselSelect]
+      @scala.inline
+      def create(properties: ICarouselSelect): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
       
       /**
         * Decodes a CarouselSelect message from the specified reader or buffer.
@@ -1951,18 +1876,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.decode")
-      @js.native
-      def decode(reader: Reader): CarouselSelect = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): CarouselSelect = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.decode")
-      @js.native
-      def decode(reader: Uint8Array): CarouselSelect = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): CarouselSelect = js.native
+      @scala.inline
+      def decode(reader: Reader): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
+      @scala.inline
+      def decode(reader: Reader, length: Double): CarouselSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CarouselSelect]
+      @scala.inline
+      def decode(reader: Uint8Array): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): CarouselSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CarouselSelect]
       
       /**
         * Decodes a CarouselSelect message from the specified reader or buffer, length delimited.
@@ -1972,12 +1893,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): CarouselSelect = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): CarouselSelect = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
       
       /**
         * Encodes the specified CarouselSelect message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.verify|verify} messages.
@@ -1986,12 +1905,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.encode")
-      @js.native
-      def encode(message: ICarouselSelect): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.encode")
-      @js.native
-      def encode(message: ICarouselSelect, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ICarouselSelect): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ICarouselSelect, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified CarouselSelect message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.verify|verify} messages.
@@ -2000,12 +1917,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ICarouselSelect): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ICarouselSelect, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ICarouselSelect): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ICarouselSelect, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a CarouselSelect message from a plain object. Also converts values to their respective internal types.
@@ -2013,9 +1928,8 @@ object Intent {
         * @returns CarouselSelect
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): CarouselSelect = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
       
       /**
         * Creates a plain object from a CarouselSelect message. Also converts values to other types if specified.
@@ -2024,12 +1938,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.toObject")
-      @js.native
-      def toObject(message: CarouselSelect): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.toObject")
-      @js.native
-      def toObject(message: CarouselSelect, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: CarouselSelect): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: CarouselSelect, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a CarouselSelect message.
@@ -2037,25 +1949,23 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.CarouselSelect.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of an Item. */
-      @js.native
       trait IItem extends StObject {
         
         /** Item description */
-        var description: js.UndefOr[String | Null] = js.native
+        var description: js.UndefOr[String | Null] = js.undefined
         
         /** Item image */
-        var image: js.UndefOr[IImage | Null] = js.native
+        var image: js.UndefOr[IImage | Null] = js.undefined
         
         /** Item info */
-        var info: js.UndefOr[ISelectItemInfo | Null] = js.native
+        var info: js.UndefOr[ISelectItemInfo | Null] = js.undefined
         
         /** Item title */
-        var title: js.UndefOr[String | Null] = js.native
+        var title: js.UndefOr[String | Null] = js.undefined
       }
       object IItem {
         
@@ -2114,7 +2024,9 @@ object Intent {
       * Constructs a new ColumnProperties.
       * @param [properties] Properties to set
       */
-    class ColumnProperties () extends IColumnProperties {
+    class ColumnProperties ()
+      extends StObject
+         with IColumnProperties {
       def this(properties: IColumnProperties) = this()
       
       /** ColumnProperties header. */
@@ -2133,6 +2045,10 @@ object Intent {
     }
     object ColumnProperties {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties")
+      @js.native
+      val ^ : js.Any = js.native
+      
       @js.native
       sealed trait HorizontalAlignment extends StObject
       /** HorizontalAlignment enum. */
@@ -2141,23 +2057,31 @@ object Intent {
       object HorizontalAlignment extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[HorizontalAlignment with Double] = js.native
+        def apply(value: Double): js.UndefOr[HorizontalAlignment & Double] = js.native
         
         @js.native
-        sealed trait CENTER extends HorizontalAlignment
-        /* 2 */ val CENTER: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.CENTER with Double = js.native
+        sealed trait CENTER
+          extends StObject
+             with HorizontalAlignment
+        /* 2 */ val CENTER: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.CENTER & Double = js.native
         
         @js.native
-        sealed trait HORIZONTAL_ALIGNMENT_UNSPECIFIED extends HorizontalAlignment
-        /* 0 */ val HORIZONTAL_ALIGNMENT_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.HORIZONTAL_ALIGNMENT_UNSPECIFIED with Double = js.native
+        sealed trait HORIZONTAL_ALIGNMENT_UNSPECIFIED
+          extends StObject
+             with HorizontalAlignment
+        /* 0 */ val HORIZONTAL_ALIGNMENT_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.HORIZONTAL_ALIGNMENT_UNSPECIFIED & Double = js.native
         
         @js.native
-        sealed trait LEADING extends HorizontalAlignment
-        /* 1 */ val LEADING: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.LEADING with Double = js.native
+        sealed trait LEADING
+          extends StObject
+             with HorizontalAlignment
+        /* 1 */ val LEADING: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.LEADING & Double = js.native
         
         @js.native
-        sealed trait TRAILING extends HorizontalAlignment
-        /* 3 */ val TRAILING: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.TRAILING with Double = js.native
+        sealed trait TRAILING
+          extends StObject
+             with HorizontalAlignment
+        /* 3 */ val TRAILING: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.TRAILING & Double = js.native
       }
       
       /**
@@ -2166,12 +2090,10 @@ object Intent {
         * @returns ColumnProperties instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.create")
-      @js.native
-      def create(): ColumnProperties = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.create")
-      @js.native
-      def create(properties: IColumnProperties): ColumnProperties = js.native
+      @scala.inline
+      def create(): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ColumnProperties]
+      @scala.inline
+      def create(properties: IColumnProperties): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
       
       /**
         * Decodes a ColumnProperties message from the specified reader or buffer.
@@ -2182,18 +2104,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.decode")
-      @js.native
-      def decode(reader: Reader): ColumnProperties = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): ColumnProperties = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.decode")
-      @js.native
-      def decode(reader: Uint8Array): ColumnProperties = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): ColumnProperties = js.native
+      @scala.inline
+      def decode(reader: Reader): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
+      @scala.inline
+      def decode(reader: Reader, length: Double): ColumnProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ColumnProperties]
+      @scala.inline
+      def decode(reader: Uint8Array): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): ColumnProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ColumnProperties]
       
       /**
         * Decodes a ColumnProperties message from the specified reader or buffer, length delimited.
@@ -2203,12 +2121,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): ColumnProperties = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): ColumnProperties = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
       
       /**
         * Encodes the specified ColumnProperties message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.verify|verify} messages.
@@ -2217,12 +2133,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.encode")
-      @js.native
-      def encode(message: IColumnProperties): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.encode")
-      @js.native
-      def encode(message: IColumnProperties, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IColumnProperties): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IColumnProperties, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified ColumnProperties message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.verify|verify} messages.
@@ -2231,12 +2145,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IColumnProperties): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IColumnProperties, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IColumnProperties): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IColumnProperties, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a ColumnProperties message from a plain object. Also converts values to their respective internal types.
@@ -2244,9 +2156,8 @@ object Intent {
         * @returns ColumnProperties
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): ColumnProperties = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
       
       /**
         * Creates a plain object from a ColumnProperties message. Also converts values to other types if specified.
@@ -2255,12 +2166,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.toObject")
-      @js.native
-      def toObject(message: ColumnProperties): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.toObject")
-      @js.native
-      def toObject(message: ColumnProperties, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: ColumnProperties): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: ColumnProperties, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a ColumnProperties message.
@@ -2268,9 +2177,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents an Image. */
@@ -2280,7 +2188,9 @@ object Intent {
       * Constructs a new Image.
       * @param [properties] Properties to set
       */
-    class Image () extends IImage {
+    class Image ()
+      extends StObject
+         with IImage {
       def this(properties: IImage) = this()
       
       /** Image accessibilityText. */
@@ -2299,18 +2209,20 @@ object Intent {
     }
     object Image {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new Image instance using the specified properties.
         * @param [properties] Properties to set
         * @returns Image instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.create")
-      @js.native
-      def create(): Image = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.create")
-      @js.native
-      def create(properties: IImage): Image = js.native
+      @scala.inline
+      def create(): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Image]
+      @scala.inline
+      def create(properties: IImage): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Image]
       
       /**
         * Decodes an Image message from the specified reader or buffer.
@@ -2321,18 +2233,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.decode")
-      @js.native
-      def decode(reader: Reader): Image = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): Image = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.decode")
-      @js.native
-      def decode(reader: Uint8Array): Image = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): Image = js.native
+      @scala.inline
+      def decode(reader: Reader): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
+      @scala.inline
+      def decode(reader: Reader, length: Double): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Image]
+      @scala.inline
+      def decode(reader: Uint8Array): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Image]
       
       /**
         * Decodes an Image message from the specified reader or buffer, length delimited.
@@ -2342,12 +2250,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): Image = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): Image = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
       
       /**
         * Encodes the specified Image message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Image.verify|verify} messages.
@@ -2356,12 +2262,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.encode")
-      @js.native
-      def encode(message: IImage): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.encode")
-      @js.native
-      def encode(message: IImage, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IImage): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IImage, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Image message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Image.verify|verify} messages.
@@ -2370,12 +2274,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IImage): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IImage, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IImage): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IImage, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates an Image message from a plain object. Also converts values to their respective internal types.
@@ -2383,9 +2285,8 @@ object Intent {
         * @returns Image
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): Image = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Image]
       
       /**
         * Creates a plain object from an Image message. Also converts values to other types if specified.
@@ -2394,12 +2295,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.toObject")
-      @js.native
-      def toObject(message: Image): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.toObject")
-      @js.native
-      def toObject(message: Image, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: Image): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: Image, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies an Image message.
@@ -2407,9 +2306,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Image.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a LinkOutSuggestion. */
@@ -2419,7 +2317,9 @@ object Intent {
       * Constructs a new LinkOutSuggestion.
       * @param [properties] Properties to set
       */
-    class LinkOutSuggestion () extends ILinkOutSuggestion {
+    class LinkOutSuggestion ()
+      extends StObject
+         with ILinkOutSuggestion {
       def this(properties: ILinkOutSuggestion) = this()
       
       /** LinkOutSuggestion destinationName. */
@@ -2438,18 +2338,20 @@ object Intent {
     }
     object LinkOutSuggestion {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new LinkOutSuggestion instance using the specified properties.
         * @param [properties] Properties to set
         * @returns LinkOutSuggestion instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.create")
-      @js.native
-      def create(): LinkOutSuggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.create")
-      @js.native
-      def create(properties: ILinkOutSuggestion): LinkOutSuggestion = js.native
+      @scala.inline
+      def create(): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[LinkOutSuggestion]
+      @scala.inline
+      def create(properties: ILinkOutSuggestion): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
       
       /**
         * Decodes a LinkOutSuggestion message from the specified reader or buffer.
@@ -2460,18 +2362,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.decode")
-      @js.native
-      def decode(reader: Reader): LinkOutSuggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): LinkOutSuggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.decode")
-      @js.native
-      def decode(reader: Uint8Array): LinkOutSuggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): LinkOutSuggestion = js.native
+      @scala.inline
+      def decode(reader: Reader): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
+      @scala.inline
+      def decode(reader: Reader, length: Double): LinkOutSuggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LinkOutSuggestion]
+      @scala.inline
+      def decode(reader: Uint8Array): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): LinkOutSuggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LinkOutSuggestion]
       
       /**
         * Decodes a LinkOutSuggestion message from the specified reader or buffer, length delimited.
@@ -2481,12 +2379,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): LinkOutSuggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): LinkOutSuggestion = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
       
       /**
         * Encodes the specified LinkOutSuggestion message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.verify|verify} messages.
@@ -2495,12 +2391,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.encode")
-      @js.native
-      def encode(message: ILinkOutSuggestion): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.encode")
-      @js.native
-      def encode(message: ILinkOutSuggestion, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ILinkOutSuggestion): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ILinkOutSuggestion, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified LinkOutSuggestion message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.verify|verify} messages.
@@ -2509,12 +2403,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ILinkOutSuggestion): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ILinkOutSuggestion, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ILinkOutSuggestion): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ILinkOutSuggestion, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a LinkOutSuggestion message from a plain object. Also converts values to their respective internal types.
@@ -2522,9 +2414,8 @@ object Intent {
         * @returns LinkOutSuggestion
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): LinkOutSuggestion = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
       
       /**
         * Creates a plain object from a LinkOutSuggestion message. Also converts values to other types if specified.
@@ -2533,12 +2424,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.toObject")
-      @js.native
-      def toObject(message: LinkOutSuggestion): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.toObject")
-      @js.native
-      def toObject(message: LinkOutSuggestion, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: LinkOutSuggestion): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: LinkOutSuggestion, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a LinkOutSuggestion message.
@@ -2546,9 +2435,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.LinkOutSuggestion.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a ListSelect. */
@@ -2558,7 +2446,9 @@ object Intent {
       * Constructs a new ListSelect.
       * @param [properties] Properties to set
       */
-    class ListSelect () extends IListSelect {
+    class ListSelect ()
+      extends StObject
+         with IListSelect {
       def this(properties: IListSelect) = this()
       
       /** ListSelect items. */
@@ -2583,6 +2473,10 @@ object Intent {
     }
     object ListSelect {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Represents an Item. */
       @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item")
       @js.native
@@ -2591,7 +2485,8 @@ object Intent {
         * @param [properties] Properties to set
         */
       class Item ()
-        extends typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem {
+        extends StObject
+           with typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem {
         def this(properties: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem) = this()
         
         /** Item description. */
@@ -2610,18 +2505,20 @@ object Intent {
       }
       object Item {
         
+        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new Item instance using the specified properties.
           * @param [properties] Properties to set
           * @returns Item instance
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.create")
-        @js.native
-        def create(): Item = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.create")
-        @js.native
-        def create(properties: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem): Item = js.native
+        @scala.inline
+        def create(): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Item]
+        @scala.inline
+        def create(properties: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Decodes an Item message from the specified reader or buffer.
@@ -2632,18 +2529,14 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.decode")
-        @js.native
-        def decode(reader: Reader): Item = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): Item = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.decode")
-        @js.native
-        def decode(reader: Uint8Array): Item = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): Item = js.native
+        @scala.inline
+        def decode(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        @scala.inline
+        def decode(reader: Reader, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
+        @scala.inline
+        def decode(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
         
         /**
           * Decodes an Item message from the specified reader or buffer, length delimited.
@@ -2653,12 +2546,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): Item = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): Item = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Encodes the specified Item message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.verify|verify} messages.
@@ -2667,15 +2558,13 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.encode")
-        @js.native
-        def encode(message: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.encode")
-        @js.native
+        @scala.inline
+        def encode(message: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
         def encode(
           message: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem,
           writer: Writer
-        ): Writer = js.native
+        ): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified Item message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.verify|verify} messages.
@@ -2684,15 +2573,13 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.encodeDelimited")
-        @js.native
+        @scala.inline
+        def encodeDelimited(message: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
         def encodeDelimited(
           message: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem,
           writer: Writer
-        ): Writer = js.native
+        ): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates an Item message from a plain object. Also converts values to their respective internal types.
@@ -2700,9 +2587,8 @@ object Intent {
           * @returns Item
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): Item = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Creates a plain object from an Item message. Also converts values to other types if specified.
@@ -2711,12 +2597,10 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.toObject")
-        @js.native
-        def toObject(message: Item): StringDictionary[js.Any] = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.toObject")
-        @js.native
-        def toObject(message: Item, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: Item): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: Item, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies an Item message.
@@ -2724,9 +2608,8 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.Item.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -2735,12 +2618,10 @@ object Intent {
         * @returns ListSelect instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.create")
-      @js.native
-      def create(): ListSelect = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.create")
-      @js.native
-      def create(properties: IListSelect): ListSelect = js.native
+      @scala.inline
+      def create(): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListSelect]
+      @scala.inline
+      def create(properties: IListSelect): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
       
       /**
         * Decodes a ListSelect message from the specified reader or buffer.
@@ -2751,18 +2632,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.decode")
-      @js.native
-      def decode(reader: Reader): ListSelect = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): ListSelect = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.decode")
-      @js.native
-      def decode(reader: Uint8Array): ListSelect = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): ListSelect = js.native
+      @scala.inline
+      def decode(reader: Reader): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
+      @scala.inline
+      def decode(reader: Reader, length: Double): ListSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSelect]
+      @scala.inline
+      def decode(reader: Uint8Array): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): ListSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSelect]
       
       /**
         * Decodes a ListSelect message from the specified reader or buffer, length delimited.
@@ -2772,12 +2649,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): ListSelect = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): ListSelect = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
       
       /**
         * Encodes the specified ListSelect message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.verify|verify} messages.
@@ -2786,12 +2661,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.encode")
-      @js.native
-      def encode(message: IListSelect): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.encode")
-      @js.native
-      def encode(message: IListSelect, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IListSelect): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IListSelect, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified ListSelect message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.verify|verify} messages.
@@ -2800,12 +2673,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IListSelect): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IListSelect, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IListSelect): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IListSelect, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a ListSelect message from a plain object. Also converts values to their respective internal types.
@@ -2813,9 +2684,8 @@ object Intent {
         * @returns ListSelect
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): ListSelect = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
       
       /**
         * Creates a plain object from a ListSelect message. Also converts values to other types if specified.
@@ -2824,12 +2694,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.toObject")
-      @js.native
-      def toObject(message: ListSelect): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.toObject")
-      @js.native
-      def toObject(message: ListSelect, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: ListSelect): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: ListSelect, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a ListSelect message.
@@ -2837,25 +2705,23 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of an Item. */
-      @js.native
       trait IItem extends StObject {
         
         /** Item description */
-        var description: js.UndefOr[String | Null] = js.native
+        var description: js.UndefOr[String | Null] = js.undefined
         
         /** Item image */
-        var image: js.UndefOr[IImage | Null] = js.native
+        var image: js.UndefOr[IImage | Null] = js.undefined
         
         /** Item info */
-        var info: js.UndefOr[ISelectItemInfo | Null] = js.native
+        var info: js.UndefOr[ISelectItemInfo | Null] = js.undefined
         
         /** Item title */
-        var title: js.UndefOr[String | Null] = js.native
+        var title: js.UndefOr[String | Null] = js.undefined
       }
       object IItem {
         
@@ -2914,7 +2780,9 @@ object Intent {
       * Constructs a new MediaContent.
       * @param [properties] Properties to set
       */
-    class MediaContent () extends IMediaContent {
+    class MediaContent ()
+      extends StObject
+         with IMediaContent {
       def this(properties: IMediaContent) = this()
       
       /** MediaContent mediaObjects. */
@@ -2933,6 +2801,10 @@ object Intent {
     }
     object MediaContent {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Represents a ResponseMediaObject. */
       @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject")
       @js.native
@@ -2940,7 +2812,9 @@ object Intent {
         * Constructs a new ResponseMediaObject.
         * @param [properties] Properties to set
         */
-      class ResponseMediaObject () extends IResponseMediaObject {
+      class ResponseMediaObject ()
+        extends StObject
+           with IResponseMediaObject {
         def this(properties: IResponseMediaObject) = this()
         
         /** ResponseMediaObject contentUrl. */
@@ -2966,18 +2840,20 @@ object Intent {
       }
       object ResponseMediaObject {
         
+        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new ResponseMediaObject instance using the specified properties.
           * @param [properties] Properties to set
           * @returns ResponseMediaObject instance
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.create")
-        @js.native
-        def create(): ResponseMediaObject = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.create")
-        @js.native
-        def create(properties: IResponseMediaObject): ResponseMediaObject = js.native
+        @scala.inline
+        def create(): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ResponseMediaObject]
+        @scala.inline
+        def create(properties: IResponseMediaObject): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
         
         /**
           * Decodes a ResponseMediaObject message from the specified reader or buffer.
@@ -2988,18 +2864,14 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.decode")
-        @js.native
-        def decode(reader: Reader): ResponseMediaObject = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): ResponseMediaObject = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.decode")
-        @js.native
-        def decode(reader: Uint8Array): ResponseMediaObject = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): ResponseMediaObject = js.native
+        @scala.inline
+        def decode(reader: Reader): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
+        @scala.inline
+        def decode(reader: Reader, length: Double): ResponseMediaObject = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResponseMediaObject]
+        @scala.inline
+        def decode(reader: Uint8Array): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): ResponseMediaObject = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResponseMediaObject]
         
         /**
           * Decodes a ResponseMediaObject message from the specified reader or buffer, length delimited.
@@ -3009,12 +2881,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): ResponseMediaObject = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): ResponseMediaObject = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
         
         /**
           * Encodes the specified ResponseMediaObject message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.verify|verify} messages.
@@ -3023,12 +2893,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.encode")
-        @js.native
-        def encode(message: IResponseMediaObject): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.encode")
-        @js.native
-        def encode(message: IResponseMediaObject, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IResponseMediaObject): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IResponseMediaObject, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified ResponseMediaObject message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.verify|verify} messages.
@@ -3037,12 +2905,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IResponseMediaObject): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IResponseMediaObject, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IResponseMediaObject): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IResponseMediaObject, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a ResponseMediaObject message from a plain object. Also converts values to their respective internal types.
@@ -3050,9 +2916,8 @@ object Intent {
           * @returns ResponseMediaObject
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): ResponseMediaObject = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
         
         /**
           * Creates a plain object from a ResponseMediaObject message. Also converts values to other types if specified.
@@ -3061,12 +2926,10 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.toObject")
-        @js.native
-        def toObject(message: ResponseMediaObject): StringDictionary[js.Any] = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.toObject")
-        @js.native
-        def toObject(message: ResponseMediaObject, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: ResponseMediaObject): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: ResponseMediaObject, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a ResponseMediaObject message.
@@ -3074,9 +2937,8 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaObject.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       @js.native
@@ -3087,15 +2949,19 @@ object Intent {
       object ResponseMediaType extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[ResponseMediaType with Double] = js.native
+        def apply(value: Double): js.UndefOr[ResponseMediaType & Double] = js.native
         
         @js.native
-        sealed trait AUDIO extends ResponseMediaType
-        /* 1 */ val AUDIO: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaType.AUDIO with Double = js.native
+        sealed trait AUDIO
+          extends StObject
+             with ResponseMediaType
+        /* 1 */ val AUDIO: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaType.AUDIO & Double = js.native
         
         @js.native
-        sealed trait RESPONSE_MEDIA_TYPE_UNSPECIFIED extends ResponseMediaType
-        /* 0 */ val RESPONSE_MEDIA_TYPE_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaType.RESPONSE_MEDIA_TYPE_UNSPECIFIED with Double = js.native
+        sealed trait RESPONSE_MEDIA_TYPE_UNSPECIFIED
+          extends StObject
+             with ResponseMediaType
+        /* 0 */ val RESPONSE_MEDIA_TYPE_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaType.RESPONSE_MEDIA_TYPE_UNSPECIFIED & Double = js.native
       }
       
       /**
@@ -3104,12 +2970,10 @@ object Intent {
         * @returns MediaContent instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.create")
-      @js.native
-      def create(): MediaContent = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.create")
-      @js.native
-      def create(properties: IMediaContent): MediaContent = js.native
+      @scala.inline
+      def create(): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MediaContent]
+      @scala.inline
+      def create(properties: IMediaContent): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
       
       /**
         * Decodes a MediaContent message from the specified reader or buffer.
@@ -3120,18 +2984,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.decode")
-      @js.native
-      def decode(reader: Reader): MediaContent = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): MediaContent = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.decode")
-      @js.native
-      def decode(reader: Uint8Array): MediaContent = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): MediaContent = js.native
+      @scala.inline
+      def decode(reader: Reader): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
+      @scala.inline
+      def decode(reader: Reader, length: Double): MediaContent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[MediaContent]
+      @scala.inline
+      def decode(reader: Uint8Array): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): MediaContent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[MediaContent]
       
       /**
         * Decodes a MediaContent message from the specified reader or buffer, length delimited.
@@ -3141,12 +3001,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): MediaContent = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): MediaContent = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
       
       /**
         * Encodes the specified MediaContent message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.verify|verify} messages.
@@ -3155,12 +3013,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.encode")
-      @js.native
-      def encode(message: IMediaContent): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.encode")
-      @js.native
-      def encode(message: IMediaContent, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IMediaContent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IMediaContent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified MediaContent message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.verify|verify} messages.
@@ -3169,12 +3025,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IMediaContent): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IMediaContent, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IMediaContent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IMediaContent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a MediaContent message from a plain object. Also converts values to their respective internal types.
@@ -3182,9 +3036,8 @@ object Intent {
         * @returns MediaContent
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): MediaContent = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
       
       /**
         * Creates a plain object from a MediaContent message. Also converts values to other types if specified.
@@ -3193,12 +3046,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.toObject")
-      @js.native
-      def toObject(message: MediaContent): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.toObject")
-      @js.native
-      def toObject(message: MediaContent, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: MediaContent): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: MediaContent, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a MediaContent message.
@@ -3206,28 +3057,26 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a ResponseMediaObject. */
-      @js.native
       trait IResponseMediaObject extends StObject {
         
         /** ResponseMediaObject contentUrl */
-        var contentUrl: js.UndefOr[String | Null] = js.native
+        var contentUrl: js.UndefOr[String | Null] = js.undefined
         
         /** ResponseMediaObject description */
-        var description: js.UndefOr[String | Null] = js.native
+        var description: js.UndefOr[String | Null] = js.undefined
         
         /** ResponseMediaObject icon */
-        var icon: js.UndefOr[IImage | Null] = js.native
+        var icon: js.UndefOr[IImage | Null] = js.undefined
         
         /** ResponseMediaObject largeImage */
-        var largeImage: js.UndefOr[IImage | Null] = js.native
+        var largeImage: js.UndefOr[IImage | Null] = js.undefined
         
         /** ResponseMediaObject name */
-        var name: js.UndefOr[String | Null] = js.native
+        var name: js.UndefOr[String | Null] = js.undefined
       }
       object IResponseMediaObject {
         
@@ -3296,51 +3145,73 @@ object Intent {
     object Platform extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[Platform with Double] = js.native
+      def apply(value: Double): js.UndefOr[Platform & Double] = js.native
       
       @js.native
-      sealed trait ACTIONS_ON_GOOGLE extends Platform
-      /* 8 */ val ACTIONS_ON_GOOGLE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.ACTIONS_ON_GOOGLE with Double = js.native
+      sealed trait ACTIONS_ON_GOOGLE
+        extends StObject
+           with Platform
+      /* 8 */ val ACTIONS_ON_GOOGLE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.ACTIONS_ON_GOOGLE & Double = js.native
       
       @js.native
-      sealed trait FACEBOOK extends Platform
-      /* 1 */ val FACEBOOK: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.FACEBOOK with Double = js.native
+      sealed trait FACEBOOK
+        extends StObject
+           with Platform
+      /* 1 */ val FACEBOOK: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.FACEBOOK & Double = js.native
       
       @js.native
-      sealed trait GOOGLE_HANGOUTS extends Platform
-      /* 11 */ val GOOGLE_HANGOUTS: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.GOOGLE_HANGOUTS with Double = js.native
+      sealed trait GOOGLE_HANGOUTS
+        extends StObject
+           with Platform
+      /* 11 */ val GOOGLE_HANGOUTS: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.GOOGLE_HANGOUTS & Double = js.native
       
       @js.native
-      sealed trait KIK extends Platform
-      /* 4 */ val KIK: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.KIK with Double = js.native
+      sealed trait KIK
+        extends StObject
+           with Platform
+      /* 4 */ val KIK: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.KIK & Double = js.native
       
       @js.native
-      sealed trait LINE extends Platform
-      /* 6 */ val LINE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.LINE with Double = js.native
+      sealed trait LINE
+        extends StObject
+           with Platform
+      /* 6 */ val LINE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.LINE & Double = js.native
       
       @js.native
-      sealed trait PLATFORM_UNSPECIFIED extends Platform
-      /* 0 */ val PLATFORM_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.PLATFORM_UNSPECIFIED with Double = js.native
+      sealed trait PLATFORM_UNSPECIFIED
+        extends StObject
+           with Platform
+      /* 0 */ val PLATFORM_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.PLATFORM_UNSPECIFIED & Double = js.native
       
       @js.native
-      sealed trait SKYPE extends Platform
-      /* 5 */ val SKYPE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.SKYPE with Double = js.native
+      sealed trait SKYPE
+        extends StObject
+           with Platform
+      /* 5 */ val SKYPE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.SKYPE & Double = js.native
       
       @js.native
-      sealed trait SLACK extends Platform
-      /* 2 */ val SLACK: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.SLACK with Double = js.native
+      sealed trait SLACK
+        extends StObject
+           with Platform
+      /* 2 */ val SLACK: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.SLACK & Double = js.native
       
       @js.native
-      sealed trait TELEGRAM extends Platform
-      /* 3 */ val TELEGRAM: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.TELEGRAM with Double = js.native
+      sealed trait TELEGRAM
+        extends StObject
+           with Platform
+      /* 3 */ val TELEGRAM: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.TELEGRAM & Double = js.native
       
       @js.native
-      sealed trait TELEPHONY extends Platform
-      /* 10 */ val TELEPHONY: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.TELEPHONY with Double = js.native
+      sealed trait TELEPHONY
+        extends StObject
+           with Platform
+      /* 10 */ val TELEPHONY: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.TELEPHONY & Double = js.native
       
       @js.native
-      sealed trait VIBER extends Platform
-      /* 7 */ val VIBER: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.VIBER with Double = js.native
+      sealed trait VIBER
+        extends StObject
+           with Platform
+      /* 7 */ val VIBER: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Platform.VIBER & Double = js.native
     }
     
     /** Represents a QuickReplies. */
@@ -3350,7 +3221,9 @@ object Intent {
       * Constructs a new QuickReplies.
       * @param [properties] Properties to set
       */
-    class QuickReplies () extends IQuickReplies {
+    class QuickReplies ()
+      extends StObject
+         with IQuickReplies {
       def this(properties: IQuickReplies) = this()
       
       /** QuickReplies quickReplies. */
@@ -3369,18 +3242,20 @@ object Intent {
     }
     object QuickReplies {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new QuickReplies instance using the specified properties.
         * @param [properties] Properties to set
         * @returns QuickReplies instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.create")
-      @js.native
-      def create(): QuickReplies = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.create")
-      @js.native
-      def create(properties: IQuickReplies): QuickReplies = js.native
+      @scala.inline
+      def create(): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[QuickReplies]
+      @scala.inline
+      def create(properties: IQuickReplies): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
       
       /**
         * Decodes a QuickReplies message from the specified reader or buffer.
@@ -3391,18 +3266,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.decode")
-      @js.native
-      def decode(reader: Reader): QuickReplies = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): QuickReplies = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.decode")
-      @js.native
-      def decode(reader: Uint8Array): QuickReplies = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): QuickReplies = js.native
+      @scala.inline
+      def decode(reader: Reader): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
+      @scala.inline
+      def decode(reader: Reader, length: Double): QuickReplies = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[QuickReplies]
+      @scala.inline
+      def decode(reader: Uint8Array): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): QuickReplies = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[QuickReplies]
       
       /**
         * Decodes a QuickReplies message from the specified reader or buffer, length delimited.
@@ -3412,12 +3283,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): QuickReplies = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): QuickReplies = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
       
       /**
         * Encodes the specified QuickReplies message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.verify|verify} messages.
@@ -3426,12 +3295,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.encode")
-      @js.native
-      def encode(message: IQuickReplies): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.encode")
-      @js.native
-      def encode(message: IQuickReplies, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IQuickReplies): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IQuickReplies, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified QuickReplies message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.verify|verify} messages.
@@ -3440,12 +3307,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IQuickReplies): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IQuickReplies, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IQuickReplies): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IQuickReplies, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a QuickReplies message from a plain object. Also converts values to their respective internal types.
@@ -3453,9 +3318,8 @@ object Intent {
         * @returns QuickReplies
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): QuickReplies = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
       
       /**
         * Creates a plain object from a QuickReplies message. Also converts values to other types if specified.
@@ -3464,12 +3328,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.toObject")
-      @js.native
-      def toObject(message: QuickReplies): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.toObject")
-      @js.native
-      def toObject(message: QuickReplies, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: QuickReplies): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: QuickReplies, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a QuickReplies message.
@@ -3477,9 +3339,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.QuickReplies.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a RbmCardContent. */
@@ -3489,7 +3350,9 @@ object Intent {
       * Constructs a new RbmCardContent.
       * @param [properties] Properties to set
       */
-    class RbmCardContent () extends IRbmCardContent {
+    class RbmCardContent ()
+      extends StObject
+         with IRbmCardContent {
       def this(properties: IRbmCardContent) = this()
       
       /** RbmCardContent description. */
@@ -3512,6 +3375,10 @@ object Intent {
     }
     object RbmCardContent {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Represents a RbmMedia. */
       @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia")
       @js.native
@@ -3519,7 +3386,9 @@ object Intent {
         * Constructs a new RbmMedia.
         * @param [properties] Properties to set
         */
-      class RbmMedia () extends IRbmMedia {
+      class RbmMedia ()
+        extends StObject
+           with IRbmMedia {
         def this(properties: IRbmMedia) = this()
         
         /** RbmMedia fileUri. */
@@ -3542,6 +3411,10 @@ object Intent {
       }
       object RbmMedia {
         
+        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia")
+        @js.native
+        val ^ : js.Any = js.native
+        
         @js.native
         sealed trait Height extends StObject
         /** Height enum. */
@@ -3550,23 +3423,31 @@ object Intent {
         object Height extends StObject {
           
           @JSBracketAccess
-          def apply(value: Double): js.UndefOr[Height with Double] = js.native
+          def apply(value: Double): js.UndefOr[Height & Double] = js.native
           
           @js.native
-          sealed trait HEIGHT_UNSPECIFIED extends Height
-          /* 0 */ val HEIGHT_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.HEIGHT_UNSPECIFIED with Double = js.native
+          sealed trait HEIGHT_UNSPECIFIED
+            extends StObject
+               with Height
+          /* 0 */ val HEIGHT_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.HEIGHT_UNSPECIFIED & Double = js.native
           
           @js.native
-          sealed trait MEDIUM extends Height
-          /* 2 */ val MEDIUM: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.MEDIUM with Double = js.native
+          sealed trait MEDIUM
+            extends StObject
+               with Height
+          /* 2 */ val MEDIUM: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.MEDIUM & Double = js.native
           
           @js.native
-          sealed trait SHORT extends Height
-          /* 1 */ val SHORT: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.SHORT with Double = js.native
+          sealed trait SHORT
+            extends StObject
+               with Height
+          /* 1 */ val SHORT: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.SHORT & Double = js.native
           
           @js.native
-          sealed trait TALL extends Height
-          /* 3 */ val TALL: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.TALL with Double = js.native
+          sealed trait TALL
+            extends StObject
+               with Height
+          /* 3 */ val TALL: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.TALL & Double = js.native
         }
         
         /**
@@ -3575,12 +3456,10 @@ object Intent {
           * @returns RbmMedia instance
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.create")
-        @js.native
-        def create(): RbmMedia = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.create")
-        @js.native
-        def create(properties: IRbmMedia): RbmMedia = js.native
+        @scala.inline
+        def create(): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmMedia]
+        @scala.inline
+        def create(properties: IRbmMedia): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
         
         /**
           * Decodes a RbmMedia message from the specified reader or buffer.
@@ -3591,18 +3470,14 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.decode")
-        @js.native
-        def decode(reader: Reader): RbmMedia = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): RbmMedia = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.decode")
-        @js.native
-        def decode(reader: Uint8Array): RbmMedia = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): RbmMedia = js.native
+        @scala.inline
+        def decode(reader: Reader): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
+        @scala.inline
+        def decode(reader: Reader, length: Double): RbmMedia = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmMedia]
+        @scala.inline
+        def decode(reader: Uint8Array): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): RbmMedia = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmMedia]
         
         /**
           * Decodes a RbmMedia message from the specified reader or buffer, length delimited.
@@ -3612,12 +3487,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): RbmMedia = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): RbmMedia = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
         
         /**
           * Encodes the specified RbmMedia message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.verify|verify} messages.
@@ -3626,12 +3499,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.encode")
-        @js.native
-        def encode(message: IRbmMedia): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.encode")
-        @js.native
-        def encode(message: IRbmMedia, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IRbmMedia): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IRbmMedia, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified RbmMedia message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.verify|verify} messages.
@@ -3640,12 +3511,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IRbmMedia): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IRbmMedia, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IRbmMedia): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IRbmMedia, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a RbmMedia message from a plain object. Also converts values to their respective internal types.
@@ -3653,9 +3522,8 @@ object Intent {
           * @returns RbmMedia
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): RbmMedia = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): RbmMedia = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmMedia]
         
         /**
           * Creates a plain object from a RbmMedia message. Also converts values to other types if specified.
@@ -3664,12 +3532,10 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.toObject")
-        @js.native
-        def toObject(message: RbmMedia): StringDictionary[js.Any] = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.toObject")
-        @js.native
-        def toObject(message: RbmMedia, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: RbmMedia): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: RbmMedia, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a RbmMedia message.
@@ -3677,9 +3543,8 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -3688,12 +3553,10 @@ object Intent {
         * @returns RbmCardContent instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.create")
-      @js.native
-      def create(): RbmCardContent = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.create")
-      @js.native
-      def create(properties: IRbmCardContent): RbmCardContent = js.native
+      @scala.inline
+      def create(): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmCardContent]
+      @scala.inline
+      def create(properties: IRbmCardContent): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
       
       /**
         * Decodes a RbmCardContent message from the specified reader or buffer.
@@ -3704,18 +3567,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.decode")
-      @js.native
-      def decode(reader: Reader): RbmCardContent = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): RbmCardContent = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.decode")
-      @js.native
-      def decode(reader: Uint8Array): RbmCardContent = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): RbmCardContent = js.native
+      @scala.inline
+      def decode(reader: Reader): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
+      @scala.inline
+      def decode(reader: Reader, length: Double): RbmCardContent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmCardContent]
+      @scala.inline
+      def decode(reader: Uint8Array): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): RbmCardContent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmCardContent]
       
       /**
         * Decodes a RbmCardContent message from the specified reader or buffer, length delimited.
@@ -3725,12 +3584,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): RbmCardContent = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): RbmCardContent = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
       
       /**
         * Encodes the specified RbmCardContent message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.verify|verify} messages.
@@ -3739,12 +3596,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.encode")
-      @js.native
-      def encode(message: IRbmCardContent): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.encode")
-      @js.native
-      def encode(message: IRbmCardContent, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IRbmCardContent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IRbmCardContent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified RbmCardContent message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.verify|verify} messages.
@@ -3753,12 +3608,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IRbmCardContent): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IRbmCardContent, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IRbmCardContent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IRbmCardContent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a RbmCardContent message from a plain object. Also converts values to their respective internal types.
@@ -3766,9 +3619,8 @@ object Intent {
         * @returns RbmCardContent
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): RbmCardContent = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): RbmCardContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmCardContent]
       
       /**
         * Creates a plain object from a RbmCardContent message. Also converts values to other types if specified.
@@ -3777,12 +3629,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.toObject")
-      @js.native
-      def toObject(message: RbmCardContent): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.toObject")
-      @js.native
-      def toObject(message: RbmCardContent, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: RbmCardContent): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: RbmCardContent, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a RbmCardContent message.
@@ -3790,24 +3640,22 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a RbmMedia. */
-      @js.native
       trait IRbmMedia extends StObject {
         
         /** RbmMedia fileUri */
-        var fileUri: js.UndefOr[String | Null] = js.native
+        var fileUri: js.UndefOr[String | Null] = js.undefined
         
         /** RbmMedia height */
         var height: js.UndefOr[
                 Height | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height * / any */ String) | Null
-              ] = js.native
+              ] = js.undefined
         
         /** RbmMedia thumbnailUri */
-        var thumbnailUri: js.UndefOr[String | Null] = js.native
+        var thumbnailUri: js.UndefOr[String | Null] = js.undefined
       }
       object IRbmMedia {
         
@@ -3859,7 +3707,9 @@ object Intent {
       * Constructs a new RbmCarouselCard.
       * @param [properties] Properties to set
       */
-    class RbmCarouselCard () extends IRbmCarouselCard {
+    class RbmCarouselCard ()
+      extends StObject
+         with IRbmCarouselCard {
       def this(properties: IRbmCarouselCard) = this()
       
       /** RbmCarouselCard cardContents. */
@@ -3878,6 +3728,10 @@ object Intent {
     }
     object RbmCarouselCard {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard")
+      @js.native
+      val ^ : js.Any = js.native
+      
       @js.native
       sealed trait CardWidth extends StObject
       /** CardWidth enum. */
@@ -3886,19 +3740,25 @@ object Intent {
       object CardWidth extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[CardWidth with Double] = js.native
+        def apply(value: Double): js.UndefOr[CardWidth & Double] = js.native
         
         @js.native
-        sealed trait CARD_WIDTH_UNSPECIFIED extends CardWidth
-        /* 0 */ val CARD_WIDTH_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth.CARD_WIDTH_UNSPECIFIED with Double = js.native
+        sealed trait CARD_WIDTH_UNSPECIFIED
+          extends StObject
+             with CardWidth
+        /* 0 */ val CARD_WIDTH_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth.CARD_WIDTH_UNSPECIFIED & Double = js.native
         
         @js.native
-        sealed trait MEDIUM extends CardWidth
-        /* 2 */ val MEDIUM: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth.MEDIUM with Double = js.native
+        sealed trait MEDIUM
+          extends StObject
+             with CardWidth
+        /* 2 */ val MEDIUM: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth.MEDIUM & Double = js.native
         
         @js.native
-        sealed trait SMALL extends CardWidth
-        /* 1 */ val SMALL: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth.SMALL with Double = js.native
+        sealed trait SMALL
+          extends StObject
+             with CardWidth
+        /* 1 */ val SMALL: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth.SMALL & Double = js.native
       }
       
       /**
@@ -3907,12 +3767,10 @@ object Intent {
         * @returns RbmCarouselCard instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.create")
-      @js.native
-      def create(): RbmCarouselCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.create")
-      @js.native
-      def create(properties: IRbmCarouselCard): RbmCarouselCard = js.native
+      @scala.inline
+      def create(): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmCarouselCard]
+      @scala.inline
+      def create(properties: IRbmCarouselCard): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
       
       /**
         * Decodes a RbmCarouselCard message from the specified reader or buffer.
@@ -3923,18 +3781,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.decode")
-      @js.native
-      def decode(reader: Reader): RbmCarouselCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): RbmCarouselCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.decode")
-      @js.native
-      def decode(reader: Uint8Array): RbmCarouselCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): RbmCarouselCard = js.native
+      @scala.inline
+      def decode(reader: Reader): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
+      @scala.inline
+      def decode(reader: Reader, length: Double): RbmCarouselCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmCarouselCard]
+      @scala.inline
+      def decode(reader: Uint8Array): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): RbmCarouselCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmCarouselCard]
       
       /**
         * Decodes a RbmCarouselCard message from the specified reader or buffer, length delimited.
@@ -3944,12 +3798,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): RbmCarouselCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): RbmCarouselCard = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
       
       /**
         * Encodes the specified RbmCarouselCard message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.verify|verify} messages.
@@ -3958,12 +3810,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.encode")
-      @js.native
-      def encode(message: IRbmCarouselCard): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.encode")
-      @js.native
-      def encode(message: IRbmCarouselCard, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IRbmCarouselCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IRbmCarouselCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified RbmCarouselCard message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.verify|verify} messages.
@@ -3972,12 +3822,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IRbmCarouselCard): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IRbmCarouselCard, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IRbmCarouselCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IRbmCarouselCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a RbmCarouselCard message from a plain object. Also converts values to their respective internal types.
@@ -3985,9 +3833,8 @@ object Intent {
         * @returns RbmCarouselCard
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): RbmCarouselCard = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): RbmCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmCarouselCard]
       
       /**
         * Creates a plain object from a RbmCarouselCard message. Also converts values to other types if specified.
@@ -3996,12 +3843,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.toObject")
-      @js.native
-      def toObject(message: RbmCarouselCard): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.toObject")
-      @js.native
-      def toObject(message: RbmCarouselCard, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: RbmCarouselCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: RbmCarouselCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a RbmCarouselCard message.
@@ -4009,9 +3854,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a RbmStandaloneCard. */
@@ -4021,7 +3865,9 @@ object Intent {
       * Constructs a new RbmStandaloneCard.
       * @param [properties] Properties to set
       */
-    class RbmStandaloneCard () extends IRbmStandaloneCard {
+    class RbmStandaloneCard ()
+      extends StObject
+         with IRbmStandaloneCard {
       def this(properties: IRbmStandaloneCard) = this()
       
       /** RbmStandaloneCard cardOrientation. */
@@ -4040,6 +3886,10 @@ object Intent {
     }
     object RbmStandaloneCard {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard")
+      @js.native
+      val ^ : js.Any = js.native
+      
       @js.native
       sealed trait CardOrientation extends StObject
       /** CardOrientation enum. */
@@ -4048,19 +3898,25 @@ object Intent {
       object CardOrientation extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[CardOrientation with Double] = js.native
+        def apply(value: Double): js.UndefOr[CardOrientation & Double] = js.native
         
         @js.native
-        sealed trait CARD_ORIENTATION_UNSPECIFIED extends CardOrientation
-        /* 0 */ val CARD_ORIENTATION_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.CARD_ORIENTATION_UNSPECIFIED with Double = js.native
+        sealed trait CARD_ORIENTATION_UNSPECIFIED
+          extends StObject
+             with CardOrientation
+        /* 0 */ val CARD_ORIENTATION_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.CARD_ORIENTATION_UNSPECIFIED & Double = js.native
         
         @js.native
-        sealed trait HORIZONTAL extends CardOrientation
-        /* 1 */ val HORIZONTAL: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.HORIZONTAL with Double = js.native
+        sealed trait HORIZONTAL
+          extends StObject
+             with CardOrientation
+        /* 1 */ val HORIZONTAL: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.HORIZONTAL & Double = js.native
         
         @js.native
-        sealed trait VERTICAL extends CardOrientation
-        /* 2 */ val VERTICAL: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.VERTICAL with Double = js.native
+        sealed trait VERTICAL
+          extends StObject
+             with CardOrientation
+        /* 2 */ val VERTICAL: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.VERTICAL & Double = js.native
       }
       
       @js.native
@@ -4071,19 +3927,25 @@ object Intent {
       object ThumbnailImageAlignment extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[ThumbnailImageAlignment with Double] = js.native
+        def apply(value: Double): js.UndefOr[ThumbnailImageAlignment & Double] = js.native
         
         @js.native
-        sealed trait LEFT extends ThumbnailImageAlignment
-        /* 1 */ val LEFT: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.LEFT with Double = js.native
+        sealed trait LEFT
+          extends StObject
+             with ThumbnailImageAlignment
+        /* 1 */ val LEFT: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.LEFT & Double = js.native
         
         @js.native
-        sealed trait RIGHT extends ThumbnailImageAlignment
-        /* 2 */ val RIGHT: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.RIGHT with Double = js.native
+        sealed trait RIGHT
+          extends StObject
+             with ThumbnailImageAlignment
+        /* 2 */ val RIGHT: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.RIGHT & Double = js.native
         
         @js.native
-        sealed trait THUMBNAIL_IMAGE_ALIGNMENT_UNSPECIFIED extends ThumbnailImageAlignment
-        /* 0 */ val THUMBNAIL_IMAGE_ALIGNMENT_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.THUMBNAIL_IMAGE_ALIGNMENT_UNSPECIFIED with Double = js.native
+        sealed trait THUMBNAIL_IMAGE_ALIGNMENT_UNSPECIFIED
+          extends StObject
+             with ThumbnailImageAlignment
+        /* 0 */ val THUMBNAIL_IMAGE_ALIGNMENT_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.THUMBNAIL_IMAGE_ALIGNMENT_UNSPECIFIED & Double = js.native
       }
       
       /**
@@ -4092,12 +3954,10 @@ object Intent {
         * @returns RbmStandaloneCard instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.create")
-      @js.native
-      def create(): RbmStandaloneCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.create")
-      @js.native
-      def create(properties: IRbmStandaloneCard): RbmStandaloneCard = js.native
+      @scala.inline
+      def create(): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmStandaloneCard]
+      @scala.inline
+      def create(properties: IRbmStandaloneCard): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
       
       /**
         * Decodes a RbmStandaloneCard message from the specified reader or buffer.
@@ -4108,18 +3968,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.decode")
-      @js.native
-      def decode(reader: Reader): RbmStandaloneCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): RbmStandaloneCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.decode")
-      @js.native
-      def decode(reader: Uint8Array): RbmStandaloneCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): RbmStandaloneCard = js.native
+      @scala.inline
+      def decode(reader: Reader): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
+      @scala.inline
+      def decode(reader: Reader, length: Double): RbmStandaloneCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmStandaloneCard]
+      @scala.inline
+      def decode(reader: Uint8Array): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): RbmStandaloneCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmStandaloneCard]
       
       /**
         * Decodes a RbmStandaloneCard message from the specified reader or buffer, length delimited.
@@ -4129,12 +3985,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): RbmStandaloneCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): RbmStandaloneCard = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
       
       /**
         * Encodes the specified RbmStandaloneCard message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.verify|verify} messages.
@@ -4143,12 +3997,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.encode")
-      @js.native
-      def encode(message: IRbmStandaloneCard): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.encode")
-      @js.native
-      def encode(message: IRbmStandaloneCard, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IRbmStandaloneCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IRbmStandaloneCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified RbmStandaloneCard message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.verify|verify} messages.
@@ -4157,12 +4009,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IRbmStandaloneCard): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IRbmStandaloneCard, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IRbmStandaloneCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IRbmStandaloneCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a RbmStandaloneCard message from a plain object. Also converts values to their respective internal types.
@@ -4170,9 +4020,8 @@ object Intent {
         * @returns RbmStandaloneCard
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): RbmStandaloneCard = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): RbmStandaloneCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmStandaloneCard]
       
       /**
         * Creates a plain object from a RbmStandaloneCard message. Also converts values to other types if specified.
@@ -4181,12 +4030,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.toObject")
-      @js.native
-      def toObject(message: RbmStandaloneCard): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.toObject")
-      @js.native
-      def toObject(message: RbmStandaloneCard, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: RbmStandaloneCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: RbmStandaloneCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a RbmStandaloneCard message.
@@ -4194,9 +4041,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a RbmSuggestedAction. */
@@ -4206,7 +4052,9 @@ object Intent {
       * Constructs a new RbmSuggestedAction.
       * @param [properties] Properties to set
       */
-    class RbmSuggestedAction () extends IRbmSuggestedAction {
+    class RbmSuggestedAction ()
+      extends StObject
+         with IRbmSuggestedAction {
       def this(properties: IRbmSuggestedAction) = this()
       
       /** RbmSuggestedAction action. */
@@ -4228,6 +4076,10 @@ object Intent {
     }
     object RbmSuggestedAction {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Represents a RbmSuggestedActionDial. */
       @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial")
       @js.native
@@ -4235,7 +4087,9 @@ object Intent {
         * Constructs a new RbmSuggestedActionDial.
         * @param [properties] Properties to set
         */
-      class RbmSuggestedActionDial () extends IRbmSuggestedActionDial {
+      class RbmSuggestedActionDial ()
+        extends StObject
+           with IRbmSuggestedActionDial {
         def this(properties: IRbmSuggestedActionDial) = this()
         
         /** RbmSuggestedActionDial phoneNumber. */
@@ -4250,18 +4104,20 @@ object Intent {
       }
       object RbmSuggestedActionDial {
         
+        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new RbmSuggestedActionDial instance using the specified properties.
           * @param [properties] Properties to set
           * @returns RbmSuggestedActionDial instance
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.create")
-        @js.native
-        def create(): RbmSuggestedActionDial = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.create")
-        @js.native
-        def create(properties: IRbmSuggestedActionDial): RbmSuggestedActionDial = js.native
+        @scala.inline
+        def create(): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmSuggestedActionDial]
+        @scala.inline
+        def create(properties: IRbmSuggestedActionDial): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
         
         /**
           * Decodes a RbmSuggestedActionDial message from the specified reader or buffer.
@@ -4272,18 +4128,14 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.decode")
-        @js.native
-        def decode(reader: Reader): RbmSuggestedActionDial = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): RbmSuggestedActionDial = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.decode")
-        @js.native
-        def decode(reader: Uint8Array): RbmSuggestedActionDial = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): RbmSuggestedActionDial = js.native
+        @scala.inline
+        def decode(reader: Reader): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
+        @scala.inline
+        def decode(reader: Reader, length: Double): RbmSuggestedActionDial = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionDial]
+        @scala.inline
+        def decode(reader: Uint8Array): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): RbmSuggestedActionDial = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionDial]
         
         /**
           * Decodes a RbmSuggestedActionDial message from the specified reader or buffer, length delimited.
@@ -4293,12 +4145,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): RbmSuggestedActionDial = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): RbmSuggestedActionDial = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
         
         /**
           * Encodes the specified RbmSuggestedActionDial message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.verify|verify} messages.
@@ -4307,12 +4157,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.encode")
-        @js.native
-        def encode(message: IRbmSuggestedActionDial): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.encode")
-        @js.native
-        def encode(message: IRbmSuggestedActionDial, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IRbmSuggestedActionDial): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IRbmSuggestedActionDial, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified RbmSuggestedActionDial message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.verify|verify} messages.
@@ -4321,12 +4169,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IRbmSuggestedActionDial): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IRbmSuggestedActionDial, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IRbmSuggestedActionDial): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IRbmSuggestedActionDial, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a RbmSuggestedActionDial message from a plain object. Also converts values to their respective internal types.
@@ -4334,9 +4180,8 @@ object Intent {
           * @returns RbmSuggestedActionDial
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedActionDial = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedActionDial = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionDial]
         
         /**
           * Creates a plain object from a RbmSuggestedActionDial message. Also converts values to other types if specified.
@@ -4345,12 +4190,10 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.toObject")
-        @js.native
-        def toObject(message: RbmSuggestedActionDial): StringDictionary[js.Any] = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.toObject")
-        @js.native
-        def toObject(message: RbmSuggestedActionDial, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: RbmSuggestedActionDial): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: RbmSuggestedActionDial, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a RbmSuggestedActionDial message.
@@ -4358,9 +4201,8 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionDial.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /** Represents a RbmSuggestedActionOpenUri. */
@@ -4370,7 +4212,9 @@ object Intent {
         * Constructs a new RbmSuggestedActionOpenUri.
         * @param [properties] Properties to set
         */
-      class RbmSuggestedActionOpenUri () extends IRbmSuggestedActionOpenUri {
+      class RbmSuggestedActionOpenUri ()
+        extends StObject
+           with IRbmSuggestedActionOpenUri {
         def this(properties: IRbmSuggestedActionOpenUri) = this()
         
         /**
@@ -4385,18 +4229,20 @@ object Intent {
       }
       object RbmSuggestedActionOpenUri {
         
+        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new RbmSuggestedActionOpenUri instance using the specified properties.
           * @param [properties] Properties to set
           * @returns RbmSuggestedActionOpenUri instance
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.create")
-        @js.native
-        def create(): RbmSuggestedActionOpenUri = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.create")
-        @js.native
-        def create(properties: IRbmSuggestedActionOpenUri): RbmSuggestedActionOpenUri = js.native
+        @scala.inline
+        def create(): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmSuggestedActionOpenUri]
+        @scala.inline
+        def create(properties: IRbmSuggestedActionOpenUri): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
         
         /**
           * Decodes a RbmSuggestedActionOpenUri message from the specified reader or buffer.
@@ -4407,18 +4253,14 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.decode")
-        @js.native
-        def decode(reader: Reader): RbmSuggestedActionOpenUri = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): RbmSuggestedActionOpenUri = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.decode")
-        @js.native
-        def decode(reader: Uint8Array): RbmSuggestedActionOpenUri = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): RbmSuggestedActionOpenUri = js.native
+        @scala.inline
+        def decode(reader: Reader): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
+        @scala.inline
+        def decode(reader: Reader, length: Double): RbmSuggestedActionOpenUri = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionOpenUri]
+        @scala.inline
+        def decode(reader: Uint8Array): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): RbmSuggestedActionOpenUri = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionOpenUri]
         
         /**
           * Decodes a RbmSuggestedActionOpenUri message from the specified reader or buffer, length delimited.
@@ -4428,12 +4270,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): RbmSuggestedActionOpenUri = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): RbmSuggestedActionOpenUri = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
         
         /**
           * Encodes the specified RbmSuggestedActionOpenUri message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.verify|verify} messages.
@@ -4442,12 +4282,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.encode")
-        @js.native
-        def encode(message: IRbmSuggestedActionOpenUri): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.encode")
-        @js.native
-        def encode(message: IRbmSuggestedActionOpenUri, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IRbmSuggestedActionOpenUri): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IRbmSuggestedActionOpenUri, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified RbmSuggestedActionOpenUri message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.verify|verify} messages.
@@ -4456,12 +4294,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IRbmSuggestedActionOpenUri): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IRbmSuggestedActionOpenUri, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IRbmSuggestedActionOpenUri): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IRbmSuggestedActionOpenUri, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a RbmSuggestedActionOpenUri message from a plain object. Also converts values to their respective internal types.
@@ -4469,9 +4305,8 @@ object Intent {
           * @returns RbmSuggestedActionOpenUri
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedActionOpenUri = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedActionOpenUri = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionOpenUri]
         
         /**
           * Creates a plain object from a RbmSuggestedActionOpenUri message. Also converts values to other types if specified.
@@ -4480,12 +4315,10 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.toObject")
-        @js.native
-        def toObject(message: RbmSuggestedActionOpenUri): StringDictionary[js.Any] = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.toObject")
-        @js.native
-        def toObject(message: RbmSuggestedActionOpenUri, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: RbmSuggestedActionOpenUri): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: RbmSuggestedActionOpenUri, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a RbmSuggestedActionOpenUri message.
@@ -4493,9 +4326,8 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionOpenUri.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /** Represents a RbmSuggestedActionShareLocation. */
@@ -4505,7 +4337,9 @@ object Intent {
         * Constructs a new RbmSuggestedActionShareLocation.
         * @param [properties] Properties to set
         */
-      class RbmSuggestedActionShareLocation () extends IRbmSuggestedActionShareLocation {
+      class RbmSuggestedActionShareLocation ()
+        extends StObject
+           with IRbmSuggestedActionShareLocation {
         def this(properties: IRbmSuggestedActionShareLocation) = this()
         
         /**
@@ -4516,18 +4350,20 @@ object Intent {
       }
       object RbmSuggestedActionShareLocation {
         
+        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new RbmSuggestedActionShareLocation instance using the specified properties.
           * @param [properties] Properties to set
           * @returns RbmSuggestedActionShareLocation instance
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.create")
-        @js.native
-        def create(): RbmSuggestedActionShareLocation = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.create")
-        @js.native
-        def create(properties: IRbmSuggestedActionShareLocation): RbmSuggestedActionShareLocation = js.native
+        @scala.inline
+        def create(): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmSuggestedActionShareLocation]
+        @scala.inline
+        def create(properties: IRbmSuggestedActionShareLocation): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
         
         /**
           * Decodes a RbmSuggestedActionShareLocation message from the specified reader or buffer.
@@ -4538,18 +4374,14 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.decode")
-        @js.native
-        def decode(reader: Reader): RbmSuggestedActionShareLocation = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): RbmSuggestedActionShareLocation = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.decode")
-        @js.native
-        def decode(reader: Uint8Array): RbmSuggestedActionShareLocation = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): RbmSuggestedActionShareLocation = js.native
+        @scala.inline
+        def decode(reader: Reader): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
+        @scala.inline
+        def decode(reader: Reader, length: Double): RbmSuggestedActionShareLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionShareLocation]
+        @scala.inline
+        def decode(reader: Uint8Array): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): RbmSuggestedActionShareLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedActionShareLocation]
         
         /**
           * Decodes a RbmSuggestedActionShareLocation message from the specified reader or buffer, length delimited.
@@ -4559,12 +4391,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): RbmSuggestedActionShareLocation = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): RbmSuggestedActionShareLocation = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
         
         /**
           * Encodes the specified RbmSuggestedActionShareLocation message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.verify|verify} messages.
@@ -4573,12 +4403,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.encode")
-        @js.native
-        def encode(message: IRbmSuggestedActionShareLocation): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.encode")
-        @js.native
-        def encode(message: IRbmSuggestedActionShareLocation, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IRbmSuggestedActionShareLocation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IRbmSuggestedActionShareLocation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified RbmSuggestedActionShareLocation message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.verify|verify} messages.
@@ -4587,12 +4415,10 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IRbmSuggestedActionShareLocation): Writer = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IRbmSuggestedActionShareLocation, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IRbmSuggestedActionShareLocation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IRbmSuggestedActionShareLocation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a RbmSuggestedActionShareLocation message from a plain object. Also converts values to their respective internal types.
@@ -4600,9 +4426,8 @@ object Intent {
           * @returns RbmSuggestedActionShareLocation
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedActionShareLocation = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedActionShareLocation = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedActionShareLocation]
         
         /**
           * Creates a plain object from a RbmSuggestedActionShareLocation message. Also converts values to other types if specified.
@@ -4611,12 +4436,10 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.toObject")
-        @js.native
-        def toObject(message: RbmSuggestedActionShareLocation): StringDictionary[js.Any] = js.native
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.toObject")
-        @js.native
-        def toObject(message: RbmSuggestedActionShareLocation, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: RbmSuggestedActionShareLocation): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: RbmSuggestedActionShareLocation, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a RbmSuggestedActionShareLocation message.
@@ -4624,9 +4447,8 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.RbmSuggestedActionShareLocation.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -4635,12 +4457,10 @@ object Intent {
         * @returns RbmSuggestedAction instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.create")
-      @js.native
-      def create(): RbmSuggestedAction = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.create")
-      @js.native
-      def create(properties: IRbmSuggestedAction): RbmSuggestedAction = js.native
+      @scala.inline
+      def create(): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmSuggestedAction]
+      @scala.inline
+      def create(properties: IRbmSuggestedAction): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
       
       /**
         * Decodes a RbmSuggestedAction message from the specified reader or buffer.
@@ -4651,18 +4471,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.decode")
-      @js.native
-      def decode(reader: Reader): RbmSuggestedAction = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): RbmSuggestedAction = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.decode")
-      @js.native
-      def decode(reader: Uint8Array): RbmSuggestedAction = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): RbmSuggestedAction = js.native
+      @scala.inline
+      def decode(reader: Reader): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
+      @scala.inline
+      def decode(reader: Reader, length: Double): RbmSuggestedAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedAction]
+      @scala.inline
+      def decode(reader: Uint8Array): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): RbmSuggestedAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedAction]
       
       /**
         * Decodes a RbmSuggestedAction message from the specified reader or buffer, length delimited.
@@ -4672,12 +4488,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): RbmSuggestedAction = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): RbmSuggestedAction = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
       
       /**
         * Encodes the specified RbmSuggestedAction message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.verify|verify} messages.
@@ -4686,12 +4500,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.encode")
-      @js.native
-      def encode(message: IRbmSuggestedAction): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.encode")
-      @js.native
-      def encode(message: IRbmSuggestedAction, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IRbmSuggestedAction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IRbmSuggestedAction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified RbmSuggestedAction message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.verify|verify} messages.
@@ -4700,12 +4512,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IRbmSuggestedAction): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IRbmSuggestedAction, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IRbmSuggestedAction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IRbmSuggestedAction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a RbmSuggestedAction message from a plain object. Also converts values to their respective internal types.
@@ -4713,9 +4523,8 @@ object Intent {
         * @returns RbmSuggestedAction
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedAction = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedAction]
       
       /**
         * Creates a plain object from a RbmSuggestedAction message. Also converts values to other types if specified.
@@ -4724,12 +4533,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.toObject")
-      @js.native
-      def toObject(message: RbmSuggestedAction): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.toObject")
-      @js.native
-      def toObject(message: RbmSuggestedAction, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: RbmSuggestedAction): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: RbmSuggestedAction, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a RbmSuggestedAction message.
@@ -4737,16 +4544,14 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedAction.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a RbmSuggestedActionDial. */
-      @js.native
       trait IRbmSuggestedActionDial extends StObject {
         
         /** RbmSuggestedActionDial phoneNumber */
-        var phoneNumber: js.UndefOr[String | Null] = js.native
+        var phoneNumber: js.UndefOr[String | Null] = js.undefined
       }
       object IRbmSuggestedActionDial {
         
@@ -4771,11 +4576,10 @@ object Intent {
       }
       
       /** Properties of a RbmSuggestedActionOpenUri. */
-      @js.native
       trait IRbmSuggestedActionOpenUri extends StObject {
         
         /** RbmSuggestedActionOpenUri uri */
-        var uri: js.UndefOr[String | Null] = js.native
+        var uri: js.UndefOr[String | Null] = js.undefined
       }
       object IRbmSuggestedActionOpenUri {
         
@@ -4800,7 +4604,6 @@ object Intent {
       }
       
       /** Properties of a RbmSuggestedActionShareLocation. */
-      @js.native
       trait IRbmSuggestedActionShareLocation extends StObject
     }
     
@@ -4811,7 +4614,9 @@ object Intent {
       * Constructs a new RbmSuggestedReply.
       * @param [properties] Properties to set
       */
-    class RbmSuggestedReply () extends IRbmSuggestedReply {
+    class RbmSuggestedReply ()
+      extends StObject
+         with IRbmSuggestedReply {
       def this(properties: IRbmSuggestedReply) = this()
       
       /** RbmSuggestedReply postbackData. */
@@ -4830,18 +4635,20 @@ object Intent {
     }
     object RbmSuggestedReply {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new RbmSuggestedReply instance using the specified properties.
         * @param [properties] Properties to set
         * @returns RbmSuggestedReply instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.create")
-      @js.native
-      def create(): RbmSuggestedReply = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.create")
-      @js.native
-      def create(properties: IRbmSuggestedReply): RbmSuggestedReply = js.native
+      @scala.inline
+      def create(): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmSuggestedReply]
+      @scala.inline
+      def create(properties: IRbmSuggestedReply): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
       
       /**
         * Decodes a RbmSuggestedReply message from the specified reader or buffer.
@@ -4852,18 +4659,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.decode")
-      @js.native
-      def decode(reader: Reader): RbmSuggestedReply = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): RbmSuggestedReply = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.decode")
-      @js.native
-      def decode(reader: Uint8Array): RbmSuggestedReply = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): RbmSuggestedReply = js.native
+      @scala.inline
+      def decode(reader: Reader): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
+      @scala.inline
+      def decode(reader: Reader, length: Double): RbmSuggestedReply = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedReply]
+      @scala.inline
+      def decode(reader: Uint8Array): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): RbmSuggestedReply = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestedReply]
       
       /**
         * Decodes a RbmSuggestedReply message from the specified reader or buffer, length delimited.
@@ -4873,12 +4676,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): RbmSuggestedReply = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): RbmSuggestedReply = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
       
       /**
         * Encodes the specified RbmSuggestedReply message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.verify|verify} messages.
@@ -4887,12 +4688,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.encode")
-      @js.native
-      def encode(message: IRbmSuggestedReply): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.encode")
-      @js.native
-      def encode(message: IRbmSuggestedReply, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IRbmSuggestedReply): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IRbmSuggestedReply, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified RbmSuggestedReply message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.verify|verify} messages.
@@ -4901,12 +4700,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IRbmSuggestedReply): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IRbmSuggestedReply, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IRbmSuggestedReply): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IRbmSuggestedReply, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a RbmSuggestedReply message from a plain object. Also converts values to their respective internal types.
@@ -4914,9 +4711,8 @@ object Intent {
         * @returns RbmSuggestedReply
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedReply = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestedReply = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestedReply]
       
       /**
         * Creates a plain object from a RbmSuggestedReply message. Also converts values to other types if specified.
@@ -4925,12 +4721,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.toObject")
-      @js.native
-      def toObject(message: RbmSuggestedReply): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.toObject")
-      @js.native
-      def toObject(message: RbmSuggestedReply, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: RbmSuggestedReply): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: RbmSuggestedReply, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a RbmSuggestedReply message.
@@ -4938,9 +4732,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestedReply.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a RbmSuggestion. */
@@ -4950,7 +4743,9 @@ object Intent {
       * Constructs a new RbmSuggestion.
       * @param [properties] Properties to set
       */
-    class RbmSuggestion () extends IRbmSuggestion {
+    class RbmSuggestion ()
+      extends StObject
+         with IRbmSuggestion {
       def this(properties: IRbmSuggestion) = this()
       
       /** RbmSuggestion suggestion. */
@@ -4964,18 +4759,20 @@ object Intent {
     }
     object RbmSuggestion {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new RbmSuggestion instance using the specified properties.
         * @param [properties] Properties to set
         * @returns RbmSuggestion instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.create")
-      @js.native
-      def create(): RbmSuggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.create")
-      @js.native
-      def create(properties: IRbmSuggestion): RbmSuggestion = js.native
+      @scala.inline
+      def create(): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmSuggestion]
+      @scala.inline
+      def create(properties: IRbmSuggestion): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
       
       /**
         * Decodes a RbmSuggestion message from the specified reader or buffer.
@@ -4986,18 +4783,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.decode")
-      @js.native
-      def decode(reader: Reader): RbmSuggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): RbmSuggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.decode")
-      @js.native
-      def decode(reader: Uint8Array): RbmSuggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): RbmSuggestion = js.native
+      @scala.inline
+      def decode(reader: Reader): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
+      @scala.inline
+      def decode(reader: Reader, length: Double): RbmSuggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestion]
+      @scala.inline
+      def decode(reader: Uint8Array): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): RbmSuggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmSuggestion]
       
       /**
         * Decodes a RbmSuggestion message from the specified reader or buffer, length delimited.
@@ -5007,12 +4800,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): RbmSuggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): RbmSuggestion = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
       
       /**
         * Encodes the specified RbmSuggestion message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.verify|verify} messages.
@@ -5021,12 +4812,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.encode")
-      @js.native
-      def encode(message: IRbmSuggestion): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.encode")
-      @js.native
-      def encode(message: IRbmSuggestion, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IRbmSuggestion): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IRbmSuggestion, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified RbmSuggestion message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.verify|verify} messages.
@@ -5035,12 +4824,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IRbmSuggestion): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IRbmSuggestion, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IRbmSuggestion): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IRbmSuggestion, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a RbmSuggestion message from a plain object. Also converts values to their respective internal types.
@@ -5048,9 +4835,8 @@ object Intent {
         * @returns RbmSuggestion
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestion = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): RbmSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmSuggestion]
       
       /**
         * Creates a plain object from a RbmSuggestion message. Also converts values to other types if specified.
@@ -5059,12 +4845,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.toObject")
-      @js.native
-      def toObject(message: RbmSuggestion): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.toObject")
-      @js.native
-      def toObject(message: RbmSuggestion, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: RbmSuggestion): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: RbmSuggestion, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a RbmSuggestion message.
@@ -5072,9 +4856,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmSuggestion.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a RbmText. */
@@ -5084,7 +4867,9 @@ object Intent {
       * Constructs a new RbmText.
       * @param [properties] Properties to set
       */
-    class RbmText () extends IRbmText {
+    class RbmText ()
+      extends StObject
+         with IRbmText {
       def this(properties: IRbmText) = this()
       
       /** RbmText rbmSuggestion. */
@@ -5103,18 +4888,20 @@ object Intent {
     }
     object RbmText {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new RbmText instance using the specified properties.
         * @param [properties] Properties to set
         * @returns RbmText instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.create")
-      @js.native
-      def create(): RbmText = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.create")
-      @js.native
-      def create(properties: IRbmText): RbmText = js.native
+      @scala.inline
+      def create(): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RbmText]
+      @scala.inline
+      def create(properties: IRbmText): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RbmText]
       
       /**
         * Decodes a RbmText message from the specified reader or buffer.
@@ -5125,18 +4912,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.decode")
-      @js.native
-      def decode(reader: Reader): RbmText = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): RbmText = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.decode")
-      @js.native
-      def decode(reader: Uint8Array): RbmText = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): RbmText = js.native
+      @scala.inline
+      def decode(reader: Reader): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmText]
+      @scala.inline
+      def decode(reader: Reader, length: Double): RbmText = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmText]
+      @scala.inline
+      def decode(reader: Uint8Array): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmText]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): RbmText = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RbmText]
       
       /**
         * Decodes a RbmText message from the specified reader or buffer, length delimited.
@@ -5146,12 +4929,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): RbmText = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): RbmText = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmText]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RbmText]
       
       /**
         * Encodes the specified RbmText message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.verify|verify} messages.
@@ -5160,12 +4941,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.encode")
-      @js.native
-      def encode(message: IRbmText): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.encode")
-      @js.native
-      def encode(message: IRbmText, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IRbmText): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IRbmText, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified RbmText message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.verify|verify} messages.
@@ -5174,12 +4953,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IRbmText): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IRbmText, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IRbmText): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IRbmText, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a RbmText message from a plain object. Also converts values to their respective internal types.
@@ -5187,9 +4964,8 @@ object Intent {
         * @returns RbmText
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): RbmText = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): RbmText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RbmText]
       
       /**
         * Creates a plain object from a RbmText message. Also converts values to other types if specified.
@@ -5198,12 +4974,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.toObject")
-      @js.native
-      def toObject(message: RbmText): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.toObject")
-      @js.native
-      def toObject(message: RbmText, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: RbmText): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: RbmText, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a RbmText message.
@@ -5211,9 +4985,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.RbmText.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a SelectItemInfo. */
@@ -5223,7 +4996,9 @@ object Intent {
       * Constructs a new SelectItemInfo.
       * @param [properties] Properties to set
       */
-    class SelectItemInfo () extends ISelectItemInfo {
+    class SelectItemInfo ()
+      extends StObject
+         with ISelectItemInfo {
       def this(properties: ISelectItemInfo) = this()
       
       /** SelectItemInfo key. */
@@ -5242,18 +5017,20 @@ object Intent {
     }
     object SelectItemInfo {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new SelectItemInfo instance using the specified properties.
         * @param [properties] Properties to set
         * @returns SelectItemInfo instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.create")
-      @js.native
-      def create(): SelectItemInfo = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.create")
-      @js.native
-      def create(properties: ISelectItemInfo): SelectItemInfo = js.native
+      @scala.inline
+      def create(): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SelectItemInfo]
+      @scala.inline
+      def create(properties: ISelectItemInfo): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
       
       /**
         * Decodes a SelectItemInfo message from the specified reader or buffer.
@@ -5264,18 +5041,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.decode")
-      @js.native
-      def decode(reader: Reader): SelectItemInfo = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): SelectItemInfo = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.decode")
-      @js.native
-      def decode(reader: Uint8Array): SelectItemInfo = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): SelectItemInfo = js.native
+      @scala.inline
+      def decode(reader: Reader): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
+      @scala.inline
+      def decode(reader: Reader, length: Double): SelectItemInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SelectItemInfo]
+      @scala.inline
+      def decode(reader: Uint8Array): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): SelectItemInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SelectItemInfo]
       
       /**
         * Decodes a SelectItemInfo message from the specified reader or buffer, length delimited.
@@ -5285,12 +5058,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): SelectItemInfo = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): SelectItemInfo = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
       
       /**
         * Encodes the specified SelectItemInfo message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.verify|verify} messages.
@@ -5299,12 +5070,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.encode")
-      @js.native
-      def encode(message: ISelectItemInfo): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.encode")
-      @js.native
-      def encode(message: ISelectItemInfo, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ISelectItemInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ISelectItemInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified SelectItemInfo message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.verify|verify} messages.
@@ -5313,12 +5082,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ISelectItemInfo): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ISelectItemInfo, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ISelectItemInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ISelectItemInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a SelectItemInfo message from a plain object. Also converts values to their respective internal types.
@@ -5326,9 +5093,8 @@ object Intent {
         * @returns SelectItemInfo
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): SelectItemInfo = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
       
       /**
         * Creates a plain object from a SelectItemInfo message. Also converts values to other types if specified.
@@ -5337,12 +5103,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.toObject")
-      @js.native
-      def toObject(message: SelectItemInfo): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.toObject")
-      @js.native
-      def toObject(message: SelectItemInfo, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: SelectItemInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: SelectItemInfo, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a SelectItemInfo message.
@@ -5350,9 +5114,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SelectItemInfo.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a SimpleResponse. */
@@ -5362,7 +5125,9 @@ object Intent {
       * Constructs a new SimpleResponse.
       * @param [properties] Properties to set
       */
-    class SimpleResponse () extends ISimpleResponse {
+    class SimpleResponse ()
+      extends StObject
+         with ISimpleResponse {
       def this(properties: ISimpleResponse) = this()
       
       /** SimpleResponse displayText. */
@@ -5385,18 +5150,20 @@ object Intent {
     }
     object SimpleResponse {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new SimpleResponse instance using the specified properties.
         * @param [properties] Properties to set
         * @returns SimpleResponse instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.create")
-      @js.native
-      def create(): SimpleResponse = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.create")
-      @js.native
-      def create(properties: ISimpleResponse): SimpleResponse = js.native
+      @scala.inline
+      def create(): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SimpleResponse]
+      @scala.inline
+      def create(properties: ISimpleResponse): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
       
       /**
         * Decodes a SimpleResponse message from the specified reader or buffer.
@@ -5407,18 +5174,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.decode")
-      @js.native
-      def decode(reader: Reader): SimpleResponse = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): SimpleResponse = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.decode")
-      @js.native
-      def decode(reader: Uint8Array): SimpleResponse = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): SimpleResponse = js.native
+      @scala.inline
+      def decode(reader: Reader): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
+      @scala.inline
+      def decode(reader: Reader, length: Double): SimpleResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponse]
+      @scala.inline
+      def decode(reader: Uint8Array): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): SimpleResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponse]
       
       /**
         * Decodes a SimpleResponse message from the specified reader or buffer, length delimited.
@@ -5428,12 +5191,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): SimpleResponse = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): SimpleResponse = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
       
       /**
         * Encodes the specified SimpleResponse message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.verify|verify} messages.
@@ -5442,12 +5203,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.encode")
-      @js.native
-      def encode(message: ISimpleResponse): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.encode")
-      @js.native
-      def encode(message: ISimpleResponse, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ISimpleResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ISimpleResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified SimpleResponse message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.verify|verify} messages.
@@ -5456,12 +5215,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ISimpleResponse): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ISimpleResponse, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ISimpleResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ISimpleResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a SimpleResponse message from a plain object. Also converts values to their respective internal types.
@@ -5469,9 +5226,8 @@ object Intent {
         * @returns SimpleResponse
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): SimpleResponse = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
       
       /**
         * Creates a plain object from a SimpleResponse message. Also converts values to other types if specified.
@@ -5480,12 +5236,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.toObject")
-      @js.native
-      def toObject(message: SimpleResponse): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.toObject")
-      @js.native
-      def toObject(message: SimpleResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: SimpleResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: SimpleResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a SimpleResponse message.
@@ -5493,9 +5247,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponse.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a SimpleResponses. */
@@ -5505,7 +5258,9 @@ object Intent {
       * Constructs a new SimpleResponses.
       * @param [properties] Properties to set
       */
-    class SimpleResponses () extends ISimpleResponses {
+    class SimpleResponses ()
+      extends StObject
+         with ISimpleResponses {
       def this(properties: ISimpleResponses) = this()
       
       /** SimpleResponses simpleResponses. */
@@ -5520,18 +5275,20 @@ object Intent {
     }
     object SimpleResponses {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new SimpleResponses instance using the specified properties.
         * @param [properties] Properties to set
         * @returns SimpleResponses instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.create")
-      @js.native
-      def create(): SimpleResponses = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.create")
-      @js.native
-      def create(properties: ISimpleResponses): SimpleResponses = js.native
+      @scala.inline
+      def create(): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SimpleResponses]
+      @scala.inline
+      def create(properties: ISimpleResponses): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
       
       /**
         * Decodes a SimpleResponses message from the specified reader or buffer.
@@ -5542,18 +5299,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.decode")
-      @js.native
-      def decode(reader: Reader): SimpleResponses = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): SimpleResponses = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.decode")
-      @js.native
-      def decode(reader: Uint8Array): SimpleResponses = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): SimpleResponses = js.native
+      @scala.inline
+      def decode(reader: Reader): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
+      @scala.inline
+      def decode(reader: Reader, length: Double): SimpleResponses = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponses]
+      @scala.inline
+      def decode(reader: Uint8Array): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): SimpleResponses = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponses]
       
       /**
         * Decodes a SimpleResponses message from the specified reader or buffer, length delimited.
@@ -5563,12 +5316,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): SimpleResponses = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): SimpleResponses = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
       
       /**
         * Encodes the specified SimpleResponses message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.verify|verify} messages.
@@ -5577,12 +5328,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.encode")
-      @js.native
-      def encode(message: ISimpleResponses): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.encode")
-      @js.native
-      def encode(message: ISimpleResponses, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ISimpleResponses): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ISimpleResponses, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified SimpleResponses message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.verify|verify} messages.
@@ -5591,12 +5340,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ISimpleResponses): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ISimpleResponses, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ISimpleResponses): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ISimpleResponses, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a SimpleResponses message from a plain object. Also converts values to their respective internal types.
@@ -5604,9 +5351,8 @@ object Intent {
         * @returns SimpleResponses
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): SimpleResponses = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
       
       /**
         * Creates a plain object from a SimpleResponses message. Also converts values to other types if specified.
@@ -5615,12 +5361,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.toObject")
-      @js.native
-      def toObject(message: SimpleResponses): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.toObject")
-      @js.native
-      def toObject(message: SimpleResponses, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: SimpleResponses): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: SimpleResponses, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a SimpleResponses message.
@@ -5628,9 +5372,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.SimpleResponses.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a Suggestion. */
@@ -5640,7 +5383,9 @@ object Intent {
       * Constructs a new Suggestion.
       * @param [properties] Properties to set
       */
-    class Suggestion () extends ISuggestion {
+    class Suggestion ()
+      extends StObject
+         with ISuggestion {
       def this(properties: ISuggestion) = this()
       
       /** Suggestion title. */
@@ -5655,18 +5400,20 @@ object Intent {
     }
     object Suggestion {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new Suggestion instance using the specified properties.
         * @param [properties] Properties to set
         * @returns Suggestion instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.create")
-      @js.native
-      def create(): Suggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.create")
-      @js.native
-      def create(properties: ISuggestion): Suggestion = js.native
+      @scala.inline
+      def create(): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Suggestion]
+      @scala.inline
+      def create(properties: ISuggestion): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
       
       /**
         * Decodes a Suggestion message from the specified reader or buffer.
@@ -5677,18 +5424,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.decode")
-      @js.native
-      def decode(reader: Reader): Suggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): Suggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.decode")
-      @js.native
-      def decode(reader: Uint8Array): Suggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): Suggestion = js.native
+      @scala.inline
+      def decode(reader: Reader): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
+      @scala.inline
+      def decode(reader: Reader, length: Double): Suggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestion]
+      @scala.inline
+      def decode(reader: Uint8Array): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): Suggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestion]
       
       /**
         * Decodes a Suggestion message from the specified reader or buffer, length delimited.
@@ -5698,12 +5441,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): Suggestion = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): Suggestion = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
       
       /**
         * Encodes the specified Suggestion message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.verify|verify} messages.
@@ -5712,12 +5453,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.encode")
-      @js.native
-      def encode(message: ISuggestion): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.encode")
-      @js.native
-      def encode(message: ISuggestion, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ISuggestion): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ISuggestion, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Suggestion message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.verify|verify} messages.
@@ -5726,12 +5465,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ISuggestion): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ISuggestion, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ISuggestion): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ISuggestion, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Suggestion message from a plain object. Also converts values to their respective internal types.
@@ -5739,9 +5476,8 @@ object Intent {
         * @returns Suggestion
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): Suggestion = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
       
       /**
         * Creates a plain object from a Suggestion message. Also converts values to other types if specified.
@@ -5750,12 +5486,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.toObject")
-      @js.native
-      def toObject(message: Suggestion): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.toObject")
-      @js.native
-      def toObject(message: Suggestion, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: Suggestion): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: Suggestion, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Suggestion message.
@@ -5763,9 +5497,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestion.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a Suggestions. */
@@ -5775,7 +5508,9 @@ object Intent {
       * Constructs a new Suggestions.
       * @param [properties] Properties to set
       */
-    class Suggestions () extends ISuggestions {
+    class Suggestions ()
+      extends StObject
+         with ISuggestions {
       def this(properties: ISuggestions) = this()
       
       /** Suggestions suggestions. */
@@ -5790,18 +5525,20 @@ object Intent {
     }
     object Suggestions {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new Suggestions instance using the specified properties.
         * @param [properties] Properties to set
         * @returns Suggestions instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.create")
-      @js.native
-      def create(): Suggestions = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.create")
-      @js.native
-      def create(properties: ISuggestions): Suggestions = js.native
+      @scala.inline
+      def create(): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Suggestions]
+      @scala.inline
+      def create(properties: ISuggestions): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
       
       /**
         * Decodes a Suggestions message from the specified reader or buffer.
@@ -5812,18 +5549,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.decode")
-      @js.native
-      def decode(reader: Reader): Suggestions = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): Suggestions = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.decode")
-      @js.native
-      def decode(reader: Uint8Array): Suggestions = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): Suggestions = js.native
+      @scala.inline
+      def decode(reader: Reader): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
+      @scala.inline
+      def decode(reader: Reader, length: Double): Suggestions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestions]
+      @scala.inline
+      def decode(reader: Uint8Array): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): Suggestions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestions]
       
       /**
         * Decodes a Suggestions message from the specified reader or buffer, length delimited.
@@ -5833,12 +5566,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): Suggestions = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): Suggestions = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
       
       /**
         * Encodes the specified Suggestions message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.verify|verify} messages.
@@ -5847,12 +5578,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.encode")
-      @js.native
-      def encode(message: ISuggestions): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.encode")
-      @js.native
-      def encode(message: ISuggestions, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ISuggestions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ISuggestions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Suggestions message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.verify|verify} messages.
@@ -5861,12 +5590,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ISuggestions): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ISuggestions, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ISuggestions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ISuggestions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Suggestions message from a plain object. Also converts values to their respective internal types.
@@ -5874,9 +5601,8 @@ object Intent {
         * @returns Suggestions
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): Suggestions = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
       
       /**
         * Creates a plain object from a Suggestions message. Also converts values to other types if specified.
@@ -5885,12 +5611,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.toObject")
-      @js.native
-      def toObject(message: Suggestions): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.toObject")
-      @js.native
-      def toObject(message: Suggestions, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: Suggestions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: Suggestions, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Suggestions message.
@@ -5898,9 +5622,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Suggestions.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TableCard. */
@@ -5910,7 +5633,9 @@ object Intent {
       * Constructs a new TableCard.
       * @param [properties] Properties to set
       */
-    class TableCard () extends ITableCard {
+    class TableCard ()
+      extends StObject
+         with ITableCard {
       def this(properties: ITableCard) = this()
       
       /** TableCard buttons. */
@@ -5941,18 +5666,20 @@ object Intent {
     }
     object TableCard {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new TableCard instance using the specified properties.
         * @param [properties] Properties to set
         * @returns TableCard instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.create")
-      @js.native
-      def create(): TableCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.create")
-      @js.native
-      def create(properties: ITableCard): TableCard = js.native
+      @scala.inline
+      def create(): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableCard]
+      @scala.inline
+      def create(properties: ITableCard): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableCard]
       
       /**
         * Decodes a TableCard message from the specified reader or buffer.
@@ -5963,18 +5690,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.decode")
-      @js.native
-      def decode(reader: Reader): TableCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): TableCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.decode")
-      @js.native
-      def decode(reader: Uint8Array): TableCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): TableCard = js.native
+      @scala.inline
+      def decode(reader: Reader): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
+      @scala.inline
+      def decode(reader: Reader, length: Double): TableCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCard]
+      @scala.inline
+      def decode(reader: Uint8Array): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): TableCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCard]
       
       /**
         * Decodes a TableCard message from the specified reader or buffer, length delimited.
@@ -5984,12 +5707,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): TableCard = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): TableCard = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
       
       /**
         * Encodes the specified TableCard message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.verify|verify} messages.
@@ -5998,12 +5719,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.encode")
-      @js.native
-      def encode(message: ITableCard): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.encode")
-      @js.native
-      def encode(message: ITableCard, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ITableCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ITableCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified TableCard message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.verify|verify} messages.
@@ -6012,12 +5731,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITableCard): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITableCard, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ITableCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ITableCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a TableCard message from a plain object. Also converts values to their respective internal types.
@@ -6025,9 +5742,8 @@ object Intent {
         * @returns TableCard
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): TableCard = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCard]
       
       /**
         * Creates a plain object from a TableCard message. Also converts values to other types if specified.
@@ -6036,12 +5752,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.toObject")
-      @js.native
-      def toObject(message: TableCard): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.toObject")
-      @js.native
-      def toObject(message: TableCard, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: TableCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: TableCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a TableCard message.
@@ -6049,9 +5763,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCard.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TableCardCell. */
@@ -6061,7 +5774,9 @@ object Intent {
       * Constructs a new TableCardCell.
       * @param [properties] Properties to set
       */
-    class TableCardCell () extends ITableCardCell {
+    class TableCardCell ()
+      extends StObject
+         with ITableCardCell {
       def this(properties: ITableCardCell) = this()
       
       /** TableCardCell text. */
@@ -6076,18 +5791,20 @@ object Intent {
     }
     object TableCardCell {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new TableCardCell instance using the specified properties.
         * @param [properties] Properties to set
         * @returns TableCardCell instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.create")
-      @js.native
-      def create(): TableCardCell = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.create")
-      @js.native
-      def create(properties: ITableCardCell): TableCardCell = js.native
+      @scala.inline
+      def create(): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableCardCell]
+      @scala.inline
+      def create(properties: ITableCardCell): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
       
       /**
         * Decodes a TableCardCell message from the specified reader or buffer.
@@ -6098,18 +5815,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.decode")
-      @js.native
-      def decode(reader: Reader): TableCardCell = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): TableCardCell = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.decode")
-      @js.native
-      def decode(reader: Uint8Array): TableCardCell = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): TableCardCell = js.native
+      @scala.inline
+      def decode(reader: Reader): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
+      @scala.inline
+      def decode(reader: Reader, length: Double): TableCardCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardCell]
+      @scala.inline
+      def decode(reader: Uint8Array): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): TableCardCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardCell]
       
       /**
         * Decodes a TableCardCell message from the specified reader or buffer, length delimited.
@@ -6119,12 +5832,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): TableCardCell = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): TableCardCell = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
       
       /**
         * Encodes the specified TableCardCell message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.verify|verify} messages.
@@ -6133,12 +5844,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.encode")
-      @js.native
-      def encode(message: ITableCardCell): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.encode")
-      @js.native
-      def encode(message: ITableCardCell, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ITableCardCell): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ITableCardCell, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified TableCardCell message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.verify|verify} messages.
@@ -6147,12 +5856,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITableCardCell): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITableCardCell, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ITableCardCell): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ITableCardCell, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a TableCardCell message from a plain object. Also converts values to their respective internal types.
@@ -6160,9 +5867,8 @@ object Intent {
         * @returns TableCardCell
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): TableCardCell = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
       
       /**
         * Creates a plain object from a TableCardCell message. Also converts values to other types if specified.
@@ -6171,12 +5877,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.toObject")
-      @js.native
-      def toObject(message: TableCardCell): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.toObject")
-      @js.native
-      def toObject(message: TableCardCell, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: TableCardCell): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: TableCardCell, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a TableCardCell message.
@@ -6184,9 +5888,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardCell.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TableCardRow. */
@@ -6196,7 +5899,9 @@ object Intent {
       * Constructs a new TableCardRow.
       * @param [properties] Properties to set
       */
-    class TableCardRow () extends ITableCardRow {
+    class TableCardRow ()
+      extends StObject
+         with ITableCardRow {
       def this(properties: ITableCardRow) = this()
       
       /** TableCardRow cells. */
@@ -6215,18 +5920,20 @@ object Intent {
     }
     object TableCardRow {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new TableCardRow instance using the specified properties.
         * @param [properties] Properties to set
         * @returns TableCardRow instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.create")
-      @js.native
-      def create(): TableCardRow = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.create")
-      @js.native
-      def create(properties: ITableCardRow): TableCardRow = js.native
+      @scala.inline
+      def create(): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableCardRow]
+      @scala.inline
+      def create(properties: ITableCardRow): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
       
       /**
         * Decodes a TableCardRow message from the specified reader or buffer.
@@ -6237,18 +5944,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.decode")
-      @js.native
-      def decode(reader: Reader): TableCardRow = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): TableCardRow = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.decode")
-      @js.native
-      def decode(reader: Uint8Array): TableCardRow = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): TableCardRow = js.native
+      @scala.inline
+      def decode(reader: Reader): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
+      @scala.inline
+      def decode(reader: Reader, length: Double): TableCardRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardRow]
+      @scala.inline
+      def decode(reader: Uint8Array): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): TableCardRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardRow]
       
       /**
         * Decodes a TableCardRow message from the specified reader or buffer, length delimited.
@@ -6258,12 +5961,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): TableCardRow = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): TableCardRow = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
       
       /**
         * Encodes the specified TableCardRow message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.verify|verify} messages.
@@ -6272,12 +5973,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.encode")
-      @js.native
-      def encode(message: ITableCardRow): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.encode")
-      @js.native
-      def encode(message: ITableCardRow, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ITableCardRow): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ITableCardRow, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified TableCardRow message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.verify|verify} messages.
@@ -6286,12 +5985,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITableCardRow): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITableCardRow, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ITableCardRow): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ITableCardRow, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a TableCardRow message from a plain object. Also converts values to their respective internal types.
@@ -6299,9 +5996,8 @@ object Intent {
         * @returns TableCardRow
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): TableCardRow = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
       
       /**
         * Creates a plain object from a TableCardRow message. Also converts values to other types if specified.
@@ -6310,12 +6006,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.toObject")
-      @js.native
-      def toObject(message: TableCardRow): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.toObject")
-      @js.native
-      def toObject(message: TableCardRow, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: TableCardRow): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: TableCardRow, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a TableCardRow message.
@@ -6323,9 +6017,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TableCardRow.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TelephonyPlayAudio. */
@@ -6335,7 +6028,9 @@ object Intent {
       * Constructs a new TelephonyPlayAudio.
       * @param [properties] Properties to set
       */
-    class TelephonyPlayAudio () extends ITelephonyPlayAudio {
+    class TelephonyPlayAudio ()
+      extends StObject
+         with ITelephonyPlayAudio {
       def this(properties: ITelephonyPlayAudio) = this()
       
       /** TelephonyPlayAudio audioUri. */
@@ -6350,18 +6045,20 @@ object Intent {
     }
     object TelephonyPlayAudio {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new TelephonyPlayAudio instance using the specified properties.
         * @param [properties] Properties to set
         * @returns TelephonyPlayAudio instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.create")
-      @js.native
-      def create(): TelephonyPlayAudio = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.create")
-      @js.native
-      def create(properties: ITelephonyPlayAudio): TelephonyPlayAudio = js.native
+      @scala.inline
+      def create(): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TelephonyPlayAudio]
+      @scala.inline
+      def create(properties: ITelephonyPlayAudio): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
       
       /**
         * Decodes a TelephonyPlayAudio message from the specified reader or buffer.
@@ -6372,18 +6069,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.decode")
-      @js.native
-      def decode(reader: Reader): TelephonyPlayAudio = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): TelephonyPlayAudio = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.decode")
-      @js.native
-      def decode(reader: Uint8Array): TelephonyPlayAudio = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): TelephonyPlayAudio = js.native
+      @scala.inline
+      def decode(reader: Reader): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
+      @scala.inline
+      def decode(reader: Reader, length: Double): TelephonyPlayAudio = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonyPlayAudio]
+      @scala.inline
+      def decode(reader: Uint8Array): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): TelephonyPlayAudio = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonyPlayAudio]
       
       /**
         * Decodes a TelephonyPlayAudio message from the specified reader or buffer, length delimited.
@@ -6393,12 +6086,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): TelephonyPlayAudio = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): TelephonyPlayAudio = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
       
       /**
         * Encodes the specified TelephonyPlayAudio message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.verify|verify} messages.
@@ -6407,12 +6098,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.encode")
-      @js.native
-      def encode(message: ITelephonyPlayAudio): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.encode")
-      @js.native
-      def encode(message: ITelephonyPlayAudio, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ITelephonyPlayAudio): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ITelephonyPlayAudio, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified TelephonyPlayAudio message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.verify|verify} messages.
@@ -6421,12 +6110,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITelephonyPlayAudio): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITelephonyPlayAudio, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ITelephonyPlayAudio): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ITelephonyPlayAudio, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a TelephonyPlayAudio message from a plain object. Also converts values to their respective internal types.
@@ -6434,9 +6121,8 @@ object Intent {
         * @returns TelephonyPlayAudio
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): TelephonyPlayAudio = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): TelephonyPlayAudio = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TelephonyPlayAudio]
       
       /**
         * Creates a plain object from a TelephonyPlayAudio message. Also converts values to other types if specified.
@@ -6445,12 +6131,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.toObject")
-      @js.native
-      def toObject(message: TelephonyPlayAudio): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.toObject")
-      @js.native
-      def toObject(message: TelephonyPlayAudio, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: TelephonyPlayAudio): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: TelephonyPlayAudio, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a TelephonyPlayAudio message.
@@ -6458,9 +6142,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyPlayAudio.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TelephonySynthesizeSpeech. */
@@ -6470,7 +6153,9 @@ object Intent {
       * Constructs a new TelephonySynthesizeSpeech.
       * @param [properties] Properties to set
       */
-    class TelephonySynthesizeSpeech () extends ITelephonySynthesizeSpeech {
+    class TelephonySynthesizeSpeech ()
+      extends StObject
+         with ITelephonySynthesizeSpeech {
       def this(properties: ITelephonySynthesizeSpeech) = this()
       
       /** TelephonySynthesizeSpeech source. */
@@ -6492,18 +6177,20 @@ object Intent {
     }
     object TelephonySynthesizeSpeech {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new TelephonySynthesizeSpeech instance using the specified properties.
         * @param [properties] Properties to set
         * @returns TelephonySynthesizeSpeech instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.create")
-      @js.native
-      def create(): TelephonySynthesizeSpeech = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.create")
-      @js.native
-      def create(properties: ITelephonySynthesizeSpeech): TelephonySynthesizeSpeech = js.native
+      @scala.inline
+      def create(): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TelephonySynthesizeSpeech]
+      @scala.inline
+      def create(properties: ITelephonySynthesizeSpeech): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
       
       /**
         * Decodes a TelephonySynthesizeSpeech message from the specified reader or buffer.
@@ -6514,18 +6201,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.decode")
-      @js.native
-      def decode(reader: Reader): TelephonySynthesizeSpeech = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): TelephonySynthesizeSpeech = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.decode")
-      @js.native
-      def decode(reader: Uint8Array): TelephonySynthesizeSpeech = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): TelephonySynthesizeSpeech = js.native
+      @scala.inline
+      def decode(reader: Reader): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
+      @scala.inline
+      def decode(reader: Reader, length: Double): TelephonySynthesizeSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonySynthesizeSpeech]
+      @scala.inline
+      def decode(reader: Uint8Array): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): TelephonySynthesizeSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonySynthesizeSpeech]
       
       /**
         * Decodes a TelephonySynthesizeSpeech message from the specified reader or buffer, length delimited.
@@ -6535,12 +6218,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): TelephonySynthesizeSpeech = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): TelephonySynthesizeSpeech = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
       
       /**
         * Encodes the specified TelephonySynthesizeSpeech message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.verify|verify} messages.
@@ -6549,12 +6230,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.encode")
-      @js.native
-      def encode(message: ITelephonySynthesizeSpeech): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.encode")
-      @js.native
-      def encode(message: ITelephonySynthesizeSpeech, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ITelephonySynthesizeSpeech): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ITelephonySynthesizeSpeech, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified TelephonySynthesizeSpeech message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.verify|verify} messages.
@@ -6563,12 +6242,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITelephonySynthesizeSpeech): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITelephonySynthesizeSpeech, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ITelephonySynthesizeSpeech): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ITelephonySynthesizeSpeech, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a TelephonySynthesizeSpeech message from a plain object. Also converts values to their respective internal types.
@@ -6576,9 +6253,8 @@ object Intent {
         * @returns TelephonySynthesizeSpeech
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): TelephonySynthesizeSpeech = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): TelephonySynthesizeSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TelephonySynthesizeSpeech]
       
       /**
         * Creates a plain object from a TelephonySynthesizeSpeech message. Also converts values to other types if specified.
@@ -6587,12 +6263,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.toObject")
-      @js.native
-      def toObject(message: TelephonySynthesizeSpeech): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.toObject")
-      @js.native
-      def toObject(message: TelephonySynthesizeSpeech, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: TelephonySynthesizeSpeech): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: TelephonySynthesizeSpeech, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a TelephonySynthesizeSpeech message.
@@ -6600,9 +6274,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonySynthesizeSpeech.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TelephonyTransferCall. */
@@ -6612,7 +6285,9 @@ object Intent {
       * Constructs a new TelephonyTransferCall.
       * @param [properties] Properties to set
       */
-    class TelephonyTransferCall () extends ITelephonyTransferCall {
+    class TelephonyTransferCall ()
+      extends StObject
+         with ITelephonyTransferCall {
       def this(properties: ITelephonyTransferCall) = this()
       
       /** TelephonyTransferCall phoneNumber. */
@@ -6627,18 +6302,20 @@ object Intent {
     }
     object TelephonyTransferCall {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new TelephonyTransferCall instance using the specified properties.
         * @param [properties] Properties to set
         * @returns TelephonyTransferCall instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.create")
-      @js.native
-      def create(): TelephonyTransferCall = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.create")
-      @js.native
-      def create(properties: ITelephonyTransferCall): TelephonyTransferCall = js.native
+      @scala.inline
+      def create(): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TelephonyTransferCall]
+      @scala.inline
+      def create(properties: ITelephonyTransferCall): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
       
       /**
         * Decodes a TelephonyTransferCall message from the specified reader or buffer.
@@ -6649,18 +6326,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.decode")
-      @js.native
-      def decode(reader: Reader): TelephonyTransferCall = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): TelephonyTransferCall = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.decode")
-      @js.native
-      def decode(reader: Uint8Array): TelephonyTransferCall = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): TelephonyTransferCall = js.native
+      @scala.inline
+      def decode(reader: Reader): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
+      @scala.inline
+      def decode(reader: Reader, length: Double): TelephonyTransferCall = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonyTransferCall]
+      @scala.inline
+      def decode(reader: Uint8Array): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): TelephonyTransferCall = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TelephonyTransferCall]
       
       /**
         * Decodes a TelephonyTransferCall message from the specified reader or buffer, length delimited.
@@ -6670,12 +6343,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): TelephonyTransferCall = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): TelephonyTransferCall = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
       
       /**
         * Encodes the specified TelephonyTransferCall message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.verify|verify} messages.
@@ -6684,12 +6355,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.encode")
-      @js.native
-      def encode(message: ITelephonyTransferCall): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.encode")
-      @js.native
-      def encode(message: ITelephonyTransferCall, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ITelephonyTransferCall): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ITelephonyTransferCall, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified TelephonyTransferCall message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.verify|verify} messages.
@@ -6698,12 +6367,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITelephonyTransferCall): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITelephonyTransferCall, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ITelephonyTransferCall): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ITelephonyTransferCall, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a TelephonyTransferCall message from a plain object. Also converts values to their respective internal types.
@@ -6711,9 +6378,8 @@ object Intent {
         * @returns TelephonyTransferCall
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): TelephonyTransferCall = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): TelephonyTransferCall = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TelephonyTransferCall]
       
       /**
         * Creates a plain object from a TelephonyTransferCall message. Also converts values to other types if specified.
@@ -6722,12 +6388,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.toObject")
-      @js.native
-      def toObject(message: TelephonyTransferCall): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.toObject")
-      @js.native
-      def toObject(message: TelephonyTransferCall, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: TelephonyTransferCall): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: TelephonyTransferCall, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a TelephonyTransferCall message.
@@ -6735,9 +6399,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.TelephonyTransferCall.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a Text. */
@@ -6747,7 +6410,9 @@ object Intent {
       * Constructs a new Text.
       * @param [properties] Properties to set
       */
-    class Text () extends IText {
+    class Text ()
+      extends StObject
+         with IText {
       def this(properties: IText) = this()
       
       /** Text text. */
@@ -6762,18 +6427,20 @@ object Intent {
     }
     object Text {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new Text instance using the specified properties.
         * @param [properties] Properties to set
         * @returns Text instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.create")
-      @js.native
-      def create(): typings.std.Text = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.create")
-      @js.native
-      def create(properties: IText): typings.std.Text = js.native
+      @scala.inline
+      def create(): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.std.Text]
+      @scala.inline
+      def create(properties: IText): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
       
       /**
         * Decodes a Text message from the specified reader or buffer.
@@ -6784,18 +6451,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.decode")
-      @js.native
-      def decode(reader: Reader): typings.std.Text = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): typings.std.Text = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.decode")
-      @js.native
-      def decode(reader: Uint8Array): typings.std.Text = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): typings.std.Text = js.native
+      @scala.inline
+      def decode(reader: Reader): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
+      @scala.inline
+      def decode(reader: Reader, length: Double): typings.std.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Text]
+      @scala.inline
+      def decode(reader: Uint8Array): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): typings.std.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Text]
       
       /**
         * Decodes a Text message from the specified reader or buffer, length delimited.
@@ -6805,12 +6468,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): typings.std.Text = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): typings.std.Text = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
       
       /**
         * Encodes the specified Text message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Text.verify|verify} messages.
@@ -6819,12 +6480,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.encode")
-      @js.native
-      def encode(message: IText): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.encode")
-      @js.native
-      def encode(message: IText, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IText): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IText, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Text message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.Text.verify|verify} messages.
@@ -6833,12 +6492,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IText): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IText, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IText): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IText, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Text message from a plain object. Also converts values to their respective internal types.
@@ -6846,9 +6503,8 @@ object Intent {
         * @returns Text
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): typings.std.Text = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
       
       /**
         * Creates a plain object from a Text message. Also converts values to other types if specified.
@@ -6857,12 +6513,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.toObject")
-      @js.native
-      def toObject(message: typings.std.Text): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.toObject")
-      @js.native
-      def toObject(message: typings.std.Text, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: typings.std.Text): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: typings.std.Text, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Text message.
@@ -6870,9 +6524,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.Text.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /**
@@ -6881,12 +6534,10 @@ object Intent {
       * @returns Message instance
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.create")
-    @js.native
-    def create(): Message = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.create")
-    @js.native
-    def create(properties: IMessage): Message = js.native
+    @scala.inline
+    def create(): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Message]
+    @scala.inline
+    def create(properties: IMessage): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Message]
     
     /**
       * Decodes a Message message from the specified reader or buffer.
@@ -6897,18 +6548,14 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.decode")
-    @js.native
-    def decode(reader: Reader): Message = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Message = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.decode")
-    @js.native
-    def decode(reader: Uint8Array): Message = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Message = js.native
+    @scala.inline
+    def decode(reader: Reader): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Message]
+    @scala.inline
+    def decode(reader: Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Message]
     
     /**
       * Decodes a Message message from the specified reader or buffer, length delimited.
@@ -6918,12 +6565,10 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Message = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Message = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
     
     /**
       * Encodes the specified Message message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.verify|verify} messages.
@@ -6932,12 +6577,10 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.encode")
-    @js.native
-    def encode(message: IMessage): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.encode")
-    @js.native
-    def encode(message: IMessage, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IMessage): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IMessage, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Message message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Message.verify|verify} messages.
@@ -6946,12 +6589,10 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IMessage): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IMessage, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IMessage): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IMessage, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Message message from a plain object. Also converts values to their respective internal types.
@@ -6959,9 +6600,8 @@ object Intent {
       * @returns Message
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Message = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Message]
     
     /**
       * Creates a plain object from a Message message. Also converts values to other types if specified.
@@ -6970,12 +6610,10 @@ object Intent {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.toObject")
-    @js.native
-    def toObject(message: Message): StringDictionary[js.Any] = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.toObject")
-    @js.native
-    def toObject(message: Message, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Message): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Message, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Message message.
@@ -6983,28 +6621,26 @@ object Intent {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Message.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
     /** Properties of a BasicCard. */
-    @js.native
     trait IBasicCard extends StObject {
       
       /** BasicCard buttons */
-      var buttons: js.UndefOr[js.Array[IButton] | Null] = js.native
+      var buttons: js.UndefOr[js.Array[IButton] | Null] = js.undefined
       
       /** BasicCard formattedText */
-      var formattedText: js.UndefOr[String | Null] = js.native
+      var formattedText: js.UndefOr[String | Null] = js.undefined
       
       /** BasicCard image */
-      var image: js.UndefOr[IImage | Null] = js.native
+      var image: js.UndefOr[IImage | Null] = js.undefined
       
       /** BasicCard subtitle */
-      var subtitle: js.UndefOr[String | Null] = js.native
+      var subtitle: js.UndefOr[String | Null] = js.undefined
       
       /** BasicCard title */
-      var title: js.UndefOr[String | Null] = js.native
+      var title: js.UndefOr[String | Null] = js.undefined
     }
     object IBasicCard {
       
@@ -7068,16 +6704,15 @@ object Intent {
     }
     
     /** Properties of a BrowseCarouselCard. */
-    @js.native
     trait IBrowseCarouselCard extends StObject {
       
       /** BrowseCarouselCard imageDisplayOptions */
       var imageDisplayOptions: js.UndefOr[
             ImageDisplayOptions | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions * / any */ String) | Null
-          ] = js.native
+          ] = js.undefined
       
       /** BrowseCarouselCard items */
-      var items: js.UndefOr[js.Array[IBrowseCarouselCardItem] | Null] = js.native
+      var items: js.UndefOr[js.Array[IBrowseCarouselCardItem] | Null] = js.undefined
     }
     object IBrowseCarouselCard {
       
@@ -7116,7 +6751,6 @@ object Intent {
     }
     
     /** Properties of a Card. */
-    @js.native
     trait ICard extends StObject {
       
       /** Card buttons */
@@ -7124,16 +6758,16 @@ object Intent {
             (js.Array[
               typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.Card.IButton
             ]) | Null
-          ] = js.native
+          ] = js.undefined
       
       /** Card imageUri */
-      var imageUri: js.UndefOr[String | Null] = js.native
+      var imageUri: js.UndefOr[String | Null] = js.undefined
       
       /** Card subtitle */
-      var subtitle: js.UndefOr[String | Null] = js.native
+      var subtitle: js.UndefOr[String | Null] = js.undefined
       
       /** Card title */
-      var title: js.UndefOr[String | Null] = js.native
+      var title: js.UndefOr[String | Null] = js.undefined
     }
     object ICard {
       
@@ -7192,11 +6826,10 @@ object Intent {
     }
     
     /** Properties of a CarouselSelect. */
-    @js.native
     trait ICarouselSelect extends StObject {
       
       /** CarouselSelect items */
-      var items: js.UndefOr[js.Array[IItem] | Null] = js.native
+      var items: js.UndefOr[js.Array[IItem] | Null] = js.undefined
     }
     object ICarouselSelect {
       
@@ -7224,16 +6857,15 @@ object Intent {
     }
     
     /** Properties of a ColumnProperties. */
-    @js.native
     trait IColumnProperties extends StObject {
       
       /** ColumnProperties header */
-      var header: js.UndefOr[String | Null] = js.native
+      var header: js.UndefOr[String | Null] = js.undefined
       
       /** ColumnProperties horizontalAlignment */
       var horizontalAlignment: js.UndefOr[
             HorizontalAlignment | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment * / any */ String) | Null
-          ] = js.native
+          ] = js.undefined
     }
     object IColumnProperties {
       
@@ -7269,14 +6901,13 @@ object Intent {
     }
     
     /** Properties of an Image. */
-    @js.native
     trait IImage extends StObject {
       
       /** Image accessibilityText */
-      var accessibilityText: js.UndefOr[String | Null] = js.native
+      var accessibilityText: js.UndefOr[String | Null] = js.undefined
       
       /** Image imageUri */
-      var imageUri: js.UndefOr[String | Null] = js.native
+      var imageUri: js.UndefOr[String | Null] = js.undefined
     }
     object IImage {
       
@@ -7310,14 +6941,13 @@ object Intent {
     }
     
     /** Properties of a LinkOutSuggestion. */
-    @js.native
     trait ILinkOutSuggestion extends StObject {
       
       /** LinkOutSuggestion destinationName */
-      var destinationName: js.UndefOr[String | Null] = js.native
+      var destinationName: js.UndefOr[String | Null] = js.undefined
       
       /** LinkOutSuggestion uri */
-      var uri: js.UndefOr[String | Null] = js.native
+      var uri: js.UndefOr[String | Null] = js.undefined
     }
     object ILinkOutSuggestion {
       
@@ -7351,7 +6981,6 @@ object Intent {
     }
     
     /** Properties of a ListSelect. */
-    @js.native
     trait IListSelect extends StObject {
       
       /** ListSelect items */
@@ -7359,13 +6988,13 @@ object Intent {
             (js.Array[
               typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.Message.ListSelect.IItem
             ]) | Null
-          ] = js.native
+          ] = js.undefined
       
       /** ListSelect subtitle */
-      var subtitle: js.UndefOr[String | Null] = js.native
+      var subtitle: js.UndefOr[String | Null] = js.undefined
       
       /** ListSelect title */
-      var title: js.UndefOr[String | Null] = js.native
+      var title: js.UndefOr[String | Null] = js.undefined
     }
     object IListSelect {
       
@@ -7415,16 +7044,15 @@ object Intent {
     }
     
     /** Properties of a MediaContent. */
-    @js.native
     trait IMediaContent extends StObject {
       
       /** MediaContent mediaObjects */
-      var mediaObjects: js.UndefOr[js.Array[IResponseMediaObject] | Null] = js.native
+      var mediaObjects: js.UndefOr[js.Array[IResponseMediaObject] | Null] = js.undefined
       
       /** MediaContent mediaType */
       var mediaType: js.UndefOr[
             ResponseMediaType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaType * / any */ String) | Null
-          ] = js.native
+          ] = js.undefined
     }
     object IMediaContent {
       
@@ -7463,14 +7091,13 @@ object Intent {
     }
     
     /** Properties of a QuickReplies. */
-    @js.native
     trait IQuickReplies extends StObject {
       
       /** QuickReplies quickReplies */
-      var quickReplies: js.UndefOr[js.Array[String] | Null] = js.native
+      var quickReplies: js.UndefOr[js.Array[String] | Null] = js.undefined
       
       /** QuickReplies title */
-      var title: js.UndefOr[String | Null] = js.native
+      var title: js.UndefOr[String | Null] = js.undefined
     }
     object IQuickReplies {
       
@@ -7507,20 +7134,19 @@ object Intent {
     }
     
     /** Properties of a RbmCardContent. */
-    @js.native
     trait IRbmCardContent extends StObject {
       
       /** RbmCardContent description */
-      var description: js.UndefOr[String | Null] = js.native
+      var description: js.UndefOr[String | Null] = js.undefined
       
       /** RbmCardContent media */
-      var media: js.UndefOr[IRbmMedia | Null] = js.native
+      var media: js.UndefOr[IRbmMedia | Null] = js.undefined
       
       /** RbmCardContent suggestions */
-      var suggestions: js.UndefOr[js.Array[IRbmSuggestion] | Null] = js.native
+      var suggestions: js.UndefOr[js.Array[IRbmSuggestion] | Null] = js.undefined
       
       /** RbmCardContent title */
-      var title: js.UndefOr[String | Null] = js.native
+      var title: js.UndefOr[String | Null] = js.undefined
     }
     object IRbmCardContent {
       
@@ -7575,16 +7201,15 @@ object Intent {
     }
     
     /** Properties of a RbmCarouselCard. */
-    @js.native
     trait IRbmCarouselCard extends StObject {
       
       /** RbmCarouselCard cardContents */
-      var cardContents: js.UndefOr[js.Array[IRbmCardContent] | Null] = js.native
+      var cardContents: js.UndefOr[js.Array[IRbmCardContent] | Null] = js.undefined
       
       /** RbmCarouselCard cardWidth */
       var cardWidth: js.UndefOr[
             CardWidth | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth * / any */ String) | Null
-          ] = js.native
+          ] = js.undefined
     }
     object IRbmCarouselCard {
       
@@ -7623,21 +7248,20 @@ object Intent {
     }
     
     /** Properties of a RbmStandaloneCard. */
-    @js.native
     trait IRbmStandaloneCard extends StObject {
       
       /** RbmStandaloneCard cardContent */
-      var cardContent: js.UndefOr[IRbmCardContent | Null] = js.native
+      var cardContent: js.UndefOr[IRbmCardContent | Null] = js.undefined
       
       /** RbmStandaloneCard cardOrientation */
       var cardOrientation: js.UndefOr[
             CardOrientation | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation * / any */ String) | Null
-          ] = js.native
+          ] = js.undefined
       
       /** RbmStandaloneCard thumbnailImageAlignment */
       var thumbnailImageAlignment: js.UndefOr[
             ThumbnailImageAlignment | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment * / any */ String) | Null
-          ] = js.native
+          ] = js.undefined
     }
     object IRbmStandaloneCard {
       
@@ -7684,23 +7308,22 @@ object Intent {
     }
     
     /** Properties of a RbmSuggestedAction. */
-    @js.native
     trait IRbmSuggestedAction extends StObject {
       
       /** RbmSuggestedAction dial */
-      var dial: js.UndefOr[IRbmSuggestedActionDial | Null] = js.native
+      var dial: js.UndefOr[IRbmSuggestedActionDial | Null] = js.undefined
       
       /** RbmSuggestedAction openUrl */
-      var openUrl: js.UndefOr[IRbmSuggestedActionOpenUri | Null] = js.native
+      var openUrl: js.UndefOr[IRbmSuggestedActionOpenUri | Null] = js.undefined
       
       /** RbmSuggestedAction postbackData */
-      var postbackData: js.UndefOr[String | Null] = js.native
+      var postbackData: js.UndefOr[String | Null] = js.undefined
       
       /** RbmSuggestedAction shareLocation */
-      var shareLocation: js.UndefOr[IRbmSuggestedActionShareLocation | Null] = js.native
+      var shareLocation: js.UndefOr[IRbmSuggestedActionShareLocation | Null] = js.undefined
       
       /** RbmSuggestedAction text */
-      var text: js.UndefOr[String | Null] = js.native
+      var text: js.UndefOr[String | Null] = js.undefined
     }
     object IRbmSuggestedAction {
       
@@ -7761,14 +7384,13 @@ object Intent {
     }
     
     /** Properties of a RbmSuggestedReply. */
-    @js.native
     trait IRbmSuggestedReply extends StObject {
       
       /** RbmSuggestedReply postbackData */
-      var postbackData: js.UndefOr[String | Null] = js.native
+      var postbackData: js.UndefOr[String | Null] = js.undefined
       
       /** RbmSuggestedReply text */
-      var text: js.UndefOr[String | Null] = js.native
+      var text: js.UndefOr[String | Null] = js.undefined
     }
     object IRbmSuggestedReply {
       
@@ -7802,14 +7424,13 @@ object Intent {
     }
     
     /** Properties of a RbmSuggestion. */
-    @js.native
     trait IRbmSuggestion extends StObject {
       
       /** RbmSuggestion action */
-      var action: js.UndefOr[IRbmSuggestedAction | Null] = js.native
+      var action: js.UndefOr[IRbmSuggestedAction | Null] = js.undefined
       
       /** RbmSuggestion reply */
-      var reply: js.UndefOr[IRbmSuggestedReply | Null] = js.native
+      var reply: js.UndefOr[IRbmSuggestedReply | Null] = js.undefined
     }
     object IRbmSuggestion {
       
@@ -7843,14 +7464,13 @@ object Intent {
     }
     
     /** Properties of a RbmText. */
-    @js.native
     trait IRbmText extends StObject {
       
       /** RbmText rbmSuggestion */
-      var rbmSuggestion: js.UndefOr[js.Array[IRbmSuggestion] | Null] = js.native
+      var rbmSuggestion: js.UndefOr[js.Array[IRbmSuggestion] | Null] = js.undefined
       
       /** RbmText text */
-      var text: js.UndefOr[String | Null] = js.native
+      var text: js.UndefOr[String | Null] = js.undefined
     }
     object IRbmText {
       
@@ -7887,14 +7507,13 @@ object Intent {
     }
     
     /** Properties of a SelectItemInfo. */
-    @js.native
     trait ISelectItemInfo extends StObject {
       
       /** SelectItemInfo key */
-      var key: js.UndefOr[String | Null] = js.native
+      var key: js.UndefOr[String | Null] = js.undefined
       
       /** SelectItemInfo synonyms */
-      var synonyms: js.UndefOr[js.Array[String] | Null] = js.native
+      var synonyms: js.UndefOr[js.Array[String] | Null] = js.undefined
     }
     object ISelectItemInfo {
       
@@ -7931,17 +7550,16 @@ object Intent {
     }
     
     /** Properties of a SimpleResponse. */
-    @js.native
     trait ISimpleResponse extends StObject {
       
       /** SimpleResponse displayText */
-      var displayText: js.UndefOr[String | Null] = js.native
+      var displayText: js.UndefOr[String | Null] = js.undefined
       
       /** SimpleResponse ssml */
-      var ssml: js.UndefOr[String | Null] = js.native
+      var ssml: js.UndefOr[String | Null] = js.undefined
       
       /** SimpleResponse textToSpeech */
-      var textToSpeech: js.UndefOr[String | Null] = js.native
+      var textToSpeech: js.UndefOr[String | Null] = js.undefined
     }
     object ISimpleResponse {
       
@@ -7984,11 +7602,10 @@ object Intent {
     }
     
     /** Properties of a SimpleResponses. */
-    @js.native
     trait ISimpleResponses extends StObject {
       
       /** SimpleResponses simpleResponses */
-      var simpleResponses: js.UndefOr[js.Array[ISimpleResponse] | Null] = js.native
+      var simpleResponses: js.UndefOr[js.Array[ISimpleResponse] | Null] = js.undefined
     }
     object ISimpleResponses {
       
@@ -8016,11 +7633,10 @@ object Intent {
     }
     
     /** Properties of a Suggestion. */
-    @js.native
     trait ISuggestion extends StObject {
       
       /** Suggestion title */
-      var title: js.UndefOr[String | Null] = js.native
+      var title: js.UndefOr[String | Null] = js.undefined
     }
     object ISuggestion {
       
@@ -8045,11 +7661,10 @@ object Intent {
     }
     
     /** Properties of a Suggestions. */
-    @js.native
     trait ISuggestions extends StObject {
       
       /** Suggestions suggestions */
-      var suggestions: js.UndefOr[js.Array[ISuggestion] | Null] = js.native
+      var suggestions: js.UndefOr[js.Array[ISuggestion] | Null] = js.undefined
     }
     object ISuggestions {
       
@@ -8077,26 +7692,25 @@ object Intent {
     }
     
     /** Properties of a TableCard. */
-    @js.native
     trait ITableCard extends StObject {
       
       /** TableCard buttons */
-      var buttons: js.UndefOr[js.Array[IButton] | Null] = js.native
+      var buttons: js.UndefOr[js.Array[IButton] | Null] = js.undefined
       
       /** TableCard columnProperties */
-      var columnProperties: js.UndefOr[js.Array[IColumnProperties] | Null] = js.native
+      var columnProperties: js.UndefOr[js.Array[IColumnProperties] | Null] = js.undefined
       
       /** TableCard image */
-      var image: js.UndefOr[IImage | Null] = js.native
+      var image: js.UndefOr[IImage | Null] = js.undefined
       
       /** TableCard rows */
-      var rows: js.UndefOr[js.Array[ITableCardRow] | Null] = js.native
+      var rows: js.UndefOr[js.Array[ITableCardRow] | Null] = js.undefined
       
       /** TableCard subtitle */
-      var subtitle: js.UndefOr[String | Null] = js.native
+      var subtitle: js.UndefOr[String | Null] = js.undefined
       
       /** TableCard title */
-      var title: js.UndefOr[String | Null] = js.native
+      var title: js.UndefOr[String | Null] = js.undefined
     }
     object ITableCard {
       
@@ -8175,11 +7789,10 @@ object Intent {
     }
     
     /** Properties of a TableCardCell. */
-    @js.native
     trait ITableCardCell extends StObject {
       
       /** TableCardCell text */
-      var text: js.UndefOr[String | Null] = js.native
+      var text: js.UndefOr[String | Null] = js.undefined
     }
     object ITableCardCell {
       
@@ -8204,14 +7817,13 @@ object Intent {
     }
     
     /** Properties of a TableCardRow. */
-    @js.native
     trait ITableCardRow extends StObject {
       
       /** TableCardRow cells */
-      var cells: js.UndefOr[js.Array[ITableCardCell] | Null] = js.native
+      var cells: js.UndefOr[js.Array[ITableCardCell] | Null] = js.undefined
       
       /** TableCardRow dividerAfter */
-      var dividerAfter: js.UndefOr[Boolean | Null] = js.native
+      var dividerAfter: js.UndefOr[Boolean | Null] = js.undefined
     }
     object ITableCardRow {
       
@@ -8248,11 +7860,10 @@ object Intent {
     }
     
     /** Properties of a TelephonyPlayAudio. */
-    @js.native
     trait ITelephonyPlayAudio extends StObject {
       
       /** TelephonyPlayAudio audioUri */
-      var audioUri: js.UndefOr[String | Null] = js.native
+      var audioUri: js.UndefOr[String | Null] = js.undefined
     }
     object ITelephonyPlayAudio {
       
@@ -8277,14 +7888,13 @@ object Intent {
     }
     
     /** Properties of a TelephonySynthesizeSpeech. */
-    @js.native
     trait ITelephonySynthesizeSpeech extends StObject {
       
       /** TelephonySynthesizeSpeech ssml */
-      var ssml: js.UndefOr[String | Null] = js.native
+      var ssml: js.UndefOr[String | Null] = js.undefined
       
       /** TelephonySynthesizeSpeech text */
-      var text: js.UndefOr[String | Null] = js.native
+      var text: js.UndefOr[String | Null] = js.undefined
     }
     object ITelephonySynthesizeSpeech {
       
@@ -8318,11 +7928,10 @@ object Intent {
     }
     
     /** Properties of a TelephonyTransferCall. */
-    @js.native
     trait ITelephonyTransferCall extends StObject {
       
       /** TelephonyTransferCall phoneNumber */
-      var phoneNumber: js.UndefOr[String | Null] = js.native
+      var phoneNumber: js.UndefOr[String | Null] = js.undefined
     }
     object ITelephonyTransferCall {
       
@@ -8347,11 +7956,10 @@ object Intent {
     }
     
     /** Properties of a Text. */
-    @js.native
     trait IText extends StObject {
       
       /** Text text */
-      var text: js.UndefOr[js.Array[String] | Null] = js.native
+      var text: js.UndefOr[js.Array[String] | Null] = js.undefined
     }
     object IText {
       
@@ -8386,7 +7994,9 @@ object Intent {
     * Constructs a new Parameter.
     * @param [properties] Properties to set
     */
-  class Parameter () extends IParameter {
+  class Parameter ()
+    extends StObject
+       with IParameter {
     def this(properties: IParameter) = this()
     
     /** Parameter defaultValue. */
@@ -8429,18 +8039,20 @@ object Intent {
   }
   object Parameter {
     
+    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Parameter instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Parameter instance
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.create")
-    @js.native
-    def create(): Parameter = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.create")
-    @js.native
-    def create(properties: IParameter): Parameter = js.native
+    @scala.inline
+    def create(): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Parameter]
+    @scala.inline
+    def create(properties: IParameter): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Parameter]
     
     /**
       * Decodes a Parameter message from the specified reader or buffer.
@@ -8451,18 +8063,14 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.decode")
-    @js.native
-    def decode(reader: Reader): Parameter = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Parameter = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.decode")
-    @js.native
-    def decode(reader: Uint8Array): Parameter = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Parameter = js.native
+    @scala.inline
+    def decode(reader: Reader): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Parameter = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Parameter]
+    @scala.inline
+    def decode(reader: Uint8Array): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Parameter = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Parameter]
     
     /**
       * Decodes a Parameter message from the specified reader or buffer, length delimited.
@@ -8472,12 +8080,10 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Parameter = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Parameter = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
     
     /**
       * Encodes the specified Parameter message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Parameter.verify|verify} messages.
@@ -8486,12 +8092,10 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.encode")
-    @js.native
-    def encode(message: IParameter): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.encode")
-    @js.native
-    def encode(message: IParameter, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IParameter): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IParameter, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Parameter message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.Parameter.verify|verify} messages.
@@ -8500,12 +8104,10 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IParameter): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IParameter, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IParameter): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IParameter, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Parameter message from a plain object. Also converts values to their respective internal types.
@@ -8513,9 +8115,8 @@ object Intent {
       * @returns Parameter
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Parameter = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Parameter]
     
     /**
       * Creates a plain object from a Parameter message. Also converts values to other types if specified.
@@ -8524,12 +8125,10 @@ object Intent {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.toObject")
-    @js.native
-    def toObject(message: Parameter): StringDictionary[js.Any] = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.toObject")
-    @js.native
-    def toObject(message: Parameter, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Parameter): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Parameter, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Parameter message.
@@ -8537,9 +8136,8 @@ object Intent {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.Parameter.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a TrainingPhrase. */
@@ -8549,7 +8147,9 @@ object Intent {
     * Constructs a new TrainingPhrase.
     * @param [properties] Properties to set
     */
-  class TrainingPhrase () extends ITrainingPhrase {
+  class TrainingPhrase ()
+    extends StObject
+       with ITrainingPhrase {
     def this(properties: ITrainingPhrase) = this()
     
     /** TrainingPhrase name. */
@@ -8576,6 +8176,10 @@ object Intent {
   }
   object TrainingPhrase {
     
+    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /** Represents a Part. */
     @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part")
     @js.native
@@ -8583,7 +8187,9 @@ object Intent {
       * Constructs a new Part.
       * @param [properties] Properties to set
       */
-    class Part () extends IPart {
+    class Part ()
+      extends StObject
+         with IPart {
       def this(properties: IPart) = this()
       
       /** Part alias. */
@@ -8610,18 +8216,20 @@ object Intent {
     }
     object Part {
       
+      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new Part instance using the specified properties.
         * @param [properties] Properties to set
         * @returns Part instance
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.create")
-      @js.native
-      def create(): Part = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.create")
-      @js.native
-      def create(properties: IPart): Part = js.native
+      @scala.inline
+      def create(): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Part]
+      @scala.inline
+      def create(properties: IPart): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Part]
       
       /**
         * Decodes a Part message from the specified reader or buffer.
@@ -8632,18 +8240,14 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.decode")
-      @js.native
-      def decode(reader: Reader): Part = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): Part = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.decode")
-      @js.native
-      def decode(reader: Uint8Array): Part = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): Part = js.native
+      @scala.inline
+      def decode(reader: Reader): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
+      @scala.inline
+      def decode(reader: Reader, length: Double): Part = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Part]
+      @scala.inline
+      def decode(reader: Uint8Array): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): Part = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Part]
       
       /**
         * Decodes a Part message from the specified reader or buffer, length delimited.
@@ -8653,12 +8257,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): Part = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): Part = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
       
       /**
         * Encodes the specified Part message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.verify|verify} messages.
@@ -8667,12 +8269,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.encode")
-      @js.native
-      def encode(message: IPart): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.encode")
-      @js.native
-      def encode(message: IPart, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IPart): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IPart, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Part message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.verify|verify} messages.
@@ -8681,12 +8281,10 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IPart): Writer = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IPart, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IPart): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IPart, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Part message from a plain object. Also converts values to their respective internal types.
@@ -8694,9 +8292,8 @@ object Intent {
         * @returns Part
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): Part = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Part]
       
       /**
         * Creates a plain object from a Part message. Also converts values to other types if specified.
@@ -8705,12 +8302,10 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.toObject")
-      @js.native
-      def toObject(message: Part): StringDictionary[js.Any] = js.native
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.toObject")
-      @js.native
-      def toObject(message: Part, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: Part): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: Part, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Part message.
@@ -8718,9 +8313,8 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Part.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     @js.native
@@ -8731,19 +8325,25 @@ object Intent {
     object Type extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[Type with Double] = js.native
+      def apply(value: Double): js.UndefOr[Type & Double] = js.native
       
       @js.native
-      sealed trait EXAMPLE extends Type
-      /* 1 */ val EXAMPLE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Type.EXAMPLE with Double = js.native
+      sealed trait EXAMPLE
+        extends StObject
+           with Type
+      /* 1 */ val EXAMPLE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Type.EXAMPLE & Double = js.native
       
       @js.native
-      sealed trait TEMPLATE extends Type
-      /* 2 */ val TEMPLATE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Type.TEMPLATE with Double = js.native
+      sealed trait TEMPLATE
+        extends StObject
+           with Type
+      /* 2 */ val TEMPLATE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Type.TEMPLATE & Double = js.native
       
       @js.native
-      sealed trait TYPE_UNSPECIFIED extends Type
-      /* 0 */ val TYPE_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Type.TYPE_UNSPECIFIED with Double = js.native
+      sealed trait TYPE_UNSPECIFIED
+        extends StObject
+           with Type
+      /* 0 */ val TYPE_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Type.TYPE_UNSPECIFIED & Double = js.native
     }
     
     /**
@@ -8752,12 +8352,10 @@ object Intent {
       * @returns TrainingPhrase instance
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.create")
-    @js.native
-    def create(): TrainingPhrase = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.create")
-    @js.native
-    def create(properties: ITrainingPhrase): TrainingPhrase = js.native
+    @scala.inline
+    def create(): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TrainingPhrase]
+    @scala.inline
+    def create(properties: ITrainingPhrase): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
     
     /**
       * Decodes a TrainingPhrase message from the specified reader or buffer.
@@ -8768,18 +8366,14 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.decode")
-    @js.native
-    def decode(reader: Reader): TrainingPhrase = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): TrainingPhrase = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.decode")
-    @js.native
-    def decode(reader: Uint8Array): TrainingPhrase = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): TrainingPhrase = js.native
+    @scala.inline
+    def decode(reader: Reader): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
+    @scala.inline
+    def decode(reader: Reader, length: Double): TrainingPhrase = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TrainingPhrase]
+    @scala.inline
+    def decode(reader: Uint8Array): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): TrainingPhrase = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TrainingPhrase]
     
     /**
       * Decodes a TrainingPhrase message from the specified reader or buffer, length delimited.
@@ -8789,12 +8383,10 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): TrainingPhrase = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): TrainingPhrase = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
     
     /**
       * Encodes the specified TrainingPhrase message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.verify|verify} messages.
@@ -8803,12 +8395,10 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.encode")
-    @js.native
-    def encode(message: ITrainingPhrase): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.encode")
-    @js.native
-    def encode(message: ITrainingPhrase, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: ITrainingPhrase): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: ITrainingPhrase, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified TrainingPhrase message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.verify|verify} messages.
@@ -8817,12 +8407,10 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ITrainingPhrase): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ITrainingPhrase, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: ITrainingPhrase): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: ITrainingPhrase, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a TrainingPhrase message from a plain object. Also converts values to their respective internal types.
@@ -8830,9 +8418,8 @@ object Intent {
       * @returns TrainingPhrase
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): TrainingPhrase = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
     
     /**
       * Creates a plain object from a TrainingPhrase message. Also converts values to other types if specified.
@@ -8841,12 +8428,10 @@ object Intent {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.toObject")
-    @js.native
-    def toObject(message: TrainingPhrase): StringDictionary[js.Any] = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.toObject")
-    @js.native
-    def toObject(message: TrainingPhrase, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: TrainingPhrase): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: TrainingPhrase, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a TrainingPhrase message.
@@ -8854,25 +8439,23 @@ object Intent {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
     /** Properties of a Part. */
-    @js.native
     trait IPart extends StObject {
       
       /** Part alias */
-      var alias: js.UndefOr[String | Null] = js.native
+      var alias: js.UndefOr[String | Null] = js.undefined
       
       /** Part entityType */
-      var entityType: js.UndefOr[String | Null] = js.native
+      var entityType: js.UndefOr[String | Null] = js.undefined
       
       /** Part text */
-      var text: js.UndefOr[String | Null] = js.native
+      var text: js.UndefOr[String | Null] = js.undefined
       
       /** Part userDefined */
-      var userDefined: js.UndefOr[Boolean | Null] = js.native
+      var userDefined: js.UndefOr[Boolean | Null] = js.undefined
     }
     object IPart {
       
@@ -8932,19 +8515,25 @@ object Intent {
   object WebhookState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[WebhookState with Double] = js.native
+    def apply(value: Double): js.UndefOr[WebhookState & Double] = js.native
     
     @js.native
-    sealed trait WEBHOOK_STATE_ENABLED extends WebhookState
-    /* 1 */ val WEBHOOK_STATE_ENABLED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.WebhookState.WEBHOOK_STATE_ENABLED with Double = js.native
+    sealed trait WEBHOOK_STATE_ENABLED
+      extends StObject
+         with WebhookState
+    /* 1 */ val WEBHOOK_STATE_ENABLED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.WebhookState.WEBHOOK_STATE_ENABLED & Double = js.native
     
     @js.native
-    sealed trait WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING extends WebhookState
-    /* 2 */ val WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.WebhookState.WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING with Double = js.native
+    sealed trait WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING
+      extends StObject
+         with WebhookState
+    /* 2 */ val WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.WebhookState.WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING & Double = js.native
     
     @js.native
-    sealed trait WEBHOOK_STATE_UNSPECIFIED extends WebhookState
-    /* 0 */ val WEBHOOK_STATE_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.WebhookState.WEBHOOK_STATE_UNSPECIFIED with Double = js.native
+    sealed trait WEBHOOK_STATE_UNSPECIFIED
+      extends StObject
+         with WebhookState
+    /* 0 */ val WEBHOOK_STATE_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.WebhookState.WEBHOOK_STATE_UNSPECIFIED & Double = js.native
   }
   
   /**
@@ -8953,12 +8542,10 @@ object Intent {
     * @returns Intent instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.create")
-  @js.native
-  def create(): Intent = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.create")
-  @js.native
-  def create(properties: IIntent): Intent = js.native
+  @scala.inline
+  def create(): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Intent]
+  @scala.inline
+  def create(properties: IIntent): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Intent]
   
   /**
     * Decodes an Intent message from the specified reader or buffer.
@@ -8969,18 +8556,14 @@ object Intent {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.decode")
-  @js.native
-  def decode(reader: Reader): Intent = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): Intent = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.decode")
-  @js.native
-  def decode(reader: Uint8Array): Intent = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): Intent = js.native
+  @scala.inline
+  def decode(reader: Reader): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
+  @scala.inline
+  def decode(reader: Reader, length: Double): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Intent]
+  @scala.inline
+  def decode(reader: Uint8Array): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Intent]
   
   /**
     * Decodes an Intent message from the specified reader or buffer, length delimited.
@@ -8990,12 +8573,10 @@ object Intent {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): Intent = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): Intent = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
   
   /**
     * Encodes the specified Intent message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.verify|verify} messages.
@@ -9004,12 +8585,10 @@ object Intent {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.encode")
-  @js.native
-  def encode(message: IIntent): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.encode")
-  @js.native
-  def encode(message: IIntent, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IIntent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IIntent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Intent message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Intent.verify|verify} messages.
@@ -9018,12 +8597,10 @@ object Intent {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IIntent): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IIntent, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IIntent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IIntent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an Intent message from a plain object. Also converts values to their respective internal types.
@@ -9031,9 +8608,8 @@ object Intent {
     * @returns Intent
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): Intent = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Intent]
   
   /**
     * Creates a plain object from an Intent message. Also converts values to other types if specified.
@@ -9042,12 +8618,10 @@ object Intent {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.toObject")
-  @js.native
-  def toObject(message: Intent): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.toObject")
-  @js.native
-  def toObject(message: Intent, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: Intent): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: Intent, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an Intent message.
@@ -9055,19 +8629,17 @@ object Intent {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Intent.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a FollowupIntentInfo. */
-  @js.native
   trait IFollowupIntentInfo extends StObject {
     
     /** FollowupIntentInfo followupIntentName */
-    var followupIntentName: js.UndefOr[String | Null] = js.native
+    var followupIntentName: js.UndefOr[String | Null] = js.undefined
     
     /** FollowupIntentInfo parentFollowupIntentName */
-    var parentFollowupIntentName: js.UndefOr[String | Null] = js.native
+    var parentFollowupIntentName: js.UndefOr[String | Null] = js.undefined
   }
   object IFollowupIntentInfo {
     
@@ -9101,73 +8673,72 @@ object Intent {
   }
   
   /** Properties of a Message. */
-  @js.native
   trait IMessage extends StObject {
     
     /** Message basicCard */
-    var basicCard: js.UndefOr[IBasicCard | Null] = js.native
+    var basicCard: js.UndefOr[IBasicCard | Null] = js.undefined
     
     /** Message browseCarouselCard */
-    var browseCarouselCard: js.UndefOr[IBrowseCarouselCard | Null] = js.native
+    var browseCarouselCard: js.UndefOr[IBrowseCarouselCard | Null] = js.undefined
     
     /** Message card */
-    var card: js.UndefOr[ICard | Null] = js.native
+    var card: js.UndefOr[ICard | Null] = js.undefined
     
     /** Message carouselSelect */
-    var carouselSelect: js.UndefOr[ICarouselSelect | Null] = js.native
+    var carouselSelect: js.UndefOr[ICarouselSelect | Null] = js.undefined
     
     /** Message image */
-    var image: js.UndefOr[IImage | Null] = js.native
+    var image: js.UndefOr[IImage | Null] = js.undefined
     
     /** Message linkOutSuggestion */
-    var linkOutSuggestion: js.UndefOr[ILinkOutSuggestion | Null] = js.native
+    var linkOutSuggestion: js.UndefOr[ILinkOutSuggestion | Null] = js.undefined
     
     /** Message listSelect */
-    var listSelect: js.UndefOr[IListSelect | Null] = js.native
+    var listSelect: js.UndefOr[IListSelect | Null] = js.undefined
     
     /** Message mediaContent */
-    var mediaContent: js.UndefOr[IMediaContent | Null] = js.native
+    var mediaContent: js.UndefOr[IMediaContent | Null] = js.undefined
     
     /** Message payload */
-    var payload: js.UndefOr[IStruct | Null] = js.native
+    var payload: js.UndefOr[IStruct | Null] = js.undefined
     
     /** Message platform */
     var platform: js.UndefOr[
         Platform | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.Platform * / any */ String) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Message quickReplies */
-    var quickReplies: js.UndefOr[IQuickReplies | Null] = js.native
+    var quickReplies: js.UndefOr[IQuickReplies | Null] = js.undefined
     
     /** Message rbmCarouselRichCard */
-    var rbmCarouselRichCard: js.UndefOr[IRbmCarouselCard | Null] = js.native
+    var rbmCarouselRichCard: js.UndefOr[IRbmCarouselCard | Null] = js.undefined
     
     /** Message rbmStandaloneRichCard */
-    var rbmStandaloneRichCard: js.UndefOr[IRbmStandaloneCard | Null] = js.native
+    var rbmStandaloneRichCard: js.UndefOr[IRbmStandaloneCard | Null] = js.undefined
     
     /** Message rbmText */
-    var rbmText: js.UndefOr[IRbmText | Null] = js.native
+    var rbmText: js.UndefOr[IRbmText | Null] = js.undefined
     
     /** Message simpleResponses */
-    var simpleResponses: js.UndefOr[ISimpleResponses | Null] = js.native
+    var simpleResponses: js.UndefOr[ISimpleResponses | Null] = js.undefined
     
     /** Message suggestions */
-    var suggestions: js.UndefOr[ISuggestions | Null] = js.native
+    var suggestions: js.UndefOr[ISuggestions | Null] = js.undefined
     
     /** Message tableCard */
-    var tableCard: js.UndefOr[ITableCard | Null] = js.native
+    var tableCard: js.UndefOr[ITableCard | Null] = js.undefined
     
     /** Message telephonyPlayAudio */
-    var telephonyPlayAudio: js.UndefOr[ITelephonyPlayAudio | Null] = js.native
+    var telephonyPlayAudio: js.UndefOr[ITelephonyPlayAudio | Null] = js.undefined
     
     /** Message telephonySynthesizeSpeech */
-    var telephonySynthesizeSpeech: js.UndefOr[ITelephonySynthesizeSpeech | Null] = js.native
+    var telephonySynthesizeSpeech: js.UndefOr[ITelephonySynthesizeSpeech | Null] = js.undefined
     
     /** Message telephonyTransferCall */
-    var telephonyTransferCall: js.UndefOr[ITelephonyTransferCall | Null] = js.native
+    var telephonyTransferCall: js.UndefOr[ITelephonyTransferCall | Null] = js.undefined
     
     /** Message text */
-    var text: js.UndefOr[IText | Null] = js.native
+    var text: js.UndefOr[IText | Null] = js.undefined
   }
   object IMessage {
     
@@ -9374,32 +8945,31 @@ object Intent {
   }
   
   /** Properties of a Parameter. */
-  @js.native
   trait IParameter extends StObject {
     
     /** Parameter defaultValue */
-    var defaultValue: js.UndefOr[String | Null] = js.native
+    var defaultValue: js.UndefOr[String | Null] = js.undefined
     
     /** Parameter displayName */
-    var displayName: js.UndefOr[String | Null] = js.native
+    var displayName: js.UndefOr[String | Null] = js.undefined
     
     /** Parameter entityTypeDisplayName */
-    var entityTypeDisplayName: js.UndefOr[String | Null] = js.native
+    var entityTypeDisplayName: js.UndefOr[String | Null] = js.undefined
     
     /** Parameter isList */
-    var isList: js.UndefOr[Boolean | Null] = js.native
+    var isList: js.UndefOr[Boolean | Null] = js.undefined
     
     /** Parameter mandatory */
-    var mandatory: js.UndefOr[Boolean | Null] = js.native
+    var mandatory: js.UndefOr[Boolean | Null] = js.undefined
     
     /** Parameter name */
-    var name: js.UndefOr[String | Null] = js.native
+    var name: js.UndefOr[String | Null] = js.undefined
     
     /** Parameter prompts */
-    var prompts: js.UndefOr[js.Array[String] | Null] = js.native
+    var prompts: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /** Parameter value */
-    var value: js.UndefOr[String | Null] = js.native
+    var value: js.UndefOr[String | Null] = js.undefined
   }
   object IParameter {
     
@@ -9490,22 +9060,21 @@ object Intent {
   }
   
   /** Properties of a TrainingPhrase. */
-  @js.native
   trait ITrainingPhrase extends StObject {
     
     /** TrainingPhrase name */
-    var name: js.UndefOr[String | Null] = js.native
+    var name: js.UndefOr[String | Null] = js.undefined
     
     /** TrainingPhrase parts */
-    var parts: js.UndefOr[js.Array[IPart] | Null] = js.native
+    var parts: js.UndefOr[js.Array[IPart] | Null] = js.undefined
     
     /** TrainingPhrase timesAddedCount */
-    var timesAddedCount: js.UndefOr[Double | Null] = js.native
+    var timesAddedCount: js.UndefOr[Double | Null] = js.undefined
     
     /** TrainingPhrase type */
     var `type`: js.UndefOr[
         Type | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Type * / any */ String) | Null
-      ] = js.native
+      ] = js.undefined
   }
   object ITrainingPhrase {
     

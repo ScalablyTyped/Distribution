@@ -2,14 +2,12 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Publish the results of a DlpJob to a pub sub channel. Compatible with:
   * Inspect, Risk
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2PublishToPubSub extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaGooglePrivacyDlpV2PublishToPubSub extends StObject {
     * long running DlpJob sending the notifications. Format is
     * projects/{project}/topics/{topic}.
     */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2PublishToPubSub {
   

@@ -2,29 +2,29 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////////
 // Shape Interfaces
 //////////////////////////////////////////////////////////////////////////////
-@js.native
-trait ICircleOptions extends IObjectOptions {
+trait ICircleOptions
+  extends StObject
+     with IObjectOptions {
   
   /**
     * End angle of the circle
     */
-  var endAngle: js.UndefOr[Double] = js.native
+  var endAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * Radius of this circle
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * Start angle of the circle, moving clockwise
     */
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
 }
 object ICircleOptions {
   

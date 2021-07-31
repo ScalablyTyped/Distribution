@@ -3,21 +3,19 @@ package typings.paystack.anon
 import typings.paystack.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disable extends StObject {
   
-  def create(params: Authorization): js.Promise[Response] = js.native
+  def create(params: Authorization): js.Promise[Response]
   
-  def disable(params: Code): js.Promise[Responsedataundefined] = js.native
+  def disable(params: Code): js.Promise[Responsedataundefined]
   
-  def enable(params: Code): js.Promise[Responsedataundefined] = js.native
+  def enable(params: Code): js.Promise[Responsedataundefined]
   
-  def get(id_or_subscription_code: String): js.Promise[Response] = js.native
+  def get(id_or_subscription_code: String): js.Promise[Response]
   
-  def list(): js.Promise[ResponsedataArrayanymetaa] = js.native
+  def list(): js.Promise[ResponsedataArrayanymetaa]
 }
 object Disable {
   

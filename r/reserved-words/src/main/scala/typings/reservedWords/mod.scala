@@ -4,27 +4,26 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reservedWords.reservedWordsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("reserved-words", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("reserved-words", "KEYWORDS")
   @js.native
   val KEYWORDS_ : Keywords = js.native
   
-  @JSImport("reserved-words", "check")
-  @js.native
-  def check(word: String): Boolean = js.native
-  @JSImport("reserved-words", "check")
-  @js.native
-  def check(word: String, dialect: js.UndefOr[scala.Nothing], strict: Boolean): Boolean = js.native
-  @JSImport("reserved-words", "check")
-  @js.native
-  def check(word: String, dialect: Dialect): Boolean = js.native
-  @JSImport("reserved-words", "check")
-  @js.native
-  def check(word: String, dialect: Dialect, strict: Boolean): Boolean = js.native
+  @scala.inline
+  def check(word: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(word.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def check(word: String, dialect: Unit, strict: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(word.asInstanceOf[js.Any], dialect.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def check(word: String, dialect: Dialect): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(word.asInstanceOf[js.Any], dialect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def check(word: String, dialect: Dialect, strict: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(word.asInstanceOf[js.Any], dialect.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reservedWords.reservedWordsNumbers.`3`

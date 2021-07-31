@@ -3,141 +3,139 @@ package typings.puppeteer.mod
 import typings.puppeteer.puppeteerStrings.mixed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AXNode extends StObject {
   
   /**
     * What kind of autocomplete is supported by a control.
     */
-  var autocomplete: String = js.native
+  var autocomplete: String
   
   /**
     * Whether the checkbox is checked, or "mixed".
     */
-  var checked: Boolean | mixed = js.native
+  var checked: Boolean | mixed
   
   /**
     * Child nodes of this node, if any.
     */
-  var children: js.Array[AXNode] = js.native
+  var children: js.Array[AXNode]
   
   /**
     * An additional human readable description of the node.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Whether the node is disabled.
     */
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
   /**
     * Whether the node is expanded or collapsed.
     */
-  var expanded: Boolean = js.native
+  var expanded: Boolean
   
   /**
     * Whether the node is focused.
     */
-  var focused: Boolean = js.native
+  var focused: Boolean
   
   /**
     * What kind of popup is currently being shown for a node.
     */
-  var haspopup: String = js.native
+  var haspopup: String
   
   /**
     * Whether and in what way this node's value is invalid.
     */
-  var invalid: String = js.native
+  var invalid: String
   
   /**
     * Keyboard shortcuts associated with this node.
     */
-  var keyshortcuts: String = js.native
+  var keyshortcuts: String
   
   /**
     * The level of a heading.
     */
-  var level: Double = js.native
+  var level: Double
   
   /**
     * Whether the node is modal.
     */
-  var modal: Boolean = js.native
+  var modal: Boolean
   
   /**
     * Whether the node text input supports multiline.
     */
-  var multiline: Boolean = js.native
+  var multiline: Boolean
   
   /**
     * Whether more than one child can be selected.
     */
-  var multiselectable: Boolean = js.native
+  var multiselectable: Boolean
   
   /**
     * A human readable name for the node.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Whether the node is oriented horizontally or vertically.
     */
-  var orientation: String = js.native
+  var orientation: String
   
   /**
     * Whether the toggle button is checked, or "mixed".
     */
-  var pressed: Boolean | mixed = js.native
+  var pressed: Boolean | mixed
   
   /**
     * Whether the node is read only.
     */
-  var readonly: Boolean = js.native
+  var readonly: Boolean
   
   /**
     * Whether the node is required.
     */
-  var required: Boolean = js.native
+  var required: Boolean
   
   /**
     * The role.
     */
-  var role: String = js.native
+  var role: String
   
   /**
     * A human readable alternative to the role.
     */
-  var roledescription: String = js.native
+  var roledescription: String
   
   /**
     * Whether the node is selected in its parent node.
     */
-  var selected: Boolean = js.native
+  var selected: Boolean
   
   /**
     * The current value of the node.
     */
-  var value: String | Double = js.native
+  var value: String | Double
   
   /**
     * The maximum value in a node.
     */
-  var valuemax: Double = js.native
+  var valuemax: Double
   
   /**
     * The minimum value in a node.
     */
-  var valuemin: Double = js.native
+  var valuemin: Double
   
   /**
     * A description of the current value.
     */
-  var valuetext: String = js.native
+  var valuetext: String
 }
 object AXNode {
   

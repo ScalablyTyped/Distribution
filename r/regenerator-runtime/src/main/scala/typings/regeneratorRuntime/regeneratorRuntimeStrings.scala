@@ -3,18 +3,21 @@ package typings.regeneratorRuntime
 import typings.regeneratorRuntime.mod.CompletionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object regeneratorRuntimeStrings {
   
   @js.native
-  sealed trait break extends CompletionType
+  sealed trait break
+    extends StObject
+       with CompletionType
   @scala.inline
   def break: break = "break".asInstanceOf[break]
   
   @js.native
-  sealed trait continue extends CompletionType
+  sealed trait continue
+    extends StObject
+       with CompletionType
   @scala.inline
   def continue: continue = "continue".asInstanceOf[continue]
   
@@ -29,12 +32,16 @@ object regeneratorRuntimeStrings {
   def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait normal extends CompletionType
+  sealed trait normal
+    extends StObject
+       with CompletionType
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait `return` extends CompletionType
+  sealed trait `return`
+    extends StObject
+       with CompletionType
   @scala.inline
   def `return`: `return` = "return".asInstanceOf[`return`]
   
@@ -44,7 +51,9 @@ object regeneratorRuntimeStrings {
   def root: root = "root".asInstanceOf[root]
   
   @js.native
-  sealed trait `throw` extends CompletionType
+  sealed trait `throw`
+    extends StObject
+       with CompletionType
   @scala.inline
   def `throw`: `throw` = "throw".asInstanceOf[`throw`]
 }

@@ -2,25 +2,23 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReisezentrumOpeningHours extends StObject {
   
-  var Di: js.UndefOr[String] = js.native
+  var Di: js.UndefOr[String] = js.undefined
   
-  var Do: js.UndefOr[String] = js.native
+  var Do: js.UndefOr[String] = js.undefined
   
-  var Fr: js.UndefOr[String] = js.native
+  var Fr: js.UndefOr[String] = js.undefined
   
-  var Mi: js.UndefOr[String] = js.native
+  var Mi: js.UndefOr[String] = js.undefined
   
-  var Mo: js.UndefOr[String] = js.native
+  var Mo: js.UndefOr[String] = js.undefined
   
-  var Sa: js.UndefOr[String] = js.native
+  var Sa: js.UndefOr[String] = js.undefined
   
-  var So: js.UndefOr[String] = js.native
+  var So: js.UndefOr[String] = js.undefined
 }
 object ReisezentrumOpeningHours {
   

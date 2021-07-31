@@ -4,25 +4,25 @@ import typings.dashjs.dashjsStrings.streamInitialized
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StreamInitializedEvent extends Event {
+trait StreamInitializedEvent
+  extends StObject
+     with Event {
   
-  var error: Error | Null = js.native
+  var error: Error | Null
   
-  var streamInfo: StreamInfo = js.native
+  var streamInfo: StreamInfo
   
   @JSName("type")
-  var type_StreamInitializedEvent: streamInitialized = js.native
+  var type_StreamInitializedEvent: streamInitialized
 }
 object StreamInitializedEvent {
   
   @scala.inline
-  def apply(streamInfo: StreamInfo, `type`: streamInitialized): StreamInitializedEvent = {
-    val __obj = js.Dynamic.literal(streamInfo = streamInfo.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(streamInfo: StreamInfo): StreamInitializedEvent = {
+    val __obj = js.Dynamic.literal(streamInfo = streamInfo.asInstanceOf[js.Any], error = null)
+    __obj.updateDynamic("type")("streamInitialized")
     __obj.asInstanceOf[StreamInitializedEvent]
   }
   

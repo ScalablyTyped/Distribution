@@ -2,23 +2,21 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGradientOptionsCoords extends StObject {
   
-  var r1: js.UndefOr[Double] = js.native
+  var r1: js.UndefOr[Double] = js.undefined
   
-  var r2: js.UndefOr[Double] = js.native
+  var r2: js.UndefOr[Double] = js.undefined
   
-  var x1: js.UndefOr[Double] = js.native
+  var x1: js.UndefOr[Double] = js.undefined
   
-  var x2: js.UndefOr[Double] = js.native
+  var x2: js.UndefOr[Double] = js.undefined
   
-  var y1: js.UndefOr[Double] = js.native
+  var y1: js.UndefOr[Double] = js.undefined
   
-  var y2: js.UndefOr[Double] = js.native
+  var y2: js.UndefOr[Double] = js.undefined
 }
 object IGradientOptionsCoords {
   

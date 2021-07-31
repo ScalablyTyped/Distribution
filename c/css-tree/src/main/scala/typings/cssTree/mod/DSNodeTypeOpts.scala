@@ -3,24 +3,22 @@ package typings.cssTree.mod
 import typings.cssTree.cssTreeStrings.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DSNodeTypeOpts extends StObject {
   
-  var max: Double | Null = js.native
+  var max: Double | Null
   
-  var min: Double | Null = js.native
+  var min: Double | Null
   
-  var `type`: Range = js.native
+  var `type`: Range
 }
 object DSNodeTypeOpts {
   
   @scala.inline
-  def apply(`type`: Range): DSNodeTypeOpts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): DSNodeTypeOpts = {
+    val __obj = js.Dynamic.literal(max = null, min = null)
+    __obj.updateDynamic("type")("Range")
     __obj.asInstanceOf[DSNodeTypeOpts]
   }
   

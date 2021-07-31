@@ -2,43 +2,39 @@ package typings.prettierPackageJson
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("prettier-package-json", "check")
+  @JSImport("prettier-package-json", JSImport.Namespace)
   @js.native
-  def check(json: String): Boolean = js.native
-  @JSImport("prettier-package-json", "check")
-  @js.native
-  def check(json: String, options: Options): Boolean = js.native
-  @JSImport("prettier-package-json", "check")
-  @js.native
-  def check(json: js.Object): Boolean = js.native
-  @JSImport("prettier-package-json", "check")
-  @js.native
-  def check(json: js.Object, options: Options): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("prettier-package-json", "format")
-  @js.native
-  def format(json: js.Object): String = js.native
-  @JSImport("prettier-package-json", "format")
-  @js.native
-  def format(json: js.Object, options: Options): String = js.native
+  @scala.inline
+  def check(json: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def check(json: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def check(json: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def check(json: js.Object, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def format(json: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def format(json: js.Object, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type CompareFn = js.Function2[/* a */ String, /* b */ String, Double]
   
-  @js.native
   trait Options extends StObject {
     
-    var expandUsers: js.UndefOr[Boolean] = js.native
+    var expandUsers: js.UndefOr[Boolean] = js.undefined
     
-    var keyOrder: js.UndefOr[js.Array[String] | CompareFn] = js.native
+    var keyOrder: js.UndefOr[js.Array[String] | CompareFn] = js.undefined
     
-    var tabWidth: js.UndefOr[Double] = js.native
+    var tabWidth: js.UndefOr[Double] = js.undefined
     
-    var useTabs: js.UndefOr[Boolean] = js.native
+    var useTabs: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

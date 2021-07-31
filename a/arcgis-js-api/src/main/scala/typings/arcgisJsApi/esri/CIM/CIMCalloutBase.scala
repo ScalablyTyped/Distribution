@@ -2,23 +2,21 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMCalloutBase extends StObject {
   
   /**
     * The leader offset which is an offset value defining the distance (in points) between the anchor point and the beginning of the drawn leader.
     */
-  var leaderOffset: js.UndefOr[Double] = js.native
+  var leaderOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * The leader tolerance which is the closest distance (in points) to the text the anchor point can be for the callout to draw.
     */
-  var leaderTolerance: js.UndefOr[Double] = js.native
+  var leaderTolerance: js.UndefOr[Double] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object CIMCalloutBase {
   

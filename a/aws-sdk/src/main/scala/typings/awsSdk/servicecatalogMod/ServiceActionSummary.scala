@@ -2,31 +2,29 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceActionSummary extends StObject {
   
   /**
     * The self-service action definition type. For example, SSM_AUTOMATION.
     */
-  var DefinitionType: js.UndefOr[ServiceActionDefinitionType] = js.native
+  var DefinitionType: js.UndefOr[ServiceActionDefinitionType] = js.undefined
   
   /**
     * The self-service action description.
     */
-  var Description: js.UndefOr[ServiceActionDescription] = js.native
+  var Description: js.UndefOr[ServiceActionDescription] = js.undefined
   
   /**
     * The self-service action identifier.
     */
-  var Id: js.UndefOr[typings.awsSdk.servicecatalogMod.Id] = js.native
+  var Id: js.UndefOr[typings.awsSdk.servicecatalogMod.Id] = js.undefined
   
   /**
     * The self-service action name.
     */
-  var Name: js.UndefOr[ServiceActionName] = js.native
+  var Name: js.UndefOr[ServiceActionName] = js.undefined
 }
 object ServiceActionSummary {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to insert a row in a table above the selected row.
   */
-@js.native
-trait InsertTableRowAboveCommand extends CommandWithSimpleStateBase {
+trait InsertTableRowAboveCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the InsertTableRowAboveCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object InsertTableRowAboveCommand {
   

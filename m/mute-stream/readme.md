@@ -11,8 +11,8 @@ Bytes go in, but they don't come out (when muted).
 | Full name          | mute-stream |
 | Keywords           | mute, stream, pipe |
 | # releases         | 1 |
-| # dependents       | 127 |
-| # downloads        | 748459844 |
+| # dependents       | 155 |
+| # downloads        | 881313216 |
 | # stars            | 2 |
 
 ## Links

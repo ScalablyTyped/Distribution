@@ -3,7 +3,6 @@ package typings.loadableWebpackPlugin
 import typings.loadableWebpackPlugin.anon.Filename
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,7 +16,6 @@ object mod {
   
   type LoadablePlugin = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any
   
-  @js.native
   trait PluginOptions extends StObject {
     
     /**
@@ -25,19 +23,19 @@ object mod {
       *
       * @default loadable-stats.json
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * @default true
       */
-    var outputAsset: js.UndefOr[Boolean] = js.native
+    var outputAsset: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Always write stats file to disk.
       *
       * @default false
       */
-    var writeToDisk: js.UndefOr[Boolean | Filename] = js.native
+    var writeToDisk: js.UndefOr[Boolean | Filename] = js.undefined
   }
   object PluginOptions {
     

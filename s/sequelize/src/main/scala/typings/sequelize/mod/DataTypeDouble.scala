@@ -3,11 +3,12 @@ package typings.sequelize.mod
 import typings.sequelize.anon.Decimals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataTypeDouble extends DataTypeAbstractNumber[DataTypeDouble] {
+trait DataTypeDouble
+  extends StObject
+     with DataTypeAbstractNumber[DataTypeDouble] {
   
   /**
     * Length of the number field and decimals of the real

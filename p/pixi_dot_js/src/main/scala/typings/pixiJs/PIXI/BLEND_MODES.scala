@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -54,98 +53,162 @@ sealed trait BLEND_MODES extends StObject
 object BLEND_MODES extends StObject {
   
   @js.native
-  sealed trait ADD extends BLEND_MODES
+  sealed trait ADD
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait ADD_NPM extends BLEND_MODES
+  sealed trait ADD_NPM
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait COLOR extends BLEND_MODES
+  sealed trait COLOR
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait COLOR_BURN extends BLEND_MODES
+  sealed trait COLOR_BURN
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait COLOR_DODGE extends BLEND_MODES
+  sealed trait COLOR_DODGE
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait DARKEN extends BLEND_MODES
+  sealed trait DARKEN
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait DIFFERENCE extends BLEND_MODES
+  sealed trait DIFFERENCE
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait DST_ATOP extends BLEND_MODES
+  sealed trait DST_ATOP
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait DST_IN extends BLEND_MODES
+  sealed trait DST_IN
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait DST_OUT extends BLEND_MODES
+  sealed trait DST_OUT
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait DST_OVER extends BLEND_MODES
+  sealed trait DST_OVER
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait ERASE extends BLEND_MODES
+  sealed trait ERASE
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait EXCLUSION extends BLEND_MODES
+  sealed trait EXCLUSION
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait HARD_LIGHT extends BLEND_MODES
+  sealed trait HARD_LIGHT
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait HUE extends BLEND_MODES
+  sealed trait HUE
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait LIGHTEN extends BLEND_MODES
+  sealed trait LIGHTEN
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait LUMINOSITY extends BLEND_MODES
+  sealed trait LUMINOSITY
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait MULTIPLY extends BLEND_MODES
+  sealed trait MULTIPLY
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait NONE extends BLEND_MODES
+  sealed trait NONE
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait NORMAL extends BLEND_MODES
+  sealed trait NORMAL
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait NORMAL_NPM extends BLEND_MODES
+  sealed trait NORMAL_NPM
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait OVERLAY extends BLEND_MODES
+  sealed trait OVERLAY
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait SATURATION extends BLEND_MODES
+  sealed trait SATURATION
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait SCREEN extends BLEND_MODES
+  sealed trait SCREEN
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait SCREEN_NPM extends BLEND_MODES
+  sealed trait SCREEN_NPM
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait SOFT_LIGHT extends BLEND_MODES
+  sealed trait SOFT_LIGHT
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait SRC_ATOP extends BLEND_MODES
+  sealed trait SRC_ATOP
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait SRC_IN extends BLEND_MODES
+  sealed trait SRC_IN
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait SRC_OUT extends BLEND_MODES
+  sealed trait SRC_OUT
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait SRC_OVER extends BLEND_MODES
+  sealed trait SRC_OVER
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait SUBTRACT extends BLEND_MODES
+  sealed trait SUBTRACT
+    extends StObject
+       with BLEND_MODES
   
   @js.native
-  sealed trait XOR extends BLEND_MODES
+  sealed trait XOR
+    extends StObject
+       with BLEND_MODES
 }

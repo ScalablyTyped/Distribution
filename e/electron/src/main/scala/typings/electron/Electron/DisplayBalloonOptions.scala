@@ -7,42 +7,40 @@ import typings.electron.electronStrings.none
 import typings.electron.electronStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayBalloonOptions extends StObject {
   
-  var content: String = js.native
+  var content: String
   
   /**
     * Icon to use when `iconType` is `custom`.
     */
-  var icon: js.UndefOr[NativeImage_ | String] = js.native
+  var icon: js.UndefOr[NativeImage_ | String] = js.undefined
   
   /**
     * Can be `none`, `info`, `warning`, `error` or `custom`. Default is `custom`.
     */
-  var iconType: js.UndefOr[none | info | warning | error | custom] = js.native
+  var iconType: js.UndefOr[none | info | warning | error | custom] = js.undefined
   
   /**
     * The large version of the icon should be used. Default is `true`. Maps to
     * `NIIF_LARGE_ICON`.
     */
-  var largeIcon: js.UndefOr[Boolean] = js.native
+  var largeIcon: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Do not play the associated sound. Default is `false`. Maps to `NIIF_NOSOUND`.
     */
-  var noSound: js.UndefOr[Boolean] = js.native
+  var noSound: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Do not display the balloon notification if the current user is in "quiet time".
     * Default is `false`. Maps to `NIIF_RESPECT_QUIET_TIME`.
     */
-  var respectQuietTime: js.UndefOr[Boolean] = js.native
+  var respectQuietTime: js.UndefOr[Boolean] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object DisplayBalloonOptions {
   

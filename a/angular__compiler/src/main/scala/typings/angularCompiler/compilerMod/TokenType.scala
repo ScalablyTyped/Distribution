@@ -2,7 +2,6 @@ package typings.angularCompiler.compilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "TokenType")
@@ -10,19 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TokenType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.angularCompiler.lexerMod.TokenType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.angularCompiler.lexerMod.TokenType & Double] = js.native
   
-  /* 0 */ val Character: typings.angularCompiler.lexerMod.TokenType.Character with Double = js.native
+  /* 0 */ val Character: typings.angularCompiler.lexerMod.TokenType.Character & Double = js.native
   
-  /* 6 */ val Error: typings.angularCompiler.lexerMod.TokenType.Error with Double = js.native
+  /* 6 */ val Error: typings.angularCompiler.lexerMod.TokenType.Error & Double = js.native
   
-  /* 1 */ val Identifier: typings.angularCompiler.lexerMod.TokenType.Identifier with Double = js.native
+  /* 1 */ val Identifier: typings.angularCompiler.lexerMod.TokenType.Identifier & Double = js.native
   
-  /* 2 */ val Keyword: typings.angularCompiler.lexerMod.TokenType.Keyword with Double = js.native
+  /* 2 */ val Keyword: typings.angularCompiler.lexerMod.TokenType.Keyword & Double = js.native
   
-  /* 5 */ val Number: typings.angularCompiler.lexerMod.TokenType.Number with Double = js.native
+  /* 5 */ val Number: typings.angularCompiler.lexerMod.TokenType.Number & Double = js.native
   
-  /* 4 */ val Operator: typings.angularCompiler.lexerMod.TokenType.Operator with Double = js.native
+  /* 4 */ val Operator: typings.angularCompiler.lexerMod.TokenType.Operator & Double = js.native
   
-  /* 3 */ val String: typings.angularCompiler.lexerMod.TokenType.String with Double = js.native
+  /* 3 */ val String: typings.angularCompiler.lexerMod.TokenType.String & Double = js.native
 }

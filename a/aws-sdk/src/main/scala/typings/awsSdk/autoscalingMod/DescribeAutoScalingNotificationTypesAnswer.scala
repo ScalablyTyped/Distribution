@@ -2,16 +2,14 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAutoScalingNotificationTypesAnswer extends StObject {
   
   /**
     * The notification types.
     */
-  var AutoScalingNotificationTypes: js.UndefOr[typings.awsSdk.autoscalingMod.AutoScalingNotificationTypes] = js.native
+  var AutoScalingNotificationTypes: js.UndefOr[typings.awsSdk.autoscalingMod.AutoScalingNotificationTypes] = js.undefined
 }
 object DescribeAutoScalingNotificationTypesAnswer {
   

@@ -2,21 +2,21 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RefCountDisposable extends Disposable {
+trait RefCountDisposable
+  extends StObject
+     with Disposable {
   
   /**
     * Returns a dependent disposable that when disposed decreases the refcount on the underlying disposable.
     * @returns {Disposable} A dependent disposable contributing to the reference count that manages the underlying disposable's lifetime.
     */
-  def getDisposable(): IDisposable = js.native
+  def getDisposable(): IDisposable
   
   /** Is this value disposed. */
   @JSName("isDisposed")
-  var isDisposed_RefCountDisposable: Boolean = js.native
+  var isDisposed_RefCountDisposable: Boolean
 }
 object RefCountDisposable {
   

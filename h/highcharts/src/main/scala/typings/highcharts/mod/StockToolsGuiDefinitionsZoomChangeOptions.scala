@@ -2,23 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockToolsGuiDefinitionsZoomChangeOptions extends StObject {
   
   /**
     * (Highstock) A collection of strings pointing to config options for the
     * items.
     */
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var zoomX: js.UndefOr[StockToolsGuiDefinitionsZoomChangeZoomXOptions] = js.native
+  var zoomX: js.UndefOr[StockToolsGuiDefinitionsZoomChangeZoomXOptions] = js.undefined
   
-  var zoomXY: js.UndefOr[StockToolsGuiDefinitionsZoomChangeZoomXYOptions] = js.native
+  var zoomXY: js.UndefOr[StockToolsGuiDefinitionsZoomChangeZoomXYOptions] = js.undefined
   
-  var zoomY: js.UndefOr[StockToolsGuiDefinitionsZoomChangeZoomYOptions] = js.native
+  var zoomY: js.UndefOr[StockToolsGuiDefinitionsZoomChangeZoomYOptions] = js.undefined
 }
 object StockToolsGuiDefinitionsZoomChangeOptions {
   
@@ -32,7 +30,7 @@ object StockToolsGuiDefinitionsZoomChangeOptions {
   implicit class StockToolsGuiDefinitionsZoomChangeOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsZoomChangeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

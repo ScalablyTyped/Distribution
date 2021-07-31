@@ -9,11 +9,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Rows
 import typings.officeJsPreview.officeJsPreviewStrings.Zero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Chart object, for use in `chart.set({ ... })`. */
-@js.native
 trait ChartUpdateData extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var axes: js.UndefOr[ChartAxesUpdateData] = js.native
+  var axes: js.UndefOr[ChartAxesUpdateData] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var categoryLabelLevel: js.UndefOr[Double] = js.native
+  var categoryLabelLevel: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait ChartUpdateData extends StObject {
     */
   var chartType: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -49,7 +47,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var dataLabels: js.UndefOr[ChartDataLabelsUpdateData] = js.native
+  var dataLabels: js.UndefOr[ChartDataLabelsUpdateData] = js.undefined
   
   /**
     *
@@ -57,7 +55,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var displayBlanksAs: js.UndefOr[ChartDisplayBlanksAs | NotPlotted | Zero | Interplotted] = js.native
+  var displayBlanksAs: js.UndefOr[ChartDisplayBlanksAs | NotPlotted | Zero | Interplotted] = js.undefined
   
   /**
     *
@@ -65,7 +63,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var format: js.UndefOr[ChartAreaFormatUpdateData] = js.native
+  var format: js.UndefOr[ChartAreaFormatUpdateData] = js.undefined
   
   /**
     *
@@ -73,7 +71,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -81,7 +79,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -89,7 +87,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var legend: js.UndefOr[ChartLegendUpdateData] = js.native
+  var legend: js.UndefOr[ChartLegendUpdateData] = js.undefined
   
   /**
     *
@@ -97,7 +95,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -105,7 +103,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var pivotOptions: js.UndefOr[ChartPivotOptionsUpdateData] = js.native
+  var pivotOptions: js.UndefOr[ChartPivotOptionsUpdateData] = js.undefined
   
   /**
     *
@@ -113,7 +111,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var plotArea: js.UndefOr[ChartPlotAreaUpdateData] = js.native
+  var plotArea: js.UndefOr[ChartPlotAreaUpdateData] = js.undefined
   
   /**
     *
@@ -121,7 +119,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var plotBy: js.UndefOr[ChartPlotBy | Rows | Columns] = js.native
+  var plotBy: js.UndefOr[ChartPlotBy | Rows | Columns] = js.undefined
   
   /**
     *
@@ -129,7 +127,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var plotVisibleOnly: js.UndefOr[Boolean] = js.native
+  var plotVisibleOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -138,7 +136,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var seriesNameLevel: js.UndefOr[Double] = js.native
+  var seriesNameLevel: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -146,7 +144,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var showAllFieldButtons: js.UndefOr[Boolean] = js.native
+  var showAllFieldButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -156,7 +154,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showDataLabelsOverMaximum: js.UndefOr[Boolean] = js.native
+  var showDataLabelsOverMaximum: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -164,7 +162,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var style: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -172,7 +170,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var title: js.UndefOr[ChartTitleUpdateData] = js.native
+  var title: js.UndefOr[ChartTitleUpdateData] = js.undefined
   
   /**
     *
@@ -180,7 +178,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -188,7 +186,7 @@ trait ChartUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ChartUpdateData {
   

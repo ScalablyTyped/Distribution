@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the index, FAQ, or data source to remove the tag from.
     */
-  var ResourceARN: AmazonResourceName = js.native
+  var ResourceARN: AmazonResourceName
   
   /**
     * A list of tag keys to remove from the index, FAQ, or data source. If a tag key does not exist on the resource, it is ignored.
     */
-  var TagKeys: TagKeyList = js.native
+  var TagKeys: TagKeyList
 }
 object UntagResourceRequest {
   

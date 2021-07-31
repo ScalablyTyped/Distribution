@@ -2,18 +2,16 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // setState
-@js.native
 trait SetStateParameters extends StObject {
   
-  var channelGroups: js.UndefOr[js.Array[String]] = js.native
+  var channelGroups: js.UndefOr[js.Array[String]] = js.undefined
   
-  var channels: js.UndefOr[js.Array[String]] = js.native
+  var channels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var state: js.UndefOr[js.Any] = js.native
+  var state: js.UndefOr[js.Any] = js.undefined
 }
 object SetStateParameters {
   

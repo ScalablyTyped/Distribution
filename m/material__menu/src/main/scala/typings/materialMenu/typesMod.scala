@@ -4,21 +4,23 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   @js.native
-  trait MDCMenuItemComponentEvent extends Event {
+  trait MDCMenuItemComponentEvent
+    extends StObject
+       with Event {
     
     val detail: MDCMenuItemComponentEventDetail = js.native
   }
   
-  @js.native
-  trait MDCMenuItemComponentEventDetail extends MDCMenuItemEventDetail {
+  trait MDCMenuItemComponentEventDetail
+    extends StObject
+       with MDCMenuItemEventDetail {
     
-    var item: Element = js.native
+    var item: Element
   }
   object MDCMenuItemComponentEventDetail {
     
@@ -37,15 +39,16 @@ object typesMod {
   }
   
   @js.native
-  trait MDCMenuItemEvent extends Event {
+  trait MDCMenuItemEvent
+    extends StObject
+       with Event {
     
     val detail: MDCMenuItemEventDetail = js.native
   }
   
-  @js.native
   trait MDCMenuItemEventDetail extends StObject {
     
-    var index: Double = js.native
+    var index: Double
   }
   object MDCMenuItemEventDetail {
     

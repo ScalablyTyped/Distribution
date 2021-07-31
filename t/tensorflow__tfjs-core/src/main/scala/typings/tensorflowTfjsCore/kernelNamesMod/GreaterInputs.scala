@@ -2,16 +2,14 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_names.BinaryInputs */
-@js.native
 trait GreaterInputs extends StObject {
   
-  var a: js.UndefOr[js.Any] = js.native
+  var a: js.UndefOr[js.Any] = js.undefined
   
-  var b: js.UndefOr[js.Any] = js.native
+  var b: js.UndefOr[js.Any] = js.undefined
 }
 object GreaterInputs {
   

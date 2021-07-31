@@ -126,228 +126,226 @@ import typings.plotlyJs.plotlyJsStrings.zPlussignyPlussignxPlussigntext
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotData extends StObject {
   
-  var autobinx: Boolean = js.native
+  var autobinx: Boolean
   
-  var boxmean: Boolean | sd = js.native
+  var boxmean: Boolean | sd
   
-  var boxpoints: all | outliers | suspectedoutliers | `false` = js.native
+  var boxpoints: all | outliers | suspectedoutliers | `false`
   
-  var branchvalues: total | remainder = js.native
+  var branchvalues: total | remainder
   
-  var colorscale: ColorScale = js.native
+  var colorscale: ColorScale
   
-  var connectgaps: Boolean = js.native
+  var connectgaps: Boolean
   
-  var customdata: js.Array[js.Array[Datum] | Datum] = js.native
+  var customdata: js.Array[js.Array[Datum] | Datum]
   
-  var delta: PartialDelta = js.native
+  var delta: PartialDelta
   
-  var direction: clockwise | counterclockwise = js.native
+  var direction: clockwise | counterclockwise
   
-  var domain: Partialrowsnumbercolumnsn = js.native
+  var domain: Partialrowsnumbercolumnsn
   
-  var error_x: ErrorBar = js.native
+  var error_x: ErrorBar
   
-  var error_y: ErrorBar = js.native
+  var error_y: ErrorBar
   
-  var fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext = js.native
+  var fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext
   
-  var fillcolor: String = js.native
+  var fillcolor: String
   
-  var gauge: PartialGaugeBgcolor = js.native
+  var gauge: PartialGaugeBgcolor
   
-  var groupnorm: _empty | fraction | percent = js.native
+  var groupnorm: _empty | fraction | percent
   
-  var histfunc: count | sum | avg | min | max = js.native
+  var histfunc: count | sum | avg | min | max
   
-  var hole: Double = js.native
+  var hole: Double
   
-  var hoverinfo: all | name | none | skip | text | x | xPlussigntext | xPlussignname | xPlussigny | xPlussignyPlussigntext | xPlussignyPlussignname | xPlussignyPlussignz | xPlussignyPlussignzPlussigntext | xPlussignyPlussignzPlussignname | y | yPlussignname | yPlussignx | yPlussigntext | yPlussignxPlussigntext | yPlussignxPlussignname | yPlussignz | yPlussignzPlussigntext | yPlussignzPlussignname | yPlussignxPlussignz | yPlussignxPlussignzPlussigntext | yPlussignxPlussignzPlussignname | z | zPlussignx | zPlussignxPlussigntext | zPlussignxPlussignname | zPlussignyPlussignx | zPlussignyPlussignxPlussigntext | zPlussignyPlussignxPlussignname | zPlussignxPlussigny | zPlussignxPlussignyPlussigntext | zPlussignxPlussignyPlussignname = js.native
+  var hoverinfo: all | name | none | skip | text | x | xPlussigntext | xPlussignname | xPlussigny | xPlussignyPlussigntext | xPlussignyPlussignname | xPlussignyPlussignz | xPlussignyPlussignzPlussigntext | xPlussignyPlussignzPlussignname | y | yPlussignname | yPlussignx | yPlussigntext | yPlussignxPlussigntext | yPlussignxPlussignname | yPlussignz | yPlussignzPlussigntext | yPlussignzPlussignname | yPlussignxPlussignz | yPlussignxPlussignzPlussigntext | yPlussignxPlussignzPlussignname | z | zPlussignx | zPlussignxPlussigntext | zPlussignxPlussignname | zPlussignyPlussignx | zPlussignyPlussignxPlussigntext | zPlussignyPlussignxPlussignname | zPlussignxPlussigny | zPlussignxPlussignyPlussigntext | zPlussignxPlussignyPlussignname
   
-  var hoverlabel: PartialHoverLabel = js.native
+  var hoverlabel: PartialHoverLabel
   
-  var hoveron: points | fills = js.native
+  var hoveron: points | fills
   
-  var hovertemplate: String | js.Array[String] = js.native
+  var hovertemplate: String | js.Array[String]
   
-  var hovertext: String | js.Array[String] = js.native
+  var hovertext: String | js.Array[String]
   
-  var i: TypedArray = js.native
+  var i: TypedArray
   
-  var ids: js.Array[String] = js.native
+  var ids: js.Array[String]
   
-  var j: TypedArray = js.native
+  var j: TypedArray
   
-  var jitter: Double = js.native
+  var jitter: Double
   
-  var k: TypedArray = js.native
+  var k: TypedArray
   
-  var labels: js.Array[Datum] = js.native
+  var labels: js.Array[Datum]
   
-  var lat: js.Array[Datum] = js.native
+  var lat: js.Array[Datum]
   
-  var legendgroup: String = js.native
+  var legendgroup: String
   
-  var level: String = js.native
+  var level: String
   
-  var line: PartialScatterLine = js.native
+  var line: PartialScatterLine
   
   @JSName("line.color")
-  var lineDotcolor: Color = js.native
+  var lineDotcolor: Color
   
   @JSName("line.dash")
-  var lineDotdash: Dash = js.native
+  var lineDotdash: Dash
   
   @JSName("line.shape")
-  var lineDotshape: linear | spline | hv | vh | hvh | vhv = js.native
+  var lineDotshape: linear | spline | hv | vh | hvh | vhv
   
   @JSName("line.simplify")
-  var lineDotsimplify: Boolean = js.native
+  var lineDotsimplify: Boolean
   
   @JSName("line.smoothing")
-  var lineDotsmoothing: Double = js.native
+  var lineDotsmoothing: Double
   
   @JSName("line.width")
-  var lineDotwidth: Double = js.native
+  var lineDotwidth: Double
   
-  var lon: js.Array[Datum] = js.native
+  var lon: js.Array[Datum]
   
-  var marker: PartialPlotMarkerCauto = js.native
+  var marker: PartialPlotMarkerCauto
   
   @JSName("marker.color")
-  var markerDotcolor: Color = js.native
+  var markerDotcolor: Color
   
   @JSName("marker.colorscale")
-  var markerDotcolorscale: ColorScale | js.Array[ColorScale] = js.native
+  var markerDotcolorscale: ColorScale | js.Array[ColorScale]
   
   @JSName("marker.line")
-  var markerDotline: PartialScatterMarkerLine = js.native
+  var markerDotline: PartialScatterMarkerLine
   
   @JSName("marker.line.color")
-  var markerDotlineDotcolor: Color = js.native
+  var markerDotlineDotcolor: Color
   
   @JSName("marker.line.colorscale")
-  var markerDotlineDotcolorscale: ColorScale | js.Array[ColorScale] = js.native
+  var markerDotlineDotcolorscale: ColorScale | js.Array[ColorScale]
   
   @JSName("marker.maxdisplayed")
-  var markerDotmaxdisplayed: Double = js.native
+  var markerDotmaxdisplayed: Double
   
   @JSName("marker.opacity")
-  var markerDotopacity: Double | js.Array[Double] = js.native
+  var markerDotopacity: Double | js.Array[Double]
   
   @JSName("marker.pad.b")
-  var markerDotpadDotb: Double = js.native
+  var markerDotpadDotb: Double
   
   @JSName("marker.pad.l")
-  var markerDotpadDotl: Double = js.native
+  var markerDotpadDotl: Double
   
   @JSName("marker.pad.r")
-  var markerDotpadDotr: Double = js.native
+  var markerDotpadDotr: Double
   
   // TODO
   @JSName("marker.pad.t")
-  var markerDotpadDott: Double = js.native
+  var markerDotpadDott: Double
   
   @JSName("marker.showscale")
-  var markerDotshowscale: Boolean = js.native
+  var markerDotshowscale: Boolean
   
   @JSName("marker.size")
-  var markerDotsize: Double | (js.Array[js.Array[Double] | Double]) = js.native
+  var markerDotsize: Double | (js.Array[js.Array[Double] | Double])
   
   @JSName("marker.sizemax")
-  var markerDotsizemax: Double = js.native
+  var markerDotsizemax: Double
   
   @JSName("marker.sizemin")
-  var markerDotsizemin: Double = js.native
+  var markerDotsizemin: Double
   
   @JSName("marker.sizemode")
-  var markerDotsizemode: diameter | area = js.native
+  var markerDotsizemode: diameter | area
   
   @JSName("marker.sizeref")
-  var markerDotsizeref: Double = js.native
+  var markerDotsizeref: Double
   
   @JSName("marker.symbol")
-  var markerDotsymbol: MarkerSymbol | js.Array[MarkerSymbol] = js.native
+  var markerDotsymbol: MarkerSymbol | js.Array[MarkerSymbol]
   
-  var mode: lines | markers | text | linesPlussignmarkers | textPlussignmarkers | textPlussignlines | textPlussignlinesPlussignmarkers | none | gauge | number | delta | numberPlussigndelta | gaugePlussignnumber | gaugePlussignnumberPlussigndelta | gaugePlussigndelta = js.native
+  var mode: lines | markers | text | linesPlussignmarkers | textPlussignmarkers | textPlussignlines | textPlussignlinesPlussignmarkers | none | gauge | number | delta | numberPlussigndelta | gaugePlussignnumber | gaugePlussignnumberPlussigndelta | gaugePlussigndelta
   
-  var name: String = js.native
+  var name: String
   
-  var number: PartialPlotNumberFont = js.native
+  var number: PartialPlotNumberFont
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var orientation: v | h = js.native
+  var orientation: v | h
   
-  var parents: js.Array[String] = js.native
+  var parents: js.Array[String]
   
-  var pointpos: Double = js.native
+  var pointpos: Double
   
-  var r: js.Array[Datum] = js.native
+  var r: js.Array[Datum]
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var selectedpoints: js.Array[Datum] = js.native
+  var selectedpoints: js.Array[Datum]
   
-  var showlegend: Boolean = js.native
+  var showlegend: Boolean
   
-  var showscale: Boolean = js.native
+  var showscale: Boolean
   
-  var stackgaps: (`infer zero`) | interpolate = js.native
+  var stackgaps: (`infer zero`) | interpolate
   
-  var stackgroup: String = js.native
+  var stackgroup: String
   
-  var text: String | js.Array[String] = js.native
+  var text: String | js.Array[String]
   
-  var textfont: PartialFont = js.native
+  var textfont: PartialFont
   
-  var textinfo: label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none = js.native
+  var textinfo: label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none
   
-  var textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside | outside | auto | none = js.native
+  var textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside | outside | auto | none
   
-  var theta: js.Array[Datum] = js.native
+  var theta: js.Array[Datum]
   
-  var title: PartialDataTitleFont = js.native
+  var title: PartialDataTitleFont
   
-  var transforms: js.Array[DataTransform] = js.native
+  var transforms: js.Array[DataTransform]
   
-  var transpose: Boolean = js.native
+  var transpose: Boolean
   
-  var `type`: PlotType = js.native
+  var `type`: PlotType
   
-  var value: Double = js.native
+  var value: Double
   
-  var values: js.Array[Datum] = js.native
+  var values: js.Array[Datum]
   
-  var visible: Boolean | legendonly = js.native
+  var visible: Boolean | legendonly
   
-  var width: Double | js.Array[Double] = js.native
+  var width: Double | js.Array[Double]
   
-  var x: (js.Array[js.Array[Datum] | Datum]) | TypedArray = js.native
+  var x: (js.Array[js.Array[Datum] | Datum]) | TypedArray
   
-  var xaxis: String = js.native
+  var xaxis: String
   
-  var xbins: End = js.native
+  var xbins: End
   
-  var xgap: Double = js.native
+  var xgap: Double
   
-  var xy: Float32Array = js.native
+  var xy: Float32Array
   
-  var y: (js.Array[js.Array[Datum] | Datum]) | TypedArray = js.native
+  var y: (js.Array[js.Array[Datum] | Datum]) | TypedArray
   
-  var yaxis: String = js.native
+  var yaxis: String
   
-  var ygap: Double = js.native
+  var ygap: Double
   
-  var z: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray = js.native
+  var z: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray
   
-  var zsmooth: fast | best | `false` = js.native
+  var zsmooth: fast | best | `false`
 }
 object PlotData {
   

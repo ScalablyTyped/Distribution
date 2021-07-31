@@ -2,31 +2,29 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpRetryPolicy extends StObject {
   
   /**
     * Specify at least one of the following values.    server-error – HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511    gateway-error – HTTP status codes 502, 503, and 504    client-error – HTTP status code 409    stream-error – Retry on refused stream  
     */
-  var httpRetryEvents: js.UndefOr[HttpRetryPolicyEvents] = js.native
+  var httpRetryEvents: js.UndefOr[HttpRetryPolicyEvents] = js.undefined
   
   /**
     * The maximum number of retry attempts.
     */
-  var maxRetries: MaxRetries = js.native
+  var maxRetries: MaxRetries
   
   /**
     * The timeout for each retry attempt.
     */
-  var perRetryTimeout: Duration = js.native
+  var perRetryTimeout: Duration
   
   /**
     * Specify a valid value. The event occurs before any processing of a request has started and is encountered when the upstream is temporarily or permanently unavailable.
     */
-  var tcpRetryEvents: js.UndefOr[TcpRetryPolicyEvents] = js.native
+  var tcpRetryEvents: js.UndefOr[TcpRetryPolicyEvents] = js.undefined
 }
 object HttpRetryPolicy {
   

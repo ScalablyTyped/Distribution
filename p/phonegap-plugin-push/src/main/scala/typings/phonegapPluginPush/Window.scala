@@ -3,13 +3,11 @@ package typings.phonegapPluginPush
 import typings.phonegapPluginPush.PhonegapPluginPush.PushNotificationStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var PushNotification: PushNotificationStatic = js.native
+  var PushNotification: PushNotificationStatic
 }
 object Window {
   

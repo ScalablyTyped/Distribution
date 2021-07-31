@@ -4,49 +4,47 @@ import typings.sipJs.anon.FromTag
 import typings.sipJs.coreMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registererOptionsMod {
   
-  @js.native
   trait RegistererOptions extends StObject {
     
     /** Registration expiration time in seconds. */
-    var expires: js.UndefOr[Double] = js.native
+    var expires: js.UndefOr[Double] = js.undefined
     
     /** Array of extra Contact header parameters. */
-    var extraContactHeaderParams: js.UndefOr[js.Array[String]] = js.native
+    var extraContactHeaderParams: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Array of extra headers added to the REGISTER. */
-    var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+    var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * UUID to provide with "+sip.instance" Contact parameter.
       * @defaultValue a randomly generated uuid
       */
-    var instanceId: js.UndefOr[String] = js.native
+    var instanceId: js.UndefOr[String] = js.undefined
     
     /**
       * If true, constructor logs the registerer configuration.
       * @defaultValue `true`
       */
-    var logConfiguration: js.UndefOr[Boolean] = js.native
+    var logConfiguration: js.UndefOr[Boolean] = js.undefined
     
     /** @deprecated TODO: provide alternative. */
-    var params: js.UndefOr[FromTag] = js.native
+    var params: js.UndefOr[FromTag] = js.undefined
     
     /**
       * Value to provide with "reg-id" Contact parameter.
       * @defaultValue 1
       */
-    var regId: js.UndefOr[Double] = js.native
+    var regId: js.UndefOr[Double] = js.undefined
     
     /**
       * The URI of the registrar to send the REGISTER requests.
       * @defaultValue domain portion of the user agent's uri
       */
-    var registrar: js.UndefOr[URI] = js.native
+    var registrar: js.UndefOr[URI] = js.undefined
   }
   object RegistererOptions {
     

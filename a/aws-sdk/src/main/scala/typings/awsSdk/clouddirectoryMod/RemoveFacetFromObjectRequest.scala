@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveFacetFromObjectRequest extends StObject {
   
   /**
     * The ARN of the directory in which the object resides.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * A reference to the object to remove the facet from.
     */
-  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference = js.native
+  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference
   
   /**
     * The facet to remove. See SchemaFacet for details.
     */
-  var SchemaFacet: typings.awsSdk.clouddirectoryMod.SchemaFacet = js.native
+  var SchemaFacet: typings.awsSdk.clouddirectoryMod.SchemaFacet
 }
 object RemoveFacetFromObjectRequest {
   

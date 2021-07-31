@@ -8,7 +8,6 @@ import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait TableScopedCollection extends ClientObject {
+trait TableScopedCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -56,7 +57,7 @@ trait TableScopedCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): TableScopedCollection = js.native
-  def load(options: TableScopedCollectionLoadOptions with CollectionLoadOptions): TableScopedCollection = js.native
+  def load(options: TableScopedCollectionLoadOptions & CollectionLoadOptions): TableScopedCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): TableScopedCollection = js.native
   def load(propertyNames: String): TableScopedCollection = js.native
   def load(propertyNames: js.Array[String]): TableScopedCollection = js.native

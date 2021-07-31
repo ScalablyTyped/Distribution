@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,11 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated DeprecatedThis interface was only implemented in an intermediate developer release anyway.
   * @since OOo 2.0
   */
-@js.native
-trait XReschedule extends XInterface {
+trait XReschedule
+  extends StObject
+     with XInterface {
   
   /** Allow the main thread to process some events. */
-  def reschedule(): Unit = js.native
+  def reschedule(): Unit
 }
 object XReschedule {
   

@@ -8,22 +8,22 @@ import typings.poseCore.typesMod.SelectValueToRead
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectorsMod {
   
-  @JSImport("pose-core/lib/inc/selectors", "getPoseValues")
+  @JSImport("pose-core/lib/inc/selectors", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def getPoseValues[A, TD](
     hasTransitionFlipDelayDelayChildrenStaggerChildrenStaggerDirectionAfterChildrenBeforeChildrenPreTransitionApplyAtStartApplyAtEndProps: Pose[A, TD]
-  ): Pose[A, TD] = js.native
+  ): Pose[A, TD] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPoseValues")(hasTransitionFlipDelayDelayChildrenStaggerChildrenStaggerDirectionAfterChildrenBeforeChildrenPreTransitionApplyAtStartApplyAtEndProps.asInstanceOf[js.Any]).asInstanceOf[Pose[A, TD]]
   
-  @JSImport("pose-core/lib/inc/selectors", "selectAllValues")
-  @js.native
-  def selectAllValues[V](values: Map[String, V], selectValue: SelectValueToRead[V]): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def selectAllValues[V](values: Map[String, V], selectValue: SelectValueToRead[V]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectAllValues")(values.asInstanceOf[js.Any], selectValue.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
-  @JSImport("pose-core/lib/inc/selectors", "selectPoses")
-  @js.native
-  def selectPoses[V, A, TD](hasLabelPropsValuesParentValuesAncestorValuesOnChangePassiveInitialPosePoses: PoserConfig[V]): PoseMap[A, TD] = js.native
+  @scala.inline
+  def selectPoses[V, A, TD](hasLabelPropsValuesParentValuesAncestorValuesOnChangePassiveInitialPosePoses: PoserConfig[V]): PoseMap[A, TD] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectPoses")(hasLabelPropsValuesParentValuesAncestorValuesOnChangePassiveInitialPosePoses.asInstanceOf[js.Any]).asInstanceOf[PoseMap[A, TD]]
 }

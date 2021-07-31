@@ -2,23 +2,23 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewport {
   
-  @js.native
-  trait IAndroid extends IDefault {
+  trait IAndroid
+    extends StObject
+       with IDefault {
     
     /** [Method] Returns the value of translatable
       * @returns Object
       */
-    var getTranslatable: js.UndefOr[js.Function0[_]] = js.native
+    var getTranslatable: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of translatable
       * @param translatable Object The new value.
       */
-    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.native
+    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IAndroid {
     
@@ -32,7 +32,7 @@ object viewport {
     implicit class IAndroidMutableBuilder[Self <: IAndroid] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetTranslatable(value: () => _): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
+      def setGetTranslatable(value: () => js.Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetTranslatableUndefined: Self = StObject.set(x, "getTranslatable", js.undefined)
@@ -45,61 +45,62 @@ object viewport {
     }
   }
   
-  @js.native
-  trait IDefault extends IContainer {
+  trait IDefault
+    extends StObject
+       with IContainer {
     
     /** [Config Option] (Boolean) */
-    var autoMaximize: js.UndefOr[Boolean] = js.native
+    var autoMaximize: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns the value of autoMaximize
       * @returns Boolean
       */
-    var getAutoMaximize: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getAutoMaximize: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of layout
       * @returns Object/String
       */
-    var getLayout: js.UndefOr[js.Function0[_]] = js.native
+    var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the current orientation
       * @returns String portrait or landscape
       */
-    var getOrientation: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getOrientation: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of preventPanning
       * @returns Boolean
       */
-    var getPreventPanning: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getPreventPanning: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of preventZooming
       * @returns Boolean
       */
-    var getPreventZooming: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getPreventZooming: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of useBodyElement
       * @returns Boolean
       */
-    var getUseBodyElement: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getUseBodyElement: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Retrieves the document height
       * @returns Number height in pixels.
       */
-    var getWindowHeight: js.UndefOr[js.Function0[Double]] = js.native
+    var getWindowHeight: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Retrieves the document width
       * @returns Number width in pixels.
       */
-    var getWindowWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getWindowWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Hides all visible menus
       * @param animation Object
       */
-    var hideAllMenus: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], Unit]] = js.native
+    var hideAllMenus: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Hides a menu specified by the menu s side
       * @param side String The side which the menu is placed.
       */
-    var hideMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var hideMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Hides all menus except for the side specified
       * @param side String Side(s) not to hide
@@ -111,26 +112,26 @@ object viewport {
           /* animation */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Property] (Boolean) */
-    var isReady: js.UndefOr[Boolean] = js.native
+    var isReady: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var preventPanning: js.UndefOr[Boolean] = js.native
+    var preventPanning: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var preventZooming: js.UndefOr[Boolean] = js.native
+    var preventZooming: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Removes a menu from a specified side
       * @param side String The side to remove the menu from
       */
-    var removeMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var removeMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of autoMaximize
       * @param autoMaximize Boolean The new value.
       */
-    var setAutoMaximize: js.UndefOr[js.Function1[/* autoMaximize */ js.UndefOr[Boolean], Unit]] = js.native
+    var setAutoMaximize: js.UndefOr[js.Function1[/* autoMaximize */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets a menu for a given side of the Viewport
       * @param menu Ext.Menu The menu to assign to the viewport
@@ -138,32 +139,32 @@ object viewport {
       */
     var setMenu: js.UndefOr[
         js.Function2[/* menu */ js.UndefOr[IMenu], /* config */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of preventPanning
       * @param preventPanning Boolean The new value.
       */
-    var setPreventPanning: js.UndefOr[js.Function1[/* preventPanning */ js.UndefOr[Boolean], Unit]] = js.native
+    var setPreventPanning: js.UndefOr[js.Function1[/* preventPanning */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of preventZooming
       * @param preventZooming Boolean The new value.
       */
-    var setPreventZooming: js.UndefOr[js.Function1[/* preventZooming */ js.UndefOr[Boolean], Unit]] = js.native
+    var setPreventZooming: js.UndefOr[js.Function1[/* preventZooming */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of useBodyElement
       * @param useBodyElement Boolean The new value.
       */
-    var setUseBodyElement: js.UndefOr[js.Function1[/* useBodyElement */ js.UndefOr[Boolean], Unit]] = js.native
+    var setUseBodyElement: js.UndefOr[js.Function1[/* useBodyElement */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Shows a menu specified by the menu s side
       * @param side String The side which the menu is placed.
       */
-    var showMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var showMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Toggles the menu specified by side
       * @param side String The side which the menu is placed.
       */
-    var toggleMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var toggleMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   }
   object IDefault {
     
@@ -189,7 +190,7 @@ object viewport {
       def setGetAutoMaximizeUndefined: Self = StObject.set(x, "getAutoMaximize", js.undefined)
       
       @scala.inline
-      def setGetLayout(value: () => _): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+      def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
@@ -322,18 +323,19 @@ object viewport {
   
   type IViewport = IBase
   
-  @js.native
-  trait IWP extends IDefault {
+  trait IWP
+    extends StObject
+       with IDefault {
     
     /** [Method] Returns the value of translatable
       * @returns Object
       */
-    var getTranslatable: js.UndefOr[js.Function0[_]] = js.native
+    var getTranslatable: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of translatable
       * @param translatable Object The new value.
       */
-    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.native
+    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IWP {
     
@@ -347,7 +349,7 @@ object viewport {
     implicit class IWPMutableBuilder[Self <: IWP] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetTranslatable(value: () => _): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
+      def setGetTranslatable(value: () => js.Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetTranslatableUndefined: Self = StObject.set(x, "getTranslatable", js.undefined)
@@ -360,18 +362,19 @@ object viewport {
     }
   }
   
-  @js.native
-  trait IWindowsPhone extends IDefault {
+  trait IWindowsPhone
+    extends StObject
+       with IDefault {
     
     /** [Method] Returns the value of translatable
       * @returns Object
       */
-    var getTranslatable: js.UndefOr[js.Function0[_]] = js.native
+    var getTranslatable: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of translatable
       * @param translatable Object The new value.
       */
-    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.native
+    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IWindowsPhone {
     
@@ -385,7 +388,7 @@ object viewport {
     implicit class IWindowsPhoneMutableBuilder[Self <: IWindowsPhone] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetTranslatable(value: () => _): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
+      def setGetTranslatable(value: () => js.Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetTranslatableUndefined: Self = StObject.set(x, "getTranslatable", js.undefined)

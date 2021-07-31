@@ -3,13 +3,12 @@ package typings.node.http2Mod
 import typings.node.tlsMod.TlsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecureServerSessionOptions
-  extends TlsOptions
+  extends StObject
      with ServerSessionOptions
+     with TlsOptions
 object SecureServerSessionOptions {
   
   @scala.inline

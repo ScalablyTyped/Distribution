@@ -2,24 +2,22 @@ package typings.xrm.Xrm.Controls
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for showAutoComplete argument
   */
-@js.native
 trait AutoCompleteResultSet extends StObject {
   
   /**
     * Command to show/execute at the bottom of the results displayed
     */
-  var commands: js.UndefOr[AutoCompleteCommand] = js.native
+  var commands: js.UndefOr[AutoCompleteCommand] = js.undefined
   
   /**
     * Results to show
     */
-  var results: js.Array[AutoCompleteResult] = js.native
+  var results: js.Array[AutoCompleteResult]
 }
 object AutoCompleteResultSet {
   

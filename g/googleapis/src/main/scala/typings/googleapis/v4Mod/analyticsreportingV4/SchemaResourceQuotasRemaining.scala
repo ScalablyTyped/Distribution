@@ -2,25 +2,23 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The resource quota tokens remaining for the property after the request is
   * completed.
   */
-@js.native
 trait SchemaResourceQuotasRemaining extends StObject {
   
   /**
     * Daily resource quota remaining remaining.
     */
-  var dailyQuotaTokensRemaining: js.UndefOr[Double] = js.native
+  var dailyQuotaTokensRemaining: js.UndefOr[Double] = js.undefined
   
   /**
     * Hourly resource quota tokens remaining.
     */
-  var hourlyQuotaTokensRemaining: js.UndefOr[Double] = js.native
+  var hourlyQuotaTokensRemaining: js.UndefOr[Double] = js.undefined
 }
 object SchemaResourceQuotasRemaining {
   

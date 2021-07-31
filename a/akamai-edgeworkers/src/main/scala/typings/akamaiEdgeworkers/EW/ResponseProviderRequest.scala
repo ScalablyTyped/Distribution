@@ -2,13 +2,12 @@ package typings.akamaiEdgeworkers.EW
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // responseProvider
-@js.native
 trait ResponseProviderRequest
-  extends Request
+  extends StObject
+     with Request
      with ReadsHeaders
 object ResponseProviderRequest {
   

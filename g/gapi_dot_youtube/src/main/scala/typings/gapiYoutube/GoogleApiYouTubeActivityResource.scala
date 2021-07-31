@@ -4,36 +4,34 @@ import typings.gapiYoutube.anon.Bulletin
 import typings.gapiYoutube.anon.ChannelId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiYouTubeActivityResource extends StObject {
   
   /**
     * The contentDetails object contains information about the content associated with the activity.
     */
-  var contentDetails: Bulletin = js.native
+  var contentDetails: Bulletin
   
   /**
     * The ETag of the activity resource.
     */
-  var etag: String = js.native
+  var etag: String
   
   /**
     * The ID that YouTube uses to uniquely identify the activity.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The type of the API resource. For activity resources, the value will be youtube#activity.
     */
-  var kind: String = js.native
+  var kind: String
   
   /**
     * The snippet object contains basic details about the activity, including the activitys type and group ID.
     */
-  var snippet: ChannelId = js.native
+  var snippet: ChannelId
 }
 object GoogleApiYouTubeActivityResource {
   

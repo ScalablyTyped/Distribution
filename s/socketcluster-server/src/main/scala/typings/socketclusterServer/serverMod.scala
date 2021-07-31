@@ -49,7 +49,6 @@ import typings.ws.mod.ClientOptions
 import typings.ws.mod.VerifyClientCallbackAsync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverMod {
@@ -225,83 +224,83 @@ object serverMod {
     var wsServer: typings.ws.mod.Server = js.native
   }
   
-  @js.native
   trait AGServerOptions
-    extends /* additionalOptions */ StringDictionary[js.Any] {
+    extends StObject
+       with /* additionalOptions */ StringDictionary[js.Any] {
     
     // In milliseconds, the timeout for receiving a response
     // when using invoke() or invokePublish().
-    var ackTimeout: js.UndefOr[Double] = js.native
+    var ackTimeout: js.UndefOr[Double] = js.undefined
     
     // Whether or not clients are allowed to publish messages
     // to channels.
-    var allowClientPublish: js.UndefOr[Boolean] = js.native
+    var allowClientPublish: js.UndefOr[Boolean] = js.undefined
     
     // The algorithm to use to sign and verify JWT tokens.
-    var authAlgorithm: js.UndefOr[String] = js.native
+    var authAlgorithm: js.UndefOr[String] = js.undefined
     
     // The default expiry for auth tokens in seconds
-    var authDefaultExpiry: js.UndefOr[Double] = js.native
+    var authDefaultExpiry: js.UndefOr[Double] = js.undefined
     
-    var authEngine: js.UndefOr[SCAuthEngine] = js.native
+    var authEngine: js.UndefOr[SCAuthEngine] = js.undefined
     
     // The key which SC will use to encrypt/decrypt authTokens,
     // defaults to a 256 bits cryptographically random hex
     // string. The default JWT algorithm used is 'HS256'.
     // If you want to use RSA or ECDSA, you should provide an
     // authPrivateKey and authPublicKey instead of authKey.
-    var authKey: js.UndefOr[Secret] = js.native
+    var authKey: js.UndefOr[Secret] = js.undefined
     
     // If using an RSA or ECDSA algorithm to sign the
     // authToken, you will need to provide an authPrivateKey
     // and authPublicKey in PEM format (string or Buffer).
-    var authPrivateKey: js.UndefOr[Secret] = js.native
+    var authPrivateKey: js.UndefOr[Secret] = js.undefined
     
-    var authPublicKey: js.UndefOr[Secret] = js.native
+    var authPublicKey: js.UndefOr[Secret] = js.undefined
     
-    var authVerifyAlgorithms: js.UndefOr[js.Array[String]] = js.native
+    var authVerifyAlgorithms: js.UndefOr[js.Array[String]] = js.undefined
     
     // If batchOnHandshake is true, this lets you specify
     // the size of each batch in milliseconds.
-    var batchInterval: js.UndefOr[Double] = js.native
+    var batchInterval: js.UndefOr[Double] = js.undefined
     
     // Whether or not to batch all socket messages
     // for some time immediately after completing
     // a handshake. This can be useful in failure-recovery
     // scenarios (e.g. batch resubscribe).
-    var batchOnHandshake: js.UndefOr[Boolean] = js.native
+    var batchOnHandshake: js.UndefOr[Boolean] = js.undefined
     
     // If batchOnHandshake is true, this lets you specify
     // How long to enable batching (in milliseconds) following
     // a successful socket handshake.
-    var batchOnHandshakeDuration: js.UndefOr[Double] = js.native
+    var batchOnHandshakeDuration: js.UndefOr[Double] = js.undefined
     
-    var cloneData: js.UndefOr[Boolean] = js.native
+    var cloneData: js.UndefOr[Boolean] = js.undefined
     
-    var codecEngine: js.UndefOr[CodecEngine] = js.native
+    var codecEngine: js.UndefOr[CodecEngine] = js.undefined
     
     // In milliseconds - If the socket handshake hasn't been
     // completed before this timeout is reached, the new
     // connection attempt will be terminated.
-    var handshakeTimeout: js.UndefOr[Double] = js.native
+    var handshakeTimeout: js.UndefOr[Double] = js.undefined
     
     // An instance of a Node.js HTTP server.
     // https://nodejs.org/api/http.html#http_class_http_server
     // This option should not be set if the server is created
     // with socketClusterServer.attach(...).
-    var httpServer: js.UndefOr[Server] = js.native
+    var httpServer: js.UndefOr[Server] = js.undefined
     
     // Whether or not an error should be emitted on
     // the socket whenever an action is blocked by a
     // middleware function
-    var middlewareEmitFailures: js.UndefOr[Boolean] = js.native
+    var middlewareEmitFailures: js.UndefOr[Boolean] = js.undefined
     
     // Origins which are allowed to connect to the server.
-    var origins: js.UndefOr[String] = js.native
+    var origins: js.UndefOr[String] = js.undefined
     
     // The URL path reserved by SocketCluster clients to
     // interact with the server.
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     // perMessageDeflate compression. Note that this option is
     // passed directly to the wsEngine's Server object.
@@ -309,24 +308,24 @@ object serverMod {
     // object instead of a boolean.
     // Note that by default, per-message deflate only kicks in
     // for messages > 1024 bytes.
-    var perMessageDeflate: js.UndefOr[Boolean | js.Object] = js.native
+    var perMessageDeflate: js.UndefOr[Boolean | js.Object] = js.undefined
     
     // The interval in milliseconds on which to
     // send a ping to the client to check that
     // it is still alive.
-    var pingInterval: js.UndefOr[Double] = js.native
+    var pingInterval: js.UndefOr[Double] = js.undefined
     
     // How many milliseconds to wait without receiving a ping
     // before closing the socket.
-    var pingTimeout: js.UndefOr[Double] = js.native
+    var pingTimeout: js.UndefOr[Double] = js.undefined
     
     // Can be 1 or 2. Version 1 is for maximum backwards
     // compatibility with SocketCluster clients.
-    var protocolVersion: js.UndefOr[`1` | `2`] = js.native
+    var protocolVersion: js.UndefOr[`1` | `2`] = js.undefined
     
     // The maximum number of unique channels which a single
     // socket can subscribe to.
-    var socketChannelLimit: js.UndefOr[Double] = js.native
+    var socketChannelLimit: js.UndefOr[Double] = js.undefined
     
     // Lets you specify the default cleanup behaviour for
     // when a socket becomes disconnected.
@@ -336,15 +335,15 @@ object serverMod {
     // Close mode means that consumers on the socket will
     // be able to finish processing their stream backlogs
     // bebfore they are ended.
-    var socketStreamCleanupMode: js.UndefOr[kill | close] = js.native
+    var socketStreamCleanupMode: js.UndefOr[kill | close] = js.undefined
     
     // This can be the name of an npm module or a path to a
     // Node.js module to use as the WebSocket server engine.
-    var wsEngine: js.UndefOr[js.Any] = js.native
+    var wsEngine: js.UndefOr[js.Any] = js.undefined
     
     // Custom options to pass to the wsEngine when it is being
     // instantiated.
-    var wsEngineServerOptions: js.UndefOr[ClientOptions] = js.native
+    var wsEngineServerOptions: js.UndefOr[ClientOptions] = js.undefined
   }
   object AGServerOptions {
     
@@ -524,10 +523,11 @@ object serverMod {
     }
   }
   
-  @js.native
-  trait AuthStateChangeData extends StateChangeData {
+  trait AuthStateChangeData
+    extends StObject
+       with StateChangeData {
     
-    var socket: typings.socketclusterServer.serversocketMod.^ = js.native
+    var socket: typings.socketclusterServer.serversocketMod.^
   }
   object AuthStateChangeData {
     
@@ -549,10 +549,11 @@ object serverMod {
     }
   }
   
-  @js.native
-  trait AuthenticationData extends AuthenticateData {
+  trait AuthenticationData
+    extends StObject
+       with AuthenticateData {
     
-    var socket: typings.socketclusterServer.serversocketMod.^ = js.native
+    var socket: typings.socketclusterServer.serversocketMod.^
   }
   object AuthenticationData {
     
@@ -570,10 +571,11 @@ object serverMod {
     }
   }
   
-  @js.native
-  trait BadSocketAuthTokenData extends BadAuthTokenData {
+  trait BadSocketAuthTokenData
+    extends StObject
+       with BadAuthTokenData {
     
-    var socket: typings.socketclusterServer.serversocketMod.^ = js.native
+    var socket: typings.socketclusterServer.serversocketMod.^
   }
   object BadSocketAuthTokenData {
     
@@ -591,10 +593,11 @@ object serverMod {
     }
   }
   
-  @js.native
-  trait ClosureData extends CloseData {
+  trait ClosureData
+    extends StObject
+       with CloseData {
     
-    var socket: typings.socketclusterServer.serversocketMod.^ = js.native
+    var socket: typings.socketclusterServer.serversocketMod.^
   }
   object ClosureData {
     
@@ -612,12 +615,11 @@ object serverMod {
     }
   }
   
-  @js.native
   trait CodecEngine extends StObject {
     
-    def decode(input: js.Any): js.Any = js.native
+    def decode(input: js.Any): js.Any
     
-    def encode(`object`: js.Any): js.Any = js.native
+    def encode(`object`: js.Any): js.Any
   }
   object CodecEngine {
     
@@ -638,10 +640,11 @@ object serverMod {
     }
   }
   
-  @js.native
-  trait ConnectionAbortData extends ConnectAbortData {
+  trait ConnectionAbortData
+    extends StObject
+       with ConnectAbortData {
     
-    var socket: typings.socketclusterServer.serversocketMod.^ = js.native
+    var socket: typings.socketclusterServer.serversocketMod.^
   }
   object ConnectionAbortData {
     
@@ -659,10 +662,11 @@ object serverMod {
     }
   }
   
-  @js.native
-  trait ConnectionData extends ConnectData {
+  trait ConnectionData
+    extends StObject
+       with ConnectData {
     
-    var socket: typings.socketclusterServer.serversocketMod.^ = js.native
+    var socket: typings.socketclusterServer.serversocketMod.^
   }
   object ConnectionData {
     
@@ -685,10 +689,11 @@ object serverMod {
     }
   }
   
-  @js.native
-  trait DeauthenticationData extends DeauthenticateData {
+  trait DeauthenticationData
+    extends StObject
+       with DeauthenticateData {
     
-    var socket: typings.socketclusterServer.serversocketMod.^ = js.native
+    var socket: typings.socketclusterServer.serversocketMod.^
   }
   object DeauthenticationData {
     
@@ -706,10 +711,11 @@ object serverMod {
     }
   }
   
-  @js.native
-  trait DisconnectionData extends DisconnectData {
+  trait DisconnectionData
+    extends StObject
+       with DisconnectData {
     
-    var socket: typings.socketclusterServer.serversocketMod.^ = js.native
+    var socket: typings.socketclusterServer.serversocketMod.^
   }
   object DisconnectionData {
     
@@ -749,10 +755,11 @@ object serverMod {
     def outbound: typings.socketclusterServer.socketclusterServerStrings.outbound = "outbound".asInstanceOf[typings.socketclusterServer.socketclusterServerStrings.outbound]
   }
   
-  @js.native
-  trait SubscriptionData extends SubscribeData {
+  trait SubscriptionData
+    extends StObject
+       with SubscribeData {
     
-    var socket: typings.socketclusterServer.serversocketMod.^ = js.native
+    var socket: typings.socketclusterServer.serversocketMod.^
   }
   object SubscriptionData {
     
@@ -774,10 +781,11 @@ object serverMod {
     }
   }
   
-  @js.native
-  trait UnsubscriptionData extends UnsubscribeData {
+  trait UnsubscriptionData
+    extends StObject
+       with UnsubscribeData {
     
-    var socket: typings.socketclusterServer.serversocketMod.^ = js.native
+    var socket: typings.socketclusterServer.serversocketMod.^
   }
   object UnsubscriptionData {
     

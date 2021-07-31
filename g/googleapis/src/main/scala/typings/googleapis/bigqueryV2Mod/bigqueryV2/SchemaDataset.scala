@@ -4,10 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleapis.anon.Domain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDataset extends StObject {
   
   /**
@@ -20,18 +18,18 @@ trait SchemaDataset extends StObject {
     * access.specialGroup: projectOwners; access.role: OWNER;
     * access.userByEmail: [dataset creator email]; access.role: OWNER;
     */
-  var access: js.UndefOr[js.Array[Domain]] = js.native
+  var access: js.UndefOr[js.Array[Domain]] = js.undefined
   
   /**
     * [Output-only] The time when this dataset was created, in milliseconds
     * since the epoch.
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] A reference that identifies the dataset.
     */
-  var datasetReference: js.UndefOr[SchemaDatasetReference] = js.native
+  var datasetReference: js.UndefOr[SchemaDatasetReference] = js.undefined
   
   /**
     * [Optional] The default partition expiration for all partitioned tables in
@@ -48,7 +46,7 @@ trait SchemaDataset extends StObject {
     * table, that value takes precedence over the default partition expiration
     * time indicated by this property.
     */
-  var defaultPartitionExpirationMs: js.UndefOr[String] = js.native
+  var defaultPartitionExpirationMs: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The default lifetime of all tables in the dataset, in
@@ -62,22 +60,22 @@ trait SchemaDataset extends StObject {
     * explicit expirationTime when creating a table, that value takes
     * precedence over the default expiration time indicated by this property.
     */
-  var defaultTableExpirationMs: js.UndefOr[String] = js.native
+  var defaultTableExpirationMs: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] A user-friendly description of the dataset.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] A hash of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] A descriptive name for the dataset.
     */
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] The fully-qualified unique name of the dataset in the
@@ -85,12 +83,12 @@ trait SchemaDataset extends StObject {
     * given in the datasetId field. When creating a new dataset, leave this
     * field blank, and instead specify the datasetId field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] The resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The labels associated with this dataset. You can use these to organize
@@ -98,26 +96,26 @@ trait SchemaDataset extends StObject {
     * updating a dataset. See Creating and Updating Dataset Labels for more
     * information.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * [Output-only] The date when this dataset or any of its tables was last
     * modified, in milliseconds since the epoch.
     */
-  var lastModifiedTime: js.UndefOr[String] = js.native
+  var lastModifiedTime: js.UndefOr[String] = js.undefined
   
   /**
     * The geographic location where the dataset should reside. The default
     * value is US. See details at
     * https://cloud.google.com/bigquery/docs/locations.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] A URL that can be used to access the resource again. You
     * can use this URL in Get or Update requests to the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaDataset {
   

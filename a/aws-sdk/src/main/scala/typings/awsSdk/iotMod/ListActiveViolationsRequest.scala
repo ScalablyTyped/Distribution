@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListActiveViolationsRequest extends StObject {
   
   /**
     * The maximum number of results to return at one time.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token for the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The name of the Device Defender security profile for which violations are listed.
     */
-  var securityProfileName: js.UndefOr[SecurityProfileName] = js.native
+  var securityProfileName: js.UndefOr[SecurityProfileName] = js.undefined
   
   /**
     * The name of the thing whose active violations are listed.
     */
-  var thingName: js.UndefOr[DeviceDefenderThingName] = js.native
+  var thingName: js.UndefOr[DeviceDefenderThingName] = js.undefined
 }
 object ListActiveViolationsRequest {
   

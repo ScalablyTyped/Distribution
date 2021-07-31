@@ -2,15 +2,13 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SemanticTokensLegend extends StObject {
   
-  val tokenModifiers: js.Array[String] = js.native
+  val tokenModifiers: js.Array[String]
   
-  val tokenTypes: js.Array[String] = js.native
+  val tokenTypes: js.Array[String]
 }
 object SemanticTokensLegend {
   

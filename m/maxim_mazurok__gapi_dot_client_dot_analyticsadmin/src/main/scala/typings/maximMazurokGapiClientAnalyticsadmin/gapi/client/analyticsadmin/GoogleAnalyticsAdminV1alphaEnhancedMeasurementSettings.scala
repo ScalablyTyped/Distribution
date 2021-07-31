@@ -2,71 +2,69 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettings extends StObject {
   
   /** Capture events when your visitors view content on your site that has articles or blog posts. */
-  var articlesAndBlogsEnabled: js.UndefOr[Boolean] = js.native
+  var articlesAndBlogsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Capture events when your visitors view content on your site that has structured data (eg, articles, blog posts, product details screens, etc.). */
-  var contentViewsEnabled: js.UndefOr[Boolean] = js.native
+  var contentViewsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** If enabled, capture a click event each time a visitor clicks a link or element that has data attributes beginning with "data-ga". */
-  var dataTaggedElementClicksEnabled: js.UndefOr[Boolean] = js.native
+  var dataTaggedElementClicksEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Domains to exclude from measurement. Max length is 1024 characters. */
-  var excludedDomains: js.UndefOr[String] = js.native
+  var excludedDomains: js.UndefOr[String] = js.undefined
   
   /** If enabled, capture a file download event each time a link is clicked with a common document, compressed file, application, video, or audio extension. */
-  var fileDownloadsEnabled: js.UndefOr[Boolean] = js.native
+  var fileDownloadsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** If enabled, capture a view search results event each time a visitor interacts with a form on your site. */
-  var formInteractionsEnabled: js.UndefOr[Boolean] = js.native
+  var formInteractionsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output only. Resource name of this Data Stream. Format: properties/{property_id}/webDataStreams/{stream_id}/enhancedMeasurementSettings Example:
     * "properties/1000/webDataStreams/2000/enhancedMeasurementSettings"
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** If enabled, capture an outbound click event each time a visitor clicks a link that leads them away from your domain. */
-  var outboundClicksEnabled: js.UndefOr[Boolean] = js.native
+  var outboundClicksEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** If enabled, capture a page view event each time the website changes the browser history state. */
-  var pageChangesEnabled: js.UndefOr[Boolean] = js.native
+  var pageChangesEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** If enabled, capture a page view event each time a page loads. */
-  var pageLoadsEnabled: js.UndefOr[Boolean] = js.native
+  var pageLoadsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. If enabled, capture a page view event each time a page loads or the website changes the browser history state. */
-  var pageViewsEnabled: js.UndefOr[Boolean] = js.native
+  var pageViewsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Capture events when your visitors view content on your site that has product details screens, etc. */
-  var productsAndEcommerceEnabled: js.UndefOr[Boolean] = js.native
+  var productsAndEcommerceEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** If enabled, capture scroll events each time a visitor gets to the bottom of a page. */
-  var scrollsEnabled: js.UndefOr[Boolean] = js.native
+  var scrollsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Required. URL query parameters to interpret as site search parameters. Max length is 1024 characters. Must not be empty. */
-  var searchQueryParameter: js.UndefOr[String] = js.native
+  var searchQueryParameter: js.UndefOr[String] = js.undefined
   
   /** If enabled, capture a view search results event each time a visitor performs a search on your site (based on a query parameter). */
-  var siteSearchEnabled: js.UndefOr[Boolean] = js.native
+  var siteSearchEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether Enhanced Measurement Settings will be used to automatically measure interactions and content on this web stream. Changing this value does not affect the settings
     * themselves, but determines whether they are respected.
     */
-  var streamEnabled: js.UndefOr[Boolean] = js.native
+  var streamEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Additional URL query parameters. Max length is 1024 characters. */
-  var urlQueryParameter: js.UndefOr[String] = js.native
+  var urlQueryParameter: js.UndefOr[String] = js.undefined
   
   /** If enabled, capture video play, progress, and complete events as visitors view embedded videos on your site. */
-  var videoEngagementEnabled: js.UndefOr[Boolean] = js.native
+  var videoEngagementEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettings {
   

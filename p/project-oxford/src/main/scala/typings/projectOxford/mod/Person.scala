@@ -5,7 +5,6 @@ import typings.projectOxford.anon.PersonId
 import typings.projectOxford.mod.PersonResponses.Face
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("project-oxford", "Person")

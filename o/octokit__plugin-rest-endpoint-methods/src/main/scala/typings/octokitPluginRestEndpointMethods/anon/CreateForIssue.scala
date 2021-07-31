@@ -2,49 +2,47 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateForIssue extends StObject {
   
-  var createForCommitComment: `873` = js.native
+  var createForCommitComment: `873`
   
-  var createForIssue: `874` = js.native
+  var createForIssue: `874`
   
-  var createForIssueComment: `875` = js.native
+  var createForIssueComment: `875`
   
-  var createForPullRequestReviewComment: `876` = js.native
+  var createForPullRequestReviewComment: `876`
   
-  var createForTeamDiscussionCommentInOrg: `877` = js.native
+  var createForTeamDiscussionCommentInOrg: `877`
   
-  var createForTeamDiscussionInOrg: `878` = js.native
+  var createForTeamDiscussionInOrg: `878`
   
-  var deleteForCommitComment: `879` = js.native
+  var deleteForCommitComment: `879`
   
-  var deleteForIssue: `880` = js.native
+  var deleteForIssue: `880`
   
-  var deleteForIssueComment: `881` = js.native
+  var deleteForIssueComment: `881`
   
-  var deleteForPullRequestComment: `882` = js.native
+  var deleteForPullRequestComment: `882`
   
-  var deleteForTeamDiscussion: `883` = js.native
+  var deleteForTeamDiscussion: `883`
   
-  var deleteForTeamDiscussionComment: `884` = js.native
+  var deleteForTeamDiscussionComment: `884`
   
-  var deleteLegacy: `885` = js.native
+  var deleteLegacy: `885`
   
-  var listForCommitComment: `886` = js.native
+  var listForCommitComment: `886`
   
-  var listForIssue: `887` = js.native
+  var listForIssue: `887`
   
-  var listForIssueComment: `888` = js.native
+  var listForIssueComment: `888`
   
-  var listForPullRequestReviewComment: `889` = js.native
+  var listForPullRequestReviewComment: `889`
   
-  var listForTeamDiscussionCommentInOrg: `890` = js.native
+  var listForTeamDiscussionCommentInOrg: `890`
   
-  var listForTeamDiscussionInOrg: `891` = js.native
+  var listForTeamDiscussionInOrg: `891`
 }
 object CreateForIssue {
   

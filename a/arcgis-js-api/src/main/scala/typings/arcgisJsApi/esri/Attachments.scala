@@ -4,11 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.list
 import typings.arcgisJsApi.arcgisJsApiStrings.preview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attachments extends Widget_ {
+trait Attachments
+  extends StObject
+     with Widget_ {
   
   /**
     * A string value indicating how to display the attachment.

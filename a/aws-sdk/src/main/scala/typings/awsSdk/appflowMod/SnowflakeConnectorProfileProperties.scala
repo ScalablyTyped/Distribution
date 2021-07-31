@@ -2,46 +2,44 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnowflakeConnectorProfileProperties extends StObject {
   
   /**
     *  The name of the account. 
     */
-  var accountName: js.UndefOr[AccountName] = js.native
+  var accountName: js.UndefOr[AccountName] = js.undefined
   
   /**
     *  The name of the Amazon S3 bucket associated with Snowflake. 
     */
-  var bucketName: BucketName = js.native
+  var bucketName: BucketName
   
   /**
     *  The bucket path that refers to the Amazon S3 bucket associated with Snowflake. 
     */
-  var bucketPrefix: js.UndefOr[BucketPrefix] = js.native
+  var bucketPrefix: js.UndefOr[BucketPrefix] = js.undefined
   
   /**
     *  The Snowflake Private Link service name to be used for private data transfers. 
     */
-  var privateLinkServiceName: js.UndefOr[PrivateLinkServiceName] = js.native
+  var privateLinkServiceName: js.UndefOr[PrivateLinkServiceName] = js.undefined
   
   /**
     *  The AWS Region of the Snowflake account. 
     */
-  var region: js.UndefOr[Region] = js.native
+  var region: js.UndefOr[Region] = js.undefined
   
   /**
     *  The name of the Amazon S3 stage that was created while setting up an Amazon S3 stage in the Snowflake account. This is written in the following format: &lt; Database&gt;&lt; Schema&gt;&lt;Stage Name&gt;. 
     */
-  var stage: Stage = js.native
+  var stage: Stage
   
   /**
     *  The name of the Snowflake warehouse. 
     */
-  var warehouse: Warehouse = js.native
+  var warehouse: Warehouse
 }
 object SnowflakeConnectorProfileProperties {
   

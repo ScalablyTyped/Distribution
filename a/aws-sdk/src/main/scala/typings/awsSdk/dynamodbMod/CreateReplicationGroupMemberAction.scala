@@ -2,31 +2,29 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateReplicationGroupMemberAction extends StObject {
   
   /**
     * Replica-specific global secondary index settings.
     */
-  var GlobalSecondaryIndexes: js.UndefOr[ReplicaGlobalSecondaryIndexList] = js.native
+  var GlobalSecondaryIndexes: js.UndefOr[ReplicaGlobalSecondaryIndexList] = js.undefined
   
   /**
     * The AWS KMS customer master key (CMK) that should be used for AWS KMS encryption in the new replica. To specify a CMK, use its key ID, Amazon Resource Name (ARN), alias name, or alias ARN. Note that you should only provide this parameter if the key is different from the default DynamoDB KMS master key alias/aws/dynamodb.
     */
-  var KMSMasterKeyId: js.UndefOr[typings.awsSdk.dynamodbMod.KMSMasterKeyId] = js.native
+  var KMSMasterKeyId: js.UndefOr[typings.awsSdk.dynamodbMod.KMSMasterKeyId] = js.undefined
   
   /**
     * Replica-specific provisioned throughput. If not specified, uses the source table's provisioned throughput settings.
     */
-  var ProvisionedThroughputOverride: js.UndefOr[typings.awsSdk.dynamodbMod.ProvisionedThroughputOverride] = js.native
+  var ProvisionedThroughputOverride: js.UndefOr[typings.awsSdk.dynamodbMod.ProvisionedThroughputOverride] = js.undefined
   
   /**
     * The Region where the new replica will be created.
     */
-  var RegionName: typings.awsSdk.dynamodbMod.RegionName = js.native
+  var RegionName: typings.awsSdk.dynamodbMod.RegionName
 }
 object CreateReplicationGroupMemberAction {
   

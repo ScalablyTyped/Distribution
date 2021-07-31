@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Create extends StObject {
   
   /** If present, indicates the object was created by copying an existing Drive object. */
-  var copy: js.UndefOr[Copy] = js.native
+  var copy: js.UndefOr[Copy] = js.undefined
   
   /** If present, indicates the object was newly created (e.g. as a blank document), not derived from a Drive object or external object. */
-  var `new`: js.UndefOr[js.Any] = js.native
+  var `new`: js.UndefOr[js.Any] = js.undefined
   
   /** If present, indicates the object originated externally and was uploaded to Drive. */
-  var upload: js.UndefOr[js.Any] = js.native
+  var upload: js.UndefOr[js.Any] = js.undefined
 }
 object Create {
   

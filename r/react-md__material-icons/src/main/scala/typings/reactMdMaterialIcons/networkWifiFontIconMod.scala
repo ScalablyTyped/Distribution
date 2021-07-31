@@ -6,12 +6,11 @@ import typings.reactMdIcon.fontIconMod.FontIconProps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkWifiFontIconMod {
   
   @JSImport("@react-md/material-icons/types/NetworkWifiFontIcon", "NetworkWifiFontIcon")
   @js.native
-  val NetworkWifiFontIcon: ForwardRefExoticComponent[FontIconProps with RefAttributes[HTMLElement]] = js.native
+  val NetworkWifiFontIcon: ForwardRefExoticComponent[FontIconProps & RefAttributes[HTMLElement]] = js.native
 }

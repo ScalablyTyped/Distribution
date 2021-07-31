@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vision/v1p2beta1", "vision_v1p2beta1.Resource$Images")
@@ -28,7 +27,7 @@ class ResourceImages protected () extends StObject {
     */
   def annotate(): GaxiosPromise[SchemaGoogleCloudVisionV1p2beta1BatchAnnotateImagesResponse] = js.native
   def annotate(callback: BodyResponseCallback[SchemaGoogleCloudVisionV1p2beta1BatchAnnotateImagesResponse]): Unit = js.native
-  def annotate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudVisionV1p2beta1BatchAnnotateImagesResponse] = js.native
+  def annotate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudVisionV1p2beta1BatchAnnotateImagesResponse] = js.native
   def annotate(params: ParamsResourceImagesAnnotate): GaxiosPromise[SchemaGoogleCloudVisionV1p2beta1BatchAnnotateImagesResponse] = js.native
   def annotate(
     params: ParamsResourceImagesAnnotate,

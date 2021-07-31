@@ -2,18 +2,19 @@ package typings.reactBase16Styling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorConvertersMod {
   
-  @JSImport("react-base16-styling/lib/colorConverters", "rgb2yuv")
+  @JSImport("react-base16-styling/lib/colorConverters", JSImport.Namespace)
   @js.native
-  def rgb2yuv(rgb: Color): Color = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-base16-styling/lib/colorConverters", "yuv2rgb")
-  @js.native
-  def yuv2rgb(yuv: Color): Color = js.native
+  @scala.inline
+  def rgb2yuv(rgb: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2yuv")(rgb.asInstanceOf[js.Any]).asInstanceOf[Color]
+  
+  @scala.inline
+  def yuv2rgb(yuv: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("yuv2rgb")(yuv.asInstanceOf[js.Any]).asInstanceOf[Color]
   
   type Color = js.Tuple3[Double, Double, Double]
 }

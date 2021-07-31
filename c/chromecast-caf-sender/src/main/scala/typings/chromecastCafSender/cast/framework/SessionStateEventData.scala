@@ -3,17 +3,17 @@ package typings.chromecastCafSender.cast.framework
 import typings.chrome.chrome.cast.ErrorCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SessionStateEventData extends EventData {
+trait SessionStateEventData
+  extends StObject
+     with EventData {
   
-  var errorCode: ErrorCode = js.native
+  var errorCode: ErrorCode
   
-  var session: CastSession = js.native
+  var session: CastSession
   
-  var sessionState: SessionState = js.native
+  var sessionState: SessionState
 }
 object SessionStateEventData {
   

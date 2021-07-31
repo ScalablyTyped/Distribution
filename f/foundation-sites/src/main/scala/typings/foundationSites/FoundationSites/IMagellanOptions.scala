@@ -2,23 +2,21 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMagellanOptions extends StObject {
   
-  var activeClass: js.UndefOr[String] = js.native
+  var activeClass: js.UndefOr[String] = js.undefined
   
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
-  var animationEasing: js.UndefOr[String] = js.native
+  var animationEasing: js.UndefOr[String] = js.undefined
   
-  var barOffset: js.UndefOr[Double] = js.native
+  var barOffset: js.UndefOr[Double] = js.undefined
   
-  var deepLinking: js.UndefOr[Boolean] = js.native
+  var deepLinking: js.UndefOr[Boolean] = js.undefined
   
-  var threshold: js.UndefOr[Double] = js.native
+  var threshold: js.UndefOr[Double] = js.undefined
 }
 object IMagellanOptions {
   

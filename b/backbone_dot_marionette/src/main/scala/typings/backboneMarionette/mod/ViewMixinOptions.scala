@@ -3,57 +3,55 @@ package typings.backboneMarionette.mod
 import typings.backboneMarionette.backboneMarionetteBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewMixinOptions extends StObject {
   
   /**
     * Behavior objects to assign to this View.
     */
-  var behaviors: js.UndefOr[js.Array[Behavior]] = js.native
+  var behaviors: js.UndefOr[js.Array[Behavior]] = js.undefined
   
   /**
     * Customize the event prefix for events that are forwarded through the
     * collection view.
     */
-  var childViewEventPrefix: js.UndefOr[String | `false`] = js.native
+  var childViewEventPrefix: js.UndefOr[String | `false`] = js.undefined
   
   /**
     * Use the childViewEvents attribute to map child events to methods on the
     * parent view.
     */
-  var childViewEvents: js.UndefOr[EventsHash] = js.native
+  var childViewEvents: js.UndefOr[EventsHash] = js.undefined
   
   /**
     * A childViewTriggers hash or method permits proxying of child view events
     * without manually setting bindings. The values of the hash should be a
     * string of the event to trigger on the parent.
     */
-  var childViewTriggers: js.UndefOr[EventsHash] = js.native
+  var childViewTriggers: js.UndefOr[EventsHash] = js.undefined
   
   /**
     * Bind to events that occur on attached collections.
     */
-  var collectionEvents: js.UndefOr[EventsHash] = js.native
+  var collectionEvents: js.UndefOr[EventsHash] = js.undefined
   
   /**
     * Bind to events that occur on attached models.
     */
-  var modelEvents: js.UndefOr[EventsHash] = js.native
+  var modelEvents: js.UndefOr[EventsHash] = js.undefined
   
   /**
     * The view triggers attribute binds DOM events to Marionette View events
     * that can be responded to at the view or parent level.
     */
-  var triggers: js.UndefOr[EventsHash] = js.native
+  var triggers: js.UndefOr[EventsHash] = js.undefined
   
   /**
     * Name parts of your template to be used
     * throughout the view with the ui attribute.
     */
-  var ui: js.UndefOr[js.Any] = js.native
+  var ui: js.UndefOr[js.Any] = js.undefined
 }
 object ViewMixinOptions {
   

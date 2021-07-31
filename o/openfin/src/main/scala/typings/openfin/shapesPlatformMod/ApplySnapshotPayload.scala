@@ -2,15 +2,13 @@ package typings.openfin.shapesPlatformMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplySnapshotPayload extends StObject {
   
-  var options: js.UndefOr[ApplySnapshotOptions] = js.native
+  var options: js.UndefOr[ApplySnapshotOptions] = js.undefined
   
-  var snapshot: Snapshot = js.native
+  var snapshot: Snapshot
 }
 object ApplySnapshotPayload {
   

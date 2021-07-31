@@ -3,52 +3,50 @@ package typings.materializeCss.M
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<DropdownOptions> * / any */ @js.native
-trait Dropdown extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<DropdownOptions> * / any */ trait Dropdown extends StObject {
   
   /**
     * Close dropdown
     */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * The DOM element of the dropdown
     */
-  var dropdownEl: Element = js.native
+  var dropdownEl: Element
   
   /**
     * The index of the item focused
     */
-  var focusedIndex: Double = js.native
+  var focusedIndex: Double
   
   /**
     * ID of the dropdown element
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * If the dropdown is open
     */
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   
   /**
     * If the dropdown content is scrollable
     */
-  var isScrollable: Boolean = js.native
+  var isScrollable: Boolean
   
   /**
     * Open dropdown
     */
-  def open(): Unit = js.native
+  def open(): Unit
   
   /**
     * While dropdown is open, you can recalculate its dimensions if its contents have changed
     */
-  def recalculateDimensions(): Unit = js.native
+  def recalculateDimensions(): Unit
 }
 object Dropdown {
   

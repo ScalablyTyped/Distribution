@@ -2,30 +2,28 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response of getting recaptcha param.
   */
-@js.native
 trait SchemaGetRecaptchaParamResponse extends StObject {
   
   /**
     * The fixed string &quot;identitytoolkit#GetRecaptchaParamResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Site key registered at recaptcha.
     */
-  var recaptchaSiteKey: js.UndefOr[String] = js.native
+  var recaptchaSiteKey: js.UndefOr[String] = js.undefined
   
   /**
     * The stoken field for the recaptcha widget, used to request captcha
     * challenge.
     */
-  var recaptchaStoken: js.UndefOr[String] = js.native
+  var recaptchaStoken: js.UndefOr[String] = js.undefined
 }
 object SchemaGetRecaptchaParamResponse {
   

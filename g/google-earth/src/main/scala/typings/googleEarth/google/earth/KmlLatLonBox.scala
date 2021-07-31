@@ -2,74 +2,74 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlLatLonBox extends KmlObject {
+trait KmlLatLonBox
+  extends StObject
+     with KmlObject {
   
   /**
     * Specifies the longitude of the east edge of the bounding box, in decimal degrees from -180 to 180.
     * (For overlays that overlap the meridian of 180 degrees longitude, values can extend beyond that range.)
     */
-  def getEast(): Double = js.native
+  def getEast(): Double
   
   /**
     * Specifies the latitude of the north edge of the bounding box, in decimal degrees from -90 to 90.
     */
-  def getNorth(): Double = js.native
+  def getNorth(): Double
   
   /**
     * Specifies a rotation of the overlay about its center, in degrees.
     * Values can be +/-180. The default is 0 (north).
     * Rotations are specified in a counterclockwise direction.
     */
-  def getRotation(): Double = js.native
+  def getRotation(): Double
   
   /**
     * Specifies the latitude of the south edge of the bounding box, in decimal degrees from -90 to 90.
     */
-  def getSouth(): Double = js.native
+  def getSouth(): Double
   
   /**
     * Specifies the longitude of the west edge of the bounding box, in decimal degrees from -180 to 180.
     * (For overlays that overlap the meridian of 180 degrees longitude, values can extend beyond that range.)
     */
-  def getWest(): Double = js.native
+  def getWest(): Double
   
   /**
     * Sets the north, south, east, and west edges of the bounding box, as well as the rotation of the overlay.
     */
-  def setBox(north: Double, south: Double, east: Double, west: Double, rotation: Double): Unit = js.native
+  def setBox(north: Double, south: Double, east: Double, west: Double, rotation: Double): Unit
   
   /**
     * Specifies the longitude of the east edge of the bounding box, in decimal degrees from -180 to 180.
     * (For overlays that overlap the meridian of 180 degrees longitude, values can extend beyond that range.)
     */
-  def setEast(east: Double): Unit = js.native
+  def setEast(east: Double): Unit
   
   /**
     * Specifies the latitude of the north edge of the bounding box, in decimal degrees from -90 to 90.
     */
-  def setNorth(north: Double): Unit = js.native
+  def setNorth(north: Double): Unit
   
   /**
     * Specifies a rotation of the overlay about its center, in degrees.
     * Values can be +/-180. The default is 0 (north).
     * Rotations are specified in a counterclockwise direction.
     */
-  def setRotation(rotation: Double): Unit = js.native
+  def setRotation(rotation: Double): Unit
   
   /**
     * Specifies the latitude of the south edge of the bounding box, in decimal degrees from -90 to 90.
     */
-  def setSouth(south: Double): Unit = js.native
+  def setSouth(south: Double): Unit
   
   /**
     * Specifies the longitude of the west edge of the bounding box, in decimal degrees from -180 to 180.
     * (For overlays that overlap the meridian of 180 degrees longitude, values can extend beyond that range.)
     */
-  def setWest(west: Double): Unit = js.native
+  def setWest(west: Double): Unit
 }
 object KmlLatLonBox {
   

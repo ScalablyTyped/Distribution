@@ -2,29 +2,25 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmitStatement
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode
      with Statement {
   
-  var eventCall: FunctionCall = js.native
+  var eventCall: FunctionCall
   
   @JSName("type")
-  var type_EmitStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.EmitStatement = js.native
+  var type_EmitStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.EmitStatement
 }
 object EmitStatement {
   
   @scala.inline
-  def apply(
-    eventCall: FunctionCall,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.EmitStatement
-  ): EmitStatement = {
+  def apply(eventCall: FunctionCall): EmitStatement = {
     val __obj = js.Dynamic.literal(eventCall = eventCall.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EmitStatement")
     __obj.asInstanceOf[EmitStatement]
   }
   

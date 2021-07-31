@@ -8,54 +8,53 @@ import typings.cadesplugin.CADESCommon.VarDate
 import typings.cadesplugin.CADESCommon._Unpacked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAPICOM.Certificate> */
-@js.native
 trait CertificateAsync
-  extends _Unpacked[js.Any] {
+  extends StObject
+     with _Unpacked[js.Any] {
   
   val Display: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[Unit]]]) | PromisifiedFunction[js.Function0[Unit]] = js.native
+  js.Promise[Unpacked[js.Function0[Unit]]]) | PromisifiedFunction[js.Function0[Unit]]
   
   val Export: (// tslint:disable-line ban-types
   js.Promise[
     Unpacked[js.Function1[/* EncodingType */ ValuesOf[CAPICOM_ENCODING_TYPE], String]]
-  ]) | (PromisifiedFunction[js.Function1[/* EncodingType */ ValuesOf[CAPICOM_ENCODING_TYPE], String]]) = js.native
+  ]) | (PromisifiedFunction[js.Function1[/* EncodingType */ ValuesOf[CAPICOM_ENCODING_TYPE], String]])
   
   val GetInfo: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function1[/* infoType */ CAPICOM_CERT_INFO_TYPE, String]]]) | (PromisifiedFunction[js.Function1[/* infoType */ CAPICOM_CERT_INFO_TYPE, String]]) = js.native
+  js.Promise[Unpacked[js.Function1[/* infoType */ CAPICOM_CERT_INFO_TYPE, String]]]) | (PromisifiedFunction[js.Function1[/* infoType */ CAPICOM_CERT_INFO_TYPE, String]])
   
   val HasPrivateKey: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[Boolean]]]) | PromisifiedFunction[js.Function0[Boolean]] = js.native
+  js.Promise[Unpacked[js.Function0[Boolean]]]) | PromisifiedFunction[js.Function0[Boolean]]
   
   val IsValid: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[CertificateStatus]]]) | PromisifiedFunction[js.Function0[CertificateStatus]] = js.native
+  js.Promise[Unpacked[js.Function0[CertificateStatus]]]) | PromisifiedFunction[js.Function0[CertificateStatus]]
   
   val IssuerName: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String] = js.native
+  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
   
   val PublicKey: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[typings.cadesplugin.CAPICOM.PublicKey]]]) | PromisifiedFunction[js.Function0[typings.cadesplugin.CAPICOM.PublicKey]] = js.native
+  js.Promise[Unpacked[js.Function0[typings.cadesplugin.CAPICOM.PublicKey]]]) | PromisifiedFunction[js.Function0[typings.cadesplugin.CAPICOM.PublicKey]]
   
   val SerialNumber: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String] = js.native
+  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
   
   val SubjectName: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String] = js.native
+  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
   
   val Thumbprint: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String] = js.native
+  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
   
   val ValidFromDate: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[VarDate]]) | PromisifiedFunction[VarDate] = js.native
+  js.Promise[Unpacked[VarDate]]) | PromisifiedFunction[VarDate]
   
   val ValidToDate: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[VarDate]]) | PromisifiedFunction[VarDate] = js.native
+  js.Promise[Unpacked[VarDate]]) | PromisifiedFunction[VarDate]
   
   val Version: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double] = js.native
+  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
 }
 object CertificateAsync {
   
@@ -110,7 +109,7 @@ object CertificateAsync {
     def setDisplayFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Display", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -125,7 +124,7 @@ object CertificateAsync {
     def setExportFunction1(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any]) | (/* EncodingType */ ValuesOf[CAPICOM_ENCODING_TYPE]) => js.Promise[Unpacked[js.Any]] | String
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any]) | (/* EncodingType */ ValuesOf[CAPICOM_ENCODING_TYPE]) => js.Promise[Unpacked[js.Any]] | String
     ): Self = StObject.set(x, "Export", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -138,7 +137,7 @@ object CertificateAsync {
     def setGetInfoFunction1(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any]) | (/* infoType */ CAPICOM_CERT_INFO_TYPE) => js.Promise[Unpacked[js.Any]] | String
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any]) | (/* infoType */ CAPICOM_CERT_INFO_TYPE) => js.Promise[Unpacked[js.Any]] | String
     ): Self = StObject.set(x, "GetInfo", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -154,7 +153,7 @@ object CertificateAsync {
     def setHasPrivateKeyFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "HasPrivateKey", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -170,7 +169,7 @@ object CertificateAsync {
     def setIsValidFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "IsValid", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -183,7 +182,7 @@ object CertificateAsync {
     def setIssuerNameFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "IssuerName", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -199,7 +198,7 @@ object CertificateAsync {
     def setPublicKeyFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "PublicKey", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -212,7 +211,7 @@ object CertificateAsync {
     def setSerialNumberFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "SerialNumber", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -225,7 +224,7 @@ object CertificateAsync {
     def setSubjectNameFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "SubjectName", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -238,7 +237,7 @@ object CertificateAsync {
     def setThumbprintFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Thumbprint", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -251,7 +250,7 @@ object CertificateAsync {
     def setValidFromDateFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "ValidFromDate", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -264,7 +263,7 @@ object CertificateAsync {
     def setValidToDateFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "ValidToDate", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -277,7 +276,7 @@ object CertificateAsync {
     def setVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Version", js.Any.fromFunction1(value))
   }
 }

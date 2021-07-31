@@ -5,78 +5,76 @@ import typings.minecraftScriptingTypesServer.anon.Table
 import typings.minecraftScriptingTypesShared.MinecraftTrigger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the ways the player can interact with the entity to which this component is applied.
   */
-@js.native
 trait IInteractComponent extends StObject {
   
   /**
     * Loot table with items to add to the player's inventory upon successful interaction
     */
-  var add_items: Table = js.native
+  var add_items: Table
   
   /**
     * Time in seconds before this entity can be interacted with again
     * @default 0.0
     */
-  var cooldown: Double = js.native
+  var cooldown: Double
   
   /**
     * The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability
     * @default 0
     */
-  var hurt_item: Double = js.native
+  var hurt_item: Double
   
   /**
     * Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls
     */
-  var interact_text: String = js.native
+  var interact_text: String
   
   /**
     * An event identifier to fire when the interaction occurs
     */
-  var on_interact: MinecraftTrigger | String = js.native
+  var on_interact: MinecraftTrigger | String
   
   /**
     * Particle effect that will be triggered at the start of the interaction
     */
-  var particle_on_start: Particleoffsettowardsinteractor = js.native
+  var particle_on_start: Particleoffsettowardsinteractor
   
   /**
     * An array of sound identifiers to play when the interaction occurs
     */
-  var play_sounds: js.Array[String] = js.native
+  var play_sounds: js.Array[String]
   
   /**
     * An array of entity identifiers to spawn when the interaction occurs
     */
-  var spawn_entities: js.Array[String] = js.native
+  var spawn_entities: js.Array[String]
   
   /**
     * Loot table with items to drop on the ground upon successful interaction
     */
-  var spawn_items: Table = js.native
+  var spawn_items: Table
   
   /**
     * If true, the player will do the 'swing' animation when interacting with this entity
     * @default false
     */
-  var swing: Boolean = js.native
+  var swing: Boolean
   
   /**
     * The item used will transform to this item upon successful interaction. Format: itemName:auxValue
     */
-  var transform_to_item: js.UndefOr[String] = js.native
+  var transform_to_item: js.UndefOr[String] = js.undefined
   
   /**
     * If true, the interaction will use an item
     * @default false
     */
-  var use_item: Boolean = js.native
+  var use_item: Boolean
 }
 object IInteractComponent {
   

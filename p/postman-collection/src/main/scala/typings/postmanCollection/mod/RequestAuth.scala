@@ -15,7 +15,6 @@ import typings.postmanCollection.postmanCollectionStrings.oauth2
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -76,7 +75,10 @@ class RequestAuth protected () extends Property[RequestAuthDefinition] {
 /* static members */
 object RequestAuth {
   
-  @JSImport("postman-collection", "RequestAuth.isValidType")
+  @JSImport("postman-collection", "RequestAuth")
   @js.native
-  def isValidType(`type`: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isValidType(`type`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

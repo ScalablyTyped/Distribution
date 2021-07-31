@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to insert a section break and start a new section on the next even-numbered page.
   */
-@js.native
-trait InsertSectionBreakEvenPageCommand extends CommandWithSimpleStateBase {
+trait InsertSectionBreakEvenPageCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the InsertSectionBreakEvenPageCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object InsertSectionBreakEvenPageCommand {
   

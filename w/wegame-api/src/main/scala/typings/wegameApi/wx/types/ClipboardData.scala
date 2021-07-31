@@ -2,14 +2,12 @@ package typings.wegameApi.wx.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // --剪切板
-@js.native
 trait ClipboardData extends StObject {
   
-  var data: String = js.native
+  var data: String
 }
 object ClipboardData {
   

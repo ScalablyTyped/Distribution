@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.microflowsMod.microflows.IMicroflow
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -61,9 +60,8 @@ object EventHandler {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EventHandler.create")
-  @js.native
-  def create(model: IModel): EventHandler = js.native
+  @scala.inline
+  def create(model: IModel): EventHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[EventHandler]
   
   /**
     * Creates and returns a new EventHandler instance in the SDK and on the server.
@@ -71,9 +69,8 @@ object EventHandler {
     * of the parent Entity element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EventHandler.createIn")
-  @js.native
-  def createIn(container: Entity): EventHandler = js.native
+  @scala.inline
+  def createIn(container: Entity): EventHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[EventHandler]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EventHandler.structureTypeName")

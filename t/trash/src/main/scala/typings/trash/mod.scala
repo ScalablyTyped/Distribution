@@ -2,7 +2,6 @@ package typings.trash
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,27 +17,26 @@ object mod {
   })();
   ```
   */
-  @JSImport("trash", JSImport.Namespace)
-  @js.native
-  def apply(input: String): js.Promise[Unit] = js.native
-  @JSImport("trash", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Options): js.Promise[Unit] = js.native
-  @JSImport("trash", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String]): js.Promise[Unit] = js.native
-  @JSImport("trash", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String], options: Options): js.Promise[Unit] = js.native
+  @scala.inline
+  def apply(input: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(input: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(input: js.Array[String]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(input: js.Array[String], options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
+  @JSImport("trash", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Enable globbing when matching file paths.
     		@default true
     		*/
-    val glob: js.UndefOr[Boolean] = js.native
+    val glob: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

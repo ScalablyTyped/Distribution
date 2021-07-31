@@ -2,13 +2,11 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformArray extends StObject {
   
-  var transform: js.Array[Rotate] = js.native
+  var transform: js.Array[Rotate]
 }
 object TransformArray {
   

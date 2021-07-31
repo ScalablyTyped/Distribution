@@ -2,40 +2,38 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsVerticalLineTypeOptions extends StObject {
   
   /**
     * (Highstock) Connector options.
     */
-  var connector: js.UndefOr[AnnotationsVerticalLineTypeConnectorOptions] = js.native
+  var connector: js.UndefOr[AnnotationsVerticalLineTypeConnectorOptions] = js.undefined
   
   /**
     * (Highstock) Label options.
     */
-  var label: js.UndefOr[AnnotationsVerticalLineTypeLabelOptions] = js.native
+  var label: js.UndefOr[AnnotationsVerticalLineTypeLabelOptions] = js.undefined
   
   /**
     * (Highstock) Line options.
     */
-  var line: js.UndefOr[AnnotationsVerticalLineTypeLineOptions] = js.native
+  var line: js.UndefOr[AnnotationsVerticalLineTypeLineOptions] = js.undefined
   
-  var points: js.UndefOr[js.Array[AnnotationsVerticalLineTypePointsOptions]] = js.native
+  var points: js.UndefOr[js.Array[AnnotationsVerticalLineTypePointsOptions]] = js.undefined
   
   /**
     * (Highstock) This number defines which xAxis the point is connected to. It
     * refers to either the axis id or the index of the axis in the xAxis array.
     */
-  var xAxis: js.UndefOr[Double] = js.native
+  var xAxis: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) This number defines which yAxis the point is connected to. It
     * refers to either the axis id or the index of the axis in the xAxis array.
     */
-  var yAxis: js.UndefOr[Double] = js.native
+  var yAxis: js.UndefOr[Double] = js.undefined
 }
 object AnnotationsVerticalLineTypeOptions {
   

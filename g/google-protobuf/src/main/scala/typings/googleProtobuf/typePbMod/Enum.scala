@@ -10,7 +10,6 @@ import typings.googleProtobuf.sourceContextPbMod.SourceContext
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/type_pb", "Enum")
@@ -18,12 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Enum () extends Message {
   
   def addEnumvalue(): EnumValue = js.native
-  def addEnumvalue(value: js.UndefOr[scala.Nothing], index: Double): EnumValue = js.native
+  def addEnumvalue(value: Unit, index: Double): EnumValue = js.native
   def addEnumvalue(value: EnumValue): EnumValue = js.native
   def addEnumvalue(value: EnumValue, index: Double): EnumValue = js.native
   
   def addOptions(): Option = js.native
-  def addOptions(value: js.UndefOr[scala.Nothing], index: Double): Option = js.native
+  def addOptions(value: Unit, index: Double): Option = js.native
   def addOptions(value: Option): Option = js.native
   def addOptions(value: Option, index: Double): Option = js.native
   
@@ -63,13 +62,11 @@ object Enum {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("google-protobuf/google/protobuf/type_pb", "Enum.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): Enum = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): Enum = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Enum]
   
-  @JSImport("google-protobuf/google/protobuf/type_pb", "Enum.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: Enum, reader: BinaryReader): Enum = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: Enum, reader: BinaryReader): Enum = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Enum]
   
   @JSImport("google-protobuf/google/protobuf/type_pb", "Enum.extensions")
   @js.native
@@ -84,26 +81,23 @@ object Enum {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/type_pb", "Enum.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: Enum, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: Enum, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/type_pb", "Enum.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: Enum): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: Enum): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var enumvalueList: js.Array[typings.googleProtobuf.typePbMod.EnumValue.AsObject] = js.native
+    var enumvalueList: js.Array[typings.googleProtobuf.typePbMod.EnumValue.AsObject]
     
-    var name: String = js.native
+    var name: String
     
-    var optionsList: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject] = js.native
+    var optionsList: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]
     
-    var sourceContext: js.UndefOr[typings.googleProtobuf.sourceContextPbMod.SourceContext.AsObject] = js.native
+    var sourceContext: js.UndefOr[typings.googleProtobuf.sourceContextPbMod.SourceContext.AsObject] = js.undefined
     
-    var syntax: Syntax = js.native
+    var syntax: Syntax
   }
   object AsObject {
     

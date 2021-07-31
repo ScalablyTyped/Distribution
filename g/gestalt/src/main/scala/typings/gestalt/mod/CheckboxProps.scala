@@ -9,44 +9,42 @@ import typings.std.Event
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckboxProps extends StObject {
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
-  var hasError: js.UndefOr[Boolean] = js.native
+  var hasError: js.UndefOr[Boolean] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var image: js.UndefOr[ReactNode] = js.native
+  var image: js.UndefOr[ReactNode] = js.undefined
   
-  var indeterminate: js.UndefOr[Boolean] = js.native
+  var indeterminate: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onChange: AbstractEventHandler[SyntheticEvent[HTMLInputElement, Event], Checked] = js.native
+  var onChange: AbstractEventHandler[SyntheticEvent[HTMLInputElement, Event], Checked]
   
-  var onClick: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLInputElement, Event], Checked]] = js.native
+  var onClick: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLInputElement, Event], Checked]] = js.undefined
   
-  var size: js.UndefOr[sm | md] = js.native
+  var size: js.UndefOr[sm | md] = js.undefined
   
-  var subtext: js.UndefOr[String] = js.native
+  var subtext: js.UndefOr[String] = js.undefined
 }
 object CheckboxProps {
   
   @scala.inline
   def apply(
     id: String,
-    onChange: /* arg */ Checked with (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit
+    onChange: /* arg */ Checked & (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit
   ): CheckboxProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[CheckboxProps]
@@ -108,12 +106,12 @@ object CheckboxProps {
     
     @scala.inline
     def setOnChange(
-      value: /* arg */ Checked with (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit
+      value: /* arg */ Checked & (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit
     ): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClick(
-      value: /* arg */ Checked with (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit
+      value: /* arg */ Checked & (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit
     ): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline

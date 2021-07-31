@@ -2,31 +2,31 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationNodeCreationInformation extends ClientValueObject {
+trait NavigationNodeCreationInformation
+  extends StObject
+     with ClientValueObject {
   
-  def get_asLastNode(): Boolean = js.native
+  def get_asLastNode(): Boolean
   
-  def get_isExternal(): Boolean = js.native
+  def get_isExternal(): Boolean
   
-  def get_previousNode(): NavigationNode = js.native
+  def get_previousNode(): NavigationNode
   
-  def get_title(): String = js.native
+  def get_title(): String
   
-  def get_url(): String = js.native
+  def get_url(): String
   
-  def set_asLastNode(value: Boolean): Unit = js.native
+  def set_asLastNode(value: Boolean): Unit
   
-  def set_isExternal(value: Boolean): Unit = js.native
+  def set_isExternal(value: Boolean): Unit
   
-  def set_previousNode(value: NavigationNode): Unit = js.native
+  def set_previousNode(value: NavigationNode): Unit
   
-  def set_title(value: String): Unit = js.native
+  def set_title(value: String): Unit
   
-  def set_url(value: String): Unit = js.native
+  def set_url(value: String): Unit
 }
 object NavigationNodeCreationInformation {
   

@@ -2,19 +2,17 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comment extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  var loc: SourceLocation = js.native
+  var loc: SourceLocation
   
-  var start: Double = js.native
+  var start: Double
   
-  var value: String = js.native
+  var value: String
 }
 object Comment {
   

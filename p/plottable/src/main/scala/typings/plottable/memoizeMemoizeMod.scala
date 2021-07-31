@@ -2,16 +2,17 @@ package typings.plottable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memoizeMemoizeMod {
   
-  @JSImport("plottable/build/src/memoize/memoize", "memoize")
+  @JSImport("plottable/build/src/memoize/memoize", JSImport.Namespace)
   @js.native
-  def memoize[F /* <: js.Function */](compute: F): MemoizedFunction[F] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def memoize[F /* <: js.Function */](compute: F): MemoizedFunction[F] = ^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(compute.asInstanceOf[js.Any]).asInstanceOf[MemoizedFunction[F]]
+  
   trait IMemoizedFunctionMethods extends StObject {
     
     /**
@@ -25,12 +26,12 @@ object memoizeMemoizeMod {
       *
       * @param fn
       */
-    def doLocked[T](fn: js.Function0[T]): T = js.native
+    def doLocked[T](fn: js.Function0[T]): T
     
     /**
       * Turn on perf logging. Useful for debugging.
       */
-    def logPerformance(): this.type = js.native
+    def logPerformance(): this.type
   }
   object IMemoizedFunctionMethods {
     
@@ -51,5 +52,5 @@ object memoizeMemoizeMod {
     }
   }
   
-  type MemoizedFunction[F /* <: js.Function */] = F with IMemoizedFunctionMethods
+  type MemoizedFunction[F /* <: js.Function */] = F & IMemoizedFunctionMethods
 }

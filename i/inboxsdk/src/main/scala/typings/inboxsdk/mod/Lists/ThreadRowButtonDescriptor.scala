@@ -2,21 +2,19 @@ package typings.inboxsdk.mod.Lists
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThreadRowButtonDescriptor extends StObject {
   
-  var hasDropdown: js.UndefOr[Boolean] = js.native
+  var hasDropdown: js.UndefOr[Boolean] = js.undefined
   
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
-  var iconUrl: String = js.native
+  var iconUrl: String
   
-  def onClick(event: ThreadRowButtonClickEvent): Unit = js.native
+  def onClick(event: ThreadRowButtonClickEvent): Unit
   
-  var title: String = js.native
+  var title: String
 }
 object ThreadRowButtonDescriptor {
   

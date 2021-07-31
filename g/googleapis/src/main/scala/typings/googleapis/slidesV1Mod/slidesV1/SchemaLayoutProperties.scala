@@ -2,29 +2,27 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The properties of Page are only relevant for pages with page_type LAYOUT.
   */
-@js.native
 trait SchemaLayoutProperties extends StObject {
   
   /**
     * The human-readable name of the layout.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The object ID of the master that this layout is based on.
     */
-  var masterObjectId: js.UndefOr[String] = js.native
+  var masterObjectId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the layout.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaLayoutProperties {
   

@@ -2,80 +2,78 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<vega-lite.vega-lite/build/src/channel.ExtendedChannel, any>> */
-@js.native
 trait PartialRecordExtendedChan extends StObject {
   
-  var angle: js.UndefOr[js.Any] = js.native
+  var angle: js.UndefOr[js.Any] = js.undefined
   
-  var color: js.UndefOr[js.Any] = js.native
+  var color: js.UndefOr[js.Any] = js.undefined
   
-  var column: js.UndefOr[js.Any] = js.native
+  var column: js.UndefOr[js.Any] = js.undefined
   
-  var description: js.UndefOr[js.Any] = js.native
+  var description: js.UndefOr[js.Any] = js.undefined
   
-  var detail: js.UndefOr[js.Any] = js.native
+  var detail: js.UndefOr[js.Any] = js.undefined
   
-  var facet: js.UndefOr[js.Any] = js.native
+  var facet: js.UndefOr[js.Any] = js.undefined
   
-  var fill: js.UndefOr[js.Any] = js.native
+  var fill: js.UndefOr[js.Any] = js.undefined
   
-  var fillOpacity: js.UndefOr[js.Any] = js.native
+  var fillOpacity: js.UndefOr[js.Any] = js.undefined
   
-  var href: js.UndefOr[js.Any] = js.native
+  var href: js.UndefOr[js.Any] = js.undefined
   
-  var key: js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[js.Any] = js.undefined
   
-  var latitude: js.UndefOr[js.Any] = js.native
+  var latitude: js.UndefOr[js.Any] = js.undefined
   
-  var latitude2: js.UndefOr[js.Any] = js.native
+  var latitude2: js.UndefOr[js.Any] = js.undefined
   
-  var longitude: js.UndefOr[js.Any] = js.native
+  var longitude: js.UndefOr[js.Any] = js.undefined
   
-  var longitude2: js.UndefOr[js.Any] = js.native
+  var longitude2: js.UndefOr[js.Any] = js.undefined
   
-  var opacity: js.UndefOr[js.Any] = js.native
+  var opacity: js.UndefOr[js.Any] = js.undefined
   
-  var order: js.UndefOr[js.Any] = js.native
+  var order: js.UndefOr[js.Any] = js.undefined
   
-  var radius: js.UndefOr[js.Any] = js.native
+  var radius: js.UndefOr[js.Any] = js.undefined
   
-  var radius2: js.UndefOr[js.Any] = js.native
+  var radius2: js.UndefOr[js.Any] = js.undefined
   
-  var row: js.UndefOr[js.Any] = js.native
+  var row: js.UndefOr[js.Any] = js.undefined
   
-  var shape: js.UndefOr[js.Any] = js.native
+  var shape: js.UndefOr[js.Any] = js.undefined
   
-  var size: js.UndefOr[js.Any] = js.native
+  var size: js.UndefOr[js.Any] = js.undefined
   
-  var stroke: js.UndefOr[js.Any] = js.native
+  var stroke: js.UndefOr[js.Any] = js.undefined
   
-  var strokeDash: js.UndefOr[js.Any] = js.native
+  var strokeDash: js.UndefOr[js.Any] = js.undefined
   
-  var strokeOpacity: js.UndefOr[js.Any] = js.native
+  var strokeOpacity: js.UndefOr[js.Any] = js.undefined
   
-  var strokeWidth: js.UndefOr[js.Any] = js.native
+  var strokeWidth: js.UndefOr[js.Any] = js.undefined
   
-  var text: js.UndefOr[js.Any] = js.native
+  var text: js.UndefOr[js.Any] = js.undefined
   
-  var theta: js.UndefOr[js.Any] = js.native
+  var theta: js.UndefOr[js.Any] = js.undefined
   
-  var theta2: js.UndefOr[js.Any] = js.native
+  var theta2: js.UndefOr[js.Any] = js.undefined
   
-  var tooltip: js.UndefOr[js.Any] = js.native
+  var tooltip: js.UndefOr[js.Any] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.undefined
   
-  var x: js.UndefOr[js.Any] = js.native
+  var x: js.UndefOr[js.Any] = js.undefined
   
-  var x2: js.UndefOr[js.Any] = js.native
+  var x2: js.UndefOr[js.Any] = js.undefined
   
-  var y: js.UndefOr[js.Any] = js.native
+  var y: js.UndefOr[js.Any] = js.undefined
   
-  var y2: js.UndefOr[js.Any] = js.native
+  var y2: js.UndefOr[js.Any] = js.undefined
 }
 object PartialRecordExtendedChan {
   

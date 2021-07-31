@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "TemporalAdjusters")
@@ -10,68 +9,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TemporalAdjusters protected () extends StObject
 object TemporalAdjusters {
   
-  /* static member */
-  @JSImport("js-joda", "TemporalAdjusters.dayOfWeekInMonth")
+  @JSImport("js-joda", "TemporalAdjusters")
   @js.native
-  def dayOfWeekInMonth(ordinal: Double, dayOfWeek: DayOfWeek): TemporalAdjuster = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("js-joda", "TemporalAdjusters.firstDayOfMonth")
-  @js.native
-  def firstDayOfMonth(): TemporalAdjuster = js.native
+  @scala.inline
+  def dayOfWeekInMonth(ordinal: Double, dayOfWeek: DayOfWeek): TemporalAdjuster = (^.asInstanceOf[js.Dynamic].applyDynamic("dayOfWeekInMonth")(ordinal.asInstanceOf[js.Any], dayOfWeek.asInstanceOf[js.Any])).asInstanceOf[TemporalAdjuster]
   
   /* static member */
-  @JSImport("js-joda", "TemporalAdjusters.firstDayOfNextMonth")
-  @js.native
-  def firstDayOfNextMonth(): TemporalAdjuster = js.native
+  @scala.inline
+  def firstDayOfMonth(): TemporalAdjuster = ^.asInstanceOf[js.Dynamic].applyDynamic("firstDayOfMonth")().asInstanceOf[TemporalAdjuster]
   
   /* static member */
-  @JSImport("js-joda", "TemporalAdjusters.firstDayOfNextYear")
-  @js.native
-  def firstDayOfNextYear(): TemporalAdjuster = js.native
+  @scala.inline
+  def firstDayOfNextMonth(): TemporalAdjuster = ^.asInstanceOf[js.Dynamic].applyDynamic("firstDayOfNextMonth")().asInstanceOf[TemporalAdjuster]
   
   /* static member */
-  @JSImport("js-joda", "TemporalAdjusters.firstDayOfYear")
-  @js.native
-  def firstDayOfYear(): TemporalAdjuster = js.native
+  @scala.inline
+  def firstDayOfNextYear(): TemporalAdjuster = ^.asInstanceOf[js.Dynamic].applyDynamic("firstDayOfNextYear")().asInstanceOf[TemporalAdjuster]
   
   /* static member */
-  @JSImport("js-joda", "TemporalAdjusters.firstInMonth")
-  @js.native
-  def firstInMonth(dayOfWeek: DayOfWeek): TemporalAdjuster = js.native
+  @scala.inline
+  def firstDayOfYear(): TemporalAdjuster = ^.asInstanceOf[js.Dynamic].applyDynamic("firstDayOfYear")().asInstanceOf[TemporalAdjuster]
   
   /* static member */
-  @JSImport("js-joda", "TemporalAdjusters.lastDayOfMonth")
-  @js.native
-  def lastDayOfMonth(): TemporalAdjuster = js.native
+  @scala.inline
+  def firstInMonth(dayOfWeek: DayOfWeek): TemporalAdjuster = ^.asInstanceOf[js.Dynamic].applyDynamic("firstInMonth")(dayOfWeek.asInstanceOf[js.Any]).asInstanceOf[TemporalAdjuster]
   
   /* static member */
-  @JSImport("js-joda", "TemporalAdjusters.lastDayOfYear")
-  @js.native
-  def lastDayOfYear(): TemporalAdjuster = js.native
+  @scala.inline
+  def lastDayOfMonth(): TemporalAdjuster = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfMonth")().asInstanceOf[TemporalAdjuster]
   
   /* static member */
-  @JSImport("js-joda", "TemporalAdjusters.lastInMonth")
-  @js.native
-  def lastInMonth(dayOfWeek: DayOfWeek): TemporalAdjuster = js.native
+  @scala.inline
+  def lastDayOfYear(): TemporalAdjuster = ^.asInstanceOf[js.Dynamic].applyDynamic("lastDayOfYear")().asInstanceOf[TemporalAdjuster]
   
   /* static member */
-  @JSImport("js-joda", "TemporalAdjusters.next")
-  @js.native
-  def next(dayOfWeek: DayOfWeek): TemporalAdjuster = js.native
+  @scala.inline
+  def lastInMonth(dayOfWeek: DayOfWeek): TemporalAdjuster = ^.asInstanceOf[js.Dynamic].applyDynamic("lastInMonth")(dayOfWeek.asInstanceOf[js.Any]).asInstanceOf[TemporalAdjuster]
   
   /* static member */
-  @JSImport("js-joda", "TemporalAdjusters.nextOrSame")
-  @js.native
-  def nextOrSame(dayOfWeek: DayOfWeek): TemporalAdjuster = js.native
+  @scala.inline
+  def next(dayOfWeek: DayOfWeek): TemporalAdjuster = ^.asInstanceOf[js.Dynamic].applyDynamic("next")(dayOfWeek.asInstanceOf[js.Any]).asInstanceOf[TemporalAdjuster]
   
   /* static member */
-  @JSImport("js-joda", "TemporalAdjusters.previous")
-  @js.native
-  def previous(dayOfWeek: DayOfWeek): TemporalAdjuster = js.native
+  @scala.inline
+  def nextOrSame(dayOfWeek: DayOfWeek): TemporalAdjuster = ^.asInstanceOf[js.Dynamic].applyDynamic("nextOrSame")(dayOfWeek.asInstanceOf[js.Any]).asInstanceOf[TemporalAdjuster]
   
   /* static member */
-  @JSImport("js-joda", "TemporalAdjusters.previousOrSame")
-  @js.native
-  def previousOrSame(dayOfWeek: DayOfWeek): TemporalAdjuster = js.native
+  @scala.inline
+  def previous(dayOfWeek: DayOfWeek): TemporalAdjuster = ^.asInstanceOf[js.Dynamic].applyDynamic("previous")(dayOfWeek.asInstanceOf[js.Any]).asInstanceOf[TemporalAdjuster]
+  
+  /* static member */
+  @scala.inline
+  def previousOrSame(dayOfWeek: DayOfWeek): TemporalAdjuster = ^.asInstanceOf[js.Dynamic].applyDynamic("previousOrSame")(dayOfWeek.asInstanceOf[js.Any]).asInstanceOf[TemporalAdjuster]
 }

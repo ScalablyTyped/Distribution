@@ -4,26 +4,26 @@ import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IBaseCell extends PartialJSONObject {
+trait IBaseCell
+  extends StObject
+     with PartialJSONObject {
   
   /**
     * String identifying the type of cell.
     */
-  var cell_type: String = js.native
+  var cell_type: String
   
   /**
     * Cell-level metadata.
     */
-  var metadata: Partial[ICellMetadata] = js.native
+  var metadata: Partial[ICellMetadata]
   
   /**
     * Contents of the cell, represented as an array of lines.
     */
-  var source: MultilineString = js.native
+  var source: MultilineString
 }
 object IBaseCell {
   

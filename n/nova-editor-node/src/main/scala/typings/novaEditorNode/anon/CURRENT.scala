@@ -3,25 +3,23 @@ package typings.novaEditorNode.anon
 import typings.novaEditorNode.FileSystemBitField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CURRENT extends StObject {
   
-  var CURRENT: FileSystemBitField = js.native
+  var CURRENT: FileSystemBitField
   
-  var END: FileSystemBitField = js.native
+  var END: FileSystemBitField
   
-  var F_OK: FileSystemBitField = js.native
+  var F_OK: FileSystemBitField
   
-  var R_OK: FileSystemBitField = js.native
+  var R_OK: FileSystemBitField
   
-  var START: FileSystemBitField = js.native
+  var START: FileSystemBitField
   
-  var W_OK: FileSystemBitField = js.native
+  var W_OK: FileSystemBitField
   
-  var X_OK: FileSystemBitField = js.native
+  var X_OK: FileSystemBitField
 }
 object CURRENT {
   

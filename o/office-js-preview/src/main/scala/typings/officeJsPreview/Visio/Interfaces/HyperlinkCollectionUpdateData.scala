@@ -2,14 +2,12 @@ package typings.officeJsPreview.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the HyperlinkCollection object, for use in "hyperlinkCollection.set({ ... })". */
-@js.native
 trait HyperlinkCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[HyperlinkData]] = js.native
+  var items: js.UndefOr[js.Array[HyperlinkData]] = js.undefined
 }
 object HyperlinkCollectionUpdateData {
   

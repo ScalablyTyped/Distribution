@@ -3,14 +3,15 @@ package typings.ethereumjsAccount
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("ethereumjs-account", JSImport.Default)
   @js.native
-  class default () extends Account {
+  class default ()
+    extends StObject
+       with Account {
     def this(data: js.Any) = this()
   }
   

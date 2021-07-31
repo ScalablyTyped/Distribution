@@ -3,12 +3,12 @@ package typings.raphael.mod
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RaphaelSet[TTechnology /* <: RaphaelTechnology */]
-  extends ArrayLike[
+  extends StObject
+     with ArrayLike[
       RaphaelElement[
         TTechnology, 
         /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any

@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constraints on fulfillment tasks
   */
-@js.native
-trait TaskRestriction extends BackboneElement {
+trait TaskRestriction
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'repetitions'.
     */
-  var _repetitions: js.UndefOr[Element] = js.native
+  var _repetitions: js.UndefOr[Element] = js.undefined
   
   /**
     * When fulfillment sought
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * For whom is fulfillment sought?
     */
-  var recipient: js.UndefOr[js.Array[Reference]] = js.native
+  var recipient: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * How many times to repeat
     */
-  var repetitions: js.UndefOr[positiveInt] = js.native
+  var repetitions: js.UndefOr[positiveInt] = js.undefined
 }
 object TaskRestriction {
   

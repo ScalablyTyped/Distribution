@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Authentication extends StObject {
   
   /** Authentication using a custom account. */
-  var customAccount: js.UndefOr[CustomAccount] = js.native
+  var customAccount: js.UndefOr[CustomAccount] = js.undefined
   
   /** Authentication using a Google account. */
-  var googleAccount: js.UndefOr[GoogleAccount] = js.native
+  var googleAccount: js.UndefOr[GoogleAccount] = js.undefined
   
   /** Authentication using Identity-Aware-Proxy (IAP). */
-  var iapCredential: js.UndefOr[IapCredential] = js.native
+  var iapCredential: js.UndefOr[IapCredential] = js.undefined
 }
 object Authentication {
   

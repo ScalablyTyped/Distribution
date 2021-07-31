@@ -10,67 +10,56 @@ import typings.winrt.Windows.Storage.Streams.IBuffer
 import typings.winrt.Windows.Storage.Streams.UnicodeEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Storage.FileIO")
 @js.native
 class FileIO ()
-  extends typings.winrt.Windows.Storage.FileIO
+  extends StObject
+     with typings.winrt.Windows.Storage.FileIO
 /* static members */
 object FileIO {
   
-  @JSGlobal("Windows.Storage.FileIO.appendLinesAsync")
+  @JSGlobal("Windows.Storage.FileIO")
   @js.native
-  def appendLinesAsync(file: IStorageFile, lines: IIterable[String]): IAsyncAction = js.native
-  @JSGlobal("Windows.Storage.FileIO.appendLinesAsync")
-  @js.native
-  def appendLinesAsync(file: IStorageFile, lines: IIterable[String], encoding: UnicodeEncoding): IAsyncAction = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("Windows.Storage.FileIO.appendTextAsync")
-  @js.native
-  def appendTextAsync(file: IStorageFile, contents: String): IAsyncAction = js.native
-  @JSGlobal("Windows.Storage.FileIO.appendTextAsync")
-  @js.native
-  def appendTextAsync(file: IStorageFile, contents: String, encoding: UnicodeEncoding): IAsyncAction = js.native
+  @scala.inline
+  def appendLinesAsync(file: IStorageFile, lines: IIterable[String]): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("appendLinesAsync")(file.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
+  @scala.inline
+  def appendLinesAsync(file: IStorageFile, lines: IIterable[String], encoding: UnicodeEncoding): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("appendLinesAsync")(file.asInstanceOf[js.Any], lines.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
   
-  @JSGlobal("Windows.Storage.FileIO.readBufferAsync")
-  @js.native
-  def readBufferAsync(file: IStorageFile): IAsyncOperation[IBuffer] = js.native
+  @scala.inline
+  def appendTextAsync(file: IStorageFile, contents: String): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTextAsync")(file.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
+  @scala.inline
+  def appendTextAsync(file: IStorageFile, contents: String, encoding: UnicodeEncoding): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTextAsync")(file.asInstanceOf[js.Any], contents.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
   
-  @JSGlobal("Windows.Storage.FileIO.readLinesAsync")
-  @js.native
-  def readLinesAsync(file: IStorageFile): IAsyncOperation[IVector[String]] = js.native
-  @JSGlobal("Windows.Storage.FileIO.readLinesAsync")
-  @js.native
-  def readLinesAsync(file: IStorageFile, encoding: UnicodeEncoding): IAsyncOperation[IVector[String]] = js.native
+  @scala.inline
+  def readBufferAsync(file: IStorageFile): IAsyncOperation[IBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readBufferAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[IBuffer]]
   
-  @JSGlobal("Windows.Storage.FileIO.readTextAsync")
-  @js.native
-  def readTextAsync(file: IStorageFile): IAsyncOperation[String] = js.native
-  @JSGlobal("Windows.Storage.FileIO.readTextAsync")
-  @js.native
-  def readTextAsync(file: IStorageFile, encoding: UnicodeEncoding): IAsyncOperation[String] = js.native
+  @scala.inline
+  def readLinesAsync(file: IStorageFile): IAsyncOperation[IVector[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readLinesAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[IVector[String]]]
+  @scala.inline
+  def readLinesAsync(file: IStorageFile, encoding: UnicodeEncoding): IAsyncOperation[IVector[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readLinesAsync")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[IVector[String]]]
   
-  @JSGlobal("Windows.Storage.FileIO.writeBufferAsync")
-  @js.native
-  def writeBufferAsync(file: IStorageFile, buffer: IBuffer): IAsyncAction = js.native
+  @scala.inline
+  def readTextAsync(file: IStorageFile): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readTextAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[String]]
+  @scala.inline
+  def readTextAsync(file: IStorageFile, encoding: UnicodeEncoding): IAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readTextAsync")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[String]]
   
-  @JSGlobal("Windows.Storage.FileIO.writeBytesAsync")
-  @js.native
-  def writeBytesAsync(file: IStorageFile, buffer: Uint8Array): IAsyncAction = js.native
+  @scala.inline
+  def writeBufferAsync(file: IStorageFile, buffer: IBuffer): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBufferAsync")(file.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
   
-  @JSGlobal("Windows.Storage.FileIO.writeLinesAsync")
-  @js.native
-  def writeLinesAsync(file: IStorageFile, lines: IIterable[String]): IAsyncAction = js.native
-  @JSGlobal("Windows.Storage.FileIO.writeLinesAsync")
-  @js.native
-  def writeLinesAsync(file: IStorageFile, lines: IIterable[String], encoding: UnicodeEncoding): IAsyncAction = js.native
+  @scala.inline
+  def writeBytesAsync(file: IStorageFile, buffer: Uint8Array): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBytesAsync")(file.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
   
-  @JSGlobal("Windows.Storage.FileIO.writeTextAsync")
-  @js.native
-  def writeTextAsync(file: IStorageFile, contents: String): IAsyncAction = js.native
-  @JSGlobal("Windows.Storage.FileIO.writeTextAsync")
-  @js.native
-  def writeTextAsync(file: IStorageFile, contents: String, encoding: UnicodeEncoding): IAsyncAction = js.native
+  @scala.inline
+  def writeLinesAsync(file: IStorageFile, lines: IIterable[String]): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeLinesAsync")(file.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
+  @scala.inline
+  def writeLinesAsync(file: IStorageFile, lines: IIterable[String], encoding: UnicodeEncoding): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeLinesAsync")(file.asInstanceOf[js.Any], lines.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
+  
+  @scala.inline
+  def writeTextAsync(file: IStorageFile, contents: String): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeTextAsync")(file.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
+  @scala.inline
+  def writeTextAsync(file: IStorageFile, contents: String, encoding: UnicodeEncoding): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeTextAsync")(file.asInstanceOf[js.Any], contents.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
 }

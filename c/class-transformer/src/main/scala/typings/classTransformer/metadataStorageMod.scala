@@ -10,7 +10,6 @@ import typings.classTransformer.transformationTypeEnumMod.TransformationType
 import typings.classTransformer.typeMetadataMod.TypeMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataStorageMod {

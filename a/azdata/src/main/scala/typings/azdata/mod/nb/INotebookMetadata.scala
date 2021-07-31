@@ -2,17 +2,15 @@ package typings.azdata.mod.nb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INotebookMetadata extends StObject {
   
-  var kernelspec: IKernelInfo = js.native
+  var kernelspec: IKernelInfo
   
-  var language_info: js.UndefOr[ILanguageInfo] = js.native
+  var language_info: js.UndefOr[ILanguageInfo] = js.undefined
   
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object INotebookMetadata {
   

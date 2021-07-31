@@ -2,23 +2,21 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Trie extends StObject {
   
-  def addString(text: String): Boolean = js.native
+  def addString(text: String): Boolean
   
-  def addStrings(strings: js.Array[String]): Unit = js.native
+  def addStrings(strings: js.Array[String]): Unit
   
-  def contains(token: String): Boolean = js.native
+  def contains(token: String): Boolean
   
-  def findMatchesOnPath(text: String): js.Array[String] = js.native
+  def findMatchesOnPath(text: String): js.Array[String]
   
-  def findPrefix(text: String): js.Array[String] = js.native
+  def findPrefix(text: String): js.Array[String]
   
-  def keysWithPrefix(text: String): js.Array[String] = js.native
+  def keysWithPrefix(text: String): js.Array[String]
 }
 object Trie {
   

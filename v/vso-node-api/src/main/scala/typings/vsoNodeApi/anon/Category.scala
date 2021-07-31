@@ -2,45 +2,43 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Category extends StObject {
   
-  var category: scala.Double = js.native
+  var category: scala.Double
   
-  var contributionType: scala.Double = js.native
+  var contributionType: scala.Double
   
-  var displayName: scala.Double = js.native
+  var displayName: scala.Double
   
-  var excludeWithFlags: scala.Double = js.native
+  var excludeWithFlags: scala.Double
   
-  var featured: scala.Double = js.native
+  var featured: scala.Double
   
-  var featuredInCategory: scala.Double = js.native
+  var featuredInCategory: scala.Double
   
-  var id: scala.Double = js.native
+  var id: scala.Double
   
-  var includeWithFlags: scala.Double = js.native
+  var includeWithFlags: scala.Double
   
-  var installationTarget: scala.Double = js.native
+  var installationTarget: scala.Double
   
-  var installationTargetVersion: scala.Double = js.native
+  var installationTargetVersion: scala.Double
   
-  var installationTargetVersionRange: scala.Double = js.native
+  var installationTargetVersionRange: scala.Double
   
-  var lcid: scala.Double = js.native
+  var lcid: scala.Double
   
-  var name: scala.Double = js.native
+  var name: scala.Double
   
-  var `private`: scala.Double = js.native
+  var `private`: scala.Double
   
-  var searchText: scala.Double = js.native
+  var searchText: scala.Double
   
-  var tag: scala.Double = js.native
+  var tag: scala.Double
   
-  var vsixMetadata: scala.Double = js.native
+  var vsixMetadata: scala.Double
 }
 object Category {
   

@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsResource extends StObject {
   
-  var scanConfigs: ScanConfigsResource = js.native
+  var scanConfigs: ScanConfigsResource
 }
 object ProjectsResource {
   

@@ -3,7 +3,6 @@ package typings.activexOutlook.Outlook
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -174,9 +173,9 @@ trait AppointmentItem extends StObject {
   var Resources: String = js.native
   
   def Respond(Response: OlMeetingResponse): MeetingItem = js.native
-  def Respond(Response: OlMeetingResponse, fNoUI: js.UndefOr[scala.Nothing], fAdditionalTextDialog: js.Any): MeetingItem = js.native
   def Respond(Response: OlMeetingResponse, fNoUI: js.Any): MeetingItem = js.native
   def Respond(Response: OlMeetingResponse, fNoUI: js.Any, fAdditionalTextDialog: js.Any): MeetingItem = js.native
+  def Respond(Response: OlMeetingResponse, fNoUI: Unit, fAdditionalTextDialog: js.Any): MeetingItem = js.native
   
   var ResponseRequested: Boolean = js.native
   

@@ -10,9 +10,9 @@ A flexible way to handle safe area, also works on Android and web.
 | ------------------ | :-------------: |
 | Full name          | react-native-safe-area-context |
 | Keywords           | react-native, react native, react-native-web, expo-web, safe area, view |
-| # releases         | 55 |
-| # dependents       | 134 |
-| # downloads        | 5901147 |
+| # releases         | 58 |
+| # dependents       | 207 |
+| # downloads        | 11886703 |
 | # stars            | 0 |
 
 ## Links

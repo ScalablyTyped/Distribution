@@ -2,35 +2,33 @@ package typings.googleapis.languageV1Mod.languageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the smallest syntactic building block of the text.
   */
-@js.native
 trait SchemaToken extends StObject {
   
   /**
     * Dependency tree parse for this token.
     */
-  var dependencyEdge: js.UndefOr[SchemaDependencyEdge] = js.native
+  var dependencyEdge: js.UndefOr[SchemaDependencyEdge] = js.undefined
   
   /**
     * [Lemma](https://en.wikipedia.org/wiki/Lemma_%28morphology%29) of the
     * token.
     */
-  var lemma: js.UndefOr[String] = js.native
+  var lemma: js.UndefOr[String] = js.undefined
   
   /**
     * Parts of speech tag for this token.
     */
-  var partOfSpeech: js.UndefOr[SchemaPartOfSpeech] = js.native
+  var partOfSpeech: js.UndefOr[SchemaPartOfSpeech] = js.undefined
   
   /**
     * The token text.
     */
-  var text: js.UndefOr[SchemaTextSpan] = js.native
+  var text: js.UndefOr[SchemaTextSpan] = js.undefined
 }
 object SchemaToken {
   

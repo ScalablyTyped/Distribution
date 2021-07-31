@@ -3,24 +3,22 @@ package typings.simperium.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketStore[T, Q] extends StObject {
   
-  def find(query: Q, callback: EntitiesCallback[BucketObject[T], Error | Null]): Unit = js.native
+  def find(query: Q, callback: EntitiesCallback[BucketObject[T], Error | Null]): Unit
   
-  def get(entityId: EntityId, callback: EntityCallback[BucketObject[T], Error | Null]): Unit = js.native
+  def get(entityId: EntityId, callback: EntityCallback[BucketObject[T], Error | Null]): Unit
   
-  def remove(entityId: EntityId, callback: js.Function0[Unit]): Unit = js.native
+  def remove(entityId: EntityId, callback: js.Function0[Unit]): Unit
   
   def update(
     entityId: EntityId,
     entity: T,
     isIndexing: Boolean,
     callback: EntityCallback[BucketObject[T], Error | Null]
-  ): Unit = js.native
+  ): Unit
 }
 object BucketStore {
   
@@ -36,7 +34,7 @@ object BucketStore {
   }
   
   @scala.inline
-  implicit class BucketStoreMutableBuilder[Self <: BucketStore[_, _], T, Q] (val x: Self with (BucketStore[T, Q])) extends AnyVal {
+  implicit class BucketStoreMutableBuilder[Self <: BucketStore[?, ?], T, Q] (val x: Self & (BucketStore[T, Q])) extends AnyVal {
     
     @scala.inline
     def setFind(value: (Q, EntitiesCallback[BucketObject[T], Error | Null]) => Unit): Self = StObject.set(x, "find", js.Any.fromFunction2(value))

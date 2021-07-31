@@ -4,27 +4,25 @@ import typings.dialogflow.mod.google.protobuf.IAny
 import typings.dialogflow.mod.google.rpc.IStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an Operation. */
-@js.native
 trait IOperation extends StObject {
   
   /** Operation done */
-  var done: js.UndefOr[Boolean | Null] = js.native
+  var done: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Operation error */
-  var error: js.UndefOr[IStatus | Null] = js.native
+  var error: js.UndefOr[IStatus | Null] = js.undefined
   
   /** Operation metadata */
-  var metadata: js.UndefOr[IAny | Null] = js.native
+  var metadata: js.UndefOr[IAny | Null] = js.undefined
   
   /** Operation name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** Operation response */
-  var response: js.UndefOr[IAny | Null] = js.native
+  var response: js.UndefOr[IAny | Null] = js.undefined
 }
 object IOperation {
   

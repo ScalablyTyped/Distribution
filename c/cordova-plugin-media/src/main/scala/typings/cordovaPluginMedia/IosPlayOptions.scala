@@ -2,19 +2,17 @@ package typings.cordovaPluginMedia
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *  iOS optional parameters for media.play
   *  See https://github.com/apache/cordova-plugin-media#ios-quirks
   */
-@js.native
 trait IosPlayOptions extends StObject {
   
-  var numberOfLoops: js.UndefOr[Double] = js.native
+  var numberOfLoops: js.UndefOr[Double] = js.undefined
   
-  var playAudioWhenScreenIsLocked: js.UndefOr[Boolean] = js.native
+  var playAudioWhenScreenIsLocked: js.UndefOr[Boolean] = js.undefined
 }
 object IosPlayOptions {
   

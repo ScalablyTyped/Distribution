@@ -2,13 +2,11 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaNetworkConfigurationCatalog extends StObject {
   
-  var configurations: js.UndefOr[js.Array[SchemaNetworkConfiguration]] = js.native
+  var configurations: js.UndefOr[js.Array[SchemaNetworkConfiguration]] = js.undefined
 }
 object SchemaNetworkConfigurationCatalog {
   

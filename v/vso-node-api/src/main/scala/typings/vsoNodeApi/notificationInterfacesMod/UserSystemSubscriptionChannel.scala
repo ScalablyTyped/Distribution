@@ -2,11 +2,11 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UserSystemSubscriptionChannel extends SubscriptionChannelWithAddress
+trait UserSystemSubscriptionChannel
+  extends StObject
+     with SubscriptionChannelWithAddress
 object UserSystemSubscriptionChannel {
   
   @scala.inline

@@ -3,22 +3,22 @@ package typings.reactNavigation.mod
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashCOMPLETE_TRANSITION
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationCompleteTransitionAction extends NavigationStackAction {
+trait NavigationCompleteTransitionAction
+  extends StObject
+     with NavigationStackAction {
   
-  var key: String = js.native
+  var key: String
   
-  var `type`: NavigationSlashCOMPLETE_TRANSITION = js.native
+  var `type`: NavigationSlashCOMPLETE_TRANSITION
 }
 object NavigationCompleteTransitionAction {
   
   @scala.inline
-  def apply(key: String, `type`: NavigationSlashCOMPLETE_TRANSITION): NavigationCompleteTransitionAction = {
+  def apply(key: String): NavigationCompleteTransitionAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/COMPLETE_TRANSITION")
     __obj.asInstanceOf[NavigationCompleteTransitionAction]
   }
   

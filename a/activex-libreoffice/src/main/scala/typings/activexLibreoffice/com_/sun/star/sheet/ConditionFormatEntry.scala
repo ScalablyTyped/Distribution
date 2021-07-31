@@ -3,20 +3,20 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConditionFormatEntry extends XConditionEntry {
+trait ConditionFormatEntry
+  extends StObject
+     with XConditionEntry {
   
-  var Formula1: String = js.native
+  var Formula1: String
   
-  var Formula2: String = js.native
+  var Formula2: String
   
   /** See {@link com.sun.star.sheet.ConditionFormatOperator} for valid values */
-  var Operator: Double = js.native
+  var Operator: Double
   
-  var StyleName: String = js.native
+  var StyleName: String
 }
 object ConditionFormatEntry {
   

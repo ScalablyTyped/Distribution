@@ -8,39 +8,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureTemplateThumbnail extends Object {
+trait FeatureTemplateThumbnail
+  extends StObject
+     with Object {
   
   /**
     * The MIME type of the image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureTemplate.html#thumbnail)
     */
-  var contentType: image | png | jpg | jpeg = js.native
+  var contentType: image | png | jpg | jpeg
   
   /**
     * The height of the thumbnail.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureTemplate.html#thumbnail)
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * The [base64EncodedImageData](https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding) presenting the thumbnail image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureTemplate.html#thumbnail)
     */
-  var imageData: String = js.native
+  var imageData: String
   
   /**
     * The width of the thumbnail.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureTemplate.html#thumbnail)
     */
-  var width: Double = js.native
+  var width: Double
 }
 object FeatureTemplateThumbnail {
   

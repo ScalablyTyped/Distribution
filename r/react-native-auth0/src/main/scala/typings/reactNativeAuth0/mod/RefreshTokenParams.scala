@@ -2,15 +2,13 @@ package typings.reactNativeAuth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefreshTokenParams extends StObject {
   
-  var refreshToken: String = js.native
+  var refreshToken: String
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
 }
 object RefreshTokenParams {
   

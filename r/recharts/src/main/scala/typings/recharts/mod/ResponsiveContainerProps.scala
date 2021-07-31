@@ -3,31 +3,29 @@ package typings.recharts.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponsiveContainerProps extends StObject {
   
-  var aspect: js.UndefOr[Double] = js.native
+  var aspect: js.UndefOr[Double] = js.undefined
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var className: js.UndefOr[String | Double] = js.native
+  var className: js.UndefOr[String | Double] = js.undefined
   
-  var debounce: js.UndefOr[Double] = js.native
+  var debounce: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var maxHeight: js.UndefOr[String | Double] = js.native
+  var maxHeight: js.UndefOr[String | Double] = js.undefined
   
-  var minHeight: js.UndefOr[String | Double] = js.native
+  var minHeight: js.UndefOr[String | Double] = js.undefined
   
-  var minWidth: js.UndefOr[String | Double] = js.native
+  var minWidth: js.UndefOr[String | Double] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object ResponsiveContainerProps {
   

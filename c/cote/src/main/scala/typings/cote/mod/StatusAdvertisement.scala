@@ -2,35 +2,35 @@ package typings.cote.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.cote.mod.Advertisement because Already inherited
 - typings.cote.mod.SubscriberAdvertisement because var conflicts: key, name, namespace. Inlined subscribesTo
 - typings.cote.mod.PublisherAdvertisement because var conflicts: key, name, namespace. Inlined broadcasts
-- typings.cote.mod.ResponderAdvertisement because var conflicts: key, name, namespace. Inlined respondsTo, subset */ @js.native
-trait StatusAdvertisement extends RequesterAdvertisement {
+- typings.cote.mod.ResponderAdvertisement because var conflicts: key, name, namespace. Inlined respondsTo, subset */ trait StatusAdvertisement
+  extends StObject
+     with RequesterAdvertisement {
   
   /**
     * Event types that a Publisher can publish.
     */
-  var broadcasts: js.UndefOr[js.Array[String]] = js.native
+  var broadcasts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Request types that a Responder can listen to.
     */
-  var respondsTo: js.UndefOr[js.Array[String]] = js.native
+  var respondsTo: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Event types that a Subscriber can listen to.
     */
-  var subscribesTo: js.UndefOr[js.Array[String]] = js.native
+  var subscribesTo: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Advertisement attribute that lets you target a subgroup of responders using the __subset property of a request.
     */
-  var subset: js.UndefOr[String] = js.native
+  var subset: js.UndefOr[String] = js.undefined
 }
 object StatusAdvertisement {
   

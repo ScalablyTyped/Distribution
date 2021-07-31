@@ -2,21 +2,19 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePartnerEventSourceRequest extends StObject {
   
   /**
     * The AWS account ID that is permitted to create a matching partner event bus for this partner event source.
     */
-  var Account: AccountId = js.native
+  var Account: AccountId
   
   /**
     * The name of the partner event source. This name must be unique and must be in the format  partner_name/event_namespace/event_name . The AWS account that wants to use this partner event source must create a partner event bus with a name that matches the name of the partner event source.
     */
-  var Name: EventSourceName = js.native
+  var Name: EventSourceName
 }
 object CreatePartnerEventSourceRequest {
   

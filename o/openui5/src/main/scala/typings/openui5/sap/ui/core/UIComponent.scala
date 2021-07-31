@@ -6,11 +6,12 @@ import typings.openui5.sap.ui.core.mvc.View
 import typings.openui5.sap.ui.core.routing.Targets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIComponent extends Component {
+trait UIComponent
+  extends StObject
+     with Component {
   
   /**
     * Returns an element by its ID in the context of the component.

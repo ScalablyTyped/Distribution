@@ -8,24 +8,24 @@ import typings.std.Partial
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-media", JSImport.Default)
+  @JSImport("react-media", JSImport.Namespace)
   @js.native
-  def default(props: SingleQueryProps): ReactElement = js.native
-  @JSImport("react-media", JSImport.Default)
-  @js.native
-  def default[Q](props: MultiQueryProps[Q]): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: SingleQueryProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  @scala.inline
+  def default[Q](props: MultiQueryProps[Q]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
   trait BaseProps extends StObject {
     
-    var render: js.UndefOr[js.Function0[ReactNode]] = js.native
+    var render: js.UndefOr[js.Function0[ReactNode]] = js.undefined
     
-    var targetWindow: js.UndefOr[Window] = js.native
+    var targetWindow: js.UndefOr[Window] = js.undefined
   }
   object BaseProps {
     
@@ -64,21 +64,17 @@ object mod {
     */
   type MediaQueryValue = String | MediaQueryObject | js.Array[MediaQueryObject]
   
-  /* Inlined react-media.react-media.BaseProps & {  queries :Queries,   defaultMatches :std.Partial<react-media.react-media.QueryResults<Queries>> | undefined,   children :(matches : react-media.react-media.QueryResults<Queries>): react.react.ReactNode | react.react.ReactNode | undefined,   onChange :(matches : react-media.react-media.QueryResults<Queries>): void | undefined} */
-  @js.native
-  trait MultiQueryProps[Queries] extends StObject {
+  trait MultiQueryProps[Queries]
+    extends StObject
+       with BaseProps {
     
-    var children: js.UndefOr[(js.Function1[/* matches */ QueryResults[Queries], ReactNode]) | ReactNode] = js.native
+    var children: js.UndefOr[(js.Function1[/* matches */ QueryResults[Queries], ReactNode]) | ReactNode] = js.undefined
     
-    var defaultMatches: js.UndefOr[Partial[QueryResults[Queries]]] = js.native
+    var defaultMatches: js.UndefOr[Partial[QueryResults[Queries]]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* matches */ QueryResults[Queries], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* matches */ QueryResults[Queries], Unit]] = js.undefined
     
-    var queries: Queries = js.native
-    
-    var render: js.UndefOr[js.Function0[ReactNode]] = js.native
-    
-    var targetWindow: js.UndefOr[Window] = js.native
+    var queries: Queries
   }
   object MultiQueryProps {
     
@@ -89,7 +85,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class MultiQueryPropsMutableBuilder[Self <: MultiQueryProps[_], Queries] (val x: Self with MultiQueryProps[Queries]) extends AnyVal {
+    implicit class MultiQueryPropsMutableBuilder[Self <: MultiQueryProps[?], Queries] (val x: Self & MultiQueryProps[Queries]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: (js.Function1[/* matches */ QueryResults[Queries], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -114,18 +110,6 @@ object mod {
       
       @scala.inline
       def setQueries(value: Queries): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRender(value: () => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
-      
-      @scala.inline
-      def setTargetWindow(value: Window): Self = StObject.set(x, "targetWindow", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTargetWindowUndefined: Self = StObject.set(x, "targetWindow", js.undefined)
     }
   }
   
@@ -142,23 +126,19 @@ object mod {
     */
   type QueryResults[Queries] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof Queries ]: boolean}
-    */ typings.reactMedia.reactMediaStrings.QueryResults with TopLevel[js.Any]
+    */ typings.reactMedia.reactMediaStrings.QueryResults & TopLevel[js.Any]
   
-  /* Inlined react-media.react-media.BaseProps & {  query :react-media.react-media.MediaQueryValue,   defaultMatches :boolean | undefined,   children :(matches : boolean): react.react.ReactNode | react.react.ReactNode | undefined,   onChange :(matches : boolean): void | undefined} */
-  @js.native
-  trait SingleQueryProps extends StObject {
+  trait SingleQueryProps
+    extends StObject
+       with BaseProps {
     
-    var children: js.UndefOr[(js.Function1[/* matches */ Boolean, ReactNode]) | ReactNode] = js.native
+    var children: js.UndefOr[(js.Function1[/* matches */ Boolean, ReactNode]) | ReactNode] = js.undefined
     
-    var defaultMatches: js.UndefOr[Boolean] = js.native
+    var defaultMatches: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* matches */ Boolean, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* matches */ Boolean, Unit]] = js.undefined
     
-    var query: MediaQueryValue = js.native
-    
-    var render: js.UndefOr[js.Function0[ReactNode]] = js.native
-    
-    var targetWindow: js.UndefOr[Window] = js.native
+    var query: MediaQueryValue
   }
   object SingleQueryProps {
     
@@ -197,18 +177,6 @@ object mod {
       
       @scala.inline
       def setQueryVarargs(value: MediaQueryObject*): Self = StObject.set(x, "query", js.Array(value :_*))
-      
-      @scala.inline
-      def setRender(value: () => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
-      
-      @scala.inline
-      def setTargetWindow(value: Window): Self = StObject.set(x, "targetWindow", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTargetWindowUndefined: Self = StObject.set(x, "targetWindow", js.undefined)
     }
   }
 }

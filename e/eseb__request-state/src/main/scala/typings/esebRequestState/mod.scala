@@ -2,17 +2,49 @@ package typings.esebRequestState
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@eseb/request-state", JSImport.Default)
   @js.native
-  class default[T] () extends RequestState[T] {
+  class default[T] ()
+    extends StObject
+       with RequestState[T] {
     def this(state: State) = this()
-    def this(state: js.UndefOr[scala.Nothing], attachment: T) = this()
+    def this(state: Unit, attachment: T) = this()
     def this(state: State, attachment: T) = this()
+    
+    /** Does request have "FAILED" state? */
+    /* CompleteClass */
+    override def isFailed(): Boolean = js.native
+    
+    /** Does request have "IN_PROGESS" state? */
+    /* CompleteClass */
+    override def isInProgress(): Boolean = js.native
+    
+    /** Does request have "NOT_REQUESTED" state? */
+    /* CompleteClass */
+    override def isNotRequested(): Boolean = js.native
+    
+    /** Does request have "SUCCEEDED" state? */
+    /* CompleteClass */
+    override def isSucceeded(): Boolean = js.native
+    
+    /** Does the request have "NOT_REQUESTED" or "FAILED" state? */
+    /* CompleteClass */
+    override def shouldBeRequested(): Boolean = js.native
+    
+    /** Does the request have "NOT_REQUESTED" or "IN_PROGESS" state? */
+    /* CompleteClass */
+    override def shouldShowAsLoading(): Boolean = js.native
+    
+    /* CompleteClass */
+    override val state: State = js.native
+    
+    /** Create a new `RequestState` instance with the same state and the passed attachment. */
+    /* CompleteClass */
+    override def withAttachment[A](attachment: A): RequestState[A] = js.native
   }
   
   @JSImport("@eseb/request-state", "FAILED")
@@ -31,33 +63,32 @@ object mod {
   @js.native
   val SUCCEEDED: RequestState[scala.Nothing] = js.native
   
-  @js.native
   trait RequestState[T] extends StObject {
     
-    val attachment: js.UndefOr[T] = js.native
+    val attachment: js.UndefOr[T] = js.undefined
     
     /** Does request have "FAILED" state? */
-    def isFailed(): Boolean = js.native
+    def isFailed(): Boolean
     
     /** Does request have "IN_PROGESS" state? */
-    def isInProgress(): Boolean = js.native
+    def isInProgress(): Boolean
     
     /** Does request have "NOT_REQUESTED" state? */
-    def isNotRequested(): Boolean = js.native
+    def isNotRequested(): Boolean
     
     /** Does request have "SUCCEEDED" state? */
-    def isSucceeded(): Boolean = js.native
+    def isSucceeded(): Boolean
     
     /** Does the request have "NOT_REQUESTED" or "FAILED" state? */
-    def shouldBeRequested(): Boolean = js.native
+    def shouldBeRequested(): Boolean
     
     /** Does the request have "NOT_REQUESTED" or "IN_PROGESS" state? */
-    def shouldShowAsLoading(): Boolean = js.native
+    def shouldShowAsLoading(): Boolean
     
-    val state: State = js.native
+    val state: State
     
     /** Create a new `RequestState` instance with the same state and the passed attachment. */
-    def withAttachment[A](attachment: A): RequestState[A] = js.native
+    def withAttachment[A](attachment: A): RequestState[A]
   }
   object RequestState {
     
@@ -77,7 +108,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RequestStateMutableBuilder[Self <: RequestState[_], T] (val x: Self with RequestState[T]) extends AnyVal {
+    implicit class RequestStateMutableBuilder[Self <: RequestState[?], T] (val x: Self & RequestState[T]) extends AnyVal {
       
       @scala.inline
       def setAttachment(value: T): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])

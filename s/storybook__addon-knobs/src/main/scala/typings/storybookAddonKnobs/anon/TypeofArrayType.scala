@@ -6,11 +6,12 @@ import typings.storybookAddonKnobs.arrayMod.ArrayTypeKnobValue
 import typings.storybookAddonKnobs.arrayMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofArrayType extends Instantiable0[default] {
+trait TypeofArrayType
+  extends StObject
+     with Instantiable0[default] {
   
   var defaultProps: PartialArrayTypeProps = js.native
   

@@ -10,26 +10,26 @@ import typings.imageminMozjpeg.imageminMozjpegStrings.psnr
 import typings.imageminMozjpeg.imageminMozjpegStrings.ssim
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("imagemin-mozjpeg", JSImport.Namespace)
-  @js.native
-  def apply(): Plugin = js.native
-  @JSImport("imagemin-mozjpeg", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Plugin = js.native
+  @scala.inline
+  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  @scala.inline
+  def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
+  @JSImport("imagemin-mozjpeg", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * Use arithmetic coding.
       * @default false
       */
-    var arithmetic: js.UndefOr[Boolean] = js.native
+    var arithmetic: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set DC scan optimization mode.
@@ -38,7 +38,7 @@ object mod {
       *  2 Optimize between one scan for all components and one scan for 1st component plus one scan for remaining components
       * @default 1
       */
-    var dcScanOpt: js.UndefOr[Double] = js.native
+    var dcScanOpt: js.UndefOr[Double] = js.undefined
     
     /**
       * Set DCT method:
@@ -47,39 +47,39 @@ object mod {
       * float Use floating-point DCT
       * @default 'int'
       */
-    var dct: js.UndefOr[int | fast | float] = js.native
+    var dct: js.UndefOr[int | fast | float] = js.undefined
     
     /**
       * Disable progressive scan optimization.
       * @default false
       */
-    var fastCrush: js.UndefOr[Boolean] = js.native
+    var fastCrush: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the maximum memory to use in kilobytes.
       */
-    var maxMemory: js.UndefOr[Double] = js.native
+    var maxMemory: js.UndefOr[Double] = js.undefined
     
     /**
       * Black-on-white deringing via overshoot.
       * @default true
       */
-    var overshoot: js.UndefOr[Boolean] = js.native
+    var overshoot: js.UndefOr[Boolean] = js.undefined
     
     /**
       * false creates baseline JPEG file.
       * @default true
       */
-    var progressive: js.UndefOr[Boolean] = js.native
+    var progressive: js.UndefOr[Boolean] = js.undefined
     
     /** Compression quality, in range 0 (worst) to 100 (perfect). */
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
     /**
       * Use 8-bit quantization table entries for baseline JPEG compatibility.
       * @default false
       */
-    var quantBaseline: js.UndefOr[Boolean] = js.native
+    var quantBaseline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use predefined quantization table.
@@ -90,48 +90,48 @@ object mod {
       * 4 Custom, tuned for PSNR-HVS
       * 5 Table from paper by Klein, Silverstein and Carney
       */
-    var quantTable: js.UndefOr[Double] = js.native
+    var quantTable: js.UndefOr[Double] = js.undefined
     
     /**
       * Revert to standard defaults instead of mozjpeg defaults.
       * @default false
       */
-    var revert: js.UndefOr[Boolean] = js.native
+    var revert: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set component sampling factors. Each item should be in the format HxV, for example 2x1.
       */
-    var sample: js.UndefOr[js.Array[String]] = js.native
+    var sample: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Set the strength of smooth dithered input. (1...100)
       */
-    var smooth: js.UndefOr[Double] = js.native
+    var smooth: js.UndefOr[Double] = js.undefined
     
     /**
       * Input file is Targa format (usually not needed).
       * @default false
       */
-    var targa: js.UndefOr[Boolean] = js.native
+    var targa: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Trellis optimization.
       * @default true
       *
       */
-    var trellis: js.UndefOr[Boolean] = js.native
+    var trellis: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Trellis optimization of DC coefficients.
       * @default true
       */
-    var trellisDC: js.UndefOr[Boolean] = js.native
+    var trellisDC: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set Trellis optimization method. Available methods: psnr, hvs-psnr, ssim, ms-ssim
       * @default 'hvs-psnr'
       */
-    var tune: js.UndefOr[psnr | `hvs-psnr` | ssim | `ms-ssim`] = js.native
+    var tune: js.UndefOr[psnr | `hvs-psnr` | ssim | `ms-ssim`] = js.undefined
   }
   object Options {
     

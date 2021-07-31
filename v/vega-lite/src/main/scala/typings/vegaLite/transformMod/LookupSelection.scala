@@ -3,16 +3,16 @@ package typings.vegaLite.transformMod
 import typings.vegaLite.channeldefMod.FieldName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LookupSelection extends LookupBase {
+trait LookupSelection
+  extends StObject
+     with LookupBase {
   
   /**
     * Selection name to look up.
     */
-  var selection: String = js.native
+  var selection: String
 }
 object LookupSelection {
   

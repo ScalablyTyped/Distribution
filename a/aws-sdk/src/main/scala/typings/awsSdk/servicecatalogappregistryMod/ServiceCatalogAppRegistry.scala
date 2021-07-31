@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,7 +40,7 @@ trait ServiceCatalogAppRegistry extends Service {
   ): Request[AssociateResourceResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_ServiceCatalogAppRegistry: ConfigBase with ClientConfiguration = js.native
+  var config_ServiceCatalogAppRegistry: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a new application that is the top-level node in a hierarchy of related cloud resource abstractions.

@@ -2,96 +2,94 @@ package typings.devextreme.mod.DevExpress.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadOptions extends StObject {
   
   /**
     * [descr:LoadOptions.customQueryParams]
     */
-  var customQueryParams: js.UndefOr[js.Any] = js.native
+  var customQueryParams: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [descr:LoadOptions.expand]
     */
-  var expand: js.UndefOr[js.Any] = js.native
+  var expand: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [descr:LoadOptions.filter]
     */
-  var filter: js.UndefOr[js.Any] = js.native
+  var filter: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [descr:LoadOptions.group]
     */
-  var group: js.UndefOr[js.Any] = js.native
+  var group: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [descr:LoadOptions.groupSummary]
     */
-  var groupSummary: js.UndefOr[js.Any] = js.native
+  var groupSummary: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [descr:LoadOptions.parentIds]
     */
-  var parentIds: js.UndefOr[js.Array[_]] = js.native
+  var parentIds: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * [descr:LoadOptions.requireGroupCount]
     */
-  var requireGroupCount: js.UndefOr[Boolean] = js.native
+  var requireGroupCount: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:LoadOptions.requireTotalCount]
     */
-  var requireTotalCount: js.UndefOr[Boolean] = js.native
+  var requireTotalCount: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:LoadOptions.searchExpr]
     */
-  var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.native
+  var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.undefined
   
   /**
     * [descr:LoadOptions.searchOperation]
     */
-  var searchOperation: js.UndefOr[String] = js.native
+  var searchOperation: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:LoadOptions.searchValue]
     */
-  var searchValue: js.UndefOr[js.Any] = js.native
+  var searchValue: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [descr:LoadOptions.select]
     */
-  var select: js.UndefOr[js.Any] = js.native
+  var select: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [descr:LoadOptions.skip]
     */
-  var skip: js.UndefOr[Double] = js.native
+  var skip: js.UndefOr[Double] = js.undefined
   
   /**
     * [descr:LoadOptions.sort]
     */
-  var sort: js.UndefOr[js.Any] = js.native
+  var sort: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [descr:LoadOptions.take]
     */
-  var take: js.UndefOr[Double] = js.native
+  var take: js.UndefOr[Double] = js.undefined
   
   /**
     * [descr:LoadOptions.totalSummary]
     */
-  var totalSummary: js.UndefOr[js.Any] = js.native
+  var totalSummary: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [descr:LoadOptions.userData]
     */
-  var userData: js.UndefOr[js.Any] = js.native
+  var userData: js.UndefOr[js.Any] = js.undefined
 }
 object LoadOptions {
   
@@ -135,7 +133,7 @@ object LoadOptions {
     def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def setParentIds(value: js.Array[_]): Self = StObject.set(x, "parentIds", value.asInstanceOf[js.Any])
+    def setParentIds(value: js.Array[js.Any]): Self = StObject.set(x, "parentIds", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParentIdsUndefined: Self = StObject.set(x, "parentIds", js.undefined)

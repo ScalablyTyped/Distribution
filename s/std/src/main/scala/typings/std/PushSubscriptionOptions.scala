@@ -2,21 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushSubscriptionOptions extends StObject {
   
-  val applicationServerKey: ArrayBuffer | Null = js.native
+  val applicationServerKey: ArrayBuffer | Null
   
-  val userVisibleOnly: scala.Boolean = js.native
+  val userVisibleOnly: scala.Boolean
 }
 object PushSubscriptionOptions {
   
   @scala.inline
   def apply(userVisibleOnly: scala.Boolean): PushSubscriptionOptions = {
-    val __obj = js.Dynamic.literal(userVisibleOnly = userVisibleOnly.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(userVisibleOnly = userVisibleOnly.asInstanceOf[js.Any], applicationServerKey = null)
     __obj.asInstanceOf[PushSubscriptionOptions]
   }
   

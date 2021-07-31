@@ -2,31 +2,29 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationalDatabaseEvent extends StObject {
   
   /**
     * The timestamp when the database event was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * The category that the database event belongs to.
     */
-  var eventCategories: js.UndefOr[StringList] = js.native
+  var eventCategories: js.UndefOr[StringList] = js.undefined
   
   /**
     * The message of the database event.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * The database that the database event relates to.
     */
-  var resource: js.UndefOr[ResourceName] = js.native
+  var resource: js.UndefOr[ResourceName] = js.undefined
 }
 object RelationalDatabaseEvent {
   

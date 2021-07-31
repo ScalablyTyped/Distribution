@@ -3,17 +3,15 @@ package typings.arangodb.anon
 import typings.arangodb.ArangoDB.ArangoSearchViewConsolidationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentThreshold extends StObject {
   
-  var segmentThreshold: Double = js.native
+  var segmentThreshold: Double
   
-  var threshold: Double = js.native
+  var threshold: Double
   
-  var `type`: ArangoSearchViewConsolidationType = js.native
+  var `type`: ArangoSearchViewConsolidationType
 }
 object SegmentThreshold {
   

@@ -2,13 +2,11 @@ package typings.expoConfigureSplashScreen.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Idx extends StObject {
   
-  var idx: js.UndefOr[Double] = js.native
+  var idx: js.UndefOr[Double] = js.undefined
 }
 object Idx {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGroupsRequest extends StObject {
   
   /**
     * The limit of the request to list groups.
     */
-  var Limit: js.UndefOr[QueryLimitType] = js.native
+  var Limit: js.UndefOr[QueryLimitType] = js.undefined
   
   /**
     * An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
     */
-  var NextToken: js.UndefOr[PaginationKey] = js.native
+  var NextToken: js.UndefOr[PaginationKey] = js.undefined
   
   /**
     * The user pool ID for the user pool.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object ListGroupsRequest {
   

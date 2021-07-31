@@ -3,14 +3,12 @@ package typings.sawtoothSdk.protobufMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConsensusPeerInfo extends StObject {
   
   /** ConsensusPeerInfo peerId */
-  var peerId: js.UndefOr[Uint8Array | Null] = js.native
+  var peerId: js.UndefOr[Uint8Array | Null] = js.undefined
 }
 object IConsensusPeerInfo {
   

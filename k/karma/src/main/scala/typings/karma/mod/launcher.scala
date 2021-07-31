@@ -3,7 +3,6 @@ package typings.karma.mod
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object launcher {
@@ -20,7 +19,7 @@ object launcher {
     def killAll(callback: js.Function0[Unit]): Unit = js.native
     
     // TODO: Can this return value ever be typified?
-    def launch(names: js.Array[String], protocol: String, hostname: String, port: Double, urlRoot: String): js.Array[_] = js.native
+    def launch(names: js.Array[String], protocol: String, hostname: String, port: Double, urlRoot: String): js.Array[js.Any] = js.native
     
     def markCaptured(id: String): Unit = js.native
     
@@ -28,9 +27,12 @@ object launcher {
   }
   object Launcher {
     
-    /* static member */
-    @JSImport("karma", "launcher.Launcher.generateId")
+    @JSImport("karma", "launcher.Launcher")
     @js.native
-    def generateId(): String = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
   }
 }

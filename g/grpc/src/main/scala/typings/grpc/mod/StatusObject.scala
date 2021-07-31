@@ -2,26 +2,24 @@ package typings.grpc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusObject extends StObject {
   
   /**
     * The error code, a key of `grpc.status`
     */
-  var code: status = js.native
+  var code: status
   
   /**
     * Human-readable description of the status
     */
-  var details: String = js.native
+  var details: String
   
   /**
     * Trailing metadata sent with the status, if applicable
     */
-  var metadata: Metadata = js.native
+  var metadata: Metadata
 }
 object StatusObject {
   

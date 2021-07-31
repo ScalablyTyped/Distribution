@@ -2,16 +2,14 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/toggler.html#javascript-reference
-@js.native
 trait Toggler extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def toggle(): Unit = js.native
+  def toggle(): Unit
 }
 object Toggler {
   

@@ -2,15 +2,13 @@ package typings.reactNativeCommunityCliTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cmd extends StObject {
   
-  var cmd: String = js.native
+  var cmd: String
   
-  var desc: String = js.native
+  var desc: String
 }
 object Cmd {
   

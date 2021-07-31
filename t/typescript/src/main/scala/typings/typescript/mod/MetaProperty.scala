@@ -4,11 +4,12 @@ import typings.typescript.mod.SyntaxKind.ImportKeyword
 import typings.typescript.mod.SyntaxKind.NewKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetaProperty extends PrimaryExpression {
+trait MetaProperty
+  extends StObject
+     with PrimaryExpression {
   
   val keywordToken: NewKeyword | ImportKeyword = js.native
   

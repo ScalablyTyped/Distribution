@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v2", "remotebuildexecution_v2.Resource$Actionresults")
@@ -33,7 +32,7 @@ class ResourceActionresults protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
   def get(callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2ActionResult]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
   def get(params: ParamsResourceActionresultsGet): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
   def get(
     params: ParamsResourceActionresultsGet,
@@ -76,7 +75,7 @@ class ResourceActionresults protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
   def update(callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2ActionResult]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
   def update(params: ParamsResourceActionresultsUpdate): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
   def update(
     params: ParamsResourceActionresultsUpdate,

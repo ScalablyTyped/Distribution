@@ -4,19 +4,17 @@ import typings.natsHemera.anon.ExpectedMessages
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientRequest extends StObject {
   
-  var error: Error = js.native
+  var error: Error
   
-  var pattern: ClientPattern = js.native
+  var pattern: ClientPattern
   
-  var payload: HemeraMessagePayload = js.native
+  var payload: HemeraMessagePayload
   
-  var transport: ExpectedMessages = js.native
+  var transport: ExpectedMessages
 }
 object ClientRequest {
   

@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noticeIconTabMod {
@@ -15,20 +14,19 @@ object noticeIconTabMod {
   class default ()
     extends Component[NoticeIconTabProps, js.Any, js.Any]
   
-  @js.native
   trait NoticeIconData extends StObject {
     
-    var avatar: js.UndefOr[String | ReactNode] = js.native
+    var avatar: js.UndefOr[String | ReactNode] = js.undefined
     
-    var datetime: js.UndefOr[ReactNode] = js.native
+    var datetime: js.UndefOr[ReactNode] = js.undefined
     
-    var description: js.UndefOr[ReactNode] = js.native
+    var description: js.UndefOr[ReactNode] = js.undefined
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object NoticeIconData {
     
@@ -81,36 +79,35 @@ object noticeIconTabMod {
   
   type NoticeIconTab = Component[NoticeIconTabProps, js.Any, js.Any]
   
-  @js.native
   trait NoticeIconTabProps extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var emptyImage: js.UndefOr[String] = js.native
+    var emptyImage: js.UndefOr[String] = js.undefined
     
-    var emptyText: js.UndefOr[ReactNode] = js.native
+    var emptyText: js.UndefOr[ReactNode] = js.undefined
     
-    var list: js.UndefOr[js.Array[NoticeIconData]] = js.native
+    var list: js.UndefOr[js.Array[NoticeIconData]] = js.undefined
     
-    var locale: js.Any = js.native
+    var locale: js.Any
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    def onClear(item: js.Any): Unit = js.native
+    def onClear(item: js.Any): Unit
     
-    def onClick(item: js.Any): Unit = js.native
+    def onClick(item: js.Any): Unit
     
-    def onViewMore(e: js.Any): Unit = js.native
+    def onViewMore(e: js.Any): Unit
     
-    var showClear: js.UndefOr[Boolean] = js.native
+    var showClear: js.UndefOr[Boolean] = js.undefined
     
-    var showViewMore: js.UndefOr[Boolean] = js.native
+    var showViewMore: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object NoticeIconTabProps {
     
@@ -130,7 +127,7 @@ object noticeIconTabMod {
       def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

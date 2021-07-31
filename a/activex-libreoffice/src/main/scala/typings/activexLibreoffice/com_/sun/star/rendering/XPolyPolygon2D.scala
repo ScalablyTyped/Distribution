@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Generic interface for poly-polygons in 2D.
   * @since OOo 2.0
   */
-@js.native
-trait XPolyPolygon2D extends XInterface {
+trait XPolyPolygon2D
+  extends StObject
+     with XInterface {
   
   /** Query the rule used to determine inside and outside of the poly-polygon. */
-  var FillRule: typings.activexLibreoffice.com_.sun.star.rendering.FillRule = js.native
+  var FillRule: typings.activexLibreoffice.com_.sun.star.rendering.FillRule
   
   /** Query number of polygons inside this poly-polygon */
-  val NumberOfPolygons: Double = js.native
+  val NumberOfPolygons: Double
   
   /**
     * Add the specified poly-polygon at the given position.
@@ -32,28 +32,28 @@ trait XPolyPolygon2D extends XInterface {
     * @param polyPolygon The poly-polygon to add. Note that the content of this poly-polygon is copied, later changes to polyPolygon will have no effect on th
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the {@link XPolyPolygon2D} parameter does not support one of the data-providing derivat
     */
-  def addPolyPolygon(position: RealPoint2D, polyPolygon: XPolyPolygon2D): Unit = js.native
+  def addPolyPolygon(position: RealPoint2D, polyPolygon: XPolyPolygon2D): Unit
   
   /** Query the rule used to determine inside and outside of the poly-polygon. */
-  def getFillRule(): FillRule = js.native
+  def getFillRule(): FillRule
   
   /**
     * Query number of points inside given polygon
     * @param polygon The index of the polygon to query the number of points for. Must be in the range [0, {@link getNumberOfPolygons()} -1].
     */
-  def getNumberOfPolygonPoints(polygon: Double): Double = js.native
+  def getNumberOfPolygonPoints(polygon: Double): Double
   
   /** Query number of polygons inside this poly-polygon */
-  def getNumberOfPolygons(): Double = js.native
+  def getNumberOfPolygons(): Double
   
   /** Query whether the specified polygon outline is closed. */
-  def isClosed(index: Double): Boolean = js.native
+  def isClosed(index: Double): Boolean
   
   /** Set the close state of the specified polygon outline. Use -1 as the index to affect all polygons of this poly-polygon. */
-  def setClosed(index: Double, closedState: Boolean): Unit = js.native
+  def setClosed(index: Double, closedState: Boolean): Unit
   
   /** Set the rule used to determine inside and outside of the poly-polygon. */
-  def setFillRule(fillRule: FillRule): Unit = js.native
+  def setFillRule(fillRule: FillRule): Unit
 }
 object XPolyPolygon2D {
   

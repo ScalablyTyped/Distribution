@@ -6,7 +6,6 @@ import typings.gatsbyCli.gatsbyCliBooleans.`false`
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined chalk.chalk.Chalk & {  supportsColor :false | chalk.chalk.ColorSupport} */

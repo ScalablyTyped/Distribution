@@ -3,13 +3,11 @@ package typings.iitc.hooksMod.global
 import typings.iitc.iitctypesMod.IITC.Field
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventFieldAdded extends StObject {
   
-  var field: Field = js.native
+  var field: Field
 }
 object EventFieldAdded {
   

@@ -3,28 +3,28 @@ package typings.backblazeB2.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadPartOpts extends CommonArgs {
+trait UploadPartOpts
+  extends StObject
+     with CommonArgs {
   
-  var contentLength: js.UndefOr[Double] = js.native
+  var contentLength: js.UndefOr[Double] = js.undefined
   
-  var data: Buffer = js.native
+  var data: Buffer
   
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
-  var onUploadProgress: js.UndefOr[UploadProgressFn | Null] = js.native
+  var onUploadProgress: js.UndefOr[UploadProgressFn | Null] = js.undefined
   
   /**
     * part number: 1 to 10000
     */
-  var partNumber: Double = js.native
+  var partNumber: Double
   
-  var uploadAuthToken: String = js.native
+  var uploadAuthToken: String
   
-  var uploadUrl: String = js.native
+  var uploadUrl: String
 }
 object UploadPartOpts {
   

@@ -6,50 +6,50 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCalendarlistWatch extends StandardParameters {
+trait ParamsResourceCalendarlistWatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Maximum number of entries returned on one result page. By default the
     * value is 100 entries. The page size can never be larger than 250 entries.
     * Optional.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum access role for the user in the returned entries. Optional.
     * The default is no restriction.
     */
-  var minAccessRole: js.UndefOr[String] = js.native
+  var minAccessRole: js.UndefOr[String] = js.undefined
   
   /**
     * Token specifying which result page to return. Optional.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaChannel] = js.native
+  var requestBody: js.UndefOr[SchemaChannel] = js.undefined
   
   /**
     * Whether to include deleted calendar list entries in the result. Optional.
     * The default is False.
     */
-  var showDeleted: js.UndefOr[Boolean] = js.native
+  var showDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to show hidden entries. Optional. The default is False.
     */
-  var showHidden: js.UndefOr[Boolean] = js.native
+  var showHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Token obtained from the nextSyncToken field returned on the last page of
@@ -66,7 +66,7 @@ trait ParamsResourceCalendarlistWatch extends StandardParameters {
     * more about incremental synchronization. Optional. The default is to
     * return all entries.
     */
-  var syncToken: js.UndefOr[String] = js.native
+  var syncToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCalendarlistWatch {
   

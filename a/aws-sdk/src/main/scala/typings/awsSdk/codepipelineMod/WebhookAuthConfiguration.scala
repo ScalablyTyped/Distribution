@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebhookAuthConfiguration extends StObject {
   
   /**
     * The property used to configure acceptance of webhooks in an IP address range. For IP, only the AllowedIPRange property must be set. This property must be set to a valid CIDR range.
     */
-  var AllowedIPRange: js.UndefOr[WebhookAuthConfigurationAllowedIPRange] = js.native
+  var AllowedIPRange: js.UndefOr[WebhookAuthConfigurationAllowedIPRange] = js.undefined
   
   /**
     * The property used to configure GitHub authentication. For GITHUB_HMAC, only the SecretToken property must be set.
     */
-  var SecretToken: js.UndefOr[WebhookAuthConfigurationSecretToken] = js.native
+  var SecretToken: js.UndefOr[WebhookAuthConfigurationSecretToken] = js.undefined
 }
 object WebhookAuthConfiguration {
   

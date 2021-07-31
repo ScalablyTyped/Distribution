@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowExecution extends StObject {
   
   /**
     * A system-generated unique identifier for the workflow execution.
     */
-  var runId: WorkflowRunId = js.native
+  var runId: WorkflowRunId
   
   /**
     * The user defined identifier associated with the workflow execution.
     */
-  var workflowId: WorkflowId = js.native
+  var workflowId: WorkflowId
 }
 object WorkflowExecution {
   

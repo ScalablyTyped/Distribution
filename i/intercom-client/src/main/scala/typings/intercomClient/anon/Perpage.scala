@@ -3,22 +3,20 @@ package typings.intercomClient.anon
 import typings.intercomClient.intercomClientStrings.user
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Perpage extends StObject {
   
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var `type`: user = js.native
+  var `type`: user
 }
 object Perpage {
   
   @scala.inline
-  def apply(`type`: user): Perpage = {
+  def apply(): Perpage = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("user")
     __obj.asInstanceOf[Perpage]
   }
   

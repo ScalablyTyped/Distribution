@@ -9,17 +9,15 @@ import typings.reactAsync.mod.AsyncRejected
 import typings.reactAsync.mod.SettledChildren
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersistState[T /* <: js.Object */] extends StObject {
   
-  var children: js.UndefOr[SettledChildren[T]] = js.native
+  var children: js.UndefOr[SettledChildren[T]] = js.undefined
   
-  var persist: js.UndefOr[Boolean] = js.native
+  var persist: js.UndefOr[Boolean] = js.undefined
   
-  var state: (AsyncInitial[T, AbstractState[T]]) | (AsyncPending[T, AbstractState[T]]) | (AsyncFulfilled[T, AbstractState[T]]) | (AsyncRejected[T, AbstractState[T]]) = js.native
+  var state: (AsyncInitial[T, AbstractState[T]]) | (AsyncPending[T, AbstractState[T]]) | (AsyncFulfilled[T, AbstractState[T]]) | (AsyncRejected[T, AbstractState[T]])
 }
 object PersistState {
   
@@ -32,7 +30,7 @@ object PersistState {
   }
   
   @scala.inline
-  implicit class PersistStateMutableBuilder[Self <: PersistState[_], T /* <: js.Object */] (val x: Self with PersistState[T]) extends AnyVal {
+  implicit class PersistStateMutableBuilder[Self <: PersistState[?], T /* <: js.Object */] (val x: Self & PersistState[T]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: SettledChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

@@ -2,15 +2,15 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FillTypeEnumValues extends EmbindEnum {
+trait FillTypeEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var EvenOdd: FillType = js.native
+  var EvenOdd: FillType
   
-  var Winding: FillType = js.native
+  var Winding: FillType
 }
 object FillTypeEnumValues {
   

@@ -4,27 +4,25 @@ import typings.nodeHueApi.mod.ColorMode
 import typings.nodeHueApi.mod.LightEffect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bri extends StObject {
   
-  var bri: Double = js.native
+  var bri: Double
   
-  var colormode: ColorMode = js.native
+  var colormode: ColorMode
   
-  var ct: Double = js.native
+  var ct: Double
   
-  var effect: LightEffect = js.native
+  var effect: LightEffect
   
-  var hue: Double = js.native
+  var hue: Double
   
-  var on: Boolean = js.native
+  var on: Boolean
   
-  var sat: Double = js.native
+  var sat: Double
   
-  var xy: js.Tuple2[Double, Double] = js.native
+  var xy: js.Tuple2[Double, Double]
 }
 object Bri {
   

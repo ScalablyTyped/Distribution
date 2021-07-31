@@ -11,8 +11,8 @@ HTML to PDF converter that uses phantomjs
 | Full name          | html-pdf |
 | Keywords           | html, pdf, phantom, phantomjs, nodejs |
 | # releases         | 0 |
-| # dependents       | 170 |
-| # downloads        | 3759335 |
+| # dependents       | 179 |
+| # downloads        | 4243617 |
 | # stars            | 109 |
 
 ## Links

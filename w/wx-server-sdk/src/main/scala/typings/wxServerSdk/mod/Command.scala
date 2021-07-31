@@ -2,7 +2,6 @@ package typings.wxServerSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // collection(name: string): Collection
@@ -27,7 +26,7 @@ trait Command extends StObject {
   
   def gte(value: Double): Command = js.native
   
-  def in(values: js.Array[_]): Command = js.native
+  def in(values: js.Array[js.Any]): Command = js.native
   
   def inc(value: Double): Command = js.native
   
@@ -39,7 +38,7 @@ trait Command extends StObject {
   
   def neq(value: js.Any): Command = js.native
   
-  def nin(values: js.Array[_]): Command = js.native
+  def nin(values: js.Array[js.Any]): Command = js.native
   
   def or(command: js.Array[CrosFieldCommand]): Command = js.native
   def or(commands: Command*): Command = js.native
@@ -47,7 +46,7 @@ trait Command extends StObject {
   
   def pop(): Command = js.native
   
-  def push(values: js.Array[_]): Command = js.native
+  def push(values: js.Array[js.Any]): Command = js.native
   
   def remove(): Command = js.native
   
@@ -55,5 +54,5 @@ trait Command extends StObject {
   
   def shift(): Command = js.native
   
-  def unshift(values: js.Array[_]): Command = js.native
+  def unshift(values: js.Array[js.Any]): Command = js.native
 }

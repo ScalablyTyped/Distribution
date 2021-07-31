@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefreshSchemasResponse extends StObject {
   
   /**
     * The status of the refreshed schema.
     */
-  var RefreshSchemasStatus: js.UndefOr[typings.awsSdk.dmsMod.RefreshSchemasStatus] = js.native
+  var RefreshSchemasStatus: js.UndefOr[typings.awsSdk.dmsMod.RefreshSchemasStatus] = js.undefined
 }
 object RefreshSchemasResponse {
   

@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wafGetWebAclMod {
   
-  @JSImport("@pulumi/aws/waf/getWebAcl", "getWebAcl")
+  @JSImport("@pulumi/aws/waf/getWebAcl", JSImport.Namespace)
   @js.native
-  def getWebAcl(args: GetWebAclArgs): js.Promise[GetWebAclResult] = js.native
-  @JSImport("@pulumi/aws/waf/getWebAcl", "getWebAcl")
-  @js.native
-  def getWebAcl(args: GetWebAclArgs, opts: InvokeOptions): js.Promise[GetWebAclResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getWebAcl(args: GetWebAclArgs): js.Promise[GetWebAclResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebAcl")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetWebAclResult]]
+  @scala.inline
+  def getWebAcl(args: GetWebAclArgs, opts: InvokeOptions): js.Promise[GetWebAclResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebAcl")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetWebAclResult]]
+  
   trait GetWebAclArgs extends StObject {
     
     /**
       * The name of the WAF Web ACL.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetWebAclArgs {
     
@@ -39,15 +39,14 @@ object wafGetWebAclMod {
     }
   }
   
-  @js.native
   trait GetWebAclResult extends StObject {
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
   }
   object GetWebAclResult {
     

@@ -2,15 +2,13 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 滚动 https://docs.alipay.com/mini/api/scroll
-@js.native
 trait PageScrollToOptions extends StObject {
   
-  var scrollTop: Double = js.native
+  var scrollTop: Double
 }
 object PageScrollToOptions {
   

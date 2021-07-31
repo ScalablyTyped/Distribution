@@ -5,14 +5,14 @@ import typings.cloudeventsSdk.cloudeventMod.CE
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1Mod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.cloudeventsSdk.cloudeventMod.CE because Already inherited */ @js.native
-  trait CloudEventV1 extends CloudEventV1Attributes {
+  - typings.cloudeventsSdk.cloudeventMod.CE because Already inherited */ trait CloudEventV1
+    extends StObject
+       with CloudEventV1Attributes {
     
     /**
       * [REQUIRED] Identifies the event. Producers MUST ensure that `source` + `id`
@@ -23,7 +23,7 @@ object v1Mod {
       * @example An event counter maintained by the producer
       * @example A UUID
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * [REQUIRED] The version of the CloudEvents specification which the event
@@ -32,7 +32,7 @@ object v1Mod {
       * specification.
       * @required MUST be a non-empty string.
       */
-    var specversion: String = js.native
+    var specversion: String
   }
   object CloudEventV1 {
     
@@ -54,9 +54,9 @@ object v1Mod {
     }
   }
   
-  @js.native
   trait CloudEventV1Attributes
-    extends /**
+    extends StObject
+       with /**
     * [OPTIONAL] CloudEvents extension attributes.
     */
   /* key */ StringDictionary[js.Any]
@@ -68,7 +68,7 @@ object v1Mod {
       * specified by the datacontenttype attribute (e.g. application/json), and adheres
       * to the dataschema format when those respective attributes are present.
       */
-    var data: js.UndefOr[js.Any | String | Double | Boolean | Null] = js.native
+    var data: js.UndefOr[js.Any | String | Double | Boolean | Null] = js.undefined
     
     /**
       * The following fields are optional.
@@ -84,7 +84,7 @@ object v1Mod {
       * example, the JSON event format defines the relationship in
       * [section 3.1](./json-format.md#31-handling-of-data).
       */
-    var dataContentType: js.UndefOr[String] = js.native
+    var dataContentType: js.UndefOr[String] = js.undefined
     
     /**
       * [OPTIONAL] Identifies the schema that `data` adheres to. Incompatible
@@ -93,7 +93,7 @@ object v1Mod {
       * for more information.
       * If present, MUST be a non-empty URI.
       */
-    var dataSchema: js.UndefOr[String] = js.native
+    var dataSchema: js.UndefOr[String] = js.undefined
     
     /**
       * [REQUIRED] Identifies the context in which an event happened. Often this
@@ -110,7 +110,7 @@ object v1Mod {
       * collaborate to ensure that `source` + `id` is unique for each distinct event.
       * @required Non-empty URI-reference
       */
-    var source: String = js.native
+    var source: String
     
     /**
       * [OPTIONAL] This describes the subject of the event in the context of the
@@ -131,7 +131,7 @@ object v1Mod {
       * @example "https://example.com/storage/tenant/container"
       * @example "mynewfile.jpg"
       */
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
     /**
       * [OPTIONAL] Timestamp of when the occurrence happened. If the time of the
@@ -142,7 +142,7 @@ object v1Mod {
       * the same algorithm to determine the value used.
       * @example "2020-08-08T14:48:09.769Z"
       */
-    var time: js.UndefOr[Date | String] = js.native
+    var time: js.UndefOr[Date | String] = js.undefined
     
     /**
       * [REQUIRED] This attribute contains a value describing the type of event
@@ -158,7 +158,7 @@ object v1Mod {
       * @example com.github.pull.create
       * @example com.example.object.delete.v2
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object CloudEventV1Attributes {
     

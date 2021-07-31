@@ -28,7 +28,6 @@ import typings.vegaLite.vegaLiteStrings.binned
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unitMod {
@@ -84,6 +83,6 @@ object unitMod {
     
     val stack: StackProperties = js.native
     
-    def typedFieldDef(channel: SingleDefChannel): TypedFieldDef[String, _, Boolean | BinParams | binned] = js.native
+    def typedFieldDef(channel: SingleDefChannel): TypedFieldDef[String, js.Any, Boolean | BinParams | binned] = js.native
   }
 }

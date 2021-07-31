@@ -2,11 +2,12 @@ package typings.request.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultUriUrlRequestApi[TRequest /* <: Request */, TOptions /* <: CoreOptions */, TUriUrlOptions] extends RequestAPI[TRequest, TOptions, TUriUrlOptions] {
+trait DefaultUriUrlRequestApi[TRequest /* <: Request */, TOptions /* <: CoreOptions */, TUriUrlOptions]
+  extends StObject
+     with RequestAPI[TRequest, TOptions, TUriUrlOptions] {
   
   def apply(): TRequest = js.native
   def apply(callback: RequestCallback): TRequest = js.native

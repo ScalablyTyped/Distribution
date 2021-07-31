@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsTriggersPatch extends StandardParameters {
+trait ParamsResourceProjectsTriggersPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * ID of the project that owns the trigger.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaBuildTrigger] = js.native
+  var requestBody: js.UndefOr[SchemaBuildTrigger] = js.undefined
   
   /**
     * ID of the `BuildTrigger` to update.
     */
-  var triggerId: js.UndefOr[String] = js.native
+  var triggerId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsTriggersPatch {
   

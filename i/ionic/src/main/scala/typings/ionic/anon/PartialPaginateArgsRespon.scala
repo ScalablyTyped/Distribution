@@ -7,20 +7,18 @@ import typings.ionic.definitionsMod.PaginatorRequestGenerator
 import typings.ionic.definitionsMod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ionic.ionic/definitions.PaginateArgs<ionic.ionic/definitions.Response<std.Array<ionic.ionic/definitions.App>>>> */
-@js.native
 trait PartialPaginateArgsRespon extends StObject {
   
-  var guard: js.UndefOr[PaginatorGuard[Response[js.Array[App]]]] = js.native
+  var guard: js.UndefOr[PaginatorGuard[Response[js.Array[App]]]] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var reqgen: js.UndefOr[PaginatorRequestGenerator] = js.native
+  var reqgen: js.UndefOr[PaginatorRequestGenerator] = js.undefined
   
-  var state: js.UndefOr[PartialPaginatorState] = js.native
+  var state: js.UndefOr[PartialPaginatorState] = js.undefined
 }
 object PartialPaginateArgsRespon {
   

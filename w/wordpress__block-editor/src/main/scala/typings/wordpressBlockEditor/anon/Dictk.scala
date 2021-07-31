@@ -3,14 +3,13 @@ package typings.wordpressBlockEditor.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictk
-  extends /* k */ StringDictionary[js.Any] {
+  extends StObject
+     with /* k */ StringDictionary[js.Any] {
   
-  var id: Double = js.native
+  var id: Double
 }
 object Dictk {
   

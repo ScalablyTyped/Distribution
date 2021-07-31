@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,26 +15,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataResult
   * @since OOo 3.0
   */
-@js.native
 trait DataPilotTableResultData extends StObject {
   
   /**
     * This is a 0-based index that specifies which data field the data displayed in the cell is for; the value of 0 means the cell is for the first data
     * field, 1 for the second, and so on.
     */
-  var DataFieldIndex: Double = js.native
+  var DataFieldIndex: Double
   
   /**
     * This is a set of filter criteria that can be used to re-create those data rows that contribute to the value shown in the cell.
     * @see com.sun.star.sheet.DataPilotFieldFilter
     */
-  var FieldFilters: SafeArray[DataPilotFieldFilter] = js.native
+  var FieldFilters: SafeArray[DataPilotFieldFilter]
   
   /**
     * more information about the result contained in the {@link DataResult} type.
     * @see com.sun.star.sheet.DataResult
     */
-  var Result: DataResult = js.native
+  var Result: DataResult
 }
 object DataPilotTableResultData {
   

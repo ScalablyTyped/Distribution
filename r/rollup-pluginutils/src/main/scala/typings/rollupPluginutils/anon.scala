@@ -3,15 +3,13 @@ package typings.rollupPluginutils
 import typings.rollupPluginutils.rollupPluginutilsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Resolve extends StObject {
     
-    var resolve: js.UndefOr[String | `false` | Null] = js.native
+    var resolve: js.UndefOr[String | `false` | Null] = js.undefined
   }
   object Resolve {
     

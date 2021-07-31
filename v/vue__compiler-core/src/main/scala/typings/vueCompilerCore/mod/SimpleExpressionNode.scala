@@ -3,47 +3,46 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimpleExpressionNode
-  extends ExpressionNode
-     with Node2 {
+  extends StObject
+     with Node2
+     with ExpressionNode {
   
-  var content: String = js.native
+  var content: String
   
   /**
     * Indicates this is an identifier for a hoist vnode call and points to the
     * hoisted node.
     */
-  var hoisted: js.UndefOr[JSChildNode] = js.native
+  var hoisted: js.UndefOr[JSChildNode] = js.undefined
   
   /**
     * an expression parsed as the params of a function will track
     * the identifiers declared inside the function body.
     */
-  var identifiers: js.UndefOr[js.Array[String]] = js.native
+  var identifiers: js.UndefOr[js.Array[String]] = js.undefined
   
-  var isConstant: Boolean = js.native
+  var isConstant: Boolean
   
   /**
     * some expressions (e.g. transformAssetUrls import identifiers) are constant,
     * but cannot be stringified because they must be first evaluated at runtime.
     */
-  var isRuntimeConstant: js.UndefOr[Boolean] = js.native
+  var isRuntimeConstant: js.UndefOr[Boolean] = js.undefined
   
-  var isStatic: Boolean = js.native
+  var isStatic: Boolean
   
   @JSName("type")
-  var type_SimpleExpressionNode: `4` = js.native
+  var type_SimpleExpressionNode: `4`
 }
 object SimpleExpressionNode {
   
   @scala.inline
-  def apply(content: String, isConstant: Boolean, isStatic: Boolean, loc: SourceLocation, `type`: `4`): SimpleExpressionNode = {
+  def apply(content: String, isConstant: Boolean, isStatic: Boolean, loc: SourceLocation): SimpleExpressionNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], isConstant = isConstant.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(4)
     __obj.asInstanceOf[SimpleExpressionNode]
   }
   

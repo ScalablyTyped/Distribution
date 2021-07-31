@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportVolumeTaskDetails extends StObject {
   
   /**
     * The Availability Zone where the resulting volume will reside.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The number of bytes converted so far.
     */
-  var BytesConverted: js.UndefOr[Long] = js.native
+  var BytesConverted: js.UndefOr[Long] = js.undefined
   
   /**
     * The description you provided when starting the import volume task.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The image.
     */
-  var Image: js.UndefOr[DiskImageDescription] = js.native
+  var Image: js.UndefOr[DiskImageDescription] = js.undefined
   
   /**
     * The volume.
     */
-  var Volume: js.UndefOr[DiskImageVolumeDescription] = js.native
+  var Volume: js.UndefOr[DiskImageVolumeDescription] = js.undefined
 }
 object ImportVolumeTaskDetails {
   

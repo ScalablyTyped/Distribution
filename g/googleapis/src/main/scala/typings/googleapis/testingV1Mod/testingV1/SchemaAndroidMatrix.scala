@@ -2,7 +2,6 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,32 +11,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * be instantiated.  Invalid permutations (e.g., incompatible models/versions)
   * are ignored.
   */
-@js.native
 trait SchemaAndroidMatrix extends StObject {
   
   /**
     * Required. The ids of the set of Android device to be used. Use the
     * TestEnvironmentDiscoveryService to get supported options.
     */
-  var androidModelIds: js.UndefOr[js.Array[String]] = js.native
+  var androidModelIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. The ids of the set of Android OS version to be used. Use the
     * TestEnvironmentDiscoveryService to get supported options.
     */
-  var androidVersionIds: js.UndefOr[js.Array[String]] = js.native
+  var androidVersionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. The set of locales the test device will enable for testing. Use
     * the TestEnvironmentDiscoveryService to get supported options.
     */
-  var locales: js.UndefOr[js.Array[String]] = js.native
+  var locales: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. The set of orientations to test with. Use the
     * TestEnvironmentDiscoveryService to get supported options.
     */
-  var orientations: js.UndefOr[js.Array[String]] = js.native
+  var orientations: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaAndroidMatrix {
   

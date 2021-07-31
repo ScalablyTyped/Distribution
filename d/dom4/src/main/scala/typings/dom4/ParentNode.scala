@@ -4,26 +4,24 @@ import typings.std.HTMLCollection
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParentNode extends StObject {
   
   /**
     * Inserts `nodes` after the last child of this node, while replacing strings with equivalent `Text` nodes.
     */
-  def append(nodes: (Node | String)*): Unit = js.native
+  def append(nodes: (Node | String)*): Unit
   
   /**
     * Returns the child elements.
     */
-  val children: HTMLCollection = js.native
+  val children: HTMLCollection
   
   /**
     * Inserts `nodes` before the first child of this node, while replacing strings with equivalent `Text` nodes.
     */
-  def prepend(nodes: (Node | String)*): Unit = js.native
+  def prepend(nodes: (Node | String)*): Unit
 }
 object ParentNode {
   

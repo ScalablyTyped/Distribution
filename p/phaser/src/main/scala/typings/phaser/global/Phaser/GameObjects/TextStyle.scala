@@ -2,7 +2,6 @@ package typings.phaser.global.Phaser.GameObjects
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Phaser.GameObjects.TextStyle")
 @js.native
 class TextStyle protected ()
-  extends typings.phaser.Phaser.GameObjects.TextStyle {
+  extends StObject
+     with typings.phaser.Phaser.GameObjects.TextStyle {
   /**
     * 
     * @param text The Text object that this TextStyle is styling.

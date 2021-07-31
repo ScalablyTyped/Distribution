@@ -3,33 +3,32 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.DeclareTypeAlias
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait DeclareTypeAlias_
-  extends Declaration
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait DeclareTypeAlias_
+  extends StObject
      with BaseNode
+     with Declaration
      with Flow
      with FlowDeclaration
      with Statement {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var right: FlowType = js.native
+  var right: FlowType
   
-  var typeParameters: TypeParameterDeclaration_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_DeclareTypeAlias_ : DeclareTypeAlias = js.native
+  var type_DeclareTypeAlias_ : DeclareTypeAlias
 }
 object DeclareTypeAlias_ {
   
   @scala.inline
-  def apply(id: Identifier_, right: FlowType, `type`: DeclareTypeAlias): DeclareTypeAlias_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: Identifier_, right: FlowType): DeclareTypeAlias_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("DeclareTypeAlias")
     __obj.asInstanceOf[DeclareTypeAlias_]
   }
   

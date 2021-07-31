@@ -2,16 +2,14 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentingRangeProvider extends StObject {
   
   /**
     * Provide a list of ranges which allow new comment threads creation or null for a given document
     */
-  def provideCommentingRanges(document: TextDocument, token: CancellationToken): ProviderResult[js.Array[Range]] = js.native
+  def provideCommentingRanges(document: TextDocument, token: CancellationToken): ProviderResult[js.Array[Range]]
 }
 object CommentingRangeProvider {
   

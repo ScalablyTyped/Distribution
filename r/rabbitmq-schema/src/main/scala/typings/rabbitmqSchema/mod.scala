@@ -5,30 +5,30 @@ import typings.rabbitmqSchema.rabbitmqSchemaStrings.fanout
 import typings.rabbitmqSchema.rabbitmqSchemaStrings.topic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("rabbitmq-schema", JSImport.Namespace)
   @js.native
-  class ^ protected () extends RabbitMQSchema {
+  class ^ protected ()
+    extends StObject
+       with RabbitMQSchema {
     def this(schema: js.Array[Topology]) = this()
     def this(schema: Topology) = this()
     def this(schema: js.Array[Topology], parentPath: String) = this()
     def this(schema: Topology, parentPath: String) = this()
   }
   
-  @js.native
   trait Binding extends StObject {
     
-    var args: js.UndefOr[js.Object] = js.native
+    var args: js.UndefOr[js.Object] = js.undefined
     
-    var destination: Exchange | Queue = js.native
+    var destination: Exchange | Queue
     
-    var routingPattern: js.UndefOr[String] = js.native
+    var routingPattern: js.UndefOr[String] = js.undefined
     
-    var source: Exchange = js.native
+    var source: Exchange
   }
   object Binding {
     
@@ -61,11 +61,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait DirectBinding extends Binding {
+  trait DirectBinding
+    extends StObject
+       with Binding {
     
     @JSName("routingPattern")
-    var routingPattern_DirectBinding: String = js.native
+    var routingPattern_DirectBinding: String
   }
   object DirectBinding {
     
@@ -83,21 +84,22 @@ object mod {
     }
   }
   
-  @js.native
-  trait DirectExchange extends Exchange {
+  trait DirectExchange
+    extends StObject
+       with Exchange {
     
     @JSName("bindings")
-    var bindings_DirectExchange: js.Array[DirectBinding] = js.native
+    var bindings_DirectExchange: js.Array[DirectBinding]
     
     @JSName("type")
-    var type_DirectExchange: direct = js.native
+    var type_DirectExchange: direct
   }
   object DirectExchange {
     
     @scala.inline
-    def apply(bindings: js.Array[DirectBinding], exchange: String, `type`: direct): DirectExchange = {
+    def apply(bindings: js.Array[DirectBinding], exchange: String): DirectExchange = {
       val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("direct")
       __obj.asInstanceOf[DirectExchange]
     }
     
@@ -115,14 +117,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait Exchange extends Topology {
+  trait Exchange
+    extends StObject
+       with Topology {
     
-    var bindings: js.Array[Binding] = js.native
+    var bindings: js.Array[Binding]
     
-    var exchange: String = js.native
+    var exchange: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Exchange {
     
@@ -150,18 +153,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait FanoutExchange extends Exchange {
+  trait FanoutExchange
+    extends StObject
+       with Exchange {
     
     @JSName("type")
-    var type_FanoutExchange: fanout = js.native
+    var type_FanoutExchange: fanout
   }
   object FanoutExchange {
     
     @scala.inline
-    def apply(bindings: js.Array[Binding], exchange: String, `type`: fanout): FanoutExchange = {
+    def apply(bindings: js.Array[Binding], exchange: String): FanoutExchange = {
       val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("fanout")
       __obj.asInstanceOf[FanoutExchange]
     }
     
@@ -173,12 +177,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait Queue extends Topology {
+  trait Queue
+    extends StObject
+       with Topology {
     
-    var messageSchema: js.Object = js.native
+    var messageSchema: js.Object
     
-    var queue: String = js.native
+    var queue: String
   }
   object Queue {
     
@@ -222,11 +227,12 @@ object mod {
     def validateMessage[T](exchangeName: String, routingPattern: String, message: T): T = js.native
   }
   
-  @js.native
-  trait TopicBinding extends Binding {
+  trait TopicBinding
+    extends StObject
+       with Binding {
     
     @JSName("routingPattern")
-    var routingPattern_TopicBinding: String = js.native
+    var routingPattern_TopicBinding: String
   }
   object TopicBinding {
     
@@ -244,21 +250,22 @@ object mod {
     }
   }
   
-  @js.native
-  trait TopicExchange extends Exchange {
+  trait TopicExchange
+    extends StObject
+       with Exchange {
     
     @JSName("bindings")
-    var bindings_TopicExchange: js.Array[TopicBinding] = js.native
+    var bindings_TopicExchange: js.Array[TopicBinding]
     
     @JSName("type")
-    var type_TopicExchange: topic = js.native
+    var type_TopicExchange: topic
   }
   object TopicExchange {
     
     @scala.inline
-    def apply(bindings: js.Array[TopicBinding], exchange: String, `type`: topic): TopicExchange = {
+    def apply(bindings: js.Array[TopicBinding], exchange: String): TopicExchange = {
       val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("topic")
       __obj.asInstanceOf[TopicExchange]
     }
     
@@ -276,10 +283,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Topology extends StObject {
     
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
   }
   object Topology {
     

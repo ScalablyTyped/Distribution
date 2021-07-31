@@ -2,66 +2,64 @@ package typings.maximMazurokGapiClientAndroidenterprise.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Approved extends StObject {
   
   /** V1 error format. */
   @JSName("$.xgafv")
-  var $Dotxgafv: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
   
   /** OAuth access token. */
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** Specifies whether to search among all products (false) or among only products that have been approved (true). Only "true" is supported, and should be specified. */
-  var approved: js.UndefOr[Boolean] = js.native
+  var approved: js.UndefOr[Boolean] = js.undefined
   
   /** JSONP */
-  var callback: js.UndefOr[String] = js.native
+  var callback: js.UndefOr[String] = js.undefined
   
   /** The ID of the enterprise. */
-  var enterpriseId: String = js.native
+  var enterpriseId: String
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** The BCP47 tag for the user's preferred language (e.g. "en-US", "de"). Results are returned in the language best matching the preferred language. */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /** Defines how many results the list operation should return. The default number depends on the resource collection. */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The search query as typed in the Google Play store search box. If omitted, all approved apps will be returned (using the pagination parameters), including apps that are not
     * available in the store (e.g. unpublished apps).
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Defines the token of the page to return, usually taken from TokenPagination. This can only be used if token paging is enabled. */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-  var uploadType: js.UndefOr[String] = js.native
+  var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
-  var upload_protocol: js.UndefOr[String] = js.native
+  var upload_protocol: js.UndefOr[String] = js.undefined
 }
 object Approved {
   

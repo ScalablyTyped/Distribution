@@ -2,15 +2,13 @@ package typings.gapiDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateIdsParameters extends StObject {
   
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
-  var space: js.UndefOr[String] = js.native
+  var space: js.UndefOr[String] = js.undefined
 }
 object GenerateIdsParameters {
   

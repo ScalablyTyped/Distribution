@@ -3,15 +3,31 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationNavMod {
   
   @JSImport("carbon-components/components/pagination-nav/pagination-nav", JSImport.Default)
   @js.native
-  class default protected () extends PaginationNav {
+  class default protected ()
+    extends StObject
+       with PaginationNav {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def clearActivePage(evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def getActivePageNumber(): js.UndefOr[Double] = js.native
+    
+    /* CompleteClass */
+    override def handleClick(evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def handleSelectChange(evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def setPrevNextStates(): Unit = js.native
   }
   object default {
     
@@ -28,18 +44,17 @@ object paginationNavMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait PaginationNav extends StObject {
+  - Dropped any */ trait PaginationNav extends StObject {
     
-    def clearActivePage(evt: js.Any): Unit = js.native
+    def clearActivePage(evt: js.Any): Unit
     
-    def getActivePageNumber(): js.UndefOr[Double] = js.native
+    def getActivePageNumber(): js.UndefOr[Double]
     
-    def handleClick(evt: js.Any): Unit = js.native
+    def handleClick(evt: js.Any): Unit
     
-    def handleSelectChange(evt: js.Any): Unit = js.native
+    def handleSelectChange(evt: js.Any): Unit
     
-    def setPrevNextStates(): Unit = js.native
+    def setPrevNextStates(): Unit
   }
   object PaginationNav {
     

@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.alb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenerRuleActionFixedResponse extends StObject {
   
   /**
     * The content type. Valid values are `text/plain`, `text/css`, `text/html`, `application/javascript` and `application/json`.
     */
-  var contentType: String = js.native
+  var contentType: String
   
   /**
     * The message body.
     */
-  var messageBody: js.UndefOr[String] = js.native
+  var messageBody: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP response code. Valid values are `2XX`, `4XX`, or `5XX`.
     */
-  var statusCode: String = js.native
+  var statusCode: String
 }
 object ListenerRuleActionFixedResponse {
   

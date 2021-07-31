@@ -3,27 +3,27 @@ package typings.postmanCollection.mod
 import typings.postmanCollection.anon.Password
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UrlDefinition extends PropertyBaseDefinition {
+trait UrlDefinition
+  extends StObject
+     with PropertyBaseDefinition {
   
-  var auth: js.UndefOr[Password] = js.native
+  var auth: js.UndefOr[Password] = js.undefined
   
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
-  var host: js.UndefOr[js.Array[String] | String] = js.native
+  var host: js.UndefOr[js.Array[String] | String] = js.undefined
   
-  var path: js.UndefOr[js.Array[String] | String] = js.native
+  var path: js.UndefOr[js.Array[String] | String] = js.undefined
   
-  var port: js.UndefOr[String] = js.native
+  var port: js.UndefOr[String] = js.undefined
   
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
-  var query: js.UndefOr[js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String] = js.native
+  var query: js.UndefOr[js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String] = js.undefined
   
-  var variable: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var variable: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
 }
 object UrlDefinition {
   

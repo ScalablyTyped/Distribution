@@ -2,16 +2,14 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamJournalToKinesisResponse extends StObject {
   
   /**
     * The unique ID that QLDB assigns to each QLDB journal stream.
     */
-  var StreamId: js.UndefOr[UniqueId] = js.native
+  var StreamId: js.UndefOr[UniqueId] = js.undefined
 }
 object StreamJournalToKinesisResponse {
   

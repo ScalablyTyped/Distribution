@@ -4,15 +4,13 @@ import typings.smartFoxServer.SFS2X.Entities.SFSBuddy
 import typings.smartFoxServer.SFS2X.Entities.Variables.SFSBuddyVariable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBUDDY_LIST_INIT extends StObject {
   
-  var buddyList: js.Array[SFSBuddy] = js.native
+  var buddyList: js.Array[SFSBuddy]
   
-  var myVariables: js.Array[SFSBuddyVariable] = js.native
+  var myVariables: js.Array[SFSBuddyVariable]
 }
 object IBUDDY_LIST_INIT {
   

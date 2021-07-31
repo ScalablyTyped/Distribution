@@ -2,21 +2,19 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultSetMetadata extends StObject {
   
   /**
     * The number of columns in the result set.
     */
-  var columnCount: js.UndefOr[Long] = js.native
+  var columnCount: js.UndefOr[Long] = js.undefined
   
   /**
     * The metadata of the columns in the result set.
     */
-  var columnMetadata: js.UndefOr[Metadata] = js.native
+  var columnMetadata: js.UndefOr[Metadata] = js.undefined
 }
 object ResultSetMetadata {
   

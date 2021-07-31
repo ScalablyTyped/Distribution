@@ -2,15 +2,13 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadingStrokeColor extends StObject {
   
-  var loadingStrokeColor: js.UndefOr[String] = js.native
+  var loadingStrokeColor: js.UndefOr[String] = js.undefined
   
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
 }
 object LoadingStrokeColor {
   

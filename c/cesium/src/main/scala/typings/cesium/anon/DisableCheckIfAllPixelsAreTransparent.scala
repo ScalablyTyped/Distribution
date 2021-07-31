@@ -4,17 +4,15 @@ import typings.cesium.mod.Cartesian2
 import typings.cesium.mod.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableCheckIfAllPixelsAreTransparent extends StObject {
   
-  var disableCheckIfAllPixelsAreTransparent: js.UndefOr[Boolean] = js.native
+  var disableCheckIfAllPixelsAreTransparent: js.UndefOr[Boolean] = js.undefined
   
-  var missingImageUrl: Resource | String = js.native
+  var missingImageUrl: Resource | String
   
-  var pixelsToCheck: js.Array[Cartesian2] = js.native
+  var pixelsToCheck: js.Array[Cartesian2]
 }
 object DisableCheckIfAllPixelsAreTransparent {
   

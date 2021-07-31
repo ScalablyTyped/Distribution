@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.hdrHistogramJs.abstractHistogramBaseMod.AbstractHistogramBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractHistogramMod {
@@ -301,25 +300,13 @@ object abstractHistogramMod {
       * @param useCsvFormat  Output in CSV format if true. Otherwise use plain text form.
       */
     def outputPercentileDistribution(): String = js.native
-    def outputPercentileDistribution(
-      percentileTicksPerHalfDistance: js.UndefOr[scala.Nothing],
-      outputValueUnitScalingRatio: js.UndefOr[scala.Nothing],
-      useCsvFormat: Boolean
-    ): String = js.native
-    def outputPercentileDistribution(percentileTicksPerHalfDistance: js.UndefOr[scala.Nothing], outputValueUnitScalingRatio: Double): String = js.native
-    def outputPercentileDistribution(
-      percentileTicksPerHalfDistance: js.UndefOr[scala.Nothing],
-      outputValueUnitScalingRatio: Double,
-      useCsvFormat: Boolean
-    ): String = js.native
     def outputPercentileDistribution(percentileTicksPerHalfDistance: Double): String = js.native
-    def outputPercentileDistribution(
-      percentileTicksPerHalfDistance: Double,
-      outputValueUnitScalingRatio: js.UndefOr[scala.Nothing],
-      useCsvFormat: Boolean
-    ): String = js.native
     def outputPercentileDistribution(percentileTicksPerHalfDistance: Double, outputValueUnitScalingRatio: Double): String = js.native
     def outputPercentileDistribution(percentileTicksPerHalfDistance: Double, outputValueUnitScalingRatio: Double, useCsvFormat: Boolean): String = js.native
+    def outputPercentileDistribution(percentileTicksPerHalfDistance: Double, outputValueUnitScalingRatio: Unit, useCsvFormat: Boolean): String = js.native
+    def outputPercentileDistribution(percentileTicksPerHalfDistance: Unit, outputValueUnitScalingRatio: Double): String = js.native
+    def outputPercentileDistribution(percentileTicksPerHalfDistance: Unit, outputValueUnitScalingRatio: Double, useCsvFormat: Boolean): String = js.native
+    def outputPercentileDistribution(percentileTicksPerHalfDistance: Unit, outputValueUnitScalingRatio: Unit, useCsvFormat: Boolean): String = js.native
     
     var recordCountAtValue: js.Any = js.native
     
@@ -433,7 +420,9 @@ object abstractHistogramMod {
   }
   
   @js.native
-  trait HistogramConstructor extends Instantiable3[
+  trait HistogramConstructor
+    extends StObject
+       with Instantiable3[
           /* lowestDiscernibleValue */ Double, 
           /* highestTrackableValue */ Double, 
           /* numberOfSignificantValueDigits */ Double, 

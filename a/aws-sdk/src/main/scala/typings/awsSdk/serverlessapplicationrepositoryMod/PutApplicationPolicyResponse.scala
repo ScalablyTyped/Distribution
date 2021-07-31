@@ -2,16 +2,14 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutApplicationPolicyResponse extends StObject {
   
   /**
     * An array of policy statements applied to the application.
     */
-  var Statements: js.UndefOr[listOfApplicationPolicyStatement] = js.native
+  var Statements: js.UndefOr[listOfApplicationPolicyStatement] = js.undefined
 }
 object PutApplicationPolicyResponse {
   

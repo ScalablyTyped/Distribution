@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentMatrix extends StObject {
   
   /** A list of Android devices; the test will be run only on the specified devices. */
-  var androidDeviceList: js.UndefOr[AndroidDeviceList] = js.native
+  var androidDeviceList: js.UndefOr[AndroidDeviceList] = js.undefined
   
   /** A matrix of Android devices. */
-  var androidMatrix: js.UndefOr[AndroidMatrix] = js.native
+  var androidMatrix: js.UndefOr[AndroidMatrix] = js.undefined
   
   /** A list of iOS devices. */
-  var iosDeviceList: js.UndefOr[IosDeviceList] = js.native
+  var iosDeviceList: js.UndefOr[IosDeviceList] = js.undefined
 }
 object EnvironmentMatrix {
   

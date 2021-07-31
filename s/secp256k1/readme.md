@@ -10,9 +10,9 @@ This module provides native bindings to ecdsa secp256k1 functions
 | ------------------ | :-------------: |
 | Full name          | secp256k1 |
 | Keywords           | ec, ecdh, ecdsa, secp256k1 |
-| # releases         | 10 |
-| # dependents       | 652 |
-| # downloads        | 6351260 |
+| # releases         | 7 |
+| # dependents       | 749 |
+| # downloads        | 8764156 |
 | # stars            | 3 |
 
 ## Links

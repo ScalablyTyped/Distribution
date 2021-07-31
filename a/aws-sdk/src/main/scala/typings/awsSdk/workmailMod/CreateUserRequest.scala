@@ -2,31 +2,29 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserRequest extends StObject {
   
   /**
     * The display name for the new user.
     */
-  var DisplayName: String = js.native
+  var DisplayName: String
   
   /**
     * The name for the new user. WorkMail directory user names have a maximum length of 64. All others have a maximum length of 20.
     */
-  var Name: UserName = js.native
+  var Name: UserName
   
   /**
     * The identifier of the organization for which the user is created.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The password for the new user.
     */
-  var Password: typings.awsSdk.workmailMod.Password = js.native
+  var Password: typings.awsSdk.workmailMod.Password
 }
 object CreateUserRequest {
   

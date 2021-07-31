@@ -2,16 +2,14 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
   /**
     * Specify an IP address or a block of IP addresses in Classless Inter-Domain Routing (CIDR) notation. Network Firewall supports all address ranges for IPv4.  Examples:    To configure Network Firewall to inspect for the IP address 192.0.2.44, specify 192.0.2.44/32.   To configure Network Firewall to inspect for IP addresses from 192.0.2.0 to 192.0.2.255, specify 192.0.2.0/24.   For more information about CIDR notation, see the Wikipedia entry Classless Inter-Domain Routing.
     */
-  var AddressDefinition: typings.awsSdk.networkfirewallMod.AddressDefinition = js.native
+  var AddressDefinition: typings.awsSdk.networkfirewallMod.AddressDefinition
 }
 object Address {
   

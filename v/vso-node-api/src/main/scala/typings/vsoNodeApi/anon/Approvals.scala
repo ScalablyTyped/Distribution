@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Approvals extends StObject {
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var approvals: scala.Double = js.native
+  var approvals: scala.Double
   
-  var artifacts: scala.Double = js.native
+  var artifacts: scala.Double
   
-  var deploymentOnly: scala.Double = js.native
+  var deploymentOnly: scala.Double
 }
 object Approvals {
   

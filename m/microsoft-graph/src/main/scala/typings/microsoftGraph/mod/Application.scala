@@ -2,46 +2,46 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Application extends DirectoryObject {
+trait Application
+  extends StObject
+     with DirectoryObject {
   
   /**
     * Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications
     * that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services
     * like Microsoft 365 call the application in the context of a document the user is working on.
     */
-  var addIns: js.UndefOr[js.Array[AddIn]] = js.native
+  var addIns: js.UndefOr[js.Array[AddIn]] = js.undefined
   
   // Specifies settings for an application that implements a web API.
-  var api: js.UndefOr[NullableOption[ApiApplication]] = js.native
+  var api: js.UndefOr[NullableOption[ApiApplication]] = js.undefined
   
   // The unique identifier for the application that is assigned to an application by Azure AD. Not nullable. Read-only.
-  var appId: js.UndefOr[NullableOption[String]] = js.native
+  var appId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The collection of roles the application declares. With app role assignments, these roles can be assigned to users,
     * groups, or other applications' service principals. Not nullable.
     */
-  var appRoles: js.UndefOr[js.Array[AppRole]] = js.native
+  var appRoles: js.UndefOr[js.Array[AppRole]] = js.undefined
   
-  var applicationTemplateId: js.UndefOr[NullableOption[String]] = js.native
+  var applicationTemplateId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The date and time the application was registered. Read-only.
-  var createdDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read-only.
-  var createdOnBehalfOf: js.UndefOr[NullableOption[DirectoryObject]] = js.native
+  var createdOnBehalfOf: js.UndefOr[NullableOption[DirectoryObject]] = js.undefined
   
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The display name for the application.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read-only. Nullable.
-  var extensionProperties: js.UndefOr[NullableOption[js.Array[ExtensionProperty]]] = js.native
+  var extensionProperties: js.UndefOr[NullableOption[js.Array[ExtensionProperty]]] = js.undefined
   
   /**
     * Configures the groups claim issued in a user or OAuth 2.0 access token that the application expects. To set this
@@ -49,25 +49,25 @@ trait Application extends DirectoryObject {
     * This will get all of the security groups, distribution groups, and Azure AD directory roles that the signed-in user is
     * a member of
     */
-  var groupMembershipClaims: js.UndefOr[NullableOption[String]] = js.native
+  var groupMembershipClaims: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var homeRealmDiscoveryPolicies: js.UndefOr[NullableOption[js.Array[HomeRealmDiscoveryPolicy]]] = js.native
+  var homeRealmDiscoveryPolicies: js.UndefOr[NullableOption[js.Array[HomeRealmDiscoveryPolicy]]] = js.undefined
   
   /**
     * The URIs that identify the application within its Azure AD tenant, or within a verified custom domain if the
     * application is multi-tenant. For more information see Application Objects and Service Principal Objects. The any
     * operator is required for filter expressions on multi-valued properties. Not nullable.
     */
-  var identifierUris: js.UndefOr[js.Array[String]] = js.native
+  var identifierUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Basic profile information of the application such as app's marketing, support, terms of service and privacy statement
     * URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. For more
     * info, see How to: Add Terms of service and privacy statement for registered Azure AD apps.
     */
-  var info: js.UndefOr[NullableOption[InformationalUrl]] = js.native
+  var info: js.UndefOr[NullableOption[InformationalUrl]] = js.undefined
   
-  var isDeviceOnlyAuthSupported: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isDeviceOnlyAuthSupported: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Specifies the fallback application type as public client, such as an installed application running on a mobile device.
@@ -76,49 +76,49 @@ trait Application extends DirectoryObject {
     * without specifying a redirect URI). In those cases Azure AD will interpret the application type based on the value of
     * this property.
     */
-  var isFallbackPublicClient: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isFallbackPublicClient: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The collection of key credentials associated with the application Not nullable.
-  var keyCredentials: js.UndefOr[js.Array[KeyCredential]] = js.native
+  var keyCredentials: js.UndefOr[js.Array[KeyCredential]] = js.undefined
   
   // The main logo for the application. Not nullable.
-  var logo: js.UndefOr[js.Any] = js.native
+  var logo: js.UndefOr[js.Any] = js.undefined
   
-  var notes: js.UndefOr[NullableOption[String]] = js.native
+  var notes: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var oauth2RequirePostResponse: js.UndefOr[Boolean] = js.native
+  var oauth2RequirePostResponse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Application developers can configure optional claims in their Azure AD apps to specify which claims they want in tokens
     * sent to their application by the Microsoft security token service. See provide optional claims to your Azure AD app for
     * more information.
     */
-  var optionalClaims: js.UndefOr[NullableOption[OptionalClaims]] = js.native
+  var optionalClaims: js.UndefOr[NullableOption[OptionalClaims]] = js.undefined
   
   /**
     * Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify
     * this object. Requires version 2013-11-08 or newer. Read-only. Nullable.
     */
-  var owners: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var owners: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   // Specifies parental control settings for an application.
-  var parentalControlSettings: js.UndefOr[NullableOption[ParentalControlSettings]] = js.native
+  var parentalControlSettings: js.UndefOr[NullableOption[ParentalControlSettings]] = js.undefined
   
   // The collection of password credentials associated with the application. Not nullable.
-  var passwordCredentials: js.UndefOr[js.Array[PasswordCredential]] = js.native
+  var passwordCredentials: js.UndefOr[js.Array[PasswordCredential]] = js.undefined
   
   // Specifies settings for installed clients such as desktop or mobile devices.
-  var publicClient: js.UndefOr[NullableOption[PublicClientApplication]] = js.native
+  var publicClient: js.UndefOr[NullableOption[PublicClientApplication]] = js.undefined
   
   // The verified publisher domain for the application. Read-only.
-  var publisherDomain: js.UndefOr[NullableOption[String]] = js.native
+  var publisherDomain: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Specifies resources that this application requires access to and the set of OAuth permission scopes and application
     * roles that it needs under each of those resources. This pre-configuration of required resource access drives the
     * consent experience. Not nullable.
     */
-  var requiredResourceAccess: js.UndefOr[js.Array[RequiredResourceAccess]] = js.native
+  var requiredResourceAccess: js.UndefOr[js.Array[RequiredResourceAccess]] = js.undefined
   
   /**
     * Specifies the Microsoft accounts that are supported for the current application. Supported values are:AzureADMyOrg:
@@ -127,24 +127,24 @@ trait Application extends DirectoryObject {
     * (multi-tenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account
     * in any organization’s Azure AD tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
     */
-  var signInAudience: js.UndefOr[NullableOption[String]] = js.native
+  var signInAudience: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Custom strings that can be used to categorize and identify the application. Not nullable.
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the
     * tokens it emits by using the key this property points to. The application code that receives the encrypted token must
     * use the matching private key to decrypt the token before it can be used for the signed-in user.
     */
-  var tokenEncryptionKeyId: js.UndefOr[NullableOption[String]] = js.native
+  var tokenEncryptionKeyId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var tokenIssuancePolicies: js.UndefOr[NullableOption[js.Array[TokenIssuancePolicy]]] = js.native
+  var tokenIssuancePolicies: js.UndefOr[NullableOption[js.Array[TokenIssuancePolicy]]] = js.undefined
   
-  var tokenLifetimePolicies: js.UndefOr[NullableOption[js.Array[TokenLifetimePolicy]]] = js.native
+  var tokenLifetimePolicies: js.UndefOr[NullableOption[js.Array[TokenLifetimePolicy]]] = js.undefined
   
   // Specifies settings for a web application.
-  var web: js.UndefOr[NullableOption[WebApplication]] = js.native
+  var web: js.UndefOr[NullableOption[WebApplication]] = js.undefined
 }
 object Application {
   

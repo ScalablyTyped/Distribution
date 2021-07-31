@@ -3,10 +3,8 @@ package typings.awsSdkBuildTypes.customizationMod
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultValue extends StObject {
   
   /**
@@ -16,16 +14,16 @@ trait DefaultValue extends StObject {
     * If an imported type is used, it must be referred to as a property of the
     * imported package.
     */
-  var expression: String = js.native
+  var expression: String
   
-  var `type`: value = js.native
+  var `type`: value
 }
 object DefaultValue {
   
   @scala.inline
-  def apply(expression: String, `type`: value): DefaultValue = {
+  def apply(expression: String): DefaultValue = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("value")
     __obj.asInstanceOf[DefaultValue]
   }
   

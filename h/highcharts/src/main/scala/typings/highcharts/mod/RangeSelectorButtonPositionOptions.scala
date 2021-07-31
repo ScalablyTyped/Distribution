@@ -2,27 +2,25 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangeSelectorButtonPositionOptions extends StObject {
   
   /**
     * (Highstock, Gantt) The alignment of the input box. Allowed properties are
     * `left`, `center`, `right`.
     */
-  var align: js.UndefOr[AlignValue] = js.native
+  var align: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Highstock, Gantt) X offset of the button row.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) Y offset of the button row.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object RangeSelectorButtonPositionOptions {
   

@@ -5,75 +5,60 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerUtilsMod {
   
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "cloneElement")
+  @JSImport("@ionic/core/dist/types/components/header/header.utils", JSImport.Namespace)
   @js.native
-  def cloneElement(tagName: String): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "createHeaderIndex")
-  @js.native
-  def createHeaderIndex(): js.UndefOr[HeaderIndex] = js.native
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "createHeaderIndex")
-  @js.native
-  def createHeaderIndex(headerEl: HTMLElement): js.UndefOr[HeaderIndex] = js.native
+  @scala.inline
+  def cloneElement(tagName: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(tagName.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "handleContentScroll")
-  @js.native
-  def handleContentScroll(scrollEl: HTMLElement, scrollHeaderIndex: HeaderIndex, contentEl: HTMLElement): Unit = js.native
+  @scala.inline
+  def createHeaderIndex(): js.UndefOr[HeaderIndex] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHeaderIndex")().asInstanceOf[js.UndefOr[HeaderIndex]]
+  @scala.inline
+  def createHeaderIndex(headerEl: HTMLElement): js.UndefOr[HeaderIndex] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHeaderIndex")(headerEl.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[HeaderIndex]]
   
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "handleToolbarIntersection")
-  @js.native
-  def handleToolbarIntersection(ev: js.Any, mainHeaderIndex: HeaderIndex, scrollHeaderIndex: HeaderIndex): Unit = js.native
+  @scala.inline
+  def handleContentScroll(scrollEl: HTMLElement, scrollHeaderIndex: HeaderIndex, contentEl: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleContentScroll")(scrollEl.asInstanceOf[js.Any], scrollHeaderIndex.asInstanceOf[js.Any], contentEl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "scaleLargeTitles")
-  @js.native
-  def scaleLargeTitles(): Unit = js.native
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "scaleLargeTitles")
-  @js.native
-  def scaleLargeTitles(toolbars: js.UndefOr[scala.Nothing], scale: js.UndefOr[scala.Nothing], transition: Boolean): Unit = js.native
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "scaleLargeTitles")
-  @js.native
-  def scaleLargeTitles(toolbars: js.UndefOr[scala.Nothing], scale: Double): Unit = js.native
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "scaleLargeTitles")
-  @js.native
-  def scaleLargeTitles(toolbars: js.UndefOr[scala.Nothing], scale: Double, transition: Boolean): Unit = js.native
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "scaleLargeTitles")
-  @js.native
-  def scaleLargeTitles(toolbars: js.Array[ToolbarIndex]): Unit = js.native
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "scaleLargeTitles")
-  @js.native
-  def scaleLargeTitles(toolbars: js.Array[ToolbarIndex], scale: js.UndefOr[scala.Nothing], transition: Boolean): Unit = js.native
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "scaleLargeTitles")
-  @js.native
-  def scaleLargeTitles(toolbars: js.Array[ToolbarIndex], scale: Double): Unit = js.native
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "scaleLargeTitles")
-  @js.native
-  def scaleLargeTitles(toolbars: js.Array[ToolbarIndex], scale: Double, transition: Boolean): Unit = js.native
+  @scala.inline
+  def handleToolbarIntersection(ev: js.Any, mainHeaderIndex: HeaderIndex, scrollHeaderIndex: HeaderIndex): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleToolbarIntersection")(ev.asInstanceOf[js.Any], mainHeaderIndex.asInstanceOf[js.Any], scrollHeaderIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "setHeaderActive")
-  @js.native
-  def setHeaderActive(headerIndex: HeaderIndex): Unit = js.native
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "setHeaderActive")
-  @js.native
-  def setHeaderActive(headerIndex: HeaderIndex, active: Boolean): Unit = js.native
+  @scala.inline
+  def scaleLargeTitles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLargeTitles")().asInstanceOf[Unit]
+  @scala.inline
+  def scaleLargeTitles(toolbars: js.Array[ToolbarIndex]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLargeTitles")(toolbars.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def scaleLargeTitles(toolbars: js.Array[ToolbarIndex], scale: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLargeTitles")(toolbars.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def scaleLargeTitles(toolbars: js.Array[ToolbarIndex], scale: Double, transition: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLargeTitles")(toolbars.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], transition.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def scaleLargeTitles(toolbars: js.Array[ToolbarIndex], scale: Unit, transition: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLargeTitles")(toolbars.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], transition.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def scaleLargeTitles(toolbars: Unit, scale: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLargeTitles")(toolbars.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def scaleLargeTitles(toolbars: Unit, scale: Double, transition: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLargeTitles")(toolbars.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], transition.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def scaleLargeTitles(toolbars: Unit, scale: Unit, transition: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLargeTitles")(toolbars.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], transition.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "setToolbarBackgroundOpacity")
-  @js.native
-  def setToolbarBackgroundOpacity(toolbar: ToolbarIndex): Unit = js.native
-  @JSImport("@ionic/core/dist/types/components/header/header.utils", "setToolbarBackgroundOpacity")
-  @js.native
-  def setToolbarBackgroundOpacity(toolbar: ToolbarIndex, opacity: Double): Unit = js.native
+  @scala.inline
+  def setHeaderActive(headerIndex: HeaderIndex): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHeaderActive")(headerIndex.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setHeaderActive(headerIndex: HeaderIndex, active: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHeaderActive")(headerIndex.asInstanceOf[js.Any], active.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def setToolbarBackgroundOpacity(toolbar: ToolbarIndex): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setToolbarBackgroundOpacity")(toolbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setToolbarBackgroundOpacity(toolbar: ToolbarIndex, opacity: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setToolbarBackgroundOpacity")(toolbar.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait HeaderIndex extends StObject {
     
-    var el: HTMLElement = js.native
+    var el: HTMLElement
     
-    var toolbars: js.Array[js.Any | ToolbarIndex] = js.native
+    var toolbars: js.Array[js.Any | ToolbarIndex]
   }
   object HeaderIndex {
     
@@ -97,18 +82,17 @@ object headerUtilsMod {
     }
   }
   
-  @js.native
   trait ToolbarIndex extends StObject {
     
-    var background: HTMLElement = js.native
+    var background: HTMLElement
     
-    var el: HTMLElement = js.native
+    var el: HTMLElement
     
-    var innerTitleEl: HTMLElement = js.native
+    var innerTitleEl: HTMLElement
     
-    var ionButtonsEl: js.Array[js.Any | HTMLElement] = js.native
+    var ionButtonsEl: js.Array[js.Any | HTMLElement]
     
-    var ionTitleEl: js.UndefOr[HTMLIonTitleElement] = js.native
+    var ionTitleEl: js.UndefOr[HTMLIonTitleElement] = js.undefined
   }
   object ToolbarIndex {
     

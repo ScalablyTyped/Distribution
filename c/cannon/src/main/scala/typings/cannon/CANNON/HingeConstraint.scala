@@ -2,25 +2,25 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HingeConstraint extends Constraint {
+trait HingeConstraint
+  extends StObject
+     with Constraint {
   
-  def disableMotor(): Unit = js.native
+  def disableMotor(): Unit
   
-  def enableMotor(): Unit = js.native
+  def enableMotor(): Unit
   
-  var motorEnabled: Boolean = js.native
+  var motorEnabled: Boolean
   
-  var motorEquation: RotationalMotorEquation = js.native
+  var motorEquation: RotationalMotorEquation
   
-  var motorMaxForce: Double = js.native
+  var motorMaxForce: Double
   
-  var motorMinForce: Double = js.native
+  var motorMinForce: Double
   
-  var motorTargetVelocity: Double = js.native
+  var motorTargetVelocity: Double
 }
 object HingeConstraint {
   
@@ -33,7 +33,7 @@ object HingeConstraint {
     disableMotor: () => Unit,
     enable: () => Unit,
     enableMotor: () => Unit,
-    equations: js.Array[_],
+    equations: js.Array[js.Any],
     id: Double,
     motorEnabled: Boolean,
     motorEquation: RotationalMotorEquation,

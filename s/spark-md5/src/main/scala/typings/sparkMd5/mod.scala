@@ -3,14 +3,18 @@ package typings.sparkMd5
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("spark-md5", JSImport.Namespace)
   @js.native
-  class ^ () extends SparkMD5
+  class ^ ()
+    extends StObject
+       with SparkMD5
+  @JSImport("spark-md5", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("spark-md5", "ArrayBuffer")
   @js.native
@@ -31,30 +35,28 @@ object mod {
   }
   object ArrayBuffer {
     
+    @JSImport("spark-md5", "ArrayBuffer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* static member */
-    @JSImport("spark-md5", "ArrayBuffer.hash")
-    @js.native
-    def hash(arr: JsArrayBuffer): String = js.native
-    @JSImport("spark-md5", "ArrayBuffer.hash")
-    @js.native
-    def hash(arr: JsArrayBuffer, raw: Boolean): String = js.native
+    @scala.inline
+    def hash(arr: JsArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def hash(arr: JsArrayBuffer, raw: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(arr.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   /* static member */
-  @JSImport("spark-md5", "hash")
-  @js.native
-  def hash(str: String): String = js.native
-  @JSImport("spark-md5", "hash")
-  @js.native
-  def hash(str: String, raw: Boolean): String = js.native
+  @scala.inline
+  def hash(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hash(str: String, raw: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @JSImport("spark-md5", "hashBinary")
-  @js.native
-  def hashBinary(content: String): String = js.native
-  @JSImport("spark-md5", "hashBinary")
-  @js.native
-  def hashBinary(content: String, raw: Boolean): String = js.native
+  @scala.inline
+  def hashBinary(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashBinary")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hashBinary(content: String, raw: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hashBinary")(content.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type JsArrayBuffer = typings.std.ArrayBuffer
   
@@ -77,14 +79,13 @@ object mod {
     def setState(state: State): State = js.native
   }
   
-  @js.native
   trait State extends StObject {
     
-    var buff: Uint8Array = js.native
+    var buff: Uint8Array
     
-    var hash: js.Array[Double] = js.native
+    var hash: js.Array[Double]
     
-    var length: Double = js.native
+    var length: Double
   }
   object State {
     

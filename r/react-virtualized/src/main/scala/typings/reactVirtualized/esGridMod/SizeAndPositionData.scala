@@ -2,15 +2,13 @@ package typings.reactVirtualized.esGridMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeAndPositionData extends StObject {
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var size: Double = js.native
+  var size: Double
 }
 object SizeAndPositionData {
   

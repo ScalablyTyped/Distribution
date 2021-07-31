@@ -2,20 +2,18 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // hereNow
-@js.native
 trait HereNowParameters extends StObject {
   
-  var channelGroups: js.UndefOr[js.Array[String]] = js.native
+  var channelGroups: js.UndefOr[js.Array[String]] = js.undefined
   
-  var channels: js.UndefOr[js.Array[String]] = js.native
+  var channels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var includeState: js.UndefOr[Boolean] = js.native
+  var includeState: js.UndefOr[Boolean] = js.undefined
   
-  var includeUUIDs: js.UndefOr[Boolean] = js.native
+  var includeUUIDs: js.UndefOr[Boolean] = js.undefined
 }
 object HereNowParameters {
   

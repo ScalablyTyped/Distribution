@@ -4,46 +4,55 @@ import typings.atlassianCrowdClient.anon.Active
 import typings.atlassianCrowdClient.atlassianCrowdClientStrings.GROUP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupMod {
   
   @JSImport("atlassian-crowd-client/lib/models/group", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Group {
+  class ^ protected ()
+    extends StObject
+       with Group {
     def this(groupname: String) = this()
     def this(groupname: String, description: String) = this()
-    def this(groupname: String, description: js.UndefOr[scala.Nothing], active: Boolean) = this()
     def this(groupname: String, description: String, active: Boolean) = this()
-    def this(
-      groupname: String,
-      description: js.UndefOr[scala.Nothing],
-      active: js.UndefOr[scala.Nothing],
-      attributes: js.Any
-    ) = this()
-    def this(groupname: String, description: js.UndefOr[scala.Nothing], active: Boolean, attributes: js.Any) = this()
-    def this(groupname: String, description: String, active: js.UndefOr[scala.Nothing], attributes: js.Any) = this()
+    def this(groupname: String, description: Unit, active: Boolean) = this()
     def this(groupname: String, description: String, active: Boolean, attributes: js.Any) = this()
+    def this(groupname: String, description: String, active: Unit, attributes: js.Any) = this()
+    def this(groupname: String, description: Unit, active: Boolean, attributes: js.Any) = this()
+    def this(groupname: String, description: Unit, active: Unit, attributes: js.Any) = this()
+    
+    /* CompleteClass */
+    override val active: Boolean = js.native
+    
+    /* CompleteClass */
+    override val description: String = js.native
+    
+    /* CompleteClass */
+    override val groupname: String = js.native
+    
+    /* CompleteClass */
+    override def toCrowd(): GroupObj = js.native
   }
+  @JSImport("atlassian-crowd-client/lib/models/group", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("atlassian-crowd-client/lib/models/group", "fromCrowd")
-  @js.native
-  def fromCrowd(obj: Active): Group = js.native
+  @scala.inline
+  def fromCrowd(obj: Active): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(obj.asInstanceOf[js.Any]).asInstanceOf[Group]
   
-  @js.native
   trait Group extends StObject {
     
-    val active: Boolean = js.native
+    val active: Boolean
     
-    val attributes: js.UndefOr[js.Any] = js.native
+    val attributes: js.UndefOr[js.Any] = js.undefined
     
-    val description: String = js.native
+    val description: String
     
-    val groupname: String = js.native
+    val groupname: String
     
-    def toCrowd(): GroupObj = js.native
+    def toCrowd(): GroupObj
   }
   object Group {
     
@@ -76,23 +85,22 @@ object groupMod {
     }
   }
   
-  @js.native
   trait GroupObj extends StObject {
     
-    val active: Boolean = js.native
+    val active: Boolean
     
-    val description: String = js.native
+    val description: String
     
-    val name: String = js.native
+    val name: String
     
-    val `type`: GROUP = js.native
+    val `type`: GROUP
   }
   object GroupObj {
     
     @scala.inline
-    def apply(active: Boolean, description: String, name: String, `type`: GROUP): GroupObj = {
+    def apply(active: Boolean, description: String, name: String): GroupObj = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("GROUP")
       __obj.asInstanceOf[GroupObj]
     }
     

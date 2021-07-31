@@ -2,19 +2,17 @@ package typings.webvrApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VRFieldOfView extends StObject {
   
-  val downDegrees: Double = js.native
+  val downDegrees: Double
   
-  val leftDegrees: Double = js.native
+  val leftDegrees: Double
   
-  val rightDegrees: Double = js.native
+  val rightDegrees: Double
   
-  val upDegrees: Double = js.native
+  val upDegrees: Double
 }
 object VRFieldOfView {
   

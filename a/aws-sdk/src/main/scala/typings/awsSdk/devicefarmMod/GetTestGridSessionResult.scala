@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTestGridSessionResult extends StObject {
   
   /**
     * The TestGridSession that was requested.
     */
-  var testGridSession: js.UndefOr[TestGridSession] = js.native
+  var testGridSession: js.UndefOr[TestGridSession] = js.undefined
 }
 object GetTestGridSessionResult {
   

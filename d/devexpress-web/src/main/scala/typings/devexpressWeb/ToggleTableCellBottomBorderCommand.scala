@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to toggle bottom borders for selected cells on/off.
   */
-@js.native
-trait ToggleTableCellBottomBorderCommand extends CommandWithBooleanStateBase {
+trait ToggleTableCellBottomBorderCommand
+  extends StObject
+     with CommandWithBooleanStateBase {
   
   /**
     * Executes the ToggleTableCellBottomBorderCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object ToggleTableCellBottomBorderCommand {
   

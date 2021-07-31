@@ -2,17 +2,15 @@ package typings.simpleStatistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait B extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var m: Double = js.native
+    var m: Double
   }
   object B {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait M extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var m: Double = js.native
+    var m: Double
   }
   object M {
     

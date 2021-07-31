@@ -3,15 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.MACOS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsGetWorkflowRunUsageResponseData extends StObject {
   
-  var billable: MACOS = js.native
+  var billable: MACOS
   
-  var run_duration_ms: Double = js.native
+  var run_duration_ms: Double
 }
 object ActionsGetWorkflowRunUsageResponseData {
   

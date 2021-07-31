@@ -5,35 +5,125 @@ import typings.ol.extentMod.Extent
 import typings.ol.unitsMod.Units
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectionMod {
   
   @JSImport("ol/proj/Projection", JSImport.Default)
   @js.native
-  class default protected () extends Projection {
+  class default protected ()
+    extends StObject
+       with Projection {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def canWrapX(): Boolean = js.native
+    
+    /**
+      * Get the axis orientation of this projection.
+      * Example values are:
+      * enu - the default easting, northing, elevation.
+      * neu - northing, easting, up - useful for "lat/long" geographic coordinates,
+      *     or south orientated transverse mercator.
+      * wnu - westing, northing, up - some planetary coordinate systems have
+      *     "west positive" coordinate systems
+      */
+    /* CompleteClass */
+    override def getAxisOrientation(): String = js.native
+    
+    /**
+      * Get the code for this projection, e.g. 'EPSG:4326'.
+      */
+    /* CompleteClass */
+    override def getCode(): String = js.native
+    
+    /* CompleteClass */
+    override def getDefaultTileGrid(): typings.ol.tilegridTileGridMod.default = js.native
+    
+    /**
+      * Get the validity extent for this projection.
+      */
+    /* CompleteClass */
+    override def getExtent(): Extent = js.native
+    
+    /**
+      * Get the amount of meters per unit of this projection.  If the projection is
+      * not configured with metersPerUnit or a units identifier, the return is
+      * undefined.
+      */
+    /* CompleteClass */
+    override def getMetersPerUnit(): js.UndefOr[Double] = js.native
+    
+    /**
+      * Get the custom point resolution function for this projection (if set).
+      */
+    /* CompleteClass */
+    override def getPointResolutionFunc(): js.Function2[/* p0 */ Double, /* p1 */ Coordinate, js.UndefOr[Double]] = js.native
+    
+    /**
+      * Get the units of this projection.
+      */
+    /* CompleteClass */
+    override def getUnits(): Units = js.native
+    
+    /**
+      * Get the world extent for this projection.
+      */
+    /* CompleteClass */
+    override def getWorldExtent(): Extent = js.native
+    
+    /**
+      * Is this projection a global projection which spans the whole world?
+      */
+    /* CompleteClass */
+    override def isGlobal(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def setDefaultTileGrid(tileGrid: typings.ol.tilegridTileGridMod.default): Unit = js.native
+    
+    /**
+      * Set the validity extent for this projection.
+      */
+    /* CompleteClass */
+    override def setExtent(extent: Extent): Unit = js.native
+    
+    /**
+      * Set the getPointResolution function (see {@link module:ol/proj~getPointResolution}
+      * for this projection.
+      */
+    /* CompleteClass */
+    override def setGetPointResolution(func: js.Function2[/* p0 */ Double, /* p1 */ Coordinate, Double]): Unit = js.native
+    
+    /**
+      * Set if the projection is a global projection which spans the whole world
+      */
+    /* CompleteClass */
+    override def setGlobal(global: Boolean): Unit = js.native
+    
+    /**
+      * Set the world extent for this projection.
+      */
+    /* CompleteClass */
+    override def setWorldExtent(worldExtent: Extent): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var axisOrientation: js.UndefOr[String] = js.native
+    var axisOrientation: js.UndefOr[String] = js.undefined
     
-    var code: String = js.native
+    var code: String
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var getPointResolution: js.UndefOr[js.Function2[/* p0 */ Double, /* p1 */ Coordinate, Double]] = js.native
+    var getPointResolution: js.UndefOr[js.Function2[/* p0 */ Double, /* p1 */ Coordinate, Double]] = js.undefined
     
-    var global: js.UndefOr[Boolean] = js.native
+    var global: js.UndefOr[Boolean] = js.undefined
     
-    var metersPerUnit: js.UndefOr[Double] = js.native
+    var metersPerUnit: js.UndefOr[Double] = js.undefined
     
-    var units: js.UndefOr[Units | String] = js.native
+    var units: js.UndefOr[Units | String] = js.undefined
     
-    var worldExtent: js.UndefOr[Extent] = js.native
+    var worldExtent: js.UndefOr[Extent] = js.undefined
   }
   object Options {
     
@@ -93,10 +183,9 @@ object projectionMod {
     }
   }
   
-  @js.native
   trait Projection extends StObject {
     
-    def canWrapX(): Boolean = js.native
+    def canWrapX(): Boolean
     
     /**
       * Get the axis orientation of this projection.
@@ -107,69 +196,69 @@ object projectionMod {
       * wnu - westing, northing, up - some planetary coordinate systems have
       *     "west positive" coordinate systems
       */
-    def getAxisOrientation(): String = js.native
+    def getAxisOrientation(): String
     
     /**
       * Get the code for this projection, e.g. 'EPSG:4326'.
       */
-    def getCode(): String = js.native
+    def getCode(): String
     
-    def getDefaultTileGrid(): typings.ol.tilegridTileGridMod.default = js.native
+    def getDefaultTileGrid(): typings.ol.tilegridTileGridMod.default
     
     /**
       * Get the validity extent for this projection.
       */
-    def getExtent(): Extent = js.native
+    def getExtent(): Extent
     
     /**
       * Get the amount of meters per unit of this projection.  If the projection is
       * not configured with metersPerUnit or a units identifier, the return is
       * undefined.
       */
-    def getMetersPerUnit(): js.UndefOr[Double] = js.native
+    def getMetersPerUnit(): js.UndefOr[Double]
     
     /**
       * Get the custom point resolution function for this projection (if set).
       */
-    def getPointResolutionFunc(): js.Function2[/* p0 */ Double, /* p1 */ Coordinate, js.UndefOr[Double]] = js.native
+    def getPointResolutionFunc(): js.Function2[/* p0 */ Double, /* p1 */ Coordinate, js.UndefOr[Double]]
     
     /**
       * Get the units of this projection.
       */
-    def getUnits(): Units = js.native
+    def getUnits(): Units
     
     /**
       * Get the world extent for this projection.
       */
-    def getWorldExtent(): Extent = js.native
+    def getWorldExtent(): Extent
     
     /**
       * Is this projection a global projection which spans the whole world?
       */
-    def isGlobal(): Boolean = js.native
+    def isGlobal(): Boolean
     
-    def setDefaultTileGrid(tileGrid: typings.ol.tilegridTileGridMod.default): Unit = js.native
+    def setDefaultTileGrid(tileGrid: typings.ol.tilegridTileGridMod.default): Unit
     
     /**
       * Set the validity extent for this projection.
       */
-    def setExtent(extent: Extent): Unit = js.native
+    def setExtent(extent: Extent): Unit
     
     /**
       * Set the getPointResolution function (see {@link module:ol/proj~getPointResolution}
       * for this projection.
       */
-    def setGetPointResolution(func: js.Function2[/* p0 */ Double, /* p1 */ Coordinate, Double]): Unit = js.native
+    def setGetPointResolution(func: js.Function2[/* p0 */ Double, /* p1 */ Coordinate, Double]): Unit
     
     /**
       * Set if the projection is a global projection which spans the whole world
       */
-    def setGlobal(global: Boolean): Unit = js.native
+    def setGlobal(global: Boolean): Unit
     
     /**
       * Set the world extent for this projection.
       */
-    def setWorldExtent(worldExtent: Extent): Unit = js.native
+    def setWorldExtent(worldExtent: Extent): Unit
   }
   object Projection {
     

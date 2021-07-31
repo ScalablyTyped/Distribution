@@ -2,27 +2,25 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageMethodeModelInfoReturn extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  var length: Double = js.native
+  var length: Double
   
-  var page: Double = js.native
+  var page: Double
   
-  var pages: Double = js.native
+  var pages: Double
   
-  var recordsDisplay: Double = js.native
+  var recordsDisplay: Double
   
-  var recordsTotal: Double = js.native
+  var recordsTotal: Double
   
-  var serverSide: Boolean = js.native
+  var serverSide: Boolean
   
-  var start: Double = js.native
+  var start: Double
 }
 object PageMethodeModelInfoReturn {
   

@@ -2,42 +2,40 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a background task to be registered with the system. */
-@js.native
 trait BackgroundTaskBuilder extends StObject {
   
   /**
     * Adds a condition to a background task.
     * @param condition An instance of a SystemCondition object.
     */
-  def addCondition(condition: IBackgroundCondition): Unit = js.native
+  def addCondition(condition: IBackgroundCondition): Unit
   
   /** Indicates whether the background task will be canceled if at least one of its required conditions is no longer met. */
-  var cancelOnConditionLoss: Boolean = js.native
+  var cancelOnConditionLoss: Boolean
   
   /** This API is not available to all Windows/Windows Phone apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var isNetworkRequested: Boolean = js.native
+  var isNetworkRequested: Boolean
   
   /** Gets or sets the name of a background task. */
-  var name: String = js.native
+  var name: String
   
   /**
     * Registers a background task with the system.
     * @return An instance of a BackgroundTaskRegistration object.
     */
-  def register(): BackgroundTaskRegistration = js.native
+  def register(): BackgroundTaskRegistration
   
   /**
     * Sets the event trigger for a background task.
     * @param trigger An instance of an event trigger object such as a SystemTrigger , TimeTrigger , or NetworkOperatorNotificationTrigger .
     */
-  def setTrigger(trigger: IBackgroundTrigger): Unit = js.native
+  def setTrigger(trigger: IBackgroundTrigger): Unit
   
   /** Gets or sets the class that performs the work of a background task. */
-  var taskEntryPoint: String = js.native
+  var taskEntryPoint: String
 }
 object BackgroundTaskBuilder {
   

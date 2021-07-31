@@ -4,33 +4,31 @@ import typings.postmanCollection.anon.Key
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CookieDefinition extends StObject {
   
-  var domain: String = js.native
+  var domain: String
   
-  var expires: js.UndefOr[String | Date | Double] = js.native
+  var expires: js.UndefOr[String | Date | Double] = js.undefined
   
-  var extensions: js.UndefOr[js.Array[Key]] = js.native
+  var extensions: js.UndefOr[js.Array[Key]] = js.undefined
   
-  var hostOnly: js.UndefOr[Boolean] = js.native
+  var hostOnly: js.UndefOr[Boolean] = js.undefined
   
-  var httpOnly: js.UndefOr[Boolean] = js.native
+  var httpOnly: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var maxAge: js.UndefOr[Double] = js.native
+  var maxAge: js.UndefOr[Double] = js.undefined
   
-  var path: String = js.native
+  var path: String
   
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
-  var session: js.UndefOr[Boolean] = js.native
+  var session: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object CookieDefinition {
   

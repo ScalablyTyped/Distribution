@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsResponse extends StObject {
   
   /** The token to retrieve the next page of tags, or empty if there are no more tags to return. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The tags returned. */
-  var tags: js.UndefOr[js.Array[Tag]] = js.native
+  var tags: js.UndefOr[js.Array[Tag]] = js.undefined
 }
 object ListTagsResponse {
   

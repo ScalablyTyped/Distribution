@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.BatchEditRowDeleting event.
   */
-@js.native
-trait ASPxClientGridViewBatchEditRowDeletingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientGridViewBatchEditRowDeletingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets the row's key.
     */
-  var key: js.Any = js.native
+  var key: js.Any
   
   /**
     * Gets a hashtable that maintains information about deleted cells.
     */
-  var rowValues: js.Any = js.native
+  var rowValues: js.Any
   
   /**
     * Gets the processed row's visible index.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
 object ASPxClientGridViewBatchEditRowDeletingEventArgs {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudshell.gapi.client.cloudshell
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddPublicKeyResponse extends StObject {
   
   /** Key that was added to the environment. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
 }
 object AddPublicKeyResponse {
   

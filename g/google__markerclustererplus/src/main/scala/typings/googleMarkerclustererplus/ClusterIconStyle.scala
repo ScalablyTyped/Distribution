@@ -2,7 +2,6 @@ package typings.googleMarkerclustererplus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to the {@link MarkerClusterer} constructor. The element in this array that is used to
   * style the cluster icon is determined by calling the <code>calculator</code> function.
   */
-@js.native
 trait ClusterIconStyle extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait ClusterIconStyle extends StObject {
     * <code>xoffset</code> increases to the right of the top-left corner of the icon. The default
     * anchor position is the center of the cluster icon.
     */
-  var anchorIcon: js.UndefOr[js.Array[Double]] = js.native
+  var anchorIcon: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * [anchorText] The position (in pixels) from the center of the cluster icon to
@@ -28,7 +26,7 @@ trait ClusterIconStyle extends StObject {
     * where <code>yoffset</code> increases as you go down from center and <code>xoffset</code>
     * increases to the right of center. The default is <code>[0, 0]</code>.
     */
-  var anchorText: js.UndefOr[js.Array[Double]] = js.native
+  var anchorText: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * [backgroundPosition="0 0"] The position of the cluster icon image
@@ -37,46 +35,46 @@ trait ClusterIconStyle extends StObject {
     * this property appropriately when the image defined by <code>url</code> represents a sprite
     * containing multiple images. Note that the position <i>must</i> be specified in px units.
     */
-  var backgroundPosition: js.UndefOr[java.lang.String] = js.native
+  var backgroundPosition: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * [fontFamily="Arial,sans-serif"] The value of the CSS <code>font-family</code>
     *  property for the label text shown on the cluster icon.
     */
-  var fontFamily: js.UndefOr[java.lang.String] = js.native
+  var fontFamily: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * [fontStyle="normal"] The value of the CSS <code>font-style</code>
     *  property for the label text shown on the cluster icon.
     */
-  var fontStyle: js.UndefOr[java.lang.String] = js.native
+  var fontStyle: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * [fontWeight="bold"] The value of the CSS <code>font-weight</code>
     * property for the label text shown on the cluster icon.
     */
-  var fontWeight: js.UndefOr[java.lang.String] = js.native
+  var fontWeight: js.UndefOr[java.lang.String] = js.undefined
   
   /** Height The display height (in pixels) of the cluster icon. Required. */
-  var height: Double = js.native
+  var height: Double
   
   /** [textColor="black"] The color of the label text shown on the cluster icon. */
-  var textColor: js.UndefOr[java.lang.String] = js.native
+  var textColor: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * [textDecoration="none"] The value of the CSS <code>text-decoration</code>
     * property for the label text shown on the cluster icon.
     */
-  var textDecoration: js.UndefOr[java.lang.String] = js.native
+  var textDecoration: js.UndefOr[java.lang.String] = js.undefined
   
   /** textSize=11] The size (in pixels) of the label text shown on the cluster icon. */
-  var textSize: js.UndefOr[Double] = js.native
+  var textSize: js.UndefOr[Double] = js.undefined
   
   /** The URL of the cluster icon image file. Required. */
-  var url: java.lang.String = js.native
+  var url: java.lang.String
   
   /** Width The display width (in pixels) of the cluster icon. Required. */
-  var width: Double = js.native
+  var width: Double
 }
 object ClusterIconStyle {
   

@@ -4,26 +4,24 @@ import typings.localtunnel.anon.TunnelConfigportnumber
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(opts: TunnelConfigportnumber, callback: TunnelCallback): Tunnel = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Tunnel]
+  @scala.inline
+  def apply(port: Double): js.Promise[Tunnel] = ^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tunnel]]
+  @scala.inline
+  def apply(port: Double, opts: TunnelConfig): js.Promise[Tunnel] = (^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tunnel]]
+  @scala.inline
+  def apply(port: Double, opts: TunnelConfig, callback: TunnelCallback): Tunnel = (^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Tunnel]
+  @scala.inline
+  def apply(port: TunnelConfigportnumber): js.Promise[Tunnel] = ^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tunnel]]
+  
   @JSImport("localtunnel", JSImport.Namespace)
   @js.native
-  def apply(opts: TunnelConfigportnumber, callback: TunnelCallback): Tunnel = js.native
-  @JSImport("localtunnel", JSImport.Namespace)
-  @js.native
-  def apply(port: Double): js.Promise[Tunnel] = js.native
-  @JSImport("localtunnel", JSImport.Namespace)
-  @js.native
-  def apply(port: Double, opts: TunnelConfig): js.Promise[Tunnel] = js.native
-  @JSImport("localtunnel", JSImport.Namespace)
-  @js.native
-  def apply(port: Double, opts: TunnelConfig, callback: TunnelCallback): Tunnel = js.native
-  @JSImport("localtunnel", JSImport.Namespace)
-  @js.native
-  def apply(port: TunnelConfigportnumber): js.Promise[Tunnel] = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Tunnel extends EventEmitter {
@@ -46,24 +44,23 @@ object mod {
     def open(): Unit = js.native
   }
   
-  @js.native
   trait TunnelConfig extends StObject {
     
-    var allow_invalid_cert: js.UndefOr[Boolean] = js.native
+    var allow_invalid_cert: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var local_ca: js.UndefOr[String] = js.native
+    var local_ca: js.UndefOr[String] = js.undefined
     
-    var local_cert: js.UndefOr[String] = js.native
+    var local_cert: js.UndefOr[String] = js.undefined
     
-    var local_host: js.UndefOr[String] = js.native
+    var local_host: js.UndefOr[String] = js.undefined
     
-    var local_https: js.UndefOr[Boolean] = js.native
+    var local_https: js.UndefOr[Boolean] = js.undefined
     
-    var local_key: js.UndefOr[String] = js.native
+    var local_key: js.UndefOr[String] = js.undefined
     
-    var subdomain: js.UndefOr[String] = js.native
+    var subdomain: js.UndefOr[String] = js.undefined
   }
   object TunnelConfig {
     

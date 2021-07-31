@@ -3,13 +3,11 @@ package typings.redisInfo.mod
 import typings.redisInfo.mod.Flag.OFF
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationReplicaSyncOffInfo extends StObject {
   
-  var master_sync_in_progress: OFF = js.native
+  var master_sync_in_progress: OFF
 }
 object ReplicationReplicaSyncOffInfo {
   

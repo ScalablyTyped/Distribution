@@ -2,29 +2,27 @@ package typings.unityWebapi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnityMessagingIndicator extends StObject {
   
-  def addAction(name: String, onActionInvoked: js.Function): js.Any = js.native
+  def addAction(name: String, onActionInvoked: js.Function): js.Any
   
-  def clearIndicator(name: String): js.Any = js.native
+  def clearIndicator(name: String): js.Any
   
-  def clearIndicators(): js.Any = js.native
+  def clearIndicators(): js.Any
   
-  def onPresenceChanged(onPresenceChanged: js.Function): js.Any = js.native
+  def onPresenceChanged(onPresenceChanged: js.Function): js.Any
   
   // This is suppose to be readonly, but i'm not sure how to do this
   // in a definition file.
-  var presence: String = js.native
+  var presence: String
   
-  def removeAction(name: String): js.Any = js.native
+  def removeAction(name: String): js.Any
   
-  def removeActions(): js.Any = js.native
+  def removeActions(): js.Any
   
-  def showIndicator(name: String, indicatorProperties: UnityIndicatorProperties): js.Any = js.native
+  def showIndicator(name: String, indicatorProperties: UnityIndicatorProperties): js.Any
 }
 object UnityMessagingIndicator {
   

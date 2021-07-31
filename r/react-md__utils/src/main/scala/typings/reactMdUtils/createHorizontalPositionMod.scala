@@ -7,58 +7,53 @@ import typings.std.ClientRect
 import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createHorizontalPositionMod {
   
-  @JSImport("@react-md/utils/types/positioning/createHorizontalPosition", "createAnchoredCenter")
+  @JSImport("@react-md/utils/types/positioning/createHorizontalPosition", JSImport.Namespace)
   @js.native
-  def createAnchoredCenter(config: FixConfig): XPosition = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-md/utils/types/positioning/createHorizontalPosition", "createAnchoredInnerLeft")
-  @js.native
-  def createAnchoredInnerLeft(config: FixConfig): XPosition = js.native
+  @scala.inline
+  def createAnchoredCenter(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredCenter")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
-  @JSImport("@react-md/utils/types/positioning/createHorizontalPosition", "createAnchoredInnerRight")
-  @js.native
-  def createAnchoredInnerRight(config: FixConfig): XPosition = js.native
+  @scala.inline
+  def createAnchoredInnerLeft(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredInnerLeft")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
-  @JSImport("@react-md/utils/types/positioning/createHorizontalPosition", "createAnchoredLeft")
-  @js.native
-  def createAnchoredLeft(config: FixConfig): XPosition = js.native
+  @scala.inline
+  def createAnchoredInnerRight(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredInnerRight")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
-  @JSImport("@react-md/utils/types/positioning/createHorizontalPosition", "createAnchoredRight")
-  @js.native
-  def createAnchoredRight(config: FixConfig): XPosition = js.native
+  @scala.inline
+  def createAnchoredLeft(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredLeft")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
-  @JSImport("@react-md/utils/types/positioning/createHorizontalPosition", "createEqualWidth")
-  @js.native
-  def createEqualWidth(hasXVwElWidthXMarginVwMarginInitialXContainerRectIsMinWidth: EqualWidthOptions): XPosition = js.native
+  @scala.inline
+  def createAnchoredRight(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredRight")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
-  @JSImport("@react-md/utils/types/positioning/createHorizontalPosition", "createHorizontalPosition")
-  @js.native
-  def createHorizontalPosition(hasXVwVwMarginXMarginWidthElWidthInitialXContainerRectDisableSwapping: Options): XPosition = js.native
+  @scala.inline
+  def createEqualWidth(hasXVwElWidthXMarginVwMarginInitialXContainerRectIsMinWidth: EqualWidthOptions): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createEqualWidth")(hasXVwElWidthXMarginVwMarginInitialXContainerRectIsMinWidth.asInstanceOf[js.Any]).asInstanceOf[XPosition]
+  
+  @scala.inline
+  def createHorizontalPosition(hasXVwVwMarginXMarginWidthElWidthInitialXContainerRectDisableSwapping: Options): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createHorizontalPosition")(hasXVwVwMarginXMarginWidthElWidthInitialXContainerRectDisableSwapping.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
   /* Inlined parent std.Pick<@react-md/utils.@react-md/utils/types/positioning/createHorizontalPosition.Options, 'x' | 'vw' | 'elWidth' | 'xMargin' | 'vwMargin' | 'containerRect' | 'initialX'> */
-  @js.native
   trait EqualWidthOptions extends StObject {
     
-    var containerRect: DOMRect | ClientRect = js.native
+    var containerRect: DOMRect | ClientRect
     
-    var elWidth: Double = js.native
+    var elWidth: Double
     
-    var initialX: js.UndefOr[Double] = js.native
+    var initialX: js.UndefOr[Double] = js.undefined
     
-    var isMinWidth: Boolean = js.native
+    var isMinWidth: Boolean
     
-    var vw: Double = js.native
+    var vw: Double
     
-    var vwMargin: Double = js.native
+    var vwMargin: Double
     
-    var x: HorizontalPosition = js.native
+    var x: HorizontalPosition
     
-    var xMargin: Double = js.native
+    var xMargin: Double
   }
   object EqualWidthOptions {
     
@@ -108,14 +103,15 @@ object createHorizontalPositionMod {
     }
   }
   
-  @js.native
-  trait FixConfig extends XCoordConfig {
+  trait FixConfig
+    extends StObject
+       with XCoordConfig {
     
-    var disableSwapping: Boolean = js.native
+    var disableSwapping: Boolean
     
-    var screenRight: Double = js.native
+    var screenRight: Double
     
-    var vwMargin: Double = js.native
+    var vwMargin: Double
   }
   object FixConfig {
     
@@ -150,26 +146,25 @@ object createHorizontalPositionMod {
     * @private
     */
   /* Inlined parent std.Required<std.Pick<@react-md/utils.@react-md/utils/types/positioning/types.FixedPositionOptions, 'vwMargin' | 'xMargin' | 'width' | 'disableSwapping'>> */
-  @js.native
   trait Options extends StObject {
     
-    var containerRect: DOMRect | ClientRect = js.native
+    var containerRect: DOMRect | ClientRect
     
-    var disableSwapping: Boolean = js.native
+    var disableSwapping: Boolean
     
-    var elWidth: Double = js.native
+    var elWidth: Double
     
-    var initialX: js.UndefOr[Double] = js.native
+    var initialX: js.UndefOr[Double] = js.undefined
     
-    var vw: Double = js.native
+    var vw: Double
     
-    var vwMargin: Double = js.native
+    var vwMargin: Double
     
-    var width: PositionWidth = js.native
+    var width: PositionWidth
     
-    var x: HorizontalPosition = js.native
+    var x: HorizontalPosition
     
-    var xMargin: Double = js.native
+    var xMargin: Double
   }
   object Options {
     
@@ -226,18 +221,17 @@ object createHorizontalPositionMod {
   /**
     * @private
     */
-  @js.native
   trait XPosition extends StObject {
     
-    var actualX: HorizontalPosition = js.native
+    var actualX: HorizontalPosition
     
-    var left: Double = js.native
+    var left: Double
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object XPosition {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLocationSmbRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the SMB location to describe.
     */
-  var LocationArn: typings.awsSdk.datasyncMod.LocationArn = js.native
+  var LocationArn: typings.awsSdk.datasyncMod.LocationArn
 }
 object DescribeLocationSmbRequest {
   

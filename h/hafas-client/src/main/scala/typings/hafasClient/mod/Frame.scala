@@ -2,17 +2,15 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Frame extends StObject {
   
-  var destination: Stop | Location = js.native
+  var destination: Stop | Location
   
-  var origin: Stop | Location = js.native
+  var origin: Stop | Location
   
-  var t: js.UndefOr[Double] = js.native
+  var t: js.UndefOr[Double] = js.undefined
 }
 object Frame {
   

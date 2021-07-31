@@ -5,36 +5,34 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.png
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartScreencastRequest extends StObject {
   
   /**
     * Send every n-th frame.
     */
-  var everyNthFrame: js.UndefOr[integer] = js.native
+  var everyNthFrame: js.UndefOr[integer] = js.undefined
   
   /**
     * Image compression format. (StartScreencastRequestFormat enum)
     */
-  var format: js.UndefOr[jpeg | png] = js.native
+  var format: js.UndefOr[jpeg | png] = js.undefined
   
   /**
     * Maximum screenshot height.
     */
-  var maxHeight: js.UndefOr[integer] = js.native
+  var maxHeight: js.UndefOr[integer] = js.undefined
   
   /**
     * Maximum screenshot width.
     */
-  var maxWidth: js.UndefOr[integer] = js.native
+  var maxWidth: js.UndefOr[integer] = js.undefined
   
   /**
     * Compression quality from range [0..100].
     */
-  var quality: js.UndefOr[integer] = js.native
+  var quality: js.UndefOr[integer] = js.undefined
 }
 object StartScreencastRequest {
   

@@ -15,10 +15,8 @@ import typings.fflate.fflateNumbers.`8`
 import typings.fflate.fflateNumbers.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeflateOptions extends StObject {
   
   /**
@@ -36,7 +34,7 @@ trait DeflateOptions extends StObject {
     * - become 400 kB with level 1 in 10ms
     * - become 320 kB with level 9 in 100ms
     */
-  var level: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.native
+  var level: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.undefined
   
   /**
     * The memory level to use, ranging from 0-12. Increasing this increases speed and compression ratio at the cost of memory.
@@ -47,7 +45,7 @@ trait DeflateOptions extends StObject {
     *
     * The default value is automatically determined based on the size of the input data.
     */
-  var mem: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12`] = js.native
+  var mem: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12`] = js.undefined
 }
 object DeflateOptions {
   

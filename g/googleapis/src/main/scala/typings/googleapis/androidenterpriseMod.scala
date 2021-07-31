@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object androidenterpriseMod {
+  
+  @JSImport("googleapis/build/src/apis/androidenterprise", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -47,12 +50,11 @@ object androidenterpriseMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/androidenterprise", "androidenterprise")
-  @js.native
-  def androidenterprise(options: Options): Androidenterprise = js.native
-  @JSImport("googleapis/build/src/apis/androidenterprise", "androidenterprise")
-  @js.native
-  def androidenterprise_v1(version: v1): Androidenterprise = js.native
+  @scala.inline
+  def androidenterprise(options: Options): Androidenterprise = ^.asInstanceOf[js.Dynamic].applyDynamic("androidenterprise")(options.asInstanceOf[js.Any]).asInstanceOf[Androidenterprise]
+  
+  @scala.inline
+  def androidenterprise_v1(version: v1): Androidenterprise = ^.asInstanceOf[js.Dynamic].applyDynamic("androidenterprise")(version.asInstanceOf[js.Any]).asInstanceOf[Androidenterprise]
   
   object auth extends Shortcut {
     
@@ -83,9 +85,12 @@ object androidenterpriseMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/androidenterprise", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/androidenterprise", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

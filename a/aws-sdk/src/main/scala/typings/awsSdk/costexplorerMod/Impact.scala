@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Impact extends StObject {
   
   /**
     *  The maximum dollar value observed for an anomaly. 
     */
-  var MaxImpact: GenericDouble = js.native
+  var MaxImpact: GenericDouble
   
   /**
     *  The cumulative dollar value observed for an anomaly. 
     */
-  var TotalImpact: js.UndefOr[GenericDouble] = js.native
+  var TotalImpact: js.UndefOr[GenericDouble] = js.undefined
 }
 object Impact {
   

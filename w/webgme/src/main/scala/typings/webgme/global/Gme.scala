@@ -3,7 +3,6 @@ package typings.webgme.global
 import typings.webgme.Core.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Gme {
@@ -16,12 +15,16 @@ object Gme {
   @JSGlobal("Gme.Client")
   @js.native
   class Client ()
-    extends typings.webgme.Gme.Client
+    extends StObject
+       with typings.webgme.Gme.Client
   
   object Concepts {
     
-    @JSGlobal("Gme.Concepts.isConnection")
+    @JSGlobal("Gme.Concepts")
     @js.native
-    def isConnection(node: Node): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isConnection(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConnection")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

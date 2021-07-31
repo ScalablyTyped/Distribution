@@ -6,7 +6,6 @@ import typings.std.Node
 import typings.std.ParentNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,6 +19,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object node {
   
+  @JSImport("@wordpress/blocks", "node")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Given a DOM Element or Text node, returns an equivalent block node. Throws
     * if passed any node type other than element or text.
@@ -28,9 +31,8 @@ object node {
     *
     * @param domNode - DOM node to convert.
     */
-  @JSImport("@wordpress/blocks", "node.fromDOM")
-  @js.native
-  def fromDOM(domNode: Node): Element = js.native
+  @scala.inline
+  def fromDOM(domNode: Node): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDOM")(domNode.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /**
     * Given a single node and a node type (e.g. `'br'`), returns `true` if the node
@@ -39,12 +41,11 @@ object node {
     * @param node - Block node to test
     * @param type - Node to type to test against.
     */
-  @JSImport("@wordpress/blocks", "node.isNodeOfType")
-  @js.native
+  @scala.inline
   def isNodeOfType_type(
     node: Element,
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ReactElement['type'] */ js.Any
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodeOfType")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Given a selector, returns an hpq matcher generating a WPBlockChildren value
@@ -53,16 +54,14 @@ object node {
     * @param selector - DOM selector.
     */
   /* was `typeof children.matcher` */
-  @JSImport("@wordpress/blocks", "node.matcher")
-  @js.native
-  def matcher(selector: String): js.Function1[/* domNode */ Node with ParentNode, js.Array[ReactChild]] = js.native
+  @scala.inline
+  def matcher(selector: String): js.Function1[/* domNode */ Node & ParentNode, js.Array[ReactChild]] = ^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* domNode */ Node & ParentNode, js.Array[ReactChild]]]
   
   /**
     * Given a block node, returns its HTML string representation.
     *
     * @param node - Block node to convert to string.
     */
-  @JSImport("@wordpress/blocks", "node.toHTML")
-  @js.native
-  def toHTML(node: ReactChild): String = js.native
+  @scala.inline
+  def toHTML(node: ReactChild): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTML")(node.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteContentRangeRequest extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait DeleteContentRangeRequest extends StObject {
     * Deleting the start or end of a Table, TableOfContents or Equation without deleting the entire element. * Deleting the newline character before a Table, TableOfContents or
     * SectionBreak without deleting the element. * Deleting individual rows or cells of a table. Deleting the content within a table cell is allowed.
     */
-  var range: js.UndefOr[Range] = js.native
+  var range: js.UndefOr[Range] = js.undefined
 }
 object DeleteContentRangeRequest {
   

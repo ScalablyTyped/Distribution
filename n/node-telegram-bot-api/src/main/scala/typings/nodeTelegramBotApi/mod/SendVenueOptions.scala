@@ -2,13 +2,13 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SendVenueOptions extends SendBasicOptions {
+trait SendVenueOptions
+  extends StObject
+     with SendBasicOptions {
   
-  var foursquare_id: js.UndefOr[String] = js.native
+  var foursquare_id: js.UndefOr[String] = js.undefined
 }
 object SendVenueOptions {
   

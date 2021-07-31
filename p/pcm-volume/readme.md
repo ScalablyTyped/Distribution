@@ -11,8 +11,8 @@ Transform Stream that is able to change the volume of PCM data piped in and out 
 | Full name          | pcm-volume |
 | Keywords           | pcm, volume |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 6405 |
+| # dependents       | 12 |
+| # downloads        | 6215 |
 | # stars            | 1 |
 
 ## Links

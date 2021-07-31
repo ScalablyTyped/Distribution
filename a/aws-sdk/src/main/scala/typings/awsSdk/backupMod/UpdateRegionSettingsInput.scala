@@ -2,16 +2,14 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRegionSettingsInput extends StObject {
   
   /**
     * Updates the list of services along with the opt-in preferences for the Region.
     */
-  var ResourceTypeOptInPreference: js.UndefOr[typings.awsSdk.backupMod.ResourceTypeOptInPreference] = js.native
+  var ResourceTypeOptInPreference: js.UndefOr[typings.awsSdk.backupMod.ResourceTypeOptInPreference] = js.undefined
 }
 object UpdateRegionSettingsInput {
   

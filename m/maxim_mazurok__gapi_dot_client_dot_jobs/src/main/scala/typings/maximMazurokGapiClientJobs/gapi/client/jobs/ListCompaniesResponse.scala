@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCompaniesResponse extends StObject {
   
   /** Companies for the current client. */
-  var companies: js.UndefOr[js.Array[Company]] = js.native
+  var companies: js.UndefOr[js.Array[Company]] = js.undefined
   
   /** Additional information for the API invocation, such as the request tracking id. */
-  var metadata: js.UndefOr[ResponseMetadata] = js.native
+  var metadata: js.UndefOr[ResponseMetadata] = js.undefined
   
   /** A token to retrieve the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListCompaniesResponse {
   

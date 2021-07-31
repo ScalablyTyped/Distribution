@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetServerCertificateResponse extends StObject {
   
   /**
     * A structure containing details about the server certificate.
     */
-  var ServerCertificate: typings.awsSdk.iamMod.ServerCertificate = js.native
+  var ServerCertificate: typings.awsSdk.iamMod.ServerCertificate
 }
 object GetServerCertificateResponse {
   

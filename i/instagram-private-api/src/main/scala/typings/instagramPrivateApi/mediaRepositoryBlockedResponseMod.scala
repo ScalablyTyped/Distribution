@@ -2,17 +2,15 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaRepositoryBlockedResponseMod {
   
-  @js.native
   trait MediaRepositoryBlockedResponse extends StObject {
     
-    var media_ids: js.Array[String] = js.native
+    var media_ids: js.Array[String]
     
-    var status: String = js.native
+    var status: String
   }
   object MediaRepositoryBlockedResponse {
     

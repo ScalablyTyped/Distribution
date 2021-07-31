@@ -2,26 +2,24 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCapacityProvidersResponse extends StObject {
   
   /**
     * The list of capacity providers.
     */
-  var capacityProviders: js.UndefOr[CapacityProviders] = js.native
+  var capacityProviders: js.UndefOr[CapacityProviders] = js.undefined
   
   /**
     * Any failures associated with the call.
     */
-  var failures: js.UndefOr[Failures] = js.native
+  var failures: js.UndefOr[Failures] = js.undefined
   
   /**
     * The nextToken value to include in a future DescribeCapacityProviders request. When the results of a DescribeCapacityProviders request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeCapacityProvidersResponse {
   

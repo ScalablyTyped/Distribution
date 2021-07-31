@@ -3,26 +3,24 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalVpnGateway extends StObject {
   
   /** [Output Only] Creation timestamp in RFC3339 text format. */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /** An optional description of this resource. Provide this property when you create the resource. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** List of interfaces for this external VPN gateway. */
-  var interfaces: js.UndefOr[js.Array[ExternalVpnGatewayInterface]] = js.native
+  var interfaces: js.UndefOr[js.Array[ExternalVpnGatewayInterface]] = js.undefined
   
   /** [Output Only] Type of the resource. Always compute#externalVpnGateway for externalVpnGateways. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A fingerprint for the labels being applied to this ExternalVpnGateway, which is essentially a hash of the labels set used for optimistic locking. The fingerprint is initially
@@ -31,27 +29,27 @@ trait ExternalVpnGateway extends StObject {
     *
     * To see the latest fingerprint, make a get() request to retrieve an ExternalVpnGateway.
     */
-  var labelFingerprint: js.UndefOr[String] = js.native
+  var labelFingerprint: js.UndefOr[String] = js.undefined
   
   /** Labels for this resource. These can only be added or modified by the setLabels method. Each label key/value pair must comply with RFC1035. Label values may be empty. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ExternalVpnGateway with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ExternalVpnGateway & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63
     * characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a
     * dash, lowercase letter, or digit, except the last character, which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Indicates the user-supplied redundancy type of this external VPN gateway. */
-  var redundancyType: js.UndefOr[String] = js.native
+  var redundancyType: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Server-defined URL for the resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object ExternalVpnGateway {
   
@@ -107,7 +105,7 @@ object ExternalVpnGateway {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ExternalVpnGateway with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ExternalVpnGateway & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

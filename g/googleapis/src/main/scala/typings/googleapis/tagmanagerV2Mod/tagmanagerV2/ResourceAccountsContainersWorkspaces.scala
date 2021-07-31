@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers$Workspaces")
@@ -33,7 +32,7 @@ class ResourceAccountsContainersWorkspaces protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaWorkspace] = js.native
   def create(callback: BodyResponseCallback[SchemaWorkspace]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWorkspace] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWorkspace] = js.native
   def create(params: ParamsResourceAccountsContainersWorkspacesCreate): GaxiosPromise[SchemaWorkspace] = js.native
   def create(
     params: ParamsResourceAccountsContainersWorkspacesCreate,
@@ -68,7 +67,7 @@ class ResourceAccountsContainersWorkspaces protected () extends StObject {
     */
   def create_version(): GaxiosPromise[SchemaCreateContainerVersionResponse] = js.native
   def create_version(callback: BodyResponseCallback[SchemaCreateContainerVersionResponse]): Unit = js.native
-  def create_version(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreateContainerVersionResponse] = js.native
+  def create_version(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreateContainerVersionResponse] = js.native
   def create_version(params: ParamsResourceAccountsContainersWorkspacesCreateVersion): GaxiosPromise[SchemaCreateContainerVersionResponse] = js.native
   def create_version(
     params: ParamsResourceAccountsContainersWorkspacesCreateVersion,
@@ -100,7 +99,7 @@ class ResourceAccountsContainersWorkspaces protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsContainersWorkspacesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsContainersWorkspacesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -131,7 +130,7 @@ class ResourceAccountsContainersWorkspaces protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaWorkspace] = js.native
   def get(callback: BodyResponseCallback[SchemaWorkspace]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWorkspace] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWorkspace] = js.native
   def get(params: ParamsResourceAccountsContainersWorkspacesGet): GaxiosPromise[SchemaWorkspace] = js.native
   def get(
     params: ParamsResourceAccountsContainersWorkspacesGet,
@@ -163,7 +162,7 @@ class ResourceAccountsContainersWorkspaces protected () extends StObject {
     */
   def getStatus(): GaxiosPromise[SchemaGetWorkspaceStatusResponse] = js.native
   def getStatus(callback: BodyResponseCallback[SchemaGetWorkspaceStatusResponse]): Unit = js.native
-  def getStatus(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetWorkspaceStatusResponse] = js.native
+  def getStatus(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetWorkspaceStatusResponse] = js.native
   def getStatus(params: ParamsResourceAccountsContainersWorkspacesGetstatus): GaxiosPromise[SchemaGetWorkspaceStatusResponse] = js.native
   def getStatus(
     params: ParamsResourceAccountsContainersWorkspacesGetstatus,
@@ -196,7 +195,7 @@ class ResourceAccountsContainersWorkspaces protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListWorkspacesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListWorkspacesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListWorkspacesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListWorkspacesResponse] = js.native
   def list(params: ParamsResourceAccountsContainersWorkspacesList): GaxiosPromise[SchemaListWorkspacesResponse] = js.native
   def list(
     params: ParamsResourceAccountsContainersWorkspacesList,
@@ -229,7 +228,7 @@ class ResourceAccountsContainersWorkspaces protected () extends StObject {
     */
   def quick_preview(): GaxiosPromise[SchemaQuickPreviewResponse] = js.native
   def quick_preview(callback: BodyResponseCallback[SchemaQuickPreviewResponse]): Unit = js.native
-  def quick_preview(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQuickPreviewResponse] = js.native
+  def quick_preview(params: Unit, options: MethodOptions): GaxiosPromise[SchemaQuickPreviewResponse] = js.native
   def quick_preview(params: ParamsResourceAccountsContainersWorkspacesQuickPreview): GaxiosPromise[SchemaQuickPreviewResponse] = js.native
   def quick_preview(
     params: ParamsResourceAccountsContainersWorkspacesQuickPreview,
@@ -264,7 +263,7 @@ class ResourceAccountsContainersWorkspaces protected () extends StObject {
     */
   def resolve_conflict(): GaxiosPromise[Unit] = js.native
   def resolve_conflict(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def resolve_conflict(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def resolve_conflict(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def resolve_conflict(params: ParamsResourceAccountsContainersWorkspacesResolveConflict): GaxiosPromise[Unit] = js.native
   def resolve_conflict(
     params: ParamsResourceAccountsContainersWorkspacesResolveConflict,
@@ -298,7 +297,7 @@ class ResourceAccountsContainersWorkspaces protected () extends StObject {
     */
   def sync(): GaxiosPromise[SchemaSyncWorkspaceResponse] = js.native
   def sync(callback: BodyResponseCallback[SchemaSyncWorkspaceResponse]): Unit = js.native
-  def sync(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSyncWorkspaceResponse] = js.native
+  def sync(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSyncWorkspaceResponse] = js.native
   def sync(params: ParamsResourceAccountsContainersWorkspacesSync): GaxiosPromise[SchemaSyncWorkspaceResponse] = js.native
   def sync(
     params: ParamsResourceAccountsContainersWorkspacesSync,
@@ -336,7 +335,7 @@ class ResourceAccountsContainersWorkspaces protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaWorkspace] = js.native
   def update(callback: BodyResponseCallback[SchemaWorkspace]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWorkspace] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWorkspace] = js.native
   def update(params: ParamsResourceAccountsContainersWorkspacesUpdate): GaxiosPromise[SchemaWorkspace] = js.native
   def update(
     params: ParamsResourceAccountsContainersWorkspacesUpdate,

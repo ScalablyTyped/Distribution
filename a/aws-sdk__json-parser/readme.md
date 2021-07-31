@@ -10,9 +10,9 @@ An unmarshaller for the body portion of AWS's JSON and REST-JSON protocols
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/json-parser |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 324 |
-| # downloads        | 133050 |
+| # releases         | 7 |
+| # dependents       | 2 |
+| # downloads        | 210024 |
 | # stars            | 0 |
 
 ## Links

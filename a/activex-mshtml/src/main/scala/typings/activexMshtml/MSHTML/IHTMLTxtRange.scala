@@ -2,7 +2,6 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,9 +20,9 @@ trait IHTMLTxtRange extends StObject {
   
   /** @param showUI [showUI=false] */
   def execCommand(cmdID: String): Boolean = js.native
-  def execCommand(cmdID: String, showUI: js.UndefOr[scala.Nothing], value: js.Any): Boolean = js.native
   def execCommand(cmdID: String, showUI: Boolean): Boolean = js.native
   def execCommand(cmdID: String, showUI: Boolean, value: js.Any): Boolean = js.native
+  def execCommand(cmdID: String, showUI: Unit, value: js.Any): Boolean = js.native
   
   def execCommandShowHelp(cmdID: String): Boolean = js.native
   
@@ -34,9 +33,9 @@ trait IHTMLTxtRange extends StObject {
     * @param flags [flags=0]
     */
   def findText(String: String): Boolean = js.native
-  def findText(String: String, Count: js.UndefOr[scala.Nothing], flags: Double): Boolean = js.native
   def findText(String: String, Count: Double): Boolean = js.native
   def findText(String: String, Count: Double, flags: Double): Boolean = js.native
+  def findText(String: String, Count: Unit, flags: Double): Boolean = js.native
   
   def getBookmark(): String = js.native
   

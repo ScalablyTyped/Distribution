@@ -2,14 +2,12 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ConfigurationSpec holds the desired state of the Configuration (from the
   * client).
   */
-@js.native
 trait SchemaConfigurationSpec extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaConfigurationSpec extends StObject {
     * metadata.generation instead, which is the sequence number containing the
     * latest generation of the desired state.  Read-only.
     */
-  var generation: js.UndefOr[Double] = js.native
+  var generation: js.UndefOr[Double] = js.undefined
   
   /**
     * RevisionTemplate holds the latest specification for the Revision to be
@@ -30,7 +28,7 @@ trait SchemaConfigurationSpec extends StObject {
     * Cloud Run does not currently support referencing a build that is
     * responsible for materializing the container image from source.
     */
-  var revisionTemplate: js.UndefOr[SchemaRevisionTemplate] = js.native
+  var revisionTemplate: js.UndefOr[SchemaRevisionTemplate] = js.undefined
 }
 object SchemaConfigurationSpec {
   

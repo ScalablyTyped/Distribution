@@ -2,13 +2,11 @@ package typings.sequelize.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MsgString extends StObject {
   
-  var msg: String = js.native
+  var msg: String
 }
 object MsgString {
   

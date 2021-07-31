@@ -2,33 +2,33 @@ package typings.joiPasswordComplexity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("joi-password-complexity", JSImport.Namespace)
   @js.native
-  class ^ () extends PasswordComplexity {
+  class ^ ()
+    extends StObject
+       with PasswordComplexity {
     def this(options: ComplexityOptions) = this()
   }
   
-  @js.native
   trait ComplexityOptions extends StObject {
     
-    var lowerCase: Double = js.native
+    var lowerCase: Double
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var numeric: Double = js.native
+    var numeric: Double
     
-    var requirementCount: Double = js.native
+    var requirementCount: Double
     
-    var symbol: Double = js.native
+    var symbol: Double
     
-    var upperCase: Double = js.native
+    var upperCase: Double
   }
   object ComplexityOptions {
     
@@ -72,6 +72,5 @@ object mod {
     }
   }
   
-  @js.native
   trait PasswordComplexity extends StObject
 }

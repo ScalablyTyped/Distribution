@@ -6,21 +6,19 @@ import typings.c3.c3Strings.start
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridLineOptions extends StObject {
   
   /** Class to give the grid line for styling. */
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[start | end | middle] = js.native
+  var position: js.UndefOr[start | end | middle] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** Value to place the grid line at. */
-  var value: String | Double | Date = js.native
+  var value: String | Double | Date
 }
 object GridLineOptions {
   

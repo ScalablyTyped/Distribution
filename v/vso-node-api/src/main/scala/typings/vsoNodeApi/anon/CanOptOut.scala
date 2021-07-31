@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanOptOut extends StObject {
   
-  var canOptOut: scala.Double = js.native
+  var canOptOut: scala.Double
   
-  var contributedSubscription: scala.Double = js.native
+  var contributedSubscription: scala.Double
   
-  var groupSubscription: scala.Double = js.native
+  var groupSubscription: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var teamSubscription: scala.Double = js.native
+  var teamSubscription: scala.Double
 }
 object CanOptOut {
   

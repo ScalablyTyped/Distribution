@@ -2,36 +2,34 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateTeamMemberRequest extends StObject {
   
   /**
     * A user- or system-generated token that identifies the entity that requested the team member association to the project. This token can be used to repeat the request.
     */
-  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * The ID of the project to which you will add the IAM user.
     */
-  var projectId: ProjectId = js.native
+  var projectId: ProjectId
   
   /**
     * The AWS CodeStar project role that will apply to this user. This role determines what actions a user can take in an AWS CodeStar project.
     */
-  var projectRole: Role = js.native
+  var projectRole: Role
   
   /**
     * Whether the team member is allowed to use an SSH public/private key pair to remotely access project resources, for example Amazon EC2 instances.
     */
-  var remoteAccessAllowed: js.UndefOr[RemoteAccessAllowed] = js.native
+  var remoteAccessAllowed: js.UndefOr[RemoteAccessAllowed] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the IAM user you want to add to the AWS CodeStar project.
     */
-  var userArn: UserArn = js.native
+  var userArn: UserArn
 }
 object AssociateTeamMemberRequest {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProvisionedProductInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * The provisioned product identifier. You must provide the name or ID, but not both. If you do not provide a name or ID, or you provide both name and ID, an InvalidParametersException will occur.
     */
-  var Id: js.UndefOr[typings.awsSdk.servicecatalogMod.Id] = js.native
+  var Id: js.UndefOr[typings.awsSdk.servicecatalogMod.Id] = js.undefined
   
   /**
     * The name of the provisioned product. You must provide the name or ID, but not both. If you do not provide a name or ID, or you provide both name and ID, an InvalidParametersException will occur.
     */
-  var Name: js.UndefOr[ProvisionedProductName] = js.native
+  var Name: js.UndefOr[ProvisionedProductName] = js.undefined
 }
 object DescribeProvisionedProductInput {
   

@@ -2,18 +2,16 @@ package typings.googleapis.v1Dot4Mod.adsenseV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaMetadata extends StObject {
   
-  var items: js.UndefOr[js.Array[SchemaReportingMetadataEntry]] = js.native
+  var items: js.UndefOr[js.Array[SchemaReportingMetadataEntry]] = js.undefined
   
   /**
     * Kind of list this is, in this case adsense#metadata.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaMetadata {
   

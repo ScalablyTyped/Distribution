@@ -52,147 +52,155 @@ import typings.semanticUiSidebar.semanticUiSidebarStrings.useLegacy
 import typings.semanticUiSidebar.semanticUiSidebarStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def sidebar(): JQuery = js.native
-  def sidebar(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-  def sidebar(behavior: setting, name: closable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sidebar(behavior: setting, name: closable, value: Boolean): JQuery = js.native
-  def sidebar(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
-  def sidebar(behavior: setting, name: context, value: String): JQuery = js.native
-  def sidebar(behavior: setting, name: context, value: JQuery): JQuery = js.native
-  def sidebar(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sidebar(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def sidebar(behavior: setting, name: defaultTransition, value: DefaultTransitionSettings): JQuery = js.native
-  def sidebar(behavior: setting, name: delaySetup, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sidebar(behavior: setting, name: delaySetup, value: Boolean): JQuery = js.native
-  def sidebar(behavior: setting, name: dimPage, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sidebar(behavior: setting, name: dimPage, value: Boolean): JQuery = js.native
-  def sidebar(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
-  def sidebar(behavior: setting, name: duration, value: Double): JQuery = js.native
-  def sidebar(behavior: setting, name: easing, value: js.UndefOr[scala.Nothing]): String = js.native
-  def sidebar(behavior: setting, name: easing, value: String): JQuery = js.native
-  def sidebar(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def sidebar(behavior: setting, name: exclusive, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sidebar(behavior: setting, name: exclusive, value: Boolean): JQuery = js.native
-  def sidebar(behavior: setting, name: mobileTransition, value: js.UndefOr[scala.Nothing]): String = js.native
-  def sidebar(behavior: setting, name: mobileTransition, value: String): JQuery = js.native
-  def sidebar(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
-  def sidebar(behavior: setting, name: namespace, value: String): JQuery = js.native
-  def sidebar(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
-  def sidebar(behavior: setting, name: name, value: String): JQuery = js.native
-  def sidebar(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def sidebar(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def sidebar(behavior: setting, name: onHidden, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def sidebar(behavior: setting, name: onHidden, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def sidebar(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def sidebar(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def sidebar(behavior: setting, name: onShow, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def sidebar(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def sidebar(behavior: setting, name: onVisible, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def sidebar(behavior: setting, name: onVisible, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def sidebar(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sidebar(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def sidebar(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
-  def sidebar(behavior: setting, name: returnScroll, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sidebar(behavior: setting, name: returnScroll, value: Boolean): JQuery = js.native
-  def sidebar(behavior: setting, name: scrollLock, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sidebar(behavior: setting, name: scrollLock, value: Boolean): JQuery = js.native
-  def sidebar(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-  def sidebar(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sidebar(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def sidebar(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): String = js.native
-  def sidebar(behavior: setting, name: transition, value: String): JQuery = js.native
-  def sidebar(behavior: setting, name: useLegacy, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
-  def sidebar(behavior: setting, name: useLegacy, value: Boolean): JQuery = js.native
-  def sidebar(behavior: setting, name: useLegacy, value: auto): JQuery = js.native
-  def sidebar(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sidebar(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-  def sidebar(settings: SidebarSettings): JQuery = js.native
+  def sidebar(): JQuery
+  def sidebar(behavior: setting, name: className, value: Unit): ClassNameSettings
+  def sidebar(behavior: setting, name: className, value: ClassNameSettings): JQuery
+  def sidebar(behavior: setting, name: closable, value: Boolean): JQuery
+  def sidebar(behavior: setting, name: closable, value: Unit): Boolean
+  def sidebar(behavior: setting, name: context, value: String): JQuery
+  def sidebar(behavior: setting, name: context, value: Unit): String | JQuery
+  def sidebar(behavior: setting, name: context, value: JQuery): JQuery
+  def sidebar(behavior: setting, name: debug, value: Boolean): JQuery
+  def sidebar(behavior: setting, name: debug, value: Unit): Boolean
+  def sidebar(behavior: setting, name: defaultTransition, value: Unit): DefaultTransitionSettings
+  def sidebar(behavior: setting, name: defaultTransition, value: DefaultTransitionSettings): JQuery
+  def sidebar(behavior: setting, name: delaySetup, value: Boolean): JQuery
+  def sidebar(behavior: setting, name: delaySetup, value: Unit): Boolean
+  def sidebar(behavior: setting, name: dimPage, value: Boolean): JQuery
+  def sidebar(behavior: setting, name: dimPage, value: Unit): Boolean
+  def sidebar(behavior: setting, name: duration, value: Double): JQuery
+  def sidebar(behavior: setting, name: duration, value: Unit): Double
+  def sidebar(behavior: setting, name: easing, value: String): JQuery
+  def sidebar(behavior: setting, name: easing, value: Unit): String
+  def sidebar(behavior: setting, name: error, value: Unit): ErrorSettings
+  def sidebar(behavior: setting, name: error, value: ErrorSettings): JQuery
+  def sidebar(behavior: setting, name: exclusive, value: Boolean): JQuery
+  def sidebar(behavior: setting, name: exclusive, value: Unit): Boolean
+  def sidebar(behavior: setting, name: mobileTransition, value: String): JQuery
+  def sidebar(behavior: setting, name: mobileTransition, value: Unit): String
+  def sidebar(behavior: setting, name: namespace, value: String): JQuery
+  def sidebar(behavior: setting, name: namespace, value: Unit): String
+  def sidebar(behavior: setting, name: name, value: String): JQuery
+  def sidebar(behavior: setting, name: name, value: Unit): String
+  def sidebar(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def sidebar(behavior: setting, name: onChange, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def sidebar(behavior: setting, name: onHidden, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def sidebar(behavior: setting, name: onHidden, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def sidebar(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def sidebar(behavior: setting, name: onHide, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def sidebar(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def sidebar(behavior: setting, name: onShow, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def sidebar(behavior: setting, name: onVisible, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def sidebar(behavior: setting, name: onVisible, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def sidebar(behavior: setting, name: performance, value: Boolean): JQuery
+  def sidebar(behavior: setting, name: performance, value: Unit): Boolean
+  def sidebar(behavior: setting, name: regExp, value: Unit): RegExpSettings
+  def sidebar(behavior: setting, name: regExp, value: RegExpSettings): JQuery
+  def sidebar(behavior: setting, name: returnScroll, value: Boolean): JQuery
+  def sidebar(behavior: setting, name: returnScroll, value: Unit): Boolean
+  def sidebar(behavior: setting, name: scrollLock, value: Boolean): JQuery
+  def sidebar(behavior: setting, name: scrollLock, value: Unit): Boolean
+  def sidebar(behavior: setting, name: selector, value: Unit): SelectorSettings
+  def sidebar(behavior: setting, name: selector, value: SelectorSettings): JQuery
+  def sidebar(behavior: setting, name: silent, value: Boolean): JQuery
+  def sidebar(behavior: setting, name: silent, value: Unit): Boolean
+  def sidebar(behavior: setting, name: transition, value: String): JQuery
+  def sidebar(behavior: setting, name: transition, value: Unit): String
+  def sidebar(behavior: setting, name: useLegacy, value: Boolean): JQuery
+  def sidebar(behavior: setting, name: useLegacy, value: Unit): auto | Boolean
+  def sidebar(behavior: setting, name: useLegacy, value: auto): JQuery
+  def sidebar(behavior: setting, name: verbose, value: Boolean): JQuery
+  def sidebar(behavior: setting, name: verbose, value: Unit): Boolean
+  def sidebar(settings: SidebarSettings): JQuery
   @JSName("sidebar")
-  def sidebar_DefaultTransitionSettings(behavior: setting, name: defaultTransition, value: js.UndefOr[scala.Nothing]): DefaultTransitionSettings = js.native
-  @JSName("sidebar")
-  def sidebar_ErrorSettings(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-  @JSName("sidebar")
-  def sidebar_JQuery(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  @JSName("sidebar")
-  def sidebar_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  @JSName("sidebar")
-  var sidebar_Original: Sidebar = js.native
-  @JSName("sidebar")
-  def sidebar_RegExpSettings(behavior: setting, name: regExp, value: js.UndefOr[scala.Nothing]): RegExpSettings = js.native
+  var sidebar_Original: Sidebar
   /**
     * Adds stylesheet to page head to trigger sidebar animations
     */
   @JSName("sidebar")
-  def sidebar_addbodyCSS(behavior: `add body CSS`): JQuery = js.native
+  def sidebar_addbodyCSS(behavior: `add body CSS`): JQuery
   /**
     * Attaches sidebar action to given selector. Default event if none specified is toggle
     */
   @JSName("sidebar")
-  def sidebar_attachevents(behavior: `attach events`, selector: String): JQuery = js.native
+  def sidebar_attachevents(behavior: `attach events`, selector: String): JQuery
   @JSName("sidebar")
-  def sidebar_attachevents(behavior: `attach events`, selector: String, event: String): JQuery = js.native
+  def sidebar_attachevents(behavior: `attach events`, selector: String, event: String): JQuery
   @JSName("sidebar")
-  def sidebar_attachevents(behavior: `attach events`, selector: JQuery): JQuery = js.native
+  def sidebar_attachevents(behavior: `attach events`, selector: JQuery): JQuery
   @JSName("sidebar")
-  def sidebar_attachevents(behavior: `attach events`, selector: JQuery, event: String): JQuery = js.native
+  def sidebar_attachevents(behavior: `attach events`, selector: JQuery, event: String): JQuery
   @JSName("sidebar")
-  def sidebar_destroy(behavior: destroy): JQuery = js.native
+  def sidebar_destroy(behavior: destroy): JQuery
   /**
     * Returns direction of current sidebar
     */
   @JSName("sidebar")
-  def sidebar_getdirection(behavior: `get direction`): String = js.native
+  def sidebar_getdirection(behavior: `get direction`): String
   /**
     * Returns vendor prefixed transition end event
     */
   @JSName("sidebar")
-  def sidebar_gettransitionevent(behavior: `get transition event`): String = js.native
+  def sidebar_gettransitionevent(behavior: `get transition event`): String
   /**
     * Hides sidebar
     */
   @JSName("sidebar")
-  def sidebar_hide(behavior: hide): JQuery = js.native
+  def sidebar_hide(behavior: hide): JQuery
   /**
     * Returns whether sidebar is hidden
     */
   @JSName("sidebar")
-  def sidebar_ishidden(behavior: `is hidden`): Boolean = js.native
+  def sidebar_ishidden(behavior: `is hidden`): Boolean
   /**
     * Returns whether sidebar is visible
     */
   @JSName("sidebar")
-  def sidebar_isvisible(behavior: `is visible`): Boolean = js.native
+  def sidebar_isvisible(behavior: `is visible`): Boolean
   /**
     * Returns page content to original position
     */
   @JSName("sidebar")
-  def sidebar_pullpage(behavior: `pull page`): JQuery = js.native
+  def sidebar_pullpage(behavior: `pull page`): JQuery
   /**
     * Pushes page content to be visible alongside sidebar
     */
   @JSName("sidebar")
-  def sidebar_pushpage(behavior: `push page`): JQuery = js.native
+  def sidebar_pushpage(behavior: `push page`): JQuery
   /**
     * Removes any inline stylesheets for sidebar animation
     */
   @JSName("sidebar")
-  def sidebar_removebodyCSS(behavior: `remove body CSS`): JQuery = js.native
+  def sidebar_removebodyCSS(behavior: `remove body CSS`): JQuery
   @JSName("sidebar")
-  def sidebar_setting(behavior: setting, value: SidebarSettings): JQuery = js.native
+  def sidebar_setting(behavior: setting, value: SidebarSettings): JQuery
   /**
     * Shows sidebar
     */
   @JSName("sidebar")
-  def sidebar_show(behavior: show): JQuery = js.native
+  def sidebar_show(behavior: show): JQuery
   /**
     * Toggles visibility of sidebar
     */
   @JSName("sidebar")
-  def sidebar_toggle(behavior: toggle): JQuery = js.native
+  def sidebar_toggle(behavior: toggle): JQuery
+}
+object JQuery {
+  
+  @scala.inline
+  def apply(sidebar: Sidebar): JQuery = {
+    val __obj = js.Dynamic.literal(sidebar = sidebar.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  @scala.inline
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setSidebar(value: Sidebar): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
+  }
 }

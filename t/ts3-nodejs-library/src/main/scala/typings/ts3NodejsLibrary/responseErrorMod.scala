@@ -5,14 +5,15 @@ import typings.ts3NodejsLibrary.anon.ExtraMsg
 import typings.ts3NodejsLibrary.responseTypesMod.QueryErrorMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object responseErrorMod {
   
   @JSImport("ts3-nodejs-library/lib/exception/ResponseError", "ResponseError")
   @js.native
-  class ResponseError protected () extends Error {
+  class ResponseError protected ()
+    extends StObject
+       with Error {
     def this(error: QueryErrorMessage, stack: String) = this()
     
     val extraMsg: js.UndefOr[String] = js.native
@@ -21,7 +22,13 @@ object responseErrorMod {
     
     val id: String = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
     val msg: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     /**
       * returns a json encodeable object for this error

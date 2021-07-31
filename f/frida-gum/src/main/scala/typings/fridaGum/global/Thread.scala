@@ -3,10 +3,13 @@ package typings.fridaGum.global
 import typings.fridaGum.CpuContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Thread {
+  
+  @JSGlobal("Thread")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Generates a backtrace for the given thread's `context`.
@@ -23,18 +26,14 @@ object Thread {
     *                   `Backtracer.FUZZY` or `Backtracer.ACCURATE`,
     *                   where the latter is the default if not specified.
     */
-  @JSGlobal("Thread.backtrace")
-  @js.native
-  def backtrace(): js.Array[typings.fridaGum.NativePointer] = js.native
-  @JSGlobal("Thread.backtrace")
-  @js.native
-  def backtrace(context: js.UndefOr[scala.Nothing], backtracer: typings.fridaGum.Backtracer): js.Array[typings.fridaGum.NativePointer] = js.native
-  @JSGlobal("Thread.backtrace")
-  @js.native
-  def backtrace(context: CpuContext): js.Array[typings.fridaGum.NativePointer] = js.native
-  @JSGlobal("Thread.backtrace")
-  @js.native
-  def backtrace(context: CpuContext, backtracer: typings.fridaGum.Backtracer): js.Array[typings.fridaGum.NativePointer] = js.native
+  @scala.inline
+  def backtrace(): js.Array[typings.fridaGum.NativePointer] = ^.asInstanceOf[js.Dynamic].applyDynamic("backtrace")().asInstanceOf[js.Array[typings.fridaGum.NativePointer]]
+  @scala.inline
+  def backtrace(context: Unit, backtracer: typings.fridaGum.Backtracer): js.Array[typings.fridaGum.NativePointer] = (^.asInstanceOf[js.Dynamic].applyDynamic("backtrace")(context.asInstanceOf[js.Any], backtracer.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.fridaGum.NativePointer]]
+  @scala.inline
+  def backtrace(context: CpuContext): js.Array[typings.fridaGum.NativePointer] = ^.asInstanceOf[js.Dynamic].applyDynamic("backtrace")(context.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.fridaGum.NativePointer]]
+  @scala.inline
+  def backtrace(context: CpuContext, backtracer: typings.fridaGum.Backtracer): js.Array[typings.fridaGum.NativePointer] = (^.asInstanceOf[js.Dynamic].applyDynamic("backtrace")(context.asInstanceOf[js.Any], backtracer.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.fridaGum.NativePointer]]
   
   /**
     * Suspends execution of the current thread for `delay` seconds.
@@ -43,7 +42,6 @@ object Thread {
     *
     * @param delay Delay in seconds.
     */
-  @JSGlobal("Thread.sleep")
-  @js.native
-  def sleep(delay: Double): Unit = js.native
+  @scala.inline
+  def sleep(delay: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(delay.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

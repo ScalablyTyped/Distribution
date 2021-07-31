@@ -3,21 +3,19 @@ package typings.googleCloudStorage.fileMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateSignedPostPolicyV4Options extends StObject {
   
-  var bucketBoundHostname: js.UndefOr[String] = js.native
+  var bucketBoundHostname: js.UndefOr[String] = js.undefined
   
-  var conditions: js.UndefOr[js.Array[js.Object]] = js.native
+  var conditions: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var expires: String | Double | Date = js.native
+  var expires: String | Double | Date
   
-  var fields: js.UndefOr[PolicyFields] = js.native
+  var fields: js.UndefOr[PolicyFields] = js.undefined
   
-  var virtualHostedStyle: js.UndefOr[Boolean] = js.native
+  var virtualHostedStyle: js.UndefOr[Boolean] = js.undefined
 }
 object GenerateSignedPostPolicyV4Options {
   

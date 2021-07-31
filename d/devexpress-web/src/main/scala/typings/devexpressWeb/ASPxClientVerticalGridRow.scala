@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client grid row.
   */
-@js.native
-trait ASPxClientVerticalGridRow extends ASPxClientGridColumnBase {
+trait ASPxClientVerticalGridRow
+  extends StObject
+     with ASPxClientGridColumnBase {
   
   /**
     * Gets the name of the database field assigned to the current row.
     */
-  var fieldName: String = js.native
+  var fieldName: String
   
   /**
     * Gets the row's position within the collection.
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Gets the name that uniquely identifies the row.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets whether the row is visible.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object ASPxClientVerticalGridRow {
   

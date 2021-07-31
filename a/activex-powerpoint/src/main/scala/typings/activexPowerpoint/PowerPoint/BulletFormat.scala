@@ -3,40 +3,38 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulletFormat extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var Character: Double = js.native
+  var Character: Double
   
-  val Font: typings.activexPowerpoint.PowerPoint.Font = js.native
+  val Font: typings.activexPowerpoint.PowerPoint.Font
   
-  val Number: Double = js.native
+  val Number: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Picture(Picture: String): Unit = js.native
+  def Picture(Picture: String): Unit
   
   @JSName("PowerPoint.BulletFormat_typekey")
-  var PowerPointDotBulletFormat_typekey: BulletFormat = js.native
+  var PowerPointDotBulletFormat_typekey: BulletFormat
   
-  var RelativeSize: Double = js.native
+  var RelativeSize: Double
   
-  var StartValue: Double = js.native
+  var StartValue: Double
   
-  var Style: PpNumberedBulletStyle = js.native
+  var Style: PpNumberedBulletStyle
   
-  var Type: PpBulletType = js.native
+  var Type: PpBulletType
   
-  var UseTextColor: MsoTriState = js.native
+  var UseTextColor: MsoTriState
   
-  var UseTextFont: MsoTriState = js.native
+  var UseTextFont: MsoTriState
   
-  var Visible: MsoTriState = js.native
+  var Visible: MsoTriState
 }
 object BulletFormat {
   

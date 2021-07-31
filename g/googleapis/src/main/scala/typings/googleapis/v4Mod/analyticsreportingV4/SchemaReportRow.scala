@@ -2,24 +2,22 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A row in the report.
   */
-@js.native
 trait SchemaReportRow extends StObject {
   
   /**
     * List of requested dimensions.
     */
-  var dimensions: js.UndefOr[js.Array[String]] = js.native
+  var dimensions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of metrics for each requested DateRange.
     */
-  var metrics: js.UndefOr[js.Array[SchemaDateRangeValues]] = js.native
+  var metrics: js.UndefOr[js.Array[SchemaDateRangeValues]] = js.undefined
 }
 object SchemaReportRow {
   

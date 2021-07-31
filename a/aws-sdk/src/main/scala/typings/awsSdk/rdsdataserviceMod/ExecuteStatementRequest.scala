@@ -2,61 +2,59 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecuteStatementRequest extends StObject {
   
   /**
     * A value that indicates whether to continue running the statement after the call times out. By default, the statement stops running when the call times out.  For DDL statements, we recommend continuing to run the statement after the call times out. When a DDL statement terminates before it is finished running, it can result in errors and possibly corrupted data structures. 
     */
-  var continueAfterTimeout: js.UndefOr[Boolean] = js.native
+  var continueAfterTimeout: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the database.
     */
-  var database: js.UndefOr[DbName] = js.native
+  var database: js.UndefOr[DbName] = js.undefined
   
   /**
     * A value that indicates whether to include metadata in the results.
     */
-  var includeResultMetadata: js.UndefOr[Boolean] = js.native
+  var includeResultMetadata: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The parameters for the SQL statement.  Array parameters are not supported. 
     */
-  var parameters: js.UndefOr[SqlParametersList] = js.native
+  var parameters: js.UndefOr[SqlParametersList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Aurora Serverless DB cluster.
     */
-  var resourceArn: Arn = js.native
+  var resourceArn: Arn
   
   /**
     * Options that control how the result set is returned.
     */
-  var resultSetOptions: js.UndefOr[ResultSetOptions] = js.native
+  var resultSetOptions: js.UndefOr[ResultSetOptions] = js.undefined
   
   /**
     * The name of the database schema.
     */
-  var schema: js.UndefOr[DbName] = js.native
+  var schema: js.UndefOr[DbName] = js.undefined
   
   /**
     * The name or ARN of the secret that enables access to the DB cluster.
     */
-  var secretArn: Arn = js.native
+  var secretArn: Arn
   
   /**
     * The SQL statement to run.
     */
-  var sql: SqlStatement = js.native
+  var sql: SqlStatement
   
   /**
     * The identifier of a transaction that was started by using the BeginTransaction operation. Specify the transaction ID of the transaction that you want to include the SQL statement in. If the SQL statement is not part of a transaction, don't set this parameter.
     */
-  var transactionId: js.UndefOr[Id] = js.native
+  var transactionId: js.UndefOr[Id] = js.undefined
 }
 object ExecuteStatementRequest {
   

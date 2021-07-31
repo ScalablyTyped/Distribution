@@ -2,89 +2,87 @@ package typings.procfsStats.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Status extends StObject {
   
-  var CapBnd: String = js.native
+  var CapBnd: String
   
-  var CapEff: String = js.native
+  var CapEff: String
   
-  var CapInh: String = js.native
+  var CapInh: String
   
-  var CapPrm: String = js.native
+  var CapPrm: String
   
-  var Cpus_allowed: String = js.native
+  var Cpus_allowed: String
   
-  var Cpus_allowed_list: String = js.native
+  var Cpus_allowed_list: String
   
-  var FDSize: String = js.native
+  var FDSize: String
   
-  var Gid: String = js.native
+  var Gid: String
   
-  var Groups: String = js.native
+  var Groups: String
   
-  var Mems_allowed: String = js.native
+  var Mems_allowed: String
   
-  var Mems_allowed_list: String = js.native
+  var Mems_allowed_list: String
   
-  var Name: String = js.native
+  var Name: String
   
-  var PPid: String = js.native
+  var PPid: String
   
-  var Pid: String = js.native
+  var Pid: String
   
-  var ShdPnd: String = js.native
+  var ShdPnd: String
   
-  var SigBlk: String = js.native
+  var SigBlk: String
   
-  var SigCgt: String = js.native
+  var SigCgt: String
   
-  var SigIgn: String = js.native
+  var SigIgn: String
   
-  var SigPnd: String = js.native
+  var SigPnd: String
   
-  var SigQ: String = js.native
+  var SigQ: String
   
-  var State: String = js.native
+  var State: String
   
-  var Tgid: String = js.native
+  var Tgid: String
   
-  var Threads: String = js.native
+  var Threads: String
   
-  var TracerPid: String = js.native
+  var TracerPid: String
   
-  var Uid: String = js.native
+  var Uid: String
   
-  var VmData: String = js.native
+  var VmData: String
   
-  var VmExe: String = js.native
+  var VmExe: String
   
-  var VmHWM: String = js.native
+  var VmHWM: String
   
-  var VmLck: String = js.native
+  var VmLck: String
   
-  var VmLib: String = js.native
+  var VmLib: String
   
-  var VmPTE: String = js.native
+  var VmPTE: String
   
-  var VmPeak: String = js.native
+  var VmPeak: String
   
-  var VmPin: String = js.native
+  var VmPin: String
   
-  var VmRSS: String = js.native
+  var VmRSS: String
   
-  var VmSize: String = js.native
+  var VmSize: String
   
-  var VmStk: String = js.native
+  var VmStk: String
   
-  var VmSwap: String = js.native
+  var VmSwap: String
   
-  var nonvoluntary_ctxt_switches: String = js.native
+  var nonvoluntary_ctxt_switches: String
   
-  var voluntary_ctxt_switches: String = js.native
+  var voluntary_ctxt_switches: String
 }
 object Status {
   

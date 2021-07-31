@@ -2,15 +2,13 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseListbox extends StObject {
   
-  def closeListbox(): Unit = js.native
+  def closeListbox(): Unit
   
-  var value: String = js.native
+  var value: String
 }
 object CloseListbox {
   

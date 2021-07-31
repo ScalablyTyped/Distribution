@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.kinesisanalyticsv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
     Input[
       ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Provides additional mapping information when JSON is the record format on the streaming source.
@@ -25,7 +23,7 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
     Input[
       ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters {
   

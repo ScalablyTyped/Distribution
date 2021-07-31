@@ -4,19 +4,19 @@
 Typings are for version 4.17
 
 ## Library description:
-Minified, unbuilt version of the ArcGIS API for JavaScript
+ArcGIS API for JavaScript: A complete 2D and 3D mapping and data visualization API
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | arcgis-js-api |
-| Keywords           | esrijs, esri, arcgis, gis |
-| # releases         | 91 |
-| # dependents       | 10 |
-| # downloads        | 98026 |
+| Keywords           | ArcGIS, javascript, map, 3D, 2D, visualization, analytics, spatial, data-driven, gis, Esri |
+| # releases         | 157 |
+| # dependents       | 9 |
+| # downloads        | 116709 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://developers.arcgis.com/javascript)
+- [Homepage](https://js.arcgis.com)
 - [Bugs](https://github.com/Esri/arcgis-js-api/issues)
 - [Repository](https://github.com/Esri/arcgis-js-api)
 - [Npm](https://www.npmjs.com/package/arcgis-js-api)

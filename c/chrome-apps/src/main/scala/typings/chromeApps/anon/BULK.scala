@@ -6,25 +6,23 @@ import typings.chromeApps.chromeAppsStrings.interrupt_
 import typings.chromeApps.chromeAppsStrings.isochronous_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BULK extends StObject {
   
-  var BULK: bulk_ = js.native
+  var BULK: bulk_
   
-  var CONTROL: control_ = js.native
+  var CONTROL: control_
   
-  var INTERRUPT: interrupt_ = js.native
+  var INTERRUPT: interrupt_
   
-  var ISOCHRONOUS: isochronous_ = js.native
+  var ISOCHRONOUS: isochronous_
 }
 object BULK {
   
   @scala.inline
-  def apply(BULK: bulk_, CONTROL: control_, INTERRUPT: interrupt_, ISOCHRONOUS: isochronous_): BULK = {
-    val __obj = js.Dynamic.literal(BULK = BULK.asInstanceOf[js.Any], CONTROL = CONTROL.asInstanceOf[js.Any], INTERRUPT = INTERRUPT.asInstanceOf[js.Any], ISOCHRONOUS = ISOCHRONOUS.asInstanceOf[js.Any])
+  def apply(): BULK = {
+    val __obj = js.Dynamic.literal(BULK = "bulk", CONTROL = "control", INTERRUPT = "interrupt", ISOCHRONOUS = "isochronous")
     __obj.asInstanceOf[BULK]
   }
   

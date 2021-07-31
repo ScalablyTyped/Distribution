@@ -5,30 +5,30 @@ import typings.iobroker.iobrokerStrings.device
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<std.Omit<iobroker.iobroker/objects.<global>.ioBroker.DeviceObject, 'common'>> */
-@js.native
-trait PartialDeviceObject extends PartialObject {
+trait PartialDeviceObject
+  extends StObject
+     with PartialObject {
   
-  var _id: js.UndefOr[String] = js.native
+  var _id: js.UndefOr[String] = js.undefined
   
-  var acl: js.UndefOr[ObjectACL] = js.native
+  var acl: js.UndefOr[ObjectACL] = js.undefined
   
-  var common: js.UndefOr[PartialDeviceCommon] = js.native
+  var common: js.UndefOr[PartialDeviceCommon] = js.undefined
   
-  var enums: js.UndefOr[Record[String, String]] = js.native
+  var enums: js.UndefOr[Record[String, String]] = js.undefined
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
-  var native: js.UndefOr[Record[String, _]] = js.native
+  var native: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var ts: js.UndefOr[Double] = js.native
+  var ts: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[device] = js.native
+  var `type`: js.UndefOr[device] = js.undefined
   
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object PartialDeviceObject {
   
@@ -66,7 +66,7 @@ object PartialDeviceObject {
     def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def setNative(value: Record[String, _]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    def setNative(value: Record[String, js.Any]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)

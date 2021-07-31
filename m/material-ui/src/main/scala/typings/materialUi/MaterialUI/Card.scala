@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Card {
@@ -14,18 +13,17 @@ object Card {
   
   type CardActions = Component[CardActionsProps, js.Object, js.Any]
   
-  @js.native
   trait CardActionsProps extends StObject {
     
-    var actAsExpander: js.UndefOr[Boolean] = js.native
+    var actAsExpander: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var expandable: js.UndefOr[Boolean] = js.native
+    var expandable: js.UndefOr[Boolean] = js.undefined
     
-    var showExpandableButton: js.UndefOr[Boolean] = js.native
+    var showExpandableButton: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object CardActionsProps {
     
@@ -72,14 +70,13 @@ object Card {
   
   type CardExpandable = Component[CardExpandableProps, js.Object, js.Any]
   
-  @js.native
   trait CardExpandableProps extends StObject {
     
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
-    var onExpanding: js.UndefOr[js.Function1[/* isExpanded */ Boolean, Unit]] = js.native
+    var onExpanding: js.UndefOr[js.Function1[/* isExpanded */ Boolean, Unit]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object CardExpandableProps {
     
@@ -114,40 +111,39 @@ object Card {
   
   type CardHeader = Component[CardHeaderProps, js.Object, js.Any]
   
-  @js.native
   trait CardHeaderProps extends StObject {
     
-    var actAsExpander: js.UndefOr[Boolean] = js.native
+    var actAsExpander: js.UndefOr[Boolean] = js.undefined
     
-    var avatar: js.UndefOr[ReactNode] = js.native
+    var avatar: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var expandable: js.UndefOr[Boolean] = js.native
+    var expandable: js.UndefOr[Boolean] = js.undefined
     
-    var iconStyle: js.UndefOr[CSSProperties] = js.native
+    var iconStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var openIcon: js.UndefOr[ReactNode] = js.native
+    var openIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var showExpandableButton: js.UndefOr[Boolean] = js.native
+    var showExpandableButton: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var subtitle: js.UndefOr[ReactNode] = js.native
+    var subtitle: js.UndefOr[ReactNode] = js.undefined
     
-    var subtitleColor: js.UndefOr[String] = js.native
+    var subtitleColor: js.UndefOr[String] = js.undefined
     
-    var subtitleStyle: js.UndefOr[CSSProperties] = js.native
+    var subtitleStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var textStyle: js.UndefOr[CSSProperties] = js.native
+    var textStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var titleColor: js.UndefOr[String] = js.native
+    var titleColor: js.UndefOr[String] = js.undefined
     
-    var titleStyle: js.UndefOr[CSSProperties] = js.native
+    var titleStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object CardHeaderProps {
     
@@ -260,24 +256,23 @@ object Card {
   
   type CardMedia = Component[CardMediaProps, js.Object, js.Any]
   
-  @js.native
   trait CardMediaProps extends StObject {
     
-    var actAsExpander: js.UndefOr[Boolean] = js.native
+    var actAsExpander: js.UndefOr[Boolean] = js.undefined
     
-    var expandable: js.UndefOr[Boolean] = js.native
+    var expandable: js.UndefOr[Boolean] = js.undefined
     
-    var mediaStyle: js.UndefOr[CSSProperties] = js.native
+    var mediaStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var overlay: js.UndefOr[ReactNode] = js.native
+    var overlay: js.UndefOr[ReactNode] = js.undefined
     
-    var overlayContainerStyle: js.UndefOr[CSSProperties] = js.native
+    var overlayContainerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var overlayContentStyle: js.UndefOr[CSSProperties] = js.native
+    var overlayContentStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var overlayStyle: js.UndefOr[CSSProperties] = js.native
+    var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object CardMediaProps {
     
@@ -340,26 +335,25 @@ object Card {
     }
   }
   
-  @js.native
   trait CardProps extends StObject {
     
-    var actAsExpander: js.UndefOr[Boolean] = js.native
+    var actAsExpander: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var containerStyle: js.UndefOr[CSSProperties] = js.native
+    var containerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var expandable: js.UndefOr[Boolean] = js.native
+    var expandable: js.UndefOr[Boolean] = js.undefined
     
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
-    var initiallyExpanded: js.UndefOr[Boolean] = js.native
+    var initiallyExpanded: js.UndefOr[Boolean] = js.undefined
     
-    var onExpandChange: js.UndefOr[js.Function1[/* isExpanded */ Boolean, Unit]] = js.native
+    var onExpandChange: js.UndefOr[js.Function1[/* isExpanded */ Boolean, Unit]] = js.undefined
     
-    var showExpandableButton: js.UndefOr[Boolean] = js.native
+    var showExpandableButton: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object CardProps {
     
@@ -430,18 +424,17 @@ object Card {
   
   type CardText = Component[CardTextProps, js.Object, js.Any]
   
-  @js.native
   trait CardTextProps extends StObject {
     
-    var actAsExpander: js.UndefOr[Boolean] = js.native
+    var actAsExpander: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var expandable: js.UndefOr[Boolean] = js.native
+    var expandable: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object CardTextProps {
     
@@ -488,28 +481,27 @@ object Card {
   
   type CardTitle = Component[CardTitleProps, js.Object, js.Any]
   
-  @js.native
   trait CardTitleProps extends StObject {
     
-    var actAsExpander: js.UndefOr[Boolean] = js.native
+    var actAsExpander: js.UndefOr[Boolean] = js.undefined
     
-    var expandable: js.UndefOr[Boolean] = js.native
+    var expandable: js.UndefOr[Boolean] = js.undefined
     
-    var showExpandableButton: js.UndefOr[Boolean] = js.native
+    var showExpandableButton: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var subtitle: js.UndefOr[ReactNode] = js.native
+    var subtitle: js.UndefOr[ReactNode] = js.undefined
     
-    var subtitleColor: js.UndefOr[String] = js.native
+    var subtitleColor: js.UndefOr[String] = js.undefined
     
-    var subtitleStyle: js.UndefOr[CSSProperties] = js.native
+    var subtitleStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var titleColor: js.UndefOr[String] = js.native
+    var titleColor: js.UndefOr[String] = js.undefined
     
-    var titleStyle: js.UndefOr[CSSProperties] = js.native
+    var titleStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object CardTitleProps {
     

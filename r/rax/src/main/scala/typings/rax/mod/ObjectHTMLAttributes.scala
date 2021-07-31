@@ -2,29 +2,29 @@ package typings.rax.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ObjectHTMLAttributes[T] extends HTMLAttributes[T] {
+trait ObjectHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var classID: js.UndefOr[String] = js.native
+  var classID: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var useMap: js.UndefOr[String] = js.native
+  var useMap: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
   
-  var wmode: js.UndefOr[String] = js.native
+  var wmode: js.UndefOr[String] = js.undefined
 }
 object ObjectHTMLAttributes {
   
@@ -35,7 +35,7 @@ object ObjectHTMLAttributes {
   }
   
   @scala.inline
-  implicit class ObjectHTMLAttributesMutableBuilder[Self <: ObjectHTMLAttributes[_], T] (val x: Self with ObjectHTMLAttributes[T]) extends AnyVal {
+  implicit class ObjectHTMLAttributesMutableBuilder[Self <: ObjectHTMLAttributes[?], T] (val x: Self & ObjectHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setClassID(value: String): Self = StObject.set(x, "classID", value.asInstanceOf[js.Any])

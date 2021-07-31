@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OauthAccess extends StObject {
   
   /**
     * Access token information.
     */
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
   /**
     * A Base64-encoded representation of the attachment that is used to upload and download the file. File attachments may be up to 50 MB in size.
@@ -20,18 +18,18 @@ trait OauthAccess extends StObject {
     js.Array[
       /* A name-value pair that describes an item and provides a value for the item. */ NameValue
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var expires_in: js.UndefOr[String] = js.native
+  var expires_in: js.UndefOr[String] = js.undefined
   
-  var refresh_token: js.UndefOr[String] = js.native
+  var refresh_token: js.UndefOr[String] = js.undefined
   
   /**
     * Must be set to "api".
     */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var token_type: js.UndefOr[String] = js.native
+  var token_type: js.UndefOr[String] = js.undefined
 }
 object OauthAccess {
   

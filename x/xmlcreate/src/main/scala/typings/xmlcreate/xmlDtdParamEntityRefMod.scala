@@ -2,24 +2,24 @@ package typings.xmlcreate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlDtdParamEntityRefMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlDtdParamEntityRef", JSImport.Default)
   @js.native
-  class default[Parent] protected () extends XmlDtdParamEntityRef[Parent] {
+  class default[Parent] protected ()
+    extends StObject
+       with XmlDtdParamEntityRef[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDtdParamEntityRefOptions) = this()
   }
   
-  @js.native
   trait IXmlDtdParamEntityRefOptions extends StObject {
     
     /**
       * The name of the entity to be referenced.
       */
-    var name: String = js.native
+    var name: String
   }
   object IXmlDtdParamEntityRefOptions {
     

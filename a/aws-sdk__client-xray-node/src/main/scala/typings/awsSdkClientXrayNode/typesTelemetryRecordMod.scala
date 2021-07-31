@@ -5,12 +5,10 @@ import typings.awsSdkClientXrayNode.typesBackendConnectionErrorsMod.Unmarshalled
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTelemetryRecordMod {
   
-  @js.native
   trait TelemetryRecord extends StObject {
     
     /**
@@ -18,32 +16,32 @@ object typesTelemetryRecordMod {
       */
     var BackendConnectionErrors: js.UndefOr[
         typings.awsSdkClientXrayNode.typesBackendConnectionErrorsMod.BackendConnectionErrors
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p/>
       */
-    var SegmentsReceivedCount: js.UndefOr[Double] = js.native
+    var SegmentsReceivedCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p/>
       */
-    var SegmentsRejectedCount: js.UndefOr[Double] = js.native
+    var SegmentsRejectedCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p/>
       */
-    var SegmentsSentCount: js.UndefOr[Double] = js.native
+    var SegmentsSentCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p/>
       */
-    var SegmentsSpilloverCount: js.UndefOr[Double] = js.native
+    var SegmentsSpilloverCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p/>
       */
-    var Timestamp: Date | String | Double = js.native
+    var Timestamp: Date | String | Double
   }
   object TelemetryRecord {
     
@@ -91,20 +89,21 @@ object typesTelemetryRecordMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledTelemetryRecord extends TelemetryRecord {
+  trait UnmarshalledTelemetryRecord
+    extends StObject
+       with TelemetryRecord {
     
     /**
       * <p/>
       */
     @JSName("BackendConnectionErrors")
-    var BackendConnectionErrors_UnmarshalledTelemetryRecord: js.UndefOr[UnmarshalledBackendConnectionErrors] = js.native
+    var BackendConnectionErrors_UnmarshalledTelemetryRecord: js.UndefOr[UnmarshalledBackendConnectionErrors] = js.undefined
     
     /**
       * <p/>
       */
     @JSName("Timestamp")
-    var Timestamp_UnmarshalledTelemetryRecord: Date = js.native
+    var Timestamp_UnmarshalledTelemetryRecord: Date
   }
   object UnmarshalledTelemetryRecord {
     

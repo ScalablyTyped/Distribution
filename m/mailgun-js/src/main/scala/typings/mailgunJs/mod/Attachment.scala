@@ -4,21 +4,19 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachment extends StObject {
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var data: String | Buffer | ReadWriteStream = js.native
+  var data: String | Buffer | ReadWriteStream
   
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
-  def getType(): String = js.native
+  def getType(): String
   
-  var knownLength: js.UndefOr[Double] = js.native
+  var knownLength: js.UndefOr[Double] = js.undefined
 }
 object Attachment {
   

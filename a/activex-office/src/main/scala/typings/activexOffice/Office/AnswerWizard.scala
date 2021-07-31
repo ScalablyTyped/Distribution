@@ -2,26 +2,66 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnswerWizard extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  def ClearFileList(): Unit = js.native
+  def ClearFileList(): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Files(Index: Double): String = js.native
+  def Files(Index: Double): String
   @JSName("Files")
-  val Files_Original: AnswerWizardFiles = js.native
+  val Files_Original: AnswerWizardFiles
   
   @JSName("Office.AnswerWizard_typekey")
-  var OfficeDotAnswerWizard_typekey: AnswerWizard = js.native
+  var OfficeDotAnswerWizard_typekey: AnswerWizard
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def ResetFileList(): Unit = js.native
+  def ResetFileList(): Unit
+}
+object AnswerWizard {
+  
+  @scala.inline
+  def apply(
+    Application: js.Any,
+    ClearFileList: () => Unit,
+    Creator: Double,
+    Files: AnswerWizardFiles,
+    OfficeDotAnswerWizard_typekey: AnswerWizard,
+    Parent: js.Any,
+    ResetFileList: () => Unit
+  ): AnswerWizard = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], ClearFileList = js.Any.fromFunction0(ClearFileList), Creator = Creator.asInstanceOf[js.Any], Files = Files.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], ResetFileList = js.Any.fromFunction0(ResetFileList))
+    __obj.updateDynamic("Office.AnswerWizard_typekey")(OfficeDotAnswerWizard_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnswerWizard]
+  }
+  
+  @scala.inline
+  implicit class AnswerWizardMutableBuilder[Self <: AnswerWizard] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setClearFileList(value: () => Unit): Self = StObject.set(x, "ClearFileList", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFiles(value: AnswerWizardFiles): Self = StObject.set(x, "Files", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOfficeDotAnswerWizard_typekey(value: AnswerWizard): Self = StObject.set(x, "Office.AnswerWizard_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setResetFileList(value: () => Unit): Self = StObject.set(x, "ResetFileList", js.Any.fromFunction0(value))
+  }
 }

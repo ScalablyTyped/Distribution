@@ -2,7 +2,6 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,12 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * https://github.com/Project-OSRM/node-osrm/blob/master/docs/api.md#match
   */
-@js.native
-trait MatchWaypoint extends Waypoint {
+trait MatchWaypoint
+  extends StObject
+     with Waypoint {
   
-  var matchings_index: js.Array[Double] = js.native
+  var matchings_index: js.Array[Double]
   
-  var waypoint_index: js.Array[Double] = js.native
+  var waypoint_index: js.Array[Double]
 }
 object MatchWaypoint {
   

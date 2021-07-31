@@ -2,20 +2,18 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnBLEPeripheralConnectionStateChangedCallbackResult extends StObject {
   
   /** 连接目前状态 */
-  var connected: Boolean = js.native
+  var connected: Boolean
   
   /** 连接状态变化的设备 id */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** server 的 uuid */
-  var serverId: String = js.native
+  var serverId: String
 }
 object OnBLEPeripheralConnectionStateChangedCallbackResult {
   

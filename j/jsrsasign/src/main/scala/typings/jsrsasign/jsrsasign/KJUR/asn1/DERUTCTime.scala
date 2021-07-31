@@ -3,7 +3,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,7 +26,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * d4 = new KJUR.asn1.DERUTCTime('130430125959Z');
   */
 @js.native
-trait DERUTCTime extends DERAbstractTime {
+trait DERUTCTime
+  extends StObject
+     with DERAbstractTime {
   
   /**
     * set value by a Date object

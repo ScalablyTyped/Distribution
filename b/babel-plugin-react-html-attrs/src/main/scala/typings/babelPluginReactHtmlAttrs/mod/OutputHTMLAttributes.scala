@@ -2,19 +2,19 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OutputHTMLAttributes[T] extends HTMLAttributes[T] {
+trait OutputHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var `for`: js.UndefOr[String] = js.native
+  var `for`: js.UndefOr[String] = js.undefined
   
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
   
-  var htmlFor: js.UndefOr[String] = js.native
+  var htmlFor: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object OutputHTMLAttributes {
   
@@ -25,7 +25,7 @@ object OutputHTMLAttributes {
   }
   
   @scala.inline
-  implicit class OutputHTMLAttributesMutableBuilder[Self <: OutputHTMLAttributes[_], T] (val x: Self with OutputHTMLAttributes[T]) extends AnyVal {
+  implicit class OutputHTMLAttributesMutableBuilder[Self <: OutputHTMLAttributes[?], T] (val x: Self & OutputHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])

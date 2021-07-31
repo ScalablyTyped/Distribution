@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Foundation.Metadata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object MarshalingType extends StObject {
   
   /** The class marshals and unmarshals to the same pointer value on all interfaces. */
   @js.native
-  sealed trait agile extends MarshalingType
+  sealed trait agile
+    extends StObject
+       with MarshalingType
   
   /** The class can't be marshaled. */
   @js.native
-  sealed trait invalidMarshaling extends MarshalingType
+  sealed trait invalidMarshaling
+    extends StObject
+       with MarshalingType
   
   /** The class prevents marshaling on all interfaces. */
   @js.native
-  sealed trait none extends MarshalingType
+  sealed trait none
+    extends StObject
+       with MarshalingType
   
   /** The class does not implement IMarshal or forwards to CoGetStandardMarshal on all interfaces. */
   @js.native
-  sealed trait standard extends MarshalingType
+  sealed trait standard
+    extends StObject
+       with MarshalingType
 }

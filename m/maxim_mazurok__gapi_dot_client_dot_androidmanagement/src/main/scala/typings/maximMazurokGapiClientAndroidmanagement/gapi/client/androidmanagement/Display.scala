@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Display extends StObject {
   
   /** Display density expressed as dots-per-inch. */
-  var density: js.UndefOr[Double] = js.native
+  var density: js.UndefOr[Double] = js.undefined
   
   /** Unique display id. */
-  var displayId: js.UndefOr[Double] = js.native
+  var displayId: js.UndefOr[Double] = js.undefined
   
   /** Display height in pixels. */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** Name of the display. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Refresh rate of the display in frames per second. */
-  var refreshRate: js.UndefOr[Double] = js.native
+  var refreshRate: js.UndefOr[Double] = js.undefined
   
   /** State of the display. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Display width in pixels. */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Display {
   

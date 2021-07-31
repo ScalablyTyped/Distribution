@@ -2,39 +2,34 @@ package typings.creditcardutils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("creditcardutils", "formatCardExpiry")
+  @JSImport("creditcardutils", JSImport.Namespace)
   @js.native
-  def formatCardExpiry(expiration: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("creditcardutils", "formatCardNumber")
-  @js.native
-  def formatCardNumber(unformatted: String): String = js.native
+  @scala.inline
+  def formatCardExpiry(expiration: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCardExpiry")(expiration.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("creditcardutils", "parseCardExpiry")
-  @js.native
-  def parseCardExpiry(expiration: String): js.Object = js.native
+  @scala.inline
+  def formatCardNumber(unformatted: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCardNumber")(unformatted.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("creditcardutils", "parseCardType")
-  @js.native
-  def parseCardType(cardNumber: String): String = js.native
+  @scala.inline
+  def parseCardExpiry(expiration: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCardExpiry")(expiration.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSImport("creditcardutils", "validateCardCVC")
-  @js.native
-  def validateCardCVC(cvc: String): Boolean = js.native
-  @JSImport("creditcardutils", "validateCardCVC")
-  @js.native
-  def validateCardCVC(cvc: String, `type`: String): Boolean = js.native
+  @scala.inline
+  def parseCardType(cardNumber: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCardType")(cardNumber.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("creditcardutils", "validateCardExpiry")
-  @js.native
-  def validateCardExpiry(month: String, year: String): Boolean = js.native
+  @scala.inline
+  def validateCardCVC(cvc: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateCardCVC")(cvc.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def validateCardCVC(cvc: String, `type`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateCardCVC")(cvc.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("creditcardutils", "validateCardNumber")
-  @js.native
-  def validateCardNumber(cardNumber: String): Boolean = js.native
+  @scala.inline
+  def validateCardExpiry(month: String, year: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateCardExpiry")(month.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def validateCardNumber(cardNumber: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateCardNumber")(cardNumber.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

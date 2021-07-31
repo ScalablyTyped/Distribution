@@ -4,11 +4,12 @@ import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.MessagePort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IpcRenderer extends EventEmitter {
+trait IpcRenderer
+  extends StObject
+     with EventEmitter {
   
   // Docs: https://electronjs.org/docs/api/ipc-renderer
   /**
@@ -33,7 +34,7 @@ trait IpcRenderer extends EventEmitter {
     *
     * If you do not need a response to the message, consider using `ipcRenderer.send`.
     */
-  def invoke(channel: String, args: js.Any*): js.Promise[_] = js.native
+  def invoke(channel: String, args: js.Any*): js.Promise[js.Any] = js.native
   
   /**
     * Listens to `channel`, when a new message arrives `listener` would be called with

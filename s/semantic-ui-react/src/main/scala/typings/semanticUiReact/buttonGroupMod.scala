@@ -18,7 +18,6 @@ import typings.semanticUiReact.semanticUiReactStrings.right
 import typings.semanticUiReact.semanticUiReactStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonGroupMod extends Shortcut {
@@ -27,9 +26,9 @@ object buttonGroupMod extends Shortcut {
   @js.native
   val default: StatelessComponent[ButtonGroupProps] = js.native
   
-  @js.native
   trait ButtonGroupProps
-    extends StrictButtonGroupProps
+    extends StObject
+       with StrictButtonGroupProps
        with /* key */ StringDictionary[js.Any]
   object ButtonGroupProps {
     
@@ -40,74 +39,73 @@ object buttonGroupMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictButtonGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Groups can be attached to other content. */
-    var attached: js.UndefOr[Boolean | left | right | top | bottom] = js.native
+    var attached: js.UndefOr[Boolean | left | right | top | bottom] = js.undefined
     
     /** Groups can be less pronounced. */
-    var basic: js.UndefOr[Boolean] = js.native
+    var basic: js.UndefOr[Boolean] = js.undefined
     
     /** Array of shorthand Button values. */
-    var buttons: js.UndefOr[SemanticShorthandCollection[ButtonProps]] = js.native
+    var buttons: js.UndefOr[SemanticShorthandCollection[ButtonProps]] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Groups can have a shared color. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** Groups can reduce their padding to fit into tighter spaces. */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Groups can be aligned to the left or right of its container. */
-    var floated: js.UndefOr[SemanticFLOATS] = js.native
+    var floated: js.UndefOr[SemanticFLOATS] = js.undefined
     
     /** Groups can take the width of their container. */
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
     
     /** Groups can be formatted as icons. */
-    var icon: js.UndefOr[Boolean] = js.native
+    var icon: js.UndefOr[Boolean] = js.undefined
     
     /** Groups can be formatted to appear on dark backgrounds. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Groups can be formatted as labeled icon buttons. */
-    var labeled: js.UndefOr[Boolean] = js.native
+    var labeled: js.UndefOr[Boolean] = js.undefined
     
     /** Groups can hint towards a negative consequence. */
-    var negative: js.UndefOr[Boolean] = js.native
+    var negative: js.UndefOr[Boolean] = js.undefined
     
     /** Groups can hint towards a positive consequence. */
-    var positive: js.UndefOr[Boolean] = js.native
+    var positive: js.UndefOr[Boolean] = js.undefined
     
     /** Groups can be formatted to show different levels of emphasis. */
-    var primary: js.UndefOr[Boolean] = js.native
+    var primary: js.UndefOr[Boolean] = js.undefined
     
     /** Groups can be formatted to show different levels of emphasis. */
-    var secondary: js.UndefOr[Boolean] = js.native
+    var secondary: js.UndefOr[Boolean] = js.undefined
     
     /** Groups can have different sizes. */
-    var size: js.UndefOr[SemanticSIZES] = js.native
+    var size: js.UndefOr[SemanticSIZES] = js.undefined
     
     /** Groups can be formatted to toggle on and off. */
-    var toggle: js.UndefOr[Boolean] = js.native
+    var toggle: js.UndefOr[Boolean] = js.undefined
     
     /** Groups can be formatted to appear vertically. */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
     
     /** Groups can have their widths divided evenly. */
-    var widths: js.UndefOr[SemanticWIDTHS] = js.native
+    var widths: js.UndefOr[SemanticWIDTHS] = js.undefined
   }
   object StrictButtonGroupProps {
     

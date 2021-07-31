@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authorization {
@@ -14,18 +13,17 @@ object authorization {
     /**
       * NonResourceAttributes includes the authorization attributes available for non-resource requests to the Authorizer interface
       */
-    @js.native
     trait NonResourceAttributes extends StObject {
       
       /**
         * Path is the URL path of the request
         */
-      var path: js.UndefOr[Input[String]] = js.native
+      var path: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Verb is the standard HTTP verb
         */
-      var verb: js.UndefOr[Input[String]] = js.native
+      var verb: js.UndefOr[Input[String]] = js.undefined
     }
     object NonResourceAttributes {
       
@@ -55,43 +53,42 @@ object authorization {
     /**
       * ResourceAttributes includes the authorization attributes available for resource requests to the Authorizer interface
       */
-    @js.native
     trait ResourceAttributes extends StObject {
       
       /**
         * Group is the API Group of the Resource.  "*" means all.
         */
-      var group: js.UndefOr[Input[String]] = js.native
+      var group: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Name is the name of the resource being requested for a "get" or deleted for a "delete". "" (empty) means all.
         */
-      var name: js.UndefOr[Input[String]] = js.native
+      var name: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Namespace is the namespace of the action being requested.  Currently, there is no distinction between no namespace and all namespaces "" (empty) is defaulted for LocalSubjectAccessReviews "" (empty) is empty for cluster-scoped resources "" (empty) means "all" for namespace scoped resources from a SubjectAccessReview or SelfSubjectAccessReview
         */
-      var namespace: js.UndefOr[Input[String]] = js.native
+      var namespace: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Resource is one of the existing resource types.  "*" means all.
         */
-      var resource: js.UndefOr[Input[String]] = js.native
+      var resource: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Subresource is one of the existing resource types.  "" means none.
         */
-      var subresource: js.UndefOr[Input[String]] = js.native
+      var subresource: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Verb is a kubernetes resource API verb, like: get, list, watch, create, update, delete, proxy.  "*" means all.
         */
-      var verb: js.UndefOr[Input[String]] = js.native
+      var verb: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Version is the API Version of the Resource.  "*" means all.
         */
-      var version: js.UndefOr[Input[String]] = js.native
+      var version: js.UndefOr[Input[String]] = js.undefined
     }
     object ResourceAttributes {
       
@@ -151,18 +148,17 @@ object authorization {
     /**
       * SelfSubjectAccessReviewSpec is a description of the access request.  Exactly one of ResourceAuthorizationAttributes and NonResourceAuthorizationAttributes must be set
       */
-    @js.native
     trait SelfSubjectAccessReviewSpec extends StObject {
       
       /**
         * NonResourceAttributes describes information for a non-resource access request
         */
-      var nonResourceAttributes: js.UndefOr[Input[NonResourceAttributes]] = js.native
+      var nonResourceAttributes: js.UndefOr[Input[NonResourceAttributes]] = js.undefined
       
       /**
         * ResourceAuthorizationAttributes describes information for a resource access request
         */
-      var resourceAttributes: js.UndefOr[Input[ResourceAttributes]] = js.native
+      var resourceAttributes: js.UndefOr[Input[ResourceAttributes]] = js.undefined
     }
     object SelfSubjectAccessReviewSpec {
       
@@ -189,13 +185,12 @@ object authorization {
       }
     }
     
-    @js.native
     trait SelfSubjectRulesReviewSpec extends StObject {
       
       /**
         * Namespace to evaluate rules for. Required.
         */
-      var namespace: js.UndefOr[Input[String]] = js.native
+      var namespace: js.UndefOr[Input[String]] = js.undefined
     }
     object SelfSubjectRulesReviewSpec {
       
@@ -219,38 +214,37 @@ object authorization {
     /**
       * SubjectAccessReviewSpec is a description of the access request.  Exactly one of ResourceAuthorizationAttributes and NonResourceAuthorizationAttributes must be set
       */
-    @js.native
     trait SubjectAccessReviewSpec extends StObject {
       
       /**
         * Extra corresponds to the user.Info.GetExtra() method from the authenticator.  Since that is input to the authorizer it needs a reflection here.
         */
-      var extra: js.UndefOr[Input[StringDictionary[Input[js.Array[Input[String]]]]]] = js.native
+      var extra: js.UndefOr[Input[StringDictionary[Input[js.Array[Input[String]]]]]] = js.undefined
       
       /**
         * Groups is the groups you're testing for.
         */
-      var groups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+      var groups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
       
       /**
         * NonResourceAttributes describes information for a non-resource access request
         */
-      var nonResourceAttributes: js.UndefOr[Input[NonResourceAttributes]] = js.native
+      var nonResourceAttributes: js.UndefOr[Input[NonResourceAttributes]] = js.undefined
       
       /**
         * ResourceAuthorizationAttributes describes information for a resource access request
         */
-      var resourceAttributes: js.UndefOr[Input[ResourceAttributes]] = js.native
+      var resourceAttributes: js.UndefOr[Input[ResourceAttributes]] = js.undefined
       
       /**
         * UID information about the requesting user.
         */
-      var uid: js.UndefOr[Input[String]] = js.native
+      var uid: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * User is the user you're testing for. If you specify "User" but not "Groups", then is it interpreted as "What if User were not a member of any groups
         */
-      var user: js.UndefOr[Input[String]] = js.native
+      var user: js.UndefOr[Input[String]] = js.undefined
     }
     object SubjectAccessReviewSpec {
       
@@ -310,18 +304,17 @@ object authorization {
     /**
       * NonResourceAttributes includes the authorization attributes available for non-resource requests to the Authorizer interface
       */
-    @js.native
     trait NonResourceAttributes extends StObject {
       
       /**
         * Path is the URL path of the request
         */
-      var path: js.UndefOr[Input[String]] = js.native
+      var path: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Verb is the standard HTTP verb
         */
-      var verb: js.UndefOr[Input[String]] = js.native
+      var verb: js.UndefOr[Input[String]] = js.undefined
     }
     object NonResourceAttributes {
       
@@ -351,43 +344,42 @@ object authorization {
     /**
       * ResourceAttributes includes the authorization attributes available for resource requests to the Authorizer interface
       */
-    @js.native
     trait ResourceAttributes extends StObject {
       
       /**
         * Group is the API Group of the Resource.  "*" means all.
         */
-      var group: js.UndefOr[Input[String]] = js.native
+      var group: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Name is the name of the resource being requested for a "get" or deleted for a "delete". "" (empty) means all.
         */
-      var name: js.UndefOr[Input[String]] = js.native
+      var name: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Namespace is the namespace of the action being requested.  Currently, there is no distinction between no namespace and all namespaces "" (empty) is defaulted for LocalSubjectAccessReviews "" (empty) is empty for cluster-scoped resources "" (empty) means "all" for namespace scoped resources from a SubjectAccessReview or SelfSubjectAccessReview
         */
-      var namespace: js.UndefOr[Input[String]] = js.native
+      var namespace: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Resource is one of the existing resource types.  "*" means all.
         */
-      var resource: js.UndefOr[Input[String]] = js.native
+      var resource: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Subresource is one of the existing resource types.  "" means none.
         */
-      var subresource: js.UndefOr[Input[String]] = js.native
+      var subresource: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Verb is a kubernetes resource API verb, like: get, list, watch, create, update, delete, proxy.  "*" means all.
         */
-      var verb: js.UndefOr[Input[String]] = js.native
+      var verb: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Version is the API Version of the Resource.  "*" means all.
         */
-      var version: js.UndefOr[Input[String]] = js.native
+      var version: js.UndefOr[Input[String]] = js.undefined
     }
     object ResourceAttributes {
       
@@ -447,18 +439,17 @@ object authorization {
     /**
       * SelfSubjectAccessReviewSpec is a description of the access request.  Exactly one of ResourceAuthorizationAttributes and NonResourceAuthorizationAttributes must be set
       */
-    @js.native
     trait SelfSubjectAccessReviewSpec extends StObject {
       
       /**
         * NonResourceAttributes describes information for a non-resource access request
         */
-      var nonResourceAttributes: js.UndefOr[Input[NonResourceAttributes]] = js.native
+      var nonResourceAttributes: js.UndefOr[Input[NonResourceAttributes]] = js.undefined
       
       /**
         * ResourceAuthorizationAttributes describes information for a resource access request
         */
-      var resourceAttributes: js.UndefOr[Input[ResourceAttributes]] = js.native
+      var resourceAttributes: js.UndefOr[Input[ResourceAttributes]] = js.undefined
     }
     object SelfSubjectAccessReviewSpec {
       
@@ -485,13 +476,12 @@ object authorization {
       }
     }
     
-    @js.native
     trait SelfSubjectRulesReviewSpec extends StObject {
       
       /**
         * Namespace to evaluate rules for. Required.
         */
-      var namespace: js.UndefOr[Input[String]] = js.native
+      var namespace: js.UndefOr[Input[String]] = js.undefined
     }
     object SelfSubjectRulesReviewSpec {
       
@@ -515,38 +505,37 @@ object authorization {
     /**
       * SubjectAccessReviewSpec is a description of the access request.  Exactly one of ResourceAuthorizationAttributes and NonResourceAuthorizationAttributes must be set
       */
-    @js.native
     trait SubjectAccessReviewSpec extends StObject {
       
       /**
         * Extra corresponds to the user.Info.GetExtra() method from the authenticator.  Since that is input to the authorizer it needs a reflection here.
         */
-      var extra: js.UndefOr[Input[StringDictionary[Input[js.Array[Input[String]]]]]] = js.native
+      var extra: js.UndefOr[Input[StringDictionary[Input[js.Array[Input[String]]]]]] = js.undefined
       
       /**
         * Groups is the groups you're testing for.
         */
-      var group: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+      var group: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
       
       /**
         * NonResourceAttributes describes information for a non-resource access request
         */
-      var nonResourceAttributes: js.UndefOr[Input[NonResourceAttributes]] = js.native
+      var nonResourceAttributes: js.UndefOr[Input[NonResourceAttributes]] = js.undefined
       
       /**
         * ResourceAuthorizationAttributes describes information for a resource access request
         */
-      var resourceAttributes: js.UndefOr[Input[ResourceAttributes]] = js.native
+      var resourceAttributes: js.UndefOr[Input[ResourceAttributes]] = js.undefined
       
       /**
         * UID information about the requesting user.
         */
-      var uid: js.UndefOr[Input[String]] = js.native
+      var uid: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * User is the user you're testing for. If you specify "User" but not "Group", then is it interpreted as "What if User were not a member of any groups
         */
-      var user: js.UndefOr[Input[String]] = js.native
+      var user: js.UndefOr[Input[String]] = js.undefined
     }
     object SubjectAccessReviewSpec {
       

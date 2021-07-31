@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GalleryReference extends StObject {
   
   /** The name of the host for the community gallery template. */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /** If a user has manually edited the community gallery template. */
-  var isModified: js.UndefOr[Boolean] = js.native
+  var isModified: js.UndefOr[Boolean] = js.undefined
   
   /** The name of the owner for the community gallery template. */
-  var owner: js.UndefOr[String] = js.native
+  var owner: js.UndefOr[String] = js.undefined
   
   /** The name of the repository for the community gallery template. */
-  var repository: js.UndefOr[String] = js.native
+  var repository: js.UndefOr[String] = js.undefined
   
   /** The signature of the community gallery template as computed at import time. This value is recomputed whenever the template is updated from the gallery. */
-  var signature: js.UndefOr[String] = js.native
+  var signature: js.UndefOr[String] = js.undefined
   
   /** The version of the community gallery template. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object GalleryReference {
   

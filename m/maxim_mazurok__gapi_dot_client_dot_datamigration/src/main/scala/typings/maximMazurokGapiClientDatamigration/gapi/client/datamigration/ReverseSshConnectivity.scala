@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReverseSshConnectivity extends StObject {
   
   /** The name of the virtual machine (Compute Engine) used as the bastion server for the SSH tunnel. */
-  var vm: js.UndefOr[String] = js.native
+  var vm: js.UndefOr[String] = js.undefined
   
   /** Required. The IP of the virtual machine (Compute Engine) used as the bastion server for the SSH tunnel. */
-  var vmIp: js.UndefOr[String] = js.native
+  var vmIp: js.UndefOr[String] = js.undefined
   
   /** Required. The forwarding port of the virtual machine (Compute Engine) used as the bastion server for the SSH tunnel. */
-  var vmPort: js.UndefOr[Double] = js.native
+  var vmPort: js.UndefOr[Double] = js.undefined
   
   /** The name of the VPC to peer with the Cloud SQL private network. */
-  var vpc: js.UndefOr[String] = js.native
+  var vpc: js.UndefOr[String] = js.undefined
 }
 object ReverseSshConnectivity {
   

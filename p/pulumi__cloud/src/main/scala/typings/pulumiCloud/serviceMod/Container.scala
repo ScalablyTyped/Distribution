@@ -4,10 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Container extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait Container extends StObject {
     * Container, or a ContainerBuild object with more detailed build instructions.  If `image` is also specified, the
     * built container will be tagged with that name, but otherwise will get an auto-generated image name.
     */
-  var build: js.UndefOr[String | ContainerBuild] = js.native
+  var build: js.UndefOr[String | ContainerBuild] = js.undefined
   
   /**
     * The command line that is passed to the container. This parameter maps to
@@ -27,13 +25,13 @@ trait Container extends StObject {
     * information about the Docker `CMD` parameter, go to
     * https://docs.docker.com/engine/reference/builder/#cmd.
     */
-  var command: js.UndefOr[Input[js.Array[String]]] = js.native
+  var command: js.UndefOr[Input[js.Array[String]]] = js.undefined
   
   /**
     * Number of CPUs for the container to use. Maps to the Docker `--cpus` option - see
     * https://docs.docker.com/engine/reference/commandline/run.
     */
-  var cpu: js.UndefOr[Input[Double]] = js.native
+  var cpu: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * A key/value map of labels to add to the container. This parameter maps to Labels in the [Create a
@@ -41,26 +39,26 @@ trait Container extends StObject {
     * API](https://docs.docker.com/engine/api/v1.27/) and the --label option to [docker
     * run](https://docs.docker.com/engine/reference/run/).
     */
-  var dockerLabels: js.UndefOr[Input[StringDictionary[String]]] = js.native
+  var dockerLabels: js.UndefOr[Input[StringDictionary[String]]] = js.undefined
   
   /**
     * Optional environment variables to set and make available to the container
     * as it is running.
     */
-  var environment: js.UndefOr[StringDictionary[Input[String]]] = js.native
+  var environment: js.UndefOr[StringDictionary[Input[String]]] = js.undefined
   
   /**
     * The function code to use as the implementation of the contaner.  If `function` is specified,
     * neither `image` nor `build` are legal.
     */
-  var function: js.UndefOr[js.Function0[Unit]] = js.native
+  var function: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * The image to use for the container.  If `image` is specified, but not `build`, the image will be
     * pulled from the Docker Hub.  If `image` *and* `build` are specified, the `image` controls the
     * resulting image tag for the build image that gets pushed.
     */
-  var image: js.UndefOr[Input[String]] = js.native
+  var image: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The maximum amount of memory the container will be allowed to use. Maps to the Docker
@@ -69,7 +67,7 @@ trait Container extends StObject {
     *
     * This should be supplied in MB. i.e. A value of 1024 would equal one gigabyte.
     */
-  var memory: js.UndefOr[Input[Double]] = js.native
+  var memory: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The amount of memory to reserve for the container, but the container will
@@ -80,7 +78,7 @@ trait Container extends StObject {
     *
     * This should be supplied in MB. i.e. A value of 1024 would equal one gigabyte.
     */
-  var memoryReservation: js.UndefOr[Input[Double]] = js.native
+  var memoryReservation: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * An array of ports to publish from the container.  Ports are exposed using the TCP protocol.  If the [external]
@@ -88,7 +86,7 @@ trait Container extends StObject {
     * Maps to the Docker `--publish` option - see
     * https://docs.docker.com/engine/reference/commandline/run.
     */
-  var ports: js.UndefOr[js.Array[ContainerPort]] = js.native
+  var ports: js.UndefOr[js.Array[ContainerPort]] = js.undefined
   
   /**
     * An array of volume mounts, indicating a volume to mount and a path within
@@ -96,7 +94,7 @@ trait Container extends StObject {
     * `--volume` option - see
     * https://docs.docker.com/engine/reference/commandline/run.
     */
-  var volumes: js.UndefOr[js.Array[ContainerVolumeMount]] = js.native
+  var volumes: js.UndefOr[js.Array[ContainerVolumeMount]] = js.undefined
 }
 object Container {
   

@@ -2,7 +2,6 @@ package typings.smartystreetsJavascriptSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object internationalStreet {
@@ -48,7 +47,8 @@ object internationalStreet {
   @JSImport("smartystreets-javascript-sdk", "internationalStreet.Lookup")
   @js.native
   class Lookup protected ()
-    extends typings.smartystreetsJavascriptSdk.mod.core.Lookup {
+    extends StObject
+       with typings.smartystreetsJavascriptSdk.mod.core.Lookup {
     def this(country: String, freeform: String) = this()
     
     var address1: String = js.native
@@ -81,6 +81,6 @@ object internationalStreet {
     
     var postalCode: String = js.native
     
-    var result: js.Array[_] = js.native
+    var result: js.Array[js.Any] = js.native
   }
 }

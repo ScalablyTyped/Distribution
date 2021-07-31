@@ -16,34 +16,32 @@ import typings.electron.electronStrings.killed
 import typings.electron.electronStrings.oom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Details extends StObject {
   
   /**
     * The exit code for the process (e.g. status from waitpid if on posix, from
     * GetExitCodeProcess on Windows).
     */
-  var exitCode: Double = js.native
+  var exitCode: Double
   
   /**
     * The name of the process. i.e. for plugins it might be Flash. Examples for
     * utility: `Audio Service`, `Content Decryption Module Service`, `Network
     * Service`, `Video Capture`, etc.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The reason the child process is gone. Possible values:
     */
-  var reason: `clean-exit` | `abnormal-exit` | killed | crashed | oom | `launch-failed` | `integrity-failure` = js.native
+  var reason: `clean-exit` | `abnormal-exit` | killed | crashed | oom | `launch-failed` | `integrity-failure`
   
   /**
     * Process type. One of the following values:
     */
-  var `type`: Utility | Zygote | (`Sandbox helper`) | GPU | (`Pepper Plugin`) | (`Pepper Plugin Broker`) | Unknown = js.native
+  var `type`: Utility | Zygote | (`Sandbox helper`) | GPU | (`Pepper Plugin`) | (`Pepper Plugin Broker`) | Unknown
 }
 object Details {
   

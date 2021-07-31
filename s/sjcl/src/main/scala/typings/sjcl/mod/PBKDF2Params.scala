@@ -2,16 +2,14 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________
-@js.native
 trait PBKDF2Params extends StObject {
   
-  var iter: js.UndefOr[Double] = js.native
+  var iter: js.UndefOr[Double] = js.undefined
   
-  var salt: js.UndefOr[BitArray_] = js.native
+  var salt: js.UndefOr[BitArray_] = js.undefined
 }
 object PBKDF2Params {
   

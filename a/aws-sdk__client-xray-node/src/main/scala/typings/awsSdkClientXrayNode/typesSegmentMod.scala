@@ -2,23 +2,21 @@ package typings.awsSdkClientXrayNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSegmentMod {
   
-  @js.native
   trait Segment extends StObject {
     
     /**
       * <p>The segment document.</p>
       */
-    var Document: js.UndefOr[String] = js.native
+    var Document: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The segment's ID.</p>
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
   }
   object Segment {
     

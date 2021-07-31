@@ -7,21 +7,19 @@ import typings.dockerode.dockerodeStrings.tcp
 import typings.dockerode.dockerodeStrings.udp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortConfig extends StObject {
   
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
-  var Protocol: js.UndefOr[tcp | udp | sctp] = js.native
+  var Protocol: js.UndefOr[tcp | udp | sctp] = js.undefined
   
-  var PublishMode: js.UndefOr[ingress | host] = js.native
+  var PublishMode: js.UndefOr[ingress | host] = js.undefined
   
-  var PublishedPort: js.UndefOr[Double] = js.native
+  var PublishedPort: js.UndefOr[Double] = js.undefined
   
-  var TargetPort: js.UndefOr[Double] = js.native
+  var TargetPort: js.UndefOr[Double] = js.undefined
 }
 object PortConfig {
   

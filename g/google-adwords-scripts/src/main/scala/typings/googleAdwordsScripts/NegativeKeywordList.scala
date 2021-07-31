@@ -2,25 +2,25 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NegativeKeywordList extends AdWordsEntity {
+trait NegativeKeywordList
+  extends StObject
+     with AdWordsEntity {
   
-  def addNegativeKeyword(keywordText: String): Unit = js.native
+  def addNegativeKeyword(keywordText: String): Unit
   
-  def addNegativeKeywords(keywordTexts: js.Array[String]): Unit = js.native
+  def addNegativeKeywords(keywordTexts: js.Array[String]): Unit
   
-  def campaigns(): AdWordsSelector[Campaign] = js.native
+  def campaigns(): AdWordsSelector[Campaign]
   
-  def getId(): Double = js.native
+  def getId(): Double
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def negativeKeywords(): AdWordsSelector[SharedNegativeKeyword] = js.native
+  def negativeKeywords(): AdWordsSelector[SharedNegativeKeyword]
   
-  def setName(): String = js.native
+  def setName(): String
 }
 object NegativeKeywordList {
   

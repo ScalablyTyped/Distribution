@@ -8,12 +8,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An application that provides data for a chart must implement this interface. */
-@js.native
-trait XDataProvider extends XInterface {
+trait XDataProvider
+  extends StObject
+     with XInterface {
   
   /**
     * Returns a component that is able to change a given range representation to another one. This usually is a controller-component that uses the GUI to
@@ -22,7 +22,7 @@ trait XDataProvider extends XInterface {
     * This method may return nothing, if it does not support range selection or if there is no current controller available that offers the functionality.
     * @returns The component for selecting a new range. It must support XComponent, in order to inform the receiver about its lifetime.
     */
-  val RangeSelection: XRangeSelection = js.native
+  val RangeSelection: XRangeSelection
   
   /**
     * creates a single data sequence for the given data range.
@@ -30,15 +30,15 @@ trait XDataProvider extends XInterface {
     * @see createDataSource
     * @throws com::sun::star::lang::IllegalArgumentException if the given range does not contain a valid range representation for a one-dimensional range of data.
     */
-  def createDataSequenceByRangeRepresentation(aRangeRepresentation: String): XDataSequence = js.native
+  def createDataSequenceByRangeRepresentation(aRangeRepresentation: String): XDataSequence
   
   /**
     * If `TRUE` is returned, a call to createDataSequenceByRangeRepresentation with the same argument must return a valid {@link XDataSequence} object. If
     * `FALSE` is returned, createDataSequenceByRangeRepresentation throws an exception.
     */
-  def createDataSequenceByRangeRepresentationPossible(aRangeRepresentation: String): Boolean = js.native
+  def createDataSequenceByRangeRepresentationPossible(aRangeRepresentation: String): Boolean
   
-  def createDataSequenceByValueArray(aRole: String, aValueArray: String): XDataSequence = js.native
+  def createDataSequenceByValueArray(aRole: String, aValueArray: String): XDataSequence
   
   /**
     * Creates a data source object that matches the given range representation string.
@@ -48,13 +48,13 @@ trait XDataProvider extends XInterface {
     * @returns a data source containing DataSequences that span the entire region given in `aArguments` .
     * @throws com::sun::star::lang::IllegalArgumentException may be raised by the {@link XDataProvider} if it is unable to interpret the arguments passed in `a
     */
-  def createDataSource(aArguments: SeqEquiv[PropertyValue]): XDataSource = js.native
+  def createDataSource(aArguments: SeqEquiv[PropertyValue]): XDataSource
   
   /**
     * If `TRUE` is returned, a call to createDataSource with the same arguments must return a valid {@link XDataSequence} object. If `FALSE` is returned,
     * createDataSource throws an exception.
     */
-  def createDataSourcePossible(aArguments: SeqEquiv[PropertyValue]): Boolean = js.native
+  def createDataSourcePossible(aArguments: SeqEquiv[PropertyValue]): Boolean
   
   /**
     * Tries to find out with what parameters the passed {@link DataSource} most probably was created.
@@ -67,7 +67,7 @@ trait XDataProvider extends XInterface {
     * @param xDataSource A data source containing all data used in a chart.
     * @returns Arguments that when being passed to {@link createDataSource()} should in an ideal case return the same data source as `xDataSource` .
     */
-  def detectArguments(xDataSource: XDataSource): SafeArray[PropertyValue] = js.native
+  def detectArguments(xDataSource: XDataSource): SafeArray[PropertyValue]
   
   /**
     * Returns a component that is able to change a given range representation to another one. This usually is a controller-component that uses the GUI to
@@ -76,7 +76,7 @@ trait XDataProvider extends XInterface {
     * This method may return nothing, if it does not support range selection or if there is no current controller available that offers the functionality.
     * @returns The component for selecting a new range. It must support XComponent, in order to inform the receiver about its lifetime.
     */
-  def getRangeSelection(): XRangeSelection = js.native
+  def getRangeSelection(): XRangeSelection
 }
 object XDataProvider {
   

@@ -18,10 +18,13 @@ import typings.std.HTMLElement
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@atlaskit/tree", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@atlaskit/tree", JSImport.Default)
   @js.native
@@ -54,25 +57,20 @@ object mod {
       @scala.inline
       def offsetPerLevel_=(x: `35`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("offsetPerLevel")(x.asInstanceOf[js.Any])
       
-      @JSImport("@atlaskit/tree", "default.defaultProps.onCollapse")
-      @js.native
-      def onCollapse(): Unit = js.native
+      @scala.inline
+      def onCollapse(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCollapse")().asInstanceOf[Unit]
       
-      @JSImport("@atlaskit/tree", "default.defaultProps.onDragEnd")
-      @js.native
-      def onDragEnd(): Unit = js.native
+      @scala.inline
+      def onDragEnd(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragEnd")().asInstanceOf[Unit]
       
-      @JSImport("@atlaskit/tree", "default.defaultProps.onDragStart")
-      @js.native
-      def onDragStart(): Unit = js.native
+      @scala.inline
+      def onDragStart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragStart")().asInstanceOf[Unit]
       
-      @JSImport("@atlaskit/tree", "default.defaultProps.onExpand")
-      @js.native
-      def onExpand(): Unit = js.native
+      @scala.inline
+      def onExpand(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onExpand")().asInstanceOf[Unit]
       
-      @JSImport("@atlaskit/tree", "default.defaultProps.renderItem")
-      @js.native
-      def renderItem(): Unit = js.native
+      @scala.inline
+      def renderItem(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderItem")().asInstanceOf[Unit]
       
       @JSImport("@atlaskit/tree", "default.defaultProps.tree")
       @js.native
@@ -82,20 +80,17 @@ object mod {
     }
   }
   
-  @JSImport("@atlaskit/tree", "moveItemOnTree")
-  @js.native
-  def moveItemOnTree(tree: TreeData, from: TreeSourcePosition, to: TreeDestinationPosition): TreeData = js.native
+  @scala.inline
+  def moveItemOnTree(tree: TreeData, from: TreeSourcePosition, to: TreeDestinationPosition): TreeData = (^.asInstanceOf[js.Dynamic].applyDynamic("moveItemOnTree")(tree.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[TreeData]
   
-  @JSImport("@atlaskit/tree", "mutateTree")
-  @js.native
-  def mutateTree(tree: TreeData, itemId: ItemId, mutation: TreeItemMutation): TreeData = js.native
+  @scala.inline
+  def mutateTree(tree: TreeData, itemId: ItemId, mutation: TreeItemMutation): TreeData = (^.asInstanceOf[js.Dynamic].applyDynamic("mutateTree")(tree.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any], mutation.asInstanceOf[js.Any])).asInstanceOf[TreeData]
   
-  @js.native
   trait FlattenedItem extends StObject {
     
-    var item: TreeItem = js.native
+    var item: TreeItem
     
-    var path: Path = js.native
+    var path: Path
   }
   object FlattenedItem {
     
@@ -127,20 +122,19 @@ object mod {
   
   type Path = js.Array[Double]
   
-  @js.native
   trait RenderItemParams extends StObject {
     
-    var depth: Double = js.native
+    var depth: Double
     
-    var item: TreeItem = js.native
+    var item: TreeItem
     
-    def onCollapse(itemId: ItemId): Unit = js.native
+    def onCollapse(itemId: ItemId): Unit
     
-    def onExpand(itemId: ItemId): Unit = js.native
+    def onExpand(itemId: ItemId): Unit
     
-    var provided: TreeDraggableProvided = js.native
+    var provided: TreeDraggableProvided
     
-    var snapshot: DraggableStateSnapshot = js.native
+    var snapshot: DraggableStateSnapshot
   }
   object RenderItemParams {
     
@@ -182,17 +176,16 @@ object mod {
   
   type Tree = Component[TreeProps, TreeState, js.Any]
   
-  @js.native
   trait TreeData extends StObject {
     
-    var items: StringDictionary[TreeItem] with NumberDictionary[TreeItem] = js.native
+    var items: StringDictionary[TreeItem] & NumberDictionary[TreeItem]
     
-    var rootId: ItemId = js.native
+    var rootId: ItemId
   }
   object TreeData {
     
     @scala.inline
-    def apply(items: StringDictionary[TreeItem] with NumberDictionary[TreeItem], rootId: ItemId): TreeData = {
+    def apply(items: StringDictionary[TreeItem] & NumberDictionary[TreeItem], rootId: ItemId): TreeData = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], rootId = rootId.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeData]
     }
@@ -201,19 +194,18 @@ object mod {
     implicit class TreeDataMutableBuilder[Self <: TreeData] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setItems(value: StringDictionary[TreeItem] with NumberDictionary[TreeItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: StringDictionary[TreeItem] & NumberDictionary[TreeItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRootId(value: ItemId): Self = StObject.set(x, "rootId", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait TreeDestinationPosition extends StObject {
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var parentId: ItemId = js.native
+    var parentId: ItemId
   }
   object TreeDestinationPosition {
     
@@ -237,15 +229,14 @@ object mod {
     }
   }
   
-  @js.native
   trait TreeDraggableProps extends StObject {
     
     // used for shared global styles
-    var `data-react-beautiful-dnd-draggable`: String = js.native
+    var `data-react-beautiful-dnd-draggable`: String
     
     // Props that can be spread onto the element directly
     // inline style
-    var style: js.UndefOr[TreeDraggableStyle] = js.native
+    var style: js.UndefOr[TreeDraggableStyle] = js.undefined
   }
   object TreeDraggableProps {
     
@@ -286,49 +277,45 @@ object mod {
   type TreeDraggableStyle = NotDraggingStyle | TreeDraggingStyle
   
   /* Inlined parent @atlaskit/tree.@atlaskit/tree.Omit<react-beautiful-dnd.react-beautiful-dnd.DraggingStyle, 'transition'> */
-  @js.native
   trait TreeDraggingStyle extends StObject {
     
-    var boxSizing: `border-box` = js.native
+    var boxSizing: `border-box`
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var paddingLeft: Double = js.native
+    var paddingLeft: Double
     
-    var pointerEvents: none = js.native
+    var pointerEvents: none
     
-    var position: fixed = js.native
+    var position: fixed
     
-    var top: Double = js.native
+    var top: Double
     
-    var transform: js.UndefOr[String] = js.native
+    var transform: js.UndefOr[String] = js.undefined
     
-    var transition: none | String = js.native
+    var transition: none | String
     
-    var width: Double = js.native
+    var width: Double
     
-    var zIndex: Double = js.native
+    var zIndex: Double
   }
   object TreeDraggingStyle {
     
     @scala.inline
     def apply(
-      boxSizing: `border-box`,
       height: Double,
       left: Double,
       paddingLeft: Double,
-      pointerEvents: none,
-      position: fixed,
       top: Double,
       transition: none | String,
       width: Double,
       zIndex: Double
     ): TreeDraggingStyle = {
-      val __obj = js.Dynamic.literal(boxSizing = boxSizing.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], paddingLeft = paddingLeft.asInstanceOf[js.Any], pointerEvents = pointerEvents.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(boxSizing = "border-box", height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], paddingLeft = paddingLeft.asInstanceOf[js.Any], pointerEvents = "none", position = "fixed", top = top.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeDraggingStyle]
     }
     
@@ -379,20 +366,19 @@ object mod {
     }
   }
   
-  @js.native
   trait TreeItem extends StObject {
     
-    var children: js.Array[ItemId] = js.native
+    var children: js.Array[ItemId]
     
-    var data: js.UndefOr[TreeItemData] = js.native
+    var data: js.UndefOr[TreeItemData] = js.undefined
     
-    var hasChildren: js.UndefOr[Boolean] = js.native
+    var hasChildren: js.UndefOr[Boolean] = js.undefined
     
-    var id: ItemId = js.native
+    var id: ItemId
     
-    var isChildrenLoading: js.UndefOr[Boolean] = js.native
+    var isChildrenLoading: js.UndefOr[Boolean] = js.undefined
     
-    var isExpanded: js.UndefOr[Boolean] = js.native
+    var isExpanded: js.UndefOr[Boolean] = js.undefined
   }
   object TreeItem {
     
@@ -442,20 +428,19 @@ object mod {
   
   type TreeItemData = js.Any
   
-  @js.native
   trait TreeItemMutation extends StObject {
     
-    var children: js.UndefOr[js.Array[ItemId]] = js.native
+    var children: js.UndefOr[js.Array[ItemId]] = js.undefined
     
-    var data: js.UndefOr[TreeItemData] = js.native
+    var data: js.UndefOr[TreeItemData] = js.undefined
     
-    var hasChildren: js.UndefOr[Boolean] = js.native
+    var hasChildren: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[ItemId] = js.native
+    var id: js.UndefOr[ItemId] = js.undefined
     
-    var isChildrenLoading: js.UndefOr[Boolean] = js.native
+    var isChildrenLoading: js.UndefOr[Boolean] = js.undefined
     
-    var isExpanded: js.UndefOr[Boolean] = js.native
+    var isExpanded: js.UndefOr[Boolean] = js.undefined
   }
   object TreeItemMutation {
     
@@ -541,12 +526,11 @@ object mod {
     var tree: TreeData = js.native
   }
   
-  @js.native
   trait TreeSourcePosition extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var parentId: ItemId = js.native
+    var parentId: ItemId
   }
   object TreeSourcePosition {
     
@@ -567,14 +551,13 @@ object mod {
     }
   }
   
-  @js.native
   trait TreeState extends StObject {
     
     // Id of the currently dragged item
-    var draggedItemId: ItemId = js.native
+    var draggedItemId: ItemId
     
     /** The flattened tree data structure transformed from props.tree */
-    var flattenedTree: FlattenedTree = js.native
+    var flattenedTree: FlattenedTree
   }
   object TreeState {
     

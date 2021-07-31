@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InternetMessageHeader extends StObject {
   
   // Represents the key in a key-value pair.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The value in a key-value pair.
-  var value: js.UndefOr[NullableOption[String]] = js.native
+  var value: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object InternetMessageHeader {
   

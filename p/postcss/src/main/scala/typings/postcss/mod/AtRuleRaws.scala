@@ -2,13 +2,13 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AtRuleRaws extends NodeRaws {
+trait AtRuleRaws
+  extends StObject
+     with NodeRaws {
   
-  var params: js.UndefOr[String] = js.native
+  var params: js.UndefOr[String] = js.undefined
 }
 object AtRuleRaws {
   

@@ -11,8 +11,8 @@ Adds cookie parsing/setting to restify
 | Full name          | restify-cookies |
 | Keywords           | restify, cookies, cookie |
 | # releases         | 2 |
-| # dependents       | 28 |
-| # downloads        | 293587 |
+| # dependents       | 29 |
+| # downloads        | 416431 |
 | # stars            | 2 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,14 +18,14 @@ trait SemanticInfoChain extends StObject {
   def addDiagnostic(diagnostic: Diagnostic): Unit = js.native
   
   def addDiagnosticFromAST(ast: AST, diagnosticKey: String): Unit = js.native
+  def addDiagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[js.Any]): Unit = js.native
   def addDiagnosticFromAST(
     ast: AST,
     diagnosticKey: String,
-    _arguments: js.UndefOr[scala.Nothing],
+    _arguments: js.Array[js.Any],
     additionalLocations: js.Array[Location]
   ): Unit = js.native
-  def addDiagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[_]): Unit = js.native
-  def addDiagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[_], additionalLocations: js.Array[Location]): Unit = js.native
+  def addDiagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: Unit, additionalLocations: js.Array[Location]): Unit = js.native
   
   def addDocument(document: Document): Unit = js.native
   
@@ -72,14 +71,14 @@ trait SemanticInfoChain extends StObject {
   var declSymbolMap: js.Any = js.native
   
   def diagnosticFromAST(ast: AST, diagnosticKey: String): Diagnostic = js.native
+  def diagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[js.Any]): Diagnostic = js.native
   def diagnosticFromAST(
     ast: AST,
     diagnosticKey: String,
-    _arguments: js.UndefOr[scala.Nothing],
+    _arguments: js.Array[js.Any],
     additionalLocations: js.Array[Location]
   ): Diagnostic = js.native
-  def diagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[_]): Diagnostic = js.native
-  def diagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[_], additionalLocations: js.Array[Location]): Diagnostic = js.native
+  def diagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: Unit, additionalLocations: js.Array[Location]): Diagnostic = js.native
   
   var documents: js.Any = js.native
   
@@ -134,7 +133,7 @@ trait SemanticInfoChain extends StObject {
   def getSymbolForDecl(decl: PullDecl): PullSymbol = js.native
   
   def invalidate(): Unit = js.native
-  def invalidate(oldSettings: js.UndefOr[scala.Nothing], newSettings: ImmutableCompilationSettings): Unit = js.native
+  def invalidate(oldSettings: Unit, newSettings: ImmutableCompilationSettings): Unit = js.native
   def invalidate(oldSettings: ImmutableCompilationSettings): Unit = js.native
   def invalidate(oldSettings: ImmutableCompilationSettings, newSettings: ImmutableCompilationSettings): Unit = js.native
   

@@ -10,9 +10,9 @@ Common interfaces for promise-based caching libraries
 | ------------------ | :-------------: |
 | Full name          | @algolia/cache-common |
 | Keywords           | - |
-| # releases         | 32 |
-| # dependents       | 6 |
-| # downloads        | 4100450 |
+| # releases         | 38 |
+| # dependents       | 9 |
+| # downloads        | 6785259 |
 | # stars            | 0 |
 
 ## Links

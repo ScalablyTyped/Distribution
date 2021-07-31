@@ -2,26 +2,24 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceSelectionResult extends StObject {
   
   /**
     * The filters in a device selection result.
     */
-  var filters: js.UndefOr[DeviceFilters] = js.native
+  var filters: js.UndefOr[DeviceFilters] = js.undefined
   
   /**
     * The number of devices that matched the device filter selection criteria.
     */
-  var matchedDevicesCount: js.UndefOr[Integer] = js.native
+  var matchedDevicesCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The maximum number of devices to be selected by a device filter and included in a test run.
     */
-  var maxDevices: js.UndefOr[Integer] = js.native
+  var maxDevices: js.UndefOr[Integer] = js.undefined
 }
 object DeviceSelectionResult {
   

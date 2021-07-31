@@ -2,10 +2,8 @@ package typings.hapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Access extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait Access extends StObject {
     *     requires any authentication.
     * [See docs](https://hapijs.com/api/17.0.1#-requestrouteauthaccessrequest)
     */
-  def access(request: typings.hapi.mod.Request): Boolean = js.native
+  def access(request: typings.hapi.mod.Request): Boolean
 }
 object Access {
   

@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Procedures performed
   */
-@js.native
-trait ClaimProcedure extends BackboneElement {
+trait ClaimProcedure
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'sequence'.
     */
-  var _sequence: js.UndefOr[Element] = js.native
+  var _sequence: js.UndefOr[Element] = js.undefined
   
   /**
     * When the procedure was performed
     */
-  var date: js.UndefOr[dateTime] = js.native
+  var date: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Patient's list of procedures performed
     */
-  var procedureCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var procedureCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Patient's list of procedures performed
     */
-  var procedureReference: js.UndefOr[Reference] = js.native
+  var procedureReference: js.UndefOr[Reference] = js.undefined
   
   /**
     * Procedure sequence for reference
     */
-  var sequence: positiveInt = js.native
+  var sequence: positiveInt
 }
 object ClaimProcedure {
   

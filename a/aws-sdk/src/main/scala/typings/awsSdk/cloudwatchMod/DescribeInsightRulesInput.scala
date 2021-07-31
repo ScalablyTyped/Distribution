@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInsightRulesInput extends StObject {
   
   /**
     * The maximum number of results to return in one operation. If you omit this parameter, the default of 500 is used.
     */
-  var MaxResults: js.UndefOr[InsightRuleMaxResults] = js.native
+  var MaxResults: js.UndefOr[InsightRuleMaxResults] = js.undefined
   
   /**
     * Include this value, if it was returned by the previous operation, to get the next set of rules.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.undefined
 }
 object DescribeInsightRulesInput {
   

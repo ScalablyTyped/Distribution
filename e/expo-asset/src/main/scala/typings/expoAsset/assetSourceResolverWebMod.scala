@@ -2,58 +2,91 @@ package typings.expoAsset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object assetSourceResolverWebMod {
   
   @JSImport("expo-asset/build/AssetSourceResolver.web", JSImport.Default)
   @js.native
-  class default protected () extends AssetSourceResolver {
-    def this(serverUrl: js.UndefOr[scala.Nothing], jsbundleUrl: js.UndefOr[scala.Nothing], asset: PackagerAsset) = this()
-    def this(serverUrl: js.UndefOr[scala.Nothing], jsbundleUrl: String, asset: PackagerAsset) = this()
-    def this(serverUrl: js.UndefOr[scala.Nothing], jsbundleUrl: Null, asset: PackagerAsset) = this()
-    def this(serverUrl: String, jsbundleUrl: js.UndefOr[scala.Nothing], asset: PackagerAsset) = this()
+  class default protected ()
+    extends StObject
+       with AssetSourceResolver {
     def this(serverUrl: String, jsbundleUrl: String, asset: PackagerAsset) = this()
     def this(serverUrl: String, jsbundleUrl: Null, asset: PackagerAsset) = this()
-    def this(serverUrl: Null, jsbundleUrl: js.UndefOr[scala.Nothing], asset: PackagerAsset) = this()
+    def this(serverUrl: String, jsbundleUrl: Unit, asset: PackagerAsset) = this()
     def this(serverUrl: Null, jsbundleUrl: String, asset: PackagerAsset) = this()
     def this(serverUrl: Null, jsbundleUrl: Null, asset: PackagerAsset) = this()
+    def this(serverUrl: Null, jsbundleUrl: Unit, asset: PackagerAsset) = this()
+    def this(serverUrl: Unit, jsbundleUrl: String, asset: PackagerAsset) = this()
+    def this(serverUrl: Unit, jsbundleUrl: Null, asset: PackagerAsset) = this()
+    def this(serverUrl: Unit, jsbundleUrl: Unit, asset: PackagerAsset) = this()
+    
+    /* CompleteClass */
+    var asset: PackagerAsset = js.native
+    
+    /* CompleteClass */
+    override def assetServerURL(): ResolvedAssetSource = js.native
+    
+    /* CompleteClass */
+    override def defaultAsset(): ResolvedAssetSource = js.native
+    
+    /* CompleteClass */
+    override def drawableFolderInBundle(): ResolvedAssetSource = js.native
+    
+    /* CompleteClass */
+    override def fromSource(source: String): ResolvedAssetSource = js.native
+    
+    /* CompleteClass */
+    override def isLoadedFromFileSystem(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isLoadedFromServer(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def resourceIdentifierWithoutScale(): ResolvedAssetSource = js.native
+    
+    /* CompleteClass */
+    override def scaledAssetPath(): ResolvedAssetSource = js.native
+    
+    /* CompleteClass */
+    override def scaledAssetURLNearBundle(): ResolvedAssetSource = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("expo-asset/build/AssetSourceResolver.web", "default.pickScale")
+    @JSImport("expo-asset/build/AssetSourceResolver.web", JSImport.Default)
     @js.native
-    def pickScale(scales: js.Array[Double], deviceScale: Double): Double = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def pickScale(scales: js.Array[Double], deviceScale: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pickScale")(scales.asInstanceOf[js.Any], deviceScale.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
-  @js.native
   trait AssetSourceResolver extends StObject {
     
-    var asset: PackagerAsset = js.native
+    var asset: PackagerAsset
     
-    def assetServerURL(): ResolvedAssetSource = js.native
+    def assetServerURL(): ResolvedAssetSource
     
-    def defaultAsset(): ResolvedAssetSource = js.native
+    def defaultAsset(): ResolvedAssetSource
     
-    def drawableFolderInBundle(): ResolvedAssetSource = js.native
+    def drawableFolderInBundle(): ResolvedAssetSource
     
-    def fromSource(source: String): ResolvedAssetSource = js.native
+    def fromSource(source: String): ResolvedAssetSource
     
-    def isLoadedFromFileSystem(): Boolean = js.native
+    def isLoadedFromFileSystem(): Boolean
     
-    def isLoadedFromServer(): Boolean = js.native
+    def isLoadedFromServer(): Boolean
     
-    var jsbundleUrl: js.UndefOr[String | Null] = js.native
+    var jsbundleUrl: js.UndefOr[String | Null] = js.undefined
     
-    def resourceIdentifierWithoutScale(): ResolvedAssetSource = js.native
+    def resourceIdentifierWithoutScale(): ResolvedAssetSource
     
-    def scaledAssetPath(): ResolvedAssetSource = js.native
+    def scaledAssetPath(): ResolvedAssetSource
     
-    def scaledAssetURLNearBundle(): ResolvedAssetSource = js.native
+    def scaledAssetURLNearBundle(): ResolvedAssetSource
     
-    var serverUrl: js.UndefOr[String | Null] = js.native
+    var serverUrl: js.UndefOr[String | Null] = js.undefined
   }
   object AssetSourceResolver {
     
@@ -127,26 +160,25 @@ object assetSourceResolverWebMod {
     }
   }
   
-  @js.native
   trait PackagerAsset extends StObject {
     
-    var __packager_asset: Boolean = js.native
+    var __packager_asset: Boolean
     
-    var fileSystemLocation: String = js.native
+    var fileSystemLocation: String
     
-    var hash: String = js.native
+    var hash: String
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var httpServerLocation: String = js.native
+    var httpServerLocation: String
     
-    var name: String = js.native
+    var name: String
     
-    var scales: js.Array[Double] = js.native
+    var scales: js.Array[Double]
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PackagerAsset {
     
@@ -206,18 +238,17 @@ object assetSourceResolverWebMod {
     }
   }
   
-  @js.native
   trait ResolvedAssetSource extends StObject {
     
-    var __packager_asset: Boolean = js.native
+    var __packager_asset: Boolean
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var scale: Double = js.native
+    var scale: Double
     
-    var uri: String = js.native
+    var uri: String
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ResolvedAssetSource {
     

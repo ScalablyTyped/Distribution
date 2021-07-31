@@ -2,21 +2,19 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAdminAccountResponse extends StObject {
   
   /**
     * The AWS account that is set as the AWS Firewall Manager administrator.
     */
-  var AdminAccount: js.UndefOr[AWSAccountId] = js.native
+  var AdminAccount: js.UndefOr[AWSAccountId] = js.undefined
   
   /**
     * The status of the AWS account that you set as the AWS Firewall Manager administrator.
     */
-  var RoleStatus: js.UndefOr[AccountRoleStatus] = js.native
+  var RoleStatus: js.UndefOr[AccountRoleStatus] = js.undefined
 }
 object GetAdminAccountResponse {
   

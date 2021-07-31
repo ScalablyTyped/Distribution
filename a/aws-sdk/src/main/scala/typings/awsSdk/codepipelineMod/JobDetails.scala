@@ -2,26 +2,24 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobDetails extends StObject {
   
   /**
     * The AWS account ID associated with the job.
     */
-  var accountId: js.UndefOr[AccountId] = js.native
+  var accountId: js.UndefOr[AccountId] = js.undefined
   
   /**
     * Represents other information about a job required for a job worker to complete the job. 
     */
-  var data: js.UndefOr[JobData] = js.native
+  var data: js.UndefOr[JobData] = js.undefined
   
   /**
     * The unique system-generated ID of the job.
     */
-  var id: js.UndefOr[JobId] = js.native
+  var id: js.UndefOr[JobId] = js.undefined
 }
 object JobDetails {
   

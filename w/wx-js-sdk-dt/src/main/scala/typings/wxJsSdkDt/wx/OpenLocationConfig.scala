@@ -2,35 +2,35 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpenLocationConfig extends WxBaseRequestConfig {
+trait OpenLocationConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
   /**
     * 地址详情说明
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * 在查看位置界面底部显示的超链接, 可点击跳转
     */
-  var infoUrl: js.UndefOr[String] = js.native
+  var infoUrl: js.UndefOr[String] = js.undefined
   
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
   
   /**
     * 位置名
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * 地图缩放级别,整形值,范围从1~28。默认为最大
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
 }
 object OpenLocationConfig {
   

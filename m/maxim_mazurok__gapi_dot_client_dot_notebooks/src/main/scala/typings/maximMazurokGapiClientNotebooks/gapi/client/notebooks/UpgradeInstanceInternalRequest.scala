@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpgradeInstanceInternalRequest extends StObject {
   
   /** Required. The VM hardware token for authenticating the VM. https://cloud.google.com/compute/docs/instances/verifying-instance-identity */
-  var vmId: js.UndefOr[String] = js.native
+  var vmId: js.UndefOr[String] = js.undefined
 }
 object UpgradeInstanceInternalRequest {
   

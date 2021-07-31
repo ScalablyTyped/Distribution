@@ -2,13 +2,11 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The main request class which specifies the Reporting API request.
   */
-@js.native
 trait SchemaReportRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaReportRequest extends StObject {
     * [ReportRequest](#ReportRequest) within a `batchGet` method must contain
     * the same `cohortGroup` definition.
     */
-  var cohortGroup: js.UndefOr[SchemaCohortGroup] = js.native
+  var cohortGroup: js.UndefOr[SchemaCohortGroup] = js.undefined
   
   /**
     * Date ranges in the request. The request can have a maximum of 2 date
@@ -31,7 +29,7 @@ trait SchemaReportRequest extends StObject {
     * 1 day). Every [ReportRequest](#ReportRequest) within a `batchGet` method
     * must contain the same `dateRanges` definition.
     */
-  var dateRanges: js.UndefOr[js.Array[SchemaDateRange]] = js.native
+  var dateRanges: js.UndefOr[js.Array[SchemaDateRange]] = js.undefined
   
   /**
     * The dimension filter clauses for filtering Dimension Values. They are
@@ -39,12 +37,12 @@ trait SchemaReportRequest extends StObject {
     * before any dimensions are aggregated, so that the returned metrics
     * represent the total for only the relevant dimensions.
     */
-  var dimensionFilterClauses: js.UndefOr[js.Array[SchemaDimensionFilterClause]] = js.native
+  var dimensionFilterClauses: js.UndefOr[js.Array[SchemaDimensionFilterClause]] = js.undefined
   
   /**
     * The dimensions requested. Requests can have a total of 7 dimensions.
     */
-  var dimensions: js.UndefOr[js.Array[SchemaDimension]] = js.native
+  var dimensions: js.UndefOr[js.Array[SchemaDimension]] = js.undefined
   
   /**
     * Dimension or metric filters that restrict the data returned for your
@@ -55,26 +53,26 @@ trait SchemaReportRequest extends StObject {
     * metric filters, see [Filters
     * reference](https://developers.google.com/analytics/devguides/reporting/core/v3/reference#filters).
     */
-  var filtersExpression: js.UndefOr[String] = js.native
+  var filtersExpression: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true, hides the total of all metrics for all the matching rows,
     * for every date range. The default false and will return the totals.
     */
-  var hideTotals: js.UndefOr[Boolean] = js.native
+  var hideTotals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, hides the minimum and maximum across all matching rows.
     * The default is false and the value ranges are returned.
     */
-  var hideValueRanges: js.UndefOr[Boolean] = js.native
+  var hideValueRanges: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to false, the response does not include rows if all the retrieved
     * metrics are equal to zero. The default is false which will exclude these
     * rows.
     */
-  var includeEmptyRows: js.UndefOr[Boolean] = js.native
+  var includeEmptyRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The metric filter clauses. They are logically combined with the `AND`
@@ -82,20 +80,20 @@ trait SchemaReportRequest extends StObject {
     * comparing date range. Note that filtering on metrics occurs after the
     * metrics are aggregated.
     */
-  var metricFilterClauses: js.UndefOr[js.Array[SchemaMetricFilterClause]] = js.native
+  var metricFilterClauses: js.UndefOr[js.Array[SchemaMetricFilterClause]] = js.undefined
   
   /**
     * The metrics requested. Requests must specify at least one metric.
     * Requests can have a total of 10 metrics.
     */
-  var metrics: js.UndefOr[js.Array[SchemaMetric]] = js.native
+  var metrics: js.UndefOr[js.Array[SchemaMetric]] = js.undefined
   
   /**
     * Sort order on output rows. To compare two rows, the elements of the
     * following are applied in order until a difference is found.  All date
     * ranges in the output get the same row order.
     */
-  var orderBys: js.UndefOr[js.Array[SchemaOrderBy]] = js.native
+  var orderBys: js.UndefOr[js.Array[SchemaOrderBy]] = js.undefined
   
   /**
     * Page size is for paging and specifies the maximum number of returned
@@ -107,7 +105,7 @@ trait SchemaReportRequest extends StObject {
     * `ga:country`, so when segmenting only by country, you can&#39;t get more
     * than 300 rows, even if you set `pageSize` to a higher value.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A continuation token to get the next page of the results. Adding this to
@@ -115,12 +113,12 @@ trait SchemaReportRequest extends StObject {
     * should be the value returned in the nextPageToken parameter in the
     * response to the GetReports request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The pivot definitions. Requests can have a maximum of 2 pivots.
     */
-  var pivots: js.UndefOr[js.Array[SchemaPivot]] = js.native
+  var pivots: js.UndefOr[js.Array[SchemaPivot]] = js.undefined
   
   /**
     * The desired report
@@ -131,7 +129,7 @@ trait SchemaReportRequest extends StObject {
     * guide](/analytics/devguides/reporting/core/v4/basics#sampling)  for
     * details.
     */
-  var samplingLevel: js.UndefOr[String] = js.native
+  var samplingLevel: js.UndefOr[String] = js.undefined
   
   /**
     * Segment the data returned for the request. A segment definition helps
@@ -140,7 +138,7 @@ trait SchemaReportRequest extends StObject {
     * method must contain the same `segments` definition. Requests with
     * segments must have the `ga:segment` dimension.
     */
-  var segments: js.UndefOr[js.Array[SchemaSegment]] = js.native
+  var segments: js.UndefOr[js.Array[SchemaSegment]] = js.undefined
   
   /**
     * The Analytics [view
@@ -148,7 +146,7 @@ trait SchemaReportRequest extends StObject {
     * retrieve data. Every [ReportRequest](#ReportRequest) within a `batchGet`
     * method must contain the same `viewId`.
     */
-  var viewId: js.UndefOr[String] = js.native
+  var viewId: js.UndefOr[String] = js.undefined
 }
 object SchemaReportRequest {
   

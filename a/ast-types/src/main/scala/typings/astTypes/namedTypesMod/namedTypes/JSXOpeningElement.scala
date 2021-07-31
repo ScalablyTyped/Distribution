@@ -12,27 +12,26 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Node, 'type'> */
-@js.native
 trait JSXOpeningElement
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with NodeKind
      with PrintableKind {
   
-  var attributes: js.UndefOr[js.Array[JSXAttributeKind | JSXSpreadAttributeKind]] = js.native
+  var attributes: js.UndefOr[js.Array[JSXAttributeKind | JSXSpreadAttributeKind]] = js.undefined
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var name: JSXIdentifierKind | JSXNamespacedNameKind | JSXMemberExpressionKind = js.native
+  var name: JSXIdentifierKind | JSXNamespacedNameKind | JSXMemberExpressionKind
   
-  var selfClosing: js.UndefOr[Boolean] = js.native
+  var selfClosing: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: typings.astTypes.astTypesStrings.JSXOpeningElement = js.native
+  var `type`: typings.astTypes.astTypesStrings.JSXOpeningElement
 }
 object JSXOpeningElement {
   

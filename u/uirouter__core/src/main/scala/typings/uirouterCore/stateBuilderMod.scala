@@ -6,10 +6,13 @@ import typings.uirouterCore.stateObjectMod.StateObject
 import typings.uirouterCore.urlMatcherFactoryMod.UrlMatcherFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateBuilderMod {
+  
+  @JSImport("@uirouter/core/lib/state/stateBuilder", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@uirouter/core/lib/state/stateBuilder", "StateBuilder")
   @js.native
@@ -55,9 +58,8 @@ object stateBuilderMod {
     def parentName(state: StateObject): String = js.native
   }
   
-  @JSImport("@uirouter/core/lib/state/stateBuilder", "resolvablesBuilder")
-  @js.native
-  def resolvablesBuilder(state: StateObject): js.Array[Resolvable] = js.native
+  @scala.inline
+  def resolvablesBuilder(state: StateObject): js.Array[Resolvable] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvablesBuilder")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[Resolvable]]
   
   type BuilderFunction = js.Function2[
     /* state */ StateObject, 

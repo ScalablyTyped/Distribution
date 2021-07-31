@@ -2,15 +2,13 @@ package typings.angularCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableLongStackTrace extends StObject {
   
-  var enableLongStackTrace: js.UndefOr[Boolean] = js.native
+  var enableLongStackTrace: js.UndefOr[Boolean] = js.undefined
   
-  var shouldCoalesceEventChangeDetection: js.UndefOr[Boolean] = js.native
+  var shouldCoalesceEventChangeDetection: js.UndefOr[Boolean] = js.undefined
 }
 object EnableLongStackTrace {
   

@@ -3,25 +3,24 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.PipelineBareFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipelineBareFunction_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var callee: Expression = js.native
+  var callee: Expression
   
   @JSName("type")
-  var type_PipelineBareFunction_ : PipelineBareFunction = js.native
+  var type_PipelineBareFunction_ : PipelineBareFunction
 }
 object PipelineBareFunction_ {
   
   @scala.inline
-  def apply(callee: Expression, `type`: PipelineBareFunction): PipelineBareFunction_ = {
-    val __obj = js.Dynamic.literal(callee = callee.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(callee: Expression): PipelineBareFunction_ = {
+    val __obj = js.Dynamic.literal(callee = callee.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("PipelineBareFunction")
     __obj.asInstanceOf[PipelineBareFunction_]
   }
   

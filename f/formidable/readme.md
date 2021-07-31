@@ -9,10 +9,10 @@ A node.js module for parsing form data, especially file uploads.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | formidable |
-| Keywords           | - |
+| Keywords           | multipart, form, data, querystring, www, json, ulpoad, file |
 | # releases         | 16 |
-| # dependents       | 972 |
-| # downloads        | 164788641 |
+| # dependents       | 1031 |
+| # downloads        | 196408101 |
 | # stars            | 245 |
 
 ## Links

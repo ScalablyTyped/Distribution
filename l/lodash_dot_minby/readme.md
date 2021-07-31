@@ -11,8 +11,8 @@ The lodash method `_.minBy` exported as a module.
 | Full name          | lodash.minby |
 | Keywords           | lodash-modularized, minby |
 | # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 456945 |
+| # dependents       | 29 |
+| # downloads        | 499051 |
 | # stars            | 0 |
 
 ## Links

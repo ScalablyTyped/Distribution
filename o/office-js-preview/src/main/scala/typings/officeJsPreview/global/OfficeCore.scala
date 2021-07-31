@@ -4,7 +4,6 @@ import typings.officeJsPreview.OfficeExtension.ClientRequestContext
 import typings.officeJsPreview.OfficeExtension.RequestUrlAndHeaderInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////////////////////////////////////////////////
@@ -18,7 +17,9 @@ object OfficeCore {
   
   @JSGlobal("OfficeCore.RequestContext")
   @js.native
-  class RequestContext () extends ClientRequestContext {
+  class RequestContext ()
+    extends StObject
+       with ClientRequestContext {
     def this(url: String) = this()
     def this(url: js.Any) = this()
     def this(url: RequestUrlAndHeaderInfo) = this()

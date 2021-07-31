@@ -2,75 +2,73 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Google Tag Manager Zone&#39;s contents.
   */
-@js.native
 trait SchemaZone extends StObject {
   
   /**
     * GTM Account ID.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * This Zone&#39;s boundary.
     */
-  var boundary: js.UndefOr[SchemaZoneBoundary] = js.native
+  var boundary: js.UndefOr[SchemaZoneBoundary] = js.undefined
   
   /**
     * Containers that are children of this Zone.
     */
-  var childContainer: js.UndefOr[js.Array[SchemaZoneChildContainer]] = js.native
+  var childContainer: js.UndefOr[js.Array[SchemaZoneChildContainer]] = js.undefined
   
   /**
     * GTM Container ID.
     */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /**
     * The fingerprint of the GTM Zone as computed at storage time. This value
     * is recomputed whenever the zone is modified.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Zone display name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * User notes on how to apply this zone in the container.
     */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * GTM Zone&#39;s API relative path.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Auto generated link to the tag manager UI
     */
-  var tagManagerUrl: js.UndefOr[String] = js.native
+  var tagManagerUrl: js.UndefOr[String] = js.undefined
   
   /**
     * This Zone&#39;s type restrictions.
     */
-  var typeRestriction: js.UndefOr[SchemaZoneTypeRestriction] = js.native
+  var typeRestriction: js.UndefOr[SchemaZoneTypeRestriction] = js.undefined
   
   /**
     * GTM Workspace ID.
     */
-  var workspaceId: js.UndefOr[String] = js.native
+  var workspaceId: js.UndefOr[String] = js.undefined
   
   /**
     * The Zone ID uniquely identifies the GTM Zone.
     */
-  var zoneId: js.UndefOr[String] = js.native
+  var zoneId: js.UndefOr[String] = js.undefined
 }
 object SchemaZone {
   

@@ -7,23 +7,25 @@ import typings.std.Element
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object attachtoMod {
   
-  @JSImport("snabbdom/build/package/helpers/attachto", "attachTo")
+  @JSImport("snabbdom/build/package/helpers/attachto", JSImport.Namespace)
   @js.native
-  def attachTo(target: Element, vnode: VNode_): VNode_ = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def attachTo(target: Element, vnode: VNode_): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(target.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  
   trait AttachData
-    extends /* i */ NumberDictionary[js.Any]
+    extends StObject
+       with /* i */ NumberDictionary[js.Any]
        with /* key */ StringDictionary[js.Any] {
     
-    var placeholder: js.UndefOr[js.Any] = js.native
+    var placeholder: js.UndefOr[js.Any] = js.undefined
     
-    var real: js.UndefOr[Node] = js.native
+    var real: js.UndefOr[Node] = js.undefined
   }
   object AttachData {
     

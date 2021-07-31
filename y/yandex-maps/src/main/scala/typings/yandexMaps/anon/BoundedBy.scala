@@ -22,63 +22,61 @@ import typings.yandexMaps.yandexMapsStrings.yandexNumbersignmap
 import typings.yandexMaps.yandexMapsStrings.yandexNumbersignsearch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoundedBy extends StObject {
   
-  var adjustMapMargin: js.UndefOr[Boolean] = js.native
+  var adjustMapMargin: js.UndefOr[Boolean] = js.undefined
   
-  var boundedBy: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var boundedBy: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
-  var fitMaxWidth: js.UndefOr[Boolean] = js.native
+  var fitMaxWidth: js.UndefOr[Boolean] = js.undefined
   
-  var float: js.UndefOr[none | left | right] = js.native
+  var float: js.UndefOr[none | left | right] = js.undefined
   
-  var floatIndex: js.UndefOr[Double] = js.native
+  var floatIndex: js.UndefOr[Double] = js.undefined
   
-  var formLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.native
+  var formLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.undefined
   
-  var kind: js.UndefOr[house | street | metro | district | locality] = js.native
+  var kind: js.UndefOr[house | street | metro | district | locality] = js.undefined
   
-  var layout: js.UndefOr[String | IClassConstructor[ISearchControlLayout]] = js.native
+  var layout: js.UndefOr[String | IClassConstructor[ISearchControlLayout]] = js.undefined
   
-  var maxWidth: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.native
+  var maxWidth: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.undefined
   
-  var noCentering: js.UndefOr[Boolean] = js.native
+  var noCentering: js.UndefOr[Boolean] = js.undefined
   
-  var noPlacemark: js.UndefOr[Boolean] = js.native
+  var noPlacemark: js.UndefOr[Boolean] = js.undefined
   
-  var noPopup: js.UndefOr[Boolean] = js.native
+  var noPopup: js.UndefOr[Boolean] = js.undefined
   
-  var noSelect: js.UndefOr[Boolean] = js.native
+  var noSelect: js.UndefOr[Boolean] = js.undefined
   
-  var noSuggestPanel: js.UndefOr[Boolean] = js.native
+  var noSuggestPanel: js.UndefOr[Boolean] = js.undefined
   
-  var placeholderContent: js.UndefOr[String] = js.native
+  var placeholderContent: js.UndefOr[String] = js.undefined
   
-  var popupItemLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.native
+  var popupItemLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.undefined
   
-  var popupLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.native
+  var popupLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.undefined
   
-  var position: js.UndefOr[Bottom] = js.native
+  var position: js.UndefOr[Bottom] = js.undefined
   
-  var provider: js.UndefOr[IGeocodeProvider | yandexNumbersignmap | yandexNumbersignsearch] = js.native
+  var provider: js.UndefOr[IGeocodeProvider | yandexNumbersignmap | yandexNumbersignsearch] = js.undefined
   
-  var searchCoordOrder: js.UndefOr[latlong | longlat] = js.native
+  var searchCoordOrder: js.UndefOr[latlong | longlat] = js.undefined
   
-  var size: js.UndefOr[auto | small | medium | large] = js.native
+  var size: js.UndefOr[auto | small | medium | large] = js.undefined
   
-  var strictBounds: js.UndefOr[Boolean] = js.native
+  var strictBounds: js.UndefOr[Boolean] = js.undefined
   
-  var suppressYandexSearch: js.UndefOr[Boolean] = js.native
+  var suppressYandexSearch: js.UndefOr[Boolean] = js.undefined
   
-  var useMapBounds: js.UndefOr[Boolean] = js.native
+  var useMapBounds: js.UndefOr[Boolean] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var zoomMargin: js.UndefOr[Double] = js.native
+  var zoomMargin: js.UndefOr[Double] = js.undefined
 }
 object BoundedBy {
   

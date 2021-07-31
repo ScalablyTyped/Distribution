@@ -10,9 +10,9 @@ TypeScript typings for Cloud Identity API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudidentity |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 57 |
+| # downloads        | 1110 |
 | # stars            | 0 |
 
 ## Links

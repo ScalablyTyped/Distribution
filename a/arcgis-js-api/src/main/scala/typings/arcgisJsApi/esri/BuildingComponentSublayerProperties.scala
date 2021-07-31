@@ -4,12 +4,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.hide
 import typings.arcgisJsApi.arcgisJsApiStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildingComponentSublayerProperties
-  extends BuildingSublayerProperties
+  extends StObject
+     with BuildingSublayerProperties
      with LoadableProperties {
   
   /**
@@ -17,42 +16,42 @@ trait BuildingComponentSublayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#definitionExpression)
     */
-  var definitionExpression: js.UndefOr[String] = js.native
+  var definitionExpression: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#listMode)
     */
-  var listMode: js.UndefOr[show | hide] = js.native
+  var listMode: js.UndefOr[show | hide] = js.undefined
   
   /**
     * An array of field names from the service to include with each feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#outFields)
     */
-  var outFields: js.UndefOr[js.Array[String]] = js.native
+  var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether to display popups when features in the layer are clicked.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#popupEnabled)
     */
-  var popupEnabled: js.UndefOr[Boolean] = js.native
+  var popupEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The popup template for the sublayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#popupTemplate)
     */
-  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.native
+  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
     * The renderer assigned to the sublayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#renderer)
     */
-  var renderer: js.UndefOr[RendererProperties] = js.native
+  var renderer: js.UndefOr[RendererProperties] = js.undefined
 }
 object BuildingComponentSublayerProperties {
   

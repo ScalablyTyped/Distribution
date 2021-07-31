@@ -6,25 +6,23 @@ import typings.vueCompilerCore.mod.SourceLocation
 import typings.vueCompilerSfc.vueCompilerSfcBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SFCBlock extends StObject {
   
-  var attrs: Record[String, String | `true`] = js.native
+  var attrs: Record[String, String | `true`]
   
-  var content: String = js.native
+  var content: String
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var loc: SourceLocation = js.native
+  var loc: SourceLocation
   
-  var map: js.UndefOr[RawSourceMap] = js.native
+  var map: js.UndefOr[RawSourceMap] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object SFCBlock {
   

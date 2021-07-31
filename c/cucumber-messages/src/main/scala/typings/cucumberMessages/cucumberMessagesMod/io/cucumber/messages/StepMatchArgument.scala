@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new StepMatchArgument.
   * @param [properties] Properties to set
   */
-class StepMatchArgument () extends IStepMatchArgument {
+class StepMatchArgument ()
+  extends StObject
+     with IStepMatchArgument {
   def this(properties: IStepMatchArgument) = this()
   
   /** StepMatchArgument parameterTypeName. */
@@ -39,6 +40,10 @@ class StepMatchArgument () extends IStepMatchArgument {
 }
 object StepMatchArgument {
   
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Represents a Group. */
   @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group")
   @js.native
@@ -46,7 +51,9 @@ object StepMatchArgument {
     * Constructs a new Group.
     * @param [properties] Properties to set
     */
-  class Group () extends IGroup {
+  class Group ()
+    extends StObject
+       with IGroup {
     def this(properties: IGroup) = this()
     
     /** Group children. */
@@ -69,18 +76,20 @@ object StepMatchArgument {
   }
   object Group {
     
+    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Group instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Group instance
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.create")
-    @js.native
-    def create(): Group = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.create")
-    @js.native
-    def create(properties: IGroup): Group = js.native
+    @scala.inline
+    def create(): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Group]
+    @scala.inline
+    def create(properties: IGroup): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Group]
     
     /**
       * Decodes a Group message from the specified reader or buffer.
@@ -91,18 +100,14 @@ object StepMatchArgument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.decode")
-    @js.native
-    def decode(reader: Reader): Group = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Group = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.decode")
-    @js.native
-    def decode(reader: Uint8Array): Group = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Group = js.native
+    @scala.inline
+    def decode(reader: Reader): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Group]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Group]
+    @scala.inline
+    def decode(reader: Uint8Array): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Group]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Group]
     
     /**
       * Decodes a Group message from the specified reader or buffer, length delimited.
@@ -112,12 +117,10 @@ object StepMatchArgument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Group = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Group = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Group]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Group]
     
     /**
       * Encodes the specified Group message. Does not implicitly {@link io.cucumber.messages.StepMatchArgument.Group.verify|verify} messages.
@@ -126,12 +129,10 @@ object StepMatchArgument {
       * @returns Writer
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.encode")
-    @js.native
-    def encode(message: IGroup): Writer = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.encode")
-    @js.native
-    def encode(message: IGroup, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IGroup): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IGroup, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Group message, length delimited. Does not implicitly {@link io.cucumber.messages.StepMatchArgument.Group.verify|verify} messages.
@@ -140,12 +141,10 @@ object StepMatchArgument {
       * @returns Writer
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IGroup): Writer = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IGroup, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IGroup): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IGroup, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Group message from a plain object. Also converts values to their respective internal types.
@@ -153,9 +152,8 @@ object StepMatchArgument {
       * @returns Group
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Group = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Group]
     
     /**
       * Creates a plain object from a Group message. Also converts values to other types if specified.
@@ -164,12 +162,10 @@ object StepMatchArgument {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.toObject")
-    @js.native
-    def toObject(message: Group): StringDictionary[js.Any] = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.toObject")
-    @js.native
-    def toObject(message: Group, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Group): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Group, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Group message.
@@ -177,9 +173,8 @@ object StepMatchArgument {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.Group.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -188,12 +183,10 @@ object StepMatchArgument {
     * @returns StepMatchArgument instance
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.create")
-  @js.native
-  def create(): StepMatchArgument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.create")
-  @js.native
-  def create(properties: IStepMatchArgument): StepMatchArgument = js.native
+  @scala.inline
+  def create(): StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[StepMatchArgument]
+  @scala.inline
+  def create(properties: IStepMatchArgument): StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[StepMatchArgument]
   
   /**
     * Decodes a StepMatchArgument message from the specified reader or buffer.
@@ -204,18 +197,14 @@ object StepMatchArgument {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.decode")
-  @js.native
-  def decode(reader: Reader): StepMatchArgument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): StepMatchArgument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.decode")
-  @js.native
-  def decode(reader: Uint8Array): StepMatchArgument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): StepMatchArgument = js.native
+  @scala.inline
+  def decode(reader: Reader): StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StepMatchArgument]
+  @scala.inline
+  def decode(reader: Reader, length: Double): StepMatchArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StepMatchArgument]
+  @scala.inline
+  def decode(reader: Uint8Array): StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StepMatchArgument]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): StepMatchArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StepMatchArgument]
   
   /**
     * Decodes a StepMatchArgument message from the specified reader or buffer, length delimited.
@@ -225,12 +214,10 @@ object StepMatchArgument {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): StepMatchArgument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): StepMatchArgument = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StepMatchArgument]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StepMatchArgument]
   
   /**
     * Encodes the specified StepMatchArgument message. Does not implicitly {@link io.cucumber.messages.StepMatchArgument.verify|verify} messages.
@@ -239,12 +226,10 @@ object StepMatchArgument {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.encode")
-  @js.native
-  def encode(message: IStepMatchArgument): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.encode")
-  @js.native
-  def encode(message: IStepMatchArgument, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IStepMatchArgument): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IStepMatchArgument, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified StepMatchArgument message, length delimited. Does not implicitly {@link io.cucumber.messages.StepMatchArgument.verify|verify} messages.
@@ -253,12 +238,10 @@ object StepMatchArgument {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IStepMatchArgument): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IStepMatchArgument, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IStepMatchArgument): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IStepMatchArgument, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a StepMatchArgument message from a plain object. Also converts values to their respective internal types.
@@ -266,9 +249,8 @@ object StepMatchArgument {
     * @returns StepMatchArgument
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): StepMatchArgument = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StepMatchArgument]
   
   /**
     * Creates a plain object from a StepMatchArgument message. Also converts values to other types if specified.
@@ -277,12 +259,10 @@ object StepMatchArgument {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.toObject")
-  @js.native
-  def toObject(message: StepMatchArgument): StringDictionary[js.Any] = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.toObject")
-  @js.native
-  def toObject(message: StepMatchArgument, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: StepMatchArgument): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: StepMatchArgument, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a StepMatchArgument message.
@@ -290,22 +270,20 @@ object StepMatchArgument {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.StepMatchArgument.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a Group. */
-  @js.native
   trait IGroup extends StObject {
     
     /** Group children */
-    var children: js.UndefOr[js.Array[IGroup] | Null] = js.native
+    var children: js.UndefOr[js.Array[IGroup] | Null] = js.undefined
     
     /** Group start */
-    var start: js.UndefOr[Double | Null] = js.native
+    var start: js.UndefOr[Double | Null] = js.undefined
     
     /** Group value */
-    var value: js.UndefOr[String | Null] = js.native
+    var value: js.UndefOr[String | Null] = js.undefined
   }
   object IGroup {
     

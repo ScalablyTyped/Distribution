@@ -2,26 +2,24 @@ package typings.swfobject
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ie extends StObject {
     
     // number or boolean
-    var ie: Boolean = js.native
+    var ie: Boolean
     
-    var mac: Boolean = js.native
+    var mac: Boolean
     
-    var pv: js.Array[Double] = js.native
+    var pv: js.Array[Double]
     
-    var w3: Boolean = js.native
+    var w3: Boolean
     
-    var win: Boolean = js.native
+    var win: Boolean
     
-    var wk: js.Any = js.native
+    var wk: js.Any
   }
   object Ie {
     

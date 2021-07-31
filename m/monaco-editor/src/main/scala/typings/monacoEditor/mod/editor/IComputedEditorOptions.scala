@@ -2,13 +2,11 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IComputedEditorOptions extends StObject {
   
-  def get[T /* <: EditorOption */](id: T): FindComputedEditorOptionValueById[T] = js.native
+  def get[T /* <: EditorOption */](id: T): FindComputedEditorOptionValueById[T]
 }
 object IComputedEditorOptions {
   

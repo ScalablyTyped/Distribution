@@ -2,18 +2,19 @@ package typings.quotedPrintable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("quoted-printable", "decode")
+  @JSImport("quoted-printable", JSImport.Namespace)
   @js.native
-  def decode(input: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("quoted-printable", "encode")
-  @js.native
-  def encode(input: String): String = js.native
+  @scala.inline
+  def decode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("quoted-printable", "version")
   @js.native

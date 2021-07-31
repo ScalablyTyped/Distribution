@@ -4,18 +4,18 @@ import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
 import typings.officeUiFabricReact.focusTrapZoneTypesMod.IFocusTrapZoneProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusTrapCalloutTypesMod {
   
-  @js.native
-  trait IFocusTrapCalloutProps extends ICalloutProps {
+  trait IFocusTrapCalloutProps
+    extends StObject
+       with ICalloutProps {
     
     /**
       * Optional props to be passed on to FocusTrapZone
       */
-    var focusTrapProps: js.UndefOr[IFocusTrapZoneProps] = js.native
+    var focusTrapProps: js.UndefOr[IFocusTrapZoneProps] = js.undefined
   }
   object IFocusTrapCalloutProps {
     

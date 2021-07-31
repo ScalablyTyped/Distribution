@@ -2,22 +2,20 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformationRule extends StObject {
   
   @JSName("apply")
-  def apply(tagged_sentence: js.Array[js.Array[String]], position: Double): Unit = js.native
+  def apply(tagged_sentence: js.Array[js.Array[String]], position: Double): Unit
   
-  var literal: js.Array[String] = js.native
+  var literal: js.Array[String]
   
-  var new_category: String = js.native
+  var new_category: String
   
-  var old_category: String = js.native
+  var old_category: String
   
-  var predicate: Predicate = js.native
+  var predicate: Predicate
 }
 object TransformationRule {
   

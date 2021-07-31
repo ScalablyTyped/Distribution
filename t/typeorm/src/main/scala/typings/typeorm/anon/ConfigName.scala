@@ -2,22 +2,20 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigName extends StObject {
   
   /**
     * Filename of the ormconfig configuration. By default its equal to "ormconfig".
     */
-  var configName: js.UndefOr[String] = js.native
+  var configName: js.UndefOr[String] = js.undefined
   
   /**
     * Directory where ormconfig should be read from.
     * By default its your application root (where your app package.json is located).
     */
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
 }
 object ConfigName {
   

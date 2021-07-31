@@ -3,21 +3,19 @@ package typings.jqueryAnimateScroll
 import typings.jqueryAnimateScroll.mod.global.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /* Inlined std.Partial<{  $container :jquery-animate-scroll.jquery-animate-scroll.<global>.JQuery,   speed :number,   offset :number}> */
-  @js.native
   trait Options extends StObject {
     
     @JSName("$container")
-    var $container: js.UndefOr[JQuery] = js.native
+    var $container: js.UndefOr[JQuery] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

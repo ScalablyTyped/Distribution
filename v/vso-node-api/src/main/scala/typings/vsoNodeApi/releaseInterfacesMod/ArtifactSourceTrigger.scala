@@ -2,18 +2,18 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArtifactSourceTrigger extends ReleaseTriggerBase {
+trait ArtifactSourceTrigger
+  extends StObject
+     with ReleaseTriggerBase {
   
   /**
     * Artifact source alias for Artifact Source trigger type
     */
-  var artifactAlias: String = js.native
+  var artifactAlias: String
   
-  var triggerConditions: js.Array[ArtifactFilter] = js.native
+  var triggerConditions: js.Array[ArtifactFilter]
 }
 object ArtifactSourceTrigger {
   

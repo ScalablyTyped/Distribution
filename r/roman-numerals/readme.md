@@ -11,8 +11,8 @@ Roman numerals conversion module
 | Full name          | roman-numerals |
 | Keywords           | roman, numerals, conversion |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 135964 |
+| # dependents       | 24 |
+| # downloads        | 142539 |
 | # stars            | 0 |
 
 ## Links

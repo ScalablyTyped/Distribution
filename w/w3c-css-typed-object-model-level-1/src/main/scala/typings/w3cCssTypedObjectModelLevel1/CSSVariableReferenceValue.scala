@@ -2,15 +2,13 @@ package typings.w3cCssTypedObjectModelLevel1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSSVariableReferenceValue extends StObject {
   
-  val fallback: js.UndefOr[CSSUnparsedValue] = js.native
+  val fallback: js.UndefOr[CSSUnparsedValue] = js.undefined
   
-  var variable: String = js.native
+  var variable: String
 }
 object CSSVariableReferenceValue {
   

@@ -4,15 +4,13 @@ import typings.plottable.stackingUtilsMod.StackExtent
 import typings.plottable.utilsMod.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaximumExtents[D] extends StObject {
   
-  var maximumExtents: Map[String | Double, StackExtent[D]] = js.native
+  var maximumExtents: Map[String | Double, StackExtent[D]]
   
-  var minimumExtents: Map[String | Double, StackExtent[D]] = js.native
+  var minimumExtents: Map[String | Double, StackExtent[D]]
 }
 object MaximumExtents {
   
@@ -26,7 +24,7 @@ object MaximumExtents {
   }
   
   @scala.inline
-  implicit class MaximumExtentsMutableBuilder[Self <: MaximumExtents[_], D] (val x: Self with MaximumExtents[D]) extends AnyVal {
+  implicit class MaximumExtentsMutableBuilder[Self <: MaximumExtents[?], D] (val x: Self & MaximumExtents[D]) extends AnyVal {
     
     @scala.inline
     def setMaximumExtents(value: Map[String | Double, StackExtent[D]]): Self = StObject.set(x, "maximumExtents", value.asInstanceOf[js.Any])

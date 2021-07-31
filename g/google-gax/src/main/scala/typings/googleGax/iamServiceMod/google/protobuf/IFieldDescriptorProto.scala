@@ -4,42 +4,40 @@ import typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto.Labe
 import typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a FieldDescriptorProto. */
-@js.native
 trait IFieldDescriptorProto extends StObject {
   
   /** FieldDescriptorProto defaultValue */
-  var defaultValue: js.UndefOr[String | Null] = js.native
+  var defaultValue: js.UndefOr[String | Null] = js.undefined
   
   /** FieldDescriptorProto extendee */
-  var extendee: js.UndefOr[String | Null] = js.native
+  var extendee: js.UndefOr[String | Null] = js.undefined
   
   /** FieldDescriptorProto jsonName */
-  var jsonName: js.UndefOr[String | Null] = js.native
+  var jsonName: js.UndefOr[String | Null] = js.undefined
   
   /** FieldDescriptorProto label */
-  var label: js.UndefOr[Label | Null] = js.native
+  var label: js.UndefOr[Label | Null] = js.undefined
   
   /** FieldDescriptorProto name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** FieldDescriptorProto number */
-  var number: js.UndefOr[Double | Null] = js.native
+  var number: js.UndefOr[Double | Null] = js.undefined
   
   /** FieldDescriptorProto oneofIndex */
-  var oneofIndex: js.UndefOr[Double | Null] = js.native
+  var oneofIndex: js.UndefOr[Double | Null] = js.undefined
   
   /** FieldDescriptorProto options */
-  var options: js.UndefOr[IFieldOptions | Null] = js.native
+  var options: js.UndefOr[IFieldOptions | Null] = js.undefined
   
   /** FieldDescriptorProto type */
-  var `type`: js.UndefOr[Type | Null] = js.native
+  var `type`: js.UndefOr[Type | Null] = js.undefined
   
   /** FieldDescriptorProto typeName */
-  var typeName: js.UndefOr[String | Null] = js.native
+  var typeName: js.UndefOr[String | Null] = js.undefined
 }
 object IFieldDescriptorProto {
   

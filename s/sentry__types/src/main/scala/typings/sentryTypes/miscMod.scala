@@ -3,32 +3,31 @@ package typings.sentryTypes
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object miscMod {
   
-  @js.native
   trait ExtractedNodeRequestData
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /** String representing the cookies sent along with the request */
-    var cookies: js.UndefOr[StringDictionary[String]] = js.native
+    var cookies: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** Any data sent in the request's body, as a JSON string */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Specific headers from the request */
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**  The request's method */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     /** The request's query string, without the leading '?' */
-    var query_string: js.UndefOr[String] = js.native
+    var query_string: js.UndefOr[String] = js.undefined
     
     /** The request's URL, including query string */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ExtractedNodeRequestData {
     
@@ -79,35 +78,34 @@ object miscMod {
     }
   }
   
-  @js.native
   trait WorkerLocation extends StObject {
     
     /** The fragment identifier of the URL of the script executed in the Worker, beginning with a '#'. */
-    val hash: String = js.native
+    val hash: String
     
     /** The host, that is the hostname, a ':', and the port of the URL of the script executed in the Worker. */
-    val host: String = js.native
+    val host: String
     
     /** The domain of the URL of the script executed in the Worker. */
-    val hostname: String = js.native
+    val hostname: String
     
     /** Stringifier that returns the whole URL of the script executed in the Worker. */
-    val href: String = js.native
+    val href: String
     
     /** The canonical form of the origin of the specific location. */
-    val origin: String = js.native
+    val origin: String
     
     /** The path of the URL of the script executed in the Worker, beginning with a '/'. */
-    val pathname: String = js.native
+    val pathname: String
     
     /** The port number of the URL of the script executed in the Worker. */
-    val port: String = js.native
+    val port: String
     
     /** The protocol scheme of the URL of the script executed in the Worker, including the final ':'. */
-    val protocol: String = js.native
+    val protocol: String
     
     /** The parameters (query string) of the URL of the script executed in the Worker, beginning with a '?'. */
-    val search: String = js.native
+    val search: String
   }
   object WorkerLocation {
     

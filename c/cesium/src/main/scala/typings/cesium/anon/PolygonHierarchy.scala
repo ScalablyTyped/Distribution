@@ -3,25 +3,23 @@ package typings.cesium.anon
 import typings.cesium.mod.VertexFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolygonHierarchy extends StObject {
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var extrudedHeight: js.UndefOr[Double] = js.native
+  var extrudedHeight: js.UndefOr[Double] = js.undefined
   
-  var granularity: js.UndefOr[Double] = js.native
+  var granularity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var perPositionHeight: js.UndefOr[Boolean] = js.native
+  var perPositionHeight: js.UndefOr[Boolean] = js.undefined
   
-  var polygonHierarchy: js.Any = js.native
+  var polygonHierarchy: js.Any
   
-  var vertexFormat: js.UndefOr[VertexFormat] = js.native
+  var vertexFormat: js.UndefOr[VertexFormat] = js.undefined
 }
 object PolygonHierarchy {
   

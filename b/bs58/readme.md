@@ -11,8 +11,8 @@ Base 58 encoding / decoding
 | Full name          | bs58 |
 | Keywords           | base58, bitcoin, crypto, crytography, decode, decoding, encode, encoding, litecoin |
 | # releases         | 1 |
-| # dependents       | 1078 |
-| # downloads        | 8945081 |
+| # dependents       | 1192 |
+| # downloads        | 10296719 |
 | # stars            | 7 |
 
 ## Links

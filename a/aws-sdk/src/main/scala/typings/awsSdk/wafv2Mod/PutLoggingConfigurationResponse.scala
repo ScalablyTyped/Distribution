@@ -2,16 +2,14 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutLoggingConfigurationResponse extends StObject {
   
   /**
     * 
     */
-  var LoggingConfiguration: js.UndefOr[typings.awsSdk.wafv2Mod.LoggingConfiguration] = js.native
+  var LoggingConfiguration: js.UndefOr[typings.awsSdk.wafv2Mod.LoggingConfiguration] = js.undefined
 }
 object PutLoggingConfigurationResponse {
   

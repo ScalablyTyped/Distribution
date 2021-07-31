@@ -10,9 +10,9 @@ React Native SegmentedControlIOS library
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/segmented-control |
 | Keywords           | SegmentedControlIOS, react-native |
-| # releases         | 17 |
+| # releases         | 22 |
 | # dependents       | 2 |
-| # downloads        | 106301 |
+| # downloads        | 275066 |
 | # stars            | 0 |
 
 ## Links

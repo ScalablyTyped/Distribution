@@ -2,13 +2,11 @@ package typings.reactAutosuggest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuggestionHighlightedParams extends StObject {
   
-  var suggestion: js.Any = js.native
+  var suggestion: js.Any
 }
 object SuggestionHighlightedParams {
   

@@ -2,26 +2,24 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactSource extends StObject {
   
   @JSName("package")
-  var _package: scala.Double = js.native
+  var _package: scala.Double
   
-  var artifactSource: scala.Double = js.native
+  var artifactSource: scala.Double
   
-  var containerImage: scala.Double = js.native
+  var containerImage: scala.Double
   
-  var pullRequest: scala.Double = js.native
+  var pullRequest: scala.Double
   
-  var schedule: scala.Double = js.native
+  var schedule: scala.Double
   
-  var sourceRepo: scala.Double = js.native
+  var sourceRepo: scala.Double
   
-  var undefined: scala.Double = js.native
+  var undefined: scala.Double
 }
 object ArtifactSource {
   

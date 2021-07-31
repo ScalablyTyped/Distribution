@@ -16,7 +16,6 @@ import typings.luminoWidgets.widgetMod.Widget
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object docklayoutMod {
@@ -260,21 +259,16 @@ object docklayoutMod {
     object AreaConfig {
       
       @scala.inline
-      def ISplitAreaConfig(
-        children: js.Array[AreaConfig],
-        orientation: horizontal | vertical,
-        sizes: js.Array[Double],
-        `type`: `split-area`
-      ): typings.luminoWidgets.docklayoutMod.DockLayout.ISplitAreaConfig = {
+      def ISplitAreaConfig(children: js.Array[AreaConfig], orientation: horizontal | vertical, sizes: js.Array[Double]): typings.luminoWidgets.docklayoutMod.DockLayout.ISplitAreaConfig = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("split-area")
         __obj.asInstanceOf[typings.luminoWidgets.docklayoutMod.DockLayout.ISplitAreaConfig]
       }
       
       @scala.inline
-      def ITabAreaConfig(currentIndex: Double, `type`: `tab-area`, widgets: js.Array[Widget]): typings.luminoWidgets.docklayoutMod.DockLayout.ITabAreaConfig = {
+      def ITabAreaConfig(currentIndex: Double, widgets: js.Array[Widget]): typings.luminoWidgets.docklayoutMod.DockLayout.ITabAreaConfig = {
         val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], widgets = widgets.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("tab-area")
         __obj.asInstanceOf[typings.luminoWidgets.docklayoutMod.DockLayout.ITabAreaConfig]
       }
     }
@@ -282,7 +276,6 @@ object docklayoutMod {
     /**
       * An options object for adding a widget to the dock layout.
       */
-    @js.native
     trait IAddOptions extends StObject {
       
       /**
@@ -290,14 +283,14 @@ object docklayoutMod {
         *
         * The default is `'tab-after'`.
         */
-      var mode: js.UndefOr[InsertMode] = js.native
+      var mode: js.UndefOr[InsertMode] = js.undefined
       
       /**
         * The reference widget for the insert location.
         *
         * The default is `null`.
         */
-      var ref: js.UndefOr[Widget | Null] = js.native
+      var ref: js.UndefOr[Widget | Null] = js.undefined
     }
     object IAddOptions {
       
@@ -330,19 +323,18 @@ object docklayoutMod {
     /**
       * A dock layout configuration object.
       */
-    @js.native
     trait ILayoutConfig extends StObject {
       
       /**
         * The layout config for the main dock area.
         */
-      var main: AreaConfig | Null = js.native
+      var main: AreaConfig | Null
     }
     object ILayoutConfig {
       
       @scala.inline
       def apply(): ILayoutConfig = {
-        val __obj = js.Dynamic.literal()
+        val __obj = js.Dynamic.literal(main = null)
         __obj.asInstanceOf[ILayoutConfig]
       }
       
@@ -360,20 +352,19 @@ object docklayoutMod {
     /**
       * An options object for creating a dock layout.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The renderer to use for the dock layout.
         */
-      var renderer: IRenderer = js.native
+      var renderer: IRenderer
       
       /**
         * The spacing between items in the layout.
         *
         * The default is `4`.
         */
-      var spacing: js.UndefOr[Double] = js.native
+      var spacing: js.UndefOr[Double] = js.undefined
     }
     object IOptions {
       
@@ -400,7 +391,6 @@ object docklayoutMod {
     /**
       * A renderer for use with a dock layout.
       */
-    @js.native
     trait IRenderer extends StObject {
       
       /**
@@ -408,14 +398,14 @@ object docklayoutMod {
         *
         * @returns A new handle node for a dock layout.
         */
-      def createHandle(): HTMLDivElement = js.native
+      def createHandle(): HTMLDivElement
       
       /**
         * Create a new tab bar for use with a dock layout.
         *
         * @returns A new tab bar for a dock layout.
         */
-      def createTabBar(): TabBar[Widget] = js.native
+      def createTabBar(): TabBar[Widget]
     }
     object IRenderer {
       
@@ -439,40 +429,36 @@ object docklayoutMod {
     /**
       * A layout config object for a split area.
       */
-    @js.native
-    trait ISplitAreaConfig extends AreaConfig {
+    trait ISplitAreaConfig
+      extends StObject
+         with AreaConfig {
       
       /**
         * The children in the split area.
         */
-      var children: js.Array[AreaConfig] = js.native
+      var children: js.Array[AreaConfig]
       
       /**
         * The orientation of the split area.
         */
-      var orientation: horizontal | vertical = js.native
+      var orientation: horizontal | vertical
       
       /**
         * The relative sizes of the children.
         */
-      var sizes: js.Array[Double] = js.native
+      var sizes: js.Array[Double]
       
       /**
         * The discriminated type of the config object.
         */
-      var `type`: `split-area` = js.native
+      var `type`: `split-area`
     }
     object ISplitAreaConfig {
       
       @scala.inline
-      def apply(
-        children: js.Array[AreaConfig],
-        orientation: horizontal | vertical,
-        sizes: js.Array[Double],
-        `type`: `split-area`
-      ): ISplitAreaConfig = {
+      def apply(children: js.Array[AreaConfig], orientation: horizontal | vertical, sizes: js.Array[Double]): ISplitAreaConfig = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("split-area")
         __obj.asInstanceOf[ISplitAreaConfig]
       }
       
@@ -502,30 +488,31 @@ object docklayoutMod {
     /**
       * A layout config object for a tab area.
       */
-    @js.native
-    trait ITabAreaConfig extends AreaConfig {
+    trait ITabAreaConfig
+      extends StObject
+         with AreaConfig {
       
       /**
         * The index of the selected tab.
         */
-      var currentIndex: Double = js.native
+      var currentIndex: Double
       
       /**
         * The discriminated type of the config object.
         */
-      var `type`: `tab-area` = js.native
+      var `type`: `tab-area`
       
       /**
         * The widgets contained in the tab area.
         */
-      var widgets: js.Array[Widget] = js.native
+      var widgets: js.Array[Widget]
     }
     object ITabAreaConfig {
       
       @scala.inline
-      def apply(currentIndex: Double, `type`: `tab-area`, widgets: js.Array[Widget]): ITabAreaConfig = {
+      def apply(currentIndex: Double, widgets: js.Array[Widget]): ITabAreaConfig = {
         val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], widgets = widgets.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("tab-area")
         __obj.asInstanceOf[ITabAreaConfig]
       }
       
@@ -549,7 +536,6 @@ object docklayoutMod {
     /**
       * An object which represents the geometry of a tab area.
       */
-    @js.native
     trait ITabAreaGeometry extends StObject {
       
       /**
@@ -559,7 +545,7 @@ object docklayoutMod {
         * This is the distance from the bottom edge of the layout parent
         * widget, to the bottom edge of the tab area.
         */
-      var bottom: Double = js.native
+      var bottom: Double
       
       /**
         * The height of the tab area.
@@ -567,7 +553,7 @@ object docklayoutMod {
         * #### Notes
         * This is total height allocated for the tab area.
         */
-      var height: Double = js.native
+      var height: Double
       
       /**
         * The local coordinate of the left edge of the tab area.
@@ -576,7 +562,7 @@ object docklayoutMod {
         * This is the distance from the left edge of the layout parent
         * widget, to the left edge of the tab area.
         */
-      var left: Double = js.native
+      var left: Double
       
       /**
         * The local coordinate of the right edge of the tab area.
@@ -585,12 +571,12 @@ object docklayoutMod {
         * This is the distance from the right edge of the layout parent
         * widget, to the right edge of the tab area.
         */
-      var right: Double = js.native
+      var right: Double
       
       /**
         * The tab bar for the tab area.
         */
-      var tabBar: TabBar[Widget] = js.native
+      var tabBar: TabBar[Widget]
       
       /**
         * The local coordinate of the top edge of the tab area.
@@ -599,7 +585,7 @@ object docklayoutMod {
         * This is the distance from the top edge of the layout parent
         * widget, to the top edge of the tab area.
         */
-      var top: Double = js.native
+      var top: Double
       
       /**
         * The width of the tab area.
@@ -607,7 +593,7 @@ object docklayoutMod {
         * #### Notes
         * This is total width allocated for the tab area.
         */
-      var width: Double = js.native
+      var width: Double
       
       /**
         * The local X position of the hit test in the dock area.
@@ -616,7 +602,7 @@ object docklayoutMod {
         * This is the distance from the left edge of the layout parent
         * widget, to the local X coordinate of the hit test query.
         */
-      var x: Double = js.native
+      var x: Double
       
       /**
         * The local Y position of the hit test in the dock area.
@@ -625,7 +611,7 @@ object docklayoutMod {
         * This is the distance from the top edge of the layout parent
         * widget, to the local Y coordinate of the hit test query.
         */
-      var y: Double = js.native
+      var y: Double
     }
     object ITabAreaGeometry {
       

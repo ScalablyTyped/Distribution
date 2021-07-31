@@ -7,17 +7,15 @@ import typings.gestalt.gestaltStrings.string
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableProps extends StObject {
   
-  var borderStyle: js.UndefOr[sm | none] = js.native
+  var borderStyle: js.UndefOr[sm | none] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var maxHeight: js.UndefOr[number | string] = js.native
+  var maxHeight: js.UndefOr[number | string] = js.undefined
 }
 object TableProps {
   

@@ -6,7 +6,6 @@ import typings.std.Error
 import typings.teenyRequest.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/common/build/src/util", "Util")
@@ -43,37 +42,27 @@ class Util_ () extends StObject {
     * @param {function} callback - The callback function.
     */
   def handleResp(): Unit = js.native
-  def handleResp(
-    err: Null,
-    resp: js.UndefOr[scala.Nothing],
-    body: js.UndefOr[scala.Nothing],
-    callback: BodyResponseCallback
-  ): Unit = js.native
-  def handleResp(err: Null, resp: js.UndefOr[scala.Nothing], body: ResponseBody): Unit = js.native
-  def handleResp(err: Null, resp: js.UndefOr[scala.Nothing], body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
-  def handleResp(err: Null, resp: Null, body: js.UndefOr[scala.Nothing], callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Null, resp: Null, body: Unit, callback: BodyResponseCallback): Unit = js.native
   def handleResp(err: Null, resp: Null, body: ResponseBody): Unit = js.native
   def handleResp(err: Null, resp: Null, body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
-  def handleResp(err: Null, resp: Response[_]): Unit = js.native
-  def handleResp(err: Null, resp: Response[_], body: js.UndefOr[scala.Nothing], callback: BodyResponseCallback): Unit = js.native
-  def handleResp(err: Null, resp: Response[_], body: ResponseBody): Unit = js.native
-  def handleResp(err: Null, resp: Response[_], body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Null, resp: Unit, body: Unit, callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Null, resp: Unit, body: ResponseBody): Unit = js.native
+  def handleResp(err: Null, resp: Unit, body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Null, resp: Response[js.Any]): Unit = js.native
+  def handleResp(err: Null, resp: Response[js.Any], body: Unit, callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Null, resp: Response[js.Any], body: ResponseBody): Unit = js.native
+  def handleResp(err: Null, resp: Response[js.Any], body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
   def handleResp(err: Error): Unit = js.native
-  def handleResp(
-    err: Error,
-    resp: js.UndefOr[scala.Nothing],
-    body: js.UndefOr[scala.Nothing],
-    callback: BodyResponseCallback
-  ): Unit = js.native
-  def handleResp(err: Error, resp: js.UndefOr[scala.Nothing], body: ResponseBody): Unit = js.native
-  def handleResp(err: Error, resp: js.UndefOr[scala.Nothing], body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
-  def handleResp(err: Error, resp: Null, body: js.UndefOr[scala.Nothing], callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Error, resp: Null, body: Unit, callback: BodyResponseCallback): Unit = js.native
   def handleResp(err: Error, resp: Null, body: ResponseBody): Unit = js.native
   def handleResp(err: Error, resp: Null, body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
-  def handleResp(err: Error, resp: Response[_]): Unit = js.native
-  def handleResp(err: Error, resp: Response[_], body: js.UndefOr[scala.Nothing], callback: BodyResponseCallback): Unit = js.native
-  def handleResp(err: Error, resp: Response[_], body: ResponseBody): Unit = js.native
-  def handleResp(err: Error, resp: Response[_], body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Error, resp: Unit, body: Unit, callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Error, resp: Unit, body: ResponseBody): Unit = js.native
+  def handleResp(err: Error, resp: Unit, body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Error, resp: Response[js.Any]): Unit = js.native
+  def handleResp(err: Error, resp: Response[js.Any], body: Unit, callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Error, resp: Response[js.Any], body: ResponseBody): Unit = js.native
+  def handleResp(err: Error, resp: Response[js.Any], body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
   
   def isCustomType(unknown: js.Any, module: String): Boolean = js.native
   
@@ -137,7 +126,8 @@ class Util_ () extends StObject {
     */
   def maybeOptionsOrCallback[T, C](): js.Tuple2[T, C] = js.native
   def maybeOptionsOrCallback[T, C](optionsOrCallback: C | T): js.Tuple2[T, C] = js.native
-  def maybeOptionsOrCallback[T, C](optionsOrCallback: js.UndefOr[C | T], cb: C): js.Tuple2[T, C] = js.native
+  def maybeOptionsOrCallback[T, C](optionsOrCallback: C | T, cb: C): js.Tuple2[T, C] = js.native
+  def maybeOptionsOrCallback[T, C](optionsOrCallback: Unit, cb: C): js.Tuple2[T, C] = js.native
   
   /**
     * No op.
@@ -169,7 +159,7 @@ class Util_ () extends StObject {
     * @param {?error} parsedHttpRespMessage.err - An error detected.
     * @param {object} parsedHttpRespMessage.resp - The original response object.
     */
-  def parseHttpRespMessage(httpRespMessage: Response[_]): ParsedHttpRespMessage = js.native
+  def parseHttpRespMessage(httpRespMessage: Response[js.Any]): ParsedHttpRespMessage = js.native
   
   /**
     * Returns true if the API request should be retried, given the error that was

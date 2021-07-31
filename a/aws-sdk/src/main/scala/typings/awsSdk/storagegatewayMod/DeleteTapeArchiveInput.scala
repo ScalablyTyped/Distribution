@@ -2,21 +2,19 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTapeArchiveInput extends StObject {
   
   /**
     * Set to TRUE to delete an archived tape that belongs to a custom pool with tape retention lock. Only archived tapes with tape retention lock set to governance can be deleted. Archived tapes with tape retention lock set to compliance can't be deleted.
     */
-  var BypassGovernanceRetention: js.UndefOr[scala.Boolean] = js.native
+  var BypassGovernanceRetention: js.UndefOr[scala.Boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the virtual tape to delete from the virtual tape shelf (VTS).
     */
-  var TapeARN: typings.awsSdk.storagegatewayMod.TapeARN = js.native
+  var TapeARN: typings.awsSdk.storagegatewayMod.TapeARN
 }
 object DeleteTapeArchiveInput {
   

@@ -2,13 +2,11 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Reporting Configuration
   */
-@js.native
 trait SchemaReportsConfiguration extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaReportsConfiguration extends StObject {
     * detailed pathway information on up to 10 of the most recent ad exposures
     * seen by a user before converting.
     */
-  var exposureToConversionEnabled: js.UndefOr[Boolean] = js.native
+  var exposureToConversionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default lookback windows for new advertisers in this account.
     */
-  var lookbackConfiguration: js.UndefOr[SchemaLookbackConfiguration] = js.native
+  var lookbackConfiguration: js.UndefOr[SchemaLookbackConfiguration] = js.undefined
   
   /**
     * Report generation time zone ID of this account. This is a required field
@@ -37,7 +35,7 @@ trait SchemaReportsConfiguration extends StObject {
     * &quot;Pacific/Auckland&quot;  - &quot;13&quot; for
     * &quot;America/Sao_Paulo&quot;
     */
-  var reportGenerationTimeZoneId: js.UndefOr[String] = js.native
+  var reportGenerationTimeZoneId: js.UndefOr[String] = js.undefined
 }
 object SchemaReportsConfiguration {
   

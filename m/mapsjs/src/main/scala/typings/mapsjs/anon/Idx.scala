@@ -2,15 +2,13 @@ package typings.mapsjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Idx extends StObject {
   
-  var idx: Double = js.native
+  var idx: Double
   
-  var setIdx: Double = js.native
+  var setIdx: Double
 }
 object Idx {
   

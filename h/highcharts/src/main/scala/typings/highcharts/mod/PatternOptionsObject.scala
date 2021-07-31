@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatternOptionsObject extends StObject {
   
   /**
@@ -13,39 +11,39 @@ trait PatternOptionsObject extends StObject {
     * to set an aspect ratio. The image will be zoomed to fill the bounding
     * box, maintaining the aspect ratio defined.
     */
-  var aspectRatio: Double = js.native
+  var aspectRatio: Double
   
   /**
     * Background color for the pattern if a `path` is set (not images).
     */
-  var backgroundColor: ColorString = js.native
+  var backgroundColor: ColorString
   
   /**
     * Pattern color, used as default path stroke.
     */
-  var color: ColorString = js.native
+  var color: ColorString
   
   /**
     * Analogous to pattern.width.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * ID to assign to the pattern. This is automatically computed if not added,
     * and identical patterns are reused. To refer to an existing pattern for a
     * Highcharts color, use `color: "url(#pattern-id)"`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * URL to an image to use as the pattern.
     */
-  var image: String = js.native
+  var image: String
   
   /**
     * Opacity of the pattern as a float value from 0 to 1.
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * Either an SVG path as string, or an object. As an object, supply the path
@@ -53,12 +51,12 @@ trait PatternOptionsObject extends StObject {
     * SVG attributes like `path.stroke` and `path.fill`. If a path is supplied
     * for the pattern, the `image` property is ignored.
     */
-  var path: String | SVGAttributes = js.native
+  var path: String | SVGAttributes
   
   /**
     * SVG `patternTransform` to apply to the entire pattern.
     */
-  var patternTransform: String = js.native
+  var patternTransform: String
   
   /**
     * Width of the pattern. For images this is automatically set to the width
@@ -67,17 +65,17 @@ trait PatternOptionsObject extends StObject {
     * bounding box dynamically is only supported for patterns with an
     * automatically calculated ID.
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * Horizontal offset of the pattern. Defaults to 0.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * Vertical offset of the pattern. Defaults to 0.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object PatternOptionsObject {
   

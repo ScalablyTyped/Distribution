@@ -2,31 +2,29 @@ package typings.reactNative
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestInit extends StObject {
   
-  var body: js.UndefOr[BodyInit] = js.native
+  var body: js.UndefOr[BodyInit] = js.undefined
   
-  var credentials: js.UndefOr[RequestCredentials] = js.native
+  var credentials: js.UndefOr[RequestCredentials] = js.undefined
   
-  var headers: js.UndefOr[HeadersInit] = js.native
+  var headers: js.UndefOr[HeadersInit] = js.undefined
   
-  var integrity: js.UndefOr[String] = js.native
+  var integrity: js.UndefOr[String] = js.undefined
   
-  var keepalive: js.UndefOr[Boolean] = js.native
+  var keepalive: js.UndefOr[Boolean] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[RequestMode] = js.native
+  var mode: js.UndefOr[RequestMode] = js.undefined
   
-  var referrer: js.UndefOr[String] = js.native
+  var referrer: js.UndefOr[String] = js.undefined
   
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
-  var window: js.UndefOr[js.Any] = js.native
+  var window: js.UndefOr[js.Any] = js.undefined
 }
 object RequestInit {
   

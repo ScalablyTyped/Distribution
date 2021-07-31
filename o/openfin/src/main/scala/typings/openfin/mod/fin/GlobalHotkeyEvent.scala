@@ -3,22 +3,20 @@ package typings.openfin.mod.fin
 import typings.openfin.anon.EntityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalHotkeyEvent extends StObject {
   
-  var hotkey: String = js.native
+  var hotkey: String
   
   /**
     * The Identity that has just registered the hotkey
     */
-  var identity: EntityType = js.native
+  var identity: EntityType
   
-  var topic: String = js.native
+  var topic: String
   
-  var `type`: OpenFinGlobalHotkeyEventType = js.native
+  var `type`: OpenFinGlobalHotkeyEventType
 }
 object GlobalHotkeyEvent {
   

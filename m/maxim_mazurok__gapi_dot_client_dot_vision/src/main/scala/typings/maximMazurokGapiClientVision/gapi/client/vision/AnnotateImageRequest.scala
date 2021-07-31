@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotateImageRequest extends StObject {
   
   /** Requested features. */
-  var features: js.UndefOr[js.Array[Feature]] = js.native
+  var features: js.UndefOr[js.Array[Feature]] = js.undefined
   
   /** The image to be processed. */
-  var image: js.UndefOr[Image] = js.native
+  var image: js.UndefOr[Image] = js.undefined
   
   /** Additional context that may accompany the image. */
-  var imageContext: js.UndefOr[ImageContext] = js.native
+  var imageContext: js.UndefOr[ImageContext] = js.undefined
 }
 object AnnotateImageRequest {
   

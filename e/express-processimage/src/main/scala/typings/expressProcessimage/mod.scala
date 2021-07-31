@@ -4,7 +4,6 @@ import typings.express.mod.NextFunction
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,37 +13,38 @@ object mod {
     * It is intended to be used in a development setting with the static middleware,
     * but should play well with any middleware further down the stack,even an http proxy, via hijackresponse.
     */
-  @JSImport("express-processimage", JSImport.Namespace)
-  @js.native
-  def apply(): NextFunction = js.native
-  @JSImport("express-processimage", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): NextFunction = js.native
+  @scala.inline
+  def apply(): NextFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[NextFunction]
+  @scala.inline
+  def apply(options: Options): NextFunction = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[NextFunction]
   
+  @JSImport("express-processimage", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var allowOperation: js.UndefOr[js.Function2[/* operationName */ String, /* repeated */ js.Any, Boolean]] = js.native
+    var allowOperation: js.UndefOr[js.Function2[/* operationName */ String, /* repeated */ js.Any, Boolean]] = js.undefined
     
-    var allowedImageSourceContentTypes: js.UndefOr[js.Array[String]] = js.native
+    var allowedImageSourceContentTypes: js.UndefOr[js.Array[String]] = js.undefined
     
     /** @debug false */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var filters: js.UndefOr[Record[String, Boolean]] = js.native
+    var filters: js.UndefOr[Record[String, Boolean]] = js.undefined
     
-    var maxInputPixels: js.UndefOr[Double] = js.native
+    var maxInputPixels: js.UndefOr[Double] = js.undefined
     
-    var maxOutputPixels: js.UndefOr[Double] = js.native
+    var maxOutputPixels: js.UndefOr[Double] = js.undefined
     
-    var onPipeline: js.UndefOr[js.Function1[/* pipeline */ js.Object, Unit]] = js.native
+    var onPipeline: js.UndefOr[js.Function1[/* pipeline */ js.Object, Unit]] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /** @defult false */
-    var secondGuessSourceContentType: js.UndefOr[Boolean] = js.native
+    var secondGuessSourceContentType: js.UndefOr[Boolean] = js.undefined
     
-    var sharpCache: js.UndefOr[Double] = js.native
+    var sharpCache: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

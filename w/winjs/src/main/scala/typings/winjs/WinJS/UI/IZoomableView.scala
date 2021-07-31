@@ -5,20 +5,18 @@ import typings.winjs.WinJS.Utilities.IPosition
 import typings.winjs.anon.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Supports semantic zoom functionality by exposing a control as either the zoomed in or the zoomed out view of the SemanticZoom control.
   **/
-@js.native
 trait IZoomableView[T] extends StObject {
   
   //#region Methods
   /**
     * Initiates semantic zoom on the custom control.
     **/
-  def beginZoom(): Unit = js.native
+  def beginZoom(): Unit
   
   /**
     * Initializes the semantic zoom state for the custom control.
@@ -27,45 +25,45 @@ trait IZoomableView[T] extends StObject {
     * @param triggerZoom The function that manages semantic zoom behavior. Triggers a zoom in or zoom out if the control is the visible control.
     * @param prefetchedPages The number of pages of content to pre-fetch for zooming. This value is dependent on the size of the semantic zoom container. More content can be displayed based on the zoom factor and the size of the container.
     **/
-  def configureForZoom(isZoomedOut: Boolean, isCurrentView: Boolean, triggerZoom: js.Function, prefetchedPages: Double): Unit = js.native
+  def configureForZoom(isZoomedOut: Boolean, isCurrentView: Boolean, triggerZoom: js.Function, prefetchedPages: Double): Unit
   
   /**
     * Terminates semantic zoom on the zoomed in or zoomed out child of the custom control.
     * @param isCurrentView True if the control is the visible control; otherwise false.
     **/
-  def endZoom(isCurrentView: Boolean): Unit = js.native
+  def endZoom(isCurrentView: Boolean): Unit
   
   /**
     * Retrieves the current item of the zoomed in or zoomed out child of the custom control.
     * @returns An object that represents the selected item. This return value must be a Promise for the following: item, position.
     **/
-  def getCurrentItem(): Promise[Item[T]] = js.native
+  def getCurrentItem(): Promise[Item[T]]
   
   /**
     * Retrieves the panning axis of the zoomed-in or zoomed-out child of the custom control.
     * @returns Identifies the panning axis of the child control. Implementation specific.
     **/
-  def getPanAxis(): String = js.native
+  def getPanAxis(): String
   
   /**
     * Manages pointer input for the custom control.
     * @param pointerId The ID of the pointer.
     **/
-  def handlePointer(pointerId: String): Unit = js.native
+  def handlePointer(pointerId: String): Unit
   
   /**
     * Positions the specified item within the viewport of the child control when panning or zooming begins.
     * @param item The object to position within the viewport of the child control. item can be a number, a string, or an object with any number of properties.
     * @param position An object that contains the position data of the item relative to the child control. position must be an object with four number properties: left, top, width, and height. These values specify a rectangle that is typically the bounding box of the current item, though the details are up to the control. The units of the position must be in pixels. And the coordinates must be relative to the top-left of the control viewport (which should occupy the same area as the semantic zoom viewport), except when in RTL mode. In RTL mode, return coordinates relative to the top-right off the control viewport. The rectangle is transformed from the coordinate system of one control to that of the other.
     **/
-  def positionItem(item: T, position: IPosition): Unit = js.native
+  def positionItem(item: T, position: IPosition): Unit
   
   /**
     * Selects the item closest to the specified screen coordinates.
     * @param x The x-coordinate in DIPs relative to the upper-left corner of the SemanticZoom viewport.
     * @param y The y-coordinate in DIPs relative to the upper-left corner of the SemanticZoom viewport..
     **/
-  def setCurrentItem(x: Double, y: Double): Unit = js.native
+  def setCurrentItem(x: Double, y: Double): Unit
 }
 object IZoomableView {
   
@@ -85,7 +83,7 @@ object IZoomableView {
   }
   
   @scala.inline
-  implicit class IZoomableViewMutableBuilder[Self <: IZoomableView[_], T] (val x: Self with IZoomableView[T]) extends AnyVal {
+  implicit class IZoomableViewMutableBuilder[Self <: IZoomableView[?], T] (val x: Self & IZoomableView[T]) extends AnyVal {
     
     @scala.inline
     def setBeginZoom(value: () => Unit): Self = StObject.set(x, "beginZoom", js.Any.fromFunction0(value))

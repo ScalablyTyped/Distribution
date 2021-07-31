@@ -4,33 +4,30 @@ import typings.symphonyApiClientNode.streamsClientMod.StreamType
 import typings.symphonyApiClientNode.usersClientMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messagesClientMod {
   
-  @JSImport("symphony-api-client-node/MessagesClient", "forwardMessage")
+  @JSImport("symphony-api-client-node/MessagesClient", JSImport.Namespace)
   @js.native
-  def forwardMessage(conversationId: String, message: String, data: js.Any): js.Promise[Message] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("symphony-api-client-node/MessagesClient", "getAttachment")
-  @js.native
-  def getAttachment(streamId: String, attachmentId: String, messageId: String): js.Promise[String] = js.native
+  @scala.inline
+  def forwardMessage(conversationId: String, message: String, data: js.Any): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("forwardMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
-  @JSImport("symphony-api-client-node/MessagesClient", "getMessage")
-  @js.native
-  def getMessage(messageId: String): js.Promise[Message] = js.native
+  @scala.inline
+  def getAttachment(streamId: String, attachmentId: String, messageId: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttachment")(streamId.asInstanceOf[js.Any], attachmentId.asInstanceOf[js.Any], messageId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("symphony-api-client-node/MessagesClient", "getMessages")
-  @js.native
-  def getMessages(streamId: String, since: Double, skip: Double, limit: Double): js.Promise[js.Array[Message]] = js.native
+  @scala.inline
+  def getMessage(messageId: String): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
   
-  @JSImport("symphony-api-client-node/MessagesClient", "sendMessage")
-  @js.native
-  def sendMessage(conversationId: String, message: String, data: js.Any, format: String, sessionToken: String): js.Promise[Message] = js.native
+  @scala.inline
+  def getMessages(streamId: String, since: Double, skip: Double, limit: Double): js.Promise[js.Array[Message]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMessages")(streamId.asInstanceOf[js.Any], since.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Message]]]
   
-  @JSImport("symphony-api-client-node/MessagesClient", "sendMessageWithAttachment")
-  @js.native
+  @scala.inline
+  def sendMessage(conversationId: String, message: String, data: js.Any, format: String, sessionToken: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  
+  @scala.inline
   def sendMessageWithAttachment(
     conversationId: String,
     message: String,
@@ -39,18 +36,17 @@ object messagesClientMod {
     fileType: String,
     fileContent: js.Any,
     format: String
-  ): js.Promise[Message] = js.native
+  ): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageWithAttachment")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], fileType.asInstanceOf[js.Any], fileContent.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
-  @js.native
   trait Attachment extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var images: js.Array[Image] = js.native
+    var images: js.Array[Image]
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object Attachment {
     
@@ -80,12 +76,11 @@ object messagesClientMod {
     }
   }
   
-  @js.native
   trait Image extends StObject {
     
-    var dimension: String = js.native
+    var dimension: String
     
-    var id: String = js.native
+    var id: String
   }
   object Image {
     
@@ -106,30 +101,29 @@ object messagesClientMod {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var attachments: js.UndefOr[js.Array[Attachment]] = js.native
+    var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
     
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var messageId: String = js.native
+    var messageId: String
     
-    var originalFormat: String = js.native
+    var originalFormat: String
     
-    var sharedMessage: js.UndefOr[Message] = js.native
+    var sharedMessage: js.UndefOr[Message] = js.undefined
     
-    var sid: String = js.native
+    var sid: String
     
-    var stream: Stream = js.native
+    var stream: Stream
     
-    var timestamp: Double = js.native
+    var timestamp: Double
     
-    var user: User = js.native
+    var user: User
     
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
   }
   object Message {
     
@@ -200,12 +194,11 @@ object messagesClientMod {
     }
   }
   
-  @js.native
   trait Stream extends StObject {
     
-    var streamId: String = js.native
+    var streamId: String
     
-    var streamType: StreamType = js.native
+    var streamType: StreamType
   }
   object Stream {
     

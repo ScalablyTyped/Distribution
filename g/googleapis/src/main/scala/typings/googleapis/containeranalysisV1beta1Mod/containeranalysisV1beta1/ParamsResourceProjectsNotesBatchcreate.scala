@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsNotesBatchcreate extends StandardParameters {
+trait ParamsResourceProjectsNotesBatchcreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The name of the project in the form of `projects/[PROJECT_ID]`, under
     * which the notes are to be created.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaBatchCreateNotesRequest] = js.native
+  var requestBody: js.UndefOr[SchemaBatchCreateNotesRequest] = js.undefined
 }
 object ParamsResourceProjectsNotesBatchcreate {
   

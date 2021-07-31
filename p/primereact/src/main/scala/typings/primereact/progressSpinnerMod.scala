@@ -3,7 +3,6 @@ package typings.primereact
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressSpinnerMod {
@@ -20,20 +19,19 @@ object progressSpinnerMod {
     def this(props: ProgressSpinnerProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ProgressSpinnerProps extends StObject {
     
-    var animationDuration: js.UndefOr[String] = js.native
+    var animationDuration: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var strokeWidth: js.UndefOr[String] = js.native
+    var strokeWidth: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object ProgressSpinnerProps {
     

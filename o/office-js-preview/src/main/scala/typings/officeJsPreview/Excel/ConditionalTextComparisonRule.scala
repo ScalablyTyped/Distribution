@@ -7,7 +7,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Invalid
 import typings.officeJsPreview.officeJsPreviewStrings.NotContains
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.6]
   */
-@js.native
 trait ConditionalTextComparisonRule extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait ConditionalTextComparisonRule extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var operator: ConditionalTextOperator | Invalid | Contains | NotContains | BeginsWith | EndsWith = js.native
+  var operator: ConditionalTextOperator | Invalid | Contains | NotContains | BeginsWith | EndsWith
   
   /**
     *
@@ -33,7 +31,7 @@ trait ConditionalTextComparisonRule extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var text: String = js.native
+  var text: String
 }
 object ConditionalTextComparisonRule {
   

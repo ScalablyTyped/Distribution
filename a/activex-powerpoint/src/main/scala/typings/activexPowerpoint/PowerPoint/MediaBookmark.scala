@@ -2,22 +2,20 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaBookmark extends StObject {
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val Index: Double = js.native
+  val Index: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  val Position: Double = js.native
+  val Position: Double
   
   @JSName("PowerPoint.MediaBookmark_typekey")
-  var PowerPointDotMediaBookmark_typekey: MediaBookmark = js.native
+  var PowerPointDotMediaBookmark_typekey: MediaBookmark
 }
 object MediaBookmark {
   

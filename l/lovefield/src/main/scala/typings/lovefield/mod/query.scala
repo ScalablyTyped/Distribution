@@ -4,21 +4,19 @@ import typings.lovefield.mod.schema.Column
 import typings.lovefield.mod.schema.Table
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object query {
   
-  @js.native
   trait Builder extends StObject {
     
-    def bind(values: js.Any*): Builder = js.native
+    def bind(values: js.Any*): Builder
     
-    def exec(): js.Promise[js.Array[js.Object]] = js.native
+    def exec(): js.Promise[js.Array[js.Object]]
     
-    def explain(): String = js.native
+    def explain(): String
     
-    def toSql(): String = js.native
+    def toSql(): String
   }
   object Builder {
     
@@ -50,12 +48,13 @@ object query {
     }
   }
   
-  @js.native
-  trait Delete extends Builder {
+  trait Delete
+    extends StObject
+       with Builder {
     
-    def from(table: Table): Delete = js.native
+    def from(table: Table): Delete
     
-    def where(predicate: Predicate): Delete = js.native
+    def where(predicate: Predicate): Delete
   }
   object Delete {
     
@@ -84,7 +83,9 @@ object query {
   }
   
   @js.native
-  trait Insert extends Builder {
+  trait Insert
+    extends StObject
+       with Builder {
     
     def into(table: Table): Insert = js.native
     
@@ -93,7 +94,9 @@ object query {
   }
   
   @js.native
-  trait Select extends Builder {
+  trait Select
+    extends StObject
+       with Builder {
     
     def from(tables: Table*): Select = js.native
     
@@ -115,12 +118,13 @@ object query {
     def where(predicate: Predicate): Select = js.native
   }
   
-  @js.native
-  trait Update extends Builder {
+  trait Update
+    extends StObject
+       with Builder {
     
-    def set(column: Column, value: js.Any): Update = js.native
+    def set(column: Column, value: js.Any): Update
     
-    def where(predicate: Predicate): Update = js.native
+    def where(predicate: Predicate): Update
   }
   object Update {
     

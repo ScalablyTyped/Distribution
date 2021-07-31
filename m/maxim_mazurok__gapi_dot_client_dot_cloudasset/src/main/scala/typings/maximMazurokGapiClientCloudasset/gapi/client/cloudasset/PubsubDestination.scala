@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PubsubDestination extends StObject {
   
   /** The name of the Pub/Sub topic to publish to. Example: `projects/PROJECT_ID/topics/TOPIC_ID`. */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
 }
 object PubsubDestination {
   

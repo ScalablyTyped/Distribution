@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopupDockOptions extends Object {
+trait PopupDockOptions
+  extends StObject
+     with Object {
   
   /**
     * Defines the dimensions of the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) at which to dock the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockOptions)
     */
-  var breakpoint: js.UndefOr[Boolean | PopupDockOptionsBreakpoint] = js.native
+  var breakpoint: js.UndefOr[Boolean | PopupDockOptionsBreakpoint] = js.undefined
   
   /**
     * If `true`, displays the dock button.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockOptions)
     */
-  var buttonEnabled: js.UndefOr[Boolean] = js.native
+  var buttonEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The position in the view at which to dock the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockOptions)
     */
-  var position: js.UndefOr[String | js.Function] = js.native
+  var position: js.UndefOr[String | js.Function] = js.undefined
 }
 object PopupDockOptions {
   

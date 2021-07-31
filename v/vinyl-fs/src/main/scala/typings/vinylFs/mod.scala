@@ -10,83 +10,74 @@ import typings.vinylFs.anon.DirMode
 import typings.vinylFs.vinylFsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("vinyl-fs", "dest")
+  @JSImport("vinyl-fs", JSImport.Namespace)
   @js.native
-  def dest(folder: String): ReadWriteStream = js.native
-  @JSImport("vinyl-fs", "dest")
-  @js.native
-  def dest(folder: String, opt: DestOptions): ReadWriteStream = js.native
-  @JSImport("vinyl-fs", "dest")
-  @js.native
-  def dest(getFolderPath: js.Function1[/* file */ File, String]): ReadWriteStream = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vinyl-fs", "src")
-  @js.native
-  def src(globs: String): ReadWriteStream = js.native
-  @JSImport("vinyl-fs", "src")
-  @js.native
-  def src(globs: String, opt: SrcOptions): ReadWriteStream = js.native
-  @JSImport("vinyl-fs", "src")
-  @js.native
-  def src(globs: js.Array[String]): ReadWriteStream = js.native
-  @JSImport("vinyl-fs", "src")
-  @js.native
-  def src(globs: js.Array[String], opt: SrcOptions): ReadWriteStream = js.native
+  @scala.inline
+  def dest(folder: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("dest")(folder.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def dest(folder: String, opt: DestOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("dest")(folder.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def dest(getFolderPath: js.Function1[/* file */ File, String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("dest")(getFolderPath.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
-  @JSImport("vinyl-fs", "symlink")
-  @js.native
-  def symlink(folder: String): ReadWriteStream = js.native
-  @JSImport("vinyl-fs", "symlink")
-  @js.native
-  def symlink(folder: String, opts: Cwd): ReadWriteStream = js.native
-  @JSImport("vinyl-fs", "symlink")
-  @js.native
-  def symlink(getFolderPath: js.Function1[/* File */ File, String]): ReadWriteStream = js.native
-  @JSImport("vinyl-fs", "symlink")
-  @js.native
-  def symlink(getFolderPath: js.Function1[/* File */ File, String], opts: DirMode): ReadWriteStream = js.native
+  @scala.inline
+  def src(globs: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def src(globs: String, opt: SrcOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def src(globs: js.Array[String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def src(globs: js.Array[String], opt: SrcOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
-  @js.native
+  @scala.inline
+  def symlink(folder: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(folder.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def symlink(folder: String, opts: Cwd): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(folder.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def symlink(getFolderPath: js.Function1[/* File */ File, String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(getFolderPath.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def symlink(getFolderPath: js.Function1[/* File */ File, String], opts: DirMode): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(getFolderPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  
   trait DestOptions extends StObject {
     
     /**
       * Specify the working directory the folder is relative to
       * Default is process.cwd()
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /** Specify the mode the directory should be created with. Default is the process mode */
-    var dirMode: js.UndefOr[Double | String] = js.native
+    var dirMode: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Specify the mode the files should be created with
       * Default is the mode of the input file (file.stat.mode)
       * or the process mode if the input file has no mode property
       */
-    var mode: js.UndefOr[Double | String] = js.native
+    var mode: js.UndefOr[Double | String] = js.undefined
     
     /** Specify if existing files with the same path should be overwritten or not. Default is true, to always overwrite existing files */
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When creating a symlink, whether or not the created symlink should be relative. If false,
       * the symlink will be absolute. Note: This option will be ignored if a junction is being created.
       */
-    var relativeSymlinks: js.UndefOr[Boolean] = js.native
+    var relativeSymlinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables sourcemap support on files passed through the stream. Will write inline soucemaps if
       * specified as true. Specifying a string path will write external sourcemaps at the given path.
       */
-    var sourcemaps: js.UndefOr[`true` | String] = js.native
+    var sourcemaps: js.UndefOr[`true` | String] = js.undefined
     
     /* When creating a symlink, whether or not a directory symlink should be created as a junction. */
-    var useJunctions: js.UndefOr[Boolean] = js.native
+    var useJunctions: js.UndefOr[Boolean] = js.undefined
   }
   object DestOptions {
     
@@ -143,21 +134,22 @@ object mod {
     }
   }
   
-  @js.native
-  trait SrcOptions extends Options {
+  trait SrcOptions
+    extends StObject
+       with Options {
     
     /**
       * Setting this to false will make file.contents a paused stream
       * If true it will buffer the file contents
       * Default: true
       */
-    var buffer: js.UndefOr[Boolean] = js.native
+    var buffer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The mode the directory should be created with.
       * Default: the process mode
       */
-    var dirMode: js.UndefOr[Double] = js.native
+    var dirMode: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether or not to recursively resolve symlinks to their targets.
@@ -165,55 +157,55 @@ object mod {
       * equal the original symlink's target path.
       * Default: true
       */
-    var followSymlinks: js.UndefOr[Boolean] = js.native
+    var followSymlinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Setting this to true will create a duplex stream, one that passes
       * through items and emits globbed files.
       * Default: false
       */
-    var passthrough: js.UndefOr[Boolean] = js.native
+    var passthrough: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Setting this to false will ignore the contents of the file and disable
       * writing to disk to speed up operations
       * Default: true
       */
-    var read: js.UndefOr[Boolean] = js.native
+    var read: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not the symlink should be relative or absolute.
       * Default: false
       */
-    var relative: js.UndefOr[Boolean] = js.native
+    var relative: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Causes the BOM to be removed on UTF-8 encoded files. Set to false if you need the BOM for some reason.
       * Default: true
       */
-    var removeBOM: js.UndefOr[Boolean] = js.native
+    var removeBOM: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to recursively resolve symlinks to their targets. Setting to false to
       * preserve them as symlinks and make file.symlink equal the original symlink's target path.
       * Default: false
       */
-    var resolveSymlinks: js.UndefOr[Boolean] = js.native
+    var resolveSymlinks: js.UndefOr[Boolean] = js.undefined
     
     /** Only find files that have been modified since the time specified */
-    var since: js.UndefOr[Date | Double] = js.native
+    var since: js.UndefOr[Date | Double] = js.undefined
     
     /**
       * Setting this to true will enable sourcemaps.
       * Default: false
       */
-    var sourcemaps: js.UndefOr[Boolean] = js.native
+    var sourcemaps: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Causes the BOM to be stripped on UTF-8 encoded files. Set to `false`
       * if you need the BOM for some reason.
       */
-    var stripBOM: js.UndefOr[Boolean] = js.native
+    var stripBOM: js.UndefOr[Boolean] = js.undefined
   }
   object SrcOptions {
     

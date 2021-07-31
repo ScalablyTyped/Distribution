@@ -2,21 +2,19 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangAccessibilityAnnounceNewDataOptions extends StObject {
   
-  var newDataAnnounce: js.UndefOr[String] = js.native
+  var newDataAnnounce: js.UndefOr[String] = js.undefined
   
-  var newPointAnnounceMultiple: js.UndefOr[String] = js.native
+  var newPointAnnounceMultiple: js.UndefOr[String] = js.undefined
   
-  var newPointAnnounceSingle: js.UndefOr[String] = js.native
+  var newPointAnnounceSingle: js.UndefOr[String] = js.undefined
   
-  var newSeriesAnnounceMultiple: js.UndefOr[String] = js.native
+  var newSeriesAnnounceMultiple: js.UndefOr[String] = js.undefined
   
-  var newSeriesAnnounceSingle: js.UndefOr[String] = js.native
+  var newSeriesAnnounceSingle: js.UndefOr[String] = js.undefined
 }
 object LangAccessibilityAnnounceNewDataOptions {
   

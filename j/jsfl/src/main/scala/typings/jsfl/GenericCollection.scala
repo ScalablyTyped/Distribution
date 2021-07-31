@@ -2,10 +2,8 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenericCollection[T] extends StObject {
   
   def each(
@@ -15,19 +13,19 @@ trait GenericCollection[T] extends StObject {
       /* elements */ js.UndefOr[js.Array[T]], 
       Unit
     ]
-  ): js.Any = js.native
+  ): js.Any
   
-  var elements: js.Array[T] = js.native
+  var elements: js.Array[T]
   
-  def randomize(info: js.Any): GenericCollection[T] = js.native
+  def randomize(info: js.Any): GenericCollection[T]
   
-  def rename(pattern: String): GenericCollection[T] = js.native
+  def rename(pattern: String): GenericCollection[T]
   
-  def select(): GenericCollection[T] = js.native
+  def select(): GenericCollection[T]
   
-  def toGrid(x: Double, y: Double): GenericCollection[T] = js.native
+  def toGrid(x: Double, y: Double): GenericCollection[T]
   
-  def update(): GenericCollection[T] = js.native
+  def update(): GenericCollection[T]
 }
 object GenericCollection {
   
@@ -51,7 +49,7 @@ object GenericCollection {
   }
   
   @scala.inline
-  implicit class GenericCollectionMutableBuilder[Self <: GenericCollection[_], T] (val x: Self with GenericCollection[T]) extends AnyVal {
+  implicit class GenericCollectionMutableBuilder[Self <: GenericCollection[?], T] (val x: Self & GenericCollection[T]) extends AnyVal {
     
     @scala.inline
     def setEach(

@@ -2,49 +2,47 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyOptions extends StObject {
   
-  var allowSleep: js.UndefOr[Boolean] = js.native
+  var allowSleep: js.UndefOr[Boolean] = js.undefined
   
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
-  var angularDamping: js.UndefOr[Double] = js.native
+  var angularDamping: js.UndefOr[Double] = js.undefined
   
-  var angularForce: js.UndefOr[Double] = js.native
+  var angularForce: js.UndefOr[Double] = js.undefined
   
-  var angularVelocity: js.UndefOr[Double] = js.native
+  var angularVelocity: js.UndefOr[Double] = js.undefined
   
-  var ccdIterations: js.UndefOr[Double] = js.native
+  var ccdIterations: js.UndefOr[Double] = js.undefined
   
-  var ccdSpeedThreshold: js.UndefOr[Double] = js.native
+  var ccdSpeedThreshold: js.UndefOr[Double] = js.undefined
   
-  var collisionResponse: js.UndefOr[Boolean] = js.native
+  var collisionResponse: js.UndefOr[Boolean] = js.undefined
   
-  var fixedRotation: js.UndefOr[Boolean] = js.native
+  var fixedRotation: js.UndefOr[Boolean] = js.undefined
   
-  var fixedX: js.UndefOr[Boolean] = js.native
+  var fixedX: js.UndefOr[Boolean] = js.undefined
   
-  var fixedY: js.UndefOr[Boolean] = js.native
+  var fixedY: js.UndefOr[Boolean] = js.undefined
   
-  var force: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var force: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var gravityScale: js.UndefOr[Double] = js.native
+  var gravityScale: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
-  var mass: js.UndefOr[Double] = js.native
+  var mass: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var position: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var sleepSpeedLimit: js.UndefOr[Double] = js.native
+  var sleepSpeedLimit: js.UndefOr[Double] = js.undefined
   
-  var sleepTimeLimit: js.UndefOr[Double] = js.native
+  var sleepTimeLimit: js.UndefOr[Double] = js.undefined
   
-  var velocity: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var velocity: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
 }
 object BodyOptions {
   

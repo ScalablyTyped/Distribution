@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookChartTitleFormat extends Entity {
+trait WorkbookChartTitleFormat
+  extends StObject
+     with Entity {
   
   // Represents the fill format of an object, which includes background formatting information. Read-only.
-  var fill: js.UndefOr[NullableOption[WorkbookChartFill]] = js.native
+  var fill: js.UndefOr[NullableOption[WorkbookChartFill]] = js.undefined
   
   // Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
-  var font: js.UndefOr[NullableOption[WorkbookChartFont]] = js.native
+  var font: js.UndefOr[NullableOption[WorkbookChartFont]] = js.undefined
 }
 object WorkbookChartTitleFormat {
   

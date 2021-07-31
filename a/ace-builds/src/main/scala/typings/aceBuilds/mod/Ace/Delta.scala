@@ -4,19 +4,17 @@ import typings.aceBuilds.aceBuildsStrings.insert
 import typings.aceBuilds.aceBuildsStrings.remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delta extends StObject {
   
-  var action: insert | remove = js.native
+  var action: insert | remove
   
-  var end: Point = js.native
+  var end: Point
   
-  var lines: js.Array[String] = js.native
+  var lines: js.Array[String]
   
-  var start: Point = js.native
+  var start: Point
 }
 object Delta {
   

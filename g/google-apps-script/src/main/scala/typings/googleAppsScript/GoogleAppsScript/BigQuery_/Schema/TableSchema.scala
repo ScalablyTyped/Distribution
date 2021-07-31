@@ -2,13 +2,11 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableSchema extends StObject {
   
-  var fields: js.UndefOr[js.Array[TableFieldSchema]] = js.native
+  var fields: js.UndefOr[js.Array[TableFieldSchema]] = js.undefined
 }
 object TableSchema {
   

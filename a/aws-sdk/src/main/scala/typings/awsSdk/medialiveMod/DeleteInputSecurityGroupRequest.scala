@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteInputSecurityGroupRequest extends StObject {
   
   /**
     * The Input Security Group to delete
     */
-  var InputSecurityGroupId: string = js.native
+  var InputSecurityGroupId: string
 }
 object DeleteInputSecurityGroupRequest {
   

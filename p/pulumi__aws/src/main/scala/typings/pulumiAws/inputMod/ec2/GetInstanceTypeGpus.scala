@@ -2,22 +2,20 @@ package typings.pulumiAws.inputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstanceTypeGpus extends StObject {
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
   /**
     * Size of the instance memory, in MiB.
     */
-  var memorySize: js.UndefOr[Double] = js.native
+  var memorySize: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GetInstanceTypeGpus {
   

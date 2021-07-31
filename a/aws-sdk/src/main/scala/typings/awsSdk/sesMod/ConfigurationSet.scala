@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationSet extends StObject {
   
   /**
     * The name of the configuration set. The name must meet the following requirements:   Contain only letters (a-z, A-Z), numbers (0-9), underscores (_), or dashes (-).   Contain 64 characters or fewer.  
     */
-  var Name: ConfigurationSetName = js.native
+  var Name: ConfigurationSetName
 }
 object ConfigurationSet {
   

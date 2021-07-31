@@ -3,16 +3,16 @@ package typings.xstate.typesMod
 import typings.xstate.typesMod.ActionTypes.Choose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChooseAction[TContext, TEvent /* <: EventObject */] extends ActionObject[TContext, TEvent] {
+trait ChooseAction[TContext, TEvent /* <: EventObject */]
+  extends StObject
+     with ActionObject[TContext, TEvent] {
   
-  var conds: js.Array[ChooseConditon[TContext, TEvent]] = js.native
+  var conds: js.Array[ChooseConditon[TContext, TEvent]]
   
   @JSName("type")
-  var type_ChooseAction: Choose = js.native
+  var type_ChooseAction: Choose
 }
 object ChooseAction {
   
@@ -24,7 +24,7 @@ object ChooseAction {
   }
   
   @scala.inline
-  implicit class ChooseActionMutableBuilder[Self <: ChooseAction[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (ChooseAction[TContext, TEvent])) extends AnyVal {
+  implicit class ChooseActionMutableBuilder[Self <: ChooseAction[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (ChooseAction[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setConds(value: js.Array[ChooseConditon[TContext, TEvent]]): Self = StObject.set(x, "conds", value.asInstanceOf[js.Any])

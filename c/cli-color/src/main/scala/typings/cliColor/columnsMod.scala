@@ -6,7 +6,6 @@ import typings.std.ArrayLike
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnsMod {
@@ -14,26 +13,25 @@ object columnsMod {
   /**
     * Outputs aligned table of columns.
     */
-  @JSImport("cli-color/columns", JSImport.Namespace)
-  @js.native
-  def apply(data: js.Array[js.Array[_]]): String = js.native
-  @JSImport("cli-color/columns", JSImport.Namespace)
-  @js.native
-  def apply(data: js.Array[js.Array[_]], options: ColumnsOptions): String = js.native
-  @JSImport("cli-color/columns", JSImport.Namespace)
-  @js.native
-  def apply(data: Data): String = js.native
-  @JSImport("cli-color/columns", JSImport.Namespace)
-  @js.native
-  def apply(data: Data, options: ColumnsOptions): String = js.native
+  @scala.inline
+  def apply(data: js.Array[js.Array[js.Any]]): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(data: js.Array[js.Array[js.Any]], options: ColumnsOptions): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(data: Data): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(data: Data, options: ColumnsOptions): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("cli-color/columns", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ColumnOptions extends StObject {
     
     /**
       * align: Possible options: `'left'`, `'right'` (defaults to `'left'`)
       */
-    var align: js.UndefOr[left | right] = js.native
+    var align: js.UndefOr[left | right] = js.undefined
   }
   object ColumnOptions {
     
@@ -54,18 +52,17 @@ object columnsMod {
     }
   }
   
-  @js.native
   trait ColumnsOptions extends StObject {
     
     /**
       * columns: Per column customizations, as e.g. `[{ align: 'right' }, null, { align: 'left' }]`
       */
-    var columns: js.UndefOr[js.Array[ColumnOptions | Null]] = js.native
+    var columns: js.UndefOr[js.Array[ColumnOptions | Null]] = js.undefined
     
     /**
       *  Custom colums separator (defaults to `|`)
       */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object ColumnsOptions {
     

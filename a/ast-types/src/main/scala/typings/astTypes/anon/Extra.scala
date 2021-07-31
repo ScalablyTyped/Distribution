@@ -4,23 +4,21 @@ import typings.astTypes.kindsMod.CommentKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extra extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var extra: js.UndefOr[RawRawValue] = js.native
+  var extra: js.UndefOr[RawRawValue] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var raw: js.UndefOr[String | Null] = js.native
+  var raw: js.UndefOr[String | Null] = js.undefined
   
-  var regex: js.UndefOr[Flags | Null] = js.native
+  var regex: js.UndefOr[Flags | Null] = js.undefined
   
-  var value: Double = js.native
+  var value: Double
 }
 object Extra {
   

@@ -12,7 +12,6 @@ import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchResultMod extends Shortcut {
@@ -29,9 +28,9 @@ object searchResultMod extends Shortcut {
   @js.native
   val default: ComponentClass[SearchResultProps, ComponentState] = js.native
   
-  @js.native
   trait SearchResultProps
-    extends StrictSearchResultProps
+    extends StObject
+       with StrictSearchResultProps
        with /* key */ StringDictionary[js.Any]
   object SearchResultProps {
     
@@ -42,29 +41,28 @@ object searchResultMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictSearchResultProps extends StObject {
     
     /** The item currently selected by keyboard shortcut. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Additional text with less emphasis. */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /** A unique identifier. */
-    var id: js.UndefOr[Double | String] = js.native
+    var id: js.UndefOr[Double | String] = js.undefined
     
     /** Add an image to the item. */
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
     /**
       * Called on click.
@@ -78,10 +76,10 @@ object searchResultMod extends Shortcut {
           /* data */ SearchResultProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Customized text for price. */
-    var price: js.UndefOr[String] = js.native
+    var price: js.UndefOr[String] = js.undefined
     
     /**
       * Renders the result contents.
@@ -89,10 +87,10 @@ object searchResultMod extends Shortcut {
       * @param {object} props - The SearchResult props object.
       * @returns {*} - Renderable result contents.
       */
-    var renderer: js.UndefOr[js.Function1[/* props */ SearchResultProps, js.Array[ReactElement]]] = js.native
+    var renderer: js.UndefOr[js.Function1[/* props */ SearchResultProps, js.Array[ReactElement]]] = js.undefined
     
     /** Display title. */
-    var title: String = js.native
+    var title: String
   }
   object StrictSearchResultProps {
     

@@ -2,15 +2,16 @@ package typings.getCallerFile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(position: Double): js.Any = ^.asInstanceOf[js.Dynamic].apply(position.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   @JSImport("get-caller-file", JSImport.Namespace)
   @js.native
-  def apply(): js.Any = js.native
-  @JSImport("get-caller-file", JSImport.Namespace)
-  @js.native
-  def apply(position: Double): js.Any = js.native
+  val ^ : js.Any = js.native
 }

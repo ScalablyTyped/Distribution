@@ -18,7 +18,6 @@ import typings.std.Error
 import typings.std.ObjectConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,7 +25,7 @@ object mod {
   @js.native
   trait Parser[O /* <: js.UndefOr[js.Object] */] extends StObject {
     
-    def array[N /* <: String */, Q /* <: ArrayOptions */](name: N, options: Q): Next[O, N, js.Array[_ | Double | js.Object]] = js.native
+    def array[N /* <: String */, Q /* <: ArrayOptions */](name: N, options: Q): Next[O, N, js.Array[js.Any | Double | js.Object]] = js.native
     
     def bit1[N /* <: String */](name: N): Next[O, N, Double] = js.native
     def bit1[N /* <: String */](name: N, options: Options): Next[O, N, Double] = js.native
@@ -126,11 +125,11 @@ object mod {
     
     def buffer[N /* <: String */](name: N, options: BufferOptions): Next[O, N, Buffer] = js.native
     
-    def choice[N /* <: String */, Q /* <: ChoiceOptions */](name: N, options: Q): Next[O, N, _ | js.Object] = js.native
+    def choice[N /* <: String */, Q /* <: ChoiceOptions */](name: N, options: Q): Next[O, N, js.Any | js.Object] = js.native
     
     def compile(): Unit = js.native
     
-    def create(constructorFunction: ObjectConstructor): Parser[js.UndefOr[scala.Nothing]] = js.native
+    def create(constructorFunction: ObjectConstructor): Parser[Unit] = js.native
     
     def double[N /* <: String */](name: N): Next[O, N, Double] = js.native
     def double[N /* <: String */](name: N, options: Options): Next[O, N, Double] = js.native
@@ -238,27 +237,29 @@ object mod {
     @JSImport("binary-parser", "Parser")
     @js.native
     class ^ ()
-      extends Parser[js.UndefOr[scala.Nothing]]
+      extends StObject
+         with Parser[Unit]
     
     @JSImport("binary-parser", "Parser")
     @js.native
     val ^ : ParserConstructor = js.native
     
-    @js.native
-    trait ArrayOptions extends Options {
+    trait ArrayOptions
+      extends StObject
+         with Options {
       
-      var length: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[_], Double])] = js.native
+      var length: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])] = js.undefined
       
-      var lengthInBytes: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[_], Double])] = js.native
+      var lengthInBytes: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])] = js.undefined
       
-      var readUntil: js.UndefOr[String | (js.Function2[/* item */ Double, /* buffer */ Buffer, Boolean])] = js.native
+      var readUntil: js.UndefOr[String | (js.Function2[/* item */ Double, /* buffer */ Buffer, Boolean])] = js.undefined
       
-      var `type`: String | Parser[_] = js.native
+      var `type`: String | Parser[js.Any]
     }
     object ArrayOptions {
       
       @scala.inline
-      def apply(`type`: String | Parser[_]): ArrayOptions = {
+      def apply(`type`: String | Parser[js.Any]): ArrayOptions = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[ArrayOptions]
@@ -268,10 +269,10 @@ object mod {
       implicit class ArrayOptionsMutableBuilder[Self <: ArrayOptions] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[_], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setLengthInBytes(value: Double | String | (js.ThisFunction0[/* this */ Parser[_], Double])): Self = StObject.set(x, "lengthInBytes", value.asInstanceOf[js.Any])
+        def setLengthInBytes(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "lengthInBytes", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setLengthInBytesUndefined: Self = StObject.set(x, "lengthInBytes", js.undefined)
@@ -289,19 +290,20 @@ object mod {
         def setReadUntilUndefined: Self = StObject.set(x, "readUntil", js.undefined)
         
         @scala.inline
-        def setType(value: String | Parser[_]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        def setType(value: String | Parser[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
-    @js.native
-    trait BufferOptions extends Options {
+    trait BufferOptions
+      extends StObject
+         with Options {
       
       @JSName("clone")
-      var clone_FBufferOptions: js.UndefOr[Boolean] = js.native
+      var clone_FBufferOptions: js.UndefOr[Boolean] = js.undefined
       
-      var length: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[_], Double])] = js.native
+      var length: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])] = js.undefined
       
-      var readUntil: js.UndefOr[String | (js.Function2[/* item */ Double, /* buffer */ Buffer, Boolean])] = js.native
+      var readUntil: js.UndefOr[String | (js.Function2[/* item */ Double, /* buffer */ Buffer, Boolean])] = js.undefined
     }
     object BufferOptions {
       
@@ -321,7 +323,7 @@ object mod {
         def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
         
         @scala.inline
-        def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[_], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
@@ -337,21 +339,22 @@ object mod {
       }
     }
     
-    @js.native
-    trait ChoiceOptions extends Options {
+    trait ChoiceOptions
+      extends StObject
+         with Options {
       
-      var choices: NumberDictionary[Parser[_] | String] = js.native
+      var choices: NumberDictionary[Parser[js.Any] | String]
       
-      var defaultChoice: js.UndefOr[Parser[_] | String] = js.native
+      var defaultChoice: js.UndefOr[Parser[js.Any] | String] = js.undefined
       
-      var tag: String | (js.ThisFunction0[/* this */ Parser[_], Double]) = js.native
+      var tag: String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])
     }
     object ChoiceOptions {
       
       @scala.inline
       def apply(
-        choices: NumberDictionary[Parser[_] | String],
-        tag: String | (js.ThisFunction0[/* this */ Parser[_], Double])
+        choices: NumberDictionary[Parser[js.Any] | String],
+        tag: String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])
       ): ChoiceOptions = {
         val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
         __obj.asInstanceOf[ChoiceOptions]
@@ -361,16 +364,16 @@ object mod {
       implicit class ChoiceOptionsMutableBuilder[Self <: ChoiceOptions] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setChoices(value: NumberDictionary[Parser[_] | String]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+        def setChoices(value: NumberDictionary[Parser[js.Any] | String]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setDefaultChoice(value: Parser[_] | String): Self = StObject.set(x, "defaultChoice", value.asInstanceOf[js.Any])
+        def setDefaultChoice(value: Parser[js.Any] | String): Self = StObject.set(x, "defaultChoice", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setDefaultChoiceUndefined: Self = StObject.set(x, "defaultChoice", js.undefined)
         
         @scala.inline
-        def setTag(value: String | (js.ThisFunction0[/* this */ Parser[_], Double])): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        def setTag(value: String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       }
     }
     
@@ -390,15 +393,16 @@ object mod {
       def little: typings.binaryParser.binaryParserStrings.little = "little".asInstanceOf[typings.binaryParser.binaryParserStrings.little]
     }
     
-    @js.native
-    trait NestOptions extends Options {
+    trait NestOptions
+      extends StObject
+         with Options {
       
-      var `type`: Parser[_] = js.native
+      var `type`: Parser[js.Any]
     }
     object NestOptions {
       
       @scala.inline
-      def apply(`type`: Parser[_]): NestOptions = {
+      def apply(`type`: Parser[js.Any]): NestOptions = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NestOptions]
@@ -408,7 +412,7 @@ object mod {
       implicit class NestOptionsMutableBuilder[Self <: NestOptions] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setType(value: Parser[_]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        def setType(value: Parser[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -417,16 +421,15 @@ object mod {
           O, 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ name in N ]: T}
-      */ typings.binaryParser.binaryParserStrings.Next with TopLevel[js.Any]
+      */ typings.binaryParser.binaryParserStrings.Next & TopLevel[js.Any]
         ]
       ]
     
-    @js.native
     trait Options extends StObject {
       
-      var assert: js.UndefOr[String | Double | (js.Function1[/* value */ Data, Boolean])] = js.native
+      var assert: js.UndefOr[String | Double | (js.Function1[/* value */ Data, Boolean])] = js.undefined
       
-      var formatter: js.UndefOr[js.Function1[/* value */ Data, _]] = js.native
+      var formatter: js.UndefOr[js.Function1[/* value */ Data, js.Any]] = js.undefined
     }
     object Options {
       
@@ -449,7 +452,7 @@ object mod {
         def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
         
         @scala.inline
-        def setFormatter(value: /* value */ Data => _): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+        def setFormatter(value: /* value */ Data => js.Any): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
         
         @scala.inline
         def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
@@ -458,18 +461,19 @@ object mod {
     
     type Parsed[O /* <: js.UndefOr[js.Object] */] = O | js.Object
     
-    @js.native
-    trait StringOptions extends Options {
+    trait StringOptions
+      extends StObject
+         with Options {
       
-      var encoding: js.UndefOr[String] = js.native
+      var encoding: js.UndefOr[String] = js.undefined
       
-      var greedy: js.UndefOr[Boolean] = js.native
+      var greedy: js.UndefOr[Boolean] = js.undefined
       
-      var length: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[_], Double])] = js.native
+      var length: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])] = js.undefined
       
-      var stripNull: js.UndefOr[Boolean] = js.native
+      var stripNull: js.UndefOr[Boolean] = js.undefined
       
-      var zeroTerminated: js.UndefOr[Boolean] = js.native
+      var zeroTerminated: js.UndefOr[Boolean] = js.undefined
     }
     object StringOptions {
       
@@ -495,7 +499,7 @@ object mod {
         def setGreedyUndefined: Self = StObject.set(x, "greedy", js.undefined)
         
         @scala.inline
-        def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[_], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
@@ -514,7 +518,7 @@ object mod {
       }
     }
     
-    type Valid[O /* <: js.UndefOr[js.Object] */, P /* <: js.Object */] = (O with P) | P
+    type Valid[O /* <: js.UndefOr[js.Object] */, P /* <: js.Object */] = (O & P) | P
     
     type _To = ParserConstructor
     
@@ -524,5 +528,6 @@ object mod {
   
   @js.native
   trait ParserConstructor
-    extends Instantiable0[Parser[js.UndefOr[scala.Nothing]]]
+    extends StObject
+       with Instantiable0[Parser[Unit]]
 }

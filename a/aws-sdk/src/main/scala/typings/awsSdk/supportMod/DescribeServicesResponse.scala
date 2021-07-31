@@ -2,16 +2,14 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeServicesResponse extends StObject {
   
   /**
     * A JSON-formatted list of AWS services.
     */
-  var services: js.UndefOr[ServiceList] = js.native
+  var services: js.UndefOr[ServiceList] = js.undefined
 }
 object DescribeServicesResponse {
   

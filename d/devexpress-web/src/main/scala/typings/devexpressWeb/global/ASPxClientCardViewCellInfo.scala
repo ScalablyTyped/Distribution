@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientCardViewCellInfo")
 @js.native
 class ASPxClientCardViewCellInfo ()
-  extends typings.devexpressWeb.ASPxClientCardViewCellInfo
+  extends StObject
+     with typings.devexpressWeb.ASPxClientCardViewCellInfo {
+  
+  /**
+    * Gets the visible index of the card that contains the cell currently being processed.
+    */
+  /* CompleteClass */
+  var cardVisibleIndex: Double = js.native
+  
+  /**
+    * Gets the data column that contains the cell currently being processed.
+    */
+  /* CompleteClass */
+  var column: typings.devexpressWeb.ASPxClientCardViewColumn = js.native
+}

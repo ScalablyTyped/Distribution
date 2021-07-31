@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IEventSourceStatic
-  extends EventTarget
+  extends StObject
+     with EventTarget
      with Instantiable1[/* url */ String, IEventSourceStatic]
      with Instantiable2[/* url */ String, /* eventSourceInitDict */ IEventSourceInit, IEventSourceStatic] {
   

@@ -2,23 +2,23 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapTabControlEventMap extends ControlEventMap {
+trait BootstrapTabControlEventMap
+  extends StObject
+     with ControlEventMap {
   
-  var activeTabChanged: TabControlTabEventArgs = js.native
+  var activeTabChanged: TabControlTabEventArgs
   
-  var activeTabChanging: TabControlTabCancelEventArgs = js.native
+  var activeTabChanging: TabControlTabCancelEventArgs
   
-  var beginCallback: BeginCallbackEventArgs = js.native
+  var beginCallback: BeginCallbackEventArgs
   
-  var callbackError: CallbackErrorEventArgs = js.native
+  var callbackError: CallbackErrorEventArgs
   
-  var endCallback: EndCallbackEventArgs = js.native
+  var endCallback: EndCallbackEventArgs
   
-  var tabClick: TabControlTabClickEventArgs = js.native
+  var tabClick: TabControlTabClickEventArgs
 }
 object BootstrapTabControlEventMap {
   

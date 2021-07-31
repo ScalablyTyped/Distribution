@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Globalization.Collation.CharacterGrouping
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsCharacterGrouping extends StObject {
   
-  /** The CharacterGrouping objects in the set that start at startIndex. */ var items: CharacterGrouping = js.native
+  /** The CharacterGrouping objects in the set that start at startIndex. */ var items: CharacterGrouping
   
-  /** The number of objects returned. */ var returnValue: Double = js.native
+  /** The number of objects returned. */ var returnValue: Double
 }
 object ItemsCharacterGrouping {
   

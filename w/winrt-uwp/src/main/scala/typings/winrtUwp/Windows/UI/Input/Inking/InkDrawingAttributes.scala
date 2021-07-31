@@ -5,33 +5,31 @@ import typings.winrtUwp.Windows.Foundation.Size
 import typings.winrtUwp.Windows.UI.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides properties associated with the drawing of an InkStroke . */
-@js.native
 trait InkDrawingAttributes extends StObject {
   
   /** Gets or sets a value that indicates the color of an InkStroke . */
-  var color: Color = js.native
+  var color: Color
   
   /** Gets or sets a value that indicates whether the InkStroke is rendered as a highlighter overlay. The stroke is typically set to a bright color, such as yellow. */
-  var drawAsHighlighter: Boolean = js.native
+  var drawAsHighlighter: Boolean
   
   /** Gets or sets a value that indicates whether a Bezier curve or a collection of straight line segments is used to draw an InkStroke . */
-  var fitToCurve: Boolean = js.native
+  var fitToCurve: Boolean
   
   /** Gets or sets a value that indicates whether the pressure of the contact on the digitizer surface is ignored when you draw an InkStroke . */
-  var ignorePressure: Boolean = js.native
+  var ignorePressure: Boolean
   
   /** Gets or sets a value that indicates the shape of the pen tip when you draw an InkStroke . */
-  var penTip: PenTipShape = js.native
+  var penTip: PenTipShape
   
   /** Gets or sets an affine transformation matrix applied to the PenTipShape used for an InkStroke . */
-  var penTipTransform: Matrix3x2 = js.native
+  var penTipTransform: Matrix3x2
   
   /** Gets or sets a value that indicates the dimensions of the pen tip ( PenTip ) when you draw an InkStroke . */
-  var size: Size = js.native
+  var size: Size
 }
 object InkDrawingAttributes {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChannelModeratorsRequest extends StObject {
   
   /**
     * The ARN of the channel.
     */
-  var ChannelArn: ChimeArn = js.native
+  var ChannelArn: ChimeArn
   
   /**
     * The maximum number of moderators that you want returned.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.chimeMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.chimeMod.MaxResults] = js.undefined
   
   /**
     * The token passed by previous API calls until all requested moderators are returned.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.undefined
 }
 object ListChannelModeratorsRequest {
   

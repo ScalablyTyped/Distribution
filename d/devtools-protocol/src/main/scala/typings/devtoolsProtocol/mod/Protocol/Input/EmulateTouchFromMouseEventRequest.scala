@@ -7,57 +7,55 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.mouseWheel
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmulateTouchFromMouseEventRequest extends StObject {
   
   /**
     * Mouse button. Only "none", "left", "right" are supported.
     */
-  var button: MouseButton = js.native
+  var button: MouseButton
   
   /**
     * Number of times the mouse button was clicked (default: 0).
     */
-  var clickCount: js.UndefOr[integer] = js.native
+  var clickCount: js.UndefOr[integer] = js.undefined
   
   /**
     * X delta in DIP for mouse wheel event (default: 0).
     */
-  var deltaX: js.UndefOr[Double] = js.native
+  var deltaX: js.UndefOr[Double] = js.undefined
   
   /**
     * Y delta in DIP for mouse wheel event (default: 0).
     */
-  var deltaY: js.UndefOr[Double] = js.native
+  var deltaY: js.UndefOr[Double] = js.undefined
   
   /**
     * Bit field representing pressed modifier keys. Alt=1, Ctrl=2, Meta/Command=4, Shift=8
     * (default: 0).
     */
-  var modifiers: js.UndefOr[integer] = js.native
+  var modifiers: js.UndefOr[integer] = js.undefined
   
   /**
     * Time at which the event occurred (default: current time).
     */
-  var timestamp: js.UndefOr[TimeSinceEpoch] = js.native
+  var timestamp: js.UndefOr[TimeSinceEpoch] = js.undefined
   
   /**
     * Type of the mouse event. (EmulateTouchFromMouseEventRequestType enum)
     */
-  var `type`: mousePressed | mouseReleased | mouseMoved | mouseWheel = js.native
+  var `type`: mousePressed | mouseReleased | mouseMoved | mouseWheel
   
   /**
     * X coordinate of the mouse pointer in DIP.
     */
-  var x: integer = js.native
+  var x: integer
   
   /**
     * Y coordinate of the mouse pointer in DIP.
     */
-  var y: integer = js.native
+  var y: integer
 }
 object EmulateTouchFromMouseEventRequest {
   

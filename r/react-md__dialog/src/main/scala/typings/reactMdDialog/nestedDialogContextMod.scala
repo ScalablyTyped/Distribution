@@ -4,27 +4,27 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nestedDialogContextMod {
   
-  @JSImport("@react-md/dialog/types/NestedDialogContext", "NestedDialogContextProvider")
+  @JSImport("@react-md/dialog/types/NestedDialogContext", JSImport.Namespace)
   @js.native
-  def NestedDialogContextProvider(hasChildren: NestedDialogContextProviderProps): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-md/dialog/types/NestedDialogContext", "useNestedDialogContext")
-  @js.native
-  def useNestedDialogContext(): NestedDialogContext = js.native
+  @scala.inline
+  def NestedDialogContextProvider(hasChildren: NestedDialogContextProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("NestedDialogContextProvider")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @js.native
+  @scala.inline
+  def useNestedDialogContext(): NestedDialogContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useNestedDialogContext")().asInstanceOf[NestedDialogContext]
+  
   trait NestedDialogContext extends StObject {
     
-    def add(dialogId: String): Unit = js.native
+    def add(dialogId: String): Unit
     
-    def remove(dialogId: String): Unit = js.native
+    def remove(dialogId: String): Unit
     
-    var stack: js.Array[String] = js.native
+    var stack: js.Array[String]
   }
   object NestedDialogContext {
     
@@ -51,10 +51,9 @@ object nestedDialogContextMod {
     }
   }
   
-  @js.native
   trait NestedDialogContextProviderProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object NestedDialogContextProviderProps {
     

@@ -2,25 +2,23 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spatialColumnOptionsMod {
   
-  @js.native
   trait SpatialColumnOptions extends StObject {
     
     /**
       * Column type's feature type.
       * Geometry, Point, Polygon, etc.
       */
-    var spatialFeatureType: js.UndefOr[String] = js.native
+    var spatialFeatureType: js.UndefOr[String] = js.undefined
     
     /**
       * Column type's SRID.
       * Spatial Reference ID or EPSG code.
       */
-    var srid: js.UndefOr[Double] = js.native
+    var srid: js.UndefOr[Double] = js.undefined
   }
   object SpatialColumnOptions {
     

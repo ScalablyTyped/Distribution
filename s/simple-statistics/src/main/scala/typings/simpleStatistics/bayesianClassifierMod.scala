@@ -2,7 +2,6 @@ package typings.simpleStatistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bayesianClassifierMod {
@@ -12,21 +11,35 @@ object bayesianClassifierMod {
     */
   @JSImport("simple-statistics/src/bayesian_classifier", JSImport.Default)
   @js.native
-  class default () extends BayesianClassifier
+  class default ()
+    extends StObject
+       with BayesianClassifier {
+    
+    /* CompleteClass */
+    var data: Data = js.native
+    
+    /* CompleteClass */
+    override def score(item: Item): OddsSums = js.native
+    
+    /* CompleteClass */
+    var totalCount: Double = js.native
+    
+    /* CompleteClass */
+    override def train(item: Item, category: String): Unit = js.native
+  }
   
   /**
     * https://simplestatistics.org/docs/#bayesianclassifier
     */
-  @js.native
   trait BayesianClassifier extends StObject {
     
-    var data: Data = js.native
+    var data: Data
     
-    def score(item: Item): OddsSums = js.native
+    def score(item: Item): OddsSums
     
-    var totalCount: Double = js.native
+    var totalCount: Double
     
-    def train(item: Item, category: String): Unit = js.native
+    def train(item: Item, category: String): Unit
   }
   object BayesianClassifier {
     

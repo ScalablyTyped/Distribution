@@ -2,21 +2,19 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaMemoryInfo extends StObject {
   
   /**
     * Maximum memory that can be allocated to the process in KiB
     */
-  var memoryCapInKibibyte: js.UndefOr[String] = js.native
+  var memoryCapInKibibyte: js.UndefOr[String] = js.undefined
   
   /**
     * Total memory available on the device in KiB
     */
-  var memoryTotalInKibibyte: js.UndefOr[String] = js.native
+  var memoryTotalInKibibyte: js.UndefOr[String] = js.undefined
 }
 object SchemaMemoryInfo {
   

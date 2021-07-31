@@ -4,14 +4,12 @@ import typings.semanticUiSticky.JQuery
 import typings.semanticUiSticky.semanticUiStickyBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sticky.SemanticUI.StickySettings._Impl, 'context'> */
-@js.native
 trait PickImplcontext extends StObject {
   
-  var context: `false` | String | JQuery = js.native
+  var context: `false` | String | JQuery
 }
 object PickImplcontext {
   

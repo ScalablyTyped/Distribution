@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMatchmakingInput extends StObject {
   
   /**
     * A unique identifier for a matchmaking ticket. You can include up to 10 ID values. 
     */
-  var TicketIds: MatchmakingIdList = js.native
+  var TicketIds: MatchmakingIdList
 }
 object DescribeMatchmakingInput {
   

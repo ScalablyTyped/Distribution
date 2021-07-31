@@ -2,20 +2,18 @@ package typings.emailTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<email-templates.email-templates.EmailMessage> */
-  @js.native
   trait PartialEmailMessage extends StObject {
     
-    var html: js.UndefOr[String] = js.native
+    var html: js.UndefOr[String] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object PartialEmailMessage {
     

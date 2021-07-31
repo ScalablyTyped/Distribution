@@ -2,19 +2,17 @@ package typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for FirestoreAdmin.ExportDocuments.
   */
-@js.native
 trait SchemaGoogleFirestoreAdminV1beta2ExportDocumentsRequest extends StObject {
   
   /**
     * Which collection ids to export. Unspecified means all collections.
     */
-  var collectionIds: js.UndefOr[js.Array[String]] = js.native
+  var collectionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The output URI. Currently only supports Google Cloud Storage URIs of the
@@ -26,7 +24,7 @@ trait SchemaGoogleFirestoreAdminV1beta2ExportDocumentsRequest extends StObject {
     * (without a namespace path), a prefix will be generated based on the start
     * time.
     */
-  var outputUriPrefix: js.UndefOr[String] = js.native
+  var outputUriPrefix: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1beta2ExportDocumentsRequest {
   

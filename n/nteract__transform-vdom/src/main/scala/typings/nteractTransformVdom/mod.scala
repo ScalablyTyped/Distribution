@@ -9,10 +9,13 @@ import typings.react.mod.PureComponent
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@nteract/transform-vdom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@nteract/transform-vdom", JSImport.Default)
   @js.native
@@ -37,31 +40,25 @@ object mod {
     def defaultProps_=(x: MediaType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@nteract/transform-vdom", "objectToReactElement")
-  @js.native
+  @scala.inline
   def objectToReactElement(
     obj: VDOMEl,
-    onVDOMEvent: js.Function2[/* targetName */ String, /* event */ SerializedEvent[_], Unit]
-  ): ReactElement = js.native
+    onVDOMEvent: js.Function2[/* targetName */ String, /* event */ SerializedEvent[js.Any], Unit]
+  ): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("objectToReactElement")(obj.asInstanceOf[js.Any], onVDOMEvent.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   
-  @js.native
   trait Props extends StObject {
     
-    var data: VDOMEl = js.native
+    var data: VDOMEl
     
-    var mediaType: applicationSlashvdomDotv1Plussignjson = js.native
+    var mediaType: applicationSlashvdomDotv1Plussignjson
     
-    def onVDOMEvent(targetName: String, event: SerializedEvent[_]): Unit = js.native
+    def onVDOMEvent(targetName: String, event: SerializedEvent[js.Any]): Unit
   }
   object Props {
     
     @scala.inline
-    def apply(
-      data: VDOMEl,
-      mediaType: applicationSlashvdomDotv1Plussignjson,
-      onVDOMEvent: (String, SerializedEvent[_]) => Unit
-    ): Props = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], onVDOMEvent = js.Any.fromFunction2(onVDOMEvent))
+    def apply(data: VDOMEl, onVDOMEvent: (String, SerializedEvent[js.Any]) => Unit): Props = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mediaType = "application/vdom.v1+json", onVDOMEvent = js.Any.fromFunction2(onVDOMEvent))
       __obj.asInstanceOf[Props]
     }
     
@@ -75,7 +72,7 @@ object mod {
       def setMediaType(value: applicationSlashvdomDotv1Plussignjson): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnVDOMEvent(value: (String, SerializedEvent[_]) => Unit): Self = StObject.set(x, "onVDOMEvent", js.Any.fromFunction2(value))
+      def setOnVDOMEvent(value: (String, SerializedEvent[js.Any]) => Unit): Self = StObject.set(x, "onVDOMEvent", js.Any.fromFunction2(value))
     }
   }
   

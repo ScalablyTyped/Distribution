@@ -36,17 +36,15 @@ import typings.reactNativeElements.reactNativeElementsStrings.tail
 import typings.reactNativeElements.reactNativeElementsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.TextProps & {  right :boolean | undefined} */
-@js.native
 trait TextPropsrightbooleanunde extends StObject {
   
   /**
     * Provides an array of custom actions available for accessibility.
     */
-  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.native
+  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
   
   /**
     * In some cases, we also want to alert the end user of the type of selected component (i.e., that it is a “button”).
@@ -55,31 +53,31 @@ trait TextPropsrightbooleanunde extends StObject {
     * for any UI component. For instances, we support ‘button’, ‘radiobutton_checked’ and ‘radiobutton_unchecked’ and so on.
     * @platform android
     */
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
   /**
     * A Boolean value indicating whether the accessibility elements contained within this accessibility element
     * are hidden to the screen reader.
     * @platform ios
     */
-  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An accessibility hint helps users understand what will happen when they perform an action on the accessibility element when that result is not obvious from the accessibility label.
     */
-  var accessibilityHint: js.UndefOr[String] = js.native
+  var accessibilityHint: js.UndefOr[String] = js.undefined
   
   /**
     * https://reactnative.dev/docs/accessibility#accessibilityignoresinvertcolorsios
     * @platform ios
     */
-  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Overrides the text that's read by the screen reader when the user interacts with the element. By default, the
     * label is constructed by traversing all the children and accumulating all the Text nodes separated by space.
     */
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates to accessibility services whether the user should be notified when this view changes.
@@ -87,59 +85,59 @@ trait TextPropsrightbooleanunde extends StObject {
     * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
     * @platform android
     */
-  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
   
   /**
     * Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on Android the type of element that is focused on.
     */
-  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
   /**
     * Accessibility State tells a person using either VoiceOver on iOS or TalkBack on Android the state of the element currently focused on.
     */
-  var accessibilityState: js.UndefOr[AccessibilityState] = js.native
+  var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
   
   /**
     * Accessibility traits tell a person using VoiceOver what kind of element they have selected.
     * Is this element a label? A button? A header? These questions are answered by accessibilityTraits.
     * @platform ios
     */
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
   /**
     * Represents the current value of a component. It can be a textual description of a component's value, or for range-based components, such as sliders and progress bars,
     * it contains range information (minimum, current, and maximum).
     */
-  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.native
+  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
   /**
     * A Boolean value indicating whether VoiceOver should ignore the elements within views that are siblings of the receiver.
     * @platform ios
     */
-  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.native
+  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, indicates that the view is an accessibility element.
     * By default, all the touchable elements are accessible.
     */
-  var accessible: js.UndefOr[Boolean] = js.native
+  var accessible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether font should be scaled down automatically to fit given style constraints.
     */
-  var adjustsFontSizeToFit: js.UndefOr[Boolean] = js.native
+  var adjustsFontSizeToFit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether fonts should scale to respect Text Size accessibility settings.
     * The default is `true`.
     */
-  var allowFontScaling: js.UndefOr[Boolean] = js.native
+  var allowFontScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines the types of data converted to clickable URLs in the text element.
     * By default no data types are detected.
     */
-  var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all] = js.native
+  var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all] = js.undefined
   
   /**
     * This can be one of the following values:
@@ -158,47 +156,47 @@ trait TextPropsrightbooleanunde extends StObject {
     *
     * > `clip` is working only for iOS
     */
-  var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.native
+  var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
   
   /**
     * font size 40
     */
-  var h1: js.UndefOr[Boolean] = js.native
+  var h1: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Styling for when `h1` is set
     */
-  var h1Style: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var h1Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * font size 34
     */
-  var h2: js.UndefOr[Boolean] = js.native
+  var h2: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Styling for when `h2` is set
     */
-  var h2Style: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var h2Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * font size 28
     */
-  var h3: js.UndefOr[Boolean] = js.native
+  var h3: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Styling for when `h3` is set
     */
-  var h3Style: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var h3Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * font size 22
     */
-  var h4: js.UndefOr[Boolean] = js.native
+  var h4: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Styling for when `h4` is set
     */
-  var h4Style: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var h4Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Controls how view is important for accessibility which is if it fires accessibility events
@@ -211,13 +209,13 @@ trait TextPropsrightbooleanunde extends StObject {
     *      'no' - The view is not important for accessibility.
     *      'no-hide-descendants' - The view is not important for accessibility, nor are any of its descendant views.
     */
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
   
   /**
     * Line Break mode. Works only with numberOfLines.
     * clip is working only for iOS
     */
-  var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.native
+  var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.undefined
   
   /**
     * Specifies largest possible scale a font can reach when allowFontScaling is enabled. Possible values:
@@ -225,17 +223,17 @@ trait TextPropsrightbooleanunde extends StObject {
     * - 0: no max, ignore parent/global default
     * - >= 1: sets the maxFontSizeMultiplier of this node to this value
     */
-  var maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.native
+  var maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Specifies smallest possible scale a font can reach when adjustsFontSizeToFit is enabled. (values 0.01-1.0).
     */
-  var minimumFontScale: js.UndefOr[Double] = js.native
+  var minimumFontScale: js.UndefOr[Double] = js.undefined
   
   /**
     * Used to reference react managed views from native code.
     */
-  var nativeID: js.UndefOr[String] = js.native
+  var nativeID: js.UndefOr[String] = js.undefined
   
   /**
     * Used to truncate the text with an ellipsis after computing the text
@@ -244,88 +242,88 @@ trait TextPropsrightbooleanunde extends StObject {
     *
     * This prop is commonly used with `ellipsizeMode`.
     */
-  var numberOfLines: js.UndefOr[Double] = js.native
+  var numberOfLines: js.UndefOr[Double] = js.undefined
   
   /**
     * When `accessible` is true, the system will try to invoke this function when the user performs an accessibility custom action.
     */
-  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.native
+  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
   
   /**
     * When accessibile is true, the system will invoke this function when the user performs the escape gesture (scrub with two fingers).
     * @platform ios
     */
-  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * When `accessible` is true, the system will try to invoke this function when the user performs accessibility tap gesture.
     * @platform ios
     */
-  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Invoked on mount and layout changes with
     *
     * {nativeEvent: { layout: {x, y, width, height}}}.
     */
-  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
   /**
     * This function is called on long press.
     * e.g., `onLongPress={this.increaseSize}>``
     */
-  var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
   /**
     * When accessible is true, the system will invoke this function when the user performs the magic tap gesture.
     * @platform ios
     */
-  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * This function is called on press.
     * Text intrinsically supports press handling with a default highlight state (which can be disabled with suppressHighlighting).
     */
-  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
   /**
     * Invoked on Text layout
     */
-  var onTextLayout: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[TextLayoutEventData], Unit]] = js.native
+  var onTextLayout: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[TextLayoutEventData], Unit]] = js.undefined
   
-  var right: js.UndefOr[Boolean] = js.native
+  var right: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Lets the user select text, to use the native copy and paste functionality.
     */
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The highlight color of the text.
     */
-  var selectionColor: js.UndefOr[ColorValue] = js.native
+  var selectionColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Additional styling for Text
     */
-  var style: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * When `true`, no visual change is made when text is pressed down. By
     * default, a gray oval highlights the text on press down.
     */
-  var suppressHighlighting: js.UndefOr[Boolean] = js.native
+  var suppressHighlighting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Used to locate this view in end-to-end tests.
     */
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
   
   /**
     * Set text break strategy on Android API Level 23+
     * default is `highQuality`.
     */
-  var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.native
+  var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
 }
 object TextPropsrightbooleanunde {
   

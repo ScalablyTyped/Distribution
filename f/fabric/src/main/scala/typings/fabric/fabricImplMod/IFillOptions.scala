@@ -3,31 +3,29 @@ package typings.fabric.fabricImplMod
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFillOptions extends StObject {
   
   /**
     * Pattern horizontal offset from object's left/top corner
     */
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * Pattern vertical offset from object's left/top corner
     */
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * Repeat property of a pattern (one of repeat, repeat-x, repeat-y or no-repeat)
     */
-  var repeat: js.UndefOr[String] = js.native
+  var repeat: js.UndefOr[String] = js.undefined
   
   /**
     * options.source Pattern source
     */
-  var source: String | HTMLImageElement = js.native
+  var source: String | HTMLImageElement
 }
 object IFillOptions {
   

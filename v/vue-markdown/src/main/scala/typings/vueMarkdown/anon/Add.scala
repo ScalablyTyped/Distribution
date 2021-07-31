@@ -2,29 +2,27 @@ package typings.vueMarkdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Add extends StObject {
   
-  var add: js.Any = js.native
+  var add: js.Any
   
-  var `match`: js.Any = js.native
+  var `match`: js.Any
   
-  var normalize: js.Any = js.native
+  var normalize: js.Any
   
-  var pretest: js.Any = js.native
+  var pretest: js.Any
   
-  var re: Emailfuzzy = js.native
+  var re: Emailfuzzy
   
-  var set: js.Any = js.native
+  var set: js.Any
   
-  var test: js.Any = js.native
+  var test: js.Any
   
-  var testSchemaAt: js.Any = js.native
+  var testSchemaAt: js.Any
   
-  var tlds: js.Any = js.native
+  var tlds: js.Any
 }
 object Add {
   

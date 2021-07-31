@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationAction extends StObject {
   
-  var action: java.lang.String = js.native
+  var action: java.lang.String
   
-  var icon: js.UndefOr[java.lang.String] = js.native
+  var icon: js.UndefOr[java.lang.String] = js.undefined
   
-  var title: java.lang.String = js.native
+  var title: java.lang.String
 }
 object NotificationAction {
   

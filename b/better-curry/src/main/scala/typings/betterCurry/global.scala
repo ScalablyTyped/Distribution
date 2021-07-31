@@ -3,7 +3,6 @@ package typings.betterCurry
 import typings.betterCurry.BetterCurryModule.BetterCurry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,7 +16,8 @@ object global {
     @JSGlobal("BetterCurryModule.Delegate")
     @js.native
     class Delegate[T] protected ()
-      extends typings.betterCurry.BetterCurryModule.Delegate[T] {
+      extends StObject
+         with typings.betterCurry.BetterCurryModule.Delegate[T] {
       def this(proto: T, target: String) = this()
     }
   }

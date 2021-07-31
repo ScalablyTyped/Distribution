@@ -2,47 +2,89 @@ package typings.serverless
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
   @JSImport("serverless/classes/Utils", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Utils {
+  class ^ protected ()
+    extends StObject
+       with Utils {
     def this(serverless: typings.serverless.mod.^) = this()
+    
+    /* CompleteClass */
+    override def appendFileSync(filePath: String, contents: String): js.Thenable[js.Object] = js.native
+    
+    /* CompleteClass */
+    override def copyDirContentsSync(srcDir: String, destDir: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def dirExistsSync(dirPath: String): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fileExistsSync(filePath: String): Boolean = js.native
+    
+    /* CompleteClass */
+    override def findServicePath(): String = js.native
+    
+    /* CompleteClass */
+    override def generateShortId(length: Double): String = js.native
+    
+    /* CompleteClass */
+    override def getVersion(): String = js.native
+    
+    /* CompleteClass */
+    override def logStat(serverless: typings.serverless.mod.^, context: String): js.Thenable[js.Object] = js.native
+    
+    /* CompleteClass */
+    override def readFile(filePath: String): js.Thenable[js.Object] = js.native
+    
+    /* CompleteClass */
+    override def readFileSync(filePath: String): js.Object = js.native
+    
+    /* CompleteClass */
+    override def walkDirSync(dirPath: String): js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def writeFile(filePath: String, contents: String): js.Thenable[js.Object] = js.native
+    
+    /* CompleteClass */
+    override def writeFileDir(filePath: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def writeFileSync(filePath: String, contents: String): Unit = js.native
   }
   
-  @js.native
   trait Utils extends StObject {
     
-    def appendFileSync(filePath: String, contents: String): js.Thenable[js.Object] = js.native
+    def appendFileSync(filePath: String, contents: String): js.Thenable[js.Object]
     
-    def copyDirContentsSync(srcDir: String, destDir: String): Unit = js.native
+    def copyDirContentsSync(srcDir: String, destDir: String): Unit
     
-    def dirExistsSync(dirPath: String): Boolean = js.native
+    def dirExistsSync(dirPath: String): Boolean
     
-    def fileExistsSync(filePath: String): Boolean = js.native
+    def fileExistsSync(filePath: String): Boolean
     
-    def findServicePath(): String = js.native
+    def findServicePath(): String
     
-    def generateShortId(length: Double): String = js.native
+    def generateShortId(length: Double): String
     
-    def getVersion(): String = js.native
+    def getVersion(): String
     
-    def logStat(serverless: typings.serverless.mod.^, context: String): js.Thenable[js.Object] = js.native
+    def logStat(serverless: typings.serverless.mod.^, context: String): js.Thenable[js.Object]
     
-    def readFile(filePath: String): js.Thenable[js.Object] = js.native
+    def readFile(filePath: String): js.Thenable[js.Object]
     
-    def readFileSync(filePath: String): js.Object = js.native
+    def readFileSync(filePath: String): js.Object
     
-    def walkDirSync(dirPath: String): js.Array[String] = js.native
+    def walkDirSync(dirPath: String): js.Array[String]
     
-    def writeFile(filePath: String, contents: String): js.Thenable[js.Object] = js.native
+    def writeFile(filePath: String, contents: String): js.Thenable[js.Object]
     
-    def writeFileDir(filePath: String): Unit = js.native
+    def writeFileDir(filePath: String): Unit
     
-    def writeFileSync(filePath: String, contents: String): Unit = js.native
+    def writeFileSync(filePath: String, contents: String): Unit
   }
   object Utils {
     

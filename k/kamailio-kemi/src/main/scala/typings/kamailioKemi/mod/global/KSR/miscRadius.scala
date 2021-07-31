@@ -2,36 +2,32 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object miscRadius {
   
-  @JSGlobal("KSR.misc_radius.does_uri_exist")
+  @JSGlobal("KSR.misc_radius")
   @js.native
-  def doesUriExist(): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.misc_radius.does_uri_exist_uval")
-  @js.native
-  def doesUriExistUval(suri: String): Double = js.native
+  @scala.inline
+  def doesUriExist(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("does_uri_exist")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.misc_radius.does_uri_user_exist")
-  @js.native
-  def doesUriUserExist(): Double = js.native
+  @scala.inline
+  def doesUriExistUval(suri: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("does_uri_exist_uval")(suri.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.misc_radius.does_uri_user_exist_uval")
-  @js.native
-  def doesUriUserExistUval(user: String): Double = js.native
+  @scala.inline
+  def doesUriUserExist(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("does_uri_user_exist")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.misc_radius.is_user_in")
-  @js.native
-  def isUserIn(user: String, group: String): Double = js.native
+  @scala.inline
+  def doesUriUserExistUval(user: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("does_uri_user_exist_uval")(user.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.misc_radius.load_callee_avps")
-  @js.native
-  def loadCalleeAvps(user: String): Double = js.native
+  @scala.inline
+  def isUserIn(user: String, group: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("is_user_in")(user.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.misc_radius.load_caller_avps")
-  @js.native
-  def loadCallerAvps(user: String): Double = js.native
+  @scala.inline
+  def loadCalleeAvps(user: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("load_callee_avps")(user.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def loadCallerAvps(user: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("load_caller_avps")(user.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

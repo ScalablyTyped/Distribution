@@ -3,29 +3,28 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.NumericLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait NumericLiteral_
-  extends Expression
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait NumericLiteral_
+  extends StObject
      with BaseNode
+     with Expression
      with Immutable
      with Literal
      with Pureish {
   
   @JSName("type")
-  var type_NumericLiteral_ : NumericLiteral = js.native
+  var type_NumericLiteral_ : NumericLiteral
   
-  var value: Double = js.native
+  var value: Double
 }
 object NumericLiteral_ {
   
   @scala.inline
-  def apply(`type`: NumericLiteral, value: Double): NumericLiteral_ = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(value: Double): NumericLiteral_ = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("NumericLiteral")
     __obj.asInstanceOf[NumericLiteral_]
   }
   

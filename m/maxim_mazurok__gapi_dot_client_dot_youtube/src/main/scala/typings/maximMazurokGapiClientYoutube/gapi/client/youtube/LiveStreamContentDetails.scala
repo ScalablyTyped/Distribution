@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiveStreamContentDetails extends StObject {
   
   /** The ingestion URL where the closed captions of this stream are sent. */
-  var closedCaptionsIngestionUrl: js.UndefOr[String] = js.native
+  var closedCaptionsIngestionUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the stream is reusable, which means that it can be bound to multiple broadcasts. It is common for broadcasters to reuse the same stream for many different
@@ -18,7 +16,7 @@ trait LiveStreamContentDetails extends StObject {
     * deleted by an automated process after the broadcast ends. - The liveStreams.list method does not list non-reusable streams if you call the method and set the mine parameter to true.
     * The only way to use that method to retrieve the resource for a non-reusable stream is to use the id parameter to identify the stream.
     */
-  var isReusable: js.UndefOr[Boolean] = js.native
+  var isReusable: js.UndefOr[Boolean] = js.undefined
 }
 object LiveStreamContentDetails {
   

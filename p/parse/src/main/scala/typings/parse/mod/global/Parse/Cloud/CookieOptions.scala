@@ -3,23 +3,21 @@ package typings.parse.mod.global.Parse.Cloud
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CookieOptions extends StObject {
   
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
-  var expires: js.UndefOr[Date] = js.native
+  var expires: js.UndefOr[Date] = js.undefined
   
-  var httpOnly: js.UndefOr[Boolean] = js.native
+  var httpOnly: js.UndefOr[Boolean] = js.undefined
   
-  var maxAge: js.UndefOr[Double] = js.native
+  var maxAge: js.UndefOr[Double] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
 }
 object CookieOptions {
   

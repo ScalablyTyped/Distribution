@@ -2,30 +2,28 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrdersRefundItemRequest extends StObject {
   
   /** The items that are refunded. Either Item or Shipping must be provided in the request. */
-  var items: js.UndefOr[js.Array[OrdersCustomBatchRequestEntryRefundItemItem]] = js.native
+  var items: js.UndefOr[js.Array[OrdersCustomBatchRequestEntryRefundItemItem]] = js.undefined
   
   /** The ID of the operation. Unique across all operations for a given order. */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
   /**
     * The reason for the refund. Acceptable values are: - "`shippingCostAdjustment`" - "`priceAdjustment`" - "`taxAdjustment`" - "`feeAdjustment`" - "`courtesyAdjustment`" -
     * "`adjustment`" - "`customerCancelled`" - "`noInventory`" - "`productNotAsDescribed`" - "`undeliverableShippingAddress`" - "`wrongProductShipped`" - "`lateShipmentCredit`" -
     * "`deliveredLateByCarrier`" - "`productArrivedDamaged`"
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /** The explanation of the reason. */
-  var reasonText: js.UndefOr[String] = js.native
+  var reasonText: js.UndefOr[String] = js.undefined
   
   /** The refund on shipping. Optional, but either Item or Shipping must be provided in the request. */
-  var shipping: js.UndefOr[OrdersCustomBatchRequestEntryRefundItemShipping] = js.native
+  var shipping: js.UndefOr[OrdersCustomBatchRequestEntryRefundItemShipping] = js.undefined
 }
 object OrdersRefundItemRequest {
   

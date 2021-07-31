@@ -4,16 +4,15 @@ import typings.std.HTMLIFrameElement
 import typings.xrm.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for an Iframe control.
   * @see {@link FramedControl}
   */
-@js.native
 trait IframeControl
-  extends FramedControl
+  extends StObject
+     with FramedControl
      with UiCanSetVisibleElement {
   
   /**
@@ -21,7 +20,7 @@ trait IframeControl
     * @returns The initial URL.
     * @remarks Unavailable for Microsoft Dynamics CRM for tablets.
     */
-  def getInitialUrl(): String = js.native
+  def getInitialUrl(): String
 }
 object IframeControl {
   

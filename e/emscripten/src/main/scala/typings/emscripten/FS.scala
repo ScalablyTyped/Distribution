@@ -2,26 +2,21 @@ package typings.emscripten
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FS {
   
-  @js.native
   trait ErrnoError extends StObject
   
-  @js.native
   trait FSNode extends StObject
   
-  @js.native
   trait FSStream extends StObject
   
-  @js.native
   trait Lookup extends StObject {
     
-    var node: FSNode = js.native
+    var node: FSNode
     
-    var path: String = js.native
+    var path: String
   }
   object Lookup {
     

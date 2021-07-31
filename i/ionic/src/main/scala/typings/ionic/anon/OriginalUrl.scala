@@ -2,15 +2,13 @@ package typings.ionic.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginalUrl extends StObject {
   
-  var originalUrl: js.UndefOr[String] = js.native
+  var originalUrl: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object OriginalUrl {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,22 +13,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * providing service.
   * @see XChangeListener
   */
-@js.native
-trait XChangeBroadcaster extends XInterface {
+trait XChangeBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * adds the specified listener to receive the "changed" event.
     * @param aListener the listener to add.
     * @see com.sun.star.form.XChangeListener
     */
-  def addChangeListener(aListener: XChangeListener): Unit = js.native
+  def addChangeListener(aListener: XChangeListener): Unit
   
   /**
     * removes the specified listener.
     * @param aListener the listener to remove.
     * @see com.sun.star.form.XChangeListener
     */
-  def removeChangeListener(aListener: XChangeListener): Unit = js.native
+  def removeChangeListener(aListener: XChangeListener): Unit
 }
 object XChangeBroadcaster {
   

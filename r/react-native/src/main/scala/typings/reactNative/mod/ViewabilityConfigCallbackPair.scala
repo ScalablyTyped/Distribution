@@ -3,21 +3,19 @@ package typings.reactNative.mod
 import typings.reactNative.anon.Changed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewabilityConfigCallbackPair extends StObject {
   
-  var onViewableItemsChanged: (js.Function1[/* info */ Changed, Unit]) | Null = js.native
+  var onViewableItemsChanged: (js.Function1[/* info */ Changed, Unit]) | Null
   
-  var viewabilityConfig: ViewabilityConfig = js.native
+  var viewabilityConfig: ViewabilityConfig
 }
 object ViewabilityConfigCallbackPair {
   
   @scala.inline
   def apply(viewabilityConfig: ViewabilityConfig): ViewabilityConfigCallbackPair = {
-    val __obj = js.Dynamic.literal(viewabilityConfig = viewabilityConfig.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(viewabilityConfig = viewabilityConfig.asInstanceOf[js.Any], onViewableItemsChanged = null)
     __obj.asInstanceOf[ViewabilityConfigCallbackPair]
   }
   

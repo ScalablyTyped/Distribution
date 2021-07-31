@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterStatusResponse extends StObject {
   
   /** Type of resource. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var result: js.UndefOr[RouterStatus] = js.native
+  var result: js.UndefOr[RouterStatus] = js.undefined
 }
 object RouterStatusResponse {
   

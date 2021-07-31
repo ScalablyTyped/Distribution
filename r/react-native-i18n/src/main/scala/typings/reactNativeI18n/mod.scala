@@ -17,10 +17,13 @@ import typings.std.Date
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-native-i18n", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -28,9 +31,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("react-native-i18n", "default.currentLocale")
-    @js.native
-    def currentLocale(): String = js.native
+    @scala.inline
+    def currentLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("currentLocale")().asInstanceOf[String]
     
     @JSImport("react-native-i18n", "default.defaultLocale")
     @js.native
@@ -67,42 +69,33 @@ object mod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getFullScope")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-native-i18n", "default.l")
-    @js.native
-    def l(scope: Scope, value: String): String = js.native
-    @JSImport("react-native-i18n", "default.l")
-    @js.native
-    def l(scope: Scope, value: String, options: InterpolateOptions): String = js.native
-    @JSImport("react-native-i18n", "default.l")
-    @js.native
-    def l(scope: Scope, value: Double): String = js.native
-    @JSImport("react-native-i18n", "default.l")
-    @js.native
-    def l(scope: Scope, value: Double, options: InterpolateOptions): String = js.native
-    @JSImport("react-native-i18n", "default.l")
-    @js.native
-    def l(scope: Scope, value: Date): String = js.native
-    @JSImport("react-native-i18n", "default.l")
-    @js.native
-    def l(scope: Scope, value: Date, options: InterpolateOptions): String = js.native
-    @JSImport("react-native-i18n", "default.l")
-    @js.native
-    def l_currency(scope: currency, value: Double): String = js.native
-    @JSImport("react-native-i18n", "default.l")
-    @js.native
-    def l_currency(scope: currency, value: Double, options: InterpolateOptions): String = js.native
-    @JSImport("react-native-i18n", "default.l")
-    @js.native
-    def l_number(scope: number, value: Double): String = js.native
-    @JSImport("react-native-i18n", "default.l")
-    @js.native
-    def l_number(scope: number, value: Double, options: InterpolateOptions): String = js.native
-    @JSImport("react-native-i18n", "default.l")
-    @js.native
-    def l_percentage(scope: percentage, value: Double): String = js.native
-    @JSImport("react-native-i18n", "default.l")
-    @js.native
-    def l_percentage(scope: percentage, value: Double, options: InterpolateOptions): String = js.native
+    @scala.inline
+    def l(scope: Scope, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def l(scope: Scope, value: String, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def l(scope: Scope, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def l(scope: Scope, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def l(scope: Scope, value: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def l(scope: Scope, value: Date, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def l_currency(scope: currency, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def l_currency(scope: currency, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def l_number(scope: number, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def l_number(scope: number, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def l_percentage(scope: percentage, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def l_percentage(scope: percentage, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("react-native-i18n", "default.locale")
     @js.native
@@ -110,42 +103,33 @@ object mod {
     @scala.inline
     def locale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("locale")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-native-i18n", "default.localize")
-    @js.native
-    def localize(scope: Scope, value: String): String = js.native
-    @JSImport("react-native-i18n", "default.localize")
-    @js.native
-    def localize(scope: Scope, value: String, options: InterpolateOptions): String = js.native
-    @JSImport("react-native-i18n", "default.localize")
-    @js.native
-    def localize(scope: Scope, value: Double): String = js.native
-    @JSImport("react-native-i18n", "default.localize")
-    @js.native
-    def localize(scope: Scope, value: Double, options: InterpolateOptions): String = js.native
-    @JSImport("react-native-i18n", "default.localize")
-    @js.native
-    def localize(scope: Scope, value: Date): String = js.native
-    @JSImport("react-native-i18n", "default.localize")
-    @js.native
-    def localize(scope: Scope, value: Date, options: InterpolateOptions): String = js.native
-    @JSImport("react-native-i18n", "default.localize")
-    @js.native
-    def localize_currency(scope: currency, value: Double): String = js.native
-    @JSImport("react-native-i18n", "default.localize")
-    @js.native
-    def localize_currency(scope: currency, value: Double, options: InterpolateOptions): String = js.native
-    @JSImport("react-native-i18n", "default.localize")
-    @js.native
-    def localize_number(scope: number, value: Double): String = js.native
-    @JSImport("react-native-i18n", "default.localize")
-    @js.native
-    def localize_number(scope: number, value: Double, options: InterpolateOptions): String = js.native
-    @JSImport("react-native-i18n", "default.localize")
-    @js.native
-    def localize_percentage(scope: percentage, value: Double): String = js.native
-    @JSImport("react-native-i18n", "default.localize")
-    @js.native
-    def localize_percentage(scope: percentage, value: Double, options: InterpolateOptions): String = js.native
+    @scala.inline
+    def localize(scope: Scope, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def localize(scope: Scope, value: String, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def localize(scope: Scope, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def localize(scope: Scope, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def localize(scope: Scope, value: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def localize(scope: Scope, value: Date, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def localize_currency(scope: currency, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def localize_currency(scope: currency, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def localize_number(scope: number, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def localize_number(scope: number, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def localize_percentage(scope: percentage, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def localize_percentage(scope: percentage, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("react-native-i18n", "default.missingBehaviour")
     @js.native
@@ -221,68 +205,50 @@ object mod {
     @scala.inline
     def placeholder_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("placeholder")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-native-i18n", "default.reset")
-    @js.native
-    def reset(): Unit = js.native
+    @scala.inline
+    def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
     
-    @JSImport("react-native-i18n", "default.strftime")
-    @js.native
-    def strftime(date: Date, format: String): String = js.native
+    @scala.inline
+    def strftime(date: Date, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("react-native-i18n", "default.t")
-    @js.native
-    def t(scope: Scope): String = js.native
-    @JSImport("react-native-i18n", "default.t")
-    @js.native
-    def t(scope: Scope, options: TranslateOptions): String = js.native
+    @scala.inline
+    def t(scope: Scope): String = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(scope.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def t(scope: Scope, options: TranslateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("react-native-i18n", "default.toCurrency")
-    @js.native
-    def toCurrency(num: Double): String = js.native
-    @JSImport("react-native-i18n", "default.toCurrency")
-    @js.native
-    def toCurrency(num: Double, options: ToCurrencyOptions): String = js.native
+    @scala.inline
+    def toCurrency(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toCurrency")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toCurrency(num: Double, options: ToCurrencyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toCurrency")(num.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("react-native-i18n", "default.toHumanSize")
-    @js.native
-    def toHumanSize(num: Double): String = js.native
-    @JSImport("react-native-i18n", "default.toHumanSize")
-    @js.native
-    def toHumanSize(num: Double, options: ToHumanSizeOptions): String = js.native
+    @scala.inline
+    def toHumanSize(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHumanSize")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toHumanSize(num: Double, options: ToHumanSizeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toHumanSize")(num.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("react-native-i18n", "default.toNumber")
-    @js.native
-    def toNumber(num: Double): String = js.native
-    @JSImport("react-native-i18n", "default.toNumber")
-    @js.native
-    def toNumber(num: Double, options: ToNumberOptions): String = js.native
+    @scala.inline
+    def toNumber(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toNumber(num: Double, options: ToNumberOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(num.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("react-native-i18n", "default.toPercentage")
-    @js.native
-    def toPercentage(num: Double): String = js.native
-    @JSImport("react-native-i18n", "default.toPercentage")
-    @js.native
-    def toPercentage(num: Double, options: ToPercentageOptions): String = js.native
+    @scala.inline
+    def toPercentage(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toPercentage")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toPercentage(num: Double, options: ToPercentageOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toPercentage")(num.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("react-native-i18n", "default.toTime")
-    @js.native
-    def toTime(scope: Scope, value: String): String = js.native
-    @JSImport("react-native-i18n", "default.toTime")
-    @js.native
-    def toTime(scope: Scope, value: Double): String = js.native
-    @JSImport("react-native-i18n", "default.toTime")
-    @js.native
-    def toTime(scope: Scope, value: Date): String = js.native
+    @scala.inline
+    def toTime(scope: Scope, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toTime")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toTime(scope: Scope, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toTime")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toTime(scope: Scope, value: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toTime")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("react-native-i18n", "default.translate")
-    @js.native
-    def translate(scope: Scope): String = js.native
-    @JSImport("react-native-i18n", "default.translate")
-    @js.native
-    def translate(scope: Scope, options: TranslateOptions): String = js.native
+    @scala.inline
+    def translate(scope: Scope): String = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(scope.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def translate(scope: Scope, options: TranslateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @JSImport("react-native-i18n", "getLanguages")
-  @js.native
-  def getLanguages(): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def getLanguages(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguages")().asInstanceOf[js.Promise[js.Array[String]]]
 }

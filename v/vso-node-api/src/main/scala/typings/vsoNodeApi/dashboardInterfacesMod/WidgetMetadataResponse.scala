@@ -2,15 +2,13 @@ package typings.vsoNodeApi.dashboardInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WidgetMetadataResponse extends StObject {
   
-  var uri: String = js.native
+  var uri: String
   
-  var widgetMetadata: WidgetMetadata = js.native
+  var widgetMetadata: WidgetMetadata
 }
 object WidgetMetadataResponse {
   

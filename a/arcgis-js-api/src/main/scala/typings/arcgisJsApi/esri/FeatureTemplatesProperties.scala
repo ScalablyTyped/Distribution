@@ -2,60 +2,60 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureTemplatesProperties extends WidgetProperties {
+trait FeatureTemplatesProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * When `true`, displays the template [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#filterFunction).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#filterEnabled)
     */
-  var filterEnabled: js.UndefOr[Boolean] = js.native
+  var filterEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Function](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#FilterFunction) can be defined to help filter [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) within the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#filterFunction)
     */
-  var filterFunction: js.UndefOr[FilterFunction] = js.native
+  var filterFunction: js.UndefOr[FilterFunction] = js.undefined
   
   /**
     * Text used to filter items.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#filterText)
     */
-  var filterText: js.UndefOr[String] = js.native
+  var filterText: js.UndefOr[String] = js.undefined
   
   /**
     * It is possible to group [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#groupBy)
     */
-  var groupBy: js.UndefOr[String | GroupByFunction] = js.native
+  var groupBy: js.UndefOr[String | GroupByFunction] = js.undefined
   
   /**
     * An array of [Featurelayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) to display within the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#layers)
     */
-  var layers: js.UndefOr[js.Array[FeatureLayerProperties]] = js.native
+  var layers: js.UndefOr[js.Array[FeatureLayerProperties]] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#viewModel)
     */
-  var viewModel: js.UndefOr[FeatureTemplatesViewModelProperties] = js.native
+  var viewModel: js.UndefOr[FeatureTemplatesViewModelProperties] = js.undefined
   
   /**
     * The visible elements that are displayed within the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#visibleElements)
     */
-  var visibleElements: js.UndefOr[FeatureTemplatesVisibleElements] = js.native
+  var visibleElements: js.UndefOr[FeatureTemplatesVisibleElements] = js.undefined
 }
 object FeatureTemplatesProperties {
   

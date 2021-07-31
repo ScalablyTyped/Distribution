@@ -4,22 +4,21 @@ import typings.bingmaps.Microsoft.Maps.IPrimitive
 import typings.bingmaps.Microsoft.Maps.IStylesOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WellKnownText {
   
-  @JSGlobal("Microsoft.Maps.WellKnownText.read")
+  @JSGlobal("Microsoft.Maps.WellKnownText")
   @js.native
-  def read(wkt: String): IPrimitive | js.Array[IPrimitive] = js.native
-  @JSGlobal("Microsoft.Maps.WellKnownText.read")
-  @js.native
-  def read(wkt: String, styles: IStylesOptions): IPrimitive | js.Array[IPrimitive] = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("Microsoft.Maps.WellKnownText.write")
-  @js.native
-  def write(data: js.Array[IPrimitive]): String = js.native
-  @JSGlobal("Microsoft.Maps.WellKnownText.write")
-  @js.native
-  def write(data: IPrimitive): String = js.native
+  @scala.inline
+  def read(wkt: String): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(wkt.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+  @scala.inline
+  def read(wkt: String, styles: IStylesOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(wkt.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+  
+  @scala.inline
+  def write(data: js.Array[IPrimitive]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def write(data: IPrimitive): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(data.asInstanceOf[js.Any]).asInstanceOf[String]
 }

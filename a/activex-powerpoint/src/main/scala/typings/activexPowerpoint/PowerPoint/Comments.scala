@@ -2,24 +2,22 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comments extends StObject {
   
-  def Add(Left: Double, Top: Double, Author: String, AuthorInitials: String, Text: String): Comment = js.native
+  def Add(Left: Double, Top: Double, Author: String, AuthorInitials: String, Text: String): Comment
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): Comment = js.native
+  def Item(Index: Double): Comment
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Comments_typekey")
-  var PowerPointDotComments_typekey: Comments = js.native
+  var PowerPointDotComments_typekey: Comments
 }
 object Comments {
   

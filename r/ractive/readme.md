@@ -10,9 +10,9 @@ Next-generation DOM manipulation
 | ------------------ | :-------------: |
 | Full name          | ractive |
 | Keywords           | binding, data binding, declarative, dom, handlebars, mustache, reactive, template, templates, templating, ui, view model |
-| # releases         | 86 |
+| # releases         | 91 |
 | # dependents       | 93 |
-| # downloads        | 203322 |
+| # downloads        | 177541 |
 | # stars            | 8 |
 
 ## Links

@@ -4,15 +4,13 @@ import typings.konva.shapeMod.Shape
 import typings.konva.shapeMod.ShapeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Antialiased extends StObject {
   
-  var antialiased: js.UndefOr[Boolean] = js.native
+  var antialiased: js.UndefOr[Boolean] = js.undefined
   
-  var shape: js.UndefOr[Shape[ShapeConfig]] = js.native
+  var shape: js.UndefOr[Shape[ShapeConfig]] = js.undefined
 }
 object Antialiased {
   

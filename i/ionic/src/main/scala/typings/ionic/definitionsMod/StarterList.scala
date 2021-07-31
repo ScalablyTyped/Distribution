@@ -4,15 +4,13 @@ import typings.ionic.anon.IdName
 import typings.ionic.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StarterList extends StObject {
   
-  var integrations: js.Array[IdName] = js.native
+  var integrations: js.Array[IdName]
   
-  var starters: js.Array[Type] = js.native
+  var starters: js.Array[Type]
 }
 object StarterList {
   

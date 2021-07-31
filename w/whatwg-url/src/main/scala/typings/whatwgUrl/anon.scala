@@ -4,17 +4,15 @@ import typings.whatwgUrl.mod.StateOverride
 import typings.whatwgUrl.mod.URLRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BaseURL extends StObject {
     
-    var baseURL: js.UndefOr[String] = js.native
+    var baseURL: js.UndefOr[String] = js.undefined
     
-    var encodingOverride: js.UndefOr[String] = js.native
+    var encodingOverride: js.UndefOr[String] = js.undefined
   }
   object BaseURL {
     
@@ -41,10 +39,9 @@ object anon {
     }
   }
   
-  @js.native
   trait DoNotStripQMark extends StObject {
     
-    var doNotStripQMark: js.UndefOr[Boolean] = js.native
+    var doNotStripQMark: js.UndefOr[Boolean] = js.undefined
   }
   object DoNotStripQMark {
     
@@ -65,16 +62,15 @@ object anon {
     }
   }
   
-  @js.native
   trait EncodingOverride extends StObject {
     
-    var baseURL: js.UndefOr[String] = js.native
+    var baseURL: js.UndefOr[String] = js.undefined
     
-    var encodingOverride: js.UndefOr[String] = js.native
+    var encodingOverride: js.UndefOr[String] = js.undefined
     
-    var stateOverride: js.UndefOr[StateOverride] = js.native
+    var stateOverride: js.UndefOr[StateOverride] = js.undefined
     
-    var url: js.UndefOr[URLRecord] = js.native
+    var url: js.UndefOr[URLRecord] = js.undefined
   }
   object EncodingOverride {
     

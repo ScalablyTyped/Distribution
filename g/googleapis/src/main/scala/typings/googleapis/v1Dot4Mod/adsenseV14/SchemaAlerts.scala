@@ -2,21 +2,19 @@ package typings.googleapis.v1Dot4Mod.adsenseV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAlerts extends StObject {
   
   /**
     * The alerts returned in this list response.
     */
-  var items: js.UndefOr[js.Array[SchemaAlert]] = js.native
+  var items: js.UndefOr[js.Array[SchemaAlert]] = js.undefined
   
   /**
     * Kind of list this is, in this case adsense#alerts.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaAlerts {
   

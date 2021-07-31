@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTransitGatewayRouteRequest extends StObject {
   
   /**
     * Indicates whether to drop traffic that matches this route.
     */
-  var Blackhole: js.UndefOr[Boolean] = js.native
+  var Blackhole: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The CIDR range used for destination matches. Routing decisions are based on the most specific match.
     */
-  var DestinationCidrBlock: String = js.native
+  var DestinationCidrBlock: String
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the attachment.
     */
-  var TransitGatewayAttachmentId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayAttachmentId] = js.native
+  var TransitGatewayAttachmentId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayAttachmentId] = js.undefined
   
   /**
     * The ID of the transit gateway route table.
     */
-  var TransitGatewayRouteTableId: typings.awsSdk.ec2Mod.TransitGatewayRouteTableId = js.native
+  var TransitGatewayRouteTableId: typings.awsSdk.ec2Mod.TransitGatewayRouteTableId
 }
 object CreateTransitGatewayRouteRequest {
   

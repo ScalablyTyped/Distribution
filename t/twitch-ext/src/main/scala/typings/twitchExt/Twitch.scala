@@ -30,7 +30,6 @@ import typings.twitchExt.twitchExtStrings.viewer
 import typings.twitchExt.twitchExtStrings.web
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Twitch {
@@ -42,28 +41,27 @@ object Twitch {
       *
       * @see onAuthorized
       */
-    @js.native
     trait Authorized extends StObject {
       
       /**
         * Channel ID of the page where the extension is iframe embedded.
         */
-      var channelId: String = js.native
+      var channelId: String
       
       /**
         * Client ID of the extension.
         */
-      var clientId: String = js.native
+      var clientId: String
       
       /**
         * JWT that should be passed to any EBS call for authentication.
         */
-      var token: String = js.native
+      var token: String
       
       /**
         * Opaque user ID.
         */
-      var userId: String = js.native
+      var userId: String
     }
     object Authorized {
       
@@ -90,28 +88,27 @@ object Twitch {
       }
     }
     
-    @js.native
     trait BitsProduct extends StObject {
       
       /**
         * Cost object.
         */
-      var cost: BitsProductCost = js.native
+      var cost: BitsProductCost
       
       /**
         * Registered display name for the SKU.
         */
-      var displayName: String = js.native
+      var displayName: String
       
       /**
         * This field is returned only for extension versions that are not in the Released state.
         */
-      var inDevelopment: js.UndefOr[Boolean] = js.native
+      var inDevelopment: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Unique ID for the product.
         */
-      var sku: String = js.native
+      var sku: String
     }
     object BitsProduct {
       
@@ -141,25 +138,24 @@ object Twitch {
       }
     }
     
-    @js.native
     trait BitsProductCost extends StObject {
       
       /**
         * Number of Bits required for the product.
         */
-      var amount: String = js.native
+      var amount: String
       
       /**
         * Always the string "bits". Reserved for future use.
         */
-      var `type`: bits = js.native
+      var `type`: bits
     }
     object BitsProductCost {
       
       @scala.inline
-      def apply(amount: String, `type`: bits): BitsProductCost = {
+      def apply(amount: String): BitsProductCost = {
         val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("bits")
         __obj.asInstanceOf[BitsProductCost]
       }
       
@@ -174,41 +170,40 @@ object Twitch {
       }
     }
     
-    @js.native
     trait BitsTransaction extends StObject {
       
       /**
         * Display name of the user who executed the Bits in Extensions transaction.
         */
-      var displayName: String = js.native
+      var displayName: String
       
       /**
         * Will be "twitch.ext" + your extension ID.
         */
-      var domainID: String = js.native
+      var domainID: String
       
-      var initiator: CURRENT_USER | OTHER = js.native
+      var initiator: CURRENT_USER | OTHER
       
       /**
         * Full product object from getProducts call
         */
-      var product: BitsProduct = js.native
+      var product: BitsProduct
       
       /**
         * ID of the transaction.
         */
-      var transactionID: String = js.native
+      var transactionID: String
       
       /**
         * JWT containing the following transaction information in the payload.
         * The JWT is a large, base64-encoded string. It can be verified using your developer secret.
         */
-      var transactionReceipt: String = js.native
+      var transactionReceipt: String
       
       /**
         * Twitch ID of the user who executed the transaction.
         */
-      var userId: String = js.native
+      var userId: String
     }
     object BitsTransaction {
       
@@ -260,47 +255,46 @@ object Twitch {
       *
       * @see https://dev.twitch.tv/docs/extensions/reference/#client-query-parameters
       */
-    @js.native
     trait ClientQueryParams extends StObject {
       
       /**
         * The type of the anchor in which the extension is activated.
         */
-      var anchor: component | panel | video_overlay = js.native
+      var anchor: component | panel | video_overlay
       
       /**
         * The user’s language setting.
         *
         * @example "en"
         */
-      var language: String = js.native
+      var language: String
       
       /**
         * The user’s language locale.
         *
         * @example "en-US"
         */
-      var locale: String = js.native
+      var locale: String
       
       /**
         * The extension’s mode.
         */
-      var mode: config | dashboard | viewer = js.native
+      var mode: config | dashboard | viewer
       
       /**
         * The platform on which the Twitch client is running.
         */
-      var platform: mobile | web = js.native
+      var platform: mobile | web
       
       /**
         * Indicates whether the extension is popped out.
         */
-      var popout: `true` | `false` = js.native
+      var popout: `true` | `false`
       
       /**
         * The release state of the extension.
         */
-      var state: testing | hosted_test | approved | released | ready_for_review | in_review | pending_action | uploading = js.native
+      var state: testing | hosted_test | approved | released | ready_for_review | in_review | pending_action | uploading
     }
     object ClientQueryParams {
       
@@ -351,96 +345,95 @@ object Twitch {
       *
       * @see onContext
       */
-    @js.native
     trait Context extends StObject {
       
       /**
         * If true, player controls are visible (e.g., due to mouseover).
         * Do not use this for mobile extensions; it is not sent for mobile.
         */
-      var arePlayerControlsVisible: Boolean = js.native
+      var arePlayerControlsVisible: Boolean
       
       /**
         * Bitrate of the broadcast.
         */
-      var bitrate: Double = js.native
+      var bitrate: Double
       
       /**
         * Buffer size of the broadcast.
         */
-      var bufferSize: Double = js.native
+      var bufferSize: Double
       
       /**
         * Display size of the player.
         */
-      var displayResolution: String = js.native
+      var displayResolution: String
       
       /**
         * Game being broadcast.
         */
-      var game: String = js.native
+      var game: String
       
       /**
         * Number of seconds of latency between the broadcaster and viewer.
         */
-      var hlsLatencyBroadcaster: Double = js.native
+      var hlsLatencyBroadcaster: Double
       
       /**
         * Information about the current channel’s hosting status, or undefined if the channel is not currently hosting.
         */
-      var hostingInfo: js.UndefOr[HostedChannelId] = js.native
+      var hostingInfo: js.UndefOr[HostedChannelId] = js.undefined
       
       /**
         * If true, the viewer is watching in fullscreen mode.
         * Do not use this for mobile extensions; it is not sent for mobile.
         */
-      var isFullScreen: Boolean = js.native
+      var isFullScreen: Boolean
       
       /**
         * If true, the viewer has muted the stream.
         */
-      var isMuted: Boolean = js.native
+      var isMuted: Boolean
       
       /**
         * If true, the viewer has paused the stream.
         */
-      var isPaused: Boolean = js.native
+      var isPaused: Boolean
       
       /**
         * If true, the viewer is watching in theater mode.
         * Do not use this for mobile extensions; it is not sent for mobile.
         */
-      var isTheatreMode: Boolean = js.native
+      var isTheatreMode: Boolean
       
       /**
         * Language of the broadcast (e.g., "en").
         */
-      var language: String = js.native
+      var language: String
       
       /**
         * The mode the extension is currently run in.
         */
-      var mode: viewer | dashboard | config = js.native
+      var mode: viewer | dashboard | config
       
       /**
         * Indicates how the stream is being played.
         */
-      var playbackMode: video | audio | remote | `chat-only` = js.native
+      var playbackMode: video | audio | remote | `chat-only`
       
       /**
         * The user’s theme setting on the Twitch website.
         */
-      var theme: light | dark = js.native
+      var theme: light | dark
       
       /**
         * Resolution of the broadcast.
         */
-      var videoResolution: String = js.native
+      var videoResolution: String
       
       /**
         * Currently selected player volume. Valid values: between 0 and 1.
         */
-      var volume: Double = js.native
+      var volume: Double
     }
     object Context {
       
@@ -531,7 +524,6 @@ object Twitch {
       *
       * @see rig
       */
-    @js.native
     trait Rig extends StObject {
       
       /**
@@ -540,7 +532,7 @@ object Twitch {
         * @param message The message to print.
         * @see https://github.com/twitchdev/developer-rig#rig-console
         */
-      def log(message: String): Unit = js.native
+      def log(message: String): Unit
     }
     object Rig {
       
@@ -561,48 +553,47 @@ object Twitch {
     /**
       * @see viewer
       */
-    @js.native
     trait Viewer extends StObject {
       
       /**
         * The Twitch ID of a linked viewer. null if the viewer has not opted to share their identity with the extension.
         */
-      var id: String | Null = js.native
+      var id: String | Null
       
       /**
         * Provided as a convenience to check whether or not a user has shared their identity with their extension
         */
-      var isLinked: Boolean = js.native
+      var isLinked: Boolean
       
       /**
         * This function binds a callback will be invoked when the viewer’s status changes (e.g. if a viewer subscribes and
         * changes their subscription status).
         * @param callback The callback that is called whenever the viewer's status changes
         */
-      def onChanged(callback: js.Function0[Unit]): Unit = js.native
+      def onChanged(callback: js.Function0[Unit]): Unit
       
       /**
         * The opaque id of the viewer.
         */
-      var opaqueId: String = js.native
+      var opaqueId: String
       
       /**
         * The role of the user. See the JWT schema for possible values.
         */
-      var role: String = js.native
+      var role: String
       
       /**
         * The encoded JWT. This is the same as the token property of the authData parameter that currently gets passed to
         * the onAuthorized callback.
         */
-      var sessionToken: String = js.native
+      var sessionToken: String
       
       /**
         * An object containing information about the viewer’s subscription. The value of subscriptionStatus will be null if
         * the user is either not a subscriber, or opting not to share their identity. The value will also be null if the
         * extension otherwise doesn't have subscription capabilities.
         */
-      var subscriptionStatus: ViewerSubscriptionStatus | Null = js.native
+      var subscriptionStatus: ViewerSubscriptionStatus | Null
     }
     object Viewer {
       
@@ -614,7 +605,7 @@ object Twitch {
         role: String,
         sessionToken: String
       ): Viewer = {
-        val __obj = js.Dynamic.literal(isLinked = isLinked.asInstanceOf[js.Any], onChanged = js.Any.fromFunction1(onChanged), opaqueId = opaqueId.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], sessionToken = sessionToken.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(isLinked = isLinked.asInstanceOf[js.Any], onChanged = js.Any.fromFunction1(onChanged), opaqueId = opaqueId.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], sessionToken = sessionToken.asInstanceOf[js.Any], id = null, subscriptionStatus = null)
         __obj.asInstanceOf[Viewer]
       }
       
@@ -650,14 +641,13 @@ object Twitch {
       }
     }
     
-    @js.native
     trait ViewerSubscriptionStatus extends StObject {
       
       /**
         * This tier of the subscription.
         * Possible values are 1000, 200 and 300 for tier one, two and three subscriptions respectively.
         */
-      var tier: String = js.native
+      var tier: String
     }
     object ViewerSubscriptionStatus {
       

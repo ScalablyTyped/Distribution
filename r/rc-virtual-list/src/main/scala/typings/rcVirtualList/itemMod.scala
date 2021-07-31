@@ -4,21 +4,22 @@ import typings.react.mod.ReactElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object itemMod {
   
-  @JSImport("rc-virtual-list/es/Item", "Item")
+  @JSImport("rc-virtual-list/es/Item", JSImport.Namespace)
   @js.native
-  def Item(hasChildrenSetRef: ItemProps): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def Item(hasChildrenSetRef: ItemProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(hasChildrenSetRef.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
   trait ItemProps extends StObject {
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    def setRef(element: HTMLElement): Unit = js.native
+    def setRef(element: HTMLElement): Unit
   }
   object ItemProps {
     

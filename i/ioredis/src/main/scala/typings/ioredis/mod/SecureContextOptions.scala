@@ -3,29 +3,27 @@ package typings.ioredis.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecureContextOptions extends StObject {
   
-  var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
   
-  var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
   
-  var ciphers: js.UndefOr[String] = js.native
+  var ciphers: js.UndefOr[String] = js.undefined
   
-  var clientCertEngine: js.UndefOr[String] = js.native
+  var clientCertEngine: js.UndefOr[String] = js.undefined
   
-  var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
   
-  var dhparam: js.UndefOr[String | Buffer] = js.native
+  var dhparam: js.UndefOr[String | Buffer] = js.undefined
   
-  var ecdhCurve: js.UndefOr[String] = js.native
+  var ecdhCurve: js.UndefOr[String] = js.undefined
   
-  var honorCipherOrder: js.UndefOr[Boolean] = js.native
+  var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[String | Buffer | (js.Array[Buffer | js.Object])] = js.native
+  var key: js.UndefOr[String | Buffer | (js.Array[Buffer | js.Object])] = js.undefined
   
   /**
     * Optionally set the maximum TLS version to allow. One
@@ -35,7 +33,7 @@ trait SecureContextOptions extends StObject {
     * `--tls-max-v1.2` sets the default to `'TLSv1.2'`. Using `--tls-max-v1.3` sets the default to
     * `'TLSv1.3'`. If multiple of the options are provided, the highest maximum is used.
     */
-  var maxVersion: js.UndefOr[SecureVersion] = js.native
+  var maxVersion: js.UndefOr[SecureVersion] = js.undefined
   
   /**
     * Optionally set the minimum TLS version to allow. One
@@ -47,19 +45,19 @@ trait SecureContextOptions extends StObject {
     * `'TLSv1.1'`. Using `--tls-min-v1.3` sets the default to
     * 'TLSv1.3'. If multiple of the options are provided, the lowest minimum is used.
     */
-  var minVersion: js.UndefOr[SecureVersion] = js.native
+  var minVersion: js.UndefOr[SecureVersion] = js.undefined
   
-  var passphrase: js.UndefOr[String] = js.native
+  var passphrase: js.UndefOr[String] = js.undefined
   
-  var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | js.Object])] = js.native
+  var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | js.Object])] = js.undefined
   
-  var secureOptions: js.UndefOr[Double] = js.native
+  var secureOptions: js.UndefOr[Double] = js.undefined
   
   // Value is a numeric bitmask of the `SSL_OP_*` options
-  var secureProtocol: js.UndefOr[String] = js.native
+  var secureProtocol: js.UndefOr[String] = js.undefined
   
   // SSL Method, e.g. SSLv23_method
-  var sessionIdContext: js.UndefOr[String] = js.native
+  var sessionIdContext: js.UndefOr[String] = js.undefined
 }
 object SecureContextOptions {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFunctionsResponse extends StObject {
   
   /**
     * A list of Lambda functions.
     */
-  var Functions: js.UndefOr[FunctionList] = js.native
+  var Functions: js.UndefOr[FunctionList] = js.undefined
   
   /**
     * The pagination token that's included if more results are available.
     */
-  var NextMarker: js.UndefOr[String] = js.native
+  var NextMarker: js.UndefOr[String] = js.undefined
 }
 object ListFunctionsResponse {
   

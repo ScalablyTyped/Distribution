@@ -2,7 +2,6 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,9 +27,9 @@ trait HTMLMapElement extends StObject {
   def applyElement(apply: IHTMLElement, where: String): IHTMLElement = js.native
   
   def areas(): js.Any = js.native
-  def areas(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def areas(name: js.Any): js.Any = js.native
   def areas(name: js.Any, index: js.Any): js.Any = js.native
+  def areas(name: Unit, index: js.Any): js.Any = js.native
   @JSName("areas")
   val areas_Original: IHTMLAreasCollection = js.native
   

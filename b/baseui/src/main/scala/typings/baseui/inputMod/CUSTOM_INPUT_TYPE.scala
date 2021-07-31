@@ -3,13 +3,11 @@ package typings.baseui.inputMod
 import typings.baseui.baseuiStrings.textarea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CUSTOM_INPUT_TYPE extends StObject {
   
-  var textarea: typings.baseui.baseuiStrings.textarea = js.native
+  var textarea: typings.baseui.baseuiStrings.textarea
 }
 object CUSTOM_INPUT_TYPE {
   

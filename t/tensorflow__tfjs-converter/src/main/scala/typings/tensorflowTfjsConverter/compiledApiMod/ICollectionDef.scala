@@ -7,26 +7,24 @@ import typings.tensorflowTfjsConverter.compiledApiMod.CollectionDef.IInt64List
 import typings.tensorflowTfjsConverter.compiledApiMod.CollectionDef.INodeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICollectionDef extends StObject {
   
   /** CollectionDef anyList */
-  var anyList: js.UndefOr[IAnyList | Null] = js.native
+  var anyList: js.UndefOr[IAnyList | Null] = js.undefined
   
   /** CollectionDef bytesList */
-  var bytesList: js.UndefOr[IBytesList | Null] = js.native
+  var bytesList: js.UndefOr[IBytesList | Null] = js.undefined
   
   /** CollectionDef floatList */
-  var floatList: js.UndefOr[IFloatList | Null] = js.native
+  var floatList: js.UndefOr[IFloatList | Null] = js.undefined
   
   /** CollectionDef int64List */
-  var int64List: js.UndefOr[IInt64List | Null] = js.native
+  var int64List: js.UndefOr[IInt64List | Null] = js.undefined
   
   /** CollectionDef nodeList */
-  var nodeList: js.UndefOr[INodeList | Null] = js.native
+  var nodeList: js.UndefOr[INodeList | Null] = js.undefined
 }
 object ICollectionDef {
   

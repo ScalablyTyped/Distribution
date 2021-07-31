@@ -2,17 +2,15 @@ package typings.pgPromise.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Binary extends StObject {
   
-  var _types: js.Any = js.native
+  var _types: js.Any
   
-  var binary: js.Any = js.native
+  var binary: js.Any
   
-  var text: js.Any = js.native
+  var text: js.Any
 }
 object Binary {
   

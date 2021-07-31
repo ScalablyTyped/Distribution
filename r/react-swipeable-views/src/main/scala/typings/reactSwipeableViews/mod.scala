@@ -6,7 +6,6 @@ import typings.react.mod.HTMLProps
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -58,14 +57,13 @@ object mod {
   
   type OnTransitionEndCallback = js.Function0[Unit]
   
-  @js.native
   trait SpringConfig extends StObject {
     
-    var delay: String = js.native
+    var delay: String
     
-    var duration: String = js.native
+    var duration: String
     
-    var easeFunction: String = js.native
+    var easeFunction: String
   }
   object SpringConfig {
     
@@ -91,46 +89,47 @@ object mod {
   
   type SwipeableViews = Component[SwipeableViewsProps, SwipeableViewsState, js.Any]
   
-  @js.native
-  trait SwipeableViewsProps extends HTMLProps[HTMLDivElement] {
+  trait SwipeableViewsProps
+    extends StObject
+       with HTMLProps[HTMLDivElement] {
     
-    var animateHeight: js.UndefOr[Boolean] = js.native
+    var animateHeight: js.UndefOr[Boolean] = js.undefined
     
-    var animateTransitions: js.UndefOr[Boolean] = js.native
+    var animateTransitions: js.UndefOr[Boolean] = js.undefined
     
-    var axis: js.UndefOr[AxisType] = js.native
+    var axis: js.UndefOr[AxisType] = js.undefined
     
-    var containerStyle: js.UndefOr[CSSProperties] = js.native
+    var containerStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /*
       * This is the config used to disable lazy loading, if true it will render all the views in first rendering.
       */
-    var disableLazyLoading: js.UndefOr[Boolean] = js.native
+    var disableLazyLoading: js.UndefOr[Boolean] = js.undefined
     
-    var enableMouseEvents: js.UndefOr[Boolean] = js.native
+    var enableMouseEvents: js.UndefOr[Boolean] = js.undefined
     
-    var hysteresis: js.UndefOr[Double] = js.native
+    var hysteresis: js.UndefOr[Double] = js.undefined
     
-    var ignoreNativeScroll: js.UndefOr[Boolean] = js.native
+    var ignoreNativeScroll: js.UndefOr[Boolean] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var onChangeIndex: js.UndefOr[OnChangeIndexCallback] = js.native
+    var onChangeIndex: js.UndefOr[OnChangeIndexCallback] = js.undefined
     
-    var onSwitching: js.UndefOr[OnSwitchingCallback] = js.native
+    var onSwitching: js.UndefOr[OnSwitchingCallback] = js.undefined
     
     @JSName("onTransitionEnd")
-    var onTransitionEnd_SwipeableViewsProps: js.UndefOr[OnTransitionEndCallback] = js.native
+    var onTransitionEnd_SwipeableViewsProps: js.UndefOr[OnTransitionEndCallback] = js.undefined
     
-    var resistance: js.UndefOr[Boolean] = js.native
+    var resistance: js.UndefOr[Boolean] = js.undefined
     
-    var slideClassName: js.UndefOr[String] = js.native
+    var slideClassName: js.UndefOr[String] = js.undefined
     
-    var slideStyle: js.UndefOr[CSSProperties] = js.native
+    var slideStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var springConfig: js.UndefOr[SpringConfig] = js.native
+    var springConfig: js.UndefOr[SpringConfig] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object SwipeableViewsProps {
     
@@ -247,20 +246,19 @@ object mod {
     }
   }
   
-  @js.native
   trait SwipeableViewsState extends StObject {
     
-    var displaySameSlide: js.UndefOr[Boolean] = js.native
+    var displaySameSlide: js.UndefOr[Boolean] = js.undefined
     
-    var heightLatest: js.UndefOr[Double] = js.native
+    var heightLatest: js.UndefOr[Double] = js.undefined
     
-    var indexCurrent: js.UndefOr[Double] = js.native
+    var indexCurrent: js.UndefOr[Double] = js.undefined
     
-    var indexLatest: js.UndefOr[Double] = js.native
+    var indexLatest: js.UndefOr[Double] = js.undefined
     
-    var isDragging: js.UndefOr[Boolean] = js.native
+    var isDragging: js.UndefOr[Boolean] = js.undefined
     
-    var isFirstRender: js.UndefOr[Boolean] = js.native
+    var isFirstRender: js.UndefOr[Boolean] = js.undefined
   }
   object SwipeableViewsState {
     

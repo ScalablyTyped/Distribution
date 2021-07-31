@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.fsMod.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -39,9 +38,9 @@ object mod extends Shortcut {
     def open(affixes: AffixOptions): js.Promise[OpenFile] = js.native
     
     def path(): String = js.native
-    def path(affixes: js.UndefOr[scala.Nothing], defaultPrefix: String): String = js.native
     def path(affixes: String): String = js.native
     def path(affixes: String, defaultPrefix: String): String = js.native
+    def path(affixes: Unit, defaultPrefix: String): String = js.native
     def path(affixes: AffixOptions): String = js.native
     def path(affixes: AffixOptions, defaultPrefix: String): String = js.native
     

@@ -2,21 +2,19 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseEvent[T /* <: String */, Detail] extends StObject {
   
-  var currentTarget: EventTarget = js.native
+  var currentTarget: EventTarget
   
-  var detail: Detail = js.native
+  var detail: Detail
   
-  var target: EventTarget = js.native
+  var target: EventTarget
   
-  var timeStamp: Double = js.native
+  var timeStamp: Double
   
-  var `type`: T = js.native
+  var `type`: T
 }
 object BaseEvent {
   
@@ -28,7 +26,7 @@ object BaseEvent {
   }
   
   @scala.inline
-  implicit class BaseEventMutableBuilder[Self <: BaseEvent[_, _], T /* <: String */, Detail] (val x: Self with (BaseEvent[T, Detail])) extends AnyVal {
+  implicit class BaseEventMutableBuilder[Self <: BaseEvent[?, ?], T /* <: String */, Detail] (val x: Self & (BaseEvent[T, Detail])) extends AnyVal {
     
     @scala.inline
     def setCurrentTarget(value: EventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])

@@ -15,7 +15,6 @@ import typings.protobufjs.mod.RPCImpl
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Publisher */
@@ -30,8 +29,8 @@ class Publisher protected () extends Service {
     */
   def this(rpcImpl: RPCImpl) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
-  def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+  def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
   
   /**
     * Calls CreateTopic.
@@ -152,6 +151,10 @@ class Publisher protected () extends Service {
 }
 object Publisher {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Publisher")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates new Publisher service using the specified rpc implementation.
     * @param rpcImpl RPC implementation
@@ -160,18 +163,14 @@ object Publisher {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Publisher.create")
-  @js.native
-  def create(rpcImpl: RPCImpl): Publisher = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Publisher.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): Publisher = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Publisher.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Publisher = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Publisher.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Publisher = js.native
+  @scala.inline
+  def create(rpcImpl: RPCImpl): Publisher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[Publisher]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[Publisher]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Publisher]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Publisher]
   
   /**
     * Callback as used by {@link google.pubsub.v1.Publisher#createTopic}.

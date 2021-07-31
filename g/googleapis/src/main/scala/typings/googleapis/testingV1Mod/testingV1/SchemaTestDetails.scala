@@ -2,20 +2,18 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional details about the progress of the running test.
   */
-@js.native
 trait SchemaTestDetails extends StObject {
   
   /**
     * Output only. If the TestState is ERROR, then this string will contain
     * human-readable details about the error.
     */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Human-readable, detailed descriptions of the test&#39;s
@@ -23,7 +21,7 @@ trait SchemaTestDetails extends StObject {
     * Test&quot;.  During the course of execution new data may be appended to
     * the end of progress_messages.
     */
-  var progressMessages: js.UndefOr[js.Array[String]] = js.native
+  var progressMessages: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTestDetails {
   

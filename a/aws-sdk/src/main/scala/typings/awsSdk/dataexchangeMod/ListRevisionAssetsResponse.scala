@@ -2,21 +2,19 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRevisionAssetsResponse extends StObject {
   
   /**
     * The asset objects listed by the request.
     */
-  var Assets: js.UndefOr[ListOfAssetEntry] = js.native
+  var Assets: js.UndefOr[ListOfAssetEntry] = js.undefined
   
   /**
     * The token value retrieved from a previous call to access the next page of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.dataexchangeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.dataexchangeMod.NextToken] = js.undefined
 }
 object ListRevisionAssetsResponse {
   

@@ -8,51 +8,50 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("cors", JSImport.Namespace)
-  @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("cors", JSImport.Namespace)
-  @js.native
-  def apply(options: CorsOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("cors", JSImport.Namespace)
-  @js.native
-  def apply(options: CorsOptionsDelegate): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: CorsOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: CorsOptionsDelegate): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
+  @JSImport("cors", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait CorsOptions extends StObject {
     
-    var allowedHeaders: js.UndefOr[String | js.Array[String]] = js.native
+    var allowedHeaders: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var credentials: js.UndefOr[Boolean] = js.native
+    var credentials: js.UndefOr[Boolean] = js.undefined
     
-    var exposedHeaders: js.UndefOr[String | js.Array[String]] = js.native
+    var exposedHeaders: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /**
       * @default 'GET,HEAD,PUT,PATCH,POST,DELETE'
       */
-    var methods: js.UndefOr[String | js.Array[String]] = js.native
+    var methods: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * @default 204
       */
-    var optionsSuccessStatus: js.UndefOr[Double] = js.native
+    var optionsSuccessStatus: js.UndefOr[Double] = js.undefined
     
     /**
       * @default '*''
       */
-    var origin: js.UndefOr[Boolean | String | RegExp | (js.Array[String | RegExp]) | CustomOrigin] = js.native
+    var origin: js.UndefOr[Boolean | String | RegExp | (js.Array[String | RegExp]) | CustomOrigin] = js.undefined
     
     /**
       * @default false
       */
-    var preflightContinue: js.UndefOr[Boolean] = js.native
+    var preflightContinue: js.UndefOr[Boolean] = js.undefined
   }
   object CorsOptions {
     

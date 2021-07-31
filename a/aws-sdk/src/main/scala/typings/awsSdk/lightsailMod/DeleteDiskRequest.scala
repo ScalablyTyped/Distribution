@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDiskRequest extends StObject {
   
   /**
     * The unique name of the disk you want to delete (e.g., my-disk).
     */
-  var diskName: ResourceName = js.native
+  var diskName: ResourceName
   
   /**
     * A Boolean value to indicate whether to delete the enabled add-ons for the disk.
     */
-  var forceDeleteAddOns: js.UndefOr[Boolean] = js.native
+  var forceDeleteAddOns: js.UndefOr[Boolean] = js.undefined
 }
 object DeleteDiskRequest {
   

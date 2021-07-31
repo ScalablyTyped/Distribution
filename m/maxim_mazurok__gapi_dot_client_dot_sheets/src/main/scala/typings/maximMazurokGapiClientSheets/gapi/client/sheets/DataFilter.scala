@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataFilter extends StObject {
   
   /** Selects data that matches the specified A1 range. */
-  var a1Range: js.UndefOr[String] = js.native
+  var a1Range: js.UndefOr[String] = js.undefined
   
   /** Selects data associated with the developer metadata matching the criteria described by this DeveloperMetadataLookup. */
-  var developerMetadataLookup: js.UndefOr[DeveloperMetadataLookup] = js.native
+  var developerMetadataLookup: js.UndefOr[DeveloperMetadataLookup] = js.undefined
   
   /** Selects data that matches the range described by the GridRange. */
-  var gridRange: js.UndefOr[GridRange] = js.native
+  var gridRange: js.UndefOr[GridRange] = js.undefined
 }
 object DataFilter {
   

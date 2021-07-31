@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * For example, a {@link DynamicResultSet} is returned from the open-command executed by an {@link XCommandProcessor} of the service {@link Content} .
   */
-@js.native
 trait CachedDynamicResultSet
-  extends XDynamicResultSet
+  extends StObject
+     with XDynamicResultSet
      with XSourceInitialization
 object CachedDynamicResultSet {
   

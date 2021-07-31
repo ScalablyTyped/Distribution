@@ -2,20 +2,18 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options for the addAssociation mixin of the belongsToMany association.
   * @see BelongsToManyAddAssociationMixin
   */
-@js.native
 trait BelongsToManyAddAssociationMixinOptions extends StObject {
   
   /**
     * Run validation for the join model.
     */
-  var validate: js.UndefOr[Boolean] = js.native
+  var validate: js.UndefOr[Boolean] = js.undefined
 }
 object BelongsToManyAddAssociationMixinOptions {
   

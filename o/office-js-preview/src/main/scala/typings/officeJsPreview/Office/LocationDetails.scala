@@ -2,26 +2,24 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationDetails extends StObject {
   
   /**
     * The location's display name.
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * The email address associated with the location.
     */
-  var emailAddress: String = js.native
+  var emailAddress: String
   
   /**
     * The `LocationIdentifier` of the location.
     */
-  var locationIdentifier: LocationIdentifier = js.native
+  var locationIdentifier: LocationIdentifier
 }
 object LocationDetails {
   

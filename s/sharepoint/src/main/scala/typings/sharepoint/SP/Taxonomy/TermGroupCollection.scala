@@ -4,11 +4,12 @@ import typings.sharepoint.SP.ClientObjectCollection
 import typings.sharepoint.SP.Guid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TermGroupCollection extends ClientObjectCollection[TermGroup] {
+trait TermGroupCollection
+  extends StObject
+     with ClientObjectCollection[TermGroup] {
   
   def getById(id: Guid): TermGroup = js.native
   

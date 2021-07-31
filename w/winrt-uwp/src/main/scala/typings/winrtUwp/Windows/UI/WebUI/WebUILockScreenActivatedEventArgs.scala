@@ -5,30 +5,28 @@ import typings.winrtUwp.Windows.ApplicationModel.Activation.ApplicationExecution
 import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents arguments used when the lock screen is activated. */
-@js.native
 trait WebUILockScreenActivatedEventArgs extends StObject {
   
   /** Gets the object that manages an app activation operation. */
-  var activatedOperation: ActivatedOperation = js.native
+  var activatedOperation: ActivatedOperation
   
   /** Gets the identifier for the currently shown app view. */
-  var currentlyShownApplicationViewId: Double = js.native
+  var currentlyShownApplicationViewId: Double
   
   /** Gets information about the app activation operation. */
-  var info: js.Any = js.native
+  var info: js.Any
   
   /** Gets and activation kind for the app activation operation. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
   /** Gets the previous execution state. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
   /** Gets the splash screen object that provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
 }
 object WebUILockScreenActivatedEventArgs {
   

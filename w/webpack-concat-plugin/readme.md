@@ -12,7 +12,7 @@ Webpack file concatenation.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 1284195 |
+| # downloads        | 1229342 |
 | # stars            | 1 |
 
 ## Links

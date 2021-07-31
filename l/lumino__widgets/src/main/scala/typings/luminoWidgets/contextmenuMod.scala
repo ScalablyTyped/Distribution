@@ -9,7 +9,6 @@ import typings.luminoWidgets.menuMod.Menu.IRenderer
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextmenuMod {
@@ -62,9 +61,9 @@ object contextmenuMod {
     /**
       * An options object for creating a context menu item.
       */
-    @js.native
     trait IItemOptions
-      extends typings.luminoWidgets.menuMod.Menu.IItemOptions {
+      extends StObject
+         with typings.luminoWidgets.menuMod.Menu.IItemOptions {
       
       /**
         * The rank for the item.
@@ -78,7 +77,7 @@ object contextmenuMod {
         *
         * The default rank is `Infinity`.
         */
-      var rank: js.UndefOr[Double] = js.native
+      var rank: js.UndefOr[Double] = js.undefined
       
       /**
         * The CSS selector for the context menu item.
@@ -90,7 +89,7 @@ object contextmenuMod {
         *
         * The selector must not contain commas.
         */
-      var selector: String = js.native
+      var selector: String
     }
     object IItemOptions {
       
@@ -117,18 +116,17 @@ object contextmenuMod {
     /**
       * An options object for initializing a context menu.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The command registry to use with the context menu.
         */
-      var commands: CommandRegistry = js.native
+      var commands: CommandRegistry
       
       /**
         * A custom renderer for use with the context menu.
         */
-      var renderer: js.UndefOr[IRenderer] = js.native
+      var renderer: js.UndefOr[IRenderer] = js.undefined
     }
     object IOptions {
       

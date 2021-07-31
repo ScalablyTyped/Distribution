@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RTCDTMFToneChangeEventInit extends EventInit {
+trait RTCDTMFToneChangeEventInit
+  extends StObject
+     with EventInit {
   
-  var tone: java.lang.String = js.native
+  var tone: java.lang.String
 }
 object RTCDTMFToneChangeEventInit {
   

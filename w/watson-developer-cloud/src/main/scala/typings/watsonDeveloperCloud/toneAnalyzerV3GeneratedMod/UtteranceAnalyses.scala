@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** UtteranceAnalyses. */
-@js.native
 trait UtteranceAnalyses extends StObject {
   
   /** An array of `UtteranceAnalysis` objects that provides the results for each utterance of the input. */
-  var utterances_tone: js.Array[UtteranceAnalysis] = js.native
+  var utterances_tone: js.Array[UtteranceAnalysis]
   
   /** **`2017-09-21`:** A warning message if the content contains more than 50 utterances. The service analyzes only the first 50 utterances. **`2016-05-19`:** Not returned. */
-  var warning: js.UndefOr[String] = js.native
+  var warning: js.UndefOr[String] = js.undefined
 }
 object UtteranceAnalyses {
   

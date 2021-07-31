@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBucketOwnershipControlsOutput extends StObject {
   
   /**
     * The OwnershipControls (BucketOwnerPreferred or ObjectWriter) currently in effect for this Amazon S3 bucket.
     */
-  var OwnershipControls: js.UndefOr[typings.awsSdk.s3Mod.OwnershipControls] = js.native
+  var OwnershipControls: js.UndefOr[typings.awsSdk.s3Mod.OwnershipControls] = js.undefined
 }
 object GetBucketOwnershipControlsOutput {
   

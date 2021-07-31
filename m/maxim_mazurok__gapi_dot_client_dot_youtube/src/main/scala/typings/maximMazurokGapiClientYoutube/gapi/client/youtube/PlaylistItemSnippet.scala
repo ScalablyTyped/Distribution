@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaylistItemSnippet extends StObject {
   
   /** The ID that YouTube uses to uniquely identify the user that added the item to the playlist. */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /** Channel title for the channel that the playlist item belongs to. */
-  var channelTitle: js.UndefOr[String] = js.native
+  var channelTitle: js.UndefOr[String] = js.undefined
   
   /** The item's description. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The ID that YouTube uses to uniquely identify thGe playlist that the playlist item is in. */
-  var playlistId: js.UndefOr[String] = js.native
+  var playlistId: js.UndefOr[String] = js.undefined
   
   /** The order in which the item appears in the playlist. The value uses a zero-based index, so the first item has a position of 0, the second item has a position of 1, and so forth. */
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
   
   /** The date and time that the item was added to the playlist. The value is specified in ISO 8601 format. */
-  var publishedAt: js.UndefOr[String] = js.native
+  var publishedAt: js.UndefOr[String] = js.undefined
   
   /** The id object contains information that can be used to uniquely identify the resource that is included in the playlist as the playlist item. */
-  var resourceId: js.UndefOr[ResourceId] = js.native
+  var resourceId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * A map of thumbnail images associated with the playlist item. For each object in the map, the key is the name of the thumbnail image, and the value is an object that contains other
     * information about the thumbnail.
     */
-  var thumbnails: js.UndefOr[ThumbnailDetails] = js.native
+  var thumbnails: js.UndefOr[ThumbnailDetails] = js.undefined
   
   /** The item's title. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PlaylistItemSnippet {
   

@@ -3,13 +3,11 @@ package typings.gestalt.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Style extends StObject {
   
-  var __style: StringDictionary[js.UndefOr[String | Double]] = js.native
+  var __style: StringDictionary[js.UndefOr[String | Double]]
 }
 object Style {
   

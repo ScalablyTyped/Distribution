@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynamicSegment extends StObject {
   
   /** The name of the dynamic segment. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Session Segment to select sessions to include in the segment. */
-  var sessionSegment: js.UndefOr[SegmentDefinition] = js.native
+  var sessionSegment: js.UndefOr[SegmentDefinition] = js.undefined
   
   /** User Segment to select users to include in the segment. */
-  var userSegment: js.UndefOr[SegmentDefinition] = js.native
+  var userSegment: js.UndefOr[SegmentDefinition] = js.undefined
 }
 object DynamicSegment {
   

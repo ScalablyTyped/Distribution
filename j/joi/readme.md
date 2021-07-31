@@ -10,9 +10,9 @@ Object schema validation
 | ------------------ | :-------------: |
 | Full name          | joi |
 | Keywords           | schema, validation |
-| # releases         | 10 |
-| # dependents       | 3554 |
-| # downloads        | 100722527 |
+| # releases         | 4 |
+| # dependents       | 3779 |
+| # downloads        | 107506291 |
 | # stars            | 281 |
 
 ## Links

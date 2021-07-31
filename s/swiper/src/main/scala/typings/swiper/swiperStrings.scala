@@ -8,7 +8,6 @@ import typings.swiper.mod.PaginationEvent
 import typings.swiper.mod.SwiperEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swiperStrings {
@@ -20,35 +19,40 @@ object swiperStrings {
   
   @js.native
   sealed trait autoplay
-    extends AutoplayEvent
+    extends StObject
+       with AutoplayEvent
        with SwiperEvent
   @scala.inline
   def autoplay: autoplay = "autoplay".asInstanceOf[autoplay]
   
   @js.native
   sealed trait autoplayStart
-    extends AutoplayEvent
+    extends StObject
+       with AutoplayEvent
        with SwiperEvent
   @scala.inline
   def autoplayStart: autoplayStart = "autoplayStart".asInstanceOf[autoplayStart]
   
   @js.native
   sealed trait autoplayStop
-    extends AutoplayEvent
+    extends StObject
+       with AutoplayEvent
        with SwiperEvent
   @scala.inline
   def autoplayStop: autoplayStop = "autoplayStop".asInstanceOf[autoplayStop]
   
   @js.native
   sealed trait beforeDestroy
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def beforeDestroy: beforeDestroy = "beforeDestroy".asInstanceOf[beforeDestroy]
   
   @js.native
   sealed trait beforeLoopFix
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def beforeLoopFix: beforeLoopFix = "beforeLoopFix".asInstanceOf[beforeLoopFix]
@@ -60,7 +64,8 @@ object swiperStrings {
   
   @js.native
   sealed trait click
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def click: click = "click".asInstanceOf[click]
@@ -92,7 +97,8 @@ object swiperStrings {
   
   @js.native
   sealed trait doubleTap
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def doubleTap: doubleTap = "doubleTap".asInstanceOf[doubleTap]
@@ -114,21 +120,24 @@ object swiperStrings {
   
   @js.native
   sealed trait fromEdge
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def fromEdge: fromEdge = "fromEdge".asInstanceOf[fromEdge]
   
   @js.native
   sealed trait hashChange
-    extends HashNavigationEvent
+    extends StObject
+       with HashNavigationEvent
        with SwiperEvent
   @scala.inline
   def hashChange: hashChange = "hashChange".asInstanceOf[hashChange]
   
   @js.native
   sealed trait hashSet
-    extends HashNavigationEvent
+    extends StObject
+       with HashNavigationEvent
        with SwiperEvent
   @scala.inline
   def hashSet: hashSet = "hashSet".asInstanceOf[hashSet]
@@ -140,63 +149,72 @@ object swiperStrings {
   
   @js.native
   sealed trait imagesReady
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def imagesReady: imagesReady = "imagesReady".asInstanceOf[imagesReady]
   
   @js.native
   sealed trait init
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def init: init = "init".asInstanceOf[init]
   
   @js.native
   sealed trait lazyImageLoad
-    extends LazyLoadingEvent
+    extends StObject
+       with LazyLoadingEvent
        with SwiperEvent
   @scala.inline
   def lazyImageLoad: lazyImageLoad = "lazyImageLoad".asInstanceOf[lazyImageLoad]
   
   @js.native
   sealed trait lazyImageReady
-    extends LazyLoadingEvent
+    extends StObject
+       with LazyLoadingEvent
        with SwiperEvent
   @scala.inline
   def lazyImageReady: lazyImageReady = "lazyImageReady".asInstanceOf[lazyImageReady]
   
   @js.native
   sealed trait loopFix
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def loopFix: loopFix = "loopFix".asInstanceOf[loopFix]
   
   @js.native
   sealed trait observerUpdate
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def observerUpdate: observerUpdate = "observerUpdate".asInstanceOf[observerUpdate]
   
   @js.native
   sealed trait paginationRender
-    extends PaginationEvent
+    extends StObject
+       with PaginationEvent
        with SwiperEvent
   @scala.inline
   def paginationRender: paginationRender = "paginationRender".asInstanceOf[paginationRender]
   
   @js.native
   sealed trait paginationUpdate
-    extends PaginationEvent
+    extends StObject
+       with PaginationEvent
        with SwiperEvent
   @scala.inline
   def paginationUpdate: paginationUpdate = "paginationUpdate".asInstanceOf[paginationUpdate]
   
   @js.native
   sealed trait progress
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
@@ -208,21 +226,24 @@ object swiperStrings {
   
   @js.native
   sealed trait reachBeginning
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def reachBeginning: reachBeginning = "reachBeginning".asInstanceOf[reachBeginning]
   
   @js.native
   sealed trait reachEnd
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def reachEnd: reachEnd = "reachEnd".asInstanceOf[reachEnd]
   
   @js.native
   sealed trait resize
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
@@ -234,14 +255,16 @@ object swiperStrings {
   
   @js.native
   sealed trait setTransition
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def setTransition: setTransition = "setTransition".asInstanceOf[setTransition]
   
   @js.native
   sealed trait setTranslate
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def setTranslate: setTranslate = "setTranslate".asInstanceOf[setTranslate]
@@ -253,105 +276,120 @@ object swiperStrings {
   
   @js.native
   sealed trait slideChange
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def slideChange: slideChange = "slideChange".asInstanceOf[slideChange]
   
   @js.native
   sealed trait slideChangeTransitionEnd
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def slideChangeTransitionEnd: slideChangeTransitionEnd = "slideChangeTransitionEnd".asInstanceOf[slideChangeTransitionEnd]
   
   @js.native
   sealed trait slideChangeTransitionStart
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def slideChangeTransitionStart: slideChangeTransitionStart = "slideChangeTransitionStart".asInstanceOf[slideChangeTransitionStart]
   
   @js.native
   sealed trait slideNextTransitionEnd
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def slideNextTransitionEnd: slideNextTransitionEnd = "slideNextTransitionEnd".asInstanceOf[slideNextTransitionEnd]
   
   @js.native
   sealed trait slideNextTransitionStart
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def slideNextTransitionStart: slideNextTransitionStart = "slideNextTransitionStart".asInstanceOf[slideNextTransitionStart]
   
   @js.native
   sealed trait slidePrevTransitionEnd
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def slidePrevTransitionEnd: slidePrevTransitionEnd = "slidePrevTransitionEnd".asInstanceOf[slidePrevTransitionEnd]
   
   @js.native
   sealed trait slidePrevTransitionStart
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def slidePrevTransitionStart: slidePrevTransitionStart = "slidePrevTransitionStart".asInstanceOf[slidePrevTransitionStart]
   
   @js.native
   sealed trait sliderMove
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def sliderMove: sliderMove = "sliderMove".asInstanceOf[sliderMove]
   
   @js.native
   sealed trait tap
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def tap: tap = "tap".asInstanceOf[tap]
   
   @js.native
   sealed trait touchEnd
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def touchEnd: touchEnd = "touchEnd".asInstanceOf[touchEnd]
   
   @js.native
   sealed trait touchMove
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def touchMove: touchMove = "touchMove".asInstanceOf[touchMove]
   
   @js.native
   sealed trait touchMoveOpposite
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def touchMoveOpposite: touchMoveOpposite = "touchMoveOpposite".asInstanceOf[touchMoveOpposite]
   
   @js.native
   sealed trait touchStart
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def touchStart: touchStart = "touchStart".asInstanceOf[touchStart]
   
   @js.native
   sealed trait transitionEnd
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def transitionEnd: transitionEnd = "transitionEnd".asInstanceOf[transitionEnd]
   
   @js.native
   sealed trait transitionStart
-    extends CommonEvent
+    extends StObject
+       with CommonEvent
        with SwiperEvent
   @scala.inline
   def transitionStart: transitionStart = "transitionStart".asInstanceOf[transitionStart]

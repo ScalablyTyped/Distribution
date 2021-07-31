@@ -2,10 +2,8 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScalingOptions extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ScalingOptions extends StObject {
     *
     * @default `undefined`
     */
-  var customResizer: js.UndefOr[CustomResizerCallBack] = js.native
+  var customResizer: js.UndefOr[CustomResizerCallBack] = js.undefined
   
   /**
     * A value between `1` and `100` that describes the requested quality of scaled images.
@@ -25,7 +23,7 @@ trait ScalingOptions extends StObject {
     *
     * @default `80`
     */
-  var defaultQuality: js.UndefOr[Double] = js.native
+  var defaultQuality: js.UndefOr[Double] = js.undefined
   
   /**
     * Scaled images will assume this image type if you don't specify a specific type in your size object, or if the type specified in the size object is not valid.
@@ -37,42 +35,42 @@ trait ScalingOptions extends StObject {
     *
     * @default `null`
     */
-  var defaultType: js.UndefOr[String] = js.native
+  var defaultType: js.UndefOr[String] = js.undefined
   
   /**
     * Text sent to your `complete` event handler as an `error` property of the `response` param if a scaled image could not be generated
     *
     * @default `'failed to scale'`
     */
-  var failureText: js.UndefOr[String] = js.native
+  var failureText: js.UndefOr[String] = js.undefined
   
   /**
     * Ensure the `EXIF` data from the reference image is inserted into the scaled image. Only applicable when both the reference and the target are type `image/jpeg`
     *
     * @default `false`
     */
-  var includeExif: js.UndefOr[Boolean] = js.native
+  var includeExif: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set this to `false` if you do not want scaled images to be re-oriented based on parsed `EXIF` data before they are uploaded
     *
     * @default `true`
     */
-  var orient: js.UndefOr[Boolean] = js.native
+  var orient: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set this to `false` if you don't want to original file to be uploaded as well
     *
     * @default `true`
     */
-  var sendOriginal: js.UndefOr[Boolean] = js.native
+  var sendOriginal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array containing size objects that describe scaled versions of each submitted image that should be generated and uploaded
     *
     * @default `[]`
     */
-  var sizes: js.UndefOr[SizeOptions] = js.native
+  var sizes: js.UndefOr[SizeOptions] = js.undefined
 }
 object ScalingOptions {
   

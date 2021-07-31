@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `updateBatch` operation. */
@@ -16,15 +15,19 @@ object UpdateBatchConstants {
   object Action extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Action with String] = js.native
+    def apply(value: String): js.UndefOr[Action & String] = js.native
     
     @js.native
-    sealed trait CANCEL extends Action
-    /* "cancel" */ val CANCEL: typings.watsonDeveloperCloud.compareComplyV1Mod.UpdateBatchConstants.Action.CANCEL with String = js.native
+    sealed trait CANCEL
+      extends StObject
+         with Action
+    /* "cancel" */ val CANCEL: typings.watsonDeveloperCloud.compareComplyV1Mod.UpdateBatchConstants.Action.CANCEL & String = js.native
     
     @js.native
-    sealed trait RESCAN extends Action
-    /* "rescan" */ val RESCAN: typings.watsonDeveloperCloud.compareComplyV1Mod.UpdateBatchConstants.Action.RESCAN with String = js.native
+    sealed trait RESCAN
+      extends StObject
+         with Action
+    /* "rescan" */ val RESCAN: typings.watsonDeveloperCloud.compareComplyV1Mod.UpdateBatchConstants.Action.RESCAN & String = js.native
   }
   
   @js.native
@@ -35,14 +38,18 @@ object UpdateBatchConstants {
   object Model extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Model with String] = js.native
+    def apply(value: String): js.UndefOr[Model & String] = js.native
     
     @js.native
-    sealed trait CONTRACTS extends Model
-    /* "contracts" */ val CONTRACTS: typings.watsonDeveloperCloud.compareComplyV1Mod.UpdateBatchConstants.Model.CONTRACTS with String = js.native
+    sealed trait CONTRACTS
+      extends StObject
+         with Model
+    /* "contracts" */ val CONTRACTS: typings.watsonDeveloperCloud.compareComplyV1Mod.UpdateBatchConstants.Model.CONTRACTS & String = js.native
     
     @js.native
-    sealed trait TABLES extends Model
-    /* "tables" */ val TABLES: typings.watsonDeveloperCloud.compareComplyV1Mod.UpdateBatchConstants.Model.TABLES with String = js.native
+    sealed trait TABLES
+      extends StObject
+         with Model
+    /* "tables" */ val TABLES: typings.watsonDeveloperCloud.compareComplyV1Mod.UpdateBatchConstants.Model.TABLES & String = js.native
   }
 }

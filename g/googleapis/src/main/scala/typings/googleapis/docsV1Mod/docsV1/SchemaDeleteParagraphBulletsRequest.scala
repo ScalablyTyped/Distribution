@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * range.  The nesting level of each paragraph will be visually preserved by
   * adding indent to the start of the corresponding paragraph.
   */
-@js.native
 trait SchemaDeleteParagraphBulletsRequest extends StObject {
   
   /**
     * The range to delete bullets from.
     */
-  var range: js.UndefOr[SchemaRange] = js.native
+  var range: js.UndefOr[SchemaRange] = js.undefined
 }
 object SchemaDeleteParagraphBulletsRequest {
   

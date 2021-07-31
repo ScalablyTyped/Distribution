@@ -2,19 +2,17 @@ package typings.chance.Chance
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreditCardType extends StObject {
   
-  var length: Double = js.native
+  var length: Double
   
-  var name: String = js.native
+  var name: String
   
-  var prefix: String = js.native
+  var prefix: String
   
-  var short_name: String = js.native
+  var short_name: String
 }
 object CreditCardType {
   

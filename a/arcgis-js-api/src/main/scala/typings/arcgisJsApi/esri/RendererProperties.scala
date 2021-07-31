@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RendererProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait RendererProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html#authoringInfo)
     */
-  var authoringInfo: js.UndefOr[AuthoringInfoProperties] = js.native
+  var authoringInfo: js.UndefOr[AuthoringInfoProperties] = js.undefined
 }
 object RendererProperties {
   

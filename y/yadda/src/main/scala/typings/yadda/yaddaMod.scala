@@ -6,14 +6,15 @@ import typings.yadda.libMod.Scenario
 import typings.yadda.libMod.Step
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yaddaMod {
   
   @JSImport("yadda/lib/Yadda", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Yadda {
+  class ^ protected ()
+    extends StObject
+       with Yadda {
     def this(libraries: js.Array[typings.yadda.libraryMod.^]) = this()
     def this(libraries: typings.yadda.libraryMod.^) = this()
     def this(libraries: js.Array[typings.yadda.libraryMod.^], interpreter_context: Properties) = this()

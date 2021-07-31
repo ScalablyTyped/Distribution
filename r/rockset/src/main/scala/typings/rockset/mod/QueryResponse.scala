@@ -2,23 +2,21 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryResponse extends StObject {
   
   // meta information about each column in the result set
-  var column_fields: js.UndefOr[js.Array[QueryFieldType]] = js.native
+  var column_fields: js.UndefOr[js.Array[QueryFieldType]] = js.undefined
   
   // list of fields returned by the query
-  var fields: js.UndefOr[js.Array[QueryFieldType]] = js.native
+  var fields: js.UndefOr[js.Array[QueryFieldType]] = js.undefined
   
   // list of objects returned by the query
-  var results: js.UndefOr[js.Array[js.Object]] = js.native
+  var results: js.UndefOr[js.Array[js.Object]] = js.undefined
   
   // meta information about the query
-  var stats: js.UndefOr[QueryResponseStats] = js.native
+  var stats: js.UndefOr[QueryResponseStats] = js.undefined
 }
 object QueryResponse {
   

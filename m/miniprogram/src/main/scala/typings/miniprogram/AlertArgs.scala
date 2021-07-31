@@ -2,26 +2,26 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AlertArgs extends AsyncCallback[Unit] {
+trait AlertArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
   /**
     * Button text, which is OK by default.
     */
-  var buttonText: js.UndefOr[String] = js.native
+  var buttonText: js.UndefOr[String] = js.undefined
   
   /**
     * Contents of the alert box.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * Title of the alert box.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object AlertArgs {
   

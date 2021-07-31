@@ -3,23 +3,21 @@ package typings.pkgcloud.mod
 import typings.pkgcloud.pkgcloudStrings.google
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleProviderOptions extends StObject {
   
-  var keyFilename: String = js.native
+  var keyFilename: String
   
-  var projectId: String = js.native
+  var projectId: String
   
-  var provider: google = js.native
+  var provider: google
 }
 object GoogleProviderOptions {
   
   @scala.inline
-  def apply(keyFilename: String, projectId: String, provider: google): GoogleProviderOptions = {
-    val __obj = js.Dynamic.literal(keyFilename = keyFilename.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
+  def apply(keyFilename: String, projectId: String): GoogleProviderOptions = {
+    val __obj = js.Dynamic.literal(keyFilename = keyFilename.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], provider = "google")
     __obj.asInstanceOf[GoogleProviderOptions]
   }
   

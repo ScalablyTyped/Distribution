@@ -4,7 +4,6 @@ import typings.msRestAzure.mod.CloudErrorParameters
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lockModelsMod {
@@ -22,7 +21,9 @@ object lockModelsMod {
   }
   
   @js.native
-  trait ManagementLockListResult extends Array[ManagementLockObject] {
+  trait ManagementLockListResult
+    extends StObject
+       with Array[ManagementLockObject] {
     
     /**
       * The URL to use for getting the next set of results.
@@ -68,13 +69,12 @@ object lockModelsMod {
     val `type`: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait ManagementLockOwner extends StObject {
     
     /**
       * The application ID of the lock owner.
       */
-    var applicationId: js.UndefOr[String] = js.native
+    var applicationId: js.UndefOr[String] = js.undefined
   }
   object ManagementLockOwner {
     
@@ -95,18 +95,17 @@ object lockModelsMod {
     }
   }
   
-  @js.native
   trait Operation extends StObject {
     
     /**
       * The object that represents the operation.
       */
-    var display: js.UndefOr[OperationDisplay] = js.native
+    var display: js.UndefOr[OperationDisplay] = js.undefined
     
     /**
       * Operation name: {provider}/{resource}/{operation}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Operation {
     
@@ -133,23 +132,22 @@ object lockModelsMod {
     }
   }
   
-  @js.native
   trait OperationDisplay extends StObject {
     
     /**
       * Operation type: Read, write, delete, etc.
       */
-    var operation: js.UndefOr[String] = js.native
+    var operation: js.UndefOr[String] = js.undefined
     
     /**
       * Service provider: Microsoft.Authorization
       */
-    var provider: js.UndefOr[String] = js.native
+    var provider: js.UndefOr[String] = js.undefined
     
     /**
       * Resource on which the operation is performed: Profile, endpoint, etc.
       */
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
   }
   object OperationDisplay {
     
@@ -183,7 +181,9 @@ object lockModelsMod {
   }
   
   @js.native
-  trait OperationListResult extends Array[Operation] {
+  trait OperationListResult
+    extends StObject
+       with Array[Operation] {
     
     /**
       * URL to get the next set of operation list results if there are any.

@@ -2,81 +2,79 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostReservation extends StObject {
   
   /**
     * The number of Dedicated Hosts the reservation is associated with.
     */
-  var Count: js.UndefOr[Integer] = js.native
+  var Count: js.UndefOr[Integer] = js.undefined
   
   /**
     * The currency in which the upfrontPrice and hourlyPrice amounts are specified. At this time, the only supported currency is USD.
     */
-  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.native
+  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.undefined
   
   /**
     * The length of the reservation's term, specified in seconds. Can be 31536000 (1 year) | 94608000 (3 years).
     */
-  var Duration: js.UndefOr[Integer] = js.native
+  var Duration: js.UndefOr[Integer] = js.undefined
   
   /**
     * The date and time that the reservation ends.
     */
-  var End: js.UndefOr[DateTime] = js.native
+  var End: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The IDs of the Dedicated Hosts associated with the reservation.
     */
-  var HostIdSet: js.UndefOr[ResponseHostIdSet] = js.native
+  var HostIdSet: js.UndefOr[ResponseHostIdSet] = js.undefined
   
   /**
     * The ID of the reservation that specifies the associated Dedicated Hosts.
     */
-  var HostReservationId: js.UndefOr[String] = js.native
+  var HostReservationId: js.UndefOr[String] = js.undefined
   
   /**
     * The hourly price of the reservation.
     */
-  var HourlyPrice: js.UndefOr[String] = js.native
+  var HourlyPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The instance family of the Dedicated Host Reservation. The instance family on the Dedicated Host must be the same in order for it to benefit from the reservation.
     */
-  var InstanceFamily: js.UndefOr[String] = js.native
+  var InstanceFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the reservation. This remains the same regardless of which Dedicated Hosts are associated with it.
     */
-  var OfferingId: js.UndefOr[String] = js.native
+  var OfferingId: js.UndefOr[String] = js.undefined
   
   /**
     * The payment option selected for this reservation.
     */
-  var PaymentOption: js.UndefOr[typings.awsSdk.ec2Mod.PaymentOption] = js.native
+  var PaymentOption: js.UndefOr[typings.awsSdk.ec2Mod.PaymentOption] = js.undefined
   
   /**
     * The date and time that the reservation started.
     */
-  var Start: js.UndefOr[DateTime] = js.native
+  var Start: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The state of the reservation.
     */
-  var State: js.UndefOr[ReservationState] = js.native
+  var State: js.UndefOr[ReservationState] = js.undefined
   
   /**
     * Any tags assigned to the Dedicated Host Reservation.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The upfront price of the reservation.
     */
-  var UpfrontPrice: js.UndefOr[String] = js.native
+  var UpfrontPrice: js.UndefOr[String] = js.undefined
 }
 object HostReservation {
   

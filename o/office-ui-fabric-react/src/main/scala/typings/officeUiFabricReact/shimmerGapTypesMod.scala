@@ -10,45 +10,44 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shimmerGapTypesMod {
   
-  @js.native
   trait IShimmerGap extends StObject
   
-  @js.native
-  trait IShimmerGapProps extends AllHTMLAttributes[HTMLElement] {
+  trait IShimmerGapProps
+    extends StObject
+       with AllHTMLAttributes[HTMLElement] {
     
     /**
       * Use to set custom styling of the shimmerGap borders.
       * @deprecated Use `styles` prop to leverage mergeStyle API.
       */
-    var borderStyle: js.UndefOr[IRawStyle] = js.native
+    var borderStyle: js.UndefOr[IRawStyle] = js.undefined
     
     /**
       * Optional callback to access the IShimmerGap interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IShimmerGap]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IShimmerGap]] = js.undefined
     
     /**
       * Sets the height of the gap.
       * @defaultvalue 16px
       */
     @JSName("height")
-    var height_IShimmerGapProps: js.UndefOr[Double] = js.native
+    var height_IShimmerGapProps: js.UndefOr[Double] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IShimmerGapStyleProps, IShimmerGapStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IShimmerGapStyleProps, IShimmerGapStyles]] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IShimmerGapProps {
     
@@ -99,24 +98,23 @@ object shimmerGapTypesMod {
     }
   }
   
-  @js.native
   trait IShimmerGapStyleProps extends StObject {
     
     /**
       * Styles to override borderStyles with custom ones.
       * @deprecated in favor of mergeStyles API.
       */
-    var borderStyle: js.UndefOr[IRawStyle] = js.native
+    var borderStyle: js.UndefOr[IRawStyle] = js.undefined
     
     /**
       * Needed to provide a height to the root of the control.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Theme values passed to the component.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IShimmerGapStyleProps {
     
@@ -146,13 +144,12 @@ object shimmerGapTypesMod {
     }
   }
   
-  @js.native
   trait IShimmerGapStyles extends StObject {
     
     /**
       * Root of the ShimmerGap component.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
   }
   object IShimmerGapStyles {
     

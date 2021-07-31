@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientPopupControlBase.Resize event.
   */
-@js.native
-trait ASPxClientPopupWindowResizeEventArgs extends ASPxClientPopupWindowEventArgs {
+trait ASPxClientPopupWindowResizeEventArgs
+  extends StObject
+     with ASPxClientPopupWindowEventArgs {
   
   /**
     * Returns the value indicating the window state after resizing.
     */
-  var resizeState: Double = js.native
+  var resizeState: Double
 }
 object ASPxClientPopupWindowResizeEventArgs {
   

@@ -2,24 +2,22 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a price and a pricing type for a product / deal.
   */
-@js.native
 trait SchemaPrice extends StObject {
   
   /**
     * The actual price with currency specified.
     */
-  var amount: js.UndefOr[SchemaMoney] = js.native
+  var amount: js.UndefOr[SchemaMoney] = js.undefined
   
   /**
     * The pricing type for the deal/product. (default: CPM)
     */
-  var pricingType: js.UndefOr[String] = js.native
+  var pricingType: js.UndefOr[String] = js.undefined
 }
 object SchemaPrice {
   

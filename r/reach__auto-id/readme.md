@@ -10,9 +10,9 @@ Autogenerate IDs to facilitate WAI-ARIA and server rendering.
 | ------------------ | :-------------: |
 | Full name          | @reach/auto-id |
 | Keywords           | - |
-| # releases         | 28 |
-| # dependents       | 55 |
-| # downloads        | 6750531 |
+| # releases         | 33 |
+| # dependents       | 80 |
+| # downloads        | 13329132 |
 | # stars            | 0 |
 
 ## Links

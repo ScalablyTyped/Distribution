@@ -3,11 +3,11 @@ package typings.winrt.Windows.Networking.NetworkOperators
 import typings.winrt.Windows.Networking.Connectivity.NetworkAdapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MobileBroadbandNetwork extends IMobileBroadbandNetwork
+trait MobileBroadbandNetwork
+  extends StObject
+     with IMobileBroadbandNetwork
 object MobileBroadbandNetwork {
   
   @scala.inline

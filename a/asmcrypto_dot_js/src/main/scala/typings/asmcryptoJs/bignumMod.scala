@@ -14,7 +14,6 @@ import typings.std.Uint32ArrayConstructor
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bignumMod {
@@ -84,27 +83,22 @@ object bignumMod {
     @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "BigNumber.extGCD")
     @js.native
     def extGCD: js.Function2[/* a */ this.type, /* b */ this.type, Gcd] = js.native
-    @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "BigNumber.extGCD")
-    @js.native
-    def extGCD(a: this.type, b: this.type): Gcd = js.native
+    @scala.inline
+    def extGCD(a: this.type, b: this.type): Gcd = (^.asInstanceOf[js.Dynamic].applyDynamic("extGCD")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Gcd]
     @scala.inline
     def extGCD_=(x: js.Function2[/* a */ this.type, /* b */ this.type, Gcd]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extGCD")(x.asInstanceOf[js.Any])
     
-    @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "BigNumber.fromArrayBuffer")
-    @js.native
-    def fromArrayBuffer(buffer: ArrayBuffer): BigNumber = js.native
+    @scala.inline
+    def fromArrayBuffer(buffer: ArrayBuffer): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
     
-    @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "BigNumber.fromConfig")
-    @js.native
-    def fromConfig(obj: BitLength): BigNumber = js.native
+    @scala.inline
+    def fromConfig(obj: BitLength): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
     
-    @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "BigNumber.fromNumber")
-    @js.native
-    def fromNumber(num: Double): BigNumber = js.native
+    @scala.inline
+    def fromNumber(num: Double): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(num.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
     
-    @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "BigNumber.fromString")
-    @js.native
-    def fromString(str: String): BigNumber = js.native
+    @scala.inline
+    def fromString(str: String): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
   }
   
   @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "Modulus")
@@ -138,9 +132,12 @@ object bignumMod {
   /* static members */
   object Modulus {
     
-    @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "Modulus._Montgomery_reduce")
+    @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "Modulus")
     @js.native
-    def _Montgomery_reduce(a: BigNumber, n: Modulus): BigNumber = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def _Montgomery_reduce(a: BigNumber, n: Modulus): BigNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("_Montgomery_reduce")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[BigNumber]
   }
   
   @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "_bigint_asm")
@@ -170,14 +167,15 @@ object bignumMod {
     @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "_bigint_stdlib.Uint32Array")
     @js.native
     class Uint32Array ()
-      extends typings.std.Uint32Array {
+      extends StObject
+         with typings.std.Uint32Array {
       def this(array: ArrayBufferLike) = this()
       def this(array: ArrayLike[Double]) = this()
       def this(elements: Iterable[Double]) = this()
       def this(length: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
-      def this(buffer: ArrayBufferLike, byteOffset: js.UndefOr[scala.Nothing], length: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
+      def this(buffer: ArrayBufferLike, byteOffset: Unit, length: Double) = this()
     }
     @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "_bigint_stdlib.Uint32Array")
     @js.native

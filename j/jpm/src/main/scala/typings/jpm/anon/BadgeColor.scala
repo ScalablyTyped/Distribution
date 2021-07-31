@@ -4,29 +4,27 @@ import typings.jpm.FFAddonSDK.Icon
 import typings.jpm.FFAddonSDK.ToggleButtonState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BadgeColor extends StObject {
   
-  var badge: js.UndefOr[String | Double] = js.native
+  var badge: js.UndefOr[String | Double] = js.undefined
   
-  var badgeColor: js.UndefOr[String] = js.native
+  var badgeColor: js.UndefOr[String] = js.undefined
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var icon: Icon = js.native
+  var icon: Icon
   
-  var id: String = js.native
+  var id: String
   
-  var label: String = js.native
+  var label: String
   
-  var onChange: js.UndefOr[js.Function1[/* state */ ToggleButtonState, _]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* state */ ToggleButtonState, js.Any]] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* state */ ToggleButtonState, _]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* state */ ToggleButtonState, js.Any]] = js.undefined
 }
 object BadgeColor {
   
@@ -73,13 +71,13 @@ object BadgeColor {
     def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnChange(value: /* state */ ToggleButtonState => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    def setOnChange(value: /* state */ ToggleButtonState => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setOnClick(value: /* state */ ToggleButtonState => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: /* state */ ToggleButtonState => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

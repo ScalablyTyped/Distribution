@@ -2,21 +2,19 @@ package typings.jsforce.describeResultMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PicklistEntry extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var defaultValue: Boolean = js.native
+  var defaultValue: Boolean
   
-  var label: js.UndefOr[maybe[String]] = js.native
+  var label: js.UndefOr[maybe[String]] = js.undefined
   
-  var validFor: js.UndefOr[maybe[String]] = js.native
+  var validFor: js.UndefOr[maybe[String]] = js.undefined
   
-  var value: String = js.native
+  var value: String
 }
 object PicklistEntry {
   

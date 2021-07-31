@@ -2,25 +2,23 @@ package typings.useMediaAntdQuery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Lg extends StObject {
     
-    var lg: MaxWidth = js.native
+    var lg: MaxWidth
     
-    var md: MaxWidth = js.native
+    var md: MaxWidth
     
-    var sm: MaxWidth = js.native
+    var sm: MaxWidth
     
-    var xl: MaxWidth = js.native
+    var xl: MaxWidth
     
-    var xs: MatchMedia = js.native
+    var xs: MatchMedia
     
-    var xxl: MinWidth = js.native
+    var xxl: MinWidth
   }
   object Lg {
     
@@ -53,12 +51,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MatchMedia extends StObject {
     
-    var matchMedia: String = js.native
+    var matchMedia: String
     
-    var maxWidth: Double = js.native
+    var maxWidth: Double
   }
   object MatchMedia {
     
@@ -79,14 +76,13 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxWidth extends StObject {
     
-    var matchMedia: String = js.native
+    var matchMedia: String
     
-    var maxWidth: Double = js.native
+    var maxWidth: Double
     
-    var minWidth: Double = js.native
+    var minWidth: Double
   }
   object MaxWidth {
     
@@ -110,12 +106,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MinWidth extends StObject {
     
-    var matchMedia: String = js.native
+    var matchMedia: String
     
-    var minWidth: Double = js.native
+    var minWidth: Double
   }
   object MinWidth {
     

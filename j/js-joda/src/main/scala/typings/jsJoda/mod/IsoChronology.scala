@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "IsoChronology")
@@ -15,8 +14,11 @@ abstract class IsoChronology protected () extends StObject {
 }
 object IsoChronology {
   
-  /* static member */
-  @JSImport("js-joda", "IsoChronology.isLeapYear")
+  @JSImport("js-joda", "IsoChronology")
   @js.native
-  def isLeapYear(prolepticYear: Double): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def isLeapYear(prolepticYear: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(prolepticYear.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

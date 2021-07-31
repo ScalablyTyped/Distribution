@@ -8,63 +8,63 @@ import typings.reactMdForm.formThemeProviderMod.FormThemeOptions
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textFieldContainerMod {
   
   @JSImport("@react-md/form/types/text-field/TextFieldContainer", "TextFieldContainer")
   @js.native
-  val TextFieldContainer: ForwardRefExoticComponent[TextFieldContainerProps with RefAttributes[HTMLDivElement]] = js.native
+  val TextFieldContainer: ForwardRefExoticComponent[TextFieldContainerProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
-  trait TextFieldContainerOptions extends FormThemeOptions {
+  trait TextFieldContainerOptions
+    extends StObject
+       with FormThemeOptions {
     
     /**
       * Boolean if the form components should be using the `dense` spec to reduce
       * the sizing slightly.
       */
-    var dense: js.UndefOr[Boolean] = js.native
+    var dense: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the text field should gain the error state and update the
       * colors.
       */
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the component should be rendered inline with
       * `display: inline-flex` instead of `display: flex`.
       */
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the left children should be wrapped in the `TextFieldAddon`
       * component. This is enabled by default since this is _normally_ the behavior
       * that is desired so that icons can be positioned correctly.
       */
-    var isLeftAddon: js.UndefOr[Boolean] = js.native
+    var isLeftAddon: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the right children should be wrapped in the `TextFieldAddon`
       * component. This is enabled by default since this is _normally_ the behavior
       * that is desired so that icons can be positioned correctly.
       */
-    var isRightAddon: js.UndefOr[Boolean] = js.native
+    var isRightAddon: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional addon to apply to the left of the text field. This should
       * normally be an icon. This element will not have pointer events so it can be
       * "clicked through" to focus the text field instead.
       */
-    var leftChildren: js.UndefOr[ReactNode] = js.native
+    var leftChildren: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * An optional addon to apply to the right of the text field. This should be a
       * clickable button such as a password field toggle or a reset button for the
       * field.
       */
-    var rightChildren: js.UndefOr[ReactNode] = js.native
+    var rightChildren: js.UndefOr[ReactNode] = js.undefined
   }
   object TextFieldContainerOptions {
     
@@ -121,26 +121,26 @@ object textFieldContainerMod {
     }
   }
   
-  @js.native
   trait TextFieldContainerProps
-    extends HTMLAttributes[HTMLDivElement]
-       with TextFieldContainerOptions {
+    extends StObject
+       with TextFieldContainerOptions
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Boolean if the text field is currently active (focused) to applied the
       * active color to the current theme.
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the text field is currently disabled.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if there is a floating label with the text field.
       */
-    var label: js.UndefOr[Boolean] = js.native
+    var label: js.UndefOr[Boolean] = js.undefined
   }
   object TextFieldContainerProps {
     

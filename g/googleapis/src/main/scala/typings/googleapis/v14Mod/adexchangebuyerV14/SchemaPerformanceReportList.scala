@@ -2,24 +2,22 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The configuration data for an Ad Exchange performance report list.
   */
-@js.native
 trait SchemaPerformanceReportList extends StObject {
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A list of performance reports relevant for the account.
     */
-  var performanceReport: js.UndefOr[js.Array[SchemaPerformanceReport]] = js.native
+  var performanceReport: js.UndefOr[js.Array[SchemaPerformanceReport]] = js.undefined
 }
 object SchemaPerformanceReportList {
   

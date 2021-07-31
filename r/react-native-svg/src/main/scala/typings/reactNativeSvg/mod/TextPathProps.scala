@@ -2,23 +2,23 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextPathProps extends TextSpecificProps {
+trait TextPathProps
+  extends StObject
+     with TextSpecificProps {
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[TextPathMethod] = js.native
+  var method: js.UndefOr[TextPathMethod] = js.undefined
   
-  var midLine: js.UndefOr[TextPathMidLine] = js.native
+  var midLine: js.UndefOr[TextPathMidLine] = js.undefined
   
-  var spacing: js.UndefOr[TextPathSpacing] = js.native
+  var spacing: js.UndefOr[TextPathSpacing] = js.undefined
   
-  var startOffset: js.UndefOr[NumberProp] = js.native
+  var startOffset: js.UndefOr[NumberProp] = js.undefined
   
-  var xlinkHref: js.UndefOr[String] = js.native
+  var xlinkHref: js.UndefOr[String] = js.undefined
 }
 object TextPathProps {
   

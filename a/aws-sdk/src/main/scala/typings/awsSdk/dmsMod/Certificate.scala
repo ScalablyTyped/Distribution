@@ -2,61 +2,59 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Certificate extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the certificate.
     */
-  var CertificateArn: js.UndefOr[String] = js.native
+  var CertificateArn: js.UndefOr[String] = js.undefined
   
   /**
     * The date that the certificate was created.
     */
-  var CertificateCreationDate: js.UndefOr[TStamp] = js.native
+  var CertificateCreationDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * A customer-assigned name for the certificate. Identifiers must begin with a letter and must contain only ASCII letters, digits, and hyphens. They can't end with a hyphen or contain two consecutive hyphens.
     */
-  var CertificateIdentifier: js.UndefOr[String] = js.native
+  var CertificateIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The owner of the certificate.
     */
-  var CertificateOwner: js.UndefOr[String] = js.native
+  var CertificateOwner: js.UndefOr[String] = js.undefined
   
   /**
     * The contents of a .pem file, which contains an X.509 certificate.
     */
-  var CertificatePem: js.UndefOr[String] = js.native
+  var CertificatePem: js.UndefOr[String] = js.undefined
   
   /**
     * The location of an imported Oracle Wallet certificate for use with SSL.
     */
-  var CertificateWallet: js.UndefOr[typings.awsSdk.dmsMod.CertificateWallet] = js.native
+  var CertificateWallet: js.UndefOr[typings.awsSdk.dmsMod.CertificateWallet] = js.undefined
   
   /**
     * The key length of the cryptographic algorithm being used.
     */
-  var KeyLength: js.UndefOr[IntegerOptional] = js.native
+  var KeyLength: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The signing algorithm for the certificate.
     */
-  var SigningAlgorithm: js.UndefOr[String] = js.native
+  var SigningAlgorithm: js.UndefOr[String] = js.undefined
   
   /**
     * The beginning date that the certificate is valid.
     */
-  var ValidFromDate: js.UndefOr[TStamp] = js.native
+  var ValidFromDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The final date that the certificate is valid.
     */
-  var ValidToDate: js.UndefOr[TStamp] = js.native
+  var ValidToDate: js.UndefOr[TStamp] = js.undefined
 }
 object Certificate {
   

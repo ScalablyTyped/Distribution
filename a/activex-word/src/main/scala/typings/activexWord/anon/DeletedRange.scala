@@ -3,17 +3,15 @@ package typings.activexWord.anon
 import typings.activexWord.Word.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletedRange extends StObject {
   
-  val DeletedRange: Range = js.native
+  val DeletedRange: Range
   
-  val InUndoRedo: Boolean = js.native
+  val InUndoRedo: Boolean
   
-  val OldXMLNode: typings.activexWord.Word.XMLNode = js.native
+  val OldXMLNode: typings.activexWord.Word.XMLNode
 }
 object DeletedRange {
   

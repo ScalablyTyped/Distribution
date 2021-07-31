@@ -12,7 +12,7 @@ Authentication module for Nuxt.js
 | Keywords           | - |
 | # releases         | 17 |
 | # dependents       | 12 |
-| # downloads        | 1349300 |
+| # downloads        | 1471058 |
 | # stars            | 0 |
 
 ## Links

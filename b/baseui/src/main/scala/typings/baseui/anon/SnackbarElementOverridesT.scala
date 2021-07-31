@@ -2,44 +2,42 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined baseui.baseui/snackbar.SnackbarElementOverridesT & {  PlacementContainer :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> * / any | undefined} */
-@js.native
 trait SnackbarElementOverridesT extends StObject {
   
   var ActionButtonContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var Content: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var Message: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var PlacementContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var Root: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var Spinner: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var StartEnhancerContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var WrapActionButtonContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.native
+  ] = js.undefined
 }
 object SnackbarElementOverridesT {
   

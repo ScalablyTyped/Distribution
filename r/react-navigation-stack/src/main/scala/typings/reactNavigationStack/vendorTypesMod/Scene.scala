@@ -3,26 +3,24 @@ package typings.reactNavigationStack.vendorTypesMod
 import typings.reactNavigationStack.anon.Current
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scene[T] extends StObject {
   
   /**
     * Descriptor object for the route containing options and navigation object.
     */
-  var descriptor: StackDescriptor = js.native
+  var descriptor: StackDescriptor
   
   /**
     * Animated nodes representing the progress of the animation.
     */
-  var progress: Current = js.native
+  var progress: Current
   
   /**
     * Current route object,
     */
-  var route: T = js.native
+  var route: T
 }
 object Scene {
   
@@ -33,7 +31,7 @@ object Scene {
   }
   
   @scala.inline
-  implicit class SceneMutableBuilder[Self <: Scene[_], T] (val x: Self with Scene[T]) extends AnyVal {
+  implicit class SceneMutableBuilder[Self <: Scene[?], T] (val x: Self & Scene[T]) extends AnyVal {
     
     @scala.inline
     def setDescriptor(value: StackDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])

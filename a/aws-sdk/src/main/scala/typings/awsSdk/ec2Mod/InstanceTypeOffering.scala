@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceTypeOffering extends StObject {
   
   /**
     * The instance type. For more information, see Instance Types in the Amazon Elastic Compute Cloud User Guide.
     */
-  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.native
+  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
   /**
     * The identifier for the location. This depends on the location type. For example, if the location type is region, the location is the Region code (for example, us-east-2.)
     */
-  var Location: js.UndefOr[typings.awsSdk.ec2Mod.Location] = js.native
+  var Location: js.UndefOr[typings.awsSdk.ec2Mod.Location] = js.undefined
   
   /**
     * The location type.
     */
-  var LocationType: js.UndefOr[typings.awsSdk.ec2Mod.LocationType] = js.native
+  var LocationType: js.UndefOr[typings.awsSdk.ec2Mod.LocationType] = js.undefined
 }
 object InstanceTypeOffering {
   

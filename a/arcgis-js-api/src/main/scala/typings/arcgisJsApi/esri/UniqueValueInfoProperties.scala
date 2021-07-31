@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UniqueValueInfoProperties extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait UniqueValueInfoProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#label)
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the symbol used to render features with the provided [value](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#value).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#symbol)
     */
-  var symbol: js.UndefOr[SymbolProperties] = js.native
+  var symbol: js.UndefOr[SymbolProperties] = js.undefined
   
   /**
     * Features with this value will be rendered with the given [symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#symbol).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html#value)
     */
-  var value: js.UndefOr[String | Double] = js.native
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 object UniqueValueInfoProperties {
   

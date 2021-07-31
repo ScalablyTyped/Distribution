@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTemplatePermissionsRequest extends StObject {
   
   /**
     * The ID of the AWS account that contains the template that you're describing.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The ID for the template.
     */
-  var TemplateId: RestrictiveResourceId = js.native
+  var TemplateId: RestrictiveResourceId
 }
 object DescribeTemplatePermissionsRequest {
   

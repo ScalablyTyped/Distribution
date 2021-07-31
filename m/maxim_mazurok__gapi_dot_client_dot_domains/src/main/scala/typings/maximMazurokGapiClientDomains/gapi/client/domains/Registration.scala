@@ -3,64 +3,62 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Registration extends StObject {
   
   /**
     * Required. Settings for contact information linked to the `Registration`. You cannot update these with the `UpdateRegistration` method. To update these settings, use the
     * `ConfigureContactSettings` method.
     */
-  var contactSettings: js.UndefOr[ContactSettings] = js.native
+  var contactSettings: js.UndefOr[ContactSettings] = js.undefined
   
   /** Output only. The creation timestamp of the `Registration` resource. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Settings controlling the DNS configuration of the `Registration`. You cannot update these with the `UpdateRegistration` method. To update these settings, use the
     * `ConfigureDnsSettings` method.
     */
-  var dnsSettings: js.UndefOr[DnsSettings] = js.native
+  var dnsSettings: js.UndefOr[DnsSettings] = js.undefined
   
   /** Required. Immutable. The domain name. Unicode domain names must be expressed in Punycode format. */
-  var domainName: js.UndefOr[String] = js.native
+  var domainName: js.UndefOr[String] = js.undefined
   
   /** Output only. The expiration timestamp of the `Registration`. */
-  var expireTime: js.UndefOr[String] = js.native
+  var expireTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The set of issues with the `Registration` that require attention. */
-  var issues: js.UndefOr[js.Array[String]] = js.native
+  var issues: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Set of labels associated with the `Registration`. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDomains.maximMazurokGapiClientDomainsStrings.Registration with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDomains.maximMazurokGapiClientDomainsStrings.Registration & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Settings for management of the `Registration`, including renewal, billing, and transfer. You cannot update these with the `UpdateRegistration` method. To update these settings, use
     * the `ConfigureManagementSettings` method.
     */
-  var managementSettings: js.UndefOr[ManagementSettings] = js.native
+  var managementSettings: js.UndefOr[ManagementSettings] = js.undefined
   
   /** Output only. Name of the `Registration` resource, in the format `projects/∗/locations/∗/registrations/`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Pending contact settings for the `Registration`. Updates to the `contact_settings` field that change its `registrant_contact` or `privacy` fields require email
     * confirmation by the `registrant_contact` before taking effect. This field is set only if there are pending updates to the `contact_settings` that have not yet been confirmed. To
     * confirm the changes, the `registrant_contact` must follow the instructions in the email they receive.
     */
-  var pendingContactSettings: js.UndefOr[ContactSettings] = js.native
+  var pendingContactSettings: js.UndefOr[ContactSettings] = js.undefined
   
   /** Output only. The state of the `Registration` */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. Set of options for the `contact_settings.privacy` field that this `Registration` supports. */
-  var supportedPrivacy: js.UndefOr[js.Array[String]] = js.native
+  var supportedPrivacy: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Registration {
   
@@ -116,7 +114,7 @@ object Registration {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDomains.maximMazurokGapiClientDomainsStrings.Registration with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDomains.maximMazurokGapiClientDomainsStrings.Registration & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

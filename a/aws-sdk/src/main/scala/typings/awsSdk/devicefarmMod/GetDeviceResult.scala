@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDeviceResult extends StObject {
   
   /**
     * An object that contains information about the requested device.
     */
-  var device: js.UndefOr[Device] = js.native
+  var device: js.UndefOr[Device] = js.undefined
 }
 object GetDeviceResult {
   

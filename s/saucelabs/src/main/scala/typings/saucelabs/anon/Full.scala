@@ -2,13 +2,11 @@ package typings.saucelabs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Full extends StObject {
   
-  var full: js.UndefOr[Boolean] = js.native
+  var full: js.UndefOr[Boolean] = js.undefined
 }
 object Full {
   

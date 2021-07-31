@@ -2,16 +2,14 @@ package typings.awsSdk.augmentedairuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopHumanLoopRequest extends StObject {
   
   /**
     * The name of the human loop that you want to stop.
     */
-  var HumanLoopName: typings.awsSdk.augmentedairuntimeMod.HumanLoopName = js.native
+  var HumanLoopName: typings.awsSdk.augmentedairuntimeMod.HumanLoopName
 }
 object StopHumanLoopRequest {
   

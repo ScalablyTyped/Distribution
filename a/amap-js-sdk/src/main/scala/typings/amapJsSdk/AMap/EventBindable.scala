@@ -2,15 +2,13 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventBindable extends StObject {
   
-  def off(eventName: String, callback: EventCallback): Unit = js.native
+  def off(eventName: String, callback: EventCallback): Unit
   
-  def on(eventName: String, callback: EventCallback): Unit = js.native
+  def on(eventName: String, callback: EventCallback): Unit
 }
 object EventBindable {
   

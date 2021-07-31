@@ -2,45 +2,43 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ContainerPort represents a network port in a single container.
   */
-@js.native
 trait SchemaContainerPort extends StObject {
   
   /**
     * Number of port to expose on the pod&#39;s IP address. This must be a
     * valid port number, 0 &lt; x &lt; 65536.
     */
-  var containerPort: js.UndefOr[Double] = js.native
+  var containerPort: js.UndefOr[Double] = js.undefined
   
   /**
     * What host IP to bind the external port to. +optional
     */
-  var hostIP: js.UndefOr[String] = js.native
+  var hostIP: js.UndefOr[String] = js.undefined
   
   /**
     * Number of port to expose on the host. If specified, this must be a valid
     * port number, 0 &lt; x &lt; 65536. If HostNetwork is specified, this must
     * match ContainerPort. Most containers do not need this. +optional
     */
-  var hostPort: js.UndefOr[Double] = js.native
+  var hostPort: js.UndefOr[Double] = js.undefined
   
   /**
     * If specified, this must be an IANA_SVC_NAME and unique within the pod.
     * Each named port in a pod must have a unique name. Name for the port that
     * can be referred to by services. +optional
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Protocol for port. Must be UDP or TCP. Defaults to &quot;TCP&quot;.
     * +optional
     */
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
 }
 object SchemaContainerPort {
   

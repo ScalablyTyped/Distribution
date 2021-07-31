@@ -3,13 +3,14 @@ package typings.anydbSql.mod
 import typings.anydbSql.anon.RTRIM
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnydbSql extends DatabaseConnection {
+trait AnydbSql
+  extends StObject
+     with DatabaseConnection {
   
-  def allOf(tables: Table[_]*): js.Any = js.native
+  def allOf(tables: Table[js.Any]*): js.Any = js.native
   
   def begin(): Transaction = js.native
   
@@ -25,7 +26,7 @@ trait AnydbSql extends DatabaseConnection {
   
   def makeFunction(name: String): js.Function = js.native
   
-  var models: Dictionary[Table[_]] = js.native
+  var models: Dictionary[Table[js.Any]] = js.native
   
   def open(): Unit = js.native
   

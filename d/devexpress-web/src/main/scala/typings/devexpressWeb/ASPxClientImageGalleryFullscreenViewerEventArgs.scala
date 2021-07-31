@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientImageGallery.FullscreenViewerActiveItemIndexChanged event.
   */
-@js.native
-trait ASPxClientImageGalleryFullscreenViewerEventArgs extends ASPxClientEventArgs {
+trait ASPxClientImageGalleryFullscreenViewerEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the index of the item related to the event.
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Gets the unique identifier name of the item related to the event.
     */
-  var name: String = js.native
+  var name: String
 }
 object ASPxClientImageGalleryFullscreenViewerEventArgs {
   

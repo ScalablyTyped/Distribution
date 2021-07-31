@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DashboardSourceTemplate extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var Arn: typings.awsSdk.quicksightMod.Arn = js.native
+  var Arn: typings.awsSdk.quicksightMod.Arn
   
   /**
     * Dataset references.
     */
-  var DataSetReferences: DataSetReferenceList = js.native
+  var DataSetReferences: DataSetReferenceList
 }
 object DashboardSourceTemplate {
   

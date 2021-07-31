@@ -2,15 +2,13 @@ package typings.googleapis.dnsV1Mod.dnsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOperationDnsKeyContext extends StObject {
   
-  var newValue: js.UndefOr[SchemaDnsKey] = js.native
+  var newValue: js.UndefOr[SchemaDnsKey] = js.undefined
   
-  var oldValue: js.UndefOr[SchemaDnsKey] = js.native
+  var oldValue: js.UndefOr[SchemaDnsKey] = js.undefined
 }
 object SchemaOperationDnsKeyContext {
   

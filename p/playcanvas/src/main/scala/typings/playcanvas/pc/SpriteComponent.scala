@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.playcanvas.anon.Loop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -32,7 +31,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param entity - The Entity that this Component is attached to.
   */
 @js.native
-trait SpriteComponent extends Component {
+trait SpriteComponent
+  extends StObject
+     with Component {
   
   /**
     * Creates and adds a new {@link pc.SpriteAnimationClip} to the component's clips.

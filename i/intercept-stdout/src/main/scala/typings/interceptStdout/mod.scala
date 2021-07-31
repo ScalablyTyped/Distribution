@@ -2,17 +2,18 @@ package typings.interceptStdout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(stdoutIntercept: hookFunction): unhookFunction = ^.asInstanceOf[js.Dynamic].apply(stdoutIntercept.asInstanceOf[js.Any]).asInstanceOf[unhookFunction]
+  @scala.inline
+  def apply(stdoutIntercept: hookFunction, stderrIntercept: hookFunction): unhookFunction = (^.asInstanceOf[js.Dynamic].apply(stdoutIntercept.asInstanceOf[js.Any], stderrIntercept.asInstanceOf[js.Any])).asInstanceOf[unhookFunction]
+  
   @JSImport("intercept-stdout", JSImport.Namespace)
   @js.native
-  def apply(stdoutIntercept: hookFunction): unhookFunction = js.native
-  @JSImport("intercept-stdout", JSImport.Namespace)
-  @js.native
-  def apply(stdoutIntercept: hookFunction, stderrIntercept: hookFunction): unhookFunction = js.native
+  val ^ : js.Any = js.native
   
   type hookFunction = js.Function1[/* txt */ String, String | Unit]
   

@@ -2,25 +2,23 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message containing device id of the claim.
   */
-@js.native
 trait SchemaClaimDeviceResponse extends StObject {
   
   /**
     * The device ID of the claimed device.
     */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the device in the format
     * `partners/[PARTNER_ID]/devices/[DEVICE_ID]`.
     */
-  var deviceName: js.UndefOr[String] = js.native
+  var deviceName: js.UndefOr[String] = js.undefined
 }
 object SchemaClaimDeviceResponse {
   

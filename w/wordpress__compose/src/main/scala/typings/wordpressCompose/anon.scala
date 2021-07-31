@@ -2,284 +2,282 @@ package typings.wordpressCompose
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined {[ k in keyof std.WindowEventMap ]:? string} */
-  @js.native
   trait kinkeyofWindowEventMapstr extends StObject {
     
-    var MSGestureChange: js.UndefOr[String] = js.native
+    var MSGestureChange: js.UndefOr[String] = js.undefined
     
-    var MSGestureDoubleTap: js.UndefOr[String] = js.native
+    var MSGestureDoubleTap: js.UndefOr[String] = js.undefined
     
-    var MSGestureEnd: js.UndefOr[String] = js.native
+    var MSGestureEnd: js.UndefOr[String] = js.undefined
     
-    var MSGestureHold: js.UndefOr[String] = js.native
+    var MSGestureHold: js.UndefOr[String] = js.undefined
     
-    var MSGestureStart: js.UndefOr[String] = js.native
+    var MSGestureStart: js.UndefOr[String] = js.undefined
     
-    var MSGestureTap: js.UndefOr[String] = js.native
+    var MSGestureTap: js.UndefOr[String] = js.undefined
     
-    var MSInertiaStart: js.UndefOr[String] = js.native
+    var MSInertiaStart: js.UndefOr[String] = js.undefined
     
-    var MSPointerCancel: js.UndefOr[String] = js.native
+    var MSPointerCancel: js.UndefOr[String] = js.undefined
     
-    var MSPointerDown: js.UndefOr[String] = js.native
+    var MSPointerDown: js.UndefOr[String] = js.undefined
     
-    var MSPointerEnter: js.UndefOr[String] = js.native
+    var MSPointerEnter: js.UndefOr[String] = js.undefined
     
-    var MSPointerLeave: js.UndefOr[String] = js.native
+    var MSPointerLeave: js.UndefOr[String] = js.undefined
     
-    var MSPointerMove: js.UndefOr[String] = js.native
+    var MSPointerMove: js.UndefOr[String] = js.undefined
     
-    var MSPointerOut: js.UndefOr[String] = js.native
+    var MSPointerOut: js.UndefOr[String] = js.undefined
     
-    var MSPointerOver: js.UndefOr[String] = js.native
+    var MSPointerOver: js.UndefOr[String] = js.undefined
     
-    var MSPointerUp: js.UndefOr[String] = js.native
+    var MSPointerUp: js.UndefOr[String] = js.undefined
     
-    var abort: js.UndefOr[String] = js.native
+    var abort: js.UndefOr[String] = js.undefined
     
-    var afterprint: js.UndefOr[String] = js.native
+    var afterprint: js.UndefOr[String] = js.undefined
     
-    var animationcancel: js.UndefOr[String] = js.native
+    var animationcancel: js.UndefOr[String] = js.undefined
     
-    var animationend: js.UndefOr[String] = js.native
+    var animationend: js.UndefOr[String] = js.undefined
     
-    var animationiteration: js.UndefOr[String] = js.native
+    var animationiteration: js.UndefOr[String] = js.undefined
     
-    var animationstart: js.UndefOr[String] = js.native
+    var animationstart: js.UndefOr[String] = js.undefined
     
-    var auxclick: js.UndefOr[String] = js.native
+    var auxclick: js.UndefOr[String] = js.undefined
     
-    var beforeprint: js.UndefOr[String] = js.native
+    var beforeprint: js.UndefOr[String] = js.undefined
     
-    var beforeunload: js.UndefOr[String] = js.native
+    var beforeunload: js.UndefOr[String] = js.undefined
     
-    var blur: js.UndefOr[String] = js.native
+    var blur: js.UndefOr[String] = js.undefined
     
-    var cancel: js.UndefOr[String] = js.native
+    var cancel: js.UndefOr[String] = js.undefined
     
-    var canplay: js.UndefOr[String] = js.native
+    var canplay: js.UndefOr[String] = js.undefined
     
-    var canplaythrough: js.UndefOr[String] = js.native
+    var canplaythrough: js.UndefOr[String] = js.undefined
     
-    var change: js.UndefOr[String] = js.native
+    var change: js.UndefOr[String] = js.undefined
     
-    var click: js.UndefOr[String] = js.native
+    var click: js.UndefOr[String] = js.undefined
     
-    var close: js.UndefOr[String] = js.native
+    var close: js.UndefOr[String] = js.undefined
     
-    var compassneedscalibration: js.UndefOr[String] = js.native
+    var compassneedscalibration: js.UndefOr[String] = js.undefined
     
-    var contextmenu: js.UndefOr[String] = js.native
+    var contextmenu: js.UndefOr[String] = js.undefined
     
-    var cuechange: js.UndefOr[String] = js.native
+    var cuechange: js.UndefOr[String] = js.undefined
     
-    var dblclick: js.UndefOr[String] = js.native
+    var dblclick: js.UndefOr[String] = js.undefined
     
-    var devicelight: js.UndefOr[String] = js.native
+    var devicelight: js.UndefOr[String] = js.undefined
     
-    var devicemotion: js.UndefOr[String] = js.native
+    var devicemotion: js.UndefOr[String] = js.undefined
     
-    var deviceorientation: js.UndefOr[String] = js.native
+    var deviceorientation: js.UndefOr[String] = js.undefined
     
-    var deviceorientationabsolute: js.UndefOr[String] = js.native
+    var deviceorientationabsolute: js.UndefOr[String] = js.undefined
     
-    var drag: js.UndefOr[String] = js.native
+    var drag: js.UndefOr[String] = js.undefined
     
-    var dragend: js.UndefOr[String] = js.native
+    var dragend: js.UndefOr[String] = js.undefined
     
-    var dragenter: js.UndefOr[String] = js.native
+    var dragenter: js.UndefOr[String] = js.undefined
     
-    var dragexit: js.UndefOr[String] = js.native
+    var dragexit: js.UndefOr[String] = js.undefined
     
-    var dragleave: js.UndefOr[String] = js.native
+    var dragleave: js.UndefOr[String] = js.undefined
     
-    var dragover: js.UndefOr[String] = js.native
+    var dragover: js.UndefOr[String] = js.undefined
     
-    var dragstart: js.UndefOr[String] = js.native
+    var dragstart: js.UndefOr[String] = js.undefined
     
-    var drop: js.UndefOr[String] = js.native
+    var drop: js.UndefOr[String] = js.undefined
     
-    var durationchange: js.UndefOr[String] = js.native
+    var durationchange: js.UndefOr[String] = js.undefined
     
-    var emptied: js.UndefOr[String] = js.native
+    var emptied: js.UndefOr[String] = js.undefined
     
-    var ended: js.UndefOr[String] = js.native
+    var ended: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var focus: js.UndefOr[String] = js.native
+    var focus: js.UndefOr[String] = js.undefined
     
-    var focusin: js.UndefOr[String] = js.native
+    var focusin: js.UndefOr[String] = js.undefined
     
-    var focusout: js.UndefOr[String] = js.native
+    var focusout: js.UndefOr[String] = js.undefined
     
-    var gotpointercapture: js.UndefOr[String] = js.native
+    var gotpointercapture: js.UndefOr[String] = js.undefined
     
-    var hashchange: js.UndefOr[String] = js.native
+    var hashchange: js.UndefOr[String] = js.undefined
     
-    var input: js.UndefOr[String] = js.native
+    var input: js.UndefOr[String] = js.undefined
     
-    var invalid: js.UndefOr[String] = js.native
+    var invalid: js.UndefOr[String] = js.undefined
     
-    var keydown: js.UndefOr[String] = js.native
+    var keydown: js.UndefOr[String] = js.undefined
     
-    var keypress: js.UndefOr[String] = js.native
+    var keypress: js.UndefOr[String] = js.undefined
     
-    var keyup: js.UndefOr[String] = js.native
+    var keyup: js.UndefOr[String] = js.undefined
     
-    var languagechange: js.UndefOr[String] = js.native
+    var languagechange: js.UndefOr[String] = js.undefined
     
-    var load: js.UndefOr[String] = js.native
+    var load: js.UndefOr[String] = js.undefined
     
-    var loadeddata: js.UndefOr[String] = js.native
+    var loadeddata: js.UndefOr[String] = js.undefined
     
-    var loadedmetadata: js.UndefOr[String] = js.native
+    var loadedmetadata: js.UndefOr[String] = js.undefined
     
-    var loadstart: js.UndefOr[String] = js.native
+    var loadstart: js.UndefOr[String] = js.undefined
     
-    var lostpointercapture: js.UndefOr[String] = js.native
+    var lostpointercapture: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var messageerror: js.UndefOr[String] = js.native
+    var messageerror: js.UndefOr[String] = js.undefined
     
-    var mousedown: js.UndefOr[String] = js.native
+    var mousedown: js.UndefOr[String] = js.undefined
     
-    var mouseenter: js.UndefOr[String] = js.native
+    var mouseenter: js.UndefOr[String] = js.undefined
     
-    var mouseleave: js.UndefOr[String] = js.native
+    var mouseleave: js.UndefOr[String] = js.undefined
     
-    var mousemove: js.UndefOr[String] = js.native
+    var mousemove: js.UndefOr[String] = js.undefined
     
-    var mouseout: js.UndefOr[String] = js.native
+    var mouseout: js.UndefOr[String] = js.undefined
     
-    var mouseover: js.UndefOr[String] = js.native
+    var mouseover: js.UndefOr[String] = js.undefined
     
-    var mouseup: js.UndefOr[String] = js.native
+    var mouseup: js.UndefOr[String] = js.undefined
     
-    var mousewheel: js.UndefOr[String] = js.native
+    var mousewheel: js.UndefOr[String] = js.undefined
     
-    var offline: js.UndefOr[String] = js.native
+    var offline: js.UndefOr[String] = js.undefined
     
-    var online: js.UndefOr[String] = js.native
+    var online: js.UndefOr[String] = js.undefined
     
-    var orientationchange: js.UndefOr[String] = js.native
+    var orientationchange: js.UndefOr[String] = js.undefined
     
-    var pagehide: js.UndefOr[String] = js.native
+    var pagehide: js.UndefOr[String] = js.undefined
     
-    var pageshow: js.UndefOr[String] = js.native
+    var pageshow: js.UndefOr[String] = js.undefined
     
-    var pause: js.UndefOr[String] = js.native
+    var pause: js.UndefOr[String] = js.undefined
     
-    var play: js.UndefOr[String] = js.native
+    var play: js.UndefOr[String] = js.undefined
     
-    var playing: js.UndefOr[String] = js.native
+    var playing: js.UndefOr[String] = js.undefined
     
-    var pointercancel: js.UndefOr[String] = js.native
+    var pointercancel: js.UndefOr[String] = js.undefined
     
-    var pointerdown: js.UndefOr[String] = js.native
+    var pointerdown: js.UndefOr[String] = js.undefined
     
-    var pointerenter: js.UndefOr[String] = js.native
+    var pointerenter: js.UndefOr[String] = js.undefined
     
-    var pointerleave: js.UndefOr[String] = js.native
+    var pointerleave: js.UndefOr[String] = js.undefined
     
-    var pointermove: js.UndefOr[String] = js.native
+    var pointermove: js.UndefOr[String] = js.undefined
     
-    var pointerout: js.UndefOr[String] = js.native
+    var pointerout: js.UndefOr[String] = js.undefined
     
-    var pointerover: js.UndefOr[String] = js.native
+    var pointerover: js.UndefOr[String] = js.undefined
     
-    var pointerup: js.UndefOr[String] = js.native
+    var pointerup: js.UndefOr[String] = js.undefined
     
-    var popstate: js.UndefOr[String] = js.native
+    var popstate: js.UndefOr[String] = js.undefined
     
-    var progress: js.UndefOr[String] = js.native
+    var progress: js.UndefOr[String] = js.undefined
     
-    var ratechange: js.UndefOr[String] = js.native
+    var ratechange: js.UndefOr[String] = js.undefined
     
-    var readystatechange: js.UndefOr[String] = js.native
+    var readystatechange: js.UndefOr[String] = js.undefined
     
-    var rejectionhandled: js.UndefOr[String] = js.native
+    var rejectionhandled: js.UndefOr[String] = js.undefined
     
-    var reset: js.UndefOr[String] = js.native
+    var reset: js.UndefOr[String] = js.undefined
     
-    var resize: js.UndefOr[String] = js.native
+    var resize: js.UndefOr[String] = js.undefined
     
-    var scroll: js.UndefOr[String] = js.native
+    var scroll: js.UndefOr[String] = js.undefined
     
-    var securitypolicyviolation: js.UndefOr[String] = js.native
+    var securitypolicyviolation: js.UndefOr[String] = js.undefined
     
-    var seeked: js.UndefOr[String] = js.native
+    var seeked: js.UndefOr[String] = js.undefined
     
-    var seeking: js.UndefOr[String] = js.native
+    var seeking: js.UndefOr[String] = js.undefined
     
-    var select: js.UndefOr[String] = js.native
+    var select: js.UndefOr[String] = js.undefined
     
-    var selectionchange: js.UndefOr[String] = js.native
+    var selectionchange: js.UndefOr[String] = js.undefined
     
-    var selectstart: js.UndefOr[String] = js.native
+    var selectstart: js.UndefOr[String] = js.undefined
     
-    var stalled: js.UndefOr[String] = js.native
+    var stalled: js.UndefOr[String] = js.undefined
     
-    var storage: js.UndefOr[String] = js.native
+    var storage: js.UndefOr[String] = js.undefined
     
-    var submit: js.UndefOr[String] = js.native
+    var submit: js.UndefOr[String] = js.undefined
     
-    var suspend: js.UndefOr[String] = js.native
+    var suspend: js.UndefOr[String] = js.undefined
     
-    var timeupdate: js.UndefOr[String] = js.native
+    var timeupdate: js.UndefOr[String] = js.undefined
     
-    var toggle: js.UndefOr[String] = js.native
+    var toggle: js.UndefOr[String] = js.undefined
     
-    var touchcancel: js.UndefOr[String] = js.native
+    var touchcancel: js.UndefOr[String] = js.undefined
     
-    var touchend: js.UndefOr[String] = js.native
+    var touchend: js.UndefOr[String] = js.undefined
     
-    var touchmove: js.UndefOr[String] = js.native
+    var touchmove: js.UndefOr[String] = js.undefined
     
-    var touchstart: js.UndefOr[String] = js.native
+    var touchstart: js.UndefOr[String] = js.undefined
     
-    var transitioncancel: js.UndefOr[String] = js.native
+    var transitioncancel: js.UndefOr[String] = js.undefined
     
-    var transitionend: js.UndefOr[String] = js.native
+    var transitionend: js.UndefOr[String] = js.undefined
     
-    var transitionrun: js.UndefOr[String] = js.native
+    var transitionrun: js.UndefOr[String] = js.undefined
     
-    var transitionstart: js.UndefOr[String] = js.native
+    var transitionstart: js.UndefOr[String] = js.undefined
     
-    var unhandledrejection: js.UndefOr[String] = js.native
+    var unhandledrejection: js.UndefOr[String] = js.undefined
     
-    var unload: js.UndefOr[String] = js.native
+    var unload: js.UndefOr[String] = js.undefined
     
-    var volumechange: js.UndefOr[String] = js.native
+    var volumechange: js.UndefOr[String] = js.undefined
     
-    var vrdisplayactivate: js.UndefOr[String] = js.native
+    var vrdisplayactivate: js.UndefOr[String] = js.undefined
     
-    var vrdisplayblur: js.UndefOr[String] = js.native
+    var vrdisplayblur: js.UndefOr[String] = js.undefined
     
-    var vrdisplayconnect: js.UndefOr[String] = js.native
+    var vrdisplayconnect: js.UndefOr[String] = js.undefined
     
-    var vrdisplaydeactivate: js.UndefOr[String] = js.native
+    var vrdisplaydeactivate: js.UndefOr[String] = js.undefined
     
-    var vrdisplaydisconnect: js.UndefOr[String] = js.native
+    var vrdisplaydisconnect: js.UndefOr[String] = js.undefined
     
-    var vrdisplayfocus: js.UndefOr[String] = js.native
+    var vrdisplayfocus: js.UndefOr[String] = js.undefined
     
-    var vrdisplaypointerrestricted: js.UndefOr[String] = js.native
+    var vrdisplaypointerrestricted: js.UndefOr[String] = js.undefined
     
-    var vrdisplaypointerunrestricted: js.UndefOr[String] = js.native
+    var vrdisplaypointerunrestricted: js.UndefOr[String] = js.undefined
     
-    var vrdisplaypresentchange: js.UndefOr[String] = js.native
+    var vrdisplaypresentchange: js.UndefOr[String] = js.undefined
     
-    var waiting: js.UndefOr[String] = js.native
+    var waiting: js.UndefOr[String] = js.undefined
     
-    var wheel: js.UndefOr[String] = js.native
+    var wheel: js.UndefOr[String] = js.undefined
   }
   object kinkeyofWindowEventMapstr {
     

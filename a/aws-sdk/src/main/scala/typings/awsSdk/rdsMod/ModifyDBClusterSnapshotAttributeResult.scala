@@ -2,13 +2,11 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyDBClusterSnapshotAttributeResult extends StObject {
   
-  var DBClusterSnapshotAttributesResult: js.UndefOr[typings.awsSdk.rdsMod.DBClusterSnapshotAttributesResult] = js.native
+  var DBClusterSnapshotAttributesResult: js.UndefOr[typings.awsSdk.rdsMod.DBClusterSnapshotAttributesResult] = js.undefined
 }
 object ModifyDBClusterSnapshotAttributeResult {
   

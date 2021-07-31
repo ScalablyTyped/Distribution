@@ -4,29 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nodeHueApi.anon.Dictkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISensor extends StObject {
   
-  var config: StringDictionary[Double | String] = js.native
+  var config: StringDictionary[Double | String]
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var manufacturername: String = js.native
+  var manufacturername: String
   
-  var modelid: String = js.native
+  var modelid: String
   
-  var name: String = js.native
+  var name: String
   
-  var state: Dictkey = js.native
+  var state: Dictkey
   
-  var swversion: String = js.native
+  var swversion: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var uniqueid: js.UndefOr[String] = js.native
+  var uniqueid: js.UndefOr[String] = js.undefined
 }
 object ISensor {
   

@@ -2,14 +2,12 @@ package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An event issued when a job seeker interacts with the application that
   * implements Cloud Talent Solution.
   */
-@js.native
 trait SchemaJobEvent extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaJobEvent extends StObject {
     * jobs shown to the job seeker. If this was a view event, this field
     * contains the identifier of the viewed job.
     */
-  var jobs: js.UndefOr[js.Array[String]] = js.native
+  var jobs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required.  The type of the event (see JobEventType).
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaJobEvent {
   

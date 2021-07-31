@@ -4,13 +4,11 @@ import typings.hapi.hapiStrings.annotated
 import typings.hapi.mod.PayloadOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Output extends StObject {
   
-  var output: PayloadOutput | annotated = js.native
+  var output: PayloadOutput | annotated
 }
 object Output {
   

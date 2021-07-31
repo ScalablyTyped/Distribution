@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object specifiying the concepts enrichment and related parameters. */
-@js.native
 trait NluEnrichmentConcepts extends StObject {
   
   /** The maximum number of concepts enrichments to extact from each instance of the specified field. */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
 }
 object NluEnrichmentConcepts {
   

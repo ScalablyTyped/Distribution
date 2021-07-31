@@ -2,16 +2,14 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGeoMatchSetResponse extends StObject {
   
   /**
     * Information about the GeoMatchSet that you specified in the GetGeoMatchSet request. This includes the Type, which for a GeoMatchContraint is always Country, as well as the Value, which is the identifier for a specific country.
     */
-  var GeoMatchSet: js.UndefOr[typings.awsSdk.wafregionalMod.GeoMatchSet] = js.native
+  var GeoMatchSet: js.UndefOr[typings.awsSdk.wafregionalMod.GeoMatchSet] = js.undefined
 }
 object GetGeoMatchSetResponse {
   

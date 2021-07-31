@@ -2,10 +2,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaClustering extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SchemaClustering extends StObject {
     * is important. The order of the specified columns determines the sort
     * order of the data.
     */
-  var fields: js.UndefOr[js.Array[String]] = js.native
+  var fields: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaClustering {
   

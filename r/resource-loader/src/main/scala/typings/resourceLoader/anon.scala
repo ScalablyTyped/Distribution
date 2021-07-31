@@ -5,23 +5,21 @@ import typings.resourceLoader.resourceLoaderMod.Resource.LOAD_TYPE
 import typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CrossOrigin extends StObject {
     
-    var crossOrigin: js.UndefOr[String | Boolean] = js.native
+    var crossOrigin: js.UndefOr[String | Boolean] = js.undefined
     
-    var loadType: js.UndefOr[LOAD_TYPE] = js.native
+    var loadType: js.UndefOr[LOAD_TYPE] = js.undefined
     
-    var metadata: js.UndefOr[IMetadata] = js.native
+    var metadata: js.UndefOr[IMetadata] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var xhrType: js.UndefOr[XHR_RESPONSE_TYPE] = js.native
+    var xhrType: js.UndefOr[XHR_RESPONSE_TYPE] = js.undefined
   }
   object CrossOrigin {
     

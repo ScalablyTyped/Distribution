@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgBulletGraph
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -27,42 +26,42 @@ trait IgBulletGraph
     * Use ui.offsetX to obtain the X offset of the label on the bullet graph scale.
     * Use ui.offsetY to obtain the Y offset of the label on the bullet graph scale.
     */
-  var alignLabel: js.UndefOr[AlignLabelEvent] = js.native
+  var alignLabel: js.UndefOr[AlignLabelEvent] = js.undefined
   
   /**
     * Gets or sets the brush to use to fill the backing of the bullet graph.
     */
-  var backingBrush: js.UndefOr[String] = js.native
+  var backingBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the inner extent of the bullet graph backing.
     */
-  var backingInnerExtent: js.UndefOr[Double] = js.native
+  var backingInnerExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the outer extent of the bullet graph backing.
     */
-  var backingOuterExtent: js.UndefOr[Double] = js.native
+  var backingOuterExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the brush to use for the outline of the backing.
     */
-  var backingOutline: js.UndefOr[String] = js.native
+  var backingOutline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the stroke thickness of the backing outline.
     */
-  var backingStrokeThickness: js.UndefOr[Double] = js.native
+  var backingStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the font.
     */
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the brush to use for the label font.
     */
-  var fontBrush: js.UndefOr[String] = js.native
+  var fontBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Event which is raised when a label of the bullet graph is formatted.
@@ -73,93 +72,93 @@ trait IgBulletGraph
     * Use ui.value to obtain the value on the the bullet graph scale associated with the label.
     * Use ui.label to obtain the string value of the label.
     */
-  var formatLabel: js.UndefOr[FormatLabelEvent] = js.native
+  var formatLabel: js.UndefOr[FormatLabelEvent] = js.undefined
   
   /**
     * The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Gets or sets the interval to use for the scale.
     */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets a value indicating whether the scale is inverted.
     * When the scale is inverted the direction in which the scale values increase is right to left.
     */
-  var isScaleInverted: js.UndefOr[Boolean] = js.native
+  var isScaleInverted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.
     * Values further from zero than 1 can be used to hide the labels of the bullet graph.
     */
-  var labelExtent: js.UndefOr[Double] = js.native
+  var labelExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the interval to use for rendering labels. This defaults to be the same interval as the tickmarks on the scale.
     */
-  var labelInterval: js.UndefOr[Double] = js.native
+  var labelInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * A value to start adding labels, added to the scale's MinimumValue.
     */
-  var labelsPostInitial: js.UndefOr[Double] = js.native
+  var labelsPostInitial: js.UndefOr[Double] = js.undefined
   
   /**
     * A value to stop adding labels, subtracted from the scale's MaximumValue.
     */
-  var labelsPreTerminal: js.UndefOr[Double] = js.native
+  var labelsPreTerminal: js.UndefOr[Double] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the maximum value of the scale.
     */
-  var maximumValue: js.UndefOr[Double] = js.native
+  var maximumValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the minimum value of the scale.
     */
-  var minimumValue: js.UndefOr[Double] = js.native
+  var minimumValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the brush to use for the minor tickmarks.
     */
-  var minorTickBrush: js.UndefOr[String] = js.native
+  var minorTickBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the number of minor tickmarks to place between major tickmarks.
     */
-  var minorTickCount: js.UndefOr[Double] = js.native
+  var minorTickCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.
     */
-  var minorTickEndExtent: js.UndefOr[Double] = js.native
+  var minorTickEndExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.
     */
-  var minorTickStartExtent: js.UndefOr[Double] = js.native
+  var minorTickStartExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the stroke thickness to use when rendering minor ticks.
     */
-  var minorTickStrokeThickness: js.UndefOr[Double] = js.native
+  var minorTickStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the orientation of the scale.
@@ -168,222 +167,222 @@ trait IgBulletGraph
     * "horizontal" The scale has a horizontal orientation.
     * "vertical" The scale has a vertical orientation.
     */
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the scaling value used to affect the pixel density of the control.
     * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
     * to appear blurry.
     */
-  var pixelScalingRatio: js.UndefOr[Double] = js.native
+  var pixelScalingRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets a collection of brushes to be used as the palette for bullet graph ranges.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var rangeBrushes: js.UndefOr[js.Any] = js.native
+  var rangeBrushes: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.
     */
-  var rangeInnerExtent: js.UndefOr[Double] = js.native
+  var rangeInnerExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the bullet graph.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.
     */
-  var rangeOuterExtent: js.UndefOr[Double] = js.native
+  var rangeOuterExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets a collection of brushes to be used as the palette for bullet graph outlines.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var rangeOutlines: js.UndefOr[js.Any] = js.native
+  var rangeOutlines: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the ranges' tooltip template.
     */
-  var rangeToolTipTemplate: js.UndefOr[String] = js.native
+  var rangeToolTipTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the scale ranges to render on the bullet graph.
     */
-  var ranges: js.UndefOr[js.Array[IgBulletGraphRange]] = js.native
+  var ranges: js.UndefOr[js.Array[IgBulletGraphRange]] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * Gets or sets the background brush for the scale.
     */
-  var scaleBackgroundBrush: js.UndefOr[String] = js.native
+  var scaleBackgroundBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the background outline for the scale.
     */
-  var scaleBackgroundOutline: js.UndefOr[String] = js.native
+  var scaleBackgroundOutline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the background outline thickness for the scale.
     */
-  var scaleBackgroundThickness: js.UndefOr[Double] = js.native
+  var scaleBackgroundThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the bullet graph.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.
     */
-  var scaleEndExtent: js.UndefOr[Double] = js.native
+  var scaleEndExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the bullet graph as a value from 0 to 1.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.
     */
-  var scaleStartExtent: js.UndefOr[Double] = js.native
+  var scaleStartExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets a value indicating whether tooltips are enabled.
     */
-  var showToolTip: js.UndefOr[Boolean] = js.native
+  var showToolTip: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the time in milliseconds that tooltip appearance is delayed with.
     */
-  var showToolTipTimeout: js.UndefOr[Double] = js.native
+  var showToolTipTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the value indicated by the target value bar.
     */
-  var targetValue: js.UndefOr[Double] = js.native
+  var targetValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Get or sets the breadth of the target value element.
     */
-  var targetValueBreadth: js.UndefOr[Double] = js.native
+  var targetValueBreadth: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the brush to use when rendering the fill of the comparative marker.
     */
-  var targetValueBrush: js.UndefOr[String] = js.native
+  var targetValueBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the position at which to start rendering the target value, measured from the front/bottom of the control as a value from 0 to 1.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.
     */
-  var targetValueInnerExtent: js.UndefOr[Double] = js.native
+  var targetValueInnerExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the name used for the target value. The name is displayed in the default target value tooltip.
     */
-  var targetValueName: js.UndefOr[String] = js.native
+  var targetValueName: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the position at which to start rendering the target value, measured from the front/bottom of the control as a value from 0 to 1.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.
     */
-  var targetValueOuterExtent: js.UndefOr[Double] = js.native
+  var targetValueOuterExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the brush to use when rendering the outline of the target value.
     */
-  var targetValueOutline: js.UndefOr[String] = js.native
+  var targetValueOutline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the stroke thickness of the outline of the target value bar.
     */
-  var targetValueStrokeThickness: js.UndefOr[Double] = js.native
+  var targetValueStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the target value's tooltip template.
     */
-  var targetValueToolTipTemplate: js.UndefOr[String] = js.native
+  var targetValueToolTipTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the brush to use for the major tickmarks.
     */
-  var tickBrush: js.UndefOr[String] = js.native
+  var tickBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.
     */
-  var tickEndExtent: js.UndefOr[Double] = js.native
+  var tickEndExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.
     */
-  var tickStartExtent: js.UndefOr[Double] = js.native
+  var tickStartExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the stroke thickness to use when rendering ticks.
     */
-  var tickStrokeThickness: js.UndefOr[Double] = js.native
+  var tickStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * A value to start adding tickmarks, added to the scale's MinimumValue.
     */
-  var ticksPostInitial: js.UndefOr[Double] = js.native
+  var ticksPostInitial: js.UndefOr[Double] = js.undefined
   
   /**
     * A value to stop adding tickmarks, subtracted from the scale's MaximumValue.
     */
-  var ticksPreTerminal: js.UndefOr[Double] = js.native
+  var ticksPreTerminal: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the number of milliseconds over which changes to the bullet graph should be animated.
     */
-  var transitionDuration: js.UndefOr[Double] = js.native
+  var transitionDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the value at which the bar ends.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the brush to use for the actual value element.
     */
-  var valueBrush: js.UndefOr[String] = js.native
+  var valueBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the position at which to start rendering the actual value geometries, measured from the front/bottom of the bullet graph as a value from 0 to 1.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.
     */
-  var valueInnerExtent: js.UndefOr[Double] = js.native
+  var valueInnerExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the name used for actual value.
     */
-  var valueName: js.UndefOr[String] = js.native
+  var valueName: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the position at which to stop rendering the actual value geometries as a value from 0 to 1 measured from the front/bottom of the bullet graph.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.
     */
-  var valueOuterExtent: js.UndefOr[Double] = js.native
+  var valueOuterExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the brush to use for the outline of actual value element.
     */
-  var valueOutline: js.UndefOr[String] = js.native
+  var valueOutline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the stroke thickness to use when rendering single actual value element.
     */
-  var valueStrokeThickness: js.UndefOr[Double] = js.native
+  var valueStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the value's tooltip template.
     */
-  var valueToolTipTemplate: js.UndefOr[String] = js.native
+  var valueToolTipTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object IgBulletGraph {
   

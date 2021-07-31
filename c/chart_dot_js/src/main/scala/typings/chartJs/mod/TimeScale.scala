@@ -2,35 +2,35 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeScale extends ChartScales {
+trait TimeScale
+  extends StObject
+     with ChartScales {
   
-  var adapters: js.UndefOr[DateAdapterOptions] = js.native
+  var adapters: js.UndefOr[DateAdapterOptions] = js.undefined
   
-  var displayFormats: js.UndefOr[TimeDisplayFormat] = js.native
+  var displayFormats: js.UndefOr[TimeDisplayFormat] = js.undefined
   
-  var isoWeekday: js.UndefOr[Boolean] = js.native
+  var isoWeekday: js.UndefOr[Boolean] = js.undefined
   
-  var max: js.UndefOr[String] = js.native
+  var max: js.UndefOr[String] = js.undefined
   
-  var min: js.UndefOr[String] = js.native
+  var min: js.UndefOr[String] = js.undefined
   
-  var minUnit: js.UndefOr[TimeUnit] = js.native
+  var minUnit: js.UndefOr[TimeUnit] = js.undefined
   
-  var parser: js.UndefOr[String | (js.Function1[/* arg */ js.Any, _])] = js.native
+  var parser: js.UndefOr[String | (js.Function1[/* arg */ js.Any, js.Any])] = js.undefined
   
-  var round: js.UndefOr[TimeUnit] = js.native
+  var round: js.UndefOr[TimeUnit] = js.undefined
   
-  var stepSize: js.UndefOr[Double] = js.native
+  var stepSize: js.UndefOr[Double] = js.undefined
   
-  var tooltipFormat: js.UndefOr[String] = js.native
+  var tooltipFormat: js.UndefOr[String] = js.undefined
   
-  var unit: js.UndefOr[TimeUnit] = js.native
+  var unit: js.UndefOr[TimeUnit] = js.undefined
   
-  var unitStepSize: js.UndefOr[Double] = js.native
+  var unitStepSize: js.UndefOr[Double] = js.undefined
 }
 object TimeScale {
   
@@ -80,10 +80,10 @@ object TimeScale {
     def setMinUnitUndefined: Self = StObject.set(x, "minUnit", js.undefined)
     
     @scala.inline
-    def setParser(value: String | (js.Function1[/* arg */ js.Any, _])): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+    def setParser(value: String | (js.Function1[/* arg */ js.Any, js.Any])): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParserFunction1(value: /* arg */ js.Any => _): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
+    def setParserFunction1(value: /* arg */ js.Any => js.Any): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
     
     @scala.inline
     def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)

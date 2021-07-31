@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EXTBlendMinmax extends StObject {
   
-  val MAX_EXT: GLenum = js.native
+  val MAX_EXT: GLenum
   
-  val MIN_EXT: GLenum = js.native
+  val MIN_EXT: GLenum
 }
 object EXTBlendMinmax {
   

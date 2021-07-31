@@ -2,69 +2,67 @@ package typings.maximMazurokGapiClientMonitoring.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Callback extends StObject {
   
   /** V1 error format. */
   @JSName("$.xgafv")
-  var $Dotxgafv: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
   
   /** OAuth access token. */
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** JSONP */
-  var callback: js.UndefOr[String] = js.native
+  var callback: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * If provided, this field specifies the criteria that must be met by notification channels to be included in the response.For more details, see sorting and filtering
     * (https://cloud.google.com/monitoring/api/v3/sorting-and-filtering).
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The project on which to execute the request. The format is: projects/[PROJECT_ID_OR_NUMBER] This names the container in which to look for the notification channels; it
     * does not name a specific channel. To query a specific channel by REST resource name, use the GetNotificationChannel operation.
     */
-  var name: String = js.native
+  var name: String
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
     * A comma-separated list of fields by which to sort the result. Supports the same set of fields as in filter. Entries can be prefixed with a minus sign to sort in descending
     * rather than ascending order.For more details, see sorting and filtering (https://cloud.google.com/monitoring/api/v3/sorting-and-filtering).
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /** The maximum number of results to return in a single response. If not set to a positive number, a reasonable value will be chosen by the service. */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /** If non-empty, page_token must contain a value returned as the next_page_token in a previous response to request the next set of results. */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-  var uploadType: js.UndefOr[String] = js.native
+  var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
-  var upload_protocol: js.UndefOr[String] = js.native
+  var upload_protocol: js.UndefOr[String] = js.undefined
 }
 object Callback {
   

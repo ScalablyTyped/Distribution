@@ -6,17 +6,15 @@ import typings.std.BufferSource
 import typings.std.KeyUsage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Algorithm extends StObject {
     
-    var algorithm: typings.std.Algorithm = js.native
+    var algorithm: typings.std.Algorithm
     
-    var usages: js.Array[KeyUsage] = js.native
+    var usages: js.Array[KeyUsage]
   }
   object Algorithm {
     
@@ -40,18 +38,17 @@ object anon {
     }
   }
   
-  @js.native
   trait ContentEncryptionAlgorithm extends StObject {
     
-    var contentEncryptionAlgorithm: typings.std.Algorithm = js.native
+    var contentEncryptionAlgorithm: typings.std.Algorithm
     
-    var contentToEncrypt: BufferSource = js.native
+    var contentToEncrypt: BufferSource
     
-    var hmacHashAlgorithm: String = js.native
+    var hmacHashAlgorithm: String
     
-    var iterationCount: Double = js.native
+    var iterationCount: Double
     
-    var password: String = js.native
+    var password: String
   }
   object ContentEncryptionAlgorithm {
     
@@ -87,12 +84,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Counter extends StObject {
     
-    var counter: Double = js.native
+    var counter: Double
     
-    var result: ArrayBuffer = js.native
+    var result: ArrayBuffer
   }
   object Counter {
     
@@ -113,18 +109,17 @@ object anon {
     }
   }
   
-  @js.native
   trait HmacHashAlgorithm extends StObject {
     
-    var hmacHashAlgorithm: js.UndefOr[String] = js.native
+    var hmacHashAlgorithm: js.UndefOr[String] = js.undefined
     
-    var iterationCount: js.UndefOr[Double] = js.native
+    var iterationCount: js.UndefOr[Double] = js.undefined
     
-    var keyEncryptionAlgorithm: js.UndefOr[typings.std.Algorithm] = js.native
+    var keyEncryptionAlgorithm: js.UndefOr[typings.std.Algorithm] = js.undefined
     
-    var keyEncryptionAlgorithmParams: js.UndefOr[js.Any] = js.native
+    var keyEncryptionAlgorithmParams: js.UndefOr[js.Any] = js.undefined
     
-    var keyIdentifier: js.UndefOr[ArrayBuffer] = js.native
+    var keyIdentifier: js.UndefOr[ArrayBuffer] = js.undefined
   }
   object HmacHashAlgorithm {
     
@@ -169,12 +164,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IssuerCertificate extends StObject {
     
-    var issuerCertificate: js.UndefOr[default] = js.native
+    var issuerCertificate: js.UndefOr[default] = js.undefined
     
-    var publicKeyInfo: js.UndefOr[typings.pkijs.publicKeyInfoMod.default] = js.native
+    var publicKeyInfo: js.UndefOr[typings.pkijs.publicKeyInfoMod.default] = js.undefined
   }
   object IssuerCertificate {
     
@@ -201,14 +195,13 @@ object anon {
     }
   }
   
-  @js.native
   trait KdfAlgorithm extends StObject {
     
-    var kdfAlgorithm: js.UndefOr[String] = js.native
+    var kdfAlgorithm: js.UndefOr[String] = js.undefined
     
-    var kekEncryptionLength: js.UndefOr[Double] = js.native
+    var kekEncryptionLength: js.UndefOr[Double] = js.undefined
     
-    var oaepHashAlgorithm: js.UndefOr[String] = js.native
+    var oaepHashAlgorithm: js.UndefOr[String] = js.undefined
   }
   object KdfAlgorithm {
     
@@ -241,10 +234,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Password extends StObject {
     
-    var password: String = js.native
+    var password: String
   }
   object Password {
     
@@ -262,12 +254,11 @@ object anon {
     }
   }
   
-  @js.native
   trait RecipientCertificate extends StObject {
     
-    var recipientCertificate: default = js.native
+    var recipientCertificate: default
     
-    var recipientPrivateKey: ArrayBuffer = js.native
+    var recipientPrivateKey: ArrayBuffer
   }
   object RecipientCertificate {
     
@@ -288,10 +279,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TrustedCerts extends StObject {
     
-    var trustedCerts: js.UndefOr[js.Array[default]] = js.native
+    var trustedCerts: js.UndefOr[js.Array[default]] = js.undefined
   }
   object TrustedCerts {
     

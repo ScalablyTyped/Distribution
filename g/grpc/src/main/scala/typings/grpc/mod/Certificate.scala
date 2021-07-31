@@ -3,16 +3,14 @@ package typings.grpc.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Certificate extends StObject {
   
   /**
     * The raw certificate in DER form.
     */
-  var raw: Buffer = js.native
+  var raw: Buffer
 }
 object Certificate {
   

@@ -2,15 +2,13 @@ package typings.yadda
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofScenarioLevelPlugin extends StObject {
     
-    def init(options: js.Any): Unit = js.native
+    def init(options: js.Any): Unit
   }
   object TypeofScenarioLevelPlugin {
     

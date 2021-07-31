@@ -2,19 +2,17 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompressVideoSuccessCallbackResult extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 压缩后的大小，单位 kB */
-  var size: String = js.native
+  var size: String
   
   /** 压缩后的临时文件地址 */
-  var tempFilePath: String = js.native
+  var tempFilePath: String
 }
 object CompressVideoSuccessCallbackResult {
   

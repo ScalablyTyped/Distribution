@@ -8,31 +8,29 @@ import typings.openlayers.mod.ProjectionLike
 import typings.openlayers.mod.olx.LogoOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageArcGISRestOptions extends StObject {
   
-  var attributions: js.UndefOr[js.Array[Attribution]] = js.native
+  var attributions: js.UndefOr[js.Array[Attribution]] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
-  var hidpi: js.UndefOr[Boolean] = js.native
+  var hidpi: js.UndefOr[Boolean] = js.undefined
   
-  var imageLoadFunction: js.UndefOr[ImageLoadFunctionType] = js.native
+  var imageLoadFunction: js.UndefOr[ImageLoadFunctionType] = js.undefined
   
-  var logo: js.UndefOr[String | LogoOptions] = js.native
+  var logo: js.UndefOr[String | LogoOptions] = js.undefined
   
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var projection: ProjectionLike = js.native
+  var projection: ProjectionLike
   
-  var ratio: js.UndefOr[Double] = js.native
+  var ratio: js.UndefOr[Double] = js.undefined
   
-  var resolutions: js.UndefOr[js.Array[Double]] = js.native
+  var resolutions: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ImageArcGISRestOptions {
   

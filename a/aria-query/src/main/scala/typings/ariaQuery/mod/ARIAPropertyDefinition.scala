@@ -11,17 +11,15 @@ import typings.ariaQuery.ariaQueryStrings.tokenlist
 import typings.ariaQuery.ariaQueryStrings.tristate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ARIAPropertyDefinition extends StObject {
   
-  var allowundefined: js.UndefOr[Boolean] = js.native
+  var allowundefined: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: string | id | idlist | integer | number | boolean | token | tokenlist | tristate = js.native
+  var `type`: string | id | idlist | integer | number | boolean | token | tokenlist | tristate
   
-  var value: js.UndefOr[js.Array[String | Boolean]] = js.native
+  var value: js.UndefOr[js.Array[String | Boolean]] = js.undefined
 }
 object ARIAPropertyDefinition {
   

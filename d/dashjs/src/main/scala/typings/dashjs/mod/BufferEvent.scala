@@ -7,16 +7,16 @@ import typings.dashjs.dashjsStrings.fragmentedText
 import typings.dashjs.dashjsStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BufferEvent extends Event {
+trait BufferEvent
+  extends StObject
+     with Event {
   
-  var mediaType: video | audio | fragmentedText = js.native
+  var mediaType: video | audio | fragmentedText
   
   @JSName("type")
-  var type_BufferEvent: bufferStalled | bufferLoaded = js.native
+  var type_BufferEvent: bufferStalled | bufferLoaded
 }
 object BufferEvent {
   

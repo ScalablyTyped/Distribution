@@ -4,24 +4,23 @@ import typings.stripe.anon.Accountholdername
 import typings.stripe.mod.IDataOptionsWithMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAccountUpdateOptions
-  extends IDataOptionsWithMetadata
+  extends StObject
+     with IDataOptionsWithMetadata
      with IAccountShared {
   
   /**
     * An account token, used to securely provide details to the account.
     */
-  var account_token: js.UndefOr[String] = js.native
+  var account_token: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the company or business.
     * This field is null unless business_type is set to company.
     */
-  var company: js.UndefOr[ICompanyCreateUpdateOptions] = js.native
+  var company: js.UndefOr[ICompanyCreateUpdateOptions] = js.undefined
   
   /**
     * A card or bank account to attach to the account. You can provide either a
@@ -34,13 +33,13 @@ trait IAccountUpdateOptions
     * existing default for this currency, use the bank account or card creation
     * API.
     */
-  var external_account: js.UndefOr[Accountholdername] = js.native
+  var external_account: js.UndefOr[Accountholdername] = js.undefined
   
   /**
     * Information about the person represented by the account.
     * This field is null unless business_type is set to individual.
     */
-  var individual: js.UndefOr[IIndividualCreateUpdateOptions] = js.native
+  var individual: js.UndefOr[IIndividualCreateUpdateOptions] = js.undefined
 }
 object IAccountUpdateOptions {
   

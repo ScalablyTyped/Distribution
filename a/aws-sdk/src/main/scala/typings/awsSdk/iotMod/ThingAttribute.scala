@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThingAttribute extends StObject {
   
   /**
     * A list of thing attributes which are name-value pairs.
     */
-  var attributes: js.UndefOr[Attributes] = js.native
+  var attributes: js.UndefOr[Attributes] = js.undefined
   
   /**
     * The thing ARN.
     */
-  var thingArn: js.UndefOr[ThingArn] = js.native
+  var thingArn: js.UndefOr[ThingArn] = js.undefined
   
   /**
     * The name of the thing.
     */
-  var thingName: js.UndefOr[ThingName] = js.native
+  var thingName: js.UndefOr[ThingName] = js.undefined
   
   /**
     * The name of the thing type, if the thing has been associated with a type.
     */
-  var thingTypeName: js.UndefOr[ThingTypeName] = js.native
+  var thingTypeName: js.UndefOr[ThingTypeName] = js.undefined
   
   /**
     * The version of the thing record in the registry.
     */
-  var version: js.UndefOr[Version] = js.native
+  var version: js.UndefOr[Version] = js.undefined
 }
 object ThingAttribute {
   

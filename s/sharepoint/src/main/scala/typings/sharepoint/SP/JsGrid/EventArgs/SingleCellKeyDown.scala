@@ -4,17 +4,17 @@ import typings.microsoftAjax.Sys.UI.DomEvent
 import typings.sharepoint.SP.JsGrid.IEventArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SingleCellKeyDown extends IEventArgs {
+trait SingleCellKeyDown
+  extends StObject
+     with IEventArgs {
   
-  var eventInfo: DomEvent = js.native
+  var eventInfo: DomEvent
   
-  var fieldKey: String = js.native
+  var fieldKey: String
   
-  var recordKey: Double = js.native
+  var recordKey: Double
 }
 object SingleCellKeyDown {
   

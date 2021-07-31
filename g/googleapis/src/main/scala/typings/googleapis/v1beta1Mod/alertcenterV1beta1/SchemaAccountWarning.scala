@@ -2,19 +2,17 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Alerts for user account warning events.
   */
-@js.native
 trait SchemaAccountWarning extends StObject {
   
   /**
     * Required. The email of the user that this event belongs to.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Details of the login action associated with the warning event.
@@ -22,7 +20,7 @@ trait SchemaAccountWarning extends StObject {
     * secure app) * Suspicious programmatic login * User suspended (suspicious
     * activity)
     */
-  var loginDetails: js.UndefOr[SchemaLoginDetails] = js.native
+  var loginDetails: js.UndefOr[SchemaLoginDetails] = js.undefined
 }
 object SchemaAccountWarning {
   

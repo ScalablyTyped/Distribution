@@ -5,21 +5,19 @@ import typings.facebookJsSdk.facebookJsSdkStrings.reauthorize
 import typings.facebookJsSdk.facebookJsSdkStrings.rerequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoginOptions extends StObject {
   
-  var auth_type: js.UndefOr[reauthenticate | reauthorize | rerequest] = js.native
+  var auth_type: js.UndefOr[reauthenticate | reauthorize | rerequest] = js.undefined
   
-  var enable_profile_selector: js.UndefOr[Boolean] = js.native
+  var enable_profile_selector: js.UndefOr[Boolean] = js.undefined
   
-  var profile_selector_ids: js.UndefOr[String] = js.native
+  var profile_selector_ids: js.UndefOr[String] = js.undefined
   
-  var return_scopes: js.UndefOr[Boolean] = js.native
+  var return_scopes: js.UndefOr[Boolean] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
 }
 object LoginOptions {
   

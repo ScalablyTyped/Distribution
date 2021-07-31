@@ -8,10 +8,13 @@ import typings.std.HTMLElement
 import typings.std.Touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
+  
+  @JSImport("smooth-scrollbar/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("smooth-scrollbar/utils", "TouchRecord")
   @js.native
@@ -25,30 +28,23 @@ object utilsMod {
     def this(touch: Touch) = this()
   }
   
-  @JSImport("smooth-scrollbar/utils", "clearEventsOn")
-  @js.native
-  def clearEventsOn(scrollbar: Scrollbar): Unit = js.native
+  @scala.inline
+  def clearEventsOn(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearEventsOn")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("smooth-scrollbar/utils", "eventScope")
-  @js.native
-  def eventScope(scrollbar: Scrollbar): js.Function3[/* elem */ EventTarget, /* events */ String, /* fn */ EventHandler, Unit] = js.native
+  @scala.inline
+  def eventScope(scrollbar: Scrollbar): js.Function3[/* elem */ EventTarget, /* events */ String, /* fn */ EventHandler, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventScope")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* elem */ EventTarget, /* events */ String, /* fn */ EventHandler, Unit]]
   
-  @JSImport("smooth-scrollbar/utils", "getPointerData")
-  @js.native
-  def getPointerData(evt: js.Any): js.Any = js.native
+  @scala.inline
+  def getPointerData(evt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerData")(evt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("smooth-scrollbar/utils", "getPosition")
-  @js.native
-  def getPosition(evt: js.Any): XY = js.native
+  @scala.inline
+  def getPosition(evt: js.Any): XY = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(evt.asInstanceOf[js.Any]).asInstanceOf[XY]
   
-  @JSImport("smooth-scrollbar/utils", "isOneOf")
-  @js.native
-  def isOneOf(a: js.Any): Boolean = js.native
-  @JSImport("smooth-scrollbar/utils", "isOneOf")
-  @js.native
-  def isOneOf(a: js.Any, b: js.Array[_]): Boolean = js.native
+  @scala.inline
+  def isOneOf(a: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isOneOf(a: js.Any, b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("smooth-scrollbar/utils", "setStyle")
-  @js.native
-  def setStyle(elem: HTMLElement, styles: js.Any): Unit = js.native
+  @scala.inline
+  def setStyle(elem: HTMLElement, styles: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(elem.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

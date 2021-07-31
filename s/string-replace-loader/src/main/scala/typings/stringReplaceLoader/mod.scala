@@ -3,7 +3,6 @@ package typings.stringReplaceLoader
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,10 +29,11 @@ object mod {
   
   type ReplaceCallback = js.Function2[/* substring */ String, /* repeated */ js.Any, String]
   
-  @js.native
-  trait ReplaceEntries extends Options {
+  trait ReplaceEntries
+    extends StObject
+       with Options {
     
-    var multiple: js.Array[ReplaceEntry] = js.native
+    var multiple: js.Array[ReplaceEntry]
   }
   object ReplaceEntries {
     
@@ -54,16 +54,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait ReplaceEntry extends Options {
+  trait ReplaceEntry
+    extends StObject
+       with Options {
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
     
-    var replace: String | ReplaceCallback = js.native
+    var replace: String | ReplaceCallback
     
-    var search: String | RegExp = js.native
+    var search: String | RegExp
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object ReplaceEntry {
     

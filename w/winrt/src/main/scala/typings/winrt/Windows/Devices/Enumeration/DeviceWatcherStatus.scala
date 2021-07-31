@@ -2,7 +2,6 @@ package typings.winrt.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,20 +11,32 @@ sealed trait DeviceWatcherStatus extends StObject
 object DeviceWatcherStatus extends StObject {
   
   @js.native
-  sealed trait aborted extends DeviceWatcherStatus
+  sealed trait aborted
+    extends StObject
+       with DeviceWatcherStatus
   
   @js.native
-  sealed trait created extends DeviceWatcherStatus
+  sealed trait created
+    extends StObject
+       with DeviceWatcherStatus
   
   @js.native
-  sealed trait enumerationCompleted extends DeviceWatcherStatus
+  sealed trait enumerationCompleted
+    extends StObject
+       with DeviceWatcherStatus
   
   @js.native
-  sealed trait started extends DeviceWatcherStatus
+  sealed trait started
+    extends StObject
+       with DeviceWatcherStatus
   
   @js.native
-  sealed trait stopped extends DeviceWatcherStatus
+  sealed trait stopped
+    extends StObject
+       with DeviceWatcherStatus
   
   @js.native
-  sealed trait stopping extends DeviceWatcherStatus
+  sealed trait stopping
+    extends StObject
+       with DeviceWatcherStatus
 }

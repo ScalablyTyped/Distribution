@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,15 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The implementor of this interface is responsible for starting the drag as a result of receiving such notification.
   */
-@js.native
-trait XDragGestureListener extends XEventListener {
+trait XDragGestureListener
+  extends StObject
+     with XEventListener {
   
   /**
     * A {@link XDragGestureRecognizer} has detected a platform-dependent drag initiating gesture and is notifying this listener in order for it to initiate
     * the action for the user.
     * @param dge The {@link DragGestureEvent} describing the gesture that has just occurred.
     */
-  def dragGestureRecognized(dge: DragGestureEvent): Unit = js.native
+  def dragGestureRecognized(dge: DragGestureEvent): Unit
 }
 object XDragGestureListener {
   

@@ -2,13 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreateAgentNotebookResult extends ResultStatus {
+trait CreateAgentNotebookResult
+  extends StObject
+     with ResultStatus {
   
-  var notebook: AgentNotebookInfo = js.native
+  var notebook: AgentNotebookInfo
 }
 object CreateAgentNotebookResult {
   

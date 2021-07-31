@@ -2,19 +2,17 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Issues extends StObject {
   
-  var contents: String = js.native
+  var contents: String
   
-  var issues: String = js.native
+  var issues: String
   
-  var metadata: String = js.native
+  var metadata: String
   
-  var single_file: String = js.native
+  var single_file: String
 }
 object Issues {
   

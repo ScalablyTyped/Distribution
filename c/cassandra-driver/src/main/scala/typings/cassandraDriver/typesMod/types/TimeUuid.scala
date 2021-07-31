@@ -5,7 +5,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.TimeUuid")
@@ -19,128 +18,95 @@ class TimeUuid protected () extends Uuid {
 }
 object TimeUuid {
   
-  /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
+  @JSImport("cassandra-driver/lib/types", "types.TimeUuid")
   @js.native
-  def fromDate(date: Date): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: js.UndefOr[scala.Nothing], clockId: String): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: js.UndefOr[scala.Nothing], clockId: Buffer): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: String): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: String, clockId: String): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: String, clockId: Buffer): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: Buffer): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: Buffer, clockId: String): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: Buffer, clockId: Buffer): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: Double): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: Double, nodeId: js.UndefOr[scala.Nothing], clockId: String): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: Double, nodeId: js.UndefOr[scala.Nothing], clockId: Buffer): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: Double, nodeId: String): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: Double, nodeId: String, clockId: String): TimeUuid = js.native
-  /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: Double, nodeId: String, clockId: String, callback: ValueCallback[TimeUuid]): Unit = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: Double, nodeId: String, clockId: Buffer): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: Double, nodeId: String, clockId: Buffer, callback: ValueCallback[TimeUuid]): Unit = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: Double, nodeId: Buffer): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: Double, nodeId: Buffer, clockId: String): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: Double, nodeId: Buffer, clockId: String, callback: ValueCallback[TimeUuid]): Unit = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: Double, nodeId: Buffer, clockId: Buffer): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromDate")
-  @js.native
-  def fromDate(date: Date, ticks: Double, nodeId: Buffer, clockId: Buffer, callback: ValueCallback[TimeUuid]): Unit = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.fromString")
-  @js.native
-  def fromString(value: String): TimeUuid = js.native
+  @scala.inline
+  def fromDate(date: Date): TimeUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Double): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Double, nodeId: String): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Double, nodeId: String, clockId: String): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  /* static member */
+  @scala.inline
+  def fromDate(date: Date, ticks: Double, nodeId: String, clockId: String, callback: ValueCallback[TimeUuid]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fromDate(date: Date, ticks: Double, nodeId: String, clockId: Buffer): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Double, nodeId: String, clockId: Buffer, callback: ValueCallback[TimeUuid]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fromDate(date: Date, ticks: Double, nodeId: Unit, clockId: String): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Double, nodeId: Unit, clockId: Buffer): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Double, nodeId: Buffer): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Double, nodeId: Buffer, clockId: String): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Double, nodeId: Buffer, clockId: String, callback: ValueCallback[TimeUuid]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fromDate(date: Date, ticks: Double, nodeId: Buffer, clockId: Buffer): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Double, nodeId: Buffer, clockId: Buffer, callback: ValueCallback[TimeUuid]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fromDate(date: Date, ticks: Unit, nodeId: String): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Unit, nodeId: String, clockId: String): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Unit, nodeId: String, clockId: Buffer): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Unit, nodeId: Unit, clockId: String): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Unit, nodeId: Unit, clockId: Buffer): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Unit, nodeId: Buffer): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Unit, nodeId: Buffer, clockId: String): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def fromDate(date: Date, ticks: Unit, nodeId: Buffer, clockId: Buffer): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.max")
-  @js.native
-  def max(date: Date, ticks: Double): TimeUuid = js.native
+  @scala.inline
+  def fromString(value: String): TimeUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[TimeUuid]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.min")
-  @js.native
-  def min(date: Date, ticks: Double): TimeUuid = js.native
+  @scala.inline
+  def max(date: Date, ticks: Double): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.now")
-  @js.native
-  def now(): TimeUuid = js.native
+  @scala.inline
+  def min(date: Date, ticks: Double): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.now")
-  @js.native
-  def now(callback: ValueCallback[TimeUuid]): Unit = js.native
+  @scala.inline
+  def now(): TimeUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[TimeUuid]
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.now")
-  @js.native
-  def now(nodeId: String): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.now")
-  @js.native
-  def now(nodeId: String, clockId: String): TimeUuid = js.native
+  @scala.inline
+  def now(callback: ValueCallback[TimeUuid]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.now")
-  @js.native
-  def now(nodeId: String, clockId: String, callback: ValueCallback[TimeUuid]): Unit = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.now")
-  @js.native
-  def now(nodeId: String, clockId: Buffer): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.now")
-  @js.native
-  def now(nodeId: String, clockId: Buffer, callback: ValueCallback[TimeUuid]): Unit = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.now")
-  @js.native
-  def now(nodeId: Buffer): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.now")
-  @js.native
-  def now(nodeId: Buffer, clockId: String): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.now")
-  @js.native
-  def now(nodeId: Buffer, clockId: String, callback: ValueCallback[TimeUuid]): Unit = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.now")
-  @js.native
-  def now(nodeId: Buffer, clockId: Buffer): TimeUuid = js.native
-  @JSImport("cassandra-driver/lib/types", "types.TimeUuid.now")
-  @js.native
-  def now(nodeId: Buffer, clockId: Buffer, callback: ValueCallback[TimeUuid]): Unit = js.native
+  @scala.inline
+  def now(nodeId: String): TimeUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(nodeId.asInstanceOf[js.Any]).asInstanceOf[TimeUuid]
+  @scala.inline
+  def now(nodeId: String, clockId: String): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("now")(nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  /* static member */
+  @scala.inline
+  def now(nodeId: String, clockId: String, callback: ValueCallback[TimeUuid]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("now")(nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def now(nodeId: String, clockId: Buffer): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("now")(nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def now(nodeId: String, clockId: Buffer, callback: ValueCallback[TimeUuid]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("now")(nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def now(nodeId: Buffer): TimeUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(nodeId.asInstanceOf[js.Any]).asInstanceOf[TimeUuid]
+  @scala.inline
+  def now(nodeId: Buffer, clockId: String): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("now")(nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def now(nodeId: Buffer, clockId: String, callback: ValueCallback[TimeUuid]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("now")(nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def now(nodeId: Buffer, clockId: Buffer): TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("now")(nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[TimeUuid]
+  @scala.inline
+  def now(nodeId: Buffer, clockId: Buffer, callback: ValueCallback[TimeUuid]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("now")(nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

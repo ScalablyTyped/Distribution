@@ -2,47 +2,45 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about a particular version of an operating system that
   * can be targeted by ads.
   */
-@js.native
 trait SchemaOperatingSystemVersion extends StObject {
   
   /**
     * ID of this operating system version.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#operatingSystemVersion&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Major version (leftmost number) of this operating system version.
     */
-  var majorVersion: js.UndefOr[String] = js.native
+  var majorVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Minor version (number after the first dot) of this operating system
     * version.
     */
-  var minorVersion: js.UndefOr[String] = js.native
+  var minorVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this operating system version.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Operating system of this operating system version.
     */
-  var operatingSystem: js.UndefOr[SchemaOperatingSystem] = js.native
+  var operatingSystem: js.UndefOr[SchemaOperatingSystem] = js.undefined
 }
 object SchemaOperatingSystemVersion {
   

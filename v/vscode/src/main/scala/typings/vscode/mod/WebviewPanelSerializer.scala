@@ -3,7 +3,6 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,7 +38,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param T Type of the webview's state.
   */
-@js.native
 trait WebviewPanelSerializer[T] extends StObject {
   
   /**
@@ -53,7 +51,7 @@ trait WebviewPanelSerializer[T] extends StObject {
     *
     * @return Thenable indicating that the webview has been fully restored.
     */
-  def deserializeWebviewPanel(webviewPanel: WebviewPanel, state: T): Thenable[Unit] = js.native
+  def deserializeWebviewPanel(webviewPanel: WebviewPanel, state: T): Thenable[Unit]
 }
 object WebviewPanelSerializer {
   
@@ -64,7 +62,7 @@ object WebviewPanelSerializer {
   }
   
   @scala.inline
-  implicit class WebviewPanelSerializerMutableBuilder[Self <: WebviewPanelSerializer[_], T] (val x: Self with WebviewPanelSerializer[T]) extends AnyVal {
+  implicit class WebviewPanelSerializerMutableBuilder[Self <: WebviewPanelSerializer[?], T] (val x: Self & WebviewPanelSerializer[T]) extends AnyVal {
     
     @scala.inline
     def setDeserializeWebviewPanel(value: (WebviewPanel, T) => Thenable[Unit]): Self = StObject.set(x, "deserializeWebviewPanel", js.Any.fromFunction2(value))

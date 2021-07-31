@@ -2,26 +2,24 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGlobalTablesInput extends StObject {
   
   /**
     * The first global table name that this operation will evaluate.
     */
-  var ExclusiveStartGlobalTableName: js.UndefOr[TableName] = js.native
+  var ExclusiveStartGlobalTableName: js.UndefOr[TableName] = js.undefined
   
   /**
     * The maximum number of table names to return, if the parameter is not specified DynamoDB defaults to 100. If the number of global tables DynamoDB finds reaches this limit, it stops the operation and returns the table names collected up to that point, with a table name in the LastEvaluatedGlobalTableName to apply in a subsequent operation to the ExclusiveStartGlobalTableName parameter.
     */
-  var Limit: js.UndefOr[PositiveIntegerObject] = js.native
+  var Limit: js.UndefOr[PositiveIntegerObject] = js.undefined
   
   /**
     * Lists the global tables in a specific Region.
     */
-  var RegionName: js.UndefOr[typings.awsSdk.dynamodbMod.RegionName] = js.native
+  var RegionName: js.UndefOr[typings.awsSdk.dynamodbMod.RegionName] = js.undefined
 }
 object ListGlobalTablesInput {
   

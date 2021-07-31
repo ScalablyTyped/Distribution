@@ -3,11 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`simple-line`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineSymbol extends Symbol {
+trait LineSymbol
+  extends StObject
+     with Symbol {
   
   /**
     * The symbol type.

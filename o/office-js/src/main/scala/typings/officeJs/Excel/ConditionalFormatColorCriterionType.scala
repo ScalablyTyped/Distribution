@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,23 +17,37 @@ sealed trait ConditionalFormatColorCriterionType extends StObject
 object ConditionalFormatColorCriterionType extends StObject {
   
   @js.native
-  sealed trait formula extends ConditionalFormatColorCriterionType
+  sealed trait formula
+    extends StObject
+       with ConditionalFormatColorCriterionType
   
   @js.native
-  sealed trait highestValue extends ConditionalFormatColorCriterionType
+  sealed trait highestValue
+    extends StObject
+       with ConditionalFormatColorCriterionType
   
   @js.native
-  sealed trait invalid extends ConditionalFormatColorCriterionType
+  sealed trait invalid
+    extends StObject
+       with ConditionalFormatColorCriterionType
   
   @js.native
-  sealed trait lowestValue extends ConditionalFormatColorCriterionType
+  sealed trait lowestValue
+    extends StObject
+       with ConditionalFormatColorCriterionType
   
   @js.native
-  sealed trait number extends ConditionalFormatColorCriterionType
+  sealed trait number
+    extends StObject
+       with ConditionalFormatColorCriterionType
   
   @js.native
-  sealed trait percent extends ConditionalFormatColorCriterionType
+  sealed trait percent
+    extends StObject
+       with ConditionalFormatColorCriterionType
   
   @js.native
-  sealed trait percentile extends ConditionalFormatColorCriterionType
+  sealed trait percentile
+    extends StObject
+       with ConditionalFormatColorCriterionType
 }

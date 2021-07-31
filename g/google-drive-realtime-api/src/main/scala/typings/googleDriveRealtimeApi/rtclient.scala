@@ -7,16 +7,14 @@ import typings.googleDriveRealtimeApi.gapi.drive.realtime.Error
 import typings.googleDriveRealtimeApi.gapi.drive.realtime.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // rtclient is a global var introduced by realtime-client-utils.js
 object rtclient {
   
-  @js.native
   trait ClientUtils extends StObject {
     
-    var RealtimeLoader: RealtimeLoaderFactory = js.native
+    var RealtimeLoader: RealtimeLoaderFactory
     
     /**
       * Creates a new Realtime file.
@@ -24,10 +22,10 @@ object rtclient {
       * @param mimeType {string} the MIME type of the new file.
       * @param callback {(file:DriveAPIFileResource) => void} the callback to call after creation.
       */
-    def createRealtimeFile(title: String, mimeType: String, callback: js.Function1[/* file */ DriveAPIFileResource, Unit]): Unit = js.native
+    def createRealtimeFile(title: String, mimeType: String, callback: js.Function1[/* file */ DriveAPIFileResource, Unit]): Unit
     
     // INCOMPLETE
-    var params: FileIds = js.native
+    var params: FileIds
   }
   object ClientUtils {
     
@@ -55,10 +53,9 @@ object rtclient {
     }
   }
   
-  @js.native
   trait DriveAPIFileResource extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object DriveAPIFileResource {
     
@@ -76,41 +73,40 @@ object rtclient {
     }
   }
   
-  @js.native
   trait LoaderOptions extends StObject {
     
     // Function to be called after authorization and before loading files.
-    def afterAuth(): Unit = js.native
+    def afterAuth(): Unit
     
     // Your Application ID from the Google APIs Console.
-    var appId: String = js.native
+    var appId: String
     
     // The ID of the button to click to authorize. Must be a DOM element ID.
-    var authButtonElementId: String = js.native
+    var authButtonElementId: String
     
     // Autocreate files right after auth automatically.
-    var autoCreate: Boolean = js.native
+    var autoCreate: Boolean
     
     // Client ID from the console.
-    var clientId: String = js.native
+    var clientId: String
     
     // The name of newly created Drive files, if no title is specified.
-    var defaultTitle: String = js.native
+    var defaultTitle: String
     
     // Function to be called when a Realtime model is first created.
-    def initializeModel(model: Model): Unit = js.native
+    def initializeModel(model: Model): Unit
     
     // The MIME type of newly created Drive Files. By default the application
     // specific MIME type will be used:
     // application/vnd.google-apps.drive-sdk.
-    var newFileMimeType: String = js.native
+    var newFileMimeType: String
     
     // Function to be called every time a Realtime file is loaded.
-    def onFileLoaded(rtdoc: Document): Unit = js.native
+    def onFileLoaded(rtdoc: Document): Unit
     
     //newFileMimeType = null // default
     // Function to be called to initialize custom Collaborative Objects types.
-    def registerTypes(): Unit = js.native
+    def registerTypes(): Unit
   }
   object LoaderOptions {
     
@@ -166,14 +162,13 @@ object rtclient {
     }
   }
   
-  @js.native
   trait RealtimeLoader extends StObject {
     
-    def handleErrors(e: Error): Unit = js.native
+    def handleErrors(e: Error): Unit
     
-    def load(): Unit = js.native
+    def load(): Unit
     
-    def start(): Unit = js.native
+    def start(): Unit
   }
   object RealtimeLoader {
     
@@ -198,7 +193,9 @@ object rtclient {
   }
   
   @js.native
-  trait RealtimeLoaderFactory extends Instantiable1[/* options */ LoaderOptions, RealtimeLoader]
+  trait RealtimeLoaderFactory
+    extends StObject
+       with Instantiable1[/* options */ LoaderOptions, RealtimeLoader]
   
   // INCOMPLETE
   object params

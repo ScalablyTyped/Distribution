@@ -2,7 +2,6 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Search operators let users restrict the query to specific fields relevant
   * to the type of item being searched.
   */
-@js.native
 trait SchemaIntegerOperatorOptions extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait SchemaIntegerOperatorOptions extends StObject {
     * can only contain lowercase letters (a-z). The maximum length is 32
     * characters.
     */
-  var greaterThanOperatorName: js.UndefOr[String] = js.native
+  var greaterThanOperatorName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the operator name required in the query in order to isolate the
@@ -35,7 +33,7 @@ trait SchemaIntegerOperatorOptions extends StObject {
     * only contain lowercase letters (a-z). The maximum length is 32
     * characters.
     */
-  var lessThanOperatorName: js.UndefOr[String] = js.native
+  var lessThanOperatorName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the operator name required in the query in order to isolate the
@@ -49,7 +47,7 @@ trait SchemaIntegerOperatorOptions extends StObject {
     * item. The operator name can only contain lowercase letters (a-z). The
     * maximum length is 32 characters.
     */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
 }
 object SchemaIntegerOperatorOptions {
   

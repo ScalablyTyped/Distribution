@@ -2,13 +2,11 @@ package typings.webglExt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EXTShaderTextureLod extends StObject {
   
-  val __EXT_shader_texture_lod: Unit = js.native
+  val __EXT_shader_texture_lod: Unit
 }
 object EXTShaderTextureLod {
   

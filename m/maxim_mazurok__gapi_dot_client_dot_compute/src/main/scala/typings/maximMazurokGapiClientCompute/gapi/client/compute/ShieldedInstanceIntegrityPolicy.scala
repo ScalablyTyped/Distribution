@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShieldedInstanceIntegrityPolicy extends StObject {
   
   /** Updates the integrity policy baseline using the measurements from the VM instance's most recent boot. */
-  var updateAutoLearnPolicy: js.UndefOr[Boolean] = js.native
+  var updateAutoLearnPolicy: js.UndefOr[Boolean] = js.undefined
 }
 object ShieldedInstanceIntegrityPolicy {
   

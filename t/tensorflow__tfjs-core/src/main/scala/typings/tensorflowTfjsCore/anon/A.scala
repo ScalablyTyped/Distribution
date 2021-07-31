@@ -6,25 +6,23 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait A[T /* <: Tensor[Rank] */] extends StObject {
   
-  var a: T | TensorLike = js.native
+  var a: T | TensorLike
   
-  var activation: js.UndefOr[typings.tensorflowTfjsCore.fusedTypesMod.Activation] = js.native
+  var activation: js.UndefOr[typings.tensorflowTfjsCore.fusedTypesMod.Activation] = js.undefined
   
-  var b: T | TensorLike = js.native
+  var b: T | TensorLike
   
-  var bias: js.UndefOr[Tensor[Rank] | TensorLike] = js.native
+  var bias: js.UndefOr[Tensor[Rank] | TensorLike] = js.undefined
   
-  var preluActivationWeights: js.UndefOr[Tensor[Rank]] = js.native
+  var preluActivationWeights: js.UndefOr[Tensor[Rank]] = js.undefined
   
-  var transposeA: js.UndefOr[Boolean] = js.native
+  var transposeA: js.UndefOr[Boolean] = js.undefined
   
-  var transposeB: js.UndefOr[Boolean] = js.native
+  var transposeB: js.UndefOr[Boolean] = js.undefined
 }
 object A {
   
@@ -35,7 +33,7 @@ object A {
   }
   
   @scala.inline
-  implicit class AMutableBuilder[Self <: A[_], T /* <: Tensor[Rank] */] (val x: Self with A[T]) extends AnyVal {
+  implicit class AMutableBuilder[Self <: A[?], T /* <: Tensor[Rank] */] (val x: Self & A[T]) extends AnyVal {
     
     @scala.inline
     def setA(value: T | TensorLike): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])

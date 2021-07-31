@@ -2,15 +2,13 @@ package typings.wordpressBlockEditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instructions extends StObject {
   
-  var instructions: js.UndefOr[String] = js.native
+  var instructions: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Instructions {
   

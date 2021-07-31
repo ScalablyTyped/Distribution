@@ -2,24 +2,24 @@ package typings.whoisParsed
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("whois-parsed", "lookup")
+  @JSImport("whois-parsed", JSImport.Namespace)
   @js.native
-  def lookup(domainName: String): js.Promise[WhoIsResult] = js.native
-  @JSImport("whois-parsed", "lookup")
-  @js.native
-  def lookup(domainName: String, whoIsOptions: WhoIsOptions): js.Promise[WhoIsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def lookup(domainName: String): js.Promise[WhoIsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(domainName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WhoIsResult]]
+  @scala.inline
+  def lookup(domainName: String, whoIsOptions: WhoIsOptions): js.Promise[WhoIsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(domainName.asInstanceOf[js.Any], whoIsOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WhoIsResult]]
+  
   trait BasicAuthCredentials extends StObject {
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object BasicAuthCredentials {
     
@@ -46,16 +46,15 @@ object mod {
     }
   }
   
-  @js.native
   trait HttpProxy extends StObject {
     
-    var authentication: js.UndefOr[BasicAuthCredentials] = js.native
+    var authentication: js.UndefOr[BasicAuthCredentials] = js.undefined
     
-    var ipaddress: js.UndefOr[String] = js.native
+    var ipaddress: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[Double] = js.native
+    var `type`: js.UndefOr[Double] = js.undefined
   }
   object HttpProxy {
     
@@ -94,10 +93,9 @@ object mod {
     }
   }
   
-  @js.native
   trait WhoIsOptions extends StObject {
     
-    var proxy: js.UndefOr[HttpProxy] = js.native
+    var proxy: js.UndefOr[HttpProxy] = js.undefined
   }
   object WhoIsOptions {
     
@@ -118,22 +116,21 @@ object mod {
     }
   }
   
-  @js.native
   trait WhoIsResult extends StObject {
     
-    var creationDate: js.UndefOr[String] = js.native
+    var creationDate: js.UndefOr[String] = js.undefined
     
-    var domainName: String = js.native
+    var domainName: String
     
-    var expirationDate: js.UndefOr[String] = js.native
+    var expirationDate: js.UndefOr[String] = js.undefined
     
-    var isAvailable: Boolean = js.native
+    var isAvailable: Boolean
     
-    var registrar: js.UndefOr[String] = js.native
+    var registrar: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[js.Array[String]] = js.native
+    var status: js.UndefOr[js.Array[String]] = js.undefined
     
-    var updatedDate: js.UndefOr[String] = js.native
+    var updatedDate: js.UndefOr[String] = js.undefined
   }
   object WhoIsResult {
     

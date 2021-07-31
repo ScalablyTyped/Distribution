@@ -10,25 +10,23 @@ import typings.pulumiAws.outputMod.ec2.GetInstanceRootBlockDevice
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getInstanceMod {
   
-  @JSImport("@pulumi/aws/ec2/getInstance", "getInstance")
+  @JSImport("@pulumi/aws/ec2/getInstance", JSImport.Namespace)
   @js.native
-  def getInstance(): js.Promise[GetInstanceResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getInstance", "getInstance")
-  @js.native
-  def getInstance(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetInstanceResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getInstance", "getInstance")
-  @js.native
-  def getInstance(args: GetInstanceArgs): js.Promise[GetInstanceResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getInstance", "getInstance")
-  @js.native
-  def getInstance(args: GetInstanceArgs, opts: InvokeOptions): js.Promise[GetInstanceResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getInstance(): js.Promise[GetInstanceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Promise[GetInstanceResult]]
+  @scala.inline
+  def getInstance(args: Unit, opts: InvokeOptions): js.Promise[GetInstanceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceResult]]
+  @scala.inline
+  def getInstance(args: GetInstanceArgs): js.Promise[GetInstanceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInstanceResult]]
+  @scala.inline
+  def getInstance(args: GetInstanceArgs, opts: InvokeOptions): js.Promise[GetInstanceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceResult]]
+  
   trait GetInstanceArgs extends StObject {
     
     /**
@@ -36,33 +34,33 @@ object getInstanceMod {
       * several valid keys, for a full reference, check out
       * [describe-instances in the AWS CLI reference][1].
       */
-    val filters: js.UndefOr[js.Array[GetInstanceFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetInstanceFilter]] = js.undefined
     
     /**
       * If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `passwordData` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
       */
-    val getPasswordData: js.UndefOr[Boolean] = js.native
+    val getPasswordData: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Retrieve Base64 encoded User Data contents into the `userDataBase64` attribute. A SHA-1 hash of the User Data contents will always be present in the `userData` attribute. Defaults to `false`.
       */
-    val getUserData: js.UndefOr[Boolean] = js.native
+    val getUserData: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify the exact Instance ID with which to populate the data source.
       */
-    val instanceId: js.UndefOr[String] = js.native
+    val instanceId: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags, each pair of which must
       * exactly match a pair on the desired Instance.
       */
-    val instanceTags: js.UndefOr[StringDictionary[String]] = js.native
+    val instanceTags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * A mapping of tags assigned to the Instance.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetInstanceArgs {
     
@@ -116,110 +114,109 @@ object getInstanceMod {
     }
   }
   
-  @js.native
   trait GetInstanceResult extends StObject {
     
     /**
       * The ID of the AMI used to launch the instance.
       */
-    val ami: String = js.native
+    val ami: String
     
     /**
       * The ARN of the instance.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Whether or not the Instance is associated with a public IP address or not (Boolean).
       */
-    val associatePublicIpAddress: Boolean = js.native
+    val associatePublicIpAddress: Boolean
     
     /**
       * The availability zone of the Instance.
       */
-    val availabilityZone: String = js.native
+    val availabilityZone: String
     
     /**
       * The credit specification of the Instance.
       */
-    val creditSpecifications: js.Array[GetInstanceCreditSpecification] = js.native
+    val creditSpecifications: js.Array[GetInstanceCreditSpecification]
     
-    val disableApiTermination: Boolean = js.native
+    val disableApiTermination: Boolean
     
     /**
       * The EBS block device mappings of the Instance.
       */
-    val ebsBlockDevices: js.Array[GetInstanceEbsBlockDevice] = js.native
+    val ebsBlockDevices: js.Array[GetInstanceEbsBlockDevice]
     
     /**
       * Whether the Instance is EBS optimized or not (Boolean).
       */
-    val ebsOptimized: Boolean = js.native
+    val ebsOptimized: Boolean
     
     /**
       * The ephemeral block device mappings of the Instance.
       */
-    val ephemeralBlockDevices: js.Array[GetInstanceEphemeralBlockDevice] = js.native
+    val ephemeralBlockDevices: js.Array[GetInstanceEphemeralBlockDevice]
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceFilter]] = js.undefined
     
-    val getPasswordData: js.UndefOr[Boolean] = js.native
+    val getPasswordData: js.UndefOr[Boolean] = js.undefined
     
-    val getUserData: js.UndefOr[Boolean] = js.native
+    val getUserData: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The Id of the dedicated host the instance will be assigned to.
       */
-    val hostId: String = js.native
+    val hostId: String
     
     /**
       * The name of the instance profile associated with the Instance.
       */
-    val iamInstanceProfile: String = js.native
+    val iamInstanceProfile: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val instanceId: js.UndefOr[String] = js.native
+    val instanceId: js.UndefOr[String] = js.undefined
     
     /**
       * The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`. See [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) for more information.
       */
-    val instanceState: String = js.native
+    val instanceState: String
     
-    val instanceTags: StringDictionary[String] = js.native
+    val instanceTags: StringDictionary[String]
     
     /**
       * The type of the Instance.
       */
-    val instanceType: String = js.native
+    val instanceType: String
     
     /**
       * The key name of the Instance.
       */
-    val keyName: String = js.native
+    val keyName: String
     
     /**
       * The metadata options of the Instance.
       */
-    val metadataOptions: js.Array[GetInstanceMetadataOption] = js.native
+    val metadataOptions: js.Array[GetInstanceMetadataOption]
     
     /**
       * Whether detailed monitoring is enabled or disabled for the Instance (Boolean).
       */
-    val monitoring: Boolean = js.native
+    val monitoring: Boolean
     
     /**
       * The ID of the network interface that was created with the Instance.
       */
-    val networkInterfaceId: String = js.native
+    val networkInterfaceId: String
     
     /**
       * The Amazon Resource Name (ARN) of the Outpost.
       */
-    val outpostArn: String = js.native
+    val outpostArn: String
     
     /**
       * Base-64 encoded encrypted password data for the instance.
@@ -227,85 +224,85 @@ object getInstanceMod {
       * This attribute is only exported if `getPasswordData` is true.
       * See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
       */
-    val passwordData: String = js.native
+    val passwordData: String
     
     /**
       * The placement group of the Instance.
       */
-    val placementGroup: String = js.native
+    val placementGroup: String
     
     /**
       * The private DNS name assigned to the Instance. Can only be
       * used inside the Amazon EC2, and only available if you've enabled DNS hostnames
       * for your VPC.
       */
-    val privateDns: String = js.native
+    val privateDns: String
     
     /**
       * The private IP address assigned to the Instance.
       */
-    val privateIp: String = js.native
+    val privateIp: String
     
     /**
       * The public DNS name assigned to the Instance. For EC2-VPC, this
       * is only available if you've enabled DNS hostnames for your VPC.
       */
-    val publicDns: String = js.native
+    val publicDns: String
     
     /**
       * The public IP address assigned to the Instance, if applicable. **NOTE**: If you are using an `aws.ec2.Eip` with your instance, you should refer to the EIP's address directly and not use `publicIp`, as this field will change after the EIP is attached.
       */
-    val publicIp: String = js.native
+    val publicIp: String
     
     /**
       * The root block device mappings of the Instance
       */
-    val rootBlockDevices: js.Array[GetInstanceRootBlockDevice] = js.native
+    val rootBlockDevices: js.Array[GetInstanceRootBlockDevice]
     
     /**
       * The secondary private IPv4 addresses assigned to the instance's primary network interface (eth0) in a VPC.
       */
-    val secondaryPrivateIps: js.Array[String] = js.native
+    val secondaryPrivateIps: js.Array[String]
     
     /**
       * The associated security groups.
       */
-    val securityGroups: js.Array[String] = js.native
+    val securityGroups: js.Array[String]
     
     /**
       * Whether the network interface performs source/destination checking (Boolean).
       */
-    val sourceDestCheck: Boolean = js.native
+    val sourceDestCheck: Boolean
     
     /**
       * The VPC subnet ID.
       */
-    val subnetId: String = js.native
+    val subnetId: String
     
     /**
       * A mapping of tags assigned to the Instance.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The tenancy of the instance: `dedicated`, `default`, `host`.
       */
-    val tenancy: String = js.native
+    val tenancy: String
     
     /**
       * SHA-1 hash of User Data supplied to the Instance.
       */
-    val userData: String = js.native
+    val userData: String
     
     /**
       * Base64 encoded contents of User Data supplied to the Instance. This attribute is only exported if `getUserData` is true.
       */
-    val userDataBase64: String = js.native
+    val userDataBase64: String
     
     /**
       * The associated security groups in a non-default VPC.
       */
-    val vpcSecurityGroupIds: js.Array[String] = js.native
+    val vpcSecurityGroupIds: js.Array[String]
   }
   object GetInstanceResult {
     

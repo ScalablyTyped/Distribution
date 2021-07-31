@@ -10,7 +10,6 @@ import typings.fluxible.baseStoreMod.^
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -48,16 +47,6 @@ object mod {
           /* callback */ js.UndefOr[js.Function0[Unit]], 
           Unit
         ],
-      payload: js.UndefOr[scala.Nothing],
-      callback: js.Any
-    ): Unit = js.native
-    def executeAction(
-      action: js.Function3[
-          /* context */ this.type, 
-          /* params */ js.Object, 
-          /* callback */ js.UndefOr[js.Function0[Unit]], 
-          Unit
-        ],
       payload: js.Any
     ): Unit = js.native
     def executeAction(
@@ -68,6 +57,16 @@ object mod {
           Unit
         ],
       payload: js.Any,
+      callback: js.Any
+    ): Unit = js.native
+    def executeAction(
+      action: js.Function3[
+          /* context */ this.type, 
+          /* params */ js.Object, 
+          /* callback */ js.UndefOr[js.Function0[Unit]], 
+          Unit
+        ],
+      payload: Unit,
       callback: js.Any
     ): Unit = js.native
     
@@ -246,18 +245,17 @@ object mod {
   @js.native
   class StoreContext () extends StObject
   
-  @js.native
   trait FluxibleConfiguration extends StObject {
     
     /**
       * Stores your top level React component for access using `getComponent()`
       */
-    var component: js.Any = js.native
+    var component: js.Any
     
     /**
       * App level component action handler
       */
-    var componentActionHandler: js.UndefOr[js.Function0[Unit]] = js.native
+    var componentActionHandler: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object FluxibleConfiguration {
     

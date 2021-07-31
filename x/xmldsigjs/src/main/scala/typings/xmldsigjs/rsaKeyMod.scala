@@ -9,7 +9,6 @@ import typings.xmlCore.mod.XmlObject
 import typings.xmldsigjs.keyInfoClauseMod.KeyInfoClause
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rsaKeyMod {
@@ -42,9 +41,12 @@ object rsaKeyMod {
   /* static members */
   object PssAlgorithmParams {
     
-    @JSImport("xmldsigjs/build/types/xml/key_infos/rsa_key", "PssAlgorithmParams.FromAlgorithm")
+    @JSImport("xmldsigjs/build/types/xml/key_infos/rsa_key", "PssAlgorithmParams")
     @js.native
-    def FromAlgorithm(algorithm: RsaPSSSignParams): PssAlgorithmParams = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def FromAlgorithm(algorithm: RsaPSSSignParams): PssAlgorithmParams = ^.asInstanceOf[js.Dynamic].applyDynamic("FromAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[PssAlgorithmParams]
   }
   
   @JSImport("xmldsigjs/build/types/xml/key_infos/rsa_key", "RsaKeyValue")
@@ -69,18 +71,17 @@ object rsaKeyMod {
     var keyUsage: js.Array[String] = js.native
   }
   
-  @js.native
   trait IJwkRsa extends StObject {
     
-    var alg: String = js.native
+    var alg: String
     
-    var e: String = js.native
+    var e: String
     
-    var ext: Boolean = js.native
+    var ext: Boolean
     
-    var kty: String = js.native
+    var kty: String
     
-    var n: String = js.native
+    var n: String
   }
   object IJwkRsa {
     
@@ -110,10 +111,11 @@ object rsaKeyMod {
     }
   }
   
-  @js.native
-  trait RsaPSSSignParams extends RsaPssParams {
+  trait RsaPSSSignParams
+    extends StObject
+       with RsaPssParams {
     
-    var hash: AlgorithmIdentifier = js.native
+    var hash: AlgorithmIdentifier
   }
   object RsaPSSSignParams {
     

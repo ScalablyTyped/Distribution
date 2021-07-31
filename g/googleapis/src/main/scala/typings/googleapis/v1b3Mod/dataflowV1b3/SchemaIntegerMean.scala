@@ -2,24 +2,22 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A representation of an integer mean metric contribution.
   */
-@js.native
 trait SchemaIntegerMean extends StObject {
   
   /**
     * The number of values being aggregated.
     */
-  var count: js.UndefOr[SchemaSplitInt64] = js.native
+  var count: js.UndefOr[SchemaSplitInt64] = js.undefined
   
   /**
     * The sum of all values being aggregated.
     */
-  var sum: js.UndefOr[SchemaSplitInt64] = js.native
+  var sum: js.UndefOr[SchemaSplitInt64] = js.undefined
 }
 object SchemaIntegerMean {
   

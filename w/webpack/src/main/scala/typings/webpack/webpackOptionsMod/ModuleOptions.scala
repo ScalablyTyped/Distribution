@@ -3,96 +3,94 @@ package typings.webpack.webpackOptionsMod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleOptions extends StObject {
   
   /**
   	 * An array of rules applied by default for modules.
   	 */
-  var defaultRules: js.UndefOr[RuleSetRules] = js.native
+  var defaultRules: js.UndefOr[RuleSetRules] = js.undefined
   
   /**
   	 * Enable warnings for full dynamic dependencies
   	 */
-  var exprContextCritical: js.UndefOr[Boolean] = js.native
+  var exprContextCritical: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Enable recursive directory lookup for full dynamic dependencies
   	 */
-  var exprContextRecursive: js.UndefOr[Boolean] = js.native
+  var exprContextRecursive: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Sets the default regular expression for full dynamic dependencies
   	 */
-  var exprContextRegExp: js.UndefOr[Boolean | RegExp] = js.native
+  var exprContextRegExp: js.UndefOr[Boolean | RegExp] = js.undefined
   
   /**
   	 * Set the default request for full dynamic dependencies
   	 */
-  var exprContextRequest: js.UndefOr[String] = js.native
+  var exprContextRequest: js.UndefOr[String] = js.undefined
   
   /**
   	 * Don't parse files matching. It's matched against the full resolved request.
   	 */
-  var noParse: js.UndefOr[(js.Array[RegExp | String]) | RegExp | js.Function | String] = js.native
+  var noParse: js.UndefOr[(js.Array[RegExp | String]) | RegExp | js.Function | String] = js.undefined
   
   /**
   	 * An array of rules applied for modules.
   	 */
-  var rules: js.UndefOr[RuleSetRules] = js.native
+  var rules: js.UndefOr[RuleSetRules] = js.undefined
   
   /**
   	 * Emit errors instead of warnings when imported names don't exist in imported module
   	 */
-  var strictExportPresence: js.UndefOr[Boolean] = js.native
+  var strictExportPresence: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Handle the this context correctly according to the spec for namespace objects
   	 */
-  var strictThisContextOnImports: js.UndefOr[Boolean] = js.native
+  var strictThisContextOnImports: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Enable warnings when using the require function in a not statically analyse-able way
   	 */
-  var unknownContextCritical: js.UndefOr[Boolean] = js.native
+  var unknownContextCritical: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Enable recursive directory lookup when using the require function in a not statically analyse-able way
   	 */
-  var unknownContextRecursive: js.UndefOr[Boolean] = js.native
+  var unknownContextRecursive: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Sets the regular expression when using the require function in a not statically analyse-able way
   	 */
-  var unknownContextRegExp: js.UndefOr[Boolean | RegExp] = js.native
+  var unknownContextRegExp: js.UndefOr[Boolean | RegExp] = js.undefined
   
   /**
   	 * Sets the request when using the require function in a not statically analyse-able way
   	 */
-  var unknownContextRequest: js.UndefOr[String] = js.native
+  var unknownContextRequest: js.UndefOr[String] = js.undefined
   
   /**
   	 * Cache the resolving of module requests
   	 */
-  var unsafeCache: js.UndefOr[Boolean | js.Function] = js.native
+  var unsafeCache: js.UndefOr[Boolean | js.Function] = js.undefined
   
   /**
   	 * Enable warnings for partial dynamic dependencies
   	 */
-  var wrappedContextCritical: js.UndefOr[Boolean] = js.native
+  var wrappedContextCritical: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Enable recursive directory lookup for partial dynamic dependencies
   	 */
-  var wrappedContextRecursive: js.UndefOr[Boolean] = js.native
+  var wrappedContextRecursive: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Set the inner regular expression for partial dynamic dependencies
   	 */
-  var wrappedContextRegExp: js.UndefOr[RegExp] = js.native
+  var wrappedContextRegExp: js.UndefOr[RegExp] = js.undefined
 }
 object ModuleOptions {
   

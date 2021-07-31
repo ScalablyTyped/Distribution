@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFleetInput extends StObject {
   
   /**
     * A unique identifier for a fleet to be deleted. You can use either the fleet ID or ARN value.
     */
-  var FleetId: FleetIdOrArn = js.native
+  var FleetId: FleetIdOrArn
 }
 object DeleteFleetInput {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3BucketDetail extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the S3 bucket.
     */
-  var Arn: js.UndefOr[String] = js.native
+  var Arn: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the bucket was created at.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.native
+  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Describes the server side encryption method used in the S3 bucket.
     */
-  var DefaultServerSideEncryption: js.UndefOr[typings.awsSdk.guarddutyMod.DefaultServerSideEncryption] = js.native
+  var DefaultServerSideEncryption: js.UndefOr[typings.awsSdk.guarddutyMod.DefaultServerSideEncryption] = js.undefined
   
   /**
     * The name of the S3 bucket.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The owner of the S3 bucket.
     */
-  var Owner: js.UndefOr[typings.awsSdk.guarddutyMod.Owner] = js.native
+  var Owner: js.UndefOr[typings.awsSdk.guarddutyMod.Owner] = js.undefined
   
   /**
     * Describes the public access policies that apply to the S3 bucket.
     */
-  var PublicAccess: js.UndefOr[typings.awsSdk.guarddutyMod.PublicAccess] = js.native
+  var PublicAccess: js.UndefOr[typings.awsSdk.guarddutyMod.PublicAccess] = js.undefined
   
   /**
     * All tags attached to the S3 bucket
     */
-  var Tags: js.UndefOr[typings.awsSdk.guarddutyMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.guarddutyMod.Tags] = js.undefined
   
   /**
     * Describes whether the bucket is a source or destination bucket.
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
 }
 object S3BucketDetail {
   

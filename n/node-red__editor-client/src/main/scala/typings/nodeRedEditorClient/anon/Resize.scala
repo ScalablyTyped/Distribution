@@ -5,19 +5,17 @@ import typings.nodeRedEditorClient.nodeRedEditorClientStrings.vertical
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resize extends StObject {
   
-  var container: js.UndefOr[JQuery[HTMLElement]] = js.native
+  var container: js.UndefOr[JQuery[HTMLElement]] = js.undefined
   
-  var dir: js.UndefOr[vertical] = js.native
+  var dir: js.UndefOr[vertical] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var resize: js.UndefOr[js.Function2[/* size1 */ Double, /* size2 */ Double, Unit]] = js.native
+  var resize: js.UndefOr[js.Function2[/* size1 */ Double, /* size2 */ Double, Unit]] = js.undefined
 }
 object Resize {
   

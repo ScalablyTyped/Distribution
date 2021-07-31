@@ -12,7 +12,7 @@ A simple library for using the JavaScript Fullscreen API.
 | Keywords           | fullscreen, video |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 60327 |
+| # downloads        | 126416 |
 | # stars            | 1 |
 
 ## Links

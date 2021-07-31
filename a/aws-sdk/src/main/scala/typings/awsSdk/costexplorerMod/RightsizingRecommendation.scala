@@ -2,36 +2,34 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RightsizingRecommendation extends StObject {
   
   /**
     * The account that this recommendation is for.
     */
-  var AccountId: js.UndefOr[GenericString] = js.native
+  var AccountId: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  Context regarding the current instance.
     */
-  var CurrentInstance: js.UndefOr[typings.awsSdk.costexplorerMod.CurrentInstance] = js.native
+  var CurrentInstance: js.UndefOr[typings.awsSdk.costexplorerMod.CurrentInstance] = js.undefined
   
   /**
     *  Details for modification recommendations. 
     */
-  var ModifyRecommendationDetail: js.UndefOr[typings.awsSdk.costexplorerMod.ModifyRecommendationDetail] = js.native
+  var ModifyRecommendationDetail: js.UndefOr[typings.awsSdk.costexplorerMod.ModifyRecommendationDetail] = js.undefined
   
   /**
     * Recommendation to either terminate or modify the resource.
     */
-  var RightsizingType: js.UndefOr[typings.awsSdk.costexplorerMod.RightsizingType] = js.native
+  var RightsizingType: js.UndefOr[typings.awsSdk.costexplorerMod.RightsizingType] = js.undefined
   
   /**
     * Details for termination recommendations.
     */
-  var TerminateRecommendationDetail: js.UndefOr[typings.awsSdk.costexplorerMod.TerminateRecommendationDetail] = js.native
+  var TerminateRecommendationDetail: js.UndefOr[typings.awsSdk.costexplorerMod.TerminateRecommendationDetail] = js.undefined
 }
 object RightsizingRecommendation {
   

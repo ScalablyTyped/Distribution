@@ -2,7 +2,6 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Color")
@@ -64,6 +63,10 @@ class Color_ protected () extends StObject {
 /* static members */
 object Color_ {
   
+  @JSImport("highcharts", "Color")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a color instance out of a color string or object.
     *
@@ -72,7 +75,6 @@ object Color_ {
     *
     * @return Color instance.
     */
-  @JSImport("highcharts", "Color.parse")
-  @js.native
-  def parse(input: ColorType): Color_ = js.native
+  @scala.inline
+  def parse(input: ColorType): Color_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Color_]
 }

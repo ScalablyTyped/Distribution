@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PendingMaintenanceAction extends StObject {
   
   /**
     * The type of pending database maintenance action.
     */
-  var action: js.UndefOr[NonEmptyString] = js.native
+  var action: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The effective date of the pending database maintenance action.
     */
-  var currentApplyDate: js.UndefOr[IsoDate] = js.native
+  var currentApplyDate: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * Additional detail about the pending database maintenance action.
     */
-  var description: js.UndefOr[NonEmptyString] = js.native
+  var description: js.UndefOr[NonEmptyString] = js.undefined
 }
 object PendingMaintenanceAction {
   

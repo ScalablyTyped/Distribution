@@ -3,16 +3,16 @@ package typings.slickgrid.Slick
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnBeforeHeaderRowCellDestroyEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
+trait OnBeforeHeaderRowCellDestroyEventArgs[T /* <: SlickData */]
+  extends StObject
+     with GridEventArgs[T] {
   
   // todo: might be JQuery instance
-  var column: Column[T] = js.native
+  var column: Column[T]
   
-  var node: HTMLElement = js.native
+  var node: HTMLElement
 }
 object OnBeforeHeaderRowCellDestroyEventArgs {
   
@@ -23,7 +23,7 @@ object OnBeforeHeaderRowCellDestroyEventArgs {
   }
   
   @scala.inline
-  implicit class OnBeforeHeaderRowCellDestroyEventArgsMutableBuilder[Self <: OnBeforeHeaderRowCellDestroyEventArgs[_], T /* <: SlickData */] (val x: Self with OnBeforeHeaderRowCellDestroyEventArgs[T]) extends AnyVal {
+  implicit class OnBeforeHeaderRowCellDestroyEventArgsMutableBuilder[Self <: OnBeforeHeaderRowCellDestroyEventArgs[?], T /* <: SlickData */] (val x: Self & OnBeforeHeaderRowCellDestroyEventArgs[T]) extends AnyVal {
     
     @scala.inline
     def setColumn(value: Column[T]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])

@@ -2,66 +2,64 @@ package typings.awsSdk.codestarnotificationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeNotificationRuleResult extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the notification rule.
     */
-  var Arn: NotificationRuleArn = js.native
+  var Arn: NotificationRuleArn
   
   /**
     * The name or email alias of the person who created the notification rule.
     */
-  var CreatedBy: js.UndefOr[NotificationRuleCreatedBy] = js.native
+  var CreatedBy: js.UndefOr[NotificationRuleCreatedBy] = js.undefined
   
   /**
     * The date and time the notification rule was created, in timestamp format.
     */
-  var CreatedTimestamp: js.UndefOr[typings.awsSdk.codestarnotificationsMod.CreatedTimestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[typings.awsSdk.codestarnotificationsMod.CreatedTimestamp] = js.undefined
   
   /**
     * The level of detail included in the notifications for this resource. BASIC will include only the contents of the event as it would appear in AWS CloudWatch. FULL will include any supplemental information provided by AWS CodeStar Notifications and/or the service for the resource for which the notification is created.
     */
-  var DetailType: js.UndefOr[typings.awsSdk.codestarnotificationsMod.DetailType] = js.native
+  var DetailType: js.UndefOr[typings.awsSdk.codestarnotificationsMod.DetailType] = js.undefined
   
   /**
     * A list of the event types associated with the notification rule.
     */
-  var EventTypes: js.UndefOr[EventTypeBatch] = js.native
+  var EventTypes: js.UndefOr[EventTypeBatch] = js.undefined
   
   /**
     * The date and time the notification rule was most recently updated, in timestamp format.
     */
-  var LastModifiedTimestamp: js.UndefOr[typings.awsSdk.codestarnotificationsMod.LastModifiedTimestamp] = js.native
+  var LastModifiedTimestamp: js.UndefOr[typings.awsSdk.codestarnotificationsMod.LastModifiedTimestamp] = js.undefined
   
   /**
     * The name of the notification rule.
     */
-  var Name: js.UndefOr[NotificationRuleName] = js.native
+  var Name: js.UndefOr[NotificationRuleName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource associated with the notification rule.
     */
-  var Resource: js.UndefOr[NotificationRuleResource] = js.native
+  var Resource: js.UndefOr[NotificationRuleResource] = js.undefined
   
   /**
     * The status of the notification rule. Valid statuses are on (sending notifications) or off (not sending notifications).
     */
-  var Status: js.UndefOr[NotificationRuleStatus] = js.native
+  var Status: js.UndefOr[NotificationRuleStatus] = js.undefined
   
   /**
     * The tags associated with the notification rule.
     */
-  var Tags: js.UndefOr[typings.awsSdk.codestarnotificationsMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.codestarnotificationsMod.Tags] = js.undefined
   
   /**
     * A list of the SNS topics associated with the notification rule.
     */
-  var Targets: js.UndefOr[TargetsBatch] = js.native
+  var Targets: js.UndefOr[TargetsBatch] = js.undefined
 }
 object DescribeNotificationRuleResult {
   

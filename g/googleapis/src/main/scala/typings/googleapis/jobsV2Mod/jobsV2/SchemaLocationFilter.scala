@@ -2,13 +2,11 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Geographic region of the search.
   */
-@js.native
 trait SchemaLocationFilter extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaLocationFilter extends StObject {
     * searched for is identified as a city or smaller. When the location being
     * searched for is a state or larger, this field is ignored.
     */
-  var distanceInMiles: js.UndefOr[Double] = js.native
+  var distanceInMiles: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional.  Allows the client to return jobs without a set location,
@@ -31,19 +29,19 @@ trait SchemaLocationFilter extends StObject {
     * telecommuting jobs can be treated as less relevant than other jobs in the
     * search response.
     */
-  var isTelecommute: js.UndefOr[Boolean] = js.native
+  var isTelecommute: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.  The latitude and longitude of the geographic center from which
     * to search. This field is ignored if `location_name` is provided.
     */
-  var latLng: js.UndefOr[SchemaLatLng] = js.native
+  var latLng: js.UndefOr[SchemaLatLng] = js.undefined
   
   /**
     * Optional.  The address name, such as &quot;Mountain View&quot; or
     * &quot;Bay Area&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  CLDR region code of the country/region of the address. This
@@ -55,7 +53,7 @@ trait SchemaLocationFilter extends StObject {
     * http://www.unicode.org/cldr/charts/30/supplemental/territory_information.html
     * for details. Example: &quot;CH&quot; for Switzerland.
     */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
 }
 object SchemaLocationFilter {
   

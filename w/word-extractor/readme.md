@@ -10,9 +10,9 @@ Node.js package to read Word .doc files
 | ------------------ | :-------------: |
 | Full name          | word-extractor |
 | Keywords           | word |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 16112 |
+| # downloads        | 27217 |
 | # stars            | 0 |
 
 ## Links

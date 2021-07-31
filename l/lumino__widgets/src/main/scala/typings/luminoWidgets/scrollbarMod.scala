@@ -10,7 +10,6 @@ import typings.std.Event
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollbarMod {
@@ -198,7 +197,6 @@ object scrollbarMod {
     /**
       * An options object for creating a scroll bar.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -206,28 +204,28 @@ object scrollbarMod {
         *
         * The default is `100`.
         */
-      var maximum: js.UndefOr[Double] = js.native
+      var maximum: js.UndefOr[Double] = js.undefined
       
       /**
         * The orientation of the scroll bar.
         *
         * The default is `'vertical'`.
         */
-      var orientation: js.UndefOr[Orientation] = js.native
+      var orientation: js.UndefOr[Orientation] = js.undefined
       
       /**
         * The page size for the scroll bar.
         *
         * The default is `10`.
         */
-      var page: js.UndefOr[Double] = js.native
+      var page: js.UndefOr[Double] = js.undefined
       
       /**
         * The value for the scroll bar.
         *
         * The default is `0`.
         */
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
     }
     object IOptions {
       

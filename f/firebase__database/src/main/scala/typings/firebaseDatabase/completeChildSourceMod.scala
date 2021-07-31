@@ -7,7 +7,6 @@ import typings.firebaseDatabase.viewCacheMod.ViewCache
 import typings.firebaseDatabase.writeTreeMod.WriteTreeRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object completeChildSourceMod {
@@ -18,28 +17,46 @@ object completeChildSourceMod {
   
   @JSImport("@firebase/database/dist/src/core/view/CompleteChildSource", "NoCompleteChildSource_")
   @js.native
-  class NoCompleteChildSource () extends CompleteChildSource {
+  class NoCompleteChildSource ()
+    extends StObject
+       with CompleteChildSource {
     
     /**
       * @inheritDoc
       */
     def getChildAfterChild(): NamedNode | Null = js.native
-    def getChildAfterChild(index: js.UndefOr[scala.Nothing], child: js.UndefOr[scala.Nothing], reverse: Boolean): NamedNode | Null = js.native
-    def getChildAfterChild(index: js.UndefOr[scala.Nothing], child: NamedNode): NamedNode | Null = js.native
-    def getChildAfterChild(index: js.UndefOr[scala.Nothing], child: NamedNode, reverse: Boolean): NamedNode | Null = js.native
+    def getChildAfterChild(index: Unit, child: Unit, reverse: Boolean): NamedNode | Null = js.native
+    def getChildAfterChild(index: Unit, child: NamedNode): NamedNode | Null = js.native
+    def getChildAfterChild(index: Unit, child: NamedNode, reverse: Boolean): NamedNode | Null = js.native
     def getChildAfterChild(index: Index): NamedNode | Null = js.native
-    def getChildAfterChild(index: Index, child: js.UndefOr[scala.Nothing], reverse: Boolean): NamedNode | Null = js.native
+    def getChildAfterChild(index: Index, child: Unit, reverse: Boolean): NamedNode | Null = js.native
     def getChildAfterChild(index: Index, child: NamedNode): NamedNode | Null = js.native
+    /**
+      * @param {!Index} index
+      * @param {!NamedNode} child
+      * @param {boolean} reverse
+      * @return {?NamedNode}
+      */
+    /* CompleteClass */
+    override def getChildAfterChild(index: Index, child: NamedNode, reverse: Boolean): NamedNode | Null = js.native
     
     /**
       * @inheritDoc
       */
     def getCompleteChild(): Node | Null = js.native
+    /**
+      * @param {!string} childKey
+      * @return {?Node}
+      */
+    /* CompleteClass */
+    override def getCompleteChild(childKey: String): Node | Null = js.native
   }
   
   @JSImport("@firebase/database/dist/src/core/view/CompleteChildSource", "WriteTreeCompleteChildSource")
   @js.native
-  class WriteTreeCompleteChildSource protected () extends CompleteChildSource {
+  class WriteTreeCompleteChildSource protected ()
+    extends StObject
+       with CompleteChildSource {
     /**
       * @param {!WriteTreeRef} writes_
       * @param {!ViewCache} viewCache_
@@ -48,6 +65,22 @@ object completeChildSourceMod {
     def this(writes_ : WriteTreeRef, viewCache_ : ViewCache) = this()
     def this(writes_ : WriteTreeRef, viewCache_ : ViewCache, optCompleteServerCache_ : Node) = this()
     
+    /**
+      * @param {!Index} index
+      * @param {!NamedNode} child
+      * @param {boolean} reverse
+      * @return {?NamedNode}
+      */
+    /* CompleteClass */
+    override def getChildAfterChild(index: Index, child: NamedNode, reverse: Boolean): NamedNode | Null = js.native
+    
+    /**
+      * @param {!string} childKey
+      * @return {?Node}
+      */
+    /* CompleteClass */
+    override def getCompleteChild(childKey: String): Node | Null = js.native
+    
     var optCompleteServerCache_ : js.Any = js.native
     
     var viewCache_ : js.Any = js.native
@@ -55,7 +88,6 @@ object completeChildSourceMod {
     var writes_ : js.Any = js.native
   }
   
-  @js.native
   trait CompleteChildSource extends StObject {
     
     /**
@@ -64,13 +96,13 @@ object completeChildSourceMod {
       * @param {boolean} reverse
       * @return {?NamedNode}
       */
-    def getChildAfterChild(index: Index, child: NamedNode, reverse: Boolean): NamedNode | Null = js.native
+    def getChildAfterChild(index: Index, child: NamedNode, reverse: Boolean): NamedNode | Null
     
     /**
       * @param {!string} childKey
       * @return {?Node}
       */
-    def getCompleteChild(childKey: String): Node | Null = js.native
+    def getCompleteChild(childKey: String): Node | Null
   }
   object CompleteChildSource {
     

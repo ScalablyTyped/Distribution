@@ -3,7 +3,6 @@ package typings.googleapis.redisV1beta1Mod.redisV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * only. It is returned as content of the
   * `google.cloud.location.Location.metadata` field.
   */
-@js.native
 trait SchemaGoogleCloudRedisV1beta1LocationMetadata extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaGoogleCloudRedisV1beta1LocationMetadata extends StObject {
     * specified in `location_id` or `alternative_location_id` fields when
     * creating a Redis instance.
     */
-  var availableZones: js.UndefOr[StringDictionary[SchemaGoogleCloudRedisV1beta1ZoneMetadata]] = js.native
+  var availableZones: js.UndefOr[StringDictionary[SchemaGoogleCloudRedisV1beta1ZoneMetadata]] = js.undefined
 }
 object SchemaGoogleCloudRedisV1beta1LocationMetadata {
   

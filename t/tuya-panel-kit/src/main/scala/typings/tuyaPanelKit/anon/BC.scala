@@ -4,17 +4,15 @@ import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import typings.tuyaPanelKit.stackTypesMod.StackNavigationEventMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BC[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends StObject {
   
-  var a: ParamList = js.native
+  var a: ParamList
   
-  var b: RouteName = js.native
+  var b: RouteName
   
-  var c: StackNavigationEventMap = js.native
+  var c: StackNavigationEventMap
 }
 object BC {
   
@@ -25,7 +23,7 @@ object BC {
   }
   
   @scala.inline
-  implicit class BCMutableBuilder[Self <: BC[_, _], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self with (BC[ParamList, RouteName])) extends AnyVal {
+  implicit class BCMutableBuilder[Self <: BC[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self & (BC[ParamList, RouteName])) extends AnyVal {
     
     @scala.inline
     def setA(value: ParamList): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])

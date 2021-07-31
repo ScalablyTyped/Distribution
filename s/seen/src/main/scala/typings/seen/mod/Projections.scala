@@ -2,13 +2,15 @@ package typings.seen.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Projections {
   
-  @JSImport("seen", "Projections.ortho")
+  @JSImport("seen", "Projections")
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def ortho(
     left: js.UndefOr[Double],
     right: js.UndefOr[Double],
@@ -16,10 +18,9 @@ object Projections {
     top: js.UndefOr[Double],
     near: js.UndefOr[Double],
     far: js.UndefOr[Double]
-  ): Matrix = js.native
+  ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("ortho")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[Matrix]
   
-  @JSImport("seen", "Projections.perspective")
-  @js.native
+  @scala.inline
   def perspective(
     left: js.UndefOr[Double],
     right: js.UndefOr[Double],
@@ -27,18 +28,14 @@ object Projections {
     top: js.UndefOr[Double],
     near: js.UndefOr[Double],
     far: js.UndefOr[Double]
-  ): Matrix = js.native
+  ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("perspective")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[Matrix]
   
-  @JSImport("seen", "Projections.perspectiveFov")
-  @js.native
-  def perspectiveFov(): Matrix = js.native
-  @JSImport("seen", "Projections.perspectiveFov")
-  @js.native
-  def perspectiveFov(fovyInDegrees: js.UndefOr[scala.Nothing], front: Double): Matrix = js.native
-  @JSImport("seen", "Projections.perspectiveFov")
-  @js.native
-  def perspectiveFov(fovyInDegrees: Double): Matrix = js.native
-  @JSImport("seen", "Projections.perspectiveFov")
-  @js.native
-  def perspectiveFov(fovyInDegrees: Double, front: Double): Matrix = js.native
+  @scala.inline
+  def perspectiveFov(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("perspectiveFov")().asInstanceOf[Matrix]
+  @scala.inline
+  def perspectiveFov(fovyInDegrees: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("perspectiveFov")(fovyInDegrees.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  @scala.inline
+  def perspectiveFov(fovyInDegrees: Double, front: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("perspectiveFov")(fovyInDegrees.asInstanceOf[js.Any], front.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  @scala.inline
+  def perspectiveFov(fovyInDegrees: Unit, front: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("perspectiveFov")(fovyInDegrees.asInstanceOf[js.Any], front.asInstanceOf[js.Any])).asInstanceOf[Matrix]
 }

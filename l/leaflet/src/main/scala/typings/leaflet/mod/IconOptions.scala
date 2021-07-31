@@ -2,14 +2,14 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IconOptions extends BaseIconOptions {
+trait IconOptions
+  extends StObject
+     with BaseIconOptions {
   
   @JSName("iconUrl")
-  var iconUrl_IconOptions: String = js.native
+  var iconUrl_IconOptions: String
 }
 object IconOptions {
   

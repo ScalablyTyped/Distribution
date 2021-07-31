@@ -21,10 +21,13 @@ import typings.angularCore.mod.Injector
 import typings.angularCore.mod.ModuleWithProviders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpMod {
+  
+  @JSImport("@angular/common/http", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/common/http", "HTTP_INTERCEPTORS")
   @js.native
@@ -59,12 +62,15 @@ object httpMod {
   /* static members */
   object HttpClientXsrfModule {
     
+    @JSImport("@angular/common/http", "HttpClientXsrfModule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Disable the default XSRF protection.
       */
-    @JSImport("@angular/common/http", "HttpClientXsrfModule.disable")
-    @js.native
-    def disable(): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = js.native
+    @scala.inline
+    def disable(): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule]]
     
     /**
       * Configure XSRF protection.
@@ -74,12 +80,10 @@ object httpMod {
       * - Header name default is `X-XSRF-TOKEN`.
       *
       */
-    @JSImport("@angular/common/http", "HttpClientXsrfModule.withOptions")
-    @js.native
-    def withOptions(): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = js.native
-    @JSImport("@angular/common/http", "HttpClientXsrfModule.withOptions")
-    @js.native
-    def withOptions(options: CookieName): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = js.native
+    @scala.inline
+    def withOptions(): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withOptions")().asInstanceOf[ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule]]
+    @scala.inline
+    def withOptions(options: CookieName): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule]]
   }
   
   @JSImport("@angular/common/http", "HttpErrorResponse")
@@ -94,19 +98,19 @@ object httpMod {
   object HttpEventType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularCommon.httpHttpMod.HttpEventType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularCommon.httpHttpMod.HttpEventType & Double] = js.native
     
-    /* 3 */ val DownloadProgress: typings.angularCommon.httpHttpMod.HttpEventType.DownloadProgress with Double = js.native
+    /* 3 */ val DownloadProgress: typings.angularCommon.httpHttpMod.HttpEventType.DownloadProgress & Double = js.native
     
-    /* 4 */ val Response: typings.angularCommon.httpHttpMod.HttpEventType.Response with Double = js.native
+    /* 4 */ val Response: typings.angularCommon.httpHttpMod.HttpEventType.Response & Double = js.native
     
-    /* 2 */ val ResponseHeader: typings.angularCommon.httpHttpMod.HttpEventType.ResponseHeader with Double = js.native
+    /* 2 */ val ResponseHeader: typings.angularCommon.httpHttpMod.HttpEventType.ResponseHeader & Double = js.native
     
-    /* 0 */ val Sent: typings.angularCommon.httpHttpMod.HttpEventType.Sent with Double = js.native
+    /* 0 */ val Sent: typings.angularCommon.httpHttpMod.HttpEventType.Sent & Double = js.native
     
-    /* 1 */ val UploadProgress: typings.angularCommon.httpHttpMod.HttpEventType.UploadProgress with Double = js.native
+    /* 1 */ val UploadProgress: typings.angularCommon.httpHttpMod.HttpEventType.UploadProgress & Double = js.native
     
-    /* 5 */ val User: typings.angularCommon.httpHttpMod.HttpEventType.User with Double = js.native
+    /* 5 */ val User: typings.angularCommon.httpHttpMod.HttpEventType.User & Double = js.native
   }
   
   @JSImport("@angular/common/http", "HttpHandler")
@@ -194,8 +198,8 @@ object httpMod {
       */
     def this(init: Headers) = this()
     def this(init: Headers, defaultStatus: Double) = this()
-    def this(init: Headers, defaultStatus: js.UndefOr[scala.Nothing], defaultStatusText: String) = this()
     def this(init: Headers, defaultStatus: Double, defaultStatusText: String) = this()
+    def this(init: Headers, defaultStatus: Unit, defaultStatusText: String) = this()
   }
   
   @JSImport("@angular/common/http", "HttpUrlEncodingCodec")
@@ -251,9 +255,8 @@ object httpMod {
   abstract class ɵangularPackagesCommonHttpHttpB ()
     extends typings.angularCommon.httpHttpMod.ɵangularPackagesCommonHttpHttpB
   
-  @JSImport("@angular/common/http", "\u0275angular_packages_common_http_http_c")
-  @js.native
-  def ɵangularPackagesCommonHttpHttpC(): js.Object = js.native
+  @scala.inline
+  def ɵangularPackagesCommonHttpHttpC(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_http_http_c")().asInstanceOf[js.Object]
   
   @JSImport("@angular/common/http", "\u0275angular_packages_common_http_http_d")
   @js.native

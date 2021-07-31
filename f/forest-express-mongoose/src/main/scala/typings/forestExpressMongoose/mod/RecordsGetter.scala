@@ -5,7 +5,6 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forest-express-mongoose", "RecordsGetter")
@@ -15,5 +14,5 @@ class RecordsGetter protected () extends AbstractRecordTool {
   
   def getAll(params: Params): js.Promise[js.Array[js.Object]] = js.native
   
-  def getIdsFromRequest(request: Request_[ParamsDictionary, _, _, Query]): js.Promise[js.Array[String]] = js.native
+  def getIdsFromRequest(request: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Promise[js.Array[String]] = js.native
 }

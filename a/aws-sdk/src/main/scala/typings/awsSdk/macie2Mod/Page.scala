@@ -2,26 +2,24 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Page extends StObject {
   
   /**
     * The line that contains the data, and the position of the data on that line.
     */
-  var lineRange: js.UndefOr[Range] = js.native
+  var lineRange: js.UndefOr[Range] = js.undefined
   
   /**
     * The position of the data on the page, relative to the beginning of the page.
     */
-  var offsetRange: js.UndefOr[Range] = js.native
+  var offsetRange: js.UndefOr[Range] = js.undefined
   
   /**
     * The page number of the page that contains the data.
     */
-  var pageNumber: js.UndefOr[long] = js.native
+  var pageNumber: js.UndefOr[long] = js.undefined
 }
 object Page {
   

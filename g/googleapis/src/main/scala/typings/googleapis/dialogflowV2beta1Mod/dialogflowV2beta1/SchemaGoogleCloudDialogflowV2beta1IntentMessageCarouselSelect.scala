@@ -2,19 +2,17 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The card for presenting a carousel of options to select from.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageCarouselSelect extends StObject {
   
   /**
     * Required. Carousel items.
     */
-  var items: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageCarouselSelectItem]] = js.native
+  var items: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageCarouselSelectItem]] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageCarouselSelect {
   

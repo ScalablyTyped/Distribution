@@ -3,40 +3,38 @@ package typings.activexInfopath.InfoPath
 import typings.activexMsxml2.MSXML2.IXMLDOMNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailAdapterObject extends StObject {
   
-  var AttachmentFileName: String = js.native
+  var AttachmentFileName: String
   
-  var AttachmentType: XdAttachmentType = js.native
+  var AttachmentType: XdAttachmentType
   
-  var BCC: String = js.native
+  var BCC: String
   
-  var CC: String = js.native
+  var CC: String
   
   @JSName("InfoPath.EmailAdapterObject_typekey")
-  var InfoPathDotEmailAdapterObject_typekey: EmailAdapterObject = js.native
+  var InfoPathDotEmailAdapterObject_typekey: EmailAdapterObject
   
-  var Intro: String = js.native
+  var Intro: String
   
-  val Name: String = js.native
+  val Name: String
   
-  def Query(): Unit = js.native
+  def Query(): Unit
   
-  val QueryAllowed: Boolean = js.native
+  val QueryAllowed: Boolean
   
-  var Subject: String = js.native
+  var Subject: String
   
-  def Submit(): Unit = js.native
+  def Submit(): Unit
   
-  val SubmitAllowed: Boolean = js.native
+  val SubmitAllowed: Boolean
   
-  def SubmitData(pData: IXMLDOMNode): Unit = js.native
+  def SubmitData(pData: IXMLDOMNode): Unit
   
-  var To: String = js.native
+  var To: String
 }
 object EmailAdapterObject {
   

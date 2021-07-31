@@ -2,18 +2,16 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PagePositions extends StObject {
   
-  var borderBoxCenter: Position = js.native
+  var borderBoxCenter: Position
   
   // how much the page position has changed from the initial
-  var offset: Position = js.native
+  var offset: Position
   
-  var selection: Position = js.native
+  var selection: Position
 }
 object PagePositions {
   

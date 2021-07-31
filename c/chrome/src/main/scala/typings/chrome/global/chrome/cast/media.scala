@@ -1,9 +1,21 @@
 package typings.chrome.global.chrome.cast
 
+import typings.chrome.chrome.cast.media.IdleReason
+import typings.chrome.chrome.cast.media.MediaCommand
+import typings.chrome.chrome.cast.media.MetadataType
+import typings.chrome.chrome.cast.media.PlayerState
+import typings.chrome.chrome.cast.media.RepeatMode
+import typings.chrome.chrome.cast.media.ResumeState
+import typings.chrome.chrome.cast.media.StreamType
+import typings.chrome.chrome.cast.media.TextTrackEdgeType
+import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily
+import typings.chrome.chrome.cast.media.TextTrackFontStyle
+import typings.chrome.chrome.cast.media.TextTrackType
+import typings.chrome.chrome.cast.media.TextTrackWindowType
 import typings.chrome.chrome.cast.media.TrackType
+import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object media {
@@ -27,19 +39,48 @@ object media {
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.EditTracksInfoRequest
     */
   class EditTracksInfoRequest ()
-    extends typings.chrome.chrome.cast.media.EditTracksInfoRequest {
+    extends StObject
+       with typings.chrome.chrome.cast.media.EditTracksInfoRequest {
     def this(activeTrackIds: js.Array[Double]) = this()
-    def this(
-      activeTrackIds: js.UndefOr[scala.Nothing],
-      textTrackStyle: typings.chrome.chrome.cast.media.TextTrackStyle
-    ) = this()
     def this(activeTrackIds: js.Array[Double], textTrackStyle: typings.chrome.chrome.cast.media.TextTrackStyle) = this()
+    def this(activeTrackIds: Unit, textTrackStyle: typings.chrome.chrome.cast.media.TextTrackStyle) = this()
+    
+    /* CompleteClass */
+    var activeTrackIds: js.Array[Double] = js.native
+    
+    /* CompleteClass */
+    var textTrackStyle: typings.chrome.chrome.cast.media.TextTrackStyle = js.native
   }
   
   @JSGlobal("chrome.cast.media.GenericMediaMetadata")
   @js.native
   class GenericMediaMetadata ()
-    extends typings.chrome.chrome.cast.media.GenericMediaMetadata
+    extends StObject
+       with typings.chrome.chrome.cast.media.GenericMediaMetadata {
+    
+    /* CompleteClass */
+    var images: js.Array[typings.chrome.chrome.cast.Image] = js.native
+    
+    /* CompleteClass */
+    var metadataType: MetadataType = js.native
+    
+    /* CompleteClass */
+    var releaseDate: String = js.native
+    
+    /** @deprecated. Use releaseDate instead. */
+    /* CompleteClass */
+    var releaseYear: Double = js.native
+    
+    /* CompleteClass */
+    var subtitle: String = js.native
+    
+    /* CompleteClass */
+    var title: String = js.native
+    
+    /** @deprecated. Use metadataType instead. */
+    /* CompleteClass */
+    var `type`: MetadataType = js.native
+  }
   
   @JSGlobal("chrome.cast.media.GetStatusRequest")
   @js.native
@@ -48,22 +89,27 @@ object media {
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.GetStatusRequest
     */
   class GetStatusRequest ()
-    extends typings.chrome.chrome.cast.media.GetStatusRequest
+    extends StObject
+       with typings.chrome.chrome.cast.media.GetStatusRequest {
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+  }
   
   @JSGlobal("chrome.cast.media.IdleReason")
   @js.native
   object IdleReason extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.IdleReason with String] = js.native
+    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.IdleReason & String] = js.native
     
-    /* "CANCELLED" */ val CANCELLED: typings.chrome.chrome.cast.media.IdleReason.CANCELLED with String = js.native
+    /* "CANCELLED" */ val CANCELLED: typings.chrome.chrome.cast.media.IdleReason.CANCELLED & String = js.native
     
-    /* "ERROR" */ val ERROR: typings.chrome.chrome.cast.media.IdleReason.ERROR with String = js.native
+    /* "ERROR" */ val ERROR: typings.chrome.chrome.cast.media.IdleReason.ERROR & String = js.native
     
-    /* "FINISHED" */ val FINISHED: typings.chrome.chrome.cast.media.IdleReason.FINISHED with String = js.native
+    /* "FINISHED" */ val FINISHED: typings.chrome.chrome.cast.media.IdleReason.FINISHED & String = js.native
     
-    /* "INTERRUPTED" */ val INTERRUPTED: typings.chrome.chrome.cast.media.IdleReason.INTERRUPTED with String = js.native
+    /* "INTERRUPTED" */ val INTERRUPTED: typings.chrome.chrome.cast.media.IdleReason.INTERRUPTED & String = js.native
   }
   
   @JSGlobal("chrome.cast.media.LiveSeekableRange")
@@ -73,60 +119,58 @@ object media {
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.LiveSeekableRange
     */
   class LiveSeekableRange ()
-    extends typings.chrome.chrome.cast.media.LiveSeekableRange {
+    extends StObject
+       with typings.chrome.chrome.cast.media.LiveSeekableRange {
     def this(start: Double) = this()
-    def this(start: js.UndefOr[scala.Nothing], end: Double) = this()
     def this(start: Double, end: Double) = this()
-    def this(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], isMovingWindow: Boolean) = this()
-    def this(start: js.UndefOr[scala.Nothing], end: Double, isMovingWindow: Boolean) = this()
-    def this(start: Double, end: js.UndefOr[scala.Nothing], isMovingWindow: Boolean) = this()
+    def this(start: Unit, end: Double) = this()
     def this(start: Double, end: Double, isMovingWindow: Boolean) = this()
-    def this(
-      start: js.UndefOr[scala.Nothing],
-      end: js.UndefOr[scala.Nothing],
-      isMovingWindow: js.UndefOr[scala.Nothing],
-      isLiveDone: Boolean
-    ) = this()
-    def this(
-      start: js.UndefOr[scala.Nothing],
-      end: js.UndefOr[scala.Nothing],
-      isMovingWindow: Boolean,
-      isLiveDone: Boolean
-    ) = this()
-    def this(
-      start: js.UndefOr[scala.Nothing],
-      end: Double,
-      isMovingWindow: js.UndefOr[scala.Nothing],
-      isLiveDone: Boolean
-    ) = this()
-    def this(start: js.UndefOr[scala.Nothing], end: Double, isMovingWindow: Boolean, isLiveDone: Boolean) = this()
-    def this(
-      start: Double,
-      end: js.UndefOr[scala.Nothing],
-      isMovingWindow: js.UndefOr[scala.Nothing],
-      isLiveDone: Boolean
-    ) = this()
-    def this(start: Double, end: js.UndefOr[scala.Nothing], isMovingWindow: Boolean, isLiveDone: Boolean) = this()
-    def this(start: Double, end: Double, isMovingWindow: js.UndefOr[scala.Nothing], isLiveDone: Boolean) = this()
+    def this(start: Double, end: Unit, isMovingWindow: Boolean) = this()
+    def this(start: Unit, end: Double, isMovingWindow: Boolean) = this()
+    def this(start: Unit, end: Unit, isMovingWindow: Boolean) = this()
     def this(start: Double, end: Double, isMovingWindow: Boolean, isLiveDone: Boolean) = this()
+    def this(start: Double, end: Double, isMovingWindow: Unit, isLiveDone: Boolean) = this()
+    def this(start: Double, end: Unit, isMovingWindow: Boolean, isLiveDone: Boolean) = this()
+    def this(start: Double, end: Unit, isMovingWindow: Unit, isLiveDone: Boolean) = this()
+    def this(start: Unit, end: Double, isMovingWindow: Boolean, isLiveDone: Boolean) = this()
+    def this(start: Unit, end: Double, isMovingWindow: Unit, isLiveDone: Boolean) = this()
+    def this(start: Unit, end: Unit, isMovingWindow: Boolean, isLiveDone: Boolean) = this()
+    def this(start: Unit, end: Unit, isMovingWindow: Unit, isLiveDone: Boolean) = this()
   }
   
   @JSGlobal("chrome.cast.media.LoadRequest")
   @js.native
   class LoadRequest protected ()
-    extends typings.chrome.chrome.cast.media.LoadRequest {
+    extends StObject
+       with typings.chrome.chrome.cast.media.LoadRequest {
     /**
       * @param {!chrome.cast.media.MediaInfo} mediaInfo
       * @constructor
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.LoadRequest
       */
     def this(mediaInfo: typings.chrome.chrome.cast.media.MediaInfo) = this()
+    
+    /* CompleteClass */
+    var activeTrackIds: js.Array[Double] = js.native
+    
+    /* CompleteClass */
+    var autoplay: Boolean = js.native
+    
+    /* CompleteClass */
+    var currentTime: Double = js.native
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+    
+    /* CompleteClass */
+    var media: typings.chrome.chrome.cast.media.MediaInfo = js.native
   }
   
   @JSGlobal("chrome.cast.media.Media")
   @js.native
   class Media protected ()
-    extends typings.chrome.chrome.cast.media.Media {
+    extends StObject
+       with typings.chrome.chrome.cast.media.Media {
     /**
       * @param {string} sessionId
       * @param {number} mediaSessionId
@@ -134,6 +178,283 @@ object media {
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.Media
       */
     def this(sessionId: String, mediaSessionId: Double) = this()
+    
+    /* CompleteClass */
+    var activeTrackIds: js.Array[Double] = js.native
+    
+    /**
+      * @param {function(boolean)} listener
+      */
+    /* CompleteClass */
+    override def addUpdateListener(listener: js.Function1[/* isAlive */ Boolean, Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    var currentItemId: Double = js.native
+    
+    /** @deprecated. Use getEstimatedTime instead */
+    /* CompleteClass */
+    var currentTime: Double = js.native
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+    
+    /**
+      * @param {!chrome.cast.media.EditTracksInfoRequest} editTracksInfoRequest
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def editTracksInfo(
+      editTracksInfoRequest: typings.chrome.chrome.cast.media.EditTracksInfoRequest,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /**
+      * @return {number}
+      * @suppress {deprecated} Uses currentTime member to compute estimated time.
+      */
+    /* CompleteClass */
+    override def getEstimatedTime(): Double = js.native
+    
+    /**
+      * @param {chrome.cast.media.GetStatusRequest} getStatusRequest
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def getStatus(
+      getStatusRequest: typings.chrome.chrome.cast.media.GetStatusRequest,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    var idleReason: IdleReason | Null = js.native
+    
+    /* CompleteClass */
+    var items: js.Array[typings.chrome.chrome.cast.media.QueueItem] = js.native
+    
+    /* CompleteClass */
+    var loadingItemId: Double = js.native
+    
+    /* CompleteClass */
+    var media: typings.chrome.chrome.cast.media.MediaInfo = js.native
+    
+    /* CompleteClass */
+    var mediaSessionId: Double = js.native
+    
+    /**
+      * @param {chrome.cast.media.PauseRequest} pauseRequest
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def pause(
+      pauseRequest: typings.chrome.chrome.cast.media.PauseRequest,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /**
+      * @param {chrome.cast.media.PlayRequest} playRequest
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def play(
+      playRequest: typings.chrome.chrome.cast.media.PlayRequest,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    var playbackRate: Double = js.native
+    
+    /* CompleteClass */
+    var playerState: PlayerState = js.native
+    
+    /* CompleteClass */
+    var preloadedItemId: Double = js.native
+    
+    /**
+      * @param {!chrome.cast.media.QueueItem} item
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def queueAppendItem(
+      item: typings.chrome.chrome.cast.media.QueueItem,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /**
+      * @param {!chrome.cast.media.QueueInsertItemsRequest} queueInsertItemsRequest
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def queueInsertItems(
+      queueInsertItemsRequest: typings.chrome.chrome.cast.media.QueueInsertItemsRequest,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /**
+      * @param {!number} itemId
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def queueJumpToItem(
+      itemId: Double,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /**
+      * @param {!number} itemId
+      * @param {!number} newIndex
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def queueMoveItemToNewIndex(
+      itemId: Double,
+      newIndex: Double,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /**
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def queueNext(
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /**
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def queuePrev(
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /**
+      * @param {!number} itemId
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def queueRemoveItem(
+      itemId: Double,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /**
+      * @param {!chrome.cast.media.QueueReorderItemsRequest} queueReorderItemsRequest
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def queueReorderItems(
+      queueReorderItemsRequest: typings.chrome.chrome.cast.media.QueueReorderItemsRequest,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /**
+      * @param {!chrome.cast.media.RepeatMode} repeatMode
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def queueSetRepeatMode(
+      repeatMode: RepeatMode,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /**
+      * @param {!chrome.cast.media.QueueUpdateItemsRequest} queueUpdateItemsRequest
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def queueUpdateItems(
+      queueUpdateItemsRequest: typings.chrome.chrome.cast.media.QueueUpdateItemsRequest,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /**
+      * @param {function(boolean)} listener
+      */
+    /* CompleteClass */
+    override def removeUpdateListener(listener: js.Function1[/* isAlive */ Boolean, Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    var repeatMode: RepeatMode = js.native
+    
+    /**
+      * @param {!chrome.cast.media.SeekRequest} seekRequest
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def seek(
+      seekRequest: typings.chrome.chrome.cast.media.SeekRequest,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    var sessionId: String = js.native
+    
+    /**
+      * @param {!chrome.cast.media.VolumeRequest} volumeRequest
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def setVolume(
+      volumeRequest: typings.chrome.chrome.cast.media.VolumeRequest,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /**
+      * @param {chrome.cast.media.StopRequest} stopRequest
+      * @param {function()} successCallback
+      * @param {function(!chrome.cast.Error)} errorCallback
+      */
+    /* CompleteClass */
+    override def stop(
+      stopRequest: typings.chrome.chrome.cast.media.StopRequest,
+      successCallback: js.Function,
+      errorCallback: js.Function1[/* error */ typings.chrome.chrome.cast.Error, Unit]
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    var supportedMediaCommands: js.Array[MediaCommand] = js.native
+    
+    /**
+      * @param {!chrome.cast.media.MediaCommand} command
+      * @return {boolean}
+      */
+    /* CompleteClass */
+    override def supportsCommand(command: MediaCommand): Boolean = js.native
+    
+    /* CompleteClass */
+    var volume: typings.chrome.chrome.cast.Volume = js.native
   }
   
   @JSGlobal("chrome.cast.media.MediaCommand")
@@ -141,21 +462,22 @@ object media {
   object MediaCommand extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.MediaCommand with String] = js.native
+    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.MediaCommand & String] = js.native
     
-    /* "pause" */ val PAUSE: typings.chrome.chrome.cast.media.MediaCommand.PAUSE with String = js.native
+    /* "pause" */ val PAUSE: typings.chrome.chrome.cast.media.MediaCommand.PAUSE & String = js.native
     
-    /* "seek" */ val SEEK: typings.chrome.chrome.cast.media.MediaCommand.SEEK with String = js.native
+    /* "seek" */ val SEEK: typings.chrome.chrome.cast.media.MediaCommand.SEEK & String = js.native
     
-    /* "stream_mute" */ val STREAM_MUTE: typings.chrome.chrome.cast.media.MediaCommand.STREAM_MUTE with String = js.native
+    /* "stream_mute" */ val STREAM_MUTE: typings.chrome.chrome.cast.media.MediaCommand.STREAM_MUTE & String = js.native
     
-    /* "stream_volume" */ val STREAM_VOLUME: typings.chrome.chrome.cast.media.MediaCommand.STREAM_VOLUME with String = js.native
+    /* "stream_volume" */ val STREAM_VOLUME: typings.chrome.chrome.cast.media.MediaCommand.STREAM_VOLUME & String = js.native
   }
   
   @JSGlobal("chrome.cast.media.MediaInfo")
   @js.native
   class MediaInfo protected ()
-    extends typings.chrome.chrome.cast.media.MediaInfo {
+    extends StObject
+       with typings.chrome.chrome.cast.media.MediaInfo {
     /**
       * @param {string} contentId
       * @param {string} contentType
@@ -163,6 +485,30 @@ object media {
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.MediaInfo
       */
     def this(contentId: String, contentType: String) = this()
+    
+    /* CompleteClass */
+    var contentId: String = js.native
+    
+    /* CompleteClass */
+    var contentType: String = js.native
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+    
+    /* CompleteClass */
+    var duration: Double = js.native
+    
+    /* CompleteClass */
+    var metadata: js.Any = js.native
+    
+    /* CompleteClass */
+    var streamType: StreamType = js.native
+    
+    /* CompleteClass */
+    var textTrackStyle: typings.chrome.chrome.cast.media.TextTrackStyle = js.native
+    
+    /* CompleteClass */
+    var tracks: js.Array[typings.chrome.chrome.cast.media.Track] = js.native
   }
   
   @JSGlobal("chrome.cast.media.MetadataType")
@@ -170,17 +516,17 @@ object media {
   object MetadataType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.chrome.chrome.cast.media.MetadataType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.chrome.chrome.cast.media.MetadataType & Double] = js.native
     
-    /* 0 */ val GENERIC: typings.chrome.chrome.cast.media.MetadataType.GENERIC with Double = js.native
+    /* 0 */ val GENERIC: typings.chrome.chrome.cast.media.MetadataType.GENERIC & Double = js.native
     
-    /* 2 */ val MOVIE: typings.chrome.chrome.cast.media.MetadataType.MOVIE with Double = js.native
+    /* 2 */ val MOVIE: typings.chrome.chrome.cast.media.MetadataType.MOVIE & Double = js.native
     
-    /* 3 */ val MUSIC_TRACK: typings.chrome.chrome.cast.media.MetadataType.MUSIC_TRACK with Double = js.native
+    /* 3 */ val MUSIC_TRACK: typings.chrome.chrome.cast.media.MetadataType.MUSIC_TRACK & Double = js.native
     
-    /* 4 */ val PHOTO: typings.chrome.chrome.cast.media.MetadataType.PHOTO with Double = js.native
+    /* 4 */ val PHOTO: typings.chrome.chrome.cast.media.MetadataType.PHOTO & Double = js.native
     
-    /* 1 */ val TV_SHOW: typings.chrome.chrome.cast.media.MetadataType.TV_SHOW with Double = js.native
+    /* 1 */ val TV_SHOW: typings.chrome.chrome.cast.media.MetadataType.TV_SHOW & Double = js.native
   }
   
   @JSGlobal("chrome.cast.media.MovieMediaMetadata")
@@ -190,7 +536,35 @@ object media {
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.MovieMediaMetadata
     */
   class MovieMediaMetadata ()
-    extends typings.chrome.chrome.cast.media.MovieMediaMetadata
+    extends StObject
+       with typings.chrome.chrome.cast.media.MovieMediaMetadata {
+    
+    /* CompleteClass */
+    var images: js.Array[typings.chrome.chrome.cast.Image] = js.native
+    
+    /* CompleteClass */
+    var metadataType: MetadataType = js.native
+    
+    /* CompleteClass */
+    var releaseDate: String = js.native
+    
+    /** @deprecated. Use releaseDate instead. */
+    /* CompleteClass */
+    var releaseYear: Double = js.native
+    
+    /* CompleteClass */
+    var studio: String = js.native
+    
+    /* CompleteClass */
+    var subtitle: String = js.native
+    
+    /* CompleteClass */
+    var title: String = js.native
+    
+    /** @deprecated. Use metadataType instead. */
+    /* CompleteClass */
+    var `type`: MetadataType = js.native
+  }
   
   @JSGlobal("chrome.cast.media.MusicTrackMediaMetadata")
   @js.native
@@ -199,7 +573,54 @@ object media {
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.MusicTrackMediaMetadata
     */
   class MusicTrackMediaMetadata ()
-    extends typings.chrome.chrome.cast.media.MusicTrackMediaMetadata
+    extends StObject
+       with typings.chrome.chrome.cast.media.MusicTrackMediaMetadata {
+    
+    /* CompleteClass */
+    var albumArtist: String = js.native
+    
+    /* CompleteClass */
+    var albumName: String = js.native
+    
+    /* CompleteClass */
+    var artist: String = js.native
+    
+    /** @deprecated. Use artist instead. */
+    /* CompleteClass */
+    var artistName: String = js.native
+    
+    /* CompleteClass */
+    var composer: String = js.native
+    
+    /* CompleteClass */
+    var discNumber: Double = js.native
+    
+    /* CompleteClass */
+    var images: js.Array[typings.chrome.chrome.cast.Image] = js.native
+    
+    /* CompleteClass */
+    var metadataType: MetadataType = js.native
+    
+    /* CompleteClass */
+    var releaseDate: String = js.native
+    
+    /** @deprecated. Use releaseDate instead. */
+    /* CompleteClass */
+    var releaseYear: Double = js.native
+    
+    /* CompleteClass */
+    var songName: String = js.native
+    
+    /* CompleteClass */
+    var title: String = js.native
+    
+    /* CompleteClass */
+    var trackNumber: Double = js.native
+    
+    /** @deprecated. Use metadataType instead. */
+    /* CompleteClass */
+    var `type`: MetadataType = js.native
+  }
   
   @JSGlobal("chrome.cast.media.PauseRequest")
   @js.native
@@ -208,7 +629,12 @@ object media {
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.PauseRequest
     */
   class PauseRequest ()
-    extends typings.chrome.chrome.cast.media.PauseRequest
+    extends StObject
+       with typings.chrome.chrome.cast.media.PauseRequest {
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+  }
   
   @JSGlobal("chrome.cast.media.PhotoMediaMetadata")
   @js.native
@@ -217,7 +643,43 @@ object media {
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.PhotoMediaMetadata
     */
   class PhotoMediaMetadata ()
-    extends typings.chrome.chrome.cast.media.PhotoMediaMetadata
+    extends StObject
+       with typings.chrome.chrome.cast.media.PhotoMediaMetadata {
+    
+    /* CompleteClass */
+    var artist: String = js.native
+    
+    /* CompleteClass */
+    var creationDateTime: String = js.native
+    
+    /* CompleteClass */
+    var height: Double = js.native
+    
+    /* CompleteClass */
+    var images: js.Array[typings.chrome.chrome.cast.Image] = js.native
+    
+    /* CompleteClass */
+    var latitude: Double = js.native
+    
+    /* CompleteClass */
+    var location: String = js.native
+    
+    /* CompleteClass */
+    var longitude: Double = js.native
+    
+    /* CompleteClass */
+    var metadataType: MetadataType = js.native
+    
+    /* CompleteClass */
+    var title: String = js.native
+    
+    /** @deprecated. Use metadataType instead. */
+    /* CompleteClass */
+    var `type`: MetadataType = js.native
+    
+    /* CompleteClass */
+    var width: Double = js.native
+  }
   
   @JSGlobal("chrome.cast.media.PlayRequest")
   @js.native
@@ -226,94 +688,168 @@ object media {
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.PlayRequest
     */
   class PlayRequest ()
-    extends typings.chrome.chrome.cast.media.PlayRequest
+    extends StObject
+       with typings.chrome.chrome.cast.media.PlayRequest {
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+  }
   
   @JSGlobal("chrome.cast.media.PlayerState")
   @js.native
   object PlayerState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.PlayerState with String] = js.native
+    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.PlayerState & String] = js.native
     
-    /* "BUFFERING" */ val BUFFERING: typings.chrome.chrome.cast.media.PlayerState.BUFFERING with String = js.native
+    /* "BUFFERING" */ val BUFFERING: typings.chrome.chrome.cast.media.PlayerState.BUFFERING & String = js.native
     
-    /* "IDLE" */ val IDLE: typings.chrome.chrome.cast.media.PlayerState.IDLE with String = js.native
+    /* "IDLE" */ val IDLE: typings.chrome.chrome.cast.media.PlayerState.IDLE & String = js.native
     
-    /* "PAUSED" */ val PAUSED: typings.chrome.chrome.cast.media.PlayerState.PAUSED with String = js.native
+    /* "PAUSED" */ val PAUSED: typings.chrome.chrome.cast.media.PlayerState.PAUSED & String = js.native
     
-    /* "PLAYING" */ val PLAYING: typings.chrome.chrome.cast.media.PlayerState.PLAYING with String = js.native
+    /* "PLAYING" */ val PLAYING: typings.chrome.chrome.cast.media.PlayerState.PLAYING & String = js.native
   }
   
   @JSGlobal("chrome.cast.media.QueueInsertItemsRequest")
   @js.native
   class QueueInsertItemsRequest protected ()
-    extends typings.chrome.chrome.cast.media.QueueInsertItemsRequest {
+    extends StObject
+       with typings.chrome.chrome.cast.media.QueueInsertItemsRequest {
     /**
       * @param {!Array<chrome.cast.media.QueueItem>}
       * @constructor
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueInsertItemsRequest
       */
     def this(itemsToInsert: js.Array[typings.chrome.chrome.cast.media.QueueItem]) = this()
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+    
+    /* CompleteClass */
+    var insertBefore: Double = js.native
+    
+    /* CompleteClass */
+    var items: js.Array[typings.chrome.chrome.cast.media.QueueItem] = js.native
   }
   
   @JSGlobal("chrome.cast.media.QueueItem")
   @js.native
   class QueueItem protected ()
-    extends typings.chrome.chrome.cast.media.QueueItem {
+    extends StObject
+       with typings.chrome.chrome.cast.media.QueueItem {
     /**
       * @param {!chrome.cast.media.MediaInfo} mediaInfo
       * @constructor
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueItem
       */
     def this(mediaInfo: typings.chrome.chrome.cast.media.MediaInfo) = this()
+    
+    /* CompleteClass */
+    var activeTrackIds: js.Array[Number] = js.native
+    
+    /* CompleteClass */
+    var autoplay: Boolean = js.native
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+    
+    /* CompleteClass */
+    var itemId: Double = js.native
+    
+    /* CompleteClass */
+    var media: typings.chrome.chrome.cast.media.MediaInfo = js.native
+    
+    /* CompleteClass */
+    var preloadTime: Double = js.native
+    
+    /* CompleteClass */
+    var startTime: Double = js.native
   }
   
   @JSGlobal("chrome.cast.media.QueueLoadRequest")
   @js.native
   class QueueLoadRequest protected ()
-    extends typings.chrome.chrome.cast.media.QueueLoadRequest {
+    extends StObject
+       with typings.chrome.chrome.cast.media.QueueLoadRequest {
     /**
       * @param {!Array<chrome.cast.media.QueueItem>} items
       * @constructor
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueLoadRequest
       */
     def this(items: js.Array[typings.chrome.chrome.cast.media.QueueItem]) = this()
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+    
+    /* CompleteClass */
+    var items: js.Array[typings.chrome.chrome.cast.media.QueueItem] = js.native
+    
+    /* CompleteClass */
+    var repeatMode: RepeatMode = js.native
+    
+    /* CompleteClass */
+    var startIndex: Double = js.native
   }
   
   @JSGlobal("chrome.cast.media.QueueRemoveItemsRequest")
   @js.native
   class QueueRemoveItemsRequest protected ()
-    extends typings.chrome.chrome.cast.media.QueueRemoveItemsRequest {
+    extends StObject
+       with typings.chrome.chrome.cast.media.QueueRemoveItemsRequest {
     /**
       * @param {!Array<number>}
       * @constructor
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueRemoveItemsRequest
       */
     def this(itemIdsToRemove: js.Array[Double]) = this()
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+    
+    /* CompleteClass */
+    var itemIds: js.Array[Double] = js.native
   }
   
   @JSGlobal("chrome.cast.media.QueueReorderItemsRequest")
   @js.native
   class QueueReorderItemsRequest protected ()
-    extends typings.chrome.chrome.cast.media.QueueReorderItemsRequest {
+    extends StObject
+       with typings.chrome.chrome.cast.media.QueueReorderItemsRequest {
     /**
       * @param {!Array<number>}
       * @constructor
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueReorderItemsRequest
       */
     def this(itemIdsToReorder: js.Array[Double]) = this()
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+    
+    /* CompleteClass */
+    var insertBefore: Double = js.native
+    
+    /* CompleteClass */
+    var itemIds: js.Array[Double] = js.native
   }
   
   @JSGlobal("chrome.cast.media.QueueUpdateItemsRequest")
   @js.native
   class QueueUpdateItemsRequest protected ()
-    extends typings.chrome.chrome.cast.media.QueueUpdateItemsRequest {
+    extends StObject
+       with typings.chrome.chrome.cast.media.QueueUpdateItemsRequest {
     /**
       * @param {!Array<chrome.cast.media.QueueItem>}
       * @constructor
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueUpdateItemsRequest
       */
     def this(itemsToUpdate: js.Array[typings.chrome.chrome.cast.media.QueueItem]) = this()
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+    
+    /* CompleteClass */
+    var item: js.Array[typings.chrome.chrome.cast.media.QueueItem] = js.native
   }
   
   @JSGlobal("chrome.cast.media.RepeatMode")
@@ -321,15 +857,15 @@ object media {
   object RepeatMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.RepeatMode with String] = js.native
+    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.RepeatMode & String] = js.native
     
-    /* "REPEAT_ALL" */ val ALL: typings.chrome.chrome.cast.media.RepeatMode.ALL with String = js.native
+    /* "REPEAT_ALL" */ val ALL: typings.chrome.chrome.cast.media.RepeatMode.ALL & String = js.native
     
-    /* "REPEAT_ALL_AND_SHUFFLE" */ val ALL_AND_SHUFFLE: typings.chrome.chrome.cast.media.RepeatMode.ALL_AND_SHUFFLE with String = js.native
+    /* "REPEAT_ALL_AND_SHUFFLE" */ val ALL_AND_SHUFFLE: typings.chrome.chrome.cast.media.RepeatMode.ALL_AND_SHUFFLE & String = js.native
     
-    /* "REPEAT_OFF" */ val OFF: typings.chrome.chrome.cast.media.RepeatMode.OFF with String = js.native
+    /* "REPEAT_OFF" */ val OFF: typings.chrome.chrome.cast.media.RepeatMode.OFF & String = js.native
     
-    /* "REPEAT_SINGLE" */ val SINGLE: typings.chrome.chrome.cast.media.RepeatMode.SINGLE with String = js.native
+    /* "REPEAT_SINGLE" */ val SINGLE: typings.chrome.chrome.cast.media.RepeatMode.SINGLE & String = js.native
   }
   
   @JSGlobal("chrome.cast.media.ResumeState")
@@ -337,11 +873,11 @@ object media {
   object ResumeState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.ResumeState with String] = js.native
+    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.ResumeState & String] = js.native
     
-    /* "PLAYBACK_PAUSE" */ val PLAYBACK_PAUSE: typings.chrome.chrome.cast.media.ResumeState.PLAYBACK_PAUSE with String = js.native
+    /* "PLAYBACK_PAUSE" */ val PLAYBACK_PAUSE: typings.chrome.chrome.cast.media.ResumeState.PLAYBACK_PAUSE & String = js.native
     
-    /* "PLAYBACK_START" */ val PLAYBACK_START: typings.chrome.chrome.cast.media.ResumeState.PLAYBACK_START with String = js.native
+    /* "PLAYBACK_START" */ val PLAYBACK_START: typings.chrome.chrome.cast.media.ResumeState.PLAYBACK_START & String = js.native
   }
   
   @JSGlobal("chrome.cast.media.SeekRequest")
@@ -351,7 +887,18 @@ object media {
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.SeekRequest
     */
   class SeekRequest ()
-    extends typings.chrome.chrome.cast.media.SeekRequest
+    extends StObject
+       with typings.chrome.chrome.cast.media.SeekRequest {
+    
+    /* CompleteClass */
+    var currentTime: Double = js.native
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+    
+    /* CompleteClass */
+    var resumeState: ResumeState = js.native
+  }
   
   @JSGlobal("chrome.cast.media.StopRequest")
   @js.native
@@ -360,20 +907,25 @@ object media {
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.StopRequest
     */
   class StopRequest ()
-    extends typings.chrome.chrome.cast.media.StopRequest
+    extends StObject
+       with typings.chrome.chrome.cast.media.StopRequest {
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+  }
   
   @JSGlobal("chrome.cast.media.StreamType")
   @js.native
   object StreamType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.StreamType with String] = js.native
+    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.StreamType & String] = js.native
     
-    /* "BUFFERED" */ val BUFFERED: typings.chrome.chrome.cast.media.StreamType.BUFFERED with String = js.native
+    /* "BUFFERED" */ val BUFFERED: typings.chrome.chrome.cast.media.StreamType.BUFFERED & String = js.native
     
-    /* "LIVE" */ val LIVE: typings.chrome.chrome.cast.media.StreamType.LIVE with String = js.native
+    /* "LIVE" */ val LIVE: typings.chrome.chrome.cast.media.StreamType.LIVE & String = js.native
     
-    /* "OTHER" */ val OTHER: typings.chrome.chrome.cast.media.StreamType.OTHER with String = js.native
+    /* "OTHER" */ val OTHER: typings.chrome.chrome.cast.media.StreamType.OTHER & String = js.native
   }
   
   @JSGlobal("chrome.cast.media.TextTrackEdgeType")
@@ -381,17 +933,17 @@ object media {
   object TextTrackEdgeType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.TextTrackEdgeType with String] = js.native
+    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.TextTrackEdgeType & String] = js.native
     
-    /* "DEPRESSED" */ val DEPRESSED: typings.chrome.chrome.cast.media.TextTrackEdgeType.DEPRESSED with String = js.native
+    /* "DEPRESSED" */ val DEPRESSED: typings.chrome.chrome.cast.media.TextTrackEdgeType.DEPRESSED & String = js.native
     
-    /* "DROP_SHADOW" */ val DROP_SHADOW: typings.chrome.chrome.cast.media.TextTrackEdgeType.DROP_SHADOW with String = js.native
+    /* "DROP_SHADOW" */ val DROP_SHADOW: typings.chrome.chrome.cast.media.TextTrackEdgeType.DROP_SHADOW & String = js.native
     
-    /* "NONE" */ val NONE: typings.chrome.chrome.cast.media.TextTrackEdgeType.NONE with String = js.native
+    /* "NONE" */ val NONE: typings.chrome.chrome.cast.media.TextTrackEdgeType.NONE & String = js.native
     
-    /* "OUTLINE" */ val OUTLINE: typings.chrome.chrome.cast.media.TextTrackEdgeType.OUTLINE with String = js.native
+    /* "OUTLINE" */ val OUTLINE: typings.chrome.chrome.cast.media.TextTrackEdgeType.OUTLINE & String = js.native
     
-    /* "RAISED" */ val RAISED: typings.chrome.chrome.cast.media.TextTrackEdgeType.RAISED with String = js.native
+    /* "RAISED" */ val RAISED: typings.chrome.chrome.cast.media.TextTrackEdgeType.RAISED & String = js.native
   }
   
   @JSGlobal("chrome.cast.media.TextTrackFontGenericFamily")
@@ -399,21 +951,21 @@ object media {
   object TextTrackFontGenericFamily extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.TextTrackFontGenericFamily with String] = js.native
+    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.TextTrackFontGenericFamily & String] = js.native
     
-    /* "CASUAL" */ val CASUAL: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.CASUAL with String = js.native
+    /* "CASUAL" */ val CASUAL: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.CASUAL & String = js.native
     
-    /* "CURSIVE" */ val CURSIVE: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.CURSIVE with String = js.native
+    /* "CURSIVE" */ val CURSIVE: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.CURSIVE & String = js.native
     
-    /* "MONOSPACED_SANS_SERIF" */ val MONOSPACED_SANS_SERIF: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.MONOSPACED_SANS_SERIF with String = js.native
+    /* "MONOSPACED_SANS_SERIF" */ val MONOSPACED_SANS_SERIF: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.MONOSPACED_SANS_SERIF & String = js.native
     
-    /* "MONOSPACED_SERIF" */ val MONOSPACED_SERIF: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.MONOSPACED_SERIF with String = js.native
+    /* "MONOSPACED_SERIF" */ val MONOSPACED_SERIF: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.MONOSPACED_SERIF & String = js.native
     
-    /* "SANS_SERIF" */ val SANS_SERIF: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SANS_SERIF with String = js.native
+    /* "SANS_SERIF" */ val SANS_SERIF: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SANS_SERIF & String = js.native
     
-    /* "SERIF" */ val SERIF: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SERIF with String = js.native
+    /* "SERIF" */ val SERIF: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SERIF & String = js.native
     
-    /* "SMALL_CAPITALS" */ val SMALL_CAPITALS: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SMALL_CAPITALS with String = js.native
+    /* "SMALL_CAPITALS" */ val SMALL_CAPITALS: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SMALL_CAPITALS & String = js.native
   }
   
   @JSGlobal("chrome.cast.media.TextTrackFontStyle")
@@ -421,15 +973,15 @@ object media {
   object TextTrackFontStyle extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.TextTrackFontStyle with String] = js.native
+    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.TextTrackFontStyle & String] = js.native
     
-    /* "BOLD" */ val BOLD: typings.chrome.chrome.cast.media.TextTrackFontStyle.BOLD with String = js.native
+    /* "BOLD" */ val BOLD: typings.chrome.chrome.cast.media.TextTrackFontStyle.BOLD & String = js.native
     
-    /* "BOLD_ITALIC" */ val BOLD_ITALIC: typings.chrome.chrome.cast.media.TextTrackFontStyle.BOLD_ITALIC with String = js.native
+    /* "BOLD_ITALIC" */ val BOLD_ITALIC: typings.chrome.chrome.cast.media.TextTrackFontStyle.BOLD_ITALIC & String = js.native
     
-    /* "ITALIC" */ val ITALIC: typings.chrome.chrome.cast.media.TextTrackFontStyle.ITALIC with String = js.native
+    /* "ITALIC" */ val ITALIC: typings.chrome.chrome.cast.media.TextTrackFontStyle.ITALIC & String = js.native
     
-    /* "NORMAL" */ val NORMAL: typings.chrome.chrome.cast.media.TextTrackFontStyle.NORMAL with String = js.native
+    /* "NORMAL" */ val NORMAL: typings.chrome.chrome.cast.media.TextTrackFontStyle.NORMAL & String = js.native
   }
   
   @JSGlobal("chrome.cast.media.TextTrackStyle")
@@ -439,24 +991,62 @@ object media {
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.TextTrackStyle
     */
   class TextTrackStyle ()
-    extends typings.chrome.chrome.cast.media.TextTrackStyle
+    extends StObject
+       with typings.chrome.chrome.cast.media.TextTrackStyle {
+    
+    /* CompleteClass */
+    var backgroundColor: String = js.native
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+    
+    /* CompleteClass */
+    var edgeColor: String = js.native
+    
+    /* CompleteClass */
+    var edgeType: TextTrackEdgeType = js.native
+    
+    /* CompleteClass */
+    var fontFamily: String = js.native
+    
+    /* CompleteClass */
+    var fontGenericFamily: TextTrackFontGenericFamily = js.native
+    
+    /* CompleteClass */
+    var fontScale: Double = js.native
+    
+    /* CompleteClass */
+    var fontStyle: TextTrackFontStyle = js.native
+    
+    /* CompleteClass */
+    var foregroundColor: String = js.native
+    
+    /* CompleteClass */
+    var windowColor: String = js.native
+    
+    /* CompleteClass */
+    var windowRoundedCornerRadius: Double = js.native
+    
+    /* CompleteClass */
+    var windowType: TextTrackWindowType = js.native
+  }
   
   @JSGlobal("chrome.cast.media.TextTrackType")
   @js.native
   object TextTrackType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.TextTrackType with String] = js.native
+    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.TextTrackType & String] = js.native
     
-    /* "CAPTIONS" */ val CAPTIONS: typings.chrome.chrome.cast.media.TextTrackType.CAPTIONS with String = js.native
+    /* "CAPTIONS" */ val CAPTIONS: typings.chrome.chrome.cast.media.TextTrackType.CAPTIONS & String = js.native
     
-    /* "CHAPTERS" */ val CHAPTERS: typings.chrome.chrome.cast.media.TextTrackType.CHAPTERS with String = js.native
+    /* "CHAPTERS" */ val CHAPTERS: typings.chrome.chrome.cast.media.TextTrackType.CHAPTERS & String = js.native
     
-    /* "DESCRIPTIONS" */ val DESCRIPTIONS: typings.chrome.chrome.cast.media.TextTrackType.DESCRIPTIONS with String = js.native
+    /* "DESCRIPTIONS" */ val DESCRIPTIONS: typings.chrome.chrome.cast.media.TextTrackType.DESCRIPTIONS & String = js.native
     
-    /* "METADATA" */ val METADATA: typings.chrome.chrome.cast.media.TextTrackType.METADATA with String = js.native
+    /* "METADATA" */ val METADATA: typings.chrome.chrome.cast.media.TextTrackType.METADATA & String = js.native
     
-    /* "SUBTITLES" */ val SUBTITLES: typings.chrome.chrome.cast.media.TextTrackType.SUBTITLES with String = js.native
+    /* "SUBTITLES" */ val SUBTITLES: typings.chrome.chrome.cast.media.TextTrackType.SUBTITLES & String = js.native
   }
   
   @JSGlobal("chrome.cast.media.TextTrackWindowType")
@@ -464,19 +1054,20 @@ object media {
   object TextTrackWindowType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.TextTrackWindowType with String] = js.native
+    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.TextTrackWindowType & String] = js.native
     
-    /* "NONE" */ val NONE: typings.chrome.chrome.cast.media.TextTrackWindowType.NONE with String = js.native
+    /* "NONE" */ val NONE: typings.chrome.chrome.cast.media.TextTrackWindowType.NONE & String = js.native
     
-    /* "NORMAL" */ val NORMAL: typings.chrome.chrome.cast.media.TextTrackWindowType.NORMAL with String = js.native
+    /* "NORMAL" */ val NORMAL: typings.chrome.chrome.cast.media.TextTrackWindowType.NORMAL & String = js.native
     
-    /* "ROUNDED_CORNERS" */ val ROUNDED_CORNERS: typings.chrome.chrome.cast.media.TextTrackWindowType.ROUNDED_CORNERS with String = js.native
+    /* "ROUNDED_CORNERS" */ val ROUNDED_CORNERS: typings.chrome.chrome.cast.media.TextTrackWindowType.ROUNDED_CORNERS & String = js.native
   }
   
   @JSGlobal("chrome.cast.media.Track")
   @js.native
   class Track protected ()
-    extends typings.chrome.chrome.cast.media.Track {
+    extends StObject
+       with typings.chrome.chrome.cast.media.Track {
     /**
       * @param {number} trackId
       * @param {!chrome.cast.media.TrackType} trackType
@@ -484,6 +1075,30 @@ object media {
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.Track
       */
     def this(trackId: Double, trackType: TrackType) = this()
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+    
+    /* CompleteClass */
+    var language: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
+    var subtype: TextTrackType = js.native
+    
+    /* CompleteClass */
+    var trackContentId: String = js.native
+    
+    /* CompleteClass */
+    var trackContentType: String = js.native
+    
+    /* CompleteClass */
+    var trackId: Double = js.native
+    
+    /* CompleteClass */
+    var `type`: TrackType = js.native
   }
   
   @JSGlobal("chrome.cast.media.TrackType")
@@ -491,13 +1106,13 @@ object media {
   object TrackType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.TrackType with String] = js.native
+    def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.media.TrackType & String] = js.native
     
-    /* "AUDIO" */ val AUDIO: typings.chrome.chrome.cast.media.TrackType.AUDIO with String = js.native
+    /* "AUDIO" */ val AUDIO: typings.chrome.chrome.cast.media.TrackType.AUDIO & String = js.native
     
-    /* "TEXT" */ val TEXT: typings.chrome.chrome.cast.media.TrackType.TEXT with String = js.native
+    /* "TEXT" */ val TEXT: typings.chrome.chrome.cast.media.TrackType.TEXT & String = js.native
     
-    /* "VIDEO" */ val VIDEO: typings.chrome.chrome.cast.media.TrackType.VIDEO with String = js.native
+    /* "VIDEO" */ val VIDEO: typings.chrome.chrome.cast.media.TrackType.VIDEO & String = js.native
   }
   
   @JSGlobal("chrome.cast.media.TvShowMediaMetadata")
@@ -507,18 +1122,68 @@ object media {
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.TvShowMediaMetadata
     */
   class TvShowMediaMetadata ()
-    extends typings.chrome.chrome.cast.media.TvShowMediaMetadata
+    extends StObject
+       with typings.chrome.chrome.cast.media.TvShowMediaMetadata {
+    
+    /* CompleteClass */
+    var episode: Double = js.native
+    
+    /** @deprecated. Use episode instead. */
+    /* CompleteClass */
+    var episodeNumber: Double = js.native
+    
+    /** @deprecated. Use title instead. */
+    /* CompleteClass */
+    var episodeTitle: String = js.native
+    
+    /* CompleteClass */
+    var images: js.Array[typings.chrome.chrome.cast.Image] = js.native
+    
+    /* CompleteClass */
+    var metadataType: MetadataType = js.native
+    
+    /* CompleteClass */
+    var originalAirdate: String = js.native
+    
+    /** @deprecated. Use originalAirdate instead. */
+    /* CompleteClass */
+    var releaseYear: Double = js.native
+    
+    /* CompleteClass */
+    var season: Double = js.native
+    
+    /** @deprecated. Use season instead. */
+    /* CompleteClass */
+    var seasonNumber: Double = js.native
+    
+    /* CompleteClass */
+    var seriesTitle: String = js.native
+    
+    /* CompleteClass */
+    var title: String = js.native
+    
+    /** @deprecated. Use metadataType instead. */
+    /* CompleteClass */
+    var `type`: MetadataType = js.native
+  }
   
   @JSGlobal("chrome.cast.media.VolumeRequest")
   @js.native
   class VolumeRequest protected ()
-    extends typings.chrome.chrome.cast.media.VolumeRequest {
+    extends StObject
+       with typings.chrome.chrome.cast.media.VolumeRequest {
     /**
       * @param {!chrome.cast.Volume} volume
       * @constructor
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.VolumeRequest
       */
     def this(volume: typings.chrome.chrome.cast.Volume) = this()
+    
+    /* CompleteClass */
+    var customData: js.Object = js.native
+    
+    /* CompleteClass */
+    var volume: typings.chrome.chrome.cast.Volume = js.native
   }
   
   /**

@@ -2,25 +2,25 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object default {
   
-  @JSImport("trezor-connect", "default.cancel")
+  @JSImport("trezor-connect", JSImport.Default)
   @js.native
-  def cancel(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("trezor-connect", "default.cipherKeyValue")
-  @js.native
-  def cipherKeyValue(params: Bundle[CipherKeyValueParams]): js.Promise[ResponseMessage[js.Array[CipherKeyValue]]] = js.native
+  @scala.inline
+  def cancel(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def cipherKeyValue(params: Bundle[CipherKeyValueParams]): js.Promise[ResponseMessage[js.Array[CipherKeyValue]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("cipherKeyValue")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[js.Array[CipherKeyValue]]]]
   /**
     * Asks device to encrypt value using the private key derived by given BIP32
     * path and the given key. IV is always computed automatically.
     */
-  @JSImport("trezor-connect", "default.cipherKeyValue")
-  @js.native
-  def cipherKeyValue(params: CipherKeyValueParams): js.Promise[ResponseMessage[CipherKeyValue]] = js.native
+  @scala.inline
+  def cipherKeyValue(params: CipherKeyValueParams): js.Promise[ResponseMessage[CipherKeyValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("cipherKeyValue")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[CipherKeyValue]]]
   
   /**
     * Requests a payment from the users wallet to a set of given outputs.
@@ -30,78 +30,65 @@ object default {
     * returned in hexadecimal format. Change output is added automatically, if
     * needed.
     */
-  @JSImport("trezor-connect", "default.composeTransaction")
-  @js.native
-  def composeTransaction(params: ComposeTransactionParams): js.Promise[ResponseMessage[Transaction]] = js.native
+  @scala.inline
+  def composeTransaction(params: ComposeTransactionParams): js.Promise[ResponseMessage[Transaction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[Transaction]]]
   
-  @JSImport("trezor-connect", "default.dispose")
-  @js.native
-  def dispose(): Unit = js.native
+  @scala.inline
+  def dispose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")().asInstanceOf[Unit]
   
   /**
     * Gets an info of specified account.
     */
-  @JSImport("trezor-connect", "default.getAccountInfo")
-  @js.native
-  def getAccountInfo(params: GetAccountInfoParams): js.Promise[ResponseMessage[AccountInfo]] = js.native
+  @scala.inline
+  def getAccountInfo(params: GetAccountInfoParams): js.Promise[ResponseMessage[AccountInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountInfo")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[AccountInfo]]]
   
-  @JSImport("trezor-connect", "default.getAddress")
-  @js.native
-  def getAddress(params: Bundle[GetAddressParams]): js.Promise[ResponseMessage[js.Array[Address]]] = js.native
+  @scala.inline
+  def getAddress(params: Bundle[GetAddressParams]): js.Promise[ResponseMessage[js.Array[Address]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[js.Array[Address]]]]
   /**
     * Display requested address derived by given BIP32 path on device and
     * returns it to caller. User is asked to confirm the export on Trezor.
     */
-  @JSImport("trezor-connect", "default.getAddress")
-  @js.native
-  def getAddress(params: GetAddressParams): js.Promise[ResponseMessage[Address]] = js.native
+  @scala.inline
+  def getAddress(params: GetAddressParams): js.Promise[ResponseMessage[Address]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[Address]]]
   
   /**
     * Retrieves the set of features associated with the device.
     */
-  @JSImport("trezor-connect", "default.getFeatures")
-  @js.native
-  def getFeatures(): js.Promise[ResponseMessage[Features]] = js.native
-  @JSImport("trezor-connect", "default.getFeatures")
-  @js.native
-  def getFeatures(params: CommonParams): js.Promise[ResponseMessage[Features]] = js.native
+  @scala.inline
+  def getFeatures(): js.Promise[ResponseMessage[Features]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFeatures")().asInstanceOf[js.Promise[ResponseMessage[Features]]]
+  @scala.inline
+  def getFeatures(params: CommonParams): js.Promise[ResponseMessage[Features]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFeatures")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[Features]]]
   
-  @JSImport("trezor-connect", "default.getPublicKey")
-  @js.native
-  def getPublicKey(params: Bundle[GetPublicKeyParams]): js.Promise[ResponseMessage[js.Array[PublicKey]]] = js.native
+  @scala.inline
+  def getPublicKey(params: Bundle[GetPublicKeyParams]): js.Promise[ResponseMessage[js.Array[PublicKey]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[js.Array[PublicKey]]]]
   /**
     * Retrieves BIP32 extended public derived by given BIP32 path.
     * User is presented with a description of the requested key and asked to
     * confirm the export.
     */
-  @JSImport("trezor-connect", "default.getPublicKey")
-  @js.native
-  def getPublicKey(params: GetPublicKeyParams): js.Promise[ResponseMessage[PublicKey]] = js.native
+  @scala.inline
+  def getPublicKey(params: GetPublicKeyParams): js.Promise[ResponseMessage[PublicKey]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[PublicKey]]]
   
   /**
     * Retrieves the settings that TrezorConnect was initialized with.
     */
-  @JSImport("trezor-connect", "default.getSettings")
-  @js.native
-  def getSettings(): js.Promise[ResponseMessage[Settings]] = js.native
+  @scala.inline
+  def getSettings(): js.Promise[ResponseMessage[Settings]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")().asInstanceOf[js.Promise[ResponseMessage[Settings]]]
   
   /**
     * Initializes TrezorConnect.
     */
-  @JSImport("trezor-connect", "default.init")
-  @js.native
-  def init(settings: Settings): Unit = js.native
+  @scala.inline
+  def init(settings: Settings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("trezor-connect", "default.manifest")
-  @js.native
-  def manifest(params: ManifestParams): Unit = js.native
+  @scala.inline
+  def manifest(params: ManifestParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("manifest")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Broadcasts the transaction to the selected network.
     */
-  @JSImport("trezor-connect", "default.pushTransaction")
-  @js.native
-  def pushTransaction(params: PushTransactionParams): js.Promise[ResponseMessage[TransactionID]] = js.native
+  @scala.inline
+  def pushTransaction(params: PushTransactionParams): js.Promise[ResponseMessage[TransactionID]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pushTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[TransactionID]]]
   
   /**
     * Challenge-response authentication via Trezor.
@@ -109,47 +96,40 @@ object default {
     * and randomized challengeHidden for every attempt. You can also provide a
     * visual challenge that will be shown on the device.
     */
-  @JSImport("trezor-connect", "default.requestLogin")
-  @js.native
-  def requestLogin(params: RequestLoginParams): js.Promise[LoginDetails] = js.native
+  @scala.inline
+  def requestLogin(params: RequestLoginParams): js.Promise[LoginDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogin")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LoginDetails]]
   
   /**
     * Performs device setup and generates a new seed.
     */
-  @JSImport("trezor-connect", "default.resetDevice")
-  @js.native
-  def resetDevice(params: ResetDeviceParams): js.Promise[ResponseMessage[Message]] = js.native
+  @scala.inline
+  def resetDevice(params: ResetDeviceParams): js.Promise[ResponseMessage[Message]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resetDevice")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[Message]]]
   
   /**
     * Asks device to sign a message using the private key derived by given BIP32
     * path.
     */
-  @JSImport("trezor-connect", "default.signMessage")
-  @js.native
-  def signMessage(params: SignMessageParams): js.Promise[ResponseMessage[SignedMessage]] = js.native
+  @scala.inline
+  def signMessage(params: SignMessageParams): js.Promise[ResponseMessage[SignedMessage]] = ^.asInstanceOf[js.Dynamic].applyDynamic("signMessage")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[SignedMessage]]]
   
   /**
     * Asks device to sign given inputs and outputs of pre-composed transaction.
     * User is asked to confirm all transaction details on Trezor.
     */
-  @JSImport("trezor-connect", "default.signTransaction")
-  @js.native
-  def signTransaction(params: SignTransactionParams): js.Promise[ResponseMessage[SignedTransaction]] = js.native
+  @scala.inline
+  def signTransaction(params: SignTransactionParams): js.Promise[ResponseMessage[SignedTransaction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("signTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[SignedTransaction]]]
   
   /**
     * Asks device to verify a message using the signer address and signature.
     */
-  @JSImport("trezor-connect", "default.verifyMessage")
-  @js.native
-  def verifyMessage(params: VerifyMessageParams): js.Promise[ResponseMessage[Message]] = js.native
+  @scala.inline
+  def verifyMessage(params: VerifyMessageParams): js.Promise[ResponseMessage[Message]] = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyMessage")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[Message]]]
   
   /**
     * Resets device to factory defaults and removes all private data.
     */
-  @JSImport("trezor-connect", "default.wipeDevice")
-  @js.native
-  def wipeDevice(): js.Promise[ResponseMessage[Message]] = js.native
-  @JSImport("trezor-connect", "default.wipeDevice")
-  @js.native
-  def wipeDevice(params: CommonParams): js.Promise[ResponseMessage[Message]] = js.native
+  @scala.inline
+  def wipeDevice(): js.Promise[ResponseMessage[Message]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wipeDevice")().asInstanceOf[js.Promise[ResponseMessage[Message]]]
+  @scala.inline
+  def wipeDevice(params: CommonParams): js.Promise[ResponseMessage[Message]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wipeDevice")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResponseMessage[Message]]]
 }

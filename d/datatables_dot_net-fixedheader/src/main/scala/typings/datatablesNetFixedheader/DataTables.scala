@@ -3,15 +3,13 @@ package typings.datatablesNetFixedheader
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DataTables {
   
-  @js.native
   trait Api extends StObject {
     
-    var fixedHeader: FixedHeaderApi = js.native
+    var fixedHeader: FixedHeaderApi
   }
   object Api {
     
@@ -29,33 +27,32 @@ object DataTables {
     }
   }
   
-  @js.native
   trait FixedHeaderApi extends StObject {
     
     /**
       * Recalculate the position of the DataTable on the page and adjust the fixed element as appropriate.
       */
-    def adjust(): Api = js.native
+    def adjust(): Api
     
     /**
       * Disable the fixed elements
       */
-    def disable(): Api = js.native
+    def disable(): Api
     
     /**
       * Enable / disable the fixed elements
       */
-    def enable(enable: Boolean): Api = js.native
+    def enable(enable: Boolean): Api
     
     /**
       * Get the fixed footer's offset.
       */
-    def footerOffset(offset: Double): Api = js.native
+    def footerOffset(offset: Double): Api
     
     /**
       * Get the fixed header's offset.
       */
-    def headerOffset(offset: Double): Api = js.native
+    def headerOffset(offset: Double): Api
   }
   object FixedHeaderApi {
     
@@ -94,28 +91,27 @@ object DataTables {
   /*
     * FixedHeader extension options
     */
-  @js.native
   trait FixedHeaderSettings extends StObject {
     
     /*
       * Enable / disable fixed footer
       */
-    var footer: js.UndefOr[Boolean] = js.native
+    var footer: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Offset the table's fixed footer
       */
-    var footerOffset: js.UndefOr[Double] = js.native
+    var footerOffset: js.UndefOr[Double] = js.undefined
     
     /*
       * Enable / disable fixed header
       */
-    var header: js.UndefOr[Boolean] = js.native
+    var header: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Offset the table's fixed header
       */
-    var headerOffset: js.UndefOr[Double] = js.native
+    var headerOffset: js.UndefOr[Double] = js.undefined
   }
   object FixedHeaderSettings {
     
@@ -156,24 +152,20 @@ object DataTables {
   
   @js.native
   trait FixedHeaderStaticFunctions
-    extends Instantiable2[
-          /* dt */ Api, 
-          (/* settings */ Boolean) | (/* settings */ FixedHeaderSettings), 
-          js.UndefOr[scala.Nothing]
-        ] {
+    extends StObject
+       with Instantiable2[/* dt */ Api, (/* settings */ Boolean) | (/* settings */ FixedHeaderSettings), Unit] {
     
     var defaults: FixedHeaderSettings = js.native
     
     var version: String = js.native
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /*
       * FixedHeader extension options
       */
-    var fixedHeader: js.UndefOr[Boolean | FixedHeaderSettings] = js.native
+    var fixedHeader: js.UndefOr[Boolean | FixedHeaderSettings] = js.undefined
   }
   object Settings {
     
@@ -194,10 +186,9 @@ object DataTables {
     }
   }
   
-  @js.native
   trait StaticFunctions extends StObject {
     
-    var FixedHeader: FixedHeaderStaticFunctions = js.native
+    var FixedHeader: FixedHeaderStaticFunctions
   }
   object StaticFunctions {
     

@@ -7,7 +7,6 @@ import typings.react.mod.RefObject
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object teachingBubbleBaseMod {
@@ -38,10 +37,9 @@ object teachingBubbleBaseMod {
     def defaultProps_=(x: CalloutProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ITeachingBubbleState extends StObject {
     
-    var isTeachingBubbleVisible: js.UndefOr[Boolean] = js.native
+    var isTeachingBubbleVisible: js.UndefOr[Boolean] = js.undefined
   }
   object ITeachingBubbleState {
     

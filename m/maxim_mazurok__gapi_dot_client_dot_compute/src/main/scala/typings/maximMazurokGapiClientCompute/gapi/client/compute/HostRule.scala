@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostRule extends StObject {
   
   /** An optional description of this resource. Provide this property when you create the resource. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The list of host patterns to match. They must be valid hostnames with optional port numbers in the format host:port. * matches any string of ([a-z0-9-.]*). In that case, * must be
     * the first character and must be followed in the pattern by either - or ..
     * * based matching is not supported when the URL map is bound to target gRPC proxy that has validateForProxyless field set to true.
     */
-  var hosts: js.UndefOr[js.Array[String]] = js.native
+  var hosts: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The name of the PathMatcher to use to match the path portion of the URL if the hostRule matches the URL's host portion. */
-  var pathMatcher: js.UndefOr[String] = js.native
+  var pathMatcher: js.UndefOr[String] = js.undefined
 }
 object HostRule {
   

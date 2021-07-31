@@ -8,7 +8,6 @@ import typings.winrt.Windows.Storage.IStorageFile
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Transcoding {
@@ -20,16 +19,24 @@ object Transcoding {
   object TranscodeFailureReason extends StObject {
     
     @js.native
-    sealed trait codecNotFound extends TranscodeFailureReason
+    sealed trait codecNotFound
+      extends StObject
+         with TranscodeFailureReason
     
     @js.native
-    sealed trait invalidProfile extends TranscodeFailureReason
+    sealed trait invalidProfile
+      extends StObject
+         with TranscodeFailureReason
     
     @js.native
-    sealed trait none extends TranscodeFailureReason
+    sealed trait none
+      extends StObject
+         with TranscodeFailureReason
     
     @js.native
-    sealed trait unknown extends TranscodeFailureReason
+    sealed trait unknown
+      extends StObject
+         with TranscodeFailureReason
   }
   
   @js.native
@@ -56,14 +63,13 @@ object Transcoding {
     var trimStopTime: Double = js.native
   }
   
-  @js.native
   trait IPrepareTranscodeResult extends StObject {
     
-    var canTranscode: Boolean = js.native
+    var canTranscode: Boolean
     
-    var failureReason: TranscodeFailureReason = js.native
+    var failureReason: TranscodeFailureReason
     
-    def transcodeAsync(): IAsyncActionWithProgress[Double] = js.native
+    def transcodeAsync(): IAsyncActionWithProgress[Double]
   }
   object IPrepareTranscodeResult {
     
@@ -92,10 +98,13 @@ object Transcoding {
   }
   
   @js.native
-  trait MediaTranscoder extends IMediaTranscoder
+  trait MediaTranscoder
+    extends StObject
+       with IMediaTranscoder
   
-  @js.native
-  trait PrepareTranscodeResult extends IPrepareTranscodeResult
+  trait PrepareTranscodeResult
+    extends StObject
+       with IPrepareTranscodeResult
   object PrepareTranscodeResult {
     
     @scala.inline

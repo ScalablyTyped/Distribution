@@ -10,9 +10,9 @@ Format size, permissions
 | ------------------ | :-------------: |
 | Full name          | format-io |
 | Keywords           | format, size, permissions |
-| # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 60025 |
+| # releases         | 2 |
+| # dependents       | 12 |
+| # downloads        | 62620 |
 | # stars            | 1 |
 
 ## Links

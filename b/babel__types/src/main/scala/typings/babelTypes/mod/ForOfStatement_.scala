@@ -3,43 +3,36 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.ForOfStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait ForOfStatement_
-  extends BlockParent
+- typings.babelTypes.mod._Node because Already inherited */ trait ForOfStatement_
+  extends StObject
      with BaseNode
+     with BlockParent
      with For
      with ForXStatement
      with Loop
      with Scopable
      with Statement {
   
-  var await: Boolean = js.native
+  var await: Boolean
   
-  var body: Statement = js.native
+  var body: Statement
   
-  var left: VariableDeclaration_ | LVal = js.native
+  var left: VariableDeclaration_ | LVal
   
-  var right: Expression = js.native
+  var right: Expression
   
   @JSName("type")
-  var type_ForOfStatement_ : ForOfStatement = js.native
+  var type_ForOfStatement_ : ForOfStatement
 }
 object ForOfStatement_ {
   
   @scala.inline
-  def apply(
-    await: Boolean,
-    body: Statement,
-    left: VariableDeclaration_ | LVal,
-    right: Expression,
-    `type`: ForOfStatement
-  ): ForOfStatement_ = {
-    val __obj = js.Dynamic.literal(await = await.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(await: Boolean, body: Statement, left: VariableDeclaration_ | LVal, right: Expression): ForOfStatement_ = {
+    val __obj = js.Dynamic.literal(await = await.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ForOfStatement")
     __obj.asInstanceOf[ForOfStatement_]
   }
   

@@ -2,26 +2,24 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTypeRequest extends StObject {
   
   /**
     * The API ID.
     */
-  var apiId: String = js.native
+  var apiId: String
   
   /**
     * The type definition, in GraphQL Schema Definition Language (SDL) format. For more information, see the GraphQL SDL documentation.
     */
-  var definition: String = js.native
+  var definition: String
   
   /**
     * The type format: SDL or JSON.
     */
-  var format: TypeDefinitionFormat = js.native
+  var format: TypeDefinitionFormat
 }
 object CreateTypeRequest {
   

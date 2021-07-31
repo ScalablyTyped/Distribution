@@ -3,7 +3,6 @@ package typings.opentelemetryCore
 import typings.opentelemetryCore.anon.FetchStart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -15,31 +14,38 @@ object typesMod {
   object LogLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[LogLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[LogLevel & Double] = js.native
     
     @js.native
-    sealed trait DEBUG extends LogLevel
-    /* 3 */ val DEBUG: typings.opentelemetryCore.typesMod.LogLevel.DEBUG with Double = js.native
+    sealed trait DEBUG
+      extends StObject
+         with LogLevel
+    /* 3 */ val DEBUG: typings.opentelemetryCore.typesMod.LogLevel.DEBUG & Double = js.native
     
     @js.native
-    sealed trait ERROR extends LogLevel
-    /* 0 */ val ERROR: typings.opentelemetryCore.typesMod.LogLevel.ERROR with Double = js.native
+    sealed trait ERROR
+      extends StObject
+         with LogLevel
+    /* 0 */ val ERROR: typings.opentelemetryCore.typesMod.LogLevel.ERROR & Double = js.native
     
     @js.native
-    sealed trait INFO extends LogLevel
-    /* 2 */ val INFO: typings.opentelemetryCore.typesMod.LogLevel.INFO with Double = js.native
+    sealed trait INFO
+      extends StObject
+         with LogLevel
+    /* 2 */ val INFO: typings.opentelemetryCore.typesMod.LogLevel.INFO & Double = js.native
     
     @js.native
-    sealed trait WARN extends LogLevel
-    /* 1 */ val WARN: typings.opentelemetryCore.typesMod.LogLevel.WARN with Double = js.native
+    sealed trait WARN
+      extends StObject
+         with LogLevel
+    /* 1 */ val WARN: typings.opentelemetryCore.typesMod.LogLevel.WARN & Double = js.native
   }
   
-  @js.native
   trait InstrumentationLibrary extends StObject {
     
-    val name: String = js.native
+    val name: String
     
-    val version: String = js.native
+    val version: String
   }
   object InstrumentationLibrary {
     
@@ -62,14 +68,13 @@ object typesMod {
   
   type LogLevelString = /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LogLevel * / any */ String
   
-  @js.native
   trait ShimWrapped extends StObject {
     
-    var __original: js.Function = js.native
+    var __original: js.Function
     
-    var __unwrap: js.Function = js.native
+    var __unwrap: js.Function
     
-    var __wrapped: Boolean = js.native
+    var __wrapped: Boolean
   }
   object ShimWrapped {
     
@@ -93,10 +98,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TimeOriginLegacy extends StObject {
     
-    var timing: FetchStart = js.native
+    var timing: FetchStart
   }
   object TimeOriginLegacy {
     

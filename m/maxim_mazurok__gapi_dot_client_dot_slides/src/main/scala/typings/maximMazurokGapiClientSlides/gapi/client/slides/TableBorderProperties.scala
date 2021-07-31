@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableBorderProperties extends StObject {
   
   /** The dash style of the border. */
-  var dashStyle: js.UndefOr[String] = js.native
+  var dashStyle: js.UndefOr[String] = js.undefined
   
   /** The fill of the table border. */
-  var tableBorderFill: js.UndefOr[TableBorderFill] = js.native
+  var tableBorderFill: js.UndefOr[TableBorderFill] = js.undefined
   
   /** The thickness of the border. */
-  var weight: js.UndefOr[Dimension] = js.native
+  var weight: js.UndefOr[Dimension] = js.undefined
 }
 object TableBorderProperties {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpQueryParameterMatch extends StObject {
   
   /**
     * The queryParameterMatch matches if the value of the parameter exactly matches the contents of exactMatch.
     * Only one of presentMatch, exactMatch or regexMatch must be set.
     */
-  var exactMatch: js.UndefOr[String] = js.native
+  var exactMatch: js.UndefOr[String] = js.undefined
   
   /** The name of the query parameter to match. The query parameter must exist in the request, in the absence of which the request match fails. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies that the queryParameterMatch matches if the request contains the query parameter, irrespective of whether the parameter has a value or not.
     * Only one of presentMatch, exactMatch or regexMatch must be set.
     */
-  var presentMatch: js.UndefOr[Boolean] = js.native
+  var presentMatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The queryParameterMatch matches if the value of the parameter matches the regular expression specified by regexMatch. For the regular expression grammar, please see
@@ -29,7 +27,7 @@ trait HttpQueryParameterMatch extends StObject {
     * Only one of presentMatch, exactMatch or regexMatch must be set.
     * Note that regexMatch only applies when the loadBalancingScheme is set to INTERNAL_SELF_MANAGED.
     */
-  var regexMatch: js.UndefOr[String] = js.native
+  var regexMatch: js.UndefOr[String] = js.undefined
 }
 object HttpQueryParameterMatch {
   

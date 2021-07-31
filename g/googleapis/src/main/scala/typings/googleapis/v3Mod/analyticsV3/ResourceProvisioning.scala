@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Provisioning")
@@ -30,7 +29,7 @@ class ResourceProvisioning protected () extends StObject {
     */
   def createAccountTicket(): GaxiosPromise[SchemaAccountTicket] = js.native
   def createAccountTicket(callback: BodyResponseCallback[SchemaAccountTicket]): Unit = js.native
-  def createAccountTicket(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountTicket] = js.native
+  def createAccountTicket(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAccountTicket] = js.native
   def createAccountTicket(params: ParamsResourceProvisioningCreateaccountticket): GaxiosPromise[SchemaAccountTicket] = js.native
   def createAccountTicket(
     params: ParamsResourceProvisioningCreateaccountticket,
@@ -62,7 +61,7 @@ class ResourceProvisioning protected () extends StObject {
     */
   def createAccountTree(): GaxiosPromise[SchemaAccountTreeResponse] = js.native
   def createAccountTree(callback: BodyResponseCallback[SchemaAccountTreeResponse]): Unit = js.native
-  def createAccountTree(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountTreeResponse] = js.native
+  def createAccountTree(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAccountTreeResponse] = js.native
   def createAccountTree(params: ParamsResourceProvisioningCreateaccounttree): GaxiosPromise[SchemaAccountTreeResponse] = js.native
   def createAccountTree(
     params: ParamsResourceProvisioningCreateaccounttree,

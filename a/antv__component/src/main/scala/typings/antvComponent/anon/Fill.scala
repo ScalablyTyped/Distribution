@@ -2,19 +2,17 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fill extends StObject {
   
-  var fill: String = js.native
+  var fill: String
   
-  var lineWidth: Double = js.native
+  var lineWidth: Double
   
-  var r: Double = js.native
+  var r: Double
   
-  var stroke: String = js.native
+  var stroke: String
 }
 object Fill {
   

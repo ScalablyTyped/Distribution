@@ -2,17 +2,15 @@ package typings.storybookNodeLogger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var time: js.Tuple2[Double, Double] = js.native
+    var time: js.Tuple2[Double, Double]
   }
   object Message {
     

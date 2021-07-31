@@ -5,15 +5,15 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RTCPeerConnectionStatic
-  extends Instantiable0[RTCPeerConnection]
+  extends StObject
+     with Instantiable0[RTCPeerConnection]
      with Instantiable1[/* configuration */ RTCConfiguration, RTCPeerConnection]
      with Instantiable2[
-      js.UndefOr[/* configuration */ RTCConfiguration], 
+      (/* configuration */ RTCConfiguration) | (/* configuration */ Unit), 
       /* options */ js.Any, 
       RTCPeerConnection
     ] {

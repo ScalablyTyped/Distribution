@@ -3,32 +3,30 @@ package typings.angularFormly.AngularFormly
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWrapperOptions extends StObject {
   
-  var apiCheck: js.UndefOr[StringDictionary[js.Function]] = js.native
+  var apiCheck: js.UndefOr[StringDictionary[js.Function]] = js.undefined
   
-  var apiCheckFunction: js.UndefOr[String] = js.native
+  var apiCheckFunction: js.UndefOr[String] = js.undefined
   
   //'throw' or 'warn
-  var apiCheckInstance: js.UndefOr[js.Any] = js.native
+  var apiCheckInstance: js.UndefOr[js.Any] = js.undefined
   
-  var apiCheckOptions: js.UndefOr[js.Object] = js.native
+  var apiCheckOptions: js.UndefOr[js.Object] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var overwriteOk: js.UndefOr[Boolean] = js.native
+  var overwriteOk: js.UndefOr[Boolean] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var templateUrl: js.UndefOr[String] = js.native
+  var templateUrl: js.UndefOr[String] = js.undefined
   
-  var types: js.UndefOr[js.Array[String]] = js.native
+  var types: js.UndefOr[js.Array[String]] = js.undefined
   
-  var validateOptions: js.UndefOr[js.Function] = js.native
+  var validateOptions: js.UndefOr[js.Function] = js.undefined
 }
 object IWrapperOptions {
   

@@ -4,21 +4,19 @@ import typings.vegaTypings.vegaTypingsStrings.exterior
 import typings.vegaTypings.vegaTypingsStrings.interior
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
-  var filter: interior | exterior | Null = js.native
+  var filter: interior | exterior | Null
   
-  var mesh: String = js.native
+  var mesh: String
 }
 object Filter {
   
   @scala.inline
   def apply(mesh: String): Filter = {
-    val __obj = js.Dynamic.literal(mesh = mesh.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(mesh = mesh.asInstanceOf[js.Any], filter = null)
     __obj.asInstanceOf[Filter]
   }
   

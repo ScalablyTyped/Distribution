@@ -2,62 +2,60 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaHealthCheck extends StObject {
   
   /**
     * How often (in seconds) to make HTTP requests for this healthcheck. The
     * default value is 5 seconds.
     */
-  var checkIntervalSec: js.UndefOr[Double] = js.native
+  var checkIntervalSec: js.UndefOr[Double] = js.undefined
   
   /**
     * The description for this health check.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The number of consecutive health check requests that need to succeed
     * before the replica is considered healthy again. The default value is 2.
     */
-  var healthyThreshold: js.UndefOr[Double] = js.native
+  var healthyThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * The value of the host header in the HTTP health check request. If left
     * empty (default value), the localhost IP 127.0.0.1 will be used.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * The name of this health check.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The localhost request path to send this health check, in the format
     * /path/to/use. For example, /healthcheck.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The TCP port for the health check requests.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * How long (in seconds) to wait before a timeout failure for this
     * healthcheck. The default value is 5 seconds.
     */
-  var timeoutSec: js.UndefOr[Double] = js.native
+  var timeoutSec: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of consecutive health check requests that need to fail in
     * order to consider the replica unhealthy. The default value is 2.
     */
-  var unhealthyThreshold: js.UndefOr[Double] = js.native
+  var unhealthyThreshold: js.UndefOr[Double] = js.undefined
 }
 object SchemaHealthCheck {
   

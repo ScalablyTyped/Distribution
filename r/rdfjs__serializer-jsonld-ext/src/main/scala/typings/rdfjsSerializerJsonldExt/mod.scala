@@ -10,39 +10,54 @@ import typings.rdfjsSerializerJsonldExt.rdfjsSerializerJsonldExtStrings.`object`
 import typings.rdfjsSerializerJsonldExt.rdfjsSerializerJsonldExtStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@rdfjs/serializer-jsonld-ext", JSImport.Namespace)
   @js.native
-  class ^[Q /* <: BaseQuad */] () extends Serializer[Q] {
+  class ^[Q /* <: BaseQuad */] ()
+    extends StObject
+       with Serializer[Q] {
     def this(options: SerializerOptions) = this()
+    
+    /**
+      * Consumes the given stream.
+      *
+      * The `end` and `error` events are used like described in the Stream interface.
+      * Depending on the use case, subtypes of EventEmitter or Stream are used.
+      * @see Stream
+      *
+      * @param stream The stream that will be consumed.
+      * @return The resulting event emitter.
+      */
+    /* CompleteClass */
+    override def `import`(stream: Stream[Q]): EventEmitter = js.native
   }
   
   @js.native
-  trait Serializer[Q /* <: BaseQuad */] extends Sink[Stream[Q], EventEmitter] {
+  trait Serializer[Q /* <: BaseQuad */]
+    extends StObject
+       with Sink[Stream[Q], EventEmitter] {
     
     def `import`(stream: Stream[Q], options: SerializerOptions): EventEmitter = js.native
   }
   
-  @js.native
   trait SerializerOptions extends StObject {
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var context: js.UndefOr[Context] = js.native
+    var context: js.UndefOr[Context] = js.undefined
     
-    var encoding: js.UndefOr[string | `object`] = js.native
+    var encoding: js.UndefOr[string | `object`] = js.undefined
     
-    var flatten: js.UndefOr[Boolean] = js.native
+    var flatten: js.UndefOr[Boolean] = js.undefined
     
-    var frame: js.UndefOr[Boolean] = js.native
+    var frame: js.UndefOr[Boolean] = js.undefined
     
-    var skipContext: js.UndefOr[Boolean] = js.native
+    var skipContext: js.UndefOr[Boolean] = js.undefined
     
-    var skipGraphProperty: js.UndefOr[Boolean] = js.native
+    var skipGraphProperty: js.UndefOr[Boolean] = js.undefined
   }
   object SerializerOptions {
     

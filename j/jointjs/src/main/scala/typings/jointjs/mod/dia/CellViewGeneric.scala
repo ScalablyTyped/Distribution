@@ -15,7 +15,6 @@ import typings.std.SVGElement
 import typings.std.SVGMatrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "dia.CellViewGeneric")
@@ -71,9 +70,9 @@ abstract class CellViewGeneric[T /* <: Cell */] () extends View[T] {
   def hideTools(): this.type = js.native
   
   def highlight(): this.type = js.native
-  def highlight(el: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]): this.type = js.native
   def highlight(el: String): this.type = js.native
   def highlight(el: String, opt: StringDictionary[js.Any]): this.type = js.native
+  def highlight(el: Unit, opt: StringDictionary[js.Any]): this.type = js.native
   def highlight(el: JQuery[HTMLElement]): this.type = js.native
   def highlight(el: JQuery[HTMLElement], opt: StringDictionary[js.Any]): this.type = js.native
   def highlight(el: SVGElement): this.type = js.native
@@ -124,9 +123,9 @@ abstract class CellViewGeneric[T /* <: Cell */] () extends View[T] {
   def showTools(): this.type = js.native
   
   def unhighlight(): this.type = js.native
-  def unhighlight(el: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]): this.type = js.native
   def unhighlight(el: String): this.type = js.native
   def unhighlight(el: String, opt: StringDictionary[js.Any]): this.type = js.native
+  def unhighlight(el: Unit, opt: StringDictionary[js.Any]): this.type = js.native
   def unhighlight(el: JQuery[HTMLElement]): this.type = js.native
   def unhighlight(el: JQuery[HTMLElement], opt: StringDictionary[js.Any]): this.type = js.native
   def unhighlight(el: SVGElement): this.type = js.native
@@ -137,8 +136,11 @@ abstract class CellViewGeneric[T /* <: Cell */] () extends View[T] {
 }
 object CellViewGeneric {
   
-  /* static member */
-  @JSImport("jointjs", "dia.CellViewGeneric.addPresentationAttributes")
+  @JSImport("jointjs", "dia.CellViewGeneric")
   @js.native
-  def addPresentationAttributes(attributes: PresentationAttributes): PresentationAttributes = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def addPresentationAttributes(attributes: PresentationAttributes): PresentationAttributes = ^.asInstanceOf[js.Dynamic].applyDynamic("addPresentationAttributes")(attributes.asInstanceOf[js.Any]).asInstanceOf[PresentationAttributes]
 }

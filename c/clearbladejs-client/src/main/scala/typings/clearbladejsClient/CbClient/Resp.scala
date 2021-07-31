@@ -2,16 +2,14 @@ package typings.clearbladejsClient.CbClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resp extends StObject {
   
-  def error(msg: js.Any): scala.Nothing = js.native
+  def error(msg: js.Any): scala.Nothing
   
   // todo: figure out if we can have the compiler throw an error if someone adds code after this
-  def success(msg: js.Any): scala.Nothing = js.native
+  def success(msg: js.Any): scala.Nothing
 }
 object Resp {
   

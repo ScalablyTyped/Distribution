@@ -2,10 +2,8 @@ package typings.wordpressBlocks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockSupports extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait BlockSupports extends StObject {
     *
     * @defaultValue false
     */
-  val align: js.UndefOr[Boolean | js.Array[BlockAlignment]] = js.native
+  val align: js.UndefOr[Boolean | js.Array[BlockAlignment]] = js.undefined
   
   /**
     * Enable wide alignment (depends on `align`).
     *
     * @defaultValue true
     */
-  val alignWide: js.UndefOr[Boolean] = js.native
+  val alignWide: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Anchors let you link directly to a specific block on a page. This
@@ -30,7 +28,7 @@ trait BlockSupports extends StObject {
     *
     * @defaultValue false
     */
-  val anchor: js.UndefOr[Boolean] = js.native
+  val anchor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * By default, Gutenberg adds a class with the form
@@ -39,7 +37,7 @@ trait BlockSupports extends StObject {
     *
     * @defaultValue true
     */
-  val className: js.UndefOr[Boolean] = js.native
+  val className: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This property adds a field to define a custom className for the
@@ -47,7 +45,7 @@ trait BlockSupports extends StObject {
     *
     * @defaultValue true
     */
-  val customClassName: js.UndefOr[Boolean] = js.native
+  val customClassName: js.UndefOr[Boolean] = js.undefined
   
   /**
     * By default, Gutenberg will allow a block's markup to be edited
@@ -55,7 +53,7 @@ trait BlockSupports extends StObject {
     *
     * @defaultValue true
     */
-  val html: js.UndefOr[Boolean] = js.native
+  val html: js.UndefOr[Boolean] = js.undefined
   
   /**
     * By default, all blocks will appear in the Gutenberg inserter. To
@@ -64,21 +62,21 @@ trait BlockSupports extends StObject {
     *
     * @defaultValue true
     */
-  val inserter: js.UndefOr[Boolean] = js.native
+  val inserter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A non-multiple block can be inserted into each post, one time only.
     *
     * @defaultValue true
     */
-  val multiple: js.UndefOr[Boolean] = js.native
+  val multiple: js.UndefOr[Boolean] = js.undefined
   
   /**
     * By default all blocks can be converted to a reusable block.
     *
     * @defaultValue true
     */
-  val reusable: js.UndefOr[Boolean] = js.native
+  val reusable: js.UndefOr[Boolean] = js.undefined
 }
 object BlockSupports {
   

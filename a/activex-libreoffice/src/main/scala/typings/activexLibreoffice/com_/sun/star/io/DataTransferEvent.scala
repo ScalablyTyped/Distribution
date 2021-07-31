@@ -4,18 +4,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is broadcast by a filter.
   * @see XDataTransferEventListener
   */
-@js.native
-trait DataTransferEvent extends EventObject {
+trait DataTransferEvent
+  extends StObject
+     with EventObject {
   
   /** specifies an occurred exception. */
-  var aException: js.Any = js.native
+  var aException: js.Any
 }
 object DataTransferEvent {
   

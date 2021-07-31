@@ -2,27 +2,25 @@ package typings.swaggerExpressMiddleware.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecuritySchemeObject extends StObject {
   
-  var authorizationUrl: String = js.native
+  var authorizationUrl: String
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var flow: String = js.native
+  var flow: String
   
-  var in: String = js.native
+  var in: String
   
-  var name: String = js.native
+  var name: String
   
-  var scopes: ScopesObject = js.native
+  var scopes: ScopesObject
   
-  var tokenUrl: String = js.native
+  var tokenUrl: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object SecuritySchemeObject {
   

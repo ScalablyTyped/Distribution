@@ -2,15 +2,13 @@ package typings.pulumiCloud.serviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Endpoint extends StObject {
   
-  var hostname: String = js.native
+  var hostname: String
   
-  var port: Double = js.native
+  var port: Double
 }
 object Endpoint {
   

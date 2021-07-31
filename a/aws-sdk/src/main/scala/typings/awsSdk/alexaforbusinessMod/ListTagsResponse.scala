@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsResponse extends StObject {
   
   /**
     * The token returned to indicate that there is more data available.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.undefined
   
   /**
     * The tags requested for the specified resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ListTagsResponse {
   

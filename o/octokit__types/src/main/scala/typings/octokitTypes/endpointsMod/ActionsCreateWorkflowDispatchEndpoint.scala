@@ -2,27 +2,25 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsCreateWorkflowDispatchEndpoint extends StObject {
   
   /**
     * Input keys and values configured in the workflow file. The maximum number of properties is 10.
     */
-  var inputs: js.UndefOr[ActionsCreateWorkflowDispatchParamsInputs] = js.native
+  var inputs: js.UndefOr[ActionsCreateWorkflowDispatchParamsInputs] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * The reference of the workflow run. The reference can be a branch, tag, or a commit SHA.
     */
-  var ref: String = js.native
+  var ref: String
   
-  var repo: String = js.native
+  var repo: String
   
-  var workflow_id: Double = js.native
+  var workflow_id: Double
 }
 object ActionsCreateWorkflowDispatchEndpoint {
   

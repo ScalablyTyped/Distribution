@@ -13,7 +13,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,7 +26,7 @@ object mod {
     */
   class ^ () extends Agenda {
     def this(config: AgendaConfiguration) = this()
-    def this(config: js.UndefOr[scala.Nothing], cb: ResultCallback[Collection[DefaultSchema]]) = this()
+    def this(config: Unit, cb: ResultCallback[Collection[DefaultSchema]]) = this()
     def this(config: AgendaConfiguration, cb: ResultCallback[Collection[DefaultSchema]]) = this()
   }
   
@@ -53,28 +52,13 @@ object mod {
       * Connect to the specified MongoDB server and database.
       */
     def database(url: String): this.type = js.native
-    def database(
-      url: String,
-      collection: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      cb: ResultCallback[Collection[DefaultSchema]]
-    ): this.type = js.native
-    def database(url: String, collection: js.UndefOr[scala.Nothing], options: js.Any): this.type = js.native
-    def database(
-      url: String,
-      collection: js.UndefOr[scala.Nothing],
-      options: js.Any,
-      cb: ResultCallback[Collection[DefaultSchema]]
-    ): this.type = js.native
     def database(url: String, collection: String): this.type = js.native
-    def database(
-      url: String,
-      collection: String,
-      options: js.UndefOr[scala.Nothing],
-      cb: ResultCallback[Collection[DefaultSchema]]
-    ): this.type = js.native
     def database(url: String, collection: String, options: js.Any): this.type = js.native
     def database(url: String, collection: String, options: js.Any, cb: ResultCallback[Collection[DefaultSchema]]): this.type = js.native
+    def database(url: String, collection: String, options: Unit, cb: ResultCallback[Collection[DefaultSchema]]): this.type = js.native
+    def database(url: String, collection: Unit, options: js.Any): this.type = js.native
+    def database(url: String, collection: Unit, options: js.Any, cb: ResultCallback[Collection[DefaultSchema]]): this.type = js.native
+    def database(url: String, collection: Unit, options: Unit, cb: ResultCallback[Collection[DefaultSchema]]): this.type = js.native
     
     /**
       * Takes a number which specifies the default number of a specific job that can be running at any given moment.
@@ -118,11 +102,11 @@ object mod {
     def every[T /* <: JobAttributesData */](interval: String, names: String): js.Promise[Job[T]] = js.native
     def every[T /* <: JobAttributesData */](interval: String, names: String, data: T): js.Promise[Job[T]] = js.native
     def every[T /* <: JobAttributesData */](interval: String, names: String, data: T, options: js.Any): js.Promise[Job[T]] = js.native
-    def every[T /* <: JobAttributesData */](interval: String, names: String, data: js.UndefOr[scala.Nothing], options: js.Any): js.Promise[Job[T]] = js.native
+    def every[T /* <: JobAttributesData */](interval: String, names: String, data: Unit, options: js.Any): js.Promise[Job[T]] = js.native
     def every[T /* <: JobAttributesData */](interval: String, names: js.Array[String]): js.Promise[js.Array[Job[T]]] = js.native
     def every[T /* <: JobAttributesData */](interval: String, names: js.Array[String], data: T): js.Promise[js.Array[Job[T]]] = js.native
     def every[T /* <: JobAttributesData */](interval: String, names: js.Array[String], data: T, options: js.Any): js.Promise[js.Array[Job[T]]] = js.native
-    def every[T /* <: JobAttributesData */](interval: String, names: js.Array[String], data: js.UndefOr[scala.Nothing], options: js.Any): js.Promise[js.Array[Job[T]]] = js.native
+    def every[T /* <: JobAttributesData */](interval: String, names: js.Array[String], data: Unit, options: js.Any): js.Promise[js.Array[Job[T]]] = js.native
     /**
       * Runs job name at the given interval. Optionally, data and options can be passed in.
       * @param interval Can be a human-readable format String, a cron format String, or a Number.
@@ -133,11 +117,11 @@ object mod {
     def every[T /* <: JobAttributesData */](interval: Double, names: String): js.Promise[Job[T]] = js.native
     def every[T /* <: JobAttributesData */](interval: Double, names: String, data: T): js.Promise[Job[T]] = js.native
     def every[T /* <: JobAttributesData */](interval: Double, names: String, data: T, options: js.Any): js.Promise[Job[T]] = js.native
-    def every[T /* <: JobAttributesData */](interval: Double, names: String, data: js.UndefOr[scala.Nothing], options: js.Any): js.Promise[Job[T]] = js.native
+    def every[T /* <: JobAttributesData */](interval: Double, names: String, data: Unit, options: js.Any): js.Promise[Job[T]] = js.native
     def every[T /* <: JobAttributesData */](interval: Double, names: js.Array[String]): js.Promise[js.Array[Job[T]]] = js.native
     def every[T /* <: JobAttributesData */](interval: Double, names: js.Array[String], data: T): js.Promise[js.Array[Job[T]]] = js.native
     def every[T /* <: JobAttributesData */](interval: Double, names: js.Array[String], data: T, options: js.Any): js.Promise[js.Array[Job[T]]] = js.native
-    def every[T /* <: JobAttributesData */](interval: Double, names: js.Array[String], data: js.UndefOr[scala.Nothing], options: js.Any): js.Promise[js.Array[Job[T]]] = js.native
+    def every[T /* <: JobAttributesData */](interval: Double, names: js.Array[String], data: Unit, options: js.Any): js.Promise[js.Array[Job[T]]] = js.native
     
     /**
       * Find all Jobs matching `query` and pass same back in cb().
@@ -163,9 +147,9 @@ object mod {
       * Initialize agenda with an existing MongoDB connection.
       */
     def mongo(db: Db): this.type = js.native
-    def mongo(db: Db, collection: js.UndefOr[scala.Nothing], cb: ResultCallback[Collection[DefaultSchema]]): this.type = js.native
     def mongo(db: Db, collection: String): this.type = js.native
     def mongo(db: Db, collection: String, cb: ResultCallback[Collection[DefaultSchema]]): this.type = js.native
+    def mongo(db: Db, collection: Unit, cb: ResultCallback[Collection[DefaultSchema]]): this.type = js.native
     
     /**
       * Sets the agenda name.
@@ -221,59 +205,58 @@ object mod {
   /**
     * Agenda Configuration.
     */
-  @js.native
   trait AgendaConfiguration extends StObject {
     
     /**
       * Specifies that Agenda should connect to MongoDB.
       */
-    var db: js.UndefOr[Address] = js.native
+    var db: js.UndefOr[Address] = js.undefined
     
     /**
       * Takes a number which specifies the default number of a specific job that can be running at any given moment.
       * By default it is 5.
       */
-    var defaultConcurrency: js.UndefOr[Double] = js.native
+    var defaultConcurrency: js.UndefOr[Double] = js.undefined
     
     /**
       * Takes a number which specifies the default lock lifetime in milliseconds. By default it is 10 minutes. This
       * can be overridden by specifying the lockLifetime option to a defined job.
       */
-    var defaultLockLifetime: js.UndefOr[Double] = js.native
+    var defaultLockLifetime: js.UndefOr[Double] = js.undefined
     
     /**
       * Takes a number which specifies the default number of a specific job that can be locked at any given moment.
       * By default it is 0 for no max.
       */
-    var defaultLockLimit: js.UndefOr[Double] = js.native
+    var defaultLockLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * Takes a number which specifies the max number jobs that can be locked at any given moment. By default it is
       * 0 for no max.
       */
-    var lockLimit: js.UndefOr[Double] = js.native
+    var lockLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * Takes a number which specifies the max number of jobs that can be running at any given moment. By default it
       * is 20.
       */
-    var maxConcurrency: js.UndefOr[Double] = js.native
+    var maxConcurrency: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies that Agenda should be initialized using and existing MongoDB connection.
       */
-    var mongo: js.UndefOr[Db] = js.native
+    var mongo: js.UndefOr[Db] = js.undefined
     
     /**
       * Sets the `lastModifiedBy` field to `name` in the jobs collection. Useful if you have multiple job processors
       * (agendas) and want to see which job queue last ran the job.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the interval with which the queue is checked. A number in milliseconds or a frequency string.
       */
-    var processEvery: js.UndefOr[String | Double] = js.native
+    var processEvery: js.UndefOr[String | Double] = js.undefined
   }
   object AgendaConfiguration {
     
@@ -452,88 +435,87 @@ object mod {
   /**
     * The database record associated with a job.
     */
-  @js.native
   trait JobAttributes[T /* <: JobAttributesData */] extends StObject {
     
     /**
       * The record identity.
       */
-    var _id: ObjectID_ = js.native
+    var _id: ObjectID_
     
     /**
       * The job details.
       */
-    var data: T = js.native
+    var data: T
     
     /**
       * Job's state
       */
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
     /**
       * The number of times the job has failed.
       */
-    var failCount: Double = js.native
+    var failCount: Double
     
     /**
       * The reason the job failed.
       */
-    var failReason: String = js.native
+    var failReason: String
     
     /**
       * The date/time the job last failed.
       */
-    var failedAt: Date = js.native
+    var failedAt: Date
     
     /**
       * Date/time the job last finished running.
       */
-    var lastFinishedAt: Date = js.native
+    var lastFinishedAt: Date
     
     /**
       * Date/time the job was las modified.
       */
-    var lastModifiedBy: String = js.native
+    var lastModifiedBy: String
     
     /**
       * Date/time the job was last run.
       */
-    var lastRunAt: Date = js.native
+    var lastRunAt: Date
     
     /**
       * Date/time the job was locked.
       */
-    var lockedAt: Date = js.native
+    var lockedAt: Date
     
     /**
       * The name of the job.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Date/time the job will run next.
       */
-    var nextRunAt: Date = js.native
+    var nextRunAt: Date
     
     /**
       * The priority of the job.
       */
-    var priority: Double = js.native
+    var priority: Double
     
     /**
       * How often the job is repeated using a human-readable or cron format.
       */
-    var repeatInterval: String | Double = js.native
+    var repeatInterval: String | Double
     
     /**
       * The timezone that conforms to [moment-timezone](http://momentjs.com/timezone/).
       */
-    var repeatTimezone: String = js.native
+    var repeatTimezone: String
     
     /**
       * The type of the job (single|normal).
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object JobAttributes {
     
@@ -562,7 +544,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class JobAttributesMutableBuilder[Self <: JobAttributes[_], T /* <: JobAttributesData */] (val x: Self with JobAttributes[T]) extends AnyVal {
+    implicit class JobAttributesMutableBuilder[Self <: JobAttributes[?], T /* <: JobAttributesData */] (val x: Self & JobAttributes[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -616,30 +598,29 @@ object mod {
   
   type JobAttributesData = StringDictionary[js.Any]
   
-  @js.native
   trait JobOptions extends StObject {
     
     /**
       * Maximum number of that job that can be running at once (per instance of agenda)
       */
-    var concurrency: js.UndefOr[Double] = js.native
+    var concurrency: js.UndefOr[Double] = js.undefined
     
     /**
       * Interval in ms of how long the job stays locked for (see multiple job processors for more info). A job will
       * automatically unlock if done() is called.
       */
-    var lockLifetime: js.UndefOr[Double] = js.native
+    var lockLifetime: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum number of that job that can be locked at once (per instance of agenda)
       */
-    var lockLimit: js.UndefOr[Double] = js.native
+    var lockLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * (lowest|low|normal|high|highest|number) specifies the priority of the job. Higher priority jobs will run
       * first.
       */
-    var priority: js.UndefOr[String | Double] = js.native
+    var priority: js.UndefOr[String | Double] = js.undefined
   }
   object JobOptions {
     

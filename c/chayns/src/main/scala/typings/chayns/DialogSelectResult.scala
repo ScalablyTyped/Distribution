@@ -3,15 +3,13 @@ package typings.chayns
 import typings.chayns.chayns.dialog.buttonType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogSelectResult extends StObject {
   
-  var buttonType: typings.chayns.chayns.dialog.buttonType = js.native
+  var buttonType: typings.chayns.chayns.dialog.buttonType
   
-  var selection: js.Array[DialogSelectResultItem] = js.native
+  var selection: js.Array[DialogSelectResultItem]
 }
 object DialogSelectResult {
   

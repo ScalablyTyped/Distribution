@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,10 +16,9 @@ object mod {
   
   type ResponseRequest = typings.request.mod.ResponseRequest
   
-  @js.native
   trait ScenarioContext extends StObject {
     
-    var vars: StringDictionary[js.Any] = js.native
+    var vars: StringDictionary[js.Any]
   }
   object ScenarioContext {
     

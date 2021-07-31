@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComboBoxTextField extends InputBase {
+trait ComboBoxTextField
+  extends StObject
+     with InputBase {
   
   /**
     * Gets current value of property <code>maxWidth</code>.Sets the maximum width of the text

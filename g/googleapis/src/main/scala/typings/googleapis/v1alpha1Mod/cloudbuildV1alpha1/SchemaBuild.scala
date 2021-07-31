@@ -3,7 +3,6 @@ package typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,37 +18,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * RepoSource or   resolved from the specified branch or tag. - $SHORT_SHA:
   * first 7 characters of $REVISION_ID or $COMMIT_SHA.
   */
-@js.native
 trait SchemaBuild extends StObject {
   
   /**
     * Artifacts produced by the build that should be uploaded upon successful
     * completion of all build steps.
     */
-  var artifacts: js.UndefOr[SchemaArtifacts] = js.native
+  var artifacts: js.UndefOr[SchemaArtifacts] = js.undefined
   
   /**
     * Output only. The ID of the `BuildTrigger` that triggered this build, if
     * it was triggered automatically.
     */
-  var buildTriggerId: js.UndefOr[String] = js.native
+  var buildTriggerId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Time at which the request to create the build was received.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Time at which execution of the build was finished.  The
     * difference between finish_time and start_time is the duration of the
     * build&#39;s execution.
     */
-  var finishTime: js.UndefOr[String] = js.native
+  var finishTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Unique identifier of the build.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A list of images to be pushed upon the successful completion of all build
@@ -58,12 +56,12 @@ trait SchemaBuild extends StObject {
     * `Build` resource&#39;s results field.  If any of the images fail to be
     * pushed, the build status is marked `FAILURE`.
     */
-  var images: js.UndefOr[js.Array[String]] = js.native
+  var images: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Output only. URL to logs for this build in Google Cloud Console.
     */
-  var logUrl: js.UndefOr[String] = js.native
+  var logUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Google Cloud Storage bucket where logs should be written (see [Bucket
@@ -72,74 +70,74 @@ trait SchemaBuild extends StObject {
     * Logs file names will be of the format
     * `${logs_bucket}/log-${build_id}.txt`.
     */
-  var logsBucket: js.UndefOr[String] = js.native
+  var logsBucket: js.UndefOr[String] = js.undefined
   
   /**
     * Special options for this build.
     */
-  var options: js.UndefOr[SchemaBuildOptions] = js.native
+  var options: js.UndefOr[SchemaBuildOptions] = js.undefined
   
   /**
     * Output only. ID of the project.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Results of the build.
     */
-  var results: js.UndefOr[SchemaResults] = js.native
+  var results: js.UndefOr[SchemaResults] = js.undefined
   
   /**
     * Secrets to decrypt using Cloud Key Management Service.
     */
-  var secrets: js.UndefOr[js.Array[SchemaSecret]] = js.native
+  var secrets: js.UndefOr[js.Array[SchemaSecret]] = js.undefined
   
   /**
     * The location of the source files to build.
     */
-  var source: js.UndefOr[SchemaSource] = js.native
+  var source: js.UndefOr[SchemaSource] = js.undefined
   
   /**
     * Output only. A permanent fixed identifier for source.
     */
-  var sourceProvenance: js.UndefOr[SchemaSourceProvenance] = js.native
+  var sourceProvenance: js.UndefOr[SchemaSourceProvenance] = js.undefined
   
   /**
     * Output only. Time at which execution of the build was started.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Status of the build.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Customer-readable message about the current status.
     */
-  var statusDetail: js.UndefOr[String] = js.native
+  var statusDetail: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The operations to be performed on the workspace.
     */
-  var steps: js.UndefOr[js.Array[SchemaBuildStep]] = js.native
+  var steps: js.UndefOr[js.Array[SchemaBuildStep]] = js.undefined
   
   /**
     * Substitutions data for `Build` resource.
     */
-  var substitutions: js.UndefOr[StringDictionary[String]] = js.native
+  var substitutions: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Tags for annotation of a `Build`. These are not docker tags.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Amount of time that this build should be allowed to run, to second
     * granularity. If this amount of time elapses, work on the build will cease
     * and the build status will be `TIMEOUT`.  Default time is ten minutes.
     */
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Stores timing information for phases of the build. Valid
@@ -147,7 +145,7 @@ trait SchemaBuild extends StObject {
     * all specified images. * FETCHSOURCE: time to fetch source.  If the build
     * does not specify source or images, these keys will not be included.
     */
-  var timing: js.UndefOr[StringDictionary[SchemaTimeSpan]] = js.native
+  var timing: js.UndefOr[StringDictionary[SchemaTimeSpan]] = js.undefined
 }
 object SchemaBuild {
   

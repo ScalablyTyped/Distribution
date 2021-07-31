@@ -2,17 +2,15 @@ package typings.aphrodite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Content extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var renderedClassNames: js.Array[String] = js.native
+    var renderedClassNames: js.Array[String]
   }
   object Content {
     
@@ -36,16 +34,15 @@ object anon {
     }
   }
   
-  @js.native
   trait FontFamily extends StObject {
     
-    var fontFamily: String = js.native
+    var fontFamily: String
     
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
-    var fontWeight: js.UndefOr[String | Double] = js.native
+    var fontWeight: js.UndefOr[String | Double] = js.undefined
     
-    var src: String = js.native
+    var src: String
   }
   object FontFamily {
     

@@ -2,13 +2,11 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents location information.
   */
-@js.native
 trait ILocation extends StObject {
   
   /**
@@ -16,19 +14,19 @@ trait ILocation extends StObject {
     * or negative (below) values relative to sea level, in units of
     * measurement as determined by the camera.
     */
-  var altitude: Double = js.native
+  var altitude: Double
   
   /**
     * The latitude portion of the location, expressed as positive (north)
     * or negative (south) degrees relative to the equator.
     */
-  var latitude: Double = js.native
+  var latitude: Double
   
   /**
     * The longitude portion of the location expressed as positive (east) or
     * negative (west) degrees relative to the Prime Meridian.
     */
-  var longitude: Double = js.native
+  var longitude: Double
 }
 object ILocation {
   

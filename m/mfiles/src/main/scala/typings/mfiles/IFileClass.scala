@@ -2,27 +2,25 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFileClass extends StObject {
   
-  def Clone(): IFileClass = js.native
+  def Clone(): IFileClass
   
-  var DisplayName: String = js.native
+  var DisplayName: String
   
-  val DotAndExtension: String = js.native
+  val DotAndExtension: String
   
-  val Extension: String = js.native
+  val Extension: String
   
-  val FileClass: String = js.native
+  val FileClass: String
   
-  def LoadByExtension(Extension: String): Unit = js.native
+  def LoadByExtension(Extension: String): Unit
   
-  def LoadByFileClass(Extension: String, FileClass: String): Unit = js.native
+  def LoadByFileClass(Extension: String, FileClass: String): Unit
   
-  def SetFileClassInfo(DotAndFileExtension: String, FileClass: String, FileClassDisplayName: String): Unit = js.native
+  def SetFileClassInfo(DotAndFileExtension: String, FileClass: String, FileClassDisplayName: String): Unit
 }
 object IFileClass {
   

@@ -2,13 +2,13 @@ package typings.smartFoxServer.global.SFS2X
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.SFSBuddyEvent")
 @js.native
 class SFSBuddyEvent ()
-  extends typings.smartFoxServer.SFS2X.SFSBuddyEvent
+  extends StObject
+     with typings.smartFoxServer.SFS2X.SFSBuddyEvent
 /* static members */
 object SFSBuddyEvent {
   

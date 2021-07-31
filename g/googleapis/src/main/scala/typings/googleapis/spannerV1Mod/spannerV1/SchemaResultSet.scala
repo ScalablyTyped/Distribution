@@ -2,26 +2,24 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Results from Read or ExecuteSql.
   */
-@js.native
 trait SchemaResultSet extends StObject {
   
   /**
     * Metadata about the result set, such as row type information.
     */
-  var metadata: js.UndefOr[SchemaResultSetMetadata] = js.native
+  var metadata: js.UndefOr[SchemaResultSetMetadata] = js.undefined
   
   /**
     * Each element in `rows` is a row whose format is defined by
     * metadata.row_type. The ith element in each row matches the ith field in
     * metadata.row_type. Elements are encoded based on type as described here.
     */
-  var rows: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var rows: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     * Query plan and execution statistics for the SQL statement that produced
@@ -32,7 +30,7 @@ trait SchemaResultSet extends StObject {
     * fields may or may not be populated, based on the
     * ExecuteSqlRequest.query_mode.
     */
-  var stats: js.UndefOr[SchemaResultSetStats] = js.native
+  var stats: js.UndefOr[SchemaResultSetStats] = js.undefined
 }
 object SchemaResultSet {
   
@@ -52,7 +50,7 @@ object SchemaResultSet {
     def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setRows(value: js.Array[js.Array[_]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)

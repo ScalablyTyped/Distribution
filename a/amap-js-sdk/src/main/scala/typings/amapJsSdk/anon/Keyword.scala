@@ -2,15 +2,13 @@ package typings.amapJsSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Keyword extends StObject {
   
-  var city: String = js.native
+  var city: String
   
-  var keyword: String = js.native
+  var keyword: String
 }
 object Keyword {
   

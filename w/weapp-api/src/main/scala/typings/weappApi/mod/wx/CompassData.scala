@@ -2,14 +2,12 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompassData extends StObject {
   
   /** 面对的方向度数 */
-  var direction: Double = js.native
+  var direction: Double
 }
 object CompassData {
   

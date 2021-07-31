@@ -3,47 +3,45 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3Order extends StObject {
   
   /**
     * Info about the buyer.
     */
-  var buyerInfo: js.UndefOr[GoogleActionsOrdersV3UserInfo] = js.native
+  var buyerInfo: js.UndefOr[GoogleActionsOrdersV3UserInfo] = js.undefined
   
   /**
     * Required: Order contents which is a group of line items.
     */
-  var contents: js.UndefOr[GoogleActionsOrdersV3OrderContents] = js.native
+  var contents: js.UndefOr[GoogleActionsOrdersV3OrderContents] = js.undefined
   
   /**
     * Required: Date and time the order was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Follow up actions at order level.
     */
-  var followUpActions: js.UndefOr[js.Array[GoogleActionsOrdersV3Action]] = js.native
+  var followUpActions: js.UndefOr[js.Array[GoogleActionsOrdersV3Action]] = js.undefined
   
   /**
     * Google assigned order id.
     */
-  var googleOrderId: js.UndefOr[String] = js.native
+  var googleOrderId: js.UndefOr[String] = js.undefined
   
   /**
     * Image associated with the order.
     */
-  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
   
   /**
     * Date and time the order was last updated.
     * Required for OrderUpdate.
     */
-  var lastUpdateTime: js.UndefOr[String] = js.native
+  var lastUpdateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Required: Merchant assigned internal order id. This id must be unique, and
@@ -53,61 +51,61 @@ trait GoogleActionsOrdersV3Order extends StObject {
     * more user-friendly value.
     * Max allowed length is 64 chars.
     */
-  var merchantOrderId: js.UndefOr[String] = js.native
+  var merchantOrderId: js.UndefOr[String] = js.undefined
   
   /**
     * Notes attached to an order.
     */
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
   
   /**
     * Payment related data for the order.
     */
-  var paymentData: js.UndefOr[GoogleActionsTransactionsV3PaymentData] = js.native
+  var paymentData: js.UndefOr[GoogleActionsTransactionsV3PaymentData] = js.undefined
   
   /**
     * Price, discounts, taxes and so on.
     */
-  var priceAttributes: js.UndefOr[js.Array[GoogleActionsOrdersV3PriceAttribute]] = js.native
+  var priceAttributes: js.UndefOr[js.Array[GoogleActionsOrdersV3PriceAttribute]] = js.undefined
   
   /**
     * All promotions that are associated with this order.
     */
-  var promotions: js.UndefOr[js.Array[GoogleActionsOrdersV3Promotion]] = js.native
+  var promotions: js.UndefOr[js.Array[GoogleActionsOrdersV3Promotion]] = js.undefined
   
   /**
     * Purchase order
     */
-  var purchase: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension] = js.native
+  var purchase: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension] = js.undefined
   
   /**
     * A link to the terms of service that apply to order/proposed order.
     */
-  var termsOfServiceUrl: js.UndefOr[String] = js.native
+  var termsOfServiceUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Ticket order
     */
-  var ticket: js.UndefOr[GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension] = js.native
+  var ticket: js.UndefOr[GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension] = js.undefined
   
   /**
     * Merchant that facilitated the checkout. This could be different from
     * a line item level provider. Example: Expedia Order with line item from ANA.
     */
-  var transactionMerchant: js.UndefOr[GoogleActionsOrdersV3Merchant] = js.native
+  var transactionMerchant: js.UndefOr[GoogleActionsOrdersV3Merchant] = js.undefined
   
   /**
     * The user facing id referencing to current order. This id should be
     * consistent with the id displayed for this order in other contexts,
     * including websites, apps and email.
     */
-  var userVisibleOrderId: js.UndefOr[String] = js.native
+  var userVisibleOrderId: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated: Use OrderExtensions status instead.
     * User visible label for the state of this order.
     */
-  var userVisibleStateLabel: js.UndefOr[String] = js.native
+  var userVisibleStateLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated: Use verticals instead.
@@ -117,7 +115,7 @@ trait GoogleActionsOrdersV3Order extends StObject {
     * google.actions.orders.v3.verticals.purchase.PurchaseOrderExtension
     * google.actions.orders.v3.verticals.ticket.TicketOrderExtension
     */
-  var vertical: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var vertical: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
 }
 object GoogleActionsOrdersV3Order {
   
@@ -248,7 +246,7 @@ object GoogleActionsOrdersV3Order {
     def setUserVisibleStateLabelUndefined: Self = StObject.set(x, "userVisibleStateLabel", js.undefined)
     
     @scala.inline
-    def setVertical(value: ApiClientObjectMap[_]): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    def setVertical(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)

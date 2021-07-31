@@ -3,21 +3,19 @@ package typings.inboxsdk.mod.Conversations
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageViewLinkDescriptor extends StObject {
   
-  var element: HTMLElement = js.native
+  var element: HTMLElement
   
-  var href: String = js.native
+  var href: String
   
-  var html: String = js.native
+  var html: String
   
-  var isInQuotedArea: Boolean = js.native
+  var isInQuotedArea: Boolean
   
-  var text: String = js.native
+  var text: String
 }
 object MessageViewLinkDescriptor {
   

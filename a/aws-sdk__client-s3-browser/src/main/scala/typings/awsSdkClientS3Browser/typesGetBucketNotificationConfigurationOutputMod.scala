@@ -8,30 +8,29 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetBucketNotificationConfigurationOutputMod {
   
-  @js.native
   trait GetBucketNotificationConfigurationOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * _LambdaFunctionConfigurationList shape
       */
-    var LambdaFunctionConfigurations: js.UndefOr[js.Array[UnmarshalledLambdaFunctionConfiguration]] = js.native
+    var LambdaFunctionConfigurations: js.UndefOr[js.Array[UnmarshalledLambdaFunctionConfiguration]] = js.undefined
     
     /**
       * _QueueConfigurationList shape
       */
-    var QueueConfigurations: js.UndefOr[js.Array[UnmarshalledQueueConfiguration]] = js.native
+    var QueueConfigurations: js.UndefOr[js.Array[UnmarshalledQueueConfiguration]] = js.undefined
     
     /**
       * _TopicConfigurationList shape
       */
-    var TopicConfigurations: js.UndefOr[js.Array[UnmarshalledTopicConfiguration]] = js.native
+    var TopicConfigurations: js.UndefOr[js.Array[UnmarshalledTopicConfiguration]] = js.undefined
   }
   object GetBucketNotificationConfigurationOutput {
     

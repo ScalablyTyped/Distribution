@@ -4,25 +4,24 @@ import typings.mdast.mdastStrings.definition
 import typings.unist.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Definition
-  extends DefinitionContent
+  extends StObject
      with Node
      with Association
-     with Resource {
+     with Resource
+     with DefinitionContent {
   
   @JSName("type")
-  var type_Definition: definition = js.native
+  var type_Definition: definition
 }
 object Definition {
   
   @scala.inline
-  def apply(identifier: String, `type`: definition, url: String): Definition = {
+  def apply(identifier: String, url: String): Definition = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("definition")
     __obj.asInstanceOf[Definition]
   }
   

@@ -12,51 +12,49 @@ import typings.buffer.mod.Buffer
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/util-buffer-from", "fromArrayBuffer")
+  @JSImport("@aws-sdk/util-buffer-from", JSImport.Namespace)
   @js.native
-  def fromArrayBuffer(input: ArrayBuffer): Buffer = js.native
-  @JSImport("@aws-sdk/util-buffer-from", "fromArrayBuffer")
-  @js.native
-  def fromArrayBuffer(input: ArrayBuffer, offset: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
-  @JSImport("@aws-sdk/util-buffer-from", "fromArrayBuffer")
-  @js.native
-  def fromArrayBuffer(input: ArrayBuffer, offset: Double): Buffer = js.native
-  @JSImport("@aws-sdk/util-buffer-from", "fromArrayBuffer")
-  @js.native
-  def fromArrayBuffer(input: ArrayBuffer, offset: Double, length: Double): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@aws-sdk/util-buffer-from", "fromString")
-  @js.native
-  def fromString(input: String): Buffer = js.native
-  @JSImport("@aws-sdk/util-buffer-from", "fromString")
-  @js.native
-  def fromString_ascii(input: String, encoding: ascii): Buffer = js.native
-  @JSImport("@aws-sdk/util-buffer-from", "fromString")
-  @js.native
-  def fromString_base64(input: String, encoding: base64): Buffer = js.native
-  @JSImport("@aws-sdk/util-buffer-from", "fromString")
-  @js.native
-  def fromString_binary(input: String, encoding: binary): Buffer = js.native
-  @JSImport("@aws-sdk/util-buffer-from", "fromString")
-  @js.native
-  def fromString_hex(input: String, encoding: hex): Buffer = js.native
-  @JSImport("@aws-sdk/util-buffer-from", "fromString")
-  @js.native
-  def fromString_latin1(input: String, encoding: latin1): Buffer = js.native
-  @JSImport("@aws-sdk/util-buffer-from", "fromString")
-  @js.native
-  def fromString_ucs2(input: String, encoding: ucs2): Buffer = js.native
-  @JSImport("@aws-sdk/util-buffer-from", "fromString")
-  @js.native
-  def fromString_utf16le(input: String, encoding: utf16le): Buffer = js.native
-  @JSImport("@aws-sdk/util-buffer-from", "fromString")
-  @js.native
-  def fromString_utf8(input: String, encoding: utf8): Buffer = js.native
+  @scala.inline
+  def fromArrayBuffer(input: ArrayBuffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def fromArrayBuffer(input: ArrayBuffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(input.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def fromArrayBuffer(input: ArrayBuffer, offset: Double, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(input.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def fromArrayBuffer(input: ArrayBuffer, offset: Unit, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(input.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def fromString(input: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def fromString_ascii(input: String, encoding: ascii): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def fromString_base64(input: String, encoding: base64): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def fromString_binary(input: String, encoding: binary): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def fromString_hex(input: String, encoding: hex): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def fromString_latin1(input: String, encoding: latin1): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def fromString_ucs2(input: String, encoding: ucs2): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def fromString_utf16le(input: String, encoding: utf16le): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def fromString_utf8(input: String, encoding: utf8): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkUtilBufferFrom.awsSdkUtilBufferFromStrings.ascii

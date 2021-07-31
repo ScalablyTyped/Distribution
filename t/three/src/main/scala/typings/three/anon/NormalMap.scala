@@ -3,15 +3,13 @@ package typings.three.anon
 import typings.three.uniformsLibMod.IUniform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NormalMap extends StObject {
   
-  var normalMap: IUniform = js.native
+  var normalMap: IUniform
   
-  var normalScale: IUniform = js.native
+  var normalScale: IUniform
 }
 object NormalMap {
   

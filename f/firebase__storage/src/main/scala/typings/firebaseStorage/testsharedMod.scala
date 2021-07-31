@@ -15,30 +15,29 @@ import typings.firebaseStorage.xhriopoolMod.XhrIoPool
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testsharedMod {
   
-  @JSImport("@firebase/storage/dist/test/unit/testshared", "assertObjectIncludes")
+  @JSImport("@firebase/storage/dist/test/unit/testshared", JSImport.Namespace)
   @js.native
-  def assertObjectIncludes(included: StringDictionary[js.Any], obj: StringDictionary[js.Any]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/storage/dist/test/unit/testshared", "assertThrows")
-  @js.native
-  def assertThrows(f: js.Function0[Unit], code: Code): FirebaseStorageError = js.native
+  @scala.inline
+  def assertObjectIncludes(included: StringDictionary[js.Any], obj: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertObjectIncludes")(included.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/storage/dist/test/unit/testshared", "assertUint8ArrayEquals")
-  @js.native
-  def assertUint8ArrayEquals(arr1: Uint8Array, arr2: Uint8Array): Unit = js.native
+  @scala.inline
+  def assertThrows(f: js.Function0[Unit], code: Code): FirebaseStorageError = (^.asInstanceOf[js.Dynamic].applyDynamic("assertThrows")(f.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[FirebaseStorageError]
+  
+  @scala.inline
+  def assertUint8ArrayEquals(arr1: Uint8Array, arr2: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertUint8ArrayEquals")(arr1.asInstanceOf[js.Any], arr2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@firebase/storage/dist/test/unit/testshared", "authToken")
   @js.native
   val authToken: /* "totally-legit-auth-token" */ String = js.native
   
-  @JSImport("@firebase/storage/dist/test/unit/testshared", "bind")
-  @js.native
-  def bind(f: js.Function, ctx: js.Any, args: js.Any*): js.Function0[Unit] = js.native
+  @scala.inline
+  def bind(f: js.Function, ctx: js.Any, args: js.Any*): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(f.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   @JSImport("@firebase/storage/dist/test/unit/testshared", "bucket")
   @js.native
@@ -56,28 +55,21 @@ object testsharedMod {
   @js.native
   val fakeAuthProvider: Provider[`auth-internal`] = js.native
   
-  @JSImport("@firebase/storage/dist/test/unit/testshared", "fakeXhrIo")
-  @js.native
-  def fakeXhrIo(headers: Headers): XhrIo = js.native
-  @JSImport("@firebase/storage/dist/test/unit/testshared", "fakeXhrIo")
-  @js.native
-  def fakeXhrIo(headers: Headers, status: Double): XhrIo = js.native
+  @scala.inline
+  def fakeXhrIo(headers: Headers): XhrIo = ^.asInstanceOf[js.Dynamic].applyDynamic("fakeXhrIo")(headers.asInstanceOf[js.Any]).asInstanceOf[XhrIo]
+  @scala.inline
+  def fakeXhrIo(headers: Headers, status: Double): XhrIo = (^.asInstanceOf[js.Dynamic].applyDynamic("fakeXhrIo")(headers.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[XhrIo]
   
-  @JSImport("@firebase/storage/dist/test/unit/testshared", "makeFakeApp")
-  @js.native
-  def makeFakeApp(): FirebaseApp = js.native
-  @JSImport("@firebase/storage/dist/test/unit/testshared", "makeFakeApp")
-  @js.native
-  def makeFakeApp(bucketArg: String): FirebaseApp = js.native
+  @scala.inline
+  def makeFakeApp(): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFakeApp")().asInstanceOf[FirebaseApp]
+  @scala.inline
+  def makeFakeApp(bucketArg: String): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFakeApp")(bucketArg.asInstanceOf[js.Any]).asInstanceOf[FirebaseApp]
   
-  @JSImport("@firebase/storage/dist/test/unit/testshared", "makeFakeAuthProvider")
-  @js.native
-  def makeFakeAuthProvider(token: AccessToken): Provider[FirebaseAuthInternalName] = js.native
+  @scala.inline
+  def makeFakeAuthProvider(token: AccessToken): Provider[FirebaseAuthInternalName] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFakeAuthProvider")(token.asInstanceOf[js.Any]).asInstanceOf[Provider[FirebaseAuthInternalName]]
   
-  @JSImport("@firebase/storage/dist/test/unit/testshared", "makePool")
-  @js.native
-  def makePool(): XhrIoPool = js.native
-  @JSImport("@firebase/storage/dist/test/unit/testshared", "makePool")
-  @js.native
-  def makePool(sendHook: SendHook): XhrIoPool = js.native
+  @scala.inline
+  def makePool(): XhrIoPool = ^.asInstanceOf[js.Dynamic].applyDynamic("makePool")().asInstanceOf[XhrIoPool]
+  @scala.inline
+  def makePool(sendHook: SendHook): XhrIoPool = ^.asInstanceOf[js.Dynamic].applyDynamic("makePool")(sendHook.asInstanceOf[js.Any]).asInstanceOf[XhrIoPool]
 }

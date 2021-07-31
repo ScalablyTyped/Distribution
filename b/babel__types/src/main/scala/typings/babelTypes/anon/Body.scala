@@ -5,13 +5,11 @@ import typings.babelTypes.indexTs37Mod.Expression
 import typings.babelTypes.indexTs37Mod.Statement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Body extends StObject {
   
-  var body: BlockStatement_ | Statement | Expression = js.native
+  var body: BlockStatement_ | Statement | Expression
 }
 object Body {
   

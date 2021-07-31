@@ -3,33 +3,31 @@ package typings.reactNativeZssRichTextEditor.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<react-native-zss-rich-text-editor.react-native-zss-rich-text-editor.RichTextToolbarOptionalProps> */
-@js.native
 trait RichTextToolbarProps extends StObject {
   
-  var actions: js.UndefOr[js.Array[ACTIONS]] = js.native
+  var actions: js.UndefOr[js.Array[ACTIONS]] = js.undefined
   
   // Must provide a function that returns a ref to a RichTextEditor component.
-  def getEditor(): RichTextEditor = js.native
+  def getEditor(): RichTextEditor
   
-  var iconMap: js.UndefOr[IconsMap] = js.native
+  var iconMap: js.UndefOr[IconsMap] = js.undefined
   
-  var iconTint: js.UndefOr[String] = js.native
+  var iconTint: js.UndefOr[String] = js.undefined
   
-  var onPressAddImage: js.UndefOr[FunctionWithZeroArgs] = js.native
+  var onPressAddImage: js.UndefOr[FunctionWithZeroArgs] = js.undefined
   
-  var onPressAddLink: js.UndefOr[FunctionWithZeroArgs] = js.native
+  var onPressAddLink: js.UndefOr[FunctionWithZeroArgs] = js.undefined
   
-  var renderAction: js.UndefOr[js.Function0[ReactNode]] = js.native
+  var renderAction: js.UndefOr[js.Function0[ReactNode]] = js.undefined
   
-  var selectedButtonStyle: js.UndefOr[ElementStyles] = js.native
+  var selectedButtonStyle: js.UndefOr[ElementStyles] = js.undefined
   
-  var selectedIconTint: js.UndefOr[String] = js.native
+  var selectedIconTint: js.UndefOr[String] = js.undefined
   
-  var unselectedButtonStyle: js.UndefOr[ElementStyles] = js.native
+  var unselectedButtonStyle: js.UndefOr[ElementStyles] = js.undefined
 }
 object RichTextToolbarProps {
   

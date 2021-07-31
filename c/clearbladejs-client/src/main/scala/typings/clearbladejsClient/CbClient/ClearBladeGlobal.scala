@@ -2,11 +2,12 @@ package typings.clearbladejsClient.CbClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClearBladeGlobal extends ClearBladeInt {
+trait ClearBladeGlobal
+  extends StObject
+     with ClearBladeInt {
   
   var MESSAGING_QOS_AT_LEAST_ONCE: typings.clearbladejsClient.CbClient.MessagingQOS.MESSAGING_QOS_AT_LEAST_ONCE = js.native
   

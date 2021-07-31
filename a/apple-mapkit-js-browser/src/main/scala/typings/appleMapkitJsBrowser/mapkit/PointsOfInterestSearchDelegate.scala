@@ -3,24 +3,22 @@ package typings.appleMapkitJsBrowser.mapkit
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object or callback function that MapKit JS calls when fetching points of interest.
   */
-@js.native
 trait PointsOfInterestSearchDelegate extends StObject {
   
   /**
     * Tells the delegate that the search completed.
     */
-  var searchDidComplete: js.UndefOr[js.Function1[/* data */ PointsOfInterestSearchResponse, Unit]] = js.native
+  var searchDidComplete: js.UndefOr[js.Function1[/* data */ PointsOfInterestSearchResponse, Unit]] = js.undefined
   
   /**
     * Tells the delegate that the search failed due to an error.
     */
-  var searchDidError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+  var searchDidError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
 }
 object PointsOfInterestSearchDelegate {
   

@@ -6,23 +6,21 @@ import typings.ckeditorCkeditor5Engine.mod.model.Position
 import typings.ckeditorCkeditor5Engine.mod.model.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Boundaries extends StObject {
   
-  var boundaries: js.UndefOr[Range] = js.native
+  var boundaries: js.UndefOr[Range] = js.undefined
   
-  var direction: js.UndefOr[forward | backward] = js.native
+  var direction: js.UndefOr[forward | backward] = js.undefined
   
-  var ignoreElementEnd: js.UndefOr[Boolean] = js.native
+  var ignoreElementEnd: js.UndefOr[Boolean] = js.undefined
   
-  var shallow: js.UndefOr[Boolean] = js.native
+  var shallow: js.UndefOr[Boolean] = js.undefined
   
-  var singleCharacters: js.UndefOr[Boolean] = js.native
+  var singleCharacters: js.UndefOr[Boolean] = js.undefined
   
-  var startPosition: Position = js.native
+  var startPosition: Position
 }
 object Boundaries {
   

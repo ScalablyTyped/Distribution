@@ -2,19 +2,17 @@ package typings.dagreLayout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Compound extends StObject {
     
-    var compound: js.UndefOr[Boolean] = js.native
+    var compound: js.UndefOr[Boolean] = js.undefined
     
-    var directed: js.UndefOr[Boolean] = js.native
+    var directed: js.UndefOr[Boolean] = js.undefined
     
-    var multigraph: js.UndefOr[Boolean] = js.native
+    var multigraph: js.UndefOr[Boolean] = js.undefined
   }
   object Compound {
     
@@ -47,14 +45,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var v: String = js.native
+    var v: String
     
-    var w: String = js.native
+    var w: String
   }
   object Name {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Match extends StObject {
   
   /**
     * The location in the profiling graph that contains a recommendation found during analysis.
     */
-  var frameAddress: js.UndefOr[String] = js.native
+  var frameAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The target frame that triggered a match.
     */
-  var targetFramesIndex: js.UndefOr[Integer] = js.native
+  var targetFramesIndex: js.UndefOr[Integer] = js.undefined
   
   /**
     * The value in the profile data that exceeded the recommendation threshold.
     */
-  var thresholdBreachValue: js.UndefOr[Double] = js.native
+  var thresholdBreachValue: js.UndefOr[Double] = js.undefined
 }
 object Match {
   

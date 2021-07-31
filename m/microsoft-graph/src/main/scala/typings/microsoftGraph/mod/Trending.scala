@@ -2,28 +2,28 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Trending extends Entity {
+trait Trending
+  extends StObject
+     with Entity {
   
-  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Used for navigating to the trending document.
-  var resource: js.UndefOr[NullableOption[Entity]] = js.native
+  var resource: js.UndefOr[NullableOption[Entity]] = js.undefined
   
   // Reference properties of the trending document, such as the url and type of the document.
-  var resourceReference: js.UndefOr[NullableOption[ResourceReference]] = js.native
+  var resourceReference: js.UndefOr[NullableOption[ResourceReference]] = js.undefined
   
   // Properties that you can use to visualize the document in your experience.
-  var resourceVisualization: js.UndefOr[NullableOption[ResourceVisualization]] = js.native
+  var resourceVisualization: js.UndefOr[NullableOption[ResourceVisualization]] = js.undefined
   
   /**
     * Value indicating how much the document is currently trending. The larger the number, the more the document is currently
     * trending around the user (the more relevant it is). Returned documents are sorted by this value.
     */
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object Trending {
   

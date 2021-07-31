@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navigation {
@@ -74,9 +73,8 @@ object navigation {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.HomePage.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.navigationMod.navigation.HomePage = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.navigationMod.navigation.HomePage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.HomePage]
     
     /**
       * Creates and returns a new HomePage instance in the SDK and on the server.
@@ -84,9 +82,8 @@ object navigation {
       * of the parent NavigationProfile element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.HomePage.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile): typings.mendixmodelsdk.navigationMod.navigation.HomePage = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile): typings.mendixmodelsdk.navigationMod.navigation.HomePage = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.HomePage]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.HomePage.structureTypeName")
@@ -168,9 +165,8 @@ object navigation {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NativeNavigationProfile.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.navigationMod.navigation.NativeNavigationProfile = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.navigationMod.navigation.NativeNavigationProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NativeNavigationProfile]
     
     /**
       * Creates and returns a new NativeNavigationProfile instance in the SDK and on the server.
@@ -181,9 +177,8 @@ object navigation {
       *  7.22.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NativeNavigationProfile.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NativeNavigationProfile = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NativeNavigationProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NativeNavigationProfile]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NativeNavigationProfile.structureTypeName")
@@ -226,9 +221,8 @@ object navigation {
       * Expects one argument, the projects.IProject in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NavigationDocument.createIn")
-    @js.native
-    def createIn(container: IProject): typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument = js.native
+    @scala.inline
+    def createIn(container: IProject): typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NavigationDocument.structureTypeName")
@@ -273,9 +267,8 @@ object navigation {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NavigationProfile.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile]
     
     /**
       * Creates and returns a new NavigationProfile instance in the SDK and on the server.
@@ -286,9 +279,8 @@ object navigation {
       *  7.2.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NavigationProfile.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile]
     
     /**
       * Creates and returns a new NavigationProfile instance in the SDK and on the server.
@@ -299,9 +291,8 @@ object navigation {
       *  6.0.0 to 7.1.0
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NavigationProfile.createInNavigationDocumentUnderDesktopProfile")
-    @js.native
-    def createInNavigationDocumentUnderDesktopProfile(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = js.native
+    @scala.inline
+    def createInNavigationDocumentUnderDesktopProfile(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationDocumentUnderDesktopProfile")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile]
     
     /**
       * Creates and returns a new NavigationProfile instance in the SDK and on the server.
@@ -312,9 +303,8 @@ object navigation {
       *  7.0.2 to 7.1.0
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NavigationProfile.createInNavigationDocumentUnderHybridPhoneProfile")
-    @js.native
-    def createInNavigationDocumentUnderHybridPhoneProfile(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = js.native
+    @scala.inline
+    def createInNavigationDocumentUnderHybridPhoneProfile(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationDocumentUnderHybridPhoneProfile")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile]
     
     /**
       * Creates and returns a new NavigationProfile instance in the SDK and on the server.
@@ -325,9 +315,8 @@ object navigation {
       *  6.10.4 to 6.10.4
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NavigationProfile.createInNavigationDocumentUnderHybridPhoneProfile6")
-    @js.native
-    def createInNavigationDocumentUnderHybridPhoneProfile6(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = js.native
+    @scala.inline
+    def createInNavigationDocumentUnderHybridPhoneProfile6(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationDocumentUnderHybridPhoneProfile6")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile]
     
     /**
       * Creates and returns a new NavigationProfile instance in the SDK and on the server.
@@ -338,9 +327,8 @@ object navigation {
       *  7.0.2 to 7.1.0
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NavigationProfile.createInNavigationDocumentUnderHybridTabletProfile")
-    @js.native
-    def createInNavigationDocumentUnderHybridTabletProfile(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = js.native
+    @scala.inline
+    def createInNavigationDocumentUnderHybridTabletProfile(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationDocumentUnderHybridTabletProfile")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile]
     
     /**
       * Creates and returns a new NavigationProfile instance in the SDK and on the server.
@@ -351,9 +339,8 @@ object navigation {
       *  6.10.4 to 6.10.4
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NavigationProfile.createInNavigationDocumentUnderHybridTabletProfile6")
-    @js.native
-    def createInNavigationDocumentUnderHybridTabletProfile6(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = js.native
+    @scala.inline
+    def createInNavigationDocumentUnderHybridTabletProfile6(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationDocumentUnderHybridTabletProfile6")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile]
     
     /**
       * Creates and returns a new NavigationProfile instance in the SDK and on the server.
@@ -364,9 +351,8 @@ object navigation {
       *  6.0.0 to 7.0.1
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NavigationProfile.createInNavigationDocumentUnderOfflinePhoneProfile")
-    @js.native
-    def createInNavigationDocumentUnderOfflinePhoneProfile(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = js.native
+    @scala.inline
+    def createInNavigationDocumentUnderOfflinePhoneProfile(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationDocumentUnderOfflinePhoneProfile")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile]
     
     /**
       * Creates and returns a new NavigationProfile instance in the SDK and on the server.
@@ -377,9 +363,8 @@ object navigation {
       *  6.0.0 to 7.1.0
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NavigationProfile.createInNavigationDocumentUnderPhoneProfile")
-    @js.native
-    def createInNavigationDocumentUnderPhoneProfile(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = js.native
+    @scala.inline
+    def createInNavigationDocumentUnderPhoneProfile(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationDocumentUnderPhoneProfile")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile]
     
     /**
       * Creates and returns a new NavigationProfile instance in the SDK and on the server.
@@ -390,9 +375,8 @@ object navigation {
       *  7.2.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NavigationProfile.createInNavigationDocumentUnderProfiles")
-    @js.native
-    def createInNavigationDocumentUnderProfiles(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = js.native
+    @scala.inline
+    def createInNavigationDocumentUnderProfiles(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationDocumentUnderProfiles")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile]
     
     /**
       * Creates and returns a new NavigationProfile instance in the SDK and on the server.
@@ -403,9 +387,8 @@ object navigation {
       *  6.0.0 to 7.1.0
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NavigationProfile.createInNavigationDocumentUnderTabletProfile")
-    @js.native
-    def createInNavigationDocumentUnderTabletProfile(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = js.native
+    @scala.inline
+    def createInNavigationDocumentUnderTabletProfile(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationDocument): typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationDocumentUnderTabletProfile")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.NavigationProfile.structureTypeName")
@@ -488,9 +471,8 @@ object navigation {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.OfflineEntityConfig.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.navigationMod.navigation.OfflineEntityConfig = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.navigationMod.navigation.OfflineEntityConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.OfflineEntityConfig]
     
     /**
       * Creates and returns a new OfflineEntityConfig instance in the SDK and on the server.
@@ -501,9 +483,8 @@ object navigation {
       *  7.22.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.OfflineEntityConfig.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationProfileBase): typings.mendixmodelsdk.navigationMod.navigation.OfflineEntityConfig = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationProfileBase): typings.mendixmodelsdk.navigationMod.navigation.OfflineEntityConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.OfflineEntityConfig]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.OfflineEntityConfig.structureTypeName")
@@ -768,9 +749,8 @@ object navigation {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.RoleBasedHomePage.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.navigationMod.navigation.RoleBasedHomePage = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.navigationMod.navigation.RoleBasedHomePage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.RoleBasedHomePage]
     
     /**
       * Creates and returns a new RoleBasedHomePage instance in the SDK and on the server.
@@ -778,9 +758,8 @@ object navigation {
       * of the parent NavigationProfile element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.RoleBasedHomePage.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile): typings.mendixmodelsdk.navigationMod.navigation.RoleBasedHomePage = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile): typings.mendixmodelsdk.navigationMod.navigation.RoleBasedHomePage = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.RoleBasedHomePage]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.RoleBasedHomePage.structureTypeName")
@@ -825,9 +804,8 @@ object navigation {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.RoleBasedNativeHomePage.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.navigationMod.navigation.RoleBasedNativeHomePage = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.navigationMod.navigation.RoleBasedNativeHomePage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.RoleBasedNativeHomePage]
     
     /**
       * Creates and returns a new RoleBasedNativeHomePage instance in the SDK and on the server.
@@ -838,9 +816,8 @@ object navigation {
       *  8.0.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.RoleBasedNativeHomePage.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.navigationMod.navigation.NativeNavigationProfile): typings.mendixmodelsdk.navigationMod.navigation.RoleBasedNativeHomePage = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.navigationMod.navigation.NativeNavigationProfile): typings.mendixmodelsdk.navigationMod.navigation.RoleBasedNativeHomePage = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.RoleBasedNativeHomePage]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "navigation.RoleBasedNativeHomePage.structureTypeName")

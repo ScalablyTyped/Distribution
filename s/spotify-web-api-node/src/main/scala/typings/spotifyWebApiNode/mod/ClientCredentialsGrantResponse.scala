@@ -2,21 +2,19 @@ package typings.spotifyWebApiNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response returned when using Client Credentials authentication flow
   * https://developer.spotify.com/documentation/general/guides/authorization-guide/#example-4
   */
-@js.native
 trait ClientCredentialsGrantResponse extends StObject {
   
-  var access_token: String = js.native
+  var access_token: String
   
-  var expires_in: Double = js.native
+  var expires_in: Double
   
-  var token_type: String = js.native
+  var token_type: String
 }
 object ClientCredentialsGrantResponse {
   

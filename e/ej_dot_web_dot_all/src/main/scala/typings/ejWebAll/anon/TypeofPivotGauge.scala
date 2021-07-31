@@ -3,17 +3,15 @@ package typings.ejWebAll.anon
 import typings.ejWebAll.ej.PivotGauge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofPivotGauge extends StObject {
   
   /* static member */
-  var Locale: js.Any = js.native
+  var Locale: js.Any
   
   /* static member */
-  var fn: PivotGauge = js.native
+  var fn: PivotGauge
 }
 object TypeofPivotGauge {
   

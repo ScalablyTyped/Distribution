@@ -3,39 +3,39 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.InterfaceDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait InterfaceDeclaration_
-  extends Declaration
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait InterfaceDeclaration_
+  extends StObject
      with BaseNode
+     with Declaration
      with Flow
      with FlowDeclaration
      with Statement {
   
-  var body: ObjectTypeAnnotation_ = js.native
+  var body: ObjectTypeAnnotation_
   
-  var `extends`: js.Array[InterfaceExtends_] | Null = js.native
+  var `extends`: js.Array[InterfaceExtends_] | Null
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var implements: js.Array[ClassImplements_] | Null = js.native
+  var implements: js.Array[ClassImplements_] | Null
   
-  var mixins: js.Array[InterfaceExtends_] | Null = js.native
+  var mixins: js.Array[InterfaceExtends_] | Null
   
-  var typeParameters: TypeParameterDeclaration_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_InterfaceDeclaration_ : InterfaceDeclaration = js.native
+  var type_InterfaceDeclaration_ : InterfaceDeclaration
 }
 object InterfaceDeclaration_ {
   
   @scala.inline
-  def apply(body: ObjectTypeAnnotation_, id: Identifier_, `type`: InterfaceDeclaration): InterfaceDeclaration_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: ObjectTypeAnnotation_, id: Identifier_): InterfaceDeclaration_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, implements = null, innerComments = null, leadingComments = null, loc = null, mixins = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("InterfaceDeclaration")
+    __obj.updateDynamic("extends")(null)
     __obj.asInstanceOf[InterfaceDeclaration_]
   }
   

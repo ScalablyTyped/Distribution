@@ -2,23 +2,21 @@ package typings.instagramPrivateApi.insightsServiceAccountResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightsServiceAccountResponseNodesItem extends StObject {
   
-  var __typename: js.UndefOr[String] = js.native
+  var __typename: js.UndefOr[String] = js.undefined
   
-  var data_points: js.UndefOr[js.Array[InsightsServiceAccountResponseDataPointsItem]] = js.native
+  var data_points: js.UndefOr[js.Array[InsightsServiceAccountResponseDataPointsItem]] = js.undefined
   
-  var delta: js.UndefOr[Null] = js.native
+  var delta: js.UndefOr[Null] = js.undefined
   
-  var graph_name: js.UndefOr[String] = js.native
+  var graph_name: js.UndefOr[String] = js.undefined
   
-  var organic: js.UndefOr[InsightsServiceAccountResponseOrganic] = js.native
+  var organic: js.UndefOr[InsightsServiceAccountResponseOrganic] = js.undefined
   
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object InsightsServiceAccountResponseNodesItem {
   

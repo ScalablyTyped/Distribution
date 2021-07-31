@@ -4,7 +4,6 @@ import typings.heremaps.H.map.layer.Layer
 import typings.heremaps.H.util.OList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,6 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructor
   * @param opt_layers {Array=} - array of layers to be added to the data model
   */
-class DataModel () extends OList {
+class DataModel ()
+  extends StObject
+     with OList {
   def this(opt_layers: js.Array[Layer]) = this()
 }

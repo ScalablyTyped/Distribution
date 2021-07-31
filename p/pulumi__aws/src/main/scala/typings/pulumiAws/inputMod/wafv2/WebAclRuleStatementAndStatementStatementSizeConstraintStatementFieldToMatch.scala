@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.wafv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatch extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatc
     Input[
       WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect the request body, which immediately follows the request headers.
     */
   var body: js.UndefOr[
     Input[WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect the HTTP method. The method indicates the type of operation that the request is asking the origin to perform.
@@ -32,7 +30,7 @@ trait WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatc
     Input[
       WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect the query string. This is the part of a URL that appears after a `?` character, if any.
@@ -41,7 +39,7 @@ trait WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatc
     Input[
       WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect a single header. See Single Header below for details.
@@ -50,7 +48,7 @@ trait WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatc
     Input[
       WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect a single query argument. See Single Query Argument below for details.
@@ -59,7 +57,7 @@ trait WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatc
     Input[
       WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect the request URI path. This is the part of a web request that identifies a resource, for example, `/images/daily-ad.jpg`.
@@ -68,7 +66,7 @@ trait WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatc
     Input[
       WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatch {
   

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Storage.Provider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about a FileUpdateRequested event. */
-@js.native
 trait FileUpdateRequestedEventArgs extends StObject {
   
   /** Gets the details of the requested file update. */
-  var request: FileUpdateRequest = js.native
+  var request: FileUpdateRequest
 }
 object FileUpdateRequestedEventArgs {
   

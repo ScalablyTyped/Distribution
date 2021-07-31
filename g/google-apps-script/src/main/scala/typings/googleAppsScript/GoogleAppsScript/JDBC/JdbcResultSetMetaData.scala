@@ -3,57 +3,55 @@ package typings.googleAppsScript.GoogleAppsScript.JDBC
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A JDBC ResultSetMetaData. For documentation of this class, see
   * java.sql.ResultSetMetaData.
   */
-@js.native
 trait JdbcResultSetMetaData extends StObject {
   
-  def getCatalogName(column: Integer): String = js.native
+  def getCatalogName(column: Integer): String
   
-  def getColumnClassName(column: Integer): String = js.native
+  def getColumnClassName(column: Integer): String
   
-  def getColumnCount(): Integer = js.native
+  def getColumnCount(): Integer
   
-  def getColumnDisplaySize(column: Integer): Integer = js.native
+  def getColumnDisplaySize(column: Integer): Integer
   
-  def getColumnLabel(column: Integer): String = js.native
+  def getColumnLabel(column: Integer): String
   
-  def getColumnName(column: Integer): String = js.native
+  def getColumnName(column: Integer): String
   
-  def getColumnType(column: Integer): Integer = js.native
+  def getColumnType(column: Integer): Integer
   
-  def getColumnTypeName(column: Integer): String = js.native
+  def getColumnTypeName(column: Integer): String
   
-  def getPrecision(column: Integer): Integer = js.native
+  def getPrecision(column: Integer): Integer
   
-  def getScale(column: Integer): Integer = js.native
+  def getScale(column: Integer): Integer
   
-  def getSchemaName(column: Integer): String = js.native
+  def getSchemaName(column: Integer): String
   
-  def getTableName(column: Integer): String = js.native
+  def getTableName(column: Integer): String
   
-  def isAutoIncrement(column: Integer): Boolean = js.native
+  def isAutoIncrement(column: Integer): Boolean
   
-  def isCaseSensitive(column: Integer): Boolean = js.native
+  def isCaseSensitive(column: Integer): Boolean
   
-  def isCurrency(column: Integer): Boolean = js.native
+  def isCurrency(column: Integer): Boolean
   
-  def isDefinitelyWritable(column: Integer): Boolean = js.native
+  def isDefinitelyWritable(column: Integer): Boolean
   
-  def isNullable(column: Integer): Integer = js.native
+  def isNullable(column: Integer): Integer
   
-  def isReadOnly(column: Integer): Boolean = js.native
+  def isReadOnly(column: Integer): Boolean
   
-  def isSearchable(column: Integer): Boolean = js.native
+  def isSearchable(column: Integer): Boolean
   
-  def isSigned(column: Integer): Boolean = js.native
+  def isSigned(column: Integer): Boolean
   
-  def isWritable(column: Integer): Boolean = js.native
+  def isWritable(column: Integer): Boolean
 }
 object JdbcResultSetMetaData {
   

@@ -4,15 +4,13 @@ import typings.antd.selectMod.RefSelectProps
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ref extends StObject {
   
   var ref: js.UndefOr[
     (js.Function1[/* instance */ RefSelectProps | Null, Unit]) | RefObject[RefSelectProps] | Null
-  ] = js.native
+  ] = js.undefined
 }
 object Ref {
   

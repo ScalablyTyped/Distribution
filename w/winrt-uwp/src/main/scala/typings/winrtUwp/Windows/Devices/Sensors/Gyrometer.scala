@@ -7,14 +7,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.readingchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a gyrometer sensor. */
 @js.native
 trait Gyrometer extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readingchanged(`type`: readingchanged, listener: TypedEventHandler[Gyrometer, GyrometerReadingChangedEventArgs]): Unit = js.native
   
@@ -31,7 +30,7 @@ trait Gyrometer extends StObject {
   var minimumReportInterval: Double = js.native
   
   /** Occurs each time the gyrometer reports the current sensor reading. */
-  def onreadingchanged(ev: GyrometerReadingChangedEventArgs with WinRTEvent[Gyrometer]): Unit = js.native
+  def onreadingchanged(ev: GyrometerReadingChangedEventArgs & WinRTEvent[Gyrometer]): Unit = js.native
   /** Occurs each time the gyrometer reports the current sensor reading. */
   @JSName("onreadingchanged")
   var onreadingchanged_Original: TypedEventHandler[Gyrometer, GyrometerReadingChangedEventArgs] = js.native
@@ -39,7 +38,7 @@ trait Gyrometer extends StObject {
   /** Gets or sets the transformation that needs to be applied to sensor data. Transformations to be applied are tied to the display orientation with which to align the sensor data. */
   var readingTransform: DisplayOrientations = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readingchanged(`type`: readingchanged, listener: TypedEventHandler[Gyrometer, GyrometerReadingChangedEventArgs]): Unit = js.native
   

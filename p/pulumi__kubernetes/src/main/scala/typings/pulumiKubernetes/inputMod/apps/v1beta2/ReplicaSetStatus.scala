@@ -3,44 +3,42 @@ package typings.pulumiKubernetes.inputMod.apps.v1beta2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ReplicaSetStatus represents the current status of a ReplicaSet.
   */
-@js.native
 trait ReplicaSetStatus extends StObject {
   
   /**
     * The number of available replicas (ready for at least minReadySeconds) for this replica set.
     */
-  var availableReplicas: js.UndefOr[Input[Double]] = js.native
+  var availableReplicas: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Represents the latest available observations of a replica set's current state.
     */
-  var conditions: js.UndefOr[Input[js.Array[Input[ReplicaSetCondition]]]] = js.native
+  var conditions: js.UndefOr[Input[js.Array[Input[ReplicaSetCondition]]]] = js.undefined
   
   /**
     * The number of pods that have labels matching the labels of the pod template of the replicaset.
     */
-  var fullyLabeledReplicas: js.UndefOr[Input[Double]] = js.native
+  var fullyLabeledReplicas: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * ObservedGeneration reflects the generation of the most recently observed ReplicaSet.
     */
-  var observedGeneration: js.UndefOr[Input[Double]] = js.native
+  var observedGeneration: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The number of ready replicas for this replica set.
     */
-  var readyReplicas: js.UndefOr[Input[Double]] = js.native
+  var readyReplicas: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Replicas is the most recently oberved number of replicas. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#what-is-a-replicationcontroller
     */
-  var replicas: Input[Double] = js.native
+  var replicas: Input[Double]
 }
 object ReplicaSetStatus {
   

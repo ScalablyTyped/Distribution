@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,11 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Content
   * @version 1.0
   */
-@js.native
-trait UnsupportedDataSinkException extends Exception {
+trait UnsupportedDataSinkException
+  extends StObject
+     with Exception {
   
   /** contains the data sink that is not supported. */
-  var Sink: XInterface = js.native
+  var Sink: XInterface
 }
 object UnsupportedDataSinkException {
   

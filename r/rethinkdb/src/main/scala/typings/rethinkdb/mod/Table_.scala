@@ -3,15 +3,15 @@ package typings.rethinkdb.mod
 import typings.rethinkdb.anon.Function
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Table_
-  extends Sequence
+  extends StObject
+     with Sequence
      with HasFields[Sequence] {
   
-  def get[TObjectType /* <: js.Object */](key: String): (Operation[TObjectType | Null]) with Writeable = js.native
+  def get[TObjectType /* <: js.Object */](key: String): (Operation[TObjectType | Null]) & Writeable = js.native
   
   // without index defaults to primary key
   /**
@@ -111,18 +111,18 @@ trait Table_
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/) and
     * [compound indexes](https://www.rethinkdb.com/docs/secondary-indexes/javascript/#compound-indexes)
     */
-  def getAll(key: Expression[_]): Sequence = js.native
+  def getAll(key: Expression[js.Any]): Sequence = js.native
   /**
     * Get all documents matching a key on a compound index; index must be provided.
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/) and
     * [compound indexes](https://www.rethinkdb.com/docs/secondary-indexes/javascript/#compound-indexes)
     */
-  def getAll(key: Expression[_ | js.Array[_]], index: Index): Sequence = js.native
+  def getAll(key: Expression[js.Any | js.Array[js.Any]], index: Index): Sequence = js.native
   
   def getIntersecting(geometry: Geometry, index: Index): Sequence = js.native
   
   def indexCreate(name: String): Operation[CreateResult] = js.native
-  def indexCreate(name: String, index: IndexFunction[_]): Operation[CreateResult] = js.native
+  def indexCreate(name: String, index: IndexFunction[js.Any]): Operation[CreateResult] = js.native
   
   def indexDrop(name: String): Operation[DropResult] = js.native
   
@@ -133,8 +133,8 @@ trait Table_
   
   def insert(obj: js.Any): Operation[WriteResult] = js.native
   def insert(obj: js.Any, options: InsertOptions): Operation[WriteResult] = js.native
-  def insert(obj: js.Array[_]): Operation[WriteResult] = js.native
-  def insert(obj: js.Array[_], options: InsertOptions): Operation[WriteResult] = js.native
+  def insert(obj: js.Array[js.Any]): Operation[WriteResult] = js.native
+  def insert(obj: js.Array[js.Any], options: InsertOptions): Operation[WriteResult] = js.native
   
   def wait(WaitOptions: WaitOptions): Operation[WaitResult] = js.native
 }

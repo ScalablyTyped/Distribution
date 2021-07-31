@@ -2,25 +2,25 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WMSOptions extends TileLayerOptions {
+trait WMSOptions
+  extends StObject
+     with TileLayerOptions {
   
-  var crs: js.UndefOr[CRS] = js.native
+  var crs: js.UndefOr[CRS] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var layers: js.UndefOr[String] = js.native
+  var layers: js.UndefOr[String] = js.undefined
   
-  var styles: js.UndefOr[String] = js.native
+  var styles: js.UndefOr[String] = js.undefined
   
-  var transparent: js.UndefOr[Boolean] = js.native
+  var transparent: js.UndefOr[Boolean] = js.undefined
   
-  var uppercase: js.UndefOr[Boolean] = js.native
+  var uppercase: js.UndefOr[Boolean] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object WMSOptions {
   

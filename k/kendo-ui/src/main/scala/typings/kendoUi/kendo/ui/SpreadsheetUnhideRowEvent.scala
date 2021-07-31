@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.spreadsheet.Sheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpreadsheetUnhideRowEvent extends SpreadsheetEvent {
+trait SpreadsheetUnhideRowEvent
+  extends StObject
+     with SpreadsheetEvent {
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var sheet: js.UndefOr[Sheet] = js.native
+  var sheet: js.UndefOr[Sheet] = js.undefined
 }
 object SpreadsheetUnhideRowEvent {
   

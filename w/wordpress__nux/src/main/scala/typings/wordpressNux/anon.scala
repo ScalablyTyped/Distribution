@@ -3,21 +3,19 @@ package typings.wordpressNux
 import typings.wordpressNux.selectorsMod.GuideInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofimportedActions extends StObject {
     
-    def disableTips(): Unit = js.native
+    def disableTips(): Unit
     
-    def dismissTip(id: String): Unit = js.native
+    def dismissTip(id: String): Unit
     
-    def enableTips(): Unit = js.native
+    def enableTips(): Unit
     
-    def triggerGuide(tipIds: js.Array[String]): Unit = js.native
+    def triggerGuide(tipIds: js.Array[String]): Unit
   }
   object TypeofimportedActions {
     
@@ -49,14 +47,13 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofimportedSelectors extends StObject {
     
-    def areTipsEnabled(): Boolean = js.native
+    def areTipsEnabled(): Boolean
     
-    def getAssociatedGuide(tipId: String): js.UndefOr[GuideInfo] = js.native
+    def getAssociatedGuide(tipId: String): js.UndefOr[GuideInfo]
     
-    def isTipVisible(tipId: String): Boolean = js.native
+    def isTipVisible(tipId: String): Boolean
   }
   object TypeofimportedSelectors {
     

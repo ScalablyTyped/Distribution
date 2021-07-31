@@ -4,39 +4,37 @@ import typings.std.VRDisplay
 import typings.three.mod.Object3D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckHasPositionalTracking extends StObject {
   
-  def PolyfillControls(object3D: Object3D): Unit = js.native
+  def PolyfillControls(object3D: Object3D): Unit
   
-  def checkHasPositionalTracking(): Boolean = js.native
+  def checkHasPositionalTracking(): Boolean
   
-  def checkHeadsetConnected(): Boolean = js.native
+  def checkHeadsetConnected(): Boolean
   
-  def getVRDisplay(): js.Array[VRDisplay] = js.native
+  def getVRDisplay(): js.Array[VRDisplay]
   
-  def isBrowserEnvironment(): Boolean = js.native
+  def isBrowserEnvironment(): Boolean
   
-  def isGearVR(): Boolean = js.native
+  def isGearVR(): Boolean
   
-  def isIOS(): Boolean = js.native
+  def isIOS(): Boolean
   
-  def isLandscape(): Boolean = js.native
+  def isLandscape(): Boolean
   
-  def isMobile(): Boolean = js.native
+  def isMobile(): Boolean
   
-  def isNodeEnvironment(): Boolean = js.native
+  def isNodeEnvironment(): Boolean
   
-  def isOculusGo(): Boolean = js.native
+  def isOculusGo(): Boolean
   
-  def isR7(): Boolean = js.native
+  def isR7(): Boolean
   
-  def isTablet(): Boolean = js.native
+  def isTablet(): Boolean
   
-  var isWebXRAvailable: Boolean = js.native
+  var isWebXRAvailable: Boolean
 }
 object CheckHasPositionalTracking {
   

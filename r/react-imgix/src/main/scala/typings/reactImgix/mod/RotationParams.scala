@@ -2,17 +2,15 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RotationParams extends StObject {
   
-  var flip: js.UndefOr[ImgixParamType] = js.native
+  var flip: js.UndefOr[ImgixParamType] = js.undefined
   
-  var orient: js.UndefOr[ImgixParamType] = js.native
+  var orient: js.UndefOr[ImgixParamType] = js.undefined
   
-  var rot: js.UndefOr[ImgixParamType] = js.native
+  var rot: js.UndefOr[ImgixParamType] = js.undefined
 }
 object RotationParams {
   

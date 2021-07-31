@@ -8,7 +8,6 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.none
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object comboBoxComboBoxMod {
@@ -432,9 +431,9 @@ object comboBoxComboBoxMod {
       * {@inheritdoc}
       */
     def focus(): Unit = js.native
-    def focus(shouldOpenOnFocus: js.UndefOr[scala.Nothing], useFocusAsync: Boolean): Unit = js.native
     def focus(shouldOpenOnFocus: Boolean): Unit = js.native
     def focus(shouldOpenOnFocus: Boolean, useFocusAsync: Boolean): Unit = js.native
+    def focus(shouldOpenOnFocus: Unit, useFocusAsync: Boolean): Unit = js.native
     
     /**
       * All selected options
@@ -455,38 +454,37 @@ object comboBoxComboBoxMod {
     def defaultProps_=(x: IComboBoxProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IComboBoxState extends StObject {
     
     /** The options currently available for the callout */
-    var currentOptions: js.Array[IComboBoxOption] = js.native
+    var currentOptions: js.Array[IComboBoxOption]
     
     /** When taking input, this will store the actual text that is being entered */
-    var currentPendingValue: js.UndefOr[String] = js.native
+    var currentPendingValue: js.UndefOr[String] = js.undefined
     
     /**
       * When taking input, this will store the index that the options input matches
       * (-1 if no input or match)
       */
-    var currentPendingValueValidIndex: Double = js.native
+    var currentPendingValueValidIndex: Double
     
     /**
       * Stores the hovered over value in the dropdown
       * (used for styling the options without updating the input)
       */
-    var currentPendingValueValidIndexOnHover: Double = js.native
+    var currentPendingValueValidIndexOnHover: Double
     
     /** The focused state of the comboBox */
-    var focusState: js.UndefOr[none | focused | focusing] = js.native
+    var focusState: js.UndefOr[none | focused | focusing] = js.undefined
     
     /** The open state */
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     /** The currently selected indices */
-    var selectedIndices: js.UndefOr[js.Array[Double]] = js.native
+    var selectedIndices: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** This value is used for the autocomplete hint value */
-    var suggestedDisplayValue: js.UndefOr[String] = js.native
+    var suggestedDisplayValue: js.UndefOr[String] = js.undefined
   }
   object IComboBoxState {
     

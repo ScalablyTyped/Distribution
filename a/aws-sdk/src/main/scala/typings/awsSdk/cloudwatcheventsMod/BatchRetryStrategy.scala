@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchRetryStrategy extends StObject {
   
   /**
     * The number of times to attempt to retry, if the job fails. Valid values are 1–10.
     */
-  var Attempts: js.UndefOr[Integer] = js.native
+  var Attempts: js.UndefOr[Integer] = js.undefined
 }
 object BatchRetryStrategy {
   

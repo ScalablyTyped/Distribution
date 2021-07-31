@@ -2,12 +2,11 @@ package typings.mdast.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Literal
-  extends typings.unist.mod.Literal
+  extends StObject
+     with typings.unist.mod.Literal
 object Literal {
   
   @scala.inline

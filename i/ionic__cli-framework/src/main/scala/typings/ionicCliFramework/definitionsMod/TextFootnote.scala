@@ -2,15 +2,15 @@ package typings.ionicCliFramework.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextFootnote extends Footnote {
+trait TextFootnote
+  extends StObject
+     with Footnote {
   
-  var id: String | Double = js.native
+  var id: String | Double
   
-  var text: String = js.native
+  var text: String
 }
 object TextFootnote {
   

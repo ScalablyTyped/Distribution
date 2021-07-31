@@ -2,15 +2,13 @@ package typings.recharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoxSize extends StObject {
   
-  var boxHeight: Double = js.native
+  var boxHeight: Double
   
-  var boxWidth: Double = js.native
+  var boxWidth: Double
 }
 object BoxSize {
   

@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionItemProvider[T /* <: CompletionItem */] extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait CompletionItemProvider[T /* <: CompletionItem */] extends StObject {
     * @return An array of completions, a [completion list](#CompletionList), or a thenable that resolves to either.
     * The lack of a result can be signaled by returning `undefined`, `null`, or an empty array.
     */
-  def provideCompletionItems(document: TextDocument, position: Position, token: CancellationToken, context: CompletionContext): ProviderResult[js.Array[T] | CompletionList[T]] = js.native
+  def provideCompletionItems(document: TextDocument, position: Position, token: CancellationToken, context: CompletionContext): ProviderResult[js.Array[T] | CompletionList[T]]
   
   /**
     * Given a completion item fill in more data, like [doc-comment](#CompletionItem.documentation)
@@ -40,7 +38,7 @@ trait CompletionItemProvider[T /* <: CompletionItem */] extends StObject {
     * @return The resolved completion item or a thenable that resolves to of such. It is OK to return the given
     * `item`. When no result is returned, the given `item` will be used.
     */
-  var resolveCompletionItem: js.UndefOr[js.Function2[/* item */ T, /* token */ CancellationToken, ProviderResult[T]]] = js.native
+  var resolveCompletionItem: js.UndefOr[js.Function2[/* item */ T, /* token */ CancellationToken, ProviderResult[T]]] = js.undefined
 }
 object CompletionItemProvider {
   
@@ -53,7 +51,7 @@ object CompletionItemProvider {
   }
   
   @scala.inline
-  implicit class CompletionItemProviderMutableBuilder[Self <: CompletionItemProvider[_], T /* <: CompletionItem */] (val x: Self with CompletionItemProvider[T]) extends AnyVal {
+  implicit class CompletionItemProviderMutableBuilder[Self <: CompletionItemProvider[?], T /* <: CompletionItem */] (val x: Self & CompletionItemProvider[T]) extends AnyVal {
     
     @scala.inline
     def setProvideCompletionItems(

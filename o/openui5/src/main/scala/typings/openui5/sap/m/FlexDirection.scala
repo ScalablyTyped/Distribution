@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,27 @@ sealed trait FlexDirection extends StObject
 object FlexDirection extends StObject {
   
   @js.native
-  sealed trait Column extends FlexDirection
+  sealed trait Column
+    extends StObject
+       with FlexDirection
   
   @js.native
-  sealed trait ColumnReverse extends FlexDirection
+  sealed trait ColumnReverse
+    extends StObject
+       with FlexDirection
   
   @js.native
-  sealed trait Inherit extends FlexDirection
+  sealed trait Inherit
+    extends StObject
+       with FlexDirection
   
   @js.native
-  sealed trait Row extends FlexDirection
+  sealed trait Row
+    extends StObject
+       with FlexDirection
   
   @js.native
-  sealed trait RowReverse extends FlexDirection
+  sealed trait RowReverse
+    extends StObject
+       with FlexDirection
 }

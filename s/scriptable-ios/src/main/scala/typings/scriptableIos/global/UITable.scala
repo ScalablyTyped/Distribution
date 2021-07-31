@@ -2,7 +2,6 @@ package typings.scriptableIos.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,4 +19,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/uitable/#-new-uitable
   */
 class UITable ()
-  extends typings.scriptableIos.UITable
+  extends StObject
+     with typings.scriptableIos.UITable

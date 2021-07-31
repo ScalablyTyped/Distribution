@@ -3,18 +3,16 @@ package typings.plotlyJs.anon
 import typings.plotlyJs.mod.Dash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.ShapeLine> */
-@js.native
 trait PartialShapeLine extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var dash: js.UndefOr[Dash] = js.native
+  var dash: js.UndefOr[Dash] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PartialShapeLine {
   

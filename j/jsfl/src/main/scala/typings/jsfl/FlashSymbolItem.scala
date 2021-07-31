@@ -2,31 +2,29 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashSymbolItem extends StObject {
   
-  def convertToCompiledClip(): Unit = js.native
+  def convertToCompiledClip(): Unit
   
-  def exportSWC(outputURI: String): Unit = js.native
+  def exportSWC(outputURI: String): Unit
   
-  def exportSWF(outputURI: String): Unit = js.native
+  def exportSWF(outputURI: String): Unit
   
-  var scalingGrid: Boolean = js.native
+  var scalingGrid: Boolean
   
-  var scalingGridRect: FlashRectangle = js.native
+  var scalingGridRect: FlashRectangle
   
-  var sourceAutoUpdate: Boolean = js.native
+  var sourceAutoUpdate: Boolean
   
-  var sourceFilePath: String = js.native
+  var sourceFilePath: String
   
-  var sourceLibraryName: String = js.native
+  var sourceLibraryName: String
   
-  var symbolType: String = js.native
+  var symbolType: String
   
-  var timeline: FlashTimeline = js.native
+  var timeline: FlashTimeline
 }
 object FlashSymbolItem {
   

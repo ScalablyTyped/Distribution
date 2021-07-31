@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the TableRow object, for use in `tableRow.set({ ... })`. */
-@js.native
 trait TableRowUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TableRowUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var values: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
 }
 object TableRowUpdateData {
   
@@ -29,7 +27,7 @@ object TableRowUpdateData {
   implicit class TableRowUpdateDataMutableBuilder[Self <: TableRowUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

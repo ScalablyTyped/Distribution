@@ -2,23 +2,21 @@ package typings.winrt.Windows.Security.Cryptography.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMacAlgorithmNamesStatics extends StObject {
   
-  var aesCmac: String = js.native
+  var aesCmac: String
   
-  var hmacMd5: String = js.native
+  var hmacMd5: String
   
-  var hmacSha1: String = js.native
+  var hmacSha1: String
   
-  var hmacSha256: String = js.native
+  var hmacSha256: String
   
-  var hmacSha384: String = js.native
+  var hmacSha384: String
   
-  var hmacSha512: String = js.native
+  var hmacSha512: String
 }
 object IMacAlgorithmNamesStatics {
   

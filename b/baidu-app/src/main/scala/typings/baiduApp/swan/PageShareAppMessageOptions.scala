@@ -4,19 +4,17 @@ import typings.baiduApp.baiduAppStrings.button
 import typings.baiduApp.baiduAppStrings.menu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region Page
-@js.native
 trait PageShareAppMessageOptions extends StObject {
   
   /** 转发事件来源。button：页面内转发按钮；menu：右上角转发菜单 */
-  var from: button | menu = js.native
+  var from: button | menu
   
   /** 如果 from 值是 button，则 target 是触发这次转发事件的 button，否则为 undefined */
-  var target: js.UndefOr[js.Object] = js.native
+  var target: js.UndefOr[js.Object] = js.undefined
 }
 object PageShareAppMessageOptions {
   

@@ -10,7 +10,6 @@ import typings.std.Date
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apigatewaymanagementapiMod {
@@ -28,7 +27,7 @@ object apigatewaymanagementapiMod {
   trait ApiGatewayManagementApi extends Service {
     
     @JSName("config")
-    var config_ApiGatewayManagementApi: ConfigBase with ClientConfiguration = js.native
+    var config_ApiGatewayManagementApi: ConfigBase & ClientConfiguration = js.native
     
     /**
       * Delete the connection with the provided id.
@@ -73,16 +72,14 @@ object apigatewaymanagementapiMod {
     ): Request[js.Object, AWSError] = js.native
   }
   
-  @js.native
   trait Blob extends StObject
   
-  @js.native
   trait ClientApiVersions extends StObject {
     
     /**
       * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
       */
-    var apiVersion: js.UndefOr[typings.awsSdk.apigatewaymanagementapiMod.apiVersion] = js.native
+    var apiVersion: js.UndefOr[typings.awsSdk.apigatewaymanagementapiMod.apiVersion] = js.undefined
   }
   object ClientApiVersions {
     
@@ -103,14 +100,16 @@ object apigatewaymanagementapiMod {
     }
   }
   
-  type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  @js.native
+  trait ClientConfiguration
+    extends ServiceConfigurationOptions
+       with ClientApiVersions
   
   type Data = Buffer | Uint8Array | Blob | String
   
-  @js.native
   trait DeleteConnectionRequest extends StObject {
     
-    var ConnectionId: string = js.native
+    var ConnectionId: string
   }
   object DeleteConnectionRequest {
     
@@ -128,10 +127,9 @@ object apigatewaymanagementapiMod {
     }
   }
   
-  @js.native
   trait GetConnectionRequest extends StObject {
     
-    var ConnectionId: string = js.native
+    var ConnectionId: string
   }
   object GetConnectionRequest {
     
@@ -149,20 +147,19 @@ object apigatewaymanagementapiMod {
     }
   }
   
-  @js.native
   trait GetConnectionResponse extends StObject {
     
     /**
       * The time in ISO 8601 format for when the connection was established.
       */
-    var ConnectedAt: js.UndefOr[timestampIso8601] = js.native
+    var ConnectedAt: js.UndefOr[timestampIso8601] = js.undefined
     
-    var Identity: js.UndefOr[typings.awsSdk.apigatewaymanagementapiMod.Identity] = js.native
+    var Identity: js.UndefOr[typings.awsSdk.apigatewaymanagementapiMod.Identity] = js.undefined
     
     /**
       * The time in ISO 8601 format for when the connection was last active.
       */
-    var LastActiveAt: js.UndefOr[timestampIso8601] = js.native
+    var LastActiveAt: js.UndefOr[timestampIso8601] = js.undefined
   }
   object GetConnectionResponse {
     
@@ -195,18 +192,17 @@ object apigatewaymanagementapiMod {
     }
   }
   
-  @js.native
   trait Identity extends StObject {
     
     /**
       * The source IP address of the TCP connection making the request to API Gateway.
       */
-    var SourceIp: string = js.native
+    var SourceIp: string
     
     /**
       * The User Agent of the API caller.
       */
-    var UserAgent: string = js.native
+    var UserAgent: string
   }
   object Identity {
     
@@ -227,18 +223,17 @@ object apigatewaymanagementapiMod {
     }
   }
   
-  @js.native
   trait PostToConnectionRequest extends StObject {
     
     /**
       * The identifier of the connection that a specific client is using.
       */
-    var ConnectionId: string = js.native
+    var ConnectionId: string
     
     /**
       * The data to be sent to the client specified by its connection id.
       */
-    var Data: typings.awsSdk.apigatewaymanagementapiMod.Data = js.native
+    var Data: typings.awsSdk.apigatewaymanagementapiMod.Data
   }
   object PostToConnectionRequest {
     

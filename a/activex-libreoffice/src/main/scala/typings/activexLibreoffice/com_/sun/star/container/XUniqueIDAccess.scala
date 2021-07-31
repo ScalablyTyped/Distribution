@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to access contents via a unique ID. */
-@js.native
-trait XUniqueIDAccess extends XInterface {
+trait XUniqueIDAccess
+  extends StObject
+     with XInterface {
   
   /** @returns the element with the specified unique ID. */
-  def getByUniqueID(ID: String): js.Any = js.native
+  def getByUniqueID(ID: String): js.Any
   
   /** removes the element with the specified unique ID from this container. */
-  def removeByUniqueID(ID: String): Unit = js.native
+  def removeByUniqueID(ID: String): Unit
 }
 object XUniqueIDAccess {
   

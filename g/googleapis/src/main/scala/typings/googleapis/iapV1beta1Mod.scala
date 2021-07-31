@@ -13,7 +13,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iapV1beta1Mod {
@@ -71,7 +70,7 @@ object iapV1beta1Mod {
         */
       def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
       def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-      def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+      def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
       def getIamPolicy(params: ParamsResourceV1beta1Getiampolicy): GaxiosPromise[SchemaPolicy] = js.native
       def getIamPolicy(params: ParamsResourceV1beta1Getiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
       def getIamPolicy(
@@ -104,7 +103,7 @@ object iapV1beta1Mod {
         */
       def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
       def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-      def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+      def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
       def setIamPolicy(params: ParamsResourceV1beta1Setiampolicy): GaxiosPromise[SchemaPolicy] = js.native
       def setIamPolicy(params: ParamsResourceV1beta1Setiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
       def setIamPolicy(
@@ -139,7 +138,7 @@ object iapV1beta1Mod {
         */
       def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
       def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-      def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+      def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
       def testIamPermissions(params: ParamsResourceV1beta1Testiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
       def testIamPermissions(
         params: ParamsResourceV1beta1Testiampermissions,
@@ -158,16 +157,17 @@ object iapV1beta1Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1beta1 = js.native
+      var version: v1beta1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1beta1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1beta1")
         __obj.asInstanceOf[Options]
       }
       
@@ -179,24 +179,25 @@ object iapV1beta1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceV1beta1Getiampolicy extends StandardParameters {
+    trait ParamsResourceV1beta1Getiampolicy
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaGetIamPolicyRequest] = js.native
+      var requestBody: js.UndefOr[SchemaGetIamPolicyRequest] = js.undefined
       
       /**
         * REQUIRED: The resource for which the policy is being requested. See the
         * operation documentation for the appropriate value for this field.
         */
-      var resource: js.UndefOr[String] = js.native
+      var resource: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceV1beta1Getiampolicy {
       
@@ -229,24 +230,25 @@ object iapV1beta1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceV1beta1Setiampolicy extends StandardParameters {
+    trait ParamsResourceV1beta1Setiampolicy
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaSetIamPolicyRequest] = js.native
+      var requestBody: js.UndefOr[SchemaSetIamPolicyRequest] = js.undefined
       
       /**
         * REQUIRED: The resource for which the policy is being specified. See the
         * operation documentation for the appropriate value for this field.
         */
-      var resource: js.UndefOr[String] = js.native
+      var resource: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceV1beta1Setiampolicy {
       
@@ -279,24 +281,25 @@ object iapV1beta1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceV1beta1Testiampermissions extends StandardParameters {
+    trait ParamsResourceV1beta1Testiampermissions
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaTestIamPermissionsRequest] = js.native
+      var requestBody: js.UndefOr[SchemaTestIamPermissionsRequest] = js.undefined
       
       /**
         * REQUIRED: The resource for which the policy detail is being requested.
         * See the operation documentation for the appropriate value for this field.
         */
-      var resource: js.UndefOr[String] = js.native
+      var resource: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceV1beta1Testiampermissions {
       
@@ -332,7 +335,6 @@ object iapV1beta1Mod {
     /**
       * Associates `members` with a `role`.
       */
-    @js.native
     trait SchemaBinding extends StObject {
       
       /**
@@ -340,7 +342,7 @@ object iapV1beta1Mod {
         * condition will not allow user access via current binding. Different
         * bindings, including their conditions, are examined independently.
         */
-      var condition: js.UndefOr[SchemaExpr] = js.native
+      var condition: js.UndefOr[SchemaExpr] = js.undefined
       
       /**
         * Specifies the identities requesting access for a Cloud Platform resource.
@@ -357,13 +359,13 @@ object iapV1beta1Mod {
         * (primary) that represents all the    users of that domain. For example,
         * `google.com` or `example.com`.
         */
-      var members: js.UndefOr[js.Array[String]] = js.native
+      var members: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Role that is assigned to `members`. For example, `roles/viewer`,
         * `roles/editor`, or `roles/owner`.
         */
-      var role: js.UndefOr[String] = js.native
+      var role: js.UndefOr[String] = js.undefined
     }
     object SchemaBinding {
       
@@ -404,34 +406,33 @@ object iapV1beta1Mod {
       * presence&quot;     description: &quot;Determines whether the request has a
       * user account&quot;     expression: &quot;size(request.user) &gt; 0&quot;
       */
-    @js.native
     trait SchemaExpr extends StObject {
       
       /**
         * An optional description of the expression. This is a longer text which
         * describes the expression, e.g. when hovered over it in a UI.
         */
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
       /**
         * Textual representation of an expression in Common Expression Language
         * syntax.  The application context of the containing message determines
         * which well-known feature set of CEL is supported.
         */
-      var expression: js.UndefOr[String] = js.native
+      var expression: js.UndefOr[String] = js.undefined
       
       /**
         * An optional string indicating the location of the expression for error
         * reporting, e.g. a file name and a position in the file.
         */
-      var location: js.UndefOr[String] = js.native
+      var location: js.UndefOr[String] = js.undefined
       
       /**
         * An optional title for the expression, i.e. a short string describing its
         * purpose. This can be used e.g. in UIs which allow to enter the
         * expression.
         */
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object SchemaExpr {
       
@@ -473,7 +474,6 @@ object iapV1beta1Mod {
     /**
       * Request message for `GetIamPolicy` method.
       */
-    @js.native
     trait SchemaGetIamPolicyRequest extends StObject
     
     /**
@@ -496,14 +496,13 @@ object iapV1beta1Mod {
       * roles/viewer   For a description of IAM and its features, see the [IAM
       * developer&#39;s guide](https://cloud.google.com/iam/docs).
       */
-    @js.native
     trait SchemaPolicy extends StObject {
       
       /**
         * Associates a list of `members` to a `role`. `bindings` with no members
         * will result in an error.
         */
-      var bindings: js.UndefOr[js.Array[SchemaBinding]] = js.native
+      var bindings: js.UndefOr[js.Array[SchemaBinding]] = js.undefined
       
       /**
         * `etag` is used for optimistic concurrency control as a way to help
@@ -516,12 +515,12 @@ object iapV1beta1Mod {
         * policy.  If no `etag` is provided in the call to `setIamPolicy`, then the
         * existing policy is overwritten blindly.
         */
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
       /**
         * Deprecated.
         */
-      var version: js.UndefOr[Double] = js.native
+      var version: js.UndefOr[Double] = js.undefined
     }
     object SchemaPolicy {
       
@@ -560,7 +559,6 @@ object iapV1beta1Mod {
     /**
       * Request message for `SetIamPolicy` method.
       */
-    @js.native
     trait SchemaSetIamPolicyRequest extends StObject {
       
       /**
@@ -569,7 +567,7 @@ object iapV1beta1Mod {
         * policy but certain Cloud Platform services (such as Projects) might
         * reject them.
         */
-      var policy: js.UndefOr[SchemaPolicy] = js.native
+      var policy: js.UndefOr[SchemaPolicy] = js.undefined
     }
     object SchemaSetIamPolicyRequest {
       
@@ -593,7 +591,6 @@ object iapV1beta1Mod {
     /**
       * Request message for `TestIamPermissions` method.
       */
-    @js.native
     trait SchemaTestIamPermissionsRequest extends StObject {
       
       /**
@@ -602,7 +599,7 @@ object iapV1beta1Mod {
         * For more information see [IAM
         * Overview](https://cloud.google.com/iam/docs/overview#permissions).
         */
-      var permissions: js.UndefOr[js.Array[String]] = js.native
+      var permissions: js.UndefOr[js.Array[String]] = js.undefined
     }
     object SchemaTestIamPermissionsRequest {
       
@@ -629,14 +626,13 @@ object iapV1beta1Mod {
     /**
       * Response message for `TestIamPermissions` method.
       */
-    @js.native
     trait SchemaTestIamPermissionsResponse extends StObject {
       
       /**
         * A subset of `TestPermissionsRequest.permissions` that the caller is
         * allowed.
         */
-      var permissions: js.UndefOr[js.Array[String]] = js.native
+      var permissions: js.UndefOr[js.Array[String]] = js.undefined
     }
     object SchemaTestIamPermissionsResponse {
       
@@ -660,68 +656,67 @@ object iapV1beta1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * V1 error format.
         */
       @JSName("$.xgafv")
-      var $Dotxgafv: js.UndefOr[String] = js.native
+      var $Dotxgafv: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth access token.
         */
-      var access_token: js.UndefOr[String] = js.native
+      var access_token: js.UndefOr[String] = js.undefined
       
       /**
         * Data format for response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * JSONP
         */
-      var callback: js.UndefOr[String] = js.native
+      var callback: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Available to use for quota purposes for server-side applications. Can be
         * any arbitrary string assigned to a user, but should not exceed 40
         * characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Legacy upload protocol for media (e.g. "media", "multipart").
         */
-      var uploadType: js.UndefOr[String] = js.native
+      var uploadType: js.UndefOr[String] = js.undefined
       
       /**
         * Upload protocol for media (e.g. "raw", "multipart").
         */
-      var upload_protocol: js.UndefOr[String] = js.native
+      var upload_protocol: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

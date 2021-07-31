@@ -2,14 +2,12 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options defining a file or a set of files within a Google Cloud Storage
   * bucket.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CloudStorageOptions extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaGooglePrivacyDlpV2CloudStorageOptions extends StObject {
     * of bytes_limit_per_file and bytes_limit_per_file_percent can be
     * specified.
     */
-  var bytesLimitPerFile: js.UndefOr[String] = js.native
+  var bytesLimitPerFile: js.UndefOr[String] = js.undefined
   
   /**
     * Max percentage of bytes to scan from a file. The rest are omitted. The
@@ -26,28 +24,28 @@ trait SchemaGooglePrivacyDlpV2CloudStorageOptions extends StObject {
     * inclusively. Both 0 and 100 means no limit. Defaults to 0. Only one of
     * bytes_limit_per_file and bytes_limit_per_file_percent can be specified.
     */
-  var bytesLimitPerFilePercent: js.UndefOr[Double] = js.native
+  var bytesLimitPerFilePercent: js.UndefOr[Double] = js.undefined
   
   /**
     * The set of one or more files to scan.
     */
-  var fileSet: js.UndefOr[SchemaGooglePrivacyDlpV2FileSet] = js.native
+  var fileSet: js.UndefOr[SchemaGooglePrivacyDlpV2FileSet] = js.undefined
   
   /**
     * List of file type groups to include in the scan. If empty, all files are
     * scanned and available data format processors are applied. In addition,
     * the binary content of the selected files is always scanned as well.
     */
-  var fileTypes: js.UndefOr[js.Array[String]] = js.native
+  var fileTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Limits the number of files to scan to this percentage of the input
     * FileSet. Number of files scanned is rounded down. Must be between 0 and
     * 100, inclusively. Both 0 and 100 means no limit. Defaults to 0.
     */
-  var filesLimitPercent: js.UndefOr[Double] = js.native
+  var filesLimitPercent: js.UndefOr[Double] = js.undefined
   
-  var sampleMethod: js.UndefOr[String] = js.native
+  var sampleMethod: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CloudStorageOptions {
   

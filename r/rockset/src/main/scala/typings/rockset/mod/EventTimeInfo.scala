@@ -2,20 +2,18 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventTimeInfo extends StObject {
   
   // name of the field containing event time
-  var field: String = js.native
+  var field: String
   
   // format of time field, can be one of: milliseconds_since_epoch, seconds_since_epoch
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   // default time zone, in standard IANA format
-  var time_zone: js.UndefOr[String] = js.native
+  var time_zone: js.UndefOr[String] = js.undefined
 }
 object EventTimeInfo {
   

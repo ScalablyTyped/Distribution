@@ -2,13 +2,11 @@ package typings.actionsOnGoogle.apiV2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentMessageSuggestions extends StObject {
   
-  var suggestions: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessageSuggestion]] = js.native
+  var suggestions: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessageSuggestion]] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentMessageSuggestions {
   

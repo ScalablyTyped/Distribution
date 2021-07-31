@@ -3,31 +3,29 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.Emulation.UserAgentMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetUserAgentOverrideRequest extends StObject {
   
   /**
     * Browser langugage to emulate.
     */
-  var acceptLanguage: js.UndefOr[String] = js.native
+  var acceptLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * The platform navigator.platform should return.
     */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
   /**
     * User agent to use.
     */
-  var userAgent: String = js.native
+  var userAgent: String
   
   /**
     * To be sent in Sec-CH-UA-* headers and returned in navigator.userAgentData
     */
-  var userAgentMetadata: js.UndefOr[UserAgentMetadata] = js.native
+  var userAgentMetadata: js.UndefOr[UserAgentMetadata] = js.undefined
 }
 object SetUserAgentOverrideRequest {
   

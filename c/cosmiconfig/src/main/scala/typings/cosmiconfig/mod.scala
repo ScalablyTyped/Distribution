@@ -8,51 +8,48 @@ import typings.cosmiconfig.typesMod.Loaders
 import typings.cosmiconfig.typesMod.LoadersSync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("cosmiconfig", "cosmiconfig")
+  @JSImport("cosmiconfig", JSImport.Namespace)
   @js.native
-  def cosmiconfig(moduleName: String): ClearCaches = js.native
-  @JSImport("cosmiconfig", "cosmiconfig")
-  @js.native
-  def cosmiconfig(moduleName: String, options: Options): ClearCaches = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cosmiconfig", "cosmiconfigSync")
-  @js.native
-  def cosmiconfigSync(moduleName: String): ClearLoadCache = js.native
-  @JSImport("cosmiconfig", "cosmiconfigSync")
-  @js.native
-  def cosmiconfigSync(moduleName: String, options: OptionsSync): ClearLoadCache = js.native
+  @scala.inline
+  def cosmiconfig(moduleName: String): ClearCaches = ^.asInstanceOf[js.Dynamic].applyDynamic("cosmiconfig")(moduleName.asInstanceOf[js.Any]).asInstanceOf[ClearCaches]
+  @scala.inline
+  def cosmiconfig(moduleName: String, options: Options): ClearCaches = (^.asInstanceOf[js.Dynamic].applyDynamic("cosmiconfig")(moduleName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearCaches]
+  
+  @scala.inline
+  def cosmiconfigSync(moduleName: String): ClearLoadCache = ^.asInstanceOf[js.Dynamic].applyDynamic("cosmiconfigSync")(moduleName.asInstanceOf[js.Any]).asInstanceOf[ClearLoadCache]
+  @scala.inline
+  def cosmiconfigSync(moduleName: String, options: OptionsSync): ClearLoadCache = (^.asInstanceOf[js.Dynamic].applyDynamic("cosmiconfigSync")(moduleName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearLoadCache]
   
   /* Inlined std.Readonly<{ readonly .cjs :cosmiconfig.cosmiconfig.LoaderSync,  readonly .js :cosmiconfig.cosmiconfig.LoaderSync,  readonly .json :cosmiconfig.cosmiconfig.LoaderSync,  readonly .yaml :cosmiconfig.cosmiconfig.LoaderSync,  readonly .yml :cosmiconfig.cosmiconfig.LoaderSync,  readonly noExt :cosmiconfig.cosmiconfig.LoaderSync}> */
   object defaultLoaders {
     
-    @JSImport("cosmiconfig", "defaultLoaders..cjs")
+    @JSImport("cosmiconfig", "defaultLoaders")
     @js.native
-    def cjs(filepath: String, content: String): LoaderResult = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("cosmiconfig", "defaultLoaders..js")
-    @js.native
-    def js_(filepath: String, content: String): LoaderResult = js.native
+    @scala.inline
+    def cjs(filepath: String, content: String): LoaderResult = (^.asInstanceOf[js.Dynamic].applyDynamic(".cjs")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[LoaderResult]
     
-    @JSImport("cosmiconfig", "defaultLoaders..json")
-    @js.native
-    def json(filepath: String, content: String): LoaderResult = js.native
+    @scala.inline
+    def js_(filepath: String, content: String): LoaderResult = (^.asInstanceOf[js.Dynamic].applyDynamic(".js")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[LoaderResult]
     
-    @JSImport("cosmiconfig", "defaultLoaders.noExt")
-    @js.native
-    def noExt(filepath: String, content: String): LoaderResult = js.native
+    @scala.inline
+    def json(filepath: String, content: String): LoaderResult = (^.asInstanceOf[js.Dynamic].applyDynamic(".json")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[LoaderResult]
     
-    @JSImport("cosmiconfig", "defaultLoaders..yaml")
-    @js.native
-    def yaml(filepath: String, content: String): LoaderResult = js.native
+    @scala.inline
+    def noExt(filepath: String, content: String): LoaderResult = (^.asInstanceOf[js.Dynamic].applyDynamic("noExt")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[LoaderResult]
     
-    @JSImport("cosmiconfig", "defaultLoaders..yml")
-    @js.native
-    def yml(filepath: String, content: String): LoaderResult = js.native
+    @scala.inline
+    def yaml(filepath: String, content: String): LoaderResult = (^.asInstanceOf[js.Dynamic].applyDynamic(".yaml")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[LoaderResult]
+    
+    @scala.inline
+    def yml(filepath: String, content: String): LoaderResult = (^.asInstanceOf[js.Dynamic].applyDynamic(".yml")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[LoaderResult]
   }
   
   type Loader = (js.Function2[/* filepath */ String, /* content */ String, js.Promise[LoaderResult]]) | LoaderSync
@@ -61,12 +58,13 @@ object mod {
   
   type LoaderSync = js.Function2[/* filepath */ String, /* content */ String, LoaderResult]
   
-  @js.native
-  trait Options extends OptionsBase {
+  trait Options
+    extends StObject
+       with OptionsBase {
     
-    var loaders: js.UndefOr[Loaders] = js.native
+    var loaders: js.UndefOr[Loaders] = js.undefined
     
-    var transform: js.UndefOr[Transform] = js.native
+    var transform: js.UndefOr[Transform] = js.undefined
   }
   object Options {
     
@@ -95,18 +93,17 @@ object mod {
     }
   }
   
-  @js.native
   trait OptionsBase extends StObject {
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreEmptySearchPlaces: js.UndefOr[Boolean] = js.native
+    var ignoreEmptySearchPlaces: js.UndefOr[Boolean] = js.undefined
     
-    var packageProp: js.UndefOr[String | js.Array[String]] = js.native
+    var packageProp: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var searchPlaces: js.UndefOr[js.Array[String]] = js.native
+    var searchPlaces: js.UndefOr[js.Array[String]] = js.undefined
     
-    var stopDir: js.UndefOr[String] = js.native
+    var stopDir: js.UndefOr[String] = js.undefined
   }
   object OptionsBase {
     
@@ -157,12 +154,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait OptionsSync extends OptionsBase {
+  trait OptionsSync
+    extends StObject
+       with OptionsBase {
     
-    var loaders: js.UndefOr[LoadersSync] = js.native
+    var loaders: js.UndefOr[LoadersSync] = js.undefined
     
-    var transform: js.UndefOr[TransformSync] = js.native
+    var transform: js.UndefOr[TransformSync] = js.undefined
   }
   object OptionsSync {
     

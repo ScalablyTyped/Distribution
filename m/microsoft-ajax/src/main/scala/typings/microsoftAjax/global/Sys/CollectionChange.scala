@@ -2,7 +2,6 @@ package typings.microsoftAjax.global.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Sys.CollectionChange")
 @js.native
 class CollectionChange protected ()
-  extends typings.microsoftAjax.Sys.CollectionChange {
+  extends StObject
+     with typings.microsoftAjax.Sys.CollectionChange {
   //#region Constructors
   /**
     * Creates a CollectionChange object based on the supplied parameters.
@@ -29,9 +29,45 @@ class CollectionChange protected ()
     */
   def this(
     action: typings.microsoftAjax.Sys.NotifyCollectionChangedAction,
-    newItems: js.Array[_],
+    newItems: js.Array[js.Any],
     newStartingIndex: Double,
-    oldItems: js.Array[_],
+    oldItems: js.Array[js.Any],
     oldStartingIndex: Double
   ) = this()
+  
+  //#endregion
+  //#region Fields
+  /**
+    * Gets a NotifyCollectionChangedAction object that contains the change action enumeration value.
+    * @return A NotifyCollectionChangedAction object.
+    */
+  /* CompleteClass */
+  var action: typings.microsoftAjax.Sys.NotifyCollectionChangedAction = js.native
+  
+  /**
+    * @return An array of items that were added.
+    */
+  /* CompleteClass */
+  var newItems: js.Array[js.Any] = js.native
+  
+  /**
+    * The index where new items have been inserted.
+    * @return An integer that represents the index where new items have been inserted.
+    */
+  /* CompleteClass */
+  var newStartingIndex: Double = js.native
+  
+  /**
+    * The items that were removed when the NotifyCollectionChangedAction object is set to remove.
+    * @return An array containing the items that were removed.
+    */
+  /* CompleteClass */
+  var oldItems: js.Array[js.Any] = js.native
+  
+  /**
+    * Gets the index where old items have been removed.
+    * @return An integer that represents the index where old items have been removed.
+    */
+  /* CompleteClass */
+  var oldStartingIndex: Double = js.native
 }

@@ -3,32 +3,45 @@ package typings.mobservable
 import typings.mobservable.interfacesMod.Lambda
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object simpleeventemitterMod {
   
   @JSImport("mobservable/lib/simpleeventemitter", JSImport.Default)
   @js.native
-  class default () extends SimpleEventEmitter
+  class default ()
+    extends StObject
+       with SimpleEventEmitter {
+    
+    /* CompleteClass */
+    override def emit(data: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    var listeners: js.Array[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    
+    /* CompleteClass */
+    override def on(listener: js.Function1[/* repeated */ js.Any, Unit]): Lambda = js.native
+    
+    /* CompleteClass */
+    override def once(listener: js.Function1[/* repeated */ js.Any, Unit]): Lambda = js.native
+  }
   
-  @js.native
   trait SimpleEventEmitter extends StObject {
     
-    def emit(data: js.Any*): js.Any = js.native
+    def emit(data: js.Any*): js.Any
     
-    var listeners: js.Array[js.Function1[/* repeated */ _, Unit]] = js.native
+    var listeners: js.Array[js.Function1[/* repeated */ js.Any, Unit]]
     
-    def on(listener: js.Function1[/* repeated */ js.Any, Unit]): Lambda = js.native
+    def on(listener: js.Function1[/* repeated */ js.Any, Unit]): Lambda
     
-    def once(listener: js.Function1[/* repeated */ js.Any, Unit]): Lambda = js.native
+    def once(listener: js.Function1[/* repeated */ js.Any, Unit]): Lambda
   }
   object SimpleEventEmitter {
     
     @scala.inline
     def apply(
       emit: /* repeated */ js.Any => js.Any,
-      listeners: js.Array[js.Function1[/* repeated */ _, Unit]],
+      listeners: js.Array[js.Function1[/* repeated */ js.Any, Unit]],
       on: js.Function1[/* repeated */ js.Any, Unit] => Lambda,
       once: js.Function1[/* repeated */ js.Any, Unit] => Lambda
     ): SimpleEventEmitter = {
@@ -43,10 +56,10 @@ object simpleeventemitterMod {
       def setEmit(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setListeners(value: js.Array[js.Function1[/* repeated */ _, Unit]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      def setListeners(value: js.Array[js.Function1[/* repeated */ js.Any, Unit]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setListenersVarargs(value: (js.Function1[js.Any, Unit])*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+      def setListenersVarargs(value: (js.Function1[/* repeated */ js.Any, Unit])*): Self = StObject.set(x, "listeners", js.Array(value :_*))
       
       @scala.inline
       def setOn(value: js.Function1[/* repeated */ js.Any, Unit] => Lambda): Self = StObject.set(x, "on", js.Any.fromFunction1(value))

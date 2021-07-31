@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigningProfileParameter extends StObject {
   
   /**
     * Certificate ARN.
     */
-  var certificateArn: js.UndefOr[CertificateArn] = js.native
+  var certificateArn: js.UndefOr[CertificateArn] = js.undefined
   
   /**
     * The location of the code-signing certificate on your device.
     */
-  var certificatePathOnDevice: js.UndefOr[CertificatePathOnDevice] = js.native
+  var certificatePathOnDevice: js.UndefOr[CertificatePathOnDevice] = js.undefined
   
   /**
     * The hardware platform of your device.
     */
-  var platform: js.UndefOr[Platform] = js.native
+  var platform: js.UndefOr[Platform] = js.undefined
 }
 object SigningProfileParameter {
   

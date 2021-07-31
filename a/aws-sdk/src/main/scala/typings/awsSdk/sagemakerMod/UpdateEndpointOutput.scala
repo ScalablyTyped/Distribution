@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateEndpointOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the endpoint.
     */
-  var EndpointArn: typings.awsSdk.sagemakerMod.EndpointArn = js.native
+  var EndpointArn: typings.awsSdk.sagemakerMod.EndpointArn
 }
 object UpdateEndpointOutput {
   

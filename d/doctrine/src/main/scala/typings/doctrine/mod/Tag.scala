@@ -2,34 +2,32 @@ package typings.doctrine.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /** The description of the thing this tag is documenting. */
-  var description: String | Null = js.native
+  var description: String | Null
   
   /** Any errors that were encountered in parsing the tag. */
-  var errors: js.UndefOr[js.Array[String]] = js.native
+  var errors: js.UndefOr[js.Array[String]] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The name of the thing this tag is documenting, if any. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The title of the jsdoc tag. e.g. `@foo` will have a title of 'foo'. */
-  var title: String = js.native
+  var title: String
   
   /** The type of the thing this tag is documenting. */
-  var `type`: js.UndefOr[Type_ | Null] = js.native
+  var `type`: js.UndefOr[Type_ | Null] = js.undefined
 }
 object Tag {
   
   @scala.inline
   def apply(title: String): Tag = {
-    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], description = null)
     __obj.asInstanceOf[Tag]
   }
   

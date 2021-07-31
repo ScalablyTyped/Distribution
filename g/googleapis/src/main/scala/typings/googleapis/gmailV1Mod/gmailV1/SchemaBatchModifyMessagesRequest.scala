@@ -2,27 +2,25 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBatchModifyMessagesRequest extends StObject {
   
   /**
     * A list of label IDs to add to messages.
     */
-  var addLabelIds: js.UndefOr[js.Array[String]] = js.native
+  var addLabelIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The IDs of the messages to modify. There is a limit of 1000 ids per
     * request.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of label IDs to remove from messages.
     */
-  var removeLabelIds: js.UndefOr[js.Array[String]] = js.native
+  var removeLabelIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaBatchModifyMessagesRequest {
   

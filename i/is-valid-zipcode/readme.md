@@ -12,7 +12,7 @@ Check if a zip/postal code is valid.
 | Keywords           | zipcode, valid, validation, zip, code, postal, code, postalcode |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 18112 |
+| # downloads        | 22284 |
 | # stars            | 1 |
 
 ## Links

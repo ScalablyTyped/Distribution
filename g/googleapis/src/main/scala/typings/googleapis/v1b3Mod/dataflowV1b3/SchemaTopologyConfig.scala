@@ -3,40 +3,38 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Global topology of the streaming Dataflow job, including all computations
   * and their sharded locations.
   */
-@js.native
 trait SchemaTopologyConfig extends StObject {
   
   /**
     * The computations associated with a streaming Dataflow job.
     */
-  var computations: js.UndefOr[js.Array[SchemaComputationTopology]] = js.native
+  var computations: js.UndefOr[js.Array[SchemaComputationTopology]] = js.undefined
   
   /**
     * The disks assigned to a streaming Dataflow job.
     */
-  var dataDiskAssignments: js.UndefOr[js.Array[SchemaDataDiskAssignment]] = js.native
+  var dataDiskAssignments: js.UndefOr[js.Array[SchemaDataDiskAssignment]] = js.undefined
   
   /**
     * The size (in bits) of keys that will be assigned to source messages.
     */
-  var forwardingKeyBits: js.UndefOr[Double] = js.native
+  var forwardingKeyBits: js.UndefOr[Double] = js.undefined
   
   /**
     * Version number for persistent state.
     */
-  var persistentStateVersion: js.UndefOr[Double] = js.native
+  var persistentStateVersion: js.UndefOr[Double] = js.undefined
   
   /**
     * Maps user stage names to stable computation names.
     */
-  var userStageToComputationNameMap: js.UndefOr[StringDictionary[String]] = js.native
+  var userStageToComputationNameMap: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaTopologyConfig {
   

@@ -4,21 +4,19 @@ import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.ui.dxMenu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelRootItem extends StObject {
   
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
-  var component: js.UndefOr[dxMenu] = js.native
+  var component: js.UndefOr[dxMenu] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var rootItem: js.UndefOr[dxElement] = js.native
+  var rootItem: js.UndefOr[dxElement] = js.undefined
 }
 object ModelRootItem {
   

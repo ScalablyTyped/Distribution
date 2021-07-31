@@ -2,7 +2,6 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,13 +12,19 @@ object CheckState extends StObject {
   
   //string
   @js.native
-  sealed trait Check extends CheckState
+  sealed trait Check
+    extends StObject
+       with CheckState
   
   //string
   @js.native
-  sealed trait Indeterminate extends CheckState
+  sealed trait Indeterminate
+    extends StObject
+       with CheckState
   
   //string
   @js.native
-  sealed trait Uncheck extends CheckState
+  sealed trait Uncheck
+    extends StObject
+       with CheckState
 }

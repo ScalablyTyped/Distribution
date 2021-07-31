@@ -5,12 +5,12 @@ import typings.puppeteer.puppeteerStrings.targetcreated
 import typings.puppeteer.puppeteerStrings.targetdestroyed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BrowserContext
-  extends EventEmitter
+  extends StObject
+     with EventEmitter
      with TargetAwaiter {
   
   /** The browser this browser context belongs to. */

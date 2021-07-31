@@ -4,20 +4,18 @@ import typings.awsSdk.elastictranscoderMod.Id
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/elastictranscoder.ReadJobRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
-@js.native
 trait ReadJobRequestwaiterWaite extends StObject {
   
   @JSName("$waiter")
-  var $waiter: js.UndefOr[WaiterConfiguration] = js.native
+  var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
     * The identifier of the job for which you want to get detailed information.
     */
-  var Id: typings.awsSdk.elastictranscoderMod.Id = js.native
+  var Id: typings.awsSdk.elastictranscoderMod.Id
 }
 object ReadJobRequestwaiterWaite {
   

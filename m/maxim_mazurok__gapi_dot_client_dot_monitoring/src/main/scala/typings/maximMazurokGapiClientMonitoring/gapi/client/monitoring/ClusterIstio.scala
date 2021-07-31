@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterIstio extends StObject {
   
   /** The name of the Kubernetes cluster in which this Istio service is defined. Corresponds to the cluster_name resource label in k8s_cluster resources. */
-  var clusterName: js.UndefOr[String] = js.native
+  var clusterName: js.UndefOr[String] = js.undefined
   
   /** The location of the Kubernetes cluster in which this Istio service is defined. Corresponds to the location resource label in k8s_cluster resources. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** The name of the Istio service underlying this service. Corresponds to the destination_service_name metric label in Istio metrics. */
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
   
   /** The namespace of the Istio service underlying this service. Corresponds to the destination_service_namespace metric label in Istio metrics. */
-  var serviceNamespace: js.UndefOr[String] = js.native
+  var serviceNamespace: js.UndefOr[String] = js.undefined
 }
 object ClusterIstio {
   

@@ -2,22 +2,22 @@ package typings.deepEqual
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("deep-equal", JSImport.Namespace)
-  @js.native
-  def apply(actual: js.Any, expected: js.Any): Boolean = js.native
-  @JSImport("deep-equal", JSImport.Namespace)
-  @js.native
-  def apply(actual: js.Any, expected: js.Any, opts: DeepEqualOptions): Boolean = js.native
+  @scala.inline
+  def apply(actual: js.Any, expected: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(actual: js.Any, expected: js.Any, opts: DeepEqualOptions): Boolean = (^.asInstanceOf[js.Dynamic].apply(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  @JSImport("deep-equal", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait DeepEqualOptions extends StObject {
     
-    var strict: Boolean = js.native
+    var strict: Boolean
   }
   object DeepEqualOptions {
     

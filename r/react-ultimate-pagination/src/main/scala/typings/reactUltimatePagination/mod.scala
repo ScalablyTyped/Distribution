@@ -3,10 +3,13 @@ package typings.reactUltimatePagination
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-ultimate-pagination", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait ITEM_TYPES extends StObject
@@ -15,49 +18,59 @@ object mod {
   object ITEM_TYPES extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ITEM_TYPES with String] = js.native
+    def apply(value: String): js.UndefOr[ITEM_TYPES & String] = js.native
     
     @js.native
-    sealed trait ELLIPSIS extends ITEM_TYPES
-    /* "ELLIPSIS" */ val ELLIPSIS: typings.reactUltimatePagination.mod.ITEM_TYPES.ELLIPSIS with String = js.native
+    sealed trait ELLIPSIS
+      extends StObject
+         with ITEM_TYPES
+    /* "ELLIPSIS" */ val ELLIPSIS: typings.reactUltimatePagination.mod.ITEM_TYPES.ELLIPSIS & String = js.native
     
     @js.native
-    sealed trait FIRST_PAGE_LINK extends ITEM_TYPES
-    /* "FIRST_PAGE_LINK" */ val FIRST_PAGE_LINK: typings.reactUltimatePagination.mod.ITEM_TYPES.FIRST_PAGE_LINK with String = js.native
+    sealed trait FIRST_PAGE_LINK
+      extends StObject
+         with ITEM_TYPES
+    /* "FIRST_PAGE_LINK" */ val FIRST_PAGE_LINK: typings.reactUltimatePagination.mod.ITEM_TYPES.FIRST_PAGE_LINK & String = js.native
     
     @js.native
-    sealed trait LAST_PAGE_LINK extends ITEM_TYPES
-    /* "LAST_PAGE_LINK" */ val LAST_PAGE_LINK: typings.reactUltimatePagination.mod.ITEM_TYPES.LAST_PAGE_LINK with String = js.native
+    sealed trait LAST_PAGE_LINK
+      extends StObject
+         with ITEM_TYPES
+    /* "LAST_PAGE_LINK" */ val LAST_PAGE_LINK: typings.reactUltimatePagination.mod.ITEM_TYPES.LAST_PAGE_LINK & String = js.native
     
     @js.native
-    sealed trait NEXT_PAGE_LINK extends ITEM_TYPES
-    /* "NEXT_PAGE_LINK" */ val NEXT_PAGE_LINK: typings.reactUltimatePagination.mod.ITEM_TYPES.NEXT_PAGE_LINK with String = js.native
+    sealed trait NEXT_PAGE_LINK
+      extends StObject
+         with ITEM_TYPES
+    /* "NEXT_PAGE_LINK" */ val NEXT_PAGE_LINK: typings.reactUltimatePagination.mod.ITEM_TYPES.NEXT_PAGE_LINK & String = js.native
     
     @js.native
-    sealed trait PAGE extends ITEM_TYPES
-    /* "PAGE" */ val PAGE: typings.reactUltimatePagination.mod.ITEM_TYPES.PAGE with String = js.native
+    sealed trait PAGE
+      extends StObject
+         with ITEM_TYPES
+    /* "PAGE" */ val PAGE: typings.reactUltimatePagination.mod.ITEM_TYPES.PAGE & String = js.native
     
     @js.native
-    sealed trait PREVIOUS_PAGE_LINK extends ITEM_TYPES
-    /* "PREVIOUS_PAGE_LINK" */ val PREVIOUS_PAGE_LINK: typings.reactUltimatePagination.mod.ITEM_TYPES.PREVIOUS_PAGE_LINK with String = js.native
+    sealed trait PREVIOUS_PAGE_LINK
+      extends StObject
+         with ITEM_TYPES
+    /* "PREVIOUS_PAGE_LINK" */ val PREVIOUS_PAGE_LINK: typings.reactUltimatePagination.mod.ITEM_TYPES.PREVIOUS_PAGE_LINK & String = js.native
   }
   
-  @JSImport("react-ultimate-pagination", "createUltimatePagination")
-  @js.native
-  def createUltimatePagination(options: CreateUltimatePaginationOptions): ComponentType[UltimatePaginationProps] = js.native
+  @scala.inline
+  def createUltimatePagination(options: CreateUltimatePaginationOptions): ComponentType[UltimatePaginationProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUltimatePagination")(options.asInstanceOf[js.Any]).asInstanceOf[ComponentType[UltimatePaginationProps]]
   
-  @js.native
   trait CreateUltimatePaginationOptions extends StObject {
     
     /**
       * A React.js component that will be used as a wrapper for pagination items
       */
-    var WrapperComponent: js.UndefOr[String | ComponentType[_]] = js.native
+    var WrapperComponent: js.UndefOr[String | ComponentType[js.Any]] = js.undefined
     
     /**
       * An object that is used as a map from the item type to the React.js component that will be used to render this item
       */
-    var itemTypeToComponent: ItemTypeToComponent = js.native
+    var itemTypeToComponent: ItemTypeToComponent
   }
   object CreateUltimatePaginationOptions {
     
@@ -74,45 +87,44 @@ object mod {
       def setItemTypeToComponent(value: ItemTypeToComponent): Self = StObject.set(x, "itemTypeToComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setWrapperComponent(value: String | ComponentType[_]): Self = StObject.set(x, "WrapperComponent", value.asInstanceOf[js.Any])
+      def setWrapperComponent(value: String | ComponentType[js.Any]): Self = StObject.set(x, "WrapperComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWrapperComponentUndefined: Self = StObject.set(x, "WrapperComponent", js.undefined)
     }
   }
   
-  @js.native
   trait ItemTypeToComponent extends StObject {
     
     /**
       * An item that represents groups of pages that currently are not visible in paginator (can be used to navigate to the page in the group that is the nearest to the current page)
       */
-    var ELLIPSIS: ComponentType[PaginationComponentProps] = js.native
+    var ELLIPSIS: ComponentType[PaginationComponentProps]
     
     /**
       * A link to the first page
       */
-    var FIRST_PAGE_LINK: ComponentType[PaginationComponentProps] = js.native
+    var FIRST_PAGE_LINK: ComponentType[PaginationComponentProps]
     
     /**
       * A link to the last page
       */
-    var LAST_PAGE_LINK: ComponentType[PaginationComponentProps] = js.native
+    var LAST_PAGE_LINK: ComponentType[PaginationComponentProps]
     
     /**
       * A link to the next page
       */
-    var NEXT_PAGE_LINK: ComponentType[PaginationComponentProps] = js.native
+    var NEXT_PAGE_LINK: ComponentType[PaginationComponentProps]
     
     /**
       * A link to a page
       */
-    var PAGE: ComponentType[PaginationComponentProps] = js.native
+    var PAGE: ComponentType[PaginationComponentProps]
     
     /**
       * A link to the previous page
       */
-    var PREVIOUS_PAGE_LINK: ComponentType[PaginationComponentProps] = js.native
+    var PREVIOUS_PAGE_LINK: ComponentType[PaginationComponentProps]
   }
   object ItemTypeToComponent {
     
@@ -152,28 +164,27 @@ object mod {
     }
   }
   
-  @js.native
   trait PaginationComponentProps extends StObject {
     
     /**
       * Show if `currentPage` if the same as `value` of an item (can be used to highlight a current page or disable first, previous, next or last page links when user is already on first/last page)
       */
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
     /**
       * Show if button should be disabled
       */
-    var isDisabled: Boolean = js.native
+    var isDisabled: Boolean
     
     /**
       * Should be called when user interacted with a component and the current page should be changed to the page represented by item (no arguments should be used, can be used for all item types)
       */
-    def onClick(): Unit = js.native
+    def onClick(): Unit
     
     /**
       * Number of pages that user should navigate to when item is activated (for items with type `PAGE` it also can be used as a label in UI)
       */
-    var value: Double = js.native
+    var value: Double
   }
   object PaginationComponentProps {
     
@@ -200,53 +211,52 @@ object mod {
     }
   }
   
-  @js.native
   trait UltimatePaginationProps extends StObject {
     
     /**
       * Number of always visible pages at the beginning and end
       */
-    var boundaryPagesRange: js.UndefOr[Double] = js.native
+    var boundaryPagesRange: js.UndefOr[Double] = js.undefined
     
     /**
       * Current page number
       */
-    var currentPage: Double = js.native
+    var currentPage: Double
     
     /**
       * Boolean flag to disable all buttons in pagination
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean flag to hide ellipsis
       */
-    var hideEllipsis: js.UndefOr[Boolean] = js.native
+    var hideEllipsis: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean flag to hide first and last page links
       */
-    var hideFirstAndLastPageLinks: js.UndefOr[Boolean] = js.native
+    var hideFirstAndLastPageLinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean flag to hide previous and next page links
       */
-    var hidePreviousAndNextPageLinks: js.UndefOr[Boolean] = js.native
+    var hidePreviousAndNextPageLinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback that will be called with new page when it should be changed by user interaction
       */
-    var onChange: js.UndefOr[js.Function1[/* newPage */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* newPage */ Double, Unit]] = js.undefined
     
     /**
       * Number of always visible pages before and after the current one
       */
-    var siblingPagesRange: js.UndefOr[Double] = js.native
+    var siblingPagesRange: js.UndefOr[Double] = js.undefined
     
     /**
       * Total number of pages
       */
-    var totalPages: Double = js.native
+    var totalPages: Double
   }
   object UltimatePaginationProps {
     

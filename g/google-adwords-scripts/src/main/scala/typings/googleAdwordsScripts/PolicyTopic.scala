@@ -2,17 +2,15 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyTopic extends StObject {
   
-  def getId(): String = js.native
+  def getId(): String
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def getType(): String = js.native
+  def getType(): String
 }
 object PolicyTopic {
   

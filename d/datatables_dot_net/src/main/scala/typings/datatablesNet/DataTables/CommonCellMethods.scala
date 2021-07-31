@@ -2,12 +2,13 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region "cell-methods"
 @js.native
-trait CommonCellMethods extends CommonSubMethods {
+trait CommonCellMethods
+  extends StObject
+     with CommonSubMethods {
   
   /**
     * Invalidate the data held in DataTables for the selected cells

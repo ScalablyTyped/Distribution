@@ -3,17 +3,15 @@ package typings.reactVisibilitySensor
 import typings.reactVisibilitySensor.mod.Shape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait IsVisible extends StObject {
     
-    var isVisible: Boolean = js.native
+    var isVisible: Boolean
     
-    var visibilityRect: js.UndefOr[Shape] = js.native
+    var visibilityRect: js.UndefOr[Shape] = js.undefined
   }
   object IsVisible {
     

@@ -5,17 +5,15 @@ import typings.devextreme.mod.DevExpress.ui.dxTreeListColumn
 import typings.devextreme.mod.DevExpress.ui.dxTreeListRowObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `15` extends StObject {
   
-  var column: js.UndefOr[dxTreeListColumn] = js.native
+  var column: js.UndefOr[dxTreeListColumn] = js.undefined
   
-  var component: js.UndefOr[dxTreeList] = js.native
+  var component: js.UndefOr[dxTreeList] = js.undefined
   
-  var row: js.UndefOr[dxTreeListRowObject] = js.native
+  var row: js.UndefOr[dxTreeListRowObject] = js.undefined
 }
 object `15` {
   

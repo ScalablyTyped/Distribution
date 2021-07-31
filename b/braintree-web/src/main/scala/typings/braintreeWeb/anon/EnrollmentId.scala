@@ -2,19 +2,17 @@ package typings.braintreeWeb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnrollmentId extends StObject {
   
-  var card: js.Any = js.native
+  var card: js.Any
   
-  var enrollmentId: String = js.native
+  var enrollmentId: String
   
-  var hostedFields: typings.braintreeWeb.hostedFieldsMod.HostedFields = js.native
+  var hostedFields: typings.braintreeWeb.hostedFieldsMod.HostedFields
   
-  var smsCode: String = js.native
+  var smsCode: String
 }
 object EnrollmentId {
   

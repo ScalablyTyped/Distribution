@@ -12,7 +12,7 @@ The interactive prompts portion of Ionic CLI Framework
 | Keywords           | - |
 | # releases         | 18 |
 | # dependents       | 1 |
-| # downloads        | 2499599 |
+| # downloads        | 2668869 |
 | # stars            | 0 |
 
 ## Links

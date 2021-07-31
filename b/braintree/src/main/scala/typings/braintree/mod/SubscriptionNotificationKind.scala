@@ -2,7 +2,6 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.braintree.braintreeStrings.subscription_went_active
   - typings.braintree.braintreeStrings.subscription_went_past_due
 */
-trait SubscriptionNotificationKind extends _WebhookNotificationKind
+trait SubscriptionNotificationKind
+  extends StObject
+     with _WebhookNotificationKind
 object SubscriptionNotificationKind {
   
   @scala.inline

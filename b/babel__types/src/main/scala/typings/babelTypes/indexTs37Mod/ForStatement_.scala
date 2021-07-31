@@ -3,36 +3,35 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ForStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait ForStatement_
-  extends BlockParent
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait ForStatement_
+  extends StObject
      with BaseNode
+     with BlockParent
      with For
      with Loop
      with Scopable
      with Statement {
   
-  var body: Statement = js.native
+  var body: Statement
   
-  var init: VariableDeclaration_ | Expression | Null = js.native
+  var init: VariableDeclaration_ | Expression | Null
   
-  var test: Expression | Null = js.native
+  var test: Expression | Null
   
   @JSName("type")
-  var type_ForStatement_ : ForStatement = js.native
+  var type_ForStatement_ : ForStatement
   
-  var update: Expression | Null = js.native
+  var update: Expression | Null
 }
 object ForStatement_ {
   
   @scala.inline
-  def apply(body: Statement, `type`: ForStatement): ForStatement_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: Statement): ForStatement_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, init = null, innerComments = null, leadingComments = null, loc = null, start = null, test = null, trailingComments = null, update = null)
+    __obj.updateDynamic("type")("ForStatement")
     __obj.asInstanceOf[ForStatement_]
   }
   

@@ -8,7 +8,6 @@ import typings.stompit.incomingFrameStreamMod.IncomingFrame
 import typings.stompit.socketMod.SocketOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientMod {
@@ -43,24 +42,11 @@ object clientMod {
     extends typings.stompit.socketMod.^ {
     
     def ack(message: Message): Unit = js.native
-    def ack(
-      message: Message,
-      headers: js.UndefOr[scala.Nothing],
-      sendOptions: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
-    def ack(message: Message, headers: js.UndefOr[scala.Nothing], sendOptions: SendOptions): Unit = js.native
-    def ack(
-      message: Message,
-      headers: js.UndefOr[scala.Nothing],
-      sendOptions: SendOptions,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
     def ack(message: Message, headers: js.Any): Unit = js.native
     def ack(
       message: Message,
       headers: js.Any,
-      sendOptions: js.UndefOr[scala.Nothing],
+      sendOptions: Unit,
       callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Unit = js.native
     def ack(message: Message, headers: js.Any, sendOptions: SendOptions): Unit = js.native
@@ -70,17 +56,27 @@ object clientMod {
       sendOptions: SendOptions,
       callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Unit = js.native
+    def ack(
+      message: Message,
+      headers: Unit,
+      sendOptions: Unit,
+      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Unit = js.native
+    def ack(message: Message, headers: Unit, sendOptions: SendOptions): Unit = js.native
+    def ack(
+      message: Message,
+      headers: Unit,
+      sendOptions: SendOptions,
+      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Unit = js.native
     
     def begin(): typings.stompit.transactionMod.^ = js.native
     def begin(headers: js.Any): typings.stompit.transactionMod.^ = js.native
     
     def connect(): Unit = js.native
-    def connect(
-      headers: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error | Null, /* client */ this.type, Unit]
-    ): Unit = js.native
     def connect(headers: js.Any): Unit = js.native
     def connect(headers: js.Any, callback: js.Function2[/* err */ Error | Null, /* client */ this.type, Unit]): Unit = js.native
+    def connect(headers: Unit, callback: js.Function2[/* err */ Error | Null, /* client */ this.type, Unit]): Unit = js.native
     
     def disconnect(): Unit = js.native
     def disconnect(callback: js.Function2[/* error */ Error | Null, /* client */ this.type, Unit]): Unit = js.native
@@ -90,30 +86,30 @@ object clientMod {
     def getSubscription(id: Double): typings.stompit.subscriptionMod.^ = js.native
     
     def nack(message: Message): Unit = js.native
-    def nack(
-      message: Message,
-      headers: js.UndefOr[scala.Nothing],
-      sendOptions: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
-    def nack(message: Message, headers: js.UndefOr[scala.Nothing], sendOptions: SendOptions): Unit = js.native
-    def nack(
-      message: Message,
-      headers: js.UndefOr[scala.Nothing],
-      sendOptions: SendOptions,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
     def nack(message: Message, headers: js.Any): Unit = js.native
     def nack(
       message: Message,
       headers: js.Any,
-      sendOptions: js.UndefOr[scala.Nothing],
+      sendOptions: Unit,
       callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Unit = js.native
     def nack(message: Message, headers: js.Any, sendOptions: SendOptions): Unit = js.native
     def nack(
       message: Message,
       headers: js.Any,
+      sendOptions: SendOptions,
+      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Unit = js.native
+    def nack(
+      message: Message,
+      headers: Unit,
+      sendOptions: Unit,
+      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Unit = js.native
+    def nack(message: Message, headers: Unit, sendOptions: SendOptions): Unit = js.native
+    def nack(
+      message: Message,
+      headers: Unit,
       sendOptions: SendOptions,
       callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Unit = js.native
@@ -125,60 +121,20 @@ object clientMod {
     ): Unit = js.native
     
     def send(): Writable = js.native
-    def send(headers: js.UndefOr[scala.Nothing], options: SendOptions): Writable = js.native
     def send(headers: js.Any): Writable = js.native
     def send(headers: js.Any, options: SendOptions): Writable = js.native
+    def send(headers: Unit, options: SendOptions): Writable = js.native
     
-    def sendFrame(command: String, headers: js.UndefOr[scala.Nothing], options: SendOptions): Writable = js.native
     def sendFrame(command: String, headers: js.Any, options: SendOptions): Writable = js.native
+    def sendFrame(command: String, headers: Unit, options: SendOptions): Writable = js.native
     
     def sendString(): Unit = js.native
-    def sendString(
-      headers: js.UndefOr[scala.Nothing],
-      body: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
-    def sendString(headers: js.UndefOr[scala.Nothing], body: js.UndefOr[scala.Nothing], options: SendOptions): Unit = js.native
-    def sendString(
-      headers: js.UndefOr[scala.Nothing],
-      body: js.UndefOr[scala.Nothing],
-      options: SendOptions,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
-    def sendString(headers: js.UndefOr[scala.Nothing], body: js.Any): Unit = js.native
-    def sendString(
-      headers: js.UndefOr[scala.Nothing],
-      body: js.Any,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
-    def sendString(headers: js.UndefOr[scala.Nothing], body: js.Any, options: SendOptions): Unit = js.native
-    def sendString(
-      headers: js.UndefOr[scala.Nothing],
-      body: js.Any,
-      options: SendOptions,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
     def sendString(headers: js.Any): Unit = js.native
-    def sendString(
-      headers: js.Any,
-      body: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
-    def sendString(headers: js.Any, body: js.UndefOr[scala.Nothing], options: SendOptions): Unit = js.native
-    def sendString(
-      headers: js.Any,
-      body: js.UndefOr[scala.Nothing],
-      options: SendOptions,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
     def sendString(headers: js.Any, body: js.Any): Unit = js.native
     def sendString(
       headers: js.Any,
       body: js.Any,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Unit = js.native
     def sendString(headers: js.Any, body: js.Any, options: SendOptions): Unit = js.native
@@ -188,16 +144,56 @@ object clientMod {
       options: SendOptions,
       callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Unit = js.native
+    def sendString(
+      headers: js.Any,
+      body: Unit,
+      options: Unit,
+      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Unit = js.native
+    def sendString(headers: js.Any, body: Unit, options: SendOptions): Unit = js.native
+    def sendString(
+      headers: js.Any,
+      body: Unit,
+      options: SendOptions,
+      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Unit = js.native
+    def sendString(headers: Unit, body: js.Any): Unit = js.native
+    def sendString(
+      headers: Unit,
+      body: js.Any,
+      options: Unit,
+      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Unit = js.native
+    def sendString(headers: Unit, body: js.Any, options: SendOptions): Unit = js.native
+    def sendString(
+      headers: Unit,
+      body: js.Any,
+      options: SendOptions,
+      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Unit = js.native
+    def sendString(
+      headers: Unit,
+      body: Unit,
+      options: Unit,
+      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Unit = js.native
+    def sendString(headers: Unit, body: Unit, options: SendOptions): Unit = js.native
+    def sendString(
+      headers: Unit,
+      body: Unit,
+      options: SendOptions,
+      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Unit = js.native
     
     def setImplicitSubscription(id: Double): typings.stompit.subscriptionMod.^ = js.native
-    def setImplicitSubscription(id: Double, ack: js.UndefOr[scala.Nothing], messageListener: MessageCallback): typings.stompit.subscriptionMod.^ = js.native
+    def setImplicitSubscription(id: Double, ack: Unit, messageListener: MessageCallback): typings.stompit.subscriptionMod.^ = js.native
     def setImplicitSubscription(id: Double, ack: Ack): typings.stompit.subscriptionMod.^ = js.native
     def setImplicitSubscription(id: Double, ack: Ack, messageListener: MessageCallback): typings.stompit.subscriptionMod.^ = js.native
     
     def subscribe(): typings.stompit.subscriptionMod.^ = js.native
-    def subscribe(headers: js.UndefOr[scala.Nothing], messageListener: MessageCallback): typings.stompit.subscriptionMod.^ = js.native
     def subscribe(headers: js.Any): typings.stompit.subscriptionMod.^ = js.native
     def subscribe(headers: js.Any, messageListener: MessageCallback): typings.stompit.subscriptionMod.^ = js.native
+    def subscribe(headers: Unit, messageListener: MessageCallback): typings.stompit.subscriptionMod.^ = js.native
   }
   
   @js.native
@@ -210,12 +206,13 @@ object clientMod {
   
   type MessageCallback = js.Function2[/* err */ Error | Null, /* message */ Message, Unit]
   
-  @js.native
-  trait SendOptions extends WritableOptions {
+  trait SendOptions
+    extends StObject
+       with WritableOptions {
     
-    def onError(err: Error): Unit = js.native
+    def onError(err: Error): Unit
     
-    def onReceipt(): Unit = js.native
+    def onReceipt(): Unit
   }
   object SendOptions {
     

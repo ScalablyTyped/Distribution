@@ -4,19 +4,17 @@ import typings.fhirKitClient.mod.CustomResource
 import typings.fhirKitClient.mod.CustomResourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyT[T /* <: CustomResource */] extends StObject {
   
-  var body: T = js.native
+  var body: T
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: CustomResourceType = js.native
+  var resourceType: CustomResourceType
 }
 object BodyT {
   
@@ -27,7 +25,7 @@ object BodyT {
   }
   
   @scala.inline
-  implicit class BodyTMutableBuilder[Self <: BodyT[_], T /* <: CustomResource */] (val x: Self with BodyT[T]) extends AnyVal {
+  implicit class BodyTMutableBuilder[Self <: BodyT[?], T /* <: CustomResource */] (val x: Self & BodyT[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

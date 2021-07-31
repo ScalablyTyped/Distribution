@@ -2,26 +2,24 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HCEMessageRes extends StObject {
   
   /**
     * 客户端接收到 NFC 设备的指令
     */
-  var data: js.UndefOr[js.Array[_]] = js.native
+  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 消息类型
     */
-  var messageType: js.UndefOr[Double] = js.native
+  var messageType: js.UndefOr[Double] = js.undefined
   
   /**
     * 此参数当且仅当 messageType=2 时有效
     */
-  var reason: js.UndefOr[Double] = js.native
+  var reason: js.UndefOr[Double] = js.undefined
 }
 object HCEMessageRes {
   
@@ -35,7 +33,7 @@ object HCEMessageRes {
   implicit class HCEMessageResMutableBuilder[Self <: HCEMessageRes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

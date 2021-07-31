@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param entity - The Entity that this Component is attached to.
   */
 @js.native
-trait AnimationComponent extends Component {
+trait AnimationComponent
+  extends StObject
+     with Component {
   
   /**
     * If true the first animation asset will begin playing when the scene is loaded.

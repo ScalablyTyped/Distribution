@@ -2,15 +2,13 @@ package typings.dashjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBufferState extends StObject {
   
-  var state: String = js.native
+  var state: String
   
-  var target: Double = js.native
+  var target: Double
 }
 object IBufferState {
   

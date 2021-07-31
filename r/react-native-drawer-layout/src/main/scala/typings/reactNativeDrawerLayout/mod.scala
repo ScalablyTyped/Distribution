@@ -14,7 +14,6 @@ import typings.reactNativeDrawerLayout.reactNativeDrawerLayoutStrings.right
 import typings.reactNativeDrawerLayout.reactNativeDrawerLayoutStrings.unlocked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -55,19 +54,20 @@ object mod {
   
   type DrawerLayoutOpenEventHandler = js.Function0[Unit]
   
-  @js.native
-  trait DrawerLayoutProperties extends ViewProps {
+  trait DrawerLayoutProperties
+    extends StObject
+       with ViewProps {
     
     /**
       * Child content.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Specifies the background color of the drawer. The default value is white. If you want to set
       * the opacity of the drawer, use rgba.
       */
-    var drawerBackgroundColor: js.UndefOr[String] = js.native
+    var drawerBackgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies the lock mode of the drawer. The drawer can be locked in 3 states:
@@ -78,18 +78,18 @@ object mod {
       *
       * The drawer may still be opened and closed programmatically (`openDrawer`/`closeDrawer`).
       */
-    var drawerLockMode: js.UndefOr[unlocked | `locked-closed` | `locked-open`] = js.native
+    var drawerLockMode: js.UndefOr[unlocked | `locked-closed` | `locked-open`] = js.undefined
     
     /**
       * Specifies the side of the screen from which the drawer will slide in.
       */
-    var drawerPosition: left | right = js.native
+    var drawerPosition: left | right
     
     /**
       * Specifies the width of the drawer, more precisely the width of the view that be pulled in from
       * the edge of the window.
       */
-    var drawerWidth: Double = js.native
+    var drawerWidth: Double
     
     /**
       * Determines whether the keyboard gets dismissed in response to a drag.
@@ -97,22 +97,22 @@ object mod {
       * - 'none' (the default), drags do not dismiss the keyboard.
       * - 'on-drag', the keyboard is dismissed when a drag begins.
       */
-    var keyboardDismissMode: js.UndefOr[none | `on-drag`] = js.native
+    var keyboardDismissMode: js.UndefOr[none | `on-drag`] = js.undefined
     
     /**
       * Function called whenever the navigation view has been closed.
       */
-    var onDrawerClose: js.UndefOr[DrawerLayoutCloseEventHandler] = js.native
+    var onDrawerClose: js.UndefOr[DrawerLayoutCloseEventHandler] = js.undefined
     
     /**
       * Function called whenever the navigation view has been opened.
       */
-    var onDrawerOpen: js.UndefOr[DrawerLayoutOpenEventHandler] = js.native
+    var onDrawerOpen: js.UndefOr[DrawerLayoutOpenEventHandler] = js.undefined
     
     /**
       * Function called whenever there is an interaction with the navigation view.
       */
-    var onDrawerSlide: js.UndefOr[DrawerLayoutSlideEventHandler] = js.native
+    var onDrawerSlide: js.UndefOr[DrawerLayoutSlideEventHandler] = js.undefined
     
     /**
       * Function called when the drawer state has changed. The drawer can be in 3 states:
@@ -122,23 +122,23 @@ object mod {
       * - settling, meaning that there was an interaction with the navigation view, and the navigation
       *   view is now finishing its closing or opening animation
       */
-    var onDrawerStateChanged: js.UndefOr[DrawerLayoutStateChangeEventHandler] = js.native
+    var onDrawerStateChanged: js.UndefOr[DrawerLayoutStateChangeEventHandler] = js.undefined
     
     /**
       * The navigation view that will be rendered to the side of the screen and can be pulled in.
       */
-    var renderNavigationView: ReactNode = js.native
+    var renderNavigationView: ReactNode
     
     /**
       * Make the drawer take the entire screen and draw the background of the status bar to allow it
       * to open over the status bar. It will only have an effect on API 21+.
       */
-    var statusBarBackgroundColor: js.UndefOr[String] = js.native
+    var statusBarBackgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * Use native driver animations.
       */
-    var useNativeAnimations: js.UndefOr[Boolean] = js.native
+    var useNativeAnimations: js.UndefOr[Boolean] = js.undefined
   }
   object DrawerLayoutProperties {
     
@@ -225,10 +225,9 @@ object mod {
     }
   }
   
-  @js.native
   trait DrawerLayoutSlideEvent extends StObject {
     
-    var nativeEvent: Offset = js.native
+    var nativeEvent: Offset
   }
   object DrawerLayoutSlideEvent {
     

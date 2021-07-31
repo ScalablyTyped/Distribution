@@ -4,32 +4,31 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.openapiTypes.mod.IJsonSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaObject
-  extends IJsonSchema
+  extends StObject
+     with IJsonSchema
      with /* index */ StringDictionary[js.Any]
      with Schema {
   
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
   
-  var discriminator: js.UndefOr[String] = js.native
+  var discriminator: js.UndefOr[String] = js.undefined
   
-  var example: js.UndefOr[js.Any] = js.native
+  var example: js.UndefOr[js.Any] = js.undefined
   
-  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.native
+  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.undefined
   
   @JSName("items")
-  var items_SchemaObject: js.UndefOr[ItemsObject] = js.native
+  var items_SchemaObject: js.UndefOr[ItemsObject] = js.undefined
   
   @JSName("properties")
-  var properties_SchemaObject: js.UndefOr[StringDictionary[SchemaObject]] = js.native
+  var properties_SchemaObject: js.UndefOr[StringDictionary[SchemaObject]] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var xml: js.UndefOr[XMLObject] = js.native
+  var xml: js.UndefOr[XMLObject] = js.undefined
 }
 object SchemaObject {
   

@@ -2,61 +2,59 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessCodeFormat extends StObject {
   
   /**
     * Boolean specifying whether this format configuration is required.
     */
-  var formatRequired: js.UndefOr[String] = js.native
+  var formatRequired: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata indicating whether the `formatRequired` property is editable.
     */
-  var formatRequiredMetadata: js.UndefOr[SettingsMetadata] = js.native
+  var formatRequiredMetadata: js.UndefOr[SettingsMetadata] = js.undefined
   
   /**
     * Boolean specifying whether alphabetical characters are required in the access code string.
     */
-  var letterRequired: js.UndefOr[String] = js.native
+  var letterRequired: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata indicating whether the `letterRequired` property is editable.
     */
-  var letterRequiredMetadata: js.UndefOr[SettingsMetadata] = js.native
+  var letterRequiredMetadata: js.UndefOr[SettingsMetadata] = js.undefined
   
   /**
     * Minimum length of the access code string.
     */
-  var minimumLength: js.UndefOr[String] = js.native
+  var minimumLength: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata indicating whether the `minimumLength` property is editable.
     */
-  var minimumLengthMetadata: js.UndefOr[SettingsMetadata] = js.native
+  var minimumLengthMetadata: js.UndefOr[SettingsMetadata] = js.undefined
   
   /**
     * Boolean specifying whether numerical characters (0-9) are required in the access code string.
     */
-  var numberRequired: js.UndefOr[String] = js.native
+  var numberRequired: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata indicating whether the `numberRequired` property is editable.
     */
-  var numberRequiredMetadata: js.UndefOr[SettingsMetadata] = js.native
+  var numberRequiredMetadata: js.UndefOr[SettingsMetadata] = js.undefined
   
   /**
     * Boolean specifying whether special characters are required in the access code string. The string cannot contain the special characters '<', '>', '&', or '#'.
     */
-  var specialCharacterRequired: js.UndefOr[String] = js.native
+  var specialCharacterRequired: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata indicating whether the `specialCharacterRequired` property is editable.
     */
-  var specialCharacterRequiredMetadata: js.UndefOr[SettingsMetadata] = js.native
+  var specialCharacterRequiredMetadata: js.UndefOr[SettingsMetadata] = js.undefined
 }
 object AccessCodeFormat {
   

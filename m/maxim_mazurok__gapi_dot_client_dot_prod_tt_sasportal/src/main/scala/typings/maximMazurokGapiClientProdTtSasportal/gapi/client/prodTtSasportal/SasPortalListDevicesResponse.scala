@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasporta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalListDevicesResponse extends StObject {
   
   /** The devices that match the request. */
-  var devices: js.UndefOr[js.Array[SasPortalDevice]] = js.native
+  var devices: js.UndefOr[js.Array[SasPortalDevice]] = js.undefined
   
   /**
     * A pagination token returned from a previous call to ListDevices method that indicates from where listing should continue. If the field is missing or empty, it means there is no more
     * devices.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SasPortalListDevicesResponse {
   

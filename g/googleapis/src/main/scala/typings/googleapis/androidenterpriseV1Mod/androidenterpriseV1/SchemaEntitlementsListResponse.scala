@@ -2,13 +2,11 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The entitlement resources for the user.
   */
-@js.native
 trait SchemaEntitlementsListResponse extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait SchemaEntitlementsListResponse extends StObject {
     * app that they have installed, or a paid app that they have been allocated
     * a license to.
     */
-  var entitlement: js.UndefOr[js.Array[SchemaEntitlement]] = js.native
+  var entitlement: js.UndefOr[js.Array[SchemaEntitlement]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#entitlementsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaEntitlementsListResponse {
   

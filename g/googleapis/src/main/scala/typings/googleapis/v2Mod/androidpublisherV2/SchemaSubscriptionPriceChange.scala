@@ -2,7 +2,6 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the form of seeking confirmation from the user or tailoring the experience
   * for a successful conversion.
   */
-@js.native
 trait SchemaSubscriptionPriceChange extends StObject {
   
   /**
     * The new price the subscription will renew with if the price change is
     * accepted by the user.
     */
-  var newPrice: js.UndefOr[SchemaPrice] = js.native
+  var newPrice: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The current state of the price change. Possible values are:   -
@@ -29,7 +27,7 @@ trait SchemaSubscriptionPriceChange extends StObject {
     * change takes effect on a future date when the subscription renews. Note
     * that the change might not occur when the subscription is renewed next.
     */
-  var state: js.UndefOr[Double] = js.native
+  var state: js.UndefOr[Double] = js.undefined
 }
 object SchemaSubscriptionPriceChange {
   

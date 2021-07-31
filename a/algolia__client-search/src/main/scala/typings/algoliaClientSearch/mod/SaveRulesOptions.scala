@@ -2,21 +2,19 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveRulesOptions extends StObject {
   
   /**
     * If the existing rules should be removed.
     */
-  val clearExistingRules: js.UndefOr[Boolean] = js.native
+  val clearExistingRules: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If the saved rules should be forward to replicas.
     */
-  val forwardToReplicas: js.UndefOr[Boolean] = js.native
+  val forwardToReplicas: js.UndefOr[Boolean] = js.undefined
 }
 object SaveRulesOptions {
   

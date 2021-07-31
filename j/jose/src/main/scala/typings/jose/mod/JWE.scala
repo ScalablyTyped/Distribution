@@ -9,10 +9,13 @@ import typings.jose.mod.JWK.OctKey
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JWE {
+  
+  @JSImport("jose", "JWE")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("jose", "JWE.Encrypt")
   @js.native
@@ -21,28 +24,18 @@ object JWE {
     def this(cleartext: Buffer) = this()
     def this(cleartext: String, `protected`: js.Object) = this()
     def this(cleartext: Buffer, `protected`: js.Object) = this()
-    def this(cleartext: String, `protected`: js.UndefOr[scala.Nothing], aad: String) = this()
     def this(cleartext: String, `protected`: js.Object, aad: String) = this()
-    def this(cleartext: Buffer, `protected`: js.UndefOr[scala.Nothing], aad: String) = this()
+    def this(cleartext: String, `protected`: Unit, aad: String) = this()
     def this(cleartext: Buffer, `protected`: js.Object, aad: String) = this()
-    def this(
-      cleartext: String,
-      `protected`: js.UndefOr[scala.Nothing],
-      aad: js.UndefOr[scala.Nothing],
-      unprotected: js.Object
-    ) = this()
-    def this(cleartext: String, `protected`: js.UndefOr[scala.Nothing], aad: String, unprotected: js.Object) = this()
-    def this(cleartext: String, `protected`: js.Object, aad: js.UndefOr[scala.Nothing], unprotected: js.Object) = this()
+    def this(cleartext: Buffer, `protected`: Unit, aad: String) = this()
     def this(cleartext: String, `protected`: js.Object, aad: String, unprotected: js.Object) = this()
-    def this(
-      cleartext: Buffer,
-      `protected`: js.UndefOr[scala.Nothing],
-      aad: js.UndefOr[scala.Nothing],
-      unprotected: js.Object
-    ) = this()
-    def this(cleartext: Buffer, `protected`: js.UndefOr[scala.Nothing], aad: String, unprotected: js.Object) = this()
-    def this(cleartext: Buffer, `protected`: js.Object, aad: js.UndefOr[scala.Nothing], unprotected: js.Object) = this()
+    def this(cleartext: String, `protected`: js.Object, aad: Unit, unprotected: js.Object) = this()
+    def this(cleartext: String, `protected`: Unit, aad: String, unprotected: js.Object) = this()
+    def this(cleartext: String, `protected`: Unit, aad: Unit, unprotected: js.Object) = this()
     def this(cleartext: Buffer, `protected`: js.Object, aad: String, unprotected: js.Object) = this()
+    def this(cleartext: Buffer, `protected`: js.Object, aad: Unit, unprotected: js.Object) = this()
+    def this(cleartext: Buffer, `protected`: Unit, aad: String, unprotected: js.Object) = this()
+    def this(cleartext: Buffer, `protected`: Unit, aad: Unit, unprotected: js.Object) = this()
     
     @JSName("encrypt")
     def encrypt_compact(serialization: compact): String = js.native
@@ -55,230 +48,116 @@ object JWE {
     def recipient(key: ProduceKeyInput, header: js.Object): Unit = js.native
   }
   
-  @JSImport("jose", "JWE.decrypt")
-  @js.native
-  def decrypt(jwe: String, key: ConsumeKeyInput): Buffer = js.native
-  @JSImport("jose", "JWE.decrypt")
-  @js.native
-  def decrypt(jwe: String, key: ConsumeKeyInput, options: DecryptOptionscompletetru): completeDecrypt = js.native
-  @JSImport("jose", "JWE.decrypt")
-  @js.native
-  def decrypt(jwe: String, key: ConsumeKeyInput, options: DecryptOptions): Buffer = js.native
-  @JSImport("jose", "JWE.decrypt")
-  @js.native
-  def decrypt(jwe: FlattenedJWE, key: ConsumeKeyInput): Buffer = js.native
-  @JSImport("jose", "JWE.decrypt")
-  @js.native
-  def decrypt(jwe: FlattenedJWE, key: ConsumeKeyInput, options: DecryptOptionscompletetru): completeDecrypt = js.native
-  @JSImport("jose", "JWE.decrypt")
-  @js.native
-  def decrypt(jwe: FlattenedJWE, key: ConsumeKeyInput, options: DecryptOptions): Buffer = js.native
-  @JSImport("jose", "JWE.decrypt")
-  @js.native
-  def decrypt(jwe: GeneralJWE, key: ConsumeKeyInput): Buffer = js.native
-  @JSImport("jose", "JWE.decrypt")
-  @js.native
-  def decrypt(jwe: GeneralJWE, key: ConsumeKeyInput, options: DecryptOptionscompletetru): completeDecrypt = js.native
-  @JSImport("jose", "JWE.decrypt")
-  @js.native
-  def decrypt(jwe: GeneralJWE, key: ConsumeKeyInput, options: DecryptOptions): Buffer = js.native
+  @scala.inline
+  def decrypt(jwe: String, key: ConsumeKeyInput): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(jwe.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def decrypt(jwe: String, key: ConsumeKeyInput, options: DecryptOptionscompletetru): completeDecrypt = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(jwe.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeDecrypt]
+  @scala.inline
+  def decrypt(jwe: String, key: ConsumeKeyInput, options: DecryptOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(jwe.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def decrypt(jwe: FlattenedJWE, key: ConsumeKeyInput): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(jwe.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def decrypt(jwe: FlattenedJWE, key: ConsumeKeyInput, options: DecryptOptionscompletetru): completeDecrypt = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(jwe.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeDecrypt]
+  @scala.inline
+  def decrypt(jwe: FlattenedJWE, key: ConsumeKeyInput, options: DecryptOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(jwe.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def decrypt(jwe: GeneralJWE, key: ConsumeKeyInput): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(jwe.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def decrypt(jwe: GeneralJWE, key: ConsumeKeyInput, options: DecryptOptionscompletetru): completeDecrypt = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(jwe.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeDecrypt]
+  @scala.inline
+  def decrypt(jwe: GeneralJWE, key: ConsumeKeyInput, options: DecryptOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(jwe.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   object encrypt {
     
-    @JSImport("jose", "JWE.encrypt")
-    @js.native
-    def apply(payload: String, key: ProduceKeyInput): String = js.native
-    @JSImport("jose", "JWE.encrypt")
-    @js.native
-    def apply(payload: String, key: ProduceKeyInput, `protected`: js.Object): String = js.native
-    @JSImport("jose", "JWE.encrypt")
-    @js.native
-    def apply(payload: Buffer, key: ProduceKeyInput): String = js.native
-    @JSImport("jose", "JWE.encrypt")
-    @js.native
-    def apply(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object): String = js.native
+    @scala.inline
+    def apply(payload: String, key: ProduceKeyInput): String = (^.asInstanceOf[js.Dynamic].apply(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(payload: String, key: ProduceKeyInput, `protected`: js.Object): String = (^.asInstanceOf[js.Dynamic].apply(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(payload: Buffer, key: ProduceKeyInput): String = (^.asInstanceOf[js.Dynamic].apply(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object): String = (^.asInstanceOf[js.Dynamic].apply(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("jose", "JWE.encrypt.flattened")
+    @JSImport("jose", "JWE.encrypt")
     @js.native
-    def flattened(payload: String, key: ProduceKeyInput): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(
-      payload: String,
-      key: ProduceKeyInput,
-      `protected`: js.UndefOr[scala.Nothing],
-      aad: js.UndefOr[scala.Nothing],
-      header: js.Object
-    ): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(payload: String, key: ProduceKeyInput, `protected`: js.UndefOr[scala.Nothing], aad: String): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(
-      payload: String,
-      key: ProduceKeyInput,
-      `protected`: js.UndefOr[scala.Nothing],
-      aad: String,
-      header: js.Object
-    ): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(payload: String, key: ProduceKeyInput, `protected`: js.Object): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(
-      payload: String,
-      key: ProduceKeyInput,
-      `protected`: js.Object,
-      aad: js.UndefOr[scala.Nothing],
-      header: js.Object
-    ): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(payload: String, key: ProduceKeyInput, `protected`: js.Object, aad: String): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(payload: String, key: ProduceKeyInput, `protected`: js.Object, aad: String, header: js.Object): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(payload: Buffer, key: ProduceKeyInput): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(
-      payload: Buffer,
-      key: ProduceKeyInput,
-      `protected`: js.UndefOr[scala.Nothing],
-      aad: js.UndefOr[scala.Nothing],
-      header: js.Object
-    ): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(payload: Buffer, key: ProduceKeyInput, `protected`: js.UndefOr[scala.Nothing], aad: String): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(
-      payload: Buffer,
-      key: ProduceKeyInput,
-      `protected`: js.UndefOr[scala.Nothing],
-      aad: String,
-      header: js.Object
-    ): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(
-      payload: Buffer,
-      key: ProduceKeyInput,
-      `protected`: js.Object,
-      aad: js.UndefOr[scala.Nothing],
-      header: js.Object
-    ): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object, aad: String): FlattenedJWE = js.native
-    @JSImport("jose", "JWE.encrypt.flattened")
-    @js.native
-    def flattened(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object, aad: String, header: js.Object): FlattenedJWE = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(payload: String, key: ProduceKeyInput): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(
-      payload: String,
-      key: ProduceKeyInput,
-      `protected`: js.UndefOr[scala.Nothing],
-      aad: js.UndefOr[scala.Nothing],
-      header: js.Object
-    ): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(payload: String, key: ProduceKeyInput, `protected`: js.UndefOr[scala.Nothing], aad: String): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(
-      payload: String,
-      key: ProduceKeyInput,
-      `protected`: js.UndefOr[scala.Nothing],
-      aad: String,
-      header: js.Object
-    ): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(payload: String, key: ProduceKeyInput, `protected`: js.Object): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(
-      payload: String,
-      key: ProduceKeyInput,
-      `protected`: js.Object,
-      aad: js.UndefOr[scala.Nothing],
-      header: js.Object
-    ): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(payload: String, key: ProduceKeyInput, `protected`: js.Object, aad: String): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(payload: String, key: ProduceKeyInput, `protected`: js.Object, aad: String, header: js.Object): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(payload: Buffer, key: ProduceKeyInput): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(
-      payload: Buffer,
-      key: ProduceKeyInput,
-      `protected`: js.UndefOr[scala.Nothing],
-      aad: js.UndefOr[scala.Nothing],
-      header: js.Object
-    ): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(payload: Buffer, key: ProduceKeyInput, `protected`: js.UndefOr[scala.Nothing], aad: String): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(
-      payload: Buffer,
-      key: ProduceKeyInput,
-      `protected`: js.UndefOr[scala.Nothing],
-      aad: String,
-      header: js.Object
-    ): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(
-      payload: Buffer,
-      key: ProduceKeyInput,
-      `protected`: js.Object,
-      aad: js.UndefOr[scala.Nothing],
-      header: js.Object
-    ): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object, aad: String): GeneralJWE = js.native
-    @JSImport("jose", "JWE.encrypt.general")
-    @js.native
-    def general(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object, aad: String, header: js.Object): GeneralJWE = js.native
+    @scala.inline
+    def flattened(payload: String, key: ProduceKeyInput): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: String, key: ProduceKeyInput, `protected`: js.Object): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: String, key: ProduceKeyInput, `protected`: js.Object, aad: String): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: String, key: ProduceKeyInput, `protected`: js.Object, aad: String, header: js.Object): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: String, key: ProduceKeyInput, `protected`: js.Object, aad: Unit, header: js.Object): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: String, key: ProduceKeyInput, `protected`: Unit, aad: String): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: String, key: ProduceKeyInput, `protected`: Unit, aad: String, header: js.Object): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: String, key: ProduceKeyInput, `protected`: Unit, aad: Unit, header: js.Object): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: Buffer, key: ProduceKeyInput): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object, aad: String): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object, aad: String, header: js.Object): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object, aad: Unit, header: js.Object): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: Buffer, key: ProduceKeyInput, `protected`: Unit, aad: String): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: Buffer, key: ProduceKeyInput, `protected`: Unit, aad: String, header: js.Object): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    @scala.inline
+    def flattened(payload: Buffer, key: ProduceKeyInput, `protected`: Unit, aad: Unit, header: js.Object): FlattenedJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("flattened")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[FlattenedJWE]
+    
+    @scala.inline
+    def general(payload: String, key: ProduceKeyInput): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: String, key: ProduceKeyInput, `protected`: js.Object): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: String, key: ProduceKeyInput, `protected`: js.Object, aad: String): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: String, key: ProduceKeyInput, `protected`: js.Object, aad: String, header: js.Object): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: String, key: ProduceKeyInput, `protected`: js.Object, aad: Unit, header: js.Object): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: String, key: ProduceKeyInput, `protected`: Unit, aad: String): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: String, key: ProduceKeyInput, `protected`: Unit, aad: String, header: js.Object): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: String, key: ProduceKeyInput, `protected`: Unit, aad: Unit, header: js.Object): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: Buffer, key: ProduceKeyInput): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object, aad: String): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object, aad: String, header: js.Object): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object, aad: Unit, header: js.Object): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: Buffer, key: ProduceKeyInput, `protected`: Unit, aad: String): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: Buffer, key: ProduceKeyInput, `protected`: Unit, aad: String, header: js.Object): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
+    @scala.inline
+    def general(payload: Buffer, key: ProduceKeyInput, `protected`: Unit, aad: Unit, header: js.Object): GeneralJWE = (^.asInstanceOf[js.Dynamic].applyDynamic("general")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `protected`.asInstanceOf[js.Any], aad.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[GeneralJWE]
   }
   
-  @js.native
   trait DecryptOptions extends StObject {
     
-    var complete: js.UndefOr[Boolean] = js.native
+    var complete: js.UndefOr[Boolean] = js.undefined
     
-    var contentEncryptionAlgorithms: js.UndefOr[js.Array[String]] = js.native
+    var contentEncryptionAlgorithms: js.UndefOr[js.Array[String]] = js.undefined
     
-    var crit: js.UndefOr[js.Array[String]] = js.native
+    var crit: js.UndefOr[js.Array[String]] = js.undefined
     
-    var keyManagementAlgorithms: js.UndefOr[js.Array[String]] = js.native
+    var keyManagementAlgorithms: js.UndefOr[js.Array[String]] = js.undefined
   }
   object DecryptOptions {
     
@@ -326,9 +205,9 @@ object JWE {
     }
   }
   
-  @js.native
   trait FlattenedJWE
-    extends JWERecipient
+    extends StObject
+       with JWERecipient
        with JWEJSON
   object FlattenedJWE {
     
@@ -339,10 +218,11 @@ object JWE {
     }
   }
   
-  @js.native
-  trait GeneralJWE extends JWEJSON {
+  trait GeneralJWE
+    extends StObject
+       with JWEJSON {
     
-    var recipients: js.Array[JWERecipient] = js.native
+    var recipients: js.Array[JWERecipient]
   }
   object GeneralJWE {
     
@@ -363,20 +243,19 @@ object JWE {
     }
   }
   
-  @js.native
   trait JWEJSON extends StObject {
     
-    var aad: js.UndefOr[String] = js.native
+    var aad: js.UndefOr[String] = js.undefined
     
-    var ciphertext: String = js.native
+    var ciphertext: String
     
-    var iv: String = js.native
+    var iv: String
     
-    var `protected`: js.UndefOr[String] = js.native
+    var `protected`: js.UndefOr[String] = js.undefined
     
-    var tag: String = js.native
+    var tag: String
     
-    var unprotected: js.UndefOr[js.Object] = js.native
+    var unprotected: js.UndefOr[js.Object] = js.undefined
   }
   object JWEJSON {
     
@@ -418,12 +297,11 @@ object JWE {
     }
   }
   
-  @js.native
   trait JWERecipient extends StObject {
     
-    var encrypted_key: String = js.native
+    var encrypted_key: String
     
-    var header: js.UndefOr[js.Object] = js.native
+    var header: js.UndefOr[js.Object] = js.undefined
   }
   object JWERecipient {
     
@@ -447,22 +325,21 @@ object JWE {
     }
   }
   
-  @js.native
   trait completeDecrypt extends StObject {
     
-    var aad: js.UndefOr[String] = js.native
+    var aad: js.UndefOr[String] = js.undefined
     
-    var cek: OctKey = js.native
+    var cek: OctKey
     
-    var cleartext: Buffer = js.native
+    var cleartext: Buffer
     
-    var header: js.UndefOr[js.Object] = js.native
+    var header: js.UndefOr[js.Object] = js.undefined
     
-    var key: Key = js.native
+    var key: Key
     
-    var `protected`: js.UndefOr[js.Object] = js.native
+    var `protected`: js.UndefOr[js.Object] = js.undefined
     
-    var unprotected: js.UndefOr[js.Object] = js.native
+    var unprotected: js.UndefOr[js.Object] = js.undefined
   }
   object completeDecrypt {
     

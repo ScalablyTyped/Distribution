@@ -3,22 +3,22 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getCredentialsMod {
   
-  @JSImport("@pulumi/aws/ecr/getCredentials", "getCredentials")
+  @JSImport("@pulumi/aws/ecr/getCredentials", JSImport.Namespace)
   @js.native
-  def getCredentials(args: GetCredentialsArgs): js.Promise[GetCredentialsResult] = js.native
-  @JSImport("@pulumi/aws/ecr/getCredentials", "getCredentials")
-  @js.native
-  def getCredentials(args: GetCredentialsArgs, opts: InvokeOptions): js.Promise[GetCredentialsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getCredentials(args: GetCredentialsArgs): js.Promise[GetCredentialsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCredentials")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCredentialsResult]]
+  @scala.inline
+  def getCredentials(args: GetCredentialsArgs, opts: InvokeOptions): js.Promise[GetCredentialsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCredentials")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCredentialsResult]]
+  
   trait GetCredentialsArgs extends StObject {
     
-    val registryId: String = js.native
+    val registryId: String
   }
   object GetCredentialsArgs {
     
@@ -36,21 +36,20 @@ object getCredentialsMod {
     }
   }
   
-  @js.native
   trait GetCredentialsResult extends StObject {
     
-    val authorizationToken: String = js.native
+    val authorizationToken: String
     
-    val expiresAt: String = js.native
+    val expiresAt: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val proxyEndpoint: String = js.native
+    val proxyEndpoint: String
     
-    val registryId: String = js.native
+    val registryId: String
   }
   object GetCredentialsResult {
     

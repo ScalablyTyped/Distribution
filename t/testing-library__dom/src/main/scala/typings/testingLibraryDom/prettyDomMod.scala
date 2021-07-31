@@ -7,84 +7,63 @@ import typings.std.HTMLDocument
 import typings.testingLibraryDom.testingLibraryDomBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prettyDomMod {
   
-  @JSImport("@testing-library/dom/types/pretty-dom", "logDOM")
+  @JSImport("@testing-library/dom/types/pretty-dom", JSImport.Namespace)
   @js.native
-  def logDOM(): Unit = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "logDOM")
-  @js.native
-  def logDOM(dom: js.UndefOr[scala.Nothing], maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "logDOM")
-  @js.native
-  def logDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double): Unit = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "logDOM")
-  @js.native
-  def logDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double, options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "logDOM")
-  @js.native
-  def logDOM(dom: Element): Unit = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "logDOM")
-  @js.native
-  def logDOM(dom: Element, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "logDOM")
-  @js.native
-  def logDOM(dom: Element, maxLength: Double): Unit = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "logDOM")
-  @js.native
-  def logDOM(dom: Element, maxLength: Double, options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "logDOM")
-  @js.native
-  def logDOM(dom: HTMLDocument): Unit = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "logDOM")
-  @js.native
-  def logDOM(dom: HTMLDocument, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "logDOM")
-  @js.native
-  def logDOM(dom: HTMLDocument, maxLength: Double): Unit = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "logDOM")
-  @js.native
-  def logDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@testing-library/dom/types/pretty-dom", "prettyDOM")
-  @js.native
-  def prettyDOM(): String | `false` = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: js.UndefOr[scala.Nothing], maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double): String | `false` = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double, options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: Element): String | `false` = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: Element, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: Element, maxLength: Double): String | `false` = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: Element, maxLength: Double, options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: HTMLDocument): String | `false` = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: HTMLDocument, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = js.native
-  @JSImport("@testing-library/dom/types/pretty-dom", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = js.native
+  @scala.inline
+  def logDOM(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")().asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Unit, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Unit, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Unit, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Element, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Element, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Element, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: HTMLDocument, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def prettyDOM(): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")().asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Unit, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Unit, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Unit, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Element): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Element, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Element, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Element, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: HTMLDocument): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: HTMLDocument, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   
   object prettyFormat {
     
@@ -93,12 +72,14 @@ object prettyDomMod {
       * @param val any potential JavaScript object
       * @param options Custom settings
       */
+    @scala.inline
+    def apply(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def apply(`val`: js.Any, options: typings.prettyFormat.typesMod.OptionsReceived): String = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
     @JSImport("@testing-library/dom/types/pretty-dom", "prettyFormat")
     @js.native
-    def apply(`val`: js.Any): String = js.native
-    @JSImport("@testing-library/dom/types/pretty-dom", "prettyFormat")
-    @js.native
-    def apply(`val`: js.Any, options: typings.prettyFormat.typesMod.OptionsReceived): String = js.native
+    val ^ : js.Any = js.native
     
     object plugins {
       

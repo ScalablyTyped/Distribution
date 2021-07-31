@@ -2,37 +2,35 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectFailureResult extends StObject {
   
   /**
     * Reserved for DocuSign.
     */
-  var configId: js.UndefOr[String] = js.native
+  var configId: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     *
     */
-  var configUrl: js.UndefOr[String] = js.native
+  var configUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The envelope ID of the envelope status that failed to post.
     */
-  var envelopeId: js.UndefOr[String] = js.native
+  var envelopeId: js.UndefOr[String] = js.undefined
   
   /**
     * The connection status.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * A human-readable message describing the connection status.
     */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
 }
 object ConnectFailureResult {
   

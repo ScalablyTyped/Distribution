@@ -5,34 +5,34 @@ import typings.reactNativeWindowsCli.reactNativeWindowsCliStrings.cpp
 import typings.reactNativeWindowsCli.reactNativeWindowsCliStrings.cs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectConfigMod {
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/projectConfig", "projectConfigWindows")
+  @JSImport("@react-native-windows/cli/lib-commonjs/config/projectConfig", JSImport.Namespace)
   @js.native
-  def projectConfigWindows(folder: String): WindowsProjectConfig | Null = js.native
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/projectConfig", "projectConfigWindows")
-  @js.native
-  def projectConfigWindows(folder: String, userConfig: PartialWindowsProjectConf): WindowsProjectConfig | Null = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def projectConfigWindows(folder: String): WindowsProjectConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("projectConfigWindows")(folder.asInstanceOf[js.Any]).asInstanceOf[WindowsProjectConfig | Null]
+  @scala.inline
+  def projectConfigWindows(folder: String, userConfig: PartialWindowsProjectConf): WindowsProjectConfig | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("projectConfigWindows")(folder.asInstanceOf[js.Any], userConfig.asInstanceOf[js.Any])).asInstanceOf[WindowsProjectConfig | Null]
+  
   trait Project extends StObject {
     
-    var projectFile: String = js.native
+    var projectFile: String
     
-    var projectGuid: String | Null = js.native
+    var projectGuid: String | Null
     
-    var projectLang: cpp | cs | Null = js.native
+    var projectLang: cpp | cs | Null
     
-    var projectName: String = js.native
+    var projectName: String
   }
   object Project {
     
     @scala.inline
     def apply(projectFile: String, projectName: String): Project = {
-      val __obj = js.Dynamic.literal(projectFile = projectFile.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(projectFile = projectFile.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], projectGuid = null, projectLang = null)
       __obj.asInstanceOf[Project]
     }
     
@@ -59,16 +59,15 @@ object projectConfigMod {
     }
   }
   
-  @js.native
   trait WindowsProjectConfig extends StObject {
     
-    var folder: String = js.native
+    var folder: String
     
-    var project: Project = js.native
+    var project: Project
     
-    var solutionFile: String = js.native
+    var solutionFile: String
     
-    var sourceDir: String = js.native
+    var sourceDir: String
   }
   object WindowsProjectConfig {
     

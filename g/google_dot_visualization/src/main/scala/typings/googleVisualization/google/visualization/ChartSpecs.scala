@@ -3,29 +3,27 @@ package typings.googleVisualization.google.visualization
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartSpecs extends StObject {
   
-  var chartType: String = js.native
+  var chartType: String
   
-  var container: js.UndefOr[HTMLElement] = js.native
+  var container: js.UndefOr[HTMLElement] = js.undefined
   
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
-  var dataSourceUrl: js.UndefOr[String] = js.native
+  var dataSourceUrl: js.UndefOr[String] = js.undefined
   
-  var dataTable: js.UndefOr[js.Object] = js.native
+  var dataTable: js.UndefOr[js.Object] = js.undefined
   
-  var options: js.UndefOr[js.Object] = js.native
+  var options: js.UndefOr[js.Object] = js.undefined
   
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
-  var refreshInterval: js.UndefOr[Double] = js.native
+  var refreshInterval: js.UndefOr[Double] = js.undefined
   
-  var view: js.UndefOr[js.Any] = js.native
+  var view: js.UndefOr[js.Any] = js.undefined
 }
 object ChartSpecs {
   

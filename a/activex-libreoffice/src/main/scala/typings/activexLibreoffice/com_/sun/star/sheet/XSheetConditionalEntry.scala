@@ -4,24 +4,24 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to access the cell style name for a condition in a conditional format.
   * @see com.sun.star.sheet.TableConditionalEntry
   */
-@js.native
-trait XSheetConditionalEntry extends XInterface {
+trait XSheetConditionalEntry
+  extends StObject
+     with XInterface {
   
   /** returns the name of the cell style that is used when the condition is fulfilled. */
-  var StyleName: String = js.native
+  var StyleName: String
   
   /** returns the name of the cell style that is used when the condition is fulfilled. */
-  def getStyleName(): String = js.native
+  def getStyleName(): String
   
   /** sets the name of the cell style that is used when the condition is fulfilled. */
-  def setStyleName(aStyleName: String): Unit = js.native
+  def setStyleName(aStyleName: String): Unit
 }
 object XSheetConditionalEntry {
   

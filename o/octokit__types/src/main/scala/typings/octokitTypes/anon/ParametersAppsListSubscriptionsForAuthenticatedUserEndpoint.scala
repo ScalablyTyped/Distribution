@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.AppsListSubscriptionsForAuthenticatedUs
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersAppsListSubscriptionsForAuthenticatedUserEndpoint extends StObject {
   
-  var parameters: AppsListSubscriptionsForAuthenticatedUserEndpoint = js.native
+  var parameters: AppsListSubscriptionsForAuthenticatedUserEndpoint
   
-  var request: AppsListSubscriptionsForAuthenticatedUserRequestOptions = js.native
+  var request: AppsListSubscriptionsForAuthenticatedUserRequestOptions
   
-  var response: OctokitResponse[AppsListSubscriptionsForAuthenticatedUserResponseData] = js.native
+  var response: OctokitResponse[AppsListSubscriptionsForAuthenticatedUserResponseData]
 }
 object ParametersAppsListSubscriptionsForAuthenticatedUserEndpoint {
   

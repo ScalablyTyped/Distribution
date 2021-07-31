@@ -12,7 +12,7 @@ extensible archiver
 | Keywords           | archive, macos |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 10904 |
+| # downloads        | 11932 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,7 +22,9 @@ object PivotFilterType extends StObject {
     *
     */
   @js.native
-  sealed trait date extends PivotFilterType
+  sealed trait date
+    extends StObject
+       with PivotFilterType
   
   /**
     * Filters PivotItems based on their labels.
@@ -31,26 +32,34 @@ object PivotFilterType extends StObject {
     *
     */
   @js.native
-  sealed trait label extends PivotFilterType
+  sealed trait label
+    extends StObject
+       with PivotFilterType
   
   /**
     * Filters specific manually selected PivotItems from the PivotTable.
     *
     */
   @js.native
-  sealed trait manual extends PivotFilterType
+  sealed trait manual
+    extends StObject
+       with PivotFilterType
   
   /**
     * PivotFilterType is unknown or unsupported.
     *
     */
   @js.native
-  sealed trait unknown extends PivotFilterType
+  sealed trait unknown
+    extends StObject
+       with PivotFilterType
   
   /**
     * Filters based on the value of a PivotItem with respect to a DataPivotHierarchy.
     *
     */
   @js.native
-  sealed trait value extends PivotFilterType
+  sealed trait value
+    extends StObject
+       with PivotFilterType
 }

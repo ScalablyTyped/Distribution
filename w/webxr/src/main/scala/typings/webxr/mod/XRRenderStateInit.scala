@@ -2,16 +2,16 @@ package typings.webxr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XRRenderStateInit extends XRRenderState {
+trait XRRenderStateInit
+  extends StObject
+     with XRRenderState {
   
   @JSName("baseLayer")
-  var baseLayer_XRRenderStateInit: XRWebGLLayer = js.native
+  var baseLayer_XRRenderStateInit: XRWebGLLayer
   
-  var layers: js.UndefOr[js.Array[XRLayer]] = js.native
+  var layers: js.UndefOr[js.Array[XRLayer]] = js.undefined
 }
 object XRRenderStateInit {
   

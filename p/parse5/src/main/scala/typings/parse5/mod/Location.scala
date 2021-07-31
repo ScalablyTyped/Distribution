@@ -2,41 +2,39 @@ package typings.parse5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /**
     * One-based column index of the last character
     */
-  var endCol: Double = js.native
+  var endCol: Double
   
   /**
     * One-based line index of the last character
     */
-  var endLine: Double = js.native
+  var endLine: Double
   
   /**
     * Zero-based last character index
     */
-  var endOffset: Double = js.native
+  var endOffset: Double
   
   /**
     * One-based column index of the first character
     */
-  var startCol: Double = js.native
+  var startCol: Double
   
   /**
     * One-based line index of the first character
     */
-  var startLine: Double = js.native
+  var startLine: Double
   
   /**
     * Zero-based first character index
     */
-  var startOffset: Double = js.native
+  var startOffset: Double
 }
 object Location {
   

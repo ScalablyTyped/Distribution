@@ -5,31 +5,29 @@ import typings.xstate.anon.ContextTContext
 import typings.xstate.stateNodeMod.StateNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MachineOptions[TContext, TEvent /* <: EventObject */] extends StObject {
   
   /**
     * @private
     */
-  var _key: js.UndefOr[String] = js.native
+  var _key: js.UndefOr[String] = js.undefined
   
   /**
     * @private
     */
-  var _parent: js.UndefOr[StateNode[TContext, _, TEvent, ContextTContext[TContext]]] = js.native
+  var _parent: js.UndefOr[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]] = js.undefined
   
-  var actions: ActionFunctionMap[TContext, TEvent] = js.native
+  var actions: ActionFunctionMap[TContext, TEvent]
   
-  var activities: Record[String, ActivityConfig[TContext, TEvent]] = js.native
+  var activities: Record[String, ActivityConfig[TContext, TEvent]]
   
-  var delays: DelayFunctionMap[TContext, TEvent] = js.native
+  var delays: DelayFunctionMap[TContext, TEvent]
   
-  var guards: Record[String, ConditionPredicate[TContext, TEvent]] = js.native
+  var guards: Record[String, ConditionPredicate[TContext, TEvent]]
   
-  var services: Record[String, ServiceConfig[TContext, TEvent]] = js.native
+  var services: Record[String, ServiceConfig[TContext, TEvent]]
 }
 object MachineOptions {
   
@@ -46,7 +44,7 @@ object MachineOptions {
   }
   
   @scala.inline
-  implicit class MachineOptionsMutableBuilder[Self <: MachineOptions[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (MachineOptions[TContext, TEvent])) extends AnyVal {
+  implicit class MachineOptionsMutableBuilder[Self <: MachineOptions[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (MachineOptions[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setActions(value: ActionFunctionMap[TContext, TEvent]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
@@ -70,7 +68,7 @@ object MachineOptions {
     def set_keyUndefined: Self = StObject.set(x, "_key", js.undefined)
     
     @scala.inline
-    def set_parent(value: StateNode[TContext, _, TEvent, ContextTContext[TContext]]): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
+    def set_parent(value: StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set_parentUndefined: Self = StObject.set(x, "_parent", js.undefined)

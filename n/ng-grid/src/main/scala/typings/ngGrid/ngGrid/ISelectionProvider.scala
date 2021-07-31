@@ -2,33 +2,31 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISelectionProvider extends StObject {
   
-  def ChangeSelection(rowItem: js.Any, event: js.Any): Unit = js.native
+  def ChangeSelection(rowItem: js.Any, event: js.Any): Unit
   
-  def getSelection(entity: js.Any): Double = js.native
+  def getSelection(entity: js.Any): Double
   
-  def getSelectionIndex(entity: js.Any): Double = js.native
+  def getSelectionIndex(entity: js.Any): Double
   
-  var ignoreSelectedItemChanges: Boolean = js.native
+  var ignoreSelectedItemChanges: Boolean
   
-  var lastClickedRow: js.Any = js.native
+  var lastClickedRow: js.Any
   
-  var multi: Boolean = js.native
+  var multi: Boolean
   
-  var pKeyParser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ICompiledExpression */ js.Any = js.native
+  var pKeyParser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ICompiledExpression */ js.Any
   
-  var selectedIndex: Double = js.native
+  var selectedIndex: Double
   
-  var selectedItems: js.Array[_] = js.native
+  var selectedItems: js.Array[js.Any]
   
-  def setSelection(rowItem: IRow, isSelected: Boolean): Unit = js.native
+  def setSelection(rowItem: IRow, isSelected: Boolean): Unit
   
-  def toggleSelectAll(checkAll: Boolean, bypass: Boolean, selectFiltered: Boolean): Unit = js.native
+  def toggleSelectAll(checkAll: Boolean, bypass: Boolean, selectFiltered: Boolean): Unit
 }
 object ISelectionProvider {
   
@@ -42,7 +40,7 @@ object ISelectionProvider {
     multi: Boolean,
     pKeyParser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ICompiledExpression */ js.Any,
     selectedIndex: Double,
-    selectedItems: js.Array[_],
+    selectedItems: js.Array[js.Any],
     setSelection: (IRow, Boolean) => Unit,
     toggleSelectAll: (Boolean, Boolean, Boolean) => Unit
   ): ISelectionProvider = {
@@ -80,7 +78,7 @@ object ISelectionProvider {
     def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedItems(value: js.Array[_]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    def setSelectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))

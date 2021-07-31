@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2RedactImageRequest extends StObject {
   
   /** The content must be PNG, JPEG, SVG or BMP. */
-  var byteItem: js.UndefOr[GooglePrivacyDlpV2ByteContentItem] = js.native
+  var byteItem: js.UndefOr[GooglePrivacyDlpV2ByteContentItem] = js.undefined
   
   /** The configuration for specifying what content to redact from images. */
-  var imageRedactionConfigs: js.UndefOr[js.Array[GooglePrivacyDlpV2ImageRedactionConfig]] = js.native
+  var imageRedactionConfigs: js.UndefOr[js.Array[GooglePrivacyDlpV2ImageRedactionConfig]] = js.undefined
   
   /** Whether the response should include findings along with the redacted image. */
-  var includeFindings: js.UndefOr[Boolean] = js.native
+  var includeFindings: js.UndefOr[Boolean] = js.undefined
   
   /** Configuration for the inspector. */
-  var inspectConfig: js.UndefOr[GooglePrivacyDlpV2InspectConfig] = js.native
+  var inspectConfig: js.UndefOr[GooglePrivacyDlpV2InspectConfig] = js.undefined
   
   /** Deprecated. This field has no effect. */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2RedactImageRequest {
   

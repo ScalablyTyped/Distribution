@@ -1,6 +1,5 @@
 package typings.reactSelect
 
-import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
@@ -8,10 +7,13 @@ import typings.reactSelect.typesMod.CommonProps
 import typings.reactSelect.typesMod.OptionTypeBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object componentsSingleValueMod extends Shortcut {
+object componentsSingleValueMod {
+  
+  @JSImport("react-select/src/components/SingleValue", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-select/src/components/SingleValue", JSImport.Default)
   @js.native
@@ -21,17 +23,20 @@ object componentsSingleValueMod extends Shortcut {
   @js.native
   val SingleValue: ComponentType[SingleValueProps[js.Any]] = js.native
   
-  @JSImport("react-select/src/components/SingleValue", "css")
-  @js.native
-  def css(props: SingleValueProps[_]): CSSProperties = js.native
-  
-  type SingleValueProps[OptionType /* <: OptionTypeBase */] = CommonProps[OptionType] with ValueProps[OptionType] with State
+  @scala.inline
+  def css(props: SingleValueProps[js.Any]): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
   @js.native
+  trait SingleValueProps[OptionType /* <: OptionTypeBase */]
+    extends StObject
+       with CommonProps[OptionType]
+       with ValueProps[OptionType]
+       with State
+  
   trait State extends StObject {
     
     /** Whether this is disabled */
-    var isDisabled: Boolean = js.native
+    var isDisabled: Boolean
   }
   object State {
     
@@ -49,17 +54,16 @@ object componentsSingleValueMod extends Shortcut {
     }
   }
   
-  @js.native
   trait ValueProps[OptionType /* <: OptionTypeBase */] extends StObject {
     
     /** The children to be rendered. */
-    var children: ReactNode = js.native
+    var children: ReactNode
     
     /* The data of the selected option rendered in the Single Value componentn */
-    var data: OptionType = js.native
+    var data: OptionType
     
     /** Props passed to the wrapping element for the group. */
-    var innerProps: js.Any = js.native
+    var innerProps: js.Any
   }
   object ValueProps {
     
@@ -70,7 +74,7 @@ object componentsSingleValueMod extends Shortcut {
     }
     
     @scala.inline
-    implicit class ValuePropsMutableBuilder[Self <: ValueProps[_], OptionType /* <: OptionTypeBase */] (val x: Self with ValueProps[OptionType]) extends AnyVal {
+    implicit class ValuePropsMutableBuilder[Self <: ValueProps[?], OptionType /* <: OptionTypeBase */] (val x: Self & ValueProps[OptionType]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -85,9 +89,4 @@ object componentsSingleValueMod extends Shortcut {
       def setInnerProps(value: js.Any): Self = StObject.set(x, "innerProps", value.asInstanceOf[js.Any])
     }
   }
-  
-  type _To = ComponentType[SingleValueProps[js.Any]]
-  
-  /* This means you don't have to write `default`, but can instead just say `componentsSingleValueMod.foo` */
-  override def _to: ComponentType[SingleValueProps[js.Any]] = default
 }

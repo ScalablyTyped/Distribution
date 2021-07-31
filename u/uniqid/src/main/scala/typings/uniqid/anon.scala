@@ -2,26 +2,45 @@ package typings.uniqid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Process extends StObject {
     
-    def process(): String = js.native
-    def process(prefix: js.UndefOr[scala.Nothing], suffix: String): String = js.native
-    def process(prefix: String): String = js.native
-    def process(prefix: String, suffix: String): String = js.native
+    def process(): String
+    def process(prefix: String): String
+    def process(prefix: String, suffix: String): String
+    def process(prefix: Unit, suffix: String): String
     @JSName("process")
-    var process_Original: js.Function2[/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String], String] = js.native
+    var process_Original: js.Function2[/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String], String]
     
-    def time(): String = js.native
-    def time(prefix: js.UndefOr[scala.Nothing], suffix: String): String = js.native
-    def time(prefix: String): String = js.native
-    def time(prefix: String, suffix: String): String = js.native
+    def time(): String
+    def time(prefix: String): String
+    def time(prefix: String, suffix: String): String
+    def time(prefix: Unit, suffix: String): String
     @JSName("time")
-    var time_Original: js.Function2[/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String], String] = js.native
+    var time_Original: js.Function2[/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String], String]
+  }
+  object Process {
+    
+    @scala.inline
+    def apply(
+      process: (/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => String,
+      time: (/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => String
+    ): Process = {
+      val __obj = js.Dynamic.literal(process = js.Any.fromFunction2(process), time = js.Any.fromFunction2(time))
+      __obj.asInstanceOf[Process]
+    }
+    
+    @scala.inline
+    implicit class ProcessMutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setProcess(value: (/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => String): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setTime(value: (/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => String): Self = StObject.set(x, "time", js.Any.fromFunction2(value))
+    }
   }
 }

@@ -2,44 +2,42 @@ package typings.zoneJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoneType extends StObject {
   
   /**
     * load patch for specified native module, allow user to
     * define their own patch, user can use this API after loading zone.js
     */
-  def __load_patch(name: String, fn: PatchFn): Unit = js.native
+  def __load_patch(name: String, fn: PatchFn): Unit
   
   /**
     * Zone symbol API to generate a string with __zone_symbol__ prefix
     */
-  def __symbol__(name: String): String = js.native
+  def __symbol__(name: String): String
   
   /**
     * Verify that Zone has been correctly patched. Specifically that Promise is zone aware.
     */
-  def assertZonePatched(): Unit = js.native
+  def assertZonePatched(): Unit
   
   /**
     * @returns {Zone} Returns the current [Zone]. The only way to change
     * the current zone is by invoking a run() method, which will update the current zone for the
     * duration of the run method callback.
     */
-  var current: Zone = js.native
+  var current: Zone
   
   /**
     * @returns {Task} The task associated with the current execution.
     */
-  var currentTask: Task | Null = js.native
+  var currentTask: Task | Null
   
   /**
     *  Return the root zone.
     */
-  var root: Zone = js.native
+  var root: Zone
 }
 object ZoneType {
   
@@ -51,7 +49,7 @@ object ZoneType {
     current: Zone,
     root: Zone
   ): ZoneType = {
-    val __obj = js.Dynamic.literal(__load_patch = js.Any.fromFunction2(__load_patch), __symbol__ = js.Any.fromFunction1(__symbol__), assertZonePatched = js.Any.fromFunction0(assertZonePatched), current = current.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(__load_patch = js.Any.fromFunction2(__load_patch), __symbol__ = js.Any.fromFunction1(__symbol__), assertZonePatched = js.Any.fromFunction0(assertZonePatched), current = current.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], currentTask = null)
     __obj.asInstanceOf[ZoneType]
   }
   

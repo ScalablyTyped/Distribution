@@ -2,23 +2,21 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionEntryDetails extends StObject {
   
-  var docComment: String = js.native
+  var docComment: String
   
-  var fullSymbolName: String = js.native
+  var fullSymbolName: String
   
-  var kind: String = js.native
+  var kind: String
   
-  var kindModifiers: String = js.native
+  var kindModifiers: String
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object CompletionEntryDetails {
   

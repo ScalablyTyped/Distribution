@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModificationState extends StObject {
   
   /**
     * The resource.
     */
-  var Resource: js.UndefOr[ModificationResourceEnum] = js.native
+  var Resource: js.UndefOr[ModificationResourceEnum] = js.undefined
   
   /**
     * The modification state.
     */
-  var State: js.UndefOr[ModificationStateEnum] = js.native
+  var State: js.UndefOr[ModificationStateEnum] = js.undefined
 }
 object ModificationState {
   

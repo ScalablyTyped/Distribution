@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceFormula extends StObject {
   
   /** Output only. The data execution status. */
-  var dataExecutionStatus: js.UndefOr[DataExecutionStatus] = js.native
+  var dataExecutionStatus: js.UndefOr[DataExecutionStatus] = js.undefined
   
   /** The ID of the data source the formula is associated with. */
-  var dataSourceId: js.UndefOr[String] = js.native
+  var dataSourceId: js.UndefOr[String] = js.undefined
 }
 object DataSourceFormula {
   

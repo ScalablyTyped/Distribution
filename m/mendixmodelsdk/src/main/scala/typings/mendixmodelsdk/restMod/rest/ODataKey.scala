@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.restMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -68,9 +67,8 @@ object ODataKey {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataKey.create")
-  @js.native
-  def create(model: IModel): ODataKey = js.native
+  @scala.inline
+  def create(model: IModel): ODataKey = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ODataKey]
   
   /**
     * Creates and returns a new ODataKey instance in the SDK and on the server.
@@ -81,9 +79,8 @@ object ODataKey {
     *  8.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataKey.createIn")
-  @js.native
-  def createIn(container: ODataRemoteEntitySource): ODataKey = js.native
+  @scala.inline
+  def createIn(container: ODataRemoteEntitySource): ODataKey = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ODataKey]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataKey.structureTypeName")

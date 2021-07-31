@@ -3,13 +3,11 @@ package typings.jupyterlabRendermimeInterfaces
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined @jupyterlab/rendermime-interfaces.@jupyterlab/rendermime-interfaces.IRenderMime.LabIcon.IIcon & std.Partial<@jupyterlab/rendermime-interfaces.@jupyterlab/rendermime-interfaces.IRenderMime.LabIcon.IRenderer> */
-  @js.native
   trait IIconPartialIRenderer extends StObject {
     
     /**
@@ -18,18 +16,18 @@ object anon {
       *
       *     "pkg-name:icon-name"
       */
-    val name: String = js.native
+    val name: String
     
     var render: js.UndefOr[
         js.Function2[/* container */ HTMLElement, /* options */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A string containing the raw contents of an svg file.
       */
-    var svgstr: String = js.native
+    var svgstr: String
     
-    var unrender: js.UndefOr[js.Function1[/* container */ HTMLElement, Unit]] = js.native
+    var unrender: js.UndefOr[js.Function1[/* container */ HTMLElement, Unit]] = js.undefined
   }
   object IIconPartialIRenderer {
     

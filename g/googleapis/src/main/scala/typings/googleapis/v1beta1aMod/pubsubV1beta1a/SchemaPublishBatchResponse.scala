@@ -2,13 +2,11 @@ package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the PublishBatch method.
   */
-@js.native
 trait SchemaPublishBatchResponse extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaPublishBatchResponse extends StObject {
     * the messages in the request. IDs are guaranteed to be unique within the
     * topic.
     */
-  var messageIds: js.UndefOr[js.Array[String]] = js.native
+  var messageIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaPublishBatchResponse {
   

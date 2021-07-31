@@ -2,61 +2,59 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayMulticastGroup extends StObject {
   
   /**
     * The IP address assigned to the transit gateway multicast group.
     */
-  var GroupIpAddress: js.UndefOr[String] = js.native
+  var GroupIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that the resource is a transit gateway multicast group member.
     */
-  var GroupMember: js.UndefOr[Boolean] = js.native
+  var GroupMember: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates that the resource is a transit gateway multicast group member.
     */
-  var GroupSource: js.UndefOr[Boolean] = js.native
+  var GroupSource: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The member type (for example, static).
     */
-  var MemberType: js.UndefOr[MembershipType] = js.native
+  var MemberType: js.UndefOr[MembershipType] = js.undefined
   
   /**
     * The ID of the transit gateway attachment.
     */
-  var NetworkInterfaceId: js.UndefOr[String] = js.native
+  var NetworkInterfaceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the resource.
     */
-  var ResourceId: js.UndefOr[String] = js.native
+  var ResourceId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of resource, for example a VPC attachment.
     */
-  var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.native
+  var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.undefined
   
   /**
     * The source type.
     */
-  var SourceType: js.UndefOr[MembershipType] = js.native
+  var SourceType: js.UndefOr[MembershipType] = js.undefined
   
   /**
     * The ID of the subnet.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the transit gateway attachment.
     */
-  var TransitGatewayAttachmentId: js.UndefOr[String] = js.native
+  var TransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
 }
 object TransitGatewayMulticastGroup {
   

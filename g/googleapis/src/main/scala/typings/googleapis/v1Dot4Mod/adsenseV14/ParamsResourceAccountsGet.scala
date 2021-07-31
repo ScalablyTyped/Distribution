@@ -6,26 +6,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAccountsGet extends StandardParameters {
+trait ParamsResourceAccountsGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Account to get information about.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Whether the tree of sub accounts should be returned.
     */
-  var tree: js.UndefOr[Boolean] = js.native
+  var tree: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourceAccountsGet {
   

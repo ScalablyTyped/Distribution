@@ -6,7 +6,6 @@ import typings.jsonSchema.mod.JSONSchema6
 import typings.jsonSchema.mod.JSONSchema7
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,24 +16,22 @@ object mod {
     * @param {ValidationErrorConfiguration=} configuration
     * @returns {void}
     */
+  @scala.inline
+  def apply(schema: JSONSchema4, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(schema: JSONSchema4, options: js.Any, configuration: ValidationErrorConfiguration): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(schema: JSONSchema6, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(schema: JSONSchema6, options: js.Any, configuration: ValidationErrorConfiguration): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(schema: JSONSchema7, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(schema: JSONSchema7, options: js.Any, configuration: ValidationErrorConfiguration): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("@develar/schema-utils", JSImport.Namespace)
   @js.native
-  def apply(schema: JSONSchema4, options: js.Any): Unit = js.native
-  @JSImport("@develar/schema-utils", JSImport.Namespace)
-  @js.native
-  def apply(schema: JSONSchema4, options: js.Any, configuration: ValidationErrorConfiguration): Unit = js.native
-  @JSImport("@develar/schema-utils", JSImport.Namespace)
-  @js.native
-  def apply(schema: JSONSchema6, options: js.Any): Unit = js.native
-  @JSImport("@develar/schema-utils", JSImport.Namespace)
-  @js.native
-  def apply(schema: JSONSchema6, options: js.Any, configuration: ValidationErrorConfiguration): Unit = js.native
-  @JSImport("@develar/schema-utils", JSImport.Namespace)
-  @js.native
-  def apply(schema: JSONSchema7, options: js.Any): Unit = js.native
-  @JSImport("@develar/schema-utils", JSImport.Namespace)
-  @js.native
-  def apply(schema: JSONSchema7, options: js.Any, configuration: ValidationErrorConfiguration): Unit = js.native
+  val ^ : js.Any = js.native
   
   /* was `typeof imported_validate.default` */
   object exports

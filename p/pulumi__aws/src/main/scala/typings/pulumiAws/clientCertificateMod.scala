@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientCertificateMod {
@@ -25,7 +24,7 @@ object clientCertificateMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ClientCertificateArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ClientCertificateArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -61,6 +60,10 @@ object clientCertificateMod {
   /* static members */
   object ClientCertificate {
     
+    @JSImport("@pulumi/aws/apigateway/clientCertificate", "ClientCertificate")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ClientCertificate resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -70,40 +73,34 @@ object clientCertificateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/clientCertificate", "ClientCertificate.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ClientCertificate = js.native
-    @JSImport("@pulumi/aws/apigateway/clientCertificate", "ClientCertificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ClientCertificate = js.native
-    @JSImport("@pulumi/aws/apigateway/clientCertificate", "ClientCertificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClientCertificateState): ClientCertificate = js.native
-    @JSImport("@pulumi/aws/apigateway/clientCertificate", "ClientCertificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClientCertificateState, opts: CustomResourceOptions): ClientCertificate = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ClientCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ClientCertificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ClientCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClientCertificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClientCertificateState): ClientCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ClientCertificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClientCertificateState, opts: CustomResourceOptions): ClientCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClientCertificate]
     
     /**
       * Returns true if the given object is an instance of ClientCertificate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/clientCertificate", "ClientCertificate.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/clientCertificate.ClientCertificate */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/clientCertificate.ClientCertificate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/clientCertificate.ClientCertificate */ Boolean]
   }
   
-  @js.native
   trait ClientCertificateArgs extends StObject {
     
     /**
       * The description of the client certificate.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ClientCertificateArgs {
     
@@ -130,38 +127,37 @@ object clientCertificateMod {
     }
   }
   
-  @js.native
   trait ClientCertificateState extends StObject {
     
     /**
       * Amazon Resource Name (ARN)
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The date when the client certificate was created.
       */
-    val createdDate: js.UndefOr[Input[String]] = js.native
+    val createdDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the client certificate.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The date when the client certificate will expire.
       */
-    val expirationDate: js.UndefOr[Input[String]] = js.native
+    val expirationDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The PEM-encoded public key of the client certificate.
       */
-    val pemEncodedCertificate: js.UndefOr[Input[String]] = js.native
+    val pemEncodedCertificate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ClientCertificateState {
     

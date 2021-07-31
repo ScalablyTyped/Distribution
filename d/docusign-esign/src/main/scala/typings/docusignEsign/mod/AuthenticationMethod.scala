@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationMethod extends StObject {
   
   /**
@@ -19,22 +17,22 @@ trait AuthenticationMethod extends StObject {
     * - `AgeVerify`
     * - `SSOAuth`
     */
-  var authenticationType: js.UndefOr[String] = js.native
+  var authenticationType: js.UndefOr[String] = js.undefined
   
   /**
     * The last provider that authenticated the user.
     */
-  var lastProvider: js.UndefOr[String] = js.native
+  var lastProvider: js.UndefOr[String] = js.undefined
   
   /**
     *  The data and time the user last used the authentication method.
     */
-  var lastTimestamp: js.UndefOr[String] = js.native
+  var lastTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * The number of times the authentication method was used.
     */
-  var totalCount: js.UndefOr[String] = js.native
+  var totalCount: js.UndefOr[String] = js.undefined
 }
 object AuthenticationMethod {
   

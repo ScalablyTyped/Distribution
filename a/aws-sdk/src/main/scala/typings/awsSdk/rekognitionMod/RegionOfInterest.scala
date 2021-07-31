@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionOfInterest extends StObject {
   
   /**
     * The box representing a region of interest on screen.
     */
-  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.native
+  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.undefined
 }
 object RegionOfInterest {
   

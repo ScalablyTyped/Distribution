@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientData extends StObject {
   
   /**
     * A user-defined comment about the disk upload.
     */
-  var Comment: js.UndefOr[String] = js.native
+  var Comment: js.UndefOr[String] = js.undefined
   
   /**
     * The time that the disk upload ends.
     */
-  var UploadEnd: js.UndefOr[DateTime] = js.native
+  var UploadEnd: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The size of the uploaded disk image, in GiB.
     */
-  var UploadSize: js.UndefOr[Double] = js.native
+  var UploadSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The time that the disk upload starts.
     */
-  var UploadStart: js.UndefOr[DateTime] = js.native
+  var UploadStart: js.UndefOr[DateTime] = js.undefined
 }
 object ClientData {
   

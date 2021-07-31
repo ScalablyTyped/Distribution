@@ -2,37 +2,35 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PayerInfo extends StObject {
   
-  var billing_address: js.UndefOr[Address] = js.native
+  var billing_address: js.UndefOr[Address] = js.undefined
   
-  var birth_date: js.UndefOr[String] = js.native
+  var birth_date: js.UndefOr[String] = js.undefined
   
-  var country_code: js.UndefOr[String] = js.native
+  var country_code: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  val first_name: js.UndefOr[String] = js.native
+  val first_name: js.UndefOr[String] = js.undefined
   
-  val last_name: js.UndefOr[String] = js.native
+  val last_name: js.UndefOr[String] = js.undefined
   
-  val middle_name: js.UndefOr[String] = js.native
+  val middle_name: js.UndefOr[String] = js.undefined
   
-  val payer_id: js.UndefOr[String] = js.native
+  val payer_id: js.UndefOr[String] = js.undefined
   
-  val salutation: js.UndefOr[String] = js.native
+  val salutation: js.UndefOr[String] = js.undefined
   
-  val shipping_address: js.UndefOr[Address] = js.native
+  val shipping_address: js.UndefOr[Address] = js.undefined
   
-  val suffix: js.UndefOr[String] = js.native
+  val suffix: js.UndefOr[String] = js.undefined
   
-  var tax_id: js.UndefOr[String] = js.native
+  var tax_id: js.UndefOr[String] = js.undefined
   
-  var tax_id_type: js.UndefOr[String] = js.native
+  var tax_id_type: js.UndefOr[String] = js.undefined
 }
 object PayerInfo {
   

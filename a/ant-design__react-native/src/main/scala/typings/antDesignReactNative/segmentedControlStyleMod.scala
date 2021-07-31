@@ -5,27 +5,28 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentedControlStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/segmented-control/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/segmented-control/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): SegmentControlStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): SegmentControlStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[SegmentControlStyle]
+  
   trait SegmentControlStyle extends StObject {
     
-    var item: ViewStyle = js.native
+    var item: ViewStyle
     
-    var itemLeftRadius: ViewStyle = js.native
+    var itemLeftRadius: ViewStyle
     
-    var itemRightRadius: ViewStyle = js.native
+    var itemRightRadius: ViewStyle
     
-    var itemText: TextStyle = js.native
+    var itemText: TextStyle
     
-    var segment: ViewStyle = js.native
+    var segment: ViewStyle
   }
   object SegmentControlStyle {
     

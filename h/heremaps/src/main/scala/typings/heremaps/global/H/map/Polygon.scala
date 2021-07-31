@@ -5,7 +5,6 @@ import typings.heremaps.H.geo.MultiPolygon
 import typings.heremaps.H.map.Polygon.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("H.map.Polygon")
 @js.native
 class Polygon protected ()
-  extends typings.heremaps.H.map.Polygon {
+  extends StObject
+     with typings.heremaps.H.map.Polygon {
   /**
     * Constructor
     * @param geometry {H.geo.LineString | H.geo.Polygon | H.geo.MultiPolygon}

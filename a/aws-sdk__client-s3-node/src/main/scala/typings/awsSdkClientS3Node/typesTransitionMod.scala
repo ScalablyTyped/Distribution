@@ -6,28 +6,26 @@ import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.STANDARD_IA
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTransitionMod {
   
-  @js.native
   trait Transition extends StObject {
     
     /**
       * <p>Indicates at what date the object is to be moved or deleted. Should be in GMT ISO 8601 Format.</p>
       */
-    var Date: js.UndefOr[typings.std.Date | String | Double] = js.native
+    var Date: js.UndefOr[typings.std.Date | String | Double] = js.undefined
     
     /**
       * <p>Indicates the lifetime, in days, of the objects that are subject to the rule. The value must be a non-zero positive integer.</p>
       */
-    var Days: js.UndefOr[Double] = js.native
+    var Days: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The class of storage used to store the object.</p>
       */
-    var StorageClass: js.UndefOr[GLACIER | STANDARD_IA | ONEZONE_IA | String] = js.native
+    var StorageClass: js.UndefOr[GLACIER | STANDARD_IA | ONEZONE_IA | String] = js.undefined
   }
   object Transition {
     
@@ -60,14 +58,15 @@ object typesTransitionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledTransition extends Transition {
+  trait UnmarshalledTransition
+    extends StObject
+       with Transition {
     
     /**
       * <p>Indicates at what date the object is to be moved or deleted. Should be in GMT ISO 8601 Format.</p>
       */
     @JSName("Date")
-    var Date_UnmarshalledTransition: js.UndefOr[Date] = js.native
+    var Date_UnmarshalledTransition: js.UndefOr[Date] = js.undefined
   }
   object UnmarshalledTransition {
     

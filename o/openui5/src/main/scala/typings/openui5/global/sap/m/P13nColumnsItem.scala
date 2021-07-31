@@ -2,13 +2,13 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.P13nColumnsItem")
 @js.native
 class P13nColumnsItem protected ()
-  extends typings.openui5.sap.m.P13nColumnsItem {
+  extends StObject
+     with typings.openui5.sap.m.P13nColumnsItem {
   /**
     * Constructor for a new P13nColumnsItem.Accepts an object literal <code>mSettings</code> that defines
     * initialproperty values, aggregated and associated objects as well as event handlers.See {@link

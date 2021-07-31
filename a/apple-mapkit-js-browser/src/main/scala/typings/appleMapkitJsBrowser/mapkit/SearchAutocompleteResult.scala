@@ -2,24 +2,22 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of an autocomplete query, including display lines and a coordinate.
   */
-@js.native
 trait SearchAutocompleteResult extends StObject {
   
   /**
     * The coordinate of the result, provided when it corresponds to a single place.
     */
-  var coordinate: Coordinate = js.native
+  var coordinate: Coordinate
   
   /**
     * Lines of text to display to the user in an autocomplete menu.
     */
-  var displayLines: js.Array[String] = js.native
+  var displayLines: js.Array[String]
 }
 object SearchAutocompleteResult {
   

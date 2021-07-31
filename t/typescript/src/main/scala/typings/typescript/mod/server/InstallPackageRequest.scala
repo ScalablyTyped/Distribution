@@ -4,31 +4,25 @@ import typings.typescript.mod.Path
 import typings.typescript.typescriptStrings.installPackage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InstallPackageRequest extends TypingInstallerRequestWithProjectName {
+trait InstallPackageRequest
+  extends StObject
+     with TypingInstallerRequestWithProjectName {
   
-  val fileName: Path = js.native
+  val fileName: Path
   
-  val kind: installPackage = js.native
+  val kind: installPackage
   
-  val packageName: String = js.native
+  val packageName: String
   
-  val projectRootPath: Path = js.native
+  val projectRootPath: Path
 }
 object InstallPackageRequest {
   
   @scala.inline
-  def apply(
-    fileName: Path,
-    kind: installPackage,
-    packageName: String,
-    projectName: String,
-    projectRootPath: Path
-  ): InstallPackageRequest = {
-    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], projectRootPath = projectRootPath.asInstanceOf[js.Any])
+  def apply(fileName: Path, packageName: String, projectName: String, projectRootPath: Path): InstallPackageRequest = {
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], kind = "installPackage", packageName = packageName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], projectRootPath = projectRootPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstallPackageRequest]
   }
   

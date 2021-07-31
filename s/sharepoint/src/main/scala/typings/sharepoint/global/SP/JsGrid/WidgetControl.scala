@@ -2,7 +2,6 @@ package typings.sharepoint.global.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WidgetControl {
@@ -10,7 +9,8 @@ object WidgetControl {
   @JSGlobal("SP.JsGrid.WidgetControl.Type")
   @js.native
   class Type ()
-    extends typings.sharepoint.SP.JsGrid.WidgetControl.Type
+    extends StObject
+       with typings.sharepoint.SP.JsGrid.WidgetControl.Type
   object Type {
     
     @JSGlobal("SP.JsGrid.WidgetControl.Type")

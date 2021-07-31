@@ -2,18 +2,16 @@ package typings.plotlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Threshold> */
-@js.native
 trait PartialThreshold extends StObject {
   
-  var line: js.UndefOr[PartialGaugeLine] = js.native
+  var line: js.UndefOr[PartialGaugeLine] = js.undefined
   
-  var thickness: js.UndefOr[Double] = js.native
+  var thickness: js.UndefOr[Double] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object PartialThreshold {
   

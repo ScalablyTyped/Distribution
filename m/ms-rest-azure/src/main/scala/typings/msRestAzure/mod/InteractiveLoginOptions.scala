@@ -2,16 +2,16 @@ package typings.msRestAzure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InteractiveLoginOptions extends DeviceTokenCredentialsOptions {
+trait InteractiveLoginOptions
+  extends StObject
+     with DeviceTokenCredentialsOptions {
   
   /**
     * The language code specifying how the message should be localized to. Default value 'en-us'.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
 }
 object InteractiveLoginOptions {
   

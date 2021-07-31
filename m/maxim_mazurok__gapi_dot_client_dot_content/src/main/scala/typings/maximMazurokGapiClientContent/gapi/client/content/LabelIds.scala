@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelIds extends StObject {
   
   /** The list of label IDs. */
-  var labelIds: js.UndefOr[js.Array[String]] = js.native
+  var labelIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object LabelIds {
   

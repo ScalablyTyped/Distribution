@@ -7,7 +7,6 @@ import typings.squareConnect.squareConnectStrings.RESTAURANT_ITEM
 import typings.squareConnect.squareConnectStrings.RETAIL_ITEM
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogItem")

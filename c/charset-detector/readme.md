@@ -11,8 +11,8 @@ ICU based port of charset detection
 | Full name          | charset-detector |
 | Keywords           | icu, charset, detection |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 181743 |
+| # dependents       | 5 |
+| # downloads        | 198372 |
 | # stars            | 2 |
 
 ## Links

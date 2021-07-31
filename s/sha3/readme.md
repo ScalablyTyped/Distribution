@@ -10,9 +10,9 @@ The Keccak family of hashing algorithms.
 | ------------------ | :-------------: |
 | Full name          | sha3 |
 | Keywords           | sha, sha3, sha-3, keccak, hash, hashing |
-| # releases         | 17 |
-| # dependents       | 113 |
-| # downloads        | 3304349 |
+| # releases         | 15 |
+| # dependents       | 135 |
+| # downloads        | 2860696 |
 | # stars            | 1 |
 
 ## Links

@@ -4,18 +4,16 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.Enabled
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.Suspended
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAccelerateConfigurationMod {
   
-  @js.native
   trait AccelerateConfiguration extends StObject {
     
     /**
       * <p>The accelerate configuration of the bucket.</p>
       */
-    var Status: js.UndefOr[Enabled | Suspended | String] = js.native
+    var Status: js.UndefOr[Enabled | Suspended | String] = js.undefined
   }
   object AccelerateConfiguration {
     

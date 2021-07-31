@@ -5,16 +5,14 @@ import typings.chance.chanceStrings.female
 import typings.chance.chanceStrings.male
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<chance.Chance.PrefixOptions> */
-@js.native
 trait PartialPrefixOptions extends StObject {
   
-  var full: js.UndefOr[Boolean] = js.native
+  var full: js.UndefOr[Boolean] = js.undefined
   
-  var gender: js.UndefOr[male | female | all] = js.native
+  var gender: js.UndefOr[male | female | all] = js.undefined
 }
 object PartialPrefixOptions {
   

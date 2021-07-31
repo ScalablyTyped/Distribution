@@ -2,15 +2,15 @@ package typings.reactBootstrapTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NumberFilterValue extends _FilterValueData {
+trait NumberFilterValue
+  extends StObject
+     with _FilterValueData {
   
-  var comparator: FilterComparator = js.native
+  var comparator: FilterComparator
   
-  var number: Double | String = js.native
+  var number: Double | String
 }
 object NumberFilterValue {
   

@@ -3,17 +3,15 @@ package typings.stylableWebpackPlugin.anon
 import typings.stylableWebpackPlugin.typesMod.StylableModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportedNames extends StObject {
   
-  var importedNames: js.Array[String] = js.native
+  var importedNames: js.Array[String]
   
-  var module: StylableModule = js.native
+  var module: StylableModule
   
-  var weak: js.UndefOr[Boolean] = js.native
+  var weak: js.UndefOr[Boolean] = js.undefined
 }
 object ImportedNames {
   

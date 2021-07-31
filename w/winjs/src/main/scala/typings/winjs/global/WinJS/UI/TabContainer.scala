@@ -3,7 +3,6 @@ package typings.winjs.global.WinJS.UI
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("WinJS.UI.TabContainer")
 @js.native
 class TabContainer protected ()
-  extends typings.winjs.WinJS.UI.TabContainer {
+  extends StObject
+     with typings.winjs.WinJS.UI.TabContainer {
   //#region Constructors
   /**
     * Creates a new TabContainer.
@@ -22,6 +22,28 @@ class TabContainer protected ()
     **/
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: js.Any) = this()
+  
+  //#endregion Methods
+  //#region Properties
+  /**
+    * Gets or sets the child DOM element that receives tab focus.
+    **/
+  /* CompleteClass */
+  var childFocus: HTMLElement = js.native
+  
+  //#endregion Constructors
+  //#region Methods
+  /**
+    * Releases resources held by this TabContainer. Call this method when the TabContainer is no longer needed. After calling this method, the TabContainer becomes unusable.
+    **/
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
+  
+  /**
+    * Gets or sets the tab index of this container.
+    **/
+  /* CompleteClass */
+  var tabIndex: Double = js.native
 }
 object TabContainer {
   

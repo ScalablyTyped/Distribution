@@ -3,17 +3,15 @@ package typings.thrift.mod
 import typings.thrift.mod.Thrift.MessageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TMessage extends StObject {
   
-  var fname: String = js.native
+  var fname: String
   
-  var mtype: MessageType = js.native
+  var mtype: MessageType
   
-  var rseqid: Double = js.native
+  var rseqid: Double
 }
 object TMessage {
   

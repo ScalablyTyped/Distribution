@@ -2,31 +2,29 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LookupPolicyRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the Directory. For more information, see arns.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * The maximum number of items to be retrieved in a single call. This is an approximate number.
     */
-  var MaxResults: js.UndefOr[NumberResults] = js.native
+  var MaxResults: js.UndefOr[NumberResults] = js.undefined
   
   /**
     * The token to request the next page of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
   
   /**
     * Reference that identifies the object whose policies will be looked up.
     */
-  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference = js.native
+  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference
 }
 object LookupPolicyRequest {
   

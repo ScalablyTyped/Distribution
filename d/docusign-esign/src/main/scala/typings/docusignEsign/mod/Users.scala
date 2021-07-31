@@ -2,36 +2,34 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Users extends StObject {
   
   /**
     * The activation code a new user must enter when activating their account.
     */
-  var activationAccessCode: js.UndefOr[String] = js.native
+  var activationAccessCode: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the user's company.
     */
-  var company: js.UndefOr[String] = js.native
+  var company: js.UndefOr[String] = js.undefined
   
   /**
     * object representing the user's custom Connect configuration.
     */
-  var connectConfigurations: js.UndefOr[js.Array[ConnectUserObject]] = js.native
+  var connectConfigurations: js.UndefOr[js.Array[ConnectUserObject]] = js.undefined
   
   /**
     * The three-letter code for the user's country.
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime when the item was created.
     */
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The name/value pair information for the user custom setting.
@@ -40,42 +38,42 @@ trait Users extends StObject {
     js.Array[
       /* A name-value pair that describes an item and provides a value for the item. */ NameValue
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The default account ID associated with the user.
     */
-  var defaultAccountId: js.UndefOr[String] = js.native
+  var defaultAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The user's email address.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean value that specifies whether the user is enabled for updates from DocuSign Connect.
     */
-  var enableConnectForUser: js.UndefOr[String] = js.native
+  var enableConnectForUser: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The user's first name.
     * Maximum Length: 50 characters.
     */
-  var firstName: js.UndefOr[String] = js.native
+  var firstName: js.UndefOr[String] = js.undefined
   
   /**
     * A complex element containing up to four Question/Answer pairs for forgotten password information.
     */
   var forgottenPasswordInfo: js.UndefOr[
     /* A complex element that has up to four Question/Answer pairs for forgotten password information. */ ForgottenPasswordInformation
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A list of the group information for groups to add the user to.
@@ -84,38 +82,38 @@ trait Users extends StObject {
     * When setting a user's group, only the `groupId` is required.
     *
     */
-  var groupList: js.UndefOr[js.Array[/* This object contains information about a group. */ Group]] = js.native
+  var groupList: js.UndefOr[js.Array[/* This object contains information about a group. */ Group]] = js.undefined
   
   /**
     * The user's physical home address.
     */
-  var homeAddress: js.UndefOr[/* Contains address information. */ AddressInformation] = js.native
+  var homeAddress: js.UndefOr[/* Contains address information. */ AddressInformation] = js.undefined
   
   /**
     * The URI for retrieving the image of the user's initials.
     */
-  var initialsImageUri: js.UndefOr[String] = js.native
+  var initialsImageUri: js.UndefOr[String] = js.undefined
   
   /**
     * Determines if the feature set is actively set as part of the plan.
     */
-  var isAdmin: js.UndefOr[String] = js.native
+  var isAdmin: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, National Association of Realtors (NAR) signature logos are enabled for the user.
     */
-  var isNAREnabled: js.UndefOr[String] = js.native
+  var isNAREnabled: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when the user last logged in to the system.
     */
-  var lastLogin: js.UndefOr[String] = js.native
+  var lastLogin: js.UndefOr[String] = js.undefined
   
   /**
     * The user's last name.
     * Maximum Length: 50 characters.
     */
-  var lastName: js.UndefOr[String] = js.native
+  var lastName: js.UndefOr[String] = js.undefined
   
   /**
     * Shows the current status of the user's password. Possible values are:
@@ -127,86 +125,86 @@ trait Users extends StObject {
     * * password_reset_failed
     *
     */
-  var loginStatus: js.UndefOr[String] = js.native
+  var loginStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The user's middle name.
     * Limit: 50 characters.
     */
-  var middleName: js.UndefOr[String] = js.native
+  var middleName: js.UndefOr[String] = js.undefined
   
   /**
     * The user's password.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * If password expiration is enabled, the date-time when the user's password expires.
     */
-  var passwordExpiration: js.UndefOr[String] = js.native
+  var passwordExpiration: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the permission profile associated with the user.
     */
-  var permissionProfileId: js.UndefOr[String] = js.native
+  var permissionProfileId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the permission profile associated with the user.
     */
-  var permissionProfileName: js.UndefOr[String] = js.native
+  var permissionProfileName: js.UndefOr[String] = js.undefined
   
   /**
     * The URL for retrieving the user's profile image.
     */
-  var profileImageUri: js.UndefOr[String] = js.native
+  var profileImageUri: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, specifies that an activation email be sent to the user.
     */
-  var sendActivationEmail: js.UndefOr[String] = js.native
+  var sendActivationEmail: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, specifies that an additional activation email be sent if user's log on fails before the account is activated.
     */
-  var sendActivationOnInvalidLogin: js.UndefOr[String] = js.native
+  var sendActivationOnInvalidLogin: js.UndefOr[String] = js.undefined
   
   /**
     * An endpoint URI that you can use to retrieve the user's signature image.
     */
-  var signatureImageUri: js.UndefOr[String] = js.native
+  var signatureImageUri: js.UndefOr[String] = js.undefined
   
-  var subscribe: js.UndefOr[String] = js.native
+  var subscribe: js.UndefOr[String] = js.undefined
   
   /**
     * The suffix for the user's name, such as Jr, IV, PhD, etc.
     *
     * Limit: 50 characters.
     */
-  var suffixName: js.UndefOr[String] = js.native
+  var suffixName: js.UndefOr[String] = js.undefined
   
   /**
     * The salutation for the user, such as Ms, Dr, Capt., etc.
     *
     * Limit: 10 characters.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * A URI containing the user ID.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the user was added to the account.
     */
-  var userAddedToAccountDateTime: js.UndefOr[String] = js.native
+  var userAddedToAccountDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the user to access. Generally this is the ID of the current authenticated user, but if the authenticated user is an Administrator on the account,
     * `userId` can represent another user whom the Administrator is accessing.
     *
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
   
   /**
     * The user's full name.
@@ -214,18 +212,18 @@ trait Users extends StObject {
     * `title` + `firstName` + `middleName` + `lastName` + `suffixName`
     * -->
     */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the user's profile was last modified.
     */
-  var userProfileLastModifiedDate: js.UndefOr[String] = js.native
+  var userProfileLastModifiedDate: js.UndefOr[String] = js.undefined
   
   /**
     * The collection of settings representing the actions a user can perform.
     * See [userSettingsInformation](https://developers.docusign.com/esign-rest-api/reference/Users/Users/get#userSettingsInformation) for available settings.
     */
-  var userSettings: js.UndefOr[UserSettingsInformation] = js.native
+  var userSettings: js.UndefOr[UserSettingsInformation] = js.undefined
   
   /**
     * Status of the user's account. One of:
@@ -237,17 +235,17 @@ trait Users extends StObject {
     * - `Disabled`
     *
     */
-  var userStatus: js.UndefOr[String] = js.native
+  var userStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The type of user, for example `CompanyUser`.
     */
-  var userType: js.UndefOr[String] = js.native
+  var userType: js.UndefOr[String] = js.undefined
   
   /**
     * The user's physical work address.
     */
-  var workAddress: js.UndefOr[/* Contains address information. */ AddressInformation] = js.native
+  var workAddress: js.UndefOr[/* Contains address information. */ AddressInformation] = js.undefined
 }
 object Users {
   

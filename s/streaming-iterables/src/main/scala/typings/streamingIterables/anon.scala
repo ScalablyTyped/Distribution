@@ -6,7 +6,6 @@ import typings.streamingIterables.mod.AnyIterable
 import typings.streamingIterables.mod.FlatMapValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -21,15 +20,15 @@ object anon {
   @js.native
   trait FnCall[T, R] extends StObject {
     
-    def apply(func: js.Function1[/* data */ T, FlatMapValue[R]]): js.Function1[/* iterable */ AnyIterable[T], AsyncGenerator[R, _, _]] = js.native
-    def apply(func: js.Function1[/* data */ T, FlatMapValue[R]], iterable: AnyIterable[T]): AsyncGenerator[R, _, _] = js.native
+    def apply(func: js.Function1[/* data */ T, FlatMapValue[R]]): js.Function1[/* iterable */ AnyIterable[T], AsyncGenerator[R, js.Any, js.Any]] = js.native
+    def apply(func: js.Function1[/* data */ T, FlatMapValue[R]], iterable: AnyIterable[T]): AsyncGenerator[R, js.Any, js.Any] = js.native
   }
   
   @js.native
   trait FnCallFuncIterable[T, R] extends StObject {
     
-    def apply(func: js.Function1[/* data */ T, R | js.Promise[R]]): js.Function1[/* iterable */ AnyIterable[T], AsyncGenerator[R, _, _]] = js.native
-    def apply(func: js.Function1[/* data */ T, R | js.Promise[R]], iterable: AnyIterable[T]): AsyncGenerator[R, _, _] = js.native
+    def apply(func: js.Function1[/* data */ T, R | js.Promise[R]]): js.Function1[/* iterable */ AnyIterable[T], AsyncGenerator[R, js.Any, js.Any]] = js.native
+    def apply(func: js.Function1[/* data */ T, R | js.Promise[R]], iterable: AnyIterable[T]): AsyncGenerator[R, js.Any, js.Any] = js.native
   }
   
   @js.native

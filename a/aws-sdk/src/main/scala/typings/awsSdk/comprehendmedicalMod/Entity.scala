@@ -2,56 +2,54 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entity extends StObject {
   
   /**
     *  The extracted attributes that relate to this entity.
     */
-  var Attributes: js.UndefOr[AttributeList] = js.native
+  var Attributes: js.UndefOr[AttributeList] = js.undefined
   
   /**
     *  The 0-based character offset in the input text that shows where the entity begins. The offset returns the UTF-8 code point in the string. 
     */
-  var BeginOffset: js.UndefOr[Integer] = js.native
+  var BeginOffset: js.UndefOr[Integer] = js.undefined
   
   /**
     *  The category of the entity.
     */
-  var Category: js.UndefOr[EntityType] = js.native
+  var Category: js.UndefOr[EntityType] = js.undefined
   
   /**
     *  The 0-based character offset in the input text that shows where the entity ends. The offset returns the UTF-8 code point in the string. 
     */
-  var EndOffset: js.UndefOr[Integer] = js.native
+  var EndOffset: js.UndefOr[Integer] = js.undefined
   
   /**
     *  The numeric identifier for the entity. This is a monotonically increasing id unique within this response rather than a global unique identifier. 
     */
-  var Id: js.UndefOr[Integer] = js.native
+  var Id: js.UndefOr[Integer] = js.undefined
   
   /**
     * The level of confidence that Amazon Comprehend Medical has in the accuracy of the detection.
     */
-  var Score: js.UndefOr[Float] = js.native
+  var Score: js.UndefOr[Float] = js.undefined
   
   /**
     *  The segment of input text extracted as this entity.
     */
-  var Text: js.UndefOr[String] = js.native
+  var Text: js.UndefOr[String] = js.undefined
   
   /**
     * Contextual information for the entity.
     */
-  var Traits: js.UndefOr[TraitList] = js.native
+  var Traits: js.UndefOr[TraitList] = js.undefined
   
   /**
     *  Describes the specific type of entity with category of entities.
     */
-  var Type: js.UndefOr[EntitySubType] = js.native
+  var Type: js.UndefOr[EntitySubType] = js.undefined
 }
 object Entity {
   

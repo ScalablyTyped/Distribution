@@ -2,36 +2,34 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnResizedEventUIParam extends StObject {
   
   /**
     * Gets the resized column index.
     */
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the resized column key.
     */
-  var columnKey: js.UndefOr[String] = js.native
+  var columnKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the final column width after resizing.
     */
-  var newWidth: js.UndefOr[Double] = js.native
+  var newWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the original column width.
     */
-  var originalWidth: js.UndefOr[Double] = js.native
+  var originalWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets a reference to the GridResizing widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ColumnResizedEventUIParam {
   

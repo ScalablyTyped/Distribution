@@ -2,31 +2,26 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StructDefinition
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
   
-  var members: js.Array[VariableDeclaration] = js.native
+  var members: js.Array[VariableDeclaration]
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_StructDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.StructDefinition = js.native
+  var type_StructDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.StructDefinition
 }
 object StructDefinition {
   
   @scala.inline
-  def apply(
-    members: js.Array[VariableDeclaration],
-    name: String,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.StructDefinition
-  ): StructDefinition = {
+  def apply(members: js.Array[VariableDeclaration], name: String): StructDefinition = {
     val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("StructDefinition")
     __obj.asInstanceOf[StructDefinition]
   }
   

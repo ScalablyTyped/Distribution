@@ -2,89 +2,101 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object valueAxesSettingsMod {
   
   @JSImport("amcharts/ValueAxesSettings", JSImport.Default)
   @js.native
-  class default () extends ValueAxesSettings
-  
-  @js.native
-  trait ValueAxesSettings extends StObject {
+  class default ()
+    extends StObject
+       with ValueAxesSettings {
     
     /**
       * Specifies whether number for gridCount is specified automatically, according to the axis size.
       * @default true
       */
+    /* CompleteClass */
     var autoGridCount: Boolean = js.native
     
     /**
       * Axis opacity.
       */
+    /* CompleteClass */
     var axisAlpha: Double = js.native
     
     /**
       * Axis color.
       */
+    /* CompleteClass */
     var axisColor: String = js.native
     
     /**
       * Thickness of the axis.
       */
+    /* CompleteClass */
     var axisThickness: Double = js.native
     
     /**
       * Label color.
       */
+    /* CompleteClass */
     var color: String = js.native
     
     /**
       * Length of a dash. By default, the grid line is not dashed.
       */
+    /* CompleteClass */
     var dashLength: Double = js.native
     
     /**
       * Fill opacity. Every second space between grid lines can be filled with color.
       */
+    /* CompleteClass */
     var fillAlpha: Double = js.native
     
     /**
       * Fill color. Every second space between grid lines can be filled with color.
       * Set fillAlpha to a value greater than 0 to see the fills.
       */
+    /* CompleteClass */
     var fillColor: String = js.native
     
     /**
       * Opacity of grid lines.
       */
+    /* CompleteClass */
     var gridAlpha: Double = js.native
     
     /**
       * Color of grid lines.
       */
+    /* CompleteClass */
     var gridColor: String = js.native
     
     /**
       * Approximate number of grid lines. autoGridCount should be set to false,
       * otherwise this property will be ignored.
       */
+    /* CompleteClass */
     var gridCount: Double = js.native
     
     /**
       * Thickness of grid lines.
       */
+    /* CompleteClass */
     var gridThickness: Double = js.native
     
     /**
       * Specifies whether guide values should be included when calculating min and max of the axis.
       */
+    /* CompleteClass */
     var includeGuidesInMinMax: Boolean = js.native
     
     /**
       * If true, the axis will include hidden graphs when calculating min and max values.
       */
+    /* CompleteClass */
     var includeHidden: Boolean = js.native
     
     /**
@@ -93,72 +105,235 @@ object valueAxesSettingsMod {
       * [[PanelsSettings]] in order labels to be visible.
       * @default true
       */
+    /* CompleteClass */
     var inside: Boolean = js.native
     
     /**
       * Specifies whether values on axis can only be integers or both integers and doubles.
       */
+    /* CompleteClass */
     var integersOnly: Boolean = js.native
     
     /**
       * Frequency at which labels should be placed.
       */
+    /* CompleteClass */
     var labelFrequency: Double = js.native
     
     /**
       * Specifies whether value labels are displayed.
       */
+    /* CompleteClass */
     var labelsEnabled: Boolean = js.native
     
     /**
       * Set to true if value axis is logarithmic, false otherwise.
       */
+    /* CompleteClass */
     var logarithmic: Boolean = js.native
     
     /**
       * The distance of the axis to the plot area, in pixels. Useful if you have more then one axis on the same side.
       */
+    /* CompleteClass */
     var offset: Double = js.native
     
     /**
       * Position of the value axis. Possible values are "left" and "right".
       */
+    /* CompleteClass */
     var position: String = js.native
     
     /**
       * Set to true if value axis is reversed (smaller values on top), false otherwise.
       */
+    /* CompleteClass */
     var reversed: Boolean = js.native
     
     /**
       * Specifies if first label of value axis should be displayed.
       */
+    /* CompleteClass */
     var showFirstLabel: Boolean = js.native
     
     /**
       * Specifies if last label of value axis should be displayed.
       */
+    /* CompleteClass */
     var showLastLabel: Boolean = js.native
     
     /**
       * Stacking mode of the axis. Possible values are: "none", "regular", "100%", "3d".
       */
+    /* CompleteClass */
     var stackType: String = js.native
     
     /**
       * Tick length.
       */
+    /* CompleteClass */
     var tickLength: Double = js.native
     
     /**
       * Unit which will be added to the value label.
       */
+    /* CompleteClass */
     var unit: String = js.native
     
     /**
       * Position of the unit. Possible values are "left" or "right".
       */
+    /* CompleteClass */
     var unitPosition: String = js.native
+  }
+  
+  trait ValueAxesSettings extends StObject {
+    
+    /**
+      * Specifies whether number for gridCount is specified automatically, according to the axis size.
+      * @default true
+      */
+    var autoGridCount: Boolean
+    
+    /**
+      * Axis opacity.
+      */
+    var axisAlpha: Double
+    
+    /**
+      * Axis color.
+      */
+    var axisColor: String
+    
+    /**
+      * Thickness of the axis.
+      */
+    var axisThickness: Double
+    
+    /**
+      * Label color.
+      */
+    var color: String
+    
+    /**
+      * Length of a dash. By default, the grid line is not dashed.
+      */
+    var dashLength: Double
+    
+    /**
+      * Fill opacity. Every second space between grid lines can be filled with color.
+      */
+    var fillAlpha: Double
+    
+    /**
+      * Fill color. Every second space between grid lines can be filled with color.
+      * Set fillAlpha to a value greater than 0 to see the fills.
+      */
+    var fillColor: String
+    
+    /**
+      * Opacity of grid lines.
+      */
+    var gridAlpha: Double
+    
+    /**
+      * Color of grid lines.
+      */
+    var gridColor: String
+    
+    /**
+      * Approximate number of grid lines. autoGridCount should be set to false,
+      * otherwise this property will be ignored.
+      */
+    var gridCount: Double
+    
+    /**
+      * Thickness of grid lines.
+      */
+    var gridThickness: Double
+    
+    /**
+      * Specifies whether guide values should be included when calculating min and max of the axis.
+      */
+    var includeGuidesInMinMax: Boolean
+    
+    /**
+      * If true, the axis will include hidden graphs when calculating min and max values.
+      */
+    var includeHidden: Boolean
+    
+    /**
+      * Specifies whether values should be placed inside or outside plot area.
+      * In case you set this to false, you'll have to adjust marginLeft or marginRight in
+      * [[PanelsSettings]] in order labels to be visible.
+      * @default true
+      */
+    var inside: Boolean
+    
+    /**
+      * Specifies whether values on axis can only be integers or both integers and doubles.
+      */
+    var integersOnly: Boolean
+    
+    /**
+      * Frequency at which labels should be placed.
+      */
+    var labelFrequency: Double
+    
+    /**
+      * Specifies whether value labels are displayed.
+      */
+    var labelsEnabled: Boolean
+    
+    /**
+      * Set to true if value axis is logarithmic, false otherwise.
+      */
+    var logarithmic: Boolean
+    
+    /**
+      * The distance of the axis to the plot area, in pixels. Useful if you have more then one axis on the same side.
+      */
+    var offset: Double
+    
+    /**
+      * Position of the value axis. Possible values are "left" and "right".
+      */
+    var position: String
+    
+    /**
+      * Set to true if value axis is reversed (smaller values on top), false otherwise.
+      */
+    var reversed: Boolean
+    
+    /**
+      * Specifies if first label of value axis should be displayed.
+      */
+    var showFirstLabel: Boolean
+    
+    /**
+      * Specifies if last label of value axis should be displayed.
+      */
+    var showLastLabel: Boolean
+    
+    /**
+      * Stacking mode of the axis. Possible values are: "none", "regular", "100%", "3d".
+      */
+    var stackType: String
+    
+    /**
+      * Tick length.
+      */
+    var tickLength: Double
+    
+    /**
+      * Unit which will be added to the value label.
+      */
+    var unit: String
+    
+    /**
+      * Position of the unit. Possible values are "left" or "right".
+      */
+    var unitPosition: String
   }
   object ValueAxesSettings {
     

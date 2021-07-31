@@ -2,28 +2,27 @@ package typings.multisort
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("multisort", JSImport.Namespace)
-  @js.native
-  def apply[T](criterions: js.Array[Criterion[T]]): SortFunction[T] = js.native
-  @JSImport("multisort", JSImport.Namespace)
-  @js.native
-  def apply[T](criterions: Criterion[T]): SortFunction[T] = js.native
-  @JSImport("multisort", JSImport.Namespace)
-  @js.native
-  def apply[T](toSort: js.Array[T], criterions: js.Array[Criterion[T]]): js.Array[T] = js.native
+  @scala.inline
+  def apply[T](criterions: js.Array[Criterion[T]]): SortFunction[T] = ^.asInstanceOf[js.Dynamic].apply(criterions.asInstanceOf[js.Any]).asInstanceOf[SortFunction[T]]
+  @scala.inline
+  def apply[T](criterions: Criterion[T]): SortFunction[T] = ^.asInstanceOf[js.Dynamic].apply(criterions.asInstanceOf[js.Any]).asInstanceOf[SortFunction[T]]
+  @scala.inline
+  def apply[T](toSort: js.Array[T], criterions: js.Array[Criterion[T]]): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(toSort.asInstanceOf[js.Any], criterions.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   /**
     * Sorts given array by given criterions.
     * @param toSort Array to sort.
     * @param sortings Sort criterions.
     */
+  @scala.inline
+  def apply[T](toSort: js.Array[T], criterions: Criterion[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(toSort.asInstanceOf[js.Any], criterions.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
   @JSImport("multisort", JSImport.Namespace)
   @js.native
-  def apply[T](toSort: js.Array[T], criterions: Criterion[T]): js.Array[T] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Functional evaluators don't need any transformation, and can't

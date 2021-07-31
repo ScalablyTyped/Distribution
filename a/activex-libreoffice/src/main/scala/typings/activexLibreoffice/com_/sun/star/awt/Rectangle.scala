@@ -2,24 +2,22 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a rectangular area by position and size. */
-@js.native
 trait Rectangle extends StObject {
   
   /** specifies the height. */
-  var Height: Double = js.native
+  var Height: Double
   
   /** specifies the width. */
-  var Width: Double = js.native
+  var Width: Double
   
   /** specifies the x-coordinate. */
-  var X: Double = js.native
+  var X: Double
   
   /** specifies the y-coordinate. */
-  var Y: Double = js.native
+  var Y: Double
 }
 object Rectangle {
   

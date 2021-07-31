@@ -5,17 +5,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mysql2.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowDataPacketMod {
   
-  @js.native
   trait RowDataPacket
-    extends /* column */ NumberDictionary[js.Any]
+    extends StObject
+       with /* column */ NumberDictionary[js.Any]
        with /* column */ StringDictionary[js.Any] {
     
-    var constructor: `3` = js.native
+    var constructor: `3`
   }
   object RowDataPacket {
     

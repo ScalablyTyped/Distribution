@@ -6,7 +6,6 @@ import typings.officeJs.officeJsStrings.Single
 import typings.officeJs.officeJsStrings.SingleAccountant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait CellPropertiesFont extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait CellPropertiesFont extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait CellPropertiesFont extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait CellPropertiesFont extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait CellPropertiesFont extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -56,7 +54,7 @@ trait CellPropertiesFont extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -64,7 +62,7 @@ trait CellPropertiesFont extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var strikethrough: js.UndefOr[Boolean] = js.native
+  var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -72,7 +70,7 @@ trait CellPropertiesFont extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var subscript: js.UndefOr[Boolean] = js.native
+  var subscript: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -80,7 +78,7 @@ trait CellPropertiesFont extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var superscript: js.UndefOr[Boolean] = js.native
+  var superscript: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -88,7 +86,7 @@ trait CellPropertiesFont extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var tintAndShade: js.UndefOr[Double] = js.native
+  var tintAndShade: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait CellPropertiesFont extends StObject {
     */
   var underline: js.UndefOr[
     RangeUnderlineStyle | None | Single | typings.officeJs.officeJsStrings.Double | SingleAccountant | DoubleAccountant
-  ] = js.native
+  ] = js.undefined
 }
 object CellPropertiesFont {
   

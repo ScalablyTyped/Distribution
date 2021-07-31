@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpatialReferenceInfo extends Object {
+trait SpatialReferenceInfo
+  extends StObject
+     with Object {
   
   /**
     * The XY tolerance of the spatial reference.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#SpatialReferenceInfo)
     */
-  var tolerance: Double = js.native
+  var tolerance: Double
   
   /**
     * Base factor.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#SpatialReferenceInfo)
     */
-  var unitBaseFactor: Double = js.native
+  var unitBaseFactor: Double
   
   /**
     * Unit ID.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#SpatialReferenceInfo)
     */
-  var unitID: Double = js.native
+  var unitID: Double
   
   /**
     * Square derivative.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#SpatialReferenceInfo)
     */
-  var unitSquareDerivative: Double = js.native
+  var unitSquareDerivative: Double
   
   /**
     * Unit type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#SpatialReferenceInfo)
     */
-  var unitType: Double = js.native
+  var unitType: Double
 }
 object SpatialReferenceInfo {
   

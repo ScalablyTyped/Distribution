@@ -2,15 +2,13 @@ package typings.ariClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelIdMohClass extends StObject {
   
-  var channelId: String = js.native
+  var channelId: String
   
-  var mohClass: js.UndefOr[String] = js.native
+  var mohClass: js.UndefOr[String] = js.undefined
 }
 object ChannelIdMohClass {
   

@@ -12,7 +12,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadBalancerMod {
@@ -29,7 +28,7 @@ object loadBalancerMod {
       */
     def this(name: String) = this()
     def this(name: String, args: LoadBalancerArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: LoadBalancerArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -144,6 +143,10 @@ object loadBalancerMod {
   /* static members */
   object LoadBalancer {
     
+    @JSImport("@pulumi/aws/alb/loadBalancer", "LoadBalancer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LoadBalancer resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -153,116 +156,110 @@ object loadBalancerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/alb/loadBalancer", "LoadBalancer.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LoadBalancer = js.native
-    @JSImport("@pulumi/aws/alb/loadBalancer", "LoadBalancer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LoadBalancer = js.native
-    @JSImport("@pulumi/aws/alb/loadBalancer", "LoadBalancer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LoadBalancerState): LoadBalancer = js.native
-    @JSImport("@pulumi/aws/alb/loadBalancer", "LoadBalancer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LoadBalancerState, opts: CustomResourceOptions): LoadBalancer = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LoadBalancerState): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LoadBalancerState, opts: CustomResourceOptions): LoadBalancer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer]
     
     /**
       * Returns true if the given object is an instance of LoadBalancer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/alb/loadBalancer", "LoadBalancer.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/alb/loadBalancer.LoadBalancer */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/alb/loadBalancer.LoadBalancer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/alb/loadBalancer.LoadBalancer */ Boolean]
   }
   
-  @js.native
   trait LoadBalancerArgs extends StObject {
     
     /**
       * An Access Logs block. Access Logs documented below.
       */
-    val accessLogs: js.UndefOr[Input[typings.pulumiAws.inputMod.alb.LoadBalancerAccessLogs]] = js.native
+    val accessLogs: js.UndefOr[Input[typings.pulumiAws.inputMod.alb.LoadBalancerAccessLogs]] = js.undefined
     
     /**
       * The ID of the customer owned ipv4 pool to use for this load balancer.
       */
-    val customerOwnedIpv4Pool: js.UndefOr[Input[String]] = js.native
+    val customerOwnedIpv4Pool: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether HTTP headers with header fields that are not valid are removed by the load balancer (true) or routed to targets (false). The default is false. Elastic Load Balancing requires that message header names contain only alphanumeric characters and hyphens. Only valid for Load Balancers of type `application`.
       */
-    val dropInvalidHeaderFields: js.UndefOr[Input[Boolean]] = js.native
+    val dropInvalidHeaderFields: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * If true, cross-zone load balancing of the load balancer will be enabled.
       * This is a `network` load balancer feature. Defaults to `false`.
       */
-    val enableCrossZoneLoadBalancing: js.UndefOr[Input[Boolean]] = js.native
+    val enableCrossZoneLoadBalancing: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * If true, deletion of the load balancer will be disabled via
       * the AWS API. This will prevent this provider from deleting the load balancer. Defaults to `false`.
       */
-    val enableDeletionProtection: js.UndefOr[Input[Boolean]] = js.native
+    val enableDeletionProtection: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Indicates whether HTTP/2 is enabled in `application` load balancers. Defaults to `true`.
       */
-    val enableHttp2: js.UndefOr[Input[Boolean]] = js.native
+    val enableHttp2: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The time in seconds that the connection is allowed to be idle. Only valid for Load Balancers of type `application`. Default: 60.
       */
-    val idleTimeout: js.UndefOr[Input[Double]] = js.native
+    val idleTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * If true, the LB will be internal.
       */
-    val internal: js.UndefOr[Input[Boolean]] = js.native
+    val internal: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The type of IP addresses used by the subnets for your load balancer. The possible values are `ipv4` and `dualstack`
       */
-    val ipAddressType: js.UndefOr[Input[IpAddressType]] = js.native
+    val ipAddressType: js.UndefOr[Input[IpAddressType]] = js.undefined
     
     /**
       * The type of load balancer to create. Possible values are `application`, `gateway`, or `network`. The default value is `application`.
       */
-    val loadBalancerType: js.UndefOr[Input[LoadBalancerType]] = js.native
+    val loadBalancerType: js.UndefOr[Input[LoadBalancerType]] = js.undefined
     
     /**
       * The name of the LB. This name must be unique within your AWS account, can have a maximum of 32 characters,
       * must contain only alphanumeric characters or hyphens, and must not begin or end with a hyphen. If not specified,
       * this provider will autogenerate a name beginning with `tf-lb`.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of security group IDs to assign to the LB. Only valid for Load Balancers of type `application`.
       */
-    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A subnet mapping block as documented below.
       */
-    val subnetMappings: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.alb.LoadBalancerSubnetMapping]]]] = js.native
+    val subnetMappings: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.alb.LoadBalancerSubnetMapping]]]] = js.undefined
     
     /**
       * A list of subnet IDs to attach to the LB. Subnets
       * cannot be updated for Load Balancers of type `network`. Changing this value
       * for load balancers of type `network` will force a recreation of the resource.
       */
-    val subnets: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnets: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object LoadBalancerArgs {
     
@@ -382,117 +379,116 @@ object loadBalancerMod {
     }
   }
   
-  @js.native
   trait LoadBalancerState extends StObject {
     
     /**
       * An Access Logs block. Access Logs documented below.
       */
-    val accessLogs: js.UndefOr[Input[typings.pulumiAws.inputMod.alb.LoadBalancerAccessLogs]] = js.native
+    val accessLogs: js.UndefOr[Input[typings.pulumiAws.inputMod.alb.LoadBalancerAccessLogs]] = js.undefined
     
     /**
       * The ARN of the load balancer (matches `id`).
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN suffix for use with CloudWatch Metrics.
       */
-    val arnSuffix: js.UndefOr[Input[String]] = js.native
+    val arnSuffix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the customer owned ipv4 pool to use for this load balancer.
       */
-    val customerOwnedIpv4Pool: js.UndefOr[Input[String]] = js.native
+    val customerOwnedIpv4Pool: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The DNS name of the load balancer.
       */
-    val dnsName: js.UndefOr[Input[String]] = js.native
+    val dnsName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether HTTP headers with header fields that are not valid are removed by the load balancer (true) or routed to targets (false). The default is false. Elastic Load Balancing requires that message header names contain only alphanumeric characters and hyphens. Only valid for Load Balancers of type `application`.
       */
-    val dropInvalidHeaderFields: js.UndefOr[Input[Boolean]] = js.native
+    val dropInvalidHeaderFields: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * If true, cross-zone load balancing of the load balancer will be enabled.
       * This is a `network` load balancer feature. Defaults to `false`.
       */
-    val enableCrossZoneLoadBalancing: js.UndefOr[Input[Boolean]] = js.native
+    val enableCrossZoneLoadBalancing: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * If true, deletion of the load balancer will be disabled via
       * the AWS API. This will prevent this provider from deleting the load balancer. Defaults to `false`.
       */
-    val enableDeletionProtection: js.UndefOr[Input[Boolean]] = js.native
+    val enableDeletionProtection: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Indicates whether HTTP/2 is enabled in `application` load balancers. Defaults to `true`.
       */
-    val enableHttp2: js.UndefOr[Input[Boolean]] = js.native
+    val enableHttp2: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The time in seconds that the connection is allowed to be idle. Only valid for Load Balancers of type `application`. Default: 60.
       */
-    val idleTimeout: js.UndefOr[Input[Double]] = js.native
+    val idleTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * If true, the LB will be internal.
       */
-    val internal: js.UndefOr[Input[Boolean]] = js.native
+    val internal: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The type of IP addresses used by the subnets for your load balancer. The possible values are `ipv4` and `dualstack`
       */
-    val ipAddressType: js.UndefOr[Input[IpAddressType]] = js.native
+    val ipAddressType: js.UndefOr[Input[IpAddressType]] = js.undefined
     
     /**
       * The type of load balancer to create. Possible values are `application`, `gateway`, or `network`. The default value is `application`.
       */
-    val loadBalancerType: js.UndefOr[Input[LoadBalancerType]] = js.native
+    val loadBalancerType: js.UndefOr[Input[LoadBalancerType]] = js.undefined
     
     /**
       * The name of the LB. This name must be unique within your AWS account, can have a maximum of 32 characters,
       * must contain only alphanumeric characters or hyphens, and must not begin or end with a hyphen. If not specified,
       * this provider will autogenerate a name beginning with `tf-lb`.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of security group IDs to assign to the LB. Only valid for Load Balancers of type `application`.
       */
-    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A subnet mapping block as documented below.
       */
-    val subnetMappings: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.alb.LoadBalancerSubnetMapping]]]] = js.native
+    val subnetMappings: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.alb.LoadBalancerSubnetMapping]]]] = js.undefined
     
     /**
       * A list of subnet IDs to attach to the LB. Subnets
       * cannot be updated for Load Balancers of type `network`. Changing this value
       * for load balancers of type `network` will force a recreation of the resource.
       */
-    val subnets: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnets: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The canonical hosted zone ID of the load balancer (to be used in a Route 53 Alias record).
       * * `subnet_mapping.*.outpost_id` - ID of the Outpost containing the load balancer.
       */
-    val zoneId: js.UndefOr[Input[String]] = js.native
+    val zoneId: js.UndefOr[Input[String]] = js.undefined
   }
   object LoadBalancerState {
     

@@ -2,21 +2,19 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InteractiveState extends StObject {
   
-  var startBearing: js.UndefOr[Double] = js.native
+  var startBearing: js.UndefOr[Double] = js.undefined
   
-  var startPanLngLat: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var startPanLngLat: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var startPitch: js.UndefOr[Double] = js.native
+  var startPitch: js.UndefOr[Double] = js.undefined
   
-  var startZoom: js.UndefOr[Double] = js.native
+  var startZoom: js.UndefOr[Double] = js.undefined
   
-  var startZoomLngLat: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var startZoomLngLat: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
 }
 object InteractiveState {
   

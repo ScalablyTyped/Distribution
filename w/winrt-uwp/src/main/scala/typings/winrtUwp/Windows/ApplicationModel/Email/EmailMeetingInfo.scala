@@ -4,54 +4,52 @@ import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the information associated with a meeting. */
-@js.native
 trait EmailMeetingInfo extends StObject {
   
   /** Gets or sets a Boolean value indicating whether the proposal of a new time is allowed. */
-  var allowNewTimeProposal: Boolean = js.native
+  var allowNewTimeProposal: Boolean
   
   /** Gets or sets the start time for a meeting. */
-  var appointmentOriginalStartTime: Date = js.native
+  var appointmentOriginalStartTime: Date
   
   /** Gets or sets the server identifier for the appointment associated with an email message. */
-  var appointmentRoamingId: String = js.native
+  var appointmentRoamingId: String
   
   /** Gets or sets the duration of the meeting. */
-  var duration: Double = js.native
+  var duration: Double
   
   /** Gets or sets a Boolean value indicating whether the meeting is an all day event. */
-  var isAllDay: Boolean = js.native
+  var isAllDay: Boolean
   
   /** Gets a Boolean value indicating if the meeting is reported as out of date by the server. */
-  var isReportedOutOfDateByServer: Boolean = js.native
+  var isReportedOutOfDateByServer: Boolean
   
   /** Gets or sets a Boolean value indicating whether a response to the meeting request is required. */
-  var isResponseRequested: Boolean = js.native
+  var isResponseRequested: Boolean
   
   /** Gets or sets the meeting location. */
-  var location: String = js.native
+  var location: String
   
   /** Gets or sets the proposed duration for the proposed meeting change. */
-  var proposedDuration: Double = js.native
+  var proposedDuration: Double
   
   /** Gets or sets the proposed start time for the proposed meeting change. */
-  var proposedStartTime: Date = js.native
+  var proposedStartTime: Date
   
   /** Gets or sets the recurrence parameters. */
-  var recurrence: AppointmentRecurrence = js.native
+  var recurrence: AppointmentRecurrence
   
   /** Gets or sets the first instance of the recurrence pattern. */
-  var recurrenceStartTime: Date = js.native
+  var recurrenceStartTime: Date
   
   /** Gets or sets the change number on the server that identifies the meeting email change number. */
-  var remoteChangeNumber: Double = js.native
+  var remoteChangeNumber: Double
   
   /** Gets or sets the start time for the meeting. */
-  var startTime: Date = js.native
+  var startTime: Date
 }
 object EmailMeetingInfo {
   

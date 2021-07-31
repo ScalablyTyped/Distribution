@@ -8,11 +8,12 @@ import typings.winrt.Windows.Networking.HostName
 import typings.winrt.Windows.Storage.Streams.IOutputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDatagramSocket extends IClosable {
+trait IDatagramSocket
+  extends StObject
+     with IClosable {
   
   def bindEndpointAsync(localHostName: HostName, localServiceName: String): IAsyncAction = js.native
   

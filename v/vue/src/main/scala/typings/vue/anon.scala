@@ -13,12 +13,10 @@ import typings.vue.vnodeMod.VNode
 import typings.vue.vueMod.CreateElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Component[Data, Methods, Computed, Props] extends StObject {
     
     def component(
@@ -34,11 +32,11 @@ object anon {
           DefaultComputed, 
           DefaultProps
         ]) | EsModuleComponent
-      ]) | Unit = js.native
+      ]) | Unit
     @JSName("component")
-    var component_Original: AsyncComponentPromise[Data, Methods, Computed, Props] = js.native
+    var component_Original: AsyncComponentPromise[Data, Methods, Computed, Props]
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     var error: js.UndefOr[
         (typings.vue.optionsMod.Component[
@@ -47,7 +45,7 @@ object anon {
           DefaultComputed, 
           DefaultProps
         ]) | EsModuleComponent
-      ] = js.native
+      ] = js.undefined
     
     var loading: js.UndefOr[
         (typings.vue.optionsMod.Component[
@@ -56,17 +54,93 @@ object anon {
           DefaultComputed, 
           DefaultProps
         ]) | EsModuleComponent
-      ] = js.native
+      ] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
+  }
+  object Component {
+    
+    @scala.inline
+    def apply[Data, Methods, Computed, Props](
+      component: (/* resolve */ js.Function1[
+          /* component */ typings.vue.optionsMod.Component[Data, Methods, Computed, Props], 
+          Unit
+        ], /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit]) => (js.Promise[
+          (typings.vue.optionsMod.Component[
+            DefaultData[scala.Nothing], 
+            DefaultMethods[scala.Nothing], 
+            DefaultComputed, 
+            DefaultProps
+          ]) | EsModuleComponent
+        ]) | Unit
+    ): Component[Data, Methods, Computed, Props] = {
+      val __obj = js.Dynamic.literal(component = js.Any.fromFunction2(component))
+      __obj.asInstanceOf[Component[Data, Methods, Computed, Props]]
+    }
+    
+    @scala.inline
+    implicit class ComponentMutableBuilder[Self <: Component[?, ?, ?, ?], Data, Methods, Computed, Props] (val x: Self & (Component[Data, Methods, Computed, Props])) extends AnyVal {
+      
+      @scala.inline
+      def setComponent(
+        value: (/* resolve */ js.Function1[
+              /* component */ typings.vue.optionsMod.Component[Data, Methods, Computed, Props], 
+              Unit
+            ], /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit]) => (js.Promise[
+              (typings.vue.optionsMod.Component[
+                DefaultData[scala.Nothing], 
+                DefaultMethods[scala.Nothing], 
+                DefaultComputed, 
+                DefaultProps
+              ]) | EsModuleComponent
+            ]) | Unit
+      ): Self = StObject.set(x, "component", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      
+      @scala.inline
+      def setError(
+        value: (typings.vue.optionsMod.Component[
+              DefaultData[scala.Nothing], 
+              DefaultMethods[scala.Nothing], 
+              DefaultComputed, 
+              DefaultProps
+            ]) | EsModuleComponent
+      ): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      
+      @scala.inline
+      def setLoading(
+        value: (typings.vue.optionsMod.Component[
+              DefaultData[scala.Nothing], 
+              DefaultMethods[scala.Nothing], 
+              DefaultComputed, 
+              DefaultProps
+            ]) | EsModuleComponent
+      ): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      
+      @scala.inline
+      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    }
   }
   
-  @js.native
   trait Default extends StObject {
     
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
-    var from: js.UndefOr[InjectKey] = js.native
+    var from: js.UndefOr[InjectKey] = js.undefined
   }
   object Default {
     
@@ -93,12 +167,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Event extends StObject {
     
-    var event: js.UndefOr[String] = js.native
+    var event: js.UndefOr[String] = js.undefined
     
-    var prop: js.UndefOr[String] = js.native
+    var prop: js.UndefOr[String] = js.undefined
   }
   object Event {
     
@@ -143,20 +216,21 @@ object anon {
   
   @js.native
   trait Instantiable[T]
-    extends _Prop[T]
-       with Instantiable1[/* args (repeated) */ scala.Nothing, T with js.Object]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ scala.Nothing, T & js.Object]
+       with _Prop[T]
   
   @js.native
   trait InstantiableFunction
-    extends _Prop[js.Any]
+    extends StObject
        with Instantiable1[/* args (repeated) */ String, js.Function]
+       with _Prop[js.Any]
   
-  @js.native
   trait Render extends StObject {
     
-    var render: js.Function = js.native
+    var render: js.Function
     
-    var staticRenderFns: js.Array[js.Function] = js.native
+    var staticRenderFns: js.Array[js.Function]
   }
   object Render {
     
@@ -180,12 +254,11 @@ object anon {
     }
   }
   
-  @js.native
   trait StaticRenderFns extends StObject {
     
-    def render(createElement: CreateElement): VNode = js.native
+    def render(createElement: CreateElement): VNode
     
-    var staticRenderFns: js.Array[js.Function0[VNode]] = js.native
+    var staticRenderFns: js.Array[js.Function0[VNode]]
   }
   object StaticRenderFns {
     

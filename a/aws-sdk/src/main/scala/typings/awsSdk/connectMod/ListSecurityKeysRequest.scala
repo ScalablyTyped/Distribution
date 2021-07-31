@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSecurityKeysRequest extends StObject {
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
     * The maximimum number of results to return per page.
     */
-  var MaxResults: js.UndefOr[MaxResult2] = js.native
+  var MaxResults: js.UndefOr[MaxResult2] = js.undefined
   
   /**
     * The token for the next set of results. Use the value returned in the previous response in the next request to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.connectMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.connectMod.NextToken] = js.undefined
 }
 object ListSecurityKeysRequest {
   

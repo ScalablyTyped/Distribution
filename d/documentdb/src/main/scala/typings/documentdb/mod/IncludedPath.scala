@@ -2,16 +2,14 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludedPath extends StObject {
   
-  var Indexes: js.Array[Index] = js.native
+  var Indexes: js.Array[Index]
   
   /** Path to be indexed */
-  var Path: String = js.native
+  var Path: String
 }
 object IncludedPath {
   

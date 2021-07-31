@@ -3,11 +3,11 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.device.capture.IAbstract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICapture extends IAbstract
+trait ICapture
+  extends StObject
+     with IAbstract
 object ICapture {
   
   @scala.inline

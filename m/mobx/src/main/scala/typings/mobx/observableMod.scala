@@ -16,14 +16,16 @@ import typings.std.PropertyDescriptor
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observableMod {
   
-  @JSImport("mobx/lib/api/observable", "asCreateObservableOptions")
+  @JSImport("mobx/lib/api/observable", JSImport.Namespace)
   @js.native
-  def asCreateObservableOptions(thing: js.Any): CreateObservableOptions = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def asCreateObservableOptions(thing: js.Any): CreateObservableOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("asCreateObservableOptions")(thing.asInstanceOf[js.Any]).asInstanceOf[CreateObservableOptions]
   
   @JSImport("mobx/lib/api/observable", "deepDecorator")
   @js.native
@@ -36,140 +38,128 @@ object observableMod {
   /* Inlined mobx.mobx/lib/api/observable.IObservableFactory & mobx.mobx/lib/api/observable.IObservableFactories & {  enhancer :mobx.mobx/lib/internal.IEnhancer<any>} */
   object observable {
     
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply(): scala.Nothing = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply(target: js.Object, key: String): js.Any = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply(target: js.Object, key: String, baseDescriptor: PropertyDescriptor): js.Any = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply(target: js.Object, key: js.Symbol): js.Any = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply(target: js.Object, key: js.Symbol, baseDescriptor: PropertyDescriptor): js.Any = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply(value: String): scala.Nothing = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply(value: Boolean): scala.Nothing = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply(value: Double): scala.Nothing = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply[T /* <: js.Object */](value: T): T with IObservableObject = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
+    @scala.inline
+    def apply(): scala.Nothing = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[scala.Nothing]
+    @scala.inline
+    def apply(target: js.Object, key: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(target: js.Object, key: String, baseDescriptor: PropertyDescriptor): js.Any = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], baseDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(target: js.Object, key: js.Symbol): js.Any = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(target: js.Object, key: js.Symbol, baseDescriptor: PropertyDescriptor): js.Any = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], baseDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(value: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+    @scala.inline
+    def apply(value: Boolean): scala.Nothing = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+    @scala.inline
+    def apply(value: Double): scala.Nothing = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+    @scala.inline
+    def apply[T /* <: js.Object */](value: T): T & IObservableObject = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[T & IObservableObject]
+    @scala.inline
     def apply[T /* <: js.Object */](
       value: T,
       decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? std.Function}
-      */ typings.mobx.mobxStrings.apply with TopLevel[js.Any]
-    ): T with IObservableObject = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
+      */ typings.mobx.mobxStrings.apply & TopLevel[js.Any]
+    ): T & IObservableObject = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[T & IObservableObject]
+    @scala.inline
     def apply[T /* <: js.Object */](
       value: T,
       decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? std.Function}
-      */ typings.mobx.mobxStrings.apply with TopLevel[js.Any],
+      */ typings.mobx.mobxStrings.apply & TopLevel[js.Any],
       options: CreateObservableOptions
-    ): T with IObservableObject = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply[T /* <: js.Object */](value: T, decorators: js.UndefOr[scala.Nothing], options: CreateObservableOptions): T with IObservableObject = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply[T](value: js.Array[T]): IObservableArray[T] = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply[T](value: js.Array[T], options: CreateObservableOptions): IObservableArray[T] = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply[T](value: Set[T]): ObservableSet[T] = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply[T](value: Set[T], options: CreateObservableOptions): ObservableSet[T] = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply[K, V](value: Map[K, V]): ObservableMap[K, V] = js.native
-    @JSImport("mobx/lib/api/observable", "observable")
-    @js.native
-    def apply[K, V](value: Map[K, V], options: CreateObservableOptions): ObservableMap[K, V] = js.native
+    ): T & IObservableObject = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & IObservableObject]
+    @scala.inline
+    def apply[T /* <: js.Object */](value: T, decorators: Unit, options: CreateObservableOptions): T & IObservableObject = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & IObservableObject]
+    @scala.inline
+    def apply[T](value: js.Array[T]): IObservableArray[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[IObservableArray[T]]
+    @scala.inline
+    def apply[T](value: js.Array[T], options: CreateObservableOptions): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
+    @scala.inline
+    def apply[T](value: Set[T]): ObservableSet[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[ObservableSet[T]]
+    @scala.inline
+    def apply[T](value: Set[T], options: CreateObservableOptions): ObservableSet[T] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableSet[T]]
+    @scala.inline
+    def apply[K, V](value: Map[K, V]): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[ObservableMap[K, V]]
+    @scala.inline
+    def apply[K, V](value: Map[K, V], options: CreateObservableOptions): ObservableMap[K, V] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableMap[K, V]]
+    
     @JSImport("mobx/lib/api/observable", "observable")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("mobx/lib/api/observable", "observable.array")
-    @js.native
-    def array[T](): IObservableArray[T] = js.native
-    @JSImport("mobx/lib/api/observable", "observable.array")
-    @js.native
-    def array[T](initialValues: js.UndefOr[scala.Nothing], options: CreateObservableOptions): IObservableArray[T] = js.native
-    @JSImport("mobx/lib/api/observable", "observable.array")
-    @js.native
-    def array[T](initialValues: js.Array[T]): IObservableArray[T] = js.native
-    @JSImport("mobx/lib/api/observable", "observable.array")
-    @js.native
-    def array[T](initialValues: js.Array[T], options: CreateObservableOptions): IObservableArray[T] = js.native
+    @scala.inline
+    def array[T](): IObservableArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")().asInstanceOf[IObservableArray[T]]
+    @scala.inline
+    def array[T](initialValues: js.Array[T]): IObservableArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(initialValues.asInstanceOf[js.Any]).asInstanceOf[IObservableArray[T]]
+    @scala.inline
+    def array[T](initialValues: js.Array[T], options: CreateObservableOptions): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
+    @scala.inline
+    def array[T](initialValues: Unit, options: CreateObservableOptions): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
     
-    @JSImport("mobx/lib/api/observable", "observable.box")
-    @js.native
-    def box[T](): IObservableValue[T] = js.native
-    @JSImport("mobx/lib/api/observable", "observable.box")
-    @js.native
-    def box[T](value: T): IObservableValue[T] = js.native
-    @JSImport("mobx/lib/api/observable", "observable.box")
-    @js.native
-    def box[T](value: T, options: CreateObservableOptions): IObservableValue[T] = js.native
-    @JSImport("mobx/lib/api/observable", "observable.box")
-    @js.native
-    def box[T](value: js.UndefOr[scala.Nothing], options: CreateObservableOptions): IObservableValue[T] = js.native
+    @scala.inline
+    def box[T](): IObservableValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("box")().asInstanceOf[IObservableValue[T]]
+    @scala.inline
+    def box[T](value: T): IObservableValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("box")(value.asInstanceOf[js.Any]).asInstanceOf[IObservableValue[T]]
+    @scala.inline
+    def box[T](value: T, options: CreateObservableOptions): IObservableValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("box")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableValue[T]]
+    @scala.inline
+    def box[T](value: Unit, options: CreateObservableOptions): IObservableValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("box")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableValue[T]]
     
     @JSImport("mobx/lib/api/observable", "observable.deep")
     @js.native
     def deep: IObservableDecorator = js.native
-    @JSImport("mobx/lib/api/observable", "observable.deep")
-    @js.native
-    def deep(target: js.Object, property: String): Unit = js.native
-    @JSImport("mobx/lib/api/observable", "observable.deep")
-    @js.native
-    def deep(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = js.native
-    @JSImport("mobx/lib/api/observable", "observable.deep")
-    @js.native
-    def deep(target: js.Object, property: js.Symbol): Unit = js.native
-    @JSImport("mobx/lib/api/observable", "observable.deep")
-    @js.native
-    def deep(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = js.native
+    @scala.inline
+    def deep(target: js.Object, property: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deep")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def deep(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deep")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def deep(target: js.Object, property: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deep")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def deep(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deep")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     @scala.inline
     def deep_=(x: IObservableDecorator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deep")(x.asInstanceOf[js.Any])
     
     @JSImport("mobx/lib/api/observable", "observable.enhancer")
     @js.native
     def enhancer: IEnhancer[js.Any] = js.native
-    @JSImport("mobx/lib/api/observable", "observable.enhancer")
-    @js.native
-    def enhancer(newValue: js.Any, oldValue: js.UndefOr[scala.Nothing], name: String): js.Any = js.native
-    @JSImport("mobx/lib/api/observable", "observable.enhancer")
-    @js.native
-    def enhancer(newValue: js.Any, oldValue: js.Any, name: String): js.Any = js.native
+    @scala.inline
+    def enhancer(newValue: js.Any, oldValue: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enhancer")(newValue.asInstanceOf[js.Any], oldValue.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def enhancer(newValue: js.Any, oldValue: Unit, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enhancer")(newValue.asInstanceOf[js.Any], oldValue.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     @scala.inline
     def enhancer_=(x: IEnhancer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enhancer")(x.asInstanceOf[js.Any])
     
-    @JSImport("mobx/lib/api/observable", "observable.map")
-    @js.native
-    def map[K, V](): ObservableMap[K, V] = js.native
-    @JSImport("mobx/lib/api/observable", "observable.map")
-    @js.native
-    def map[K, V](initialValues: js.UndefOr[IObservableMapInitialValues[K, V]], options: CreateObservableOptions): ObservableMap[K, V] = js.native
-    @JSImport("mobx/lib/api/observable", "observable.map")
-    @js.native
-    def map[K, V](initialValues: IObservableMapInitialValues[K, V]): ObservableMap[K, V] = js.native
+    @scala.inline
+    def map[K, V](): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[ObservableMap[K, V]]
+    @scala.inline
+    def map[K, V](initialValues: Unit, options: CreateObservableOptions): ObservableMap[K, V] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableMap[K, V]]
+    @scala.inline
+    def map[K, V](initialValues: IObservableMapInitialValues[K, V]): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any]).asInstanceOf[ObservableMap[K, V]]
+    @scala.inline
+    def map[K, V](initialValues: IObservableMapInitialValues[K, V], options: CreateObservableOptions): ObservableMap[K, V] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableMap[K, V]]
+    
+    @scala.inline
+    def `object`[T](props: T): T & IObservableObject = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(props.asInstanceOf[js.Any]).asInstanceOf[T & IObservableObject]
+    @scala.inline
+    def `object`[T](
+      props: T,
+      decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof T ]:? std.Function}
+      */ typings.mobx.mobxStrings.`object` & TopLevel[js.Any]
+    ): T & IObservableObject = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(props.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[T & IObservableObject]
+    @scala.inline
+    def `object`[T](
+      props: T,
+      decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof T ]:? std.Function}
+      */ typings.mobx.mobxStrings.`object` & TopLevel[js.Any],
+      options: CreateObservableOptions
+    ): T & IObservableObject = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(props.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & IObservableObject]
+    @scala.inline
+    def `object`[T](props: T, decorators: Unit, options: CreateObservableOptions): T & IObservableObject = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(props.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & IObservableObject]
     
     /**
       * Decorator that creates an observable that only observes the references, but doesn't try to turn the assigned value into an observable.ts.
@@ -180,30 +170,25 @@ object observableMod {
     /**
       * Decorator that creates an observable that only observes the references, but doesn't try to turn the assigned value into an observable.ts.
       */
-    @JSImport("mobx/lib/api/observable", "observable.ref")
-    @js.native
-    def ref(target: js.Object, property: String): Unit = js.native
-    @JSImport("mobx/lib/api/observable", "observable.ref")
-    @js.native
-    def ref(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = js.native
-    @JSImport("mobx/lib/api/observable", "observable.ref")
-    @js.native
-    def ref(target: js.Object, property: js.Symbol): Unit = js.native
-    @JSImport("mobx/lib/api/observable", "observable.ref")
-    @js.native
-    def ref(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = js.native
+    @scala.inline
+    def ref(target: js.Object, property: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def ref(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def ref(target: js.Object, property: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def ref(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     @scala.inline
     def ref_=(x: IObservableDecorator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ref")(x.asInstanceOf[js.Any])
     
-    @JSImport("mobx/lib/api/observable", "observable.set")
-    @js.native
-    def set[T](): ObservableSet[T] = js.native
-    @JSImport("mobx/lib/api/observable", "observable.set")
-    @js.native
-    def set[T](initialValues: js.UndefOr[IObservableSetInitialValues[T]], options: CreateObservableOptions): ObservableSet[T] = js.native
-    @JSImport("mobx/lib/api/observable", "observable.set")
-    @js.native
-    def set[T](initialValues: IObservableSetInitialValues[T]): ObservableSet[T] = js.native
+    @scala.inline
+    def set[T](): ObservableSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")().asInstanceOf[ObservableSet[T]]
+    @scala.inline
+    def set[T](initialValues: Unit, options: CreateObservableOptions): ObservableSet[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableSet[T]]
+    @scala.inline
+    def set[T](initialValues: IObservableSetInitialValues[T]): ObservableSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(initialValues.asInstanceOf[js.Any]).asInstanceOf[ObservableSet[T]]
+    @scala.inline
+    def set[T](initialValues: IObservableSetInitialValues[T], options: CreateObservableOptions): ObservableSet[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableSet[T]]
     
     /**
       * Decorator that creates an observable converts its value (objects, maps or arrays) into a shallow observable structure
@@ -214,81 +199,48 @@ object observableMod {
     /**
       * Decorator that creates an observable converts its value (objects, maps or arrays) into a shallow observable structure
       */
-    @JSImport("mobx/lib/api/observable", "observable.shallow")
-    @js.native
-    def shallow(target: js.Object, property: String): Unit = js.native
-    @JSImport("mobx/lib/api/observable", "observable.shallow")
-    @js.native
-    def shallow(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = js.native
-    @JSImport("mobx/lib/api/observable", "observable.shallow")
-    @js.native
-    def shallow(target: js.Object, property: js.Symbol): Unit = js.native
-    @JSImport("mobx/lib/api/observable", "observable.shallow")
-    @js.native
-    def shallow(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = js.native
+    @scala.inline
+    def shallow(target: js.Object, property: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def shallow(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def shallow(target: js.Object, property: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def shallow(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     @scala.inline
     def shallow_=(x: IObservableDecorator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shallow")(x.asInstanceOf[js.Any])
     
     @JSImport("mobx/lib/api/observable", "observable.struct")
     @js.native
     def struct: IObservableDecorator = js.native
-    @JSImport("mobx/lib/api/observable", "observable.struct")
-    @js.native
-    def struct(target: js.Object, property: String): Unit = js.native
-    @JSImport("mobx/lib/api/observable", "observable.struct")
-    @js.native
-    def struct(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = js.native
-    @JSImport("mobx/lib/api/observable", "observable.struct")
-    @js.native
-    def struct(target: js.Object, property: js.Symbol): Unit = js.native
-    @JSImport("mobx/lib/api/observable", "observable.struct")
-    @js.native
-    def struct(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = js.native
+    @scala.inline
+    def struct(target: js.Object, property: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def struct(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def struct(target: js.Object, property: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def struct(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     @scala.inline
     def struct_=(x: IObservableDecorator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("struct")(x.asInstanceOf[js.Any])
-    
-    @JSImport("mobx/lib/api/observable", "observable.object")
-    @js.native
-    def `object`[T](props: T): T with IObservableObject = js.native
-    @JSImport("mobx/lib/api/observable", "observable.object")
-    @js.native
-    def `object`[T](
-      props: T,
-      decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof T ]:? std.Function}
-      */ typings.mobx.mobxStrings.`object` with TopLevel[js.Any]
-    ): T with IObservableObject = js.native
-    @JSImport("mobx/lib/api/observable", "observable.object")
-    @js.native
-    def `object`[T](
-      props: T,
-      decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof T ]:? std.Function}
-      */ typings.mobx.mobxStrings.`object` with TopLevel[js.Any],
-      options: CreateObservableOptions
-    ): T with IObservableObject = js.native
-    @JSImport("mobx/lib/api/observable", "observable.object")
-    @js.native
-    def `object`[T](props: T, decorators: js.UndefOr[scala.Nothing], options: CreateObservableOptions): T with IObservableObject = js.native
   }
   
   @JSImport("mobx/lib/api/observable", "refDecorator")
   @js.native
   val refDecorator: IObservableDecorator = js.native
   
-  @js.native
   trait CreateObservableOptions extends StObject {
     
-    var deep: js.UndefOr[Boolean] = js.native
+    var deep: js.UndefOr[Boolean] = js.undefined
     
-    var defaultDecorator: js.UndefOr[IObservableDecorator] = js.native
+    var defaultDecorator: js.UndefOr[IObservableDecorator] = js.undefined
     
     @JSName("equals")
-    var equals_FCreateObservableOptions: js.UndefOr[IEqualsComparer[_]] = js.native
+    var equals_FCreateObservableOptions: js.UndefOr[IEqualsComparer[js.Any]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var proxy: js.UndefOr[Boolean] = js.native
+    var proxy: js.UndefOr[Boolean] = js.undefined
   }
   object CreateObservableOptions {
     
@@ -314,7 +266,7 @@ object observableMod {
       def setDefaultDecoratorUndefined: Self = StObject.set(x, "defaultDecorator", js.undefined)
       
       @scala.inline
-      def setEquals_(value: (_, _) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      def setEquals_(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       
       @scala.inline
       def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
@@ -337,14 +289,14 @@ object observableMod {
   trait IObservableFactories extends StObject {
     
     def array[T](): IObservableArray[T] = js.native
-    def array[T](initialValues: js.UndefOr[scala.Nothing], options: CreateObservableOptions): IObservableArray[T] = js.native
     def array[T](initialValues: js.Array[T]): IObservableArray[T] = js.native
     def array[T](initialValues: js.Array[T], options: CreateObservableOptions): IObservableArray[T] = js.native
+    def array[T](initialValues: Unit, options: CreateObservableOptions): IObservableArray[T] = js.native
     
     def box[T](): IObservableValue[T] = js.native
     def box[T](value: T): IObservableValue[T] = js.native
     def box[T](value: T, options: CreateObservableOptions): IObservableValue[T] = js.native
-    def box[T](value: js.UndefOr[scala.Nothing], options: CreateObservableOptions): IObservableValue[T] = js.native
+    def box[T](value: Unit, options: CreateObservableOptions): IObservableValue[T] = js.native
     
     def deep(target: js.Object, property: String): Unit = js.native
     def deep(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = js.native
@@ -354,24 +306,25 @@ object observableMod {
     var deep_Original: IObservableDecorator = js.native
     
     def map[K, V](): ObservableMap[K, V] = js.native
-    def map[K, V](initialValues: js.UndefOr[IObservableMapInitialValues[K, V]], options: CreateObservableOptions): ObservableMap[K, V] = js.native
+    def map[K, V](initialValues: Unit, options: CreateObservableOptions): ObservableMap[K, V] = js.native
     def map[K, V](initialValues: IObservableMapInitialValues[K, V]): ObservableMap[K, V] = js.native
+    def map[K, V](initialValues: IObservableMapInitialValues[K, V], options: CreateObservableOptions): ObservableMap[K, V] = js.native
     
-    def `object`[T](props: T): T with IObservableObject = js.native
+    def `object`[T](props: T): T & IObservableObject = js.native
     def `object`[T](
       props: T,
       decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? std.Function}
-      */ typings.mobx.mobxStrings.IObservableFactories with TopLevel[js.Any]
-    ): T with IObservableObject = js.native
+      */ typings.mobx.mobxStrings.IObservableFactories & TopLevel[js.Any]
+    ): T & IObservableObject = js.native
     def `object`[T](
       props: T,
       decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? std.Function}
-      */ typings.mobx.mobxStrings.IObservableFactories with TopLevel[js.Any],
+      */ typings.mobx.mobxStrings.IObservableFactories & TopLevel[js.Any],
       options: CreateObservableOptions
-    ): T with IObservableObject = js.native
-    def `object`[T](props: T, decorators: js.UndefOr[scala.Nothing], options: CreateObservableOptions): T with IObservableObject = js.native
+    ): T & IObservableObject = js.native
+    def `object`[T](props: T, decorators: Unit, options: CreateObservableOptions): T & IObservableObject = js.native
     
     /**
       * Decorator that creates an observable that only observes the references, but doesn't try to turn the assigned value into an observable.ts.
@@ -387,8 +340,9 @@ object observableMod {
     var ref_Original: IObservableDecorator = js.native
     
     def set[T](): ObservableSet[T] = js.native
-    def set[T](initialValues: js.UndefOr[IObservableSetInitialValues[T]], options: CreateObservableOptions): ObservableSet[T] = js.native
+    def set[T](initialValues: Unit, options: CreateObservableOptions): ObservableSet[T] = js.native
     def set[T](initialValues: IObservableSetInitialValues[T]): ObservableSet[T] = js.native
+    def set[T](initialValues: IObservableSetInitialValues[T], options: CreateObservableOptions): ObservableSet[T] = js.native
     
     /**
       * Decorator that creates an observable converts its value (objects, maps or arrays) into a shallow observable structure
@@ -422,21 +376,21 @@ object observableMod {
     def apply(value: String): scala.Nothing = js.native
     def apply(value: Boolean): scala.Nothing = js.native
     def apply(value: Double): scala.Nothing = js.native
-    def apply[T /* <: js.Object */](value: T): T with IObservableObject = js.native
+    def apply[T /* <: js.Object */](value: T): T & IObservableObject = js.native
     def apply[T /* <: js.Object */](
       value: T,
       decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? std.Function}
-      */ typings.mobx.mobxStrings.IObservableFactory with TopLevel[js.Any]
-    ): T with IObservableObject = js.native
+      */ typings.mobx.mobxStrings.IObservableFactory & TopLevel[js.Any]
+    ): T & IObservableObject = js.native
     def apply[T /* <: js.Object */](
       value: T,
       decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? std.Function}
-      */ typings.mobx.mobxStrings.IObservableFactory with TopLevel[js.Any],
+      */ typings.mobx.mobxStrings.IObservableFactory & TopLevel[js.Any],
       options: CreateObservableOptions
-    ): T with IObservableObject = js.native
-    def apply[T /* <: js.Object */](value: T, decorators: js.UndefOr[scala.Nothing], options: CreateObservableOptions): T with IObservableObject = js.native
+    ): T & IObservableObject = js.native
+    def apply[T /* <: js.Object */](value: T, decorators: Unit, options: CreateObservableOptions): T & IObservableObject = js.native
     def apply[T](value: js.Array[T]): IObservableArray[T] = js.native
     def apply[T](value: js.Array[T], options: CreateObservableOptions): IObservableArray[T] = js.native
     def apply[T](value: Set[T]): ObservableSet[T] = js.native

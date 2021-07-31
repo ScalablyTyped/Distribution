@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPolicyPrincipalsRequest extends StObject {
   
   /**
     * Specifies the order for results. If true, the results are returned in ascending creation order.
     */
-  var ascendingOrder: js.UndefOr[AscendingOrder] = js.native
+  var ascendingOrder: js.UndefOr[AscendingOrder] = js.undefined
   
   /**
     * The marker for the next set of results.
     */
-  var marker: js.UndefOr[Marker] = js.native
+  var marker: js.UndefOr[Marker] = js.undefined
   
   /**
     * The result page size.
     */
-  var pageSize: js.UndefOr[PageSize] = js.native
+  var pageSize: js.UndefOr[PageSize] = js.undefined
   
   /**
     * The policy name.
     */
-  var policyName: PolicyName = js.native
+  var policyName: PolicyName
 }
 object ListPolicyPrincipalsRequest {
   

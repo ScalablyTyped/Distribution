@@ -1,40 +1,35 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`6`
+import typings.octokitTypes.anon.`0`
+import typings.octokitTypes.octokitTypesStrings.wyandotte
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'wyandotte'> */
-@js.native
-trait MigrationsListForAuthenticatedUserEndpoint extends StObject {
-  
-  var mediaType: `6` = js.native
+trait MigrationsListForAuthenticatedUserEndpoint
+  extends StObject
+     with RequiredPreview[wyandotte] {
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
 }
 object MigrationsListForAuthenticatedUserEndpoint {
   
   @scala.inline
-  def apply(mediaType: `6`): MigrationsListForAuthenticatedUserEndpoint = {
+  def apply(mediaType: `0`[wyandotte]): MigrationsListForAuthenticatedUserEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsListForAuthenticatedUserEndpoint]
   }
   
   @scala.inline
   implicit class MigrationsListForAuthenticatedUserEndpointMutableBuilder[Self <: MigrationsListForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def setMediaType(value: `6`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])

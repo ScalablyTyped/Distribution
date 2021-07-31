@@ -2,31 +2,31 @@ package typings.ionicons.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaHTMLAttributes[T] extends HTMLAttributes[T] {
+trait AreaHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
-  var coords: js.UndefOr[String] = js.native
+  var coords: js.UndefOr[String] = js.undefined
   
-  var download: js.UndefOr[js.Any] = js.native
+  var download: js.UndefOr[js.Any] = js.undefined
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var hrefLang: js.UndefOr[String] = js.native
+  var hrefLang: js.UndefOr[String] = js.undefined
   
-  var hreflang: js.UndefOr[String] = js.native
+  var hreflang: js.UndefOr[String] = js.undefined
   
-  var media: js.UndefOr[String] = js.native
+  var media: js.UndefOr[String] = js.undefined
   
-  var rel: js.UndefOr[String] = js.native
+  var rel: js.UndefOr[String] = js.undefined
   
-  var shape: js.UndefOr[String] = js.native
+  var shape: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object AreaHTMLAttributes {
   
@@ -37,7 +37,7 @@ object AreaHTMLAttributes {
   }
   
   @scala.inline
-  implicit class AreaHTMLAttributesMutableBuilder[Self <: AreaHTMLAttributes[_], T] (val x: Self with AreaHTMLAttributes[T]) extends AnyVal {
+  implicit class AreaHTMLAttributesMutableBuilder[Self <: AreaHTMLAttributes[?], T] (val x: Self & AreaHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])

@@ -3,7 +3,6 @@ package typings.fullcalendarVue
 import typings.fullcalendarVue.optionsMod.direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fullcalendarVueStrings {
@@ -29,7 +28,9 @@ object fullcalendarVueStrings {
   def local: local = "local".asInstanceOf[local]
   
   @js.native
-  sealed trait ltr extends direction
+  sealed trait ltr
+    extends StObject
+       with direction
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   
@@ -44,7 +45,9 @@ object fullcalendarVueStrings {
   def popover: popover = "popover".asInstanceOf[popover]
   
   @js.native
-  sealed trait rtl extends direction
+  sealed trait rtl
+    extends StObject
+       with direction
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   

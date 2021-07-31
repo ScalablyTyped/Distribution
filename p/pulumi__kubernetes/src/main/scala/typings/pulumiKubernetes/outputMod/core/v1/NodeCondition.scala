@@ -2,44 +2,42 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NodeCondition contains condition information for a node.
   */
-@js.native
 trait NodeCondition extends StObject {
   
   /**
     * Last time we got an update on a given condition.
     */
-  var lastHeartbeatTime: String = js.native
+  var lastHeartbeatTime: String
   
   /**
     * Last time the condition transit from one status to another.
     */
-  var lastTransitionTime: String = js.native
+  var lastTransitionTime: String
   
   /**
     * Human readable message indicating details about last transition.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * (brief) reason for the condition's last transition.
     */
-  var reason: String = js.native
+  var reason: String
   
   /**
     * Status of the condition, one of True, False, Unknown.
     */
-  var status: String = js.native
+  var status: String
   
   /**
     * Type of node condition.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object NodeCondition {
   

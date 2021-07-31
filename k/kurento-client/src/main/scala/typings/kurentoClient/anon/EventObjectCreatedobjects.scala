@@ -4,39 +4,30 @@ import typings.kurentoClient.kurentoClientStrings.ObjectCreated
 import typings.kurentoClient.mod.Tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined kurento-client.kurento-client.Event<'ObjectCreated', {  object :string}> */
-@js.native
 trait EventObjectCreatedobjects extends StObject {
   
-  var `object`: String = js.native
+  var `object`: String
   
-  var source: String = js.native
+  var source: String
   
-  var tags: js.Array[Tag] = js.native
+  var tags: js.Array[Tag]
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var timestampMillis: String = js.native
+  var timestampMillis: String
   
-  var `type`: ObjectCreated = js.native
+  var `type`: ObjectCreated
 }
 object EventObjectCreatedobjects {
   
   @scala.inline
-  def apply(
-    `object`: String,
-    source: String,
-    tags: js.Array[Tag],
-    timestamp: String,
-    timestampMillis: String,
-    `type`: ObjectCreated
-  ): EventObjectCreatedobjects = {
+  def apply(`object`: String, source: String, tags: js.Array[Tag], timestamp: String, timestampMillis: String): EventObjectCreatedobjects = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], timestampMillis = timestampMillis.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ObjectCreated")
     __obj.asInstanceOf[EventObjectCreatedobjects]
   }
   

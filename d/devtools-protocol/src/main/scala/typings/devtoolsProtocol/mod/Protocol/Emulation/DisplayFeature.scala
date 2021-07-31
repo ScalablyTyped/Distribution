@@ -5,10 +5,8 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.vertical
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayFeature extends StObject {
   
   /**
@@ -16,18 +14,18 @@ trait DisplayFeature extends StObject {
     * displayed - this length along with the offset describes this area.
     * A display feature that only splits content will have a 0 mask_length.
     */
-  var maskLength: integer = js.native
+  var maskLength: integer
   
   /**
     * The offset from the screen origin in either the x (for vertical
     * orientation) or y (for horizontal orientation) direction.
     */
-  var offset: integer = js.native
+  var offset: integer
   
   /**
     * Orientation of a display feature in relation to screen (DisplayFeatureOrientation enum)
     */
-  var orientation: vertical | horizontal = js.native
+  var orientation: vertical | horizontal
 }
 object DisplayFeature {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemediationParameterValue extends StObject {
   
   /**
     * The value is dynamic and changes at run-time.
     */
-  var ResourceValue: js.UndefOr[typings.awsSdk.configserviceMod.ResourceValue] = js.native
+  var ResourceValue: js.UndefOr[typings.awsSdk.configserviceMod.ResourceValue] = js.undefined
   
   /**
     * The value is static and does not change at run-time.
     */
-  var StaticValue: js.UndefOr[typings.awsSdk.configserviceMod.StaticValue] = js.native
+  var StaticValue: js.UndefOr[typings.awsSdk.configserviceMod.StaticValue] = js.undefined
 }
 object RemediationParameterValue {
   

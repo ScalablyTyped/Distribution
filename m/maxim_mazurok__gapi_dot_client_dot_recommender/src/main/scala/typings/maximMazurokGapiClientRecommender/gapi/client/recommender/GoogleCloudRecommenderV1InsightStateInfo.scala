@@ -3,21 +3,19 @@ package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommenderV1InsightStateInfo extends StObject {
   
   /** Insight state. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** A map of metadata for the state, provided by user or automations systems. */
   var stateMetadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1InsightStateInfo with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1InsightStateInfo & TopLevel[js.Any]
+  ] = js.undefined
 }
 object GoogleCloudRecommenderV1InsightStateInfo {
   
@@ -37,7 +35,7 @@ object GoogleCloudRecommenderV1InsightStateInfo {
     def setStateMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1InsightStateInfo with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1InsightStateInfo & TopLevel[js.Any]
     ): Self = StObject.set(x, "stateMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline

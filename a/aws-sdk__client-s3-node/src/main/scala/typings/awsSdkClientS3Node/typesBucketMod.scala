@@ -3,23 +3,21 @@ package typings.awsSdkClientS3Node
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBucketMod {
   
-  @js.native
   trait Bucket extends StObject {
     
     /**
       * <p>Date the bucket was created.</p>
       */
-    var CreationDate: js.UndefOr[Date | String | Double] = js.native
+    var CreationDate: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>The name of the bucket.</p>
       */
-    var Name: js.UndefOr[String] = js.native
+    var Name: js.UndefOr[String] = js.undefined
   }
   object Bucket {
     
@@ -46,14 +44,15 @@ object typesBucketMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledBucket extends Bucket {
+  trait UnmarshalledBucket
+    extends StObject
+       with Bucket {
     
     /**
       * <p>Date the bucket was created.</p>
       */
     @JSName("CreationDate")
-    var CreationDate_UnmarshalledBucket: js.UndefOr[Date] = js.native
+    var CreationDate_UnmarshalledBucket: js.UndefOr[Date] = js.undefined
   }
   object UnmarshalledBucket {
     

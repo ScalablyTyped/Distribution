@@ -3,15 +3,16 @@ package typings.wordpressNotices
 import typings.wordpressNotices.mod.Notice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectorsMod {
   
-  @JSImport("@wordpress/notices/store/selectors", "getNotices")
+  @JSImport("@wordpress/notices/store/selectors", JSImport.Namespace)
   @js.native
-  def getNotices(): js.Array[Notice] = js.native
-  @JSImport("@wordpress/notices/store/selectors", "getNotices")
-  @js.native
-  def getNotices(context: String): js.Array[Notice] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getNotices(): js.Array[Notice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNotices")().asInstanceOf[js.Array[Notice]]
+  @scala.inline
+  def getNotices(context: String): js.Array[Notice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNotices")(context.asInstanceOf[js.Any]).asInstanceOf[js.Array[Notice]]
 }

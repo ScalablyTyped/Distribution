@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object RemoteSystemAuthorizationKind extends StObject {
   
   /** The client device can discover other users' devices, provided they are available for proximal connection. */
   @js.native
-  sealed trait anonymous extends RemoteSystemAuthorizationKind
+  sealed trait anonymous
+    extends StObject
+       with RemoteSystemAuthorizationKind
   
   /** The client device can only discover devices signed in by the same user. */
   @js.native
-  sealed trait sameUser extends RemoteSystemAuthorizationKind
+  sealed trait sameUser
+    extends StObject
+       with RemoteSystemAuthorizationKind
 }

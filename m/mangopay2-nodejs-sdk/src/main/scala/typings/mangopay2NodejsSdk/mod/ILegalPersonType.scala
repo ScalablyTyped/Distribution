@@ -6,25 +6,23 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ORGANIZATION
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SOLETRADER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILegalPersonType extends StObject {
   
-  var Business: BUSINESS = js.native
+  var Business: BUSINESS
   
-  var NotSpecified: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NotSpecified = js.native
+  var NotSpecified: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NotSpecified
   
-  var Organization: ORGANIZATION = js.native
+  var Organization: ORGANIZATION
   
-  var Soletrader: SOLETRADER = js.native
+  var Soletrader: SOLETRADER
 }
 object ILegalPersonType {
   
   @scala.inline
-  def apply(Business: BUSINESS, NotSpecified: NotSpecified, Organization: ORGANIZATION, Soletrader: SOLETRADER): ILegalPersonType = {
-    val __obj = js.Dynamic.literal(Business = Business.asInstanceOf[js.Any], NotSpecified = NotSpecified.asInstanceOf[js.Any], Organization = Organization.asInstanceOf[js.Any], Soletrader = Soletrader.asInstanceOf[js.Any])
+  def apply(): ILegalPersonType = {
+    val __obj = js.Dynamic.literal(Business = "BUSINESS", NotSpecified = "NotSpecified", Organization = "ORGANIZATION", Soletrader = "SOLETRADER")
     __obj.asInstanceOf[ILegalPersonType]
   }
   

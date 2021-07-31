@@ -4,15 +4,15 @@ import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.data.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridRemoveEvent extends GridEvent {
+trait GridRemoveEvent
+  extends StObject
+     with GridEvent {
   
-  var model: js.UndefOr[Model] = js.native
+  var model: js.UndefOr[Model] = js.undefined
   
-  var row: js.UndefOr[JQuery] = js.native
+  var row: js.UndefOr[JQuery] = js.undefined
 }
 object GridRemoveEvent {
   

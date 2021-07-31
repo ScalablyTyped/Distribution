@@ -10,9 +10,9 @@ Takes an async iterator that emits promise-returning functions, invokes them in 
 | ------------------ | :-------------: |
 | Full name          | it-parallel-batch |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 11 |
 | # dependents       | 3 |
-| # downloads        | 96422 |
+| # downloads        | 228537 |
 | # stars            | 0 |
 
 ## Links

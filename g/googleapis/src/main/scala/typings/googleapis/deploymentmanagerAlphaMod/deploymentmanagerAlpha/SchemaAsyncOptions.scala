@@ -2,26 +2,24 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Async options that determine when a resource should finish.
   */
-@js.native
 trait SchemaAsyncOptions extends StObject {
   
   /**
     * Method regex where this policy will apply.
     */
-  var methodMatch: js.UndefOr[String] = js.native
+  var methodMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Deployment manager will poll instances for this API resource setting a
     * RUNNING state, and blocking until polling conditions tell whether the
     * resource is completed or failed.
     */
-  var pollingOptions: js.UndefOr[SchemaPollingOptions] = js.native
+  var pollingOptions: js.UndefOr[SchemaPollingOptions] = js.undefined
 }
 object SchemaAsyncOptions {
   

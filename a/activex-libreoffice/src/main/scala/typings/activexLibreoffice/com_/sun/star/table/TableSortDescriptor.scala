@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.util.SortField
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,14 +18,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * It extends the general {@link com.sun.star.util.SortDescriptor} with table-specific properties.
   * @deprecated Deprecated
   */
-@js.native
-trait TableSortDescriptor extends SortDescriptor {
+trait TableSortDescriptor
+  extends StObject
+     with SortDescriptor {
   
   /** specifies whether the first row or column (depending on {@link com.sun.star.util.SortDescriptor.SortColumns} ) is a header which should not be sorted. */
-  var ContainsHeader: Boolean = js.native
+  var ContainsHeader: Boolean
   
   /** contains the maximum number of sort fields the descriptor can hold. */
-  var MaxFieldCount: Double = js.native
+  var MaxFieldCount: Double
   
   /**
     * specifies the sorting orientation (sort rows or columns).
@@ -34,10 +34,10 @@ trait TableSortDescriptor extends SortDescriptor {
     * Some implementations may not support sorting columns.
     * @deprecated Deprecateduse the property com::sun::star::util::SortDescriptor::SortColumns instead.
     */
-  var Orientation: TableOrientation = js.native
+  var Orientation: TableOrientation
   
   /** specifies the descriptions of the individual sort fields. */
-  var SortFields: SafeArray[SortField] = js.native
+  var SortFields: SafeArray[SortField]
 }
 object TableSortDescriptor {
   

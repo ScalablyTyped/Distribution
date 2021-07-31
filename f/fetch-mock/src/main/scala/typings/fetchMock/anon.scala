@@ -10,19 +10,17 @@ import typings.std.RequestInit
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FallbackToNetwork extends StObject {
     
     /**
       * Reference to the Headers constructor of a custom fetch
       * implementation.
       */
-    var Headers: js.UndefOr[Instantiable0[typings.std.Headers]] = js.native
+    var Headers: js.UndefOr[Instantiable0[typings.std.Headers]] = js.undefined
     
     /**
       * Reference to the Promise constructor of a custom Promise
@@ -37,7 +35,7 @@ object anon {
           ], 
           js.Promise[Response]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Reference to the Request constructor of a custom fetch
@@ -49,13 +47,13 @@ object anon {
           /* init */ js.UndefOr[RequestInit], 
           typings.std.Request
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Reference to the Response constructor of a custom fetch
       * implementation.
       */
-    var Response: js.UndefOr[Instantiable0[typings.std.Response]] = js.native
+    var Response: js.UndefOr[Instantiable0[typings.std.Response]] = js.undefined
     
     /**
       * - true: Unhandled calls fall through to the network
@@ -64,7 +62,7 @@ object anon {
       * disabling fetch-mock.
       * @default false
       */
-    var fallbackToNetwork: js.UndefOr[Boolean | always] = js.native
+    var fallbackToNetwork: js.UndefOr[Boolean | always] = js.undefined
     
     /**
       * Reference to a custom fetch implementation.
@@ -75,13 +73,13 @@ object anon {
           /* init */ js.UndefOr[RequestInit], 
           js.Promise[Response]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Automatically sets a content-length header on each response.
       * @default true
       */
-    var includeContentLength: js.UndefOr[Boolean] = js.native
+    var includeContentLength: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines behaviour if a new route has the same name (or
@@ -91,7 +89,7 @@ object anon {
       * - false: Appends the new route to the list of routes
       * @default undefined
       */
-    var overwriteRoutes: js.UndefOr[Boolean] = js.native
+    var overwriteRoutes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Convert objects into JSON before delivering as stub responses.
@@ -100,14 +98,14 @@ object anon {
       * content-type: application/json header.
       * @default true
       */
-    var sendAsJson: js.UndefOr[Boolean] = js.native
+    var sendAsJson: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Print a warning if any call is caught by a fallback handler (set
       * using the fallbackToNetwork option or catch())
       * @default true
       */
-    var warnOnFallback: js.UndefOr[Boolean] = js.native
+    var warnOnFallback: js.UndefOr[Boolean] = js.undefined
   }
   object FallbackToNetwork {
     

@@ -2,7 +2,6 @@ package typings.ipify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,28 +20,29 @@ object mod {
   })();
   ```
   */
-  @JSImport("ipify", JSImport.Namespace)
-  @js.native
-  def apply(): js.Promise[String] = js.native
-  @JSImport("ipify", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[String] = js.native
+  @scala.inline
+  def apply(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
+  @JSImport("ipify", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Custom API endpoint.
     		@default 'https://api6.ipify.org'
     		*/
-    val endpoint: js.UndefOr[String] = js.native
+    val endpoint: js.UndefOr[String] = js.undefined
     
     /**
     		Use the IPv6 API endpoint. The IPv6 endpoint will return an IPv6 address if available, IPv4 address otherwise.
     		Setting the `endpoint` option will override this.
     		@default true
     		*/
-    val useIPv6: js.UndefOr[Boolean] = js.native
+    val useIPv6: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

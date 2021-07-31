@@ -3,10 +3,8 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeLanguageserverProtocol.anon.CodeActionKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeActionClientCapabilities extends StObject {
   
   /**
@@ -15,18 +13,18 @@ trait CodeActionClientCapabilities extends StObject {
     *
     * @since 3.8.0
     */
-  var codeActionLiteralSupport: js.UndefOr[CodeActionKind] = js.native
+  var codeActionLiteralSupport: js.UndefOr[CodeActionKind] = js.undefined
   
   /**
     * Whether code action supports dynamic registration.
     */
-  var dynamicRegistration: js.UndefOr[Boolean] = js.native
+  var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether code action supports the `isPreferred` property.
     * @since 3.15.0
     */
-  var isPreferredSupport: js.UndefOr[Boolean] = js.native
+  var isPreferredSupport: js.UndefOr[Boolean] = js.undefined
 }
 object CodeActionClientCapabilities {
   

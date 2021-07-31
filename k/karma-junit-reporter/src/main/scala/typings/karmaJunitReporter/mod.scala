@@ -3,16 +3,14 @@ package typings.karmaJunitReporter
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
-    var junitReporter: js.UndefOr[JUnitReporterConfiguration] = js.native
+    var junitReporter: js.UndefOr[JUnitReporterConfiguration] = js.undefined
   }
   object ConfigOptions {
     
@@ -33,32 +31,31 @@ object mod {
     }
   }
   
-  @js.native
   trait JUnitReporterConfiguration extends StObject {
     
     /** function (browser, result) to customize the classname attribute in xml testcase element */
-    var classNameFormatter: js.UndefOr[js.Function2[/* browser */ js.Any, /* result */ js.Any, String]] = js.native
+    var classNameFormatter: js.UndefOr[js.Function2[/* browser */ js.Any, /* result */ js.Any, String]] = js.undefined
     
     /** function (browser, result) to customize the name attribute in xml testcase element */
-    var nameFormatter: js.UndefOr[js.Function2[/* browser */ js.Any, /* result */ js.Any, String]] = js.native
+    var nameFormatter: js.UndefOr[js.Function2[/* browser */ js.Any, /* result */ js.Any, String]] = js.undefined
     
     /** results will be saved as $outputDir/$browserName.xml */
-    var outputDir: js.UndefOr[String] = js.native
+    var outputDir: js.UndefOr[String] = js.undefined
     
     /** if included, results will be saved as $outputDir/$browserName/$outputFile */
-    var outputFile: js.UndefOr[String] = js.native
+    var outputFile: js.UndefOr[String] = js.undefined
     
     /** key value pair of properties to add to the <properties> section of the report */
-    var properties: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var properties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /** suite will become the package name attribute in xml testsuite element */
-    var suite: js.UndefOr[String] = js.native
+    var suite: js.UndefOr[String] = js.undefined
     
     /** add browser name to report and classes names */
-    var useBrowserName: js.UndefOr[Boolean] = js.native
+    var useBrowserName: js.UndefOr[Boolean] = js.undefined
     
     /** use '1' if reporting to be per SonarQube 6.2 XML format */
-    var xmlVersion: js.UndefOr[Double | Null] = js.native
+    var xmlVersion: js.UndefOr[Double | Null] = js.undefined
   }
   object JUnitReporterConfiguration {
     

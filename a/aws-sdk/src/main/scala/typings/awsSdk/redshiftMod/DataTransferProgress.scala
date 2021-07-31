@@ -2,41 +2,39 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataTransferProgress extends StObject {
   
   /**
     * Describes the data transfer rate in MB's per second.
     */
-  var CurrentRateInMegaBytesPerSecond: js.UndefOr[DoubleOptional] = js.native
+  var CurrentRateInMegaBytesPerSecond: js.UndefOr[DoubleOptional] = js.undefined
   
   /**
     * Describes the total amount of data that has been transfered in MB's.
     */
-  var DataTransferredInMegaBytes: js.UndefOr[Long] = js.native
+  var DataTransferredInMegaBytes: js.UndefOr[Long] = js.undefined
   
   /**
     * Describes the number of seconds that have elapsed during the data transfer.
     */
-  var ElapsedTimeInSeconds: js.UndefOr[LongOptional] = js.native
+  var ElapsedTimeInSeconds: js.UndefOr[LongOptional] = js.undefined
   
   /**
     * Describes the estimated number of seconds remaining to complete the transfer.
     */
-  var EstimatedTimeToCompletionInSeconds: js.UndefOr[LongOptional] = js.native
+  var EstimatedTimeToCompletionInSeconds: js.UndefOr[LongOptional] = js.undefined
   
   /**
     * Describes the status of the cluster. While the transfer is in progress the status is transferringdata.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * Describes the total amount of data to be transfered in megabytes.
     */
-  var TotalDataInMegaBytes: js.UndefOr[Long] = js.native
+  var TotalDataInMegaBytes: js.UndefOr[Long] = js.undefined
 }
 object DataTransferProgress {
   

@@ -2,16 +2,14 @@ package typings.testingLibraryReactHooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Pick<@testing-library/react-hooks.@testing-library/react-hooks.WaitOptions, 'timeout'> */
-  @js.native
   trait PickWaitOptionstimeout extends StObject {
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object PickWaitOptionstimeout {
     
@@ -33,12 +31,11 @@ object anon {
   }
   
   /* Inlined std.Pick<@testing-library/react-hooks.@testing-library/react-hooks.WaitOptions, 'timeout' | 'suppressErrors'> */
-  @js.native
   trait PickWaitOptionstimeoutsup extends StObject {
     
-    var suppressErrors: js.UndefOr[Boolean] = js.native
+    var suppressErrors: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object PickWaitOptionstimeoutsup {
     

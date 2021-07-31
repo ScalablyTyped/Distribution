@@ -2,13 +2,11 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubmitForSettlement extends StObject {
   
-  var submitForSettlement: Boolean = js.native
+  var submitForSettlement: Boolean
 }
 object SubmitForSettlement {
   

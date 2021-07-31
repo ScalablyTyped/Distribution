@@ -2,23 +2,21 @@ package typings.ckeditorCkeditor5Engine.mod.model
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCompiledItemDefinition extends StObject {
   
-  var allowAttributes: String | js.Array[String] = js.native
+  var allowAttributes: String | js.Array[String]
   
-  var allowIn: String | js.Array[String] = js.native
+  var allowIn: String | js.Array[String]
   
-  var isBlock: Boolean = js.native
+  var isBlock: Boolean
   
-  var isLimit: Boolean = js.native
+  var isLimit: Boolean
   
-  var isObject: Boolean = js.native
+  var isObject: Boolean
   
-  var name: String = js.native
+  var name: String
 }
 object SchemaCompiledItemDefinition {
   

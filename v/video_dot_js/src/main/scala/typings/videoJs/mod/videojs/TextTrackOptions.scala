@@ -4,24 +4,24 @@ import typings.videoJs.mod.videojs.TextTrack.Kind
 import typings.videoJs.mod.videojs.TextTrack.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextTrackOptions extends TrackOptions {
+trait TextTrackOptions
+  extends StObject
+     with TrackOptions {
   
-  var default: js.UndefOr[Boolean] = js.native
+  var default: js.UndefOr[Boolean] = js.undefined
   
   @JSName("kind")
-  var kind_TextTrackOptions: js.UndefOr[Kind] = js.native
+  var kind_TextTrackOptions: js.UndefOr[Kind] = js.undefined
   
-  var mode: js.UndefOr[Mode] = js.native
+  var mode: js.UndefOr[Mode] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var srclang: js.UndefOr[String] = js.native
+  var srclang: js.UndefOr[String] = js.undefined
   
-  var tech: js.UndefOr[Tech] = js.native
+  var tech: js.UndefOr[Tech] = js.undefined
 }
 object TextTrackOptions {
   

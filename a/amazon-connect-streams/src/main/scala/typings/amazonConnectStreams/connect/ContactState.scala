@@ -3,17 +3,15 @@ package typings.amazonConnectStreams.connect
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactState extends StObject {
   
   /** Indicates when the the contact was put in that state. */
-  val timestamp: Date = js.native
+  val timestamp: Date
   
   /** The contact state type, as per the ContactStateType enumeration. */
-  val `type`: ContactStateType = js.native
+  val `type`: ContactStateType
 }
 object ContactState {
   

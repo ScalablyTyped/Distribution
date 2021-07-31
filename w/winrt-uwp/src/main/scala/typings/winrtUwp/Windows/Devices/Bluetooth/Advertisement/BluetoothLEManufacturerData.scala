@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A Bluetooth LE manufacturer-specific data section (one particular type of LE advertisement section) */
-@js.native
 trait BluetoothLEManufacturerData extends StObject {
   
   /** The Bluetooth LE company identifier code as defined by the Bluetooth Special Interest Group (SIG). */
-  var companyId: Double = js.native
+  var companyId: Double
   
   /** Bluetooth LE manufacturer-specific section data. */
-  var data: IBuffer = js.native
+  var data: IBuffer
 }
 object BluetoothLEManufacturerData {
   

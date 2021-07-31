@@ -3,12 +3,11 @@ package typings.aliApp.my
 import typings.aliApp.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetImageInfoOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 图片路径，目前支持：
@@ -16,10 +15,10 @@ trait GetImageInfoOptions
     * - apFilePath路径
     * - 相对路径
     */
-  var src: String = js.native
+  var src: String
   
   @JSName("success")
-  var success_GetImageInfoOptions: js.UndefOr[js.Function1[/* res */ Height, Unit]] = js.native
+  var success_GetImageInfoOptions: js.UndefOr[js.Function1[/* res */ Height, Unit]] = js.undefined
 }
 object GetImageInfoOptions {
   

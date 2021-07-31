@@ -12,7 +12,6 @@ import typings.reactOutsideClickHandler.reactOutsideClickHandlerStrings.flex
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,14 +34,13 @@ object mod {
     def defaultProps_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait DefaultProps extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var display: block | flex | `inline` | `inline-block` | contents = js.native
+    var display: block | flex | `inline` | `inline-block` | contents
     
-    var useCapture: Boolean = js.native
+    var useCapture: Boolean
   }
   object DefaultProps {
     
@@ -73,18 +71,17 @@ object mod {
   type OutsideClickHandler = Component[Props, js.Object, js.Any]
   
   /* Inlined parent std.Partial<react-outside-click-handler.react-outside-click-handler.DefaultProps> */
-  @js.native
   trait Props extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var display: js.UndefOr[block | flex | `inline` | `inline-block` | contents] = js.native
+    var display: js.UndefOr[block | flex | `inline` | `inline-block` | contents] = js.undefined
     
-    def onOutsideClick(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
+    def onOutsideClick(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit
     
-    var useCapture: js.UndefOr[Boolean] = js.native
+    var useCapture: js.UndefOr[Boolean] = js.undefined
   }
   object Props {
     

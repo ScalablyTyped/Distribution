@@ -2,15 +2,13 @@ package typings.baseui.selectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutosizeInputOverrides extends StObject {
   
   var Input: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.native
+  ] = js.undefined
 }
 object AutosizeInputOverrides {
   

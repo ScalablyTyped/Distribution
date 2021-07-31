@@ -2,17 +2,15 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsistencyPolicy extends StObject {
   
-  var defaultConsistencyLevel: ConsistencyLevel = js.native
+  var defaultConsistencyLevel: ConsistencyLevel
   
-  var maxStalenessIntervalInSeconds: Double = js.native
+  var maxStalenessIntervalInSeconds: Double
   
-  var maxStalenessPrefix: Double = js.native
+  var maxStalenessPrefix: Double
 }
 object ConsistencyPolicy {
   

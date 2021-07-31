@@ -3,15 +3,13 @@ package typings.reactNavigationCore.anon
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeEventName[EventName /* <: Extract[/* keyof {} */ String, String] */] extends StObject {
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: EventName = js.native
+  var `type`: EventName
 }
 object TypeEventName {
   
@@ -23,7 +21,7 @@ object TypeEventName {
   }
   
   @scala.inline
-  implicit class TypeEventNameMutableBuilder[Self <: TypeEventName[_], EventName /* <: Extract[/* keyof {} */ String, String] */] (val x: Self with TypeEventName[EventName]) extends AnyVal {
+  implicit class TypeEventNameMutableBuilder[Self <: TypeEventName[?], EventName /* <: Extract[/* keyof {} */ String, String] */] (val x: Self & TypeEventName[EventName]) extends AnyVal {
     
     @scala.inline
     def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])

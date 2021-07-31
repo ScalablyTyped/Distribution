@@ -3,23 +3,22 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.JSXOpeningElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSXOpeningElement_
-  extends Node
+  extends StObject
+     with Node
      with Immutable
      with JSX {
   
-  var attributes: js.Array[JSXAttribute_] = js.native
+  var attributes: js.Array[JSXAttribute_]
   
-  var name: JSXIdentifier_ | JSXMemberExpression_ = js.native
+  var name: JSXIdentifier_ | JSXMemberExpression_
   
-  var selfClosing: Boolean = js.native
+  var selfClosing: Boolean
   
   @JSName("type")
-  var type_JSXOpeningElement_ : JSXOpeningElement = js.native
+  var type_JSXOpeningElement_ : JSXOpeningElement
 }
 object JSXOpeningElement_ {
   
@@ -30,11 +29,10 @@ object JSXOpeningElement_ {
     loc: SourceLocation,
     name: JSXIdentifier_ | JSXMemberExpression_,
     selfClosing: Boolean,
-    start: Double,
-    `type`: JSXOpeningElement
+    start: Double
   ): JSXOpeningElement_ = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXOpeningElement")
     __obj.asInstanceOf[JSXOpeningElement_]
   }
   

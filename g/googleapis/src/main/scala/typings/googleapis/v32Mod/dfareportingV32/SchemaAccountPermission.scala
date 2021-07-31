@@ -2,7 +2,6 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * permission. Some features of Campaign Manager require an account permission
   * to be present in the account.
   */
-@js.native
 trait SchemaAccountPermission extends StObject {
   
   /**
@@ -18,33 +16,33 @@ trait SchemaAccountPermission extends StObject {
     * values are: - &quot;ACCOUNT_PROFILE_BASIC&quot; -
     * &quot;ACCOUNT_PROFILE_STANDARD&quot;
     */
-  var accountProfiles: js.UndefOr[js.Array[String]] = js.native
+  var accountProfiles: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * ID of this account permission.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#accountPermission&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Administrative level required to enable this account permission.
     */
-  var level: js.UndefOr[String] = js.native
+  var level: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this account permission.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Permission group of this account permission.
     */
-  var permissionGroupId: js.UndefOr[String] = js.native
+  var permissionGroupId: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountPermission {
   

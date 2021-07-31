@@ -8,23 +8,21 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.TypeParameterDeclarationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentsExtends extends StObject {
   
-  var body: ObjectTypeAnnotationKind = js.native
+  var body: ObjectTypeAnnotationKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var `extends`: js.Array[InterfaceExtendsKind] = js.native
+  var `extends`: js.Array[InterfaceExtendsKind]
   
-  var id: IdentifierKind = js.native
+  var id: IdentifierKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var typeParameters: js.UndefOr[TypeParameterDeclarationKind | Null] = js.native
+  var typeParameters: js.UndefOr[TypeParameterDeclarationKind | Null] = js.undefined
 }
 object CommentsExtends {
   

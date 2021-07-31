@@ -2,26 +2,24 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTagsInput extends StObject {
   
   /**
     * The ID of the ML object to tag. For example, exampleModelId.
     */
-  var ResourceId: EntityId = js.native
+  var ResourceId: EntityId
   
   /**
     * The type of the ML object to tag. 
     */
-  var ResourceType: TaggableResourceType = js.native
+  var ResourceType: TaggableResourceType
   
   /**
     * The key-value pairs to use to create tags. If you specify a key without specifying a value, Amazon ML creates a tag with the specified key and a value of null.
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object AddTagsInput {
   

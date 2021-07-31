@@ -2,27 +2,25 @@ package typings.leafletDraw.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrecisionOptions extends StObject {
   
-  var ac: js.UndefOr[Double] = js.native
+  var ac: js.UndefOr[Double] = js.undefined
   
-  var ft: js.UndefOr[Double] = js.native
+  var ft: js.UndefOr[Double] = js.undefined
   
-  var ha: js.UndefOr[Double] = js.native
+  var ha: js.UndefOr[Double] = js.undefined
   
-  var km: js.UndefOr[Double] = js.native
+  var km: js.UndefOr[Double] = js.undefined
   
-  var m: js.UndefOr[Double] = js.native
+  var m: js.UndefOr[Double] = js.undefined
   
-  var mi: js.UndefOr[Double] = js.native
+  var mi: js.UndefOr[Double] = js.undefined
   
-  var nm: js.UndefOr[Double] = js.native
+  var nm: js.UndefOr[Double] = js.undefined
   
-  var yd: js.UndefOr[Double] = js.native
+  var yd: js.UndefOr[Double] = js.undefined
 }
 object PrecisionOptions {
   

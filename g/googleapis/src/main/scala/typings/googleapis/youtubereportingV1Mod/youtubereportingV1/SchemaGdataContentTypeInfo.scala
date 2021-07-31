@@ -2,39 +2,37 @@ package typings.googleapis.youtubereportingV1Mod.youtubereportingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gdata
   */
-@js.native
 trait SchemaGdataContentTypeInfo extends StObject {
   
   /**
     * gdata
     */
-  var bestGuess: js.UndefOr[String] = js.native
+  var bestGuess: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var fromBytes: js.UndefOr[String] = js.native
+  var fromBytes: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var fromFileName: js.UndefOr[String] = js.native
+  var fromFileName: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var fromHeader: js.UndefOr[String] = js.native
+  var fromHeader: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var fromUrlPath: js.UndefOr[String] = js.native
+  var fromUrlPath: js.UndefOr[String] = js.undefined
 }
 object SchemaGdataContentTypeInfo {
   

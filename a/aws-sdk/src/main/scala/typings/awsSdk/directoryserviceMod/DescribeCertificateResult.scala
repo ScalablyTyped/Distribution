@@ -2,16 +2,14 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCertificateResult extends StObject {
   
   /**
     * Information about the certificate, including registered date time, certificate state, the reason for the state, expiration date time, and certificate common name.
     */
-  var Certificate: js.UndefOr[typings.awsSdk.directoryserviceMod.Certificate] = js.native
+  var Certificate: js.UndefOr[typings.awsSdk.directoryserviceMod.Certificate] = js.undefined
 }
 object DescribeCertificateResult {
   

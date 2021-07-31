@@ -7,7 +7,6 @@ import typings.typeorm.typeormStrings.log
 import typings.typeorm.typeormStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerMod {
@@ -25,29 +24,29 @@ object loggerMod {
       * Logs query and parameters used in it.
       */
     def logQuery(query: String): js.Any = js.native
-    def logQuery(query: String, parameters: js.UndefOr[scala.Nothing], queryRunner: QueryRunner): js.Any = js.native
-    def logQuery(query: String, parameters: js.Array[_]): js.Any = js.native
-    def logQuery(query: String, parameters: js.Array[_], queryRunner: QueryRunner): js.Any = js.native
+    def logQuery(query: String, parameters: js.Array[js.Any]): js.Any = js.native
+    def logQuery(query: String, parameters: js.Array[js.Any], queryRunner: QueryRunner): js.Any = js.native
+    def logQuery(query: String, parameters: Unit, queryRunner: QueryRunner): js.Any = js.native
     
     /**
       * Logs query that is failed.
       */
     def logQueryError(error: String, query: String): js.Any = js.native
-    def logQueryError(error: String, query: String, parameters: js.UndefOr[scala.Nothing], queryRunner: QueryRunner): js.Any = js.native
-    def logQueryError(error: String, query: String, parameters: js.Array[_]): js.Any = js.native
-    def logQueryError(error: String, query: String, parameters: js.Array[_], queryRunner: QueryRunner): js.Any = js.native
+    def logQueryError(error: String, query: String, parameters: js.Array[js.Any]): js.Any = js.native
+    def logQueryError(error: String, query: String, parameters: js.Array[js.Any], queryRunner: QueryRunner): js.Any = js.native
+    def logQueryError(error: String, query: String, parameters: Unit, queryRunner: QueryRunner): js.Any = js.native
     def logQueryError(error: Error, query: String): js.Any = js.native
-    def logQueryError(error: Error, query: String, parameters: js.UndefOr[scala.Nothing], queryRunner: QueryRunner): js.Any = js.native
-    def logQueryError(error: Error, query: String, parameters: js.Array[_]): js.Any = js.native
-    def logQueryError(error: Error, query: String, parameters: js.Array[_], queryRunner: QueryRunner): js.Any = js.native
+    def logQueryError(error: Error, query: String, parameters: js.Array[js.Any]): js.Any = js.native
+    def logQueryError(error: Error, query: String, parameters: js.Array[js.Any], queryRunner: QueryRunner): js.Any = js.native
+    def logQueryError(error: Error, query: String, parameters: Unit, queryRunner: QueryRunner): js.Any = js.native
     
     /**
       * Logs query that is slow.
       */
     def logQuerySlow(time: Double, query: String): js.Any = js.native
-    def logQuerySlow(time: Double, query: String, parameters: js.UndefOr[scala.Nothing], queryRunner: QueryRunner): js.Any = js.native
-    def logQuerySlow(time: Double, query: String, parameters: js.Array[_]): js.Any = js.native
-    def logQuerySlow(time: Double, query: String, parameters: js.Array[_], queryRunner: QueryRunner): js.Any = js.native
+    def logQuerySlow(time: Double, query: String, parameters: js.Array[js.Any]): js.Any = js.native
+    def logQuerySlow(time: Double, query: String, parameters: js.Array[js.Any], queryRunner: QueryRunner): js.Any = js.native
+    def logQuerySlow(time: Double, query: String, parameters: Unit, queryRunner: QueryRunner): js.Any = js.native
     
     /**
       * Logs events from the schema build process.

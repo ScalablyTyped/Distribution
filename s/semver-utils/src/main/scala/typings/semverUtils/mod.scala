@@ -2,45 +2,43 @@ package typings.semverUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("semver-utils", "parse")
+  @JSImport("semver-utils", JSImport.Namespace)
   @js.native
-  def parse(version: String): SemVer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("semver-utils", "parseRange")
-  @js.native
-  def parseRange(range: String): js.Array[SemVer] = js.native
+  @scala.inline
+  def parse(version: String): SemVer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(version.asInstanceOf[js.Any]).asInstanceOf[SemVer]
   
-  @JSImport("semver-utils", "stringify")
-  @js.native
-  def stringify(version: SemVer): String = js.native
+  @scala.inline
+  def parseRange(range: String): js.Array[SemVer] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRange")(range.asInstanceOf[js.Any]).asInstanceOf[js.Array[SemVer]]
   
-  @JSImport("semver-utils", "stringifyRange")
-  @js.native
-  def stringifyRange(version: js.Array[SemVer]): String = js.native
+  @scala.inline
+  def stringify(version: SemVer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(version.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def stringifyRange(version: js.Array[SemVer]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyRange")(version.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait SemVer extends StObject {
     
-    var build: js.UndefOr[String] = js.native
+    var build: js.UndefOr[String] = js.undefined
     
-    var major: js.UndefOr[String] = js.native
+    var major: js.UndefOr[String] = js.undefined
     
-    var minor: js.UndefOr[String] = js.native
+    var minor: js.UndefOr[String] = js.undefined
     
-    var operator: js.UndefOr[String] = js.native
+    var operator: js.UndefOr[String] = js.undefined
     
-    var patch: js.UndefOr[String] = js.native
+    var patch: js.UndefOr[String] = js.undefined
     
-    var release: js.UndefOr[String] = js.native
+    var release: js.UndefOr[String] = js.undefined
     
-    var semver: js.UndefOr[String] = js.native
+    var semver: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object SemVer {
     

@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportVolumeRequest extends StObject {
   
   /**
     * The Availability Zone for the resulting EBS volume.
     */
-  var AvailabilityZone: String = js.native
+  var AvailabilityZone: String
   
   /**
     * A description of the volume.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The disk image.
     */
-  var Image: DiskImageDetail = js.native
+  var Image: DiskImageDetail
   
   /**
     * The volume size.
     */
-  var Volume: VolumeDetail = js.native
+  var Volume: VolumeDetail
 }
 object ImportVolumeRequest {
   

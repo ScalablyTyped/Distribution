@@ -2,81 +2,79 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMaintenanceWindowTaskRequest extends StObject {
   
   /**
     * The new task description to specify.
     */
-  var Description: js.UndefOr[MaintenanceWindowDescription] = js.native
+  var Description: js.UndefOr[MaintenanceWindowDescription] = js.undefined
   
   /**
     * The new logging location in Amazon S3 to specify.   LoggingInfo has been deprecated. To specify an S3 bucket to contain logs, instead use the OutputS3BucketName and OutputS3KeyPrefix options in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported maintenance window task types, see MaintenanceWindowTaskInvocationParameters. 
     */
-  var LoggingInfo: js.UndefOr[typings.awsSdk.ssmMod.LoggingInfo] = js.native
+  var LoggingInfo: js.UndefOr[typings.awsSdk.ssmMod.LoggingInfo] = js.undefined
   
   /**
     * The new MaxConcurrency value you want to specify. MaxConcurrency is the number of targets that are allowed to run this task in parallel.
     */
-  var MaxConcurrency: js.UndefOr[typings.awsSdk.ssmMod.MaxConcurrency] = js.native
+  var MaxConcurrency: js.UndefOr[typings.awsSdk.ssmMod.MaxConcurrency] = js.undefined
   
   /**
     * The new MaxErrors value to specify. MaxErrors is the maximum number of errors that are allowed before the task stops being scheduled.
     */
-  var MaxErrors: js.UndefOr[typings.awsSdk.ssmMod.MaxErrors] = js.native
+  var MaxErrors: js.UndefOr[typings.awsSdk.ssmMod.MaxErrors] = js.undefined
   
   /**
     * The new task name to specify.
     */
-  var Name: js.UndefOr[MaintenanceWindowName] = js.native
+  var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   
   /**
     * The new task priority to specify. The lower the number, the higher the priority. Tasks that have the same priority are scheduled in parallel.
     */
-  var Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.native
+  var Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.undefined
   
   /**
     * If True, then all fields that are required by the RegisterTaskWithMaintenanceWindow action are also required for this API request. Optional fields that are not specified are set to null.
     */
-  var Replace: js.UndefOr[Boolean] = js.native
+  var Replace: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ARN of the IAM service role for Systems Manager to assume when running a maintenance window task. If you do not specify a service role ARN, Systems Manager uses your account's service-linked role. If no service-linked role for Systems Manager exists in your account, it is created when you run RegisterTaskWithMaintenanceWindow. For more information, see the following topics in the in the AWS Systems Manager User Guide:    Using service-linked roles for Systems Manager     Should I use a service-linked role or a custom service role to run maintenance window tasks?    
     */
-  var ServiceRoleArn: js.UndefOr[ServiceRole] = js.native
+  var ServiceRoleArn: js.UndefOr[ServiceRole] = js.undefined
   
   /**
     * The targets (either instances or tags) to modify. Instances are specified using Key=instanceids,Values=instanceID_1,instanceID_2. Tags are specified using Key=tag_name,Values=tag_value. 
     */
-  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.native
+  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
   
   /**
     * The task ARN to modify.
     */
-  var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.native
+  var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.undefined
   
   /**
     * The parameters that the task should use during execution. Populate only the fields that match the task type. All other fields should be empty.  When you update a maintenance window task that has options specified in TaskInvocationParameters, you must provide again all the TaskInvocationParameters values that you want to retain. The values you do not specify again are removed. For example, suppose that when you registered a Run Command task, you specified TaskInvocationParameters values for Comment, NotificationConfig, and OutputS3BucketName. If you update the maintenance window task and specify only a different OutputS3BucketName value, the values for Comment and NotificationConfig are removed. 
     */
-  var TaskInvocationParameters: js.UndefOr[MaintenanceWindowTaskInvocationParameters] = js.native
+  var TaskInvocationParameters: js.UndefOr[MaintenanceWindowTaskInvocationParameters] = js.undefined
   
   /**
     * The parameters to modify.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported maintenance window task types, see MaintenanceWindowTaskInvocationParameters.  The map has the following format: Key: string, between 1 and 255 characters Value: an array of strings, each string is between 1 and 255 characters
     */
-  var TaskParameters: js.UndefOr[MaintenanceWindowTaskParameters] = js.native
+  var TaskParameters: js.UndefOr[MaintenanceWindowTaskParameters] = js.undefined
   
   /**
     * The maintenance window ID that contains the task to modify.
     */
-  var WindowId: MaintenanceWindowId = js.native
+  var WindowId: MaintenanceWindowId
   
   /**
     * The task ID to modify.
     */
-  var WindowTaskId: MaintenanceWindowTaskId = js.native
+  var WindowTaskId: MaintenanceWindowTaskId
 }
 object UpdateMaintenanceWindowTaskRequest {
   

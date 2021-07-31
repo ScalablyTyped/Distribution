@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to reverse actions of the previous undo command.
   */
-@js.native
-trait RedoCommand extends CommandWithSimpleStateBase {
+trait RedoCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the RedoCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object RedoCommand {
   

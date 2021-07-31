@@ -2,39 +2,37 @@ package typings.nodeRedEditorClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ADDING extends StObject {
   
-  val ADDING: Double = js.native
+  val ADDING: Double
   
-  val DEFAULT: Double = js.native
+  val DEFAULT: Double
   
-  val EDITING: Double = js.native
+  val EDITING: Double
   
-  val EXPORT: Double = js.native
+  val EXPORT: Double
   
-  val GROUP_DRAGGING: Double = js.native
+  val GROUP_DRAGGING: Double
   
-  val GROUP_RESIZE: Double = js.native
+  val GROUP_RESIZE: Double
   
-  val IMPORT: Double = js.native
+  val IMPORT: Double
   
-  val IMPORT_DRAGGING: Double = js.native
+  val IMPORT_DRAGGING: Double
   
-  val JOINING: Double = js.native
+  val JOINING: Double
   
-  val MOVING: Double = js.native
+  val MOVING: Double
   
-  val MOVING_ACTIVE: Double = js.native
+  val MOVING_ACTIVE: Double
   
-  val PANNING: Double = js.native
+  val PANNING: Double
   
-  val QUICK_JOINING: Double = js.native
+  val QUICK_JOINING: Double
   
-  val SELECTING_NODE: Double = js.native
+  val SELECTING_NODE: Double
 }
 object ADDING {
   

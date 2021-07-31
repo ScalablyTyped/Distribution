@@ -2,76 +2,74 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNotebookInstancesInput extends StObject {
   
   /**
     * A filter that returns only notebook instances with associated with the specified git repository.
     */
-  var AdditionalCodeRepositoryEquals: js.UndefOr[CodeRepositoryNameOrUrl] = js.native
+  var AdditionalCodeRepositoryEquals: js.UndefOr[CodeRepositoryNameOrUrl] = js.undefined
   
   /**
     * A filter that returns only notebook instances that were created after the specified time (timestamp).
     */
-  var CreationTimeAfter: js.UndefOr[CreationTime] = js.native
+  var CreationTimeAfter: js.UndefOr[CreationTime] = js.undefined
   
   /**
     * A filter that returns only notebook instances that were created before the specified time (timestamp). 
     */
-  var CreationTimeBefore: js.UndefOr[CreationTime] = js.native
+  var CreationTimeBefore: js.UndefOr[CreationTime] = js.undefined
   
   /**
     * A string in the name or URL of a Git repository associated with this notebook instance. This filter returns only notebook instances associated with a git repository with a name that contains the specified string.
     */
-  var DefaultCodeRepositoryContains: js.UndefOr[CodeRepositoryContains] = js.native
+  var DefaultCodeRepositoryContains: js.UndefOr[CodeRepositoryContains] = js.undefined
   
   /**
     * A filter that returns only notebook instances that were modified after the specified time (timestamp).
     */
-  var LastModifiedTimeAfter: js.UndefOr[LastModifiedTime] = js.native
+  var LastModifiedTimeAfter: js.UndefOr[LastModifiedTime] = js.undefined
   
   /**
     * A filter that returns only notebook instances that were modified before the specified time (timestamp).
     */
-  var LastModifiedTimeBefore: js.UndefOr[LastModifiedTime] = js.native
+  var LastModifiedTimeBefore: js.UndefOr[LastModifiedTime] = js.undefined
   
   /**
     * The maximum number of notebook instances to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * A string in the notebook instances' name. This filter returns only notebook instances whose name contains the specified string.
     */
-  var NameContains: js.UndefOr[NotebookInstanceNameContains] = js.native
+  var NameContains: js.UndefOr[NotebookInstanceNameContains] = js.undefined
   
   /**
     *  If the previous call to the ListNotebookInstances is truncated, the response includes a NextToken. You can use this token in your subsequent ListNotebookInstances request to fetch the next set of notebook instances.   You might specify a filter or a sort order in your request. When response is truncated, you must use the same values for the filer and sort order in the next request.  
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * A string in the name of a notebook instances lifecycle configuration associated with this notebook instance. This filter returns only notebook instances associated with a lifecycle configuration with a name that contains the specified string.
     */
-  var NotebookInstanceLifecycleConfigNameContains: js.UndefOr[NotebookInstanceLifecycleConfigName] = js.native
+  var NotebookInstanceLifecycleConfigNameContains: js.UndefOr[NotebookInstanceLifecycleConfigName] = js.undefined
   
   /**
     * The field to sort results by. The default is Name.
     */
-  var SortBy: js.UndefOr[NotebookInstanceSortKey] = js.native
+  var SortBy: js.UndefOr[NotebookInstanceSortKey] = js.undefined
   
   /**
     * The sort order for results. 
     */
-  var SortOrder: js.UndefOr[NotebookInstanceSortOrder] = js.native
+  var SortOrder: js.UndefOr[NotebookInstanceSortOrder] = js.undefined
   
   /**
     * A filter that returns only notebook instances with the specified status.
     */
-  var StatusEquals: js.UndefOr[NotebookInstanceStatus] = js.native
+  var StatusEquals: js.UndefOr[NotebookInstanceStatus] = js.undefined
 }
 object ListNotebookInstancesInput {
   

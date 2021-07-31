@@ -18,25 +18,23 @@ import typings.ecmarkdown.nodeTypesMod.TextNode
 import typings.ecmarkdown.nodeTypesMod.UnorderedListItemNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Contents extends StObject {
     
-    var contents: OrderedListNode = js.native
+    var contents: OrderedListNode
     
-    var location: LocationRange = js.native
+    var location: LocationRange
     
-    var name: algorithm = js.native
+    var name: algorithm
   }
   object Contents {
     
     @scala.inline
-    def apply(contents: OrderedListNode, location: LocationRange, name: algorithm): Contents = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(contents: OrderedListNode, location: LocationRange): Contents = {
+      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "algorithm")
       __obj.asInstanceOf[Contents]
     }
     
@@ -54,14 +52,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ContentsLocation extends StObject {
     
-    var contents: js.Array[TagNode | CommentNode | TextNode] = js.native
+    var contents: js.Array[TagNode | CommentNode | TextNode]
     
-    var location: LocationRange = js.native
+    var location: LocationRange
     
-    var name: star | underscore | tick | tilde = js.native
+    var name: star | underscore | tick | tilde
   }
   object ContentsLocation {
     
@@ -92,10 +89,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Location extends StObject {
     
-    var location: LocationRange = js.native
+    var location: LocationRange
   }
   object Location {
     
@@ -113,20 +109,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var contents: String = js.native
+    var contents: String
     
-    var location: LocationRange = js.native
+    var location: LocationRange
     
-    var name: text = js.native
+    var name: text
   }
   object Name {
     
     @scala.inline
-    def apply(contents: String, location: LocationRange, name: text): Name = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(contents: String, location: LocationRange): Name = {
+      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "text")
       __obj.asInstanceOf[Name]
     }
     
@@ -145,30 +140,23 @@ object anon {
   }
   
   /* Inlined std.Pick<ecmarkdown.ecmarkdown/dist/node-types.OrderedListNode, 'start' | 'contents' | 'name' | 'indent'> & {  location :ecmarkdown.ecmarkdown/dist/node-types.LocationRange} */
-  @js.native
   trait PickOrderedListNodestartc extends StObject {
     
-    var contents: js.Array[OrderedListItemNode] = js.native
+    var contents: js.Array[OrderedListItemNode]
     
-    var indent: Double = js.native
+    var indent: Double
     
-    var location: LocationRange = js.native
+    var location: LocationRange
     
-    var name: ol = js.native
+    var name: ol
     
-    var start: Double = js.native
+    var start: Double
   }
   object PickOrderedListNodestartc {
     
     @scala.inline
-    def apply(
-      contents: js.Array[OrderedListItemNode],
-      indent: Double,
-      location: LocationRange,
-      name: ol,
-      start: Double
-    ): PickOrderedListNodestartc = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    def apply(contents: js.Array[OrderedListItemNode], indent: Double, location: LocationRange, start: Double): PickOrderedListNodestartc = {
+      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "ol", start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickOrderedListNodestartc]
     }
     
@@ -196,33 +184,25 @@ object anon {
   }
   
   /* Inlined std.Pick<ecmarkdown.ecmarkdown/dist/node-types.PipeNode, 'optional' | 'contents' | 'name' | 'nonTerminal' | 'params'> & {  location :ecmarkdown.ecmarkdown/dist/node-types.LocationRange} */
-  @js.native
   trait PickPipeNodeoptionalconte extends StObject {
     
-    var contents: Null = js.native
+    var contents: Null
     
-    var location: LocationRange = js.native
+    var location: LocationRange
     
-    var name: pipe = js.native
+    var name: pipe
     
-    var nonTerminal: String = js.native
+    var nonTerminal: String
     
-    var optional: Boolean = js.native
+    var optional: Boolean
     
-    var params: String = js.native
+    var params: String
   }
   object PickPipeNodeoptionalconte {
     
     @scala.inline
-    def apply(
-      contents: Null,
-      location: LocationRange,
-      name: pipe,
-      nonTerminal: String,
-      optional: Boolean,
-      params: String
-    ): PickPipeNodeoptionalconte = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nonTerminal = nonTerminal.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    def apply(contents: Null, location: LocationRange, nonTerminal: String, optional: Boolean, params: String): PickPipeNodeoptionalconte = {
+      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "pipe", nonTerminal = nonTerminal.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickPipeNodeoptionalconte]
     }
     
@@ -250,22 +230,21 @@ object anon {
   }
   
   /* Inlined std.Pick<ecmarkdown.ecmarkdown/dist/node-types.UnorderedListNode, 'contents' | 'name' | 'indent'> & {  location :ecmarkdown.ecmarkdown/dist/node-types.LocationRange} */
-  @js.native
   trait PickUnorderedListNodecont extends StObject {
     
-    var contents: js.Array[UnorderedListItemNode] = js.native
+    var contents: js.Array[UnorderedListItemNode]
     
-    var indent: Double = js.native
+    var indent: Double
     
-    var location: LocationRange = js.native
+    var location: LocationRange
     
-    var name: ul = js.native
+    var name: ul
   }
   object PickUnorderedListNodecont {
     
     @scala.inline
-    def apply(contents: js.Array[UnorderedListItemNode], indent: Double, location: LocationRange, name: ul): PickUnorderedListNodecont = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(contents: js.Array[UnorderedListItemNode], indent: Double, location: LocationRange): PickUnorderedListNodecont = {
+      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "ul")
       __obj.asInstanceOf[PickUnorderedListNodecont]
     }
     

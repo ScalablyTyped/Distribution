@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateRouteTableResult extends StObject {
   
   /**
     * The route table association ID. This ID is required for disassociating the route table.
     */
-  var AssociationId: js.UndefOr[String] = js.native
+  var AssociationId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the association.
     */
-  var AssociationState: js.UndefOr[RouteTableAssociationState] = js.native
+  var AssociationState: js.UndefOr[RouteTableAssociationState] = js.undefined
 }
 object AssociateRouteTableResult {
   

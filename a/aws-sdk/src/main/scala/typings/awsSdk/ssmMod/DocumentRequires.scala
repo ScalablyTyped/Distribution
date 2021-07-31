@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentRequires extends StObject {
   
   /**
     * The name of the required SSM document. The name can be an Amazon Resource Name (ARN).
     */
-  var Name: DocumentARN = js.native
+  var Name: DocumentARN
   
   /**
     * The document version required by the current document.
     */
-  var Version: js.UndefOr[DocumentVersion] = js.native
+  var Version: js.UndefOr[DocumentVersion] = js.undefined
 }
 object DocumentRequires {
   

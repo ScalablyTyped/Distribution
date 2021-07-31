@@ -12,7 +12,7 @@ RTD retrier
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 7 |
-| # downloads        | 2315085 |
+| # downloads        | 3296642 |
 | # stars            | 0 |
 
 ## Links

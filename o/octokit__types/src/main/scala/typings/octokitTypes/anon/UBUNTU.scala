@@ -2,17 +2,15 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UBUNTU extends StObject {
   
-  var MACOS: Totalms = js.native
+  var MACOS: Totalms
   
-  var UBUNTU: Totalms = js.native
+  var UBUNTU: Totalms
   
-  var WINDOWS: Totalms = js.native
+  var WINDOWS: Totalms
 }
 object UBUNTU {
   

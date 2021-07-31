@@ -2,28 +2,26 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Explorers extends StObject {
   
-  def Add(Folder: js.Any, DisplayMode: OlFolderDisplayMode): Explorer = js.native
+  def Add(Folder: js.Any, DisplayMode: OlFolderDisplayMode): Explorer
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: js.Any): Explorer = js.native
+  def Item(Index: js.Any): Explorer
   
   @JSName("Outlook.Explorers_typekey")
-  var OutlookDotExplorers_typekey: Explorers = js.native
+  var OutlookDotExplorers_typekey: Explorers
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object Explorers {
   

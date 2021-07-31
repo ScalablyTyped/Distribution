@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Devices.Perception
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides static properties that are applicable to all types of frame sources. */
 @JSGlobal("Windows.Devices.Perception.KnownPerceptionFrameSourceProperties")
 @js.native
 abstract class KnownPerceptionFrameSourceProperties ()
-  extends typings.winrtUwp.Windows.Devices.Perception.KnownPerceptionFrameSourceProperties
+  extends StObject
+     with typings.winrtUwp.Windows.Devices.Perception.KnownPerceptionFrameSourceProperties
 object KnownPerceptionFrameSourceProperties {
   
   @JSGlobal("Windows.Devices.Perception.KnownPerceptionFrameSourceProperties")

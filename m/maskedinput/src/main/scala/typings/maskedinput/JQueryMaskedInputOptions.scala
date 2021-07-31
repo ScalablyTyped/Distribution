@@ -2,57 +2,55 @@ package typings.maskedinput
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryMaskedInputOptions extends StObject {
   
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
   
-  var autoUnmask: js.UndefOr[Boolean] = js.native
+  var autoUnmask: js.UndefOr[Boolean] = js.undefined
   
-  var clearIncomplete: js.UndefOr[Boolean] = js.native
+  var clearIncomplete: js.UndefOr[Boolean] = js.undefined
   
-  var clearMaskOnLostFocus: js.UndefOr[Boolean] = js.native
+  var clearMaskOnLostFocus: js.UndefOr[Boolean] = js.undefined
   
-  var greedy: js.UndefOr[Boolean] = js.native
+  var greedy: js.UndefOr[Boolean] = js.undefined
   
-  var isComplete: js.UndefOr[js.Function2[/* buffer */ js.Any, /* options */ js.Any, js.Object]] = js.native
+  var isComplete: js.UndefOr[js.Function2[/* buffer */ js.Any, /* options */ js.Any, js.Object]] = js.undefined
   
-  var mask: js.UndefOr[String] = js.native
+  var mask: js.UndefOr[String] = js.undefined
   
-  var numeric: js.UndefOr[Boolean] = js.native
+  var numeric: js.UndefOr[Boolean] = js.undefined
   
-  var onBeforeMask: js.UndefOr[js.Function1[/* initialValue */ js.Any, Unit]] = js.native
+  var onBeforeMask: js.UndefOr[js.Function1[/* initialValue */ js.Any, Unit]] = js.undefined
   
-  var onBeforePaste: js.UndefOr[js.Function1[/* pastedValue */ js.Any, Unit]] = js.native
+  var onBeforePaste: js.UndefOr[js.Function1[/* pastedValue */ js.Any, Unit]] = js.undefined
   
-  var onKeyValidation: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onKeyValidation: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
   
-  var onUnMask: js.UndefOr[js.Function2[/* maskedValue */ js.Any, /* unmaskedValue */ js.Any, Unit]] = js.native
+  var onUnMask: js.UndefOr[js.Function2[/* maskedValue */ js.Any, /* unmaskedValue */ js.Any, Unit]] = js.undefined
   
-  var oncleared: js.UndefOr[js.Function0[Unit]] = js.native
+  var oncleared: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var oncomplete: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+  var oncomplete: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var onincomplete: js.UndefOr[js.Function0[Unit]] = js.native
+  var onincomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var radixPoint: js.UndefOr[String] = js.native
+  var radixPoint: js.UndefOr[String] = js.undefined
   
-  var repeat: js.UndefOr[Double] = js.native
+  var repeat: js.UndefOr[Double] = js.undefined
   
-  var rightAlignNumerics: js.UndefOr[Boolean] = js.native
+  var rightAlignNumerics: js.UndefOr[Boolean] = js.undefined
   
-  var showMaskOnFocus: js.UndefOr[Boolean] = js.native
+  var showMaskOnFocus: js.UndefOr[Boolean] = js.undefined
   
-  var showMaskOnHover: js.UndefOr[Boolean] = js.native
+  var showMaskOnHover: js.UndefOr[Boolean] = js.undefined
   
-  var showToolTip: js.UndefOr[Boolean] = js.native
+  var showToolTip: js.UndefOr[Boolean] = js.undefined
   
-  var skipOptionalPartCharacter: js.UndefOr[String] = js.native
+  var skipOptionalPartCharacter: js.UndefOr[String] = js.undefined
 }
 object JQueryMaskedInputOptions {
   

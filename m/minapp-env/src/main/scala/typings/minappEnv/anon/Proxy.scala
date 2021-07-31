@@ -2,15 +2,13 @@ package typings.minappEnv.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Proxy[T /* <: js.Object */] extends StObject {
   
-  var proxy: T = js.native
+  var proxy: T
   
-  def revoke(): Unit = js.native
+  def revoke(): Unit
 }
 object Proxy {
   
@@ -21,7 +19,7 @@ object Proxy {
   }
   
   @scala.inline
-  implicit class ProxyMutableBuilder[Self <: Proxy[_], T /* <: js.Object */] (val x: Self with Proxy[T]) extends AnyVal {
+  implicit class ProxyMutableBuilder[Self <: Proxy[?], T /* <: js.Object */] (val x: Self & Proxy[T]) extends AnyVal {
     
     @scala.inline
     def setProxy(value: T): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])

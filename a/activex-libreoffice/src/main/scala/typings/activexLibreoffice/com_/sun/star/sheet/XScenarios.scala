@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.Scenarios
   * @see com.sun.star.sheet.Spreadsheet
   */
-@js.native
-trait XScenarios extends XNameAccess {
+trait XScenarios
+  extends StObject
+     with XNameAccess {
   
   /**
     * creates a new scenario and adds it to the collection.
@@ -24,10 +24,10 @@ trait XScenarios extends XNameAccess {
     * @param aRanges the cell ranges contained in the scenario.
     * @param aComment the user defined comment for the scenario.
     */
-  def addNewByName(aName: String, aRanges: SeqEquiv[CellRangeAddress], aComment: String): Unit = js.native
+  def addNewByName(aName: String, aRanges: SeqEquiv[CellRangeAddress], aComment: String): Unit
   
   /** removes a scenario from the collection. */
-  def removeByName(aName: String): Unit = js.native
+  def removeByName(aName: String): Unit
 }
 object XScenarios {
   

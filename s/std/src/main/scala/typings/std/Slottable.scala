@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Slottable extends StObject {
   
-  val assignedSlot: HTMLSlotElement | Null = js.native
+  val assignedSlot: HTMLSlotElement | Null
 }
 object Slottable {
   
   @scala.inline
   def apply(): Slottable = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(assignedSlot = null)
     __obj.asInstanceOf[Slottable]
   }
   

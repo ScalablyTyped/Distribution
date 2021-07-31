@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileMatrixSetProperties extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait TileMatrixSetProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileMatrixSet.html#fullExtent)
     */
-  var fullExtent: js.UndefOr[ExtentProperties] = js.native
+  var fullExtent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
     * The unique ID assigned to the TileMatrixSet.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileMatrixSet.html#id)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The tiling scheme information for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileMatrixSet.html#tileInfo)
     */
-  var tileInfo: js.UndefOr[TileInfoProperties] = js.native
+  var tileInfo: js.UndefOr[TileInfoProperties] = js.undefined
 }
 object TileMatrixSetProperties {
   

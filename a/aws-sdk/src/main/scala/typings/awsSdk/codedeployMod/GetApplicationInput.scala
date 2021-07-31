@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetApplicationInput extends StObject {
   
   /**
     * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.
     */
-  var applicationName: ApplicationName = js.native
+  var applicationName: ApplicationName
 }
 object GetApplicationInput {
   

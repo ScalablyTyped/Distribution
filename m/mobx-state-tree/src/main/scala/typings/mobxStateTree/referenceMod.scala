@@ -14,31 +14,29 @@ import typings.mobxStateTree.typeMod.IAnyType
 import typings.mobxStateTree.typeMod.IType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object referenceMod {
   
-  @JSImport("mobx-state-tree/dist/types/utility-types/reference", "isReferenceType")
+  @JSImport("mobx-state-tree/dist/types/utility-types/reference", JSImport.Namespace)
   @js.native
-  def isReferenceType[IT /* <: IReferenceType[_] */](`type`: IT): /* is IT */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx-state-tree/dist/types/utility-types/reference", "reference")
-  @js.native
-  def reference[IT /* <: IAnyComplexType */](subType: IT): IReferenceType[IT] = js.native
-  @JSImport("mobx-state-tree/dist/types/utility-types/reference", "reference")
-  @js.native
-  def reference[IT /* <: IAnyComplexType */](subType: IT, options: ReferenceOptions[IT]): IReferenceType[IT] = js.native
+  @scala.inline
+  def isReferenceType[IT /* <: IReferenceType[js.Any] */](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReferenceType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
   
-  @JSImport("mobx-state-tree/dist/types/utility-types/reference", "safeReference")
-  @js.native
-  def safeReference[IT /* <: IAnyComplexType */](subType: IT): IMaybe[IReferenceType[IT]] = js.native
-  @JSImport("mobx-state-tree/dist/types/utility-types/reference", "safeReference")
-  @js.native
-  def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] | js.Object) with AcceptsUndefined): IMaybe[IReferenceType[IT]] = js.native
-  @JSImport("mobx-state-tree/dist/types/utility-types/reference", "safeReference")
-  @js.native
-  def safeReference_IT_IAnyComplexType_IReferenceType[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] | js.Object) with `0`): IReferenceType[IT] = js.native
+  @scala.inline
+  def reference[IT /* <: IAnyComplexType */](subType: IT): IReferenceType[IT] = ^.asInstanceOf[js.Dynamic].applyDynamic("reference")(subType.asInstanceOf[js.Any]).asInstanceOf[IReferenceType[IT]]
+  @scala.inline
+  def reference[IT /* <: IAnyComplexType */](subType: IT, options: ReferenceOptions[IT]): IReferenceType[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("reference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IReferenceType[IT]]
+  
+  @scala.inline
+  def safeReference[IT /* <: IAnyComplexType */](subType: IT): IMaybe[IReferenceType[IT]] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any]).asInstanceOf[IMaybe[IReferenceType[IT]]]
+  @scala.inline
+  def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] | js.Object) & AcceptsUndefined): IMaybe[IReferenceType[IT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IMaybe[IReferenceType[IT]]]
+  
+  @scala.inline
+  def safeReference_IT_IAnyComplexType_IReferenceType[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] | js.Object) & `0`): IReferenceType[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IReferenceType[IT]]
   
   type IReferenceType[IT /* <: IAnyComplexType */] = IType[
     ReferenceIdentifier, 
@@ -68,12 +66,14 @@ object referenceMod {
   /* Rewritten from type alias, can be one of: 
     - typings.mobxStateTree.referenceMod.ReferenceOptionsGetSet[IT]
     - typings.mobxStateTree.referenceMod.ReferenceOptionsOnInvalidated[IT]
-    - typings.mobxStateTree.referenceMod.ReferenceOptionsGetSet[IT] with typings.mobxStateTree.referenceMod.ReferenceOptionsOnInvalidated[IT]
+    - typings.mobxStateTree.referenceMod.ReferenceOptionsGetSet[IT] & typings.mobxStateTree.referenceMod.ReferenceOptionsOnInvalidated[IT]
   */
-  type ReferenceOptions[IT /* <: IAnyComplexType */] = _ReferenceOptions[IT] | (ReferenceOptionsGetSet[IT] with ReferenceOptionsOnInvalidated[IT])
+  type ReferenceOptions[IT /* <: IAnyComplexType */] = _ReferenceOptions[IT] | (ReferenceOptionsGetSet[IT] & ReferenceOptionsOnInvalidated[IT])
   
   @js.native
-  trait ReferenceOptionsGetSet[IT /* <: IAnyComplexType */] extends _ReferenceOptions[IT] {
+  trait ReferenceOptionsGetSet[IT /* <: IAnyComplexType */]
+    extends StObject
+       with _ReferenceOptions[IT] {
     
     def get(identifier: ReferenceIdentifier): ReferenceT[IT] = js.native
     def get(identifier: ReferenceIdentifier, parent: IAnyStateTreeNode): ReferenceT[IT] = js.native
@@ -82,15 +82,31 @@ object referenceMod {
     def set(value: ReferenceT[IT], parent: IAnyStateTreeNode): ReferenceIdentifier = js.native
   }
   
-  @js.native
-  trait ReferenceOptionsOnInvalidated[IT /* <: IAnyComplexType */] extends _ReferenceOptions[IT] {
+  trait ReferenceOptionsOnInvalidated[IT /* <: IAnyComplexType */]
+    extends StObject
+       with _ReferenceOptions[IT] {
     
-    def onInvalidated(event: OnReferenceInvalidatedEvent[ReferenceT[IT]]): Unit = js.native
+    def onInvalidated(event: OnReferenceInvalidatedEvent[ReferenceT[IT]]): Unit
     @JSName("onInvalidated")
-    var onInvalidated_Original: OnReferenceInvalidated[ReferenceT[IT]] = js.native
+    var onInvalidated_Original: OnReferenceInvalidated[ReferenceT[IT]]
+  }
+  object ReferenceOptionsOnInvalidated {
+    
+    @scala.inline
+    def apply[IT /* <: IAnyComplexType */](onInvalidated: /* event */ OnReferenceInvalidatedEvent[ReferenceT[IT]] => Unit): ReferenceOptionsOnInvalidated[IT] = {
+      val __obj = js.Dynamic.literal(onInvalidated = js.Any.fromFunction1(onInvalidated))
+      __obj.asInstanceOf[ReferenceOptionsOnInvalidated[IT]]
+    }
+    
+    @scala.inline
+    implicit class ReferenceOptionsOnInvalidatedMutableBuilder[Self <: ReferenceOptionsOnInvalidated[?], IT /* <: IAnyComplexType */] (val x: Self & ReferenceOptionsOnInvalidated[IT]) extends AnyVal {
+      
+      @scala.inline
+      def setOnInvalidated(value: /* event */ OnReferenceInvalidatedEvent[ReferenceT[IT]] => Unit): Self = StObject.set(x, "onInvalidated", js.Any.fromFunction1(value))
+    }
   }
   
-  type ReferenceT[IT /* <: IAnyType */] = (/* import warning: importer.ImportType#apply Failed type conversion: IT['TypeWithoutSTN'] */ js.Any) with IStateTreeNode[IReferenceType[IT]]
+  type ReferenceT[IT /* <: IAnyType */] = (/* import warning: importer.ImportType#apply Failed type conversion: IT['TypeWithoutSTN'] */ js.Any) & IStateTreeNode[IReferenceType[IT]]
   
   trait _ReferenceOptions[IT /* <: IAnyComplexType */] extends StObject
 }

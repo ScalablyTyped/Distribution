@@ -5,24 +5,22 @@ import typings.openlayers.mod.Feature
 import typings.openlayers.mod.source.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for snap
   */
-@js.native
 trait SnapOptions extends StObject {
   
-  var edge: js.UndefOr[Boolean] = js.native
+  var edge: js.UndefOr[Boolean] = js.undefined
   
-  var features: js.UndefOr[Collection[Feature]] = js.native
+  var features: js.UndefOr[Collection[Feature]] = js.undefined
   
-  var pixelTolerance: js.UndefOr[Double] = js.native
+  var pixelTolerance: js.UndefOr[Double] = js.undefined
   
-  var source: js.UndefOr[Vector] = js.native
+  var source: js.UndefOr[Vector] = js.undefined
   
-  var vertex: js.UndefOr[Boolean] = js.native
+  var vertex: js.UndefOr[Boolean] = js.undefined
 }
 object SnapOptions {
   

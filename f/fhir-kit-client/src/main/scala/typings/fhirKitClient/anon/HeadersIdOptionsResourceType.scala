@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhirKitClient.fhirKitClientStrings.Binary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeadersIdOptionsResourceType extends StObject {
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: Binary = js.native
+  var resourceType: Binary
 }
 object HeadersIdOptionsResourceType {
   
   @scala.inline
-  def apply(id: String, resourceType: Binary): HeadersIdOptionsResourceType = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(id: String): HeadersIdOptionsResourceType = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = "Binary")
     __obj.asInstanceOf[HeadersIdOptionsResourceType]
   }
   

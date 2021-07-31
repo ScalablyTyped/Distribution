@@ -10,7 +10,6 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileContainerApiMod {
@@ -49,18 +48,13 @@ object fileContainerApiMod {
       * @param {string} downloadFileName
       */
     def getItem(containerId: Double): js.Promise[IRestResponse[ReadableStream]] = js.native
-    def getItem(
-      containerId: Double,
-      scope: js.UndefOr[scala.Nothing],
-      itemPath: js.UndefOr[scala.Nothing],
-      downloadFileName: String
-    ): js.Promise[IRestResponse[ReadableStream]] = js.native
-    def getItem(containerId: Double, scope: js.UndefOr[scala.Nothing], itemPath: String): js.Promise[IRestResponse[ReadableStream]] = js.native
-    def getItem(containerId: Double, scope: js.UndefOr[scala.Nothing], itemPath: String, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
     def getItem(containerId: Double, scope: String): js.Promise[IRestResponse[ReadableStream]] = js.native
-    def getItem(containerId: Double, scope: String, itemPath: js.UndefOr[scala.Nothing], downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
     def getItem(containerId: Double, scope: String, itemPath: String): js.Promise[IRestResponse[ReadableStream]] = js.native
     def getItem(containerId: Double, scope: String, itemPath: String, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(containerId: Double, scope: String, itemPath: Unit, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(containerId: Double, scope: Unit, itemPath: String): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(containerId: Double, scope: Unit, itemPath: String, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(containerId: Double, scope: Unit, itemPath: Unit, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
   }
   
   @js.native
@@ -76,17 +70,12 @@ object fileContainerApiMod {
     ): js.Promise[FileContainerItem] = js.native
     
     def getItem(containerId: Double): js.Promise[IRestResponse[ReadableStream]] = js.native
-    def getItem(
-      containerId: Double,
-      scope: js.UndefOr[scala.Nothing],
-      itemPath: js.UndefOr[scala.Nothing],
-      downloadFileName: String
-    ): js.Promise[IRestResponse[ReadableStream]] = js.native
-    def getItem(containerId: Double, scope: js.UndefOr[scala.Nothing], itemPath: String): js.Promise[IRestResponse[ReadableStream]] = js.native
-    def getItem(containerId: Double, scope: js.UndefOr[scala.Nothing], itemPath: String, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
     def getItem(containerId: Double, scope: String): js.Promise[IRestResponse[ReadableStream]] = js.native
-    def getItem(containerId: Double, scope: String, itemPath: js.UndefOr[scala.Nothing], downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
     def getItem(containerId: Double, scope: String, itemPath: String): js.Promise[IRestResponse[ReadableStream]] = js.native
     def getItem(containerId: Double, scope: String, itemPath: String, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(containerId: Double, scope: String, itemPath: Unit, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(containerId: Double, scope: Unit, itemPath: String): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(containerId: Double, scope: Unit, itemPath: String, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(containerId: Double, scope: Unit, itemPath: Unit, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
   }
 }

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppendValuesResponse extends StObject {
   
   /** The spreadsheet the updates were applied to. */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
   
   /** The range (in A1 notation) of the table that values are being appended to (before the values were appended). Empty if no table was found. */
-  var tableRange: js.UndefOr[String] = js.native
+  var tableRange: js.UndefOr[String] = js.undefined
   
   /** Information about the updates that were applied. */
-  var updates: js.UndefOr[UpdateValuesResponse] = js.native
+  var updates: js.UndefOr[UpdateValuesResponse] = js.undefined
 }
 object AppendValuesResponse {
   

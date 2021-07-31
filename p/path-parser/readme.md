@@ -11,8 +11,8 @@ A small utility to parse, match and generate paths
 | Full name          | path-parser |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 35 |
-| # downloads        | 1530007 |
+| # dependents       | 36 |
+| # downloads        | 2546362 |
 | # stars            | 3 |
 
 ## Links

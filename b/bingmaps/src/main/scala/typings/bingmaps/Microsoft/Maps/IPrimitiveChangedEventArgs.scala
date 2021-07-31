@@ -2,17 +2,15 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPrimitiveChangedEventArgs extends StObject {
   
   /** The name of the change that occured; 'locations' or 'options'. */
-  var name: String = js.native
+  var name: String
   
   /** The IPrimitive shape the event occured on. */
-  var sender: IPrimitive = js.native
+  var sender: IPrimitive
 }
 object IPrimitiveChangedEventArgs {
   

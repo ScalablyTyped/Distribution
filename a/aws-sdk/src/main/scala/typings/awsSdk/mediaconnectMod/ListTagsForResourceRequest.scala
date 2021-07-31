@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that identifies the AWS Elemental MediaConnect resource for which to list the tags.
     */
-  var ResourceArn: string = js.native
+  var ResourceArn: string
 }
 object ListTagsForResourceRequest {
   

@@ -3,35 +3,33 @@ package typings.jqueryui.JQueryUI
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortableEvents extends StObject {
   
-  var activate: js.UndefOr[SortableEvent] = js.native
+  var activate: js.UndefOr[SortableEvent] = js.undefined
   
-  var beforeStop: js.UndefOr[SortableEvent] = js.native
+  var beforeStop: js.UndefOr[SortableEvent] = js.undefined
   
-  var change: js.UndefOr[SortableEvent] = js.native
+  var change: js.UndefOr[SortableEvent] = js.undefined
   
-  var deactivate: js.UndefOr[SortableEvent] = js.native
+  var deactivate: js.UndefOr[SortableEvent] = js.undefined
   
-  var out: js.UndefOr[SortableEvent] = js.native
+  var out: js.UndefOr[SortableEvent] = js.undefined
   
-  var over: js.UndefOr[SortableEvent] = js.native
+  var over: js.UndefOr[SortableEvent] = js.undefined
   
-  var receive: js.UndefOr[SortableEvent] = js.native
+  var receive: js.UndefOr[SortableEvent] = js.undefined
   
-  var remove: js.UndefOr[SortableEvent] = js.native
+  var remove: js.UndefOr[SortableEvent] = js.undefined
   
-  var sort: js.UndefOr[SortableEvent] = js.native
+  var sort: js.UndefOr[SortableEvent] = js.undefined
   
-  var start: js.UndefOr[SortableEvent] = js.native
+  var start: js.UndefOr[SortableEvent] = js.undefined
   
-  var stop: js.UndefOr[SortableEvent] = js.native
+  var stop: js.UndefOr[SortableEvent] = js.undefined
   
-  var update: js.UndefOr[SortableEvent] = js.native
+  var update: js.UndefOr[SortableEvent] = js.undefined
 }
 object SortableEvents {
   

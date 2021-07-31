@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuccessfulQueuedPurchaseDeletion extends StObject {
   
   /**
     * The ID of the Reserved Instance.
     */
-  var ReservedInstancesId: js.UndefOr[String] = js.native
+  var ReservedInstancesId: js.UndefOr[String] = js.undefined
 }
 object SuccessfulQueuedPurchaseDeletion {
   

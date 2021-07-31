@@ -3,50 +3,49 @@ package typings.firebaseAdmin.messagingMod.messaging
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aps
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
   /**
     * Alert to be included in the message. This may be a string or an object of
     * type `admin.messaging.ApsAlert`.
     */
-  var alert: js.UndefOr[String | ApsAlert] = js.native
+  var alert: js.UndefOr[String | ApsAlert] = js.undefined
   
   /**
     * Badge to be displayed with the message. Set to 0 to remove the badge. When
     * not specified, the badge will remain unchanged.
     */
-  var badge: js.UndefOr[Double] = js.native
+  var badge: js.UndefOr[Double] = js.undefined
   
   /**
     * Type of the notification.
     */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether to configure a background update notification.
     */
-  var contentAvailable: js.UndefOr[Boolean] = js.native
+  var contentAvailable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether to set the `mutable-content` property on the message
     * so the clients can modify the notification via app extensions.
     */
-  var mutableContent: js.UndefOr[Boolean] = js.native
+  var mutableContent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sound to be played with the message.
     */
-  var sound: js.UndefOr[String | CriticalSound] = js.native
+  var sound: js.UndefOr[String | CriticalSound] = js.undefined
   
   /**
     * An app-specific identifier for grouping notifications.
     */
-  var threadId: js.UndefOr[String] = js.native
+  var threadId: js.UndefOr[String] = js.undefined
 }
 object Aps {
   

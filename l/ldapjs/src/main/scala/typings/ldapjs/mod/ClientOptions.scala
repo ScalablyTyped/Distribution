@@ -3,39 +3,37 @@ package typings.ldapjs.mod
 import typings.ldapjs.anon.FailAfter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientOptions extends StObject {
   
-  var bindCredentials: js.UndefOr[String] = js.native
+  var bindCredentials: js.UndefOr[String] = js.undefined
   
-  var bindDN: js.UndefOr[String] = js.native
+  var bindDN: js.UndefOr[String] = js.undefined
   
-  var connectTimeout: js.UndefOr[Double] = js.native
+  var connectTimeout: js.UndefOr[Double] = js.undefined
   
-  var idleTimeout: js.UndefOr[Double] = js.native
+  var idleTimeout: js.UndefOr[Double] = js.undefined
   
-  var log: js.UndefOr[js.Any] = js.native
+  var log: js.UndefOr[js.Any] = js.undefined
   
-  var queueDisable: js.UndefOr[Boolean] = js.native
+  var queueDisable: js.UndefOr[Boolean] = js.undefined
   
-  var queueSize: js.UndefOr[Double] = js.native
+  var queueSize: js.UndefOr[Double] = js.undefined
   
-  var queueTimeout: js.UndefOr[Double] = js.native
+  var queueTimeout: js.UndefOr[Double] = js.undefined
   
-  var reconnect: js.UndefOr[Boolean | FailAfter] = js.native
+  var reconnect: js.UndefOr[Boolean | FailAfter] = js.undefined
   
-  var socketPath: js.UndefOr[String] = js.native
+  var socketPath: js.UndefOr[String] = js.undefined
   
-  var strictDN: js.UndefOr[Boolean] = js.native
+  var strictDN: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var tlsOptions: js.UndefOr[js.Object] = js.native
+  var tlsOptions: js.UndefOr[js.Object] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object ClientOptions {
   

@@ -11,7 +11,6 @@ import typings.std.Node
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Blaze {
@@ -20,39 +19,38 @@ object Blaze {
   
   type HelpersMap = StringDictionary[js.Function]
   
-  @js.native
   trait Template extends StObject {
     
     @JSName("$")
-    var $: js.Any = js.native
+    var $: js.Any
     
-    def constructView(): View = js.native
+    def constructView(): View
     
-    var created: js.Function = js.native
+    var created: js.Function
     
-    var destroyed: js.Function = js.native
+    var destroyed: js.Function
     
-    def events(eventsMap: EventsMap): Unit = js.native
+    def events(eventsMap: EventsMap): Unit
     
-    def find(selector: String): HTMLElement = js.native
+    def find(selector: String): HTMLElement
     
-    def findAll(selector: String): js.Array[HTMLElement] = js.native
+    def findAll(selector: String): js.Array[HTMLElement]
     
-    var head: Template = js.native
+    var head: Template
     
-    def helpers(helpersMap: HelpersMap): Unit = js.native
+    def helpers(helpersMap: HelpersMap): Unit
     
-    def onCreated(cb: js.Function): Unit = js.native
+    def onCreated(cb: js.Function): Unit
     
-    def onDestroyed(cb: js.Function): Unit = js.native
+    def onDestroyed(cb: js.Function): Unit
     
-    def onRendered(cb: js.Function): Unit = js.native
+    def onRendered(cb: js.Function): Unit
     
-    var renderFunction: js.Function = js.native
+    var renderFunction: js.Function
     
-    var rendered: js.Function = js.native
+    var rendered: js.Function
     
-    var viewName: String = js.native
+    var viewName: String
   }
   object Template {
     
@@ -128,29 +126,28 @@ object Blaze {
     }
   }
   
-  @js.native
   trait TemplateInstance extends StObject {
     
     @JSName("$")
-    def $(selector: String): js.Any = js.native
+    def $(selector: String): js.Any
     
-    def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation = js.native
+    def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation
     
-    var data: Record[String, _] = js.native
+    var data: Record[String, js.Any]
     
-    def find(selector: String): HTMLElement = js.native
+    def find(selector: String): HTMLElement
     
-    def findAll(selector: String): js.Array[HTMLElement] = js.native
+    def findAll(selector: String): js.Array[HTMLElement]
     
-    var firstNode: js.Object = js.native
+    var firstNode: js.Object
     
-    var lastNode: js.Object = js.native
+    var lastNode: js.Object
     
-    def subscribe(name: String, args: js.Any*): SubscriptionHandle = js.native
+    def subscribe(name: String, args: js.Any*): SubscriptionHandle
     
-    def subscriptionsReady(): Boolean = js.native
+    def subscriptionsReady(): Boolean
     
-    var view: js.Object = js.native
+    var view: js.Object
   }
   object TemplateInstance {
     
@@ -158,7 +155,7 @@ object Blaze {
     def apply(
       $: String => js.Any,
       autorun: js.Function1[/* computation */ Computation, Unit] => Computation,
-      data: Record[String, _],
+      data: Record[String, js.Any],
       find: String => HTMLElement,
       findAll: String => js.Array[HTMLElement],
       firstNode: js.Object,
@@ -181,7 +178,7 @@ object Blaze {
       def setAutorun(value: js.Function1[/* computation */ Computation, Unit] => Computation): Self = StObject.set(x, "autorun", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setData(value: Record[String, _]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFind(value: String => HTMLElement): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
@@ -207,13 +204,20 @@ object Blaze {
   }
   
   @js.native
-  trait TemplateInstanceStatic extends Instantiable1[/* view */ View, TemplateInstance]
+  trait TemplateInstanceStatic
+    extends StObject
+       with Instantiable1[/* view */ View, TemplateInstance]
   
   @js.native
   trait TemplateStatic
-    extends Instantiable0[Template]
+    extends StObject
+       with Instantiable0[Template]
        with Instantiable1[/* viewName */ String, Template]
-       with Instantiable2[js.UndefOr[/* viewName */ String], /* renderFunction */ js.Function, Template] {
+       with Instantiable2[
+          (/* viewName */ String) | (/* viewName */ Unit), 
+          /* renderFunction */ js.Function, 
+          Template
+        ] {
     
     def currentData(): js.Any = js.native
     
@@ -224,36 +228,35 @@ object Blaze {
     def registerHelper(name: String, func: js.Function): Unit = js.native
   }
   
-  @js.native
   trait View extends StObject {
     
-    def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation = js.native
+    def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation
     
-    def firstNode(): Node = js.native
+    def firstNode(): Node
     
-    var isCreated: Boolean = js.native
+    var isCreated: Boolean
     
-    var isDestroyed: Boolean = js.native
+    var isDestroyed: Boolean
     
-    var isRendered: Boolean = js.native
+    var isRendered: Boolean
     
-    def lastNode(): Node = js.native
+    def lastNode(): Node
     
-    var name: String = js.native
+    var name: String
     
-    def onViewCreated(func: js.Function): Unit = js.native
+    def onViewCreated(func: js.Function): Unit
     
-    def onViewDestroyed(func: js.Function): Unit = js.native
+    def onViewDestroyed(func: js.Function): Unit
     
-    def onViewReady(func: js.Function): Unit = js.native
+    def onViewReady(func: js.Function): Unit
     
-    var parentView: View = js.native
+    var parentView: View
     
-    var renderCount: Double = js.native
+    var renderCount: Double
     
-    var template: Template = js.native
+    var template: Template
     
-    def templateInstance(): TemplateInstance = js.native
+    def templateInstance(): TemplateInstance
   }
   object View {
     
@@ -327,7 +330,8 @@ object Blaze {
   
   @js.native
   trait ViewStatic
-    extends Instantiable0[View]
+    extends StObject
+       with Instantiable0[View]
        with Instantiable1[/* name */ String, View]
-       with Instantiable2[js.UndefOr[/* name */ String], /* renderFunction */ js.Function, View]
+       with Instantiable2[(/* name */ String) | (/* name */ Unit), /* renderFunction */ js.Function, View]
 }

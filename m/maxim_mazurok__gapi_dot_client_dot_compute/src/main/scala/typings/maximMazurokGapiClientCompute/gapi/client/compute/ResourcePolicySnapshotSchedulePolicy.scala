@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcePolicySnapshotSchedulePolicy extends StObject {
   
   /** Retention policy applied to snapshots created by this resource policy. */
-  var retentionPolicy: js.UndefOr[ResourcePolicySnapshotSchedulePolicyRetentionPolicy] = js.native
+  var retentionPolicy: js.UndefOr[ResourcePolicySnapshotSchedulePolicyRetentionPolicy] = js.undefined
   
   /** A Vm Maintenance Policy specifies what kind of infrastructure maintenance we are allowed to perform on this VM and when. Schedule that is applied to disks covered by this policy. */
-  var schedule: js.UndefOr[ResourcePolicySnapshotSchedulePolicySchedule] = js.native
+  var schedule: js.UndefOr[ResourcePolicySnapshotSchedulePolicySchedule] = js.undefined
   
   /** Properties with which snapshots are created such as labels, encryption keys. */
-  var snapshotProperties: js.UndefOr[ResourcePolicySnapshotSchedulePolicySnapshotProperties] = js.native
+  var snapshotProperties: js.UndefOr[ResourcePolicySnapshotSchedulePolicySnapshotProperties] = js.undefined
 }
 object ResourcePolicySnapshotSchedulePolicy {
   

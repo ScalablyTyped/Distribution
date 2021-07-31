@@ -2,31 +2,29 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateExperimentRequest extends StObject {
   
   /**
     * The description of the experiment.
     */
-  var Description: js.UndefOr[ExperimentDescription] = js.native
+  var Description: js.UndefOr[ExperimentDescription] = js.undefined
   
   /**
     * The name of the experiment as displayed. The name doesn't need to be unique. If you don't specify DisplayName, the value in ExperimentName is displayed.
     */
-  var DisplayName: js.UndefOr[ExperimentEntityName] = js.native
+  var DisplayName: js.UndefOr[ExperimentEntityName] = js.undefined
   
   /**
     * The name of the experiment. The name must be unique in your AWS account and is not case-sensitive.
     */
-  var ExperimentName: ExperimentEntityName = js.native
+  var ExperimentName: ExperimentEntityName
   
   /**
     * A list of tags to associate with the experiment. You can use Search API to search on the tags.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateExperimentRequest {
   

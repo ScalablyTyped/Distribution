@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Networking.BackgroundTransfer
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a BackgroundTransferCompletionGroup that can be only accessed from the Run method on the IBackgroundTask . */
-@js.native
 trait BackgroundTransferCompletionGroupTriggerDetails extends StObject {
   
   /** Gets the list of DownloadOperation objects associated with the BackgroundTransferCompletionGroup . */
-  var downloads: IVectorView[DownloadOperation] = js.native
+  var downloads: IVectorView[DownloadOperation]
   
   /** Gets the list of UploadOperation objects associated with the BackgroundTransferCompletionGroup . */
-  var uploads: IVectorView[UploadOperation] = js.native
+  var uploads: IVectorView[UploadOperation]
 }
 object BackgroundTransferCompletionGroupTriggerDetails {
   

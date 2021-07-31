@@ -2,31 +2,29 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VPCConfigResponse extends StObject {
   
   /**
     * A boolean indicating if a public IP was assigned.
     */
-  var assignPublicIp: js.UndefOr[Boolean] = js.native
+  var assignPublicIp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of security group IDs associated with the simulation job.
     */
-  var securityGroups: js.UndefOr[SecurityGroups] = js.native
+  var securityGroups: js.UndefOr[SecurityGroups] = js.undefined
   
   /**
     * A list of subnet IDs associated with the simulation job.
     */
-  var subnets: js.UndefOr[Subnets] = js.native
+  var subnets: js.UndefOr[Subnets] = js.undefined
   
   /**
     * The VPC ID associated with your simulation job.
     */
-  var vpcId: js.UndefOr[GenericString] = js.native
+  var vpcId: js.UndefOr[GenericString] = js.undefined
 }
 object VPCConfigResponse {
   

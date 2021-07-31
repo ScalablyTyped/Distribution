@@ -2,21 +2,19 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateResolverRuleRequest extends StObject {
   
   /**
     * The new settings for the Resolver rule.
     */
-  var Config: ResolverRuleConfig = js.native
+  var Config: ResolverRuleConfig
   
   /**
     * The ID of the Resolver rule that you want to update.
     */
-  var ResolverRuleId: ResourceId = js.native
+  var ResolverRuleId: ResourceId
 }
 object UpdateResolverRuleRequest {
   

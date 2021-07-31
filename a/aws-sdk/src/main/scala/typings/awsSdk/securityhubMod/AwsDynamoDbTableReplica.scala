@@ -2,41 +2,39 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsDynamoDbTableReplica extends StObject {
   
   /**
     * List of global secondary indexes for the replica.
     */
-  var GlobalSecondaryIndexes: js.UndefOr[AwsDynamoDbTableReplicaGlobalSecondaryIndexList] = js.native
+  var GlobalSecondaryIndexes: js.UndefOr[AwsDynamoDbTableReplicaGlobalSecondaryIndexList] = js.undefined
   
   /**
     * The identifier of the AWS KMS customer master key (CMK) that will be used for AWS KMS encryption for the replica.
     */
-  var KmsMasterKeyId: js.UndefOr[NonEmptyString] = js.native
+  var KmsMasterKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Replica-specific configuration for the provisioned throughput.
     */
-  var ProvisionedThroughputOverride: js.UndefOr[AwsDynamoDbTableProvisionedThroughputOverride] = js.native
+  var ProvisionedThroughputOverride: js.UndefOr[AwsDynamoDbTableProvisionedThroughputOverride] = js.undefined
   
   /**
     * The name of the Region where the replica is located.
     */
-  var RegionName: js.UndefOr[NonEmptyString] = js.native
+  var RegionName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The current status of the replica.
     */
-  var ReplicaStatus: js.UndefOr[NonEmptyString] = js.native
+  var ReplicaStatus: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Detailed information about the replica status.
     */
-  var ReplicaStatusDescription: js.UndefOr[NonEmptyString] = js.native
+  var ReplicaStatusDescription: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsDynamoDbTableReplica {
   

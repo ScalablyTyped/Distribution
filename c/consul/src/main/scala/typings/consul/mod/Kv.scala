@@ -8,7 +8,6 @@ import typings.consul.mod.Kv.SetOptions
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -105,14 +104,15 @@ trait Kv extends StObject {
 }
 object Kv {
   
-  @js.native
-  trait DelOptions extends CommonOptions {
+  trait DelOptions
+    extends StObject
+       with CommonOptions {
     
-    var cas: js.UndefOr[String] = js.native
+    var cas: js.UndefOr[String] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
-    var recurse: js.UndefOr[Boolean] = js.native
+    var recurse: js.UndefOr[Boolean] = js.undefined
   }
   object DelOptions {
     
@@ -144,21 +144,22 @@ object Kv {
   
   type DeleteOptions = DelOptions
   
-  @js.native
-  trait GetOptions extends CommonOptions {
+  trait GetOptions
+    extends StObject
+       with CommonOptions {
     
-    var buffer: js.UndefOr[Boolean] = js.native
+    var buffer: js.UndefOr[Boolean] = js.undefined
     
-    var index: js.UndefOr[String] = js.native
+    var index: js.UndefOr[String] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
-    var recurse: js.UndefOr[Boolean] = js.native
+    var recurse: js.UndefOr[Boolean] = js.undefined
     
     @JSName("wait")
-    var wait_FGetOptions: js.UndefOr[String] = js.native
+    var wait_FGetOptions: js.UndefOr[String] = js.undefined
   }
   object GetOptions {
     
@@ -206,12 +207,13 @@ object Kv {
     }
   }
   
-  @js.native
-  trait KeysOptions extends CommonOptions {
+  trait KeysOptions
+    extends StObject
+       with CommonOptions {
     
-    var key: String = js.native
+    var key: String
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
   }
   object KeysOptions {
     
@@ -235,20 +237,21 @@ object Kv {
     }
   }
   
-  @js.native
-  trait SetOptions extends CommonOptions {
+  trait SetOptions
+    extends StObject
+       with CommonOptions {
     
-    var acquire: js.UndefOr[String] = js.native
+    var acquire: js.UndefOr[String] = js.undefined
     
-    var cas: js.UndefOr[String] = js.native
+    var cas: js.UndefOr[String] = js.undefined
     
-    var flags: js.UndefOr[Double] = js.native
+    var flags: js.UndefOr[Double] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
-    var release: js.UndefOr[String] = js.native
+    var release: js.UndefOr[String] = js.undefined
     
-    var value: String | Buffer = js.native
+    var value: String | Buffer
   }
   object SetOptions {
     

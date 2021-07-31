@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactGetItemsInput extends StObject {
   
   /**
     * A value of TOTAL causes consumed capacity information to be returned, and a value of NONE prevents that information from being returned. No other value is valid.
     */
-  var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.dynamodbMod.ReturnConsumedCapacity] = js.native
+  var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.dynamodbMod.ReturnConsumedCapacity] = js.undefined
   
   /**
     * An ordered array of up to 25 TransactGetItem objects, each of which contains a Get structure.
     */
-  var TransactItems: TransactGetItemList = js.native
+  var TransactItems: TransactGetItemList
 }
 object TransactGetItemsInput {
   

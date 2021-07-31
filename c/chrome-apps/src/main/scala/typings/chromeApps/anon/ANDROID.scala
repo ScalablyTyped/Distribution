@@ -8,29 +8,27 @@ import typings.chromeApps.chromeAppsStrings.openbsd_
 import typings.chromeApps.chromeAppsStrings.win_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ANDROID extends StObject {
   
-  var ANDROID: android_ = js.native
+  var ANDROID: android_
   
-  var CROS: cros_ = js.native
+  var CROS: cros_
   
-  var LINUX: linux_ = js.native
+  var LINUX: linux_
   
-  var MAC: mac_ = js.native
+  var MAC: mac_
   
-  var OPENBSD: openbsd_ = js.native
+  var OPENBSD: openbsd_
   
-  var WIN: win_ = js.native
+  var WIN: win_
 }
 object ANDROID {
   
   @scala.inline
-  def apply(ANDROID: android_, CROS: cros_, LINUX: linux_, MAC: mac_, OPENBSD: openbsd_, WIN: win_): ANDROID = {
-    val __obj = js.Dynamic.literal(ANDROID = ANDROID.asInstanceOf[js.Any], CROS = CROS.asInstanceOf[js.Any], LINUX = LINUX.asInstanceOf[js.Any], MAC = MAC.asInstanceOf[js.Any], OPENBSD = OPENBSD.asInstanceOf[js.Any], WIN = WIN.asInstanceOf[js.Any])
+  def apply(): ANDROID = {
+    val __obj = js.Dynamic.literal(ANDROID = "android", CROS = "cros", LINUX = "linux", MAC = "mac", OPENBSD = "openbsd", WIN = "win")
     __obj.asInstanceOf[ANDROID]
   }
   

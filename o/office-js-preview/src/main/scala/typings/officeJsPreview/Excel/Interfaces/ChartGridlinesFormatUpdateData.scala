@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartGridlinesFormat object, for use in `chartGridlinesFormat.set({ ... })`. */
-@js.native
 trait ChartGridlinesFormatUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ChartGridlinesFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var line: js.UndefOr[ChartLineFormatUpdateData] = js.native
+  var line: js.UndefOr[ChartLineFormatUpdateData] = js.undefined
 }
 object ChartGridlinesFormatUpdateData {
   

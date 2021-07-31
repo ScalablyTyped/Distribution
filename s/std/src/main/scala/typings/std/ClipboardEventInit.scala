@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClipboardEventInit extends EventInit {
+trait ClipboardEventInit
+  extends StObject
+     with EventInit {
   
-  var clipboardData: js.UndefOr[DataTransfer | Null] = js.native
+  var clipboardData: js.UndefOr[DataTransfer | Null] = js.undefined
 }
 object ClipboardEventInit {
   

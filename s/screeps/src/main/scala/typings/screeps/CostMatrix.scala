@@ -3,7 +3,6 @@ package typings.screeps
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait CostMatrix
-  extends /**
+  extends StObject
+     with /**
   * Creates a new CostMatrix containing 0's for all positions.
   */
 Instantiable0[CostMatrix] {
@@ -40,5 +40,5 @@ Instantiable0[CostMatrix] {
     * @param y Y position in the room.
     * @param cost Cost of this position. Must be a whole number. A cost of 0 will use the terrain cost for that tile. A cost greater than or equal to 255 will be treated as unwalkable.
     */
-  def set(x: Double, y: Double, cost: Double): js.UndefOr[scala.Nothing] = js.native
+  def set(x: Double, y: Double, cost: Double): Unit = js.native
 }

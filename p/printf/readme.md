@@ -10,9 +10,9 @@ Full implementation of the `printf` family in pure JS.
 | ------------------ | :-------------: |
 | Full name          | printf |
 | Keywords           | printf, formatting, sprintf, format, output, print |
-| # releases         | 2 |
-| # dependents       | 139 |
-| # downloads        | 8710388 |
+| # releases         | 4 |
+| # dependents       | 143 |
+| # downloads        | 9008659 |
 | # stars            | 7 |
 
 ## Links

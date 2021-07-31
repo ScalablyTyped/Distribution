@@ -9,49 +9,49 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@hapi/shot", "inject")
+  @JSImport("@hapi/shot", JSImport.Namespace)
   @js.native
-  def inject(dispatchFunc: Listener, options: RequestOptions): js.Promise[ResponseObject] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@hapi/shot", "isInjection")
-  @js.native
-  def isInjection(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def inject(dispatchFunc: Listener, options: RequestOptions): js.Promise[ResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseObject]]
+  
+  @scala.inline
+  def isInjection(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInjection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   type Headers = StringDictionary[String | js.Array[String]]
   
   type Listener = js.Function2[/* req */ SimulatedRequestObject, /* res */ SimulatedResponseObject, Unit]
   
-  @js.native
   trait RequestOptions extends StObject {
     
     /** a string specifying the HTTP HOST header value to be used if no header is provided, and the url does not include an authority component. Defaults to 'localhost'. */
-    var authority: js.UndefOr[String] = js.native
+    var authority: js.UndefOr[String] = js.undefined
     
     /** an optional object containing request headers. */
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
     /** a string specifying the HTTP request method, defaulting to 'GET'. */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     /** an optional request payload. Can be a string, Buffer, Stream or object. */
-    var payload: js.UndefOr[String | Buffer | Stream | js.Object] = js.native
+    var payload: js.UndefOr[String | Buffer | Stream | js.Object] = js.undefined
     
     /** an optional string specifying the client remote address. Defaults to '127.0.0.1'. */
-    var remoteAddress: js.UndefOr[String] = js.native
+    var remoteAddress: js.UndefOr[String] = js.undefined
     
     /** an object containing flags to simulate various conditions: */
-    var simulate: js.UndefOr[Close] = js.native
+    var simulate: js.UndefOr[Close] = js.undefined
     
     /** a string specifying the request URL. */
-    var url: String = js.native
+    var url: String
     
     /** Optional flag to validate this options object. Defaults to true. */
-    var validate: js.UndefOr[Boolean] = js.native
+    var validate: js.UndefOr[Boolean] = js.undefined
   }
   object RequestOptions {
     
@@ -111,29 +111,28 @@ object mod {
     }
   }
   
-  @js.native
   trait ResponseObject extends StObject {
     
     /** an object containing the response headers. */
-    var headers: Headers = js.native
+    var headers: Headers
     
     /** the payload as a UTF-8 encoded string. */
-    var payload: String = js.native
+    var payload: String
     
     /** an object containing the raw request and response objects where: */
-    var raw: Req = js.native
+    var raw: Req
     
     /** the raw payload as a Buffer. */
-    var rawPayload: Buffer = js.native
+    var rawPayload: Buffer
     
     /** the HTTP status code. */
-    var statusCode: Double = js.native
+    var statusCode: Double
     
     /** the HTTP status message. */
-    var statusMessage: String = js.native
+    var statusMessage: String
     
     /** an object containing the response trailers. */
-    var trailers: StringDictionary[js.Any] = js.native
+    var trailers: StringDictionary[js.Any]
   }
   object ResponseObject {
     

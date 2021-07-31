@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultRouteTableMod {
@@ -57,6 +56,10 @@ object defaultRouteTableMod {
   /* static members */
   object DefaultRouteTable {
     
+    @JSImport("@pulumi/aws/ec2/defaultRouteTable", "DefaultRouteTable")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DefaultRouteTable resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -66,50 +69,44 @@ object defaultRouteTableMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/defaultRouteTable", "DefaultRouteTable.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DefaultRouteTable = js.native
-    @JSImport("@pulumi/aws/ec2/defaultRouteTable", "DefaultRouteTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DefaultRouteTable = js.native
-    @JSImport("@pulumi/aws/ec2/defaultRouteTable", "DefaultRouteTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DefaultRouteTableState): DefaultRouteTable = js.native
-    @JSImport("@pulumi/aws/ec2/defaultRouteTable", "DefaultRouteTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DefaultRouteTableState, opts: CustomResourceOptions): DefaultRouteTable = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DefaultRouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DefaultRouteTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DefaultRouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultRouteTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DefaultRouteTableState): DefaultRouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DefaultRouteTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DefaultRouteTableState, opts: CustomResourceOptions): DefaultRouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultRouteTable]
     
     /**
       * Returns true if the given object is an instance of DefaultRouteTable.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/defaultRouteTable", "DefaultRouteTable.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultRouteTable.DefaultRouteTable */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultRouteTable.DefaultRouteTable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/defaultRouteTable.DefaultRouteTable */ Boolean]
   }
   
-  @js.native
   trait DefaultRouteTableArgs extends StObject {
     
     /**
       * The ID of the Default Routing Table.
       */
-    val defaultRouteTableId: Input[String] = js.native
+    val defaultRouteTableId: Input[String]
     
     /**
       * A list of virtual gateways for propagation.
       */
-    val propagatingVgws: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val propagatingVgws: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A list of route objects. Their keys are documented below.
       */
-    val routes: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.DefaultRouteTableRoute]]]] = js.native
+    val routes: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.DefaultRouteTableRoute]]]] = js.undefined
     
     /**
       * A mapping of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DefaultRouteTableArgs {
     
@@ -151,35 +148,34 @@ object defaultRouteTableMod {
     }
   }
   
-  @js.native
   trait DefaultRouteTableState extends StObject {
     
     /**
       * The ID of the Default Routing Table.
       */
-    val defaultRouteTableId: js.UndefOr[Input[String]] = js.native
+    val defaultRouteTableId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the AWS account that owns the route table
       */
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of virtual gateways for propagation.
       */
-    val propagatingVgws: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val propagatingVgws: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A list of route objects. Their keys are documented below.
       */
-    val routes: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.DefaultRouteTableRoute]]]] = js.native
+    val routes: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.DefaultRouteTableRoute]]]] = js.undefined
     
     /**
       * A mapping of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object DefaultRouteTableState {
     

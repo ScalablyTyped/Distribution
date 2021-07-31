@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.unified.FileUploader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadCollectionItem extends Element {
+trait UploadCollectionItem
+  extends StObject
+     with Element {
   
   /**
     * Adds some attribute to the aggregation <code>attributes</code>.

@@ -2,19 +2,17 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cookieMod {
   
-  @js.native
   trait CookieInfo extends StObject {
     
-    var domain: String = js.native
+    var domain: String
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
   }
   object CookieInfo {
     
@@ -38,10 +36,9 @@ object cookieMod {
     }
   }
   
-  @js.native
   trait CookieOption extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object CookieOption {
     

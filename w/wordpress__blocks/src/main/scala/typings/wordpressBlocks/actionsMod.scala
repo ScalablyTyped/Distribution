@@ -6,60 +6,49 @@ import typings.wordpressBlocks.mod.BlockConfiguration
 import typings.wordpressBlocks.mod.BlockStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionsMod {
   
-  @JSImport("@wordpress/blocks/store/actions", "addBlockStyles")
+  @JSImport("@wordpress/blocks/store/actions", JSImport.Namespace)
   @js.native
-  def addBlockStyles(blockName: String, styles: js.Array[BlockStyle]): Unit = js.native
-  @JSImport("@wordpress/blocks/store/actions", "addBlockStyles")
-  @js.native
-  def addBlockStyles(blockName: String, styles: BlockStyle): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/blocks/store/actions", "addBlockTypes")
-  @js.native
-  def addBlockTypes(blockTypes: js.Array[BlockConfiguration[_]]): Unit = js.native
-  @JSImport("@wordpress/blocks/store/actions", "addBlockTypes")
-  @js.native
-  def addBlockTypes(blockTypes: BlockConfiguration[_]): Unit = js.native
+  @scala.inline
+  def addBlockStyles(blockName: String, styles: js.Array[BlockStyle]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBlockStyles")(blockName.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addBlockStyles(blockName: String, styles: BlockStyle): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBlockStyles")(blockName.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/blocks/store/actions", "removeBlockStyles")
-  @js.native
-  def removeBlockStyles(blockName: String, styleNames: String): Unit = js.native
-  @JSImport("@wordpress/blocks/store/actions", "removeBlockStyles")
-  @js.native
-  def removeBlockStyles(blockName: String, styleNames: js.Array[String]): Unit = js.native
+  @scala.inline
+  def addBlockTypes(blockTypes: js.Array[BlockConfiguration[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBlockTypes")(blockTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def addBlockTypes(blockTypes: BlockConfiguration[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBlockTypes")(blockTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/blocks/store/actions", "removeBlockTypes")
-  @js.native
-  def removeBlockTypes(names: String): Unit = js.native
-  @JSImport("@wordpress/blocks/store/actions", "removeBlockTypes")
-  @js.native
-  def removeBlockTypes(names: js.Array[String]): Unit = js.native
+  @scala.inline
+  def removeBlockStyles(blockName: String, styleNames: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockStyles")(blockName.asInstanceOf[js.Any], styleNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeBlockStyles(blockName: String, styleNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockStyles")(blockName.asInstanceOf[js.Any], styleNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/blocks/store/actions", "setCategories")
-  @js.native
-  def setCategories(categories: js.Array[Category]): Unit = js.native
+  @scala.inline
+  def removeBlockTypes(names: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockTypes")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def removeBlockTypes(names: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockTypes")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/blocks/store/actions", "setDefaultBlockName")
-  @js.native
-  def setDefaultBlockName(name: String): Unit = js.native
+  @scala.inline
+  def setCategories(categories: js.Array[Category]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCategories")(categories.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/blocks/store/actions", "setFreeformFallbackBlockName")
-  @js.native
-  def setFreeformFallbackBlockName(name: String): Unit = js.native
+  @scala.inline
+  def setDefaultBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/blocks/store/actions", "setGroupingBlockName")
-  @js.native
-  def setGroupingBlockName(name: String): Unit = js.native
+  @scala.inline
+  def setFreeformFallbackBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFreeformFallbackBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/blocks/store/actions", "setUnregisteredFallbackBlockName")
-  @js.native
-  def setUnregisteredFallbackBlockName(name: String): Unit = js.native
+  @scala.inline
+  def setGroupingBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGroupingBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/blocks/store/actions", "updateCategory")
-  @js.native
-  def updateCategory(slug: String, category: PartialCategory): Unit = js.native
+  @scala.inline
+  def setUnregisteredFallbackBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUnregisteredFallbackBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def updateCategory(slug: String, category: PartialCategory): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCategory")(slug.asInstanceOf[js.Any], category.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

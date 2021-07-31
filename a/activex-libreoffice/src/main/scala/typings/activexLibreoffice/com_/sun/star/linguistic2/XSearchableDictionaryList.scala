@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * language or the dictionary may hold entries of all languages.
   * @see com.sun.star.linguistic2.XDictionaryList
   */
-@js.native
-trait XSearchableDictionaryList extends XDictionaryList {
+trait XSearchableDictionaryList
+  extends StObject
+     with XDictionaryList {
   
   /**
     * looks for an entry for a given word in the list of dictionaries.
@@ -26,7 +26,7 @@ trait XSearchableDictionaryList extends XDictionaryList {
     * @param bSpellEntry `TRUE` if entries for purposes of spell checking are required. `FALSE` if only entries for hyphenation purposes are required.
     * @returns the dictionary entry that was found, `NULL` otherwise.
     */
-  def queryDictionaryEntry(aWord: String, aLocale: Locale, bSearchPosDics: Boolean, bSpellEntry: Boolean): XDictionaryEntry = js.native
+  def queryDictionaryEntry(aWord: String, aLocale: Locale, bSearchPosDics: Boolean, bSpellEntry: Boolean): XDictionaryEntry
 }
 object XSearchableDictionaryList {
   

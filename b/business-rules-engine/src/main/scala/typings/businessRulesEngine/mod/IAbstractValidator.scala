@@ -2,35 +2,33 @@ package typings.businessRulesEngine.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAbstractValidator[T] extends StObject {
   
-  def CreateAbstractListRule(name: String): IAbstractValidationRule[_] = js.native
+  def CreateAbstractListRule(name: String): IAbstractValidationRule[js.Any]
   
-  def CreateAbstractRule(name: String): IAbstractValidationRule[_] = js.native
+  def CreateAbstractRule(name: String): IAbstractValidationRule[js.Any]
   
-  def CreateRule(name: String): IAbstractValidationRule[_] = js.native
+  def CreateRule(name: String): IAbstractValidationRule[js.Any]
   
-  var ForList: Boolean = js.native
+  var ForList: Boolean
   
-  def RuleFor(prop: String, validator: IPropertyValidator): js.Any = js.native
+  def RuleFor(prop: String, validator: IPropertyValidator): js.Any
   
-  def Validation(validatorFce: IValidatorFce): js.Any = js.native
+  def Validation(validatorFce: IValidatorFce): js.Any
   
-  def ValidationFor(prop: String, validatorFce: IValidatorFce): js.Any = js.native
+  def ValidationFor(prop: String, validatorFce: IValidatorFce): js.Any
   
-  def ValidatorFor[K](prop: String, validator: IAbstractValidator[K]): js.Any = js.native
+  def ValidatorFor[K](prop: String, validator: IAbstractValidator[K]): js.Any
 }
 object IAbstractValidator {
   
   @scala.inline
   def apply[T](
-    CreateAbstractListRule: String => IAbstractValidationRule[_],
-    CreateAbstractRule: String => IAbstractValidationRule[_],
-    CreateRule: String => IAbstractValidationRule[_],
+    CreateAbstractListRule: String => IAbstractValidationRule[js.Any],
+    CreateAbstractRule: String => IAbstractValidationRule[js.Any],
+    CreateRule: String => IAbstractValidationRule[js.Any],
     ForList: Boolean,
     RuleFor: (String, IPropertyValidator) => js.Any,
     Validation: IValidatorFce => js.Any,
@@ -42,16 +40,16 @@ object IAbstractValidator {
   }
   
   @scala.inline
-  implicit class IAbstractValidatorMutableBuilder[Self <: IAbstractValidator[_], T] (val x: Self with IAbstractValidator[T]) extends AnyVal {
+  implicit class IAbstractValidatorMutableBuilder[Self <: IAbstractValidator[?], T] (val x: Self & IAbstractValidator[T]) extends AnyVal {
     
     @scala.inline
-    def setCreateAbstractListRule(value: String => IAbstractValidationRule[_]): Self = StObject.set(x, "CreateAbstractListRule", js.Any.fromFunction1(value))
+    def setCreateAbstractListRule(value: String => IAbstractValidationRule[js.Any]): Self = StObject.set(x, "CreateAbstractListRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateAbstractRule(value: String => IAbstractValidationRule[_]): Self = StObject.set(x, "CreateAbstractRule", js.Any.fromFunction1(value))
+    def setCreateAbstractRule(value: String => IAbstractValidationRule[js.Any]): Self = StObject.set(x, "CreateAbstractRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateRule(value: String => IAbstractValidationRule[_]): Self = StObject.set(x, "CreateRule", js.Any.fromFunction1(value))
+    def setCreateRule(value: String => IAbstractValidationRule[js.Any]): Self = StObject.set(x, "CreateRule", js.Any.fromFunction1(value))
     
     @scala.inline
     def setForList(value: Boolean): Self = StObject.set(x, "ForList", value.asInstanceOf[js.Any])

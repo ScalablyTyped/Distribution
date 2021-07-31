@@ -2,26 +2,24 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAvailableManagementCidrRangesRequest extends StObject {
   
   /**
     * The IP address range to search. Specify an IP address range that is compatible with your network and in CIDR notation (that is, specify the range as an IPv4 CIDR block).
     */
-  var ManagementCidrRangeConstraint: typings.awsSdk.workspacesMod.ManagementCidrRangeConstraint = js.native
+  var ManagementCidrRangeConstraint: typings.awsSdk.workspacesMod.ManagementCidrRangeConstraint
   
   /**
     * The maximum number of items to return.
     */
-  var MaxResults: js.UndefOr[ManagementCidrRangeMaxResults] = js.native
+  var MaxResults: js.UndefOr[ManagementCidrRangeMaxResults] = js.undefined
   
   /**
     * If you received a NextToken from a previous call that was paginated, provide this token to receive the next set of results.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListAvailableManagementCidrRangesRequest {
   

@@ -2,15 +2,13 @@ package typings.podcast
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FeedUrl_ extends StObject {
     
-    var feedUrl: String = js.native
+    var feedUrl: String
   }
   object FeedUrl_ {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Feedurl extends StObject {
     
-    var feed_url: String = js.native
+    var feed_url: String
   }
   object Feedurl {
     
@@ -49,10 +46,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ImageUrl_ extends StObject {
     
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
   }
   object ImageUrl_ {
     
@@ -73,10 +69,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Imageurl extends StObject {
     
-    var image_url: js.UndefOr[String] = js.native
+    var image_url: js.UndefOr[String] = js.undefined
   }
   object Imageurl {
     
@@ -97,10 +92,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SiteUrl_ extends StObject {
     
-    var siteUrl: String = js.native
+    var siteUrl: String
   }
   object SiteUrl_ {
     
@@ -118,10 +112,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Siteurl extends StObject {
     
-    var site_url: String = js.native
+    var site_url: String
   }
   object Siteurl {
     

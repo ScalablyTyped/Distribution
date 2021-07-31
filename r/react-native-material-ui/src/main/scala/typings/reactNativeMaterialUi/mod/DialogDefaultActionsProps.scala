@@ -3,17 +3,15 @@ package typings.reactNativeMaterialUi.mod
 import typings.reactNativeMaterialUi.anon.DefaultActionsContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogDefaultActionsProps extends StObject {
   
-  var actions: js.Array[String] = js.native
+  var actions: js.Array[String]
   
-  def onActionPress(action: String): Unit = js.native
+  def onActionPress(action: String): Unit
   
-  var style: js.UndefOr[DefaultActionsContainer] = js.native
+  var style: js.UndefOr[DefaultActionsContainer] = js.undefined
 }
 object DialogDefaultActionsProps {
   

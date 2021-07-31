@@ -48,7 +48,6 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectMod {
@@ -90,14 +89,13 @@ object selectMod {
     def value: typings.reactSelect.reactSelectStrings.value = "value".asInstanceOf[typings.reactSelect.reactSelectStrings.value]
   }
   
-  @js.native
   trait FormatOptionLabelMeta[OptionType /* <: OptionTypeBase */] extends StObject {
     
-    var context: FormatOptionLabelContext = js.native
+    var context: FormatOptionLabelContext
     
-    var inputValue: String = js.native
+    var inputValue: String
     
-    var selectValue: ValueType[OptionType] = js.native
+    var selectValue: ValueType[OptionType]
   }
   object FormatOptionLabelMeta {
     
@@ -108,7 +106,7 @@ object selectMod {
     }
     
     @scala.inline
-    implicit class FormatOptionLabelMetaMutableBuilder[Self <: FormatOptionLabelMeta[_], OptionType /* <: OptionTypeBase */] (val x: Self with FormatOptionLabelMeta[OptionType]) extends AnyVal {
+    implicit class FormatOptionLabelMetaMutableBuilder[Self <: FormatOptionLabelMeta[?], OptionType /* <: OptionTypeBase */] (val x: Self & FormatOptionLabelMeta[OptionType]) extends AnyVal {
       
       @scala.inline
       def setContext(value: FormatOptionLabelContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
@@ -130,12 +128,11 @@ object selectMod {
     }
   }
   
-  @js.native
   trait MenuOptions[OptionType /* <: OptionTypeBase */] extends StObject {
     
-    var focusable: js.Array[OptionType] = js.native
+    var focusable: js.Array[OptionType]
     
-    var render: js.Array[OptionType] = js.native
+    var render: js.Array[OptionType]
   }
   object MenuOptions {
     
@@ -146,7 +143,7 @@ object selectMod {
     }
     
     @scala.inline
-    implicit class MenuOptionsMutableBuilder[Self <: MenuOptions[_], OptionType /* <: OptionTypeBase */] (val x: Self with MenuOptions[OptionType]) extends AnyVal {
+    implicit class MenuOptionsMutableBuilder[Self <: MenuOptions[?], OptionType /* <: OptionTypeBase */] (val x: Self & MenuOptions[OptionType]) extends AnyVal {
       
       @scala.inline
       def setFocusable(value: js.Array[OptionType]): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
@@ -164,32 +161,31 @@ object selectMod {
   
   type MouseOrTouchEvent = (MouseEvent[HTMLElement, NativeMouseEvent]) | TouchEvent[HTMLElement]
   
-  @js.native
   trait NamedProps[OptionType /* <: OptionTypeBase */] extends StObject {
     
     /* Aria label (for assistive tech) */
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
     /* HTML ID of an element that should be used as the label (for assistive tech) */
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
     /* Focus the control when it is mounted */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     /* Remove the currently focused option when the user presses backspace */
-    var backspaceRemovesValue: js.UndefOr[Boolean] = js.native
+    var backspaceRemovesValue: js.UndefOr[Boolean] = js.undefined
     
     /* Remove focus from the input when the user selects an option (handy for dismissing the keyboard on touch devices) */
-    var blurInputOnSelect: js.UndefOr[Boolean] = js.native
+    var blurInputOnSelect: js.UndefOr[Boolean] = js.undefined
     
     /* When the user reaches the top/bottom of the menu, prevent scroll on the scroll-parent  */
-    var captureMenuScroll: js.UndefOr[Boolean] = js.native
+    var captureMenuScroll: js.UndefOr[Boolean] = js.undefined
     
     /* className attribute applied to the outer component */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /* classNamePrefix attribute used as a base for inner component classNames */
-    var classNamePrefix: js.UndefOr[String | Null] = js.native
+    var classNamePrefix: js.UndefOr[String | Null] = js.undefined
     
     /*
       If `true`, close the select menu when the user scrolls the document/body.
@@ -199,10 +195,10 @@ object selectMod {
       This is useful when you have a scrollable modal and want to portal the menu out,
       but want to avoid graphical issues.
       */
-    var closeMenuOnScroll: js.UndefOr[Boolean | EventListener] = js.native
+    var closeMenuOnScroll: js.UndefOr[Boolean | EventListener] = js.undefined
     
     /* Close the select menu when the user selects an option */
-    var closeMenuOnSelect: js.UndefOr[Boolean] = js.native
+    var closeMenuOnSelect: js.UndefOr[Boolean] = js.undefined
     
     /*
       This complex object includes all the compositional components that are used
@@ -212,28 +208,28 @@ object selectMod {
       instead. For a list of the components that can be passed in, and the shape
       that will be passed to them, see [the components docs](/api#components)
       */
-    var components: js.UndefOr[SelectComponentsConfig[OptionType]] = js.native
+    var components: js.UndefOr[SelectComponentsConfig[OptionType]] = js.undefined
     
     /* Whether the value of the select, e.g. SingleValue, should be displayed in the control. */
-    var controlShouldRenderValue: js.UndefOr[Boolean] = js.native
+    var controlShouldRenderValue: js.UndefOr[Boolean] = js.undefined
     
-    var defaultInputValue: js.UndefOr[String] = js.native
+    var defaultInputValue: js.UndefOr[String] = js.undefined
     
-    var defaultMenuIsOpen: js.UndefOr[Boolean] = js.native
+    var defaultMenuIsOpen: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[ValueType[OptionType]] = js.native
+    var defaultValue: js.UndefOr[ValueType[OptionType]] = js.undefined
     
     /* Delimiter used to join multiple values into a single HTML Input value */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /* Clear all values when the user presses escape AND the menu is closed */
-    var escapeClearsValue: js.UndefOr[Boolean] = js.native
+    var escapeClearsValue: js.UndefOr[Boolean] = js.undefined
     
     /* Custom method to filter whether an option should be displayed in the menu */
-    var filterOption: js.UndefOr[(js.Function2[/* option */ Option, /* rawInput */ String, Boolean]) | Null] = js.native
+    var filterOption: js.UndefOr[(js.Function2[/* option */ Option, /* rawInput */ String, Boolean]) | Null] = js.undefined
     
     /* Formats group labels in the menu as React components */
-    var formatGroupLabel: js.UndefOr[typings.reactSelect.builtinsMod.formatGroupLabel[OptionType]] = js.native
+    var formatGroupLabel: js.UndefOr[typings.reactSelect.builtinsMod.formatGroupLabel[OptionType]] = js.undefined
     
     /* Formats option labels in the menu and control as React components */
     var formatOptionLabel: js.UndefOr[
@@ -242,152 +238,152 @@ object selectMod {
           /* labelMeta */ FormatOptionLabelMeta[OptionType], 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
     /* Resolves option data to a string to be displayed as the label by components */
-    var getOptionLabel: js.UndefOr[typings.reactSelect.builtinsMod.getOptionLabel[OptionType]] = js.native
+    var getOptionLabel: js.UndefOr[typings.reactSelect.builtinsMod.getOptionLabel[OptionType]] = js.undefined
     
     /* Resolves option data to a string to compare options and specify value attributes */
-    var getOptionValue: js.UndefOr[typings.reactSelect.builtinsMod.getOptionValue[OptionType]] = js.native
+    var getOptionValue: js.UndefOr[typings.reactSelect.builtinsMod.getOptionValue[OptionType]] = js.undefined
     
     /* Hide the selected option from the menu */
-    var hideSelectedOptions: js.UndefOr[Boolean] = js.native
+    var hideSelectedOptions: js.UndefOr[Boolean] = js.undefined
     
     /* The id to set on the SelectContainer component. */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /* The id of the search input */
-    var inputId: js.UndefOr[String] = js.native
+    var inputId: js.UndefOr[String] = js.undefined
     
     /* The value of the search input */
-    var inputValue: js.UndefOr[String] = js.native
+    var inputValue: js.UndefOr[String] = js.undefined
     
     /* Define an id prefix for the select components e.g. {your-id}-value */
-    var instanceId: js.UndefOr[Double | String] = js.native
+    var instanceId: js.UndefOr[Double | String] = js.undefined
     
     /* Is the select value clearable */
-    var isClearable: js.UndefOr[Boolean] = js.native
+    var isClearable: js.UndefOr[Boolean] = js.undefined
     
     /* Is the select disabled */
-    var isDisabled: js.UndefOr[Boolean] = js.native
+    var isDisabled: js.UndefOr[Boolean] = js.undefined
     
     /* Is the select in a state of loading (async) */
-    var isLoading: js.UndefOr[Boolean] = js.native
+    var isLoading: js.UndefOr[Boolean] = js.undefined
     
     /* Support multiple selected options */
-    var isMulti: js.UndefOr[Boolean] = js.native
+    var isMulti: js.UndefOr[Boolean] = js.undefined
     
     /* Override the built-in logic to detect whether an option is disabled */
     var isOptionDisabled: js.UndefOr[
         js.Function2[/* option */ OptionType, /* options */ OptionsType[OptionType], Boolean]
-      ] = js.native
+      ] = js.undefined
     
     /* Override the built-in logic to detect whether an option is selected */
     var isOptionSelected: js.UndefOr[
         js.Function2[/* option */ OptionType, /* options */ OptionsType[OptionType], Boolean]
-      ] = js.native
+      ] = js.undefined
     
     /* Is the select direction right-to-left */
-    var isRtl: js.UndefOr[Boolean] = js.native
+    var isRtl: js.UndefOr[Boolean] = js.undefined
     
     /* Whether to enable search functionality */
-    var isSearchable: js.UndefOr[Boolean] = js.native
+    var isSearchable: js.UndefOr[Boolean] = js.undefined
     
     /* Async: Text to display when loading options */
-    var loadingMessage: js.UndefOr[js.Function1[/* obj */ InputValue, String | Null]] = js.native
+    var loadingMessage: js.UndefOr[js.Function1[/* obj */ InputValue, String | Null]] = js.undefined
     
     /* Maximum height of the menu before scrolling */
-    var maxMenuHeight: js.UndefOr[Double] = js.native
+    var maxMenuHeight: js.UndefOr[Double] = js.undefined
     
     /* Whether the menu is open */
-    var menuIsOpen: js.UndefOr[Boolean] = js.native
+    var menuIsOpen: js.UndefOr[Boolean] = js.undefined
     
     /* Default placement of the menu in relation to the control. 'auto' will flip
       when there isn't enough space below the control. */
-    var menuPlacement: js.UndefOr[MenuPlacement] = js.native
+    var menuPlacement: js.UndefOr[MenuPlacement] = js.undefined
     
     /* Whether the menu should use a portal, and where it should attach */
-    var menuPortalTarget: js.UndefOr[HTMLElement | Null] = js.native
+    var menuPortalTarget: js.UndefOr[HTMLElement | Null] = js.undefined
     
     /* The CSS position value of the menu, when "fixed" extra layout management is required */
-    var menuPosition: js.UndefOr[MenuPosition] = js.native
+    var menuPosition: js.UndefOr[MenuPosition] = js.undefined
     
     /* Whether to block scroll events when the menu is open */
-    var menuShouldBlockScroll: js.UndefOr[Boolean] = js.native
+    var menuShouldBlockScroll: js.UndefOr[Boolean] = js.undefined
     
     /* Whether the menu should be scrolled into view when it opens */
-    var menuShouldScrollIntoView: js.UndefOr[Boolean] = js.native
+    var menuShouldScrollIntoView: js.UndefOr[Boolean] = js.undefined
     
     /* Minimum height of the menu before flipping */
-    var minMenuHeight: js.UndefOr[Double] = js.native
+    var minMenuHeight: js.UndefOr[Double] = js.undefined
     
     /* Name of the HTML Input (optional - without this, no input will be rendered) */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /* Text to display when there are no options */
-    var noOptionsMessage: js.UndefOr[js.Function1[/* obj */ InputValue, String | Null]] = js.native
+    var noOptionsMessage: js.UndefOr[js.Function1[/* obj */ InputValue, String | Null]] = js.undefined
     
     /* Handle blur events on the control */
-    var onBlur: js.UndefOr[FocusEventHandler] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler] = js.undefined
     
     /* Handle change events on the select */
     var onChange: js.UndefOr[
         js.Function2[/* value */ ValueType[OptionType], /* action */ ActionMeta[OptionType], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /* Handle focus events on the control */
-    var onFocus: js.UndefOr[FocusEventHandler] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler] = js.undefined
     
     /* Handle change events on the input */
-    var onInputChange: js.UndefOr[js.Function2[/* newValue */ String, /* actionMeta */ InputActionMeta, Unit]] = js.native
+    var onInputChange: js.UndefOr[js.Function2[/* newValue */ String, /* actionMeta */ InputActionMeta, Unit]] = js.undefined
     
     /* Handle key down events on the select */
-    var onKeyDown: js.UndefOr[KeyboardEventHandler] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler] = js.undefined
     
     /* Handle the menu closing */
-    var onMenuClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onMenuClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /* Handle the menu opening */
-    var onMenuOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onMenuOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /* Fired when the user scrolls to the bottom of the menu */
-    var onMenuScrollToBottom: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.native
+    var onMenuScrollToBottom: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
     
     /* Fired when the user scrolls to the top of the menu */
-    var onMenuScrollToTop: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.native
+    var onMenuScrollToTop: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
     
     /* Allows control of whether the menu is opened when the Select is clicked */
-    var openMenuOnClick: js.UndefOr[Boolean] = js.native
+    var openMenuOnClick: js.UndefOr[Boolean] = js.undefined
     
     /* Allows control of whether the menu is opened when the Select is focused */
-    var openMenuOnFocus: js.UndefOr[Boolean] = js.native
+    var openMenuOnFocus: js.UndefOr[Boolean] = js.undefined
     
     /* Array of options that populate the select menu */
-    var options: js.UndefOr[GroupedOptionsType[OptionType] | OptionsType[OptionType]] = js.native
+    var options: js.UndefOr[GroupedOptionsType[OptionType] | OptionsType[OptionType]] = js.undefined
     
     /* Number of options to jump in menu when page{up|down} keys are used */
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
     /* Placeholder text for the select value */
-    var placeholder: js.UndefOr[ReactNode] = js.native
+    var placeholder: js.UndefOr[ReactNode] = js.undefined
     
     /* Status to relay to screen readers */
-    var screenReaderStatus: js.UndefOr[js.Function1[/* obj */ Count, String]] = js.native
+    var screenReaderStatus: js.UndefOr[js.Function1[/* obj */ Count, String]] = js.undefined
     
     /* Style modifier methods */
-    var styles: js.UndefOr[StylesConfig] = js.native
+    var styles: js.UndefOr[StylesConfig] = js.undefined
     
     /* Sets the tabIndex attribute on the input */
-    var tabIndex: js.UndefOr[String | Null] = js.native
+    var tabIndex: js.UndefOr[String | Null] = js.undefined
     
     /* Select the currently focused option when the user presses tab */
-    var tabSelectsValue: js.UndefOr[Boolean] = js.native
+    var tabSelectsValue: js.UndefOr[Boolean] = js.undefined
     
     /* Theme modifier method */
-    var theme: js.UndefOr[ThemeConfig] = js.native
+    var theme: js.UndefOr[ThemeConfig] = js.undefined
     
     /* The value of the select; reflected by the selected option */
-    var value: js.UndefOr[ValueType[OptionType]] = js.native
+    var value: js.UndefOr[ValueType[OptionType]] = js.undefined
   }
   object NamedProps {
     
@@ -398,7 +394,7 @@ object selectMod {
     }
     
     @scala.inline
-    implicit class NamedPropsMutableBuilder[Self <: NamedProps[_], OptionType /* <: OptionTypeBase */] (val x: Self with NamedProps[OptionType]) extends AnyVal {
+    implicit class NamedPropsMutableBuilder[Self <: NamedProps[?], OptionType /* <: OptionTypeBase */] (val x: Self & NamedProps[OptionType]) extends AnyVal {
       
       @scala.inline
       def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
@@ -832,8 +828,9 @@ object selectMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ key in string ]: any} */ @js.native
-  trait Props[OptionType /* <: OptionTypeBase */] extends NamedProps[OptionType]
+  - Dropped {[ key in string ]: any} */ trait Props[OptionType /* <: OptionTypeBase */]
+    extends StObject
+       with NamedProps[OptionType]
   object Props {
     
     @scala.inline
@@ -1085,28 +1082,27 @@ object selectMod {
   
   type SelectComponentsProps = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in string ]: any}
-    */ typings.reactSelect.reactSelectStrings.SelectComponentsProps with TopLevel[js.Any]
+    */ typings.reactSelect.reactSelectStrings.SelectComponentsProps & TopLevel[js.Any]
   
-  @js.native
   trait State[OptionType /* <: OptionTypeBase */] extends StObject {
     
-    var ariaLiveContext: String = js.native
+    var ariaLiveContext: String
     
-    var ariaLiveSelection: String = js.native
+    var ariaLiveSelection: String
     
-    var focusedOption: OptionType | Null = js.native
+    var focusedOption: OptionType | Null
     
-    var focusedValue: OptionType | Null = js.native
+    var focusedValue: OptionType | Null
     
-    var inputIsHidden: Boolean = js.native
+    var inputIsHidden: Boolean
     
-    var isComposing: Boolean = js.native
+    var isComposing: Boolean
     
-    var isFocused: Boolean = js.native
+    var isFocused: Boolean
     
-    var menuOptions: MenuOptions[OptionType] = js.native
+    var menuOptions: MenuOptions[OptionType]
     
-    var selectValue: OptionsType[OptionType] = js.native
+    var selectValue: OptionsType[OptionType]
   }
   object State {
     
@@ -1120,12 +1116,12 @@ object selectMod {
       menuOptions: MenuOptions[OptionType],
       selectValue: OptionsType[OptionType]
     ): State[OptionType] = {
-      val __obj = js.Dynamic.literal(ariaLiveContext = ariaLiveContext.asInstanceOf[js.Any], ariaLiveSelection = ariaLiveSelection.asInstanceOf[js.Any], inputIsHidden = inputIsHidden.asInstanceOf[js.Any], isComposing = isComposing.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], menuOptions = menuOptions.asInstanceOf[js.Any], selectValue = selectValue.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(ariaLiveContext = ariaLiveContext.asInstanceOf[js.Any], ariaLiveSelection = ariaLiveSelection.asInstanceOf[js.Any], inputIsHidden = inputIsHidden.asInstanceOf[js.Any], isComposing = isComposing.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], menuOptions = menuOptions.asInstanceOf[js.Any], selectValue = selectValue.asInstanceOf[js.Any], focusedOption = null, focusedValue = null)
       __obj.asInstanceOf[State[OptionType]]
     }
     
     @scala.inline
-    implicit class StateMutableBuilder[Self <: State[_], OptionType /* <: OptionTypeBase */] (val x: Self with State[OptionType]) extends AnyVal {
+    implicit class StateMutableBuilder[Self <: State[?], OptionType /* <: OptionTypeBase */] (val x: Self & State[OptionType]) extends AnyVal {
       
       @scala.inline
       def setAriaLiveContext(value: String): Self = StObject.set(x, "ariaLiveContext", value.asInstanceOf[js.Any])

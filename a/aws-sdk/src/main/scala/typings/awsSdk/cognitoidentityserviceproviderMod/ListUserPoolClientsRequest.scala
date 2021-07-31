@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUserPoolClientsRequest extends StObject {
   
   /**
     * The maximum number of results you want the request to return when listing the user pool clients.
     */
-  var MaxResults: js.UndefOr[QueryLimit] = js.native
+  var MaxResults: js.UndefOr[QueryLimit] = js.undefined
   
   /**
     * An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
     */
-  var NextToken: js.UndefOr[PaginationKey] = js.native
+  var NextToken: js.UndefOr[PaginationKey] = js.undefined
   
   /**
     * The user pool ID for the user pool where you want to list user pool clients.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object ListUserPoolClientsRequest {
   

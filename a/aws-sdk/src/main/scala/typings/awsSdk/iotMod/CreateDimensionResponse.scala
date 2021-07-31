@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDimensionResponse extends StObject {
   
   /**
     * The ARN (Amazon resource name) of the created dimension.
     */
-  var arn: js.UndefOr[DimensionArn] = js.native
+  var arn: js.UndefOr[DimensionArn] = js.undefined
   
   /**
     * A unique identifier for the dimension.
     */
-  var name: js.UndefOr[DimensionName] = js.native
+  var name: js.UndefOr[DimensionName] = js.undefined
 }
 object CreateDimensionResponse {
   

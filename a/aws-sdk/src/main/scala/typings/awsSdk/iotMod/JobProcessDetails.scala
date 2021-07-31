@@ -2,56 +2,54 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobProcessDetails extends StObject {
   
   /**
     * The number of things that cancelled the job.
     */
-  var numberOfCanceledThings: js.UndefOr[CanceledThings] = js.native
+  var numberOfCanceledThings: js.UndefOr[CanceledThings] = js.undefined
   
   /**
     * The number of things that failed executing the job.
     */
-  var numberOfFailedThings: js.UndefOr[FailedThings] = js.native
+  var numberOfFailedThings: js.UndefOr[FailedThings] = js.undefined
   
   /**
     * The number of things currently executing the job.
     */
-  var numberOfInProgressThings: js.UndefOr[InProgressThings] = js.native
+  var numberOfInProgressThings: js.UndefOr[InProgressThings] = js.undefined
   
   /**
     * The number of things that are awaiting execution of the job.
     */
-  var numberOfQueuedThings: js.UndefOr[QueuedThings] = js.native
+  var numberOfQueuedThings: js.UndefOr[QueuedThings] = js.undefined
   
   /**
     * The number of things that rejected the job.
     */
-  var numberOfRejectedThings: js.UndefOr[RejectedThings] = js.native
+  var numberOfRejectedThings: js.UndefOr[RejectedThings] = js.undefined
   
   /**
     * The number of things that are no longer scheduled to execute the job because they have been deleted or have been removed from the group that was a target of the job.
     */
-  var numberOfRemovedThings: js.UndefOr[RemovedThings] = js.native
+  var numberOfRemovedThings: js.UndefOr[RemovedThings] = js.undefined
   
   /**
     * The number of things which successfully completed the job.
     */
-  var numberOfSucceededThings: js.UndefOr[SucceededThings] = js.native
+  var numberOfSucceededThings: js.UndefOr[SucceededThings] = js.undefined
   
   /**
     * The number of things whose job execution status is TIMED_OUT.
     */
-  var numberOfTimedOutThings: js.UndefOr[TimedOutThings] = js.native
+  var numberOfTimedOutThings: js.UndefOr[TimedOutThings] = js.undefined
   
   /**
     * The target devices to which the job execution is being rolled out. This value will be null after the job execution has finished rolling out to all the target devices.
     */
-  var processingTargets: js.UndefOr[ProcessingTargetNameList] = js.native
+  var processingTargets: js.UndefOr[ProcessingTargetNameList] = js.undefined
 }
 object JobProcessDetails {
   

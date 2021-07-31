@@ -11,23 +11,23 @@ import typings.std.RegExp
 import typings.tsLog.mod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   @JSImport("openapi-framework/dist/src/types", "ConsoleDebugAdapterLogger")
   @js.native
-  class ConsoleDebugAdapterLogger () extends Logger
+  class ConsoleDebugAdapterLogger ()
+    extends StObject
+       with Logger
   
-  @js.native
   trait IOpenAPIFramework extends StObject {
     
-    var featureType: String = js.native
+    var featureType: String
     
-    var loggingPrefix: String = js.native
+    var loggingPrefix: String
     
-    var name: String = js.native
+    var name: String
   }
   object IOpenAPIFramework {
     
@@ -53,12 +53,11 @@ object typesMod {
   
   type OpenAPIErrorTransformer = js.Function2[/* has0 */ js.Object, /* has1 */ js.Object, js.Object]
   
-  @js.native
   trait OpenAPIFrameworkAPIContext extends StObject {
     
-    var basePaths: js.Array[default] = js.native
+    var basePaths: js.Array[default]
     
-    def getApiDoc(): js.Any = js.native
+    def getApiDoc(): js.Any
   }
   object OpenAPIFrameworkAPIContext {
     
@@ -82,40 +81,39 @@ object typesMod {
     }
   }
   
-  @js.native
   trait OpenAPIFrameworkArgs extends StObject {
     
-    var apiDoc: Document | typings.openapiTypes.mod.OpenAPIV3.Document | String = js.native
+    var apiDoc: Document | typings.openapiTypes.mod.OpenAPIV3.Document | String
     
-    var customFormats: js.UndefOr[StringDictionary[js.Function1[/* arg */ js.Any, Boolean]]] = js.native
+    var customFormats: js.UndefOr[StringDictionary[js.Function1[/* arg */ js.Any, Boolean]]] = js.undefined
     
-    var customKeywords: js.UndefOr[StringDictionary[KeywordDefinition]] = js.native
+    var customKeywords: js.UndefOr[StringDictionary[KeywordDefinition]] = js.undefined
     
-    var dependencies: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var dependencies: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var enableObjectCoercion: js.UndefOr[Boolean] = js.native
+    var enableObjectCoercion: js.UndefOr[Boolean] = js.undefined
     
-    var errorTransformer: js.UndefOr[OpenAPIErrorTransformer] = js.native
+    var errorTransformer: js.UndefOr[OpenAPIErrorTransformer] = js.undefined
     
-    var externalSchemas: js.UndefOr[StringDictionary[IJsonSchema]] = js.native
+    var externalSchemas: js.UndefOr[StringDictionary[IJsonSchema]] = js.undefined
     
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
-    var operations: js.UndefOr[StringDictionary[js.Function1[/* repeated */ js.Any, _]]] = js.native
+    var operations: js.UndefOr[StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]] = js.undefined
     
-    var pathSecurity: js.UndefOr[js.Array[PathSecurityTuple]] = js.native
+    var pathSecurity: js.UndefOr[js.Array[PathSecurityTuple]] = js.undefined
     
-    var paths: js.UndefOr[String | js.Array[OpenAPIFrameworkPathObject]] = js.native
+    var paths: js.UndefOr[String | js.Array[OpenAPIFrameworkPathObject]] = js.undefined
     
-    var pathsIgnore: js.UndefOr[RegExp] = js.native
+    var pathsIgnore: js.UndefOr[RegExp] = js.undefined
     
-    var routesGlob: js.UndefOr[String] = js.native
+    var routesGlob: js.UndefOr[String] = js.undefined
     
-    var routesIndexFileRegExp: js.UndefOr[RegExp] = js.native
+    var routesIndexFileRegExp: js.UndefOr[RegExp] = js.undefined
     
-    var securityHandlers: js.UndefOr[SecurityHandlers] = js.native
+    var securityHandlers: js.UndefOr[SecurityHandlers] = js.undefined
     
-    var validateApiDoc: js.UndefOr[Boolean] = js.native
+    var validateApiDoc: js.UndefOr[Boolean] = js.undefined
   }
   object OpenAPIFrameworkArgs {
     
@@ -174,7 +172,7 @@ object typesMod {
       def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
       @scala.inline
-      def setOperations(value: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+      def setOperations(value: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
@@ -229,12 +227,13 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait OpenAPIFrameworkConstructorArgs extends OpenAPIFrameworkArgs {
+  trait OpenAPIFrameworkConstructorArgs
+    extends StObject
+       with OpenAPIFrameworkArgs {
     
-    var featureType: String = js.native
+    var featureType: String
     
-    var name: String = js.native
+    var name: String
   }
   object OpenAPIFrameworkConstructorArgs {
     
@@ -259,43 +258,42 @@ object typesMod {
     }
   }
   
-  @js.native
   trait OpenAPIFrameworkOperationContext extends StObject {
     
-    var additionalFeatures: js.Array[_] = js.native
+    var additionalFeatures: js.Array[js.Any]
     
-    var allowsFeatures: Boolean = js.native
+    var allowsFeatures: Boolean
     
-    var apiDoc: js.Any = js.native
+    var apiDoc: js.Any
     
-    var basePaths: js.Array[default] = js.native
+    var basePaths: js.Array[default]
     
-    var consumes: js.Array[String] = js.native
+    var consumes: js.Array[String]
     
-    var features: Coercer = js.native
+    var features: Coercer
     
-    var methodName: String = js.native
+    var methodName: String
     
-    var methodParameters: js.Array[_] = js.native
+    var methodParameters: js.Array[js.Any]
     
-    var operationDoc: js.Any = js.native
+    var operationDoc: js.Any
     
-    var operationHandler: js.Any = js.native
+    var operationHandler: js.Any
     
-    var path: String = js.native
+    var path: String
   }
   object OpenAPIFrameworkOperationContext {
     
     @scala.inline
     def apply(
-      additionalFeatures: js.Array[_],
+      additionalFeatures: js.Array[js.Any],
       allowsFeatures: Boolean,
       apiDoc: js.Any,
       basePaths: js.Array[default],
       consumes: js.Array[String],
       features: Coercer,
       methodName: String,
-      methodParameters: js.Array[_],
+      methodParameters: js.Array[js.Any],
       operationDoc: js.Any,
       operationHandler: js.Any,
       path: String
@@ -308,7 +306,7 @@ object typesMod {
     implicit class OpenAPIFrameworkOperationContextMutableBuilder[Self <: OpenAPIFrameworkOperationContext] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAdditionalFeatures(value: js.Array[_]): Self = StObject.set(x, "additionalFeatures", value.asInstanceOf[js.Any])
+      def setAdditionalFeatures(value: js.Array[js.Any]): Self = StObject.set(x, "additionalFeatures", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAdditionalFeaturesVarargs(value: js.Any*): Self = StObject.set(x, "additionalFeatures", js.Array(value :_*))
@@ -338,7 +336,7 @@ object typesMod {
       def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMethodParameters(value: js.Array[_]): Self = StObject.set(x, "methodParameters", value.asInstanceOf[js.Any])
+      def setMethodParameters(value: js.Array[js.Any]): Self = StObject.set(x, "methodParameters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMethodParametersVarargs(value: js.Any*): Self = StObject.set(x, "methodParameters", js.Array(value :_*))
@@ -354,14 +352,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait OpenAPIFrameworkPathContext extends StObject {
     
-    var basePaths: js.Array[default] = js.native
+    var basePaths: js.Array[default]
     
-    def getApiDoc(): js.Any = js.native
+    def getApiDoc(): js.Any
     
-    def getPathDoc(): js.Any = js.native
+    def getPathDoc(): js.Any
   }
   object OpenAPIFrameworkPathContext {
     
@@ -388,12 +385,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait OpenAPIFrameworkPathObject extends StObject {
     
-    var module: js.UndefOr[js.Any] = js.native
+    var module: js.UndefOr[js.Any] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object OpenAPIFrameworkPathObject {
     
@@ -420,14 +416,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait OpenAPIFrameworkVisitor extends StObject {
     
-    var visitApi: js.UndefOr[js.Function1[/* context */ OpenAPIFrameworkAPIContext, Unit]] = js.native
+    var visitApi: js.UndefOr[js.Function1[/* context */ OpenAPIFrameworkAPIContext, Unit]] = js.undefined
     
-    var visitOperation: js.UndefOr[js.Function1[/* context */ OpenAPIFrameworkOperationContext, Unit]] = js.native
+    var visitOperation: js.UndefOr[js.Function1[/* context */ OpenAPIFrameworkOperationContext, Unit]] = js.undefined
     
-    var visitPath: js.UndefOr[js.Function1[/* context */ OpenAPIFrameworkPathContext, Unit]] = js.native
+    var visitPath: js.UndefOr[js.Function1[/* context */ OpenAPIFrameworkPathContext, Unit]] = js.undefined
   }
   object OpenAPIFrameworkVisitor {
     

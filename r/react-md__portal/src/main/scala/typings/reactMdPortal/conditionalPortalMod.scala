@@ -5,16 +5,18 @@ import typings.reactMdPortal.getContainerMod.PortalInto
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object conditionalPortalMod {
   
   object ConditionalPortal {
     
+    @scala.inline
+    def apply(hasPortalPortalIntoPortalIntoIdChildren: ConditionalPortalProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasPortalPortalIntoPortalIntoIdChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
     @JSImport("@react-md/portal/types/ConditionalPortal", "ConditionalPortal")
     @js.native
-    def apply(hasPortalPortalIntoPortalIntoIdChildren: ConditionalPortalProps): ReactElement | Null = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -50,19 +52,20 @@ object conditionalPortalMod {
     }
   }
   
-  @js.native
-  trait ConditionalPortalProps extends RenderConditionalPortalProps {
+  trait ConditionalPortalProps
+    extends StObject
+       with RenderConditionalPortalProps {
     
     /**
       * This children to render.
       */
-    var children: ReactElement | Null = js.native
+    var children: ReactElement | Null
   }
   object ConditionalPortalProps {
     
     @scala.inline
     def apply(): ConditionalPortalProps = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(children = null)
       __obj.asInstanceOf[ConditionalPortalProps]
     }
     
@@ -77,23 +80,22 @@ object conditionalPortalMod {
     }
   }
   
-  @js.native
   trait RenderConditionalPortalProps extends StObject {
     
     /**
       * Boolean if the portal should be used.
       */
-    var portal: js.UndefOr[Boolean] = js.native
+    var portal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @see {@link Portal#into}
       */
-    var portalInto: js.UndefOr[PortalInto] = js.native
+    var portalInto: js.UndefOr[PortalInto] = js.undefined
     
     /**
       * @see {@link Portal#intoId}
       */
-    var portalIntoId: js.UndefOr[String] = js.native
+    var portalIntoId: js.UndefOr[String] = js.undefined
   }
   object RenderConditionalPortalProps {
     

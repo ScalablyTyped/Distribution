@@ -2,13 +2,13 @@ package typings.spotifyWebApiNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetFeaturedPlaylistsOptions extends PaginationLocaleOptions {
+trait GetFeaturedPlaylistsOptions
+  extends StObject
+     with PaginationLocaleOptions {
   
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
 }
 object GetFeaturedPlaylistsOptions {
   

@@ -3,78 +3,78 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geolocation {
   
-  @js.native
-  trait IAbstract extends IBase {
+  trait IAbstract
+    extends StObject
+       with IBase {
     
     /** [Config Option] (Boolean) */
-    var allowHighAccuracy: js.UndefOr[Boolean] = js.native
+    var allowHighAccuracy: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] If you are currently watching for the current position this will stop that task  */
-    var clearWatch: js.UndefOr[js.Function0[Unit]] = js.native
+    var clearWatch: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var frequency: js.UndefOr[Double] = js.native
+    var frequency: js.UndefOr[Double] = js.undefined
     
     /** [Method] Returns the value of allowHighAccuracy
       * @returns Boolean
       */
-    var getAllowHighAccuracy: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getAllowHighAccuracy: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Attempts to get the current position of this device
       * @param config Object An object which contains the following config options:
       */
-    var getCurrentPosition: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var getCurrentPosition: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Returns the value of frequency
       * @returns Number
       */
-    var getFrequency: js.UndefOr[js.Function0[Double]] = js.native
+    var getFrequency: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of maximumAge
       * @returns Number
       */
-    var getMaximumAge: js.UndefOr[js.Function0[Double]] = js.native
+    var getMaximumAge: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of timeout
       * @returns Number
       */
-    var getTimeout: js.UndefOr[js.Function0[Double]] = js.native
+    var getTimeout: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Config Option] (Number) */
-    var maximumAge: js.UndefOr[Double] = js.native
+    var maximumAge: js.UndefOr[Double] = js.undefined
     
     /** [Method] Sets the value of allowHighAccuracy
       * @param allowHighAccuracy Boolean The new value.
       */
-    var setAllowHighAccuracy: js.UndefOr[js.Function1[/* allowHighAccuracy */ js.UndefOr[Boolean], Unit]] = js.native
+    var setAllowHighAccuracy: js.UndefOr[js.Function1[/* allowHighAccuracy */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of frequency
       * @param frequency Number The new value.
       */
-    var setFrequency: js.UndefOr[js.Function1[/* frequency */ js.UndefOr[Double], Unit]] = js.native
+    var setFrequency: js.UndefOr[js.Function1[/* frequency */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of maximumAge
       * @param maximumAge Number The new value.
       */
-    var setMaximumAge: js.UndefOr[js.Function1[/* maximumAge */ js.UndefOr[Double], Unit]] = js.native
+    var setMaximumAge: js.UndefOr[js.Function1[/* maximumAge */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of timeout
       * @param timeout Number The new value.
       */
-    var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.native
+    var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /** [Method] Watches for the current position and calls the callback when successful depending on the specified frequency
       * @param config Object An object which contains the following config options:
       */
-    var watchPosition: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var watchPosition: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -179,8 +179,9 @@ object geolocation {
     }
   }
   
-  @js.native
-  trait ICordova extends IAbstract
+  trait ICordova
+    extends StObject
+       with IAbstract
   object ICordova {
     
     @scala.inline
@@ -190,8 +191,9 @@ object geolocation {
     }
   }
   
-  @js.native
-  trait IPhoneGap extends IAbstract
+  trait IPhoneGap
+    extends StObject
+       with IAbstract
   object IPhoneGap {
     
     @scala.inline
@@ -201,8 +203,9 @@ object geolocation {
     }
   }
   
-  @js.native
-  trait ISencha extends IAbstract
+  trait ISencha
+    extends StObject
+       with IAbstract
   object ISencha {
     
     @scala.inline
@@ -212,8 +215,9 @@ object geolocation {
     }
   }
   
-  @js.native
-  trait ISimulator extends IAbstract
+  trait ISimulator
+    extends StObject
+       with IAbstract
   object ISimulator {
     
     @scala.inline

@@ -2,10 +2,8 @@ package typings.seleniumWebdriver.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWebElement extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait IWebElement extends StObject {
     * @return {!Promise} A promise that will be resolved when
     *     the element has been cleared.
     */
-  def clear(): js.Promise[Unit] = js.native
+  def clear(): js.Promise[Unit]
   
   // region Methods
   /**
@@ -23,7 +21,7 @@ trait IWebElement extends StObject {
     * @return {!Promise} A promise that will be resolved when
     *     the click command has completed.
     */
-  def click(): js.Promise[Unit] = js.native
+  def click(): js.Promise[Unit]
   
   /**
     * Schedules a command to query for the value of the given attribute of the
@@ -52,7 +50,7 @@ trait IWebElement extends StObject {
     * @return {!Promise} A promise that will be resolved with the
     *     attribute's value.
     */
-  def getAttribute(attributeName: String): js.Promise[String] = js.native
+  def getAttribute(attributeName: String): js.Promise[String]
   
   /**
     * Schedules a command to query for the computed style of the element
@@ -68,7 +66,7 @@ trait IWebElement extends StObject {
     * @return {!Promise} A promise that will be resolved with the
     *     requested CSS value.
     */
-  def getCssValue(cssStyleProperty: String): js.Promise[String] = js.native
+  def getCssValue(cssStyleProperty: String): js.Promise[String]
   
   /**
     * @return {!Promise.<WebElement.Id>} A promise
@@ -76,20 +74,20 @@ trait IWebElement extends StObject {
     *     WebDriver wire protocol.
     * @see http://code.google.com/p/selenium/wiki/JsonWireProtocol
     */
-  def getId(): js.Promise[IWebElementId] = js.native
+  def getId(): js.Promise[IWebElementId]
   
   /**
     * Schedules a command to compute the location of this element in page space.
     * @return {!Promise} A promise that will be resolved to the
     *     element's location as a {@code {x:number, y:number}} object.
     */
-  def getLocation(): js.Promise[ILocation] = js.native
+  def getLocation(): js.Promise[ILocation]
   
   /**
     * Returns an object describing an element's location, in pixels relative to
     * the document element, and the element's size in pixels.
     */
-  def getRect(): js.Promise[IRectangle] = js.native
+  def getRect(): js.Promise[IRectangle]
   
   /**
     * Schedules a command to compute the size of this element's bounding box, in
@@ -97,14 +95,14 @@ trait IWebElement extends StObject {
     * @return {!Promise} A promise that will be resolved with the
     *     element's size as a {@code {width:number, height:number}} object.
     */
-  def getSize(): js.Promise[ISize] = js.native
+  def getSize(): js.Promise[ISize]
   
   /**
     * Schedules a command to query for the tag/node name of this element.
     * @return {!Promise} A promise that will be resolved with the
     *     element's tag name.
     */
-  def getTagName(): js.Promise[String] = js.native
+  def getTagName(): js.Promise[String]
   
   /**
     * Get the visible (i.e. not hidden by CSS) innerText of this element,
@@ -112,14 +110,14 @@ trait IWebElement extends StObject {
     * @return {!Promise} A promise that will be resolved with the
     *     element's visible text.
     */
-  def getText(): js.Promise[String] = js.native
+  def getText(): js.Promise[String]
   
   /**
     * Schedules a command to test whether this element is currently displayed.
     * @return {!Promise} A promise that will be resolved with
     *     whether this element is currently visible on the page.
     */
-  def isDisplayed(): js.Promise[Boolean] = js.native
+  def isDisplayed(): js.Promise[Boolean]
   
   /**
     * Schedules a command to query whether the DOM element represented by this
@@ -127,14 +125,14 @@ trait IWebElement extends StObject {
     * @return {!Promise} A promise that will be resolved with
     *     whether this element is currently enabled.
     */
-  def isEnabled(): js.Promise[Boolean] = js.native
+  def isEnabled(): js.Promise[Boolean]
   
   /**
     * Schedules a command to query whether this element is selected.
     * @return {!Promise} A promise that will be resolved with
     *     whether this element is currently selected.
     */
-  def isSelected(): js.Promise[Boolean] = js.native
+  def isSelected(): js.Promise[Boolean]
   
   /**
     * Schedules a command to type a sequence on the DOM element represented by
@@ -192,7 +190,7 @@ trait IWebElement extends StObject {
     * @return {!Promise} A promise that will be resolved when all
     *     keys have been typed.
     */
-  def sendKeys(var_args: (Double | String | (js.Promise[String | Double]))*): js.Promise[Unit] = js.native
+  def sendKeys(var_args: (Double | String | (js.Promise[String | Double]))*): js.Promise[Unit]
   
   /**
     * Schedules a command to submit the form containing this element (or this
@@ -201,7 +199,7 @@ trait IWebElement extends StObject {
     * @return {!Promise} A promise that will be resolved when
     *     the form has been submitted.
     */
-  def submit(): js.Promise[Unit] = js.native
+  def submit(): js.Promise[Unit]
 }
 object IWebElement {
   

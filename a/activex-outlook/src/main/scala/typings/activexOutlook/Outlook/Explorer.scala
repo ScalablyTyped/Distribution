@@ -2,84 +2,82 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Explorer extends StObject {
   
-  val AccountSelector: typings.activexOutlook.Outlook.AccountSelector = js.native
+  val AccountSelector: typings.activexOutlook.Outlook.AccountSelector
   
-  def Activate(): Unit = js.native
+  def Activate(): Unit
   
-  def AddToSelection(Item: js.Any): Unit = js.native
+  def AddToSelection(Item: js.Any): Unit
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val AttachmentSelection: typings.activexOutlook.Outlook.AttachmentSelection = js.native
+  val AttachmentSelection: typings.activexOutlook.Outlook.AttachmentSelection
   
-  val Caption: String = js.native
+  val Caption: String
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  def ClearSearch(): Unit = js.native
+  def ClearSearch(): Unit
   
-  def ClearSelection(): Unit = js.native
+  def ClearSelection(): Unit
   
-  def Close(): Unit = js.native
+  def Close(): Unit
   
-  val CommandBars: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBars */ js.Any = js.native
+  val CommandBars: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBars */ js.Any
   
-  var CurrentFolder: Folder = js.native
+  var CurrentFolder: Folder
   
-  var CurrentView: js.Any = js.native
+  var CurrentView: js.Any
   
-  def DeselectFolder(Folder: Folder): Unit = js.native
+  def DeselectFolder(Folder: Folder): Unit
   
-  def Display(): Unit = js.native
+  def Display(): Unit
   
-  val HTMLDocument: js.Any = js.native
+  val HTMLDocument: js.Any
   
-  var Height: Double = js.native
+  var Height: Double
   
-  def IsFolderSelected(Folder: Folder): Boolean = js.native
+  def IsFolderSelected(Folder: Folder): Boolean
   
-  def IsItemSelectableInView(Item: js.Any): Boolean = js.native
+  def IsItemSelectableInView(Item: js.Any): Boolean
   
-  def IsPaneVisible(Pane: OlPane): Boolean = js.native
+  def IsPaneVisible(Pane: OlPane): Boolean
   
-  var Left: Double = js.native
+  var Left: Double
   
-  val NavigationPane: typings.activexOutlook.Outlook.NavigationPane = js.native
+  val NavigationPane: typings.activexOutlook.Outlook.NavigationPane
   
   @JSName("Outlook.Explorer_typekey")
-  var OutlookDotExplorer_typekey: Explorer = js.native
+  var OutlookDotExplorer_typekey: Explorer
   
-  val Panes: typings.activexOutlook.Outlook.Panes = js.native
+  val Panes: typings.activexOutlook.Outlook.Panes
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def RemoveFromSelection(Item: js.Any): Unit = js.native
+  def RemoveFromSelection(Item: js.Any): Unit
   
-  def Search(Query: String, SearchScope: OlSearchScope): Unit = js.native
+  def Search(Query: String, SearchScope: OlSearchScope): Unit
   
-  def SelectAllItems(): Unit = js.native
+  def SelectAllItems(): Unit
   
-  def SelectFolder(Folder: Folder): Unit = js.native
+  def SelectFolder(Folder: Folder): Unit
   
-  val Selection: typings.activexOutlook.Outlook.Selection = js.native
+  val Selection: typings.activexOutlook.Outlook.Selection
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  def ShowPane(Pane: OlPane, Visible: Boolean): Unit = js.native
+  def ShowPane(Pane: OlPane, Visible: Boolean): Unit
   
-  var Top: Double = js.native
+  var Top: Double
   
-  val Views: js.Any = js.native
+  val Views: js.Any
   
-  var Width: Double = js.native
+  var Width: Double
   
-  var WindowState: OlWindowState = js.native
+  var WindowState: OlWindowState
 }
 object Explorer {
   

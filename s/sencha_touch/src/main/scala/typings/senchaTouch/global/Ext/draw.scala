@@ -6,7 +6,6 @@ import typings.senchaTouch.Ext.draw.IColor
 import typings.senchaTouch.Ext.draw.IMatrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object draw {
@@ -14,7 +13,8 @@ object draw {
   @JSGlobal("Ext.draw.Animator")
   @js.native
   class Animator ()
-    extends typings.senchaTouch.Ext.draw.Animator
+    extends StObject
+       with typings.senchaTouch.Ext.draw.Animator
   /* static members */
   object Animator {
     
@@ -25,163 +25,132 @@ object draw {
     /** [Method] Adds an animated object to the animation pool
       * @param animation Object The animation descriptor to add to the pool.
       */
-    @JSGlobal("Ext.draw.Animator.add")
-    @js.native
-    def add(): Unit = js.native
-    @JSGlobal("Ext.draw.Animator.add")
-    @js.native
-    def add(animation: js.Any): Unit = js.native
+    @scala.inline
+    def add(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[Unit]
+    @scala.inline
+    def add(animation: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(animation.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Register a recursive callback that will be called at every frame
       * @param callback Function
       * @param scope Object
       * @returns String
       */
-    @JSGlobal("Ext.draw.Animator.addFrameCallback")
-    @js.native
-    def addFrameCallback(): java.lang.String = js.native
-    @JSGlobal("Ext.draw.Animator.addFrameCallback")
-    @js.native
-    def addFrameCallback(callback: js.UndefOr[scala.Nothing], scope: js.Any): java.lang.String = js.native
-    @JSGlobal("Ext.draw.Animator.addFrameCallback")
-    @js.native
-    def addFrameCallback(callback: js.Any): java.lang.String = js.native
-    @JSGlobal("Ext.draw.Animator.addFrameCallback")
-    @js.native
-    def addFrameCallback(callback: js.Any, scope: js.Any): java.lang.String = js.native
+    @scala.inline
+    def addFrameCallback(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("addFrameCallback")().asInstanceOf[java.lang.String]
+    @scala.inline
+    def addFrameCallback(callback: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("addFrameCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+    @scala.inline
+    def addFrameCallback(callback: js.Any, scope: js.Any): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("addFrameCallback")(callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    @scala.inline
+    def addFrameCallback(callback: Unit, scope: js.Any): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("addFrameCallback")(callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
     
     /** [Method] Cross platform animationTime implementation
       * @returns Number
       */
-    @JSGlobal("Ext.draw.Animator.animationTime")
-    @js.native
-    def animationTime(): Double = js.native
+    @scala.inline
+    def animationTime(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("animationTime")().asInstanceOf[Double]
     
     /** [Method] Call the original method that was previously overridden with override  This method is deprecated as callParent does
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    @JSGlobal("Ext.draw.Animator.callOverridden")
-    @js.native
-    def callOverridden(): js.Any = js.native
-    @JSGlobal("Ext.draw.Animator.callOverridden")
-    @js.native
-    def callOverridden(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+    @scala.inline
+    def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    @JSGlobal("Ext.draw.Animator.callParent")
-    @js.native
-    def callParent(): js.Any = js.native
-    @JSGlobal("Ext.draw.Animator.callParent")
-    @js.native
-    def callParent(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+    @scala.inline
+    def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    @JSGlobal("Ext.draw.Animator.callSuper")
-    @js.native
-    def callSuper(): js.Any = js.native
-    @JSGlobal("Ext.draw.Animator.callSuper")
-    @js.native
-    def callSuper(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+    @scala.inline
+    def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Cancel a registered one time callback
       * @param id String
       */
-    @JSGlobal("Ext.draw.Animator.cancel")
-    @js.native
-    def cancel(): Unit = js.native
-    @JSGlobal("Ext.draw.Animator.cancel")
-    @js.native
-    def cancel(id: java.lang.String): Unit = js.native
+    @scala.inline
+    def cancel(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")().asInstanceOf[Unit]
+    @scala.inline
+    def cancel(id: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Returns true or false whether it contains the given animation or not
       * @param animation Object The animation to check for.
       * @returns Boolean
       */
-    @JSGlobal("Ext.draw.Animator.contains")
-    @js.native
-    def contains(): Boolean = js.native
-    @JSGlobal("Ext.draw.Animator.contains")
-    @js.native
-    def contains(animation: js.Any): Boolean = js.native
+    @scala.inline
+    def contains(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")().asInstanceOf[Boolean]
+    @scala.inline
+    def contains(animation: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")(animation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** [Method]  */
-    @JSGlobal("Ext.draw.Animator.destroy")
-    @js.native
-    def destroy(): Unit = js.native
+    @scala.inline
+    def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
     
     /** [Method] Returns true or false whether the pool is empty or not
       * @returns Boolean
       */
-    @JSGlobal("Ext.draw.Animator.empty")
-    @js.native
-    def empty(): Boolean = js.native
+    @scala.inline
+    def empty(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Boolean]
     
     /** [Method] Returns the initial configuration passed to constructor
       * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
       * @returns Object/Mixed
       */
-    @JSGlobal("Ext.draw.Animator.getInitialConfig")
-    @js.native
-    def getInitialConfig(): js.Any = js.native
-    @JSGlobal("Ext.draw.Animator.getInitialConfig")
-    @js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Initialize configuration for this class
       * @param instanceConfig Object
       * @returns Object mixins The mixin prototypes as key - value pairs
       */
-    @JSGlobal("Ext.draw.Animator.initConfig")
-    @js.native
-    def initConfig(): js.Any = js.native
-    @JSGlobal("Ext.draw.Animator.initConfig")
-    @js.native
-    def initConfig(instanceConfig: js.Any): js.Any = js.native
+    @scala.inline
+    def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def initConfig(instanceConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Removes an animation from the pool
       * @param animation Object The animation to remove from the pool.
       */
-    @JSGlobal("Ext.draw.Animator.remove")
-    @js.native
-    def remove(): Unit = js.native
-    @JSGlobal("Ext.draw.Animator.remove")
-    @js.native
-    def remove(animation: js.Any): Unit = js.native
+    @scala.inline
+    def remove(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")().asInstanceOf[Unit]
+    @scala.inline
+    def remove(animation: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(animation.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Unregister a recursive callback
       * @param id String
       */
-    @JSGlobal("Ext.draw.Animator.removeFrameCallback")
-    @js.native
-    def removeFrameCallback(): Unit = js.native
-    @JSGlobal("Ext.draw.Animator.removeFrameCallback")
-    @js.native
-    def removeFrameCallback(id: java.lang.String): Unit = js.native
+    @scala.inline
+    def removeFrameCallback(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFrameCallback")().asInstanceOf[Unit]
+    @scala.inline
+    def removeFrameCallback(id: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFrameCallback")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Register an one time callback that will be called at the next frame
       * @param callback Function
       * @param scope Object
       * @returns String
       */
-    @JSGlobal("Ext.draw.Animator.schedule")
-    @js.native
-    def schedule(): java.lang.String = js.native
-    @JSGlobal("Ext.draw.Animator.schedule")
-    @js.native
-    def schedule(callback: js.UndefOr[scala.Nothing], scope: js.Any): java.lang.String = js.native
-    @JSGlobal("Ext.draw.Animator.schedule")
-    @js.native
-    def schedule(callback: js.Any): java.lang.String = js.native
-    @JSGlobal("Ext.draw.Animator.schedule")
-    @js.native
-    def schedule(callback: js.Any, scope: js.Any): java.lang.String = js.native
+    @scala.inline
+    def schedule(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("schedule")().asInstanceOf[java.lang.String]
+    @scala.inline
+    def schedule(callback: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(callback.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+    @scala.inline
+    def schedule(callback: js.Any, scope: js.Any): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    @scala.inline
+    def schedule(callback: Unit, scope: js.Any): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.draw.Animator.self")
@@ -193,58 +162,54 @@ object draw {
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
-    @JSGlobal("Ext.draw.Animator.statics")
-    @js.native
-    def statics(): IClass = js.native
+    @scala.inline
+    def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
     
     /** [Method] Given a frame time it will filter out finished animations from the pool
       * @param frameTime Number The frame's start time, in milliseconds.
       */
-    @JSGlobal("Ext.draw.Animator.step")
-    @js.native
-    def step(): Unit = js.native
-    @JSGlobal("Ext.draw.Animator.step")
-    @js.native
-    def step(frameTime: Double): Unit = js.native
+    @scala.inline
+    def step(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("step")().asInstanceOf[Unit]
+    @scala.inline
+    def step(frameTime: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("step")(frameTime.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSGlobal("Ext.draw.Color")
   @js.native
   class Color ()
-    extends typings.senchaTouch.Ext.draw.Color
+    extends StObject
+       with typings.senchaTouch.Ext.draw.Color
   /* static members */
   object Color {
+    
+    @JSGlobal("Ext.draw.Color")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** [Method] Add methods  properties to the prototype of this class
       * @param members Object
       */
-    @JSGlobal("Ext.draw.Color.addMembers")
-    @js.native
-    def addMembers(): Unit = js.native
-    @JSGlobal("Ext.draw.Color.addMembers")
-    @js.native
-    def addMembers(members: js.Any): Unit = js.native
+    @scala.inline
+    def addMembers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMembers")().asInstanceOf[Unit]
+    @scala.inline
+    def addMembers(members: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMembers")(members.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Add  override static properties of this class
       * @param members Object
       * @returns Ext.Base this
       */
-    @JSGlobal("Ext.draw.Color.addStatics")
-    @js.native
-    def addStatics(): IBase = js.native
-    @JSGlobal("Ext.draw.Color.addStatics")
-    @js.native
-    def addStatics(members: js.Any): IBase = js.native
+    @scala.inline
+    def addStatics(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("addStatics")().asInstanceOf[IBase]
+    @scala.inline
+    def addStatics(members: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("addStatics")(members.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method]
       * @param args Object
       */
-    @JSGlobal("Ext.draw.Color.callParent")
-    @js.native
-    def callParent(): Unit = js.native
-    @JSGlobal("Ext.draw.Color.callParent")
-    @js.native
-    def callParent(args: js.Any): Unit = js.native
+    @scala.inline
+    def callParent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Unit]
+    @scala.inline
+    def callParent(args: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Convenience method for creating a color
       * @param red Ext.draw.Color/String/Number[]/Number Red component (0..255), CSS color string or array of all components.
@@ -253,76 +218,51 @@ object draw {
       * @param alpha Number Alpha component (0..1)
       * @returns Ext.draw.Color
       */
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(
-      red: js.UndefOr[scala.Nothing],
-      green: js.UndefOr[scala.Nothing],
-      blue: js.UndefOr[scala.Nothing],
-      alpha: Double
-    ): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(red: js.UndefOr[scala.Nothing], green: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(red: js.UndefOr[scala.Nothing], green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(red: js.UndefOr[scala.Nothing], green: Double, blue: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(red: js.UndefOr[scala.Nothing], green: Double, blue: Double, alpha: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(red: js.Any): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(red: js.Any, green: js.UndefOr[scala.Nothing], blue: js.UndefOr[scala.Nothing], alpha: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(red: js.Any, green: js.UndefOr[scala.Nothing], blue: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(red: js.Any, green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(red: js.Any, green: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(red: js.Any, green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(red: js.Any, green: Double, blue: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.create")
-    @js.native
-    def create(red: js.Any, green: Double, blue: Double, alpha: Double): IColor = js.native
+    @scala.inline
+    def create(): IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[IColor]
+    @scala.inline
+    def create(red: js.Any): IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any]).asInstanceOf[IColor]
+    @scala.inline
+    def create(red: js.Any, green: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def create(red: js.Any, green: Double, blue: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def create(red: js.Any, green: Double, blue: Double, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def create(red: js.Any, green: Double, blue: Unit, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def create(red: js.Any, green: Unit, blue: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def create(red: js.Any, green: Unit, blue: Double, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def create(red: js.Any, green: Unit, blue: Unit, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def create(red: Unit, green: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def create(red: Unit, green: Double, blue: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def create(red: Unit, green: Double, blue: Double, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def create(red: Unit, green: Double, blue: Unit, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def create(red: Unit, green: Unit, blue: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def create(red: Unit, green: Unit, blue: Double, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def create(red: Unit, green: Unit, blue: Unit, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
     
     /** [Method] Create aliases for existing prototype methods
       * @param alias String/Object The new method name, or an object to set multiple aliases. See flexSetter
       * @param origin String/Object The original method name
       */
-    @JSGlobal("Ext.draw.Color.createAlias")
-    @js.native
-    def createAlias(): Unit = js.native
-    @JSGlobal("Ext.draw.Color.createAlias")
-    @js.native
-    def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
-    @JSGlobal("Ext.draw.Color.createAlias")
-    @js.native
-    def createAlias(alias: js.Any): Unit = js.native
-    @JSGlobal("Ext.draw.Color.createAlias")
-    @js.native
-    def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
+    @scala.inline
+    def createAlias(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")().asInstanceOf[Unit]
+    @scala.inline
+    def createAlias(alias: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def createAlias(alias: js.Any, origin: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createAlias(alias: Unit, origin: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Returns a flyweight instance of Ext draw Color
       * @param red Number/String Red component (0..255) or CSS color string.
@@ -331,59 +271,38 @@ object draw {
       * @param alpha Number Alpha component (0..1)
       * @returns Ext.draw.Color
       */
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(
-      red: js.UndefOr[scala.Nothing],
-      green: js.UndefOr[scala.Nothing],
-      blue: js.UndefOr[scala.Nothing],
-      alpha: Double
-    ): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(red: js.UndefOr[scala.Nothing], green: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(red: js.UndefOr[scala.Nothing], green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(red: js.UndefOr[scala.Nothing], green: Double, blue: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(red: js.UndefOr[scala.Nothing], green: Double, blue: Double, alpha: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(red: js.Any): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(red: js.Any, green: js.UndefOr[scala.Nothing], blue: js.UndefOr[scala.Nothing], alpha: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(red: js.Any, green: js.UndefOr[scala.Nothing], blue: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(red: js.Any, green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(red: js.Any, green: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(red: js.Any, green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(red: js.Any, green: Double, blue: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fly")
-    @js.native
-    def fly(red: js.Any, green: Double, blue: Double, alpha: Double): IColor = js.native
+    @scala.inline
+    def fly(): IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("fly")().asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: js.Any): IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any]).asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: js.Any, green: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: js.Any, green: Double, blue: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: js.Any, green: Double, blue: Double, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: js.Any, green: Double, blue: Unit, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: js.Any, green: Unit, blue: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: js.Any, green: Unit, blue: Double, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: js.Any, green: Unit, blue: Unit, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: Unit, green: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: Unit, green: Double, blue: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: Unit, green: Double, blue: Double, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: Unit, green: Double, blue: Unit, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: Unit, green: Unit, blue: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: Unit, green: Unit, blue: Double, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fly(red: Unit, green: Unit, blue: Unit, alpha: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IColor]
     
     /** [Method] Create a new color based on the specified HSL values
       * @param h Number Hue component (0..359)
@@ -391,65 +310,53 @@ object draw {
       * @param l Number Lightness component (0..1)
       * @returns Ext.draw.Color
       */
-    @JSGlobal("Ext.draw.Color.fromHSL")
-    @js.native
-    def fromHSL(): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fromHSL")
-    @js.native
-    def fromHSL(h: js.UndefOr[scala.Nothing], s: js.UndefOr[scala.Nothing], l: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fromHSL")
-    @js.native
-    def fromHSL(h: js.UndefOr[scala.Nothing], s: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fromHSL")
-    @js.native
-    def fromHSL(h: js.UndefOr[scala.Nothing], s: Double, l: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fromHSL")
-    @js.native
-    def fromHSL(h: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fromHSL")
-    @js.native
-    def fromHSL(h: Double, s: js.UndefOr[scala.Nothing], l: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fromHSL")
-    @js.native
-    def fromHSL(h: Double, s: Double): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fromHSL")
-    @js.native
-    def fromHSL(h: Double, s: Double, l: Double): IColor = js.native
+    @scala.inline
+    def fromHSL(): IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHSL")().asInstanceOf[IColor]
+    @scala.inline
+    def fromHSL(h: Double): IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHSL")(h.asInstanceOf[js.Any]).asInstanceOf[IColor]
+    @scala.inline
+    def fromHSL(h: Double, s: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHSL")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fromHSL(h: Double, s: Double, l: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHSL")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fromHSL(h: Double, s: Unit, l: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHSL")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fromHSL(h: Unit, s: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHSL")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fromHSL(h: Unit, s: Double, l: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHSL")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[IColor]
+    @scala.inline
+    def fromHSL(h: Unit, s: Unit, l: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHSL")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[IColor]
     
     /** [Method] Parse the string and create a new color
       * @param string String Color in string.
       * @returns Ext.draw.Color
       */
-    @JSGlobal("Ext.draw.Color.fromString")
-    @js.native
-    def fromString(): IColor = js.native
-    @JSGlobal("Ext.draw.Color.fromString")
-    @js.native
-    def fromString(string: java.lang.String): IColor = js.native
+    @scala.inline
+    def fromString(): IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")().asInstanceOf[IColor]
+    @scala.inline
+    def fromString(string: java.lang.String): IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(string.asInstanceOf[js.Any]).asInstanceOf[IColor]
     
     /** [Method] Get the current class name in string format
       * @returns String className
       */
-    @JSGlobal("Ext.draw.Color.getName")
-    @js.native
-    def getName(): java.lang.String = js.native
+    @scala.inline
+    def getName(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")().asInstanceOf[java.lang.String]
     
     /** [Method] Override members of this class
       * @param members Object The properties to add to this class. This should be specified as an object literal containing one or more properties.
       * @returns Ext.Base this class
       */
-    @JSGlobal("Ext.draw.Color.override")
-    @js.native
-    def `override`(): IBase = js.native
-    @JSGlobal("Ext.draw.Color.override")
-    @js.native
-    def `override`(members: js.Any): IBase = js.native
+    @scala.inline
+    def `override`(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("override")().asInstanceOf[IBase]
+    @scala.inline
+    def `override`(members: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("override")(members.asInstanceOf[js.Any]).asInstanceOf[IBase]
   }
   
   @JSGlobal("Ext.draw.Draw")
   @js.native
   class Draw ()
-    extends typings.senchaTouch.Ext.draw.Draw
+    extends StObject
+       with typings.senchaTouch.Ext.draw.Draw
   /* static members */
   object Draw {
     
@@ -461,72 +368,59 @@ object draw {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    @JSGlobal("Ext.draw.Draw.callOverridden")
-    @js.native
-    def callOverridden(): js.Any = js.native
-    @JSGlobal("Ext.draw.Draw.callOverridden")
-    @js.native
-    def callOverridden(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+    @scala.inline
+    def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    @JSGlobal("Ext.draw.Draw.callParent")
-    @js.native
-    def callParent(): js.Any = js.native
-    @JSGlobal("Ext.draw.Draw.callParent")
-    @js.native
-    def callParent(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+    @scala.inline
+    def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    @JSGlobal("Ext.draw.Draw.callSuper")
-    @js.native
-    def callSuper(): js.Any = js.native
-    @JSGlobal("Ext.draw.Draw.callSuper")
-    @js.native
-    def callSuper(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+    @scala.inline
+    def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Converting radians to degrees
       * @param radian Number
       * @returns Number
       */
-    @JSGlobal("Ext.draw.Draw.degrees")
-    @js.native
-    def degrees(): Double = js.native
-    @JSGlobal("Ext.draw.Draw.degrees")
-    @js.native
-    def degrees(radian: Double): Double = js.native
+    @scala.inline
+    def degrees(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("degrees")().asInstanceOf[Double]
+    @scala.inline
+    def degrees(radian: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("degrees")(radian.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /** [Method]  */
-    @JSGlobal("Ext.draw.Draw.destroy")
-    @js.native
-    def destroy(): Unit = js.native
+    @scala.inline
+    def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
     
     /** [Method] Returns the initial configuration passed to constructor
       * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
       * @returns Object/Mixed
       */
-    @JSGlobal("Ext.draw.Draw.getInitialConfig")
-    @js.native
-    def getInitialConfig(): js.Any = js.native
-    @JSGlobal("Ext.draw.Draw.getInitialConfig")
-    @js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Initialize configuration for this class
       * @param instanceConfig Object
       * @returns Object mixins The mixin prototypes as key - value pairs
       */
-    @JSGlobal("Ext.draw.Draw.initConfig")
-    @js.native
-    def initConfig(): js.Any = js.native
-    @JSGlobal("Ext.draw.Draw.initConfig")
-    @js.native
-    def initConfig(instanceConfig: js.Any): js.Any = js.native
+    @scala.inline
+    def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def initConfig(instanceConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method]
       * @param bbox1 Object
@@ -534,52 +428,40 @@ object draw {
       * @param padding Number
       * @returns Boolean
       */
-    @JSGlobal("Ext.draw.Draw.isBBoxIntersect")
-    @js.native
-    def isBBoxIntersect(): Boolean = js.native
-    @JSGlobal("Ext.draw.Draw.isBBoxIntersect")
-    @js.native
-    def isBBoxIntersect(bbox1: js.UndefOr[scala.Nothing], bbox2: js.UndefOr[scala.Nothing], padding: Double): Boolean = js.native
-    @JSGlobal("Ext.draw.Draw.isBBoxIntersect")
-    @js.native
-    def isBBoxIntersect(bbox1: js.UndefOr[scala.Nothing], bbox2: js.Any): Boolean = js.native
-    @JSGlobal("Ext.draw.Draw.isBBoxIntersect")
-    @js.native
-    def isBBoxIntersect(bbox1: js.UndefOr[scala.Nothing], bbox2: js.Any, padding: Double): Boolean = js.native
-    @JSGlobal("Ext.draw.Draw.isBBoxIntersect")
-    @js.native
-    def isBBoxIntersect(bbox1: js.Any): Boolean = js.native
-    @JSGlobal("Ext.draw.Draw.isBBoxIntersect")
-    @js.native
-    def isBBoxIntersect(bbox1: js.Any, bbox2: js.UndefOr[scala.Nothing], padding: Double): Boolean = js.native
-    @JSGlobal("Ext.draw.Draw.isBBoxIntersect")
-    @js.native
-    def isBBoxIntersect(bbox1: js.Any, bbox2: js.Any): Boolean = js.native
-    @JSGlobal("Ext.draw.Draw.isBBoxIntersect")
-    @js.native
-    def isBBoxIntersect(bbox1: js.Any, bbox2: js.Any, padding: Double): Boolean = js.native
+    @scala.inline
+    def isBBoxIntersect(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBBoxIntersect")().asInstanceOf[Boolean]
+    @scala.inline
+    def isBBoxIntersect(bbox1: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBBoxIntersect")(bbox1.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def isBBoxIntersect(bbox1: js.Any, bbox2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBBoxIntersect")(bbox1.asInstanceOf[js.Any], bbox2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isBBoxIntersect(bbox1: js.Any, bbox2: js.Any, padding: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBBoxIntersect")(bbox1.asInstanceOf[js.Any], bbox2.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isBBoxIntersect(bbox1: js.Any, bbox2: Unit, padding: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBBoxIntersect")(bbox1.asInstanceOf[js.Any], bbox2.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isBBoxIntersect(bbox1: Unit, bbox2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBBoxIntersect")(bbox1.asInstanceOf[js.Any], bbox2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isBBoxIntersect(bbox1: Unit, bbox2: js.Any, padding: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBBoxIntersect")(bbox1.asInstanceOf[js.Any], bbox2.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isBBoxIntersect(bbox1: Unit, bbox2: Unit, padding: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBBoxIntersect")(bbox1.asInstanceOf[js.Any], bbox2.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** [Method] Converting degrees to radians
       * @param degrees Number
       * @returns Number
       */
-    @JSGlobal("Ext.draw.Draw.rad")
-    @js.native
-    def rad(): Double = js.native
-    @JSGlobal("Ext.draw.Draw.rad")
-    @js.native
-    def rad(degrees: Double): Double = js.native
+    @scala.inline
+    def rad(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rad")().asInstanceOf[Double]
+    @scala.inline
+    def rad(degrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rad")(degrees.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /** [Method] Function that returns its first element
       * @param a Mixed
       * @returns Mixed
       */
-    @JSGlobal("Ext.draw.Draw.reflectFn")
-    @js.native
-    def reflectFn(): js.Any = js.native
-    @JSGlobal("Ext.draw.Draw.reflectFn")
-    @js.native
-    def reflectFn(a: js.Any): js.Any = js.native
+    @scala.inline
+    def reflectFn(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reflectFn")().asInstanceOf[js.Any]
+    @scala.inline
+    def reflectFn(a: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reflectFn")(a.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.draw.Draw.self")
@@ -594,97 +476,83 @@ object draw {
       * @param value Object A value to control the smoothness of the curve.
       * @returns Object Object holding two arrays, for x and y coordinates of the curve.
       */
-    @JSGlobal("Ext.draw.Draw.smooth")
-    @js.native
-    def smooth(): js.Any = js.native
-    @JSGlobal("Ext.draw.Draw.smooth")
-    @js.native
-    def smooth(dataX: js.UndefOr[scala.Nothing], dataY: js.UndefOr[scala.Nothing], value: js.Any): js.Any = js.native
-    @JSGlobal("Ext.draw.Draw.smooth")
-    @js.native
-    def smooth(dataX: js.UndefOr[scala.Nothing], dataY: js.Any): js.Any = js.native
-    @JSGlobal("Ext.draw.Draw.smooth")
-    @js.native
-    def smooth(dataX: js.UndefOr[scala.Nothing], dataY: js.Any, value: js.Any): js.Any = js.native
-    @JSGlobal("Ext.draw.Draw.smooth")
-    @js.native
-    def smooth(dataX: js.Any): js.Any = js.native
-    @JSGlobal("Ext.draw.Draw.smooth")
-    @js.native
-    def smooth(dataX: js.Any, dataY: js.UndefOr[scala.Nothing], value: js.Any): js.Any = js.native
-    @JSGlobal("Ext.draw.Draw.smooth")
-    @js.native
-    def smooth(dataX: js.Any, dataY: js.Any): js.Any = js.native
-    @JSGlobal("Ext.draw.Draw.smooth")
-    @js.native
-    def smooth(dataX: js.Any, dataY: js.Any, value: js.Any): js.Any = js.native
+    @scala.inline
+    def smooth(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("smooth")().asInstanceOf[js.Any]
+    @scala.inline
+    def smooth(dataX: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("smooth")(dataX.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def smooth(dataX: js.Any, dataY: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("smooth")(dataX.asInstanceOf[js.Any], dataY.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def smooth(dataX: js.Any, dataY: js.Any, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("smooth")(dataX.asInstanceOf[js.Any], dataY.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def smooth(dataX: js.Any, dataY: Unit, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("smooth")(dataX.asInstanceOf[js.Any], dataY.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def smooth(dataX: Unit, dataY: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("smooth")(dataX.asInstanceOf[js.Any], dataY.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def smooth(dataX: Unit, dataY: js.Any, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("smooth")(dataX.asInstanceOf[js.Any], dataY.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def smooth(dataX: Unit, dataY: Unit, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("smooth")(dataX.asInstanceOf[js.Any], dataY.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /** [Method] Natural cubic spline interpolation
       * @param points Array Array of numbers.
       */
-    @JSGlobal("Ext.draw.Draw.spline")
-    @js.native
-    def spline(): Unit = js.native
-    @JSGlobal("Ext.draw.Draw.spline")
-    @js.native
-    def spline(points: typings.senchaTouch.Ext.Array): Unit = js.native
+    @scala.inline
+    def spline(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spline")().asInstanceOf[Unit]
+    @scala.inline
+    def spline(points: typings.senchaTouch.Ext.Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spline")(points.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
-    @JSGlobal("Ext.draw.Draw.statics")
-    @js.native
-    def statics(): IClass = js.native
+    @scala.inline
+    def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
   }
   
   @JSGlobal("Ext.draw.Matrix")
   @js.native
   class Matrix ()
-    extends typings.senchaTouch.Ext.draw.Matrix
+    extends StObject
+       with typings.senchaTouch.Ext.draw.Matrix
   /* static members */
   object Matrix {
+    
+    @JSGlobal("Ext.draw.Matrix")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** [Method] Add methods  properties to the prototype of this class
       * @param members Object
       */
-    @JSGlobal("Ext.draw.Matrix.addMembers")
-    @js.native
-    def addMembers(): Unit = js.native
-    @JSGlobal("Ext.draw.Matrix.addMembers")
-    @js.native
-    def addMembers(members: js.Any): Unit = js.native
+    @scala.inline
+    def addMembers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMembers")().asInstanceOf[Unit]
+    @scala.inline
+    def addMembers(members: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMembers")(members.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Add  override static properties of this class
       * @param members Object
       * @returns Ext.Base this
       */
-    @JSGlobal("Ext.draw.Matrix.addStatics")
-    @js.native
-    def addStatics(): IBase = js.native
-    @JSGlobal("Ext.draw.Matrix.addStatics")
-    @js.native
-    def addStatics(members: js.Any): IBase = js.native
+    @scala.inline
+    def addStatics(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("addStatics")().asInstanceOf[IBase]
+    @scala.inline
+    def addStatics(members: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("addStatics")(members.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method]
       * @param args Object
       */
-    @JSGlobal("Ext.draw.Matrix.callParent")
-    @js.native
-    def callParent(): Unit = js.native
-    @JSGlobal("Ext.draw.Matrix.callParent")
-    @js.native
-    def callParent(args: js.Any): Unit = js.native
+    @scala.inline
+    def callParent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Unit]
+    @scala.inline
+    def callParent(args: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Create a matrix from mat
       * @param mat Mixed
       * @returns Ext.draw.Matrix
       */
-    @JSGlobal("Ext.draw.Matrix.create")
-    @js.native
-    def create(): IMatrix = js.native
-    @JSGlobal("Ext.draw.Matrix.create")
-    @js.native
-    def create(mat: js.Any): IMatrix = js.native
+    @scala.inline
+    def create(): IMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[IMatrix]
+    @scala.inline
+    def create(mat: js.Any): IMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mat.asInstanceOf[js.Any]).asInstanceOf[IMatrix]
     
     /** [Method] Return the affine matrix that transform two points x0 y0 and x1 y1 to x0p y0p and x1p y1p
       * @param x0 Number
@@ -696,8 +564,7 @@ object draw {
       * @param x1p Number
       * @param y1p Number
       */
-    @JSGlobal("Ext.draw.Matrix.createAffineMatrixFromTwoPair")
-    @js.native
+    @scala.inline
     def createAffineMatrixFromTwoPair(
       x0: js.UndefOr[Double],
       y0: js.UndefOr[Double],
@@ -707,24 +574,20 @@ object draw {
       y0p: js.UndefOr[Double],
       x1p: js.UndefOr[Double],
       y1p: js.UndefOr[Double]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAffineMatrixFromTwoPair")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x0p.asInstanceOf[js.Any], y0p.asInstanceOf[js.Any], x1p.asInstanceOf[js.Any], y1p.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Create aliases for existing prototype methods
       * @param alias String/Object The new method name, or an object to set multiple aliases. See flexSetter
       * @param origin String/Object The original method name
       */
-    @JSGlobal("Ext.draw.Matrix.createAlias")
-    @js.native
-    def createAlias(): Unit = js.native
-    @JSGlobal("Ext.draw.Matrix.createAlias")
-    @js.native
-    def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
-    @JSGlobal("Ext.draw.Matrix.createAlias")
-    @js.native
-    def createAlias(alias: js.Any): Unit = js.native
-    @JSGlobal("Ext.draw.Matrix.createAlias")
-    @js.native
-    def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
+    @scala.inline
+    def createAlias(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")().asInstanceOf[Unit]
+    @scala.inline
+    def createAlias(alias: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def createAlias(alias: js.Any, origin: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createAlias(alias: Unit, origin: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Return the affine matrix that transform two points x0 y0 and x1 y1 to x0p y0p and x1p y1p
       * @param x0 Number
@@ -736,8 +599,7 @@ object draw {
       * @param x1p Number
       * @param y1p Number
       */
-    @JSGlobal("Ext.draw.Matrix.createPanZoomFromTwoPair")
-    @js.native
+    @scala.inline
     def createPanZoomFromTwoPair(
       x0: js.UndefOr[Double],
       y0: js.UndefOr[Double],
@@ -747,42 +609,38 @@ object draw {
       y0p: js.UndefOr[Double],
       x1p: js.UndefOr[Double],
       y1p: js.UndefOr[Double]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPanZoomFromTwoPair")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x0p.asInstanceOf[js.Any], y0p.asInstanceOf[js.Any], x1p.asInstanceOf[js.Any], y1p.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Create a flyweight to wrap the given array
       * @param elements Array
       * @returns Ext.draw.Matrix
       */
-    @JSGlobal("Ext.draw.Matrix.fly")
-    @js.native
-    def fly(): IMatrix = js.native
-    @JSGlobal("Ext.draw.Matrix.fly")
-    @js.native
-    def fly(elements: typings.senchaTouch.Ext.Array): IMatrix = js.native
+    @scala.inline
+    def fly(): IMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("fly")().asInstanceOf[IMatrix]
+    @scala.inline
+    def fly(elements: typings.senchaTouch.Ext.Array): IMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("fly")(elements.asInstanceOf[js.Any]).asInstanceOf[IMatrix]
     
     /** [Method] Get the current class name in string format
       * @returns String className
       */
-    @JSGlobal("Ext.draw.Matrix.getName")
-    @js.native
-    def getName(): java.lang.String = js.native
+    @scala.inline
+    def getName(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")().asInstanceOf[java.lang.String]
     
     /** [Method] Override members of this class
       * @param members Object The properties to add to this class. This should be specified as an object literal containing one or more properties.
       * @returns Ext.Base this class
       */
-    @JSGlobal("Ext.draw.Matrix.override")
-    @js.native
-    def `override`(): IBase = js.native
-    @JSGlobal("Ext.draw.Matrix.override")
-    @js.native
-    def `override`(members: js.Any): IBase = js.native
+    @scala.inline
+    def `override`(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("override")().asInstanceOf[IBase]
+    @scala.inline
+    def `override`(members: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("override")(members.asInstanceOf[js.Any]).asInstanceOf[IBase]
   }
   
   @JSGlobal("Ext.draw.Solver")
   @js.native
   class Solver ()
-    extends typings.senchaTouch.Ext.draw.Solver
+    extends StObject
+       with typings.senchaTouch.Ext.draw.Solver
   /* static members */
   object Solver {
     
@@ -794,34 +652,28 @@ object draw {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    @JSGlobal("Ext.draw.Solver.callOverridden")
-    @js.native
-    def callOverridden(): js.Any = js.native
-    @JSGlobal("Ext.draw.Solver.callOverridden")
-    @js.native
-    def callOverridden(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+    @scala.inline
+    def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    @JSGlobal("Ext.draw.Solver.callParent")
-    @js.native
-    def callParent(): js.Any = js.native
-    @JSGlobal("Ext.draw.Solver.callParent")
-    @js.native
-    def callParent(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+    @scala.inline
+    def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    @JSGlobal("Ext.draw.Solver.callSuper")
-    @js.native
-    def callSuper(): js.Any = js.native
-    @JSGlobal("Ext.draw.Solver.callSuper")
-    @js.native
-    def callSuper(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+    @scala.inline
+    def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns the function f x a  x3  b  x2  c  x  d and solver for f x y
       * @param a Number
@@ -829,143 +681,103 @@ object draw {
       * @param c Number
       * @param d Number
       */
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(
-      a: js.UndefOr[scala.Nothing],
-      b: js.UndefOr[scala.Nothing],
-      c: js.UndefOr[scala.Nothing],
-      d: Double
-    ): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(a: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], c: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(a: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], c: Double, d: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(a: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(a: js.UndefOr[scala.Nothing], b: Double, c: js.UndefOr[scala.Nothing], d: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(a: js.UndefOr[scala.Nothing], b: Double, c: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(a: js.UndefOr[scala.Nothing], b: Double, c: Double, d: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(a: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(a: Double, b: js.UndefOr[scala.Nothing], c: js.UndefOr[scala.Nothing], d: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(a: Double, b: js.UndefOr[scala.Nothing], c: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(a: Double, b: js.UndefOr[scala.Nothing], c: Double, d: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(a: Double, b: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(a: Double, b: Double, c: js.UndefOr[scala.Nothing], d: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(a: Double, b: Double, c: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicFunction")
-    @js.native
-    def cubicFunction(a: Double, b: Double, c: Double, d: Double): Unit = js.native
+    @scala.inline
+    def cubicFunction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")().asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Double, b: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Double, b: Double, c: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Double, b: Double, c: Double, d: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Double, b: Double, c: Unit, d: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Double, b: Unit, c: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Double, b: Unit, c: Double, d: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Double, b: Unit, c: Unit, d: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Unit, b: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Unit, b: Double, c: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Unit, b: Double, c: Double, d: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Unit, b: Double, c: Unit, d: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Unit, b: Unit, c: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Unit, b: Unit, c: Double, d: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cubicFunction(a: Unit, b: Unit, c: Unit, d: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Cubic root of number
       * @param number Number
       */
-    @JSGlobal("Ext.draw.Solver.cubicRoot")
-    @js.native
-    def cubicRoot(): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.cubicRoot")
-    @js.native
-    def cubicRoot(number: Double): Unit = js.native
+    @scala.inline
+    def cubicRoot(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cubicRoot")().asInstanceOf[Unit]
+    @scala.inline
+    def cubicRoot(number: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cubicRoot")(number.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method]  */
-    @JSGlobal("Ext.draw.Solver.destroy")
-    @js.native
-    def destroy(): Unit = js.native
+    @scala.inline
+    def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
     
     /** [Method] Returns the initial configuration passed to constructor
       * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
       * @returns Object/Mixed
       */
-    @JSGlobal("Ext.draw.Solver.getInitialConfig")
-    @js.native
-    def getInitialConfig(): js.Any = js.native
-    @JSGlobal("Ext.draw.Solver.getInitialConfig")
-    @js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Initialize configuration for this class
       * @param instanceConfig Object
       * @returns Object mixins The mixin prototypes as key - value pairs
       */
-    @JSGlobal("Ext.draw.Solver.initConfig")
-    @js.native
-    def initConfig(): js.Any = js.native
-    @JSGlobal("Ext.draw.Solver.initConfig")
-    @js.native
-    def initConfig(instanceConfig: js.Any): js.Any = js.native
+    @scala.inline
+    def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def initConfig(instanceConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Returns the function f x a  x  b and solver for f x y
       * @param a Number
       * @param b Number
       */
-    @JSGlobal("Ext.draw.Solver.linearFunction")
-    @js.native
-    def linearFunction(): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.linearFunction")
-    @js.native
-    def linearFunction(a: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.linearFunction")
-    @js.native
-    def linearFunction(a: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.linearFunction")
-    @js.native
-    def linearFunction(a: Double, b: Double): Unit = js.native
+    @scala.inline
+    def linearFunction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("linearFunction")().asInstanceOf[Unit]
+    @scala.inline
+    def linearFunction(a: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("linearFunction")(a.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def linearFunction(a: Double, b: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("linearFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def linearFunction(a: Unit, b: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("linearFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Returns the function f x a  x  2  b  x  c and solver for f x y
       * @param a Number
       * @param b Number
       * @param c Number
       */
-    @JSGlobal("Ext.draw.Solver.quadraticFunction")
-    @js.native
-    def quadraticFunction(): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.quadraticFunction")
-    @js.native
-    def quadraticFunction(a: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], c: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.quadraticFunction")
-    @js.native
-    def quadraticFunction(a: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.quadraticFunction")
-    @js.native
-    def quadraticFunction(a: js.UndefOr[scala.Nothing], b: Double, c: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.quadraticFunction")
-    @js.native
-    def quadraticFunction(a: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.quadraticFunction")
-    @js.native
-    def quadraticFunction(a: Double, b: js.UndefOr[scala.Nothing], c: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.quadraticFunction")
-    @js.native
-    def quadraticFunction(a: Double, b: Double): Unit = js.native
-    @JSGlobal("Ext.draw.Solver.quadraticFunction")
-    @js.native
-    def quadraticFunction(a: Double, b: Double, c: Double): Unit = js.native
+    @scala.inline
+    def quadraticFunction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFunction")().asInstanceOf[Unit]
+    @scala.inline
+    def quadraticFunction(a: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFunction")(a.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def quadraticFunction(a: Double, b: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quadraticFunction(a: Double, b: Double, c: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quadraticFunction(a: Double, b: Unit, c: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quadraticFunction(a: Unit, b: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quadraticFunction(a: Unit, b: Double, c: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quadraticFunction(a: Unit, b: Unit, c: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.draw.Solver.self")
@@ -977,106 +789,95 @@ object draw {
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
-    @JSGlobal("Ext.draw.Solver.statics")
-    @js.native
-    def statics(): IClass = js.native
+    @scala.inline
+    def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
   }
   
   @JSGlobal("Ext.draw.Surface")
   @js.native
   class Surface ()
-    extends typings.senchaTouch.Ext.draw.Surface
+    extends StObject
+       with typings.senchaTouch.Ext.draw.Surface
   /* static members */
   object Surface {
+    
+    @JSGlobal("Ext.draw.Surface")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** [Method] Add methods  properties to the prototype of this class
       * @param members Object
       */
-    @JSGlobal("Ext.draw.Surface.addMembers")
-    @js.native
-    def addMembers(): Unit = js.native
-    @JSGlobal("Ext.draw.Surface.addMembers")
-    @js.native
-    def addMembers(members: js.Any): Unit = js.native
+    @scala.inline
+    def addMembers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMembers")().asInstanceOf[Unit]
+    @scala.inline
+    def addMembers(members: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMembers")(members.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Add  override static properties of this class
       * @param members Object
       * @returns Ext.Base this
       */
-    @JSGlobal("Ext.draw.Surface.addStatics")
-    @js.native
-    def addStatics(): IBase = js.native
-    @JSGlobal("Ext.draw.Surface.addStatics")
-    @js.native
-    def addStatics(members: js.Any): IBase = js.native
+    @scala.inline
+    def addStatics(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("addStatics")().asInstanceOf[IBase]
+    @scala.inline
+    def addStatics(members: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("addStatics")(members.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method]
       * @param args Object
       */
-    @JSGlobal("Ext.draw.Surface.callParent")
-    @js.native
-    def callParent(): Unit = js.native
-    @JSGlobal("Ext.draw.Surface.callParent")
-    @js.native
-    def callParent(args: js.Any): Unit = js.native
+    @scala.inline
+    def callParent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Unit]
+    @scala.inline
+    def callParent(args: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Create a new instance of this Class
       * @returns Object the created instance.
       */
-    @JSGlobal("Ext.draw.Surface.create")
-    @js.native
-    def create(): js.Any = js.native
+    @scala.inline
+    def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
     
     /** [Method] Create aliases for existing prototype methods
       * @param alias String/Object The new method name, or an object to set multiple aliases. See flexSetter
       * @param origin String/Object The original method name
       */
-    @JSGlobal("Ext.draw.Surface.createAlias")
-    @js.native
-    def createAlias(): Unit = js.native
-    @JSGlobal("Ext.draw.Surface.createAlias")
-    @js.native
-    def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
-    @JSGlobal("Ext.draw.Surface.createAlias")
-    @js.native
-    def createAlias(alias: js.Any): Unit = js.native
-    @JSGlobal("Ext.draw.Surface.createAlias")
-    @js.native
-    def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
+    @scala.inline
+    def createAlias(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")().asInstanceOf[Unit]
+    @scala.inline
+    def createAlias(alias: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def createAlias(alias: js.Any, origin: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def createAlias(alias: Unit, origin: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Get the current class name in string format
       * @returns String className
       */
-    @JSGlobal("Ext.draw.Surface.getName")
-    @js.native
-    def getName(): java.lang.String = js.native
-    
-    /** [Method] Stably sort the list of sprites by their zIndex
-      * @param list Array
-      */
-    @JSGlobal("Ext.draw.Surface.stableSort")
-    @js.native
-    def stableSort(): Unit = js.native
-    @JSGlobal("Ext.draw.Surface.stableSort")
-    @js.native
-    def stableSort(list: typings.senchaTouch.Ext.Array): Unit = js.native
+    @scala.inline
+    def getName(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")().asInstanceOf[java.lang.String]
     
     /** [Method] Override members of this class
       * @param members Object The properties to add to this class. This should be specified as an object literal containing one or more properties.
       * @returns Ext.Base this class
       */
-    @JSGlobal("Ext.draw.Surface.override")
-    @js.native
-    def `override`(): IBase = js.native
-    @JSGlobal("Ext.draw.Surface.override")
-    @js.native
-    def `override`(members: js.Any): IBase = js.native
+    @scala.inline
+    def `override`(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("override")().asInstanceOf[IBase]
+    @scala.inline
+    def `override`(members: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("override")(members.asInstanceOf[js.Any]).asInstanceOf[IBase]
+    
+    /** [Method] Stably sort the list of sprites by their zIndex
+      * @param list Array
+      */
+    @scala.inline
+    def stableSort(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stableSort")().asInstanceOf[Unit]
+    @scala.inline
+    def stableSort(list: typings.senchaTouch.Ext.Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stableSort")(list.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSGlobal("Ext.draw.TextMeasurer")
   @js.native
   class TextMeasurer ()
-    extends typings.senchaTouch.Ext.draw.TextMeasurer
+    extends StObject
+       with typings.senchaTouch.Ext.draw.TextMeasurer
   /* static members */
   object TextMeasurer {
     
@@ -1088,97 +889,78 @@ object draw {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    @JSGlobal("Ext.draw.TextMeasurer.callOverridden")
-    @js.native
-    def callOverridden(): js.Any = js.native
-    @JSGlobal("Ext.draw.TextMeasurer.callOverridden")
-    @js.native
-    def callOverridden(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+    @scala.inline
+    def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    @JSGlobal("Ext.draw.TextMeasurer.callParent")
-    @js.native
-    def callParent(): js.Any = js.native
-    @JSGlobal("Ext.draw.TextMeasurer.callParent")
-    @js.native
-    def callParent(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+    @scala.inline
+    def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    @JSGlobal("Ext.draw.TextMeasurer.callSuper")
-    @js.native
-    def callSuper(): js.Any = js.native
-    @JSGlobal("Ext.draw.TextMeasurer.callSuper")
-    @js.native
-    def callSuper(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+    @scala.inline
+    def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method]  */
-    @JSGlobal("Ext.draw.TextMeasurer.destroy")
-    @js.native
-    def destroy(): Unit = js.native
+    @scala.inline
+    def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
     
     /** [Method] Returns the initial configuration passed to constructor
       * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
       * @returns Object/Mixed
       */
-    @JSGlobal("Ext.draw.TextMeasurer.getInitialConfig")
-    @js.native
-    def getInitialConfig(): js.Any = js.native
-    @JSGlobal("Ext.draw.TextMeasurer.getInitialConfig")
-    @js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Initialize configuration for this class
       * @param instanceConfig Object
       * @returns Object mixins The mixin prototypes as key - value pairs
       */
-    @JSGlobal("Ext.draw.TextMeasurer.initConfig")
-    @js.native
-    def initConfig(): js.Any = js.native
-    @JSGlobal("Ext.draw.TextMeasurer.initConfig")
-    @js.native
-    def initConfig(instanceConfig: js.Any): js.Any = js.native
+    @scala.inline
+    def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def initConfig(instanceConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Measure a text with specific font
       * @param text String
       * @param font String
       * @returns Object An object with width, height and sizes properties.
       */
-    @JSGlobal("Ext.draw.TextMeasurer.measureText")
-    @js.native
-    def measureText(): js.Any = js.native
-    @JSGlobal("Ext.draw.TextMeasurer.measureText")
-    @js.native
-    def measureText(text: js.UndefOr[scala.Nothing], font: java.lang.String): js.Any = js.native
-    @JSGlobal("Ext.draw.TextMeasurer.measureText")
-    @js.native
-    def measureText(text: java.lang.String): js.Any = js.native
-    @JSGlobal("Ext.draw.TextMeasurer.measureText")
-    @js.native
-    def measureText(text: java.lang.String, font: java.lang.String): js.Any = js.native
+    @scala.inline
+    def measureText(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("measureText")().asInstanceOf[js.Any]
+    @scala.inline
+    def measureText(text: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def measureText(text: java.lang.String, font: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any], font.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def measureText(text: Unit, font: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any], font.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /** [Method] Measure a single line text with specific font
       * @param text String
       * @param font String
       * @returns Object An object with width and height properties.
       */
-    @JSGlobal("Ext.draw.TextMeasurer.measureTextSingleLine")
-    @js.native
-    def measureTextSingleLine(): js.Any = js.native
-    @JSGlobal("Ext.draw.TextMeasurer.measureTextSingleLine")
-    @js.native
-    def measureTextSingleLine(text: js.UndefOr[scala.Nothing], font: java.lang.String): js.Any = js.native
-    @JSGlobal("Ext.draw.TextMeasurer.measureTextSingleLine")
-    @js.native
-    def measureTextSingleLine(text: java.lang.String): js.Any = js.native
-    @JSGlobal("Ext.draw.TextMeasurer.measureTextSingleLine")
-    @js.native
-    def measureTextSingleLine(text: java.lang.String, font: java.lang.String): js.Any = js.native
+    @scala.inline
+    def measureTextSingleLine(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("measureTextSingleLine")().asInstanceOf[js.Any]
+    @scala.inline
+    def measureTextSingleLine(text: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("measureTextSingleLine")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def measureTextSingleLine(text: java.lang.String, font: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextSingleLine")(text.asInstanceOf[js.Any], font.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def measureTextSingleLine(text: Unit, font: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextSingleLine")(text.asInstanceOf[js.Any], font.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.draw.TextMeasurer.self")
@@ -1190,15 +972,15 @@ object draw {
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
-    @JSGlobal("Ext.draw.TextMeasurer.statics")
-    @js.native
-    def statics(): IClass = js.native
+    @scala.inline
+    def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
   }
   
   @JSGlobal("Ext.draw.TimingFunctions")
   @js.native
   class TimingFunctions ()
-    extends typings.senchaTouch.Ext.draw.TimingFunctions
+    extends StObject
+       with typings.senchaTouch.Ext.draw.TimingFunctions
   /* static members */
   object TimingFunctions {
     
@@ -1210,61 +992,50 @@ object draw {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    @JSGlobal("Ext.draw.TimingFunctions.callOverridden")
-    @js.native
-    def callOverridden(): js.Any = js.native
-    @JSGlobal("Ext.draw.TimingFunctions.callOverridden")
-    @js.native
-    def callOverridden(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+    @scala.inline
+    def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    @JSGlobal("Ext.draw.TimingFunctions.callParent")
-    @js.native
-    def callParent(): js.Any = js.native
-    @JSGlobal("Ext.draw.TimingFunctions.callParent")
-    @js.native
-    def callParent(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+    @scala.inline
+    def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    @JSGlobal("Ext.draw.TimingFunctions.callSuper")
-    @js.native
-    def callSuper(): js.Any = js.native
-    @JSGlobal("Ext.draw.TimingFunctions.callSuper")
-    @js.native
-    def callSuper(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+    @scala.inline
+    def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method]  */
-    @JSGlobal("Ext.draw.TimingFunctions.destroy")
-    @js.native
-    def destroy(): Unit = js.native
+    @scala.inline
+    def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
     
     /** [Method] Returns the initial configuration passed to constructor
       * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
       * @returns Object/Mixed
       */
-    @JSGlobal("Ext.draw.TimingFunctions.getInitialConfig")
-    @js.native
-    def getInitialConfig(): js.Any = js.native
-    @JSGlobal("Ext.draw.TimingFunctions.getInitialConfig")
-    @js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Initialize configuration for this class
       * @param instanceConfig Object
       * @returns Object mixins The mixin prototypes as key - value pairs
       */
-    @JSGlobal("Ext.draw.TimingFunctions.initConfig")
-    @js.native
-    def initConfig(): js.Any = js.native
-    @JSGlobal("Ext.draw.TimingFunctions.initConfig")
-    @js.native
-    def initConfig(instanceConfig: js.Any): js.Any = js.native
+    @scala.inline
+    def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def initConfig(instanceConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.draw.TimingFunctions.self")
@@ -1276,9 +1047,8 @@ object draw {
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
-    @JSGlobal("Ext.draw.TimingFunctions.statics")
-    @js.native
-    def statics(): IClass = js.native
+    @scala.inline
+    def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
   }
   
   object sprite {
@@ -1286,7 +1056,8 @@ object draw {
     @JSGlobal("Ext.draw.sprite.AnimationParser")
     @js.native
     class AnimationParser ()
-      extends typings.senchaTouch.Ext.draw.sprite.AnimationParser
+      extends StObject
+         with typings.senchaTouch.Ext.draw.sprite.AnimationParser
     /* static members */
     object AnimationParser {
       
@@ -1298,61 +1069,50 @@ object draw {
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
         * @returns Object Returns the result of calling the overridden method
         */
-      @JSGlobal("Ext.draw.sprite.AnimationParser.callOverridden")
-      @js.native
-      def callOverridden(): js.Any = js.native
-      @JSGlobal("Ext.draw.sprite.AnimationParser.callOverridden")
-      @js.native
-      def callOverridden(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+      @scala.inline
+      def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Call the parent method of the current method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
         * @returns Object Returns the result of calling the parent method
         */
-      @JSGlobal("Ext.draw.sprite.AnimationParser.callParent")
-      @js.native
-      def callParent(): js.Any = js.native
-      @JSGlobal("Ext.draw.sprite.AnimationParser.callParent")
-      @js.native
-      def callParent(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+      @scala.inline
+      def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
         * @returns Object Returns the result of calling the superclass method
         */
-      @JSGlobal("Ext.draw.sprite.AnimationParser.callSuper")
-      @js.native
-      def callSuper(): js.Any = js.native
-      @JSGlobal("Ext.draw.sprite.AnimationParser.callSuper")
-      @js.native
-      def callSuper(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+      @scala.inline
+      def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method]  */
-      @JSGlobal("Ext.draw.sprite.AnimationParser.destroy")
-      @js.native
-      def destroy(): Unit = js.native
+      @scala.inline
+      def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
       
       /** [Method] Returns the initial configuration passed to constructor
         * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
         * @returns Object/Mixed
         */
-      @JSGlobal("Ext.draw.sprite.AnimationParser.getInitialConfig")
-      @js.native
-      def getInitialConfig(): js.Any = js.native
-      @JSGlobal("Ext.draw.sprite.AnimationParser.getInitialConfig")
-      @js.native
-      def getInitialConfig(name: java.lang.String): js.Any = js.native
+      @scala.inline
+      def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+      @scala.inline
+      def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Initialize configuration for this class
         * @param instanceConfig Object
         * @returns Object mixins The mixin prototypes as key - value pairs
         */
-      @JSGlobal("Ext.draw.sprite.AnimationParser.initConfig")
-      @js.native
-      def initConfig(): js.Any = js.native
-      @JSGlobal("Ext.draw.sprite.AnimationParser.initConfig")
-      @js.native
-      def initConfig(instanceConfig: js.Any): js.Any = js.native
+      @scala.inline
+      def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
+      @scala.inline
+      def initConfig(instanceConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Property] (Ext.Class) */
       @JSGlobal("Ext.draw.sprite.AnimationParser.self")
@@ -1364,15 +1124,15 @@ object draw {
       /** [Method] Get the reference to the class from which this object was instantiated
         * @returns Ext.Class
         */
-      @JSGlobal("Ext.draw.sprite.AnimationParser.statics")
-      @js.native
-      def statics(): IClass = js.native
+      @scala.inline
+      def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
     }
     
     @JSGlobal("Ext.draw.sprite.AttributeParser")
     @js.native
     class AttributeParser ()
-      extends typings.senchaTouch.Ext.draw.sprite.AttributeParser
+      extends StObject
+         with typings.senchaTouch.Ext.draw.sprite.AttributeParser
     /* static members */
     object AttributeParser {
       
@@ -1384,61 +1144,50 @@ object draw {
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
         * @returns Object Returns the result of calling the overridden method
         */
-      @JSGlobal("Ext.draw.sprite.AttributeParser.callOverridden")
-      @js.native
-      def callOverridden(): js.Any = js.native
-      @JSGlobal("Ext.draw.sprite.AttributeParser.callOverridden")
-      @js.native
-      def callOverridden(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+      @scala.inline
+      def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Call the parent method of the current method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
         * @returns Object Returns the result of calling the parent method
         */
-      @JSGlobal("Ext.draw.sprite.AttributeParser.callParent")
-      @js.native
-      def callParent(): js.Any = js.native
-      @JSGlobal("Ext.draw.sprite.AttributeParser.callParent")
-      @js.native
-      def callParent(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+      @scala.inline
+      def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
         * @returns Object Returns the result of calling the superclass method
         */
-      @JSGlobal("Ext.draw.sprite.AttributeParser.callSuper")
-      @js.native
-      def callSuper(): js.Any = js.native
-      @JSGlobal("Ext.draw.sprite.AttributeParser.callSuper")
-      @js.native
-      def callSuper(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+      @scala.inline
+      def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method]  */
-      @JSGlobal("Ext.draw.sprite.AttributeParser.destroy")
-      @js.native
-      def destroy(): Unit = js.native
+      @scala.inline
+      def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
       
       /** [Method] Returns the initial configuration passed to constructor
         * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
         * @returns Object/Mixed
         */
-      @JSGlobal("Ext.draw.sprite.AttributeParser.getInitialConfig")
-      @js.native
-      def getInitialConfig(): js.Any = js.native
-      @JSGlobal("Ext.draw.sprite.AttributeParser.getInitialConfig")
-      @js.native
-      def getInitialConfig(name: java.lang.String): js.Any = js.native
+      @scala.inline
+      def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+      @scala.inline
+      def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Initialize configuration for this class
         * @param instanceConfig Object
         * @returns Object mixins The mixin prototypes as key - value pairs
         */
-      @JSGlobal("Ext.draw.sprite.AttributeParser.initConfig")
-      @js.native
-      def initConfig(): js.Any = js.native
-      @JSGlobal("Ext.draw.sprite.AttributeParser.initConfig")
-      @js.native
-      def initConfig(instanceConfig: js.Any): js.Any = js.native
+      @scala.inline
+      def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
+      @scala.inline
+      def initConfig(instanceConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Property] (Ext.Class) */
       @JSGlobal("Ext.draw.sprite.AttributeParser.self")
@@ -1450,9 +1199,8 @@ object draw {
       /** [Method] Get the reference to the class from which this object was instantiated
         * @returns Ext.Class
         */
-      @JSGlobal("Ext.draw.sprite.AttributeParser.statics")
-      @js.native
-      def statics(): IClass = js.native
+      @scala.inline
+      def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
     }
   }
 }

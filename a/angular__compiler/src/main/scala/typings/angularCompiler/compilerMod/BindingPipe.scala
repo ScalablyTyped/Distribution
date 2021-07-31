@@ -2,7 +2,6 @@ package typings.angularCompiler.compilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "BindingPipe")
@@ -14,7 +13,7 @@ class BindingPipe protected ()
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
     exp: typings.angularCompiler.astMod.AST,
     name: String,
-    args: js.Array[_],
+    args: js.Array[js.Any],
     nameSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan
   ) = this()
 }

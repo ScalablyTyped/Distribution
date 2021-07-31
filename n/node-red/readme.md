@@ -10,9 +10,9 @@ Low-code programming for event-driven applications
 | ------------------ | :-------------: |
 | Full name          | node-red |
 | Keywords           | editor, messaging, iot, flow |
-| # releases         | 37 |
-| # dependents       | 75 |
-| # downloads        | 878622 |
+| # releases         | 39 |
+| # dependents       | 80 |
+| # downloads        | 975077 |
 | # stars            | 55 |
 
 ## Links

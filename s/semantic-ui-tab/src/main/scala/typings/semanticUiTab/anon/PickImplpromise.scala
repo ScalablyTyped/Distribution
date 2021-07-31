@@ -2,14 +2,12 @@ package typings.semanticUiTab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-tab.SemanticUI.Tab.MetadataSettings._Impl, 'promise'> */
-@js.native
 trait PickImplpromise extends StObject {
   
-  var promise: String = js.native
+  var promise: String
 }
 object PickImplpromise {
   

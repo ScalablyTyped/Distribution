@@ -2,31 +2,29 @@ package typings.vsoNodeApi.coreInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebApiProjectCollectionRef extends StObject {
   
   /**
     * Collection Tfs Url (Host Url)
     */
-  var collectionUrl: String = js.native
+  var collectionUrl: String
   
   /**
     * Collection Guid
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Collection Name
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Collection REST Url
     */
-  var url: String = js.native
+  var url: String
 }
 object WebApiProjectCollectionRef {
   

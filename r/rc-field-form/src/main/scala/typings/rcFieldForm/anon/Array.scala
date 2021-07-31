@@ -3,37 +3,35 @@ package typings.rcFieldForm.anon
 import typings.rcFieldForm.interfaceMod.ValidateMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Array extends StObject {
   
-  var array: js.UndefOr[ValidateMessage] = js.native
+  var array: js.UndefOr[ValidateMessage] = js.undefined
   
-  var boolean: js.UndefOr[ValidateMessage] = js.native
+  var boolean: js.UndefOr[ValidateMessage] = js.undefined
   
-  var date: js.UndefOr[ValidateMessage] = js.native
+  var date: js.UndefOr[ValidateMessage] = js.undefined
   
-  var email: js.UndefOr[ValidateMessage] = js.native
+  var email: js.UndefOr[ValidateMessage] = js.undefined
   
-  var float: js.UndefOr[ValidateMessage] = js.native
+  var float: js.UndefOr[ValidateMessage] = js.undefined
   
-  var hex: js.UndefOr[ValidateMessage] = js.native
+  var hex: js.UndefOr[ValidateMessage] = js.undefined
   
-  var integer: js.UndefOr[ValidateMessage] = js.native
+  var integer: js.UndefOr[ValidateMessage] = js.undefined
   
-  var method: js.UndefOr[ValidateMessage] = js.native
+  var method: js.UndefOr[ValidateMessage] = js.undefined
   
-  var number: js.UndefOr[ValidateMessage] = js.native
+  var number: js.UndefOr[ValidateMessage] = js.undefined
   
-  var `object`: js.UndefOr[ValidateMessage] = js.native
+  var `object`: js.UndefOr[ValidateMessage] = js.undefined
   
-  var regexp: js.UndefOr[ValidateMessage] = js.native
+  var regexp: js.UndefOr[ValidateMessage] = js.undefined
   
-  var string: js.UndefOr[ValidateMessage] = js.native
+  var string: js.UndefOr[ValidateMessage] = js.undefined
   
-  var url: js.UndefOr[ValidateMessage] = js.native
+  var url: js.UndefOr[ValidateMessage] = js.undefined
 }
 object Array {
   

@@ -27,11 +27,9 @@ import typings.officeJs.officeJsStrings.Triple
 import typings.officeJs.officeJsStrings.Wave
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `tableBorder.toJSON()`. */
-@js.native
 trait TableBorderData extends StObject {
   
   /**
@@ -40,7 +38,7 @@ trait TableBorderData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait TableBorderData extends StObject {
     */
   var `type`: js.UndefOr[
     BorderType | Mixed | None | Single | Double | Dotted | Dashed | DotDashed | Dot2Dashed | Triple | ThinThickSmall | ThickThinSmall | ThinThickThinSmall | ThinThickMed | ThickThinMed | ThinThickThinMed | ThinThickLarge | ThickThinLarge | ThinThickThinLarge | Wave | DoubleWave | DashedSmall | DashDotStroked | ThreeDEmboss | ThreeDEngrave
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait TableBorderData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var width: js.UndefOr[scala.Double] = js.native
+  var width: js.UndefOr[scala.Double] = js.undefined
 }
 object TableBorderData {
   

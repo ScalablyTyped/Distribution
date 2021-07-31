@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.intl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object intlMod extends Shortcut {

@@ -2,17 +2,15 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeConfig extends StObject {
   
-  var sizes: js.UndefOr[String] = js.native
+  var sizes: js.UndefOr[String] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var srcSet: js.UndefOr[String] = js.native
+  var srcSet: js.UndefOr[String] = js.undefined
 }
 object AttributeConfig {
   

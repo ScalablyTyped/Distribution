@@ -3,7 +3,6 @@ package typings.elasticApmNode.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Inlined from @types/aws-lambda - start
@@ -15,14 +14,13 @@ object AwsLambda {
     Unit
   ]
   
-  @js.native
   trait ClientContext extends StObject {
     
-    var client: ClientContextClient = js.native
+    var client: ClientContextClient
     
-    var custom: js.UndefOr[js.Any] = js.native
+    var custom: js.UndefOr[js.Any] = js.undefined
     
-    var env: ClientContextEnv = js.native
+    var env: ClientContextEnv
   }
   object ClientContext {
     
@@ -49,18 +47,17 @@ object AwsLambda {
     }
   }
   
-  @js.native
   trait ClientContextClient extends StObject {
     
-    var appPackageName: String = js.native
+    var appPackageName: String
     
-    var appTitle: String = js.native
+    var appTitle: String
     
-    var appVersionCode: String = js.native
+    var appVersionCode: String
     
-    var appVersionName: String = js.native
+    var appVersionName: String
     
-    var installationId: String = js.native
+    var installationId: String
   }
   object ClientContextClient {
     
@@ -96,18 +93,17 @@ object AwsLambda {
     }
   }
   
-  @js.native
   trait ClientContextEnv extends StObject {
     
-    var locale: String = js.native
+    var locale: String
     
-    var make: String = js.native
+    var make: String
     
-    var model: String = js.native
+    var model: String
     
-    var platform: String = js.native
+    var platform: String
     
-    var platformVersion: String = js.native
+    var platformVersion: String
   }
   object ClientContextEnv {
     
@@ -137,12 +133,11 @@ object AwsLambda {
     }
   }
   
-  @js.native
   trait CognitoIdentity extends StObject {
     
-    var cognitoIdentityId: String = js.native
+    var cognitoIdentityId: String
     
-    var cognitoIdentityPoolId: String = js.native
+    var cognitoIdentityPoolId: String
   }
   object CognitoIdentity {
     
@@ -176,7 +171,7 @@ object AwsLambda {
     // Functions for compatibility with earlier Node.js Runtime v0.10.42
     // For more details see http://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-using-old-runtime.html#nodejs-prog-model-oldruntime-context-methods
     def done(): Unit = js.native
-    def done(error: js.UndefOr[scala.Nothing], result: js.Any): Unit = js.native
+    def done(error: Unit, result: js.Any): Unit = js.native
     def done(error: Error): Unit = js.native
     def done(error: Error, result: js.Any): Unit = js.native
     

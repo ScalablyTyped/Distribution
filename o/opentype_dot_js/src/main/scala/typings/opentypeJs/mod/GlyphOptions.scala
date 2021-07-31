@@ -2,33 +2,31 @@ package typings.opentypeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlyphOptions extends StObject {
   
-  var advanceWidth: js.UndefOr[Double] = js.native
+  var advanceWidth: js.UndefOr[Double] = js.undefined
   
-  var font: js.UndefOr[Font] = js.native
+  var font: js.UndefOr[Font] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[Path] = js.native
+  var path: js.UndefOr[Path] = js.undefined
   
-  var unicode: js.UndefOr[Double] = js.native
+  var unicode: js.UndefOr[Double] = js.undefined
   
-  var unicodes: js.UndefOr[js.Array[Double]] = js.native
+  var unicodes: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var xMax: js.UndefOr[Double] = js.native
+  var xMax: js.UndefOr[Double] = js.undefined
   
-  var xMin: js.UndefOr[Double] = js.native
+  var xMin: js.UndefOr[Double] = js.undefined
   
-  var yMax: js.UndefOr[Double] = js.native
+  var yMax: js.UndefOr[Double] = js.undefined
   
-  var yMin: js.UndefOr[Double] = js.native
+  var yMin: js.UndefOr[Double] = js.undefined
 }
 object GlyphOptions {
   

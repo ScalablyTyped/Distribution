@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowDraggable extends StObject {
   
-  var axis: js.UndefOr[String] = js.native
+  var axis: js.UndefOr[String] = js.undefined
   
-  var containment: js.UndefOr[js.Any | String] = js.native
+  var containment: js.UndefOr[js.Any | String] = js.undefined
   
-  var dragHandle: js.UndefOr[js.Any | String] = js.native
+  var dragHandle: js.UndefOr[js.Any | String] = js.undefined
 }
 object WindowDraggable {
   

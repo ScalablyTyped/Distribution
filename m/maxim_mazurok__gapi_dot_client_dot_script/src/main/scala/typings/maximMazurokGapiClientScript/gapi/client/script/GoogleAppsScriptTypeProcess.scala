@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAppsScriptTypeProcess extends StObject {
   
   /** Duration the execution spent executing. */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /** Name of the function the started the execution. */
-  var functionName: js.UndefOr[String] = js.native
+  var functionName: js.UndefOr[String] = js.undefined
   
   /** The executions status. */
-  var processStatus: js.UndefOr[String] = js.native
+  var processStatus: js.UndefOr[String] = js.undefined
   
   /** The executions type. */
-  var processType: js.UndefOr[String] = js.native
+  var processType: js.UndefOr[String] = js.undefined
   
   /** Name of the script being executed. */
-  var projectName: js.UndefOr[String] = js.native
+  var projectName: js.UndefOr[String] = js.undefined
   
   /** Time the execution started. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** The executing users access level to the script. */
-  var userAccessLevel: js.UndefOr[String] = js.native
+  var userAccessLevel: js.UndefOr[String] = js.undefined
 }
 object GoogleAppsScriptTypeProcess {
   

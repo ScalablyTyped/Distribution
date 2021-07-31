@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SearchAttribute...
   */
-@js.native
 trait ISearchAttribute extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait ISearchAttribute extends StObject {
     * SearchObjectOptions.qAttributes
     * It will be qProperty for SearchObjectOptions.
     */
-  var qKey: String = js.native
+  var qKey: String
   
   /**
     * String corresponding to qKey for the current SearchGroupItemMatch.
     * For example, if the match is Make by Price found in the title of a generic object, qValue will be qMetaDef/title.
     */
-  var qValue: String = js.native
+  var qValue: String
 }
 object ISearchAttribute {
   

@@ -2,17 +2,15 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreetViewLink extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var heading: js.UndefOr[Double] = js.native
+  var heading: js.UndefOr[Double] = js.undefined
   
-  var pano: js.UndefOr[String] = js.native
+  var pano: js.UndefOr[String] = js.undefined
 }
 object StreetViewLink {
   

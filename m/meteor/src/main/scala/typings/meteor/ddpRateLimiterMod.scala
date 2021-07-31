@@ -2,33 +2,33 @@ package typings.meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ddpRateLimiterMod {
   
   object DDPRateLimiter {
     
-    @JSImport("meteor/ddp-rate-limiter", "DDPRateLimiter.addRule")
+    @JSImport("meteor/ddp-rate-limiter", "DDPRateLimiter")
     @js.native
-    def addRule(matcher: Matcher, numRequests: Double, timeInterval: Double): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("meteor/ddp-rate-limiter", "DDPRateLimiter.removeRule")
-    @js.native
-    def removeRule(ruleId: String): Boolean = js.native
+    @scala.inline
+    def addRule(matcher: Matcher, numRequests: Double, timeInterval: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addRule")(matcher.asInstanceOf[js.Any], numRequests.asInstanceOf[js.Any], timeInterval.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @js.native
+    @scala.inline
+    def removeRule(ruleId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("removeRule")(ruleId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
     trait Matcher extends StObject {
       
-      var clientAddress: js.UndefOr[String | (js.Function1[/* clientAddress */ String, Boolean])] = js.native
+      var clientAddress: js.UndefOr[String | (js.Function1[/* clientAddress */ String, Boolean])] = js.undefined
       
-      var connectionId: js.UndefOr[String | (js.Function1[/* connectionId */ String, Boolean])] = js.native
+      var connectionId: js.UndefOr[String | (js.Function1[/* connectionId */ String, Boolean])] = js.undefined
       
-      var name: js.UndefOr[String | (js.Function1[/* name */ String, Boolean])] = js.native
+      var name: js.UndefOr[String | (js.Function1[/* name */ String, Boolean])] = js.undefined
       
-      var `type`: js.UndefOr[String | (js.Function1[/* type */ String, Boolean])] = js.native
+      var `type`: js.UndefOr[String | (js.Function1[/* type */ String, Boolean])] = js.undefined
       
-      var userId: js.UndefOr[String | (js.Function1[/* userId */ String, Boolean])] = js.native
+      var userId: js.UndefOr[String | (js.Function1[/* userId */ String, Boolean])] = js.undefined
     }
     object Matcher {
       

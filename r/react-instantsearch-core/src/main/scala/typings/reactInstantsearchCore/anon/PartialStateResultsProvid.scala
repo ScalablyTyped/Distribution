@@ -6,26 +6,24 @@ import typings.reactInstantsearchCore.mod.SearchResults
 import typings.reactInstantsearchCore.mod.SearchState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-instantsearch-core.react-instantsearch-core.StateResultsProvided<any>> */
-@js.native
 trait PartialStateResultsProvid extends StObject {
   
-  var allSearchResults: js.UndefOr[AllSearchResults[_]] = js.native
+  var allSearchResults: js.UndefOr[AllSearchResults[js.Any]] = js.undefined
   
-  var error: js.UndefOr[AlgoliaError] = js.native
+  var error: js.UndefOr[AlgoliaError] = js.undefined
   
-  var isSearchStalled: js.UndefOr[js.Any] = js.native
+  var isSearchStalled: js.UndefOr[js.Any] = js.undefined
   
-  var searchResults: js.UndefOr[SearchResults[_]] = js.native
+  var searchResults: js.UndefOr[SearchResults[js.Any]] = js.undefined
   
-  var searchState: js.UndefOr[SearchState] = js.native
+  var searchState: js.UndefOr[SearchState] = js.undefined
   
-  var searching: js.UndefOr[Boolean] = js.native
+  var searching: js.UndefOr[Boolean] = js.undefined
   
-  var searchingForFacetValues: js.UndefOr[js.Any] = js.native
+  var searchingForFacetValues: js.UndefOr[js.Any] = js.undefined
 }
 object PartialStateResultsProvid {
   
@@ -39,7 +37,7 @@ object PartialStateResultsProvid {
   implicit class PartialStateResultsProvidMutableBuilder[Self <: PartialStateResultsProvid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAllSearchResults(value: AllSearchResults[_]): Self = StObject.set(x, "allSearchResults", value.asInstanceOf[js.Any])
+    def setAllSearchResults(value: AllSearchResults[js.Any]): Self = StObject.set(x, "allSearchResults", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAllSearchResultsUndefined: Self = StObject.set(x, "allSearchResults", js.undefined)
@@ -57,7 +55,7 @@ object PartialStateResultsProvid {
     def setIsSearchStalledUndefined: Self = StObject.set(x, "isSearchStalled", js.undefined)
     
     @scala.inline
-    def setSearchResults(value: SearchResults[_]): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
+    def setSearchResults(value: SearchResults[js.Any]): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSearchResultsUndefined: Self = StObject.set(x, "searchResults", js.undefined)

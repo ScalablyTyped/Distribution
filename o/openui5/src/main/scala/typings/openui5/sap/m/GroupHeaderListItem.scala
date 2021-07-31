@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.TextDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupHeaderListItem extends ListItemBase {
+trait GroupHeaderListItem
+  extends StObject
+     with ListItemBase {
   
   /**
     * Gets current value of property <code>count</code>.Defines the count of items in the group, but it

@@ -10,10 +10,10 @@ A pure JavaScript implementation of Sass.
 | ------------------ | :-------------: |
 | Full name          | sass |
 | Keywords           | style, scss, sass, preprocessor, css |
-| # releases         | 62 |
-| # dependents       | 989 |
-| # downloads        | 84285956 |
-| # stars            | 21 |
+| # releases         | 66 |
+| # dependents       | 1403 |
+| # downloads        | 120416373 |
+| # stars            | 23 |
 
 ## Links
 - [Homepage](https://github.com/sass/dart-sass)

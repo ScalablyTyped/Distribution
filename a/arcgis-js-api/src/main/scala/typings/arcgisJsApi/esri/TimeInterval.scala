@@ -12,12 +12,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.weeks
 import typings.arcgisJsApi.arcgisJsApiStrings.years
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TimeInterval
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**

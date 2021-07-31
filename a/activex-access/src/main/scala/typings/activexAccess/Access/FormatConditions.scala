@@ -4,7 +4,6 @@ import typings.activexAccess.activexAccessNumbers.`0`
 import typings.activexAccess.activexAccessNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,9 @@ trait FormatConditions extends StObject {
   
   /** @param Operator [Operator=0] */
   def Add(Type: AcFormatConditionType): FormatCondition = js.native
-  def Add(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: String): FormatCondition = js.native
-  def Add(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: Boolean): FormatCondition = js.native
-  def Add(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: Double): FormatCondition = js.native
+  def Add(Type: AcFormatConditionType, Operator: Unit, Expression1: String): FormatCondition = js.native
+  def Add(Type: AcFormatConditionType, Operator: Unit, Expression1: Boolean): FormatCondition = js.native
+  def Add(Type: AcFormatConditionType, Operator: Unit, Expression1: Double): FormatCondition = js.native
   def Add(Type: AcFormatConditionType, Operator: AcFormatConditionOperator): FormatCondition = js.native
   def Add(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: String): FormatCondition = js.native
   def Add(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: Boolean): FormatCondition = js.native
@@ -60,11 +59,11 @@ trait FormatConditions extends StObject {
   def Add_1(Type: AcFormatConditionType, Operator: `1`, Expression1: Double, Expression2: Double): FormatCondition = js.native
   /** @param Operator [Operator=0] */
   @JSName("Add")
-  def Add_1(Type: `1`, Operator: js.UndefOr[scala.Nothing], Expression1: String): FormatCondition = js.native
+  def Add_1(Type: `1`, Operator: Unit, Expression1: String): FormatCondition = js.native
   @JSName("Add")
-  def Add_1(Type: `1`, Operator: js.UndefOr[scala.Nothing], Expression1: Boolean): FormatCondition = js.native
+  def Add_1(Type: `1`, Operator: Unit, Expression1: Boolean): FormatCondition = js.native
   @JSName("Add")
-  def Add_1(Type: `1`, Operator: js.UndefOr[scala.Nothing], Expression1: Double): FormatCondition = js.native
+  def Add_1(Type: `1`, Operator: Unit, Expression1: Double): FormatCondition = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native
   

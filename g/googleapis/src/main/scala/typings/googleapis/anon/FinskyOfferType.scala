@@ -2,21 +2,19 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinskyOfferType extends StObject {
   
-  var finskyOfferType: js.UndefOr[Double] = js.native
+  var finskyOfferType: js.UndefOr[Double] = js.undefined
   
-  var giftable: js.UndefOr[Boolean] = js.native
+  var giftable: js.UndefOr[Boolean] = js.undefined
   
-  var listPrice: js.UndefOr[AmountInMicros] = js.native
+  var listPrice: js.UndefOr[AmountInMicros] = js.undefined
   
-  var rentalDuration: js.UndefOr[Unit] = js.native
+  var rentalDuration: js.UndefOr[Unit] = js.undefined
   
-  var retailPrice: js.UndefOr[AmountInMicros] = js.native
+  var retailPrice: js.UndefOr[AmountInMicros] = js.undefined
 }
 object FinskyOfferType {
   

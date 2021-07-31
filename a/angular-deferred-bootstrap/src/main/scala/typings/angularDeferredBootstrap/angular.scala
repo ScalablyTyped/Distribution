@@ -4,19 +4,17 @@ import typings.angular.mod.IPromise
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angular {
   
-  @js.native
   trait IConfigParam extends StObject {
     
-    var element: js.UndefOr[Node] = js.native
+    var element: js.UndefOr[Node] = js.undefined
     
-    var module: js.UndefOr[String] = js.native
+    var module: js.UndefOr[String] = js.undefined
     
-    var resolve: js.Any = js.native
+    var resolve: js.Any
   }
   object IConfigParam {
     
@@ -46,10 +44,9 @@ object angular {
     }
   }
   
-  @js.native
   trait IDeferredBootstrapperStatic extends StObject {
     
-    def bootstrap(configParam: IConfigParam): IPromise[Boolean] = js.native
+    def bootstrap(configParam: IConfigParam): IPromise[Boolean]
   }
   object IDeferredBootstrapperStatic {
     

@@ -6,17 +6,18 @@ import typings.rbx.factoryMod.MakeValidatingTransformFunction
 import typings.rbx.factoryMod.TransformFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object otherMod {
   
-  @JSImport("rbx/base/helpers/other", "makePropTypes")
+  @JSImport("rbx/base/helpers/other", JSImport.Namespace)
   @js.native
-  def makePropTypes(): ValidationMap[_] = js.native
-  @JSImport("rbx/base/helpers/other", "makePropTypes")
-  @js.native
-  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[_] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
+  @scala.inline
+  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
   
   @JSImport("rbx/base/helpers/other", "makeValidatingTransform")
   @js.native
@@ -26,20 +27,19 @@ object otherMod {
   @js.native
   val transform: TransformFunction[OtherHelpersProps, js.Object] = js.native
   
-  @js.native
   trait OtherHelpersProps extends StObject {
     
-    var marginless: js.UndefOr[Boolean] = js.native
+    var marginless: js.UndefOr[Boolean] = js.undefined
     
-    var paddingless: js.UndefOr[Boolean] = js.native
+    var paddingless: js.UndefOr[Boolean] = js.undefined
     
-    var radiusless: js.UndefOr[Boolean] = js.native
+    var radiusless: js.UndefOr[Boolean] = js.undefined
     
-    var relative: js.UndefOr[Boolean] = js.native
+    var relative: js.UndefOr[Boolean] = js.undefined
     
-    var shadowless: js.UndefOr[Boolean] = js.native
+    var shadowless: js.UndefOr[Boolean] = js.undefined
     
-    var unselectable: js.UndefOr[Boolean] = js.native
+    var unselectable: js.UndefOr[Boolean] = js.undefined
   }
   object OtherHelpersProps {
     

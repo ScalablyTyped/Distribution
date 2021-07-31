@@ -33,10 +33,13 @@ import typings.geolib.typesMod.LongitudeKeys
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("geolib", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("geolib", "MAXLAT")
   @js.native
@@ -62,37 +65,28 @@ object mod {
   @js.native
   val areaConversion: unitObject = js.native
   
-  @JSImport("geolib", "computeDestinationPoint")
-  @js.native
-  def computeDestinationPoint(start: GeolibInputCoordinates, distance: Double, bearing: Double): Latitude = js.native
-  @JSImport("geolib", "computeDestinationPoint")
-  @js.native
-  def computeDestinationPoint(start: GeolibInputCoordinates, distance: Double, bearing: Double, radius: Double): Latitude = js.native
+  @scala.inline
+  def computeDestinationPoint(start: GeolibInputCoordinates, distance: Double, bearing: Double): Latitude = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDestinationPoint")(start.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], bearing.asInstanceOf[js.Any])).asInstanceOf[Latitude]
+  @scala.inline
+  def computeDestinationPoint(start: GeolibInputCoordinates, distance: Double, bearing: Double, radius: Double): Latitude = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDestinationPoint")(start.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], bearing.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Latitude]
   
-  @JSImport("geolib", "convertArea")
-  @js.native
-  def convertArea(squareMeters: Double): Double = js.native
-  @JSImport("geolib", "convertArea")
-  @js.native
-  def convertArea(squareMeters: Double, targetUnit: String): Double = js.native
+  @scala.inline
+  def convertArea(squareMeters: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("convertArea")(squareMeters.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def convertArea(squareMeters: Double, targetUnit: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convertArea")(squareMeters.asInstanceOf[js.Any], targetUnit.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("geolib", "convertDistance")
-  @js.native
-  def convertDistance(meters: Double): Double = js.native
-  @JSImport("geolib", "convertDistance")
-  @js.native
-  def convertDistance(meters: Double, targetUnit: String): Double = js.native
+  @scala.inline
+  def convertDistance(meters: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDistance")(meters.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def convertDistance(meters: Double, targetUnit: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDistance")(meters.asInstanceOf[js.Any], targetUnit.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("geolib", "convertSpeed")
-  @js.native
-  def convertSpeed(metersPerSecond: Double): Double = js.native
-  @JSImport("geolib", "convertSpeed")
-  @js.native
-  def convertSpeed(metersPerSecond: Double, targetUnit: String): Double = js.native
+  @scala.inline
+  def convertSpeed(metersPerSecond: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("convertSpeed")(metersPerSecond.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def convertSpeed(metersPerSecond: Double, targetUnit: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convertSpeed")(metersPerSecond.asInstanceOf[js.Any], targetUnit.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("geolib", "decimalToSexagesimal")
-  @js.native
-  def decimalToSexagesimal(decimal: Double): String = js.native
+  @scala.inline
+  def decimalToSexagesimal(decimal: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decimalToSexagesimal")(decimal.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("geolib", "distanceConversion")
   @js.native
@@ -102,93 +96,70 @@ object mod {
   @js.native
   val earthRadius: /* 6378137 */ Double = js.native
   
-  @JSImport("geolib", "findNearest")
-  @js.native
-  def findNearest(point: GeolibInputCoordinates, coords: js.Array[GeolibInputCoordinates]): GeolibInputCoordinates = js.native
+  @scala.inline
+  def findNearest(point: GeolibInputCoordinates, coords: js.Array[GeolibInputCoordinates]): GeolibInputCoordinates = (^.asInstanceOf[js.Dynamic].applyDynamic("findNearest")(point.asInstanceOf[js.Any], coords.asInstanceOf[js.Any])).asInstanceOf[GeolibInputCoordinates]
   
-  @JSImport("geolib", "getAreaOfPolygon")
-  @js.native
-  def getAreaOfPolygon(points: js.Array[GeolibInputCoordinates]): Double = js.native
+  @scala.inline
+  def getAreaOfPolygon(points: js.Array[GeolibInputCoordinates]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getAreaOfPolygon")(points.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("geolib", "getBounds")
-  @js.native
-  def getBounds(points: js.Array[_]): js.Any = js.native
+  @scala.inline
+  def getBounds(points: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBounds")(points.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("geolib", "getBoundsOfDistance")
-  @js.native
-  def getBoundsOfDistance(point: GeolibInputCoordinates, distance: Double): js.Array[Latitude] = js.native
+  @scala.inline
+  def getBoundsOfDistance(point: GeolibInputCoordinates, distance: Double): js.Array[Latitude] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsOfDistance")(point.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[js.Array[Latitude]]
   
-  @JSImport("geolib", "getCenter")
-  @js.native
-  def getCenter(points: js.Array[GeolibInputCoordinates]): `false` | Longitude = js.native
+  @scala.inline
+  def getCenter(points: js.Array[GeolibInputCoordinates]): `false` | Longitude = ^.asInstanceOf[js.Dynamic].applyDynamic("getCenter")(points.asInstanceOf[js.Any]).asInstanceOf[`false` | Longitude]
   
-  @JSImport("geolib", "getCenterOfBounds")
-  @js.native
-  def getCenterOfBounds(coords: js.Array[GeolibInputCoordinates]): Latitude = js.native
+  @scala.inline
+  def getCenterOfBounds(coords: js.Array[GeolibInputCoordinates]): Latitude = ^.asInstanceOf[js.Dynamic].applyDynamic("getCenterOfBounds")(coords.asInstanceOf[js.Any]).asInstanceOf[Latitude]
   
-  @JSImport("geolib", "getCompassDirection")
-  @js.native
-  def getCompassDirection(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates): S | W | NNE | NE | ENE | E | ESE | SE | SSE | SSW | SW | WSW | WNW | NW | NNW | N = js.native
-  @JSImport("geolib", "getCompassDirection")
-  @js.native
-  def getCompassDirection(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates, bearingFn: BearingFunction): S | W | NNE | NE | ENE | E | ESE | SE | SSE | SSW | SW | WSW | WNW | NW | NNW | N = js.native
+  @scala.inline
+  def getCompassDirection(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates): S | W | NNE | NE | ENE | E | ESE | SE | SSE | SSW | SW | WSW | WNW | NW | NNW | N = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompassDirection")(origin.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[S | W | NNE | NE | ENE | E | ESE | SE | SSE | SSW | SW | WSW | WNW | NW | NNW | N]
+  @scala.inline
+  def getCompassDirection(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates, bearingFn: BearingFunction): S | W | NNE | NE | ENE | E | ESE | SE | SSE | SSW | SW | WSW | WNW | NW | NNW | N = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompassDirection")(origin.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], bearingFn.asInstanceOf[js.Any])).asInstanceOf[S | W | NNE | NE | ENE | E | ESE | SE | SSE | SSW | SW | WSW | WNW | NW | NNW | N]
   
-  @JSImport("geolib", "getCoordinateKey")
-  @js.native
-  def getCoordinateKey[Keys](point: GeolibInputCoordinates, keysToLookup: js.Array[Keys]): js.UndefOr[Keys] = js.native
+  @scala.inline
+  def getCoordinateKey[Keys](point: GeolibInputCoordinates, keysToLookup: js.Array[Keys]): js.UndefOr[Keys] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCoordinateKey")(point.asInstanceOf[js.Any], keysToLookup.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Keys]]
   
-  @JSImport("geolib", "getCoordinateKeys")
-  @js.native
-  def getCoordinateKeys(point: GeolibInputCoordinates): AltitudeLatitude = js.native
-  @JSImport("geolib", "getCoordinateKeys")
-  @js.native
-  def getCoordinateKeys(point: GeolibInputCoordinates, keysToLookup: Altitude): AltitudeLatitude = js.native
+  @scala.inline
+  def getCoordinateKeys(point: GeolibInputCoordinates): AltitudeLatitude = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoordinateKeys")(point.asInstanceOf[js.Any]).asInstanceOf[AltitudeLatitude]
+  @scala.inline
+  def getCoordinateKeys(point: GeolibInputCoordinates, keysToLookup: Altitude): AltitudeLatitude = (^.asInstanceOf[js.Dynamic].applyDynamic("getCoordinateKeys")(point.asInstanceOf[js.Any], keysToLookup.asInstanceOf[js.Any])).asInstanceOf[AltitudeLatitude]
   
-  @JSImport("geolib", "getDistance")
-  @js.native
-  def getDistance(from: GeolibInputCoordinates, to: GeolibInputCoordinates): Double = js.native
-  @JSImport("geolib", "getDistance")
-  @js.native
-  def getDistance(from: GeolibInputCoordinates, to: GeolibInputCoordinates, accuracy: Double): Double = js.native
+  @scala.inline
+  def getDistance(from: GeolibInputCoordinates, to: GeolibInputCoordinates): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistance")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getDistance(from: GeolibInputCoordinates, to: GeolibInputCoordinates, accuracy: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistance")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], accuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("geolib", "getDistanceFromLine")
-  @js.native
-  def getDistanceFromLine(point: GeolibInputCoordinates, lineStart: GeolibInputCoordinates, lineEnd: GeolibInputCoordinates): Double = js.native
+  @scala.inline
+  def getDistanceFromLine(point: GeolibInputCoordinates, lineStart: GeolibInputCoordinates, lineEnd: GeolibInputCoordinates): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceFromLine")(point.asInstanceOf[js.Any], lineStart.asInstanceOf[js.Any], lineEnd.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Gets great circle bearing of two points. See description of getRhumbLineBearing for more information
     */
-  @JSImport("geolib", "getGreatCircleBearing")
-  @js.native
-  def getGreatCircleBearing(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates): Double = js.native
+  @scala.inline
+  def getGreatCircleBearing(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getGreatCircleBearing")(origin.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("geolib", "getLatitude")
-  @js.native
-  def getLatitude(point: GeolibInputCoordinates): js.Any = js.native
-  @JSImport("geolib", "getLatitude")
-  @js.native
-  def getLatitude(point: GeolibInputCoordinates, raw: Boolean): js.Any = js.native
+  @scala.inline
+  def getLatitude(point: GeolibInputCoordinates): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLatitude")(point.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getLatitude(point: GeolibInputCoordinates, raw: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLatitude")(point.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("geolib", "getLongitude")
-  @js.native
-  def getLongitude(point: GeolibInputCoordinates): js.Any = js.native
-  @JSImport("geolib", "getLongitude")
-  @js.native
-  def getLongitude(point: GeolibInputCoordinates, raw: Boolean): js.Any = js.native
+  @scala.inline
+  def getLongitude(point: GeolibInputCoordinates): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLongitude")(point.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getLongitude(point: GeolibInputCoordinates, raw: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLongitude")(point.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("geolib", "getPathLength")
-  @js.native
-  def getPathLength(points: js.Array[GeolibInputCoordinates]): Double = js.native
-  @JSImport("geolib", "getPathLength")
-  @js.native
-  def getPathLength(points: js.Array[GeolibInputCoordinates], distanceFn: DistanceFn): Double = js.native
+  @scala.inline
+  def getPathLength(points: js.Array[GeolibInputCoordinates]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathLength")(points.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getPathLength(points: js.Array[GeolibInputCoordinates], distanceFn: DistanceFn): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathLength")(points.asInstanceOf[js.Any], distanceFn.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("geolib", "getPreciseDistance")
-  @js.native
-  def getPreciseDistance(start: GeolibInputCoordinates, end: GeolibInputCoordinates): Double = js.native
-  @JSImport("geolib", "getPreciseDistance")
-  @js.native
-  def getPreciseDistance(start: GeolibInputCoordinates, end: GeolibInputCoordinates, accuracy: Double): Double = js.native
+  @scala.inline
+  def getPreciseDistance(start: GeolibInputCoordinates, end: GeolibInputCoordinates): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreciseDistance")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getPreciseDistance(start: GeolibInputCoordinates, end: GeolibInputCoordinates, accuracy: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreciseDistance")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], accuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Gets rhumb line bearing of two points. Find out about the difference between rhumb line and
@@ -199,65 +170,52 @@ object mod {
     * Function heavily based on Doug Vanderweide's great PHP version (licensed under GPL 3.0)
     * http://www.dougv.com/2009/07/13/calculating-the-bearing-and-compass-rose-direction-between-two-latitude-longitude-coordinates-in-php/
     */
-  @JSImport("geolib", "getRhumbLineBearing")
-  @js.native
-  def getRhumbLineBearing(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates): Double = js.native
+  @scala.inline
+  def getRhumbLineBearing(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRhumbLineBearing")(origin.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("geolib", "getRoughCompassDirection")
-  @js.native
-  def getRoughCompassDirection(exact: String): js.UndefOr[S | W | E | N] = js.native
+  @scala.inline
+  def getRoughCompassDirection(exact: String): js.UndefOr[S | W | E | N] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoughCompassDirection")(exact.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[S | W | E | N]]
   
-  @JSImport("geolib", "getSpeed")
-  @js.native
-  def getSpeed(start: GeolibInputCoordinatesWithTime, end: GeolibInputCoordinatesWithTime): Double = js.native
-  @JSImport("geolib", "getSpeed")
-  @js.native
+  @scala.inline
+  def getSpeed(start: GeolibInputCoordinatesWithTime, end: GeolibInputCoordinatesWithTime): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpeed")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def getSpeed(
     start: GeolibInputCoordinatesWithTime,
     end: GeolibInputCoordinatesWithTime,
     distanceFn: GeolibDistanceFn
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpeed")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], distanceFn.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("geolib", "isDecimal")
-  @js.native
-  def isDecimal(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isDecimal(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("geolib", "isPointInLine")
-  @js.native
-  def isPointInLine(point: GeolibInputCoordinates, lineStart: GeolibInputCoordinates, lineEnd: GeolibInputCoordinates): Boolean = js.native
+  @scala.inline
+  def isPointInLine(point: GeolibInputCoordinates, lineStart: GeolibInputCoordinates, lineEnd: GeolibInputCoordinates): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPointInLine")(point.asInstanceOf[js.Any], lineStart.asInstanceOf[js.Any], lineEnd.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("geolib", "isPointInPolygon")
-  @js.native
-  def isPointInPolygon(point: GeolibInputCoordinates, polygon: js.Array[GeolibInputCoordinates]): Boolean = js.native
+  @scala.inline
+  def isPointInPolygon(point: GeolibInputCoordinates, polygon: js.Array[GeolibInputCoordinates]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPointInPolygon")(point.asInstanceOf[js.Any], polygon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("geolib", "isPointNearLine")
-  @js.native
+  @scala.inline
   def isPointNearLine(
     point: GeolibInputCoordinates,
     start: GeolibInputCoordinates,
     end: GeolibInputCoordinates,
     distance: Double
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPointNearLine")(point.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("geolib", "isPointWithinRadius")
-  @js.native
-  def isPointWithinRadius(point: GeolibInputCoordinates, center: GeolibInputCoordinates, radius: Double): Boolean = js.native
+  @scala.inline
+  def isPointWithinRadius(point: GeolibInputCoordinates, center: GeolibInputCoordinates, radius: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPointWithinRadius")(point.asInstanceOf[js.Any], center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("geolib", "isSexagesimal")
-  @js.native
-  def isSexagesimal(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isSexagesimal(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSexagesimal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("geolib", "isValidCoordinate")
-  @js.native
-  def isValidCoordinate(point: GeolibInputCoordinates): Boolean = js.native
+  @scala.inline
+  def isValidCoordinate(point: GeolibInputCoordinates): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidCoordinate")(point.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("geolib", "isValidLatitude")
-  @js.native
-  def isValidLatitude(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isValidLatitude(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidLatitude")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("geolib", "isValidLongitude")
-  @js.native
-  def isValidLongitude(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isValidLongitude(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidLongitude")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("geolib", "latitudeKeys")
   @js.native
@@ -267,42 +225,35 @@ object mod {
   @js.native
   val longitudeKeys: js.Array[LongitudeKeys] = js.native
   
-  @JSImport("geolib", "orderByDistance")
-  @js.native
-  def orderByDistance(point: GeolibInputCoordinates, coords: js.Array[GeolibInputCoordinates]): js.Array[GeolibInputCoordinates] = js.native
-  @JSImport("geolib", "orderByDistance")
-  @js.native
+  @scala.inline
+  def orderByDistance(point: GeolibInputCoordinates, coords: js.Array[GeolibInputCoordinates]): js.Array[GeolibInputCoordinates] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderByDistance")(point.asInstanceOf[js.Any], coords.asInstanceOf[js.Any])).asInstanceOf[js.Array[GeolibInputCoordinates]]
+  @scala.inline
   def orderByDistance(
     point: GeolibInputCoordinates,
     coords: js.Array[GeolibInputCoordinates],
     distanceFn: typings.geolib.orderByDistanceMod.DistanceFn
-  ): js.Array[GeolibInputCoordinates] = js.native
+  ): js.Array[GeolibInputCoordinates] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderByDistance")(point.asInstanceOf[js.Any], coords.asInstanceOf[js.Any], distanceFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[GeolibInputCoordinates]]
   
   @JSImport("geolib", "sexagesimalPattern")
   @js.native
   val sexagesimalPattern: RegExp = js.native
   
-  @JSImport("geolib", "sexagesimalToDecimal")
-  @js.native
-  def sexagesimalToDecimal(sexagesimal: js.Any): Double = js.native
+  @scala.inline
+  def sexagesimalToDecimal(sexagesimal: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sexagesimalToDecimal")(sexagesimal.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("geolib", "timeConversion")
   @js.native
   val timeConversion: unitObject = js.native
   
-  @JSImport("geolib", "toDecimal")
-  @js.native
-  def toDecimal(value: js.Any): js.Any = js.native
+  @scala.inline
+  def toDecimal(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toDecimal")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("geolib", "toDeg")
-  @js.native
-  def toDeg(value: Double): Double = js.native
+  @scala.inline
+  def toDeg(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDeg")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("geolib", "toRad")
-  @js.native
-  def toRad(value: Double): Double = js.native
+  @scala.inline
+  def toRad(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toRad")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("geolib", "wktToPolygon")
-  @js.native
-  def wktToPolygon(wkt: String): js.Array[Longitude] = js.native
+  @scala.inline
+  def wktToPolygon(wkt: String): js.Array[Longitude] = ^.asInstanceOf[js.Dynamic].applyDynamic("wktToPolygon")(wkt.asInstanceOf[js.Any]).asInstanceOf[js.Array[Longitude]]
 }

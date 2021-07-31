@@ -2,13 +2,11 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateAdapterOptions extends StObject {
   
-  var date: js.UndefOr[js.Object] = js.native
+  var date: js.UndefOr[js.Object] = js.undefined
 }
 object DateAdapterOptions {
   

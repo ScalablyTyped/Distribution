@@ -6,7 +6,6 @@ import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IShortcut
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -47,6 +46,10 @@ object mod {
   }
   object SettingRegistry {
     
+    @JSImport("@jupyterlab/settingregistry", "SettingRegistry")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Reconcile default and user shortcuts and return the composite list.
       *
@@ -56,9 +59,8 @@ object mod {
       *
       * @returns A loadable list of shortcuts (omitting disabled and overridden).
       */
-    @JSImport("@jupyterlab/settingregistry", "SettingRegistry.reconcileShortcuts")
-    @js.native
-    def reconcileShortcuts(defaults: js.Array[IShortcut], user: js.Array[IShortcut]): js.Array[IShortcut] = js.native
+    @scala.inline
+    def reconcileShortcuts(defaults: js.Array[IShortcut], user: js.Array[IShortcut]): js.Array[IShortcut] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileShortcuts")(defaults.asInstanceOf[js.Any], user.asInstanceOf[js.Any])).asInstanceOf[js.Array[IShortcut]]
   }
   
   @JSImport("@jupyterlab/settingregistry", "Settings")

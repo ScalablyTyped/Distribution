@@ -2,23 +2,21 @@ package typings.reactSketchapp.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResizeConstraints extends StObject {
   
-  var bottom: Boolean = js.native
+  var bottom: Boolean
   
-  var fixedHeight: Boolean = js.native
+  var fixedHeight: Boolean
   
-  var fixedWidth: Boolean = js.native
+  var fixedWidth: Boolean
   
-  var left: Boolean = js.native
+  var left: Boolean
   
-  var right: Boolean = js.native
+  var right: Boolean
   
-  var top: Boolean = js.native
+  var top: Boolean
 }
 object ResizeConstraints {
   

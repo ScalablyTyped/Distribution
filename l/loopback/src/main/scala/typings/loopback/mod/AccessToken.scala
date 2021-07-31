@@ -5,7 +5,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -51,6 +50,10 @@ class AccessToken protected () extends PersistedModel {
 }
 object AccessToken {
   
+  @JSImport("loopback", "AccessToken")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Create a cryptographically random access token id
     * @callback {() => void} callback
@@ -58,9 +61,8 @@ object AccessToken {
     * @param {string} toke
     */
   /* static member */
-  @JSImport("loopback", "AccessToken.createAccessTokenId")
-  @js.native
-  def createAccessTokenId(callback: js.Function2[/* err */ Error, /* token */ String, Unit]): Unit = js.native
+  @scala.inline
+  def createAccessTokenId(callback: js.Function2[/* err */ Error, /* token */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAccessTokenId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Find a token for the given `any`
@@ -71,24 +73,16 @@ object AccessToken {
     * @param {AccessToken} toke
     */
   /* static member */
-  @JSImport("loopback", "AccessToken.findForRequest")
-  @js.native
-  def findForRequest(req: js.Any): Unit = js.native
-  @JSImport("loopback", "AccessToken.findForRequest")
-  @js.native
-  def findForRequest(
-    req: js.Any,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]
-  ): Unit = js.native
-  @JSImport("loopback", "AccessToken.findForRequest")
-  @js.native
-  def findForRequest(req: js.Any, options: js.Any): Unit = js.native
-  @JSImport("loopback", "AccessToken.findForRequest")
-  @js.native
+  @scala.inline
+  def findForRequest(req: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("findForRequest")(req.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def findForRequest(req: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findForRequest")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def findForRequest(
     req: js.Any,
     options: js.Any,
     callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findForRequest")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def findForRequest(req: js.Any, options: Unit, callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findForRequest")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

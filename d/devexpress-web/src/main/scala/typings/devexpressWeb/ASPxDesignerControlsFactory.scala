@@ -2,25 +2,23 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxDesignerControlsFactory extends StObject {
   
-  def createPopularBindingInfo(options: ASPxDesignerElementSerializationInfoWithBindings, isExpression: Boolean): ASPxDesignerElementSerializationInfoWithBindings = js.native
+  def createPopularBindingInfo(options: ASPxDesignerElementSerializationInfoWithBindings, isExpression: Boolean): ASPxDesignerElementSerializationInfoWithBindings
   
-  def getControlInfo(controlType: String): ASPxDesignerToolboxItem = js.native
+  def getControlInfo(controlType: String): ASPxDesignerToolboxItem
   
-  def getControlType(model: js.Any): String = js.native
+  def getControlType(model: js.Any): String
   
-  def getPropertyInfo(controlType: String, propertyDisplayName: String): ASPxDesignerElementSerializationInfo = js.native
+  def getPropertyInfo(controlType: String, propertyDisplayName: String): ASPxDesignerElementSerializationInfo
   
-  def hideExpressionBindings(controlType: String, propertyNames: String*): Unit = js.native
+  def hideExpressionBindings(controlType: String, propertyNames: String*): Unit
   
-  def inheritControl(parentType: String, extendedOptions: ASPxDesignerToolboxItem): ASPxDesignerToolboxItem = js.native
+  def inheritControl(parentType: String, extendedOptions: ASPxDesignerToolboxItem): ASPxDesignerToolboxItem
   
-  def registerControl(typeName: String, metadata: ASPxDesignerToolboxItem): Unit = js.native
+  def registerControl(typeName: String, metadata: ASPxDesignerToolboxItem): Unit
   
   def setExpressionBinding(
     controlType: String,
@@ -28,7 +26,7 @@ trait ASPxDesignerControlsFactory extends StObject {
     events: js.Array[String],
     group: String,
     objectProperties: js.Array[String]
-  ): Unit = js.native
+  ): Unit
 }
 object ASPxDesignerControlsFactory {
   

@@ -2,22 +2,22 @@ package typings.yup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SchemaFieldRefDescription extends SchemaFieldDescription {
+trait SchemaFieldRefDescription
+  extends StObject
+     with SchemaFieldDescription {
   
-  var key: String = js.native
+  var key: String
   
-  var `type`: typings.yup.yupStrings.ref = js.native
+  var `type`: typings.yup.yupStrings.ref
 }
 object SchemaFieldRefDescription {
   
   @scala.inline
-  def apply(key: String, `type`: typings.yup.yupStrings.ref): SchemaFieldRefDescription = {
+  def apply(key: String): SchemaFieldRefDescription = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ref")
     __obj.asInstanceOf[SchemaFieldRefDescription]
   }
   

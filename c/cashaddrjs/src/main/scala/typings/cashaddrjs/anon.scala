@@ -3,19 +3,17 @@ package typings.cashaddrjs
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Hash extends StObject {
     
-    var hash: Uint8Array = js.native
+    var hash: Uint8Array
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Hash {
     

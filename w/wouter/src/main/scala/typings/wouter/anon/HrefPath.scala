@@ -3,15 +3,13 @@ package typings.wouter.anon
 import typings.wouter.useLocationMod.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HrefPath extends StObject {
   
-  var href: Path = js.native
+  var href: Path
   
-  var to: js.UndefOr[scala.Nothing] = js.native
+  var to: js.UndefOr[scala.Nothing] = js.undefined
 }
 object HrefPath {
   

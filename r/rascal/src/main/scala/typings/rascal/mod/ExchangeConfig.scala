@@ -7,19 +7,17 @@ import typings.rascal.rascalStrings.headers
 import typings.rascal.rascalStrings.topic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExchangeConfig extends StObject {
   
-  var assert: js.UndefOr[Boolean] = js.native
+  var assert: js.UndefOr[Boolean] = js.undefined
   
-  var check: js.UndefOr[Boolean] = js.native
+  var check: js.UndefOr[Boolean] = js.undefined
   
-  var options: js.UndefOr[AssertExchange] = js.native
+  var options: js.UndefOr[AssertExchange] = js.undefined
   
-  var `type`: js.UndefOr[direct | fanout | headers | topic] = js.native
+  var `type`: js.UndefOr[direct | fanout | headers | topic] = js.undefined
 }
 object ExchangeConfig {
   

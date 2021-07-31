@@ -5,11 +5,12 @@ import typings.phaser.spine.Disposable
 import typings.phaser.spine.Skeleton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkeletonDebugRenderer extends Disposable {
+trait SkeletonDebugRenderer
+  extends StObject
+     with Disposable {
   
   var aabbColor: Color = js.native
   

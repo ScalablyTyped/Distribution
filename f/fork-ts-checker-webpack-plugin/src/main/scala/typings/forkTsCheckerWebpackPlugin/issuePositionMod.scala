@@ -2,30 +2,28 @@ package typings.forkTsCheckerWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object issuePositionMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssuePosition", "compareIssuePositions")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssuePosition", JSImport.Namespace)
   @js.native
-  def compareIssuePositions(): Double = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssuePosition", "compareIssuePositions")
-  @js.native
-  def compareIssuePositions(positionA: js.UndefOr[scala.Nothing], positionB: IssuePosition): Double = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssuePosition", "compareIssuePositions")
-  @js.native
-  def compareIssuePositions(positionA: IssuePosition): Double = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssuePosition", "compareIssuePositions")
-  @js.native
-  def compareIssuePositions(positionA: IssuePosition, positionB: IssuePosition): Double = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def compareIssuePositions(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIssuePositions")().asInstanceOf[Double]
+  @scala.inline
+  def compareIssuePositions(positionA: Unit, positionB: IssuePosition): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssuePositions")(positionA.asInstanceOf[js.Any], positionB.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def compareIssuePositions(positionA: IssuePosition): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIssuePositions")(positionA.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def compareIssuePositions(positionA: IssuePosition, positionB: IssuePosition): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssuePositions")(positionA.asInstanceOf[js.Any], positionB.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   trait IssuePosition extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object IssuePosition {
     

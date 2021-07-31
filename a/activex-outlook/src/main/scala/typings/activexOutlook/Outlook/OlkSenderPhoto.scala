@@ -3,24 +3,22 @@ package typings.activexOutlook.Outlook
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlkSenderPhoto extends StObject {
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var MouseIcon: StdPicture = js.native
+  var MouseIcon: StdPicture
   
-  var MousePointer: OlMousePointer = js.native
+  var MousePointer: OlMousePointer
   
   @JSName("Outlook.OlkSenderPhoto_typekey")
-  var OutlookDotOlkSenderPhoto_typekey: OlkSenderPhoto = js.native
+  var OutlookDotOlkSenderPhoto_typekey: OlkSenderPhoto
   
-  val PreferredHeight: Double = js.native
+  val PreferredHeight: Double
   
-  val PreferredWidth: Double = js.native
+  val PreferredWidth: Double
 }
 object OlkSenderPhoto {
   

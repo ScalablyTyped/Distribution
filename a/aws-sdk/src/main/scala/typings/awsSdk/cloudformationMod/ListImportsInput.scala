@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListImportsInput extends StObject {
   
   /**
     * The name of the exported output value. AWS CloudFormation returns the stack names that are importing this value. 
     */
-  var ExportName: typings.awsSdk.cloudformationMod.ExportName = js.native
+  var ExportName: typings.awsSdk.cloudformationMod.ExportName
   
   /**
     * A string (provided by the ListImports response output) that identifies the next page of stacks that are importing the specified exported output value. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
 }
 object ListImportsInput {
   

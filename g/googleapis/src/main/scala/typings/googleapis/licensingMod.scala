@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object licensingMod {
+  
+  @JSImport("googleapis/build/src/apis/licensing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -68,9 +71,12 @@ object licensingMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/licensing", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/licensing", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -114,10 +120,9 @@ object licensingMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/licensing", "licensing")
-  @js.native
-  def licensing(options: Options): Licensing = js.native
-  @JSImport("googleapis/build/src/apis/licensing", "licensing")
-  @js.native
-  def licensing_v1(version: v1): Licensing = js.native
+  @scala.inline
+  def licensing(options: Options): Licensing = ^.asInstanceOf[js.Dynamic].applyDynamic("licensing")(options.asInstanceOf[js.Any]).asInstanceOf[Licensing]
+  
+  @scala.inline
+  def licensing_v1(version: v1): Licensing = ^.asInstanceOf[js.Dynamic].applyDynamic("licensing")(version.asInstanceOf[js.Any]).asInstanceOf[Licensing]
 }

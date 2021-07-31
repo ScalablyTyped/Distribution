@@ -5,22 +5,20 @@ import typings.exceljs.mod.WorksheetView
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.AddWorksheetOptions> */
-@js.native
 trait PartialAddWorksheetOption extends StObject {
   
-  var headerFooter: js.UndefOr[PartialHeaderFooter] = js.native
+  var headerFooter: js.UndefOr[PartialHeaderFooter] = js.undefined
   
-  var pageSetup: js.UndefOr[PartialPageSetup] = js.native
+  var pageSetup: js.UndefOr[PartialPageSetup] = js.undefined
   
-  var properties: js.UndefOr[PartialWorksheetPropertie] = js.native
+  var properties: js.UndefOr[PartialWorksheetPropertie] = js.undefined
   
-  var state: js.UndefOr[WorksheetState] = js.native
+  var state: js.UndefOr[WorksheetState] = js.undefined
   
-  var views: js.UndefOr[js.Array[Partial[WorksheetView]]] = js.native
+  var views: js.UndefOr[js.Array[Partial[WorksheetView]]] = js.undefined
 }
 object PartialAddWorksheetOption {
   

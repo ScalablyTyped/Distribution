@@ -31,7 +31,6 @@ import typings.contentfulManagement.anon.Typeofuser
 import typings.contentfulManagement.anon.Typeofwebhook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entitiesMod {

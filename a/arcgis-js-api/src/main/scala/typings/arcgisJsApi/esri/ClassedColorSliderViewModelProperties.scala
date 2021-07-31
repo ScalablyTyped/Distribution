@@ -2,18 +2,18 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClassedColorSliderViewModelProperties extends SmartMappingSliderViewModelProperties {
+trait ClassedColorSliderViewModelProperties
+  extends StObject
+     with SmartMappingSliderViewModelProperties {
   
   /**
     * An array of class breaks with associated colors.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider-ClassedColorSliderViewModel.html#breaks)
     */
-  var breaks: js.UndefOr[js.Array[ClassedColorSliderViewModelBreaks]] = js.native
+  var breaks: js.UndefOr[js.Array[ClassedColorSliderViewModelBreaks]] = js.undefined
 }
 object ClassedColorSliderViewModelProperties {
   

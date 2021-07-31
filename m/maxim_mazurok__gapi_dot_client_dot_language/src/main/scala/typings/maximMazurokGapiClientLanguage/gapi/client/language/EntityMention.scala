@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientLanguage.gapi.client.language
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityMention extends StObject {
   
   /**
     * For calls to AnalyzeEntitySentiment or if AnnotateTextRequest.Features.extract_entity_sentiment is set to true, this field will contain the sentiment expressed for this mention of
     * the entity in the provided document.
     */
-  var sentiment: js.UndefOr[Sentiment] = js.native
+  var sentiment: js.UndefOr[Sentiment] = js.undefined
   
   /** The mention text. */
-  var text: js.UndefOr[TextSpan] = js.native
+  var text: js.UndefOr[TextSpan] = js.undefined
   
   /** The type of the entity mention. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object EntityMention {
   

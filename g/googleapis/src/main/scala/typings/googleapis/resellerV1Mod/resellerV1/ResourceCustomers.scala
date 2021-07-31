@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/reseller/v1", "reseller_v1.Resource$Customers")
@@ -30,7 +29,7 @@ class ResourceCustomers protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaCustomer] = js.native
   def get(callback: BodyResponseCallback[SchemaCustomer]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomer] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomer] = js.native
   def get(params: ParamsResourceCustomersGet): GaxiosPromise[SchemaCustomer] = js.native
   def get(params: ParamsResourceCustomersGet, callback: BodyResponseCallback[SchemaCustomer]): Unit = js.native
   def get(
@@ -60,7 +59,7 @@ class ResourceCustomers protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaCustomer] = js.native
   def insert(callback: BodyResponseCallback[SchemaCustomer]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomer] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomer] = js.native
   def insert(params: ParamsResourceCustomersInsert): GaxiosPromise[SchemaCustomer] = js.native
   def insert(params: ParamsResourceCustomersInsert, callback: BodyResponseCallback[SchemaCustomer]): Unit = js.native
   def insert(
@@ -91,7 +90,7 @@ class ResourceCustomers protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaCustomer] = js.native
   def patch(callback: BodyResponseCallback[SchemaCustomer]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomer] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomer] = js.native
   def patch(params: ParamsResourceCustomersPatch): GaxiosPromise[SchemaCustomer] = js.native
   def patch(params: ParamsResourceCustomersPatch, callback: BodyResponseCallback[SchemaCustomer]): Unit = js.native
   def patch(
@@ -121,7 +120,7 @@ class ResourceCustomers protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaCustomer] = js.native
   def update(callback: BodyResponseCallback[SchemaCustomer]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomer] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomer] = js.native
   def update(params: ParamsResourceCustomersUpdate): GaxiosPromise[SchemaCustomer] = js.native
   def update(params: ParamsResourceCustomersUpdate, callback: BodyResponseCallback[SchemaCustomer]): Unit = js.native
   def update(

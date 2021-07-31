@@ -2,22 +2,20 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaMaterializedViewDefinition extends StObject {
   
   /**
     * [Output-only] [TrustedTester] The time when this materialized view was
     * last modified, in milliseconds since the epoch.
     */
-  var lastRefreshTime: js.UndefOr[String] = js.native
+  var lastRefreshTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] A query whose result is persisted.
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
 }
 object SchemaMaterializedViewDefinition {
   

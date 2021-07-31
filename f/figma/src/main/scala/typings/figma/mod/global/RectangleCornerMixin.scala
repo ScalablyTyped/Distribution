@@ -2,19 +2,17 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RectangleCornerMixin extends StObject {
   
-  var bottomLeftRadius: Double = js.native
+  var bottomLeftRadius: Double
   
-  var bottomRightRadius: Double = js.native
+  var bottomRightRadius: Double
   
-  var topLeftRadius: Double = js.native
+  var topLeftRadius: Double
   
-  var topRightRadius: Double = js.native
+  var topRightRadius: Double
 }
 object RectangleCornerMixin {
   

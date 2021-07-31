@@ -3,23 +3,21 @@ package typings.axeCore.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HtmlElmsVariant extends StObject {
   
-  var allowedRoles: Boolean | js.Array[String] = js.native
+  var allowedRoles: Boolean | js.Array[String]
   
-  var contentTypes: js.UndefOr[js.Array[HtmlContentTypes]] = js.native
+  var contentTypes: js.UndefOr[js.Array[HtmlContentTypes]] = js.undefined
   
-  var implicitAttrs: js.UndefOr[StringDictionary[String]] = js.native
+  var implicitAttrs: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var namingMethods: js.UndefOr[js.Array[String]] = js.native
+  var namingMethods: js.UndefOr[js.Array[String]] = js.undefined
   
-  var noAriaAttrs: js.UndefOr[Boolean] = js.native
+  var noAriaAttrs: js.UndefOr[Boolean] = js.undefined
   
-  var shadowRoot: js.UndefOr[Boolean] = js.native
+  var shadowRoot: js.UndefOr[Boolean] = js.undefined
 }
 object HtmlElmsVariant {
   

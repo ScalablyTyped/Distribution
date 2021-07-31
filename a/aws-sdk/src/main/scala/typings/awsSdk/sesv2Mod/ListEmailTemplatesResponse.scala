@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEmailTemplatesResponse extends StObject {
   
   /**
     * A token indicating that there are additional email templates available to be listed. Pass this token to a subsequent ListEmailTemplates call to retrieve the next 10 email templates.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.undefined
   
   /**
     * An array the contains the name and creation time stamp for each template in your Amazon SES account.
     */
-  var TemplatesMetadata: js.UndefOr[EmailTemplateMetadataList] = js.native
+  var TemplatesMetadata: js.UndefOr[EmailTemplateMetadataList] = js.undefined
 }
 object ListEmailTemplatesResponse {
   

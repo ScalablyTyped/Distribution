@@ -31,10 +31,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.straight
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClosestFacilityParametersProperties extends StObject {
   
   /**
@@ -42,35 +40,35 @@ trait ClosestFacilityParametersProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#accumulateAttributes)
     */
-  var accumulateAttributes: js.UndefOr[js.Array[String]] = js.native
+  var accumulateAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An array of attribute parameter values that determine which network elements can be used by a vehicle.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#attributeParameterValues)
     */
-  var attributeParameterValues: js.UndefOr[js.Array[ClosestFacilityParametersAttributeParameterValues]] = js.native
+  var attributeParameterValues: js.UndefOr[js.Array[ClosestFacilityParametersAttributeParameterValues]] = js.undefined
   
   /**
     * The cutoff value used to determine when to stop traversing.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#defaultCutoff)
     */
-  var defaultCutoff: js.UndefOr[Double] = js.native
+  var defaultCutoff: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of facilities to find.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#defaultTargetFacilityCount)
     */
-  var defaultTargetFacilityCount: js.UndefOr[Double] = js.native
+  var defaultTargetFacilityCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The language used when generating driving directions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#directionsLanguage)
     */
-  var directionsLanguage: js.UndefOr[String] = js.native
+  var directionsLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * The length units used when computing driving directions.
@@ -79,7 +77,7 @@ trait ClosestFacilityParametersProperties extends StObject {
     */
   var directionsLengthUnits: js.UndefOr[
     centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Defines the amount of direction information returned.
@@ -88,63 +86,63 @@ trait ClosestFacilityParametersProperties extends StObject {
     */
   var directionsOutputType: js.UndefOr[
     complete | `complete-no-events` | `instructions-only` | standard | `summary-only`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The style to be used when returning directions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#directionsStyleName)
     */
-  var directionsStyleName: js.UndefOr[String] = js.native
+  var directionsStyleName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the attribute field that contains the drive time values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#directionsTimeAttribute)
     */
-  var directionsTimeAttribute: js.UndefOr[String] = js.native
+  var directionsTimeAttribute: js.UndefOr[String] = js.undefined
   
   /**
     * When `true`, restricted network elements should be considered when finding network locations.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#doNotLocateOnRestrictedElements)
     */
-  var doNotLocateOnRestrictedElements: js.UndefOr[Boolean] = js.native
+  var doNotLocateOnRestrictedElements: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The set of facilities loaded as network locations during analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#facilities)
     */
-  var facilities: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.native
+  var facilities: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   
   /**
     * The network attribute name used as the impedance attribute in analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#impedanceAttribute)
     */
-  var impedanceAttribute: js.UndefOr[String] = js.native
+  var impedanceAttribute: js.UndefOr[String] = js.undefined
   
   /**
     * The set of incidents loaded as network locations during analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#incidents)
     */
-  var incidents: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.native
+  var incidents: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   
   /**
     * The well-known id of the spatial reference or the spatial reference object for the geometries returned with the analysis results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#outSpatialReference)
     */
-  var outSpatialReference: js.UndefOr[SpatialReferenceProperties | String] = js.native
+  var outSpatialReference: js.UndefOr[SpatialReferenceProperties | String] = js.undefined
   
   /**
     * The output geometry precision.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#outputGeometryPrecision)
     */
-  var outputGeometryPrecision: js.UndefOr[Double] = js.native
+  var outputGeometryPrecision: js.UndefOr[Double] = js.undefined
   
   /**
     * The units of the output geometry precision.
@@ -153,35 +151,35 @@ trait ClosestFacilityParametersProperties extends StObject {
     */
   var outputGeometryPrecisionUnits: js.UndefOr[
     centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The type of output lines to be generated in the result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#outputLines)
     */
-  var outputLines: js.UndefOr[none | straight | `true-shape` | `true-shape-with-measure`] = js.native
+  var outputLines: js.UndefOr[none | straight | `true-shape` | `true-shape-with-measure`] = js.undefined
   
   /**
     * The set of point barriers loaded as network locations during analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#pointBarriers)
     */
-  var pointBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.native
+  var pointBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   
   /**
     * The set of polygon barriers loaded as network locations during analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#polygonBarriers)
     */
-  var polygonBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.native
+  var polygonBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   
   /**
     * The set of polyline barriers loaded as network locations during analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#polylineBarriers)
     */
-  var polylineBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.native
+  var polylineBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   
   /**
     * Specifies how U-Turns should be handled.
@@ -190,98 +188,98 @@ trait ClosestFacilityParametersProperties extends StObject {
     */
   var restrictUTurns: js.UndefOr[
     `allow-backtrack` | `at-dead-ends-only` | `no-backtrack` | `at-dead-ends-and-intersections`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The list of network attribute names to be used as restrictions with the analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#restrictionAttributes)
     */
-  var restrictionAttributes: js.UndefOr[js.Array[String]] = js.native
+  var restrictionAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether the service should generate driving directions for each route.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#returnDirections)
     */
-  var returnDirections: js.UndefOr[Boolean] = js.native
+  var returnDirections: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, facilities will be returned with the analysis results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#returnFacilities)
     */
-  var returnFacilities: js.UndefOr[Boolean] = js.native
+  var returnFacilities: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, incidents will be returned with the analysis results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#returnIncidents)
     */
-  var returnIncidents: js.UndefOr[Boolean] = js.native
+  var returnIncidents: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, point barriers will be returned in the barriers property of the [ClosestFacilitySolveResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#returnPointBarriers)
     */
-  var returnPointBarriers: js.UndefOr[Boolean] = js.native
+  var returnPointBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, polygon barriers will be returned in the barriers property of the [ClosestFacilitySolveResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#returnPolygonBarriers)
     */
-  var returnPolygonBarriers: js.UndefOr[Boolean] = js.native
+  var returnPolygonBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, polyline barriers will be returned in the barriers property of the [ClosestFacilitySolveResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#returnPolylineBarriers)
     */
-  var returnPolylineBarriers: js.UndefOr[Boolean] = js.native
+  var returnPolylineBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When `true`, closest facility routes will be generated and returned in the route property of each [ClosestFacilitySolveResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#returnRoutes)
     */
-  var returnRoutes: js.UndefOr[Boolean] = js.native
+  var returnRoutes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The arrival or departure date and time.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#timeOfDay)
     */
-  var timeOfDay: js.UndefOr[DateProperties] = js.native
+  var timeOfDay: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * Defines the way the `timeOfDay` value is used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#timeOfDayUsage)
     */
-  var timeOfDayUsage: js.UndefOr[start | end] = js.native
+  var timeOfDayUsage: js.UndefOr[start | end] = js.undefined
   
   /**
     * Options for traveling to or from the facility.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#travelDirection)
     */
-  var travelDirection: js.UndefOr[`from-facility` | `to-facility`] = js.native
+  var travelDirection: js.UndefOr[`from-facility` | `to-facility`] = js.undefined
   
   /**
     * A travel mode represents a means of transportation, such as driving or walking.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#travelMode)
     */
-  var travelMode: js.UndefOr[String] = js.native
+  var travelMode: js.UndefOr[String] = js.undefined
   
   /**
     * If `true`, the hierarchy attribute for the network will be used in analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#useHierarchy)
     */
-  var useHierarchy: js.UndefOr[Boolean] = js.native
+  var useHierarchy: js.UndefOr[Boolean] = js.undefined
 }
 object ClosestFacilityParametersProperties {
   

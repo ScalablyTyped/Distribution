@@ -2,34 +2,32 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerfMetricsSummary extends StObject {
   
-  var appStartTime: js.UndefOr[AppStartTime] = js.native
+  var appStartTime: js.UndefOr[AppStartTime] = js.undefined
   
   /** A tool results execution ID. @OutputOnly */
-  var executionId: js.UndefOr[String] = js.native
+  var executionId: js.UndefOr[String] = js.undefined
   
   /** Graphics statistics for the entire run. Statistics are reset at the beginning of the run and collected at the end of the run. */
-  var graphicsStats: js.UndefOr[GraphicsStats] = js.native
+  var graphicsStats: js.UndefOr[GraphicsStats] = js.undefined
   
   /** A tool results history ID. @OutputOnly */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /** Describes the environment in which the performance metrics were collected */
-  var perfEnvironment: js.UndefOr[PerfEnvironment] = js.native
+  var perfEnvironment: js.UndefOr[PerfEnvironment] = js.undefined
   
   /** Set of resource collected */
-  var perfMetrics: js.UndefOr[js.Array[String]] = js.native
+  var perfMetrics: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The cloud project @OutputOnly */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** A tool results step ID. @OutputOnly */
-  var stepId: js.UndefOr[String] = js.native
+  var stepId: js.UndefOr[String] = js.undefined
 }
 object PerfMetricsSummary {
   

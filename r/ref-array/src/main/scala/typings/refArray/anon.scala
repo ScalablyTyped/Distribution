@@ -4,25 +4,25 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Dicti[T] extends /* i */ NumberDictionary[T] {
+  trait Dicti[T]
+    extends StObject
+       with /* i */ NumberDictionary[T] {
     
-    var buffer: Buffer = js.native
+    var buffer: Buffer
     
-    def inspect(): String = js.native
+    def inspect(): String
     
-    var length: Double = js.native
+    var length: Double
     
-    def ref(): Buffer = js.native
+    def ref(): Buffer
     
-    def toArray(): js.Array[T] = js.native
+    def toArray(): js.Array[T]
     
-    def toJSON(): js.Array[T] = js.native
+    def toJSON(): js.Array[T]
   }
   object Dicti {
     
@@ -40,7 +40,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DictiMutableBuilder[Self <: Dicti[_], T] (val x: Self with Dicti[T]) extends AnyVal {
+    implicit class DictiMutableBuilder[Self <: Dicti[?], T] (val x: Self & Dicti[T]) extends AnyVal {
       
       @scala.inline
       def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])

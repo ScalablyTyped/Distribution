@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterExpression extends StObject {
   
   /** The FilterExpressions in and_group have an AND relationship. */
-  var andGroup: js.UndefOr[FilterExpressionList] = js.native
+  var andGroup: js.UndefOr[FilterExpressionList] = js.undefined
   
   /** A primitive filter. All fields in filter in same FilterExpression needs to be either all dimensions or metrics. */
-  var filter: js.UndefOr[Filter] = js.native
+  var filter: js.UndefOr[Filter] = js.undefined
   
   /** The FilterExpression is NOT of not_expression. */
-  var notExpression: js.UndefOr[FilterExpression] = js.native
+  var notExpression: js.UndefOr[FilterExpression] = js.undefined
   
   /** The FilterExpressions in or_group have an OR relationship. */
-  var orGroup: js.UndefOr[FilterExpressionList] = js.native
+  var orGroup: js.UndefOr[FilterExpressionList] = js.undefined
 }
 object FilterExpression {
   

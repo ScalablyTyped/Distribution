@@ -2,15 +2,13 @@ package typings.stripeV3.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceResponse extends StObject {
   
-  var error: js.UndefOr[Error] = js.native
+  var error: js.UndefOr[Error] = js.undefined
   
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
 }
 object SourceResponse {
   

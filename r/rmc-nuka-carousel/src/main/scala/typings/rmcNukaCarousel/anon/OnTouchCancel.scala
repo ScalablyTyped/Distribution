@@ -2,19 +2,17 @@ package typings.rmcNukaCarousel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnTouchCancel extends StObject {
   
-  def onTouchCancel(e: js.Any): Unit = js.native
+  def onTouchCancel(e: js.Any): Unit
   
-  def onTouchEnd(e: js.Any): Unit = js.native
+  def onTouchEnd(e: js.Any): Unit
   
-  def onTouchMove(e: js.Any): Unit = js.native
+  def onTouchMove(e: js.Any): Unit
   
-  def onTouchStart(e: js.Any): Unit = js.native
+  def onTouchStart(e: js.Any): Unit
 }
 object OnTouchCancel {
   

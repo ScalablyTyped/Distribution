@@ -4,27 +4,25 @@ import typings.d3pie.d3pie.ID3PieLabelsOptions
 import typings.d3pie.d3pie.ID3PieStyleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Formatter extends StObject {
   
-  var formatter: js.UndefOr[js.Function1[/* context */ Section, String]] = js.native
+  var formatter: js.UndefOr[js.Function1[/* context */ Section, String]] = js.undefined
   
-  var inner: js.UndefOr[ID3PieLabelsOptions] = js.native
+  var inner: js.UndefOr[ID3PieLabelsOptions] = js.undefined
   
-  var lines: js.UndefOr[Enabled] = js.native
+  var lines: js.UndefOr[Enabled] = js.undefined
   
-  var mainLabel: js.UndefOr[ID3PieStyleOptions] = js.native
+  var mainLabel: js.UndefOr[ID3PieStyleOptions] = js.undefined
   
-  var outer: js.UndefOr[pieDistancenumberundefine] = js.native
+  var outer: js.UndefOr[pieDistancenumberundefine] = js.undefined
   
-  var percentage: js.UndefOr[decimalPlacesnumberundefi] = js.native
+  var percentage: js.UndefOr[decimalPlacesnumberundefi] = js.undefined
   
-  var truncation: js.UndefOr[TruncateLength] = js.native
+  var truncation: js.UndefOr[TruncateLength] = js.undefined
   
-  var value: js.UndefOr[ID3PieStyleOptions] = js.native
+  var value: js.UndefOr[ID3PieStyleOptions] = js.undefined
 }
 object Formatter {
   

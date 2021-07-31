@@ -2,16 +2,14 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultSetMetadata extends StObject {
   
   /**
     * Information about the columns returned in a query result metadata.
     */
-  var ColumnInfo: js.UndefOr[ColumnInfoList] = js.native
+  var ColumnInfo: js.UndefOr[ColumnInfoList] = js.undefined
 }
 object ResultSetMetadata {
   

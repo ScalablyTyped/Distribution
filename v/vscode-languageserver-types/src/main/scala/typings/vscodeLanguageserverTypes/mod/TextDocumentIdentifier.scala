@@ -2,16 +2,14 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDocumentIdentifier extends StObject {
   
   /**
     * The text document's uri.
     */
-  var uri: DocumentUri = js.native
+  var uri: DocumentUri
 }
 object TextDocumentIdentifier {
   
@@ -21,20 +19,22 @@ object TextDocumentIdentifier {
     __obj.asInstanceOf[TextDocumentIdentifier]
   }
   
+  @JSImport("vscode-languageserver-types", "TextDocumentIdentifier")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new TextDocumentIdentifier literal.
     * @param uri The document's uri.
     */
-  @JSImport("vscode-languageserver-types", "TextDocumentIdentifier.create")
-  @js.native
-  def create(uri: DocumentUri): TextDocumentIdentifier = js.native
+  @scala.inline
+  def create(uri: DocumentUri): TextDocumentIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any]).asInstanceOf[TextDocumentIdentifier]
   
   /**
     * Checks whether the given literal conforms to the [TextDocumentIdentifier](#TextDocumentIdentifier) interface.
     */
-  @JSImport("vscode-languageserver-types", "TextDocumentIdentifier.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentIdentifier */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentIdentifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentIdentifier */ Boolean]
   
   @scala.inline
   implicit class TextDocumentIdentifierMutableBuilder[Self <: TextDocumentIdentifier] (val x: Self) extends AnyVal {

@@ -7,7 +7,6 @@ import typings.heremaps.H.service.metaInfo.Service.Info
 import typings.heremaps.H.util.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metaInfo {
@@ -17,7 +16,8 @@ object metaInfo {
     */
   @js.native
   trait Service
-    extends EventTarget
+    extends StObject
+       with EventTarget
        with IConfigurable {
     
     /**
@@ -31,80 +31,28 @@ object metaInfo {
       * @returns {H.map.layer.TileLayer} - the tile layer
       */
     def createTileLayer(tileSize: Double, pixelRatio: Double): TileLayer = js.native
-    def createTileLayer(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.UndefOr[scala.Nothing],
-      opt_additionalParameters: js.UndefOr[scala.Nothing],
-      opt_tileType: js.UndefOr[scala.Nothing],
-      opt_scheme: String
-    ): TileLayer = js.native
-    def createTileLayer(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.UndefOr[scala.Nothing],
-      opt_additionalParameters: js.UndefOr[scala.Nothing],
-      opt_tileType: String
-    ): TileLayer = js.native
-    def createTileLayer(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.UndefOr[scala.Nothing],
-      opt_additionalParameters: js.UndefOr[scala.Nothing],
-      opt_tileType: String,
-      opt_scheme: String
-    ): TileLayer = js.native
-    def createTileLayer(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.UndefOr[scala.Nothing],
-      opt_additionalParameters: ServiceParameters
-    ): TileLayer = js.native
-    def createTileLayer(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.UndefOr[scala.Nothing],
-      opt_additionalParameters: ServiceParameters,
-      opt_tileType: js.UndefOr[scala.Nothing],
-      opt_scheme: String
-    ): TileLayer = js.native
-    def createTileLayer(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.UndefOr[scala.Nothing],
-      opt_additionalParameters: ServiceParameters,
-      opt_tileType: String
-    ): TileLayer = js.native
-    def createTileLayer(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.UndefOr[scala.Nothing],
-      opt_additionalParameters: ServiceParameters,
-      opt_tileType: String,
-      opt_scheme: String
-    ): TileLayer = js.native
     def createTileLayer(tileSize: Double, pixelRatio: Double, opt_categoryFilter: js.Array[String]): TileLayer = js.native
     def createTileLayer(
       tileSize: Double,
       pixelRatio: Double,
       opt_categoryFilter: js.Array[String],
-      opt_additionalParameters: js.UndefOr[scala.Nothing],
-      opt_tileType: js.UndefOr[scala.Nothing],
-      opt_scheme: String
-    ): TileLayer = js.native
-    def createTileLayer(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.Array[String],
-      opt_additionalParameters: js.UndefOr[scala.Nothing],
+      opt_additionalParameters: Unit,
       opt_tileType: String
     ): TileLayer = js.native
     def createTileLayer(
       tileSize: Double,
       pixelRatio: Double,
       opt_categoryFilter: js.Array[String],
-      opt_additionalParameters: js.UndefOr[scala.Nothing],
+      opt_additionalParameters: Unit,
       opt_tileType: String,
+      opt_scheme: String
+    ): TileLayer = js.native
+    def createTileLayer(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: js.Array[String],
+      opt_additionalParameters: Unit,
+      opt_tileType: Unit,
       opt_scheme: String
     ): TileLayer = js.native
     def createTileLayer(
@@ -118,14 +66,6 @@ object metaInfo {
       pixelRatio: Double,
       opt_categoryFilter: js.Array[String],
       opt_additionalParameters: ServiceParameters,
-      opt_tileType: js.UndefOr[scala.Nothing],
-      opt_scheme: String
-    ): TileLayer = js.native
-    def createTileLayer(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.Array[String],
-      opt_additionalParameters: ServiceParameters,
       opt_tileType: String
     ): TileLayer = js.native
     def createTileLayer(
@@ -134,6 +74,66 @@ object metaInfo {
       opt_categoryFilter: js.Array[String],
       opt_additionalParameters: ServiceParameters,
       opt_tileType: String,
+      opt_scheme: String
+    ): TileLayer = js.native
+    def createTileLayer(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: js.Array[String],
+      opt_additionalParameters: ServiceParameters,
+      opt_tileType: Unit,
+      opt_scheme: String
+    ): TileLayer = js.native
+    def createTileLayer(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: Unit,
+      opt_additionalParameters: Unit,
+      opt_tileType: String
+    ): TileLayer = js.native
+    def createTileLayer(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: Unit,
+      opt_additionalParameters: Unit,
+      opt_tileType: String,
+      opt_scheme: String
+    ): TileLayer = js.native
+    def createTileLayer(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: Unit,
+      opt_additionalParameters: Unit,
+      opt_tileType: Unit,
+      opt_scheme: String
+    ): TileLayer = js.native
+    def createTileLayer(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: Unit,
+      opt_additionalParameters: ServiceParameters
+    ): TileLayer = js.native
+    def createTileLayer(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: Unit,
+      opt_additionalParameters: ServiceParameters,
+      opt_tileType: String
+    ): TileLayer = js.native
+    def createTileLayer(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: Unit,
+      opt_additionalParameters: ServiceParameters,
+      opt_tileType: String,
+      opt_scheme: String
+    ): TileLayer = js.native
+    def createTileLayer(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: Unit,
+      opt_additionalParameters: ServiceParameters,
+      opt_tileType: Unit,
       opt_scheme: String
     ): TileLayer = js.native
     
@@ -148,80 +148,28 @@ object metaInfo {
       * @returns {H.map.provider.TileProvider} - the tile provider
       */
     def createTileProvider(tileSize: Double, pixelRatio: Double): typings.heremaps.H.map.provider.TileProvider = js.native
-    def createTileProvider(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.UndefOr[scala.Nothing],
-      opt_additionalParameters: js.UndefOr[scala.Nothing],
-      opt_tileType: js.UndefOr[scala.Nothing],
-      opt_scheme: String
-    ): typings.heremaps.H.map.provider.TileProvider = js.native
-    def createTileProvider(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.UndefOr[scala.Nothing],
-      opt_additionalParameters: js.UndefOr[scala.Nothing],
-      opt_tileType: String
-    ): typings.heremaps.H.map.provider.TileProvider = js.native
-    def createTileProvider(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.UndefOr[scala.Nothing],
-      opt_additionalParameters: js.UndefOr[scala.Nothing],
-      opt_tileType: String,
-      opt_scheme: String
-    ): typings.heremaps.H.map.provider.TileProvider = js.native
-    def createTileProvider(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.UndefOr[scala.Nothing],
-      opt_additionalParameters: ServiceParameters
-    ): typings.heremaps.H.map.provider.TileProvider = js.native
-    def createTileProvider(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.UndefOr[scala.Nothing],
-      opt_additionalParameters: ServiceParameters,
-      opt_tileType: js.UndefOr[scala.Nothing],
-      opt_scheme: String
-    ): typings.heremaps.H.map.provider.TileProvider = js.native
-    def createTileProvider(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.UndefOr[scala.Nothing],
-      opt_additionalParameters: ServiceParameters,
-      opt_tileType: String
-    ): typings.heremaps.H.map.provider.TileProvider = js.native
-    def createTileProvider(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.UndefOr[scala.Nothing],
-      opt_additionalParameters: ServiceParameters,
-      opt_tileType: String,
-      opt_scheme: String
-    ): typings.heremaps.H.map.provider.TileProvider = js.native
     def createTileProvider(tileSize: Double, pixelRatio: Double, opt_categoryFilter: js.Array[String]): typings.heremaps.H.map.provider.TileProvider = js.native
     def createTileProvider(
       tileSize: Double,
       pixelRatio: Double,
       opt_categoryFilter: js.Array[String],
-      opt_additionalParameters: js.UndefOr[scala.Nothing],
-      opt_tileType: js.UndefOr[scala.Nothing],
-      opt_scheme: String
-    ): typings.heremaps.H.map.provider.TileProvider = js.native
-    def createTileProvider(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.Array[String],
-      opt_additionalParameters: js.UndefOr[scala.Nothing],
+      opt_additionalParameters: Unit,
       opt_tileType: String
     ): typings.heremaps.H.map.provider.TileProvider = js.native
     def createTileProvider(
       tileSize: Double,
       pixelRatio: Double,
       opt_categoryFilter: js.Array[String],
-      opt_additionalParameters: js.UndefOr[scala.Nothing],
+      opt_additionalParameters: Unit,
       opt_tileType: String,
+      opt_scheme: String
+    ): typings.heremaps.H.map.provider.TileProvider = js.native
+    def createTileProvider(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: js.Array[String],
+      opt_additionalParameters: Unit,
+      opt_tileType: Unit,
       opt_scheme: String
     ): typings.heremaps.H.map.provider.TileProvider = js.native
     def createTileProvider(
@@ -235,14 +183,6 @@ object metaInfo {
       pixelRatio: Double,
       opt_categoryFilter: js.Array[String],
       opt_additionalParameters: ServiceParameters,
-      opt_tileType: js.UndefOr[scala.Nothing],
-      opt_scheme: String
-    ): typings.heremaps.H.map.provider.TileProvider = js.native
-    def createTileProvider(
-      tileSize: Double,
-      pixelRatio: Double,
-      opt_categoryFilter: js.Array[String],
-      opt_additionalParameters: ServiceParameters,
       opt_tileType: String
     ): typings.heremaps.H.map.provider.TileProvider = js.native
     def createTileProvider(
@@ -251,6 +191,66 @@ object metaInfo {
       opt_categoryFilter: js.Array[String],
       opt_additionalParameters: ServiceParameters,
       opt_tileType: String,
+      opt_scheme: String
+    ): typings.heremaps.H.map.provider.TileProvider = js.native
+    def createTileProvider(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: js.Array[String],
+      opt_additionalParameters: ServiceParameters,
+      opt_tileType: Unit,
+      opt_scheme: String
+    ): typings.heremaps.H.map.provider.TileProvider = js.native
+    def createTileProvider(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: Unit,
+      opt_additionalParameters: Unit,
+      opt_tileType: String
+    ): typings.heremaps.H.map.provider.TileProvider = js.native
+    def createTileProvider(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: Unit,
+      opt_additionalParameters: Unit,
+      opt_tileType: String,
+      opt_scheme: String
+    ): typings.heremaps.H.map.provider.TileProvider = js.native
+    def createTileProvider(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: Unit,
+      opt_additionalParameters: Unit,
+      opt_tileType: Unit,
+      opt_scheme: String
+    ): typings.heremaps.H.map.provider.TileProvider = js.native
+    def createTileProvider(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: Unit,
+      opt_additionalParameters: ServiceParameters
+    ): typings.heremaps.H.map.provider.TileProvider = js.native
+    def createTileProvider(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: Unit,
+      opt_additionalParameters: ServiceParameters,
+      opt_tileType: String
+    ): typings.heremaps.H.map.provider.TileProvider = js.native
+    def createTileProvider(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: Unit,
+      opt_additionalParameters: ServiceParameters,
+      opt_tileType: String,
+      opt_scheme: String
+    ): typings.heremaps.H.map.provider.TileProvider = js.native
+    def createTileProvider(
+      tileSize: Double,
+      pixelRatio: Double,
+      opt_categoryFilter: Unit,
+      opt_additionalParameters: ServiceParameters,
+      opt_tileType: Unit,
       opt_scheme: String
     ): typings.heremaps.H.map.provider.TileProvider = js.native
     
@@ -276,20 +276,19 @@ object metaInfo {
       * @property resolutions {Object<string, Object>} -
       * @property languages {Object<string, Object>} -
       */
-    @js.native
     trait Info extends StObject {
       
-      var formats: StringDictionary[js.Any] = js.native
+      var formats: StringDictionary[js.Any]
       
-      var languages: StringDictionary[js.Any] = js.native
+      var languages: StringDictionary[js.Any]
       
-      var maps: StringDictionary[js.Any] = js.native
+      var maps: StringDictionary[js.Any]
       
-      var resolutions: StringDictionary[js.Any] = js.native
+      var resolutions: StringDictionary[js.Any]
       
-      var schemes: StringDictionary[js.Any] = js.native
+      var schemes: StringDictionary[js.Any]
       
-      var tiletypes: StringDictionary[js.Any] = js.native
+      var tiletypes: StringDictionary[js.Any]
     }
     object Info {
       
@@ -335,14 +334,13 @@ object metaInfo {
       * @property version {string=} - the map version hash to use for retrieving tiles, default is newest and will be automatically updated
       * @property subDomain {string=} - the sub-domain of the map tile service relative to the platform's base URL, default is 'maps'
       */
-    @js.native
     trait Options extends StObject {
       
-      var subDomain: js.UndefOr[String] = js.native
+      var subDomain: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var version: js.UndefOr[String] = js.native
+      var version: js.UndefOr[String] = js.undefined
     }
     object Options {
       
@@ -387,20 +385,19 @@ object metaInfo {
       * @property pixelRatio {number=} - The pixel ratio to use for over-sampling in cases of high-resolution displays
       * @property categoryFilter {Array<string>=} - A list of meta-info category names which should be suppressed. See Metainfo Tile for valid category names.
       */
-    @js.native
     trait Options extends StObject {
       
-      var categoryFilter: js.UndefOr[js.Array[String]] = js.native
+      var categoryFilter: js.UndefOr[js.Array[String]] = js.undefined
       
-      var pixelRatio: js.UndefOr[Double] = js.native
+      var pixelRatio: js.UndefOr[Double] = js.undefined
       
-      var scheme: js.UndefOr[String] = js.native
+      var scheme: js.UndefOr[String] = js.undefined
       
-      var tileCacheSize: js.UndefOr[Double] = js.native
+      var tileCacheSize: js.UndefOr[Double] = js.undefined
       
-      var tileSize: js.UndefOr[Double] = js.native
+      var tileSize: js.UndefOr[Double] = js.undefined
       
-      var tileType: js.UndefOr[String] = js.native
+      var tileType: js.UndefOr[String] = js.undefined
     }
     object Options {
       

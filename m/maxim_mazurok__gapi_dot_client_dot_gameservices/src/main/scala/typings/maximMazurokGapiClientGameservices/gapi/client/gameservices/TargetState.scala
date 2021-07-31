@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetState extends StObject {
   
   /** Details about Agones fleets. */
-  var details: js.UndefOr[js.Array[TargetDetails]] = js.native
+  var details: js.UndefOr[js.Array[TargetDetails]] = js.undefined
 }
 object TargetState {
   

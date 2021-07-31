@@ -2,31 +2,29 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentSpan extends StObject {
   
   /**
     * If DocumentSpan.textSpan is the span for name of the declaration,
     * then this is the span for relevant declaration
     */
-  var contextSpan: js.UndefOr[TextSpan] = js.native
+  var contextSpan: js.UndefOr[TextSpan] = js.undefined
   
-  var fileName: java.lang.String = js.native
+  var fileName: java.lang.String
   
-  var originalContextSpan: js.UndefOr[TextSpan] = js.native
+  var originalContextSpan: js.UndefOr[TextSpan] = js.undefined
   
-  var originalFileName: js.UndefOr[java.lang.String] = js.native
+  var originalFileName: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * If the span represents a location that was remapped (e.g. via a .d.ts.map file),
     * then the original filename and span will be specified here
     */
-  var originalTextSpan: js.UndefOr[TextSpan] = js.native
+  var originalTextSpan: js.UndefOr[TextSpan] = js.undefined
   
-  var textSpan: TextSpan = js.native
+  var textSpan: TextSpan
 }
 object DocumentSpan {
   

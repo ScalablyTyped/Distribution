@@ -7,33 +7,32 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LINEAR
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.STEPPED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineDatasetConfig
-  extends CommonDatasetConfig
+  extends StObject
+     with CommonDatasetConfig
      with BarLineScatterCandleBubbleConfig
      with LineScatterCandleRadarConfig
      with LineRadarConfig {
   
-  var circleColor: js.UndefOr[Color] = js.native
+  var circleColor: js.UndefOr[Color] = js.undefined
   
-  var circleColors: js.UndefOr[js.Array[Color]] = js.native
+  var circleColors: js.UndefOr[js.Array[Color]] = js.undefined
   
-  var circleHoleColor: js.UndefOr[Color] = js.native
+  var circleHoleColor: js.UndefOr[Color] = js.undefined
   
-  var circleRadius: js.UndefOr[Double] = js.native
+  var circleRadius: js.UndefOr[Double] = js.undefined
   
-  var dashedLine: js.UndefOr[Phase] = js.native
+  var dashedLine: js.UndefOr[Phase] = js.undefined
   
-  var drawCircleHole: js.UndefOr[Boolean] = js.native
+  var drawCircleHole: js.UndefOr[Boolean] = js.undefined
   
-  var drawCircles: js.UndefOr[Boolean] = js.native
+  var drawCircles: js.UndefOr[Boolean] = js.undefined
   
-  var drawCubicIntensity: js.UndefOr[Double] = js.native
+  var drawCubicIntensity: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[LINEAR | STEPPED | CUBIC_BEZIER | HORIZONTAL_BEZIER] = js.native
+  var mode: js.UndefOr[LINEAR | STEPPED | CUBIC_BEZIER | HORIZONTAL_BEZIER] = js.undefined
 }
 object LineDatasetConfig {
   

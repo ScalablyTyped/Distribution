@@ -3,16 +3,14 @@ package typings.knockoutKogrid
 import typings.jquery.JQueryGenericPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kg {
   
-  @js.native
   trait ColumnDef extends StObject {
     
     /** Appends a css class for the column cells */
-    var cellClass: js.UndefOr[String] = js.native
+    var cellClass: js.UndefOr[String] = js.undefined
     
     /**
       * A function which takes the value of the cell and returns the display value. Useful when your data model has an underlying value which you need to convert to a human readable format.
@@ -20,37 +18,37 @@ object kg {
       * @returns the display value
       * @example function(unixTimeTicks) { return new Date(unixTimeTicks); }
       */
-    var cellFormatter: js.UndefOr[js.Function1[/* val */ js.Any, String]] = js.native
+    var cellFormatter: js.UndefOr[js.Function1[/* val */ js.Any, String]] = js.undefined
     
     /**Sets the cell template for the column. See github wiki for more details.*/
-    var cellTemplate: js.UndefOr[String | JQueryGenericPromise[String]] = js.native
+    var cellTemplate: js.UndefOr[String | JQueryGenericPromise[String]] = js.undefined
     
     /** Sets the pretty display name of the column. default is the field given */
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
     /** The string name of the property in your data model you want that column to represent. Can also be a property path on your data model. 'foo.bar.myField', 'Name.First', etc.. */
-    var field: String = js.native
+    var field: String
     
     /** Sets the template for the column header cell. See github wiki for more details. */
-    var headerCellTemplate: js.UndefOr[String | JQueryGenericPromise[String]] = js.native
+    var headerCellTemplate: js.UndefOr[String | JQueryGenericPromise[String]] = js.undefined
     
     /** Appends a css class for the column header. */
-    var headerClass: js.UndefOr[String] = js.native
+    var headerClass: js.UndefOr[String] = js.undefined
     
     /**Sets the maximum width of the column.*/
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /**Whether or not column is resizable. */
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the sort function for the column. Useful when you have data that is formatted in an unusal way or if you want to sort on an underlying data type. Example: function(a,b){return a > b} */
-    var sortFn: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.native
+    var sortFn: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.undefined
     
     /**Whether or not column is sortable. */
-    var sortable: js.UndefOr[Boolean] = js.native
+    var sortable: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the width of the column. Can be a fixed width in pixels as an int (42), string px('42px'), percentage string ('42%'), weighted asterisks (width divided by total number of *'s is all column definition widths) See github wiki for more details. */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object ColumnDef {
     
@@ -148,17 +146,16 @@ object kg {
     def desc: typings.knockoutKogrid.knockoutKogridStrings.desc = "desc".asInstanceOf[typings.knockoutKogrid.knockoutKogridStrings.desc]
   }
   
-  @js.native
   trait DomUtilityService extends StObject {
     
-    def BuildStyles(grid: Grid[_]): Unit = js.native
+    def BuildStyles(grid: Grid[js.Any]): Unit
     
-    def UpdateGridLayout(grid: Grid[_]): Unit = js.native
+    def UpdateGridLayout(grid: Grid[js.Any]): Unit
   }
   object DomUtilityService {
     
     @scala.inline
-    def apply(BuildStyles: Grid[_] => Unit, UpdateGridLayout: Grid[_] => Unit): DomUtilityService = {
+    def apply(BuildStyles: Grid[js.Any] => Unit, UpdateGridLayout: Grid[js.Any] => Unit): DomUtilityService = {
       val __obj = js.Dynamic.literal(BuildStyles = js.Any.fromFunction1(BuildStyles), UpdateGridLayout = js.Any.fromFunction1(UpdateGridLayout))
       __obj.asInstanceOf[DomUtilityService]
     }
@@ -167,26 +164,25 @@ object kg {
     implicit class DomUtilityServiceMutableBuilder[Self <: DomUtilityService] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBuildStyles(value: Grid[_] => Unit): Self = StObject.set(x, "BuildStyles", js.Any.fromFunction1(value))
+      def setBuildStyles(value: Grid[js.Any] => Unit): Self = StObject.set(x, "BuildStyles", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setUpdateGridLayout(value: Grid[_] => Unit): Self = StObject.set(x, "UpdateGridLayout", js.Any.fromFunction1(value))
+      def setUpdateGridLayout(value: Grid[js.Any] => Unit): Self = StObject.set(x, "UpdateGridLayout", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait FilterOptions extends StObject {
     
     /** Variable to contain the current search filter */
     var filterText: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /** Number of seconds to throttle before reapplying search */
-    var filterThrottle: js.UndefOr[Double] = js.native
+    var filterThrottle: js.UndefOr[Double] = js.undefined
     
     /** Is the filtering internal or does it require a server visit. You should subscribe to filterText to refresh */
-    var useExternalFilter: js.UndefOr[Boolean] = js.native
+    var useExternalFilter: js.UndefOr[Boolean] = js.undefined
   }
   object FilterOptions {
     
@@ -221,19 +217,18 @@ object kg {
     }
   }
   
-  @js.native
   trait Grid[EntityType] extends StObject {
     
     @JSName("$$selectionPhase")
-    var DollarDollarselectionPhase: Boolean = js.native
+    var DollarDollarselectionPhase: Boolean
     
-    var config: GridOptions[EntityType] = js.native
+    var config: GridOptions[EntityType]
     
-    def configureColumnWidths(): Unit = js.native
+    def configureColumnWidths(): Unit
     
-    var rowFactory: RowFactory[EntityType] = js.native
+    var rowFactory: RowFactory[EntityType]
     
-    var selectionService: SelectionService[EntityType] = js.native
+    var selectionService: SelectionService[EntityType]
   }
   object Grid {
     
@@ -251,7 +246,7 @@ object kg {
     }
     
     @scala.inline
-    implicit class GridMutableBuilder[Self <: Grid[_], EntityType] (val x: Self with Grid[EntityType]) extends AnyVal {
+    implicit class GridMutableBuilder[Self <: Grid[?], EntityType] (val x: Self & Grid[EntityType]) extends AnyVal {
       
       @scala.inline
       def setConfig(value: GridOptions[EntityType]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
@@ -270,11 +265,10 @@ object kg {
     }
   }
   
-  @js.native
   trait GridOptions[EntityType] extends StObject {
     
     /** Callback for when you want to validate something after selection. */
-    var afterSelectionChange: js.UndefOr[js.Function1[/* row */ Row[EntityType], Unit]] = js.native
+    var afterSelectionChange: js.UndefOr[js.Function1[/* row */ Row[EntityType], Unit]] = js.undefined
     
     /** Callback if you want to inspect something before selection,
       return false if you want to cancel the selection. return true otherwise.
@@ -282,126 +276,126 @@ object kg {
       use rowItem.changeSelection(event) method after returning false initially.
       Note: when shift+ Selecting multiple items in the grid this will only get called
       once and the rowItem will be an array of items that are queued to be selected. */
-    var beforeSelectionChange: js.UndefOr[js.Function1[/* row */ Row[EntityType], Boolean]] = js.native
+    var beforeSelectionChange: js.UndefOr[js.Function1[/* row */ Row[EntityType], Boolean]] = js.undefined
     
     /** To be able to have selectable rows in grid. */
-    var canSelectRows: js.UndefOr[Boolean] = js.native
+    var canSelectRows: js.UndefOr[Boolean] = js.undefined
     
     /** definitions of columns as an array [], if not defined columns are auto-generated. See github wiki for more details. */
     var columnDefs: js.UndefOr[
         js.Array[ColumnDef] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<Array<ColumnDef>> */ js.Any)
-      ] = js.native
+      ] = js.undefined
     
     /** Column width of columns in grid. */
-    var columnWidth: js.UndefOr[Double] = js.native
+    var columnWidth: js.UndefOr[Double] = js.undefined
     
     /** Data being displayed in the grid. Each item in the array is mapped to a row being displayed. */
     var data: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<EntityType> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /** Row selection check boxes appear as the first column. */
-    var displaySelectionCheckbox: Boolean = js.native
+    var displaySelectionCheckbox: Boolean
     
     /** Enable or disable resizing of columns */
-    var enableColumnResize: js.UndefOr[Boolean] = js.native
+    var enableColumnResize: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the server-side paging feature */
-    var enablePaging: js.UndefOr[Boolean] = js.native
+    var enablePaging: js.UndefOr[Boolean] = js.undefined
     
     /** Enable drag and drop row reordering. Only works in HTML5 compliant browsers. */
-    var enableRowReordering: js.UndefOr[Boolean] = js.native
+    var enableRowReordering: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables sorting in grid. */
-    var enableSorting: js.UndefOr[Boolean] = js.native
+    var enableSorting: js.UndefOr[Boolean] = js.undefined
     
     /** filterOptions -
       filterText: The text bound to the built-in search box.
       useExternalFilter: Bypass internal filtering if you want to roll your own filtering mechanism but want to use builtin search box.
       */
-    var filterOptions: js.UndefOr[FilterOptions] = js.native
+    var filterOptions: js.UndefOr[FilterOptions] = js.undefined
     
     /** Defining the height of the footer in pixels. */
-    var footerRowHeight: js.UndefOr[Double] = js.native
+    var footerRowHeight: js.UndefOr[Double] = js.undefined
     
     /** Show or hide the footer alltogether the footer is enabled by default */
-    var footerVisible: js.UndefOr[Boolean] = js.native
+    var footerVisible: js.UndefOr[Boolean] = js.undefined
     
     /** Initial fields to group data by. Array of field names, not displayName. */
-    var groups: js.UndefOr[js.Array[String]] = js.native
+    var groups: js.UndefOr[js.Array[String]] = js.undefined
     
     /** The height of the header row in pixels. */
-    var headerRowHeight: js.UndefOr[Double] = js.native
+    var headerRowHeight: js.UndefOr[Double] = js.undefined
     
     /** Define a header row template for further customization. See github wiki for more details. */
-    var headerRowTemplate: js.UndefOr[String | JQueryGenericPromise[String]] = js.native
+    var headerRowTemplate: js.UndefOr[String | JQueryGenericPromise[String]] = js.undefined
     
     /** Enables the use of jquery UI reaggable/droppable plugin. requires jqueryUI to work if enabled.
       Useful if you want drag + drop but your users insist on crappy browsers. */
-    var jqueryUIDraggable: js.UndefOr[Boolean] = js.native
+    var jqueryUIDraggable: js.UndefOr[Boolean] = js.undefined
     
     /** Enable the use jqueryUIThemes */
-    var jqueryUITheme: js.UndefOr[Boolean] = js.native
+    var jqueryUITheme: js.UndefOr[Boolean] = js.undefined
     
     /** Prevent unselections when in single selection mode. */
-    var keepLastSelected: js.UndefOr[Boolean] = js.native
+    var keepLastSelected: js.UndefOr[Boolean] = js.undefined
     
     /** Maintains the column widths while resizing.
       Defaults to true when using *'s or undefined widths. Can be ovverriden by setting to false. */
-    var maintainColumnRatios: js.UndefOr[js.Any] = js.native
+    var maintainColumnRatios: js.UndefOr[js.Any] = js.undefined
     
     /** Set this to false if you only want one item selected at a time */
-    var multiSelect: js.UndefOr[Boolean] = js.native
+    var multiSelect: js.UndefOr[Boolean] = js.undefined
     
     /**  pagingOptions - */
-    var pagingOptions: js.UndefOr[PagingOptions] = js.native
+    var pagingOptions: js.UndefOr[PagingOptions] = js.undefined
     
     /** Array of plugin functions to register in ng-grid */
-    var plugins: js.UndefOr[js.Array[Plugin[EntityType]]] = js.native
+    var plugins: js.UndefOr[js.Array[Plugin[EntityType]]] = js.undefined
     
     /** Row height of rows in grid. */
-    var rowHeight: js.UndefOr[Double] = js.native
+    var rowHeight: js.UndefOr[Double] = js.undefined
     
     /** Define a row template to customize output. See github wiki for more details. */
-    var rowTemplate: js.UndefOr[String | JQueryGenericPromise[String]] = js.native
+    var rowTemplate: js.UndefOr[String | JQueryGenericPromise[String]] = js.undefined
     
     /** Defines the binding to select all at once */
     var selectAllState: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /** Disable row selections by clicking on the row and only when the checkbox is clicked. */
-    var selectWithCheckboxOnly: js.UndefOr[Boolean] = js.native
+    var selectWithCheckboxOnly: js.UndefOr[Boolean] = js.undefined
     
     /** all of the items selected in the grid. In single select mode there will only be one item in the array. */
     var selectedItems: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /** Enables menu to choose which columns to display and group by.
       If both showColumnMenu and showFilter are false the menu button will not display.*/
-    var showColumnMenu: js.UndefOr[Boolean] = js.native
+    var showColumnMenu: js.UndefOr[Boolean] = js.undefined
     
     /** Enables display of the filterbox in the column menu.
       If both showColumnMenu and showFilter are false the menu button will not display.*/
-    var showFilter: js.UndefOr[Boolean] = js.native
+    var showFilter: js.UndefOr[Boolean] = js.undefined
     
     /** Show the dropzone for drag and drop grouping */
-    var showGroupPanel: js.UndefOr[Boolean] = js.native
+    var showGroupPanel: js.UndefOr[Boolean] = js.undefined
     
     /** Define a sortInfo object to specify a default sorting state.
       You can also observe this variable to utilize server-side sorting (see useExternalSorting).
       Syntax is sortinfo: { fields: ['fieldName1',' fieldName2'], direction: 'ASC'/'asc' || 'desc'/'DESC'}*/
     var sortInfo: js.UndefOr[
         SortInfo | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<SortInfo> */ js.Any)
-      ] = js.native
+      ] = js.undefined
     
     /** Set the tab index of the Vieport. */
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
     /** Prevents the internal sorting from executing.
       The sortInfo object will be updated with the sorting information so you can handle sorting (see sortInfo)*/
-    var useExternalSorting: js.UndefOr[Boolean] = js.native
+    var useExternalSorting: js.UndefOr[Boolean] = js.undefined
   }
   object GridOptions {
     
@@ -412,7 +406,7 @@ object kg {
     }
     
     @scala.inline
-    implicit class GridOptionsMutableBuilder[Self <: GridOptions[_], EntityType] (val x: Self with GridOptions[EntityType]) extends AnyVal {
+    implicit class GridOptionsMutableBuilder[Self <: GridOptions[?], EntityType] (val x: Self & GridOptions[EntityType]) extends AnyVal {
       
       @scala.inline
       def setAfterSelectionChange(value: /* row */ Row[EntityType] => Unit): Self = StObject.set(x, "afterSelectionChange", js.Any.fromFunction1(value))
@@ -642,28 +636,27 @@ object kg {
     }
   }
   
-  @js.native
   trait PagingOptions extends StObject {
     
     /** currentPage: the uhm... current page. */
     var currentPage: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /** pageSize: currently selected page size.  */
     var pageSize: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**  pageSizes: list of available page sizes.  */
     var pageSizes: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<number> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /** totalServerItems: Total items are on the server.  */
     var totalServerItems: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object PagingOptions {
     
@@ -710,10 +703,9 @@ object kg {
     }
   }
   
-  @js.native
   trait Plugin[EntityType] extends StObject {
     
-    def onGridInit(grid: Grid[EntityType]): Unit = js.native
+    def onGridInit(grid: Grid[EntityType]): Unit
   }
   object Plugin {
     
@@ -724,19 +716,18 @@ object kg {
     }
     
     @scala.inline
-    implicit class PluginMutableBuilder[Self <: Plugin[_], EntityType] (val x: Self with Plugin[EntityType]) extends AnyVal {
+    implicit class PluginMutableBuilder[Self <: Plugin[?], EntityType] (val x: Self & Plugin[EntityType]) extends AnyVal {
       
       @scala.inline
       def setOnGridInit(value: Grid[EntityType] => Unit): Self = StObject.set(x, "onGridInit", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait Row[EntityType] extends StObject {
     
-    var entity: EntityType = js.native
+    var entity: EntityType
     
-    var selected: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+    var selected: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
   }
   object Row {
     
@@ -750,7 +741,7 @@ object kg {
     }
     
     @scala.inline
-    implicit class RowMutableBuilder[Self <: Row[_], EntityType] (val x: Self with Row[EntityType]) extends AnyVal {
+    implicit class RowMutableBuilder[Self <: Row[?], EntityType] (val x: Self & Row[EntityType]) extends AnyVal {
       
       @scala.inline
       def setEntity(value: EntityType): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
@@ -762,10 +753,9 @@ object kg {
     }
   }
   
-  @js.native
   trait RowFactory[EntityType] extends StObject {
     
-    var rowCache: js.Array[Row[EntityType]] = js.native
+    var rowCache: js.Array[Row[EntityType]]
   }
   object RowFactory {
     
@@ -776,7 +766,7 @@ object kg {
     }
     
     @scala.inline
-    implicit class RowFactoryMutableBuilder[Self <: RowFactory[_], EntityType] (val x: Self with RowFactory[EntityType]) extends AnyVal {
+    implicit class RowFactoryMutableBuilder[Self <: RowFactory[?], EntityType] (val x: Self & RowFactory[EntityType]) extends AnyVal {
       
       @scala.inline
       def setRowCache(value: js.Array[Row[EntityType]]): Self = StObject.set(x, "rowCache", value.asInstanceOf[js.Any])
@@ -786,14 +776,13 @@ object kg {
     }
   }
   
-  @js.native
   trait SelectionService[EntityType] extends StObject {
     
-    var lastClickedRow: Row[EntityType] = js.native
+    var lastClickedRow: Row[EntityType]
     
-    var multi: Boolean = js.native
+    var multi: Boolean
     
-    def setSelection(row: Row[EntityType], selected: Boolean): Unit = js.native
+    def setSelection(row: Row[EntityType], selected: Boolean): Unit
   }
   object SelectionService {
     
@@ -804,7 +793,7 @@ object kg {
     }
     
     @scala.inline
-    implicit class SelectionServiceMutableBuilder[Self <: SelectionService[_], EntityType] (val x: Self with SelectionService[EntityType]) extends AnyVal {
+    implicit class SelectionServiceMutableBuilder[Self <: SelectionService[?], EntityType] (val x: Self & SelectionService[EntityType]) extends AnyVal {
       
       @scala.inline
       def setLastClickedRow(value: Row[EntityType]): Self = StObject.set(x, "lastClickedRow", value.asInstanceOf[js.Any])
@@ -817,14 +806,13 @@ object kg {
     }
   }
   
-  @js.native
   trait SortColumn extends StObject {
     
     /** The string name of the property in your data model you want that column to represent. Can also be a property path on your data model. 'foo.bar.myField', 'Name.First', etc.. */
-    var field: String = js.native
+    var field: String
     
     /** Sets the sort function for the column. Useful when you have data that is formatted in an unusal way or if you want to sort on an underlying data type. Example: function(a,b){return a > b} */
-    var sortingAlgorithm: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.native
+    var sortingAlgorithm: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.undefined
   }
   object SortColumn {
     
@@ -848,14 +836,13 @@ object kg {
     }
   }
   
-  @js.native
   trait SortInfo extends StObject {
     
     /** Which column to sort */
-    var column: SortColumn = js.native
+    var column: SortColumn
     
     /** Which direction to sort */
-    var direction: Direction = js.native
+    var direction: Direction
   }
   object SortInfo {
     

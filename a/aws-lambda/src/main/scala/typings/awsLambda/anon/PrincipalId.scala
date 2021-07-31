@@ -2,13 +2,11 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrincipalId extends StObject {
   
-  var principalId: String = js.native
+  var principalId: String
 }
 object PrincipalId {
   

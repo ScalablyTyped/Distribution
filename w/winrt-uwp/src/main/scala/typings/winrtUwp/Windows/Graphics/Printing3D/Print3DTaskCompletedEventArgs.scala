@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the Completed event of the 3D print request. */
-@js.native
 trait Print3DTaskCompletedEventArgs extends StObject {
   
   /** Gets the status of the 3D print request. */
-  var completion: Print3DTaskCompletion = js.native
+  var completion: Print3DTaskCompletion
   
   /** Gets the type of error encountered during the 3D print request. */
-  var extendedStatus: Print3DTaskDetail = js.native
+  var extendedStatus: Print3DTaskDetail
 }
 object Print3DTaskCompletedEventArgs {
   

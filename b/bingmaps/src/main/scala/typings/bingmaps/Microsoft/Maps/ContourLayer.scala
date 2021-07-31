@@ -2,11 +2,12 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContourLayer extends Layer {
+trait ContourLayer
+  extends StObject
+     with Layer {
   
   /**
     * Gets the contour lines of this layer.

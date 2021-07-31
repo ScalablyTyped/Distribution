@@ -4,23 +4,21 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignerInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Algs extends StObject {
   
-  var algs: String = js.native
+  var algs: String
   
-  var certs: String = js.native
+  var certs: String
   
-  var obj: SignedData = js.native
+  var obj: SignedData
   
-  var revs: String = js.native
+  var revs: String
   
-  var si: js.Array[SignerInfo] = js.native
+  var si: js.Array[SignerInfo]
   
-  var version: String = js.native
+  var version: String
 }
 object Algs {
   

@@ -12,14 +12,15 @@ import typings.rrule.typesMod.ParsedOptions
 import typings.rrule.yearinfoMod.YearInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iterinfoMod {
   
   @JSImport("rrule/dist/esm/src/iterinfo", JSImport.Default)
   @js.native
-  class default protected () extends Iterinfo {
+  class default protected ()
+    extends StObject
+       with Iterinfo {
     def this(options: ParsedOptions) = this()
   }
   

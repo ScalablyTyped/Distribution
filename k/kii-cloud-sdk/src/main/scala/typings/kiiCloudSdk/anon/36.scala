@@ -4,15 +4,13 @@ import typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
 import typings.kiiCloudSdk.KiiCloud.KiiUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `36` extends StObject {
   
-  def failure(user: KiiUser, network: KiiSocialNetworkName, anErrorString: String): js.Any = js.native
+  def failure(user: KiiUser, network: KiiSocialNetworkName, anErrorString: String): js.Any
   
-  def success(user: KiiUser, network: KiiSocialNetworkName): js.Any = js.native
+  def success(user: KiiUser, network: KiiSocialNetworkName): js.Any
 }
 object `36` {
   

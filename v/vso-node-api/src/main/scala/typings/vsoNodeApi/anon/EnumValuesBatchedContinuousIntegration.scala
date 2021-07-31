@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesBatchedContinuousIntegration extends StObject {
   
-  var enumValues: BatchedContinuousIntegration = js.native
+  var enumValues: BatchedContinuousIntegration
 }
 object EnumValuesBatchedContinuousIntegration {
   

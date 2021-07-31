@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMLDataSource extends StObject {
   
   /**
     * The Amazon S3 location of the input data.  The input data must be in CSV format and contain at least 500 rows. 
     */
-  var S3DataSource: AutoMLS3DataSource = js.native
+  var S3DataSource: AutoMLS3DataSource
 }
 object AutoMLDataSource {
   

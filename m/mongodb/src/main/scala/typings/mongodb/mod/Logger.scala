@@ -2,7 +2,6 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "Logger")
@@ -54,36 +53,35 @@ class Logger protected () extends StObject {
 /* static members */
 object Logger {
   
+  @JSImport("mongodb", "Logger")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Get the current logger function
     */
-  @JSImport("mongodb", "Logger.currentLogger")
-  @js.native
-  def currentLogger(): log = js.native
+  @scala.inline
+  def currentLogger(): log = ^.asInstanceOf[js.Dynamic].applyDynamic("currentLogger")().asInstanceOf[log]
   
   /**
     * Set what classes to log.
     */
-  @JSImport("mongodb", "Logger.filter")
-  @js.native
-  def filter(`type`: String, values: js.Array[String]): Unit = js.native
+  @scala.inline
+  def filter(`type`: String, values: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(`type`.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Resets the logger to default settings, error and no filtered classes
     */
-  @JSImport("mongodb", "Logger.reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
   //Set the current logger function
-  @JSImport("mongodb", "Logger.setCurrentLogger")
-  @js.native
-  def setCurrentLogger(log: log): Unit = js.native
+  @scala.inline
+  def setCurrentLogger(log: log): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCurrentLogger")(log.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Set the current log level
     */
-  @JSImport("mongodb", "Logger.setLevel")
-  @js.native
-  def setLevel(level: String): Unit = js.native
+  @scala.inline
+  def setLevel(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

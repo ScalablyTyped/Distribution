@@ -7,7 +7,6 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -27,22 +26,21 @@ object mod extends Shortcut {
   @js.native
   val default: ComponentClass[FadeInProps, ComponentState] = js.native
   
-  @js.native
   trait FadeInProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Default: 50. Delay between each child's animation in milliseconds.
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Default: 400. Duration of each child's animation in milliseconds.
       */
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
   }
   object FadeInProps {
     

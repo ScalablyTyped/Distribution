@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.PivotGrid")
 @js.native
 class PivotGrid protected ()
-  extends typings.ejWebAll.ej.PivotGrid {
+  extends StObject
+     with typings.ejWebAll.ej.PivotGrid {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
@@ -27,15 +27,15 @@ object PivotGrid {
   object Layout extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotGrid.Layout with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotGrid.Layout & Double] = js.native
     
-    /* 3 */ val ExcelLikeLayout: typings.ejWebAll.ej.PivotGrid.Layout.ExcelLikeLayout with Double = js.native
+    /* 3 */ val ExcelLikeLayout: typings.ejWebAll.ej.PivotGrid.Layout.ExcelLikeLayout & Double = js.native
     
-    /* 2 */ val NoSummaries: typings.ejWebAll.ej.PivotGrid.Layout.NoSummaries with Double = js.native
+    /* 2 */ val NoSummaries: typings.ejWebAll.ej.PivotGrid.Layout.NoSummaries & Double = js.native
     
-    /* 0 */ val Normal: typings.ejWebAll.ej.PivotGrid.Layout.Normal with Double = js.native
+    /* 0 */ val Normal: typings.ejWebAll.ej.PivotGrid.Layout.Normal & Double = js.native
     
-    /* 1 */ val NormalTopSummary: typings.ejWebAll.ej.PivotGrid.Layout.NormalTopSummary with Double = js.native
+    /* 1 */ val NormalTopSummary: typings.ejWebAll.ej.PivotGrid.Layout.NormalTopSummary & Double = js.native
   }
   
   /* static member */

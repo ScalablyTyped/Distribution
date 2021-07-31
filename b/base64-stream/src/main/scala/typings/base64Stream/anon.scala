@@ -7,22 +7,20 @@ import typings.node.streamMod.TransformCallback
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined node.stream.TransformOptions & {  lineLength :number | undefined,   prefix :string | undefined} */
-  @js.native
   trait TransformOptionslineLengt extends StObject {
     
-    var allowHalfOpen: js.UndefOr[Boolean] = js.native
+    var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
     
-    var autoDestroy: js.UndefOr[Boolean] = js.native
+    var autoDestroy: js.UndefOr[Boolean] = js.undefined
     
-    var decodeStrings: js.UndefOr[Boolean] = js.native
+    var decodeStrings: js.UndefOr[Boolean] = js.undefined
     
-    var defaultEncoding: js.UndefOr[BufferEncoding] = js.native
+    var defaultEncoding: js.UndefOr[BufferEncoding] = js.undefined
     
     var destroy: js.UndefOr[
         js.ThisFunction2[
@@ -31,11 +29,11 @@ object anon {
           /* callback */ js.Function1[/* error */ Error | Null, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var emitClose: js.UndefOr[Boolean] = js.native
+    var emitClose: js.UndefOr[Boolean] = js.undefined
     
-    var encoding: js.UndefOr[BufferEncoding] = js.native
+    var encoding: js.UndefOr[BufferEncoding] = js.undefined
     
     var `final`: js.UndefOr[
         js.ThisFunction1[
@@ -43,23 +41,23 @@ object anon {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var flush: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* callback */ TransformCallback, Unit]] = js.native
+    var flush: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* callback */ TransformCallback, Unit]] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var lineLength: js.UndefOr[Double] = js.native
+    var lineLength: js.UndefOr[Double] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var read: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]] = js.native
+    var read: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]] = js.undefined
     
-    var readableHighWaterMark: js.UndefOr[Double] = js.native
+    var readableHighWaterMark: js.UndefOr[Double] = js.undefined
     
-    var readableObjectMode: js.UndefOr[Boolean] = js.native
+    var readableObjectMode: js.UndefOr[Boolean] = js.undefined
     
     var transform: js.UndefOr[
         js.ThisFunction3[
@@ -69,13 +67,13 @@ object anon {
           /* callback */ TransformCallback, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var writableCorked: js.UndefOr[Double] = js.native
+    var writableCorked: js.UndefOr[Double] = js.undefined
     
-    var writableHighWaterMark: js.UndefOr[Double] = js.native
+    var writableHighWaterMark: js.UndefOr[Double] = js.undefined
     
-    var writableObjectMode: js.UndefOr[Boolean] = js.native
+    var writableObjectMode: js.UndefOr[Boolean] = js.undefined
     
     var write: js.UndefOr[
         js.ThisFunction3[
@@ -85,7 +83,7 @@ object anon {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var writev: js.UndefOr[
         js.ThisFunction2[
@@ -94,7 +92,7 @@ object anon {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object TransformOptionslineLengt {
     

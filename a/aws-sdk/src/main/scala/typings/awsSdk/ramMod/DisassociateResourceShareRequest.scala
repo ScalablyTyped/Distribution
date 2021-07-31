@@ -2,31 +2,29 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateResourceShareRequest extends StObject {
   
   /**
     * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientToken: js.UndefOr[String] = js.native
+  var clientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The principals.
     */
-  var principals: js.UndefOr[PrincipalArnOrIdList] = js.native
+  var principals: js.UndefOr[PrincipalArnOrIdList] = js.undefined
   
   /**
     * The Amazon Resource Names (ARNs) of the resources.
     */
-  var resourceArns: js.UndefOr[ResourceArnList] = js.native
+  var resourceArns: js.UndefOr[ResourceArnList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource share.
     */
-  var resourceShareArn: String = js.native
+  var resourceShareArn: String
 }
 object DisassociateResourceShareRequest {
   

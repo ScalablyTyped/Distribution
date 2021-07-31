@@ -12,7 +12,7 @@ growl like notifications for angularJS projects, using bootstrap alert classes
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 111723 |
+| # downloads        | 127960 |
 | # stars            | 1 |
 
 ## Links

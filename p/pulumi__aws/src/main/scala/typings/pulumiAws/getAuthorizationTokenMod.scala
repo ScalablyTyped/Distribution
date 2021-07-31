@@ -3,35 +3,35 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getAuthorizationTokenMod {
   
-  @JSImport("@pulumi/aws/codeartifact/getAuthorizationToken", "getAuthorizationToken")
+  @JSImport("@pulumi/aws/codeartifact/getAuthorizationToken", JSImport.Namespace)
   @js.native
-  def getAuthorizationToken(args: GetAuthorizationTokenArgs): js.Promise[GetAuthorizationTokenResult] = js.native
-  @JSImport("@pulumi/aws/codeartifact/getAuthorizationToken", "getAuthorizationToken")
-  @js.native
-  def getAuthorizationToken(args: GetAuthorizationTokenArgs, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getAuthorizationToken(args: GetAuthorizationTokenArgs): js.Promise[GetAuthorizationTokenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
+  @scala.inline
+  def getAuthorizationToken(args: GetAuthorizationTokenArgs, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
+  
   trait GetAuthorizationTokenArgs extends StObject {
     
     /**
       * The name of the domain that is in scope for the generated authorization token.
       */
-    val domain: String = js.native
+    val domain: String
     
     /**
       * The account number of the AWS account that owns the domain.
       */
-    val domainOwner: js.UndefOr[String] = js.native
+    val domainOwner: js.UndefOr[String] = js.undefined
     
     /**
       * The time, in seconds, that the generated authorization token is valid. Valid values are `0` and between `900` and `43200`.
       */
-    val durationSeconds: js.UndefOr[Double] = js.native
+    val durationSeconds: js.UndefOr[Double] = js.undefined
   }
   object GetAuthorizationTokenArgs {
     
@@ -61,29 +61,28 @@ object getAuthorizationTokenMod {
     }
   }
   
-  @js.native
   trait GetAuthorizationTokenResult extends StObject {
     
     /**
       * Temporary authorization token.
       */
-    val authorizationToken: String = js.native
+    val authorizationToken: String
     
-    val domain: String = js.native
+    val domain: String
     
-    val domainOwner: String = js.native
+    val domainOwner: String
     
-    val durationSeconds: js.UndefOr[Double] = js.native
+    val durationSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * The time in UTC RFC3339 format when the authorization token expires.
       */
-    val expiration: String = js.native
+    val expiration: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
   }
   object GetAuthorizationTokenResult {
     

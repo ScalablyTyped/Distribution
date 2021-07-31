@@ -6,32 +6,30 @@ import typings.plotlyJs.mod.PlotlyHTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<plotly.js.plotly.js.LegendClickEvent> */
-@js.native
 trait ReadonlyLegendClickEvent extends StObject {
   
-  val config: typings.plotlyJs.anon.PartialConfig = js.native
+  val config: typings.plotlyJs.anon.PartialConfig
   
-  val curveNumber: Double = js.native
+  val curveNumber: Double
   
-  val data: js.Array[Data] = js.native
+  val data: js.Array[Data]
   
-  val event: MouseEvent = js.native
+  val event: MouseEvent
   
-  val expandedIndex: Double = js.native
+  val expandedIndex: Double
   
-  val frames: js.Array[Frame] = js.native
+  val frames: js.Array[Frame]
   
-  val fullData: js.Array[Data] = js.native
+  val fullData: js.Array[Data]
   
-  val fullLayout: typings.plotlyJs.anon.PartialLayout = js.native
+  val fullLayout: typings.plotlyJs.anon.PartialLayout
   
-  val layout: typings.plotlyJs.anon.PartialLayout = js.native
+  val layout: typings.plotlyJs.anon.PartialLayout
   
-  val node: PlotlyHTMLElement = js.native
+  val node: PlotlyHTMLElement
 }
 object ReadonlyLegendClickEvent {
   

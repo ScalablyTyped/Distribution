@@ -1,13 +1,10 @@
-package typings.pkcs11js
+package typings.pkcs11js.Pkcs11Js
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Pkcs11Js {
-  
-  type Handle = typings.node.Buffer
-  
-  type Template = js.Array[typings.pkcs11js.Pkcs11Js.Attribute]
-}
+
+type Handle = typings.node.Buffer
+
+type Template = js.Array[typings.pkcs11js.Pkcs11Js.Attribute]

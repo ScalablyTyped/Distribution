@@ -3,17 +3,17 @@ package typings.yandexMaps.mod
 import typings.yandexMaps.mod.data.Manager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPanoramaConnectionArrow extends IPanoramaConnection {
+trait IPanoramaConnectionArrow
+  extends StObject
+     with IPanoramaConnection {
   
-  def getDirection(): js.Array[Double] = js.native
+  def getDirection(): js.Array[Double]
   
-  def getPanorama(): IPanorama = js.native
+  def getPanorama(): IPanorama
   
-  var properties: Manager = js.native
+  var properties: Manager
 }
 object IPanoramaConnectionArrow {
   

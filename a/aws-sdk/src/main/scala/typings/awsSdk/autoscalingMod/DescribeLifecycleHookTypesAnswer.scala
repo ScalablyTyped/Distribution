@@ -2,16 +2,14 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLifecycleHookTypesAnswer extends StObject {
   
   /**
     * The lifecycle hook types.
     */
-  var LifecycleHookTypes: js.UndefOr[AutoScalingNotificationTypes] = js.native
+  var LifecycleHookTypes: js.UndefOr[AutoScalingNotificationTypes] = js.undefined
 }
 object DescribeLifecycleHookTypesAnswer {
   

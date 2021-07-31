@@ -2,19 +2,17 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a set of goals that were reached in an activity.
   */
-@js.native
 trait SchemaGoalSetData extends StObject {
   
   /**
     * All the goals that were reached in the current activity.
     */
-  var goals: js.UndefOr[js.Array[SchemaGoalData]] = js.native
+  var goals: js.UndefOr[js.Array[SchemaGoalData]] = js.undefined
 }
 object SchemaGoalSetData {
   

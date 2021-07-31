@@ -2,14 +2,12 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComplianceManagementPartnerAssignment extends StObject {
   
   // Group assignment target.
-  var target: js.UndefOr[NullableOption[DeviceAndAppManagementAssignmentTarget]] = js.native
+  var target: js.UndefOr[NullableOption[DeviceAndAppManagementAssignmentTarget]] = js.undefined
 }
 object ComplianceManagementPartnerAssignment {
   

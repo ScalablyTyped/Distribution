@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.dataviz.diagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapeContent extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
-  var fontWeight: js.UndefOr[String] = js.native
+  var fontWeight: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object ShapeContent {
   

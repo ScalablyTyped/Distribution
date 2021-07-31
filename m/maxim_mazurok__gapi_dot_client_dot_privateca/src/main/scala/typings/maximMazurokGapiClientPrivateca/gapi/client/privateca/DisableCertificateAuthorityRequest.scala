@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableCertificateAuthorityRequest extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait DisableCertificateAuthorityRequest extends StObject {
     * request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported
     * (00000000-0000-0000-0000-000000000000).
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
 }
 object DisableCertificateAuthorityRequest {
   

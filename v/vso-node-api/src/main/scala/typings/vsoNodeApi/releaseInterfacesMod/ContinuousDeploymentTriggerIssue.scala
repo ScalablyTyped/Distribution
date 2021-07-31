@@ -2,17 +2,17 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContinuousDeploymentTriggerIssue extends AutoTriggerIssue {
+trait ContinuousDeploymentTriggerIssue
+  extends StObject
+     with AutoTriggerIssue {
   
-  var artifactType: String = js.native
+  var artifactType: String
   
-  var artifactVersionId: String = js.native
+  var artifactVersionId: String
   
-  var sourceId: String = js.native
+  var sourceId: String
 }
 object ContinuousDeploymentTriggerIssue {
   

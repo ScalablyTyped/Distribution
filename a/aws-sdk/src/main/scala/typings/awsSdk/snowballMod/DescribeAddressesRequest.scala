@@ -2,21 +2,19 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAddressesRequest extends StObject {
   
   /**
     * The number of ADDRESS objects to return.
     */
-  var MaxResults: js.UndefOr[ListLimit] = js.native
+  var MaxResults: js.UndefOr[ListLimit] = js.undefined
   
   /**
     * HTTP requests are stateless. To identify what object comes "next" in the list of ADDRESS objects, you have the option of specifying a value for NextToken as the starting point for your list of returned addresses.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeAddressesRequest {
   

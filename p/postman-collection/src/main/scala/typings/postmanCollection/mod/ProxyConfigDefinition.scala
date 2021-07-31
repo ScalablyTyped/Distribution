@@ -3,19 +3,19 @@ package typings.postmanCollection.mod
 import typings.postmanCollection.anon.Pattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProxyConfigDefinition extends PropertyDefinition {
+trait ProxyConfigDefinition
+  extends StObject
+     with PropertyDefinition {
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var `match`: js.UndefOr[String | Pattern | UrlMatchPattern] = js.native
+  var `match`: js.UndefOr[String | Pattern | UrlMatchPattern] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
-  var tunnel: js.UndefOr[Boolean] = js.native
+  var tunnel: js.UndefOr[Boolean] = js.undefined
 }
 object ProxyConfigDefinition {
   

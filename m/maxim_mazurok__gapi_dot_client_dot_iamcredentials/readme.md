@@ -10,9 +10,9 @@ TypeScript typings for IAM Service Account Credentials API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.iamcredentials |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 51 |
+| # downloads        | 989 |
 | # stars            | 0 |
 
 ## Links

@@ -3,28 +3,28 @@ package typings.restartHooks
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useResizeObserverMod {
   
-  @JSImport("@restart/hooks/cjs/useResizeObserver", JSImport.Default)
+  @JSImport("@restart/hooks/cjs/useResizeObserver", JSImport.Namespace)
   @js.native
-  def default[TElement /* <: Element */](): Rect | Null = js.native
-  @JSImport("@restart/hooks/cjs/useResizeObserver", JSImport.Default)
-  @js.native
-  def default[TElement /* <: Element */](element: TElement): Rect | Null = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[TElement /* <: Element */](): Rect | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Rect | Null]
+  @scala.inline
+  def default[TElement /* <: Element */](element: TElement): Rect | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Rect | Null]
+  
   trait Rect extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object Rect {
     

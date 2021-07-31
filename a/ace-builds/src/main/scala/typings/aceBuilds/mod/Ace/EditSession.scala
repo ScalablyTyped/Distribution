@@ -33,12 +33,12 @@ import typings.aceBuilds.anon.Max
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EditSession
-  extends EventEmitter
+  extends StObject
+     with EventEmitter
      with OptionsProvider
      with Folding {
   

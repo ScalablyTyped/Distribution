@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDisassociateScramSecretRequest extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait BatchDisassociateScramSecretRequest extends StObject {
     The Amazon Resource Name (ARN) of the cluster to be updated.
     
     */
-  var ClusterArn: string = js.native
+  var ClusterArn: string
   
   /**
     * 
     List of AWS Secrets Manager secret ARNs.
     
     */
-  var SecretArnList: listOfString = js.native
+  var SecretArnList: listOfString
 }
 object BatchDisassociateScramSecretRequest {
   

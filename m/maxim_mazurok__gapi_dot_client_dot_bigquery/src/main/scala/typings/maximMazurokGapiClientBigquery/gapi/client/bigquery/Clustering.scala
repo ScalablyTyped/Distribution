@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Clustering extends StObject {
   
   /**
     * [Repeated] One or more fields on which data should be clustered. Only top-level, non-repeated, simple-type fields are supported. When you cluster a table using multiple columns, the
     * order of columns you specify is important. The order of the specified columns determines the sort order of the data.
     */
-  var fields: js.UndefOr[js.Array[String]] = js.native
+  var fields: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Clustering {
   

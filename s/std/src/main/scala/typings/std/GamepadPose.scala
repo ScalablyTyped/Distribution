@@ -2,34 +2,32 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Gamepad API interface represents the pose of a WebVR controller at a given timestamp (which includes orientation, position, velocity, and acceleration information.) */
-@js.native
 trait GamepadPose extends StObject {
   
-  val angularAcceleration: Float32Array | Null = js.native
+  val angularAcceleration: Float32Array | Null
   
-  val angularVelocity: Float32Array | Null = js.native
+  val angularVelocity: Float32Array | Null
   
-  val hasOrientation: scala.Boolean = js.native
+  val hasOrientation: scala.Boolean
   
-  val hasPosition: scala.Boolean = js.native
+  val hasPosition: scala.Boolean
   
-  val linearAcceleration: Float32Array | Null = js.native
+  val linearAcceleration: Float32Array | Null
   
-  val linearVelocity: Float32Array | Null = js.native
+  val linearVelocity: Float32Array | Null
   
-  val orientation: Float32Array | Null = js.native
+  val orientation: Float32Array | Null
   
-  val position: Float32Array | Null = js.native
+  val position: Float32Array | Null
 }
 object GamepadPose {
   
   @scala.inline
   def apply(hasOrientation: scala.Boolean, hasPosition: scala.Boolean): GamepadPose = {
-    val __obj = js.Dynamic.literal(hasOrientation = hasOrientation.asInstanceOf[js.Any], hasPosition = hasPosition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hasOrientation = hasOrientation.asInstanceOf[js.Any], hasPosition = hasPosition.asInstanceOf[js.Any], angularAcceleration = null, angularVelocity = null, linearAcceleration = null, linearVelocity = null, orientation = null, position = null)
     __obj.asInstanceOf[GamepadPose]
   }
   

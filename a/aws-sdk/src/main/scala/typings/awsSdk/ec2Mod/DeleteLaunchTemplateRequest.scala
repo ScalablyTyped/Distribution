@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteLaunchTemplateRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the launch template. You must specify either the launch template ID or launch template name in the request.
     */
-  var LaunchTemplateId: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateId] = js.native
+  var LaunchTemplateId: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateId] = js.undefined
   
   /**
     * The name of the launch template. You must specify either the launch template ID or launch template name in the request.
     */
-  var LaunchTemplateName: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateName] = js.native
+  var LaunchTemplateName: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateName] = js.undefined
 }
 object DeleteLaunchTemplateRequest {
   

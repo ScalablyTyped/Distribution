@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateHostedZoneCommentResponse extends StObject {
   
   /**
     * A complex type that contains the response to the UpdateHostedZoneComment request.
     */
-  var HostedZone: typings.awsSdk.route53Mod.HostedZone = js.native
+  var HostedZone: typings.awsSdk.route53Mod.HostedZone
 }
 object UpdateHostedZoneCommentResponse {
   

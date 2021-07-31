@@ -3,17 +3,18 @@ package typings.reactMdUtils
 import typings.react.mod.MutableRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useTempValueMod {
   
-  @JSImport("@react-md/utils/types/useTempValue", "useTempValue")
+  @JSImport("@react-md/utils/types/useTempValue", JSImport.Namespace)
   @js.native
-  def useTempValue[T](defaultValue: T): ReturnValue[T] = js.native
-  @JSImport("@react-md/utils/types/useTempValue", "useTempValue")
-  @js.native
-  def useTempValue[T](defaultValue: T, resetTime: Double): ReturnValue[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useTempValue[T](defaultValue: T): ReturnValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTempValue")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[T]]
+  @scala.inline
+  def useTempValue[T](defaultValue: T, resetTime: Double): ReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useTempValue")(defaultValue.asInstanceOf[js.Any], resetTime.asInstanceOf[js.Any])).asInstanceOf[ReturnValue[T]]
   
   type CurrentValueRef[T] = MutableRefObject[T]
   

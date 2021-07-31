@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorSchemeForPoint
-  extends Object
+  extends StObject
+     with Object
      with ColorScheme {
   
   /**
@@ -17,70 +16,70 @@ trait ColorSchemeForPoint
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPoint)
     */
-  var colors: js.Array[Color_] = js.native
+  var colors: js.Array[Color_]
   
   /**
     * Predefined classed color schemes to use for the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPoint)
     */
-  var colorsForClassBreaks: js.Array[ColorSchemeForPointColorsForClassBreaks] = js.native
+  var colorsForClassBreaks: js.Array[ColorSchemeForPointColorsForClassBreaks]
   
   /**
     * The unique id of the color scheme to usee in the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPoint)
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The unique name of the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPoint)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The color of the symbol used to indicate features with no data and features that are out of range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPoint)
     */
-  var noDataColor: Color_ = js.native
+  var noDataColor: Color_
   
   /**
     * The opacity of the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPoint)
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * Properties for defining the outline of the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPoint)
     */
-  var outline: ColorSchemeForPointOutline = js.native
+  var outline: ColorSchemeForPointOutline
   
   /**
     * The default size of the symbol in pixels or points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPoint)
     */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * Tags associated with the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPoint)
     */
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
   /**
     * Indicates which values will be emphasized in the continuous ramp and the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPoint)
     */
-  var theme: String = js.native
+  var theme: String
 }
 object ColorSchemeForPoint {
   

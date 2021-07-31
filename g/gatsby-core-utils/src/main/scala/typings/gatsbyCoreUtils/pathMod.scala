@@ -2,20 +2,20 @@ package typings.gatsbyCoreUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathMod {
   
-  @JSImport("gatsby-core-utils/dist/path", "isNodeInternalModulePath")
+  @JSImport("gatsby-core-utils/dist/path", JSImport.Namespace)
   @js.native
-  def isNodeInternalModulePath(fileName: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gatsby-core-utils/dist/path", "joinPath")
-  @js.native
-  def joinPath(paths: String*): String = js.native
+  @scala.inline
+  def isNodeInternalModulePath(fileName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeInternalModulePath")(fileName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("gatsby-core-utils/dist/path", "slash")
-  @js.native
-  def slash(path: String): String = js.native
+  @scala.inline
+  def joinPath(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def slash(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slash")(path.asInstanceOf[js.Any]).asInstanceOf[String]
 }

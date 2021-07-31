@@ -2,16 +2,14 @@ package typings.kiwicomOrbitDesignTokens.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  palette :@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.CustomPalette,   base :@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.CustomBase}> */
-@js.native
 trait CustomFoundation extends StObject {
   
-  var base: js.UndefOr[CustomBase] = js.native
+  var base: js.UndefOr[CustomBase] = js.undefined
   
-  var palette: js.UndefOr[CustomPalette] = js.native
+  var palette: js.UndefOr[CustomPalette] = js.undefined
 }
 object CustomFoundation {
   

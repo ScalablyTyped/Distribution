@@ -2,15 +2,13 @@ package typings.tableResolver
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Column[T] extends StObject {
     
-    var column: T = js.native
+    var column: T
   }
   object Column {
     
@@ -21,17 +19,16 @@ object anon {
     }
     
     @scala.inline
-    implicit class ColumnMutableBuilder[Self <: Column[_], T] (val x: Self with Column[T]) extends AnyVal {
+    implicit class ColumnMutableBuilder[Self <: Column[?], T] (val x: Self & Column[T]) extends AnyVal {
       
       @scala.inline
       def setColumn(value: T): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Columns[T] extends StObject {
     
-    var columns: js.Array[T] = js.native
+    var columns: js.Array[T]
   }
   object Columns {
     
@@ -42,7 +39,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ColumnsMutableBuilder[Self <: Columns[_], T] (val x: Self with Columns[T]) extends AnyVal {
+    implicit class ColumnsMutableBuilder[Self <: Columns[?], T] (val x: Self & Columns[T]) extends AnyVal {
       
       @scala.inline
       def setColumns(value: js.Array[T]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
@@ -52,12 +49,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Method[T] extends StObject {
     
-    var columns: js.Array[T] = js.native
+    var columns: js.Array[T]
     
-    def method(args: Column[T]): T = js.native
+    def method(args: Column[T]): T
   }
   object Method {
     
@@ -68,7 +64,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class MethodMutableBuilder[Self <: Method[_], T] (val x: Self with Method[T]) extends AnyVal {
+    implicit class MethodMutableBuilder[Self <: Method[?], T] (val x: Self & Method[T]) extends AnyVal {
       
       @scala.inline
       def setColumns(value: js.Array[T]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])

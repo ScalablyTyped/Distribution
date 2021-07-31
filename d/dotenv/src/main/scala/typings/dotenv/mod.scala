@@ -5,52 +5,48 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dotenv", "config")
+  @JSImport("dotenv", JSImport.Namespace)
   @js.native
-  def config(): DotenvConfigOutput = js.native
-  @JSImport("dotenv", "config")
-  @js.native
-  def config(options: DotenvConfigOptions): DotenvConfigOutput = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def config(): DotenvConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[DotenvConfigOutput]
+  @scala.inline
+  def config(options: DotenvConfigOptions): DotenvConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[DotenvConfigOutput]
   
   @JSImport("dotenv", "load")
   @js.native
   val load: js.Function1[/* options */ js.UndefOr[DotenvConfigOptions], DotenvConfigOutput] = js.native
   
-  @JSImport("dotenv", "parse")
-  @js.native
-  def parse(src: String): DotenvParseOutput = js.native
-  @JSImport("dotenv", "parse")
-  @js.native
-  def parse(src: String, options: DotenvParseOptions): DotenvParseOutput = js.native
-  @JSImport("dotenv", "parse")
-  @js.native
-  def parse(src: Buffer): DotenvParseOutput = js.native
-  @JSImport("dotenv", "parse")
-  @js.native
-  def parse(src: Buffer, options: DotenvParseOptions): DotenvParseOutput = js.native
+  @scala.inline
+  def parse(src: String): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
+  @scala.inline
+  def parse(src: String, options: DotenvParseOptions): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
+  @scala.inline
+  def parse(src: Buffer): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
+  @scala.inline
+  def parse(src: Buffer, options: DotenvParseOptions): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
   
-  @js.native
   trait DotenvConfigOptions extends StObject {
     
     /**
       * You may turn on logging to help debug why certain keys or values are not being set as you expect.
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * You may specify the encoding of your file containing environment variables.
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * You may specify a custom path if your file containing environment variables is located elsewhere.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object DotenvConfigOptions {
     
@@ -83,12 +79,11 @@ object mod {
     }
   }
   
-  @js.native
   trait DotenvConfigOutput extends StObject {
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var parsed: js.UndefOr[DotenvParseOutput] = js.native
+    var parsed: js.UndefOr[DotenvParseOutput] = js.undefined
   }
   object DotenvConfigOutput {
     
@@ -115,13 +110,12 @@ object mod {
     }
   }
   
-  @js.native
   trait DotenvParseOptions extends StObject {
     
     /**
       * You may turn on logging to help debug why certain keys or values are not being set as you expect.
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
   }
   object DotenvParseOptions {
     

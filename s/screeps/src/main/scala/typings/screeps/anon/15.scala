@@ -2,13 +2,11 @@ package typings.screeps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `15` extends StObject {
   
-  var filter: js.UndefOr[js.Any | String] = js.native
+  var filter: js.UndefOr[js.Any | String] = js.undefined
 }
 object `15` {
   

@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base definition information for tools
   */
-@js.native
-trait ElementDefinitionBase extends Element {
+trait ElementDefinitionBase
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'max'.
     */
-  var _max: js.UndefOr[Element] = js.native
+  var _max: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'min'.
     */
-  var _min: js.UndefOr[Element] = js.native
+  var _min: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'path'.
     */
-  var _path: js.UndefOr[Element] = js.native
+  var _path: js.UndefOr[Element] = js.undefined
   
   /**
     * Max cardinality of the base element
     */
-  var max: String = js.native
+  var max: String
   
   /**
     * Min cardinality of the base element
     */
-  var min: unsignedInt = js.native
+  var min: unsignedInt
   
   /**
     * Path that identifies the base element
     */
-  var path: String = js.native
+  var path: String
 }
 object ElementDefinitionBase {
   

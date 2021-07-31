@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object replicationTaskMod {
@@ -79,6 +78,10 @@ object replicationTaskMod {
   /* static members */
   object ReplicationTask {
     
+    @JSImport("@pulumi/aws/dms/replicationTask", "ReplicationTask")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ReplicationTask resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -88,75 +91,69 @@ object replicationTaskMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/dms/replicationTask", "ReplicationTask.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ReplicationTask = js.native
-    @JSImport("@pulumi/aws/dms/replicationTask", "ReplicationTask.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ReplicationTask = js.native
-    @JSImport("@pulumi/aws/dms/replicationTask", "ReplicationTask.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReplicationTaskState): ReplicationTask = js.native
-    @JSImport("@pulumi/aws/dms/replicationTask", "ReplicationTask.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReplicationTaskState, opts: CustomResourceOptions): ReplicationTask = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ReplicationTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReplicationTask]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReplicationTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationTask]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReplicationTaskState): ReplicationTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReplicationTask]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReplicationTaskState, opts: CustomResourceOptions): ReplicationTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationTask]
     
     /**
       * Returns true if the given object is an instance of ReplicationTask.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/dms/replicationTask", "ReplicationTask.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/replicationTask.ReplicationTask */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/replicationTask.ReplicationTask */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/replicationTask.ReplicationTask */ Boolean]
   }
   
-  @js.native
   trait ReplicationTaskArgs extends StObject {
     
     /**
       * The Unix timestamp integer for the start of the Change Data Capture (CDC) operation.
       */
-    val cdcStartTime: js.UndefOr[Input[String]] = js.native
+    val cdcStartTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The migration type. Can be one of `full-load | cdc | full-load-and-cdc`.
       */
-    val migrationType: Input[String] = js.native
+    val migrationType: Input[String]
     
     /**
       * The Amazon Resource Name (ARN) of the replication instance.
       */
-    val replicationInstanceArn: Input[String] = js.native
+    val replicationInstanceArn: Input[String]
     
     /**
       * The replication task identifier.
       */
-    val replicationTaskId: Input[String] = js.native
+    val replicationTaskId: Input[String]
     
     /**
       * An escaped JSON string that contains the task settings. For a complete list of task settings, see [Task Settings for AWS Database Migration Service Tasks](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TaskSettings.html).
       */
-    val replicationTaskSettings: js.UndefOr[Input[String]] = js.native
+    val replicationTaskSettings: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) string that uniquely identifies the source endpoint.
       */
-    val sourceEndpointArn: Input[String] = js.native
+    val sourceEndpointArn: Input[String]
     
     /**
       * An escaped JSON string that contains the table mappings. For information on table mapping see [Using Table Mapping with an AWS Database Migration Service Task to Select and Filter Data](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TableMapping.html)
       */
-    val tableMappings: Input[String] = js.native
+    val tableMappings: Input[String]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) string that uniquely identifies the target endpoint.
       */
-    val targetEndpointArn: Input[String] = js.native
+    val targetEndpointArn: Input[String]
   }
   object ReplicationTaskArgs {
     
@@ -214,58 +211,57 @@ object replicationTaskMod {
     }
   }
   
-  @js.native
   trait ReplicationTaskState extends StObject {
     
     /**
       * The Unix timestamp integer for the start of the Change Data Capture (CDC) operation.
       */
-    val cdcStartTime: js.UndefOr[Input[String]] = js.native
+    val cdcStartTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The migration type. Can be one of `full-load | cdc | full-load-and-cdc`.
       */
-    val migrationType: js.UndefOr[Input[String]] = js.native
+    val migrationType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the replication instance.
       */
-    val replicationInstanceArn: js.UndefOr[Input[String]] = js.native
+    val replicationInstanceArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) for the replication task.
       */
-    val replicationTaskArn: js.UndefOr[Input[String]] = js.native
+    val replicationTaskArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The replication task identifier.
       */
-    val replicationTaskId: js.UndefOr[Input[String]] = js.native
+    val replicationTaskId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An escaped JSON string that contains the task settings. For a complete list of task settings, see [Task Settings for AWS Database Migration Service Tasks](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TaskSettings.html).
       */
-    val replicationTaskSettings: js.UndefOr[Input[String]] = js.native
+    val replicationTaskSettings: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) string that uniquely identifies the source endpoint.
       */
-    val sourceEndpointArn: js.UndefOr[Input[String]] = js.native
+    val sourceEndpointArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An escaped JSON string that contains the table mappings. For information on table mapping see [Using Table Mapping with an AWS Database Migration Service Task to Select and Filter Data](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TableMapping.html)
       */
-    val tableMappings: js.UndefOr[Input[String]] = js.native
+    val tableMappings: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) string that uniquely identifies the target endpoint.
       */
-    val targetEndpointArn: js.UndefOr[Input[String]] = js.native
+    val targetEndpointArn: js.UndefOr[Input[String]] = js.undefined
   }
   object ReplicationTaskState {
     

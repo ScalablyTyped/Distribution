@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCloudFrontDistributionOriginGroupFailover extends StObject {
   
   /**
     * Information about the status codes that cause an origin group to fail over.
     */
-  var StatusCodes: js.UndefOr[AwsCloudFrontDistributionOriginGroupFailoverStatusCodes] = js.native
+  var StatusCodes: js.UndefOr[AwsCloudFrontDistributionOriginGroupFailoverStatusCodes] = js.undefined
 }
 object AwsCloudFrontDistributionOriginGroupFailover {
   

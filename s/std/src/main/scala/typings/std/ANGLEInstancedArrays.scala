@@ -2,20 +2,18 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The ANGLE_instanced_arrays extension is part of the WebGL API and allows to draw the same object, or groups of similar objects multiple times, if they share the same vertex data, primitive count and type. */
-@js.native
 trait ANGLEInstancedArrays extends StObject {
   
-  val VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: GLenum = js.native
+  val VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: GLenum
   
-  def drawArraysInstancedANGLE(mode: GLenum, first: GLint, count: GLsizei, primcount: GLsizei): Unit = js.native
+  def drawArraysInstancedANGLE(mode: GLenum, first: GLint, count: GLsizei, primcount: GLsizei): Unit
   
-  def drawElementsInstancedANGLE(mode: GLenum, count: GLsizei, `type`: GLenum, offset: GLintptr, primcount: GLsizei): Unit = js.native
+  def drawElementsInstancedANGLE(mode: GLenum, count: GLsizei, `type`: GLenum, offset: GLintptr, primcount: GLsizei): Unit
   
-  def vertexAttribDivisorANGLE(index: GLuint, divisor: GLuint): Unit = js.native
+  def vertexAttribDivisorANGLE(index: GLuint, divisor: GLuint): Unit
 }
 object ANGLEInstancedArrays {
   

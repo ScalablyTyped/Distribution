@@ -2,16 +2,14 @@ package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<azure-sb.azure-sb.Azure.ServiceBus.PaginationOptions> */
-@js.native
 trait ListNotificationHubsOptions extends StObject {
   
-  var skip: js.UndefOr[Double] = js.native
+  var skip: js.UndefOr[Double] = js.undefined
   
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object ListNotificationHubsOptions {
   

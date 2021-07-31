@@ -2,16 +2,14 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddNotificationChannelsResponse extends StObject {
   
   /**
     * The new notification configuration for this profiling group.
     */
-  var notificationConfiguration: js.UndefOr[NotificationConfiguration] = js.native
+  var notificationConfiguration: js.UndefOr[NotificationConfiguration] = js.undefined
 }
 object AddNotificationChannelsResponse {
   

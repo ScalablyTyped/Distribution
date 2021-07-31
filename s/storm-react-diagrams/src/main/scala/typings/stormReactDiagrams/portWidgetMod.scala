@@ -5,7 +5,6 @@ import typings.stormReactDiagrams.baseWidgetMod.BaseWidgetProps
 import typings.stormReactDiagrams.nodeModelMod.NodeModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portWidgetMod {
@@ -16,12 +15,13 @@ object portWidgetMod {
     def this(props: PortProps) = this()
   }
   
-  @js.native
-  trait PortProps extends BaseWidgetProps {
+  trait PortProps
+    extends StObject
+       with BaseWidgetProps {
     
-    var name: String = js.native
+    var name: String
     
-    var node: NodeModel = js.native
+    var node: NodeModel
   }
   object PortProps {
     
@@ -42,10 +42,9 @@ object portWidgetMod {
     }
   }
   
-  @js.native
   trait PortState extends StObject {
     
-    var selected: Boolean = js.native
+    var selected: Boolean
   }
   object PortState {
     

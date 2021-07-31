@@ -4,32 +4,32 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.pivot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PivotTransform extends _Transforms {
+trait PivotTransform
+  extends StObject
+     with _Transforms {
   
-  var field: FieldRef = js.native
+  var field: FieldRef
   
-  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.native
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   
-  var key: js.UndefOr[String | TransformField] = js.native
+  var key: js.UndefOr[String | TransformField] = js.undefined
   
-  var limit: js.UndefOr[Double | SignalRef] = js.native
+  var limit: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var op: js.UndefOr[String | SignalRef] = js.native
+  var op: js.UndefOr[String | SignalRef] = js.undefined
   
-  var `type`: pivot = js.native
+  var `type`: pivot
   
-  var value: FieldRef = js.native
+  var value: FieldRef
 }
 object PivotTransform {
   
   @scala.inline
-  def apply(field: FieldRef, `type`: pivot, value: FieldRef): PivotTransform = {
+  def apply(field: FieldRef, value: FieldRef): PivotTransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pivot")
     __obj.asInstanceOf[PivotTransform]
   }
   

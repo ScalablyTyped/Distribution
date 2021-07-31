@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyPairMod {
@@ -64,6 +63,10 @@ object keyPairMod {
   /* static members */
   object KeyPair {
     
+    @JSImport("@pulumi/aws/ec2/keyPair", "KeyPair")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing KeyPair resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -73,50 +76,44 @@ object keyPairMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/keyPair", "KeyPair.get")
-    @js.native
-    def get(name: String, id: Input[ID]): KeyPair = js.native
-    @JSImport("@pulumi/aws/ec2/keyPair", "KeyPair.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): KeyPair = js.native
-    @JSImport("@pulumi/aws/ec2/keyPair", "KeyPair.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: KeyPairState): KeyPair = js.native
-    @JSImport("@pulumi/aws/ec2/keyPair", "KeyPair.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: KeyPairState, opts: CustomResourceOptions): KeyPair = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: KeyPairState): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: KeyPairState, opts: CustomResourceOptions): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
     
     /**
       * Returns true if the given object is an instance of KeyPair.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/keyPair", "KeyPair.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/keyPair.KeyPair */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/keyPair.KeyPair */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/keyPair.KeyPair */ Boolean]
   }
   
-  @js.native
   trait KeyPairArgs extends StObject {
     
     /**
       * The name for the key pair.
       */
-    val keyName: js.UndefOr[Input[String]] = js.native
+    val keyName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `keyName`.
       */
-    val keyNamePrefix: js.UndefOr[Input[String]] = js.native
+    val keyNamePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The public key material.
       */
-    val publicKey: Input[String] = js.native
+    val publicKey: Input[String]
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object KeyPairArgs {
     
@@ -152,43 +149,42 @@ object keyPairMod {
     }
   }
   
-  @js.native
   trait KeyPairState extends StObject {
     
     /**
       * The key pair ARN.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The MD5 public key fingerprint as specified in section 4 of RFC 4716.
       */
-    val fingerprint: js.UndefOr[Input[String]] = js.native
+    val fingerprint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name for the key pair.
       */
-    val keyName: js.UndefOr[Input[String]] = js.native
+    val keyName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `keyName`.
       */
-    val keyNamePrefix: js.UndefOr[Input[String]] = js.native
+    val keyNamePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The key pair ID.
       */
-    val keyPairId: js.UndefOr[Input[String]] = js.native
+    val keyPairId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The public key material.
       */
-    val publicKey: js.UndefOr[Input[String]] = js.native
+    val publicKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object KeyPairState {
     

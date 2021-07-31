@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the CrosshairValueItem class.
   */
-@js.native
 trait ASPxClientCrosshairValueItem extends StObject {
   
   /**
     * Gets an index of a point for which this crosshair value item is displayed.
     */
-  var pointIndex: Double = js.native
+  var pointIndex: Double
   
   /**
     * Gets the value that is displayed in a crosshair label.
     */
-  var value: Double = js.native
+  var value: Double
 }
 object ASPxClientCrosshairValueItem {
   

@@ -2,27 +2,25 @@ package typings.pixiJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Crossorigin extends StObject {
   
-  var autoLoad: js.UndefOr[Boolean] = js.native
+  var autoLoad: js.UndefOr[Boolean] = js.undefined
   
-  var autoPlay: js.UndefOr[Boolean] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.undefined
   
-  var createBitmap: js.UndefOr[Boolean] = js.native
+  var createBitmap: js.UndefOr[Boolean] = js.undefined
   
-  var crossorigin: js.UndefOr[Boolean] = js.native
+  var crossorigin: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
-  var updateFPS: js.UndefOr[Double] = js.native
+  var updateFPS: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Crossorigin {
   

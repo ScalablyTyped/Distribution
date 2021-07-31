@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the device that caused this trigger to fire. */
-@js.native
 trait DeviceConnectionChangeTriggerDetails extends StObject {
   
   /** Gets the device Id of the device that caused this trigger to fire. */
-  var deviceId: String = js.native
+  var deviceId: String
 }
 object DeviceConnectionChangeTriggerDetails {
   

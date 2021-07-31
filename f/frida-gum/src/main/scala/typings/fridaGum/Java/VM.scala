@@ -2,10 +2,8 @@ package typings.fridaGum.Java
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VM extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait VM extends StObject {
     *
     * Throws an exception if the current thread is not attached to the VM.
     */
-  def getEnv(): Env = js.native
+  def getEnv(): Env
   
   /**
     * Ensures that the current thread is attached to the VM and calls `fn`.
@@ -21,14 +19,14 @@ trait VM extends StObject {
     *
     * @param fn Function to run while attached to the VM.
     */
-  def perform(fn: js.Function0[Unit]): Unit = js.native
+  def perform(fn: js.Function0[Unit]): Unit
   
   /**
     * Tries to get a wrapper for the current thread's `JNIEnv`.
     *
     * Returns `null` if the current thread is not attached to the VM.
     */
-  def tryGetEnv(): Env | Null = js.native
+  def tryGetEnv(): Env | Null
 }
 object VM {
   

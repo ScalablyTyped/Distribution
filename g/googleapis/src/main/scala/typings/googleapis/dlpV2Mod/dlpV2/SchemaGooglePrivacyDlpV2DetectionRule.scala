@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * circumstances, depending on the specific details of the rule. Not supported
   * for the `surrogate_type` custom info type.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2DetectionRule extends StObject {
   
   /**
     * Hotword-based detection rule.
     */
-  var hotwordRule: js.UndefOr[SchemaGooglePrivacyDlpV2HotwordRule] = js.native
+  var hotwordRule: js.UndefOr[SchemaGooglePrivacyDlpV2HotwordRule] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2DetectionRule {
   

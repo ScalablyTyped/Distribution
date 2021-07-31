@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KMLLayerProperties
-  extends LayerProperties
+  extends StObject
+     with LayerProperties
      with PortalLayerProperties
      with ScaleRangeLayerProperties
      with BlendLayerProperties {
@@ -17,14 +16,14 @@ trait KMLLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KMLLayer.html#sublayers)
     */
-  var sublayers: js.UndefOr[CollectionProperties[KMLSublayerProperties]] = js.native
+  var sublayers: js.UndefOr[CollectionProperties[KMLSublayerProperties]] = js.undefined
   
   /**
     * The publicly accessible URL for a .kml or .kmz file.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KMLLayer.html#url)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object KMLLayerProperties {
   

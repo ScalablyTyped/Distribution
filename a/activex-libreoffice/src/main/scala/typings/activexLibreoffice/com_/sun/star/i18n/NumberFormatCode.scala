@@ -2,26 +2,24 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Number format code information returned by various {@link XNumberFormatCode} methods. */
-@js.native
 trait NumberFormatCode extends StObject {
   
-  var Code: String = js.native
+  var Code: String
   
-  var Default: Boolean = js.native
+  var Default: Boolean
   
-  var DefaultName: String = js.native
+  var DefaultName: String
   
-  var Index: Double = js.native
+  var Index: Double
   
-  var NameID: String = js.native
+  var NameID: String
   
-  var Type: Double = js.native
+  var Type: Double
   
-  var Usage: Double = js.native
+  var Usage: Double
 }
 object NumberFormatCode {
   

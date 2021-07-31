@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadWrite extends StObject {
   
   /** An optional transaction to retry. */
-  var retryTransaction: js.UndefOr[String] = js.native
+  var retryTransaction: js.UndefOr[String] = js.undefined
 }
 object ReadWrite {
   

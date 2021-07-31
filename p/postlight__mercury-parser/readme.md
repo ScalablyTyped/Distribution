@@ -10,9 +10,9 @@ Mercury transforms web pages into clean text. Publishers and programmers use it 
 | ------------------ | :-------------: |
 | Full name          | @postlight/mercury-parser |
 | Keywords           | mercury, parser, reader, web, content |
-| # releases         | 15 |
+| # releases         | 4 |
 | # dependents       | 15 |
-| # downloads        | 279318 |
+| # downloads        | 455635 |
 | # stars            | 0 |
 
 ## Links

@@ -3,7 +3,6 @@ package typings.dc.mod
 import typings.d3Color.mod.Color_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,20 +10,20 @@ trait ColorMixin[T] extends StObject {
   
   def calculateColorDomain(): Unit = js.native
   
-  def colorAccessor(): Accessor[_, Double] = js.native
-  def colorAccessor(t: Accessor[_, Double]): T = js.native
+  def colorAccessor(): Accessor[js.Any, Double] = js.native
+  def colorAccessor(t: Accessor[js.Any, Double]): T = js.native
   @JSName("colorAccessor")
-  var colorAccessor_Original: IGetSet[Accessor[_, Double], T] = js.native
+  var colorAccessor_Original: IGetSet[Accessor[js.Any, Double], T] = js.native
   
-  def colorCalculator(): Accessor[_, String] = js.native
-  def colorCalculator(t: Accessor[_, String]): T = js.native
+  def colorCalculator(): Accessor[js.Any, String] = js.native
+  def colorCalculator(t: Accessor[js.Any, String]): T = js.native
   @JSName("colorCalculator")
-  var colorCalculator_Original: IGetSet[Accessor[_, String], T] = js.native
+  var colorCalculator_Original: IGetSet[Accessor[js.Any, String], T] = js.native
   
-  def colorDomain(): js.Array[_] = js.native
-  def colorDomain(t: js.Array[_]): T = js.native
+  def colorDomain(): js.Array[js.Any] = js.native
+  def colorDomain(t: js.Array[js.Any]): T = js.native
   @JSName("colorDomain")
-  var colorDomain_Original: IGetSet[js.Array[_], T] = js.native
+  var colorDomain_Original: IGetSet[js.Array[js.Any], T] = js.native
   
   // http://dc-js.github.io/dc.js/docs/html/dc.colorMixin.html
   def colors(): js.Array[String] | (Scale[String | Color_]) | String = js.native

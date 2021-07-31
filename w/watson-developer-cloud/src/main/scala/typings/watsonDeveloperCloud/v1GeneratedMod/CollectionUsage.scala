@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Summary of the collection usage in the environment. */
-@js.native
 trait CollectionUsage extends StObject {
   
   /** Number of active collections in the environment. */
-  var available: js.UndefOr[Double] = js.native
+  var available: js.UndefOr[Double] = js.undefined
   
   /** Total number of collections allowed in the environment. */
-  var maximum_allowed: js.UndefOr[Double] = js.native
+  var maximum_allowed: js.UndefOr[Double] = js.undefined
 }
 object CollectionUsage {
   

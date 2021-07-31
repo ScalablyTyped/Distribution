@@ -1,23 +1,22 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`17`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectiveArguments extends ArrayExpression {
+trait DirectiveArguments
+  extends StObject
+     with ArrayExpression {
   
   @JSName("elements")
-  var elements_DirectiveArguments: js.Array[DirectiveArgumentNode] = js.native
+  var elements_DirectiveArguments: js.Array[DirectiveArgumentNode]
 }
 object DirectiveArguments {
   
   @scala.inline
-  def apply(elements: js.Array[DirectiveArgumentNode], loc: SourceLocation, `type`: `17`): DirectiveArguments = {
+  def apply(elements: js.Array[DirectiveArgumentNode], loc: SourceLocation): DirectiveArguments = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(17)
     __obj.asInstanceOf[DirectiveArguments]
   }
   

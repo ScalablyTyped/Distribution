@@ -1,19 +1,19 @@
 package typings.pollyjsCore
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pollyjsAdapter.mod.default
 import typings.pollyjsCore.anon.Body
 import typings.pollyjsCore.anon.Dictkey
 import typings.pollyjsCore.anon.DisableSortingHarEntries
+import typings.pollyjsCore.anon.TypeofAdapter
 import typings.pollyjsCore.anon.TypeofPersister
 import typings.pollyjsCore.pollyjsCoreStrings.abort
 import typings.pollyjsCore.pollyjsCoreStrings.error
 import typings.pollyjsCore.pollyjsCoreStrings.request
-import typings.pollyjsPersister.mod.default
 import typings.std.Map
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,22 +24,19 @@ object mod {
     def this(recordingName: String) = this()
     def this(recordingName: String, options: PollyConfig) = this()
     
-    var adapters: Map[
-        String, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Adapter */ _
-      ] = js.native
+    var adapters: Map[String, default] = js.native
     
     var config: PollyConfig = js.native
     
     def configure(config: PollyConfig): Unit = js.native
     
     def connectTo(name: String): Unit = js.native
-    def connectTo(name: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Adapter */ js.Any): Unit = js.native
+    def connectTo(name: TypeofAdapter): Unit = js.native
     
     def disconnect(): Unit = js.native
     
     def disconnectFrom(name: String): Unit = js.native
-    def disconnectFrom(name: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Adapter */ js.Any): Unit = js.native
+    def disconnectFrom(name: TypeofAdapter): Unit = js.native
     
     def flush(): js.Promise[Unit] = js.native
     
@@ -49,7 +46,7 @@ object mod {
     
     def pause(): Unit = js.native
     
-    var persister: default | Null = js.native
+    var persister: typings.pollyjsPersister.mod.default | Null = js.native
     
     def play(): Unit = js.native
     
@@ -78,31 +75,24 @@ object mod {
     @scala.inline
     def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
     
-    @JSImport("@pollyjs/core", "Polly.off")
-    @js.native
-    def off(event: PollyEvent, listener: PollyEventListener): Unit = js.native
+    @scala.inline
+    def off(event: PollyEvent, listener: PollyEventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@pollyjs/core", "Polly.on")
-    @js.native
-    def on(event: PollyEvent, listener: PollyEventListener): Unit = js.native
+    @scala.inline
+    def on(event: PollyEvent, listener: PollyEventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@pollyjs/core", "Polly.once")
-    @js.native
-    def once(event: PollyEvent, listener: PollyEventListener): Unit = js.native
+    @scala.inline
+    def once(event: PollyEvent, listener: PollyEventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@pollyjs/core", "Polly.register")
-    @js.native
-    def register(Factory: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Adapter */ js.Any): Unit = js.native
-    @JSImport("@pollyjs/core", "Polly.register")
-    @js.native
-    def register(Factory: TypeofPersister): Unit = js.native
+    @scala.inline
+    def register(Factory: TypeofAdapter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def register(Factory: TypeofPersister): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@pollyjs/core", "Polly.unregister")
-    @js.native
-    def unregister(Factory: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Adapter */ js.Any): Unit = js.native
-    @JSImport("@pollyjs/core", "Polly.unregister")
-    @js.native
-    def unregister(Factory: TypeofPersister): Unit = js.native
+    @scala.inline
+    def unregister(Factory: TypeofAdapter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def unregister(Factory: TypeofPersister): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@pollyjs/core", "PollyServer")
@@ -197,70 +187,65 @@ object mod {
   
   object Timing {
     
-    @JSImport("@pollyjs/core", "Timing.fixed")
+    @JSImport("@pollyjs/core", "Timing")
     @js.native
-    def fixed(ms: Double): js.Function0[js.Promise[Unit]] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@pollyjs/core", "Timing.relative")
-    @js.native
-    def relative(ratio: Double): js.Function1[/* ms */ Double, js.Promise[Unit]] = js.native
+    @scala.inline
+    def fixed(ms: Double): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fixed")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
+    
+    @scala.inline
+    def relative(ratio: Double): js.Function1[/* ms */ Double, js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("relative")(ratio.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ms */ Double, js.Promise[Unit]]]
   }
   
   object setupMocha {
     
-    @JSImport("@pollyjs/core", "setupMocha")
-    @js.native
-    def apply(): Unit = js.native
-    @JSImport("@pollyjs/core", "setupMocha")
-    @js.native
-    def apply(config: js.UndefOr[scala.Nothing], context: js.Any): Unit = js.native
-    @JSImport("@pollyjs/core", "setupMocha")
-    @js.native
-    def apply(config: PollyConfig): Unit = js.native
-    @JSImport("@pollyjs/core", "setupMocha")
-    @js.native
-    def apply(config: PollyConfig, context: js.Any): Unit = js.native
+    @scala.inline
+    def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+    @scala.inline
+    def apply(config: Unit, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply(config: PollyConfig): Unit = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def apply(config: PollyConfig, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@pollyjs/core", "setupMocha.afterEach")
+    @JSImport("@pollyjs/core", "setupMocha")
     @js.native
-    def afterEach(): Unit = js.native
-    @JSImport("@pollyjs/core", "setupMocha.afterEach")
-    @js.native
-    def afterEach(context: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@pollyjs/core", "setupMocha.beforeEach")
-    @js.native
-    def beforeEach(): Unit = js.native
-    @JSImport("@pollyjs/core", "setupMocha.beforeEach")
-    @js.native
-    def beforeEach(config: js.UndefOr[scala.Nothing], context: js.Any): Unit = js.native
-    @JSImport("@pollyjs/core", "setupMocha.beforeEach")
-    @js.native
-    def beforeEach(config: PollyConfig): Unit = js.native
-    @JSImport("@pollyjs/core", "setupMocha.beforeEach")
-    @js.native
-    def beforeEach(config: PollyConfig, context: js.Any): Unit = js.native
+    @scala.inline
+    def afterEach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")().asInstanceOf[Unit]
+    @scala.inline
+    def afterEach(context: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def beforeEach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")().asInstanceOf[Unit]
+    @scala.inline
+    def beforeEach(config: Unit, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def beforeEach(config: PollyConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def beforeEach(config: PollyConfig, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object setupQunit {
     
+    @scala.inline
+    def apply(hooks: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def apply(hooks: js.Any, config: PollyConfig): Unit = (^.asInstanceOf[js.Dynamic].apply(hooks.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("@pollyjs/core", "setupQunit")
     @js.native
-    def apply(hooks: js.Any): Unit = js.native
-    @JSImport("@pollyjs/core", "setupQunit")
-    @js.native
-    def apply(hooks: js.Any, config: PollyConfig): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@pollyjs/core", "setupQunit.afterEach")
-    @js.native
-    def afterEach(hooks: js.Any): Unit = js.native
+    @scala.inline
+    def afterEach(hooks: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@pollyjs/core", "setupQunit.beforeEach")
-    @js.native
-    def beforeEach(hooks: js.Any): Unit = js.native
-    @JSImport("@pollyjs/core", "setupQunit.beforeEach")
-    @js.native
-    def beforeEach(hooks: js.Any, config: PollyConfig): Unit = js.native
+    @scala.inline
+    def beforeEach(hooks: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def beforeEach(hooks: js.Any, config: PollyConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(hooks.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -355,12 +340,11 @@ object mod {
     Unit | js.Promise[Unit]
   ]
   
-  @js.native
   trait Interceptor extends StObject {
     
-    def abort(): Unit = js.native
+    def abort(): Unit
     
-    def passthrough(): Unit = js.native
+    def passthrough(): Unit
   }
   object Interceptor {
     
@@ -381,12 +365,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ListenerEvent extends StObject {
     
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     
-    val `type`: String = js.native
+    val `type`: String
   }
   object ListenerEvent {
     
@@ -432,40 +415,35 @@ object mod {
   
   type MatchBy[T, R] = js.Function2[/* input */ T, /* req */ Request, R]
   
-  @js.native
   trait PollyConfig extends StObject {
     
-    var adapterOptions: js.UndefOr[Dictkey] = js.native
+    var adapterOptions: js.UndefOr[Dictkey] = js.undefined
     
-    var adapters: js.UndefOr[
-        js.Array[
-          String | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Adapter */ _)
-        ]
-      ] = js.native
+    var adapters: js.UndefOr[js.Array[String | TypeofAdapter]] = js.undefined
     
-    var expiresIn: js.UndefOr[String | Null] = js.native
+    var expiresIn: js.UndefOr[String | Null] = js.undefined
     
-    var expiryStrategy: js.UndefOr[EXPIRY_STRATEGY] = js.native
+    var expiryStrategy: js.UndefOr[EXPIRY_STRATEGY] = js.undefined
     
-    var flushRequestsOnStop: js.UndefOr[Boolean] = js.native
+    var flushRequestsOnStop: js.UndefOr[Boolean] = js.undefined
     
-    var logging: js.UndefOr[Boolean] = js.native
+    var logging: js.UndefOr[Boolean] = js.undefined
     
-    var matchRequestsBy: js.UndefOr[Body] = js.native
+    var matchRequestsBy: js.UndefOr[Body] = js.undefined
     
-    var mode: js.UndefOr[MODE] = js.native
+    var mode: js.UndefOr[MODE] = js.undefined
     
-    var persister: js.UndefOr[String | TypeofPersister] = js.native
+    var persister: js.UndefOr[String | TypeofPersister] = js.undefined
     
-    var persisterOptions: js.UndefOr[DisableSortingHarEntries] = js.native
+    var persisterOptions: js.UndefOr[DisableSortingHarEntries] = js.undefined
     
-    var recordFailedRequests: js.UndefOr[Boolean] = js.native
+    var recordFailedRequests: js.UndefOr[Boolean] = js.undefined
     
-    var recordIfMissing: js.UndefOr[Boolean] = js.native
+    var recordIfMissing: js.UndefOr[Boolean] = js.undefined
     
     var timing: js.UndefOr[
         (js.Function1[/* ms */ Double, js.Promise[Unit]]) | js.Function0[js.Promise[Unit]]
-      ] = js.native
+      ] = js.undefined
   }
   object PollyConfig {
     
@@ -485,17 +463,13 @@ object mod {
       def setAdapterOptionsUndefined: Self = StObject.set(x, "adapterOptions", js.undefined)
       
       @scala.inline
-      def setAdapters(
-        value: js.Array[
-              String | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Adapter */ _)
-            ]
-      ): Self = StObject.set(x, "adapters", value.asInstanceOf[js.Any])
+      def setAdapters(value: js.Array[String | TypeofAdapter]): Self = StObject.set(x, "adapters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAdaptersUndefined: Self = StObject.set(x, "adapters", js.undefined)
       
       @scala.inline
-      def setAdaptersVarargs(value: (String | js.Any)*): Self = StObject.set(x, "adapters", js.Array(value :_*))
+      def setAdaptersVarargs(value: (String | TypeofAdapter)*): Self = StObject.set(x, "adapters", js.Array(value :_*))
       
       @scala.inline
       def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
@@ -616,7 +590,9 @@ object mod {
   }
   
   @js.native
-  trait Request extends HTTPBase {
+  trait Request
+    extends StObject
+       with HTTPBase {
     
     val absoluteUrl: String = js.native
     
@@ -658,7 +634,9 @@ object mod {
   type RequestRouteEvent = request
   
   @js.native
-  trait Response extends HTTPBase {
+  trait Response
+    extends StObject
+       with HTTPBase {
     
     def end(): this.type = js.native
     

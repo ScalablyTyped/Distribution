@@ -2,21 +2,19 @@ package typings.npmUserPackages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bugs extends StObject {
     
-    var bugs: js.UndefOr[String] = js.native
+    var bugs: js.UndefOr[String] = js.undefined
     
-    var homepage: js.UndefOr[String] = js.native
+    var homepage: js.UndefOr[String] = js.undefined
     
-    var npm: String = js.native
+    var npm: String
     
-    var repository: js.UndefOr[String] = js.native
+    var repository: js.UndefOr[String] = js.undefined
   }
   object Bugs {
     
@@ -52,16 +50,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Email {
     
@@ -97,12 +94,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Username extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var username: String = js.native
+    var username: String
   }
   object Username {
     

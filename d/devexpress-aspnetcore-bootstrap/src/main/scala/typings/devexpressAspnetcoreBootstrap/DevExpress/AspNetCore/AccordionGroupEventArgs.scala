@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AccordionGroupEventArgs extends EventArgs {
+trait AccordionGroupEventArgs
+  extends StObject
+     with EventArgs {
   
-  val group: BootstrapAccordionGroup = js.native
+  val group: BootstrapAccordionGroup
 }
 object AccordionGroupEventArgs {
   

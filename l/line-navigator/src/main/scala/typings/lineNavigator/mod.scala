@@ -4,14 +4,15 @@ import typings.std.File
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("line-navigator", JSImport.Namespace)
   @js.native
-  class ^ protected () extends LineNavigator {
+  class ^ protected ()
+    extends StObject
+       with LineNavigator {
     def this(file: String) = this()
     /**
       * Creates an instance of LineNavigator.
@@ -21,6 +22,18 @@ object mod {
     def this(file: File) = this()
     def this(file: String, options: Options) = this()
     def this(file: File, options: Options) = this()
+    
+    /* CompleteClass */
+    override def find(regex: RegExp, indexToStartWith: Double, callback: FindCallback): Unit = js.native
+    
+    /* CompleteClass */
+    override def findAll(regex: RegExp, indexToStartWith: Double, limit: Double, callback: FindAllCallback): Unit = js.native
+    
+    /* CompleteClass */
+    override def readLines(indexToStartWith: Double, numberOfLines: Double, callback: ReadLinesCallback): Unit = js.native
+    
+    /* CompleteClass */
+    override def readSomeLines(indexToStartWith: Double, callback: ReadLinesCallback): Unit = js.native
   }
   
   type FindAllCallback = js.Function4[
@@ -31,10 +44,11 @@ object mod {
     Unit
   ]
   
-  @js.native
-  trait FindAllResult extends FindMatch {
+  trait FindAllResult
+    extends StObject
+       with FindMatch {
     
-    var index: String = js.native
+    var index: String
   }
   object FindAllResult {
     
@@ -59,14 +73,13 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait FindMatch extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var line: String = js.native
+    var line: String
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object FindMatch {
     
@@ -90,16 +103,15 @@ object mod {
     }
   }
   
-  @js.native
   trait LineNavigator extends StObject {
     
-    def find(regex: RegExp, indexToStartWith: Double, callback: FindCallback): Unit = js.native
+    def find(regex: RegExp, indexToStartWith: Double, callback: FindCallback): Unit
     
-    def findAll(regex: RegExp, indexToStartWith: Double, limit: Double, callback: FindAllCallback): Unit = js.native
+    def findAll(regex: RegExp, indexToStartWith: Double, limit: Double, callback: FindAllCallback): Unit
     
-    def readLines(indexToStartWith: Double, numberOfLines: Double, callback: ReadLinesCallback): Unit = js.native
+    def readLines(indexToStartWith: Double, numberOfLines: Double, callback: ReadLinesCallback): Unit
     
-    def readSomeLines(indexToStartWith: Double, callback: ReadLinesCallback): Unit = js.native
+    def readSomeLines(indexToStartWith: Double, callback: ReadLinesCallback): Unit
   }
   object LineNavigator {
     
@@ -131,26 +143,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Size of chunk
       * @default 4096
       */
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Encoding
       * @default 'utf8'
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * Return error when line is longer than chunkSize, otherwise it will be threated as several lines.
       * @default false
       */
-    var throwOnLongLines: js.UndefOr[Boolean] = js.native
+    var throwOnLongLines: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

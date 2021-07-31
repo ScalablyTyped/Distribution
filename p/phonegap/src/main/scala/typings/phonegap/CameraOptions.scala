@@ -2,33 +2,31 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CameraOptions extends StObject {
   
-  var allowEdit: js.UndefOr[Boolean] = js.native
+  var allowEdit: js.UndefOr[Boolean] = js.undefined
   
-  var correctOrientation: js.UndefOr[Boolean] = js.native
+  var correctOrientation: js.UndefOr[Boolean] = js.undefined
   
-  var destinationType: js.UndefOr[Double] = js.native
+  var destinationType: js.UndefOr[Double] = js.undefined
   
-  var encodingType: js.UndefOr[Double] = js.native
+  var encodingType: js.UndefOr[Double] = js.undefined
   
-  var mediaType: js.UndefOr[Double] = js.native
+  var mediaType: js.UndefOr[Double] = js.undefined
   
-  var popoverOptions: js.UndefOr[CameraPopoverOptions] = js.native
+  var popoverOptions: js.UndefOr[CameraPopoverOptions] = js.undefined
   
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
   
-  var saveToPhotoAlbum: js.UndefOr[Boolean] = js.native
+  var saveToPhotoAlbum: js.UndefOr[Boolean] = js.undefined
   
-  var sourceType: js.UndefOr[Double] = js.native
+  var sourceType: js.UndefOr[Double] = js.undefined
   
-  var targetHeight: js.UndefOr[Double] = js.native
+  var targetHeight: js.UndefOr[Double] = js.undefined
   
-  var targetWidth: js.UndefOr[Double] = js.native
+  var targetWidth: js.UndefOr[Double] = js.undefined
 }
 object CameraOptions {
   

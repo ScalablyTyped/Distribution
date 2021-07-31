@@ -2,7 +2,6 @@ package typings.dashjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,29 +11,41 @@ sealed trait LogLevel extends StObject
 object LogLevel extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LogLevel with Double] = js.native
+  def apply(value: Double): js.UndefOr[LogLevel & Double] = js.native
   
   @js.native
-  sealed trait LOG_LEVEL_DEBUG extends LogLevel
-  /* 5 */ val LOG_LEVEL_DEBUG: typings.dashjs.mod.LogLevel.LOG_LEVEL_DEBUG with Double = js.native
+  sealed trait LOG_LEVEL_DEBUG
+    extends StObject
+       with LogLevel
+  /* 5 */ val LOG_LEVEL_DEBUG: typings.dashjs.mod.LogLevel.LOG_LEVEL_DEBUG & Double = js.native
   
   @js.native
-  sealed trait LOG_LEVEL_ERROR extends LogLevel
-  /* 2 */ val LOG_LEVEL_ERROR: typings.dashjs.mod.LogLevel.LOG_LEVEL_ERROR with Double = js.native
+  sealed trait LOG_LEVEL_ERROR
+    extends StObject
+       with LogLevel
+  /* 2 */ val LOG_LEVEL_ERROR: typings.dashjs.mod.LogLevel.LOG_LEVEL_ERROR & Double = js.native
   
   @js.native
-  sealed trait LOG_LEVEL_FATAL extends LogLevel
-  /* 1 */ val LOG_LEVEL_FATAL: typings.dashjs.mod.LogLevel.LOG_LEVEL_FATAL with Double = js.native
+  sealed trait LOG_LEVEL_FATAL
+    extends StObject
+       with LogLevel
+  /* 1 */ val LOG_LEVEL_FATAL: typings.dashjs.mod.LogLevel.LOG_LEVEL_FATAL & Double = js.native
   
   @js.native
-  sealed trait LOG_LEVEL_INFO extends LogLevel
-  /* 4 */ val LOG_LEVEL_INFO: typings.dashjs.mod.LogLevel.LOG_LEVEL_INFO with Double = js.native
+  sealed trait LOG_LEVEL_INFO
+    extends StObject
+       with LogLevel
+  /* 4 */ val LOG_LEVEL_INFO: typings.dashjs.mod.LogLevel.LOG_LEVEL_INFO & Double = js.native
   
   @js.native
-  sealed trait LOG_LEVEL_NONE extends LogLevel
-  /* 0 */ val LOG_LEVEL_NONE: typings.dashjs.mod.LogLevel.LOG_LEVEL_NONE with Double = js.native
+  sealed trait LOG_LEVEL_NONE
+    extends StObject
+       with LogLevel
+  /* 0 */ val LOG_LEVEL_NONE: typings.dashjs.mod.LogLevel.LOG_LEVEL_NONE & Double = js.native
   
   @js.native
-  sealed trait LOG_LEVEL_WARNING extends LogLevel
-  /* 3 */ val LOG_LEVEL_WARNING: typings.dashjs.mod.LogLevel.LOG_LEVEL_WARNING with Double = js.native
+  sealed trait LOG_LEVEL_WARNING
+    extends StObject
+       with LogLevel
+  /* 3 */ val LOG_LEVEL_WARNING: typings.dashjs.mod.LogLevel.LOG_LEVEL_WARNING & Double = js.native
 }

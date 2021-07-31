@@ -3,15 +3,13 @@ package typings.vexflow.Vex.Flow
 import typings.vexflow.Vex.IRenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Renderer extends StObject {
   
-  def getContext(): IRenderContext = js.native
+  def getContext(): IRenderContext
   
-  def resize(width: Double, height: Double): Renderer = js.native
+  def resize(width: Double, height: Double): Renderer
 }
 object Renderer {
   
@@ -28,16 +26,24 @@ object Renderer {
   object Backends extends StObject {
     
     @js.native
-    sealed trait CANVAS extends Backends
+    sealed trait CANVAS
+      extends StObject
+         with Backends
     
     @js.native
-    sealed trait RAPHAEL extends Backends
+    sealed trait RAPHAEL
+      extends StObject
+         with Backends
     
     @js.native
-    sealed trait SVG extends Backends
+    sealed trait SVG
+      extends StObject
+         with Backends
     
     @js.native
-    sealed trait VML extends Backends
+    sealed trait VML
+      extends StObject
+         with Backends
   }
   
   @js.native
@@ -47,13 +53,19 @@ object Renderer {
   object LineEndType extends StObject {
     
     @js.native
-    sealed trait DOWN extends LineEndType
+    sealed trait DOWN
+      extends StObject
+         with LineEndType
     
     @js.native
-    sealed trait NONE extends LineEndType
+    sealed trait NONE
+      extends StObject
+         with LineEndType
     
     @js.native
-    sealed trait UP extends LineEndType
+    sealed trait UP
+      extends StObject
+         with LineEndType
   }
   
   @scala.inline

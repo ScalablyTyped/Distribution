@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepricingRuleEffectiveTime extends StObject {
   
   /** A list of fixed time periods combined with OR. The maximum number of entries is limited to 5. */
-  var fixedTimePeriods: js.UndefOr[js.Array[RepricingRuleEffectiveTimeFixedTimePeriod]] = js.native
+  var fixedTimePeriods: js.UndefOr[js.Array[RepricingRuleEffectiveTimeFixedTimePeriod]] = js.undefined
 }
 object RepricingRuleEffectiveTime {
   

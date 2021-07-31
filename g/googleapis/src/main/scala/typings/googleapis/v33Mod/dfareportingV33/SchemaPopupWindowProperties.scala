@@ -2,61 +2,59 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Popup Window Properties.
   */
-@js.native
 trait SchemaPopupWindowProperties extends StObject {
   
   /**
     * Popup dimension for a creative. This is a read-only field. Applicable to
     * the following creative types: all RICH_MEDIA and all VPAID
     */
-  var dimension: js.UndefOr[SchemaSize] = js.native
+  var dimension: js.UndefOr[SchemaSize] = js.undefined
   
   /**
     * Upper-left corner coordinates of the popup window. Applicable if
     * positionType is COORDINATES.
     */
-  var offset: js.UndefOr[SchemaOffsetPosition] = js.native
+  var offset: js.UndefOr[SchemaOffsetPosition] = js.undefined
   
   /**
     * Popup window position either centered or at specific coordinate.
     */
-  var positionType: js.UndefOr[String] = js.native
+  var positionType: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to display the browser address bar.
     */
-  var showAddressBar: js.UndefOr[Boolean] = js.native
+  var showAddressBar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to display the browser menu bar.
     */
-  var showMenuBar: js.UndefOr[Boolean] = js.native
+  var showMenuBar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to display the browser scroll bar.
     */
-  var showScrollBar: js.UndefOr[Boolean] = js.native
+  var showScrollBar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to display the browser status bar.
     */
-  var showStatusBar: js.UndefOr[Boolean] = js.native
+  var showStatusBar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to display the browser tool bar.
     */
-  var showToolBar: js.UndefOr[Boolean] = js.native
+  var showToolBar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Title of popup window.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaPopupWindowProperties {
   

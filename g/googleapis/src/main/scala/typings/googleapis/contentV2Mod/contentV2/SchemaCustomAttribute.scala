@@ -2,33 +2,31 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCustomAttribute extends StObject {
   
   /**
     * The name of the attribute. Underscores will be replaced by spaces upon
     * insertion.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the attribute.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Free-form unit of the attribute. Unit can only be used for values of type
     * int, float, or price.
     */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the attribute.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaCustomAttribute {
   

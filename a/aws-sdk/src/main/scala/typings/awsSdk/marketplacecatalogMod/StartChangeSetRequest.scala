@@ -2,31 +2,29 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartChangeSetRequest extends StObject {
   
   /**
     * The catalog related to the request. Fixed value: AWSMarketplace 
     */
-  var Catalog: typings.awsSdk.marketplacecatalogMod.Catalog = js.native
+  var Catalog: typings.awsSdk.marketplacecatalogMod.Catalog
   
   /**
     * Array of change object.
     */
-  var ChangeSet: RequestedChangeList = js.native
+  var ChangeSet: RequestedChangeList
   
   /**
     * Optional case sensitive string of up to 100 ASCII characters. The change set name can be used to filter the list of change sets. 
     */
-  var ChangeSetName: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ChangeSetName] = js.native
+  var ChangeSetName: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ChangeSetName] = js.undefined
   
   /**
     * A unique token to identify the request to ensure idempotency.
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ClientRequestToken] = js.undefined
 }
 object StartChangeSetRequest {
   

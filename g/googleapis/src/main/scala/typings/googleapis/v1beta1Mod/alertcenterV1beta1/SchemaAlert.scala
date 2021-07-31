@@ -3,53 +3,51 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An alert affecting a customer.
   */
-@js.native
 trait SchemaAlert extends StObject {
   
   /**
     * Output only. The unique identifier for the alert.
     */
-  var alertId: js.UndefOr[String] = js.native
+  var alertId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time this alert was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The unique identifier of the Google account of the customer.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The data associated with this alert, for example
     * google.apps.alertcenter.type.DeviceCompromised.
     */
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Output only. `True` if this alert is marked for deletion.
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. The time the event that caused this alert ceased being active.
     * If provided, the end time must not be earlier than the start time. If not
     * provided, it indicates an ongoing alert.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. An optional [Security Investigation
     * Tool](https://support.google.com/a/answer/7575955) query for this alert.
     */
-  var securityInvestigationToolLink: js.UndefOr[String] = js.native
+  var securityInvestigationToolLink: js.UndefOr[String] = js.undefined
   
   /**
     * Required. A unique identifier for the system that reported the alert.
@@ -58,20 +56,20 @@ trait SchemaAlert extends StObject {
     * phishing * Domain wide takeout * Government attack warning * Google
     * identity
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The time the event that caused this alert was started or
     * detected.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The type of the alert. This is output only after alert is
     * created. For a list of available alert types see [G Suite Alert
     * types](/admin-sdk/alertcenter/reference/alert-types).
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaAlert {
   

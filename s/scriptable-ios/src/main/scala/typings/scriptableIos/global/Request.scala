@@ -2,7 +2,6 @@ package typings.scriptableIos.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Request")
 @js.native
 class Request protected ()
-  extends typings.scriptableIos.Request {
+  extends StObject
+     with typings.scriptableIos.Request {
   /**
     * _Performs HTTP requests._
     *

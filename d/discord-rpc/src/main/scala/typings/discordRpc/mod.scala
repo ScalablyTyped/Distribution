@@ -22,10 +22,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("discord-rpc", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("discord-rpc", "Client")
   @js.native
@@ -36,33 +39,33 @@ object mod {
     
     def captureShortcut(callback: js.Function2[/* shortcut */ js.Array[Code], /* stop */ js.Function0[Unit], Unit]): js.Promise[js.Function0[Unit]] = js.native
     
-    def clearActivity(): js.Promise[_] = js.native
-    def clearActivity(pid: Double): js.Promise[_] = js.native
+    def clearActivity(): js.Promise[js.Any] = js.native
+    def clearActivity(pid: Double): js.Promise[js.Any] = js.native
     
-    def closeJoinRequest(user: String): js.Promise[_] = js.native
-    def closeJoinRequest(user: Id): js.Promise[_] = js.native
+    def closeJoinRequest(user: String): js.Promise[js.Any] = js.native
+    def closeJoinRequest(user: Id): js.Promise[js.Any] = js.native
     
     def connect(clientId: String): js.Promise[Client] = js.native
     
-    def connectToLobby(id: String, secret: String): js.Promise[_] = js.native
+    def connectToLobby(id: String, secret: String): js.Promise[js.Any] = js.native
     
-    def createLobby(`type`: String, capacity: Double, metadata: js.Any): js.Promise[_] = js.native
+    def createLobby(`type`: String, capacity: Double, metadata: js.Any): js.Promise[js.Any] = js.native
     
-    def deleteLobby(lobby: String): js.Promise[_] = js.native
-    def deleteLobby(lobby: Id): js.Promise[_] = js.native
+    def deleteLobby(lobby: String): js.Promise[js.Any] = js.native
+    def deleteLobby(lobby: Id): js.Promise[js.Any] = js.native
     
     def destroy(): js.Promise[Unit] = js.native
     
-    def disconnectFromLobby(lobby: String): js.Promise[_] = js.native
-    def disconnectFromLobby(lobby: Id): js.Promise[_] = js.native
+    def disconnectFromLobby(lobby: String): js.Promise[js.Any] = js.native
+    def disconnectFromLobby(lobby: Id): js.Promise[js.Any] = js.native
     
     def getChannel(id: String): js.Promise[Channel] = js.native
     def getChannel(id: String, timeout: Double): js.Promise[Channel] = js.native
     
     def getChannels(): js.Promise[js.Array[Channel]] = js.native
-    def getChannels(id: js.UndefOr[scala.Nothing], timeout: Double): js.Promise[js.Array[Channel]] = js.native
     def getChannels(id: String): js.Promise[js.Array[Channel]] = js.native
     def getChannels(id: String, timeout: Double): js.Promise[js.Array[Channel]] = js.native
+    def getChannels(id: Unit, timeout: Double): js.Promise[js.Array[Channel]] = js.native
     
     def getGuild(id: String): js.Promise[Guild] = js.native
     def getGuild(id: String, timeout: Double): js.Promise[Guild] = js.native
@@ -96,66 +99,64 @@ object mod {
     def selectVoiceChannel(id: String): js.Promise[Channel] = js.native
     def selectVoiceChannel(id: String, options: Force): js.Promise[Channel] = js.native
     
-    def sendJoinInvite(user: String): js.Promise[_] = js.native
-    def sendJoinInvite(user: Id): js.Promise[_] = js.native
+    def sendJoinInvite(user: String): js.Promise[js.Any] = js.native
+    def sendJoinInvite(user: Id): js.Promise[js.Any] = js.native
     
-    def sendJoinRequest(user: String): js.Promise[_] = js.native
-    def sendJoinRequest(user: Id): js.Promise[_] = js.native
+    def sendJoinRequest(user: String): js.Promise[js.Any] = js.native
+    def sendJoinRequest(user: Id): js.Promise[js.Any] = js.native
     
-    def sendToLobby(lobby: String, data: js.Any): js.Promise[_] = js.native
-    def sendToLobby(lobby: Id, data: js.Any): js.Promise[_] = js.native
+    def sendToLobby(lobby: String, data: js.Any): js.Promise[js.Any] = js.native
+    def sendToLobby(lobby: Id, data: js.Any): js.Promise[js.Any] = js.native
     
-    def setActivity(): js.Promise[_] = js.native
-    def setActivity(args: js.UndefOr[scala.Nothing], pid: Double): js.Promise[_] = js.native
-    def setActivity(args: Presence): js.Promise[_] = js.native
-    def setActivity(args: Presence, pid: Double): js.Promise[_] = js.native
+    def setActivity(): js.Promise[js.Any] = js.native
+    def setActivity(args: Unit, pid: Double): js.Promise[js.Any] = js.native
+    def setActivity(args: Presence): js.Promise[js.Any] = js.native
+    def setActivity(args: Presence, pid: Double): js.Promise[js.Any] = js.native
     
     def setCertifiedDevices(devices: js.Array[CertifiedDevice]): js.Promise[Null] = js.native
     
-    def setUserVoiceSettings(id: String, settings: UserVoiceSettings): js.Promise[_] = js.native
+    def setUserVoiceSettings(id: String, settings: UserVoiceSettings): js.Promise[js.Any] = js.native
     
-    def setVoiceSettings(args: VoiceSettings): js.Promise[_] = js.native
+    def setVoiceSettings(args: VoiceSettings): js.Promise[js.Any] = js.native
     
     def subscribe(event: String, args: js.Any, callback: js.Function1[/* data */ js.Any, Unit]): js.Promise[Subscription] = js.native
     def subscribe(event: String, callback: js.Function1[/* data */ js.Any, Unit]): js.Promise[Subscription] = js.native
     
-    def updateLobby(lobby: String): js.Promise[_] = js.native
-    def updateLobby(lobby: String, options: Capacity): js.Promise[_] = js.native
-    def updateLobby(lobby: Id): js.Promise[_] = js.native
-    def updateLobby(lobby: Id, options: Capacity): js.Promise[_] = js.native
+    def updateLobby(lobby: String): js.Promise[js.Any] = js.native
+    def updateLobby(lobby: String, options: Capacity): js.Promise[js.Any] = js.native
+    def updateLobby(lobby: Id): js.Promise[js.Any] = js.native
+    def updateLobby(lobby: Id, options: Capacity): js.Promise[js.Any] = js.native
     
-    def updateLobbyMember(lobby: String, user: String, metadata: js.Any): js.Promise[_] = js.native
-    def updateLobbyMember(lobby: String, user: Id, metadata: js.Any): js.Promise[_] = js.native
-    def updateLobbyMember(lobby: Id, user: String, metadata: js.Any): js.Promise[_] = js.native
-    def updateLobbyMember(lobby: Id, user: Id, metadata: js.Any): js.Promise[_] = js.native
+    def updateLobbyMember(lobby: String, user: String, metadata: js.Any): js.Promise[js.Any] = js.native
+    def updateLobbyMember(lobby: String, user: Id, metadata: js.Any): js.Promise[js.Any] = js.native
+    def updateLobbyMember(lobby: Id, user: String, metadata: js.Any): js.Promise[js.Any] = js.native
+    def updateLobbyMember(lobby: Id, user: Id, metadata: js.Any): js.Promise[js.Any] = js.native
     
     var user: Avatar = js.native
   }
   
-  @JSImport("discord-rpc", "register")
-  @js.native
-  def register(id: String): Boolean = js.native
+  @scala.inline
+  def register(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
   trait CertifiedDevice extends StObject {
     
-    var automaticGainControl: js.UndefOr[Boolean] = js.native
+    var automaticGainControl: js.UndefOr[Boolean] = js.undefined
     
-    var echoCancellation: js.UndefOr[Boolean] = js.native
+    var echoCancellation: js.UndefOr[Boolean] = js.undefined
     
-    var hardwareMute: js.UndefOr[Boolean] = js.native
+    var hardwareMute: js.UndefOr[Boolean] = js.undefined
     
-    var model: Name = js.native
+    var model: Name
     
-    var noiseSuppression: js.UndefOr[Boolean] = js.native
+    var noiseSuppression: js.UndefOr[Boolean] = js.undefined
     
-    var related: js.Array[String] = js.native
+    var related: js.Array[String]
     
-    var `type`: audioinput | audiooutput | videoinput = js.native
+    var `type`: audioinput | audiooutput | videoinput
     
-    var uuid: String = js.native
+    var uuid: String
     
-    var vendor: Name = js.native
+    var vendor: Name
   }
   object CertifiedDevice {
     
@@ -219,49 +220,48 @@ object mod {
     }
   }
   
-  @js.native
   trait Channel extends StObject {
     
     /**
       * (voice)
       */
-    var bitrate: js.UndefOr[Double] = js.native
+    var bitrate: js.UndefOr[Double] = js.undefined
     
-    var guild_id: js.UndefOr[String] = js.native
+    var guild_id: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
     /**
       * (text) https://discordapp.com/developers/docs/resources/channel#message-object
       */
-    var messages: js.UndefOr[js.Array[_]] = js.native
+    var messages: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var name: String = js.native
-    
-    /**
-      * (text)
-      */
-    var position: js.UndefOr[Double] = js.native
+    var name: String
     
     /**
       * (text)
       */
-    var topic: js.UndefOr[String] = js.native
+    var position: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * (text)
+      */
+    var topic: js.UndefOr[String] = js.undefined
     
     /**
       * Guild text: 0, Guild voice: 2, DM: 1, Group DM: 3
       */
-    var `type`: Double = js.native
+    var `type`: Double
     
     /**
       * (voice) 0 if none
       */
-    var user_limit: js.UndefOr[Double] = js.native
+    var user_limit: js.UndefOr[Double] = js.undefined
     
     /**
       * (voice) https://discordapp.com/developers/docs/resources/voice#voice-state-object
       */
-    var voice_states: js.UndefOr[js.Array[_]] = js.native
+    var voice_states: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object Channel {
     
@@ -291,7 +291,7 @@ object mod {
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMessages(value: js.Array[_]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      def setMessages(value: js.Array[js.Any]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
@@ -324,7 +324,7 @@ object mod {
       def setUser_limitUndefined: Self = StObject.set(x, "user_limit", js.undefined)
       
       @scala.inline
-      def setVoice_states(value: js.Array[_]): Self = StObject.set(x, "voice_states", value.asInstanceOf[js.Any])
+      def setVoice_states(value: js.Array[js.Any]): Self = StObject.set(x, "voice_states", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setVoice_statesUndefined: Self = StObject.set(x, "voice_states", js.undefined)
@@ -334,16 +334,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Guild extends StObject {
     
-    var icon_url: js.UndefOr[String] = js.native
+    var icon_url: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var members: js.UndefOr[js.Array[_]] = js.native
+    var members: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object Guild {
     
@@ -366,7 +365,7 @@ object mod {
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMembers(value: js.Array[_]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      def setMembers(value: js.Array[js.Any]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
@@ -379,36 +378,35 @@ object mod {
     }
   }
   
-  @js.native
   trait Presence extends StObject {
     
-    var details: js.UndefOr[String] = js.native
+    var details: js.UndefOr[String] = js.undefined
     
-    var endTimestamp: js.UndefOr[Double | Date] = js.native
+    var endTimestamp: js.UndefOr[Double | Date] = js.undefined
     
-    var instance: js.UndefOr[Boolean] = js.native
+    var instance: js.UndefOr[Boolean] = js.undefined
     
-    var joinSecret: js.UndefOr[String] = js.native
+    var joinSecret: js.UndefOr[String] = js.undefined
     
-    var largeImageKey: js.UndefOr[String] = js.native
+    var largeImageKey: js.UndefOr[String] = js.undefined
     
-    var largeImageText: js.UndefOr[String] = js.native
+    var largeImageText: js.UndefOr[String] = js.undefined
     
-    var matchSecret: js.UndefOr[String] = js.native
+    var matchSecret: js.UndefOr[String] = js.undefined
     
-    var partyMax: js.UndefOr[Double] = js.native
+    var partyMax: js.UndefOr[Double] = js.undefined
     
-    var partySize: js.UndefOr[Double] = js.native
+    var partySize: js.UndefOr[Double] = js.undefined
     
-    var smallImageKey: js.UndefOr[String] = js.native
+    var smallImageKey: js.UndefOr[String] = js.undefined
     
-    var smallImageText: js.UndefOr[String] = js.native
+    var smallImageText: js.UndefOr[String] = js.undefined
     
-    var spectateSecret: js.UndefOr[String] = js.native
+    var spectateSecret: js.UndefOr[String] = js.undefined
     
-    var startTimestamp: js.UndefOr[Double | Date] = js.native
+    var startTimestamp: js.UndefOr[Double | Date] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object Presence {
     
@@ -507,10 +505,9 @@ object mod {
     }
   }
   
-  @js.native
   trait RPCClientOptions extends StObject {
     
-    var transport: ipc | websocket = js.native
+    var transport: ipc | websocket
   }
   object RPCClientOptions {
     
@@ -528,20 +525,19 @@ object mod {
     }
   }
   
-  @js.native
   trait RPCLoginOptions extends StObject {
     
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var clientSecret: js.UndefOr[String] = js.native
+    var clientSecret: js.UndefOr[String] = js.undefined
     
-    var rpcToken: js.UndefOr[String] = js.native
+    var rpcToken: js.UndefOr[String] = js.undefined
     
-    var scopes: js.UndefOr[js.Array[String]] = js.native
+    var scopes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var tokenEndpoint: js.UndefOr[String] = js.native
+    var tokenEndpoint: js.UndefOr[String] = js.undefined
   }
   object RPCLoginOptions {
     
@@ -592,10 +588,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Subscription extends StObject {
     
-    def unsubscribe(): js.Promise[Boolean] = js.native
+    def unsubscribe(): js.Promise[Boolean]
   }
   object Subscription {
     
@@ -613,16 +608,15 @@ object mod {
     }
   }
   
-  @js.native
   trait UserVoiceSettings extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var mute: js.UndefOr[Boolean] = js.native
+    var mute: js.UndefOr[Boolean] = js.undefined
     
-    var pan: js.UndefOr[Left] = js.native
+    var pan: js.UndefOr[Left] = js.undefined
     
-    var volume: js.UndefOr[Double] = js.native
+    var volume: js.UndefOr[Double] = js.undefined
   }
   object UserVoiceSettings {
     
@@ -658,28 +652,27 @@ object mod {
     }
   }
   
-  @js.native
   trait VoiceSettings extends StObject {
     
-    var automaticGainControl: Boolean = js.native
+    var automaticGainControl: Boolean
     
-    var deaf: Boolean = js.native
+    var deaf: Boolean
     
-    var echoCancellation: Boolean = js.native
+    var echoCancellation: Boolean
     
-    var input: js.UndefOr[Device] = js.native
+    var input: js.UndefOr[Device] = js.undefined
     
-    var mode: js.UndefOr[AutoThreshold] = js.native
+    var mode: js.UndefOr[AutoThreshold] = js.undefined
     
-    var mute: Boolean = js.native
+    var mute: Boolean
     
-    var noiseSuppression: Boolean = js.native
+    var noiseSuppression: Boolean
     
-    var output: js.UndefOr[Device] = js.native
+    var output: js.UndefOr[Device] = js.undefined
     
-    var qos: Boolean = js.native
+    var qos: Boolean
     
-    var silenceWarning: Boolean = js.native
+    var silenceWarning: Boolean
   }
   object VoiceSettings {
     

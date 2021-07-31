@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisjunctiveMatchStatement extends StObject {
   
   /** The event filters contained within this disjunctive match statement. */
-  var eventFilters: js.UndefOr[js.Array[EventFilter]] = js.native
+  var eventFilters: js.UndefOr[js.Array[EventFilter]] = js.undefined
   
   /** The kind of resource this is, in this case dfareporting#disjunctiveMatchStatement. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object DisjunctiveMatchStatement {
   

@@ -2,21 +2,19 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateRange extends StObject {
   
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /** The kind of resource this is, in this case dfareporting#dateRange. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The date range relative to the date of when the report is run. */
-  var relativeDateRange: js.UndefOr[String] = js.native
+  var relativeDateRange: js.UndefOr[String] = js.undefined
   
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
 }
 object DateRange {
   

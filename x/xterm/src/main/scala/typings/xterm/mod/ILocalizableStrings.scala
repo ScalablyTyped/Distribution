@@ -2,22 +2,20 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILocalizableStrings extends StObject {
   
   /**
     * The aria label for the underlying input textarea for the terminal.
     */
-  var promptLabel: String = js.native
+  var promptLabel: String
   
   /**
     * Announcement for when line reading is suppressed due to too many lines
     * being printed to the terminal when `screenReaderMode` is enabled.
     */
-  var tooMuchOutput: String = js.native
+  var tooMuchOutput: String
 }
 object ILocalizableStrings {
   

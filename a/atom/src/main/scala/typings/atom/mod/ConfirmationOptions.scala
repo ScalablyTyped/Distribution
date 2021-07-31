@@ -7,14 +7,12 @@ import typings.atom.atomStrings.question
 import typings.atom.atomStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmationOptions extends StObject {
   
   /** The text for the buttons. */
-  var buttons: js.UndefOr[js.Array[String]] = js.native
+  var buttons: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     *  The index of the button to be used to cancel the dialog, via the `Esc` key.
@@ -24,25 +22,25 @@ trait ConfirmationOptions extends StObject {
     *
     *  This option is ignored on Windows.
     */
-  var cancelId: js.UndefOr[Double] = js.native
+  var cancelId: js.UndefOr[Double] = js.undefined
   
   /** Initial checked state of the checkbox. false by default. */
-  var checkboxChecked: js.UndefOr[Boolean] = js.native
+  var checkboxChecked: js.UndefOr[Boolean] = js.undefined
   
   /** If provided, the message box will include a checkbox with the given label. */
-  var checkboxLabel: js.UndefOr[String] = js.native
+  var checkboxLabel: js.UndefOr[String] = js.undefined
   
   /** The index for the button to be selected by default in the prompt. */
-  var defaultId: js.UndefOr[Double] = js.native
+  var defaultId: js.UndefOr[Double] = js.undefined
   
   /** Additional information regarding the message. */
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
   /** An Electron NativeImage to use as the prompt's icon. */
-  var icon: js.UndefOr[js.Object] = js.native
+  var icon: js.UndefOr[js.Object] = js.undefined
   
   /** The content of the message box. */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     *  On Windows, Electron will try to figure out which one of the buttons are
@@ -50,19 +48,19 @@ trait ConfirmationOptions extends StObject {
     *  in the dialog. This can make the dialog appear in the style of modern Windows
     *  apps. If you don't like this behavior, you can set noLink to true.
     */
-  var noLink: js.UndefOr[Boolean] = js.native
+  var noLink: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Normalize the keyboard access keys across platforms.
     * Atom defaults this to true.
     */
-  var normalizeAccessKeys: js.UndefOr[Boolean] = js.native
+  var normalizeAccessKeys: js.UndefOr[Boolean] = js.undefined
   
   /** The title for the prompt. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** The type of the confirmation prompt. */
-  var `type`: js.UndefOr[none | info | error | question | warning] = js.native
+  var `type`: js.UndefOr[none | info | error | question | warning] = js.undefined
 }
 object ConfirmationOptions {
   

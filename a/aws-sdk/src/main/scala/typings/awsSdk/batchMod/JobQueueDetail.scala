@@ -2,51 +2,49 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobQueueDetail extends StObject {
   
   /**
     * The compute environments that are attached to the job queue and the order in which job placement is preferred. Compute environments are selected for job placement in ascending order.
     */
-  var computeEnvironmentOrder: ComputeEnvironmentOrders = js.native
+  var computeEnvironmentOrder: ComputeEnvironmentOrders
   
   /**
     * The Amazon Resource Name (ARN) of the job queue.
     */
-  var jobQueueArn: String = js.native
+  var jobQueueArn: String
   
   /**
     * The name of the job queue.
     */
-  var jobQueueName: String = js.native
+  var jobQueueName: String
   
   /**
     * The priority of the job queue.
     */
-  var priority: Integer = js.native
+  var priority: Integer
   
   /**
     * Describes the ability of the queue to accept new jobs. If the job queue state is ENABLED, it is able to accept jobs. If the job queue state is DISABLED, new jobs cannot be added to the queue, but jobs already in the queue can finish.
     */
-  var state: JQState = js.native
+  var state: JQState
   
   /**
     * The status of the job queue (for example, CREATING or VALID).
     */
-  var status: js.UndefOr[JQStatus] = js.native
+  var status: js.UndefOr[JQStatus] = js.undefined
   
   /**
     * A short, human-readable string to provide additional details about the current status of the job queue.
     */
-  var statusReason: js.UndefOr[String] = js.native
+  var statusReason: js.UndefOr[String] = js.undefined
   
   /**
     * The tags applied to the job queue.
     */
-  var tags: js.UndefOr[TagrisTagsMap] = js.native
+  var tags: js.UndefOr[TagrisTagsMap] = js.undefined
 }
 object JobQueueDetail {
   

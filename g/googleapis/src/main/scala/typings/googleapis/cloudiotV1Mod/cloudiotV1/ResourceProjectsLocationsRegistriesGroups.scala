@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudiot/v1", "cloudiot_v1.Resource$Projects$Locations$Registries$Groups")
@@ -29,7 +28,7 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends StObject {
     */
   def bindDeviceToGateway(): GaxiosPromise[SchemaBindDeviceToGatewayResponse] = js.native
   def bindDeviceToGateway(callback: BodyResponseCallback[SchemaBindDeviceToGatewayResponse]): Unit = js.native
-  def bindDeviceToGateway(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBindDeviceToGatewayResponse] = js.native
+  def bindDeviceToGateway(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBindDeviceToGatewayResponse] = js.native
   def bindDeviceToGateway(params: ParamsResourceProjectsLocationsRegistriesGroupsBinddevicetogateway): GaxiosPromise[SchemaBindDeviceToGatewayResponse] = js.native
   def bindDeviceToGateway(
     params: ParamsResourceProjectsLocationsRegistriesGroupsBinddevicetogateway,
@@ -67,7 +66,7 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends StObject {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsLocationsRegistriesGroupsGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsLocationsRegistriesGroupsGetiampolicy,
@@ -101,7 +100,7 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends StObject {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsLocationsRegistriesGroupsSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsLocationsRegistriesGroupsSetiampolicy,
@@ -136,7 +135,7 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsLocationsRegistriesGroupsTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsLocationsRegistriesGroupsTestiampermissions,
@@ -170,7 +169,7 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends StObject {
     */
   def unbindDeviceFromGateway(): GaxiosPromise[SchemaUnbindDeviceFromGatewayResponse] = js.native
   def unbindDeviceFromGateway(callback: BodyResponseCallback[SchemaUnbindDeviceFromGatewayResponse]): Unit = js.native
-  def unbindDeviceFromGateway(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUnbindDeviceFromGatewayResponse] = js.native
+  def unbindDeviceFromGateway(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUnbindDeviceFromGatewayResponse] = js.native
   def unbindDeviceFromGateway(params: ParamsResourceProjectsLocationsRegistriesGroupsUnbinddevicefromgateway): GaxiosPromise[SchemaUnbindDeviceFromGatewayResponse] = js.native
   def unbindDeviceFromGateway(
     params: ParamsResourceProjectsLocationsRegistriesGroupsUnbinddevicefromgateway,

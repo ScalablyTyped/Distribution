@@ -2,16 +2,14 @@ package typings.stripeV3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Iban extends StObject {
   
   /*
     * An IBAN account number.
     */
-  var iban: String = js.native
+  var iban: String
 }
 object Iban {
   

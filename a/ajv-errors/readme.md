@@ -10,9 +10,9 @@ Custom error messages in JSON-Schema for Ajv validator
 | ------------------ | :-------------: |
 | Full name          | ajv-errors |
 | Keywords           | ajv, json-schema, validator, error, messages |
-| # releases         | 2 |
-| # dependents       | 119 |
-| # downloads        | 343670043 |
+| # releases         | 3 |
+| # dependents       | 142 |
+| # downloads        | 407806782 |
 | # stars            | 2 |
 
 ## Links

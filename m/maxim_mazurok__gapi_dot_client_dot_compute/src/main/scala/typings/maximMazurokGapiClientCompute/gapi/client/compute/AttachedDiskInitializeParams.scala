@@ -3,26 +3,24 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachedDiskInitializeParams extends StObject {
   
   /** An optional description. Provide this property when creating the disk. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the disk name. If not specified, the default is to use the name of the instance. If a disk with the same name already exists in the given region, the existing disk is
     * attached to the new instance and the new disk is not created.
     */
-  var diskName: js.UndefOr[String] = js.native
+  var diskName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the size of the disk in base-2 GB. The size must be at least 10 GB. If you specify a sourceImage, which is required for boot disks, the default size is the size of the
     * sourceImage. If you do not specify a sourceImage, the default disk size is 500 GB.
     */
-  var diskSizeGb: js.UndefOr[String] = js.native
+  var diskSizeGb: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the disk type to use to create the instance. If not specified, the default is pd-standard, specified using the full URL. For example:
@@ -34,20 +32,20 @@ trait AttachedDiskInitializeParams extends StObject {
     * - projects/project/zones/zone/diskTypes/diskType
     * - zones/zone/diskTypes/diskType  Note that for InstanceTemplate, this is the name of the disk type, not URL.
     */
-  var diskType: js.UndefOr[String] = js.native
+  var diskType: js.UndefOr[String] = js.undefined
   
   /** Labels to apply to this disk. These can be later modified by the disks.setLabels method. This field is only applicable for persistent disks. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AttachedDiskInitializeParams with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AttachedDiskInitializeParams & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Specifies which action to take on instance update with this disk. Default is to use the existing disk. */
-  var onUpdateAction: js.UndefOr[String] = js.native
+  var onUpdateAction: js.UndefOr[String] = js.undefined
   
   /** Resource policies applied to this disk for automatic snapshot creations. Specified using the full or partial URL. For instance template, specify only the resource policy name. */
-  var resourcePolicies: js.UndefOr[js.Array[String]] = js.native
+  var resourcePolicies: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The source image to create this disk. When creating a new instance, one of initializeParams.sourceImage or initializeParams.sourceSnapshot or disks.source is required except for
@@ -71,7 +69,7 @@ trait AttachedDiskInitializeParams extends StObject {
     *
     * If the source image is deleted later, this field will not be set.
     */
-  var sourceImage: js.UndefOr[String] = js.native
+  var sourceImage: js.UndefOr[String] = js.undefined
   
   /**
     * The customer-supplied encryption key of the source image. Required if the source image is protected by a customer-supplied encryption key.
@@ -79,7 +77,7 @@ trait AttachedDiskInitializeParams extends StObject {
     * Instance templates do not store customer-supplied encryption keys, so you cannot create disks for instances in a managed instance group if the source images are encrypted with your
     * own keys.
     */
-  var sourceImageEncryptionKey: js.UndefOr[CustomerEncryptionKey] = js.native
+  var sourceImageEncryptionKey: js.UndefOr[CustomerEncryptionKey] = js.undefined
   
   /**
     * The source snapshot to create this disk. When creating a new instance, one of initializeParams.sourceSnapshot or initializeParams.sourceImage or disks.source is required except for
@@ -91,10 +89,10 @@ trait AttachedDiskInitializeParams extends StObject {
     *
     * If the source snapshot is deleted later, this field will not be set.
     */
-  var sourceSnapshot: js.UndefOr[String] = js.native
+  var sourceSnapshot: js.UndefOr[String] = js.undefined
   
   /** The customer-supplied encryption key of the source snapshot. */
-  var sourceSnapshotEncryptionKey: js.UndefOr[CustomerEncryptionKey] = js.native
+  var sourceSnapshotEncryptionKey: js.UndefOr[CustomerEncryptionKey] = js.undefined
 }
 object AttachedDiskInitializeParams {
   
@@ -135,7 +133,7 @@ object AttachedDiskInitializeParams {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AttachedDiskInitializeParams with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AttachedDiskInitializeParams & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

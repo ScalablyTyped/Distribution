@@ -4,7 +4,6 @@ import typings.angularForms.anon.EmitEvent
 import typings.angularForms.anon.EmitModelToViewChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "FormControl")
@@ -24,64 +23,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class FormControl () extends AbstractControl {
   def this(formState: js.Any) = this()
-  def this(formState: js.UndefOr[scala.Nothing], validatorOrOpts: js.Array[ValidatorFn]) = this()
-  def this(formState: js.UndefOr[scala.Nothing], validatorOrOpts: AbstractControlOptions) = this()
-  def this(formState: js.UndefOr[scala.Nothing], validatorOrOpts: ValidatorFn) = this()
   def this(formState: js.Any, validatorOrOpts: js.Array[ValidatorFn]) = this()
   def this(formState: js.Any, validatorOrOpts: AbstractControlOptions) = this()
   def this(formState: js.Any, validatorOrOpts: ValidatorFn) = this()
-  def this(
-    formState: js.UndefOr[scala.Nothing],
-    validatorOrOpts: js.UndefOr[scala.Nothing],
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ) = this()
-  def this(
-    formState: js.UndefOr[scala.Nothing],
-    validatorOrOpts: js.UndefOr[scala.Nothing],
-    asyncValidator: AsyncValidatorFn
-  ) = this()
-  def this(
-    formState: js.UndefOr[scala.Nothing],
-    validatorOrOpts: js.Array[ValidatorFn],
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ) = this()
-  def this(
-    formState: js.UndefOr[scala.Nothing],
-    validatorOrOpts: js.Array[ValidatorFn],
-    asyncValidator: AsyncValidatorFn
-  ) = this()
-  def this(
-    formState: js.UndefOr[scala.Nothing],
-    validatorOrOpts: Null,
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ) = this()
-  def this(formState: js.UndefOr[scala.Nothing], validatorOrOpts: Null, asyncValidator: AsyncValidatorFn) = this()
-  def this(
-    formState: js.UndefOr[scala.Nothing],
-    validatorOrOpts: AbstractControlOptions,
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ) = this()
-  def this(
-    formState: js.UndefOr[scala.Nothing],
-    validatorOrOpts: AbstractControlOptions,
-    asyncValidator: AsyncValidatorFn
-  ) = this()
-  def this(
-    formState: js.UndefOr[scala.Nothing],
-    validatorOrOpts: ValidatorFn,
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ) = this()
-  def this(
-    formState: js.UndefOr[scala.Nothing],
-    validatorOrOpts: ValidatorFn,
-    asyncValidator: AsyncValidatorFn
-  ) = this()
-  def this(
-    formState: js.Any,
-    validatorOrOpts: js.UndefOr[scala.Nothing],
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ) = this()
-  def this(formState: js.Any, validatorOrOpts: js.UndefOr[scala.Nothing], asyncValidator: AsyncValidatorFn) = this()
+  def this(formState: Unit, validatorOrOpts: js.Array[ValidatorFn]) = this()
+  def this(formState: Unit, validatorOrOpts: AbstractControlOptions) = this()
+  def this(formState: Unit, validatorOrOpts: ValidatorFn) = this()
   def this(
     formState: js.Any,
     validatorOrOpts: js.Array[ValidatorFn],
@@ -90,6 +37,8 @@ class FormControl () extends AbstractControl {
   def this(formState: js.Any, validatorOrOpts: js.Array[ValidatorFn], asyncValidator: AsyncValidatorFn) = this()
   def this(formState: js.Any, validatorOrOpts: Null, asyncValidator: js.Array[AsyncValidatorFn]) = this()
   def this(formState: js.Any, validatorOrOpts: Null, asyncValidator: AsyncValidatorFn) = this()
+  def this(formState: js.Any, validatorOrOpts: Unit, asyncValidator: js.Array[AsyncValidatorFn]) = this()
+  def this(formState: js.Any, validatorOrOpts: Unit, asyncValidator: AsyncValidatorFn) = this()
   def this(
     formState: js.Any,
     validatorOrOpts: AbstractControlOptions,
@@ -98,6 +47,24 @@ class FormControl () extends AbstractControl {
   def this(formState: js.Any, validatorOrOpts: AbstractControlOptions, asyncValidator: AsyncValidatorFn) = this()
   def this(formState: js.Any, validatorOrOpts: ValidatorFn, asyncValidator: js.Array[AsyncValidatorFn]) = this()
   def this(formState: js.Any, validatorOrOpts: ValidatorFn, asyncValidator: AsyncValidatorFn) = this()
+  def this(
+    formState: Unit,
+    validatorOrOpts: js.Array[ValidatorFn],
+    asyncValidator: js.Array[AsyncValidatorFn]
+  ) = this()
+  def this(formState: Unit, validatorOrOpts: js.Array[ValidatorFn], asyncValidator: AsyncValidatorFn) = this()
+  def this(formState: Unit, validatorOrOpts: Null, asyncValidator: js.Array[AsyncValidatorFn]) = this()
+  def this(formState: Unit, validatorOrOpts: Null, asyncValidator: AsyncValidatorFn) = this()
+  def this(formState: Unit, validatorOrOpts: Unit, asyncValidator: js.Array[AsyncValidatorFn]) = this()
+  def this(formState: Unit, validatorOrOpts: Unit, asyncValidator: AsyncValidatorFn) = this()
+  def this(
+    formState: Unit,
+    validatorOrOpts: AbstractControlOptions,
+    asyncValidator: js.Array[AsyncValidatorFn]
+  ) = this()
+  def this(formState: Unit, validatorOrOpts: AbstractControlOptions, asyncValidator: AsyncValidatorFn) = this()
+  def this(formState: Unit, validatorOrOpts: ValidatorFn, asyncValidator: js.Array[AsyncValidatorFn]) = this()
+  def this(formState: Unit, validatorOrOpts: ValidatorFn, asyncValidator: AsyncValidatorFn) = this()
   
   var _applyFormState: js.Any = js.native
   
@@ -117,8 +84,8 @@ class FormControl () extends AbstractControl {
     */
   def registerOnDisabledChange(fn: js.Function1[/* isDisabled */ Boolean, Unit]): Unit = js.native
   
-  def reset(formState: js.UndefOr[scala.Nothing], options: EmitEvent): Unit = js.native
   def reset(formState: js.Any, options: EmitEvent): Unit = js.native
+  def reset(formState: Unit, options: EmitEvent): Unit = js.native
   
   def setValue(value: js.Any, options: EmitModelToViewChange): Unit = js.native
 }

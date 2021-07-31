@@ -2,31 +2,29 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output only.  List jobs response.
   */
-@js.native
 trait SchemaListJobsResponse extends StObject {
   
   /**
     * The Jobs for a given company.  The maximum number of items returned is
     * based on the limit field provided in the request.
     */
-  var jobs: js.UndefOr[js.Array[SchemaJob]] = js.native
+  var jobs: js.UndefOr[js.Array[SchemaJob]] = js.undefined
   
   /**
     * Additional information for the API invocation, such as the request
     * tracking id.
     */
-  var metadata: js.UndefOr[SchemaResponseMetadata] = js.native
+  var metadata: js.UndefOr[SchemaResponseMetadata] = js.undefined
   
   /**
     * A token to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListJobsResponse {
   

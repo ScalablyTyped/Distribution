@@ -3,34 +3,32 @@ package typings.chromeApps.chrome.networking.onc
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes which networks to return. */
-@js.native
 trait Filter extends StObject {
   
   /**
     * If true, only include configured (saved) networks.
     * @default false
     */
-  var configured: js.UndefOr[Boolean] = js.native
+  var configured: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum number of networks to return.
     * Use 0 for no limit
     * @default 1000 if unspecified.
     * */
-  var limit: js.UndefOr[integer] = js.native
+  var limit: js.UndefOr[integer] = js.undefined
   
   /** The type of networks to return. */
-  var networkType: NetworkType = js.native
+  var networkType: NetworkType
   
   /**
     * If true, only include visible (physically connected or in-range) networks.
     * @default false
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Filter {
   

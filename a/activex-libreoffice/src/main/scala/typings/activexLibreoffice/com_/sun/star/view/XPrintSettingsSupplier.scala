@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** offers printing related settings, which affect document rendering, but are not related to the printer itself. */
-@js.native
-trait XPrintSettingsSupplier extends XInterface {
+trait XPrintSettingsSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * @returns a set of properties which are related to printing.
     * @see PrintSettings
     */
-  val PrintSettings: XPropertySet = js.native
+  val PrintSettings: XPropertySet
   
   /**
     * @returns a set of properties which are related to printing.
     * @see PrintSettings
     */
-  def getPrintSettings(): XPropertySet = js.native
+  def getPrintSettings(): XPropertySet
 }
 object XPrintSettingsSupplier {
   

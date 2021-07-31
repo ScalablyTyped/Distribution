@@ -2,15 +2,13 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleOperation extends StObject {
   
-  var Action: RuleAction = js.native
+  var Action: RuleAction
   
-  var Context: RuleOperationContext = js.native
+  var Context: RuleOperationContext
 }
 object RuleOperation {
   

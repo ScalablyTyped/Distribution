@@ -2,69 +2,69 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Declare support for this event
   */
-@js.native
-trait CapabilityStatementMessagingEvent extends BackboneElement {
+trait CapabilityStatementMessagingEvent
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'category'.
     */
-  var _category: js.UndefOr[Element] = js.native
+  var _category: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'documentation'.
     */
-  var _documentation: js.UndefOr[Element] = js.native
+  var _documentation: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'focus'.
     */
-  var _focus: js.UndefOr[Element] = js.native
+  var _focus: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'mode'.
     */
-  var _mode: js.UndefOr[Element] = js.native
+  var _mode: js.UndefOr[Element] = js.undefined
   
   /**
     * Consequence | Currency | Notification
     */
-  var category: js.UndefOr[code] = js.native
+  var category: js.UndefOr[code] = js.undefined
   
   /**
     * Event type
     */
-  var code: Coding = js.native
+  var code: Coding
   
   /**
     * Endpoint-specific event documentation
     */
-  var documentation: js.UndefOr[String] = js.native
+  var documentation: js.UndefOr[String] = js.undefined
   
   /**
     * Resource that's focus of message
     */
-  var focus: code = js.native
+  var focus: code
   
   /**
     * sender | receiver
     */
-  var mode: code = js.native
+  var mode: code
   
   /**
     * Profile that describes the request
     */
-  var request: Reference = js.native
+  var request: Reference
   
   /**
     * Profile that describes the response
     */
-  var response: Reference = js.native
+  var response: Reference
 }
 object CapabilityStatementMessagingEvent {
   

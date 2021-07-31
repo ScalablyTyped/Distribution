@@ -3,17 +3,15 @@ package typings.wegameApi.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Header extends StObject {
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var header: js.UndefOr[StringDictionary[String]] = js.native
+  var header: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object Header {
   

@@ -2,7 +2,6 @@ package typings.tiffToPng
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerMod {
@@ -11,17 +10,14 @@ object loggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("tiff-to-png/logger", "debugError")
-  @js.native
-  def debugError(target: String, stack: String): Unit = js.native
+  @scala.inline
+  def debugError(target: String, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debugError")(target.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tiff-to-png/logger", "error")
-  @js.native
-  def error(message: String): Unit = js.native
+  @scala.inline
+  def error(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tiff-to-png/logger", "fail")
-  @js.native
-  def fail(message: String): Unit = js.native
+  @scala.inline
+  def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("tiff-to-png/logger", "level")
   @js.native
@@ -35,25 +31,19 @@ object loggerMod {
   @scala.inline
   def padding_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("padding")(x.asInstanceOf[js.Any])
   
-  @JSImport("tiff-to-png/logger", "space")
-  @js.native
-  def space(): Unit = js.native
+  @scala.inline
+  def space(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("space")().asInstanceOf[Unit]
   
-  @JSImport("tiff-to-png/logger", "success")
-  @js.native
-  def success(message: String): Unit = js.native
+  @scala.inline
+  def success(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("success")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tiff-to-png/logger", "tabbed")
-  @js.native
-  def tabbed(message: String): Unit = js.native
-  @JSImport("tiff-to-png/logger", "tabbed")
-  @js.native
-  def tabbed(message: String, success: Boolean): Unit = js.native
+  @scala.inline
+  def tabbed(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tabbed")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def tabbed(message: String, success: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tabbed")(message.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tiff-to-png/logger", "title")
-  @js.native
-  def title(title: String): Unit = js.native
-  @JSImport("tiff-to-png/logger", "title")
-  @js.native
-  def title(title: String, comment: String): Unit = js.native
+  @scala.inline
+  def title(title: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("title")(title.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def title(title: String, comment: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("title")(title.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

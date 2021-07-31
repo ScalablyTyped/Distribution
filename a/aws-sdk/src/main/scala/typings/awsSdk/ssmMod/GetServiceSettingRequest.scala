@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetServiceSettingRequest extends StObject {
   
   /**
     * The ID of the service setting to get. The setting ID can be /ssm/parameter-store/default-parameter-tier, /ssm/parameter-store/high-throughput-enabled, or /ssm/managed-instance/activation-tier.
     */
-  var SettingId: ServiceSettingId = js.native
+  var SettingId: ServiceSettingId
 }
 object GetServiceSettingRequest {
   

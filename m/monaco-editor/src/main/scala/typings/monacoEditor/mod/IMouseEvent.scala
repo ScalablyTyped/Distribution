@@ -4,43 +4,41 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMouseEvent extends StObject {
   
-  val altKey: Boolean = js.native
+  val altKey: Boolean
   
-  val browserEvent: MouseEvent = js.native
+  val browserEvent: MouseEvent
   
-  val buttons: Double = js.native
+  val buttons: Double
   
-  val ctrlKey: Boolean = js.native
+  val ctrlKey: Boolean
   
-  val detail: Double = js.native
+  val detail: Double
   
-  val leftButton: Boolean = js.native
+  val leftButton: Boolean
   
-  val metaKey: Boolean = js.native
+  val metaKey: Boolean
   
-  val middleButton: Boolean = js.native
+  val middleButton: Boolean
   
-  val posx: Double = js.native
+  val posx: Double
   
-  val posy: Double = js.native
+  val posy: Double
   
-  def preventDefault(): Unit = js.native
+  def preventDefault(): Unit
   
-  val rightButton: Boolean = js.native
+  val rightButton: Boolean
   
-  val shiftKey: Boolean = js.native
+  val shiftKey: Boolean
   
-  def stopPropagation(): Unit = js.native
+  def stopPropagation(): Unit
   
-  val target: HTMLElement = js.native
+  val target: HTMLElement
   
-  val timestamp: Double = js.native
+  val timestamp: Double
 }
 object IMouseEvent {
   

@@ -15,7 +15,6 @@ import typings.tensorflowTfjsLayers.topologyConfigMod.BaseLayerSerialization
 import typings.tensorflowTfjsLayers.topologyConfigMod.LayerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convolutionalSerializationMod {
@@ -24,36 +23,37 @@ object convolutionalSerializationMod {
   @js.native
   val convolutionalLayerClassNames: js.Array[ConvolutionalLayerClassName] = js.native
   
-  @js.native
-  trait BaseConvLayerConfig extends LayerConfig {
+  trait BaseConvLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var activation: js.UndefOr[String] = js.native
+    var activation: js.UndefOr[String] = js.undefined
     
-    var activity_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var activity_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var bias_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var bias_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var bias_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var bias_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var bias_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var bias_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var data_format: js.UndefOr[DataFormatSerialization] = js.native
+    var data_format: js.UndefOr[DataFormatSerialization] = js.undefined
     
-    var dilation_rate: js.UndefOr[Double | js.Array[Double] | (js.Tuple2[Double, Double])] = js.native
+    var dilation_rate: js.UndefOr[Double | js.Array[Double] | (js.Tuple2[Double, Double])] = js.undefined
     
-    var kernel_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var kernel_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var kernel_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var kernel_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var kernel_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var kernel_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var kernel_size: Double | js.Array[Double] = js.native
+    var kernel_size: Double | js.Array[Double]
     
-    var padding: js.UndefOr[PaddingMode] = js.native
+    var padding: js.UndefOr[PaddingMode] = js.undefined
     
-    var strides: js.UndefOr[Double | js.Array[Double]] = js.native
+    var strides: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var use_bias: js.UndefOr[Boolean] = js.native
+    var use_bias: js.UndefOr[Boolean] = js.undefined
   }
   object BaseConvLayerConfig {
     
@@ -164,10 +164,11 @@ object convolutionalSerializationMod {
   
   type Conv2DTransposeLayerSerialization = BaseLayerSerialization[Conv2DTranspose, ConvLayerConfig]
   
-  @js.native
-  trait ConvLayerConfig extends BaseConvLayerConfig {
+  trait ConvLayerConfig
+    extends StObject
+       with BaseConvLayerConfig {
     
-    var filters: Double = js.native
+    var filters: Double
   }
   object ConvLayerConfig {
     
@@ -218,12 +219,13 @@ object convolutionalSerializationMod {
   
   type ConvolutionalLayerSerialization = Conv1DLayerSerialization | Conv2DLayerSerialization | Conv2DTransposeLayerSerialization | SeparableConv2DLayerSerialization | Cropping2DLayerSerialization | UpSampling2DLayerSerialization
   
-  @js.native
-  trait Cropping2DLayerConfig extends LayerConfig {
+  trait Cropping2DLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var cropping: Double | (js.Tuple2[Double | (js.Tuple2[Double, Double]), Double | (js.Tuple2[Double, Double])]) = js.native
+    var cropping: Double | (js.Tuple2[Double | (js.Tuple2[Double, Double]), Double | (js.Tuple2[Double, Double])])
     
-    var data_format: js.UndefOr[DataFormatSerialization] = js.native
+    var data_format: js.UndefOr[DataFormatSerialization] = js.undefined
   }
   object Cropping2DLayerConfig {
     
@@ -255,22 +257,23 @@ object convolutionalSerializationMod {
   
   type SeparableConv2DLayerSerialization = BaseLayerSerialization[SeparableConv2D, ConvLayerConfig]
   
-  @js.native
-  trait SeparableConvLayerConfig extends ConvLayerConfig {
+  trait SeparableConvLayerConfig
+    extends StObject
+       with ConvLayerConfig {
     
-    var depth_multiplier: js.UndefOr[Double] = js.native
+    var depth_multiplier: js.UndefOr[Double] = js.undefined
     
-    var depthwise_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var depthwise_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var depthwise_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var depthwise_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var depthwise_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var depthwise_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var pointwise_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var pointwise_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var pointwise_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var pointwise_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var pointwise_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var pointwise_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
   }
   object SeparableConvLayerConfig {
     
@@ -327,12 +330,13 @@ object convolutionalSerializationMod {
     }
   }
   
-  @js.native
-  trait UpSampling2DLayerConfig extends LayerConfig {
+  trait UpSampling2DLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var data_format: js.UndefOr[DataFormatSerialization] = js.native
+    var data_format: js.UndefOr[DataFormatSerialization] = js.undefined
     
-    var size: js.UndefOr[js.Array[Double]] = js.native
+    var size: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object UpSampling2DLayerConfig {
     

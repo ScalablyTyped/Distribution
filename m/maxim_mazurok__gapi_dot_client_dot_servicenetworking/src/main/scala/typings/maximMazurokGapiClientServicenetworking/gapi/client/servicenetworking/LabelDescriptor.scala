@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelDescriptor extends StObject {
   
   /** A human-readable description for the label. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The label key. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** The type of data that can be assigned to the label. */
-  var valueType: js.UndefOr[String] = js.native
+  var valueType: js.UndefOr[String] = js.undefined
 }
 object LabelDescriptor {
   

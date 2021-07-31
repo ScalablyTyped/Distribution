@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.playcanvas.anon.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note: An instance of pc.ScriptAttributes is created automatically by each {@link pc.ScriptType}.
   * @param scriptType - Script Type that attributes relate to.
   */
-@js.native
 trait ScriptAttributes extends StObject {
   
   /**
@@ -79,7 +77,7 @@ trait ScriptAttributes extends StObject {
     * @param [args.schema] - List of attributes for type 'json'. Each attribute description is an object with the same properties as regular script attributes
     * but with an added 'name' field to specify the name of each attribute in the JSON.
     */
-  def add(name: String, args: Array): Unit = js.native
+  def add(name: String, args: Array): Unit
   
   /**
     * Get object with attribute arguments.
@@ -91,7 +89,7 @@ trait ScriptAttributes extends StObject {
     * @param name - Name of an attribute.
     * @returns Arguments with attribute properties.
     */
-  def get(name: String): js.Any = js.native
+  def get(name: String): js.Any
   
   /**
     * Detect if Attribute is added.
@@ -102,7 +100,7 @@ trait ScriptAttributes extends StObject {
     * @param name - Name of an attribute.
     * @returns True if Attribute is defined.
     */
-  def has(name: String): Boolean = js.native
+  def has(name: String): Boolean
   
   /**
     * Remove Attribute.
@@ -111,7 +109,7 @@ trait ScriptAttributes extends StObject {
     * @param name - Name of an attribute.
     * @returns True if removed or false if not defined.
     */
-  def remove(name: String): Boolean = js.native
+  def remove(name: String): Boolean
 }
 object ScriptAttributes {
   

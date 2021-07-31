@@ -4,23 +4,21 @@ import typings.opentelemetryApi.loggerMod.Logger
 import typings.opentelemetryApi.textMapPropagatorMod.TextMapPropagator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propagationTypesMod {
   
-  @js.native
   trait CompositePropagatorConfig extends StObject {
     
     /** Instance of logger */
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
     /**
       * List of propagators to run. Propagators run in the
       * list order. If a propagator later in the list writes the same context
       * key as a propagator earlier in the list, the later on will "win".
       */
-    var propagators: js.UndefOr[js.Array[TextMapPropagator]] = js.native
+    var propagators: js.UndefOr[js.Array[TextMapPropagator]] = js.undefined
   }
   object CompositePropagatorConfig {
     

@@ -2,17 +2,15 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StarterManifest extends StObject {
   
-  var baseref: String = js.native
+  var baseref: String
   
-  var name: String = js.native
+  var name: String
   
-  var welcome: js.UndefOr[String] = js.native
+  var welcome: js.UndefOr[String] = js.undefined
 }
 object StarterManifest {
   

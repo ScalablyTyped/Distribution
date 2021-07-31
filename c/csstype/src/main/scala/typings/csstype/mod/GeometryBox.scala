@@ -2,7 +2,6 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -15,9 +14,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`padding-box`
 */
 trait GeometryBox
-  extends _MaskLayer[js.Any]
+  extends StObject
      with _ClipPathProperty
      with _MaskClipProperty
+     with _MaskLayer[js.Any]
      with _OffsetPathProperty
      with _OffsetProperty[js.Any]
 object GeometryBox {

@@ -2,25 +2,23 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemBackground extends StObject {
   
-  var background: Padding = js.native
+  var background: Padding
   
-  var itemBackground: StyleFillOpacity = js.native
+  var itemBackground: StyleFillOpacity
   
-  var itemName: Spacing = js.native
+  var itemName: Spacing
   
-  var itemStates: Inactive = js.native
+  var itemStates: Inactive
   
-  var itemValue: AlignRight = js.native
+  var itemValue: AlignRight
   
-  var marker: SpacingStyle = js.native
+  var marker: SpacingStyle
   
-  var title: Spacing = js.native
+  var title: Spacing
 }
 object ItemBackground {
   

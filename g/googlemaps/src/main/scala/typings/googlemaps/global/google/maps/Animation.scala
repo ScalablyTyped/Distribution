@@ -2,7 +2,6 @@ package typings.googlemaps.global.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Animation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.googlemaps.google.maps.Animation with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.googlemaps.google.maps.Animation & Double] = js.native
   
-  /* 1 */ val BOUNCE: typings.googlemaps.google.maps.Animation.BOUNCE with Double = js.native
+  /* 1 */ val BOUNCE: typings.googlemaps.google.maps.Animation.BOUNCE & Double = js.native
   
-  /* 2 */ val DROP: typings.googlemaps.google.maps.Animation.DROP with Double = js.native
+  /* 2 */ val DROP: typings.googlemaps.google.maps.Animation.DROP & Double = js.native
 }

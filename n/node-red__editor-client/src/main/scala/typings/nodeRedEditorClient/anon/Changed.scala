@@ -3,25 +3,23 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Changed extends StObject {
   
-  var changed: js.Object = js.native
+  var changed: js.Object
   
-  var config: js.Object = js.native
+  var config: js.Object
   
-  var rev: String = js.native
+  var rev: String
   
-  var t: replace = js.native
+  var t: replace
 }
 object Changed {
   
   @scala.inline
-  def apply(changed: js.Object, config: js.Object, rev: String, t: replace): Changed = {
-    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], rev = rev.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
+  def apply(changed: js.Object, config: js.Object, rev: String): Changed = {
+    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], rev = rev.asInstanceOf[js.Any], t = "replace")
     __obj.asInstanceOf[Changed]
   }
   

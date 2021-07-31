@@ -2,19 +2,17 @@ package typings.googleapis.v3Mod.analyticsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request template for the delete upload data request.
   */
-@js.native
 trait SchemaAnalyticsDataimportDeleteUploadDataRequest extends StObject {
   
   /**
     * A list of upload UIDs.
     */
-  var customDataImportUids: js.UndefOr[js.Array[String]] = js.native
+  var customDataImportUids: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaAnalyticsDataimportDeleteUploadDataRequest {
   

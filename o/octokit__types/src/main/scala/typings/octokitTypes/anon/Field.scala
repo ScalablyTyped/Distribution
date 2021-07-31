@@ -2,17 +2,15 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Field extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var field: String = js.native
+  var field: String
   
-  var resource: String = js.native
+  var resource: String
 }
 object Field {
   

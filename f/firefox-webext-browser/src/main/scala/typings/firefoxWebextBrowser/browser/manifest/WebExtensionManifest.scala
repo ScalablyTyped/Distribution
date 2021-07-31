@@ -8,87 +8,85 @@ import typings.firefoxWebextBrowser.anon.Serviceworker
 import typings.firefoxWebextBrowser.browser.experiments.ExperimentAPI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a WebExtension manifest.json file */
-@js.native
 trait WebExtensionManifest extends StObject {
   
-  var applications: js.UndefOr[WebExtensionManifestApplications] = js.native
+  var applications: js.UndefOr[WebExtensionManifestApplications] = js.undefined
   
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
-  var background: js.UndefOr[Page | Persistent | Serviceworker] = js.native
+  var background: js.UndefOr[Page | Persistent | Serviceworker] = js.undefined
   
-  var browser_action: js.UndefOr[WebExtensionManifestBrowserAction] = js.native
+  var browser_action: js.UndefOr[WebExtensionManifestBrowserAction] = js.undefined
   
-  var browser_specific_settings: js.UndefOr[WebExtensionManifestBrowserSpecificSettings] = js.native
+  var browser_specific_settings: js.UndefOr[WebExtensionManifestBrowserSpecificSettings] = js.undefined
   
-  var chrome_settings_overrides: js.UndefOr[WebExtensionManifestChromeSettingsOverrides] = js.native
+  var chrome_settings_overrides: js.UndefOr[WebExtensionManifestChromeSettingsOverrides] = js.undefined
   
-  var chrome_url_overrides: js.UndefOr[WebExtensionManifestChromeUrlOverrides] = js.native
+  var chrome_url_overrides: js.UndefOr[WebExtensionManifestChromeUrlOverrides] = js.undefined
   
-  var commands: js.UndefOr[StringDictionary[WebExtensionManifestCommands]] = js.native
+  var commands: js.UndefOr[StringDictionary[WebExtensionManifestCommands]] = js.undefined
   
-  var content_scripts: js.UndefOr[js.Array[ContentScript]] = js.native
+  var content_scripts: js.UndefOr[js.Array[ContentScript]] = js.undefined
   
-  var content_security_policy: js.UndefOr[String | Contentscripts] = js.native
+  var content_security_policy: js.UndefOr[String | Contentscripts] = js.undefined
   
-  var default_locale: js.UndefOr[String] = js.native
+  var default_locale: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var developer: js.UndefOr[WebExtensionManifestDeveloper] = js.native
+  var developer: js.UndefOr[WebExtensionManifestDeveloper] = js.undefined
   
-  var devtools_page: js.UndefOr[ExtensionURL] = js.native
+  var devtools_page: js.UndefOr[ExtensionURL] = js.undefined
   
-  var experiment_apis: js.UndefOr[StringDictionary[ExperimentAPI]] = js.native
+  var experiment_apis: js.UndefOr[StringDictionary[ExperimentAPI]] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var homepage_url: js.UndefOr[String] = js.native
+  var homepage_url: js.UndefOr[String] = js.undefined
   
-  var icons: js.UndefOr[WebExtensionManifestIcons] = js.native
+  var icons: js.UndefOr[WebExtensionManifestIcons] = js.undefined
   
-  var incognito: js.UndefOr[WebExtensionManifestIncognito] = js.native
+  var incognito: js.UndefOr[WebExtensionManifestIncognito] = js.undefined
   
-  var l10n_resources: js.UndefOr[js.Array[String]] = js.native
+  var l10n_resources: js.UndefOr[js.Array[String]] = js.undefined
   
-  var manifest_version: Double = js.native
+  var manifest_version: Double
   
-  var minimum_chrome_version: js.UndefOr[String] = js.native
+  var minimum_chrome_version: js.UndefOr[String] = js.undefined
   
-  var minimum_opera_version: js.UndefOr[String] = js.native
+  var minimum_opera_version: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var omnibox: js.UndefOr[WebExtensionManifestOmnibox] = js.native
+  var omnibox: js.UndefOr[WebExtensionManifestOmnibox] = js.undefined
   
-  var optional_permissions: js.UndefOr[js.Array[OptionalPermissionOrOrigin]] = js.native
+  var optional_permissions: js.UndefOr[js.Array[OptionalPermissionOrOrigin]] = js.undefined
   
-  var options_ui: js.UndefOr[WebExtensionManifestOptionsUi] = js.native
+  var options_ui: js.UndefOr[WebExtensionManifestOptionsUi] = js.undefined
   
-  var page_action: js.UndefOr[WebExtensionManifestPageAction] = js.native
+  var page_action: js.UndefOr[WebExtensionManifestPageAction] = js.undefined
   
-  var permissions: js.UndefOr[js.Array[PermissionOrOrigin]] = js.native
+  var permissions: js.UndefOr[js.Array[PermissionOrOrigin]] = js.undefined
   
   /** A list of protocol handler definitions. */
-  var protocol_handlers: js.UndefOr[js.Array[ProtocolHandler]] = js.native
+  var protocol_handlers: js.UndefOr[js.Array[ProtocolHandler]] = js.undefined
   
-  var short_name: js.UndefOr[String] = js.native
+  var short_name: js.UndefOr[String] = js.undefined
   
-  var sidebar_action: js.UndefOr[WebExtensionManifestSidebarAction] = js.native
+  var sidebar_action: js.UndefOr[WebExtensionManifestSidebarAction] = js.undefined
   
-  var telemetry: js.UndefOr[WebExtensionManifestTelemetry] = js.native
+  var telemetry: js.UndefOr[WebExtensionManifestTelemetry] = js.undefined
   
-  var theme_experiment: js.UndefOr[ThemeExperiment] = js.native
+  var theme_experiment: js.UndefOr[ThemeExperiment] = js.undefined
   
-  var user_scripts: js.UndefOr[WebExtensionManifestUserScripts] = js.native
+  var user_scripts: js.UndefOr[WebExtensionManifestUserScripts] = js.undefined
   
-  var version: String = js.native
+  var version: String
   
-  var web_accessible_resources: js.UndefOr[js.Array[String]] = js.native
+  var web_accessible_resources: js.UndefOr[js.Array[String]] = js.undefined
 }
 object WebExtensionManifest {
   

@@ -4,24 +4,23 @@ import typings.dndCore.dragOffsetMod.State
 import typings.dndCore.interfacesMod.XYCoord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coordsMod {
   
-  @JSImport("dnd-core/lib/utils/coords", "add")
+  @JSImport("dnd-core/lib/utils/coords", JSImport.Namespace)
   @js.native
-  def add(a: XYCoord, b: XYCoord): XYCoord = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("dnd-core/lib/utils/coords", "getDifferenceFromInitialOffset")
-  @js.native
-  def getDifferenceFromInitialOffset(state: State): XYCoord | Null = js.native
+  @scala.inline
+  def add(a: XYCoord, b: XYCoord): XYCoord = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[XYCoord]
   
-  @JSImport("dnd-core/lib/utils/coords", "getSourceClientOffset")
-  @js.native
-  def getSourceClientOffset(state: State): XYCoord | Null = js.native
+  @scala.inline
+  def getDifferenceFromInitialOffset(state: State): XYCoord | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDifferenceFromInitialOffset")(state.asInstanceOf[js.Any]).asInstanceOf[XYCoord | Null]
   
-  @JSImport("dnd-core/lib/utils/coords", "subtract")
-  @js.native
-  def subtract(a: XYCoord, b: XYCoord): XYCoord = js.native
+  @scala.inline
+  def getSourceClientOffset(state: State): XYCoord | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceClientOffset")(state.asInstanceOf[js.Any]).asInstanceOf[XYCoord | Null]
+  
+  @scala.inline
+  def subtract(a: XYCoord, b: XYCoord): XYCoord = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[XYCoord]
 }

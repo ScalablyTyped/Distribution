@@ -2,21 +2,19 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OffsetObject extends StObject {
   
   /**
     * Left distance to the page border.
     */
-  var left: Double = js.native
+  var left: Double
   
   /**
     * Top distance to the page border.
     */
-  var top: Double = js.native
+  var top: Double
 }
 object OffsetObject {
   

@@ -2,25 +2,23 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatabaseAccount extends StObject {
   
-  var ConsistencyPolicy: typings.documentdb.mod.ConsistencyPolicy = js.native
+  var ConsistencyPolicy: typings.documentdb.mod.ConsistencyPolicy
   
-  var CurrentMediaStorageUsageInMB: Double = js.native
+  var CurrentMediaStorageUsageInMB: Double
   
-  var DatabasesLink: String = js.native
+  var DatabasesLink: String
   
-  var MaxMediaStorageUsageInMB: Double = js.native
+  var MaxMediaStorageUsageInMB: Double
   
-  var MediaLink: String = js.native
+  var MediaLink: String
   
-  var ReadableLocations: js.Array[String] = js.native
+  var ReadableLocations: js.Array[String]
   
-  var WritableLocations: js.Array[String] = js.native
+  var WritableLocations: js.Array[String]
 }
 object DatabaseAccount {
   

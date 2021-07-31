@@ -4,19 +4,19 @@ import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FretHandFinger extends Modifier {
+trait FretHandFinger
+  extends StObject
+     with Modifier {
   
-  var finger: Double | String = js.native
+  var finger: Double | String
   
-  def setFretHandFinger(number: Double): FretHandFinger = js.native
+  def setFretHandFinger(number: Double): FretHandFinger
   
-  def setOffsetX(x: Double): FretHandFinger = js.native
+  def setOffsetX(x: Double): FretHandFinger
   
-  def setOffsetY(y: Double): FretHandFinger = js.native
+  def setOffsetY(y: Double): FretHandFinger
 }
 object FretHandFinger {
   

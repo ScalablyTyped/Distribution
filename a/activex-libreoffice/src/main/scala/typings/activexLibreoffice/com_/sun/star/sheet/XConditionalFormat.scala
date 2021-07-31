@@ -4,20 +4,20 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XConditionalFormat extends XIndexAccess {
+trait XConditionalFormat
+  extends StObject
+     with XIndexAccess {
   
   /**
     * Creates a new conditional format entry and insert its at the position.
     * @param Type a com.sun.star.sheet.ConditionFormatEntryType specifying the type of the new entry
     * @param Position the position in the conditional format
     */
-  def createEntry(Type: Double, Position: Double): Unit = js.native
+  def createEntry(Type: Double, Position: Double): Unit
   
-  def removeByIndex(Index: Double): Unit = js.native
+  def removeByIndex(Index: Double): Unit
 }
 object XConditionalFormat {
   

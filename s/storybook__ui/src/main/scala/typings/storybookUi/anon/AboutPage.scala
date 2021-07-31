@@ -2,45 +2,43 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AboutPage extends StObject {
   
-  var aboutPage: String = js.native
+  var aboutPage: String
   
-  var collapseAll: String = js.native
+  var collapseAll: String
   
-  var expandAll: String = js.native
+  var expandAll: String
   
-  var focusIframe: String = js.native
+  var focusIframe: String
   
-  var focusNav: String = js.native
+  var focusNav: String
   
-  var focusPanel: String = js.native
+  var focusPanel: String
   
-  var fullScreen: String = js.native
+  var fullScreen: String
   
-  var nextComponent: String = js.native
+  var nextComponent: String
   
-  var nextStory: String = js.native
+  var nextStory: String
   
-  var panelPosition: String = js.native
+  var panelPosition: String
   
-  var prevComponent: String = js.native
+  var prevComponent: String
   
-  var prevStory: String = js.native
+  var prevStory: String
   
-  var search: String = js.native
+  var search: String
   
-  var shortcutsPage: String = js.native
+  var shortcutsPage: String
   
-  var toggleNav: String = js.native
+  var toggleNav: String
   
-  var togglePanel: String = js.native
+  var togglePanel: String
   
-  var toolbar: String = js.native
+  var toolbar: String
 }
 object AboutPage {
   

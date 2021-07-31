@@ -2,15 +2,13 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reject extends StObject {
   
-  var reject: js.Function = js.native
+  var reject: js.Function
   
-  var resolve: js.Function = js.native
+  var resolve: js.Function
 }
 object Reject {
   

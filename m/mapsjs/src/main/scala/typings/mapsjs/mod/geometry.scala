@@ -4,15 +4,14 @@ import typings.mapsjs.anon.Distance
 import typings.mapsjs.anon.Idx
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapsjs", "geometry")
 @js.native
 class geometry () extends StObject {
   def this(isPath: Boolean) = this()
-  def this(isPath: js.UndefOr[scala.Nothing], isClosed: Boolean) = this()
   def this(isPath: Boolean, isClosed: Boolean) = this()
+  def this(isPath: Unit, isClosed: Boolean) = this()
   
   /**
     * Adds point to the last set in geometry's set collection. If the

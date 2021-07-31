@@ -3,71 +3,71 @@ package typings.vegaLite.transformMod
 import typings.vegaLite.channeldefMod.FieldName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DensityTransform extends Transform {
+trait DensityTransform
+  extends StObject
+     with Transform {
   
   /**
     * The output fields for the sample value and corresponding density estimate.
     *
     * __Default value:__ `["value", "density"]`
     */
-  var as: js.UndefOr[js.Tuple2[FieldName, FieldName]] = js.native
+  var as: js.UndefOr[js.Tuple2[FieldName, FieldName]] = js.undefined
   
   /**
     * The bandwidth (standard deviation) of the Gaussian kernel. If unspecified or set to zero, the bandwidth value is automatically estimated from the input data using Scott’s rule.
     */
-  var bandwidth: js.UndefOr[Double] = js.native
+  var bandwidth: js.UndefOr[Double] = js.undefined
   
   /**
     * A boolean flag indicating if the output values should be probability estimates (false) or smoothed counts (true).
     *
     * __Default value:__ `false`
     */
-  var counts: js.UndefOr[Boolean] = js.native
+  var counts: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A boolean flag indicating whether to produce density estimates (false) or cumulative density estimates (true).
     *
     * __Default value:__ `false`
     */
-  var cumulative: js.UndefOr[Boolean] = js.native
+  var cumulative: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The data field for which to perform density estimation.
     */
-  var density: FieldName = js.native
+  var density: FieldName
   
   /**
     * A [min, max] domain from which to sample the distribution. If unspecified, the extent will be determined by the observed minimum and maximum values of the density value field.
     */
-  var extent: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var extent: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
   /**
     * The data fields to group by. If not specified, a single group containing all data objects will be used.
     */
-  var groupby: js.UndefOr[js.Array[FieldName]] = js.native
+  var groupby: js.UndefOr[js.Array[FieldName]] = js.undefined
   
   /**
     * The maximum number of samples to take along the extent domain for plotting the density.
     *
     * __Default value:__ `200`
     */
-  var maxsteps: js.UndefOr[Double] = js.native
+  var maxsteps: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum number of samples to take along the extent domain for plotting the density.
     *
     * __Default value:__ `25`
     */
-  var minsteps: js.UndefOr[Double] = js.native
+  var minsteps: js.UndefOr[Double] = js.undefined
   
   /**
     * The exact number of samples to take along the extent domain for plotting the density. If specified, overrides both minsteps and maxsteps to set an exact number of uniform samples. Potentially useful in conjunction with a fixed extent to ensure consistent sample points for stacked densities.
     */
-  var steps: js.UndefOr[Double] = js.native
+  var steps: js.UndefOr[Double] = js.undefined
 }
 object DensityTransform {
   

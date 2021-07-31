@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendingOptions extends StObject {
   
   /**
     * If true, email sending is enabled for the configuration set. If false, email sending is disabled for the configuration set.
     */
-  var SendingEnabled: js.UndefOr[Enabled] = js.native
+  var SendingEnabled: js.UndefOr[Enabled] = js.undefined
 }
 object SendingOptions {
   

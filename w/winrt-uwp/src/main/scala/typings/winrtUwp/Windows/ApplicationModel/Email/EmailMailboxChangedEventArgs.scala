@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the deferral process. */
-@js.native
 trait EmailMailboxChangedEventArgs extends StObject {
   
   /**
     * Gets the deferral object.
     * @return The deferral object.
     */
-  def getDeferral(): EmailMailboxChangedDeferral = js.native
+  def getDeferral(): EmailMailboxChangedDeferral
 }
 object EmailMailboxChangedEventArgs {
   

@@ -6,16 +6,21 @@ import typings.vueInbrowserCompilerUtils.typesMod.BlockTag
 import typings.vueInbrowserCompilerUtils.typesMod.MethodDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object methodHandlerMod {
   
-  @JSImport("vue-docgen-api/dist/script-handlers/methodHandler", JSImport.Default)
+  @JSImport("vue-docgen-api/dist/script-handlers/methodHandler", JSImport.Namespace)
   @js.native
-  def default(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[_, _]): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vue-docgen-api/dist/script-handlers/methodHandler", "setMethodDescriptor")
-  @js.native
-  def setMethodDescriptor(methodDescriptor: MethodDescriptor, method: NodePath[Function, _], jsDocTags: js.Array[BlockTag]): MethodDescriptor = js.native
+  @scala.inline
+  def default(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def setMethodDescriptor(
+    methodDescriptor: MethodDescriptor,
+    method: NodePath[Function, js.Any],
+    jsDocTags: js.Array[BlockTag]
+  ): MethodDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("setMethodDescriptor")(methodDescriptor.asInstanceOf[js.Any], method.asInstanceOf[js.Any], jsDocTags.asInstanceOf[js.Any])).asInstanceOf[MethodDescriptor]
 }

@@ -2,20 +2,18 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedshiftMetadata extends StObject {
   
-  var DatabaseUserName: js.UndefOr[RedshiftDatabaseUsername] = js.native
+  var DatabaseUserName: js.UndefOr[RedshiftDatabaseUsername] = js.undefined
   
-  var RedshiftDatabase: js.UndefOr[typings.awsSdk.machinelearningMod.RedshiftDatabase] = js.native
+  var RedshiftDatabase: js.UndefOr[typings.awsSdk.machinelearningMod.RedshiftDatabase] = js.undefined
   
   /**
     *  The SQL query that is specified during CreateDataSourceFromRedshift. Returns only if Verbose is true in GetDataSourceInput. 
     */
-  var SelectSqlQuery: js.UndefOr[RedshiftSelectSqlQuery] = js.native
+  var SelectSqlQuery: js.UndefOr[RedshiftSelectSqlQuery] = js.undefined
 }
 object RedshiftMetadata {
   

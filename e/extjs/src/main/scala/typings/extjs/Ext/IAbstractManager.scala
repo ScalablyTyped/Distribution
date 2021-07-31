@@ -3,14 +3,14 @@ package typings.extjs.Ext
 import typings.extjs.Ext.util.IHashMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAbstractManager extends IBase {
+trait IAbstractManager
+  extends StObject
+     with IBase {
   
   /** [Property] (Ext.util.HashMap) */
-  var all: js.UndefOr[IHashMap] = js.native
+  var all: js.UndefOr[IHashMap] = js.undefined
   
   /** [Method] Creates and returns an instance of whatever this manager manages based on the supplied type and config object
     * @param config Object The config object
@@ -18,31 +18,35 @@ trait IAbstractManager extends IBase {
     * @returns Object The instance of whatever this manager is managing
     */
   var create: js.UndefOr[
-    js.Function2[/* config */ js.UndefOr[js.Any], /* defaultType */ js.UndefOr[java.lang.String], _]
-  ] = js.native
+    js.Function2[
+      /* config */ js.UndefOr[js.Any], 
+      /* defaultType */ js.UndefOr[java.lang.String], 
+      js.Any
+    ]
+  ] = js.undefined
   
   /** [Method] Executes the specified function once for each item in the collection
     * @param fn Function The function to execute.
     * @param scope Object The scope to execute in. Defaults to this.
     */
-  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.native
+  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Returns an item by id
     * @param id String The id of the item
     * @returns Object The item, undefined if not found.
     */
-  var get: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], _]] = js.native
+  var get: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], js.Any]] = js.undefined
   
   /** [Method] Gets the number of items in the collection
     * @returns Number The number of items in the collection.
     */
-  var getCount: js.UndefOr[js.Function0[Double]] = js.native
+  var getCount: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Checks if an item type is registered
     * @param type String The mnemonic string by which the class may be looked up
     * @returns Boolean Whether the type is registered.
     */
-  var isRegistered: js.UndefOr[js.Function1[/* type */ js.UndefOr[java.lang.String], Boolean]] = js.native
+  var isRegistered: js.UndefOr[js.Function1[/* type */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
   
   /** [Method] Registers a function that will be called when an item with the specified id is added to the manager
     * @param id String The item id
@@ -56,12 +60,12 @@ trait IAbstractManager extends IBase {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Registers an item to be managed
     * @param item Object The item to register
     */
-  var register: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
+  var register: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Registers a new item constructor keyed by a type key
     * @param type String The mnemonic string by which the class may be looked up.
@@ -69,12 +73,12 @@ trait IAbstractManager extends IBase {
     */
   var registerType: js.UndefOr[
     js.Function2[/* type */ js.UndefOr[java.lang.String], /* cls */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Unregisters an item by removing it from this manager
     * @param item Object The item to unregister
     */
-  var unregister: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
+  var unregister: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object IAbstractManager {
   
@@ -94,7 +98,7 @@ object IAbstractManager {
     def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def setCreate(value: (/* config */ js.UndefOr[js.Any], /* defaultType */ js.UndefOr[java.lang.String]) => _): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    def setCreate(value: (/* config */ js.UndefOr[js.Any], /* defaultType */ js.UndefOr[java.lang.String]) => js.Any): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
     @scala.inline
     def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
@@ -106,7 +110,7 @@ object IAbstractManager {
     def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
     @scala.inline
-    def setGet(value: /* id */ js.UndefOr[java.lang.String] => _): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    def setGet(value: /* id */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))

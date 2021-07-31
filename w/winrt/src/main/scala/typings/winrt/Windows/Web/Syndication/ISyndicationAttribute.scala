@@ -2,17 +2,15 @@ package typings.winrt.Windows.Web.Syndication
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISyndicationAttribute extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var namespace: String = js.native
+  var namespace: String
   
-  var value: String = js.native
+  var value: String
 }
 object ISyndicationAttribute {
   

@@ -6,7 +6,6 @@ import typings.instagramPrivateApi.tagFeedResponseMod.TagFeedResponse
 import typings.instagramPrivateApi.tagFeedResponseMod.TagFeedResponseItemsItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagFeedMod {

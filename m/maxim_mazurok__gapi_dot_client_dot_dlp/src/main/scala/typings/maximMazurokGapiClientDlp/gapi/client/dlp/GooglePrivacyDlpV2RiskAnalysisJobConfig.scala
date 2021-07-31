@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2RiskAnalysisJobConfig extends StObject {
   
   /** Actions to execute at the completion of the job. Are executed in the order provided. */
-  var actions: js.UndefOr[js.Array[GooglePrivacyDlpV2Action]] = js.native
+  var actions: js.UndefOr[js.Array[GooglePrivacyDlpV2Action]] = js.undefined
   
   /** Privacy metric to compute. */
-  var privacyMetric: js.UndefOr[GooglePrivacyDlpV2PrivacyMetric] = js.native
+  var privacyMetric: js.UndefOr[GooglePrivacyDlpV2PrivacyMetric] = js.undefined
   
   /** Input dataset to compute metrics over. */
-  var sourceTable: js.UndefOr[GooglePrivacyDlpV2BigQueryTable] = js.native
+  var sourceTable: js.UndefOr[GooglePrivacyDlpV2BigQueryTable] = js.undefined
 }
 object GooglePrivacyDlpV2RiskAnalysisJobConfig {
   

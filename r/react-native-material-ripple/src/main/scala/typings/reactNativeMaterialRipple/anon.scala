@@ -30,212 +30,210 @@ import typings.reactNativeMaterialRipple.reactNativeMaterialRippleStrings.radiob
 import typings.reactNativeMaterialRipple.reactNativeMaterialRippleStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined react-native.react-native.Animated.AnimatedProps<react-native.react-native.ViewProps> */
-  @js.native
   trait AnimatedPropsViewProps extends StObject {
     
     var accessibilityActions: js.UndefOr[
         WithAnimatedValue[js.UndefOr[js.Array[AccessibilityActionInfo]]] | js.Array[AccessibilityActionInfo] | TAugmentRef[js.UndefOr[js.Array[AccessibilityActionInfo]]]
-      ] = js.native
+      ] = js.undefined
     
     var accessibilityComponentType: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]) | none | button | radiobutton_checked | radiobutton_unchecked | (TAugmentRef[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]])
-      ] = js.native
+      ] = js.undefined
     
     var accessibilityElementsHidden: js.UndefOr[
         WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
-    var accessibilityHint: js.UndefOr[WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]] = js.native
+    var accessibilityHint: js.UndefOr[WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]] = js.undefined
     
     var accessibilityIgnoresInvertColors: js.UndefOr[
         WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
-    var accessibilityLabel: js.UndefOr[WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]] = js.native
+    var accessibilityLabel: js.UndefOr[WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]] = js.undefined
     
     var accessibilityLiveRegion: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[none | polite | assertive]]) | none | polite | assertive | (TAugmentRef[js.UndefOr[none | polite | assertive]])
-      ] = js.native
+      ] = js.undefined
     
     var accessibilityRole: js.UndefOr[
         WithAnimatedValue[js.UndefOr[AccessibilityRole]] | AccessibilityRole | TAugmentRef[js.UndefOr[AccessibilityRole]]
-      ] = js.native
+      ] = js.undefined
     
     var accessibilityState: js.UndefOr[
         WithAnimatedValue[js.UndefOr[AccessibilityState]] | AccessibilityState | TAugmentRef[js.UndefOr[AccessibilityState]]
-      ] = js.native
+      ] = js.undefined
     
     var accessibilityTraits: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]) | AccessibilityTrait | js.Array[AccessibilityTrait] | (TAugmentRef[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]])
-      ] = js.native
+      ] = js.undefined
     
     var accessibilityValue: js.UndefOr[
         WithAnimatedValue[js.UndefOr[AccessibilityValue]] | AccessibilityValue | TAugmentRef[js.UndefOr[AccessibilityValue]]
-      ] = js.native
+      ] = js.undefined
     
     var accessibilityViewIsModal: js.UndefOr[
         WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
     var accessible: js.UndefOr[
         WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
     var collapsable: js.UndefOr[
         WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
     var focusable: js.UndefOr[
         WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
     var hasTVPreferredFocus: js.UndefOr[
         WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
-    var hitSlop: js.UndefOr[WithAnimatedValue[js.UndefOr[Insets]] | Insets | TAugmentRef[js.UndefOr[Insets]]] = js.native
+    var hitSlop: js.UndefOr[WithAnimatedValue[js.UndefOr[Insets]] | Insets | TAugmentRef[js.UndefOr[Insets]]] = js.undefined
     
     var importantForAccessibility: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[auto | yes | no | `no-hide-descendants`]]) | auto | yes | no | `no-hide-descendants` | (TAugmentRef[js.UndefOr[auto | yes | no | `no-hide-descendants`]])
-      ] = js.native
+      ] = js.undefined
     
     var isTVSelectable: js.UndefOr[
         WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
-    var nativeID: js.UndefOr[WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]] = js.native
+    var nativeID: js.UndefOr[WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]] = js.undefined
     
     var needsOffscreenAlphaCompositing: js.UndefOr[
         WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
     var onAccessibilityAction: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]]) | (js.Function1[/* event */ AccessibilityActionEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]])
-      ] = js.native
+      ] = js.undefined
     
     var onAccessibilityEscape: js.UndefOr[
         WithAnimatedValue[js.UndefOr[js.Function0[Unit]]] | js.Function0[Unit] | TAugmentRef[js.UndefOr[js.Function0[Unit]]]
-      ] = js.native
+      ] = js.undefined
     
     var onAccessibilityTap: js.UndefOr[
         WithAnimatedValue[js.UndefOr[js.Function0[Unit]]] | js.Function0[Unit] | TAugmentRef[js.UndefOr[js.Function0[Unit]]]
-      ] = js.native
+      ] = js.undefined
     
     var onLayout: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]]) | (js.Function1[/* event */ LayoutChangeEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]])
-      ] = js.native
+      ] = js.undefined
     
     var onMagicTap: js.UndefOr[
         WithAnimatedValue[js.UndefOr[js.Function0[Unit]]] | js.Function0[Unit] | TAugmentRef[js.UndefOr[js.Function0[Unit]]]
-      ] = js.native
+      ] = js.undefined
     
     var onMoveShouldSetResponder: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]) | (js.Function1[/* event */ GestureResponderEvent, Boolean]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]])
-      ] = js.native
+      ] = js.undefined
     
     var onMoveShouldSetResponderCapture: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]) | (js.Function1[/* event */ GestureResponderEvent, Boolean]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]])
-      ] = js.native
+      ] = js.undefined
     
     var onResponderEnd: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
-      ] = js.native
+      ] = js.undefined
     
     var onResponderGrant: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
-      ] = js.native
+      ] = js.undefined
     
     var onResponderMove: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
-      ] = js.native
+      ] = js.undefined
     
     var onResponderReject: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
-      ] = js.native
+      ] = js.undefined
     
     var onResponderRelease: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
-      ] = js.native
+      ] = js.undefined
     
     var onResponderStart: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
-      ] = js.native
+      ] = js.undefined
     
     var onResponderTerminate: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
-      ] = js.native
+      ] = js.undefined
     
     var onResponderTerminationRequest: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]) | (js.Function1[/* event */ GestureResponderEvent, Boolean]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]])
-      ] = js.native
+      ] = js.undefined
     
     var onStartShouldSetResponder: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]) | (js.Function1[/* event */ GestureResponderEvent, Boolean]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]])
-      ] = js.native
+      ] = js.undefined
     
     var onStartShouldSetResponderCapture: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]) | (js.Function1[/* event */ GestureResponderEvent, Boolean]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]])
-      ] = js.native
+      ] = js.undefined
     
     var onTouchCancel: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
-      ] = js.native
+      ] = js.undefined
     
     var onTouchEnd: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
-      ] = js.native
+      ] = js.undefined
     
     var onTouchEndCapture: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
-      ] = js.native
+      ] = js.undefined
     
     var onTouchMove: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
-      ] = js.native
+      ] = js.undefined
     
     var onTouchStart: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
-      ] = js.native
+      ] = js.undefined
     
     var pointerEvents: js.UndefOr[
         (WithAnimatedValue[js.UndefOr[`box-none` | none | `box-only` | auto]]) | `box-none` | none | `box-only` | auto | (TAugmentRef[js.UndefOr[`box-none` | none | `box-only` | auto]])
-      ] = js.native
+      ] = js.undefined
     
     var removeClippedSubviews: js.UndefOr[
         WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
     var renderToHardwareTextureAndroid: js.UndefOr[
         WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
     var shouldRasterizeIOS: js.UndefOr[
         WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
     var style: js.UndefOr[
         WithAnimatedValue[js.UndefOr[StyleProp[ViewStyle]]] | StyleProp[ViewStyle] | TAugmentRef[js.UndefOr[StyleProp[ViewStyle]]]
-      ] = js.native
+      ] = js.undefined
     
-    var testID: js.UndefOr[WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]] = js.native
+    var testID: js.UndefOr[WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]] = js.undefined
     
-    var tvParallaxMagnification: js.UndefOr[WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]] = js.native
+    var tvParallaxMagnification: js.UndefOr[WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]] = js.undefined
     
     var tvParallaxProperties: js.UndefOr[
         WithAnimatedValue[js.UndefOr[TVParallaxProperties]] | TVParallaxProperties | TAugmentRef[js.UndefOr[TVParallaxProperties]]
-      ] = js.native
+      ] = js.undefined
     
-    var tvParallaxShiftDistanceX: js.UndefOr[WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]] = js.native
+    var tvParallaxShiftDistanceX: js.UndefOr[WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]] = js.undefined
     
-    var tvParallaxShiftDistanceY: js.UndefOr[WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]] = js.native
+    var tvParallaxShiftDistanceY: js.UndefOr[WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]] = js.undefined
     
-    var tvParallaxTiltAngle: js.UndefOr[WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]] = js.native
+    var tvParallaxTiltAngle: js.UndefOr[WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]] = js.undefined
   }
   object AnimatedPropsViewProps {
     
@@ -979,30 +977,29 @@ object anon {
     }
   }
   
-  @js.native
   trait Disabled extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     var onRippleAnimation: js.UndefOr[
         js.Function2[/* animation */ CompositeAnimation, /* callback */ js.Function0[Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var rippleCentered: js.UndefOr[Boolean] = js.native
+    var rippleCentered: js.UndefOr[Boolean] = js.undefined
     
-    var rippleColor: js.UndefOr[String] = js.native
+    var rippleColor: js.UndefOr[String] = js.undefined
     
-    var rippleContainerBorderRadius: js.UndefOr[Double] = js.native
+    var rippleContainerBorderRadius: js.UndefOr[Double] = js.undefined
     
-    var rippleDuration: js.UndefOr[Double] = js.native
+    var rippleDuration: js.UndefOr[Double] = js.undefined
     
-    var rippleFades: js.UndefOr[Boolean] = js.native
+    var rippleFades: js.UndefOr[Boolean] = js.undefined
     
-    var rippleOpacity: js.UndefOr[Double] = js.native
+    var rippleOpacity: js.UndefOr[Double] = js.undefined
     
-    var rippleSequential: js.UndefOr[Boolean] = js.native
+    var rippleSequential: js.UndefOr[Boolean] = js.undefined
     
-    var rippleSize: js.UndefOr[Double] = js.native
+    var rippleSize: js.UndefOr[Double] = js.undefined
   }
   object Disabled {
     

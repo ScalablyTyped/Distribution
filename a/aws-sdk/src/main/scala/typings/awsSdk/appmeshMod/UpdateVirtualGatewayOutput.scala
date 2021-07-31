@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateVirtualGatewayOutput extends StObject {
   
   /**
     * A full description of the virtual gateway that was updated.
     */
-  var virtualGateway: VirtualGatewayData = js.native
+  var virtualGateway: VirtualGatewayData
 }
 object UpdateVirtualGatewayOutput {
   

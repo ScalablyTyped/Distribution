@@ -8,7 +8,6 @@ import typings.jsforce.topicMod.Topic
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object streamingMod {
@@ -21,7 +20,7 @@ object streamingMod {
     def channel(channelId: String): Channel = js.native
     
     def createClient(): js.Any = js.native
-    def createClient(extensions: js.Array[_]): js.Any = js.native
+    def createClient(extensions: js.Array[js.Any]): js.Any = js.native
     
     def subscribe(name: String, listener: StreamingMessage): js.Any = js.native
     
@@ -36,7 +35,7 @@ object streamingMod {
     @JSImport("jsforce/streaming", "StreamingExtension.AuthFailure")
     @js.native
     class AuthFailure protected () extends StObject {
-      def this(failureCallback: js.Function0[_]) = this()
+      def this(failureCallback: js.Function0[js.Any]) = this()
     }
     
     @JSImport("jsforce/streaming", "StreamingExtension.Replay")
@@ -46,17 +45,16 @@ object streamingMod {
     }
   }
   
-  @js.native
   trait StreamingMessage extends StObject {
     
-    var event: CreatedDate = js.native
+    var event: CreatedDate
     
-    var sobject: Record[_] = js.native
+    var sobject: Record[js.Any]
   }
   object StreamingMessage {
     
     @scala.inline
-    def apply(event: CreatedDate, sobject: Record[_]): StreamingMessage = {
+    def apply(event: CreatedDate, sobject: Record[js.Any]): StreamingMessage = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], sobject = sobject.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamingMessage]
     }
@@ -68,7 +66,7 @@ object streamingMod {
       def setEvent(value: CreatedDate): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSobject(value: Record[_]): Self = StObject.set(x, "sobject", value.asInstanceOf[js.Any])
+      def setSobject(value: Record[js.Any]): Self = StObject.set(x, "sobject", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -2,10 +2,8 @@ package typings.servicenowLondon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScopedElementDescriptor extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait ScopedElementDescriptor extends StObject {
     * gs.info(isEdge);
     * // null
     */
-  def getAttachmentEncryptionType(): String = js.native
+  def getAttachmentEncryptionType(): String
   
   /**
     * Returns the element's encryption type.
@@ -44,7 +42,7 @@ trait ScopedElementDescriptor extends StObject {
     * gs.info(isEdge);
     * // null
     */
-  def getEncryptionType(): String = js.native
+  def getEncryptionType(): String
   
   /**
     * Returns the element's internal data type.
@@ -61,7 +59,7 @@ trait ScopedElementDescriptor extends StObject {
     * var isEdge = ed.getInternalType();
     * gs.info(isEdge);
     */
-  def getInternalType(): String = js.native
+  def getInternalType(): String
   
   /**
     * Returns the element's label.
@@ -79,7 +77,7 @@ trait ScopedElementDescriptor extends StObject {
     * gs.info(isEdge);
     * // Priority
     */
-  def getLabel(): String = js.native
+  def getLabel(): String
   
   /**
     * Returns the element's length.
@@ -97,7 +95,7 @@ trait ScopedElementDescriptor extends StObject {
     * gs.info(isEdge);
     * // 40
     */
-  def getLength(): Double = js.native
+  def getLength(): Double
   
   /**
     * Returns the element's name.
@@ -115,7 +113,7 @@ trait ScopedElementDescriptor extends StObject {
     * gs.info(isEdge);
     * // priority
     */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * Returns the element's plural label.
@@ -129,7 +127,7 @@ trait ScopedElementDescriptor extends StObject {
     * gs.info(ed.getPlural());
     * // Incidents
     */
-  def getPlural(): String = js.native
+  def getPlural(): String
   
   /**
     * Returns true if an encrypted attachment has been added to the table.
@@ -147,7 +145,7 @@ trait ScopedElementDescriptor extends StObject {
     * gs.info(isEdge);
     * // false
     */
-  def hasAttachmentsEncrypted(): Boolean = js.native
+  def hasAttachmentsEncrypted(): Boolean
   
   /**
     * Returns true if the element is an automatically generated or system field.
@@ -164,7 +162,7 @@ trait ScopedElementDescriptor extends StObject {
     * gs.info(isEdge);
     * // false
     */
-  def isAutoOrSysID(): Boolean = js.native
+  def isAutoOrSysID(): Boolean
   
   /**
     * Returns true if the element is defined as a dropdown choice in its dictionary
@@ -185,7 +183,7 @@ trait ScopedElementDescriptor extends StObject {
     * gs.info(isChoiceTable);
     * // true
     */
-  def isChoiceTable(): Boolean = js.native
+  def isChoiceTable(): Boolean
   
   /**
     * Returns true if an element is encrypted.
@@ -203,7 +201,7 @@ trait ScopedElementDescriptor extends StObject {
     * gs.info(isEdge)
     * // false
     */
-  def isEdgeEncrypted(): Boolean = js.native
+  def isEdgeEncrypted(): Boolean
   
   /**
     * Returns true if the element is a virtual element.
@@ -224,7 +222,7 @@ trait ScopedElementDescriptor extends StObject {
     * gs.info(isVirtual);
     * // false
     */
-  def isVirtual(): Boolean = js.native
+  def isVirtual(): Boolean
 }
 object ScopedElementDescriptor {
   

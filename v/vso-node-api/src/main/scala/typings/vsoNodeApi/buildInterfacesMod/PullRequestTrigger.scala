@@ -2,15 +2,15 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PullRequestTrigger extends BuildTrigger {
+trait PullRequestTrigger
+  extends StObject
+     with BuildTrigger {
   
-  var branchFilters: js.Array[String] = js.native
+  var branchFilters: js.Array[String]
   
-  var forks: Forks = js.native
+  var forks: Forks
 }
 object PullRequestTrigger {
   

@@ -4,21 +4,19 @@ import typings.winrtUwp.Windows.Data.Text.TextSegment
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details about why search results matched the query parameters. */
-@js.native
 trait ContactMatchReason extends StObject {
   
   /** Gets the contact field type that matched the search, such as name, phone number, email address and so on. */
-  var field: ContactMatchReasonKind = js.native
+  var field: ContactMatchReasonKind
   
   /** Gets a list of matching TextSegment objects which tells you what to highlight in your view as the result of a contact search. */
-  var segments: IVectorView[TextSegment] = js.native
+  var segments: IVectorView[TextSegment]
   
   /** Gets the matching text result from a contact search. */
-  var text: String = js.native
+  var text: String
 }
 object ContactMatchReason {
   

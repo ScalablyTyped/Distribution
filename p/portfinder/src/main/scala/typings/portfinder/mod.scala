@@ -3,7 +3,6 @@ package typings.portfinder
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,40 +17,34 @@ object mod {
   @scala.inline
   def basePort_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("basePort")(x.asInstanceOf[js.Any])
   
-  @JSImport("portfinder", "getPort")
-  @js.native
-  def getPort(callback: PortfinderCallback): Unit = js.native
-  @JSImport("portfinder", "getPort")
-  @js.native
-  def getPort(options: PortFinderOptions, callback: PortfinderCallback): Unit = js.native
+  @scala.inline
+  def getPort(callback: PortfinderCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPort")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getPort(options: PortFinderOptions, callback: PortfinderCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPort")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("portfinder", "getPortPromise")
-  @js.native
-  def getPortPromise(): js.Promise[Double] = js.native
-  @JSImport("portfinder", "getPortPromise")
-  @js.native
-  def getPortPromise(options: PortFinderOptions): js.Promise[Double] = js.native
+  @scala.inline
+  def getPortPromise(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPortPromise")().asInstanceOf[js.Promise[Double]]
+  @scala.inline
+  def getPortPromise(options: PortFinderOptions): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPortPromise")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   
-  @JSImport("portfinder", "getPorts")
-  @js.native
+  @scala.inline
   def getPorts(
     count: Double,
     options: PortFinderOptions,
     callback: js.Function2[/* err */ Error, /* ports */ js.Array[Double], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPorts")(count.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait PortFinderOptions extends StObject {
     
     /**
       * Host to find available port on.
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * Minimum port (takes precedence over `basePort`).
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * search start port (equals to port when not provided)
@@ -59,12 +52,12 @@ object mod {
       * recursive calls and doesn't have a way to retrieve begininng port while
       * searching.
       */
-    var startPort: js.UndefOr[Double] = js.native
+    var startPort: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum port
       */
-    var stopPort: js.UndefOr[Double] = js.native
+    var stopPort: js.UndefOr[Double] = js.undefined
   }
   object PortFinderOptions {
     

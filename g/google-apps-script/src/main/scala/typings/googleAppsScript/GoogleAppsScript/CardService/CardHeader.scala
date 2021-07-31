@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,18 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setImageStyle(CardService.ImageStyle.CIRCLE)
   *         .setImageUrl("https://image.png");
   */
-@js.native
 trait CardHeader extends StObject {
   
-  def setImageAltText(imageAltText: String): CardHeader = js.native
+  def setImageAltText(imageAltText: String): CardHeader
   
-  def setImageStyle(imageStyle: ImageStyle): CardHeader = js.native
+  def setImageStyle(imageStyle: ImageStyle): CardHeader
   
-  def setImageUrl(imageUrl: String): CardHeader = js.native
+  def setImageUrl(imageUrl: String): CardHeader
   
-  def setSubtitle(subtitle: String): CardHeader = js.native
+  def setSubtitle(subtitle: String): CardHeader
   
-  def setTitle(title: String): CardHeader = js.native
+  def setTitle(title: String): CardHeader
 }
 object CardHeader {
   

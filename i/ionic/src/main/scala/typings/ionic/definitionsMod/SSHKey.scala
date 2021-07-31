@@ -2,25 +2,23 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SSHKey extends StObject {
   
-  var annotation: String = js.native
+  var annotation: String
   
-  var created: String = js.native
+  var created: String
   
-  var fingerprint: String = js.native
+  var fingerprint: String
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var pubkey: String = js.native
+  var pubkey: String
   
-  var updated: String = js.native
+  var updated: String
 }
 object SSHKey {
   

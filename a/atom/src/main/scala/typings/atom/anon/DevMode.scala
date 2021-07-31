@@ -2,19 +2,17 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DevMode extends StObject {
   
-  var devMode: js.UndefOr[Boolean] = js.native
+  var devMode: js.UndefOr[Boolean] = js.undefined
   
-  var newWindow: js.UndefOr[Boolean] = js.native
+  var newWindow: js.UndefOr[Boolean] = js.undefined
   
-  var pathsToOpen: js.Array[String] = js.native
+  var pathsToOpen: js.Array[String]
   
-  var safeMode: js.UndefOr[Boolean] = js.native
+  var safeMode: js.UndefOr[Boolean] = js.undefined
 }
 object DevMode {
   

@@ -5,17 +5,17 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISyndicationCategory extends ISyndicationNode {
+trait ISyndicationCategory
+  extends StObject
+     with ISyndicationNode {
   
-  var label: String = js.native
+  var label: String
   
-  var scheme: String = js.native
+  var scheme: String
   
-  var term: String = js.native
+  var term: String
 }
 object ISyndicationCategory {
   

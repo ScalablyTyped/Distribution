@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigSnapshotDeliveryProperties extends StObject {
   
   /**
     * The frequency with which AWS Config delivers configuration snapshots.
     */
-  var deliveryFrequency: js.UndefOr[MaximumExecutionFrequency] = js.native
+  var deliveryFrequency: js.UndefOr[MaximumExecutionFrequency] = js.undefined
 }
 object ConfigSnapshotDeliveryProperties {
   

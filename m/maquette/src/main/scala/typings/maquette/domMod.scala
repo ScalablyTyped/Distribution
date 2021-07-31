@@ -6,7 +6,6 @@ import typings.maquette.interfacesMod.VNode
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domMod {
@@ -23,6 +22,10 @@ object domMod {
   
   object dom {
     
+    @JSImport("maquette/dist/dom", "dom")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Appends a new child node to the DOM which is generated from a [[VNode]].
       * This is a low-level method. Users will typically use a [[Projector]] instead.
@@ -32,12 +35,10 @@ object domMod {
       * @param projectionOptions - Options to be used to create and update the [[Projection]].
       * @returns The [[Projection]] that was created.
       */
-    @JSImport("maquette/dist/dom", "dom.append")
-    @js.native
-    def append(parentNode: Element, vnode: VNode): Projection = js.native
-    @JSImport("maquette/dist/dom", "dom.append")
-    @js.native
-    def append(parentNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
+    @scala.inline
+    def append(parentNode: Element, vnode: VNode): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(parentNode.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[Projection]
+    @scala.inline
+    def append(parentNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(parentNode.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
     
     /**
       * Creates a real DOM tree from `vnode`. The [[Projection]] object returned will contain the resulting DOM Node in
@@ -48,12 +49,10 @@ object domMod {
       * @param projectionOptions - Options to be used to create and update the projection.
       * @returns The [[Projection]] which also contains the DOM Node that was created.
       */
-    @JSImport("maquette/dist/dom", "dom.create")
-    @js.native
-    def create(vnode: VNode): Projection = js.native
-    @JSImport("maquette/dist/dom", "dom.create")
-    @js.native
-    def create(vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
+    @scala.inline
+    def create(vnode: VNode): Projection = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(vnode.asInstanceOf[js.Any]).asInstanceOf[Projection]
+    @scala.inline
+    def create(vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
     
     /**
       * Inserts a new DOM node which is generated from a [[VNode]].
@@ -64,12 +63,10 @@ object domMod {
       * @param projectionOptions - Options to be used to create and update the projection, see [[createProjector]].
       * @returns The [[Projection]] that was created.
       */
-    @JSImport("maquette/dist/dom", "dom.insertBefore")
-    @js.native
-    def insertBefore(beforeNode: Element, vnode: VNode): Projection = js.native
-    @JSImport("maquette/dist/dom", "dom.insertBefore")
-    @js.native
-    def insertBefore(beforeNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
+    @scala.inline
+    def insertBefore(beforeNode: Element, vnode: VNode): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(beforeNode.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[Projection]
+    @scala.inline
+    def insertBefore(beforeNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(beforeNode.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
     
     /**
       * Merges a new DOM node which is generated from a [[VNode]] with an existing DOM Node.
@@ -82,12 +79,10 @@ object domMod {
       * @param projectionOptions - Options to be used to create and update the projection, see [[createProjector]].
       * @returns The [[Projection]] that was created.
       */
-    @JSImport("maquette/dist/dom", "dom.merge")
-    @js.native
-    def merge(element: Element, vnode: VNode): Projection = js.native
-    @JSImport("maquette/dist/dom", "dom.merge")
-    @js.native
-    def merge(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
+    @scala.inline
+    def merge(element: Element, vnode: VNode): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(element.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[Projection]
+    @scala.inline
+    def merge(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(element.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
     
     /**
       * Replaces an existing DOM node with a node generated from a [[VNode]].
@@ -98,11 +93,9 @@ object domMod {
       * @param projectionOptions - Options to be used to create and update the [[Projection]].
       * @returns The [[Projection]] that was created.
       */
-    @JSImport("maquette/dist/dom", "dom.replace")
-    @js.native
-    def replace(element: Element, vnode: VNode): Projection = js.native
-    @JSImport("maquette/dist/dom", "dom.replace")
-    @js.native
-    def replace(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
+    @scala.inline
+    def replace(element: Element, vnode: VNode): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(element.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[Projection]
+    @scala.inline
+    def replace(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(element.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
   }
 }

@@ -2,21 +2,19 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyValueDifferFactory extends StObject {
   
   /**
     * Create a `KeyValueDiffer`.
     */
-  def create[K, V](): KeyValueDiffer[K, V] = js.native
+  def create[K, V](): KeyValueDiffer[K, V]
   
   /**
     * Test to see if the differ knows how to diff this kind of object.
     */
-  def supports(objects: js.Any): Boolean = js.native
+  def supports(objects: js.Any): Boolean
 }
 object KeyValueDifferFactory {
   

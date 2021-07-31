@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PollForThirdPartyJobsOutput extends StObject {
   
   /**
     * Information about the jobs to take action on.
     */
-  var jobs: js.UndefOr[ThirdPartyJobList] = js.native
+  var jobs: js.UndefOr[ThirdPartyJobList] = js.undefined
 }
 object PollForThirdPartyJobsOutput {
   

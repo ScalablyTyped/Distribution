@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMacieSessionRequest extends StObject {
   
   /**
     * Specifies how often to publish updates to policy findings for the account. This includes publishing updates to AWS Security Hub and Amazon EventBridge (formerly called Amazon CloudWatch Events).
     */
-  var findingPublishingFrequency: js.UndefOr[FindingPublishingFrequency] = js.native
+  var findingPublishingFrequency: js.UndefOr[FindingPublishingFrequency] = js.undefined
   
   /**
     * Specifies whether to change the status of the account. Valid values are: ENABLED, resume all Amazon Macie activities for the account; and, PAUSED, suspend all Macie activities for the account.
     */
-  var status: js.UndefOr[MacieStatus] = js.native
+  var status: js.UndefOr[MacieStatus] = js.undefined
 }
 object UpdateMacieSessionRequest {
   

@@ -11,8 +11,8 @@ Load detection and shedding capabilities for http, express, restify and koa
 | Full name          | overload-protection |
 | Keywords           | load shedding, overload protection, production monitoring, 503, Service Unavailable, Server Unavailable, HTTP 503, heavy load, load, protection, shedding, express, fastify, http, koa, restify |
 | # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 529256 |
+| # dependents       | 4 |
+| # downloads        | 581865 |
 | # stars            | 1 |
 
 ## Links

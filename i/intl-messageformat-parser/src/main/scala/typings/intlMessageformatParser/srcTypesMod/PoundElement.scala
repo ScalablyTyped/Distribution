@@ -3,15 +3,15 @@ package typings.intlMessageformatParser.srcTypesMod
 import typings.intlMessageformatParser.srcTypesMod.TYPE.pound
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PoundElement extends _MessageFormatElement {
+trait PoundElement
+  extends StObject
+     with _MessageFormatElement {
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var `type`: pound = js.native
+  var `type`: pound
 }
 object PoundElement {
   

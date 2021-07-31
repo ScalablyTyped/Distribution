@@ -4,25 +4,25 @@ import typings.node.Buffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResponseDefinition extends PropertyDefinition {
+trait ResponseDefinition
+  extends StObject
+     with PropertyDefinition {
   
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
-  var code: Double = js.native
+  var code: Double
   
-  var cookie: js.UndefOr[js.Array[CookieDefinition]] = js.native
+  var cookie: js.UndefOr[js.Array[CookieDefinition]] = js.undefined
   
-  var header: js.UndefOr[js.Array[HeaderDefinition]] = js.native
+  var header: js.UndefOr[js.Array[HeaderDefinition]] = js.undefined
   
-  var originalRequest: js.UndefOr[RequestDefinition] = js.native
+  var originalRequest: js.UndefOr[RequestDefinition] = js.undefined
   
-  var responseTime: Double = js.native
+  var responseTime: Double
   
-  var stream: js.UndefOr[Buffer | Uint8Array] = js.native
+  var stream: js.UndefOr[Buffer | Uint8Array] = js.undefined
 }
 object ResponseDefinition {
   

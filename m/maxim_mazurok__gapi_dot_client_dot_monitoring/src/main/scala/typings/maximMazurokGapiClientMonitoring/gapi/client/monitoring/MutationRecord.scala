@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MutationRecord extends StObject {
   
   /** When the change occurred. */
-  var mutateTime: js.UndefOr[String] = js.native
+  var mutateTime: js.UndefOr[String] = js.undefined
   
   /** The email address of the user making the change. */
-  var mutatedBy: js.UndefOr[String] = js.native
+  var mutatedBy: js.UndefOr[String] = js.undefined
 }
 object MutationRecord {
   

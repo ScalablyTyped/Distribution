@@ -2,10 +2,8 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteEventStream extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait WriteEventStream extends StObject {
     For a Kinesis Data Firehose delivery stream, the ARN format is: arn:aws:firehose:region:account-id:deliverystream/stream_name
     
     */
-  var DestinationStreamArn: string = js.native
+  var DestinationStreamArn: string
   
   /**
     * The AWS Identity and Access Management (IAM) role that authorizes Amazon Pinpoint to publish event data to the stream in your AWS account.
     */
-  var RoleArn: string = js.native
+  var RoleArn: string
 }
 object WriteEventStream {
   

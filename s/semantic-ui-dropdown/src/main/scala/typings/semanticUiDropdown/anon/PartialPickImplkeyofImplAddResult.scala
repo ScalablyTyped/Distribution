@@ -2,20 +2,18 @@ package typings.semanticUiDropdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.MessageSettings._Impl, keyof semantic-ui-dropdown.SemanticUI.Dropdown.MessageSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplAddResult extends StObject {
   
-  var addResult: js.UndefOr[String] = js.native
+  var addResult: js.UndefOr[String] = js.undefined
   
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
-  var maxSelections: js.UndefOr[String] = js.native
+  var maxSelections: js.UndefOr[String] = js.undefined
   
-  var noResults: js.UndefOr[String] = js.native
+  var noResults: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplAddResult {
   

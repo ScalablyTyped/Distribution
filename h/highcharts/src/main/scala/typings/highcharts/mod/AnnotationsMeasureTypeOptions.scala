@@ -2,52 +2,50 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsMeasureTypeOptions extends StObject {
   
-  var background: js.UndefOr[AnnotationsMeasureTypeBackgroundOptions] = js.native
+  var background: js.UndefOr[AnnotationsMeasureTypeBackgroundOptions] = js.undefined
   
   /**
     * (Highstock) Configure a crosshair that is horizontally placed in middle
     * of rectangle.
     */
-  var crosshairX: js.UndefOr[AnnotationsMeasureTypeCrosshairXOptions] = js.native
+  var crosshairX: js.UndefOr[AnnotationsMeasureTypeCrosshairXOptions] = js.undefined
   
   /**
     * (Highstock) Configure a crosshair that is vertically placed in middle of
     * rectangle.
     */
-  var crosshairY: js.UndefOr[AnnotationsMeasureTypeCrosshairYOptions] = js.native
+  var crosshairY: js.UndefOr[AnnotationsMeasureTypeCrosshairYOptions] = js.undefined
   
-  var label: js.UndefOr[AnnotationsMeasureTypeLabelOptions] = js.native
+  var label: js.UndefOr[AnnotationsMeasureTypeLabelOptions] = js.undefined
   
   /**
     * (Highstock) Line options.
     */
-  var line: js.UndefOr[AnnotationsMeasureTypeLineOptions] = js.native
+  var line: js.UndefOr[AnnotationsMeasureTypeLineOptions] = js.undefined
   
-  var points: js.UndefOr[js.Array[AnnotationsMeasureTypePointsOptions]] = js.native
+  var points: js.UndefOr[js.Array[AnnotationsMeasureTypePointsOptions]] = js.undefined
   
   /**
     * (Highstock) Decides in what dimensions the user can resize by dragging
     * the mouse. Can be one of x, y or xy.
     */
-  var selectType: js.UndefOr[String] = js.native
+  var selectType: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) This number defines which xAxis the point is connected to. It
     * refers to either the axis id or the index of the axis in the xAxis array.
     */
-  var xAxis: js.UndefOr[Double] = js.native
+  var xAxis: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) This number defines which yAxis the point is connected to. It
     * refers to either the axis id or the index of the axis in the yAxis array.
     */
-  var yAxis: js.UndefOr[Double] = js.native
+  var yAxis: js.UndefOr[Double] = js.undefined
 }
 object AnnotationsMeasureTypeOptions {
   

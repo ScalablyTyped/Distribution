@@ -2,7 +2,6 @@ package typings.dymoLabelFramework.dymo.label.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object TwinTurboRoll extends StObject {
   
   /** Indicates to continue printing to the other roll when the current roll is out of paper. Note: This does not indicate which roll to print to first; printing may start on either roll. */
   @js.native
-  sealed trait Auto extends TwinTurboRoll
+  sealed trait Auto
+    extends StObject
+       with TwinTurboRoll
   
   /** Indicates to print to the left roll only. */
   @js.native
-  sealed trait Left extends TwinTurboRoll
+  sealed trait Left
+    extends StObject
+       with TwinTurboRoll
   
   /** Indicates to print to the right roll only. */
   @js.native
-  sealed trait Right extends TwinTurboRoll
+  sealed trait Right
+    extends StObject
+       with TwinTurboRoll
 }

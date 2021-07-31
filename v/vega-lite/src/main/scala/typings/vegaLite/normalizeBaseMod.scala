@@ -15,29 +15,27 @@ import typings.vegaLite.srcConfigMod.Config
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object normalizeBaseMod {
   
-  @js.native
-  trait ExtraNormalizer[S /* <: GenericSpec[_, _, _, FieldName] */, // Input type
+  trait ExtraNormalizer[S /* <: GenericSpec[js.Any, js.Any, js.Any, FieldName] */, // Input type
   O /* <: NormalizedSpec */, // Output Type
-  SN /* <: GenericSpec[_, _, _, FieldName] */] extends StObject {
+  SN /* <: GenericSpec[js.Any, js.Any, js.Any, FieldName] */] extends StObject {
     
-    def hasMatchingType(spec: GenericSpec[_, _, _, _], config: Config[ExprRef | SignalRef]): /* is S */ Boolean = js.native
+    def hasMatchingType(spec: GenericSpec[js.Any, js.Any, js.Any, js.Any], config: Config[ExprRef | SignalRef]): /* is S */ Boolean
     
-    var name: String = js.native
+    var name: String
     
-    def run(spec: S, params: NormalizerParams, normalize: Normalize[SN, O]): O = js.native
+    def run(spec: S, params: NormalizerParams, normalize: Normalize[SN, O]): O
   }
   object ExtraNormalizer {
     
     @scala.inline
-    def apply[S /* <: GenericSpec[_, _, _, FieldName] */, // Input type
+    def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, FieldName] */, // Input type
     O /* <: NormalizedSpec */, // Output Type
-    SN /* <: GenericSpec[_, _, _, FieldName] */](
-      hasMatchingType: (GenericSpec[_, _, _, _], Config[ExprRef | SignalRef]) => /* is S */ Boolean,
+    SN /* <: GenericSpec[js.Any, js.Any, js.Any, FieldName] */](
+      hasMatchingType: (GenericSpec[js.Any, js.Any, js.Any, js.Any], Config[ExprRef | SignalRef]) => /* is S */ Boolean,
       name: String,
       run: (S, NormalizerParams, Normalize[SN, O]) => O
     ): ExtraNormalizer[S, O, SN] = {
@@ -46,12 +44,14 @@ object normalizeBaseMod {
     }
     
     @scala.inline
-    implicit class ExtraNormalizerMutableBuilder[Self <: ExtraNormalizer[_, _, _], S /* <: GenericSpec[_, _, _, FieldName] */, // Input type
+    implicit class ExtraNormalizerMutableBuilder[Self <: ExtraNormalizer[?, ?, ?], S /* <: GenericSpec[js.Any, js.Any, js.Any, FieldName] */, // Input type
     O /* <: NormalizedSpec */, // Output Type
-    SN /* <: GenericSpec[_, _, _, FieldName] */] (val x: Self with (ExtraNormalizer[S, O, SN])) extends AnyVal {
+    SN /* <: GenericSpec[js.Any, js.Any, js.Any, FieldName] */] (val x: Self & (ExtraNormalizer[S, O, SN])) extends AnyVal {
       
       @scala.inline
-      def setHasMatchingType(value: (GenericSpec[_, _, _, _], Config[ExprRef | SignalRef]) => /* is S */ Boolean): Self = StObject.set(x, "hasMatchingType", js.Any.fromFunction2(value))
+      def setHasMatchingType(
+        value: (GenericSpec[js.Any, js.Any, js.Any, js.Any], Config[ExprRef | SignalRef]) => /* is S */ Boolean
+      ): Self = StObject.set(x, "hasMatchingType", js.Any.fromFunction2(value))
       
       @scala.inline
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -61,31 +61,30 @@ object normalizeBaseMod {
     }
   }
   
-  type NonFacetUnitNormalizer[S /* <: GenericUnitSpec[_, _] */] = ExtraNormalizer[
+  type NonFacetUnitNormalizer[S /* <: GenericUnitSpec[js.Any, js.Any] */] = ExtraNormalizer[
     S, 
     NormalizedUnitSpec | NormalizedLayerSpec, 
     (GenericUnitSpec[js.Any, js.Any]) | GenericLayerSpec[js.Any]
   ]
   
-  type Normalize[S /* <: GenericSpec[_, _, _, _] */, NS /* <: NormalizedSpec */] = js.Function2[/* spec */ S, /* params */ NormalizerParams, NS]
+  type Normalize[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */, NS /* <: NormalizedSpec */] = js.Function2[/* spec */ S, /* params */ NormalizerParams, NS]
   
   type NormalizeLayerOrUnit = Normalize[
     (GenericUnitSpec[js.Any, js.Any]) | GenericLayerSpec[js.Any], 
     NormalizedUnitSpec | NormalizedLayerSpec
   ]
   
-  @js.native
   trait NormalizerParams extends StObject {
     
-    var config: Config[SignalRef] = js.native
+    var config: Config[SignalRef]
     
-    var parentEncoding: js.UndefOr[Encoding[FieldName]] = js.native
+    var parentEncoding: js.UndefOr[Encoding[FieldName]] = js.undefined
     
-    var parentProjection: js.UndefOr[Projection] = js.native
+    var parentProjection: js.UndefOr[Projection] = js.undefined
     
-    var repeater: js.UndefOr[RepeaterValue] = js.native
+    var repeater: js.UndefOr[RepeaterValue] = js.undefined
     
-    var repeaterPrefix: js.UndefOr[String] = js.native
+    var repeaterPrefix: js.UndefOr[String] = js.undefined
   }
   object NormalizerParams {
     

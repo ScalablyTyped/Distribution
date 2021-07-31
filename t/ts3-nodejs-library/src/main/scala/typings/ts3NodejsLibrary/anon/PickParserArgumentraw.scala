@@ -2,14 +2,12 @@ package typings.ts3NodejsLibrary.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<ts3-nodejs-library.ts3-nodejs-library/lib/transport/Command.Command.ParserArgument, 'raw'> */
-@js.native
 trait PickParserArgumentraw extends StObject {
   
-  var raw: String = js.native
+  var raw: String
 }
 object PickParserArgumentraw {
   

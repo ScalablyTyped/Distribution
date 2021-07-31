@@ -2,17 +2,15 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrinterVolumeSupported extends StObject {
   
-  var `x-dimension`: js.UndefOr[Double] = js.native
+  var `x-dimension`: js.UndefOr[Double] = js.undefined
   
-  var `y-dimension`: js.UndefOr[Double] = js.native
+  var `y-dimension`: js.UndefOr[Double] = js.undefined
   
-  var `z-dimension`: js.UndefOr[Double] = js.native
+  var `z-dimension`: js.UndefOr[Double] = js.undefined
 }
 object PrinterVolumeSupported {
   

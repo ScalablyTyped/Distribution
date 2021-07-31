@@ -2,17 +2,15 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalOptions extends StObject {
   
   /**
     * Control wether this modal should be dismiss using swipe gesture when the modalPresentationStyle = 'pageSheet'
     * #### (iOS specific)
     */
-  var swipeToDismiss: js.UndefOr[Boolean] = js.native
+  var swipeToDismiss: js.UndefOr[Boolean] = js.undefined
 }
 object ModalOptions {
   

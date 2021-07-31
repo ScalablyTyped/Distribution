@@ -3,19 +3,17 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * VolumeNodeAffinity defines constraints that limit what nodes this volume can be accessed from.
   */
-@js.native
 trait VolumeNodeAffinity extends StObject {
   
   /**
     * Required specifies hard node constraints that must be met.
     */
-  var required: js.UndefOr[Input[NodeSelector]] = js.native
+  var required: js.UndefOr[Input[NodeSelector]] = js.undefined
 }
 object VolumeNodeAffinity {
   

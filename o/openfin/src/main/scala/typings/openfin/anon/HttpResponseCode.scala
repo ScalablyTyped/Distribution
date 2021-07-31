@@ -2,13 +2,11 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpResponseCode extends StObject {
   
-  var httpResponseCode: Double = js.native
+  var httpResponseCode: Double
 }
 object HttpResponseCode {
   

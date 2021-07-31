@@ -2,46 +2,44 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBSecurityGroup extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the DB security group.
     */
-  var DBSecurityGroupArn: js.UndefOr[String] = js.native
+  var DBSecurityGroupArn: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the description of the DB security group.
     */
-  var DBSecurityGroupDescription: js.UndefOr[String] = js.native
+  var DBSecurityGroupDescription: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the name of the DB security group.
     */
-  var DBSecurityGroupName: js.UndefOr[String] = js.native
+  var DBSecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
     *  Contains a list of EC2SecurityGroup elements. 
     */
-  var EC2SecurityGroups: js.UndefOr[EC2SecurityGroupList] = js.native
+  var EC2SecurityGroups: js.UndefOr[EC2SecurityGroupList] = js.undefined
   
   /**
     *  Contains a list of IPRange elements. 
     */
-  var IPRanges: js.UndefOr[IPRangeList] = js.native
+  var IPRanges: js.UndefOr[IPRangeList] = js.undefined
   
   /**
     * Provides the AWS ID of the owner of a specific DB security group.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the VpcId of the DB security group.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object DBSecurityGroup {
   

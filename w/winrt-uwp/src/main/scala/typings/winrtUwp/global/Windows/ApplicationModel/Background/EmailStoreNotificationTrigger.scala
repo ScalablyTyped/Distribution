@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that enables notification of changes to the email store. */
@@ -10,4 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /** Initializes a new instance of the EmailStoreNotificationTrigger class. */
 class EmailStoreNotificationTrigger ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Background.EmailStoreNotificationTrigger
+  extends StObject
+     with typings.winrtUwp.Windows.ApplicationModel.Background.EmailStoreNotificationTrigger

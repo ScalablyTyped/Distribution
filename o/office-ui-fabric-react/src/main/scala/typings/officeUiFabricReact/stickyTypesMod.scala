@@ -5,7 +5,6 @@ import typings.react.mod.Props
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stickyTypesMod {
@@ -17,50 +16,57 @@ object stickyTypesMod {
   object StickyPositionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[StickyPositionType with Double] = js.native
+    def apply(value: Double): js.UndefOr[StickyPositionType & Double] = js.native
     
     @js.native
-    sealed trait Both extends StickyPositionType
-    /* 0 */ val Both: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Both with Double = js.native
+    sealed trait Both
+      extends StObject
+         with StickyPositionType
+    /* 0 */ val Both: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Both & Double = js.native
     
     @js.native
-    sealed trait Footer extends StickyPositionType
-    /* 2 */ val Footer: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Footer with Double = js.native
+    sealed trait Footer
+      extends StObject
+         with StickyPositionType
+    /* 2 */ val Footer: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Footer & Double = js.native
     
     @js.native
-    sealed trait Header extends StickyPositionType
-    /* 1 */ val Header: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Header with Double = js.native
+    sealed trait Header
+      extends StObject
+         with StickyPositionType
+    /* 1 */ val Header: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Header & Double = js.native
   }
   
-  @js.native
-  trait IStickyProps extends Props[Sticky] {
+  trait IStickyProps
+    extends StObject
+       with Props[Sticky] {
     
     /**
       * Gets ref to component interface.
       */
-    var componentRef: js.UndefOr[IRefObject[IStickyProps]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IStickyProps]] = js.undefined
     
     /**
       * If true, then match scrolling position of placeholder element in Sticky.
       * @defaultvalue true
       */
-    var isScrollSynced: js.UndefOr[Boolean] = js.native
+    var isScrollSynced: js.UndefOr[Boolean] = js.undefined
     
     /**
       * color to apply as 'background-color' style for sticky element.
       */
-    var stickyBackgroundColor: js.UndefOr[String] = js.native
+    var stickyBackgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * Class name to apply to the sticky element if component is sticky.
       */
-    var stickyClassName: js.UndefOr[String] = js.native
+    var stickyClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Region to render sticky component in.
       * @defaultvalue Both
       */
-    var stickyPosition: js.UndefOr[StickyPositionType] = js.native
+    var stickyPosition: js.UndefOr[StickyPositionType] = js.undefined
   }
   object IStickyProps {
     

@@ -2,20 +2,18 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackspaceLabel extends StObject {
   
   /** 退格 */
-  var backspaceLabel: String = js.native
+  var backspaceLabel: String
   
   /** 收起键盘 */
-  var cancelKeyboardLabel: String = js.native
+  var cancelKeyboardLabel: String
   
   /** 确定 */
-  var confirmLabel: String = js.native
+  var confirmLabel: String
 }
 object BackspaceLabel {
   

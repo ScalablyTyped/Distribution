@@ -2,21 +2,19 @@ package typings.bitauth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Created extends StObject {
     
-    var created: Double = js.native
+    var created: Double
     
-    var priv: String = js.native
+    var priv: String
     
-    var pub: String = js.native
+    var pub: String
     
-    var sin: String = js.native
+    var sin: String
   }
   object Created {
     

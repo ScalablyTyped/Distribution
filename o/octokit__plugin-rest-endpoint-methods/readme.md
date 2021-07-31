@@ -10,9 +10,9 @@ Octokit plugin adding one method for all of api.github.com REST API endpoints
 | ------------------ | :-------------: |
 | Full name          | @octokit/plugin-rest-endpoint-methods |
 | Keywords           | github, api, sdk, toolkit |
-| # releases         | 57 |
-| # dependents       | 10 |
-| # downloads        | 46124422 |
+| # releases         | 87 |
+| # dependents       | 12 |
+| # downloads        | 100067362 |
 | # stars            | 0 |
 
 ## Links

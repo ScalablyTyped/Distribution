@@ -2,81 +2,79 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateDescription extends StObject {
   
   /**
     * The certificate ID of the CA certificate used to sign this certificate.
     */
-  var caCertificateId: js.UndefOr[CertificateId] = js.native
+  var caCertificateId: js.UndefOr[CertificateId] = js.undefined
   
   /**
     * The ARN of the certificate.
     */
-  var certificateArn: js.UndefOr[CertificateArn] = js.native
+  var certificateArn: js.UndefOr[CertificateArn] = js.undefined
   
   /**
     * The ID of the certificate.
     */
-  var certificateId: js.UndefOr[CertificateId] = js.native
+  var certificateId: js.UndefOr[CertificateId] = js.undefined
   
   /**
     * The mode of the certificate.
     */
-  var certificateMode: js.UndefOr[CertificateMode] = js.native
+  var certificateMode: js.UndefOr[CertificateMode] = js.undefined
   
   /**
     * The certificate data, in PEM format.
     */
-  var certificatePem: js.UndefOr[CertificatePem] = js.native
+  var certificatePem: js.UndefOr[CertificatePem] = js.undefined
   
   /**
     * The date and time the certificate was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.native
+  var creationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The customer version of the certificate.
     */
-  var customerVersion: js.UndefOr[CustomerVersion] = js.native
+  var customerVersion: js.UndefOr[CustomerVersion] = js.undefined
   
   /**
     * The generation ID of the certificate.
     */
-  var generationId: js.UndefOr[GenerationId] = js.native
+  var generationId: js.UndefOr[GenerationId] = js.undefined
   
   /**
     * The date and time the certificate was last modified.
     */
-  var lastModifiedDate: js.UndefOr[DateType] = js.native
+  var lastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The ID of the AWS account that owns the certificate.
     */
-  var ownedBy: js.UndefOr[AwsAccountId] = js.native
+  var ownedBy: js.UndefOr[AwsAccountId] = js.undefined
   
   /**
     * The ID of the AWS account of the previous owner of the certificate.
     */
-  var previousOwnedBy: js.UndefOr[AwsAccountId] = js.native
+  var previousOwnedBy: js.UndefOr[AwsAccountId] = js.undefined
   
   /**
     * The status of the certificate.
     */
-  var status: js.UndefOr[CertificateStatus] = js.native
+  var status: js.UndefOr[CertificateStatus] = js.undefined
   
   /**
     * The transfer data.
     */
-  var transferData: js.UndefOr[TransferData] = js.native
+  var transferData: js.UndefOr[TransferData] = js.undefined
   
   /**
     * When the certificate is valid.
     */
-  var validity: js.UndefOr[CertificateValidity] = js.native
+  var validity: js.UndefOr[CertificateValidity] = js.undefined
 }
 object CertificateDescription {
   

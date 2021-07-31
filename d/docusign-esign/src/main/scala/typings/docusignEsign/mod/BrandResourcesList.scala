@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrandResourcesList extends StObject {
   
   /**
     * A list of resources that the brand uses.
     */
-  var resourcesContentTypes: js.UndefOr[js.Array[BrandResources]] = js.native
+  var resourcesContentTypes: js.UndefOr[js.Array[BrandResources]] = js.undefined
 }
 object BrandResourcesList {
   

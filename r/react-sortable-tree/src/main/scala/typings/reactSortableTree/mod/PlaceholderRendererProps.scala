@@ -2,17 +2,15 @@ package typings.reactSortableTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaceholderRendererProps extends StObject {
   
-  var canDrop: Boolean = js.native
+  var canDrop: Boolean
   
-  var draggedNode: TreeItem = js.native
+  var draggedNode: TreeItem
   
-  var isOver: Boolean = js.native
+  var isOver: Boolean
 }
 object PlaceholderRendererProps {
   

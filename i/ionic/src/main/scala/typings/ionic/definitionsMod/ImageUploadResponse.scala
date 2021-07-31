@@ -2,21 +2,19 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageUploadResponse extends StObject {
   
-  var Error: String = js.native
+  var Error: String
   
-  var Height: Double = js.native
+  var Height: Double
   
-  var Type: String = js.native
+  var Type: String
   
-  var Vector: Boolean = js.native
+  var Vector: Boolean
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object ImageUploadResponse {
   

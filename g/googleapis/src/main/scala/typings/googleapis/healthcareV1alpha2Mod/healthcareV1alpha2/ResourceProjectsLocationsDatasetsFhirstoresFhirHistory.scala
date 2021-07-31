@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha2", "healthcare_v1alpha2.Resource$Projects$Locations$Datasets$Fhirstores$Fhir$_history")
@@ -32,7 +31,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresFhirHistory protected () extend
     */
   def get(): GaxiosPromise[SchemaHttpBody] = js.native
   def get(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def get(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistoryGet): GaxiosPromise[SchemaHttpBody] = js.native
   def get(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistoryGet,
@@ -70,7 +69,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresFhirHistory protected () extend
     */
   def list(): GaxiosPromise[SchemaHttpBody] = js.native
   def list(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def list(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistoryList): GaxiosPromise[SchemaHttpBody] = js.native
   def list(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistoryList,

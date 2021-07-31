@@ -2,51 +2,49 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The data part of the report.
   */
-@js.native
 trait SchemaReportData extends StObject {
   
   /**
     * The last time the data in the report was refreshed. All the hits received
     * before this timestamp are included in the calculation of the report.
     */
-  var dataLastRefreshed: js.UndefOr[String] = js.native
+  var dataLastRefreshed: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates if response to this request is golden or not. Data is golden
     * when the exact same request will not produce any new results if asked at
     * a later point in time.
     */
-  var isDataGolden: js.UndefOr[Boolean] = js.native
+  var isDataGolden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Minimum and maximum values seen over all matching rows. These are both
     * empty when `hideValueRanges` in the request is false, or when rowCount is
     * zero.
     */
-  var maximums: js.UndefOr[js.Array[SchemaDateRangeValues]] = js.native
+  var maximums: js.UndefOr[js.Array[SchemaDateRangeValues]] = js.undefined
   
   /**
     * Minimum and maximum values seen over all matching rows. These are both
     * empty when `hideValueRanges` in the request is false, or when rowCount is
     * zero.
     */
-  var minimums: js.UndefOr[js.Array[SchemaDateRangeValues]] = js.native
+  var minimums: js.UndefOr[js.Array[SchemaDateRangeValues]] = js.undefined
   
   /**
     * Total number of matching rows for this query.
     */
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
   /**
     * There&#39;s one ReportRow for every unique combination of dimensions.
     */
-  var rows: js.UndefOr[js.Array[SchemaReportRow]] = js.native
+  var rows: js.UndefOr[js.Array[SchemaReportRow]] = js.undefined
   
   /**
     * If the results are
@@ -56,7 +54,7 @@ trait SchemaReportData extends StObject {
     * [developer guide](/analytics/devguides/reporting/core/v4/basics#sampling)
     * for details.
     */
-  var samplesReadCounts: js.UndefOr[js.Array[String]] = js.native
+  var samplesReadCounts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If the results are
@@ -66,7 +64,7 @@ trait SchemaReportData extends StObject {
     * [developer guide](/analytics/devguides/reporting/core/v4/basics#sampling)
     * for details.
     */
-  var samplingSpaceSizes: js.UndefOr[js.Array[String]] = js.native
+  var samplingSpaceSizes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * For each requested date range, for the set of all rows that match the
@@ -77,7 +75,7 @@ trait SchemaReportData extends StObject {
     * of all relevant ga:sessions) + 2)`. Totals are computed before
     * pagination.
     */
-  var totals: js.UndefOr[js.Array[SchemaDateRangeValues]] = js.native
+  var totals: js.UndefOr[js.Array[SchemaDateRangeValues]] = js.undefined
 }
 object SchemaReportData {
   

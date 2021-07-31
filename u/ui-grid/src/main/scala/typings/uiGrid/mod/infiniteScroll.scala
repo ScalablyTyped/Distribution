@@ -4,7 +4,6 @@ import typings.angular.mod.IPromise
 import typings.uiGrid.anon.NeedLoadMoreData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object infiniteScroll {
@@ -32,7 +31,7 @@ object infiniteScroll {
       *          If you're planning to remove pages, you should wait on this promise first, or you'll break the
       *          scroll positioning
       */
-    def dataLoaded(scrollUp: Boolean, scrollDown: Boolean): IPromise[_] = js.native
+    def dataLoaded(scrollUp: Boolean, scrollDown: Boolean): IPromise[js.Any] = js.native
     
     /**
       * Adjusts the scroll position after you've removed data at the bottom.
@@ -45,14 +44,14 @@ object infiniteScroll {
       * @param {boolean} scrollDown flag that there are pages downwards, so fire infinite scroll events downward
       * @returns {ng.IPromise<any>} A promise that is resolved when scrolling finishes
       */
-    def dataRemovedBottom(grid: IGridInstanceOf[TEntity], scrollUp: Boolean, scrollDown: Boolean): IPromise[_] = js.native
+    def dataRemovedBottom(grid: IGridInstanceOf[TEntity], scrollUp: Boolean, scrollDown: Boolean): IPromise[js.Any] = js.native
     /**
       * Adjusts the scroll position after you've removed data at the bottom
       * @param {boolean} scrollUp flag that there are pages upwards, fire infinite scroll events upward
       * @param {boolean} scrollDown flag that there are pages downwards, so fire infinite scroll events downward
       * @returns {ng.IPromise<any>} A promise that is resolved when scrolling finishes
       */
-    def dataRemovedBottom(scrollUp: Boolean, scrollDown: Boolean): IPromise[_] = js.native
+    def dataRemovedBottom(scrollUp: Boolean, scrollDown: Boolean): IPromise[js.Any] = js.native
     
     /**
       * Adjusts the scroll position after you've removed data at the bottom.
@@ -65,14 +64,14 @@ object infiniteScroll {
       * @param {boolean} scrollDown flag that there are pages downwards, so fire infinite scroll events downward
       * @returns {ng.IPromise<any>} A promise that is resolved when scrolling finishes
       */
-    def dataRemovedTop(grid: IGridInstanceOf[TEntity], scrollUp: Boolean, scrollDown: Boolean): IPromise[_] = js.native
+    def dataRemovedTop(grid: IGridInstanceOf[TEntity], scrollUp: Boolean, scrollDown: Boolean): IPromise[js.Any] = js.native
     /**
       * Adjusts the scroll position after you've removed data at the bottom
       * @param {boolean} scrollUp flag that there are pages upwards, fire infinite scroll events upward
       * @param {boolean} scrollDown flag that there are pages downwards, so fire infinite scroll events downward
       * @returns {ng.IPromise<any>} A promise that is resolved when scrolling finishes
       */
-    def dataRemovedTop(scrollUp: Boolean, scrollDown: Boolean): IPromise[_] = js.native
+    def dataRemovedTop(scrollUp: Boolean, scrollDown: Boolean): IPromise[js.Any] = js.native
     
     // Events
     var on: NeedLoadMoreData = js.native
@@ -88,7 +87,7 @@ object infiniteScroll {
       * @param {boolean} scrollDown flag that there are pages downwards, so fire infinite scroll events downward
       * @returns {ng.IPromise<any>} A promise that is resolved when scrolling finishes
       */
-    def resetScroll(scrollUp: Boolean, scrollDown: Boolean): IPromise[_] = js.native
+    def resetScroll(scrollUp: Boolean, scrollDown: Boolean): IPromise[js.Any] = js.native
     
     /**
       * Saves the scroll percentage and number of visible rows before you adjust the data,
@@ -97,7 +96,6 @@ object infiniteScroll {
     def saveScrollPercentage(): Unit = js.native
   }
   
-  @js.native
   trait IGridOptions extends StObject {
     
     /**
@@ -105,7 +103,7 @@ object infiniteScroll {
       * Defaults to true
       * @default true
       */
-    var enableInfiniteScroll: js.UndefOr[Boolean] = js.native
+    var enableInfiniteScroll: js.UndefOr[Boolean] = js.undefined
   }
   object IGridOptions {
     

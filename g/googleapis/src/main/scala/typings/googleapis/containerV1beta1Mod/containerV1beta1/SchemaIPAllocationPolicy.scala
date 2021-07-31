@@ -2,13 +2,11 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for controlling how IPs are allocated in the cluster.
   */
-@js.native
 trait SchemaIPAllocationPolicy extends StObject {
   
   /**
@@ -23,12 +21,12 @@ trait SchemaIPAllocationPolicy extends StObject {
     * fully-specified. 2) When `use_ip_aliases` is false,
     * `cluster.cluster_ipv4_cidr` muse be    fully-specified.
     */
-  var allowRouteOverlap: js.UndefOr[Boolean] = js.native
+  var allowRouteOverlap: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This field is deprecated, use cluster_ipv4_cidr_block.
     */
-  var clusterIpv4Cidr: js.UndefOr[String] = js.native
+  var clusterIpv4Cidr: js.UndefOr[String] = js.undefined
   
   /**
     * The IP address range for the cluster pod IPs. If this field is set, then
@@ -41,7 +39,7 @@ trait SchemaIPAllocationPolicy extends StObject {
     * `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`) to pick a specific range
     * to use.
     */
-  var clusterIpv4CidrBlock: js.UndefOr[String] = js.native
+  var clusterIpv4CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the secondary range to be used for the cluster CIDR block.
@@ -50,18 +48,18 @@ trait SchemaIPAllocationPolicy extends StObject {
     * field is only applicable with use_ip_aliases and create_subnetwork is
     * false.
     */
-  var clusterSecondaryRangeName: js.UndefOr[String] = js.native
+  var clusterSecondaryRangeName: js.UndefOr[String] = js.undefined
   
   /**
     * Whether a new subnetwork will be created automatically for the cluster.
     * This field is only applicable when `use_ip_aliases` is true.
     */
-  var createSubnetwork: js.UndefOr[Boolean] = js.native
+  var createSubnetwork: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This field is deprecated, use node_ipv4_cidr_block.
     */
-  var nodeIpv4Cidr: js.UndefOr[String] = js.native
+  var nodeIpv4Cidr: js.UndefOr[String] = js.undefined
   
   /**
     * The IP address range of the instance IPs in this cluster.  This is
@@ -73,12 +71,12 @@ trait SchemaIPAllocationPolicy extends StObject {
     * `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`) to pick a specific range
     * to use.
     */
-  var nodeIpv4CidrBlock: js.UndefOr[String] = js.native
+  var nodeIpv4CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * This field is deprecated, use services_ipv4_cidr_block.
     */
-  var servicesIpv4Cidr: js.UndefOr[String] = js.native
+  var servicesIpv4Cidr: js.UndefOr[String] = js.undefined
   
   /**
     * The IP address range of the services IPs in this cluster. If blank, a
@@ -91,7 +89,7 @@ trait SchemaIPAllocationPolicy extends StObject {
     * `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`) to pick a specific range
     * to use.
     */
-  var servicesIpv4CidrBlock: js.UndefOr[String] = js.native
+  var servicesIpv4CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the secondary range to be used as for the services CIDR
@@ -100,14 +98,14 @@ trait SchemaIPAllocationPolicy extends StObject {
     * subnetwork.  This field is only applicable with use_ip_aliases and
     * create_subnetwork is false.
     */
-  var servicesSecondaryRangeName: js.UndefOr[String] = js.native
+  var servicesSecondaryRangeName: js.UndefOr[String] = js.undefined
   
   /**
     * A custom subnetwork name to be used if `create_subnetwork` is true.  If
     * this field is empty, then an automatic name will be chosen for the new
     * subnetwork.
     */
-  var subnetworkName: js.UndefOr[String] = js.native
+  var subnetworkName: js.UndefOr[String] = js.undefined
   
   /**
     * The IP address range of the Cloud TPUs in this cluster. If unspecified, a
@@ -120,12 +118,12 @@ trait SchemaIPAllocationPolicy extends StObject {
     * `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`) to pick a specific range
     * to use.
     */
-  var tpuIpv4CidrBlock: js.UndefOr[String] = js.native
+  var tpuIpv4CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * Whether alias IPs will be used for pod IPs in the cluster.
     */
-  var useIpAliases: js.UndefOr[Boolean] = js.native
+  var useIpAliases: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaIPAllocationPolicy {
   

@@ -2,11 +2,11 @@ package typings.winrt.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InclinometerReadingChangedEventArgs extends IInclinometerReadingChangedEventArgs
+trait InclinometerReadingChangedEventArgs
+  extends StObject
+     with IInclinometerReadingChangedEventArgs
 object InclinometerReadingChangedEventArgs {
   
   @scala.inline

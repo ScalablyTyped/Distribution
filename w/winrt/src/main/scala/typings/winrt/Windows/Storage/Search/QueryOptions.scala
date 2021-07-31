@@ -7,11 +7,11 @@ import typings.winrt.Windows.Storage.FileProperties.ThumbnailMode
 import typings.winrt.Windows.Storage.FileProperties.ThumbnailOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QueryOptions extends IQueryOptions
+trait QueryOptions
+  extends StObject
+     with IQueryOptions
 object QueryOptions {
   
   @scala.inline

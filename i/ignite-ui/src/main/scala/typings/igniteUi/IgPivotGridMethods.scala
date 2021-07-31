@@ -2,7 +2,6 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,7 +14,7 @@ trait IgPivotGridMethods extends StObject {
     * tupleIndex: The index of the tuple on the column axis in the original unsorted result.
     * sortDirection: The direction of the sort - ascending or descending.
     */
-  def appliedColumnSortDirections(): js.Array[_] = js.native
+  def appliedColumnSortDirections(): js.Array[js.Any] = js.native
   
   /**
     * Returns an array with the applied level sort direction items, which were used for the sorting of the header cells. The returned array contains objects with the following properties:
@@ -23,7 +22,7 @@ trait IgPivotGridMethods extends StObject {
     * levelUniqueName: Specifies the unique name of the level, which was sorted.
     * sortDirection: The direction of the header sort - ascending or descending.
     */
-  def appliedLevelSortDirections(): js.Array[_] = js.native
+  def appliedLevelSortDirections(): js.Array[js.Any] = js.native
   
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language

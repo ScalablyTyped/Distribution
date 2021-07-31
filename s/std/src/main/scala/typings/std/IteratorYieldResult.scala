@@ -3,16 +3,15 @@ package typings.std
 import typings.std.stdBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IteratorYieldResult[TYield]
-  extends IteratorResult[TYield, js.Any] {
+  extends StObject
+     with IteratorResult[TYield, js.Any] {
   
-  var done: js.UndefOr[`false`] = js.native
+  var done: js.UndefOr[`false`] = js.undefined
   
-  var value: TYield = js.native
+  var value: TYield
 }
 object IteratorYieldResult {
   
@@ -23,7 +22,7 @@ object IteratorYieldResult {
   }
   
   @scala.inline
-  implicit class IteratorYieldResultMutableBuilder[Self <: IteratorYieldResult[_], TYield] (val x: Self with IteratorYieldResult[TYield]) extends AnyVal {
+  implicit class IteratorYieldResultMutableBuilder[Self <: IteratorYieldResult[?], TYield] (val x: Self & IteratorYieldResult[TYield]) extends AnyVal {
     
     @scala.inline
     def setDone(value: `false`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])

@@ -2,17 +2,15 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsistentHashRingOptions extends StObject {
   
   /** Function to compute the hash for a given link or partition key */
-  var computeHash: js.UndefOr[js.Function2[/* key */ String | Double, /* seed */ Double, Double]] = js.native
+  var computeHash: js.UndefOr[js.Function2[/* key */ String | Double, /* seed */ Double, Double]] = js.undefined
   
   /** Number of points in the ring to assign to each collection link */
-  var numberOfVirtualNodesPerCollection: js.UndefOr[Double] = js.native
+  var numberOfVirtualNodesPerCollection: js.UndefOr[Double] = js.undefined
 }
 object ConsistentHashRingOptions {
   

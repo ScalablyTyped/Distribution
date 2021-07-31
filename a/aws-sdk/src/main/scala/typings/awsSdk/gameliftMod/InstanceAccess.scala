@@ -2,36 +2,34 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceAccess extends StObject {
   
   /**
     * Credentials required to access the instance.
     */
-  var Credentials: js.UndefOr[InstanceCredentials] = js.native
+  var Credentials: js.UndefOr[InstanceCredentials] = js.undefined
   
   /**
     * A unique identifier for a fleet containing the instance being accessed.
     */
-  var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
   
   /**
     * A unique identifier for an instance being accessed.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.gameliftMod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.gameliftMod.InstanceId] = js.undefined
   
   /**
     * IP address that is assigned to the instance.
     */
-  var IpAddress: js.UndefOr[typings.awsSdk.gameliftMod.IpAddress] = js.native
+  var IpAddress: js.UndefOr[typings.awsSdk.gameliftMod.IpAddress] = js.undefined
   
   /**
     * Operating system that is running on the instance.
     */
-  var OperatingSystem: js.UndefOr[typings.awsSdk.gameliftMod.OperatingSystem] = js.native
+  var OperatingSystem: js.UndefOr[typings.awsSdk.gameliftMod.OperatingSystem] = js.undefined
 }
 object InstanceAccess {
   

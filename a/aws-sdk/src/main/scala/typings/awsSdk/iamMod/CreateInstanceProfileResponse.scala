@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInstanceProfileResponse extends StObject {
   
   /**
     * A structure containing details about the new instance profile.
     */
-  var InstanceProfile: typings.awsSdk.iamMod.InstanceProfile = js.native
+  var InstanceProfile: typings.awsSdk.iamMod.InstanceProfile
 }
 object CreateInstanceProfileResponse {
   

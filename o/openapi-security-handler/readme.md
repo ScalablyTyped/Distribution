@@ -10,9 +10,9 @@ A library to process OpenAPI security definitions in parallel.
 | ------------------ | :-------------: |
 | Full name          | openapi-security-handler |
 | Keywords           | openapi, security, handler, jsonschema |
-| # releases         | 8 |
+| # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 660489 |
+| # downloads        | 734407 |
 | # stars            | 0 |
 
 ## Links

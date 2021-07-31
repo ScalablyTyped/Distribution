@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileSystemPolicyMod {
@@ -38,6 +37,10 @@ object fileSystemPolicyMod {
   /* static members */
   object FileSystemPolicy {
     
+    @JSImport("@pulumi/aws/efs/fileSystemPolicy", "FileSystemPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing FileSystemPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object fileSystemPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/efs/fileSystemPolicy", "FileSystemPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): FileSystemPolicy = js.native
-    @JSImport("@pulumi/aws/efs/fileSystemPolicy", "FileSystemPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): FileSystemPolicy = js.native
-    @JSImport("@pulumi/aws/efs/fileSystemPolicy", "FileSystemPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FileSystemPolicyState): FileSystemPolicy = js.native
-    @JSImport("@pulumi/aws/efs/fileSystemPolicy", "FileSystemPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FileSystemPolicyState, opts: CustomResourceOptions): FileSystemPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FileSystemPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileSystemPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FileSystemPolicyState): FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FileSystemPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FileSystemPolicyState, opts: CustomResourceOptions): FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileSystemPolicy]
     
     /**
       * Returns true if the given object is an instance of FileSystemPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/efs/fileSystemPolicy", "FileSystemPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystemPolicy.FileSystemPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystemPolicy.FileSystemPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/efs/fileSystemPolicy.FileSystemPolicy */ Boolean]
   }
   
-  @js.native
   trait FileSystemPolicyArgs extends StObject {
     
     /**
       * The ID of the EFS file system.
       */
-    val fileSystemId: Input[String] = js.native
+    val fileSystemId: Input[String]
     
     /**
       * The JSON formatted file system policy for the EFS file system. see [Docs](https://docs.aws.amazon.com/efs/latest/ug/access-control-overview.html#access-control-manage-access-intro-resource-policies) for more info.
       */
-    val policy: Input[String] = js.native
+    val policy: Input[String]
   }
   object FileSystemPolicyArgs {
     
@@ -101,18 +98,17 @@ object fileSystemPolicyMod {
     }
   }
   
-  @js.native
   trait FileSystemPolicyState extends StObject {
     
     /**
       * The ID of the EFS file system.
       */
-    val fileSystemId: js.UndefOr[Input[String]] = js.native
+    val fileSystemId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The JSON formatted file system policy for the EFS file system. see [Docs](https://docs.aws.amazon.com/efs/latest/ug/access-control-overview.html#access-control-manage-access-intro-resource-policies) for more info.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
   }
   object FileSystemPolicyState {
     

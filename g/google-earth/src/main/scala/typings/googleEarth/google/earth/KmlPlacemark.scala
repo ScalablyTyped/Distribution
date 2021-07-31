@@ -2,21 +2,21 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlPlacemark extends KmlFeature {
+trait KmlPlacemark
+  extends StObject
+     with KmlFeature {
   
   /**
     * The geometry associated with the placemark.
     */
-  def getGeometry(): KmlGeometry = js.native
+  def getGeometry(): KmlGeometry
   
   /**
     * The geometry associated with the placemark.
     */
-  def setGeometry(geometry: KmlGeometry): Unit = js.native
+  def setGeometry(geometry: KmlGeometry): Unit
 }
 object KmlPlacemark {
   

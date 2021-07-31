@@ -2,7 +2,6 @@ package typings.preact.jsxCsstypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -35,7 +34,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.preact.preactStrings.WindowFrame
   - typings.preact.preactStrings.WindowText
 */
-trait DeprecatedSystemColor extends _Color
+trait DeprecatedSystemColor
+  extends StObject
+     with _Color
 object DeprecatedSystemColor {
   
   @scala.inline

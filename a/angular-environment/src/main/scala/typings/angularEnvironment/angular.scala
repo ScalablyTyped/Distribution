@@ -3,25 +3,23 @@ package typings.angularEnvironment
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angular {
   
   object environment {
     
-    @js.native
     trait Config extends StObject {
       
       /**
         * Map of domains to their environments
         */
-      var domains: StringDictionary[js.Array[String]] = js.native
+      var domains: StringDictionary[js.Array[String]]
       
       /**
         * List of variables split by environment
         */
-      var vars: StringDictionary[StringDictionary[js.Any]] = js.native
+      var vars: StringDictionary[StringDictionary[js.Any]]
     }
     object Config {
       
@@ -42,30 +40,29 @@ object angular {
       }
     }
     
-    @js.native
     trait Service extends StObject {
       
       /**
         * Retrieve the current environment
         */
-      def get(): String = js.native
+      def get(): String
       
       /**
         * Evaluates current environment against
         * environment parameter.
         */
-      def is(environment: String): Boolean = js.native
+      def is(environment: String): Boolean
       
       /**
         * Retrieves the correct version of a
         * variable for the current environment.
         */
-      def read(key: String): js.Any = js.native
+      def read(key: String): js.Any
       
       /**
         * Force sets the current environment
         */
-      def set(environment: String): Unit = js.native
+      def set(environment: String): Unit
     }
     object Service {
       
@@ -92,25 +89,24 @@ object angular {
       }
     }
     
-    @js.native
     trait ServiceProvider extends StObject {
       
       /**
         * Evaluates the current domain and
         * loads the correct environment variables.
         */
-      def check(): Unit = js.native
+      def check(): Unit
       
       /**
         * Sets the configuration object
         */
-      def config(config: Config): Unit = js.native
+      def config(config: Config): Unit
       
       /**
         * Retrieves the correct version of a
         * variable for the current environment.
         */
-      def read(key: String): js.Any = js.native
+      def read(key: String): js.Any
     }
     object ServiceProvider {
       

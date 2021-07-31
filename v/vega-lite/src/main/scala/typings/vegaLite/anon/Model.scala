@@ -9,21 +9,19 @@ import typings.vegaLite.vegaLiteStrings.zeroOrMax
 import typings.vegaLite.vegaLiteStrings.zeroOrMin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Model extends StObject {
   
-  var channel: PositionChannel | PolarPositionChannel = js.native
+  var channel: PositionChannel | PolarPositionChannel
   
-  var defaultPos: mid | zeroOrMin | zeroOrMax | Null = js.native
+  var defaultPos: mid | zeroOrMin | zeroOrMax | Null
   
-  var model: UnitModel = js.native
+  var model: UnitModel
   
-  var scale: ScaleComponent = js.native
+  var scale: ScaleComponent
   
-  var scaleName: String = js.native
+  var scaleName: String
 }
 object Model {
   
@@ -34,7 +32,7 @@ object Model {
     scale: ScaleComponent,
     scaleName: String
   ): Model = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], scaleName = scaleName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], scaleName = scaleName.asInstanceOf[js.Any], defaultPos = null)
     __obj.asInstanceOf[Model]
   }
   

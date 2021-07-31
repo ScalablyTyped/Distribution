@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,46 +14,42 @@ object mod {
     */
   @JSImport("mini-html-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends MiniHtmlWebpackPlugin {
+  class ^ ()
+    extends StObject
+       with MiniHtmlWebpackPlugin {
     def this(options: PluginOptions) = this()
   }
+  @JSImport("mini-html-webpack-plugin", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mini-html-webpack-plugin", "defaultTemplate")
-  @js.native
-  def defaultTemplate(): String = js.native
-  @JSImport("mini-html-webpack-plugin", "defaultTemplate")
-  @js.native
-  def defaultTemplate(options: PluginContext): String = js.native
+  @scala.inline
+  def defaultTemplate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTemplate")().asInstanceOf[String]
+  @scala.inline
+  def defaultTemplate(options: PluginContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTemplate")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("mini-html-webpack-plugin", "generateAttributes")
-  @js.native
-  def generateAttributes(): String = js.native
-  @JSImport("mini-html-webpack-plugin", "generateAttributes")
-  @js.native
-  def generateAttributes(options: GenerateAttributesOptions): String = js.native
+  @scala.inline
+  def generateAttributes(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAttributes")().asInstanceOf[String]
+  @scala.inline
+  def generateAttributes(options: GenerateAttributesOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAttributes")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("mini-html-webpack-plugin", "generateCSSReferences")
-  @js.native
-  def generateCSSReferences(): String = js.native
-  @JSImport("mini-html-webpack-plugin", "generateCSSReferences")
-  @js.native
-  def generateCSSReferences(options: GenerateCSSReferencesOptions): String = js.native
+  @scala.inline
+  def generateCSSReferences(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCSSReferences")().asInstanceOf[String]
+  @scala.inline
+  def generateCSSReferences(options: GenerateCSSReferencesOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCSSReferences")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("mini-html-webpack-plugin", "generateJSReferences")
-  @js.native
-  def generateJSReferences(): String = js.native
-  @JSImport("mini-html-webpack-plugin", "generateJSReferences")
-  @js.native
-  def generateJSReferences(options: GenerateJSReferencesOptions): String = js.native
+  @scala.inline
+  def generateJSReferences(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateJSReferences")().asInstanceOf[String]
+  @scala.inline
+  def generateJSReferences(options: GenerateJSReferencesOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateJSReferences")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type AttributesType = StringDictionary[String | Boolean]
   
-  @js.native
   trait FilesOptions extends StObject {
     
-    var files: js.UndefOr[js.Array[String]] = js.native
+    var files: js.UndefOr[js.Array[String]] = js.undefined
     
-    var publicPath: js.UndefOr[String] = js.native
+    var publicPath: js.UndefOr[String] = js.undefined
   }
   object FilesOptions {
     
@@ -84,10 +79,9 @@ object mod {
     }
   }
   
-  @js.native
   trait GenerateAttributesOptions extends StObject {
     
-    var attributes: js.UndefOr[AttributesType] = js.native
+    var attributes: js.UndefOr[AttributesType] = js.undefined
   }
   object GenerateAttributesOptions {
     
@@ -108,16 +102,40 @@ object mod {
     }
   }
   
-  type GenerateCSSReferencesOptions = GenerateAttributesOptions with FilesOptions
+  trait GenerateCSSReferencesOptions
+    extends StObject
+       with GenerateAttributesOptions
+       with FilesOptions
+  object GenerateCSSReferencesOptions {
+    
+    @scala.inline
+    def apply(): GenerateCSSReferencesOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GenerateCSSReferencesOptions]
+    }
+  }
   
-  type GenerateJSReferencesOptions = GenerateAttributesOptions with FilesOptions
+  trait GenerateJSReferencesOptions
+    extends StObject
+       with GenerateAttributesOptions
+       with FilesOptions
+  object GenerateJSReferencesOptions {
+    
+    @scala.inline
+    def apply(): GenerateJSReferencesOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GenerateJSReferencesOptions]
+    }
+  }
   
   /**
     * A miniature version of html-webpack-plugin with only necessary features
     * see {@link https://www.npmjs.com/package/mini-html-webpack-plugin}
     */
   @js.native
-  trait MiniHtmlWebpackPlugin extends Plugin {
+  trait MiniHtmlWebpackPlugin
+    extends StObject
+       with Plugin {
     
     def plugin(
       compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any,
@@ -125,30 +143,29 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait PluginContext extends StObject {
     
     /** Optional, any additional HTML attached within <body> */
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var css: js.UndefOr[js.Array[String]] = js.native
+    var css: js.UndefOr[js.Array[String]] = js.undefined
     
-    var cssAttributes: js.UndefOr[AttributesType] = js.native
+    var cssAttributes: js.UndefOr[AttributesType] = js.undefined
     
     /** Optional, any additional HTML attached within <head> */
-    var head: js.UndefOr[String] = js.native
+    var head: js.UndefOr[String] = js.undefined
     
     /** Optional, defaults to `{ lang: 'en' }` */
-    var htmlAttributes: js.UndefOr[AttributesType] = js.native
+    var htmlAttributes: js.UndefOr[AttributesType] = js.undefined
     
-    var jsAttributes: js.UndefOr[AttributesType] = js.native
+    var jsAttributes: js.UndefOr[AttributesType] = js.undefined
     
     @JSName("js")
-    var js_ : js.UndefOr[js.Array[String]] = js.native
+    var js_ : js.UndefOr[js.Array[String]] = js.undefined
     
-    var publicPath: js.UndefOr[String] = js.native
+    var publicPath: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object PluginContext {
     
@@ -223,21 +240,20 @@ object mod {
     }
   }
   
-  @js.native
   trait PluginOptions extends StObject {
     
     /** Optional, use this for choosing chunks to include to your page. */
-    var chunks: js.UndefOr[js.Array[String]] = js.native
+    var chunks: js.UndefOr[js.Array[String]] = js.undefined
     
-    var context: js.UndefOr[PluginContext] = js.native
+    var context: js.UndefOr[PluginContext] = js.undefined
     
     /** Optional, defaults to `index.html` */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var publicPath: js.UndefOr[String] = js.native
+    var publicPath: js.UndefOr[String] = js.undefined
     
     /** define a template function to generate your own code */
-    var template: js.UndefOr[js.Function1[/* context */ PluginContext, String | js.Promise[String]]] = js.native
+    var template: js.UndefOr[js.Function1[/* context */ PluginContext, String | js.Promise[String]]] = js.undefined
   }
   object PluginOptions {
     

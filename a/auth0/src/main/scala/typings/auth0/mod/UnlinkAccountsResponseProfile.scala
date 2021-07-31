@@ -2,27 +2,25 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnlinkAccountsResponseProfile extends StObject {
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var email_verified: js.UndefOr[Boolean] = js.native
+  var email_verified: js.UndefOr[Boolean] = js.undefined
   
-  var family_name: js.UndefOr[String] = js.native
+  var family_name: js.UndefOr[String] = js.undefined
   
-  var given_name: js.UndefOr[String] = js.native
+  var given_name: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var phone_number: js.UndefOr[String] = js.native
+  var phone_number: js.UndefOr[String] = js.undefined
   
-  var phone_verified: js.UndefOr[Boolean] = js.native
+  var phone_verified: js.UndefOr[Boolean] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object UnlinkAccountsResponseProfile {
   

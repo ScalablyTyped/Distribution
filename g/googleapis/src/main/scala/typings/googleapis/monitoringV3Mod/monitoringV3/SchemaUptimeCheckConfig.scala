@@ -2,14 +2,12 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This message configures which resources and services to monitor for
   * availability.
   */
-@js.native
 trait SchemaUptimeCheckConfig extends StObject {
   
   /**
@@ -19,26 +17,26 @@ trait SchemaUptimeCheckConfig extends StObject {
     * page response&#39;s content. This field is optional and should only be
     * specified if a content match is required.
     */
-  var contentMatchers: js.UndefOr[js.Array[SchemaContentMatcher]] = js.native
+  var contentMatchers: js.UndefOr[js.Array[SchemaContentMatcher]] = js.undefined
   
   /**
     * A human-friendly name for the uptime check configuration. The display
     * name should be unique within a Stackdriver Workspace in order to make it
     * easier to identify; however, uniqueness is not enforced. Required.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Contains information needed to make an HTTP or HTTPS check.
     */
-  var httpCheck: js.UndefOr[SchemaHttpCheck] = js.native
+  var httpCheck: js.UndefOr[SchemaHttpCheck] = js.undefined
   
   /**
     * The internal checkers that this check will egress from. If is_internal is
     * true and this list is empty, the check will egress from all the
     * InternalCheckers configured for the project that owns this CheckConfig.
     */
-  var internalCheckers: js.UndefOr[js.Array[SchemaInternalChecker]] = js.native
+  var internalCheckers: js.UndefOr[js.Array[SchemaInternalChecker]] = js.undefined
   
   /**
     * The monitored resource
@@ -47,7 +45,7 @@ trait SchemaUptimeCheckConfig extends StObject {
     * uptime checks:  uptime_url  gce_instance  gae_app  aws_ec2_instance
     * aws_elb_load_balancer
     */
-  var monitoredResource: js.UndefOr[SchemaMonitoredResource] = js.native
+  var monitoredResource: js.UndefOr[SchemaMonitoredResource] = js.undefined
   
   /**
     * A unique resource name for this UptimeCheckConfig. The format
@@ -56,19 +54,19 @@ trait SchemaUptimeCheckConfig extends StObject {
     * create, the resource name is assigned by the server and included in the
     * response.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * How often, in seconds, the uptime check is performed. Currently, the only
     * supported values are 60s (1 minute), 300s (5 minutes), 600s (10 minutes),
     * and 900s (15 minutes). Optional, defaults to 60s.
     */
-  var period: js.UndefOr[String] = js.native
+  var period: js.UndefOr[String] = js.undefined
   
   /**
     * The group resource associated with the configuration.
     */
-  var resourceGroup: js.UndefOr[SchemaResourceGroup] = js.native
+  var resourceGroup: js.UndefOr[SchemaResourceGroup] = js.undefined
   
   /**
     * The list of regions from which the check will be run. Some regions
@@ -77,18 +75,18 @@ trait SchemaUptimeCheckConfig extends StObject {
     * provided, or an error message is returned. Not specifying this field will
     * result in uptime checks running from all regions.
     */
-  var selectedRegions: js.UndefOr[js.Array[String]] = js.native
+  var selectedRegions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Contains information needed to make a TCP check.
     */
-  var tcpCheck: js.UndefOr[SchemaTcpCheck] = js.native
+  var tcpCheck: js.UndefOr[SchemaTcpCheck] = js.undefined
   
   /**
     * The maximum amount of time to wait for the request to complete (must be
     * between 1 and 60 seconds). Required.
     */
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object SchemaUptimeCheckConfig {
   

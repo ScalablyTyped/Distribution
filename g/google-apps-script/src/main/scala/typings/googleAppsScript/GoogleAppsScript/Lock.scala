@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Lock {
@@ -37,16 +36,15 @@ object Lock {
     * lastTicketNumber
     * ScriptProperties
     */
-  @js.native
   trait Lock extends StObject {
     
-    def hasLock(): Boolean = js.native
+    def hasLock(): Boolean
     
-    def releaseLock(): Unit = js.native
+    def releaseLock(): Unit
     
-    def tryLock(timeoutInMillis: Integer): Boolean = js.native
+    def tryLock(timeoutInMillis: Integer): Boolean
     
-    def waitLock(timeoutInMillis: Integer): Unit = js.native
+    def waitLock(timeoutInMillis: Integer): Unit
   }
   object Lock {
     
@@ -82,14 +80,13 @@ object Lock {
     * Prevents concurrent access to sections of code. This can be useful when you have multiple users
     * or processes modifying a shared resource and want to prevent collisions.
     */
-  @js.native
   trait LockService extends StObject {
     
-    def getDocumentLock(): typings.googleAppsScript.GoogleAppsScript.Lock.Lock = js.native
+    def getDocumentLock(): typings.googleAppsScript.GoogleAppsScript.Lock.Lock
     
-    def getScriptLock(): typings.googleAppsScript.GoogleAppsScript.Lock.Lock = js.native
+    def getScriptLock(): typings.googleAppsScript.GoogleAppsScript.Lock.Lock
     
-    def getUserLock(): typings.googleAppsScript.GoogleAppsScript.Lock.Lock = js.native
+    def getUserLock(): typings.googleAppsScript.GoogleAppsScript.Lock.Lock
   }
   object LockService {
     

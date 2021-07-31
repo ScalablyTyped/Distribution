@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LatLongRect extends StObject {
   
   /** Max lat/long pair. */
-  var maxLatLng: js.UndefOr[LatLng] = js.native
+  var maxLatLng: js.UndefOr[LatLng] = js.undefined
   
   /** Min lat/long pair. */
-  var minLatLng: js.UndefOr[LatLng] = js.native
+  var minLatLng: js.UndefOr[LatLng] = js.undefined
 }
 object LatLongRect {
   

@@ -3,85 +3,70 @@ package typings.turbostatus
 import typings.turbostatus.turbostatusBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("turbostatus", "checkout")
+  @JSImport("turbostatus", JSImport.Namespace)
   @js.native
-  def checkout(folder: String, commit: String): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("turbostatus", "clone")
-  @js.native
-  def clone_(origin: String, folder: String): js.Promise[String] = js.native
+  @scala.inline
+  def checkout(folder: String, commit: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkout")(folder.asInstanceOf[js.Any], commit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("turbostatus", "describe")
-  @js.native
-  def describe(folder: String): js.Promise[Description] = js.native
+  @scala.inline
+  def clone_(origin: String, folder: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(origin.asInstanceOf[js.Any], folder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("turbostatus", "getBranch")
-  @js.native
-  def getBranch(folder: String): js.Promise[String] = js.native
+  @scala.inline
+  def describe(folder: String): js.Promise[Description] = ^.asInstanceOf[js.Dynamic].applyDynamic("describe")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Description]]
   
-  @JSImport("turbostatus", "getBranchFast")
-  @js.native
-  def getBranchFast(folder: String): js.Promise[String] = js.native
+  @scala.inline
+  def getBranch(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBranch")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("turbostatus", "getLocalCommit")
-  @js.native
-  def getLocalCommit(folder: String): js.Promise[String] = js.native
+  @scala.inline
+  def getBranchFast(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBranchFast")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("turbostatus", "getMergeBase")
-  @js.native
-  def getMergeBase(folder: String): js.Promise[String] = js.native
+  @scala.inline
+  def getLocalCommit(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalCommit")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("turbostatus", "getOrigin")
-  @js.native
-  def getOrigin(folder: String): js.Promise[String] = js.native
+  @scala.inline
+  def getMergeBase(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMergeBase")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("turbostatus", "getRemoteCommit")
-  @js.native
-  def getRemoteCommit(folder: String): js.Promise[String] = js.native
+  @scala.inline
+  def getOrigin(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrigin")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("turbostatus", "getRepos")
-  @js.native
-  def getRepos(folder: String): js.Promise[js.Array[Repository]] = js.native
-  @JSImport("turbostatus", "getRepos")
-  @js.native
-  def getRepos(folder: String, wildcard: String): js.Promise[js.Array[Repository]] = js.native
+  @scala.inline
+  def getRemoteCommit(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRemoteCommit")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("turbostatus", "hasUncommited")
-  @js.native
-  def hasUncommited(folder: String): js.Promise[Boolean] = js.native
+  @scala.inline
+  def getRepos(folder: String): js.Promise[js.Array[Repository]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepos")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Repository]]]
+  @scala.inline
+  def getRepos(folder: String, wildcard: String): js.Promise[js.Array[Repository]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepos")(folder.asInstanceOf[js.Any], wildcard.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Repository]]]
   
-  @JSImport("turbostatus", "hasUntracked")
-  @js.native
-  def hasUntracked(folder: String): js.Promise[Boolean] = js.native
+  @scala.inline
+  def hasUncommited(folder: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasUncommited")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("turbostatus", "info")
-  @js.native
-  def info(repo: Repository): js.Promise[Repository] = js.native
-  @JSImport("turbostatus", "info")
-  @js.native
-  def info(repo: Repository, remotes: Boolean): js.Promise[Repository] = js.native
+  @scala.inline
+  def hasUntracked(folder: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasUntracked")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("turbostatus", "isRepo")
-  @js.native
-  def isRepo(folder: String): js.Promise[Boolean] = js.native
+  @scala.inline
+  def info(repo: Repository): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
+  @scala.inline
+  def info(repo: Repository, remotes: Boolean): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(repo.asInstanceOf[js.Any], remotes.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
   
-  @JSImport("turbostatus", "references")
-  @js.native
-  def references(folder: String): js.Promise[String] = js.native
+  @scala.inline
+  def isRepo(folder: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isRepo")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @js.native
+  @scala.inline
+  def references(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("references")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  
   trait Description extends StObject {
     
-    var commitsSinceTag: String | `false` = js.native
+    var commitsSinceTag: String | `false`
     
-    var hash: String = js.native
+    var hash: String
     
-    var nearestTag: String | `false` = js.native
+    var nearestTag: String | `false`
   }
   object Description {
     
@@ -105,12 +90,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Repository extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
   }
   object Repository {
     

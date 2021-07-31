@@ -2,17 +2,15 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceStatus extends StObject {
   
-  var CompletedTasks: Double = js.native
+  var CompletedTasks: Double
   
-  var DesiredTasks: Double = js.native
+  var DesiredTasks: Double
   
-  var RunningTasks: Double = js.native
+  var RunningTasks: Double
 }
 object ServiceStatus {
   

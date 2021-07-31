@@ -3,13 +3,11 @@ package typings.postmanCollection.anon
 import typings.postmanCollection.mod.PropertyBaseDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Info extends StObject {
   
-  var info: PropertyBaseDefinition = js.native
+  var info: PropertyBaseDefinition
 }
 object Info {
   

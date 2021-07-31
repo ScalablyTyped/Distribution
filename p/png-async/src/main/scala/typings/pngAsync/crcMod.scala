@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object crcMod {
@@ -12,11 +11,13 @@ object crcMod {
   @JSImport("png-async/lib/crc", JSImport.Namespace)
   @js.native
   class ^ () extends CrcStream
+  @JSImport("png-async/lib/crc", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("png-async/lib/crc", "crc32")
-  @js.native
-  def crc32(buf: Buffer): Double = js.native
+  @scala.inline
+  def crc32(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @js.native
   trait CrcStream extends Writable {

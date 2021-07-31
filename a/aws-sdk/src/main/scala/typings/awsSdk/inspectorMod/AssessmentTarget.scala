@@ -2,36 +2,34 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssessmentTarget extends StObject {
   
   /**
     * The ARN that specifies the Amazon Inspector assessment target.
     */
-  var arn: Arn = js.native
+  var arn: Arn
   
   /**
     * The time at which the assessment target is created.
     */
-  var createdAt: Timestamp = js.native
+  var createdAt: Timestamp
   
   /**
     * The name of the Amazon Inspector assessment target.
     */
-  var name: AssessmentTargetName = js.native
+  var name: AssessmentTargetName
   
   /**
     * The ARN that specifies the resource group that is associated with the assessment target.
     */
-  var resourceGroupArn: js.UndefOr[Arn] = js.native
+  var resourceGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time at which UpdateAssessmentTarget is called.
     */
-  var updatedAt: Timestamp = js.native
+  var updatedAt: Timestamp
 }
 object AssessmentTarget {
   

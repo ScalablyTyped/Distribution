@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePortfolioOutput extends StObject {
   
   /**
     * Information about the portfolio.
     */
-  var PortfolioDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.PortfolioDetail] = js.native
+  var PortfolioDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.PortfolioDetail] = js.undefined
   
   /**
     * Information about the tags associated with the portfolio.
     */
-  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.undefined
 }
 object UpdatePortfolioOutput {
   

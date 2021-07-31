@@ -2,20 +2,20 @@ package typings.typescript.mod.server
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InstallTypes extends ProjectResponse {
+trait InstallTypes
+  extends StObject
+     with ProjectResponse {
   
-  val eventId: Double = js.native
+  val eventId: Double
   
   @JSName("kind")
-  val kind_InstallTypes: EventBeginInstallTypes | EventEndInstallTypes = js.native
+  val kind_InstallTypes: EventBeginInstallTypes | EventEndInstallTypes
   
-  val packagesToInstall: js.Array[String] = js.native
+  val packagesToInstall: js.Array[String]
   
-  val typingsInstallerVersion: String = js.native
+  val typingsInstallerVersion: String
 }
 object InstallTypes {
   

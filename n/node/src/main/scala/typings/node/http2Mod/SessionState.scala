@@ -2,29 +2,27 @@ package typings.node.http2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionState extends StObject {
   
-  var deflateDynamicTableSize: js.UndefOr[Double] = js.native
+  var deflateDynamicTableSize: js.UndefOr[Double] = js.undefined
   
-  var effectiveLocalWindowSize: js.UndefOr[Double] = js.native
+  var effectiveLocalWindowSize: js.UndefOr[Double] = js.undefined
   
-  var effectiveRecvDataLength: js.UndefOr[Double] = js.native
+  var effectiveRecvDataLength: js.UndefOr[Double] = js.undefined
   
-  var inflateDynamicTableSize: js.UndefOr[Double] = js.native
+  var inflateDynamicTableSize: js.UndefOr[Double] = js.undefined
   
-  var lastProcStreamID: js.UndefOr[Double] = js.native
+  var lastProcStreamID: js.UndefOr[Double] = js.undefined
   
-  var localWindowSize: js.UndefOr[Double] = js.native
+  var localWindowSize: js.UndefOr[Double] = js.undefined
   
-  var nextStreamID: js.UndefOr[Double] = js.native
+  var nextStreamID: js.UndefOr[Double] = js.undefined
   
-  var outboundQueueSize: js.UndefOr[Double] = js.native
+  var outboundQueueSize: js.UndefOr[Double] = js.undefined
   
-  var remoteWindowSize: js.UndefOr[Double] = js.native
+  var remoteWindowSize: js.UndefOr[Double] = js.undefined
 }
 object SessionState {
   

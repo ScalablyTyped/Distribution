@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +12,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("cuint", "UINT32")
   @js.native
-  class UINT32 protected () extends Uint {
+  class UINT32 protected ()
+    extends StObject
+       with Uint {
     // called as a constructor:
     def this(low: Double) = this()
     // tslint:disable-next-line:unified-signatures
@@ -28,7 +29,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("cuint", "UINT64")
   @js.native
-  class UINT64 protected () extends Uint {
+  class UINT64 protected ()
+    extends StObject
+       with Uint {
     // called as a constructor:
     def this(low: Double) = this()
     // tslint:disable-next-line:unified-signatures
@@ -114,7 +117,8 @@ object mod {
   
   @js.native
   trait Uint64Constructor[T /* <: Uint */]
-    extends UintConstructor[T]
+    extends StObject
+       with UintConstructor[T]
        with // called as constructor:
   Instantiable4[/* a00 */ Double, /* a16 */ Double, /* a32 */ Double, /* a48 */ Double, T] {
     
@@ -124,7 +128,8 @@ object mod {
   
   @js.native
   trait UintConstructor[T /* <: Uint */]
-    extends // called as a constructor:
+    extends StObject
+       with // called as a constructor:
   // tslint:disable-next-line:unified-signatures
   Instantiable1[(/* low */ Double) | (/* text */ String), T]
        with Instantiable2[(/* low */ Double) | (/* text */ String), /* high */ Double, T] {

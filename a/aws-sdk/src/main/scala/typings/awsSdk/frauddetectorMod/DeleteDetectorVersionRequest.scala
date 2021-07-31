@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDetectorVersionRequest extends StObject {
   
   /**
     * The ID of the parent detector for the detector version to delete.
     */
-  var detectorId: identifier = js.native
+  var detectorId: identifier
   
   /**
     * The ID of the detector version to delete.
     */
-  var detectorVersionId: wholeNumberVersionString = js.native
+  var detectorVersionId: wholeNumberVersionString
 }
 object DeleteDetectorVersionRequest {
   

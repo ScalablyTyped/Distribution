@@ -3,7 +3,6 @@ package typings.guacamoleClient.mod
 import typings.guacamoleClient.guacCommonMod.Mimetype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "AudioPlayer")
@@ -12,6 +11,10 @@ class AudioPlayer ()
   extends typings.guacamoleClient.audioPlayerMod.AudioPlayer
 /* static members */
 object AudioPlayer {
+  
+  @JSImport("guacamole-client", "AudioPlayer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Returns an instance of Guacamole.AudioPlayer providing support for the given
@@ -23,9 +26,8 @@ object AudioPlayer {
     * @return A Guacamole.AudioPlayer instance supporting the given mimetype and
     * reading from the given stream, or null if support for the given mimetype is absent.
     */
-  @JSImport("guacamole-client", "AudioPlayer.getInstance")
-  @js.native
-  def getInstance(stream: typings.guacamoleClient.inputStreamMod.InputStream, mimetype: Mimetype): typings.guacamoleClient.audioPlayerMod.AudioPlayer | Null = js.native
+  @scala.inline
+  def getInstance(stream: typings.guacamoleClient.inputStreamMod.InputStream, mimetype: Mimetype): typings.guacamoleClient.audioPlayerMod.AudioPlayer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(stream.asInstanceOf[js.Any], mimetype.asInstanceOf[js.Any])).asInstanceOf[typings.guacamoleClient.audioPlayerMod.AudioPlayer | Null]
   
   /**
     * Returns a list of all mimetypes supported by any built-in
@@ -37,7 +39,6 @@ object AudioPlayer {
     * however (see https://tools.ietf.org/html/rfc4856).
     * @returns A list of all mimetypes supported by any built-in Guacamole.AudioPlayer, excluding any parameters.
     */
-  @JSImport("guacamole-client", "AudioPlayer.getSupportedTypes")
-  @js.native
-  def getSupportedTypes(): js.Array[Mimetype] = js.native
+  @scala.inline
+  def getSupportedTypes(): js.Array[Mimetype] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedTypes")().asInstanceOf[js.Array[Mimetype]]
 }

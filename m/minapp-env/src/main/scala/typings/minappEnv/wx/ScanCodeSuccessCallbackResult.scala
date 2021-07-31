@@ -21,23 +21,21 @@ import typings.minappEnv.minappEnvStrings.UPC_EAN_EXTENSION
 import typings.minappEnv.minappEnvStrings.WX_CODE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScanCodeSuccessCallbackResult extends StObject {
   
   /** 所扫码的字符集 */
-  var charSet: String = js.native
+  var charSet: String
   
   /** 当所扫的码为当前小程序的合法二维码时，会返回此字段，内容为二维码携带的 path */
-  var path: String = js.native
+  var path: String
   
   /** 原始数据，base64编码 */
-  var rawData: String = js.native
+  var rawData: String
   
   /** 所扫码的内容 */
-  var result: String = js.native
+  var result: String
   
   /** 所扫码的类型
     *
@@ -61,7 +59,7 @@ trait ScanCodeSuccessCallbackResult extends StObject {
     * - 'UPC_EAN_EXTENSION': 一维码;
     * - 'WX_CODE': 二维码;
     * - 'CODE_25': 一维码; */
-  var scanType: QR_CODE | AZTEC | CODABAR | CODE_39 | CODE_93 | CODE_128 | DATA_MATRIX | EAN_8 | EAN_13 | ITF | MAXICODE | PDF_417 | RSS_14 | RSS_EXPANDED | UPC_A | UPC_E | UPC_EAN_EXTENSION | WX_CODE | CODE_25 = js.native
+  var scanType: QR_CODE | AZTEC | CODABAR | CODE_39 | CODE_93 | CODE_128 | DATA_MATRIX | EAN_8 | EAN_13 | ITF | MAXICODE | PDF_417 | RSS_14 | RSS_EXPANDED | UPC_A | UPC_E | UPC_EAN_EXTENSION | WX_CODE | CODE_25
 }
 object ScanCodeSuccessCallbackResult {
   

@@ -3,31 +3,29 @@ package typings.bootstrapMaxlength
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BootstrapMaxlength {
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Will allow the input to be over the customMaxLength. Useful in soft max situations.
       * @default false
       */
-    var allowOverMax: js.UndefOr[Boolean] = js.native
+    var allowOverMax: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true the threshold will be ignored and the remaining length indication will be always showing up while typing or on focus on the input
       * @default false
       */
-    var alwaysShow: js.UndefOr[Boolean] = js.native
+    var alwaysShow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Appends the maxlength indicator badge to the parent of the input rather than to the body.
       * @default false
       */
-    var appendToParent: js.UndefOr[Boolean] = js.native
+    var appendToParent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allows a custom attribute to display indicator without triggering native maxlength behaviour.
@@ -35,13 +33,13 @@ object BootstrapMaxlength {
       * 'overmax' class gets added when exceeded to allow user to implement form validation.
       * @default null (use the maxlength attribute and browser functionality)
       */
-    var customMaxAttribute: js.UndefOr[String] = js.native
+    var customMaxAttribute: js.UndefOr[String] = js.undefined
     
     /**
       * It's the class the element gets when the limit is reached. Default is "label label-important label-danger" (to support Bootstrap 2 and 3).
       * @default 'label label-important label-danger'
       */
-    var limitReachedClass: js.UndefOr[String] = js.native
+    var limitReachedClass: js.UndefOr[String] = js.undefined
     
     /**
       * An alternative way to provide the message text.
@@ -53,7 +51,7 @@ object BootstrapMaxlength {
       */
     var message: js.UndefOr[
         String | (js.Function2[/* currentText */ String, /* maxLength */ Number, String])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Is a string, define where to output the counter.
@@ -67,74 +65,74 @@ object BootstrapMaxlength {
           /* currentInputPosition */ PositionParam, 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Is a string outputted after the indicator.
       * @default ''
       */
-    var postText: js.UndefOr[String] = js.native
+    var postText: js.UndefOr[String] = js.undefined
     
     /**
       * Is a string of text that can be outputted in front of the indicator.
       * @default ''
       */
-    var preText: js.UndefOr[String] = js.native
+    var preText: js.UndefOr[String] = js.undefined
     
     /**
       * Represents the separator between the number of typed chars and total number of available chars.
       * @default ' / '
       */
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
     /**
       * If false, will display just the remaining length, e.g. will display remaining lenght instead of number of typed characters.
       * @default true
       */
-    var showCharsTyped: js.UndefOr[Boolean] = js.native
+    var showCharsTyped: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If false, will display just the number of typed characters, e.g. will not display the max length.
       * @default true
       */
-    var showMaxLength: js.UndefOr[Boolean] = js.native
+    var showMaxLength: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shows the badge as soon as it is added to the page, similar to alwaysShow
       * @default false
       */
-    var showOnReady: js.UndefOr[Boolean] = js.native
+    var showOnReady: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This is a number indicating how many chars are left to start displaying the indications
       * @default 10
       */
-    var threshold: js.UndefOr[Number] = js.native
+    var threshold: js.UndefOr[Number] = js.undefined
     
     /**
       * Count linebreak as 2 characters to match IE/Chrome textarea validation. As well as DB storage.
       * @default true
       */
-    var twoCharLinebreak: js.UndefOr[Boolean] = js.native
+    var twoCharLinebreak: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true the input will count using utf8 bytesize/encoding. For example: the '¢' character is counted as two characters.
       * @default false
       */
-    var utf8: js.UndefOr[Boolean] = js.native
+    var utf8: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If the browser doesn't support the maxlength attribute, attempt to type more than
       * the indicated chars, will be prevented.
       * @default false
       */
-    var validate: js.UndefOr[Boolean] = js.native
+    var validate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * It's the class of the element with the indicator. By default is the bootstrap "label label-success" but can be changed to anything you'd like.
       * @default 'label label-success'
       */
-    var warningClass: js.UndefOr[String] = js.native
+    var warningClass: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -275,33 +273,32 @@ object BootstrapMaxlength {
   /**
     * Possible options for the position of the counter. (passed to $.fn.css)
     */
-  @js.native
   trait PlacementOptions extends StObject {
     
     /**
       * The bottom position of the counter (Number of pixels, or a px or percent string)
       */
-    var bottom: js.UndefOr[Number | String] = js.native
+    var bottom: js.UndefOr[Number | String] = js.undefined
     
     /**
       * The left position of the counter (Number of pixels, or a px or percent string)
       */
-    var left: js.UndefOr[Number | String] = js.native
+    var left: js.UndefOr[Number | String] = js.undefined
     
     /**
       * The positioning to use. For example 'relative', 'absolute'
       */
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
     /**
       * The right position of the counter (Number of pixels, or a px or percent string)
       */
-    var right: js.UndefOr[Number | String] = js.native
+    var right: js.UndefOr[Number | String] = js.undefined
     
     /**
       * The top position of the counter (Number of pixels, or a px or percent string)
       */
-    var top: js.UndefOr[Number | String] = js.native
+    var top: js.UndefOr[Number | String] = js.undefined
   }
   object PlacementOptions {
     
@@ -349,20 +346,19 @@ object BootstrapMaxlength {
   /**
     * Representation of the current input position
     */
-  @js.native
   trait PositionParam extends StObject {
     
-    var bottom: Number = js.native
+    var bottom: Number
     
-    var height: Number = js.native
+    var height: Number
     
-    var left: Number = js.native
+    var left: Number
     
-    var right: Number = js.native
+    var right: Number
     
-    var top: Number = js.native
+    var top: Number
     
-    var width: Number = js.native
+    var width: Number
   }
   object PositionParam {
     

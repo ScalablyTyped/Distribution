@@ -7,12 +7,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsHttpChallengeHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Proxy-Authenticate or WWW-Authenticate HTTP header on an HTTP response. */
 @js.native
-trait HttpChallengeHeaderValueCollection extends Array[HttpChallengeHeaderValue] {
+trait HttpChallengeHeaderValueCollection
+  extends StObject
+     with Array[HttpChallengeHeaderValue] {
   
   /**
     * Adds a new HttpChallengeHeaderValue item to the end of the collection.

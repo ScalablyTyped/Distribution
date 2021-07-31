@@ -2,10 +2,8 @@ package typings.grpc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenericClientOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait GenericClientOptions extends StObject {
     * option is only a temporary stopgap measure to smooth an API breakage.
     * It is deprecated, and new code should not use it.
     */
-  var deprecatedArgumentOrder: js.UndefOr[Boolean] = js.native
+  var deprecatedArgumentOrder: js.UndefOr[Boolean] = js.undefined
 }
 object GenericClientOptions {
   

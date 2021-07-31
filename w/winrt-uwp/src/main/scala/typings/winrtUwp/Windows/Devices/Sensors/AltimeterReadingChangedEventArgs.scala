@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the altimeter reading–changed event. */
-@js.native
 trait AltimeterReadingChangedEventArgs extends StObject {
   
   /** Gets the most recent barometer reading. */
-  var reading: AltimeterReading = js.native
+  var reading: AltimeterReading
 }
 object AltimeterReadingChangedEventArgs {
   

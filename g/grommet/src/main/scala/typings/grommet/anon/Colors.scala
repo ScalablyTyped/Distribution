@@ -8,17 +8,15 @@ import typings.grommet.utilsMod.GraphColorsType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Colors extends StObject {
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
-  var colors: js.UndefOr[GraphColorsType] = js.native
+  var colors: js.UndefOr[GraphColorsType] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[Record[String, _]]] = js.native
+  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
 }
 object Colors {
   
@@ -47,10 +45,10 @@ object Colors {
     def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)

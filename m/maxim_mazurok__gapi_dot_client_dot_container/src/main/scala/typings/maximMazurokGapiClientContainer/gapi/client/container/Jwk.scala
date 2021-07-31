@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Jwk extends StObject {
   
   /** Algorithm. */
-  var alg: js.UndefOr[String] = js.native
+  var alg: js.UndefOr[String] = js.undefined
   
   /** Used for ECDSA keys. */
-  var crv: js.UndefOr[String] = js.native
+  var crv: js.UndefOr[String] = js.undefined
   
   /** Used for RSA keys. */
-  var e: js.UndefOr[String] = js.native
+  var e: js.UndefOr[String] = js.undefined
   
   /** Key ID. */
-  var kid: js.UndefOr[String] = js.native
+  var kid: js.UndefOr[String] = js.undefined
   
   /** Key Type. */
-  var kty: js.UndefOr[String] = js.native
+  var kty: js.UndefOr[String] = js.undefined
   
   /** Used for RSA keys. */
-  var n: js.UndefOr[String] = js.native
+  var n: js.UndefOr[String] = js.undefined
   
   /** Permitted uses for the public keys. */
-  var use: js.UndefOr[String] = js.native
+  var use: js.UndefOr[String] = js.undefined
   
   /** Used for ECDSA keys. */
-  var x: js.UndefOr[String] = js.native
+  var x: js.UndefOr[String] = js.undefined
   
   /** Used for ECDSA keys. */
-  var y: js.UndefOr[String] = js.native
+  var y: js.UndefOr[String] = js.undefined
 }
 object Jwk {
   

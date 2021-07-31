@@ -3,13 +3,11 @@ package typings.braintree.mod
 import typings.braintree.anon.GroupByCustomField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SettlementBatchSummaryGateway extends StObject {
   
-  def generate(request: GroupByCustomField): js.Promise[SettlementBatchSummary] = js.native
+  def generate(request: GroupByCustomField): js.Promise[SettlementBatchSummary]
 }
 object SettlementBatchSummaryGateway {
   

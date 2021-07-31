@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1Measurement extends StObject {
   
   /** Output only. Time that the trial has been running at the point of this measurement. */
-  var elapsedTime: js.UndefOr[String] = js.native
+  var elapsedTime: js.UndefOr[String] = js.undefined
   
   /** Provides a list of metrics that act as inputs into the objective function. */
-  var metrics: js.UndefOr[js.Array[GoogleCloudMlV1MeasurementMetric]] = js.native
+  var metrics: js.UndefOr[js.Array[GoogleCloudMlV1MeasurementMetric]] = js.undefined
   
   /** The number of steps a machine learning model has been trained for. Must be non-negative. */
-  var stepCount: js.UndefOr[String] = js.native
+  var stepCount: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1Measurement {
   

@@ -3,19 +3,17 @@ package typings.reachRouter.mod
 import typings.history.mod.LocationState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkGetProps extends StObject {
   
-  var href: String = js.native
+  var href: String
   
-  var isCurrent: Boolean = js.native
+  var isCurrent: Boolean
   
-  var isPartiallyCurrent: Boolean = js.native
+  var isPartiallyCurrent: Boolean
   
-  var location: WindowLocation[LocationState] = js.native
+  var location: WindowLocation[LocationState]
 }
 object LinkGetProps {
   

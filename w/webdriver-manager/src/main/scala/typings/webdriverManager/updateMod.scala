@@ -3,7 +3,6 @@ package typings.webdriverManager
 import typings.webdriverManager.cliMod.Program
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object updateMod {
@@ -12,9 +11,8 @@ object updateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("webdriver-manager/built/lib/cmds/update", "clearBrowserFile")
-  @js.native
-  def clearBrowserFile(): Unit = js.native
+  @scala.inline
+  def clearBrowserFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearBrowserFile")().asInstanceOf[Unit]
   
   @JSImport("webdriver-manager/built/lib/cmds/update", "program")
   @js.native

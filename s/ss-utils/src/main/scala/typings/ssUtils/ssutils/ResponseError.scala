@@ -2,17 +2,15 @@ package typings.ssUtils.ssutils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseError extends StObject {
   
-  var errorCode: String = js.native
+  var errorCode: String
   
-  var fieldName: String = js.native
+  var fieldName: String
   
-  var message: String = js.native
+  var message: String
 }
 object ResponseError {
   

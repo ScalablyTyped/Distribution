@@ -2,64 +2,53 @@ package typings.firebaseUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object environmentMod {
   
-  @JSImport("@firebase/util/dist/src/environment", "areCookiesEnabled")
+  @JSImport("@firebase/util/dist/src/environment", JSImport.Namespace)
   @js.native
-  def areCookiesEnabled(): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/util/dist/src/environment", "getUA")
-  @js.native
-  def getUA(): String = js.native
+  @scala.inline
+  def areCookiesEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("areCookiesEnabled")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util/dist/src/environment", "isBrowser")
-  @js.native
-  def isBrowser(): Boolean = js.native
+  @scala.inline
+  def getUA(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUA")().asInstanceOf[String]
   
-  @JSImport("@firebase/util/dist/src/environment", "isBrowserExtension")
-  @js.native
-  def isBrowserExtension(): Boolean = js.native
+  @scala.inline
+  def isBrowser(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowser")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util/dist/src/environment", "isElectron")
-  @js.native
-  def isElectron(): Boolean = js.native
+  @scala.inline
+  def isBrowserExtension(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserExtension")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util/dist/src/environment", "isIE")
-  @js.native
-  def isIE(): Boolean = js.native
+  @scala.inline
+  def isElectron(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElectron")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util/dist/src/environment", "isIndexedDBAvailable")
-  @js.native
-  def isIndexedDBAvailable(): Boolean = js.native
+  @scala.inline
+  def isIE(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIE")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util/dist/src/environment", "isMobileCordova")
-  @js.native
-  def isMobileCordova(): Boolean = js.native
+  @scala.inline
+  def isIndexedDBAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexedDBAvailable")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util/dist/src/environment", "isNode")
-  @js.native
-  def isNode(): Boolean = js.native
+  @scala.inline
+  def isMobileCordova(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMobileCordova")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util/dist/src/environment", "isNodeSdk")
-  @js.native
-  def isNodeSdk(): Boolean = js.native
+  @scala.inline
+  def isNode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNode")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util/dist/src/environment", "isReactNative")
-  @js.native
-  def isReactNative(): Boolean = js.native
+  @scala.inline
+  def isNodeSdk(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeSdk")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util/dist/src/environment", "isSafari")
-  @js.native
-  def isSafari(): Boolean = js.native
+  @scala.inline
+  def isReactNative(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactNative")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util/dist/src/environment", "isUWP")
-  @js.native
-  def isUWP(): Boolean = js.native
+  @scala.inline
+  def isSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafari")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util/dist/src/environment", "validateIndexedDBOpenable")
-  @js.native
-  def validateIndexedDBOpenable(): js.Promise[Boolean] = js.native
+  @scala.inline
+  def isUWP(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUWP")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def validateIndexedDBOpenable(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("validateIndexedDBOpenable")().asInstanceOf[js.Promise[Boolean]]
 }

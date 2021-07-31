@@ -2,27 +2,25 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskOrchestrationPlanReference extends StObject {
   
-  var artifactLocation: String = js.native
+  var artifactLocation: String
   
-  var artifactUri: String = js.native
+  var artifactUri: String
   
-  var definition: TaskOrchestrationOwner = js.native
+  var definition: TaskOrchestrationOwner
   
-  var owner: TaskOrchestrationOwner = js.native
+  var owner: TaskOrchestrationOwner
   
-  var planId: String = js.native
+  var planId: String
   
-  var planType: String = js.native
+  var planType: String
   
-  var scopeIdentifier: String = js.native
+  var scopeIdentifier: String
   
-  var version: Double = js.native
+  var version: Double
 }
 object TaskOrchestrationPlanReference {
   

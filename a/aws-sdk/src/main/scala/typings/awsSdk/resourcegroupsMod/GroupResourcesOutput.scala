@@ -2,21 +2,19 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupResourcesOutput extends StObject {
   
   /**
     * The ARNs of the resources that failed to be added to the group by this operation.
     */
-  var Failed: js.UndefOr[FailedResourceList] = js.native
+  var Failed: js.UndefOr[FailedResourceList] = js.undefined
   
   /**
     * The ARNs of the resources that were successfully added to the group by this operation.
     */
-  var Succeeded: js.UndefOr[ResourceArnList] = js.native
+  var Succeeded: js.UndefOr[ResourceArnList] = js.undefined
 }
 object GroupResourcesOutput {
   

@@ -6,14 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.io.XStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a temporary interface that is introduced to temporarily optimize the document storing process. PLEASE DO NOT USE IT, it might change in any
   * time and will be deprecated soon! Another solution will be introduced as final one.
   */
-@js.native
 trait XOptimizedStorage extends StObject {
   
   /**
@@ -21,10 +19,10 @@ trait XOptimizedStorage extends StObject {
     * contents as the stream the storage is based currently. Thus using of this method is very dangerous and should be avoided when possible. It is
     * applicable only for root storages.
     */
-  def attachToURL(sURL: String, bReadOnly: Boolean): Unit = js.native
+  def attachToURL(sURL: String, bReadOnly: Boolean): Unit
   
   /** allows to copy storage element directly, not guarantied to work. */
-  def copyElementDirectlyTo(sSourceName: String, xTargetStorage: XOptimizedStorage, sTargetName: String): Unit = js.native
+  def copyElementDirectlyTo(sSourceName: String, xTargetStorage: XOptimizedStorage, sTargetName: String): Unit
   
   /**
     * fills the provided stream with the last flushed version of data from the child stream of the storage.
@@ -36,25 +34,25 @@ trait XOptimizedStorage extends StObject {
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def copyStreamElementData(sStreamName: String, xTargetStream: XStream): Unit = js.native
+  def copyStreamElementData(sStreamName: String, xTargetStream: XStream): Unit
   
   /**
     * allows to get property of the child element with the specified name. The implementation of the method might allow to access only subset of the
     * supported by element properties.
     */
-  def getElementPropertyValue(sElementName: String, sPropertyName: String): js.Any = js.native
+  def getElementPropertyValue(sElementName: String, sPropertyName: String): js.Any
   
   /** allows to insert a raw stream representing non-encrypted stream with header. */
-  def insertRawNonEncrStreamElementDirect(sStreamName: String, xInStream: XInputStream): Unit = js.native
+  def insertRawNonEncrStreamElementDirect(sStreamName: String, xInStream: XInputStream): Unit
   
   /** allows to insert a stream to the storage directly. The stream must stay alive till the storage is committed. */
-  def insertStreamElementDirect(sStreamName: String, xInStream: XInputStream, aProperties: SeqEquiv[PropertyValue]): Unit = js.native
+  def insertStreamElementDirect(sStreamName: String, xInStream: XInputStream, aProperties: SeqEquiv[PropertyValue]): Unit
   
   /**
     * allows to switch storage persistence to the provided stream. The stream will be filled by the storage. If an empty reference is provided, the storage
     * will create a temporary stream to switch to itself. It is applicable only for root storages.
     */
-  def writeAndAttachToStream(xStream: XStream): Unit = js.native
+  def writeAndAttachToStream(xStream: XStream): Unit
 }
 object XOptimizedStorage {
   

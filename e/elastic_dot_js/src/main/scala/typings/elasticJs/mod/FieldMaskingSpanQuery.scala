@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "FieldMaskingSpanQuery")
 @js.native
-class FieldMaskingSpanQuery protected () extends Query {
+class FieldMaskingSpanQuery protected ()
+  extends StObject
+     with Query {
   /*
     Wraps a SpanQuery and hides the real field being searched across.
     */

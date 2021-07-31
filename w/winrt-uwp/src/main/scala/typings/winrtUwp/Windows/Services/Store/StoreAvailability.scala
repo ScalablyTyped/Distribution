@@ -4,7 +4,6 @@ import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a specific instance of a product SKU that can be purchased. */

@@ -2,17 +2,15 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Croporiginalsize extends StObject {
   
-  var crop_center: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var crop_center: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var crop_original_size: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var crop_original_size: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var crop_zoom: js.UndefOr[Double | String] = js.native
+  var crop_zoom: js.UndefOr[Double | String] = js.undefined
 }
 object Croporiginalsize {
   

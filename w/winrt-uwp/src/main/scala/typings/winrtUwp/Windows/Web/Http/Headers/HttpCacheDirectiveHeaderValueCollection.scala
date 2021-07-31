@@ -7,12 +7,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsHttpNameValueHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Cache-Control HTTP header on HTTP content associated with an HTTP request or response. */
 @js.native
-trait HttpCacheDirectiveHeaderValueCollection extends Array[HttpNameValueHeaderValue] {
+trait HttpCacheDirectiveHeaderValueCollection
+  extends StObject
+     with Array[HttpNameValueHeaderValue] {
   
   /**
     * Adds a new HttpNameValueHeaderValue item to the end of the collection.

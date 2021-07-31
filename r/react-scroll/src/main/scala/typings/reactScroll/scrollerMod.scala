@@ -2,61 +2,56 @@ package typings.reactScroll
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollerMod {
   
-  @JSImport("react-scroll/modules/mixins/scroller", "get")
+  @JSImport("react-scroll/modules/mixins/scroller", JSImport.Namespace)
   @js.native
-  def get(name: String): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-scroll/modules/mixins/scroller", "getActiveLink")
-  @js.native
-  def getActiveLink(): String = js.native
+  @scala.inline
+  def get(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("react-scroll/modules/mixins/scroller", "register")
-  @js.native
-  def register(name: String, element: js.Any): Unit = js.native
+  @scala.inline
+  def getActiveLink(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveLink")().asInstanceOf[String]
   
-  @JSImport("react-scroll/modules/mixins/scroller", "scrollTo")
-  @js.native
-  def scrollTo(to: String, props: js.Any): Unit = js.native
+  @scala.inline
+  def register(name: String, element: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(name.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-scroll/modules/mixins/scroller", "setActiveLink")
-  @js.native
-  def setActiveLink(link: String): Unit = js.native
+  @scala.inline
+  def scrollTo(to: String, props: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(to.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-scroll/modules/mixins/scroller", "unmount")
-  @js.native
-  def unmount(): Unit = js.native
+  @scala.inline
+  def setActiveLink(link: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setActiveLink")(link.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-scroll/modules/mixins/scroller", "unregister")
-  @js.native
-  def unregister(name: String): Unit = js.native
+  @scala.inline
+  def unmount(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmount")().asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def unregister(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Scroller extends StObject {
     
-    var get: js.Function1[/* name */ String, _] = js.native
+    var get: js.Function1[/* name */ String, js.Any]
     
-    var getActiveLink: js.Function0[String] = js.native
+    var getActiveLink: js.Function0[String]
     
-    var register: js.Function2[/* name */ String, /* element */ js.Any, Unit] = js.native
+    var register: js.Function2[/* name */ String, /* element */ js.Any, Unit]
     
-    var scrollTo: js.Function2[/* to */ String, /* props */ js.Any, Unit] = js.native
+    var scrollTo: js.Function2[/* to */ String, /* props */ js.Any, Unit]
     
-    var setActiveLink: js.Function1[/* link */ String, Unit] = js.native
+    var setActiveLink: js.Function1[/* link */ String, Unit]
     
-    var unmount: js.Function0[Unit] = js.native
+    var unmount: js.Function0[Unit]
     
-    var unregister: js.Function1[/* name */ String, Unit] = js.native
+    var unregister: js.Function1[/* name */ String, Unit]
   }
   object Scroller {
     
     @scala.inline
     def apply(
-      get: /* name */ String => _,
+      get: /* name */ String => js.Any,
       getActiveLink: () => String,
       register: (/* name */ String, /* element */ js.Any) => Unit,
       scrollTo: (/* to */ String, /* props */ js.Any) => Unit,
@@ -72,7 +67,7 @@ object scrollerMod {
     implicit class ScrollerMutableBuilder[Self <: Scroller] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGet(value: /* name */ String => _): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      def setGet(value: /* name */ String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetActiveLink(value: () => String): Self = StObject.set(x, "getActiveLink", js.Any.fromFunction0(value))

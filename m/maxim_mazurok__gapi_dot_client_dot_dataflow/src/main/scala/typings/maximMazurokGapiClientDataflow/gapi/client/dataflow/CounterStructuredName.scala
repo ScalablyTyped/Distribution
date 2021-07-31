@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CounterStructuredName extends StObject {
   
   /** Name of the optimized step being executed by the workers. */
-  var componentStepName: js.UndefOr[String] = js.native
+  var componentStepName: js.UndefOr[String] = js.undefined
   
   /** Name of the stage. An execution step contains multiple component steps. */
-  var executionStepName: js.UndefOr[String] = js.native
+  var executionStepName: js.UndefOr[String] = js.undefined
   
   /**
     * Index of an input collection that's being read from/written to as a side input. The index identifies a step's side inputs starting by 1 (e.g. the first side input has input_index 1,
     * the third has input_index 3). Side inputs are identified by a pair of (original_step_name, input_index). This field helps uniquely identify them.
     */
-  var inputIndex: js.UndefOr[Double] = js.native
+  var inputIndex: js.UndefOr[Double] = js.undefined
   
   /** Counter name. Not necessarily globally-unique, but unique within the context of the other fields. Required. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** One of the standard Origins defined above. */
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
   /** A string containing a more specific namespace of the counter's origin. */
-  var originNamespace: js.UndefOr[String] = js.native
+  var originNamespace: js.UndefOr[String] = js.undefined
   
   /** The step name requesting an operation, such as GBK. I.e. the ParDo causing a read/write from shuffle to occur, or a read from side inputs. */
-  var originalRequestingStepName: js.UndefOr[String] = js.native
+  var originalRequestingStepName: js.UndefOr[String] = js.undefined
   
   /** System generated name of the original step in the user's graph, before optimization. */
-  var originalStepName: js.UndefOr[String] = js.native
+  var originalStepName: js.UndefOr[String] = js.undefined
   
   /** Portion of this counter, either key or value. */
-  var portion: js.UndefOr[String] = js.native
+  var portion: js.UndefOr[String] = js.undefined
   
   /** ID of a particular worker. */
-  var workerId: js.UndefOr[String] = js.native
+  var workerId: js.UndefOr[String] = js.undefined
 }
 object CounterStructuredName {
   

@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -38,7 +37,6 @@ object mod {
     def top: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.top = "top".asInstanceOf[typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.top]
   }
   
-  @js.native
   trait IDockMonitorProps extends StObject {
     
     /**
@@ -48,23 +46,23 @@ object mod {
       *
       * @default undefined
       */
-    var changeMonitorKey: js.UndefOr[String] = js.native
+    var changeMonitorKey: js.UndefOr[String] = js.undefined
     
     /**
       * A key or a key combination that toggles the dock position.
       * Must be recognizable by parse-key (for example, 'ctrl-w')
       */
-    var changePositionKey: String = js.native
+    var changePositionKey: String
     
     /**
       * Any valid Redux DevTools monitor.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * @default true
       */
-    var defaultIsVisible: js.UndefOr[Boolean] = js.native
+    var defaultIsVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Where the dock appears on the screen.
@@ -72,7 +70,7 @@ object mod {
       *
       * @default 'right'
       */
-    var defaultPosition: js.UndefOr[DockPosition] = js.native
+    var defaultPosition: js.UndefOr[DockPosition] = js.undefined
     
     /**
       * Size of the dock. When fluid is true, a float (0.5 means half the window size).
@@ -80,20 +78,20 @@ object mod {
       *
       * @default 0.3 (3/10th of the window size)
       */
-    var defaultSize: js.UndefOr[Double] = js.native
+    var defaultSize: js.UndefOr[Double] = js.undefined
     
     /**
       * When true, the dock size is a fraction of the window size, fixed otherwise.
       *
       * @default true
       */
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A key or a key combination that toggles the dock visibility.
       * Must be recognizable by parse-key (for example, 'ctrl-h')
       */
-    var toggleVisibilityKey: String = js.native
+    var toggleVisibilityKey: String
   }
   object IDockMonitorProps {
     

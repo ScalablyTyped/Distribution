@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddRolesResponse extends StObject {
   
   /** Required. List of policy bindings that were added to the shared VPC host project. */
-  var policyBinding: js.UndefOr[js.Array[PolicyBinding]] = js.native
+  var policyBinding: js.UndefOr[js.Array[PolicyBinding]] = js.undefined
 }
 object AddRolesResponse {
   

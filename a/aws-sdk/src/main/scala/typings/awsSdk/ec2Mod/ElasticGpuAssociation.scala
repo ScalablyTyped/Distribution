@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticGpuAssociation extends StObject {
   
   /**
     * The ID of the association.
     */
-  var ElasticGpuAssociationId: js.UndefOr[String] = js.native
+  var ElasticGpuAssociationId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the association between the instance and the Elastic Graphics accelerator.
     */
-  var ElasticGpuAssociationState: js.UndefOr[String] = js.native
+  var ElasticGpuAssociationState: js.UndefOr[String] = js.undefined
   
   /**
     * The time the Elastic Graphics accelerator was associated with the instance.
     */
-  var ElasticGpuAssociationTime: js.UndefOr[String] = js.native
+  var ElasticGpuAssociationTime: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Elastic Graphics accelerator.
     */
-  var ElasticGpuId: js.UndefOr[String] = js.native
+  var ElasticGpuId: js.UndefOr[String] = js.undefined
 }
 object ElasticGpuAssociation {
   

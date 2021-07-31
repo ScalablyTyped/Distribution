@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WafExcludedRule extends StObject {
   
   /**
     * The unique identifier for the rule to exclude from the rule group.
     */
-  var RuleId: js.UndefOr[NonEmptyString] = js.native
+  var RuleId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object WafExcludedRule {
   

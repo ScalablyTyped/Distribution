@@ -14,14 +14,19 @@ import typings.wordpressShortcode.wordpressShortcodeStrings.closed
 import typings.wordpressShortcode.wordpressShortcodeStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@wordpress/shortcode", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@wordpress/shortcode", JSImport.Default)
   @js.native
-  class default () extends shortcode {
+  class default ()
+    extends StObject
+       with shortcode {
     def this(options: PartialShortcodeOptions) = this()
   }
   /* static members */
@@ -52,18 +57,16 @@ object mod {
       *
       * @returns Parsed shortcode attributes.
       */
-    @JSImport("@wordpress/shortcode", "default.attrs")
-    @js.native
-    def attrs(text: String): ShortcodeAttrs = js.native
+    @scala.inline
+    def attrs(text: String): ShortcodeAttrs = ^.asInstanceOf[js.Dynamic].applyDynamic("attrs")(text.asInstanceOf[js.Any]).asInstanceOf[ShortcodeAttrs]
     @scala.inline
     def attrs_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attrs")(x.asInstanceOf[js.Any])
     
     @JSImport("@wordpress/shortcode", "default.fromMatch")
     @js.native
     def fromMatch: js.Function1[/* match */ RegExpMatchArray, Shortcode_] = js.native
-    @JSImport("@wordpress/shortcode", "default.fromMatch")
-    @js.native
-    def fromMatch(`match`: RegExpMatchArray): Shortcode_ = js.native
+    @scala.inline
+    def fromMatch(`match`: RegExpMatchArray): Shortcode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[Shortcode_]
     @scala.inline
     def fromMatch_=(x: js.Function1[/* match */ RegExpMatchArray, Shortcode_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromMatch")(x.asInstanceOf[js.Any])
     
@@ -75,12 +78,10 @@ object mod {
         /* index */ js.UndefOr[Double], 
         js.UndefOr[ShortcodeMatch]
       ] = js.native
-    @JSImport("@wordpress/shortcode", "default.next")
-    @js.native
-    def next(tag: String, text: String): js.UndefOr[ShortcodeMatch] = js.native
-    @JSImport("@wordpress/shortcode", "default.next")
-    @js.native
-    def next(tag: String, text: String, index: Double): js.UndefOr[ShortcodeMatch] = js.native
+    @scala.inline
+    def next(tag: String, text: String): js.UndefOr[ShortcodeMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ShortcodeMatch]]
+    @scala.inline
+    def next(tag: String, text: String, index: Double): js.UndefOr[ShortcodeMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ShortcodeMatch]]
     @scala.inline
     def next_=(
       x: js.Function3[
@@ -94,9 +95,8 @@ object mod {
     @JSImport("@wordpress/shortcode", "default.regexp")
     @js.native
     def regexp: js.Function1[/* tag */ String, RegExp] = js.native
-    @JSImport("@wordpress/shortcode", "default.regexp")
-    @js.native
-    def regexp(tag: String): RegExp = js.native
+    @scala.inline
+    def regexp(tag: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(tag.asInstanceOf[js.Any]).asInstanceOf[RegExp]
     @scala.inline
     def regexp_=(x: js.Function1[/* tag */ String, RegExp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regexp")(x.asInstanceOf[js.Any])
     
@@ -108,9 +108,8 @@ object mod {
         /* callback */ js.Function1[/* shortcode */ Shortcode_, String], 
         String
       ] = js.native
-    @JSImport("@wordpress/shortcode", "default.replace")
-    @js.native
-    def replace(tag: String, text: String, callback: js.Function1[/* shortcode */ Shortcode_, String]): String = js.native
+    @scala.inline
+    def replace(tag: String, text: String, callback: js.Function1[/* shortcode */ Shortcode_, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
     @scala.inline
     def replace_=(
       x: js.Function3[
@@ -149,47 +148,42 @@ object mod {
       *
       * @returns Parsed shortcode attributes.
       */
+    @scala.inline
+    def apply(text: String): ShortcodeAttrs = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[ShortcodeAttrs]
+    
     @JSImport("@wordpress/shortcode", "attrs")
     @js.native
-    def apply(text: String): ShortcodeAttrs = js.native
+    val ^ : js.Any = js.native
     
     /**
       * Used to clear the memoized cache of this function.
       */
-    @JSImport("@wordpress/shortcode", "attrs.clear")
-    @js.native
-    def clear(): Unit = js.native
+    @scala.inline
+    def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   }
   
-  @JSImport("@wordpress/shortcode", "fromMatch")
-  @js.native
-  def fromMatch(`match`: RegExpMatchArray): Shortcode_ = js.native
+  @scala.inline
+  def fromMatch(`match`: RegExpMatchArray): Shortcode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[Shortcode_]
   
-  @JSImport("@wordpress/shortcode", "next")
-  @js.native
-  def next(tag: String, text: String): js.UndefOr[ShortcodeMatch] = js.native
-  @JSImport("@wordpress/shortcode", "next")
-  @js.native
-  def next(tag: String, text: String, index: Double): js.UndefOr[ShortcodeMatch] = js.native
+  @scala.inline
+  def next(tag: String, text: String): js.UndefOr[ShortcodeMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ShortcodeMatch]]
+  @scala.inline
+  def next(tag: String, text: String, index: Double): js.UndefOr[ShortcodeMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ShortcodeMatch]]
   
-  @JSImport("@wordpress/shortcode", "regexp")
-  @js.native
-  def regexp(tag: String): RegExp = js.native
+  @scala.inline
+  def regexp(tag: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(tag.asInstanceOf[js.Any]).asInstanceOf[RegExp]
   
-  @JSImport("@wordpress/shortcode", "replace")
-  @js.native
-  def replace(tag: String, text: String, callback: js.Function1[/* shortcode */ Shortcode_, String]): String = js.native
+  @scala.inline
+  def replace(tag: String, text: String, callback: js.Function1[/* shortcode */ Shortcode_, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@wordpress/shortcode", "string")
-  @js.native
-  def string(options: ShortcodeOptions): String = js.native
+  @scala.inline
+  def string(options: ShortcodeOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait ShortcodeAttrs extends StObject {
     
-    var named: Record[String, js.UndefOr[String]] = js.native
+    var named: Record[String, js.UndefOr[String]]
     
-    var numeric: js.Array[String] = js.native
+    var numeric: js.Array[String]
   }
   object ShortcodeAttrs {
     
@@ -213,14 +207,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ShortcodeMatch extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var index: Double = js.native
+    var index: Double
     
-    var shortcode: Shortcode_ = js.native
+    var shortcode: Shortcode_
   }
   object ShortcodeMatch {
     
@@ -244,16 +237,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ShortcodeOptions extends StObject {
     
-    var attrs: js.UndefOr[PartialShortcodeAttrs | String] = js.native
+    var attrs: js.UndefOr[PartialShortcodeAttrs | String] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var tag: String = js.native
+    var tag: String
     
-    var `type`: js.UndefOr[closed | `self-closing` | single] = js.native
+    var `type`: js.UndefOr[closed | `self-closing` | single] = js.undefined
   }
   object ShortcodeOptions {
     
@@ -289,7 +281,7 @@ object mod {
     }
   }
   
-  type Shortcode_ = Attrs with (Content | Type)
+  type Shortcode_ = Attrs & (Content | Type)
   
   @js.native
   trait shortcode extends StObject {

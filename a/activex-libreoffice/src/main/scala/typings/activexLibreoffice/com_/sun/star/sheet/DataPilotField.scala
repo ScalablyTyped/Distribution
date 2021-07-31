@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,15 +19,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If the data pilot table is based on a spreadsheet cell range, a field is represented by a column of the range and is named using the topmost cell of
   * the column.
   */
-@js.native
 trait DataPilotField
-  extends XNamed
+  extends StObject
+     with XNamed
      with XPropertySet
      with XDataPilotField
      with XDataPilotFieldGrouping {
   
   /** enables the automatic inclusion of only a number of items with the highest or lowest result values. */
-  var AutoShowInfo: DataPilotFieldAutoShowInfo = js.native
+  var AutoShowInfo: DataPilotFieldAutoShowInfo
   
   /**
     * specifies the function used to calculate results for this field.
@@ -36,7 +35,7 @@ trait DataPilotField
     * For column and row fields, this is the function for subtotals (GeneralFunction::NONE means no subtotals). For data fields, this is the function shown
     * in the data pilot table.
     */
-  var Function: GeneralFunction = js.native
+  var Function: GeneralFunction
   
   /**
     * specifies the function used to calculate results for this field.
@@ -45,32 +44,32 @@ trait DataPilotField
     * function shown in the data pilot table.
     * @since LibreOffice 5.3
     */
-  var Function2: Double = js.native
+  var Function2: Double
   
   /**
     * contains the grouping information of the DataPilot field.
     *
     * By changing the value of this property it is possible to modify the grouping settings of this field.
     */
-  var GroupInfo: DataPilotFieldGroupInfo = js.native
+  var GroupInfo: DataPilotFieldGroupInfo
   
   /** specifies whether this field has auto show information. */
-  var HasAutoShowInfo: Boolean = js.native
+  var HasAutoShowInfo: Boolean
   
   /** specifies whether this field has layout information. */
-  var HasLayoutInfo: Boolean = js.native
+  var HasLayoutInfo: Boolean
   
   /** specifies whether this field has a reference. */
-  var HasReference: Boolean = js.native
+  var HasReference: Boolean
   
   /** specifies whether this field has sorting information. */
-  var HasSortInfo: Boolean = js.native
+  var HasSortInfo: Boolean
   
   /** specifies whether this field is a group field. */
-  var IsGroupField: Boolean = js.native
+  var IsGroupField: Boolean
   
   /** controls how the field's items are laid out in the result table. */
-  var LayoutInfo: DataPilotFieldLayoutInfo = js.native
+  var LayoutInfo: DataPilotFieldLayoutInfo
   
   /**
     * specifies the orientation of the field.
@@ -78,19 +77,19 @@ trait DataPilotField
     * If the orientation of a field has been changed using this property, the field will be moved to the last position in the collection of all fields with
     * the specified orientation.
     */
-  var Orientation: DataPilotFieldOrientation = js.native
+  var Orientation: DataPilotFieldOrientation
   
   /** controls how the results are shown in relation to a selected reference result. */
-  var Reference: DataPilotFieldReference = js.native
+  var Reference: DataPilotFieldReference
   
   /** specifies the selected page which is used to filter the data pilot. */
-  var SelectedPage: String = js.native
+  var SelectedPage: String
   
   /** specifies whether to show this field also if it is empty or not. */
-  var ShowEmpty: Boolean = js.native
+  var ShowEmpty: Boolean
   
   /** controls how the field's items are sorted. */
-  var SortInfo: DataPilotFieldSortInfo = js.native
+  var SortInfo: DataPilotFieldSortInfo
   
   /**
     * specifies the functions used to calculate subtotals for this field.
@@ -103,7 +102,7 @@ trait DataPilotField
     * The order of the functions in this sequence is reflected in the DataPilot table. Multiple entries of the same function are ignored when setting the
     * property.
     */
-  var Subtotals: SafeArray[GeneralFunction] = js.native
+  var Subtotals: SafeArray[GeneralFunction]
   
   /**
     * specifies the functions used to calculate subtotals for this field.
@@ -118,16 +117,16 @@ trait DataPilotField
     * property.
     * @since LibreOffice 5.3
     */
-  var Subtotals2: SafeArray[Double] = js.native
+  var Subtotals2: SafeArray[Double]
   
   /** specifies whether to use the selected page to filter the data pilot or show all. */
-  var UseSelectedPage: Boolean = js.native
+  var UseSelectedPage: Boolean
   
   /**
     * specifies which hierarchy of the dimension is used.
     * @see com.sun.star.sheet.DataPilotSourceHierarchies
     */
-  var UsedHierarchy: String = js.native
+  var UsedHierarchy: String
 }
 object DataPilotField {
   

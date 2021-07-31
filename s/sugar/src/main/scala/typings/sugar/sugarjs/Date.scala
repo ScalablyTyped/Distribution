@@ -4,14 +4,200 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.std.Intl.DateTimeFormatOptions
+import typings.sugar.sugarjs.Object.ObjectMergeOptions
+import typings.sugar.sugarjs.Object.QueryStringOptions
+import typings.sugar.sugarjs.Object.mapFn
+import typings.sugar.sugarjs.Object.searchFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Date {
   
-  type Chainable[RawValue] = ChainableBase[RawValue] with typings.sugar.sugarjs.Object.ChainableBase[RawValue]
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.sugar.sugarjs.Object.ChainableBase because var conflicts: raw. Inlined add, add, addAll, addAll, average, average, average, count, count, defaults, defaults, every, every, exclude, exclude, filter, filter, find, find, forEach, has, has, intersect, invert, invert, isArguments, isArray, isBoolean, isDate, isEmpty, isEqual, isError, isFunction, isMap, isNumber, isObject, isRegExp, isSet, isString, keys, least, least, least, least, least, least, least, least, map, map, max, max, max, max, max, max, max, max, median, median, median, merge, merge, mergeAll, mergeAll, min, min, min, min, min, min, min, min, most, most, most, most, most, most, most, most, none, none, reduce, reduce, reject, reject, reject, reject, remove, remove, select, select, select, select, size, some, some, subtract, sum, sum, sum, tap, toQueryString, toQueryString, values */ @js.native
+  trait Chainable[RawValue]
+    extends StObject
+       with ChainableBase[RawValue] {
+    
+    def add[T](obj: js.Object): SugarDefaultChainable[js.Object] = js.native
+    def add[T](obj: js.Object, options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def addAll[T](sources: typings.sugar.Array[js.Object]): SugarDefaultChainable[js.Object] = js.native
+    def addAll[T](sources: typings.sugar.Array[js.Object], options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def average[T, U](): SugarDefaultChainable[Double] = js.native
+    def average[T, U](map: java.lang.String): SugarDefaultChainable[Double] = js.native
+    def average[T, U](map: mapFn[T, U]): SugarDefaultChainable[Double] = js.native
+    
+    def count[T](search: T): SugarDefaultChainable[Double] = js.native
+    def count[T](search: searchFn[T]): SugarDefaultChainable[Double] = js.native
+    
+    def defaults[T](sources: typings.sugar.Array[js.Object]): SugarDefaultChainable[js.Object] = js.native
+    def defaults[T](sources: typings.sugar.Array[js.Object], options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def every[T](search: T): SugarDefaultChainable[Boolean] = js.native
+    def every[T](search: searchFn[T]): SugarDefaultChainable[Boolean] = js.native
+    
+    def exclude[T](search: T): SugarDefaultChainable[js.Object] = js.native
+    def exclude[T](search: searchFn[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def filter[T](search: T): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    def filter[T](search: searchFn[T]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    
+    def find[T](search: T): SugarDefaultChainable[Boolean] = js.native
+    def find[T](search: searchFn[T]): SugarDefaultChainable[Boolean] = js.native
+    
+    def forEach[T](
+      eachFn: js.Function3[
+          /* val */ T, 
+          /* key */ java.lang.String, 
+          /* obj */ js.Object, 
+          SugarDefaultChainable[Unit]
+        ]
+    ): SugarDefaultChainable[js.Object] = js.native
+    
+    def has(key: java.lang.String): SugarDefaultChainable[Boolean] = js.native
+    def has(key: java.lang.String, inherited: Boolean): SugarDefaultChainable[Boolean] = js.native
+    
+    def intersect(obj: js.Object): SugarDefaultChainable[js.Object] = js.native
+    
+    def invert(): SugarDefaultChainable[js.Object] = js.native
+    def invert(multi: Boolean): SugarDefaultChainable[js.Object] = js.native
+    
+    def isArguments(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isArray(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isBoolean(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isDate(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isEmpty(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isEqual(obj: js.Object): SugarDefaultChainable[Boolean] = js.native
+    
+    def isError(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isFunction(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isMap(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isNumber(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isObject(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isRegExp(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isSet(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isString(): SugarDefaultChainable[Boolean] = js.native
+    
+    def keys[T](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    
+    def least[T, U](): SugarDefaultChainable[T] = js.native
+    def least[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
+    def least[T, U](all: Boolean, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def least[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def least[T, U](all: Unit, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def least[T, U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def least[T, U](map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def least[T, U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    
+    def map[T, U](map: java.lang.String): SugarDefaultChainable[js.Object] = js.native
+    def map[T, U](map: mapFn[T, U]): SugarDefaultChainable[js.Object] = js.native
+    
+    def max[T, U](): SugarDefaultChainable[T] = js.native
+    def max[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
+    def max[T, U](all: Boolean, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def max[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def max[T, U](all: Unit, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def max[T, U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def max[T, U](map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def max[T, U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    
+    def median[T, U](): SugarDefaultChainable[Double] = js.native
+    def median[T, U](map: java.lang.String): SugarDefaultChainable[Double] = js.native
+    def median[T, U](map: mapFn[T, U]): SugarDefaultChainable[Double] = js.native
+    
+    def merge[T](source: js.Object): SugarDefaultChainable[js.Object] = js.native
+    def merge[T](source: js.Object, options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def mergeAll[T](sources: typings.sugar.Array[js.Object]): SugarDefaultChainable[js.Object] = js.native
+    def mergeAll[T](sources: typings.sugar.Array[js.Object], options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def min[T, U](): SugarDefaultChainable[T] = js.native
+    def min[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
+    def min[T, U](all: Boolean, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def min[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def min[T, U](all: Unit, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def min[T, U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def min[T, U](map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def min[T, U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    
+    def most[T, U](): SugarDefaultChainable[T] = js.native
+    def most[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
+    def most[T, U](all: Boolean, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def most[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def most[T, U](all: Unit, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def most[T, U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def most[T, U](map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def most[T, U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    
+    def none[T](search: T): SugarDefaultChainable[Boolean] = js.native
+    def none[T](search: searchFn[T]): SugarDefaultChainable[Boolean] = js.native
+    
+    def reduce[T](
+      reduceFn: js.Function4[
+          /* acc */ T, 
+          /* val */ T, 
+          /* key */ java.lang.String, 
+          /* obj */ js.Object, 
+          SugarDefaultChainable[Unit]
+        ]
+    ): SugarDefaultChainable[T] = js.native
+    def reduce[T](
+      reduceFn: js.Function4[
+          /* acc */ T, 
+          /* val */ T, 
+          /* key */ java.lang.String, 
+          /* obj */ js.Object, 
+          SugarDefaultChainable[Unit]
+        ],
+      init: js.Any
+    ): SugarDefaultChainable[T] = js.native
+    
+    def reject(find: java.lang.String): SugarDefaultChainable[js.Object] = js.native
+    def reject(find: js.Object): SugarDefaultChainable[js.Object] = js.native
+    def reject(find: typings.sugar.Array[java.lang.String]): SugarDefaultChainable[js.Object] = js.native
+    def reject(find: typings.sugar.RegExp): SugarDefaultChainable[js.Object] = js.native
+    
+    def remove[T](search: T): SugarDefaultChainable[js.Object] = js.native
+    def remove[T](search: searchFn[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def select(find: java.lang.String): SugarDefaultChainable[js.Object] = js.native
+    def select(find: js.Object): SugarDefaultChainable[js.Object] = js.native
+    def select(find: typings.sugar.Array[java.lang.String]): SugarDefaultChainable[js.Object] = js.native
+    def select(find: typings.sugar.RegExp): SugarDefaultChainable[js.Object] = js.native
+    
+    def size(): SugarDefaultChainable[Double] = js.native
+    
+    def some[T](search: T): SugarDefaultChainable[Boolean] = js.native
+    def some[T](search: searchFn[T]): SugarDefaultChainable[Boolean] = js.native
+    
+    def subtract(obj: js.Object): SugarDefaultChainable[js.Object] = js.native
+    
+    def sum[T, U](): SugarDefaultChainable[Double] = js.native
+    def sum[T, U](map: java.lang.String): SugarDefaultChainable[Double] = js.native
+    def sum[T, U](map: mapFn[T, U]): SugarDefaultChainable[Double] = js.native
+    
+    def tap(tapFn: js.Function1[/* obj */ js.Object, SugarDefaultChainable[js.Any]]): SugarDefaultChainable[js.Object] = js.native
+    
+    def toQueryString[T, U](): SugarDefaultChainable[js.Object] = js.native
+    def toQueryString[T, U](options: QueryStringOptions[T, U]): SugarDefaultChainable[js.Object] = js.native
+    
+    def values[T](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+  }
   
   @js.native
   trait ChainableBase[RawValue] extends StObject {
@@ -46,76 +232,21 @@ object Date {
     def advance(set: js.Object): SugarDefaultChainable[typings.sugar.Date] = js.native
     def advance(set: js.Object, reset: Boolean): SugarDefaultChainable[typings.sugar.Date] = js.native
     def advance(year: Double, month: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def advance(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def advance(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def advance(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def advance(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def advance(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def advance(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def advance(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: Double,
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
     def advance(year: Double, month: Double, day: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def advance(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def advance(year: Double, month: Double, day: Double, hour: js.UndefOr[scala.Nothing], minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def advance(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
     def advance(year: Double, month: Double, day: Double, hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def advance(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
     def advance(year: Double, month: Double, day: Double, hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
     def advance(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def advance(year: Double, month: Double, day: Double, hour: Double, minute: Unit, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def advance(year: Double, month: Double, day: Double, hour: Unit, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def advance(year: Double, month: Double, day: Double, hour: Unit, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def advance(year: Double, month: Double, day: Double, hour: Unit, minute: Unit, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def advance(year: Double, month: Double, day: Unit, hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def advance(year: Double, month: Double, day: Unit, hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def advance(year: Double, month: Double, day: Unit, hour: Double, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def advance(year: Double, month: Double, day: Unit, hour: Double, minute: Unit, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def advance(year: Double, month: Double, day: Unit, hour: Unit, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def advance(year: Double, month: Double, day: Unit, hour: Unit, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def advance(year: Double, month: Double, day: Unit, hour: Unit, minute: Unit, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
     
     def beginningOfDay(): SugarDefaultChainable[typings.sugar.Date] = js.native
     def beginningOfDay(localeCode: java.lang.String): SugarDefaultChainable[typings.sugar.Date] = js.native
@@ -145,11 +276,11 @@ object Date {
     def daysSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
     def daysUntil(): SugarDefaultChainable[Double] = js.native
-    def daysUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def daysUntil(d: java.lang.String): SugarDefaultChainable[Double] = js.native
     def daysUntil(d: java.lang.String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def daysUntil(d: Double): SugarDefaultChainable[Double] = js.native
     def daysUntil(d: Double, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
+    def daysUntil(d: Unit, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def daysUntil(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
     def daysUntil(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
@@ -168,9 +299,9 @@ object Date {
     def endOfYear(localeCode: java.lang.String): SugarDefaultChainable[typings.sugar.Date] = js.native
     
     def format(): SugarDefaultChainable[java.lang.String] = js.native
-    def format(f: js.UndefOr[scala.Nothing], localeCode: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def format(f: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def format(f: java.lang.String, localeCode: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
+    def format(f: Unit, localeCode: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     
     def full(): SugarDefaultChainable[java.lang.String] = js.native
     def full(localeCode: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
@@ -239,11 +370,11 @@ object Date {
     def hoursSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
     def hoursUntil(): SugarDefaultChainable[Double] = js.native
-    def hoursUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def hoursUntil(d: java.lang.String): SugarDefaultChainable[Double] = js.native
     def hoursUntil(d: java.lang.String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def hoursUntil(d: Double): SugarDefaultChainable[Double] = js.native
     def hoursUntil(d: Double, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
+    def hoursUntil(d: Unit, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def hoursUntil(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
     def hoursUntil(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
@@ -368,11 +499,11 @@ object Date {
     def millisecondsSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
     def millisecondsUntil(): SugarDefaultChainable[Double] = js.native
-    def millisecondsUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def millisecondsUntil(d: java.lang.String): SugarDefaultChainable[Double] = js.native
     def millisecondsUntil(d: java.lang.String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def millisecondsUntil(d: Double): SugarDefaultChainable[Double] = js.native
     def millisecondsUntil(d: Double, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
+    def millisecondsUntil(d: Unit, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def millisecondsUntil(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
     def millisecondsUntil(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
@@ -388,11 +519,11 @@ object Date {
     def minutesSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
     def minutesUntil(): SugarDefaultChainable[Double] = js.native
-    def minutesUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def minutesUntil(d: java.lang.String): SugarDefaultChainable[Double] = js.native
     def minutesUntil(d: java.lang.String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def minutesUntil(d: Double): SugarDefaultChainable[Double] = js.native
     def minutesUntil(d: Double, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
+    def minutesUntil(d: Unit, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def minutesUntil(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
     def minutesUntil(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
@@ -408,19 +539,20 @@ object Date {
     def monthsSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
     def monthsUntil(): SugarDefaultChainable[Double] = js.native
-    def monthsUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def monthsUntil(d: java.lang.String): SugarDefaultChainable[Double] = js.native
     def monthsUntil(d: java.lang.String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def monthsUntil(d: Double): SugarDefaultChainable[Double] = js.native
     def monthsUntil(d: Double, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
+    def monthsUntil(d: Unit, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def monthsUntil(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
     def monthsUntil(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
     var raw: RawValue = js.native
     
     def relative(): SugarDefaultChainable[java.lang.String] = js.native
+    def relative(localeCode: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def relative(
-      localeCode: js.UndefOr[scala.Nothing],
+      localeCode: java.lang.String,
       relativeFn: js.Function4[
           /* num */ Double, 
           /* unit */ Double, 
@@ -429,9 +561,8 @@ object Date {
           SugarDefaultChainable[java.lang.String]
         ]
     ): SugarDefaultChainable[java.lang.String] = js.native
-    def relative(localeCode: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def relative(
-      localeCode: java.lang.String,
+      localeCode: Unit,
       relativeFn: js.Function4[
           /* num */ Double, 
           /* unit */ Double, 
@@ -458,9 +589,9 @@ object Date {
     def relativeTo(d: typings.sugar.Date, localeCode: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     
     def reset(): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def reset(unit: js.UndefOr[scala.Nothing], localeCode: java.lang.String): SugarDefaultChainable[typings.sugar.Date] = js.native
     def reset(unit: java.lang.String): SugarDefaultChainable[typings.sugar.Date] = js.native
     def reset(unit: java.lang.String, localeCode: java.lang.String): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def reset(unit: Unit, localeCode: java.lang.String): SugarDefaultChainable[typings.sugar.Date] = js.native
     
     def rewind(milliseconds: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
     def rewind(set: java.lang.String): SugarDefaultChainable[typings.sugar.Date] = js.native
@@ -468,76 +599,21 @@ object Date {
     def rewind(set: js.Object): SugarDefaultChainable[typings.sugar.Date] = js.native
     def rewind(set: js.Object, reset: Boolean): SugarDefaultChainable[typings.sugar.Date] = js.native
     def rewind(year: Double, month: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def rewind(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def rewind(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def rewind(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def rewind(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def rewind(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def rewind(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def rewind(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: Double,
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
     def rewind(year: Double, month: Double, day: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def rewind(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def rewind(year: Double, month: Double, day: Double, hour: js.UndefOr[scala.Nothing], minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def rewind(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
     def rewind(year: Double, month: Double, day: Double, hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def rewind(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
     def rewind(year: Double, month: Double, day: Double, hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
     def rewind(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def rewind(year: Double, month: Double, day: Double, hour: Double, minute: Unit, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def rewind(year: Double, month: Double, day: Double, hour: Unit, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def rewind(year: Double, month: Double, day: Double, hour: Unit, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def rewind(year: Double, month: Double, day: Double, hour: Unit, minute: Unit, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def rewind(year: Double, month: Double, day: Unit, hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def rewind(year: Double, month: Double, day: Unit, hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def rewind(year: Double, month: Double, day: Unit, hour: Double, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def rewind(year: Double, month: Double, day: Unit, hour: Double, minute: Unit, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def rewind(year: Double, month: Double, day: Unit, hour: Unit, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def rewind(year: Double, month: Double, day: Unit, hour: Unit, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def rewind(year: Double, month: Double, day: Unit, hour: Unit, minute: Unit, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
     
     def secondsAgo(): SugarDefaultChainable[Double] = js.native
     
@@ -551,11 +627,11 @@ object Date {
     def secondsSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
     def secondsUntil(): SugarDefaultChainable[Double] = js.native
-    def secondsUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def secondsUntil(d: java.lang.String): SugarDefaultChainable[Double] = js.native
     def secondsUntil(d: java.lang.String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def secondsUntil(d: Double): SugarDefaultChainable[Double] = js.native
     def secondsUntil(d: Double, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
+    def secondsUntil(d: Unit, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def secondsUntil(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
     def secondsUntil(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
@@ -563,101 +639,46 @@ object Date {
     def set(set: js.Object): SugarDefaultChainable[typings.sugar.Date] = js.native
     def set(set: js.Object, reset: Boolean): SugarDefaultChainable[typings.sugar.Date] = js.native
     def set(year: Double, month: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def set(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def set(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def set(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def set(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def set(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def set(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def set(
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: Double,
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
     def set(year: Double, month: Double, day: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def set(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def set(year: Double, month: Double, day: Double, hour: js.UndefOr[scala.Nothing], minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def set(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
     def set(year: Double, month: Double, day: Double, hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
-    def set(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): SugarDefaultChainable[typings.sugar.Date] = js.native
     def set(year: Double, month: Double, day: Double, hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
     def set(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def set(year: Double, month: Double, day: Double, hour: Double, minute: Unit, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def set(year: Double, month: Double, day: Double, hour: Unit, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def set(year: Double, month: Double, day: Double, hour: Unit, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def set(year: Double, month: Double, day: Double, hour: Unit, minute: Unit, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def set(year: Double, month: Double, day: Unit, hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def set(year: Double, month: Double, day: Unit, hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def set(year: Double, month: Double, day: Unit, hour: Double, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def set(year: Double, month: Double, day: Unit, hour: Double, minute: Unit, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def set(year: Double, month: Double, day: Unit, hour: Unit, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def set(year: Double, month: Double, day: Unit, hour: Unit, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+    def set(year: Double, month: Double, day: Unit, hour: Unit, minute: Unit, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
     
     def setDate(date: Double): SugarDefaultChainable[Double] = js.native
     
     def setFullYear(year: Double): SugarDefaultChainable[Double] = js.native
-    def setFullYear(year: Double, month: js.UndefOr[scala.Nothing], date: Double): SugarDefaultChainable[Double] = js.native
     def setFullYear(year: Double, month: Double): SugarDefaultChainable[Double] = js.native
     def setFullYear(year: Double, month: Double, date: Double): SugarDefaultChainable[Double] = js.native
+    def setFullYear(year: Double, month: Unit, date: Double): SugarDefaultChainable[Double] = js.native
     
     def setHours(hours: Double): SugarDefaultChainable[Double] = js.native
-    def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
-    def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double): SugarDefaultChainable[Double] = js.native
-    def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
     def setHours(hours: Double, min: Double): SugarDefaultChainable[Double] = js.native
-    def setHours(hours: Double, min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
     def setHours(hours: Double, min: Double, sec: Double): SugarDefaultChainable[Double] = js.native
     def setHours(hours: Double, min: Double, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
+    def setHours(hours: Double, min: Double, sec: Unit, ms: Double): SugarDefaultChainable[Double] = js.native
+    def setHours(hours: Double, min: Unit, sec: Double): SugarDefaultChainable[Double] = js.native
+    def setHours(hours: Double, min: Unit, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
+    def setHours(hours: Double, min: Unit, sec: Unit, ms: Double): SugarDefaultChainable[Double] = js.native
     
     def setISOWeek(num: Double): SugarDefaultChainable[Unit] = js.native
     
     def setMilliseconds(ms: Double): SugarDefaultChainable[Double] = js.native
     
     def setMinutes(min: Double): SugarDefaultChainable[Double] = js.native
-    def setMinutes(min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
     def setMinutes(min: Double, sec: Double): SugarDefaultChainable[Double] = js.native
     def setMinutes(min: Double, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
+    def setMinutes(min: Double, sec: Unit, ms: Double): SugarDefaultChainable[Double] = js.native
     
     def setMonth(month: Double): SugarDefaultChainable[Double] = js.native
     def setMonth(month: Double, date: Double): SugarDefaultChainable[Double] = js.native
@@ -673,25 +694,25 @@ object Date {
     def setUTCDate(date: Double): SugarDefaultChainable[Double] = js.native
     
     def setUTCFullYear(year: Double): SugarDefaultChainable[Double] = js.native
-    def setUTCFullYear(year: Double, month: js.UndefOr[scala.Nothing], date: Double): SugarDefaultChainable[Double] = js.native
     def setUTCFullYear(year: Double, month: Double): SugarDefaultChainable[Double] = js.native
     def setUTCFullYear(year: Double, month: Double, date: Double): SugarDefaultChainable[Double] = js.native
+    def setUTCFullYear(year: Double, month: Unit, date: Double): SugarDefaultChainable[Double] = js.native
     
     def setUTCHours(hours: Double): SugarDefaultChainable[Double] = js.native
-    def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
-    def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double): SugarDefaultChainable[Double] = js.native
-    def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
     def setUTCHours(hours: Double, min: Double): SugarDefaultChainable[Double] = js.native
-    def setUTCHours(hours: Double, min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
     def setUTCHours(hours: Double, min: Double, sec: Double): SugarDefaultChainable[Double] = js.native
     def setUTCHours(hours: Double, min: Double, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
+    def setUTCHours(hours: Double, min: Double, sec: Unit, ms: Double): SugarDefaultChainable[Double] = js.native
+    def setUTCHours(hours: Double, min: Unit, sec: Double): SugarDefaultChainable[Double] = js.native
+    def setUTCHours(hours: Double, min: Unit, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
+    def setUTCHours(hours: Double, min: Unit, sec: Unit, ms: Double): SugarDefaultChainable[Double] = js.native
     
     def setUTCMilliseconds(ms: Double): SugarDefaultChainable[Double] = js.native
     
     def setUTCMinutes(min: Double): SugarDefaultChainable[Double] = js.native
-    def setUTCMinutes(min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
     def setUTCMinutes(min: Double, sec: Double): SugarDefaultChainable[Double] = js.native
     def setUTCMinutes(min: Double, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
+    def setUTCMinutes(min: Double, sec: Unit, ms: Double): SugarDefaultChainable[Double] = js.native
     
     def setUTCMonth(month: Double): SugarDefaultChainable[Double] = js.native
     def setUTCMonth(month: Double, date: Double): SugarDefaultChainable[Double] = js.native
@@ -712,22 +733,22 @@ object Date {
     def toJSON(key: js.Any): SugarDefaultChainable[java.lang.String] = js.native
     
     def toLocaleDateString(): SugarDefaultChainable[java.lang.String] = js.native
-    def toLocaleDateString(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleDateString(locales: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleDateString(locales: java.lang.String, options: DateTimeFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
+    def toLocaleDateString(locales: Unit, options: DateTimeFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleDateString(locales: typings.sugar.Array[java.lang.String]): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleDateString(locales: typings.sugar.Array[java.lang.String], options: DateTimeFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
     
-    def toLocaleString(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleString(locales: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleString(locales: java.lang.String, options: DateTimeFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
+    def toLocaleString(locales: Unit, options: DateTimeFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleString(locales: typings.sugar.Array[java.lang.String]): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleString(locales: typings.sugar.Array[java.lang.String], options: DateTimeFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
     
     def toLocaleTimeString(): SugarDefaultChainable[java.lang.String] = js.native
-    def toLocaleTimeString(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleTimeString(locales: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleTimeString(locales: java.lang.String, options: DateTimeFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
+    def toLocaleTimeString(locales: Unit, options: DateTimeFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleTimeString(locales: typings.sugar.Array[java.lang.String]): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleTimeString(locales: typings.sugar.Array[java.lang.String], options: DateTimeFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
     
@@ -747,11 +768,11 @@ object Date {
     def weeksSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
     def weeksUntil(): SugarDefaultChainable[Double] = js.native
-    def weeksUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def weeksUntil(d: java.lang.String): SugarDefaultChainable[Double] = js.native
     def weeksUntil(d: java.lang.String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def weeksUntil(d: Double): SugarDefaultChainable[Double] = js.native
     def weeksUntil(d: Double, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
+    def weeksUntil(d: Unit, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def weeksUntil(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
     def weeksUntil(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
@@ -767,35 +788,36 @@ object Date {
     def yearsSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     
     def yearsUntil(): SugarDefaultChainable[Double] = js.native
-    def yearsUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def yearsUntil(d: java.lang.String): SugarDefaultChainable[Double] = js.native
     def yearsUntil(d: java.lang.String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def yearsUntil(d: Double): SugarDefaultChainable[Double] = js.native
     def yearsUntil(d: Double, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
+    def yearsUntil(d: Unit, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
     def yearsUntil(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
     def yearsUntil(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   }
   
   @js.native
   trait Constructor
-    extends SugarNamespace
+    extends StObject
+       with SugarNamespace
        with Instantiable0[Chainable[typings.sugar.Date]]
        with Instantiable1[
           (/* d */ typings.sugar.Date) | (/* d */ Double) | (/* d */ java.lang.String), 
           Chainable[typings.sugar.Date]
         ]
        with Instantiable2[
-          js.UndefOr[(/* d */ typings.sugar.Date) | (/* d */ Double) | (/* d */ java.lang.String)], 
+          (/* d */ typings.sugar.Date) | (/* d */ Double) | (/* d */ java.lang.String) | (/* d */ Unit), 
           /* options */ DateCreateOptions, 
           Chainable[typings.sugar.Date]
         ] {
     
     def apply(): Chainable[typings.sugar.Date] = js.native
-    def apply(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Chainable[typings.sugar.Date] = js.native
     def apply(d: java.lang.String): Chainable[typings.sugar.Date] = js.native
     def apply(d: java.lang.String, options: DateCreateOptions): Chainable[typings.sugar.Date] = js.native
     def apply(d: Double): Chainable[typings.sugar.Date] = js.native
     def apply(d: Double, options: DateCreateOptions): Chainable[typings.sugar.Date] = js.native
+    def apply(d: Unit, options: DateCreateOptions): Chainable[typings.sugar.Date] = js.native
     def apply(d: typings.sugar.Date): Chainable[typings.sugar.Date] = js.native
     def apply(d: typings.sugar.Date, options: DateCreateOptions): Chainable[typings.sugar.Date] = js.native
     
@@ -831,92 +853,7 @@ object Date {
     def advance(instance: typings.sugar.Date, set: js.Object): typings.sugar.Date = js.native
     def advance(instance: typings.sugar.Date, set: js.Object, reset: Boolean): typings.sugar.Date = js.native
     def advance(instance: typings.sugar.Date, year: Double, month: Double): typings.sugar.Date = js.native
-    def advance(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): typings.sugar.Date = js.native
-    def advance(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double
-    ): typings.sugar.Date = js.native
-    def advance(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: Double
-    ): typings.sugar.Date = js.native
-    def advance(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double
-    ): typings.sugar.Date = js.native
-    def advance(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): typings.sugar.Date = js.native
-    def advance(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: Double
-    ): typings.sugar.Date = js.native
-    def advance(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: Double,
-      second: Double
-    ): typings.sugar.Date = js.native
     def advance(instance: typings.sugar.Date, year: Double, month: Double, day: Double): typings.sugar.Date = js.native
-    def advance(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): typings.sugar.Date = js.native
-    def advance(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double
-    ): typings.sugar.Date = js.native
-    def advance(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: Double
-    ): typings.sugar.Date = js.native
     def advance(instance: typings.sugar.Date, year: Double, month: Double, day: Double, hour: Double): typings.sugar.Date = js.native
     def advance(
       instance: typings.sugar.Date,
@@ -924,15 +861,6 @@ object Date {
       month: Double,
       day: Double,
       hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): typings.sugar.Date = js.native
-    def advance(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: Double,
       minute: Double
     ): typings.sugar.Date = js.native
     def advance(
@@ -942,6 +870,73 @@ object Date {
       day: Double,
       hour: Double,
       minute: Double,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def advance(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: Unit,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def advance(instance: typings.sugar.Date, year: Double, month: Double, day: Double, hour: Unit, minute: Double): typings.sugar.Date = js.native
+    def advance(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Double,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def advance(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Unit,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def advance(instance: typings.sugar.Date, year: Double, month: Double, day: Unit, hour: Double): typings.sugar.Date = js.native
+    def advance(instance: typings.sugar.Date, year: Double, month: Double, day: Unit, hour: Double, minute: Double): typings.sugar.Date = js.native
+    def advance(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Unit,
+      hour: Double,
+      minute: Double,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def advance(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Unit,
+      hour: Double,
+      minute: Unit,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def advance(instance: typings.sugar.Date, year: Double, month: Double, day: Unit, hour: Unit, minute: Double): typings.sugar.Date = js.native
+    def advance(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Unit,
+      hour: Unit,
+      minute: Double,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def advance(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Unit,
+      hour: Unit,
+      minute: Unit,
       second: Double
     ): typings.sugar.Date = js.native
     
@@ -962,11 +957,11 @@ object Date {
     def clone(instance: typings.sugar.Date): typings.sugar.Date = js.native
     
     def create(): typings.sugar.Date = js.native
-    def create(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): typings.sugar.Date = js.native
     def create(d: java.lang.String): typings.sugar.Date = js.native
     def create(d: java.lang.String, options: DateCreateOptions): typings.sugar.Date = js.native
     def create(d: Double): typings.sugar.Date = js.native
     def create(d: Double, options: DateCreateOptions): typings.sugar.Date = js.native
+    def create(d: Unit, options: DateCreateOptions): typings.sugar.Date = js.native
     def create(d: typings.sugar.Date): typings.sugar.Date = js.native
     def create(d: typings.sugar.Date, options: DateCreateOptions): typings.sugar.Date = js.native
     
@@ -984,11 +979,11 @@ object Date {
     def daysSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
     def daysUntil(instance: typings.sugar.Date): Double = js.native
-    def daysUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
     def daysUntil(instance: typings.sugar.Date, d: java.lang.String): Double = js.native
     def daysUntil(instance: typings.sugar.Date, d: java.lang.String, options: DateCreateOptions): Double = js.native
     def daysUntil(instance: typings.sugar.Date, d: Double): Double = js.native
     def daysUntil(instance: typings.sugar.Date, d: Double, options: DateCreateOptions): Double = js.native
+    def daysUntil(instance: typings.sugar.Date, d: Unit, options: DateCreateOptions): Double = js.native
     def daysUntil(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
     def daysUntil(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
@@ -1007,9 +1002,9 @@ object Date {
     def endOfYear(instance: typings.sugar.Date, localeCode: java.lang.String): typings.sugar.Date = js.native
     
     def format(instance: typings.sugar.Date): java.lang.String = js.native
-    def format(instance: typings.sugar.Date, f: js.UndefOr[scala.Nothing], localeCode: java.lang.String): java.lang.String = js.native
     def format(instance: typings.sugar.Date, f: java.lang.String): java.lang.String = js.native
     def format(instance: typings.sugar.Date, f: java.lang.String, localeCode: java.lang.String): java.lang.String = js.native
+    def format(instance: typings.sugar.Date, f: Unit, localeCode: java.lang.String): java.lang.String = js.native
     
     def full(instance: typings.sugar.Date): java.lang.String = js.native
     def full(instance: typings.sugar.Date, localeCode: java.lang.String): java.lang.String = js.native
@@ -1051,11 +1046,11 @@ object Date {
     def hoursSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
     def hoursUntil(instance: typings.sugar.Date): Double = js.native
-    def hoursUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
     def hoursUntil(instance: typings.sugar.Date, d: java.lang.String): Double = js.native
     def hoursUntil(instance: typings.sugar.Date, d: java.lang.String, options: DateCreateOptions): Double = js.native
     def hoursUntil(instance: typings.sugar.Date, d: Double): Double = js.native
     def hoursUntil(instance: typings.sugar.Date, d: Double, options: DateCreateOptions): Double = js.native
+    def hoursUntil(instance: typings.sugar.Date, d: Unit, options: DateCreateOptions): Double = js.native
     def hoursUntil(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
     def hoursUntil(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
@@ -1180,11 +1175,11 @@ object Date {
     def millisecondsSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
     def millisecondsUntil(instance: typings.sugar.Date): Double = js.native
-    def millisecondsUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
     def millisecondsUntil(instance: typings.sugar.Date, d: java.lang.String): Double = js.native
     def millisecondsUntil(instance: typings.sugar.Date, d: java.lang.String, options: DateCreateOptions): Double = js.native
     def millisecondsUntil(instance: typings.sugar.Date, d: Double): Double = js.native
     def millisecondsUntil(instance: typings.sugar.Date, d: Double, options: DateCreateOptions): Double = js.native
+    def millisecondsUntil(instance: typings.sugar.Date, d: Unit, options: DateCreateOptions): Double = js.native
     def millisecondsUntil(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
     def millisecondsUntil(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
@@ -1200,11 +1195,11 @@ object Date {
     def minutesSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
     def minutesUntil(instance: typings.sugar.Date): Double = js.native
-    def minutesUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
     def minutesUntil(instance: typings.sugar.Date, d: java.lang.String): Double = js.native
     def minutesUntil(instance: typings.sugar.Date, d: java.lang.String, options: DateCreateOptions): Double = js.native
     def minutesUntil(instance: typings.sugar.Date, d: Double): Double = js.native
     def minutesUntil(instance: typings.sugar.Date, d: Double, options: DateCreateOptions): Double = js.native
+    def minutesUntil(instance: typings.sugar.Date, d: Unit, options: DateCreateOptions): Double = js.native
     def minutesUntil(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
     def minutesUntil(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
@@ -1220,34 +1215,34 @@ object Date {
     def monthsSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
     def monthsUntil(instance: typings.sugar.Date): Double = js.native
-    def monthsUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
     def monthsUntil(instance: typings.sugar.Date, d: java.lang.String): Double = js.native
     def monthsUntil(instance: typings.sugar.Date, d: java.lang.String, options: DateCreateOptions): Double = js.native
     def monthsUntil(instance: typings.sugar.Date, d: Double): Double = js.native
     def monthsUntil(instance: typings.sugar.Date, d: Double, options: DateCreateOptions): Double = js.native
+    def monthsUntil(instance: typings.sugar.Date, d: Unit, options: DateCreateOptions): Double = js.native
     def monthsUntil(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
     def monthsUntil(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
     def range(): Range = js.native
-    def range(start: js.UndefOr[scala.Nothing], end: java.lang.String): Range = js.native
-    def range(start: js.UndefOr[scala.Nothing], end: typings.sugar.Date): Range = js.native
     def range(start: java.lang.String): Range = js.native
     def range(start: java.lang.String, end: java.lang.String): Range = js.native
     def range(start: java.lang.String, end: typings.sugar.Date): Range = js.native
+    def range(start: Unit, end: java.lang.String): Range = js.native
+    def range(start: Unit, end: typings.sugar.Date): Range = js.native
     def range(start: typings.sugar.Date): Range = js.native
     def range(start: typings.sugar.Date, end: java.lang.String): Range = js.native
     def range(start: typings.sugar.Date, end: typings.sugar.Date): Range = js.native
     
     def relative(instance: typings.sugar.Date): java.lang.String = js.native
-    def relative(
-      instance: typings.sugar.Date,
-      localeCode: js.UndefOr[scala.Nothing],
-      relativeFn: js.Function4[/* num */ Double, /* unit */ Double, /* ms */ Double, /* loc */ Locale, java.lang.String]
-    ): java.lang.String = js.native
     def relative(instance: typings.sugar.Date, localeCode: java.lang.String): java.lang.String = js.native
     def relative(
       instance: typings.sugar.Date,
       localeCode: java.lang.String,
+      relativeFn: js.Function4[/* num */ Double, /* unit */ Double, /* ms */ Double, /* loc */ Locale, java.lang.String]
+    ): java.lang.String = js.native
+    def relative(
+      instance: typings.sugar.Date,
+      localeCode: Unit,
       relativeFn: js.Function4[/* num */ Double, /* unit */ Double, /* ms */ Double, /* loc */ Locale, java.lang.String]
     ): java.lang.String = js.native
     def relative(
@@ -1265,9 +1260,9 @@ object Date {
     def removeLocale(localeCode: java.lang.String): Locale = js.native
     
     def reset(instance: typings.sugar.Date): typings.sugar.Date = js.native
-    def reset(instance: typings.sugar.Date, unit: js.UndefOr[scala.Nothing], localeCode: java.lang.String): typings.sugar.Date = js.native
     def reset(instance: typings.sugar.Date, unit: java.lang.String): typings.sugar.Date = js.native
     def reset(instance: typings.sugar.Date, unit: java.lang.String, localeCode: java.lang.String): typings.sugar.Date = js.native
+    def reset(instance: typings.sugar.Date, unit: Unit, localeCode: java.lang.String): typings.sugar.Date = js.native
     
     def rewind(instance: typings.sugar.Date, milliseconds: Double): typings.sugar.Date = js.native
     def rewind(instance: typings.sugar.Date, set: java.lang.String): typings.sugar.Date = js.native
@@ -1275,92 +1270,7 @@ object Date {
     def rewind(instance: typings.sugar.Date, set: js.Object): typings.sugar.Date = js.native
     def rewind(instance: typings.sugar.Date, set: js.Object, reset: Boolean): typings.sugar.Date = js.native
     def rewind(instance: typings.sugar.Date, year: Double, month: Double): typings.sugar.Date = js.native
-    def rewind(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): typings.sugar.Date = js.native
-    def rewind(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double
-    ): typings.sugar.Date = js.native
-    def rewind(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: Double
-    ): typings.sugar.Date = js.native
-    def rewind(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double
-    ): typings.sugar.Date = js.native
-    def rewind(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): typings.sugar.Date = js.native
-    def rewind(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: Double
-    ): typings.sugar.Date = js.native
-    def rewind(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: Double,
-      second: Double
-    ): typings.sugar.Date = js.native
     def rewind(instance: typings.sugar.Date, year: Double, month: Double, day: Double): typings.sugar.Date = js.native
-    def rewind(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): typings.sugar.Date = js.native
-    def rewind(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double
-    ): typings.sugar.Date = js.native
-    def rewind(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: Double
-    ): typings.sugar.Date = js.native
     def rewind(instance: typings.sugar.Date, year: Double, month: Double, day: Double, hour: Double): typings.sugar.Date = js.native
     def rewind(
       instance: typings.sugar.Date,
@@ -1368,15 +1278,6 @@ object Date {
       month: Double,
       day: Double,
       hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): typings.sugar.Date = js.native
-    def rewind(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: Double,
       minute: Double
     ): typings.sugar.Date = js.native
     def rewind(
@@ -1386,6 +1287,73 @@ object Date {
       day: Double,
       hour: Double,
       minute: Double,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def rewind(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: Unit,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def rewind(instance: typings.sugar.Date, year: Double, month: Double, day: Double, hour: Unit, minute: Double): typings.sugar.Date = js.native
+    def rewind(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Double,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def rewind(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Unit,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def rewind(instance: typings.sugar.Date, year: Double, month: Double, day: Unit, hour: Double): typings.sugar.Date = js.native
+    def rewind(instance: typings.sugar.Date, year: Double, month: Double, day: Unit, hour: Double, minute: Double): typings.sugar.Date = js.native
+    def rewind(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Unit,
+      hour: Double,
+      minute: Double,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def rewind(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Unit,
+      hour: Double,
+      minute: Unit,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def rewind(instance: typings.sugar.Date, year: Double, month: Double, day: Unit, hour: Unit, minute: Double): typings.sugar.Date = js.native
+    def rewind(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Unit,
+      hour: Unit,
+      minute: Double,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def rewind(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Unit,
+      hour: Unit,
+      minute: Unit,
       second: Double
     ): typings.sugar.Date = js.native
     
@@ -1401,11 +1369,11 @@ object Date {
     def secondsSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
     def secondsUntil(instance: typings.sugar.Date): Double = js.native
-    def secondsUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
     def secondsUntil(instance: typings.sugar.Date, d: java.lang.String): Double = js.native
     def secondsUntil(instance: typings.sugar.Date, d: java.lang.String, options: DateCreateOptions): Double = js.native
     def secondsUntil(instance: typings.sugar.Date, d: Double): Double = js.native
     def secondsUntil(instance: typings.sugar.Date, d: Double, options: DateCreateOptions): Double = js.native
+    def secondsUntil(instance: typings.sugar.Date, d: Unit, options: DateCreateOptions): Double = js.native
     def secondsUntil(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
     def secondsUntil(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
@@ -1413,92 +1381,7 @@ object Date {
     def set(instance: typings.sugar.Date, set: js.Object): typings.sugar.Date = js.native
     def set(instance: typings.sugar.Date, set: js.Object, reset: Boolean): typings.sugar.Date = js.native
     def set(instance: typings.sugar.Date, year: Double, month: Double): typings.sugar.Date = js.native
-    def set(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): typings.sugar.Date = js.native
-    def set(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double
-    ): typings.sugar.Date = js.native
-    def set(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: Double
-    ): typings.sugar.Date = js.native
-    def set(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double
-    ): typings.sugar.Date = js.native
-    def set(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): typings.sugar.Date = js.native
-    def set(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: Double
-    ): typings.sugar.Date = js.native
-    def set(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: js.UndefOr[scala.Nothing],
-      hour: Double,
-      minute: Double,
-      second: Double
-    ): typings.sugar.Date = js.native
     def set(instance: typings.sugar.Date, year: Double, month: Double, day: Double): typings.sugar.Date = js.native
-    def set(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): typings.sugar.Date = js.native
-    def set(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double
-    ): typings.sugar.Date = js.native
-    def set(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: Double
-    ): typings.sugar.Date = js.native
     def set(instance: typings.sugar.Date, year: Double, month: Double, day: Double, hour: Double): typings.sugar.Date = js.native
     def set(
       instance: typings.sugar.Date,
@@ -1506,15 +1389,6 @@ object Date {
       month: Double,
       day: Double,
       hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ): typings.sugar.Date = js.native
-    def set(
-      instance: typings.sugar.Date,
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: Double,
       minute: Double
     ): typings.sugar.Date = js.native
     def set(
@@ -1524,6 +1398,73 @@ object Date {
       day: Double,
       hour: Double,
       minute: Double,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def set(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: Unit,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def set(instance: typings.sugar.Date, year: Double, month: Double, day: Double, hour: Unit, minute: Double): typings.sugar.Date = js.native
+    def set(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Double,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def set(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Unit,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def set(instance: typings.sugar.Date, year: Double, month: Double, day: Unit, hour: Double): typings.sugar.Date = js.native
+    def set(instance: typings.sugar.Date, year: Double, month: Double, day: Unit, hour: Double, minute: Double): typings.sugar.Date = js.native
+    def set(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Unit,
+      hour: Double,
+      minute: Double,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def set(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Unit,
+      hour: Double,
+      minute: Unit,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def set(instance: typings.sugar.Date, year: Double, month: Double, day: Unit, hour: Unit, minute: Double): typings.sugar.Date = js.native
+    def set(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Unit,
+      hour: Unit,
+      minute: Double,
+      second: Double
+    ): typings.sugar.Date = js.native
+    def set(
+      instance: typings.sugar.Date,
+      year: Double,
+      month: Double,
+      day: Unit,
+      hour: Unit,
+      minute: Unit,
       second: Double
     ): typings.sugar.Date = js.native
     
@@ -1554,11 +1495,11 @@ object Date {
     def weeksSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
     def weeksUntil(instance: typings.sugar.Date): Double = js.native
-    def weeksUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
     def weeksUntil(instance: typings.sugar.Date, d: java.lang.String): Double = js.native
     def weeksUntil(instance: typings.sugar.Date, d: java.lang.String, options: DateCreateOptions): Double = js.native
     def weeksUntil(instance: typings.sugar.Date, d: Double): Double = js.native
     def weeksUntil(instance: typings.sugar.Date, d: Double, options: DateCreateOptions): Double = js.native
+    def weeksUntil(instance: typings.sugar.Date, d: Unit, options: DateCreateOptions): Double = js.native
     def weeksUntil(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
     def weeksUntil(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
@@ -1574,32 +1515,31 @@ object Date {
     def yearsSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
     
     def yearsUntil(instance: typings.sugar.Date): Double = js.native
-    def yearsUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
     def yearsUntil(instance: typings.sugar.Date, d: java.lang.String): Double = js.native
     def yearsUntil(instance: typings.sugar.Date, d: java.lang.String, options: DateCreateOptions): Double = js.native
     def yearsUntil(instance: typings.sugar.Date, d: Double): Double = js.native
     def yearsUntil(instance: typings.sugar.Date, d: Double, options: DateCreateOptions): Double = js.native
+    def yearsUntil(instance: typings.sugar.Date, d: Unit, options: DateCreateOptions): Double = js.native
     def yearsUntil(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
     def yearsUntil(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
   }
   
-  @js.native
   trait DateCreateOptions extends StObject {
     
     @JSName("clone")
-    var clone_FDateCreateOptions: js.UndefOr[Boolean] = js.native
+    var clone_FDateCreateOptions: js.UndefOr[Boolean] = js.undefined
     
-    var fromUTC: js.UndefOr[Boolean] = js.native
+    var fromUTC: js.UndefOr[Boolean] = js.undefined
     
-    var future: js.UndefOr[Boolean] = js.native
+    var future: js.UndefOr[Boolean] = js.undefined
     
-    var locale: js.UndefOr[java.lang.String] = js.native
+    var locale: js.UndefOr[java.lang.String] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var past: js.UndefOr[Boolean] = js.native
+    var past: js.UndefOr[Boolean] = js.undefined
     
-    var setUTC: js.UndefOr[Boolean] = js.native
+    var setUTC: js.UndefOr[Boolean] = js.undefined
   }
   object DateCreateOptions {
     
@@ -1656,10 +1596,9 @@ object Date {
     }
   }
   
-  @js.native
   trait DateOptions extends StObject {
     
-    var newDateInternal: typings.sugar.Function = js.native
+    var newDateInternal: typings.sugar.Function
   }
   object DateOptions {
     

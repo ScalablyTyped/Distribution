@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getAccountAliasMod {
   
-  @JSImport("@pulumi/aws/iam/getAccountAlias", "getAccountAlias")
+  @JSImport("@pulumi/aws/iam/getAccountAlias", JSImport.Namespace)
   @js.native
-  def getAccountAlias(): js.Promise[GetAccountAliasResult] = js.native
-  @JSImport("@pulumi/aws/iam/getAccountAlias", "getAccountAlias")
-  @js.native
-  def getAccountAlias(opts: InvokeOptions): js.Promise[GetAccountAliasResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getAccountAlias(): js.Promise[GetAccountAliasResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountAlias")().asInstanceOf[js.Promise[GetAccountAliasResult]]
+  @scala.inline
+  def getAccountAlias(opts: InvokeOptions): js.Promise[GetAccountAliasResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountAlias")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAccountAliasResult]]
+  
   trait GetAccountAliasResult extends StObject {
     
     /**
       * The alias associated with the AWS account.
       */
-    val accountAlias: String = js.native
+    val accountAlias: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
   }
   object GetAccountAliasResult {
     

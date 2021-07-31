@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Base.Ui
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,40 +14,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     // Create and open a form.
   *     var newForm = FormApp.create('Form Name');
   */
-@js.native
 trait FormApp extends StObject {
   
-  var Alignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Alignment */ js.Any = js.native
+  var Alignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Alignment */ js.Any
   
-  var DestinationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DestinationType */ js.Any = js.native
+  var DestinationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DestinationType */ js.Any
   
-  var FeedbackType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FeedbackType */ js.Any = js.native
+  var FeedbackType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FeedbackType */ js.Any
   
-  var ItemType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemType */ js.Any = js.native
+  var ItemType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemType */ js.Any
   
-  var PageNavigationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageNavigationType */ js.Any = js.native
+  var PageNavigationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageNavigationType */ js.Any
   
-  def create(title: String): Form = js.native
+  def create(title: String): Form
   
-  def createCheckboxGridValidation(): CheckboxGridValidationBuilder = js.native
+  def createCheckboxGridValidation(): CheckboxGridValidationBuilder
   
-  def createCheckboxValidation(): CheckboxValidationBuilder = js.native
+  def createCheckboxValidation(): CheckboxValidationBuilder
   
-  def createFeedback(): QuizFeedbackBuilder = js.native
+  def createFeedback(): QuizFeedbackBuilder
   
-  def createGridValidation(): GridValidationBuilder = js.native
+  def createGridValidation(): GridValidationBuilder
   
-  def createParagraphTextValidation(): ParagraphTextValidationBuilder = js.native
+  def createParagraphTextValidation(): ParagraphTextValidationBuilder
   
-  def createTextValidation(): TextValidationBuilder = js.native
+  def createTextValidation(): TextValidationBuilder
   
-  def getActiveForm(): Form = js.native
+  def getActiveForm(): Form
   
-  def getUi(): Ui = js.native
+  def getUi(): Ui
   
-  def openById(id: String): Form = js.native
+  def openById(id: String): Form
   
-  def openByUrl(url: String): Form = js.native
+  def openByUrl(url: String): Form
 }
 object FormApp {
   

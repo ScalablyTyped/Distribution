@@ -13,30 +13,28 @@ import typings.angularCore.mod.ɵCssSelectorList
 import typings.angularCore.mod.ɵRenderFlags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentQueries[T] extends StObject {
   
   /**
     * Function to create instances of content queries associated with a given directive.
     */
-  var contentQueries: js.UndefOr[ContentQueriesFunction[T]] = js.native
+  var contentQueries: js.UndefOr[ContentQueriesFunction[T]] = js.undefined
   
   /**
     * Defines the name that can be used in the template to assign this directive to a variable.
     *
     * See: {@link Directive.exportAs}
     */
-  var exportAs: js.UndefOr[js.Array[String]] = js.native
+  var exportAs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of optional features to apply.
     *
     * See: {@link NgOnChangesFeature}, {@link ProvidersFeature}, {@link InheritDefinitionFeature}
     */
-  var features: js.UndefOr[js.Array[DirectiveDefFeature]] = js.native
+  var features: js.UndefOr[js.Array[DirectiveDefFeature]] = js.undefined
   
   /**
     * Assign static attribute values to a host element.
@@ -68,12 +66,12 @@ trait ContentQueries[T] extends StObject {
     * the entries. The marker values themselves are set via entries found in the
     * [AttributeMarker] enum.
     */
-  var hostAttrs: js.UndefOr[TAttributes] = js.native
+  var hostAttrs: js.UndefOr[TAttributes] = js.undefined
   
   /**
     * Function executed by the parent template to allow child directive to apply host bindings.
     */
-  var hostBindings: js.UndefOr[HostBindingsFunction[T]] = js.native
+  var hostBindings: js.UndefOr[HostBindingsFunction[T]] = js.undefined
   
   /**
     * The number of bindings in this directive `hostBindings` (including pure fn bindings).
@@ -81,7 +79,7 @@ trait ContentQueries[T] extends StObject {
     * Used to calculate the length of the component's LView array, so we
     * can pre-fill the array and set the host binding start index.
     */
-  var hostVars: js.UndefOr[Double] = js.native
+  var hostVars: js.UndefOr[Double] = js.undefined
   
   /**
     * A map of input names.
@@ -129,8 +127,8 @@ trait ContentQueries[T] extends StObject {
   var inputs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | [string, string] | undefined}
-    */ typings.angularCore.angularCoreStrings.ContentQueries with TopLevel[js.Any]
-  ] = js.native
+    */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * A map of output names.
@@ -145,22 +143,22 @@ trait ContentQueries[T] extends StObject {
   var outputs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P_1 in keyof T ]:? string | undefined}
-    */ typings.angularCore.angularCoreStrings.ContentQueries with TopLevel[js.Any]
-  ] = js.native
+    */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The selectors that will be used to match nodes to this directive. */
-  var selectors: js.UndefOr[ɵCssSelectorList] = js.native
+  var selectors: js.UndefOr[ɵCssSelectorList] = js.undefined
   
   /**
     * Directive type, needed to configure the injector.
     */
-  var `type`: Type[T] = js.native
+  var `type`: Type[T]
   
   /**
     * Additional set of instructions specific to view query processing. This could be seen as a
     * set of instructions to be inserted into the template function.
     */
-  var viewQuery: js.UndefOr[ViewQueriesFunction[T] | Null] = js.native
+  var viewQuery: js.UndefOr[ViewQueriesFunction[T] | Null] = js.undefined
 }
 object ContentQueries {
   
@@ -172,7 +170,7 @@ object ContentQueries {
   }
   
   @scala.inline
-  implicit class ContentQueriesMutableBuilder[Self <: ContentQueries[_], T] (val x: Self with ContentQueries[T]) extends AnyVal {
+  implicit class ContentQueriesMutableBuilder[Self <: ContentQueries[?], T] (val x: Self & ContentQueries[T]) extends AnyVal {
     
     @scala.inline
     def setContentQueries(value: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit): Self = StObject.set(x, "contentQueries", js.Any.fromFunction3(value))
@@ -223,7 +221,7 @@ object ContentQueries {
     def setInputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]:? string | [string, string] | undefined}
-      */ typings.angularCore.angularCoreStrings.ContentQueries with TopLevel[js.Any]
+      */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[js.Any]
     ): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -233,7 +231,7 @@ object ContentQueries {
     def setOutputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P_1 in keyof T ]:? string | undefined}
-      */ typings.angularCore.angularCoreStrings.ContentQueries with TopLevel[js.Any]
+      */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[js.Any]
     ): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline

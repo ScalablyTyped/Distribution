@@ -11,8 +11,8 @@ CSON utilities
 | Full name          | season |
 | Keywords           | cson, json, CoffeeScript |
 | # releases         | 1 |
-| # dependents       | 57 |
-| # downloads        | 1110299 |
+| # dependents       | 58 |
+| # downloads        | 1035073 |
 | # stars            | 2 |
 
 ## Links

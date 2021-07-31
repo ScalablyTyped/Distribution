@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceInstanceParams extends StObject {
   
   /**
     * Attached disks configuration. If not provided, defaults are applied: For boot disk and any other R/W disks, new custom images will be created from each disk. For read-only disks,
     * they will be attached in read-only mode. Local SSD disks will be created as blank volumes.
     */
-  var diskConfigs: js.UndefOr[js.Array[DiskInstantiationConfig]] = js.native
+  var diskConfigs: js.UndefOr[js.Array[DiskInstantiationConfig]] = js.undefined
 }
 object SourceInstanceParams {
   

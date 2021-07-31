@@ -3,17 +3,15 @@ package typings.restling
 import typings.restling.mod.RestlingOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Options extends StObject {
     
-    var options: js.UndefOr[RestlingOptions] = js.native
+    var options: js.UndefOr[RestlingOptions] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Options {
     

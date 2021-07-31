@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The drop target context provides the mechanism for a potential receiver of a drop operation to both provide the end user with the appropriate drag
   * under feedback and effect the subsequent data transfer, if appropriate.
   */
-@js.native
-trait XDropTargetDragContext extends XInterface {
+trait XDropTargetDragContext
+  extends StObject
+     with XInterface {
   
   /**
     * Accept the Drag.
@@ -29,13 +29,13 @@ trait XDropTargetDragContext extends XInterface {
     * @see DNDConstants
     * @see DropTargetDragEvent
     */
-  def acceptDrag(dragOperation: Double): Unit = js.native
+  def acceptDrag(dragOperation: Double): Unit
   
   /**
     * Reject the drag as a result of examining the available {@link com.sun.star.datatransfer.DataFlavor} types received in the {@link
     * com.sun.star.datatransfer.dnd.XDropTargetListener.dragEnter()} method.
     */
-  def rejectDrag(): Unit = js.native
+  def rejectDrag(): Unit
 }
 object XDropTargetDragContext {
   

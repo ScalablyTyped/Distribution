@@ -2,15 +2,13 @@ package typings.vscodeJsonrpc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TraceOptions extends StObject {
   
-  var sendNotification: js.UndefOr[Boolean] = js.native
+  var sendNotification: js.UndefOr[Boolean] = js.undefined
   
-  var traceFormat: js.UndefOr[TraceFormat] = js.native
+  var traceFormat: js.UndefOr[TraceFormat] = js.undefined
 }
 object TraceOptions {
   

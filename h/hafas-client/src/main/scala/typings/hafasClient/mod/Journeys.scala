@@ -2,19 +2,17 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Journeys extends StObject {
   
-  var earlierRef: js.UndefOr[String] = js.native
+  var earlierRef: js.UndefOr[String] = js.undefined
   
-  var journeys: js.UndefOr[js.Array[Journey]] = js.native
+  var journeys: js.UndefOr[js.Array[Journey]] = js.undefined
   
-  var laterRef: js.UndefOr[String] = js.native
+  var laterRef: js.UndefOr[String] = js.undefined
   
-  var realtimeDataFrom: js.UndefOr[Double] = js.native
+  var realtimeDataFrom: js.UndefOr[Double] = js.undefined
 }
 object Journeys {
   

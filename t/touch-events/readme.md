@@ -11,7 +11,7 @@ Touch events using PEP
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 548 |
+| # downloads        | 745 |
 | # stars            | 0 |
 
 ## Links

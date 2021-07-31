@@ -3,7 +3,6 @@ package typings.iitc
 import typings.jquery.JQuery.jqXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestHandlingMod {
@@ -16,16 +15,16 @@ object requestHandlingMod {
       
       def abort(): Unit = js.native
       
-      def add(ajax: jqXHR[_]): Unit = js.native
+      def add(ajax: jqXHR[js.Any]): Unit = js.native
       
       /**
         * add method here to be notified of auto-refreshes
         */
       def addRefreshFunction(fct: js.Function0[Unit]): Unit = js.native
       
-      def isLastRequest(ajax: jqXHR[_]): Boolean = js.native
+      def isLastRequest(ajax: jqXHR[js.Any]): Boolean = js.native
       
-      def remove(ajax: jqXHR[_]): Unit = js.native
+      def remove(ajax: jqXHR[js.Any]): Unit = js.native
       
       /**
         * sets the timer for the next auto refresh. Ensures only one timeout

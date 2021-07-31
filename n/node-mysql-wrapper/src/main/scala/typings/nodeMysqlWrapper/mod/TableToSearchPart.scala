@@ -2,15 +2,13 @@ package typings.nodeMysqlWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableToSearchPart extends StObject {
   
-  var propertyName: String = js.native
+  var propertyName: String
   
-  var tableName: String = js.native
+  var tableName: String
 }
 object TableToSearchPart {
   

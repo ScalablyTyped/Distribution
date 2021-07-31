@@ -10,9 +10,9 @@ Typings are for version 5.0.3
 | ------------------ | :-------------: |
 | Full name          | 7zip-bin |
 | Keywords           | 7zip, 7z, 7za |
-| # releases         | 6 |
-| # dependents       | 58 |
-| # downloads        | 5745531 |
+| # releases         | 4 |
+| # dependents       | 66 |
+| # downloads        | 7304055 |
 | # stars            | 1 |
 
 ## Links

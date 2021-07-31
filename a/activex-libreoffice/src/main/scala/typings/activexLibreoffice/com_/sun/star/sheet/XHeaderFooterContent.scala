@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.text.XText
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,44 +12,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.HeaderFooterContent
   * @see com.sun.star.sheet.TablePageStyle
   */
-@js.native
-trait XHeaderFooterContent extends XInterface {
+trait XHeaderFooterContent
+  extends StObject
+     with XInterface {
   
   /**
     * returns the text which is printed in the center part of the header or footer.
     * @see com.sun.star.text.Text
     */
-  val CenterText: XText = js.native
+  val CenterText: XText
   
   /**
     * returns the text which is printed in the left part of the header or footer.
     * @see com.sun.star.text.Text
     */
-  val LeftText: XText = js.native
+  val LeftText: XText
   
   /**
     * returns the text which is printed in the right part of the header or footer.
     * @see com.sun.star.text.Text
     */
-  val RightText: XText = js.native
+  val RightText: XText
   
   /**
     * returns the text which is printed in the center part of the header or footer.
     * @see com.sun.star.text.Text
     */
-  def getCenterText(): XText = js.native
+  def getCenterText(): XText
   
   /**
     * returns the text which is printed in the left part of the header or footer.
     * @see com.sun.star.text.Text
     */
-  def getLeftText(): XText = js.native
+  def getLeftText(): XText
   
   /**
     * returns the text which is printed in the right part of the header or footer.
     * @see com.sun.star.text.Text
     */
-  def getRightText(): XText = js.native
+  def getRightText(): XText
 }
 object XHeaderFooterContent {
   

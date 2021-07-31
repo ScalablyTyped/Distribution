@@ -2,37 +2,35 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdvertiserName extends StObject {
   
-  var advertiserName: js.UndefOr[String] = js.native
+  var advertiserName: js.UndefOr[String] = js.undefined
   
-  var destinationUrl: js.UndefOr[String] = js.native
+  var destinationUrl: js.UndefOr[String] = js.undefined
   
-  var displayFrequency: js.UndefOr[Double] = js.native
+  var displayFrequency: js.UndefOr[Double] = js.undefined
   
-  var displaySeconds: js.UndefOr[Double] = js.native
+  var displaySeconds: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var imageMime: js.UndefOr[String] = js.native
+  var imageMime: js.UndefOr[String] = js.undefined
   
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
-  var openInTrunk: js.UndefOr[Boolean] = js.native
+  var openInTrunk: js.UndefOr[Boolean] = js.undefined
   
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object AdvertiserName {
   

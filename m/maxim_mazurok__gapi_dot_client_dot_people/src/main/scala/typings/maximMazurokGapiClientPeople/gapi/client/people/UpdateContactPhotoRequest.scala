@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateContactPhotoRequest extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait UpdateContactPhotoRequest extends StObject {
     * genders * imClients * interests * locales * locations * memberships * metadata * miscKeywords * names * nicknames * occupations * organizations * phoneNumbers * photos * relations *
     * sipAddresses * skills * urls * userDefined
     */
-  var personFields: js.UndefOr[String] = js.native
+  var personFields: js.UndefOr[String] = js.undefined
   
   /** Required. Raw photo bytes */
-  var photoBytes: js.UndefOr[String] = js.native
+  var photoBytes: js.UndefOr[String] = js.undefined
   
   /** Optional. A mask of what source types to return. Defaults to READ_SOURCE_TYPE_CONTACT and READ_SOURCE_TYPE_PROFILE if not set. */
-  var sources: js.UndefOr[js.Array[String]] = js.native
+  var sources: js.UndefOr[js.Array[String]] = js.undefined
 }
 object UpdateContactPhotoRequest {
   

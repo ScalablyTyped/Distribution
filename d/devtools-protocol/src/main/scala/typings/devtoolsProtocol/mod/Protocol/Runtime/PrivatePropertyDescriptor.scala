@@ -2,33 +2,31 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrivatePropertyDescriptor extends StObject {
   
   /**
     * A function which serves as a getter for the private property,
     * or `undefined` if there is no getter (accessor descriptors only).
     */
-  var get: js.UndefOr[RemoteObject] = js.native
+  var get: js.UndefOr[RemoteObject] = js.undefined
   
   /**
     * Private property name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * A function which serves as a setter for the private property,
     * or `undefined` if there is no setter (accessor descriptors only).
     */
-  var set: js.UndefOr[RemoteObject] = js.native
+  var set: js.UndefOr[RemoteObject] = js.undefined
   
   /**
     * The value associated with the private property.
     */
-  var value: js.UndefOr[RemoteObject] = js.native
+  var value: js.UndefOr[RemoteObject] = js.undefined
 }
 object PrivatePropertyDescriptor {
   

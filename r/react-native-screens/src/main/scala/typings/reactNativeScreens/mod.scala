@@ -23,10 +23,13 @@ import typings.reactNativeScreens.reactNativeScreensStrings.rtl
 import typings.reactNativeScreens.reactNativeScreensStrings.slide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-native-screens", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-native-screens", "NativeScreen")
@@ -148,16 +151,13 @@ object mod {
   @js.native
   val ScreenStackHeaderRightView: ComponentClass[ViewProps, ComponentState] = js.native
   
-  @JSImport("react-native-screens", "enableScreens")
-  @js.native
-  def enableScreens(): Unit = js.native
-  @JSImport("react-native-screens", "enableScreens")
-  @js.native
-  def enableScreens(shouldEnableScreens: Boolean): Unit = js.native
+  @scala.inline
+  def enableScreens(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableScreens")().asInstanceOf[Unit]
+  @scala.inline
+  def enableScreens(shouldEnableScreens: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableScreens")(shouldEnableScreens.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-screens", "screensEnabled")
-  @js.native
-  def screensEnabled(): Boolean = js.native
+  @scala.inline
+  def screensEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("screensEnabled")().asInstanceOf[Boolean]
   
   @JSImport("react-native-screens", "shouldUseActivityState")
   @js.native
@@ -249,13 +249,14 @@ object mod {
     def systemUltraThinMaterialLight: typings.reactNativeScreens.reactNativeScreensStrings.systemUltraThinMaterialLight = "systemUltraThinMaterialLight".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.systemUltraThinMaterialLight]
   }
   
-  @js.native
-  trait ScreenContainerProps extends ViewProps {
+  trait ScreenContainerProps
+    extends StObject
+       with ViewProps {
     
     /**
       * @description A prop that gives users an option to switch between using Screens for the navigator (container). All children screens should have the same value of their "enabled" prop as their container.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
   }
   object ScreenContainerProps {
     
@@ -276,58 +277,59 @@ object mod {
     }
   }
   
-  @js.native
-  trait ScreenProps extends ViewProps {
+  trait ScreenProps
+    extends StObject
+       with ViewProps {
     
-    var active: js.UndefOr[`0` | `1` | AnimatedInterpolation] = js.native
+    var active: js.UndefOr[`0` | `1` | AnimatedInterpolation] = js.undefined
     
-    var activityState: js.UndefOr[`0` | `1` | `2` | AnimatedInterpolation] = js.native
+    var activityState: js.UndefOr[`0` | `1` | `2` | AnimatedInterpolation] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * @description All children screens should have the same value of their "enabled" prop as their container.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @description When set to false the back swipe gesture will be disabled when the parent Screen is on top of the stack. The default value is true.
       */
-    var gestureEnabled: js.UndefOr[Boolean] = js.native
+    var gestureEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @description A callback that gets called when the current screen appears.
       */
-    var onAppear: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.native
+    var onAppear: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.undefined
     
-    var onComponentRef: js.UndefOr[js.Function1[/* view */ js.Any, Unit]] = js.native
+    var onComponentRef: js.UndefOr[js.Function1[/* view */ js.Any, Unit]] = js.undefined
     
     /**
       * @description A callback that gets called when the current screen disappears.
       */
-    var onDisappear: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.native
+    var onDisappear: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.undefined
     
     /**
       * @description A callback that gets called when the current screen is dismissed by hardware back (on Android) or dismiss gesture (swipe back or down). The callback takes no arguments.
       */
-    var onDismissed: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.native
+    var onDismissed: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.undefined
     
     /**
       * @description A callback that gets called when the current screen will appear. This is called as soon as the transition begins.
       */
-    var onWillAppear: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.native
+    var onWillAppear: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.undefined
     
     /**
       * @description A callback that gets called when the current screen will disappear. This is called as soon as the transition begins.
       */
-    var onWillDisappear: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.native
+    var onWillDisappear: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.undefined
     
     /**
       * @description Allows for the customization of the type of animation to use when this screen replaces another screen at the top of the stack. The following values are currently supported:
       *  @type "push" – performs push animation
       *  @type "pop" – performs pop animation (default)
       */
-    var replaceAnimation: js.UndefOr[ScreenReplaceTypes] = js.native
+    var replaceAnimation: js.UndefOr[ScreenReplaceTypes] = js.undefined
     
     /**
       * @description Allows for the customization of how the given screen should appear/dissapear when pushed or popped at the top of the stack. The following values are currently supported:
@@ -336,7 +338,7 @@ object mod {
       *  @type "flip" – flips the screen, requires stackPresentation: "modal" (iOS only)
       *  @type "none" – the screen appears/dissapears without an animation
       */
-    var stackAnimation: js.UndefOr[StackAnimationTypes] = js.native
+    var stackAnimation: js.UndefOr[StackAnimationTypes] = js.undefined
     
     /**
       * @type "push" – the new screen will be pushed onto a stack which on iOS means that the default animation will be slide from the side, the animation on Android may vary depending on the OS version and theme.
@@ -347,7 +349,7 @@ object mod {
       * @type "fullScreenModal" – will use "UIModalPresentationFullScreen" modal style on iOS and will fallback to "modal" on Android.
       * @type "formSheet" – will use "UIModalPresentationFormSheet" modal style on iOS and will fallback to "modal" on Android.
       */
-    var stackPresentation: js.UndefOr[StackPresentationTypes] = js.native
+    var stackPresentation: js.UndefOr[StackPresentationTypes] = js.undefined
   }
   object ScreenProps {
     
@@ -460,155 +462,156 @@ object mod {
     def push: typings.reactNativeScreens.reactNativeScreensStrings.push = "push".asInstanceOf[typings.reactNativeScreens.reactNativeScreensStrings.push]
   }
   
-  @js.native
-  trait ScreenStackHeaderConfigProps extends ViewProps {
+  trait ScreenStackHeaderConfigProps
+    extends StObject
+       with ViewProps {
     
     /**
       * @description Whether to show the back button with a custom left side of the header.
       */
-    var backButtonInCustomView: js.UndefOr[Boolean] = js.native
+    var backButtonInCustomView: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @host (iOS only)
       * @description Allows for controlling the string to be rendered next to back button. By default iOS uses the title of the previous screen.
       */
-    var backTitle: js.UndefOr[String] = js.native
+    var backTitle: js.UndefOr[String] = js.undefined
     
     /**
       * @host (iOS only)
       * @description Allows for customizing font family to be used for back button title on iOS.
       */
-    var backTitleFontFamily: js.UndefOr[String] = js.native
+    var backTitleFontFamily: js.UndefOr[String] = js.undefined
     
     /**
       * @host (iOS only)
       * @description Allows for customizing font size to be used for back button title on iOS.
       */
-    var backTitleFontSize: js.UndefOr[Double] = js.native
+    var backTitleFontSize: js.UndefOr[Double] = js.undefined
     
     /**
       * @description Controls the color of the navigation header.
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * @host (iOS only)
       * @description Blur effect to be applied to the header. Works with backgroundColor's alpha < 1.
       */
-    var blurEffect: js.UndefOr[BlurEffectTypes] = js.native
+    var blurEffect: js.UndefOr[BlurEffectTypes] = js.undefined
     
     /**
       * Pass HeaderLeft, HeaderRight and HeaderTitle
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * @description Controls the color of items rendered on the header. This includes back icon, back text (iOS only) and title text. If you want the title to have different color use titleColor property.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       *@description Controls whether the stack should be in rtl or ltr form.
       */
-    var direction: js.UndefOr[rtl | ltr] = js.native
+    var direction: js.UndefOr[rtl | ltr] = js.undefined
     
     /**
       * @description When set to true the header will be hidden while the parent Screen is on the top of the stack. The default value is false.
       */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @description If set to true the back button will not be rendered as a part of navigation header.
       */
-    var hideBackButton: js.UndefOr[Boolean] = js.native
+    var hideBackButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @description Boolean that allows for disabling drop shadow under navigation header. The default value is true.
       */
-    var hideShadow: js.UndefOr[Boolean] = js.native
+    var hideShadow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @host (iOS only)
       * @description When set to true it makes the title display using the large title effect.
       */
-    var largeTitle: js.UndefOr[Boolean] = js.native
+    var largeTitle: js.UndefOr[Boolean] = js.undefined
     
     /**
       *@description Controls the color of the navigation header when the edge of any scrollable content reaches the matching edge of the navigation bar.
       */
-    var largeTitleBackgroundColor: js.UndefOr[String] = js.native
+    var largeTitleBackgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * @host (iOS only)
       * @description Customize the color to be used for the large title. By default uses the titleColor property.
       */
-    var largeTitleColor: js.UndefOr[String] = js.native
+    var largeTitleColor: js.UndefOr[String] = js.undefined
     
     /**
       * @host (iOS only)
       * @description Customize font family to be used for the large title.
       */
-    var largeTitleFontFamily: js.UndefOr[String] = js.native
+    var largeTitleFontFamily: js.UndefOr[String] = js.undefined
     
     /**
       * @host (iOS only)
       * @description Customize the size of the font to be used for the large title.
       */
-    var largeTitleFontSize: js.UndefOr[Double] = js.native
+    var largeTitleFontSize: js.UndefOr[Double] = js.undefined
     
     /**
       * @description Boolean that allows for disabling drop shadow under navigation header when the edge of any scrollable content reaches the matching edge of the navigation bar.
       */
-    var largeTitleHideShadow: js.UndefOr[Boolean] = js.native
+    var largeTitleHideShadow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @host (iOS only)
       * @description Sets the status bar animation (similar to the `StatusBar` component). Requires enabling (or deleting) `View controller-based status bar appearance` in your Info.plist file. Defaults to `fade`.
       */
-    var statusBarAnimation: js.UndefOr[none | fade | slide] = js.native
+    var statusBarAnimation: js.UndefOr[none | fade | slide] = js.undefined
     
     /**
       * @host (iOS only)
       * @description When set to true, the status bar for this screen is hidden. Requires enabling (or deleting) `View controller-based status bar appearance` in your Info.plist file. Defaults to `false`.
       */
-    var statusBarHidden: js.UndefOr[Boolean] = js.native
+    var statusBarHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @host (iOS only)
       * @description Sets the status bar color (similar to the `StatusBar` component). Requires enabling (or deleting) `View controller-based status bar appearance` in your Info.plist file. Defaults to `auto`.
       */
-    var statusBarStyle: js.UndefOr[inverted | auto | light | dark] = js.native
+    var statusBarStyle: js.UndefOr[inverted | auto | light | dark] = js.undefined
     
     /**
       * @description String that representing screen title that will get rendered in the middle section of the header. On iOS the title is centered on the header while on Android it is aligned to the left and placed next to back button (if one is present).
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * @description Allows for setting text color of the title.
       */
-    var titleColor: js.UndefOr[String] = js.native
+    var titleColor: js.UndefOr[String] = js.undefined
     
     /**
       * @description Customize font family to be used for the title.
       */
-    var titleFontFamily: js.UndefOr[String] = js.native
+    var titleFontFamily: js.UndefOr[String] = js.undefined
     
     /**
       * @description Customize the size of the font to be used for the title.
       */
-    var titleFontSize: js.UndefOr[Double] = js.native
+    var titleFontSize: js.UndefOr[Double] = js.undefined
     
     /**
       * @host (Android only)
       * @description A flag to that lets you opt out of insetting the header. You may want to set this to `false` if you use an opaque status bar. Defaults to `true`.
       */
-    var topInsetEnabled: js.UndefOr[Boolean] = js.native
+    var topInsetEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @description When set to true, it makes native navigation bar on iOS semi transparent with blur effect. It is a common way of presenting navigation bar introduced in iOS 11. The default value is false
       */
-    var translucent: js.UndefOr[Boolean] = js.native
+    var translucent: js.UndefOr[Boolean] = js.undefined
   }
   object ScreenStackHeaderConfigProps {
     
@@ -785,13 +788,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait ScreenStackProps extends ViewProps {
+  trait ScreenStackProps
+    extends StObject
+       with ViewProps {
     
     /**
       * @description A callback that gets called when the current screen finishes its transition.
       */
-    var onFinishTransitioning: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.native
+    var onFinishTransitioning: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.undefined
   }
   object ScreenStackProps {
     

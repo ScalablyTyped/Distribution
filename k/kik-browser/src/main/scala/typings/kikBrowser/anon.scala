@@ -5,7 +5,6 @@ import typings.kikBrowser.kikBrowserStrings.landscape
 import typings.kikBrowser.kikBrowserStrings.portrait
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -43,14 +42,13 @@ object anon {
     def unbindBack(callback: js.Function0[Boolean | Unit]): Unit = js.native
   }
   
-  @js.native
   trait Browser extends StObject {
     
-    var browser: Name = js.native
+    var browser: Name
     
-    var os: Name = js.native
+    var os: Name
     
-    var version: Name = js.native
+    var version: Name
   }
   object Browser {
     
@@ -105,14 +103,13 @@ object anon {
     def saveToGallery(url: String, callback: js.Function1[/* status */ Boolean, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Hide extends StObject {
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def isEnabled(): Boolean = js.native
+    def isEnabled(): Boolean
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object Hide {
     
@@ -136,12 +133,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object Name {
     
@@ -162,10 +158,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Platform extends StObject {
     
-    var platform: Browser = js.native
+    var platform: Browser
   }
   object Platform {
     
@@ -183,10 +178,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Username extends StObject {
     
-    var username: String = js.native
+    var username: String
   }
   object Username {
     

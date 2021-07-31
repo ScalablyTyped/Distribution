@@ -6,12 +6,14 @@ import typings.wordpressComponents.wordpressComponentsStrings.debouncedSpeak
 import typings.wordpressComponents.wordpressComponentsStrings.speak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withSpokenMessagesMod {
   
-  @JSImport("@wordpress/components/higher-order/with-spoken-messages", JSImport.Default)
+  @JSImport("@wordpress/components/higher-order/with-spoken-messages", JSImport.Namespace)
   @js.native
-  def default[T /* <: ComponentType[_] */](wrapped: T): ComponentType[Omit[_, speak | debouncedSpeak]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, speak | debouncedSpeak]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, speak | debouncedSpeak]]]
 }

@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.IO.ReadRequest
 import typings.devtoolsProtocol.mod.Protocol.IO.ReadResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeReadResponse extends StObject {
   
-  var paramsType: js.Array[ReadRequest] = js.native
+  var paramsType: js.Array[ReadRequest]
   
-  var returnType: ReadResponse = js.native
+  var returnType: ReadResponse
 }
 object ReturnTypeReadResponse {
   

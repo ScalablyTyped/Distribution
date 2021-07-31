@@ -7,29 +7,29 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("license-checker-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: PartialOptions) = this()
   }
   
-  @js.native
   trait Dependency extends StObject {
     
-    var licenseName: String = js.native
+    var licenseName: String
     
-    var licenseText: String = js.native
+    var licenseText: String
     
-    var name: String = js.native
+    var name: String
     
-    var repository: String = js.native
+    var repository: String
     
-    var version: String = js.native
+    var version: String
   }
   object Dependency {
     
@@ -61,7 +61,6 @@ object mod {
   
   type LicenseCheckerWebpackPlugin = Plugin
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -69,19 +68,19 @@ object mod {
       *
       * Default: `"(Apache-2.0 OR BSD-2-Clause OR BSD-3-Clause OR MIT)"`
       */
-    var allow: String = js.native
+    var allow: String
     
     /**
       * Whether to emit errors instead of warnings.
       *
       * Default: `false`
       */
-    var emitError: Boolean = js.native
+    var emitError: Boolean
     
     /**
       * Regular expression that matches the file paths of dependencies to check.
       */
-    var filter: RegExp = js.native
+    var filter: RegExp
     
     /**
       * Array of dependencies to ignore, in the format `["<dependency name>@<version range>"]`.
@@ -89,20 +88,20 @@ object mod {
       *
       * Default: `[]`
       */
-    var ignore: js.Array[String] = js.native
+    var ignore: js.Array[String]
     
     /**
       * Name of the third-party notices file with all licensing information.
       *
       * Default: `"ThirdPartyNotices.txt"`
       */
-    var outputFilename: String = js.native
+    var outputFilename: String
     
     /**
       * Path to a `.ejs` template, or function that will generate the contents
       * of the third-party notices file.
       */
-    var outputWriter: String | OutputWriter = js.native
+    var outputWriter: String | OutputWriter
     
     /**
       * Object of dependencies to override, in the format `{"<dependency name>@<version range>": { ... }}`.
@@ -110,7 +109,7 @@ object mod {
       *
       * Default: `{}`
       */
-    var `override`: Record[String, PartialDependency] = js.native
+    var `override`: Record[String, PartialDependency]
   }
   object Options {
     
@@ -163,10 +162,9 @@ object mod {
   
   type OutputWriter = js.Function1[/* args */ OutputWriterArgs, String]
   
-  @js.native
   trait OutputWriterArgs extends StObject {
     
-    var dependencies: js.Array[Dependency] = js.native
+    var dependencies: js.Array[Dependency]
   }
   object OutputWriterArgs {
     

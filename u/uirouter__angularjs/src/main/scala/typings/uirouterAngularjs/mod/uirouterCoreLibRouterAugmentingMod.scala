@@ -2,19 +2,17 @@ package typings.uirouterAngularjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uirouterCoreLibRouterAugmentingMod {
   
-  @js.native
   trait UIRouter extends StObject {
     
     /** @hidden */
-    var stateProvider: typings.uirouterAngularjs.stateProviderMod.StateProvider = js.native
+    var stateProvider: typings.uirouterAngularjs.stateProviderMod.StateProvider
     
     /** @hidden */
-    var urlRouterProvider: typings.uirouterAngularjs.urlRouterProviderMod.UrlRouterProvider = js.native
+    var urlRouterProvider: typings.uirouterAngularjs.urlRouterProviderMod.UrlRouterProvider
   }
   object UIRouter {
     

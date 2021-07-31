@@ -3,46 +3,44 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.Selection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICursorSelectionChangedEvent extends StObject {
   
   /**
     * The model version id.
     */
-  val modelVersionId: Double = js.native
+  val modelVersionId: Double
   
   /**
     * The model version id the that `oldSelections` refer to.
     */
-  val oldModelVersionId: Double = js.native
+  val oldModelVersionId: Double
   
   /**
     * The old selections.
     */
-  val oldSelections: js.Array[Selection] | Null = js.native
+  val oldSelections: js.Array[Selection] | Null
   
   /**
     * Reason.
     */
-  val reason: CursorChangeReason = js.native
+  val reason: CursorChangeReason
   
   /**
     * The secondary selections.
     */
-  val secondarySelections: js.Array[Selection] = js.native
+  val secondarySelections: js.Array[Selection]
   
   /**
     * The primary selection.
     */
-  val selection: Selection = js.native
+  val selection: Selection
   
   /**
     * Source of the call that caused the event.
     */
-  val source: String = js.native
+  val source: String
 }
 object ICursorSelectionChangedEvent {
   
@@ -55,7 +53,7 @@ object ICursorSelectionChangedEvent {
     selection: Selection,
     source: String
   ): ICursorSelectionChangedEvent = {
-    val __obj = js.Dynamic.literal(modelVersionId = modelVersionId.asInstanceOf[js.Any], oldModelVersionId = oldModelVersionId.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], secondarySelections = secondarySelections.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(modelVersionId = modelVersionId.asInstanceOf[js.Any], oldModelVersionId = oldModelVersionId.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], secondarySelections = secondarySelections.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], oldSelections = null)
     __obj.asInstanceOf[ICursorSelectionChangedEvent]
   }
   

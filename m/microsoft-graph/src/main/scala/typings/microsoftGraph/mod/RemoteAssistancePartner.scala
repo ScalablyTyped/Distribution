@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RemoteAssistancePartner extends Entity {
+trait RemoteAssistancePartner
+  extends StObject
+     with Entity {
   
   // Display name of the partner.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Timestamp of the last request sent to Intune by the TEM partner.
-  var lastConnectionDateTime: js.UndefOr[String] = js.native
+  var lastConnectionDateTime: js.UndefOr[String] = js.undefined
   
   // TBD. Possible values are: notOnboarded, onboarding, onboarded.
-  var onboardingStatus: js.UndefOr[RemoteAssistanceOnboardingStatus] = js.native
+  var onboardingStatus: js.UndefOr[RemoteAssistanceOnboardingStatus] = js.undefined
   
   // URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
-  var onboardingUrl: js.UndefOr[NullableOption[String]] = js.native
+  var onboardingUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object RemoteAssistancePartner {
   

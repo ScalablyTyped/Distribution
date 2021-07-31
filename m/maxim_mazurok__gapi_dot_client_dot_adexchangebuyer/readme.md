@@ -10,9 +10,9 @@ TypeScript typings for Ad Exchange Buyer API v1.4
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.adexchangebuyer |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 53 |
 | # dependents       | 1 |
-| # downloads        | 178 |
+| # downloads        | 3633 |
 | # stars            | 0 |
 
 ## Links

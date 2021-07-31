@@ -2,16 +2,14 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGetOffersResponse extends StObject {
   
   /**
     * The returned list of products.
     */
-  var products: js.UndefOr[js.Array[SchemaProduct]] = js.native
+  var products: js.UndefOr[js.Array[SchemaProduct]] = js.undefined
 }
 object SchemaGetOffersResponse {
   

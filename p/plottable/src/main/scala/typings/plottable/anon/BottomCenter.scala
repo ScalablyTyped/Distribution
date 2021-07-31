@@ -5,23 +5,21 @@ import typings.plottable.plottableStrings.center
 import typings.plottable.plottableStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BottomCenter extends StObject {
   
-  var bottom: typings.plottable.plottableStrings.bottom = js.native
+  var bottom: typings.plottable.plottableStrings.bottom
   
-  var center: typings.plottable.plottableStrings.center = js.native
+  var center: typings.plottable.plottableStrings.center
   
-  var top: typings.plottable.plottableStrings.top = js.native
+  var top: typings.plottable.plottableStrings.top
 }
 object BottomCenter {
   
   @scala.inline
-  def apply(bottom: bottom, center: center, top: top): BottomCenter = {
-    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+  def apply(): BottomCenter = {
+    val __obj = js.Dynamic.literal(bottom = "bottom", center = "center", top = "top")
     __obj.asInstanceOf[BottomCenter]
   }
   

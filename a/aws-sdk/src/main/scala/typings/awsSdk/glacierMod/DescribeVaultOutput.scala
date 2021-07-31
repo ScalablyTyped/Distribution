@@ -2,41 +2,39 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVaultOutput extends StObject {
   
   /**
     * The Universal Coordinated Time (UTC) date when the vault was created. This value should be a string in the ISO 8601 date format, for example 2012-03-20T17:03:43.221Z.
     */
-  var CreationDate: js.UndefOr[String] = js.native
+  var CreationDate: js.UndefOr[String] = js.undefined
   
   /**
     * The Universal Coordinated Time (UTC) date when Amazon S3 Glacier completed the last vault inventory. This value should be a string in the ISO 8601 date format, for example 2012-03-20T17:03:43.221Z.
     */
-  var LastInventoryDate: js.UndefOr[String] = js.native
+  var LastInventoryDate: js.UndefOr[String] = js.undefined
   
   /**
     * The number of archives in the vault as of the last inventory date. This field will return null if an inventory has not yet run on the vault, for example if you just created the vault.
     */
-  var NumberOfArchives: js.UndefOr[long] = js.native
+  var NumberOfArchives: js.UndefOr[long] = js.undefined
   
   /**
     * Total size, in bytes, of the archives in the vault as of the last inventory date. This field will return null if an inventory has not yet run on the vault, for example if you just created the vault.
     */
-  var SizeInBytes: js.UndefOr[long] = js.native
+  var SizeInBytes: js.UndefOr[long] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the vault.
     */
-  var VaultARN: js.UndefOr[String] = js.native
+  var VaultARN: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the vault.
     */
-  var VaultName: js.UndefOr[String] = js.native
+  var VaultName: js.UndefOr[String] = js.undefined
 }
 object DescribeVaultOutput {
   

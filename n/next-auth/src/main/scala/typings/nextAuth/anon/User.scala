@@ -2,19 +2,17 @@ package typings.nextAuth.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
-  var Account: ModelTypeORMAccountModel = js.native
+  var Account: ModelTypeORMAccountModel
   
-  var Session: ModelTypeORMSessionModel = js.native
+  var Session: ModelTypeORMSessionModel
   
-  var User: ModelTypeORMUserModel = js.native
+  var User: ModelTypeORMUserModel
   
-  var VerificationRequest: ModelTypeORMVerificationRequestModel = js.native
+  var VerificationRequest: ModelTypeORMVerificationRequestModel
 }
 object User {
   

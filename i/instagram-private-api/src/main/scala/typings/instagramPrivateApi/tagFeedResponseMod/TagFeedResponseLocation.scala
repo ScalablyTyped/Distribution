@@ -2,29 +2,27 @@ package typings.instagramPrivateApi.tagFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagFeedResponseLocation extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var city: String = js.native
+  var city: String
   
-  var external_source: String = js.native
+  var external_source: String
   
-  var facebook_places_id: String | Double = js.native
+  var facebook_places_id: String | Double
   
-  var lat: Double | String = js.native
+  var lat: Double | String
   
-  var lng: Double | String = js.native
+  var lng: Double | String
   
-  var name: String = js.native
+  var name: String
   
-  var pk: Double | String = js.native
+  var pk: Double | String
   
-  var short_name: String = js.native
+  var short_name: String
 }
 object TagFeedResponseLocation {
   

@@ -2,54 +2,52 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GESchemaObjectContainer[T /* <: KmlObject */] extends StObject {
   
   /**
     * Adds a node to the end of the list of children of a specified feature.
     * Returns the appended object.
     */
-  def appendChild(`object`: T): Unit = js.native
+  def appendChild(`object`: T): Unit
   
   /**
     * List of features (for KmlContainer), or list of features, styles, and schemas (for KmlDocument).
     * Returns true if there are any child nodes.
     */
-  def getChildNodes(): KmlObjectList[T] = js.native
+  def getChildNodes(): KmlObjectList[T]
   
   /**
     * First child in the list of objects.
     */
-  def getFirstChild(): T = js.native
+  def getFirstChild(): T
   
   /**
     * Last child in the list of objects.
     */
-  def getLastChild(): T = js.native
+  def getLastChild(): T
   
   /**
     * Returns true if the container is not empty.
     */
-  def hasChildNodes(): Boolean = js.native
+  def hasChildNodes(): Boolean
   
   /**
     * Inserts a child before the referenced child in the list of objects.
     */
-  def insertBefore(newChild: T, refChild: T): Unit = js.native
+  def insertBefore(newChild: T, refChild: T): Unit
   
   /**
     * Removes a node from the list of children of a specified object.
     */
-  def removeChild(oldChild: T): Unit = js.native
+  def removeChild(oldChild: T): Unit
   
   /**
     * Replaces existing child in the list of features.
     * Returns the old child.
     */
-  def replaceChild(newChild: T, oldChild: T): Unit = js.native
+  def replaceChild(newChild: T, oldChild: T): Unit
 }
 object GESchemaObjectContainer {
   
@@ -69,7 +67,7 @@ object GESchemaObjectContainer {
   }
   
   @scala.inline
-  implicit class GESchemaObjectContainerMutableBuilder[Self <: GESchemaObjectContainer[_], T /* <: KmlObject */] (val x: Self with GESchemaObjectContainer[T]) extends AnyVal {
+  implicit class GESchemaObjectContainerMutableBuilder[Self <: GESchemaObjectContainer[?], T /* <: KmlObject */] (val x: Self & GESchemaObjectContainer[T]) extends AnyVal {
     
     @scala.inline
     def setAppendChild(value: T => Unit): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))

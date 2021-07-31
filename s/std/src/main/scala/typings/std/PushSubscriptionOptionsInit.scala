@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushSubscriptionOptionsInit extends StObject {
   
-  var applicationServerKey: js.UndefOr[BufferSource | java.lang.String | Null] = js.native
+  var applicationServerKey: js.UndefOr[BufferSource | java.lang.String | Null] = js.undefined
   
-  var userVisibleOnly: js.UndefOr[scala.Boolean] = js.native
+  var userVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
 object PushSubscriptionOptionsInit {
   

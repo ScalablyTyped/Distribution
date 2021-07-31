@@ -10,9 +10,9 @@ An Express middleware of Formidable that just works.
 | ------------------ | :-------------: |
 | Full name          | express-formidable |
 | Keywords           | express, middleware, formidable |
-| # releases         | 2 |
-| # dependents       | 23 |
-| # downloads        | 682848 |
+| # releases         | 0 |
+| # dependents       | 24 |
+| # downloads        | 616682 |
 | # stars            | 15 |
 
 ## Links

@@ -2,44 +2,42 @@ package typings.materialUiLab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/lab.@material-ui/lab/Rating/Rating.RatingClassKey>> */
-@js.native
 trait PartialClassNameMapRating extends StObject {
   
-  var decimal: js.UndefOr[String] = js.native
+  var decimal: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var focusVisible: js.UndefOr[String] = js.native
+  var focusVisible: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var iconActive: js.UndefOr[String] = js.native
+  var iconActive: js.UndefOr[String] = js.undefined
   
-  var iconEmpty: js.UndefOr[String] = js.native
+  var iconEmpty: js.UndefOr[String] = js.undefined
   
-  var iconFilled: js.UndefOr[String] = js.native
+  var iconFilled: js.UndefOr[String] = js.undefined
   
-  var iconFocus: js.UndefOr[String] = js.native
+  var iconFocus: js.UndefOr[String] = js.undefined
   
-  var iconHover: js.UndefOr[String] = js.native
+  var iconHover: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var pristine: js.UndefOr[String] = js.native
+  var pristine: js.UndefOr[String] = js.undefined
   
-  var readOnly: js.UndefOr[String] = js.native
+  var readOnly: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var sizeLarge: js.UndefOr[String] = js.native
+  var sizeLarge: js.UndefOr[String] = js.undefined
   
-  var sizeSmall: js.UndefOr[String] = js.native
+  var sizeSmall: js.UndefOr[String] = js.undefined
   
-  var visuallyhidden: js.UndefOr[String] = js.native
+  var visuallyhidden: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapRating {
   

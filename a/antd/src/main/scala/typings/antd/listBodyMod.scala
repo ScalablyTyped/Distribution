@@ -12,7 +12,6 @@ import typings.antd.typeMod.Omit
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listBodyMod {
@@ -22,10 +21,13 @@ object listBodyMod {
   class default[RecordType /* <: KeyWiseTransferItem */] () extends ListBody[RecordType]
   object default {
     
-    /* static member */
-    @JSImport("antd/lib/transfer/ListBody", "default.getDerivedStateFromProps")
+    @JSImport("antd/lib/transfer/ListBody", JSImport.Default)
     @js.native
-    def getDerivedStateFromProps[T](hasFilteredRenderItemsPagination: TransferListBodyProps[T], hasCurrent: TransferListBodyState): Current | Null = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def getDerivedStateFromProps[T](hasFilteredRenderItemsPagination: TransferListBodyProps[T], hasCurrent: TransferListBodyState): Current | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasFilteredRenderItemsPagination.asInstanceOf[js.Any], hasCurrent.asInstanceOf[js.Any])).asInstanceOf[Current | Null]
   }
   
   @JSImport("antd/lib/transfer/ListBody", "OmitProps")
@@ -53,14 +55,13 @@ object listBodyMod {
   type PartialTransferListProps[RecordType] = Omit[TransferListProps[RecordType], OmitProp]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in std.Exclude<keyof antd.antd/lib/transfer/list.TransferListProps<RecordType>, antd.antd/lib/transfer/ListBody.OmitProp> ]: antd.antd/lib/transfer/list.TransferListProps<RecordType>[P]} */ @js.native
-  trait TransferListBodyProps[RecordType] extends StObject {
+  - Dropped {[ P in std.Exclude<keyof antd.antd/lib/transfer/list.TransferListProps<RecordType>, antd.antd/lib/transfer/ListBody.OmitProp> ]: antd.antd/lib/transfer/list.TransferListProps<RecordType>[P]} */ trait TransferListBodyProps[RecordType] extends StObject {
     
-    var filteredItems: js.Array[RecordType] = js.native
+    var filteredItems: js.Array[RecordType]
     
-    var filteredRenderItems: js.Array[RenderedItem[RecordType]] = js.native
+    var filteredRenderItems: js.Array[RenderedItem[RecordType]]
     
-    var selectedKeys: js.Array[String] = js.native
+    var selectedKeys: js.Array[String]
   }
   object TransferListBodyProps {
     
@@ -75,7 +76,7 @@ object listBodyMod {
     }
     
     @scala.inline
-    implicit class TransferListBodyPropsMutableBuilder[Self <: TransferListBodyProps[_], RecordType] (val x: Self with TransferListBodyProps[RecordType]) extends AnyVal {
+    implicit class TransferListBodyPropsMutableBuilder[Self <: TransferListBodyProps[?], RecordType] (val x: Self & TransferListBodyProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setFilteredItems(value: js.Array[RecordType]): Self = StObject.set(x, "filteredItems", value.asInstanceOf[js.Any])
@@ -97,10 +98,9 @@ object listBodyMod {
     }
   }
   
-  @js.native
   trait TransferListBodyState extends StObject {
     
-    var current: Double = js.native
+    var current: Double
   }
   object TransferListBodyState {
     

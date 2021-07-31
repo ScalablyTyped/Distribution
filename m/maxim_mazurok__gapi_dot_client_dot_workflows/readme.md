@@ -4,15 +4,15 @@
 Typings are for version 1.0.20201113
 
 ## Library description:
-TypeScript typings for Workflows API v1beta
+TypeScript typings for Workflows API v1
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.workflows |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 38 |
+| # releases         | 12 |
+| # dependents       | 1 |
+| # downloads        | 1107 |
 | # stars            | 0 |
 
 ## Links

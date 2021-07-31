@@ -2,7 +2,6 @@ package typings.playable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lifetimeMod {
@@ -12,13 +11,13 @@ object lifetimeMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Lifetime with String] = js.native
+    def apply(value: String): js.UndefOr[Lifetime & String] = js.native
     
-    /* "scoped" */ val SCOPED: typings.playable.lifetimeMod.Lifetime.SCOPED with String = js.native
+    /* "scoped" */ val SCOPED: typings.playable.lifetimeMod.Lifetime.SCOPED & String = js.native
     
-    /* "singleton" */ val SINGLETON: typings.playable.lifetimeMod.Lifetime.SINGLETON with String = js.native
+    /* "singleton" */ val SINGLETON: typings.playable.lifetimeMod.Lifetime.SINGLETON & String = js.native
     
-    /* "transient" */ val TRANSIENT: typings.playable.lifetimeMod.Lifetime.TRANSIENT with String = js.native
+    /* "transient" */ val TRANSIENT: typings.playable.lifetimeMod.Lifetime.TRANSIENT & String = js.native
   }
   
   @js.native
@@ -28,12 +27,18 @@ object lifetimeMod {
   object Lifetime extends StObject {
     
     @js.native
-    sealed trait SCOPED extends Lifetime
+    sealed trait SCOPED
+      extends StObject
+         with Lifetime
     
     @js.native
-    sealed trait SINGLETON extends Lifetime
+    sealed trait SINGLETON
+      extends StObject
+         with Lifetime
     
     @js.native
-    sealed trait TRANSIENT extends Lifetime
+    sealed trait TRANSIENT
+      extends StObject
+         with Lifetime
   }
 }

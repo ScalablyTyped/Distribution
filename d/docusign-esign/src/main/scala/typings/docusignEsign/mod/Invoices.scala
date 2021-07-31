@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invoices extends StObject {
   
   /**
     * Reserved: TBD
     */
-  var amount: js.UndefOr[String] = js.native
+  var amount: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var balance: js.UndefOr[String] = js.native
+  var balance: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var dueDate: js.UndefOr[String] = js.native
+  var dueDate: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var invoiceId: js.UndefOr[String] = js.native
+  var invoiceId: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
@@ -35,23 +33,23 @@ trait Invoices extends StObject {
     js.Array[
       /* Contains information about an item on a billing invoice. */ BillingInvoiceItem
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var invoiceNumber: js.UndefOr[String] = js.native
+  var invoiceNumber: js.UndefOr[String] = js.undefined
   
   /**
     * Contains a URI for an endpoint that you can use to retrieve invoice information.
     */
-  var invoiceUri: js.UndefOr[String] = js.native
+  var invoiceUri: js.UndefOr[String] = js.undefined
   
-  var nonTaxableAmount: js.UndefOr[String] = js.native
+  var nonTaxableAmount: js.UndefOr[String] = js.undefined
   
-  var pdfAvailable: js.UndefOr[String] = js.native
+  var pdfAvailable: js.UndefOr[String] = js.undefined
   
-  var taxableAmount: js.UndefOr[String] = js.native
+  var taxableAmount: js.UndefOr[String] = js.undefined
 }
 object Invoices {
   

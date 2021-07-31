@@ -2,17 +2,15 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryMessage extends StObject {
   
-  var entry: js.Any = js.native
+  var entry: js.Any
   
-  var meta: js.UndefOr[js.Object] = js.native
+  var meta: js.UndefOr[js.Object] = js.undefined
   
-  var timetoken: js.UndefOr[String | Double] = js.native
+  var timetoken: js.UndefOr[String | Double] = js.undefined
 }
 object HistoryMessage {
   

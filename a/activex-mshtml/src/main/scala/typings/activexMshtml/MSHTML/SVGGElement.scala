@@ -2,52 +2,50 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGGElement extends StObject {
   
   @JSName("MSHTML.SVGGElement_typekey")
-  var MSHTMLDotSVGGElement_typekey: SVGGElement = js.native
+  var MSHTMLDotSVGGElement_typekey: SVGGElement
   
-  val className: SVGAnimatedString = js.native
+  val className: SVGAnimatedString
   
-  val externalResourcesRequired: SVGAnimatedBoolean = js.native
+  val externalResourcesRequired: SVGAnimatedBoolean
   
-  val farthestViewportElement: ISVGElement = js.native
+  val farthestViewportElement: ISVGElement
   
-  var focusable: SVGAnimatedEnumeration = js.native
+  var focusable: SVGAnimatedEnumeration
   
-  def getBBox(): SVGRect = js.native
+  def getBBox(): SVGRect
   
-  def getCTM(): SVGMatrix = js.native
+  def getCTM(): SVGMatrix
   
-  def getScreenCTM(): SVGMatrix = js.native
+  def getScreenCTM(): SVGMatrix
   
-  def getTransformToElement(pElement: ISVGElement): SVGMatrix = js.native
+  def getTransformToElement(pElement: ISVGElement): SVGMatrix
   
-  def hasExtension(extension: String): Boolean = js.native
+  def hasExtension(`extension`: String): Boolean
   
-  val nearestViewportElement: ISVGElement = js.native
+  val nearestViewportElement: ISVGElement
   
-  var ownerSVGElement: ISVGSVGElement = js.native
+  var ownerSVGElement: ISVGSVGElement
   
-  val requiredExtensions: SVGStringList = js.native
+  val requiredExtensions: SVGStringList
   
-  val requiredFeatures: SVGStringList = js.native
+  val requiredFeatures: SVGStringList
   
-  val systemLanguage: SVGStringList = js.native
+  val systemLanguage: SVGStringList
   
-  val transform: SVGAnimatedTransformList = js.native
+  val transform: SVGAnimatedTransformList
   
-  var viewportElement: ISVGElement = js.native
+  var viewportElement: ISVGElement
   
-  var xmlbase: String = js.native
+  var xmlbase: String
   
-  var xmllang: String = js.native
+  var xmllang: String
   
-  var xmlspace: String = js.native
+  var xmlspace: String
 }
 object SVGGElement {
   

@@ -4,19 +4,21 @@
 Typings are for version 5.14
 
 ## Library description:
-metascraper integration with Spotify
+Metascraper integration with Spotify
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | metascraper-spotify |
 | Keywords           | audio, metascraper, spotify |
-| # releases         | 66 |
+| # releases         | 94 |
 | # dependents       | 2 |
-| # downloads        | 16900 |
+| # downloads        | 21224 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-spotify)
+- [Bugs](https://github.com/microlinkhq/metascraper/issues)
+- [Repository](https://github.com/microlinkhq/metascraper)
 - [Npm](https://www.npmjs.com/package/metascraper-spotify)
     
 

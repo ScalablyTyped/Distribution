@@ -2,21 +2,19 @@ package typings.speedtestNet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterfaceData extends StObject {
   
-  var externalIp: String = js.native
+  var externalIp: String
   
-  var internalIp: String = js.native
+  var internalIp: String
   
-  var isVpn: Boolean = js.native
+  var isVpn: Boolean
   
-  var macAddr: String = js.native
+  var macAddr: String
   
-  var name: String = js.native
+  var name: String
 }
 object InterfaceData {
   

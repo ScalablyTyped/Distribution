@@ -2,57 +2,55 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitUploadOptions extends StObject {
   
-  var abort: js.UndefOr[js.Object] = js.native
+  var abort: js.UndefOr[js.Object] = js.undefined
   
-  var allow: js.UndefOr[String | Boolean] = js.native
+  var allow: js.UndefOr[String | Boolean] = js.undefined
   
-  var `before-all`: js.UndefOr[js.Object] = js.native
+  var `before-all`: js.UndefOr[js.Object] = js.undefined
   
-  var `before-send`: js.UndefOr[js.Object] = js.native
+  var `before-send`: js.UndefOr[js.Object] = js.undefined
   
-  var `cls-dragover`: js.UndefOr[String] = js.native
+  var `cls-dragover`: js.UndefOr[String] = js.undefined
   
-  var complete: js.UndefOr[js.Object] = js.native
+  var complete: js.UndefOr[js.Object] = js.undefined
   
-  var `complete-all`: js.UndefOr[js.Object] = js.native
+  var `complete-all`: js.UndefOr[js.Object] = js.undefined
   
-  var concurrent: js.UndefOr[Double] = js.native
+  var concurrent: js.UndefOr[Double] = js.undefined
   
-  var error: js.UndefOr[js.Object] = js.native
+  var error: js.UndefOr[js.Object] = js.undefined
   
-  var fail: js.UndefOr[js.Object] = js.native
+  var fail: js.UndefOr[js.Object] = js.undefined
   
-  var load: js.UndefOr[js.Object] = js.native
+  var load: js.UndefOr[js.Object] = js.undefined
   
-  var `load-end`: js.UndefOr[js.Object] = js.native
+  var `load-end`: js.UndefOr[js.Object] = js.undefined
   
-  var `load-start`: js.UndefOr[js.Object] = js.native
+  var `load-start`: js.UndefOr[js.Object] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var mime: js.UndefOr[String | Boolean] = js.native
+  var mime: js.UndefOr[String | Boolean] = js.undefined
   
-  var `msg-invalid-mime`: js.UndefOr[String] = js.native
+  var `msg-invalid-mime`: js.UndefOr[String] = js.undefined
   
-  var `msg-invalid-name`: js.UndefOr[String] = js.native
+  var `msg-invalid-name`: js.UndefOr[String] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var params: js.UndefOr[js.Object] = js.native
+  var params: js.UndefOr[js.Object] = js.undefined
   
-  var progress: js.UndefOr[js.Object] = js.native
+  var progress: js.UndefOr[js.Object] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object UIkitUploadOptions {
   

@@ -6,34 +6,34 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsInstancesClustersCreate extends StandardParameters {
+trait ParamsResourceProjectsInstancesClustersCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID to be used when referring to the new cluster within its instance,
     * e.g., just `mycluster` rather than
     * `projects/myproject/instances/myinstance/clusters/mycluster`.
     */
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The unique name of the instance in which to create the new cluster.
     * Values are of the form `projects/<project>/instances/<instance>`.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaCluster] = js.native
+  var requestBody: js.UndefOr[SchemaCluster] = js.undefined
 }
 object ParamsResourceProjectsInstancesClustersCreate {
   

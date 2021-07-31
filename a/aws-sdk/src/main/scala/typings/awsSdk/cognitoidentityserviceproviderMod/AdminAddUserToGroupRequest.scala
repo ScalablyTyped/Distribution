@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminAddUserToGroupRequest extends StObject {
   
   /**
     * The group name.
     */
-  var GroupName: GroupNameType = js.native
+  var GroupName: GroupNameType
   
   /**
     * The user pool ID for the user pool.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
   
   /**
     * The username for the user.
     */
-  var Username: UsernameType = js.native
+  var Username: UsernameType
 }
 object AdminAddUserToGroupRequest {
   

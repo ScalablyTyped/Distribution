@@ -1,8 +1,8 @@
 package typings.webix.mod
 
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,4 +12,9 @@ trait AtomRender extends StObject {
   def render(id: Double, data: js.Any, `type`: String): Unit = js.native
   
   def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+}
+object AtomRender {
+  
+  @scala.inline
+  def apply: AtomRender = ^.asInstanceOf[js.Dynamic].selectDynamic("AtomRender").asInstanceOf[AtomRender]
 }

@@ -2,19 +2,17 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Email extends StObject {
   
-  var email: js.Any = js.native
+  var email: js.Any
   
-  var first_name: js.Any = js.native
+  var first_name: js.Any
   
-  var password: js.Any = js.native
+  var password: js.Any
   
-  var username: js.Any = js.native
+  var username: js.Any
 }
 object Email {
   

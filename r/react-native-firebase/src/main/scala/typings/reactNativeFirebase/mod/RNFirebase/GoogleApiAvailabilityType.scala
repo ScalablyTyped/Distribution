@@ -2,19 +2,17 @@ package typings.reactNativeFirebase.mod.RNFirebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiAvailabilityType extends StObject {
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var isAvailable: Boolean = js.native
+  var isAvailable: Boolean
   
-  var isUserResolvableError: js.UndefOr[Boolean] = js.native
+  var isUserResolvableError: js.UndefOr[Boolean] = js.undefined
   
-  var status: Double = js.native
+  var status: Double
 }
 object GoogleApiAvailabilityType {
   

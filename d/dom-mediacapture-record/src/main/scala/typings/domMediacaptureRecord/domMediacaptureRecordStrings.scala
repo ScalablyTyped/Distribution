@@ -2,13 +2,14 @@ package typings.domMediacaptureRecord
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domMediacaptureRecordStrings {
   
   @js.native
-  sealed trait cbr extends BitrateMode
+  sealed trait cbr
+    extends StObject
+       with BitrateMode
   @scala.inline
   def cbr: cbr = "cbr".asInstanceOf[cbr]
   
@@ -23,7 +24,9 @@ object domMediacaptureRecordStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait inactive extends RecordingState
+  sealed trait inactive
+    extends StObject
+       with RecordingState
   @scala.inline
   def inactive: inactive = "inactive".asInstanceOf[inactive]
   
@@ -33,12 +36,16 @@ object domMediacaptureRecordStrings {
   def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait paused extends RecordingState
+  sealed trait paused
+    extends StObject
+       with RecordingState
   @scala.inline
   def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
-  sealed trait recording extends RecordingState
+  sealed trait recording
+    extends StObject
+       with RecordingState
   @scala.inline
   def recording: recording = "recording".asInstanceOf[recording]
   
@@ -58,7 +65,9 @@ object domMediacaptureRecordStrings {
   def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
-  sealed trait vbr extends BitrateMode
+  sealed trait vbr
+    extends StObject
+       with BitrateMode
   @scala.inline
   def vbr: vbr = "vbr".asInstanceOf[vbr]
 }

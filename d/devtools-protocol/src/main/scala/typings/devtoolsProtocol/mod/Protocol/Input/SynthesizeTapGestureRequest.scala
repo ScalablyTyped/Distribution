@@ -3,37 +3,35 @@ package typings.devtoolsProtocol.mod.Protocol.Input
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SynthesizeTapGestureRequest extends StObject {
   
   /**
     * Duration between touchdown and touchup events in ms (default: 50).
     */
-  var duration: js.UndefOr[integer] = js.native
+  var duration: js.UndefOr[integer] = js.undefined
   
   /**
     * Which type of input events to be generated (default: 'default', which queries the platform
     * for the preferred input type).
     */
-  var gestureSourceType: js.UndefOr[GestureSourceType] = js.native
+  var gestureSourceType: js.UndefOr[GestureSourceType] = js.undefined
   
   /**
     * Number of times to perform the tap (e.g. 2 for double tap, default: 1).
     */
-  var tapCount: js.UndefOr[integer] = js.native
+  var tapCount: js.UndefOr[integer] = js.undefined
   
   /**
     * X coordinate of the start of the gesture in CSS pixels.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Y coordinate of the start of the gesture in CSS pixels.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object SynthesizeTapGestureRequest {
   

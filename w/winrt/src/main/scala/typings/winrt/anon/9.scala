@@ -3,15 +3,13 @@ package typings.winrt.anon
 import typings.winrt.Windows.Storage.Search.SortEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `9` extends StObject {
   
-  var items: js.Array[SortEntry] = js.native
+  var items: js.Array[SortEntry]
   
-  var returnValue: Double = js.native
+  var returnValue: Double
 }
 object `9` {
   

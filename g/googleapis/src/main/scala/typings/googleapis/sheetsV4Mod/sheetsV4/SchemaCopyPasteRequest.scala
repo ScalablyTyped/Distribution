@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Copies data from the source to the destination.
   */
-@js.native
 trait SchemaCopyPasteRequest extends StObject {
   
   /**
@@ -18,22 +16,22 @@ trait SchemaCopyPasteRequest extends StObject {
     * the source range, the entire source data will still be copied (beyond the
     * end of the destination range).
     */
-  var destination: js.UndefOr[SchemaGridRange] = js.native
+  var destination: js.UndefOr[SchemaGridRange] = js.undefined
   
   /**
     * How that data should be oriented when pasting.
     */
-  var pasteOrientation: js.UndefOr[String] = js.native
+  var pasteOrientation: js.UndefOr[String] = js.undefined
   
   /**
     * What kind of data to paste.
     */
-  var pasteType: js.UndefOr[String] = js.native
+  var pasteType: js.UndefOr[String] = js.undefined
   
   /**
     * The source range to copy.
     */
-  var source: js.UndefOr[SchemaGridRange] = js.native
+  var source: js.UndefOr[SchemaGridRange] = js.undefined
 }
 object SchemaCopyPasteRequest {
   

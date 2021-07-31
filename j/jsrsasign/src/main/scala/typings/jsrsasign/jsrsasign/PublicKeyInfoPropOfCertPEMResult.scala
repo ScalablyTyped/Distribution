@@ -2,26 +2,24 @@ package typings.jsrsasign.jsrsasign
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicKeyInfoPropOfCertPEMResult extends StObject {
   
   /** hexadecimal string of OID of asymmetric key algorithm */
-  var algoid: String = js.native
+  var algoid: String
   
   /** hexadecimal string of OID of ECC curve name or null */
-  var algparam: String | Null = js.native
+  var algparam: String | Null
   
   /** hexadecimal string of key in the certificate */
-  var keyhex: String = js.native
+  var keyhex: String
 }
 object PublicKeyInfoPropOfCertPEMResult {
   
   @scala.inline
   def apply(algoid: String, keyhex: String): PublicKeyInfoPropOfCertPEMResult = {
-    val __obj = js.Dynamic.literal(algoid = algoid.asInstanceOf[js.Any], keyhex = keyhex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(algoid = algoid.asInstanceOf[js.Any], keyhex = keyhex.asInstanceOf[js.Any], algparam = null)
     __obj.asInstanceOf[PublicKeyInfoPropOfCertPEMResult]
   }
   

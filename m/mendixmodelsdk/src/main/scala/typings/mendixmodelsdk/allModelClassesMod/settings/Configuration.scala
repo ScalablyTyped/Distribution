@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.settingsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object Configuration {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.Configuration.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.settingsMod.settings.Configuration = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.settingsMod.settings.Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.settingsMod.settings.Configuration]
   
   /**
     * Creates and returns a new Configuration instance in the SDK and on the server.
@@ -50,9 +48,8 @@ object Configuration {
     * of the parent ConfigurationSettings element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.Configuration.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.settingsMod.settings.ConfigurationSettings): typings.mendixmodelsdk.settingsMod.settings.Configuration = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.settingsMod.settings.ConfigurationSettings): typings.mendixmodelsdk.settingsMod.settings.Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.settingsMod.settings.Configuration]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.Configuration.structureTypeName")

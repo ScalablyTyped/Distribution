@@ -2,15 +2,16 @@ package typings.simpleStatistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shuffleInPlaceMod {
   
-  @JSImport("simple-statistics/src/shuffle_in_place", JSImport.Default)
+  @JSImport("simple-statistics/src/shuffle_in_place", JSImport.Namespace)
   @js.native
-  def default[T /* <: js.Array[_] */](x: T): T = js.native
-  @JSImport("simple-statistics/src/shuffle_in_place", JSImport.Default)
-  @js.native
-  def default[T /* <: js.Array[_] */](x: T, randomSource: js.Function0[Double]): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T /* <: js.Array[js.Any] */](x: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def default[T /* <: js.Array[js.Any] */](x: T, randomSource: js.Function0[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any], randomSource.asInstanceOf[js.Any])).asInstanceOf[T]
 }

@@ -2,18 +2,16 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RDSDatabase extends StObject {
   
-  var DatabaseName: RDSDatabaseName = js.native
+  var DatabaseName: RDSDatabaseName
   
   /**
     * The ID of an RDS DB instance.
     */
-  var InstanceIdentifier: RDSInstanceIdentifier = js.native
+  var InstanceIdentifier: RDSInstanceIdentifier
 }
 object RDSDatabase {
   

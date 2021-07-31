@@ -2,15 +2,14 @@ package typings.extjs.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITip
-  extends typings.extjs.Ext.panel.IPanel {
+  extends StObject
+     with typings.extjs.Ext.panel.IPanel {
   
   /** [Config Option] (Boolean) */
-  var constrainPosition: js.UndefOr[Boolean] = js.native
+  var constrainPosition: js.UndefOr[Boolean] = js.undefined
 }
 object ITip {
   

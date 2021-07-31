@@ -16,12 +16,11 @@ import typings.activexLibreoffice.com_.sun.star.style.XDefaultsSupplier
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyPool
-  extends Style
+  extends StObject
+     with Style
      with XDefaultsSupplier {
   
   /**
@@ -29,7 +28,7 @@ trait PropertyPool
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
     */
   /* InferMemberOverrides */
-  override def getPropertySetInfo(): XPropertySetInfo = js.native
+  override def getPropertySetInfo(): XPropertySetInfo
 }
 object PropertyPool {
   
@@ -55,11 +54,11 @@ object PropertyPool {
     getDefaults: () => XPropertySet,
     getName: () => String,
     getParentStyle: () => String,
-    getPropertyDefaults: SeqEquiv[String] => SafeArray[_],
+    getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],
     getPropertyValue: String => js.Any,
-    getPropertyValues: SeqEquiv[String] => SafeArray[_],
+    getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
     isInUse: () => Boolean,
     isUserDefined: () => Boolean,
     queryInterface: `type` => js.Any,
@@ -72,7 +71,7 @@ object PropertyPool {
     setParentStyle: String => Unit,
     setPropertiesToDefault: SeqEquiv[String] => Unit,
     setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit
+    setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit
   ): PropertyPool = {
     val __obj = js.Dynamic.literal(Defaults = Defaults.asInstanceOf[js.Any], DisplayName = DisplayName.asInstanceOf[js.Any], FollowStyle = FollowStyle.asInstanceOf[js.Any], Hidden = Hidden.asInstanceOf[js.Any], IsAutoUpdate = IsAutoUpdate.asInstanceOf[js.Any], IsPhysical = IsPhysical.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ParaStyleConditions = ParaStyleConditions.asInstanceOf[js.Any], ParentStyle = ParentStyle.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], StyleInteropGrabBag = StyleInteropGrabBag.asInstanceOf[js.Any], UserDefinedAttributes = UserDefinedAttributes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getDefaults = js.Any.fromFunction0(getDefaults), getName = js.Any.fromFunction0(getName), getParentStyle = js.Any.fromFunction0(getParentStyle), getPropertyDefaults = js.Any.fromFunction1(getPropertyDefaults), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyStates = js.Any.fromFunction1(getPropertyStates), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), isInUse = js.Any.fromFunction0(isInUse), isUserDefined = js.Any.fromFunction0(isUserDefined), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setAllPropertiesToDefault = js.Any.fromFunction0(setAllPropertiesToDefault), setName = js.Any.fromFunction1(setName), setParentStyle = js.Any.fromFunction1(setParentStyle), setPropertiesToDefault = js.Any.fromFunction1(setPropertiesToDefault), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues))
     __obj.asInstanceOf[PropertyPool]

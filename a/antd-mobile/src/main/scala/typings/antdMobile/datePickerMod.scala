@@ -6,7 +6,6 @@ import typings.antdMobile.datePickerPropsTypeMod.DatePickerPropsType
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerMod {
@@ -49,22 +48,23 @@ object datePickerMod {
     def setScrollValue(v: js.Any): Unit = js.native
   }
   
-  @js.native
-  trait PropsType extends DatePickerPropsType {
+  trait PropsType
+    extends StObject
+       with DatePickerPropsType {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onOk: js.UndefOr[js.Function1[/* x */ js.Any, Unit]] = js.native
+    var onOk: js.UndefOr[js.Function1[/* x */ js.Any, Unit]] = js.undefined
     
-    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var pickerPrefixCls: js.UndefOr[String] = js.native
+    var pickerPrefixCls: js.UndefOr[String] = js.undefined
     
-    var popupPrefixCls: js.UndefOr[String] = js.native
+    var popupPrefixCls: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var use12Hours: js.UndefOr[Boolean] = js.native
+    var use12Hours: js.UndefOr[Boolean] = js.undefined
   }
   object PropsType {
     

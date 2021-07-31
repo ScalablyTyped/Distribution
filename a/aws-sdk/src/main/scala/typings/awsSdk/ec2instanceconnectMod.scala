@@ -7,7 +7,6 @@ import typings.awsSdk.serviceMod.Service
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ec2instanceconnectMod {
@@ -23,16 +22,14 @@ object ec2instanceconnectMod {
   
   type AvailabilityZone = String
   
-  @js.native
   trait Blob extends StObject
   
-  @js.native
   trait ClientApiVersions extends StObject {
     
     /**
       * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
       */
-    var apiVersion: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.apiVersion] = js.native
+    var apiVersion: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.apiVersion] = js.undefined
   }
   object ClientApiVersions {
     
@@ -53,13 +50,16 @@ object ec2instanceconnectMod {
     }
   }
   
-  type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  @js.native
+  trait ClientConfiguration
+    extends ServiceConfigurationOptions
+       with ClientApiVersions
   
   @js.native
   trait EC2InstanceConnect extends Service {
     
     @JSName("config")
-    var config_EC2InstanceConnect: ConfigBase with ClientConfiguration = js.native
+    var config_EC2InstanceConnect: ConfigBase & ClientConfiguration = js.native
     
     /**
       * Pushes an SSH public key to a particular OS user on a given EC2 instance for 60 seconds.
@@ -84,28 +84,27 @@ object ec2instanceconnectMod {
   
   type SSHPublicKey = String
   
-  @js.native
   trait SendSSHPublicKeyRequest extends StObject {
     
     /**
       * The availability zone the EC2 instance was launched in.
       */
-    var AvailabilityZone: typings.awsSdk.ec2instanceconnectMod.AvailabilityZone = js.native
+    var AvailabilityZone: typings.awsSdk.ec2instanceconnectMod.AvailabilityZone
     
     /**
       * The EC2 instance you wish to publish the SSH key to.
       */
-    var InstanceId: typings.awsSdk.ec2instanceconnectMod.InstanceId = js.native
+    var InstanceId: typings.awsSdk.ec2instanceconnectMod.InstanceId
     
     /**
       * The OS user on the EC2 instance whom the key may be used to authenticate as.
       */
-    var InstanceOSUser: typings.awsSdk.ec2instanceconnectMod.InstanceOSUser = js.native
+    var InstanceOSUser: typings.awsSdk.ec2instanceconnectMod.InstanceOSUser
     
     /**
       * The public key to be published to the instance. To use it after publication you must have the matching private key.
       */
-    var SSHPublicKey: typings.awsSdk.ec2instanceconnectMod.SSHPublicKey = js.native
+    var SSHPublicKey: typings.awsSdk.ec2instanceconnectMod.SSHPublicKey
   }
   object SendSSHPublicKeyRequest {
     
@@ -137,18 +136,17 @@ object ec2instanceconnectMod {
     }
   }
   
-  @js.native
   trait SendSSHPublicKeyResponse extends StObject {
     
     /**
       * The request ID as logged by EC2 Connect. Please provide this when contacting AWS Support.
       */
-    var RequestId: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.RequestId] = js.native
+    var RequestId: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.RequestId] = js.undefined
     
     /**
       * Indicates request success.
       */
-    var Success: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.Success] = js.native
+    var Success: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.Success] = js.undefined
   }
   object SendSSHPublicKeyResponse {
     

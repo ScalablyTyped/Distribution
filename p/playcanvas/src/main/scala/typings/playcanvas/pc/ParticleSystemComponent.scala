@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -92,7 +91,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param entity - The Entity this Component is attached to.
   */
 @js.native
-trait ParticleSystemComponent extends Component {
+trait ParticleSystemComponent
+  extends StObject
+     with Component {
   
   /**
     * Orient particles in their direction of motion.

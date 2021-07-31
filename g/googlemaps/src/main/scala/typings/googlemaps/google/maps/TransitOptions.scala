@@ -3,19 +3,17 @@ package typings.googlemaps.google.maps
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitOptions extends StObject {
   
-  var arrivalTime: js.UndefOr[Date] = js.native
+  var arrivalTime: js.UndefOr[Date] = js.undefined
   
-  var departureTime: js.UndefOr[Date] = js.native
+  var departureTime: js.UndefOr[Date] = js.undefined
   
-  var modes: js.UndefOr[js.Array[TransitMode]] = js.native
+  var modes: js.UndefOr[js.Array[TransitMode]] = js.undefined
   
-  var routingPreference: js.UndefOr[TransitRoutePreference] = js.native
+  var routingPreference: js.UndefOr[TransitRoutePreference] = js.undefined
 }
 object TransitOptions {
   

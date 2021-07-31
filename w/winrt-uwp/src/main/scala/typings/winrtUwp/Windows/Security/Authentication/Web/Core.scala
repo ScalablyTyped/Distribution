@@ -7,7 +7,6 @@ import typings.winrtUwp.Windows.Security.Credentials.WebAccount
 import typings.winrtUwp.Windows.Security.Credentials.WebAccountProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains core methods for obtaining tokens from web account providers. */
@@ -22,11 +21,15 @@ object Core {
     
     /** The default request type. */
     @js.native
-    sealed trait default extends WebTokenRequestPromptType
+    sealed trait default
+      extends StObject
+         with WebTokenRequestPromptType
     
     /** A request with forced authentication. This will require the user to enter their credentials, regardless of whether they are already logged in. */
     @js.native
-    sealed trait forceAuthentication extends WebTokenRequestPromptType
+    sealed trait forceAuthentication
+      extends StObject
+         with WebTokenRequestPromptType
   }
   
   @js.native
@@ -38,45 +41,55 @@ object Core {
     
     /** The account provider was not available. */
     @js.native
-    sealed trait accountProviderNotAvailable extends WebTokenRequestStatus
+    sealed trait accountProviderNotAvailable
+      extends StObject
+         with WebTokenRequestStatus
     
     /** The account associated with the request has switched. This status occurs when you attempt to use one web account, but the user indicates they wish to use a different web account instead. */
     @js.native
-    sealed trait accountSwitch extends WebTokenRequestStatus
+    sealed trait accountSwitch
+      extends StObject
+         with WebTokenRequestStatus
     
     /** There was a provider error. For information on how to handle this error, consult the provider's documentation. */
     @js.native
-    sealed trait providerError extends WebTokenRequestStatus
+    sealed trait providerError
+      extends StObject
+         with WebTokenRequestStatus
     
     /** The request was successful. */
     @js.native
-    sealed trait success extends WebTokenRequestStatus
+    sealed trait success
+      extends StObject
+         with WebTokenRequestStatus
     
     /** The request was cancelled by the user. */
     @js.native
-    sealed trait userCancel extends WebTokenRequestStatus
+    sealed trait userCancel
+      extends StObject
+         with WebTokenRequestStatus
     
     /** User interaction is required to complete the request. This option is only applicable to requests made with GetTokenSilentlyAsync . If this status is returned, repeat the request with RequestTokenAsync . */
     @js.native
-    sealed trait userInteractionRequired extends WebTokenRequestStatus
+    sealed trait userInteractionRequired
+      extends StObject
+         with WebTokenRequestStatus
   }
   
   /** Contains core methods for obtaining tokens from web account providers. */
-  @js.native
   trait WebAuthenticationCoreManager extends StObject
   
   /** Represents an error from a web account provider. */
-  @js.native
   trait WebProviderError extends StObject {
     
     /** Gets the error code. */
-    var errorCode: Double = js.native
+    var errorCode: Double
     
     /** Gets the error message. */
-    var errorMessage: String = js.native
+    var errorMessage: String
     
     /** Gets the error properties. */
-    var properties: IMap[String, String] = js.native
+    var properties: IMap[String, String]
   }
   object WebProviderError {
     
@@ -101,26 +114,25 @@ object Core {
   }
   
   /** Represents a request to an online identity provider for an authentication token. */
-  @js.native
   trait WebTokenRequest extends StObject {
     
-    var appProperties: js.Any = js.native
+    var appProperties: js.Any
     
     /* unmapped type */
     /** Gets the Id of the client making the request. */
-    var clientId: String = js.native
+    var clientId: String
     
     /** Gets the prompt type of the request. */
-    var promptType: WebTokenRequestPromptType = js.native
+    var promptType: WebTokenRequestPromptType
     
     /** Gets the properties of the request. */
-    var properties: IMap[String, String] = js.native
+    var properties: IMap[String, String]
     
     /** Gets the scope of the request. */
-    var scope: String = js.native
+    var scope: String
     
     /** Gets the web account provider for the request. */
-    var webAccountProvider: WebAccountProvider = js.native
+    var webAccountProvider: WebAccountProvider
   }
   object WebTokenRequest {
     
@@ -161,23 +173,22 @@ object Core {
   }
   
   /** Represents the results of a web token request to an identity provider. */
-  @js.native
   trait WebTokenRequestResult extends StObject {
     
     /**
       * Invalidates the current cached WebTokenRequestResult . Use this method if an access denied error is returned when trying to use a token.
       * @return This method does not return an object or value.
       */
-    def invalidateCacheAsync(): IPromiseWithIAsyncAction = js.native
+    def invalidateCacheAsync(): IPromiseWithIAsyncAction
     
     /** Gets the response data from the web token provider. */
-    var responseData: IVectorView[WebTokenResponse] = js.native
+    var responseData: IVectorView[WebTokenResponse]
     
     /** Gets the error returned by the web provider, if any. */
-    var responseError: WebProviderError = js.native
+    var responseError: WebProviderError
     
     /** Gets the status of the request. */
-    var responseStatus: WebTokenRequestStatus = js.native
+    var responseStatus: WebTokenRequestStatus
   }
   object WebTokenRequestResult {
     
@@ -210,20 +221,19 @@ object Core {
   }
   
   /** Represents the response from a web account provider to a web token request. */
-  @js.native
   trait WebTokenResponse extends StObject {
     
     /** Gets the properties of the response */
-    var properties: IMap[String, String] = js.native
+    var properties: IMap[String, String]
     
     /** Gets the error returned by the provider, if any. */
-    var providerError: WebProviderError = js.native
+    var providerError: WebProviderError
     
     /** Gets the authentication token. */
-    var token: String = js.native
+    var token: String
     
     /** Gets the web account for the request. */
-    var webAccount: WebAccount = js.native
+    var webAccount: WebAccount
   }
   object WebTokenResponse {
     

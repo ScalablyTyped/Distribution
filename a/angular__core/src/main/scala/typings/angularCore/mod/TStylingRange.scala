@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,16 +32,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * NOTE: `0` has special significance and represents `null` as in no additional pointer.
   */
-@js.native
 trait TStylingRange extends StObject {
   
-  var __brand__ : typings.angularCore.angularCoreStrings.TStylingRange = js.native
+  var __brand__ : typings.angularCore.angularCoreStrings.TStylingRange
 }
 object TStylingRange {
   
   @scala.inline
-  def apply(__brand__ : typings.angularCore.angularCoreStrings.TStylingRange): TStylingRange = {
-    val __obj = js.Dynamic.literal(__brand__ = __brand__.asInstanceOf[js.Any])
+  def apply(): TStylingRange = {
+    val __obj = js.Dynamic.literal(__brand__ = "TStylingRange")
     __obj.asInstanceOf[TStylingRange]
   }
   

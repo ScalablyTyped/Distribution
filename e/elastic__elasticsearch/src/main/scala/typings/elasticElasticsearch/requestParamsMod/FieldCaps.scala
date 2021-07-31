@@ -7,25 +7,25 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.none
 import typings.elasticElasticsearch.elasticElasticsearchStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldCaps[T] extends Generic {
+trait FieldCaps[T]
+  extends StObject
+     with Generic {
   
-  var allow_no_indices: js.UndefOr[Boolean] = js.native
+  var allow_no_indices: js.UndefOr[Boolean] = js.undefined
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
   
-  var fields: js.UndefOr[String | js.Array[String]] = js.native
+  var fields: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var ignore_unavailable: js.UndefOr[Boolean] = js.native
+  var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
   
-  var include_unmapped: js.UndefOr[Boolean] = js.native
+  var include_unmapped: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object FieldCaps {
   
@@ -36,7 +36,7 @@ object FieldCaps {
   }
   
   @scala.inline
-  implicit class FieldCapsMutableBuilder[Self <: FieldCaps[_], T] (val x: Self with FieldCaps[T]) extends AnyVal {
+  implicit class FieldCapsMutableBuilder[Self <: FieldCaps[?], T] (val x: Self & FieldCaps[T]) extends AnyVal {
     
     @scala.inline
     def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ Atmosphere client for Node.js
 | Keywords           | atmosphere |
 | # releases         | 6 |
 | # dependents       | 6 |
-| # downloads        | 85233 |
+| # downloads        | 93671 |
 | # stars            | 1 |
 
 ## Links

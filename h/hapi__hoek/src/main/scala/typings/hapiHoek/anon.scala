@@ -2,22 +2,20 @@ package typings.hapiHoek
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Omit<@hapi/hoek.@hapi/hoek.contain.Options, 'once'> */
-  @js.native
   trait OmitOptionsonce extends StObject {
     
-    var deep: js.UndefOr[Boolean] = js.native
+    var deep: js.UndefOr[Boolean] = js.undefined
     
-    var only: js.UndefOr[Boolean] = js.native
+    var only: js.UndefOr[Boolean] = js.undefined
     
-    var part: js.UndefOr[Boolean] = js.native
+    var part: js.UndefOr[Boolean] = js.undefined
     
-    var symbols: js.UndefOr[Boolean] = js.native
+    var symbols: js.UndefOr[Boolean] = js.undefined
   }
   object OmitOptionsonce {
     

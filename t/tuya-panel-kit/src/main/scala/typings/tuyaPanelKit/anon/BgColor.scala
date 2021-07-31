@@ -2,29 +2,27 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BgColor extends StObject {
   
-  var bgColor: js.UndefOr[String] = js.native
+  var bgColor: js.UndefOr[String] = js.undefined
   
-  var bgHeight: js.UndefOr[Double] = js.native
+  var bgHeight: js.UndefOr[Double] = js.undefined
   
-  var bgRadius: js.UndefOr[Double] = js.native
+  var bgRadius: js.UndefOr[Double] = js.undefined
   
-  var bgWidth: js.UndefOr[Double] = js.native
+  var bgWidth: js.UndefOr[Double] = js.undefined
   
-  var fontColor: js.UndefOr[String] = js.native
+  var fontColor: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var iconColor: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.undefined
   
-  var iconSize: js.UndefOr[Double] = js.native
+  var iconSize: js.UndefOr[Double] = js.undefined
   
-  var margin: js.UndefOr[js.Array[Double]] = js.native
+  var margin: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object BgColor {
   

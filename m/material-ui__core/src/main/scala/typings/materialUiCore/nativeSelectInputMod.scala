@@ -12,7 +12,6 @@ import typings.react.mod.ReactType
 import typings.std.HTMLSelectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nativeSelectInputMod extends Shortcut {
@@ -21,24 +20,23 @@ object nativeSelectInputMod extends Shortcut {
   @js.native
   val default: ComponentType[NativeSelectInputProps] = js.native
   
-  @js.native
   trait NativeSelectInputProps extends StObject {
     
-    var IconComponent: js.UndefOr[ReactType[_]] = js.native
+    var IconComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLSelectElement | Node, Unit]] = js.native
+    var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLSelectElement | Node, Unit]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function2[/* event */ ChangeEvent[HTMLSelectElement], /* child */ ReactNode, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var value: js.UndefOr[(js.Array[String | Double | Boolean]) | String | Double | Boolean] = js.native
+    var value: js.UndefOr[(js.Array[String | Double | Boolean]) | String | Double | Boolean] = js.undefined
     
-    var variant: js.UndefOr[standard | outlined | filled] = js.native
+    var variant: js.UndefOr[standard | outlined | filled] = js.undefined
   }
   object NativeSelectInputProps {
     
@@ -58,7 +56,7 @@ object nativeSelectInputMod extends Shortcut {
       def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       @scala.inline
-      def setIconComponent(value: ReactType[_]): Self = StObject.set(x, "IconComponent", value.asInstanceOf[js.Any])
+      def setIconComponent(value: ReactType[js.Any]): Self = StObject.set(x, "IconComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIconComponentUndefined: Self = StObject.set(x, "IconComponent", js.undefined)

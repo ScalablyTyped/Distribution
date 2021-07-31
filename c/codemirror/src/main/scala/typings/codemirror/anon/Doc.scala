@@ -2,23 +2,21 @@ package typings.codemirror.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Doc extends StObject {
   
-  var changed: To | Null = js.native
+  var changed: To | Null
   
-  var doc: typings.codemirror.mod.Doc = js.native
+  var doc: typings.codemirror.mod.Doc
   
-  var name: String = js.native
+  var name: String
 }
 object Doc {
   
   @scala.inline
   def apply(doc: typings.codemirror.mod.Doc, name: String): Doc = {
-    val __obj = js.Dynamic.literal(doc = doc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(doc = doc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], changed = null)
     __obj.asInstanceOf[Doc]
   }
   

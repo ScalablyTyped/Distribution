@@ -2,19 +2,17 @@ package typings.asn1js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepeatedParams extends StObject {
   
-  var local: js.UndefOr[scala.Boolean] = js.native
+  var local: js.UndefOr[scala.Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var optional: js.UndefOr[scala.Boolean] = js.native
+  var optional: js.UndefOr[scala.Boolean] = js.undefined
   
-  var value: js.UndefOr[Any] = js.native
+  var value: js.UndefOr[Any] = js.undefined
 }
 object RepeatedParams {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestTiming extends StObject {
   
   /** How long it took to run the test process. - In response: present if previously set. - In create/update request: optional */
-  var testProcessDuration: js.UndefOr[Duration] = js.native
+  var testProcessDuration: js.UndefOr[Duration] = js.undefined
 }
 object TestTiming {
   

@@ -6,63 +6,61 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.NodeId
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Accessibility {
   
-  @js.native
   trait AXNode extends StObject {
     
     /**
       * The backend ID for the associated DOM node, if any.
       */
-    var backendDOMNodeId: js.UndefOr[BackendNodeId] = js.native
+    var backendDOMNodeId: js.UndefOr[BackendNodeId] = js.undefined
     
     /**
       * IDs for each of this node's child nodes.
       */
-    var childIds: js.UndefOr[js.Array[AXNodeId]] = js.native
+    var childIds: js.UndefOr[js.Array[AXNodeId]] = js.undefined
     
     /**
       * The accessible description for this `Node`.
       */
-    var description: js.UndefOr[AXValue] = js.native
+    var description: js.UndefOr[AXValue] = js.undefined
     
     /**
       * Whether this node is ignored for accessibility
       */
-    var ignored: Boolean = js.native
+    var ignored: Boolean
     
     /**
       * Collection of reasons why this node is hidden.
       */
-    var ignoredReasons: js.UndefOr[js.Array[AXProperty]] = js.native
+    var ignoredReasons: js.UndefOr[js.Array[AXProperty]] = js.undefined
     
     /**
       * The accessible name for this `Node`.
       */
-    var name: js.UndefOr[AXValue] = js.native
+    var name: js.UndefOr[AXValue] = js.undefined
     
     /**
       * Unique identifier for this node.
       */
-    var nodeId: AXNodeId = js.native
+    var nodeId: AXNodeId
     
     /**
       * All other properties
       */
-    var properties: js.UndefOr[js.Array[AXProperty]] = js.native
+    var properties: js.UndefOr[js.Array[AXProperty]] = js.undefined
     
     /**
       * This `Node`'s role, whether explicit or implicit.
       */
-    var role: js.UndefOr[AXValue] = js.native
+    var role: js.UndefOr[AXValue] = js.undefined
     
     /**
       * The value for this `Node`.
       */
-    var value: js.UndefOr[AXValue] = js.native
+    var value: js.UndefOr[AXValue] = js.undefined
   }
   object AXNode {
     
@@ -142,18 +140,17 @@ object Accessibility {
   
   type AXNodeId = String
   
-  @js.native
   trait AXProperty extends StObject {
     
     /**
       * The name of this property.
       */
-    var name: AXPropertyName = js.native
+    var name: AXPropertyName
     
     /**
       * The value of this property.
       */
-    var value: AXValue = js.native
+    var value: AXValue
   }
   object AXProperty {
     
@@ -336,23 +333,22 @@ object Accessibility {
     def valuetext: typings.devtoolsProtocol.devtoolsProtocolStrings.valuetext = "valuetext".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.valuetext]
   }
   
-  @js.native
   trait AXRelatedNode extends StObject {
     
     /**
       * The BackendNodeId of the related DOM node.
       */
-    var backendDOMNodeId: BackendNodeId = js.native
+    var backendDOMNodeId: BackendNodeId
     
     /**
       * The IDRef value provided, if any.
       */
-    var idref: js.UndefOr[String] = js.native
+    var idref: js.UndefOr[String] = js.undefined
     
     /**
       * The text alternative of this node in the current context.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object AXRelatedNode {
     
@@ -382,28 +378,27 @@ object Accessibility {
     }
   }
   
-  @js.native
   trait AXValue extends StObject {
     
     /**
       * One or more related nodes, if applicable.
       */
-    var relatedNodes: js.UndefOr[js.Array[AXRelatedNode]] = js.native
+    var relatedNodes: js.UndefOr[js.Array[AXRelatedNode]] = js.undefined
     
     /**
       * The sources which contributed to the computation of this property.
       */
-    var sources: js.UndefOr[js.Array[AXValueSource]] = js.native
+    var sources: js.UndefOr[js.Array[AXValueSource]] = js.undefined
     
     /**
       * The type of this value.
       */
-    var `type`: AXValueType = js.native
+    var `type`: AXValueType
     
     /**
       * The computed value of this property.
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object AXValue {
     
@@ -484,53 +479,52 @@ object Accessibility {
     def title: typings.devtoolsProtocol.devtoolsProtocolStrings.title = "title".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.title]
   }
   
-  @js.native
   trait AXValueSource extends StObject {
     
     /**
       * The name of the relevant attribute, if any.
       */
-    var attribute: js.UndefOr[String] = js.native
+    var attribute: js.UndefOr[String] = js.undefined
     
     /**
       * The value of the relevant attribute, if any.
       */
-    var attributeValue: js.UndefOr[AXValue] = js.native
+    var attributeValue: js.UndefOr[AXValue] = js.undefined
     
     /**
       * Whether the value for this property is invalid.
       */
-    var invalid: js.UndefOr[Boolean] = js.native
+    var invalid: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Reason for the value being invalid, if it is.
       */
-    var invalidReason: js.UndefOr[String] = js.native
+    var invalidReason: js.UndefOr[String] = js.undefined
     
     /**
       * The native markup source for this value, e.g. a <label> element.
       */
-    var nativeSource: js.UndefOr[AXValueNativeSourceType] = js.native
+    var nativeSource: js.UndefOr[AXValueNativeSourceType] = js.undefined
     
     /**
       * The value, such as a node or node list, of the native source.
       */
-    var nativeSourceValue: js.UndefOr[AXValue] = js.native
+    var nativeSourceValue: js.UndefOr[AXValue] = js.undefined
     
     /**
       * Whether this source is superseded by a higher priority source.
       */
-    var superseded: js.UndefOr[Boolean] = js.native
+    var superseded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * What type of source this is.
       */
-    var `type`: AXValueSourceType = js.native
+    var `type`: AXValueSourceType
     
     /**
       * The value of this property source.
       */
-    var value: js.UndefOr[AXValue] = js.native
+    var value: js.UndefOr[AXValue] = js.undefined
   }
   object AXValueSource {
     
@@ -701,10 +695,9 @@ object Accessibility {
     def valueUndefined: typings.devtoolsProtocol.devtoolsProtocolStrings.valueUndefined = "valueUndefined".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.valueUndefined]
   }
   
-  @js.native
   trait GetFullAXTreeResponse extends StObject {
     
-    var nodes: js.Array[AXNode] = js.native
+    var nodes: js.Array[AXNode]
   }
   object GetFullAXTreeResponse {
     
@@ -725,28 +718,27 @@ object Accessibility {
     }
   }
   
-  @js.native
   trait GetPartialAXTreeRequest extends StObject {
     
     /**
       * Identifier of the backend node to get the partial accessibility tree for.
       */
-    var backendNodeId: js.UndefOr[BackendNodeId] = js.native
+    var backendNodeId: js.UndefOr[BackendNodeId] = js.undefined
     
     /**
       * Whether to fetch this nodes ancestors, siblings and children. Defaults to true.
       */
-    var fetchRelatives: js.UndefOr[Boolean] = js.native
+    var fetchRelatives: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Identifier of the node to get the partial accessibility tree for.
       */
-    var nodeId: js.UndefOr[NodeId] = js.native
+    var nodeId: js.UndefOr[NodeId] = js.undefined
     
     /**
       * JavaScript object id of the node wrapper to get the partial accessibility tree for.
       */
-    var objectId: js.UndefOr[RemoteObjectId] = js.native
+    var objectId: js.UndefOr[RemoteObjectId] = js.undefined
   }
   object GetPartialAXTreeRequest {
     
@@ -785,14 +777,13 @@ object Accessibility {
     }
   }
   
-  @js.native
   trait GetPartialAXTreeResponse extends StObject {
     
     /**
       * The `Accessibility.AXNode` for this DOM node, if it exists, plus its ancestors, siblings and
       * children, if requested.
       */
-    var nodes: js.Array[AXNode] = js.native
+    var nodes: js.Array[AXNode]
   }
   object GetPartialAXTreeResponse {
     
@@ -813,33 +804,32 @@ object Accessibility {
     }
   }
   
-  @js.native
   trait QueryAXTreeRequest extends StObject {
     
     /**
       * Find nodes with this computed name.
       */
-    var accessibleName: js.UndefOr[String] = js.native
+    var accessibleName: js.UndefOr[String] = js.undefined
     
     /**
       * Identifier of the backend node for the root to query.
       */
-    var backendNodeId: js.UndefOr[BackendNodeId] = js.native
+    var backendNodeId: js.UndefOr[BackendNodeId] = js.undefined
     
     /**
       * Identifier of the node for the root to query.
       */
-    var nodeId: js.UndefOr[NodeId] = js.native
+    var nodeId: js.UndefOr[NodeId] = js.undefined
     
     /**
       * JavaScript object id of the node wrapper for the root to query.
       */
-    var objectId: js.UndefOr[RemoteObjectId] = js.native
+    var objectId: js.UndefOr[RemoteObjectId] = js.undefined
     
     /**
       * Find nodes with this computed role.
       */
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
   }
   object QueryAXTreeRequest {
     
@@ -884,14 +874,13 @@ object Accessibility {
     }
   }
   
-  @js.native
   trait QueryAXTreeResponse extends StObject {
     
     /**
       * A list of `Accessibility.AXNode` matching the specified attributes,
       * including nodes that are ignored for accessibility.
       */
-    var nodes: js.Array[AXNode] = js.native
+    var nodes: js.Array[AXNode]
   }
   object QueryAXTreeResponse {
     

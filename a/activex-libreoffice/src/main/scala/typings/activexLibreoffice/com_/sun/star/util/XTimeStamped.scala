@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,20 +16,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * meaningful order between timestamps, depend on the implementation.
   * @since OOo 1.1.2
   */
-@js.native
-trait XTimeStamped extends XInterface {
+trait XTimeStamped
+  extends StObject
+     with XInterface {
   
   /**
     * returns the timestamp of the object.
     * @returns a `string` that represents a timestamp.
     */
-  val Timestamp: String = js.native
+  val Timestamp: String
   
   /**
     * returns the timestamp of the object.
     * @returns a `string` that represents a timestamp.
     */
-  def getTimestamp(): String = js.native
+  def getTimestamp(): String
 }
 object XTimeStamped {
   

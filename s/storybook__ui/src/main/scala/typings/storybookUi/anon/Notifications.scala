@@ -2,15 +2,13 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notifications extends StObject {
   
-  def clearNotification(id: String): Unit = js.native
+  def clearNotification(id: String): Unit
   
-  var notifications: js.Array[typings.storybookApi.notificationsMod.Notification] = js.native
+  var notifications: js.Array[typings.storybookApi.notificationsMod.Notification]
 }
 object Notifications {
   

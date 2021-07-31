@@ -5,17 +5,18 @@ import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tilequeryMod {
   
-  @JSImport("@mapbox/mapbox-sdk/services/tilequery", JSImport.Default)
+  @JSImport("@mapbox/mapbox-sdk/services/tilequery", JSImport.Namespace)
   @js.native
-  def default(config: SdkConfig): TileQueryService = js.native
-  @JSImport("@mapbox/mapbox-sdk/services/tilequery", JSImport.Default)
-  @js.native
-  def default(config: typings.mapboxMapboxSdk.mod.default): TileQueryService = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(config: SdkConfig): TileQueryService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[TileQueryService]
+  @scala.inline
+  def default(config: typings.mapboxMapboxSdk.mod.default): TileQueryService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[TileQueryService]
   
   /* Rewritten from type alias, can be one of: 
     - typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.polygon
@@ -35,40 +36,39 @@ object tilequeryMod {
     def polygon: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.polygon = "polygon".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.polygon]
   }
   
-  @js.native
   trait TileQueryRequest extends StObject {
     
     /**
       * The longitude and latitude to be queried.
       */
-    var coordinates: LngLatLike = js.native
+    var coordinates: LngLatLike
     
     /**
       * Whether or not to deduplicate results. (optional, default true)
       */
-    var dedupe: Boolean = js.native
+    var dedupe: Boolean
     
     /**
       * Queries for a specific geometry type.
       */
-    var geometry: GeometryType = js.native
+    var geometry: GeometryType
     
-    var layers: js.UndefOr[js.Array[String]] = js.native
+    var layers: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The number of features to return, between 1 and 50. (optional, default 5)
       */
-    var limit: Double = js.native
+    var limit: Double
     
     /**
       * The maps being queried. If you need to composite multiple layers, provide multiple map IDs.
       */
-    var mapIds: js.Array[String] = js.native
+    var mapIds: js.Array[String]
     
     /**
       * The approximate distance in meters to query for features. (optional, default 0)
       */
-    var radius: Double = js.native
+    var radius: Double
   }
   object TileQueryRequest {
     
@@ -120,14 +120,13 @@ object tilequeryMod {
     }
   }
   
-  @js.native
   trait TileQueryService extends StObject {
     
     /**
       * Get a static map image..
       * @param request
       */
-    def listFeatures(request: TileQueryRequest): MapiRequest = js.native
+    def listFeatures(request: TileQueryRequest): MapiRequest
   }
   object TileQueryService {
     

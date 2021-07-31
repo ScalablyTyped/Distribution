@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkReportSpec extends StObject {
   
   /** The date range for which the report is generated. */
-  var dateRange: js.UndefOr[DateRange] = js.native
+  var dateRange: js.UndefOr[DateRange] = js.undefined
   
   /** Describes which report rows to match based on their dimension values. */
-  var dimensionFilters: js.UndefOr[js.Array[NetworkReportSpecDimensionFilter]] = js.native
+  var dimensionFilters: js.UndefOr[js.Array[NetworkReportSpecDimensionFilter]] = js.undefined
   
   /**
     * List of dimensions of the report. The value combination of these dimensions determines the row of the report. If no dimensions are specified, the report returns a single row of
     * requested metrics for the entire account.
     */
-  var dimensions: js.UndefOr[js.Array[String]] = js.native
+  var dimensions: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Localization settings of the report. */
-  var localizationSettings: js.UndefOr[LocalizationSettings] = js.native
+  var localizationSettings: js.UndefOr[LocalizationSettings] = js.undefined
   
   /**
     * Maximum number of report data rows to return. If the value is not set, the API returns as many rows as possible, up to 100000. Acceptable values are 1-100000, inclusive. Values
     * larger than 100000 return an error.
     */
-  var maxReportRows: js.UndefOr[Double] = js.native
+  var maxReportRows: js.UndefOr[Double] = js.undefined
   
   /** List of metrics of the report. A report must specify at least one metric. */
-  var metrics: js.UndefOr[js.Array[String]] = js.native
+  var metrics: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Describes the sorting of report rows. The order of the condition in the list defines its precedence; the earlier the condition, the higher its precedence. If no sort conditions are
     * specified, the row ordering is undefined.
     */
-  var sortConditions: js.UndefOr[js.Array[NetworkReportSpecSortCondition]] = js.native
+  var sortConditions: js.UndefOr[js.Array[NetworkReportSpecSortCondition]] = js.undefined
   
   /**
     * A report time zone. Accepts an IANA TZ name values, such as "America/Los_Angeles." If no time zone is defined, the account default takes effect. Check default value by the get
     * account action. **Warning:** The "America/Los_Angeles" is the only supported value at the moment.
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object NetworkReportSpec {
   

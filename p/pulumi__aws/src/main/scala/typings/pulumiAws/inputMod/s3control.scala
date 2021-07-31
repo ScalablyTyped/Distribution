@@ -4,38 +4,36 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object s3control {
   
-  @js.native
   trait BucketLifecycleConfigurationRule extends StObject {
     
     /**
       * Configuration block containing settings for abort incomplete multipart upload.
       */
-    var abortIncompleteMultipartUpload: js.UndefOr[Input[BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload]] = js.native
+    var abortIncompleteMultipartUpload: js.UndefOr[Input[BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload]] = js.undefined
     
     /**
       * Configuration block containing settings for expiration of objects.
       */
-    var expiration: js.UndefOr[Input[BucketLifecycleConfigurationRuleExpiration]] = js.native
+    var expiration: js.UndefOr[Input[BucketLifecycleConfigurationRuleExpiration]] = js.undefined
     
     /**
       * Configuration block containing settings for filtering.
       */
-    var filter: js.UndefOr[Input[BucketLifecycleConfigurationRuleFilter]] = js.native
+    var filter: js.UndefOr[Input[BucketLifecycleConfigurationRuleFilter]] = js.undefined
     
     /**
       * Unique identifier for the rule.
       */
-    var id: Input[String] = js.native
+    var id: Input[String]
     
     /**
       * Status of the rule. Valid values: `Enabled` and `Disabled`. Defaults to `Enabled`.
       */
-    var status: js.UndefOr[Input[String]] = js.native
+    var status: js.UndefOr[Input[String]] = js.undefined
   }
   object BucketLifecycleConfigurationRule {
     
@@ -77,13 +75,12 @@ object s3control {
     }
   }
   
-  @js.native
   trait BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload extends StObject {
     
     /**
       * Number of days after which Amazon S3 aborts an incomplete multipart upload.
       */
-    var daysAfterInitiation: Input[Double] = js.native
+    var daysAfterInitiation: Input[Double]
   }
   object BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload {
     
@@ -101,23 +98,22 @@ object s3control {
     }
   }
   
-  @js.native
   trait BucketLifecycleConfigurationRuleExpiration extends StObject {
     
     /**
       * Date the object is to be deleted. Should be in `YYYY-MM-DD` date format, e.g. `2020-09-30`.
       */
-    var date: js.UndefOr[Input[String]] = js.native
+    var date: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Number of days before the object is to be deleted.
       */
-    var days: js.UndefOr[Input[Double]] = js.native
+    var days: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Enable to remove a delete marker with no noncurrent versions. Cannot be specified with `date` or `days`.
       */
-    var expiredObjectDeleteMarker: js.UndefOr[Input[Boolean]] = js.native
+    var expiredObjectDeleteMarker: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object BucketLifecycleConfigurationRuleExpiration {
     
@@ -150,18 +146,17 @@ object s3control {
     }
   }
   
-  @js.native
   trait BucketLifecycleConfigurationRuleFilter extends StObject {
     
     /**
       * Object prefix for rule filtering.
       */
-    var prefix: js.UndefOr[Input[String]] = js.native
+    var prefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of object tags for rule filtering.
       */
-    var tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    var tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object BucketLifecycleConfigurationRuleFilter {
     

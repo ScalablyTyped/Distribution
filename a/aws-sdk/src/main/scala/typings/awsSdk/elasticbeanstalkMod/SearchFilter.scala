@@ -2,26 +2,24 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchFilter extends StObject {
   
   /**
     * The result attribute to which the filter values are applied. Valid values vary by API action.
     */
-  var Attribute: js.UndefOr[SearchFilterAttribute] = js.native
+  var Attribute: js.UndefOr[SearchFilterAttribute] = js.undefined
   
   /**
     * The operator to apply to the Attribute with each of the Values. Valid values vary by Attribute.
     */
-  var Operator: js.UndefOr[SearchFilterOperator] = js.native
+  var Operator: js.UndefOr[SearchFilterOperator] = js.undefined
   
   /**
     * The list of values applied to the Attribute and Operator attributes. Number of values and valid values vary by Attribute.
     */
-  var Values: js.UndefOr[SearchFilterValues] = js.native
+  var Values: js.UndefOr[SearchFilterValues] = js.undefined
 }
 object SearchFilter {
   

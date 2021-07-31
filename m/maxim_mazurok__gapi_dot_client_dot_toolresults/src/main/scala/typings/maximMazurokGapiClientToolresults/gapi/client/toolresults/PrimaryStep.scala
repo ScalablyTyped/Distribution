@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrimaryStep extends StObject {
   
   /** Step Id and outcome of each individual step. */
-  var individualOutcome: js.UndefOr[js.Array[IndividualOutcome]] = js.native
+  var individualOutcome: js.UndefOr[js.Array[IndividualOutcome]] = js.undefined
   
   /** Rollup test status of multiple steps that were run with the same configuration as a group. */
-  var rollUp: js.UndefOr[String] = js.native
+  var rollUp: js.UndefOr[String] = js.undefined
 }
 object PrimaryStep {
   

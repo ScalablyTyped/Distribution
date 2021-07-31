@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsQueuesPatch extends StandardParameters {
+trait ParamsResourceProjectsLocationsQueuesPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Caller-specified and required in CreateQueue, after which it becomes
@@ -31,18 +31,18 @@ trait ParamsResourceProjectsLocationsQueuesPatch extends StandardParameters {
     * `QUEUE_ID` can contain letters ([A-Za-z]), numbers ([0-9]), or   hyphens
     * (-). The maximum length is 100 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaQueue] = js.native
+  var requestBody: js.UndefOr[SchemaQueue] = js.undefined
   
   /**
     * A mask used to specify which fields of the queue are being updated.  If
     * empty, then all fields will be updated.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsLocationsQueuesPatch {
   

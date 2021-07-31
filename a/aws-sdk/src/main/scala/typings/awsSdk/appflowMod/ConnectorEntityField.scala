@@ -2,41 +2,39 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorEntityField extends StObject {
   
   /**
     *  A description of the connector entity field. 
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     *  The properties applied to a field when the connector is being used as a destination. 
     */
-  var destinationProperties: js.UndefOr[DestinationFieldProperties] = js.native
+  var destinationProperties: js.UndefOr[DestinationFieldProperties] = js.undefined
   
   /**
     *  The unique identifier of the connector field. 
     */
-  var identifier: Identifier = js.native
+  var identifier: Identifier
   
   /**
     *  The label applied to a connector entity field. 
     */
-  var label: js.UndefOr[Label] = js.native
+  var label: js.UndefOr[Label] = js.undefined
   
   /**
     *  The properties that can be applied to a field when the connector is being used as a source. 
     */
-  var sourceProperties: js.UndefOr[SourceFieldProperties] = js.native
+  var sourceProperties: js.UndefOr[SourceFieldProperties] = js.undefined
   
   /**
     *  Contains details regarding the supported FieldType, including the corresponding filterOperators and supportedValues. 
     */
-  var supportedFieldTypeDetails: js.UndefOr[SupportedFieldTypeDetails] = js.native
+  var supportedFieldTypeDetails: js.UndefOr[SupportedFieldTypeDetails] = js.undefined
 }
 object ConnectorEntityField {
   

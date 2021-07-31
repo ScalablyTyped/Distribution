@@ -2,16 +2,14 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFargateProfileResponse extends StObject {
   
   /**
     * The deleted Fargate profile.
     */
-  var fargateProfile: js.UndefOr[FargateProfile] = js.native
+  var fargateProfile: js.UndefOr[FargateProfile] = js.undefined
 }
 object DeleteFargateProfileResponse {
   

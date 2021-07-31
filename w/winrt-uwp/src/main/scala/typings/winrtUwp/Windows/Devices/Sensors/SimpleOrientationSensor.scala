@@ -7,14 +7,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.orientationchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a simple orientation sensor. */
 @js.native
 trait SimpleOrientationSensor extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_orientationchanged(
     `type`: orientationchanged,
@@ -31,7 +30,7 @@ trait SimpleOrientationSensor extends StObject {
   def getCurrentOrientation(): SimpleOrientation = js.native
   
   /** Occurs each time the simple orientation sensor reports a new sensor reading */
-  def onorientationchanged(ev: SimpleOrientationSensorOrientationChangedEventArgs with WinRTEvent[SimpleOrientationSensor]): Unit = js.native
+  def onorientationchanged(ev: SimpleOrientationSensorOrientationChangedEventArgs & WinRTEvent[SimpleOrientationSensor]): Unit = js.native
   /** Occurs each time the simple orientation sensor reports a new sensor reading */
   @JSName("onorientationchanged")
   var onorientationchanged_Original: TypedEventHandler[SimpleOrientationSensor, SimpleOrientationSensorOrientationChangedEventArgs] = js.native
@@ -39,7 +38,7 @@ trait SimpleOrientationSensor extends StObject {
   /** Gets or sets the transformation that needs to be applied to sensor data. Transformations to be applied are tied to the display orientation with which to align the sensor data. */
   var readingTransform: DisplayOrientations = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_orientationchanged(
     `type`: orientationchanged,

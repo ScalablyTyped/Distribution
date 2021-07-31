@@ -3,15 +3,13 @@ package typings.ecmarkup.anon
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Grammar extends StObject {
   
-  var grammar: typings.std.Element = js.native
+  var grammar: typings.std.Element
   
-  var lists: js.Array[HTMLUListElement] = js.native
+  var lists: js.Array[HTMLUListElement]
 }
 object Grammar {
   

@@ -3,55 +3,53 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeListColumn extends StObject {
   
-  var attributes: js.UndefOr[js.Any] = js.native
+  var attributes: js.UndefOr[js.Any] = js.undefined
   
-  var columns: js.UndefOr[js.Any] = js.native
+  var columns: js.UndefOr[js.Any] = js.undefined
   
-  var command: js.UndefOr[js.Array[TreeListColumnCommandItem]] = js.native
+  var command: js.UndefOr[js.Array[TreeListColumnCommandItem]] = js.undefined
   
-  var editable: js.UndefOr[js.Function] = js.native
+  var editable: js.UndefOr[js.Function] = js.undefined
   
-  var editor: js.UndefOr[js.Function2[/* container */ JQuery, /* options */ TreeListEditorOptions, Unit]] = js.native
+  var editor: js.UndefOr[js.Function2[/* container */ JQuery, /* options */ TreeListEditorOptions, Unit]] = js.undefined
   
-  var encoded: js.UndefOr[Boolean] = js.native
+  var encoded: js.UndefOr[Boolean] = js.undefined
   
-  var expandable: js.UndefOr[Boolean] = js.native
+  var expandable: js.UndefOr[Boolean] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var filterable: js.UndefOr[Boolean | TreeListColumnFilterable] = js.native
+  var filterable: js.UndefOr[Boolean | TreeListColumnFilterable] = js.undefined
   
-  var footerTemplate: js.UndefOr[String | js.Function] = js.native
+  var footerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var headerAttributes: js.UndefOr[js.Any] = js.native
+  var headerAttributes: js.UndefOr[js.Any] = js.undefined
   
-  var headerTemplate: js.UndefOr[String | js.Function] = js.native
+  var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var lockable: js.UndefOr[Boolean] = js.native
+  var lockable: js.UndefOr[Boolean] = js.undefined
   
-  var locked: js.UndefOr[Boolean] = js.native
+  var locked: js.UndefOr[Boolean] = js.undefined
   
-  var menu: js.UndefOr[Boolean] = js.native
+  var menu: js.UndefOr[Boolean] = js.undefined
   
-  var minScreenWidth: js.UndefOr[Double] = js.native
+  var minScreenWidth: js.UndefOr[Double] = js.undefined
   
-  var sortable: js.UndefOr[Boolean | TreeListColumnSortable] = js.native
+  var sortable: js.UndefOr[Boolean | TreeListColumnSortable] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object TreeListColumn {
   

@@ -2,23 +2,21 @@ package typings.aureliaBinding.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scope extends StObject {
   
   /**
     * The primary aspect of the binding scope.  Typically a view-model instance.
     */
-  var bindingContext: js.Any = js.native
+  var bindingContext: js.Any
   
   /**
     * The "parallel" or "artificial" aspect of the binding scope. Provides access to the parent binding
     * context and stores contextual bindable members such as $event, $index, $odd, etc. Members on this
     * object take precedence over members of the bindingContext object.
     */
-  var overrideContext: OverrideContext = js.native
+  var overrideContext: OverrideContext
 }
 object Scope {
   

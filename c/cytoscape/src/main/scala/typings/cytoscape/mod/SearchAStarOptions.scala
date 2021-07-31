@@ -2,24 +2,22 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.aStar
   */
-@js.native
 trait SearchAStarOptions extends StObject {
   
-  var directed: js.UndefOr[Boolean] = js.native
+  var directed: js.UndefOr[Boolean] = js.undefined
   
-  var goal: Selector | CollectionArgument = js.native
+  var goal: Selector | CollectionArgument
   
-  var heuristic: js.UndefOr[js.Function1[/* node */ NodeCollection, Double]] = js.native
+  var heuristic: js.UndefOr[js.Function1[/* node */ NodeCollection, Double]] = js.undefined
   
-  var root: Selector | CollectionArgument = js.native
+  var root: Selector | CollectionArgument
   
-  var weight: js.UndefOr[WeightFn] = js.native
+  var weight: js.UndefOr[WeightFn] = js.undefined
 }
 object SearchAStarOptions {
   

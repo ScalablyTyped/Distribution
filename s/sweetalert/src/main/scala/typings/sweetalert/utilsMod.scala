@@ -4,36 +4,32 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("sweetalert/typings/modules/utils", "getNode")
+  @JSImport("sweetalert/typings/modules/utils", JSImport.Namespace)
   @js.native
-  def getNode(className: String): HTMLElement = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sweetalert/typings/modules/utils", "insertAfter")
-  @js.native
-  def insertAfter(newNode: Node, referenceNode: Node): Unit = js.native
+  @scala.inline
+  def getNode(className: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getNode")(className.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
-  @JSImport("sweetalert/typings/modules/utils", "isPlainObject")
-  @js.native
-  def isPlainObject(value: js.Any): Boolean = js.native
+  @scala.inline
+  def insertAfter(newNode: Node, referenceNode: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(newNode.asInstanceOf[js.Any], referenceNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("sweetalert/typings/modules/utils", "ordinalSuffixOf")
-  @js.native
-  def ordinalSuffixOf(num: Double): String = js.native
+  @scala.inline
+  def isPlainObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("sweetalert/typings/modules/utils", "removeNode")
-  @js.native
-  def removeNode(node: Node): Unit = js.native
+  @scala.inline
+  def ordinalSuffixOf(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ordinalSuffixOf")(num.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("sweetalert/typings/modules/utils", "stringToNode")
-  @js.native
-  def stringToNode(html: String): HTMLElement = js.native
+  @scala.inline
+  def removeNode(node: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNode")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("sweetalert/typings/modules/utils", "throwErr")
-  @js.native
-  def throwErr(message: String): scala.Nothing = js.native
+  @scala.inline
+  def stringToNode(html: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToNode")(html.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def throwErr(message: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwErr")(message.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
 }

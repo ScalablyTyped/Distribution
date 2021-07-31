@@ -3,29 +3,27 @@ package typings.exceljs.mod
 import typings.exceljs.anon.PartialStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowModel extends StObject {
   
-  var cells: js.Array[CellModel] = js.native
+  var cells: js.Array[CellModel]
   
-  var collapsed: Boolean = js.native
+  var collapsed: Boolean
   
-  var height: Double = js.native
+  var height: Double
   
-  var hidden: Boolean = js.native
+  var hidden: Boolean
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
   
-  var number: Double = js.native
+  var number: Double
   
-  var outlineLevel: Double = js.native
+  var outlineLevel: Double
   
-  var style: PartialStyle = js.native
+  var style: PartialStyle
 }
 object RowModel {
   

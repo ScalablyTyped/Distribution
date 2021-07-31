@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adexperiencereportMod {
+  
+  @JSImport("googleapis/build/src/apis/adexperiencereport", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -47,12 +50,11 @@ object adexperiencereportMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/adexperiencereport", "adexperiencereport")
-  @js.native
-  def adexperiencereport(options: Options): Adexperiencereport = js.native
-  @JSImport("googleapis/build/src/apis/adexperiencereport", "adexperiencereport")
-  @js.native
-  def adexperiencereport_v1(version: v1): Adexperiencereport = js.native
+  @scala.inline
+  def adexperiencereport(options: Options): Adexperiencereport = ^.asInstanceOf[js.Dynamic].applyDynamic("adexperiencereport")(options.asInstanceOf[js.Any]).asInstanceOf[Adexperiencereport]
+  
+  @scala.inline
+  def adexperiencereport_v1(version: v1): Adexperiencereport = ^.asInstanceOf[js.Dynamic].applyDynamic("adexperiencereport")(version.asInstanceOf[js.Any]).asInstanceOf[Adexperiencereport]
   
   object auth extends Shortcut {
     
@@ -83,9 +85,12 @@ object adexperiencereportMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/adexperiencereport", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/adexperiencereport", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

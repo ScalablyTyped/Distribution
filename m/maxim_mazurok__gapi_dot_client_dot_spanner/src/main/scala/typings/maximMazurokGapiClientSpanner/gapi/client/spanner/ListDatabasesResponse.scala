@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDatabasesResponse extends StObject {
   
   /** Databases that matched the request. */
-  var databases: js.UndefOr[js.Array[Database]] = js.native
+  var databases: js.UndefOr[js.Array[Database]] = js.undefined
   
   /** `next_page_token` can be sent in a subsequent ListDatabases call to fetch more of the matching databases. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListDatabasesResponse {
   

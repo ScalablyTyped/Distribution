@@ -4,15 +4,15 @@ import typings.astTypes.kindsMod.CommentKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Node extends Printable {
+trait Node
+  extends StObject
+     with Printable {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Node {
   

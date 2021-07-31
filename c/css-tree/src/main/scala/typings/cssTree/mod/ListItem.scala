@@ -2,28 +2,26 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListItem[TData] extends StObject {
   
-  var data: TData = js.native
+  var data: TData
   
-  var next: ListItem[TData] | Null = js.native
+  var next: ListItem[TData] | Null
   
-  var prev: ListItem[TData] | Null = js.native
+  var prev: ListItem[TData] | Null
 }
 object ListItem {
   
   @scala.inline
   def apply[TData](data: TData): ListItem[TData] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], next = null, prev = null)
     __obj.asInstanceOf[ListItem[TData]]
   }
   
   @scala.inline
-  implicit class ListItemMutableBuilder[Self <: ListItem[_], TData] (val x: Self with ListItem[TData]) extends AnyVal {
+  implicit class ListItemMutableBuilder[Self <: ListItem[?], TData] (val x: Self & ListItem[TData]) extends AnyVal {
     
     @scala.inline
     def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

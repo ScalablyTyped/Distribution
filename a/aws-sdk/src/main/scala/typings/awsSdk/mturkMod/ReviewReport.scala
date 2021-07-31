@@ -2,21 +2,19 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReviewReport extends StObject {
   
   /**
     *  A list of ReviewAction objects for each action specified in the Review Policy. 
     */
-  var ReviewActions: js.UndefOr[ReviewActionDetailList] = js.native
+  var ReviewActions: js.UndefOr[ReviewActionDetailList] = js.undefined
   
   /**
     *  A list of ReviewResults objects for each action specified in the Review Policy. 
     */
-  var ReviewResults: js.UndefOr[ReviewResultDetailList] = js.native
+  var ReviewResults: js.UndefOr[ReviewResultDetailList] = js.undefined
 }
 object ReviewReport {
   

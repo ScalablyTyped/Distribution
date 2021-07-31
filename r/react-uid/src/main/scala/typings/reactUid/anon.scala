@@ -3,19 +3,17 @@ package typings.reactUid
 import typings.reactUid.contextMod.IdSourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Id extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var quartz: IdSourceType = js.native
+    var quartz: IdSourceType
   }
   object Id {
     

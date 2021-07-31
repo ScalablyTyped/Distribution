@@ -4,31 +4,31 @@ import typings.std.Record
 import typings.vueTemplateCompiler.vueTemplateCompilerNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ASTExpression extends ASTNode {
+trait ASTExpression
+  extends StObject
+     with ASTNode {
   
-  var expression: String = js.native
+  var expression: String
   
   // 2.4 ssr optimization
-  var ssrOptimizability: js.UndefOr[SSROptimizability] = js.native
+  var ssrOptimizability: js.UndefOr[SSROptimizability] = js.undefined
   
-  var static: js.UndefOr[Boolean] = js.native
+  var static: js.UndefOr[Boolean] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var tokens: js.Array[String | (Record[String, _])] = js.native
+  var tokens: js.Array[String | (Record[String, js.Any])]
   
-  var `type`: `2` = js.native
+  var `type`: `2`
 }
 object ASTExpression {
   
   @scala.inline
-  def apply(expression: String, text: String, tokens: js.Array[String | (Record[String, _])], `type`: `2`): ASTExpression = {
+  def apply(expression: String, text: String, tokens: js.Array[String | (Record[String, js.Any])]): ASTExpression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(2)
     __obj.asInstanceOf[ASTExpression]
   }
   
@@ -54,7 +54,7 @@ object ASTExpression {
     def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokens(value: js.Array[String | (Record[String, _])]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    def setTokens(value: js.Array[String | (Record[String, js.Any])]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTokensVarargs(value: (String | (Record[String, js.Any]))*): Self = StObject.set(x, "tokens", js.Array(value :_*))

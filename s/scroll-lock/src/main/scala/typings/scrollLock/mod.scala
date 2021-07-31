@@ -4,91 +4,73 @@ import typings.std.Element
 import typings.std.NodeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("scroll-lock", "addFillGapSelector")
+  @JSImport("scroll-lock", JSImport.Namespace)
   @js.native
-  def addFillGapSelector(fillGapSelector: FillGapSelector): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("scroll-lock", "addFillGapTarget")
-  @js.native
-  def addFillGapTarget(fillGapTarget: FillGapTarget): Unit = js.native
+  @scala.inline
+  def addFillGapSelector(fillGapSelector: FillGapSelector): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFillGapSelector")(fillGapSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scroll-lock", "addLockableSelector")
-  @js.native
-  def addLockableSelector(lockableSelector: LockableSelector): Unit = js.native
+  @scala.inline
+  def addFillGapTarget(fillGapTarget: FillGapTarget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFillGapTarget")(fillGapTarget.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scroll-lock", "addLockableTarget")
-  @js.native
-  def addLockableTarget(lockableTarget: LockableTarget): Unit = js.native
+  @scala.inline
+  def addLockableSelector(lockableSelector: LockableSelector): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLockableSelector")(lockableSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scroll-lock", "addScrollableSelector")
-  @js.native
-  def addScrollableSelector(scrollableSelector: ScrollableSelector): Unit = js.native
+  @scala.inline
+  def addLockableTarget(lockableTarget: LockableTarget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLockableTarget")(lockableTarget.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scroll-lock", "addScrollableTarget")
-  @js.native
-  def addScrollableTarget(scrollableTarget: ScrollableTarget): Unit = js.native
+  @scala.inline
+  def addScrollableSelector(scrollableSelector: ScrollableSelector): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addScrollableSelector")(scrollableSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scroll-lock", "clearQueueScrollLocks")
-  @js.native
-  def clearQueueScrollLocks(): Unit = js.native
+  @scala.inline
+  def addScrollableTarget(scrollableTarget: ScrollableTarget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addScrollableTarget")(scrollableTarget.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scroll-lock", "disablePageScroll")
-  @js.native
-  def disablePageScroll(): Unit = js.native
-  @JSImport("scroll-lock", "disablePageScroll")
-  @js.native
-  def disablePageScroll(scrollableTarget: ScrollableTarget): Unit = js.native
+  @scala.inline
+  def clearQueueScrollLocks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearQueueScrollLocks")().asInstanceOf[Unit]
   
-  @JSImport("scroll-lock", "enablePageScroll")
-  @js.native
-  def enablePageScroll(): Unit = js.native
-  @JSImport("scroll-lock", "enablePageScroll")
-  @js.native
-  def enablePageScroll(scrollableTarget: ScrollableTarget): Unit = js.native
+  @scala.inline
+  def disablePageScroll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disablePageScroll")().asInstanceOf[Unit]
+  @scala.inline
+  def disablePageScroll(scrollableTarget: ScrollableTarget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disablePageScroll")(scrollableTarget.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scroll-lock", "getCurrentPageScrollBarWidth")
-  @js.native
-  def getCurrentPageScrollBarWidth(): Double = js.native
+  @scala.inline
+  def enablePageScroll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enablePageScroll")().asInstanceOf[Unit]
+  @scala.inline
+  def enablePageScroll(scrollableTarget: ScrollableTarget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enablePageScroll")(scrollableTarget.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scroll-lock", "getPageScrollBarWidth")
-  @js.native
-  def getPageScrollBarWidth(): Double = js.native
-  @JSImport("scroll-lock", "getPageScrollBarWidth")
-  @js.native
-  def getPageScrollBarWidth(onlyExists: Boolean): Double = js.native
+  @scala.inline
+  def getCurrentPageScrollBarWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPageScrollBarWidth")().asInstanceOf[Double]
   
-  @JSImport("scroll-lock", "getScrollState")
-  @js.native
-  def getScrollState(): Boolean = js.native
+  @scala.inline
+  def getPageScrollBarWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPageScrollBarWidth")().asInstanceOf[Double]
+  @scala.inline
+  def getPageScrollBarWidth(onlyExists: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPageScrollBarWidth")(onlyExists.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("scroll-lock", "refillGaps")
-  @js.native
-  def refillGaps(): Unit = js.native
+  @scala.inline
+  def getScrollState(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollState")().asInstanceOf[Boolean]
   
-  @JSImport("scroll-lock", "removeFillGapSelector")
-  @js.native
-  def removeFillGapSelector(fillGapSelector: FillGapSelector): Unit = js.native
+  @scala.inline
+  def refillGaps(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refillGaps")().asInstanceOf[Unit]
   
-  @JSImport("scroll-lock", "removeFillGapTarget")
-  @js.native
-  def removeFillGapTarget(fillGapTarget: FillGapTarget): Unit = js.native
+  @scala.inline
+  def removeFillGapSelector(fillGapSelector: FillGapSelector): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFillGapSelector")(fillGapSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scroll-lock", "removeScrollableSelector")
-  @js.native
-  def removeScrollableSelector(scrollableSelector: ScrollableSelector): Unit = js.native
+  @scala.inline
+  def removeFillGapTarget(fillGapTarget: FillGapTarget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFillGapTarget")(fillGapTarget.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scroll-lock", "removeScrollableTarget")
-  @js.native
-  def removeScrollableTarget(scrollableTarget: ScrollableTarget): Unit = js.native
+  @scala.inline
+  def removeScrollableSelector(scrollableSelector: ScrollableSelector): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeScrollableSelector")(scrollableSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scroll-lock", "setFillGapMethod")
-  @js.native
-  def setFillGapMethod(fillGapMethod: FillGapMethod): Unit = js.native
+  @scala.inline
+  def removeScrollableTarget(scrollableTarget: ScrollableTarget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeScrollableTarget")(scrollableTarget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setFillGapMethod(fillGapMethod: FillGapMethod): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFillGapMethod")(fillGapMethod.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.scrollLock.scrollLockStrings.padding

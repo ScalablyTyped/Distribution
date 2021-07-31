@@ -4,13 +4,14 @@ import typings.openui5.sap.ui.core.CalendarType
 import typings.openui5.sap.ui.core.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calendar {
   
   @js.native
-  trait DatesRow extends Month {
+  trait DatesRow
+    extends StObject
+       with Month {
     
     /**
       * Gets current value of property <code>days</code>.number of days displayedDefault value is
@@ -68,7 +69,9 @@ object calendar {
   }
   
   @js.native
-  trait Header extends Control {
+  trait Header
+    extends StObject
+       with Control {
     
     /**
       * Attaches event handler <code>fnFunction</code> to the <code>pressButton0</code> event of this
@@ -474,7 +477,9 @@ object calendar {
   }
   
   @js.native
-  trait Month extends Control {
+  trait Month
+    extends StObject
+       with Control {
     
     /**
       * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
@@ -612,7 +617,7 @@ object calendar {
       * Returns array of IDs of the elements which are the current targets of the association
       * <code>ariaLabelledBy</code>.
       */
-    def getAriaLabelledBy(): js.Array[_] = js.native
+    def getAriaLabelledBy(): js.Array[js.Any] = js.native
     
     /**
       * Gets current value of property <code>date</code>.the month including this date is rendered and this
@@ -771,7 +776,7 @@ object calendar {
       * Removes all the controls in the association named <code>ariaLabelledBy</code>.
       * @returns An array of the removed elements (might be empty)
       */
-    def removeAllAriaLabelledBy(): js.Array[_] = js.native
+    def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
     
     /**
       * Removes all the controls from the aggregation <code>disabledDates</code>.Additionally, it
@@ -933,7 +938,9 @@ object calendar {
   }
   
   @js.native
-  trait MonthPicker extends Control {
+  trait MonthPicker
+    extends StObject
+       with Control {
     
     /**
       * Attaches event handler <code>fnFunction</code> to the <code>pageChange</code> event of this
@@ -1098,7 +1105,9 @@ object calendar {
   }
   
   @js.native
-  trait MonthsRow extends Control {
+  trait MonthsRow
+    extends StObject
+       with Control {
     
     /**
       * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
@@ -1221,7 +1230,7 @@ object calendar {
       * Returns array of IDs of the elements which are the current targets of the association
       * <code>ariaLabelledBy</code>.
       */
-    def getAriaLabelledBy(): js.Array[_] = js.native
+    def getAriaLabelledBy(): js.Array[js.Any] = js.native
     
     /**
       * Gets current value of property <code>date</code>.A date as JavaScript Date object. The month
@@ -1333,7 +1342,7 @@ object calendar {
       * Removes all the controls in the association named <code>ariaLabelledBy</code>.
       * @returns An array of the removed elements (might be empty)
       */
-    def removeAllAriaLabelledBy(): js.Array[_] = js.native
+    def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
     
     /**
       * Removes all the controls from the aggregation <code>selectedDates</code>.Additionally, it
@@ -1448,7 +1457,9 @@ object calendar {
   }
   
   @js.native
-  trait TimesRow extends Control {
+  trait TimesRow
+    extends StObject
+       with Control {
     
     /**
       * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
@@ -1570,7 +1581,7 @@ object calendar {
       * Returns array of IDs of the elements which are the current targets of the association
       * <code>ariaLabelledBy</code>.
       */
-    def getAriaLabelledBy(): js.Array[_] = js.native
+    def getAriaLabelledBy(): js.Array[js.Any] = js.native
     
     /**
       * Gets current value of property <code>date</code>.A date as JavaScript Date object. The month
@@ -1689,7 +1700,7 @@ object calendar {
       * Removes all the controls in the association named <code>ariaLabelledBy</code>.
       * @returns An array of the removed elements (might be empty)
       */
-    def removeAllAriaLabelledBy(): js.Array[_] = js.native
+    def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
     
     /**
       * Removes all the controls from the aggregation <code>selectedDates</code>.Additionally, it
@@ -1816,7 +1827,9 @@ object calendar {
   }
   
   @js.native
-  trait YearPicker extends Control {
+  trait YearPicker
+    extends StObject
+       with Control {
     
     /**
       * Attaches event handler <code>fnFunction</code> to the <code>pageChange</code> event of this

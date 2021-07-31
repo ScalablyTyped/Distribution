@@ -8,7 +8,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod extends Shortcut {
@@ -17,10 +16,9 @@ object contextMod extends Shortcut {
   @js.native
   val default: Context[TriggerContextProps] = js.native
   
-  @js.native
   trait TriggerContextProps extends StObject {
     
-    var onPopupMouseDown: MouseEventHandler[HTMLElement] = js.native
+    var onPopupMouseDown: MouseEventHandler[HTMLElement]
   }
   object TriggerContextProps {
     

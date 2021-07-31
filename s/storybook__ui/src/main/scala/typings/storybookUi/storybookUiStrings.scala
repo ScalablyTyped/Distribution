@@ -8,7 +8,6 @@ import typings.storybookUi.shortcutsMod.ValidationStates
 import typings.storybookUi.sidebarTypesMod.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storybookUiStrings {
@@ -19,7 +18,9 @@ object storybookUiStrings {
   def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait aboutPage extends Feature
+  sealed trait aboutPage
+    extends StObject
+       with Feature
   @scala.inline
   def aboutPage: aboutPage = "aboutPage".asInstanceOf[aboutPage]
   
@@ -39,7 +40,9 @@ object storybookUiStrings {
   def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
   
   @js.native
-  sealed trait addons extends ActiveTabsType
+  sealed trait addons
+    extends StObject
+       with ActiveTabsType
   @scala.inline
   def addons: addons = "addons".asInstanceOf[addons]
   
@@ -55,7 +58,8 @@ object storybookUiStrings {
   
   @js.native
   sealed trait args
-    extends Item
+    extends StObject
+       with Item
        with typings.storybookUi.containersSidebarMod.Item
        with typings.storybookUi.containersPreviewMod.Item
   @scala.inline
@@ -97,7 +101,9 @@ object storybookUiStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottom extends PanelPosition
+  sealed trait bottom
+    extends StObject
+       with PanelPosition
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -107,20 +113,25 @@ object storybookUiStrings {
   def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait canvas extends ActiveTabsType
+  sealed trait canvas
+    extends StObject
+       with ActiveTabsType
   @scala.inline
   def canvas: canvas = "canvas".asInstanceOf[canvas]
   
   @js.native
   sealed trait children
-    extends Item
+    extends StObject
+       with Item
        with typings.storybookUi.containersSidebarMod.Item
        with typings.storybookUi.containersPreviewMod.Item
   @scala.inline
   def children: children = "children".asInstanceOf[children]
   
   @js.native
-  sealed trait collapseAll extends Feature
+  sealed trait collapseAll
+    extends StObject
+       with Feature
   @scala.inline
   def collapseAll: collapseAll = "collapseAll".asInstanceOf[collapseAll]
   
@@ -141,7 +152,8 @@ object storybookUiStrings {
   
   @js.native
   sealed trait depth
-    extends Item
+    extends StObject
+       with Item
        with typings.storybookUi.containersSidebarMod.Item
        with typings.storybookUi.containersPreviewMod.Item
   @scala.inline
@@ -173,7 +185,9 @@ object storybookUiStrings {
   def empty: empty = "empty".asInstanceOf[empty]
   
   @js.native
-  sealed trait error extends ValidationStates
+  sealed trait error
+    extends StObject
+       with ValidationStates
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -183,27 +197,37 @@ object storybookUiStrings {
   def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
-  sealed trait expandAll extends Feature
+  sealed trait expandAll
+    extends StObject
+       with Feature
   @scala.inline
   def expandAll: expandAll = "expandAll".asInstanceOf[expandAll]
   
   @js.native
-  sealed trait focusIframe extends Feature
+  sealed trait focusIframe
+    extends StObject
+       with Feature
   @scala.inline
   def focusIframe: focusIframe = "focusIframe".asInstanceOf[focusIframe]
   
   @js.native
-  sealed trait focusNav extends Feature
+  sealed trait focusNav
+    extends StObject
+       with Feature
   @scala.inline
   def focusNav: focusNav = "focusNav".asInstanceOf[focusNav]
   
   @js.native
-  sealed trait focusPanel extends Feature
+  sealed trait focusPanel
+    extends StObject
+       with Feature
   @scala.inline
   def focusPanel: focusPanel = "focusPanel".asInstanceOf[focusPanel]
   
   @js.native
-  sealed trait fullScreen extends Feature
+  sealed trait fullScreen
+    extends StObject
+       with Feature
   @scala.inline
   def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
   
@@ -224,7 +248,8 @@ object storybookUiStrings {
   
   @js.native
   sealed trait id
-    extends Item
+    extends StObject
+       with Item
        with typings.storybookUi.containersSidebarMod.Item
        with typings.storybookUi.containersPreviewMod.Item
   @scala.inline
@@ -242,7 +267,8 @@ object storybookUiStrings {
   
   @js.native
   sealed trait isComponent
-    extends Item
+    extends StObject
+       with Item
        with typings.storybookUi.containersSidebarMod.Item
        with typings.storybookUi.containersPreviewMod.Item
   @scala.inline
@@ -250,7 +276,8 @@ object storybookUiStrings {
   
   @js.native
   sealed trait isLeaf
-    extends Item
+    extends StObject
+       with Item
        with typings.storybookUi.containersSidebarMod.Item
        with typings.storybookUi.containersPreviewMod.Item
   @scala.inline
@@ -258,7 +285,8 @@ object storybookUiStrings {
   
   @js.native
   sealed trait isRoot
-    extends Item
+    extends StObject
+       with Item
        with typings.storybookUi.containersSidebarMod.Item
        with typings.storybookUi.containersPreviewMod.Item
   @scala.inline
@@ -266,7 +294,8 @@ object storybookUiStrings {
   
   @js.native
   sealed trait kind
-    extends Item
+    extends StObject
+       with Item
        with typings.storybookUi.containersSidebarMod.Item
        with typings.storybookUi.containersPreviewMod.Item
   @scala.inline
@@ -319,7 +348,8 @@ object storybookUiStrings {
   
   @js.native
   sealed trait name
-    extends Item
+    extends StObject
+       with Item
        with typings.storybookUi.containersSidebarMod.Item
        with typings.storybookUi.containersPreviewMod.Item
   @scala.inline
@@ -331,12 +361,16 @@ object storybookUiStrings {
   def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
-  sealed trait nextComponent extends Feature
+  sealed trait nextComponent
+    extends StObject
+       with Feature
   @scala.inline
   def nextComponent: nextComponent = "nextComponent".asInstanceOf[nextComponent]
   
   @js.native
-  sealed trait nextStory extends Feature
+  sealed trait nextStory
+    extends StObject
+       with Feature
   @scala.inline
   def nextStory: nextStory = "nextStory".asInstanceOf[nextStory]
   
@@ -381,13 +415,16 @@ object storybookUiStrings {
   def panel: panel = "panel".asInstanceOf[panel]
   
   @js.native
-  sealed trait panelPosition extends Feature
+  sealed trait panelPosition
+    extends StObject
+       with Feature
   @scala.inline
   def panelPosition: panelPosition = "panelPosition".asInstanceOf[panelPosition]
   
   @js.native
   sealed trait parameters
-    extends Item
+    extends StObject
+       with Item
        with typings.storybookUi.containersSidebarMod.Item
        with typings.storybookUi.containersPreviewMod.Item
   @scala.inline
@@ -395,7 +432,8 @@ object storybookUiStrings {
   
   @js.native
   sealed trait parent
-    extends Item
+    extends StObject
+       with Item
        with typings.storybookUi.containersSidebarMod.Item
        with typings.storybookUi.containersPreviewMod.Item
   @scala.inline
@@ -417,12 +455,16 @@ object storybookUiStrings {
   def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
-  sealed trait prevComponent extends Feature
+  sealed trait prevComponent
+    extends StObject
+       with Feature
   @scala.inline
   def prevComponent: prevComponent = "prevComponent".asInstanceOf[prevComponent]
   
   @js.native
-  sealed trait prevStory extends Feature
+  sealed trait prevStory
+    extends StObject
+       with Feature
   @scala.inline
   def prevStory: prevStory = "prevStory".asInstanceOf[prevStory]
   
@@ -433,7 +475,8 @@ object storybookUiStrings {
   
   @js.native
   sealed trait refId
-    extends Item
+    extends StObject
+       with Item
        with typings.storybookUi.containersSidebarMod.Item
        with typings.storybookUi.containersPreviewMod.Item
   @scala.inline
@@ -460,12 +503,16 @@ object storybookUiStrings {
   def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait right extends PanelPosition
+  sealed trait right
+    extends StObject
+       with PanelPosition
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait search extends Feature
+  sealed trait search
+    extends StObject
+       with Feature
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   
@@ -475,12 +522,16 @@ object storybookUiStrings {
   def `server-checked`: `server-checked` = "server-checked".asInstanceOf[`server-checked`]
   
   @js.native
-  sealed trait shortcutsPage extends Feature
+  sealed trait shortcutsPage
+    extends StObject
+       with Feature
   @scala.inline
   def shortcutsPage: shortcutsPage = "shortcutsPage".asInstanceOf[shortcutsPage]
   
   @js.native
-  sealed trait sidebar extends ActiveTabsType
+  sealed trait sidebar
+    extends StObject
+       with ActiveTabsType
   @scala.inline
   def sidebar: sidebar = "sidebar".asInstanceOf[sidebar]
   
@@ -530,17 +581,23 @@ object storybookUiStrings {
   def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait toggleNav extends Feature
+  sealed trait toggleNav
+    extends StObject
+       with Feature
   @scala.inline
   def toggleNav: toggleNav = "toggleNav".asInstanceOf[toggleNav]
   
   @js.native
-  sealed trait togglePanel extends Feature
+  sealed trait togglePanel
+    extends StObject
+       with Feature
   @scala.inline
   def togglePanel: togglePanel = "togglePanel".asInstanceOf[togglePanel]
   
   @js.native
-  sealed trait toolbar extends Feature
+  sealed trait toolbar
+    extends StObject
+       with Feature
   @scala.inline
   def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
   
@@ -565,7 +622,9 @@ object storybookUiStrings {
   def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
-  sealed trait valid extends ValidationStates
+  sealed trait valid
+    extends StObject
+       with ValidationStates
   @scala.inline
   def valid: valid = "valid".asInstanceOf[valid]
   
@@ -575,17 +634,23 @@ object storybookUiStrings {
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait warn extends ValidationStates
+  sealed trait warn
+    extends StObject
+       with ValidationStates
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
-  sealed trait x extends Axis
+  sealed trait x
+    extends StObject
+       with Axis
   @scala.inline
   def x: x = "x".asInstanceOf[x]
   
   @js.native
-  sealed trait y extends Axis
+  sealed trait y
+    extends StObject
+       with Axis
   @scala.inline
   def y: y = "y".asInstanceOf[y]
   

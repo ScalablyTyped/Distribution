@@ -3,10 +3,8 @@ package typings.reactBigScheduler.mod
 import typings.reactBigScheduler.anon.CellUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerDataBehaviors extends StObject {
   
   var getCustomDateFunc: js.UndefOr[
@@ -16,9 +14,9 @@ trait SchedulerDataBehaviors extends StObject {
       /* date */ js.UndefOr[String], 
       CellUnit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var isNonWorkingTimeFunc: js.UndefOr[js.Function2[/* schedulerData */ SchedulerData, /* time */ String, Boolean]] = js.native
+  var isNonWorkingTimeFunc: js.UndefOr[js.Function2[/* schedulerData */ SchedulerData, /* time */ String, Boolean]] = js.undefined
 }
 object SchedulerDataBehaviors {
   

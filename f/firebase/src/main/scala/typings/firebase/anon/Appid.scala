@@ -3,22 +3,21 @@ package typings.firebase.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Appid
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var app_id: js.UndefOr[String] = js.native
+  var app_id: js.UndefOr[String] = js.undefined
   
-  var app_installer_id: js.UndefOr[String] = js.native
+  var app_installer_id: js.UndefOr[String] = js.undefined
   
-  var app_name: String = js.native
+  var app_name: String
   
-  var app_version: js.UndefOr[String] = js.native
+  var app_version: js.UndefOr[String] = js.undefined
   
-  var screen_name: js.UndefOr[String] = js.native
+  var screen_name: js.UndefOr[String] = js.undefined
 }
 object Appid {
   

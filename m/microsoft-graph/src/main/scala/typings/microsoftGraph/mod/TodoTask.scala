@@ -2,68 +2,68 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TodoTask extends Entity {
+trait TodoTask
+  extends StObject
+     with Entity {
   
   // The task body that typically contains information about the task.
-  var body: js.UndefOr[NullableOption[ItemBody]] = js.native
+  var body: js.UndefOr[NullableOption[ItemBody]] = js.undefined
   
   /**
     * The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the
     * request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1,
     * 2020 would look like this: '2020-01-01T00:00:00Z'.
     */
-  var bodyLastModifiedDateTime: js.UndefOr[String] = js.native
+  var bodyLastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   // The date in the specified time zone that the task was finished.
-  var completedDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var completedDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
   /**
     * The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the
     * request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this:
     * '2020-01-01T00:00:00Z'.
     */
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   // The date in the specified time zone that the task is to be finished.
-  var dueDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var dueDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
   // The collection of open extensions defined for the task. Nullable.
-  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.native
+  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.undefined
   
   // The importance of the task. Possible values are: low, normal, high.
-  var importance: js.UndefOr[Importance] = js.native
+  var importance: js.UndefOr[Importance] = js.undefined
   
   // Set to true if an alert is set to remind the user of the task.
-  var isReminderOn: js.UndefOr[Boolean] = js.native
+  var isReminderOn: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the
     * request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1,
     * 2020 would look like this: '2020-01-01T00:00:00Z'.
     */
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   // A collection of resources linked to the task.
-  var linkedResources: js.UndefOr[NullableOption[js.Array[LinkedResource]]] = js.native
+  var linkedResources: js.UndefOr[NullableOption[js.Array[LinkedResource]]] = js.undefined
   
   // The recurrence pattern for the task.
-  var recurrence: js.UndefOr[NullableOption[PatternedRecurrence]] = js.native
+  var recurrence: js.UndefOr[NullableOption[PatternedRecurrence]] = js.undefined
   
   // The date and time for a reminder alert of the task to occur.
-  var reminderDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var reminderDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
   /**
     * Indicates the state or progress of the task. Possible values are: notStarted, inProgress, completed, waitingOnOthers,
     * deferred.
     */
-  var status: js.UndefOr[TaskStatus] = js.native
+  var status: js.UndefOr[TaskStatus] = js.undefined
   
   // A brief description of the task.
-  var title: js.UndefOr[NullableOption[String]] = js.native
+  var title: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object TodoTask {
   

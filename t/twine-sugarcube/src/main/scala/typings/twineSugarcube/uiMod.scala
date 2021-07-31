@@ -11,7 +11,6 @@ import typings.twineSugarcube.twineSugarcubeStrings.hide
 import typings.twineSugarcube.twineSugarcubeStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uiMod {
@@ -20,76 +19,33 @@ object uiMod {
   trait DialogAPI extends StObject {
     
     def addClickHandler(targets: String): Unit = js.native
+    def addClickHandler(targets: String, options: Unit, tartFn: js.Function0[Unit]): Unit = js.native
+    def addClickHandler(targets: String, options: Unit, tartFn: js.Function0[Unit], doneFn: js.Function0[Unit]): Unit = js.native
     def addClickHandler(
       targets: String,
-      options: js.UndefOr[scala.Nothing],
-      tartFn: js.UndefOr[scala.Nothing],
-      doneFn: js.UndefOr[scala.Nothing],
-      closeFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(
-      targets: String,
-      options: js.UndefOr[scala.Nothing],
-      tartFn: js.UndefOr[scala.Nothing],
-      doneFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(
-      targets: String,
-      options: js.UndefOr[scala.Nothing],
-      tartFn: js.UndefOr[scala.Nothing],
-      doneFn: js.Function0[Unit],
-      closeFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(targets: String, options: js.UndefOr[scala.Nothing], tartFn: js.Function0[Unit]): Unit = js.native
-    def addClickHandler(
-      targets: String,
-      options: js.UndefOr[scala.Nothing],
-      tartFn: js.Function0[Unit],
-      doneFn: js.UndefOr[scala.Nothing],
-      closeFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(
-      targets: String,
-      options: js.UndefOr[scala.Nothing],
-      tartFn: js.Function0[Unit],
-      doneFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(
-      targets: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       tartFn: js.Function0[Unit],
       doneFn: js.Function0[Unit],
       closeFn: js.Function0[Unit]
     ): Unit = js.native
+    def addClickHandler(
+      targets: String,
+      options: Unit,
+      tartFn: js.Function0[Unit],
+      doneFn: Unit,
+      closeFn: js.Function0[Unit]
+    ): Unit = js.native
+    def addClickHandler(targets: String, options: Unit, tartFn: Unit, doneFn: js.Function0[Unit]): Unit = js.native
+    def addClickHandler(
+      targets: String,
+      options: Unit,
+      tartFn: Unit,
+      doneFn: js.Function0[Unit],
+      closeFn: js.Function0[Unit]
+    ): Unit = js.native
+    def addClickHandler(targets: String, options: Unit, tartFn: Unit, doneFn: Unit, closeFn: js.Function0[Unit]): Unit = js.native
     def addClickHandler(targets: String, options: DialogOptions): Unit = js.native
-    def addClickHandler(
-      targets: String,
-      options: DialogOptions,
-      tartFn: js.UndefOr[scala.Nothing],
-      doneFn: js.UndefOr[scala.Nothing],
-      closeFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(
-      targets: String,
-      options: DialogOptions,
-      tartFn: js.UndefOr[scala.Nothing],
-      doneFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(
-      targets: String,
-      options: DialogOptions,
-      tartFn: js.UndefOr[scala.Nothing],
-      doneFn: js.Function0[Unit],
-      closeFn: js.Function0[Unit]
-    ): Unit = js.native
     def addClickHandler(targets: String, options: DialogOptions, tartFn: js.Function0[Unit]): Unit = js.native
-    def addClickHandler(
-      targets: String,
-      options: DialogOptions,
-      tartFn: js.Function0[Unit],
-      doneFn: js.UndefOr[scala.Nothing],
-      closeFn: js.Function0[Unit]
-    ): Unit = js.native
     def addClickHandler(targets: String, options: DialogOptions, tartFn: js.Function0[Unit], doneFn: js.Function0[Unit]): Unit = js.native
     def addClickHandler(
       targets: String,
@@ -98,6 +54,22 @@ object uiMod {
       doneFn: js.Function0[Unit],
       closeFn: js.Function0[Unit]
     ): Unit = js.native
+    def addClickHandler(
+      targets: String,
+      options: DialogOptions,
+      tartFn: js.Function0[Unit],
+      doneFn: Unit,
+      closeFn: js.Function0[Unit]
+    ): Unit = js.native
+    def addClickHandler(targets: String, options: DialogOptions, tartFn: Unit, doneFn: js.Function0[Unit]): Unit = js.native
+    def addClickHandler(
+      targets: String,
+      options: DialogOptions,
+      tartFn: Unit,
+      doneFn: js.Function0[Unit],
+      closeFn: js.Function0[Unit]
+    ): Unit = js.native
+    def addClickHandler(targets: String, options: DialogOptions, tartFn: Unit, doneFn: Unit, closeFn: js.Function0[Unit]): Unit = js.native
     /**
       * @deprecated
       * This method has been deprecated and should no longer be used. The core of what it does is simply to wrap
@@ -124,80 +96,37 @@ object uiMod {
       * });
       */
     def addClickHandler(targets: HTMLElement): Unit = js.native
+    def addClickHandler(targets: HTMLElement, options: Unit, tartFn: js.Function0[Unit]): Unit = js.native
+    def addClickHandler(targets: HTMLElement, options: Unit, tartFn: js.Function0[Unit], doneFn: js.Function0[Unit]): Unit = js.native
     def addClickHandler(
       targets: HTMLElement,
-      options: js.UndefOr[scala.Nothing],
-      tartFn: js.UndefOr[scala.Nothing],
-      doneFn: js.UndefOr[scala.Nothing],
-      closeFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(
-      targets: HTMLElement,
-      options: js.UndefOr[scala.Nothing],
-      tartFn: js.UndefOr[scala.Nothing],
-      doneFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(
-      targets: HTMLElement,
-      options: js.UndefOr[scala.Nothing],
-      tartFn: js.UndefOr[scala.Nothing],
-      doneFn: js.Function0[Unit],
-      closeFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(targets: HTMLElement, options: js.UndefOr[scala.Nothing], tartFn: js.Function0[Unit]): Unit = js.native
-    def addClickHandler(
-      targets: HTMLElement,
-      options: js.UndefOr[scala.Nothing],
-      tartFn: js.Function0[Unit],
-      doneFn: js.UndefOr[scala.Nothing],
-      closeFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(
-      targets: HTMLElement,
-      options: js.UndefOr[scala.Nothing],
-      tartFn: js.Function0[Unit],
-      doneFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(
-      targets: HTMLElement,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       tartFn: js.Function0[Unit],
       doneFn: js.Function0[Unit],
       closeFn: js.Function0[Unit]
     ): Unit = js.native
+    def addClickHandler(
+      targets: HTMLElement,
+      options: Unit,
+      tartFn: js.Function0[Unit],
+      doneFn: Unit,
+      closeFn: js.Function0[Unit]
+    ): Unit = js.native
+    def addClickHandler(targets: HTMLElement, options: Unit, tartFn: Unit, doneFn: js.Function0[Unit]): Unit = js.native
+    def addClickHandler(
+      targets: HTMLElement,
+      options: Unit,
+      tartFn: Unit,
+      doneFn: js.Function0[Unit],
+      closeFn: js.Function0[Unit]
+    ): Unit = js.native
+    def addClickHandler(targets: HTMLElement, options: Unit, tartFn: Unit, doneFn: Unit, closeFn: js.Function0[Unit]): Unit = js.native
     def addClickHandler(targets: HTMLElement, options: DialogOptions): Unit = js.native
-    def addClickHandler(
-      targets: HTMLElement,
-      options: DialogOptions,
-      tartFn: js.UndefOr[scala.Nothing],
-      doneFn: js.UndefOr[scala.Nothing],
-      closeFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(
-      targets: HTMLElement,
-      options: DialogOptions,
-      tartFn: js.UndefOr[scala.Nothing],
-      doneFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(
-      targets: HTMLElement,
-      options: DialogOptions,
-      tartFn: js.UndefOr[scala.Nothing],
-      doneFn: js.Function0[Unit],
-      closeFn: js.Function0[Unit]
-    ): Unit = js.native
     def addClickHandler(targets: HTMLElement, options: DialogOptions, tartFn: js.Function0[Unit]): Unit = js.native
     def addClickHandler(
       targets: HTMLElement,
       options: DialogOptions,
       tartFn: js.Function0[Unit],
-      doneFn: js.UndefOr[scala.Nothing],
-      closeFn: js.Function0[Unit]
-    ): Unit = js.native
-    def addClickHandler(
-      targets: HTMLElement,
-      options: DialogOptions,
-      tartFn: js.Function0[Unit],
       doneFn: js.Function0[Unit]
     ): Unit = js.native
     def addClickHandler(
@@ -205,6 +134,28 @@ object uiMod {
       options: DialogOptions,
       tartFn: js.Function0[Unit],
       doneFn: js.Function0[Unit],
+      closeFn: js.Function0[Unit]
+    ): Unit = js.native
+    def addClickHandler(
+      targets: HTMLElement,
+      options: DialogOptions,
+      tartFn: js.Function0[Unit],
+      doneFn: Unit,
+      closeFn: js.Function0[Unit]
+    ): Unit = js.native
+    def addClickHandler(targets: HTMLElement, options: DialogOptions, tartFn: Unit, doneFn: js.Function0[Unit]): Unit = js.native
+    def addClickHandler(
+      targets: HTMLElement,
+      options: DialogOptions,
+      tartFn: Unit,
+      doneFn: js.Function0[Unit],
+      closeFn: js.Function0[Unit]
+    ): Unit = js.native
+    def addClickHandler(
+      targets: HTMLElement,
+      options: DialogOptions,
+      tartFn: Unit,
+      doneFn: Unit,
       closeFn: js.Function0[Unit]
     ): Unit = js.native
     
@@ -263,7 +214,7 @@ object uiMod {
       * @since 2.0.0
       */
     def open(): this.type = js.native
-    def open(options: js.UndefOr[scala.Nothing], closeFn: js.Function0[Unit]): this.type = js.native
+    def open(options: Unit, closeFn: js.Function0[Unit]): this.type = js.native
     def open(options: DialogOptions): this.type = js.native
     def open(options: DialogOptions, closeFn: js.Function0[Unit]): this.type = js.native
     
@@ -291,9 +242,9 @@ object uiMod {
       * Dialog.open();
       */
     def setup(): HTMLElement = js.native
-    def setup(title: js.UndefOr[scala.Nothing], classNames: String): HTMLElement = js.native
     def setup(title: String): HTMLElement = js.native
     def setup(title: String, classNames: String): HTMLElement = js.native
+    def setup(title: Unit, classNames: String): HTMLElement = js.native
     
     /**
       * Renders the given markup and appends it to the dialog's content area. Returns a reference to the Dialog object
@@ -308,14 +259,13 @@ object uiMod {
     def wiki(wikiMarkup: String): this.type = js.native
   }
   
-  @js.native
   trait DialogOptions extends StObject {
     
     /** Opacity of the overlay (default: 0.8). */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Top y-coordinate of the dialog (default: 50; in pixels, but without the unit). */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object DialogOptions {
     
@@ -412,7 +362,7 @@ object uiMod {
       * @since 2.31.0
       */
     def request(): js.Promise[Unit] = js.native
-    def request(options: js.UndefOr[scala.Nothing], requestedEl: HTMLElement): js.Promise[Unit] = js.native
+    def request(options: Unit, requestedEl: HTMLElement): js.Promise[Unit] = js.native
     def request(options: FullscreenRequestOptions): js.Promise[Unit] = js.native
     def request(options: FullscreenRequestOptions, requestedEl: HTMLElement): js.Promise[Unit] = js.native
     
@@ -423,12 +373,11 @@ object uiMod {
       * @since 2.31.0
       */
     def toggle(): js.Promise[Unit] = js.native
-    def toggle(options: js.UndefOr[scala.Nothing], requestedEl: HTMLElement): js.Promise[Unit] = js.native
+    def toggle(options: Unit, requestedEl: HTMLElement): js.Promise[Unit] = js.native
     def toggle(options: FullscreenRequestOptions): js.Promise[Unit] = js.native
     def toggle(options: FullscreenRequestOptions, requestedEl: HTMLElement): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait FullscreenRequestOptions extends StObject {
     
     /**
@@ -439,7 +388,7 @@ object uiMod {
       * * "show": Request that the browser's navigation UI be shown. The screen dimensions allocated to the element will
       *    be clamped to leave room for the UI.
       */
-    var navigationUI: auto | hide | show = js.native
+    var navigationUI: auto | hide | show
   }
   object FullscreenRequestOptions {
     
@@ -457,14 +406,13 @@ object uiMod {
     }
   }
   
-  @js.native
   trait LoadScreenAPI extends StObject {
     
     /**
       * Acquires a loading screen lock and returns its ID. Displays the loading screen, if necessary.
       * @since 2.15.0
       */
-    def lock(): Double = js.native
+    def lock(): Double
     
     /**
       * Releases the loading screen lock with the given ID. Hides the loading screen, if no other locks exist.
@@ -475,7 +423,7 @@ object uiMod {
       * // Do something whose timing is unpredictable that should be hidden by the loading screen
       * LoadScreen.unlock(lockId);
       */
-    def unlock(lockId: Double): Unit = js.native
+    def unlock(lockId: Double): Unit
   }
   object LoadScreenAPI {
     
@@ -507,7 +455,7 @@ object uiMod {
       * @since 2.0.0
       */
     def alert(message: String): Unit = js.native
-    def alert(message: String, options: js.UndefOr[scala.Nothing], closeFn: js.Function0[Unit]): Unit = js.native
+    def alert(message: String, options: Unit, closeFn: js.Function0[Unit]): Unit = js.native
     def alert(message: String, options: DialogOptions): Unit = js.native
     def alert(message: String, options: DialogOptions, closeFn: js.Function0[Unit]): Unit = js.native
     
@@ -518,7 +466,7 @@ object uiMod {
       * @since 2.0.0
       */
     def jumpto(): Unit = js.native
-    def jumpto(options: js.UndefOr[scala.Nothing], closeFn: js.Function0[Unit]): Unit = js.native
+    def jumpto(options: Unit, closeFn: js.Function0[Unit]): Unit = js.native
     def jumpto(options: DialogOptions): Unit = js.native
     def jumpto(options: DialogOptions, closeFn: js.Function0[Unit]): Unit = js.native
     
@@ -537,7 +485,7 @@ object uiMod {
       * @since 2.0.0
       */
     def saves(): Unit = js.native
-    def saves(options: js.UndefOr[scala.Nothing], closeFn: js.Function0[Unit]): Unit = js.native
+    def saves(options: Unit, closeFn: js.Function0[Unit]): Unit = js.native
     def saves(options: DialogOptions): Unit = js.native
     def saves(options: DialogOptions, closeFn: js.Function0[Unit]): Unit = js.native
     
@@ -549,7 +497,7 @@ object uiMod {
       *
       */
     def settings(): Unit = js.native
-    def settings(options: js.UndefOr[scala.Nothing], closeFn: js.Function0[Unit]): Unit = js.native
+    def settings(options: Unit, closeFn: js.Function0[Unit]): Unit = js.native
     def settings(options: DialogOptions): Unit = js.native
     def settings(options: DialogOptions, closeFn: js.Function0[Unit]): Unit = js.native
     
@@ -560,7 +508,7 @@ object uiMod {
       * @since 2.0.0
       */
     def share(): Unit = js.native
-    def share(options: js.UndefOr[scala.Nothing], closeFn: js.Function0[Unit]): Unit = js.native
+    def share(options: Unit, closeFn: js.Function0[Unit]): Unit = js.native
     def share(options: DialogOptions): Unit = js.native
     def share(options: DialogOptions, closeFn: js.Function0[Unit]): Unit = js.native
   }

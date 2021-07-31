@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTagsRequest extends StObject {
   
   /**
     *  Specify the ARN for which you want to add the tags.
     */
-  var ARN: typings.awsSdk.esMod.ARN = js.native
+  var ARN: typings.awsSdk.esMod.ARN
   
   /**
     *  List of Tag that need to be added for the Elasticsearch domain. 
     */
-  var TagList: typings.awsSdk.esMod.TagList = js.native
+  var TagList: typings.awsSdk.esMod.TagList
 }
 object AddTagsRequest {
   

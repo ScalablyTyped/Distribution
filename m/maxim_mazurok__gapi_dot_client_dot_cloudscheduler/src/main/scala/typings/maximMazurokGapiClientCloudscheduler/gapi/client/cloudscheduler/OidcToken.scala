@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudscheduler.gapi.client.cloudscheduler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OidcToken extends StObject {
   
   /** Audience to be used when generating OIDC token. If not specified, the URI specified in target will be used. */
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
   /**
     * [Service account email](https://cloud.google.com/iam/docs/service-accounts) to be used for generating OIDC token. The service account must be within the same project as the job. The
     * caller must have iam.serviceAccounts.actAs permission for the service account.
     */
-  var serviceAccountEmail: js.UndefOr[String] = js.native
+  var serviceAccountEmail: js.UndefOr[String] = js.undefined
 }
 object OidcToken {
   

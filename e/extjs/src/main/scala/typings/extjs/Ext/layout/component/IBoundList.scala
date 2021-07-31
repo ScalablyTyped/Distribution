@@ -2,27 +2,27 @@ package typings.extjs.Ext.layout.component
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IBoundList extends IAuto {
+trait IBoundList
+  extends StObject
+     with IAuto {
   
   /** [Method] Called before any calculation cycles to reset DOM values and prepare for calculation
     * @param ownerContext Object
     */
   @JSName("beginLayoutCycle")
-  var beginLayoutCycle_IBoundList: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var beginLayoutCycle_IBoundList: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Called before any calculation cycles to prepare for layout
     * @param ownerContext Object
     */
   @JSName("beginLayout")
-  var beginLayout_IBoundList: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var beginLayout_IBoundList: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Validates item is in the proper place in the dom  */
   @JSName("isValidParent")
-  var isValidParent_IBoundList: js.UndefOr[js.Function0[Unit]] = js.native
+  var isValidParent_IBoundList: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IBoundList {
   

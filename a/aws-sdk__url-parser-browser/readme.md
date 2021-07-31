@@ -3,18 +3,22 @@
 
 Typings are for version 1.0.0-rc.7
 
-
+## Library description:
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/url-parser-browser/latest.svg)](https://www.npmjs.com/package/@aws-sdk/url-parser-browser) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/url-parser-browser.svg)](https://www.npmjs.com/packag
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/url-parser-browser |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 409 |
-| # downloads        | 1689406 |
+| # releases         | 34 |
+| # dependents       | 432 |
+| # downloads        | 4717447 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/master/packages/url-parser-browser)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Furl-parser-browser)
     
 

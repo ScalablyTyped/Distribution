@@ -10,9 +10,9 @@ YouTube IFrame Player API abstraction.
 | ------------------ | :-------------: |
 | Full name          | youtube-player |
 | Keywords           | youtube, iframe, player, api, promise, async, video |
-| # releases         | 3 |
-| # dependents       | 25 |
-| # downloads        | 4930482 |
+| # releases         | 0 |
+| # dependents       | 32 |
+| # downloads        | 6011902 |
 | # stars            | 5 |
 
 ## Links

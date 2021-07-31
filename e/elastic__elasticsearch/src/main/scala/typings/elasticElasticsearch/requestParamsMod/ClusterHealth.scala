@@ -19,35 +19,35 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.urgent
 import typings.elasticElasticsearch.elasticElasticsearchStrings.yellow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClusterHealth extends Generic {
+trait ClusterHealth
+  extends StObject
+     with Generic {
   
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
   
-  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var level: js.UndefOr[cluster | indices | shards] = js.native
+  var level: js.UndefOr[cluster | indices | shards] = js.undefined
   
-  var local: js.UndefOr[Boolean] = js.native
+  var local: js.UndefOr[Boolean] = js.undefined
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var wait_for_active_shards: js.UndefOr[String] = js.native
+  var wait_for_active_shards: js.UndefOr[String] = js.undefined
   
-  var wait_for_events: js.UndefOr[immediate | urgent | high | normal | low | languid] = js.native
+  var wait_for_events: js.UndefOr[immediate | urgent | high | normal | low | languid] = js.undefined
   
-  var wait_for_no_initializing_shards: js.UndefOr[Boolean] = js.native
+  var wait_for_no_initializing_shards: js.UndefOr[Boolean] = js.undefined
   
-  var wait_for_no_relocating_shards: js.UndefOr[Boolean] = js.native
+  var wait_for_no_relocating_shards: js.UndefOr[Boolean] = js.undefined
   
-  var wait_for_nodes: js.UndefOr[String] = js.native
+  var wait_for_nodes: js.UndefOr[String] = js.undefined
   
-  var wait_for_status: js.UndefOr[green | yellow | red] = js.native
+  var wait_for_status: js.UndefOr[green | yellow | red] = js.undefined
 }
 object ClusterHealth {
   

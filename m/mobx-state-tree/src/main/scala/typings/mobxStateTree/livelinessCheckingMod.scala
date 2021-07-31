@@ -2,22 +2,22 @@ package typings.mobxStateTree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object livelinessCheckingMod {
   
-  @JSImport("mobx-state-tree/dist/core/node/livelinessChecking", "getLivelinessChecking")
+  @JSImport("mobx-state-tree/dist/core/node/livelinessChecking", JSImport.Namespace)
   @js.native
-  def getLivelinessChecking(): LivelinessMode = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx-state-tree/dist/core/node/livelinessChecking", "setLivelinessChecking")
-  @js.native
-  def setLivelinessChecking(mode: LivelinessMode): Unit = js.native
+  @scala.inline
+  def getLivelinessChecking(): LivelinessMode = ^.asInstanceOf[js.Dynamic].applyDynamic("getLivelinessChecking")().asInstanceOf[LivelinessMode]
   
-  @JSImport("mobx-state-tree/dist/core/node/livelinessChecking", "setLivelynessChecking")
-  @js.native
-  def setLivelynessChecking(mode: LivelinessMode): Unit = js.native
+  @scala.inline
+  def setLivelinessChecking(mode: LivelinessMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLivelinessChecking")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setLivelynessChecking(mode: LivelinessMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLivelynessChecking")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.mobxStateTree.mobxStateTreeStrings.warn

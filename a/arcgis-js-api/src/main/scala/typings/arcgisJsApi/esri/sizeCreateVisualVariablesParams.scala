@@ -7,137 +7,137 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait sizeCreateVisualVariablesParams extends Object {
+trait sizeCreateVisualVariablesParams
+  extends StObject
+     with Object {
   
   /**
     * When set to `all`, a single size variable that scales uniformly in all dimensions is generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var axis: js.UndefOr[all | height] = js.native
+  var axis: js.UndefOr[all | height] = js.undefined
   
   /**
     * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var basemap: js.UndefOr[String | Basemap] = js.native
+  var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
     * The name of the field whose data will be queried for statistics and used for the basis of the data-driven visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var field: String = js.native
+  var field: String
   
   /**
     * The layer for which the visual variables are generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
   
   /**
     * Provides options for setting a title to a field when an expression is provided instead of a field name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var legendOptions: js.UndefOr[sizeCreateVisualVariablesParamsLegendOptions] = js.native
+  var legendOptions: js.UndefOr[sizeCreateVisualVariablesParamsLegendOptions] = js.undefined
   
   /**
     * A custom maximum value set by the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
     * A custom minimum value set by the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the field to normalize the values of the given `field`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var normalizationField: js.UndefOr[String] = js.native
+  var normalizationField: js.UndefOr[String] = js.undefined
   
   /**
     * Allows for cancelable requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * Indicates whether symbol sizes should vary based on view scale.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.native
+  var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * In authoring apps, the user may select a pre-defined size scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var sizeScheme: js.UndefOr[SizeScheme] = js.native
+  var sizeScheme: js.UndefOr[SizeScheme] = js.undefined
   
   /**
     * A SQL expression evaluating to a number.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var sqlExpression: js.UndefOr[String] = js.native
+  var sqlExpression: js.UndefOr[String] = js.undefined
   
   /**
     * A SQL where clause used to filter features for the statistics query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var sqlWhere: js.UndefOr[String] = js.native
+  var sqlWhere: js.UndefOr[String] = js.undefined
   
   /**
     * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var statistics: js.UndefOr[SummaryStatisticsResult] = js.native
+  var statistics: js.UndefOr[SummaryStatisticsResult] = js.undefined
   
   /**
     * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a number.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var valueExpression: js.UndefOr[String] = js.native
+  var valueExpression: js.UndefOr[String] = js.undefined
   
   /**
     * Text describing the value returned from the `valueExpression`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var valueExpressionTitle: js.UndefOr[String] = js.native
+  var valueExpressionTitle: js.UndefOr[String] = js.undefined
   
   /**
     * The view where the input layer is rendered.
     *
     * [Read more...](global.html)
     */
-  var view: js.UndefOr[View] = js.native
+  var view: js.UndefOr[View] = js.undefined
   
   /**
     * Indicates if the size units of the symbols will be in meters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var worldScale: js.UndefOr[Boolean] = js.native
+  var worldScale: js.UndefOr[Boolean] = js.undefined
 }
 object sizeCreateVisualVariablesParams {
   

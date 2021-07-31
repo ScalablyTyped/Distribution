@@ -3,13 +3,11 @@ package typings.grpc.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleOAuth2Client extends StObject {
   
-  def getRequestMetadata(optUri: String, metadataCallback: js.Function2[/* err */ Error, /* headers */ js.Any, Unit]): Unit = js.native
+  def getRequestMetadata(optUri: String, metadataCallback: js.Function2[/* err */ Error, /* headers */ js.Any, Unit]): Unit
 }
 object GoogleOAuth2Client {
   

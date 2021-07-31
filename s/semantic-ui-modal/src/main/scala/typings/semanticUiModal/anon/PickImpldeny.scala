@@ -2,14 +2,12 @@ package typings.semanticUiModal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-modal.SemanticUI.Modal.SelectorSettings._Impl, 'deny'> */
-@js.native
 trait PickImpldeny extends StObject {
   
-  var deny: String = js.native
+  var deny: String
 }
 object PickImpldeny {
   

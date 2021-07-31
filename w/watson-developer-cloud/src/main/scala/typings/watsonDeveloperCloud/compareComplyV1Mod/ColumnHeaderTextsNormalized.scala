@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** If you provide customization input, the normalized version of the column header texts according to the customization; otherwise, the same value as `column_header_texts`. */
-@js.native
 trait ColumnHeaderTextsNormalized extends StObject {
   
   /** The normalized version of a column header text. */
-  var text_normalized: js.UndefOr[String] = js.native
+  var text_normalized: js.UndefOr[String] = js.undefined
 }
 object ColumnHeaderTextsNormalized {
   

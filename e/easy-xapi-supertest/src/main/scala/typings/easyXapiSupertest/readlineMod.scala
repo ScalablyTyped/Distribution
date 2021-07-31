@@ -5,14 +5,16 @@ import typings.easyXapiSupertest.NodeJS.WritableStream
 import typings.easyXapiSupertest.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readlineMod {
   
-  @JSImport("readline", "createInterface")
+  @JSImport("readline", JSImport.Namespace)
   @js.native
-  def createInterface(options: ReadLineOptions): ReadLine = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createInterface(options: ReadLineOptions): ReadLine = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(options.asInstanceOf[js.Any]).asInstanceOf[ReadLine]
   
   @js.native
   trait ReadLine extends EventEmitter {
@@ -34,16 +36,15 @@ object readlineMod {
     def write(data: js.Any, key: js.Any): Unit = js.native
   }
   
-  @js.native
   trait ReadLineOptions extends StObject {
     
-    var completer: js.UndefOr[js.Function] = js.native
+    var completer: js.UndefOr[js.Function] = js.undefined
     
-    var input: ReadableStream = js.native
+    var input: ReadableStream
     
-    var output: WritableStream = js.native
+    var output: WritableStream
     
-    var terminal: js.UndefOr[Boolean] = js.native
+    var terminal: js.UndefOr[Boolean] = js.undefined
   }
   object ReadLineOptions {
     

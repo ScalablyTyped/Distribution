@@ -2,44 +2,44 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientSpreadsheet.CellCancelEdit event.
   */
-@js.native
-trait ASPxClientSpreadsheetCellCancelEditEventArgs extends ASPxClientEventArgs {
+trait ASPxClientSpreadsheetCellCancelEditEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the active cell's column index.
     */
-  var columnIndex: Double = js.native
+  var columnIndex: Double
   
   /**
     * Specifies the text displayed in the processed cell.
     */
-  var displayText: String = js.native
+  var displayText: String
   
   /**
     * Gets the active cell's formula.
     */
-  var formula: String = js.native
+  var formula: String
   
   /**
     * Gets the active cell's row index.
     */
-  var rowIndex: Double = js.native
+  var rowIndex: Double
   
   /**
     * Gets the current worksheet's name.
     */
-  var sheetName: String = js.native
+  var sheetName: String
   
   /**
     * Gets the active cell's current value.
     */
-  var value: String = js.native
+  var value: String
 }
 object ASPxClientSpreadsheetCellCancelEditEventArgs {
   

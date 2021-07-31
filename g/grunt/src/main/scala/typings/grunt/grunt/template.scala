@@ -3,7 +3,6 @@ package typings.grunt.grunt
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object template {
@@ -26,11 +25,11 @@ object template {
       * @note if you don't include the mask argument, dateFormat.masks.default is used
       */
     def date(): String = js.native
-    def date(date: js.UndefOr[scala.Nothing], format: String): String = js.native
     def date(date: String): String = js.native
     def date(date: String, format: String): String = js.native
     def date(date: Double): String = js.native
     def date(date: Double, format: String): String = js.native
+    def date(date: Unit, format: String): String = js.native
     def date(date: Date): String = js.native
     def date(date: Date, format: String): String = js.native
     

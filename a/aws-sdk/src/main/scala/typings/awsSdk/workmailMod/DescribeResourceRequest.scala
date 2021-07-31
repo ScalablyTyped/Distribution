@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeResourceRequest extends StObject {
   
   /**
     * The identifier associated with the organization for which the resource is described.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The identifier of the resource to be described.
     */
-  var ResourceId: typings.awsSdk.workmailMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.workmailMod.ResourceId
 }
 object DescribeResourceRequest {
   

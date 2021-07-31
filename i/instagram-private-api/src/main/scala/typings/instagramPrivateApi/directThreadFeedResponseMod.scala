@@ -2,17 +2,15 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directThreadFeedResponseMod {
   
-  @js.native
   trait DirectThreadFeedResponse extends StObject {
     
-    var status: String = js.native
+    var status: String
     
-    var thread: DirectThreadFeedResponseThread = js.native
+    var thread: DirectThreadFeedResponseThread
   }
   object DirectThreadFeedResponse {
     
@@ -33,12 +31,11 @@ object directThreadFeedResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadFeedResponse300687565 extends StObject {
     
-    var item_id: String = js.native
+    var item_id: String
     
-    var timestamp: String = js.native
+    var timestamp: String
   }
   object DirectThreadFeedResponse300687565 {
     
@@ -59,28 +56,27 @@ object directThreadFeedResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadFeedResponseInviter extends StObject {
     
-    var allowed_commenter_type: String = js.native
+    var allowed_commenter_type: String
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var reel_auto_archive: String = js.native
+    var reel_auto_archive: String
     
-    var username: String = js.native
+    var username: String
   }
   object DirectThreadFeedResponseInviter {
     
@@ -136,20 +132,19 @@ object directThreadFeedResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadFeedResponseItemsItem extends StObject {
     
-    var client_context: String = js.native
+    var client_context: String
     
-    var item_id: String = js.native
+    var item_id: String
     
-    var item_type: String = js.native
+    var item_type: String
     
-    var text: String = js.native
+    var text: String
     
-    var timestamp: String = js.native
+    var timestamp: String
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object DirectThreadFeedResponseItemsItem {
     
@@ -189,20 +184,19 @@ object directThreadFeedResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadFeedResponseLastPermanentItem extends StObject {
     
-    var client_context: String = js.native
+    var client_context: String
     
-    var item_id: String = js.native
+    var item_id: String
     
-    var item_type: String = js.native
+    var item_type: String
     
-    var text: String = js.native
+    var text: String
     
-    var timestamp: String = js.native
+    var timestamp: String
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object DirectThreadFeedResponseLastPermanentItem {
     
@@ -242,10 +236,9 @@ object directThreadFeedResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadFeedResponseLastSeenAt extends StObject {
     
-    var `300687565`: DirectThreadFeedResponse300687565 = js.native
+    var `300687565`: DirectThreadFeedResponse300687565
   }
   object DirectThreadFeedResponseLastSeenAt {
     
@@ -264,74 +257,73 @@ object directThreadFeedResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadFeedResponseThread extends StObject {
     
-    var admin_user_ids: js.Array[_] = js.native
+    var admin_user_ids: js.Array[js.Any]
     
-    var archived: Boolean = js.native
+    var archived: Boolean
     
-    var canonical: Boolean = js.native
+    var canonical: Boolean
     
-    var folder: Double = js.native
+    var folder: Double
     
-    var has_newer: Boolean = js.native
+    var has_newer: Boolean
     
-    var has_older: Boolean = js.native
+    var has_older: Boolean
     
-    var inviter: DirectThreadFeedResponseInviter = js.native
+    var inviter: DirectThreadFeedResponseInviter
     
-    var is_group: Boolean = js.native
+    var is_group: Boolean
     
-    var is_pin: Boolean = js.native
+    var is_pin: Boolean
     
-    var items: js.Array[DirectThreadFeedResponseItemsItem] = js.native
+    var items: js.Array[DirectThreadFeedResponseItemsItem]
     
-    var last_activity_at: String = js.native
+    var last_activity_at: String
     
-    var last_permanent_item: DirectThreadFeedResponseLastPermanentItem = js.native
+    var last_permanent_item: DirectThreadFeedResponseLastPermanentItem
     
-    var last_seen_at: DirectThreadFeedResponseLastSeenAt = js.native
+    var last_seen_at: DirectThreadFeedResponseLastSeenAt
     
-    var left_users: js.Array[_] = js.native
+    var left_users: js.Array[js.Any]
     
-    var mentions_muted: Boolean = js.native
+    var mentions_muted: Boolean
     
-    var muted: Boolean = js.native
+    var muted: Boolean
     
-    var named: Boolean = js.native
+    var named: Boolean
     
-    var newest_cursor: String = js.native
+    var newest_cursor: String
     
-    var oldest_cursor: String = js.native
+    var oldest_cursor: String
     
-    var pending: Boolean = js.native
+    var pending: Boolean
     
-    var pending_score: String = js.native
+    var pending_score: String
     
-    var prev_cursor: String = js.native
+    var prev_cursor: String
     
-    var thread_id: String = js.native
+    var thread_id: String
     
-    var thread_title: String = js.native
+    var thread_title: String
     
-    var thread_type: String = js.native
+    var thread_type: String
     
-    var thread_v2_id: String = js.native
+    var thread_v2_id: String
     
-    var users: js.Array[_] = js.native
+    var users: js.Array[js.Any]
     
-    var valued_request: Boolean = js.native
+    var valued_request: Boolean
     
-    var vc_muted: Boolean = js.native
+    var vc_muted: Boolean
     
-    var viewer_id: Double = js.native
+    var viewer_id: Double
   }
   object DirectThreadFeedResponseThread {
     
     @scala.inline
     def apply(
-      admin_user_ids: js.Array[_],
+      admin_user_ids: js.Array[js.Any],
       archived: Boolean,
       canonical: Boolean,
       folder: Double,
@@ -344,7 +336,7 @@ object directThreadFeedResponseMod {
       last_activity_at: String,
       last_permanent_item: DirectThreadFeedResponseLastPermanentItem,
       last_seen_at: DirectThreadFeedResponseLastSeenAt,
-      left_users: js.Array[_],
+      left_users: js.Array[js.Any],
       mentions_muted: Boolean,
       muted: Boolean,
       named: Boolean,
@@ -357,7 +349,7 @@ object directThreadFeedResponseMod {
       thread_title: String,
       thread_type: String,
       thread_v2_id: String,
-      users: js.Array[_],
+      users: js.Array[js.Any],
       valued_request: Boolean,
       vc_muted: Boolean,
       viewer_id: Double
@@ -370,7 +362,7 @@ object directThreadFeedResponseMod {
     implicit class DirectThreadFeedResponseThreadMutableBuilder[Self <: DirectThreadFeedResponseThread] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAdmin_user_ids(value: js.Array[_]): Self = StObject.set(x, "admin_user_ids", value.asInstanceOf[js.Any])
+      def setAdmin_user_ids(value: js.Array[js.Any]): Self = StObject.set(x, "admin_user_ids", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAdmin_user_idsVarargs(value: js.Any*): Self = StObject.set(x, "admin_user_ids", js.Array(value :_*))
@@ -415,7 +407,7 @@ object directThreadFeedResponseMod {
       def setLast_seen_at(value: DirectThreadFeedResponseLastSeenAt): Self = StObject.set(x, "last_seen_at", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLeft_users(value: js.Array[_]): Self = StObject.set(x, "left_users", value.asInstanceOf[js.Any])
+      def setLeft_users(value: js.Array[js.Any]): Self = StObject.set(x, "left_users", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLeft_usersVarargs(value: js.Any*): Self = StObject.set(x, "left_users", js.Array(value :_*))
@@ -457,7 +449,7 @@ object directThreadFeedResponseMod {
       def setThread_v2_id(value: String): Self = StObject.set(x, "thread_v2_id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setUsers(value: js.Array[_]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      def setUsers(value: js.Array[js.Any]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setUsersVarargs(value: js.Any*): Self = StObject.set(x, "users", js.Array(value :_*))

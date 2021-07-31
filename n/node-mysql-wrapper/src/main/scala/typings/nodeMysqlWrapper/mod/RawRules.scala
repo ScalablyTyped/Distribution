@@ -2,30 +2,28 @@ package typings.nodeMysqlWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawRules extends StObject {
   
-  var begin: String = js.native
+  var begin: String
   
-  var end: String = js.native
+  var end: String
   
-  var groupBy: String = js.native
+  var groupBy: String
   
-  var limit: Double = js.native
+  var limit: Double
   
-  var limitEnd: Double = js.native
+  var limitEnd: Double
   
   // limit = limitStart  =0 and limitEnd = limit.
-  var limitStart: Double = js.native
+  var limitStart: Double
   
-  var orderBy: String = js.native
+  var orderBy: String
   
-  var orderByDesc: String = js.native
+  var orderByDesc: String
   
-  var table: String = js.native
+  var table: String
 }
 object RawRules {
   

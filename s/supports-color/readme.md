@@ -10,10 +10,10 @@ Detect whether a terminal supports color
 | ------------------ | :-------------: |
 | Full name          | supports-color |
 | Keywords           | color, colour, colors, terminal, console, cli, ansi, styles, tty, rgb, 256, shell, xterm, command-line, support, supports, capability, detect, truecolor, 16m |
-| # releases         | 4 |
-| # dependents       | 709 |
-| # downloads        | 2590105572 |
-| # stars            | 17 |
+| # releases         | 6 |
+| # dependents       | 794 |
+| # downloads        | 3363276711 |
+| # stars            | 18 |
 
 ## Links
 - [Homepage](https://github.com/chalk/supports-color#readme)

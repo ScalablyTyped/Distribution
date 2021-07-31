@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to format a current paragraph with double line spacing.
   */
-@js.native
-trait SetDoubleParagraphSpacingCommand extends CommandWithBooleanStateBase {
+trait SetDoubleParagraphSpacingCommand
+  extends StObject
+     with CommandWithBooleanStateBase {
   
   /**
     * Executes the SetDoubleParagraphSpacingCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object SetDoubleParagraphSpacingCommand {
   

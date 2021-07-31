@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertTableColumnRequest extends StObject {
   
   /** Whether to insert new column to the right of the reference cell location. - `True`: insert to the right. - `False`: insert to the left. */
-  var insertRight: js.UndefOr[Boolean] = js.native
+  var insertRight: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The reference table cell location from which columns will be inserted. A new column will be inserted to the left (or right) of the column where the reference cell is. If the
     * reference cell is a merged cell, a new column will be inserted to the left (or right) of the merged cell.
     */
-  var tableCellLocation: js.UndefOr[TableCellLocation] = js.native
+  var tableCellLocation: js.UndefOr[TableCellLocation] = js.undefined
 }
 object InsertTableColumnRequest {
   

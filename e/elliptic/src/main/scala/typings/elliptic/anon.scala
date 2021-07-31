@@ -2,17 +2,15 @@ package typings.elliptic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Reason extends StObject {
     
-    val reason: String = js.native
+    val reason: String
     
-    val result: Boolean = js.native
+    val result: Boolean
   }
   object Reason {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: String = js.native
+    var x: String
     
-    var y: String = js.native
+    var y: String
   }
   object X {
     

@@ -3,33 +3,31 @@ package typings.kendoUi.kendo.data
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerEventData extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var end: js.UndefOr[Date] = js.native
+  var end: js.UndefOr[Date] = js.undefined
   
-  var endTimezone: js.UndefOr[String] = js.native
+  var endTimezone: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[js.Any] = js.native
+  var id: js.UndefOr[js.Any] = js.undefined
   
-  var isAllDay: js.UndefOr[Boolean] = js.native
+  var isAllDay: js.UndefOr[Boolean] = js.undefined
   
-  var recurrenceException: js.UndefOr[String] = js.native
+  var recurrenceException: js.UndefOr[String] = js.undefined
   
-  var recurrenceId: js.UndefOr[js.Any] = js.native
+  var recurrenceId: js.UndefOr[js.Any] = js.undefined
   
-  var recurrenceRule: js.UndefOr[String] = js.native
+  var recurrenceRule: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[Date] = js.native
+  var start: js.UndefOr[Date] = js.undefined
   
-  var startTimezone: js.UndefOr[String] = js.native
+  var startTimezone: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchedulerEventData {
   

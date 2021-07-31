@@ -3,83 +3,81 @@ package typings.maximMazurokGapiClientStorage.anon
 import typings.maximMazurokGapiClientStorage.gapi.client.storage.Channel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndOffset extends StObject {
   
   /** Data format for the response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** Name of the bucket in which to look for objects. */
-  var bucket: String = js.native
+  var bucket: String
   
   /**
     * Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the
     * prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.
     */
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
   /**
     * Filter results to objects whose names are lexicographically before endOffset. If startOffset is also set, the objects listed will have names between startOffset (inclusive) and
     * endOffset (exclusive).
     */
-  var endOffset: js.UndefOr[String] = js.native
+  var endOffset: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** If true, objects that end in exactly one instance of delimiter will have their metadata included in items in addition to prefixes. */
-  var includeTrailingDelimiter: js.UndefOr[Boolean] = js.native
+  var includeTrailingDelimiter: js.UndefOr[Boolean] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of items plus prefixes to return in a single page of responses. As duplicate prefixes are omitted, fewer total results may be returned than requested. The service
     * will use this parameter or 1,000 items, whichever is smaller.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /** A previously-returned page token representing part of the larger set of results to view. */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /** Filter results to objects whose names begin with this prefix. */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Set of properties to return. Defaults to noAcl. */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
   /** The project to be billed for this request if the target bucket is requester-pays bucket. */
-  var provisionalUserProject: js.UndefOr[String] = js.native
+  var provisionalUserProject: js.UndefOr[String] = js.undefined
   
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Channel = js.native
+  var resource: Channel
   
   /**
     * Filter results to objects whose names are lexicographically equal to or after startOffset. If endOffset is also set, the objects listed will have names between startOffset
     * (inclusive) and endOffset (exclusive).
     */
-  var startOffset: js.UndefOr[String] = js.native
+  var startOffset: js.UndefOr[String] = js.undefined
   
   /** Deprecated. Please use quotaUser instead. */
-  var userIp: js.UndefOr[String] = js.native
+  var userIp: js.UndefOr[String] = js.undefined
   
   /** The project to be billed for this request. Required for Requester Pays buckets. */
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
   
   /** If true, lists all versions of an object as distinct results. The default is false. For more information, see Object Versioning. */
-  var versions: js.UndefOr[Boolean] = js.native
+  var versions: js.UndefOr[Boolean] = js.undefined
 }
 object EndOffset {
   

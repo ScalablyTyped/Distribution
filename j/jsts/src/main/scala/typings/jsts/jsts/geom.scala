@@ -5,12 +5,10 @@ import typings.jsts.jstsNumbers.`0`
 import typings.jsts.jstsNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geom {
   
-  @js.native
   trait Coordinate extends StObject {
     
     /**
@@ -30,7 +28,7 @@ object geom {
       *          <code>Coordinate</code> is being compared.
       * @return {number} -1, zero, or 1 as explained above.
       */
-    def compareTo(other: Coordinate): Double = js.native
+    def compareTo(other: Coordinate): Double
     
     /**
       * Computes the 2-dimensional Euclidean distance to another location. The
@@ -41,7 +39,7 @@ object geom {
       * @return {number} the 2-dimensional Euclidean distance between the
       *         locations.
       */
-    def distance(p: Coordinate): Double = js.native
+    def distance(p: Coordinate): Double
     
     /**
       * Returns <code>true</code> if <code>other</code> has the same values for
@@ -54,7 +52,7 @@ object geom {
       *         <code>Coordinate</code> with the same values for the x and y
       *         ordinates.
       */
-    def equals(other: Coordinate): Boolean = js.native
+    def equals(other: Coordinate): Boolean
     
     /**
       * Returns whether the planar projections of the two <code>Coordinate</code>s
@@ -66,7 +64,7 @@ object geom {
       * @return {boolean} <code>true</code> if the x- and y-coordinates are
       *         equal; the z-coordinates do not have to be equal.
       */
-    def equals2D(other: Coordinate): Boolean = js.native
+    def equals2D(other: Coordinate): Boolean
     
     /**
       * Sets this <code>Coordinate</code>s (x,y,z) values to that of
@@ -75,22 +73,22 @@ object geom {
       * @param {Coordinate}
       *          other the <code>Coordinate</code> to copy.
       */
-    def setCoordinate(other: Coordinate): Unit = js.native
+    def setCoordinate(other: Coordinate): Unit
     
     /**
       * Gets or sets the x value.
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * Gets or sets the y value.
       */
-    var y: Double = js.native
+    var y: Double
     
     /**
       * Gets or sets the z value.
       */
-    var z: Double = js.native
+    var z: Double
   }
   object Coordinate {
     
@@ -139,7 +137,6 @@ object geom {
     }
   }
   
-  @js.native
   trait CoordinateSequence extends StObject
   
   @js.native
@@ -442,7 +439,6 @@ object geom {
     def translate(transX: Double, transY: Double): Unit = js.native
   }
   
-  @js.native
   trait Geometry extends StObject {
     
     /**
@@ -455,7 +451,7 @@ object geom {
       *          children, if it is a <code>GeometryCollection</code>).
       */
     @JSName("apply")
-    def apply(filter: js.Any): Unit = js.native
+    def apply(filter: js.Any): Unit
     
     /**
       * Computes a buffer area around this geometry having the given width and with a
@@ -498,7 +494,7 @@ object geom {
       * @see #buffer(double, int)
       * @see BufferOp
       */
-    def buffer(distance: Double, quadrantSegments: Double, endCapStyle: Double): Geometry = js.native
+    def buffer(distance: Double, quadrantSegments: Double, endCapStyle: Double): Geometry
     
     /**
       * Throws an exception if <code>g</code>'s class is
@@ -511,7 +507,7 @@ object geom {
       *           if <code>g</code> is a <code>GeometryCollection</code> but not
       *           one of its subclasses
       */
-    def checkNotGeometryCollection(g: Geometry): Unit = js.native
+    def checkNotGeometryCollection(g: Geometry): Unit
     
     /**
       * Returns the first non-zero result of <code>compareTo</code> encountered as
@@ -528,7 +524,7 @@ object geom {
       * @return {number} the first non-zero <code>compareTo</code> result, if any;
       *         otherwise, zero.
       */
-    def compare(a: js.Array[_], b: js.Array[_]): Double = js.native
+    def compare(a: js.Array[js.Any], b: js.Array[js.Any]): Double
     
     /**
       * Returns whether this <code>Geometry</code> is greater than, equal to, or
@@ -559,7 +555,7 @@ object geom {
       *         <code>o</code>, as defined in "Normal Form For Geometry" in the
       *         JTS Technical Specifications.
       */
-    def compareTo(o: Geometry): Double = js.native
+    def compareTo(o: Geometry): Double
     
     /**
       * Returns whether this <code>Geometry</code> is greater than, equal to, or
@@ -573,7 +569,7 @@ object geom {
       *         defined in "Normal Form For Geometry" in the JTS Technical
       *         Specifications.
       */
-    def compareToSameClass(o: Geometry): Double = js.native
+    def compareToSameClass(o: Geometry): Double
     
     /**
       * Returns the minimum and maximum x and y values in this <code>Geometry</code>,
@@ -586,7 +582,7 @@ object geom {
       *         <code>Geometry</code> is empty, <code>Envelope#isNull</code> will
       *         return <code>true.</code>
       */
-    def computeEnvelopeInternal(): Envelope = js.native
+    def computeEnvelopeInternal(): Envelope
     
     /**
       * Tests whether this geometry contains the specified geometry.
@@ -613,7 +609,7 @@ object geom {
       *
       * @see Geometry#within
       */
-    def contains(g: Geometry): Boolean = js.native
+    def contains(g: Geometry): Boolean
     
     /**
       * Computes the smallest convex <code>Polygon</code> that contains all the
@@ -646,7 +642,7 @@ object geom {
       * @return {Geometry} the minimum-area convex polygon containing this
       *         <code>Geometry</code>' s points.
       */
-    def convexHull(): Geometry = js.native
+    def convexHull(): Geometry
     
     /**
       * Tests whether this geometry is covered by the specified geometry.
@@ -675,7 +671,7 @@ object geom {
       * @see Geometry#within
       * @see Geometry#covers
       */
-    def coveredBy(g: Geometry): Boolean = js.native
+    def coveredBy(g: Geometry): Boolean
     
     /**
       * Tests whether this geometry covers the specified geometry.
@@ -708,7 +704,7 @@ object geom {
       * @see Geometry#contains
       * @see Geometry#coveredBy
       */
-    def covers(g: Geometry): Boolean = js.native
+    def covers(g: Geometry): Boolean
     
     /**
       * Tests whether this geometry crosses the specified geometry.
@@ -737,7 +733,7 @@ object geom {
       * @return {boolean} <code>true</code> if the two <code>Geometry</code>s
       *         cross.
       */
-    def crosses(g: Geometry): Boolean = js.native
+    def crosses(g: Geometry): Boolean
     
     /**
       * Computes a <code>Geometry</code> representing the points making up this
@@ -754,7 +750,7 @@ object geom {
       * @throws IllegalArgumentException
       *           if either input is a non-empty GeometryCollection
       */
-    def difference(other: Geometry): Geometry = js.native
+    def difference(other: Geometry): Geometry
     
     /**
       * Tests whether this geometry is disjoint from the specified geometry.
@@ -777,7 +773,7 @@ object geom {
       *
       * @see Geometry#intersects
       */
-    def disjoint(g: Geometry): Boolean = js.native
+    def disjoint(g: Geometry): Boolean
     
     /**
       * Returns the minimum distance between this <code>Geometry</code> and the
@@ -790,12 +786,12 @@ object geom {
       * @throws IllegalArgumentException
       *           if g is null
       */
-    def distance(g: Geometry): Double = js.native
+    def distance(g: Geometry): Double
     
     /**
       * The bounding box of this <code>Geometry</code>.
       */
-    var envelope: Envelope = js.native
+    var envelope: Envelope
     
     /**
       * @param {jsts.geom.Coordinate}
@@ -806,7 +802,7 @@ object geom {
       *          tolerance tolerance when comparing.
       * @return {boolean} true if equal.
       */
-    def equal(a: Coordinate, b: Coordinate, tolerance: Double): Boolean = js.native
+    def equal(a: Coordinate, b: Coordinate, tolerance: Double): Boolean
     
     /**
       * Tests whether this geometry is structurally and numerically equal to a given
@@ -832,7 +828,7 @@ object geom {
       * @see #norm()
       * @see #normalize()
       */
-    def equals(o: js.Object): Boolean = js.native
+    def equals(o: js.Object): Boolean
     
     /**
       * Returns true if the two <code>Geometry</code>s are exactly equal, up to a
@@ -854,7 +850,7 @@ object geom {
       *          are considered equal.
       * @return {boolean}
       */
-    def equalsExact(other: Geometry, tolerance: Double): Boolean = js.native
+    def equalsExact(other: Geometry, tolerance: Double): Boolean
     
     /**
       * Tests whether two geometries are exactly equal in their normalized forms.
@@ -869,7 +865,7 @@ object geom {
       * @return {boolean} true if the input geometries are exactly equal in their
       *         normalized form.
       */
-    def equalsNorm(g: Geometry): Boolean = js.native
+    def equalsNorm(g: Geometry): Boolean
     
     /**
       * Tests whether this geometry is topologically equal to the argument geometry
@@ -900,7 +896,7 @@ object geom {
       *
       * @see #equalsExact(Geometry)
       */
-    def equalsTopo(g: Geometry): Boolean = js.native
+    def equalsTopo(g: Geometry): Boolean
     
     /**
       * Returns the area of this <code>Geometry</code>. Areal Geometries have a
@@ -909,7 +905,7 @@ object geom {
       *
       * @return the area of the Geometry.
       */
-    def getArea(): Double = js.native
+    def getArea(): Double
     
     /**
       * Returns the boundary, or an empty geometry of appropriate dimension if this
@@ -922,7 +918,7 @@ object geom {
       * @return {Geometry} the closure of the combinatorial boundary of this
       *         <code>Geometry.</code>
       */
-    def getBoundary(): Geometry = js.native
+    def getBoundary(): Geometry
     
     /**
       * Returns the dimension of this <code>Geometry</code>s inherent boundary.
@@ -931,7 +927,7 @@ object geom {
       *         interface, whether or not this object is the empty geometry. Returns
       *         <code>Dimension.FALSE</code> if the boundary is the empty geometry.
       */
-    def getBoundaryDimension(): Double = js.native
+    def getBoundaryDimension(): Double
     
     /**
       * Computes the centroid of this <code>Geometry</code>. The centroid is equal
@@ -941,7 +937,7 @@ object geom {
       *
       * @return a {@link Point} which is the centroid of this Geometry.
       */
-    def getCentroid(): Point = js.native
+    def getCentroid(): Point
     
     /**
       * Returns a vertex of this <code>Geometry</code> (usually, but not
@@ -951,7 +947,7 @@ object geom {
       * @return {Coordinate} a {@link Coordinate} which is a vertex of this
       *         <code>Geometry</code>. null if this Geometry is empty.
       */
-    def getCoordinate(): Coordinate = js.native
+    def getCoordinate(): Coordinate
     
     /**
       * Returns an array containing the values of all the vertices for this geometry.
@@ -968,7 +964,7 @@ object geom {
       * @see geometryChanged
       * @see CoordinateSequence#setOrdinate
       */
-    def getCoordinates(): js.Array[Coordinate] = js.native
+    def getCoordinates(): js.Array[Coordinate]
     
     /**
       * Returns the dimension of this geometry. The dimension of a geometry is is the
@@ -982,7 +978,7 @@ object geom {
       *
       * @return {number} the topological dimension of this geometry.
       */
-    def getDimension(): Double = js.native
+    def getDimension(): Double
     
     /**
       * Returns this <code>Geometry</code>s bounding box. If this
@@ -997,7 +993,7 @@ object geom {
       *         <code>Point</code>s) or a <code>Polygon</code> (in all other
       *         cases).
       */
-    def getEnvelope(): Geometry = js.native
+    def getEnvelope(): Geometry
     
     /**
       * Returns the minimum and maximum x and y values in this <code>Geometry</code>,
@@ -1007,14 +1003,14 @@ object geom {
       *         <code>Geometry</code> is empty, <code>Envelope#isNull</code> will
       *         return <code>true.</code>
       */
-    def getEnvelopeInternal(): Envelope = js.native
+    def getEnvelopeInternal(): Envelope
     
     /**
       * Gets the factory which contains the context in which this geometry was created.
       *
       * @return {jsts.geom.GeometryFactory} the factory for this geometry.
       */
-    def getFactory(): js.Any = js.native
+    def getFactory(): js.Any
     
     /**
       * Returns an element {@link Geometry} from a {@link GeometryCollection} (or
@@ -1024,14 +1020,14 @@ object geom {
       *
       * @return {Geometry} the n'th geometry contained in this geometry.
       */
-    def getGeometryN(n: Double): Geometry = js.native
+    def getGeometryN(n: Double): Geometry
     
     /**
       * Returns the name of this object's <code>com.vivid.jts.geom</code> interface.
       *
       * @return {string} The name of this <code>Geometry</code>s most specific <code>jsts.geom</code> interface.
       */
-    def getGeometryType(): String = js.native
+    def getGeometryType(): String
     
     /**
       * Computes an interior point of this <code>Geometry</code>. An interior
@@ -1041,7 +1037,7 @@ object geom {
       *
       * @return {Point} a {@link Point} which is in the interior of this Geometry.
       */
-    def getInteriorPoint(): Point = js.native
+    def getInteriorPoint(): Point
     
     /**
       * Returns the length of this <code>Geometry</code>. Linear geometries return
@@ -1050,7 +1046,7 @@ object geom {
       *
       * @return the length of the Geometry.
       */
-    def getLength(): Double = js.native
+    def getLength(): Double
     
     /**
       *Returns the number of {@link Geometry}s in a {@link GeometryCollection}
@@ -1058,7 +1054,7 @@ object geom {
       *
       * @return {number} the number of geometries contained in this geometry.
       */
-    def getNumGeometries(): Double = js.native
+    def getNumGeometries(): Double
     
     /**
       * Returns the count of this <code>Geometry</code>s vertices. The
@@ -1067,7 +1063,7 @@ object geom {
       *
       * @return {number} the number of vertices in this <code>Geometry.</code>
       */
-    def getNumPoints(): Double = js.native
+    def getNumPoints(): Double
     
     /**
       * Returns the <code>PrecisionModel</code> used by the <code>Geometry</code>.
@@ -1075,7 +1071,7 @@ object geom {
       * @return {PrecisionModel} the specification of the grid of allowable points, for this
       * <code>Geometry</code> and all other <code>Geometry</code>s.
       */
-    def getPrecisionModel(): PrecisionModel = js.native
+    def getPrecisionModel(): PrecisionModel
     
     /**
       * Computes a <code>Geometry</code> representing the points shared by this
@@ -1093,7 +1089,7 @@ object geom {
       * @throws IllegalArgumentException
       *           if the argument is a non-empty GeometryCollection
       */
-    def intersection(other: Geometry): Geometry = js.native
+    def intersection(other: Geometry): Geometry
     
     /**
       * Tests whether this geometry intersects the specified geometry.
@@ -1117,7 +1113,7 @@ object geom {
       *
       * @see Geometry#disjoint
       */
-    def intersects(g: Geometry): Boolean = js.native
+    def intersects(g: Geometry): Boolean
     
     /**
       * Returns whether or not the set of points in this <code>Geometry</code> is
@@ -1126,7 +1122,7 @@ object geom {
       * @return {boolean} <code>true</code> if this <code>Geometry</code> equals
       *         the empty geometry.
       */
-    def isEmpty(): Boolean = js.native
+    def isEmpty(): Boolean
     
     /**
       * Returns whether the two <code>Geometry</code>s are equal, from the point
@@ -1143,21 +1139,21 @@ object geom {
       *         <code>Geometry</code> s are considered to be equal by the
       *         <code>equalsExact</code> method.
       */
-    def isEquivalentClass(other: Geometry): Boolean = js.native
+    def isEquivalentClass(other: Geometry): Boolean
     
     /**
       *
       * @return {boolean} true if this is a GeometryCollection.
       */
-    def isGeometryCollection(): Boolean = js.native
+    def isGeometryCollection(): Boolean
     
     /**
       *
       * @return {boolean} true if this is a GeometryCollection but not subclass.
       */
-    def isGeometryCollectionBase(): Boolean = js.native
+    def isGeometryCollectionBase(): Boolean
     
-    def isRectangle(): Boolean = js.native
+    def isRectangle(): Boolean
     
     /**
       * Tests whether this {@link Geometry} is simple. In general, the SFS
@@ -1181,7 +1177,7 @@ object geom {
       *         points of self-tangency, self-intersection or other anomalous points.
       * @see #isValid
       */
-    def isSimple(): Boolean = js.native
+    def isSimple(): Boolean
     
     /**
       * Tests the validity of this <code>Geometry</code>. Subclasses provide their
@@ -1192,7 +1188,7 @@ object geom {
       *
       * @see IsValidOp
       */
-    def isValid(): Boolean = js.native
+    def isValid(): Boolean
     
     /**
       * Tests whether the distance from this <code>Geometry</code> to another is
@@ -1205,7 +1201,7 @@ object geom {
       * @return {boolean} <code>true</code> if the geometries are less than
       *         <code>distance</code> apart.
       */
-    def isWithinDistance(geom: Geometry, distance: Double): Boolean = js.native
+    def isWithinDistance(geom: Geometry, distance: Double): Boolean
     
     /**
       * Creates a new Geometry which is a normalized copy of this Geometry.
@@ -1213,7 +1209,7 @@ object geom {
       * @return a normalized copy of this geometry.
       * @see #normalize()
       */
-    def norm(): Geometry = js.native
+    def norm(): Geometry
     
     /**
       * Converts this <code>Geometry</code> to <b>normal form</b> (or <b>
@@ -1226,7 +1222,7 @@ object geom {
       * coordinates. "Sorted in order of coordinates" means the obvious extension of
       * this ordering to sequences of coordinates.
       */
-    def normalize(): Unit = js.native
+    def normalize(): Unit
     
     /**
       * Tests whether this geometry overlaps the specified geometry.
@@ -1251,7 +1247,7 @@ object geom {
       * @return {boolean} <code>true</code> if the two <code>Geometry</code>s
       *         overlap.
       */
-    def overlaps(g: Geometry): Boolean = js.native
+    def overlaps(g: Geometry): Boolean
     
     /**
       * Tests whether the elements in the DE-9IM {@link IntersectionMatrix} for the
@@ -1280,7 +1276,7 @@ object geom {
       *         <code>intersectionPattern.</code>
       * @see IntersectionMatrix
       */
-    def relate(g: Geometry, intersectionPattern: String): Boolean = js.native
+    def relate(g: Geometry, intersectionPattern: String): Boolean
     
     /**
       * Returns the DE-9IM {@link IntersectionMatrix} for the two
@@ -1293,7 +1289,7 @@ object geom {
       *         intersections of the interiors, boundaries and exteriors of the two
       *         <code>Geometry</code>s.
       */
-    def relate2(g: Geometry): js.Any = js.native
+    def relate2(g: Geometry): js.Any
     
     /**
       * Returns a set combining the points in this <code>Geometry</code> not in
@@ -1311,7 +1307,7 @@ object geom {
       * @throws IllegalArgumentException
       *           if either input is a non-empty GeometryCollection
       */
-    def symDifference(other: Geometry): Geometry = js.native
+    def symDifference(other: Geometry): Geometry
     
     /**
       * Tests whether this geometry touches the specified geometry.
@@ -1335,7 +1331,7 @@ object geom {
       *         touch; Returns <code>false</code> if both <code>Geometry</code>s
       *         are points.
       */
-    def touches(g: Geometry): Boolean = js.native
+    def touches(g: Geometry): Boolean
     
     /**
       * Computes a <code>Geometry</code> representing all the points in this
@@ -1364,7 +1360,7 @@ object geom {
       * @throws IllegalArgumentException
       *           if either input is a non-empty GeometryCollection
       */
-    def union(other: Geometry): Geometry = js.native
+    def union(other: Geometry): Geometry
     
     /**
       * Tests whether this geometry is within the specified geometry.
@@ -1390,7 +1386,7 @@ object geom {
       *
       * @see Geometry#contains
       */
-    def within(g: Geometry): Boolean = js.native
+    def within(g: Geometry): Boolean
   }
   object Geometry {
     
@@ -1399,7 +1395,7 @@ object geom {
       apply: js.Any => Unit,
       buffer: (Double, Double, Double) => Geometry,
       checkNotGeometryCollection: Geometry => Unit,
-      compare: (js.Array[_], js.Array[_]) => Double,
+      compare: (js.Array[js.Any], js.Array[js.Any]) => Double,
       compareTo: Geometry => Double,
       compareToSameClass: Geometry => Double,
       computeEnvelopeInternal: () => Envelope,
@@ -1472,7 +1468,7 @@ object geom {
       def setCheckNotGeometryCollection(value: Geometry => Unit): Self = StObject.set(x, "checkNotGeometryCollection", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setCompare(value: (js.Array[_], js.Array[_]) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+      def setCompare(value: (js.Array[js.Any], js.Array[js.Any]) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCompareTo(value: Geometry => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
@@ -1637,7 +1633,6 @@ object geom {
   
   type GeometryCollection = Geometry
   
-  @js.native
   trait GeometryFactory extends StObject {
     
     /**
@@ -1649,7 +1644,7 @@ object geom {
       *          null.
       * @return {LineString} A new LineString.
       */
-    def createLineString(coordinates: js.Array[Coordinate]): LineString = js.native
+    def createLineString(coordinates: js.Array[Coordinate]): LineString
     
     /**
       * Creates a LinearRing using the given Coordinates; a null or empty array
@@ -1660,7 +1655,7 @@ object geom {
       * or null.
       * @return {LineString} A new LinearRing.
       */
-    def createLinearRing(coordinates: js.Array[Coordinate]): LinearRing = js.native
+    def createLinearRing(coordinates: js.Array[Coordinate]): LinearRing
     
     /**
       * Creates a Point using the given Coordinate; a null Coordinate will create an
@@ -1670,7 +1665,7 @@ object geom {
       *          coordinate Coordinate to base this Point on.
       * @return {Point} A new Point.
       */
-    def createPoint(coordinates: Coordinate): Point = js.native
+    def createPoint(coordinates: Coordinate): Point
     
     /**
       * Creates a Polygon using the given LinearRing.
@@ -1678,7 +1673,7 @@ object geom {
       * @param {LinearRing} A LinearRing constructed by coordinates.
       * @return {Polygon} A new Polygon.
       */
-    def createPolygon(shell: LinearRing, holes: js.Array[LinearRing]): Polygon = js.native
+    def createPolygon(shell: LinearRing, holes: js.Array[LinearRing]): Polygon
   }
   object GeometryFactory {
     
@@ -1754,7 +1749,6 @@ object geom {
     def transpose(): IntersectionMatrix = js.native
   }
   
-  @js.native
   trait LineSegment extends StObject {
     
     /**
@@ -1764,7 +1758,7 @@ object geom {
       *
       * @return {number} the angle this segment makes with the X-axis (in radians)
       */
-    def angle(): Double = js.native
+    def angle(): Double
     
     /**
       * Computes the closest point on this line segment to another point.
@@ -1774,7 +1768,7 @@ object geom {
       * @return {Coordinate} a Coordinate which is the closest point on the line
       *         segment to the point p.
       */
-    def closestPoint(p: Coordinate): Coordinate = js.native
+    def closestPoint(p: Coordinate): Coordinate
     
     /**
       * Computes the closest points on two line segments.
@@ -1784,7 +1778,7 @@ object geom {
       * @return {[]} a pair of Coordinates which are the closest points on the line
       *         segments.
       */
-    def closestPoints(line: LineSegment): js.Tuple2[Coordinate, Coordinate] = js.native
+    def closestPoints(line: LineSegment): js.Tuple2[Coordinate, Coordinate]
     
     /**
       *  Compares this object with the specified object for order.
@@ -1795,7 +1789,7 @@ object geom {
       *@return {number} a negative integer, zero, or a positive integer as this <code>LineSegment</code>
       *      is less than, equal to, or greater than the specified <code>LineSegment</code>
       */
-    def compareTo(o: LineSegment): Double = js.native
+    def compareTo(o: LineSegment): Double
     
     /**
       * Computes the distance between this line segment and another segment.
@@ -1803,7 +1797,7 @@ object geom {
       * @param {jsts.geom.LineSegment} ls
       * @return {number} the distance to the other segment
       */
-    def distance1(ls: LineSegment): Double = js.native
+    def distance1(ls: LineSegment): Double
     
     /**
       * Computes the distance between this line segment and a given point.
@@ -1813,7 +1807,7 @@ object geom {
       * @return {number}
       *          the distance from this segment to the given point.
       */
-    def distance2(p: Coordinate): Double = js.native
+    def distance2(p: Coordinate): Double
     
     /**
       * Computes the perpendicular distance between the (infinite) line defined
@@ -1822,7 +1816,7 @@ object geom {
       * @param {jsts.geom.Coordinate} p the coordinate
       * @return {number} the perpendicular distance between the defined line and the given point
       */
-    def distancePerpendicular(p: Coordinate): Double = js.native
+    def distancePerpendicular(p: Coordinate): Double
     
     /**
       *  Returns <code>true</code> if <code>other</code> has the same values for
@@ -1832,7 +1826,7 @@ object geom {
       * @return {boolean} <code>true</code> if <code>other</code> is a <code>LineSegment</code>
       *      with the same values for the x and y ordinates.
       */
-    def equals(o: LineSegment): Boolean = js.native
+    def equals(o: LineSegment): Boolean
     
     /**
       *  Returns <code>true</code> if <code>other</code> is
@@ -1843,20 +1837,20 @@ object geom {
       * @return {boolean} <code>true</code> if <code>other</code> is a <code>LineSegment</code>
       *      with the same values for the x and y ordinates.
       */
-    def equalsTopo(other: LineSegment): Boolean = js.native
+    def equalsTopo(other: LineSegment): Boolean
     
     /**
       * @param {number} i
       * @return {jsts.geom.Coordinate}
       */
-    def getCoordinate(): Double = js.native
+    def getCoordinate(): Double
     
     /**
       * Computes the length of the line segment.
       *
       * @return {number} the length of the line segment.
       */
-    def getLength(): Double = js.native
+    def getLength(): Double
     
     /**
       * Computes an intersection point between two line segments, if there is one.
@@ -1873,21 +1867,21 @@ object geom {
       *
       * @see RobustLineIntersector
       */
-    def intersection(line: LineSegment): Coordinate | Null = js.native
+    def intersection(line: LineSegment): Coordinate | Null
     
     /**
       * Tests whether the segment is horizontal.
       *
       * @return {boolean} <code>true</code> if the segment is horizontal.
       */
-    def isHorizontal(): Boolean = js.native
+    def isHorizontal(): Boolean
     
     /**
       * Tests whether the segment is vertical.
       *
       * @return {boolean} <code>true</code> if the segment is vertical.
       */
-    def isVertical(): Boolean = js.native
+    def isVertical(): Boolean
     
     /**
       * Computes the intersection point of the lines of infinite extent defined
@@ -1906,14 +1900,14 @@ object geom {
       *
       * @see RobustLineIntersector
       */
-    def lineIntersection(line: LineSegment): Coordinate | Null = js.native
+    def lineIntersection(line: LineSegment): Coordinate | Null
     
     /**
       * Computes the midpoint of the segment
       *
       * @return {jsts.geom.Coordinate} the midpoint of the segment
       */
-    def midPoint(): Coordinate = js.native
+    def midPoint(): Coordinate
     
     /**
       * Puts the line segment into a normalized form.
@@ -1922,7 +1916,7 @@ object geom {
       * A segment in normalized form has the first point smaller
       * than the second (according to the standard ordering on {@link Coordinate}).
       */
-    def normalize(): Unit = js.native
+    def normalize(): Unit
     
     /**
       * Determines the orientation of a LineSegment relative to this segment.
@@ -1943,7 +1937,7 @@ object geom {
       * -1 if <code>seg</code> is to the right of this segment<br />
       * 0 if <code>seg</code> has indeterminate orientation relative to this segment
       */
-    def orientationIndex1(seg: LineSegment): `1` | `-1` | `0` = js.native
+    def orientationIndex1(seg: LineSegment): `1` | `-1` | `0`
     
     /**
       * Determines the orientation index of a {@link Coordinate} relative to this segment.
@@ -1957,11 +1951,11 @@ object geom {
       *
       * @see CGAlgorithms#computeOrientation(Coordinate, Coordinate, Coordinate)
       */
-    def orientationIndex2(p: Coordinate): `1` | `-1` | `0` = js.native
+    def orientationIndex2(p: Coordinate): `1` | `-1` | `0`
     
-    var p0: Coordinate = js.native
+    var p0: Coordinate
     
-    var p1: Coordinate = js.native
+    var p1: Coordinate
     
     /**
       * Computes the {@link Coordinate} that lies a given
@@ -1974,7 +1968,7 @@ object geom {
       * @param {number} segmentLengthFraction the fraction of the segment length along the line
       * @return {jsts.geom.Coordinate} the point at that distance
       */
-    def pointAlong(segmentLengthFraction: Double): Coordinate = js.native
+    def pointAlong(segmentLengthFraction: Double): Coordinate
     
     /**
       * Computes the {@link Coordinate} that lies a given
@@ -1990,7 +1984,7 @@ object geom {
       *    (positive is to the left, negative is to the right)
       * @return {jsts.geom.Coordinate} the point at that distance and offset
       */
-    def pointAlongOffset(segmentLengthFraction: Double, offsetDistance: Double): Coordinate = js.native
+    def pointAlongOffset(segmentLengthFraction: Double, offsetDistance: Double): Coordinate
     
     /**
       * Compute the projection of a point onto the line determined
@@ -2002,7 +1996,7 @@ object geom {
       * @param {jsts.geom.Coordinate} p
       * @return {jsts.geom.Coordinate}
       */
-    def project1(p: Coordinate): Coordinate = js.native
+    def project1(p: Coordinate): Coordinate
     
     /**
       * Project a line segment onto this line segment and return the resulting
@@ -2016,7 +2010,7 @@ object geom {
       * @param {jsts.geom.LineSegment} seg the line segment to project
       * @return {jsts.geom.LineSegment} the projected line segment, or <code>null</code> if there is no overlap
       */
-    def project2(seg: LineSegment): LineSegment = js.native
+    def project2(seg: LineSegment): LineSegment
     
     /**
       * Computes the Projection Factor for the projection of the point p onto this
@@ -2030,12 +2024,12 @@ object geom {
       * @param {Coordinate} p the point to compute the factor for.
       * @return {double} the projection factor for the point.
       */
-    def projectionFactor(p: Coordinate): Double = js.native
+    def projectionFactor(p: Coordinate): Double
     
     /**
       * Reverses the direction of the line segment.
       */
-    def reverse(): Unit = js.native
+    def reverse(): Unit
     
     /**
       * Computes the fraction of distance (in <tt>[0.0, 1.0]</tt>)
@@ -2050,11 +2044,11 @@ object geom {
       * @param {jsts.geom.Coordinate} inputPt the point
       * @return {number} the fraction along the line segment the projection of the point occurs
       */
-    def segmentFraction(inputPt: Coordinate): Double = js.native
+    def segmentFraction(inputPt: Coordinate): Double
     
-    def setCoordinates(ls: LineSegment): Unit = js.native
+    def setCoordinates(ls: LineSegment): Unit
     
-    def setCoordinates2(p0: Coordinate, p1: Coordinate): Unit = js.native
+    def setCoordinates2(p0: Coordinate, p1: Coordinate): Unit
     
     /**
       * Creates a LineString with the same coordinates as this segment
@@ -2062,7 +2056,7 @@ object geom {
       * @param {jsts.geom.GeometryFactory} geomFactory the geometery factory to use
       * @return {jsts.geom.LineString} a LineString with the same geometry as this segment
       */
-    def toGeometry(geomFactory: GeometryFactory): LineString = js.native
+    def toGeometry(geomFactory: GeometryFactory): LineString
   }
   object LineSegment {
     
@@ -2203,8 +2197,9 @@ object geom {
     }
   }
   
-  @js.native
-  trait LineString extends Geometry {
+  trait LineString
+    extends StObject
+       with Geometry {
     
     /**
       * @return {jsts.geom.Coordinate} The n'th coordinate of this
@@ -2212,13 +2207,13 @@ object geom {
       * @param {int}
       *          n index.
       */
-    def getCoordinateN(n: Double): Coordinate = js.native
+    def getCoordinateN(n: Double): Coordinate
     
     /**
       * @return {jsts.geom.Point} The last point of this
       *         jsts.geom.LineString.
       */
-    def getEndPoint(): Point = js.native
+    def getEndPoint(): Point
     
     /**
       * @return {jsts.geom.Point} The n'th point of this
@@ -2226,23 +2221,23 @@ object geom {
       * @param {int}
       *          n index.
       */
-    def getPointN(n: Double): Point = js.native
+    def getPointN(n: Double): Point
     
     /**
       * @return {jsts.geom.Point} The first point of this
       *         jsts.geom.LineString.
       */
-    def getStartPoint(): Point = js.native
+    def getStartPoint(): Point
     
     /**
       * @return {Boolean} true if LineString is Closed.
       */
-    def isClosed(): Boolean = js.native
+    def isClosed(): Boolean
     
     /**
       * @return {Boolean} true if LineString is a Ring.
       */
-    def isRing(): Boolean = js.native
+    def isRing(): Boolean
   }
   object LineString {
     
@@ -2251,7 +2246,7 @@ object geom {
       apply: js.Any => Unit,
       buffer: (Double, Double, Double) => Geometry,
       checkNotGeometryCollection: Geometry => Unit,
-      compare: (js.Array[_], js.Array[_]) => Double,
+      compare: (js.Array[js.Any], js.Array[js.Any]) => Double,
       compareTo: Geometry => Double,
       compareToSameClass: Geometry => Double,
       computeEnvelopeInternal: () => Envelope,
@@ -2342,23 +2337,24 @@ object geom {
   
   type LinearRing = LineString
   
-  @js.native
-  trait Point extends Geometry {
+  trait Point
+    extends StObject
+       with Geometry {
     
     /**
       * @return {number} x-axis value of this Point.
       */
-    def getX(): Double = js.native
+    def getX(): Double
     
     /**
       * @return {number} y-axis value of this Point.
       */
-    def getY(): Double = js.native
+    def getY(): Double
     
     /**
       * @return {Point} Reversed point is a cloned point.
       */
-    def reverse(): Point = js.native
+    def reverse(): Point
   }
   object Point {
     
@@ -2367,7 +2363,7 @@ object geom {
       apply: js.Any => Unit,
       buffer: (Double, Double, Double) => Geometry,
       checkNotGeometryCollection: Geometry => Unit,
-      compare: (js.Array[_], js.Array[_]) => Double,
+      compare: (js.Array[js.Any], js.Array[js.Any]) => Double,
       compareTo: Geometry => Double,
       compareToSameClass: Geometry => Double,
       computeEnvelopeInternal: () => Envelope,
@@ -2444,15 +2440,16 @@ object geom {
     }
   }
   
-  @js.native
-  trait Polygon extends Geometry {
+  trait Polygon
+    extends StObject
+       with Geometry {
     
     /**
       * Gets the exterior ring.
       *
       * @return {LinearRing} The exterior ring.
       */
-    def getExteriorRing(): LinearRing = js.native
+    def getExteriorRing(): LinearRing
     
     /**
       * Gets the interior ring at the specified index.
@@ -2461,14 +2458,14 @@ object geom {
       *
       * @returns {LinearRing} The interior ring at the specified index.
       */
-    def getInteriorRingN(n: Double): LinearRing = js.native
+    def getInteriorRingN(n: Double): LinearRing
     
     /**
       * Gets the number of interior rings.
       *
       * @return {number} The number of interior rings.
       */
-    def getNumInteriorRing(): Double = js.native
+    def getNumInteriorRing(): Double
   }
   object Polygon {
     
@@ -2477,7 +2474,7 @@ object geom {
       apply: js.Any => Unit,
       buffer: (Double, Double, Double) => Geometry,
       checkNotGeometryCollection: Geometry => Unit,
-      compare: (js.Array[_], js.Array[_]) => Double,
+      compare: (js.Array[js.Any], js.Array[js.Any]) => Double,
       compareTo: Geometry => Double,
       compareToSameClass: Geometry => Double,
       computeEnvelopeInternal: () => Envelope,
@@ -2554,7 +2551,6 @@ object geom {
     }
   }
   
-  @js.native
   trait PrecisionModel extends StObject
   
   object util {
@@ -2583,9 +2579,9 @@ object geom {
       def isIdentity(): Boolean = js.native
       
       def reflect(x0: Double, y0: Double): AffineTransformation = js.native
-      def reflect(x0: Double, y0: Double, x1: js.UndefOr[scala.Nothing], y1: Double): AffineTransformation = js.native
       def reflect(x0: Double, y0: Double, x1: Double): AffineTransformation = js.native
       def reflect(x0: Double, y0: Double, x1: Double, y1: Double): AffineTransformation = js.native
+      def reflect(x0: Double, y0: Double, x1: Unit, y1: Double): AffineTransformation = js.native
       
       def rotate(sinTheta: Double, cosTheta: Double): AffineTransformation = js.native
       def rotate(sinTheta: Double, cosTheta: Double, x: Double, y: Double): AffineTransformation = js.native

@@ -6,7 +6,6 @@ import typings.detective.detectiveStrings.never
 import typings.detective.detectiveStrings.script
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -32,23 +31,22 @@ object mod extends Shortcut {
     def find(src: String, opts: Options): DetectiveResults = js.native
   }
   
-  @js.native
   trait DetectiveResults extends StObject {
     
     /**
       * an array of each stringified expression found in a require() call
       */
-    var expressions: js.Array[String] = js.native
+    var expressions: js.Array[String]
     
     /**
       * (when opts.nodes === true) - an array of AST nodes for each argument found in a require() call
       */
-    var nodes: js.UndefOr[js.Array[_]] = js.native
+    var nodes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * an array of each string found in a require()
       */
-    var strings: js.Array[String] = js.native
+    var strings: js.Array[String]
   }
   object DetectiveResults {
     
@@ -68,7 +66,7 @@ object mod extends Shortcut {
       def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value :_*))
       
       @scala.inline
-      def setNodes(value: js.Array[_]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      def setNodes(value: js.Array[js.Any]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
@@ -84,32 +82,31 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * When this is enabled (off by default), if the code starts with the
       * characters #! (as in a shellscript), the first line will be treated as a comment.
       */
-    var allowHashBang: js.UndefOr[Boolean] = js.native
+    var allowHashBang: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, import and export declarations can only appear at a program's top level.
       * Setting this option to true allows them anywhere where a statement is allowed.
       */
-    var allowImportExportEverywhere: js.UndefOr[Boolean] = js.native
+    var allowImportExportEverywhere: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If false, using a reserved word will generate an error. Defaults to true for ecmaVersion 3,
       * false for higher versions. When given the value "never", reserved words and keywords can
       * also not be used as property names (as in Internet Explorer's old parser).
       */
-    var allowReserved: js.UndefOr[Boolean | never] = js.native
+    var allowReserved: js.UndefOr[Boolean | never] = js.undefined
     
     /**
       * By default, a return statement at the top level raises an error. Set this to true to accept such code.
       */
-    var allowReturnOutsideFunction: js.UndefOr[Boolean] = js.native
+    var allowReturnOutsideFunction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates the ECMAScript version to parse. Must be either 3, 5, 6 (2015),
@@ -117,28 +114,28 @@ object mod extends Shortcut {
       * support for strict mode, the set of reserved words, and support for new syntax features.
       * Default is 9.
       */
-    var ecmaVersion: js.UndefOr[String | Double] = js.native
+    var ecmaVersion: js.UndefOr[String | Double] = js.undefined
     
     /**
       * a function returning whether an AST CallExpression node is a require call
       */
-    var isRequire: js.UndefOr[js.Function1[/* node */ js.Any, Boolean]] = js.native
+    var isRequire: js.UndefOr[js.Function1[/* node */ js.Any, Boolean]] = js.undefined
     
     /**
       * When true, each node has a loc object attached with start and end subobjects, each of which
       * contains the one-based line and zero-based column numbers in {line, column} form. Default is false.
       */
-    var locations: js.UndefOr[Boolean] = js.native
+    var locations: js.UndefOr[Boolean] = js.undefined
     
     /**
       * when true, populate found.nodes
       */
-    var nodes: js.UndefOr[String] = js.native
+    var nodes: js.UndefOr[String] = js.undefined
     
     /**
       * supply options directly to acorn with some support for esprima-style options range and loc
       */
-    var parse: js.UndefOr[typings.acorn.mod.Options] = js.native
+    var parse: js.UndefOr[typings.acorn.mod.Options] = js.undefined
     
     /**
       * Nodes have their start and end characters offsets recorded in start and end properties
@@ -146,18 +143,18 @@ object mod extends Shortcut {
       * To also add a semi-standardized range property holding a [start, end] array with
       * the same numbers, set the ranges option to true.
       */
-    var ranges: js.UndefOr[String] = js.native
+    var ranges: js.UndefOr[String] = js.undefined
     
     /**
       * Indicate the mode the code should be parsed in. Can be either "script" or "module".
       * This influences global strict mode and parsing of import and export declarations.
       */
-    var sourceType: js.UndefOr[script | module] = js.native
+    var sourceType: js.UndefOr[script | module] = js.undefined
     
     /**
       * specify a different function name instead of "require"
       */
-    var word: js.UndefOr[String] = js.native
+    var word: js.UndefOr[String] = js.undefined
   }
   object Options {
     

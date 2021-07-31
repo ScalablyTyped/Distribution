@@ -2,7 +2,6 @@ package typings.inquirer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
-trait ExpandChoiceMap[T /* <: Answers */] extends BaseChoiceMap[T] {
+trait ExpandChoiceMap[T /* <: Answers */]
+  extends StObject
+     with BaseChoiceMap[T] {
   
-  var ExpandChoiceOptions: typings.inquirer.mod.ExpandChoiceOptions[T] = js.native
+  var ExpandChoiceOptions: typings.inquirer.mod.ExpandChoiceOptions[T]
 }
 object ExpandChoiceMap {
   
@@ -31,7 +31,7 @@ object ExpandChoiceMap {
   }
   
   @scala.inline
-  implicit class ExpandChoiceMapMutableBuilder[Self <: ExpandChoiceMap[_], T /* <: Answers */] (val x: Self with ExpandChoiceMap[T]) extends AnyVal {
+  implicit class ExpandChoiceMapMutableBuilder[Self <: ExpandChoiceMap[?], T /* <: Answers */] (val x: Self & ExpandChoiceMap[T]) extends AnyVal {
     
     @scala.inline
     def setExpandChoiceOptions(value: ExpandChoiceOptions[T]): Self = StObject.set(x, "ExpandChoiceOptions", value.asInstanceOf[js.Any])

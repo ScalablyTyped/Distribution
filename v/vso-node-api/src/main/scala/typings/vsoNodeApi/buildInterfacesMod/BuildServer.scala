@@ -3,35 +3,33 @@ package typings.vsoNodeApi.buildInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildServer extends StObject {
   
-  var agents: js.Array[BuildAgentReference] = js.native
+  var agents: js.Array[BuildAgentReference]
   
-  var controller: XamlBuildControllerReference = js.native
+  var controller: XamlBuildControllerReference
   
-  var id: Double = js.native
+  var id: Double
   
-  var isVirtual: Boolean = js.native
+  var isVirtual: Boolean
   
-  var messageQueueUrl: String = js.native
+  var messageQueueUrl: String
   
-  var name: String = js.native
+  var name: String
   
-  var requireClientCertificates: Boolean = js.native
+  var requireClientCertificates: Boolean
   
-  var status: ServiceHostStatus = js.native
+  var status: ServiceHostStatus
   
-  var statusChangedDate: Date = js.native
+  var statusChangedDate: Date
   
-  var uri: String = js.native
+  var uri: String
   
-  var url: String = js.native
+  var url: String
   
-  var version: Double = js.native
+  var version: Double
 }
 object BuildServer {
   

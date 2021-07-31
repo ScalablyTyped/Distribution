@@ -2,26 +2,24 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchPutDocumentResponseFailedDocument extends StObject {
   
   /**
     * The type of error that caused the document to fail to be indexed.
     */
-  var ErrorCode: js.UndefOr[typings.awsSdk.kendraMod.ErrorCode] = js.native
+  var ErrorCode: js.UndefOr[typings.awsSdk.kendraMod.ErrorCode] = js.undefined
   
   /**
     * A description of the reason why the document could not be indexed.
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.kendraMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.kendraMod.ErrorMessage] = js.undefined
   
   /**
     * The unique identifier of the document.
     */
-  var Id: js.UndefOr[DocumentId] = js.native
+  var Id: js.UndefOr[DocumentId] = js.undefined
 }
 object BatchPutDocumentResponseFailedDocument {
   

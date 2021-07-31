@@ -3,66 +3,65 @@ package typings.openidClient.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientMetadata
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var authorization_encrypted_response_alg: js.UndefOr[String] = js.native
+  var authorization_encrypted_response_alg: js.UndefOr[String] = js.undefined
   
-  var authorization_encrypted_response_enc: js.UndefOr[String] = js.native
+  var authorization_encrypted_response_enc: js.UndefOr[String] = js.undefined
   
-  var authorization_signed_response_alg: js.UndefOr[String] = js.native
+  var authorization_signed_response_alg: js.UndefOr[String] = js.undefined
   
   // important
-  var client_id: String = js.native
+  var client_id: String
   
-  var client_secret: js.UndefOr[String] = js.native
+  var client_secret: js.UndefOr[String] = js.undefined
   
-  var default_max_age: js.UndefOr[Double] = js.native
+  var default_max_age: js.UndefOr[Double] = js.undefined
   
   // less important
-  var id_token_encrypted_response_alg: js.UndefOr[String] = js.native
+  var id_token_encrypted_response_alg: js.UndefOr[String] = js.undefined
   
-  var id_token_encrypted_response_enc: js.UndefOr[String] = js.native
+  var id_token_encrypted_response_enc: js.UndefOr[String] = js.undefined
   
-  var id_token_signed_response_alg: js.UndefOr[String] = js.native
+  var id_token_signed_response_alg: js.UndefOr[String] = js.undefined
   
-  var introspection_endpoint_auth_method: js.UndefOr[ClientAuthMethod] = js.native
+  var introspection_endpoint_auth_method: js.UndefOr[ClientAuthMethod] = js.undefined
   
-  var introspection_endpoint_auth_signing_alg: js.UndefOr[String] = js.native
+  var introspection_endpoint_auth_signing_alg: js.UndefOr[String] = js.undefined
   
-  var post_logout_redirect_uris: js.UndefOr[js.Array[String]] = js.native
+  var post_logout_redirect_uris: js.UndefOr[js.Array[String]] = js.undefined
   
-  var redirect_uris: js.UndefOr[js.Array[String]] = js.native
+  var redirect_uris: js.UndefOr[js.Array[String]] = js.undefined
   
-  var request_object_encryption_alg: js.UndefOr[String] = js.native
+  var request_object_encryption_alg: js.UndefOr[String] = js.undefined
   
-  var request_object_encryption_enc: js.UndefOr[String] = js.native
+  var request_object_encryption_enc: js.UndefOr[String] = js.undefined
   
-  var request_object_signing_alg: js.UndefOr[String] = js.native
+  var request_object_signing_alg: js.UndefOr[String] = js.undefined
   
-  var require_auth_time: js.UndefOr[Boolean] = js.native
+  var require_auth_time: js.UndefOr[Boolean] = js.undefined
   
-  var response_types: js.UndefOr[js.Array[ResponseType]] = js.native
+  var response_types: js.UndefOr[js.Array[ResponseType]] = js.undefined
   
-  var revocation_endpoint_auth_method: js.UndefOr[ClientAuthMethod] = js.native
+  var revocation_endpoint_auth_method: js.UndefOr[ClientAuthMethod] = js.undefined
   
-  var revocation_endpoint_auth_signing_alg: js.UndefOr[String] = js.native
+  var revocation_endpoint_auth_signing_alg: js.UndefOr[String] = js.undefined
   
-  var tls_client_certificate_bound_access_tokens: js.UndefOr[Boolean] = js.native
+  var tls_client_certificate_bound_access_tokens: js.UndefOr[Boolean] = js.undefined
   
-  var token_endpoint_auth_method: js.UndefOr[ClientAuthMethod] = js.native
+  var token_endpoint_auth_method: js.UndefOr[ClientAuthMethod] = js.undefined
   
-  var token_endpoint_auth_signing_alg: js.UndefOr[String] = js.native
+  var token_endpoint_auth_signing_alg: js.UndefOr[String] = js.undefined
   
-  var userinfo_encrypted_response_alg: js.UndefOr[String] = js.native
+  var userinfo_encrypted_response_alg: js.UndefOr[String] = js.undefined
   
-  var userinfo_encrypted_response_enc: js.UndefOr[String] = js.native
+  var userinfo_encrypted_response_enc: js.UndefOr[String] = js.undefined
   
-  var userinfo_signed_response_alg: js.UndefOr[String] = js.native
+  var userinfo_signed_response_alg: js.UndefOr[String] = js.undefined
 }
 object ClientMetadata {
   

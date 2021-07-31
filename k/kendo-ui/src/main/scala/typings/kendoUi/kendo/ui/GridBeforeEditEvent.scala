@@ -3,13 +3,13 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridBeforeEditEvent extends GridEvent {
+trait GridBeforeEditEvent
+  extends StObject
+     with GridEvent {
   
-  var model: js.UndefOr[Model] = js.native
+  var model: js.UndefOr[Model] = js.undefined
 }
 object GridBeforeEditEvent {
   

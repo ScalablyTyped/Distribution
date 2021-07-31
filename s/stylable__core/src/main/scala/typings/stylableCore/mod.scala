@@ -83,10 +83,13 @@ import typings.stylableCore.typesMod.ParsedValue
 import typings.stylableCore.typesMod.StateParsedValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@stylable/core", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@stylable/core", "CUSTOM_SELECTOR_RE")
   @js.native
@@ -94,13 +97,15 @@ object mod {
   
   object CustomValueStrategy {
     
-    @JSImport("@stylable/core", "CustomValueStrategy.args")
+    @JSImport("@stylable/core", "CustomValueStrategy")
     @js.native
-    def args(fnNode: ParsedValue, customTypes: CustomTypes): js.Array[String | (Box_[String, _])] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core", "CustomValueStrategy.named")
-    @js.native
-    def named(fnNode: ParsedValue, customTypes: CustomTypes): BoxedValueMap = js.native
+    @scala.inline
+    def args(fnNode: ParsedValue, customTypes: CustomTypes): js.Array[String | (Box_[String, js.Any])] = (^.asInstanceOf[js.Dynamic].applyDynamic("args")(fnNode.asInstanceOf[js.Any], customTypes.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | (Box_[String, js.Any])]]
+    
+    @scala.inline
+    def named(fnNode: ParsedValue, customTypes: CustomTypes): BoxedValueMap = (^.asInstanceOf[js.Dynamic].applyDynamic("named")(fnNode.asInstanceOf[js.Any], customTypes.asInstanceOf[js.Any])).asInstanceOf[BoxedValueMap]
   }
   
   @JSImport("@stylable/core", "Diagnostics")
@@ -116,47 +121,42 @@ object mod {
   
   object SBTypesParsers {
     
-    @JSImport("@stylable/core", "SBTypesParsers.-st-extends")
+    @JSImport("@stylable/core", "SBTypesParsers")
     @js.native
-    def stExtends(value: String): Ast = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core", "SBTypesParsers.-st-global")
-    @js.native
-    def stGlobal(decl: Declaration, _diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): js.Any = js.native
+    @scala.inline
+    def stExtends(value: String): Ast = ^.asInstanceOf[js.Dynamic].applyDynamic("-st-extends")(value.asInstanceOf[js.Any]).asInstanceOf[Ast]
     
-    @JSImport("@stylable/core", "SBTypesParsers.-st-mixin")
-    @js.native
-    def stMixin(mixinNode: Declaration, strategy: js.Function1[/* type */ String, named | args]): js.Array[MixinValue] = js.native
-    @JSImport("@stylable/core", "SBTypesParsers.-st-mixin")
-    @js.native
+    @scala.inline
+    def stGlobal(decl: Declaration, _diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("-st-global")(decl.asInstanceOf[js.Any], _diagnostics.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def stMixin(mixinNode: Declaration, strategy: js.Function1[/* type */ String, named | args]): js.Array[MixinValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("-st-mixin")(mixinNode.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[js.Array[MixinValue]]
+    @scala.inline
     def stMixin(
       mixinNode: Declaration,
       strategy: js.Function1[/* type */ String, named | args],
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics
-    ): js.Array[MixinValue] = js.native
+    ): js.Array[MixinValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("-st-mixin")(mixinNode.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[js.Array[MixinValue]]
     
-    @JSImport("@stylable/core", "SBTypesParsers.-st-named")
-    @js.native
-    def stNamed(value: String, node: Declaration, diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): KeyframesMap = js.native
+    @scala.inline
+    def stNamed(value: String, node: Declaration, diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): KeyframesMap = (^.asInstanceOf[js.Dynamic].applyDynamic("-st-named")(value.asInstanceOf[js.Any], node.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[KeyframesMap]
     
-    @JSImport("@stylable/core", "SBTypesParsers.-st-partial-mixin")
-    @js.native
-    def stPartialMixin(mixinNode: Declaration, strategy: js.Function1[/* type */ String, named | args]): js.Array[MixinValue] = js.native
-    @JSImport("@stylable/core", "SBTypesParsers.-st-partial-mixin")
-    @js.native
+    @scala.inline
+    def stPartialMixin(mixinNode: Declaration, strategy: js.Function1[/* type */ String, named | args]): js.Array[MixinValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("-st-partial-mixin")(mixinNode.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[js.Array[MixinValue]]
+    @scala.inline
     def stPartialMixin(
       mixinNode: Declaration,
       strategy: js.Function1[/* type */ String, named | args],
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics
-    ): js.Array[MixinValue] = js.native
+    ): js.Array[MixinValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("-st-partial-mixin")(mixinNode.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[js.Array[MixinValue]]
     
-    @JSImport("@stylable/core", "SBTypesParsers.-st-root")
-    @js.native
-    def stRoot(value: String): Boolean = js.native
+    @scala.inline
+    def stRoot(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("-st-root")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("@stylable/core", "SBTypesParsers.-st-states")
-    @js.native
-    def stStates(value: String, decl: Declaration, diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): MappedStates = js.native
+    @scala.inline
+    def stStates(value: String, decl: Declaration, diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): MappedStates = (^.asInstanceOf[js.Dynamic].applyDynamic("-st-states")(value.asInstanceOf[js.Any], decl.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[MappedStates]
   }
   
   @JSImport("@stylable/core", "STYLABLE_NAMED_MATCHER")
@@ -174,7 +174,7 @@ object mod {
     def this(
       projectRoot: String,
       fileSystem: MinimalFS,
-      requireModule: js.Function1[/* path */ String, _],
+      requireModule: js.Function1[/* path */ String, js.Any],
       delimiter: js.UndefOr[String],
       onProcess: js.UndefOr[
             js.Function2[
@@ -197,9 +197,12 @@ object mod {
   /* static members */
   object Stylable {
     
-    @JSImport("@stylable/core", "Stylable.create")
+    @JSImport("@stylable/core", "Stylable")
     @js.native
-    def create(config: StylableConfig): typings.stylableCore.stylableMod.Stylable = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(config: StylableConfig): typings.stylableCore.stylableMod.Stylable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[typings.stylableCore.stylableMod.Stylable]
   }
   
   @JSImport("@stylable/core", "StylableMeta")
@@ -215,7 +218,7 @@ object mod {
     extends typings.stylableCore.stylableProcessorMod.StylableProcessor {
     def this(diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics) = this()
     def this(
-      diagnostics: js.UndefOr[scala.Nothing],
+      diagnostics: Unit,
       resolveNamespace: js.Function2[/* namespace */ String, /* source */ String, String]
     ) = this()
     def this(
@@ -230,7 +233,7 @@ object mod {
     extends typings.stylableCore.stylableResolverMod.StylableResolver {
     def this(
       fileProcessor: FileProcessor[typings.stylableCore.stylableProcessorMod.StylableMeta],
-      requireModule: js.Function1[/* modulePath */ String, _]
+      requireModule: js.Function1[/* modulePath */ String, js.Any]
     ) = this()
   }
   
@@ -241,8 +244,7 @@ object mod {
     def this(options: TransformerOptions) = this()
   }
   
-  @JSImport("@stylable/core", "appendMixin")
-  @js.native
+  @scala.inline
   def appendMixin(
     mix: RefedMixin,
     transformer: typings.stylableCore.stylableTransformerMod.StylableTransformer,
@@ -250,9 +252,8 @@ object mod {
     meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
     variableOverride: Record[String, String],
     cssVarsMapping: Record[String, String]
-  ): Unit = js.native
-  @JSImport("@stylable/core", "appendMixin")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendMixin")(mix.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def appendMixin(
     mix: RefedMixin,
     transformer: typings.stylableCore.stylableTransformerMod.StylableTransformer,
@@ -261,19 +262,17 @@ object mod {
     variableOverride: Record[String, String],
     cssVarsMapping: Record[String, String],
     path: js.Array[String]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendMixin")(mix.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@stylable/core", "appendMixins")
-  @js.native
+  @scala.inline
   def appendMixins(
     transformer: typings.stylableCore.stylableTransformerMod.StylableTransformer,
     rule: SRule,
     meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
     variableOverride: Record[String, String],
     cssVarsMapping: Record[String, String]
-  ): Unit = js.native
-  @JSImport("@stylable/core", "appendMixins")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendMixins")(transformer.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def appendMixins(
     transformer: typings.stylableCore.stylableTransformerMod.StylableTransformer,
     rule: SRule,
@@ -281,46 +280,37 @@ object mod {
     variableOverride: Record[String, String],
     cssVarsMapping: Record[String, String],
     path: js.Array[String]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendMixins")(transformer.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@stylable/core", "assureRelativeUrlPrefix")
-  @js.native
-  def assureRelativeUrlPrefix(url: String): String = js.native
+  @scala.inline
+  def assureRelativeUrlPrefix(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("assureRelativeUrlPrefix")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@stylable/core", "box")
-  @js.native
-  def box[Type /* <: String */, Value /* <: js.Any */](`type`: Type, value: Value): Box_[Type, Value] = js.native
+  @scala.inline
+  def box[Type /* <: String */, Value /* <: js.Any */](`type`: Type, value: Value): Box_[Type, Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("box")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Box_[Type, Value]]
   
-  @JSImport("@stylable/core", "cachedProcessFile")
-  @js.native
+  @scala.inline
   def cachedProcessFile[T](
     processor: processFn[T],
     fs: MinimalFS,
     resolvePath: js.Function2[/* path */ String, /* context */ js.UndefOr[String], String]
-  ): FileProcessor[T] = js.native
+  ): FileProcessor[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cachedProcessFile")(processor.asInstanceOf[js.Any], fs.asInstanceOf[js.Any], resolvePath.asInstanceOf[js.Any])).asInstanceOf[FileProcessor[T]]
   
-  @JSImport("@stylable/core", "collectAssets")
-  @js.native
-  def collectAssets(ast: Root_): js.Array[String] = js.native
+  @scala.inline
+  def collectAssets(ast: Root_): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("collectAssets")(ast.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@stylable/core", "createChecker")
-  @js.native
-  def createChecker(types: js.Array[String | js.Array[String]]): js.Function0[js.Function1[/* node */ SelectorAstNode, Boolean]] = js.native
+  @scala.inline
+  def createChecker(types: js.Array[String | js.Array[String]]): js.Function0[js.Function1[/* node */ SelectorAstNode, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChecker")(types.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Function1[/* node */ SelectorAstNode, Boolean]]]
   
-  @JSImport("@stylable/core", "createCustomValue")
-  @js.native
-  def createCustomValue[Value, Args](hasProcessArgsCreateValueFlattenValueGetValue: ExtensionApi[Value, Args]): JSValueExtension[Value] = js.native
+  @scala.inline
+  def createCustomValue[Value, Args](hasProcessArgsCreateValueFlattenValueGetValue: ExtensionApi[Value, Args]): JSValueExtension[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCustomValue")(hasProcessArgsCreateValueFlattenValueGetValue.asInstanceOf[js.Any]).asInstanceOf[JSValueExtension[Value]]
   
-  @JSImport("@stylable/core", "createDefaultResolver")
-  @js.native
-  def createDefaultResolver(fileSystem: MinimalFS, resolveOptions: js.Any): ModuleResolver = js.native
+  @scala.inline
+  def createDefaultResolver(fileSystem: MinimalFS, resolveOptions: js.Any): ModuleResolver = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultResolver")(fileSystem.asInstanceOf[js.Any], resolveOptions.asInstanceOf[js.Any])).asInstanceOf[ModuleResolver]
   
-  @JSImport("@stylable/core", "createEmptyMeta")
-  @js.native
-  def createEmptyMeta(root: Root_, diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): typings.stylableCore.stylableMetaMod.StylableMeta = js.native
+  @scala.inline
+  def createEmptyMeta(root: Root_, diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): typings.stylableCore.stylableMetaMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyMeta")(root.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableMetaMod.StylableMeta]
   
-  @JSImport("@stylable/core", "createInfrastructure")
-  @js.native
+  @scala.inline
   def createInfrastructure(
     projectRoot: String,
     fileSystem: MinimalFS,
@@ -337,43 +327,32 @@ object mod {
     resolveModule: js.UndefOr[ModuleResolver],
     cssParser: js.UndefOr[CssParser],
     createDiagnostics: js.UndefOr[js.Function1[/* from */ String, typings.stylableCore.diagnosticsMod.Diagnostics]]
-  ): StylableInfrastructure = js.native
+  ): StylableInfrastructure = (^.asInstanceOf[js.Dynamic].applyDynamic("createInfrastructure")(projectRoot.asInstanceOf[js.Any], fileSystem.asInstanceOf[js.Any], onProcess.asInstanceOf[js.Any], resolveOptions.asInstanceOf[js.Any], resolveNamespace.asInstanceOf[js.Any], timedCacheOptions.asInstanceOf[js.Any], resolveModule.asInstanceOf[js.Any], cssParser.asInstanceOf[js.Any], createDiagnostics.asInstanceOf[js.Any])).asInstanceOf[StylableInfrastructure]
   
-  @JSImport("@stylable/core", "createMinimalFS")
-  @js.native
-  def createMinimalFS(hasFilesTrimWS: MinimalFSSetup): Fs = js.native
+  @scala.inline
+  def createMinimalFS(hasFilesTrimWS: MinimalFSSetup): Fs = ^.asInstanceOf[js.Dynamic].applyDynamic("createMinimalFS")(hasFilesTrimWS.asInstanceOf[js.Any]).asInstanceOf[Fs]
   
-  @JSImport("@stylable/core", "createSimpleSelectorChecker")
-  @js.native
-  def createSimpleSelectorChecker(): js.Function1[/* node */ SelectorAstNode, Boolean] = js.native
+  @scala.inline
+  def createSimpleSelectorChecker(): js.Function1[/* node */ SelectorAstNode, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleSelectorChecker")().asInstanceOf[js.Function1[/* node */ SelectorAstNode, Boolean]]
   
-  @JSImport("@stylable/core", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String): T = js.native
-  @JSImport("@stylable/core", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String, mixinTarget: T): T = js.native
-  @JSImport("@stylable/core", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String, mixinTarget: T, isRoot: Boolean): T = js.native
-  @JSImport("@stylable/core", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String, mixinTarget: js.UndefOr[scala.Nothing], isRoot: Boolean): T = js.native
-  @JSImport("@stylable/core", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String): T = js.native
-  @JSImport("@stylable/core", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String, mixinTarget: T): T = js.native
-  @JSImport("@stylable/core", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String, mixinTarget: T, isRoot: Boolean): T = js.native
-  @JSImport("@stylable/core", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String, mixinTarget: js.UndefOr[scala.Nothing], isRoot: Boolean): T = js.native
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String, mixinTarget: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any], mixinTarget.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String, mixinTarget: T, isRoot: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any], mixinTarget.asInstanceOf[js.Any], isRoot.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String, mixinTarget: Unit, isRoot: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any], mixinTarget.asInstanceOf[js.Any], isRoot.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String, mixinTarget: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any], mixinTarget.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String, mixinTarget: T, isRoot: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any], mixinTarget.asInstanceOf[js.Any], isRoot.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String, mixinTarget: Unit, isRoot: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any], mixinTarget.asInstanceOf[js.Any], isRoot.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@stylable/core", "createWarningRule")
-  @js.native
+  @scala.inline
   def createWarningRule(
     extendedNode: String,
     scopedExtendedNode: String,
@@ -381,9 +360,8 @@ object mod {
     extendingNode: String,
     scopedExtendingNode: String,
     extendingFile: String
-  ): Rule_ = js.native
-  @JSImport("@stylable/core", "createWarningRule")
-  @js.native
+  ): Rule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createWarningRule")(extendedNode.asInstanceOf[js.Any], scopedExtendedNode.asInstanceOf[js.Any], extendedFile.asInstanceOf[js.Any], extendingNode.asInstanceOf[js.Any], scopedExtendingNode.asInstanceOf[js.Any], extendingFile.asInstanceOf[js.Any])).asInstanceOf[Rule_]
+  @scala.inline
   def createWarningRule(
     extendedNode: String,
     scopedExtendedNode: String,
@@ -392,10 +370,9 @@ object mod {
     scopedExtendingNode: String,
     extendingFile: String,
     useScoped: Boolean
-  ): Rule_ = js.native
+  ): Rule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createWarningRule")(extendedNode.asInstanceOf[js.Any], scopedExtendedNode.asInstanceOf[js.Any], extendedFile.asInstanceOf[js.Any], extendingNode.asInstanceOf[js.Any], scopedExtendingNode.asInstanceOf[js.Any], extendingFile.asInstanceOf[js.Any], useScoped.asInstanceOf[js.Any])).asInstanceOf[Rule_]
   
-  @JSImport("@stylable/core", "evalDeclarationValue")
-  @js.native
+  @scala.inline
   def evalDeclarationValue(
     resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
     value: String,
@@ -407,260 +384,189 @@ object mod {
     passedThrough: js.UndefOr[js.Array[String]],
     cssVarsMapping: js.UndefOr[Record[String, String]],
     args: js.UndefOr[js.Array[String]]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("evalDeclarationValue")(resolver.asInstanceOf[js.Any], value.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], valueHook.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], passedThrough.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@stylable/core", "expandCustomSelectors")
-  @js.native
-  def expandCustomSelectors(rule: Rule_, customSelectors: Record[String, String]): String = js.native
-  @JSImport("@stylable/core", "expandCustomSelectors")
-  @js.native
+  @scala.inline
+  def expandCustomSelectors(rule: Rule_, customSelectors: Record[String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expandCustomSelectors")(rule.asInstanceOf[js.Any], customSelectors.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def expandCustomSelectors(
     rule: Rule_,
     customSelectors: Record[String, String],
     diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expandCustomSelectors")(rule.asInstanceOf[js.Any], customSelectors.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@stylable/core", "filterChunkNodesByType")
-  @js.native
-  def filterChunkNodesByType(chunk: SelectorChunk, typeOptions: js.Array[String]): js.Array[PartialSelectorAstNode] = js.native
+  @scala.inline
+  def filterChunkNodesByType(chunk: SelectorChunk, typeOptions: js.Array[String]): js.Array[PartialSelectorAstNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterChunkNodesByType")(chunk.asInstanceOf[js.Any], typeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[PartialSelectorAstNode]]
   
-  @JSImport("@stylable/core", "findDeclaration")
-  @js.native
-  def findDeclaration(importNode: Imported, test: js.Any): Declaration = js.native
+  @scala.inline
+  def findDeclaration(importNode: Imported, test: js.Any): Declaration = (^.asInstanceOf[js.Dynamic].applyDynamic("findDeclaration")(importNode.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[Declaration]
   
-  @JSImport("@stylable/core", "findRule")
-  @js.native
-  def findRule(root: Root_, selector: String): Null | Declaration = js.native
-  @JSImport("@stylable/core", "findRule")
-  @js.native
-  def findRule(root: Root_, selector: String, test: js.Any): Null | Declaration = js.native
+  @scala.inline
+  def findRule(root: Root_, selector: String): Null | Declaration = (^.asInstanceOf[js.Dynamic].applyDynamic("findRule")(root.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Null | Declaration]
+  @scala.inline
+  def findRule(root: Root_, selector: String, test: js.Any): Null | Declaration = (^.asInstanceOf[js.Dynamic].applyDynamic("findRule")(root.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[Null | Declaration]
   
-  @JSImport("@stylable/core", "fixChunkOrdering")
-  @js.native
-  def fixChunkOrdering(selectorNode: SelectorAstNode, prefixType: SelectorAstNode): Unit = js.native
+  @scala.inline
+  def fixChunkOrdering(selectorNode: SelectorAstNode, prefixType: SelectorAstNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fixChunkOrdering")(selectorNode.asInstanceOf[js.Any], prefixType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@stylable/core", "fixRelativeUrls")
-  @js.native
-  def fixRelativeUrls(ast: Root_, originPath: String, targetPath: String): Unit = js.native
+  @scala.inline
+  def fixRelativeUrls(ast: Root_, originPath: String, targetPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fixRelativeUrls")(ast.asInstanceOf[js.Any], originPath.asInstanceOf[js.Any], targetPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object functionWarnings {
     
-    @JSImport("@stylable/core", "functionWarnings.CANNOT_FIND_IMPORTED_VAR")
+    @JSImport("@stylable/core", "functionWarnings")
     @js.native
-    def CANNOT_FIND_IMPORTED_VAR(varName: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core", "functionWarnings.CANNOT_USE_AS_VALUE")
-    @js.native
-    def CANNOT_USE_AS_VALUE(`type`: String, varName: String): String = js.native
+    @scala.inline
+    def CANNOT_FIND_IMPORTED_VAR(varName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_FIND_IMPORTED_VAR")(varName.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "functionWarnings.CANNOT_USE_JS_AS_VALUE")
-    @js.native
-    def CANNOT_USE_JS_AS_VALUE(varName: String): String = js.native
+    @scala.inline
+    def CANNOT_USE_AS_VALUE(`type`: String, varName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_USE_AS_VALUE")(`type`.asInstanceOf[js.Any], varName.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "functionWarnings.COULD_NOT_RESOLVE_VALUE")
-    @js.native
-    def COULD_NOT_RESOLVE_VALUE(args: String): String = js.native
+    @scala.inline
+    def CANNOT_USE_JS_AS_VALUE(varName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_USE_JS_AS_VALUE")(varName.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "functionWarnings.CYCLIC_VALUE")
-    @js.native
-    def CYCLIC_VALUE(cyclicChain: js.Array[String]): String = js.native
+    @scala.inline
+    def COULD_NOT_RESOLVE_VALUE(args: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("COULD_NOT_RESOLVE_VALUE")(args.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "functionWarnings.FAIL_TO_EXECUTE_FORMATTER")
-    @js.native
-    def FAIL_TO_EXECUTE_FORMATTER(resolvedValue: String, message: String): String = js.native
+    @scala.inline
+    def CYCLIC_VALUE(cyclicChain: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CYCLIC_VALUE")(cyclicChain.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "functionWarnings.MULTI_ARGS_IN_VALUE")
-    @js.native
-    def MULTI_ARGS_IN_VALUE(args: String): String = js.native
+    @scala.inline
+    def FAIL_TO_EXECUTE_FORMATTER(resolvedValue: String, message: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAIL_TO_EXECUTE_FORMATTER")(resolvedValue.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "functionWarnings.UNKNOWN_FORMATTER")
-    @js.native
-    def UNKNOWN_FORMATTER(name: String): String = js.native
+    @scala.inline
+    def MULTI_ARGS_IN_VALUE(args: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MULTI_ARGS_IN_VALUE")(args.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "functionWarnings.UNKNOWN_VAR")
-    @js.native
-    def UNKNOWN_VAR(name: String): String = js.native
+    @scala.inline
+    def UNKNOWN_FORMATTER(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_FORMATTER")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def UNKNOWN_VAR(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_VAR")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @JSImport("@stylable/core", "generateScopedCSSVar")
-  @js.native
-  def generateScopedCSSVar(namespace: String, varName: String): String = js.native
+  @scala.inline
+  def generateScopedCSSVar(namespace: String, varName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateScopedCSSVar")(namespace.asInstanceOf[js.Any], varName.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@stylable/core", "getAlias")
-  @js.native
-  def getAlias(symbol: StylableSymbol): js.UndefOr[ImportSymbol] = js.native
+  @scala.inline
+  def getAlias(symbol: StylableSymbol): js.UndefOr[ImportSymbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(symbol.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ImportSymbol]]
   
-  @JSImport("@stylable/core", "getBoxValue")
-  @js.native
-  def getBoxValue(path: js.Array[String], value: String, node: ParsedValue, customTypes: CustomTypes): String = js.native
-  @JSImport("@stylable/core", "getBoxValue")
-  @js.native
-  def getBoxValue(path: js.Array[String], value: Box_[String, _], node: ParsedValue, customTypes: CustomTypes): String = js.native
+  @scala.inline
+  def getBoxValue(path: js.Array[String], value: String, node: ParsedValue, customTypes: CustomTypes): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoxValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], node.asInstanceOf[js.Any], customTypes.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getBoxValue(path: js.Array[String], value: Box_[String, js.Any], node: ParsedValue, customTypes: CustomTypes): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoxValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], node.asInstanceOf[js.Any], customTypes.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@stylable/core", "getCssDocsForSymbol")
-  @js.native
-  def getCssDocsForSymbol(meta: typings.stylableCore.stylableMetaMod.StylableMeta, symbol: StylableSymbol): CssDoc | Null = js.native
+  @scala.inline
+  def getCssDocsForSymbol(meta: typings.stylableCore.stylableMetaMod.StylableMeta, symbol: StylableSymbol): CssDoc | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getCssDocsForSymbol")(meta.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any])).asInstanceOf[CssDoc | Null]
   
-  @JSImport("@stylable/core", "getDeclStylable")
-  @js.native
-  def getDeclStylable(decl: SDecl): DeclStylableProps = js.native
+  @scala.inline
+  def getDeclStylable(decl: SDecl): DeclStylableProps = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeclStylable")(decl.asInstanceOf[js.Any]).asInstanceOf[DeclStylableProps]
   
-  @JSImport("@stylable/core", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(node: ParsedValue): js.Array[String] = js.native
-  @JSImport("@stylable/core", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(
-    node: ParsedValue,
-    allowComments: js.UndefOr[scala.Nothing],
-    _reportWarning: js.UndefOr[scala.Nothing],
-    perserveQuotes: Boolean
-  ): js.Array[String] = js.native
-  @JSImport("@stylable/core", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(node: ParsedValue, allowComments: js.UndefOr[scala.Nothing], _reportWarning: ReportWarning): js.Array[String] = js.native
-  @JSImport("@stylable/core", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(
-    node: ParsedValue,
-    allowComments: js.UndefOr[scala.Nothing],
-    _reportWarning: ReportWarning,
-    perserveQuotes: Boolean
-  ): js.Array[String] = js.native
-  @JSImport("@stylable/core", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(node: ParsedValue, allowComments: Boolean): js.Array[String] = js.native
-  @JSImport("@stylable/core", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(
-    node: ParsedValue,
-    allowComments: Boolean,
-    _reportWarning: js.UndefOr[scala.Nothing],
-    perserveQuotes: Boolean
-  ): js.Array[String] = js.native
-  @JSImport("@stylable/core", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(node: ParsedValue, allowComments: Boolean, _reportWarning: ReportWarning): js.Array[String] = js.native
-  @JSImport("@stylable/core", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(node: ParsedValue, allowComments: Boolean, _reportWarning: ReportWarning, perserveQuotes: Boolean): js.Array[String] = js.native
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue, allowComments: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any], allowComments.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue, allowComments: Boolean, _reportWarning: Unit, perserveQuotes: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any], allowComments.asInstanceOf[js.Any], _reportWarning.asInstanceOf[js.Any], perserveQuotes.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue, allowComments: Boolean, _reportWarning: ReportWarning): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any], allowComments.asInstanceOf[js.Any], _reportWarning.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue, allowComments: Boolean, _reportWarning: ReportWarning, perserveQuotes: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any], allowComments.asInstanceOf[js.Any], _reportWarning.asInstanceOf[js.Any], perserveQuotes.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue, allowComments: Unit, _reportWarning: Unit, perserveQuotes: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any], allowComments.asInstanceOf[js.Any], _reportWarning.asInstanceOf[js.Any], perserveQuotes.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue, allowComments: Unit, _reportWarning: ReportWarning): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any], allowComments.asInstanceOf[js.Any], _reportWarning.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue, allowComments: Unit, _reportWarning: ReportWarning, perserveQuotes: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any], allowComments.asInstanceOf[js.Any], _reportWarning.asInstanceOf[js.Any], perserveQuotes.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("@stylable/core", "getNamedArgs")
-  @js.native
-  def getNamedArgs(node: ParsedValue): js.Array[js.Array[ParsedValue]] = js.native
+  @scala.inline
+  def getNamedArgs(node: ParsedValue): js.Array[js.Array[ParsedValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamedArgs")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[ParsedValue]]]
   
-  @JSImport("@stylable/core", "getOriginDefinition")
-  @js.native
-  def getOriginDefinition(resolved: js.Array[CSSResolve[ClassSymbol | ElementSymbol]]): CSSResolve[ClassSymbol | ElementSymbol] = js.native
+  @scala.inline
+  def getOriginDefinition(resolved: js.Array[CSSResolve[ClassSymbol | ElementSymbol]]): CSSResolve[ClassSymbol | ElementSymbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginDefinition")(resolved.asInstanceOf[js.Any]).asInstanceOf[CSSResolve[ClassSymbol | ElementSymbol]]
   
-  @JSImport("@stylable/core", "getSourcePath")
-  @js.native
-  def getSourcePath(root: Root_, diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): String = js.native
+  @scala.inline
+  def getSourcePath(root: Root_, diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourcePath")(root.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@stylable/core", "getStringValue")
-  @js.native
-  def getStringValue(nodes: js.Array[ParsedValue]): String = js.native
-  @JSImport("@stylable/core", "getStringValue")
-  @js.native
-  def getStringValue(nodes: ParsedValue): String = js.native
+  @scala.inline
+  def getStringValue(nodes: js.Array[ParsedValue]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStringValue")(nodes.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getStringValue(nodes: ParsedValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStringValue")(nodes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@stylable/core", "groupValues")
-  @js.native
-  def groupValues(nodes: js.Array[_]): js.Array[_] = js.native
-  @JSImport("@stylable/core", "groupValues")
-  @js.native
-  def groupValues(nodes: js.Array[_], divType: String): js.Array[_] = js.native
+  @scala.inline
+  def groupValues(nodes: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupValues")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def groupValues(nodes: js.Array[js.Any], divType: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupValues")(nodes.asInstanceOf[js.Any], divType.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@stylable/core", "isAsset")
-  @js.native
-  def isAsset(url: String): Boolean = js.native
+  @scala.inline
+  def isAsset(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsset")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core", "isCSSVarProp")
-  @js.native
-  def isCSSVarProp(value: String): Boolean = js.native
+  @scala.inline
+  def isCSSVarProp(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCSSVarProp")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core", "isChildOfAtRule")
-  @js.native
-  def isChildOfAtRule(rule: Container, atRuleName: String): Boolean = js.native
+  @scala.inline
+  def isChildOfAtRule(rule: Container, atRuleName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isChildOfAtRule")(rule.asInstanceOf[js.Any], atRuleName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core", "isCompRoot")
-  @js.native
-  def isCompRoot(name: String): RegExpMatchArray | Null = js.native
+  @scala.inline
+  def isCompRoot(name: String): RegExpMatchArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isCompRoot")(name.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray | Null]
   
-  @JSImport("@stylable/core", "isCssNativeFunction")
-  @js.native
-  def isCssNativeFunction(name: String): /* is @stylable/core.@stylable/core/cjs/native-reserved-lists.nativeFunctions */ Boolean = js.native
+  @scala.inline
+  def isCssNativeFunction(name: String): /* is @stylable/core.@stylable/core/cjs/native-reserved-lists.nativeFunctions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCssNativeFunction")(name.asInstanceOf[js.Any]).asInstanceOf[/* is @stylable/core.@stylable/core/cjs/native-reserved-lists.nativeFunctions */ Boolean]
   
-  @JSImport("@stylable/core", "isCustomValue")
-  @js.native
-  def isCustomValue(symbol: js.Any): /* is @stylable/core.@stylable/core/cjs/custom-values.JSValueExtension<unknown> */ Boolean = js.native
+  @scala.inline
+  def isCustomValue(symbol: js.Any): /* is @stylable/core.@stylable/core/cjs/custom-values.JSValueExtension<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCustomValue")(symbol.asInstanceOf[js.Any]).asInstanceOf[/* is @stylable/core.@stylable/core/cjs/custom-values.JSValueExtension<unknown> */ Boolean]
   
-  @JSImport("@stylable/core", "isExternal")
-  @js.native
-  def isExternal(url: String): Boolean = js.native
+  @scala.inline
+  def isExternal(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExternal")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core", "isGlobal")
-  @js.native
-  def isGlobal(node: SelectorAstNode): Boolean = js.native
+  @scala.inline
+  def isGlobal(node: SelectorAstNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGlobal")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core", "isImport")
-  @js.native
-  def isImport(ast: SelectorAstNode): Boolean = js.native
+  @scala.inline
+  def isImport(ast: SelectorAstNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImport")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core", "isInPath")
-  @js.native
+  @scala.inline
   def isInPath(
     extendPath: js.Array[CSSResolve[ClassSymbol | ElementSymbol]],
-    hasSymbolMeta: CSSResolve[ClassSymbol | ElementSymbol]
-  ): js.UndefOr[CSSResolve[ClassSymbol | ElementSymbol]] = js.native
+    hasHasName1HasSource1: CSSResolve[ClassSymbol | ElementSymbol]
+  ): js.UndefOr[CSSResolve[ClassSymbol | ElementSymbol]] = (^.asInstanceOf[js.Dynamic].applyDynamic("isInPath")(extendPath.asInstanceOf[js.Any], hasHasName1HasSource1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CSSResolve[ClassSymbol | ElementSymbol]]]
   
-  @JSImport("@stylable/core", "isNodeMatch")
-  @js.native
-  def isNodeMatch(nodeA: PartialSelectorAstNode, nodeB: PartialSelectorAstNode): Boolean = js.native
+  @scala.inline
+  def isNodeMatch(nodeA: PartialSelectorAstNode, nodeB: PartialSelectorAstNode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodeMatch")(nodeA.asInstanceOf[js.Any], nodeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core", "isRootValid")
-  @js.native
-  def isRootValid(ast: SelectorAstNode, rootName: String): Boolean = js.native
+  @scala.inline
+  def isRootValid(ast: SelectorAstNode, rootName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRootValid")(ast.asInstanceOf[js.Any], rootName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core", "isSimpleSelector")
-  @js.native
-  def isSimpleSelector(selectorAst: SelectorAstNode): Boolean | Unit = js.native
+  @scala.inline
+  def isSimpleSelector(selectorAst: SelectorAstNode): Boolean | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isSimpleSelector")(selectorAst.asInstanceOf[js.Any]).asInstanceOf[Boolean | Unit]
   
-  @JSImport("@stylable/core", "isValidClassName")
-  @js.native
-  def isValidClassName(className: String): Boolean = js.native
+  @scala.inline
+  def isValidClassName(className: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidClassName")(className.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core", "isValidDeclaration")
-  @js.native
-  def isValidDeclaration(decl: Declaration): Boolean = js.native
+  @scala.inline
+  def isValidDeclaration(decl: Declaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidDeclaration")(decl.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core", "listOptions")
-  @js.native
-  def listOptions(node: js.Any): js.Array[String] = js.native
+  @scala.inline
+  def listOptions(node: js.Any): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listOptions")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@stylable/core", "makeAbsolute")
-  @js.native
-  def makeAbsolute(resourcePath: String, rootContext: String, moduleContext: String): String = js.native
+  @scala.inline
+  def makeAbsolute(resourcePath: String, rootContext: String, moduleContext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAbsolute")(resourcePath.asInstanceOf[js.Any], rootContext.asInstanceOf[js.Any], moduleContext.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@stylable/core", "matchAtKeyframes")
-  @js.native
-  def matchAtKeyframes(selector: String): RegExpMatchArray | Null = js.native
+  @scala.inline
+  def matchAtKeyframes(selector: String): RegExpMatchArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("matchAtKeyframes")(selector.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray | Null]
   
-  @JSImport("@stylable/core", "matchAtMedia")
-  @js.native
-  def matchAtMedia(selector: String): RegExpMatchArray | Null = js.native
+  @scala.inline
+  def matchAtMedia(selector: String): RegExpMatchArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("matchAtMedia")(selector.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray | Null]
   
-  @JSImport("@stylable/core", "matchSelectorTarget")
-  @js.native
-  def matchSelectorTarget(sourceSelector: String, targetSelector: String): Boolean = js.native
+  @scala.inline
+  def matchSelectorTarget(sourceSelector: String, targetSelector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSelectorTarget")(sourceSelector.asInstanceOf[js.Any], targetSelector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core", "mergeChunks")
-  @js.native
-  def mergeChunks(chunks: js.Array[js.Array[SelectorChunk2]]): js.Any = js.native
+  @scala.inline
+  def mergeChunks(chunks: js.Array[js.Array[SelectorChunk2]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeChunks")(chunks.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@stylable/core", "mergeRules")
-  @js.native
-  def mergeRules(mixinAst: Root_, rule: Rule_): Rule_ = js.native
+  @scala.inline
+  def mergeRules(mixinAst: Root_, rule: Rule_): Rule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeRules")(mixinAst.asInstanceOf[js.Any], rule.asInstanceOf[js.Any])).asInstanceOf[Rule_]
   
   @JSImport("@stylable/core", "mixinDeclRegExp")
   @js.native
@@ -668,21 +574,21 @@ object mod {
   
   object mixinWarnings {
     
-    @JSImport("@stylable/core", "mixinWarnings.CIRCULAR_MIXIN")
+    @JSImport("@stylable/core", "mixinWarnings")
     @js.native
-    def CIRCULAR_MIXIN(circularPaths: js.Array[String]): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core", "mixinWarnings.FAILED_TO_APPLY_MIXIN")
-    @js.native
-    def FAILED_TO_APPLY_MIXIN(error: String): String = js.native
+    @scala.inline
+    def CIRCULAR_MIXIN(circularPaths: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CIRCULAR_MIXIN")(circularPaths.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "mixinWarnings.JS_MIXIN_NOT_A_FUNC")
-    @js.native
-    def JS_MIXIN_NOT_A_FUNC(): String = js.native
+    @scala.inline
+    def FAILED_TO_APPLY_MIXIN(error: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILED_TO_APPLY_MIXIN")(error.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "mixinWarnings.UNKNOWN_MIXIN_SYMBOL")
-    @js.native
-    def UNKNOWN_MIXIN_SYMBOL(name: String): String = js.native
+    @scala.inline
+    def JS_MIXIN_NOT_A_FUNC(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("JS_MIXIN_NOT_A_FUNC")().asInstanceOf[String]
+    
+    @scala.inline
+    def UNKNOWN_MIXIN_SYMBOL(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_MIXIN_SYMBOL")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object nativeFunctionsDic {
@@ -1082,78 +988,33 @@ object mod {
   @js.native
   val nativePseudoElements: js.Array[String] = js.native
   
-  @JSImport("@stylable/core", "noCollisionNamespace")
-  @js.native
-  def noCollisionNamespace(): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core", "noCollisionNamespace")
-  @js.native
-  def noCollisionNamespace(hasPrefixUsed: Prefix): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
+  @scala.inline
+  def noCollisionNamespace(): js.Function2[/* namespace */ String, /* source */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("noCollisionNamespace")().asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
+  def noCollisionNamespace(hasPrefixUsedNamespaces: Prefix): js.Function2[/* namespace */ String, /* source */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("noCollisionNamespace")(hasPrefixUsedNamespaces.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
   
-  @JSImport("@stylable/core", "packageNamespaceFactory")
-  @js.native
+  @scala.inline
   def packageNamespaceFactory(
     findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
     loadConfig: js.Function1[/* filePath */ String, js.Object],
     hasDirnameRelative: Dirname
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core", "packageNamespaceFactory")
-  @js.native
-  def packageNamespaceFactory(
-    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
-    loadConfig: js.Function1[/* filePath */ String, js.Object],
-    hasDirnameRelative: Dirname,
-    hashSalt: js.UndefOr[scala.Nothing],
-    prefix: js.UndefOr[scala.Nothing],
-    normalizeVersion: js.Function1[/* semver */ String, String]
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core", "packageNamespaceFactory")
-  @js.native
-  def packageNamespaceFactory(
-    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
-    loadConfig: js.Function1[/* filePath */ String, js.Object],
-    hasDirnameRelative: Dirname,
-    hashSalt: js.UndefOr[scala.Nothing],
-    prefix: String
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core", "packageNamespaceFactory")
-  @js.native
-  def packageNamespaceFactory(
-    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
-    loadConfig: js.Function1[/* filePath */ String, js.Object],
-    hasDirnameRelative: Dirname,
-    hashSalt: js.UndefOr[scala.Nothing],
-    prefix: String,
-    normalizeVersion: js.Function1[/* semver */ String, String]
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core", "packageNamespaceFactory")
-  @js.native
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
   def packageNamespaceFactory(
     findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
     loadConfig: js.Function1[/* filePath */ String, js.Object],
     hasDirnameRelative: Dirname,
     hashSalt: String
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core", "packageNamespaceFactory")
-  @js.native
-  def packageNamespaceFactory(
-    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
-    loadConfig: js.Function1[/* filePath */ String, js.Object],
-    hasDirnameRelative: Dirname,
-    hashSalt: String,
-    prefix: js.UndefOr[scala.Nothing],
-    normalizeVersion: js.Function1[/* semver */ String, String]
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core", "packageNamespaceFactory")
-  @js.native
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any], hashSalt.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
   def packageNamespaceFactory(
     findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
     loadConfig: js.Function1[/* filePath */ String, js.Object],
     hasDirnameRelative: Dirname,
     hashSalt: String,
     prefix: String
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core", "packageNamespaceFactory")
-  @js.native
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any], hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
   def packageNamespaceFactory(
     findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
     loadConfig: js.Function1[/* filePath */ String, js.Object],
@@ -1161,39 +1022,67 @@ object mod {
     hashSalt: String,
     prefix: String,
     normalizeVersion: js.Function1[/* semver */ String, String]
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any], hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], normalizeVersion.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
+  def packageNamespaceFactory(
+    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
+    loadConfig: js.Function1[/* filePath */ String, js.Object],
+    hasDirnameRelative: Dirname,
+    hashSalt: String,
+    prefix: Unit,
+    normalizeVersion: js.Function1[/* semver */ String, String]
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any], hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], normalizeVersion.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
+  def packageNamespaceFactory(
+    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
+    loadConfig: js.Function1[/* filePath */ String, js.Object],
+    hasDirnameRelative: Dirname,
+    hashSalt: Unit,
+    prefix: String
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any], hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
+  def packageNamespaceFactory(
+    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
+    loadConfig: js.Function1[/* filePath */ String, js.Object],
+    hasDirnameRelative: Dirname,
+    hashSalt: Unit,
+    prefix: String,
+    normalizeVersion: js.Function1[/* semver */ String, String]
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any], hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], normalizeVersion.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
+  def packageNamespaceFactory(
+    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
+    loadConfig: js.Function1[/* filePath */ String, js.Object],
+    hasDirnameRelative: Dirname,
+    hashSalt: Unit,
+    prefix: Unit,
+    normalizeVersion: js.Function1[/* semver */ String, String]
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any], hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], normalizeVersion.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
   
-  @JSImport("@stylable/core", "parseSelector")
-  @js.native
-  def parseSelector(selector: String): SelectorAstNode = js.native
+  @scala.inline
+  def parseSelector(selector: String): SelectorAstNode = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[SelectorAstNode]
   
-  @JSImport("@stylable/core", "process")
-  @js.native
-  def process(root: Root_): typings.stylableCore.stylableMetaMod.StylableMeta = js.native
-  @JSImport("@stylable/core", "process")
-  @js.native
+  @scala.inline
+  def process(root: Root_): typings.stylableCore.stylableMetaMod.StylableMeta = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(root.asInstanceOf[js.Any]).asInstanceOf[typings.stylableCore.stylableMetaMod.StylableMeta]
+  @scala.inline
   def process(
     root: Root_,
-    diagnostics: js.UndefOr[scala.Nothing],
+    diagnostics: Unit,
     resolveNamespace: js.Function2[/* namespace */ String, /* source */ String, String]
-  ): typings.stylableCore.stylableMetaMod.StylableMeta = js.native
-  @JSImport("@stylable/core", "process")
-  @js.native
-  def process(root: Root_, diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): typings.stylableCore.stylableMetaMod.StylableMeta = js.native
-  @JSImport("@stylable/core", "process")
-  @js.native
+  ): typings.stylableCore.stylableMetaMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(root.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], resolveNamespace.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableMetaMod.StylableMeta]
+  @scala.inline
+  def process(root: Root_, diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): typings.stylableCore.stylableMetaMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(root.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableMetaMod.StylableMeta]
+  @scala.inline
   def process(
     root: Root_,
     diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
     resolveNamespace: js.Function2[/* namespace */ String, /* source */ String, String]
-  ): typings.stylableCore.stylableMetaMod.StylableMeta = js.native
+  ): typings.stylableCore.stylableMetaMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(root.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], resolveNamespace.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableMetaMod.StylableMeta]
   
-  @JSImport("@stylable/core", "processDeclarationUrls")
-  @js.native
-  def processDeclarationUrls(decl: Declaration, onUrl: OnUrlCallback, transform: Boolean): Unit = js.native
+  @scala.inline
+  def processDeclarationUrls(decl: Declaration, onUrl: OnUrlCallback, transform: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("processDeclarationUrls")(decl.asInstanceOf[js.Any], onUrl.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@stylable/core", "processDeclarationValue")
-  @js.native
+  @scala.inline
   def processDeclarationValue(
     resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
     value: String,
@@ -1205,159 +1094,131 @@ object mod {
     passedThrough: js.UndefOr[js.Array[String]],
     cssVarsMapping: js.UndefOr[Record[String, String]],
     args: js.UndefOr[js.Array[String]]
-  ): OutputValue = js.native
+  ): OutputValue = (^.asInstanceOf[js.Dynamic].applyDynamic("processDeclarationValue")(resolver.asInstanceOf[js.Any], value.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], valueHook.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], passedThrough.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[OutputValue]
   
-  @JSImport("@stylable/core", "processNamespace")
-  @js.native
-  def processNamespace(namespace: String, source: String): String = js.native
+  @scala.inline
+  def processNamespace(namespace: String, source: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("processNamespace")(namespace.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object processorWarnings {
     
-    @JSImport("@stylable/core", "processorWarnings.CANNOT_EXTEND_IN_COMPLEX")
+    @JSImport("@stylable/core", "processorWarnings")
     @js.native
-    def CANNOT_EXTEND_IN_COMPLEX(): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core", "processorWarnings.CANNOT_RESOLVE_EXTEND")
-    @js.native
-    def CANNOT_RESOLVE_EXTEND(name: String): String = js.native
+    @scala.inline
+    def CANNOT_EXTEND_IN_COMPLEX(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_EXTEND_IN_COMPLEX")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.DEFAULT_IMPORT_IS_LOWER_CASE")
-    @js.native
-    def DEFAULT_IMPORT_IS_LOWER_CASE(): String = js.native
+    @scala.inline
+    def CANNOT_RESOLVE_EXTEND(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_RESOLVE_EXTEND")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.EMPTY_IMPORT_FROM")
-    @js.native
-    def EMPTY_IMPORT_FROM(): String = js.native
+    @scala.inline
+    def DEFAULT_IMPORT_IS_LOWER_CASE(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_IMPORT_IS_LOWER_CASE")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.EMPTY_NAMESPACE_DEF")
-    @js.native
-    def EMPTY_NAMESPACE_DEF(): String = js.native
+    @scala.inline
+    def EMPTY_IMPORT_FROM(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("EMPTY_IMPORT_FROM")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.FORBIDDEN_DEF_IN_COMPLEX_SELECTOR")
-    @js.native
-    def FORBIDDEN_DEF_IN_COMPLEX_SELECTOR(name: String): String = js.native
+    @scala.inline
+    def EMPTY_NAMESPACE_DEF(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("EMPTY_NAMESPACE_DEF")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.FROM_PROP_MISSING_IN_IMPORT")
-    @js.native
-    def FROM_PROP_MISSING_IN_IMPORT(): String = js.native
+    @scala.inline
+    def FORBIDDEN_DEF_IN_COMPLEX_SELECTOR(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FORBIDDEN_DEF_IN_COMPLEX_SELECTOR")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.GLOBAL_CSS_VAR_MISSING_COMMA")
-    @js.native
-    def GLOBAL_CSS_VAR_MISSING_COMMA(name: String): String = js.native
+    @scala.inline
+    def FROM_PROP_MISSING_IN_IMPORT(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FROM_PROP_MISSING_IN_IMPORT")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.ILLEGAL_CSS_VAR_ARGS")
-    @js.native
-    def ILLEGAL_CSS_VAR_ARGS(name: String): String = js.native
+    @scala.inline
+    def GLOBAL_CSS_VAR_MISSING_COMMA(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GLOBAL_CSS_VAR_MISSING_COMMA")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.ILLEGAL_CSS_VAR_USE")
-    @js.native
-    def ILLEGAL_CSS_VAR_USE(name: String): String = js.native
+    @scala.inline
+    def ILLEGAL_CSS_VAR_ARGS(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ILLEGAL_CSS_VAR_ARGS")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.ILLEGAL_GLOBAL_CSS_VAR")
-    @js.native
-    def ILLEGAL_GLOBAL_CSS_VAR(name: String): String = js.native
+    @scala.inline
+    def ILLEGAL_CSS_VAR_USE(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ILLEGAL_CSS_VAR_USE")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.ILLEGAL_PROP_IN_IMPORT")
-    @js.native
-    def ILLEGAL_PROP_IN_IMPORT(propName: String): String = js.native
+    @scala.inline
+    def ILLEGAL_GLOBAL_CSS_VAR(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ILLEGAL_GLOBAL_CSS_VAR")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.INVALID_NAMESPACE_DEF")
-    @js.native
-    def INVALID_NAMESPACE_DEF(): String = js.native
+    @scala.inline
+    def ILLEGAL_PROP_IN_IMPORT(propName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ILLEGAL_PROP_IN_IMPORT")(propName.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.MISSING_SCOPING_PARAM")
-    @js.native
-    def MISSING_SCOPING_PARAM(): String = js.native
+    @scala.inline
+    def INVALID_NAMESPACE_DEF(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("INVALID_NAMESPACE_DEF")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.MULTIPLE_FROM_IN_IMPORT")
-    @js.native
-    def MULTIPLE_FROM_IN_IMPORT(): String = js.native
+    @scala.inline
+    def MISSING_SCOPING_PARAM(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MISSING_SCOPING_PARAM")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.NO_IMPORT_IN_ST_SCOPE")
-    @js.native
-    def NO_IMPORT_IN_ST_SCOPE(): String = js.native
+    @scala.inline
+    def MULTIPLE_FROM_IN_IMPORT(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MULTIPLE_FROM_IN_IMPORT")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.NO_KEYFRAMES_IN_ST_SCOPE")
-    @js.native
-    def NO_KEYFRAMES_IN_ST_SCOPE(): String = js.native
+    @scala.inline
+    def NO_IMPORT_IN_ST_SCOPE(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("NO_IMPORT_IN_ST_SCOPE")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.NO_VARS_DEF_IN_ST_SCOPE")
-    @js.native
-    def NO_VARS_DEF_IN_ST_SCOPE(): String = js.native
+    @scala.inline
+    def NO_KEYFRAMES_IN_ST_SCOPE(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("NO_KEYFRAMES_IN_ST_SCOPE")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.OVERRIDE_MIXIN")
-    @js.native
-    def OVERRIDE_MIXIN(mixinType: String): String = js.native
+    @scala.inline
+    def NO_VARS_DEF_IN_ST_SCOPE(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("NO_VARS_DEF_IN_ST_SCOPE")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.OVERRIDE_TYPED_RULE")
-    @js.native
-    def OVERRIDE_TYPED_RULE(key: String, name: String): String = js.native
+    @scala.inline
+    def OVERRIDE_MIXIN(mixinType: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("OVERRIDE_MIXIN")(mixinType.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.PARTIAL_MIXIN_MISSING_ARGUMENTS")
-    @js.native
-    def PARTIAL_MIXIN_MISSING_ARGUMENTS(`type`: String): String = js.native
+    @scala.inline
+    def OVERRIDE_TYPED_RULE(key: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("OVERRIDE_TYPED_RULE")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.REDECLARE_SYMBOL")
-    @js.native
-    def REDECLARE_SYMBOL(name: String): String = js.native
+    @scala.inline
+    def PARTIAL_MIXIN_MISSING_ARGUMENTS(`type`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("PARTIAL_MIXIN_MISSING_ARGUMENTS")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.REDECLARE_SYMBOL_KEYFRAMES")
-    @js.native
-    def REDECLARE_SYMBOL_KEYFRAMES(name: String): String = js.native
+    @scala.inline
+    def REDECLARE_SYMBOL(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("REDECLARE_SYMBOL")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.ROOT_AFTER_SPACING")
-    @js.native
-    def ROOT_AFTER_SPACING(): String = js.native
+    @scala.inline
+    def REDECLARE_SYMBOL_KEYFRAMES(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("REDECLARE_SYMBOL_KEYFRAMES")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.STATE_DEFINITION_IN_COMPLEX")
-    @js.native
-    def STATE_DEFINITION_IN_COMPLEX(): String = js.native
+    @scala.inline
+    def ROOT_AFTER_SPACING(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ROOT_AFTER_SPACING")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.STATE_DEFINITION_IN_ELEMENT")
-    @js.native
-    def STATE_DEFINITION_IN_ELEMENT(): String = js.native
+    @scala.inline
+    def STATE_DEFINITION_IN_COMPLEX(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("STATE_DEFINITION_IN_COMPLEX")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.UNKNOWN_MIXIN")
-    @js.native
-    def UNKNOWN_MIXIN(name: String): String = js.native
+    @scala.inline
+    def STATE_DEFINITION_IN_ELEMENT(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("STATE_DEFINITION_IN_ELEMENT")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.UNSCOPED_CLASS")
-    @js.native
-    def UNSCOPED_CLASS(name: String): String = js.native
+    @scala.inline
+    def UNKNOWN_MIXIN(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_MIXIN")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "processorWarnings.UNSCOPED_ELEMENT")
-    @js.native
-    def UNSCOPED_ELEMENT(name: String): String = js.native
+    @scala.inline
+    def UNSCOPED_CLASS(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSCOPED_CLASS")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def UNSCOPED_ELEMENT(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSCOPED_ELEMENT")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object pseudoStates {
+    
+    @JSImport("@stylable/core", "pseudoStates")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("@stylable/core", "pseudoStates.booleanStateDelimiter")
     @js.native
     val booleanStateDelimiter: /* "--" */ String = js.native
     
-    @JSImport("@stylable/core", "pseudoStates.createAttributeState")
-    @js.native
-    def createAttributeState(stateName: String, namespace: String, param: String): String = js.native
+    @scala.inline
+    def createAttributeState(stateName: String, namespace: String, param: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createAttributeState")(stateName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "pseudoStates.createBooleanStateClassName")
-    @js.native
-    def createBooleanStateClassName(stateName: String, namespace: String): String = js.native
+    @scala.inline
+    def createBooleanStateClassName(stateName: String, namespace: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createBooleanStateClassName")(stateName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "pseudoStates.createStateWithParamClassName")
-    @js.native
-    def createStateWithParamClassName(stateName: String, namespace: String, param: String): String = js.native
+    @scala.inline
+    def createStateWithParamClassName(stateName: String, namespace: String, param: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createStateWithParamClassName")(stateName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "pseudoStates.processPseudoStates")
-    @js.native
-    def processPseudoStates(value: String, decl: Declaration, diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): MappedStates = js.native
+    @scala.inline
+    def processPseudoStates(value: String, decl: Declaration, diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): MappedStates = (^.asInstanceOf[js.Dynamic].applyDynamic("processPseudoStates")(value.asInstanceOf[js.Any], decl.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[MappedStates]
     
-    @JSImport("@stylable/core", "pseudoStates.resolveStateParam")
-    @js.native
-    def resolveStateParam(param: String): String = js.native
+    @scala.inline
+    def resolveStateParam(param: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveStateParam")(param.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "pseudoStates.setStateToNode")
-    @js.native
+    @scala.inline
     def setStateToNode(
       states: MappedStates,
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
@@ -1366,9 +1227,8 @@ object mod {
       namespace: String,
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics
-    ): Unit = js.native
-    @JSImport("@stylable/core", "pseudoStates.setStateToNode")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStateToNode")(states.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def setStateToNode(
       states: MappedStates,
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
@@ -1378,33 +1238,31 @@ object mod {
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
       rule: Rule_
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStateToNode")(states.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], name.asInstanceOf[js.Any], node.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     object stateErrors {
       
-      @JSImport("@stylable/core", "pseudoStates.stateErrors.NO_STATE_TYPE_GIVEN")
+      @JSImport("@stylable/core", "pseudoStates.stateErrors")
       @js.native
-      def NO_STATE_TYPE_GIVEN(name: String): String = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("@stylable/core", "pseudoStates.stateErrors.STATE_STARTS_WITH_HYPHEN")
-      @js.native
-      def STATE_STARTS_WITH_HYPHEN(name: String): String = js.native
+      @scala.inline
+      def NO_STATE_TYPE_GIVEN(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("NO_STATE_TYPE_GIVEN")(name.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSImport("@stylable/core", "pseudoStates.stateErrors.TOO_MANY_ARGS_IN_VALIDATOR")
-      @js.native
-      def TOO_MANY_ARGS_IN_VALIDATOR(name: String, validator: String, args: js.Array[String]): String = js.native
+      @scala.inline
+      def STATE_STARTS_WITH_HYPHEN(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("STATE_STARTS_WITH_HYPHEN")(name.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSImport("@stylable/core", "pseudoStates.stateErrors.TOO_MANY_STATE_TYPES")
-      @js.native
-      def TOO_MANY_STATE_TYPES(name: String, types: js.Array[String]): String = js.native
+      @scala.inline
+      def TOO_MANY_ARGS_IN_VALIDATOR(name: String, validator: String, args: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("TOO_MANY_ARGS_IN_VALIDATOR")(name.asInstanceOf[js.Any], validator.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
       
-      @JSImport("@stylable/core", "pseudoStates.stateErrors.UNKNOWN_STATE_TYPE")
-      @js.native
-      def UNKNOWN_STATE_TYPE(name: String, `type`: String): String = js.native
+      @scala.inline
+      def TOO_MANY_STATE_TYPES(name: String, types: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("TOO_MANY_STATE_TYPES")(name.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String]
       
-      @JSImport("@stylable/core", "pseudoStates.stateErrors.UNKNOWN_STATE_USAGE")
-      @js.native
-      def UNKNOWN_STATE_USAGE(name: String): String = js.native
+      @scala.inline
+      def UNKNOWN_STATE_TYPE(name: String, `type`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_STATE_TYPE")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
+      
+      @scala.inline
+      def UNKNOWN_STATE_USAGE(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_STATE_USAGE")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     }
     
     @JSImport("@stylable/core", "pseudoStates.stateMiddleDelimiter")
@@ -1415,8 +1273,7 @@ object mod {
     @js.native
     val stateWithParamDelimiter: String = js.native
     
-    @JSImport("@stylable/core", "pseudoStates.transformPseudoStateSelector")
-    @js.native
+    @scala.inline
     def transformPseudoStateSelector(
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
       node: SelectorAstNode,
@@ -1426,9 +1283,8 @@ object mod {
       originSymbol: ClassSymbol,
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics
-    ): typings.stylableCore.stylableProcessorMod.StylableMeta = js.native
-    @JSImport("@stylable/core", "pseudoStates.transformPseudoStateSelector")
-    @js.native
+    ): typings.stylableCore.stylableProcessorMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableProcessorMod.StylableMeta]
+    @scala.inline
     def transformPseudoStateSelector(
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
       node: SelectorAstNode,
@@ -1439,9 +1295,8 @@ object mod {
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
       rule: Rule_
-    ): typings.stylableCore.stylableProcessorMod.StylableMeta = js.native
-    @JSImport("@stylable/core", "pseudoStates.transformPseudoStateSelector")
-    @js.native
+    ): typings.stylableCore.stylableProcessorMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableProcessorMod.StylableMeta]
+    @scala.inline
     def transformPseudoStateSelector(
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
       node: SelectorAstNode,
@@ -1451,9 +1306,8 @@ object mod {
       originSymbol: ElementSymbol,
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics
-    ): typings.stylableCore.stylableProcessorMod.StylableMeta = js.native
-    @JSImport("@stylable/core", "pseudoStates.transformPseudoStateSelector")
-    @js.native
+    ): typings.stylableCore.stylableProcessorMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableProcessorMod.StylableMeta]
+    @scala.inline
     def transformPseudoStateSelector(
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
       node: SelectorAstNode,
@@ -1464,9 +1318,8 @@ object mod {
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
       rule: Rule_
-    ): typings.stylableCore.stylableProcessorMod.StylableMeta = js.native
-    @JSImport("@stylable/core", "pseudoStates.transformPseudoStateSelector")
-    @js.native
+    ): typings.stylableCore.stylableProcessorMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableProcessorMod.StylableMeta]
+    @scala.inline
     def transformPseudoStateSelector(
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
       node: SelectorAstNode,
@@ -1476,9 +1329,8 @@ object mod {
       originSymbol: ClassSymbol,
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics
-    ): typings.stylableCore.stylableProcessorMod.StylableMeta = js.native
-    @JSImport("@stylable/core", "pseudoStates.transformPseudoStateSelector")
-    @js.native
+    ): typings.stylableCore.stylableProcessorMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableProcessorMod.StylableMeta]
+    @scala.inline
     def transformPseudoStateSelector(
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
       node: SelectorAstNode,
@@ -1489,9 +1341,8 @@ object mod {
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
       rule: Rule_
-    ): typings.stylableCore.stylableProcessorMod.StylableMeta = js.native
-    @JSImport("@stylable/core", "pseudoStates.transformPseudoStateSelector")
-    @js.native
+    ): typings.stylableCore.stylableProcessorMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableProcessorMod.StylableMeta]
+    @scala.inline
     def transformPseudoStateSelector(
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
       node: SelectorAstNode,
@@ -1501,9 +1352,8 @@ object mod {
       originSymbol: ElementSymbol,
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics
-    ): typings.stylableCore.stylableProcessorMod.StylableMeta = js.native
-    @JSImport("@stylable/core", "pseudoStates.transformPseudoStateSelector")
-    @js.native
+    ): typings.stylableCore.stylableProcessorMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableProcessorMod.StylableMeta]
+    @scala.inline
     def transformPseudoStateSelector(
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
       node: SelectorAstNode,
@@ -1514,54 +1364,49 @@ object mod {
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
       rule: Rule_
-    ): typings.stylableCore.stylableProcessorMod.StylableMeta = js.native
+    ): typings.stylableCore.stylableProcessorMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPseudoStateSelector")(meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], originSymbol.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableProcessorMod.StylableMeta]
     
-    @JSImport("@stylable/core", "pseudoStates.validateStateArgument")
-    @js.native
+    @scala.inline
     def validateStateArgument(
       stateAst: StateParsedValue,
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
       value: String,
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics
-    ): StateResult = js.native
-    @JSImport("@stylable/core", "pseudoStates.validateStateArgument")
-    @js.native
+    ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[StateResult]
+    @scala.inline
     def validateStateArgument(
       stateAst: StateParsedValue,
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
       value: String,
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
-      rule: js.UndefOr[scala.Nothing],
-      validateDefinition: js.UndefOr[scala.Nothing],
-      validateValue: Boolean
-    ): StateResult = js.native
-    @JSImport("@stylable/core", "pseudoStates.validateStateArgument")
-    @js.native
-    def validateStateArgument(
-      stateAst: StateParsedValue,
-      meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
-      value: String,
-      resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
-      diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
-      rule: js.UndefOr[scala.Nothing],
+      rule: Unit,
       validateDefinition: Boolean
-    ): StateResult = js.native
-    @JSImport("@stylable/core", "pseudoStates.validateStateArgument")
-    @js.native
+    ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], validateDefinition.asInstanceOf[js.Any])).asInstanceOf[StateResult]
+    @scala.inline
     def validateStateArgument(
       stateAst: StateParsedValue,
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
       value: String,
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
-      rule: js.UndefOr[scala.Nothing],
+      rule: Unit,
       validateDefinition: Boolean,
       validateValue: Boolean
-    ): StateResult = js.native
-    @JSImport("@stylable/core", "pseudoStates.validateStateArgument")
-    @js.native
+    ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], validateDefinition.asInstanceOf[js.Any], validateValue.asInstanceOf[js.Any])).asInstanceOf[StateResult]
+    @scala.inline
+    def validateStateArgument(
+      stateAst: StateParsedValue,
+      meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
+      value: String,
+      resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
+      diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
+      rule: Unit,
+      validateDefinition: Unit,
+      validateValue: Boolean
+    ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], validateDefinition.asInstanceOf[js.Any], validateValue.asInstanceOf[js.Any])).asInstanceOf[StateResult]
+    @scala.inline
     def validateStateArgument(
       stateAst: StateParsedValue,
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
@@ -1569,21 +1414,8 @@ object mod {
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
       rule: Rule_
-    ): StateResult = js.native
-    @JSImport("@stylable/core", "pseudoStates.validateStateArgument")
-    @js.native
-    def validateStateArgument(
-      stateAst: StateParsedValue,
-      meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
-      value: String,
-      resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
-      diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
-      rule: Rule_,
-      validateDefinition: js.UndefOr[scala.Nothing],
-      validateValue: Boolean
-    ): StateResult = js.native
-    @JSImport("@stylable/core", "pseudoStates.validateStateArgument")
-    @js.native
+    ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any])).asInstanceOf[StateResult]
+    @scala.inline
     def validateStateArgument(
       stateAst: StateParsedValue,
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
@@ -1592,9 +1424,8 @@ object mod {
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
       rule: Rule_,
       validateDefinition: Boolean
-    ): StateResult = js.native
-    @JSImport("@stylable/core", "pseudoStates.validateStateArgument")
-    @js.native
+    ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], validateDefinition.asInstanceOf[js.Any])).asInstanceOf[StateResult]
+    @scala.inline
     def validateStateArgument(
       stateAst: StateParsedValue,
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
@@ -1604,82 +1435,85 @@ object mod {
       rule: Rule_,
       validateDefinition: Boolean,
       validateValue: Boolean
-    ): StateResult = js.native
+    ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], validateDefinition.asInstanceOf[js.Any], validateValue.asInstanceOf[js.Any])).asInstanceOf[StateResult]
+    @scala.inline
+    def validateStateArgument(
+      stateAst: StateParsedValue,
+      meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
+      value: String,
+      resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
+      diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
+      rule: Rule_,
+      validateDefinition: Unit,
+      validateValue: Boolean
+    ): StateResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateArgument")(stateAst.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], value.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], validateDefinition.asInstanceOf[js.Any], validateValue.asInstanceOf[js.Any])).asInstanceOf[StateResult]
     
-    @JSImport("@stylable/core", "pseudoStates.validateStateDefinition")
-    @js.native
+    @scala.inline
     def validateStateDefinition(
       decl: Declaration,
       meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
       resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
       diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateStateDefinition")(decl.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("@stylable/core", "removeSTDirective")
-  @js.native
-  def removeSTDirective(root: Root_): Unit = js.native
+  @scala.inline
+  def removeSTDirective(root: Root_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSTDirective")(root.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@stylable/core", "removeUnusedRules")
-  @js.native
+  @scala.inline
   def removeUnusedRules(
     ast: Root_,
     meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
     _import: Imported,
     usedFiles: js.Array[String],
     resolvePath: js.Function2[/* ctx */ String, /* path */ String, String]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUnusedRules")(ast.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], _import.asInstanceOf[js.Any], usedFiles.asInstanceOf[js.Any], resolvePath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@stylable/core", "reservedKeyFrames")
   @js.native
   val reservedKeyFrames: js.Array[String] = js.native
   
-  @JSImport("@stylable/core", "resolveArgumentsValue")
-  @js.native
+  @scala.inline
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: typings.stylableCore.stylableTransformerMod.StylableTransformer,
     meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
     diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
     node: Node
-  ): Record[String, String] = js.native
-  @JSImport("@stylable/core", "resolveArgumentsValue")
-  @js.native
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: typings.stylableCore.stylableTransformerMod.StylableTransformer,
     meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
     diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
     node: Node,
-    variableOverride: js.UndefOr[scala.Nothing],
-    path: js.UndefOr[scala.Nothing],
-    cssVarsMapping: Record[String, String]
-  ): Record[String, String] = js.native
-  @JSImport("@stylable/core", "resolveArgumentsValue")
-  @js.native
-  def resolveArgumentsValue(
-    options: Record[String, String],
-    transformer: typings.stylableCore.stylableTransformerMod.StylableTransformer,
-    meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
-    diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
-    node: Node,
-    variableOverride: js.UndefOr[scala.Nothing],
+    variableOverride: Unit,
     path: js.Array[String]
-  ): Record[String, String] = js.native
-  @JSImport("@stylable/core", "resolveArgumentsValue")
-  @js.native
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: typings.stylableCore.stylableTransformerMod.StylableTransformer,
     meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
     diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
     node: Node,
-    variableOverride: js.UndefOr[scala.Nothing],
+    variableOverride: Unit,
     path: js.Array[String],
     cssVarsMapping: Record[String, String]
-  ): Record[String, String] = js.native
-  @JSImport("@stylable/core", "resolveArgumentsValue")
-  @js.native
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], path.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
+  def resolveArgumentsValue(
+    options: Record[String, String],
+    transformer: typings.stylableCore.stylableTransformerMod.StylableTransformer,
+    meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
+    diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
+    node: Node,
+    variableOverride: Unit,
+    path: Unit,
+    cssVarsMapping: Record[String, String]
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], path.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: typings.stylableCore.stylableTransformerMod.StylableTransformer,
@@ -1687,21 +1521,8 @@ object mod {
     diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
     node: Node,
     variableOverride: Record[String, String]
-  ): Record[String, String] = js.native
-  @JSImport("@stylable/core", "resolveArgumentsValue")
-  @js.native
-  def resolveArgumentsValue(
-    options: Record[String, String],
-    transformer: typings.stylableCore.stylableTransformerMod.StylableTransformer,
-    meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
-    diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
-    node: Node,
-    variableOverride: Record[String, String],
-    path: js.UndefOr[scala.Nothing],
-    cssVarsMapping: Record[String, String]
-  ): Record[String, String] = js.native
-  @JSImport("@stylable/core", "resolveArgumentsValue")
-  @js.native
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: typings.stylableCore.stylableTransformerMod.StylableTransformer,
@@ -1710,9 +1531,8 @@ object mod {
     node: Node,
     variableOverride: Record[String, String],
     path: js.Array[String]
-  ): Record[String, String] = js.native
-  @JSImport("@stylable/core", "resolveArgumentsValue")
-  @js.native
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: typings.stylableCore.stylableTransformerMod.StylableTransformer,
@@ -1722,24 +1542,36 @@ object mod {
     variableOverride: Record[String, String],
     path: js.Array[String],
     cssVarsMapping: Record[String, String]
-  ): Record[String, String] = js.native
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], path.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
+  def resolveArgumentsValue(
+    options: Record[String, String],
+    transformer: typings.stylableCore.stylableTransformerMod.StylableTransformer,
+    meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
+    diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics,
+    node: Node,
+    variableOverride: Record[String, String],
+    path: Unit,
+    cssVarsMapping: Record[String, String]
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], path.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
   
-  @JSImport("@stylable/core", "resolveCustomValues")
-  @js.native
+  @scala.inline
   def resolveCustomValues(
     meta: typings.stylableCore.stylableMetaMod.StylableMeta,
     resolver: typings.stylableCore.stylableResolverMod.StylableResolver
-  ): StringDictionary[CustomValueExtension[_]] = js.native
+  ): StringDictionary[CustomValueExtension[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveCustomValues")(meta.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[CustomValueExtension[js.Any]]]
   
   object resolverWarnings {
     
-    @JSImport("@stylable/core", "resolverWarnings.UNKNOWN_IMPORTED_FILE")
+    @JSImport("@stylable/core", "resolverWarnings")
     @js.native
-    def UNKNOWN_IMPORTED_FILE(path: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core", "resolverWarnings.UNKNOWN_IMPORTED_SYMBOL")
-    @js.native
-    def UNKNOWN_IMPORTED_SYMBOL(name: String, path: String): String = js.native
+    @scala.inline
+    def UNKNOWN_IMPORTED_FILE(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_IMPORTED_FILE")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def UNKNOWN_IMPORTED_SYMBOL(name: String, path: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_IMPORTED_SYMBOL")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   object rootValueMapping {
@@ -1747,6 +1579,10 @@ object mod {
     @JSImport("@stylable/core", "rootValueMapping")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("@stylable/core", "rootValueMapping.import")
+    @js.native
+    val `import`: Colonimport = js.native
     
     @JSImport("@stylable/core", "rootValueMapping.namespace")
     @js.native
@@ -1765,41 +1601,30 @@ object mod {
     def vars: Colonvars = js.native
     @scala.inline
     def vars_=(x: Colonvars): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vars")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@stylable/core", "rootValueMapping.import")
-    @js.native
-    val `import`: Colonimport = js.native
   }
   
-  @JSImport("@stylable/core", "safeParse")
-  @js.native
-  def safeParse(css: String): Root_ = js.native
-  @JSImport("@stylable/core", "safeParse")
-  @js.native
-  def safeParse(css: String, options: ProcessOptions): Root_ = js.native
+  @scala.inline
+  def safeParse(css: String): Root_ = ^.asInstanceOf[js.Dynamic].applyDynamic("safeParse")(css.asInstanceOf[js.Any]).asInstanceOf[Root_]
+  @scala.inline
+  def safeParse(css: String, options: ProcessOptions): Root_ = (^.asInstanceOf[js.Dynamic].applyDynamic("safeParse")(css.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root_]
   
-  @JSImport("@stylable/core", "scopeCSSVar")
-  @js.native
+  @scala.inline
   def scopeCSSVar(
     resolver: typings.stylableCore.stylableResolverMod.StylableResolver,
     meta: typings.stylableCore.stylableProcessorMod.StylableMeta,
     symbolName: String
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scopeCSSVar")(resolver.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], symbolName.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@stylable/core", "scopeSelector")
-  @js.native
-  def scopeSelector(scopeSelectorRule: String, targetSelectorRule: String): Selector = js.native
-  @JSImport("@stylable/core", "scopeSelector")
-  @js.native
-  def scopeSelector(scopeSelectorRule: String, targetSelectorRule: String, rootScopeLevel: Boolean): Selector = js.native
+  @scala.inline
+  def scopeSelector(scopeSelectorRule: String, targetSelectorRule: String): Selector = (^.asInstanceOf[js.Dynamic].applyDynamic("scopeSelector")(scopeSelectorRule.asInstanceOf[js.Any], targetSelectorRule.asInstanceOf[js.Any])).asInstanceOf[Selector]
+  @scala.inline
+  def scopeSelector(scopeSelectorRule: String, targetSelectorRule: String, rootScopeLevel: Boolean): Selector = (^.asInstanceOf[js.Dynamic].applyDynamic("scopeSelector")(scopeSelectorRule.asInstanceOf[js.Any], targetSelectorRule.asInstanceOf[js.Any], rootScopeLevel.asInstanceOf[js.Any])).asInstanceOf[Selector]
   
-  @JSImport("@stylable/core", "separateChunks")
-  @js.native
-  def separateChunks(selectorNode: SelectorAstNode): js.Array[js.Array[SelectorChunk]] = js.native
+  @scala.inline
+  def separateChunks(selectorNode: SelectorAstNode): js.Array[js.Array[SelectorChunk]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separateChunks")(selectorNode.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[SelectorChunk]]]
   
-  @JSImport("@stylable/core", "separateChunks2")
-  @js.native
-  def separateChunks2(selectorNode: SelectorAstNode): js.Array[js.Array[SelectorChunk2]] = js.native
+  @scala.inline
+  def separateChunks2(selectorNode: SelectorAstNode): js.Array[js.Array[SelectorChunk2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separateChunks2")(selectorNode.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[SelectorChunk2]]]
   
   @JSImport("@stylable/core", "stTypes")
   @js.native
@@ -1815,101 +1640,85 @@ object mod {
   
   object strategies {
     
-    @JSImport("@stylable/core", "strategies.args")
+    @JSImport("@stylable/core", "strategies")
     @js.native
-    def args(node: js.Any): js.Array[Value] = js.native
-    @JSImport("@stylable/core", "strategies.args")
-    @js.native
-    def args(node: js.Any, reportWarning: ReportWarning): js.Array[Value] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core", "strategies.named")
-    @js.native
-    def named(node: js.Any): Record[String, String] = js.native
-    @JSImport("@stylable/core", "strategies.named")
-    @js.native
-    def named(node: js.Any, reportWarning: ReportWarning): Record[String, String] = js.native
+    @scala.inline
+    def args(node: js.Any): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("args")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Value]]
+    @scala.inline
+    def args(node: js.Any, reportWarning: ReportWarning): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("args")(node.asInstanceOf[js.Any], reportWarning.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
+    
+    @scala.inline
+    def named(node: js.Any): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("named")(node.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
+    @scala.inline
+    def named(node: js.Any, reportWarning: ReportWarning): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("named")(node.asInstanceOf[js.Any], reportWarning.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
   }
   
-  @JSImport("@stylable/core", "stringifySelector")
-  @js.native
-  def stringifySelector(ast: SelectorAstNode): String = js.native
+  @scala.inline
+  def stringifySelector(ast: SelectorAstNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifySelector")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@stylable/core", "systemValidators")
   @js.native
   val systemValidators: Record[String, StateParamType] = js.native
   
-  @JSImport("@stylable/core", "transformMatchesOnRule")
-  @js.native
-  def transformMatchesOnRule(rule: Rule_, lineBreak: Boolean): String = js.native
+  @scala.inline
+  def transformMatchesOnRule(rule: Rule_, lineBreak: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformMatchesOnRule")(rule.asInstanceOf[js.Any], lineBreak.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object transformerWarnings {
     
-    @JSImport("@stylable/core", "transformerWarnings.CANNOT_EXTEND_JS")
+    @JSImport("@stylable/core", "transformerWarnings")
     @js.native
-    def CANNOT_EXTEND_JS(): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core", "transformerWarnings.CANNOT_EXTEND_UNKNOWN_SYMBOL")
-    @js.native
-    def CANNOT_EXTEND_UNKNOWN_SYMBOL(name: String): String = js.native
+    @scala.inline
+    def CANNOT_EXTEND_JS(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_EXTEND_JS")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "transformerWarnings.IMPORT_ISNT_EXTENDABLE")
-    @js.native
-    def IMPORT_ISNT_EXTENDABLE(): String = js.native
+    @scala.inline
+    def CANNOT_EXTEND_UNKNOWN_SYMBOL(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_EXTEND_UNKNOWN_SYMBOL")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "transformerWarnings.KEYFRAME_NAME_RESERVED")
-    @js.native
-    def KEYFRAME_NAME_RESERVED(name: String): String = js.native
+    @scala.inline
+    def IMPORT_ISNT_EXTENDABLE(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("IMPORT_ISNT_EXTENDABLE")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "transformerWarnings.UNKNOWN_IMPORT_ALIAS")
-    @js.native
-    def UNKNOWN_IMPORT_ALIAS(name: String): String = js.native
+    @scala.inline
+    def KEYFRAME_NAME_RESERVED(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("KEYFRAME_NAME_RESERVED")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "transformerWarnings.UNKNOWN_PSEUDO_ELEMENT")
-    @js.native
-    def UNKNOWN_PSEUDO_ELEMENT(name: String): String = js.native
+    @scala.inline
+    def UNKNOWN_IMPORT_ALIAS(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_IMPORT_ALIAS")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def UNKNOWN_PSEUDO_ELEMENT(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_PSEUDO_ELEMENT")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @JSImport("@stylable/core", "traverseNode")
-  @js.native
-  def traverseNode(node: SelectorAstNode, visitor: Visitor): Boolean | Unit = js.native
-  @JSImport("@stylable/core", "traverseNode")
-  @js.native
-  def traverseNode(
-    node: SelectorAstNode,
-    visitor: Visitor,
-    index: js.UndefOr[scala.Nothing],
-    nodes: js.Array[SelectorAstNode]
-  ): Boolean | Unit = js.native
-  @JSImport("@stylable/core", "traverseNode")
-  @js.native
-  def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Double): Boolean | Unit = js.native
-  @JSImport("@stylable/core", "traverseNode")
-  @js.native
-  def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Double, nodes: js.Array[SelectorAstNode]): Boolean | Unit = js.native
+  @scala.inline
+  def traverseNode(node: SelectorAstNode, visitor: Visitor): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
+  @scala.inline
+  def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Double): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
+  @scala.inline
+  def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Double, nodes: js.Array[SelectorAstNode]): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], index.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
+  @scala.inline
+  def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Unit, nodes: js.Array[SelectorAstNode]): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], index.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
   
-  @JSImport("@stylable/core", "unbox")
-  @js.native
-  def unbox[B /* <: Box_[String, _] */](boxed: B): js.Any = js.native
-  @JSImport("@stylable/core", "unbox")
-  @js.native
-  def unbox[B /* <: Box_[String, _] */](boxed: String): js.Any = js.native
+  @scala.inline
+  def unbox[B /* <: Box_[String, js.Any] */](boxed: B): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unbox")(boxed.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def unbox[B /* <: Box_[String, js.Any] */](boxed: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unbox")(boxed.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@stylable/core", "validateAllowedNodesUntil")
-  @js.native
-  def validateAllowedNodesUntil(node: ParsedValue, i: Double): Boolean = js.native
-  @JSImport("@stylable/core", "validateAllowedNodesUntil")
-  @js.native
-  def validateAllowedNodesUntil(node: ParsedValue, i: Double, untilType: js.UndefOr[scala.Nothing], allowed: js.Array[String]): Boolean = js.native
-  @JSImport("@stylable/core", "validateAllowedNodesUntil")
-  @js.native
-  def validateAllowedNodesUntil(node: ParsedValue, i: Double, untilType: String): Boolean = js.native
-  @JSImport("@stylable/core", "validateAllowedNodesUntil")
-  @js.native
-  def validateAllowedNodesUntil(node: ParsedValue, i: Double, untilType: String, allowed: js.Array[String]): Boolean = js.native
+  @scala.inline
+  def validateAllowedNodesUntil(node: ParsedValue, i: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateAllowedNodesUntil")(node.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def validateAllowedNodesUntil(node: ParsedValue, i: Double, untilType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateAllowedNodesUntil")(node.asInstanceOf[js.Any], i.asInstanceOf[js.Any], untilType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def validateAllowedNodesUntil(node: ParsedValue, i: Double, untilType: String, allowed: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateAllowedNodesUntil")(node.asInstanceOf[js.Any], i.asInstanceOf[js.Any], untilType.asInstanceOf[js.Any], allowed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def validateAllowedNodesUntil(node: ParsedValue, i: Double, untilType: Unit, allowed: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateAllowedNodesUntil")(node.asInstanceOf[js.Any], i.asInstanceOf[js.Any], untilType.asInstanceOf[js.Any], allowed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core", "validateScopingSelector")
-  @js.native
-  def validateScopingSelector(atRule: AtRule_, hasSelector: SRule, diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics): Unit = js.native
+  @scala.inline
+  def validateScopingSelector(
+    atRule: AtRule_,
+    hasScopingSelector: SRule,
+    diagnostics: typings.stylableCore.diagnosticsMod.Diagnostics
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateScopingSelector")(atRule.asInstanceOf[js.Any], hasScopingSelector.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object valueMapping {
     
@@ -1922,6 +1731,10 @@ object mod {
     def default: `-st-default` = js.native
     @scala.inline
     def default_=(x: `-st-default`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@stylable/core", "valueMapping.extends")
+    @js.native
+    val `extends`: `-st-extends` = js.native
     
     @JSImport("@stylable/core", "valueMapping.from")
     @js.native
@@ -1964,28 +1777,24 @@ object mod {
     def states: `-st-states` = js.native
     @scala.inline
     def states_=(x: `-st-states`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("states")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@stylable/core", "valueMapping.extends")
-    @js.native
-    val `extends`: `-st-extends` = js.native
   }
   
   object valueParserWarnings {
     
-    @JSImport("@stylable/core", "valueParserWarnings.CSS_MIXIN_FORCE_NAMED_PARAMS")
+    @JSImport("@stylable/core", "valueParserWarnings")
     @js.native
-    def CSS_MIXIN_FORCE_NAMED_PARAMS(): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core", "valueParserWarnings.INVALID_NAMED_IMPORT_AS")
-    @js.native
-    def INVALID_NAMED_IMPORT_AS(name: String): String = js.native
+    @scala.inline
+    def CSS_MIXIN_FORCE_NAMED_PARAMS(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CSS_MIXIN_FORCE_NAMED_PARAMS")().asInstanceOf[String]
     
-    @JSImport("@stylable/core", "valueParserWarnings.INVALID_NESTED_KEYFRAMES")
-    @js.native
-    def INVALID_NESTED_KEYFRAMES(name: String): String = js.native
+    @scala.inline
+    def INVALID_NAMED_IMPORT_AS(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("INVALID_NAMED_IMPORT_AS")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core", "valueParserWarnings.VALUE_CANNOT_BE_STRING")
-    @js.native
-    def VALUE_CANNOT_BE_STRING(): String = js.native
+    @scala.inline
+    def INVALID_NESTED_KEYFRAMES(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("INVALID_NESTED_KEYFRAMES")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def VALUE_CANNOT_BE_STRING(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("VALUE_CANNOT_BE_STRING")().asInstanceOf[String]
   }
 }

@@ -9,7 +9,6 @@ import typings.storybookRouter.routerMod.RenderData
 import typings.storybookTheming.typesMod.ThemeVars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distMod {
@@ -64,26 +63,25 @@ object distMod {
   @js.native
   val addons: AddonStore = js.native
   
-  @js.native
   trait Addon extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var `match`: js.UndefOr[js.Function1[/* matchOptions */ RenderData, Boolean]] = js.native
+    var `match`: js.UndefOr[js.Function1[/* matchOptions */ RenderData, Boolean]] = js.undefined
     
-    var paramKey: js.UndefOr[String] = js.native
+    var paramKey: js.UndefOr[String] = js.undefined
     
-    def render(renderOptions: RenderOptions): ReactElement = js.native
+    def render(renderOptions: RenderOptions): ReactElement
     
-    var route: js.UndefOr[js.Function1[/* routeOptions */ RenderData, String]] = js.native
+    var route: js.UndefOr[js.Function1[/* routeOptions */ RenderData, String]] = js.undefined
     
-    var title: js.Function0[String] | String = js.native
+    var title: js.Function0[String] | String
     
-    var `type`: js.UndefOr[Types_] = js.native
+    var `type`: js.UndefOr[Types_] = js.undefined
   }
   object Addon {
     
@@ -151,11 +149,11 @@ object distMod {
   
   type Collection = StringDictionary[Addon]
   
-  @js.native
   trait Config
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var theme: js.UndefOr[ThemeVars] = js.native
+    var theme: js.UndefOr[ThemeVars] = js.undefined
   }
   object Config {
     
@@ -178,12 +176,11 @@ object distMod {
   
   type Loader = js.Function1[/* api */ API, Unit]
   
-  @js.native
   trait RenderOptions extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object RenderOptions {
     

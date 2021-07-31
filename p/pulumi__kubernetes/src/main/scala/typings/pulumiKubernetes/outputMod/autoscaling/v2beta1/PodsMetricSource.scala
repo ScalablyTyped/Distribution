@@ -3,29 +3,27 @@ package typings.pulumiKubernetes.outputMod.autoscaling.v2beta1
 import typings.pulumiKubernetes.outputMod.meta.v1.LabelSelector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PodsMetricSource indicates how to scale on a metric describing each pod in the current scale target (for example, transactions-processed-per-second). The values will be averaged together before being compared to the target value.
   */
-@js.native
 trait PodsMetricSource extends StObject {
   
   /**
     * metricName is the name of the metric in question
     */
-  var metricName: String = js.native
+  var metricName: String
   
   /**
     * selector is the string-encoded form of a standard kubernetes label selector for the given metric When set, it is passed as an additional parameter to the metrics server for more specific metrics scoping When unset, just the metricName will be used to gather metrics.
     */
-  var selector: LabelSelector = js.native
+  var selector: LabelSelector
   
   /**
     * targetAverageValue is the target value of the average of the metric across all relevant pods (as a quantity)
     */
-  var targetAverageValue: String = js.native
+  var targetAverageValue: String
 }
 object PodsMetricSource {
   

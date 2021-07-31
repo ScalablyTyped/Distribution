@@ -2,19 +2,17 @@ package typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request to update availability.
   */
-@js.native
 trait SchemaUpdateAvailabilityRequest extends StObject {
   
   /**
     * The availabilities being requested.
     */
-  var availabilities: js.UndefOr[js.Array[SchemaAvailability]] = js.native
+  var availabilities: js.UndefOr[js.Array[SchemaAvailability]] = js.undefined
 }
 object SchemaUpdateAvailabilityRequest {
   

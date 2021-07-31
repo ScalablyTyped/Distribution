@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchAvailablePhoneNumbersResponse extends StObject {
   
   /**
     * List of phone numbers, in E.164 format.
     */
-  var E164PhoneNumbers: js.UndefOr[E164PhoneNumberList] = js.native
+  var E164PhoneNumbers: js.UndefOr[E164PhoneNumberList] = js.undefined
 }
 object SearchAvailablePhoneNumbersResponse {
   

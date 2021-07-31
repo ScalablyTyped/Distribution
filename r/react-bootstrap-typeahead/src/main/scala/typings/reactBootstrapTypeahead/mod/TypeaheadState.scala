@@ -2,38 +2,36 @@ package typings.reactBootstrapTypeahead.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeaheadState[T /* <: TypeaheadModel */] extends StObject {
   
-  var activeIndex: Double | Null = js.native
+  var activeIndex: Double | Null
   
-  var activeItem: T | Null = js.native
+  var activeItem: T | Null
   
-  var initialItem: T | Null = js.native
+  var initialItem: T | Null
   
-  var isFocused: Boolean = js.native
+  var isFocused: Boolean
   
-  var selected: js.Array[T] = js.native
+  var selected: js.Array[T]
   
-  var showMenu: Boolean = js.native
+  var showMenu: Boolean
   
-  var shownResults: Double = js.native
+  var shownResults: Double
   
-  var text: String = js.native
+  var text: String
 }
 object TypeaheadState {
   
   @scala.inline
   def apply[T /* <: TypeaheadModel */](isFocused: Boolean, selected: js.Array[T], showMenu: Boolean, shownResults: Double, text: String): TypeaheadState[T] = {
-    val __obj = js.Dynamic.literal(isFocused = isFocused.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], showMenu = showMenu.asInstanceOf[js.Any], shownResults = shownResults.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isFocused = isFocused.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], showMenu = showMenu.asInstanceOf[js.Any], shownResults = shownResults.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], activeIndex = null, activeItem = null, initialItem = null)
     __obj.asInstanceOf[TypeaheadState[T]]
   }
   
   @scala.inline
-  implicit class TypeaheadStateMutableBuilder[Self <: TypeaheadState[_], T /* <: TypeaheadModel */] (val x: Self with TypeaheadState[T]) extends AnyVal {
+  implicit class TypeaheadStateMutableBuilder[Self <: TypeaheadState[?], T /* <: TypeaheadModel */] (val x: Self & TypeaheadState[T]) extends AnyVal {
     
     @scala.inline
     def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])

@@ -12,7 +12,6 @@ import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.namedTypesMod.namedTypes.JSXElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,14 +20,14 @@ trait JSXElementBuilder extends StObject {
   def apply(openingElement: JSXOpeningElementKind): JSXElement = js.native
   def apply(
     openingElement: JSXOpeningElementKind,
-    closingElement: js.UndefOr[scala.Nothing],
+    closingElement: Null,
     children: js.Array[
       JSXTextKind | JSXExpressionContainerKind | JSXSpreadChildKind | JSXElementKind | JSXFragmentKind | LiteralKind
     ]
   ): JSXElement = js.native
   def apply(
     openingElement: JSXOpeningElementKind,
-    closingElement: Null,
+    closingElement: Unit,
     children: js.Array[
       JSXTextKind | JSXExpressionContainerKind | JSXSpreadChildKind | JSXElementKind | JSXFragmentKind | LiteralKind
     ]

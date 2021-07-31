@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SingleMasterConfiguration extends StObject {
   
   /**
     * The period of time a signaling channel retains underlivered messages before they are discarded.
     */
-  var MessageTtlSeconds: js.UndefOr[typings.awsSdk.kinesisvideoMod.MessageTtlSeconds] = js.native
+  var MessageTtlSeconds: js.UndefOr[typings.awsSdk.kinesisvideoMod.MessageTtlSeconds] = js.undefined
 }
 object SingleMasterConfiguration {
   

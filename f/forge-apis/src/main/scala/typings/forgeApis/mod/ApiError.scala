@@ -2,17 +2,15 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiError extends StObject {
   
-  var statusBody: js.Object = js.native
+  var statusBody: js.Object
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var statusMessage: String = js.native
+  var statusMessage: String
 }
 object ApiError {
   

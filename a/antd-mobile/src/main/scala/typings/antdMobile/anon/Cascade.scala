@@ -3,27 +3,25 @@ package typings.antdMobile.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cascade extends StObject {
   
-  var cascade: Boolean = js.native
+  var cascade: Boolean
   
-  var cols: Double = js.native
+  var cols: Double
   
-  def format(values: js.Array[ReactNode]): String | js.Array[ReactNode] = js.native
+  def format(values: js.Array[ReactNode]): String | js.Array[ReactNode]
   
-  var pickerPrefixCls: String = js.native
+  var pickerPrefixCls: String
   
-  var popupPrefixCls: String = js.native
+  var popupPrefixCls: String
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var title: String = js.native
+  var title: String
   
-  var triggerType: String = js.native
+  var triggerType: String
 }
 object Cascade {
   

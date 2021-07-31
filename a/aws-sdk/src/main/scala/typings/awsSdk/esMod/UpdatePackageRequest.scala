@@ -2,28 +2,26 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePackageRequest extends StObject {
   
   /**
     * An info message for the new version which will be shown as part of GetPackageVersionHistoryResponse.
     */
-  var CommitMessage: js.UndefOr[typings.awsSdk.esMod.CommitMessage] = js.native
+  var CommitMessage: js.UndefOr[typings.awsSdk.esMod.CommitMessage] = js.undefined
   
   /**
     * New description of the package.
     */
-  var PackageDescription: js.UndefOr[typings.awsSdk.esMod.PackageDescription] = js.native
+  var PackageDescription: js.UndefOr[typings.awsSdk.esMod.PackageDescription] = js.undefined
   
   /**
     * Unique identifier for the package.
     */
-  var PackageID: typings.awsSdk.esMod.PackageID = js.native
+  var PackageID: typings.awsSdk.esMod.PackageID
   
-  var PackageSource: typings.awsSdk.esMod.PackageSource = js.native
+  var PackageSource: typings.awsSdk.esMod.PackageSource
 }
 object UpdatePackageRequest {
   

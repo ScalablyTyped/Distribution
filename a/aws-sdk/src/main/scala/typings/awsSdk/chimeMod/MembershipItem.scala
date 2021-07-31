@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MembershipItem extends StObject {
   
   /**
     * The member ID.
     */
-  var MemberId: js.UndefOr[NonEmptyString] = js.native
+  var MemberId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The member role.
     */
-  var Role: js.UndefOr[RoomMembershipRole] = js.native
+  var Role: js.UndefOr[RoomMembershipRole] = js.undefined
 }
 object MembershipItem {
   

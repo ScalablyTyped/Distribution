@@ -9,7 +9,6 @@ import typings.maximMazurokGapiClientAndroidmanagement.anon.UpdateMask
 import typings.maximMazurokGapiClientAndroidmanagement.anon.UploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

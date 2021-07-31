@@ -2,16 +2,15 @@ package typings.webix.webix
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TreeStore extends StObject {
   
   def add(obj: js.Any): String = js.native
-  def add(obj: js.Any, index: js.UndefOr[scala.Nothing], parentId: String): String = js.native
   def add(obj: js.Any, index: Double): String = js.native
   def add(obj: js.Any, index: Double, parentId: String): String = js.native
+  def add(obj: js.Any, index: Unit, parentId: String): String = js.native
   
   def changeId(old: String, newid: String): Unit = js.native
   def changeId(old: String, newid: Double): Unit = js.native
@@ -26,20 +25,20 @@ trait TreeStore extends StObject {
   def each(code: WebixCallback, master: js.Any, all: Boolean, pid: String): Unit = js.native
   
   def eachChild(pid: String, code: WebixCallback): Unit = js.native
-  def eachChild(pid: String, code: WebixCallback, master: js.UndefOr[scala.Nothing], all: Boolean): Unit = js.native
   def eachChild(pid: String, code: WebixCallback, master: js.Any): Unit = js.native
   def eachChild(pid: String, code: WebixCallback, master: js.Any, all: Boolean): Unit = js.native
+  def eachChild(pid: String, code: WebixCallback, master: Unit, all: Boolean): Unit = js.native
   
   def eachLeaf(pid: String, code: WebixCallback): Unit = js.native
   
   def eachOpen(code: WebixCallback): Unit = js.native
-  def eachOpen(code: WebixCallback, master: js.UndefOr[scala.Nothing], pid: String): Unit = js.native
   def eachOpen(code: WebixCallback, master: js.Any): Unit = js.native
   def eachOpen(code: WebixCallback, master: js.Any, pid: String): Unit = js.native
+  def eachOpen(code: WebixCallback, master: Unit, pid: String): Unit = js.native
   
   def eachSubItem(pid: String, code: WebixCallback): Unit = js.native
   
-  def getBranch(id: String): js.Array[_] = js.native
+  def getBranch(id: String): js.Array[js.Any] = js.native
   
   def getBranchIndex(id: String): Double = js.native
   def getBranchIndex(id: String, parent: String): Double = js.native
@@ -60,7 +59,7 @@ trait TreeStore extends StObject {
   def getPrevSiblingId(id: String): String | Double = js.native
   def getPrevSiblingId(id: Double): String | Double = js.native
   
-  def getTopRange(): js.Array[_] = js.native
+  def getTopRange(): js.Array[js.Any] = js.native
   
   def isBranch(id: String): Boolean = js.native
   def isBranch(id: Double): Boolean = js.native
@@ -70,9 +69,9 @@ trait TreeStore extends StObject {
   def provideApi(target: js.Any, eventable: Boolean): Unit = js.native
   
   def remove(id: String): Unit = js.native
-  def remove(id: js.Array[_]): Unit = js.native
+  def remove(id: js.Array[js.Any]): Unit = js.native
   def remove(id: Double): Unit = js.native
   
-  def serialize(): js.Array[_] = js.native
-  def serialize(all: Boolean): js.Array[_] = js.native
+  def serialize(): js.Array[js.Any] = js.native
+  def serialize(all: Boolean): js.Array[js.Any] = js.native
 }

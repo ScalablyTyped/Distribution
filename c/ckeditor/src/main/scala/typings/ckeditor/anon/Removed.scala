@@ -3,15 +3,13 @@ package typings.ckeditor.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Removed extends StObject {
   
-  var removed: js.Array[String] = js.native
+  var removed: js.Array[String]
   
-  var set: StringDictionary[String] = js.native
+  var set: StringDictionary[String]
 }
 object Removed {
   

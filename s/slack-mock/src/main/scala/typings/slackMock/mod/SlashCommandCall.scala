@@ -2,21 +2,19 @@ package typings.slackMock.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlashCommandCall[T] extends StObject {
   
-  var headers: SlashCommandHttpHeaders = js.native
+  var headers: SlashCommandHttpHeaders
   
-  var params: T = js.native
+  var params: T
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var `type`: SlashCommandCallType = js.native
+  var `type`: SlashCommandCallType
   
-  var url: SlashCommandUrl = js.native
+  var url: SlashCommandUrl
 }
 object SlashCommandCall {
   
@@ -34,7 +32,7 @@ object SlashCommandCall {
   }
   
   @scala.inline
-  implicit class SlashCommandCallMutableBuilder[Self <: SlashCommandCall[_], T] (val x: Self with SlashCommandCall[T]) extends AnyVal {
+  implicit class SlashCommandCallMutableBuilder[Self <: SlashCommandCall[?], T] (val x: Self & SlashCommandCall[T]) extends AnyVal {
     
     @scala.inline
     def setHeaders(value: SlashCommandHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])

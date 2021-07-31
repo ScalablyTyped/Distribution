@@ -4,19 +4,19 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ToastSuccessProps extends ToastProps {
+trait ToastSuccessProps
+  extends StObject
+     with ToastProps {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var d: js.UndefOr[String | js.Array[_]] = js.native
+  var d: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
-  var iconfontStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var iconfontStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object ToastSuccessProps {
   
@@ -36,7 +36,7 @@ object ToastSuccessProps {
     def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setD(value: String | js.Array[_]): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    def setD(value: String | js.Array[js.Any]): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDUndefined: Self = StObject.set(x, "d", js.undefined)

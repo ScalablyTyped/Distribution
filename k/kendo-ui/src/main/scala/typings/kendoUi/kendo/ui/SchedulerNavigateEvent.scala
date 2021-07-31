@@ -3,17 +3,17 @@ package typings.kendoUi.kendo.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SchedulerNavigateEvent extends SchedulerEvent {
+trait SchedulerNavigateEvent
+  extends StObject
+     with SchedulerEvent {
   
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object SchedulerNavigateEvent {
   

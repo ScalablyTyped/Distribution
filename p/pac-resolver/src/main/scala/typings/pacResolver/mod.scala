@@ -7,7 +7,6 @@ import typings.std.Error
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,18 +19,18 @@ object mod {
     * @param {Object} opts optional "options" object
     * @return {Function} async resolver function
     */
+  @scala.inline
+  def apply(_str: String): FnCall = ^.asInstanceOf[js.Dynamic].apply(_str.asInstanceOf[js.Any]).asInstanceOf[FnCall]
+  @scala.inline
+  def apply(_str: String, _opts: PacResolverOptions): FnCall = (^.asInstanceOf[js.Dynamic].apply(_str.asInstanceOf[js.Any], _opts.asInstanceOf[js.Any])).asInstanceOf[FnCall]
+  @scala.inline
+  def apply(_str: Buffer): FnCall = ^.asInstanceOf[js.Dynamic].apply(_str.asInstanceOf[js.Any]).asInstanceOf[FnCall]
+  @scala.inline
+  def apply(_str: Buffer, _opts: PacResolverOptions): FnCall = (^.asInstanceOf[js.Dynamic].apply(_str.asInstanceOf[js.Any], _opts.asInstanceOf[js.Any])).asInstanceOf[FnCall]
+  
   @JSImport("pac-resolver", JSImport.Namespace)
   @js.native
-  def apply(_str: String): FnCall = js.native
-  @JSImport("pac-resolver", JSImport.Namespace)
-  @js.native
-  def apply(_str: String, _opts: PacResolverOptions): FnCall = js.native
-  @JSImport("pac-resolver", JSImport.Namespace)
-  @js.native
-  def apply(_str: Buffer): FnCall = js.native
-  @JSImport("pac-resolver", JSImport.Namespace)
-  @js.native
-  def apply(_str: Buffer, _opts: PacResolverOptions): FnCall = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.pacResolver.pacResolverNumbers.`1`

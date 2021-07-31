@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,11 +17,15 @@ object InitializationReason extends StObject {
     * The add-in is already part of the document that was opened.
     */
   @js.native
-  sealed trait DocumentOpened extends InitializationReason
+  sealed trait DocumentOpened
+    extends StObject
+       with InitializationReason
   
   /**
     * The add-in was just inserted into the document.
     */
   @js.native
-  sealed trait Inserted extends InitializationReason
+  sealed trait Inserted
+    extends StObject
+       with InitializationReason
 }

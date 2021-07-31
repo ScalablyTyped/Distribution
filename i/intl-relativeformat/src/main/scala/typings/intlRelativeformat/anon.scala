@@ -6,21 +6,19 @@ import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DisplayName extends StObject {
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var relative: Record[String, String] = js.native
+    var relative: Record[String, String]
     
-    var relativePeriod: js.UndefOr[String] = js.native
+    var relativePeriod: js.UndefOr[String] = js.undefined
     
-    var relativeTime: Future = js.native
+    var relativeTime: Future
   }
   object DisplayName {
     
@@ -50,12 +48,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Future extends StObject {
     
-    var future: Record[String, String] = js.native
+    var future: Record[String, String]
     
-    var past: Record[String, String] = js.native
+    var past: Record[String, String]
   }
   object Future {
     
@@ -76,14 +73,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Locale extends StObject {
     
-    var locale: String = js.native
+    var locale: String
     
-    var style: STYLE = js.native
+    var style: STYLE
     
-    var units: js.UndefOr[SUPPORTED_FIELD] = js.native
+    var units: js.UndefOr[SUPPORTED_FIELD] = js.undefined
   }
   object Locale {
     
@@ -110,10 +106,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Now extends StObject {
     
-    var now: js.UndefOr[Date | Double | Null] = js.native
+    var now: js.UndefOr[Date | Double | Null] = js.undefined
   }
   object Now {
     
@@ -138,50 +133,49 @@ object anon {
   }
   
   /* Inlined std.Record<intl-relativeformat.intl-relativeformat/lib/types.SUPPORTED_FIELD, number> */
-  @js.native
   trait RecordSUPPORTEDFIELDnumbe extends StObject {
     
-    var day: Double = js.native
+    var day: Double
     
-    var `day-narrow`: Double = js.native
+    var `day-narrow`: Double
     
-    var `day-short`: Double = js.native
+    var `day-short`: Double
     
-    var hour: Double = js.native
+    var hour: Double
     
-    var `hour-narrow`: Double = js.native
+    var `hour-narrow`: Double
     
-    var `hour-short`: Double = js.native
+    var `hour-short`: Double
     
-    var minute: Double = js.native
+    var minute: Double
     
-    var `minute-narrow`: Double = js.native
+    var `minute-narrow`: Double
     
-    var `minute-short`: Double = js.native
+    var `minute-short`: Double
     
-    var month: Double = js.native
+    var month: Double
     
-    var `month-narrow`: Double = js.native
+    var `month-narrow`: Double
     
-    var `month-short`: Double = js.native
+    var `month-short`: Double
     
-    var second: Double = js.native
+    var second: Double
     
-    var `second-narrow`: Double = js.native
+    var `second-narrow`: Double
     
-    var `second-short`: Double = js.native
+    var `second-short`: Double
     
-    var week: Double = js.native
+    var week: Double
     
-    var `week-narrow`: Double = js.native
+    var `week-narrow`: Double
     
-    var `week-short`: Double = js.native
+    var `week-short`: Double
     
-    var year: Double = js.native
+    var year: Double
     
-    var `year-narrow`: Double = js.native
+    var `year-narrow`: Double
     
-    var `year-short`: Double = js.native
+    var `year-short`: Double
   }
   object RecordSUPPORTEDFIELDnumbe {
     
@@ -296,56 +290,55 @@ object anon {
   }
   
   /* Inlined {[ f in intl-relativeformat.intl-relativeformat/lib/types.DATA_FIELD ]: {  displayName :string,   relative :std.Record<string, string>,   relativePeriod :string | undefined,   relativeTime :{  future :std.Record<string, string>,   past :std.Record<string, string>}}} */
-  @js.native
   trait finDATAFIELDdisplayNamest extends StObject {
     
-    var day: DisplayName = js.native
+    var day: DisplayName
     
-    var `day-narrow`: DisplayName = js.native
+    var `day-narrow`: DisplayName
     
-    var `day-short`: DisplayName = js.native
+    var `day-short`: DisplayName
     
-    var hour: DisplayName = js.native
+    var hour: DisplayName
     
-    var `hour-narrow`: DisplayName = js.native
+    var `hour-narrow`: DisplayName
     
-    var `hour-short`: DisplayName = js.native
+    var `hour-short`: DisplayName
     
-    var minute: DisplayName = js.native
+    var minute: DisplayName
     
-    var `minute-narrow`: DisplayName = js.native
+    var `minute-narrow`: DisplayName
     
-    var `minute-short`: DisplayName = js.native
+    var `minute-short`: DisplayName
     
-    var month: DisplayName = js.native
+    var month: DisplayName
     
-    var `month-narrow`: DisplayName = js.native
+    var `month-narrow`: DisplayName
     
-    var `month-short`: DisplayName = js.native
+    var `month-short`: DisplayName
     
-    var quarter: DisplayName = js.native
+    var quarter: DisplayName
     
-    var `quarter-narrow`: DisplayName = js.native
+    var `quarter-narrow`: DisplayName
     
-    var `quarter-short`: DisplayName = js.native
+    var `quarter-short`: DisplayName
     
-    var second: DisplayName = js.native
+    var second: DisplayName
     
-    var `second-narrow`: DisplayName = js.native
+    var `second-narrow`: DisplayName
     
-    var `second-short`: DisplayName = js.native
+    var `second-short`: DisplayName
     
-    var week: DisplayName = js.native
+    var week: DisplayName
     
-    var `week-narrow`: DisplayName = js.native
+    var `week-narrow`: DisplayName
     
-    var `week-short`: DisplayName = js.native
+    var `week-short`: DisplayName
     
-    var year: DisplayName = js.native
+    var year: DisplayName
     
-    var `year-narrow`: DisplayName = js.native
+    var `year-narrow`: DisplayName
     
-    var `year-short`: DisplayName = js.native
+    var `year-short`: DisplayName
   }
   object finDATAFIELDdisplayNamest {
     

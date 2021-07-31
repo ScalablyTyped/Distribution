@@ -10,17 +10,15 @@ import typings.snabbdom.vnodeMod.VNode_
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Delayed extends StObject {
     
-    var delayed: js.UndefOr[Record[String, String]] = js.native
+    var delayed: js.UndefOr[Record[String, String]] = js.undefined
     
-    var remove: js.UndefOr[Record[String, String]] = js.native
+    var remove: js.UndefOr[Record[String, String]] = js.undefined
   }
   object Delayed {
     
@@ -48,20 +46,19 @@ object anon {
   }
   
   /* Inlined std.Partial<snabbdom.snabbdom/build/package/modules/module.Module> */
-  @js.native
   trait PartialModule extends StObject {
     
-    var create: js.UndefOr[CreateHook] = js.native
+    var create: js.UndefOr[CreateHook] = js.undefined
     
-    var destroy: js.UndefOr[DestroyHook] = js.native
+    var destroy: js.UndefOr[DestroyHook] = js.undefined
     
-    var post: js.UndefOr[PostHook] = js.native
+    var post: js.UndefOr[PostHook] = js.undefined
     
-    var pre: js.UndefOr[PreHook] = js.native
+    var pre: js.UndefOr[PreHook] = js.undefined
     
-    var remove: js.UndefOr[RemoveHook] = js.native
+    var remove: js.UndefOr[RemoveHook] = js.undefined
     
-    var update: js.UndefOr[UpdateHook] = js.native
+    var update: js.UndefOr[UpdateHook] = js.undefined
   }
   object PartialModule {
     

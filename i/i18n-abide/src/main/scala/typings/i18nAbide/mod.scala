@@ -7,90 +7,74 @@ import typings.i18nAbide.anon.Error
 import typings.i18nAbide.anon.Lang
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("i18n-abide", "abide")
+  @JSImport("i18n-abide", JSImport.Namespace)
   @js.native
-  def abide(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("i18n-abide", "abide")
-  @js.native
-  def abide(options: AbideOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("i18n-abide", "bestLanguage")
-  @js.native
-  def bestLanguage(languages: js.Array[Lang], supported_languages: js.Array[String], defaultLanguage: String): String = js.native
+  @scala.inline
+  def abide(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("abide")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def abide(options: AbideOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("abide")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("i18n-abide", "format")
-  @js.native
-  def format(fmt: String): String = js.native
-  @JSImport("i18n-abide", "format")
-  @js.native
-  def format(fmt: String, obj: js.UndefOr[scala.Nothing], named: Boolean): String = js.native
-  @JSImport("i18n-abide", "format")
-  @js.native
-  def format(fmt: String, obj: js.Any): String = js.native
-  @JSImport("i18n-abide", "format")
-  @js.native
-  def format(fmt: String, obj: js.Any, named: Boolean): String = js.native
+  @scala.inline
+  def bestLanguage(languages: js.Array[Lang], supported_languages: js.Array[String], defaultLanguage: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bestLanguage")(languages.asInstanceOf[js.Any], supported_languages.asInstanceOf[js.Any], defaultLanguage.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("i18n-abide", "getLocales")
-  @js.native
-  def getLocales(): js.Array[String] = js.native
+  @scala.inline
+  def format(fmt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def format(fmt: String, obj: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(fmt: String, obj: js.Any, named: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], named.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(fmt: String, obj: Unit, named: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], named.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("i18n-abide", "languageFrom")
-  @js.native
-  def languageFrom(): String = js.native
-  @JSImport("i18n-abide", "languageFrom")
-  @js.native
-  def languageFrom(locale: String): String = js.native
+  @scala.inline
+  def getLocales(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocales")().asInstanceOf[js.Array[String]]
   
-  @JSImport("i18n-abide", "localeFrom")
-  @js.native
-  def localeFrom(): String = js.native
-  @JSImport("i18n-abide", "localeFrom")
-  @js.native
-  def localeFrom(language: String): String = js.native
+  @scala.inline
+  def languageFrom(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("languageFrom")().asInstanceOf[String]
+  @scala.inline
+  def languageFrom(locale: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("languageFrom")(locale.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("i18n-abide", "normalizeLanguage")
-  @js.native
-  def normalizeLanguage(): String = js.native
-  @JSImport("i18n-abide", "normalizeLanguage")
-  @js.native
-  def normalizeLanguage(language: String): String = js.native
+  @scala.inline
+  def localeFrom(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("localeFrom")().asInstanceOf[String]
+  @scala.inline
+  def localeFrom(language: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("localeFrom")(language.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("i18n-abide", "normalizeLocale")
-  @js.native
-  def normalizeLocale(): String = js.native
-  @JSImport("i18n-abide", "normalizeLocale")
-  @js.native
-  def normalizeLocale(locale: String): String = js.native
+  @scala.inline
+  def normalizeLanguage(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeLanguage")().asInstanceOf[String]
+  @scala.inline
+  def normalizeLanguage(language: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeLanguage")(language.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("i18n-abide", "parseAcceptLanguage")
-  @js.native
-  def parseAcceptLanguage(): js.Array[Lang] = js.native
-  @JSImport("i18n-abide", "parseAcceptLanguage")
-  @js.native
-  def parseAcceptLanguage(header: String): js.Array[Lang] = js.native
+  @scala.inline
+  def normalizeLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeLocale")().asInstanceOf[String]
+  @scala.inline
+  def normalizeLocale(locale: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def parseAcceptLanguage(): js.Array[Lang] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAcceptLanguage")().asInstanceOf[js.Array[Lang]]
+  @scala.inline
+  def parseAcceptLanguage(header: String): js.Array[Lang] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAcceptLanguage")(header.asInstanceOf[js.Any]).asInstanceOf[js.Array[Lang]]
+  
   trait AbideOptions extends StObject {
     
-    var debug_lang: js.UndefOr[String] = js.native
+    var debug_lang: js.UndefOr[String] = js.undefined
     
-    var default_lang: js.UndefOr[String] = js.native
+    var default_lang: js.UndefOr[String] = js.undefined
     
-    var disable_locale_check: js.UndefOr[Boolean] = js.native
+    var disable_locale_check: js.UndefOr[Boolean] = js.undefined
     
-    var gettext_alias: js.UndefOr[String] = js.native
+    var gettext_alias: js.UndefOr[String] = js.undefined
     
-    var logger: js.UndefOr[Error] = js.native
+    var logger: js.UndefOr[Error] = js.undefined
     
-    var supported_languages: js.UndefOr[js.Array[String]] = js.native
+    var supported_languages: js.UndefOr[js.Array[String]] = js.undefined
     
-    var translation_directory: js.UndefOr[String] = js.native
+    var translation_directory: js.UndefOr[String] = js.undefined
   }
   object AbideOptions {
     

@@ -4,24 +4,24 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies an interface for an executable dialog. */
-@js.native
-trait XExecutableDialog extends XInterface {
+trait XExecutableDialog
+  extends StObject
+     with XInterface {
   
   /**
     * Executes (shows) the dialog.
     * @returns A status code of type {@link ExecutableDialogResults} .
     */
-  def execute(): Double = js.native
+  def execute(): Double
   
   /**
     * Sets the title of the dialog.
     * @param aTitle Set an arbitrary title for the dialog, may be an empty string if the dialog should not have a title.
     */
-  def setTitle(aTitle: String): Unit = js.native
+  def setTitle(aTitle: String): Unit
 }
 object XExecutableDialog {
   

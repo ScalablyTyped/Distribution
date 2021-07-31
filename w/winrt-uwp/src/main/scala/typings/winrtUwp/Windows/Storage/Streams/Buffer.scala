@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Storage.Streams
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a default implementation of the IBuffer interface and its related interfaces. */
-@js.native
 trait Buffer extends StObject {
   
-  var byteLength: js.Any = js.native
+  var byteLength: js.Any
   
   /* unmapped type */
   /** Gets the maximum number of bytes that the buffer can hold. */
-  var capacity: Double = js.native
+  var capacity: Double
   
   /** Gets the number of bytes currently in use in the buffer. */
-  var length: Double = js.native
+  var length: Double
 }
 object Buffer {
   

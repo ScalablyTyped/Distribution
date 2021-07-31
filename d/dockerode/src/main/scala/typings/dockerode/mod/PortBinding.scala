@@ -2,15 +2,13 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortBinding extends StObject {
   
-  var HostIp: js.UndefOr[String] = js.native
+  var HostIp: js.UndefOr[String] = js.undefined
   
-  var HostPort: js.UndefOr[String] = js.native
+  var HostPort: js.UndefOr[String] = js.undefined
 }
 object PortBinding {
   

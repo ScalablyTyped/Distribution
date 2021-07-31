@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.Button")
 @js.native
 class Button protected ()
-  extends typings.ejWebAll.ej.Button {
+  extends StObject
+     with typings.ejWebAll.ej.Button {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()

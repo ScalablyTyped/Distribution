@@ -7,18 +7,21 @@ import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.RelationshipType
 import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.SecurityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object microsoftSdkSoapStrings {
   
   @js.native
-  sealed trait Active extends CascadeType
+  sealed trait Active
+    extends StObject
+       with CascadeType
   @scala.inline
   def Active: Active = "Active".asInstanceOf[Active]
   
   @js.native
-  sealed trait Append extends SecurityType
+  sealed trait Append
+    extends StObject
+       with SecurityType
   @scala.inline
   def Append: Append = "Append".asInstanceOf[Append]
   
@@ -58,7 +61,9 @@ object microsoftSdkSoapStrings {
   def CalendarRulesType: CalendarRulesType = "CalendarRulesType".asInstanceOf[CalendarRulesType]
   
   @js.native
-  sealed trait Cascade extends CascadeType
+  sealed trait Cascade
+    extends StObject
+       with CascadeType
   @scala.inline
   def Cascade: Cascade = "Cascade".asInstanceOf[Cascade]
   
@@ -98,7 +103,9 @@ object microsoftSdkSoapStrings {
   def DecimalType: DecimalType = "DecimalType".asInstanceOf[DecimalType]
   
   @js.native
-  sealed trait Default extends RelationshipType
+  sealed trait Default
+    extends StObject
+       with RelationshipType
   @scala.inline
   def Default: Default = "Default".asInstanceOf[Default]
   
@@ -108,12 +115,16 @@ object microsoftSdkSoapStrings {
   def Delete: Delete = "Delete".asInstanceOf[Delete]
   
   @js.native
-  sealed trait Details extends AssociatedMenuGroup
+  sealed trait Details
+    extends StObject
+       with AssociatedMenuGroup
   @scala.inline
   def Details: Details = "Details".asInstanceOf[Details]
   
   @js.native
-  sealed trait DoNotDisplay extends AssociatedMenuBehavior
+  sealed trait DoNotDisplay
+    extends StObject
+       with AssociatedMenuBehavior
   @scala.inline
   def DoNotDisplay: DoNotDisplay = "DoNotDisplay".asInstanceOf[DoNotDisplay]
   
@@ -143,7 +154,9 @@ object microsoftSdkSoapStrings {
   def ImageType: ImageType = "ImageType".asInstanceOf[ImageType]
   
   @js.native
-  sealed trait Inheritance extends SecurityType
+  sealed trait Inheritance
+    extends StObject
+       with SecurityType
   @scala.inline
   def Inheritance: Inheritance = "Inheritance".asInstanceOf[Inheritance]
   
@@ -178,12 +191,16 @@ object microsoftSdkSoapStrings {
   def ManagedPropertyType: ManagedPropertyType = "ManagedPropertyType".asInstanceOf[ManagedPropertyType]
   
   @js.native
-  sealed trait ManyToManyRelationship extends RelationshipType
+  sealed trait ManyToManyRelationship
+    extends StObject
+       with RelationshipType
   @scala.inline
   def ManyToManyRelationship: ManyToManyRelationship = "ManyToManyRelationship".asInstanceOf[ManyToManyRelationship]
   
   @js.native
-  sealed trait Marketing extends AssociatedMenuGroup
+  sealed trait Marketing
+    extends StObject
+       with AssociatedMenuGroup
   @scala.inline
   def Marketing: Marketing = "Marketing".asInstanceOf[Marketing]
   
@@ -208,12 +225,16 @@ object microsoftSdkSoapStrings {
   def MoneyType: MoneyType = "MoneyType".asInstanceOf[MoneyType]
   
   @js.native
-  sealed trait NoCascade extends CascadeType
+  sealed trait NoCascade
+    extends StObject
+       with CascadeType
   @scala.inline
   def NoCascade: NoCascade = "NoCascade".asInstanceOf[NoCascade]
   
   @js.native
-  sealed trait None extends SecurityType
+  sealed trait None
+    extends StObject
+       with SecurityType
   @scala.inline
   def None: None = "None".asInstanceOf[None]
   
@@ -223,7 +244,9 @@ object microsoftSdkSoapStrings {
   def `None    OrganizationOwned`: `None    OrganizationOwned` = ("None    OrganizationOwned").asInstanceOf[`None    OrganizationOwned`]
   
   @js.native
-  sealed trait OneToManyRelationship extends RelationshipType
+  sealed trait OneToManyRelationship
+    extends StObject
+       with RelationshipType
   @scala.inline
   def OneToManyRelationship: OneToManyRelationship = "OneToManyRelationship".asInstanceOf[OneToManyRelationship]
   
@@ -238,7 +261,9 @@ object microsoftSdkSoapStrings {
   def OwnerType: OwnerType = "OwnerType".asInstanceOf[OwnerType]
   
   @js.native
-  sealed trait ParentChild extends SecurityType
+  sealed trait ParentChild
+    extends StObject
+       with SecurityType
   @scala.inline
   def ParentChild: ParentChild = "ParentChild".asInstanceOf[ParentChild]
   
@@ -263,7 +288,9 @@ object microsoftSdkSoapStrings {
   def PicklistType: PicklistType = "PicklistType".asInstanceOf[PicklistType]
   
   @js.native
-  sealed trait Pointer extends SecurityType
+  sealed trait Pointer
+    extends StObject
+       with SecurityType
   @scala.inline
   def Pointer: Pointer = "Pointer".asInstanceOf[Pointer]
   
@@ -273,12 +300,16 @@ object microsoftSdkSoapStrings {
   def Read: Read = "Read".asInstanceOf[Read]
   
   @js.native
-  sealed trait Sales extends AssociatedMenuGroup
+  sealed trait Sales
+    extends StObject
+       with AssociatedMenuGroup
   @scala.inline
   def Sales: Sales = "Sales".asInstanceOf[Sales]
   
   @js.native
-  sealed trait Service extends AssociatedMenuGroup
+  sealed trait Service
+    extends StObject
+       with AssociatedMenuGroup
   @scala.inline
   def Service: Service = "Service".asInstanceOf[Service]
   
@@ -323,17 +354,23 @@ object microsoftSdkSoapStrings {
   def UniqueidentifierType: UniqueidentifierType = "UniqueidentifierType".asInstanceOf[UniqueidentifierType]
   
   @js.native
-  sealed trait UseCollectionName extends AssociatedMenuBehavior
+  sealed trait UseCollectionName
+    extends StObject
+       with AssociatedMenuBehavior
   @scala.inline
   def UseCollectionName: UseCollectionName = "UseCollectionName".asInstanceOf[UseCollectionName]
   
   @js.native
-  sealed trait UseLabel extends AssociatedMenuBehavior
+  sealed trait UseLabel
+    extends StObject
+       with AssociatedMenuBehavior
   @scala.inline
   def UseLabel: UseLabel = "UseLabel".asInstanceOf[UseLabel]
   
   @js.native
-  sealed trait UserOwned extends CascadeType
+  sealed trait UserOwned
+    extends StObject
+       with CascadeType
   @scala.inline
   def UserOwned: UserOwned = "UserOwned".asInstanceOf[UserOwned]
   

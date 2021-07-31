@@ -3,7 +3,6 @@ package typings.googleapis.pubsubV1Mod.pubsubV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * is, you can set the acknowledgment state of messages in an existing
   * subscription to the state captured by a snapshot.
   */
-@js.native
 trait SchemaSnapshot extends StObject {
   
   /**
@@ -28,24 +26,24 @@ trait SchemaSnapshot extends StObject {
     * will expire in 4 days. The service will refuse to create a snapshot that
     * would expire in less than 1 hour after creation.
     */
-  var expireTime: js.UndefOr[String] = js.native
+  var expireTime: js.UndefOr[String] = js.undefined
   
   /**
     * See &lt;a
     * href=&quot;https://cloud.google.com/pubsub/docs/labels&quot;&gt; Creating
     * and managing labels&lt;/a&gt;.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The name of the snapshot.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the topic from which this snapshot is retaining messages.
     */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
 }
 object SchemaSnapshot {
   

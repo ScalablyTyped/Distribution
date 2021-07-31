@@ -2,36 +2,34 @@ package typings.reactNavigationStack.vendorTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackHeaderInterpolatedStyle extends StObject {
   
   /**
     * Interpolated style for the header background.
     */
-  var backgroundStyle: js.UndefOr[js.Any] = js.native
+  var backgroundStyle: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Interpolated style for the left button (usually the back button).
     */
-  var leftButtonStyle: js.UndefOr[js.Any] = js.native
+  var leftButtonStyle: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Interpolated style for the label of the left button (back button label).
     */
-  var leftLabelStyle: js.UndefOr[js.Any] = js.native
+  var leftLabelStyle: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Interpolated style for the right button.
     */
-  var rightButtonStyle: js.UndefOr[js.Any] = js.native
+  var rightButtonStyle: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Interpolated style for the header title text.
     */
-  var titleStyle: js.UndefOr[js.Any] = js.native
+  var titleStyle: js.UndefOr[js.Any] = js.undefined
 }
 object StackHeaderInterpolatedStyle {
   

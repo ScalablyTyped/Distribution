@@ -8,7 +8,6 @@ import typings.storybookUi.shortcutsMod.ShortcutsScreen
 import typings.storybookUi.shortcutsMod.ShortcutsScreenProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shortcutsStoriesMod {
@@ -46,9 +45,9 @@ object shortcutsStoriesMod {
   
   object defaults {
     
-    @JSImport("@storybook/ui/dist/settings/shortcuts.stories", "defaults")
-    @js.native
-    def apply(): Element = js.native
+    @scala.inline
+    def apply(): Element = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Element]
+    
     @JSImport("@storybook/ui/dist/settings/shortcuts.stories", "defaults")
     @js.native
     val ^ : js.Any = js.native

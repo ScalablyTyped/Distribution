@@ -2,15 +2,13 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassificationInfo extends StObject {
   
-  var classification: TokenClass = js.native
+  var classification: TokenClass
   
-  var length: Double = js.native
+  var length: Double
 }
 object ClassificationInfo {
   

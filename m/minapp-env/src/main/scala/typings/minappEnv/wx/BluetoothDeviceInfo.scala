@@ -2,18 +2,16 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 搜索到的设备列表 */
-@js.native
 trait BluetoothDeviceInfo extends StObject {
   
   /** 用于区分设备的 id */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** 蓝牙设备名称，某些设备可能没有 */
-  var name: String = js.native
+  var name: String
 }
 object BluetoothDeviceInfo {
   

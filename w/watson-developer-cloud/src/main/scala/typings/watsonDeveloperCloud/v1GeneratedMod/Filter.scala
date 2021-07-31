@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Filter. */
-@js.native
 trait Filter extends StObject {
   
   /** The match the aggregated results queried for. */
-  var `match`: js.UndefOr[String] = js.native
+  var `match`: js.UndefOr[String] = js.undefined
 }
 object Filter {
   

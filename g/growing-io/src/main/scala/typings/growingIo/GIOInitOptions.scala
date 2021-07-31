@@ -2,14 +2,12 @@ package typings.growingIo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GIOInitOptions extends StObject {
   
   /** 配置imp类型的数据关闭发送 */
-  var imp: js.UndefOr[Boolean] = js.native
+  var imp: js.UndefOr[Boolean] = js.undefined
 }
 object GIOInitOptions {
   

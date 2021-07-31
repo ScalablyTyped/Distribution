@@ -3,26 +3,26 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChannelDestroyed extends Event {
+trait ChannelDestroyed
+  extends StObject
+     with Event {
   
   /**
     * Integer representation of the cause of the hangup.
     */
-  var cause: Double = js.native
+  var cause: Double
   
   /**
     * Text representation of the cause of the hangup.
     */
-  var cause_txt: String = js.native
+  var cause_txt: String
   
   /**
     * Channel.
     */
-  var channel: Channel = js.native
+  var channel: Channel
 }
 object ChannelDestroyed {
   

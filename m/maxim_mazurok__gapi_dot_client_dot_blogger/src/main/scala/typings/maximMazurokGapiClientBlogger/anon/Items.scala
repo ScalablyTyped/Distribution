@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientBlogger.anon
 import typings.maximMazurokGapiClientBlogger.gapi.client.blogger.Post
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Items extends StObject {
   
   /** The List of Posts for this Blog. */
-  var items: js.UndefOr[js.Array[Post]] = js.native
+  var items: js.UndefOr[js.Array[Post]] = js.undefined
   
   /** The URL of the container for posts in this blog. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** The count of posts in this blog. */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object Items {
   

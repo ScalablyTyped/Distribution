@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateClientVpnEndpointResult extends StObject {
   
   /**
     * The ID of the Client VPN endpoint.
     */
-  var ClientVpnEndpointId: js.UndefOr[String] = js.native
+  var ClientVpnEndpointId: js.UndefOr[String] = js.undefined
   
   /**
     * The DNS name to be used by clients when establishing their VPN session.
     */
-  var DnsName: js.UndefOr[String] = js.native
+  var DnsName: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the Client VPN endpoint.
     */
-  var Status: js.UndefOr[ClientVpnEndpointStatus] = js.native
+  var Status: js.UndefOr[ClientVpnEndpointStatus] = js.undefined
 }
 object CreateClientVpnEndpointResult {
   

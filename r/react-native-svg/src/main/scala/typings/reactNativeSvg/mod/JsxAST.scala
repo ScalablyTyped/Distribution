@@ -5,14 +5,14 @@ import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JsxAST extends AST {
+trait JsxAST
+  extends StObject
+     with AST {
   
   @JSName("children")
-  var children_JsxAST: js.Array[Element | String] = js.native
+  var children_JsxAST: js.Array[Element | String]
 }
 object JsxAST {
   
@@ -23,7 +23,7 @@ object JsxAST {
     props: StringDictionary[js.UndefOr[Styles | String]],
     tag: String
   ): JsxAST = {
-    val __obj = js.Dynamic.literal(Tag = Tag.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Tag = Tag.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], parent = null)
     __obj.asInstanceOf[JsxAST]
   }
   

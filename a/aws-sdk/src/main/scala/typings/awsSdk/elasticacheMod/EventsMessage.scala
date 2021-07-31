@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventsMessage extends StObject {
   
   /**
     * A list of events. Each element in the list contains detailed information about one event.
     */
-  var Events: js.UndefOr[EventList] = js.native
+  var Events: js.UndefOr[EventList] = js.undefined
   
   /**
     * Provides an identifier to allow retrieval of paginated results.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object EventsMessage {
   

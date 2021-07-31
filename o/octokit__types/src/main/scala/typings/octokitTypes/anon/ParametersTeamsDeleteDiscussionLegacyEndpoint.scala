@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.TeamsDeleteDiscussionLegacyRequestOptio
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersTeamsDeleteDiscussionLegacyEndpoint extends StObject {
   
-  var parameters: TeamsDeleteDiscussionLegacyEndpoint = js.native
+  var parameters: TeamsDeleteDiscussionLegacyEndpoint
   
-  var request: TeamsDeleteDiscussionLegacyRequestOptions = js.native
+  var request: TeamsDeleteDiscussionLegacyRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersTeamsDeleteDiscussionLegacyEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersTeamsDeleteDiscussionLegacyEndpoint {
   def apply(
     parameters: TeamsDeleteDiscussionLegacyEndpoint,
     request: TeamsDeleteDiscussionLegacyRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersTeamsDeleteDiscussionLegacyEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersTeamsDeleteDiscussionLegacyEndpoint]
@@ -39,6 +37,6 @@ object ParametersTeamsDeleteDiscussionLegacyEndpoint {
     def setRequest(value: TeamsDeleteDiscussionLegacyRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

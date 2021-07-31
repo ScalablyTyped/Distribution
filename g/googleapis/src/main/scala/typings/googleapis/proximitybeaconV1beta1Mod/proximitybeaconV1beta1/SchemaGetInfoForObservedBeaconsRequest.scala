@@ -2,14 +2,12 @@ package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for beacon and attachment information about beacons that a mobile
   * client has encountered &quot;in the wild&quot;.
   */
-@js.native
 trait SchemaGetInfoForObservedBeaconsRequest extends StObject {
   
   /**
@@ -19,12 +17,12 @@ trait SchemaGetInfoForObservedBeaconsRequest extends StObject {
     * &lt;var&gt;namespace/type&lt;/var&gt;. Accepts `*` to specify all types
     * in all namespaces owned by the client. Optional.
     */
-  var namespacedTypes: js.UndefOr[js.Array[String]] = js.native
+  var namespacedTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The beacons that the client has encountered. At least one must be given.
     */
-  var observations: js.UndefOr[js.Array[SchemaObservation]] = js.native
+  var observations: js.UndefOr[js.Array[SchemaObservation]] = js.undefined
 }
 object SchemaGetInfoForObservedBeaconsRequest {
   

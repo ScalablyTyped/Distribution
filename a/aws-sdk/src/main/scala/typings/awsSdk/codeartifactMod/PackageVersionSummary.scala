@@ -2,26 +2,24 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PackageVersionSummary extends StObject {
   
   /**
     *  The revision associated with a package version. 
     */
-  var revision: js.UndefOr[PackageVersionRevision] = js.native
+  var revision: js.UndefOr[PackageVersionRevision] = js.undefined
   
   /**
     *  A string that contains the status of the package version. It can be one of the following:     Published     Unfinished     Unlisted     Archived     Disposed   
     */
-  var status: PackageVersionStatus = js.native
+  var status: PackageVersionStatus
   
   /**
     *  Information about a package version. 
     */
-  var version: PackageVersion = js.native
+  var version: PackageVersion
 }
 object PackageVersionSummary {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusCondition extends StObject {
   
   /** Machine-friendly representation of the condition */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /** Human-friendly representation of the condition */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object StatusCondition {
   

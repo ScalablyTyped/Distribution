@@ -3,14 +3,12 @@ package typings.googleapis.composerV1Mod.composerV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the selection and configuration of software inside the
   * environment.
   */
-@js.native
 trait SchemaSoftwareConfig extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait SchemaSoftwareConfig extends StObject {
     * [blacklisted](/composer/docs/how-to/managing/setting-airflow-configurations#airflow_configuration_blacklists),
     * and cannot be overridden.
     */
-  var airflowConfigOverrides: js.UndefOr[StringDictionary[String]] = js.native
+  var airflowConfigOverrides: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Optional. Additional environment variables to provide to the Apache
@@ -42,7 +40,7 @@ trait SchemaSoftwareConfig extends StObject {
     * `GCS_BUCKET` * `GKE_CLUSTER_NAME` * `SQL_DATABASE` * `SQL_INSTANCE` *
     * `SQL_PASSWORD` * `SQL_PROJECT` * `SQL_REGION` * `SQL_USER`
     */
-  var envVariables: js.UndefOr[StringDictionary[String]] = js.native
+  var envVariables: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The version of the software running in the environment. This encapsulates
@@ -62,7 +60,7 @@ trait SchemaSoftwareConfig extends StObject {
     * name](https://github.com/apache/incubator-airflow/releases).  See also
     * [Version List](/composer/docs/concepts/versioning/composer-versions).
     */
-  var imageVersion: js.UndefOr[String] = js.native
+  var imageVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Custom Python Package Index (PyPI) packages to be installed in
@@ -72,7 +70,7 @@ trait SchemaSoftwareConfig extends StObject {
     * &quot;[devel]&gt;=1.8.2, &lt;1.9.2&quot;. To specify a package without
     * pinning it to a version specifier, use the empty string as the value.
     */
-  var pypiPackages: js.UndefOr[StringDictionary[String]] = js.native
+  var pypiPackages: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Optional. The major version of Python used to run the Apache Airflow
@@ -80,7 +78,7 @@ trait SchemaSoftwareConfig extends StObject {
     * &#39;3&#39;. If not specified, the default is &#39;2&#39;. Cannot be
     * updated.
     */
-  var pythonVersion: js.UndefOr[String] = js.native
+  var pythonVersion: js.UndefOr[String] = js.undefined
 }
 object SchemaSoftwareConfig {
   

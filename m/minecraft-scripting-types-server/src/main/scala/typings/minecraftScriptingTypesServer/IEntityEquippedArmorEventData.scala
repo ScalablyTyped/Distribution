@@ -4,24 +4,22 @@ import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.IItemStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is triggered whenever an entity equips an item in their armor slots.
   */
-@js.native
 trait IEntityEquippedArmorEventData extends StObject {
   
   /**
     * The entity who is equipping the armor
     */
-  var entity: IEntity = js.native
+  var entity: IEntity
   
   /**
     * The armor that is being equipped
     */
-  var item_stack: IItemStack = js.native
+  var item_stack: IItemStack
 }
 object IEntityEquippedArmorEventData {
   

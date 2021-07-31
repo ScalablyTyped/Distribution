@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SplitCapacityCommitmentResponse extends StObject {
   
   /** First capacity commitment, result of a split. */
-  var first: js.UndefOr[CapacityCommitment] = js.native
+  var first: js.UndefOr[CapacityCommitment] = js.undefined
   
   /** Second capacity commitment, result of a split. */
-  var second: js.UndefOr[CapacityCommitment] = js.native
+  var second: js.UndefOr[CapacityCommitment] = js.undefined
 }
 object SplitCapacityCommitmentResponse {
   

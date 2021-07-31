@@ -3,17 +3,15 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.colorPickerBaseMod.ColorComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Component extends StObject {
   
   /** Which color component is being edited */
-  var component: ColorComponent = js.native
+  var component: ColorComponent
   
   /** Currently entered value, which is not valid */
-  var value: String = js.native
+  var value: String
 }
 object Component {
   

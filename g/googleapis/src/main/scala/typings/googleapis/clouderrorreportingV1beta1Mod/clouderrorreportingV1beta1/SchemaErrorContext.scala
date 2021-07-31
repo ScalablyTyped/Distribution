@@ -2,7 +2,6 @@ package typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * be provided by the application when reporting an error, unless the error
   * report has been generated automatically from Google App Engine logs.
   */
-@js.native
 trait SchemaErrorContext extends StObject {
   
   /**
     * The HTTP request which was processed when the error was triggered.
     */
-  var httpRequest: js.UndefOr[SchemaHttpRequestContext] = js.native
+  var httpRequest: js.UndefOr[SchemaHttpRequestContext] = js.undefined
   
   /**
     * The location in the source code where the decision was made to report the
@@ -24,13 +22,13 @@ trait SchemaErrorContext extends StObject {
     * would be the source line where the exception is logged, usually close to
     * the place where it was caught.
     */
-  var reportLocation: js.UndefOr[SchemaSourceLocation] = js.native
+  var reportLocation: js.UndefOr[SchemaSourceLocation] = js.undefined
   
   /**
     * Source code that was used to build the executable which has caused the
     * given error message.
     */
-  var sourceReferences: js.UndefOr[js.Array[SchemaSourceReference]] = js.native
+  var sourceReferences: js.UndefOr[js.Array[SchemaSourceReference]] = js.undefined
   
   /**
     * The user who caused or was affected by the crash. This can be a user ID,
@@ -40,7 +38,7 @@ trait SchemaErrorContext extends StObject {
     * data, such as remote IP address, to distinguish affected users. See
     * `affected_users_count` in `ErrorGroupStats`.
     */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object SchemaErrorContext {
   

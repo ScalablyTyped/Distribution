@@ -5,17 +5,15 @@ import typings.googleapis.v3Mod.analyticsV3.SchemaProfileRef
 import typings.googleapis.v3Mod.analyticsV3.SchemaWebPropertyRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountRef extends StObject {
   
-  var accountRef: js.UndefOr[SchemaAccountRef] = js.native
+  var accountRef: js.UndefOr[SchemaAccountRef] = js.undefined
   
-  var profileRef: js.UndefOr[SchemaProfileRef] = js.native
+  var profileRef: js.UndefOr[SchemaProfileRef] = js.undefined
   
-  var webPropertyRef: js.UndefOr[SchemaWebPropertyRef] = js.native
+  var webPropertyRef: js.UndefOr[SchemaWebPropertyRef] = js.undefined
 }
 object AccountRef {
   

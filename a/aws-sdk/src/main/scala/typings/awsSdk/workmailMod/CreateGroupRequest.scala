@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateGroupRequest extends StObject {
   
   /**
     * The name of the group.
     */
-  var Name: GroupName = js.native
+  var Name: GroupName
   
   /**
     * The organization under which the group is to be created.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
 }
 object CreateGroupRequest {
   

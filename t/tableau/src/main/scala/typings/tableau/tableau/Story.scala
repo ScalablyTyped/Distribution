@@ -2,39 +2,39 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Story extends Sheet {
+trait Story
+  extends StObject
+     with Sheet {
   
   /** Activates the next story point if there is one. If the current story point is the last one, then is stays active. */
-  def activateNextStoryPointAsync(): js.Promise[StoryPoint] = js.native
+  def activateNextStoryPointAsync(): js.Promise[StoryPoint]
   
   /** Activates the previous story point if there is one. If the current story point is the first one, then it stays active. */
-  def activatePreviousStoryPointAsync(): js.Promise[StoryPoint] = js.native
+  def activatePreviousStoryPointAsync(): js.Promise[StoryPoint]
   
   /**
     * Activates the story point at the specified index and returns a promise of the activated StoryPoint.
     * Throws a tableau.ErrorCode.INDEX_OUT_OF_RANGE error if the index is less than zero or greater than or equal to the number of story points in the array.
     */
-  def activateStoryPointAsync(index: Double): js.Promise[StoryPoint] = js.native
+  def activateStoryPointAsync(index: Double): js.Promise[StoryPoint]
   
   /** Gets the currently active story point. */
-  def getActiveStoryPoint(): StoryPoint = js.native
+  def getActiveStoryPoint(): StoryPoint
   
   /**
     * Gets an array (not a collection) of StoryPointInfo objects.
     * Note that this is not a collection, since we don’t have a unique string key for a story point.
     * We only need ordinal access to the story points (by index).
     */
-  def getStoryPointsInfo(): js.Array[StoryPointInfo] = js.native
+  def getStoryPointsInfo(): js.Array[StoryPointInfo]
   
   /**
     * Reverts the story point at the specified index and returns a promise of the reverted StoryPoint.
     * Throws a tableau.ErrorCode.INDEX_OUT_OF_RANGE error if the index is less than zero or greater than or equal to the number of story points in the array.
     */
-  def revertStoryPointAsync(index: Double): js.Promise[StoryPoint] = js.native
+  def revertStoryPointAsync(index: Double): js.Promise[StoryPoint]
 }
 object Story {
   

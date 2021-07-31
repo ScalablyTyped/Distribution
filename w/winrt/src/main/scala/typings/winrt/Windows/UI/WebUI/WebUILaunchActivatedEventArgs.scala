@@ -6,12 +6,11 @@ import typings.winrt.Windows.ApplicationModel.Activation.ILaunchActivatedEventAr
 import typings.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebUILaunchActivatedEventArgs
-  extends ILaunchActivatedEventArgs
+  extends StObject
+     with ILaunchActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUILaunchActivatedEventArgs {
   

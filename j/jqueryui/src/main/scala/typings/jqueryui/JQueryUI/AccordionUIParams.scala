@@ -3,19 +3,17 @@ package typings.jqueryui.JQueryUI
 import typings.jqueryui.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccordionUIParams extends StObject {
   
-  var newHeader: JQuery = js.native
+  var newHeader: JQuery
   
-  var newPanel: JQuery = js.native
+  var newPanel: JQuery
   
-  var oldHeader: JQuery = js.native
+  var oldHeader: JQuery
   
-  var oldPanel: JQuery = js.native
+  var oldPanel: JQuery
 }
 object AccordionUIParams {
   

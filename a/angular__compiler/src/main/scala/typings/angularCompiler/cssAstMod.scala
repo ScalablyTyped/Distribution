@@ -5,10 +5,13 @@ import typings.angularCompiler.srcParseUtilMod.ParseLocation
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssAstMod {
+  
+  @JSImport("@angular/compiler/src/css_parser/css_ast", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait BlockType extends StObject
@@ -17,55 +20,79 @@ object cssAstMod {
   object BlockType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[BlockType with Double] = js.native
+    def apply(value: Double): js.UndefOr[BlockType & Double] = js.native
     
     @js.native
-    sealed trait Charset extends BlockType
-    /* 1 */ val Charset: typings.angularCompiler.cssAstMod.BlockType.Charset with Double = js.native
+    sealed trait Charset
+      extends StObject
+         with BlockType
+    /* 1 */ val Charset: typings.angularCompiler.cssAstMod.BlockType.Charset & Double = js.native
     
     @js.native
-    sealed trait Document extends BlockType
-    /* 9 */ val Document: typings.angularCompiler.cssAstMod.BlockType.Document with Double = js.native
+    sealed trait Document
+      extends StObject
+         with BlockType
+    /* 9 */ val Document: typings.angularCompiler.cssAstMod.BlockType.Document & Double = js.native
     
     @js.native
-    sealed trait FontFace extends BlockType
-    /* 7 */ val FontFace: typings.angularCompiler.cssAstMod.BlockType.FontFace with Double = js.native
+    sealed trait FontFace
+      extends StObject
+         with BlockType
+    /* 7 */ val FontFace: typings.angularCompiler.cssAstMod.BlockType.FontFace & Double = js.native
     
     @js.native
-    sealed trait Import extends BlockType
-    /* 0 */ val Import: typings.angularCompiler.cssAstMod.BlockType.Import with Double = js.native
+    sealed trait Import
+      extends StObject
+         with BlockType
+    /* 0 */ val Import: typings.angularCompiler.cssAstMod.BlockType.Import & Double = js.native
     
     @js.native
-    sealed trait Keyframes extends BlockType
-    /* 4 */ val Keyframes: typings.angularCompiler.cssAstMod.BlockType.Keyframes with Double = js.native
+    sealed trait Keyframes
+      extends StObject
+         with BlockType
+    /* 4 */ val Keyframes: typings.angularCompiler.cssAstMod.BlockType.Keyframes & Double = js.native
     
     @js.native
-    sealed trait MediaQuery extends BlockType
-    /* 5 */ val MediaQuery: typings.angularCompiler.cssAstMod.BlockType.MediaQuery with Double = js.native
+    sealed trait MediaQuery
+      extends StObject
+         with BlockType
+    /* 5 */ val MediaQuery: typings.angularCompiler.cssAstMod.BlockType.MediaQuery & Double = js.native
     
     @js.native
-    sealed trait Namespace extends BlockType
-    /* 2 */ val Namespace: typings.angularCompiler.cssAstMod.BlockType.Namespace with Double = js.native
+    sealed trait Namespace
+      extends StObject
+         with BlockType
+    /* 2 */ val Namespace: typings.angularCompiler.cssAstMod.BlockType.Namespace & Double = js.native
     
     @js.native
-    sealed trait Page extends BlockType
-    /* 8 */ val Page: typings.angularCompiler.cssAstMod.BlockType.Page with Double = js.native
+    sealed trait Page
+      extends StObject
+         with BlockType
+    /* 8 */ val Page: typings.angularCompiler.cssAstMod.BlockType.Page & Double = js.native
     
     @js.native
-    sealed trait Selector extends BlockType
-    /* 6 */ val Selector: typings.angularCompiler.cssAstMod.BlockType.Selector with Double = js.native
+    sealed trait Selector
+      extends StObject
+         with BlockType
+    /* 6 */ val Selector: typings.angularCompiler.cssAstMod.BlockType.Selector & Double = js.native
     
     @js.native
-    sealed trait Supports extends BlockType
-    /* 3 */ val Supports: typings.angularCompiler.cssAstMod.BlockType.Supports with Double = js.native
+    sealed trait Supports
+      extends StObject
+         with BlockType
+    /* 3 */ val Supports: typings.angularCompiler.cssAstMod.BlockType.Supports & Double = js.native
     
     @js.native
-    sealed trait Unsupported extends BlockType
-    /* 11 */ val Unsupported: typings.angularCompiler.cssAstMod.BlockType.Unsupported with Double = js.native
+    sealed trait Unsupported
+      extends StObject
+         with BlockType
+    /* 11 */ val Unsupported: typings.angularCompiler.cssAstMod.BlockType.Unsupported & Double = js.native
     
     @js.native
-    sealed trait Viewport extends BlockType
-    /* 10 */ val Viewport: typings.angularCompiler.cssAstMod.BlockType.Viewport with Double = js.native
+    sealed trait Viewport
+      extends StObject
+         with BlockType
+    /* 10 */ val Viewport: typings.angularCompiler.cssAstMod.BlockType.Viewport & Double = js.native
   }
   
   @JSImport("@angular/compiler/src/css_parser/css_ast", "CssAst")
@@ -288,12 +315,10 @@ object cssAstMod {
     var tokens: js.Array[CssToken] = js.native
   }
   
-  @JSImport("@angular/compiler/src/css_parser/css_ast", "mergeTokens")
-  @js.native
-  def mergeTokens(tokens: js.Array[CssToken]): CssToken = js.native
-  @JSImport("@angular/compiler/src/css_parser/css_ast", "mergeTokens")
-  @js.native
-  def mergeTokens(tokens: js.Array[CssToken], separator: String): CssToken = js.native
+  @scala.inline
+  def mergeTokens(tokens: js.Array[CssToken]): CssToken = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeTokens")(tokens.asInstanceOf[js.Any]).asInstanceOf[CssToken]
+  @scala.inline
+  def mergeTokens(tokens: js.Array[CssToken], separator: String): CssToken = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeTokens")(tokens.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[CssToken]
   
   @js.native
   trait CssAstVisitor extends StObject {

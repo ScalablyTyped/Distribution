@@ -4,24 +4,24 @@ import typings.dashjs.dashjsStrings.periodSwitchCompleted
 import typings.dashjs.dashjsStrings.periodSwitchStarted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PeriodSwitchEvent extends Event {
+trait PeriodSwitchEvent
+  extends StObject
+     with Event {
   
-  var fromStreamInfo: js.UndefOr[StreamInfo | Null] = js.native
+  var fromStreamInfo: js.UndefOr[StreamInfo | Null] = js.undefined
   
-  var toStreamInfo: StreamInfo | Null = js.native
+  var toStreamInfo: StreamInfo | Null
   
   @JSName("type")
-  var type_PeriodSwitchEvent: periodSwitchCompleted | periodSwitchStarted = js.native
+  var type_PeriodSwitchEvent: periodSwitchCompleted | periodSwitchStarted
 }
 object PeriodSwitchEvent {
   
   @scala.inline
   def apply(`type`: periodSwitchCompleted | periodSwitchStarted): PeriodSwitchEvent = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(toStreamInfo = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeriodSwitchEvent]
   }

@@ -2,18 +2,16 @@ package typings.massive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Pick<massive.massive.SearchDefinition, 'fields' | 'term'> */
-  @js.native
   trait PickSearchDefinitionfield extends StObject {
     
-    var fields: js.Array[String] = js.native
+    var fields: js.Array[String]
     
-    var term: String = js.native
+    var term: String
   }
   object PickSearchDefinitionfield {
     

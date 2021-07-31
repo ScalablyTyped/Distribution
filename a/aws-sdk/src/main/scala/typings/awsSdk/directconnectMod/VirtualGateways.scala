@@ -2,16 +2,14 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGateways extends StObject {
   
   /**
     * The virtual private gateways.
     */
-  var virtualGateways: js.UndefOr[VirtualGatewayList] = js.native
+  var virtualGateways: js.UndefOr[VirtualGatewayList] = js.undefined
 }
 object VirtualGateways {
   

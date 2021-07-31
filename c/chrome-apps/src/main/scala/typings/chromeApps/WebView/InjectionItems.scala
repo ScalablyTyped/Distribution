@@ -2,21 +2,19 @@ package typings.chromeApps.WebView
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The type of injection item: code or a set of files. */
-@js.native
 trait InjectionItems extends StObject {
   
   /** JavaScript code or CSS to be injected into matching pages. */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * The list of JavaScript or CSS files to be injected into matching pages.
     * These are injected in the order they appear in this array.
     */
-  var files: js.UndefOr[js.Array[_]] = js.native
+  var files: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object InjectionItems {
   
@@ -36,7 +34,7 @@ object InjectionItems {
     def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def setFiles(value: js.Array[_]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    def setFiles(value: js.Array[js.Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)

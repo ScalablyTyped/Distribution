@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait City extends StObject {
   
   /**
     * The city name of the remote IP address.
     */
-  var CityName: js.UndefOr[String] = js.native
+  var CityName: js.UndefOr[String] = js.undefined
 }
 object City {
   

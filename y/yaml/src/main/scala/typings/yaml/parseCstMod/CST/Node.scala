@@ -6,46 +6,44 @@ import typings.yaml.utilMod.Type
 import typings.yaml.utilMod.YAMLSyntaxError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Node extends StObject {
   
-  val anchor: String | Null = js.native
+  val anchor: String | Null
   
-  val comment: String | Null = js.native
+  val comment: String | Null
   
-  var context: ParseContext | Null = js.native
+  var context: ParseContext | Null
   
   /** if not null, indicates a parser failure */
-  var error: YAMLSyntaxError | Null = js.native
+  var error: YAMLSyntaxError | Null
   
-  val hasComment: Boolean = js.native
+  val hasComment: Boolean
   
-  val hasProps: Boolean = js.native
+  val hasProps: Boolean
   
-  val jsonLike: Boolean = js.native
+  val jsonLike: Boolean
   
   /** anchors, tags and comments */
-  var props: js.Array[Range] = js.native
+  var props: js.Array[Range]
   
   /** span of context.src parsed into this node */
-  var range: Range | Null = js.native
+  var range: Range | Null
   
-  val rawValue: String | Null = js.native
+  val rawValue: String | Null
   
-  val tag: Null | Verbatim | Handle = js.native
+  val tag: Null | Verbatim | Handle
   
   /** specific node type */
-  var `type`: Type = js.native
+  var `type`: Type
   
   /** if non-null, overrides source value */
-  var value: String | Null = js.native
+  var value: String | Null
   
-  var valueRange: Range | Null = js.native
+  var valueRange: Range | Null
   
-  val valueRangeContainsNewline: Boolean = js.native
+  val valueRangeContainsNewline: Boolean
 }
 object Node {
   
@@ -58,7 +56,7 @@ object Node {
     `type`: Type,
     valueRangeContainsNewline: Boolean
   ): Node = {
-    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any], anchor = null, comment = null, context = null, error = null, range = null, rawValue = null, tag = null, value = null, valueRange = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }

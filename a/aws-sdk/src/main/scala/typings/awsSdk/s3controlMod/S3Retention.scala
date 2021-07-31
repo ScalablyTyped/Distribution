@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Retention extends StObject {
   
   /**
     * The Object Lock retention mode to be applied to all objects in the Batch Operations job.
     */
-  var Mode: js.UndefOr[S3ObjectLockRetentionMode] = js.native
+  var Mode: js.UndefOr[S3ObjectLockRetentionMode] = js.undefined
   
   /**
     * The date when the applied Object Lock retention will expire on all objects set by the Batch Operations job.
     */
-  var RetainUntilDate: js.UndefOr[TimeStamp] = js.native
+  var RetainUntilDate: js.UndefOr[TimeStamp] = js.undefined
 }
 object S3Retention {
   

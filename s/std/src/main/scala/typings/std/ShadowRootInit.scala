@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShadowRootInit extends StObject {
   
-  var delegatesFocus: js.UndefOr[scala.Boolean] = js.native
+  var delegatesFocus: js.UndefOr[scala.Boolean] = js.undefined
   
-  var mode: ShadowRootMode = js.native
+  var mode: ShadowRootMode
 }
 object ShadowRootInit {
   

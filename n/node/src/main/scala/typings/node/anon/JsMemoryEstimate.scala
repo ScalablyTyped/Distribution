@@ -2,15 +2,13 @@ package typings.node.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsMemoryEstimate extends StObject {
   
-  var jsMemoryEstimate: Double = js.native
+  var jsMemoryEstimate: Double
   
-  var jsMemoryRange: js.Tuple2[Double, Double] = js.native
+  var jsMemoryRange: js.Tuple2[Double, Double]
 }
 object JsMemoryEstimate {
   

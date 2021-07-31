@@ -2,15 +2,13 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
-  var location: Height = js.native
+  var location: Height
   
-  var words: String = js.native
+  var words: String
 }
 object Location {
   

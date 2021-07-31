@@ -2,31 +2,29 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSipRuleRequest extends StObject {
   
   /**
     * The new value specified to indicate whether the rule is disabled.
     */
-  var Disabled: js.UndefOr[NullableBoolean] = js.native
+  var Disabled: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The new name for the specified SIP rule.
     */
-  var Name: SipRuleName = js.native
+  var Name: SipRuleName
   
   /**
     * The SIP rule ID.
     */
-  var SipRuleId: NonEmptyString = js.native
+  var SipRuleId: NonEmptyString
   
   /**
     * The new value of the list of target applications.
     */
-  var TargetApplications: js.UndefOr[SipRuleTargetApplicationList] = js.native
+  var TargetApplications: js.UndefOr[SipRuleTargetApplicationList] = js.undefined
 }
 object UpdateSipRuleRequest {
   

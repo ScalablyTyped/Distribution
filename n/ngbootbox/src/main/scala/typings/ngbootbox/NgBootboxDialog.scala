@@ -3,37 +3,35 @@ package typings.ngbootbox
 import typings.bootbox.BootboxButtonMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NgBootboxDialog extends StObject {
   
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var backdrop: js.UndefOr[Boolean] = js.native
+  var backdrop: js.UndefOr[Boolean] = js.undefined
   
-  var buttons: js.UndefOr[BootboxButtonMap] = js.native
+  var buttons: js.UndefOr[BootboxButtonMap] = js.undefined
   
-  var callback: js.UndefOr[js.Function0[_]] = js.native
+  var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var closeButton: js.UndefOr[Boolean] = js.native
+  var closeButton: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var onEscape: js.UndefOr[js.Function0[_ | Boolean]] = js.native
+  var onEscape: js.UndefOr[js.Function0[js.Any | Boolean]] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var templateUrl: js.UndefOr[String] = js.native
+  var templateUrl: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object NgBootboxDialog {
   
@@ -65,7 +63,7 @@ object NgBootboxDialog {
     def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def setCallback(value: () => _): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
     def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
@@ -95,7 +93,7 @@ object NgBootboxDialog {
     def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setOnEscape(value: () => _ | Boolean): Self = StObject.set(x, "onEscape", js.Any.fromFunction0(value))
+    def setOnEscape(value: () => js.Any | Boolean): Self = StObject.set(x, "onEscape", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnEscapeUndefined: Self = StObject.set(x, "onEscape", js.undefined)

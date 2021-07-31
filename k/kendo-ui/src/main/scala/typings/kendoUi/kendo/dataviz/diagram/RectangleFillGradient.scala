@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.dataviz.diagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RectangleFillGradient extends StObject {
   
-  var center: js.UndefOr[js.Any] = js.native
+  var center: js.UndefOr[js.Any] = js.undefined
   
-  var end: js.UndefOr[js.Any] = js.native
+  var end: js.UndefOr[js.Any] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var start: js.UndefOr[js.Any] = js.native
+  var start: js.UndefOr[js.Any] = js.undefined
   
-  var stops: js.UndefOr[js.Array[RectangleFillGradientStop]] = js.native
+  var stops: js.UndefOr[js.Array[RectangleFillGradientStop]] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object RectangleFillGradient {
   

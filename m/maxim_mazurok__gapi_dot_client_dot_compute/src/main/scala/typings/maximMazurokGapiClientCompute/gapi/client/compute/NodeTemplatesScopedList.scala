@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeTemplatesScopedList extends StObject {
   
   /** [Output Only] A list of node templates contained in this scope. */
-  var nodeTemplates: js.UndefOr[js.Array[NodeTemplate]] = js.native
+  var nodeTemplates: js.UndefOr[js.Array[NodeTemplate]] = js.undefined
   
   /** [Output Only] An informational warning that appears when the node templates list is empty. */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object NodeTemplatesScopedList {
   

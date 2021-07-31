@@ -2,36 +2,34 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpAddressDetails extends StObject {
   
   /**
     * The Internet Protocol version 4 (IPv4) address of the device.
     */
-  var ipAddressV4: js.UndefOr[string] = js.native
+  var ipAddressV4: js.UndefOr[string] = js.undefined
   
   /**
     * The city that the IP address originated from.
     */
-  var ipCity: js.UndefOr[IpCity] = js.native
+  var ipCity: js.UndefOr[IpCity] = js.undefined
   
   /**
     * The country that the IP address originated from.
     */
-  var ipCountry: js.UndefOr[IpCountry] = js.native
+  var ipCountry: js.UndefOr[IpCountry] = js.undefined
   
   /**
     * The geographic coordinates of the location that the IP address originated from.
     */
-  var ipGeoLocation: js.UndefOr[IpGeoLocation] = js.native
+  var ipGeoLocation: js.UndefOr[IpGeoLocation] = js.undefined
   
   /**
     * The registered owner of the IP address.
     */
-  var ipOwner: js.UndefOr[IpOwner] = js.native
+  var ipOwner: js.UndefOr[IpOwner] = js.undefined
 }
 object IpAddressDetails {
   

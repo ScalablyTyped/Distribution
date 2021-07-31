@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeListMessages extends StObject {
   
-  var commands: js.UndefOr[TreeListMessagesCommands] = js.native
+  var commands: js.UndefOr[TreeListMessagesCommands] = js.undefined
   
-  var loading: js.UndefOr[String] = js.native
+  var loading: js.UndefOr[String] = js.undefined
   
-  var noRows: js.UndefOr[String] = js.native
+  var noRows: js.UndefOr[String] = js.undefined
   
-  var requestFailed: js.UndefOr[String] = js.native
+  var requestFailed: js.UndefOr[String] = js.undefined
   
-  var retry: js.UndefOr[String] = js.native
+  var retry: js.UndefOr[String] = js.undefined
 }
 object TreeListMessages {
   

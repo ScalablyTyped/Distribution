@@ -2,19 +2,17 @@ package typings.raygun.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuiltError extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var innerError: js.UndefOr[BuiltError] = js.native
+  var innerError: js.UndefOr[BuiltError] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  var stackTrace: js.UndefOr[js.Array[StackFrame]] = js.native
+  var stackTrace: js.UndefOr[js.Array[StackFrame]] = js.undefined
 }
 object BuiltError {
   

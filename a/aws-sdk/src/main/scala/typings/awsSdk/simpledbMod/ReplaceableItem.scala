@@ -2,21 +2,19 @@ package typings.awsSdk.simpledbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaceableItem extends StObject {
   
   /**
     * The list of attributes for a replaceable item.
     */
-  var Attributes: ReplaceableAttributeList = js.native
+  var Attributes: ReplaceableAttributeList
   
   /**
     * The name of the replaceable item.
     */
-  var Name: String = js.native
+  var Name: String
 }
 object ReplaceableItem {
   

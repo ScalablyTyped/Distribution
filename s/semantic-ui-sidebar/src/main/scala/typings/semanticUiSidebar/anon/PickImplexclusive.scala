@@ -2,14 +2,12 @@ package typings.semanticUiSidebar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sidebar.SemanticUI.SidebarSettings._Impl, 'exclusive'> */
-@js.native
 trait PickImplexclusive extends StObject {
   
-  var exclusive: Boolean = js.native
+  var exclusive: Boolean
 }
 object PickImplexclusive {
   

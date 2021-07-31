@@ -5,49 +5,49 @@ import typings.angularCompiler.coreMod.ChangeDetectionStrategy
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CompileDirectiveSummary extends CompileTypeSummary {
+trait CompileDirectiveSummary
+  extends StObject
+     with CompileTypeSummary {
   
-  var changeDetection: ChangeDetectionStrategy | Null = js.native
+  var changeDetection: ChangeDetectionStrategy | Null
   
-  var componentFactory: StaticSymbol | js.Object | Null = js.native
+  var componentFactory: StaticSymbol | js.Object | Null
   
-  var componentViewType: StaticSymbol | ProxyClass | Null = js.native
+  var componentViewType: StaticSymbol | ProxyClass | Null
   
-  var entryComponents: js.Array[CompileEntryComponentMetadata] = js.native
+  var entryComponents: js.Array[CompileEntryComponentMetadata]
   
-  var exportAs: String | Null = js.native
+  var exportAs: String | Null
   
-  var guards: StringDictionary[js.Any] = js.native
+  var guards: StringDictionary[js.Any]
   
-  var hostAttributes: StringDictionary[String] = js.native
+  var hostAttributes: StringDictionary[String]
   
-  var hostListeners: StringDictionary[String] = js.native
+  var hostListeners: StringDictionary[String]
   
-  var hostProperties: StringDictionary[String] = js.native
+  var hostProperties: StringDictionary[String]
   
-  var inputs: StringDictionary[String] = js.native
+  var inputs: StringDictionary[String]
   
-  var isComponent: Boolean = js.native
+  var isComponent: Boolean
   
-  var outputs: StringDictionary[String] = js.native
+  var outputs: StringDictionary[String]
   
-  var providers: js.Array[CompileProviderMetadata] = js.native
+  var providers: js.Array[CompileProviderMetadata]
   
-  var queries: js.Array[CompileQueryMetadata] = js.native
+  var queries: js.Array[CompileQueryMetadata]
   
-  var rendererType: StaticSymbol | js.Object | Null = js.native
+  var rendererType: StaticSymbol | js.Object | Null
   
-  var selector: String | Null = js.native
+  var selector: String | Null
   
-  var template: CompileTemplateSummary | Null = js.native
+  var template: CompileTemplateSummary | Null
   
-  var viewProviders: js.Array[CompileProviderMetadata] = js.native
+  var viewProviders: js.Array[CompileProviderMetadata]
   
-  var viewQueries: js.Array[CompileQueryMetadata] = js.native
+  var viewQueries: js.Array[CompileQueryMetadata]
 }
 object CompileDirectiveSummary {
   
@@ -67,7 +67,7 @@ object CompileDirectiveSummary {
     viewProviders: js.Array[CompileProviderMetadata],
     viewQueries: js.Array[CompileQueryMetadata]
   ): CompileDirectiveSummary = {
-    val __obj = js.Dynamic.literal(entryComponents = entryComponents.asInstanceOf[js.Any], guards = guards.asInstanceOf[js.Any], hostAttributes = hostAttributes.asInstanceOf[js.Any], hostListeners = hostListeners.asInstanceOf[js.Any], hostProperties = hostProperties.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], viewProviders = viewProviders.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(entryComponents = entryComponents.asInstanceOf[js.Any], guards = guards.asInstanceOf[js.Any], hostAttributes = hostAttributes.asInstanceOf[js.Any], hostListeners = hostListeners.asInstanceOf[js.Any], hostProperties = hostProperties.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], viewProviders = viewProviders.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any], changeDetection = null, componentFactory = null, componentViewType = null, exportAs = null, rendererType = null, selector = null, summaryKind = null, template = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileDirectiveSummary]
   }

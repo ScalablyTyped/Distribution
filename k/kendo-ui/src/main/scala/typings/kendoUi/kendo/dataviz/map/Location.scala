@@ -3,29 +3,29 @@ package typings.kendoUi.kendo.dataviz.map
 import typings.kendoUi.kendo.Class
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Location extends Class {
+trait Location
+  extends StObject
+     with Class {
   
-  def destination(destination: Location, bearing: Double): Double = js.native
+  def destination(destination: Location, bearing: Double): Double
   
-  def distanceTo(distance: Double, bearing: Double): Location = js.native
+  def distanceTo(distance: Double, bearing: Double): Location
   
-  def equals(location: Location): Boolean = js.native
+  def equals(location: Location): Boolean
   
-  var lat: Double = js.native
+  var lat: Double
   
-  var lng: Double = js.native
+  var lng: Double
   
-  var options: LocationOptions = js.native
+  var options: LocationOptions
   
-  def round(digits: Double): Location = js.native
+  def round(digits: Double): Location
   
-  def toArray(): js.Any = js.native
+  def toArray(): js.Any
   
-  def wrap(): Location = js.native
+  def wrap(): Location
 }
 object Location {
   

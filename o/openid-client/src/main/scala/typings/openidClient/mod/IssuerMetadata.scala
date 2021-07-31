@@ -3,44 +3,43 @@ package typings.openidClient.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IssuerMetadata
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var authorization_endpoint: js.UndefOr[String] = js.native
+  var authorization_endpoint: js.UndefOr[String] = js.undefined
   
-  var end_session_endpoint: js.UndefOr[String] = js.native
+  var end_session_endpoint: js.UndefOr[String] = js.undefined
   
-  var introspection_endpoint_auth_methods_supported: js.UndefOr[js.Array[String]] = js.native
+  var introspection_endpoint_auth_methods_supported: js.UndefOr[js.Array[String]] = js.undefined
   
-  var introspection_endpoint_auth_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.native
+  var introspection_endpoint_auth_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.undefined
   
-  var issuer: String = js.native
+  var issuer: String
   
-  var jwks_uri: js.UndefOr[String] = js.native
+  var jwks_uri: js.UndefOr[String] = js.undefined
   
-  var mtls_endpoint_aliases: js.UndefOr[MtlsEndpointAliases] = js.native
+  var mtls_endpoint_aliases: js.UndefOr[MtlsEndpointAliases] = js.undefined
   
-  var registration_endpoint: js.UndefOr[String] = js.native
+  var registration_endpoint: js.UndefOr[String] = js.undefined
   
-  var request_object_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.native
+  var request_object_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.undefined
   
-  var revocation_endpoint: js.UndefOr[String] = js.native
+  var revocation_endpoint: js.UndefOr[String] = js.undefined
   
-  var revocation_endpoint_auth_methods_supported: js.UndefOr[js.Array[String]] = js.native
+  var revocation_endpoint_auth_methods_supported: js.UndefOr[js.Array[String]] = js.undefined
   
-  var revocation_endpoint_auth_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.native
+  var revocation_endpoint_auth_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.undefined
   
-  var token_endpoint: js.UndefOr[String] = js.native
+  var token_endpoint: js.UndefOr[String] = js.undefined
   
-  var token_endpoint_auth_methods_supported: js.UndefOr[js.Array[String]] = js.native
+  var token_endpoint_auth_methods_supported: js.UndefOr[js.Array[String]] = js.undefined
   
-  var token_endpoint_auth_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.native
+  var token_endpoint_auth_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.undefined
   
-  var userinfo_endpoint: js.UndefOr[String] = js.native
+  var userinfo_endpoint: js.UndefOr[String] = js.undefined
 }
 object IssuerMetadata {
   

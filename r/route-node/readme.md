@@ -10,9 +10,9 @@ A package to create a tree of named routes
 | ------------------ | :-------------: |
 | Full name          | route-node |
 | Keywords           | route tree, named route, route matching |
-| # releases         | 6 |
+| # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 901453 |
+| # downloads        | 1096752 |
 | # stars            | 0 |
 
 ## Links

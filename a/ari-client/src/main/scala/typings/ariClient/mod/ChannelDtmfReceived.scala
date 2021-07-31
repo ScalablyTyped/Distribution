@@ -3,26 +3,26 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChannelDtmfReceived extends Event {
+trait ChannelDtmfReceived
+  extends StObject
+     with Event {
   
   /**
     * The channel on which DTMF was received.
     */
-  var channel: Channel = js.native
+  var channel: Channel
   
   /**
     * DTMF digit received (0-9, A-E, # or *).
     */
-  var digit: String = js.native
+  var digit: String
   
   /**
     * Number of milliseconds DTMF was received.
     */
-  var duration_ms: Double = js.native
+  var duration_ms: Double
 }
 object ChannelDtmfReceived {
   

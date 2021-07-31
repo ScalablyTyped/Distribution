@@ -8,33 +8,33 @@ import typings.contentfulManagement.commonTypesMod.DefaultElements
 import typings.contentfulManagement.createEnvironmentApiMod.ContentfulEnvironmentAPI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object environmentMod {
   
-  @JSImport("contentful-management/dist/typings/entities/environment", "wrapEnvironment")
+  @JSImport("contentful-management/dist/typings/entities/environment", JSImport.Namespace)
   @js.native
-  def wrapEnvironment(http: AxiosInstance, data: EnvironmentProps): Environment = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/environment", "wrapEnvironmentCollection")
-  @js.native
-  def wrapEnvironmentCollection(http: AxiosInstance, data: CollectionProp[EnvironmentProps]): Collection[Environment, EnvironmentProps] = js.native
+  @scala.inline
+  def wrapEnvironment(http: AxiosInstance, data: EnvironmentProps): Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEnvironment")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Environment]
   
-  type Environment = ContentfulEnvironmentAPI with EnvironmentProps with DefaultElements[EnvironmentProps]
+  @scala.inline
+  def wrapEnvironmentCollection(http: AxiosInstance, data: CollectionProp[EnvironmentProps]): Collection[Environment, EnvironmentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEnvironmentCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Environment, EnvironmentProps]]
   
-  @js.native
+  type Environment = ContentfulEnvironmentAPI & EnvironmentProps & DefaultElements[EnvironmentProps]
+  
   trait EnvironmentProps extends StObject {
     
     /**
       * Name of the environmant
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * System metadata
       */
-    var sys: MetaSysPropsspacesysMetaLArchivedVersion = js.native
+    var sys: MetaSysPropsspacesysMetaLArchivedVersion
   }
   object EnvironmentProps {
     

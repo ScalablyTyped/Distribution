@@ -3,27 +3,26 @@ package typings.cssSelectorTokenizer.mod
 import typings.cssSelectorTokenizer.cssSelectorTokenizerStrings.`nested-pseudo-class`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NestedPseudoClassNode
-  extends SelectorNodeType
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with SelectorNodeType {
   
   @JSName("name")
-  var name_NestedPseudoClassNode: String = js.native
+  var name_NestedPseudoClassNode: String
   
-  var nodes: js.Array[SelectorNode] = js.native
+  var nodes: js.Array[SelectorNode]
   
-  var `type`: `nested-pseudo-class` = js.native
+  var `type`: `nested-pseudo-class`
 }
 object NestedPseudoClassNode {
   
   @scala.inline
-  def apply(name: String, nodes: js.Array[SelectorNode], `type`: `nested-pseudo-class`): NestedPseudoClassNode = {
+  def apply(name: String, nodes: js.Array[SelectorNode]): NestedPseudoClassNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("nested-pseudo-class")
     __obj.asInstanceOf[NestedPseudoClassNode]
   }
   

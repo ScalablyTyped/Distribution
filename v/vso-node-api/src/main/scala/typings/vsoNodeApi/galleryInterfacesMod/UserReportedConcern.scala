@@ -3,36 +3,34 @@ package typings.vsoNodeApi.galleryInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserReportedConcern extends StObject {
   
   /**
     * Category of the concern
     */
-  var category: ConcernCategory = js.native
+  var category: ConcernCategory
   
   /**
     * User comment associated with the report
     */
-  var concernText: String = js.native
+  var concernText: String
   
   /**
     * Id of the review which was reported
     */
-  var reviewId: Double = js.native
+  var reviewId: Double
   
   /**
     * Date the report was submitted
     */
-  var submittedDate: Date = js.native
+  var submittedDate: Date
   
   /**
     * Id of the user who reported a review
     */
-  var userId: String = js.native
+  var userId: String
 }
 object UserReportedConcern {
   

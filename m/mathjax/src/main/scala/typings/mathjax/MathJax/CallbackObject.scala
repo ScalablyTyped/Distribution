@@ -2,32 +2,30 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallbackObject extends StObject {
   
   /*Set this to true if you want to be able to call the callback more than once. (This is the case for signal
     * listeners, for example).*/
-  var autoReset: Boolean = js.native
+  var autoReset: Boolean
   
   /*Set to true after the callback has been called, and undefined otherwise. A callback will not be executed a
     * second time unless the callback’s reset() method is called first, or its autoReset property is set to true.
     */
-  var called: Boolean = js.native
+  var called: Boolean
   
   /*An array containing the arguments to pass to the callback function when it is executed.*/
-  var data: js.Array[_] = js.native
+  var data: js.Array[js.Any]
   
   /*The function to be called when the callback is executed.*/
-  var hook: Double = js.native
+  var hook: Double
   
   /*The object to use as this during the call to the callback function.*/
-  var `object`: js.Any = js.native
+  var `object`: js.Any
   
   /*Clears the callback’s called property.*/
-  def reset(): Unit = js.native
+  def reset(): Unit
 }
 object CallbackObject {
   
@@ -35,7 +33,7 @@ object CallbackObject {
   def apply(
     autoReset: Boolean,
     called: Boolean,
-    data: js.Array[_],
+    data: js.Array[js.Any],
     hook: Double,
     `object`: js.Any,
     reset: () => Unit
@@ -55,7 +53,7 @@ object CallbackObject {
     def setCalled(value: Boolean): Self = StObject.set(x, "called", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))

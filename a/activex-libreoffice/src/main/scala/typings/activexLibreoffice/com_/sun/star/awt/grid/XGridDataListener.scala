@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,20 +15,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * .
   * @since OOo 3.3
   */
-@js.native
-trait XGridDataListener extends XEventListener {
+trait XGridDataListener
+  extends StObject
+     with XEventListener {
   
   /** is called when existing data in a grid control's data model has been modified. */
-  def dataChanged(Event: GridDataEvent): Unit = js.native
+  def dataChanged(Event: GridDataEvent): Unit
   
   /** is called when the title of one or more rows changed. */
-  def rowHeadingChanged(Event: GridDataEvent): Unit = js.native
+  def rowHeadingChanged(Event: GridDataEvent): Unit
   
   /** is called when one or more rows of data have been inserted into a grid control's data model. */
-  def rowsInserted(Event: GridDataEvent): Unit = js.native
+  def rowsInserted(Event: GridDataEvent): Unit
   
   /** is called when one or more rows of data have been removed from a grid control's data model. */
-  def rowsRemoved(Event: GridDataEvent): Unit = js.native
+  def rowsRemoved(Event: GridDataEvent): Unit
 }
 object XGridDataListener {
   

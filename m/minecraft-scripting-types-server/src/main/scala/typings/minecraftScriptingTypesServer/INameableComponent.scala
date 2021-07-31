@@ -4,41 +4,39 @@ import typings.minecraftScriptingTypesServer.anon.Namefilter
 import typings.minecraftScriptingTypesShared.MinecraftTrigger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Nameable component describes an entity's ability to be named using a nametag and whether the name shows up or not once applied. Additionally, scripting allows setting the name of the entity directly with the property 'name'.
   */
-@js.native
 trait INameableComponent extends StObject {
   
   /**
     * If true, this entity can be renamed with name tags
     * @default true
     */
-  var allowNameTagRenaming: Boolean = js.native
+  var allowNameTagRenaming: Boolean
   
   /**
     * If true, the name will always be shown
     * @default false
     */
-  var alwaysShow: Boolean = js.native
+  var alwaysShow: Boolean
   
   /**
     * Trigger to run when the entity gets named
     */
-  var default_trigger: MinecraftTrigger | String = js.native
+  var default_trigger: MinecraftTrigger | String
   
   /**
     * The current name of the entity, empty if the entity hasn't been named yet, making this non-empty will apply the name to the entity
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Describes the special names for this entity and the events to call when the entity acquires those names
     */
-  var name_actions: js.Array[Namefilter] = js.native
+  var name_actions: js.Array[Namefilter]
 }
 object INameableComponent {
   

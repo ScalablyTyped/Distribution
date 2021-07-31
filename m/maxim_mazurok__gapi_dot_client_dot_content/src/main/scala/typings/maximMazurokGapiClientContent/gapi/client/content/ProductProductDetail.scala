@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductProductDetail extends StObject {
   
   /** The name of the product detail. */
-  var attributeName: js.UndefOr[String] = js.native
+  var attributeName: js.UndefOr[String] = js.undefined
   
   /** The value of the product detail. */
-  var attributeValue: js.UndefOr[String] = js.native
+  var attributeValue: js.UndefOr[String] = js.undefined
   
   /** The section header used to group a set of product details. */
-  var sectionName: js.UndefOr[String] = js.native
+  var sectionName: js.UndefOr[String] = js.undefined
 }
 object ProductProductDetail {
   

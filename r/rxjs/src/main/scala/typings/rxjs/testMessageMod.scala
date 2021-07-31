@@ -3,24 +3,22 @@ package typings.rxjs
 import typings.rxjs.notificationMod.Notification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testMessageMod {
   
-  @js.native
   trait TestMessage extends StObject {
     
-    var frame: Double = js.native
+    var frame: Double
     
-    var isGhost: js.UndefOr[Boolean] = js.native
+    var isGhost: js.UndefOr[Boolean] = js.undefined
     
-    var notification: Notification[_] = js.native
+    var notification: Notification[js.Any]
   }
   object TestMessage {
     
     @scala.inline
-    def apply(frame: Double, notification: Notification[_]): TestMessage = {
+    def apply(frame: Double, notification: Notification[js.Any]): TestMessage = {
       val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], notification = notification.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestMessage]
     }
@@ -38,7 +36,7 @@ object testMessageMod {
       def setIsGhostUndefined: Self = StObject.set(x, "isGhost", js.undefined)
       
       @scala.inline
-      def setNotification(value: Notification[_]): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      def setNotification(value: Notification[js.Any]): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     }
   }
 }

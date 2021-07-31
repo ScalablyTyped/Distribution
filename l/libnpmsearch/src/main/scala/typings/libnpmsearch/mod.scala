@@ -10,52 +10,44 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("libnpmsearch", JSImport.Namespace)
-  @js.native
-  def apply(query: String): js.Promise[js.Array[Result]] = js.native
-  @JSImport("libnpmsearch", JSImport.Namespace)
-  @js.native
-  def apply(query: String, opts: Optionsdetailedtrue): js.Promise[js.Array[DetailedResult]] = js.native
-  @JSImport("libnpmsearch", JSImport.Namespace)
-  @js.native
-  def apply(query: String, opts: Options): js.Promise[js.Array[Result]] = js.native
-  @JSImport("libnpmsearch", JSImport.Namespace)
-  @js.native
-  def apply(query: js.Array[String]): js.Promise[js.Array[Result]] = js.native
-  @JSImport("libnpmsearch", JSImport.Namespace)
-  @js.native
-  def apply(query: js.Array[String], opts: Optionsdetailedtrue): js.Promise[js.Array[DetailedResult]] = js.native
-  @JSImport("libnpmsearch", JSImport.Namespace)
-  @js.native
-  def apply(query: js.Array[String], opts: Options): js.Promise[js.Array[Result]] = js.native
+  @scala.inline
+  def apply(query: String): js.Promise[js.Array[Result]] = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Result]]]
+  @scala.inline
+  def apply(query: String, opts: Optionsdetailedtrue): js.Promise[js.Array[DetailedResult]] = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DetailedResult]]]
+  @scala.inline
+  def apply(query: String, opts: Options): js.Promise[js.Array[Result]] = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Result]]]
+  @scala.inline
+  def apply(query: js.Array[String]): js.Promise[js.Array[Result]] = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Result]]]
+  @scala.inline
+  def apply(query: js.Array[String], opts: Optionsdetailedtrue): js.Promise[js.Array[DetailedResult]] = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DetailedResult]]]
+  @scala.inline
+  def apply(query: js.Array[String], opts: Options): js.Promise[js.Array[Result]] = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Result]]]
   
-  @JSImport("libnpmsearch", "stream")
+  @JSImport("libnpmsearch", JSImport.Namespace)
   @js.native
-  def stream(query: String): ReadWriteStream = js.native
-  @JSImport("libnpmsearch", "stream")
-  @js.native
-  def stream(query: String, opts: Options): ReadWriteStream = js.native
-  @JSImport("libnpmsearch", "stream")
-  @js.native
-  def stream(query: js.Array[String]): ReadWriteStream = js.native
-  @JSImport("libnpmsearch", "stream")
-  @js.native
-  def stream(query: js.Array[String], opts: Options): ReadWriteStream = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def stream(query: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def stream(query: String, opts: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def stream(query: js.Array[String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def stream(query: js.Array[String], opts: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  
   trait DetailedResult extends StObject {
     
     @JSName("package")
-    var _package: Result = js.native
+    var _package: Result
     
-    var score: Score = js.native
+    var score: Score
     
-    var searchScore: Double = js.native
+    var searchScore: Double
   }
   object DetailedResult {
     
@@ -80,12 +72,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Maintainer extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var username: String = js.native
+    var username: String
   }
   object Maintainer {
     
@@ -106,22 +97,32 @@ object mod {
     }
   }
   
-  type Options = SearchOptions with typings.npmRegistryFetch.mod.Options
+  trait Options
+    extends StObject
+       with SearchOptions
+       with typings.npmRegistryFetch.mod.Options
+  object Options {
+    
+    @scala.inline
+    def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+  }
   
-  @js.native
   trait Result extends StObject {
     
-    var date: js.UndefOr[Date] = js.native
+    var date: js.UndefOr[Date] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var keywords: js.UndefOr[js.Array[String]] = js.native
+    var keywords: js.UndefOr[js.Array[String]] = js.undefined
     
-    var maintainers: js.UndefOr[js.Array[Maintainer]] = js.native
+    var maintainers: js.UndefOr[js.Array[Maintainer]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object Result {
     
@@ -172,12 +173,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Score extends StObject {
     
-    var detail: Maintenance = js.native
+    var detail: Maintenance
     
-    var `final`: Double = js.native
+    var `final`: Double
   }
   object Score {
     
@@ -199,7 +199,6 @@ object mod {
     }
   }
   
-  @js.native
   trait SearchOptions extends StObject {
     
     /**
@@ -208,45 +207,45 @@ object mod {
       * other two containing details about how that package scored. Useful
       * for UIs. Default: `false`
       */
-    var detailed: js.UndefOr[Boolean] = js.native
+    var detailed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Offset number for results. Used with `opts.limit` for pagination.
       * Default: `0`
       */
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
     /**
       * Number of results to limit the query to. Default: `20`
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * Decimal number between `0` and `1` that defines the weight of
       * `maintenance` metrics when scoring and sorting packages.
       * Default: `0.65` (same as `opts.sortBy: 'optimal'`)
       */
-    var maintenance: js.UndefOr[Double] = js.native
+    var maintenance: js.UndefOr[Double] = js.undefined
     
     /**
       * Decimal number between `0` and `1` that defines the weight of
       * `popularity` metrics when scoring and sorting packages.
       * Default: `0.98` (same as `opts.sortBy: 'optimal'`)
       */
-    var popularity: js.UndefOr[Double] = js.native
+    var popularity: js.UndefOr[Double] = js.undefined
     
     /**
       * Decimal number between `0` and `1` that defines the weight of
       * `quality` metrics when scoring and sorting packages.
       * Default: `0.5` (same as `opts.sortBy: 'optimal'`)
       */
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
     /**
       * Used as a shorthand to set `opts.quality`, `opts.maintenance`, and
       * `opts.popularity` with values that prioritize each one.
       */
-    var sortBy: js.UndefOr[optimal | quality | maintenance | popularity] = js.native
+    var sortBy: js.UndefOr[optimal | quality | maintenance | popularity] = js.undefined
   }
   object SearchOptions {
     

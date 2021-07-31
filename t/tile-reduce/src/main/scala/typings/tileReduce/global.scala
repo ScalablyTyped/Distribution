@@ -2,7 +2,6 @@ package typings.tileReduce
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -32,8 +31,11 @@ object global {
       *     console.log('starting')
       * })
       */
+    @scala.inline
+    def apply(options: Options): Events = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Events]
+    
     @JSGlobal("TileReduce")
     @js.native
-    def apply(options: Options): Events = js.native
+    val ^ : js.Any = js.native
   }
 }

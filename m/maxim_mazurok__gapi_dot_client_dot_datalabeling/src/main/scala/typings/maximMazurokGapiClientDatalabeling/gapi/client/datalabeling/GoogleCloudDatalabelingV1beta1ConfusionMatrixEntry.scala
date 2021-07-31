@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry extends StObject {
   
   /** The annotation spec of a predicted label. */
-  var annotationSpec: js.UndefOr[GoogleCloudDatalabelingV1beta1AnnotationSpec] = js.native
+  var annotationSpec: js.UndefOr[GoogleCloudDatalabelingV1beta1AnnotationSpec] = js.undefined
   
   /** Number of items predicted to have this label. (The ground truth label for these items is the `Row.annotationSpec` of this entry's parent.) */
-  var itemCount: js.UndefOr[Double] = js.native
+  var itemCount: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry {
   

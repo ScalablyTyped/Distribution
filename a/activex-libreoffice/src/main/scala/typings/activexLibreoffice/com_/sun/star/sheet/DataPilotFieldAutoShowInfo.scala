@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,23 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If enabled, only a number of items with the highest or lowest result values are shown. The other items are hidden automatically.
   * @see com.sun.star.sheet.DataPilotField
   */
-@js.native
 trait DataPilotFieldAutoShowInfo extends StObject {
   
   /** specifies the field where the values to show and select are taken from. */
-  var DataField: String = js.native
+  var DataField: String
   
   /** specifies whether the AutoShow feature is enabled or not. */
-  var IsEnabled: Boolean = js.native
+  var IsEnabled: Boolean
   
   /** specifies the number of the items to show. */
-  var ItemCount: Double = js.native
+  var ItemCount: Double
   
   /**
     * specifies the mode which items have to be shown.
     * @see com.sun.star.sheet.DataPilotFieldShowItemsMode
     */
-  var ShowItemsMode: Double = js.native
+  var ShowItemsMode: Double
 }
 object DataPilotFieldAutoShowInfo {
   

@@ -3,25 +3,23 @@ package typings.wegameApi.wx.types
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocketConnectParams extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var header: js.UndefOr[StringDictionary[String]] = js.native
+  var header: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var method: js.UndefOr[RequestMethod] = js.native
+  var method: js.UndefOr[RequestMethod] = js.undefined
   
-  var protocols: js.UndefOr[js.Array[String]] = js.native
+  var protocols: js.UndefOr[js.Array[String]] = js.undefined
   
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object SocketConnectParams {
   

@@ -5,7 +5,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,29 +13,28 @@ object mod extends Shortcut {
   @js.native
   val default: FC[LoaderProps] = js.native
   
-  @js.native
   trait LoaderProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var secondaryColor: js.UndefOr[String] = js.native
+    var secondaryColor: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     // in milliseconds
-    var `type`: js.UndefOr[Types] = js.native
+    var `type`: js.UndefOr[Types] = js.undefined
     
-    var visible: js.UndefOr[Boolean | String] = js.native
+    var visible: js.UndefOr[Boolean | String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LoaderProps {
     

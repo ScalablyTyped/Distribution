@@ -10,10 +10,13 @@ import typings.yauzl.anon.Data
 import typings.yauzl.anon.End
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("yauzl", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("yauzl", "Entry")
   @js.native
@@ -134,102 +137,85 @@ object mod {
     var validateEntrySizes: Boolean = js.native
   }
   
-  @JSImport("yauzl", "dosDateTimeToDate")
-  @js.native
-  def dosDateTimeToDate(date: Double, time: Double): Date = js.native
+  @scala.inline
+  def dosDateTimeToDate(date: Double, time: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("dosDateTimeToDate")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("yauzl", "fromBuffer")
-  @js.native
-  def fromBuffer(buffer: Buffer): Unit = js.native
-  @JSImport("yauzl", "fromBuffer")
-  @js.native
+  @scala.inline
+  def fromBuffer(buffer: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def fromBuffer(
     buffer: Buffer,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
-  ): Unit = js.native
-  @JSImport("yauzl", "fromBuffer")
-  @js.native
-  def fromBuffer(buffer: Buffer, options: Options): Unit = js.native
-  @JSImport("yauzl", "fromBuffer")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fromBuffer(buffer: Buffer, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def fromBuffer(
     buffer: Buffer,
     options: Options,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yauzl", "fromFd")
-  @js.native
-  def fromFd(fd: Double): Unit = js.native
-  @JSImport("yauzl", "fromFd")
-  @js.native
+  @scala.inline
+  def fromFd(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def fromFd(
     fd: Double,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
-  ): Unit = js.native
-  @JSImport("yauzl", "fromFd")
-  @js.native
-  def fromFd(fd: Double, options: Options): Unit = js.native
-  @JSImport("yauzl", "fromFd")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fromFd(fd: Double, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def fromFd(
     fd: Double,
     options: Options,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yauzl", "fromRandomAccessReader")
-  @js.native
+  @scala.inline
   def fromRandomAccessReader(
     reader: RandomAccessReader,
     totalSize: Double,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
-  ): Unit = js.native
-  @JSImport("yauzl", "fromRandomAccessReader")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandomAccessReader")(reader.asInstanceOf[js.Any], totalSize.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def fromRandomAccessReader(
     reader: RandomAccessReader,
     totalSize: Double,
     options: Options,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandomAccessReader")(reader.asInstanceOf[js.Any], totalSize.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yauzl", "open")
-  @js.native
-  def open(path: String): Unit = js.native
-  @JSImport("yauzl", "open")
-  @js.native
+  @scala.inline
+  def open(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def open(
     path: String,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
-  ): Unit = js.native
-  @JSImport("yauzl", "open")
-  @js.native
-  def open(path: String, options: Options): Unit = js.native
-  @JSImport("yauzl", "open")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def open(path: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def open(
     path: String,
     options: Options,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yauzl", "validateFileName")
-  @js.native
-  def validateFileName(fileName: String): String | Null = js.native
+  @scala.inline
+  def validateFileName(fileName: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validateFileName")(fileName.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @js.native
   trait Options extends StObject {
     
-    var autoClose: js.UndefOr[Boolean] = js.native
+    var autoClose: js.UndefOr[Boolean] = js.undefined
     
-    var decodeStrings: js.UndefOr[Boolean] = js.native
+    var decodeStrings: js.UndefOr[Boolean] = js.undefined
     
-    var lazyEntries: js.UndefOr[Boolean] = js.native
+    var lazyEntries: js.UndefOr[Boolean] = js.undefined
     
-    var strictFileNames: js.UndefOr[Boolean] = js.native
+    var strictFileNames: js.UndefOr[Boolean] = js.undefined
     
-    var validateEntrySizes: js.UndefOr[Boolean] = js.native
+    var validateEntrySizes: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -274,22 +260,21 @@ object mod {
     }
   }
   
-  @js.native
   trait ZipFileOptions extends StObject {
     
-    var decompress: Boolean | Null = js.native
+    var decompress: Boolean | Null
     
-    var decrypt: Boolean | Null = js.native
+    var decrypt: Boolean | Null
     
-    var end: Double | Null = js.native
+    var end: Double | Null
     
-    var start: Double | Null = js.native
+    var start: Double | Null
   }
   object ZipFileOptions {
     
     @scala.inline
     def apply(): ZipFileOptions = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(decompress = null, decrypt = null, end = null, start = null)
       __obj.asInstanceOf[ZipFileOptions]
     }
     

@@ -4,14 +4,14 @@ import typings.chromeApps.chrome.fileSystemProvider.internal.EntryPathRequestedE
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeleteEntryRequestedEventOptions extends EntryPathRequestedEventOptions {
+trait DeleteEntryRequestedEventOptions
+  extends StObject
+     with EntryPathRequestedEventOptions {
   
   /** Whether the operation is recursive (for directories only). */
-  var recursive: Boolean = js.native
+  var recursive: Boolean
 }
 object DeleteEntryRequestedEventOptions {
   

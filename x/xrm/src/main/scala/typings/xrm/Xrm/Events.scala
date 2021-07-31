@@ -8,7 +8,6 @@ import typings.xrm.Xrm.ProcessFlow.StageChangeDirection
 import typings.xrm.XrmEnum.SaveMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Events {
@@ -25,32 +24,31 @@ object Events {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/clientapi-execution-context External Link: Client API execution context}
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/execution-context External Link: Execution context (Client API reference)}
     */
-  @js.native
   trait EventContext extends StObject {
     
     /**
       * Gets the Xrm context.
       * @returns The Xrm context.
       */
-    def getContext(): GlobalContext = js.native
+    def getContext(): GlobalContext
     
     /**
       * Gets the handler's depth, which is the order in which the handler is executed.
       * @returns The depth, a 0-based index.
       */
-    def getDepth(): Double = js.native
+    def getDepth(): Double
     
     /**
       * Gets a reference to the object for which event occurred.
       * @returns The event source.
       */
-    def getEventSource(): Attribute | Control | Entity = js.native
+    def getEventSource(): Attribute | Control | Entity
     
     /**
       * Gets a reference to the currnet form context
       * @returns The {@link FormContext form context}
       */
-    def getFormContext(): FormContext = js.native
+    def getFormContext(): FormContext
     
     /**
       * @summary Gets the shared variable with the specified key.
@@ -60,7 +58,7 @@ object Events {
       * @desc Gets the shared variable with the specified key.
       * Used to pass values between handlers of an event.
       */
-    def getSharedVariable[T](key: String): T = js.native
+    def getSharedVariable[T](key: String): T
     
     /**
       * @summary Sets a shared variable.
@@ -70,7 +68,7 @@ object Events {
       * @desc Sets the shared variable with the specified key.
       * Used to pass values between handlers of an event.
       */
-    def setSharedVariable[T](key: String, value: T): Unit = js.native
+    def setSharedVariable[T](key: String, value: T): Unit
   }
   object EventContext {
     
@@ -119,7 +117,6 @@ object Events {
   /**
     * Interface for save event arguments.
     */
-  @js.native
   trait SaveEventArguments extends StObject {
     
     /**
@@ -139,19 +136,19 @@ object Events {
       * * 16     Qualify (Lead)
       * * 15     Disqualify (Lead)
       */
-    def getSaveMode(): SaveMode = js.native
+    def getSaveMode(): SaveMode
     
     /**
       * Returns a boolean value to indicate if the record's save has been prevented.
       * @returns true if saving is prevented, otherwise false.
       */
-    def isDefaultPrevented(): Boolean = js.native
+    def isDefaultPrevented(): Boolean
     
     /**
       * Prevents the save operation from being submitted to the server.
       * All remaining "on save" handlers will continue execution.
       */
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
   }
   object SaveEventArguments {
     
@@ -178,14 +175,15 @@ object Events {
   /**
     * Interface for a save event context
     */
-  @js.native
-  trait SaveEventContext extends EventContext {
+  trait SaveEventContext
+    extends StObject
+       with EventContext {
     
     /**
       * Gets save-event arguments.
       * @returns The event arguments.  Returns null for all but the "save" event.
       */
-    def getEventArgs(): SaveEventArguments = js.native
+    def getEventArgs(): SaveEventArguments
   }
   object SaveEventContext {
     
@@ -214,25 +212,24 @@ object Events {
   /**
     * Interface for process stage change event arguments.
     */
-  @js.native
   trait StageChangeEventArguments extends StObject {
     
     /**
       * Gets the direction of the stage change.
       * @returns The direction: "next" or "previous"
       */
-    def getDirection(): StageChangeDirection = js.native
+    def getDirection(): StageChangeDirection
     
     /**
       * Gets the destination stage object
       * @returns The stage object. For switching between entities, returns the previous stage object
       */
-    def getStage(): Stage = js.native
+    def getStage(): Stage
     
     /**
       * Prevents the stage or status change operation from being submitted to the server.
       */
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
   }
   object StageChangeEventArguments {
     
@@ -259,14 +256,15 @@ object Events {
   /**
     * Interface for a process stage change event context
     */
-  @js.native
-  trait StageChangeEventContext extends EventContext {
+  trait StageChangeEventContext
+    extends StObject
+       with EventContext {
     
     /**
       * Gets process stage change event arguments.
       * @returns The event arguments.
       */
-    def getEventArgs(): StageChangeEventArguments = js.native
+    def getEventArgs(): StageChangeEventArguments
   }
   object StageChangeEventContext {
     
@@ -295,14 +293,13 @@ object Events {
   /**
     * Interface for process stage selected event arguments.
     */
-  @js.native
   trait StageSelectedEventArguments extends StObject {
     
     /**
       * Gets the selected stage object
       * @returns The stage object
       */
-    def getStage(): Stage = js.native
+    def getStage(): Stage
   }
   object StageSelectedEventArguments {
     
@@ -320,14 +317,15 @@ object Events {
     }
   }
   
-  @js.native
-  trait StageSelectedEventContext extends EventContext {
+  trait StageSelectedEventContext
+    extends StObject
+       with EventContext {
     
     /**
       * Gets process stage selected event arguments.
       * @returns The event arguments.
       */
-    def getEventArgs(): StageSelectedEventArguments = js.native
+    def getEventArgs(): StageSelectedEventArguments
   }
   object StageSelectedEventContext {
     

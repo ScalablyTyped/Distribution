@@ -4,89 +4,89 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IResultSet extends IBase {
+trait IResultSet
+  extends StObject
+     with IBase {
   
   /** [Config Option] (Number) */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /** [Method] Returns the value of count
     * @returns Number
     */
-  var getCount: js.UndefOr[js.Function0[Double]] = js.native
+  var getCount: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of loaded
     * @returns Boolean
     */
-  var getLoaded: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getLoaded: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of message
     * @returns String
     */
-  var getMessage: js.UndefOr[js.Function0[String]] = js.native
+  var getMessage: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of records
     * @returns Ext.data.Model[]
     */
-  var getRecords: js.UndefOr[js.Function0[Array]] = js.native
+  var getRecords: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of success
     * @returns Boolean
     */
-  var getSuccess: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getSuccess: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of total
     * @returns Number
     */
-  var getTotal: js.UndefOr[js.Function0[Double]] = js.native
+  var getTotal: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var loaded: js.UndefOr[Boolean] = js.native
+  var loaded: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Ext.data.Model[]) */
-  var records: js.UndefOr[Array] = js.native
+  var records: js.UndefOr[Array] = js.undefined
   
   /** [Method] Sets the value of count
     * @param count Number The new value.
     */
-  var setCount: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], Unit]] = js.native
+  var setCount: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of loaded
     * @param loaded Boolean The new value.
     */
-  var setLoaded: js.UndefOr[js.Function1[/* loaded */ js.UndefOr[Boolean], Unit]] = js.native
+  var setLoaded: js.UndefOr[js.Function1[/* loaded */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of message
     * @param message String The new value.
     */
-  var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[String], Unit]] = js.native
+  var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of records
     * @param records Ext.data.Model[] The new value.
     */
-  var setRecords: js.UndefOr[js.Function1[/* records */ js.UndefOr[Array], Unit]] = js.native
+  var setRecords: js.UndefOr[js.Function1[/* records */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of success
     * @param success Boolean The new value.
     */
-  var setSuccess: js.UndefOr[js.Function1[/* success */ js.UndefOr[Boolean], Unit]] = js.native
+  var setSuccess: js.UndefOr[js.Function1[/* success */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of total
     * @param total Number The new value.
     */
-  var setTotal: js.UndefOr[js.Function1[/* total */ js.UndefOr[Double], Unit]] = js.native
+  var setTotal: js.UndefOr[js.Function1[/* total */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var success: js.UndefOr[Boolean] = js.native
+  var success: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object IResultSet {
   

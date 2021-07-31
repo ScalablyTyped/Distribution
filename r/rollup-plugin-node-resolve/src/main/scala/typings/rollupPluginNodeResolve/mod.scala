@@ -5,19 +5,19 @@ import typings.rollup.mod.Plugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rollup-plugin-node-resolve", JSImport.Default)
+  @JSImport("rollup-plugin-node-resolve", JSImport.Namespace)
   @js.native
-  def default(): Plugin = js.native
-  @JSImport("rollup-plugin-node-resolve", JSImport.Default)
-  @js.native
-  def default(options: Options): Plugin = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
+  @scala.inline
+  def default(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  
   trait Options extends StObject {
     
     /**
@@ -27,33 +27,33 @@ object mod {
     	 * "mainfields" option, otherwise pkg.browser will be ignored
     	 * @default false
     	 */
-    var browser: js.UndefOr[Boolean] = js.native
+    var browser: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * Any additional options that should be passed through
     	 * to node-resolve
     	 */
-    var customResolveOptions: js.UndefOr[AsyncOpts] = js.native
+    var customResolveOptions: js.UndefOr[AsyncOpts] = js.undefined
     
     /**
     	 * Force resolving for these modules to root's node_modules that helps
     	 * to prevent bundling the same package multiple times if package is
     	 * imported from dependencies.
     	 */
-    var dedupe: js.UndefOr[js.Array[String] | (js.Function1[/* importee */ String, Boolean])] = js.native
+    var dedupe: js.UndefOr[js.Array[String] | (js.Function1[/* importee */ String, Boolean])] = js.undefined
     
     /**
     	 * not all files you want to resolve are .js files
     	 * @default [ '.mjs', '.js', '.json', '.node' ]
     	 */
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     	 * Lock the module search in this path (like a chroot). Module defined
     	 * outside this path will be marked as external
     	 * @default '/'
     	 */
-    var jail: js.UndefOr[String] = js.native
+    var jail: js.UndefOr[String] = js.undefined
     
     /**
     	 * @deprecated use "mainFields" instead
@@ -63,7 +63,7 @@ object mod {
     	 * - see: https://github.com/rollup/rollup/wiki/pkg.module
     	 * @default false
     	 */
-    var jsnext: js.UndefOr[Boolean] = js.native
+    var jsnext: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * @deprecated use "mainFields" instead
@@ -72,7 +72,7 @@ object mod {
     	 * – see https://github.com/rollup/rollup-plugin-commonjs
     	 * @default true
     	 */
-    var main: js.UndefOr[Boolean] = js.native
+    var main: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * the fields to scan in a package.json to determine the entry point
@@ -80,21 +80,21 @@ object mod {
     	 * will be used
     	 * @default ['module', 'main']
     	 */
-    var mainFields: js.UndefOr[js.Array[String]] = js.native
+    var mainFields: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     	 * @deprecated use "mainFields" instead
     	 * use "module" field for ES6 module if possible
     	 * @default true
     	 */
-    var module: js.UndefOr[Boolean] = js.native
+    var module: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * If true, inspect resolved files to check that they are
     	 * ES2015 modules
     	 * @default false
     	 */
-    var modulesOnly: js.UndefOr[Boolean] = js.native
+    var modulesOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * Set to an array of strings and/or regexps to lock the module search
@@ -102,14 +102,14 @@ object mod {
     	 * entry will be marked as external
     	 * @default null
     	 */
-    var only: js.UndefOr[(js.Array[String | RegExp]) | Null] = js.native
+    var only: js.UndefOr[(js.Array[String | RegExp]) | Null] = js.undefined
     
     /**
     	 * whether to prefer built-in modules (e.g. `fs`, `path`) or
     	 * local ones with the same names
     	 * @default true
     	 */
-    var preferBuiltins: js.UndefOr[Boolean] = js.native
+    var preferBuiltins: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

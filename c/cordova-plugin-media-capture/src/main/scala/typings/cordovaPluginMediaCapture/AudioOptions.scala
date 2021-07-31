@@ -2,21 +2,19 @@ package typings.cordovaPluginMediaCapture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Encapsulates audio capture configuration options. */
-@js.native
 trait AudioOptions extends StObject {
   
   /** The maximum duration of a audio clip, in seconds. */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of audio clips the device's user can capture in a single
     * capture operation. The value must be greater than or equal to 1.
     */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
 }
 object AudioOptions {
   

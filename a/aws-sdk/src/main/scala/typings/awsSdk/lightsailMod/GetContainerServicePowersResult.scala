@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContainerServicePowersResult extends StObject {
   
   /**
     * An array of objects that describe the powers that can be specified for a container service.
     */
-  var powers: js.UndefOr[ContainerServicePowerList] = js.native
+  var powers: js.UndefOr[ContainerServicePowerList] = js.undefined
 }
 object GetContainerServicePowersResult {
   

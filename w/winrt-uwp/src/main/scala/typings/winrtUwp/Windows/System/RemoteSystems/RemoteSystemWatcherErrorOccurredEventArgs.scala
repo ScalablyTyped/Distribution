@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Gets information about an **ErrorOccurred** event, namely the **RemoteSystemWatcherError** value describing the error. */
-@js.native
 trait RemoteSystemWatcherErrorOccurredEventArgs extends StObject {
   
   /** The **RemoteSystemWatcherError** value representing the error that occurred during discovery, causing the containing **ErrorOccurred** event to be raised. */
-  var error: RemoteSystemWatcherError = js.native
+  var error: RemoteSystemWatcherError
 }
 object RemoteSystemWatcherErrorOccurredEventArgs {
   

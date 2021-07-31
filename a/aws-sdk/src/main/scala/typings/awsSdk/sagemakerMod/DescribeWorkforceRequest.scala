@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWorkforceRequest extends StObject {
   
   /**
     * The name of the private workforce whose access you want to restrict. WorkforceName is automatically set to default when a workforce is created and cannot be modified. 
     */
-  var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName = js.native
+  var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName
 }
 object DescribeWorkforceRequest {
   

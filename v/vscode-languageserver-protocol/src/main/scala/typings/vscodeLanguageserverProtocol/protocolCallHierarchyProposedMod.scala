@@ -20,7 +20,6 @@ import typings.vscodeLanguageserverTypes.mod.SymbolTag
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object protocolCallHierarchyProposedMod {
@@ -31,8 +30,6 @@ object protocolCallHierarchyProposedMod {
     @js.native
     val method: callHierarchySlashincomingCalls = js.native
     
-    type HandlerSignature = RequestHandler[CallHierarchyIncomingCallsParams, js.Array[CallHierarchyIncomingCall] | Null, Unit]
-    
     @JSImport("vscode-languageserver-protocol/lib/protocol.callHierarchy.proposed", "CallHierarchyIncomingCallsRequest.type")
     @js.native
     val `type`: ProtocolRequestType[
@@ -42,6 +39,8 @@ object protocolCallHierarchyProposedMod {
         Unit, 
         Unit
       ] = js.native
+    
+    type HandlerSignature = RequestHandler[CallHierarchyIncomingCallsParams, js.Array[CallHierarchyIncomingCall] | Null, Unit]
   }
   
   object CallHierarchyOutgoingCallsRequest {
@@ -49,8 +48,6 @@ object protocolCallHierarchyProposedMod {
     @JSImport("vscode-languageserver-protocol/lib/protocol.callHierarchy.proposed", "CallHierarchyOutgoingCallsRequest.method")
     @js.native
     val method: callHierarchySlashoutgoingCalls = js.native
-    
-    type HandlerSignature = RequestHandler[CallHierarchyOutgoingCallsParams, js.Array[CallHierarchyOutgoingCall] | Null, Unit]
     
     @JSImport("vscode-languageserver-protocol/lib/protocol.callHierarchy.proposed", "CallHierarchyOutgoingCallsRequest.type")
     @js.native
@@ -61,6 +58,8 @@ object protocolCallHierarchyProposedMod {
         Unit, 
         Unit
       ] = js.native
+    
+    type HandlerSignature = RequestHandler[CallHierarchyOutgoingCallsParams, js.Array[CallHierarchyOutgoingCall] | Null, Unit]
   }
   
   object CallHierarchyPrepareRequest {
@@ -68,8 +67,6 @@ object protocolCallHierarchyProposedMod {
     @JSImport("vscode-languageserver-protocol/lib/protocol.callHierarchy.proposed", "CallHierarchyPrepareRequest.method")
     @js.native
     val method: textDocumentSlashprepareCallHierarchy = js.native
-    
-    type HandlerSignature = RequestHandler[CallHierarchyPrepareParams, js.Array[CallHierarchyItem] | Null, Unit]
     
     @JSImport("vscode-languageserver-protocol/lib/protocol.callHierarchy.proposed", "CallHierarchyPrepareRequest.type")
     @js.native
@@ -80,15 +77,16 @@ object protocolCallHierarchyProposedMod {
         Unit, 
         CallHierarchyRegistrationOptions
       ] = js.native
+    
+    type HandlerSignature = RequestHandler[CallHierarchyPrepareParams, js.Array[CallHierarchyItem] | Null, Unit]
   }
   
-  @js.native
   trait CallHierarchyClientCapabilities extends StObject {
     
     /**
       * The text document client capabilities
       */
-    var textDocument: js.UndefOr[CallHierarchy] = js.native
+    var textDocument: js.UndefOr[CallHierarchy] = js.undefined
   }
   object CallHierarchyClientCapabilities {
     
@@ -109,19 +107,18 @@ object protocolCallHierarchyProposedMod {
     }
   }
   
-  @js.native
   trait CallHierarchyIncomingCall extends StObject {
     
     /**
       * The item that makes the call.
       */
-    var from: CallHierarchyItem = js.native
+    var from: CallHierarchyItem
     
     /**
       * The range at which at which the calls appears. This is relative to the caller
       * denoted by [`this.from`](#CallHierarchyIncomingCall.from).
       */
-    var fromRanges: js.Array[Range] = js.native
+    var fromRanges: js.Array[Range]
   }
   object CallHierarchyIncomingCall {
     
@@ -145,12 +142,12 @@ object protocolCallHierarchyProposedMod {
     }
   }
   
-  @js.native
   trait CallHierarchyIncomingCallsParams
-    extends WorkDoneProgressParams
+    extends StObject
+       with WorkDoneProgressParams
        with PartialResultParams {
     
-    var item: CallHierarchyItem = js.native
+    var item: CallHierarchyItem
   }
   object CallHierarchyIncomingCallsParams {
     
@@ -168,44 +165,43 @@ object protocolCallHierarchyProposedMod {
     }
   }
   
-  @js.native
   trait CallHierarchyItem extends StObject {
     
     /**
       * More detail for this item, e.g. the signature of a function.
       */
-    var detail: js.UndefOr[String] = js.native
+    var detail: js.UndefOr[String] = js.undefined
     
     /**
       * The kind of this item.
       */
-    var kind: SymbolKind = js.native
+    var kind: SymbolKind
     
     /**
       * The name of this item.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The range enclosing this symbol not including leading/trailing whitespace but everything else, e.g. comments and code.
       */
-    var range: Range = js.native
+    var range: Range
     
     /**
       * The range that should be selected and revealed when this symbol is being picked, e.g. the name of a function.
       * Must be contained by the [`range`](#CallHierarchyItem.range).
       */
-    var selectionRange: Range = js.native
+    var selectionRange: Range
     
     /**
       * Tags for this item.
       */
-    var tags: js.UndefOr[js.Array[SymbolTag]] = js.native
+    var tags: js.UndefOr[js.Array[SymbolTag]] = js.undefined
     
     /**
       * The resource identifier of this item.
       */
-    var uri: DocumentUri = js.native
+    var uri: DocumentUri
   }
   object CallHierarchyItem {
     
@@ -252,7 +248,6 @@ object protocolCallHierarchyProposedMod {
   
   type CallHierarchyOptions = WorkDoneProgressOptions
   
-  @js.native
   trait CallHierarchyOutgoingCall extends StObject {
     
     /**
@@ -260,12 +255,12 @@ object protocolCallHierarchyProposedMod {
       * passed to [`provideCallHierarchyOutgoingCalls`](#CallHierarchyItemProvider.provideCallHierarchyOutgoingCalls)
       * and not [`this.to`](#CallHierarchyOutgoingCall.to).
       */
-    var fromRanges: js.Array[Range] = js.native
+    var fromRanges: js.Array[Range]
     
     /**
       * The item that is called.
       */
-    var to: CallHierarchyItem = js.native
+    var to: CallHierarchyItem
   }
   object CallHierarchyOutgoingCall {
     
@@ -289,12 +284,12 @@ object protocolCallHierarchyProposedMod {
     }
   }
   
-  @js.native
   trait CallHierarchyOutgoingCallsParams
-    extends WorkDoneProgressParams
+    extends StObject
+       with WorkDoneProgressParams
        with PartialResultParams {
     
-    var item: CallHierarchyItem = js.native
+    var item: CallHierarchyItem
   }
   object CallHierarchyOutgoingCallsParams {
     
@@ -312,9 +307,9 @@ object protocolCallHierarchyProposedMod {
     }
   }
   
-  @js.native
   trait CallHierarchyPrepareParams
-    extends TextDocumentPositionParams
+    extends StObject
+       with TextDocumentPositionParams
        with WorkDoneProgressParams
   object CallHierarchyPrepareParams {
     
@@ -325,28 +320,27 @@ object protocolCallHierarchyProposedMod {
     }
   }
   
-  @js.native
   trait CallHierarchyRegistrationOptions
-    extends TextDocumentRegistrationOptions
+    extends StObject
+       with TextDocumentRegistrationOptions
        with WorkDoneProgressOptions
   object CallHierarchyRegistrationOptions {
     
     @scala.inline
     def apply(): CallHierarchyRegistrationOptions = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(documentSelector = null)
       __obj.asInstanceOf[CallHierarchyRegistrationOptions]
     }
   }
   
-  @js.native
   trait CallHierarchyServerCapabilities extends StObject {
     
     /**
       * The server provides Call Hierarchy support.
       */
     var callHierarchyProvider: js.UndefOr[
-        Boolean | CallHierarchyOptions | (CallHierarchyRegistrationOptions with StaticRegistrationOptions)
-      ] = js.native
+        Boolean | CallHierarchyOptions | (CallHierarchyRegistrationOptions & StaticRegistrationOptions)
+      ] = js.undefined
   }
   object CallHierarchyServerCapabilities {
     
@@ -361,7 +355,7 @@ object protocolCallHierarchyProposedMod {
       
       @scala.inline
       def setCallHierarchyProvider(
-        value: Boolean | CallHierarchyOptions | (CallHierarchyRegistrationOptions with StaticRegistrationOptions)
+        value: Boolean | CallHierarchyOptions | (CallHierarchyRegistrationOptions & StaticRegistrationOptions)
       ): Self = StObject.set(x, "callHierarchyProvider", value.asInstanceOf[js.Any])
       
       @scala.inline

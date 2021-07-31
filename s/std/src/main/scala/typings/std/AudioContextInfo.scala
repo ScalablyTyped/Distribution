@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioContextInfo extends StObject {
   
-  var currentTime: js.UndefOr[Double] = js.native
+  var currentTime: js.UndefOr[Double] = js.undefined
   
-  var sampleRate: js.UndefOr[Double] = js.native
+  var sampleRate: js.UndefOr[Double] = js.undefined
 }
 object AudioContextInfo {
   

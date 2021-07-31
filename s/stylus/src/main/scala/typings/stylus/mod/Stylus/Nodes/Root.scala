@@ -3,23 +3,23 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Root extends Node {
+trait Root
+  extends StObject
+     with Node {
   
-  var nodes: js.Array[Node] = js.native
+  var nodes: js.Array[Node]
   
   /**
     * Push a `node` to this block.
     */
-  def push(node: Node): scala.Unit = js.native
+  def push(node: Node): scala.Unit
   
   /**
     * Unshift a `node` to this block.
     */
-  def unshift(node: Node): scala.Unit = js.native
+  def unshift(node: Node): scala.Unit
 }
 object Root {
   

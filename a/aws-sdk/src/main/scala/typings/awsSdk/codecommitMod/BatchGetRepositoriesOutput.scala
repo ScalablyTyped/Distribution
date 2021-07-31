@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetRepositoriesOutput extends StObject {
   
   /**
     * A list of repositories returned by the batch get repositories operation.
     */
-  var repositories: js.UndefOr[RepositoryMetadataList] = js.native
+  var repositories: js.UndefOr[RepositoryMetadataList] = js.undefined
   
   /**
     * Returns a list of repository names for which information could not be found.
     */
-  var repositoriesNotFound: js.UndefOr[RepositoryNotFoundList] = js.native
+  var repositoriesNotFound: js.UndefOr[RepositoryNotFoundList] = js.undefined
 }
 object BatchGetRepositoriesOutput {
   

@@ -2,17 +2,15 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Brightness extends StObject {
   
   /**
     * Value to brighten the image up (0..255)
     * @default 0
     */
-  var brightness: Double = js.native
+  var brightness: Double
 }
 object Brightness {
   

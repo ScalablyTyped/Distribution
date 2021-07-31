@@ -2,10 +2,8 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridExcelExporter extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait GridExcelExporter extends StObject {
     * @param userSettings Settings for exporting the grid.
     * @param userCallbacks Callbacks for the events.
     */
-  def exportGrid(grid: js.Object, userSettings: js.Object, userCallbacks: js.Object): Unit = js.native
+  def exportGrid(grid: js.Object, userSettings: js.Object, userCallbacks: js.Object): Unit
 }
 object GridExcelExporter {
   

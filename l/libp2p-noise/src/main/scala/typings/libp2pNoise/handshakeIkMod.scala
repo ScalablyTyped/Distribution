@@ -1,5 +1,6 @@
 package typings.libp2pNoise
 
+import typings.libp2pNoise.anon.Plaintext
 import typings.libp2pNoise.basicMod.bytes
 import typings.libp2pNoise.basicMod.bytes32
 import typings.libp2pNoise.handshakeInterfaceMod.IHandshake
@@ -11,14 +12,15 @@ import typings.node.Buffer
 import typings.peerId.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handshakeIkMod {
   
   @JSImport("libp2p-noise/dist/src/handshake-ik", "IKHandshake")
   @js.native
-  class IKHandshake protected () extends IHandshake {
+  class IKHandshake protected ()
+    extends StObject
+       with IHandshake {
     def this(
       isInitiator: Boolean,
       payload: bytes,
@@ -43,7 +45,7 @@ object handshakeIkMod {
       staticKeypair: KeyPair,
       connection: WrappedConnection,
       remoteStaticKey: bytes,
-      remotePeer: js.UndefOr[scala.Nothing],
+      remotePeer: Unit,
       handshake: IK
     ) = this()
     def this(
@@ -59,6 +61,11 @@ object handshakeIkMod {
     
     var connection: js.Any = js.native
     
+    /* CompleteClass */
+    override def decrypt(ciphertext: bytes, session: NoiseSession): Plaintext = js.native
+    
+    /* CompleteClass */
+    override def encrypt(plaintext: bytes, session: NoiseSession): bytes = js.native
     def encrypt(plaintext: Buffer, session: NoiseSession): Buffer = js.native
     
     var getCS: js.Any = js.native
@@ -72,6 +79,15 @@ object handshakeIkMod {
     var payload: js.Any = js.native
     
     var prologue: js.Any = js.native
+    
+    /* CompleteClass */
+    var remoteEarlyData: Buffer = js.native
+    
+    /* CompleteClass */
+    var remotePeer: ^ = js.native
+    
+    /* CompleteClass */
+    var session: NoiseSession = js.native
     
     var setRemoteEarlyData: js.Any = js.native
     

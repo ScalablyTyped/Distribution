@@ -2,26 +2,24 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRaidArraysRequest extends StObject {
   
   /**
     * The instance ID. If you use this parameter, DescribeRaidArrays returns descriptions of the RAID arrays associated with the specified instance. 
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * An array of RAID array IDs. If you use this parameter, DescribeRaidArrays returns descriptions of the specified arrays. Otherwise, it returns a description of every array.
     */
-  var RaidArrayIds: js.UndefOr[Strings] = js.native
+  var RaidArrayIds: js.UndefOr[Strings] = js.undefined
   
   /**
     * The stack ID.
     */
-  var StackId: js.UndefOr[String] = js.native
+  var StackId: js.UndefOr[String] = js.undefined
 }
 object DescribeRaidArraysRequest {
   

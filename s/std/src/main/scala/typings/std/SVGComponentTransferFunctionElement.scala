@@ -2,12 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A base interface used by the component transfer function interfaces. */
 @js.native
-trait SVGComponentTransferFunctionElement extends SVGElement {
+trait SVGComponentTransferFunctionElement
+  extends StObject
+     with SVGElement {
   
   val SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE: Double = js.native
   
@@ -21,6 +22,17 @@ trait SVGComponentTransferFunctionElement extends SVGElement {
   
   val SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN: Double = js.native
   
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  
   val amplitude: SVGAnimatedNumber = js.native
   
   val exponent: SVGAnimatedNumber = js.native
@@ -28,6 +40,17 @@ trait SVGComponentTransferFunctionElement extends SVGElement {
   val intercept: SVGAnimatedNumber = js.native
   
   val offset: SVGAnimatedNumber = js.native
+  
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    callback: EventListenerOrEventListenerObject,
+    options: EventListenerOptions
+  ): Unit = js.native
   
   val slope: SVGAnimatedNumber = js.native
   

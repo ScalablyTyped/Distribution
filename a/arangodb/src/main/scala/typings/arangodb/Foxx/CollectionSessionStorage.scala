@@ -2,20 +2,20 @@ package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CollectionSessionStorage extends SessionStorage {
+trait CollectionSessionStorage
+  extends StObject
+     with SessionStorage {
   
-  def clear(session: Session): Boolean = js.native
+  def clear(session: Session): Boolean
   
   @JSName("new")
-  def new_MCollectionSessionStorage(): Session = js.native
+  def new_MCollectionSessionStorage(): Session
   
-  def prune(): js.Array[String] = js.native
+  def prune(): js.Array[String]
   
-  def save(session: Session): Session = js.native
+  def save(session: Session): Session
 }
 object CollectionSessionStorage {
   

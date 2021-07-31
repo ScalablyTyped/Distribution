@@ -3,11 +3,12 @@ package typings.sjcl.mod
 import org.scalablytyped.runtime.Instantiable6
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SjclEllipticalCurveStatic extends Instantiable6[
+trait SjclEllipticalCurveStatic
+  extends StObject
+     with Instantiable6[
       /* Field */ BigNumber, 
       /* r */ BigNumber, 
       /* a */ BigNumber, 

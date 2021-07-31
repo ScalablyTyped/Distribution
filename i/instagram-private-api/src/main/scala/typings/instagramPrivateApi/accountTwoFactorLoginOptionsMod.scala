@@ -4,23 +4,21 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.`0`
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accountTwoFactorLoginOptionsMod {
   
-  @js.native
   trait AccountTwoFactorLoginOptions extends StObject {
     
-    var trustThisDevice: js.UndefOr[`1` | `0`] = js.native
+    var trustThisDevice: js.UndefOr[`1` | `0`] = js.undefined
     
-    var twoFactorIdentifier: String = js.native
+    var twoFactorIdentifier: String
     
-    var username: String = js.native
+    var username: String
     
-    var verificationCode: String = js.native
+    var verificationCode: String
     
-    var verificationMethod: js.UndefOr[String] = js.native
+    var verificationMethod: js.UndefOr[String] = js.undefined
   }
   object AccountTwoFactorLoginOptions {
     

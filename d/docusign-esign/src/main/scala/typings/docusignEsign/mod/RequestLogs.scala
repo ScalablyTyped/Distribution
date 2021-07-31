@@ -2,26 +2,24 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestLogs extends StObject {
   
   /**
     * Specifies the maximum number of API requests to log.
     */
-  var apiRequestLogMaxEntries: js.UndefOr[String] = js.native
+  var apiRequestLogMaxEntries: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the remaining number of API requests that can be logged.
     */
-  var apiRequestLogRemainingEntries: js.UndefOr[String] = js.native
+  var apiRequestLogRemainingEntries: js.UndefOr[String] = js.undefined
   
   /**
     *  When set to **true**, enables API request logging for the user.
     */
-  var apiRequestLogging: js.UndefOr[String] = js.native
+  var apiRequestLogging: js.UndefOr[String] = js.undefined
 }
 object RequestLogs {
   

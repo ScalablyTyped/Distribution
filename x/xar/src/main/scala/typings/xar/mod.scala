@@ -6,26 +6,26 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("xar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("xar", "create")
   @js.native
   val create: js.Function1[/* dir */ String, Readable] = js.native
   
-  @JSImport("xar", "extract")
-  @js.native
-  def extract(data: Buffer, cb: ExtractCallback): Unit = js.native
+  @scala.inline
+  def extract(data: Buffer, cb: ExtractCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("xar", "getToc")
-  @js.native
-  def getToc(data: Buffer, cb: GetTOCCallback): Unit = js.native
+  @scala.inline
+  def getToc(data: Buffer, cb: GetTOCCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getToc")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("xar", "pack")
-  @js.native
-  def pack(dir: String): Readable = js.native
+  @scala.inline
+  def pack(dir: String): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(dir.asInstanceOf[js.Any]).asInstanceOf[Readable]
   
   @JSImport("xar", "unpack")
   @js.native
@@ -46,18 +46,17 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait TOCHeader extends StObject {
     
-    var cksumAlg: Double = js.native
+    var cksumAlg: Double
     
-    var size: Double = js.native
+    var size: Double
     
-    var tocLengthCompressed: Double = js.native
+    var tocLengthCompressed: Double
     
-    var tocLengthUncompressed: Double = js.native
+    var tocLengthUncompressed: Double
     
-    var version: Double = js.native
+    var version: Double
   }
   object TOCHeader {
     

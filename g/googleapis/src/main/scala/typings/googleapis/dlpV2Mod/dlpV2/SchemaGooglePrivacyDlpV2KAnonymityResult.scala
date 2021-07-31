@@ -2,19 +2,17 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result of the k-anonymity computation.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2KAnonymityResult extends StObject {
   
   /**
     * Histogram of k-anonymity equivalence classes.
     */
-  var equivalenceClassHistogramBuckets: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket]] = js.native
+  var equivalenceClassHistogramBuckets: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2KAnonymityResult {
   

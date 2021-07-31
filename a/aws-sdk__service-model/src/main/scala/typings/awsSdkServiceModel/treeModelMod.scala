@@ -4,16 +4,17 @@ import typings.awsSdkBuildTypes.apiModelMod.ApiModel
 import typings.awsSdkBuildTypes.treeModelMod.TreeModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeModelMod {
   
-  @JSImport("@aws-sdk/service-model/build/TreeModel", "fromApiModel")
+  @JSImport("@aws-sdk/service-model/build/TreeModel", JSImport.Namespace)
   @js.native
-  def fromApiModel(model: ApiModel): TreeModel = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@aws-sdk/service-model/build/TreeModel", "fromModelJson")
-  @js.native
-  def fromModelJson(modelJson: String): TreeModel = js.native
+  @scala.inline
+  def fromApiModel(model: ApiModel): TreeModel = ^.asInstanceOf[js.Dynamic].applyDynamic("fromApiModel")(model.asInstanceOf[js.Any]).asInstanceOf[TreeModel]
+  
+  @scala.inline
+  def fromModelJson(modelJson: String): TreeModel = ^.asInstanceOf[js.Dynamic].applyDynamic("fromModelJson")(modelJson.asInstanceOf[js.Any]).asInstanceOf[TreeModel]
 }

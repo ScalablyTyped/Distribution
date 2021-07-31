@@ -24,7 +24,6 @@ import typings.std.HTMLButtonElement
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonGroupMod {
@@ -33,12 +32,11 @@ object buttonGroupMod {
   @js.native
   val ButtonGroup: FC[ButtonGroupProps] = js.native
   
-  @js.native
   trait MODE extends StObject {
     
-    var checkbox: typings.baseui.baseuiStrings.checkbox = js.native
+    var checkbox: typings.baseui.baseuiStrings.checkbox
     
-    var radio: typings.baseui.baseuiStrings.radio = js.native
+    var radio: typings.baseui.baseuiStrings.radio
   }
   object MODE {
     
@@ -65,10 +63,9 @@ object buttonGroupMod {
   @js.native
   val SIZE: typings.baseui.buttonMod.SIZE = js.native
   
-  @js.native
   trait STATE_CHANGE_TYPE extends StObject {
     
-    var change: change_ = js.native
+    var change: change_
   }
   object STATE_CHANGE_TYPE {
     
@@ -108,12 +105,11 @@ object buttonGroupMod {
   @js.native
   val StyledRoot: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait ButtonGroupOverrides extends StObject {
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ButtonGroupOverrides {
     
@@ -136,30 +132,33 @@ object buttonGroupMod {
     }
   }
   
-  @js.native
   trait ButtonGroupProps extends StObject {
     
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var kind: js.UndefOr[primary | secondary | tertiary | minimal] = js.native
+    var kind: js.UndefOr[primary | secondary | tertiary | minimal] = js.undefined
     
-    var mode: js.UndefOr[checkbox | radio] = js.native
+    var mode: js.UndefOr[checkbox | radio] = js.undefined
     
     var onClick: js.UndefOr[
-        js.Function2[/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], /* index */ Double, _]
-      ] = js.native
+        js.Function2[
+          /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], 
+          /* index */ Double, 
+          js.Any
+        ]
+      ] = js.undefined
     
-    var overrides: js.UndefOr[ButtonGroupOverrides] = js.native
+    var overrides: js.UndefOr[ButtonGroupOverrides] = js.undefined
     
-    var selected: js.UndefOr[Double | js.Array[Double]] = js.native
+    var selected: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var shape: js.UndefOr[pill | default_ | square | round | circle] = js.native
+    var shape: js.UndefOr[pill | default_ | square | round | circle] = js.undefined
     
-    var size: js.UndefOr[compact | default_ | large_ | mini] = js.native
+    var size: js.UndefOr[compact | default_ | large_ | mini] = js.undefined
   }
   object ButtonGroupProps {
     
@@ -203,7 +202,7 @@ object buttonGroupMod {
       def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
       @scala.inline
-      def setOnClick(value: (/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], /* index */ Double) => _): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      def setOnClick(value: (/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], /* index */ Double) => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
@@ -237,10 +236,9 @@ object buttonGroupMod {
     }
   }
   
-  @js.native
   trait InitialState extends StObject {
     
-    var selected: Double | js.Array[Double] = js.native
+    var selected: Double | js.Array[Double]
   }
   object InitialState {
     
@@ -261,10 +259,9 @@ object buttonGroupMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var selected: js.Array[Double] = js.native
+    var selected: js.Array[Double]
   }
   object State {
     
@@ -285,10 +282,11 @@ object buttonGroupMod {
     }
   }
   
-  @js.native
-  trait StatefulButtonGroupProps extends ButtonGroupProps {
+  trait StatefulButtonGroupProps
+    extends StObject
+       with ButtonGroupProps {
     
-    var initialState: js.UndefOr[InitialState] = js.native
+    var initialState: js.UndefOr[InitialState] = js.undefined
     
     var stateReducer: js.UndefOr[
         js.Function3[
@@ -297,7 +295,7 @@ object buttonGroupMod {
           /* currentState */ State, 
           State
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object StatefulButtonGroupProps {
     

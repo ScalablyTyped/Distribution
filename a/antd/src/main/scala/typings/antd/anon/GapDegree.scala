@@ -10,36 +10,37 @@ import typings.antd.antdStrings.small
 import typings.antd.antdStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GapDegree extends StObject {
   
-  var gapDegree: js.UndefOr[scala.Nothing] = js.native
+  var gapDegree: Unit
   
-  var percent: Double = js.native
+  var percent: Double
   
-  var showInfo: Boolean = js.native
+  var showInfo: Boolean
   
-  var size: js.UndefOr[small | default] = js.native
+  var size: js.UndefOr[small | default] = js.undefined
   
-  var strokeLinecap: js.UndefOr[round | butt | square] = js.native
+  var strokeLinecap: js.UndefOr[round | butt | square] = js.undefined
   
-  var trailColor: Null = js.native
+  var trailColor: Null
   
-  var `type`: js.UndefOr[circle | line | dashboard] = js.native
+  var `type`: js.UndefOr[circle | line | dashboard] = js.undefined
 }
 object GapDegree {
   
   @scala.inline
-  def apply(percent: Double, showInfo: Boolean, trailColor: Null): GapDegree = {
-    val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any], showInfo = showInfo.asInstanceOf[js.Any], trailColor = trailColor.asInstanceOf[js.Any])
+  def apply(gapDegree: Unit, percent: Double, showInfo: Boolean, trailColor: Null): GapDegree = {
+    val __obj = js.Dynamic.literal(gapDegree = gapDegree.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], showInfo = showInfo.asInstanceOf[js.Any], trailColor = trailColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[GapDegree]
   }
   
   @scala.inline
   implicit class GapDegreeMutableBuilder[Self <: GapDegree] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setGapDegree(value: Unit): Self = StObject.set(x, "gapDegree", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])

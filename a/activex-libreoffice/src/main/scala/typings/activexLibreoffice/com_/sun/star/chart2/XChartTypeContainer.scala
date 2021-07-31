@@ -6,29 +6,29 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XChartTypeContainer extends XInterface {
+trait XChartTypeContainer
+  extends StObject
+     with XInterface {
   
   /** retrieve all chart types */
-  var ChartTypes: SafeArray[XChartType] = js.native
+  var ChartTypes: SafeArray[XChartType]
   
   /**
     * add a chart type to the chart type container
     * @throws IllegalArgumentException If the given chart type is already contained in the chart type container.
     */
-  def addChartType(aChartType: XChartType): Unit = js.native
+  def addChartType(aChartType: XChartType): Unit
   
   /** retrieve all chart types */
-  def getChartTypes(): SafeArray[XChartType] = js.native
+  def getChartTypes(): SafeArray[XChartType]
   
   /** removes one data series from the chart type container. */
-  def removeChartType(aChartType: XChartType): Unit = js.native
+  def removeChartType(aChartType: XChartType): Unit
   
   /** set all chart types */
-  def setChartTypes(aChartTypes: SeqEquiv[XChartType]): Unit = js.native
+  def setChartTypes(aChartTypes: SeqEquiv[XChartType]): Unit
 }
 object XChartTypeContainer {
   

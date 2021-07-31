@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientStreetviewpublish.gapi.client.streetviewpu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhotoId extends StObject {
   
   /** Required. A unique identifier for a photo. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object PhotoId {
   

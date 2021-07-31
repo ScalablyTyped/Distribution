@@ -9,24 +9,23 @@ import typings.aliApp.aliAppStrings.yyyy
 import typings.aliApp.anon.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 选择日期 https://docs.alipay.com/mini/api/ui-date
-@js.native
 trait DatePickerOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 初始选择的日期时间，默认当前时间 */
-  var currentDate: String = js.native
+  var currentDate: String
   
   /** 最大日期时间 */
-  var endDate: String = js.native
+  var endDate: String
   
   /** 11 用户取消操作 */
   @JSName("fail")
-  def fail_11(error: `11`): Unit = js.native
+  def fail_11(error: `11`): Unit
   
   /**
     * 返回的日期格式，
@@ -36,13 +35,13 @@ trait DatePickerOptions
     * 4. yyyy-MM （最低基础库：1.1.1, 可用 canIUse('datePicker.object.format.yyyy-MM') 判断）
     * 5. yyyy （最低基础库：1.1.1,可用 canIUse('datePicker.object.format.yyyy') 判断）
     */
-  var format: `yyyy-MM-dd` | HHColonmm | (`yyyy-MM-dd HHColonmm`) | `yyyy-MM` | yyyy = js.native
+  var format: `yyyy-MM-dd` | HHColonmm | (`yyyy-MM-dd HHColonmm`) | `yyyy-MM` | yyyy
   
   /** 最小日期时间 */
-  var startDate: String = js.native
+  var startDate: String
   
   @JSName("success")
-  def success_MDatePickerOptions(result: Date): Unit = js.native
+  def success_MDatePickerOptions(result: Date): Unit
 }
 object DatePickerOptions {
   

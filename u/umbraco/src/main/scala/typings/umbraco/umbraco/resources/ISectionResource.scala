@@ -2,7 +2,6 @@ package typings.umbraco.umbraco.resources
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,11 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @name umbraco.resources.sectionResource
   * @description Loads in data for section
   **/
-@js.native
 trait ISectionResource extends StObject {
   
   /** Loads in the data to display the section list */
-  def getSections(): Unit = js.native
+  def getSections(): Unit
 }
 object ISectionResource {
   

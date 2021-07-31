@@ -2,31 +2,29 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnBLECharacteristicValueChangeSuccess extends StObject {
   
   /**
     * 蓝牙特征值的 uuid
     */
-  var characteristicId: js.UndefOr[String] = js.native
+  var characteristicId: js.UndefOr[String] = js.undefined
   
   /**
     * 蓝牙设备 id，参考 device 对象
     */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /**
     * 蓝牙特征值对应服务的 uuid
     */
-  var serviceId: js.UndefOr[String] = js.native
+  var serviceId: js.UndefOr[String] = js.undefined
   
   /**
     * 特征值最新的值 （注意：vConsole 无法打印出 ArrayBuffer 类型数据）
     */
-  var value: js.UndefOr[js.Array[_]] = js.native
+  var value: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object OnBLECharacteristicValueChangeSuccess {
   
@@ -58,7 +56,7 @@ object OnBLECharacteristicValueChangeSuccess {
     def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
     
     @scala.inline
-    def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValueUndefined: Self = StObject.set(x, "value", js.undefined)

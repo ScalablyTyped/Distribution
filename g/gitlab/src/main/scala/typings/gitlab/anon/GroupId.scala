@@ -2,13 +2,11 @@ package typings.gitlab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupId extends StObject {
   
-  var groupId: js.UndefOr[String | Double] = js.native
+  var groupId: js.UndefOr[String | Double] = js.undefined
 }
 object GroupId {
   

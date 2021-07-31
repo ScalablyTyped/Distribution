@@ -2,23 +2,21 @@ package typings.projectOxford
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AccentColor extends StObject {
     
-    var accentColor: String = js.native
+    var accentColor: String
     
-    var dominantColorBackground: String = js.native
+    var dominantColorBackground: String
     
-    var dominantColorForeground: String = js.native
+    var dominantColorForeground: String
     
-    var dominantColors: js.Array[String] = js.native
+    var dominantColors: js.Array[String]
     
-    var isBWImg: Boolean = js.native
+    var isBWImg: Boolean
   }
   object AccentColor {
     
@@ -57,16 +55,15 @@ object anon {
     }
   }
   
-  @js.native
   trait AdultScore extends StObject {
     
-    var adultScore: Double = js.native
+    var adultScore: Double
     
-    var isAdultContent: Boolean = js.native
+    var isAdultContent: Boolean
     
-    var isRacyContent: Boolean = js.native
+    var isRacyContent: Boolean
     
-    var racyScore: Double = js.native
+    var racyScore: Double
   }
   object AdultScore {
     
@@ -93,14 +90,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Age extends StObject {
     
-    var age: Double = js.native
+    var age: Double
     
-    var faceRectangle: Height = js.native
+    var faceRectangle: Height
     
-    var gender: String = js.native
+    var gender: String
   }
   object Age {
     
@@ -124,12 +120,11 @@ object anon {
     }
   }
   
-  @js.native
   trait BoundingBox extends StObject {
     
-    var boundingBox: String = js.native
+    var boundingBox: String
     
-    var text: String = js.native
+    var text: String
   }
   object BoundingBox {
     
@@ -150,12 +145,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ClipArtType extends StObject {
     
-    var clipArtType: Double = js.native
+    var clipArtType: Double
     
-    var lineDrawingType: Double = js.native
+    var lineDrawingType: Double
   }
   object ClipArtType {
     
@@ -176,12 +170,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Confidence extends StObject {
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var personId: String = js.native
+    var personId: String
   }
   object Confidence {
     
@@ -202,14 +195,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Format extends StObject {
     
-    var format: String = js.native
+    var format: String
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Format {
     
@@ -233,16 +225,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -269,12 +260,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Lines extends StObject {
     
-    var boundingBox: String = js.native
+    var boundingBox: String
     
-    var lines: js.Array[Words] = js.native
+    var lines: js.Array[Words]
   }
   object Lines {
     
@@ -298,12 +288,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var score: Double = js.native
+    var score: Double
   }
   object Name {
     
@@ -324,10 +313,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PersonId extends StObject {
     
-    var personId: String = js.native
+    var personId: String
   }
   object PersonId {
     
@@ -345,14 +333,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Pitch extends StObject {
     
-    var pitch: Double = js.native
+    var pitch: Double
     
-    var roll: Double = js.native
+    var roll: Double
     
-    var yaw: Double = js.native
+    var yaw: Double
   }
   object Pitch {
     
@@ -376,12 +363,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Words extends StObject {
     
-    var boundingBox: String = js.native
+    var boundingBox: String
     
-    var words: js.Array[BoundingBox] = js.native
+    var words: js.Array[BoundingBox]
   }
   object Words {
     

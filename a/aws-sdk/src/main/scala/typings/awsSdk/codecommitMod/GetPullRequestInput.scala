@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPullRequestInput extends StObject {
   
   /**
     * The system-generated ID of the pull request. To get this ID, use ListPullRequests.
     */
-  var pullRequestId: PullRequestId = js.native
+  var pullRequestId: PullRequestId
 }
 object GetPullRequestInput {
   

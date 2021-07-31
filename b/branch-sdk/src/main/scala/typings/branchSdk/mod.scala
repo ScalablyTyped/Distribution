@@ -8,10 +8,13 @@ import typings.branchSdk.branchSdkStrings.purchase
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("branch-sdk", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait JourneyEvent extends StObject
@@ -20,39 +23,55 @@ object mod {
   object JourneyEvent extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[JourneyEvent with String] = js.native
+    def apply(value: String): js.UndefOr[JourneyEvent & String] = js.native
     
     @js.native
-    sealed trait didCallJourneyClose extends JourneyEvent
-    /* "didCallJourneyClose" */ val didCallJourneyClose: typings.branchSdk.mod.JourneyEvent.didCallJourneyClose with String = js.native
+    sealed trait didCallJourneyClose
+      extends StObject
+         with JourneyEvent
+    /* "didCallJourneyClose" */ val didCallJourneyClose: typings.branchSdk.mod.JourneyEvent.didCallJourneyClose & String = js.native
     
     @js.native
-    sealed trait didClickJourneyCTA extends JourneyEvent
-    /* "didClickJourneyCTA" */ val didClickJourneyCTA: typings.branchSdk.mod.JourneyEvent.didClickJourneyCTA with String = js.native
+    sealed trait didClickJourneyCTA
+      extends StObject
+         with JourneyEvent
+    /* "didClickJourneyCTA" */ val didClickJourneyCTA: typings.branchSdk.mod.JourneyEvent.didClickJourneyCTA & String = js.native
     
     @js.native
-    sealed trait didClickJourneyClose extends JourneyEvent
-    /* "didClickJourneyClose" */ val didClickJourneyClose: typings.branchSdk.mod.JourneyEvent.didClickJourneyClose with String = js.native
+    sealed trait didClickJourneyClose
+      extends StObject
+         with JourneyEvent
+    /* "didClickJourneyClose" */ val didClickJourneyClose: typings.branchSdk.mod.JourneyEvent.didClickJourneyClose & String = js.native
     
     @js.native
-    sealed trait didCloseJourney extends JourneyEvent
-    /* "didCloseJourney" */ val didCloseJourney: typings.branchSdk.mod.JourneyEvent.didCloseJourney with String = js.native
+    sealed trait didCloseJourney
+      extends StObject
+         with JourneyEvent
+    /* "didCloseJourney" */ val didCloseJourney: typings.branchSdk.mod.JourneyEvent.didCloseJourney & String = js.native
     
     @js.native
-    sealed trait didShowJourney extends JourneyEvent
-    /* "didShowJourney" */ val didShowJourney: typings.branchSdk.mod.JourneyEvent.didShowJourney with String = js.native
+    sealed trait didShowJourney
+      extends StObject
+         with JourneyEvent
+    /* "didShowJourney" */ val didShowJourney: typings.branchSdk.mod.JourneyEvent.didShowJourney & String = js.native
     
     @js.native
-    sealed trait willCloseJourney extends JourneyEvent
-    /* "willCloseJourney" */ val willCloseJourney: typings.branchSdk.mod.JourneyEvent.willCloseJourney with String = js.native
+    sealed trait willCloseJourney
+      extends StObject
+         with JourneyEvent
+    /* "willCloseJourney" */ val willCloseJourney: typings.branchSdk.mod.JourneyEvent.willCloseJourney & String = js.native
     
     @js.native
-    sealed trait willNotShowJourney extends JourneyEvent
-    /* "willNotShowJourney" */ val willNotShowJourney: typings.branchSdk.mod.JourneyEvent.willNotShowJourney with String = js.native
+    sealed trait willNotShowJourney
+      extends StObject
+         with JourneyEvent
+    /* "willNotShowJourney" */ val willNotShowJourney: typings.branchSdk.mod.JourneyEvent.willNotShowJourney & String = js.native
     
     @js.native
-    sealed trait willShowJourney extends JourneyEvent
-    /* "willShowJourney" */ val willShowJourney: typings.branchSdk.mod.JourneyEvent.willShowJourney with String = js.native
+    sealed trait willShowJourney
+      extends StObject
+         with JourneyEvent
+    /* "willShowJourney" */ val willShowJourney: typings.branchSdk.mod.JourneyEvent.willShowJourney & String = js.native
   }
   
   @js.native
@@ -62,382 +81,303 @@ object mod {
   object UriRedirectMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[UriRedirectMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[UriRedirectMode & Double] = js.native
     
     /**
       * This is the default value that yields the standard behavior where we don't try to open the app if the user can see an error.
       */
     @js.native
-    sealed trait Default extends UriRedirectMode
-    /* 0 */ val Default: typings.branchSdk.mod.UriRedirectMode.Default with Double = js.native
+    sealed trait Default
+      extends StObject
+         with UriRedirectMode
+    /* 0 */ val Default: typings.branchSdk.mod.UriRedirectMode.Default & Double = js.native
     
     /**
       * Forceful redirect mode. Always try to force open the app, even if it risks showing an error message when the app is not installed.
       */
     @js.native
-    sealed trait Forceful extends UriRedirectMode
-    /* 2 */ val Forceful: typings.branchSdk.mod.UriRedirectMode.Forceful with Double = js.native
+    sealed trait Forceful
+      extends StObject
+         with UriRedirectMode
+    /* 2 */ val Forceful: typings.branchSdk.mod.UriRedirectMode.Forceful & Double = js.native
     
     /**
       * Smart redirect mode. Same behavior as Default until we know the user has the app installed through Branch persona data. In that case, force URI schemes to open the app.
       */
     @js.native
-    sealed trait Smart extends UriRedirectMode
-    /* 1 */ val Smart: typings.branchSdk.mod.UriRedirectMode.Smart with Double = js.native
+    sealed trait Smart
+      extends StObject
+         with UriRedirectMode
+    /* 1 */ val Smart: typings.branchSdk.mod.UriRedirectMode.Smart & Double = js.native
   }
   
-  @JSImport("branch-sdk", "addListener")
-  @js.native
-  def addListener(
-    event: js.UndefOr[scala.Nothing],
-    listener: js.Function2[/* event */ JourneyEvent, /* data */ js.Object, Unit]
-  ): Unit = js.native
-  @JSImport("branch-sdk", "addListener")
-  @js.native
-  def addListener(event: JourneyEvent, listener: js.Function2[/* event */ JourneyEvent, /* data */ js.Object, Unit]): Unit = js.native
+  @scala.inline
+  def addListener(event: Unit, listener: js.Function2[/* event */ JourneyEvent, /* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addListener(event: JourneyEvent, listener: js.Function2[/* event */ JourneyEvent, /* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "autoAppIndex")
-  @js.native
-  def autoAppIndex(data: AutoAppIndexData): Unit = js.native
-  @JSImport("branch-sdk", "autoAppIndex")
-  @js.native
-  def autoAppIndex(data: AutoAppIndexData, callback: js.Function1[/* err */ BranchError, Unit]): Unit = js.native
+  @scala.inline
+  def autoAppIndex(data: AutoAppIndexData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("autoAppIndex")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def autoAppIndex(data: AutoAppIndexData, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autoAppIndex")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "closeJourney")
-  @js.native
-  def closeJourney(): Unit = js.native
-  @JSImport("branch-sdk", "closeJourney")
-  @js.native
-  def closeJourney(callback: js.Function1[/* err */ BranchError, Unit]): Unit = js.native
+  @scala.inline
+  def closeJourney(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeJourney")().asInstanceOf[Unit]
+  @scala.inline
+  def closeJourney(callback: js.Function1[/* err */ BranchError, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeJourney")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "creditHistory")
-  @js.native
+  @scala.inline
   def creditHistory(
     options: CreditHistoryOptions,
     callback: js.Function2[/* err */ BranchError, /* data */ CreditHistoryCallbackResponse, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("creditHistory")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "credits")
-  @js.native
-  def credits(callback: js.Function2[/* err */ BranchError, /* data */ Record[String, Double], Unit]): Unit = js.native
+  @scala.inline
+  def credits(callback: js.Function2[/* err */ BranchError, /* data */ Record[String, Double], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("credits")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "crossPlatformIds")
-  @js.native
-  def crossPlatformIds(callback: js.Function2[/* err */ BranchError, /* data */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def crossPlatformIds(callback: js.Function2[/* err */ BranchError, /* data */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crossPlatformIds")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "data")
-  @js.native
-  def data(): Unit = js.native
-  @JSImport("branch-sdk", "data")
-  @js.native
-  def data(callback: js.Function2[/* err */ BranchError, /* data */ SessionData | Null, Unit]): Unit = js.native
+  @scala.inline
+  def data(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("data")().asInstanceOf[Unit]
+  @scala.inline
+  def data(callback: js.Function2[/* err */ BranchError, /* data */ SessionData | Null, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "deepview")
-  @js.native
-  def deepview(deepview_data: DeepLinkData): Unit = js.native
-  @JSImport("branch-sdk", "deepview")
-  @js.native
-  def deepview(
-    deepview_data: DeepLinkData,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
-  @JSImport("branch-sdk", "deepview")
-  @js.native
-  def deepview(deepview_data: DeepLinkData, options: DeepViewOptions): Unit = js.native
-  @JSImport("branch-sdk", "deepview")
-  @js.native
+  @scala.inline
+  def deepview(deepview_data: DeepLinkData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepview")(deepview_data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def deepview(deepview_data: DeepLinkData, options: Unit, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepview")(deepview_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def deepview(deepview_data: DeepLinkData, options: DeepViewOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepview")(deepview_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def deepview(
     deepview_data: DeepLinkData,
     options: DeepViewOptions,
     callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepview")(deepview_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "deepviewCta")
-  @js.native
-  def deepviewCta(): Unit = js.native
+  @scala.inline
+  def deepviewCta(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepviewCta")().asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "disableTracking")
-  @js.native
-  def disableTracking(): Unit = js.native
-  @JSImport("branch-sdk", "disableTracking")
-  @js.native
-  def disableTracking(disable: Boolean): Unit = js.native
+  @scala.inline
+  def disableTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableTracking")().asInstanceOf[Unit]
+  @scala.inline
+  def disableTracking(disable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableTracking")(disable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "first")
-  @js.native
-  def first(): Unit = js.native
-  @JSImport("branch-sdk", "first")
-  @js.native
-  def first(callback: js.Function2[/* err */ BranchError, /* data */ SessionData | Null, Unit]): Unit = js.native
+  @scala.inline
+  def first(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[Unit]
+  @scala.inline
+  def first(callback: js.Function2[/* err */ BranchError, /* data */ SessionData | Null, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "getBrowserFingerprintId")
-  @js.native
-  def getBrowserFingerprintId(callback: js.Function2[/* err */ BranchError, /* browser_fingerprint */ FingerprintResponse, Unit]): Unit = js.native
+  @scala.inline
+  def getBrowserFingerprintId(callback: js.Function2[/* err */ BranchError, /* browser_fingerprint */ FingerprintResponse, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowserFingerprintId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "init")
-  @js.native
-  def init(branch_key: String): Unit = js.native
-  @JSImport("branch-sdk", "init")
-  @js.native
+  @scala.inline
+  def init(branch_key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(branch_key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def init(
     branch_key: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function2[/* err */ BranchError, /* data */ SessionData | Null, Unit]
-  ): Unit = js.native
-  @JSImport("branch-sdk", "init")
-  @js.native
-  def init(branch_key: String, options: InitOptions): Unit = js.native
-  @JSImport("branch-sdk", "init")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(branch_key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def init(branch_key: String, options: InitOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(branch_key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def init(
     branch_key: String,
     options: InitOptions,
     callback: js.Function2[/* err */ BranchError, /* data */ SessionData | Null, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(branch_key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "lastAttributedTouchData")
-  @js.native
-  def lastAttributedTouchData(attribution_window: Double): Unit = js.native
-  @JSImport("branch-sdk", "lastAttributedTouchData")
-  @js.native
-  def lastAttributedTouchData(attribution_window: Double, callback: js.Function2[/* err */ BranchError, /* data */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def lastAttributedTouchData(attribution_window: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lastAttributedTouchData")(attribution_window.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def lastAttributedTouchData(attribution_window: Double, callback: js.Function2[/* err */ BranchError, /* data */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lastAttributedTouchData")(attribution_window.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "link")
-  @js.native
+  @scala.inline
   def link(
     link_data: DeepLinkData,
     callback: js.Function2[/* err */ BranchError, /* link */ String | Null, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(link_data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
-  def logEvent(event: String): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
-  def logEvent(
-    event: String,
-    event_data_and_custom_data: js.UndefOr[scala.Nothing],
-    content_items: js.UndefOr[scala.Nothing],
-    customer_event_alias: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
-  def logEvent(
-    event: String,
-    event_data_and_custom_data: js.UndefOr[scala.Nothing],
-    content_items: js.UndefOr[scala.Nothing],
-    customer_event_alias: String
-  ): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
-  def logEvent(
-    event: String,
-    event_data_and_custom_data: js.UndefOr[scala.Nothing],
-    content_items: js.UndefOr[scala.Nothing],
-    customer_event_alias: String,
-    callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
-  def logEvent(
-    event: String,
-    event_data_and_custom_data: js.UndefOr[scala.Nothing],
-    content_items: js.Array[js.Object]
-  ): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
-  def logEvent(
-    event: String,
-    event_data_and_custom_data: js.UndefOr[scala.Nothing],
-    content_items: js.Array[js.Object],
-    customer_event_alias: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
-  def logEvent(
-    event: String,
-    event_data_and_custom_data: js.UndefOr[scala.Nothing],
-    content_items: js.Array[js.Object],
-    customer_event_alias: String
-  ): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
-  def logEvent(
-    event: String,
-    event_data_and_custom_data: js.UndefOr[scala.Nothing],
-    content_items: js.Array[js.Object],
-    customer_event_alias: String,
-    callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
-  def logEvent(event: String, event_data_and_custom_data: js.Object): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
-  def logEvent(
-    event: String,
-    event_data_and_custom_data: js.Object,
-    content_items: js.UndefOr[scala.Nothing],
-    customer_event_alias: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
-  def logEvent(
-    event: String,
-    event_data_and_custom_data: js.Object,
-    content_items: js.UndefOr[scala.Nothing],
-    customer_event_alias: String
-  ): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
-  def logEvent(
-    event: String,
-    event_data_and_custom_data: js.Object,
-    content_items: js.UndefOr[scala.Nothing],
-    customer_event_alias: String,
-    callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
-  def logEvent(event: String, event_data_and_custom_data: js.Object, content_items: js.Array[js.Object]): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
-  def logEvent(
-    event: String,
-    event_data_and_custom_data: js.Object,
-    content_items: js.Array[js.Object],
-    customer_event_alias: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
+  @scala.inline
+  def logEvent(event: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def logEvent(event: String, event_data_and_custom_data: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logEvent(event: String, event_data_and_custom_data: js.Object, content_items: js.Array[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def logEvent(
     event: String,
     event_data_and_custom_data: js.Object,
     content_items: js.Array[js.Object],
     customer_event_alias: String
-  ): Unit = js.native
-  @JSImport("branch-sdk", "logEvent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def logEvent(
     event: String,
     event_data_and_custom_data: js.Object,
     content_items: js.Array[js.Object],
     customer_event_alias: String,
     callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logEvent(
+    event: String,
+    event_data_and_custom_data: js.Object,
+    content_items: js.Array[js.Object],
+    customer_event_alias: Unit,
+    callback: js.Function1[/* err */ BranchError, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logEvent(
+    event: String,
+    event_data_and_custom_data: js.Object,
+    content_items: Unit,
+    customer_event_alias: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logEvent(
+    event: String,
+    event_data_and_custom_data: js.Object,
+    content_items: Unit,
+    customer_event_alias: String,
+    callback: js.Function1[/* err */ BranchError, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logEvent(
+    event: String,
+    event_data_and_custom_data: js.Object,
+    content_items: Unit,
+    customer_event_alias: Unit,
+    callback: js.Function1[/* err */ BranchError, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logEvent(event: String, event_data_and_custom_data: Unit, content_items: js.Array[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logEvent(
+    event: String,
+    event_data_and_custom_data: Unit,
+    content_items: js.Array[js.Object],
+    customer_event_alias: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logEvent(
+    event: String,
+    event_data_and_custom_data: Unit,
+    content_items: js.Array[js.Object],
+    customer_event_alias: String,
+    callback: js.Function1[/* err */ BranchError, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logEvent(
+    event: String,
+    event_data_and_custom_data: Unit,
+    content_items: js.Array[js.Object],
+    customer_event_alias: Unit,
+    callback: js.Function1[/* err */ BranchError, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logEvent(event: String, event_data_and_custom_data: Unit, content_items: Unit, customer_event_alias: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logEvent(
+    event: String,
+    event_data_and_custom_data: Unit,
+    content_items: Unit,
+    customer_event_alias: String,
+    callback: js.Function1[/* err */ BranchError, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logEvent(
+    event: String,
+    event_data_and_custom_data: Unit,
+    content_items: Unit,
+    customer_event_alias: Unit,
+    callback: js.Function1[/* err */ BranchError, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "logout")
-  @js.native
-  def logout(): Unit = js.native
-  @JSImport("branch-sdk", "logout")
-  @js.native
-  def logout(callback: js.Function1[/* err */ BranchError, Unit]): Unit = js.native
+  @scala.inline
+  def logout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")().asInstanceOf[Unit]
+  @scala.inline
+  def logout(callback: js.Function1[/* err */ BranchError, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "redeem")
-  @js.native
-  def redeem(amount: Double, bucket: String): Unit = js.native
-  @JSImport("branch-sdk", "redeem")
-  @js.native
-  def redeem(amount: Double, bucket: String, callback: js.Function1[/* err */ BranchError, Unit]): Unit = js.native
+  @scala.inline
+  def redeem(amount: Double, bucket: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("redeem")(amount.asInstanceOf[js.Any], bucket.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def redeem(amount: Double, bucket: String, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("redeem")(amount.asInstanceOf[js.Any], bucket.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "removeListener")
-  @js.native
-  def removeListener(listener: js.Function2[/* event */ JourneyEvent, /* data */ js.Object, Unit]): Unit = js.native
+  @scala.inline
+  def removeListener(listener: js.Function2[/* event */ JourneyEvent, /* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "sendSMS")
-  @js.native
-  def sendSMS(phone: String, link_data: DeepLinkData): Unit = js.native
-  @JSImport("branch-sdk", "sendSMS")
-  @js.native
+  @scala.inline
+  def sendSMS(phone: String, link_data: DeepLinkData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSMS")(phone.asInstanceOf[js.Any], link_data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def sendSMS(
     phone: String,
     link_data: DeepLinkData,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
-  @JSImport("branch-sdk", "sendSMS")
-  @js.native
-  def sendSMS(phone: String, link_data: DeepLinkData, options: Makenewlink): Unit = js.native
-  @JSImport("branch-sdk", "sendSMS")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSMS")(phone.asInstanceOf[js.Any], link_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sendSMS(phone: String, link_data: DeepLinkData, options: Makenewlink): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSMS")(phone.asInstanceOf[js.Any], link_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def sendSMS(
     phone: String,
     link_data: DeepLinkData,
     options: Makenewlink,
     callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSMS")(phone.asInstanceOf[js.Any], link_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "setBranchViewData")
-  @js.native
-  def setBranchViewData(view_data: DeepLinkData): Unit = js.native
+  @scala.inline
+  def setBranchViewData(view_data: DeepLinkData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBranchViewData")(view_data.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "setIdentity")
-  @js.native
-  def setIdentity(identity: String): Unit = js.native
-  @JSImport("branch-sdk", "setIdentity")
-  @js.native
+  @scala.inline
+  def setIdentity(identity: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIdentity")(identity.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def setIdentity(
     identity: String,
     callback: js.Function2[/* err */ BranchError, /* data */ IdentityCallbackData | Null, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setIdentity")(identity.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "track")
-  @js.native
-  def track(event: String): Unit = js.native
-  @JSImport("branch-sdk", "track")
-  @js.native
-  def track(
-    event: String,
-    metadata: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
-  @JSImport("branch-sdk", "track")
-  @js.native
-  def track(event: String, metadata: js.Object): Unit = js.native
-  @JSImport("branch-sdk", "track")
-  @js.native
-  def track(event: String, metadata: js.Object, callback: js.Function1[/* err */ BranchError, Unit]): Unit = js.native
+  @scala.inline
+  def track(event: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def track(event: String, metadata: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def track(event: String, metadata: js.Object, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def track(event: String, metadata: Unit, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("branch-sdk", "trackCommerceEvent")
-  @js.native
-  def trackCommerceEvent_purchase(event: purchase, commerce_data: js.Object): Unit = js.native
-  @JSImport("branch-sdk", "trackCommerceEvent")
-  @js.native
-  def trackCommerceEvent_purchase(
-    event: purchase,
-    commerce_data: js.Object,
-    metadata: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
-  @JSImport("branch-sdk", "trackCommerceEvent")
-  @js.native
-  def trackCommerceEvent_purchase(event: purchase, commerce_data: js.Object, metadata: js.Object): Unit = js.native
-  @JSImport("branch-sdk", "trackCommerceEvent")
-  @js.native
+  @scala.inline
+  def trackCommerceEvent_purchase(event: purchase, commerce_data: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCommerceEvent")(event.asInstanceOf[js.Any], commerce_data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def trackCommerceEvent_purchase(event: purchase, commerce_data: js.Object, metadata: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCommerceEvent")(event.asInstanceOf[js.Any], commerce_data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def trackCommerceEvent_purchase(
     event: purchase,
     commerce_data: js.Object,
     metadata: js.Object,
     callback: js.Function1[/* err */ BranchError, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCommerceEvent")(event.asInstanceOf[js.Any], commerce_data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def trackCommerceEvent_purchase(
+    event: purchase,
+    commerce_data: js.Object,
+    metadata: Unit,
+    callback: js.Function1[/* err */ BranchError, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCommerceEvent")(event.asInstanceOf[js.Any], commerce_data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait AutoAppIndexData extends StObject {
     
-    var androidPackageName: js.UndefOr[String] = js.native
+    var androidPackageName: js.UndefOr[String] = js.undefined
     
-    var androidURL: js.UndefOr[String] = js.native
+    var androidURL: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[StringDictionary[CustomLinkData]] = js.native
+    var data: js.UndefOr[StringDictionary[CustomLinkData]] = js.undefined
     
-    var iosAppId: js.UndefOr[String] = js.native
+    var iosAppId: js.UndefOr[String] = js.undefined
     
-    var iosURL: js.UndefOr[String] = js.native
+    var iosURL: js.UndefOr[String] = js.undefined
   }
   object AutoAppIndexData {
     
@@ -486,14 +426,13 @@ object mod {
   
   type CreditHistoryCallbackResponse = js.Array[CreditHistoryTransaction] | Null
   
-  @js.native
   trait CreditHistoryOptions extends StObject {
     
-    var begin_after_id: js.UndefOr[String] = js.native
+    var begin_after_id: js.UndefOr[String] = js.undefined
     
-    var bucket: js.UndefOr[String] = js.native
+    var bucket: js.UndefOr[String] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
   }
   object CreditHistoryOptions {
     
@@ -526,14 +465,13 @@ object mod {
     }
   }
   
-  @js.native
   trait CreditHistoryTransaction extends StObject {
     
-    var referree: String = js.native
+    var referree: String
     
-    var referrer: String = js.native
+    var referrer: String
     
-    var transaction: Amount = js.native
+    var transaction: Amount
   }
   object CreditHistoryTransaction {
     
@@ -559,37 +497,36 @@ object mod {
   
   type CustomLinkData = String | Double | Boolean
   
-  @js.native
   trait DeepLinkData extends StObject {
     
     /**
       * Use this field to organize the links by actual campaign. For example, if you launched a new feature or product and want to run a campaign around that
       */
-    var campaign: js.UndefOr[String] = js.native
+    var campaign: js.UndefOr[String] = js.undefined
     
     // Analytical labels
     /**
       * Use channel to tag the route that your link reaches users. For example, tag links with 'Facebook' or 'LinkedIn' to help track clicks and installs through those paths separately
       */
-    var channel: js.UndefOr[String] = js.native
+    var channel: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[Dictcustomkey] = js.native
+    var data: js.UndefOr[Dictcustomkey] = js.undefined
     
     /**
       * This is the feature of your app that the link might be associated with. For example, if you had built a referral program, you would label links with the feature 'referral'
       */
-    var feature: js.UndefOr[String] = js.native
+    var feature: js.UndefOr[String] = js.undefined
     
     /**
       * Use this to categorize the progress or category of a user when the link was generated.
       * For example, if you had an invite system accessible on level 1, level 3 and 5, you could differentiate links generated at each level with this parameter.
       */
-    var stage: js.UndefOr[String] = js.native
+    var stage: js.UndefOr[String] = js.undefined
     
     /**
       * This is a free form entry with unlimited values ['string']. Use it to organize your link data with labels that don't fit within the bounds of the above
       */
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object DeepLinkData {
     
@@ -643,12 +580,11 @@ object mod {
     }
   }
   
-  @js.native
   trait DeepViewOptions extends StObject {
     
-    var make_new_link: js.UndefOr[Boolean] = js.native
+    var make_new_link: js.UndefOr[Boolean] = js.undefined
     
-    var open_app: js.UndefOr[Boolean] = js.native
+    var open_app: js.UndefOr[Boolean] = js.undefined
   }
   object DeepViewOptions {
     
@@ -677,16 +613,15 @@ object mod {
   
   type FingerprintResponse = String | Null
   
-  @js.native
   trait IdentityCallbackData extends StObject {
     
-    var identity_id: String = js.native
+    var identity_id: String
     
-    var link: String = js.native
+    var link: String
     
-    var referring_data_parsed: js.UndefOr[js.Object] = js.native
+    var referring_data_parsed: js.UndefOr[js.Object] = js.undefined
     
-    var referring_identity: js.UndefOr[String] = js.native
+    var referring_identity: js.UndefOr[String] = js.undefined
   }
   object IdentityCallbackData {
     
@@ -719,30 +654,29 @@ object mod {
     }
   }
   
-  @js.native
   trait InitOptions extends StObject {
     
-    var branch_match_id: js.UndefOr[String] = js.native
+    var branch_match_id: js.UndefOr[String] = js.undefined
     
-    var branch_view_id: js.UndefOr[String] = js.native
+    var branch_view_id: js.UndefOr[String] = js.undefined
     
-    var disable_entry_animation: js.UndefOr[Boolean] = js.native
+    var disable_entry_animation: js.UndefOr[Boolean] = js.undefined
     
-    var disable_exit_animation: js.UndefOr[Boolean] = js.native
+    var disable_exit_animation: js.UndefOr[Boolean] = js.undefined
     
-    var metadata: js.UndefOr[js.Object] = js.native
+    var metadata: js.UndefOr[js.Object] = js.undefined
     
-    var no_journeys: js.UndefOr[Boolean] = js.native
+    var no_journeys: js.UndefOr[Boolean] = js.undefined
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
-    var retry_delay: js.UndefOr[Double] = js.native
+    var retry_delay: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var tracking_disabled: js.UndefOr[Boolean] = js.native
+    var tracking_disabled: js.UndefOr[Boolean] = js.undefined
   }
   object InitOptions {
     
@@ -823,17 +757,16 @@ object mod {
     }
   }
   
-  @js.native
   trait SessionData extends StObject {
     
     @JSName("~referring_link")
-    var Tildereferring_link: js.UndefOr[String] = js.native
+    var Tildereferring_link: js.UndefOr[String] = js.undefined
     
-    var has_app: Boolean = js.native
+    var has_app: Boolean
     
-    var identity: String = js.native
+    var identity: String
     
-    var referring_identity: js.UndefOr[String] = js.native
+    var referring_identity: js.UndefOr[String] = js.undefined
   }
   object SessionData {
     

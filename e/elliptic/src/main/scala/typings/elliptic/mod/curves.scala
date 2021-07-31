@@ -3,7 +3,6 @@ package typings.elliptic.mod
 import typings.elliptic.mod.curves.PresetCurve.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object curves {
@@ -27,39 +26,38 @@ object curves {
   }
   object PresetCurve {
     
-    @js.native
     trait Options extends StObject {
       
-      var a: String = js.native
+      var a: String
       
-      var b: String = js.native
+      var b: String
       
-      var basis: js.UndefOr[js.Any] = js.native
+      var basis: js.UndefOr[js.Any] = js.undefined
       
       // ?
-      var beta: js.UndefOr[String] = js.native
+      var beta: js.UndefOr[String] = js.undefined
       
-      var g: js.Any = js.native
+      var g: js.Any
       
-      var gRed: Boolean = js.native
+      var gRed: Boolean
       
-      var hash: js.Any = js.native
+      var hash: js.Any
       
-      var lambda: js.UndefOr[String] = js.native
+      var lambda: js.UndefOr[String] = js.undefined
       
-      var n: String = js.native
+      var n: String
       
-      var p: String = js.native
+      var p: String
       
-      var prime: String | Null = js.native
+      var prime: String | Null
       
-      var `type`: String = js.native
+      var `type`: String
     }
     object Options {
       
       @scala.inline
       def apply(a: String, b: String, g: js.Any, gRed: Boolean, hash: js.Any, n: String, p: String, `type`: String): Options = {
-        val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], gRed = gRed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], gRed = gRed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], prime = null)
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Options]
       }

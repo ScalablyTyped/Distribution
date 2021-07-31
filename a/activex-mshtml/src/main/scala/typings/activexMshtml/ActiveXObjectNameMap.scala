@@ -5,19 +5,17 @@ import typings.activexMshtml.MSHTML.HTMLDocument
 import typings.activexMshtml.MSHTML.Scriptlet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("ScriptBridge.ScriptBridge")
-  var ScriptBridgeDotScriptBridge: Scriptlet = js.native
+  var ScriptBridgeDotScriptBridge: Scriptlet
   
   @JSName("TemplatePrinter.TemplatePrinter")
-  var TemplatePrinterDotTemplatePrinter: CTemplatePrinter = js.native
+  var TemplatePrinterDotTemplatePrinter: CTemplatePrinter
   
-  var htmlfile: HTMLDocument = js.native
+  var htmlfile: HTMLDocument
 }
 object ActiveXObjectNameMap {
   

@@ -8,15 +8,13 @@ import typings.cssSelectorParser.selectorMod.AttrValueType
 import typings.cssSelectorParser.selectorMod.Selector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     
@@ -34,14 +32,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Operator extends StObject {
     
-    var operator: String = js.native
+    var operator: String
     
-    var value: String = js.native
+    var value: String
     
-    var valueType: AttrValueType = js.native
+    var valueType: AttrValueType
   }
   object Operator {
     
@@ -65,18 +62,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: Selector = js.native
+    var value: Selector
     
-    var valueType: selector = js.native
+    var valueType: selector
   }
   object Value {
     
     @scala.inline
-    def apply(value: Selector, valueType: selector): Value = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
+    def apply(value: Selector): Value = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], valueType = "selector")
       __obj.asInstanceOf[Value]
     }
     
@@ -91,12 +87,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ValueType extends StObject {
     
-    var value: String = js.native
+    var value: String
     
-    var valueType: string | substitute | numeric = js.native
+    var valueType: string | substitute | numeric
   }
   object ValueType {
     

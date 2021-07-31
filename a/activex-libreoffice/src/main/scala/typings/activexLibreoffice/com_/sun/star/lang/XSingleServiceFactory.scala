@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,21 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   * @see XInitialization
   */
-@js.native
-trait XSingleServiceFactory extends XInterface {
+trait XSingleServiceFactory
+  extends StObject
+     with XInterface {
   
   /**
     * Creates an instance of a service implementation.
     * @returns service instance
     */
-  def createInstance(): XInterface = js.native
+  def createInstance(): XInterface
   
   /**
     * Creates an instance of a service implementation initialized with some arguments.
     * @param aArguments arguments passed to implementation
     * @returns service instance
     */
-  def createInstanceWithArguments(aArguments: SeqEquiv[_]): XInterface = js.native
+  def createInstanceWithArguments(aArguments: SeqEquiv[js.Any]): XInterface
 }
 object XSingleServiceFactory {
   
@@ -37,7 +37,7 @@ object XSingleServiceFactory {
   def apply(
     acquire: () => Unit,
     createInstance: () => XInterface,
-    createInstanceWithArguments: SeqEquiv[_] => XInterface,
+    createInstanceWithArguments: SeqEquiv[js.Any] => XInterface,
     queryInterface: `type` => js.Any,
     release: () => Unit
   ): XSingleServiceFactory = {
@@ -52,6 +52,6 @@ object XSingleServiceFactory {
     def setCreateInstance(value: () => XInterface): Self = StObject.set(x, "createInstance", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateInstanceWithArguments(value: SeqEquiv[_] => XInterface): Self = StObject.set(x, "createInstanceWithArguments", js.Any.fromFunction1(value))
+    def setCreateInstanceWithArguments(value: SeqEquiv[js.Any] => XInterface): Self = StObject.set(x, "createInstanceWithArguments", js.Any.fromFunction1(value))
   }
 }

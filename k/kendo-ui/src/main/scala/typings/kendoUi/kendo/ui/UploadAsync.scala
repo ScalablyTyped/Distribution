@@ -2,37 +2,35 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadAsync extends StObject {
   
-  var autoRetryAfter: js.UndefOr[Double] = js.native
+  var autoRetryAfter: js.UndefOr[Double] = js.undefined
   
-  var autoUpload: js.UndefOr[Boolean] = js.native
+  var autoUpload: js.UndefOr[Boolean] = js.undefined
   
-  var batch: js.UndefOr[Boolean] = js.native
+  var batch: js.UndefOr[Boolean] = js.undefined
   
-  var chunkSize: js.UndefOr[Double] = js.native
+  var chunkSize: js.UndefOr[Double] = js.undefined
   
-  var concurrent: js.UndefOr[Boolean] = js.native
+  var concurrent: js.UndefOr[Boolean] = js.undefined
   
-  var maxAutoRetries: js.UndefOr[Double] = js.native
+  var maxAutoRetries: js.UndefOr[Double] = js.undefined
   
-  var removeField: js.UndefOr[String] = js.native
+  var removeField: js.UndefOr[String] = js.undefined
   
-  var removeUrl: js.UndefOr[String] = js.native
+  var removeUrl: js.UndefOr[String] = js.undefined
   
-  var removeVerb: js.UndefOr[String] = js.native
+  var removeVerb: js.UndefOr[String] = js.undefined
   
-  var saveField: js.UndefOr[String] = js.native
+  var saveField: js.UndefOr[String] = js.undefined
   
-  var saveUrl: js.UndefOr[String] = js.native
+  var saveUrl: js.UndefOr[String] = js.undefined
   
-  var useArrayBuffer: js.UndefOr[Boolean] = js.native
+  var useArrayBuffer: js.UndefOr[Boolean] = js.undefined
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object UploadAsync {
   

@@ -6,247 +6,246 @@ import typings.tuyaPanelKit.mod.I18NLanMap
 import typings.tuyaPanelKit.mod.MobileInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictkey
-  extends /* prop */ StringDictionary[js.Any] {
+  extends StObject
+     with /* prop */ StringDictionary[js.Any] {
   
-  var activeSubDeviceWithGwId: AnyFunction = js.native
+  var activeSubDeviceWithGwId: AnyFunction
   
-  var addDeviceToRoom: AnyFunction = js.native
+  var addDeviceToRoom: AnyFunction
   
-  var addListener: AnyFunction = js.native
+  var addListener: AnyFunction
   
-  var aes128DecryptedStringWithPassword: AnyFunction = js.native
+  var aes128DecryptedStringWithPassword: AnyFunction
   
-  var aes128EncryptedStringWithPassword: AnyFunction = js.native
+  var aes128EncryptedStringWithPassword: AnyFunction
   
-  var apiRNRequest: AnyFunction = js.native
+  var apiRNRequest: AnyFunction
   
-  var apiRequest: AnyFunction = js.native
+  var apiRequest: AnyFunction
   
-  var back: AnyFunction = js.native
+  var back: AnyFunction
   
-  var battery: AnyFunction = js.native
+  var battery: AnyFunction
   
-  var bottomListDialog: AnyFunction = js.native
+  var bottomListDialog: AnyFunction
   
-  var calculateWhiteModeColor: AnyFunction = js.native
+  var calculateWhiteModeColor: AnyFunction
   
-  var calculationDistance: AnyFunction = js.native
+  var calculationDistance: AnyFunction
   
-  var checkUpdate: AnyFunction = js.native
+  var checkUpdate: AnyFunction
   
-  var deleteDeviceInfo: AnyFunction = js.native
+  var deleteDeviceInfo: AnyFunction
   
-  var deviceIsCharging: AnyFunction = js.native
+  var deviceIsCharging: AnyFunction
   
-  var disablePopGesture: AnyFunction = js.native
+  var disablePopGesture: AnyFunction
   
-  var enablePopGesture: AnyFunction = js.native
+  var enablePopGesture: AnyFunction
   
-  var evilTransform: AnyFunction = js.native
+  var evilTransform: AnyFunction
   
-  var gcj02ToWgs84Location: AnyFunction = js.native
+  var gcj02ToWgs84Location: AnyFunction
   
-  var getBleManagerState: AnyFunction = js.native
+  var getBleManagerState: AnyFunction
   
-  var getBleRssi: AnyFunction = js.native
+  var getBleRssi: AnyFunction
   
-  var getCurrentscreenBrightness: AnyFunction = js.native
+  var getCurrentscreenBrightness: AnyFunction
   
-  var getDevInfo: AnyFunction = js.native
+  var getDevInfo: AnyFunction
   
-  var getDevProperty: AnyFunction = js.native
+  var getDevProperty: AnyFunction
   
-  var getDeviceList: AnyFunction = js.native
+  var getDeviceList: AnyFunction
   
-  var getDpDataFromClient: AnyFunction = js.native
+  var getDpDataFromClient: AnyFunction
   
-  var getDpDataFromDevice: AnyFunction = js.native
+  var getDpDataFromDevice: AnyFunction
   
-  var getDpDataFromMeshDevice: AnyFunction = js.native
+  var getDpDataFromMeshDevice: AnyFunction
   
-  var getDpsWithDevId: AnyFunction = js.native
+  var getDpsWithDevId: AnyFunction
   
-  var getMeshDeviceInfoByNodeId: AnyFunction = js.native
+  var getMeshDeviceInfoByNodeId: AnyFunction
   
-  var getMobileInfo: AnyFunction = js.native
+  var getMobileInfo: AnyFunction
   
-  var getNetType: AnyFunction = js.native
+  var getNetType: AnyFunction
   
-  var getNetworkType: AnyFunction = js.native
+  var getNetworkType: AnyFunction
   
-  var getPanelInfo: AnyFunction = js.native
+  var getPanelInfo: AnyFunction
   
-  var getPlayStatus: AnyFunction = js.native
+  var getPlayStatus: AnyFunction
   
-  var getRoomsInCurrentHome: AnyFunction = js.native
+  var getRoomsInCurrentHome: AnyFunction
   
-  var getSubDeviceList: AnyFunction = js.native
+  var getSubDeviceList: AnyFunction
   
-  var getWiFiSsid: AnyFunction = js.native
+  var getWiFiSsid: AnyFunction
   
-  var goToAlarmListActivity: AnyFunction = js.native
+  var goToAlarmListActivity: AnyFunction
   
-  var gotoBlePermissions: AnyFunction = js.native
+  var gotoBlePermissions: AnyFunction
   
-  var gotoDeviceWifiNetworkMonitor: AnyFunction = js.native
+  var gotoDeviceWifiNetworkMonitor: AnyFunction
   
-  def gotoDpAlarm(param: Category): Unit = js.native
+  def gotoDpAlarm(param: Category): Unit
   
-  var hideLoading: AnyFunction = js.native
+  var hideLoading: AnyFunction
   
-  var is24Hour: AnyFunction = js.native
+  var is24Hour: AnyFunction
   
-  def jumpTo(routeId: String): js.Any = js.native
+  def jumpTo(routeId: String): js.Any
   
-  var lang: I18NLanMap = js.native
+  var lang: I18NLanMap
   
-  var mobileInfo: MobileInfo = js.native
+  var mobileInfo: MobileInfo
   
-  var panelInfo: IsVDevice = js.native
+  var panelInfo: IsVDevice
   
-  var postBleChannelCommand: AnyFunction = js.native
+  var postBleChannelCommand: AnyFunction
   
-  var pushToNextPageWithDeviceId: AnyFunction = js.native
+  var pushToNextPageWithDeviceId: AnyFunction
   
-  var putDpData: AnyFunction = js.native
+  var putDpData: AnyFunction
   
-  var putLocalDpData: AnyFunction = js.native
+  var putLocalDpData: AnyFunction
   
-  var putMqttDpData: AnyFunction = js.native
+  var putMqttDpData: AnyFunction
   
-  var receiverMqttData: AnyFunction = js.native
+  var receiverMqttData: AnyFunction
   
-  var removeDevice: AnyFunction = js.native
+  var removeDevice: AnyFunction
   
-  var removeGW: AnyFunction = js.native
+  var removeGW: AnyFunction
   
-  var removeListeners: AnyFunction = js.native
+  var removeListeners: AnyFunction
   
-  var removeSubDevice: AnyFunction = js.native
+  var removeSubDevice: AnyFunction
   
-  var renameSubDeviceName: AnyFunction = js.native
+  var renameSubDeviceName: AnyFunction
   
-  var renameTitle: AnyFunction = js.native
+  var renameTitle: AnyFunction
   
-  var screenAlwaysOn: AnyFunction = js.native
+  var screenAlwaysOn: AnyFunction
   
-  var screenBrightness: AnyFunction = js.native
+  var screenBrightness: AnyFunction
   
-  var sendMqttData: AnyFunction = js.native
+  var sendMqttData: AnyFunction
   
-  var setDevProperty: AnyFunction = js.native
+  var setDevProperty: AnyFunction
   
-  var shareMsg: AnyFunction = js.native
+  var shareMsg: AnyFunction
   
-  var shareToSystem: AnyFunction = js.native
+  var shareToSystem: AnyFunction
   
-  var showDeviceMenu: AnyFunction = js.native
+  var showDeviceMenu: AnyFunction
   
-  var showEditDialog: AnyFunction = js.native
+  var showEditDialog: AnyFunction
   
-  var showLoading: AnyFunction = js.native
+  var showLoading: AnyFunction
   
-  var simpleConfirmDialog: AnyFunction = js.native
+  var simpleConfirmDialog: AnyFunction
   
-  var simpleTipDialog: AnyFunction = js.native
+  var simpleTipDialog: AnyFunction
   
-  var startBLEListening: AnyFunction = js.native
+  var startBLEListening: AnyFunction
   
-  var startListening: AnyFunction = js.native
+  var startListening: AnyFunction
   
-  var stopActiveSubDeviceWithGwId: AnyFunction = js.native
+  var stopActiveSubDeviceWithGwId: AnyFunction
   
-  var stopListening: AnyFunction = js.native
+  var stopListening: AnyFunction
   
-  var updateLocation: AnyFunction = js.native
+  var updateLocation: AnyFunction
 }
 object Dictkey {
   
   @scala.inline
   def apply(
-    activeSubDeviceWithGwId: /* repeated */ js.Any => Unit,
-    addDeviceToRoom: /* repeated */ js.Any => Unit,
-    addListener: /* repeated */ js.Any => Unit,
-    aes128DecryptedStringWithPassword: /* repeated */ js.Any => Unit,
-    aes128EncryptedStringWithPassword: /* repeated */ js.Any => Unit,
-    apiRNRequest: /* repeated */ js.Any => Unit,
-    apiRequest: /* repeated */ js.Any => Unit,
-    back: /* repeated */ js.Any => Unit,
-    battery: /* repeated */ js.Any => Unit,
-    bottomListDialog: /* repeated */ js.Any => Unit,
-    calculateWhiteModeColor: /* repeated */ js.Any => Unit,
-    calculationDistance: /* repeated */ js.Any => Unit,
-    checkUpdate: /* repeated */ js.Any => Unit,
-    deleteDeviceInfo: /* repeated */ js.Any => Unit,
-    deviceIsCharging: /* repeated */ js.Any => Unit,
-    disablePopGesture: /* repeated */ js.Any => Unit,
-    enablePopGesture: /* repeated */ js.Any => Unit,
-    evilTransform: /* repeated */ js.Any => Unit,
-    gcj02ToWgs84Location: /* repeated */ js.Any => Unit,
-    getBleManagerState: /* repeated */ js.Any => Unit,
-    getBleRssi: /* repeated */ js.Any => Unit,
-    getCurrentscreenBrightness: /* repeated */ js.Any => Unit,
-    getDevInfo: /* repeated */ js.Any => Unit,
-    getDevProperty: /* repeated */ js.Any => Unit,
-    getDeviceList: /* repeated */ js.Any => Unit,
-    getDpDataFromClient: /* repeated */ js.Any => Unit,
-    getDpDataFromDevice: /* repeated */ js.Any => Unit,
-    getDpDataFromMeshDevice: /* repeated */ js.Any => Unit,
-    getDpsWithDevId: /* repeated */ js.Any => Unit,
-    getMeshDeviceInfoByNodeId: /* repeated */ js.Any => Unit,
-    getMobileInfo: /* repeated */ js.Any => Unit,
-    getNetType: /* repeated */ js.Any => Unit,
-    getNetworkType: /* repeated */ js.Any => Unit,
-    getPanelInfo: /* repeated */ js.Any => Unit,
-    getPlayStatus: /* repeated */ js.Any => Unit,
-    getRoomsInCurrentHome: /* repeated */ js.Any => Unit,
-    getSubDeviceList: /* repeated */ js.Any => Unit,
-    getWiFiSsid: /* repeated */ js.Any => Unit,
-    goToAlarmListActivity: /* repeated */ js.Any => Unit,
-    gotoBlePermissions: /* repeated */ js.Any => Unit,
-    gotoDeviceWifiNetworkMonitor: /* repeated */ js.Any => Unit,
+    activeSubDeviceWithGwId: AnyFunction,
+    addDeviceToRoom: AnyFunction,
+    addListener: AnyFunction,
+    aes128DecryptedStringWithPassword: AnyFunction,
+    aes128EncryptedStringWithPassword: AnyFunction,
+    apiRNRequest: AnyFunction,
+    apiRequest: AnyFunction,
+    back: AnyFunction,
+    battery: AnyFunction,
+    bottomListDialog: AnyFunction,
+    calculateWhiteModeColor: AnyFunction,
+    calculationDistance: AnyFunction,
+    checkUpdate: AnyFunction,
+    deleteDeviceInfo: AnyFunction,
+    deviceIsCharging: AnyFunction,
+    disablePopGesture: AnyFunction,
+    enablePopGesture: AnyFunction,
+    evilTransform: AnyFunction,
+    gcj02ToWgs84Location: AnyFunction,
+    getBleManagerState: AnyFunction,
+    getBleRssi: AnyFunction,
+    getCurrentscreenBrightness: AnyFunction,
+    getDevInfo: AnyFunction,
+    getDevProperty: AnyFunction,
+    getDeviceList: AnyFunction,
+    getDpDataFromClient: AnyFunction,
+    getDpDataFromDevice: AnyFunction,
+    getDpDataFromMeshDevice: AnyFunction,
+    getDpsWithDevId: AnyFunction,
+    getMeshDeviceInfoByNodeId: AnyFunction,
+    getMobileInfo: AnyFunction,
+    getNetType: AnyFunction,
+    getNetworkType: AnyFunction,
+    getPanelInfo: AnyFunction,
+    getPlayStatus: AnyFunction,
+    getRoomsInCurrentHome: AnyFunction,
+    getSubDeviceList: AnyFunction,
+    getWiFiSsid: AnyFunction,
+    goToAlarmListActivity: AnyFunction,
+    gotoBlePermissions: AnyFunction,
+    gotoDeviceWifiNetworkMonitor: AnyFunction,
     gotoDpAlarm: Category => Unit,
-    hideLoading: /* repeated */ js.Any => Unit,
-    is24Hour: /* repeated */ js.Any => Unit,
+    hideLoading: AnyFunction,
+    is24Hour: AnyFunction,
     jumpTo: String => js.Any,
     lang: I18NLanMap,
     mobileInfo: MobileInfo,
     panelInfo: IsVDevice,
-    postBleChannelCommand: /* repeated */ js.Any => Unit,
-    pushToNextPageWithDeviceId: /* repeated */ js.Any => Unit,
-    putDpData: /* repeated */ js.Any => Unit,
-    putLocalDpData: /* repeated */ js.Any => Unit,
-    putMqttDpData: /* repeated */ js.Any => Unit,
-    receiverMqttData: /* repeated */ js.Any => Unit,
-    removeDevice: /* repeated */ js.Any => Unit,
-    removeGW: /* repeated */ js.Any => Unit,
-    removeListeners: /* repeated */ js.Any => Unit,
-    removeSubDevice: /* repeated */ js.Any => Unit,
-    renameSubDeviceName: /* repeated */ js.Any => Unit,
-    renameTitle: /* repeated */ js.Any => Unit,
-    screenAlwaysOn: /* repeated */ js.Any => Unit,
-    screenBrightness: /* repeated */ js.Any => Unit,
-    sendMqttData: /* repeated */ js.Any => Unit,
-    setDevProperty: /* repeated */ js.Any => Unit,
-    shareMsg: /* repeated */ js.Any => Unit,
-    shareToSystem: /* repeated */ js.Any => Unit,
-    showDeviceMenu: /* repeated */ js.Any => Unit,
-    showEditDialog: /* repeated */ js.Any => Unit,
-    showLoading: /* repeated */ js.Any => Unit,
-    simpleConfirmDialog: /* repeated */ js.Any => Unit,
-    simpleTipDialog: /* repeated */ js.Any => Unit,
-    startBLEListening: /* repeated */ js.Any => Unit,
-    startListening: /* repeated */ js.Any => Unit,
-    stopActiveSubDeviceWithGwId: /* repeated */ js.Any => Unit,
-    stopListening: /* repeated */ js.Any => Unit,
-    updateLocation: /* repeated */ js.Any => Unit
+    postBleChannelCommand: AnyFunction,
+    pushToNextPageWithDeviceId: AnyFunction,
+    putDpData: AnyFunction,
+    putLocalDpData: AnyFunction,
+    putMqttDpData: AnyFunction,
+    receiverMqttData: AnyFunction,
+    removeDevice: AnyFunction,
+    removeGW: AnyFunction,
+    removeListeners: AnyFunction,
+    removeSubDevice: AnyFunction,
+    renameSubDeviceName: AnyFunction,
+    renameTitle: AnyFunction,
+    screenAlwaysOn: AnyFunction,
+    screenBrightness: AnyFunction,
+    sendMqttData: AnyFunction,
+    setDevProperty: AnyFunction,
+    shareMsg: AnyFunction,
+    shareToSystem: AnyFunction,
+    showDeviceMenu: AnyFunction,
+    showEditDialog: AnyFunction,
+    showLoading: AnyFunction,
+    simpleConfirmDialog: AnyFunction,
+    simpleTipDialog: AnyFunction,
+    startBLEListening: AnyFunction,
+    startListening: AnyFunction,
+    stopActiveSubDeviceWithGwId: AnyFunction,
+    stopListening: AnyFunction,
+    updateLocation: AnyFunction
   ): Dictkey = {
-    val __obj = js.Dynamic.literal(activeSubDeviceWithGwId = js.Any.fromFunction1(activeSubDeviceWithGwId), addDeviceToRoom = js.Any.fromFunction1(addDeviceToRoom), addListener = js.Any.fromFunction1(addListener), aes128DecryptedStringWithPassword = js.Any.fromFunction1(aes128DecryptedStringWithPassword), aes128EncryptedStringWithPassword = js.Any.fromFunction1(aes128EncryptedStringWithPassword), apiRNRequest = js.Any.fromFunction1(apiRNRequest), apiRequest = js.Any.fromFunction1(apiRequest), back = js.Any.fromFunction1(back), battery = js.Any.fromFunction1(battery), bottomListDialog = js.Any.fromFunction1(bottomListDialog), calculateWhiteModeColor = js.Any.fromFunction1(calculateWhiteModeColor), calculationDistance = js.Any.fromFunction1(calculationDistance), checkUpdate = js.Any.fromFunction1(checkUpdate), deleteDeviceInfo = js.Any.fromFunction1(deleteDeviceInfo), deviceIsCharging = js.Any.fromFunction1(deviceIsCharging), disablePopGesture = js.Any.fromFunction1(disablePopGesture), enablePopGesture = js.Any.fromFunction1(enablePopGesture), evilTransform = js.Any.fromFunction1(evilTransform), gcj02ToWgs84Location = js.Any.fromFunction1(gcj02ToWgs84Location), getBleManagerState = js.Any.fromFunction1(getBleManagerState), getBleRssi = js.Any.fromFunction1(getBleRssi), getCurrentscreenBrightness = js.Any.fromFunction1(getCurrentscreenBrightness), getDevInfo = js.Any.fromFunction1(getDevInfo), getDevProperty = js.Any.fromFunction1(getDevProperty), getDeviceList = js.Any.fromFunction1(getDeviceList), getDpDataFromClient = js.Any.fromFunction1(getDpDataFromClient), getDpDataFromDevice = js.Any.fromFunction1(getDpDataFromDevice), getDpDataFromMeshDevice = js.Any.fromFunction1(getDpDataFromMeshDevice), getDpsWithDevId = js.Any.fromFunction1(getDpsWithDevId), getMeshDeviceInfoByNodeId = js.Any.fromFunction1(getMeshDeviceInfoByNodeId), getMobileInfo = js.Any.fromFunction1(getMobileInfo), getNetType = js.Any.fromFunction1(getNetType), getNetworkType = js.Any.fromFunction1(getNetworkType), getPanelInfo = js.Any.fromFunction1(getPanelInfo), getPlayStatus = js.Any.fromFunction1(getPlayStatus), getRoomsInCurrentHome = js.Any.fromFunction1(getRoomsInCurrentHome), getSubDeviceList = js.Any.fromFunction1(getSubDeviceList), getWiFiSsid = js.Any.fromFunction1(getWiFiSsid), goToAlarmListActivity = js.Any.fromFunction1(goToAlarmListActivity), gotoBlePermissions = js.Any.fromFunction1(gotoBlePermissions), gotoDeviceWifiNetworkMonitor = js.Any.fromFunction1(gotoDeviceWifiNetworkMonitor), gotoDpAlarm = js.Any.fromFunction1(gotoDpAlarm), hideLoading = js.Any.fromFunction1(hideLoading), is24Hour = js.Any.fromFunction1(is24Hour), jumpTo = js.Any.fromFunction1(jumpTo), lang = lang.asInstanceOf[js.Any], mobileInfo = mobileInfo.asInstanceOf[js.Any], panelInfo = panelInfo.asInstanceOf[js.Any], postBleChannelCommand = js.Any.fromFunction1(postBleChannelCommand), pushToNextPageWithDeviceId = js.Any.fromFunction1(pushToNextPageWithDeviceId), putDpData = js.Any.fromFunction1(putDpData), putLocalDpData = js.Any.fromFunction1(putLocalDpData), putMqttDpData = js.Any.fromFunction1(putMqttDpData), receiverMqttData = js.Any.fromFunction1(receiverMqttData), removeDevice = js.Any.fromFunction1(removeDevice), removeGW = js.Any.fromFunction1(removeGW), removeListeners = js.Any.fromFunction1(removeListeners), removeSubDevice = js.Any.fromFunction1(removeSubDevice), renameSubDeviceName = js.Any.fromFunction1(renameSubDeviceName), renameTitle = js.Any.fromFunction1(renameTitle), screenAlwaysOn = js.Any.fromFunction1(screenAlwaysOn), screenBrightness = js.Any.fromFunction1(screenBrightness), sendMqttData = js.Any.fromFunction1(sendMqttData), setDevProperty = js.Any.fromFunction1(setDevProperty), shareMsg = js.Any.fromFunction1(shareMsg), shareToSystem = js.Any.fromFunction1(shareToSystem), showDeviceMenu = js.Any.fromFunction1(showDeviceMenu), showEditDialog = js.Any.fromFunction1(showEditDialog), showLoading = js.Any.fromFunction1(showLoading), simpleConfirmDialog = js.Any.fromFunction1(simpleConfirmDialog), simpleTipDialog = js.Any.fromFunction1(simpleTipDialog), startBLEListening = js.Any.fromFunction1(startBLEListening), startListening = js.Any.fromFunction1(startListening), stopActiveSubDeviceWithGwId = js.Any.fromFunction1(stopActiveSubDeviceWithGwId), stopListening = js.Any.fromFunction1(stopListening), updateLocation = js.Any.fromFunction1(updateLocation))
+    val __obj = js.Dynamic.literal(activeSubDeviceWithGwId = activeSubDeviceWithGwId.asInstanceOf[js.Any], addDeviceToRoom = addDeviceToRoom.asInstanceOf[js.Any], addListener = addListener.asInstanceOf[js.Any], aes128DecryptedStringWithPassword = aes128DecryptedStringWithPassword.asInstanceOf[js.Any], aes128EncryptedStringWithPassword = aes128EncryptedStringWithPassword.asInstanceOf[js.Any], apiRNRequest = apiRNRequest.asInstanceOf[js.Any], apiRequest = apiRequest.asInstanceOf[js.Any], back = back.asInstanceOf[js.Any], battery = battery.asInstanceOf[js.Any], bottomListDialog = bottomListDialog.asInstanceOf[js.Any], calculateWhiteModeColor = calculateWhiteModeColor.asInstanceOf[js.Any], calculationDistance = calculationDistance.asInstanceOf[js.Any], checkUpdate = checkUpdate.asInstanceOf[js.Any], deleteDeviceInfo = deleteDeviceInfo.asInstanceOf[js.Any], deviceIsCharging = deviceIsCharging.asInstanceOf[js.Any], disablePopGesture = disablePopGesture.asInstanceOf[js.Any], enablePopGesture = enablePopGesture.asInstanceOf[js.Any], evilTransform = evilTransform.asInstanceOf[js.Any], gcj02ToWgs84Location = gcj02ToWgs84Location.asInstanceOf[js.Any], getBleManagerState = getBleManagerState.asInstanceOf[js.Any], getBleRssi = getBleRssi.asInstanceOf[js.Any], getCurrentscreenBrightness = getCurrentscreenBrightness.asInstanceOf[js.Any], getDevInfo = getDevInfo.asInstanceOf[js.Any], getDevProperty = getDevProperty.asInstanceOf[js.Any], getDeviceList = getDeviceList.asInstanceOf[js.Any], getDpDataFromClient = getDpDataFromClient.asInstanceOf[js.Any], getDpDataFromDevice = getDpDataFromDevice.asInstanceOf[js.Any], getDpDataFromMeshDevice = getDpDataFromMeshDevice.asInstanceOf[js.Any], getDpsWithDevId = getDpsWithDevId.asInstanceOf[js.Any], getMeshDeviceInfoByNodeId = getMeshDeviceInfoByNodeId.asInstanceOf[js.Any], getMobileInfo = getMobileInfo.asInstanceOf[js.Any], getNetType = getNetType.asInstanceOf[js.Any], getNetworkType = getNetworkType.asInstanceOf[js.Any], getPanelInfo = getPanelInfo.asInstanceOf[js.Any], getPlayStatus = getPlayStatus.asInstanceOf[js.Any], getRoomsInCurrentHome = getRoomsInCurrentHome.asInstanceOf[js.Any], getSubDeviceList = getSubDeviceList.asInstanceOf[js.Any], getWiFiSsid = getWiFiSsid.asInstanceOf[js.Any], goToAlarmListActivity = goToAlarmListActivity.asInstanceOf[js.Any], gotoBlePermissions = gotoBlePermissions.asInstanceOf[js.Any], gotoDeviceWifiNetworkMonitor = gotoDeviceWifiNetworkMonitor.asInstanceOf[js.Any], gotoDpAlarm = js.Any.fromFunction1(gotoDpAlarm), hideLoading = hideLoading.asInstanceOf[js.Any], is24Hour = is24Hour.asInstanceOf[js.Any], jumpTo = js.Any.fromFunction1(jumpTo), lang = lang.asInstanceOf[js.Any], mobileInfo = mobileInfo.asInstanceOf[js.Any], panelInfo = panelInfo.asInstanceOf[js.Any], postBleChannelCommand = postBleChannelCommand.asInstanceOf[js.Any], pushToNextPageWithDeviceId = pushToNextPageWithDeviceId.asInstanceOf[js.Any], putDpData = putDpData.asInstanceOf[js.Any], putLocalDpData = putLocalDpData.asInstanceOf[js.Any], putMqttDpData = putMqttDpData.asInstanceOf[js.Any], receiverMqttData = receiverMqttData.asInstanceOf[js.Any], removeDevice = removeDevice.asInstanceOf[js.Any], removeGW = removeGW.asInstanceOf[js.Any], removeListeners = removeListeners.asInstanceOf[js.Any], removeSubDevice = removeSubDevice.asInstanceOf[js.Any], renameSubDeviceName = renameSubDeviceName.asInstanceOf[js.Any], renameTitle = renameTitle.asInstanceOf[js.Any], screenAlwaysOn = screenAlwaysOn.asInstanceOf[js.Any], screenBrightness = screenBrightness.asInstanceOf[js.Any], sendMqttData = sendMqttData.asInstanceOf[js.Any], setDevProperty = setDevProperty.asInstanceOf[js.Any], shareMsg = shareMsg.asInstanceOf[js.Any], shareToSystem = shareToSystem.asInstanceOf[js.Any], showDeviceMenu = showDeviceMenu.asInstanceOf[js.Any], showEditDialog = showEditDialog.asInstanceOf[js.Any], showLoading = showLoading.asInstanceOf[js.Any], simpleConfirmDialog = simpleConfirmDialog.asInstanceOf[js.Any], simpleTipDialog = simpleTipDialog.asInstanceOf[js.Any], startBLEListening = startBLEListening.asInstanceOf[js.Any], startListening = startListening.asInstanceOf[js.Any], stopActiveSubDeviceWithGwId = stopActiveSubDeviceWithGwId.asInstanceOf[js.Any], stopListening = stopListening.asInstanceOf[js.Any], updateLocation = updateLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictkey]
   }
   
@@ -254,136 +253,136 @@ object Dictkey {
   implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setActiveSubDeviceWithGwId(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "activeSubDeviceWithGwId", js.Any.fromFunction1(value))
+    def setActiveSubDeviceWithGwId(value: AnyFunction): Self = StObject.set(x, "activeSubDeviceWithGwId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddDeviceToRoom(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "addDeviceToRoom", js.Any.fromFunction1(value))
+    def setAddDeviceToRoom(value: AnyFunction): Self = StObject.set(x, "addDeviceToRoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddListener(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+    def setAddListener(value: AnyFunction): Self = StObject.set(x, "addListener", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAes128DecryptedStringWithPassword(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "aes128DecryptedStringWithPassword", js.Any.fromFunction1(value))
+    def setAes128DecryptedStringWithPassword(value: AnyFunction): Self = StObject.set(x, "aes128DecryptedStringWithPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAes128EncryptedStringWithPassword(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "aes128EncryptedStringWithPassword", js.Any.fromFunction1(value))
+    def setAes128EncryptedStringWithPassword(value: AnyFunction): Self = StObject.set(x, "aes128EncryptedStringWithPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiRNRequest(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "apiRNRequest", js.Any.fromFunction1(value))
+    def setApiRNRequest(value: AnyFunction): Self = StObject.set(x, "apiRNRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiRequest(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "apiRequest", js.Any.fromFunction1(value))
+    def setApiRequest(value: AnyFunction): Self = StObject.set(x, "apiRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBack(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "back", js.Any.fromFunction1(value))
+    def setBack(value: AnyFunction): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBattery(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "battery", js.Any.fromFunction1(value))
+    def setBattery(value: AnyFunction): Self = StObject.set(x, "battery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomListDialog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "bottomListDialog", js.Any.fromFunction1(value))
+    def setBottomListDialog(value: AnyFunction): Self = StObject.set(x, "bottomListDialog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculateWhiteModeColor(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "calculateWhiteModeColor", js.Any.fromFunction1(value))
+    def setCalculateWhiteModeColor(value: AnyFunction): Self = StObject.set(x, "calculateWhiteModeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculationDistance(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "calculationDistance", js.Any.fromFunction1(value))
+    def setCalculationDistance(value: AnyFunction): Self = StObject.set(x, "calculationDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckUpdate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "checkUpdate", js.Any.fromFunction1(value))
+    def setCheckUpdate(value: AnyFunction): Self = StObject.set(x, "checkUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteDeviceInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "deleteDeviceInfo", js.Any.fromFunction1(value))
+    def setDeleteDeviceInfo(value: AnyFunction): Self = StObject.set(x, "deleteDeviceInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceIsCharging(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "deviceIsCharging", js.Any.fromFunction1(value))
+    def setDeviceIsCharging(value: AnyFunction): Self = StObject.set(x, "deviceIsCharging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePopGesture(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "disablePopGesture", js.Any.fromFunction1(value))
+    def setDisablePopGesture(value: AnyFunction): Self = StObject.set(x, "disablePopGesture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePopGesture(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "enablePopGesture", js.Any.fromFunction1(value))
+    def setEnablePopGesture(value: AnyFunction): Self = StObject.set(x, "enablePopGesture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvilTransform(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "evilTransform", js.Any.fromFunction1(value))
+    def setEvilTransform(value: AnyFunction): Self = StObject.set(x, "evilTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcj02ToWgs84Location(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "gcj02ToWgs84Location", js.Any.fromFunction1(value))
+    def setGcj02ToWgs84Location(value: AnyFunction): Self = StObject.set(x, "gcj02ToWgs84Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetBleManagerState(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getBleManagerState", js.Any.fromFunction1(value))
+    def setGetBleManagerState(value: AnyFunction): Self = StObject.set(x, "getBleManagerState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetBleRssi(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getBleRssi", js.Any.fromFunction1(value))
+    def setGetBleRssi(value: AnyFunction): Self = StObject.set(x, "getBleRssi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCurrentscreenBrightness(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getCurrentscreenBrightness", js.Any.fromFunction1(value))
+    def setGetCurrentscreenBrightness(value: AnyFunction): Self = StObject.set(x, "getCurrentscreenBrightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDevInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getDevInfo", js.Any.fromFunction1(value))
+    def setGetDevInfo(value: AnyFunction): Self = StObject.set(x, "getDevInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDevProperty(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getDevProperty", js.Any.fromFunction1(value))
+    def setGetDevProperty(value: AnyFunction): Self = StObject.set(x, "getDevProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDeviceList(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getDeviceList", js.Any.fromFunction1(value))
+    def setGetDeviceList(value: AnyFunction): Self = StObject.set(x, "getDeviceList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDpDataFromClient(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getDpDataFromClient", js.Any.fromFunction1(value))
+    def setGetDpDataFromClient(value: AnyFunction): Self = StObject.set(x, "getDpDataFromClient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDpDataFromDevice(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getDpDataFromDevice", js.Any.fromFunction1(value))
+    def setGetDpDataFromDevice(value: AnyFunction): Self = StObject.set(x, "getDpDataFromDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDpDataFromMeshDevice(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getDpDataFromMeshDevice", js.Any.fromFunction1(value))
+    def setGetDpDataFromMeshDevice(value: AnyFunction): Self = StObject.set(x, "getDpDataFromMeshDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDpsWithDevId(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getDpsWithDevId", js.Any.fromFunction1(value))
+    def setGetDpsWithDevId(value: AnyFunction): Self = StObject.set(x, "getDpsWithDevId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMeshDeviceInfoByNodeId(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getMeshDeviceInfoByNodeId", js.Any.fromFunction1(value))
+    def setGetMeshDeviceInfoByNodeId(value: AnyFunction): Self = StObject.set(x, "getMeshDeviceInfoByNodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMobileInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getMobileInfo", js.Any.fromFunction1(value))
+    def setGetMobileInfo(value: AnyFunction): Self = StObject.set(x, "getMobileInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetNetType(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getNetType", js.Any.fromFunction1(value))
+    def setGetNetType(value: AnyFunction): Self = StObject.set(x, "getNetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetNetworkType(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getNetworkType", js.Any.fromFunction1(value))
+    def setGetNetworkType(value: AnyFunction): Self = StObject.set(x, "getNetworkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPanelInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getPanelInfo", js.Any.fromFunction1(value))
+    def setGetPanelInfo(value: AnyFunction): Self = StObject.set(x, "getPanelInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPlayStatus(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getPlayStatus", js.Any.fromFunction1(value))
+    def setGetPlayStatus(value: AnyFunction): Self = StObject.set(x, "getPlayStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRoomsInCurrentHome(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getRoomsInCurrentHome", js.Any.fromFunction1(value))
+    def setGetRoomsInCurrentHome(value: AnyFunction): Self = StObject.set(x, "getRoomsInCurrentHome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSubDeviceList(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getSubDeviceList", js.Any.fromFunction1(value))
+    def setGetSubDeviceList(value: AnyFunction): Self = StObject.set(x, "getSubDeviceList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetWiFiSsid(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getWiFiSsid", js.Any.fromFunction1(value))
+    def setGetWiFiSsid(value: AnyFunction): Self = StObject.set(x, "getWiFiSsid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoToAlarmListActivity(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "goToAlarmListActivity", js.Any.fromFunction1(value))
+    def setGoToAlarmListActivity(value: AnyFunction): Self = StObject.set(x, "goToAlarmListActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGotoBlePermissions(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "gotoBlePermissions", js.Any.fromFunction1(value))
+    def setGotoBlePermissions(value: AnyFunction): Self = StObject.set(x, "gotoBlePermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGotoDeviceWifiNetworkMonitor(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "gotoDeviceWifiNetworkMonitor", js.Any.fromFunction1(value))
+    def setGotoDeviceWifiNetworkMonitor(value: AnyFunction): Self = StObject.set(x, "gotoDeviceWifiNetworkMonitor", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGotoDpAlarm(value: Category => Unit): Self = StObject.set(x, "gotoDpAlarm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideLoading(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "hideLoading", js.Any.fromFunction1(value))
+    def setHideLoading(value: AnyFunction): Self = StObject.set(x, "hideLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs24Hour(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "is24Hour", js.Any.fromFunction1(value))
+    def setIs24Hour(value: AnyFunction): Self = StObject.set(x, "is24Hour", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setJumpTo(value: String => js.Any): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
@@ -398,87 +397,87 @@ object Dictkey {
     def setPanelInfo(value: IsVDevice): Self = StObject.set(x, "panelInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostBleChannelCommand(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "postBleChannelCommand", js.Any.fromFunction1(value))
+    def setPostBleChannelCommand(value: AnyFunction): Self = StObject.set(x, "postBleChannelCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPushToNextPageWithDeviceId(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "pushToNextPageWithDeviceId", js.Any.fromFunction1(value))
+    def setPushToNextPageWithDeviceId(value: AnyFunction): Self = StObject.set(x, "pushToNextPageWithDeviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPutDpData(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "putDpData", js.Any.fromFunction1(value))
+    def setPutDpData(value: AnyFunction): Self = StObject.set(x, "putDpData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPutLocalDpData(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "putLocalDpData", js.Any.fromFunction1(value))
+    def setPutLocalDpData(value: AnyFunction): Self = StObject.set(x, "putLocalDpData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPutMqttDpData(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "putMqttDpData", js.Any.fromFunction1(value))
+    def setPutMqttDpData(value: AnyFunction): Self = StObject.set(x, "putMqttDpData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiverMqttData(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "receiverMqttData", js.Any.fromFunction1(value))
+    def setReceiverMqttData(value: AnyFunction): Self = StObject.set(x, "receiverMqttData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveDevice(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeDevice", js.Any.fromFunction1(value))
+    def setRemoveDevice(value: AnyFunction): Self = StObject.set(x, "removeDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveGW(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeGW", js.Any.fromFunction1(value))
+    def setRemoveGW(value: AnyFunction): Self = StObject.set(x, "removeGW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveListeners(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeListeners", js.Any.fromFunction1(value))
+    def setRemoveListeners(value: AnyFunction): Self = StObject.set(x, "removeListeners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveSubDevice(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeSubDevice", js.Any.fromFunction1(value))
+    def setRemoveSubDevice(value: AnyFunction): Self = StObject.set(x, "removeSubDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenameSubDeviceName(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "renameSubDeviceName", js.Any.fromFunction1(value))
+    def setRenameSubDeviceName(value: AnyFunction): Self = StObject.set(x, "renameSubDeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenameTitle(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "renameTitle", js.Any.fromFunction1(value))
+    def setRenameTitle(value: AnyFunction): Self = StObject.set(x, "renameTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenAlwaysOn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "screenAlwaysOn", js.Any.fromFunction1(value))
+    def setScreenAlwaysOn(value: AnyFunction): Self = StObject.set(x, "screenAlwaysOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenBrightness(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "screenBrightness", js.Any.fromFunction1(value))
+    def setScreenBrightness(value: AnyFunction): Self = StObject.set(x, "screenBrightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendMqttData(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "sendMqttData", js.Any.fromFunction1(value))
+    def setSendMqttData(value: AnyFunction): Self = StObject.set(x, "sendMqttData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetDevProperty(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "setDevProperty", js.Any.fromFunction1(value))
+    def setSetDevProperty(value: AnyFunction): Self = StObject.set(x, "setDevProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareMsg(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "shareMsg", js.Any.fromFunction1(value))
+    def setShareMsg(value: AnyFunction): Self = StObject.set(x, "shareMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareToSystem(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "shareToSystem", js.Any.fromFunction1(value))
+    def setShareToSystem(value: AnyFunction): Self = StObject.set(x, "shareToSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDeviceMenu(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "showDeviceMenu", js.Any.fromFunction1(value))
+    def setShowDeviceMenu(value: AnyFunction): Self = StObject.set(x, "showDeviceMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowEditDialog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "showEditDialog", js.Any.fromFunction1(value))
+    def setShowEditDialog(value: AnyFunction): Self = StObject.set(x, "showEditDialog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLoading(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "showLoading", js.Any.fromFunction1(value))
+    def setShowLoading(value: AnyFunction): Self = StObject.set(x, "showLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimpleConfirmDialog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "simpleConfirmDialog", js.Any.fromFunction1(value))
+    def setSimpleConfirmDialog(value: AnyFunction): Self = StObject.set(x, "simpleConfirmDialog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimpleTipDialog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "simpleTipDialog", js.Any.fromFunction1(value))
+    def setSimpleTipDialog(value: AnyFunction): Self = StObject.set(x, "simpleTipDialog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartBLEListening(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "startBLEListening", js.Any.fromFunction1(value))
+    def setStartBLEListening(value: AnyFunction): Self = StObject.set(x, "startBLEListening", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartListening(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "startListening", js.Any.fromFunction1(value))
+    def setStartListening(value: AnyFunction): Self = StObject.set(x, "startListening", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopActiveSubDeviceWithGwId(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "stopActiveSubDeviceWithGwId", js.Any.fromFunction1(value))
+    def setStopActiveSubDeviceWithGwId(value: AnyFunction): Self = StObject.set(x, "stopActiveSubDeviceWithGwId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopListening(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "stopListening", js.Any.fromFunction1(value))
+    def setStopListening(value: AnyFunction): Self = StObject.set(x, "stopListening", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateLocation(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "updateLocation", js.Any.fromFunction1(value))
+    def setUpdateLocation(value: AnyFunction): Self = StObject.set(x, "updateLocation", value.asInstanceOf[js.Any])
   }
 }

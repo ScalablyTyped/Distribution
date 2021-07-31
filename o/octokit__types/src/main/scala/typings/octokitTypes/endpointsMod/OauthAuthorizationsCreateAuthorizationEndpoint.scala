@@ -2,41 +2,39 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OauthAuthorizationsCreateAuthorizationEndpoint extends StObject {
   
   /**
     * The 20 character OAuth app client key for which to create the token.
     */
-  var client_id: js.UndefOr[String] = js.native
+  var client_id: js.UndefOr[String] = js.undefined
   
   /**
     * The 40 character OAuth app client secret for which to create the token.
     */
-  var client_secret: js.UndefOr[String] = js.native
+  var client_secret: js.UndefOr[String] = js.undefined
   
   /**
     * A unique string to distinguish an authorization from others created for the same client ID and user.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * A note to remind you what the OAuth token is for. Tokens not associated with a specific OAuth application (i.e. personal access tokens) must have a unique note.
     */
-  var note: String = js.native
+  var note: String
   
   /**
     * A URL to remind you what app the OAuth token is for.
     */
-  var note_url: js.UndefOr[String] = js.native
+  var note_url: js.UndefOr[String] = js.undefined
   
   /**
     * A list of scopes that this authorization is in.
     */
-  var scopes: js.UndefOr[js.Array[String]] = js.native
+  var scopes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object OauthAuthorizationsCreateAuthorizationEndpoint {
   

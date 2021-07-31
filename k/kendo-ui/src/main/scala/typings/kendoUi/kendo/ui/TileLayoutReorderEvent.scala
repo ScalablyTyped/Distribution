@@ -3,17 +3,17 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TileLayoutReorderEvent extends TileLayoutEvent {
+trait TileLayoutReorderEvent
+  extends StObject
+     with TileLayoutEvent {
   
-  var container: js.UndefOr[JQuery] = js.native
+  var container: js.UndefOr[JQuery] = js.undefined
   
-  var newIndex: js.UndefOr[Double] = js.native
+  var newIndex: js.UndefOr[Double] = js.undefined
   
-  var oldIndex: js.UndefOr[Double] = js.native
+  var oldIndex: js.UndefOr[Double] = js.undefined
 }
 object TileLayoutReorderEvent {
   

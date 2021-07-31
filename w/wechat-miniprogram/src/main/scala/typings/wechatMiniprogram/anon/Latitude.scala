@@ -2,17 +2,15 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Latitude extends StObject {
   
   /** 纬度，最低基础库 2.9.0 */
-  var latitude: Double = js.native
+  var latitude: Double
   
   /** 经度，最低基础库 2.9.0 */
-  var longitude: Double = js.native
+  var longitude: Double
 }
 object Latitude {
   

@@ -10,9 +10,9 @@ Regex to validate that a URL is a git url.
 | ------------------ | :-------------: |
 | Full name          | is-git-url |
 | Keywords           | git, github, is, regex, regexp, test, url |
-| # releases         | 1 |
-| # dependents       | 45 |
-| # downloads        | 7728784 |
+| # releases         | 0 |
+| # dependents       | 51 |
+| # downloads        | 7584939 |
 | # stars            | 3 |
 
 ## Links

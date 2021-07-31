@@ -2,17 +2,17 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AddUserOptions extends CommonOptions {
+trait AddUserOptions
+  extends StObject
+     with CommonOptions {
   
-  var customData: js.UndefOr[js.Object] = js.native
+  var customData: js.UndefOr[js.Object] = js.undefined
   
-  var fsync: Boolean = js.native
+  var fsync: Boolean
   
-  var roles: js.UndefOr[js.Array[js.Object]] = js.native
+  var roles: js.UndefOr[js.Array[js.Object]] = js.undefined
 }
 object AddUserOptions {
   

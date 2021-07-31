@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.Gaming.XboxLive.Storage
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-@js.native
 trait GameSaveContainerInfo extends StObject {
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var displayName: String = js.native
+  var displayName: String
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var lastModifiedTime: Date = js.native
+  var lastModifiedTime: Date
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var name: String = js.native
+  var name: String
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var needsSync: Boolean = js.native
+  var needsSync: Boolean
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var totalSize: Double = js.native
+  var totalSize: Double
 }
 object GameSaveContainerInfo {
   

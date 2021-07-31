@@ -13,7 +13,6 @@ import typings.jodata.jo.SkipSettings
 import typings.jodata.jo.TopSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -129,12 +128,11 @@ trait jo extends StObject {
 }
 object jo {
   
-  @js.native
   trait Concat extends StObject {
     
-    var LeftSide: String | Concat = js.native
+    var LeftSide: String | Concat
     
-    var RightSide: String | Concat = js.native
+    var RightSide: String | Concat
   }
   object Concat {
     
@@ -155,12 +153,13 @@ object jo {
     }
   }
   
-  @js.native
-  trait ExpandSettings extends ISettings {
+  trait ExpandSettings
+    extends StObject
+       with ISettings {
     
-    var DefaultExpand: String = js.native
+    var DefaultExpand: String
     
-    var Expand: String = js.native
+    var Expand: String
   }
   object ExpandSettings {
     
@@ -286,18 +285,19 @@ object jo {
     def year(): FilterClause = js.native
   }
   
-  @js.native
-  trait FilterSettings extends ISettings {
+  trait FilterSettings
+    extends StObject
+       with ISettings {
     
-    var CapturedFilter: js.Array[FilterClause] = js.native
+    var CapturedFilter: js.Array[FilterClause]
     
-    var DefaultFilters: js.Array[FilterClause] = js.native
+    var DefaultFilters: js.Array[FilterClause]
     
-    var Filters: js.Array[FilterClause] = js.native
+    var Filters: js.Array[FilterClause]
     
-    def fullReset(): Unit = js.native
+    def fullReset(): Unit
     
-    def loadFromJson(filterSettings: js.Any): Unit = js.native
+    def loadFromJson(filterSettings: js.Any): Unit
   }
   object FilterSettings {
     
@@ -344,16 +344,15 @@ object jo {
     }
   }
   
-  @js.native
   trait FormatOptions extends StObject {
     
-    def atom(): jo = js.native
+    def atom(): jo
     
-    def custom(value: String): jo = js.native
+    def custom(value: String): jo
     
-    def json(): jo = js.native
+    def json(): jo
     
-    def xml(): jo = js.native
+    def xml(): jo
   }
   object FormatOptions {
     
@@ -380,12 +379,13 @@ object jo {
     }
   }
   
-  @js.native
-  trait FormatSettings extends ISettings {
+  trait FormatSettings
+    extends StObject
+       with ISettings {
     
-    var DefaultFormat: String = js.native
+    var DefaultFormat: String
     
-    var Format: String = js.native
+    var Format: String
   }
   object FormatSettings {
     
@@ -408,12 +408,11 @@ object jo {
   
   // TODO What is the most appropriate place for these interfaces?
   // They are only required by the `jo` class.
-  @js.native
   trait ISettings extends StObject {
     
-    def isSet(): Boolean = js.native
+    def isSet(): Boolean
     
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object ISettings {
     
@@ -434,12 +433,11 @@ object jo {
     }
   }
   
-  @js.native
   trait InlineCountOptions extends StObject {
     
-    def allPages(): jo = js.native
+    def allPages(): jo
     
-    def none(): jo = js.native
+    def none(): jo
   }
   object InlineCountOptions {
     
@@ -460,12 +458,13 @@ object jo {
     }
   }
   
-  @js.native
-  trait InlineCountSettings extends ISettings {
+  trait InlineCountSettings
+    extends StObject
+       with ISettings {
     
-    var DefaultInlineCount: String = js.native
+    var DefaultInlineCount: String
     
-    var InlineCount: String = js.native
+    var InlineCount: String
   }
   object InlineCountSettings {
     
@@ -486,16 +485,17 @@ object jo {
     }
   }
   
-  @js.native
-  trait OrderBySettings extends ISettings {
+  trait OrderBySettings
+    extends StObject
+       with ISettings {
     
-    var DefaultOrder: String = js.native
+    var DefaultOrder: String
     
-    var DefaultProperty: String = js.native
+    var DefaultProperty: String
     
-    var Order: String = js.native
+    var Order: String
     
-    var Property: String = js.native
+    var Property: String
   }
   object OrderBySettings {
     
@@ -529,12 +529,11 @@ object jo {
     }
   }
   
-  @js.native
   trait PrecedenceGroup extends StObject {
     
-    def andFilter(filterClause: FilterClause): FilterClause = js.native
+    def andFilter(filterClause: FilterClause): FilterClause
     
-    def orFilter(filterClause: FilterClause): FilterClause = js.native
+    def orFilter(filterClause: FilterClause): FilterClause
   }
   object PrecedenceGroup {
     
@@ -555,12 +554,13 @@ object jo {
     }
   }
   
-  @js.native
-  trait SelectSettings extends ISettings {
+  trait SelectSettings
+    extends StObject
+       with ISettings {
     
-    var DefaultSelect: js.Array[String] = js.native
+    var DefaultSelect: js.Array[String]
     
-    var Select: js.Array[String] = js.native
+    var Select: js.Array[String]
   }
   object SelectSettings {
     
@@ -587,12 +587,13 @@ object jo {
     }
   }
   
-  @js.native
-  trait SkipSettings extends ISettings {
+  trait SkipSettings
+    extends StObject
+       with ISettings {
     
-    var DefaultSkip: Double = js.native
+    var DefaultSkip: Double
     
-    var Skip: Double = js.native
+    var Skip: Double
   }
   object SkipSettings {
     
@@ -613,12 +614,13 @@ object jo {
     }
   }
   
-  @js.native
-  trait TopSettings extends ISettings {
+  trait TopSettings
+    extends StObject
+       with ISettings {
     
-    var DefaultTop: Double = js.native
+    var DefaultTop: Double
     
-    var Top: Double = js.native
+    var Top: Double
   }
   object TopSettings {
     

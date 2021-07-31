@@ -2,22 +2,22 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Declarative event action that redirects a network request to an empty document. */
-@js.native
-trait RedirectToEmptyDocument extends OnRequestActions {
+trait RedirectToEmptyDocument
+  extends StObject
+     with OnRequestActions {
   
-  val instanceType: String = js.native
+  val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToEmptyDocument = js.native
+  val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToEmptyDocument
 }
 object RedirectToEmptyDocument {
   
   @scala.inline
-  def apply(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToEmptyDocument): RedirectToEmptyDocument = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def apply(instanceType: String): RedirectToEmptyDocument = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RedirectToEmptyDocument")
     __obj.asInstanceOf[RedirectToEmptyDocument]
   }
   

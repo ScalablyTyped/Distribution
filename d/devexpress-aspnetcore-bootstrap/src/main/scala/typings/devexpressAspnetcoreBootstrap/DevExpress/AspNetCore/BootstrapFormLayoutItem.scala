@@ -2,29 +2,27 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapFormLayoutItem extends StObject {
   
-  val formLayout: BootstrapFormLayout | Null = js.native
+  val formLayout: BootstrapFormLayout | Null
   
-  def getCaption(): String = js.native
+  def getCaption(): String
   
-  def getItemByName(name: String): BootstrapFormLayoutItem | Null = js.native
+  def getItemByName(name: String): BootstrapFormLayoutItem | Null
   
-  def getVisible(): Boolean = js.native
+  def getVisible(): Boolean
   
-  val instance: js.Any = js.native
+  val instance: js.Any
   
-  val name: String = js.native
+  val name: String
   
-  val parent: BootstrapFormLayoutItem | Null = js.native
+  val parent: BootstrapFormLayoutItem | Null
   
-  def setCaption(caption: String): Unit = js.native
+  def setCaption(caption: String): Unit
   
-  def setVisible(value: Boolean): Unit = js.native
+  def setVisible(value: Boolean): Unit
 }
 object BootstrapFormLayoutItem {
   
@@ -38,7 +36,7 @@ object BootstrapFormLayoutItem {
     setCaption: String => Unit,
     setVisible: Boolean => Unit
   ): BootstrapFormLayoutItem = {
-    val __obj = js.Dynamic.literal(getCaption = js.Any.fromFunction0(getCaption), getItemByName = js.Any.fromFunction1(getItemByName), getVisible = js.Any.fromFunction0(getVisible), instance = instance.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], setCaption = js.Any.fromFunction1(setCaption), setVisible = js.Any.fromFunction1(setVisible))
+    val __obj = js.Dynamic.literal(getCaption = js.Any.fromFunction0(getCaption), getItemByName = js.Any.fromFunction1(getItemByName), getVisible = js.Any.fromFunction0(getVisible), instance = instance.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], setCaption = js.Any.fromFunction1(setCaption), setVisible = js.Any.fromFunction1(setVisible), formLayout = null, parent = null)
     __obj.asInstanceOf[BootstrapFormLayoutItem]
   }
   

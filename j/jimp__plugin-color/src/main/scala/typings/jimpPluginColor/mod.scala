@@ -3,14 +3,16 @@ package typings.jimpPluginColor
 import typings.jimpCore.etcMod.ImageCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/plugin-color", JSImport.Default)
+  @JSImport("@jimp/plugin-color", JSImport.Namespace)
   @js.native
-  def default(): Color = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Color]
   
   @js.native
   trait Color extends StObject {
@@ -71,13 +73,12 @@ object mod {
     def sepia(cb: ImageCallback[this.type]): this.type = js.native
   }
   
-  @js.native
   trait ColorAction extends StObject {
     
     @JSName("apply")
-    var apply: ColorActionName = js.native
+    var apply: ColorActionName
     
-    var params: js.Any = js.native
+    var params: js.Any
   }
   object ColorAction {
     

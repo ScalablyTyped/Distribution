@@ -4,7 +4,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,9 +15,11 @@ object mod {
     * @param hostPattern - A pattern used to validate that a message's certificate originates from a trusted domain. Default: `/^sns\.[a-zA-Z0-9\-]{3,}\.amazonaws\.com(\.cn)?$/`
     * @param encoding - The encoding of the messages being signed. Default is `utf8`
     */
-  class ^ () extends MessageValidator {
+  class ^ ()
+    extends StObject
+       with MessageValidator {
     def this(hostPattern: RegExp) = this()
-    def this(hostPattern: js.UndefOr[scala.Nothing], encoding: String) = this()
+    def this(hostPattern: Unit, encoding: String) = this()
     def this(hostPattern: RegExp, encoding: String) = this()
   }
   

@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateEnclaveCertificateIamRoleRequest extends StObject {
   
   /**
     * The ARN of the ACM certificate with which to associate the IAM role.
     */
-  var CertificateArn: js.UndefOr[ResourceArn] = js.native
+  var CertificateArn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ARN of the IAM role to associate with the ACM certificate. You can associate up to 16 IAM roles with an ACM certificate.
     */
-  var RoleArn: js.UndefOr[ResourceArn] = js.native
+  var RoleArn: js.UndefOr[ResourceArn] = js.undefined
 }
 object AssociateEnclaveCertificateIamRoleRequest {
   

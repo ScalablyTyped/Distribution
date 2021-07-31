@@ -10,9 +10,9 @@ bizcharts
 | ------------------ | :-------------: |
 | Full name          | bizcharts |
 | Keywords           | bizcharts, g2 |
-| # releases         | 103 |
-| # dependents       | 516 |
-| # downloads        | 1154010 |
+| # releases         | 134 |
+| # dependents       | 525 |
+| # downloads        | 1302690 |
 | # stars            | 2 |
 
 ## Links

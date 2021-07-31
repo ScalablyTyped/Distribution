@@ -7,7 +7,6 @@ import typings.awsSdk.serviceMod.Service
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ssooidcMod {
@@ -25,16 +24,14 @@ object ssooidcMod {
   
   type AuthCode = String
   
-  @js.native
   trait Blob extends StObject
   
-  @js.native
   trait ClientApiVersions extends StObject {
     
     /**
       * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
       */
-    var apiVersion: js.UndefOr[typings.awsSdk.ssooidcMod.apiVersion] = js.native
+    var apiVersion: js.UndefOr[typings.awsSdk.ssooidcMod.apiVersion] = js.undefined
   }
   object ClientApiVersions {
     
@@ -55,7 +52,10 @@ object ssooidcMod {
     }
   }
   
-  type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  @js.native
+  trait ClientConfiguration
+    extends ServiceConfigurationOptions
+       with ClientApiVersions
   
   type ClientId = String
   
@@ -65,48 +65,47 @@ object ssooidcMod {
   
   type ClientType = String
   
-  @js.native
   trait CreateTokenRequest extends StObject {
     
     /**
       * The unique identifier string for each client. This value should come from the persisted result of the RegisterClient API.
       */
-    var clientId: ClientId = js.native
+    var clientId: ClientId
     
     /**
       * A secret string generated for the client. This value should come from the persisted result of the RegisterClient API.
       */
-    var clientSecret: ClientSecret = js.native
+    var clientSecret: ClientSecret
     
     /**
       * The authorization code received from the authorization service. This parameter is required to perform an authorization grant request to get access to a token.
       */
-    var code: js.UndefOr[AuthCode] = js.native
+    var code: js.UndefOr[AuthCode] = js.undefined
     
     /**
       * Used only when calling this API for the device code grant type. This short-term code is used to identify this authentication attempt. This should come from an in-memory reference to the result of the StartDeviceAuthorization API.
       */
-    var deviceCode: DeviceCode = js.native
+    var deviceCode: DeviceCode
     
     /**
       * Supports grant types for authorization code, refresh token, and device code request.
       */
-    var grantType: GrantType = js.native
+    var grantType: GrantType
     
     /**
       * The location of the application that will receive the authorization code. Users authorize the service to send the request to this location.
       */
-    var redirectUri: js.UndefOr[URI] = js.native
+    var redirectUri: js.UndefOr[URI] = js.undefined
     
     /**
       * The token used to obtain an access token in the event that the access token is invalid or expired. This token is not issued by the service.
       */
-    var refreshToken: js.UndefOr[RefreshToken] = js.native
+    var refreshToken: js.UndefOr[RefreshToken] = js.undefined
     
     /**
       * The list of scopes that is defined by the client. Upon authorization, this list is used to restrict permissions when granting an access token.
       */
-    var scope: js.UndefOr[Scopes] = js.native
+    var scope: js.UndefOr[Scopes] = js.undefined
   }
   object CreateTokenRequest {
     
@@ -160,33 +159,32 @@ object ssooidcMod {
     }
   }
   
-  @js.native
   trait CreateTokenResponse extends StObject {
     
     /**
       * An opaque token to access AWS SSO resources assigned to a user.
       */
-    var accessToken: js.UndefOr[AccessToken] = js.native
+    var accessToken: js.UndefOr[AccessToken] = js.undefined
     
     /**
       * Indicates the time in seconds when an access token will expire.
       */
-    var expiresIn: js.UndefOr[ExpirationInSeconds] = js.native
+    var expiresIn: js.UndefOr[ExpirationInSeconds] = js.undefined
     
     /**
       * The identifier of the user that associated with the access token, if present.
       */
-    var idToken: js.UndefOr[IdToken] = js.native
+    var idToken: js.UndefOr[IdToken] = js.undefined
     
     /**
       * A token that, if present, can be used to refresh a previously issued access token that might have expired.
       */
-    var refreshToken: js.UndefOr[RefreshToken] = js.native
+    var refreshToken: js.UndefOr[RefreshToken] = js.undefined
     
     /**
       * Used to notify the client that the returned token is an access token. The supported type is BearerToken.
       */
-    var tokenType: js.UndefOr[TokenType] = js.native
+    var tokenType: js.UndefOr[TokenType] = js.undefined
   }
   object CreateTokenResponse {
     
@@ -245,23 +243,22 @@ object ssooidcMod {
   
   type RefreshToken = String
   
-  @js.native
   trait RegisterClientRequest extends StObject {
     
     /**
       * The friendly name of the client.
       */
-    var clientName: ClientName = js.native
+    var clientName: ClientName
     
     /**
       * The type of client. The service supports only public as a client type. Anything other than public will be rejected by the service.
       */
-    var clientType: ClientType = js.native
+    var clientType: ClientType
     
     /**
       * The list of scopes that are defined by the client. Upon authorization, this list is used to restrict permissions when granting an access token.
       */
-    var scopes: js.UndefOr[Scopes] = js.native
+    var scopes: js.UndefOr[Scopes] = js.undefined
   }
   object RegisterClientRequest {
     
@@ -291,38 +288,37 @@ object ssooidcMod {
     }
   }
   
-  @js.native
   trait RegisterClientResponse extends StObject {
     
     /**
       * The endpoint where the client can request authorization.
       */
-    var authorizationEndpoint: js.UndefOr[URI] = js.native
+    var authorizationEndpoint: js.UndefOr[URI] = js.undefined
     
     /**
       * The unique identifier string for each client. This client uses this identifier to get authenticated by the service in subsequent calls.
       */
-    var clientId: js.UndefOr[ClientId] = js.native
+    var clientId: js.UndefOr[ClientId] = js.undefined
     
     /**
       * Indicates the time at which the clientId and clientSecret were issued.
       */
-    var clientIdIssuedAt: js.UndefOr[LongTimeStampType] = js.native
+    var clientIdIssuedAt: js.UndefOr[LongTimeStampType] = js.undefined
     
     /**
       * A secret string generated for the client. The client will use this string to get authenticated by the service in subsequent calls.
       */
-    var clientSecret: js.UndefOr[ClientSecret] = js.native
+    var clientSecret: js.UndefOr[ClientSecret] = js.undefined
     
     /**
       * Indicates the time at which the clientId and clientSecret will become invalid.
       */
-    var clientSecretExpiresAt: js.UndefOr[LongTimeStampType] = js.native
+    var clientSecretExpiresAt: js.UndefOr[LongTimeStampType] = js.undefined
     
     /**
       * The endpoint where the client can get an access token.
       */
-    var tokenEndpoint: js.UndefOr[URI] = js.native
+    var tokenEndpoint: js.UndefOr[URI] = js.undefined
   }
   object RegisterClientResponse {
     
@@ -377,7 +373,7 @@ object ssooidcMod {
   trait SSOOIDC extends Service {
     
     @JSName("config")
-    var config_SSOOIDC: ConfigBase with ClientConfiguration = js.native
+    var config_SSOOIDC: ConfigBase & ClientConfiguration = js.native
     
     /**
       * Creates and returns an access token for the authorized client. The access token issued will be used to fetch short-term credentials for the assigned roles in the AWS account.
@@ -426,23 +422,22 @@ object ssooidcMod {
   
   type Scopes = js.Array[Scope]
   
-  @js.native
   trait StartDeviceAuthorizationRequest extends StObject {
     
     /**
       * The unique identifier string for the client that is registered with AWS SSO. This value should come from the persisted result of the RegisterClient API operation.
       */
-    var clientId: ClientId = js.native
+    var clientId: ClientId
     
     /**
       * A secret string that is generated for the client. This value should come from the persisted result of the RegisterClient API operation.
       */
-    var clientSecret: ClientSecret = js.native
+    var clientSecret: ClientSecret
     
     /**
       * The URL for the AWS SSO user portal. For more information, see Using the User Portal in the AWS Single Sign-On User Guide.
       */
-    var startUrl: URI = js.native
+    var startUrl: URI
   }
   object StartDeviceAuthorizationRequest {
     
@@ -466,38 +461,37 @@ object ssooidcMod {
     }
   }
   
-  @js.native
   trait StartDeviceAuthorizationResponse extends StObject {
     
     /**
       * The short-lived code that is used by the device when polling for a session token.
       */
-    var deviceCode: js.UndefOr[DeviceCode] = js.native
+    var deviceCode: js.UndefOr[DeviceCode] = js.undefined
     
     /**
       * Indicates the number of seconds in which the verification code will become invalid.
       */
-    var expiresIn: js.UndefOr[ExpirationInSeconds] = js.native
+    var expiresIn: js.UndefOr[ExpirationInSeconds] = js.undefined
     
     /**
       * Indicates the number of seconds the client must wait between attempts when polling for a session.
       */
-    var interval: js.UndefOr[IntervalInSeconds] = js.native
+    var interval: js.UndefOr[IntervalInSeconds] = js.undefined
     
     /**
       * A one-time user verification code. This is needed to authorize an in-use device.
       */
-    var userCode: js.UndefOr[UserCode] = js.native
+    var userCode: js.UndefOr[UserCode] = js.undefined
     
     /**
       * The URI of the verification page that takes the userCode to authorize the device.
       */
-    var verificationUri: js.UndefOr[URI] = js.native
+    var verificationUri: js.UndefOr[URI] = js.undefined
     
     /**
       * An alternate URL that the client can use to automatically launch a browser. This process skips the manual step in which the user visits the verification page and enters their code.
       */
-    var verificationUriComplete: js.UndefOr[URI] = js.native
+    var verificationUriComplete: js.UndefOr[URI] = js.undefined
   }
   object StartDeviceAuthorizationResponse {
     

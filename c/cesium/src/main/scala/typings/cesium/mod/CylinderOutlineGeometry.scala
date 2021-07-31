@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.Length
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CylinderOutlineGeometry")
@@ -13,22 +12,21 @@ class CylinderOutlineGeometry protected () extends Packable {
 }
 object CylinderOutlineGeometry {
   
-  /* static member */
-  @JSImport("cesium", "CylinderOutlineGeometry.createGeometry")
+  @JSImport("cesium", "CylinderOutlineGeometry")
   @js.native
-  def createGeometry(cylinderGeometry: CylinderOutlineGeometry): Geometry = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "CylinderOutlineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double]): CylinderOutlineGeometry = js.native
-  @JSImport("cesium", "CylinderOutlineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: CylinderOutlineGeometry): CylinderOutlineGeometry = js.native
-  @JSImport("cesium", "CylinderOutlineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): CylinderOutlineGeometry = js.native
-  @JSImport("cesium", "CylinderOutlineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: CylinderOutlineGeometry): CylinderOutlineGeometry = js.native
+  @scala.inline
+  def createGeometry(cylinderGeometry: CylinderOutlineGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(cylinderGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  
+  /* static member */
+  @scala.inline
+  def unpack(array: js.Array[Double]): CylinderOutlineGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[CylinderOutlineGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double): CylinderOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[CylinderOutlineGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double, result: CylinderOutlineGeometry): CylinderOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CylinderOutlineGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Unit, result: CylinderOutlineGeometry): CylinderOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CylinderOutlineGeometry]
 }

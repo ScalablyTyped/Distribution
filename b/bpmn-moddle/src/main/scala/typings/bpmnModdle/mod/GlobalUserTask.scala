@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GlobalUserTask extends GlobalTask {
+trait GlobalUserTask
+  extends StObject
+     with GlobalTask {
   
-  var implementation: String = js.native
+  var implementation: String
   
-  var renderings: Rendering = js.native
+  var renderings: Rendering
 }
 object GlobalUserTask {
   

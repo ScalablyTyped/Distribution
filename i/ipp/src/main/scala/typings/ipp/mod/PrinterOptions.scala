@@ -2,19 +2,17 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrinterOptions extends StObject {
   
-  var charset: js.UndefOr[String] = js.native
+  var charset: js.UndefOr[String] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[IPPVersion] = js.native
+  var version: js.UndefOr[IPPVersion] = js.undefined
 }
 object PrinterOptions {
   

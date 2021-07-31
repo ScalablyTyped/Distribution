@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvaluatePullRequestApprovalRulesInput extends StObject {
   
   /**
     * The system-generated ID of the pull request you want to evaluate.
     */
-  var pullRequestId: PullRequestId = js.native
+  var pullRequestId: PullRequestId
   
   /**
     * The system-generated ID for the pull request revision. To retrieve the most recent revision ID for a pull request, use GetPullRequest.
     */
-  var revisionId: RevisionId = js.native
+  var revisionId: RevisionId
 }
 object EvaluatePullRequestApprovalRulesInput {
   

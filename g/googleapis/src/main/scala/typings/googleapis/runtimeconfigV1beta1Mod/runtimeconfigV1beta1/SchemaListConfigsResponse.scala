@@ -2,21 +2,19 @@ package typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `ListConfigs()` returns the following response. The order of returned
   * objects is arbitrary; that is, it is not ordered in any particular way.
   */
-@js.native
 trait SchemaListConfigsResponse extends StObject {
   
   /**
     * A list of the configurations in the project. The order of returned
     * objects is arbitrary; that is, it is not ordered in any particular way.
     */
-  var configs: js.UndefOr[js.Array[SchemaRuntimeConfig]] = js.native
+  var configs: js.UndefOr[js.Array[SchemaRuntimeConfig]] = js.undefined
   
   /**
     * This token allows you to get the next page of results for list requests.
@@ -25,7 +23,7 @@ trait SchemaListConfigsResponse extends StObject {
     * next list request. Subsequent list requests will have their own
     * `nextPageToken` to continue paging through the results
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListConfigsResponse {
   

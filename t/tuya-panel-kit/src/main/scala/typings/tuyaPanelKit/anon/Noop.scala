@@ -3,21 +3,19 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.routersTypesMod.NavigationAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Noop extends StObject {
   
   /**
     * The action object which was dispatched.
     */
-  var action: NavigationAction = js.native
+  var action: NavigationAction
   
   /**
     * Whether the action was a no-op, i.e. resulted any state changes.
     */
-  var noop: Boolean = js.native
+  var noop: Boolean
 }
 object Noop {
   

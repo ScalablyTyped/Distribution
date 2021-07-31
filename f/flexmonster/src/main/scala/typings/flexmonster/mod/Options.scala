@@ -5,79 +5,77 @@ import typings.flexmonster.anon.DateFormat
 import typings.flexmonster.anon.Dragging
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var caseSensitiveMembers: js.UndefOr[Boolean] = js.native
+  var caseSensitiveMembers: js.UndefOr[Boolean] = js.undefined
   
-  var chart: js.UndefOr[ActiveMeasure] = js.native
+  var chart: js.UndefOr[ActiveMeasure] = js.undefined
   
-  var configuratorActive: js.UndefOr[Boolean] = js.native
+  var configuratorActive: js.UndefOr[Boolean] = js.undefined
   
-  var configuratorButton: js.UndefOr[Boolean] = js.native
+  var configuratorButton: js.UndefOr[Boolean] = js.undefined
   
-  var datePattern: js.UndefOr[String] = js.native
+  var datePattern: js.UndefOr[String] = js.undefined
   
-  var dateTimePattern: js.UndefOr[String] = js.native
+  var dateTimePattern: js.UndefOr[String] = js.undefined
   
-  var dateTimezoneOffset: js.UndefOr[Double] = js.native
+  var dateTimezoneOffset: js.UndefOr[Double] = js.undefined
   
-  var defaultDateType: js.UndefOr[String] = js.native
+  var defaultDateType: js.UndefOr[String] = js.undefined
   
-  var defaultHierarchySortName: js.UndefOr[String] = js.native
+  var defaultHierarchySortName: js.UndefOr[String] = js.undefined
   
-  var drillThrough: js.UndefOr[Boolean] = js.native
+  var drillThrough: js.UndefOr[Boolean] = js.undefined
   
-  var editing: js.UndefOr[Boolean] = js.native
+  var editing: js.UndefOr[Boolean] = js.undefined
   
-  var filter: js.UndefOr[DateFormat] = js.native
+  var filter: js.UndefOr[DateFormat] = js.undefined
   
-  var grid: js.UndefOr[Dragging] = js.native
+  var grid: js.UndefOr[Dragging] = js.undefined
   
-  var grouping: js.UndefOr[Boolean] = js.native
+  var grouping: js.UndefOr[Boolean] = js.undefined
   
-  var saveAllFormats: js.UndefOr[Boolean] = js.native
+  var saveAllFormats: js.UndefOr[Boolean] = js.undefined
   
-  var selectEmptyCells: js.UndefOr[Boolean] = js.native
+  var selectEmptyCells: js.UndefOr[Boolean] = js.undefined
   
-  var showAggregationLabels: js.UndefOr[Boolean] = js.native
+  var showAggregationLabels: js.UndefOr[Boolean] = js.undefined
   
-  var showAggregations: js.UndefOr[Boolean] = js.native
+  var showAggregations: js.UndefOr[Boolean] = js.undefined
   
-  var showAllFieldsDrillThrough: js.UndefOr[Boolean] = js.native
+  var showAllFieldsDrillThrough: js.UndefOr[Boolean] = js.undefined
   
-  var showCalculatedValuesButton: js.UndefOr[Boolean] = js.native
+  var showCalculatedValuesButton: js.UndefOr[Boolean] = js.undefined
   
-  var showDefaultSlice: js.UndefOr[Boolean] = js.native
+  var showDefaultSlice: js.UndefOr[Boolean] = js.undefined
   
-  var showDrillThroughConfigurator: js.UndefOr[Boolean] = js.native
+  var showDrillThroughConfigurator: js.UndefOr[Boolean] = js.undefined
   
-  var showEmptyData: js.UndefOr[Boolean] = js.native
+  var showEmptyData: js.UndefOr[Boolean] = js.undefined
   
-  var showFieldListSearch: js.UndefOr[Boolean] = js.native
+  var showFieldListSearch: js.UndefOr[Boolean] = js.undefined
   
-  var showMemberProperties: js.UndefOr[Boolean] = js.native
+  var showMemberProperties: js.UndefOr[Boolean] = js.undefined
   
-  var showOutdatedDataAlert: js.UndefOr[Boolean] = js.native
+  var showOutdatedDataAlert: js.UndefOr[Boolean] = js.undefined
   
-  var simplifyFieldListFolders: js.UndefOr[Boolean] = js.native
+  var simplifyFieldListFolders: js.UndefOr[Boolean] = js.undefined
   
-  var sorting: js.UndefOr[String] = js.native
+  var sorting: js.UndefOr[String] = js.undefined
   
-  var strictDataTypes: js.UndefOr[Boolean] = js.native
+  var strictDataTypes: js.UndefOr[Boolean] = js.undefined
   
-  var timePattern: js.UndefOr[String] = js.native
+  var timePattern: js.UndefOr[String] = js.undefined
   
-  var useOlapFormatting: js.UndefOr[Boolean] = js.native
+  var useOlapFormatting: js.UndefOr[Boolean] = js.undefined
   
-  var validateFormulas: js.UndefOr[Boolean] = js.native
+  var validateFormulas: js.UndefOr[Boolean] = js.undefined
   
-  var validateReportFiles: js.UndefOr[Boolean] = js.native
+  var validateReportFiles: js.UndefOr[Boolean] = js.undefined
   
-  var viewType: js.UndefOr[String] = js.native
+  var viewType: js.UndefOr[String] = js.undefined
 }
 object Options {
   

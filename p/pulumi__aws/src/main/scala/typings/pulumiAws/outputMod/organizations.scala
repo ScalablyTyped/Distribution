@@ -2,38 +2,36 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizations {
   
-  @js.native
   trait GetOrganizationAccount extends StObject {
     
     /**
       * ARN of the root
       */
-    var arn: String = js.native
+    var arn: String
     
     /**
       * Email of the account
       */
-    var email: String = js.native
+    var email: String
     
     /**
       * Identifier of the root
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The name of the policy type
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The status of the policy type as it relates to the associated root
       */
-    var status: String = js.native
+    var status: String
   }
   object GetOrganizationAccount {
     
@@ -63,33 +61,32 @@ object organizations {
     }
   }
   
-  @js.native
   trait GetOrganizationNonMasterAccount extends StObject {
     
     /**
       * ARN of the root
       */
-    var arn: String = js.native
+    var arn: String
     
     /**
       * Email of the account
       */
-    var email: String = js.native
+    var email: String
     
     /**
       * Identifier of the root
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The name of the policy type
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The status of the policy type as it relates to the associated root
       */
-    var status: String = js.native
+    var status: String
   }
   object GetOrganizationNonMasterAccount {
     
@@ -119,28 +116,27 @@ object organizations {
     }
   }
   
-  @js.native
   trait GetOrganizationRoot extends StObject {
     
     /**
       * ARN of the root
       */
-    var arn: String = js.native
+    var arn: String
     
     /**
       * Identifier of the root
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The name of the policy type
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * List of policy types enabled for this root. All elements have these attributes:
       */
-    var policyTypes: js.Array[GetOrganizationRootPolicyType] = js.native
+    var policyTypes: js.Array[GetOrganizationRootPolicyType]
   }
   object GetOrganizationRoot {
     
@@ -170,15 +166,14 @@ object organizations {
     }
   }
   
-  @js.native
   trait GetOrganizationRootPolicyType extends StObject {
     
     /**
       * The status of the policy type as it relates to the associated root
       */
-    var status: String = js.native
+    var status: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object GetOrganizationRootPolicyType {
     
@@ -200,23 +195,22 @@ object organizations {
     }
   }
   
-  @js.native
   trait GetOrganizationalUnitsChildren extends StObject {
     
     /**
       * ARN of the organizational unit
       */
-    var arn: String = js.native
+    var arn: String
     
     /**
       * Parent identifier of the organizational units.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Name of the organizational unit
       */
-    var name: String = js.native
+    var name: String
   }
   object GetOrganizationalUnitsChildren {
     
@@ -240,33 +234,32 @@ object organizations {
     }
   }
   
-  @js.native
   trait OrganizationAccount extends StObject {
     
     /**
       * ARN of the root
       */
-    var arn: String = js.native
+    var arn: String
     
     /**
       * Email of the account
       */
-    var email: String = js.native
+    var email: String
     
     /**
       * Identifier of the root
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The name of the policy type
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The status of the policy type as it relates to the associated root
       */
-    var status: String = js.native
+    var status: String
   }
   object OrganizationAccount {
     
@@ -296,33 +289,32 @@ object organizations {
     }
   }
   
-  @js.native
   trait OrganizationNonMasterAccount extends StObject {
     
     /**
       * ARN of the root
       */
-    var arn: String = js.native
+    var arn: String
     
     /**
       * Email of the account
       */
-    var email: String = js.native
+    var email: String
     
     /**
       * Identifier of the root
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The name of the policy type
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The status of the policy type as it relates to the associated root
       */
-    var status: String = js.native
+    var status: String
   }
   object OrganizationNonMasterAccount {
     
@@ -352,28 +344,27 @@ object organizations {
     }
   }
   
-  @js.native
   trait OrganizationRoot extends StObject {
     
     /**
       * ARN of the root
       */
-    var arn: String = js.native
+    var arn: String
     
     /**
       * Identifier of the root
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The name of the policy type
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * List of policy types enabled for this root. All elements have these attributes:
       */
-    var policyTypes: js.Array[OrganizationRootPolicyType] = js.native
+    var policyTypes: js.Array[OrganizationRootPolicyType]
   }
   object OrganizationRoot {
     
@@ -403,15 +394,14 @@ object organizations {
     }
   }
   
-  @js.native
   trait OrganizationRootPolicyType extends StObject {
     
     /**
       * The status of the policy type as it relates to the associated root
       */
-    var status: String = js.native
+    var status: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object OrganizationRootPolicyType {
     
@@ -433,28 +423,27 @@ object organizations {
     }
   }
   
-  @js.native
   trait OrganizationalUnitAccount extends StObject {
     
     /**
       * ARN of the organizational unit
       */
-    var arn: String = js.native
+    var arn: String
     
     /**
       * Email of the account
       */
-    var email: String = js.native
+    var email: String
     
     /**
       * Identifier of the organization unit
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The name for the organizational unit
       */
-    var name: String = js.native
+    var name: String
   }
   object OrganizationalUnitAccount {
     

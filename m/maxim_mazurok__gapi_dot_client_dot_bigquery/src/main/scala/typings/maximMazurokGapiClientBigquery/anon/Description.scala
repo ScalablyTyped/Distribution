@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientBigquery.anon
 import typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.QueryParameterType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Description extends StObject {
   
   /** [Optional] Human-oriented description of the field. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** [Optional] The name of this field. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Required] The type of this field. */
-  var `type`: js.UndefOr[QueryParameterType] = js.native
+  var `type`: js.UndefOr[QueryParameterType] = js.undefined
 }
 object Description {
   

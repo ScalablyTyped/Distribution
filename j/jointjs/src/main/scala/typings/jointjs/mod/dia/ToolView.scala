@@ -4,13 +4,11 @@ import typings.jointjs.mod.dia.ToolView.Options
 import typings.jointjs.mod.mvc.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "dia.ToolView")
 @js.native
-class ToolView ()
-  extends View[js.UndefOr[scala.Nothing]] {
+class ToolView () extends View[Unit] {
   def this(opt: Options) = this()
   
   def blur(): Unit = js.native
@@ -40,10 +38,9 @@ class ToolView ()
 }
 object ToolView {
   
-  @js.native
   trait Options extends StObject {
     
-    var focusOpacity: js.UndefOr[Double] = js.native
+    var focusOpacity: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

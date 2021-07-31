@@ -2,61 +2,59 @@ package typings.googleapis.plusV1Mod.plusV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaActivityFeed extends StObject {
   
   /**
     * ETag of this response for caching purposes.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of this collection of activities. Deprecated.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The activities in this page of results.
     */
-  var items: js.UndefOr[js.Array[SchemaActivity]] = js.native
+  var items: js.UndefOr[js.Array[SchemaActivity]] = js.undefined
   
   /**
     * Identifies this resource as a collection of activities. Value:
     * &quot;plus#activityFeed&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Link to the next page of activities.
     */
-  var nextLink: js.UndefOr[String] = js.native
+  var nextLink: js.UndefOr[String] = js.undefined
   
   /**
     * The continuation token, which is used to page through large result sets.
     * Provide this value in a subsequent request to return the next page of
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Link to this activity resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * The title of this collection of activities, which is a truncated portion
     * of the content.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which this collection of activities was last updated.
     * Formatted as an RFC 3339 timestamp.
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object SchemaActivityFeed {
   

@@ -6,26 +6,25 @@ import typings.awsSdkClientKinesisBrowser.putRecordsExceptionsUnionMod.PutRecord
 import typings.awsSdkClientKinesisBrowser.startStreamEncryptionExceptionsUnionMod.StartStreamEncryptionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesKmsthrottlingexceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KMSThrottlingExceptionDetails> * / any */ @js.native
-  trait KMSThrottlingException
-    extends GetRecordsExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KMSThrottlingExceptionDetails> * / any */ trait KMSThrottlingException
+    extends StObject
+       with GetRecordsExceptionsUnion
        with PutRecordExceptionsUnion
        with PutRecordsExceptionsUnion
        with StartStreamEncryptionExceptionsUnion {
     
-    var name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSThrottlingException = js.native
+    var name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSThrottlingException
   }
   object KMSThrottlingException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSThrottlingException): KMSThrottlingException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): KMSThrottlingException = {
+      val __obj = js.Dynamic.literal(name = "KMSThrottlingException")
       __obj.asInstanceOf[KMSThrottlingException]
     }
     
@@ -37,13 +36,12 @@ object typesKmsthrottlingexceptionMod {
     }
   }
   
-  @js.native
   trait KMSThrottlingExceptionDetails extends StObject {
     
     /**
       * <p>A message that provides information about the error.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object KMSThrottlingExceptionDetails {
     

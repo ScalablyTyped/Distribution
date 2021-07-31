@@ -2,25 +2,23 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cross extends StObject {
   
-  var direction: String = js.native
+  var direction: String
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var first_id: String = js.native
+  var first_id: String
   
-  var first_name: String = js.native
+  var first_name: String
   
-  var location: LngLat = js.native
+  var location: LngLat
   
-  var second_id: String = js.native
+  var second_id: String
   
-  var second_name: String = js.native
+  var second_name: String
 }
 object Cross {
   

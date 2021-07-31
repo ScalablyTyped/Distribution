@@ -2,31 +2,29 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IterationResult extends StObject {
   
-  var arimaResult: js.UndefOr[ArimaResult] = js.native
+  var arimaResult: js.UndefOr[ArimaResult] = js.undefined
   
   /** Information about top clusters for clustering models. */
-  var clusterInfos: js.UndefOr[js.Array[ClusterInfo]] = js.native
+  var clusterInfos: js.UndefOr[js.Array[ClusterInfo]] = js.undefined
   
   /** Time taken to run the iteration in milliseconds. */
-  var durationMs: js.UndefOr[String] = js.native
+  var durationMs: js.UndefOr[String] = js.undefined
   
   /** Loss computed on the eval data at the end of iteration. */
-  var evalLoss: js.UndefOr[Double] = js.native
+  var evalLoss: js.UndefOr[Double] = js.undefined
   
   /** Index of the iteration, 0 based. */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /** Learn rate used for this iteration. */
-  var learnRate: js.UndefOr[Double] = js.native
+  var learnRate: js.UndefOr[Double] = js.undefined
   
   /** Loss computed on the training data at the end of iteration. */
-  var trainingLoss: js.UndefOr[Double] = js.native
+  var trainingLoss: js.UndefOr[Double] = js.undefined
 }
 object IterationResult {
   

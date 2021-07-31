@@ -7,7 +7,6 @@ import typings.webcl.webclNumbers.`0x4`
 import typings.webcl.webclNumbers.`0x8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_device_type - bitfield */

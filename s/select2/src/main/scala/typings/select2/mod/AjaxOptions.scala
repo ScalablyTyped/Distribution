@@ -3,31 +3,29 @@ package typings.select2.mod
 import typings.jquery.JQueryAjaxSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in select2.select2.Sub<keyof jquery.JQueryAjaxSettings, 'url'> ]: jquery.JQueryAjaxSettings[P]} */ @js.native
-trait AjaxOptions[Result, RemoteResult] extends StObject {
+- Dropped {[ P in select2.select2.Sub<keyof jquery.JQueryAjaxSettings, 'url'> ]: jquery.JQueryAjaxSettings[P]} */ trait AjaxOptions[Result, RemoteResult] extends StObject {
   
-  var data: js.UndefOr[js.Function1[/* params */ QueryOptions, PlainObject[_]]] = js.native
+  var data: js.UndefOr[js.Function1[/* params */ QueryOptions, PlainObject[js.Any]]] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   var processResults: js.UndefOr[
     js.Function2[/* data */ RemoteResult, /* params */ QueryOptions, ProcessedResult[Result]]
-  ] = js.native
+  ] = js.undefined
   
   var transport: js.UndefOr[
     js.Function3[
       /* settings */ JQueryAjaxSettings, 
-      /* success */ js.UndefOr[js.Function1[/* data */ RemoteResult, js.UndefOr[scala.Nothing]]], 
-      /* failure */ js.UndefOr[js.Function0[js.UndefOr[scala.Nothing]]], 
+      /* success */ js.UndefOr[js.Function1[/* data */ RemoteResult, Unit]], 
+      /* failure */ js.UndefOr[js.Function0[Unit]], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var url: js.UndefOr[String | (js.Function1[/* params */ QueryOptions, String])] = js.native
+  var url: js.UndefOr[String | (js.Function1[/* params */ QueryOptions, String])] = js.undefined
 }
 object AjaxOptions {
   
@@ -38,10 +36,10 @@ object AjaxOptions {
   }
   
   @scala.inline
-  implicit class AjaxOptionsMutableBuilder[Self <: AjaxOptions[_, _], Result, RemoteResult] (val x: Self with (AjaxOptions[Result, RemoteResult])) extends AnyVal {
+  implicit class AjaxOptionsMutableBuilder[Self <: AjaxOptions[?, ?], Result, RemoteResult] (val x: Self & (AjaxOptions[Result, RemoteResult])) extends AnyVal {
     
     @scala.inline
-    def setData(value: /* params */ QueryOptions => PlainObject[_]): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
+    def setData(value: /* params */ QueryOptions => PlainObject[js.Any]): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -60,7 +58,7 @@ object AjaxOptions {
     
     @scala.inline
     def setTransport(
-      value: (/* settings */ JQueryAjaxSettings, /* success */ js.UndefOr[js.Function1[/* data */ RemoteResult, js.UndefOr[scala.Nothing]]], /* failure */ js.UndefOr[js.Function0[js.UndefOr[scala.Nothing]]]) => Unit
+      value: (/* settings */ JQueryAjaxSettings, /* success */ js.UndefOr[js.Function1[/* data */ RemoteResult, Unit]], /* failure */ js.UndefOr[js.Function0[Unit]]) => Unit
     ): Self = StObject.set(x, "transport", js.Any.fromFunction3(value))
     
     @scala.inline

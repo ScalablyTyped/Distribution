@@ -4,7 +4,6 @@ import typings.rsocketCore.rsocketencodingMod.Encoders
 import typings.rsocketWebsocketClient.rsocketwebsocketclientMod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,6 +13,6 @@ object mod {
   class default protected ()
     extends typings.rsocketWebsocketClient.rsocketwebsocketclientMod.default {
     def this(options: ClientOptions) = this()
-    def this(options: ClientOptions, encoders: Encoders[_]) = this()
+    def this(options: ClientOptions, encoders: Encoders[js.Any]) = this()
   }
 }

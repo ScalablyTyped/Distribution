@@ -3,16 +3,15 @@ package typings.web3Core.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestArguments
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var method: String = js.native
+  var method: String
   
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
 }
 object RequestArguments {
   

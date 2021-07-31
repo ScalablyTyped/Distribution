@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCompatibleKafkaVersionsResponse extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GetCompatibleKafkaVersionsResponse extends StObject {
     A list of CompatibleKafkaVersion objects.
     
     */
-  var CompatibleKafkaVersions: js.UndefOr[listOfCompatibleKafkaVersion] = js.native
+  var CompatibleKafkaVersions: js.UndefOr[listOfCompatibleKafkaVersion] = js.undefined
 }
 object GetCompatibleKafkaVersionsResponse {
   

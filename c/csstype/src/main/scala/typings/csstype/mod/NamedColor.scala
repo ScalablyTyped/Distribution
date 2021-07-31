@@ -2,7 +2,6 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -156,7 +155,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.yellow
   - typings.csstype.csstypeStrings.yellowgreen
 */
-trait NamedColor extends _Color
+trait NamedColor
+  extends StObject
+     with _Color
 object NamedColor {
   
   @scala.inline

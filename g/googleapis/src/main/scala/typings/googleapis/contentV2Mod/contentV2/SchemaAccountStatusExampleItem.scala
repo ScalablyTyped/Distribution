@@ -2,21 +2,19 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAccountStatusExampleItem extends StObject {
   
-  var itemId: js.UndefOr[String] = js.native
+  var itemId: js.UndefOr[String] = js.undefined
   
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
-  var submittedValue: js.UndefOr[String] = js.native
+  var submittedValue: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var valueOnLandingPage: js.UndefOr[String] = js.native
+  var valueOnLandingPage: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountStatusExampleItem {
   

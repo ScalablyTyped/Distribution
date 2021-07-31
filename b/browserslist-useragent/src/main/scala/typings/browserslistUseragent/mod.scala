@@ -2,38 +2,36 @@ package typings.browserslistUseragent
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("browserslist-useragent", "matchesUA")
+  @JSImport("browserslist-useragent", JSImport.Namespace)
   @js.native
-  def matchesUA(uaString: String): Boolean = js.native
-  @JSImport("browserslist-useragent", "matchesUA")
-  @js.native
-  def matchesUA(uaString: String, opts: BrowserslistUseragentOptions): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("browserslist-useragent", "normalizeQuery")
-  @js.native
-  def normalizeQuery(query: String): String = js.native
+  @scala.inline
+  def matchesUA(uaString: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matchesUA")(uaString.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def matchesUA(uaString: String, opts: BrowserslistUseragentOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesUA")(uaString.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("browserslist-useragent", "resolveUserAgent")
-  @js.native
-  def resolveUserAgent(uaString: String): ResolvedUserAgent = js.native
+  @scala.inline
+  def normalizeQuery(query: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeQuery")(query.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def resolveUserAgent(uaString: String): ResolvedUserAgent = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveUserAgent")(uaString.asInstanceOf[js.Any]).asInstanceOf[ResolvedUserAgent]
+  
   trait BrowserslistUseragentOptions extends StObject {
     
-    var allowHigherVersions: js.UndefOr[Boolean] = js.native
+    var allowHigherVersions: js.UndefOr[Boolean] = js.undefined
     
-    var browsers: js.UndefOr[js.Array[String]] = js.native
+    var browsers: js.UndefOr[js.Array[String]] = js.undefined
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
     
-    var ignoreMinor: js.UndefOr[Boolean] = js.native
+    var ignoreMinor: js.UndefOr[Boolean] = js.undefined
     
-    var ignorePatch: js.UndefOr[Boolean] = js.native
+    var ignorePatch: js.UndefOr[Boolean] = js.undefined
   }
   object BrowserslistUseragentOptions {
     
@@ -81,12 +79,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ResolvedUserAgent extends StObject {
     
-    var family: String = js.native
+    var family: String
     
-    var version: String = js.native
+    var version: String
   }
   object ResolvedUserAgent {
     

@@ -12,7 +12,7 @@ mapping object keys
 | Keywords           | mapping, object, keys |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 862 |
+| # downloads        | 899 |
 | # stars            | 0 |
 
 ## Links

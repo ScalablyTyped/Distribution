@@ -2,22 +2,21 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUserInfoOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   // 是否带上登录态信息
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
   // 指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。默认为en。
   /** 接口调用成功的回调函数 */
   @JSName("success")
-  var success_GetUserInfoOptions: js.UndefOr[js.Function1[/* res */ UserInfoResponse, Unit]] = js.native
+  var success_GetUserInfoOptions: js.UndefOr[js.Function1[/* res */ UserInfoResponse, Unit]] = js.undefined
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object GetUserInfoOptions {
   

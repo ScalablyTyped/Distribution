@@ -26,11 +26,12 @@ import typings.amapJsApiTransfer.anon.Destination
 import typings.amapJsApiTransfer.anon.Info
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transfer extends EventEmitter {
+trait Transfer
+  extends StObject
+     with EventEmitter {
   
   /**
     * 清除结果显示
@@ -45,9 +46,9 @@ trait Transfer extends EventEmitter {
     * @param date 日期
     */
   def leaveAt(): Unit = js.native
-  def leaveAt(time: js.UndefOr[scala.Nothing], date: String): Unit = js.native
   def leaveAt(time: String): Unit = js.native
   def leaveAt(time: String, date: String): Unit = js.native
+  def leaveAt(time: Unit, date: String): Unit = js.native
   
   // internal
   def open(): Unit = js.native
@@ -104,18 +105,17 @@ trait Transfer extends EventEmitter {
 }
 object Transfer {
   
-  @js.native
   trait Alter extends StObject {
     
     /**
       * 备选方案ID
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * 备选线路名称
       */
-    var name: String = js.native
+    var name: String
   }
   object Alter {
     
@@ -136,12 +136,11 @@ object Transfer {
     }
   }
   
-  @js.native
   trait EventMap extends StObject {
     
-    var complete: Event_[typings.amapJsApiTransfer.amapJsApiTransferStrings.complete, SearchResult] = js.native
+    var complete: Event_[typings.amapJsApiTransfer.amapJsApiTransferStrings.complete, SearchResult]
     
-    var error: Event_[typings.amapJsApiTransfer.amapJsApiTransferStrings.error, Info] = js.native
+    var error: Event_[typings.amapJsApiTransfer.amapJsApiTransferStrings.error, Info]
   }
   object EventMap {
     
@@ -162,68 +161,67 @@ object Transfer {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * 用于控制在路径规划结束后，是否自动调整地图视野使绘制的路线处于视口的可见范围
       */
-    var autoFitView: js.UndefOr[Boolean] = js.native
+    var autoFitView: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 公交换乘的城市，支持城市名称、城市区号、电话区号，此项为必填
       */
-    var city: String = js.native
+    var city: String
     
     /**
       * 终点城市，跨城公交路径规划时为必填参数
       */
-    var cityd: js.UndefOr[String] = js.native
+    var cityd: js.UndefOr[String] = js.undefined
     
     /**
       * 返回结果控制, 默认值: base
       * base:返回基本信息
       * all:返回全部信息
       */
-    var extensions: js.UndefOr[all | base] = js.native
+    var extensions: js.UndefOr[all | base] = js.undefined
     
     /**
       * 设置是否隐藏路径规划的起始点图标
       */
-    var hideMarkers: js.UndefOr[Boolean] = js.native
+    var hideMarkers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 使用map属性时，绘制的规划线路是否显示描边。默认为true
       */
-    var isOutline: js.UndefOr[Boolean] = js.native
+    var isOutline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * AMap.Map对象, 展现结果的地图实例
       */
-    var map: js.UndefOr[Map] = js.native
+    var map: js.UndefOr[Map] = js.undefined
     
     /**
       * 是否计算夜班车，默认为不计算
       */
-    var nightflag: js.UndefOr[Boolean] = js.native
+    var nightflag: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 使用map属性时，绘制的规划线路的描边颜色。默认为'white'
       */
-    var outlineColor: js.UndefOr[String] = js.native
+    var outlineColor: js.UndefOr[String] = js.undefined
     
     /**
       * 结果列表的HTML容器id或容器元素
       */
-    var panel: js.UndefOr[String] = js.native
+    var panel: js.UndefOr[String] = js.undefined
     
     /**
       * 公交换乘策略
       */
-    var policy: js.UndefOr[TransferPolicy] = js.native
+    var policy: js.UndefOr[TransferPolicy] = js.undefined
     
     // internal
-    var showDir: js.UndefOr[Boolean] = js.native
+    var showDir: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -307,14 +305,13 @@ object Transfer {
     }
   }
   
-  @js.native
   trait Poi extends StObject {
     
-    var location: LngLat = js.native
+    var location: LngLat
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: start | end = js.native
+    var `type`: start | end
   }
   object Poi {
     
@@ -339,38 +336,37 @@ object Transfer {
     }
   }
   
-  @js.native
   trait RailStop extends StObject {
     
     /**
       * 上、下车站点所在城市的adcode
       */
-    var adcode: String = js.native
+    var adcode: String
     
     /**
       * 上、下车站点ID
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * 上、下站点经纬度信息
       */
-    var location: LngLat = js.native
+    var location: LngLat
     
     /**
       * 上、下车站点名称
       */
-    var name: String = js.native
+    var name: String
     
-    var segment: js.UndefOr[RailwaySegment] = js.native
+    var segment: js.UndefOr[RailwaySegment] = js.undefined
     
     /**
       * 上下车点发车时间
       */
-    var time: Double = js.native
+    var time: Double
     
     @JSName("wait")
-    var wait_FRailStop: js.UndefOr[Double] = js.native
+    var wait_FRailStop: js.UndefOr[Double] = js.undefined
   }
   object RailStop {
     
@@ -457,53 +453,54 @@ object Transfer {
     }
   }
   
-  @js.native
-  trait RailwayDetailsBase extends RailwayDetails {
+  trait RailwayDetailsBase
+    extends StObject
+       with RailwayDetails {
     
     /**
       * 火车到站信息
       */
-    var arrival_stop: RailStop = js.native
+    var arrival_stop: RailStop
     
     /**
       * 火车始发站信息
       */
-    var departure_stop: RailStop = js.native
+    var departure_stop: RailStop
     
     /**
       * 该换乘段的行车总距离
       */
-    var distance: Double = js.native
+    var distance: Double
     
     /**
       * 线路id编码
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * 线路名称
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * 仓位及价格信息
       */
-    var spaces: js.Array[Space] = js.native
+    var spaces: js.Array[Space]
     
     /**
       * 该线路车段耗时
       */
-    var time: Double = js.native
+    var time: Double
     
     /**
       * 线路车次号
       */
-    var trip: String = js.native
+    var trip: String
     
     /**
       * 线路车次类型，参考火车路线类型列表
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object RailwayDetailsBase {
     
@@ -560,23 +557,24 @@ object Transfer {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.amapJsApiTransfer.AMap.Transfer.RailwayDetails because Already inherited */ @js.native
-  trait RailwayDetailsExt extends RailwayDetailsBase {
+  - typings.amapJsApiTransfer.AMap.Transfer.RailwayDetails because Already inherited */ trait RailwayDetailsExt
+    extends StObject
+       with RailwayDetailsBase {
     
     /**
       * 聚合的备选方案
       */
-    var alters: js.Array[Alter] = js.native
+    var alters: js.Array[Alter]
     
     /**
       * 途经站点数量
       */
-    var via_num: Double = js.native
+    var via_num: Double
     
     /**
       * 途经站点信息
       */
-    var via_stops: js.Array[ViaStop] = js.native
+    var via_stops: js.Array[ViaStop]
   }
   object RailwayDetailsExt {
     
@@ -620,32 +618,26 @@ object Transfer {
     }
   }
   
-  @js.native
   trait RailwaySegment
-    extends SegmentCommon
+    extends StObject
+       with SegmentCommon
        with Segment {
     
     /**
       * 此换乘段导航信息
       */
-    var transit: RailwayDetails = js.native
+    var transit: RailwayDetails
     
     /**
       * 换乘动作类型
       */
-    var transit_mode: RAILWAY = js.native
+    var transit_mode: RAILWAY
   }
   object RailwaySegment {
     
     @scala.inline
-    def apply(
-      distance: Double,
-      instruction: String,
-      time: Double,
-      transit: RailwayDetails,
-      transit_mode: RAILWAY
-    ): RailwaySegment = {
-      val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
+    def apply(distance: Double, instruction: String, time: Double, transit: RailwayDetails): RailwaySegment = {
+      val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = "RAILWAY")
       __obj.asInstanceOf[RailwaySegment]
     }
     
@@ -660,13 +652,12 @@ object Transfer {
     }
   }
   
-  @js.native
   trait SearchPoint extends StObject {
     
     /**
       * 关键词
       */
-    var keyword: String = js.native
+    var keyword: String
   }
   object SearchPoint {
     
@@ -720,20 +711,20 @@ object Transfer {
     }
   }
   
-  @js.native
   trait SearchResultBase
-    extends SearchResultCommon
+    extends StObject
+       with SearchResultCommon
        with SearchResult {
     
     /**
       * 公交换乘终点
       */
-    var end: js.UndefOr[Poi] = js.native
+    var end: js.UndefOr[Poi] = js.undefined
     
     /**
       * 公交换乘起点
       */
-    var start: js.UndefOr[Poi] = js.native
+    var start: js.UndefOr[Poi] = js.undefined
   }
   object SearchResultBase {
     
@@ -766,33 +757,32 @@ object Transfer {
     }
   }
   
-  @js.native
   trait SearchResultCommon extends StObject {
     
     /**
       * 公交换乘终点坐标
       */
-    var destination: LngLat = js.native
+    var destination: LngLat
     
     /**
       * 成功状态说明
       */
-    var info: String = js.native
+    var info: String
     
     /**
       * 公交换乘起点坐标
       */
-    var origin: LngLat = js.native
+    var origin: LngLat
     
     /**
       * 换乘方案列表
       */
-    var plans: js.Array[TransferPlan] = js.native
+    var plans: js.Array[TransferPlan]
     
     /**
       * 出租车费用，单位：元
       */
-    var taxi_cost: Double = js.native
+    var taxi_cost: Double
   }
   object SearchResultCommon {
     
@@ -831,30 +821,30 @@ object Transfer {
     }
   }
   
-  @js.native
   trait SearchResultExt
-    extends SearchResultCommon
+    extends StObject
+       with SearchResultCommon
        with SearchResult {
     
     /**
       * 公交换乘终点名称
       */
-    var destinationName: String = js.native
+    var destinationName: String
     
     /**
       * 公交换乘终点
       */
-    var end: PoiExt = js.native
+    var end: PoiExt
     
     /**
       * 公交换乘起点名称
       */
-    var originName: String = js.native
+    var originName: String
     
     /**
       * 公交换乘起点
       */
-    var start: PoiExt = js.native
+    var start: PoiExt
   }
   object SearchResultExt {
     
@@ -919,20 +909,14 @@ object Transfer {
   object Segment {
     
     @scala.inline
-    def RailwaySegment(
-      distance: Double,
-      instruction: String,
-      time: Double,
-      transit: RailwayDetails,
-      transit_mode: RAILWAY
-    ): typings.amapJsApiTransfer.AMap.Transfer.RailwaySegment = {
-      val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
+    def RailwaySegment(distance: Double, instruction: String, time: Double, transit: RailwayDetails): typings.amapJsApiTransfer.AMap.Transfer.RailwaySegment = {
+      val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = "RAILWAY")
       __obj.asInstanceOf[typings.amapJsApiTransfer.AMap.Transfer.RailwaySegment]
     }
     
     @scala.inline
-    def TaxiSegment(distance: Double, instruction: String, time: Double, transit: TaxiDetails, transit_mode: TAXI): typings.amapJsApiTransfer.AMap.Transfer.TaxiSegment = {
-      val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
+    def TaxiSegment(distance: Double, instruction: String, time: Double, transit: TaxiDetails): typings.amapJsApiTransfer.AMap.Transfer.TaxiSegment = {
+      val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = "TAXI")
       __obj.asInstanceOf[typings.amapJsApiTransfer.AMap.Transfer.TaxiSegment]
     }
     
@@ -949,29 +933,28 @@ object Transfer {
     }
     
     @scala.inline
-    def WalkSegment(distance: Double, instruction: String, time: Double, transit: WalkDetails, transit_mode: WALK): typings.amapJsApiTransfer.AMap.Transfer.WalkSegment = {
-      val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
+    def WalkSegment(distance: Double, instruction: String, time: Double, transit: WalkDetails): typings.amapJsApiTransfer.AMap.Transfer.WalkSegment = {
+      val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = "WALK")
       __obj.asInstanceOf[typings.amapJsApiTransfer.AMap.Transfer.WalkSegment]
     }
   }
   
-  @js.native
   trait SegmentCommon extends StObject {
     
     /**
       * 此换乘段距离
       */
-    var distance: Double = js.native
+    var distance: Double
     
     /**
       * 此换乘段的文字描述
       */
-    var instruction: String = js.native
+    var instruction: String
     
     /**
       * 此换乘段预期用时，单位：秒
       */
-    var time: Double = js.native
+    var time: Double
   }
   object SegmentCommon {
     
@@ -995,18 +978,17 @@ object Transfer {
     }
   }
   
-  @js.native
   trait Space extends StObject {
     
     /**
       * 仓位费用
       */
-    var cost: Double = js.native
+    var cost: Double
     
     /**
       * 仓位编码，参考仓位级别表
       */
-    var `type`: String | js.Array[scala.Nothing] = js.native
+    var `type`: String | js.Array[scala.Nothing]
   }
   object Space {
     
@@ -1031,25 +1013,24 @@ object Transfer {
     }
   }
   
-  @js.native
   trait Stop extends StObject {
     
     /**
       * 公交站点ID
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * 站点经纬度信息
       */
-    var location: LngLat = js.native
+    var location: LngLat
     
     /**
       * 公交站点名称
       */
-    var name: String = js.native
+    var name: String
     
-    var segment: js.UndefOr[TransitSegment] = js.native
+    var segment: js.UndefOr[TransitSegment] = js.undefined
   }
   object Stop {
     
@@ -1079,18 +1060,17 @@ object Transfer {
     }
   }
   
-  @js.native
   trait SubwayEntrance extends StObject {
     
     /**
       * 地铁口经纬度坐标
       */
-    var location: LngLat = js.native
+    var location: LngLat
     
     /**
       * 地铁口名称
       */
-    var name: String = js.native
+    var name: String
   }
   object SubwayEntrance {
     
@@ -1111,38 +1091,37 @@ object Transfer {
     }
   }
   
-  @js.native
   trait TaxiDetails extends StObject {
     
     /**
       * 打车终点坐标
       */
-    var destination: LngLat = js.native
+    var destination: LngLat
     
     /**
       * 该方案的总距离，单位：米
       */
-    var distance: Double = js.native
+    var distance: Double
     
     /**
       * 打车起点坐标
       */
-    var origin: LngLat = js.native
+    var origin: LngLat
     
     /**
       * 起点名称
       */
-    var sname: String = js.native
+    var sname: String
     
     /**
       * 耗时，单位：秒
       */
-    var time: Double = js.native
+    var time: Double
     
     /**
       * 终点名称
       */
-    var tname: String = js.native
+    var tname: String
   }
   object TaxiDetails {
     
@@ -1175,26 +1154,26 @@ object Transfer {
     }
   }
   
-  @js.native
   trait TaxiSegment
-    extends SegmentCommon
+    extends StObject
+       with SegmentCommon
        with Segment {
     
     /**
       * 此换乘段导航信息
       */
-    var transit: TaxiDetails = js.native
+    var transit: TaxiDetails
     
     /**
       * 换乘动作类型
       */
-    var transit_mode: TAXI = js.native
+    var transit_mode: TAXI
   }
   object TaxiSegment {
     
     @scala.inline
-    def apply(distance: Double, instruction: String, time: Double, transit: TaxiDetails, transit_mode: TAXI): TaxiSegment = {
-      val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
+    def apply(distance: Double, instruction: String, time: Double, transit: TaxiDetails): TaxiSegment = {
+      val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = "TAXI")
       __obj.asInstanceOf[TaxiSegment]
     }
     
@@ -1209,58 +1188,57 @@ object Transfer {
     }
   }
   
-  @js.native
   trait TransferPlan extends StObject {
     
     /**
       * 此换乘方案价格，单位：元
       */
-    var cost: Double = js.native
+    var cost: Double
     
     /**
       * 此换乘方案全程距离，单位：米
       */
-    var distance: Double = js.native
+    var distance: Double
     
     /**
       * 是否夜间线路
       */
-    var nightLine: Boolean = js.native
+    var nightLine: Boolean
     
     /**
       * 此换乘方案的路径坐标集合
       */
-    var path: js.Array[LngLat] = js.native
+    var path: js.Array[LngLat]
     
     /**
       * 此方案火车行驶距离，单位：米
       */
-    var railway_distance: Double = js.native
+    var railway_distance: Double
     
     /**
       * 换乘路段列表，以每次换乘动结束作为分段点，将整个换乘方案分隔成若干 Segment（换乘路段）
       */
-    var segments: js.Array[Segment] = js.native
+    var segments: js.Array[Segment]
     
     /**
       * 此方案出租车行驶距离，单位：米
       */
-    var taxi_distance: Double = js.native
+    var taxi_distance: Double
     
     /**
       * 预期时间，单位：秒
       */
-    var time: Double = js.native
+    var time: Double
     
     /**
       * 此方案公交行驶距离，单位：米
       */
-    var transit_distance: Double = js.native
+    var transit_distance: Double
     
     /**
       * 此方案总步行距离，单位：米
       */
-    var walking_distance: Double = js.native
+    var walking_distance: Double
   }
   object TransferPlan {
     
@@ -1322,48 +1300,47 @@ object Transfer {
     }
   }
   
-  @js.native
   trait TransitDetails extends StObject {
     
     /**
       * 地铁站入口
       */
-    var entrance: js.UndefOr[SubwayEntrance] = js.native
+    var entrance: js.UndefOr[SubwayEntrance] = js.undefined
     
     /**
       * 地铁站出口
       */
-    var exit: js.UndefOr[SubwayEntrance] = js.native
+    var exit: js.UndefOr[SubwayEntrance] = js.undefined
     
     /**
       * 此换乘段公交路线
       */
-    var lines: js.Array[TransitLine] = js.native
+    var lines: js.Array[TransitLine]
     
     /**
       * 此换乘段的下车站
       */
-    var off_station: Stop = js.native
+    var off_station: Stop
     
     /**
       * 此换乘段的上车站
       */
-    var on_station: Stop = js.native
+    var on_station: Stop
     
     /**
       * 此换乘段公交部分（上车站-下车站）坐标集合
       */
-    var path: js.Array[LngLat] = js.native
+    var path: js.Array[LngLat]
     
     /**
       * 途径公交站点数（不包括上车站和下车站）
       */
-    var via_num: Double = js.native
+    var via_num: Double
     
     /**
       * 途径公交站点集合（不包括上车站和下车站）
       */
-    var via_stops: js.Array[Stop] = js.native
+    var via_stops: js.Array[Stop]
   }
   object TransitDetails {
     
@@ -1424,33 +1401,32 @@ object Transfer {
     }
   }
   
-  @js.native
   trait TransitLine extends StObject {
     
     /**
       * 公交路线末班车时间
       */
-    var etime: String | js.Array[scala.Nothing] = js.native
+    var etime: String | js.Array[scala.Nothing]
     
     /**
       * 公交路线ID
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * 公交路线名
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * 公交路线首班车时间
       */
-    var stime: String | js.Array[scala.Nothing] = js.native
+    var stime: String | js.Array[scala.Nothing]
     
     /**
       * 公交类型
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object TransitLine {
     
@@ -1493,20 +1469,20 @@ object Transfer {
     }
   }
   
-  @js.native
   trait TransitSegment
-    extends SegmentCommon
+    extends StObject
+       with SegmentCommon
        with Segment {
     
     /**
       * 此换乘段导航信息
       */
-    var transit: TransitDetails = js.native
+    var transit: TransitDetails
     
     /**
       * 换乘动作类型
       */
-    var transit_mode: SUBWAY | METRO_RAIL | BUS = js.native
+    var transit_mode: SUBWAY | METRO_RAIL | BUS
   }
   object TransitSegment {
     
@@ -1533,34 +1509,33 @@ object Transfer {
     }
   }
   
-  @js.native
   trait ViaStop extends StObject {
     
     /**
       * 途径车站点ID
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * 站点经纬度信息
       */
-    var location: LngLat = js.native
+    var location: LngLat
     
     /**
       * 途径车站点名称
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * 途径站点的进站时间，如大于24:00,则表示跨天
       */
-    var time: Double = js.native
+    var time: Double
     
     /**
       * 途径站点的停靠时间，单位：分钟
       */
     @JSName("wait")
-    var wait_FViaStop: Double = js.native
+    var wait_FViaStop: Double
   }
   object ViaStop {
     
@@ -1591,28 +1566,27 @@ object Transfer {
     }
   }
   
-  @js.native
   trait WalkDetails extends StObject {
     
     /**
       * 此换乘段的步行终点
       */
-    var destination: LngLat = js.native
+    var destination: LngLat
     
     /**
       * 此换乘段的步行起点
       */
-    var origin: LngLat = js.native
+    var origin: LngLat
     
     /**
       * 此换乘段坐标集合
       */
-    var path: js.Array[LngLat] = js.native
+    var path: js.Array[LngLat]
     
     /**
       * 步行子路段WalkStep列表
       */
-    var steps: js.Array[WalkStep] = js.native
+    var steps: js.Array[WalkStep]
   }
   object WalkDetails {
     
@@ -1645,26 +1619,26 @@ object Transfer {
     }
   }
   
-  @js.native
   trait WalkSegment
-    extends SegmentCommon
+    extends StObject
+       with SegmentCommon
        with Segment {
     
     /**
       * 此换乘段导航信息
       */
-    var transit: WalkDetails = js.native
+    var transit: WalkDetails
     
     /**
       * 换乘动作类型
       */
-    var transit_mode: WALK = js.native
+    var transit_mode: WALK
   }
   object WalkSegment {
     
     @scala.inline
-    def apply(distance: Double, instruction: String, time: Double, transit: WalkDetails, transit_mode: WALK): WalkSegment = {
-      val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
+    def apply(distance: Double, instruction: String, time: Double, transit: WalkDetails): WalkSegment = {
+      val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = "WALK")
       __obj.asInstanceOf[WalkSegment]
     }
     
@@ -1679,43 +1653,42 @@ object Transfer {
     }
   }
   
-  @js.native
   trait WalkStep extends StObject {
     
     /**
       * 本步行子路段完成后动作
       */
-    var action: String = js.native
+    var action: String
     
     /**
       * 步行子路段完成后辅助动作，一般为到达某个公交站点或目的地时返回
       */
-    var assist_action: String = js.native
+    var assist_action: String
     
     /**
       * 步行子路段距离，单位：米
       */
-    var distance: Double = js.native
+    var distance: Double
     
     /**
       * 步行子路段描述
       */
-    var instruction: String = js.native
+    var instruction: String
     
     /**
       * 步行子路段坐标集合
       */
-    var path: js.Array[LngLat] = js.native
+    var path: js.Array[LngLat]
     
     /**
       * 道路
       */
-    var road: String = js.native
+    var road: String
     
     /**
       * 步行子路段预计使用时间，单位：秒
       */
-    var time: Double = js.native
+    var time: Double
   }
   object WalkStep {
     

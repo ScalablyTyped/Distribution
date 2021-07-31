@@ -4,28 +4,26 @@ import typings.stormReactDiagrams.baseEntityMod.BaseEntity
 import typings.stormReactDiagrams.baseEntityMod.BaseListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined storm-react-diagrams.storm-react-diagrams/dist/src/BaseEntity.BaseEvent<storm-react-diagrams.storm-react-diagrams/dist/src/models/DiagramModel.DiagramModel> & {  zoom :number} */
-@js.native
 trait BaseEventDiagramModelzoom extends StObject {
   
-  var entity: BaseEntity[BaseListener[_]] = js.native
+  var entity: BaseEntity[BaseListener[js.Any]]
   
-  var firing: Boolean = js.native
+  var firing: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  def stopPropagation(): js.Any = js.native
+  def stopPropagation(): js.Any
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object BaseEventDiagramModelzoom {
   
   @scala.inline
   def apply(
-    entity: BaseEntity[BaseListener[_]],
+    entity: BaseEntity[BaseListener[js.Any]],
     firing: Boolean,
     id: String,
     stopPropagation: () => js.Any,
@@ -39,7 +37,7 @@ object BaseEventDiagramModelzoom {
   implicit class BaseEventDiagramModelzoomMutableBuilder[Self <: BaseEventDiagramModelzoom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setEntity(value: BaseEntity[BaseListener[_]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])

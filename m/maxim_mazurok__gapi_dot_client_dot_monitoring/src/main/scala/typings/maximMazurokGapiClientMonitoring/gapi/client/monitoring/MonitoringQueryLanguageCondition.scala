@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoringQueryLanguageCondition extends StObject {
   
   /**
@@ -14,16 +12,16 @@ trait MonitoringQueryLanguageCondition extends StObject {
     * data (which may also be affected by any alignments specified in the aggregations field); a good duration is long enough so that a single outlier does not generate spurious alerts,
     * but short enough that unhealthy states are detected and alerted on quickly.
     */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /** Monitoring Query Language (https://cloud.google.com/monitoring/mql) query that outputs a boolean stream. */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * The number/percent of time series for which the comparison must hold in order for the condition to trigger. If unspecified, then the condition will trigger if the comparison is true
     * for any of the time series that have been identified by filter and aggregations, or by the ratio, if denominator_filter and denominator_aggregations are specified.
     */
-  var trigger: js.UndefOr[Trigger] = js.native
+  var trigger: js.UndefOr[Trigger] = js.undefined
 }
 object MonitoringQueryLanguageCondition {
   

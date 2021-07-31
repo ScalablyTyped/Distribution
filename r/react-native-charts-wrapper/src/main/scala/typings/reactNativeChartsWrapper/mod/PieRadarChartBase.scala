@@ -2,17 +2,17 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PieRadarChartBase extends ChartBase {
+trait PieRadarChartBase
+  extends StObject
+     with ChartBase {
   
-  var minOffset: js.UndefOr[Double] = js.native
+  var minOffset: js.UndefOr[Double] = js.undefined
   
-  var rotationAngle: js.UndefOr[Double] = js.native
+  var rotationAngle: js.UndefOr[Double] = js.undefined
   
-  var rotationEnabled: js.UndefOr[Boolean] = js.native
+  var rotationEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object PieRadarChartBase {
   

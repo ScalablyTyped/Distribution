@@ -3,31 +3,29 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MailMessage extends StObject {
   
-  var body: String = js.native
+  var body: String
   
-  var cC: EmailRecipients = js.native
+  var cC: EmailRecipients
   
-  var inReplyTo: String = js.native
+  var inReplyTo: String
   
-  var messageId: String = js.native
+  var messageId: String
   
-  var replyBy: Date = js.native
+  var replyBy: Date
   
-  var replyTo: EmailRecipients = js.native
+  var replyTo: EmailRecipients
   
-  var sections: js.Array[MailSectionType] = js.native
+  var sections: js.Array[MailSectionType]
   
-  var senderType: SenderType = js.native
+  var senderType: SenderType
   
-  var subject: String = js.native
+  var subject: String
   
-  var to: EmailRecipients = js.native
+  var to: EmailRecipients
 }
 object MailMessage {
   

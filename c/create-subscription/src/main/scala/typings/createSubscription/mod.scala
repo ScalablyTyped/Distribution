@@ -5,18 +5,19 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("create-subscription", "createSubscription")
+  @JSImport("create-subscription", JSImport.Namespace)
   @js.native
-  def createSubscription[S, T](config: SubscriptionConfig[S, T]): Subscription[S, T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createSubscription[S, T](config: SubscriptionConfig[S, T]): Subscription[S, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSubscription")(config.asInstanceOf[js.Any]).asInstanceOf[Subscription[S, T]]
   
   type Subscription[S, T] = ComponentClass[SubscriptionProps[S, T], ComponentState]
   
-  @js.native
   trait SubscriptionConfig[S, T] extends StObject {
     
     /**
@@ -24,7 +25,7 @@ object mod {
       * Return undefined if the subscribable value is undefined,
       * Or does not support synchronous reading (e.g. native Promise).
       */
-    def getCurrentValue(source: S): T = js.native
+    def getCurrentValue(source: S): T
     
     /**
       * Set up a subscription for the subscribable value in props, and return an unsubscribe function.
@@ -33,7 +34,7 @@ object mod {
       * Those handlers should not attempt to update state though;
       * They should call the callback() instead when a subscription changes.
       */
-    def subscribe(source: S, callback: js.Function1[/* newValue */ T, Unit]): Unsubscribe = js.native
+    def subscribe(source: S, callback: js.Function1[/* newValue */ T, Unit]): Unsubscribe
   }
   object SubscriptionConfig {
     
@@ -44,7 +45,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SubscriptionConfigMutableBuilder[Self <: SubscriptionConfig[_, _], S, T] (val x: Self with (SubscriptionConfig[S, T])) extends AnyVal {
+    implicit class SubscriptionConfigMutableBuilder[Self <: SubscriptionConfig[?, ?], S, T] (val x: Self & (SubscriptionConfig[S, T])) extends AnyVal {
       
       @scala.inline
       def setGetCurrentValue(value: S => T): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction1(value))
@@ -54,12 +55,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SubscriptionProps[S, T] extends StObject {
     
-    def children(value: T): ReactNode = js.native
+    def children(value: T): ReactNode
     
-    var source: S = js.native
+    var source: S
   }
   object SubscriptionProps {
     
@@ -70,7 +70,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SubscriptionPropsMutableBuilder[Self <: SubscriptionProps[_, _], S, T] (val x: Self with (SubscriptionProps[S, T])) extends AnyVal {
+    implicit class SubscriptionPropsMutableBuilder[Self <: SubscriptionProps[?, ?], S, T] (val x: Self & (SubscriptionProps[S, T])) extends AnyVal {
       
       @scala.inline
       def setChildren(value: T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))

@@ -5,76 +5,63 @@ import typings.konva.nodeMod.Node
 import typings.konva.nodeMod.NodeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tweenMod {
   
   object Easings {
     
-    @JSImport("konva/types/Tween", "Easings.BackEaseIn")
+    @JSImport("konva/types/Tween", "Easings")
     @js.native
-    def BackEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("konva/types/Tween", "Easings.BackEaseInOut")
-    @js.native
-    def BackEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def BackEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BackEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/Tween", "Easings.BackEaseOut")
-    @js.native
-    def BackEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def BackEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BackEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/Tween", "Easings.BounceEaseIn")
-    @js.native
-    def BounceEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def BackEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BackEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/Tween", "Easings.BounceEaseInOut")
-    @js.native
-    def BounceEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def BounceEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BounceEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/Tween", "Easings.BounceEaseOut")
-    @js.native
-    def BounceEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def BounceEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BounceEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/Tween", "Easings.EaseIn")
-    @js.native
-    def EaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def BounceEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BounceEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/Tween", "Easings.EaseInOut")
-    @js.native
-    def EaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def EaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("EaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/Tween", "Easings.EaseOut")
-    @js.native
-    def EaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def EaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("EaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/Tween", "Easings.ElasticEaseIn")
-    @js.native
-    def ElasticEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = js.native
+    @scala.inline
+    def EaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("EaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/Tween", "Easings.ElasticEaseInOut")
-    @js.native
-    def ElasticEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = js.native
+    @scala.inline
+    def ElasticEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ElasticEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/Tween", "Easings.ElasticEaseOut")
-    @js.native
-    def ElasticEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = js.native
+    @scala.inline
+    def ElasticEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ElasticEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/Tween", "Easings.Linear")
-    @js.native
-    def Linear(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def ElasticEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ElasticEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/Tween", "Easings.StrongEaseIn")
-    @js.native
-    def StrongEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def Linear(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Linear")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/Tween", "Easings.StrongEaseInOut")
-    @js.native
-    def StrongEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def StrongEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("StrongEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/Tween", "Easings.StrongEaseOut")
-    @js.native
-    def StrongEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
+    @scala.inline
+    def StrongEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("StrongEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def StrongEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("StrongEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("konva/types/Tween", "Tween")
@@ -136,16 +123,17 @@ object tweenMod {
     def tweens_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tweens")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait TweenConfig extends NodeConfig {
+  trait TweenConfig
+    extends StObject
+       with NodeConfig {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var node: Node[NodeConfig] = js.native
+    var node: Node[NodeConfig]
     
-    var onFinish: js.UndefOr[js.Function] = js.native
+    var onFinish: js.UndefOr[js.Function] = js.undefined
     
-    var onUpdate: js.UndefOr[js.Function] = js.native
+    var onUpdate: js.UndefOr[js.Function] = js.undefined
   }
   object TweenConfig {
     
@@ -181,76 +169,75 @@ object tweenMod {
     }
   }
   
-  @js.native
   trait TweenEngine extends StObject {
     
-    var _change: Double = js.native
+    var _change: Double
     
-    var _finish: Double = js.native
+    var _finish: Double
     
-    var _pos: Double = js.native
+    var _pos: Double
     
-    var _position: Double = js.native
+    var _position: Double
     
-    var _startTime: Double = js.native
+    var _startTime: Double
     
-    var _time: Double = js.native
+    var _time: Double
     
-    var begin: Double = js.native
+    var begin: Double
     
-    var duration: Double = js.native
+    var duration: Double
     
-    def finish(): Unit = js.native
+    def finish(): Unit
     
-    def fire(str: js.Any): Unit = js.native
+    def fire(str: js.Any): Unit
     
-    var func: js.Function = js.native
+    var func: js.Function
     
-    def getPosition(t: js.Any): js.Any = js.native
+    def getPosition(t: js.Any): js.Any
     
-    def getTime(): Double = js.native
+    def getTime(): Double
     
-    def getTimer(): Double = js.native
+    def getTimer(): Double
     
-    def onEnterFrame(): Unit = js.native
+    def onEnterFrame(): Unit
     
-    var onFinish: js.Function = js.native
+    var onFinish: js.Function
     
-    var onPause: js.Function = js.native
+    var onPause: js.Function
     
-    var onPlay: js.Function = js.native
+    var onPlay: js.Function
     
-    var onReset: js.Function = js.native
+    var onReset: js.Function
     
-    var onReverse: js.Function = js.native
+    var onReverse: js.Function
     
-    var onUpdate: js.Function = js.native
+    var onUpdate: js.Function
     
-    def pause(): Unit = js.native
+    def pause(): Unit
     
-    def play(): Unit = js.native
+    def play(): Unit
     
-    var prevPos: Double = js.native
+    var prevPos: Double
     
-    var prop: String = js.native
+    var prop: String
     
-    var propFunc: js.Function = js.native
+    var propFunc: js.Function
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def reverse(): Unit = js.native
+    def reverse(): Unit
     
-    def seek(t: js.Any): Unit = js.native
+    def seek(t: js.Any): Unit
     
-    def setPosition(p: js.Any): Unit = js.native
+    def setPosition(p: js.Any): Unit
     
-    def setTime(t: js.Any): Unit = js.native
+    def setTime(t: js.Any): Unit
     
-    var state: Double = js.native
+    var state: Double
     
-    def update(): Unit = js.native
+    def update(): Unit
     
-    var yoyo: Boolean = js.native
+    var yoyo: Boolean
   }
   object TweenEngine {
     

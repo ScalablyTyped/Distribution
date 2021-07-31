@@ -3,21 +3,19 @@ package typings.styledComponents.styledComponentsMod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyleSheetManagerProps extends StObject {
   
-  var disableCSSOMInjection: js.UndefOr[Boolean] = js.native
+  var disableCSSOMInjection: js.UndefOr[Boolean] = js.undefined
   
-  var disableVendorPrefixes: js.UndefOr[Boolean] = js.native
+  var disableVendorPrefixes: js.UndefOr[Boolean] = js.undefined
   
-  var sheet: js.UndefOr[ServerStyleSheet] = js.native
+  var sheet: js.UndefOr[ServerStyleSheet] = js.undefined
   
-  var stylisPlugins: js.UndefOr[js.Array[StylisPlugin]] = js.native
+  var stylisPlugins: js.UndefOr[js.Array[StylisPlugin]] = js.undefined
   
-  var target: js.UndefOr[HTMLElement] = js.native
+  var target: js.UndefOr[HTMLElement] = js.undefined
 }
 object StyleSheetManagerProps {
   

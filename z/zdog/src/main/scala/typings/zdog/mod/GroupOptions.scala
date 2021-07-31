@@ -2,18 +2,18 @@ package typings.zdog.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GroupOptions extends AnchorOptions {
+trait GroupOptions
+  extends StObject
+     with AnchorOptions {
   
   /**
     * Updates the rendering order of the group’s child items.
     * @default false
     * @see {@link https://zzz.dog/api#group-updatesort Zdog API}
     */
-  val updateSort: js.UndefOr[Boolean] = js.native
+  val updateSort: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shows or hides group, including all child items in the group.
@@ -21,7 +21,7 @@ trait GroupOptions extends AnchorOptions {
     * @default true
     * @see {@link https://zzz.dog/api#group-visible Zdog API}
     */
-  val visible: js.UndefOr[Boolean] = js.native
+  val visible: js.UndefOr[Boolean] = js.undefined
 }
 object GroupOptions {
   

@@ -9,7 +9,6 @@ import typings.semanticUiReact.genericMod.SemanticShorthandCollection
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object feedExtraMod extends Shortcut {
@@ -18,9 +17,9 @@ object feedExtraMod extends Shortcut {
   @js.native
   val default: StatelessComponent[FeedExtraProps] = js.native
   
-  @js.native
   trait FeedExtraProps
-    extends StrictFeedExtraProps
+    extends StObject
+       with StrictFeedExtraProps
        with /* key */ StringDictionary[js.Any]
   object FeedExtraProps {
     
@@ -31,26 +30,25 @@ object feedExtraMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictFeedExtraProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** An event can contain additional information like a set of images. */
-    var images: js.UndefOr[Boolean | js.Array[SemanticShorthandCollection[HtmlImageProps]]] = js.native
+    var images: js.UndefOr[Boolean | js.Array[SemanticShorthandCollection[HtmlImageProps]]] = js.undefined
     
     /** An event can contain additional text information. */
-    var text: js.UndefOr[Boolean] = js.native
+    var text: js.UndefOr[Boolean] = js.undefined
   }
   object StrictFeedExtraProps {
     

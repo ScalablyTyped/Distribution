@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRetentionConfigurationResponse extends StObject {
   
   /**
     * Returns a retention configuration object.
     */
-  var RetentionConfiguration: js.UndefOr[typings.awsSdk.configserviceMod.RetentionConfiguration] = js.native
+  var RetentionConfiguration: js.UndefOr[typings.awsSdk.configserviceMod.RetentionConfiguration] = js.undefined
 }
 object PutRetentionConfigurationResponse {
   

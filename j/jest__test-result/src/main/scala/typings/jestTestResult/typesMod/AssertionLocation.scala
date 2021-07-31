@@ -2,15 +2,13 @@ package typings.jestTestResult.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssertionLocation extends StObject {
   
-  var fullName: String = js.native
+  var fullName: String
   
-  var path: String = js.native
+  var path: String
 }
 object AssertionLocation {
   

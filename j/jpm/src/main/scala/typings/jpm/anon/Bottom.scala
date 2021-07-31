@@ -3,19 +3,19 @@ package typings.jpm.anon
 import typings.jpm.panelMod.PanelPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Bottom extends PanelPosition {
+trait Bottom
+  extends StObject
+     with PanelPosition {
   
-  var bottom: js.UndefOr[Double] = js.native
+  var bottom: js.UndefOr[Double] = js.undefined
   
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
-  var right: js.UndefOr[Double] = js.native
+  var right: js.UndefOr[Double] = js.undefined
   
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object Bottom {
   

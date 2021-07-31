@@ -2,27 +2,25 @@ package typings.firebaseDatabase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Domain extends StObject {
   
-  var domain: String = js.native
+  var domain: String
   
-  var host: String = js.native
+  var host: String
   
-  var namespace: String = js.native
+  var namespace: String
   
-  var pathString: String = js.native
+  var pathString: String
   
-  var port: Double = js.native
+  var port: Double
   
-  var scheme: String = js.native
+  var scheme: String
   
-  var secure: Boolean = js.native
+  var secure: Boolean
   
-  var subdomain: String = js.native
+  var subdomain: String
 }
 object Domain {
   

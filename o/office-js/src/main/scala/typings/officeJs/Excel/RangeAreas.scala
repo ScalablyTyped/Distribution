@@ -36,7 +36,6 @@ import typings.officeJs.officeJsStrings.Values
 import typings.officeJs.officeJsStrings.Visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -47,7 +46,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait RangeAreas extends ClientObject {
+trait RangeAreas
+  extends StObject
+     with ClientObject {
   
   /**
     *
@@ -163,23 +164,13 @@ trait RangeAreas extends ClientObject {
     transpose: js.UndefOr[Boolean]
   ): Unit = js.native
   def copyFrom(sourceRange: String): Unit = js.native
-  def copyFrom(
-    sourceRange: String,
-    copyType: js.UndefOr[scala.Nothing],
-    skipBlanks: js.UndefOr[scala.Nothing],
-    transpose: Boolean
-  ): Unit = js.native
-  def copyFrom(sourceRange: String, copyType: js.UndefOr[scala.Nothing], skipBlanks: Boolean): Unit = js.native
-  def copyFrom(sourceRange: String, copyType: js.UndefOr[scala.Nothing], skipBlanks: Boolean, transpose: Boolean): Unit = js.native
+  def copyFrom(sourceRange: String, copyType: Unit, skipBlanks: Boolean): Unit = js.native
+  def copyFrom(sourceRange: String, copyType: Unit, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
+  def copyFrom(sourceRange: String, copyType: Unit, skipBlanks: Unit, transpose: Boolean): Unit = js.native
   def copyFrom(sourceRange: String, copyType: RangeCopyType): Unit = js.native
-  def copyFrom(
-    sourceRange: String,
-    copyType: RangeCopyType,
-    skipBlanks: js.UndefOr[scala.Nothing],
-    transpose: Boolean
-  ): Unit = js.native
   def copyFrom(sourceRange: String, copyType: RangeCopyType, skipBlanks: Boolean): Unit = js.native
   def copyFrom(sourceRange: String, copyType: RangeCopyType, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
+  def copyFrom(sourceRange: String, copyType: RangeCopyType, skipBlanks: Unit, transpose: Boolean): Unit = js.native
   /**
     * Copies cell data or formatting from the source range or RangeAreas to the current RangeAreas.
     The destination rangeAreas can be a different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
@@ -193,45 +184,20 @@ trait RangeAreas extends ClientObject {
     */
   def copyFrom(sourceRange: Range): Unit = js.native
   def copyFrom(sourceRange: RangeAreas): Unit = js.native
-  def copyFrom(
-    sourceRange: RangeAreas,
-    copyType: js.UndefOr[scala.Nothing],
-    skipBlanks: js.UndefOr[scala.Nothing],
-    transpose: Boolean
-  ): Unit = js.native
-  def copyFrom(sourceRange: RangeAreas, copyType: js.UndefOr[scala.Nothing], skipBlanks: Boolean): Unit = js.native
-  def copyFrom(
-    sourceRange: RangeAreas,
-    copyType: js.UndefOr[scala.Nothing],
-    skipBlanks: Boolean,
-    transpose: Boolean
-  ): Unit = js.native
+  def copyFrom(sourceRange: RangeAreas, copyType: Unit, skipBlanks: Boolean): Unit = js.native
+  def copyFrom(sourceRange: RangeAreas, copyType: Unit, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
+  def copyFrom(sourceRange: RangeAreas, copyType: Unit, skipBlanks: Unit, transpose: Boolean): Unit = js.native
   def copyFrom(sourceRange: RangeAreas, copyType: RangeCopyType): Unit = js.native
-  def copyFrom(
-    sourceRange: RangeAreas,
-    copyType: RangeCopyType,
-    skipBlanks: js.UndefOr[scala.Nothing],
-    transpose: Boolean
-  ): Unit = js.native
   def copyFrom(sourceRange: RangeAreas, copyType: RangeCopyType, skipBlanks: Boolean): Unit = js.native
   def copyFrom(sourceRange: RangeAreas, copyType: RangeCopyType, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
-  def copyFrom(
-    sourceRange: Range,
-    copyType: js.UndefOr[scala.Nothing],
-    skipBlanks: js.UndefOr[scala.Nothing],
-    transpose: Boolean
-  ): Unit = js.native
-  def copyFrom(sourceRange: Range, copyType: js.UndefOr[scala.Nothing], skipBlanks: Boolean): Unit = js.native
-  def copyFrom(sourceRange: Range, copyType: js.UndefOr[scala.Nothing], skipBlanks: Boolean, transpose: Boolean): Unit = js.native
+  def copyFrom(sourceRange: RangeAreas, copyType: RangeCopyType, skipBlanks: Unit, transpose: Boolean): Unit = js.native
+  def copyFrom(sourceRange: Range, copyType: Unit, skipBlanks: Boolean): Unit = js.native
+  def copyFrom(sourceRange: Range, copyType: Unit, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
+  def copyFrom(sourceRange: Range, copyType: Unit, skipBlanks: Unit, transpose: Boolean): Unit = js.native
   def copyFrom(sourceRange: Range, copyType: RangeCopyType): Unit = js.native
-  def copyFrom(
-    sourceRange: Range,
-    copyType: RangeCopyType,
-    skipBlanks: js.UndefOr[scala.Nothing],
-    transpose: Boolean
-  ): Unit = js.native
   def copyFrom(sourceRange: Range, copyType: RangeCopyType, skipBlanks: Boolean): Unit = js.native
   def copyFrom(sourceRange: Range, copyType: RangeCopyType, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
+  def copyFrom(sourceRange: Range, copyType: RangeCopyType, skipBlanks: Unit, transpose: Boolean): Unit = js.native
   
   /**
     *

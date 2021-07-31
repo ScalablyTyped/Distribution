@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,37 +19,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XPrinter
   * @see XInfoPrinter
   */
-@js.native
-trait XPrinterPropertySet extends XPropertySet {
+trait XPrinterPropertySet
+  extends StObject
+     with XPropertySet {
   
   /** returns a binary encoded version of the printer setup. */
-  var BinarySetup: SafeArray[Double] = js.native
+  var BinarySetup: SafeArray[Double]
   
   /** returns descriptions of all available printer forms. */
-  val FormDescriptions: SafeArray[String] = js.native
+  val FormDescriptions: SafeArray[String]
   
   /** returns a binary encoded version of the printer setup. */
-  def getBinarySetup(): SafeArray[Double] = js.native
+  def getBinarySetup(): SafeArray[Double]
   
   /** returns descriptions of all available printer forms. */
-  def getFormDescriptions(): SafeArray[String] = js.native
+  def getFormDescriptions(): SafeArray[String]
   
   /**
     * sets the form that should be used.
     *
     * Indirectly a printer is selected.
     */
-  def selectForm(aFormDescription: String): Unit = js.native
+  def selectForm(aFormDescription: String): Unit
   
   /**
     * sets the data specific to the printer driver.
     *
     * Get this data from the info printer and set the data to the printer.
     */
-  def setBinarySetup(data: SeqEquiv[Double]): Unit = js.native
+  def setBinarySetup(data: SeqEquiv[Double]): Unit
   
   /** sets the orientation. */
-  def setHorizontal(bHorizontal: Boolean): Unit = js.native
+  def setHorizontal(bHorizontal: Boolean): Unit
 }
 object XPrinterPropertySet {
   

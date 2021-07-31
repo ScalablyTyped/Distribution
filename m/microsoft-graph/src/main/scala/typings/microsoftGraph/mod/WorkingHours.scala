@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkingHours extends StObject {
   
   // The days of the week on which the user works.
-  var daysOfWeek: js.UndefOr[NullableOption[js.Array[DayOfWeek]]] = js.native
+  var daysOfWeek: js.UndefOr[NullableOption[js.Array[DayOfWeek]]] = js.undefined
   
   // The time of the day that the user stops working.
-  var endTime: js.UndefOr[NullableOption[String]] = js.native
+  var endTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The time of the day that the user starts working.
-  var startTime: js.UndefOr[NullableOption[String]] = js.native
+  var startTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The time zone to which the working hours apply.
-  var timeZone: js.UndefOr[NullableOption[TimeZoneBase]] = js.native
+  var timeZone: js.UndefOr[NullableOption[TimeZoneBase]] = js.undefined
 }
 object WorkingHours {
   

@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -52,9 +51,8 @@ object StaticImageViewer {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.StaticImageViewer.create")
-  @js.native
-  def create(model: IModel): StaticImageViewer = js.native
+  @scala.inline
+  def create(model: IModel): StaticImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[StaticImageViewer]
   
   /**
     * Creates and returns a new StaticImageViewer instance in the SDK and on the server.
@@ -62,9 +60,8 @@ object StaticImageViewer {
     * of the parent DocumentTemplate element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.StaticImageViewer.createInDocumentTemplateUnderToplevels")
-  @js.native
-  def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): StaticImageViewer = js.native
+  @scala.inline
+  def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): StaticImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateUnderToplevels")(container.asInstanceOf[js.Any]).asInstanceOf[StaticImageViewer]
   
   /**
     * Creates and returns a new StaticImageViewer instance in the SDK and on the server.
@@ -72,9 +69,8 @@ object StaticImageViewer {
     * of the parent DropZone element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.StaticImageViewer.createInDropZoneUnderWidget")
-  @js.native
-  def createInDropZoneUnderWidget(container: DropZone): StaticImageViewer = js.native
+  @scala.inline
+  def createInDropZoneUnderWidget(container: DropZone): StaticImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[StaticImageViewer]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.StaticImageViewer.structureTypeName")

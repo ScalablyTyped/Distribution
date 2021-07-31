@@ -2,38 +2,36 @@ package typings.webix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait editors extends StObject {
   
   @JSName("$popup")
-  var $popup: js.Any = js.native
+  var $popup: js.Any
   
-  var checkbox: String = js.native
+  var checkbox: String
   
-  var color: String = js.native
+  var color: String
   
-  var combo: String = js.native
+  var combo: String
   
-  var date: String = js.native
+  var date: String
   
-  var `inline-checkbox`: String = js.native
+  var `inline-checkbox`: String
   
-  var `inline-text`: String = js.native
+  var `inline-text`: String
   
-  var multiselect: String = js.native
+  var multiselect: String
   
-  var password: String = js.native
+  var password: String
   
-  var popup: String = js.native
+  var popup: String
   
-  var richselect: String = js.native
+  var richselect: String
   
-  var select: String = js.native
+  var select: String
   
-  var text: String = js.native
+  var text: String
 }
 object editors {
   

@@ -2,25 +2,23 @@ package typings.hystrixjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CirctuiBreakerConfig extends StObject {
   
-  var circuitBreakerErrorThresholdPercentage: Double = js.native
+  var circuitBreakerErrorThresholdPercentage: Double
   
-  var circuitBreakerForceClosed: Boolean = js.native
+  var circuitBreakerForceClosed: Boolean
   
-  var circuitBreakerForceOpened: Boolean = js.native
+  var circuitBreakerForceOpened: Boolean
   
-  var circuitBreakerRequestVolumeThreshold: Double = js.native
+  var circuitBreakerRequestVolumeThreshold: Double
   
-  var circuitBreakerSleepWindowInMilliseconds: Double = js.native
+  var circuitBreakerSleepWindowInMilliseconds: Double
   
-  var commandGroup: String = js.native
+  var commandGroup: String
   
-  var commandKey: String = js.native
+  var commandKey: String
 }
 object CirctuiBreakerConfig {
   

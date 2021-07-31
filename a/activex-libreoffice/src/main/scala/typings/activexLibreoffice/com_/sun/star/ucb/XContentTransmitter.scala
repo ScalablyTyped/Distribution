@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,10 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see
   * @version 1.0
   */
-@js.native
-trait XContentTransmitter extends XInterface {
+trait XContentTransmitter
+  extends StObject
+     with XInterface {
   
-  def transmit(Source: String, Destination: String, Flags: Double): Unit = js.native
+  def transmit(Source: String, Destination: String, Flags: Double): Unit
 }
 object XContentTransmitter {
   

@@ -3,15 +3,13 @@ package typings.reactNative.mod
 import typings.reactNative.anon.Endcursor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CameraRollAssetInfo extends StObject {
   
-  var edges: js.Array[CameraRollEdgeInfo] = js.native
+  var edges: js.Array[CameraRollEdgeInfo]
   
-  var page_info: Endcursor = js.native
+  var page_info: Endcursor
 }
 object CameraRollAssetInfo {
   

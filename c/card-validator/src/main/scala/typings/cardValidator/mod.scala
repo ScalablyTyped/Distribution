@@ -9,7 +9,6 @@ import typings.creditCardType.typesMod.CreditCardType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,21 +20,18 @@ object mod {
   @JSImport("card-validator", "cardholderName")
   @js.native
   def cardholderName: js.Function1[/* value */ String | js.Any, Verification] = js.native
-  @JSImport("card-validator", "cardholderName")
-  @js.native
-  def cardholderName(value: String): Verification = js.native
-  @JSImport("card-validator", "cardholderName")
-  @js.native
-  def cardholderName(value: js.Any): Verification = js.native
+  @scala.inline
+  def cardholderName(value: String): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("cardholderName")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
+  @scala.inline
+  def cardholderName(value: js.Any): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("cardholderName")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
   @scala.inline
   def cardholderName_=(x: js.Function1[/* value */ String | js.Any, Verification]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cardholderName")(x.asInstanceOf[js.Any])
   
   @JSImport("card-validator", "creditCardType")
   @js.native
   def creditCardType: js.Function1[/* cardNumber */ String, js.Array[CreditCardType]] = js.native
-  @JSImport("card-validator", "creditCardType")
-  @js.native
-  def creditCardType(cardNumber: String): js.Array[CreditCardType] = js.native
+  @scala.inline
+  def creditCardType(cardNumber: String): js.Array[CreditCardType] = ^.asInstanceOf[js.Dynamic].applyDynamic("creditCardType")(cardNumber.asInstanceOf[js.Any]).asInstanceOf[js.Array[CreditCardType]]
   @scala.inline
   def creditCardType_=(x: js.Function1[/* cardNumber */ String, js.Array[CreditCardType]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("creditCardType")(x.asInstanceOf[js.Any])
   
@@ -46,24 +42,18 @@ object mod {
     /* maxLength */ js.UndefOr[Double | js.Array[Double]], 
     Verification
   ] = js.native
-  @JSImport("card-validator", "cvv")
-  @js.native
-  def cvv(value: String): Verification = js.native
-  @JSImport("card-validator", "cvv")
-  @js.native
-  def cvv(value: String, maxLength: js.Array[Double]): Verification = js.native
-  @JSImport("card-validator", "cvv")
-  @js.native
-  def cvv(value: String, maxLength: Double): Verification = js.native
-  @JSImport("card-validator", "cvv")
-  @js.native
-  def cvv(value: js.Any): Verification = js.native
-  @JSImport("card-validator", "cvv")
-  @js.native
-  def cvv(value: js.Any, maxLength: js.Array[Double]): Verification = js.native
-  @JSImport("card-validator", "cvv")
-  @js.native
-  def cvv(value: js.Any, maxLength: Double): Verification = js.native
+  @scala.inline
+  def cvv(value: String): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
+  @scala.inline
+  def cvv(value: String, maxLength: js.Array[Double]): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Verification]
+  @scala.inline
+  def cvv(value: String, maxLength: Double): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Verification]
+  @scala.inline
+  def cvv(value: js.Any): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
+  @scala.inline
+  def cvv(value: js.Any, maxLength: js.Array[Double]): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Verification]
+  @scala.inline
+  def cvv(value: js.Any, maxLength: Double): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("cvv")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Verification]
   @scala.inline
   def cvv_=(
     x: js.Function2[
@@ -80,24 +70,18 @@ object mod {
     /* maxElapsedYear */ js.UndefOr[Double], 
     ExpirationDateVerification
   ] = js.native
-  @JSImport("card-validator", "expirationDate")
-  @js.native
-  def expirationDate(value: String): ExpirationDateVerification = js.native
-  @JSImport("card-validator", "expirationDate")
-  @js.native
-  def expirationDate(value: String, maxElapsedYear: Double): ExpirationDateVerification = js.native
-  @JSImport("card-validator", "expirationDate")
-  @js.native
-  def expirationDate(value: js.Any): ExpirationDateVerification = js.native
-  @JSImport("card-validator", "expirationDate")
-  @js.native
-  def expirationDate(value: js.Any, maxElapsedYear: Double): ExpirationDateVerification = js.native
-  @JSImport("card-validator", "expirationDate")
-  @js.native
-  def expirationDate(value: Record[String, String | Double]): ExpirationDateVerification = js.native
-  @JSImport("card-validator", "expirationDate")
-  @js.native
-  def expirationDate(value: Record[String, String | Double], maxElapsedYear: Double): ExpirationDateVerification = js.native
+  @scala.inline
+  def expirationDate(value: String): ExpirationDateVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationDateVerification]
+  @scala.inline
+  def expirationDate(value: String, maxElapsedYear: Double): ExpirationDateVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationDateVerification]
+  @scala.inline
+  def expirationDate(value: js.Any): ExpirationDateVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationDateVerification]
+  @scala.inline
+  def expirationDate(value: js.Any, maxElapsedYear: Double): ExpirationDateVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationDateVerification]
+  @scala.inline
+  def expirationDate(value: Record[String, String | Double]): ExpirationDateVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationDateVerification]
+  @scala.inline
+  def expirationDate(value: Record[String, String | Double], maxElapsedYear: Double): ExpirationDateVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationDate")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationDateVerification]
   @scala.inline
   def expirationDate_=(
     x: js.Function2[
@@ -110,12 +94,10 @@ object mod {
   @JSImport("card-validator", "expirationMonth")
   @js.native
   def expirationMonth: js.Function1[/* value */ String | js.Any, ExpirationMonthVerification] = js.native
-  @JSImport("card-validator", "expirationMonth")
-  @js.native
-  def expirationMonth(value: String): ExpirationMonthVerification = js.native
-  @JSImport("card-validator", "expirationMonth")
-  @js.native
-  def expirationMonth(value: js.Any): ExpirationMonthVerification = js.native
+  @scala.inline
+  def expirationMonth(value: String): ExpirationMonthVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationMonth")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationMonthVerification]
+  @scala.inline
+  def expirationMonth(value: js.Any): ExpirationMonthVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationMonth")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationMonthVerification]
   @scala.inline
   def expirationMonth_=(x: js.Function1[/* value */ String | js.Any, ExpirationMonthVerification]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expirationMonth")(x.asInstanceOf[js.Any])
   
@@ -126,18 +108,14 @@ object mod {
     /* maxElapsedYear */ js.UndefOr[Double], 
     ExpirationYearVerification
   ] = js.native
-  @JSImport("card-validator", "expirationYear")
-  @js.native
-  def expirationYear(value: String): ExpirationYearVerification = js.native
-  @JSImport("card-validator", "expirationYear")
-  @js.native
-  def expirationYear(value: String, maxElapsedYear: Double): ExpirationYearVerification = js.native
-  @JSImport("card-validator", "expirationYear")
-  @js.native
-  def expirationYear(value: js.Any): ExpirationYearVerification = js.native
-  @JSImport("card-validator", "expirationYear")
-  @js.native
-  def expirationYear(value: js.Any, maxElapsedYear: Double): ExpirationYearVerification = js.native
+  @scala.inline
+  def expirationYear(value: String): ExpirationYearVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationYearVerification]
+  @scala.inline
+  def expirationYear(value: String, maxElapsedYear: Double): ExpirationYearVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationYearVerification]
+  @scala.inline
+  def expirationYear(value: js.Any): ExpirationYearVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationYearVerification]
+  @scala.inline
+  def expirationYear(value: js.Any, maxElapsedYear: Double): ExpirationYearVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("expirationYear")(value.asInstanceOf[js.Any], maxElapsedYear.asInstanceOf[js.Any])).asInstanceOf[ExpirationYearVerification]
   @scala.inline
   def expirationYear_=(
     x: js.Function2[
@@ -160,18 +138,14 @@ object mod {
     /* options */ js.UndefOr[PostalCodeOptions], 
     Verification
   ] = js.native
-  @JSImport("card-validator", "postalCode")
-  @js.native
-  def postalCode(value: String): Verification = js.native
-  @JSImport("card-validator", "postalCode")
-  @js.native
-  def postalCode(value: String, options: PostalCodeOptions): Verification = js.native
-  @JSImport("card-validator", "postalCode")
-  @js.native
-  def postalCode(value: js.Any): Verification = js.native
-  @JSImport("card-validator", "postalCode")
-  @js.native
-  def postalCode(value: js.Any, options: PostalCodeOptions): Verification = js.native
+  @scala.inline
+  def postalCode(value: String): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
+  @scala.inline
+  def postalCode(value: String, options: PostalCodeOptions): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Verification]
+  @scala.inline
+  def postalCode(value: js.Any): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
+  @scala.inline
+  def postalCode(value: js.Any, options: PostalCodeOptions): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Verification]
   @scala.inline
   def postalCode_=(
     x: js.Function2[

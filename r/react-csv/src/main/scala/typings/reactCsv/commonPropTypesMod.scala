@@ -4,7 +4,6 @@ import typings.react.mod.MouseEventHandler
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonPropTypesMod {
@@ -15,24 +14,23 @@ object commonPropTypesMod {
     Unit
   ]
   
-  @js.native
   trait CommonPropTypes extends StObject {
     
-    var asyncOnClick: js.UndefOr[Boolean] = js.native
+    var asyncOnClick: js.UndefOr[Boolean] = js.undefined
     
-    var data: String | Data = js.native
+    var data: String | Data
     
-    var enclosingCharacter: js.UndefOr[String] = js.native
+    var enclosingCharacter: js.UndefOr[String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
-    var onClick: js.UndefOr[SyncClickHandler | AsyncClickHandler] = js.native
+    var onClick: js.UndefOr[SyncClickHandler | AsyncClickHandler] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var uFEFF: js.UndefOr[Boolean] = js.native
+    var uFEFF: js.UndefOr[Boolean] = js.undefined
   }
   object CommonPropTypes {
     
@@ -110,12 +108,11 @@ object commonPropTypesMod {
   
   type Headers = js.Array[LabelKeyObject | String]
   
-  @js.native
   trait LabelKeyObject extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var label: String = js.native
+    var label: String
   }
   object LabelKeyObject {
     

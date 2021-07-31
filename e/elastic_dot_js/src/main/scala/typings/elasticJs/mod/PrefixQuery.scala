@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "PrefixQuery")
 @js.native
-class PrefixQuery protected () extends Query {
+class PrefixQuery protected ()
+  extends StObject
+     with Query {
   /*
     Matches documents containing the specified un-analyzed prefix.
     */

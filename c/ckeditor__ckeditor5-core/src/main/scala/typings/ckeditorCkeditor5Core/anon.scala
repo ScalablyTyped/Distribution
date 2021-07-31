@@ -7,15 +7,13 @@ import typings.ckeditorCkeditor5Utils.mod.EventInfo
 import typings.ckeditorCkeditor5Utils.mod.PriorityString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var priority: PriorityString | Double = js.native
+    var priority: PriorityString | Double
   }
   object `0` {
     
@@ -33,15 +31,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Destroy extends StObject {
     
-    def destroy(): Unit | Null | js.Promise[_] = js.native
+    def destroy(): Unit | Null | js.Promise[js.Any]
   }
   object Destroy {
     
     @scala.inline
-    def apply(destroy: () => Unit | Null | js.Promise[_]): Destroy = {
+    def apply(destroy: () => Unit | Null | js.Promise[js.Any]): Destroy = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
       __obj.asInstanceOf[Destroy]
     }
@@ -50,16 +47,15 @@ object anon {
     implicit class DestroyMutableBuilder[Self <: Destroy] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDestroy(value: () => Unit | Null | js.Promise[_]): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      def setDestroy(value: () => Unit | Null | js.Promise[js.Any]): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait Items extends StObject {
     
-    var items: js.Array[String] = js.native
+    var items: js.Array[String]
     
-    var viewportTopOffset: Double = js.native
+    var viewportTopOffset: Double
   }
   object Items {
     
@@ -120,26 +116,25 @@ object anon {
     def set(name: js.Object): Unit = js.native
     
     def stopDelegating(): Unit = js.native
-    def stopDelegating(event: js.UndefOr[scala.Nothing], emitter: Emitter): Unit = js.native
     def stopDelegating(event: String): Unit = js.native
     def stopDelegating(event: String, emitter: Emitter): Unit = js.native
+    def stopDelegating(event: Unit, emitter: Emitter): Unit = js.native
     
     def stopListening(): Unit = js.native
-    def stopListening(emitter: js.UndefOr[scala.Nothing], event: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
-    def stopListening(emitter: js.UndefOr[scala.Nothing], event: String): Unit = js.native
-    def stopListening(emitter: js.UndefOr[scala.Nothing], event: String, callback: js.Function): Unit = js.native
+    def stopListening(emitter: Unit, event: String): Unit = js.native
+    def stopListening(emitter: Unit, event: String, callback: js.Function): Unit = js.native
+    def stopListening(emitter: Unit, event: Unit, callback: js.Function): Unit = js.native
     def stopListening(emitter: Emitter): Unit = js.native
-    def stopListening(emitter: Emitter, event: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
     def stopListening(emitter: Emitter, event: String): Unit = js.native
     def stopListening(emitter: Emitter, event: String, callback: js.Function): Unit = js.native
+    def stopListening(emitter: Emitter, event: Unit, callback: js.Function): Unit = js.native
     
     def unbind(unbindProperties: String*): Unit = js.native
   }
   
-  @js.native
   trait Priority extends StObject {
     
-    var priority: js.UndefOr[PriorityString | Double] = js.native
+    var priority: js.UndefOr[PriorityString | Double] = js.undefined
   }
   object Priority {
     

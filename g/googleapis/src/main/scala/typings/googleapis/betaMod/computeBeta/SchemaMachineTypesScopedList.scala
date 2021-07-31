@@ -3,22 +3,20 @@ package typings.googleapis.betaMod.computeBeta
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaMachineTypesScopedList extends StObject {
   
   /**
     * [Output Only] A list of machine types contained in this scope.
     */
-  var machineTypes: js.UndefOr[js.Array[SchemaMachineType]] = js.native
+  var machineTypes: js.UndefOr[js.Array[SchemaMachineType]] = js.undefined
   
   /**
     * [Output Only] An informational warning that appears when the machine
     * types list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaMachineTypesScopedList {
   

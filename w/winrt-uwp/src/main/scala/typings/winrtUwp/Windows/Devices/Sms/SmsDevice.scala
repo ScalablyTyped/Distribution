@@ -7,7 +7,6 @@ import typings.winrtUwp.winrtUwpStrings.smsdevicestatuschanged
 import typings.winrtUwp.winrtUwpStrings.smsmessagereceived
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports the operation of a mobile broadband SMS device. */
@@ -17,7 +16,7 @@ trait SmsDevice extends StObject {
   /** Returns the phone number associated with the SMS device. The phone number can be used to associate incoming messages with the account and possibly an external storage mechanism such as an account inbox. */
   var accountPhoneNumber: String = js.native
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_smsdevicestatuschanged(`type`: smsdevicestatuschanged, listener: SmsDeviceStatusChangedEventHandler): Unit = js.native
   @JSName("addEventListener")
@@ -46,12 +45,12 @@ trait SmsDevice extends StObject {
   var onsmsdevicestatuschanged_Original: SmsDeviceStatusChangedEventHandler = js.native
   
   /** Sets an event handler to be called when the device receives a new text message. */
-  def onsmsmessagereceived(ev: SmsMessageReceivedEventArgs with WinRTEvent[SmsDevice]): Unit = js.native
+  def onsmsmessagereceived(ev: SmsMessageReceivedEventArgs & WinRTEvent[SmsDevice]): Unit = js.native
   /** Sets an event handler to be called when the device receives a new text message. */
   @JSName("onsmsmessagereceived")
   var onsmsmessagereceived_Original: SmsMessageReceivedEventHandler = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_smsdevicestatuschanged(`type`: smsdevicestatuschanged, listener: SmsDeviceStatusChangedEventHandler): Unit = js.native
   @JSName("removeEventListener")
@@ -62,5 +61,5 @@ trait SmsDevice extends StObject {
     * @param message A reference to an ISmsMessage object. The message can be in text or binary format.
     * @return The message operation object.
     */
-  def sendMessageAsync(message: ISmsMessage): IPromiseWithOperation[_, SendSmsMessageOperation] = js.native
+  def sendMessageAsync(message: ISmsMessage): IPromiseWithOperation[js.Any, SendSmsMessageOperation] = js.native
 }

@@ -1,18 +1,20 @@
 package typings.wonderJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder.js/dist/es2015", "EventNameHandler")
 @js.native
 class EventNameHandler ()
   extends typings.wonderJs.eventNameHandlerMod.EventNameHandler
-
 /* static members */
-@JSImport("wonder.js/dist/es2015", "EventNameHandler")
-@js.native
-object EventNameHandler extends js.Object {
-  def handleEventName(domEventName: typings.wonderJs.eventNameHandlerMod.EEventName): js.Any = js.native
+object EventNameHandler {
+  
+  @JSImport("wonder.js/dist/es2015", "EventNameHandler")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def handleEventName(domEventName: typings.wonderJs.eventNameHandlerMod.EEventName): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEventName")(domEventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }
-

@@ -2,34 +2,32 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGGradientElement extends StObject {
   
   @JSName("MSHTML.SVGGradientElement_typekey")
-  var MSHTMLDotSVGGradientElement_typekey: SVGGradientElement = js.native
+  var MSHTMLDotSVGGradientElement_typekey: SVGGradientElement
   
-  val className: SVGAnimatedString = js.native
+  val className: SVGAnimatedString
   
-  val externalResourcesRequired: SVGAnimatedBoolean = js.native
+  val externalResourcesRequired: SVGAnimatedBoolean
   
-  var focusable: SVGAnimatedEnumeration = js.native
+  var focusable: SVGAnimatedEnumeration
   
-  var gradientTransform: SVGAnimatedTransformList = js.native
+  var gradientTransform: SVGAnimatedTransformList
   
-  var gradientUnits: SVGAnimatedEnumeration = js.native
+  var gradientUnits: SVGAnimatedEnumeration
   
-  val href: SVGAnimatedString = js.native
+  val href: SVGAnimatedString
   
-  var ownerSVGElement: ISVGSVGElement = js.native
+  var ownerSVGElement: ISVGSVGElement
   
-  var spreadMethod: SVGAnimatedEnumeration = js.native
+  var spreadMethod: SVGAnimatedEnumeration
   
-  var viewportElement: ISVGElement = js.native
+  var viewportElement: ISVGElement
   
-  var xmlbase: String = js.native
+  var xmlbase: String
 }
 object SVGGradientElement {
   

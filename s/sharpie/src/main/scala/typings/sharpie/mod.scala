@@ -12,7 +12,6 @@ import typings.sharpie.sharpieBooleans.`false`
 import typings.sharpie.sharpieBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,42 +19,37 @@ object mod {
   /**
     * A simple express middleware for resizing images using sharp and pipes.
     */
+  @scala.inline
+  def apply(defaults: SharpieOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply(defaults.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
+  
   @JSImport("sharpie", JSImport.Namespace)
   @js.native
-  def apply(defaults: SharpieOptions): RequestHandler[ParamsDictionary, _, _, ParsedQs] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sharpie", "formats")
   @js.native
   val formats: SharpieFormats = js.native
   
-  @JSImport("sharpie", "sharp")
-  @js.native
-  def sharp(): Sharp = js.native
-  @JSImport("sharpie", "sharp")
-  @js.native
-  def sharp(input: js.UndefOr[scala.Nothing], options: SharpOptions): Sharp = js.native
-  @JSImport("sharpie", "sharp")
-  @js.native
-  def sharp(input: String): Sharp = js.native
-  @JSImport("sharpie", "sharp")
-  @js.native
-  def sharp(input: String, options: SharpOptions): Sharp = js.native
-  @JSImport("sharpie", "sharp")
-  @js.native
-  def sharp(input: Buffer): Sharp = js.native
-  @JSImport("sharpie", "sharp")
-  @js.native
-  def sharp(input: Buffer, options: SharpOptions): Sharp = js.native
-  @JSImport("sharpie", "sharp")
-  @js.native
-  def sharp(options: SharpOptions): Sharp = js.native
+  @scala.inline
+  def sharp(): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")().asInstanceOf[Sharp]
+  @scala.inline
+  def sharp(input: String): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
+  @scala.inline
+  def sharp(input: String, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
+  @scala.inline
+  def sharp(input: Unit, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
+  @scala.inline
+  def sharp(input: Buffer): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
+  @scala.inline
+  def sharp(input: Buffer, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
+  @scala.inline
+  def sharp(options: SharpOptions): Sharp = ^.asInstanceOf[js.Dynamic].applyDynamic("sharp")(options.asInstanceOf[js.Any]).asInstanceOf[Sharp]
   
-  @js.native
   trait SharpieFormats extends StObject {
     
-    var dst: StringDictionary[`true`] = js.native
+    var dst: StringDictionary[`true`]
     
-    var src: StringDictionary[`true`] = js.native
+    var src: StringDictionary[`true`]
   }
   object SharpieFormats {
     
@@ -76,22 +70,21 @@ object mod {
     }
   }
   
-  @js.native
   trait SharpieOptions extends StObject {
     
     /** @default false */
-    var bg: js.UndefOr[String | Boolean] = js.native
+    var bg: js.UndefOr[String | Boolean] = js.undefined
     
     /** @default 'center' */
-    var crop: js.UndefOr[String] = js.native
+    var crop: js.UndefOr[String] = js.undefined
     
     /** @default false */
-    var fg: js.UndefOr[String | Boolean] = js.native
+    var fg: js.UndefOr[String | Boolean] = js.undefined
     
     /** @default false */
-    var flatten: js.UndefOr[Boolean] = js.native
+    var flatten: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * whitelist hostnames that sharpie can proxy
@@ -99,38 +92,38 @@ object mod {
       */
     var hostnames: js.UndefOr[
         `false` | js.Array[String] | StringDictionary[Boolean] | (js.Function1[/* hostname */ String, Boolean])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Since version 3.4 it is possible to use imagemagick to convert to ico file format
       */
-    var im: js.UndefOr[String] = js.native
+    var im: js.UndefOr[String] = js.undefined
     
     /** @default undefined */
-    var mean: js.UndefOr[String] = js.native
+    var mean: js.UndefOr[String] = js.undefined
     
     /** @default 'url' */
-    var param: js.UndefOr[String] = js.native
+    var param: js.UndefOr[String] = js.undefined
     
     /** @default 90 */
-    var q: js.UndefOr[Double] = js.native
+    var q: js.UndefOr[Double] = js.undefined
     
     /** @default 'xMinYMin' */
-    var ratio: js.UndefOr[String] = js.native
+    var ratio: js.UndefOr[String] = js.undefined
     
     /** @default 'w:2048,h:2048,max' */
-    var rs: js.UndefOr[String] = js.native
+    var rs: js.UndefOr[String] = js.undefined
     
-    var signs: js.UndefOr[Assignment] = js.native
+    var signs: js.UndefOr[Assignment] = js.undefined
     
     /**
       * the sizes of the favicon in ico format, separated by a comma
       * @defautl '64,32,16'
       */
-    var sizes: js.UndefOr[String] = js.native
+    var sizes: js.UndefOr[String] = js.undefined
     
     /** @default false */
-    var style: js.UndefOr[Boolean] = js.native
+    var style: js.UndefOr[Boolean] = js.undefined
   }
   object SharpieOptions {
     

@@ -4,55 +4,54 @@ import typings.copyfiles.copyfilesBooleans.`true`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(paths: js.Array[String], callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(paths: js.Array[String], options: Double, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(paths: js.Array[String], options: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("copyfiles", JSImport.Namespace)
   @js.native
-  def apply(paths: js.Array[String], callback: Callback): Unit = js.native
-  @JSImport("copyfiles", JSImport.Namespace)
-  @js.native
-  def apply(paths: js.Array[String], options: Double, callback: Callback): Unit = js.native
-  @JSImport("copyfiles", JSImport.Namespace)
-  @js.native
-  def apply(paths: js.Array[String], options: Options, callback: Callback): Unit = js.native
+  val ^ : js.Any = js.native
   
   type Callback = js.Function1[/* error */ js.UndefOr[Error], Unit]
   
-  @js.native
   trait Options extends StObject {
     
     /** include files & directories beginning with a dot (.) */
-    var all: js.UndefOr[Boolean] = js.native
+    var all: js.UndefOr[Boolean] = js.undefined
     
     /** throw error if nothing is copied */
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
     /** pattern or glob to exclude */
-    var exclude: js.UndefOr[String | js.Array[String]] = js.native
+    var exclude: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** flatten the output */
-    var flat: js.UndefOr[Boolean] = js.native
+    var flat: js.UndefOr[Boolean] = js.undefined
     
     /**
       * follow symbolink links
       * @default false
       */
-    var follow: js.UndefOr[Boolean] = js.native
+    var follow: js.UndefOr[Boolean] = js.undefined
     
     /** do not overwrite destination files if they exist */
-    var soft: js.UndefOr[Boolean] = js.native
+    var soft: js.UndefOr[Boolean] = js.undefined
     
     /**
       * slice a path off the bottom of the paths
       * @default 0
       */
-    var up: js.UndefOr[Double | `true`] = js.native
+    var up: js.UndefOr[Double | `true`] = js.undefined
     
     /** print more information to console */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -3,22 +3,22 @@ package typings.awsSdkTypes.eventStreamMod
 import typings.awsSdkTypes.awsSdkTypesStrings.short
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShortHeaderValue extends MessageHeaderValue {
+trait ShortHeaderValue
+  extends StObject
+     with MessageHeaderValue {
   
-  var `type`: short = js.native
+  var `type`: short
   
-  var value: Double = js.native
+  var value: Double
 }
 object ShortHeaderValue {
   
   @scala.inline
-  def apply(`type`: short, value: Double): ShortHeaderValue = {
+  def apply(value: Double): ShortHeaderValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("short")
     __obj.asInstanceOf[ShortHeaderValue]
   }
   

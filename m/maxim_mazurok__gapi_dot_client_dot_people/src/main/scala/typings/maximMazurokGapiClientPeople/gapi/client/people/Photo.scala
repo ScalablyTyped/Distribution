@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Photo extends StObject {
   
   /** True if the photo is a default photo; false if the photo is a user-provided photo. */
-  var default: js.UndefOr[Boolean] = js.native
+  var default: js.UndefOr[Boolean] = js.undefined
   
   /** Metadata about the photo. */
-  var metadata: js.UndefOr[FieldMetadata] = js.native
+  var metadata: js.UndefOr[FieldMetadata] = js.undefined
   
   /**
     * The URL of the photo. You can change the desired size by appending a query parameter `sz={size}` at the end of the url, where {size} is the size in pixels. Example:
     * https://lh3.googleusercontent.com/-T_wVWLlmg7w/AAAAAAAAAAI/AAAAAAAABa8/00gzXvDBYqw/s100/photo.jpg?sz=50
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Photo {
   

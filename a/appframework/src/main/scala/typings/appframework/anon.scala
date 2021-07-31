@@ -2,49 +2,47 @@ package typings.appframework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Android extends StObject {
     
-    var android: Boolean = js.native
+    var android: Boolean
     
-    var androidICS: Boolean = js.native
+    var androidICS: Boolean
     
-    var blackberry: Boolean = js.native
+    var blackberry: Boolean
     
-    var blackberry10: Boolean = js.native
+    var blackberry10: Boolean
     
-    var chrome: Boolean = js.native
+    var chrome: Boolean
     
-    var fennec: Boolean = js.native
+    var fennec: Boolean
     
-    var ie: Boolean = js.native
+    var ie: Boolean
     
-    var ieTouch: Boolean = js.native
+    var ieTouch: Boolean
     
-    var ios: Boolean = js.native
+    var ios: Boolean
     
-    var ios7: Boolean = js.native
+    var ios7: Boolean
     
-    var ipad: Boolean = js.native
+    var ipad: Boolean
     
-    var iphone: Boolean = js.native
+    var iphone: Boolean
     
-    var opera: Boolean = js.native
+    var opera: Boolean
     
-    var playbook: Boolean = js.native
+    var playbook: Boolean
     
-    var supportsTouch: Boolean = js.native
+    var supportsTouch: Boolean
     
-    var touchpad: Boolean = js.native
+    var touchpad: Boolean
     
-    var webkit: Boolean = js.native
+    var webkit: Boolean
     
-    var webos: Boolean = js.native
+    var webos: Boolean
   }
   object Android {
     
@@ -132,20 +130,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Bottom {
     
@@ -178,16 +175,15 @@ object anon {
     }
   }
   
-  @js.native
   trait CssPrefix extends StObject {
     
-    var cssPrefix: String = js.native
+    var cssPrefix: String
     
-    var cssTransformEnd: String = js.native
+    var cssTransformEnd: String
     
-    var cssTransformStart: String = js.native
+    var cssTransformStart: String
     
-    var nativeTouchScroll: Boolean = js.native
+    var nativeTouchScroll: Boolean
   }
   object CssPrefix {
     

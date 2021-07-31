@@ -6,17 +6,15 @@ import typings.nodeRedEditorClient.nodeRedEditorClientStrings.right
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Align extends StObject {
   
-  var align: js.UndefOr[left | right] = js.native
+  var align: js.UndefOr[left | right] = js.undefined
   
-  var element: JQuery[HTMLElement] = js.native
+  var element: JQuery[HTMLElement]
   
-  var id: String = js.native
+  var id: String
 }
 object Align {
   

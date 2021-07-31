@@ -1,8 +1,8 @@
 package typings.winrtUwp.global.Windows.Storage
 
+import typings.winrtUwp.Windows.Storage.AccessCache.AccessListEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables and manages access to the most recently used (MRU) list of storage items, and to the list of storage items that the application has saved for efficient future access. */
@@ -14,30 +14,37 @@ object AccessCache {
   object AccessCacheOptions extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.AccessCache.AccessCacheOptions with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.AccessCache.AccessCacheOptions & Double] = js.native
     
-    /* 1 */ val disallowUserInput: typings.winrtUwp.Windows.Storage.AccessCache.AccessCacheOptions.disallowUserInput with Double = js.native
+    /* 1 */ val disallowUserInput: typings.winrtUwp.Windows.Storage.AccessCache.AccessCacheOptions.disallowUserInput & Double = js.native
     
-    /* 2 */ val fastLocationsOnly: typings.winrtUwp.Windows.Storage.AccessCache.AccessCacheOptions.fastLocationsOnly with Double = js.native
+    /* 2 */ val fastLocationsOnly: typings.winrtUwp.Windows.Storage.AccessCache.AccessCacheOptions.fastLocationsOnly & Double = js.native
     
-    /* 0 */ val none: typings.winrtUwp.Windows.Storage.AccessCache.AccessCacheOptions.none with Double = js.native
+    /* 0 */ val none: typings.winrtUwp.Windows.Storage.AccessCache.AccessCacheOptions.none & Double = js.native
     
-    /* 4 */ val suppressAccessTimeUpdate: typings.winrtUwp.Windows.Storage.AccessCache.AccessCacheOptions.suppressAccessTimeUpdate with Double = js.native
+    /* 4 */ val suppressAccessTimeUpdate: typings.winrtUwp.Windows.Storage.AccessCache.AccessCacheOptions.suppressAccessTimeUpdate & Double = js.native
     
-    /* 3 */ val useReadOnlyCachedCopy: typings.winrtUwp.Windows.Storage.AccessCache.AccessCacheOptions.useReadOnlyCachedCopy with Double = js.native
+    /* 3 */ val useReadOnlyCachedCopy: typings.winrtUwp.Windows.Storage.AccessCache.AccessCacheOptions.useReadOnlyCachedCopy & Double = js.native
   }
   
   /** A list of the entries that are in your app's most recently used list (MRU) (obtained from the static StorageApplicationPermissions.MostRecentlyUsedList property) and in your app's future-access list (obtained from the static StorageApplicationPermissions.FutureAccessList property). */
   @JSGlobal("Windows.Storage.AccessCache.AccessListEntryView")
   @js.native
   abstract class AccessListEntryView ()
-    extends typings.winrtUwp.Windows.Storage.AccessCache.AccessListEntryView
+    extends StObject
+       with typings.winrtUwp.Windows.Storage.AccessCache.AccessListEntryView
   
   /** Provides data about an ItemRemoved event. */
   @JSGlobal("Windows.Storage.AccessCache.ItemRemovedEventArgs")
   @js.native
   abstract class ItemRemovedEventArgs ()
-    extends typings.winrtUwp.Windows.Storage.AccessCache.ItemRemovedEventArgs
+    extends StObject
+       with typings.winrtUwp.Windows.Storage.AccessCache.ItemRemovedEventArgs {
+    
+    /** Gets information about the StorageFile or StorageFolder that was removed from the StorageItemMostRecentlyUsedList . */
+    /* CompleteClass */
+    var removedEntry: AccessListEntry = js.native
+  }
   
   /** Describes the extent of the visibility of a storage item added to the most recently used (MRU) list. */
   @JSGlobal("Windows.Storage.AccessCache.RecentStorageItemVisibility")
@@ -46,19 +53,20 @@ object AccessCache {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.Storage.AccessCache.RecentStorageItemVisibility with Double
+        typings.winrtUwp.Windows.Storage.AccessCache.RecentStorageItemVisibility & Double
       ] = js.native
     
-    /* 1 */ val appAndSystem: typings.winrtUwp.Windows.Storage.AccessCache.RecentStorageItemVisibility.appAndSystem with Double = js.native
+    /* 1 */ val appAndSystem: typings.winrtUwp.Windows.Storage.AccessCache.RecentStorageItemVisibility.appAndSystem & Double = js.native
     
-    /* 0 */ val appOnly: typings.winrtUwp.Windows.Storage.AccessCache.RecentStorageItemVisibility.appOnly with Double = js.native
+    /* 0 */ val appOnly: typings.winrtUwp.Windows.Storage.AccessCache.RecentStorageItemVisibility.appOnly & Double = js.native
   }
   
   /** Provides static properties for you to get your app's most recently used list (MRU) (use StorageApplicationPermissions.MostRecentlyUsedList ) and future-access list (use StorageApplicationPermissions.FutureAccessList . */
   @JSGlobal("Windows.Storage.AccessCache.StorageApplicationPermissions")
   @js.native
   abstract class StorageApplicationPermissions ()
-    extends typings.winrtUwp.Windows.Storage.AccessCache.StorageApplicationPermissions
+    extends StObject
+       with typings.winrtUwp.Windows.Storage.AccessCache.StorageApplicationPermissions
   object StorageApplicationPermissions {
     
     @JSGlobal("Windows.Storage.AccessCache.StorageApplicationPermissions")
@@ -86,11 +94,13 @@ object AccessCache {
   @JSGlobal("Windows.Storage.AccessCache.StorageItemAccessList")
   @js.native
   abstract class StorageItemAccessList ()
-    extends typings.winrtUwp.Windows.Storage.AccessCache.StorageItemAccessList
+    extends StObject
+       with typings.winrtUwp.Windows.Storage.AccessCache.StorageItemAccessList
   
   /** Represents your app's most recently used list (MRU) (obtained from the static StorageApplicationPermissions.MostRecentlyUsedList property). You use your MRU to track items (files and/or folders) that the user has accessed most recently. Items are stored in the MRU as StorageFile and StorageFolder objects. */
   @JSGlobal("Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList")
   @js.native
   abstract class StorageItemMostRecentlyUsedList ()
-    extends typings.winrtUwp.Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList
+    extends StObject
+       with typings.winrtUwp.Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList
 }

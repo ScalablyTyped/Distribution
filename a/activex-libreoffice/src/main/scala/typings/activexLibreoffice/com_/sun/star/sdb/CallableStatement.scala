@@ -22,7 +22,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,9 +41,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.activexLibreoffice.com_.sun.star.sdbc.XCloseable because Already inherited
 - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
 - typings.activexLibreoffice.com_.sun.star.sdbc.PreparedStatement because Already inherited
-- typings.activexLibreoffice.com_.sun.star.sdb.PreparedStatement because var conflicts: CursorName, FetchDirection, FetchSize, MaxFieldSize, MaxRows, QueryTimeOut, ResultSetConcurrency, ResultSetType. Inlined  */ @js.native
-trait CallableStatement
-  extends typings.activexLibreoffice.com_.sun.star.sdbc.CallableStatement
+- typings.activexLibreoffice.com_.sun.star.sdb.PreparedStatement because var conflicts: CursorName, FetchDirection, FetchSize, MaxFieldSize, MaxRows, QueryTimeOut, ResultSetConcurrency, ResultSetType. Inlined  */ trait CallableStatement
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.sdbc.CallableStatement
      with XColumnsSupplier
 object CallableStatement {
   

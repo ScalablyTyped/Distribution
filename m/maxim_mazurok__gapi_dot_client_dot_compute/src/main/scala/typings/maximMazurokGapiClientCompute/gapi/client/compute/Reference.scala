@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reference extends StObject {
   
   /** [Output Only] Type of the resource. Always compute#reference for references. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A description of the reference type with no implied semantics. Possible values include:
     * - MEMBER_OF
     */
-  var referenceType: js.UndefOr[String] = js.native
+  var referenceType: js.UndefOr[String] = js.undefined
   
   /** URL of the resource which refers to the target. */
-  var referrer: js.UndefOr[String] = js.native
+  var referrer: js.UndefOr[String] = js.undefined
   
   /** URL of the resource to which this reference points. */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object Reference {
   

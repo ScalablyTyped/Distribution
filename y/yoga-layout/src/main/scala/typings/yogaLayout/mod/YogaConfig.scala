@@ -2,17 +2,15 @@ package typings.yogaLayout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait YogaConfig extends StObject {
   
-  def isExperimentalFeatureEnabled(feature: YogaExperimentalFeature): Boolean = js.native
+  def isExperimentalFeatureEnabled(feature: YogaExperimentalFeature): Boolean
   
-  def setExperimentalFeatureEnabled(feature: YogaExperimentalFeature, enabled: Boolean): Unit = js.native
+  def setExperimentalFeatureEnabled(feature: YogaExperimentalFeature, enabled: Boolean): Unit
   
-  def setPointScaleFactor(factor: Double): Unit = js.native
+  def setPointScaleFactor(factor: Double): Unit
 }
 object YogaConfig {
   

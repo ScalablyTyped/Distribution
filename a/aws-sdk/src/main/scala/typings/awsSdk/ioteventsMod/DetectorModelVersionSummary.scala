@@ -2,51 +2,49 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectorModelVersionSummary extends StObject {
   
   /**
     * The time the detector model version was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ARN of the detector model version.
     */
-  var detectorModelArn: js.UndefOr[DetectorModelArn] = js.native
+  var detectorModelArn: js.UndefOr[DetectorModelArn] = js.undefined
   
   /**
     * The name of the detector model.
     */
-  var detectorModelName: js.UndefOr[DetectorModelName] = js.native
+  var detectorModelName: js.UndefOr[DetectorModelName] = js.undefined
   
   /**
     * The ID of the detector model version.
     */
-  var detectorModelVersion: js.UndefOr[DetectorModelVersion] = js.native
+  var detectorModelVersion: js.UndefOr[DetectorModelVersion] = js.undefined
   
   /**
     * Information about the order in which events are evaluated and how actions are executed. 
     */
-  var evaluationMethod: js.UndefOr[EvaluationMethod] = js.native
+  var evaluationMethod: js.UndefOr[EvaluationMethod] = js.undefined
   
   /**
     * The last time the detector model version was updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.native
+  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ARN of the role that grants the detector model permission to perform its tasks.
     */
-  var roleArn: js.UndefOr[AmazonResourceName] = js.native
+  var roleArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * The status of the detector model version.
     */
-  var status: js.UndefOr[DetectorModelVersionStatus] = js.native
+  var status: js.UndefOr[DetectorModelVersionStatus] = js.undefined
 }
 object DetectorModelVersionSummary {
   

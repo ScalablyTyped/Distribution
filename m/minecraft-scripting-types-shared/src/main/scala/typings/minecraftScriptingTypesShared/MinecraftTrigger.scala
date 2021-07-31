@@ -2,17 +2,15 @@ package typings.minecraftScriptingTypesShared
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinecraftTrigger extends StObject {
   
-  var event: String = js.native
+  var event: String
   
-  var filters: MinecraftFilter = js.native
+  var filters: MinecraftFilter
   
-  var target: String = js.native
+  var target: String
 }
 object MinecraftTrigger {
   

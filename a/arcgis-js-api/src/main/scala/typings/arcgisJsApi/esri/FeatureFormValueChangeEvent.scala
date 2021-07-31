@@ -2,21 +2,19 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureFormValueChangeEvent extends StObject {
   
-  var feature: Graphic = js.native
+  var feature: Graphic
   
-  var fieldName: String = js.native
+  var fieldName: String
   
-  var layer: FeatureLayer = js.native
+  var layer: FeatureLayer
   
-  var valid: Boolean = js.native
+  var valid: Boolean
   
-  var value: Double | String | js.Any = js.native
+  var value: Double | String | js.Any
 }
 object FeatureFormValueChangeEvent {
   

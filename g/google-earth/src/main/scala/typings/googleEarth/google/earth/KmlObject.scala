@@ -2,37 +2,37 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlObject extends GEEventEmitter {
+trait KmlObject
+  extends StObject
+     with GEEventEmitter {
   
   /**
     * Test whether this object is the same as another object.
     * Useful for Chrome and Safari, where the comparison a==b sometimes fails for plugin objects.
     */
-  def equals(compareTo: KmlObject): Boolean = js.native
+  def equals(compareTo: KmlObject): Boolean
   
   /**
     * The unique ID of the KML object.
     */
-  def getId(): String = js.native
+  def getId(): String
   
   /**
     * The document that owns the KML object.
     */
-  def getOwnerDocument(): KmlDocument = js.native
+  def getOwnerDocument(): KmlDocument
   
   /**
     * The parent node of the KML object.
     */
-  def getParentNode(): KmlObject = js.native
+  def getParentNode(): KmlObject
   
   /**
     * The interface name (i.e. 'KmlPlacemark') of the object.
     */
-  def getType(): String = js.native
+  def getType(): String
   
   /**
     * The unique URL of the KML object.
@@ -40,13 +40,13 @@ trait KmlObject extends GEEventEmitter {
     *
     * For example: http://www.google.com/bar.kml#atlantis
     */
-  def getUrl(): String = js.native
+  def getUrl(): String
   
   /**
     * Permanently deletes an object, allowing its ID to be reused.
     * Attempting to access the object once it is released will result in an error.
     */
-  def release(): Unit = js.native
+  def release(): Unit
 }
 object KmlObject {
   

@@ -3,28 +3,27 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.JSXNamespacedName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait JSXNamespacedName_
-  extends JSX
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait JSXNamespacedName_
+  extends StObject
+     with BaseNode
+     with JSX {
   
-  var name: JSXIdentifier_ = js.native
+  var name: JSXIdentifier_
   
-  var namespace: JSXIdentifier_ = js.native
+  var namespace: JSXIdentifier_
   
   @JSName("type")
-  var type_JSXNamespacedName_ : JSXNamespacedName = js.native
+  var type_JSXNamespacedName_ : JSXNamespacedName
 }
 object JSXNamespacedName_ {
   
   @scala.inline
-  def apply(name: JSXIdentifier_, namespace: JSXIdentifier_, `type`: JSXNamespacedName): JSXNamespacedName_ = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(name: JSXIdentifier_, namespace: JSXIdentifier_): JSXNamespacedName_ = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("JSXNamespacedName")
     __obj.asInstanceOf[JSXNamespacedName_]
   }
   

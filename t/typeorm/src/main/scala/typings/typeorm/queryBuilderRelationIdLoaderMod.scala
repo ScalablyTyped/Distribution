@@ -6,7 +6,6 @@ import typings.typeorm.objectLiteralMod.ObjectLiteral
 import typings.typeorm.relationMetadataMod.RelationMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryBuilderRelationIdLoaderMod {
@@ -18,64 +17,64 @@ object queryBuilderRelationIdLoaderMod {
     
     var connection: js.Any = js.native
     
-    def load(relation: RelationMetadata, entities: js.Array[ObjectLiteral]): js.Promise[js.Array[_]] = js.native
+    def load(relation: RelationMetadata, entities: js.Array[ObjectLiteral]): js.Promise[js.Array[js.Any]] = js.native
     def load(
       relation: RelationMetadata,
       entities: js.Array[ObjectLiteral],
       relatedEntities: js.Array[ObjectLiteral]
-    ): js.Promise[js.Array[_]] = js.native
-    def load(relation: RelationMetadata, entities: js.Array[ObjectLiteral], relatedEntities: ObjectLiteral): js.Promise[js.Array[_]] = js.native
+    ): js.Promise[js.Array[js.Any]] = js.native
+    def load(relation: RelationMetadata, entities: js.Array[ObjectLiteral], relatedEntities: ObjectLiteral): js.Promise[js.Array[js.Any]] = js.native
     /**
       * Loads relation ids of the given entity or entities.
       */
-    def load(relation: RelationMetadata, entities: ObjectLiteral): js.Promise[js.Array[_]] = js.native
-    def load(relation: RelationMetadata, entities: ObjectLiteral, relatedEntities: js.Array[ObjectLiteral]): js.Promise[js.Array[_]] = js.native
-    def load(relation: RelationMetadata, entities: ObjectLiteral, relatedEntities: ObjectLiteral): js.Promise[js.Array[_]] = js.native
-    def load(target: String, relation: String, entities: js.Array[ObjectLiteral]): js.Promise[js.Array[_]] = js.native
+    def load(relation: RelationMetadata, entities: ObjectLiteral): js.Promise[js.Array[js.Any]] = js.native
+    def load(relation: RelationMetadata, entities: ObjectLiteral, relatedEntities: js.Array[ObjectLiteral]): js.Promise[js.Array[js.Any]] = js.native
+    def load(relation: RelationMetadata, entities: ObjectLiteral, relatedEntities: ObjectLiteral): js.Promise[js.Array[js.Any]] = js.native
+    def load(target: String, relation: String, entities: js.Array[ObjectLiteral]): js.Promise[js.Array[js.Any]] = js.native
     def load(
       target: String,
       relation: String,
       entities: js.Array[ObjectLiteral],
       relatedEntities: js.Array[ObjectLiteral]
-    ): js.Promise[js.Array[_]] = js.native
+    ): js.Promise[js.Array[js.Any]] = js.native
     def load(
       target: String,
       relation: String,
       entities: js.Array[ObjectLiteral],
       relatedEntities: ObjectLiteral
-    ): js.Promise[js.Array[_]] = js.native
-    def load(target: String, relation: String, entities: ObjectLiteral): js.Promise[js.Array[_]] = js.native
+    ): js.Promise[js.Array[js.Any]] = js.native
+    def load(target: String, relation: String, entities: ObjectLiteral): js.Promise[js.Array[js.Any]] = js.native
     def load(
       target: String,
       relation: String,
       entities: ObjectLiteral,
       relatedEntities: js.Array[ObjectLiteral]
-    ): js.Promise[js.Array[_]] = js.native
-    def load(target: String, relation: String, entities: ObjectLiteral, relatedEntities: ObjectLiteral): js.Promise[js.Array[_]] = js.native
-    def load(target: js.Function, relation: String, entities: js.Array[ObjectLiteral]): js.Promise[js.Array[_]] = js.native
+    ): js.Promise[js.Array[js.Any]] = js.native
+    def load(target: String, relation: String, entities: ObjectLiteral, relatedEntities: ObjectLiteral): js.Promise[js.Array[js.Any]] = js.native
+    def load(target: js.Function, relation: String, entities: js.Array[ObjectLiteral]): js.Promise[js.Array[js.Any]] = js.native
     def load(
       target: js.Function,
       relation: String,
       entities: js.Array[ObjectLiteral],
       relatedEntities: js.Array[ObjectLiteral]
-    ): js.Promise[js.Array[_]] = js.native
+    ): js.Promise[js.Array[js.Any]] = js.native
     def load(
       target: js.Function,
       relation: String,
       entities: js.Array[ObjectLiteral],
       relatedEntities: ObjectLiteral
-    ): js.Promise[js.Array[_]] = js.native
+    ): js.Promise[js.Array[js.Any]] = js.native
     /**
       * Loads relation ids of the given entity or entities.
       */
-    def load(target: js.Function, relation: String, entities: ObjectLiteral): js.Promise[js.Array[_]] = js.native
+    def load(target: js.Function, relation: String, entities: ObjectLiteral): js.Promise[js.Array[js.Any]] = js.native
     def load(
       target: js.Function,
       relation: String,
       entities: ObjectLiteral,
       relatedEntities: js.Array[ObjectLiteral]
-    ): js.Promise[js.Array[_]] = js.native
-    def load(target: js.Function, relation: String, entities: ObjectLiteral, relatedEntities: ObjectLiteral): js.Promise[js.Array[_]] = js.native
+    ): js.Promise[js.Array[js.Any]] = js.native
+    def load(target: js.Function, relation: String, entities: ObjectLiteral, relatedEntities: ObjectLiteral): js.Promise[js.Array[js.Any]] = js.native
     
     /**
       * Loads relation ids of the given entities and maps them into the given entity property.
@@ -114,32 +113,32 @@ object queryBuilderRelationIdLoaderMod {
     /**
       * Loads relation ids for the many-to-many relation.
       */
-    /* protected */ def loadForManyToMany(relation: RelationMetadata, entities: js.Array[ObjectLiteral]): js.Promise[js.Array[_]] = js.native
+    /* protected */ def loadForManyToMany(relation: RelationMetadata, entities: js.Array[ObjectLiteral]): js.Promise[js.Array[js.Any]] = js.native
     /* protected */ def loadForManyToMany(
       relation: RelationMetadata,
       entities: js.Array[ObjectLiteral],
       relatedEntities: js.Array[ObjectLiteral]
-    ): js.Promise[js.Array[_]] = js.native
+    ): js.Promise[js.Array[js.Any]] = js.native
     
     /**
       * Loads relation ids for the many-to-one and one-to-one owner relations.
       */
-    /* protected */ def loadForManyToOneAndOneToOneOwner(relation: RelationMetadata, entities: js.Array[ObjectLiteral]): js.Promise[js.Array[_]] = js.native
+    /* protected */ def loadForManyToOneAndOneToOneOwner(relation: RelationMetadata, entities: js.Array[ObjectLiteral]): js.Promise[js.Array[js.Any]] = js.native
     /* protected */ def loadForManyToOneAndOneToOneOwner(
       relation: RelationMetadata,
       entities: js.Array[ObjectLiteral],
       relatedEntities: js.Array[ObjectLiteral]
-    ): js.Promise[js.Array[_]] = js.native
+    ): js.Promise[js.Array[js.Any]] = js.native
     
     /**
       * Loads relation ids for the one-to-many and one-to-one not owner relations.
       */
-    /* protected */ def loadForOneToManyAndOneToOneNotOwner(relation: RelationMetadata, entities: js.Array[ObjectLiteral]): js.Promise[js.Array[_]] = js.native
+    /* protected */ def loadForOneToManyAndOneToOneNotOwner(relation: RelationMetadata, entities: js.Array[ObjectLiteral]): js.Promise[js.Array[js.Any]] = js.native
     /* protected */ def loadForOneToManyAndOneToOneNotOwner(
       relation: RelationMetadata,
       entities: js.Array[ObjectLiteral],
       relatedEntities: js.Array[ObjectLiteral]
-    ): js.Promise[js.Array[_]] = js.native
+    ): js.Promise[js.Array[js.Any]] = js.native
     
     /**
       * Loads relation ids of the given entities and groups them into the object with parent and children.

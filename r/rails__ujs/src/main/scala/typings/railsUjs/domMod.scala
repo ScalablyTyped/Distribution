@@ -3,36 +3,33 @@ package typings.railsUjs
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domMod {
   
-  @JSImport("@rails/ujs/utils/dom", "$")
+  @JSImport("@rails/ujs/utils/dom", JSImport.Namespace)
   @js.native
-  def _empty(selector: String): js.Array[Element] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@rails/ujs/utils/dom", "getData")
-  @js.native
-  def getData(element: Element, key: String): js.Any = js.native
+  @scala.inline
+  def _empty(selector: String): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("$")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]
   
-  @JSImport("@rails/ujs/utils/dom", "matches")
-  @js.native
-  def matches(element: Element, selector: String): Boolean = js.native
-  @JSImport("@rails/ujs/utils/dom", "matches")
-  @js.native
-  def matches(element: Element, selector: SelectorObject): Boolean = js.native
+  @scala.inline
+  def getData(element: Element, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getData")(element.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@rails/ujs/utils/dom", "setData")
-  @js.native
-  def setData(element: Element, key: String, value: js.Any): Unit = js.native
+  @scala.inline
+  def matches(element: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def matches(element: Element, selector: SelectorObject): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def setData(element: Element, key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setData")(element.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait SelectorObject extends StObject {
     
-    var exclude: String = js.native
+    var exclude: String
     
-    var selector: String = js.native
+    var selector: String
   }
   object SelectorObject {
     

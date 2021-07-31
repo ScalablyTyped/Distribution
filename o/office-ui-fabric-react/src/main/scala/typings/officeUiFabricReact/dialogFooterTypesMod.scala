@@ -9,36 +9,35 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogFooterTypesMod {
   
-  @js.native
   trait IDialogFooter extends StObject
   
-  @js.native
-  trait IDialogFooterProps extends Props[DialogFooterBase] {
+  trait IDialogFooterProps
+    extends StObject
+       with Props[DialogFooterBase] {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IDialogFooter]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IDialogFooter]] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IDialogFooterStyleProps, IDialogFooterStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IDialogFooterStyleProps, IDialogFooterStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IDialogFooterProps {
     
@@ -83,18 +82,17 @@ object dialogFooterTypesMod {
     }
   }
   
-  @js.native
   trait IDialogFooterStyleProps extends StObject {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDialogFooterStyleProps {
     
@@ -118,17 +116,16 @@ object dialogFooterTypesMod {
     }
   }
   
-  @js.native
   trait IDialogFooterStyles extends StObject {
     
-    var action: IStyle = js.native
+    var action: IStyle
     
     /**
       * Style for the actions element.
       */
-    var actions: IStyle = js.native
+    var actions: IStyle
     
-    var actionsRight: IStyle = js.native
+    var actionsRight: IStyle
   }
   object IDialogFooterStyles {
     

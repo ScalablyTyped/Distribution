@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -20,49 +19,49 @@ trait DataSourceSettings
     * Note: This option takes effect only when autoCommit is set to false.
     *
     */
-  var aggregateTransactions: js.UndefOr[Boolean] = js.native
+  var aggregateTransactions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If auto commit is true, data will be automatically commited to the data source, once a value or a batch of values are updated via saveChanges()
     *
     */
-  var autoCommit: js.UndefOr[Boolean] = js.native
+  var autoCommit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Callback function to call when data binding is complete
     *
     */
-  var callback: js.UndefOr[js.Function] = js.native
+  var callback: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Object on which to invoke the callback function
     *
     */
-  var callee: js.UndefOr[js.Any] = js.native
+  var callee: js.UndefOr[js.Any] = js.undefined
   
   /**
     * This is the normalized (transformed) resulting data, after it's fetched from the data source
     *
     */
-  var data: js.UndefOr[js.Array[_]] = js.native
+  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Client-side dataBinding event. Can be a string pointing to a function name, or an object pointing to a function
     *
     */
-  var dataBinding: js.UndefOr[js.Any] = js.native
+  var dataBinding: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Client-side dataBound event. Can be a string pointing to a function name, or an object pointing to a function
     *
     */
-  var dataBound: js.UndefOr[js.Any] = js.native
+  var dataBound: js.UndefOr[js.Any] = js.undefined
   
   /**
     * This is the source of data - non normalized. Can be an array, can be reference to some JSON object, can be a DOM element for a HTML TABLE, or a function
     *
     */
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
   /**
     * *** IMPORTANT DEPRECATED ***
@@ -70,67 +69,67 @@ trait DataSourceSettings
     * Field objects description: {name, [type], [xpath]}
     *
     */
-  var fields: js.UndefOr[js.Array[_]] = js.native
+  var fields: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Settings related to built-in filtering functionality
     *
     */
-  var filtering: js.UndefOr[DataSourceSettingsFiltering] = js.native
+  var filtering: js.UndefOr[DataSourceSettingsFiltering] = js.undefined
   
   /**
     * Settings related to built-in group by functionality
     *
     */
-  var groupby: js.UndefOr[DataSourceSettingsGroupby] = js.native
+  var groupby: js.UndefOr[DataSourceSettingsGroupby] = js.undefined
   
   /**
     * Setting this is only necessary when the data source is set to a table in string format. we need to create an invisible dummy data container in the body and append the table data to it
     *
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * If set to false will disable transformations on schema, even if it is defined locally in the javascript code
     *
     */
-  var localSchemaTransform: js.UndefOr[Boolean] = js.native
+  var localSchemaTransform: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This is the property in the dataView where actual resulting records will be put. (So the dataView will not be array but an object if this is defined), after the potential data source transformation
     *
     */
-  var outputResultsName: js.UndefOr[String] = js.native
+  var outputResultsName: js.UndefOr[String] = js.undefined
   
   /**
     * Settings related to built-in paging functionality
     *
     */
-  var paging: js.UndefOr[DataSourceSettingsPaging] = js.native
+  var paging: js.UndefOr[DataSourceSettingsPaging] = js.undefined
   
   /**
     * The unique field identifier
     *
     */
-  var primaryKey: js.UndefOr[String] = js.native
+  var primaryKey: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the HTTP verb to be used to issue the request
     *
     */
-  var requestType: js.UndefOr[String] = js.native
+  var requestType: js.UndefOr[String] = js.undefined
   
   /**
     * Content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType
     *
     */
-  var responseContentType: js.UndefOr[String] = js.native
+  var responseContentType: js.UndefOr[String] = js.undefined
   
   /**
     * Property in the response which specifies where the data records array will be held (if the response is wrapped)
     *
     */
-  var responseDataKey: js.UndefOr[String] = js.native
+  var responseDataKey: js.UndefOr[String] = js.undefined
   
   /**
     * Response type when a URL is set as the data source. See http://api.jquery.com/jQuery.ajax/ => dataType
@@ -144,13 +143,13 @@ trait DataSourceSettings
     * "jsonp"
     * "text"
     */
-  var responseDataType: js.UndefOr[String] = js.native
+  var responseDataType: js.UndefOr[String] = js.undefined
   
   /**
     * Property in the response which specifies the total number of records in the backend (this is needed for paging)
     *
     */
-  var responseTotalRecCountKey: js.UndefOr[String] = js.native
+  var responseTotalRecCountKey: js.UndefOr[String] = js.undefined
   
   /**
     * A function to call when row is added.
@@ -160,7 +159,7 @@ trait DataSourceSettings
     * Use dataSource to obtain reference to $.ig.DataSource.
     *
     */
-  var rowAdded: js.UndefOr[js.Function] = js.native
+  var rowAdded: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A function to call when row is deleted.
@@ -170,7 +169,7 @@ trait DataSourceSettings
     * Use dataSource to obtain reference to $.ig.DataSource.
     *
     */
-  var rowDeleted: js.UndefOr[js.Function] = js.native
+  var rowDeleted: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A function to call when row is inserted.
@@ -181,7 +180,7 @@ trait DataSourceSettings
     * Use dataSource to obtain reference to $.ig.DataSource.
     *
     */
-  var rowInserted: js.UndefOr[js.Function] = js.native
+  var rowInserted: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A function to call when row is updated (edited).
@@ -192,31 +191,31 @@ trait DataSourceSettings
     * Use dataSource to obtain reference to $.ig.DataSource.
     *
     */
-  var rowUpdated: js.UndefOr[js.Function] = js.native
+  var rowUpdated: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A schema object that defines which fields from the data to bind to
     *
     */
-  var schema: js.UndefOr[js.Any] = js.native
+  var schema: js.UndefOr[js.Any] = js.undefined
   
   /**
     * If true, will serialize the transaction log of updated values - if any - whenever commit is performed via a remote request.
     *
     */
-  var serializeTransactionLog: js.UndefOr[Boolean] = js.native
+  var serializeTransactionLog: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Settings related to built-in sorting functionality
     *
     */
-  var sorting: js.UndefOr[DataSourceSettingsSorting] = js.native
+  var sorting: js.UndefOr[DataSourceSettingsSorting] = js.undefined
   
   /**
     * Settings related to built-in summaries functionality
     *
     */
-  var summaries: js.UndefOr[DataSourceSettingsSummaries] = js.native
+  var summaries: js.UndefOr[DataSourceSettingsSummaries] = js.undefined
   
   /**
     * Type of the data source
@@ -237,25 +236,25 @@ trait DataSourceSettings
     * "htmlSelectDom" The data source points to a DOM object that is of SELECT type
     * "empty"
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies an update remote URL, to which an AJAX request will be made as soon as saveChages() is called.
     *
     */
-  var updateUrl: js.UndefOr[String] = js.native
+  var updateUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Event that is fired after URL parameters are encoded (When a remote request is done). Can point to a function name or the function object itself
     *
     */
-  var urlParamsEncoded: js.UndefOr[js.Any] = js.native
+  var urlParamsEncoded: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Event that is fired before URL parameters are encoded. Can point to a function name or the function object itself
     *
     */
-  var urlParamsEncoding: js.UndefOr[js.Any] = js.native
+  var urlParamsEncoding: js.UndefOr[js.Any] = js.undefined
 }
 object DataSourceSettings {
   
@@ -293,7 +292,7 @@ object DataSourceSettings {
     def setCalleeUndefined: Self = StObject.set(x, "callee", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataBinding(value: js.Any): Self = StObject.set(x, "dataBinding", value.asInstanceOf[js.Any])
@@ -320,7 +319,7 @@ object DataSourceSettings {
     def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setFields(value: js.Array[_]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    def setFields(value: js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)

@@ -1,9 +1,9 @@
 package typings.tabris
 
 import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // FormData
 /**
@@ -11,11 +11,9 @@ import scala.scalajs.js.annotation._
   * XMLHttpRequest. It uses the same format a HTML form would use if the encoding type were set to
   * `multipart/form-data`.
   */
-@JSGlobal("FormData")
 @js.native
-class FormData () extends js.Object {
-  @JSName(js.Symbol.iterator)
-  var iterator: js.Function0[IterableIterator[js.Tuple2[String, String | File]]] = js.native
+trait FormData extends StObject {
+  
   /**
     * Adds a string value associated with a given key. Any existing values for that key will be retained.
     * @param key
@@ -34,28 +32,38 @@ class FormData () extends js.Object {
   def append(key: String, value: Blob, filename: String): Unit = js.native
   def append(key: String, value: File): Unit = js.native
   def append(key: String, value: File, filename: String): Unit = js.native
+  
   /**
     * Removes all values associated with a given key.
     * @param key
     */
   def delete(key: String): Unit = js.native
+  
   def entries(): IterableIterator[js.Tuple2[String, String | File]] = js.native
+  
   /**
     * Returns the first value associated with a given key.
     * @param key
     */
   def get(key: String): String | File | Null = js.native
+  
   /**
     * Returns all the values associated with a given key.
     * @param key
     */
   def getAll(key: String): js.Array[String] = js.native
+  
   /**
     * Returns true if there are any values associated with a given key.
     * @param key
     */
   def has(key: String): Boolean = js.native
+  
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[IterableIterator[js.Tuple2[String, String | File]]] = js.native
+  
   def keys(): IterableIterator[String] = js.native
+  
   /**
     * Adds a string value associated with a given key. Any existing values for that key will be replaced.
     * @param key
@@ -74,6 +82,6 @@ class FormData () extends js.Object {
   def set(key: String, value: Blob, filename: String): Unit = js.native
   def set(key: String, value: File): Unit = js.native
   def set(key: String, value: File, filename: String): Unit = js.native
+  
   def values(): IterableIterator[String | File] = js.native
 }
-

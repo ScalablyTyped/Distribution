@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Accountactiveadsummaries")
@@ -31,7 +30,7 @@ class ResourceAccountactiveadsummaries protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAccountActiveAdSummary] = js.native
   def get(callback: BodyResponseCallback[SchemaAccountActiveAdSummary]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountActiveAdSummary] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAccountActiveAdSummary] = js.native
   def get(params: ParamsResourceAccountactiveadsummariesGet): GaxiosPromise[SchemaAccountActiveAdSummary] = js.native
   def get(
     params: ParamsResourceAccountactiveadsummariesGet,

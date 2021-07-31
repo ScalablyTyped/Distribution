@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the MovingAverageConvergenceDivergence class.
   */
-@js.native
-trait ASPxClientMovingAverageConvergenceDivergence extends ASPxSeparatePaneIndicator {
+trait ASPxClientMovingAverageConvergenceDivergence
+  extends StObject
+     with ASPxSeparatePaneIndicator {
   
   /**
     * Returns the long period value required to calculate the indicator.
     */
-  var longPeriod: Double = js.native
+  var longPeriod: Double
   
   /**
     * Returns the short period value required to calculate the indicator.
     */
-  var shortPeriod: Double = js.native
+  var shortPeriod: Double
   
   /**
     * Returns the smoothing period value required to calculate the indicator.
     */
-  var signalSmoothingPeriod: Double = js.native
+  var signalSmoothingPeriod: Double
 }
 object ASPxClientMovingAverageConvergenceDivergence {
   

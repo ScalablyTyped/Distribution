@@ -2,24 +2,22 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creative Field Assignment.
   */
-@js.native
 trait SchemaCreativeFieldAssignment extends StObject {
   
   /**
     * ID of the creative field.
     */
-  var creativeFieldId: js.UndefOr[String] = js.native
+  var creativeFieldId: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the creative field value.
     */
-  var creativeFieldValueId: js.UndefOr[String] = js.native
+  var creativeFieldValueId: js.UndefOr[String] = js.undefined
 }
 object SchemaCreativeFieldAssignment {
   

@@ -7,10 +7,13 @@ import typings.reactUid.hooksMod.SeedGenerator
 import typings.reactUid.uidcomponentMod.UID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-uid", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-uid", "UIDConsumer")
   @js.native
@@ -35,22 +38,17 @@ object mod {
     def this(props: UIDProps, context: js.Any) = this()
   }
   
-  @JSImport("react-uid", "generateUID")
-  @js.native
-  def generateUID(): js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String] = js.native
+  @scala.inline
+  def generateUID(): js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUID")().asInstanceOf[js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]]
   
-  @JSImport("react-uid", "uid")
-  @js.native
-  def uid(item: js.Any): String = js.native
-  @JSImport("react-uid", "uid")
-  @js.native
-  def uid(item: js.Any, index: Double): String = js.native
+  @scala.inline
+  def uid(item: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def uid(item: js.Any, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("uid")(item.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("react-uid", "useUID")
-  @js.native
-  def useUID(): String = js.native
+  @scala.inline
+  def useUID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useUID")().asInstanceOf[String]
   
-  @JSImport("react-uid", "useUIDSeed")
-  @js.native
-  def useUIDSeed(): SeedGenerator = js.native
+  @scala.inline
+  def useUIDSeed(): SeedGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useUIDSeed")().asInstanceOf[SeedGenerator]
 }

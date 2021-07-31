@@ -2,16 +2,14 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetStreamKeyRequest extends StObject {
   
   /**
     * Array of ARNs, one per channel.
     */
-  var arns: StreamKeyArnList = js.native
+  var arns: StreamKeyArnList
 }
 object BatchGetStreamKeyRequest {
   

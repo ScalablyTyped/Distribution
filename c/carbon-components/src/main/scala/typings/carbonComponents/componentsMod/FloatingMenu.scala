@@ -5,7 +5,6 @@ import typings.carbonComponents.floatingMenuMod.default
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("carbon-components/globals/js/components", "FloatingMenu")
@@ -89,9 +88,9 @@ object FloatingMenu {
     
     @JSImport("carbon-components/globals/js/components", "FloatingMenu.options.refNode")
     @js.native
-    def refNode: Null = js.native
+    def refNode: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
     @scala.inline
-    def refNode_=(x: Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refNode")(x.asInstanceOf[js.Any])
+    def refNode_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refNode")(x.asInstanceOf[js.Any])
     
     @JSImport("carbon-components/globals/js/components", "FloatingMenu.options.selectorContainer")
     @js.native

@@ -6,15 +6,14 @@ import typings.winrt.Windows.Storage.Streams.IBuffer
 import typings.winrt.Windows.Storage.Streams.IOutputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamedFileDataRequest
-  extends IOutputStream
+  extends StObject
+     with IOutputStream
      with IStreamedFileDataRequest {
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 object StreamedFileDataRequest {
   

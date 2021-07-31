@@ -2,10 +2,13 @@ package typings.bcp47
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("bcp-47", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait ErrorCodes extends StObject
@@ -14,50 +17,58 @@ object mod {
   object ErrorCodes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ErrorCodes with Double] = js.native
+    def apply(value: Double): js.UndefOr[ErrorCodes & Double] = js.native
     
     @js.native
-    sealed trait errEmptyExtension extends ErrorCodes
-    /* 4 */ val errEmptyExtension: typings.bcp47.mod.ErrorCodes.errEmptyExtension with Double = js.native
+    sealed trait errEmptyExtension
+      extends StObject
+         with ErrorCodes
+    /* 4 */ val errEmptyExtension: typings.bcp47.mod.ErrorCodes.errEmptyExtension & Double = js.native
     
     @js.native
-    sealed trait errExtensionTooLong extends ErrorCodes
-    /* 2 */ val errExtensionTooLong: typings.bcp47.mod.ErrorCodes.errExtensionTooLong with Double = js.native
+    sealed trait errExtensionTooLong
+      extends StObject
+         with ErrorCodes
+    /* 2 */ val errExtensionTooLong: typings.bcp47.mod.ErrorCodes.errExtensionTooLong & Double = js.native
     
     @js.native
-    sealed trait errExtraContent extends ErrorCodes
-    /* 6 */ val errExtraContent: typings.bcp47.mod.ErrorCodes.errExtraContent with Double = js.native
+    sealed trait errExtraContent
+      extends StObject
+         with ErrorCodes
+    /* 6 */ val errExtraContent: typings.bcp47.mod.ErrorCodes.errExtraContent & Double = js.native
     
     @js.native
-    sealed trait errPrivateUseTooLong extends ErrorCodes
-    /* 5 */ val errPrivateUseTooLong: typings.bcp47.mod.ErrorCodes.errPrivateUseTooLong with Double = js.native
+    sealed trait errPrivateUseTooLong
+      extends StObject
+         with ErrorCodes
+    /* 5 */ val errPrivateUseTooLong: typings.bcp47.mod.ErrorCodes.errPrivateUseTooLong & Double = js.native
     
     @js.native
-    sealed trait errTooManySubtags extends ErrorCodes
-    /* 3 */ val errTooManySubtags: typings.bcp47.mod.ErrorCodes.errTooManySubtags with Double = js.native
+    sealed trait errTooManySubtags
+      extends StObject
+         with ErrorCodes
+    /* 3 */ val errTooManySubtags: typings.bcp47.mod.ErrorCodes.errTooManySubtags & Double = js.native
     
     @js.native
-    sealed trait errVariantTooLong extends ErrorCodes
-    /* 1 */ val errVariantTooLong: typings.bcp47.mod.ErrorCodes.errVariantTooLong with Double = js.native
+    sealed trait errVariantTooLong
+      extends StObject
+         with ErrorCodes
+    /* 1 */ val errVariantTooLong: typings.bcp47.mod.ErrorCodes.errVariantTooLong & Double = js.native
   }
   
-  @JSImport("bcp-47", "parse")
-  @js.native
-  def parse(tag: String): Schema = js.native
-  @JSImport("bcp-47", "parse")
-  @js.native
-  def parse(tag: String, options: ParseOptions): Schema = js.native
+  @scala.inline
+  def parse(tag: String): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tag.asInstanceOf[js.Any]).asInstanceOf[Schema]
+  @scala.inline
+  def parse(tag: String, options: ParseOptions): Schema = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tag.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Schema]
   
-  @JSImport("bcp-47", "stringify")
-  @js.native
-  def stringify(schema: Schema): String = js.native
+  @scala.inline
+  def stringify(schema: Schema): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(schema.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait LocaleExtension extends StObject {
     
-    var extensions: js.Array[String] = js.native
+    var extensions: js.Array[String]
     
-    var singleton: String = js.native
+    var singleton: String
   }
   object LocaleExtension {
     
@@ -81,16 +92,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseOptions extends StObject {
     
-    var forgiving: js.UndefOr[Boolean] = js.native
+    var forgiving: js.UndefOr[Boolean] = js.undefined
     
-    var normalize: js.UndefOr[Boolean] = js.native
+    var normalize: js.UndefOr[Boolean] = js.undefined
     
     var warning: js.UndefOr[
         js.Function3[/* errorMessage */ String, /* errorCode */ ErrorCodes, /* offset */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object ParseOptions {
     
@@ -123,26 +133,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Schema extends StObject {
     
-    var extendedLanguageSubtags: js.UndefOr[js.Array[String]] = js.native
+    var extendedLanguageSubtags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var extensions: js.UndefOr[js.Array[LocaleExtension]] = js.native
+    var extensions: js.UndefOr[js.Array[LocaleExtension]] = js.undefined
     
-    var irregular: js.UndefOr[String] = js.native
+    var irregular: js.UndefOr[String] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var privateuse: js.UndefOr[js.Array[String]] = js.native
+    var privateuse: js.UndefOr[js.Array[String]] = js.undefined
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var regular: js.UndefOr[String] = js.native
+    var regular: js.UndefOr[String] = js.undefined
     
-    var script: js.UndefOr[String] = js.native
+    var script: js.UndefOr[String] = js.undefined
     
-    var variants: js.UndefOr[js.Array[String]] = js.native
+    var variants: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Schema {
     

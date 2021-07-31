@@ -3,30 +3,28 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a StreamingDetectIntentRequest. */
-@js.native
 trait IStreamingDetectIntentRequest extends StObject {
   
   /** StreamingDetectIntentRequest inputAudio */
-  var inputAudio: js.UndefOr[Uint8Array | String | Null] = js.native
+  var inputAudio: js.UndefOr[Uint8Array | String | Null] = js.undefined
   
   /** StreamingDetectIntentRequest outputAudioConfig */
-  var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.native
+  var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.undefined
   
   /** StreamingDetectIntentRequest queryInput */
-  var queryInput: js.UndefOr[IQueryInput | Null] = js.native
+  var queryInput: js.UndefOr[IQueryInput | Null] = js.undefined
   
   /** StreamingDetectIntentRequest queryParams */
-  var queryParams: js.UndefOr[IQueryParameters | Null] = js.native
+  var queryParams: js.UndefOr[IQueryParameters | Null] = js.undefined
   
   /** StreamingDetectIntentRequest session */
-  var session: js.UndefOr[String | Null] = js.native
+  var session: js.UndefOr[String | Null] = js.undefined
   
   /** StreamingDetectIntentRequest singleUtterance */
-  var singleUtterance: js.UndefOr[Boolean | Null] = js.native
+  var singleUtterance: js.UndefOr[Boolean | Null] = js.undefined
 }
 object IStreamingDetectIntentRequest {
   

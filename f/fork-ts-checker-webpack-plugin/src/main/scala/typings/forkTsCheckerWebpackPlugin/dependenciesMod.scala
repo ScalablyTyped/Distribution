@@ -2,19 +2,17 @@ package typings.forkTsCheckerWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dependenciesMod {
   
-  @js.native
   trait Dependencies extends StObject {
     
-    var dirs: js.Array[String] = js.native
+    var dirs: js.Array[String]
     
-    var extensions: js.Array[String] = js.native
+    var extensions: js.Array[String]
     
-    var files: js.Array[String] = js.native
+    var files: js.Array[String]
   }
   object Dependencies {
     

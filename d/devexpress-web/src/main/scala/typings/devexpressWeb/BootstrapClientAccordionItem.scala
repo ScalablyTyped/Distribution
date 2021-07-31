@@ -2,59 +2,59 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the Accordion's BootstrapAccordionItem object.
   */
-@js.native
-trait BootstrapClientAccordionItem extends ASPxClientNavBarItem {
+trait BootstrapClientAccordionItem
+  extends StObject
+     with ASPxClientNavBarItem {
   
   /**
     * Gets the CSS class of the icon displayed within the accordion item badge.
     */
-  def GetBadgeIconCssClass(): String = js.native
+  def GetBadgeIconCssClass(): String
   
   /**
     * Gets the text displayed within the accordion item badge.
     */
-  def GetBadgeText(): String = js.native
+  def GetBadgeText(): String
   
   /**
     * Gets the CSS class of the icon displayed by the Accordion item.
     */
-  def GetIconCssClass(): String = js.native
+  def GetIconCssClass(): String
   
   /**
     * Sets the CSS class of the icon displayed within the accordion item badge.
     * @param cssClass A string containing the name of a CSS class.
     */
-  def SetBadgeIconCssClass(cssClass: String): Unit = js.native
+  def SetBadgeIconCssClass(cssClass: String): Unit
   
   /**
     * Sets the text displayed within the accordion item badge.
     * @param text A String specifying the badge text.
     */
-  def SetBadgeText(text: String): Unit = js.native
+  def SetBadgeText(text: String): Unit
   
   /**
     * Sets the CSS class of the icon displayed by the Accordion item.
     * @param cssClass A string containing the name of a CSS class.
     */
-  def SetIconCssClass(cssClass: String): Unit = js.native
+  def SetIconCssClass(cssClass: String): Unit
   
   /**
     * Gets the group to which the current item belongs.
     */
   @JSName("group")
-  var group_BootstrapClientAccordionItem: BootstrapClientAccordionGroup = js.native
+  var group_BootstrapClientAccordionItem: BootstrapClientAccordionGroup
   
   /**
     * Gets the BootstrapClientAccordion object to which the current item belongs.
     */
   @JSName("navBar")
-  var navBar_BootstrapClientAccordionItem: BootstrapClientAccordion = js.native
+  var navBar_BootstrapClientAccordionItem: BootstrapClientAccordion
 }
 object BootstrapClientAccordionItem {
   

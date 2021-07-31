@@ -3,30 +3,30 @@ package typings.reactBootstrapTypeahead.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AsyncTypeaheadProps[T /* <: TypeaheadModel */] extends TypeaheadProps[T] {
+trait AsyncTypeaheadProps[T /* <: TypeaheadModel */]
+  extends StObject
+     with TypeaheadProps[T] {
   
   /*     Delay, in milliseconds, before performing search. */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /* Whether or not a request is currently pending. Necessary for the component to know when new results are available. */
   @JSName("isLoading")
-  var isLoading_AsyncTypeaheadProps: Boolean = js.native
+  var isLoading_AsyncTypeaheadProps: Boolean
   
   /* Callback to perform when the search is executed. */
-  def onSearch(query: String): Unit = js.native
+  def onSearch(query: String): Unit
   
   /* Message displayed in the menu when there is no user input. */
-  var promptText: js.UndefOr[ReactNode] = js.native
+  var promptText: js.UndefOr[ReactNode] = js.undefined
   
   /* Message to display in the menu while the request is pending. */
-  var searchText: js.UndefOr[ReactNode] = js.native
+  var searchText: js.UndefOr[ReactNode] = js.undefined
   
   /* Whether or not the component should cache query results. */
-  var useCache: js.UndefOr[Boolean] = js.native
+  var useCache: js.UndefOr[Boolean] = js.undefined
 }
 object AsyncTypeaheadProps {
   
@@ -37,7 +37,7 @@ object AsyncTypeaheadProps {
   }
   
   @scala.inline
-  implicit class AsyncTypeaheadPropsMutableBuilder[Self <: AsyncTypeaheadProps[_], T /* <: TypeaheadModel */] (val x: Self with AsyncTypeaheadProps[T]) extends AnyVal {
+  implicit class AsyncTypeaheadPropsMutableBuilder[Self <: AsyncTypeaheadProps[?], T /* <: TypeaheadModel */] (val x: Self & AsyncTypeaheadProps[T]) extends AnyVal {
     
     @scala.inline
     def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])

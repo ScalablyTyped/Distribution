@@ -26,10 +26,13 @@ import typings.node.processMod.global.NodeJS.WriteStream
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object executorMod {
+  
+  @JSImport("@ionic/cli-framework/lib/executor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/cli-framework/lib/executor", "AbstractExecutor")
   @js.native
@@ -111,20 +114,18 @@ object executorMod {
   @js.native
   val HELP_FLAGS: js.Array[String] = js.native
   
-  @JSImport("@ionic/cli-framework/lib/executor", "execute")
-  @js.native
-  def execute[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](hasNamespaceArgvEnvRest: (Argv[N, C, M, I, O]) with (Partial[BaseExecutorDeps[C, N, M, I, O]])): js.Promise[Unit] = js.native
+  @scala.inline
+  def execute[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](hasNamespaceArgvEnvRest: (Argv[N, C, M, I, O]) & (Partial[BaseExecutorDeps[C, N, M, I, O]])): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(hasNamespaceArgvEnvRest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
   trait BaseExecutorDeps[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends StObject {
     
-    val colors: js.UndefOr[Colors] = js.native
+    val colors: js.UndefOr[Colors] = js.undefined
     
-    val namespace: N = js.native
+    val namespace: N
     
-    val stderr: js.UndefOr[WriteStream] = js.native
+    val stderr: js.UndefOr[WriteStream] = js.undefined
     
-    val stdout: js.UndefOr[WriteStream] = js.native
+    val stdout: js.UndefOr[WriteStream] = js.undefined
   }
   object BaseExecutorDeps {
     
@@ -135,7 +136,7 @@ object executorMod {
     }
     
     @scala.inline
-    implicit class BaseExecutorDepsMutableBuilder[Self <: BaseExecutorDeps[_, _, _, _, _], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self with (BaseExecutorDeps[C, N, M, I, O])) extends AnyVal {
+    implicit class BaseExecutorDepsMutableBuilder[Self <: BaseExecutorDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (BaseExecutorDeps[C, N, M, I, O])) extends AnyVal {
       
       @scala.inline
       def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
@@ -160,10 +161,9 @@ object executorMod {
     }
   }
   
-  @js.native
   trait BaseExecutorFormatHelpOptions extends StObject {
     
-    var format: js.UndefOr[terminal | json] = js.native
+    var format: js.UndefOr[terminal | json] = js.undefined
   }
   object BaseExecutorFormatHelpOptions {
     
@@ -184,10 +184,9 @@ object executorMod {
     }
   }
   
-  @js.native
   trait ExecutorOperations extends StObject {
     
-    val RPC: String = js.native
+    val RPC: String
   }
   object ExecutorOperations {
     

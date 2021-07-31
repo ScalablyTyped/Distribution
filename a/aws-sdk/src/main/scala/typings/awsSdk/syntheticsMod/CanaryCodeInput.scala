@@ -2,36 +2,34 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanaryCodeInput extends StObject {
   
   /**
     * The entry point to use for the source code when running the canary. This value must end with the string .handler.
     */
-  var Handler: String = js.native
+  var Handler: String
   
   /**
     * If your canary script is located in S3, specify the full bucket name here. The bucket must already exist. Specify the full bucket name, including s3:// as the start of the bucket name.
     */
-  var S3Bucket: js.UndefOr[String] = js.native
+  var S3Bucket: js.UndefOr[String] = js.undefined
   
   /**
     * The S3 key of your script. For more information, see Working with Amazon S3 Objects.
     */
-  var S3Key: js.UndefOr[String] = js.native
+  var S3Key: js.UndefOr[String] = js.undefined
   
   /**
     * The S3 version ID of your script.
     */
-  var S3Version: js.UndefOr[String] = js.native
+  var S3Version: js.UndefOr[String] = js.undefined
   
   /**
     * If you input your canary script directly into the canary instead of referring to an S3 location, the value of this parameter is the .zip file that contains the script. It can be up to 5 MB.
     */
-  var ZipFile: js.UndefOr[_Blob] = js.native
+  var ZipFile: js.UndefOr[_Blob] = js.undefined
 }
 object CanaryCodeInput {
   

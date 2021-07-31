@@ -4,15 +4,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is thrown when a {@link NumberFormat} string is syntactically incorrect. */
-@js.native
-trait MalformedNumberFormatException extends Exception {
+trait MalformedNumberFormatException
+  extends StObject
+     with Exception {
   
   /** contains the character position in the string where the malformation begins. */
-  var CheckPos: Double = js.native
+  var CheckPos: Double
 }
 object MalformedNumberFormatException {
   

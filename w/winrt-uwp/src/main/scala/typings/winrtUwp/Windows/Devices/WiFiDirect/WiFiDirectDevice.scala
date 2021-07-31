@@ -8,16 +8,15 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.connectionstatuschanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages connections to associated Wi-Fi Direct devices. */
 @js.native
 trait WiFiDirectDevice extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[WiFiDirectDevice, _]): Unit = js.native
+  def addEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[WiFiDirectDevice, js.Any]): Unit = js.native
   
   /** Close the active Wi-Fi Direct device connection. */
   def close(): Unit = js.native
@@ -35,12 +34,12 @@ trait WiFiDirectDevice extends StObject {
   def getConnectionEndpointPairs(): IVectorView[EndpointPair] = js.native
   
   /** Occurs when a Wi-Fi Direct device connection is connected or disconnected. */
-  def onconnectionstatuschanged(ev: js.Any with WinRTEvent[WiFiDirectDevice]): Unit = js.native
+  def onconnectionstatuschanged(ev: js.Any & WinRTEvent[WiFiDirectDevice]): Unit = js.native
   /** Occurs when a Wi-Fi Direct device connection is connected or disconnected. */
   @JSName("onconnectionstatuschanged")
-  var onconnectionstatuschanged_Original: TypedEventHandler[WiFiDirectDevice, _] = js.native
+  var onconnectionstatuschanged_Original: TypedEventHandler[WiFiDirectDevice, js.Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[WiFiDirectDevice, _]): Unit = js.native
+  def removeEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[WiFiDirectDevice, js.Any]): Unit = js.native
 }

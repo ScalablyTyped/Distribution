@@ -4,21 +4,19 @@ import typings.chromeApps.chromeAppsStrings.ecdsaSign
 import typings.chromeApps.chromeAppsStrings.rsaSign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ECDSASIGN extends StObject {
   
-  var ECDSA_SIGN: ecdsaSign = js.native
+  var ECDSA_SIGN: ecdsaSign
   
-  var RSA_SIGN: rsaSign = js.native
+  var RSA_SIGN: rsaSign
 }
 object ECDSASIGN {
   
   @scala.inline
-  def apply(ECDSA_SIGN: ecdsaSign, RSA_SIGN: rsaSign): ECDSASIGN = {
-    val __obj = js.Dynamic.literal(ECDSA_SIGN = ECDSA_SIGN.asInstanceOf[js.Any], RSA_SIGN = RSA_SIGN.asInstanceOf[js.Any])
+  def apply(): ECDSASIGN = {
+    val __obj = js.Dynamic.literal(ECDSA_SIGN = "ecdsaSign", RSA_SIGN = "rsaSign")
     __obj.asInstanceOf[ECDSASIGN]
   }
   

@@ -1,9 +1,12 @@
 package typings.winrt.global.Windows.Devices
 
+import typings.winrt.Windows.Devices.Input.MouseDelta
+import typings.winrt.Windows.Devices.Input.PointerDeviceType
+import typings.winrt.Windows.Devices.Input.PointerDeviceUsage
 import typings.winrt.Windows.Foundation.Collections.IVectorView
+import typings.winrt.Windows.Foundation.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Input {
@@ -11,44 +14,101 @@ object Input {
   @JSGlobal("Windows.Devices.Input.KeyboardCapabilities")
   @js.native
   class KeyboardCapabilities ()
-    extends typings.winrt.Windows.Devices.Input.KeyboardCapabilities
+    extends StObject
+       with typings.winrt.Windows.Devices.Input.KeyboardCapabilities {
+    
+    /* CompleteClass */
+    var keyboardPresent: Double = js.native
+  }
   
   @JSGlobal("Windows.Devices.Input.MouseCapabilities")
   @js.native
   class MouseCapabilities ()
-    extends typings.winrt.Windows.Devices.Input.MouseCapabilities
+    extends StObject
+       with typings.winrt.Windows.Devices.Input.MouseCapabilities {
+    
+    /* CompleteClass */
+    var horizontalWheelPresent: Double = js.native
+    
+    /* CompleteClass */
+    var mousePresent: Double = js.native
+    
+    /* CompleteClass */
+    var numberOfButtons: Double = js.native
+    
+    /* CompleteClass */
+    var swapButtons: Double = js.native
+    
+    /* CompleteClass */
+    var verticalWheelPresent: Double = js.native
+  }
   
   @JSGlobal("Windows.Devices.Input.MouseDevice")
   @js.native
   class MouseDevice ()
-    extends typings.winrt.Windows.Devices.Input.MouseDevice
+    extends StObject
+       with typings.winrt.Windows.Devices.Input.MouseDevice {
+    
+    /* CompleteClass */
+    var onmousemoved: js.Any = js.native
+  }
   /* static members */
   object MouseDevice {
     
-    @JSGlobal("Windows.Devices.Input.MouseDevice.getForCurrentView")
+    @JSGlobal("Windows.Devices.Input.MouseDevice")
     @js.native
-    def getForCurrentView(): typings.winrt.Windows.Devices.Input.MouseDevice = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getForCurrentView(): typings.winrt.Windows.Devices.Input.MouseDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.Devices.Input.MouseDevice]
   }
   
   @JSGlobal("Windows.Devices.Input.MouseEventArgs")
   @js.native
   class MouseEventArgs ()
-    extends typings.winrt.Windows.Devices.Input.MouseEventArgs
+    extends StObject
+       with typings.winrt.Windows.Devices.Input.MouseEventArgs {
+    
+    /* CompleteClass */
+    var mouseDelta: MouseDelta = js.native
+  }
   
   @JSGlobal("Windows.Devices.Input.PointerDevice")
   @js.native
   class PointerDevice ()
-    extends typings.winrt.Windows.Devices.Input.PointerDevice
+    extends StObject
+       with typings.winrt.Windows.Devices.Input.PointerDevice {
+    
+    /* CompleteClass */
+    var isIntegrated: Boolean = js.native
+    
+    /* CompleteClass */
+    var maxContacts: Double = js.native
+    
+    /* CompleteClass */
+    var physicalDeviceRect: Rect = js.native
+    
+    /* CompleteClass */
+    var pointerDeviceType: PointerDeviceType = js.native
+    
+    /* CompleteClass */
+    var screenRect: Rect = js.native
+    
+    /* CompleteClass */
+    var supportedUsages: IVectorView[PointerDeviceUsage] = js.native
+  }
   /* static members */
   object PointerDevice {
     
-    @JSGlobal("Windows.Devices.Input.PointerDevice.getPointerDevice")
+    @JSGlobal("Windows.Devices.Input.PointerDevice")
     @js.native
-    def getPointerDevice(pointerId: Double): typings.winrt.Windows.Devices.Input.PointerDevice = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("Windows.Devices.Input.PointerDevice.getPointerDevices")
-    @js.native
-    def getPointerDevices(): IVectorView[typings.winrt.Windows.Devices.Input.PointerDevice] = js.native
+    @scala.inline
+    def getPointerDevice(pointerId: Double): typings.winrt.Windows.Devices.Input.PointerDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerDevice")(pointerId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Devices.Input.PointerDevice]
+    
+    @scala.inline
+    def getPointerDevices(): IVectorView[typings.winrt.Windows.Devices.Input.PointerDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerDevices")().asInstanceOf[IVectorView[typings.winrt.Windows.Devices.Input.PointerDevice]]
   }
   
   @JSGlobal("Windows.Devices.Input.PointerDeviceType")
@@ -56,17 +116,25 @@ object Input {
   object PointerDeviceType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrt.Windows.Devices.Input.PointerDeviceType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrt.Windows.Devices.Input.PointerDeviceType & Double] = js.native
     
-    /* 2 */ val mouse: typings.winrt.Windows.Devices.Input.PointerDeviceType.mouse with Double = js.native
+    /* 2 */ val mouse: typings.winrt.Windows.Devices.Input.PointerDeviceType.mouse & Double = js.native
     
-    /* 1 */ val pen: typings.winrt.Windows.Devices.Input.PointerDeviceType.pen with Double = js.native
+    /* 1 */ val pen: typings.winrt.Windows.Devices.Input.PointerDeviceType.pen & Double = js.native
     
-    /* 0 */ val touch: typings.winrt.Windows.Devices.Input.PointerDeviceType.touch with Double = js.native
+    /* 0 */ val touch: typings.winrt.Windows.Devices.Input.PointerDeviceType.touch & Double = js.native
   }
   
   @JSGlobal("Windows.Devices.Input.TouchCapabilities")
   @js.native
   class TouchCapabilities ()
-    extends typings.winrt.Windows.Devices.Input.TouchCapabilities
+    extends StObject
+       with typings.winrt.Windows.Devices.Input.TouchCapabilities {
+    
+    /* CompleteClass */
+    var contacts: Double = js.native
+    
+    /* CompleteClass */
+    var touchPresent: Double = js.native
+  }
 }

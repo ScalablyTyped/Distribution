@@ -5,10 +5,13 @@ import typings.expoLocation.locationTypesMod.LocationCallback
 import typings.expoLocation.locationTypesMod.LocationHeadingCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object locationSubscribersMod {
+  
+  @JSImport("expo-location/build/LocationSubscribers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("expo-location/build/LocationSubscribers", "HeadingSubscriber")
   @js.native
@@ -18,15 +21,14 @@ object locationSubscribersMod {
   @js.native
   val LocationSubscriber: Subscriber[LocationCallback] = js.native
   
-  @JSImport("expo-location/build/LocationSubscribers", "_getCurrentWatchId")
-  @js.native
-  def getCurrentWatchId(): Double = js.native
+  @scala.inline
+  def getCurrentWatchId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_getCurrentWatchId")().asInstanceOf[Double]
   
-  @js.native
   trait EventObject
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var watchId: Double = js.native
+    var watchId: Double
   }
   object EventObject {
     
@@ -44,30 +46,29 @@ object locationSubscribersMod {
     }
   }
   
-  @js.native
   trait Subscriber[CallbackType /* <: LocationCallback | LocationHeadingCallback */] extends StObject {
     
-    var callbacks: js.Any = js.native
+    var callbacks: js.Any
     
-    var eventDataField: js.Any = js.native
+    var eventDataField: js.Any
     
-    var eventName: js.Any = js.native
+    var eventName: js.Any
     
-    var eventSubscription: js.Any = js.native
+    var eventSubscription: js.Any
     
-    def maybeInitializeSubscription(): Unit = js.native
+    def maybeInitializeSubscription(): Unit
     
     /**
       * Registers given callback under new id which is then returned.
       */
-    def registerCallback(callback: CallbackType): Double = js.native
+    def registerCallback(callback: CallbackType): Double
     
-    def trigger(event: EventObject): Unit = js.native
+    def trigger(event: EventObject): Unit
     
     /**
       * Unregisters a callback with given id and revokes the subscription if possible.
       */
-    def unregisterCallback(id: Double): Unit = js.native
+    def unregisterCallback(id: Double): Unit
   }
   object Subscriber {
     
@@ -87,7 +88,7 @@ object locationSubscribersMod {
     }
     
     @scala.inline
-    implicit class SubscriberMutableBuilder[Self <: Subscriber[_], CallbackType /* <: LocationCallback | LocationHeadingCallback */] (val x: Self with Subscriber[CallbackType]) extends AnyVal {
+    implicit class SubscriberMutableBuilder[Self <: Subscriber[?], CallbackType /* <: LocationCallback | LocationHeadingCallback */] (val x: Self & Subscriber[CallbackType]) extends AnyVal {
       
       @scala.inline
       def setCallbacks(value: js.Any): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])

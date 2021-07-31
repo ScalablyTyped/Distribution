@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiaInventorySettings extends StObject {
   
   /** The email of the contact for the inventory verification process. */
-  var inventoryVerificationContactEmail: js.UndefOr[String] = js.native
+  var inventoryVerificationContactEmail: js.UndefOr[String] = js.undefined
   
   /** The name of the contact for the inventory verification process. */
-  var inventoryVerificationContactName: js.UndefOr[String] = js.native
+  var inventoryVerificationContactName: js.UndefOr[String] = js.undefined
   
   /** The status of the verification contact. Acceptable values are: - "`active`" - "`inactive`" - "`pending`" */
-  var inventoryVerificationContactStatus: js.UndefOr[String] = js.native
+  var inventoryVerificationContactStatus: js.UndefOr[String] = js.undefined
   
   /** The status of the inventory verification process. Acceptable values are: - "`active`" - "`inactive`" - "`pending`" */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object LiaInventorySettings {
   

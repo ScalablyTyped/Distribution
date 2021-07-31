@@ -5,75 +5,75 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the value and settings of a date field. */
-@js.native
-trait XDateField extends XInterface {
+trait XDateField
+  extends StObject
+     with XInterface {
   
   /** returns the date value which is currently displayed in the date field. */
-  var Date: typings.activexLibreoffice.com_.sun.star.util.Date = js.native
+  var Date: typings.activexLibreoffice.com_.sun.star.util.Date
   
   /** returns the currently set first value which is set on POS1 key. */
-  var First: Date = js.native
+  var First: Date
   
   /** returns the currently set last value which is set on END key. */
-  var Last: Date = js.native
+  var Last: Date
   
   /** returns the currently set maximum date value that can be entered by the user. */
-  var Max: Date = js.native
+  var Max: Date
   
   /** returns the currently set minimum date value that can be entered by the user. */
-  var Min: Date = js.native
+  var Min: Date
   
   /** returns the date value which is currently displayed in the date field. */
-  def getDate(): Date = js.native
+  def getDate(): Date
   
   /** returns the currently set first value which is set on POS1 key. */
-  def getFirst(): Date = js.native
+  def getFirst(): Date
   
   /** returns the currently set last value which is set on END key. */
-  def getLast(): Date = js.native
+  def getLast(): Date
   
   /** returns the currently set maximum date value that can be entered by the user. */
-  def getMax(): Date = js.native
+  def getMax(): Date
   
   /** returns the currently set minimum date value that can be entered by the user. */
-  def getMin(): Date = js.native
+  def getMin(): Date
   
   /** returns whether currently an empty value is set for the date. */
-  def isEmpty(): Boolean = js.native
+  def isEmpty(): Boolean
   
   /** determines if the long date format is currently used. */
-  def isLongFormat(): Boolean = js.native
+  def isLongFormat(): Boolean
   
   /** returns whether the format is currently checked during user input. */
-  def isStrictFormat(): Boolean = js.native
+  def isStrictFormat(): Boolean
   
   /** sets the date value which is displayed in the date field. */
-  def setDate(Date: Date): Unit = js.native
+  def setDate(Date: Date): Unit
   
   /** sets an empty value for the date. */
-  def setEmpty(): Unit = js.native
+  def setEmpty(): Unit
   
   /** sets the first value to be set on POS1 key. */
-  def setFirst(Date: Date): Unit = js.native
+  def setFirst(Date: Date): Unit
   
   /** sets the last value to be set on END key. */
-  def setLast(Date: Date): Unit = js.native
+  def setLast(Date: Date): Unit
   
   /** determines if the long date format is to be used. */
-  def setLongFormat(bLong: Boolean): Unit = js.native
+  def setLongFormat(bLong: Boolean): Unit
   
   /** sets the maximum date value that can be entered by the user. */
-  def setMax(Date: Date): Unit = js.native
+  def setMax(Date: Date): Unit
   
   /** sets the minimum date value that can be entered by the user. */
-  def setMin(Date: Date): Unit = js.native
+  def setMin(Date: Date): Unit
   
   /** determines if the format is checked during user input. */
-  def setStrictFormat(bStrict: Boolean): Unit = js.native
+  def setStrictFormat(bStrict: Boolean): Unit
 }
 object XDateField {
   

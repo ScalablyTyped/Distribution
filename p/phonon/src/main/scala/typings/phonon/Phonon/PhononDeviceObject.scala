@@ -2,19 +2,17 @@ package typings.phonon.Phonon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhononDeviceObject extends StObject {
   
-  var ANDROID: String = js.native
+  var ANDROID: String
   
-  var IOS: String = js.native
+  var IOS: String
   
-  var os: String = js.native
+  var os: String
   
-  var osVersion: String = js.native
+  var osVersion: String
 }
 object PhononDeviceObject {
   

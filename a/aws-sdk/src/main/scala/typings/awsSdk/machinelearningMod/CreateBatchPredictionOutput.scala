@@ -2,16 +2,14 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBatchPredictionOutput extends StObject {
   
   /**
     * A user-supplied ID that uniquely identifies the BatchPrediction. This value is identical to the value of the BatchPredictionId in the request.
     */
-  var BatchPredictionId: js.UndefOr[EntityId] = js.native
+  var BatchPredictionId: js.UndefOr[EntityId] = js.undefined
 }
 object CreateBatchPredictionOutput {
   

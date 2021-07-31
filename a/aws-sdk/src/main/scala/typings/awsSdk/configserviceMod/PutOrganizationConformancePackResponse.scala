@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutOrganizationConformancePackResponse extends StObject {
   
   /**
     * ARN of the organization conformance pack.
     */
-  var OrganizationConformancePackArn: js.UndefOr[StringWithCharLimit256] = js.native
+  var OrganizationConformancePackArn: js.UndefOr[StringWithCharLimit256] = js.undefined
 }
 object PutOrganizationConformancePackResponse {
   

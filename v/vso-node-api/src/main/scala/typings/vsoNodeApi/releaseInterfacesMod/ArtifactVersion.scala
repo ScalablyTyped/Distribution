@@ -2,21 +2,19 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactVersion extends StObject {
   
-  var alias: String = js.native
+  var alias: String
   
-  var defaultVersion: BuildVersion = js.native
+  var defaultVersion: BuildVersion
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var sourceId: String = js.native
+  var sourceId: String
   
-  var versions: js.Array[BuildVersion] = js.native
+  var versions: js.Array[BuildVersion]
 }
 object ArtifactVersion {
   

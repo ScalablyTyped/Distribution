@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlRunConfiguration extends StObject {
   
   /**
     * The input source ID. You can get this ID by calling the DescribeApplication operation. 
     */
-  var InputId: Id = js.native
+  var InputId: Id
   
   /**
     * The point at which you want the application to start processing records from the streaming source. 
     */
-  var InputStartingPositionConfiguration: typings.awsSdk.kinesisanalyticsv2Mod.InputStartingPositionConfiguration = js.native
+  var InputStartingPositionConfiguration: typings.awsSdk.kinesisanalyticsv2Mod.InputStartingPositionConfiguration
 }
 object SqlRunConfiguration {
   

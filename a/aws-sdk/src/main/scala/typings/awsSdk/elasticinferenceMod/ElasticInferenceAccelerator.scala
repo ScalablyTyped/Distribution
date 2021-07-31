@@ -2,36 +2,34 @@ package typings.awsSdk.elasticinferenceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticInferenceAccelerator extends StObject {
   
   /**
     *  The health of the Elastic Inference Accelerator. 
     */
-  var acceleratorHealth: js.UndefOr[ElasticInferenceAcceleratorHealth] = js.native
+  var acceleratorHealth: js.UndefOr[ElasticInferenceAcceleratorHealth] = js.undefined
   
   /**
     *  The ID of the Elastic Inference Accelerator. 
     */
-  var acceleratorId: js.UndefOr[AcceleratorId] = js.native
+  var acceleratorId: js.UndefOr[AcceleratorId] = js.undefined
   
   /**
     *  The type of the Elastic Inference Accelerator. 
     */
-  var acceleratorType: js.UndefOr[AcceleratorTypeName] = js.native
+  var acceleratorType: js.UndefOr[AcceleratorTypeName] = js.undefined
   
   /**
     *  The ARN of the resource that the Elastic Inference Accelerator is attached to. 
     */
-  var attachedResource: js.UndefOr[ResourceArn] = js.native
+  var attachedResource: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     *  The availability zone where the Elastic Inference Accelerator is present. 
     */
-  var availabilityZone: js.UndefOr[AvailabilityZone] = js.native
+  var availabilityZone: js.UndefOr[AvailabilityZone] = js.undefined
 }
 object ElasticInferenceAccelerator {
   

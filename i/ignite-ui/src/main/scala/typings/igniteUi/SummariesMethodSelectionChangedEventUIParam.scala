@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SummariesMethodSelectionChangedEventUIParam extends StObject {
   
   /**
     * Gets the column key of the column where it is changed selection of summary method.
     */
-  var columnKey: js.UndefOr[String] = js.native
+  var columnKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets whether method is selected or not.
     */
-  var isSelected: js.UndefOr[Boolean] = js.native
+  var isSelected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets the summary method name.
     */
-  var methodName: js.UndefOr[String] = js.native
+  var methodName: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the igGridSummaries widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object SummariesMethodSelectionChangedEventUIParam {
   

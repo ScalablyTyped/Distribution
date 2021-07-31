@@ -2,41 +2,39 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestAuthorizationRequest extends StObject {
   
   /**
     * A list of authorization info objects. Simulating authorization will create a response for each authInfo object in the list.
     */
-  var authInfos: AuthInfos = js.native
+  var authInfos: AuthInfos
   
   /**
     * The MQTT client ID.
     */
-  var clientId: js.UndefOr[ClientId] = js.native
+  var clientId: js.UndefOr[ClientId] = js.undefined
   
   /**
     * The Cognito identity pool ID.
     */
-  var cognitoIdentityPoolId: js.UndefOr[CognitoIdentityPoolId] = js.native
+  var cognitoIdentityPoolId: js.UndefOr[CognitoIdentityPoolId] = js.undefined
   
   /**
     * When testing custom authorization, the policies specified here are treated as if they are attached to the principal being authorized.
     */
-  var policyNamesToAdd: js.UndefOr[PolicyNames] = js.native
+  var policyNamesToAdd: js.UndefOr[PolicyNames] = js.undefined
   
   /**
     * When testing custom authorization, the policies specified here are treated as if they are not attached to the principal being authorized.
     */
-  var policyNamesToSkip: js.UndefOr[PolicyNames] = js.native
+  var policyNamesToSkip: js.UndefOr[PolicyNames] = js.undefined
   
   /**
     * The principal. Valid principals are CertificateArn (arn:aws:iot:region:accountId:cert/certificateId), thingGroupArn (arn:aws:iot:region:accountId:thinggroup/groupName) and CognitoId (region:id).
     */
-  var principal: js.UndefOr[Principal] = js.native
+  var principal: js.UndefOr[Principal] = js.undefined
 }
 object TestAuthorizationRequest {
   

@@ -2,15 +2,13 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CitySearchResult extends StObject {
   
-  var bounds: Bounds = js.native
+  var bounds: Bounds
   
-  var city: String = js.native
+  var city: String
 }
 object CitySearchResult {
   

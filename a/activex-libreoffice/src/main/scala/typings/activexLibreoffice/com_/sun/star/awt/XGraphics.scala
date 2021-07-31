@@ -6,18 +6,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the basic output operation of a device. */
-@js.native
-trait XGraphics extends XInterface {
+trait XGraphics
+  extends StObject
+     with XInterface {
   
   /** returns the device of this graphics. */
-  val Device: XDevice = js.native
+  val Device: XDevice
   
   /** returns the font metric of the current font. */
-  val FontMetric: SimpleFontMetric = js.native
+  val FontMetric: SimpleFontMetric
   
   /** copies a rectangle of pixels from another device into this one. */
   def copy(
@@ -30,7 +30,7 @@ trait XGraphics extends XInterface {
     nDestY: Double,
     nDestWidth: Double,
     nDestHeight: Double
-  ): Unit = js.native
+  ): Unit
   
   /** draws a part of the specified bitmap to the output device. */
   def draw(
@@ -43,7 +43,7 @@ trait XGraphics extends XInterface {
     DestY: Double,
     DestWidth: Double,
     DestHeight: Double
-  ): Unit = js.native
+  ): Unit
   
   /** draws an arc (part of a circle) in the output device. */
   def drawArc(
@@ -55,7 +55,7 @@ trait XGraphics extends XInterface {
     Y1: Double,
     X2: Double,
     Y2: Double
-  ): Unit = js.native
+  ): Unit
   
   /**
     * draws a chord of a circular area in the output device.
@@ -71,16 +71,16 @@ trait XGraphics extends XInterface {
     nY1: Double,
     nX2: Double,
     nY2: Double
-  ): Unit = js.native
+  ): Unit
   
   /** draws an ellipse in the output device. */
-  def drawEllipse(X: Double, Y: Double, Width: Double, Height: Double): Unit = js.native
+  def drawEllipse(X: Double, Y: Double, Width: Double, Height: Double): Unit
   
   /** draws a color dispersion in the output device. */
-  def drawGradient(nX: Double, nY: Double, nWidth: Double, Height: Double, aGradient: Gradient): Unit = js.native
+  def drawGradient(nX: Double, nY: Double, nWidth: Double, Height: Double, aGradient: Gradient): Unit
   
   /** draws a line in the output device. */
-  def drawLine(X1: Double, Y1: Double, X2: Double, Y2: Double): Unit = js.native
+  def drawLine(X1: Double, Y1: Double, X2: Double, Y2: Double): Unit
   
   /** draws a circular area in the output device. */
   def drawPie(
@@ -92,74 +92,74 @@ trait XGraphics extends XInterface {
     Y1: Double,
     X2: Double,
     Y2: Double
-  ): Unit = js.native
+  ): Unit
   
   /** sets a single pixel in the output device. */
-  def drawPixel(X: Double, Y: Double): Unit = js.native
+  def drawPixel(X: Double, Y: Double): Unit
   
   /** draws multiple lines in the output device at once. */
-  def drawPolyLine(DataX: SeqEquiv[Double], DataY: SeqEquiv[Double]): Unit = js.native
+  def drawPolyLine(DataX: SeqEquiv[Double], DataY: SeqEquiv[Double]): Unit
   
   /** draws multiple polygons in the output device at once. */
-  def drawPolyPolygon(DataX: SeqEquiv[SeqEquiv[Double]], DataY: SeqEquiv[SeqEquiv[Double]]): Unit = js.native
+  def drawPolyPolygon(DataX: SeqEquiv[SeqEquiv[Double]], DataY: SeqEquiv[SeqEquiv[Double]]): Unit
   
   /** draws a polygon line in the output device. */
-  def drawPolygon(DataX: SeqEquiv[Double], DataY: SeqEquiv[Double]): Unit = js.native
+  def drawPolygon(DataX: SeqEquiv[Double], DataY: SeqEquiv[Double]): Unit
   
   /** draws a rectangle in the output device. */
-  def drawRect(X: Double, Y: Double, Width: Double, Height: Double): Unit = js.native
+  def drawRect(X: Double, Y: Double, Width: Double, Height: Double): Unit
   
   /** draws a rectangle with rounded corners in the output device. */
-  def drawRoundedRect(X: Double, Y: Double, Width: Double, Height: Double, nHorzRound: Double, nVertRound: Double): Unit = js.native
+  def drawRoundedRect(X: Double, Y: Double, Width: Double, Height: Double, nHorzRound: Double, nVertRound: Double): Unit
   
   /** draws text in the output device. */
-  def drawText(X: Double, Y: Double, Text: String): Unit = js.native
+  def drawText(X: Double, Y: Double, Text: String): Unit
   
   /** draws texts in the output device using an explicit kerning table. */
-  def drawTextArray(X: Double, Y: Double, Text: String, Longs: SeqEquiv[Double]): Unit = js.native
+  def drawTextArray(X: Double, Y: Double, Text: String, Longs: SeqEquiv[Double]): Unit
   
   /** returns the device of this graphics. */
-  def getDevice(): XDevice = js.native
+  def getDevice(): XDevice
   
   /** returns the font metric of the current font. */
-  def getFontMetric(): SimpleFontMetric = js.native
+  def getFontMetric(): SimpleFontMetric
   
   /** builds the intersection with the current region. */
-  def intersectClipRegion(xClipping: XRegion): Unit = js.native
+  def intersectClipRegion(xClipping: XRegion): Unit
   
   /** restores all previous saved settings. */
-  def pop(): Unit = js.native
+  def pop(): Unit
   
   /** saves all current settings (Font, TextColor, TextFillColor, LineColor, FillColor, RasterOp, ClipRegion). */
-  def push(): Unit = js.native
+  def push(): Unit
   
   /** creates a new font and sets the font. */
-  def selectFont(aDescription: FontDescriptor): Unit = js.native
+  def selectFont(aDescription: FontDescriptor): Unit
   
   /** sets the clip region to specified clipping. */
-  def setClipRegion(Clipping: XRegion): Unit = js.native
+  def setClipRegion(Clipping: XRegion): Unit
   
   /** sets the fill color. */
-  def setFillColor(nColor: Color): Unit = js.native
+  def setFillColor(nColor: Color): Unit
   
   /** sets the font used by text operations. */
-  def setFont(xNewFont: XFont): Unit = js.native
+  def setFont(xNewFont: XFont): Unit
   
   /** sets the line color. */
-  def setLineColor(nColor: Color): Unit = js.native
+  def setLineColor(nColor: Color): Unit
   
   /**
     * sets the raster operation.
     *
     * If the device does not support raster operations then this call is ignored.
     */
-  def setRasterOp(ROP: RasterOperation): Unit = js.native
+  def setRasterOp(ROP: RasterOperation): Unit
   
   /** sets the text color used by text operations. */
-  def setTextColor(nColor: Color): Unit = js.native
+  def setTextColor(nColor: Color): Unit
   
   /** sets the fill color used by text operations. */
-  def setTextFillColor(nColor: Color): Unit = js.native
+  def setTextFillColor(nColor: Color): Unit
 }
 object XGraphics {
   

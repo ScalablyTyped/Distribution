@@ -6,14 +6,15 @@ import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.ClientObjectList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods for operations related to people.
   Note: The SocialFollowingManager object is the recommended object for performing Following People and Following Content tasks.
   However, PeopleManager provides some methods that SocialFollowingManager doesn't. */
 @js.native
-trait PeopleManager extends ClientObject {
+trait PeopleManager
+  extends StObject
+     with ClientObject {
   
   def amIFollowedBy(accountName: String): BooleanResult = js.native
   
@@ -47,7 +48,7 @@ trait PeopleManager extends ClientObject {
   def getPropertiesFor(accountName: String): PersonProperties = js.native
   
   /** Gets the specified user profile properties for the specified user. */
-  def getUserProfilePropertiesFor(propertiesForUser: UserProfilePropertiesForUser): js.Array[_] = js.native
+  def getUserProfilePropertiesFor(propertiesForUser: UserProfilePropertiesForUser): js.Array[js.Any] = js.native
   
   /** Gets the specified user profile property for the specified user. */
   def getUserProfilePropertyFor(accountName: String, propertyName: String): String = js.native

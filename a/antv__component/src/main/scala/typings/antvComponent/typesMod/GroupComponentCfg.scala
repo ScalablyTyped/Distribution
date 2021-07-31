@@ -3,23 +3,23 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.interfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GroupComponentCfg extends ComponentCfg {
+trait GroupComponentCfg
+  extends StObject
+     with ComponentCfg {
   
   /**
     * 组件的容器
     * @type {IGroup}
     */
-  var container: IGroup = js.native
+  var container: IGroup
   
   /**
     * 当前组件对应的 group，一个 container 中可能会有多个组件，但是一个组件都有一个自己的 Group
     * @type {IGroup}
     */
-  var group: js.UndefOr[IGroup] = js.native
+  var group: js.UndefOr[IGroup] = js.undefined
 }
 object GroupComponentCfg {
   

@@ -2,24 +2,22 @@ package typings.semanticUiForm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-form.SemanticUI.Form.SelectorSettings._Impl, keyof semantic-ui-form.SemanticUI.Form.SelectorSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplField extends StObject {
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var input: js.UndefOr[String] = js.native
+  var input: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var prompt: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.undefined
   
-  var submit: js.UndefOr[String] = js.native
+  var submit: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplField {
   

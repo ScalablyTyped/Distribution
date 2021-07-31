@@ -15,175 +15,173 @@ import typings.tablesorter.tablesorterConfigurationStoreMod.TablesorterConfigura
 import typings.tablesorter.validSelectSourcesMod.ValidSelectSources
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filterOptionsMod {
   
-  @js.native
   trait FilterOptions[TElement] extends StObject {
     
     /**
       * A set of classes to apply to the filter-cells.
       */
-    var filter_cellFilter: js.UndefOr[String | js.Array[String]] = js.native
+    var filter_cellFilter: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * A value indicating whether only the filtered column of child-rows should be considered when filtering.
       */
-    var filter_childByColumn: js.UndefOr[Boolean] = js.native
+    var filter_childByColumn: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether child-rows should be considered when filtering.
       */
-    var filter_childRows: js.UndefOr[Boolean] = js.native
+    var filter_childRows: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether siblings should be displayed when filtering.
       */
-    var filter_childWithSibs: js.UndefOr[Boolean] = js.native
+    var filter_childWithSibs: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether searches using the `{index}:{query}` in the anyMatch-textbox is allowed.
       */
-    var filter_columnAnyMatch: js.UndefOr[Boolean] = js.native
+    var filter_columnAnyMatch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether filtering is enabled.
       */
-    var filter_columnFilters: js.UndefOr[Boolean] = js.native
+    var filter_columnFilters: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A CSS class which is applied to each filter-cell.
       */
-    var filter_cssFilter: js.UndefOr[String | js.Array[String]] = js.native
+    var filter_cssFilter: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The attribute-name which is used for querying the default filter-value.
       */
-    var filter_defaultAttrib: js.UndefOr[String] = js.native
+    var filter_defaultAttrib: js.UndefOr[String] = js.undefined
     
     /**
       * The default filters to apply.
       */
-    var filter_defaultFilter: js.UndefOr[MappedSettings[String]] = js.native
+    var filter_defaultFilter: js.UndefOr[MappedSettings[String]] = js.undefined
     
     /**
       * A set of filters to prevent.
       */
-    var filter_excludeFilter: js.UndefOr[MappedSettings[String]] = js.native
+    var filter_excludeFilter: js.UndefOr[MappedSettings[String]] = js.undefined
     
     /**
       * The jQuery-selector for querying the external search-box.
       */
-    var filter_external: js.UndefOr[Selector] = js.native
+    var filter_external: js.UndefOr[Selector] = js.undefined
     
     /**
       * The template for generating the ARIA-label of the filter-control.
       */
-    var filter_filterLabel: js.UndefOr[String] = js.native
+    var filter_filterLabel: js.UndefOr[String] = js.undefined
     
     /**
       * A CSS class which is applied for each cel which is filtered.
       */
-    var filter_filteredRow: js.UndefOr[String] = js.native
+    var filter_filteredRow: js.UndefOr[String] = js.undefined
     
     /**
       * The filter-controls to apply.
       */
-    var filter_formatter: js.UndefOr[MappedSettings[FilterControlFactory]] = js.native
+    var filter_formatter: js.UndefOr[MappedSettings[FilterControlFactory]] = js.undefined
     
     /**
       * A set of filter-functions to apply for the columns.
       */
-    var filter_functions: js.UndefOr[MappedSettings[FilterFunctionCollection[TElement] | FilterFunction[TElement]]] = js.native
+    var filter_functions: js.UndefOr[MappedSettings[FilterFunctionCollection[TElement] | FilterFunction[TElement]]] = js.undefined
     
     /**
       * A value indicating whether the filter-controls should be hidden when the table is empty.
       */
-    var filter_hideEmpty: js.UndefOr[Boolean] = js.native
+    var filter_hideEmpty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether the filter should hide automatically.
       */
     var filter_hideFilters: js.UndefOr[
         Boolean | (js.Function1[/* config */ TablesorterConfigurationStore[TElement], Boolean])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A value indicating whether the letter-case should be ignored.
       */
-    var filter_ignoreCase: js.UndefOr[Boolean] = js.native
+    var filter_ignoreCase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether a search should be performed without having to hit `Enter`.
       */
-    var filter_liveSearch: js.UndefOr[Boolean | Double | (MappedSettings[Boolean | Double])] = js.native
+    var filter_liveSearch: js.UndefOr[Boolean | Double | (MappedSettings[Boolean | Double])] = js.undefined
     
     /**
       * The match-types to apply to the controls.
       */
-    var filter_matchType: js.UndefOr[MatchTypeSettings] = js.native
+    var filter_matchType: js.UndefOr[MatchTypeSettings] = js.undefined
     
     /**
       * A class for indicating whether only visible entries should be available in `select`-controls.
       */
-    var filter_onlyAvail: js.UndefOr[String] = js.native
+    var filter_onlyAvail: js.UndefOr[String] = js.undefined
     
     /**
       * The placeholders to set initially.
       */
-    var filter_placeholder: js.UndefOr[FilterPlaceholders] = js.native
+    var filter_placeholder: js.UndefOr[FilterPlaceholders] = js.undefined
     
     /**
       * A jQuery-selector for querying the button for resetting the filter.
       */
-    var filter_reset: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var filter_reset: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * A value indicating whether the filter should be resetted when `ESC` is hit.
       */
-    var filter_resetOnEsc: js.UndefOr[Boolean] = js.native
+    var filter_resetOnEsc: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether the filters should be saved to the client.
       */
-    var filter_saveFilters: js.UndefOr[Boolean] = js.native
+    var filter_saveFilters: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of miliseconds to wait before performing a search.
       */
-    var filter_searchDelay: js.UndefOr[Double] = js.native
+    var filter_searchDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * A value indicating whether only filtered rows should be considered while searching.
       */
-    var filter_searchFiltered: js.UndefOr[Boolean] = js.native
+    var filter_searchFiltered: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The sources for the select-controls.
       */
-    var filter_selectSource: js.UndefOr[SelectSources[TElement] | MappedSettings[SelectSources[TElement]]] = js.native
+    var filter_selectSource: js.UndefOr[SelectSources[TElement] | MappedSettings[SelectSources[TElement]]] = js.undefined
     
     /**
       * The character for separating display-name and value inside the `filter_selectSource`.
       */
-    var filter_selectSourceSeparator: js.UndefOr[String] = js.native
+    var filter_selectSourceSeparator: js.UndefOr[String] = js.undefined
     
     /**
       * A value indicating whether filtering is performed server-side.
       */
-    var filter_serversideFiltering: js.UndefOr[Boolean] = js.native
+    var filter_serversideFiltering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether searches should be performed with the `starts with`-logic.
       */
-    var filter_startsWith: js.UndefOr[Boolean] = js.native
+    var filter_startsWith: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether filtering should be perormed using parsed data.
       */
-    var filter_useParsedData: js.UndefOr[Boolean] = js.native
+    var filter_useParsedData: js.UndefOr[Boolean] = js.undefined
   }
   object FilterOptions {
     
@@ -194,7 +192,7 @@ object filterOptionsMod {
     }
     
     @scala.inline
-    implicit class FilterOptionsMutableBuilder[Self <: FilterOptions[_], TElement] (val x: Self with FilterOptions[TElement]) extends AnyVal {
+    implicit class FilterOptionsMutableBuilder[Self <: FilterOptions[?], TElement] (val x: Self & FilterOptions[TElement]) extends AnyVal {
       
       @scala.inline
       def setFilter_cellFilter(value: String | js.Array[String]): Self = StObject.set(x, "filter_cellFilter", value.asInstanceOf[js.Any])

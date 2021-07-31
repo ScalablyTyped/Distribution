@@ -4,14 +4,15 @@ import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chipMod {
   
   @JSImport("@ionic/core/dist/types/components/chip/chip", "Chip")
   @js.native
-  class Chip () extends ComponentInterface {
+  class Chip ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * The color to use from your application's color palette.

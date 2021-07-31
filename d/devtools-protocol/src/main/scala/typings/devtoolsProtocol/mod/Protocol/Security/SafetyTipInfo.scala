@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Security
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SafetyTipInfo extends StObject {
   
   /**
     * The URL the safety tip suggested ("Did you mean?"). Only filled in for lookalike matches.
     */
-  var safeUrl: js.UndefOr[String] = js.native
+  var safeUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Describes whether the page triggers any safety tips or reputation warnings. Default is unknown.
     */
-  var safetyTipStatus: SafetyTipStatus = js.native
+  var safetyTipStatus: SafetyTipStatus
 }
 object SafetyTipInfo {
   

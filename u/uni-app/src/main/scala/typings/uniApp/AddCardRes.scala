@@ -2,16 +2,14 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddCardRes extends StObject {
   
   /**
     * 卡券 id
     */
-  var cardList: js.UndefOr[js.Array[CardData]] = js.native
+  var cardList: js.UndefOr[js.Array[CardData]] = js.undefined
 }
 object AddCardRes {
   

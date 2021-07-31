@@ -6,7 +6,6 @@ import typings.officeUiFabricReact.anon.ReadonlyIToggleState
 import typings.officeUiFabricReact.toggleTypesMod.IToggleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ToggleBase")
@@ -18,7 +17,10 @@ class ToggleBase protected ()
 /* static members */
 object ToggleBase {
   
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ToggleBase.getDerivedStateFromProps")
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "ToggleBase")
   @js.native
-  def getDerivedStateFromProps(nextProps: ReadonlyIToggleProps, prevState: ReadonlyIToggleState): PartialIToggleState | Null = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getDerivedStateFromProps(nextProps: ReadonlyIToggleProps, prevState: ReadonlyIToggleState): PartialIToggleState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[PartialIToggleState | Null]
 }

@@ -2,15 +2,13 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdjustX extends StObject {
   
-  var adjustX: js.UndefOr[Boolean] = js.native
+  var adjustX: js.UndefOr[Boolean] = js.undefined
   
-  var adjustY: js.UndefOr[Boolean] = js.native
+  var adjustY: js.UndefOr[Boolean] = js.undefined
 }
 object AdjustX {
   

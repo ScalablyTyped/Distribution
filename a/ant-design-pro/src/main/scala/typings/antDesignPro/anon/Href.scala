@@ -5,19 +5,17 @@ import typings.history.mod.LocationState
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Href extends StObject {
   
-  var href: js.UndefOr[LocationDescriptor[LocationState]] = js.native
+  var href: js.UndefOr[LocationDescriptor[LocationState]] = js.undefined
   
-  var innerRef: js.UndefOr[js.Function1[/* node */ HTMLAnchorElement | Null, Unit]] = js.native
+  var innerRef: js.UndefOr[js.Function1[/* node */ HTMLAnchorElement | Null, Unit]] = js.undefined
   
-  var replace: js.UndefOr[Boolean] = js.native
+  var replace: js.UndefOr[Boolean] = js.undefined
   
-  var to: LocationDescriptor[LocationState] = js.native
+  var to: LocationDescriptor[LocationState]
 }
 object Href {
   

@@ -3,23 +3,22 @@ package typings.activexLibreoffice.com_.sun.star.io
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface offers access to temp files. */
-@js.native
 trait XTempFile
-  extends XStream
+  extends StObject
+     with XStream
      with XSeekable {
   
   /** This attribute controls whether the file will be automatically removed on object destruction. */
-  var RemoveFile: Boolean = js.native
+  var RemoveFile: Boolean
   
   /** This attribute specifies the temp file name. */
-  var ResourceName: String = js.native
+  var ResourceName: String
   
   /** This attribute specifies the URL of the temp file. */
-  var Uri: String = js.native
+  var Uri: String
 }
 object XTempFile {
   

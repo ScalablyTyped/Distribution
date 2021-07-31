@@ -2,25 +2,23 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartData extends StObject {
   
-  var columns: js.UndefOr[js.Array[js.Object]] = js.native
+  var columns: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var element: js.Any = js.native
+  var element: js.Any
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var measure: js.UndefOr[MeasureObject] = js.native
+  var measure: js.UndefOr[MeasureObject] = js.undefined
   
-  var rows: js.UndefOr[js.Array[js.Object]] = js.native
+  var rows: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object ChartData {
   

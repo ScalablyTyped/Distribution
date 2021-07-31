@@ -2,16 +2,14 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotStatement extends StObject {
   
   /**
     * The statement to negate. You can use any statement that can be nested.
     */
-  var Statement: typings.awsSdk.wafv2Mod.Statement = js.native
+  var Statement: typings.awsSdk.wafv2Mod.Statement
 }
 object NotStatement {
   

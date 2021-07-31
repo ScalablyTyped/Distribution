@@ -2,7 +2,6 @@ package typings.userAgents
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,22 +12,41 @@ object mod {
     * The representation of a user-agents object.
     * @param object <Array, Function, Object, RegExp, or String> - A set of filters to apply to the generated user agents
     */
-  class ^ () extends UserAgent {
+  class ^ ()
+    extends StObject
+       with UserAgent {
     def this(`object`: js.Any) = this()
+    
+    /**
+      *  The value of data.appName
+      */
+    /* CompleteClass */
+    var appName: String = js.native
+    
+    /**
+      * Get a fingerprint for the UserAgent instance
+      */
+    /* CompleteClass */
+    var data: Data = js.native
+    
+    /**
+      * Generates a new UserAgent instance using the same filters that were used to construct userAgent
+      */
+    /* CompleteClass */
+    override def random(): UserAgent = js.native
   }
   
-  @js.native
   trait Connection extends StObject {
     
-    var downlink: js.UndefOr[Double] = js.native
+    var downlink: js.UndefOr[Double] = js.undefined
     
-    var downlinkMax: js.UndefOr[js.Any] = js.native
+    var downlinkMax: js.UndefOr[js.Any] = js.undefined
     
-    var effectiveType: js.UndefOr[String] = js.native
+    var effectiveType: js.UndefOr[String] = js.undefined
     
-    var rtt: js.UndefOr[Double] = js.native
+    var rtt: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Connection {
     
@@ -73,73 +91,72 @@ object mod {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
     /**
       *  The value of navigator.appName
       */
-    var appName: String = js.native
+    var appName: String
     
     /**
       *  The value of navigator.connection
       */
-    var connection: js.UndefOr[Connection] = js.native
+    var connection: js.UndefOr[Connection] = js.undefined
     
     /**
       *  The value of navigator.cpuClass
       */
-    var cpuClass: js.UndefOr[String] = js.native
+    var cpuClass: js.UndefOr[String] = js.undefined
     
     /**
       * One of desktop, mobile, or tablet depending on the type of device
       */
-    var deviceCategory: js.UndefOr[String] = js.native
+    var deviceCategory: js.UndefOr[String] = js.undefined
     
     /**
       *  The value of navigator.oscpu
       */
-    var oscpu: js.UndefOr[String] = js.native
+    var oscpu: js.UndefOr[String] = js.undefined
     
     /**
       * The value of navigator.platform
       */
-    var platform: String = js.native
+    var platform: String
     
     /**
       * The value of navigator.plugins.length
       */
-    var pluginsLength: Double = js.native
+    var pluginsLength: Double
     
     /**
       *  The value of screen.height
       */
-    var screenHeight: Double = js.native
+    var screenHeight: Double
     
     /**
       * The value of screen.width
       */
-    var screenWidth: Double = js.native
+    var screenWidth: Double
     
     /**
       * The value of navigator.userAgent
       */
-    var userAgent: String = js.native
+    var userAgent: String
     
     /**
       * The value of navigator.vendor
       */
-    var vendor: String = js.native
+    var vendor: String
     
     /**
       * The value of window.innerHeight
       */
-    var viewportHeight: Double = js.native
+    var viewportHeight: Double
     
     /**
       * The value of window.innerWidth
       */
-    var viewportWidth: Double = js.native
+    var viewportWidth: Double
   }
   object Data {
     
@@ -215,23 +232,22 @@ object mod {
     }
   }
   
-  @js.native
   trait UserAgent extends StObject {
     
     /**
       *  The value of data.appName
       */
-    var appName: String = js.native
+    var appName: String
     
     /**
       * Get a fingerprint for the UserAgent instance
       */
-    var data: Data = js.native
+    var data: Data
     
     /**
       * Generates a new UserAgent instance using the same filters that were used to construct userAgent
       */
-    def random(): UserAgent = js.native
+    def random(): UserAgent
   }
   object UserAgent {
     

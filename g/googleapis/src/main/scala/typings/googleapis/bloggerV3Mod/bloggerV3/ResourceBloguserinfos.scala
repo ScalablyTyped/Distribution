@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/blogger/v3", "blogger_v3.Resource$Bloguserinfos")
@@ -32,7 +31,7 @@ class ResourceBloguserinfos protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaBlogUserInfo] = js.native
   def get(callback: BodyResponseCallback[SchemaBlogUserInfo]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBlogUserInfo] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBlogUserInfo] = js.native
   def get(params: ParamsResourceBloguserinfosGet): GaxiosPromise[SchemaBlogUserInfo] = js.native
   def get(params: ParamsResourceBloguserinfosGet, callback: BodyResponseCallback[SchemaBlogUserInfo]): Unit = js.native
   def get(

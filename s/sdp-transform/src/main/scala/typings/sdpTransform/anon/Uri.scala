@@ -2,19 +2,17 @@ package typings.sdpTransform.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Uri extends StObject {
   
-  var config: js.UndefOr[String] = js.native
+  var config: js.UndefOr[String] = js.undefined
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var uri: String = js.native
+  var uri: String
   
-  var value: Double = js.native
+  var value: Double
 }
 object Uri {
   

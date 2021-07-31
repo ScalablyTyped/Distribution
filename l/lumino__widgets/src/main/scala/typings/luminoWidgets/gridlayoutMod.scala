@@ -6,7 +6,6 @@ import typings.luminoWidgets.layoutMod.Layout
 import typings.luminoWidgets.widgetMod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridlayoutMod {
@@ -163,6 +162,10 @@ object gridlayoutMod {
   }
   object GridLayout {
     
+    @JSImport("@lumino/widgets/types/gridlayout", "GridLayout")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get the cell config for the given widget.
       *
@@ -170,9 +173,8 @@ object gridlayoutMod {
       *
       * @returns The cell config for the widget.
       */
-    @JSImport("@lumino/widgets/types/gridlayout", "GridLayout.getCellConfig")
-    @js.native
-    def getCellConfig(widget: Widget): ICellConfig = js.native
+    @scala.inline
+    def getCellConfig(widget: Widget): ICellConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellConfig")(widget.asInstanceOf[js.Any]).asInstanceOf[ICellConfig]
     
     /**
       * Set the cell config for the given widget.
@@ -181,35 +183,33 @@ object gridlayoutMod {
       *
       * @param value - The value for the cell config.
       */
-    @JSImport("@lumino/widgets/types/gridlayout", "GridLayout.setCellConfig")
-    @js.native
-    def setCellConfig(widget: Widget, value: PartialICellConfig): Unit = js.native
+    @scala.inline
+    def setCellConfig(widget: Widget, value: PartialICellConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCellConfig")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * An object which holds the cell configuration for a widget.
       */
-    @js.native
     trait ICellConfig extends StObject {
       
       /**
         * The column index for the widget.
         */
-      val column: Double = js.native
+      val column: Double
       
       /**
         * The column span for the widget.
         */
-      val columnSpan: Double = js.native
+      val columnSpan: Double
       
       /**
         * The row index for the widget.
         */
-      val row: Double = js.native
+      val row: Double
       
       /**
         * The row span for the widget.
         */
-      val rowSpan: Double = js.native
+      val rowSpan: Double
     }
     object ICellConfig {
       
@@ -239,37 +239,37 @@ object gridlayoutMod {
     /**
       * An options object for initializing a grid layout.
       */
-    @js.native
     trait IOptions
-      extends typings.luminoWidgets.layoutMod.Layout.IOptions {
+      extends StObject
+         with typings.luminoWidgets.layoutMod.Layout.IOptions {
       
       /**
         * The initial column count for the layout.
         *
         * The default is `1`.
         */
-      var columnCount: js.UndefOr[Double] = js.native
+      var columnCount: js.UndefOr[Double] = js.undefined
       
       /**
         * The spacing between columns in the layout.
         *
         * The default is `4`.
         */
-      var columnSpacing: js.UndefOr[Double] = js.native
+      var columnSpacing: js.UndefOr[Double] = js.undefined
       
       /**
         * The initial row count for the layout.
         *
         * The default is `1`.
         */
-      var rowCount: js.UndefOr[Double] = js.native
+      var rowCount: js.UndefOr[Double] = js.undefined
       
       /**
         * The spacing between rows in the layout.
         *
         * The default is `4`.
         */
-      var rowSpacing: js.UndefOr[Double] = js.native
+      var rowSpacing: js.UndefOr[Double] = js.undefined
     }
     object IOptions {
       

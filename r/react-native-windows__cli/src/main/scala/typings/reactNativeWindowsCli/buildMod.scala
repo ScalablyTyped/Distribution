@@ -8,13 +8,15 @@ import typings.reactNativeWindowsCli.runWindowsOptionsMod.RunWindowsOptions_
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buildMod {
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/build", "buildSolution")
+  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/build", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def buildSolution(
     buildTools: default,
     slnFile: String,
@@ -22,21 +24,8 @@ object buildMod {
     buildArch: BuildArch,
     msBuildProps: Record[String, String],
     verbose: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/build", "buildSolution")
-  @js.native
-  def buildSolution(
-    buildTools: default,
-    slnFile: String,
-    buildType: BuildConfig,
-    buildArch: BuildArch,
-    msBuildProps: Record[String, String],
-    verbose: Boolean,
-    target: js.UndefOr[scala.Nothing],
-    buildLogDirectory: String
-  ): js.Promise[Unit] = js.native
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/build", "buildSolution")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSolution")(buildTools.asInstanceOf[js.Any], slnFile.asInstanceOf[js.Any], buildType.asInstanceOf[js.Any], buildArch.asInstanceOf[js.Any], msBuildProps.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def buildSolution(
     buildTools: default,
     slnFile: String,
@@ -45,9 +34,8 @@ object buildMod {
     msBuildProps: Record[String, String],
     verbose: Boolean,
     target: String
-  ): js.Promise[Unit] = js.native
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/build", "buildSolution")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSolution")(buildTools.asInstanceOf[js.Any], slnFile.asInstanceOf[js.Any], buildType.asInstanceOf[js.Any], buildArch.asInstanceOf[js.Any], msBuildProps.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def buildSolution(
     buildTools: default,
     slnFile: String,
@@ -57,21 +45,28 @@ object buildMod {
     verbose: Boolean,
     target: String,
     buildLogDirectory: String
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSolution")(buildTools.asInstanceOf[js.Any], slnFile.asInstanceOf[js.Any], buildType.asInstanceOf[js.Any], buildArch.asInstanceOf[js.Any], msBuildProps.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], target.asInstanceOf[js.Any], buildLogDirectory.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def buildSolution(
+    buildTools: default,
+    slnFile: String,
+    buildType: BuildConfig,
+    buildArch: BuildArch,
+    msBuildProps: Record[String, String],
+    verbose: Boolean,
+    target: Unit,
+    buildLogDirectory: String
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSolution")(buildTools.asInstanceOf[js.Any], slnFile.asInstanceOf[js.Any], buildType.asInstanceOf[js.Any], buildArch.asInstanceOf[js.Any], msBuildProps.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], target.asInstanceOf[js.Any], buildLogDirectory.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/build", "getAppProjectFile")
-  @js.native
-  def getAppProjectFile(options: RunWindowsOptions_, config: Config): String | Null = js.native
+  @scala.inline
+  def getAppProjectFile(options: RunWindowsOptions_, config: Config): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppProjectFile")(options.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/build", "getAppSolutionFile")
-  @js.native
-  def getAppSolutionFile(options: RunWindowsOptions_, config: Config): String | Null = js.native
+  @scala.inline
+  def getAppSolutionFile(options: RunWindowsOptions_, config: Config): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppSolutionFile")(options.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/build", "parseMsBuildProps")
-  @js.native
-  def parseMsBuildProps(options: RunWindowsOptions_): Record[String, String] = js.native
+  @scala.inline
+  def parseMsBuildProps(options: RunWindowsOptions_): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMsBuildProps")(options.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/build", "restoreNuGetPackages")
-  @js.native
-  def restoreNuGetPackages(slnFile: String, buildTools: default, verbose: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def restoreNuGetPackages(slnFile: String, buildTools: default, verbose: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("restoreNuGetPackages")(slnFile.asInstanceOf[js.Any], buildTools.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchMod {
@@ -24,15 +23,17 @@ object searchMod {
     }
     object DateRange {
       
-      /* static member */
-      @JSImport("cassandra-driver/lib/datastax/search", "search.DateRange.fromBuffer")
+      @JSImport("cassandra-driver/lib/datastax/search", "search.DateRange")
       @js.native
-      def fromBuffer(value: Buffer): DateRange = js.native
+      val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("cassandra-driver/lib/datastax/search", "search.DateRange.fromString")
-      @js.native
-      def fromString(value: String): DateRange = js.native
+      @scala.inline
+      def fromBuffer(value: Buffer): DateRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[DateRange]
+      
+      /* static member */
+      @scala.inline
+      def fromString(value: String): DateRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[DateRange]
     }
     
     @JSImport("cassandra-driver/lib/datastax/search", "search.DateRangeBound")
@@ -47,20 +48,21 @@ object searchMod {
     }
     object DateRangeBound {
       
-      /* static member */
-      @JSImport("cassandra-driver/lib/datastax/search", "search.DateRangeBound.fromString")
+      @JSImport("cassandra-driver/lib/datastax/search", "search.DateRangeBound")
       @js.native
-      def fromString(value: String): DateRangeBound = js.native
+      val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("cassandra-driver/lib/datastax/search", "search.DateRangeBound.toLowerBound")
-      @js.native
-      def toLowerBound(bound: DateRangeBound): DateRangeBound = js.native
+      @scala.inline
+      def fromString(value: String): DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[DateRangeBound]
       
       /* static member */
-      @JSImport("cassandra-driver/lib/datastax/search", "search.DateRangeBound.toUpperBound")
-      @js.native
-      def toUpperBound(bound: DateRangeBound): DateRangeBound = js.native
+      @scala.inline
+      def toLowerBound(bound: DateRangeBound): DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("toLowerBound")(bound.asInstanceOf[js.Any]).asInstanceOf[DateRangeBound]
+      
+      /* static member */
+      @scala.inline
+      def toUpperBound(bound: DateRangeBound): DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("toUpperBound")(bound.asInstanceOf[js.Any]).asInstanceOf[DateRangeBound]
     }
     
     @js.native
@@ -70,35 +72,49 @@ object searchMod {
     object dateRangePrecision extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[dateRangePrecision with Double] = js.native
+      def apply(value: Double): js.UndefOr[dateRangePrecision & Double] = js.native
       
       @js.native
-      sealed trait day extends dateRangePrecision
-      /* 1 */ val day: typings.cassandraDriver.searchMod.search.dateRangePrecision.day with Double = js.native
+      sealed trait day
+        extends StObject
+           with dateRangePrecision
+      /* 1 */ val day: typings.cassandraDriver.searchMod.search.dateRangePrecision.day & Double = js.native
       
       @js.native
-      sealed trait hour extends dateRangePrecision
-      /* 2 */ val hour: typings.cassandraDriver.searchMod.search.dateRangePrecision.hour with Double = js.native
+      sealed trait hour
+        extends StObject
+           with dateRangePrecision
+      /* 2 */ val hour: typings.cassandraDriver.searchMod.search.dateRangePrecision.hour & Double = js.native
       
       @js.native
-      sealed trait millisecond extends dateRangePrecision
-      /* 5 */ val millisecond: typings.cassandraDriver.searchMod.search.dateRangePrecision.millisecond with Double = js.native
+      sealed trait millisecond
+        extends StObject
+           with dateRangePrecision
+      /* 5 */ val millisecond: typings.cassandraDriver.searchMod.search.dateRangePrecision.millisecond & Double = js.native
       
       @js.native
-      sealed trait minute extends dateRangePrecision
-      /* 3 */ val minute: typings.cassandraDriver.searchMod.search.dateRangePrecision.minute with Double = js.native
+      sealed trait minute
+        extends StObject
+           with dateRangePrecision
+      /* 3 */ val minute: typings.cassandraDriver.searchMod.search.dateRangePrecision.minute & Double = js.native
       
       @js.native
-      sealed trait month extends dateRangePrecision
-      /* 0 */ val month: typings.cassandraDriver.searchMod.search.dateRangePrecision.month with Double = js.native
+      sealed trait month
+        extends StObject
+           with dateRangePrecision
+      /* 0 */ val month: typings.cassandraDriver.searchMod.search.dateRangePrecision.month & Double = js.native
       
       @js.native
-      sealed trait second extends dateRangePrecision
-      /* 4 */ val second: typings.cassandraDriver.searchMod.search.dateRangePrecision.second with Double = js.native
+      sealed trait second
+        extends StObject
+           with dateRangePrecision
+      /* 4 */ val second: typings.cassandraDriver.searchMod.search.dateRangePrecision.second & Double = js.native
       
       @js.native
-      sealed trait year extends dateRangePrecision
-      /* 0 */ val year: typings.cassandraDriver.searchMod.search.dateRangePrecision.year with Double = js.native
+      sealed trait year
+        extends StObject
+           with dateRangePrecision
+      /* 0 */ val year: typings.cassandraDriver.searchMod.search.dateRangePrecision.year & Double = js.native
     }
   }
 }

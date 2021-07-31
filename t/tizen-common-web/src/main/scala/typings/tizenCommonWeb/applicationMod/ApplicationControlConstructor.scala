@@ -5,12 +5,12 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.GROUP
 import typings.tizenCommonWeb.tizenCommonWebStrings.SINGLE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ApplicationControlConstructor
-  extends Instantiable6[
+  extends StObject
+     with Instantiable6[
       /* operation */ String, 
       /* uri */ js.UndefOr[String], 
       /* mime */ js.UndefOr[String], 

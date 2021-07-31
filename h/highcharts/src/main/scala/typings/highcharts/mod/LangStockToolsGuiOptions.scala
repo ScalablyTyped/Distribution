@@ -2,109 +2,107 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangStockToolsGuiOptions extends StObject {
   
-  var advanced: js.UndefOr[String] = js.native
+  var advanced: js.UndefOr[String] = js.undefined
   
-  var arrowLine: js.UndefOr[String] = js.native
+  var arrowLine: js.UndefOr[String] = js.undefined
   
-  var arrowRay: js.UndefOr[String] = js.native
+  var arrowRay: js.UndefOr[String] = js.undefined
   
-  var arrowSegment: js.UndefOr[String] = js.native
+  var arrowSegment: js.UndefOr[String] = js.undefined
   
-  var circle: js.UndefOr[String] = js.native
+  var circle: js.UndefOr[String] = js.undefined
   
-  var crooked3: js.UndefOr[String] = js.native
+  var crooked3: js.UndefOr[String] = js.undefined
   
-  var crooked5: js.UndefOr[String] = js.native
+  var crooked5: js.UndefOr[String] = js.undefined
   
-  var crookedLines: js.UndefOr[String] = js.native
+  var crookedLines: js.UndefOr[String] = js.undefined
   
-  var currentPriceIndicator: js.UndefOr[String] = js.native
+  var currentPriceIndicator: js.UndefOr[String] = js.undefined
   
-  var elliott3: js.UndefOr[String] = js.native
+  var elliott3: js.UndefOr[String] = js.undefined
   
-  var elliott5: js.UndefOr[String] = js.native
+  var elliott5: js.UndefOr[String] = js.undefined
   
-  var fibonacci: js.UndefOr[String] = js.native
+  var fibonacci: js.UndefOr[String] = js.undefined
   
-  var flagCirclepin: js.UndefOr[String] = js.native
+  var flagCirclepin: js.UndefOr[String] = js.undefined
   
-  var flagDiamondpin: js.UndefOr[String] = js.native
+  var flagDiamondpin: js.UndefOr[String] = js.undefined
   
-  var flagSimplepin: js.UndefOr[String] = js.native
+  var flagSimplepin: js.UndefOr[String] = js.undefined
   
-  var flagSquarepin: js.UndefOr[String] = js.native
+  var flagSquarepin: js.UndefOr[String] = js.undefined
   
-  var flags: js.UndefOr[String] = js.native
+  var flags: js.UndefOr[String] = js.undefined
   
-  var fullScreen: js.UndefOr[String] = js.native
+  var fullScreen: js.UndefOr[String] = js.undefined
   
-  var horizontalLine: js.UndefOr[String] = js.native
+  var horizontalLine: js.UndefOr[String] = js.undefined
   
-  var indicators: js.UndefOr[String] = js.native
+  var indicators: js.UndefOr[String] = js.undefined
   
-  var infinityLine: js.UndefOr[String] = js.native
+  var infinityLine: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var line: js.UndefOr[String] = js.native
+  var line: js.UndefOr[String] = js.undefined
   
-  var lines: js.UndefOr[String] = js.native
+  var lines: js.UndefOr[String] = js.undefined
   
-  var measure: js.UndefOr[String] = js.native
+  var measure: js.UndefOr[String] = js.undefined
   
-  var measureX: js.UndefOr[String] = js.native
+  var measureX: js.UndefOr[String] = js.undefined
   
-  var measureXY: js.UndefOr[String] = js.native
+  var measureXY: js.UndefOr[String] = js.undefined
   
-  var measureY: js.UndefOr[String] = js.native
+  var measureY: js.UndefOr[String] = js.undefined
   
-  var parallelChannel: js.UndefOr[String] = js.native
+  var parallelChannel: js.UndefOr[String] = js.undefined
   
-  var pitchfork: js.UndefOr[String] = js.native
+  var pitchfork: js.UndefOr[String] = js.undefined
   
-  var ray: js.UndefOr[String] = js.native
+  var ray: js.UndefOr[String] = js.undefined
   
-  var rectangle: js.UndefOr[String] = js.native
+  var rectangle: js.UndefOr[String] = js.undefined
   
-  var saveChart: js.UndefOr[String] = js.native
+  var saveChart: js.UndefOr[String] = js.undefined
   
-  var segment: js.UndefOr[String] = js.native
+  var segment: js.UndefOr[String] = js.undefined
   
-  var simpleShapes: js.UndefOr[String] = js.native
+  var simpleShapes: js.UndefOr[String] = js.undefined
   
-  var toggleAnnotations: js.UndefOr[String] = js.native
+  var toggleAnnotations: js.UndefOr[String] = js.undefined
   
-  var typeCandlestick: js.UndefOr[String] = js.native
+  var typeCandlestick: js.UndefOr[String] = js.undefined
   
-  var typeChange: js.UndefOr[String] = js.native
+  var typeChange: js.UndefOr[String] = js.undefined
   
-  var typeLine: js.UndefOr[String] = js.native
+  var typeLine: js.UndefOr[String] = js.undefined
   
-  var typeOHLC: js.UndefOr[String] = js.native
+  var typeOHLC: js.UndefOr[String] = js.undefined
   
-  var verticalArrow: js.UndefOr[String] = js.native
+  var verticalArrow: js.UndefOr[String] = js.undefined
   
-  var verticalCounter: js.UndefOr[String] = js.native
+  var verticalCounter: js.UndefOr[String] = js.undefined
   
-  var verticalLabel: js.UndefOr[String] = js.native
+  var verticalLabel: js.UndefOr[String] = js.undefined
   
-  var verticalLabels: js.UndefOr[String] = js.native
+  var verticalLabels: js.UndefOr[String] = js.undefined
   
-  var verticalLine: js.UndefOr[String] = js.native
+  var verticalLine: js.UndefOr[String] = js.undefined
   
-  var zoomChange: js.UndefOr[String] = js.native
+  var zoomChange: js.UndefOr[String] = js.undefined
   
-  var zoomX: js.UndefOr[String] = js.native
+  var zoomX: js.UndefOr[String] = js.undefined
   
-  var zoomXY: js.UndefOr[String] = js.native
+  var zoomXY: js.UndefOr[String] = js.undefined
   
-  var zoomY: js.UndefOr[String] = js.native
+  var zoomY: js.UndefOr[String] = js.undefined
 }
 object LangStockToolsGuiOptions {
   

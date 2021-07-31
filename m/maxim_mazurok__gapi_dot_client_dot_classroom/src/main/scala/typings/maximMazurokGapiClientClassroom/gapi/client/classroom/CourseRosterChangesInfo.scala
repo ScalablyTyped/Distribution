@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CourseRosterChangesInfo extends StObject {
   
   /** The `course_id` of the course to subscribe to roster changes for. */
-  var courseId: js.UndefOr[String] = js.native
+  var courseId: js.UndefOr[String] = js.undefined
 }
 object CourseRosterChangesInfo {
   

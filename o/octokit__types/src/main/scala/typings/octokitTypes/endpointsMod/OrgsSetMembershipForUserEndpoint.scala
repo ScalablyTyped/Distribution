@@ -4,23 +4,21 @@ import typings.octokitTypes.octokitTypesStrings.admin
 import typings.octokitTypes.octokitTypesStrings.member
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgsSetMembershipForUserEndpoint extends StObject {
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * The role to give the user in the organization. Can be one of:
     * \* `admin` - The user will become an owner of the organization.
     * \* `member` - The user will become a non-owner member of the organization.
     */
-  var role: js.UndefOr[admin | member] = js.native
+  var role: js.UndefOr[admin | member] = js.undefined
   
-  var username: String = js.native
+  var username: String
 }
 object OrgsSetMembershipForUserEndpoint {
   

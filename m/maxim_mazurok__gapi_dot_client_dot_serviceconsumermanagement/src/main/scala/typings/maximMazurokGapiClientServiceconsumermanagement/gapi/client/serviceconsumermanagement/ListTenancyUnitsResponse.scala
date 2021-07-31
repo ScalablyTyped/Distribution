@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTenancyUnitsResponse extends StObject {
   
   /** Pagination token for large results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Tenancy units matching the request. */
-  var tenancyUnits: js.UndefOr[js.Array[TenancyUnit]] = js.native
+  var tenancyUnits: js.UndefOr[js.Array[TenancyUnit]] = js.undefined
 }
 object ListTenancyUnitsResponse {
   

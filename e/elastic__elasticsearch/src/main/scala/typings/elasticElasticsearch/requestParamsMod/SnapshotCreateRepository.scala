@@ -2,21 +2,21 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SnapshotCreateRepository[T] extends Generic {
+trait SnapshotCreateRepository[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var repository: String = js.native
+  var repository: String
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var verify: js.UndefOr[Boolean] = js.native
+  var verify: js.UndefOr[Boolean] = js.undefined
 }
 object SnapshotCreateRepository {
   
@@ -27,7 +27,7 @@ object SnapshotCreateRepository {
   }
   
   @scala.inline
-  implicit class SnapshotCreateRepositoryMutableBuilder[Self <: SnapshotCreateRepository[_], T] (val x: Self with SnapshotCreateRepository[T]) extends AnyVal {
+  implicit class SnapshotCreateRepositoryMutableBuilder[Self <: SnapshotCreateRepository[?], T] (val x: Self & SnapshotCreateRepository[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

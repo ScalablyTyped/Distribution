@@ -2,16 +2,14 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReshardingStatus extends StObject {
   
   /**
     * Represents the progress of an online resharding operation.
     */
-  var SlotMigration: js.UndefOr[typings.awsSdk.elasticacheMod.SlotMigration] = js.native
+  var SlotMigration: js.UndefOr[typings.awsSdk.elasticacheMod.SlotMigration] = js.undefined
 }
 object ReshardingStatus {
   

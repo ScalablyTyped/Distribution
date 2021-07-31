@@ -2,49 +2,47 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the SchedulerViewType object.
   */
-@js.native
 trait ASPxSchedulerViewType extends StObject {
   
   /**
     * Gets a string representation equivalent to the SchedulerViewType.Agenda enumeration for use in client scripts.
     */
-  var Agenda: String = js.native
+  var Agenda: String
   
   /**
     * Gets a string representation equivalent of SchedulerViewType.Day enumeration for use in client scripts.
     */
-  var Day: String = js.native
+  var Day: String
   
   /**
     * Gets a string representation equivalent of SchedulerViewType.FullWeek enumeration for use in client scripts.
     */
-  var FullWeek: String = js.native
+  var FullWeek: String
   
   /**
     * Gets a string representation equivalent of SchedulerViewType.Month enumeration for use in client scripts.
     */
-  var Month: String = js.native
+  var Month: String
   
   /**
     * Gets a string representation equivalent of SchedulerViewType.Timeline enumeration for use in client scripts.
     */
-  var Timeline: String = js.native
+  var Timeline: String
   
   /**
     * Gets a string representation equivalent of SchedulerViewType.Week enumeration for use in client scripts.
     */
-  var Week: String = js.native
+  var Week: String
   
   /**
     * Gets a string representation equivalent of SchedulerViewType.WorkWeek enumeration for use in client scripts.
     */
-  var WorkWeek: String = js.native
+  var WorkWeek: String
 }
 object ASPxSchedulerViewType {
   

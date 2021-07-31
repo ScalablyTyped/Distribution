@@ -6,7 +6,6 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.certificatesDotk8sDotioS
 import typings.pulumiKubernetes.pulumiKubernetesStrings.certificatesDotk8sDotioSlashv1beta1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object certificates {
@@ -22,42 +21,35 @@ object certificates {
       *
       * This API can be used to request client certificates to authenticate to kube-apiserver (with the "kubernetes.io/kube-apiserver-client" signerName), or to obtain certificates from custom non-Kubernetes signers.
       */
-    @js.native
     trait CertificateSigningRequest extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: certificatesDotk8sDotioSlashv1 = js.native
+      var apiVersion: certificatesDotk8sDotioSlashv1
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.CertificateSigningRequest = js.native
+      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.CertificateSigningRequest
       
-      var metadata: ObjectMeta = js.native
+      var metadata: ObjectMeta
       
       /**
         * spec contains the certificate request, and is immutable after creation. Only the request, signerName, and usages fields can be set on creation. Other fields are derived by Kubernetes and cannot be modified by users.
         */
-      var spec: CertificateSigningRequestSpec = js.native
+      var spec: CertificateSigningRequestSpec
       
       /**
         * status contains information about whether the request is approved or denied, and the certificate issued by the signer, or the failure condition indicating signer failure.
         */
-      var status: CertificateSigningRequestStatus = js.native
+      var status: CertificateSigningRequestStatus
     }
     object CertificateSigningRequest {
       
       @scala.inline
-      def apply(
-        apiVersion: certificatesDotk8sDotioSlashv1,
-        kind: typings.pulumiKubernetes.pulumiKubernetesStrings.CertificateSigningRequest,
-        metadata: ObjectMeta,
-        spec: CertificateSigningRequestSpec,
-        status: CertificateSigningRequestStatus
-      ): CertificateSigningRequest = {
-        val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      def apply(metadata: ObjectMeta, spec: CertificateSigningRequestSpec, status: CertificateSigningRequestStatus): CertificateSigningRequest = {
+        val __obj = js.Dynamic.literal(apiVersion = "certificates.k8s.io/v1", kind = "CertificateSigningRequest", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
         __obj.asInstanceOf[CertificateSigningRequest]
       }
       
@@ -84,33 +76,32 @@ object certificates {
     /**
       * CertificateSigningRequestCondition describes a condition of a CertificateSigningRequest object
       */
-    @js.native
     trait CertificateSigningRequestCondition extends StObject {
       
       /**
         * lastTransitionTime is the time the condition last transitioned from one status to another. If unset, when a new condition type is added or an existing condition's status is changed, the server defaults this to the current time.
         */
-      var lastTransitionTime: String = js.native
+      var lastTransitionTime: String
       
       /**
         * lastUpdateTime is the time of the last update to this condition
         */
-      var lastUpdateTime: String = js.native
+      var lastUpdateTime: String
       
       /**
         * message contains a human readable message with details about the request state
         */
-      var message: String = js.native
+      var message: String
       
       /**
         * reason indicates a brief reason for the request state
         */
-      var reason: String = js.native
+      var reason: String
       
       /**
         * status of the condition, one of True, False, Unknown. Approved, Denied, and Failed conditions may not be "False" or "Unknown".
         */
-      var status: String = js.native
+      var status: String
       
       /**
         * type of the condition. Known conditions are "Approved", "Denied", and "Failed".
@@ -125,7 +116,7 @@ object certificates {
         *
         * Only one condition of a given type is allowed.
         */
-      var `type`: String = js.native
+      var `type`: String
     }
     object CertificateSigningRequestCondition {
       
@@ -169,23 +160,22 @@ object certificates {
     /**
       * CertificateSigningRequestSpec contains the certificate request.
       */
-    @js.native
     trait CertificateSigningRequestSpec extends StObject {
       
       /**
         * extra contains extra attributes of the user that created the CertificateSigningRequest. Populated by the API server on creation and immutable.
         */
-      var extra: StringDictionary[js.Array[String]] = js.native
+      var extra: StringDictionary[js.Array[String]]
       
       /**
         * groups contains group membership of the user that created the CertificateSigningRequest. Populated by the API server on creation and immutable.
         */
-      var groups: js.Array[String] = js.native
+      var groups: js.Array[String]
       
       /**
         * request contains an x509 certificate signing request encoded in a "CERTIFICATE REQUEST" PEM block. When serialized as JSON or YAML, the data is additionally base64-encoded.
         */
-      var request: String = js.native
+      var request: String
       
       /**
         * signerName indicates the requested signer, and is a qualified name.
@@ -210,12 +200,12 @@ object certificates {
         *  5. Expiration/certificate lifetime: whether it is fixed by the signer, configurable by the admin.
         *  6. Whether or not requests for CA certificates are allowed.
         */
-      var signerName: String = js.native
+      var signerName: String
       
       /**
         * uid contains the uid of the user that created the CertificateSigningRequest. Populated by the API server on creation and immutable.
         */
-      var uid: String = js.native
+      var uid: String
       
       /**
         * usages specifies a set of key usages requested in the issued certificate.
@@ -233,12 +223,12 @@ object certificates {
         *  "ipsec end system", "ipsec tunnel", "ipsec user",
         *  "timestamping", "ocsp signing", "microsoft sgc", "netscape sgc"
         */
-      var usages: js.Array[String] = js.native
+      var usages: js.Array[String]
       
       /**
         * username contains the name of the user that created the CertificateSigningRequest. Populated by the API server on creation and immutable.
         */
-      var username: String = js.native
+      var username: String
     }
     object CertificateSigningRequestSpec {
       
@@ -291,7 +281,6 @@ object certificates {
     /**
       * CertificateSigningRequestStatus contains conditions used to indicate approved/denied/failed status of the request, and the issued certificate.
       */
-    @js.native
     trait CertificateSigningRequestStatus extends StObject {
       
       /**
@@ -318,12 +307,12 @@ object certificates {
         *     -----END CERTIFICATE-----
         *     )
         */
-      var certificate: String = js.native
+      var certificate: String
       
       /**
         * conditions applied to the request. Known conditions are "Approved", "Denied", and "Failed".
         */
-      var conditions: js.Array[CertificateSigningRequestCondition] = js.native
+      var conditions: js.Array[CertificateSigningRequestCondition]
     }
     object CertificateSigningRequestStatus {
       
@@ -353,42 +342,35 @@ object certificates {
     /**
       * Describes a certificate signing request
       */
-    @js.native
     trait CertificateSigningRequest extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: certificatesDotk8sDotioSlashv1beta1 = js.native
+      var apiVersion: certificatesDotk8sDotioSlashv1beta1
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.CertificateSigningRequest = js.native
+      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.CertificateSigningRequest
       
-      var metadata: ObjectMeta = js.native
+      var metadata: ObjectMeta
       
       /**
         * The certificate request itself and any additional information.
         */
-      var spec: CertificateSigningRequestSpec = js.native
+      var spec: CertificateSigningRequestSpec
       
       /**
         * Derived information about the request.
         */
-      var status: CertificateSigningRequestStatus = js.native
+      var status: CertificateSigningRequestStatus
     }
     object CertificateSigningRequest {
       
       @scala.inline
-      def apply(
-        apiVersion: certificatesDotk8sDotioSlashv1beta1,
-        kind: typings.pulumiKubernetes.pulumiKubernetesStrings.CertificateSigningRequest,
-        metadata: ObjectMeta,
-        spec: CertificateSigningRequestSpec,
-        status: CertificateSigningRequestStatus
-      ): CertificateSigningRequest = {
-        val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      def apply(metadata: ObjectMeta, spec: CertificateSigningRequestSpec, status: CertificateSigningRequestStatus): CertificateSigningRequest = {
+        val __obj = js.Dynamic.literal(apiVersion = "certificates.k8s.io/v1beta1", kind = "CertificateSigningRequest", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
         __obj.asInstanceOf[CertificateSigningRequest]
       }
       
@@ -412,38 +394,37 @@ object certificates {
       }
     }
     
-    @js.native
     trait CertificateSigningRequestCondition extends StObject {
       
       /**
         * lastTransitionTime is the time the condition last transitioned from one status to another. If unset, when a new condition type is added or an existing condition's status is changed, the server defaults this to the current time.
         */
-      var lastTransitionTime: String = js.native
+      var lastTransitionTime: String
       
       /**
         * timestamp for the last update to this condition
         */
-      var lastUpdateTime: String = js.native
+      var lastUpdateTime: String
       
       /**
         * human readable message with details about the request state
         */
-      var message: String = js.native
+      var message: String
       
       /**
         * brief reason for the request state
         */
-      var reason: String = js.native
+      var reason: String
       
       /**
         * Status of the condition, one of True, False, Unknown. Approved, Denied, and Failed conditions may not be "False" or "Unknown". Defaults to "True". If unset, should be treated as "True".
         */
-      var status: String = js.native
+      var status: String
       
       /**
         * type of the condition. Known conditions include "Approved", "Denied", and "Failed".
         */
-      var `type`: String = js.native
+      var `type`: String
     }
     object CertificateSigningRequestCondition {
       
@@ -487,23 +468,22 @@ object certificates {
     /**
       * This information is immutable after the request is created. Only the Request and Usages fields can be set on creation, other fields are derived by Kubernetes and cannot be modified by users.
       */
-    @js.native
     trait CertificateSigningRequestSpec extends StObject {
       
       /**
         * Extra information about the requesting user. See user.Info interface for details.
         */
-      var extra: StringDictionary[js.Array[String]] = js.native
+      var extra: StringDictionary[js.Array[String]]
       
       /**
         * Group information about the requesting user. See user.Info interface for details.
         */
-      var groups: js.Array[String] = js.native
+      var groups: js.Array[String]
       
       /**
         * Base64-encoded PKCS#10 CSR data
         */
-      var request: String = js.native
+      var request: String
       
       /**
         * Requested signer for the request. It is a qualified name in the form: `scope-hostname.io/name`. If empty, it will be defaulted:
@@ -514,12 +494,12 @@ object certificates {
         *  3. Otherwise, it is assigned "kubernetes.io/legacy-unknown".
         * Distribution of trust for signers happens out of band. You can select on this field using `spec.signerName`.
         */
-      var signerName: String = js.native
+      var signerName: String
       
       /**
         * UID information about the requesting user. See user.Info interface for details.
         */
-      var uid: String = js.native
+      var uid: String
       
       /**
         * allowedUsages specifies a set of usage contexts the key will be valid for. See: https://tools.ietf.org/html/rfc5280#section-4.2.1.3
@@ -549,12 +529,12 @@ object certificates {
         *  "microsoft sgc",
         *  "netscape sgc"
         */
-      var usages: js.Array[String] = js.native
+      var usages: js.Array[String]
       
       /**
         * Information about the requesting user. See user.Info interface for details.
         */
-      var username: String = js.native
+      var username: String
     }
     object CertificateSigningRequestSpec {
       
@@ -604,18 +584,17 @@ object certificates {
       }
     }
     
-    @js.native
     trait CertificateSigningRequestStatus extends StObject {
       
       /**
         * If request was approved, the controller will place the issued certificate here.
         */
-      var certificate: String = js.native
+      var certificate: String
       
       /**
         * Conditions applied to the request, such as approval or denial.
         */
-      var conditions: js.Array[CertificateSigningRequestCondition] = js.native
+      var conditions: js.Array[CertificateSigningRequestCondition]
     }
     object CertificateSigningRequestStatus {
       

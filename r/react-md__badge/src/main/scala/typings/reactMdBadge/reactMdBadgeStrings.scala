@@ -3,13 +3,14 @@ package typings.reactMdBadge
 import typings.reactMdBadge.badgeMod.BadgeTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdBadgeStrings {
   
   @js.native
-  sealed trait default extends BadgeTheme
+  sealed trait default
+    extends StObject
+       with BadgeTheme
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
@@ -54,7 +55,9 @@ object reactMdBadgeStrings {
   def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait clear extends BadgeTheme
+  sealed trait clear
+    extends StObject
+       with BadgeTheme
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   
@@ -199,7 +202,9 @@ object reactMdBadgeStrings {
   def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
-  sealed trait primary extends BadgeTheme
+  sealed trait primary
+    extends StObject
+       with BadgeTheme
   @scala.inline
   def primary: primary = "primary".asInstanceOf[primary]
   
@@ -229,7 +234,9 @@ object reactMdBadgeStrings {
   def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait secondary extends BadgeTheme
+  sealed trait secondary
+    extends StObject
+       with BadgeTheme
   @scala.inline
   def secondary: secondary = "secondary".asInstanceOf[secondary]
   

@@ -2,17 +2,15 @@ package typings.primereact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckedData extends StObject {
   
-  var checked: Boolean = js.native
+  var checked: Boolean
   
-  var data: js.Object = js.native
+  var data: js.Object
   
-  var originalEvent: typings.std.Event = js.native
+  var originalEvent: typings.std.Event
 }
 object CheckedData {
   

@@ -4,20 +4,18 @@ import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.schemaMod._ModelToObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<typedoc.typedoc/dist/lib/serialization/schema.ReflectionCategory> */
-@js.native
 trait PartialReflectionCategory extends StObject {
   
   var children: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: std.Array<typedoc.typedoc/dist/lib/models/reflections/abstract.Reflection>[number]['id'] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var title: js.UndefOr[ModelToObject[String] | String] = js.native
+  var title: js.UndefOr[ModelToObject[String] | String] = js.undefined
 }
 object PartialReflectionCategory {
   

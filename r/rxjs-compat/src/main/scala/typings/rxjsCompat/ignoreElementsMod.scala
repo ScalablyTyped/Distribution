@@ -2,12 +2,14 @@ package typings.rxjsCompat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ignoreElementsMod {
   
-  @JSImport("rxjs-compat/operators/ignoreElements", "ignoreElements")
+  @JSImport("rxjs-compat/operators/ignoreElements", JSImport.Namespace)
   @js.native
-  def ignoreElements(): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ignoreElements(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ignoreElements")().asInstanceOf[js.Any]
 }

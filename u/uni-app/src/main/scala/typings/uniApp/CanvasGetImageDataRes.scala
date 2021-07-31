@@ -2,31 +2,29 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasGetImageDataRes extends StObject {
   
   /**
     * 图像像素点数据，一维数组，每四项表示一个像素点的rgba
     */
-  var data: js.UndefOr[js.Array[_]] = js.native
+  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 回调信息
     */
-  var errMsg: js.UndefOr[String] = js.native
+  var errMsg: js.UndefOr[String] = js.undefined
   
   /**
     * 图像数据矩形的高度
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * 图像数据矩形的宽度
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object CanvasGetImageDataRes {
   
@@ -40,7 +38,7 @@ object CanvasGetImageDataRes {
   implicit class CanvasGetImageDataResMutableBuilder[Self <: CanvasGetImageDataRes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

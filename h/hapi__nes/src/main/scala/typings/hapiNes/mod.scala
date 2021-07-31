@@ -10,14 +10,13 @@ import typings.hapiNes.hapiNesStrings.required
 import typings.hapiNes.hapiNesStrings.user
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("@hapi/nes", JSImport.Namespace)
   @js.native
-  val ^ : NesClassExports with Plugin[js.Object] = js.native
+  val ^ : NesClassExports & Plugin[js.Object] = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@hapi/nes", "Client")
@@ -51,10 +50,9 @@ object mod extends Shortcut {
   
   type Handler = typings.hapiNes.clientMod.Client.Handler
   
-  @js.native
   trait NesClassExports extends StObject {
     
-    var Client: Instantiable = js.native
+    var Client: Instantiable
   }
   object NesClassExports {
     
@@ -72,10 +70,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ServerBroadcastOptions extends StObject {
     
-    var user: js.Any = js.native
+    var user: js.Any
   }
   object ServerBroadcastOptions {
     
@@ -93,12 +90,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ServerEachSocketOptions extends StObject {
     
-    var subscription: js.UndefOr[String] = js.native
+    var subscription: js.UndefOr[String] = js.undefined
     
-    var user: js.UndefOr[js.Any] = js.native
+    var user: js.UndefOr[js.Any] = js.undefined
   }
   object ServerEachSocketOptions {
     
@@ -137,12 +133,11 @@ object mod extends Shortcut {
   
   type ServerOnUnSubscribeWithoutParams = js.Function2[/* socket */ Socket, /* path */ String, Unit]
   
-  @js.native
   trait ServerPublishOptions extends StObject {
     
-    var internal: js.UndefOr[js.Any] = js.native
+    var internal: js.UndefOr[js.Any] = js.undefined
     
-    var user: js.UndefOr[js.Any] = js.native
+    var user: js.UndefOr[js.Any] = js.undefined
   }
   object ServerPublishOptions {
     
@@ -169,10 +164,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ServerSubscriptionOptions extends StObject {
     
-    var auth: js.UndefOr[Boolean | ServerSubscriptionOptionsAuthOptions] = js.native
+    var auth: js.UndefOr[Boolean | ServerSubscriptionOptionsAuthOptions] = js.undefined
     
     var filter: js.UndefOr[
         js.Function4[
@@ -182,11 +176,11 @@ object mod extends Shortcut {
           /* next */ js.Function2[/* isMatch */ Boolean, /* override */ js.UndefOr[js.Any], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onSubscribe: js.UndefOr[ServerOnSubscribe] = js.native
+    var onSubscribe: js.UndefOr[ServerOnSubscribe] = js.undefined
     
-    var onUnsubscribe: js.UndefOr[ServerOnUnSubscribe] = js.native
+    var onUnsubscribe: js.UndefOr[ServerOnUnSubscribe] = js.undefined
   }
   object ServerSubscriptionOptions {
     
@@ -239,16 +233,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ServerSubscriptionOptionsAuthOptions extends StObject {
     
-    var entity: js.UndefOr[user | app | any] = js.native
+    var entity: js.UndefOr[user | app | any] = js.undefined
     
-    var index: js.UndefOr[Boolean] = js.native
+    var index: js.UndefOr[Boolean] = js.undefined
     
-    var mode: js.UndefOr[required | optional] = js.native
+    var mode: js.UndefOr[required | optional] = js.undefined
     
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object ServerSubscriptionOptionsAuthOptions {
     
@@ -290,14 +283,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ServerSubscriptionOptionsFilterOptions extends StObject {
     
-    var credentials: js.UndefOr[js.Any] = js.native
+    var credentials: js.UndefOr[js.Any] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
-    var socket: Socket = js.native
+    var socket: Socket
   }
   object ServerSubscriptionOptionsFilterOptions {
     
@@ -327,22 +319,21 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Socket extends StObject {
     
-    var app: js.Object = js.native
+    var app: js.Object
     
-    var auth: SocketAuthObject = js.native
+    var auth: SocketAuthObject
     
-    def disconnect(): js.Promise[_] = js.native
+    def disconnect(): js.Promise[js.Any]
     
-    var id: String = js.native
+    var id: String
     
-    def publish(path: String, message: js.Any): js.Promise[_] = js.native
+    def publish(path: String, message: js.Any): js.Promise[js.Any]
     
-    def revoke(path: String, message: js.Any): js.Promise[_] = js.native
+    def revoke(path: String, message: js.Any): js.Promise[js.Any]
     
-    def send(message: js.Any): js.Promise[_] = js.native
+    def send(message: js.Any): js.Promise[js.Any]
   }
   object Socket {
     
@@ -350,11 +341,11 @@ object mod extends Shortcut {
     def apply(
       app: js.Object,
       auth: SocketAuthObject,
-      disconnect: () => js.Promise[_],
+      disconnect: () => js.Promise[js.Any],
       id: String,
-      publish: (String, js.Any) => js.Promise[_],
-      revoke: (String, js.Any) => js.Promise[_],
-      send: js.Any => js.Promise[_]
+      publish: (String, js.Any) => js.Promise[js.Any],
+      revoke: (String, js.Any) => js.Promise[js.Any],
+      send: js.Any => js.Promise[js.Any]
     ): Socket = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], auth = auth.asInstanceOf[js.Any], disconnect = js.Any.fromFunction0(disconnect), id = id.asInstanceOf[js.Any], publish = js.Any.fromFunction2(publish), revoke = js.Any.fromFunction2(revoke), send = js.Any.fromFunction1(send))
       __obj.asInstanceOf[Socket]
@@ -370,30 +361,29 @@ object mod extends Shortcut {
       def setAuth(value: SocketAuthObject): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDisconnect(value: () => js.Promise[_]): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      def setDisconnect(value: () => js.Promise[js.Any]): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
       @scala.inline
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPublish(value: (String, js.Any) => js.Promise[_]): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
+      def setPublish(value: (String, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setRevoke(value: (String, js.Any) => js.Promise[_]): Self = StObject.set(x, "revoke", js.Any.fromFunction2(value))
+      def setRevoke(value: (String, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "revoke", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setSend(value: js.Any => js.Promise[_]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      def setSend(value: js.Any => js.Promise[js.Any]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait SocketAuthObject extends StObject {
     
-    var artifacts: js.Any = js.native
+    var artifacts: js.Any
     
-    var credentials: js.Any = js.native
+    var credentials: js.Any
     
-    var isAuthenticated: Boolean = js.native
+    var isAuthenticated: Boolean
   }
   object SocketAuthObject {
     
@@ -417,18 +407,17 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = NesClassExports with Plugin[js.Object]
+  type _To = NesClassExports & Plugin[js.Object]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: NesClassExports with Plugin[js.Object] = ^
+  override def _to: NesClassExports & Plugin[js.Object] = ^
   
   /* augmented module */
   object hapiHapiAugmentingMod {
     
-    @js.native
     trait Request extends StObject {
       
-      var socket: Socket = js.native
+      var socket: Socket
     }
     object Request {
       

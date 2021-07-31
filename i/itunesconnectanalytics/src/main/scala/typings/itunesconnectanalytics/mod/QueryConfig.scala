@@ -2,25 +2,23 @@ package typings.itunesconnectanalytics.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryConfig extends StObject {
   
-  var dimensionFilters: js.UndefOr[js.Array[DimensionFilters]] = js.native
+  var dimensionFilters: js.UndefOr[js.Array[DimensionFilters]] = js.undefined
   
-  var end: js.UndefOr[QueryDateTypes] = js.native
+  var end: js.UndefOr[QueryDateTypes] = js.undefined
   
-  var frequency: js.UndefOr[typings.itunesconnectanalytics.mod.frequency] = js.native
+  var frequency: js.UndefOr[typings.itunesconnectanalytics.mod.frequency] = js.undefined
   
-  var group: js.UndefOr[QueryGroup] = js.native
+  var group: js.UndefOr[QueryGroup] = js.undefined
   
   var measures: js.UndefOr[
     typings.itunesconnectanalytics.mod.measures | js.Array[typings.itunesconnectanalytics.mod.measures]
-  ] = js.native
+  ] = js.undefined
   
-  var start: js.UndefOr[QueryDateTypes] = js.native
+  var start: js.UndefOr[QueryDateTypes] = js.undefined
 }
 object QueryConfig {
   

@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Network.GetCookiesRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.GetCookiesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetCookiesResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[GetCookiesRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[GetCookiesRequest]]
   
-  var returnType: GetCookiesResponse = js.native
+  var returnType: GetCookiesResponse
 }
 object ReturnTypeGetCookiesResponse {
   

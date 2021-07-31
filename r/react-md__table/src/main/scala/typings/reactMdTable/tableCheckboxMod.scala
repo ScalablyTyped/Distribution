@@ -100,72 +100,70 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLTableDataCellElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableCheckboxMod {
   
   @JSImport("@react-md/table/types/TableCheckbox", "TableCheckbox")
   @js.native
-  val TableCheckbox: ForwardRefExoticComponent[TableCheckboxProps with RefAttributes[HTMLTableDataCellElement]] = js.native
+  val TableCheckbox: ForwardRefExoticComponent[TableCheckboxProps & RefAttributes[HTMLTableDataCellElement]] = js.native
   
   /* Inlined parent std.Omit<react.react.TdHTMLAttributes<std.HTMLTableDataCellElement>, 'onChange' | 'scope' | 'aria-sort'> */
   /* Inlined parent std.Pick<@react-md/form.@react-md/form.CheckboxProps, @react-md/table.@react-md/table/types/TableCheckbox.WantedCheckboxProps> */
   /* Inlined parent std.Pick<@react-md/table.@react-md/table/types/TableCell.TableCellProps, 'sticky'> */
-  @js.native
   trait TableCheckboxProps extends StObject {
     
-    var abbr: js.UndefOr[String] = js.native
+    var abbr: js.UndefOr[String] = js.undefined
     
-    var about: js.UndefOr[String] = js.native
+    var about: js.UndefOr[String] = js.undefined
     
-    var accessKey: js.UndefOr[String] = js.native
+    var accessKey: js.UndefOr[String] = js.undefined
     
-    var align: js.UndefOr[left | center | right | justify | char] = js.native
+    var align: js.UndefOr[left | center | right | justify | char] = js.undefined
     
-    var `aria-activedescendant`: js.UndefOr[String] = js.native
+    var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.native
+    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.native
+    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-colcount`: js.UndefOr[Double] = js.native
+    var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colindex`: js.UndefOr[Double] = js.native
+    var `aria-colindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colspan`: js.UndefOr[Double] = js.native
+    var `aria-colspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-controls`: js.UndefOr[String] = js.native
+    var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
     
-    var `aria-describedby`: js.UndefOr[String] = js.native
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    var `aria-details`: js.UndefOr[String] = js.native
+    var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.native
+    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
-    var `aria-errormessage`: js.UndefOr[String] = js.native
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.native
+    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-flowto`: js.UndefOr[String] = js.native
+    var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.native
+    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
-    var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+    var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
     /**
       * An screen reader label to use for the checkbox. Either this or the
@@ -173,368 +171,368 @@ object tableCheckboxMod {
       *
       * Note: This is defaulted automatically to "Toggle Row Selection".
       */
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
     /**
       * An optional id or space-delimited list of ids that describe the checkbox.
       * Either this or the `aria-label` props are required for a11y.
       */
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var `aria-level`: js.UndefOr[Double] = js.native
+    var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.native
+    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.native
+    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var `aria-owns`: js.UndefOr[String] = js.native
+    var `aria-owns`: js.UndefOr[String] = js.undefined
     
-    var `aria-placeholder`: js.UndefOr[String] = js.native
+    var `aria-placeholder`: js.UndefOr[String] = js.undefined
     
-    var `aria-posinset`: js.UndefOr[Double] = js.native
+    var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.native
+    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-      ] = js.native
+      ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.native
+    var `aria-required`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-roledescription`: js.UndefOr[String] = js.native
+    var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
-    var `aria-rowcount`: js.UndefOr[Double] = js.native
+    var `aria-rowcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowindex`: js.UndefOr[Double] = js.native
+    var `aria-rowindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowspan`: js.UndefOr[Double] = js.native
+    var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.native
+    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-setsize`: js.UndefOr[Double] = js.native
+    var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuemax`: js.UndefOr[Double] = js.native
+    var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuemin`: js.UndefOr[Double] = js.native
+    var `aria-valuemin`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuenow`: js.UndefOr[Double] = js.native
+    var `aria-valuenow`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuetext`: js.UndefOr[String] = js.native
+    var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var autoCapitalize: js.UndefOr[String] = js.native
+    var autoCapitalize: js.UndefOr[String] = js.undefined
     
-    var autoCorrect: js.UndefOr[String] = js.native
+    var autoCorrect: js.UndefOr[String] = js.undefined
     
-    var autoSave: js.UndefOr[String] = js.native
+    var autoSave: js.UndefOr[String] = js.undefined
     
     /**
       * An optional id to provide to the `<td>` element. The base `id` prop is
       * passed to the checkbox input instead.
       */
-    var cellId: js.UndefOr[String] = js.native
+    var cellId: js.UndefOr[String] = js.undefined
     
     /**
       * An optional className to apply to the checkbox. The base `className` is
       * passed to the `<td>`.
       */
-    var checkboxClassName: js.UndefOr[String] = js.native
+    var checkboxClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional `ref` to apply to the checkbox element. The base `ref` is
       * passed to the `<td>` element.
       */
-    var checkboxRef: js.UndefOr[Ref[HTMLInputElement]] = js.native
+    var checkboxRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
     /**
       * An optional style to apply to the checkbox. The base `style` is passed to
       * the `<td>`.
       */
-    var checkboxStyle: js.UndefOr[CSSProperties] = js.native
+    var checkboxStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
-    var contextMenu: js.UndefOr[String] = js.native
+    var contextMenu: js.UndefOr[String] = js.undefined
     
-    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
-    var datatype: js.UndefOr[String] = js.native
+    var datatype: js.UndefOr[String] = js.undefined
     
-    var defaultChecked: js.UndefOr[Boolean] = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+    var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var disableIconOverlay: js.UndefOr[Boolean] = js.native
+    var disableIconOverlay: js.UndefOr[Boolean] = js.undefined
     
-    var draggable: js.UndefOr[Booleanish] = js.native
+    var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var headers: js.UndefOr[String] = js.native
+    var headers: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var iconClassName: js.UndefOr[String] = js.native
+    var iconClassName: js.UndefOr[String] = js.undefined
     
-    var iconStyle: js.UndefOr[CSSProperties] = js.native
+    var iconStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * The id for the checkbox. This is required for a11y.
       */
-    var id: String = js.native
+    var id: String
     
-    var indeterminate: js.UndefOr[Boolean] = js.native
+    var indeterminate: js.UndefOr[Boolean] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.native
+    var inlist: js.UndefOr[js.Any] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
-    var is: js.UndefOr[String] = js.native
+    var is: js.UndefOr[String] = js.undefined
     
-    var itemID: js.UndefOr[String] = js.native
+    var itemID: js.UndefOr[String] = js.undefined
     
-    var itemProp: js.UndefOr[String] = js.native
+    var itemProp: js.UndefOr[String] = js.undefined
     
-    var itemRef: js.UndefOr[String] = js.native
+    var itemRef: js.UndefOr[String] = js.undefined
     
-    var itemScope: js.UndefOr[Boolean] = js.native
+    var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemType: js.UndefOr[String] = js.native
+    var itemType: js.UndefOr[String] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onAbort: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onAbort: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLTableDataCellElement]] = js.native
+    var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLTableDataCellElement]] = js.native
+    var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLTableDataCellElement]] = js.native
+    var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onAuxClick: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.native
+    var onAuxClick: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onBeforeInput: js.UndefOr[FormEventHandler[HTMLTableDataCellElement]] = js.native
+    var onBeforeInput: js.UndefOr[FormEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLTableDataCellElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onCanPlay: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onCanPlay: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLTableDataCellElement]] = js.native
+    var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLTableDataCellElement]] = js.native
+    var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLTableDataCellElement]] = js.native
+    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.native
+    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onCopy: js.UndefOr[ClipboardEventHandler[HTMLTableDataCellElement]] = js.native
+    var onCopy: js.UndefOr[ClipboardEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onCut: js.UndefOr[ClipboardEventHandler[HTMLTableDataCellElement]] = js.native
+    var onCut: js.UndefOr[ClipboardEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.native
+    var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onDrag: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.native
+    var onDrag: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onDragEnd: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.native
+    var onDragEnd: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onDragEnter: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.native
+    var onDragEnter: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onDragExit: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.native
+    var onDragExit: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onDragLeave: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.native
+    var onDragLeave: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onDragOver: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.native
+    var onDragOver: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onDragStart: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.native
+    var onDragStart: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onDrop: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.native
+    var onDrop: js.UndefOr[DragEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onDurationChange: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onDurationChange: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onEmptied: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onEmptied: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onEncrypted: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onEncrypted: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onEnded: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onEnded: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onError: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onError: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLTableDataCellElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onInput: js.UndefOr[FormEventHandler[HTMLTableDataCellElement]] = js.native
+    var onInput: js.UndefOr[FormEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onInvalid: js.UndefOr[FormEventHandler[HTMLTableDataCellElement]] = js.native
+    var onInvalid: js.UndefOr[FormEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLTableDataCellElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLTableDataCellElement]] = js.native
+    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLTableDataCellElement]] = js.native
+    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onLoad: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onLoad: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onLoadStart: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onLoadStart: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onLoadedData: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onLoadedData: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onMouseMove: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.native
+    var onMouseMove: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onMouseOut: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.native
+    var onMouseOut: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onMouseOver: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.native
+    var onMouseOver: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.native
+    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onPaste: js.UndefOr[ClipboardEventHandler[HTMLTableDataCellElement]] = js.native
+    var onPaste: js.UndefOr[ClipboardEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onPause: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onPause: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onPlay: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onPlay: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onPlaying: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onPlaying: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.native
+    var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onPointerDown: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.native
+    var onPointerDown: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.native
+    var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.native
+    var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onPointerMove: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.native
+    var onPointerMove: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onPointerOut: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.native
+    var onPointerOut: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onPointerOver: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.native
+    var onPointerOver: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onPointerUp: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.native
+    var onPointerUp: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onProgress: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onProgress: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onRateChange: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onRateChange: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onReset: js.UndefOr[FormEventHandler[HTMLTableDataCellElement]] = js.native
+    var onReset: js.UndefOr[FormEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onScroll: js.UndefOr[UIEventHandler[HTMLTableDataCellElement]] = js.native
+    var onScroll: js.UndefOr[UIEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onSeeked: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onSeeked: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onSeeking: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onSeeking: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onSelect: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onSelect: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onStalled: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onStalled: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onSubmit: js.UndefOr[FormEventHandler[HTMLTableDataCellElement]] = js.native
+    var onSubmit: js.UndefOr[FormEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onSuspend: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onSuspend: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement]] = js.native
+    var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement]] = js.native
+    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement]] = js.native
+    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement]] = js.native
+    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLTableDataCellElement]] = js.native
+    var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onWaiting: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+    var onWaiting: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var onWheel: js.UndefOr[WheelEventHandler[HTMLTableDataCellElement]] = js.native
+    var onWheel: js.UndefOr[WheelEventHandler[HTMLTableDataCellElement]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
     
-    var radioGroup: js.UndefOr[String] = js.native
+    var radioGroup: js.UndefOr[String] = js.undefined
     
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
     
-    var results: js.UndefOr[Double] = js.native
+    var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var rowSpan: js.UndefOr[Double] = js.native
+    var rowSpan: js.UndefOr[Double] = js.undefined
     
-    var security: js.UndefOr[String] = js.native
+    var security: js.UndefOr[String] = js.undefined
     
-    var slot: js.UndefOr[String] = js.native
+    var slot: js.UndefOr[String] = js.undefined
     
-    var spellCheck: js.UndefOr[Booleanish] = js.native
+    var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
-    var sticky: js.UndefOr[js.Any] = js.native
+    var sticky: js.UndefOr[js.Any] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
-    var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+    var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var toggleClassName: js.UndefOr[String] = js.native
+    var toggleClassName: js.UndefOr[String] = js.undefined
     
-    var toggleStyle: js.UndefOr[CSSProperties] = js.native
+    var toggleStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.native
+    var translate: js.UndefOr[yes | no] = js.undefined
     
-    var typeof: js.UndefOr[String] = js.native
+    var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.native
+    var unselectable: js.UndefOr[on | off] = js.undefined
     
-    var valign: js.UndefOr[top | middle | bottom | baseline] = js.native
+    var valign: js.UndefOr[top | middle | bottom | baseline] = js.undefined
     
-    var value: js.UndefOr[String | js.Array[String] | Double] = js.native
+    var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
     
-    var vocab: js.UndefOr[String] = js.native
+    var vocab: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object TableCheckboxProps {
     

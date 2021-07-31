@@ -3,7 +3,6 @@ package typings.cote.mod
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cote", "Monitor")
@@ -31,7 +30,7 @@ class Monitor protected () extends Component {
     /**
     * Controls the network-layer configuration and environments for components.
     */
-  discoveryOptions: js.UndefOr[scala.Nothing],
+  discoveryOptions: Unit,
     stream: Stream
   ) = this()
   def this(

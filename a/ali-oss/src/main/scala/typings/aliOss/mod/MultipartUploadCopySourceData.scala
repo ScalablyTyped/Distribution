@@ -2,22 +2,20 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultipartUploadCopySourceData extends StObject {
   
   // data copy start byte offset, e.g: 0
-  var endOffset: Double = js.native
+  var endOffset: Double
   
   // the source object name
-  var sourceBucketName: String = js.native
+  var sourceBucketName: String
   
-  var sourceKey: String = js.native
+  var sourceKey: String
   
   // sourceData.  the source bucket name
-  var startOffset: Double = js.native
+  var startOffset: Double
 }
 object MultipartUploadCopySourceData {
   

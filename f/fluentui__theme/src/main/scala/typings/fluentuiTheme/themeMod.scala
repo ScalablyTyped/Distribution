@@ -22,37 +22,35 @@ import typings.uifabricMergeStyles.irawstyleMod.IRawStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeMod {
   
-  @js.native
   trait ColorTokenSet extends StObject {
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
-    var contentColor: js.UndefOr[String] = js.native
+    var contentColor: js.UndefOr[String] = js.undefined
     
-    var dividerColor: js.UndefOr[String] = js.native
+    var dividerColor: js.UndefOr[String] = js.undefined
     
-    var focusColor: js.UndefOr[String] = js.native
+    var focusColor: js.UndefOr[String] = js.undefined
     
-    var focusInnerColor: js.UndefOr[String] = js.native
+    var focusInnerColor: js.UndefOr[String] = js.undefined
     
-    var highContrast: js.UndefOr[ColorTokens] = js.native
+    var highContrast: js.UndefOr[ColorTokens] = js.undefined
     
-    var iconColor: js.UndefOr[String] = js.native
+    var iconColor: js.UndefOr[String] = js.undefined
     
-    var linkColor: js.UndefOr[String] = js.native
+    var linkColor: js.UndefOr[String] = js.undefined
     
-    var menuIconColor: js.UndefOr[String] = js.native
+    var menuIconColor: js.UndefOr[String] = js.undefined
     
-    var opacity: js.UndefOr[String] = js.native
+    var opacity: js.UndefOr[String] = js.undefined
     
-    var secondaryContentColor: js.UndefOr[String] = js.native
+    var secondaryContentColor: js.UndefOr[String] = js.undefined
   }
   object ColorTokenSet {
     
@@ -139,49 +137,25 @@ object themeMod {
     }
   }
   
-  /* Inlined @fluentui/theme.@fluentui/theme/lib/types/Theme.ColorTokenSet & {  checked :@fluentui/theme.@fluentui/theme/lib/types/Theme.ColorTokens | undefined,   checkedHovered :@fluentui/theme.@fluentui/theme/lib/types/Theme.ColorTokens | undefined,   checkedPressed :@fluentui/theme.@fluentui/theme/lib/types/Theme.ColorTokens | undefined,   disabled :@fluentui/theme.@fluentui/theme/lib/types/Theme.ColorTokenSet | undefined,   expanded :@fluentui/theme.@fluentui/theme/lib/types/Theme.ColorTokenSet | undefined,   focused :@fluentui/theme.@fluentui/theme/lib/types/Theme.ColorTokenSet | undefined,   hovered :@fluentui/theme.@fluentui/theme/lib/types/Theme.ColorTokenSet | undefined,   pressed :@fluentui/theme.@fluentui/theme/lib/types/Theme.ColorTokenSet | undefined} */
-  @js.native
-  trait ColorTokens extends StObject {
+  trait ColorTokens
+    extends StObject
+       with ColorTokenSet {
     
-    var background: js.UndefOr[String] = js.native
+    var checked: js.UndefOr[ColorTokens] = js.undefined
     
-    var borderColor: js.UndefOr[String] = js.native
+    var checkedHovered: js.UndefOr[ColorTokens] = js.undefined
     
-    var checked: js.UndefOr[ColorTokens] = js.native
+    var checkedPressed: js.UndefOr[ColorTokens] = js.undefined
     
-    var checkedHovered: js.UndefOr[ColorTokens] = js.native
+    var disabled: js.UndefOr[ColorTokenSet] = js.undefined
     
-    var checkedPressed: js.UndefOr[ColorTokens] = js.native
+    var expanded: js.UndefOr[ColorTokenSet] = js.undefined
     
-    var contentColor: js.UndefOr[String] = js.native
+    var focused: js.UndefOr[ColorTokenSet] = js.undefined
     
-    var disabled: js.UndefOr[ColorTokenSet] = js.native
+    var hovered: js.UndefOr[ColorTokenSet] = js.undefined
     
-    var dividerColor: js.UndefOr[String] = js.native
-    
-    var expanded: js.UndefOr[ColorTokenSet] = js.native
-    
-    var focusColor: js.UndefOr[String] = js.native
-    
-    var focusInnerColor: js.UndefOr[String] = js.native
-    
-    var focused: js.UndefOr[ColorTokenSet] = js.native
-    
-    var highContrast: js.UndefOr[ColorTokens] = js.native
-    
-    var hovered: js.UndefOr[ColorTokenSet] = js.native
-    
-    var iconColor: js.UndefOr[String] = js.native
-    
-    var linkColor: js.UndefOr[String] = js.native
-    
-    var menuIconColor: js.UndefOr[String] = js.native
-    
-    var opacity: js.UndefOr[String] = js.native
-    
-    var pressed: js.UndefOr[ColorTokenSet] = js.native
-    
-    var secondaryContentColor: js.UndefOr[String] = js.native
+    var pressed: js.UndefOr[ColorTokenSet] = js.undefined
   }
   object ColorTokens {
     
@@ -193,18 +167,6 @@ object themeMod {
     
     @scala.inline
     implicit class ColorTokensMutableBuilder[Self <: ColorTokens] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
-      
-      @scala.inline
-      def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
       @scala.inline
       def setChecked(value: ColorTokens): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
@@ -225,22 +187,10 @@ object themeMod {
       def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
       @scala.inline
-      def setContentColor(value: String): Self = StObject.set(x, "contentColor", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setContentColorUndefined: Self = StObject.set(x, "contentColor", js.undefined)
-      
-      @scala.inline
       def setDisabled(value: ColorTokenSet): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
-      
-      @scala.inline
-      def setDividerColor(value: String): Self = StObject.set(x, "dividerColor", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDividerColorUndefined: Self = StObject.set(x, "dividerColor", js.undefined)
       
       @scala.inline
       def setExpanded(value: ColorTokenSet): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
@@ -249,28 +199,10 @@ object themeMod {
       def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
       @scala.inline
-      def setFocusColor(value: String): Self = StObject.set(x, "focusColor", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFocusColorUndefined: Self = StObject.set(x, "focusColor", js.undefined)
-      
-      @scala.inline
-      def setFocusInnerColor(value: String): Self = StObject.set(x, "focusInnerColor", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFocusInnerColorUndefined: Self = StObject.set(x, "focusInnerColor", js.undefined)
-      
-      @scala.inline
       def setFocused(value: ColorTokenSet): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
-      
-      @scala.inline
-      def setHighContrast(value: ColorTokens): Self = StObject.set(x, "highContrast", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHighContrastUndefined: Self = StObject.set(x, "highContrast", js.undefined)
       
       @scala.inline
       def setHovered(value: ColorTokenSet): Self = StObject.set(x, "hovered", value.asInstanceOf[js.Any])
@@ -279,55 +211,24 @@ object themeMod {
       def setHoveredUndefined: Self = StObject.set(x, "hovered", js.undefined)
       
       @scala.inline
-      def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
-      
-      @scala.inline
-      def setLinkColor(value: String): Self = StObject.set(x, "linkColor", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLinkColorUndefined: Self = StObject.set(x, "linkColor", js.undefined)
-      
-      @scala.inline
-      def setMenuIconColor(value: String): Self = StObject.set(x, "menuIconColor", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMenuIconColorUndefined: Self = StObject.set(x, "menuIconColor", js.undefined)
-      
-      @scala.inline
-      def setOpacity(value: String): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
-      
-      @scala.inline
       def setPressed(value: ColorTokenSet): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPressedUndefined: Self = StObject.set(x, "pressed", js.undefined)
-      
-      @scala.inline
-      def setSecondaryContentColor(value: String): Self = StObject.set(x, "secondaryContentColor", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSecondaryContentColorUndefined: Self = StObject.set(x, "secondaryContentColor", js.undefined)
     }
   }
   
-  @js.native
   trait ComponentStyles extends StObject {
     
     /**
       * styles prop for a component.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[_, _]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[js.Any, js.Any]] = js.undefined
     
     /**
       * The variants property is still in an experimental phase. This is only applied by `ThemeProvider`.
       */
-    var variants: js.UndefOr[Variants] = js.native
+    var variants: js.UndefOr[Variants] = js.undefined
   }
   object ComponentStyles {
     
@@ -341,10 +242,10 @@ object themeMod {
     implicit class ComponentStylesMutableBuilder[Self <: ComponentStyles] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[_, _]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      def setStyles(value: IStyleFunctionOrObject[js.Any, js.Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setStylesFunction1(value: _ => DeepPartial[_]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      def setStylesFunction1(value: js.Any => DeepPartial[js.Any]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
       @scala.inline
       def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
@@ -360,14 +261,13 @@ object themeMod {
   type ComponentsStyles = StringDictionary[ComponentStyles]
   
   /* Inlined std.Partial<{  fontFamily :string,   fontSize :string,   fontWeight :string}> */
-  @js.native
   trait FontTokens extends StObject {
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[String] = js.native
+    var fontSize: js.UndefOr[String] = js.undefined
     
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
   }
   object FontTokens {
     
@@ -400,27 +300,26 @@ object themeMod {
     }
   }
   
-  @js.native
   trait PartialTheme extends StObject {
     
-    var components: js.UndefOr[ComponentsStyles] = js.native
+    var components: js.UndefOr[ComponentsStyles] = js.undefined
     
     /**
       * Use this property to specify font property defaults.
       */
-    var defaultFontStyle: js.UndefOr[IRawStyle] = js.native
+    var defaultFontStyle: js.UndefOr[IRawStyle] = js.undefined
     
-    var disableGlobalClassNames: js.UndefOr[Boolean] = js.native
+    var disableGlobalClassNames: js.UndefOr[Boolean] = js.undefined
     
-    var effects: js.UndefOr[PartialIEffects] = js.native
+    var effects: js.UndefOr[PartialIEffects] = js.undefined
     
-    var fonts: js.UndefOr[PartialIFontStyles] = js.native
+    var fonts: js.UndefOr[PartialIFontStyles] = js.undefined
     
-    var isInverted: js.UndefOr[Boolean] = js.native
+    var isInverted: js.UndefOr[Boolean] = js.undefined
     
-    var palette: js.UndefOr[PartialIPalette] = js.native
+    var palette: js.UndefOr[PartialIPalette] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @internal
@@ -428,24 +327,24 @@ object themeMod {
       * in conjunction with new 'schemes' prop that any component making use of Foundation can use.
       * Alternative themes that can be referred to by name.
       */
-    var schemes: js.UndefOr[PinISchemeNamesIScheme] = js.native
+    var schemes: js.UndefOr[PinISchemeNamesIScheme] = js.undefined
     
-    var semanticColors: js.UndefOr[PartialISemanticColors] = js.native
+    var semanticColors: js.UndefOr[PartialISemanticColors] = js.undefined
     
-    var spacing: js.UndefOr[PartialISpacing] = js.native
+    var spacing: js.UndefOr[PartialISpacing] = js.undefined
     
     /**
       * @internal
       * CSS stylesheets to be registered.
       * This is still in an experimental phase and is only applied by `ThemeProvider`.
       */
-    var stylesheets: js.UndefOr[js.Array[String]] = js.native
+    var stylesheets: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * @internal
       * Global tokens. This is experimental and not production-ready.
       * */
-    var tokens: js.UndefOr[RecursivePartialTokens] = js.native
+    var tokens: js.UndefOr[RecursivePartialTokens] = js.undefined
   }
   object PartialTheme {
     
@@ -543,7 +442,7 @@ object themeMod {
   
   type RecursivePartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P] extends std.Array<infer I>? std.Array</ * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @fluentui/theme.@fluentui/theme/lib/types/Theme.RecursivePartial<I> * / object> : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @fluentui/theme.@fluentui/theme/lib/types/Theme.RecursivePartial<T[P]> * / object}
-    */ typings.fluentuiTheme.fluentuiThemeStrings.RecursivePartial with TopLevel[T]
+    */ typings.fluentuiTheme.fluentuiThemeStrings.RecursivePartial & TopLevel[T]
   
   /* Rewritten from type alias, can be one of: 
     - typings.fluentuiTheme.fluentuiThemeStrings.smallest
@@ -579,20 +478,21 @@ object themeMod {
     def smallest: typings.fluentuiTheme.fluentuiThemeStrings.smallest = "smallest".asInstanceOf[typings.fluentuiTheme.fluentuiThemeStrings.smallest]
   }
   
-  @js.native
-  trait Theme extends IScheme {
+  trait Theme
+    extends StObject
+       with IScheme {
     
     /**
       * Component-level styles and token set.
       * This is still in an experimental phase and is only applied by `ThemeProvider`.
       */
-    var components: js.UndefOr[ComponentsStyles] = js.native
+    var components: js.UndefOr[ComponentsStyles] = js.undefined
     
     /**
       * @internal
       * Id of the theme. This is for internal use only.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * @internal
@@ -600,20 +500,20 @@ object themeMod {
       * in conjunction with new 'schemes' prop that any component making use of Foundation can use.
       * Alternative themes that can be referred to by name.
       */
-    var schemes: js.UndefOr[PinISchemeNamesIScheme] = js.native
+    var schemes: js.UndefOr[PinISchemeNamesIScheme] = js.undefined
     
     /**
       * @internal
       * CSS stylesheets to be registered.
       * This is still in an experimental phase and is only applied by `ThemeProvider`.
       */
-    var stylesheets: js.UndefOr[js.Array[String]] = js.native
+    var stylesheets: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * @internal
       * Global tokens. This is for internal use only and is not production-ready.
       * */
-    var tokens: js.UndefOr[RecursivePartialTokens] = js.native
+    var tokens: js.UndefOr[RecursivePartialTokens] = js.undefined
   }
   object Theme {
     
@@ -669,9 +569,9 @@ object themeMod {
     }
   }
   
-  @js.native
   trait TokenSetType
-    extends /* key */ StringDictionary[js.UndefOr[TokenSetType | String | Double]]
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[TokenSetType | String | Double]]
   object TokenSetType {
     
     @scala.inline
@@ -681,10 +581,11 @@ object themeMod {
     }
   }
   
-  @js.native
-  trait Tokens extends /* key */ StringDictionary[TokenSetType] {
+  trait Tokens
+    extends StObject
+       with /* key */ StringDictionary[TokenSetType] {
     
-    var color: Dictkey = js.native
+    var color: Dictkey
   }
   object Tokens {
     

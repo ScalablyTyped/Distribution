@@ -2,22 +2,20 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedZoneDnsSecConfig extends StObject {
   
   /** Specifies parameters for generating initial DnsKeys for this ManagedZone. Can only be changed while the state is OFF. */
-  var defaultKeySpecs: js.UndefOr[js.Array[DnsKeySpec]] = js.native
+  var defaultKeySpecs: js.UndefOr[js.Array[DnsKeySpec]] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Specifies the mechanism for authenticated denial-of-existence responses. Can only be changed while the state is OFF. */
-  var nonExistence: js.UndefOr[String] = js.native
+  var nonExistence: js.UndefOr[String] = js.undefined
   
   /** Specifies whether DNSSEC is enabled, and what mode it is in. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object ManagedZoneDnsSecConfig {
   

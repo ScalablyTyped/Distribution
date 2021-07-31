@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerManagedEncryptionStatus extends StObject {
   
   /**
     * Required. The resource name of the Cloud KMS CryptoKeyVersion used to encrypt the secret payload, in the following format:
     * `projects/∗/locations/∗/keyRings/∗/cryptoKeys/∗/versions/ *`.
     */
-  var kmsKeyVersionName: js.UndefOr[String] = js.native
+  var kmsKeyVersionName: js.UndefOr[String] = js.undefined
 }
 object CustomerManagedEncryptionStatus {
   

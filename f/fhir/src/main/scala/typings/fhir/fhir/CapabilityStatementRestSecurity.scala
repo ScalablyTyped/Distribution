@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about security of implementation
   */
-@js.native
-trait CapabilityStatementRestSecurity extends BackboneElement {
+trait CapabilityStatementRestSecurity
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'cors'.
     */
-  var _cors: js.UndefOr[Element] = js.native
+  var _cors: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Certificates associated with security profiles
     */
-  var certificate: js.UndefOr[js.Array[CapabilityStatementRestSecurityCertificate]] = js.native
+  var certificate: js.UndefOr[js.Array[CapabilityStatementRestSecurityCertificate]] = js.undefined
   
   /**
     * Adds CORS Headers (http://enable-cors.org/)
     */
-  var cors: js.UndefOr[Boolean] = js.native
+  var cors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * General description of how security works
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * OAuth | SMART-on-FHIR | NTLM | Basic | Kerberos | Certificates
     */
-  var service: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var service: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
 }
 object CapabilityStatementRestSecurity {
   

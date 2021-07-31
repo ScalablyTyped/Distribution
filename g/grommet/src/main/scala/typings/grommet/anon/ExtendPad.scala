@@ -8,19 +8,17 @@ import typings.grommet.utilsMod.PadType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtendPad extends StObject {
   
-  var background: js.UndefOr[BackgroundType] = js.native
+  var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var border: js.UndefOr[String | ColorSideSize] = js.native
+  var border: js.UndefOr[String | ColorSideSize] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[Record[String, _]]] = js.native
+  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
   
-  var pad: js.UndefOr[PadType] = js.native
+  var pad: js.UndefOr[PadType] = js.undefined
 }
 object ExtendPad {
   
@@ -46,10 +44,10 @@ object ExtendPad {
     def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)

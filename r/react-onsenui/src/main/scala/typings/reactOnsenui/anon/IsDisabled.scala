@@ -2,39 +2,37 @@ package typings.reactOnsenui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsDisabled extends StObject {
   
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
-  var animationOptions: js.UndefOr[js.Object] = js.native
+  var animationOptions: js.UndefOr[js.Object] = js.undefined
   
-  var isCancelable: js.UndefOr[Boolean] = js.native
+  var isCancelable: js.UndefOr[Boolean] = js.undefined
   
-  var isDisabled: js.UndefOr[Boolean] = js.native
+  var isDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var isOpen: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.undefined
   
-  var maskColor: js.UndefOr[String] = js.native
+  var maskColor: js.UndefOr[String] = js.undefined
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+  var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onDeviceBackButton: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDeviceBackButton: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPostHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPostHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPostShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPostShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPreHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPreHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPreShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPreShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object IsDisabled {
   

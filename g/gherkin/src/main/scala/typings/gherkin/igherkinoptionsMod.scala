@@ -3,23 +3,21 @@ package typings.gherkin
 import typings.cucumberMessages.idGeneratorMod.NewId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object igherkinoptionsMod {
   
-  @js.native
   trait IGherkinOptions extends StObject {
     
-    var defaultDialect: js.UndefOr[String] = js.native
+    var defaultDialect: js.UndefOr[String] = js.undefined
     
-    var includeGherkinDocument: js.UndefOr[Boolean] = js.native
+    var includeGherkinDocument: js.UndefOr[Boolean] = js.undefined
     
-    var includePickles: js.UndefOr[Boolean] = js.native
+    var includePickles: js.UndefOr[Boolean] = js.undefined
     
-    var includeSource: js.UndefOr[Boolean] = js.native
+    var includeSource: js.UndefOr[Boolean] = js.undefined
     
-    var newId: js.UndefOr[NewId] = js.native
+    var newId: js.UndefOr[NewId] = js.undefined
   }
   object IGherkinOptions {
     

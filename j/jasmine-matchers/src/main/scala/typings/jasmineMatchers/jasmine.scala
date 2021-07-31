@@ -2,7 +2,6 @@ package typings.jasmineMatchers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jasmine {
@@ -14,7 +13,7 @@ object jasmine {
     def toBeArray(): Boolean = js.native
     
     def toBeCloseToOneOf(
-      values: js.Array[_],
+      values: js.Array[js.Any],
       isCloseToFunction: js.Function2[/* actual */ Double, /* expected */ Double, Boolean]
     ): Boolean = js.native
     
@@ -28,7 +27,7 @@ object jasmine {
     
     def toBeOfType(`type`: String): Boolean = js.native
     
-    def toBeOneOf(values: js.Array[_]): Boolean = js.native
+    def toBeOneOf(values: js.Array[js.Any]): Boolean = js.native
     
     //toContain
     def toContainOnce(value: js.Any): Boolean = js.native
@@ -38,7 +37,7 @@ object jasmine {
     def toEachStartWith(searchString: String): Boolean = js.native
     
     def toEndWith(value: js.Any): Boolean = js.native
-    def toEndWith(values: js.Array[_]): Boolean = js.native
+    def toEndWith(values: js.Array[js.Any]): Boolean = js.native
     
     def toExactlyHaveProperties(names: String*): Boolean = js.native
     
@@ -61,7 +60,7 @@ object jasmine {
     
     //toStartEndWith
     def toStartWith(value: js.Any): Boolean = js.native
-    def toStartWith(value: js.Array[_]): Boolean = js.native
+    def toStartWith(value: js.Array[js.Any]): Boolean = js.native
     
     def toStartWithEither(searchString: js.Any*): Boolean = js.native
     

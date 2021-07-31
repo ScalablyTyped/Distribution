@@ -2,25 +2,23 @@ package typings.sendmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Content extends StObject {
     
-    var content: js.UndefOr[js.Any] = js.native
+    var content: js.UndefOr[js.Any] = js.undefined
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Content {
     
@@ -71,16 +69,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Debug extends StObject {
     
-    var debug: js.UndefOr[js.Function0[Unit]] = js.native
+    var debug: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var error: js.UndefOr[js.Function0[Unit]] = js.native
+    var error: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var info: js.UndefOr[js.Function0[Unit]] = js.native
+    var info: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var warn: js.UndefOr[js.Function0[Unit]] = js.native
+    var warn: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Debug {
     
@@ -119,12 +116,11 @@ object anon {
     }
   }
   
-  @js.native
   trait KeySelector extends StObject {
     
-    var keySelector: String = js.native
+    var keySelector: String
     
-    var privateKey: String = js.native
+    var privateKey: String
   }
   object KeySelector {
     

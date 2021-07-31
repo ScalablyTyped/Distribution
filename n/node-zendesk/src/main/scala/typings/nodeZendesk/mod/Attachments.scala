@@ -4,7 +4,6 @@ import typings.node.fsMod.PathLike
 import typings.nodeZendesk.anon.Filename
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Attachments {
@@ -12,17 +11,18 @@ object Attachments {
   @js.native
   trait Methods extends StObject {
     
-    def request(httpMethod: String, fields: js.Any, config: js.Any): js.Promise[_] = js.native
-    def request(httpMethod: String, fields: js.Any, config: js.Any, cb: ZendeskCallback[_, _]): js.Any = js.native
+    def request(httpMethod: String, fields: js.Any, config: js.Any): js.Promise[js.Any] = js.native
+    def request(httpMethod: String, fields: js.Any, config: js.Any, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
     
     def upload(file: PathLike, fileOptions: Filename): js.Promise[Unit] = js.native
-    def upload(file: PathLike, fileOptions: Filename, cb: ZendeskCallback[_, _]): Unit = js.native
+    def upload(file: PathLike, fileOptions: Filename, cb: ZendeskCallback[js.Any, js.Any]): Unit = js.native
   }
   
-  @js.native
-  trait Model extends Photo {
+  trait Model
+    extends StObject
+       with Photo {
     
-    var thumbnails: js.Array[Photo] = js.native
+    var thumbnails: js.Array[Photo]
   }
   object Model {
     
@@ -55,24 +55,25 @@ object Attachments {
     }
   }
   
-  @js.native
-  trait Photo extends PersistableModel {
+  trait Photo
+    extends StObject
+       with PersistableModel {
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var content_url: String = js.native
+    var content_url: String
     
-    var file_name: String = js.native
+    var file_name: String
     
-    var height: Double = js.native
+    var height: Double
     
-    var `inline`: Boolean = js.native
+    var `inline`: Boolean
     
-    var size: Double = js.native
+    var size: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object Photo {
     

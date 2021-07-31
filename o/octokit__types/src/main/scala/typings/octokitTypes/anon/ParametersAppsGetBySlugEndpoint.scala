@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.AppsGetBySlugResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersAppsGetBySlugEndpoint extends StObject {
   
-  var parameters: AppsGetBySlugEndpoint = js.native
+  var parameters: AppsGetBySlugEndpoint
   
-  var request: AppsGetBySlugRequestOptions = js.native
+  var request: AppsGetBySlugRequestOptions
   
-  var response: OctokitResponse[AppsGetBySlugResponseData] = js.native
+  var response: OctokitResponse[AppsGetBySlugResponseData]
 }
 object ParametersAppsGetBySlugEndpoint {
   

@@ -17,7 +17,6 @@ import typings.maximMazurokGapiClientHealthcare.anon.Resource
 import typings.maximMazurokGapiClientHealthcare.anon.UpdateMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -40,12 +39,12 @@ trait DicomStoresResource extends StObject {
   def delete(): Request[js.Object] = js.native
   def delete(request: Name): Request[js.Object] = js.native
   
-  def export(request: Name, body: ExportDicomDataRequest): Request[Operation] = js.native
+  def `export`(request: Name, body: ExportDicomDataRequest): Request[Operation] = js.native
   /**
     * Exports data to the specified destination by copying it from the DICOM store. Errors are also logged to Cloud Logging. For more information, see [Viewing
     * logs](/healthcare/docs/how-tos/logging). The metadata field type is OperationMetadata.
     */
-  def export(request: Oauthtoken): Request[Operation] = js.native
+  def `export`(request: Oauthtoken): Request[Operation] = js.native
   
   /** Gets the specified DICOM store. */
   def get(): Request[DicomStore] = js.native

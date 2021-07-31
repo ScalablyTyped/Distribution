@@ -3,26 +3,26 @@ package typings.findJavaHome
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(cb: Callback): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(options: IOptions, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("find-java-home", JSImport.Namespace)
   @js.native
-  def apply(cb: Callback): Unit = js.native
-  @JSImport("find-java-home", JSImport.Namespace)
-  @js.native
-  def apply(options: IOptions, cb: Callback): Unit = js.native
+  val ^ : js.Any = js.native
   
   type Callback = js.Function2[/* err */ Error, /* res */ js.Any, Unit]
   
-  @js.native
   trait IOptions extends StObject {
     
-    var allowJre: Boolean = js.native
+    var allowJre: Boolean
     
-    var registry: js.UndefOr[RegArch] = js.native
+    var registry: js.UndefOr[RegArch] = js.undefined
   }
   object IOptions {
     

@@ -7,21 +7,20 @@ import typings.mongodb.anon.`5`
 import typings.mongodb.mongodbStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeEventUpdate[TSchema /* <: StringDictionary[js.Any] */]
-  extends ChangeEventBase[TSchema]
+  extends StObject
+     with ChangeEventBase[TSchema]
      with ChangeEvent[TSchema] {
   
-  var documentKey: `5`[TSchema] = js.native
+  var documentKey: `5`[TSchema]
   
-  var fullDocument: js.UndefOr[TSchema] = js.native
+  var fullDocument: js.UndefOr[TSchema] = js.undefined
   
-  var operationType: update = js.native
+  var operationType: update
   
-  var updateDescription: RemovedFields[TSchema] = js.native
+  var updateDescription: RemovedFields[TSchema]
 }
 object ChangeEventUpdate {
   
@@ -31,15 +30,14 @@ object ChangeEventUpdate {
     clusterTime: typings.bson.mod.Timestamp,
     documentKey: `5`[TSchema],
     ns: Coll,
-    operationType: update,
     updateDescription: RemovedFields[TSchema]
   ): ChangeEventUpdate[TSchema] = {
-    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any], updateDescription = updateDescription.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "update", updateDescription = updateDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEventUpdate[TSchema]]
   }
   
   @scala.inline
-  implicit class ChangeEventUpdateMutableBuilder[Self <: ChangeEventUpdate[_], TSchema /* <: StringDictionary[js.Any] */] (val x: Self with ChangeEventUpdate[TSchema]) extends AnyVal {
+  implicit class ChangeEventUpdateMutableBuilder[Self <: ChangeEventUpdate[?], TSchema /* <: StringDictionary[js.Any] */] (val x: Self & ChangeEventUpdate[TSchema]) extends AnyVal {
     
     @scala.inline
     def setDocumentKey(value: `5`[TSchema]): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])

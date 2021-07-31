@@ -2,58 +2,56 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountSharedAccess extends StObject {
   
   /**
     * The account ID associated with the envelope.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The last index position in the result set.
     */
-  var endPosition: js.UndefOr[String] = js.native
+  var endPosition: js.UndefOr[String] = js.undefined
   
   /**
     * A complex type containing an errorCode and message identifying the error that occurred.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The URI for the next chunk of records based on the search request. It is `null` if this is the last set of results for the search.
     */
-  var nextUri: js.UndefOr[String] = js.native
+  var nextUri: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the prior chunk of records based on the search request. It is `null` if this is the first set of results for the search.
     */
-  var previousUri: js.UndefOr[String] = js.native
+  var previousUri: js.UndefOr[String] = js.undefined
   
   /**
     * The number of results in this response. Because you can filter which entries are included in the response, this value is always less than or equal to the `totalSetSize`.
     */
-  var resultSetSize: js.UndefOr[String] = js.native
+  var resultSetSize: js.UndefOr[String] = js.undefined
   
   /**
     * A list of shared access information of envelope and templates for the users specified in the request.
     */
-  var sharedAccess: js.UndefOr[js.Array[/* Information about shared items. */ MemberSharedItems]] = js.native
+  var sharedAccess: js.UndefOr[js.Array[/* Information about shared items. */ MemberSharedItems]] = js.undefined
   
   /**
     * The starting index position of the current result set.
     */
-  var startPosition: js.UndefOr[String] = js.native
+  var startPosition: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of items in the result set. This value is always greater than or equal to the value of `resultSetSize`.
     */
-  var totalSetSize: js.UndefOr[String] = js.native
+  var totalSetSize: js.UndefOr[String] = js.undefined
 }
 object AccountSharedAccess {
   

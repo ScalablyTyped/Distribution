@@ -5,14 +5,13 @@ import typings.geojson.mod.GeoJsonObject
 import typings.geojson.mod.GeometryObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "GeoJSON")
 @js.native
 class GeoJSON_[P] () extends FeatureGroup_[P] {
   def this(geojson: GeoJsonObject) = this()
-  def this(geojson: js.UndefOr[scala.Nothing], options: GeoJSONOptions[P]) = this()
+  def this(geojson: Unit, options: GeoJSONOptions[P]) = this()
   def this(geojson: GeoJsonObject, options: GeoJSONOptions[P]) = this()
   
   /**
@@ -34,27 +33,27 @@ class GeoJSON_[P] () extends FeatureGroup_[P] {
 /* static members */
 object GeoJSON_ {
   
+  @JSImport("leaflet", "GeoJSON")
+  @js.native
+  val ^ : js.Any = js.native
+  
   // Using any[] to avoid artificially limiting valid calls
   /**
     * Normalize GeoJSON geometries/features into GeoJSON features.
     */
-  @JSImport("leaflet", "GeoJSON.asFeature")
-  @js.native
-  def asFeature[P](geojson: Feature[GeometryObject, P]): Feature[GeometryObject, P] = js.native
-  @JSImport("leaflet", "GeoJSON.asFeature")
-  @js.native
-  def asFeature[P](geojson: GeometryObject): Feature[GeometryObject, P] = js.native
+  @scala.inline
+  def asFeature[P](geojson: Feature[GeometryObject, P]): Feature[GeometryObject, P] = ^.asInstanceOf[js.Dynamic].applyDynamic("asFeature")(geojson.asInstanceOf[js.Any]).asInstanceOf[Feature[GeometryObject, P]]
+  @scala.inline
+  def asFeature[P](geojson: GeometryObject): Feature[GeometryObject, P] = ^.asInstanceOf[js.Dynamic].applyDynamic("asFeature")(geojson.asInstanceOf[js.Any]).asInstanceOf[Feature[GeometryObject, P]]
   
   /**
     * Creates a LatLng object from an array of 2 numbers (longitude, latitude) or
     * 3 numbers (longitude, latitude, altitude) used in GeoJSON for points.
     */
-  @JSImport("leaflet", "GeoJSON.coordsToLatLng")
-  @js.native
-  def coordsToLatLng(coords: js.Tuple2[Double, Double]): LatLng_ = js.native
-  @JSImport("leaflet", "GeoJSON.coordsToLatLng")
-  @js.native
-  def coordsToLatLng(coords: js.Tuple3[Double, Double, Double]): LatLng_ = js.native
+  @scala.inline
+  def coordsToLatLng(coords: js.Tuple2[Double, Double]): LatLng_ = ^.asInstanceOf[js.Dynamic].applyDynamic("coordsToLatLng")(coords.asInstanceOf[js.Any]).asInstanceOf[LatLng_]
+  @scala.inline
+  def coordsToLatLng(coords: js.Tuple3[Double, Double, Double]): LatLng_ = ^.asInstanceOf[js.Dynamic].applyDynamic("coordsToLatLng")(coords.asInstanceOf[js.Any]).asInstanceOf[LatLng_]
   
   /**
     * Creates a multidimensional array of LatLngs from a GeoJSON coordinates array.
@@ -62,67 +61,56 @@ object GeoJSON_ {
     * arrays of points, etc., 0 by default).
     * Can use a custom coordsToLatLng function.
     */
-  @JSImport("leaflet", "GeoJSON.coordsToLatLngs")
-  @js.native
-  def coordsToLatLngs(coords: js.Array[_]): js.Array[_] = js.native
-  @JSImport("leaflet", "GeoJSON.coordsToLatLngs")
-  @js.native
+  @scala.inline
+  def coordsToLatLngs(coords: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("coordsToLatLngs")(coords.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def coordsToLatLngs(coords: js.Array[js.Any], levelsDeep: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("coordsToLatLngs")(coords.asInstanceOf[js.Any], levelsDeep.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
   def coordsToLatLngs(
-    coords: js.Array[_],
-    levelsDeep: js.UndefOr[scala.Nothing],
-    coordsToLatLng: js.Function1[
-      /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]), 
-      LatLng_
-    ]
-  ): js.Array[_] = js.native
-  @JSImport("leaflet", "GeoJSON.coordsToLatLngs")
-  @js.native
-  def coordsToLatLngs(coords: js.Array[_], levelsDeep: Double): js.Array[_] = js.native
-  @JSImport("leaflet", "GeoJSON.coordsToLatLngs")
-  @js.native
-  def coordsToLatLngs(
-    coords: js.Array[_],
+    coords: js.Array[js.Any],
     levelsDeep: Double,
     coordsToLatLng: js.Function1[
       /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]), 
       LatLng_
     ]
-  ): js.Array[_] = js.native
+  ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("coordsToLatLngs")(coords.asInstanceOf[js.Any], levelsDeep.asInstanceOf[js.Any], coordsToLatLng.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def coordsToLatLngs(
+    coords: js.Array[js.Any],
+    levelsDeep: Unit,
+    coordsToLatLng: js.Function1[
+      /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]), 
+      LatLng_
+    ]
+  ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("coordsToLatLngs")(coords.asInstanceOf[js.Any], levelsDeep.asInstanceOf[js.Any], coordsToLatLng.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
   /**
     * Creates a Layer from a given GeoJSON feature. Can use a custom pointToLayer
     * and/or coordsToLatLng functions if provided as options.
     */
-  @JSImport("leaflet", "GeoJSON.geometryToLayer")
-  @js.native
-  def geometryToLayer[P](featureData: Feature[GeometryObject, P]): Layer = js.native
-  @JSImport("leaflet", "GeoJSON.geometryToLayer")
-  @js.native
-  def geometryToLayer[P](featureData: Feature[GeometryObject, P], options: GeoJSONOptions[P]): Layer = js.native
+  @scala.inline
+  def geometryToLayer[P](featureData: Feature[GeometryObject, P]): Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("geometryToLayer")(featureData.asInstanceOf[js.Any]).asInstanceOf[Layer]
+  @scala.inline
+  def geometryToLayer[P](featureData: Feature[GeometryObject, P], options: GeoJSONOptions[P]): Layer = (^.asInstanceOf[js.Dynamic].applyDynamic("geometryToLayer")(featureData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Layer]
   
   // Using any[] to avoid artificially limiting valid calls
   /**
     * Reverse of coordsToLatLng
     */
-  @JSImport("leaflet", "GeoJSON.latLngToCoords")
-  @js.native
-  def latLngToCoords(latlng: LatLng_): (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) = js.native
+  @scala.inline
+  def latLngToCoords(latlng: LatLng_): (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) = ^.asInstanceOf[js.Dynamic].applyDynamic("latLngToCoords")(latlng.asInstanceOf[js.Any]).asInstanceOf[(js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double])]
   
   /**
     * Reverse of coordsToLatLngs closed determines whether the first point should be
     * appended to the end of the array to close the feature, only used when levelsDeep is 0.
     * False by default.
     */
-  @JSImport("leaflet", "GeoJSON.latLngsToCoords")
-  @js.native
-  def latLngsToCoords(latlngs: js.Array[_]): js.Array[_] = js.native
-  @JSImport("leaflet", "GeoJSON.latLngsToCoords")
-  @js.native
-  def latLngsToCoords(latlngs: js.Array[_], levelsDeep: js.UndefOr[scala.Nothing], closed: Boolean): js.Array[_] = js.native
-  @JSImport("leaflet", "GeoJSON.latLngsToCoords")
-  @js.native
-  def latLngsToCoords(latlngs: js.Array[_], levelsDeep: Double): js.Array[_] = js.native
-  @JSImport("leaflet", "GeoJSON.latLngsToCoords")
-  @js.native
-  def latLngsToCoords(latlngs: js.Array[_], levelsDeep: Double, closed: Boolean): js.Array[_] = js.native
+  @scala.inline
+  def latLngsToCoords(latlngs: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("latLngsToCoords")(latlngs.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def latLngsToCoords(latlngs: js.Array[js.Any], levelsDeep: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("latLngsToCoords")(latlngs.asInstanceOf[js.Any], levelsDeep.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def latLngsToCoords(latlngs: js.Array[js.Any], levelsDeep: Double, closed: Boolean): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("latLngsToCoords")(latlngs.asInstanceOf[js.Any], levelsDeep.asInstanceOf[js.Any], closed.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def latLngsToCoords(latlngs: js.Array[js.Any], levelsDeep: Unit, closed: Boolean): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("latLngsToCoords")(latlngs.asInstanceOf[js.Any], levelsDeep.asInstanceOf[js.Any], closed.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

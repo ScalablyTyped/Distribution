@@ -2,21 +2,19 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The ID specifying the EFS resource that you want to create a tag for. 
     */
-  var ResourceId: typings.awsSdk.efsMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.efsMod.ResourceId
   
   /**
     * 
     */
-  var Tags: typings.awsSdk.efsMod.Tags = js.native
+  var Tags: typings.awsSdk.efsMod.Tags
 }
 object TagResourceRequest {
   

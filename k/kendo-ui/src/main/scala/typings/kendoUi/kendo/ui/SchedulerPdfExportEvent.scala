@@ -3,13 +3,13 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SchedulerPdfExportEvent extends SchedulerEvent {
+trait SchedulerPdfExportEvent
+  extends StObject
+     with SchedulerEvent {
   
-  var promise: js.UndefOr[JQueryPromise[_]] = js.native
+  var promise: js.UndefOr[JQueryPromise[js.Any]] = js.undefined
 }
 object SchedulerPdfExportEvent {
   
@@ -23,7 +23,7 @@ object SchedulerPdfExportEvent {
   implicit class SchedulerPdfExportEventMutableBuilder[Self <: SchedulerPdfExportEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setPromise(value: JQueryPromise[_]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    def setPromise(value: JQueryPromise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)

@@ -4,14 +4,12 @@ import typings.electron.Electron.WebviewTag
 import typings.electron.electronStrings.webview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document extends StObject {
   
   @JSName("createElement")
-  def createElement_webview(tagName: webview): WebviewTag = js.native
+  def createElement_webview(tagName: webview): WebviewTag
 }
 object Document {
   

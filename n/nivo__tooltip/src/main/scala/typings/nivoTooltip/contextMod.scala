@@ -9,7 +9,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
@@ -45,34 +44,35 @@ object contextMod {
   object TooltipStateContextData {
     
     @scala.inline
-    def TooltipStateContextDataHidden(anchor: Null, content: Null, isVisible: `false`, position: js.Tuple2[Null, Null]): typings.nivoTooltip.contextMod.TooltipStateContextDataHidden = {
-      val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    def TooltipStateContextDataHidden(anchor: Null, content: Null, position: js.Tuple2[Null, Null]): typings.nivoTooltip.contextMod.TooltipStateContextDataHidden = {
+      val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isVisible = false, position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nivoTooltip.contextMod.TooltipStateContextDataHidden]
     }
     
     @scala.inline
-    def TooltipStateContextDataVisible(anchor: TooltipAnchor, content: Element, isVisible: `true`, position: js.Tuple2[Double, Double]): typings.nivoTooltip.contextMod.TooltipStateContextDataVisible = {
-      val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    def TooltipStateContextDataVisible(anchor: TooltipAnchor, content: Element, position: js.Tuple2[Double, Double]): typings.nivoTooltip.contextMod.TooltipStateContextDataVisible = {
+      val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isVisible = true, position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nivoTooltip.contextMod.TooltipStateContextDataVisible]
     }
   }
   
-  @js.native
-  trait TooltipStateContextDataHidden extends TooltipStateContextData {
+  trait TooltipStateContextDataHidden
+    extends StObject
+       with TooltipStateContextData {
     
-    var anchor: Null = js.native
+    var anchor: Null
     
-    var content: Null = js.native
+    var content: Null
     
-    var isVisible: `false` = js.native
+    var isVisible: `false`
     
-    var position: js.Tuple2[Null, Null] = js.native
+    var position: js.Tuple2[Null, Null]
   }
   object TooltipStateContextDataHidden {
     
     @scala.inline
-    def apply(anchor: Null, content: Null, isVisible: `false`, position: js.Tuple2[Null, Null]): TooltipStateContextDataHidden = {
-      val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    def apply(anchor: Null, content: Null, position: js.Tuple2[Null, Null]): TooltipStateContextDataHidden = {
+      val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isVisible = false, position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipStateContextDataHidden]
     }
     
@@ -93,22 +93,23 @@ object contextMod {
     }
   }
   
-  @js.native
-  trait TooltipStateContextDataVisible extends TooltipStateContextData {
+  trait TooltipStateContextDataVisible
+    extends StObject
+       with TooltipStateContextData {
     
-    var anchor: TooltipAnchor = js.native
+    var anchor: TooltipAnchor
     
-    var content: Element = js.native
+    var content: Element
     
-    var isVisible: `true` = js.native
+    var isVisible: `true`
     
-    var position: js.Tuple2[Double, Double] = js.native
+    var position: js.Tuple2[Double, Double]
   }
   object TooltipStateContextDataVisible {
     
     @scala.inline
-    def apply(anchor: TooltipAnchor, content: Element, isVisible: `true`, position: js.Tuple2[Double, Double]): TooltipStateContextDataVisible = {
-      val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    def apply(anchor: TooltipAnchor, content: Element, position: js.Tuple2[Double, Double]): TooltipStateContextDataVisible = {
+      val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isVisible = true, position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipStateContextDataVisible]
     }
     

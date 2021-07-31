@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedZoneReverseLookupConfig extends StObject {
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object ManagedZoneReverseLookupConfig {
   

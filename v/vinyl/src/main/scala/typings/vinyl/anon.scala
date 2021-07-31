@@ -6,32 +6,31 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined vinyl.vinyl.ConstructorOptions & {  contents :null} */
-  @js.native
   trait ConstructorOptionscontent
-    extends /* customProperty */ StringDictionary[js.Any] {
+    extends StObject
+       with /* customProperty */ StringDictionary[js.Any] {
     
     /**
       * Used for relative pathing. Typically where a glob starts. Default: options.cwd
       */
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
     /**
       * File contents.
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) with Null = js.native
+    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Null
     
     /**
       * The current working directory of the file. Default: process.cwd()
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Stores the path history. If `options.path` and `options.history` are both passed,
@@ -39,24 +38,24 @@ object anon {
       * normalized by the `file.path` setter.
       * Default: `[]` (or `[options.path]` if `options.path` is passed)
       */
-    var history: js.UndefOr[js.Array[String]] = js.native
+    var history: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Full path to the file.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * The result of an fs.stat call. This is how you mark the file as a directory or
       * symbolic link. See `isDirectory()`, `isSymbolic()` and `fs.Stats` for more information.
       * http://nodejs.org/api/fs.html#fs_class_fs_stats
       */
-    var stat: js.UndefOr[Stats] = js.native
+    var stat: js.UndefOr[Stats] = js.undefined
   }
   object ConstructorOptionscontent {
     
     @scala.inline
-    def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) with Null): ConstructorOptionscontent = {
+    def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Null): ConstructorOptionscontent = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConstructorOptionscontent]
     }
@@ -71,7 +70,7 @@ object anon {
       def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
       @scala.inline
-      def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) with Null): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & Null): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
@@ -103,26 +102,26 @@ object anon {
   }
   
   /* Inlined vinyl.vinyl.ConstructorOptions & {  contents :node.NodeJS.ReadableStream} */
-  @js.native
   trait ConstructorOptionscontentBase
-    extends /* customProperty */ StringDictionary[js.Any] {
+    extends StObject
+       with /* customProperty */ StringDictionary[js.Any] {
     
     /**
       * Used for relative pathing. Typically where a glob starts. Default: options.cwd
       */
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
     /**
       * File contents.
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) with ReadableStream = js.native
+    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream
     
     /**
       * The current working directory of the file. Default: process.cwd()
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Stores the path history. If `options.path` and `options.history` are both passed,
@@ -130,24 +129,24 @@ object anon {
       * normalized by the `file.path` setter.
       * Default: `[]` (or `[options.path]` if `options.path` is passed)
       */
-    var history: js.UndefOr[js.Array[String]] = js.native
+    var history: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Full path to the file.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * The result of an fs.stat call. This is how you mark the file as a directory or
       * symbolic link. See `isDirectory()`, `isSymbolic()` and `fs.Stats` for more information.
       * http://nodejs.org/api/fs.html#fs_class_fs_stats
       */
-    var stat: js.UndefOr[Stats] = js.native
+    var stat: js.UndefOr[Stats] = js.undefined
   }
   object ConstructorOptionscontentBase {
     
     @scala.inline
-    def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) with ReadableStream): ConstructorOptionscontentBase = {
+    def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream): ConstructorOptionscontentBase = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConstructorOptionscontentBase]
     }
@@ -162,7 +161,7 @@ object anon {
       def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
       @scala.inline
-      def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) with ReadableStream): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
@@ -194,26 +193,26 @@ object anon {
   }
   
   /* Inlined vinyl.vinyl.ConstructorOptions & {  contents :node.Buffer} */
-  @js.native
   trait ConstructorOptionscontentDictcustomOption
-    extends /* customProperty */ StringDictionary[js.Any] {
+    extends StObject
+       with /* customProperty */ StringDictionary[js.Any] {
     
     /**
       * Used for relative pathing. Typically where a glob starts. Default: options.cwd
       */
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
     /**
       * File contents.
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) with Buffer = js.native
+    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer
     
     /**
       * The current working directory of the file. Default: process.cwd()
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Stores the path history. If `options.path` and `options.history` are both passed,
@@ -221,24 +220,24 @@ object anon {
       * normalized by the `file.path` setter.
       * Default: `[]` (or `[options.path]` if `options.path` is passed)
       */
-    var history: js.UndefOr[js.Array[String]] = js.native
+    var history: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Full path to the file.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * The result of an fs.stat call. This is how you mark the file as a directory or
       * symbolic link. See `isDirectory()`, `isSymbolic()` and `fs.Stats` for more information.
       * http://nodejs.org/api/fs.html#fs_class_fs_stats
       */
-    var stat: js.UndefOr[Stats] = js.native
+    var stat: js.UndefOr[Stats] = js.undefined
   }
   object ConstructorOptionscontentDictcustomOption {
     
     @scala.inline
-    def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) with Buffer): ConstructorOptionscontentDictcustomOption = {
+    def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer): ConstructorOptionscontentDictcustomOption = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConstructorOptionscontentDictcustomOption]
     }
@@ -253,7 +252,7 @@ object anon {
       def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
       @scala.inline
-      def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) with Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
@@ -284,12 +283,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Contents extends StObject {
     
-    var contents: js.UndefOr[Boolean] = js.native
+    var contents: js.UndefOr[Boolean] = js.undefined
     
-    var deep: js.UndefOr[Boolean] = js.native
+    var deep: js.UndefOr[Boolean] = js.undefined
   }
   object Contents {
     
@@ -316,13 +314,12 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
     /**
       * If false, the destination stream will not be ended (same as node core).
       */
-    var end: js.UndefOr[Boolean] = js.native
+    var end: js.UndefOr[Boolean] = js.undefined
   }
   object End {
     

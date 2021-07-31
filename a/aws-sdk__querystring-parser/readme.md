@@ -4,19 +4,19 @@
 Typings are for version 1.0.0-rc.7
 
 ## Library description:
-[![NPM version](https://img.shields.io/npm/v/@aws-sdk/querystring-parser/rc.svg)](https://www.npmjs.com/package/@aws-sdk/querystring-parser) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/querystring-parser.svg)](https://www.npmjs.com/package/@a
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/querystring-parser/latest.svg)](https://www.npmjs.com/package/@aws-sdk/querystring-parser) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/querystring-parser.svg)](https://www.npmjs.com/packag
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/querystring-parser |
 | Keywords           | - |
-| # releases         | 28 |
-| # dependents       | 3 |
-| # downloads        | 3772921 |
+| # releases         | 38 |
+| # dependents       | 4 |
+| # downloads        | 7001775 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/master/packages/querystring-parser)
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/querystring-parser)
 - [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
 - [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fquerystring-parser)

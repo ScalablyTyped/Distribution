@@ -2,12 +2,13 @@ package typings.twoJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("two.js", "Text")
 @js.native
-class Text protected () extends Object {
+class Text protected ()
+  extends StObject
+     with Object {
   def this(message: String, x: Double, y: Double) = this()
   def this(message: String, x: Double, y: Double, styles: js.Any) = this()
   
@@ -54,8 +55,11 @@ class Text protected () extends Object {
 }
 object Text {
   
-  /* static member */
-  @JSImport("two.js", "Text.MakeObservable")
+  @JSImport("two.js", "Text")
   @js.native
-  def MakeObservable(obj: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def MakeObservable(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

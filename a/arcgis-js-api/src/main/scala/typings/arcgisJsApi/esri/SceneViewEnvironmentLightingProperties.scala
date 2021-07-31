@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneViewEnvironmentLightingProperties extends Object {
+trait SceneViewEnvironmentLightingProperties
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether to show ambient occlusion shading.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var ambientOcclusionEnabled: js.UndefOr[Boolean] = js.native
+  var ambientOcclusionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the date and time of the simulated sun is automatically updated to maintain the current time of day while the camera changes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var cameraTrackingEnabled: js.UndefOr[Boolean] = js.native
+  var cameraTrackingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The current date and time of the simulated sun.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var date: js.UndefOr[DateProperties] = js.native
+  var date: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * Indicates whether to show shadows cast by the sun.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var directShadowsEnabled: js.UndefOr[Boolean] = js.native
+  var directShadowsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether polygons that use [WaterSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html) display reflections of surrounding terrain, buildings and other 3D objects.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var waterReflectionEnabled: js.UndefOr[Boolean] = js.native
+  var waterReflectionEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object SceneViewEnvironmentLightingProperties {
   

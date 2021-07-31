@@ -3,7 +3,6 @@ package typings.imageminSvgo
 import typings.imagemin.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,12 +10,14 @@ object mod {
   /**
     * SVGO imagemin plugin
     */
+  @scala.inline
+  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  @scala.inline
+  def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  
   @JSImport("imagemin-svgo", JSImport.Namespace)
   @js.native
-  def apply(): Plugin = js.native
-  @JSImport("imagemin-svgo", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Plugin = js.native
+  val ^ : js.Any = js.native
   
   type Options = typings.svgo.mod.Options
 }

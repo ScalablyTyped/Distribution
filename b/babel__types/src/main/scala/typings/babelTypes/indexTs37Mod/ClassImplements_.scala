@@ -3,28 +3,27 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ClassImplements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait ClassImplements_
-  extends Flow
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait ClassImplements_
+  extends StObject
+     with BaseNode
+     with Flow {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var typeParameters: TypeParameterInstantiation_ | Null = js.native
+  var typeParameters: TypeParameterInstantiation_ | Null
   
   @JSName("type")
-  var type_ClassImplements_ : ClassImplements = js.native
+  var type_ClassImplements_ : ClassImplements
 }
 object ClassImplements_ {
   
   @scala.inline
-  def apply(id: Identifier_, `type`: ClassImplements): ClassImplements_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: Identifier_): ClassImplements_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("ClassImplements")
     __obj.asInstanceOf[ClassImplements_]
   }
   

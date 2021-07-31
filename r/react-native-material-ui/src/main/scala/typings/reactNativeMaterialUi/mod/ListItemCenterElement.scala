@@ -3,17 +3,15 @@ package typings.reactNativeMaterialUi.mod
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListItemCenterElement extends StObject {
   
-  var primaryText: String | Element = js.native
+  var primaryText: String | Element
   
-  var secondaryText: js.UndefOr[String] = js.native
+  var secondaryText: js.UndefOr[String] = js.undefined
   
-  var tertiaryText: js.UndefOr[String] = js.native
+  var tertiaryText: js.UndefOr[String] = js.undefined
 }
 object ListItemCenterElement {
   

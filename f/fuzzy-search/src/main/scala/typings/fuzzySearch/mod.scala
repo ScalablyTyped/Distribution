@@ -3,24 +3,27 @@ package typings.fuzzySearch
 import typings.fuzzySearch.anon.RequiredOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("fuzzy-search", JSImport.Namespace)
   @js.native
-  class ^[T /* <: js.Object | String */] protected () extends FuzzySearch[T] {
+  class ^[T /* <: js.Object | String */] protected ()
+    extends StObject
+       with FuzzySearch[T] {
     def this(haystack: js.Array[T]) = this()
     def this(haystack: js.Array[T], keys: js.Array[String]) = this()
-    def this(haystack: js.Array[T], keys: js.UndefOr[scala.Nothing], options: Options) = this()
     def this(haystack: js.Array[T], keys: js.Array[String], options: Options) = this()
+    def this(haystack: js.Array[T], keys: Unit, options: Options) = this()
   }
+  @JSImport("fuzzy-search", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("fuzzy-search", "isMatch")
-  @js.native
-  def isMatch(item: String, query: String, caseSensitive: Boolean): Double = js.native
+  @scala.inline
+  def isMatch(item: String, query: String, caseSensitive: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(item.asInstanceOf[js.Any], query.asInstanceOf[js.Any], caseSensitive.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @js.native
   trait FuzzySearch[T /* <: js.Object | String */] extends StObject {
@@ -35,12 +38,11 @@ object mod {
     def search(needle: String): js.Array[T] = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var sort: js.UndefOr[Boolean] = js.native
+    var sort: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

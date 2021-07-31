@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourcesResponse extends StObject {
   
   /**
     *  The token used to paginate through all the organization's resources. While results are still available, it has an associated value. When the last page is reached, the token is empty.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.undefined
   
   /**
     * One page of the organization's resource representation.
     */
-  var Resources: js.UndefOr[typings.awsSdk.workmailMod.Resources] = js.native
+  var Resources: js.UndefOr[typings.awsSdk.workmailMod.Resources] = js.undefined
 }
 object ListResourcesResponse {
   

@@ -2,37 +2,35 @@ package typings.reResizable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait As extends StObject {
     
-    var as: String = js.native
+    var as: String
     
-    var enable: Bottom = js.native
+    var enable: Bottom
     
-    var grid: js.Array[Double] = js.native
+    var grid: js.Array[Double]
     
-    var lockAspectRatio: Boolean = js.native
+    var lockAspectRatio: Boolean
     
-    var lockAspectRatioExtraHeight: Double = js.native
+    var lockAspectRatioExtraHeight: Double
     
-    var lockAspectRatioExtraWidth: Double = js.native
+    var lockAspectRatioExtraWidth: Double
     
-    def onResize(): Unit = js.native
+    def onResize(): Unit
     
-    def onResizeStart(): Unit = js.native
+    def onResizeStart(): Unit
     
-    def onResizeStop(): Unit = js.native
+    def onResizeStop(): Unit
     
-    var resizeRatio: Double = js.native
+    var resizeRatio: Double
     
-    var scale: Double = js.native
+    var scale: Double
     
-    var snapGap: Double = js.native
+    var snapGap: Double
   }
   object As {
     
@@ -99,24 +97,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: Boolean = js.native
+    var bottom: Boolean
     
-    var bottomLeft: Boolean = js.native
+    var bottomLeft: Boolean
     
-    var bottomRight: Boolean = js.native
+    var bottomRight: Boolean
     
-    var left: Boolean = js.native
+    var left: Boolean
     
-    var right: Boolean = js.native
+    var right: Boolean
     
-    var top: Boolean = js.native
+    var top: Boolean
     
-    var topLeft: Boolean = js.native
+    var topLeft: Boolean
     
-    var topRight: Boolean = js.native
+    var topRight: Boolean
   }
   object Bottom {
     
@@ -164,12 +161,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: String = js.native
+    var height: String
     
-    var width: String = js.native
+    var width: String
   }
   object Height {
     
@@ -190,12 +186,11 @@ object anon {
     }
   }
   
-  @js.native
   trait HeightWidth extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object HeightWidth {
     
@@ -222,12 +217,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxHeight extends StObject {
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
   }
   object MaxHeight {
     
@@ -254,12 +248,11 @@ object anon {
     }
   }
   
-  @js.native
   trait NewHeight extends StObject {
     
-    var newHeight: Double = js.native
+    var newHeight: Double
     
-    var newWidth: Double = js.native
+    var newWidth: Double
   }
   object NewHeight {
     
@@ -280,12 +273,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Width extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Width {
     
@@ -306,12 +298,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: js.UndefOr[js.Array[Double]] = js.native
+    var x: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var y: js.UndefOr[js.Array[Double]] = js.native
+    var y: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object X {
     
@@ -344,16 +335,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Y extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Y {
     

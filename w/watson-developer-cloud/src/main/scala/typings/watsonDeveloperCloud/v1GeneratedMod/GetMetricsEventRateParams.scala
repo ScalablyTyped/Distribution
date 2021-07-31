@@ -3,25 +3,23 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 import typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsEventRateConstants.ResultType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `getMetricsEventRate` operation. */
-@js.native
 trait GetMetricsEventRateParams extends StObject {
   
   /** Metric is computed from data recorded before this timestamp; must be in `YYYY-MM-DDThh:mm:ssZ` format. */
-  var end_time: js.UndefOr[String] = js.native
+  var end_time: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The type of result to consider when calculating the metric. */
-  var result_type: js.UndefOr[ResultType | String] = js.native
+  var result_type: js.UndefOr[ResultType | String] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** Metric is computed from data recorded after this timestamp; must be in `YYYY-MM-DDThh:mm:ssZ` format. */
-  var start_time: js.UndefOr[String] = js.native
+  var start_time: js.UndefOr[String] = js.undefined
 }
 object GetMetricsEventRateParams {
   

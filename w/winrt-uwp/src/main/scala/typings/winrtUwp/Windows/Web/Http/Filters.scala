@@ -8,7 +8,6 @@ import typings.winrtUwp.Windows.Security.Cryptography.Certificates.Certificate
 import typings.winrtUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes to send HTTP requests and an interface to create filters to target HTTP and REST services in Windows Store apps. */
@@ -23,15 +22,21 @@ object Filters {
     
     /** Always use the cache algorithm specified in RFC 2616 by the IETF to optimize network bandwidth. */
     @js.native
-    sealed trait default extends HttpCacheReadBehavior
+    sealed trait default
+      extends StObject
+         with HttpCacheReadBehavior
     
     /** Use the local HTTP cache if possible but always ask the server if more recent content is available. */
     @js.native
-    sealed trait mostRecent extends HttpCacheReadBehavior
+    sealed trait mostRecent
+      extends StObject
+         with HttpCacheReadBehavior
     
     /** Only use data from the local HTTP cache. This is the offline behavior. */
     @js.native
-    sealed trait onlyFromCache extends HttpCacheReadBehavior
+    sealed trait onlyFromCache
+      extends StObject
+         with HttpCacheReadBehavior
   }
   
   @js.native
@@ -43,11 +48,15 @@ object Filters {
     
     /** Use the default behavior of WinInet. This usually results in writing the response to the local HTTP cache. */
     @js.native
-    sealed trait default extends HttpCacheWriteBehavior
+    sealed trait default
+      extends StObject
+         with HttpCacheWriteBehavior
     
     /** Never write the response to the local HTTP cache. */
     @js.native
-    sealed trait noCache extends HttpCacheWriteBehavior
+    sealed trait noCache
+      extends StObject
+         with HttpCacheWriteBehavior
   }
   
   @js.native
@@ -59,65 +68,68 @@ object Filters {
     
     /** Automatically handle cookies. */
     @js.native
-    sealed trait default extends HttpCookieUsageBehavior
+    sealed trait default
+      extends StObject
+         with HttpCookieUsageBehavior
     
     /** Do not handle cookies automatically. */
     @js.native
-    sealed trait noCookies extends HttpCookieUsageBehavior
+    sealed trait noCookies
+      extends StObject
+         with HttpCookieUsageBehavior
   }
   
   /** The base protocol filter for an HttpClient instance. */
-  @js.native
   trait HttpBaseProtocolFilter extends StObject {
     
     /** Get or set a value that indicates whether the HttpBaseProtocolFilter should follow redirection responses. */
-    var allowAutoRedirect: Boolean = js.native
+    var allowAutoRedirect: Boolean
     
     /** Get or set a value that indicates whether the HttpBaseProtocolFilter can prompt for user credentials when requested by the server. */
-    var allowUI: Boolean = js.native
+    var allowUI: Boolean
     
     /** Gets or sets a value that indicates whether the HttpBaseProtocolFilter can automatically decompress the HTTP content response. */
-    var automaticDecompression: Boolean = js.native
+    var automaticDecompression: Boolean
     
     /** Get or set the read and write cache control behavior to be used on the HttpBaseProtocolFilter object. */
-    var cacheControl: HttpCacheControl = js.native
+    var cacheControl: HttpCacheControl
     
     /** Get or set the client SSL certificate that will be sent to the server if the server requests a client certificate. */
-    var clientCertificate: Certificate = js.native
+    var clientCertificate: Certificate
     
     /** Closes the HttpBaseProtocolFilter instance and releases allocated resources. */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /** Get the HttpCookieManager with the cookies associated with an app. */
-    var cookieManager: HttpCookieManager = js.native
+    var cookieManager: HttpCookieManager
     
     /** Gets or sets the cookie usage behavior. By default, cookies are handled automatically. */
-    var cookieUsageBehavior: HttpCookieUsageBehavior = js.native
+    var cookieUsageBehavior: HttpCookieUsageBehavior
     
     /** Get a vector of SSL server certificate errors that the app might subsequently choose to ignore. */
-    var ignorableServerCertificateErrors: IVector[ChainValidationResult] = js.native
+    var ignorableServerCertificateErrors: IVector[ChainValidationResult]
     
     /** Get or set the maximum number of TCP connections allowed per HTTP server by the HttpBaseProtocolFilter object. */
-    var maxConnectionsPerServer: Double = js.native
+    var maxConnectionsPerServer: Double
     
     /** Gets or sets the version of the HTTP protocol used. */
-    var maxVersion: HttpVersion = js.native
+    var maxVersion: HttpVersion
     
     /** Get or set the credentials to be used to negotiate with an HTTP proxy. */
-    var proxyCredential: PasswordCredential = js.native
+    var proxyCredential: PasswordCredential
     
     /**
       * Send an HTTP request using the HttpBaseProtocolFilter as an asynchronous operation.
       * @param request The HTTP request message to send.
       * @return The object representing the asynchronous operation.
       */
-    def sendRequestAsync(request: HttpRequestMessage): IPromiseWithIAsyncOperationWithProgress[HttpResponseMessage, HttpProgress] = js.native
+    def sendRequestAsync(request: HttpRequestMessage): IPromiseWithIAsyncOperationWithProgress[HttpResponseMessage, HttpProgress]
     
     /** Get or set the credentials to be used to authenticate with an HTTP server. */
-    var serverCredential: PasswordCredential = js.native
+    var serverCredential: PasswordCredential
     
     /** Get or set a value that indicates whether the HttpBaseProtocolFilter can use a proxy for sending HTTP requests. */
-    var useProxy: Boolean = js.native
+    var useProxy: Boolean
   }
   object HttpBaseProtocolFilter {
     
@@ -196,14 +208,13 @@ object Filters {
   }
   
   /** Provides control of the local HTTP cache for responses to HTTP requests by methods in the Windows.Web.Http and Windows.Web.Http.Filters namespaces. */
-  @js.native
   trait HttpCacheControl extends StObject {
     
     /** Get or set the read behavior to use for cache control on the HttpCacheControl object. */
-    var readBehavior: HttpCacheReadBehavior = js.native
+    var readBehavior: HttpCacheReadBehavior
     
     /** Get or set the write behavior to use for cache control on the HttpCacheControl object. */
-    var writeBehavior: HttpCacheWriteBehavior = js.native
+    var writeBehavior: HttpCacheWriteBehavior
   }
   object HttpCacheControl {
     
@@ -225,15 +236,16 @@ object Filters {
   }
   
   /** An interface used to implement custom filters for an HttpClient instance. */
-  @js.native
-  trait IHttpFilter extends IClosable {
+  trait IHttpFilter
+    extends StObject
+       with IClosable {
     
     /**
       * Send an HTTP request on the IHttpFilter instance as an asynchronous operation.
       * @param request The HTTP request message to send.
       * @return The object representing the asynchronous operation.
       */
-    def sendRequestAsync(request: HttpRequestMessage): IPromiseWithIAsyncOperationWithProgress[HttpResponseMessage, HttpProgress] = js.native
+    def sendRequestAsync(request: HttpRequestMessage): IPromiseWithIAsyncOperationWithProgress[HttpResponseMessage, HttpProgress]
   }
   object IHttpFilter {
     

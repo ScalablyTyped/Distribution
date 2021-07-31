@@ -2,26 +2,24 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisionedCapacityDescription extends StObject {
   
   /**
     * The ID that identifies the provisioned capacity unit.
     */
-  var CapacityId: js.UndefOr[String] = js.native
+  var CapacityId: js.UndefOr[String] = js.undefined
   
   /**
     * The date that the provisioned capacity unit expires, in Universal Coordinated Time (UTC).
     */
-  var ExpirationDate: js.UndefOr[String] = js.native
+  var ExpirationDate: js.UndefOr[String] = js.undefined
   
   /**
     * The date that the provisioned capacity unit was purchased, in Universal Coordinated Time (UTC).
     */
-  var StartDate: js.UndefOr[String] = js.native
+  var StartDate: js.UndefOr[String] = js.undefined
 }
 object ProvisionedCapacityDescription {
   

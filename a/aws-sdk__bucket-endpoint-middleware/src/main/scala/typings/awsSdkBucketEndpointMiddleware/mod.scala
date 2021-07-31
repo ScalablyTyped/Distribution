@@ -6,23 +6,23 @@ import typings.awsSdkBucketEndpointMiddleware.bucketHostnameMod.BucketHostname_
 import typings.awsSdkTypes.middlewareMod.BuildMiddleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/bucket-endpoint-middleware", "bucketEndpointMiddleware")
+  @JSImport("@aws-sdk/bucket-endpoint-middleware", JSImport.Namespace)
   @js.native
-  def bucketEndpointMiddleware(): BuildMiddleware[_, _] = js.native
-  @JSImport("@aws-sdk/bucket-endpoint-middleware", "bucketEndpointMiddleware")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def bucketEndpointMiddleware(): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketEndpointMiddleware")().asInstanceOf[BuildMiddleware[js.Any, js.Any]]
+  @scala.inline
   def bucketEndpointMiddleware(
     hasForcePathStylePreformedBucketEndpointUseAccelerateEndpointUseDualstackEndpoint: bucketEndpointMiddlewareConfiguration
-  ): BuildMiddleware[_, _] = js.native
+  ): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketEndpointMiddleware")(hasForcePathStylePreformedBucketEndpointUseAccelerateEndpointUseDualstackEndpoint.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
   
-  @JSImport("@aws-sdk/bucket-endpoint-middleware", "bucketHostname")
-  @js.native
+  @scala.inline
   def bucketHostname(
     hasAccelerateEndpointBaseHostnameBucketNameDualstackEndpointPathStyleEndpointSslCompatible: BucketHostnameParameters
-  ): BucketHostname_ = js.native
+  ): BucketHostname_ = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketHostname")(hasAccelerateEndpointBaseHostnameBucketNameDualstackEndpointPathStyleEndpointSslCompatible.asInstanceOf[js.Any]).asInstanceOf[BucketHostname_]
 }

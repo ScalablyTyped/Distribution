@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeSpecListenerTlsCertificateFile extends StObject {
   
   /**
     * The certificate chain for the certificate. Must be between 1 and 255 characters in length.
     */
-  var certificateChain: Input[String] = js.native
+  var certificateChain: Input[String]
   
   /**
     * The private key for a certificate stored on the file system of the virtual node that the proxy is running on. Must be between 1 and 255 characters in length.
     */
-  var privateKey: Input[String] = js.native
+  var privateKey: Input[String]
 }
 object VirtualNodeSpecListenerTlsCertificateFile {
   

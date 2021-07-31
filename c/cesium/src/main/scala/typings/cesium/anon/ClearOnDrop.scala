@@ -4,21 +4,19 @@ import typings.cesium.mod.DefaultProxy
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClearOnDrop extends StObject {
   
-  var clampToGround: js.UndefOr[Boolean] = js.native
+  var clampToGround: js.UndefOr[Boolean] = js.undefined
   
-  var clearOnDrop: js.UndefOr[Boolean] = js.native
+  var clearOnDrop: js.UndefOr[Boolean] = js.undefined
   
-  var dropTarget: js.UndefOr[Element | String] = js.native
+  var dropTarget: js.UndefOr[Element | String] = js.undefined
   
-  var flyToOnDrop: js.UndefOr[Boolean] = js.native
+  var flyToOnDrop: js.UndefOr[Boolean] = js.undefined
   
-  var proxy: js.UndefOr[DefaultProxy] = js.native
+  var proxy: js.UndefOr[DefaultProxy] = js.undefined
 }
 object ClearOnDrop {
   

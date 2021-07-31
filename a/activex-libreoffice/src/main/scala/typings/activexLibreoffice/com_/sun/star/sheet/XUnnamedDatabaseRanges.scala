@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides functions to manage the sheet local databases
   * @since LibreOffice 3.5
   */
-@js.native
-trait XUnnamedDatabaseRanges extends XInterface {
+trait XUnnamedDatabaseRanges
+  extends StObject
+     with XInterface {
   
-  def getByTable(nTab: Double): js.Any = js.native
+  def getByTable(nTab: Double): js.Any
   
-  def hasByTable(nTab: Double): Boolean = js.native
+  def hasByTable(nTab: Double): Boolean
   
-  def setByTable(aRange: CellRangeAddress): Unit = js.native
+  def setByTable(aRange: CellRangeAddress): Unit
 }
 object XUnnamedDatabaseRanges {
   

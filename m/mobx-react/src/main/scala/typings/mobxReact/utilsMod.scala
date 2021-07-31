@@ -2,38 +2,35 @@ package typings.mobxReact
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("mobx-react/dist/utils/utils", "copyStaticProperties")
+  @JSImport("mobx-react/dist/utils/utils", JSImport.Namespace)
   @js.native
-  def copyStaticProperties(base: js.Object, target: js.Object): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx-react/dist/utils/utils", "newSymbol")
-  @js.native
-  def newSymbol(name: String): js.Symbol | String = js.native
+  @scala.inline
+  def copyStaticProperties(base: js.Object, target: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyStaticProperties")(base.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mobx-react/dist/utils/utils", "patch")
-  @js.native
-  def patch(target: js.Object, methodName: String, mixinMethod: js.Function): Unit = js.native
+  @scala.inline
+  def newSymbol(name: String): js.Symbol | String = ^.asInstanceOf[js.Dynamic].applyDynamic("newSymbol")(name.asInstanceOf[js.Any]).asInstanceOf[js.Symbol | String]
   
-  @JSImport("mobx-react/dist/utils/utils", "setHiddenProp")
-  @js.native
-  def setHiddenProp(target: js.Object, prop: js.Any, value: js.Any): Unit = js.native
+  @scala.inline
+  def patch(target: js.Object, methodName: String, mixinMethod: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(target.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], mixinMethod.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mobx-react/dist/utils/utils", "shallowEqual")
-  @js.native
-  def shallowEqual(objA: js.Any, objB: js.Any): Boolean = js.native
+  @scala.inline
+  def setHiddenProp(target: js.Object, prop: js.Any, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHiddenProp")(target.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def shallowEqual(objA: js.Any, objB: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in string ]: any} */ @js.native
-  trait Mixins extends StObject {
+  - Dropped {[ P in string ]: any} */ trait Mixins extends StObject {
     
-    var locks: Double = js.native
+    var locks: Double
     
-    var methods: js.Array[js.Function] = js.native
+    var methods: js.Array[js.Function]
   }
   object Mixins {
     

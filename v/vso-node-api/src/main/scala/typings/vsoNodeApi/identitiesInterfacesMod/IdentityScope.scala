@@ -2,31 +2,29 @@ package typings.vsoNodeApi.identitiesInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityScope extends StObject {
   
-  var administrators: IdentityDescriptor = js.native
+  var administrators: IdentityDescriptor
   
-  var id: String = js.native
+  var id: String
   
-  var isActive: Boolean = js.native
+  var isActive: Boolean
   
-  var isGlobal: Boolean = js.native
+  var isGlobal: Boolean
   
-  var localScopeId: String = js.native
+  var localScopeId: String
   
-  var name: String = js.native
+  var name: String
   
-  var parentId: String = js.native
+  var parentId: String
   
-  var scopeType: GroupScopeType = js.native
+  var scopeType: GroupScopeType
   
-  var securingHostId: String = js.native
+  var securingHostId: String
   
-  var subjectDescriptor: String = js.native
+  var subjectDescriptor: String
 }
 object IdentityScope {
   

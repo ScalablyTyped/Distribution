@@ -2,15 +2,14 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for Model.upsert method
   */
-@js.native
 trait UpsertOptions
-  extends FieldsOptions
+  extends StObject
+     with FieldsOptions
      with LoggingOptions
      with SearchPathOptions
      with ReturningOptions

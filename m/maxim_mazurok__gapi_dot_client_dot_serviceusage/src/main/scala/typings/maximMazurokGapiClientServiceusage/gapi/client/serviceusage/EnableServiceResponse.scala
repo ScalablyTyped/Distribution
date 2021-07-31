@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableServiceResponse extends StObject {
   
   /** The new state of the service after enabling. */
-  var service: js.UndefOr[GoogleApiServiceusageV1Service] = js.native
+  var service: js.UndefOr[GoogleApiServiceusageV1Service] = js.undefined
 }
 object EnableServiceResponse {
   

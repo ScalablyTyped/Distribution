@@ -10,9 +10,9 @@ strings comparison matchers for chai
 | ------------------ | :-------------: |
 | Full name          | chai-string |
 | Keywords           | chai, testing, string, chai-plugin, browser |
-| # releases         | 2 |
-| # dependents       | 33 |
-| # downloads        | 4268187 |
+| # releases         | 0 |
+| # dependents       | 37 |
+| # downloads        | 5200865 |
 | # stars            | 3 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.awsSdk.elasticinferenceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     *  The ARN of the Elastic Inference Accelerator to untag. 
     */
-  var resourceArn: ResourceARN_ = js.native
+  var resourceArn: ResourceARN_
   
   /**
     *  The list of tags to remove from the Elastic Inference Accelerator. 
     */
-  var tagKeys: TagKeyList = js.native
+  var tagKeys: TagKeyList
 }
 object UntagResourceRequest {
   

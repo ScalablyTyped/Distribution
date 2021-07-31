@@ -2,16 +2,14 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopupOptions extends StObject {
   
   /**
     * Called when menu is closed.
     */
-  var callback: js.UndefOr[js.Function0[Unit]] = js.native
+  var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * The index of the menu item to be positioned under the mouse cursor at the
@@ -19,24 +17,24 @@ trait PopupOptions extends StObject {
     *
     * @platform darwin
     */
-  var positioningItem: js.UndefOr[Double] = js.native
+  var positioningItem: js.UndefOr[Double] = js.undefined
   
   /**
     * Default is the focused window.
     */
-  var window: js.UndefOr[BrowserWindow] = js.native
+  var window: js.UndefOr[BrowserWindow] = js.undefined
   
   /**
     * Default is the current mouse cursor position. Must be declared if `y` is
     * declared.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * Default is the current mouse cursor position. Must be declared if `x` is
     * declared.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object PopupOptions {
   

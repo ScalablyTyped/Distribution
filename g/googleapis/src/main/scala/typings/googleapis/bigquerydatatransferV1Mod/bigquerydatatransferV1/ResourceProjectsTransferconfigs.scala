@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquerydatatransfer/v1", "bigquerydatatransfer_v1.Resource$Projects$Transferconfigs")
@@ -33,7 +32,7 @@ class ResourceProjectsTransferconfigs protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaTransferConfig] = js.native
   def create(callback: BodyResponseCallback[SchemaTransferConfig]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTransferConfig] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTransferConfig] = js.native
   def create(params: ParamsResourceProjectsTransferconfigsCreate): GaxiosPromise[SchemaTransferConfig] = js.native
   def create(
     params: ParamsResourceProjectsTransferconfigsCreate,
@@ -66,7 +65,7 @@ class ResourceProjectsTransferconfigs protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsTransferconfigsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsTransferconfigsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -95,7 +94,7 @@ class ResourceProjectsTransferconfigs protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaTransferConfig] = js.native
   def get(callback: BodyResponseCallback[SchemaTransferConfig]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTransferConfig] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTransferConfig] = js.native
   def get(params: ParamsResourceProjectsTransferconfigsGet): GaxiosPromise[SchemaTransferConfig] = js.native
   def get(
     params: ParamsResourceProjectsTransferconfigsGet,
@@ -130,7 +129,7 @@ class ResourceProjectsTransferconfigs protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListTransferConfigsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTransferConfigsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTransferConfigsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListTransferConfigsResponse] = js.native
   def list(params: ParamsResourceProjectsTransferconfigsList): GaxiosPromise[SchemaListTransferConfigsResponse] = js.native
   def list(
     params: ParamsResourceProjectsTransferconfigsList,
@@ -167,7 +166,7 @@ class ResourceProjectsTransferconfigs protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaTransferConfig] = js.native
   def patch(callback: BodyResponseCallback[SchemaTransferConfig]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTransferConfig] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTransferConfig] = js.native
   def patch(params: ParamsResourceProjectsTransferconfigsPatch): GaxiosPromise[SchemaTransferConfig] = js.native
   def patch(
     params: ParamsResourceProjectsTransferconfigsPatch,
@@ -205,7 +204,7 @@ class ResourceProjectsTransferconfigs protected () extends StObject {
     */
   def scheduleRuns(): GaxiosPromise[SchemaScheduleTransferRunsResponse] = js.native
   def scheduleRuns(callback: BodyResponseCallback[SchemaScheduleTransferRunsResponse]): Unit = js.native
-  def scheduleRuns(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScheduleTransferRunsResponse] = js.native
+  def scheduleRuns(params: Unit, options: MethodOptions): GaxiosPromise[SchemaScheduleTransferRunsResponse] = js.native
   def scheduleRuns(params: ParamsResourceProjectsTransferconfigsScheduleruns): GaxiosPromise[SchemaScheduleTransferRunsResponse] = js.native
   def scheduleRuns(
     params: ParamsResourceProjectsTransferconfigsScheduleruns,
@@ -241,7 +240,7 @@ class ResourceProjectsTransferconfigs protected () extends StObject {
     */
   def startManualRuns(): GaxiosPromise[SchemaStartManualTransferRunsResponse] = js.native
   def startManualRuns(callback: BodyResponseCallback[SchemaStartManualTransferRunsResponse]): Unit = js.native
-  def startManualRuns(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStartManualTransferRunsResponse] = js.native
+  def startManualRuns(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStartManualTransferRunsResponse] = js.native
   def startManualRuns(params: ParamsResourceProjectsTransferconfigsStartmanualruns): GaxiosPromise[SchemaStartManualTransferRunsResponse] = js.native
   def startManualRuns(
     params: ParamsResourceProjectsTransferconfigsStartmanualruns,

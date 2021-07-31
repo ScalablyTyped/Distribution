@@ -2,7 +2,6 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * option preserves read-your-writes consistency, but does not improve
   * availability.
   */
-@js.native
 trait SchemaSingleClusterRouting extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaSingleClusterRouting extends StObject {
     * allowed by this app profile. It is unsafe to send these requests to the
     * same table/row/column in multiple clusters.
     */
-  var allowTransactionalWrites: js.UndefOr[Boolean] = js.native
+  var allowTransactionalWrites: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The cluster to which read/write requests should be routed.
     */
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
 }
 object SchemaSingleClusterRouting {
   

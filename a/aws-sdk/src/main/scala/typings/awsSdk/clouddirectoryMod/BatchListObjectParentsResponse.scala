@@ -2,15 +2,13 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchListObjectParentsResponse extends StObject {
   
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
   
-  var ParentLinks: js.UndefOr[ObjectIdentifierAndLinkNameList] = js.native
+  var ParentLinks: js.UndefOr[ObjectIdentifierAndLinkNameList] = js.undefined
 }
 object BatchListObjectParentsResponse {
   

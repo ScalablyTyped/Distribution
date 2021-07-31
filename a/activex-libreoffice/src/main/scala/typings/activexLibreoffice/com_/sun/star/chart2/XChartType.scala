@@ -5,17 +5,17 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XChartType extends XInterface {
+trait XChartType
+  extends StObject
+     with XInterface {
   
   /** A string representation of the chart type. This needs to be the service-name which can be used to create a chart type. */
-  val ChartType: String = js.native
+  val ChartType: String
   
   /** Returns the role of the XLabeledDataSequence of which the label will be taken to identify the {@link DataSeries} in dialogs or the legend. */
-  val RoleOfSequenceForSeriesLabel: String = js.native
+  val RoleOfSequenceForSeriesLabel: String
   
   /**
     * Returns a sequence of roles that are understood by this chart type.
@@ -25,33 +25,33 @@ trait XChartType extends XInterface {
     *
     * Note, that this does not involve optional roles, like error-bars.
     */
-  val SupportedMandatoryRoles: SafeArray[String] = js.native
+  val SupportedMandatoryRoles: SafeArray[String]
   
   /**
     * Returns a sequence of roles that are understood in addition to the mandatory roles (see {@link XChartType.getSupportedMandatoryRoles()} ).
     *
     * An example for an optional role are error-bars.
     */
-  val SupportedOptionalRoles: SafeArray[String] = js.native
+  val SupportedOptionalRoles: SafeArray[String]
   
   /**
     * Returns a sequence with supported property mapping roles.
     *
     * An example for a property mapping role is FillColor.
     */
-  val SupportedPropertyRoles: SafeArray[String] = js.native
+  val SupportedPropertyRoles: SafeArray[String]
   
   /**
     * Creates a coordinate systems that fits the chart-type with its current settings and for the given dimension.
     * @throws IllegalArgumentException This chart type cannot be displayed in the given dimension.
     */
-  def createCoordinateSystem(DimensionCount: Double): XCoordinateSystem = js.native
+  def createCoordinateSystem(DimensionCount: Double): XCoordinateSystem
   
   /** A string representation of the chart type. This needs to be the service-name which can be used to create a chart type. */
-  def getChartType(): String = js.native
+  def getChartType(): String
   
   /** Returns the role of the XLabeledDataSequence of which the label will be taken to identify the {@link DataSeries} in dialogs or the legend. */
-  def getRoleOfSequenceForSeriesLabel(): String = js.native
+  def getRoleOfSequenceForSeriesLabel(): String
   
   /**
     * Returns a sequence of roles that are understood by this chart type.
@@ -61,21 +61,21 @@ trait XChartType extends XInterface {
     *
     * Note, that this does not involve optional roles, like error-bars.
     */
-  def getSupportedMandatoryRoles(): SafeArray[String] = js.native
+  def getSupportedMandatoryRoles(): SafeArray[String]
   
   /**
     * Returns a sequence of roles that are understood in addition to the mandatory roles (see {@link XChartType.getSupportedMandatoryRoles()} ).
     *
     * An example for an optional role are error-bars.
     */
-  def getSupportedOptionalRoles(): SafeArray[String] = js.native
+  def getSupportedOptionalRoles(): SafeArray[String]
   
   /**
     * Returns a sequence with supported property mapping roles.
     *
     * An example for a property mapping role is FillColor.
     */
-  def getSupportedPropertyRoles(): SafeArray[String] = js.native
+  def getSupportedPropertyRoles(): SafeArray[String]
 }
 object XChartType {
   

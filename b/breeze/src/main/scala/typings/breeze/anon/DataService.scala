@@ -3,17 +3,15 @@ package typings.breeze.anon
 import typings.breeze.breeze.EntityQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataService extends StObject {
   
-  var dataService: typings.breeze.breeze.DataService = js.native
+  var dataService: typings.breeze.breeze.DataService
   
-  def getUrl(): String = js.native
+  def getUrl(): String
   
-  var query: EntityQuery = js.native
+  var query: EntityQuery
 }
 object DataService {
   

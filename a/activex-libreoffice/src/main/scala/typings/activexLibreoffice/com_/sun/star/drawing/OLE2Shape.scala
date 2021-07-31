@@ -19,31 +19,31 @@ import typings.activexLibreoffice.com_.sun.star.style.XStyle
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service is for an OLE shape. */
-@js.native
-trait OLE2Shape extends Shape {
+trait OLE2Shape
+  extends StObject
+     with Shape {
   
   /**
     * If you get this property you get the CLSID of the OLE2 document stream contained in this OLE2 shape. If you set it, an empty OLE2 document stream with
     * this CLSID is created within this OLE2 shape.
     */
-  var CLSID: String = js.native
+  var CLSID: String
   
   /** This property returns `TRUE` for all OLE2 that are internal Office components. */
-  var IsInternal: Boolean = js.native
+  var IsInternal: Boolean
   
   /**
     * This is the model for the OLE2 inside this shape.
     *
     * This property returns an empty reference if the OLE2 is not an Office component.
     */
-  var Model: XModel = js.native
+  var Model: XModel
   
   /** this is the internal storage name that keeps this OLE2 persist. */
-  var PersistName: String = js.native
+  var PersistName: String
 }
 object OLE2Shape {
   
@@ -96,7 +96,7 @@ object OLE2Shape {
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     setPosition: Point => Unit,
     setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValuesTolerant: (SeqEquiv[String], SeqEquiv[_]) => SafeArray[SetPropertyTolerantFailed],
+    setPropertyValuesTolerant: (SeqEquiv[String], SeqEquiv[js.Any]) => SafeArray[SetPropertyTolerantFailed],
     setSize: Size => Unit
   ): OLE2Shape = {
     val __obj = js.Dynamic.literal(CLSID = CLSID.asInstanceOf[js.Any], GluePoints = GluePoints.asInstanceOf[js.Any], Hyperlink = Hyperlink.asInstanceOf[js.Any], InteropGrabBag = InteropGrabBag.asInstanceOf[js.Any], IsInternal = IsInternal.asInstanceOf[js.Any], LayerID = LayerID.asInstanceOf[js.Any], LayerName = LayerName.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any], MoveProtect = MoveProtect.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NavigationOrder = NavigationOrder.asInstanceOf[js.Any], PersistName = PersistName.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], Printable = Printable.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], RelativeHeight = RelativeHeight.asInstanceOf[js.Any], RelativeHeightRelation = RelativeHeightRelation.asInstanceOf[js.Any], RelativeWidth = RelativeWidth.asInstanceOf[js.Any], RelativeWidthRelation = RelativeWidthRelation.asInstanceOf[js.Any], ShapeType = ShapeType.asInstanceOf[js.Any], ShapeUserDefinedAttributes = ShapeUserDefinedAttributes.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], SizeProtect = SizeProtect.asInstanceOf[js.Any], Style = Style.asInstanceOf[js.Any], Transformation = Transformation.asInstanceOf[js.Any], Visible = Visible.asInstanceOf[js.Any], ZOrder = ZOrder.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), dispose = js.Any.fromFunction0(dispose), getDirectPropertyValuesTolerant = js.Any.fromFunction1(getDirectPropertyValuesTolerant), getGluePoints = js.Any.fromFunction0(getGluePoints), getPosition = js.Any.fromFunction0(getPosition), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValuesTolerant = js.Any.fromFunction1(getPropertyValuesTolerant), getShapeType = js.Any.fromFunction0(getShapeType), getSize = js.Any.fromFunction0(getSize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPosition = js.Any.fromFunction1(setPosition), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValuesTolerant = js.Any.fromFunction2(setPropertyValuesTolerant), setSize = js.Any.fromFunction1(setSize))

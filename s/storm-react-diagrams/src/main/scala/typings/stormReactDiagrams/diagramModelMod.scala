@@ -18,7 +18,6 @@ import typings.stormReactDiagrams.linkModelMod.LinkModelListener
 import typings.stormReactDiagrams.nodeModelMod.NodeModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diagramModelMod {
@@ -27,14 +26,14 @@ object diagramModelMod {
   @js.native
   class DiagramModel () extends BaseEntity[DiagramListener] {
     
-    def addAll(models: (BaseModel[BaseEntity[BaseListener[_]], BaseModelListener])*): js.Array[BaseModel[BaseEntity[BaseListener[_]], BaseModelListener]] = js.native
+    def addAll(models: (BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener])*): js.Array[BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]] = js.native
     
     def addLink(link: LinkModel[LinkModelListener]): LinkModel[LinkModelListener] = js.native
     
     def addNode(node: NodeModel): NodeModel = js.native
     
     def clearSelection(): Unit = js.native
-    def clearSelection(ignore: BaseModel[BaseEntity[BaseListener[_]], BaseModelListener]): Unit = js.native
+    def clearSelection(ignore: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]): Unit = js.native
     
     def deSerializeDiagram(`object`: js.Any, diagramEngine: DiagramEngine): Unit = js.native
     
@@ -54,7 +53,7 @@ object diagramModelMod {
     
     def getOffsetY(): Double = js.native
     
-    def getSelectedItems(filters: BaseEntityType*): js.Array[BaseModel[BaseEntity[BaseListener[_]], BaseModelListener]] = js.native
+    def getSelectedItems(filters: BaseEntityType*): js.Array[BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]] = js.native
     
     def getZoomLevel(): Double = js.native
     
@@ -92,19 +91,19 @@ object diagramModelMod {
     var zoom: Double = js.native
   }
   
-  @js.native
   trait DiagramListener
-    extends BaseListener[js.Any] {
+    extends StObject
+       with BaseListener[js.Any] {
     
-    var gridUpdated: js.UndefOr[js.Function1[/* event */ BaseEventDiagramModelsize, Unit]] = js.native
+    var gridUpdated: js.UndefOr[js.Function1[/* event */ BaseEventDiagramModelsize, Unit]] = js.undefined
     
-    var linksUpdated: js.UndefOr[js.Function1[/* event */ BaseEventanylinkLinkModel, Unit]] = js.native
+    var linksUpdated: js.UndefOr[js.Function1[/* event */ BaseEventanylinkLinkModel, Unit]] = js.undefined
     
-    var nodesUpdated: js.UndefOr[js.Function1[/* event */ BaseEventanynodeNodeModel, Unit]] = js.native
+    var nodesUpdated: js.UndefOr[js.Function1[/* event */ BaseEventanynodeNodeModel, Unit]] = js.undefined
     
-    var offsetUpdated: js.UndefOr[js.Function1[/* event */ BaseEventDiagramModeloffs, Unit]] = js.native
+    var offsetUpdated: js.UndefOr[js.Function1[/* event */ BaseEventDiagramModeloffs, Unit]] = js.undefined
     
-    var zoomUpdated: js.UndefOr[js.Function1[/* event */ BaseEventDiagramModelzoom, Unit]] = js.native
+    var zoomUpdated: js.UndefOr[js.Function1[/* event */ BaseEventDiagramModelzoom, Unit]] = js.undefined
   }
   object DiagramListener {
     

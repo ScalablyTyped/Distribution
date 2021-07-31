@@ -2,17 +2,15 @@ package typings.workerbApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Header extends StObject {
     
-    var header: js.Array[String] = js.native
+    var header: js.Array[String]
     
-    var rows: js.Array[js.Object] = js.native
+    var rows: js.Array[js.Object]
   }
   object Header {
     

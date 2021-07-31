@@ -6,27 +6,25 @@ import typings.materialUi.materialUiStrings.ready
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefreshIndicatorProps extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var left: Double = js.native
+  var left: Double
   
-  var loadingColor: js.UndefOr[String] = js.native
+  var loadingColor: js.UndefOr[String] = js.undefined
   
-  var percentage: js.UndefOr[Double] = js.native
+  var percentage: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var status: js.UndefOr[ready | loading | hide] = js.native
+  var status: js.UndefOr[ready | loading | hide] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var top: Double = js.native
+  var top: Double
 }
 object RefreshIndicatorProps {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RollbackTransactionRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Aurora Serverless DB cluster.
     */
-  var resourceArn: Arn = js.native
+  var resourceArn: Arn
   
   /**
     * The name or ARN of the secret that enables access to the DB cluster.
     */
-  var secretArn: Arn = js.native
+  var secretArn: Arn
   
   /**
     * The identifier of the transaction to roll back.
     */
-  var transactionId: Id = js.native
+  var transactionId: Id
 }
 object RollbackTransactionRequest {
   

@@ -5,27 +5,25 @@ import typings.openlayers.mod.Extent_
 import typings.openlayers.mod.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tilegrid {
   
-  @js.native
   trait TileGridOptions extends StObject {
     
-    var extent: js.UndefOr[Extent_] = js.native
+    var extent: js.UndefOr[Extent_] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var origin: js.UndefOr[Coordinate_] = js.native
+    var origin: js.UndefOr[Coordinate_] = js.undefined
     
-    var origins: js.UndefOr[js.Array[Coordinate_]] = js.native
+    var origins: js.UndefOr[js.Array[Coordinate_]] = js.undefined
     
-    var resolutions: js.Array[Double] = js.native
+    var resolutions: js.Array[Double]
     
-    var tileSize: js.UndefOr[Double | Size] = js.native
+    var tileSize: js.UndefOr[Double | Size] = js.undefined
     
-    var tileSizes: js.UndefOr[js.Array[Double | Size]] = js.native
+    var tileSizes: js.UndefOr[js.Array[Double | Size]] = js.undefined
   }
   object TileGridOptions {
     
@@ -88,26 +86,25 @@ object tilegrid {
     }
   }
   
-  @js.native
   trait WMTSOptions extends StObject {
     
-    var extent: js.UndefOr[Extent_] = js.native
+    var extent: js.UndefOr[Extent_] = js.undefined
     
-    var matrixIds: js.Array[String] = js.native
+    var matrixIds: js.Array[String]
     
-    var origin: js.UndefOr[Coordinate_] = js.native
+    var origin: js.UndefOr[Coordinate_] = js.undefined
     
-    var origins: js.UndefOr[js.Array[Coordinate_]] = js.native
+    var origins: js.UndefOr[js.Array[Coordinate_]] = js.undefined
     
-    var resolutions: js.Array[Double] = js.native
+    var resolutions: js.Array[Double]
     
-    var sizes: js.UndefOr[js.Array[Size]] = js.native
+    var sizes: js.UndefOr[js.Array[Size]] = js.undefined
     
-    var tileSize: js.UndefOr[Double | Size] = js.native
+    var tileSize: js.UndefOr[Double | Size] = js.undefined
     
-    var tileSizes: js.UndefOr[js.Array[Double | Size]] = js.native
+    var tileSizes: js.UndefOr[js.Array[Double | Size]] = js.undefined
     
-    var widths: js.UndefOr[js.Array[Double]] = js.native
+    var widths: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object WMTSOptions {
     
@@ -188,16 +185,15 @@ object tilegrid {
     }
   }
   
-  @js.native
   trait XYZOptions extends StObject {
     
-    var extent: js.UndefOr[Extent_] = js.native
+    var extent: js.UndefOr[Extent_] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var tileSize: js.UndefOr[Double | Size] = js.native
+    var tileSize: js.UndefOr[Double | Size] = js.undefined
   }
   object XYZOptions {
     

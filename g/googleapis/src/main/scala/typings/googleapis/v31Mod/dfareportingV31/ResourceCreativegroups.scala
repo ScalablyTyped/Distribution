@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Creativegroups")
@@ -31,7 +30,7 @@ class ResourceCreativegroups protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaCreativeGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
   def get(params: ParamsResourceCreativegroupsGet): GaxiosPromise[SchemaCreativeGroup] = js.native
   def get(params: ParamsResourceCreativegroupsGet, callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def get(
@@ -61,7 +60,7 @@ class ResourceCreativegroups protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaCreativeGroup] = js.native
   def insert(callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
   def insert(params: ParamsResourceCreativegroupsInsert): GaxiosPromise[SchemaCreativeGroup] = js.native
   def insert(params: ParamsResourceCreativegroupsInsert, callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def insert(
@@ -99,7 +98,7 @@ class ResourceCreativegroups protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCreativeGroupsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCreativeGroupsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeGroupsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeGroupsListResponse] = js.native
   def list(params: ParamsResourceCreativegroupsList): GaxiosPromise[SchemaCreativeGroupsListResponse] = js.native
   def list(
     params: ParamsResourceCreativegroupsList,
@@ -134,7 +133,7 @@ class ResourceCreativegroups protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaCreativeGroup] = js.native
   def patch(callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
   def patch(params: ParamsResourceCreativegroupsPatch): GaxiosPromise[SchemaCreativeGroup] = js.native
   def patch(params: ParamsResourceCreativegroupsPatch, callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def patch(
@@ -164,7 +163,7 @@ class ResourceCreativegroups protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaCreativeGroup] = js.native
   def update(callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
   def update(params: ParamsResourceCreativegroupsUpdate): GaxiosPromise[SchemaCreativeGroup] = js.native
   def update(params: ParamsResourceCreativegroupsUpdate, callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def update(

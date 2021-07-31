@@ -6,17 +6,15 @@ import typings.node.osMod.NetworkInterfaceInfo
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cpus extends StObject {
   
-  var cpus: ReturnType[js.Function0[js.Array[CpuInfo]]] = js.native
+  var cpus: ReturnType[js.Function0[js.Array[CpuInfo]]]
   
-  var networkInterfaces: ReturnType[js.Function0[Dict[js.Array[NetworkInterfaceInfo]]]] = js.native
+  var networkInterfaces: ReturnType[js.Function0[Dict[js.Array[NetworkInterfaceInfo]]]]
   
-  var totalmem: ReturnType[js.Function0[Double]] = js.native
+  var totalmem: ReturnType[js.Function0[Double]]
 }
 object Cpus {
   

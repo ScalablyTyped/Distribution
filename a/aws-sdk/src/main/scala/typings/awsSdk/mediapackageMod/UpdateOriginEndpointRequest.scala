@@ -2,60 +2,58 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateOriginEndpointRequest extends StObject {
   
-  var Authorization: js.UndefOr[typings.awsSdk.mediapackageMod.Authorization] = js.native
+  var Authorization: js.UndefOr[typings.awsSdk.mediapackageMod.Authorization] = js.undefined
   
-  var CmafPackage: js.UndefOr[CmafPackageCreateOrUpdateParameters] = js.native
+  var CmafPackage: js.UndefOr[CmafPackageCreateOrUpdateParameters] = js.undefined
   
-  var DashPackage: js.UndefOr[typings.awsSdk.mediapackageMod.DashPackage] = js.native
+  var DashPackage: js.UndefOr[typings.awsSdk.mediapackageMod.DashPackage] = js.undefined
   
   /**
     * A short text description of the OriginEndpoint.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
-  var HlsPackage: js.UndefOr[typings.awsSdk.mediapackageMod.HlsPackage] = js.native
+  var HlsPackage: js.UndefOr[typings.awsSdk.mediapackageMod.HlsPackage] = js.undefined
   
   /**
     * The ID of the OriginEndpoint to update.
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * A short string that will be appended to the end of the Endpoint URL.
     */
-  var ManifestName: js.UndefOr[string] = js.native
+  var ManifestName: js.UndefOr[string] = js.undefined
   
-  var MssPackage: js.UndefOr[typings.awsSdk.mediapackageMod.MssPackage] = js.native
+  var MssPackage: js.UndefOr[typings.awsSdk.mediapackageMod.MssPackage] = js.undefined
   
   /**
     * Control whether origination of video is allowed for this OriginEndpoint. If set to ALLOW, the OriginEndpoint
   may by requested, pursuant to any other form of access control. If set to DENY, the OriginEndpoint may not be
   requested. This can be helpful for Live to VOD harvesting, or for temporarily disabling origination
     */
-  var Origination: js.UndefOr[typings.awsSdk.mediapackageMod.Origination] = js.native
+  var Origination: js.UndefOr[typings.awsSdk.mediapackageMod.Origination] = js.undefined
   
   /**
     * Maximum duration (in seconds) of content to retain for startover playback.
   If not specified, startover playback will be disabled for the OriginEndpoint.
     */
-  var StartoverWindowSeconds: js.UndefOr[integer] = js.native
+  var StartoverWindowSeconds: js.UndefOr[integer] = js.undefined
   
   /**
     * Amount of delay (in seconds) to enforce on the playback of live content.
   If not specified, there will be no time delay in effect for the OriginEndpoint.
     */
-  var TimeDelaySeconds: js.UndefOr[integer] = js.native
+  var TimeDelaySeconds: js.UndefOr[integer] = js.undefined
   
   /**
     * A list of source IP CIDR blocks that will be allowed to access the OriginEndpoint.
     */
-  var Whitelist: js.UndefOr[listOfString] = js.native
+  var Whitelist: js.UndefOr[listOfString] = js.undefined
 }
 object UpdateOriginEndpointRequest {
   

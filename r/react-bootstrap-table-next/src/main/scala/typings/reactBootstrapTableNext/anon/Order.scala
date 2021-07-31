@@ -3,15 +3,13 @@ package typings.reactBootstrapTableNext.anon
 import typings.reactBootstrapTableNext.mod.SortOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Order extends StObject {
   
-  var dataField: js.Any = js.native
+  var dataField: js.Any
   
-  var order: SortOrder = js.native
+  var order: SortOrder
 }
 object Order {
   

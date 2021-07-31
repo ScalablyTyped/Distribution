@@ -2,49 +2,47 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * VPN tunnel resource. (== resource_for beta.vpnTunnels ==) (== resource_for
   * v1.vpnTunnels ==)
   */
-@js.native
 trait SchemaVpnTunnel extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Detailed status message for the VPN tunnel.
     */
-  var detailedStatus: js.UndefOr[String] = js.native
+  var detailedStatus: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * IKE protocol version to use when establishing the VPN tunnel with the
     * peer VPN gateway. Acceptable IKE versions are 1 or 2. The default version
     * is 2.
     */
-  var ikeVersion: js.UndefOr[Double] = js.native
+  var ikeVersion: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] Type of resource. Always compute#vpnTunnel for VPN tunnels.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Local traffic selector to use when establishing the VPN tunnel with the
@@ -52,7 +50,7 @@ trait SchemaVpnTunnel extends StObject {
     * example: 192.168.0.0/16. The ranges must be disjoint. Only IPv4 is
     * supported.
     */
-  var localTrafficSelector: js.UndefOr[js.Array[String]] = js.native
+  var localTrafficSelector: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -63,19 +61,19 @@ trait SchemaVpnTunnel extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * IP address of the peer VPN gateway. Only IPv4 is supported.
     */
-  var peerIp: js.UndefOr[String] = js.native
+  var peerIp: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] URL of the region where the VPN tunnel resides. You must
     * specify this field as part of the HTTP request URL. It is not settable as
     * a field in the request body.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Remote traffic selectors to use when establishing the VPN tunnel with the
@@ -83,28 +81,28 @@ trait SchemaVpnTunnel extends StObject {
     * example: 192.168.0.0/16. The ranges should be disjoint. Only IPv4 is
     * supported.
     */
-  var remoteTrafficSelector: js.UndefOr[js.Array[String]] = js.native
+  var remoteTrafficSelector: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * URL of the router resource to be used for dynamic routing.
     */
-  var router: js.UndefOr[String] = js.native
+  var router: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Shared secret used to set the secure session between the Cloud VPN
     * gateway and the peer VPN gateway.
     */
-  var sharedSecret: js.UndefOr[String] = js.native
+  var sharedSecret: js.UndefOr[String] = js.undefined
   
   /**
     * Hash of the shared secret.
     */
-  var sharedSecretHash: js.UndefOr[String] = js.native
+  var sharedSecretHash: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The status of the VPN tunnel, which can be one of the
@@ -120,13 +118,13 @@ trait SchemaVpnTunnel extends StObject {
     * being deallocated for the VPN tunnel.  - FAILED: Tunnel creation has
     * failed and the tunnel is not ready to be used.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the Target VPN gateway with which this VPN tunnel is associated.
     * Provided by the client when the VPN tunnel is created.
     */
-  var targetVpnGateway: js.UndefOr[String] = js.native
+  var targetVpnGateway: js.UndefOr[String] = js.undefined
 }
 object SchemaVpnTunnel {
   

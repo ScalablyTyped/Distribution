@@ -2,13 +2,11 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request to get permissions which can be tested on a resource.
   */
-@js.native
 trait SchemaQueryTestablePermissionsRequest extends StObject {
   
   /**
@@ -17,18 +15,18 @@ trait SchemaQueryTestablePermissionsRequest extends StObject {
     * For example, a Cloud Platform project with id `my-project` will be named
     * `//cloudresourcemanager.googleapis.com/projects/my-project`.
     */
-  var fullResourceName: js.UndefOr[String] = js.native
+  var fullResourceName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional limit on the number of permissions to include in the response.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional pagination token returned in an earlier
     * QueryTestablePermissionsRequest.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaQueryTestablePermissionsRequest {
   

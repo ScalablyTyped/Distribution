@@ -5,11 +5,12 @@ import typings.ejWebAll.ej.Pivot.OperationalMode
 import typings.ejWebAll.ej.PivotAnalysis.FilterType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotGauge extends Widget_ {
+trait PivotGauge
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -26,7 +27,7 @@ trait PivotGauge extends Widget_ {
   /** Returns the JSON records formed to render the control.
     * @returns {any[]}
     */
-  def getJSONRecords(): js.Array[_] = js.native
+  def getJSONRecords(): js.Array[js.Any] = js.native
   
   /** Returns the OlapReport string maintained along with the axis elements information.
     * @returns {string}
@@ -71,43 +72,56 @@ object PivotGauge {
     
     ///To set currency format for label values.
     @js.native
-    sealed trait Currency extends NumberFormat
+    sealed trait Currency
+      extends StObject
+         with NumberFormat
     
     ///To set default format for label values.
     @js.native
-    sealed trait Default extends NumberFormat
+    sealed trait Default
+      extends StObject
+         with NumberFormat
     
     ///To set fraction format for label values.
     @js.native
-    sealed trait Fraction extends NumberFormat
+    sealed trait Fraction
+      extends StObject
+         with NumberFormat
     
     ///To set notation format for label values.
     @js.native
-    sealed trait Notation extends NumberFormat
+    sealed trait Notation
+      extends StObject
+         with NumberFormat
     
     ///To set percentage format for label values.
     @js.native
-    sealed trait Percentage extends NumberFormat
+    sealed trait Percentage
+      extends StObject
+         with NumberFormat
     
     ///To set scientific format for label values.
     @js.native
-    sealed trait Scientific extends NumberFormat
+    sealed trait Scientific
+      extends StObject
+         with NumberFormat
     
     ///To set text format for label values.
     @js.native
-    sealed trait Text extends NumberFormat
+    sealed trait Text
+      extends StObject
+         with NumberFormat
   }
   
-  @js.native
   trait AfterServiceInvokeEventArgs extends StObject {
     
     /** returns the custom object bound with PivotGauge control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotGauge control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object AfterServiceInvokeEventArgs {
     
@@ -134,12 +148,11 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait BeforePivotEnginePopulateEventArgs extends StObject {
     
     /** returns the current instance of PivotGauge control.
       */
-    var gaugeObject: js.UndefOr[js.Any] = js.native
+    var gaugeObject: js.UndefOr[js.Any] = js.undefined
   }
   object BeforePivotEnginePopulateEventArgs {
     
@@ -160,16 +173,15 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait BeforeServiceInvokeEventArgs extends StObject {
     
     /** returns the custom object bound with PivotGauge control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotGauge control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object BeforeServiceInvokeEventArgs {
     
@@ -196,53 +208,52 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait DataSource extends StObject {
     
     /** In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
       * @Default {â€œâ€}
       */
-    var catalog: js.UndefOr[String] = js.native
+    var catalog: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to bind in columns section.
       * @Default {[]}
       */
-    var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.native
+    var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.undefined
     
     /** Contains the respective cube name from OLAP database as string type.
       * @Default {â€œâ€}
       */
-    var cube: js.UndefOr[String] = js.native
+    var cube: js.UndefOr[String] = js.undefined
     
     /** Provides the raw data source for the PivotGauge.
       * @Default {null}
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Lists out the items which supports filtering of values without displaying the members in UI in PivotGauge.
       * @Default {[]}
       */
-    var filters: js.UndefOr[js.Array[DataSourceFilter]] = js.native
+    var filters: js.UndefOr[js.Array[DataSourceFilter]] = js.undefined
     
     /** Set the provider name for PivotGauge to identify whether the provider is SSAS or Mondrian.
       * @Default {ssas}
       */
-    var providerName: js.UndefOr[String] = js.native
+    var providerName: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to bind in rows section.
       * @Default {[]}
       */
-    var rows: js.UndefOr[js.Array[DataSourceRow]] = js.native
+    var rows: js.UndefOr[js.Array[DataSourceRow]] = js.undefined
     
     /** To set the data source name to fetch data from that.
       * @Default {â€œâ€}
       */
-    var sourceInfo: js.UndefOr[String] = js.native
+    var sourceInfo: js.UndefOr[String] = js.undefined
     
     /** Lists out the items supports calculation in PivotGauge.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[DataSourceValue]] = js.native
+    var values: js.UndefOr[js.Array[DataSourceValue]] = js.undefined
   }
   object DataSource {
     
@@ -323,17 +334,16 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait DataSourceColumn extends StObject {
     
     /** Allows the user to bind the item by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to the field members.
       * @Default {null}
       */
-    var filterItems: js.UndefOr[DataSourceColumnsFilterItems] = js.native
+    var filterItems: js.UndefOr[DataSourceColumnsFilterItems] = js.undefined
   }
   object DataSourceColumn {
     
@@ -360,18 +370,17 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait DataSourceColumnsFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
       * @Default {ej.PivotAnalysis.FilterType.Exclude}
       */
-    var filterType: js.UndefOr[FilterType | String] = js.native
+    var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSourceColumnsFilterItems {
     
@@ -391,7 +400,7 @@ object PivotGauge {
       def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -401,17 +410,16 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait DataSourceFilter extends StObject {
     
     /** Allows the user to bind the item by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to the field members.
       * @Default {null}
       */
-    var filterItems: js.UndefOr[DataSourceFiltersFilterItems] = js.native
+    var filterItems: js.UndefOr[DataSourceFiltersFilterItems] = js.undefined
   }
   object DataSourceFilter {
     
@@ -438,18 +446,17 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait DataSourceFiltersFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
       * @Default {ej.PivotAnalysis.FilterType.Exclude}
       */
-    var filterType: js.UndefOr[FilterType | String] = js.native
+    var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSourceFiltersFilterItems {
     
@@ -469,7 +476,7 @@ object PivotGauge {
       def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -479,17 +486,16 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait DataSourceRow extends StObject {
     
     /** Allows the user to bind the item by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to the field members.
       * @Default {null}
       */
-    var filterItems: js.UndefOr[DataSourceRowsFilterItems] = js.native
+    var filterItems: js.UndefOr[DataSourceRowsFilterItems] = js.undefined
   }
   object DataSourceRow {
     
@@ -516,18 +522,17 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait DataSourceRowsFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
       * @Default {ej.PivotAnalysis.FilterType.Exclude}
       */
-    var filterType: js.UndefOr[FilterType | String] = js.native
+    var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSourceRowsFilterItems {
     
@@ -547,7 +552,7 @@ object PivotGauge {
       def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -557,35 +562,34 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait DataSourceValue extends StObject {
     
     /** Allows to set the axis name to place the measures items.
       * @Default {rows}
       */
-    var axis: js.UndefOr[String] = js.native
+    var axis: js.UndefOr[String] = js.undefined
     
     /** Allows the user to set the display caption for an item for Relational datasource.
       */
-    var fieldCaption: js.UndefOr[String] = js.native
+    var fieldCaption: js.UndefOr[String] = js.undefined
     
     /** Allows the user to bind the item by using its unique name as field name for Relational datasource.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Allows to set the formula for calculation of values for calculated members in Relational datasource.
       */
-    var formula: js.UndefOr[String] = js.native
+    var formula: js.UndefOr[String] = js.undefined
     
     /** Indicates whether the field is a calculated field or not with Relational datasource.
       * @Default {false}
       */
-    var isCalculatedField: js.UndefOr[Boolean] = js.native
+    var isCalculatedField: js.UndefOr[Boolean] = js.undefined
     
     /** This holds the list of unique names of measures to bind them from the OLAP cube.
       * @Default {[]}
       */
-    var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.native
+    var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.undefined
   }
   object DataSourceValue {
     
@@ -639,12 +643,11 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait DataSourceValuesMeasure extends StObject {
     
     /** Allows the user to bind the measure from OLAP datasource by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
   }
   object DataSourceValuesMeasure {
     
@@ -665,23 +668,22 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait Frame extends StObject {
     
     /** Specifies the frame type of PivotGauge.
       * @Default {fullcircle}
       */
-    var frameType: js.UndefOr[String] = js.native
+    var frameType: js.UndefOr[String] = js.undefined
     
     /** Specifies the end angle for the half circular frame.
       * @Default {360}
       */
-    var halfCircleFrameEndAngle: js.UndefOr[Double] = js.native
+    var halfCircleFrameEndAngle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the start angle for the half circular frame.
       * @Default {180}
       */
-    var halfCircleFrameStartAngle: js.UndefOr[Double] = js.native
+    var halfCircleFrameStartAngle: js.UndefOr[Double] = js.undefined
   }
   object Frame {
     
@@ -714,26 +716,25 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait LabelFormatSettings extends StObject {
     
     /** Allows you to set the number of digits displayed after decimal point.
       * @Default {5}
       */
-    var decimalPlaces: js.UndefOr[Double] = js.native
+    var decimalPlaces: js.UndefOr[Double] = js.undefined
     
     /** Allows the user to change the number format of the label values in PivotGauge.
       * @Default {ej.PivotGauge.NumberFormat.Default}
       */
-    var numberFormat: js.UndefOr[NumberFormat | String] = js.native
+    var numberFormat: js.UndefOr[NumberFormat | String] = js.undefined
     
     /** Allows you to add a text at the beginning of the label.
       */
-    var prefixText: js.UndefOr[String] = js.native
+    var prefixText: js.UndefOr[String] = js.undefined
     
     /** Allows you to add text at the end of the label.
       */
-    var suffixText: js.UndefOr[String] = js.native
+    var suffixText: js.UndefOr[String] = js.undefined
   }
   object LabelFormatSettings {
     
@@ -772,24 +773,23 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** returns the current action of PivotGauge control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound to the control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of the widget.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the model of PivotGauge control.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
   }
   object LoadEventArgs {
     
@@ -828,131 +828,130 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggers when it reaches client-side after any AJAX request.
       */
-    var afterServiceInvoke: js.UndefOr[js.Function1[/* e */ AfterServiceInvokeEventArgs, Unit]] = js.native
+    var afterServiceInvoke: js.UndefOr[js.Function1[/* e */ AfterServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Sets the mode for the PivotGauge widget for binding either OLAP or Relational data source.
       * @Default {ej.Pivot.AnalysisMode.Pivot}
       */
-    var analysisMode: js.UndefOr[AnalysisMode | String] = js.native
+    var analysisMode: js.UndefOr[AnalysisMode | String] = js.undefined
     
     /** Triggers before populating the pivot engine on operating in client mode.
       */
-    var beforePivotEnginePopulate: js.UndefOr[js.Function1[/* e */ BeforePivotEnginePopulateEventArgs, Unit]] = js.native
+    var beforePivotEnginePopulate: js.UndefOr[js.Function1[/* e */ BeforePivotEnginePopulateEventArgs, Unit]] = js.undefined
     
     /** Triggers before any AJAX request is passed from PivotGauge to service methods.
       */
-    var beforeServiceInvoke: js.UndefOr[js.Function1[/* e */ BeforeServiceInvokeEventArgs, Unit]] = js.native
+    var beforeServiceInvoke: js.UndefOr[js.Function1[/* e */ BeforeServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Sets the number of columns to arrange the Pivot Gauges.
       * @Default {0}
       */
-    var columnsCount: js.UndefOr[Double] = js.native
+    var columnsCount: js.UndefOr[Double] = js.undefined
     
     /** Specifies the CSS class to PivotGauge to achieve custom theme.
       * @Default {â€œâ€}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Object utilized to pass additional information between client-end and service-end on operating in server mode.
       * @Default {{}}
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** Initializes the data source for the PivotGauge widget, when it functions completely on client-side.
       * @Default {{}}
       */
-    var dataSource: js.UndefOr[DataSource] = js.native
+    var dataSource: js.UndefOr[DataSource] = js.undefined
     
     /** Enables/disables the animation of pointer in PivotGauge.
       * @Default {false}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Allows the user to view PivotGauge from right to left.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables tooltip visibility in PivotGauge.
       * @Default {false}
       */
-    var enableTooltip: js.UndefOr[Boolean] = js.native
+    var enableTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable &quot;withCredentials&quot; property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request.
       * @Default {false}
       */
-    var enableXHRCredentials: js.UndefOr[Boolean] = js.native
+    var enableXHRCredentials: js.UndefOr[Boolean] = js.undefined
     
     /** Specify the frame details of PivotGauge here.
       * @Default {Object}
       */
-    var frame: js.UndefOr[Frame] = js.native
+    var frame: js.UndefOr[Frame] = js.undefined
     
     /** Allows the user to enable PivotGaugeâ€™s responsiveness in the browser layout.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Allows the user to change the format of the label values in PivotGauge.
       * @Default {null}
       */
-    var labelFormatSettings: js.UndefOr[LabelFormatSettings] = js.native
+    var labelFormatSettings: js.UndefOr[LabelFormatSettings] = js.undefined
     
     /** Triggers when PivotGauge started loading at client-side.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Allows the user to set the localized language for the widget.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the mode for the PivotGauge widget for binding data source either in server-side or client-side.
       * @Default {ej.Pivot.OperationalMode.ClientMode}
       */
-    var operationalMode: js.UndefOr[OperationalMode | String] = js.native
+    var operationalMode: js.UndefOr[OperationalMode | String] = js.undefined
     
     /** Triggers when PivotGauge widget completes all operations at client-side after any AJAX request.
       */
-    var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.native
+    var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.undefined
     
     /** Triggers when any error occurred during AJAX request.
       */
-    var renderFailure: js.UndefOr[js.Function1[/* e */ RenderFailureEventArgs, Unit]] = js.native
+    var renderFailure: js.UndefOr[js.Function1[/* e */ RenderFailureEventArgs, Unit]] = js.undefined
     
     /** Triggers when PivotGauge successfully reaches client-side after any AJAX request.
       */
-    var renderSuccess: js.UndefOr[js.Function1[/* e */ RenderSuccessEventArgs, Unit]] = js.native
+    var renderSuccess: js.UndefOr[js.Function1[/* e */ RenderSuccessEventArgs, Unit]] = js.undefined
     
     /** Sets the number of rows to arrange the Pivot Gauges.
       * @Default {0}
       */
-    var rowsCount: js.UndefOr[Double] = js.native
+    var rowsCount: js.UndefOr[Double] = js.undefined
     
     /** Sets the scale values such as pointers, indicators, etc... for PivotGauge.
       * @Default {{}}
       */
-    var scales: js.UndefOr[js.Any] = js.native
+    var scales: js.UndefOr[js.Any] = js.undefined
     
     /** Allows the user to set the custom name for the methods at service-end, communicated during AJAX post.
       * @Default {{}}
       */
-    var serviceMethodSettings: js.UndefOr[ServiceMethodSettings] = js.native
+    var serviceMethodSettings: js.UndefOr[ServiceMethodSettings] = js.undefined
     
     /** Enables/disables the header labels in PivotGauge.
       * @Default {true}
       */
-    var showHeaderLabel: js.UndefOr[Boolean] = js.native
+    var showHeaderLabel: js.UndefOr[Boolean] = js.undefined
     
     /** Connects the service using the specified URL for any server updates on server mode operation.
       * @Default {â€œâ€}
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -1123,16 +1122,15 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait RenderCompleteEventArgs extends StObject {
     
     /** returns the custom object bound with PivotGauge control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotGauge control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object RenderCompleteEventArgs {
     
@@ -1159,20 +1157,19 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait RenderFailureEventArgs extends StObject {
     
     /** returns the custom object bound with the control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotGauge control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the error message with error code.
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object RenderFailureEventArgs {
     
@@ -1205,16 +1202,15 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait RenderSuccessEventArgs extends StObject {
     
     /** returns the custom object bound with the control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotGauge control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object RenderSuccessEventArgs {
     
@@ -1241,13 +1237,12 @@ object PivotGauge {
     }
   }
   
-  @js.native
   trait ServiceMethodSettings extends StObject {
     
     /** Allows the user to set the custom name for the service method responsible for initializing PivotGauge.
       * @Default {InitializeGauge}
       */
-    var initialize: js.UndefOr[String] = js.native
+    var initialize: js.UndefOr[String] = js.undefined
   }
   object ServiceMethodSettings {
     

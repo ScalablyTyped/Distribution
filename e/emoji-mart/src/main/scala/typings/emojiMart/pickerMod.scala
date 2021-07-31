@@ -4,7 +4,6 @@ import typings.emojiMart.sharedPropsMod.PickerProps
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerMod {

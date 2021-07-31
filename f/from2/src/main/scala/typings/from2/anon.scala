@@ -6,16 +6,14 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined {  objectMode :true | undefined} & node.stream.ReadableOptions */
-  @js.native
   trait objectModetrueundefinedRe extends StObject {
     
-    var autoDestroy: js.UndefOr[Boolean] = js.native
+    var autoDestroy: js.UndefOr[Boolean] = js.undefined
     
     var destroy: js.UndefOr[
         js.ThisFunction2[
@@ -24,20 +22,20 @@ object anon {
           /* callback */ js.Function1[/* error */ Error | Null, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var encoding: js.UndefOr[BufferEncoding] = js.native
+    var encoding: js.UndefOr[BufferEncoding] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var objectMode: js.UndefOr[`true`] with js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[`true`] & js.UndefOr[Boolean]
     
-    var read: js.UndefOr[js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]] = js.native
+    var read: js.UndefOr[js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]] = js.undefined
   }
   object objectModetrueundefinedRe {
     
     @scala.inline
-    def apply(objectMode: js.UndefOr[`true`] with js.UndefOr[Boolean]): objectModetrueundefinedRe = {
+    def apply(objectMode: js.UndefOr[`true`] & js.UndefOr[Boolean]): objectModetrueundefinedRe = {
       val __obj = js.Dynamic.literal(objectMode = objectMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[objectModetrueundefinedRe]
     }
@@ -77,7 +75,7 @@ object anon {
       def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
       @scala.inline
-      def setObjectMode(value: js.UndefOr[`true`] with js.UndefOr[Boolean]): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      def setObjectMode(value: js.UndefOr[`true`] & js.UndefOr[Boolean]): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRead(value: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])

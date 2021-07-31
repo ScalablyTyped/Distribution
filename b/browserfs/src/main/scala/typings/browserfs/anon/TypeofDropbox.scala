@@ -10,12 +10,12 @@ import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.dropboxjs.Dropbox.Client
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofDropbox
-  extends Instantiable1[/* client */ Client, default]
+  extends StObject
+     with Instantiable1[/* client */ Client, default]
      with Instantiable2[/* client */ Client, /* deprecateMsg */ Boolean, default] {
   
   /**

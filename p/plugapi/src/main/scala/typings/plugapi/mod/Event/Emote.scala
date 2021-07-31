@@ -2,21 +2,19 @@ package typings.plugapi.mod.Event
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Emote extends StObject {
   
-  var chatID: String = js.native
+  var chatID: String
   
-  var from: String = js.native
+  var from: String
   
-  var fromID: String = js.native
+  var fromID: String
   
-  var message: String = js.native
+  var message: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Emote {
   

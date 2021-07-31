@@ -2,23 +2,21 @@ package typings.aframe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofCache extends StObject {
   
-  def add(key: String, file: js.Any): Unit = js.native
+  def add(key: String, file: js.Any): Unit
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var files: js.Any = js.native
+  var files: js.Any
   
-  def get(key: String): js.Any = js.native
+  def get(key: String): js.Any
   
-  def remove(key: String): Unit = js.native
+  def remove(key: String): Unit
 }
 object TypeofCache {
   

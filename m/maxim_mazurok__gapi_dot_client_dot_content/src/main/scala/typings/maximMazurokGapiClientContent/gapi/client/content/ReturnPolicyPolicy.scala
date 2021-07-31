@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnPolicyPolicy extends StObject {
   
   /**
     * Required. Last day for returning the items. In ISO 8601 format. When specifying the return window like this, set the policy type to "lastReturnDate". Use this for seasonal overrides
     * only.
     */
-  var lastReturnDate: js.UndefOr[String] = js.native
+  var lastReturnDate: js.UndefOr[String] = js.undefined
   
   /**
     * The number of days items can be returned after delivery, where one day is defined to be 24 hours after the delivery timestamp. When specifying the return window like this, set the
@@ -20,14 +18,14 @@ trait ReturnPolicyPolicy extends StObject {
     * days, but note that for most items a minimum of 30 days is required for returns. Exceptions may be made for electronics. A policy of less than 30 days can only be applied to those
     * items.
     */
-  var numberOfDays: js.UndefOr[String] = js.native
+  var numberOfDays: js.UndefOr[String] = js.undefined
   
   /**
     * Policy type. Use "lastReturnDate" for seasonal overrides only. Note that for most items a minimum of 30 days is required for returns. Exceptions may be made for electronics or
     * non-returnable items such as food, perishables, and living things. A policy of less than 30 days can only be applied to those items. Acceptable values are: - "`lastReturnDate`" -
     * "`lifetimeReturns`" - "`noReturns`" - "`numberOfDaysAfterDelivery`"
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ReturnPolicyPolicy {
   

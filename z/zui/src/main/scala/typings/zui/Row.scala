@@ -2,21 +2,19 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Row extends StObject {
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var css: js.UndefOr[String] = js.native
+  var css: js.UndefOr[String] = js.undefined
   
-  var cssClass: js.UndefOr[String] = js.native
+  var cssClass: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Tuple3[Double, String, String]] = js.native
+  var data: js.UndefOr[js.Tuple3[Double, String, String]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object Row {
   

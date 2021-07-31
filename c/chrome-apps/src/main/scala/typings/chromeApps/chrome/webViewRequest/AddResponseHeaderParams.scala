@@ -2,17 +2,15 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddResponseHeaderParams extends StObject {
   
   /** HTTP response header name */
-  var name: String = js.native
+  var name: String
   
   /** HTTP response header value */
-  var value: String = js.native
+  var value: String
 }
 object AddResponseHeaderParams {
   

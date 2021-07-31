@@ -2,36 +2,34 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDatasetContentsRequest extends StObject {
   
   /**
     * The name of the data set whose contents information you want to list.
     */
-  var datasetName: DatasetName = js.native
+  var datasetName: DatasetName
   
   /**
     * The maximum number of results to return in this request.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token for the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * A filter to limit results to those data set contents whose creation is scheduled before the given time. See the field triggers.schedule in the CreateDataset request. (timestamp)
     */
-  var scheduledBefore: js.UndefOr[Timestamp] = js.native
+  var scheduledBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter to limit results to those data set contents whose creation is scheduled on or after the given time. See the field triggers.schedule in the CreateDataset request. (timestamp)
     */
-  var scheduledOnOrAfter: js.UndefOr[Timestamp] = js.native
+  var scheduledOnOrAfter: js.UndefOr[Timestamp] = js.undefined
 }
 object ListDatasetContentsRequest {
   

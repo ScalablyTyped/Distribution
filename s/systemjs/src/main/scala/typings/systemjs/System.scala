@@ -4,28 +4,47 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.systemjs.anon.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object System {
   
-  @js.native
   trait Context extends StObject {
     
-    def `import`[T /* <: Module */](moduleId: String): js.Promise[T] = js.native
-    def `import`[T /* <: Module */](moduleId: String, parentUrl: String): js.Promise[T] = js.native
+    def `import`[T /* <: Module */](moduleId: String): js.Promise[T]
+    def `import`[T /* <: Module */](moduleId: String, parentUrl: String): js.Promise[T]
     @JSName("import")
-    var import_Original: ImportFn = js.native
+    var import_Original: ImportFn
     
-    var meta: Url = js.native
+    var meta: Url
+  }
+  object Context {
+    
+    @scala.inline
+    def apply(
+      `import`: (/* moduleId */ String, /* parentUrl */ js.UndefOr[String]) => js.Promise[Module],
+      meta: Url
+    ): Context = {
+      val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
+      __obj.updateDynamic("import")(js.Any.fromFunction2(`import`))
+      __obj.asInstanceOf[Context]
+    }
+    
+    @scala.inline
+    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setImport(value: (/* moduleId */ String, /* parentUrl */ js.UndefOr[String]) => js.Promise[Module]): Self = StObject.set(x, "import", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setMeta(value: Url): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait Declare extends StObject {
     
-    var execute: js.UndefOr[js.Function0[_]] = js.native
+    var execute: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var setters: js.UndefOr[js.Array[SetterFn]] = js.native
+    var setters: js.UndefOr[js.Array[SetterFn]] = js.undefined
   }
   object Declare {
     
@@ -39,7 +58,7 @@ object System {
     implicit class DeclareMutableBuilder[Self <: Declare] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setExecute(value: () => _): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+      def setExecute(value: () => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
       @scala.inline
       def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
@@ -76,11 +95,11 @@ object System {
   // tslint:disable-next-line no-unnecessary-generics
   type ImportFn = js.Function2[/* moduleId */ String, /* parentUrl */ js.UndefOr[String], js.Promise[Module]]
   
-  @js.native
   trait Module
-    extends /* exportName */ StringDictionary[js.Any] {
+    extends StObject
+       with /* exportName */ StringDictionary[js.Any] {
     
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
   }
   object Module {
     

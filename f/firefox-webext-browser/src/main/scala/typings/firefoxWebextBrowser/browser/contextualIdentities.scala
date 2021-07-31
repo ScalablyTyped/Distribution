@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,26 +15,25 @@ object contextualIdentities {
   
   /* contextualIdentities types */
   /** Represents information about a contextual identity. */
-  @js.native
   trait ContextualIdentity extends StObject {
     
     /** The color name of the contextual identity. */
-    var color: String = js.native
+    var color: String
     
     /** The color hash of the contextual identity. */
-    var colorCode: String = js.native
+    var colorCode: String
     
     /** The cookie store ID of the contextual identity. */
-    var cookieStoreId: String = js.native
+    var cookieStoreId: String
     
     /** The icon name of the contextual identity. */
-    var icon: String = js.native
+    var icon: String
     
     /** The icon url of the contextual identity. */
-    var iconUrl: String = js.native
+    var iconUrl: String
     
     /** The name of the contextual identity. */
-    var name: String = js.native
+    var name: String
   }
   object ContextualIdentity {
     
@@ -76,17 +74,16 @@ object contextualIdentities {
   }
   
   /** Details about the contextual identity being created. */
-  @js.native
   trait CreateDetails extends StObject {
     
     /** The color of the contextual identity. */
-    var color: String = js.native
+    var color: String
     
     /** The icon of the contextual identity. */
-    var icon: String = js.native
+    var icon: String
     
     /** The name of the contextual identity. */
-    var name: String = js.native
+    var name: String
   }
   object CreateDetails {
     
@@ -110,11 +107,10 @@ object contextualIdentities {
     }
   }
   
-  @js.native
   trait OnCreatedChangeInfo extends StObject {
     
     /** Contextual identity that has been created */
-    var contextualIdentity: ContextualIdentity = js.native
+    var contextualIdentity: ContextualIdentity
   }
   object OnCreatedChangeInfo {
     
@@ -132,11 +128,10 @@ object contextualIdentities {
     }
   }
   
-  @js.native
   trait OnRemovedChangeInfo extends StObject {
     
     /** Contextual identity that has been removed */
-    var contextualIdentity: ContextualIdentity = js.native
+    var contextualIdentity: ContextualIdentity
   }
   object OnRemovedChangeInfo {
     
@@ -154,11 +149,10 @@ object contextualIdentities {
     }
   }
   
-  @js.native
   trait OnUpdatedChangeInfo extends StObject {
     
     /** Contextual identity that has been updated */
-    var contextualIdentity: ContextualIdentity = js.native
+    var contextualIdentity: ContextualIdentity
   }
   object OnUpdatedChangeInfo {
     
@@ -177,11 +171,10 @@ object contextualIdentities {
   }
   
   /** Information to filter the contextual identities being retrieved. */
-  @js.native
   trait QueryDetails extends StObject {
     
     /** Filters the contextual identity by name. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object QueryDetails {
     
@@ -203,17 +196,16 @@ object contextualIdentities {
   }
   
   /** Details about the contextual identity being created. */
-  @js.native
   trait UpdateDetails extends StObject {
     
     /** The color of the contextual identity. */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** The icon of the contextual identity. */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /** The name of the contextual identity. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object UpdateDetails {
     

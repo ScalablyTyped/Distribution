@@ -3,20 +3,18 @@ package typings.extendedListbox
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBoxEvent extends StObject {
   
   /** any object */
-  var args: js.Any = js.native
+  var args: js.Any
   
   /** unique event name */
-  var eventName: String = js.native
+  var eventName: String
   
   /** target object for which event is triggered */
-  var target: Element = js.native
+  var target: Element
 }
 object ListBoxEvent {
   

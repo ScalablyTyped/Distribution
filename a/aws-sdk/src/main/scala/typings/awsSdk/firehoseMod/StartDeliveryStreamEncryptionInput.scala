@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartDeliveryStreamEncryptionInput extends StObject {
   
   /**
     * Used to specify the type and Amazon Resource Name (ARN) of the KMS key needed for Server-Side Encryption (SSE).
     */
-  var DeliveryStreamEncryptionConfigurationInput: js.UndefOr[typings.awsSdk.firehoseMod.DeliveryStreamEncryptionConfigurationInput] = js.native
+  var DeliveryStreamEncryptionConfigurationInput: js.UndefOr[typings.awsSdk.firehoseMod.DeliveryStreamEncryptionConfigurationInput] = js.undefined
   
   /**
     * The name of the delivery stream for which you want to enable server-side encryption (SSE).
     */
-  var DeliveryStreamName: typings.awsSdk.firehoseMod.DeliveryStreamName = js.native
+  var DeliveryStreamName: typings.awsSdk.firehoseMod.DeliveryStreamName
 }
 object StartDeliveryStreamEncryptionInput {
   

@@ -5,10 +5,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.slider
 import typings.arcgisJsApi.arcgisJsApiStrings.toggle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionBaseProperties extends StObject {
   
   /**
@@ -16,49 +14,49 @@ trait ActionBaseProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#active)
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This adds a CSS class to the [ActionButton's](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html) node.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#className)
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether this action is disabled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#disabled)
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the ID assigned to this action.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#id)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the action.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#title)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the type of action.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#type)
     */
-  var `type`: js.UndefOr[button | slider | toggle] = js.native
+  var `type`: js.UndefOr[button | slider | toggle] = js.undefined
   
   /**
     * Indicates if the action is visible.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#visible)
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ActionBaseProperties {
   

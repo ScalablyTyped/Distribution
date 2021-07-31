@@ -2,15 +2,15 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ValueQuery extends NumberQuery {
+trait ValueQuery
+  extends StObject
+     with NumberQuery {
   
-  var bottom: js.UndefOr[Double] = js.native
+  var bottom: js.UndefOr[Double] = js.undefined
   
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object ValueQuery {
   

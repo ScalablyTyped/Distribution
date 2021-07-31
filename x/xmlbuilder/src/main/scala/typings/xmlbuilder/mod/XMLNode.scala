@@ -4,7 +4,6 @@ import typings.xmlbuilder.anon.Encoding
 import typings.xmlbuilder.anon.PubID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -88,17 +87,17 @@ abstract class XMLNode () extends StObject {
   def dat(value: String): XMLElement = js.native
   
   def dec(): XMLElement = js.native
-  def dec(version: js.UndefOr[scala.Nothing], encoding: js.UndefOr[scala.Nothing], standalone: Boolean): XMLElement = js.native
-  def dec(version: js.UndefOr[scala.Nothing], encoding: String): XMLElement = js.native
-  def dec(version: js.UndefOr[scala.Nothing], encoding: String, standalone: Boolean): XMLElement = js.native
   def dec(version: String): XMLElement = js.native
-  def dec(version: String, encoding: js.UndefOr[scala.Nothing], standalone: Boolean): XMLElement = js.native
   def dec(version: String, encoding: String): XMLElement = js.native
   def dec(version: String, encoding: String, standalone: Boolean): XMLElement = js.native
+  def dec(version: String, encoding: Unit, standalone: Boolean): XMLElement = js.native
+  def dec(version: Unit, encoding: String): XMLElement = js.native
+  def dec(version: Unit, encoding: String, standalone: Boolean): XMLElement = js.native
+  def dec(version: Unit, encoding: Unit, standalone: Boolean): XMLElement = js.native
   def dec(version: Encoding): XMLElement = js.native
-  def dec(version: Encoding, encoding: js.UndefOr[scala.Nothing], standalone: Boolean): XMLElement = js.native
   def dec(version: Encoding, encoding: String): XMLElement = js.native
   def dec(version: Encoding, encoding: String, standalone: Boolean): XMLElement = js.native
+  def dec(version: Encoding, encoding: Unit, standalone: Boolean): XMLElement = js.native
   
   /**
     * Creates the XML declaration.
@@ -112,17 +111,17 @@ abstract class XMLNode () extends StObject {
     * @returns the root element node
     */
   def declaration(): XMLElement = js.native
-  def declaration(version: js.UndefOr[scala.Nothing], encoding: js.UndefOr[scala.Nothing], standalone: Boolean): XMLElement = js.native
-  def declaration(version: js.UndefOr[scala.Nothing], encoding: String): XMLElement = js.native
-  def declaration(version: js.UndefOr[scala.Nothing], encoding: String, standalone: Boolean): XMLElement = js.native
   def declaration(version: String): XMLElement = js.native
-  def declaration(version: String, encoding: js.UndefOr[scala.Nothing], standalone: Boolean): XMLElement = js.native
   def declaration(version: String, encoding: String): XMLElement = js.native
   def declaration(version: String, encoding: String, standalone: Boolean): XMLElement = js.native
+  def declaration(version: String, encoding: Unit, standalone: Boolean): XMLElement = js.native
+  def declaration(version: Unit, encoding: String): XMLElement = js.native
+  def declaration(version: Unit, encoding: String, standalone: Boolean): XMLElement = js.native
+  def declaration(version: Unit, encoding: Unit, standalone: Boolean): XMLElement = js.native
   def declaration(version: Encoding): XMLElement = js.native
-  def declaration(version: Encoding, encoding: js.UndefOr[scala.Nothing], standalone: Boolean): XMLElement = js.native
   def declaration(version: Encoding, encoding: String): XMLElement = js.native
   def declaration(version: Encoding, encoding: String, standalone: Boolean): XMLElement = js.native
+  def declaration(version: Encoding, encoding: Unit, standalone: Boolean): XMLElement = js.native
   
   def doc(): XMLDocument = js.native
   
@@ -137,9 +136,9 @@ abstract class XMLNode () extends StObject {
     * @returns the DOCTYPE node
     */
   def doctype(): XMLDocType = js.native
-  def doctype(pubID: js.UndefOr[scala.Nothing], sysID: String): XMLDocType = js.native
   def doctype(pubID: String): XMLDocType = js.native
   def doctype(pubID: String, sysID: String): XMLDocType = js.native
+  def doctype(pubID: Unit, sysID: String): XMLDocType = js.native
   def doctype(pubID: PubID): XMLDocType = js.native
   def doctype(pubID: PubID, sysID: String): XMLDocType = js.native
   
@@ -151,21 +150,21 @@ abstract class XMLNode () extends StObject {
   def document(): XMLDocument = js.native
   
   def dtd(): XMLDocType = js.native
-  def dtd(pubID: js.UndefOr[scala.Nothing], sysID: String): XMLDocType = js.native
   def dtd(pubID: String): XMLDocType = js.native
   def dtd(pubID: String, sysID: String): XMLDocType = js.native
+  def dtd(pubID: Unit, sysID: String): XMLDocType = js.native
   def dtd(pubID: PubID): XMLDocType = js.native
   def dtd(pubID: PubID, sysID: String): XMLDocType = js.native
   
   def e(name: js.Any): XMLElement = js.native
-  def e(name: js.Any, attributes: js.UndefOr[scala.Nothing], text: js.Any): XMLElement = js.native
   def e(name: js.Any, attributes: js.Object): XMLElement = js.native
   def e(name: js.Any, attributes: js.Object, text: js.Any): XMLElement = js.native
+  def e(name: js.Any, attributes: Unit, text: js.Any): XMLElement = js.native
   
   def ele(name: js.Any): XMLElement = js.native
-  def ele(name: js.Any, attributes: js.UndefOr[scala.Nothing], text: js.Any): XMLElement = js.native
   def ele(name: js.Any, attributes: js.Object): XMLElement = js.native
   def ele(name: js.Any, attributes: js.Object, text: js.Any): XMLElement = js.native
+  def ele(name: js.Any, attributes: Unit, text: js.Any): XMLElement = js.native
   
   /**
     * Creates a new child node and appends it to the list of child nodes.
@@ -179,9 +178,9 @@ abstract class XMLNode () extends StObject {
     * @returns the last top level node created
     */
   def element(name: js.Any): XMLElement = js.native
-  def element(name: js.Any, attributes: js.UndefOr[scala.Nothing], text: js.Any): XMLElement = js.native
   def element(name: js.Any, attributes: js.Object): XMLElement = js.native
   def element(name: js.Any, attributes: js.Object, text: js.Any): XMLElement = js.native
+  def element(name: js.Any, attributes: Unit, text: js.Any): XMLElement = js.native
   
   /**
     * Converts the XML document to string.
@@ -192,7 +191,7 @@ abstract class XMLNode () extends StObject {
   def end(options: XMLToStringOptions): String = js.native
   def end(options: XMLWriter): String = js.native
   
-  def i(array: js.Array[_]): XMLElement = js.native
+  def i(array: js.Array[js.Any]): XMLElement = js.native
   def i(obj: js.Object): XMLElement = js.native
   def i(target: String, value: js.Any): XMLElement = js.native
   
@@ -206,7 +205,7 @@ abstract class XMLNode () extends StObject {
     */
   def importDocument(doc: XMLNode): XMLElement = js.native
   
-  def ins(array: js.Array[_]): XMLElement = js.native
+  def ins(array: js.Array[js.Any]): XMLElement = js.native
   def ins(obj: js.Object): XMLElement = js.native
   def ins(target: String, value: js.Any): XMLElement = js.native
   
@@ -220,9 +219,9 @@ abstract class XMLNode () extends StObject {
     * @returns the new node
     */
   def insertAfter(name: js.Any): XMLElement = js.native
-  def insertAfter(name: js.Any, attributes: js.UndefOr[scala.Nothing], text: js.Any): XMLElement = js.native
   def insertAfter(name: js.Any, attributes: js.Object): XMLElement = js.native
   def insertAfter(name: js.Any, attributes: js.Object, text: js.Any): XMLElement = js.native
+  def insertAfter(name: js.Any, attributes: Unit, text: js.Any): XMLElement = js.native
   
   /**
     * Creates a new sibling node and inserts it before this node.
@@ -234,11 +233,11 @@ abstract class XMLNode () extends StObject {
     * @returns the new node
     */
   def insertBefore(name: js.Any): XMLElement = js.native
-  def insertBefore(name: js.Any, attributes: js.UndefOr[scala.Nothing], text: js.Any): XMLElement = js.native
   def insertBefore(name: js.Any, attributes: js.Object): XMLElement = js.native
   def insertBefore(name: js.Any, attributes: js.Object, text: js.Any): XMLElement = js.native
+  def insertBefore(name: js.Any, attributes: Unit, text: js.Any): XMLElement = js.native
   
-  def instruction(array: js.Array[_]): XMLElement = js.native
+  def instruction(array: js.Array[js.Any]): XMLElement = js.native
   def instruction(obj: js.Object): XMLElement = js.native
   /**
     * Creates a new processing instruction node and appends it to the list
@@ -274,9 +273,9 @@ abstract class XMLNode () extends StObject {
   def instructionBefore(target: String, value: js.Any): XMLElement = js.native
   
   def n(name: String): XMLElement = js.native
-  def n(name: String, attributes: js.UndefOr[scala.Nothing], text: js.Any): XMLElement = js.native
   def n(name: String, attributes: js.Object): XMLElement = js.native
   def n(name: String, attributes: js.Object, text: js.Any): XMLElement = js.native
+  def n(name: String, attributes: Unit, text: js.Any): XMLElement = js.native
   
   /**
     * Returns the next sibling node.
@@ -284,9 +283,9 @@ abstract class XMLNode () extends StObject {
   def next(): XMLNode = js.native
   
   def nod(name: String): XMLElement = js.native
-  def nod(name: String, attributes: js.UndefOr[scala.Nothing], text: js.Any): XMLElement = js.native
   def nod(name: String, attributes: js.Object): XMLElement = js.native
   def nod(name: String, attributes: js.Object, text: js.Any): XMLElement = js.native
+  def nod(name: String, attributes: Unit, text: js.Any): XMLElement = js.native
   
   /**
     * Creates a new element node and appends it to the list of child nodes.
@@ -300,9 +299,9 @@ abstract class XMLNode () extends StObject {
     * @returns the node created
     */
   def node(name: String): XMLElement = js.native
-  def node(name: String, attributes: js.UndefOr[scala.Nothing], text: js.Any): XMLElement = js.native
   def node(name: String, attributes: js.Object): XMLElement = js.native
   def node(name: String, attributes: js.Object, text: js.Any): XMLElement = js.native
+  def node(name: String, attributes: Unit, text: js.Any): XMLElement = js.native
   
   /** 
     * Parent element node 

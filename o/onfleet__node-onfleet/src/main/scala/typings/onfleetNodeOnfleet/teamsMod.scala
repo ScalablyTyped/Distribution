@@ -3,14 +3,15 @@ package typings.onfleetNodeOnfleet
 import typings.onfleetNodeOnfleet.anon.Tasks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object teamsMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Teams", JSImport.Namespace)
   @js.native
-  class ^ () extends Team
+  class ^ ()
+    extends StObject
+       with Team
   
   /**
     * @prop managers - An array of managing administrator IDs.
@@ -18,16 +19,15 @@ object teamsMod {
     * @prop workers - An array of worker IDs.
     * @prop hub - Optional. The ID of the team's hub.
     */
-  @js.native
   trait CreateTeamProps extends StObject {
     
-    var hub: js.UndefOr[String] = js.native
+    var hub: js.UndefOr[String] = js.undefined
     
-    var managers: js.Array[String] = js.native
+    var managers: js.Array[String]
     
-    var name: String = js.native
+    var name: String
     
-    var workers: js.Array[String] = js.native
+    var workers: js.Array[String]
   }
   object CreateTeamProps {
     
@@ -63,22 +63,21 @@ object teamsMod {
     }
   }
   
-  @js.native
   trait OnfleetTeam extends StObject {
     
-    var hub: String = js.native
+    var hub: String
     
-    var id: String = js.native
+    var id: String
     
-    var managers: js.Array[String] = js.native
+    var managers: js.Array[String]
     
-    var name: String = js.native
+    var name: String
     
-    var timeCreated: Double = js.native
+    var timeCreated: Double
     
-    var timeLastModified: Double = js.native
+    var timeLastModified: Double
     
-    var workers: js.Array[String] = js.native
+    var workers: js.Array[String]
   }
   object OnfleetTeam {
     
@@ -143,16 +142,15 @@ object teamsMod {
     def update(id: String, obj: UpdateTeamProps): js.Promise[OnfleetTeam] = js.native
   }
   
-  @js.native
   trait UpdateTeamProps extends StObject {
     
-    var hub: js.UndefOr[String] = js.native
+    var hub: js.UndefOr[String] = js.undefined
     
-    var managers: js.UndefOr[js.Array[String]] = js.native
+    var managers: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var workers: js.UndefOr[js.Array[String]] = js.native
+    var workers: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UpdateTeamProps {
     

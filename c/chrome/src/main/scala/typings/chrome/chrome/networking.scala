@@ -3,7 +3,6 @@ package typings.chrome.chrome
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networking {
@@ -21,26 +20,25 @@ object networking {
     
     type CaptivePorttalDetectedEvent = Event[js.Function1[/* networkInfo */ NetworkInfo, Unit]]
     
-    @js.native
     trait NetworkInfo extends StObject {
       
       /** Optional. The basic service set identification (BSSID) uniquely identifying the basic service set. BSSID is represented as a human readable, hex-encoded string with bytes separated by colons, e.g. 45:67:89:ab:cd:ef. */
-      var BSSID: js.UndefOr[String] = js.native
+      var BSSID: js.UndefOr[String] = js.undefined
       
       /** Optional. A unique identifier of the network. */
-      var GUID: js.UndefOr[String] = js.native
+      var GUID: js.UndefOr[String] = js.undefined
       
       /** Optional. A hex-encoded byte sequence. */
-      var HexSSID: js.UndefOr[String] = js.native
+      var HexSSID: js.UndefOr[String] = js.undefined
       
       /** Optional. The decoded SSID of the network (default encoding is UTF-8). To filter for non-UTF-8 SSIDs, use HexSSID instead. */
-      var SSID: js.UndefOr[String] = js.native
+      var SSID: js.UndefOr[String] = js.undefined
       
       /** Optional. Identifier indicating the security type of the network. Valid values are None, WEP-PSK, WPA-PSK and WPA-EAP. */
-      var Security: js.UndefOr[String] = js.native
+      var Security: js.UndefOr[String] = js.undefined
       
       /** Currently only WiFi supported. */
-      var Type: String = js.native
+      var Type: String
     }
     object NetworkInfo {
       

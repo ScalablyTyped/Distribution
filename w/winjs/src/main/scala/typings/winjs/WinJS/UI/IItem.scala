@@ -2,40 +2,38 @@ package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an item in a list.
   **/
-@js.native
 trait IItem[T] extends StObject {
   
   //#region Properties
   /**
     * Gets or sets the item's data.
     **/
-  var data: T = js.native
+  var data: T
   
   /**
     * Gets the group key for the item. This property is only available for items that belong to a grouped data source.
     **/
-  var groupKey: String = js.native
+  var groupKey: String
   
   /**
     * Gets the temporary ID of the item.
     **/
-  var handle: String = js.native
+  var handle: String
   
   /**
     * Gets the item's index in the IListDataSource.
     **/
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Gets or sets the key the identifies the item.
     **/
-  var key: String = js.native
+  var key: String
 }
 object IItem {
   
@@ -46,7 +44,7 @@ object IItem {
   }
   
   @scala.inline
-  implicit class IItemMutableBuilder[Self <: IItem[_], T] (val x: Self with IItem[T]) extends AnyVal {
+  implicit class IItemMutableBuilder[Self <: IItem[?], T] (val x: Self & IItem[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

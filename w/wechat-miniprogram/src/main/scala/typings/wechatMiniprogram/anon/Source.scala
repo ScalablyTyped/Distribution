@@ -7,10 +7,8 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.friction
 import typings.wechatMiniprogram.wechatMiniprogramStrings.touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
   /**
@@ -22,11 +20,11 @@ trait Source extends StObject {
     * - `friction` 惯性
     * - `空字符串` setData
     */
-  var source: touch | `touch-out-of-bounds` | `out-of-bounds` | friction | _empty = js.native
+  var source: touch | `touch-out-of-bounds` | `out-of-bounds` | friction | _empty
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object Source {
   

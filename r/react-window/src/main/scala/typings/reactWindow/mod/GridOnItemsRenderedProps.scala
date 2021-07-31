@@ -2,27 +2,25 @@ package typings.reactWindow.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridOnItemsRenderedProps extends StObject {
   
-  var overscanColumnStartIndex: Double = js.native
+  var overscanColumnStartIndex: Double
   
-  var overscanColumnStopIndex: Double = js.native
+  var overscanColumnStopIndex: Double
   
-  var overscanRowStartIndex: Double = js.native
+  var overscanRowStartIndex: Double
   
-  var overscanRowStopIndex: Double = js.native
+  var overscanRowStopIndex: Double
   
-  var visibleColumnStartIndex: Double = js.native
+  var visibleColumnStartIndex: Double
   
-  var visibleColumnStopIndex: Double = js.native
+  var visibleColumnStopIndex: Double
   
-  var visibleRowStartIndex: Double = js.native
+  var visibleRowStartIndex: Double
   
-  var visibleRowStopIndex: Double = js.native
+  var visibleRowStopIndex: Double
 }
 object GridOnItemsRenderedProps {
   

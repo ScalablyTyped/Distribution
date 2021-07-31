@@ -9,16 +9,16 @@ import typings.ionic.definitionsMod.ISession
 import typings.ionic.definitionsMod.IShell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularAilmentsMod {
   
-  @js.native
-  trait AngularAilmentDeps extends AilmentDeps {
+  trait AngularAilmentDeps
+    extends StObject
+       with AilmentDeps {
     
     @JSName("project")
-    val project_AngularAilmentDeps: AngularProject = js.native
+    val project_AngularAilmentDeps: AngularProject
   }
   object AngularAilmentDeps {
     

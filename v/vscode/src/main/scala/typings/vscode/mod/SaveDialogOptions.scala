@@ -3,16 +3,14 @@ package typings.vscode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveDialogOptions extends StObject {
   
   /**
     * The resource the dialog shows when opened.
     */
-  var defaultUri: js.UndefOr[Uri] = js.native
+  var defaultUri: js.UndefOr[Uri] = js.undefined
   
   /**
     * A set of file filters that are used by the dialog. Each entry is a human-readable label,
@@ -24,12 +22,12 @@ trait SaveDialogOptions extends StObject {
     * }
     * ```
     */
-  var filters: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+  var filters: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   
   /**
     * A human-readable string for the save button.
     */
-  var saveLabel: js.UndefOr[String] = js.native
+  var saveLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Dialog title.
@@ -37,7 +35,7 @@ trait SaveDialogOptions extends StObject {
     * This parameter might be ignored, as not all operating systems display a title on save dialogs
     * (for example, macOS).
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SaveDialogOptions {
   

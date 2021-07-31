@@ -2,21 +2,21 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlLineStyle extends KmlColorStyle {
+trait KmlLineStyle
+  extends StObject
+     with KmlColorStyle {
   
   /**
     * Width of the line, in pixels.
     */
-  def getWidth(): Double = js.native
+  def getWidth(): Double
   
   /**
     * Width of the line, in pixels.
     */
-  def setWidth(width: Double): Unit = js.native
+  def setWidth(width: Double): Unit
 }
 object KmlLineStyle {
   

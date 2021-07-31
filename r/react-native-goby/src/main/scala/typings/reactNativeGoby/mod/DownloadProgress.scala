@@ -2,21 +2,19 @@ package typings.reactNativeGoby.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadProgress extends StObject {
   
   /**
     * The number of bytes downloaded thus far.
     */
-  var receivedBytes: Double = js.native
+  var receivedBytes: Double
   
   /**
     * The total number of bytes expected to be received for this update.
     */
-  var totalBytes: Double = js.native
+  var totalBytes: Double
 }
 object DownloadProgress {
   

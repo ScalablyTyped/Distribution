@@ -2,14 +2,12 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenCameraDialogOptions extends StObject {
   
   /** Defaults to false */
-  var videoMode: js.UndefOr[Boolean] = js.native
+  var videoMode: js.UndefOr[Boolean] = js.undefined
 }
 object OpenCameraDialogOptions {
   

@@ -5,23 +5,21 @@ import typings.cesium.mod.Cartesian3
 import typings.cesium.mod.VertexFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolylinePositions extends StObject {
   
-  var cornerType: js.UndefOr[typings.cesium.mod.CornerType] = js.native
+  var cornerType: js.UndefOr[typings.cesium.mod.CornerType] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var granularity: js.UndefOr[Double] = js.native
+  var granularity: js.UndefOr[Double] = js.undefined
   
-  var polylinePositions: js.Array[Cartesian3] = js.native
+  var polylinePositions: js.Array[Cartesian3]
   
-  var shapePositions: js.Array[Cartesian2] = js.native
+  var shapePositions: js.Array[Cartesian2]
   
-  var vertexFormat: js.UndefOr[VertexFormat] = js.native
+  var vertexFormat: js.UndefOr[VertexFormat] = js.undefined
 }
 object PolylinePositions {
   

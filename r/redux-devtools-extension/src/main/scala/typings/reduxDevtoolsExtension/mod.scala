@@ -9,46 +9,45 @@ import typings.reduxDevtoolsExtension.anon.Dispatch
 import typings.reduxDevtoolsExtension.anon.FnCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("redux-devtools-extension", "composeWithDevTools")
+  @JSImport("redux-devtools-extension", JSImport.Namespace)
   @js.native
-  def composeWithDevTools(options: EnhancerOptions): FnCall = js.native
-  @JSImport("redux-devtools-extension", "composeWithDevTools")
-  @js.native
-  def composeWithDevTools[StoreExt, StateExt](funcs: (StoreEnhancer[StoreExt, js.Object])*): StoreEnhancer[StoreExt, js.Object] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("redux-devtools-extension", "devToolsEnhancer")
-  @js.native
-  def devToolsEnhancer(options: EnhancerOptions): StoreEnhancer[_, js.Object] = js.native
+  @scala.inline
+  def composeWithDevTools(options: EnhancerOptions): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("composeWithDevTools")(options.asInstanceOf[js.Any]).asInstanceOf[FnCall]
+  @scala.inline
+  def composeWithDevTools[StoreExt, StateExt](funcs: (StoreEnhancer[StoreExt, js.Object])*): StoreEnhancer[StoreExt, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeWithDevTools")(funcs.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[StoreExt, js.Object]]
   
-  @js.native
+  @scala.inline
+  def devToolsEnhancer(options: EnhancerOptions): StoreEnhancer[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("devToolsEnhancer")(options.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[js.Any, js.Object]]
+  
   trait EnhancerOptions extends StObject {
     
     /**
       * action creators functions to be available in the Dispatcher.
       */
-    var actionCreators: js.UndefOr[js.Array[ActionCreator[_]] | StringDictionary[ActionCreator[_]]] = js.native
+    var actionCreators: js.UndefOr[js.Array[ActionCreator[js.Any]] | StringDictionary[ActionCreator[js.Any]]] = js.undefined
     
     /**
       * function which takes `action` object and id number as arguments, and should return `action` object back.
       */
-    var actionSanitizer: js.UndefOr[js.Function2[/* action */ Action[_], /* id */ Double, Action[_]]] = js.native
+    var actionSanitizer: js.UndefOr[js.Function2[/* action */ Action[js.Any], /* id */ Double, Action[js.Any]]] = js.undefined
     
     /**
       * *string or array of strings as regex* - actions types to be hidden / shown in the monitors (while passed to the reducers).
       * If `actionsWhitelist` specified, `actionsBlacklist` is ignored.
       */
-    var actionsBlacklist: js.UndefOr[String | js.Array[String]] = js.native
+    var actionsBlacklist: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * *string or array of strings as regex* - actions types to be hidden / shown in the monitors (while passed to the reducers).
       * If `actionsWhitelist` specified, `actionsBlacklist` is ignored.
       */
-    var actionsWhitelist: js.UndefOr[String | js.Array[String]] = js.native
+    var actionsWhitelist: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * auto pauses when the extension’s window is not opened, and so has zero impact on your app when not in use.
@@ -56,7 +55,7 @@ object mod {
       *
       * @default false
       */
-    var autoPause: js.UndefOr[Boolean] = js.native
+    var autoPause: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you want to restrict the extension, specify the features you allow.
@@ -64,7 +63,7 @@ object mod {
       * Note that except `true`/`false`, `import` and `export` can be set as `custom` (which is by default for Redux enhancer), meaning that the importing/exporting occurs on the client side.
       * Otherwise, you'll get/set the data right from the monitor part.
       */
-    var features: js.UndefOr[Dispatch] = js.native
+    var features: js.UndefOr[Dispatch] = js.undefined
     
     /**
       * if more than one action is dispatched in the indicated interval, all new actions will be collected and sent at once.
@@ -73,20 +72,20 @@ object mod {
       *
       * @default 500 ms.
       */
-    var latency: js.UndefOr[Double] = js.native
+    var latency: js.UndefOr[Double] = js.undefined
     
     /**
       * (> 1) - maximum allowed actions to be stored in the history tree. The oldest actions are removed once maxAge is reached. It's critical for performance.
       *
       * @default 50
       */
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /**
       * the instance name to be showed on the monitor page. Default value is `document.title`.
       * If not specified and there's no document title, it will consist of `tabId` and `instanceId`.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * if specified, whenever clicking on `Pause recording` button and there are actions in the history log, will add this action type.
@@ -94,13 +93,13 @@ object mod {
       *
       * @default "@@PAUSED""
       */
-    var pauseActionType: js.UndefOr[String] = js.native
+    var pauseActionType: js.UndefOr[String] = js.undefined
     
     /**
       * called for every action before sending, takes `state` and `action` object, and returns `true` in case it allows sending the current data to the monitor.
       * Use it as a more advanced version of `actionsBlacklist`/`actionsWhitelist` parameters.
       */
-    var predicate: js.UndefOr[js.Function2[/* state */ js.Any, /* action */ Action[_], Boolean]] = js.native
+    var predicate: js.UndefOr[js.Function2[/* state */ js.Any, /* action */ Action[js.Any], Boolean]] = js.undefined
     
     /**
       * - `undefined` - will use regular `JSON.stringify` to send data (it's the fast mode).
@@ -111,21 +110,21 @@ object mod {
       *   For `function` key you can also specify a custom function which handles serialization.
       *   See [`jsan`](https://github.com/kolodny/jsan) for more details.
       */
-    var serialize: js.UndefOr[Boolean | Date] = js.native
+    var serialize: js.UndefOr[Boolean | Date] = js.undefined
     
     /**
       * if specified as `true`, whenever there's an exception in reducers, the monitors will show the error message, and next actions will not be dispatched.
       *
       * @default false
       */
-    var shouldCatchErrors: js.UndefOr[Boolean] = js.native
+    var shouldCatchErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * if set to `false`, will not recompute the states on hot reloading (or on replacing the reducers). Available only for Redux enhancer.
       *
       * @default true
       */
-    var shouldHotReload: js.UndefOr[Boolean] = js.native
+    var shouldHotReload: js.UndefOr[Boolean] = js.undefined
     
     /**
       * if specified as `false`, it will not record the changes till clicking on `Start recording` button.
@@ -133,7 +132,7 @@ object mod {
       *
       * @default true
       */
-    var shouldRecordChanges: js.UndefOr[Boolean] = js.native
+    var shouldRecordChanges: js.UndefOr[Boolean] = js.undefined
     
     /**
       * if specified as `true`, it will not allow any non-monitor actions to be dispatched till clicking on `Unlock changes` button.
@@ -141,23 +140,23 @@ object mod {
       *
       * @default false
       */
-    var shouldStartLocked: js.UndefOr[Boolean] = js.native
+    var shouldStartLocked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * function which takes `state` object and index as arguments, and should return `state` object back.
       */
-    var stateSanitizer: js.UndefOr[js.Function2[/* state */ js.Any, /* index */ Double, _]] = js.native
+    var stateSanitizer: js.UndefOr[js.Function2[/* state */ js.Any, /* index */ Double, js.Any]] = js.undefined
     
     /**
       * Set to true or a stacktrace-returning function to record call stack traces for dispatched actions.
       * Defaults to false.
       */
-    var trace: js.UndefOr[Boolean | (js.Function1[/* action */ Action[_], String])] = js.native
+    var trace: js.UndefOr[Boolean | (js.Function1[/* action */ Action[js.Any], String])] = js.undefined
     
     /**
       * The maximum number of stack trace entries to record per action. Defaults to 10.
       */
-    var traceLimit: js.UndefOr[Double] = js.native
+    var traceLimit: js.UndefOr[Double] = js.undefined
   }
   object EnhancerOptions {
     
@@ -171,7 +170,7 @@ object mod {
     implicit class EnhancerOptionsMutableBuilder[Self <: EnhancerOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setActionCreators(value: js.Array[ActionCreator[_]] | StringDictionary[ActionCreator[_]]): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
+      def setActionCreators(value: js.Array[ActionCreator[js.Any]] | StringDictionary[ActionCreator[js.Any]]): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setActionCreatorsUndefined: Self = StObject.set(x, "actionCreators", js.undefined)
@@ -180,7 +179,7 @@ object mod {
       def setActionCreatorsVarargs(value: ActionCreator[js.Any]*): Self = StObject.set(x, "actionCreators", js.Array(value :_*))
       
       @scala.inline
-      def setActionSanitizer(value: (/* action */ Action[_], /* id */ Double) => Action[_]): Self = StObject.set(x, "actionSanitizer", js.Any.fromFunction2(value))
+      def setActionSanitizer(value: (/* action */ Action[js.Any], /* id */ Double) => Action[js.Any]): Self = StObject.set(x, "actionSanitizer", js.Any.fromFunction2(value))
       
       @scala.inline
       def setActionSanitizerUndefined: Self = StObject.set(x, "actionSanitizer", js.undefined)
@@ -240,7 +239,7 @@ object mod {
       def setPauseActionTypeUndefined: Self = StObject.set(x, "pauseActionType", js.undefined)
       
       @scala.inline
-      def setPredicate(value: (/* state */ js.Any, /* action */ Action[_]) => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction2(value))
+      def setPredicate(value: (/* state */ js.Any, /* action */ Action[js.Any]) => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
@@ -276,16 +275,16 @@ object mod {
       def setShouldStartLockedUndefined: Self = StObject.set(x, "shouldStartLocked", js.undefined)
       
       @scala.inline
-      def setStateSanitizer(value: (/* state */ js.Any, /* index */ Double) => _): Self = StObject.set(x, "stateSanitizer", js.Any.fromFunction2(value))
+      def setStateSanitizer(value: (/* state */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "stateSanitizer", js.Any.fromFunction2(value))
       
       @scala.inline
       def setStateSanitizerUndefined: Self = StObject.set(x, "stateSanitizer", js.undefined)
       
       @scala.inline
-      def setTrace(value: Boolean | (js.Function1[/* action */ Action[_], String])): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+      def setTrace(value: Boolean | (js.Function1[/* action */ Action[js.Any], String])): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTraceFunction1(value: /* action */ Action[_] => String): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+      def setTraceFunction1(value: /* action */ Action[js.Any] => String): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTraceLimit(value: Double): Self = StObject.set(x, "traceLimit", value.asInstanceOf[js.Any])

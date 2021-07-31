@@ -2,15 +2,13 @@ package typings.x509Js
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CommonName extends StObject {
     
-    var commonName: String = js.native
+    var commonName: String
   }
   object CommonName {
     

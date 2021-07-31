@@ -7,22 +7,23 @@ import typings.contentfulManagement.commonTypesMod.DefaultElements
 import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object teamMod {
   
-  @JSImport("contentful-management/dist/typings/entities/team", "wrapTeam")
+  @JSImport("contentful-management/dist/typings/entities/team", JSImport.Namespace)
   @js.native
-  def wrapTeam(http: AxiosInstance, data: TeamProps): Team = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/team", "wrapTeamCollection")
-  @js.native
-  def wrapTeamCollection(http: AxiosInstance, data: CollectionProp[TeamProps]): Collection[Team, TeamProps] = js.native
+  @scala.inline
+  def wrapTeam(http: AxiosInstance, data: TeamProps): Team = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTeam")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Team]
   
-  @js.native
+  @scala.inline
+  def wrapTeamCollection(http: AxiosInstance, data: CollectionProp[TeamProps]): Collection[Team, TeamProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTeamCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Team, TeamProps]]
+  
   trait Team
-    extends TeamProps
+    extends StObject
+       with TeamProps
        with DefaultElements[TeamProps] {
     
     /**
@@ -43,7 +44,7 @@ object teamMod {
       * .catch(console.error)
       * ```
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * Sends an update to the server with any changes made to the object's properties
@@ -64,7 +65,7 @@ object teamMod {
       * .catch(console.error)
       * ```
       */
-    def update(): js.Promise[Team] = js.native
+    def update(): js.Promise[Team]
   }
   object Team {
     
@@ -92,23 +93,22 @@ object teamMod {
     }
   }
   
-  @js.native
   trait TeamProps extends StObject {
     
     /**
       * Description of the team
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * Name of the team
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * System metadata
       */
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object TeamProps {
     

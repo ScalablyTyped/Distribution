@@ -5,21 +5,21 @@ import typings.jestTypes.circusMod.TestEntry
 import typings.jestTypes.jestTypesStrings.test_fn_start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NameTest extends AsyncEvent {
+trait NameTest
+  extends StObject
+     with AsyncEvent {
   
-  var name: test_fn_start = js.native
+  var name: test_fn_start
   
-  var test: TestEntry = js.native
+  var test: TestEntry
 }
 object NameTest {
   
   @scala.inline
-  def apply(name: test_fn_start, test: TestEntry): NameTest = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+  def apply(test: TestEntry): NameTest = {
+    val __obj = js.Dynamic.literal(name = "test_fn_start", test = test.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameTest]
   }
   

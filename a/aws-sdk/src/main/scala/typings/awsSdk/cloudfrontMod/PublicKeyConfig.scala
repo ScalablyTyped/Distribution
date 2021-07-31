@@ -2,31 +2,29 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicKeyConfig extends StObject {
   
   /**
     * A string included in the request to help make sure that the request can’t be replayed.
     */
-  var CallerReference: String = js.native
+  var CallerReference: String
   
   /**
     * A comment to describe the public key.
     */
-  var Comment: js.UndefOr[String] = js.native
+  var Comment: js.UndefOr[String] = js.undefined
   
   /**
     * The public key that you can use with signed URLs and signed cookies, or with field-level encryption.
     */
-  var EncodedKey: String = js.native
+  var EncodedKey: String
   
   /**
     * A name to help identify the public key.
     */
-  var Name: String = js.native
+  var Name: String
 }
 object PublicKeyConfig {
   

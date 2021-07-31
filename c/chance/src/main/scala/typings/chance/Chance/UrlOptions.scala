@@ -2,21 +2,19 @@ package typings.chance.Chance
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlOptions extends StObject {
   
-  var domain: String = js.native
+  var domain: String
   
-  var domain_prefix: String = js.native
+  var domain_prefix: String
   
-  var extensions: js.Array[String] = js.native
+  var extensions: js.Array[String]
   
-  var path: String = js.native
+  var path: String
   
-  var protocol: String = js.native
+  var protocol: String
 }
 object UrlOptions {
   

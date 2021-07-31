@@ -2,36 +2,34 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEntitiesForPolicyResponse extends StObject {
   
   /**
     * A flag that indicates whether there are more items to return. If your results were truncated, you can make a subsequent pagination request using the Marker request parameter to retrieve more items. Note that IAM might return fewer than the MaxItems number of results even when there are more results available. We recommend that you check IsTruncated after every call to ensure that you receive all your results.
     */
-  var IsTruncated: js.UndefOr[booleanType] = js.native
+  var IsTruncated: js.UndefOr[booleanType] = js.undefined
   
   /**
     * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
     */
-  var Marker: js.UndefOr[responseMarkerType] = js.native
+  var Marker: js.UndefOr[responseMarkerType] = js.undefined
   
   /**
     * A list of IAM groups that the policy is attached to.
     */
-  var PolicyGroups: js.UndefOr[PolicyGroupListType] = js.native
+  var PolicyGroups: js.UndefOr[PolicyGroupListType] = js.undefined
   
   /**
     * A list of IAM roles that the policy is attached to.
     */
-  var PolicyRoles: js.UndefOr[PolicyRoleListType] = js.native
+  var PolicyRoles: js.UndefOr[PolicyRoleListType] = js.undefined
   
   /**
     * A list of IAM users that the policy is attached to.
     */
-  var PolicyUsers: js.UndefOr[PolicyUserListType] = js.native
+  var PolicyUsers: js.UndefOr[PolicyUserListType] = js.undefined
 }
 object ListEntitiesForPolicyResponse {
   

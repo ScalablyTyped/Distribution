@@ -10,7 +10,6 @@ import typings.reactSelect.typesMod.OptionsType
 import typings.reactSelect.typesMod.ValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcAsyncCreatableMod {
@@ -64,7 +63,7 @@ object srcAsyncCreatableMod {
     
     var optionsCache: StringDictionary[OptionsType[OptionType]] = js.native
     
-    var select: Ref[_] = js.native
+    var select: Ref[js.Any] = js.native
   }
   /* static members */
   object AsyncCreatable {
@@ -80,7 +79,24 @@ object srcAsyncCreatableMod {
     def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  type Props[OptionType /* <: OptionTypeBase */] = typings.reactSelect.srcAsyncMod.Props[OptionType] with typings.reactSelect.srcCreatableMod.Props[OptionType]
+  type Props[OptionType /* <: OptionTypeBase */] = typings.reactSelect.srcAsyncMod.Props[OptionType] & typings.reactSelect.srcCreatableMod.Props[OptionType]
   
-  type State[OptionType /* <: OptionTypeBase */] = typings.reactSelect.srcAsyncMod.State[OptionType] with typings.reactSelect.srcCreatableMod.State[OptionType]
+  trait State[OptionType /* <: OptionTypeBase */]
+    extends StObject
+       with typings.reactSelect.srcAsyncMod.State[OptionType]
+       with typings.reactSelect.srcCreatableMod.State[OptionType]
+  object State {
+    
+    @scala.inline
+    def apply[OptionType /* <: OptionTypeBase */](
+      inputValue: String,
+      isLoading: Boolean,
+      loadedOptions: OptionsType[OptionType],
+      options: OptionsType[OptionType],
+      passEmptyOptions: Boolean
+    ): State[OptionType] = {
+      val __obj = js.Dynamic.literal(inputValue = inputValue.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], loadedOptions = loadedOptions.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], passEmptyOptions = passEmptyOptions.asInstanceOf[js.Any])
+      __obj.asInstanceOf[State[OptionType]]
+    }
+  }
 }

@@ -3,16 +3,15 @@ package typings.saucelabs.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictkey
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var lower_boundary: js.UndefOr[Double] = js.native
+  var lower_boundary: js.UndefOr[Double] = js.undefined
   
-  var upper_boundary: js.UndefOr[Double] = js.native
+  var upper_boundary: js.UndefOr[Double] = js.undefined
 }
 object Dictkey {
   

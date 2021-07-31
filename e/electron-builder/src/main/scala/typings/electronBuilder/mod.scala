@@ -9,10 +9,13 @@ import typings.electronPublish.mod.PublishOptions
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("electron-builder", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("electron-builder", "AppInfo")
   @js.native
@@ -20,11 +23,6 @@ object mod {
     extends typings.appBuilderLib.mod.AppInfo {
     def this(info: typings.appBuilderLib.packagerMod.Packager) = this()
     def this(info: typings.appBuilderLib.packagerMod.Packager, buildVersion: String) = this()
-    def this(
-      info: typings.appBuilderLib.packagerMod.Packager,
-      buildVersion: js.UndefOr[scala.Nothing],
-      platformSpecificOptions: PlatformSpecificBuildOptions
-    ) = this()
     def this(
       info: typings.appBuilderLib.packagerMod.Packager,
       buildVersion: String,
@@ -35,6 +33,11 @@ object mod {
       buildVersion: Null,
       platformSpecificOptions: PlatformSpecificBuildOptions
     ) = this()
+    def this(
+      info: typings.appBuilderLib.packagerMod.Packager,
+      buildVersion: Unit,
+      platformSpecificOptions: PlatformSpecificBuildOptions
+    ) = this()
   }
   
   @JSImport("electron-builder", "Arch")
@@ -42,15 +45,15 @@ object mod {
   object Arch extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.builderUtil.archMod.Arch with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.builderUtil.archMod.Arch & Double] = js.native
     
-    /* 3 */ val arm64: typings.builderUtil.archMod.Arch.arm64 with Double = js.native
+    /* 3 */ val arm64: typings.builderUtil.archMod.Arch.arm64 & Double = js.native
     
-    /* 2 */ val armv7l: typings.builderUtil.archMod.Arch.armv7l with Double = js.native
+    /* 2 */ val armv7l: typings.builderUtil.archMod.Arch.armv7l & Double = js.native
     
-    /* 0 */ val ia32: typings.builderUtil.archMod.Arch.ia32 with Double = js.native
+    /* 0 */ val ia32: typings.builderUtil.archMod.Arch.ia32 & Double = js.native
     
-    /* 1 */ val x64: typings.builderUtil.archMod.Arch.x64 with Double = js.native
+    /* 1 */ val x64: typings.builderUtil.archMod.Arch.x64 & Double = js.native
   }
   
   @JSImport("electron-builder", "CancellationToken")
@@ -111,13 +114,11 @@ object mod {
     @scala.inline
     def WINDOWS_=(x: typings.appBuilderLib.coreMod.Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOWS")(x.asInstanceOf[js.Any])
     
-    @JSImport("electron-builder", "Platform.current")
-    @js.native
-    def current(): typings.appBuilderLib.coreMod.Platform = js.native
+    @scala.inline
+    def current(): typings.appBuilderLib.coreMod.Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[typings.appBuilderLib.coreMod.Platform]
     
-    @JSImport("electron-builder", "Platform.fromString")
-    @js.native
-    def fromString(name: String): typings.appBuilderLib.coreMod.Platform = js.native
+    @scala.inline
+    def fromString(name: String): typings.appBuilderLib.coreMod.Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(name.asInstanceOf[js.Any]).asInstanceOf[typings.appBuilderLib.coreMod.Platform]
   }
   
   @JSImport("electron-builder", "PublishManager")
@@ -140,42 +141,28 @@ object mod {
     protected def this(name: String, isAsyncSupported: Boolean) = this()
   }
   
-  @JSImport("electron-builder", "archFromString")
-  @js.native
-  def archFromString(name: String): Arch = js.native
+  @scala.inline
+  def archFromString(name: String): Arch = ^.asInstanceOf[js.Dynamic].applyDynamic("archFromString")(name.asInstanceOf[js.Any]).asInstanceOf[Arch]
   
-  @JSImport("electron-builder", "build")
-  @js.native
-  def build(): js.Promise[js.Array[String]] = js.native
-  @JSImport("electron-builder", "build")
-  @js.native
-  def build(rawOptions: CliOptions): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def build(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")().asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def build(rawOptions: CliOptions): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(rawOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @JSImport("electron-builder", "buildForge")
-  @js.native
-  def buildForge(forgeOptions: ForgeOptions, options: PackagerOptions): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def buildForge(forgeOptions: ForgeOptions, options: PackagerOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildForge")(forgeOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @JSImport("electron-builder", "createTargets")
-  @js.native
-  def createTargets(platforms: js.Array[typings.appBuilderLib.mod.Platform]): Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]] = js.native
-  @JSImport("electron-builder", "createTargets")
-  @js.native
-  def createTargets(
-    platforms: js.Array[typings.appBuilderLib.mod.Platform],
-    `type`: js.UndefOr[scala.Nothing],
-    arch: String
-  ): Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]] = js.native
-  @JSImport("electron-builder", "createTargets")
-  @js.native
-  def createTargets(platforms: js.Array[typings.appBuilderLib.mod.Platform], `type`: String): Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]] = js.native
-  @JSImport("electron-builder", "createTargets")
-  @js.native
-  def createTargets(platforms: js.Array[typings.appBuilderLib.mod.Platform], `type`: String, arch: String): Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]] = js.native
-  @JSImport("electron-builder", "createTargets")
-  @js.native
-  def createTargets(platforms: js.Array[typings.appBuilderLib.mod.Platform], `type`: Null, arch: String): Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]] = js.native
+  @scala.inline
+  def createTargets(platforms: js.Array[typings.appBuilderLib.mod.Platform]): Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any]).asInstanceOf[Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]]]
+  @scala.inline
+  def createTargets(platforms: js.Array[typings.appBuilderLib.mod.Platform], `type`: String): Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]]]
+  @scala.inline
+  def createTargets(platforms: js.Array[typings.appBuilderLib.mod.Platform], `type`: String, arch: String): Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]]]
+  @scala.inline
+  def createTargets(platforms: js.Array[typings.appBuilderLib.mod.Platform], `type`: Null, arch: String): Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]]]
+  @scala.inline
+  def createTargets(platforms: js.Array[typings.appBuilderLib.mod.Platform], `type`: Unit, arch: String): Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]]]
   
-  @JSImport("electron-builder", "getArchSuffix")
-  @js.native
-  def getArchSuffix(arch: Arch): String = js.native
+  @scala.inline
+  def getArchSuffix(arch: Arch): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getArchSuffix")(arch.asInstanceOf[js.Any]).asInstanceOf[String]
 }

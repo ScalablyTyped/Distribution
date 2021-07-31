@@ -3,21 +3,19 @@ package typings.reactNativeMaterialKit.mod
 import typings.reactNativeMaterialKit.mod.MKPropTypes.font
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FloatingLabelProperties extends StObject {
   
-  var allowFontScaling: js.UndefOr[Boolean] = js.native
+  var allowFontScaling: js.UndefOr[Boolean] = js.undefined
   
-  var floatingLabelAniDuration: js.UndefOr[Double] = js.native
+  var floatingLabelAniDuration: js.UndefOr[Double] = js.undefined
   
-  var floatingLabelBottomMargin: js.UndefOr[Double] = js.native
+  var floatingLabelBottomMargin: js.UndefOr[Double] = js.undefined
   
-  var floatingLabelEnabled: js.UndefOr[Boolean] = js.native
+  var floatingLabelEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var floatingLabelFont: js.UndefOr[font] = js.native
+  var floatingLabelFont: js.UndefOr[font] = js.undefined
 }
 object FloatingLabelProperties {
   

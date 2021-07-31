@@ -2,16 +2,14 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateHsmResponse extends StObject {
   
   /**
     * Information about the HSM that was created.
     */
-  var Hsm: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Hsm] = js.native
+  var Hsm: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Hsm] = js.undefined
 }
 object CreateHsmResponse {
   

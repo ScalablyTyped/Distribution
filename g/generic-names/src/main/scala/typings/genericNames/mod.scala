@@ -3,26 +3,26 @@ package typings.genericNames
 import typings.genericNames.anon.PartialOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(pattern: String): Generator = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator]
+  @scala.inline
+  def apply(pattern: String, options: PartialOptions): Generator = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator]
+  
   @JSImport("generic-names", JSImport.Namespace)
   @js.native
-  def apply(pattern: String): Generator = js.native
-  @JSImport("generic-names", JSImport.Namespace)
-  @js.native
-  def apply(pattern: String, options: PartialOptions): Generator = js.native
+  val ^ : js.Any = js.native
   
   type Generator = js.Function2[/* localName */ String, /* filepath */ String, String]
   
-  @js.native
   trait Options extends StObject {
     
-    var context: String = js.native
+    var context: String
     
-    var hashPrefix: String = js.native
+    var hashPrefix: String
   }
   object Options {
     

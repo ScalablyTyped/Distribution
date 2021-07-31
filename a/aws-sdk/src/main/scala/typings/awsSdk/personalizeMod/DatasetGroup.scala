@@ -2,51 +2,49 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetGroup extends StObject {
   
   /**
     * The creation date and time (in Unix time) of the dataset group.
     */
-  var creationDateTime: js.UndefOr[Date] = js.native
+  var creationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group.
     */
-  var datasetGroupArn: js.UndefOr[Arn] = js.native
+  var datasetGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * If creating a dataset group fails, provides the reason why.
     */
-  var failureReason: js.UndefOr[FailureReason] = js.native
+  var failureReason: js.UndefOr[FailureReason] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the KMS key used to encrypt the datasets.
     */
-  var kmsKeyArn: js.UndefOr[KmsKeyArn] = js.native
+  var kmsKeyArn: js.UndefOr[KmsKeyArn] = js.undefined
   
   /**
     * The last update date and time (in Unix time) of the dataset group.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.native
+  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the dataset group.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The ARN of the IAM role that has permissions to create the dataset group.
     */
-  var roleArn: js.UndefOr[RoleArn] = js.native
+  var roleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The current status of the dataset group. A dataset group can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING  
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object DatasetGroup {
   

@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   * @see XSortable
   */
-@js.native
-trait SortDescriptor extends XPropertySet {
+trait SortDescriptor
+  extends StObject
+     with XPropertySet {
   
   /**
     * specifies the algorithm for the compare operator (collator).
@@ -26,13 +26,13 @@ trait SortDescriptor extends XPropertySet {
     * @see com.sun.star.text.TextSortDescriptor
     * @see com.sun.star.i18n.XCollator
     */
-  var CollatorAlgorithm: String = js.native
+  var CollatorAlgorithm: String
   
   /** specifies the locale for the compare operator (collator). */
-  var CollatorLocale: Locale = js.native
+  var CollatorLocale: Locale
   
   /** specifies if the case of letters is important when comparing entries. */
-  var IsCaseSensitive: Boolean = js.native
+  var IsCaseSensitive: Boolean
   
   /**
     * specifies the sorting order.
@@ -40,7 +40,7 @@ trait SortDescriptor extends XPropertySet {
     * The sorting order may be defined for separate keys in specific implementations. For those this property may not need to be set.
     * @see com.sun.star.text.TextSortDescriptor
     */
-  var SortAscending: Boolean = js.native
+  var SortAscending: Boolean
   
   /**
     * specifies if the columns are sorted.
@@ -49,7 +49,7 @@ trait SortDescriptor extends XPropertySet {
     *
     * **FALSE**: The rows are sorted.
     */
-  var SortColumns: Boolean = js.native
+  var SortColumns: Boolean
 }
 object SortDescriptor {
   

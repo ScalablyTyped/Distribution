@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions extends StObject {
   
   /**
     * Enables or disables the logging. Defaults to `false`.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The CloudWatch group name for logging. This value is required if `enabled` is true.
     */
-  var logGroupName: js.UndefOr[String] = js.native
+  var logGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The CloudWatch log stream name for logging. This value is required if `enabled` is true.
     */
-  var logStreamName: js.UndefOr[String] = js.native
+  var logStreamName: js.UndefOr[String] = js.undefined
 }
 object FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions {
   

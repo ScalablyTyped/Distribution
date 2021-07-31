@@ -2,13 +2,11 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Predicate extends StObject {
   
-  def evaluate(tagged_sentence: js.Array[js.Array[String]], position: Double): Boolean = js.native
+  def evaluate(tagged_sentence: js.Array[js.Array[String]], position: Double): Boolean
   
   var function: js.UndefOr[
     js.Function3[
@@ -17,13 +15,13 @@ trait Predicate extends StObject {
       /* parameter */ String, 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var parameter1: String = js.native
+  var parameter1: String
   
-  var parameter2: js.UndefOr[String] = js.native
+  var parameter2: js.UndefOr[String] = js.undefined
 }
 object Predicate {
   

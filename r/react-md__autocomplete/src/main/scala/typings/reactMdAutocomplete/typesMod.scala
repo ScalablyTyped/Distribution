@@ -107,7 +107,6 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -119,36 +118,35 @@ object typesMod {
   type AutoCompleteHandler = js.Function1[/* result */ AutoCompleteResult, Unit]
   
   /* Inlined parent std.Omit<@react-md/transition.@react-md/transition.OptionalFixedPositionOptions, 'width'> */
-  @js.native
   trait AutoCompleteListboxPositionOptions extends StObject {
     
-    var anchor: js.UndefOr[PartialPositionAnchor] = js.native
+    var anchor: js.UndefOr[PartialPositionAnchor] = js.undefined
     
     /**
       * Boolean if the select's listbox should not hide if the user resizes the
       * browser while it is visible.
       */
-    var closeOnResize: js.UndefOr[Boolean] = js.native
+    var closeOnResize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the select's listbox should not hide if the user scrolls the
       * page while it is visible.
       */
-    var closeOnScroll: js.UndefOr[Boolean] = js.native
+    var closeOnScroll: js.UndefOr[Boolean] = js.undefined
     
-    var disableSwapping: js.UndefOr[Boolean] = js.native
+    var disableSwapping: js.UndefOr[Boolean] = js.undefined
     
-    var disableVHBounds: js.UndefOr[Boolean] = js.native
+    var disableVHBounds: js.UndefOr[Boolean] = js.undefined
     
-    var initialX: js.UndefOr[Double] = js.native
+    var initialX: js.UndefOr[Double] = js.undefined
     
-    var initialY: js.UndefOr[Double] = js.native
+    var initialY: js.UndefOr[Double] = js.undefined
     
     /**
       * An optional style to also apply to the listbox element showing all the
       * matches.
       */
-    var listboxStyle: js.UndefOr[CSSProperties] = js.native
+    var listboxStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * The sizing behavior for the listbox. It will default to have the same width
@@ -159,19 +157,19 @@ object typesMod {
       * The sizing behavior will always ensure that the left and right bounds of
       * the listbox appear within the viewport.
       */
-    var listboxWidth: js.UndefOr[PositionWidth] = js.native
+    var listboxWidth: js.UndefOr[PositionWidth] = js.undefined
     
-    var preventOverlap: js.UndefOr[Boolean] = js.native
+    var preventOverlap: js.UndefOr[Boolean] = js.undefined
     
-    var transformOrigin: js.UndefOr[Boolean] = js.native
+    var transformOrigin: js.UndefOr[Boolean] = js.undefined
     
-    var vhMargin: js.UndefOr[Double] = js.native
+    var vhMargin: js.UndefOr[Double] = js.undefined
     
-    var vwMargin: js.UndefOr[Double] = js.native
+    var vwMargin: js.UndefOr[Double] = js.undefined
     
-    var xMargin: js.UndefOr[Double] = js.native
+    var xMargin: js.UndefOr[Double] = js.undefined
     
-    var yMargin: js.UndefOr[Double] = js.native
+    var yMargin: js.UndefOr[Double] = js.undefined
   }
   object AutoCompleteListboxPositionOptions {
     
@@ -279,14 +277,13 @@ object typesMod {
   /* Inlined parent std.Omit<@react-md/form.@react-md/form.TextFieldProps, 'type'> */
   /* Inlined parent @react-md/portal.@react-md/portal.RenderConditionalPortalProps */
   /* Inlined parent @react-md/autocomplete.@react-md/autocomplete/types/types.AutoCompleteListboxPositionOptions */
-  @js.native
   trait AutoCompleteProps extends StObject {
     
-    var about: js.UndefOr[String] = js.native
+    var about: js.UndefOr[String] = js.undefined
     
-    var accept: js.UndefOr[String] = js.native
+    var accept: js.UndefOr[String] = js.undefined
     
-    var accessKey: js.UndefOr[String] = js.native
+    var accessKey: js.UndefOr[String] = js.undefined
     
     /**
       * Any optional children to display after the matched results in the
@@ -295,122 +292,122 @@ object typesMod {
       *
       * @since 2.1.0
       */
-    var afterResultsChildren: js.UndefOr[ReactNode] = js.native
+    var afterResultsChildren: js.UndefOr[ReactNode] = js.undefined
     
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
-    var anchor: js.UndefOr[PartialPositionAnchor] = js.native
+    var anchor: js.UndefOr[PartialPositionAnchor] = js.undefined
     
-    var `aria-activedescendant`: js.UndefOr[String] = js.native
+    var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.native
+    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.native
+    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-colcount`: js.UndefOr[Double] = js.native
+    var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colindex`: js.UndefOr[Double] = js.native
+    var `aria-colindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colspan`: js.UndefOr[Double] = js.native
+    var `aria-colspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-controls`: js.UndefOr[String] = js.native
+    var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
     
-    var `aria-describedby`: js.UndefOr[String] = js.native
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    var `aria-details`: js.UndefOr[String] = js.native
+    var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.native
+    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
-    var `aria-errormessage`: js.UndefOr[String] = js.native
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.native
+    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-flowto`: js.UndefOr[String] = js.native
+    var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.native
+    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
-    var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+    var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var `aria-level`: js.UndefOr[Double] = js.native
+    var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.native
+    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.native
+    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var `aria-owns`: js.UndefOr[String] = js.native
+    var `aria-owns`: js.UndefOr[String] = js.undefined
     
-    var `aria-placeholder`: js.UndefOr[String] = js.native
+    var `aria-placeholder`: js.UndefOr[String] = js.undefined
     
-    var `aria-posinset`: js.UndefOr[Double] = js.native
+    var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.native
+    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-      ] = js.native
+      ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.native
+    var `aria-required`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-roledescription`: js.UndefOr[String] = js.native
+    var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
-    var `aria-rowcount`: js.UndefOr[Double] = js.native
+    var `aria-rowcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowindex`: js.UndefOr[Double] = js.native
+    var `aria-rowindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowspan`: js.UndefOr[Double] = js.native
+    var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.native
+    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-setsize`: js.UndefOr[Double] = js.native
+    var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
     
-    var `aria-valuemax`: js.UndefOr[Double] = js.native
+    var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuemin`: js.UndefOr[Double] = js.native
+    var `aria-valuemin`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuenow`: js.UndefOr[Double] = js.native
+    var `aria-valuenow`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuetext`: js.UndefOr[String] = js.native
+    var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var autoCapitalize: js.UndefOr[String] = js.native
+    var autoCapitalize: js.UndefOr[String] = js.undefined
     
     /**
       * @see AutoCompletion
       */
-    var autoComplete: js.UndefOr[AutoCompletion] = js.native
+    var autoComplete: js.UndefOr[AutoCompletion] = js.undefined
     
-    var autoCorrect: js.UndefOr[String] = js.native
+    var autoCorrect: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var autoSave: js.UndefOr[String] = js.native
+    var autoSave: js.UndefOr[String] = js.undefined
     
     /**
       * Any optional children to display before the matched results in the
@@ -419,63 +416,63 @@ object typesMod {
       *
       * @since 2.1.0
       */
-    var beforeResultsChildren: js.UndefOr[ReactNode] = js.native
+    var beforeResultsChildren: js.UndefOr[ReactNode] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.native
+    var capture: js.UndefOr[Boolean | String] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if the text field's value should be cleared when the value is
       * autocompleted. This is useful when also adding custom `onAutoComplete`
       * behavior.
       */
-    var clearOnAutoComplete: js.UndefOr[Boolean] = js.native
+    var clearOnAutoComplete: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the select's listbox should not hide if the user resizes the
       * browser while it is visible.
       */
-    var closeOnResize: js.UndefOr[Boolean] = js.native
+    var closeOnResize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the select's listbox should not hide if the user scrolls the
       * page while it is visible.
       */
-    var closeOnScroll: js.UndefOr[Boolean] = js.native
+    var closeOnScroll: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var containerProps: js.UndefOr[OmitHTMLAttributesHTMLDiv] = js.native
+    var containerProps: js.UndefOr[OmitHTMLAttributesHTMLDiv] = js.undefined
     
-    var containerRef: js.UndefOr[Ref[HTMLDivElement]] = js.native
+    var containerRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
-    var contextMenu: js.UndefOr[String] = js.native
+    var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
     /**
       * The list of data that should be autocompleted based on the provided filter.
       */
-    var data: js.Array[AutoCompleteData] = js.native
+    var data: js.Array[AutoCompleteData]
     
-    var datatype: js.UndefOr[String] = js.native
+    var datatype: js.UndefOr[String] = js.undefined
     
-    var defaultChecked: js.UndefOr[Boolean] = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var dense: js.UndefOr[Boolean] = js.native
+    var dense: js.UndefOr[Boolean] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if the list of suggestions should no longer appear immediately once
@@ -492,24 +489,24 @@ object typesMod {
       * and scroll behavior actions are normally finished before the suggestions
       * appear.
       */
-    var disableShowOnFocus: js.UndefOr[Boolean] = js.native
+    var disableShowOnFocus: js.UndefOr[Boolean] = js.undefined
     
-    var disableSwapping: js.UndefOr[Boolean] = js.native
+    var disableSwapping: js.UndefOr[Boolean] = js.undefined
     
-    var disableVHBounds: js.UndefOr[Boolean] = js.native
+    var disableVHBounds: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var draggable: js.UndefOr[Booleanish] = js.native
+    var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.native
+    var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @see AutoCompleteFilterFunction
       */
-    var filter: js.UndefOr[AutoCompleteFilterFunction[js.Object]] = js.native
+    var filter: js.UndefOr[AutoCompleteFilterFunction[js.Object]] = js.undefined
     
     /**
       * Boolean if the filter function should still be called when there is no
@@ -517,33 +514,33 @@ object typesMod {
       * `data` is just returned, but it can be useful with a custom filter function
       * that returns different data while there is no value.
       */
-    var filterOnNoValue: js.UndefOr[Boolean] = js.native
+    var filterOnNoValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional object of options to provide to the filter function. This will
       * be defaulted to work with the fuzzy filter and case-insensitive filter
       * functions to trim whitespace before doing the comparisons.
       */
-    var filterOptions: js.UndefOr[typings.reactMdAutocomplete.anon.FilterFunctionOptions] = js.native
+    var filterOptions: js.UndefOr[typings.reactMdAutocomplete.anon.FilterFunctionOptions] = js.undefined
     
-    var form: js.UndefOr[String] = js.native
+    var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.native
+    var formAction: js.UndefOr[String] = js.undefined
     
-    var formEncType: js.UndefOr[String] = js.native
+    var formEncType: js.UndefOr[String] = js.undefined
     
-    var formMethod: js.UndefOr[String] = js.native
+    var formMethod: js.UndefOr[String] = js.undefined
     
-    var formNoValidate: js.UndefOr[Boolean] = js.native
+    var formNoValidate: js.UndefOr[Boolean] = js.undefined
     
-    var formTarget: js.UndefOr[String] = js.native
+    var formTarget: js.UndefOr[String] = js.undefined
     
     /**
       * A function to call that will generate an id for each result in the
       * autocomplete's listbox. These ids are required for a11y as it'll be used
       * with the `aria-activedescendant` movement within the autocomplete.
       */
-    var getResultId: js.UndefOr[js.Function2[/* id */ String, /* index */ Double, String]] = js.native
+    var getResultId: js.UndefOr[js.Function2[/* id */ String, /* index */ Double, String]] = js.undefined
     
     /**
       * A function to call that will get a renderable label or children to display
@@ -553,18 +550,18 @@ object typesMod {
       */
     var getResultLabel: js.UndefOr[
         js.Function3[/* data */ AutoCompleteData, /* labelKey */ String, /* query */ String, ReactNode]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A function to call that will extract a searchable value string from each
       * result. This **must** return a string and will prevent the autocomplete
       * from filtering data with the built in filter functions.
       */
-    var getResultValue: js.UndefOr[js.Function2[/* datum */ AutoCompleteData, /* valueKey */ String, String]] = js.native
+    var getResultValue: js.UndefOr[js.Function2[/* datum */ AutoCompleteData, /* valueKey */ String, String]] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the result list labels should be updated so that each matching
@@ -572,93 +569,93 @@ object typesMod {
       * or the `label` is a string and when the letters appear in order. This will
       * always be `false` if the `filter` prop is set to `"fuzzy"`.
       */
-    var highlight: js.UndefOr[Boolean] = js.native
+    var highlight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional className to apply to the `<span>` surrounding the matched text
       * when the `highlight` prop is enabled.
       */
-    var highlightClassName: js.UndefOr[String] = js.native
+    var highlightClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if the highlight functionality should no longer stop after the
       * first match and instead highlight all matches of the search string within
       * the label for an item.
       */
-    var highlightReapeating: js.UndefOr[Boolean] = js.native
+    var highlightReapeating: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional style to apply to the `<span>` surrounding the matched text
       * when the `highlight` prop is enabled.
       */
-    var highlightStyle: js.UndefOr[CSSProperties] = js.native
+    var highlightStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * The id to use for the AutoComplete and is required for a11y to fulfill the
       * `combobox` role. This id will be passed directly to the `<input>` element
       * and prefixed for all the other id-required elements.
       */
-    var id: String = js.native
+    var id: String
     
-    var initialX: js.UndefOr[Double] = js.native
+    var initialX: js.UndefOr[Double] = js.undefined
     
-    var initialY: js.UndefOr[Double] = js.native
+    var initialY: js.UndefOr[Double] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.native
+    var inlist: js.UndefOr[js.Any] = js.undefined
     
-    var inputClassName: js.UndefOr[String] = js.native
+    var inputClassName: js.UndefOr[String] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
-    var inputStyle: js.UndefOr[CSSProperties] = js.native
+    var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var is: js.UndefOr[String] = js.native
+    var is: js.UndefOr[String] = js.undefined
     
-    var isLeftAddon: js.UndefOr[Boolean] = js.native
+    var isLeftAddon: js.UndefOr[Boolean] = js.undefined
     
-    var isRightAddon: js.UndefOr[Boolean] = js.native
+    var isRightAddon: js.UndefOr[Boolean] = js.undefined
     
-    var itemID: js.UndefOr[String] = js.native
+    var itemID: js.UndefOr[String] = js.undefined
     
-    var itemProp: js.UndefOr[String] = js.native
+    var itemProp: js.UndefOr[String] = js.undefined
     
-    var itemRef: js.UndefOr[String] = js.native
+    var itemRef: js.UndefOr[String] = js.undefined
     
-    var itemScope: js.UndefOr[Boolean] = js.native
+    var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemType: js.UndefOr[String] = js.native
+    var itemType: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var labelClassName: js.UndefOr[String] = js.native
+    var labelClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The key to use to extract a label from a result when the provided data list
       * is a list of objects.
       */
-    var labelKey: js.UndefOr[String] = js.native
+    var labelKey: js.UndefOr[String] = js.undefined
     
-    var labelStyle: js.UndefOr[CSSProperties] = js.native
+    var labelStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var leftChildren: js.UndefOr[ReactNode] = js.native
+    var leftChildren: js.UndefOr[ReactNode] = js.undefined
     
-    var list: js.UndefOr[String] = js.native
+    var list: js.UndefOr[String] = js.undefined
     
     /**
       * An optional className to also apply to the listbox element showing all the
       * matches.
       */
-    var listboxClassName: js.UndefOr[String] = js.native
+    var listboxClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional style to also apply to the listbox element showing all the
       * matches.
       */
-    var listboxStyle: js.UndefOr[CSSProperties] = js.native
+    var listboxStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * The sizing behavior for the listbox. It will default to have the same width
@@ -669,19 +666,19 @@ object typesMod {
       * The sizing behavior will always ensure that the left and right bounds of
       * the listbox appear within the viewport.
       */
-    var listboxWidth: js.UndefOr[PositionWidth] = js.native
+    var listboxWidth: js.UndefOr[PositionWidth] = js.undefined
     
-    var max: js.UndefOr[Double | String] = js.native
+    var max: js.UndefOr[Double | String] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double | String] = js.native
+    var min: js.UndefOr[Double | String] = js.undefined
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * An optional list of keys that should be omitted from your `data` item
@@ -697,263 +694,263 @@ object typesMod {
       * const omitKeys = ["__id"];
       *```
       */
-    var omitKeys: js.UndefOr[js.Array[String]] = js.native
+    var omitKeys: js.UndefOr[js.Array[String]] = js.undefined
     
-    var onAbort: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onAbort: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.native
+    var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
     
-    var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.native
+    var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
     
-    var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.native
+    var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
     
     /**
       * @see AutoCompleteHandler
       */
-    var onAutoComplete: js.UndefOr[AutoCompleteHandler] = js.native
+    var onAutoComplete: js.UndefOr[AutoCompleteHandler] = js.undefined
     
-    var onAuxClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onAuxClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onBeforeInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onBeforeInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onCanPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onCanPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.native
+    var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
     
-    var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.native
+    var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
     
-    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.native
+    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
     
-    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onCopy: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.native
+    var onCopy: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onCut: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.native
+    var onCut: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDrag: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDrag: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDragEnd: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDragEnd: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDragEnter: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDragEnter: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDragExit: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDragExit: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDragLeave: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDragLeave: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDragOver: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDragOver: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDragStart: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDragStart: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDrop: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+    var onDrop: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
     
-    var onDurationChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onDurationChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onEmptied: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onEmptied: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onEncrypted: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onEncrypted: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onEnded: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onEnded: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onError: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onError: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
-    var onInvalid: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onInvalid: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onLoad: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onLoad: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onLoadStart: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onLoadStart: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onLoadedData: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onLoadedData: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseMove: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseMove: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseOut: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseOut: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseOver: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseOver: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPaste: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.native
+    var onPaste: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPause: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onPause: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPlaying: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onPlaying: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerDown: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerDown: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerMove: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerMove: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerOut: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerOut: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerOver: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerOver: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onPointerUp: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+    var onPointerUp: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
     
-    var onProgress: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onProgress: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onRateChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onRateChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
-    var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.native
+    var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.undefined
     
-    var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onSeeking: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onSeeking: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onSelect: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onSelect: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onStalled: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onStalled: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onSubmit: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onSubmit: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
-    var onSuspend: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onSuspend: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+    var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
     
-    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
     
-    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
     
-    var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLInputElement]] = js.native
+    var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLInputElement]] = js.undefined
     
-    var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onWaiting: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+    var onWaiting: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onWheel: js.UndefOr[WheelEventHandler[HTMLInputElement]] = js.native
+    var onWheel: js.UndefOr[WheelEventHandler[HTMLInputElement]] = js.undefined
     
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if the portal should be used.
       */
-    var portal: js.UndefOr[Boolean] = js.native
+    var portal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @see {@link Portal#into}
       */
-    var portalInto: js.UndefOr[PortalInto] = js.native
+    var portalInto: js.UndefOr[PortalInto] = js.undefined
     
     /**
       * @see {@link Portal#intoId}
       */
-    var portalIntoId: js.UndefOr[String] = js.native
+    var portalIntoId: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var preventOverlap: js.UndefOr[Boolean] = js.native
+    var preventOverlap: js.UndefOr[Boolean] = js.undefined
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
     
-    var radioGroup: js.UndefOr[String] = js.native
+    var radioGroup: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
     
-    var results: js.UndefOr[Double] = js.native
+    var results: js.UndefOr[Double] = js.undefined
     
-    var rightChildren: js.UndefOr[ReactNode] = js.native
+    var rightChildren: js.UndefOr[ReactNode] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var security: js.UndefOr[String] = js.native
+    var security: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var slot: js.UndefOr[String] = js.native
+    var slot: js.UndefOr[String] = js.undefined
     
-    var spellCheck: js.UndefOr[Booleanish] = js.native
+    var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
-    var step: js.UndefOr[Double | String] = js.native
+    var step: js.UndefOr[Double | String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
-    var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+    var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[FormTheme] = js.native
+    var theme: js.UndefOr[FormTheme] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var transformOrigin: js.UndefOr[Boolean] = js.native
+    var transformOrigin: js.UndefOr[Boolean] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.native
+    var translate: js.UndefOr[yes | no] = js.undefined
     
-    var typeof: js.UndefOr[String] = js.native
+    var typeof: js.UndefOr[String] = js.undefined
     
-    var underlineDirection: js.UndefOr[FormUnderlineDirection] = js.native
+    var underlineDirection: js.UndefOr[FormUnderlineDirection] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.native
+    var unselectable: js.UndefOr[on | off] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
     
     /**
       * The key to use to extract a searchable value string from a result when the
       * provided data list is a list of objects.
       */
-    var valueKey: js.UndefOr[String] = js.native
+    var valueKey: js.UndefOr[String] = js.undefined
     
-    var vhMargin: js.UndefOr[Double] = js.native
+    var vhMargin: js.UndefOr[Double] = js.undefined
     
-    var vocab: js.UndefOr[String] = js.native
+    var vocab: js.UndefOr[String] = js.undefined
     
-    var vwMargin: js.UndefOr[Double] = js.native
+    var vwMargin: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
     
-    var xMargin: js.UndefOr[Double] = js.native
+    var xMargin: js.UndefOr[Double] = js.undefined
     
-    var yMargin: js.UndefOr[Double] = js.native
+    var yMargin: js.UndefOr[Double] = js.undefined
   }
   object AutoCompleteProps {
     
@@ -2535,35 +2532,34 @@ object typesMod {
     }
   }
   
-  @js.native
   trait AutoCompleteResult extends StObject {
     
     /**
       * The index of the result in the **original data list**.
       */
-    val dataIndex: Double = js.native
+    val dataIndex: Double
     
     /**
       * The list of data that has been filtered based on the current value.
       */
-    val filteredData: js.Array[AutoCompleteData] = js.native
+    val filteredData: js.Array[AutoCompleteData]
     
     /**
       * The index of the result in the **filtered data list**.
       */
-    val index: Double = js.native
+    val index: Double
     
     /**
       * The current autocomplete result.
       */
-    val result: AutoCompleteData = js.native
+    val result: AutoCompleteData
     
     /**
       * The stringified value of the autocomplete data by using `getResultValue` on
       * the `result`. This is really just used for the default behavior of
       * autocompleting the text field's value to this value.
       */
-    val value: String = js.native
+    val value: String
   }
   object AutoCompleteResult {
     
@@ -2631,7 +2627,7 @@ object typesMod {
     js.Array[AutoCompleteData]
   ]
   
-  type FilterFunctionOptions[O /* <: js.Object */] = O with CaseInsensitiveOptions[AutoCompleteData]
+  type FilterFunctionOptions[O /* <: js.Object */] = O & CaseInsensitiveOptions[AutoCompleteData]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdAutocomplete.reactMdAutocompleteStrings.fuzzy

@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteWorkforceRequest extends StObject {
   
   /**
     * The name of the workforce.
     */
-  var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName = js.native
+  var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName
 }
 object DeleteWorkforceRequest {
   

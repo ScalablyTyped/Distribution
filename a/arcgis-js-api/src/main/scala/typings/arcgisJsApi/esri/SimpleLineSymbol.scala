@@ -19,16 +19,16 @@ import typings.arcgisJsApi.arcgisJsApiStrings.solid
 import typings.arcgisJsApi.arcgisJsApiStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.arcgisJsApi.esri.Symbol2D3D because Already inherited
 - typings.arcgisJsApi.esri.symbols.Symbol2D3D because Already inherited */ @js.native
 trait SimpleLineSymbol
-  extends Symbol2D
+  extends StObject
      with LineSymbol
-     with typings.arcgisJsApi.esri.symbols.Symbol2D {
+     with typings.arcgisJsApi.esri.symbols.Symbol2D
+     with Symbol2D {
   
   /**
     * Specifies the cap style.

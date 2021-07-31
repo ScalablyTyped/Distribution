@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobRunsRequest extends StObject {
   
   /**
     * The name of the job definition for which to retrieve all job runs.
     */
-  var JobName: NameString = js.native
+  var JobName: NameString
   
   /**
     * The maximum size of the response.
     */
-  var MaxResults: js.UndefOr[PageSize] = js.native
+  var MaxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     * A continuation token, if this is a continuation call.
     */
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
 }
 object GetJobRunsRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateAccessLogsResult extends StObject {
   
   /**
     *  The pre-signed URL for the requested access logs. 
     */
-  var logUrl: js.UndefOr[LogUrl] = js.native
+  var logUrl: js.UndefOr[LogUrl] = js.undefined
 }
 object GenerateAccessLogsResult {
   

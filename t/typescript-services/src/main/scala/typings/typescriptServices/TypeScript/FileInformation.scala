@@ -2,15 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileInformation extends StObject {
   
-  var byteOrderMark: ByteOrderMark = js.native
+  var byteOrderMark: ByteOrderMark
   
-  var contents: String = js.native
+  var contents: String
 }
 object FileInformation {
   

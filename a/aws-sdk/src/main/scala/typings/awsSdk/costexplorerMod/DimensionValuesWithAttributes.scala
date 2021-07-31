@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionValuesWithAttributes extends StObject {
   
   /**
     * The attribute that applies to a specific Dimension.
     */
-  var Attributes: js.UndefOr[typings.awsSdk.costexplorerMod.Attributes] = js.native
+  var Attributes: js.UndefOr[typings.awsSdk.costexplorerMod.Attributes] = js.undefined
   
   /**
     * The value of a dimension with a specific attribute.
     */
-  var Value: js.UndefOr[typings.awsSdk.costexplorerMod.Value] = js.native
+  var Value: js.UndefOr[typings.awsSdk.costexplorerMod.Value] = js.undefined
 }
 object DimensionValuesWithAttributes {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateConnectionFromLagRequest extends StObject {
   
   /**
     * The ID of the connection.
     */
-  var connectionId: ConnectionId = js.native
+  var connectionId: ConnectionId
   
   /**
     * The ID of the LAG.
     */
-  var lagId: LagId = js.native
+  var lagId: LagId
 }
 object DisassociateConnectionFromLagRequest {
   

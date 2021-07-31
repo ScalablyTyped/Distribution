@@ -2,65 +2,63 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentStyleSuggestionState extends StObject {
   
   /** A mask that indicates which of the fields in background have been changed in this suggestion. */
-  var backgroundSuggestionState: js.UndefOr[BackgroundSuggestionState] = js.native
+  var backgroundSuggestionState: js.UndefOr[BackgroundSuggestionState] = js.undefined
   
   /** Indicates if there was a suggested change to default_footer_id. */
-  var defaultFooterIdSuggested: js.UndefOr[Boolean] = js.native
+  var defaultFooterIdSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to default_header_id. */
-  var defaultHeaderIdSuggested: js.UndefOr[Boolean] = js.native
+  var defaultHeaderIdSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to even_page_footer_id. */
-  var evenPageFooterIdSuggested: js.UndefOr[Boolean] = js.native
+  var evenPageFooterIdSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to even_page_header_id. */
-  var evenPageHeaderIdSuggested: js.UndefOr[Boolean] = js.native
+  var evenPageHeaderIdSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to first_page_footer_id. */
-  var firstPageFooterIdSuggested: js.UndefOr[Boolean] = js.native
+  var firstPageFooterIdSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to first_page_header_id. */
-  var firstPageHeaderIdSuggested: js.UndefOr[Boolean] = js.native
+  var firstPageHeaderIdSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to margin_bottom. */
-  var marginBottomSuggested: js.UndefOr[Boolean] = js.native
+  var marginBottomSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to margin_footer. */
-  var marginFooterSuggested: js.UndefOr[Boolean] = js.native
+  var marginFooterSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to margin_header. */
-  var marginHeaderSuggested: js.UndefOr[Boolean] = js.native
+  var marginHeaderSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to margin_left. */
-  var marginLeftSuggested: js.UndefOr[Boolean] = js.native
+  var marginLeftSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to margin_right. */
-  var marginRightSuggested: js.UndefOr[Boolean] = js.native
+  var marginRightSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to margin_top. */
-  var marginTopSuggested: js.UndefOr[Boolean] = js.native
+  var marginTopSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to page_number_start. */
-  var pageNumberStartSuggested: js.UndefOr[Boolean] = js.native
+  var pageNumberStartSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** A mask that indicates which of the fields in size have been changed in this suggestion. */
-  var pageSizeSuggestionState: js.UndefOr[SizeSuggestionState] = js.native
+  var pageSizeSuggestionState: js.UndefOr[SizeSuggestionState] = js.undefined
   
   /** Indicates if there was a suggested change to use_custom_header_footer_margins. */
-  var useCustomHeaderFooterMarginsSuggested: js.UndefOr[Boolean] = js.native
+  var useCustomHeaderFooterMarginsSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to use_even_page_header_footer. */
-  var useEvenPageHeaderFooterSuggested: js.UndefOr[Boolean] = js.native
+  var useEvenPageHeaderFooterSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to use_first_page_header_footer. */
-  var useFirstPageHeaderFooterSuggested: js.UndefOr[Boolean] = js.native
+  var useFirstPageHeaderFooterSuggested: js.UndefOr[Boolean] = js.undefined
 }
 object DocumentStyleSuggestionState {
   

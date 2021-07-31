@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,20 +14,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.form.XLoadable
   * @see DataAwareControlModel
   */
-@js.native
-trait XLoadListener extends XEventListener {
+trait XLoadListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is invoked when the object has successfully connected to a datasource.
     * @param aEvent the event happened.
     */
-  def loaded(aEvent: EventObject): Unit = js.native
+  def loaded(aEvent: EventObject): Unit
   
   /**
     * is invoked when the object has been reloaded.
     * @param aEvent the event happened.
     */
-  def reloaded(aEvent: EventObject): Unit = js.native
+  def reloaded(aEvent: EventObject): Unit
   
   /**
     * is invoked when the object is about to be reloaded.
@@ -36,13 +36,13 @@ trait XLoadListener extends XEventListener {
     * Components may use this to stop any other event processing related to the event source until they get the reloaded event.
     * @param aEvent the event happened.
     */
-  def reloading(aEvent: EventObject): Unit = js.native
+  def reloading(aEvent: EventObject): Unit
   
   /**
     * is invoked after the object has disconnected from a datasource.
     * @param aEvent the event happened.
     */
-  def unloaded(aEvent: EventObject): Unit = js.native
+  def unloaded(aEvent: EventObject): Unit
   
   /**
     * is invoked when the object is about to be unloaded.
@@ -50,7 +50,7 @@ trait XLoadListener extends XEventListener {
     * Components may use this to stop any other event processing related to the event source before the object is unloaded.
     * @param aEvent the event happened.
     */
-  def unloading(aEvent: EventObject): Unit = js.native
+  def unloading(aEvent: EventObject): Unit
 }
 object XLoadListener {
   

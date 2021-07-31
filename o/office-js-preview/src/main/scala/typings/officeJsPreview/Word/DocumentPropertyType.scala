@@ -2,7 +2,6 @@ package typings.officeJsPreview.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait DocumentPropertyType extends StObject
 object DocumentPropertyType extends StObject {
   
   @js.native
-  sealed trait boolean extends DocumentPropertyType
+  sealed trait boolean
+    extends StObject
+       with DocumentPropertyType
   
   @js.native
-  sealed trait date extends DocumentPropertyType
+  sealed trait date
+    extends StObject
+       with DocumentPropertyType
   
   @js.native
-  sealed trait number extends DocumentPropertyType
+  sealed trait number
+    extends StObject
+       with DocumentPropertyType
   
   @js.native
-  sealed trait string extends DocumentPropertyType
+  sealed trait string
+    extends StObject
+       with DocumentPropertyType
 }

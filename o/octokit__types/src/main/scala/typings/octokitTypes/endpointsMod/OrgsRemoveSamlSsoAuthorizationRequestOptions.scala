@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgsRemoveSamlSsoAuthorizationRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: DELETE = js.native
+  var method: DELETE
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: `SlashorgsSlashColonorgSlashcredential-authorizationsSlashColoncredential_id` = js.native
+  var url: `SlashorgsSlashColonorgSlashcredential-authorizationsSlashColoncredential_id`
 }
 object OrgsRemoveSamlSsoAuthorizationRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: DELETE,
-    request: RequestRequestOptions,
-    url: `SlashorgsSlashColonorgSlashcredential-authorizationsSlashColoncredential_id`
-  ): OrgsRemoveSamlSsoAuthorizationRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): OrgsRemoveSamlSsoAuthorizationRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/orgs/:org/credential-authorizations/:credential_id")
     __obj.asInstanceOf[OrgsRemoveSamlSsoAuthorizationRequestOptions]
   }
   

@@ -12,7 +12,6 @@ import typings.xhr2Cookies.xmlHttpRequestMod.XMLHttpRequestOptions
 import typings.xhr2Cookies.xmlHttpRequestUploadMod.XMLHttpRequestUpload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -102,9 +101,8 @@ object mod {
     @scala.inline
     def cookieJar_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookieJar")(x.asInstanceOf[js.Any])
     
-    @JSImport("xhr2-cookies", "XMLHttpRequest.nodejsSet")
-    @js.native
-    def nodejsSet(options: BaseUrl): Unit = js.native
+    @scala.inline
+    def nodejsSet(options: BaseUrl): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nodejsSet")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("xhr2-cookies", "XMLHttpRequestEventTarget")

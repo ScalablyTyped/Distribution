@@ -7,30 +7,28 @@ import typings.std.Error
 import typings.swaggerExpressMiddleware.anon.FieldNameSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MulterOptions extends StObject {
   
   /** The destination directory for the uploaded files. */
-  var dest: js.UndefOr[String] = js.native
+  var dest: js.UndefOr[String] = js.undefined
   
   /** A function to control which files to upload and which to skip. */
   var fileFilter: js.UndefOr[
     js.Function3[
-      /* req */ Request_[ParamsDictionary, _, _, Query], 
+      /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
       /* file */ File, 
       /* callback */ js.Function2[/* error */ Error, /* acceptFile */ Boolean, Unit], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** An object specifying the size limits of the following optional properties. This object is passed to busboy directly, and the details of properties can be found on https://github.com/mscdex/busboy#busboy-methods */
-  var limits: js.UndefOr[FieldNameSize] = js.native
+  var limits: js.UndefOr[FieldNameSize] = js.undefined
   
   /** The storage engine to use for uploaded files. */
-  var storage: js.UndefOr[StorageEngine] = js.native
+  var storage: js.UndefOr[StorageEngine] = js.undefined
 }
 object MulterOptions {
   
@@ -51,7 +49,7 @@ object MulterOptions {
     
     @scala.inline
     def setFileFilter(
-      value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* file */ File, /* callback */ js.Function2[/* error */ Error, /* acceptFile */ Boolean, Unit]) => Unit
+      value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* file */ File, /* callback */ js.Function2[/* error */ Error, /* acceptFile */ Boolean, Unit]) => Unit
     ): Self = StObject.set(x, "fileFilter", js.Any.fromFunction3(value))
     
     @scala.inline

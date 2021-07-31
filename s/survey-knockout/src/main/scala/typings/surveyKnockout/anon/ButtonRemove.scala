@@ -2,37 +2,35 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonRemove extends StObject {
   
-  var button: String = js.native
+  var button: String
   
-  var buttonAdd: String = js.native
+  var buttonAdd: String
   
-  var buttonRemove: String = js.native
+  var buttonRemove: String
   
-  var detailButton: String = js.native
+  var detailButton: String
   
-  var detailButtonExpanded: String = js.native
+  var detailButtonExpanded: String
   
-  var detailCell: String = js.native
+  var detailCell: String
   
-  var detailIcon: String = js.native
+  var detailIcon: String
   
-  var detailIconExpanded: String = js.native
+  var detailIconExpanded: String
   
-  var detailPanelCell: String = js.native
+  var detailPanelCell: String
   
-  var headerCell: String = js.native
+  var headerCell: String
   
-  var iconAdd: String = js.native
+  var iconAdd: String
   
-  var iconRemove: String = js.native
+  var iconRemove: String
   
-  var root: String = js.native
+  var root: String
 }
 object ButtonRemove {
   

@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailSettings extends StObject {
   
   /**
@@ -23,18 +21,18 @@ trait EmailSettings extends StObject {
     */
   var bccEmailAddresses: js.UndefOr[
     js.Array[/* Contains information about the BCC email address. */ BccEmailAddress]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The Reply To email address to use for email replies, instead of the one that is configured at the account level. DocuSign verifies that the email address
     * is in a correct format, but does not verify that it is active. Maximum Length: 100 characters.
     */
-  var replyEmailAddressOverride: js.UndefOr[String] = js.native
+  var replyEmailAddressOverride: js.UndefOr[String] = js.undefined
   
   /**
     * The name to associate with the Reply To email address, instead of the name that is configured at the account level. Maximum Length: 100 characters.
     */
-  var replyEmailNameOverride: js.UndefOr[String] = js.native
+  var replyEmailNameOverride: js.UndefOr[String] = js.undefined
 }
 object EmailSettings {
   

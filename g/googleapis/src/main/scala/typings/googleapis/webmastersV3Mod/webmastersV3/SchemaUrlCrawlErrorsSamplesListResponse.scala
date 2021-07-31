@@ -2,19 +2,17 @@ package typings.googleapis.webmastersV3Mod.webmastersV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List of crawl error samples.
   */
-@js.native
 trait SchemaUrlCrawlErrorsSamplesListResponse extends StObject {
   
   /**
     * Information about the sample URL and its crawl error.
     */
-  var urlCrawlErrorSample: js.UndefOr[js.Array[SchemaUrlCrawlErrorsSample]] = js.native
+  var urlCrawlErrorSample: js.UndefOr[js.Array[SchemaUrlCrawlErrorsSample]] = js.undefined
 }
 object SchemaUrlCrawlErrorsSamplesListResponse {
   

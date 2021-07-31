@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergedResult extends StObject {
   
   /** Outcome of the resource */
-  var outcome: js.UndefOr[Outcome] = js.native
+  var outcome: js.UndefOr[Outcome] = js.undefined
   
   /** State of the resource */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * The combined and rolled-up result of each test suite that was run as part of this environment. Combining: When the test cases from a suite are run in different steps (sharding), the
@@ -20,7 +18,7 @@ trait MergedResult extends StObject {
     * suite are run multiple times (flaky), the results are combined (e.g., if testcase1.run1 fails, testcase1.run2 passes, and both testcase2.run1 and testcase2.run2 fail then the
     * overview flaky_count = 1 and failure_count = 1).
     */
-  var testSuiteOverviews: js.UndefOr[js.Array[TestSuiteOverview]] = js.native
+  var testSuiteOverviews: js.UndefOr[js.Array[TestSuiteOverview]] = js.undefined
 }
 object MergedResult {
   

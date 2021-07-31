@@ -6,18 +6,19 @@ import typings.expressServeStaticCore.mod.Query
 import typings.passport.mod.Strategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("passport-google-oauth", "OAuth2Strategy")
   @js.native
-  class OAuth2Strategy protected () extends Strategy {
+  class OAuth2Strategy protected ()
+    extends StObject
+       with Strategy {
     def this(
       options: IOAuth2StrategyOptionWithRequest,
       verify: js.Function5[
-            /* req */ Request_[ParamsDictionary, _, _, Query], 
+            /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
             /* accessToken */ String, 
             /* refreshToken */ String, 
             /* profile */ Profile, 
@@ -36,7 +37,7 @@ object mod {
           ]
     ) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
     
     @JSName("name")
     var name_OAuth2Strategy: String = js.native
@@ -44,7 +45,9 @@ object mod {
   
   @JSImport("passport-google-oauth", "OAuthStrategy")
   @js.native
-  class OAuthStrategy protected () extends Strategy {
+  class OAuthStrategy protected ()
+    extends StObject
+       with Strategy {
     def this(
       options: IOAuthStrategyOption,
       verify: js.Function4[
@@ -56,44 +59,43 @@ object mod {
           ]
     ) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
     
     @JSName("name")
     var name_OAuthStrategy: String = js.native
   }
   
-  @js.native
   trait IOAuth2StrategyOption extends StObject {
     
-    var accessType: js.UndefOr[String] = js.native
+    var accessType: js.UndefOr[String] = js.undefined
     
-    var approval_prompt: js.UndefOr[String] = js.native
+    var approval_prompt: js.UndefOr[String] = js.undefined
     
-    var authorizationURL: js.UndefOr[String] = js.native
+    var authorizationURL: js.UndefOr[String] = js.undefined
     
-    var callbackURL: String = js.native
+    var callbackURL: String
     
-    var clientID: String = js.native
+    var clientID: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var display: js.UndefOr[String] = js.native
+    var display: js.UndefOr[String] = js.undefined
     
-    var hostedDomain: js.UndefOr[String] = js.native
+    var hostedDomain: js.UndefOr[String] = js.undefined
     
-    var loginHint: js.UndefOr[String] = js.native
+    var loginHint: js.UndefOr[String] = js.undefined
     
-    var openIDRealm: js.UndefOr[String] = js.native
+    var openIDRealm: js.UndefOr[String] = js.undefined
     
-    var prompt: js.UndefOr[String] = js.native
+    var prompt: js.UndefOr[String] = js.undefined
     
-    var requestVisibleActions: js.UndefOr[String] = js.native
+    var requestVisibleActions: js.UndefOr[String] = js.undefined
     
-    var tokenURL: js.UndefOr[String] = js.native
+    var tokenURL: js.UndefOr[String] = js.undefined
     
-    var userID: js.UndefOr[String] = js.native
+    var userID: js.UndefOr[String] = js.undefined
     
-    var userProfileURL: js.UndefOr[String] = js.native
+    var userProfileURL: js.UndefOr[String] = js.undefined
   }
   object IOAuth2StrategyOption {
     
@@ -189,10 +191,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait IOAuth2StrategyOptionWithRequest extends IOAuth2StrategyOption {
+  trait IOAuth2StrategyOptionWithRequest
+    extends StObject
+       with IOAuth2StrategyOption {
     
-    var passReqToCallback: Boolean = js.native
+    var passReqToCallback: Boolean
   }
   object IOAuth2StrategyOptionWithRequest {
     
@@ -210,22 +213,21 @@ object mod {
     }
   }
   
-  @js.native
   trait IOAuthStrategyOption extends StObject {
     
-    var accessTokenURL: js.UndefOr[String] = js.native
+    var accessTokenURL: js.UndefOr[String] = js.undefined
     
-    var callbackURL: String = js.native
+    var callbackURL: String
     
-    var consumerKey: String = js.native
+    var consumerKey: String
     
-    var consumerSecret: String = js.native
+    var consumerSecret: String
     
-    var requestTokenURL: js.UndefOr[String] = js.native
+    var requestTokenURL: js.UndefOr[String] = js.undefined
     
-    var sessionKey: js.UndefOr[String] = js.native
+    var sessionKey: js.UndefOr[String] = js.undefined
     
-    var userAuthorizationURL: js.UndefOr[String] = js.native
+    var userAuthorizationURL: js.UndefOr[String] = js.undefined
   }
   object IOAuthStrategyOption {
     
@@ -273,15 +275,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Profile
-    extends typings.passport.mod.Profile {
+    extends StObject
+       with typings.passport.mod.Profile {
     
-    var _json: js.Any = js.native
+    var _json: js.Any
     
-    var _raw: String = js.native
+    var _raw: String
     
-    var gender: String = js.native
+    var gender: String
   }
   object Profile {
     
@@ -312,10 +314,9 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait VerifyOptions extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object VerifyOptions {
     

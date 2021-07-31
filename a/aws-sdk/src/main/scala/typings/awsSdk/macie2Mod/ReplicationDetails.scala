@@ -2,26 +2,24 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationDetails extends StObject {
   
   /**
     * Specifies whether the bucket is configured to replicate one or more objects to any destination.
     */
-  var replicated: js.UndefOr[boolean] = js.native
+  var replicated: js.UndefOr[boolean] = js.undefined
   
   /**
     * Specifies whether the bucket is configured to replicate one or more objects to an AWS account that isn't part of the same Amazon Macie organization.
     */
-  var replicatedExternally: js.UndefOr[boolean] = js.native
+  var replicatedExternally: js.UndefOr[boolean] = js.undefined
   
   /**
     * An array of AWS account IDs, one for each AWS account that the bucket is configured to replicate one or more objects to.
     */
-  var replicationAccounts: js.UndefOr[listOfString] = js.native
+  var replicationAccounts: js.UndefOr[listOfString] = js.undefined
 }
 object ReplicationDetails {
   

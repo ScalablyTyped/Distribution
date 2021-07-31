@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.kinesisanalyticsv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationFlinkApplicationConfiguration extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ApplicationApplicationConfigurationFlinkApplicationConfiguration extends S
     Input[
       ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Describes configuration parameters for CloudWatch logging for an application.
@@ -25,7 +23,7 @@ trait ApplicationApplicationConfigurationFlinkApplicationConfiguration extends S
     Input[
       ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Describes parameters for how an application executes multiple tasks simultaneously.
@@ -34,7 +32,7 @@ trait ApplicationApplicationConfigurationFlinkApplicationConfiguration extends S
     Input[
       ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ApplicationApplicationConfigurationFlinkApplicationConfiguration {
   

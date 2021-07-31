@@ -5,15 +5,13 @@ import typings.leafletGpx.leafletGpxStrings.track
 import typings.leafletGpx.leafletGpxStrings.waypoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ParseElements extends StObject {
     
-    var parseElements: js.Tuple3[track, route, waypoint] = js.native
+    var parseElements: js.Tuple3[track, route, waypoint]
   }
   object ParseElements {
     

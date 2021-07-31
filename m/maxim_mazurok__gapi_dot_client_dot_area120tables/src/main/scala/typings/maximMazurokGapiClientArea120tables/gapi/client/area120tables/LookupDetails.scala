@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientArea120tables.gapi.client.area120tables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LookupDetails extends StObject {
   
   /** The name of the relationship column associated with the lookup. */
-  var relationshipColumn: js.UndefOr[String] = js.native
+  var relationshipColumn: js.UndefOr[String] = js.undefined
   
   /** The id of the relationship column. */
-  var relationshipColumnId: js.UndefOr[String] = js.native
+  var relationshipColumnId: js.UndefOr[String] = js.undefined
 }
 object LookupDetails {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizationConfig extends StObject {
   
   /**
     * The authorization type required by the HTTP endpoint.    AWS_IAM: The authorization type is Sigv4.  
     */
-  var authorizationType: AuthorizationType = js.native
+  var authorizationType: AuthorizationType
   
   /**
     * The AWS IAM settings.
     */
-  var awsIamConfig: js.UndefOr[AwsIamConfig] = js.native
+  var awsIamConfig: js.UndefOr[AwsIamConfig] = js.undefined
 }
 object AuthorizationConfig {
   

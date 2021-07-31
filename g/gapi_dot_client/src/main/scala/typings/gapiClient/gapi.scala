@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.gapiClient.anon.Callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -14,28 +13,27 @@ object gapi {
     /**
       * The OAuth 2.0 token object represents the OAuth 2.0 token and any associated data.
       */
-    @js.native
     trait GoogleApiOAuth2TokenObject extends StObject {
       
       /**
         * The OAuth 2.0 token. Only present in successful responses
         */
-      var access_token: String = js.native
+      var access_token: String
       
       /**
         * Details about the error. Only present in error responses
         */
-      var error: String = js.native
+      var error: String
       
       /**
         * The duration, in seconds, the token is valid for. Only present in successful responses
         */
-      var expires_in: String = js.native
+      var expires_in: String
       
       /**
         * The Google API scopes related to this token
         */
-      var state: String = js.native
+      var state: String
     }
     object GoogleApiOAuth2TokenObject {
       
@@ -84,7 +82,7 @@ object gapi {
         * Executes all requests in the batch. The supplied callback is executed on success or failure.
         * @param callback The callback to execute when the batch returns.
         */
-      def execute(callback: js.Function2[/* responseMap */ ResponseMap[T], /* rawBatchResponse */ String, _]): Unit = js.native
+      def execute(callback: js.Function2[/* responseMap */ ResponseMap[T], /* rawBatchResponse */ String, js.Any]): Unit = js.native
     }
     
     /**
@@ -98,29 +96,28 @@ object gapi {
         * Executes the request and runs the supplied callback on response.
         * @param callback The callback function which executes when the request succeeds or fails.
         */
-      def execute(callback: js.Function1[/* response */ Response[T], _]): Unit = js.native
+      def execute(callback: js.Function1[/* response */ Response[T], js.Any]): Unit = js.native
     }
     
     /**
       * An object containing information about the HTTP response
       */
-    @js.native
     trait Response[T] extends StObject {
       
       // The raw response string.
-      var body: String = js.native
+      var body: String
       
       // The map of HTTP response headers.
-      var headers: js.UndefOr[js.Array[_]] = js.native
+      var headers: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       // The JSON-parsed result.
-      var result: T = js.native
+      var result: T
       
       // HTTP status
-      var status: js.UndefOr[Double] = js.native
+      var status: js.UndefOr[Double] = js.undefined
       
       // HTTP status text
-      var statusText: js.UndefOr[String] = js.native
+      var statusText: js.UndefOr[String] = js.undefined
     }
     object Response {
       
@@ -131,13 +128,13 @@ object gapi {
       }
       
       @scala.inline
-      implicit class ResponseMutableBuilder[Self <: Response[_], T] (val x: Self with Response[T]) extends AnyVal {
+      implicit class ResponseMutableBuilder[Self <: Response[?], T] (val x: Self & Response[T]) extends AnyVal {
         
         @scala.inline
         def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setHeaders(value: js.Array[_]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+        def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)

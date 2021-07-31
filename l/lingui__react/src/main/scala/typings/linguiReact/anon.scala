@@ -3,17 +3,15 @@ package typings.linguiReact
 import typings.linguiCore.mod.I18n_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait I18n extends StObject {
     
-    var i18n: I18n_ = js.native
+    var i18n: I18n_
     
-    var i18nHash: js.UndefOr[String] = js.native
+    var i18nHash: js.UndefOr[String] = js.undefined
   }
   object I18n {
     

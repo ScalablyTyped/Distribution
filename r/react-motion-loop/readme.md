@@ -12,7 +12,7 @@ Looping animation for react-motion Spring
 | Keywords           | component, react-component, react, react-motion, loop-animation |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 1394 |
+| # downloads        | 1858 |
 | # stars            | 0 |
 
 ## Links

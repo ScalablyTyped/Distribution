@@ -8,7 +8,6 @@ import typings.std.RequestInit
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -22,10 +21,9 @@ object anon {
     var Functions: Instantiable0[FirebaseFunctions] = js.native
   }
   
-  @js.native
   trait Delete extends StObject {
     
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
   }
   object Delete {
     
@@ -43,14 +41,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Details extends StObject {
     
-    var details: js.UndefOr[js.Any] = js.native
+    var details: js.UndefOr[js.Any] = js.undefined
     
-    var message: js.UndefOr[js.Any] = js.native
+    var message: js.UndefOr[js.Any] = js.undefined
     
-    var status: js.UndefOr[js.Any] = js.native
+    var status: js.UndefOr[js.Any] = js.undefined
   }
   object Details {
     

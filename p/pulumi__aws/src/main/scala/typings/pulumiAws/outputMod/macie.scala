@@ -2,25 +2,23 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object macie {
   
-  @js.native
   trait S3BucketAssociationClassificationType extends StObject {
     
     /**
       * A string value indicating that Macie perform a one-time classification of all of the existing objects in the bucket.
       * The only valid value is the default value, `FULL`.
       */
-    var continuous: js.UndefOr[String] = js.native
+    var continuous: js.UndefOr[String] = js.undefined
     
     /**
       * A string value indicating whether or not Macie performs a one-time classification of all of the existing objects in the bucket.
       * Valid values are `NONE` and `FULL`. Defaults to `NONE` indicating that Macie only classifies objects that are added after the association was created.
       */
-    var oneTime: js.UndefOr[String] = js.native
+    var oneTime: js.UndefOr[String] = js.undefined
   }
   object S3BucketAssociationClassificationType {
     

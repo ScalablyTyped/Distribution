@@ -3,29 +3,26 @@ package typings.socketIoEmitter
 import typings.socketIoEmitter.anon.Recordbroadcastjsonvolati
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(redisOptions: String): SocketIOEmitter = ^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any]).asInstanceOf[SocketIOEmitter]
+  @scala.inline
+  def apply(redisOptions: String, options: SocketIOEmitterOptions): SocketIOEmitter = (^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SocketIOEmitter]
+  @scala.inline
+  def apply(redisOptions: RedisClient): SocketIOEmitter = ^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any]).asInstanceOf[SocketIOEmitter]
+  @scala.inline
+  def apply(redisOptions: RedisClient, options: SocketIOEmitterOptions): SocketIOEmitter = (^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SocketIOEmitter]
+  @scala.inline
+  def apply(redisOptions: SocketIORedisOptions): SocketIOEmitter = ^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any]).asInstanceOf[SocketIOEmitter]
+  @scala.inline
+  def apply(redisOptions: SocketIORedisOptions, options: SocketIOEmitterOptions): SocketIOEmitter = (^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SocketIOEmitter]
+  
   @JSImport("socket.io-emitter", JSImport.Namespace)
   @js.native
-  def apply(redisOptions: String): SocketIOEmitter = js.native
-  @JSImport("socket.io-emitter", JSImport.Namespace)
-  @js.native
-  def apply(redisOptions: String, options: SocketIOEmitterOptions): SocketIOEmitter = js.native
-  @JSImport("socket.io-emitter", JSImport.Namespace)
-  @js.native
-  def apply(redisOptions: RedisClient): SocketIOEmitter = js.native
-  @JSImport("socket.io-emitter", JSImport.Namespace)
-  @js.native
-  def apply(redisOptions: RedisClient, options: SocketIOEmitterOptions): SocketIOEmitter = js.native
-  @JSImport("socket.io-emitter", JSImport.Namespace)
-  @js.native
-  def apply(redisOptions: SocketIORedisOptions): SocketIOEmitter = js.native
-  @JSImport("socket.io-emitter", JSImport.Namespace)
-  @js.native
-  def apply(redisOptions: SocketIORedisOptions, options: SocketIOEmitterOptions): SocketIOEmitter = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("socket.io-emitter", "SocketIOEmitter")
   @js.native
@@ -65,15 +62,14 @@ object mod {
     * The Redis client passed to `socket.io-emitter` only requires the `publish`
     * method, so accept any client that implements this.
     */
-  @js.native
   trait RedisClient extends StObject {
     
-    def publish(channel: String, message: String): js.Promise[_] = js.native
+    def publish(channel: String, message: String): js.Promise[js.Any]
   }
   object RedisClient {
     
     @scala.inline
-    def apply(publish: (String, String) => js.Promise[_]): RedisClient = {
+    def apply(publish: (String, String) => js.Promise[js.Any]): RedisClient = {
       val __obj = js.Dynamic.literal(publish = js.Any.fromFunction2(publish))
       __obj.asInstanceOf[RedisClient]
     }
@@ -82,14 +78,13 @@ object mod {
     implicit class RedisClientMutableBuilder[Self <: RedisClient] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setPublish(value: (String, String) => js.Promise[_]): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
+      def setPublish(value: (String, String) => js.Promise[js.Any]): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
     }
   }
   
-  @js.native
   trait SocketIOEmitterOptions extends StObject {
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object SocketIOEmitterOptions {
     

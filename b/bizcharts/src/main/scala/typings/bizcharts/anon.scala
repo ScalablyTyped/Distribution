@@ -8,25 +8,23 @@ import typings.bizcharts.mod.CrosshairsType
 import typings.bizcharts.mod.GeomAdjustType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoRotate extends StObject {
     
-    var autoRotate: js.UndefOr[Boolean] = js.native
+    var autoRotate: js.UndefOr[Boolean] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[String | Double] = js.native
+    var position: js.UndefOr[String | Double] = js.undefined
     
-    var style: js.UndefOr[text] = js.native
+    var style: js.UndefOr[text] = js.undefined
   }
   object AutoRotate {
     
@@ -77,16 +75,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Bottom {
     
@@ -113,18 +110,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var geom: js.Any = js.native
+    var geom: js.Any
     
-    var preData: js.Any = js.native
+    var preData: js.Any
     
-    var preShape: Shape = js.native
+    var preShape: Shape
     
-    var shape: Shape = js.native
+    var shape: Shape
   }
   object Data {
     
@@ -154,14 +150,13 @@ object anon {
     }
   }
   
-  @js.native
   trait DodgeBy extends StObject {
     
-    var dodgeBy: js.UndefOr[String] = js.native
+    var dodgeBy: js.UndefOr[String] = js.undefined
     
-    var marginRatio: js.UndefOr[Double] = js.native
+    var marginRatio: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[GeomAdjustType] = js.native
+    var `type`: js.UndefOr[GeomAdjustType] = js.undefined
   }
   object DodgeBy {
     
@@ -194,12 +189,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: Double | String = js.native
+    var id: Double | String
     
-    var name: String = js.native
+    var name: String
   }
   object Id {
     
@@ -220,16 +214,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Items extends StObject {
     
-    var items: js.Any = js.native
+    var items: js.Any
     
-    var tooltip: js.Any = js.native
+    var tooltip: js.Any
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Items {
     
@@ -256,12 +249,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object Name {
     
@@ -285,12 +277,11 @@ object anon {
     }
   }
   
-  @js.native
   trait OffsetX extends StObject {
     
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[text] = js.native
+    var style: js.UndefOr[text] = js.undefined
   }
   object OffsetX {
     
@@ -317,12 +308,11 @@ object anon {
     }
   }
   
-  @js.native
   trait OffsetY extends StObject {
     
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[text] = js.native
+    var style: js.UndefOr[text] = js.undefined
   }
   object OffsetY {
     
@@ -349,12 +339,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Style extends StObject {
     
-    var style: js.UndefOr[background | line] = js.native
+    var style: js.UndefOr[background | line] = js.undefined
     
-    var `type`: js.UndefOr[CrosshairsType] = js.native
+    var `type`: js.UndefOr[CrosshairsType] = js.undefined
   }
   object Style {
     
@@ -381,14 +370,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Tooltip extends StObject {
     
-    var tooltip: js.Any = js.native
+    var tooltip: js.Any
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Tooltip {
     
@@ -412,10 +400,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TooltipAny extends StObject {
     
-    var tooltip: js.Any = js.native
+    var tooltip: js.Any
   }
   object TooltipAny {
     
@@ -433,12 +420,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

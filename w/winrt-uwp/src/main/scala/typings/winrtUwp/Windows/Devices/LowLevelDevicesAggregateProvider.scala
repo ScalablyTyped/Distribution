@@ -2,25 +2,23 @@ package typings.winrtUwp.Windows.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LowLevelDevicesAggregateProvider extends StObject {
   
-  var adcControllerProvider: js.Any = js.native
+  var adcControllerProvider: js.Any
   
   /* unmapped type */
-  var gpioControllerProvider: js.Any = js.native
+  var gpioControllerProvider: js.Any
   
   /* unmapped type */
-  var i2cControllerProvider: js.Any = js.native
+  var i2cControllerProvider: js.Any
   
   /* unmapped type */
-  var pwmControllerProvider: js.Any = js.native
+  var pwmControllerProvider: js.Any
   
   /* unmapped type */
-  var spiControllerProvider: js.Any = js.native
+  var spiControllerProvider: js.Any
 }
 object LowLevelDevicesAggregateProvider {
   

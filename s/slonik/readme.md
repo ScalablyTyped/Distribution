@@ -10,9 +10,9 @@ A PostgreSQL client with strict types, detailed logging and assertions.
 | ------------------ | :-------------: |
 | Full name          | slonik |
 | Keywords           | postgresql, promise, types |
-| # releases         | 184 |
-| # dependents       | 23 |
-| # downloads        | 317546 |
+| # releases         | 146 |
+| # dependents       | 27 |
+| # downloads        | 416892 |
 | # stars            | 0 |
 
 ## Links

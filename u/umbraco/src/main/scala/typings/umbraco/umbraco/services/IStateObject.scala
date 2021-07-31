@@ -2,20 +2,18 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * State Object
   */
-@js.native
 trait IStateObject extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var parentId: Double = js.native
+  var parentId: Double
 }
 object IStateObject {
   

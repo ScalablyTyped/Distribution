@@ -2,71 +2,69 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemediationConfiguration extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of remediation configuration.
     */
-  var Arn: js.UndefOr[StringWithCharLimit1024] = js.native
+  var Arn: js.UndefOr[StringWithCharLimit1024] = js.undefined
   
   /**
     * The remediation is triggered automatically.
     */
-  var Automatic: js.UndefOr[Boolean] = js.native
+  var Automatic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the AWS Config rule.
     */
-  var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName = js.native
+  var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
   
   /**
     * Name of the service that owns the service linked rule, if applicable.
     */
-  var CreatedByService: js.UndefOr[StringWithCharLimit1024] = js.native
+  var CreatedByService: js.UndefOr[StringWithCharLimit1024] = js.undefined
   
   /**
     * An ExecutionControls object.
     */
-  var ExecutionControls: js.UndefOr[typings.awsSdk.configserviceMod.ExecutionControls] = js.native
+  var ExecutionControls: js.UndefOr[typings.awsSdk.configserviceMod.ExecutionControls] = js.undefined
   
   /**
     * The maximum number of failed attempts for auto-remediation. If you do not select a number, the default is 5. For example, if you specify MaximumAutomaticAttempts as 5 with RetryAttemptsSeconds as 50 seconds, AWS Config will put a RemediationException on your behalf for the failing resource after the 5th failed attempt within 50 seconds.
     */
-  var MaximumAutomaticAttempts: js.UndefOr[AutoRemediationAttempts] = js.native
+  var MaximumAutomaticAttempts: js.UndefOr[AutoRemediationAttempts] = js.undefined
   
   /**
     * An object of the RemediationParameterValue.
     */
-  var Parameters: js.UndefOr[RemediationParameters] = js.native
+  var Parameters: js.UndefOr[RemediationParameters] = js.undefined
   
   /**
     * The type of a resource. 
     */
-  var ResourceType: js.UndefOr[String] = js.native
+  var ResourceType: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum time in seconds that AWS Config runs auto-remediation. If you do not select a number, the default is 60 seconds.  For example, if you specify RetryAttemptsSeconds as 50 seconds and MaximumAutomaticAttempts as 5, AWS Config will run auto-remediations 5 times within 50 seconds before throwing an exception.
     */
-  var RetryAttemptSeconds: js.UndefOr[AutoRemediationAttemptSeconds] = js.native
+  var RetryAttemptSeconds: js.UndefOr[AutoRemediationAttemptSeconds] = js.undefined
   
   /**
     * Target ID is the name of the public document.
     */
-  var TargetId: StringWithCharLimit256 = js.native
+  var TargetId: StringWithCharLimit256
   
   /**
     * The type of the target. Target executes remediation. For example, SSM document.
     */
-  var TargetType: RemediationTargetType = js.native
+  var TargetType: RemediationTargetType
   
   /**
     * Version of the target. For example, version of the SSM document.  If you make backward incompatible changes to the SSM document, you must call PutRemediationConfiguration API again to ensure the remediations can run. 
     */
-  var TargetVersion: js.UndefOr[String] = js.native
+  var TargetVersion: js.UndefOr[String] = js.undefined
 }
 object RemediationConfiguration {
   

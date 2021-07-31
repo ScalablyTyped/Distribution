@@ -2,15 +2,13 @@ package typings.activexOutlook.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachmentCancel extends StObject {
   
-  val Attachment: typings.activexOutlook.Outlook.Attachment = js.native
+  val Attachment: typings.activexOutlook.Outlook.Attachment
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
 }
 object AttachmentCancel {
   

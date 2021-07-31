@@ -2,25 +2,23 @@ package typings.braintreeWebDropIn.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
-  var city: String = js.native
+  var city: String
   
-  var countryCode: String = js.native
+  var countryCode: String
   
-  var line1: String = js.native
+  var line1: String
   
-  var line2: String = js.native
+  var line2: String
   
-  var postalCode: String = js.native
+  var postalCode: String
   
-  var recipientName: String = js.native
+  var recipientName: String
   
-  var state: String = js.native
+  var state: String
 }
 object Address {
   

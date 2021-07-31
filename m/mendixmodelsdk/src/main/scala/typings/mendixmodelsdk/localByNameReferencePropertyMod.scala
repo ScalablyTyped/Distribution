@@ -13,10 +13,13 @@ import typings.mendixmodelsdk.utilsMod.utils.IMap
 import typings.mobx.observablevalueMod.IObservableValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localByNameReferencePropertyMod {
+  
+  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty", "LocalByNameReferenceProperty")
   @js.native
@@ -39,7 +42,7 @@ object localByNameReferencePropertyMod {
     def deepCopyInto(clone: Structure[IAbstractModel, IContainer | Null]): Unit = js.native
     def deepCopyInto(
       clone: Structure[IAbstractModel, IContainer | Null],
-      idMap: js.UndefOr[scala.Nothing],
+      idMap: Unit,
       unresolvedIdentifierFixers: js.Array[
           js.Function1[/* idMap */ IMap[Structure[IAbstractModel, IContainer | Null]], Unit]
         ]
@@ -62,12 +65,13 @@ object localByNameReferencePropertyMod {
     def updateWithRawValue(value: String): Unit = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty", "isNamedElement")
-  @js.native
-  def isNamedElement(element: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean = js.native
+  @scala.inline
+  def isNamedElement(element: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedElement")(element.asInstanceOf[js.Any]).asInstanceOf[/* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean]
   
   @js.native
-  trait INamedElement extends IElement {
+  trait INamedElement
+    extends StObject
+       with IElement {
     
     var name: String = js.native
   }

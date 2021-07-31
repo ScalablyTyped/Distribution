@@ -2,22 +2,20 @@ package typings.mapboxMapboxSdk.directionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lane extends StObject {
   
   /**
     * Array of signs for each turn lane. There can be multiple signs. For example, a turning lane can have a sign with an arrow pointing left and another sign with an arrow pointing straight.
     */
-  var indications: js.Array[String] = js.native
+  var indications: js.Array[String]
   
   /**
     * Boolean value for whether this lane can be taken to complete the maneuver. For instance, if the lane array has four objects and the
     * first two are marked as valid, then the driver can take either of the left lanes and stay on the route.
     */
-  var valid: Boolean = js.native
+  var valid: Boolean
 }
 object Lane {
   

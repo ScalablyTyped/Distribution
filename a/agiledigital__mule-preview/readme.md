@@ -12,7 +12,7 @@ Renders Mule XML files as HTML.
 | Keywords           | - |
 | # releases         | 17 |
 | # dependents       | 0 |
-| # downloads        | 2293 |
+| # downloads        | 2640 |
 | # stars            | 0 |
 
 ## Links

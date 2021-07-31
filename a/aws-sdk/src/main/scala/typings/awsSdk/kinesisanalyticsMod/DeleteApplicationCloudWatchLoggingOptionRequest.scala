@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApplicationCloudWatchLoggingOptionRequest extends StObject {
   
   /**
     * The Kinesis Analytics application name.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsMod.ApplicationName
   
   /**
     * The CloudWatchLoggingOptionId of the CloudWatch logging option to delete. You can get the CloudWatchLoggingOptionId by using the DescribeApplication operation. 
     */
-  var CloudWatchLoggingOptionId: Id = js.native
+  var CloudWatchLoggingOptionId: Id
   
   /**
     * The version ID of the Kinesis Analytics application.
     */
-  var CurrentApplicationVersionId: ApplicationVersionId = js.native
+  var CurrentApplicationVersionId: ApplicationVersionId
 }
 object DeleteApplicationCloudWatchLoggingOptionRequest {
   

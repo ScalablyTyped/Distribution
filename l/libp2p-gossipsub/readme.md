@@ -10,9 +10,9 @@ A typescript implementation of gossipsub
 | ------------------ | :-------------: |
 | Full name          | libp2p-gossipsub |
 | Keywords           | libp2p, pubsub, gossip |
-| # releases         | 27 |
-| # dependents       | 11 |
-| # downloads        | 175780 |
+| # releases         | 35 |
+| # dependents       | 17 |
+| # downloads        | 249010 |
 | # stars            | 0 |
 
 ## Links

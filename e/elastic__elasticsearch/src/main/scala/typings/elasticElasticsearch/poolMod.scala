@@ -16,7 +16,6 @@ import typings.node.tlsMod.SecureContextOptions
 import typings.node.urlMod.URL_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object poolMod {
@@ -93,7 +92,7 @@ object poolMod {
       * @param {object} nodes
       * @returns {array} hosts
       */
-    def nodesToHost(nodes: js.Any, protocol: String): js.Array[_] = js.native
+    def nodesToHost(nodes: js.Any, protocol: String): js.Array[js.Any] = js.native
     
     /**
       * Removes a new connection to the pool.
@@ -111,7 +110,7 @@ object poolMod {
       * @param {array} array of connections
       * @returns {ConnectionPool}
       */
-    def update(connections: js.Array[_]): this.type = js.native
+    def update(connections: js.Array[js.Any]): this.type = js.native
     
     /**
       * Transforms an url string to a host object
@@ -198,24 +197,21 @@ object poolMod {
     @JSImport("@elastic/elasticsearch/lib/pool", "internals.defaultNodeFilter")
     @js.native
     def defaultNodeFilter: js.Function1[/* node */ default, Boolean] = js.native
-    @JSImport("@elastic/elasticsearch/lib/pool", "internals.defaultNodeFilter")
-    @js.native
-    def defaultNodeFilter(node: default): Boolean = js.native
+    @scala.inline
+    def defaultNodeFilter(node: default): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultNodeFilter")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     @scala.inline
     def defaultNodeFilter_=(x: js.Function1[/* node */ default, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultNodeFilter")(x.asInstanceOf[js.Any])
     
     @JSImport("@elastic/elasticsearch/lib/pool", "internals.randomSelector")
     @js.native
     def randomSelector: js.Function1[/* connections */ js.Array[default], default] = js.native
-    @JSImport("@elastic/elasticsearch/lib/pool", "internals.randomSelector")
-    @js.native
-    def randomSelector(connections: js.Array[default]): default = js.native
+    @scala.inline
+    def randomSelector(connections: js.Array[default]): default = ^.asInstanceOf[js.Dynamic].applyDynamic("randomSelector")(connections.asInstanceOf[js.Any]).asInstanceOf[default]
     @scala.inline
     def randomSelector_=(x: js.Function1[/* connections */ js.Array[default], default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("randomSelector")(x.asInstanceOf[js.Any])
     
-    @JSImport("@elastic/elasticsearch/lib/pool", "internals.roundRobinSelector")
-    @js.native
-    def roundRobinSelector(): js.Function1[/* connections */ js.Array[default], default] = js.native
+    @scala.inline
+    def roundRobinSelector(): js.Function1[/* connections */ js.Array[default], default] = ^.asInstanceOf[js.Dynamic].applyDynamic("roundRobinSelector")().asInstanceOf[js.Function1[/* connections */ js.Array[default], default]]
     @JSImport("@elastic/elasticsearch/lib/pool", "internals.roundRobinSelector")
     @js.native
     def roundRobinSelector_Finternals: js.Function0[js.Function1[/* connections */ js.Array[default], default]] = js.native
@@ -224,10 +220,9 @@ object poolMod {
     def roundRobinSelector_Finternals_=(x: js.Function0[js.Function1[/* connections */ js.Array[default], default]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roundRobinSelector")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ApiKeyAuth extends StObject {
     
-    var apiKey: String | Apikey = js.native
+    var apiKey: String | Apikey
   }
   object ApiKeyAuth {
     
@@ -262,12 +257,11 @@ object poolMod {
     var ssl: js.UndefOr[SecureContextOptions] = js.native
   }
   
-  @js.native
   trait BasicAuth extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var username: String = js.native
+    var username: String
   }
   object BasicAuth {
     
@@ -289,7 +283,9 @@ object poolMod {
   }
   
   @js.native
-  trait ConnectionPoolOptions extends BaseConnectionPoolOptions {
+  trait ConnectionPoolOptions
+    extends StObject
+       with BaseConnectionPoolOptions {
     
     var pingTimeout: js.UndefOr[Double] = js.native
     
@@ -298,18 +294,17 @@ object poolMod {
     var sniffEnabled: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
   trait ResurrectEvent extends StObject {
     
-    var connection: default = js.native
+    var connection: default
     
-    var isAlive: Boolean = js.native
+    var isAlive: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var request: IdAny = js.native
+    var request: IdAny
     
-    var strategy: String = js.native
+    var strategy: String
   }
   object ResurrectEvent {
     
@@ -339,18 +334,17 @@ object poolMod {
     }
   }
   
-  @js.native
   trait getConnectionOptions extends StObject {
     
-    var filter: js.UndefOr[nodeFilterFn] = js.native
+    var filter: js.UndefOr[nodeFilterFn] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var now: js.UndefOr[Double] = js.native
+    var now: js.UndefOr[Double] = js.undefined
     
-    var requestId: js.UndefOr[String | Double] = js.native
+    var requestId: js.UndefOr[String | Double] = js.undefined
     
-    var selector: js.UndefOr[nodeSelectorFn] = js.native
+    var selector: js.UndefOr[nodeSelectorFn] = js.undefined
   }
   object getConnectionOptions {
     
@@ -395,14 +389,13 @@ object poolMod {
     }
   }
   
-  @js.native
   trait resurrectOptions extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var now: js.UndefOr[Double] = js.native
+    var now: js.UndefOr[Double] = js.undefined
     
-    var requestId: String = js.native
+    var requestId: String
   }
   object resurrectOptions {
     

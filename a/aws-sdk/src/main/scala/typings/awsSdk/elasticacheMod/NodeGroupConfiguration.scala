@@ -2,46 +2,44 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeGroupConfiguration extends StObject {
   
   /**
     * Either the ElastiCache for Redis supplied 4-digit id or a user supplied id for the node group these configuration values apply to.
     */
-  var NodeGroupId: js.UndefOr[AllowedNodeGroupId] = js.native
+  var NodeGroupId: js.UndefOr[AllowedNodeGroupId] = js.undefined
   
   /**
     * The Availability Zone where the primary node of this node group (shard) is launched.
     */
-  var PrimaryAvailabilityZone: js.UndefOr[String] = js.native
+  var PrimaryAvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The output ARN of the primary node.
     */
-  var PrimaryOutpostArn: js.UndefOr[String] = js.native
+  var PrimaryOutpostArn: js.UndefOr[String] = js.undefined
   
   /**
     * A list of Availability Zones to be used for the read replicas. The number of Availability Zones in this list must match the value of ReplicaCount or ReplicasPerNodeGroup if not specified.
     */
-  var ReplicaAvailabilityZones: js.UndefOr[AvailabilityZonesList] = js.native
+  var ReplicaAvailabilityZones: js.UndefOr[AvailabilityZonesList] = js.undefined
   
   /**
     * The number of read replica nodes in this node group (shard).
     */
-  var ReplicaCount: js.UndefOr[IntegerOptional] = js.native
+  var ReplicaCount: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The outpost ARN of the node replicas.
     */
-  var ReplicaOutpostArns: js.UndefOr[OutpostArnsList] = js.native
+  var ReplicaOutpostArns: js.UndefOr[OutpostArnsList] = js.undefined
   
   /**
     * A string that specifies the keyspace for a particular node group. Keyspaces range from 0 to 16,383. The string is in the format startkey-endkey. Example: "0-3999" 
     */
-  var Slots: js.UndefOr[String] = js.native
+  var Slots: js.UndefOr[String] = js.undefined
 }
 object NodeGroupConfiguration {
   

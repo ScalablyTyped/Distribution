@@ -2,188 +2,146 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tm {
   
-  @JSGlobal("KSR.tm.t_any_replied")
+  @JSGlobal("KSR.tm")
   @js.native
-  def tAnyReplied(): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.tm.t_any_timeout")
-  @js.native
-  def tAnyTimeout(): Double = js.native
+  @scala.inline
+  def tAnyReplied(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_any_replied")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_branch_replied")
-  @js.native
-  def tBranchReplied(): Double = js.native
+  @scala.inline
+  def tAnyTimeout(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_any_timeout")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_branch_timeout")
-  @js.native
-  def tBranchTimeout(): Double = js.native
+  @scala.inline
+  def tBranchReplied(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_branch_replied")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_check_status")
-  @js.native
-  def tCheckStatus(sexp: String): Double = js.native
+  @scala.inline
+  def tBranchTimeout(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_branch_timeout")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_check_trans")
-  @js.native
-  def tCheckTrans(): Double = js.native
+  @scala.inline
+  def tCheckStatus(sexp: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_check_status")(sexp.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_drop_replies")
-  @js.native
-  def tDropReplies(mode: String): Double = js.native
+  @scala.inline
+  def tCheckTrans(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_check_trans")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_drop_replies_all")
-  @js.native
-  def tDropRepliesAll(): Double = js.native
+  @scala.inline
+  def tDropReplies(mode: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_drop_replies")(mode.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_grep_status")
-  @js.native
-  def tGrepStatus(code: Double): Double = js.native
+  @scala.inline
+  def tDropRepliesAll(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_drop_replies_all")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_is_canceled")
-  @js.native
-  def tIsCanceled(): Double = js.native
+  @scala.inline
+  def tGrepStatus(code: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_grep_status")(code.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_is_expired")
-  @js.native
-  def tIsExpired(): Double = js.native
+  @scala.inline
+  def tIsCanceled(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_is_canceled")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_is_retr_async_reply")
-  @js.native
-  def tIsRetrAsyncReply(): Double = js.native
+  @scala.inline
+  def tIsExpired(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_is_expired")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_is_set")
-  @js.native
-  def tIsSet(target: String): Double = js.native
+  @scala.inline
+  def tIsRetrAsyncReply(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_is_retr_async_reply")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_load_contacts")
-  @js.native
-  def tLoadContacts(): Double = js.native
+  @scala.inline
+  def tIsSet(target: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_is_set")(target.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_lookup_cancel")
-  @js.native
-  def tLookupCancel(): Double = js.native
+  @scala.inline
+  def tLoadContacts(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_load_contacts")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_lookup_cancel_flags")
-  @js.native
-  def tLookupCancelFlags(flags: Double): Double = js.native
+  @scala.inline
+  def tLookupCancel(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_lookup_cancel")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_lookup_request")
-  @js.native
-  def tLookupRequest(): Double = js.native
+  @scala.inline
+  def tLookupCancelFlags(flags: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_lookup_cancel_flags")(flags.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_newtran")
-  @js.native
-  def tNewtran(): Double = js.native
+  @scala.inline
+  def tLookupRequest(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_lookup_request")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_next_contact_flow")
-  @js.native
-  def tNextContactFlow(): Double = js.native
+  @scala.inline
+  def tNewtran(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_newtran")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_next_contacts")
-  @js.native
-  def tNextContacts(): Double = js.native
+  @scala.inline
+  def tNextContactFlow(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_next_contact_flow")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_on_branch")
-  @js.native
-  def tOnBranch(rname: String): Double = js.native
+  @scala.inline
+  def tNextContacts(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_next_contacts")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_on_branch_failure")
-  @js.native
-  def tOnBranchFailure(rname: String): Double = js.native
+  @scala.inline
+  def tOnBranch(rname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_on_branch")(rname.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_on_failure")
-  @js.native
-  def tOnFailure(rname: String): Double = js.native
+  @scala.inline
+  def tOnBranchFailure(rname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_on_branch_failure")(rname.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_on_reply")
-  @js.native
-  def tOnReply(rname: String): Double = js.native
+  @scala.inline
+  def tOnFailure(rname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_on_failure")(rname.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_relay")
-  @js.native
-  def tRelay(): Double = js.native
+  @scala.inline
+  def tOnReply(rname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_on_reply")(rname.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_release")
-  @js.native
-  def tRelease(): Double = js.native
+  @scala.inline
+  def tRelay(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_relay")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_replicate")
-  @js.native
-  def tReplicate(suri: String): Double = js.native
+  @scala.inline
+  def tRelease(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_release")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_reply")
-  @js.native
-  def tReply(code: Double, reason: String): Double = js.native
+  @scala.inline
+  def tReplicate(suri: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_replicate")(suri.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_reset_fr")
-  @js.native
-  def tResetFr(): Double = js.native
+  @scala.inline
+  def tReply(code: Double, reason: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("t_reply")(code.asInstanceOf[js.Any], reason.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_reset_max_lifetime")
-  @js.native
-  def tResetMaxLifetime(): Double = js.native
+  @scala.inline
+  def tResetFr(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_reset_fr")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_reset_retr")
-  @js.native
-  def tResetRetr(): Double = js.native
+  @scala.inline
+  def tResetMaxLifetime(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_reset_max_lifetime")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_retransmit_reply")
-  @js.native
-  def tRetransmitReply(): Double = js.native
+  @scala.inline
+  def tResetRetr(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_reset_retr")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_save_lumps")
-  @js.native
-  def tSaveLumps(): Double = js.native
+  @scala.inline
+  def tRetransmitReply(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_retransmit_reply")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_send_reply")
-  @js.native
-  def tSendReply(code: Double, reason: String): Double = js.native
+  @scala.inline
+  def tSaveLumps(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_save_lumps")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_set_auto_inv_100")
-  @js.native
-  def tSetAutoInv100(state: Double): Double = js.native
+  @scala.inline
+  def tSendReply(code: Double, reason: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("t_send_reply")(code.asInstanceOf[js.Any], reason.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_set_disable_6xx")
-  @js.native
-  def tSetDisable6xx(state: Double): Double = js.native
+  @scala.inline
+  def tSetAutoInv100(state: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_set_auto_inv_100")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_set_disable_failover")
-  @js.native
-  def tSetDisableFailover(state: Double): Double = js.native
+  @scala.inline
+  def tSetDisable6xx(state: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_set_disable_6xx")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_set_disable_internal_reply")
-  @js.native
-  def tSetDisableInternalReply(state: Double): Double = js.native
+  @scala.inline
+  def tSetDisableFailover(state: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_set_disable_failover")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_set_fr")
-  @js.native
-  def tSetFr(fr_inv: Double, fr: Double): Double = js.native
+  @scala.inline
+  def tSetDisableInternalReply(state: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_set_disable_internal_reply")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_set_fr_inv")
-  @js.native
-  def tSetFrInv(fr_inv: Double): Double = js.native
+  @scala.inline
+  def tSetFr(fr_inv: Double, fr: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("t_set_fr")(fr_inv.asInstanceOf[js.Any], fr.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_set_max_lifetime")
-  @js.native
-  def tSetMaxLifetime(t1: Double, t2: Double): Double = js.native
+  @scala.inline
+  def tSetFrInv(fr_inv: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_set_fr_inv")(fr_inv.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_set_no_e2e_cancel_reason")
-  @js.native
-  def tSetNoE2eCancelReason(state: Double): Double = js.native
+  @scala.inline
+  def tSetMaxLifetime(t1: Double, t2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("t_set_max_lifetime")(t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_set_retr")
-  @js.native
-  def tSetRetr(t1: Double, t2: Double): Double = js.native
+  @scala.inline
+  def tSetNoE2eCancelReason(state: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_set_no_e2e_cancel_reason")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_uac_send")
-  @js.native
-  def tUacSend(method: String, ruri: String, nexthop: String, ssock: String, hdrs: String, body: String): Double = js.native
+  @scala.inline
+  def tSetRetr(t1: Double, t2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("t_set_retr")(t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tm.t_use_uac_headers")
-  @js.native
-  def tUseUacHeaders(): Double = js.native
+  @scala.inline
+  def tUacSend(method: String, ruri: String, nexthop: String, ssock: String, hdrs: String, body: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("t_uac_send")(method.asInstanceOf[js.Any], ruri.asInstanceOf[js.Any], nexthop.asInstanceOf[js.Any], ssock.asInstanceOf[js.Any], hdrs.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def tUseUacHeaders(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("t_use_uac_headers")().asInstanceOf[Double]
 }

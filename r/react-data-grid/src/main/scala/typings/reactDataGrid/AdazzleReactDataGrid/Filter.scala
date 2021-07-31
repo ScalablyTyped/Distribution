@@ -2,24 +2,22 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Some filter to be applied to the grid's contents
   */
-@js.native
 trait Filter extends StObject {
   
   /**
     * The key of the column being filtered.
     */
-  var columnKey: String = js.native
+  var columnKey: String
   
   /**
     * The term to filter by.
     */
-  var filterTerm: String = js.native
+  var filterTerm: String
 }
 object Filter {
   

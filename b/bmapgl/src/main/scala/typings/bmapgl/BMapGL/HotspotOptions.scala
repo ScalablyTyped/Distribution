@@ -2,21 +2,19 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HotspotOptions extends StObject {
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var offsets: js.UndefOr[js.Array[Double]] = js.native
+  var offsets: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var userData: js.UndefOr[js.Any] = js.native
+  var userData: js.UndefOr[js.Any] = js.undefined
 }
 object HotspotOptions {
   

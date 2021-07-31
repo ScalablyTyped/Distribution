@@ -4,21 +4,22 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelMod {
   
-  @JSImport("rc-table/lib/Panel", JSImport.Default)
+  @JSImport("rc-table/lib/Panel", JSImport.Namespace)
   @js.native
-  def default(hasClassNameChildren: TitleProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasClassNameChildren: TitleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNameChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait TitleProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: String = js.native
+    var className: String
   }
   object TitleProps {
     

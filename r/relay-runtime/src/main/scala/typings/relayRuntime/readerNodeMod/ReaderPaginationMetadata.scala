@@ -3,23 +3,21 @@ package typings.relayRuntime.readerNodeMod
 import typings.relayRuntime.anon.Count
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReaderPaginationMetadata extends StObject {
   
-  val backward: Count | Null = js.native
+  val backward: Count | Null
   
-  val forward: Count | Null = js.native
+  val forward: Count | Null
   
-  val path: js.Array[String] = js.native
+  val path: js.Array[String]
 }
 object ReaderPaginationMetadata {
   
   @scala.inline
   def apply(path: js.Array[String]): ReaderPaginationMetadata = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], backward = null, forward = null)
     __obj.asInstanceOf[ReaderPaginationMetadata]
   }
   

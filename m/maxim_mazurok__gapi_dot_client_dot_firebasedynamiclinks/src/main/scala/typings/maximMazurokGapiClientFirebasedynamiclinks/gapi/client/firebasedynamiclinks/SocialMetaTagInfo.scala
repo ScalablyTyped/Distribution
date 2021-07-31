@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebased
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocialMetaTagInfo extends StObject {
   
   /** A short description of the link. Optional. */
-  var socialDescription: js.UndefOr[String] = js.native
+  var socialDescription: js.UndefOr[String] = js.undefined
   
   /** An image url string. Optional. */
-  var socialImageLink: js.UndefOr[String] = js.native
+  var socialImageLink: js.UndefOr[String] = js.undefined
   
   /** Title to be displayed. Optional. */
-  var socialTitle: js.UndefOr[String] = js.native
+  var socialTitle: js.UndefOr[String] = js.undefined
 }
 object SocialMetaTagInfo {
   

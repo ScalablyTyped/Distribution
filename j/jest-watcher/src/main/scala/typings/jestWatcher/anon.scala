@@ -12,17 +12,15 @@ import typings.node.processMod.global.NodeJS.ReadStream
 import typings.node.processMod.global.NodeJS.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Config extends StObject {
     
-    var config: ProjectConfig = js.native
+    var config: ProjectConfig
     
-    var testPaths: js.Array[Path] = js.native
+    var testPaths: js.Array[Path]
   }
   object Config {
     
@@ -46,14 +44,13 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var index: Double = js.native
+    var index: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object End {
     
@@ -77,10 +74,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Header extends StObject {
     
-    var header: String = js.native
+    var header: String
   }
   object Header {
     
@@ -99,14 +95,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<jest-watcher.jest-watcher/build/types.JestHookEmitter> */
-  @js.native
   trait ReadonlyJestHookEmitter extends StObject {
     
-    def onFileChange(fs: JestHookExposedFS): Unit = js.native
+    def onFileChange(fs: JestHookExposedFS): Unit
     
-    def onTestRunComplete(results: AggregatedResult): Unit = js.native
+    def onTestRunComplete(results: AggregatedResult): Unit
     
-    def shouldRunTestSuite(testSuiteInfo: TestSuiteInfo): js.Promise[Boolean] | Boolean = js.native
+    def shouldRunTestSuite(testSuiteInfo: TestSuiteInfo): js.Promise[Boolean] | Boolean
   }
   object ReadonlyJestHookEmitter {
     
@@ -135,14 +130,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<jest-watcher.jest-watcher/build/types.JestHookSubscriber> */
-  @js.native
   trait ReadonlyJestHookSubscribe extends StObject {
     
-    def onFileChange(fn: FileChange): Unit = js.native
+    def onFileChange(fn: FileChange): Unit
     
-    def onTestRunComplete(fn: TestRunComplete): Unit = js.native
+    def onTestRunComplete(fn: TestRunComplete): Unit
     
-    def shouldRunTestSuite(fn: ShouldRunTestSuite): Unit = js.native
+    def shouldRunTestSuite(fn: ShouldRunTestSuite): Unit
   }
   object ReadonlyJestHookSubscribe {
     
@@ -170,12 +164,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Stdin extends StObject {
     
-    var stdin: ReadStream = js.native
+    var stdin: ReadStream
     
-    var stdout: WriteStream = js.native
+    var stdout: WriteStream
   }
   object Stdin {
     

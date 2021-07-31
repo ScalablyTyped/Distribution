@@ -12,7 +12,6 @@ import typings.nodegit.treeEntryMod.TreeEntry
 import typings.nodegit.treeUpdateMod.TreeUpdate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeMod {
@@ -42,7 +41,7 @@ object treeMod {
       * Diff two trees with options
       */
     def diffWithOptions(tree: Tree): js.Promise[Diff] = js.native
-    def diffWithOptions(tree: Tree, options: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Diff] = js.native
+    def diffWithOptions(tree: Tree, options: Unit, callback: js.Function): js.Promise[Diff] = js.native
     def diffWithOptions(tree: Tree, options: Object): js.Promise[Diff] = js.native
     def diffWithOptions(tree: Tree, options: Object, callback: js.Function): js.Promise[Diff] = js.native
     
@@ -96,39 +95,34 @@ object treeMod {
   /* static members */
   object Tree {
     
-    @JSImport("nodegit/tree", "Tree.entryCmp")
+    @JSImport("nodegit/tree", "Tree")
     @js.native
-    def entryCmp(tree1: TreeEntry, tree2: TreeEntry): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/tree", "Tree.entryDup")
-    @js.native
-    def entryDup(dest: TreeEntry, source: TreeEntry): Double = js.native
+    @scala.inline
+    def entryCmp(tree1: TreeEntry, tree2: TreeEntry): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("entryCmp")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def entryDup(dest: TreeEntry, source: TreeEntry): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("entryDup")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Retrieves the tree pointed to by the oid
       */
-    @JSImport("nodegit/tree", "Tree.lookup")
-    @js.native
-    def lookup(repo: Repository, id: String): js.Promise[Tree] = js.native
-    @JSImport("nodegit/tree", "Tree.lookup")
-    @js.native
-    def lookup(repo: Repository, id: String, callback: js.Function): js.Promise[Tree] = js.native
-    @JSImport("nodegit/tree", "Tree.lookup")
-    @js.native
-    def lookup(repo: Repository, id: Oid): js.Promise[Tree] = js.native
-    @JSImport("nodegit/tree", "Tree.lookup")
-    @js.native
-    def lookup(repo: Repository, id: Oid, callback: js.Function): js.Promise[Tree] = js.native
-    @JSImport("nodegit/tree", "Tree.lookup")
-    @js.native
-    def lookup(repo: Repository, id: Tree): js.Promise[Tree] = js.native
-    @JSImport("nodegit/tree", "Tree.lookup")
-    @js.native
-    def lookup(repo: Repository, id: Tree, callback: js.Function): js.Promise[Tree] = js.native
+    @scala.inline
+    def lookup(repo: Repository, id: String): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
+    @scala.inline
+    def lookup(repo: Repository, id: String, callback: js.Function): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
+    @scala.inline
+    def lookup(repo: Repository, id: Oid): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
+    @scala.inline
+    def lookup(repo: Repository, id: Oid, callback: js.Function): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
+    @scala.inline
+    def lookup(repo: Repository, id: Tree): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
+    @scala.inline
+    def lookup(repo: Repository, id: Tree, callback: js.Function): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
     
-    @JSImport("nodegit/tree", "Tree.lookupPrefix")
-    @js.native
-    def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[Tree] = js.native
+    @scala.inline
+    def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPrefix")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`

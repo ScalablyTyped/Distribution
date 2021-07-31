@@ -1,32 +1,29 @@
 package typings.webidl2.mod
 
-import typings.webidl2.webidl2Booleans.`false`
 import typings.webidl2.webidl2Strings.sequence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SequenceTypeDescription
-  extends AbstractGenericTypeDescription
+  extends StObject
+     with AbstractGenericTypeDescription
      with GenericTypeDescription {
   
   @JSName("generic")
-  var generic_SequenceTypeDescription: sequence = js.native
+  var generic_SequenceTypeDescription: sequence
 }
 object SequenceTypeDescription {
   
   @scala.inline
   def apply(
     extAttrs: js.Array[ExtendedAttribute],
-    generic: sequence,
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,
-    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription,
-    union: `false`
+    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription
   ): SequenceTypeDescription = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = "sequence", idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = false)
+    __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[SequenceTypeDescription]
   }
   

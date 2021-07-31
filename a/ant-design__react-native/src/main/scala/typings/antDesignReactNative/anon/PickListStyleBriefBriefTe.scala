@@ -4,16 +4,14 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@ant-design/react-native.@ant-design/react-native/lib/list/style.ListStyle, 'Brief' | 'BriefText'> */
-@js.native
 trait PickListStyleBriefBriefTe extends StObject {
   
-  var Brief: ViewStyle = js.native
+  var Brief: ViewStyle
   
-  var BriefText: TextStyle = js.native
+  var BriefText: TextStyle
 }
 object PickListStyleBriefBriefTe {
   

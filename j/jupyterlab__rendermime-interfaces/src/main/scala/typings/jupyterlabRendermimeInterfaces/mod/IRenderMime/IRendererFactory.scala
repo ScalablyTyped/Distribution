@@ -2,13 +2,11 @@ package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for a renderer factory.
   */
-@js.native
 trait IRendererFactory extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait IRendererFactory extends StObject {
     *
     * @param options - The options used to render the data.
     */
-  def createRenderer(options: IRendererOptions): IRenderer = js.native
+  def createRenderer(options: IRendererOptions): IRenderer
   
   /**
     * The default rank of the factory.  If not given, defaults to 100.
     */
-  val defaultRank: js.UndefOr[Double] = js.native
+  val defaultRank: js.UndefOr[Double] = js.undefined
   
   /**
     * The mime types handled by this factory.
     */
-  val mimeTypes: js.Array[String] = js.native
+  val mimeTypes: js.Array[String]
   
   /**
     * Whether the factory is a "safe" factory.
@@ -38,7 +36,7 @@ trait IRendererFactory extends StObject {
     * with a "Run cell to view output" message. A "safe" renderer
     * is an indication that its sanitized output will be useful.
     */
-  val safe: Boolean = js.native
+  val safe: Boolean
 }
 object IRendererFactory {
   

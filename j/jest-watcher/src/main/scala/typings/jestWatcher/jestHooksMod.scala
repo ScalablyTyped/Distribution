@@ -4,14 +4,34 @@ import typings.jestWatcher.anon.ReadonlyJestHookEmitter
 import typings.jestWatcher.anon.ReadonlyJestHookSubscribe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jestHooksMod {
   
   @JSImport("jest-watcher/build/JestHooks", JSImport.Default)
   @js.native
-  class default () extends JestHooks
+  class default ()
+    extends StObject
+       with JestHooks {
+    
+    /* CompleteClass */
+    var _emitter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _listeners: js.Any = js.native
+    
+    /* CompleteClass */
+    var _subscriber: js.Any = js.native
+    
+    /* CompleteClass */
+    override def getEmitter(): ReadonlyJestHookEmitter = js.native
+    
+    /* CompleteClass */
+    override def getSubscriber(): ReadonlyJestHookSubscribe = js.native
+    
+    /* CompleteClass */
+    override def isUsed(hook: AvailableHooks): Boolean = js.native
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.jestWatcher.jestWatcherStrings.onFileChange
@@ -31,20 +51,19 @@ object jestHooksMod {
     def shouldRunTestSuite: typings.jestWatcher.jestWatcherStrings.shouldRunTestSuite = "shouldRunTestSuite".asInstanceOf[typings.jestWatcher.jestWatcherStrings.shouldRunTestSuite]
   }
   
-  @js.native
   trait JestHooks extends StObject {
     
-    var _emitter: js.Any = js.native
+    var _emitter: js.Any
     
-    var _listeners: js.Any = js.native
+    var _listeners: js.Any
     
-    var _subscriber: js.Any = js.native
+    var _subscriber: js.Any
     
-    def getEmitter(): ReadonlyJestHookEmitter = js.native
+    def getEmitter(): ReadonlyJestHookEmitter
     
-    def getSubscriber(): ReadonlyJestHookSubscribe = js.native
+    def getSubscriber(): ReadonlyJestHookSubscribe
     
-    def isUsed(hook: AvailableHooks): Boolean = js.native
+    def isUsed(hook: AvailableHooks): Boolean
   }
   object JestHooks {
     

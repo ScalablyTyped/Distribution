@@ -2,23 +2,21 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PriceHistory extends StObject {
   
-  var avgPrice: Double = js.native
+  var avgPrice: Double
   
-  var date: String = js.native
+  var date: String
   
-  var resourceType: MarketResourceConstant = js.native
+  var resourceType: MarketResourceConstant
   
-  var stddevPrice: Double = js.native
+  var stddevPrice: Double
   
-  var transactions: Double = js.native
+  var transactions: Double
   
-  var volume: Double = js.native
+  var volume: Double
 }
 object PriceHistory {
   

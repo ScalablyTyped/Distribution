@@ -2,42 +2,40 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the action.
   */
-@js.native
 trait SchemaAction extends StObject {
   
   /**
     * The actor responsible for this action (or empty if all actors are
     * responsible).
     */
-  var actor: js.UndefOr[SchemaActor] = js.native
+  var actor: js.UndefOr[SchemaActor] = js.undefined
   
   /**
     * The type and detailed information about the action.
     */
-  var detail: js.UndefOr[SchemaActionDetail] = js.native
+  var detail: js.UndefOr[SchemaActionDetail] = js.undefined
   
   /**
     * The target this action affects (or empty if affecting all targets). This
     * represents the state of the target immediately after this action
     * occurred.
     */
-  var target: js.UndefOr[SchemaTarget] = js.native
+  var target: js.UndefOr[SchemaTarget] = js.undefined
   
   /**
     * The action occurred over this time range.
     */
-  var timeRange: js.UndefOr[SchemaTimeRange] = js.native
+  var timeRange: js.UndefOr[SchemaTimeRange] = js.undefined
   
   /**
     * The action occurred at this specific time.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
 }
 object SchemaAction {
   

@@ -3,11 +3,11 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.data.reader.IJson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IArrayReader extends IJson
+trait IArrayReader
+  extends StObject
+     with IJson
 object IArrayReader {
   
   @scala.inline

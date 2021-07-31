@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnScreenPositionAssignedTargetingOptionDetails extends StObject {
   
   /** Output only. The on screen position. */
-  var onScreenPosition: js.UndefOr[String] = js.native
+  var onScreenPosition: js.UndefOr[String] = js.undefined
   
   /** Required. The targeting_option_id field when targeting_type is `TARGETING_TYPE_ON_SCREEN_POSITION`. */
-  var targetingOptionId: js.UndefOr[String] = js.native
+  var targetingOptionId: js.UndefOr[String] = js.undefined
 }
 object OnScreenPositionAssignedTargetingOptionDetails {
   

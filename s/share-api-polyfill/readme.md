@@ -10,9 +10,9 @@ This is a polyfill for the `Web Share API` that can be used in desktop too, so y
 | ------------------ | :-------------: |
 | Full name          | share-api-polyfill |
 | Keywords           | share, share api, share-api, share polyfill, share-polyfill, share api polyfill, share-api-polyfill |
-| # releases         | 20 |
-| # dependents       | 1 |
-| # downloads        | 26466 |
+| # releases         | 22 |
+| # dependents       | 0 |
+| # downloads        | 54061 |
 | # stars            | 0 |
 
 ## Links

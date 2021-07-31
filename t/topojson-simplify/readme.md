@@ -11,8 +11,8 @@ Topology-preserving simplification and filtering for TopoJSON.
 | Full name          | topojson-simplify |
 | Keywords           | topojson, geojson, simplification |
 | # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 2590356 |
+| # dependents       | 6 |
+| # downloads        | 3292279 |
 | # stars            | 1 |
 
 ## Links

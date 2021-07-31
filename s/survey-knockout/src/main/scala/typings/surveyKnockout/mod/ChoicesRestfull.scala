@@ -3,7 +3,6 @@ package typings.surveyKnockout.mod
 import typings.surveyKnockout.anon.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "ChoicesRestfull")
@@ -87,11 +86,9 @@ object ChoicesRestfull {
   @scala.inline
   def EncodeParameters_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EncodeParameters")(x.asInstanceOf[js.Any])
   
-  @JSImport("survey-knockout", "ChoicesRestfull.clearCache")
-  @js.native
-  def clearCache(): Unit = js.native
+  @scala.inline
+  def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
   
-  @JSImport("survey-knockout", "ChoicesRestfull.onBeforeSendRequest")
-  @js.native
-  def onBeforeSendRequest(sender: ChoicesRestfull, options: Request): Unit = js.native
+  @scala.inline
+  def onBeforeSendRequest(sender: ChoicesRestfull, options: Request): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeSendRequest")(sender.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

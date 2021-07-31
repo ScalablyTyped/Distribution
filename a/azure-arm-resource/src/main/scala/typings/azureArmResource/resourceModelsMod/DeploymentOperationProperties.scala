@@ -3,51 +3,49 @@ package typings.azureArmResource.resourceModelsMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentOperationProperties extends StObject {
   
   /**
     * The state of the provisioning.
     */
-  val provisioningState: js.UndefOr[String] = js.native
+  val provisioningState: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP request message.
     */
-  val request: js.UndefOr[HttpMessage] = js.native
+  val request: js.UndefOr[HttpMessage] = js.undefined
   
   /**
     * The HTTP response message.
     */
-  val response: js.UndefOr[HttpMessage] = js.native
+  val response: js.UndefOr[HttpMessage] = js.undefined
   
   /**
     * Deployment operation service request id.
     */
-  val serviceRequestId: js.UndefOr[String] = js.native
+  val serviceRequestId: js.UndefOr[String] = js.undefined
   
   /**
     * Operation status code.
     */
-  val statusCode: js.UndefOr[String] = js.native
+  val statusCode: js.UndefOr[String] = js.undefined
   
   /**
     * Operation status message.
     */
-  val statusMessage: js.UndefOr[js.Any] = js.native
+  val statusMessage: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The target resource.
     */
-  val targetResource: js.UndefOr[TargetResource] = js.native
+  val targetResource: js.UndefOr[TargetResource] = js.undefined
   
   /**
     * The date and time of the operation.
     */
-  val timestamp: js.UndefOr[Date] = js.native
+  val timestamp: js.UndefOr[Date] = js.undefined
 }
 object DeploymentOperationProperties {
   

@@ -2,13 +2,11 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyOrderSensitive extends StObject {
   
-  var keyOrderSensitive: js.UndefOr[Boolean] = js.native
+  var keyOrderSensitive: js.UndefOr[Boolean] = js.undefined
 }
 object KeyOrderSensitive {
   

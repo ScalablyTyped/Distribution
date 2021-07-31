@@ -2,15 +2,13 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reaction extends StObject {
   
-  var action: Action = js.native
+  var action: Action
   
-  var trigger: Trigger = js.native
+  var trigger: Trigger
 }
 object Reaction {
   

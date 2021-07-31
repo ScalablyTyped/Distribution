@@ -1,9 +1,11 @@
 package typings.onsenui.mod
 
+import typings.std.AddEventListenerOptions
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 //later should be updated
 @js.native
-trait OnsPullHookElement extends HTMLElement {
+trait OnsPullHookElement
+  extends StObject
+     with HTMLElement {
+  
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
   /**
     * @description A boolean value that specifies whether the element is disabled or not.
@@ -39,6 +50,13 @@ trait OnsPullHookElement extends HTMLElement {
     * @description The current number of pixels the pull hook has moved.
     */
   var pullDistance: Double = js.native
+  
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   
   /**
     * @description The current number of pixels the pull hook has moved.

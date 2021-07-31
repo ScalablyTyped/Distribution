@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XLocator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object input {
@@ -18,9 +17,9 @@ object input {
     * This service helps parsing files by providing a SAX document handler interface for a SAX parsers. You have to instantiate this service passing an
     * {@link XRoot} instance.
     */
-  @js.native
   trait SaxDocumentHandler
-    extends XDocumentHandler
+    extends StObject
+       with XDocumentHandler
        with XInitialization
   object SaxDocumentHandler {
     
@@ -31,7 +30,7 @@ object input {
       endDocument: () => Unit,
       endElement: String => Unit,
       ignorableWhitespace: String => Unit,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       processingInstruction: (String, String) => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit,
@@ -45,21 +44,22 @@ object input {
   }
   
   /** An element's attributes */
-  @js.native
-  trait XAttributes extends XInterface {
+  trait XAttributes
+    extends StObject
+       with XInterface {
     
     /**
       * Gets the number of attributes.
       * @returns number of attributes
       */
-    val Length: Double = js.native
+    val Length: Double
     
     /**
       * Gets attribute index passing a QName.
       * @param qName QName
       * @returns attribute index or -1, if not found
       */
-    def getIndexByQName(qName: String): Double = js.native
+    def getIndexByQName(qName: String): Double
     
     /**
       * Gets attribute index passing a namespace uid and a local name.
@@ -67,48 +67,48 @@ object input {
       * @param localName local name
       * @returns attribute index or -1, if not found
       */
-    def getIndexByUidName(uid: Double, localName: String): Double = js.native
+    def getIndexByUidName(uid: Double, localName: String): Double
     
     /**
       * Gets the number of attributes.
       * @returns number of attributes
       */
-    def getLength(): Double = js.native
+    def getLength(): Double
     
     /**
       * Gets the local name of an attribute.
       * @param nIndex index
       * @returns local name of attribute or empty string, if invalid index
       */
-    def getLocalNameByIndex(nIndex: Double): String = js.native
+    def getLocalNameByIndex(nIndex: Double): String
     
     /**
       * Gets the QName of an attribute.
       * @param nIndex index
       * @returns QName of attribute or empty string, if invalid index
       */
-    def getQNameByIndex(nIndex: Double): String = js.native
+    def getQNameByIndex(nIndex: Double): String
     
     /**
       * Gets the type of an attribute, if possible.
       * @param nIndex index
       * @returns type of attribute (if possible, else empty string)
       */
-    def getTypeByIndex(nIndex: Double): String = js.native
+    def getTypeByIndex(nIndex: Double): String
     
     /**
       * Gets the namespace uid of an attribute.
       * @param nIndex index
       * @returns namespace uid of attribute or -1, if invalid index
       */
-    def getUidByIndex(nIndex: Double): Double = js.native
+    def getUidByIndex(nIndex: Double): Double
     
     /**
       * Gets the value of an attribute.
       * @param nIndex index
       * @returns value string or empty string, if invalid index
       */
-    def getValueByIndex(nIndex: Double): String = js.native
+    def getValueByIndex(nIndex: Double): String
     
     /**
       * For convenience: Gets the value of an attribute passing uid, local name.
@@ -116,7 +116,7 @@ object input {
       * @param localName local name
       * @returns value string or empty string, if invalid uid/local name
       */
-    def getValueByUidName(uid: Double, localName: String): String = js.native
+    def getValueByUidName(uid: Double, localName: String): String
   }
   object XAttributes {
     
@@ -176,78 +176,79 @@ object input {
   }
   
   /** Capsule around an XML element. */
-  @js.native
-  trait XElement extends XInterface {
+  trait XElement
+    extends StObject
+       with XInterface {
     
     /**
       * Gets the attributes of this element.
       * @returns attributes of this element
       */
-    val Attributes: XAttributes = js.native
+    val Attributes: XAttributes
     
     /**
       * Gets the local name of this element.
       * @returns local name of this element
       */
-    val LocalName: String = js.native
+    val LocalName: String
     
     /**
       * Gets the parent context.
       * @returns parent context
       */
-    val Parent: XElement = js.native
+    val Parent: XElement
     
     /**
       * Gets the namespace uid of this element.
       * @returns namespace uid of this element
       */
-    val Uid: Double = js.native
+    val Uid: Double
     
     /**
       * Called upon retrieval of characters.
       * @param chars characters
       */
-    def characters(chars: String): Unit = js.native
+    def characters(chars: String): Unit
     
     /** Receives notification of element closing. */
-    def endElement(): Unit = js.native
+    def endElement(): Unit
     
     /**
       * Gets the attributes of this element.
       * @returns attributes of this element
       */
-    def getAttributes(): XAttributes = js.native
+    def getAttributes(): XAttributes
     
     /**
       * Gets the local name of this element.
       * @returns local name of this element
       */
-    def getLocalName(): String = js.native
+    def getLocalName(): String
     
     /**
       * Gets the parent context.
       * @returns parent context
       */
-    def getParent(): XElement = js.native
+    def getParent(): XElement
     
     /**
       * Gets the namespace uid of this element.
       * @returns namespace uid of this element
       */
-    def getUid(): Double = js.native
+    def getUid(): Double
     
     /**
       * Receives notification of white space that can be ignored.
       * @param whitespace white space characters
       */
-    def ignorableWhitespace(whitespace: String): Unit = js.native
+    def ignorableWhitespace(whitespace: String): Unit
     
     /**
       * Receives notification of a processing instruction.
       * @param target target
       * @param data data
       */
-    def processingInstruction(target: String, data: String): Unit = js.native
+    def processingInstruction(target: String, data: String): Unit
     
     /**
       * Called upon each occurring child element.
@@ -256,7 +257,7 @@ object input {
       * @param xAttributes attributes of element
       * @returns child import context
       */
-    def startChildElement(uid: Double, localName: String, xAttributes: XAttributes): XElement = js.native
+    def startChildElement(uid: Double, localName: String, xAttributes: XAttributes): XElement
   }
   object XElement {
     
@@ -328,22 +329,23 @@ object input {
   }
   
   /** Interface to map XML namespace URI strings to ordinals (URI-id, short uid). */
-  @js.native
-  trait XNamespaceMapping extends XInterface {
+  trait XNamespaceMapping
+    extends StObject
+       with XInterface {
     
     /**
       * Creates a unique ordinal passing an XML namespace URI.
       * @param uri XML namespace URI
       * @returns uid
       */
-    def getUidByUri(uri: String): Double = js.native
+    def getUidByUri(uri: String): Double
     
     /**
       * Gets the corresponding XML namespace URI passing a uid (created using {@link getUidByUri()} ).
       * @param uid uid
       * @returns XML namespace URI
       */
-    def getUriByUid(uid: Double): String = js.native
+    def getUriByUid(uid: Double): String
   }
   object XNamespaceMapping {
     
@@ -371,30 +373,31 @@ object input {
   }
   
   /** Root interface being passed to {@link SaxDocumentHandler} service upon instantiation. */
-  @js.native
-  trait XRoot extends XInterface {
+  trait XRoot
+    extends StObject
+       with XInterface {
     
     /** Receives notification of the end of a document. */
-    def endDocument(): Unit = js.native
+    def endDocument(): Unit
     
     /**
       * Receives notification of a processing instruction.
       * @param target target
       * @param data data
       */
-    def processingInstruction(target: String, data: String): Unit = js.native
+    def processingInstruction(target: String, data: String): Unit
     
     /**
       * Receives an object for locating the origin of SAX document events.
       * @param locator locator
       */
-    def setDocumentLocator(locator: XLocator): Unit = js.native
+    def setDocumentLocator(locator: XLocator): Unit
     
     /**
       * Receives notification of the beginning of a document.
       * @param xMapping mapping to obtain ids out of XML namespace URIs and vice versa
       */
-    def startDocument(xMapping: XNamespaceMapping): Unit = js.native
+    def startDocument(xMapping: XNamespaceMapping): Unit
     
     /**
       * Called upon root element.
@@ -402,7 +405,7 @@ object input {
       * @param localName local name of element
       * @param xAttributes attributes of element
       */
-    def startRootElement(uid: Double, localName: String, xAttributes: XAttributes): XElement = js.native
+    def startRootElement(uid: Double, localName: String, xAttributes: XAttributes): XElement
   }
   object XRoot {
     

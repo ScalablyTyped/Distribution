@@ -2,35 +2,33 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The status of a cluster and its instances.
   */
-@js.native
 trait SchemaClusterStatus extends StObject {
   
   /**
     * Output only. Optional details of cluster&#39;s state.
     */
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The cluster&#39;s state.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Time when this state was entered.
     */
-  var stateStartTime: js.UndefOr[String] = js.native
+  var stateStartTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Additional state information that includes status reported
     * by the agent.
     */
-  var substate: js.UndefOr[String] = js.native
+  var substate: js.UndefOr[String] = js.undefined
 }
 object SchemaClusterStatus {
   

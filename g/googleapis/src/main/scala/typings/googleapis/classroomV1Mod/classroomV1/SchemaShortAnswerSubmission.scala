@@ -2,19 +2,17 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Student work for a short answer question.
   */
-@js.native
 trait SchemaShortAnswerSubmission extends StObject {
   
   /**
     * Student response to a short-answer question.
     */
-  var answer: js.UndefOr[String] = js.native
+  var answer: js.UndefOr[String] = js.undefined
 }
 object SchemaShortAnswerSubmission {
   

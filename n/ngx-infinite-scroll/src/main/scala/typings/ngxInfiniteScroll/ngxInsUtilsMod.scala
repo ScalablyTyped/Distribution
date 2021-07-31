@@ -4,36 +4,31 @@ import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.SimpleChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngxInsUtilsMod {
   
-  @JSImport("ngx-infinite-scroll/src/services/ngx-ins-utils", "findElement")
+  @JSImport("ngx-infinite-scroll/src/services/ngx-ins-utils", JSImport.Namespace)
   @js.native
-  def findElement(selector: String, customRoot: js.Any, fromRoot: Boolean): js.Any = js.native
-  @JSImport("ngx-infinite-scroll/src/services/ngx-ins-utils", "findElement")
-  @js.native
-  def findElement(selector: String, customRoot: ElementRef[_], fromRoot: Boolean): js.Any = js.native
-  @JSImport("ngx-infinite-scroll/src/services/ngx-ins-utils", "findElement")
-  @js.native
-  def findElement(selector: js.Any, customRoot: js.Any, fromRoot: Boolean): js.Any = js.native
-  @JSImport("ngx-infinite-scroll/src/services/ngx-ins-utils", "findElement")
-  @js.native
-  def findElement(selector: js.Any, customRoot: ElementRef[_], fromRoot: Boolean): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ngx-infinite-scroll/src/services/ngx-ins-utils", "hasWindowDefined")
-  @js.native
-  def hasWindowDefined(): Boolean = js.native
+  @scala.inline
+  def findElement(selector: String, customRoot: js.Any, fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(selector.asInstanceOf[js.Any], customRoot.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def findElement(selector: String, customRoot: ElementRef[js.Any], fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(selector.asInstanceOf[js.Any], customRoot.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def findElement(selector: js.Any, customRoot: js.Any, fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(selector.asInstanceOf[js.Any], customRoot.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def findElement(selector: js.Any, customRoot: ElementRef[js.Any], fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(selector.asInstanceOf[js.Any], customRoot.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("ngx-infinite-scroll/src/services/ngx-ins-utils", "inputPropChanged")
-  @js.native
-  def inputPropChanged(prop: SimpleChange): Boolean = js.native
+  @scala.inline
+  def hasWindowDefined(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasWindowDefined")().asInstanceOf[Boolean]
   
-  @JSImport("ngx-infinite-scroll/src/services/ngx-ins-utils", "resolveContainerElement")
-  @js.native
-  def resolveContainerElement(selector: String, scrollWindow: js.Any, defaultElement: js.Any, fromRoot: Boolean): js.Any = js.native
-  @JSImport("ngx-infinite-scroll/src/services/ngx-ins-utils", "resolveContainerElement")
-  @js.native
-  def resolveContainerElement(selector: js.Any, scrollWindow: js.Any, defaultElement: js.Any, fromRoot: Boolean): js.Any = js.native
+  @scala.inline
+  def inputPropChanged(prop: SimpleChange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("inputPropChanged")(prop.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def resolveContainerElement(selector: String, scrollWindow: js.Any, defaultElement: js.Any, fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContainerElement")(selector.asInstanceOf[js.Any], scrollWindow.asInstanceOf[js.Any], defaultElement.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def resolveContainerElement(selector: js.Any, scrollWindow: js.Any, defaultElement: js.Any, fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContainerElement")(selector.asInstanceOf[js.Any], scrollWindow.asInstanceOf[js.Any], defaultElement.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

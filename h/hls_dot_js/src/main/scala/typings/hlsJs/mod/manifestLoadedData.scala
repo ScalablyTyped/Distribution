@@ -2,19 +2,17 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait manifestLoadedData extends StObject {
   
-  var audioTracks: js.Array[Double] = js.native
+  var audioTracks: js.Array[Double]
   
-  var levels: js.Array[Level] = js.native
+  var levels: js.Array[Level]
   
-  var stats: Stats = js.native
+  var stats: Stats
   
-  var url: String = js.native
+  var url: String
 }
 object manifestLoadedData {
   

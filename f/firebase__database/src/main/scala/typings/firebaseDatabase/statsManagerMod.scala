@@ -4,7 +4,6 @@ import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.statsCollectionMod.StatsCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statsManagerMod {
@@ -25,13 +24,11 @@ object statsManagerMod {
     @scala.inline
     def collections__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collections_")(x.asInstanceOf[js.Any])
     
-    @JSImport("@firebase/database/dist/src/core/stats/StatsManager", "StatsManager.getCollection")
-    @js.native
-    def getCollection(repoInfo: RepoInfo): StatsCollection = js.native
+    @scala.inline
+    def getCollection(repoInfo: RepoInfo): StatsCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("getCollection")(repoInfo.asInstanceOf[js.Any]).asInstanceOf[StatsCollection]
     
-    @JSImport("@firebase/database/dist/src/core/stats/StatsManager", "StatsManager.getOrCreateReporter")
-    @js.native
-    def getOrCreateReporter[T](repoInfo: RepoInfo, creatorFunction: js.Function0[T]): T = js.native
+    @scala.inline
+    def getOrCreateReporter[T](repoInfo: RepoInfo, creatorFunction: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateReporter")(repoInfo.asInstanceOf[js.Any], creatorFunction.asInstanceOf[js.Any])).asInstanceOf[T]
     
     @JSImport("@firebase/database/dist/src/core/stats/StatsManager", "StatsManager.reporters_")
     @js.native

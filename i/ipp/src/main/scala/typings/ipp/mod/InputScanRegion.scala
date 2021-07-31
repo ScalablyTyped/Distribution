@@ -2,19 +2,17 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputScanRegion extends StObject {
   
-  var `x-dimension`: js.UndefOr[String] = js.native
+  var `x-dimension`: js.UndefOr[String] = js.undefined
   
-  var `x-origin`: js.UndefOr[String] = js.native
+  var `x-origin`: js.UndefOr[String] = js.undefined
   
-  var `y-dimension`: js.UndefOr[String] = js.native
+  var `y-dimension`: js.UndefOr[String] = js.undefined
   
-  var `y-origin`: js.UndefOr[String] = js.native
+  var `y-origin`: js.UndefOr[String] = js.undefined
 }
 object InputScanRegion {
   

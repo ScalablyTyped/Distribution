@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsCollectdtimeseriesCreate extends StandardParameters {
+trait ParamsResourceProjectsCollectdtimeseriesCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The project in which to create the time series. The format is
     * "projects/PROJECT_ID_OR_NUMBER".
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaCreateCollectdTimeSeriesRequest] = js.native
+  var requestBody: js.UndefOr[SchemaCreateCollectdTimeSeriesRequest] = js.undefined
 }
 object ParamsResourceProjectsCollectdtimeseriesCreate {
   

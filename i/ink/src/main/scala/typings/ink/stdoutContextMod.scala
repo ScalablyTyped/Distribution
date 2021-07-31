@@ -5,7 +5,6 @@ import typings.node.processMod.global.NodeJS.WriteStream
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stdoutContextMod extends Shortcut {
@@ -17,20 +16,19 @@ object stdoutContextMod extends Shortcut {
   @js.native
   val default: Context[Props] = js.native
   
-  @js.native
   trait Props extends StObject {
     
     /**
       * Stdout stream passed to `render()` in `options.stdout` or `process.stdout` by default.
       */
-    val stdout: js.UndefOr[WriteStream] = js.native
+    val stdout: js.UndefOr[WriteStream] = js.undefined
     
     /**
       * Write any string to stdout, while preserving Ink's output.
       * It's useful when you want to display some external information outside of Ink's rendering and ensure there's no conflict between the two.
       * It's similar to `<Static>`, except it can't accept components, it only works with strings.
       */
-    def write(data: String): Unit = js.native
+    def write(data: String): Unit
   }
   object Props {
     

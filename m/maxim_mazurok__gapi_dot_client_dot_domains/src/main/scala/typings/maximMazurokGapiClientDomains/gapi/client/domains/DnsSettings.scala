@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DnsSettings extends StObject {
   
   /** An arbitrary DNS provider identified by its name servers. */
-  var customDns: js.UndefOr[CustomDns] = js.native
+  var customDns: js.UndefOr[CustomDns] = js.undefined
   
   /** The list of glue records for this `Registration`. Commonly empty. */
-  var glueRecords: js.UndefOr[js.Array[GlueRecord]] = js.native
+  var glueRecords: js.UndefOr[js.Array[GlueRecord]] = js.undefined
   
   /** The free DNS zone provided by [Google Domains](https://domains.google/). */
-  var googleDomainsDns: js.UndefOr[GoogleDomainsDns] = js.native
+  var googleDomainsDns: js.UndefOr[GoogleDomainsDns] = js.undefined
 }
 object DnsSettings {
   

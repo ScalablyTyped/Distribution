@@ -2,14 +2,12 @@ package typings.apolloProtobufjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IToJSONOptions extends StObject {
   
   /** Serializes comments. */
-  var keepComments: js.UndefOr[Boolean] = js.native
+  var keepComments: js.UndefOr[Boolean] = js.undefined
 }
 object IToJSONOptions {
   

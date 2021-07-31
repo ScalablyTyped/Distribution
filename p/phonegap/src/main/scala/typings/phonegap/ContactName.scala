@@ -2,23 +2,21 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactName extends StObject {
   
-  var familyName: String = js.native
+  var familyName: String
   
-  var formatted: String = js.native
+  var formatted: String
   
-  var givenName: String = js.native
+  var givenName: String
   
-  var honorificPrefix: String = js.native
+  var honorificPrefix: String
   
-  var honorificSuffix: String = js.native
+  var honorificSuffix: String
   
-  var middleName: String = js.native
+  var middleName: String
 }
 object ContactName {
   

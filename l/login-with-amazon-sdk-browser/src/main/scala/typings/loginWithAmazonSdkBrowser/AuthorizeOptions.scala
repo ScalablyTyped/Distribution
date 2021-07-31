@@ -2,13 +2,11 @@ package typings.loginWithAmazonSdkBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options that may be passed to `authorize`.
   */
-@js.native
 trait AuthorizeOptions extends StObject {
   
   /**
@@ -18,24 +16,24 @@ trait AuthorizeOptions extends StObject {
     * `"never"` will used the cached token; if the token does not work, authorize will return `invalid_grant`.
     * Defaults to `"auto"`.
     */
-  var interactive: js.UndefOr[AuthorizeInteractiveOption] = js.native
+  var interactive: js.UndefOr[AuthorizeInteractiveOption] = js.undefined
   
   /**
     * `true` to use a popup window for login, `false` to redirect the current browser window to the authorization dialog. Defaults to `true`. If `false`, the next parameter MUST be a redirect URL.
     */
-  var popup: js.UndefOr[Boolean] = js.native
+  var popup: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The grant type requested. Specify `token` to request an Implicit grant or `code` to request an Authorization Code grant. Defaults to `token`.
     */
-  var response_type: js.UndefOr[AuthorizeResponseType] = js.native
+  var response_type: js.UndefOr[AuthorizeResponseType] = js.undefined
   
   /**
     * The access scope requested.
     */
-  var scope: AuthorizeScope = js.native
+  var scope: AuthorizeScope
   
-  var scope_data: js.UndefOr[AuthorizeScopeData] = js.native
+  var scope_data: js.UndefOr[AuthorizeScopeData] = js.undefined
   
   /**
     * An opaque value used by the client to maintain state between this request and the response. The Login with Amazon authorization service will include this value when redirecting the user back
@@ -43,7 +41,7 @@ trait AuthorizeOptions extends StObject {
     * For more information see [Cross-site Request Forgery](https://developer.amazon.com/docs/login-with-amazon/cross-site-request-forgery.html).
     *
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object AuthorizeOptions {
   

@@ -2,13 +2,11 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveChannelMetadataParameters extends StObject {
   
-  var channel: String = js.native
+  var channel: String
 }
 object RemoveChannelMetadataParameters {
   

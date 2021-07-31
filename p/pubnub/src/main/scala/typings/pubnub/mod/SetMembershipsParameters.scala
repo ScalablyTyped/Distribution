@@ -2,15 +2,15 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SetMembershipsParameters[Custom /* <: ObjectCustom */] extends ChannelMembersParameters {
+trait SetMembershipsParameters[Custom /* <: ObjectCustom */]
+  extends StObject
+     with ChannelMembersParameters {
   
-  var channels: js.UndefOr[js.Array[String | SetCustom[Custom]]] = js.native
+  var channels: js.UndefOr[js.Array[String | SetCustom[Custom]]] = js.undefined
   
-  var uuid: js.UndefOr[String] = js.native
+  var uuid: js.UndefOr[String] = js.undefined
 }
 object SetMembershipsParameters {
   
@@ -21,7 +21,7 @@ object SetMembershipsParameters {
   }
   
   @scala.inline
-  implicit class SetMembershipsParametersMutableBuilder[Self <: SetMembershipsParameters[_], Custom /* <: ObjectCustom */] (val x: Self with SetMembershipsParameters[Custom]) extends AnyVal {
+  implicit class SetMembershipsParametersMutableBuilder[Self <: SetMembershipsParameters[?], Custom /* <: ObjectCustom */] (val x: Self & SetMembershipsParameters[Custom]) extends AnyVal {
     
     @scala.inline
     def setChannels(value: js.Array[String | SetCustom[Custom]]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])

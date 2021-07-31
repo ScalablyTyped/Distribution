@@ -6,15 +6,13 @@ import typings.sequelize.mod.fn
 import typings.sequelize.mod.literal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Exclude extends StObject {
   
-  var exclude: js.UndefOr[js.Array[String]] = js.native
+  var exclude: js.UndefOr[js.Array[String]] = js.undefined
   
-  var include: js.UndefOr[FindOptionsAttributesArray] = js.native
+  var include: js.UndefOr[FindOptionsAttributesArray] = js.undefined
 }
 object Exclude {
   

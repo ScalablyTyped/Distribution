@@ -3,22 +3,20 @@ package typings.iobroker.anon
 import typings.iobroker.mod.global.ioBroker.ObjectOperationPermissions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<iobroker.iobroker.<global>.ioBroker.PermissionSet, 'user' | 'groups'> */
-@js.native
 trait OmitPermissionSetusergrou extends StObject {
   
-  var file: ObjectOperationPermissions = js.native
+  var file: ObjectOperationPermissions
   
-  var `object`: ObjectOperationPermissions = js.native
+  var `object`: ObjectOperationPermissions
   
-  var other: Execute = js.native
+  var other: Execute
   
-  var state: js.UndefOr[ObjectOperationPermissions] = js.native
+  var state: js.UndefOr[ObjectOperationPermissions] = js.undefined
   
-  var users: ObjectOperationPermissions = js.native
+  var users: ObjectOperationPermissions
 }
 object OmitPermissionSetusergrou {
   

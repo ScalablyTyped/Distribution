@@ -2,16 +2,14 @@ package typings.kolite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // when using AMD, it is exported
-@js.native
 trait KnockoutCommandStatic extends StObject {
   
-  def asyncCommand(options: KoLiteCommandOptions): KoliteAsyncCommand = js.native
+  def asyncCommand(options: KoLiteCommandOptions): KoliteAsyncCommand
   
-  def command(options: KoLiteCommandOptions): KoliteCommand = js.native
+  def command(options: KoLiteCommandOptions): KoliteCommand
 }
 object KnockoutCommandStatic {
   

@@ -2,16 +2,14 @@ package typings.couchbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WatchIndexesOptions extends StObject {
   
   /**
     * Timeout for the operation in milliseconds.
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object WatchIndexesOptions {
   

@@ -12,35 +12,35 @@ import typings.minimistOptions.minimistOptionsStrings.string
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("minimist-options", JSImport.Default)
+  @JSImport("minimist-options", JSImport.Namespace)
   @js.native
-  def default(): Opts = js.native
-  @JSImport("minimist-options", JSImport.Default)
-  @js.native
-  def default(options: Options): Opts = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Opts = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Opts]
+  @scala.inline
+  def default(options: Options): Opts = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Opts]
+  
   trait BaseOption[TypeOptionType /* <: OptionType */, DefaultOptionType] extends StObject {
     
     /**
     	 * The default value for the option.
     	 */
-    val default: js.UndefOr[DefaultOptionType] = js.native
+    val default: js.UndefOr[DefaultOptionType] = js.undefined
     
     /**
     	 * An alias/list of aliases for the option.
     	 */
-    val alias: js.UndefOr[String | js.Array[String]] = js.native
+    val alias: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
     	 * The data type the option should be parsed to.
     	 */
-    val `type`: js.UndefOr[TypeOptionType] = js.native
+    val `type`: js.UndefOr[TypeOptionType] = js.undefined
   }
   object BaseOption {
     
@@ -51,7 +51,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class BaseOptionMutableBuilder[Self <: BaseOption[_, _], TypeOptionType /* <: OptionType */, DefaultOptionType] (val x: Self with (BaseOption[TypeOptionType, DefaultOptionType])) extends AnyVal {
+    implicit class BaseOptionMutableBuilder[Self <: BaseOption[?, ?], TypeOptionType /* <: OptionType */, DefaultOptionType] (val x: Self & (BaseOption[TypeOptionType, DefaultOptionType])) extends AnyVal {
       
       @scala.inline
       def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])

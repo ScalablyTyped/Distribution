@@ -3,17 +3,17 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`picture-fill`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.arcgisJsApi.esri.Symbol2D3D because Already inherited
 - typings.arcgisJsApi.esri.symbols.Symbol2D3D because Already inherited */ @js.native
 trait PictureFillSymbol
-  extends Symbol2D
+  extends StObject
      with FillSymbol
      with typings.arcgisJsApi.esri.symbols.FillSymbol
      with typings.arcgisJsApi.esri.symbols.Symbol2D
+     with Symbol2D
      with symbolsFillSymbol {
   
   /**

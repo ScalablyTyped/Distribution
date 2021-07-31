@@ -12,7 +12,7 @@ Angular service to test if a given @media statment is true.
 | Keywords           | angular, angularjs, matchmedia, @media, css |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 162627 |
+| # downloads        | 96761 |
 | # stars            | 1 |
 
 ## Links

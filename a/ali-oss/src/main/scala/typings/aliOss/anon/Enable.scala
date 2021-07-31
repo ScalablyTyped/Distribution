@@ -3,23 +3,21 @@ package typings.aliOss.anon
 import typings.aliOss.mod.NormalSuccessResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enable extends StObject {
   
-  var enable: Boolean = js.native
+  var enable: Boolean
   
-  var prefix: String | Null = js.native
+  var prefix: String | Null
   
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
 }
 object Enable {
   
   @scala.inline
   def apply(enable: Boolean, res: NormalSuccessResponse): Enable = {
-    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], prefix = null)
     __obj.asInstanceOf[Enable]
   }
   

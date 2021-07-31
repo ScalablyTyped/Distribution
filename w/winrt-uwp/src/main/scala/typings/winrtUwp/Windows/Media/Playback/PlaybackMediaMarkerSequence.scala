@@ -3,30 +3,28 @@ package typings.winrtUwp.Windows.Media.Playback
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An ordered collection of PlaybackMediaMarker objects. */
-@js.native
 trait PlaybackMediaMarkerSequence extends StObject {
   
   /** Removes all elements from the sequence. */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * Gets an IIterator pointing at the first PlaybackMediaMarker in the sequence.
     * @return Iterator pointing at the first media marker in the sequence.
     */
-  def first(): IIterator[PlaybackMediaMarker] = js.native
+  def first(): IIterator[PlaybackMediaMarker]
   
   /**
     * Adds a PlaybackMediaMarker to the sequence in it's ordered position.
     * @param value The media marker to insert into the sequence.
     */
-  def insert(value: PlaybackMediaMarker): Unit = js.native
+  def insert(value: PlaybackMediaMarker): Unit
   
   /** Returns the number of items in the sequence. */
-  var size: Double = js.native
+  var size: Double
 }
 object PlaybackMediaMarkerSequence {
   

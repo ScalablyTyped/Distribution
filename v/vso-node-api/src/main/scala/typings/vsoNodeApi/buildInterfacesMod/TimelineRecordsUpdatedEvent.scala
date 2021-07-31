@@ -2,13 +2,13 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimelineRecordsUpdatedEvent extends RealtimeBuildEvent {
+trait TimelineRecordsUpdatedEvent
+  extends StObject
+     with RealtimeBuildEvent {
   
-  var timelineRecords: js.Array[TimelineRecord] = js.native
+  var timelineRecords: js.Array[TimelineRecord]
 }
 object TimelineRecordsUpdatedEvent {
   

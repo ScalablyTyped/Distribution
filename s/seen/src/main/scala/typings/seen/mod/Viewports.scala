@@ -2,116 +2,77 @@ package typings.seen.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Viewports {
   
-  @JSImport("seen", "Viewports.center")
+  @JSImport("seen", "Viewports")
   @js.native
-  def center(): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: Double
-  ): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], x: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], x: Double, y: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(width: js.UndefOr[scala.Nothing], height: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(width: js.UndefOr[scala.Nothing], height: Double, x: js.UndefOr[scala.Nothing], y: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(width: js.UndefOr[scala.Nothing], height: Double, x: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(width: js.UndefOr[scala.Nothing], height: Double, x: Double, y: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(width: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(width: Double, height: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(width: Double, height: js.UndefOr[scala.Nothing], x: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(width: Double, height: js.UndefOr[scala.Nothing], x: Double, y: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(width: Double, height: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(width: Double, height: Double, x: js.UndefOr[scala.Nothing], y: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(width: Double, height: Double, x: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.center")
-  @js.native
-  def center(width: Double, height: Double, x: Double, y: Double): Viewport = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: Double
-  ): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], x: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], x: Double, y: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(width: js.UndefOr[scala.Nothing], height: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(width: js.UndefOr[scala.Nothing], height: Double, x: js.UndefOr[scala.Nothing], y: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(width: js.UndefOr[scala.Nothing], height: Double, x: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(width: js.UndefOr[scala.Nothing], height: Double, x: Double, y: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(width: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(width: Double, height: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(width: Double, height: js.UndefOr[scala.Nothing], x: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(width: Double, height: js.UndefOr[scala.Nothing], x: Double, y: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(width: Double, height: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(width: Double, height: Double, x: js.UndefOr[scala.Nothing], y: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(width: Double, height: Double, x: Double): Viewport = js.native
-  @JSImport("seen", "Viewports.origin")
-  @js.native
-  def origin(width: Double, height: Double, x: Double, y: Double): Viewport = js.native
+  @scala.inline
+  def center(): Viewport = ^.asInstanceOf[js.Dynamic].applyDynamic("center")().asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Double): Viewport = ^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any]).asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Double, height: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Double, height: Double, x: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Double, height: Double, x: Double, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Double, height: Double, x: Unit, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Double, height: Unit, x: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Double, height: Unit, x: Double, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Double, height: Unit, x: Unit, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Unit, height: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Unit, height: Double, x: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Unit, height: Double, x: Double, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Unit, height: Double, x: Unit, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Unit, height: Unit, x: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Unit, height: Unit, x: Double, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def center(width: Unit, height: Unit, x: Unit, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("center")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  
+  @scala.inline
+  def origin(): Viewport = ^.asInstanceOf[js.Dynamic].applyDynamic("origin")().asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Double): Viewport = ^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any]).asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Double, height: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Double, height: Double, x: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Double, height: Double, x: Double, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Double, height: Double, x: Unit, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Double, height: Unit, x: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Double, height: Unit, x: Double, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Double, height: Unit, x: Unit, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Unit, height: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Unit, height: Double, x: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Unit, height: Double, x: Double, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Unit, height: Double, x: Unit, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Unit, height: Unit, x: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Unit, height: Unit, x: Double, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
+  @scala.inline
+  def origin(width: Unit, height: Unit, x: Unit, y: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("origin")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Viewport]
 }

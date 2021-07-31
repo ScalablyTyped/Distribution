@@ -2,26 +2,24 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Failure extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the failed resource.
     */
-  var arn: js.UndefOr[String] = js.native
+  var arn: js.UndefOr[String] = js.undefined
   
   /**
     * The details of the failure.
     */
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
   /**
     * The reason for the failure.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object Failure {
   

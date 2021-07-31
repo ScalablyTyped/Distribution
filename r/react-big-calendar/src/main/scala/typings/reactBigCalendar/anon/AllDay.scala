@@ -3,19 +3,17 @@ package typings.reactBigCalendar.anon
 import typings.reactBigCalendar.mod.stringOrDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllDay[TEvent /* <: js.Object */] extends StObject {
   
-  var allDay: Boolean = js.native
+  var allDay: Boolean
   
-  var end: stringOrDate = js.native
+  var end: stringOrDate
   
-  var event: TEvent = js.native
+  var event: TEvent
   
-  var start: stringOrDate = js.native
+  var start: stringOrDate
 }
 object AllDay {
   
@@ -26,7 +24,7 @@ object AllDay {
   }
   
   @scala.inline
-  implicit class AllDayMutableBuilder[Self <: AllDay[_], TEvent /* <: js.Object */] (val x: Self with AllDay[TEvent]) extends AnyVal {
+  implicit class AllDayMutableBuilder[Self <: AllDay[?], TEvent /* <: js.Object */] (val x: Self & AllDay[TEvent]) extends AnyVal {
     
     @scala.inline
     def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])

@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopRunRequest extends StObject {
   
   /**
     * Represents the Amazon Resource Name (ARN) of the Device Farm run to stop.
     */
-  var arn: AmazonResourceName = js.native
+  var arn: AmazonResourceName
 }
 object StopRunRequest {
   

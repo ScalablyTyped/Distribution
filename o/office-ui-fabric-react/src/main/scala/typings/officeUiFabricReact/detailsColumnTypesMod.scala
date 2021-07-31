@@ -18,101 +18,101 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detailsColumnTypesMod {
   
-  @js.native
-  trait IDetailsColumnProps extends ClassAttributes[DetailsColumnBase] {
+  trait IDetailsColumnProps
+    extends StObject
+       with ClassAttributes[DetailsColumnBase] {
     
     /**
       * Custom styles for cell rendering.
       */
-    var cellStyleProps: js.UndefOr[ICellStyleProps] = js.native
+    var cellStyleProps: js.UndefOr[ICellStyleProps] = js.undefined
     
     /**
       * The column definition for the component instance.
       */
-    var column: IColumn = js.native
+    var column: IColumn
     
     /**
       * The column index for the component instance.
       */
-    var columnIndex: Double = js.native
+    var columnIndex: Double
     
     /**
       * A reference to the component instance.
       */
-    var componentRef: js.UndefOr[js.Function0[Unit]] = js.native
+    var componentRef: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * The drag and drop helper for the component instance.
       */
-    var dragDropHelper: js.UndefOr[IDragDropHelper | Null] = js.native
+    var dragDropHelper: js.UndefOr[IDragDropHelper | Null] = js.undefined
     
     /**
       * Whether or not the column can be re-ordered via drag and drop.
       */
-    var isDraggable: js.UndefOr[Boolean] = js.native
+    var isDraggable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not the column has been dropped via drag and drop.
       */
-    var isDropped: js.UndefOr[Boolean] = js.native
+    var isDropped: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback fired when click event occurs.
       */
     var onColumnClick: js.UndefOr[
         js.Function2[/* ev */ MouseEvent[HTMLElement, NativeMouseEvent], /* column */ IColumn, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback fired on contextual menu event to provide contextual menu UI.
       */
     var onColumnContextMenu: js.UndefOr[
         js.Function2[/* column */ IColumn, /* ev */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Render function for providing a column header tooltip.
       */
-    var onRenderColumnHeaderTooltip: js.UndefOr[IRenderFunction[IDetailsColumnRenderTooltipProps]] = js.native
+    var onRenderColumnHeaderTooltip: js.UndefOr[IRenderFunction[IDetailsColumnRenderTooltipProps]] = js.undefined
     
     /**
       * Parent ID used for accessibility label(s).
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated use `updateDragInfo`
       */
-    var setDraggedItemIndex: js.UndefOr[js.Function1[/* itemIndex */ Double, Unit]] = js.native
+    var setDraggedItemIndex: js.UndefOr[js.Function1[/* itemIndex */ Double, Unit]] = js.undefined
     
     /**
       * The component styles to respect during render.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IDetailsColumnStyleProps, IDetailsColumnStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IDetailsColumnStyleProps, IDetailsColumnStyles]] = js.undefined
     
     /**
       * The theme object to respect during render.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Callback on drag and drop event.
       */
     var updateDragInfo: js.UndefOr[
         js.Function2[/* props */ ItemIndex, /* event */ js.UndefOr[typings.std.MouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Whether to use fast icon and check components. The icons can't be targeted by customization
       * but are still customizable via class names.
       * @defaultvalue true
       */
-    var useFastIcons: js.UndefOr[Boolean] = js.native
+    var useFastIcons: js.UndefOr[Boolean] = js.undefined
   }
   object IDetailsColumnProps {
     
@@ -227,14 +227,15 @@ object detailsColumnTypesMod {
     }
   }
   
-  @js.native
-  trait IDetailsColumnRenderTooltipProps extends ITooltipHostProps {
+  trait IDetailsColumnRenderTooltipProps
+    extends StObject
+       with ITooltipHostProps {
     
     /**
       * Information about the column for which the tooltip is being rendered.
       * Use this to format status information about the column, such as its filter or sort state.
       */
-    var column: js.UndefOr[IColumn] = js.native
+    var column: js.UndefOr[IColumn] = js.undefined
   }
   object IDetailsColumnRenderTooltipProps {
     
@@ -256,57 +257,56 @@ object detailsColumnTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsColumn.types.IDetailsColumnProps, 'theme' | 'cellStyleProps'>> & {  headerClassName :string | undefined,   isActionable :boolean | undefined,   isEmpty :boolean | undefined,   isIconVisible :boolean | undefined,   isPadded :boolean | undefined,   isIconOnly :boolean | undefined,   iconClassName :string | undefined,   transitionDurationDrag :number | undefined,   transitionDurationDrop :number | undefined} */
-  @js.native
   trait IDetailsColumnStyleProps extends StObject {
     
-    var cellStyleProps: ICellStyleProps = js.native
+    var cellStyleProps: ICellStyleProps
     
     /**
       * Classname to provide for header region.
       */
-    var headerClassName: js.UndefOr[String] = js.native
+    var headerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Classname to provide for the header's icon region.
       */
-    var iconClassName: js.UndefOr[String] = js.native
+    var iconClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not the column is actionable.
       */
-    var isActionable: js.UndefOr[Boolean] = js.native
+    var isActionable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not the column contains contents.
       */
-    var isEmpty: js.UndefOr[Boolean] = js.native
+    var isEmpty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not the column has icon only content/
       */
-    var isIconOnly: js.UndefOr[Boolean] = js.native
+    var isIconOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not the column has a visible icon.
       */
-    var isIconVisible: js.UndefOr[Boolean] = js.native
+    var isIconVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not the column is padded.
       */
-    var isPadded: js.UndefOr[Boolean] = js.native
+    var isPadded: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
     
     /**
       * CSS transition duration on drag event.
       */
-    var transitionDurationDrag: js.UndefOr[Double] = js.native
+    var transitionDurationDrag: js.UndefOr[Double] = js.undefined
     
     /**
       * CSS transition duration on drop event.
       */
-    var transitionDurationDrop: js.UndefOr[Double] = js.native
+    var transitionDurationDrop: js.UndefOr[Double] = js.undefined
   }
   object IDetailsColumnStyleProps {
     
@@ -381,78 +381,77 @@ object detailsColumnTypesMod {
     }
   }
   
-  @js.native
   trait IDetailsColumnStyles extends StObject {
     
     /**
       * Styleable label region.
       */
-    var accessibleLabel: IStyle = js.native
+    var accessibleLabel: IStyle
     
     /**
       * Styleable border region after drag & drop.
       */
-    var borderAfterDropping: IStyle = js.native
+    var borderAfterDropping: IStyle
     
     /**
       * Styleable border while drag & drop occurs.
       */
-    var borderWhileDragging: IStyle = js.native
+    var borderWhileDragging: IStyle
     
     /**
       * Styleable cell name region.
       */
-    var cellName: IStyle = js.native
+    var cellName: IStyle
     
     /**
       * Styleable cell title region.
       */
-    var cellTitle: IStyle = js.native
+    var cellTitle: IStyle
     
     /**
       * Styleable cell tooltip region.
       */
-    var cellTooltip: IStyle = js.native
+    var cellTooltip: IStyle
     
     /**
       * Styleable filter glyph.
       */
-    var filterChevron: IStyle = js.native
+    var filterChevron: IStyle
     
     /**
       * Styleable resize glyph region.
       */
-    var gripperBarVerticalStyle: IStyle = js.native
+    var gripperBarVerticalStyle: IStyle
     
     /**
       * Styleable icon region.
       */
-    var iconClassName: IStyle = js.native
+    var iconClassName: IStyle
     
     /**
       * Styleable margin by icon region.
       */
-    var nearIcon: IStyle = js.native
+    var nearIcon: IStyle
     
     /**
       * Transparent no border region after drag & drop to avoid content shift.
       */
-    var noBorderAfterDropping: IStyle = js.native
+    var noBorderAfterDropping: IStyle
     
     /**
       * Transparent no border region while drag & drop occurs to avoid content shift.
       */
-    var noBorderWhileDragging: IStyle = js.native
+    var noBorderWhileDragging: IStyle
     
     /**
       * Styleable root region.
       */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /**
       * Styleable column sort icon region.
       */
-    var sortIcon: IStyle = js.native
+    var sortIcon: IStyle
   }
   object IDetailsColumnStyles {
     

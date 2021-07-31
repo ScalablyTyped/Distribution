@@ -4,15 +4,13 @@ import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.PadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Margin extends StObject {
   
-  var margin: js.UndefOr[MarginType] = js.native
+  var margin: js.UndefOr[MarginType] = js.undefined
   
-  var pad: js.UndefOr[PadType] = js.native
+  var pad: js.UndefOr[PadType] = js.undefined
 }
 object Margin {
   

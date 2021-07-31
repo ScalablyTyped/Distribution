@@ -12,7 +12,6 @@ import typings.jsgraph.jsgraphNumbers.`1`
 import typings.jsgraph.jsgraphNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,22 +20,21 @@ object mod extends Shortcut {
   @js.native
   val ^ : jsGraphStatic = js.native
   
-  @js.native
   trait Directed extends StObject {
     
-    def breadthFirstTraverse(params: TraversalParams): TraversalResult = js.native
+    def breadthFirstTraverse(params: TraversalParams): TraversalResult
     
-    var colors: typings.jsgraph.mod.colors = js.native
+    var colors: typings.jsgraph.mod.colors
     
-    def create(): Result = js.native
+    def create(): Result
     
-    def createTraversalContext(req: Dirgaph): TraversalContext = js.native
+    def createTraversalContext(req: Dirgaph): TraversalContext
     
-    def depthFirstTraverse(params: TraversalParams): TraversalResult = js.native
+    def depthFirstTraverse(params: TraversalParams): TraversalResult
     
-    var directedGraph: DirectedGraph = js.native
+    var directedGraph: DirectedGraph
     
-    def transpose(graph: DirectedGraph): Error = js.native
+    def transpose(graph: DirectedGraph): Error
   }
   object Directed {
     
@@ -81,7 +79,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait DirectedGraph extends Instantiable0[DirectedGraph] {
+  trait DirectedGraph
+    extends StObject
+       with Instantiable0[DirectedGraph] {
     
     //Edge functions
     def addEdge(request: EdgeRequest): JsGraphResponse = js.native
@@ -153,12 +153,11 @@ object mod extends Shortcut {
     def verticesCount(): Double = js.native
   }
   
-  @js.native
   trait Edge extends StObject {
     
-    var u: String = js.native
+    var u: String
     
-    var v: String = js.native
+    var v: String
   }
   object Edge {
     
@@ -179,12 +178,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait EdgeRequest extends StObject {
     
-    var e: Edge = js.native
+    var e: Edge
     
-    var p: js.Any = js.native
+    var p: js.Any
   }
   object EdgeRequest {
     
@@ -205,12 +203,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait JsGraphResponse extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var result: js.UndefOr[js.Any] = js.native
+    var result: js.UndefOr[js.Any] = js.undefined
   }
   object JsGraphResponse {
     
@@ -237,14 +234,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait TraversalContext extends StObject {
     
-    var colorMap: js.Any = js.native
+    var colorMap: js.Any
     
-    var searchStatus: String = js.native
+    var searchStatus: String
     
-    var undiscoveredMap: js.Any = js.native
+    var undiscoveredMap: js.Any
   }
   object TraversalContext {
     
@@ -268,16 +264,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait TraversalOptions extends StObject {
     
-    var allowEmptyStartVector: Boolean = js.native
+    var allowEmptyStartVector: Boolean
     
-    var signalStart: Boolean = js.native
+    var signalStart: Boolean
     
-    var startVector: String | js.Array[String] = js.native
+    var startVector: String | js.Array[String]
     
-    var traverseContext: TraversalContext = js.native
+    var traverseContext: TraversalContext
   }
   object TraversalOptions {
     
@@ -312,14 +307,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait TraversalParams extends StObject {
     
-    var digraph: DirectedGraph = js.native
+    var digraph: DirectedGraph
     
-    var options: js.UndefOr[TraversalOptions] = js.native
+    var options: js.UndefOr[TraversalOptions] = js.undefined
     
-    var visitor: Visitor = js.native
+    var visitor: Visitor
   }
   object TraversalParams {
     
@@ -346,12 +340,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait TraversalResult extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var result: js.UndefOr[TraversalContext] = js.native
+    var result: js.UndefOr[TraversalContext] = js.undefined
   }
   object TraversalResult {
     
@@ -378,12 +371,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait VertexRequest extends StObject {
     
-    var p: js.Any = js.native
+    var p: js.Any
     
-    var u: String = js.native
+    var u: String
   }
   object VertexRequest {
     
@@ -404,26 +396,25 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Visitor extends StObject {
     
-    def blackTarget(req: E): Unit = js.native
+    def blackTarget(req: E): Unit
     
-    def discoverVertex(req: G): Unit = js.native
+    def discoverVertex(req: G): Unit
     
-    def examineEdge(req: E): Unit = js.native
+    def examineEdge(req: E): Unit
     
-    def examineVertex(req: G): Unit = js.native
+    def examineVertex(req: G): Unit
     
-    def finishVertex(req: G): Unit = js.native
+    def finishVertex(req: G): Unit
     
-    def grayTarget(req: E): Unit = js.native
+    def grayTarget(req: E): Unit
     
-    def initializeVertex(req: G): Unit = js.native
+    def initializeVertex(req: G): Unit
     
-    def nonTreeEdge(req: E): Unit = js.native
+    def nonTreeEdge(req: E): Unit
     
-    def startVertex(req: G): Unit = js.native
+    def startVertex(req: G): Unit
   }
   object Visitor {
     
@@ -480,20 +471,19 @@ object mod extends Shortcut {
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: jsGraphStatic = ^
   
-  @js.native
   trait colors extends StObject {
     
-    var black: `2` = js.native
+    var black: `2`
     
-    var gray: `1` = js.native
+    var gray: `1`
     
-    var white: `0` = js.native
+    var white: `0`
   }
   object colors {
     
     @scala.inline
-    def apply(black: `2`, gray: `1`, white: `0`): colors = {
-      val __obj = js.Dynamic.literal(black = black.asInstanceOf[js.Any], gray = gray.asInstanceOf[js.Any], white = white.asInstanceOf[js.Any])
+    def apply(): colors = {
+      val __obj = js.Dynamic.literal(black = 2, gray = 1, white = 0)
       __obj.asInstanceOf[colors]
     }
     
@@ -511,10 +501,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait jsGraphStatic extends StObject {
     
-    var directed: Directed = js.native
+    var directed: Directed
   }
   object jsGraphStatic {
     

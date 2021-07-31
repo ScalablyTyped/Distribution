@@ -5,7 +5,6 @@ import typings.react.mod.ReactElement
 import typings.reactNative.mod.VirtualizedListWithoutRenderItemProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,47 +18,48 @@ object mod {
   
   type DraggableFlatList[Item] = Component[DraggableFlatListProps[Item], js.Object, js.Any]
   
-  @js.native
-  trait DraggableFlatListProps[Item] extends VirtualizedListWithoutRenderItemProps[Item] {
+  trait DraggableFlatListProps[Item]
+    extends StObject
+       with VirtualizedListWithoutRenderItemProps[Item] {
     
     /**
       * Items to be rendered.
       */
     @JSName("data")
-    var data_DraggableFlatListProps: js.Array[Item] | Null = js.native
+    var data_DraggableFlatListProps: js.Array[Item] | Null
     
     /**
       * Function that is called when row becomes active.
       */
-    var onMoveBegin: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var onMoveBegin: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
     /**
       *  Function that returns updated ordering of data
       */
-    var onMoveEnd: js.UndefOr[js.Function1[/* info */ OnMoveEndInfo[Item], Unit]] = js.native
+    var onMoveEnd: js.UndefOr[js.Function1[/* info */ OnMoveEndInfo[Item], Unit]] = js.undefined
     
     /**
       * Function that calls move when the row should become active (in an onPress, onLongPress, etc). Calls moveEnd when the gesture is complete (in onPressOut).
       */
-    def renderItem(info: RenderItemInfo[Item]): ReactElement | Null = js.native
+    def renderItem(info: RenderItemInfo[Item]): ReactElement | Null
     
     /**
       * Sets where scrolling begins.
       *
       * Default is 5
       */
-    var scrollPercent: js.UndefOr[Double] = js.native
+    var scrollPercent: js.UndefOr[Double] = js.undefined
   }
   object DraggableFlatListProps {
     
     @scala.inline
     def apply[Item](renderItem: RenderItemInfo[Item] => ReactElement | Null): DraggableFlatListProps[Item] = {
-      val __obj = js.Dynamic.literal(renderItem = js.Any.fromFunction1(renderItem))
+      val __obj = js.Dynamic.literal(renderItem = js.Any.fromFunction1(renderItem), data = null)
       __obj.asInstanceOf[DraggableFlatListProps[Item]]
     }
     
     @scala.inline
-    implicit class DraggableFlatListPropsMutableBuilder[Self <: DraggableFlatListProps[_], Item] (val x: Self with DraggableFlatListProps[Item]) extends AnyVal {
+    implicit class DraggableFlatListPropsMutableBuilder[Self <: DraggableFlatListProps[?], Item] (val x: Self & DraggableFlatListProps[Item]) extends AnyVal {
       
       @scala.inline
       def setData(value: js.Array[Item]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -93,27 +93,26 @@ object mod {
     }
   }
   
-  @js.native
   trait OnMoveEndInfo[ItemM] extends StObject {
     
-    var data: js.Array[ItemM] | Null = js.native
+    var data: js.Array[ItemM] | Null
     
-    var from: Double = js.native
+    var from: Double
     
-    var row: ItemM = js.native
+    var row: ItemM
     
-    var to: Double = js.native
+    var to: Double
   }
   object OnMoveEndInfo {
     
     @scala.inline
     def apply[ItemM](from: Double, row: ItemM, to: Double): OnMoveEndInfo[ItemM] = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], data = null)
       __obj.asInstanceOf[OnMoveEndInfo[ItemM]]
     }
     
     @scala.inline
-    implicit class OnMoveEndInfoMutableBuilder[Self <: OnMoveEndInfo[_], ItemM] (val x: Self with OnMoveEndInfo[ItemM]) extends AnyVal {
+    implicit class OnMoveEndInfoMutableBuilder[Self <: OnMoveEndInfo[?], ItemM] (val x: Self & OnMoveEndInfo[ItemM]) extends AnyVal {
       
       @scala.inline
       def setData(value: js.Array[ItemM]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -135,18 +134,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RenderItemInfo[ItemR] extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
-    var item: ItemR = js.native
+    var item: ItemR
     
-    def move(): Unit = js.native
+    def move(): Unit
     
-    def moveEnd(): Unit = js.native
+    def moveEnd(): Unit
   }
   object RenderItemInfo {
     
@@ -157,7 +155,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RenderItemInfoMutableBuilder[Self <: RenderItemInfo[_], ItemR] (val x: Self with RenderItemInfo[ItemR]) extends AnyVal {
+    implicit class RenderItemInfoMutableBuilder[Self <: RenderItemInfo[?], ItemR] (val x: Self & RenderItemInfo[ItemR]) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])

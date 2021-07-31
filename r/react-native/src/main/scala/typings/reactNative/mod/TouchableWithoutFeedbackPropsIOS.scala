@@ -2,10 +2,8 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchableWithoutFeedbackPropsIOS extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait TouchableWithoutFeedbackPropsIOS extends StObject {
     *
     * @platform ios
     */
-  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
+  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *(Apple TV only)* Object with properties to control Apple TV parallax effects.
@@ -29,7 +27,7 @@ trait TouchableWithoutFeedbackPropsIOS extends StObject {
     *
     * @platform ios
     */
-  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.native
+  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
 }
 object TouchableWithoutFeedbackPropsIOS {
   

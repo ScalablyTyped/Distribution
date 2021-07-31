@@ -1,21 +1,17 @@
-package typings
+package typings.loginWithAmazonSdkBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object loginWithAmazonSdkBrowser {
-  
-  type AuthorizeScope = typings.loginWithAmazonSdkBrowser.AuthorizationScopeOptions | js.Array[typings.loginWithAmazonSdkBrowser.AuthorizationScopeOptions]
-  
-  /**
-    * Type of callback invoked after `authorize` completes.
-    */
-  type NextCallback[T /* <: typings.loginWithAmazonSdkBrowser.AuthorizeRequest */] = js.Function1[/* response */ T, scala.Unit]
-  
-  type RetrieveProfileCallback = js.Function1[
-    /* response */ typings.loginWithAmazonSdkBrowser.RetrieveProfileResponse, 
-    scala.Unit
-  ]
-}
+
+type AuthorizeScope = typings.loginWithAmazonSdkBrowser.AuthorizationScopeOptions | js.Array[typings.loginWithAmazonSdkBrowser.AuthorizationScopeOptions]
+
+/**
+  * Type of callback invoked after `authorize` completes.
+  */
+type NextCallback[T /* <: typings.loginWithAmazonSdkBrowser.AuthorizeRequest */] = js.Function1[/* response */ T, scala.Unit]
+
+type RetrieveProfileCallback = js.Function1[
+/* response */ typings.loginWithAmazonSdkBrowser.RetrieveProfileResponse, 
+scala.Unit]

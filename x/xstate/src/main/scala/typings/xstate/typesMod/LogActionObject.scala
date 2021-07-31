@@ -2,13 +2,13 @@ package typings.xstate.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LogActionObject[TContext, TEvent /* <: EventObject */] extends LogAction[TContext, TEvent] {
+trait LogActionObject[TContext, TEvent /* <: EventObject */]
+  extends StObject
+     with LogAction[TContext, TEvent] {
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object LogActionObject {
   
@@ -20,7 +20,7 @@ object LogActionObject {
   }
   
   @scala.inline
-  implicit class LogActionObjectMutableBuilder[Self <: LogActionObject[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (LogActionObject[TContext, TEvent])) extends AnyVal {
+  implicit class LogActionObjectMutableBuilder[Self <: LogActionObject[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (LogActionObject[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])

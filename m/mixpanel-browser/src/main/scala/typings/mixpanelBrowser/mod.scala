@@ -1,6 +1,5 @@
 package typings.mixpanelBrowser
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.mixpanelBrowser.anon.PartialClearOptOutInOutOp
 import typings.mixpanelBrowser.anon.PartialConfig
@@ -8,293 +7,205 @@ import typings.mixpanelBrowser.anon.PartialConfigApihost
 import typings.mixpanelBrowser.anon.PartialHasOptedInOutOptio
 import typings.mixpanelBrowser.anon.PartialInTrackingOptions
 import typings.mixpanelBrowser.anon.PartialOutTrackingOptions
-import typings.mixpanelBrowser.mixpanelBrowserNumbers.`0`
-import typings.mixpanelBrowser.mixpanelBrowserNumbers.`1`
 import typings.mixpanelBrowser.mixpanelBrowserStrings.sendBeacon
 import typings.mixpanelBrowser.mixpanelBrowserStrings.xhr
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("mixpanel-browser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mixpanel-browser", JSImport.Default)
   @js.native
   val default: Mixpanel = js.native
   
-  @JSImport("mixpanel-browser", "add_group")
-  @js.native
-  def addGroup(group_key: String, group_id: String): Unit = js.native
-  @JSImport("mixpanel-browser", "add_group")
-  @js.native
-  def addGroup(group_key: String, group_id: String, callback: Callback): Unit = js.native
+  @scala.inline
+  def addGroup(group_key: String, group_id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_group")(group_key.asInstanceOf[js.Any], group_id.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addGroup(group_key: String, group_id: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_group")(group_key.asInstanceOf[js.Any], group_id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "alias")
-  @js.native
-  def alias(alias: String): Unit = js.native
-  @JSImport("mixpanel-browser", "alias")
-  @js.native
-  def alias(alias: String, original: String): Unit = js.native
+  @scala.inline
+  def alias(alias: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alias")(alias.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def alias(alias: String, original: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("alias")(alias.asInstanceOf[js.Any], original.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "clear_opt_in_out_tracking")
-  @js.native
-  def clearOptInOutTracking(): Unit = js.native
-  @JSImport("mixpanel-browser", "clear_opt_in_out_tracking")
-  @js.native
-  def clearOptInOutTracking(options: PartialClearOptOutInOutOp): Unit = js.native
+  @scala.inline
+  def clearOptInOutTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear_opt_in_out_tracking")().asInstanceOf[Unit]
+  @scala.inline
+  def clearOptInOutTracking(options: PartialClearOptOutInOutOp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear_opt_in_out_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "disable")
-  @js.native
-  def disable(): Unit = js.native
-  @JSImport("mixpanel-browser", "disable")
-  @js.native
-  def disable(events: js.Array[String]): Unit = js.native
+  @scala.inline
+  def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
+  @scala.inline
+  def disable(events: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")(events.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "get_config")
-  @js.native
-  def getConfig(): js.Any = js.native
-  @JSImport("mixpanel-browser", "get_config")
-  @js.native
-  def getConfig(prop_name: String): js.Any = js.native
+  @scala.inline
+  def getConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_config")().asInstanceOf[js.Any]
+  @scala.inline
+  def getConfig(prop_name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_config")(prop_name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("mixpanel-browser", "get_distinct_id")
-  @js.native
-  def getDistinctId(): js.Any = js.native
+  @scala.inline
+  def getDistinctId(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_distinct_id")().asInstanceOf[js.Any]
   
-  @JSImport("mixpanel-browser", "get_group")
-  @js.native
-  def getGroup(group_key: String, group_id: String): Group = js.native
+  @scala.inline
+  def getGroup(group_key: String, group_id: String): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get_group")(group_key.asInstanceOf[js.Any], group_id.asInstanceOf[js.Any])).asInstanceOf[Group]
   
-  @JSImport("mixpanel-browser", "get_property")
-  @js.native
-  def getProperty(property_name: String): js.Any = js.native
+  @scala.inline
+  def getProperty(property_name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_property")(property_name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("mixpanel-browser", "has_opted_in_tracking")
-  @js.native
-  def hasOptedInTracking(): Boolean = js.native
-  @JSImport("mixpanel-browser", "has_opted_in_tracking")
-  @js.native
-  def hasOptedInTracking(options: PartialHasOptedInOutOptio): Boolean = js.native
+  @scala.inline
+  def hasOptedInTracking(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has_opted_in_tracking")().asInstanceOf[Boolean]
+  @scala.inline
+  def hasOptedInTracking(options: PartialHasOptedInOutOptio): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has_opted_in_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("mixpanel-browser", "has_opted_out_tracking")
-  @js.native
-  def hasOptedOutTracking(): Boolean = js.native
-  @JSImport("mixpanel-browser", "has_opted_out_tracking")
-  @js.native
-  def hasOptedOutTracking(options: PartialHasOptedInOutOptio): Boolean = js.native
+  @scala.inline
+  def hasOptedOutTracking(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has_opted_out_tracking")().asInstanceOf[Boolean]
+  @scala.inline
+  def hasOptedOutTracking(options: PartialHasOptedInOutOptio): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has_opted_out_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("mixpanel-browser", "identify")
-  @js.native
-  def identify(): js.Any = js.native
-  @JSImport("mixpanel-browser", "identify")
-  @js.native
-  def identify(unique_id: String): js.Any = js.native
+  @scala.inline
+  def identify(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("identify")().asInstanceOf[js.Any]
+  @scala.inline
+  def identify(unique_id: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("identify")(unique_id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("mixpanel-browser", "init")
-  @js.native
-  def init(token: String): Mixpanel = js.native
-  @JSImport("mixpanel-browser", "init")
-  @js.native
-  def init(token: String, config: js.UndefOr[scala.Nothing], name: String): Mixpanel = js.native
-  @JSImport("mixpanel-browser", "init")
-  @js.native
-  def init(token: String, config: PartialConfigApihost): Mixpanel = js.native
-  @JSImport("mixpanel-browser", "init")
-  @js.native
-  def init(token: String, config: PartialConfigApihost, name: String): Mixpanel = js.native
+  @scala.inline
+  def init(token: String): Mixpanel = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(token.asInstanceOf[js.Any]).asInstanceOf[Mixpanel]
+  @scala.inline
+  def init(token: String, config: Unit, name: String): Mixpanel = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(token.asInstanceOf[js.Any], config.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Mixpanel]
+  @scala.inline
+  def init(token: String, config: PartialConfigApihost): Mixpanel = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(token.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Mixpanel]
+  @scala.inline
+  def init(token: String, config: PartialConfigApihost, name: String): Mixpanel = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(token.asInstanceOf[js.Any], config.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Mixpanel]
   
-  @JSImport("mixpanel-browser", "opt_in_tracking")
-  @js.native
-  def optInTracking(): Unit = js.native
-  @JSImport("mixpanel-browser", "opt_in_tracking")
-  @js.native
-  def optInTracking(options: PartialInTrackingOptions): Unit = js.native
+  @scala.inline
+  def optInTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opt_in_tracking")().asInstanceOf[Unit]
+  @scala.inline
+  def optInTracking(options: PartialInTrackingOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opt_in_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "opt_out_tracking")
-  @js.native
-  def optOutTracking(): Unit = js.native
-  @JSImport("mixpanel-browser", "opt_out_tracking")
-  @js.native
-  def optOutTracking(options: PartialOutTrackingOptions): Unit = js.native
+  @scala.inline
+  def optOutTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opt_out_tracking")().asInstanceOf[Unit]
+  @scala.inline
+  def optOutTracking(options: PartialOutTrackingOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opt_out_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("mixpanel-browser", "people")
   @js.native
   val people: People_ = js.native
   
-  @JSImport("mixpanel-browser", "push")
-  @js.native
-  def push(item: PushItem): Unit = js.native
+  @scala.inline
+  def push(item: PushItem): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "register")
-  @js.native
-  def register(props: Dict): Unit = js.native
-  @JSImport("mixpanel-browser", "register")
-  @js.native
-  def register(props: Dict, days: Double): Unit = js.native
+  @scala.inline
+  def register(props: Dict): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def register(props: Dict, days: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(props.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "register_once")
-  @js.native
-  def registerOnce(props: Dict): Unit = js.native
-  @JSImport("mixpanel-browser", "register_once")
-  @js.native
-  def registerOnce(props: Dict, default_value: js.UndefOr[scala.Nothing], days: Double): Unit = js.native
-  @JSImport("mixpanel-browser", "register_once")
-  @js.native
-  def registerOnce(props: Dict, default_value: js.Any): Unit = js.native
-  @JSImport("mixpanel-browser", "register_once")
-  @js.native
-  def registerOnce(props: Dict, default_value: js.Any, days: Double): Unit = js.native
+  @scala.inline
+  def registerOnce(props: Dict): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def registerOnce(props: Dict, default_value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def registerOnce(props: Dict, default_value: js.Any, days: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def registerOnce(props: Dict, default_value: Unit, days: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "remove_group")
-  @js.native
-  def removeGroup(group_key: String, group_ids: String): Unit = js.native
-  @JSImport("mixpanel-browser", "remove_group")
-  @js.native
-  def removeGroup(group_key: String, group_ids: String, callback: Callback): Unit = js.native
-  @JSImport("mixpanel-browser", "remove_group")
-  @js.native
-  def removeGroup(group_key: String, group_ids: js.Array[Double | String]): Unit = js.native
-  @JSImport("mixpanel-browser", "remove_group")
-  @js.native
-  def removeGroup(group_key: String, group_ids: js.Array[Double | String], callback: Callback): Unit = js.native
-  @JSImport("mixpanel-browser", "remove_group")
-  @js.native
-  def removeGroup(group_key: String, group_ids: Double): Unit = js.native
-  @JSImport("mixpanel-browser", "remove_group")
-  @js.native
-  def removeGroup(group_key: String, group_ids: Double, callback: Callback): Unit = js.native
+  @scala.inline
+  def removeGroup(group_key: String, group_ids: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeGroup(group_key: String, group_ids: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeGroup(group_key: String, group_ids: js.Array[Double | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeGroup(group_key: String, group_ids: js.Array[Double | String], callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeGroup(group_key: String, group_ids: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeGroup(group_key: String, group_ids: Double, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "set_config")
-  @js.native
-  def setConfig(config: PartialConfigApihost): Unit = js.native
+  @scala.inline
+  def setConfig(config: PartialConfigApihost): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_config")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "set_group")
-  @js.native
-  def setGroup(group_key: String, group_ids: String): Unit = js.native
-  @JSImport("mixpanel-browser", "set_group")
-  @js.native
-  def setGroup(group_key: String, group_ids: String, callback: Callback): Unit = js.native
-  @JSImport("mixpanel-browser", "set_group")
-  @js.native
-  def setGroup(group_key: String, group_ids: js.Array[Double | String]): Unit = js.native
-  @JSImport("mixpanel-browser", "set_group")
-  @js.native
-  def setGroup(group_key: String, group_ids: js.Array[Double | String], callback: Callback): Unit = js.native
-  @JSImport("mixpanel-browser", "set_group")
-  @js.native
-  def setGroup(group_key: String, group_ids: Double): Unit = js.native
-  @JSImport("mixpanel-browser", "set_group")
-  @js.native
-  def setGroup(group_key: String, group_ids: Double, callback: Callback): Unit = js.native
+  @scala.inline
+  def setGroup(group_key: String, group_ids: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setGroup(group_key: String, group_ids: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setGroup(group_key: String, group_ids: js.Array[Double | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setGroup(group_key: String, group_ids: js.Array[Double | String], callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setGroup(group_key: String, group_ids: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setGroup(group_key: String, group_ids: Double, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "time_event")
-  @js.native
-  def timeEvent(event_name: String): Unit = js.native
+  @scala.inline
+  def timeEvent(event_name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("time_event")(event_name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "track")
-  @js.native
-  def track(event_name: String): Unit = js.native
-  @JSImport("mixpanel-browser", "track")
-  @js.native
-  def track(
-    event_name: String,
-    properties: js.UndefOr[scala.Nothing],
-    optionsOrCallback: js.UndefOr[scala.Nothing],
-    callback: Callback
-  ): Unit = js.native
-  @JSImport("mixpanel-browser", "track")
-  @js.native
-  def track(event_name: String, properties: js.UndefOr[scala.Nothing], optionsOrCallback: Callback): Unit = js.native
-  @JSImport("mixpanel-browser", "track")
-  @js.native
-  def track(
-    event_name: String,
-    properties: js.UndefOr[scala.Nothing],
-    optionsOrCallback: Callback,
-    callback: Callback
-  ): Unit = js.native
-  @JSImport("mixpanel-browser", "track")
-  @js.native
-  def track(event_name: String, properties: js.UndefOr[scala.Nothing], optionsOrCallback: RequestOptions): Unit = js.native
-  @JSImport("mixpanel-browser", "track")
-  @js.native
-  def track(
-    event_name: String,
-    properties: js.UndefOr[scala.Nothing],
-    optionsOrCallback: RequestOptions,
-    callback: Callback
-  ): Unit = js.native
-  @JSImport("mixpanel-browser", "track")
-  @js.native
-  def track(event_name: String, properties: Dict): Unit = js.native
-  @JSImport("mixpanel-browser", "track")
-  @js.native
-  def track(
-    event_name: String,
-    properties: Dict,
-    optionsOrCallback: js.UndefOr[scala.Nothing],
-    callback: Callback
-  ): Unit = js.native
-  @JSImport("mixpanel-browser", "track")
-  @js.native
-  def track(event_name: String, properties: Dict, optionsOrCallback: Callback): Unit = js.native
-  @JSImport("mixpanel-browser", "track")
-  @js.native
-  def track(event_name: String, properties: Dict, optionsOrCallback: Callback, callback: Callback): Unit = js.native
-  @JSImport("mixpanel-browser", "track")
-  @js.native
-  def track(event_name: String, properties: Dict, optionsOrCallback: RequestOptions): Unit = js.native
-  @JSImport("mixpanel-browser", "track")
-  @js.native
-  def track(event_name: String, properties: Dict, optionsOrCallback: RequestOptions, callback: Callback): Unit = js.native
+  @scala.inline
+  def track(event_name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def track(event_name: String, properties: Unit, optionsOrCallback: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def track(event_name: String, properties: Unit, optionsOrCallback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def track(event_name: String, properties: Unit, optionsOrCallback: Callback, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def track(event_name: String, properties: Unit, optionsOrCallback: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def track(event_name: String, properties: Unit, optionsOrCallback: RequestOptions, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def track(event_name: String, properties: Dict): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def track(event_name: String, properties: Dict, optionsOrCallback: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def track(event_name: String, properties: Dict, optionsOrCallback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def track(event_name: String, properties: Dict, optionsOrCallback: Callback, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def track(event_name: String, properties: Dict, optionsOrCallback: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def track(event_name: String, properties: Dict, optionsOrCallback: RequestOptions, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "track_forms")
-  @js.native
-  def trackForms(query: Query, event_name: String): Unit = js.native
-  @JSImport("mixpanel-browser", "track_forms")
-  @js.native
-  def trackForms(query: Query, event_name: String, properties: js.Function0[Unit]): Unit = js.native
-  @JSImport("mixpanel-browser", "track_forms")
-  @js.native
-  def trackForms(query: Query, event_name: String, properties: Dict): Unit = js.native
+  @scala.inline
+  def trackForms(query: Query, event_name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_forms")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def trackForms(query: Query, event_name: String, properties: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_forms")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def trackForms(query: Query, event_name: String, properties: Dict): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_forms")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "track_links")
-  @js.native
-  def trackLinks(query: Query, event_name: String): Unit = js.native
-  @JSImport("mixpanel-browser", "track_links")
-  @js.native
-  def trackLinks(query: Query, event_name: String, properties: js.Function0[Unit]): Unit = js.native
-  @JSImport("mixpanel-browser", "track_links")
-  @js.native
-  def trackLinks(query: Query, event_name: String, properties: Dict): Unit = js.native
+  @scala.inline
+  def trackLinks(query: Query, event_name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_links")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def trackLinks(query: Query, event_name: String, properties: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_links")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def trackLinks(query: Query, event_name: String, properties: Dict): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_links")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "track_with_groups")
-  @js.native
-  def trackWithGroups(event_name: String, properties: Dict, groups: Dict): Unit = js.native
-  @JSImport("mixpanel-browser", "track_with_groups")
-  @js.native
-  def trackWithGroups(event_name: String, properties: Dict, groups: Dict, callback: Callback): Unit = js.native
+  @scala.inline
+  def trackWithGroups(event_name: String, properties: Dict, groups: Dict): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_with_groups")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def trackWithGroups(event_name: String, properties: Dict, groups: Dict, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_with_groups")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mixpanel-browser", "unregister")
-  @js.native
-  def unregister(property: String): Unit = js.native
+  @scala.inline
+  def unregister(property: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(property.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Callback = js.Function1[/* response */ Response, Unit]
   
-  @js.native
-  trait ClearOptOutInOutOptions extends HasOptedInOutOptions {
+  trait ClearOptOutInOutOptions
+    extends StObject
+       with HasOptedInOutOptions {
     
-    var cookie_expiration: Double = js.native
+    var cookie_expiration: Double
     
-    var cross_subdomain_cookie: Boolean = js.native
+    var cross_subdomain_cookie: Boolean
     
-    var secure_cookie: Boolean = js.native
+    var secure_cookie: Boolean
   }
   object ClearOptOutInOutOptions {
     
@@ -324,90 +235,89 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var api_host: String = js.native
+    var api_host: String
     
-    var api_method: String = js.native
+    var api_method: String
     
-    var api_transport: String = js.native
+    var api_transport: String
     
-    var app_host: String = js.native
+    var app_host: String
     
-    var autotrack: Boolean = js.native
+    var autotrack: Boolean
     
-    var batch_flush_interval_ms: Double = js.native
+    var batch_flush_interval_ms: Double
     
-    var batch_request_timeout_ms: Double = js.native
+    var batch_request_timeout_ms: Double
     
-    var batch_requests: Boolean = js.native
+    var batch_requests: Boolean
     
-    var batch_size: Double = js.native
+    var batch_size: Double
     
-    var cdn: String = js.native
+    var cdn: String
     
-    var cookie_domain: String = js.native
+    var cookie_domain: String
     
-    var cookie_expiration: Double = js.native
+    var cookie_expiration: Double
     
-    var cookie_name: String = js.native
+    var cookie_name: String
     
-    var cross_site_cookie: Boolean = js.native
+    var cross_site_cookie: Boolean
     
-    var cross_subdomain_cookie: Boolean = js.native
+    var cross_subdomain_cookie: Boolean
     
-    var debug: Boolean = js.native
+    var debug: Boolean
     
-    var disable_cookie: Boolean = js.native
+    var disable_cookie: Boolean
     
-    var disable_notifications: Boolean = js.native
+    var disable_notifications: Boolean
     
-    var disable_persistence: Boolean = js.native
+    var disable_persistence: Boolean
     
-    var ignore_dnt: Boolean = js.native
+    var ignore_dnt: Boolean
     
-    var img: Boolean = js.native
+    var img: Boolean
     
-    var inapp_link_new_window: Boolean = js.native
+    var inapp_link_new_window: Boolean
     
-    var inapp_protocol: String = js.native
+    var inapp_protocol: String
     
-    var ip: Boolean = js.native
+    var ip: Boolean
     
-    def loaded(mixpanel: Mixpanel): Unit = js.native
+    def loaded(mixpanel: Mixpanel): Unit
     
-    var opt_out_persistence_by_default: Boolean = js.native
+    var opt_out_persistence_by_default: Boolean
     
-    var opt_out_tracking_by_default: Boolean = js.native
+    var opt_out_tracking_by_default: Boolean
     
-    var opt_out_tracking_cookie_prefix: String = js.native
+    var opt_out_tracking_cookie_prefix: String
     
-    var opt_out_tracking_persistence_type: Persistence = js.native
+    var opt_out_tracking_persistence_type: Persistence
     
-    var persistence: Persistence = js.native
+    var persistence: Persistence
     
-    var persistence_name: String = js.native
+    var persistence_name: String
     
-    var property_blacklist: js.Array[String] = js.native
+    var property_blacklist: js.Array[String]
     
-    var save_referrer: Boolean = js.native
+    var save_referrer: Boolean
     
-    var secure_cookie: Boolean = js.native
+    var secure_cookie: Boolean
     
-    var store_google: Boolean = js.native
+    var store_google: Boolean
     
-    var test: Boolean = js.native
+    var test: Boolean
     
-    var track_links_timeout: Double = js.native
+    var track_links_timeout: Double
     
-    var track_pageview: Boolean = js.native
+    var track_pageview: Boolean
     
-    var upgrade: Boolean = js.native
+    var upgrade: Boolean
     
-    var verbose: Boolean = js.native
+    var verbose: Boolean
     
-    var xhr_headers: XhrHeadersDef = js.native
+    var xhr_headers: XhrHeadersDef
   }
   object Config {
     
@@ -601,16 +511,20 @@ object mod extends Shortcut {
     def set(prop: String): Group = js.native
     def set(prop: String, to: js.UndefOr[String]): Group = js.native
     def set(prop: String, to: js.UndefOr[String], callback: Callback): Group = js.native
+    def set(prop: String, to: Unit, callback: Callback): Group = js.native
     def set(prop: Dict): Group = js.native
     def set(prop: Dict, to: js.UndefOr[String]): Group = js.native
     def set(prop: Dict, to: js.UndefOr[String], callback: Callback): Group = js.native
+    def set(prop: Dict, to: Unit, callback: Callback): Group = js.native
     
     def setOnce(prop: String): Group = js.native
     def setOnce(prop: String, to: js.UndefOr[String]): Group = js.native
     def setOnce(prop: String, to: js.UndefOr[String], callback: Callback): Group = js.native
+    def setOnce(prop: String, to: Unit, callback: Callback): Group = js.native
     def setOnce(prop: Dict): Group = js.native
     def setOnce(prop: Dict, to: js.UndefOr[String]): Group = js.native
     def setOnce(prop: Dict, to: js.UndefOr[String], callback: Callback): Group = js.native
+    def setOnce(prop: Dict, to: Unit, callback: Callback): Group = js.native
     
     def union(list_name: String, values: js.Array[String | Double]): Group = js.native
     def union(list_name: String, values: js.Array[String | Double], callback: Callback): Group = js.native
@@ -619,12 +533,11 @@ object mod extends Shortcut {
     def unset(prop: String, callback: Callback): Unit = js.native
   }
   
-  @js.native
   trait HasOptedInOutOptions extends StObject {
     
-    var cookie_prefix: String = js.native
+    var cookie_prefix: String
     
-    var persistence_type: Persistence = js.native
+    var persistence_type: Persistence
   }
   object HasOptedInOutOptions {
     
@@ -645,14 +558,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait InTrackingOptions extends ClearOptOutInOutOptions {
+  trait InTrackingOptions
+    extends StObject
+       with ClearOptOutInOutOptions {
     
-    def track(): Unit = js.native
+    def track(): Unit
     
-    var track_event_name: String = js.native
+    var track_event_name: String
     
-    var track_event_properties: Dict = js.native
+    var track_event_properties: Dict
   }
   object InTrackingOptions {
     
@@ -719,7 +633,7 @@ object mod extends Shortcut {
     def identify(unique_id: String): js.Any = js.native
     
     def init(token: String): Mixpanel = js.native
-    def init(token: String, config: js.UndefOr[scala.Nothing], name: String): Mixpanel = js.native
+    def init(token: String, config: Unit, name: String): Mixpanel = js.native
     def init(token: String, config: PartialConfig): Mixpanel = js.native
     def init(token: String, config: PartialConfig, name: String): Mixpanel = js.native
     
@@ -737,9 +651,9 @@ object mod extends Shortcut {
     def register(props: Dict, days: Double): Unit = js.native
     
     def register_once(props: Dict): Unit = js.native
-    def register_once(props: Dict, default_value: js.UndefOr[scala.Nothing], days: Double): Unit = js.native
     def register_once(props: Dict, default_value: js.Any): Unit = js.native
     def register_once(props: Dict, default_value: js.Any, days: Double): Unit = js.native
+    def register_once(props: Dict, default_value: Unit, days: Double): Unit = js.native
     
     def remove_group(group_key: String, group_ids: String): Unit = js.native
     def remove_group(group_key: String, group_ids: String, callback: Callback): Unit = js.native
@@ -762,33 +676,13 @@ object mod extends Shortcut {
     def time_event(event_name: String): Unit = js.native
     
     def track(event_name: String): Unit = js.native
-    def track(
-      event_name: String,
-      properties: js.UndefOr[scala.Nothing],
-      optionsOrCallback: js.UndefOr[scala.Nothing],
-      callback: Callback
-    ): Unit = js.native
-    def track(event_name: String, properties: js.UndefOr[scala.Nothing], optionsOrCallback: Callback): Unit = js.native
-    def track(
-      event_name: String,
-      properties: js.UndefOr[scala.Nothing],
-      optionsOrCallback: Callback,
-      callback: Callback
-    ): Unit = js.native
-    def track(event_name: String, properties: js.UndefOr[scala.Nothing], optionsOrCallback: RequestOptions): Unit = js.native
-    def track(
-      event_name: String,
-      properties: js.UndefOr[scala.Nothing],
-      optionsOrCallback: RequestOptions,
-      callback: Callback
-    ): Unit = js.native
+    def track(event_name: String, properties: Unit, optionsOrCallback: Unit, callback: Callback): Unit = js.native
+    def track(event_name: String, properties: Unit, optionsOrCallback: Callback): Unit = js.native
+    def track(event_name: String, properties: Unit, optionsOrCallback: Callback, callback: Callback): Unit = js.native
+    def track(event_name: String, properties: Unit, optionsOrCallback: RequestOptions): Unit = js.native
+    def track(event_name: String, properties: Unit, optionsOrCallback: RequestOptions, callback: Callback): Unit = js.native
     def track(event_name: String, properties: Dict): Unit = js.native
-    def track(
-      event_name: String,
-      properties: Dict,
-      optionsOrCallback: js.UndefOr[scala.Nothing],
-      callback: Callback
-    ): Unit = js.native
+    def track(event_name: String, properties: Dict, optionsOrCallback: Unit, callback: Callback): Unit = js.native
     def track(event_name: String, properties: Dict, optionsOrCallback: Callback): Unit = js.native
     def track(event_name: String, properties: Dict, optionsOrCallback: Callback, callback: Callback): Unit = js.native
     def track(event_name: String, properties: Dict, optionsOrCallback: RequestOptions): Unit = js.native
@@ -812,7 +706,9 @@ object mod extends Shortcut {
     - typings.mixpanelBrowser.mixpanelBrowserNumbers.`1`
     - typings.mixpanelBrowser.mixpanelBrowserNumbers.`0`
   */
-  trait NormalResponse extends Response
+  trait NormalResponse
+    extends StObject
+       with Response
   object NormalResponse {
     
     @scala.inline
@@ -822,10 +718,11 @@ object mod extends Shortcut {
     def `1`: typings.mixpanelBrowser.mixpanelBrowserNumbers.`1` = 1.asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserNumbers.`1`]
   }
   
-  @js.native
-  trait OutTrackingOptions extends ClearOptOutInOutOptions {
+  trait OutTrackingOptions
+    extends StObject
+       with ClearOptOutInOutOptions {
     
-    var delete_user: Boolean = js.native
+    var delete_user: Boolean
   }
   object OutTrackingOptions {
     
@@ -886,7 +783,7 @@ object mod extends Shortcut {
     def set_once(prop: Dict, callback: Callback): Unit = js.native
     
     def track_charge(amount: Double): Unit = js.native
-    def track_charge(amount: Double, propertiesOrCallback: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
+    def track_charge(amount: Double, propertiesOrCallback: Unit, callback: Callback): Unit = js.native
     def track_charge(amount: Double, propertiesOrCallback: Callback): Unit = js.native
     def track_charge(amount: Double, propertiesOrCallback: Callback, callback: Callback): Unit = js.native
     def track_charge(amount: Double, propertiesOrCallback: Dict): Unit = js.native
@@ -921,10 +818,9 @@ object mod extends Shortcut {
   
   type Query = String | Element | js.Array[Element]
   
-  @js.native
   trait RequestOptions extends StObject {
     
-    var transport: js.UndefOr[xhr | sendBeacon] = js.native
+    var transport: js.UndefOr[xhr | sendBeacon] = js.undefined
   }
   object RequestOptions {
     
@@ -955,26 +851,23 @@ object mod extends Shortcut {
     - typings.mixpanelBrowser.anon.Error
     - typings.mixpanelBrowser.anon.Status
   */
-  trait VerboseResponse extends Response
+  trait VerboseResponse
+    extends StObject
+       with Response
   object VerboseResponse {
     
     @scala.inline
-    def Error(error: Null, status: `1`): typings.mixpanelBrowser.anon.Error = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def Error(error: Null): typings.mixpanelBrowser.anon.Error = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = 1)
       __obj.asInstanceOf[typings.mixpanelBrowser.anon.Error]
     }
     
     @scala.inline
-    def Status(error: String, status: `0`): typings.mixpanelBrowser.anon.Status = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def Status(error: String): typings.mixpanelBrowser.anon.Status = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = 0)
       __obj.asInstanceOf[typings.mixpanelBrowser.anon.Status]
     }
   }
   
   type XhrHeadersDef = StringDictionary[js.Any]
-  
-  type _To = Mixpanel
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: Mixpanel = default
 }

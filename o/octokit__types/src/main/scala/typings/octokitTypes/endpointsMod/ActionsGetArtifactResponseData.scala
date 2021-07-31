@@ -2,29 +2,27 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsGetArtifactResponseData extends StObject {
   
-  var archive_download_url: String = js.native
+  var archive_download_url: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var expired: Boolean = js.native
+  var expired: Boolean
   
-  var expires_at: String = js.native
+  var expires_at: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var size_in_bytes: Double = js.native
+  var size_in_bytes: Double
   
-  var url: String = js.native
+  var url: String
 }
 object ActionsGetArtifactResponseData {
   

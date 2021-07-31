@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The ARN of the resource to apply the tags to.
     */
-  var ResourceArn: typings.awsSdk.securityhubMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.securityhubMod.ResourceArn
   
   /**
     * The tags to add to the resource.
     */
-  var Tags: TagMap = js.native
+  var Tags: TagMap
 }
 object TagResourceRequest {
   

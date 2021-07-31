@@ -2,38 +2,38 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ComplianceManagementPartner extends Entity {
+trait ComplianceManagementPartner
+  extends StObject
+     with Entity {
   
   // User groups which enroll Android devices through partner.
-  var androidEnrollmentAssignments: js.UndefOr[NullableOption[js.Array[ComplianceManagementPartnerAssignment]]] = js.native
+  var androidEnrollmentAssignments: js.UndefOr[NullableOption[js.Array[ComplianceManagementPartnerAssignment]]] = js.undefined
   
   // Partner onboarded for Android devices.
-  var androidOnboarded: js.UndefOr[Boolean] = js.native
+  var androidOnboarded: js.UndefOr[Boolean] = js.undefined
   
   // Partner display name
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // User groups which enroll ios devices through partner.
-  var iosEnrollmentAssignments: js.UndefOr[NullableOption[js.Array[ComplianceManagementPartnerAssignment]]] = js.native
+  var iosEnrollmentAssignments: js.UndefOr[NullableOption[js.Array[ComplianceManagementPartnerAssignment]]] = js.undefined
   
   // Partner onboarded for ios devices.
-  var iosOnboarded: js.UndefOr[Boolean] = js.native
+  var iosOnboarded: js.UndefOr[Boolean] = js.undefined
   
   // Timestamp of last heartbeat after admin onboarded to the compliance management partner
-  var lastHeartbeatDateTime: js.UndefOr[String] = js.native
+  var lastHeartbeatDateTime: js.UndefOr[String] = js.undefined
   
   // User groups which enroll Mac devices through partner.
-  var macOsEnrollmentAssignments: js.UndefOr[NullableOption[js.Array[ComplianceManagementPartnerAssignment]]] = js.native
+  var macOsEnrollmentAssignments: js.UndefOr[NullableOption[js.Array[ComplianceManagementPartnerAssignment]]] = js.undefined
   
   // Partner onboarded for Mac devices.
-  var macOsOnboarded: js.UndefOr[Boolean] = js.native
+  var macOsOnboarded: js.UndefOr[Boolean] = js.undefined
   
   // Partner state of this tenant. Possible values are: unknown, unavailable, enabled, terminated, rejected, unresponsive.
-  var partnerState: js.UndefOr[DeviceManagementPartnerTenantState] = js.native
+  var partnerState: js.UndefOr[DeviceManagementPartnerTenantState] = js.undefined
 }
 object ComplianceManagementPartner {
   

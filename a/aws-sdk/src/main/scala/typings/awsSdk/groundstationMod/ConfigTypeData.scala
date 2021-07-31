@@ -2,41 +2,39 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigTypeData extends StObject {
   
   /**
     * Information about how AWS Ground Station should configure an antenna for downlink during a contact.
     */
-  var antennaDownlinkConfig: js.UndefOr[AntennaDownlinkConfig] = js.native
+  var antennaDownlinkConfig: js.UndefOr[AntennaDownlinkConfig] = js.undefined
   
   /**
     * Information about how AWS Ground Station should conﬁgure an antenna for downlink demod decode during a contact.
     */
-  var antennaDownlinkDemodDecodeConfig: js.UndefOr[AntennaDownlinkDemodDecodeConfig] = js.native
+  var antennaDownlinkDemodDecodeConfig: js.UndefOr[AntennaDownlinkDemodDecodeConfig] = js.undefined
   
   /**
     * Information about how AWS Ground Station should conﬁgure an antenna for uplink during a contact.
     */
-  var antennaUplinkConfig: js.UndefOr[AntennaUplinkConfig] = js.native
+  var antennaUplinkConfig: js.UndefOr[AntennaUplinkConfig] = js.undefined
   
   /**
     * Information about the dataflow endpoint Config.
     */
-  var dataflowEndpointConfig: js.UndefOr[DataflowEndpointConfig] = js.native
+  var dataflowEndpointConfig: js.UndefOr[DataflowEndpointConfig] = js.undefined
   
   /**
     * Object that determines whether tracking should be used during a contact executed with this Config in the mission profile. 
     */
-  var trackingConfig: js.UndefOr[TrackingConfig] = js.native
+  var trackingConfig: js.UndefOr[TrackingConfig] = js.undefined
   
   /**
     * Information about an uplink echo Config. Parameters from the AntennaUplinkConfig, corresponding to the specified AntennaUplinkConfigArn, are used when this UplinkEchoConfig is used in a contact.
     */
-  var uplinkEchoConfig: js.UndefOr[UplinkEchoConfig] = js.native
+  var uplinkEchoConfig: js.UndefOr[UplinkEchoConfig] = js.undefined
 }
 object ConfigTypeData {
   

@@ -3,33 +3,31 @@ package typings.playcanvas.anon
 import typings.playcanvas.pc.Vec3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistanceModel extends StObject {
   
-  var distanceModel: js.UndefOr[String] = js.native
+  var distanceModel: js.UndefOr[String] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var maxDistance: js.UndefOr[Double] = js.native
+  var maxDistance: js.UndefOr[Double] = js.undefined
   
-  var pitch: js.UndefOr[Double] = js.native
+  var pitch: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[Vec3] = js.native
+  var position: js.UndefOr[Vec3] = js.undefined
   
-  var refDistance: js.UndefOr[Double] = js.native
+  var refDistance: js.UndefOr[Double] = js.undefined
   
-  var rollOffFactor: js.UndefOr[Double] = js.native
+  var rollOffFactor: js.UndefOr[Double] = js.undefined
   
-  var startTime: js.UndefOr[Double] = js.native
+  var startTime: js.UndefOr[Double] = js.undefined
   
-  var velocity: js.UndefOr[Vec3] = js.native
+  var velocity: js.UndefOr[Vec3] = js.undefined
   
-  var volume: js.UndefOr[Double] = js.native
+  var volume: js.UndefOr[Double] = js.undefined
 }
 object DistanceModel {
   

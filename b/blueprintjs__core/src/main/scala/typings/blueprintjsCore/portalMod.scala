@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalMod {
@@ -66,11 +65,10 @@ object portalMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IPortalContext extends StObject {
     
     /** Additional CSS classes to add to all `Portal` elements in this React context. */
-    var blueprintPortalClassName: js.UndefOr[String] = js.native
+    var blueprintPortalClassName: js.UndefOr[String] = js.undefined
   }
   object IPortalContext {
     
@@ -91,19 +89,20 @@ object portalMod {
     }
   }
   
-  @js.native
-  trait IPortalProps extends IProps {
+  trait IPortalProps
+    extends StObject
+       with IProps {
     
     /**
       * The HTML element that children will be mounted to.
       * @default document.body
       */
-    var container: js.UndefOr[HTMLElement] = js.native
+    var container: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * Callback invoked when the children of this `Portal` have been added to the DOM.
       */
-    var onChildrenMount: js.UndefOr[js.Function0[Unit]] = js.native
+    var onChildrenMount: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IPortalProps {
     
@@ -130,10 +129,9 @@ object portalMod {
     }
   }
   
-  @js.native
   trait IPortalState extends StObject {
     
-    var hasMounted: Boolean = js.native
+    var hasMounted: Boolean
   }
   object IPortalState {
     

@@ -2,13 +2,11 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single data point in a time series.
   */
-@js.native
 trait SchemaPoint extends StObject {
   
   /**
@@ -21,12 +19,12 @@ trait SchemaPoint extends StObject {
     * times, until an event resets the cumulative value to zero and sets a new
     * start time for the following points.
     */
-  var interval: js.UndefOr[SchemaTimeInterval] = js.native
+  var interval: js.UndefOr[SchemaTimeInterval] = js.undefined
   
   /**
     * The value of the data point.
     */
-  var value: js.UndefOr[SchemaTypedValue] = js.native
+  var value: js.UndefOr[SchemaTypedValue] = js.undefined
 }
 object SchemaPoint {
   

@@ -2,16 +2,17 @@ package typings.snabbdom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isMod {
   
-  @JSImport("snabbdom/build/package/is", "array")
+  @JSImport("snabbdom/build/package/is", JSImport.Namespace)
   @js.native
-  def array(arg: js.Any): /* is std.Array<any> */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("snabbdom/build/package/is", "primitive")
-  @js.native
-  def primitive(s: js.Any): Boolean = js.native
+  @scala.inline
+  def array(arg: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
+  
+  @scala.inline
+  def primitive(s: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("primitive")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

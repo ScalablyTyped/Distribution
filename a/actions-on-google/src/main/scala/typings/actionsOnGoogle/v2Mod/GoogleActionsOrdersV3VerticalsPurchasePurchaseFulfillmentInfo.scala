@@ -2,64 +2,62 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo extends StObject {
   
   /**
     * A window if a time-range is specified or ETA if single time specified.
     * Expected delivery or pickup time.
     */
-  var expectedFulfillmentTime: js.UndefOr[GoogleActionsOrdersV3Time] = js.native
+  var expectedFulfillmentTime: js.UndefOr[GoogleActionsOrdersV3Time] = js.undefined
   
   /**
     * A window if a time-range is specified or ETA if single time specified.
     * Expected time to prepare the food. Single-time preferred.
     */
-  var expectedPreparationTime: js.UndefOr[GoogleActionsOrdersV3Time] = js.native
+  var expectedPreparationTime: js.UndefOr[GoogleActionsOrdersV3Time] = js.undefined
   
   /**
     * Time at which this fulfillment option expires.
     */
-  var expireTime: js.UndefOr[String] = js.native
+  var expireTime: js.UndefOr[String] = js.undefined
   
   /**
     * User contact for this fulfillment.
     */
-  var fulfillmentContact: js.UndefOr[GoogleActionsOrdersV3UserInfo] = js.native
+  var fulfillmentContact: js.UndefOr[GoogleActionsOrdersV3UserInfo] = js.undefined
   
   /**
     * Required: The type of fulfillment.
     */
-  var fulfillmentType: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfoFulfillmentType] = js.native
+  var fulfillmentType: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfoFulfillmentType] = js.undefined
   
   /**
     * Unique identifier for this service option.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Pickup or delivery location.
     */
-  var location: js.UndefOr[GoogleActionsV2Location] = js.native
+  var location: js.UndefOr[GoogleActionsV2Location] = js.undefined
   
   /**
     * Additional information regarding how order would be picked. This field
     * would only be applicable when fulfillment type is PICKUP.
     */
-  var pickupInfo: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePickupInfo] = js.native
+  var pickupInfo: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePickupInfo] = js.undefined
   
   /**
     * Cost of this option.
     */
-  var price: js.UndefOr[GoogleActionsOrdersV3PriceAttribute] = js.native
+  var price: js.UndefOr[GoogleActionsOrdersV3PriceAttribute] = js.undefined
   
   /**
     * Name of the shipping method selected by the user.
     */
-  var shippingMethodName: js.UndefOr[String] = js.native
+  var shippingMethodName: js.UndefOr[String] = js.undefined
   
   /**
     * StoreCode of the location.
@@ -67,7 +65,7 @@ trait GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo extends StOb
     * where fulfillment happened.
     * https://support.google.com/business/answer/3370250?hl=en&ref_topic=4596653.
     */
-  var storeCode: js.UndefOr[String] = js.native
+  var storeCode: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo {
   

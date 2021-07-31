@@ -2,10 +2,13 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssMod {
+  
+  @JSImport("ol/css", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/css", "CLASS_COLLAPSED")
   @js.native
@@ -31,26 +34,24 @@ object cssMod {
   @js.native
   val CLASS_UNSUPPORTED: String = js.native
   
-  @JSImport("ol/css", "getFontParameters")
-  @js.native
-  def getFontParameters(fontSpec: String): FontParameters = js.native
+  @scala.inline
+  def getFontParameters(fontSpec: String): FontParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontParameters")(fontSpec.asInstanceOf[js.Any]).asInstanceOf[FontParameters]
   
-  @js.native
   trait FontParameters extends StObject {
     
-    var families: js.Array[String] = js.native
+    var families: js.Array[String]
     
-    var family: String = js.native
+    var family: String
     
-    var lineHeight: String = js.native
+    var lineHeight: String
     
-    var size: String = js.native
+    var size: String
     
-    var style: String = js.native
+    var style: String
     
-    var variant: String = js.native
+    var variant: String
     
-    var weight: String = js.native
+    var weight: String
   }
   object FontParameters {
     

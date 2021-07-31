@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XContent
   * @version 1.0
   */
-@js.native
-trait XContentIdentifier extends XInterface {
+trait XContentIdentifier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the content identifier string.
     * @returns the content identifier string. This must be a valid URI (Uniform Resource Identifier, see RFC 2396). This string is required. If a content provid
     */
-  val ContentIdentifier: String = js.native
+  val ContentIdentifier: String
   
   /**
     * returns the content provider scheme string.
@@ -30,13 +30,13 @@ trait XContentIdentifier extends XInterface {
     * provider will be "ftp".
     * @returns the content provider scheme string.
     */
-  val ContentProviderScheme: String = js.native
+  val ContentProviderScheme: String
   
   /**
     * returns the content identifier string.
     * @returns the content identifier string. This must be a valid URI (Uniform Resource Identifier, see RFC 2396). This string is required. If a content provid
     */
-  def getContentIdentifier(): String = js.native
+  def getContentIdentifier(): String
   
   /**
     * returns the content provider scheme string.
@@ -46,7 +46,7 @@ trait XContentIdentifier extends XInterface {
     * provider will be "ftp".
     * @returns the content provider scheme string.
     */
-  def getContentProviderScheme(): String = js.native
+  def getContentProviderScheme(): String
 }
 object XContentIdentifier {
   

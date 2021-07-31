@@ -2,21 +2,19 @@ package typings.reactNativeTextInputMask
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ContentSize extends StObject {
     
-    var contentSize: Height = js.native
+    var contentSize: Height
     
-    var eventCount: Double = js.native
+    var eventCount: Double
     
-    var target: Double = js.native
+    var target: Double
     
-    var text: String = js.native
+    var text: String
   }
   object ContentSize {
     
@@ -43,10 +41,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ContentSizeHeight extends StObject {
     
-    var contentSize: Height = js.native
+    var contentSize: Height
   }
   object ContentSizeHeight {
     
@@ -64,12 +61,11 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
-    var start: Double = js.native
+    var start: Double
   }
   object End {
     
@@ -93,12 +89,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -119,10 +114,9 @@ object anon {
     }
   }
   
-  @js.native
   trait NativeEvent extends StObject {
     
-    var nativeEvent: ContentSize = js.native
+    var nativeEvent: ContentSize
   }
   object NativeEvent {
     
@@ -140,10 +134,9 @@ object anon {
     }
   }
   
-  @js.native
   trait NativeEventContentSizeHeight extends StObject {
     
-    var nativeEvent: ContentSizeHeight = js.native
+    var nativeEvent: ContentSizeHeight
   }
   object NativeEventContentSizeHeight {
     
@@ -161,10 +154,9 @@ object anon {
     }
   }
   
-  @js.native
   trait NativeEventText extends StObject {
     
-    var nativeEvent: Text = js.native
+    var nativeEvent: Text
   }
   object NativeEventText {
     
@@ -182,10 +174,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var text: String = js.native
+    var text: String
   }
   object Text {
     

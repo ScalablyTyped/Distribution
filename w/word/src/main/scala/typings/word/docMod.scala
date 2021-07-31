@@ -5,20 +5,20 @@ import typings.node.Buffer
 import typings.word.typesMod.WJSDoc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object docMod {
   
-  @JSImport("word/dist/typings/codecs/DOC", "parse_cfb")
+  @JSImport("word/dist/typings/codecs/DOC", JSImport.Namespace)
   @js.native
-  def parseCfb(file: CFBContainer): WJSDoc = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("word/dist/typings/codecs/DOC", "read")
-  @js.native
-  def read(data: Buffer): WJSDoc = js.native
+  @scala.inline
+  def parseCfb(file: CFBContainer): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("parse_cfb")(file.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
   
-  @JSImport("word/dist/typings/codecs/DOC", "readFile")
-  @js.native
-  def readFile(filePath: String): WJSDoc = js.native
+  @scala.inline
+  def read(data: Buffer): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(data.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
+  
+  @scala.inline
+  def readFile(filePath: String): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
 }

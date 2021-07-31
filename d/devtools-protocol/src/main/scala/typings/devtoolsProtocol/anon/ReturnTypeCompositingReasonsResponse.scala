@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.LayerTree.CompositingReasonsRequest
 import typings.devtoolsProtocol.mod.Protocol.LayerTree.CompositingReasonsResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeCompositingReasonsResponse extends StObject {
   
-  var paramsType: js.Array[CompositingReasonsRequest] = js.native
+  var paramsType: js.Array[CompositingReasonsRequest]
   
-  var returnType: CompositingReasonsResponse = js.native
+  var returnType: CompositingReasonsResponse
 }
 object ReturnTypeCompositingReasonsResponse {
   

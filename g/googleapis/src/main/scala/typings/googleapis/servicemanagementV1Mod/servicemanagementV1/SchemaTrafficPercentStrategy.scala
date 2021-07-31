@@ -3,7 +3,6 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * traffic_percent_strategy: {         percentages: {
   * &quot;example.googleapis.com/20160206&quot;: 100.00         }       }     }
   */
-@js.native
 trait SchemaTrafficPercentStrategy extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait SchemaTrafficPercentStrategy extends StObject {
     * Key is the service configuration ID, Value is the traffic percentage
     * which must be greater than 0.0 and the sum must equal to 100.0.
     */
-  var percentages: js.UndefOr[StringDictionary[Double]] = js.native
+  var percentages: js.UndefOr[StringDictionary[Double]] = js.undefined
 }
 object SchemaTrafficPercentStrategy {
   

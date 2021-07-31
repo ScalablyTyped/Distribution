@@ -2,21 +2,19 @@ package typings.ouibounce
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CookieDomain extends StObject {
     
-    var cookieDomain: js.UndefOr[String] = js.native
+    var cookieDomain: js.UndefOr[String] = js.undefined
     
-    var cookieExpire: js.UndefOr[Double] = js.native
+    var cookieExpire: js.UndefOr[Double] = js.undefined
     
-    var cookieName: js.UndefOr[String] = js.native
+    var cookieName: js.UndefOr[String] = js.undefined
     
-    var sitewide: js.UndefOr[Boolean] = js.native
+    var sitewide: js.UndefOr[Boolean] = js.undefined
   }
   object CookieDomain {
     

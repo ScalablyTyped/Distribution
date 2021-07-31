@@ -5,7 +5,6 @@ import typings.chromeApps.chromeAppsStrings.background_
 import typings.chromeApps.chromeAppsStrings.usb_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

@@ -8,34 +8,35 @@ import typings.rgroveParseXml.rgroveParseXmlStrings.element
 import typings.rgroveParseXml.rgroveParseXmlStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@rgrove/parse-xml", JSImport.Namespace)
-  @js.native
-  def apply(name: String): Document = js.native
-  @JSImport("@rgrove/parse-xml", JSImport.Namespace)
-  @js.native
-  def apply(name: String, options: ParseOptions): Document = js.native
+  @scala.inline
+  def apply(name: String): Document = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Document]
+  @scala.inline
+  def apply(name: String, options: ParseOptions): Document = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Document]
   
+  @JSImport("@rgrove/parse-xml", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait CData
-    extends NodeBase
+    extends StObject
+       with NodeBase
        with Node {
     
-    var text: String = js.native
+    var text: String
     
     @JSName("type")
-    var type_CData: cdata = js.native
+    var type_CData: cdata
   }
   object CData {
     
     @scala.inline
-    def apply(text: String, `type`: cdata): CData = {
+    def apply(text: String): CData = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("cdata")
       __obj.asInstanceOf[CData]
     }
     
@@ -50,22 +51,22 @@ object mod {
     }
   }
   
-  @js.native
   trait Comment
-    extends NodeBase
+    extends StObject
+       with NodeBase
        with Node {
     
-    var content: String = js.native
+    var content: String
     
     @JSName("type")
-    var type_Comment: comment = js.native
+    var type_Comment: comment
   }
   object Comment {
     
     @scala.inline
-    def apply(content: String, `type`: comment): Comment = {
+    def apply(content: String): Comment = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("comment")
       __obj.asInstanceOf[Comment]
     }
     
@@ -80,20 +81,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait Document extends NodeBase {
+  trait Document
+    extends StObject
+       with NodeBase {
     
-    var children: js.Array[NodeBase] = js.native
+    var children: js.Array[NodeBase]
     
     @JSName("type")
-    var type_Document: document = js.native
+    var type_Document: document
   }
   object Document {
     
     @scala.inline
-    def apply(children: js.Array[NodeBase], `type`: document): Document = {
+    def apply(children: js.Array[NodeBase]): Document = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("document")
       __obj.asInstanceOf[Document]
     }
     
@@ -111,28 +113,28 @@ object mod {
     }
   }
   
-  @js.native
   trait Element
-    extends NodeBase
+    extends StObject
+       with NodeBase
        with Node {
     
-    var attributes: StringDictionary[String] = js.native
+    var attributes: StringDictionary[String]
     
-    var children: js.Array[NodeBase] = js.native
+    var children: js.Array[NodeBase]
     
-    var name: String = js.native
+    var name: String
     
-    var preserveWhitespace: js.UndefOr[String] = js.native
+    var preserveWhitespace: js.UndefOr[String] = js.undefined
     
     @JSName("type")
-    var type_Element: element = js.native
+    var type_Element: element
   }
   object Element {
     
     @scala.inline
-    def apply(attributes: StringDictionary[String], children: js.Array[NodeBase], name: String, `type`: element): Element = {
+    def apply(attributes: StringDictionary[String], children: js.Array[NodeBase], name: String): Element = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("element")
       __obj.asInstanceOf[Element]
     }
     
@@ -172,40 +174,39 @@ object mod {
   object Node {
     
     @scala.inline
-    def CData(text: String, `type`: cdata): typings.rgroveParseXml.mod.CData = {
+    def CData(text: String): typings.rgroveParseXml.mod.CData = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("cdata")
       __obj.asInstanceOf[typings.rgroveParseXml.mod.CData]
     }
     
     @scala.inline
-    def Comment(content: String, `type`: comment): typings.rgroveParseXml.mod.Comment = {
+    def Comment(content: String): typings.rgroveParseXml.mod.Comment = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("comment")
       __obj.asInstanceOf[typings.rgroveParseXml.mod.Comment]
     }
     
     @scala.inline
-    def Element(attributes: StringDictionary[String], children: js.Array[NodeBase], name: String, `type`: element): typings.rgroveParseXml.mod.Element = {
+    def Element(attributes: StringDictionary[String], children: js.Array[NodeBase], name: String): typings.rgroveParseXml.mod.Element = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("element")
       __obj.asInstanceOf[typings.rgroveParseXml.mod.Element]
     }
     
     @scala.inline
-    def Text(text: String, `type`: text): typings.rgroveParseXml.mod.Text = {
+    def Text(text: String): typings.rgroveParseXml.mod.Text = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[typings.rgroveParseXml.mod.Text]
     }
   }
   
-  @js.native
   trait NodeBase extends StObject {
     
-    var parent: js.UndefOr[NodeBase] = js.native
+    var parent: js.UndefOr[NodeBase] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object NodeBase {
     
@@ -230,16 +231,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseOptions extends StObject {
     
-    var ignoreUndefinedEntities: js.UndefOr[Boolean] = js.native
+    var ignoreUndefinedEntities: js.UndefOr[Boolean] = js.undefined
     
-    var preserveCdata: js.UndefOr[Boolean] = js.native
+    var preserveCdata: js.UndefOr[Boolean] = js.undefined
     
-    var preserveComments: js.UndefOr[Boolean] = js.native
+    var preserveComments: js.UndefOr[Boolean] = js.undefined
     
-    var resolveUndefinedEntity: js.UndefOr[js.Function1[/* ref */ String, String]] = js.native
+    var resolveUndefinedEntity: js.UndefOr[js.Function1[/* ref */ String, String]] = js.undefined
   }
   object ParseOptions {
     
@@ -278,22 +278,22 @@ object mod {
     }
   }
   
-  @js.native
   trait Text
-    extends NodeBase
+    extends StObject
+       with NodeBase
        with Node {
     
-    var text: String = js.native
+    var text: String
     
     @JSName("type")
-    var type_Text: text = js.native
+    var type_Text: text
   }
   object Text {
     
     @scala.inline
-    def apply(text: String, `type`: text): Text = {
+    def apply(text: String): Text = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[Text]
     }
     

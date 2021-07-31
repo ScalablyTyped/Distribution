@@ -2,15 +2,13 @@ package typings.kiwicomOrbitDesignTokens.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Foundation extends StObject {
   
-  var base: Base = js.native
+  var base: Base
   
-  var palette: Palette = js.native
+  var palette: Palette
 }
 object Foundation {
   

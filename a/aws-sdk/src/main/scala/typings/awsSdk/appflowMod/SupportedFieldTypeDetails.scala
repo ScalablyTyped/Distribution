@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportedFieldTypeDetails extends StObject {
   
   /**
     *  The initial supported version for fieldType. If this is later changed to a different version, v2 will be introduced. 
     */
-  var v1: FieldTypeDetails = js.native
+  var v1: FieldTypeDetails
 }
 object SupportedFieldTypeDetails {
   

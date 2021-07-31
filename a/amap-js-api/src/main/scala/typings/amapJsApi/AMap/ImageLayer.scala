@@ -3,14 +3,15 @@ package typings.amapJsApi.AMap
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 图片图层
   */
 @js.native
-trait ImageLayer extends MediaLayer[HTMLImageElement] {
+trait ImageLayer
+  extends StObject
+     with MediaLayer[HTMLImageElement] {
   
   /**
     * 返回Image的Url

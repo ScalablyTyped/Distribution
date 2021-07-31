@@ -3,10 +3,8 @@ package typings.pulumiAws.outputMod.networkfirewall
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingConfigurationLoggingConfigurationLogDestinationConfig extends StObject {
   
   /**
@@ -15,17 +13,17 @@ trait LoggingConfigurationLoggingConfigurationLogDestinationConfig extends StObj
     * * For a CloudWatch log group, specify the key `logGroup` with the Amazon Resource Name (ARN) of the CloudWatch log group.
     * * For a Kinesis Data Firehose delivery stream, specify the key `deliveryStream` with the Amazon Resource Name (ARN) of the delivery stream.
     */
-  var logDestination: StringDictionary[String] = js.native
+  var logDestination: StringDictionary[String]
   
   /**
     * The location to send logs to. Valid values: `S3`, `CloudWatchLogs`, `KinesisDataFirehose`.
     */
-  var logDestinationType: String = js.native
+  var logDestinationType: String
   
   /**
     * The type of log to send. Valid values: `ALERT` or `FLOW`. Alert logs report traffic that matches a `StatefulRule` with an action setting that sends a log message. Flow logs are standard network traffic flow logs.
     */
-  var logType: String = js.native
+  var logType: String
 }
 object LoggingConfigurationLoggingConfigurationLogDestinationConfig {
   

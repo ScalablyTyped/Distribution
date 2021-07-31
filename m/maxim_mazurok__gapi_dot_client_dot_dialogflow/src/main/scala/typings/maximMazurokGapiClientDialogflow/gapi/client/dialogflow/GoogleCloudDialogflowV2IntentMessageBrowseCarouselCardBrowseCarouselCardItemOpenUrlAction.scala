@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItemOpenUrlAction extends StObject {
   
   /** Required. URL */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /** Optional. Specifies the type of viewer that is used when opening the URL. Defaults to opening via web browser. */
-  var urlTypeHint: js.UndefOr[String] = js.native
+  var urlTypeHint: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItemOpenUrlAction {
   

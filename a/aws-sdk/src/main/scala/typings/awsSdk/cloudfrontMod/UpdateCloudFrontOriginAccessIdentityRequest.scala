@@ -2,26 +2,24 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCloudFrontOriginAccessIdentityRequest extends StObject {
   
   /**
     * The identity's configuration information.
     */
-  var CloudFrontOriginAccessIdentityConfig: typings.awsSdk.cloudfrontMod.CloudFrontOriginAccessIdentityConfig = js.native
+  var CloudFrontOriginAccessIdentityConfig: typings.awsSdk.cloudfrontMod.CloudFrontOriginAccessIdentityConfig
   
   /**
     * The identity's id.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The value of the ETag header that you received when retrieving the identity's configuration. For example: E2QWRUHAPOMQZL.
     */
-  var IfMatch: js.UndefOr[String] = js.native
+  var IfMatch: js.UndefOr[String] = js.undefined
 }
 object UpdateCloudFrontOriginAccessIdentityRequest {
   

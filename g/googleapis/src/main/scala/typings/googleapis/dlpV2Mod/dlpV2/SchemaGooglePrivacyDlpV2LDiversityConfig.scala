@@ -2,13 +2,11 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * l-diversity metric, used for analysis of reidentification risk.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2LDiversityConfig extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaGooglePrivacyDlpV2LDiversityConfig extends StObject {
     * for the l-diversity computation. When multiple fields are specified, they
     * are considered a single composite key.
     */
-  var quasiIds: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldId]] = js.native
+  var quasiIds: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldId]] = js.undefined
   
   /**
     * Sensitive field for computing the l-value.
     */
-  var sensitiveAttribute: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  var sensitiveAttribute: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2LDiversityConfig {
   

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the AccessChanged event. */
-@js.native
 trait DeviceAccessChangedEventArgs extends StObject {
   
   /** The new status of access to a device. */
-  var status: DeviceAccessStatus = js.native
+  var status: DeviceAccessStatus
 }
 object DeviceAccessChangedEventArgs {
   

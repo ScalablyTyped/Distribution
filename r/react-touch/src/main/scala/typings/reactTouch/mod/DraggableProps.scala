@@ -3,20 +3,18 @@ package typings.reactTouch.mod
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggableProps extends StObject {
   
-  var children: DraggableCallback = js.native
+  var children: DraggableCallback
   
   /**
     * An object that defines the initial position of the draggable component.
     * You can pass any of the following styles to it
     * and they'll be updated and passed back out in the callback with every animation tick.
     */
-  var style: DraggableStyle = js.native
+  var style: DraggableStyle
 }
 object DraggableProps {
   

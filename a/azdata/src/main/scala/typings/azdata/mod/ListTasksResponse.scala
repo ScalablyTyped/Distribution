@@ -2,13 +2,11 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTasksResponse extends StObject {
   
-  var tasks: js.Array[TaskInfo] = js.native
+  var tasks: js.Array[TaskInfo]
 }
 object ListTasksResponse {
   

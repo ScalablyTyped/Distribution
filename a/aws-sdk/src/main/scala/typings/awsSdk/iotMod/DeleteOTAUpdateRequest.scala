@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteOTAUpdateRequest extends StObject {
   
   /**
     * Specifies if the stream associated with an OTA update should be deleted when the OTA update is deleted.
     */
-  var deleteStream: js.UndefOr[DeleteStream] = js.native
+  var deleteStream: js.UndefOr[DeleteStream] = js.undefined
   
   /**
     * Specifies if the AWS Job associated with the OTA update should be deleted when the OTA update is deleted.
     */
-  var forceDeleteAWSJob: js.UndefOr[ForceDeleteAWSJob] = js.native
+  var forceDeleteAWSJob: js.UndefOr[ForceDeleteAWSJob] = js.undefined
   
   /**
     * The ID of the OTA update to delete.
     */
-  var otaUpdateId: OTAUpdateId = js.native
+  var otaUpdateId: OTAUpdateId
 }
 object DeleteOTAUpdateRequest {
   

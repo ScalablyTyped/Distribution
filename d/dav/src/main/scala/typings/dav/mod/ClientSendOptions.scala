@@ -2,21 +2,19 @@ package typings.dav.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientSendOptions extends StObject {
   
   /**
     * request sandbox.
     */
-  var sandbox: js.UndefOr[Sandbox] = js.native
+  var sandbox: js.UndefOr[Sandbox] = js.undefined
   
   /**
     * relative url for request.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ClientSendOptions {
   

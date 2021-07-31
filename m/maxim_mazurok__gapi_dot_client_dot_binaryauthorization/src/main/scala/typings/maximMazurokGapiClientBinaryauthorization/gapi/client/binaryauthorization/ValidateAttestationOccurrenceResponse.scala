@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateAttestationOccurrenceResponse extends StObject {
   
   /** The reason for denial if the Attestation couldn't be validated. */
-  var denialReason: js.UndefOr[String] = js.native
+  var denialReason: js.UndefOr[String] = js.undefined
   
   /** The result of the Attestation validation. */
-  var result: js.UndefOr[String] = js.native
+  var result: js.UndefOr[String] = js.undefined
 }
 object ValidateAttestationOccurrenceResponse {
   

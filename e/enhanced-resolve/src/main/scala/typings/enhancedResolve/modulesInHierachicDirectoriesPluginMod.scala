@@ -2,28 +2,41 @@ package typings.enhancedResolve
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modulesInHierachicDirectoriesPluginMod {
   
   @JSImport("enhanced-resolve/lib/ModulesInHierachicDirectoriesPlugin", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ModulesInHierachicDirectoriesPlugin {
+  class ^ protected ()
+    extends StObject
+       with ModulesInHierachicDirectoriesPlugin {
     def this(source: String, directories: js.Array[String], target: String) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
+    
+    /* CompleteClass */
+    var directories: js.Array[String] = js.native
+    
+    /* CompleteClass */
+    var source: String = js.native
+    
+    /* CompleteClass */
+    var target: String = js.native
   }
   
-  @js.native
   trait ModulesInHierachicDirectoriesPlugin extends StObject {
     
     @JSName("apply")
-    def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
+    def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit
     
-    var directories: js.Array[String] = js.native
+    var directories: js.Array[String]
     
-    var source: String = js.native
+    var source: String
     
-    var target: String = js.native
+    var target: String
   }
   object ModulesInHierachicDirectoriesPlugin {
     

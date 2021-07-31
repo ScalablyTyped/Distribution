@@ -6,25 +6,23 @@ import typings.relayRuntime.relayRuntimeTypesMod.CacheConfig
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestDescriptor extends StObject {
   
-  val cacheConfig: CacheConfig | Null = js.native
+  val cacheConfig: CacheConfig | Null
   
-  val identifier: RequestIdentifier = js.native
+  val identifier: RequestIdentifier
   
-  val node: ConcreteRequest = js.native
+  val node: ConcreteRequest
   
-  val variables: Variables = js.native
+  val variables: Variables
 }
 object RequestDescriptor {
   
   @scala.inline
   def apply(identifier: RequestIdentifier, node: ConcreteRequest, variables: Variables): RequestDescriptor = {
-    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any], cacheConfig = null)
     __obj.asInstanceOf[RequestDescriptor]
   }
   

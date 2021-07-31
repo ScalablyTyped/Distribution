@@ -2,19 +2,17 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A scope selector represents the AND of the selectors represented by the scoped-resource selector requirements.
   */
-@js.native
 trait ScopeSelector extends StObject {
   
   /**
     * A list of scope selector requirements by scope of the resources.
     */
-  var matchExpressions: js.Array[ScopedResourceSelectorRequirement] = js.native
+  var matchExpressions: js.Array[ScopedResourceSelectorRequirement]
 }
 object ScopeSelector {
   

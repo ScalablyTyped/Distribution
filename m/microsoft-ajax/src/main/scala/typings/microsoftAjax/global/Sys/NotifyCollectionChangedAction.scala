@@ -2,7 +2,6 @@ package typings.microsoftAjax.global.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -16,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object NotifyCollectionChangedAction extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.microsoftAjax.Sys.NotifyCollectionChangedAction with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.microsoftAjax.Sys.NotifyCollectionChangedAction & Double] = js.native
   
-  /* 0 */ val add: typings.microsoftAjax.Sys.NotifyCollectionChangedAction.add with Double = js.native
+  /* 0 */ val add: typings.microsoftAjax.Sys.NotifyCollectionChangedAction.add & Double = js.native
   
-  /* 1 */ val remove: typings.microsoftAjax.Sys.NotifyCollectionChangedAction.remove with Double = js.native
+  /* 1 */ val remove: typings.microsoftAjax.Sys.NotifyCollectionChangedAction.remove & Double = js.native
   
-  /* 2 */ val reset: typings.microsoftAjax.Sys.NotifyCollectionChangedAction.reset with Double = js.native
+  /* 2 */ val reset: typings.microsoftAjax.Sys.NotifyCollectionChangedAction.reset & Double = js.native
 }

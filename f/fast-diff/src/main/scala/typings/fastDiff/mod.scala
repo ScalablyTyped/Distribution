@@ -6,20 +6,20 @@ import typings.fastDiff.fastDiffNumbers.`0`
 import typings.fastDiff.fastDiffNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(text1: String, text2: String): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].apply(text1.asInstanceOf[js.Any], text2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
+  @scala.inline
+  def apply(text1: String, text2: String, cursorPos: Double): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].apply(text1.asInstanceOf[js.Any], text2.asInstanceOf[js.Any], cursorPos.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
+  @scala.inline
+  def apply(text1: String, text2: String, cursorPos: CursorInfo): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].apply(text1.asInstanceOf[js.Any], text2.asInstanceOf[js.Any], cursorPos.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
+  
   @JSImport("fast-diff", JSImport.Namespace)
   @js.native
-  def apply(text1: String, text2: String): js.Array[Diff] = js.native
-  @JSImport("fast-diff", JSImport.Namespace)
-  @js.native
-  def apply(text1: String, text2: String, cursorPos: Double): js.Array[Diff] = js.native
-  @JSImport("fast-diff", JSImport.Namespace)
-  @js.native
-  def apply(text1: String, text2: String, cursorPos: CursorInfo): js.Array[Diff] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("fast-diff", "DELETE")
   @js.native
@@ -33,12 +33,11 @@ object mod {
   @js.native
   val INSERT: `1` = js.native
   
-  @js.native
   trait CursorInfo extends StObject {
     
-    var newRange: Index = js.native
+    var newRange: Index
     
-    var oldRange: Index = js.native
+    var oldRange: Index
   }
   object CursorInfo {
     

@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
   */
-@js.native
 trait PlusNavigatorShortcutOptions extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusNavigatorShortcutOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var classname: js.UndefOr[String] = js.native
+  var classname: js.UndefOr[String] = js.undefined
   
   /**
     * 快捷方式的扩展参数
@@ -27,7 +25,7 @@ trait PlusNavigatorShortcutOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var extra: js.UndefOr[js.Any] = js.native
+  var extra: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 是否需要强制创建快捷方式
@@ -36,7 +34,7 @@ trait PlusNavigatorShortcutOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 快捷方式的图标
@@ -44,7 +42,7 @@ trait PlusNavigatorShortcutOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * 快捷方式名称
@@ -52,7 +50,7 @@ trait PlusNavigatorShortcutOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * 创建快捷方式后的提示信息
@@ -60,7 +58,7 @@ trait PlusNavigatorShortcutOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var toast: js.UndefOr[String] = js.native
+  var toast: js.UndefOr[String] = js.undefined
 }
 object PlusNavigatorShortcutOptions {
   

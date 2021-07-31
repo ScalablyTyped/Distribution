@@ -10,27 +10,25 @@ import typings.baseui.baseuiStrings.Escape
 import typings.baseui.baseuiStrings.Space
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KEY_STRINGS extends StObject {
   
-  var ArrowDown: typings.baseui.baseuiStrings.ArrowDown = js.native
+  var ArrowDown: typings.baseui.baseuiStrings.ArrowDown
   
-  var ArrowLeft: typings.baseui.baseuiStrings.ArrowLeft = js.native
+  var ArrowLeft: typings.baseui.baseuiStrings.ArrowLeft
   
-  var ArrowRight: typings.baseui.baseuiStrings.ArrowRight = js.native
+  var ArrowRight: typings.baseui.baseuiStrings.ArrowRight
   
-  var ArrowUp: typings.baseui.baseuiStrings.ArrowUp = js.native
+  var ArrowUp: typings.baseui.baseuiStrings.ArrowUp
   
-  var Backspace: typings.baseui.baseuiStrings.Backspace = js.native
+  var Backspace: typings.baseui.baseuiStrings.Backspace
   
-  var Enter: typings.baseui.baseuiStrings.Enter = js.native
+  var Enter: typings.baseui.baseuiStrings.Enter
   
-  var Escape: typings.baseui.baseuiStrings.Escape = js.native
+  var Escape: typings.baseui.baseuiStrings.Escape
   
-  var Space: typings.baseui.baseuiStrings.Space = js.native
+  var Space: typings.baseui.baseuiStrings.Space
 }
 object KEY_STRINGS {
   

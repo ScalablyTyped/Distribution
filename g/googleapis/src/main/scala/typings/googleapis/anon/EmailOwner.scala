@@ -3,19 +3,17 @@ package typings.googleapis.anon
 import typings.googleapis.v31Mod.dfareportingV31.SchemaRecipient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailOwner extends StObject {
   
-  var emailOwner: js.UndefOr[Boolean] = js.native
+  var emailOwner: js.UndefOr[Boolean] = js.undefined
   
-  var emailOwnerDeliveryType: js.UndefOr[String] = js.native
+  var emailOwnerDeliveryType: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var recipients: js.UndefOr[js.Array[SchemaRecipient]] = js.native
+  var recipients: js.UndefOr[js.Array[SchemaRecipient]] = js.undefined
 }
 object EmailOwner {
   

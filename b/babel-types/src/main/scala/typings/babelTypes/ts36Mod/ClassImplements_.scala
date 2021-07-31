@@ -3,20 +3,19 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ClassImplements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassImplements_
-  extends Node
+  extends StObject
+     with Node
      with Flow {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var typeParameters: TypeParameterInstantiation_ = js.native
+  var typeParameters: TypeParameterInstantiation_
   
   @JSName("type")
-  var type_ClassImplements_ : ClassImplements = js.native
+  var type_ClassImplements_ : ClassImplements
 }
 object ClassImplements_ {
   
@@ -26,11 +25,10 @@ object ClassImplements_ {
     id: Identifier_,
     loc: SourceLocation,
     start: Double,
-    `type`: ClassImplements,
     typeParameters: TypeParameterInstantiation_
   ): ClassImplements_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassImplements")
     __obj.asInstanceOf[ClassImplements_]
   }
   

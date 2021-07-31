@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.Fabric
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Material")
@@ -174,10 +173,8 @@ object Material {
   def WaterType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WaterType")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("cesium", "Material.fromType")
-  @js.native
-  def fromType(`type`: String): Material = js.native
-  @JSImport("cesium", "Material.fromType")
-  @js.native
-  def fromType(`type`: String, uniforms: js.Any): Material = js.native
+  @scala.inline
+  def fromType(`type`: String): Material = ^.asInstanceOf[js.Dynamic].applyDynamic("fromType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Material]
+  @scala.inline
+  def fromType(`type`: String, uniforms: js.Any): Material = (^.asInstanceOf[js.Dynamic].applyDynamic("fromType")(`type`.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[Material]
 }

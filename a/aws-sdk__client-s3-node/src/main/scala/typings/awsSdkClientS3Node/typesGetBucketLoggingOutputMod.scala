@@ -6,20 +6,19 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetBucketLoggingOutputMod {
   
-  @js.native
   trait GetBucketLoggingOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * <p>Container for logging information. Presence of this element indicates that logging is enabled. Parameters TargetBucket and TargetPrefix are required in this case.</p>
       */
-    var LoggingEnabled: js.UndefOr[UnmarshalledLoggingEnabled] = js.native
+    var LoggingEnabled: js.UndefOr[UnmarshalledLoggingEnabled] = js.undefined
   }
   object GetBucketLoggingOutput {
     

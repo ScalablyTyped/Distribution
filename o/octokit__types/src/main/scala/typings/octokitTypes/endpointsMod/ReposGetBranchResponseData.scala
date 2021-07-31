@@ -5,23 +5,21 @@ import typings.octokitTypes.anon.Enabled
 import typings.octokitTypes.anon.Self
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposGetBranchResponseData extends StObject {
   
-  var _links: Self = js.native
+  var _links: Self
   
-  var commit: Commit = js.native
+  var commit: Commit
   
-  var name: String = js.native
+  var name: String
   
-  var `protected`: Boolean = js.native
+  var `protected`: Boolean
   
-  var protection: Enabled = js.native
+  var protection: Enabled
   
-  var protection_url: String = js.native
+  var protection_url: String
 }
 object ReposGetBranchResponseData {
   

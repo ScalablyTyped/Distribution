@@ -8,7 +8,6 @@ import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import typings.wordpressEditPost.pluginSidebarMod.PluginSidebar.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginSidebarMod {
@@ -27,38 +26,37 @@ object pluginSidebarMod {
   
   object PluginSidebar {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
       /**
         * An optional class name added to the sidebar body.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * A Dashicon slug or a custom JSX element to be rendered when the sidebar is pinned to
         * toolbar.
         */
-      var icon: js.UndefOr[Icon | Element] = js.native
+      var icon: js.UndefOr[Icon | Element] = js.undefined
       
       /**
         * Whether to allow to pin sidebar to toolbar.
         * @defaultValue `true`
         */
-      var isPinnable: js.UndefOr[Boolean] = js.native
+      var isPinnable: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A string identifying the sidebar. Must be unique for every sidebar registered within the
         * scope of your plugin.
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * Title displayed at the top of the sidebar.
         */
-      var title: String = js.native
+      var title: String
     }
     object Props {
       

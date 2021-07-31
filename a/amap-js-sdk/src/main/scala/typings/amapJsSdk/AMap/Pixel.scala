@@ -2,7 +2,6 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* --------------------------- 基础类 --------------------------- */
@@ -10,23 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * 像素坐标，确定地图上的一个像素点。
   */
-@js.native
 trait Pixel extends StObject {
   
   /**
     * 当前像素坐标与传入像素坐标是否相等
     */
-  def equals(point: Pixel): Boolean = js.native
+  def equals(point: Pixel): Boolean
   
   /**
     * 获得X方向像素坐标
     */
-  def getX(): Double = js.native
+  def getX(): Double
   
   /**
     * 获得Y方向像素坐标
     */
-  def getY(): Double = js.native
+  def getY(): Double
 }
 object Pixel {
   

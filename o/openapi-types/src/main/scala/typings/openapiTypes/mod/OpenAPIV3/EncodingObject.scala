@@ -3,21 +3,19 @@ package typings.openapiTypes.mod.OpenAPIV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncodingObject extends StObject {
   
-  var allowReserved: js.UndefOr[Boolean] = js.native
+  var allowReserved: js.UndefOr[Boolean] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var explode: js.UndefOr[Boolean] = js.native
+  var explode: js.UndefOr[Boolean] = js.undefined
   
-  var headers: js.UndefOr[StringDictionary[ReferenceObject | HeaderObject]] = js.native
+  var headers: js.UndefOr[StringDictionary[ReferenceObject | HeaderObject]] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
 }
 object EncodingObject {
   

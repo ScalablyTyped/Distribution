@@ -2,19 +2,19 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RotationGestureHandlerStateChangeEvent extends GestureHandlerStateChangeEvent {
+trait RotationGestureHandlerStateChangeEvent
+  extends StObject
+     with GestureHandlerStateChangeEvent {
   
   @JSName("nativeEvent")
-  var nativeEvent_RotationGestureHandlerStateChangeEvent: GestureHandlerStateChangeNativeEvent with RotationGestureHandlerEventExtra = js.native
+  var nativeEvent_RotationGestureHandlerStateChangeEvent: GestureHandlerStateChangeNativeEvent & RotationGestureHandlerEventExtra
 }
 object RotationGestureHandlerStateChangeEvent {
   
   @scala.inline
-  def apply(nativeEvent: GestureHandlerStateChangeNativeEvent with RotationGestureHandlerEventExtra): RotationGestureHandlerStateChangeEvent = {
+  def apply(nativeEvent: GestureHandlerStateChangeNativeEvent & RotationGestureHandlerEventExtra): RotationGestureHandlerStateChangeEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotationGestureHandlerStateChangeEvent]
   }
@@ -23,6 +23,6 @@ object RotationGestureHandlerStateChangeEvent {
   implicit class RotationGestureHandlerStateChangeEventMutableBuilder[Self <: RotationGestureHandlerStateChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setNativeEvent(value: GestureHandlerStateChangeNativeEvent with RotationGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+    def setNativeEvent(value: GestureHandlerStateChangeNativeEvent & RotationGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }
 }

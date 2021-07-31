@@ -10,9 +10,9 @@ Fastest deep equal comparison for React. Great for React.memo & shouldComponentU
 | ------------------ | :-------------: |
 | Full name          | react-fast-compare |
 | Keywords           | fast, equal, react, compare, shouldComponentUpdate, deep-equal |
-| # releases         | 9 |
-| # dependents       | 235 |
-| # downloads        | 126153062 |
+| # releases         | 8 |
+| # dependents       | 266 |
+| # downloads        | 164053327 |
 | # stars            | 0 |
 
 ## Links

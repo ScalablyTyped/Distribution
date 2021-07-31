@@ -3,7 +3,6 @@ package typings.p5.mod
 import typings.std.AudioNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,7 +19,7 @@ trait Panner3D extends StObject {
     *   Set the X,Y,Z position of the Panner
     *   @return Updated x, y, z values as an array
     */
-  def orient(xVal: Double, yVal: Double, zVal: Double, time: Double): js.Array[_] = js.native
+  def orient(xVal: Double, yVal: Double, zVal: Double, time: Double): js.Array[js.Any] = js.native
   
   /**
     *   Getter and setter methods for orient coordinates
@@ -88,13 +87,13 @@ trait Panner3D extends StObject {
     *   Set the X,Y,Z position of the Panner
     *   @return Updated x, y, z values as an array
     */
-  def set(xVal: Double, yVal: Double, zVal: Double, time: Double): js.Array[_] = js.native
+  def set(xVal: Double, yVal: Double, zVal: Double, time: Double): js.Array[js.Any] = js.native
   
   /**
     *   Set the rolloff factor and max distance
     */
   def setFalloff(): Unit = js.native
-  def setFalloff(maxDistance: js.UndefOr[scala.Nothing], rolloffFactor: Double): Unit = js.native
   def setFalloff(maxDistance: Double): Unit = js.native
   def setFalloff(maxDistance: Double, rolloffFactor: Double): Unit = js.native
+  def setFalloff(maxDistance: Unit, rolloffFactor: Double): Unit = js.native
 }

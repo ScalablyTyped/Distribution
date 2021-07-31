@@ -4,15 +4,13 @@ import typings.react.mod.ReactElement
 import typings.std.Intl.DateTimeFormatPart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Children extends StObject {
   
-  def children(`val`: js.Array[DateTimeFormatPart]): ReactElement | Null = js.native
+  def children(`val`: js.Array[DateTimeFormatPart]): ReactElement | Null
   
-  var value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCall>[0] */ js.Any) | String = js.native
+  var value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCall>[0] */ js.Any) | String
 }
 object Children {
   

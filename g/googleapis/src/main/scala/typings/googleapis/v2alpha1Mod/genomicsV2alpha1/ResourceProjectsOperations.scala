@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/genomics/v2alpha1", "genomics_v2alpha1.Resource$Projects$Operations")
@@ -35,7 +34,7 @@ class ResourceProjectsOperations protected () extends StObject {
     */
   def cancel(): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def cancel(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(params: ParamsResourceProjectsOperationsCancel): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(params: ParamsResourceProjectsOperationsCancel, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def cancel(
@@ -70,7 +69,7 @@ class ResourceProjectsOperations protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaOperation] = js.native
   def get(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def get(params: ParamsResourceProjectsOperationsGet): GaxiosPromise[SchemaOperation] = js.native
   def get(params: ParamsResourceProjectsOperationsGet, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def get(
@@ -105,7 +104,7 @@ class ResourceProjectsOperations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListOperationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListOperationsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListOperationsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListOperationsResponse] = js.native
   def list(params: ParamsResourceProjectsOperationsList): GaxiosPromise[SchemaListOperationsResponse] = js.native
   def list(
     params: ParamsResourceProjectsOperationsList,

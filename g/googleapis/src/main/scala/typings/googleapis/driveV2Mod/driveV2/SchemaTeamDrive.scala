@@ -5,13 +5,11 @@ import typings.googleapis.anon.CanChangeCopyRequiresWriterPermissionRestriction
 import typings.googleapis.anon.XCoordinate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Representation of a Team Drive.
   */
-@js.native
 trait SchemaTeamDrive extends StObject {
   
   /**
@@ -20,50 +18,50 @@ trait SchemaTeamDrive extends StObject {
     * drive.teamdrives.update requests that don&#39;t set themeId. When
     * specified, all fields of the backgroundImageFile must be set.
     */
-  var backgroundImageFile: js.UndefOr[XCoordinate] = js.native
+  var backgroundImageFile: js.UndefOr[XCoordinate] = js.undefined
   
   /**
     * A short-lived link to this Team Drive&#39;s background image.
     */
-  var backgroundImageLink: js.UndefOr[String] = js.native
+  var backgroundImageLink: js.UndefOr[String] = js.undefined
   
   /**
     * Capabilities the current user has on this Team Drive.
     */
-  var capabilities: js.UndefOr[CanChangeCopyRequiresWriterPermissionRestriction] = js.native
+  var capabilities: js.UndefOr[CanChangeCopyRequiresWriterPermissionRestriction] = js.undefined
   
   /**
     * The color of this Team Drive as an RGB hex string. It can only be set on
     * a drive.teamdrives.update request that does not set themeId.
     */
-  var colorRgb: js.UndefOr[String] = js.native
+  var colorRgb: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the Team Drive was created (RFC 3339 date-time).
     */
-  var createdDate: js.UndefOr[String] = js.native
+  var createdDate: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of this Team Drive which is also the ID of the top level folder of
     * this Team Drive.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * This is always drive#teamDrive
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name of this Team Drive.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A set of restrictions that apply to this Team Drive or items inside this
     * Team Drive.
     */
-  var restrictions: js.UndefOr[AdminManagedRestrictions] = js.native
+  var restrictions: js.UndefOr[AdminManagedRestrictions] = js.undefined
   
   /**
     * The ID of the theme from which the background image and color will be
@@ -73,7 +71,7 @@ trait SchemaTeamDrive extends StObject {
     * color are set. This is a write-only field; it can only be set on requests
     * that don&#39;t set colorRgb or backgroundImageFile.
     */
-  var themeId: js.UndefOr[String] = js.native
+  var themeId: js.UndefOr[String] = js.undefined
 }
 object SchemaTeamDrive {
   

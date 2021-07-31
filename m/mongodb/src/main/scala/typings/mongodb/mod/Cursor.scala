@@ -6,7 +6,6 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "Cursor")
@@ -37,11 +36,11 @@ class Cursor[T] () extends Readable {
   def comment(value: String): Cursor[T] = js.native
   
   def count(): js.Promise[scala.Double] = js.native
-  def count(applySkipLimit: js.UndefOr[scala.Nothing], options: CursorCommentOptions): js.Promise[scala.Double] = js.native
   def count(applySkipLimit: Boolean): js.Promise[scala.Double] = js.native
   def count(applySkipLimit: Boolean, callback: MongoCallback[scala.Double]): Unit = js.native
   def count(applySkipLimit: Boolean, options: CursorCommentOptions): js.Promise[scala.Double] = js.native
   def count(applySkipLimit: Boolean, options: CursorCommentOptions, callback: MongoCallback[scala.Double]): Unit = js.native
+  def count(applySkipLimit: Unit, options: CursorCommentOptions): js.Promise[scala.Double] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#count */
   def count(callback: MongoCallback[scala.Double]): Unit = js.native
   def count(options: CursorCommentOptions, callback: MongoCallback[scala.Double]): Unit = js.native
@@ -94,7 +93,7 @@ class Cursor[T] () extends Readable {
   def next(callback: MongoCallback[T | Null]): Unit = js.native
   
   /** http://mongodb.github.io/node-mongodb-native/3.6/api/Cursor.html#project */
-  def project(value: SchemaMember[T, ProjectionOperators | scala.Double | Boolean | _]): Cursor[T] = js.native
+  def project(value: SchemaMember[T, ProjectionOperators | scala.Double | Boolean | js.Any]): Cursor[T] = js.native
   
   var readPreference: ReadPreference = js.native
   

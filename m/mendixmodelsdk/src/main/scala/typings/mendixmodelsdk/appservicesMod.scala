@@ -28,7 +28,6 @@ import typings.mendixmodelsdk.webservicesMod.webservices.VersionedService
 import typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appservicesMod {
@@ -95,6 +94,14 @@ object appservicesMod {
       @JSName("parameters")
       val parameters_FAppServiceAction: IList[IAppServiceActionParameter] = js.native
       
+      /**
+        * Returns the qualified name of this element, or
+        * null if this element is not a part of the model,
+        * or if it or one of its namespace containers does not have a
+        * valid name.
+        */
+      /* CompleteClass */
+      override val qualifiedName: String | Null = js.native
       @JSName("qualifiedName")
       def qualifiedName_MAppServiceAction: String | Null = js.native
       
@@ -122,9 +129,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceAction.create")
-      @js.native
-      def create(model: IModel): AppServiceAction = js.native
+      @scala.inline
+      def create(model: IModel): AppServiceAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[AppServiceAction]
       
       /**
         * Creates and returns a new AppServiceAction instance in the SDK and on the server.
@@ -132,9 +138,8 @@ object appservicesMod {
         * of the parent ConsumedAppService element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceAction.createIn")
-      @js.native
-      def createIn(container: ConsumedAppService): AppServiceAction = js.native
+      @scala.inline
+      def createIn(container: ConsumedAppService): AppServiceAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[AppServiceAction]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceAction.structureTypeName")
@@ -188,6 +193,14 @@ object appservicesMod {
       def parameterType: DataType = js.native
       def parameterType_=(newValue: DataType): Unit = js.native
       
+      /**
+        * Returns the qualified name of this element, or
+        * null if this element is not a part of the model,
+        * or if it or one of its namespace containers does not have a
+        * valid name.
+        */
+      /* CompleteClass */
+      override val qualifiedName: String | Null = js.native
       @JSName("qualifiedName")
       def qualifiedName_MAppServiceActionParameter: String | Null = js.native
       
@@ -211,9 +224,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceActionParameter.create")
-      @js.native
-      def create(model: IModel): AppServiceActionParameter = js.native
+      @scala.inline
+      def create(model: IModel): AppServiceActionParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[AppServiceActionParameter]
       
       /**
         * Creates and returns a new AppServiceActionParameter instance in the SDK and on the server.
@@ -221,9 +233,8 @@ object appservicesMod {
         * of the parent AppServiceAction element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceActionParameter.createIn")
-      @js.native
-      def createIn(container: AppServiceAction): AppServiceActionParameter = js.native
+      @scala.inline
+      def createIn(container: AppServiceAction): AppServiceActionParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[AppServiceActionParameter]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceActionParameter.structureTypeName")
@@ -345,9 +356,8 @@ object appservicesMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.ConsumedAppService.createIn")
-      @js.native
-      def createIn(container: IFolderBase): ConsumedAppService = js.native
+      @scala.inline
+      def createIn(container: IFolderBase): ConsumedAppService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ConsumedAppService]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.ConsumedAppService.structureTypeName")
@@ -409,9 +419,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.Msd.create")
-      @js.native
-      def create(model: IModel): Msd = js.native
+      @scala.inline
+      def create(model: IModel): Msd = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Msd]
       
       /**
         * Creates and returns a new Msd instance in the SDK and on the server.
@@ -419,9 +428,8 @@ object appservicesMod {
         * of the parent ConsumedAppService element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.Msd.createIn")
-      @js.native
-      def createIn(container: ConsumedAppService): Msd = js.native
+      @scala.inline
+      def createIn(container: ConsumedAppService): Msd = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Msd]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.Msd.structureTypeName")
@@ -505,9 +513,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAssociation.create")
-      @js.native
-      def create(model: IModel): MsdAssociation = js.native
+      @scala.inline
+      def create(model: IModel): MsdAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MsdAssociation]
       
       /**
         * Creates and returns a new MsdAssociation instance in the SDK and on the server.
@@ -515,9 +522,8 @@ object appservicesMod {
         * of the parent webservices.DataAssociation element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAssociation.createInDataAssociationUnderAssociationByContract")
-      @js.native
-      def createInDataAssociationUnderAssociationByContract(container: DataAssociation): MsdAssociation = js.native
+      @scala.inline
+      def createInDataAssociationUnderAssociationByContract(container: DataAssociation): MsdAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataAssociationUnderAssociationByContract")(container.asInstanceOf[js.Any]).asInstanceOf[MsdAssociation]
       
       /**
         * Creates and returns a new MsdAssociation instance in the SDK and on the server.
@@ -525,9 +531,8 @@ object appservicesMod {
         * of the parent MsdDomainModel element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAssociation.createInMsdDomainModelUnderAssociations")
-      @js.native
-      def createInMsdDomainModelUnderAssociations(container: MsdDomainModel): MsdAssociation = js.native
+      @scala.inline
+      def createInMsdDomainModelUnderAssociations(container: MsdDomainModel): MsdAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMsdDomainModelUnderAssociations")(container.asInstanceOf[js.Any]).asInstanceOf[MsdAssociation]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAssociation.structureTypeName")
@@ -590,9 +595,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAttribute.create")
-      @js.native
-      def create(model: IModel): MsdAttribute = js.native
+      @scala.inline
+      def create(model: IModel): MsdAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MsdAttribute]
       
       /**
         * Creates and returns a new MsdAttribute instance in the SDK and on the server.
@@ -600,9 +604,8 @@ object appservicesMod {
         * of the parent webservices.DataAttribute element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAttribute.createInDataAttributeUnderAttributeByContract")
-      @js.native
-      def createInDataAttributeUnderAttributeByContract(container: DataAttribute): MsdAttribute = js.native
+      @scala.inline
+      def createInDataAttributeUnderAttributeByContract(container: DataAttribute): MsdAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataAttributeUnderAttributeByContract")(container.asInstanceOf[js.Any]).asInstanceOf[MsdAttribute]
       
       /**
         * Creates and returns a new MsdAttribute instance in the SDK and on the server.
@@ -610,9 +613,8 @@ object appservicesMod {
         * of the parent MsdEntity element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAttribute.createInMsdEntityUnderAttributes")
-      @js.native
-      def createInMsdEntityUnderAttributes(container: MsdEntity): MsdAttribute = js.native
+      @scala.inline
+      def createInMsdEntityUnderAttributes(container: MsdEntity): MsdAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMsdEntityUnderAttributes")(container.asInstanceOf[js.Any]).asInstanceOf[MsdAttribute]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAttribute.structureTypeName")
@@ -659,9 +661,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdDomainModel.create")
-      @js.native
-      def create(model: IModel): MsdDomainModel = js.native
+      @scala.inline
+      def create(model: IModel): MsdDomainModel = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MsdDomainModel]
       
       /**
         * Creates and returns a new MsdDomainModel instance in the SDK and on the server.
@@ -669,9 +670,8 @@ object appservicesMod {
         * of the parent Msd element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdDomainModel.createIn")
-      @js.native
-      def createIn(container: Msd): MsdDomainModel = js.native
+      @scala.inline
+      def createIn(container: Msd): MsdDomainModel = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdDomainModel]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdDomainModel.structureTypeName")
@@ -734,9 +734,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEntity.create")
-      @js.native
-      def create(model: IModel): MsdEntity = js.native
+      @scala.inline
+      def create(model: IModel): MsdEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MsdEntity]
       
       /**
         * Creates and returns a new MsdEntity instance in the SDK and on the server.
@@ -744,9 +743,8 @@ object appservicesMod {
         * of the parent MsdDomainModel element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEntity.createIn")
-      @js.native
-      def createIn(container: MsdDomainModel): MsdEntity = js.native
+      @scala.inline
+      def createIn(container: MsdDomainModel): MsdEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdEntity]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEntity.structureTypeName")
@@ -797,9 +795,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumeration.create")
-      @js.native
-      def create(model: IModel): MsdEnumeration = js.native
+      @scala.inline
+      def create(model: IModel): MsdEnumeration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MsdEnumeration]
       
       /**
         * Creates and returns a new MsdEnumeration instance in the SDK and on the server.
@@ -807,9 +804,8 @@ object appservicesMod {
         * of the parent MsdEnumerationContainer element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumeration.createIn")
-      @js.native
-      def createIn(container: MsdEnumerationContainer): MsdEnumeration = js.native
+      @scala.inline
+      def createIn(container: MsdEnumerationContainer): MsdEnumeration = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdEnumeration]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumeration.structureTypeName")
@@ -856,9 +852,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationContainer.create")
-      @js.native
-      def create(model: IModel): MsdEnumerationContainer = js.native
+      @scala.inline
+      def create(model: IModel): MsdEnumerationContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MsdEnumerationContainer]
       
       /**
         * Creates and returns a new MsdEnumerationContainer instance in the SDK and on the server.
@@ -866,9 +861,8 @@ object appservicesMod {
         * of the parent Msd element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationContainer.createInMsdUnderEnumerations")
-      @js.native
-      def createInMsdUnderEnumerations(container: Msd): MsdEnumerationContainer = js.native
+      @scala.inline
+      def createInMsdUnderEnumerations(container: Msd): MsdEnumerationContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMsdUnderEnumerations")(container.asInstanceOf[js.Any]).asInstanceOf[MsdEnumerationContainer]
       
       /**
         * Creates and returns a new MsdEnumerationContainer instance in the SDK and on the server.
@@ -876,9 +870,8 @@ object appservicesMod {
         * of the parent webservices.VersionedService element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationContainer.createInVersionedServiceUnderEnumerationsByContract")
-      @js.native
-      def createInVersionedServiceUnderEnumerationsByContract(container: VersionedService): MsdEnumerationContainer = js.native
+      @scala.inline
+      def createInVersionedServiceUnderEnumerationsByContract(container: VersionedService): MsdEnumerationContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVersionedServiceUnderEnumerationsByContract")(container.asInstanceOf[js.Any]).asInstanceOf[MsdEnumerationContainer]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationContainer.structureTypeName")
@@ -932,9 +925,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationValue.create")
-      @js.native
-      def create(model: IModel): MsdEnumerationValue = js.native
+      @scala.inline
+      def create(model: IModel): MsdEnumerationValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MsdEnumerationValue]
       
       /**
         * Creates and returns a new MsdEnumerationValue instance in the SDK and on the server.
@@ -942,9 +934,8 @@ object appservicesMod {
         * of the parent MsdEnumeration element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationValue.createIn")
-      @js.native
-      def createIn(container: MsdEnumeration): MsdEnumerationValue = js.native
+      @scala.inline
+      def createIn(container: MsdEnumeration): MsdEnumerationValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdEnumerationValue]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationValue.structureTypeName")
@@ -1025,9 +1016,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMetadata.create")
-      @js.native
-      def create(model: IModel): MsdMetadata = js.native
+      @scala.inline
+      def create(model: IModel): MsdMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MsdMetadata]
       
       /**
         * Creates and returns a new MsdMetadata instance in the SDK and on the server.
@@ -1035,9 +1025,8 @@ object appservicesMod {
         * of the parent Msd element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMetadata.createIn")
-      @js.native
-      def createIn(container: Msd): MsdMetadata = js.native
+      @scala.inline
+      def createIn(container: Msd): MsdMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdMetadata]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMetadata.structureTypeName")
@@ -1110,9 +1099,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflow.create")
-      @js.native
-      def create(model: IModel): MsdMicroflow = js.native
+      @scala.inline
+      def create(model: IModel): MsdMicroflow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MsdMicroflow]
       
       /**
         * Creates and returns a new MsdMicroflow instance in the SDK and on the server.
@@ -1120,9 +1108,8 @@ object appservicesMod {
         * of the parent MsdMetadata element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflow.createIn")
-      @js.native
-      def createIn(container: MsdMetadata): MsdMicroflow = js.native
+      @scala.inline
+      def createIn(container: MsdMetadata): MsdMicroflow = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdMicroflow]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflow.structureTypeName")
@@ -1186,9 +1173,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflowParameter.create")
-      @js.native
-      def create(model: IModel): MsdMicroflowParameter = js.native
+      @scala.inline
+      def create(model: IModel): MsdMicroflowParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MsdMicroflowParameter]
       
       /**
         * Creates and returns a new MsdMicroflowParameter instance in the SDK and on the server.
@@ -1196,9 +1182,8 @@ object appservicesMod {
         * of the parent MsdMicroflow element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflowParameter.createInMsdMicroflowUnderParameters")
-      @js.native
-      def createInMsdMicroflowUnderParameters(container: MsdMicroflow): MsdMicroflowParameter = js.native
+      @scala.inline
+      def createInMsdMicroflowUnderParameters(container: MsdMicroflow): MsdMicroflowParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMsdMicroflowUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[MsdMicroflowParameter]
       
       /**
         * Creates and returns a new MsdMicroflowParameter instance in the SDK and on the server.
@@ -1206,9 +1191,8 @@ object appservicesMod {
         * of the parent webservices.PublishedParameter element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflowParameter.createInPublishedParameterUnderParameterByContract")
-      @js.native
-      def createInPublishedParameterUnderParameterByContract(container: PublishedParameter): MsdMicroflowParameter = js.native
+      @scala.inline
+      def createInPublishedParameterUnderParameterByContract(container: PublishedParameter): MsdMicroflowParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterByContract")(container.asInstanceOf[js.Any]).asInstanceOf[MsdMicroflowParameter]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflowParameter.structureTypeName")
@@ -1257,9 +1241,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdText.create")
-      @js.native
-      def create(model: IModel): MsdText = js.native
+      @scala.inline
+      def create(model: IModel): MsdText = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MsdText]
       
       /**
         * Creates and returns a new MsdText instance in the SDK and on the server.
@@ -1267,9 +1250,8 @@ object appservicesMod {
         * of the parent MsdEnumerationValue element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdText.createIn")
-      @js.native
-      def createIn(container: MsdEnumerationValue): MsdText = js.native
+      @scala.inline
+      def createIn(container: MsdEnumerationValue): MsdText = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdText]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdText.structureTypeName")
@@ -1315,9 +1297,8 @@ object appservicesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdVersion.create")
-      @js.native
-      def create(model: IModel): MsdVersion = js.native
+      @scala.inline
+      def create(model: IModel): MsdVersion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MsdVersion]
       
       /**
         * Creates and returns a new MsdVersion instance in the SDK and on the server.
@@ -1325,9 +1306,8 @@ object appservicesMod {
         * of the parent Msd element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdVersion.createIn")
-      @js.native
-      def createIn(container: Msd): MsdVersion = js.native
+      @scala.inline
+      def createIn(container: Msd): MsdVersion = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdVersion]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdVersion.structureTypeName")
@@ -1349,7 +1329,8 @@ object appservicesMod {
       */
     @js.native
     trait IAppServiceAction
-      extends IElement
+      extends StObject
+         with IElement
          with IByNameReferrable {
       
       val containerAsConsumedAppService: IConsumedAppService = js.native
@@ -1364,7 +1345,8 @@ object appservicesMod {
     
     @js.native
     trait IAppServiceActionParameter
-      extends IElement
+      extends StObject
+         with IElement
          with IByNameReferrable {
       
       val containerAsAppServiceAction: IAppServiceAction = js.native
@@ -1379,7 +1361,9 @@ object appservicesMod {
       * See: {@link https://docs.mendix.com/refguide/consumed-app-services relevant section in reference guide}
       */
     @js.native
-    trait IConsumedAppService extends IDocument {
+    trait IConsumedAppService
+      extends StObject
+         with IDocument {
       
       val actions: IList[IAppServiceAction] = js.native
     }

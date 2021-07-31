@@ -5,65 +5,63 @@ import typings.stripeV3.stripe.Metadata
 import typings.stripeV3.stripeV3Strings.payment_method
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentMethod extends StObject {
   
   /**
     * Billing information associated with the PaymentMethod that may be
     * used or required by particular types of payment methods.
     */
-  var billing_details: BillingDetails = js.native
+  var billing_details: BillingDetails
   
   /**
     * If this is a card PaymentMethod, this hash contains details about the card.
     */
-  var card: js.UndefOr[PaymentMethodCard] = js.native
+  var card: js.UndefOr[PaymentMethodCard] = js.undefined
   
   /**
     * If this is an card_present PaymentMethod, this hash contains details
     * about the Card Present payment method.
     */
-  var card_present: js.UndefOr[js.Any] = js.native
+  var card_present: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Time at which the object was created. Measured in seconds since the
     * Unix epoch.
     */
-  var created: Double = js.native
+  var created: Double
   
   /**
     * The ID of the Customer to which this PaymentMethod is saved.
     * This will not be set when the PaymentMethod has not been saved to a Customer.
     */
-  var customer: String | Null = js.native
+  var customer: String | Null
   
   /**
     * The unique identifier for the object
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Has the value true if the object exists in live mode or the value
     * false if the object exists in test mode.
     */
-  var livemode: Boolean = js.native
+  var livemode: Boolean
   
-  var metadata: Metadata = js.native
+  var metadata: Metadata
   
   /**
     * Value is "payment_method"
     */
-  var `object`: payment_method = js.native
+  var `object`: payment_method
   
   /**
     * The type of the PaymentMethod. An additional hash is included on the
     * PaymentMethod with a name matching this value. It contains additional
     * information specific to the PaymentMethod type.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object PaymentMethod {
   
@@ -74,11 +72,10 @@ object PaymentMethod {
     id: String,
     livemode: Boolean,
     metadata: Metadata,
-    `object`: payment_method,
     `type`: String
   ): PaymentMethod = {
-    val __obj = js.Dynamic.literal(billing_details = billing_details.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(billing_details = billing_details.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], customer = null)
+    __obj.updateDynamic("object")("payment_method")
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethod]
   }

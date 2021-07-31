@@ -2,34 +2,32 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a vSphere volume resource.
   */
-@js.native
 trait VsphereVirtualDiskVolumeSource extends StObject {
   
   /**
     * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
     */
-  var fsType: String = js.native
+  var fsType: String
   
   /**
     * Storage Policy Based Management (SPBM) profile ID associated with the StoragePolicyName.
     */
-  var storagePolicyID: String = js.native
+  var storagePolicyID: String
   
   /**
     * Storage Policy Based Management (SPBM) profile name.
     */
-  var storagePolicyName: String = js.native
+  var storagePolicyName: String
   
   /**
     * Path that identifies vSphere volume vmdk
     */
-  var volumePath: String = js.native
+  var volumePath: String
 }
 object VsphereVirtualDiskVolumeSource {
   

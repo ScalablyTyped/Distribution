@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeThemePermissionsRequest extends StObject {
   
   /**
     * The ID of the AWS account that contains the theme that you're describing.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The ID for the theme that you want to describe permissions for.
     */
-  var ThemeId: RestrictiveResourceId = js.native
+  var ThemeId: RestrictiveResourceId
 }
 object DescribeThemePermissionsRequest {
   

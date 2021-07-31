@@ -12,7 +12,6 @@ import typings.stripe.mod.issuing.disputes.IIssuingDispute
 import typings.stripe.stripeStrings.issuingDottransaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactions {
@@ -20,69 +19,70 @@ object transactions {
   /**
     * Any use of an issued card that results in funds entering or leaving your Stripe account, such as a completed purchase or refund, is represented by an Issuing Transaction object.
     */
-  @js.native
-  trait ITransaction extends IResourceObject {
+  trait ITransaction
+    extends StObject
+       with IResourceObject {
     
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * The Authorization object that led to this transaction.
       */
-    var authorization: String | IAuthorization = js.native
+    var authorization: String | IAuthorization
     
-    var balance_transaction: String | IBalanceTransaction = js.native
+    var balance_transaction: String | IBalanceTransaction
     
     /**
       * The card used to make this transaction.
       */
-    var card: String | IIssuingCard = js.native
+    var card: String | IIssuingCard
     
     /**
       * The cardholder to whom this transaction belongs.
       */
-    var cardholder: String | ICardholder = js.native
+    var cardholder: String | ICardholder
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Three-letter ISO currency code, in lowercase. Must be a supported currency.
       */
-    var currency: String = js.native
+    var currency: String
     
-    var dispute: String | IIssuingDispute = js.native
+    var dispute: String | IIssuingDispute
     
     /**
       * Has the value true if the object exists in live mode or the value false if the object exists in test mode.
       */
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
-    var merchant_amount: Double = js.native
+    var merchant_amount: Double
     
-    var merchant_currency: String = js.native
+    var merchant_currency: String
     
     /**
       * More information about the user involved in the transaction.
       */
-    var merchant_data: MerchantData = js.native
+    var merchant_data: MerchantData
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
       */
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * String representing the object’s type. Objects of the same type share the same value.
       */
     @JSName("object")
-    var object_ITransaction: issuingDottransaction = js.native
+    var object_ITransaction: issuingDottransaction
     
     /**
       * One of capture, refund, cash_withdrawal, refund_reversal, dispute, or dispute_loss.
       */
-    var `type`: TransactionType = js.native
+    var `type`: TransactionType
   }
   object ITransaction {
     
@@ -102,11 +102,10 @@ object transactions {
       merchant_currency: String,
       merchant_data: MerchantData,
       metadata: IMetadata,
-      `object`: issuingDottransaction,
       `type`: TransactionType
     ): ITransaction = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], authorization = authorization.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], card = card.asInstanceOf[js.Any], cardholder = cardholder.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], dispute = dispute.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], merchant_amount = merchant_amount.asInstanceOf[js.Any], merchant_currency = merchant_currency.asInstanceOf[js.Any], merchant_data = merchant_data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("issuing.transaction")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITransaction]
     }
@@ -161,48 +160,47 @@ object transactions {
     }
   }
   
-  @js.native
   trait ITransactionListOptions extends StObject {
     
     /**
       * Only return issuing transactions that belong to the given card.
       */
-    var card: js.UndefOr[String] = js.native
+    var card: js.UndefOr[String] = js.undefined
     
     /**
       * Only return authorizations belonging to the given cardholder.
       */
-    var cardholder: js.UndefOr[String] = js.native
+    var cardholder: js.UndefOr[String] = js.undefined
     
     /**
       * A filter on the list based on the object created field. The value can be a string with an integer Unix timestamp, or it can be a dictionary with the following options:
       */
-    var created: js.UndefOr[ICreated] = js.native
+    var created: js.UndefOr[ICreated] = js.undefined
     
     /**
       * Only return transactions that originate from a given dispute.
       */
-    var dispute: js.UndefOr[String] = js.native
+    var dispute: js.UndefOr[String] = js.undefined
     
     /**
       * A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, starting with obj_bar, your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list.
       */
-    var ending_before: js.UndefOr[String] = js.native
+    var ending_before: js.UndefOr[String] = js.undefined
     
     /**
       * A limit on the number of objects to be returned. Limit can range between 1 and 100, and the default is 10.
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * Only return transactions that are associated with the given settlement.
       */
-    var settlement: js.UndefOr[String] = js.native
+    var settlement: js.UndefOr[String] = js.undefined
     
     /**
       * A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, ending with obj_foo, your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list.
       */
-    var starting_after: js.UndefOr[String] = js.native
+    var starting_after: js.UndefOr[String] = js.undefined
   }
   object ITransactionListOptions {
     
@@ -265,10 +263,9 @@ object transactions {
     }
   }
   
-  @js.native
   trait ITransactionUpdateOptions extends StObject {
     
-    var metadata: js.UndefOr[IOptionsMetadata] = js.native
+    var metadata: js.UndefOr[IOptionsMetadata] = js.undefined
   }
   object ITransactionUpdateOptions {
     

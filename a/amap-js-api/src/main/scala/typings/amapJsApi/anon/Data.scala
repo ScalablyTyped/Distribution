@@ -2,21 +2,19 @@ package typings.amapJsApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data[I] extends StObject {
   
   /**
     * 目标点的数据
     */
-  var data: typings.amapJsApi.AMap.MassMarks.Data = js.native
+  var data: typings.amapJsApi.AMap.MassMarks.Data
   
   /**
     * 事件触发目标
     */
-  var target: I = js.native
+  var target: I
 }
 object Data {
   
@@ -27,7 +25,7 @@ object Data {
   }
   
   @scala.inline
-  implicit class DataMutableBuilder[Self <: Data[_], I] (val x: Self with Data[I]) extends AnyVal {
+  implicit class DataMutableBuilder[Self <: Data[?], I] (val x: Self & Data[I]) extends AnyVal {
     
     @scala.inline
     def setData(value: typings.amapJsApi.AMap.MassMarks.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

@@ -2,21 +2,19 @@ package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleMetadata extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var help: String = js.native
+  var help: String
   
-  var helpUrl: String = js.native
+  var helpUrl: String
   
-  var ruleId: String = js.native
+  var ruleId: String
   
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
 }
 object RuleMetadata {
   

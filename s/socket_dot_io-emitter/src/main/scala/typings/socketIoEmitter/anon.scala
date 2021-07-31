@@ -3,17 +3,17 @@ package typings.socketIoEmitter
 import typings.socketIoEmitter.mod.SocketIORedisOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Host extends SocketIORedisOptions {
+  trait Host
+    extends StObject
+       with SocketIORedisOptions {
     
-    var host: String = js.native
+    var host: String
     
-    var port: Double = js.native
+    var port: Double
   }
   object Host {
     
@@ -35,14 +35,13 @@ object anon {
   }
   
   /* Inlined std.Record<'broadcast' | 'json' | 'volatile', boolean | undefined> */
-  @js.native
   trait Recordbroadcastjsonvolati extends StObject {
     
-    var broadcast: js.UndefOr[Boolean] = js.native
+    var broadcast: js.UndefOr[Boolean] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var volatile: js.UndefOr[Boolean] = js.native
+    var volatile: js.UndefOr[Boolean] = js.undefined
   }
   object Recordbroadcastjsonvolati {
     
@@ -75,10 +74,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Socket extends SocketIORedisOptions {
+  trait Socket
+    extends StObject
+       with SocketIORedisOptions {
     
-    var socket: String = js.native
+    var socket: String
   }
   object Socket {
     

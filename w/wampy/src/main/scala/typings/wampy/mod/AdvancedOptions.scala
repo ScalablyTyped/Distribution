@@ -2,19 +2,17 @@ package typings.wampy.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdvancedOptions extends StObject {
   
-  var disclose_me: js.UndefOr[Boolean] = js.native
+  var disclose_me: js.UndefOr[Boolean] = js.undefined
   
-  var eligible: js.UndefOr[Double | js.Array[Double]] = js.native
+  var eligible: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var exclude: js.UndefOr[Double | js.Array[Double]] = js.native
+  var exclude: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var exclude_me: js.UndefOr[Boolean] = js.native
+  var exclude_me: js.UndefOr[Boolean] = js.undefined
 }
 object AdvancedOptions {
   

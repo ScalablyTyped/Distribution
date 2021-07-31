@@ -3,17 +3,15 @@ package typings.glue
 import typings.glue.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Options extends StObject {
     
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
-    var register: String = js.native
+    var register: String
   }
   object Options {
     
@@ -37,10 +35,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Plugins extends StObject {
     
-    var plugins: js.Array[Plugin | String] = js.native
+    var plugins: js.Array[Plugin | String]
   }
   object Plugins {
     

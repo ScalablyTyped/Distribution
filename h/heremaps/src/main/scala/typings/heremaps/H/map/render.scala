@@ -8,7 +8,6 @@ import typings.heremaps.H.util.EventTarget
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object render {
@@ -20,7 +19,9 @@ object render {
     * map composed of tiles, while 3D engines can generate panoramas displaying the same coordinates as a 'street view'.
     */
   @js.native
-  trait RenderEngine extends EventTarget {
+  trait RenderEngine
+    extends StObject
+       with EventTarget {
     
     /**
       * This method adds a listener for a specific event.
@@ -31,17 +32,17 @@ object render {
       * @param opt_scope {Object=} - An object defining the scope for the handler function
       */
     def addEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit]): Unit = js.native
-    def addEventListener(
-      `type`: String,
-      handler: js.Function1[/* evt */ Event, Unit],
-      opt_capture: js.UndefOr[scala.Nothing],
-      opt_scope: js.Object
-    ): Unit = js.native
     def addEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit], opt_capture: Boolean): Unit = js.native
     def addEventListener(
       `type`: String,
       handler: js.Function1[/* evt */ Event, Unit],
       opt_capture: Boolean,
+      opt_scope: js.Object
+    ): Unit = js.native
+    def addEventListener(
+      `type`: String,
+      handler: js.Function1[/* evt */ Event, Unit],
+      opt_capture: Unit,
       opt_scope: js.Object
     ): Unit = js.native
     
@@ -55,17 +56,17 @@ object render {
       * @param opt_scope {Object=} - An object defining the scope for the handler function
       */
     def removeEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit]): Unit = js.native
-    def removeEventListener(
-      `type`: String,
-      handler: js.Function1[/* evt */ Event, Unit],
-      opt_capture: js.UndefOr[scala.Nothing],
-      opt_scope: js.Object
-    ): Unit = js.native
     def removeEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit], opt_capture: Boolean): Unit = js.native
     def removeEventListener(
       `type`: String,
       handler: js.Function1[/* evt */ Event, Unit],
       opt_capture: Boolean,
+      opt_scope: js.Object
+    ): Unit = js.native
+    def removeEventListener(
+      `type`: String,
+      handler: js.Function1[/* evt */ Event, Unit],
+      opt_capture: Unit,
       opt_scope: js.Object
     ): Unit = js.native
   }
@@ -82,23 +83,33 @@ object render {
       
       /** changes incline angle during the interaction */
       @js.native
-      sealed trait COORD extends InteractionModifiers
+      sealed trait COORD
+        extends StObject
+           with InteractionModifiers
       
       /** changes map center during the interaction */
       @js.native
-      sealed trait HEADING extends InteractionModifiers
+      sealed trait HEADING
+        extends StObject
+           with InteractionModifiers
       
       /** changes tilt angle during the interaction */
       @js.native
-      sealed trait INCLINE extends InteractionModifiers
+      sealed trait INCLINE
+        extends StObject
+           with InteractionModifiers
       
       /** changes heading angle during the interaction */
       @js.native
-      sealed trait TILT extends InteractionModifiers
+      sealed trait TILT
+        extends StObject
+           with InteractionModifiers
       
       /** changes zoom level during the interaction */
       @js.native
-      sealed trait ZOOM extends InteractionModifiers
+      sealed trait ZOOM
+        extends StObject
+           with InteractionModifiers
     }
     
     /**
@@ -118,24 +129,29 @@ object render {
     
     /** Data rendering or animation is in progress. */
     @js.native
-    sealed trait ACTIVE extends RenderState
+    sealed trait ACTIVE
+      extends StObject
+         with RenderState
     
     /** Data rendering or animation is done. */
     @js.native
-    sealed trait DONE extends RenderState
+    sealed trait DONE
+      extends StObject
+         with RenderState
     
     /**
       * Data loading/processing is still in progress, but there is nothing to render. In this state rendering engine might go to sleep mode after
       * certain amount of time to prevent draining of battery on the user device.
       */
     @js.native
-    sealed trait PENDING extends RenderState
+    sealed trait PENDING
+      extends StObject
+         with RenderState
   }
   
   /**
     * An object containing rendering parameters.
     */
-  @js.native
   trait RenderingParams extends StObject {
     
     /**
@@ -143,51 +159,51 @@ object render {
       * optionally an additional margin in case of DOM node rendering for a better rendering experience.
       * @type {H.geo.Rect}
       */
-    var bounds: typings.heremaps.H.geo.Rect = js.native
+    var bounds: typings.heremaps.H.geo.Rect
     
     /**
       * Indicates whether only cached data should be considered.
       * @type {boolean}
       */
-    var cacheOnly: Boolean = js.native
+    var cacheOnly: Boolean
     
     /**
       * The pixelRatio to use for over-sampling in cases of high-resolution displays.
       * See https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio.
       * @type {number}
       */
-    var pixelRatio: Double = js.native
+    var pixelRatio: Double
     
     /**
       * The coordinates relative to the screen center where the rendering has the highest priority. If the layer has to request and/or process data
       * asynchronously, it's recommended to prioritize the rendering close to this center.
       * @type {H.math.Point}
       */
-    var priorityCenter: Point = js.native
+    var priorityCenter: Point
     
     /**
       * The pixel projection to use to project geographical coordinates into screen coordinates and vice versa.
       * @type {H.geo.PixelProjection}
       */
-    var projection: PixelProjection = js.native
+    var projection: PixelProjection
     
     /**
       * The coordinates of the screen center in CSS pixels.
       * @type {H.math.Point}
       */
-    var screenCenter: Point = js.native
+    var screenCenter: Point
     
     /**
       * The size of the area to render.
       * @type {H.math.Size}
       */
-    var size: Size = js.native
+    var size: Size
     
     /**
       * The zoom level to render the data for.
       * @type {number}
       */
-    var zoom: Double = js.native
+    var zoom: Double
   }
   object RenderingParams {
     
@@ -246,7 +262,8 @@ object render {
       */
     @js.native
     trait RenderEngine
-      extends typings.heremaps.H.map.render.RenderEngine {
+      extends StObject
+         with typings.heremaps.H.map.render.RenderEngine {
       
       /**
         * This method retrieves the current setting indicating the length of animations (duration) run by the the render engine in milliseconds.
@@ -281,17 +298,16 @@ object render {
     }
     object RenderEngine {
       
-      @js.native
       trait Options extends StObject {
         
         /** optional */
-        var enableSubpixelRendering: js.UndefOr[Boolean] = js.native
+        var enableSubpixelRendering: js.UndefOr[Boolean] = js.undefined
         
         /** The pixelRatio to use for over-sampling in cases of high-resolution displays */
-        var pixelRatio: Double = js.native
+        var pixelRatio: Double
         
         /** Object describes how many cached zoom levels should be used as a base map background while base map tiles are */
-        var renderBaseBackground: js.UndefOr[js.Object] = js.native
+        var renderBaseBackground: js.UndefOr[js.Object] = js.undefined
       }
       object Options {
         

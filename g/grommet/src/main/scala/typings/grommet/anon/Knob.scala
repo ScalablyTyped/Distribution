@@ -8,23 +8,21 @@ import typings.grommet.utilsMod.ColorType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Knob extends StObject {
   
-  var background: js.UndefOr[BackgroundType] = js.native
+  var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[Record[String, _]]] = js.native
+  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
   
-  var knob: js.UndefOr[`14`] = js.native
+  var knob: js.UndefOr[`14`] = js.undefined
   
-  var radius: js.UndefOr[String] = js.native
+  var radius: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
 }
 object Knob {
   
@@ -50,10 +48,10 @@ object Knob {
     def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)

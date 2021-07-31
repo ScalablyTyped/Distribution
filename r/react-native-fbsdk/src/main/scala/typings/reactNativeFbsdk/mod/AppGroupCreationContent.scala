@@ -2,26 +2,24 @@ package typings.reactNativeFbsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppGroupCreationContent extends StObject {
   
   /**
     * The description of the group.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The name of the group.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The privacy for the group.
     */
-  var privacy: AppGroupPrivacy = js.native
+  var privacy: AppGroupPrivacy
 }
 object AppGroupCreationContent {
   

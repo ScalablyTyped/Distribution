@@ -7,7 +7,6 @@ import typings.hellosignEmbedded.mod.HelloSign.Messages
 import typings.hellosignEmbedded.mod.HelloSign.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hellosign-embedded", JSImport.Default)

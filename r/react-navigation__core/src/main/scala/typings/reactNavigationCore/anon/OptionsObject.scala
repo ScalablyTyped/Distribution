@@ -2,13 +2,11 @@ package typings.reactNavigationCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsObject extends StObject {
   
-  var options: js.Object = js.native
+  var options: js.Object
 }
 object OptionsObject {
   

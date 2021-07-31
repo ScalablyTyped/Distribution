@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportedPlatform extends StObject {
   
   /**
     * 
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
 }
 object SupportedPlatform {
   

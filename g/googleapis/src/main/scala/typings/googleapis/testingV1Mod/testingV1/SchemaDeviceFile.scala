@@ -2,24 +2,22 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single device file description.
   */
-@js.native
 trait SchemaDeviceFile extends StObject {
   
   /**
     * A reference to an opaque binary blob file
     */
-  var obbFile: js.UndefOr[SchemaObbFile] = js.native
+  var obbFile: js.UndefOr[SchemaObbFile] = js.undefined
   
   /**
     * A reference to a regular file
     */
-  var regularFile: js.UndefOr[SchemaRegularFile] = js.native
+  var regularFile: js.UndefOr[SchemaRegularFile] = js.undefined
 }
 object SchemaDeviceFile {
   

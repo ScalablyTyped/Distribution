@@ -14,7 +14,6 @@ import typings.antdMobile.popoverPropsTypeMod.PopoverPropsType
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverMod {
@@ -42,18 +41,19 @@ object popoverMod {
     def defaultProps_=(x: Placement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait PopOverPropsType extends PopoverPropsType {
+  trait PopOverPropsType
+    extends StObject
+       with PopoverPropsType {
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
-    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var placement: js.UndefOr[left | right | top | bottom | topLeft | topRight | bottomLeft | bottomRight] = js.native
+    var placement: js.UndefOr[left | right | top | bottom | topLeft | topRight | bottomLeft | bottomRight] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object PopOverPropsType {
     

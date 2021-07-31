@@ -2,15 +2,13 @@ package typings.hotShots
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Buffer extends StObject {
     
-    var buffer: String = js.native
+    var buffer: String
   }
   object Buffer {
     

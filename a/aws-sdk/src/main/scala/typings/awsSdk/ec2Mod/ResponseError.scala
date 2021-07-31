@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseError extends StObject {
   
   /**
     * The error code.
     */
-  var Code: js.UndefOr[LaunchTemplateErrorCode] = js.native
+  var Code: js.UndefOr[LaunchTemplateErrorCode] = js.undefined
   
   /**
     * The error message, if applicable.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
 }
 object ResponseError {
   

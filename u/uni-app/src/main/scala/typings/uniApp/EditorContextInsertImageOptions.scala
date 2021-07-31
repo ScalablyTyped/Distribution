@@ -2,41 +2,39 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorContextInsertImageOptions extends StObject {
   
   /**
     * 图像无法显示时的替代文本
     */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * data 被序列化为 name=value;name1=value2 的格式挂在属性 data-custom 上
     */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 接口调用失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 图片地址
     */
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
   /**
     * 接口调用成功的回调函数
     */
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object EditorContextInsertImageOptions {
   

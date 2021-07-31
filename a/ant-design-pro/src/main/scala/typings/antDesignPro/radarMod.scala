@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radarMod {
@@ -16,20 +15,19 @@ object radarMod {
   class default ()
     extends Component[IRadarProps, js.Any, js.Any]
   
-  @js.native
   trait IRadarProps extends StObject {
     
-    var data: js.Array[Label] = js.native
+    var data: js.Array[Label]
     
-    var hasLegend: js.UndefOr[Boolean] = js.native
+    var hasLegend: js.UndefOr[Boolean] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var padding: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.native
+    var padding: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object IRadarProps {
     

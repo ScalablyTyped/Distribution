@@ -2,29 +2,27 @@ package typings.pulumiKubernetes.outputMod.autoscaling.v2beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CrossVersionObjectReference contains enough information to let you identify the referred resource.
   */
-@js.native
 trait CrossVersionObjectReference extends StObject {
   
   /**
     * API version of the referent
     */
-  var apiVersion: String = js.native
+  var apiVersion: String
   
   /**
     * Kind of the referent; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
     */
-  var kind: String = js.native
+  var kind: String
   
   /**
     * Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names
     */
-  var name: String = js.native
+  var name: String
 }
 object CrossVersionObjectReference {
   

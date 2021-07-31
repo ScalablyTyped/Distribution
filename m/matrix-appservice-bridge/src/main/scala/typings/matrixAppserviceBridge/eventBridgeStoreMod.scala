@@ -5,7 +5,6 @@ import typings.matrixAppserviceBridge.eventMod.StoredEvent
 import typings.nedb.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventBridgeStoreMod {
@@ -13,7 +12,7 @@ object eventBridgeStoreMod {
   @JSImport("matrix-appservice-bridge/lib/components/event-bridge-store", "EventBridgeStore")
   @js.native
   class EventBridgeStore protected () extends BridgeStore {
-    def this(db: ^[_]) = this()
+    def this(db: ^[js.Any]) = this()
     
     /**
       * Get an existing event based on the provided matrix IDs.

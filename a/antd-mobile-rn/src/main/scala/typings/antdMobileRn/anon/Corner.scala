@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.RegisteredStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Corner extends StObject {
   
-  var corner: Boolean = js.native
+  var corner: Boolean
   
-  var dot: Boolean = js.native
+  var dot: Boolean
   
-  var overflowCount: Double = js.native
+  var overflowCount: Double
   
-  var size: String = js.native
+  var size: String
   
-  var styles: StringDictionary[RegisteredStyle[_]] = js.native
+  var styles: StringDictionary[RegisteredStyle[js.Any]]
 }
 object Corner {
   
@@ -28,7 +26,7 @@ object Corner {
     dot: Boolean,
     overflowCount: Double,
     size: String,
-    styles: StringDictionary[RegisteredStyle[_]]
+    styles: StringDictionary[RegisteredStyle[js.Any]]
   ): Corner = {
     val __obj = js.Dynamic.literal(corner = corner.asInstanceOf[js.Any], dot = dot.asInstanceOf[js.Any], overflowCount = overflowCount.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Corner]
@@ -50,6 +48,6 @@ object Corner {
     def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

@@ -6,47 +6,47 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("swagger-express-validator", JSImport.Namespace)
   @js.native
-  def apply(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("swagger-express-validator", "validator")
-  @js.native
-  def validator(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def validator(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("validator")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @js.native
   trait Options extends StObject {
     
-    var allowNullable: js.UndefOr[Boolean] = js.native
+    var allowNullable: js.UndefOr[Boolean] = js.undefined
     
     var requestValidationFn: js.UndefOr[
         js.Function3[
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
           /* data */ js.Any, 
           /* errors */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var responseValidationFn: js.UndefOr[
         js.Function3[
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
           /* data */ js.Any, 
           /* errors */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var schema: String = js.native
+    var schema: String
     
-    var validateRequest: js.UndefOr[Boolean] = js.native
+    var validateRequest: js.UndefOr[Boolean] = js.undefined
     
-    var validateResponse: js.UndefOr[Boolean] = js.native
+    var validateResponse: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -67,7 +67,7 @@ object mod {
       
       @scala.inline
       def setRequestValidationFn(
-        value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* data */ js.Any, /* errors */ js.Any) => Unit
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* data */ js.Any, /* errors */ js.Any) => Unit
       ): Self = StObject.set(x, "requestValidationFn", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -75,7 +75,7 @@ object mod {
       
       @scala.inline
       def setResponseValidationFn(
-        value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* data */ js.Any, /* errors */ js.Any) => Unit
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* data */ js.Any, /* errors */ js.Any) => Unit
       ): Self = StObject.set(x, "responseValidationFn", js.Any.fromFunction3(value))
       
       @scala.inline

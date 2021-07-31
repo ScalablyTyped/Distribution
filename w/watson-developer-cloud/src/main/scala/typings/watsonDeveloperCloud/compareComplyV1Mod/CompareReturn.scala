@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The comparison of the two submitted documents. */
-@js.native
 trait CompareReturn extends StObject {
   
   /** A list of pairs of elements that semantically align between the compared documents. */
-  var aligned_elements: js.UndefOr[js.Array[AlignedElement]] = js.native
+  var aligned_elements: js.UndefOr[js.Array[AlignedElement]] = js.undefined
   
   /** Information about the documents being compared. */
-  var documents: js.UndefOr[js.Array[Document]] = js.native
+  var documents: js.UndefOr[js.Array[Document]] = js.undefined
   
   /** The analysis model used to compare the input documents. For the **Compare two documents** method, the only valid value is `contracts`. */
-  var model_id: js.UndefOr[String] = js.native
+  var model_id: js.UndefOr[String] = js.undefined
   
   /** The version of the analysis model identified by the value of the `model_id` key. */
-  var model_version: js.UndefOr[String] = js.native
+  var model_version: js.UndefOr[String] = js.undefined
   
   /** A list of elements that do not semantically align between the compared documents. */
-  var unaligned_elements: js.UndefOr[js.Array[UnalignedElement]] = js.native
+  var unaligned_elements: js.UndefOr[js.Array[UnalignedElement]] = js.undefined
 }
 object CompareReturn {
   

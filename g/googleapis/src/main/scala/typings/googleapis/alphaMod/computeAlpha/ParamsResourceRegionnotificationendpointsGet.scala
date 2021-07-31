@@ -5,31 +5,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceRegionnotificationendpointsGet extends StandardParameters {
+trait ParamsResourceRegionnotificationendpointsGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of the NotificationEndpoint resource to return.
     */
-  var notificationEndpoint: js.UndefOr[String] = js.native
+  var notificationEndpoint: js.UndefOr[String] = js.undefined
   
   /**
     * Project ID for this request.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the region scoping this request.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceRegionnotificationendpointsGet {
   

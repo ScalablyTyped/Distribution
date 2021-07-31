@@ -2,17 +2,15 @@ package typings.reactBootstrapTable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
-  var filter: js.UndefOr[Boolean] = js.native
+  var filter: js.UndefOr[Boolean] = js.undefined
   
-  var search: js.UndefOr[Boolean] = js.native
+  var search: js.UndefOr[Boolean] = js.undefined
   
-  var sort: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[Boolean] = js.undefined
 }
 object Filter {
   

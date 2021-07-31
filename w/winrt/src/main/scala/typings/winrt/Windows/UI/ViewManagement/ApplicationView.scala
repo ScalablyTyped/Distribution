@@ -2,56 +2,54 @@ package typings.winrt.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationView extends StObject {
   
   /**
     * Gets whether the current window (app view) is adjacent to the left edge of the screen.
     **/
-  var adjacentToLeftDisplayEdge: Double = js.native
+  var adjacentToLeftDisplayEdge: Double
   
   /**
     * Gets whether the current window (app view) is adjacent to the right edge of the screen.
     **/
-  var adjacentToRightDisplayEdge: Boolean = js.native
+  var adjacentToRightDisplayEdge: Boolean
   
   /**
     * Gets the current ID of the window (app view) .
     **/
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Gets whether the window(app view) is full screen or not.
     **/
-  var isFullScreen: Boolean = js.native
+  var isFullScreen: Boolean
   
   /**
     * Gets whether the window (app view) is on the Windows lock screen.
     **/
-  var isOnLockScreen: Boolean = js.native
+  var isOnLockScreen: Boolean
   
   /**
     * Gets or sets whether screen capture is enabled for the window (app view).
     **/
-  var isScreenCaptureEnabled: Boolean = js.native
+  var isScreenCaptureEnabled: Boolean
   
   /**
     * Gets the current orientation of the window (app view) with respect to the display.
     **/
-  var orientation: ApplicationViewOrientation = js.native
+  var orientation: ApplicationViewOrientation
   
   /**
     * Gets or sets the displayed title of the window.
     **/
-  var title: String = js.native
+  var title: String
   
   /**
     * Gets the title bar of the app.
     **/
-  var titleBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ApplicationViewTitleBar */ js.Any = js.native
+  var titleBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ApplicationViewTitleBar */ js.Any
 }
 object ApplicationView {
   

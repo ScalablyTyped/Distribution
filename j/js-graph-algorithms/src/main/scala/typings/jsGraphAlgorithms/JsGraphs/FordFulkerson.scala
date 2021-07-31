@@ -2,25 +2,23 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FordFulkerson extends StObject {
   
-  var edgeTo: js.Any = js.native
+  var edgeTo: js.Any
   
-  def hasAugmentedPath(G: FlowNetwork): Boolean = js.native
+  def hasAugmentedPath(G: FlowNetwork): Boolean
   
-  var marked: js.Any = js.native
+  var marked: js.Any
   
-  def minCut(G: FlowNetwork): js.Array[FlowEdge] = js.native
+  def minCut(G: FlowNetwork): js.Array[FlowEdge]
   
-  var s: js.Any = js.native
+  var s: js.Any
   
-  var t: js.Any = js.native
+  var t: js.Any
   
-  var value: Double = js.native
+  var value: Double
 }
 object FordFulkerson {
   

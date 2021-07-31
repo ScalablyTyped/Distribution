@@ -10,7 +10,6 @@ import typings.sipJs.transportMod.Transport
 import typings.sipJs.userAgentDelegateMod.UserAgentDelegate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userAgentOptionsMod {
@@ -22,19 +21,25 @@ object userAgentOptionsMod {
   object SIPExtension extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[SIPExtension with String] = js.native
+    def apply(value: String): js.UndefOr[SIPExtension & String] = js.native
     
     @js.native
-    sealed trait Required extends SIPExtension
-    /* "Required" */ val Required: typings.sipJs.userAgentOptionsMod.SIPExtension.Required with String = js.native
+    sealed trait Required
+      extends StObject
+         with SIPExtension
+    /* "Required" */ val Required: typings.sipJs.userAgentOptionsMod.SIPExtension.Required & String = js.native
     
     @js.native
-    sealed trait Supported extends SIPExtension
-    /* "Supported" */ val Supported: typings.sipJs.userAgentOptionsMod.SIPExtension.Supported with String = js.native
+    sealed trait Supported
+      extends StObject
+         with SIPExtension
+    /* "Supported" */ val Supported: typings.sipJs.userAgentOptionsMod.SIPExtension.Supported & String = js.native
     
     @js.native
-    sealed trait Unsupported extends SIPExtension
-    /* "Unsupported" */ val Unsupported: typings.sipJs.userAgentOptionsMod.SIPExtension.Unsupported with String = js.native
+    sealed trait Unsupported
+      extends StObject
+         with SIPExtension
+    /* "Unsupported" */ val Unsupported: typings.sipJs.userAgentOptionsMod.SIPExtension.Unsupported & String = js.native
   }
   
   type LogConnector = js.Function4[
@@ -67,7 +72,6 @@ object userAgentOptionsMod {
     def warn: typings.sipJs.sipJsStrings.warn = "warn".asInstanceOf[typings.sipJs.sipJsStrings.warn]
   }
   
-  @js.native
   trait UserAgentOptions extends StObject {
     
     /**
@@ -76,25 +80,25 @@ object userAgentOptionsMod {
       * RFC 6665 obsoletes the use of out of dialog NOTIFY from RFC 3265.
       * @defaultValue `false`
       */
-    var allowLegacyNotifications: js.UndefOr[Boolean] = js.native
+    var allowLegacyNotifications: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Authorization ha1.
       * @defaultValue `""`
       */
-    var authorizationHa1: js.UndefOr[String] = js.native
+    var authorizationHa1: js.UndefOr[String] = js.undefined
     
     /**
       * Authorization password.
       * @defaultValue `""`
       */
-    var authorizationPassword: js.UndefOr[String] = js.native
+    var authorizationPassword: js.UndefOr[String] = js.undefined
     
     /**
       * Authorization username.
       * @defaultValue `""`
       */
-    var authorizationUsername: js.UndefOr[String] = js.native
+    var authorizationUsername: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated
@@ -105,19 +109,19 @@ object userAgentOptionsMod {
       * option is set to `true` an alternative method of connection detection
       * must be used.
       */
-    var autoStart: js.UndefOr[Boolean] = js.native
+    var autoStart: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, the user agent calls the `stop()` method on unload (if running in browser window).
       * @defaultValue `true`
       */
-    var autoStop: js.UndefOr[Boolean] = js.native
+    var autoStop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Delegate for {@link UserAgent}.
       * @defaultValue `{}`
       */
-    var delegate: js.UndefOr[UserAgentDelegate] = js.native
+    var delegate: js.UndefOr[UserAgentDelegate] = js.undefined
     
     /**
       * The display name associated with the user agent.
@@ -128,87 +132,87 @@ object userAgentOptionsMod {
       * (SIPjs will always enclose the `displayName` value between double quotes).
       * @defaultValue `""`
       */
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
     /**
       * Force adding rport to Via header.
       * @defaultValue `false`
       */
-    var forceRport: js.UndefOr[Boolean] = js.native
+    var forceRport: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Hack
       * @deprecated TBD
       */
-    var hackAllowUnregisteredOptionTags: js.UndefOr[Boolean] = js.native
+    var hackAllowUnregisteredOptionTags: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Hack
       * @deprecated TBD
       */
-    var hackIpInContact: js.UndefOr[Boolean | String] = js.native
+    var hackIpInContact: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * Hack
       * @deprecated TBD
       */
-    var hackViaTcp: js.UndefOr[Boolean] = js.native
+    var hackViaTcp: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Hack
       * @deprecated TBD
       */
-    var hackWssInTransport: js.UndefOr[Boolean] = js.native
+    var hackWssInTransport: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates whether log messages should be written to the browser console.
       * @defaultValue `true`
       */
-    var logBuiltinEnabled: js.UndefOr[Boolean] = js.native
+    var logBuiltinEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, constructor logs the user agent configuration.
       * @defaultValue `true`
       */
-    var logConfiguration: js.UndefOr[Boolean] = js.native
+    var logConfiguration: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function which will be called every time a log is generated.
       * @defaultValue A noop
       */
-    var logConnector: js.UndefOr[LogConnector] = js.native
+    var logConnector: js.UndefOr[LogConnector] = js.undefined
     
     /**
       * Indicates the verbosity level of the log messages.
       * @defaultValue `"log"`
       */
-    var logLevel: js.UndefOr[LogLevel] = js.native
+    var logLevel: js.UndefOr[LogLevel] = js.undefined
     
     /**
       * Number of seconds after which an incoming call is rejected if not answered.
       * @defaultValue 60
       */
-    var noAnswerTimeout: js.UndefOr[Double] = js.native
+    var noAnswerTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Adds a Route header(s) to outgoing requests.
       * @defaultValue `[]`
       */
-    var preloadedRouteSet: js.UndefOr[js.Array[String]] = js.native
+    var preloadedRouteSet: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * @deprecated
       * Maximum number of times to attempt to reconnect when the transport connection drops.
       * @defaultValue 0
       */
-    var reconnectionAttempts: js.UndefOr[Double] = js.native
+    var reconnectionAttempts: js.UndefOr[Double] = js.undefined
     
     /**
       * @deprecated
       * Seconds to wait between reconnection attempts when the transport connection drops.
       * @defaultValue 4
       */
-    var reconnectionDelay: js.UndefOr[Double] = js.native
+    var reconnectionDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * A factory for generating `SessionDescriptionHandler` instances.
@@ -217,7 +221,7 @@ object userAgentOptionsMod {
       * and the `sessionDescriptionHandlerFactoryOptions` object.
       * @defaultValue `Web.SessionDescriptionHandler.defaultFactory`
       */
-    var sessionDescriptionHandlerFactory: js.UndefOr[SessionDescriptionHandlerFactory] = js.native
+    var sessionDescriptionHandlerFactory: js.UndefOr[SessionDescriptionHandlerFactory] = js.undefined
     
     /**
       * Options to passed to `sessionDescriptionHandlerFactory`.
@@ -225,14 +229,14 @@ object userAgentOptionsMod {
       * See `Web.SessionDescriptionHandlerOptions` for details.
       * @defaultValue `{}`
       */
-    var sessionDescriptionHandlerFactoryOptions: js.UndefOr[js.Object] = js.native
+    var sessionDescriptionHandlerFactoryOptions: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Reliable provisional responses.
       * https://tools.ietf.org/html/rfc3262
       * @defaultValue `SIPExtension.Unsupported`
       */
-    var sipExtension100rel: js.UndefOr[SIPExtension] = js.native
+    var sipExtension100rel: js.UndefOr[SIPExtension] = js.undefined
     
     /**
       * Extra option tags to claim support for.
@@ -242,21 +246,21 @@ object userAgentOptionsMod {
       * See {@link UserAgentRegisteredOptionTags} for valid option tags.
       * @defaultValue `[]`
       */
-    var sipExtensionExtraSupported: js.UndefOr[js.Array[String]] = js.native
+    var sipExtensionExtraSupported: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Replaces header.
       * https://tools.ietf.org/html/rfc3891
       * @defaultValue `SIPExtension.Unsupported`
       */
-    var sipExtensionReplaces: js.UndefOr[SIPExtension] = js.native
+    var sipExtensionReplaces: js.UndefOr[SIPExtension] = js.undefined
     
     /**
       * An id uniquely identify this user agent instance.
       * @defaultValue
       * A random id generated by default.
       */
-    var sipjsId: js.UndefOr[String] = js.native
+    var sipjsId: js.UndefOr[String] = js.undefined
     
     /**
       * A constructor function for the user agent's `Transport`.
@@ -264,7 +268,7 @@ object userAgentOptionsMod {
       * For more information about creating your own transport see `Transport`.
       * @defaultValue `WebSocketTransport`
       */
-    var transportConstructor: js.UndefOr[Instantiable2[/* logger */ Logger, /* options */ js.Any, Transport]] = js.native
+    var transportConstructor: js.UndefOr[Instantiable2[/* logger */ Logger, /* options */ js.Any, Transport]] = js.undefined
     
     /**
       * An options bucket object passed to `transportConstructor` when instantiated.
@@ -272,7 +276,7 @@ object userAgentOptionsMod {
       * See WebSocket Transport Configuration Parameters for the full list of options for the default transport.
       * @defaultValue `{}`
       */
-    var transportOptions: js.UndefOr[js.Any] = js.native
+    var transportOptions: js.UndefOr[js.Any] = js.undefined
     
     /**
       * SIP Addresses-of-Record URI associated with the user agent.
@@ -286,21 +290,21 @@ object userAgentOptionsMod {
       * @defaultValue
       * By default, URI is set to `sip:anonymous.X@anonymous.invalid`, where X is a random token generated for each UA.
       */
-    var uri: js.UndefOr[URI] = js.native
+    var uri: js.UndefOr[URI] = js.undefined
     
     /**
       * User agent string used in the UserAgent header.
       * @defaultValue
       * A reasonable value is utilized.
       */
-    var userAgentString: js.UndefOr[String] = js.native
+    var userAgentString: js.UndefOr[String] = js.undefined
     
     /**
       * Hostname to use in Via header.
       * @defaultValue
       * A random hostname in the .invalid domain.
       */
-    var viaHost: js.UndefOr[String] = js.native
+    var viaHost: js.UndefOr[String] = js.undefined
   }
   object UserAgentOptions {
     

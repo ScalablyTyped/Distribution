@@ -9,7 +9,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textareaItemStyleIndexNativeMod {
@@ -51,18 +50,17 @@ object textareaItemStyleIndexNativeMod {
     def input_=(x: BackgroundColorFontSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ITextareaItemStyle extends StObject {
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var count: ViewStyle = js.native
+    var count: ViewStyle
     
-    var errorIcon: ViewStyle = js.native
+    var errorIcon: ViewStyle
     
-    var icon: ViewStyle = js.native
+    var icon: ViewStyle
     
-    var input: TextStyle = js.native
+    var input: TextStyle
   }
   object ITextareaItemStyle {
     

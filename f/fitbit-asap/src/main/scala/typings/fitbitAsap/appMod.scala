@@ -3,7 +3,6 @@ package typings.fitbitAsap
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appMod extends Shortcut {
@@ -37,13 +36,12 @@ object appMod extends Shortcut {
     def send(message: js.Any, options: Options): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * The maximum number of milliseconds a message can remain in the queue. The default is 86400000 (24 hours).
       */
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object Options {
     

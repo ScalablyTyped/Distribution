@@ -9,7 +9,6 @@ import typings.weixinApp.weixinAppNumbers.`1.25`
 import typings.weixinApp.weixinAppNumbers.`1.5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 媒体-----视频组件控制

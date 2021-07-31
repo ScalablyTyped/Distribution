@@ -8,10 +8,8 @@ import typings.twineSugarcube.twineSugarcubeBooleans.`true`
 import typings.twineSugarcube.twineSugarcubeStrings.prompt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Autoload extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait Autoload extends StObject {
     *     // code
     * };
     */
-  var autoload: Boolean | prompt | js.Function0[Boolean] | Null = js.native
+  var autoload: Boolean | prompt | js.Function0[Boolean] | Null
   
   /**
     * Determines whether the autosave is created/updated when passages are displayed. Valid values are boolean true,
@@ -59,7 +57,7 @@ trait Autoload extends StObject {
     *     // code
     * };
     */
-  var autosave: `true` | String | Array[String] | js.Function0[Boolean] | Null = js.native
+  var autosave: `true` | String | Array[String] | js.Function0[Boolean] | Null
   
   /**
     * Sets the story ID associated with saves.
@@ -68,7 +66,7 @@ trait Autoload extends StObject {
     * @example
     *  Config.saves.id = "a-big-huge-story-part-1";
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Determines whether saving is allowed within the current context. The callback is invoked each time a save is
@@ -81,7 +79,7 @@ trait Autoload extends StObject {
     *     // code
     * };
     */
-  var isAllowed: js.Function0[Boolean] | Null = js.native
+  var isAllowed: js.Function0[Boolean] | Null
   
   /**
     * Performs any required pre-processing before the save data is loaded. The callback is passed one parameter, the
@@ -97,7 +95,7 @@ trait Autoload extends StObject {
     * // code
     * };
     */
-  var onLoad: SaveObjectHander | Null = js.native
+  var onLoad: SaveObjectHander | Null
   
   /**
     * Performs any required post-processing before the save data is saved. The callback is passed one parameter, the
@@ -112,7 +110,7 @@ trait Autoload extends StObject {
     * // code
     * };
     */
-  var onSave: SaveObjectHander | Null = js.native
+  var onSave: SaveObjectHander | Null
   
   /**
     * Sets the maximum number of available save slots.
@@ -122,7 +120,7 @@ trait Autoload extends StObject {
     * @example
     * Config.saves.slots = 4;
     */
-  var slots: Double = js.native
+  var slots: Double
   
   /**
     * Sets the version property of saves.
@@ -138,13 +136,13 @@ trait Autoload extends StObject {
     * // As a string
     * Config.saves.version = "v3";
     */
-  var version: js.Any = js.native
+  var version: js.Any
 }
 object Autoload {
   
   @scala.inline
   def apply(id: String, slots: Double, version: js.Any): Autoload = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], autoload = null, autosave = null, isAllowed = null, onLoad = null, onSave = null)
     __obj.asInstanceOf[Autoload]
   }
   

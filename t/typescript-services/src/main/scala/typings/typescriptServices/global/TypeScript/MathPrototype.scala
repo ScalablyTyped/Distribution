@@ -2,22 +2,24 @@ package typings.typescriptServices.global.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.MathPrototype")
 @js.native
 class MathPrototype ()
-  extends typings.typescriptServices.TypeScript.MathPrototype
+  extends StObject
+     with typings.typescriptServices.TypeScript.MathPrototype
 object MathPrototype {
   
-  /* static member */
-  @JSGlobal("TypeScript.MathPrototype.max")
+  @JSGlobal("TypeScript.MathPrototype")
   @js.native
-  def max(a: Double, b: Double): Double = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("TypeScript.MathPrototype.min")
-  @js.native
-  def min(a: Double, b: Double): Double = js.native
+  @scala.inline
+  def max(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  /* static member */
+  @scala.inline
+  def min(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

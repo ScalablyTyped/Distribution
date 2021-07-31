@@ -10,9 +10,9 @@ Ionic Storage utility
 | ------------------ | :-------------: |
 | Full name          | @ionic/storage |
 | Keywords           | ionic, angular, localforage, cordova, hybrid |
-| # releases         | 4 |
-| # dependents       | 172 |
-| # downloads        | 2127215 |
+| # releases         | 5 |
+| # dependents       | 178 |
+| # downloads        | 2395857 |
 | # stars            | 1 |
 
 ## Links

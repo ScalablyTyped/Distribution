@@ -3,49 +3,47 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortableOptions extends StObject {
   
-  var autoScroll: js.UndefOr[Boolean] = js.native
+  var autoScroll: js.UndefOr[Boolean] = js.undefined
   
-  var axis: js.UndefOr[String] = js.native
+  var axis: js.UndefOr[String] = js.undefined
   
-  var cancel: js.UndefOr[js.Function1[/* e */ SortableCancelEvent, Unit]] = js.native
+  var cancel: js.UndefOr[js.Function1[/* e */ SortableCancelEvent, Unit]] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ SortableChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ SortableChangeEvent, Unit]] = js.undefined
   
-  var connectWith: js.UndefOr[String] = js.native
+  var connectWith: js.UndefOr[String] = js.undefined
   
-  var container: js.UndefOr[String | JQuery] = js.native
+  var container: js.UndefOr[String | JQuery] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var cursorOffset: js.UndefOr[SortableCursorOffset] = js.native
+  var cursorOffset: js.UndefOr[SortableCursorOffset] = js.undefined
   
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var end: js.UndefOr[js.Function1[/* e */ SortableEndEvent, Unit]] = js.native
+  var end: js.UndefOr[js.Function1[/* e */ SortableEndEvent, Unit]] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var handler: js.UndefOr[String] = js.native
+  var handler: js.UndefOr[String] = js.undefined
   
-  var hint: js.UndefOr[js.Function | String | JQuery] = js.native
+  var hint: js.UndefOr[js.Function | String | JQuery] = js.undefined
   
-  var holdToDrag: js.UndefOr[Boolean] = js.native
+  var holdToDrag: js.UndefOr[Boolean] = js.undefined
   
-  var ignore: js.UndefOr[String] = js.native
+  var ignore: js.UndefOr[String] = js.undefined
   
-  var move: js.UndefOr[js.Function1[/* e */ SortableMoveEvent, Unit]] = js.native
+  var move: js.UndefOr[js.Function1[/* e */ SortableMoveEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var placeholder: js.UndefOr[js.Function | String | JQuery] = js.native
+  var placeholder: js.UndefOr[js.Function | String | JQuery] = js.undefined
   
-  var start: js.UndefOr[js.Function1[/* e */ SortableStartEvent, Unit]] = js.native
+  var start: js.UndefOr[js.Function1[/* e */ SortableStartEvent, Unit]] = js.undefined
 }
 object SortableOptions {
   

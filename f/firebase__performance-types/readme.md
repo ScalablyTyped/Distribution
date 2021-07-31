@@ -10,9 +10,9 @@ Typings are for version 0.0.13
 | ------------------ | :-------------: |
 | Full name          | @firebase/performance-types |
 | Keywords           | - |
-| # releases         | 935 |
+| # releases         | 1178 |
 | # dependents       | 1 |
-| # downloads        | 25547176 |
+| # downloads        | 29563221 |
 | # stars            | 0 |
 
 ## Links

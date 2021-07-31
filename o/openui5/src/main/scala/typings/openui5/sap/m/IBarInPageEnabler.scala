@@ -4,24 +4,22 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.RenderManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBarInPageEnabler extends StObject {
   
   /**
     * Adds the sapMBarChildClass to a control.
     * @param oControl undefined
     */
-  def addChildClassTo(oControl: Control): Unit = js.native
+  def addChildClassTo(oControl: Control): Unit
   
   /**
     * Renders the tooltip for the given control
     * @param oRM the RenderManager that can be used for writing to the render output buffer.
     * @param oControl an object representation of the control that should be rendered.
     */
-  def renderTooltip(oRM: RenderManager, oControl: Control): Unit = js.native
+  def renderTooltip(oRM: RenderManager, oControl: Control): Unit
 }
 object IBarInPageEnabler {
   

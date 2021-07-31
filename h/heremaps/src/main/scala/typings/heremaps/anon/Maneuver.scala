@@ -2,13 +2,11 @@ package typings.heremaps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Maneuver extends StObject {
   
-  var maneuver: js.Array[Id] = js.native
+  var maneuver: js.Array[Id]
 }
 object Maneuver {
   

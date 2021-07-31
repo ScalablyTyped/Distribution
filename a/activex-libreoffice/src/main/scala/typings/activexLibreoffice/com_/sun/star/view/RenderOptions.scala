@@ -3,14 +3,12 @@ package typings.activexLibreoffice.com_.sun.star.view
 import typings.activexLibreoffice.com_.sun.star.awt.XDevice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes the options for Render jobs.
   * @since OOo 1.1.2
   */
-@js.native
 trait RenderOptions extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait RenderOptions extends StObject {
     * exported.
     * @see XRenderable
     */
-  var IsFirstPage: Boolean = js.native
+  var IsFirstPage: Boolean
   
   /**
     * indicates that the current page is the last page to be exported.
@@ -30,7 +28,7 @@ trait RenderOptions extends StObject {
     * introduced. It is evaluated in the render function and indicates that the current page is the last page to be exported.
     * @see XRenderable
     */
-  var IsLastPage: Boolean = js.native
+  var IsLastPage: Boolean
   
   /**
     * specifies if empty pages should be skipped.
@@ -39,7 +37,7 @@ trait RenderOptions extends StObject {
     * the export of hyperlinks, notes, and outlines.
     * @see XRenderable
     */
-  var IsSkipEmptyPages: Boolean = js.native
+  var IsSkipEmptyPages: Boolean
   
   /**
     * specifies the page ranges to be rendered.
@@ -48,10 +46,10 @@ trait RenderOptions extends StObject {
     * the export of hyperlinks, notes, and outlines.
     * @see XRenderable
     */
-  var PageRange: String = js.native
+  var PageRange: String
   
   /** specifies the device the page should be rendered to */
-  var RenderDevice: XDevice = js.native
+  var RenderDevice: XDevice
 }
 object RenderOptions {
   

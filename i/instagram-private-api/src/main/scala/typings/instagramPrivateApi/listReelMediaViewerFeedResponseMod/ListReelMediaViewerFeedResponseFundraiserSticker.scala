@@ -2,33 +2,31 @@ package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReelMediaViewerFeedResponseFundraiserSticker extends StObject {
   
-  var button_text_color: String = js.native
+  var button_text_color: String
   
-  var consumption_sheet_config: ListReelMediaViewerFeedResponseConsumptionSheetConfig = js.native
+  var consumption_sheet_config: ListReelMediaViewerFeedResponseConsumptionSheetConfig
   
-  var end_background_color: String = js.native
+  var end_background_color: String
   
-  var original_subtitle_height: Double = js.native
+  var original_subtitle_height: Double
   
-  var pk: String = js.native
+  var pk: String
   
-  var source_name: String = js.native
+  var source_name: String
   
-  var start_background_color: String = js.native
+  var start_background_color: String
   
-  var subtitle_color: String = js.native
+  var subtitle_color: String
   
-  var title: String = js.native
+  var title: String
   
-  var title_color: String = js.native
+  var title_color: String
   
-  var user: ListReelMediaViewerFeedResponseUser = js.native
+  var user: ListReelMediaViewerFeedResponseUser
 }
 object ListReelMediaViewerFeedResponseFundraiserSticker {
   

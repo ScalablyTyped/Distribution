@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait TimestreamQuery extends Service {
   ): Request[CancelQueryResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_TimestreamQuery: ConfigBase with ClientConfiguration = js.native
+  var config_TimestreamQuery: ConfigBase & ClientConfiguration = js.native
   
   /**
     * DescribeEndpoints returns a list of available endpoints to make Timestream API calls against. This API is available through both Write and Query. Because Timestream’s SDKs are designed to transparently work with the service’s architecture, including the management and mapping of the service endpoints, it is not recommended that you use this API unless:   Your application uses a programming language that does not yet have SDK support   You require better control over the client-side implementation   For detailed information on how to use DescribeEndpoints, see The Endpoint Discovery Pattern and REST APIs.

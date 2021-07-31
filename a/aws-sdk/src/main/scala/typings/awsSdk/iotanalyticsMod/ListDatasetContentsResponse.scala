@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDatasetContentsResponse extends StObject {
   
   /**
     * Summary information about data set contents that have been created.
     */
-  var datasetContentSummaries: js.UndefOr[DatasetContentSummaries] = js.native
+  var datasetContentSummaries: js.UndefOr[DatasetContentSummaries] = js.undefined
   
   /**
     * The token to retrieve the next set of results, or null if there are no more results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListDatasetContentsResponse {
   

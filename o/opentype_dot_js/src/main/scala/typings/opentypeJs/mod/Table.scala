@@ -3,22 +3,21 @@ package typings.opentypeJs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Table
-  extends /* propName */ StringDictionary[js.Any] {
+  extends StObject
+     with /* propName */ StringDictionary[js.Any] {
   
-  def encode(): js.Array[Double] = js.native
+  def encode(): js.Array[Double]
   
-  var fields: js.Array[Field] = js.native
+  var fields: js.Array[Field]
   
-  def sizeOf(): Double = js.native
+  def sizeOf(): Double
   
-  var tableName: String = js.native
+  var tableName: String
   
-  var tables: js.Array[Table] = js.native
+  var tables: js.Array[Table]
 }
 object Table {
   

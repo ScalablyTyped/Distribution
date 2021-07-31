@@ -7,7 +7,6 @@ import typings.semanticUiReact.stepStepMod.StepComponent
 import typings.semanticUiReact.stepStepMod.StepProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepMod extends Shortcut {

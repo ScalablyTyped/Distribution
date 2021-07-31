@@ -6,7 +6,6 @@ import typings.semanticUiReact.imageImageMod.ImageProps
 import typings.semanticUiReact.imageImageMod.StrictImageProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object itemImageMod extends Shortcut {

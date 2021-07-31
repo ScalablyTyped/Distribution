@@ -6,7 +6,6 @@ import typings.heremaps.H.util.EventTarget
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait ViewPort
-  extends EventTarget
+  extends StObject
+     with EventTarget
      with IInteraction {
   
   def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native
@@ -66,14 +66,13 @@ object ViewPort {
     * @property padding {H.map.ViewPort.Padding=} - The padding in pixels for each side of the map
     * @property fixedCenter {boolean=} - Indicates whether the center of the map should remain unchanged if the viewport's size or or padding has been changed, default is true
     */
-  @js.native
   trait Options extends StObject {
     
-    var fixedCenter: js.UndefOr[Boolean] = js.native
+    var fixedCenter: js.UndefOr[Boolean] = js.undefined
     
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
-    var padding: js.UndefOr[Padding] = js.native
+    var padding: js.UndefOr[Padding] = js.undefined
   }
   object Options {
     
@@ -113,16 +112,15 @@ object ViewPort {
     * @property bottom {number} - the padding on the bottom edge (in pixels)
     * @property left {number} - the padding on the left edge (in pixels)
     */
-  @js.native
   trait Padding extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Padding {
     

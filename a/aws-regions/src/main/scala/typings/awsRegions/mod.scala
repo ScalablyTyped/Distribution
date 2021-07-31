@@ -3,7 +3,6 @@ package typings.awsRegions
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,18 +11,17 @@ object mod extends Shortcut {
   @js.native
   val ^ : AwsRegions = js.native
   
-  @js.native
   trait AwsRegionInfo extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var name: String = js.native
+    var name: String
     
-    var public: Boolean = js.native
+    var public: Boolean
     
-    var zones: js.Array[String] = js.native
+    var zones: js.Array[String]
   }
   object AwsRegionInfo {
     
@@ -65,10 +63,9 @@ object mod extends Shortcut {
     def lookup(options: LookupOptions): AwsRegionInfo = js.native
   }
   
-  @js.native
   trait ListOptions extends StObject {
     
-    var public: js.UndefOr[Boolean] = js.native
+    var public: js.UndefOr[Boolean] = js.undefined
   }
   object ListOptions {
     
@@ -109,10 +106,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait LookupOptionsCode extends LookupOptions {
+  trait LookupOptionsCode
+    extends StObject
+       with LookupOptions {
     
-    var code: String = js.native
+    var code: String
   }
   object LookupOptionsCode {
     
@@ -130,10 +128,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait LookupOptionsName extends LookupOptions {
+  trait LookupOptionsName
+    extends StObject
+       with LookupOptions {
     
-    var name: String = js.native
+    var name: String
   }
   object LookupOptionsName {
     

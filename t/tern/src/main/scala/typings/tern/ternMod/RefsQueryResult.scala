@@ -5,19 +5,17 @@ import typings.tern.ternStrings.global
 import typings.tern.ternStrings.local
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefsQueryResult extends StObject {
   
   /** The name of the variable or property */
-  var name: String = js.native
+  var name: String
   
-  var refs: js.Array[End] = js.native
+  var refs: js.Array[End]
   
   /** for variables: a type property holding either "global" or "local". */
-  var `type`: js.UndefOr[global | local] = js.native
+  var `type`: js.UndefOr[global | local] = js.undefined
 }
 object RefsQueryResult {
   

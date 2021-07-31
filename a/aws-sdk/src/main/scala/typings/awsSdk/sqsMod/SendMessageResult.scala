@@ -2,36 +2,34 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendMessageResult extends StObject {
   
   /**
     * An MD5 digest of the non-URL-encoded message attribute string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest. For information about MD5, see RFC1321.
     */
-  var MD5OfMessageAttributes: js.UndefOr[String] = js.native
+  var MD5OfMessageAttributes: js.UndefOr[String] = js.undefined
   
   /**
     * An MD5 digest of the non-URL-encoded message attribute string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest. For information about MD5, see RFC1321.
     */
-  var MD5OfMessageBody: js.UndefOr[String] = js.native
+  var MD5OfMessageBody: js.UndefOr[String] = js.undefined
   
   /**
     * An MD5 digest of the non-URL-encoded message system attribute string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest.
     */
-  var MD5OfMessageSystemAttributes: js.UndefOr[String] = js.native
+  var MD5OfMessageSystemAttributes: js.UndefOr[String] = js.undefined
   
   /**
     * An attribute containing the MessageId of the message sent to the queue. For more information, see Queue and Message Identifiers in the Amazon Simple Queue Service Developer Guide. 
     */
-  var MessageId: js.UndefOr[String] = js.native
+  var MessageId: js.UndefOr[String] = js.undefined
   
   /**
     * This parameter applies only to FIFO (first-in-first-out) queues. The large, non-consecutive number that Amazon SQS assigns to each message. The length of SequenceNumber is 128 bits. SequenceNumber continues to increase for a particular MessageGroupId.
     */
-  var SequenceNumber: js.UndefOr[String] = js.native
+  var SequenceNumber: js.UndefOr[String] = js.undefined
 }
 object SendMessageResult {
   

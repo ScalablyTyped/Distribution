@@ -3,41 +3,39 @@ package typings.phaser.Phaser.Types.GameObjects.Particles
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParticleEmitterEdgeZoneConfig extends StObject {
   
   /**
     * The number of particles to place on the source edge. Set to 0 to use `stepRate` instead.
     */
-  var quantity: integer = js.native
+  var quantity: integer
   
   /**
     * Whether one endpoint will be removed if it's identical to the other.
     */
-  var seamless: js.UndefOr[Boolean] = js.native
+  var seamless: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A shape representing the zone. See {@link Phaser.GameObjects.Particles.Zones.EdgeZone#source}.
     */
-  var source: EdgeZoneSource = js.native
+  var source: EdgeZoneSource
   
   /**
     * The distance between each particle. When set, `quantity` is implied and should be set to 0.
     */
-  var stepRate: js.UndefOr[Double] = js.native
+  var stepRate: js.UndefOr[Double] = js.undefined
   
   /**
     * 'edge'.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * Whether particles are placed from start to end and then end to start.
     */
-  var yoyo: js.UndefOr[Boolean] = js.native
+  var yoyo: js.UndefOr[Boolean] = js.undefined
 }
 object ParticleEmitterEdgeZoneConfig {
   

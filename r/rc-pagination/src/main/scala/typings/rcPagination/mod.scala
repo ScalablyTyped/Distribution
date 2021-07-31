@@ -6,7 +6,6 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,54 +17,53 @@ object mod {
   
   type Pagination = Component[PaginationProps, js.Object, js.Any]
   
-  @js.native
   trait PaginationData extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var current: Double = js.native
+    var current: Double
     
-    var defaultCurrent: Double = js.native
+    var defaultCurrent: Double
     
-    var defaultPageSize: Double = js.native
+    var defaultPageSize: Double
     
-    var hideOnSinglePage: Boolean = js.native
+    var hideOnSinglePage: Boolean
     
-    var jumpNextIcon: ComponentType[js.Object] | ReactNode = js.native
+    var jumpNextIcon: ComponentType[js.Object] | ReactNode
     
-    var jumpPrevIcon: ComponentType[js.Object] | ReactNode = js.native
+    var jumpPrevIcon: ComponentType[js.Object] | ReactNode
     
-    var locale: js.Object = js.native
+    var locale: js.Object
     
-    var nextIcon: ComponentType[js.Object] | ReactNode = js.native
+    var nextIcon: ComponentType[js.Object] | ReactNode
     
-    var pageSize: Double = js.native
+    var pageSize: Double
     
-    var pageSizeOptions: js.Array[String] = js.native
+    var pageSizeOptions: js.Array[String]
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var prevIcon: ComponentType[js.Object] | ReactNode = js.native
+    var prevIcon: ComponentType[js.Object] | ReactNode
     
-    var selectComponentClass: ComponentType[js.Object] = js.native
+    var selectComponentClass: ComponentType[js.Object]
     
-    var selectPrefixCls: String = js.native
+    var selectPrefixCls: String
     
-    var showLessItems: Boolean = js.native
+    var showLessItems: Boolean
     
-    var showPrevNextJumpers: Boolean = js.native
+    var showPrevNextJumpers: Boolean
     
-    var showQuickJumper: Boolean | js.Object = js.native
+    var showQuickJumper: Boolean | js.Object
     
-    var showSizeChanger: Boolean = js.native
+    var showSizeChanger: Boolean
     
-    var showTitle: Boolean = js.native
+    var showTitle: Boolean
     
-    var simple: Boolean = js.native
+    var simple: Boolean
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
     
-    var total: Double = js.native
+    var total: Double
   }
   object PaginationData {
     
@@ -185,66 +183,65 @@ object mod {
   }
   
   /* Inlined parent std.Partial<rc-pagination.rc-pagination.PaginationData> */
-  @js.native
   trait PaginationProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var current: js.UndefOr[Double] = js.native
+    var current: js.UndefOr[Double] = js.undefined
     
-    var defaultCurrent: js.UndefOr[Double] = js.native
+    var defaultCurrent: js.UndefOr[Double] = js.undefined
     
-    var defaultPageSize: js.UndefOr[Double] = js.native
+    var defaultPageSize: js.UndefOr[Double] = js.undefined
     
-    var hideOnSinglePage: js.UndefOr[Boolean] = js.native
+    var hideOnSinglePage: js.UndefOr[Boolean] = js.undefined
     
     var itemRender: js.UndefOr[
         js.Function3[/* page */ Double, /* type */ String, /* element */ ReactNode, ReactNode]
-      ] = js.native
+      ] = js.undefined
     
-    var jumpNextIcon: js.UndefOr[ComponentType[js.Object] | ReactNode] = js.native
+    var jumpNextIcon: js.UndefOr[ComponentType[js.Object] | ReactNode] = js.undefined
     
-    var jumpPrevIcon: js.UndefOr[ComponentType[js.Object] | ReactNode] = js.native
+    var jumpPrevIcon: js.UndefOr[ComponentType[js.Object] | ReactNode] = js.undefined
     
-    var locale: js.UndefOr[js.Object] = js.native
+    var locale: js.UndefOr[js.Object] = js.undefined
     
-    var nextIcon: js.UndefOr[ComponentType[js.Object] | ReactNode] = js.native
+    var nextIcon: js.UndefOr[ComponentType[js.Object] | ReactNode] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* page */ Double, /* pageSize */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* page */ Double, /* pageSize */ Double, Unit]] = js.undefined
     
-    var onShowSizeChange: js.UndefOr[js.Function2[/* current */ Double, /* size */ Double, Unit]] = js.native
+    var onShowSizeChange: js.UndefOr[js.Function2[/* current */ Double, /* size */ Double, Unit]] = js.undefined
     
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
-    var pageSizeOptions: js.UndefOr[js.Array[String]] = js.native
+    var pageSizeOptions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var prevIcon: js.UndefOr[ComponentType[js.Object] | ReactNode] = js.native
+    var prevIcon: js.UndefOr[ComponentType[js.Object] | ReactNode] = js.undefined
     
-    var selectComponentClass: js.UndefOr[ComponentType[js.Object]] = js.native
+    var selectComponentClass: js.UndefOr[ComponentType[js.Object]] = js.undefined
     
-    var selectPrefixCls: js.UndefOr[String] = js.native
+    var selectPrefixCls: js.UndefOr[String] = js.undefined
     
-    var showLessItems: js.UndefOr[Boolean] = js.native
+    var showLessItems: js.UndefOr[Boolean] = js.undefined
     
-    var showPrevNextJumpers: js.UndefOr[Boolean] = js.native
+    var showPrevNextJumpers: js.UndefOr[Boolean] = js.undefined
     
-    var showQuickJumper: js.UndefOr[Boolean | js.Object] = js.native
+    var showQuickJumper: js.UndefOr[Boolean | js.Object] = js.undefined
     
-    var showSizeChanger: js.UndefOr[Boolean] = js.native
+    var showSizeChanger: js.UndefOr[Boolean] = js.undefined
     
-    var showTitle: js.UndefOr[Boolean] = js.native
+    var showTitle: js.UndefOr[Boolean] = js.undefined
     
     var showTotal: js.UndefOr[
         js.Function2[/* total */ Double, /* range */ js.Tuple2[Double, Double], ReactNode]
-      ] = js.native
+      ] = js.undefined
     
-    var simple: js.UndefOr[Boolean] = js.native
+    var simple: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var total: js.UndefOr[Double] = js.native
+    var total: js.UndefOr[Double] = js.undefined
   }
   object PaginationProps {
     

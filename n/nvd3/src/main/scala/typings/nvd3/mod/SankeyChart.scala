@@ -2,16 +2,17 @@ package typings.nvd3.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SankeyChart extends Chart {
+trait SankeyChart
+  extends StObject
+     with Chart {
   
   /*Y-position of the middle of a node.*/
   def center(): Double = js.native
   /*Y-position of the middle of a node.*/
-  def center(value: js.Function1[/* d */ js.Any, _]): this.type = js.native
+  def center(value: js.Function1[/* d */ js.Any, js.Any]): this.type = js.native
   
   /*Formatting settings for nodes. */
   def format(): String = js.native

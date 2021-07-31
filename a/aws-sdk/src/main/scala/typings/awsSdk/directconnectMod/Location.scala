@@ -2,36 +2,34 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /**
     * The available port speeds for the location.
     */
-  var availablePortSpeeds: js.UndefOr[AvailablePortSpeeds] = js.native
+  var availablePortSpeeds: js.UndefOr[AvailablePortSpeeds] = js.undefined
   
   /**
     * The name of the service provider for the location.
     */
-  var availableProviders: js.UndefOr[ProviderList] = js.native
+  var availableProviders: js.UndefOr[ProviderList] = js.undefined
   
   /**
     * The code for the location.
     */
-  var locationCode: js.UndefOr[LocationCode] = js.native
+  var locationCode: js.UndefOr[LocationCode] = js.undefined
   
   /**
     * The name of the location. This includes the name of the colocation partner and the physical site of the building.
     */
-  var locationName: js.UndefOr[LocationName] = js.native
+  var locationName: js.UndefOr[LocationName] = js.undefined
   
   /**
     * The AWS Region for the location.
     */
-  var region: js.UndefOr[Region] = js.native
+  var region: js.UndefOr[Region] = js.undefined
 }
 object Location {
   

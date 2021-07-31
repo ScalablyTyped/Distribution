@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBlogger.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayName extends StObject {
   
   /** The display name. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The identifier of the creator. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The creator's avatar. */
-  var image: js.UndefOr[Url] = js.native
+  var image: js.UndefOr[Url] = js.undefined
   
   /** The URL of the creator's Profile page. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object DisplayName {
   

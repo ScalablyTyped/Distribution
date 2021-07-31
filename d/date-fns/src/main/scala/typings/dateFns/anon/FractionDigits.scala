@@ -5,13 +5,11 @@ import typings.dateFns.dateFnsNumbers.`2`
 import typings.dateFns.dateFnsNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FractionDigits extends StObject {
   
-  var fractionDigits: js.UndefOr[typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3`] = js.native
+  var fractionDigits: js.UndefOr[typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3`] = js.undefined
 }
 object FractionDigits {
   

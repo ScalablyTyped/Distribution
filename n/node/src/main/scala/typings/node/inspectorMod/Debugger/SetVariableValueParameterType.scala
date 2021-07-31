@@ -3,31 +3,29 @@ package typings.node.inspectorMod.Debugger
 import typings.node.inspectorMod.Runtime.CallArgument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetVariableValueParameterType extends StObject {
   
   /**
     * Id of callframe that holds variable.
     */
-  var callFrameId: CallFrameId = js.native
+  var callFrameId: CallFrameId
   
   /**
     * New variable value.
     */
-  var newValue: CallArgument = js.native
+  var newValue: CallArgument
   
   /**
     * 0-based number of scope as was listed in scope chain. Only 'local', 'closure' and 'catch' scope types are allowed. Other scopes could be manipulated manually.
     */
-  var scopeNumber: Double = js.native
+  var scopeNumber: Double
   
   /**
     * Variable name.
     */
-  var variableName: String = js.native
+  var variableName: String
 }
 object SetVariableValueParameterType {
   

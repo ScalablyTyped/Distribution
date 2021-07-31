@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import typings.activexLibreoffice.com_.sun.star.util.XFlushable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait FilterFactory
-  extends XNameContainer
+  extends StObject
      with XMultiServiceFactory
+     with XNameContainer
      with XContainerQuery
      with XFlushable

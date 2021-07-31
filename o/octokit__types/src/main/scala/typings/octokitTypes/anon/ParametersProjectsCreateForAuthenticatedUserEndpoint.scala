@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ProjectsCreateForAuthenticatedUserRespo
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersProjectsCreateForAuthenticatedUserEndpoint extends StObject {
   
-  var parameters: ProjectsCreateForAuthenticatedUserEndpoint = js.native
+  var parameters: ProjectsCreateForAuthenticatedUserEndpoint
   
-  var request: ProjectsCreateForAuthenticatedUserRequestOptions = js.native
+  var request: ProjectsCreateForAuthenticatedUserRequestOptions
   
-  var response: OctokitResponse[ProjectsCreateForAuthenticatedUserResponseData] = js.native
+  var response: OctokitResponse[ProjectsCreateForAuthenticatedUserResponseData]
 }
 object ParametersProjectsCreateForAuthenticatedUserEndpoint {
   

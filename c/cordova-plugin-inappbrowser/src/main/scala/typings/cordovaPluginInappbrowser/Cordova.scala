@@ -2,13 +2,11 @@ package typings.cordovaPluginInappbrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cordova extends StObject {
   
-  var InAppBrowser: typings.cordovaPluginInappbrowser.InAppBrowser = js.native
+  var InAppBrowser: typings.cordovaPluginInappbrowser.InAppBrowser
 }
 object Cordova {
   

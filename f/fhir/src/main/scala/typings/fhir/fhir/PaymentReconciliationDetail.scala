@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List of settlements
   */
-@js.native
-trait PaymentReconciliationDetail extends BackboneElement {
+trait PaymentReconciliationDetail
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Amount being paid
     */
-  var amount: js.UndefOr[Money] = js.native
+  var amount: js.UndefOr[Money] = js.undefined
   
   /**
     * Invoice date
     */
-  var date: js.UndefOr[typings.fhir.fhir.date] = js.native
+  var date: js.UndefOr[typings.fhir.fhir.date] = js.undefined
   
   /**
     * Organization which is receiving the payment
     */
-  var payee: js.UndefOr[Reference] = js.native
+  var payee: js.UndefOr[Reference] = js.undefined
   
   /**
     * Claim
     */
-  var request: js.UndefOr[Reference] = js.native
+  var request: js.UndefOr[Reference] = js.undefined
   
   /**
     * Claim Response
     */
-  var response: js.UndefOr[Reference] = js.native
+  var response: js.UndefOr[Reference] = js.undefined
   
   /**
     * Organization which submitted the claim
     */
-  var submitter: js.UndefOr[Reference] = js.native
+  var submitter: js.UndefOr[Reference] = js.undefined
   
   /**
     * Type code
     */
-  var `type`: CodeableConcept = js.native
+  var `type`: CodeableConcept
 }
 object PaymentReconciliationDetail {
   

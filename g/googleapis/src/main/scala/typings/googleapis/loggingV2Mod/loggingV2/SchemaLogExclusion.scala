@@ -2,7 +2,6 @@ package typings.googleapis.loggingV2Mod.loggingV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * log sinks, so you can export log entries before they are excluded. Audit
   * log entries and log entries from Amazon Web Services are never excluded.
   */
-@js.native
 trait SchemaLogExclusion extends StObject {
   
   /**
     * Output only. The creation timestamp of the exclusion.This field may not
     * be present for older exclusions.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A description of this exclusion.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. If set to True, then this exclusion is disabled and it does not
     * exclude any log entries. You can update an exclusion to change the value
     * of this field.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required. An advanced logs filter that matches the log entries to be
@@ -41,7 +39,7 @@ trait SchemaLogExclusion extends StObject {
     * balancers:&quot;resource.type=http_load_balancer severity&lt;ERROR
     * sample(insertId, 0.99)&quot;
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Required. A client-assigned identifier, such as
@@ -49,13 +47,13 @@ trait SchemaLogExclusion extends StObject {
     * characters and can include only letters, digits, underscores, hyphens,
     * and periods.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The last update timestamp of the exclusion.This field may
     * not be present for older exclusions.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaLogExclusion {
   

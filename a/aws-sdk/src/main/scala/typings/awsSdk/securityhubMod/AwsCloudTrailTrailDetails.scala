@@ -2,86 +2,84 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCloudTrailTrailDetails extends StObject {
   
   /**
     * The ARN of the log group that CloudTrail logs are delivered to.
     */
-  var CloudWatchLogsLogGroupArn: js.UndefOr[NonEmptyString] = js.native
+  var CloudWatchLogsLogGroupArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ARN of the role that the CloudWatch Logs endpoint assumes when it writes to the log group.
     */
-  var CloudWatchLogsRoleArn: js.UndefOr[NonEmptyString] = js.native
+  var CloudWatchLogsRoleArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates whether the trail has custom event selectors.
     */
-  var HasCustomEventSelectors: js.UndefOr[Boolean] = js.native
+  var HasCustomEventSelectors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Region where the trail was created.
     */
-  var HomeRegion: js.UndefOr[NonEmptyString] = js.native
+  var HomeRegion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates whether the trail publishes events from global services such as IAM to the log files.
     */
-  var IncludeGlobalServiceEvents: js.UndefOr[Boolean] = js.native
+  var IncludeGlobalServiceEvents: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the trail applies only to the current Region or to all Regions.
     */
-  var IsMultiRegionTrail: js.UndefOr[Boolean] = js.native
+  var IsMultiRegionTrail: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the trail is created for all accounts in an organization in AWS Organizations, or only for the current AWS account.
     */
-  var IsOrganizationTrail: js.UndefOr[Boolean] = js.native
+  var IsOrganizationTrail: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The AWS KMS key ID to use to encrypt the logs.
     */
-  var KmsKeyId: js.UndefOr[NonEmptyString] = js.native
+  var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates whether CloudTrail log file validation is enabled.
     */
-  var LogFileValidationEnabled: js.UndefOr[Boolean] = js.native
+  var LogFileValidationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the trail.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the S3 bucket where the log files are published.
     */
-  var S3BucketName: js.UndefOr[NonEmptyString] = js.native
+  var S3BucketName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The S3 key prefix. The key prefix is added after the name of the S3 bucket where the log files are published.
     */
-  var S3KeyPrefix: js.UndefOr[NonEmptyString] = js.native
+  var S3KeyPrefix: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ARN of the SNS topic that is used for notifications of log file delivery.
     */
-  var SnsTopicArn: js.UndefOr[NonEmptyString] = js.native
+  var SnsTopicArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the SNS topic that is used for notifications of log file delivery.
     */
-  var SnsTopicName: js.UndefOr[NonEmptyString] = js.native
+  var SnsTopicName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ARN of the trail.
     */
-  var TrailArn: js.UndefOr[NonEmptyString] = js.native
+  var TrailArn: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsCloudTrailTrailDetails {
   

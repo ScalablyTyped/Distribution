@@ -10,9 +10,9 @@ Parse a torrent identifier (magnet uri, .torrent file, info hash)
 | ------------------ | :-------------: |
 | Full name          | parse-torrent |
 | Keywords           | .torrent, bittorrent, parse torrent, peer-to-peer, read torrent, torrent, webtorrent |
-| # releases         | 7 |
-| # dependents       | 96 |
-| # downloads        | 448986 |
+| # releases         | 11 |
+| # dependents       | 102 |
+| # downloads        | 626049 |
 | # stars            | 9 |
 
 ## Links

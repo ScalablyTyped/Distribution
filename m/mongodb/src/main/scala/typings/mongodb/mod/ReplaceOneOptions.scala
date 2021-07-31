@@ -2,15 +2,15 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReplaceOneOptions extends CommonOptions {
+trait ReplaceOneOptions
+  extends StObject
+     with CommonOptions {
   
-  var bypassDocumentValidation: js.UndefOr[Boolean] = js.native
+  var bypassDocumentValidation: js.UndefOr[Boolean] = js.undefined
   
-  var upsert: js.UndefOr[Boolean] = js.native
+  var upsert: js.UndefOr[Boolean] = js.undefined
 }
 object ReplaceOneOptions {
   

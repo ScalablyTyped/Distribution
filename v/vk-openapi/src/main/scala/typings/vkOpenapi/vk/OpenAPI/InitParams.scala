@@ -2,17 +2,15 @@ package typings.vkOpenapi.vk.OpenAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitParams extends StObject {
   
-  var apiId: Double = js.native
+  var apiId: Double
   
-  var onlyWidgets: js.UndefOr[Boolean] = js.native
+  var onlyWidgets: js.UndefOr[Boolean] = js.undefined
   
-  var status: js.UndefOr[Boolean] = js.native
+  var status: js.UndefOr[Boolean] = js.undefined
 }
 object InitParams {
   

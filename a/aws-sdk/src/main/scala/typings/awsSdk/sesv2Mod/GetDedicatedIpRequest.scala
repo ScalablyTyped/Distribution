@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDedicatedIpRequest extends StObject {
   
   /**
     * The IP address that you want to obtain more information about. The value you specify has to be a dedicated IP address that's assocaited with your AWS account.
     */
-  var Ip: typings.awsSdk.sesv2Mod.Ip = js.native
+  var Ip: typings.awsSdk.sesv2Mod.Ip
 }
 object GetDedicatedIpRequest {
   

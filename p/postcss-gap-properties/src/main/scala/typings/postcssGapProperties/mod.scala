@@ -5,7 +5,6 @@ import typings.postcss.mod.Plugin_
 import typings.postcssGapProperties.mod.GapProperties.GapPropertiesPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,13 +17,12 @@ object mod extends Shortcut {
     
     type GapPropertiesPlugin = Plugin_[Options]
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * @default true
         */
-      var preserve: js.UndefOr[Boolean] = js.native
+      var preserve: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       

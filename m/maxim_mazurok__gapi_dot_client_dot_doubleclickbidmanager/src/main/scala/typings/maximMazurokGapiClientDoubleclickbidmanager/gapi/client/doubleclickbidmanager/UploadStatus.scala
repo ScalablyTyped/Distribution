@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadStatus extends StObject {
   
   /** Reasons why upload can't be completed. */
-  var errors: js.UndefOr[js.Array[String]] = js.native
+  var errors: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Per-row upload status. */
-  var rowStatus: js.UndefOr[js.Array[RowStatus]] = js.native
+  var rowStatus: js.UndefOr[js.Array[RowStatus]] = js.undefined
 }
 object UploadStatus {
   

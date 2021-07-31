@@ -2,7 +2,6 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Led")
@@ -136,14 +135,13 @@ object Led {
     def toggle(): Unit = js.native
   }
   
-  @js.native
   trait DigitsOption extends StObject {
     
-    var controller: js.UndefOr[String] = js.native
+    var controller: js.UndefOr[String] = js.undefined
     
-    var devices: js.UndefOr[Double] = js.native
+    var devices: js.UndefOr[Double] = js.undefined
     
-    var pins: js.Any = js.native
+    var pins: js.Any
   }
   object DigitsOption {
     
@@ -173,18 +171,17 @@ object Led {
     }
   }
   
-  @js.native
   trait MatrixIC2Option extends StObject {
     
-    var addresses: js.UndefOr[js.Array[_]] = js.native
+    var addresses: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var controller: String = js.native
+    var controller: String
     
-    var dims: js.UndefOr[js.Any] = js.native
+    var dims: js.UndefOr[js.Any] = js.undefined
     
-    var isBicolor: js.UndefOr[Boolean] = js.native
+    var isBicolor: js.UndefOr[Boolean] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
   }
   object MatrixIC2Option {
     
@@ -198,7 +195,7 @@ object Led {
     implicit class MatrixIC2OptionMutableBuilder[Self <: MatrixIC2Option] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAddresses(value: js.Array[_]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+      def setAddresses(value: js.Array[js.Any]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
@@ -229,12 +226,11 @@ object Led {
     }
   }
   
-  @js.native
   trait MatrixOption extends StObject {
     
-    var devices: js.UndefOr[Double] = js.native
+    var devices: js.UndefOr[Double] = js.undefined
     
-    var pins: js.Any = js.native
+    var pins: js.Any
   }
   object MatrixOption {
     
@@ -258,14 +254,13 @@ object Led {
     }
   }
   
-  @js.native
   trait RGBOption extends StObject {
     
-    var controller: js.UndefOr[String] = js.native
+    var controller: js.UndefOr[String] = js.undefined
     
-    var isAnode: js.UndefOr[Boolean] = js.native
+    var isAnode: js.UndefOr[Boolean] = js.undefined
     
-    var pins: js.Array[Double] = js.native
+    var pins: js.Array[Double]
   }
   object RGBOption {
     

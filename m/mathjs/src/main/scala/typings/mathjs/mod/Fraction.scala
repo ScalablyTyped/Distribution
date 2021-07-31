@@ -2,18 +2,18 @@ package typings.mathjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-line no-empty-interface
-@js.native
-trait Fraction extends _MathType {
+trait Fraction
+  extends StObject
+     with _MathType {
   
-  var d: Double = js.native
+  var d: Double
   
-  var n: Double = js.native
+  var n: Double
   
-  var s: Double = js.native
+  var s: Double
 }
 object Fraction {
   

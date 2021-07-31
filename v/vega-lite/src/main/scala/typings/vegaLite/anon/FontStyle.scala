@@ -12,73 +12,71 @@ import typings.vegaTypings.valuesMod.StringValue
 import typings.vegaTypings.valuesMod.TextBaselineValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontStyle extends StObject {
   
-  var align: js.UndefOr[AlignValue] = js.native
+  var align: js.UndefOr[AlignValue] = js.undefined
   
-  var anchor: js.UndefOr[AnchorValue] = js.native
+  var anchor: js.UndefOr[AnchorValue] = js.undefined
   
-  var angle: js.UndefOr[NumberValue] = js.native
+  var angle: js.UndefOr[NumberValue] = js.undefined
   
-  var aria: js.UndefOr[Boolean] = js.native
+  var aria: js.UndefOr[Boolean] = js.undefined
   
-  var baseline: js.UndefOr[TextBaselineValue] = js.native
+  var baseline: js.UndefOr[TextBaselineValue] = js.undefined
   
-  var color: js.UndefOr[ColorValue] = js.native
+  var color: js.UndefOr[ColorValue] = js.undefined
   
-  var dx: js.UndefOr[NumberValue] = js.native
+  var dx: js.UndefOr[NumberValue] = js.undefined
   
-  var dy: js.UndefOr[NumberValue] = js.native
+  var dy: js.UndefOr[NumberValue] = js.undefined
   
-  var encode: js.UndefOr[TitleEncode | PartialRecordEncodeEntryN] = js.native
+  var encode: js.UndefOr[TitleEncode | PartialRecordEncodeEntryN] = js.undefined
   
-  var font: js.UndefOr[StringValue] = js.native
+  var font: js.UndefOr[StringValue] = js.undefined
   
-  var fontSize: js.UndefOr[NumberValue] = js.native
+  var fontSize: js.UndefOr[NumberValue] = js.undefined
   
-  var fontStyle: js.UndefOr[StringValue] = js.native
+  var fontStyle: js.UndefOr[StringValue] = js.undefined
   
-  var fontWeight: js.UndefOr[FontWeightValue] = js.native
+  var fontWeight: js.UndefOr[FontWeightValue] = js.undefined
   
-  var frame: StringValue = js.native
+  var frame: StringValue
   
-  var interactive: js.UndefOr[Boolean] = js.native
+  var interactive: js.UndefOr[Boolean] = js.undefined
   
-  var limit: js.UndefOr[NumberValue] = js.native
+  var limit: js.UndefOr[NumberValue] = js.undefined
   
-  var lineHeight: js.UndefOr[NumberValue] = js.native
+  var lineHeight: js.UndefOr[NumberValue] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[NumberValue] = js.native
+  var offset: js.UndefOr[NumberValue] = js.undefined
   
-  var orient: js.UndefOr[ScaleField] = js.native
+  var orient: js.UndefOr[ScaleField] = js.undefined
   
-  var style: String | js.Array[String] = js.native
+  var style: String | js.Array[String]
   
-  var subtitle: js.UndefOr[String | js.Array[String] | SignalRef] = js.native
+  var subtitle: js.UndefOr[String | js.Array[String] | SignalRef] = js.undefined
   
-  var subtitleColor: js.UndefOr[ColorValue] = js.native
+  var subtitleColor: js.UndefOr[ColorValue] = js.undefined
   
-  var subtitleFont: js.UndefOr[StringValue] = js.native
+  var subtitleFont: js.UndefOr[StringValue] = js.undefined
   
-  var subtitleFontSize: js.UndefOr[NumberValue] = js.native
+  var subtitleFontSize: js.UndefOr[NumberValue] = js.undefined
   
-  var subtitleFontStyle: js.UndefOr[StringValue] = js.native
+  var subtitleFontStyle: js.UndefOr[StringValue] = js.undefined
   
-  var subtitleFontWeight: js.UndefOr[FontWeightValue] = js.native
+  var subtitleFontWeight: js.UndefOr[FontWeightValue] = js.undefined
   
-  var subtitleLineHeight: js.UndefOr[NumberValue] = js.native
+  var subtitleLineHeight: js.UndefOr[NumberValue] = js.undefined
   
-  var subtitlePadding: js.UndefOr[NumberValue] = js.native
+  var subtitlePadding: js.UndefOr[NumberValue] = js.undefined
   
-  var text: String | js.Array[String] | SignalRef | Signal = js.native
+  var text: String | js.Array[String] | SignalRef | Signal
   
-  var zindex: js.UndefOr[Double] = js.native
+  var zindex: js.UndefOr[Double] = js.undefined
 }
 object FontStyle {
   

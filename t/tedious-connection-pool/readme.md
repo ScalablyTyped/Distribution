@@ -12,7 +12,7 @@ Connection Pool for tedious.
 | Keywords           | tedious, connection, pool |
 | # releases         | 0 |
 | # dependents       | 23 |
-| # downloads        | 210404 |
+| # downloads        | 144897 |
 | # stars            | 2 |
 
 ## Links

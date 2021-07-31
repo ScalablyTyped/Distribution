@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeoprocessorWaitForJobCompletionOptions extends Object {
+trait GeoprocessorWaitForJobCompletionOptions
+  extends StObject
+     with Object {
   
   /**
     * The time in millisecond between remote job status requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Geoprocessor.html#waitForJobCompletion)
     */
-  var interval: js.UndefOr[js.Any] = js.native
+  var interval: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable asynchronous job.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Geoprocessor.html#waitForJobCompletion)
     */
-  var signal: js.UndefOr[js.Any] = js.native
+  var signal: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Callback function that is called at the specified interval.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Geoprocessor.html#waitForJobCompletion)
     */
-  var statusCallback: js.UndefOr[js.Any] = js.native
+  var statusCallback: js.UndefOr[js.Any] = js.undefined
 }
 object GeoprocessorWaitForJobCompletionOptions {
   

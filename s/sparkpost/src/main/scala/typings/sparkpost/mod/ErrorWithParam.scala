@@ -2,23 +2,21 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorWithParam extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var param: String = js.native
+  var param: String
   
-  var value: String | Null = js.native
+  var value: String | Null
 }
 object ErrorWithParam {
   
   @scala.inline
   def apply(message: String, param: String): ErrorWithParam = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], value = null)
     __obj.asInstanceOf[ErrorWithParam]
   }
   

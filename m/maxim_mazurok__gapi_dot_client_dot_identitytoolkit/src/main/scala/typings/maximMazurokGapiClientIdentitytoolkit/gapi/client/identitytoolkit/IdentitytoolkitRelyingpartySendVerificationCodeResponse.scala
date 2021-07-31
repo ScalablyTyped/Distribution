@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentitytoolkitRelyingpartySendVerificationCodeResponse extends StObject {
   
   /** Encrypted session information */
-  var sessionInfo: js.UndefOr[String] = js.native
+  var sessionInfo: js.UndefOr[String] = js.undefined
 }
 object IdentitytoolkitRelyingpartySendVerificationCodeResponse {
   

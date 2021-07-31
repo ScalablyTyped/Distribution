@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object certificateSigningRequestListMod {
@@ -27,7 +26,7 @@ object certificateSigningRequestListMod {
       */
     def this(name: String) = this()
     def this(name: String, args: CertificateSigningRequestListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: CertificateSigningRequestListArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -47,6 +46,10 @@ object certificateSigningRequestListMod {
   /* static members */
   object CertificateSigningRequestList {
     
+    @JSImport("@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequestList", "CertificateSigningRequestList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CertificateSigningRequestList resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -55,44 +58,40 @@ object certificateSigningRequestListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequestList", "CertificateSigningRequestList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): CertificateSigningRequestList = js.native
-    @JSImport("@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequestList", "CertificateSigningRequestList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): CertificateSigningRequestList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): CertificateSigningRequestList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CertificateSigningRequestList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): CertificateSigningRequestList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CertificateSigningRequestList]
     
     /**
       * Returns true if the given object is an instance of CertificateSigningRequestList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequestList", "CertificateSigningRequestList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequestList.CertificateSigningRequestList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequestList.CertificateSigningRequestList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequestList.CertificateSigningRequestList */ Boolean]
   }
   
-  @js.native
   trait CertificateSigningRequestListArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[certificatesDotk8sDotioSlashv1beta1]] = js.native
+    val apiVersion: js.UndefOr[Input[certificatesDotk8sDotioSlashv1beta1]] = js.undefined
     
     val items: Input[
         js.Array[
           Input[typings.pulumiKubernetes.inputMod.certificates.v1beta1.CertificateSigningRequest]
         ]
-      ] = js.native
+      ]
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
     val kind: js.UndefOr[
         Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CertificateSigningRequestList]
-      ] = js.native
+      ] = js.undefined
     
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.undefined
   }
   object CertificateSigningRequestListArgs {
     

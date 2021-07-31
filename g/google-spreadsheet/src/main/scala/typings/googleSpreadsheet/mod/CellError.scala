@@ -2,15 +2,13 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellError extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var `type`: CellErrorType = js.native
+  var `type`: CellErrorType
 }
 object CellError {
   

@@ -2,27 +2,25 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupEnd extends StObject {
   
-  var body: js.UndefOr[`14`] = js.native
+  var body: js.UndefOr[`14`] = js.undefined
   
-  var groupEnd: js.UndefOr[`16`] = js.native
+  var groupEnd: js.UndefOr[`16`] = js.undefined
   
-  var groupHeader: js.UndefOr[Fill] = js.native
+  var groupHeader: js.UndefOr[Fill] = js.undefined
   
-  var header: js.UndefOr[Gap] = js.native
+  var header: js.UndefOr[Gap] = js.undefined
   
-  var icons: js.UndefOr[Ascending] = js.native
+  var icons: js.UndefOr[Ascending] = js.undefined
   
-  var pinned: js.UndefOr[Body] = js.native
+  var pinned: js.UndefOr[Body] = js.undefined
   
-  var primary: js.UndefOr[`18`] = js.native
+  var primary: js.UndefOr[`18`] = js.undefined
   
-  var resize: js.UndefOr[`17`] = js.native
+  var resize: js.UndefOr[`17`] = js.undefined
 }
 object GroupEnd {
   

@@ -3,19 +3,19 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FTGetFileInfo extends ResponseEntry {
+trait FTGetFileInfo
+  extends StObject
+     with ResponseEntry {
   
-  var cid: String = js.native
+  var cid: String
   
-  var datetime: Double = js.native
+  var datetime: Double
   
-  var name: String = js.native
+  var name: String
   
-  var size: Double = js.native
+  var size: Double
 }
 object FTGetFileInfo {
   

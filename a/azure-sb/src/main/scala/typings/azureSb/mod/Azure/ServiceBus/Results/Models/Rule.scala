@@ -4,23 +4,23 @@ import typings.azureSb.anon.Author
 import typings.azureSb.mod.Azure.ServiceBus.DateString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Rule extends Base {
+trait Rule
+  extends StObject
+     with Base {
   
-  var Action: String | SqlFilter = js.native
+  var Action: String | SqlFilter
   
-  var Filter: SqlFilter | CorrelationFilter = js.native
+  var Filter: SqlFilter | CorrelationFilter
   
-  var Name: String = js.native
+  var Name: String
   
-  var RuleName: String = js.native
+  var RuleName: String
   
-  var SubscriptionName: String = js.native
+  var SubscriptionName: String
   
-  var TopicName: String = js.native
+  var TopicName: String
 }
 object Rule {
   

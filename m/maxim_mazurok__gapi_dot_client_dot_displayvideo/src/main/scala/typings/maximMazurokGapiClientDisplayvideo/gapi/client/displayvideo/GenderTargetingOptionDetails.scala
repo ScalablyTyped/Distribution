@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenderTargetingOptionDetails extends StObject {
   
   /** Output only. The gender of an audience. */
-  var gender: js.UndefOr[String] = js.native
+  var gender: js.UndefOr[String] = js.undefined
 }
 object GenderTargetingOptionDetails {
   

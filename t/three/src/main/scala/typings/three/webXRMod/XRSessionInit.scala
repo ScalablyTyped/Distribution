@@ -2,15 +2,13 @@ package typings.three.webXRMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRSessionInit extends StObject {
   
-  var optionalFeatures: js.UndefOr[js.Array[String]] = js.native
+  var optionalFeatures: js.UndefOr[js.Array[String]] = js.undefined
   
-  var requiredFeatures: js.UndefOr[js.Array[String]] = js.native
+  var requiredFeatures: js.UndefOr[js.Array[String]] = js.undefined
 }
 object XRSessionInit {
   

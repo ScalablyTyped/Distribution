@@ -4,13 +4,13 @@ import typings.kendoUi.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TreeMapItemCreatedEvent extends TreeMapEvent {
+trait TreeMapItemCreatedEvent
+  extends StObject
+     with TreeMapEvent {
   
-  var element: js.UndefOr[JQuery | Element] = js.native
+  var element: js.UndefOr[JQuery | Element] = js.undefined
 }
 object TreeMapItemCreatedEvent {
   

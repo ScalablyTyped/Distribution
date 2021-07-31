@@ -10,9 +10,9 @@ AngularJS virtual scrolling module
 | ------------------ | :-------------: |
 | Full name          | angular-ui-scroll |
 | Keywords           | angular, angularjs, angular.ui, angular-ui, ui.scroll, ui-scroll, angular-ui-scroll, virtual, unlimited, infinite, live, perpetual, scroll, scroller, scrolling |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 3 |
-| # downloads        | 121552 |
+| # downloads        | 134037 |
 | # stars            | 0 |
 
 ## Links

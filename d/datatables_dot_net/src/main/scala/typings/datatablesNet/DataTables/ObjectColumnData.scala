@@ -2,22 +2,20 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectColumnData extends StObject {
   
   @JSName("_")
-  var _underscore: String | Double | FunctionColumnData = js.native
+  var _underscore: String | Double | FunctionColumnData
   
-  var display: js.UndefOr[String | Double | FunctionColumnData] = js.native
+  var display: js.UndefOr[String | Double | FunctionColumnData] = js.undefined
   
-  var filter: js.UndefOr[String | Double | FunctionColumnData] = js.native
+  var filter: js.UndefOr[String | Double | FunctionColumnData] = js.undefined
   
-  var sort: js.UndefOr[String | Double | FunctionColumnData] = js.native
+  var sort: js.UndefOr[String | Double | FunctionColumnData] = js.undefined
   
-  var `type`: js.UndefOr[String | Double | FunctionColumnData] = js.native
+  var `type`: js.UndefOr[String | Double | FunctionColumnData] = js.undefined
 }
 object ObjectColumnData {
   

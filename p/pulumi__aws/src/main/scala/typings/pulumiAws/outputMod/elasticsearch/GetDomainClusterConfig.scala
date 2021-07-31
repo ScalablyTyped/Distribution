@@ -2,61 +2,59 @@ package typings.pulumiAws.outputMod.elasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDomainClusterConfig extends StObject {
   
   /**
     * Number of dedicated master nodes in the cluster.
     */
-  var dedicatedMasterCount: Double = js.native
+  var dedicatedMasterCount: Double
   
   /**
     * Indicates whether dedicated master nodes are enabled for the cluster.
     */
-  var dedicatedMasterEnabled: Boolean = js.native
+  var dedicatedMasterEnabled: Boolean
   
   /**
     * Instance type of the dedicated master nodes in the cluster.
     */
-  var dedicatedMasterType: String = js.native
+  var dedicatedMasterType: String
   
   /**
     * Number of instances in the cluster.
     */
-  var instanceCount: Double = js.native
+  var instanceCount: Double
   
   /**
     * Instance type of data nodes in the cluster.
     */
-  var instanceType: String = js.native
+  var instanceType: String
   
   /**
     * The number of warm nodes in the cluster.
     */
-  var warmCount: Double = js.native
+  var warmCount: Double
   
   /**
     * Indicates warm storage is enabled.
     */
-  var warmEnabled: js.UndefOr[Boolean] = js.native
+  var warmEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The instance type for the Elasticsearch cluster's warm nodes.
     */
-  var warmType: String = js.native
+  var warmType: String
   
   /**
     * Configuration block containing zone awareness settings.
     */
-  var zoneAwarenessConfigs: js.Array[GetDomainClusterConfigZoneAwarenessConfig] = js.native
+  var zoneAwarenessConfigs: js.Array[GetDomainClusterConfigZoneAwarenessConfig]
   
   /**
     * Indicates whether zone awareness is enabled.
     */
-  var zoneAwarenessEnabled: Boolean = js.native
+  var zoneAwarenessEnabled: Boolean
 }
 object GetDomainClusterConfig {
   

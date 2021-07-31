@@ -2,40 +2,40 @@ package typings.safariExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SafariExtensionSettingsChangeEvent extends SafariEvent {
+trait SafariExtensionSettingsChangeEvent
+  extends StObject
+     with SafariEvent {
   
   /**
     * The object that the event is currently being sent to.
     * This attribute varies as the event progresses through the phases, changing as the event moves through the event-dispatch hierarchy.
     */
   @JSName("currentTarget")
-  var currentTarget_SafariExtensionSettingsChangeEvent: SafariExtensionSettings | SafariExtensionSecureSettings = js.native
+  var currentTarget_SafariExtensionSettingsChangeEvent: SafariExtensionSettings | SafariExtensionSecureSettings
   
   /**
     * The key identifier of the setting that was changed.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * The value after the settings change.
     */
-  var newValue: js.Any = js.native
+  var newValue: js.Any
   
   /**
     * The value before the settings change.
     */
-  var oldValue: js.Any = js.native
+  var oldValue: js.Any
   
   /**
     * The target of the event.
     * This attribute stays the same as the event moves through the event-dispatch hierarchy. Its value is the same as the object that the event is sent to during the targeting phase.
     */
   @JSName("target")
-  var target_SafariExtensionSettingsChangeEvent: SafariExtensionSettings | SafariExtensionSecureSettings = js.native
+  var target_SafariExtensionSettingsChangeEvent: SafariExtensionSettings | SafariExtensionSecureSettings
 }
 object SafariExtensionSettingsChangeEvent {
   

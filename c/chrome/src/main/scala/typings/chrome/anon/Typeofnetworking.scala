@@ -2,10 +2,8 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofnetworking extends StObject {
   
   ////////////////////
@@ -17,7 +15,7 @@ trait Typeofnetworking extends StObject {
     * Important: This API works only on Chrome OS.
     * @since Chrome 43.
     */
-  val config: Typeofconfig = js.native
+  val config: Typeofconfig
 }
 object Typeofnetworking {
   

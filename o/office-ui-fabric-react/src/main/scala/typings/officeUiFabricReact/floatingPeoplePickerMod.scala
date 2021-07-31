@@ -6,10 +6,13 @@ import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object floatingPeoplePickerMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/PeoplePicker/FloatingPeoplePicker", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/PeoplePicker/FloatingPeoplePicker", "BaseFloatingPeoplePicker")
   @js.native
@@ -36,9 +39,8 @@ object floatingPeoplePickerMod {
     def defaultProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/PeoplePicker/FloatingPeoplePicker", "createItem")
-  @js.native
-  def createItem(name: String, isValid: Boolean): ISuggestionModel[IPersonaProps] = js.native
+  @scala.inline
+  def createItem(name: String, isValid: Boolean): ISuggestionModel[IPersonaProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("createItem")(name.asInstanceOf[js.Any], isValid.asInstanceOf[js.Any])).asInstanceOf[ISuggestionModel[IPersonaProps]]
   
   type IPeopleFloatingPickerProps = IBaseFloatingPickerProps[IPersonaProps]
 }

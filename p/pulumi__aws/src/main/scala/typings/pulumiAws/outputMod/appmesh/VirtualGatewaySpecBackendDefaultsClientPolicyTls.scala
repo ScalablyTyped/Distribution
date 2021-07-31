@@ -2,23 +2,21 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewaySpecBackendDefaultsClientPolicyTls extends StObject {
   
-  var enforce: js.UndefOr[Boolean] = js.native
+  var enforce: js.UndefOr[Boolean] = js.undefined
   
   /**
     * One or more ports that the policy is enforced for.
     */
-  var ports: js.UndefOr[js.Array[Double]] = js.native
+  var ports: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The TLS validation context.
     */
-  var validation: VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation = js.native
+  var validation: VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation
 }
 object VirtualGatewaySpecBackendDefaultsClientPolicyTls {
   

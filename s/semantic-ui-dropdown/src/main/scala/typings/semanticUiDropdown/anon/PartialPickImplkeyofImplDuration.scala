@@ -3,18 +3,16 @@ package typings.semanticUiDropdown.anon
 import typings.semanticUiDropdown.semanticUiDropdownBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.LabelSettings._Impl, keyof semantic-ui-dropdown.SemanticUI.Dropdown.LabelSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplDuration extends StObject {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
   
-  var variation: js.UndefOr[`false` | String] = js.native
+  var variation: js.UndefOr[`false` | String] = js.undefined
 }
 object PartialPickImplkeyofImplDuration {
   

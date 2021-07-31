@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientComposer.gapi.client.composer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationMetadata extends StObject {
   
   /** Output only. The time the operation was submitted to the server. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The time when the operation terminated, regardless of its success. This field is unset if the operation is still ongoing. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The type of operation being performed. */
-  var operationType: js.UndefOr[String] = js.native
+  var operationType: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource being operated on, as a [relative resource name]( /apis/design/resource_names#relative_resource_name). */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
   /** Output only. The UUID of the resource being operated on. */
-  var resourceUuid: js.UndefOr[String] = js.native
+  var resourceUuid: js.UndefOr[String] = js.undefined
   
   /** Output only. The current operation state. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object OperationMetadata {
   

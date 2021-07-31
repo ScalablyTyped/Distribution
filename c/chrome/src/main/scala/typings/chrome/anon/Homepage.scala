@@ -3,17 +3,15 @@ package typings.chrome.anon
 import typings.chrome.chrome.runtime.SearchProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Homepage extends StObject {
   
-  var homepage: js.UndefOr[String] = js.native
+  var homepage: js.UndefOr[String] = js.undefined
   
-  var search_provider: js.UndefOr[SearchProvider] = js.native
+  var search_provider: js.UndefOr[SearchProvider] = js.undefined
   
-  var startup_pages: js.UndefOr[js.Array[String]] = js.native
+  var startup_pages: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Homepage {
   

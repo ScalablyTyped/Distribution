@@ -2,30 +2,28 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuditSuppression extends StObject {
   
-  var checkName: AuditCheckName = js.native
+  var checkName: AuditCheckName
   
   /**
     *  The description of the audit suppression. 
     */
-  var description: js.UndefOr[AuditDescription] = js.native
+  var description: js.UndefOr[AuditDescription] = js.undefined
   
   /**
     *  The expiration date (epoch timestamp in seconds) that you want the suppression to adhere to. 
     */
-  var expirationDate: js.UndefOr[Timestamp] = js.native
+  var expirationDate: js.UndefOr[Timestamp] = js.undefined
   
-  var resourceIdentifier: ResourceIdentifier = js.native
+  var resourceIdentifier: ResourceIdentifier
   
   /**
     *  Indicates whether a suppression should exist indefinitely or not. 
     */
-  var suppressIndefinitely: js.UndefOr[SuppressIndefinitely] = js.native
+  var suppressIndefinitely: js.UndefOr[SuppressIndefinitely] = js.undefined
 }
 object AuditSuppression {
   

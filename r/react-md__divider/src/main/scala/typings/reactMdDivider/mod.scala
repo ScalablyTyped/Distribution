@@ -10,23 +10,24 @@ import typings.reactMdDivider.verticalDividerMod.VerticalDividerProps
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@react-md/divider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@react-md/divider", "Divider")
   @js.native
-  val Divider: ForwardRefExoticComponent[DividerProps with RefAttributes[DividerElement]] = js.native
+  val Divider: ForwardRefExoticComponent[DividerProps & RefAttributes[DividerElement]] = js.native
   
   @JSImport("@react-md/divider", "VerticalDivider")
   @js.native
-  val VerticalDivider: ForwardRefExoticComponent[VerticalDividerProps with RefAttributes[HTMLDivElement]] = js.native
+  val VerticalDivider: ForwardRefExoticComponent[VerticalDividerProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @JSImport("@react-md/divider", "useVerticalDividerHeight")
-  @js.native
-  def useVerticalDividerHeight(maxHeight: Double): VerticalDividerHeight = js.native
-  @JSImport("@react-md/divider", "useVerticalDividerHeight")
-  @js.native
-  def useVerticalDividerHeight(maxHeight: Double, forwardedRef: Ref[HTMLDivElement | Null]): VerticalDividerHeight = js.native
+  @scala.inline
+  def useVerticalDividerHeight(maxHeight: Double): VerticalDividerHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("useVerticalDividerHeight")(maxHeight.asInstanceOf[js.Any]).asInstanceOf[VerticalDividerHeight]
+  @scala.inline
+  def useVerticalDividerHeight(maxHeight: Double, forwardedRef: Ref[HTMLDivElement | Null]): VerticalDividerHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("useVerticalDividerHeight")(maxHeight.asInstanceOf[js.Any], forwardedRef.asInstanceOf[js.Any])).asInstanceOf[VerticalDividerHeight]
 }

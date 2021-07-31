@@ -2,26 +2,24 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportAssetsFromS3RequestDetails extends StObject {
   
   /**
     * Is a list of S3 bucket and object key pairs.
     */
-  var AssetSources: ListOfAssetSourceEntry = js.native
+  var AssetSources: ListOfAssetSourceEntry
   
   /**
     * The unique identifier for the data set associated with this import job.
     */
-  var DataSetId: Id = js.native
+  var DataSetId: Id
   
   /**
     * The unique identifier for the revision associated with this import request.
     */
-  var RevisionId: Id = js.native
+  var RevisionId: Id
 }
 object ImportAssetsFromS3RequestDetails {
   

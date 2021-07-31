@@ -2,19 +2,17 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashSwfPanel extends StObject {
   
-  def call(): js.Any = js.native
+  def call(): js.Any
   
-  var name: js.Any = js.native
+  var name: js.Any
   
-  var path: js.Any = js.native
+  var path: js.Any
   
-  def setFocus(): js.Any = js.native
+  def setFocus(): js.Any
 }
 object FlashSwfPanel {
   

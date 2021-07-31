@@ -2,19 +2,17 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateByExampleOptions extends StObject {
   
-  var keepNull: js.UndefOr[Boolean] = js.native
+  var keepNull: js.UndefOr[Boolean] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var mergeObjects: js.UndefOr[Boolean] = js.native
+  var mergeObjects: js.UndefOr[Boolean] = js.undefined
   
-  var waitForSync: js.UndefOr[Boolean] = js.native
+  var waitForSync: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateByExampleOptions {
   

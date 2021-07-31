@@ -4,26 +4,23 @@ import typings.awsSdkClientCodecommitNode.createPullRequestExceptionsUnionMod.Cr
 import typings.awsSdkClientCodecommitNode.updatePullRequestDescriptionExceptionsUnionMod.UpdatePullRequestDescriptionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidDescriptionExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidDescriptionExceptionDetails> * / any */ @js.native
-  trait InvalidDescriptionException
-    extends CreatePullRequestExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidDescriptionExceptionDetails> * / any */ trait InvalidDescriptionException
+    extends StObject
+       with CreatePullRequestExceptionsUnion
        with UpdatePullRequestDescriptionExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidDescriptionException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidDescriptionException
   }
   object InvalidDescriptionException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidDescriptionException
-    ): InvalidDescriptionException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidDescriptionException = {
+      val __obj = js.Dynamic.literal(name = "InvalidDescriptionException")
       __obj.asInstanceOf[InvalidDescriptionException]
     }
     
@@ -37,6 +34,5 @@ object typesInvalidDescriptionExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidDescriptionExceptionDetails extends StObject
 }

@@ -4,15 +4,15 @@
 Typings are for version 1.1
 
 ## Library description:
-Wrapper implmentation for interface-datastore
+Wrapper implementation for interface-datastore
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | datastore-core |
 | Keywords           | interface, key-value, ipfs, datastore |
-| # releases         | 7 |
-| # dependents       | 21 |
-| # downloads        | 333724 |
+| # releases         | 6 |
+| # dependents       | 20 |
+| # downloads        | 401687 |
 | # stars            | 0 |
 
 ## Links

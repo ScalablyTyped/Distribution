@@ -2,31 +2,29 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseUpdateMetadata extends StObject {
   
   /**
     * Sets comment for release.
     */
-  var comment: String = js.native
+  var comment: String
   
   /**
     * Set 'true' to exclude the release from retention policies.
     */
-  var keepForever: Boolean = js.native
+  var keepForever: Boolean
   
   /**
     * Sets list of manual environments.
     */
-  var manualEnvironments: js.Array[String] = js.native
+  var manualEnvironments: js.Array[String]
   
   /**
     * Sets status of the release.
     */
-  var status: ReleaseStatus = js.native
+  var status: ReleaseStatus
 }
 object ReleaseUpdateMetadata {
   

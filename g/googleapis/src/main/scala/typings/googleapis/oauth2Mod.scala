@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oauth2Mod {
+  
+  @JSImport("googleapis/build/src/apis/oauth2", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -91,9 +94,12 @@ object oauth2Mod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/oauth2", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/oauth2", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -137,16 +143,14 @@ object oauth2Mod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/oauth2", "oauth2")
-  @js.native
-  def oauth2(options: Options): Oauth2 = js.native
-  @JSImport("googleapis/build/src/apis/oauth2", "oauth2")
-  @js.native
-  def oauth2(options: typings.googleapis.oauth2V2Mod.oauth2V2.Options): typings.googleapis.oauth2V2Mod.oauth2V2.Oauth2 = js.native
-  @JSImport("googleapis/build/src/apis/oauth2", "oauth2")
-  @js.native
-  def oauth2_v1(version: v1): Oauth2 = js.native
-  @JSImport("googleapis/build/src/apis/oauth2", "oauth2")
-  @js.native
-  def oauth2_v2(version: v2): typings.googleapis.oauth2V2Mod.oauth2V2.Oauth2 = js.native
+  @scala.inline
+  def oauth2(options: Options): Oauth2 = ^.asInstanceOf[js.Dynamic].applyDynamic("oauth2")(options.asInstanceOf[js.Any]).asInstanceOf[Oauth2]
+  @scala.inline
+  def oauth2(options: typings.googleapis.oauth2V2Mod.oauth2V2.Options): typings.googleapis.oauth2V2Mod.oauth2V2.Oauth2 = ^.asInstanceOf[js.Dynamic].applyDynamic("oauth2")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.oauth2V2Mod.oauth2V2.Oauth2]
+  
+  @scala.inline
+  def oauth2_v1(version: v1): Oauth2 = ^.asInstanceOf[js.Dynamic].applyDynamic("oauth2")(version.asInstanceOf[js.Any]).asInstanceOf[Oauth2]
+  
+  @scala.inline
+  def oauth2_v2(version: v2): typings.googleapis.oauth2V2Mod.oauth2V2.Oauth2 = ^.asInstanceOf[js.Dynamic].applyDynamic("oauth2")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.oauth2V2Mod.oauth2V2.Oauth2]
 }

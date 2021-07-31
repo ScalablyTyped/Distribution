@@ -6,31 +6,29 @@ import typings.std.Date
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Array extends StObject {
   
-  var Date: Type[typings.std.Date] = js.native
+  var Date: Type[typings.std.Date]
   
-  var RegExp: Type[typings.std.RegExp] = js.native
+  var RegExp: Type[typings.std.RegExp]
   
-  var array: Type[js.Array[_]] = js.native
+  var array: Type[js.Array[js.Any]]
   
-  var boolean: Type[Boolean] = js.native
+  var boolean: Type[Boolean]
   
-  var function: Type[js.Function] = js.native
+  var function: Type[js.Function]
   
-  var `null`: Type[Null] = js.native
+  var `null`: Type[Null]
   
-  var number: Type[Double] = js.native
+  var number: Type[Double]
   
-  var `object`: Type[StringDictionary[_]] = js.native
+  var `object`: Type[StringDictionary[js.Any]]
   
-  var string: Type[String] = js.native
+  var string: Type[String]
   
-  var undefined: Type[js.UndefOr[scala.Nothing]] = js.native
+  var undefined: Type[Unit]
 }
 object Array {
   
@@ -38,14 +36,14 @@ object Array {
   def apply(
     Date: Type[Date],
     RegExp: Type[RegExp],
-    array: Type[js.Array[_]],
+    array: Type[js.Array[js.Any]],
     boolean: Type[Boolean],
     function: Type[js.Function],
     `null`: Type[Null],
     number: Type[Double],
-    `object`: Type[StringDictionary[_]],
+    `object`: Type[StringDictionary[js.Any]],
     string: Type[String],
-    undefined: Type[js.UndefOr[scala.Nothing]]
+    undefined: Type[Unit]
   ): Array = {
     val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], RegExp = RegExp.asInstanceOf[js.Any], array = array.asInstanceOf[js.Any], boolean = boolean.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], undefined = undefined.asInstanceOf[js.Any])
     __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
@@ -57,7 +55,7 @@ object Array {
   implicit class ArrayMutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArray(value: Type[js.Array[_]]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    def setArray(value: Type[js.Array[js.Any]]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBoolean(value: Type[Boolean]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
@@ -75,7 +73,7 @@ object Array {
     def setNumber(value: Type[Double]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: Type[StringDictionary[_]]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    def setObject(value: Type[StringDictionary[js.Any]]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRegExp(value: Type[RegExp]): Self = StObject.set(x, "RegExp", value.asInstanceOf[js.Any])
@@ -84,6 +82,6 @@ object Array {
     def setString(value: Type[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUndefined(value: Type[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+    def setUndefined(value: Type[Unit]): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
   }
 }

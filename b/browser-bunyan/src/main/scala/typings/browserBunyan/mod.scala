@@ -12,7 +12,6 @@ import typings.bunyan.mod.RotatingFileStreamOptions
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -31,14 +30,18 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("browser-bunyan", "ConsoleFormattedStream")
   @js.native
-  class ConsoleFormattedStream () extends WritableStream {
+  class ConsoleFormattedStream ()
+    extends StObject
+       with WritableStream {
     def this(options: ConsoleFormattedStreamOptions) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("browser-bunyan", "ConsoleRawStream")
   @js.native
-  class ConsoleRawStream () extends WritableStream {
+  class ConsoleRawStream ()
+    extends StObject
+       with WritableStream {
     def this(options: ConsoleFormattedStreamOptions) = this()
   }
   
@@ -62,20 +65,19 @@ object mod extends Shortcut {
     
     type ConsoleFormattedStream = Instantiable1[/* options */ js.UndefOr[ConsoleFormattedStreamOptions], WritableStream]
     
-    @js.native
     trait ConsoleFormattedStreamLevelStyle extends StObject {
       
-      var debug: String = js.native
+      var debug: String
       
-      var error: String = js.native
+      var error: String
       
-      var fatal: String = js.native
+      var fatal: String
       
-      var info: String = js.native
+      var info: String
       
-      var trace: String = js.native
+      var trace: String
       
-      var warn: String = js.native
+      var warn: String
     }
     object ConsoleFormattedStreamLevelStyle {
       
@@ -108,12 +110,11 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait ConsoleFormattedStreamOptions extends StObject {
       
-      var css: js.UndefOr[PartialConsoleFormattedStDef] = js.native
+      var css: js.UndefOr[PartialConsoleFormattedStDef] = js.undefined
       
-      var logByLevel: js.UndefOr[Boolean] = js.native
+      var logByLevel: js.UndefOr[Boolean] = js.undefined
     }
     object ConsoleFormattedStreamOptions {
       
@@ -140,16 +141,15 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait ConsoleFormattedStreamStyle extends StObject {
       
-      var `def`: String = js.native
+      var `def`: String
       
-      var levels: PartialConsoleFormattedSt = js.native
+      var levels: PartialConsoleFormattedSt
       
-      var msg: String = js.native
+      var msg: String
       
-      var src: String = js.native
+      var src: String
     }
     object ConsoleFormattedStreamStyle {
       
@@ -179,7 +179,7 @@ object mod extends Shortcut {
     
     type ConsoleRawStream = Instantiable1[/* options */ js.UndefOr[ConsoleFormattedStreamOptions], WritableStream]
   }
-  type BrowserBunyan = (Instantiable1[/* options */ LoggerOptions, typings.bunyan.mod.^]) with Typeofbunyan with typings.browserBunyan.anon.ConsoleFormattedStream
+  type BrowserBunyan = (Instantiable1[/* options */ LoggerOptions, typings.bunyan.mod.^]) & Typeofbunyan & typings.browserBunyan.anon.ConsoleFormattedStream
   
   type _To = BrowserBunyan
   

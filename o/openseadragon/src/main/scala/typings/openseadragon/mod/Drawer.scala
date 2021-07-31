@@ -8,7 +8,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "Drawer")
@@ -45,14 +44,6 @@ class Drawer protected () extends StObject {
     drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
     // TODO: determine handler parameter types
   useSketch: Boolean,
-    scale: js.UndefOr[scala.Nothing],
-    translate: Point
-  ): Unit = js.native
-  def drawTile(
-    tile: Tile,
-    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
-    // TODO: determine handler parameter types
-  useSketch: Boolean,
     scale: Double
   ): Unit = js.native
   def drawTile(
@@ -61,6 +52,14 @@ class Drawer protected () extends StObject {
     // TODO: determine handler parameter types
   useSketch: Boolean,
     scale: Double,
+    translate: Point
+  ): Unit = js.native
+  def drawTile(
+    tile: Tile,
+    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
+    // TODO: determine handler parameter types
+  useSketch: Boolean,
+    scale: Unit,
     translate: Point
   ): Unit = js.native
   

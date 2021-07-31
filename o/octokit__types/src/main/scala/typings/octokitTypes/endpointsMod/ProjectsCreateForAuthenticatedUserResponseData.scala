@@ -3,37 +3,35 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Avatarurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsCreateForAuthenticatedUserResponseData extends StObject {
   
-  var body: String = js.native
+  var body: String
   
-  var columns_url: String = js.native
+  var columns_url: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var creator: Avatarurl = js.native
+  var creator: Avatarurl
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var number: Double = js.native
+  var number: Double
   
-  var owner_url: String = js.native
+  var owner_url: String
   
-  var state: String = js.native
+  var state: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object ProjectsCreateForAuthenticatedUserResponseData {
   

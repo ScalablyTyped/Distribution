@@ -2,13 +2,11 @@ package typings.ipfsHttpServer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnPostHandler extends StObject {
   
-  var onPostHandler: `1` = js.native
+  var onPostHandler: `1`
 }
 object OnPostHandler {
   

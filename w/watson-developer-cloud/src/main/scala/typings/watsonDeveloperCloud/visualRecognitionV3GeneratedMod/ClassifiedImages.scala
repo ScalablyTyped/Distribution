@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Results for all images. */
-@js.native
 trait ClassifiedImages extends StObject {
   
   /** Number of custom classes identified in the images. */
-  var custom_classes: js.UndefOr[Double] = js.native
+  var custom_classes: js.UndefOr[Double] = js.undefined
   
   /** Classified images. */
-  var images: js.Array[ClassifiedImage] = js.native
+  var images: js.Array[ClassifiedImage]
   
   /** Number of images processed for the API call. */
-  var images_processed: js.UndefOr[Double] = js.native
+  var images_processed: js.UndefOr[Double] = js.undefined
   
   /** Information about what might cause less than optimal output. For example, a request sent with a corrupt .zip file and a list of image URLs will still complete, but does not return the expected output. Not returned when there is no warning. */
-  var warnings: js.UndefOr[js.Array[WarningInfo]] = js.native
+  var warnings: js.UndefOr[js.Array[WarningInfo]] = js.undefined
 }
 object ClassifiedImages {
   

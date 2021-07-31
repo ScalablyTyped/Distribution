@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,15 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Derived from {@link com.sun.star.i18n.XLocaleData3} this provides an additional method to return a sequence of date acceptance patterns for a locale.
   * @since LibreOffice 3.6
   */
-@js.native
-trait XLocaleData4 extends XLocaleData3 {
+trait XLocaleData4
+  extends StObject
+     with XLocaleData3 {
   
   /**
     * returns a sequence of date acceptance patterns for a locale
     *
     * Patterns with input combinations that are accepted as incomplete date input, such as **M/D** or **D.M.**
     */
-  def getDateAcceptancePatterns(aLocale: Locale): SafeArray[String] = js.native
+  def getDateAcceptancePatterns(aLocale: Locale): SafeArray[String]
 }
 object XLocaleData4 {
   

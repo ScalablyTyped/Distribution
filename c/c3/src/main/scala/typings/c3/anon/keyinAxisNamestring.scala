@@ -2,18 +2,16 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in c3.c3.AxisName ]:? string} */
-@js.native
 trait keyinAxisNamestring extends StObject {
   
-  var x: js.UndefOr[String] = js.native
+  var x: js.UndefOr[String] = js.undefined
   
-  var y: js.UndefOr[String] = js.native
+  var y: js.UndefOr[String] = js.undefined
   
-  var y2: js.UndefOr[String] = js.native
+  var y2: js.UndefOr[String] = js.undefined
 }
 object keyinAxisNamestring {
   

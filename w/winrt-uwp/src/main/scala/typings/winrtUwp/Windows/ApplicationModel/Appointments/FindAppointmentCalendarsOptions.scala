@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object FindAppointmentCalendarsOptions extends StObject {
   
   /** Include appointment calendars that are hidden. */
   @js.native
-  sealed trait includeHidden extends FindAppointmentCalendarsOptions
+  sealed trait includeHidden
+    extends StObject
+       with FindAppointmentCalendarsOptions
   
   /** No additional options. */
   @js.native
-  sealed trait none extends FindAppointmentCalendarsOptions
+  sealed trait none
+    extends StObject
+       with FindAppointmentCalendarsOptions
 }

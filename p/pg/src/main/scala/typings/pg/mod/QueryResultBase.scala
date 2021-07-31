@@ -2,19 +2,17 @@ package typings.pg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryResultBase extends StObject {
   
-  var command: String = js.native
+  var command: String
   
-  var fields: js.Array[FieldDef] = js.native
+  var fields: js.Array[FieldDef]
   
-  var oid: Double = js.native
+  var oid: Double
   
-  var rowCount: Double = js.native
+  var rowCount: Double
 }
 object QueryResultBase {
   

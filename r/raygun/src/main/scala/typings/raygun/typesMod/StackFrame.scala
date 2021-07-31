@@ -2,21 +2,19 @@ package typings.raygun.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackFrame extends StObject {
   
-  var className: String = js.native
+  var className: String
   
-  var columnNumber: js.UndefOr[Double] = js.native
+  var columnNumber: js.UndefOr[Double] = js.undefined
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var lineNumber: Double = js.native
+  var lineNumber: Double
   
-  var methodName: String = js.native
+  var methodName: String
 }
 object StackFrame {
   

@@ -22,7 +22,6 @@ import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNativeCommunityViewpager.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsTabsMod {
@@ -48,26 +47,26 @@ object tabsTabsMod {
     def getSubElement(
       tab: TabData,
       index: Double,
-      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[_]]
+      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[js.Any]]
     ): js.Any = js.native
     def getSubElement(
       tab: TabData,
       index: Double,
-      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[_]],
-      defaultPrefix: js.UndefOr[scala.Nothing],
-      allPrefix: String
-    ): js.Any = js.native
-    def getSubElement(
-      tab: TabData,
-      index: Double,
-      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[_]],
+      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[js.Any]],
       defaultPrefix: String
     ): js.Any = js.native
     def getSubElement(
       tab: TabData,
       index: Double,
-      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[_]],
+      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[js.Any]],
       defaultPrefix: String,
+      allPrefix: String
+    ): js.Any = js.native
+    def getSubElement(
+      tab: TabData,
+      index: Double,
+      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[js.Any]],
+      defaultPrefix: Unit,
       allPrefix: String
     ): js.Any = js.native
     
@@ -82,9 +81,9 @@ object tabsTabsMod {
     def getTabIndex(props: PropsType): Double = js.native
     
     def goToTab(index: Double): Boolean = js.native
-    def goToTab(index: Double, force: js.UndefOr[scala.Nothing], newState: js.Any): Boolean = js.native
     def goToTab(index: Double, force: Boolean): Boolean = js.native
     def goToTab(index: Double, force: Boolean, newState: js.Any): Boolean = js.native
+    def goToTab(index: Double, force: Unit, newState: js.Any): Boolean = js.native
     
     def handleLayout(e: LayoutChangeEvent): Unit = js.native
     
@@ -145,16 +144,15 @@ object tabsTabsMod {
     def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait StateType extends StObject {
     
-    var containerWidth: Double = js.native
+    var containerWidth: Double
     
-    var currentTab: Double = js.native
+    var currentTab: Double
     
-    var scrollValue: Value = js.native
+    var scrollValue: Value
     
-    var scrollX: Value = js.native
+    var scrollX: Value
   }
   object StateType {
     
@@ -181,9 +179,9 @@ object tabsTabsMod {
     }
   }
   
-  @js.native
   trait TabsProps
-    extends PropsType
+    extends StObject
+       with PropsType
        with WithThemeStyles[TabsStyle]
   object TabsProps {
     

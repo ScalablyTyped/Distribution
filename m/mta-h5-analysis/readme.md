@@ -12,7 +12,7 @@ this is wechat-h5 data analysis js sdk from MTA platform
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 7 |
-| # downloads        | 19577 |
+| # downloads        | 25482 |
 | # stars            | 1 |
 
 ## Links

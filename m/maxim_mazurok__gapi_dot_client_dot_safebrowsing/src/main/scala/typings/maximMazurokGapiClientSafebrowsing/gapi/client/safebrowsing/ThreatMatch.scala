@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThreatMatch extends StObject {
   
   /** The cache lifetime for the returned match. Clients must not cache this response for more than this duration to avoid false positives. */
-  var cacheDuration: js.UndefOr[String] = js.native
+  var cacheDuration: js.UndefOr[String] = js.undefined
   
   /** The platform type matching this threat. */
-  var platformType: js.UndefOr[String] = js.native
+  var platformType: js.UndefOr[String] = js.undefined
   
   /** The threat matching this threat. */
-  var threat: js.UndefOr[ThreatEntry] = js.native
+  var threat: js.UndefOr[ThreatEntry] = js.undefined
   
   /** Optional metadata associated with this threat. */
-  var threatEntryMetadata: js.UndefOr[ThreatEntryMetadata] = js.native
+  var threatEntryMetadata: js.UndefOr[ThreatEntryMetadata] = js.undefined
   
   /** The threat entry type matching this threat. */
-  var threatEntryType: js.UndefOr[String] = js.native
+  var threatEntryType: js.UndefOr[String] = js.undefined
   
   /** The threat type matching this threat. */
-  var threatType: js.UndefOr[String] = js.native
+  var threatType: js.UndefOr[String] = js.undefined
 }
 object ThreatMatch {
   

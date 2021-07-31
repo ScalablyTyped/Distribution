@@ -2,17 +2,15 @@ package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReelMediaViewerFeedResponseCreativeConfig extends StObject {
   
-  var camera_facing: String = js.native
+  var camera_facing: String
   
-  var capture_type: String = js.native
+  var capture_type: String
   
-  var should_render_try_it_on: Boolean = js.native
+  var should_render_try_it_on: Boolean
 }
 object ListReelMediaViewerFeedResponseCreativeConfig {
   

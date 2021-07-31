@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAccessPointsResult extends StObject {
   
   /**
     * Contains identification and configuration information for one or more access points associated with the specified bucket.
     */
-  var AccessPointList: js.UndefOr[typings.awsSdk.s3controlMod.AccessPointList] = js.native
+  var AccessPointList: js.UndefOr[typings.awsSdk.s3controlMod.AccessPointList] = js.undefined
   
   /**
     * If the specified bucket has more access points than can be returned in one call to this API, this field contains a continuation token that you can provide in subsequent calls to this API to retrieve additional access points.
     */
-  var NextToken: js.UndefOr[NonEmptyMaxLength1024String] = js.native
+  var NextToken: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
 }
 object ListAccessPointsResult {
   

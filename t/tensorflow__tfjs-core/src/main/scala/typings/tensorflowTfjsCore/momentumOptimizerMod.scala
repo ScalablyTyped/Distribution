@@ -6,7 +6,6 @@ import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
 import typings.tensorflowTfjsCore.sgdOptimizerMod.SGDOptimizer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object momentumOptimizerMod {
@@ -47,8 +46,7 @@ object momentumOptimizerMod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/momentum_optimizer", "MomentumOptimizer.fromConfig")
-    @js.native
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
+    @scala.inline
+    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   }
 }

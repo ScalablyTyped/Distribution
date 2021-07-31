@@ -3,19 +3,17 @@ package typings.ink.anon
 import typings.ink.renderNodeToOutputMod.OutputTransformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OffsetX extends StObject {
   
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
-  var skipStaticElements: Boolean = js.native
+  var skipStaticElements: Boolean
   
-  var transformers: js.UndefOr[js.Array[OutputTransformer]] = js.native
+  var transformers: js.UndefOr[js.Array[OutputTransformer]] = js.undefined
 }
 object OffsetX {
   

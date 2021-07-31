@@ -2,17 +2,15 @@ package typings.matrixAppserviceBridge.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleFile extends StObject {
   
-  var ruleFile: js.UndefOr[String] = js.native
+  var ruleFile: js.UndefOr[String] = js.undefined
   
-  var rules: js.UndefOr[typings.matrixAppserviceBridge.roomLinkValidatorMod.Rules] = js.native
+  var rules: js.UndefOr[typings.matrixAppserviceBridge.roomLinkValidatorMod.Rules] = js.undefined
   
-  var triggerEndpoint: js.UndefOr[Boolean] = js.native
+  var triggerEndpoint: js.UndefOr[Boolean] = js.undefined
 }
 object RuleFile {
   

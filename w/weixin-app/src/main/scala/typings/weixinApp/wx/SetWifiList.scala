@@ -2,20 +2,18 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetWifiList extends StObject {
   
   /** Wi-Fi 设备bssid */
-  var BSSID: String = js.native
+  var BSSID: String
   
   /** Wi-Fi 设备ssid */
-  var SSID: String = js.native
+  var SSID: String
   
   /** Wi-Fi 设备密码 */
-  var password: String = js.native
+  var password: String
 }
 object SetWifiList {
   

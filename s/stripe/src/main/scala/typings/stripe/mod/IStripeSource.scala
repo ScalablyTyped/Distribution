@@ -14,8 +14,6 @@ import typings.stripe.stripeStrings.ach_credit_transfer
 import typings.stripe.stripeStrings.ach_debit
 import typings.stripe.stripeStrings.alipay
 import typings.stripe.stripeStrings.bancontact
-import typings.stripe.stripeStrings.bank_account
-import typings.stripe.stripeStrings.bitcoin_receiver
 import typings.stripe.stripeStrings.canceled
 import typings.stripe.stripeStrings.card
 import typings.stripe.stripeStrings.card_present
@@ -42,7 +40,6 @@ import typings.stripe.stripeStrings.reusable
 import typings.stripe.stripeStrings.sepa_debit
 import typings.stripe.stripeStrings.single_use
 import typings.stripe.stripeStrings.sofort
-import typings.stripe.stripeStrings.source
 import typings.stripe.stripeStrings.three_d_secure
 import typings.stripe.stripeStrings.unavailable
 import typings.stripe.stripeStrings.unchecked
@@ -53,7 +50,6 @@ import typings.stripe.stripeStrings.verified
 import typings.stripe.stripeStrings.wechat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Any Stripe source, including a bank account, credit/debit card, or less common "Source" types (see https://stripe.com/docs/api/sources/object). */
@@ -75,12 +71,11 @@ object IStripeSource {
     id: String,
     last4: String,
     metadata: IMetadata,
-    `object`: bank_account,
     routing_number: String,
     status: `new` | validated | verified | verification_failed | errored
   ): typings.stripe.mod.bankAccounts.IBankAccount = {
-    val __obj = js.Dynamic.literal(bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], account_holder_name = null, account_holder_type = null)
+    __obj.updateDynamic("object")("bank_account")
     __obj.asInstanceOf[typings.stripe.mod.bankAccounts.IBankAccount]
   }
   
@@ -102,7 +97,6 @@ object IStripeSource {
     inbound_address: String,
     livemode: Boolean,
     metadata: IMetadata,
-    `object`: bitcoin_receiver,
     payment: String,
     refund_address: String,
     transactions: IList[IBitcoinTransaction],
@@ -110,7 +104,7 @@ object IStripeSource {
     used_for_payment: Boolean
   ): typings.stripe.mod.bitcoinReceivers.IBitcoinReceiver = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], amount_received = amount_received.asInstanceOf[js.Any], bitcoin_amount = bitcoin_amount.asInstanceOf[js.Any], bitcoin_amount_received = bitcoin_amount_received.asInstanceOf[js.Any], bitcoin_uri = bitcoin_uri.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], filled = filled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inbound_address = inbound_address.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], payment = payment.asInstanceOf[js.Any], refund_address = refund_address.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any], uncaptured_funds = uncaptured_funds.asInstanceOf[js.Any], used_for_payment = used_for_payment.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")("bitcoin_receiver")
     __obj.asInstanceOf[typings.stripe.mod.bitcoinReceivers.IBitcoinReceiver]
   }
   
@@ -124,11 +118,10 @@ object IStripeSource {
     fingerprint: String,
     funding: credit | debit | prepaid | unknown_,
     id: String,
-    last4: String,
-    `object`: card
+    last4: String
   ): typings.stripe.mod.cards.ICard = {
-    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], address_city = null, address_country = null, address_line1 = null, address_line1_check = null, address_line2 = null, address_state = null, address_zip = null, address_zip_check = null, dynamic_last4 = null, name = null, tokenization_method = null)
+    __obj.updateDynamic("object")("card")
     __obj.asInstanceOf[typings.stripe.mod.cards.ICard]
   }
   
@@ -140,14 +133,13 @@ object IStripeSource {
     id: String,
     livemode: Boolean,
     metadata: IMetadata,
-    `object`: source,
     owner: Phone,
     status: canceled | chargeable | consumed | failed | pending,
     `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat,
     usage: reusable | single_use
   ): typings.stripe.mod.sources.ISource = {
     val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")("source")
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.stripe.mod.sources.ISource]
   }

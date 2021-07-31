@@ -7,7 +7,6 @@ import typings.redux.mod.Reducer
 import typings.reduxForm.mod.FieldType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reducerMod extends Shortcut {
@@ -20,14 +19,13 @@ object reducerMod extends Shortcut {
   @js.native
   val reducer: FormReducer = js.native
   
-  @js.native
   trait FieldState extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var touched: js.UndefOr[Boolean] = js.native
+    var touched: js.UndefOr[Boolean] = js.undefined
     
-    var visited: js.UndefOr[Boolean] = js.native
+    var visited: js.UndefOr[Boolean] = js.undefined
   }
   object FieldState {
     
@@ -70,26 +68,25 @@ object reducerMod extends Shortcut {
   // tslint:disable-next-line use-default-type-parameter
   StringDictionary[Reducer[js.Any, AnyAction]]
   
-  @js.native
   trait FormState extends StObject {
     
-    var active: js.UndefOr[String] = js.native
+    var active: js.UndefOr[String] = js.undefined
     
-    var anyTouched: js.UndefOr[Boolean] = js.native
+    var anyTouched: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var fields: js.UndefOr[StringDictionary[FieldState]] = js.native
+    var fields: js.UndefOr[StringDictionary[FieldState]] = js.undefined
     
-    var registeredFields: js.Array[RegisteredFieldState] = js.native
+    var registeredFields: js.Array[RegisteredFieldState]
     
-    var submitErrors: js.UndefOr[StringDictionary[String]] = js.native
+    var submitErrors: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var submitFailed: js.UndefOr[Boolean] = js.native
+    var submitFailed: js.UndefOr[Boolean] = js.undefined
     
-    var submitting: js.UndefOr[Boolean] = js.native
+    var submitting: js.UndefOr[Boolean] = js.undefined
     
-    var values: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var values: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object FormState {
     
@@ -160,14 +157,13 @@ object reducerMod extends Shortcut {
   
   type FormStateMap = StringDictionary[FormState]
   
-  @js.native
   trait RegisteredFieldState extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: FieldType = js.native
+    var `type`: FieldType
   }
   object RegisteredFieldState {
     

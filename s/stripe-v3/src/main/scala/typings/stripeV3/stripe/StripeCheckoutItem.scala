@@ -2,17 +2,15 @@ package typings.stripeV3.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StripeCheckoutItem extends StObject {
   
-  var plan: js.UndefOr[String] = js.native
+  var plan: js.UndefOr[String] = js.undefined
   
-  var quantity: Double = js.native
+  var quantity: Double
   
-  var sku: js.UndefOr[String] = js.native
+  var sku: js.UndefOr[String] = js.undefined
 }
 object StripeCheckoutItem {
   

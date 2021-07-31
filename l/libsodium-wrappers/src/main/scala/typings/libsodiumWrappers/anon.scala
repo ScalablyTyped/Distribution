@@ -4,17 +4,15 @@ import typings.libsodiumWrappers.mod.StateAddress
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Header extends StObject {
     
-    var header: Uint8Array = js.native
+    var header: Uint8Array
     
-    var state: StateAddress = js.native
+    var state: StateAddress
   }
   object Header {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var header: String = js.native
+    var header: String
     
-    var state: StateAddress = js.native
+    var state: StateAddress
   }
   object State {
     

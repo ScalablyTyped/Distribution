@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetBypassServiceWorkerRequest extends StObject {
   
   /**
     * Bypass service worker and load from network.
     */
-  var bypass: Boolean = js.native
+  var bypass: Boolean
 }
 object SetBypassServiceWorkerRequest {
   

@@ -12,19 +12,19 @@ import typings.stylelint.stylelintBooleans.`false`
 import typings.stylelint.stylelintBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Actual extends ValidateOptionsAssertion {
+  trait Actual
+    extends StObject
+       with ValidateOptionsAssertion {
     
-    var actual: js.Any = js.native
+    var actual: js.Any
     
-    var optional: js.UndefOr[`false`] = js.native
+    var optional: js.UndefOr[`false`] = js.undefined
     
-    var possible: js.UndefOr[js.Any] = js.native
+    var possible: js.UndefOr[js.Any] = js.undefined
   }
   object Actual {
     
@@ -54,22 +54,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var line: js.UndefOr[Double] = js.native
+    var line: js.UndefOr[Double] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var node: Node = js.native
+    var node: Node
     
-    var result: Result = js.native
+    var result: Result
     
-    var ruleName: String = js.native
+    var ruleName: String
     
-    var word: js.UndefOr[String] = js.native
+    var word: js.UndefOr[String] = js.undefined
   }
   object Index {
     
@@ -114,20 +113,21 @@ object anon {
     }
   }
   
-  @js.native
-  trait Optional extends ValidateOptionsAssertion {
+  trait Optional
+    extends StObject
+       with ValidateOptionsAssertion {
     
-    var actual: js.UndefOr[js.Any] = js.native
+    var actual: js.UndefOr[js.Any] = js.undefined
     
-    var optional: `true` = js.native
+    var optional: `true`
     
-    var possible: js.Any = js.native
+    var possible: js.Any
   }
   object Optional {
     
     @scala.inline
-    def apply(optional: `true`, possible: js.Any): Optional = {
-      val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], possible = possible.asInstanceOf[js.Any])
+    def apply(possible: js.Any): Optional = {
+      val __obj = js.Dynamic.literal(optional = true, possible = possible.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optional]
     }
     
@@ -149,20 +149,19 @@ object anon {
   }
   
   /* Inlined std.Partial<stylelint.stylelint.Configuration> */
-  @js.native
   trait PartialConfiguration extends StObject {
     
-    var defaultSeverity: js.UndefOr[Severity] = js.native
+    var defaultSeverity: js.UndefOr[Severity] = js.undefined
     
-    var `extends`: js.UndefOr[String | js.Array[String]] = js.native
+    var `extends`: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var ignoreFiles: js.UndefOr[String | js.Array[String]] = js.native
+    var ignoreFiles: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[String]] = js.native
+    var plugins: js.UndefOr[js.Array[String]] = js.undefined
     
-    var processors: js.UndefOr[js.Array[String]] = js.native
+    var processors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var rules: js.UndefOr[Record[String, _]] = js.native
+    var rules: js.UndefOr[Record[String, js.Any]] = js.undefined
   }
   object PartialConfiguration {
     
@@ -218,7 +217,7 @@ object anon {
       def setProcessorsVarargs(value: String*): Self = StObject.set(x, "processors", js.Array(value :_*))
       
       @scala.inline
-      def setRules(value: Record[String, _]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      def setRules(value: Record[String, js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
@@ -226,44 +225,43 @@ object anon {
   }
   
   /* Inlined std.Partial<stylelint.stylelint.LinterOptions> */
-  @js.native
   trait PartialLinterOptions extends StObject {
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var cacheLocation: js.UndefOr[String] = js.native
+    var cacheLocation: js.UndefOr[String] = js.undefined
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var codeFilename: js.UndefOr[String] = js.native
+    var codeFilename: js.UndefOr[String] = js.undefined
     
-    var config: js.UndefOr[PartialConfiguration] = js.native
+    var config: js.UndefOr[PartialConfiguration] = js.undefined
     
-    var configBasedir: js.UndefOr[String] = js.native
+    var configBasedir: js.UndefOr[String] = js.undefined
     
-    var configFile: js.UndefOr[String] = js.native
+    var configFile: js.UndefOr[String] = js.undefined
     
-    var configOverrides: js.UndefOr[PartialConfiguration] = js.native
+    var configOverrides: js.UndefOr[PartialConfiguration] = js.undefined
     
-    var customSyntax: js.UndefOr[String] = js.native
+    var customSyntax: js.UndefOr[String] = js.undefined
     
-    var disableDefaultIgnores: js.UndefOr[Boolean] = js.native
+    var disableDefaultIgnores: js.UndefOr[Boolean] = js.undefined
     
-    var files: js.UndefOr[String | js.Array[String]] = js.native
+    var files: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var fix: js.UndefOr[Boolean] = js.native
+    var fix: js.UndefOr[Boolean] = js.undefined
     
-    var formatter: js.UndefOr[FormatterType] = js.native
+    var formatter: js.UndefOr[FormatterType] = js.undefined
     
-    var ignoreDisables: js.UndefOr[Boolean] = js.native
+    var ignoreDisables: js.UndefOr[Boolean] = js.undefined
     
-    var ignorePath: js.UndefOr[String] = js.native
+    var ignorePath: js.UndefOr[String] = js.undefined
     
-    var maxWarnings: js.UndefOr[Double] = js.native
+    var maxWarnings: js.UndefOr[Double] = js.undefined
     
-    var reportNeedlessDisables: js.UndefOr[Boolean] = js.native
+    var reportNeedlessDisables: js.UndefOr[Boolean] = js.undefined
     
-    var syntax: js.UndefOr[SyntaxType] = js.native
+    var syntax: js.UndefOr[SyntaxType] = js.undefined
   }
   object PartialLinterOptions {
     
@@ -392,14 +390,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Root extends StObject {
     
-    var root: js.Any = js.native
+    var root: js.Any
     
-    var ruleName: String = js.native
+    var ruleName: String
     
-    var ruleSettings: js.Any = js.native
+    var ruleSettings: js.Any
   }
   object Root {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterTypeOutput extends StObject {
   
   /**
     * The identifier for this registration request. Use this registration token when calling  DescribeTypeRegistration , which returns information about the status and IDs of the type registration. 
     */
-  var RegistrationToken: js.UndefOr[typings.awsSdk.cloudformationMod.RegistrationToken] = js.native
+  var RegistrationToken: js.UndefOr[typings.awsSdk.cloudformationMod.RegistrationToken] = js.undefined
 }
 object RegisterTypeOutput {
   

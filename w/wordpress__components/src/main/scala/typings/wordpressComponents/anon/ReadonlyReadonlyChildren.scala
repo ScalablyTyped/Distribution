@@ -3,14 +3,12 @@ package typings.wordpressComponents.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{}> & std.Readonly<react.anon.Children> */
-@js.native
 trait ReadonlyReadonlyChildren extends StObject {
   
-  val children: js.UndefOr[ReactNode] = js.native
+  val children: js.UndefOr[ReactNode] = js.undefined
 }
 object ReadonlyReadonlyChildren {
   

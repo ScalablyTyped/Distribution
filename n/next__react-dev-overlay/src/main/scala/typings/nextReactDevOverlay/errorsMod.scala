@@ -8,7 +8,6 @@ import typings.react.mod.FC
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
@@ -21,10 +20,9 @@ object errorsMod {
   @js.native
   val styles: String = js.native
   
-  @js.native
   trait ErrorsProps extends StObject {
     
-    var errors: js.Array[SupportedErrorEvent] = js.native
+    var errors: js.Array[SupportedErrorEvent]
   }
   object ErrorsProps {
     
@@ -45,22 +43,21 @@ object errorsMod {
     }
   }
   
-  @js.native
   trait ReadyRuntimeError extends StObject {
     
-    var error: Error = js.native
+    var error: Error
     
-    var frames: js.Array[OriginalStackFrame] = js.native
+    var frames: js.Array[OriginalStackFrame]
     
-    var id: Double = js.native
+    var id: Double
     
-    var runtime: `true` = js.native
+    var runtime: `true`
   }
   object ReadyRuntimeError {
     
     @scala.inline
-    def apply(error: Error, frames: js.Array[OriginalStackFrame], id: Double, runtime: `true`): ReadyRuntimeError = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], frames = frames.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any])
+    def apply(error: Error, frames: js.Array[OriginalStackFrame], id: Double): ReadyRuntimeError = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], frames = frames.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], runtime = true)
       __obj.asInstanceOf[ReadyRuntimeError]
     }
     
@@ -84,12 +81,11 @@ object errorsMod {
     }
   }
   
-  @js.native
   trait SupportedErrorEvent extends StObject {
     
-    var event: UnhandledError | UnhandledRejection = js.native
+    var event: UnhandledError | UnhandledRejection
     
-    var id: Double = js.native
+    var id: Double
   }
   object SupportedErrorEvent {
     

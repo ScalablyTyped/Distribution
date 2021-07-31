@@ -2,17 +2,15 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
   /** Height of the video. The value range is [1,10000]. */
-  var height: Double = js.native
+  var height: Double
   
   /** Width of the video. The value range is [1,10000]. */
-  var width: Double = js.native
+  var width: Double
 }
 object Height {
   

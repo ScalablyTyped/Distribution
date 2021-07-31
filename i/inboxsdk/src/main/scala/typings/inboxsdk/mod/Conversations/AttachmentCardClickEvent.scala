@@ -2,13 +2,11 @@ package typings.inboxsdk.mod.Conversations
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachmentCardClickEvent extends StObject {
   
-  def getDownloadURL(): js.Promise[String] = js.native
+  def getDownloadURL(): js.Promise[String]
 }
 object AttachmentCardClickEvent {
   

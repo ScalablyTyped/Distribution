@@ -2,36 +2,34 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefreshSchemasStatus extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
     */
-  var EndpointArn: js.UndefOr[String] = js.native
+  var EndpointArn: js.UndefOr[String] = js.undefined
   
   /**
     * The last failure message for the schema.
     */
-  var LastFailureMessage: js.UndefOr[String] = js.native
+  var LastFailureMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The date the schema was last refreshed.
     */
-  var LastRefreshDate: js.UndefOr[TStamp] = js.native
+  var LastRefreshDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the replication instance.
     */
-  var ReplicationInstanceArn: js.UndefOr[String] = js.native
+  var ReplicationInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the schema.
     */
-  var Status: js.UndefOr[RefreshSchemasStatusTypeValue] = js.native
+  var Status: js.UndefOr[RefreshSchemasStatusTypeValue] = js.undefined
 }
 object RefreshSchemasStatus {
   

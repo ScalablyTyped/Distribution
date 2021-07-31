@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateEmailIdentityRequest extends StObject {
   
   /**
     * The email address or domain that you want to verify.
     */
-  var EmailIdentity: Identity = js.native
+  var EmailIdentity: Identity
   
   /**
     * An array of objects that define the tags (keys and values) that you want to associate with the email identity.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateEmailIdentityRequest {
   

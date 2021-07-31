@@ -24,7 +24,6 @@ import typings.std.AudioContext
 import typings.std.GainNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -52,21 +51,21 @@ object mod {
     def mute(muted: Boolean, id: Double): this.type = js.native
     
     def off(): this.type = js.native
-    def off(event: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
-    def off(event: js.UndefOr[scala.Nothing], callback: HowlCallback): this.type = js.native
-    def off(event: js.UndefOr[scala.Nothing], callback: HowlCallback, id: Double): this.type = js.native
-    def off(event: js.UndefOr[scala.Nothing], callback: HowlErrorCallback): this.type = js.native
-    def off(event: js.UndefOr[scala.Nothing], callback: HowlErrorCallback, id: Double): this.type = js.native
     def off(event: String): this.type = js.native
-    def off(event: String, callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
+    def off(event: String, callback: Unit, id: Double): this.type = js.native
     def off(event: String, callback: HowlCallback): this.type = js.native
     def off(event: String, callback: HowlCallback, id: Double): this.type = js.native
     def off(event: String, callback: HowlErrorCallback): this.type = js.native
     def off(event: String, callback: HowlErrorCallback, id: Double): this.type = js.native
+    def off(event: Unit, callback: Unit, id: Double): this.type = js.native
+    def off(event: Unit, callback: HowlCallback): this.type = js.native
+    def off(event: Unit, callback: HowlCallback, id: Double): this.type = js.native
+    def off(event: Unit, callback: HowlErrorCallback): this.type = js.native
+    def off(event: Unit, callback: HowlErrorCallback, id: Double): this.type = js.native
     @JSName("off")
     def off_end(event: end): this.type = js.native
     @JSName("off")
-    def off_end(event: end, callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
+    def off_end(event: end, callback: Unit, id: Double): this.type = js.native
     @JSName("off")
     def off_end(event: end, callback: HowlCallback): this.type = js.native
     @JSName("off")
@@ -74,7 +73,7 @@ object mod {
     @JSName("off")
     def off_fade(event: fade): this.type = js.native
     @JSName("off")
-    def off_fade(event: fade, callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
+    def off_fade(event: fade, callback: Unit, id: Double): this.type = js.native
     @JSName("off")
     def off_fade(event: fade, callback: HowlCallback): this.type = js.native
     @JSName("off")
@@ -82,15 +81,15 @@ object mod {
     @JSName("off")
     def off_load(event: load): this.type = js.native
     @JSName("off")
-    def off_load(event: load, callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
-    @JSName("off")
     def off_load(event: load, callback: js.Function0[Unit]): this.type = js.native
     @JSName("off")
     def off_load(event: load, callback: js.Function0[Unit], id: Double): this.type = js.native
     @JSName("off")
+    def off_load(event: load, callback: Unit, id: Double): this.type = js.native
+    @JSName("off")
     def off_loaderror(event: loaderror): this.type = js.native
     @JSName("off")
-    def off_loaderror(event: loaderror, callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
+    def off_loaderror(event: loaderror, callback: Unit, id: Double): this.type = js.native
     @JSName("off")
     def off_loaderror(event: loaderror, callback: HowlErrorCallback): this.type = js.native
     @JSName("off")
@@ -98,7 +97,7 @@ object mod {
     @JSName("off")
     def off_mute(event: mute): this.type = js.native
     @JSName("off")
-    def off_mute(event: mute, callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
+    def off_mute(event: mute, callback: Unit, id: Double): this.type = js.native
     @JSName("off")
     def off_mute(event: mute, callback: HowlCallback): this.type = js.native
     @JSName("off")
@@ -106,7 +105,7 @@ object mod {
     @JSName("off")
     def off_pause(event: pause): this.type = js.native
     @JSName("off")
-    def off_pause(event: pause, callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
+    def off_pause(event: pause, callback: Unit, id: Double): this.type = js.native
     @JSName("off")
     def off_pause(event: pause, callback: HowlCallback): this.type = js.native
     @JSName("off")
@@ -114,7 +113,7 @@ object mod {
     @JSName("off")
     def off_play(event: play): this.type = js.native
     @JSName("off")
-    def off_play(event: play, callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
+    def off_play(event: play, callback: Unit, id: Double): this.type = js.native
     @JSName("off")
     def off_play(event: play, callback: HowlCallback): this.type = js.native
     @JSName("off")
@@ -122,7 +121,7 @@ object mod {
     @JSName("off")
     def off_playerror(event: playerror): this.type = js.native
     @JSName("off")
-    def off_playerror(event: playerror, callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
+    def off_playerror(event: playerror, callback: Unit, id: Double): this.type = js.native
     @JSName("off")
     def off_playerror(event: playerror, callback: HowlErrorCallback): this.type = js.native
     @JSName("off")
@@ -130,7 +129,7 @@ object mod {
     @JSName("off")
     def off_rate(event: rate): this.type = js.native
     @JSName("off")
-    def off_rate(event: rate, callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
+    def off_rate(event: rate, callback: Unit, id: Double): this.type = js.native
     @JSName("off")
     def off_rate(event: rate, callback: HowlCallback): this.type = js.native
     @JSName("off")
@@ -138,7 +137,7 @@ object mod {
     @JSName("off")
     def off_seek(event: seek): this.type = js.native
     @JSName("off")
-    def off_seek(event: seek, callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
+    def off_seek(event: seek, callback: Unit, id: Double): this.type = js.native
     @JSName("off")
     def off_seek(event: seek, callback: HowlCallback): this.type = js.native
     @JSName("off")
@@ -146,7 +145,7 @@ object mod {
     @JSName("off")
     def off_stop(event: stop): this.type = js.native
     @JSName("off")
-    def off_stop(event: stop, callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
+    def off_stop(event: stop, callback: Unit, id: Double): this.type = js.native
     @JSName("off")
     def off_stop(event: stop, callback: HowlCallback): this.type = js.native
     @JSName("off")
@@ -154,7 +153,7 @@ object mod {
     @JSName("off")
     def off_unlock(event: unlock): this.type = js.native
     @JSName("off")
-    def off_unlock(event: unlock, callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
+    def off_unlock(event: unlock, callback: Unit, id: Double): this.type = js.native
     @JSName("off")
     def off_unlock(event: unlock, callback: HowlCallback): this.type = js.native
     @JSName("off")
@@ -162,7 +161,7 @@ object mod {
     @JSName("off")
     def off_volume(event: volume): this.type = js.native
     @JSName("off")
-    def off_volume(event: volume, callback: js.UndefOr[scala.Nothing], id: Double): this.type = js.native
+    def off_volume(event: volume, callback: Unit, id: Double): this.type = js.native
     @JSName("off")
     def off_volume(event: volume, callback: HowlCallback): this.type = js.native
     @JSName("off")
@@ -306,9 +305,9 @@ object mod {
     def rate(rate: Double, id: Double): this.type = js.native
     
     def seek(): this.type | Double = js.native
-    def seek(seek: js.UndefOr[scala.Nothing], id: Double): this.type | Double = js.native
     def seek(seek: Double): this.type | Double = js.native
     def seek(seek: Double, id: Double): this.type | Double = js.native
+    def seek(seek: Unit, id: Double): this.type | Double = js.native
     
     def state(): unloaded | loading | loaded = js.native
     
@@ -365,74 +364,73 @@ object mod {
   
   type HowlErrorCallback = js.Function2[/* soundId */ Double, /* error */ js.Any, Unit]
   
-  @js.native
   trait HowlListeners extends StObject {
     
     /**
       * Fires when the sound finishes playing (if it is looping, it'll fire at the end of each loop).
       * The first parameter is the ID of the sound.
       */
-    var onend: js.UndefOr[HowlCallback] = js.native
+    var onend: js.UndefOr[HowlCallback] = js.undefined
     
     /**
       * Fires when the current sound finishes fading in/out. The first parameter is the ID of the sound.
       */
-    var onfade: js.UndefOr[HowlCallback] = js.native
+    var onfade: js.UndefOr[HowlCallback] = js.undefined
     
     /**
       * Fires when the sound is loaded.
       */
-    var onload: js.UndefOr[HowlCallback] = js.native
+    var onload: js.UndefOr[HowlCallback] = js.undefined
     
     /**
       * Fires when the sound is unable to load. The first parameter is the ID of the sound (if it exists) and the second is the error message/code.
       */
-    var onloaderror: js.UndefOr[HowlErrorCallback] = js.native
+    var onloaderror: js.UndefOr[HowlErrorCallback] = js.undefined
     
     /**
       * Fires when the sound has been muted/unmuted. The first parameter is the ID of the sound.
       */
-    var onmute: js.UndefOr[HowlCallback] = js.native
+    var onmute: js.UndefOr[HowlCallback] = js.undefined
     
     /**
       * Fires when the sound has been paused. The first parameter is the ID of the sound.
       */
-    var onpause: js.UndefOr[HowlCallback] = js.native
+    var onpause: js.UndefOr[HowlCallback] = js.undefined
     
     /**
       * Fires when the sound begins playing. The first parameter is the ID of the sound.
       */
-    var onplay: js.UndefOr[HowlCallback] = js.native
+    var onplay: js.UndefOr[HowlCallback] = js.undefined
     
     /**
       * Fires when the sound is unable to play. The first parameter is the ID of the sound and the second is the error message/code.
       */
-    var onplayerror: js.UndefOr[HowlErrorCallback] = js.native
+    var onplayerror: js.UndefOr[HowlErrorCallback] = js.undefined
     
     /**
       * Fires when the sound's playback rate has changed. The first parameter is the ID of the sound.
       */
-    var onrate: js.UndefOr[HowlCallback] = js.native
+    var onrate: js.UndefOr[HowlCallback] = js.undefined
     
     /**
       * Fires when the sound has been seeked. The first parameter is the ID of the sound.
       */
-    var onseek: js.UndefOr[HowlCallback] = js.native
+    var onseek: js.UndefOr[HowlCallback] = js.undefined
     
     /**
       * Fires when the sound has been stopped. The first parameter is the ID of the sound.
       */
-    var onstop: js.UndefOr[HowlCallback] = js.native
+    var onstop: js.UndefOr[HowlCallback] = js.undefined
     
     /**
       * Fires when audio has been automatically unlocked through a touch/click event.
       */
-    var onunlock: js.UndefOr[HowlCallback] = js.native
+    var onunlock: js.UndefOr[HowlCallback] = js.undefined
     
     /**
       * Fires when the sound's volume has changed. The first parameter is the ID of the sound.
       */
-    var onvolume: js.UndefOr[HowlCallback] = js.native
+    var onvolume: js.UndefOr[HowlCallback] = js.undefined
   }
   object HowlListeners {
     
@@ -525,15 +523,16 @@ object mod {
     }
   }
   
-  @js.native
-  trait HowlOptions extends HowlListeners {
+  trait HowlOptions
+    extends StObject
+       with HowlListeners {
     
     /**
       * Set to true to automatically start playback when sound is loaded.
       *
       * @default `false`
       */
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * howler.js automatically detects your file format from the extension, but you may also specify a
@@ -541,7 +540,7 @@ object mod {
       *
       * @default `[]`
       */
-    var format: js.UndefOr[js.Array[String]] = js.native
+    var format: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Set to true to force HTML5 Audio. This should be used for large audio files so that you don't
@@ -549,21 +548,21 @@ object mod {
       *
       * @default `false`
       */
-    var html5: js.UndefOr[Boolean] = js.native
+    var html5: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to true to automatically loop the sound forever.
       *
       * @default `false`
       */
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to true to load the audio muted.
       *
       * @default `false`
       */
-    var mute: js.UndefOr[Boolean] = js.native
+    var mute: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The size of the inactive sounds pool. Once sounds are stopped or finish playing, they are marked
@@ -574,7 +573,7 @@ object mod {
       *
       * @default `5`
       */
-    var pool: js.UndefOr[Double] = js.native
+    var pool: js.UndefOr[Double] = js.undefined
     
     /**
       * Automatically begin downloading the audio file when the Howl is defined. If using HTML5 Audio,
@@ -583,14 +582,14 @@ object mod {
       *
       * @default `true`
       */
-    var preload: js.UndefOr[Boolean | metadata] = js.native
+    var preload: js.UndefOr[Boolean | metadata] = js.undefined
     
     /**
       * The rate of playback. 0.5 to 4.0, with 1.0 being normal speed.
       *
       * @default `1.0`
       */
-    var rate: js.UndefOr[Double] = js.native
+    var rate: js.UndefOr[Double] = js.undefined
     
     /**
       * Define a sound sprite for the sound. The offset and duration are defined in milliseconds. A
@@ -601,7 +600,7 @@ object mod {
       */
     var sprite: js.UndefOr[
         StringDictionary[(js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Boolean])]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The sources to the track(s) to be loaded for the sound (URLs or base64 data URIs). These should
@@ -611,14 +610,14 @@ object mod {
       *
       * @default `[]`
       */
-    var src: js.UndefOr[String | js.Array[String]] = js.native
+    var src: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The volume of the specific track, from 0.0 to 1.0.
       *
       * @default `1.0`
       */
-    var volume: js.UndefOr[Double] = js.native
+    var volume: js.UndefOr[Double] = js.undefined
     
     /**
       * When using Web Audio, howler.js uses an XHR request to load the audio files. If you need to send
@@ -626,7 +625,7 @@ object mod {
       * this parameter. Each is optional (method defaults to GET, headers default to null and
       * withCredentials defaults to false).
       */
-    var xhr: js.UndefOr[Headers] = js.native
+    var xhr: js.UndefOr[Headers] = js.undefined
   }
   object HowlOptions {
     

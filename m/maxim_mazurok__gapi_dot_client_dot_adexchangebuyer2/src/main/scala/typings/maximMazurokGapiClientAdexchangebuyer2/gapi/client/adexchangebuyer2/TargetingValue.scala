@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetingValue extends StObject {
   
   /** The creative size value to include/exclude. Filled in when key = GOOG_CREATIVE_SIZE */
-  var creativeSizeValue: js.UndefOr[CreativeSize] = js.native
+  var creativeSizeValue: js.UndefOr[CreativeSize] = js.undefined
   
   /** The daypart targeting to include / exclude. Filled in when the key is GOOG_DAYPART_TARGETING. The definition of this targeting is derived from the structure used by Ad Manager. */
-  var dayPartTargetingValue: js.UndefOr[DayPartTargeting] = js.native
+  var dayPartTargetingValue: js.UndefOr[DayPartTargeting] = js.undefined
   
   /** The long value to include/exclude. */
-  var longValue: js.UndefOr[String] = js.native
+  var longValue: js.UndefOr[String] = js.undefined
   
   /** The string value to include/exclude. */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object TargetingValue {
   

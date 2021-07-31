@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Appflow extends Service {
   
   @JSName("config")
-  var config_Appflow: ConfigBase with ClientConfiguration = js.native
+  var config_Appflow: ConfigBase & ClientConfiguration = js.native
   
   /**
     *  Creates a new connector profile associated with your AWS account. There is a soft quota of 100 connector profiles per AWS account. If you need more connector profiles than this quota allows, you can submit a request to the Amazon AppFlow team through the Amazon AppFlow support channel. 

@@ -2,15 +2,13 @@ package typings.arangodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileSize extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var fileSize: Double = js.native
+  var fileSize: Double
 }
 object FileSize {
   

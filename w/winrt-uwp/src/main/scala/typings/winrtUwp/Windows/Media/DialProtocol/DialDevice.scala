@@ -3,28 +3,26 @@ package typings.winrtUwp.Windows.Media.DialProtocol
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the remote device capable of running DIAL apps. */
-@js.native
 trait DialDevice extends StObject {
   
   /** Gets the friendly name for the DIAL device. */
-  var friendlyName: String = js.native
+  var friendlyName: String
   
   /**
     * Creates a new DialApp object. This method does not establish a connection to the device or validate that the app exists. That is done when any function is called on the resulting DialApp object.
     * @param appName The name of the app. This becomes the AppName property of the new object.
     * @return The DialApp object for the app.
     */
-  def getDialApp(appName: String): DialApp = js.native
+  def getDialApp(appName: String): DialApp
   
   /** Gets the remote device's ID. You can use this ID with the Windows.Devices.Enumeration APIs as well. */
-  var id: String = js.native
+  var id: String
   
   /** Gets a stream containing the thumbnail image for the DIAL device. */
-  var thumbnail: IRandomAccessStreamReference = js.native
+  var thumbnail: IRandomAccessStreamReference
 }
 object DialDevice {
   

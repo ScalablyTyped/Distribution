@@ -2,23 +2,23 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VerticalBarSeriesPoint extends AbstractSeriesPoint {
+trait VerticalBarSeriesPoint
+  extends StObject
+     with AbstractSeriesPoint {
   
-  var color: js.UndefOr[String | Double] = js.native
+  var color: js.UndefOr[String | Double] = js.undefined
   
-  var fill: js.UndefOr[String | Double] = js.native
+  var fill: js.UndefOr[String | Double] = js.undefined
   
-  var opacity: js.UndefOr[String | Double] = js.native
+  var opacity: js.UndefOr[String | Double] = js.undefined
   
-  var stroke: js.UndefOr[String | Double] = js.native
+  var stroke: js.UndefOr[String | Double] = js.undefined
   
-  var x: String | Double = js.native
+  var x: String | Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object VerticalBarSeriesPoint {
   

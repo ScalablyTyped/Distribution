@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCertificateRequest extends StObject {
   
   /**
     * The identifier of the certificate.
     */
-  var CertificateId: typings.awsSdk.directoryserviceMod.CertificateId = js.native
+  var CertificateId: typings.awsSdk.directoryserviceMod.CertificateId
   
   /**
     * The identifier of the directory.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
 }
 object DescribeCertificateRequest {
   

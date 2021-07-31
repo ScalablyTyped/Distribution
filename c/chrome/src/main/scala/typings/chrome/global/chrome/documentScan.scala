@@ -4,7 +4,6 @@ import typings.chrome.chrome.documentScan.DocumentScanCallbackArg
 import typings.chrome.chrome.documentScan.DocumentScanOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -18,7 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object documentScan {
   
-  @JSGlobal("chrome.documentScan.scan")
+  @JSGlobal("chrome.documentScan")
   @js.native
-  def scan(options: DocumentScanOptions, callback: js.Function1[/* result */ DocumentScanCallbackArg, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def scan(options: DocumentScanOptions, callback: js.Function1[/* result */ DocumentScanCallbackArg, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

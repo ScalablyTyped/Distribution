@@ -1,7 +1,7 @@
 package typings.echarts.echarts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.echarts.echartsStrings.themeRiver
   - typings.echarts.echartsStrings.custom
 */
-trait EChartsSeriesType extends js.Object
+trait EChartsSeriesType extends StObject
 object EChartsSeriesType {
   
   @scala.inline

@@ -11,8 +11,8 @@ Converts HTML documents to DOCX in the browser
 | Full name          | html-docx-js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 237307 |
+| # dependents       | 16 |
+| # downloads        | 281642 |
 | # stars            | 6 |
 
 ## Links

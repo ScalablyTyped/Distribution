@@ -8,14 +8,74 @@ import typings.antvGBase.typesMod.Point
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
   
   @JSImport("@antv/component/lib/axis/base", JSImport.Default)
   @js.native
-  abstract class default[T /* <: AxisBaseCfg */] () extends AxisBase[T]
+  abstract class default[T /* <: AxisBaseCfg */] () extends AxisBase[T] {
+    
+    /**
+      * 清空列表
+      */
+    /* CompleteClass */
+    override def clearItems(): js.Any = js.native
+    
+    /**
+      * 清楚所有列表项的状态
+      * @param {string} state 状态值
+      */
+    /* CompleteClass */
+    override def clearItemsState(state: String): js.Any = js.native
+    
+    /**
+      * 获取列表项
+      * @return {ListItem[]} 列表项集合
+      */
+    /* CompleteClass */
+    override def getItems(): js.Array[ListItem] = js.native
+    
+    /**
+      * 根据状态获取
+      * @param  {state}     state 状态名
+      * @return {ListItem[]} 列表项
+      */
+    /* CompleteClass */
+    override def getItemsByState(state: js.Any): js.Array[ListItem] = js.native
+    
+    /**
+      * 是否存在指定的状态
+      * @param {ListItem} item  列表项
+      * @param {string} state 状态名
+      */
+    /* CompleteClass */
+    override def hasState(item: ListItem, state: String): Boolean = js.native
+    
+    /**
+      * 设置列表项的状态
+      * @param {ListItem} item  列表项
+      * @param {string}   state 状态名
+      * @param {boolean}  value 状态值, true, false
+      */
+    /* CompleteClass */
+    override def setItemState(item: ListItem, state: String, value: Boolean): js.Any = js.native
+    
+    /**
+      * 设置列表项
+      * @param {ListItem[]} items 列表项集合
+      */
+    /* CompleteClass */
+    override def setItems(items: js.Array[ListItem]): js.Any = js.native
+    
+    /**
+      * 更新列表项
+      * @param {ListItem} item 列表项
+      * @param {object}   cfg  列表项
+      */
+    /* CompleteClass */
+    override def updateItem(item: ListItem, cfg: js.Object): js.Any = js.native
+  }
   
   @js.native
   trait AxisBase[T /* <: AxisBaseCfg */]
@@ -44,7 +104,7 @@ object baseMod {
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def getEvents(): (Record[String, js.Array[EventType]]) with js.Any = js.native
+    override def getEvents(): (Record[String, js.Array[EventType]]) & js.Any = js.native
     
     def getItemStates(item: ListItem): js.Array[String] = js.native
     
@@ -61,7 +121,7 @@ object baseMod {
       * @protected
       * 获取坐标轴线的路径，不同的坐标轴不一样
       */
-    /* protected */ def getLinePath(): js.Array[_] = js.native
+    /* protected */ def getLinePath(): js.Array[js.Any] = js.native
     
     /* protected */ def getSidePoint(point: Point, offset: Double): Point = js.native
     
@@ -98,13 +158,13 @@ object baseMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(): this.type with js.Any = js.native
+    override def off(): this.type & js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String): this.type with js.Any = js.native
+    override def off(evt: String): this.type & js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String, callback: js.Function): this.type with js.Any = js.native
+    override def off(evt: String, callback: js.Function): this.type & js.Any = js.native
     
     /**
       * 监听一个事件
@@ -114,7 +174,7 @@ object baseMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def on(evt: String, callback: js.Function): this.type with js.Any = js.native
+    override def on(evt: String, callback: js.Function): this.type & js.Any = js.native
     
     /* protected */ def processOverlap(labelGroup: js.Any): Unit = js.native
     

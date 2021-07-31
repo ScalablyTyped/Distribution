@@ -2,31 +2,29 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeSummary extends StObject {
   
   /**
     * The type of the change.
     */
-  var ChangeType: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ChangeType] = js.native
+  var ChangeType: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ChangeType] = js.undefined
   
   /**
     * This object contains details specific to the change type of the requested change.
     */
-  var Details: js.UndefOr[Json] = js.native
+  var Details: js.UndefOr[Json] = js.undefined
   
   /**
     * The entity to be changed.
     */
-  var Entity: js.UndefOr[typings.awsSdk.marketplacecatalogMod.Entity] = js.native
+  var Entity: js.UndefOr[typings.awsSdk.marketplacecatalogMod.Entity] = js.undefined
   
   /**
     * An array of ErrorDetail objects associated with the change.
     */
-  var ErrorDetailList: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ErrorDetailList] = js.native
+  var ErrorDetailList: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ErrorDetailList] = js.undefined
 }
 object ChangeSummary {
   

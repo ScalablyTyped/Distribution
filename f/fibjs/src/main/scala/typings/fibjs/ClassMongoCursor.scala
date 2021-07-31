@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 
   */
 @js.native
-trait ClassMongoCursor extends ClassObject {
+trait ClassMongoCursor
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -76,7 +77,7 @@ trait ClassMongoCursor extends ClassObject {
     * 
     * 
     */
-  def map(func: js.Function): js.Array[_] = js.native
+  def map(func: js.Function): js.Array[js.Any] = js.native
   
   /**
     * 
@@ -128,5 +129,5 @@ trait ClassMongoCursor extends ClassObject {
     * 
     * 
     */
-  def toArray(): js.Array[_] = js.native
+  def toArray(): js.Array[js.Any] = js.native
 }

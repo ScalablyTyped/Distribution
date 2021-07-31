@@ -2,13 +2,13 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AudioTrackMenuItemOptions extends MenuItemOptions {
+trait AudioTrackMenuItemOptions
+  extends StObject
+     with MenuItemOptions {
   
-  var track: js.UndefOr[VideojsAudioTrack] = js.native
+  var track: js.UndefOr[VideojsAudioTrack] = js.undefined
 }
 object AudioTrackMenuItemOptions {
   

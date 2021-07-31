@@ -2,22 +2,20 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NonceStr extends StObject {
   
   @JSName("package")
-  var _package: String = js.native
+  var _package: String
   
-  var nonceStr: String = js.native
+  var nonceStr: String
   
-  var paySign: String = js.native
+  var paySign: String
   
-  var signType: String = js.native
+  var signType: String
   
-  var timeStamp: String = js.native
+  var timeStamp: String
 }
 object NonceStr {
   

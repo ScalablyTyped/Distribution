@@ -2,29 +2,27 @@ package typings.plotlyJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotDatum extends StObject {
   
-  var curveNumber: Double = js.native
+  var curveNumber: Double
   
-  var customdata: Datum = js.native
+  var customdata: Datum
   
-  var data: PlotData = js.native
+  var data: PlotData
   
-  var pointIndex: Double = js.native
+  var pointIndex: Double
   
-  var pointNumber: Double = js.native
+  var pointNumber: Double
   
-  var x: Datum = js.native
+  var x: Datum
   
-  var xaxis: LayoutAxis = js.native
+  var xaxis: LayoutAxis
   
-  var y: Datum = js.native
+  var y: Datum
   
-  var yaxis: LayoutAxis = js.native
+  var yaxis: LayoutAxis
 }
 object PlotDatum {
   
@@ -37,7 +35,7 @@ object PlotDatum {
     xaxis: LayoutAxis,
     yaxis: LayoutAxis
   ): PlotDatum = {
-    val __obj = js.Dynamic.literal(curveNumber = curveNumber.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], pointIndex = pointIndex.asInstanceOf[js.Any], pointNumber = pointNumber.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(curveNumber = curveNumber.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], pointIndex = pointIndex.asInstanceOf[js.Any], pointNumber = pointNumber.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], customdata = null, x = null, y = null)
     __obj.asInstanceOf[PlotDatum]
   }
   

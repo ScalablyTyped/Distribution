@@ -2,7 +2,6 @@ package typings.awsSdkClientKmsNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createKeyExceptionsUnionMod {
@@ -20,44 +19,44 @@ object createKeyExceptionsUnionMod {
   object CreateKeyExceptionsUnion {
     
     @scala.inline
-    def DependencyTimeoutException(name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.DependencyTimeoutException): typings.awsSdkClientKmsNode.typesDependencyTimeoutExceptionMod.DependencyTimeoutException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def DependencyTimeoutException(): typings.awsSdkClientKmsNode.typesDependencyTimeoutExceptionMod.DependencyTimeoutException = {
+      val __obj = js.Dynamic.literal(name = "DependencyTimeoutException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesDependencyTimeoutExceptionMod.DependencyTimeoutException]
     }
     
     @scala.inline
-    def InvalidArnException(name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidArnException): typings.awsSdkClientKmsNode.typesInvalidArnExceptionMod.InvalidArnException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def InvalidArnException(): typings.awsSdkClientKmsNode.typesInvalidArnExceptionMod.InvalidArnException = {
+      val __obj = js.Dynamic.literal(name = "InvalidArnException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesInvalidArnExceptionMod.InvalidArnException]
     }
     
     @scala.inline
-    def KMSInternalException(name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KMSInternalException): typings.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def KMSInternalException(): typings.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException = {
+      val __obj = js.Dynamic.literal(name = "KMSInternalException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException]
     }
     
     @scala.inline
-    def LimitExceededException(name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.LimitExceededException): typings.awsSdkClientKmsNode.typesLimitExceededExceptionMod.LimitExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def LimitExceededException(): typings.awsSdkClientKmsNode.typesLimitExceededExceptionMod.LimitExceededException = {
+      val __obj = js.Dynamic.literal(name = "LimitExceededException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesLimitExceededExceptionMod.LimitExceededException]
     }
     
     @scala.inline
-    def MalformedPolicyDocumentException(name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.MalformedPolicyDocumentException): typings.awsSdkClientKmsNode.typesMalformedPolicyDocumentExceptionMod.MalformedPolicyDocumentException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def MalformedPolicyDocumentException(): typings.awsSdkClientKmsNode.typesMalformedPolicyDocumentExceptionMod.MalformedPolicyDocumentException = {
+      val __obj = js.Dynamic.literal(name = "MalformedPolicyDocumentException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesMalformedPolicyDocumentExceptionMod.MalformedPolicyDocumentException]
     }
     
     @scala.inline
-    def TagException(name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.TagException): typings.awsSdkClientKmsNode.typesTagExceptionMod.TagException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def TagException(): typings.awsSdkClientKmsNode.typesTagExceptionMod.TagException = {
+      val __obj = js.Dynamic.literal(name = "TagException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesTagExceptionMod.TagException]
     }
     
     @scala.inline
-    def UnsupportedOperationException(name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.UnsupportedOperationException): typings.awsSdkClientKmsNode.typesUnsupportedOperationExceptionMod.UnsupportedOperationException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def UnsupportedOperationException(): typings.awsSdkClientKmsNode.typesUnsupportedOperationExceptionMod.UnsupportedOperationException = {
+      val __obj = js.Dynamic.literal(name = "UnsupportedOperationException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesUnsupportedOperationExceptionMod.UnsupportedOperationException]
     }
   }

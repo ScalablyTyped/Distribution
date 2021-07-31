@@ -9,21 +9,19 @@ import typings.uniApp.uniAppStrings.ease
 import typings.uniApp.uniAppStrings.linear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAnimationOptions extends StObject {
   
   /**
     * 动画延迟时间，单位 ms
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /**
     * 动画持续时间，单位ms
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * 定义动画的效果
@@ -37,12 +35,12 @@ trait CreateAnimationOptions extends StObject {
     */
   var timingFunction: js.UndefOr[
     linear | ease | `ease-in` | `ease-in-out` | `ease-out` | `step-start` | `step-end`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * 设置transform-origin
     */
-  var transformOrigin: js.UndefOr[String] = js.native
+  var transformOrigin: js.UndefOr[String] = js.undefined
 }
 object CreateAnimationOptions {
   

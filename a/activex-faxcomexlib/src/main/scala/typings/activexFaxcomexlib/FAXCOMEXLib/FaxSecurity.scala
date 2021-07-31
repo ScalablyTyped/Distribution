@@ -2,30 +2,28 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxSecurity Class */
-@js.native
 trait FaxSecurity extends StObject {
   
   /** Security descriptor */
-  var Descriptor: js.Any = js.native
+  var Descriptor: js.Any
   
   @JSName("FAXCOMEXLib.FaxSecurity_typekey")
-  var FAXCOMEXLibDotFaxSecurity_typekey: FaxSecurity = js.native
+  var FAXCOMEXLibDotFaxSecurity_typekey: FaxSecurity
   
   /** Granted rights, a bit-wise combination of FAX_ACCESS_RIGHTS values */
-  val GrantedRights: FAX_ACCESS_RIGHTS_ENUM = js.native
+  val GrantedRights: FAX_ACCESS_RIGHTS_ENUM
   
   /** Security Information Type */
-  var InformationType: Double = js.native
+  var InformationType: Double
   
   /** Refresh the object */
-  def Refresh(): Unit = js.native
+  def Refresh(): Unit
   
   /** Save the object */
-  def Save(): Unit = js.native
+  def Save(): Unit
 }
 object FaxSecurity {
   

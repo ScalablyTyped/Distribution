@@ -2,23 +2,21 @@ package typings.sharepoint.CUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextualGroup extends StObject {
   
-  def dispose(): scala.Unit = js.native
+  def dispose(): scala.Unit
   
-  def get_color(): Double = js.native
+  def get_color(): Double
   
-  def get_command(): String = js.native
+  def get_command(): String
   
-  def get_count(): Double = js.native
+  def get_count(): Double
   
-  def get_id(): String = js.native
+  def get_id(): String
   
-  def get_title(): String = js.native
+  def get_title(): String
 }
 object ContextualGroup {
   

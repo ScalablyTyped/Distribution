@@ -11,8 +11,8 @@ Because everyone loves a tryer! Conditional and repeated task invocation for nod
 | Full name          | tryer |
 | Keywords           | repeat, retry, predicate, conditional, invocation, execution, loop, condition, termination, exponential, backoff |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 124105717 |
+| # dependents       | 10 |
+| # downloads        | 152828766 |
 | # stars            | 0 |
 
 ## Links

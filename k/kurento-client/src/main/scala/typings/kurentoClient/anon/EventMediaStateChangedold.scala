@@ -5,26 +5,24 @@ import typings.kurentoClient.mod.MediaState
 import typings.kurentoClient.mod.Tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined kurento-client.kurento-client.Event<'MediaStateChanged', {  oldState :kurento-client.kurento-client.MediaState,   newState :kurento-client.kurento-client.MediaState}> */
-@js.native
 trait EventMediaStateChangedold extends StObject {
   
-  var newState: MediaState = js.native
+  var newState: MediaState
   
-  var oldState: MediaState = js.native
+  var oldState: MediaState
   
-  var source: String = js.native
+  var source: String
   
-  var tags: js.Array[Tag] = js.native
+  var tags: js.Array[Tag]
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var timestampMillis: String = js.native
+  var timestampMillis: String
   
-  var `type`: MediaStateChanged = js.native
+  var `type`: MediaStateChanged
 }
 object EventMediaStateChangedold {
   
@@ -35,11 +33,10 @@ object EventMediaStateChangedold {
     source: String,
     tags: js.Array[Tag],
     timestamp: String,
-    timestampMillis: String,
-    `type`: MediaStateChanged
+    timestampMillis: String
   ): EventMediaStateChangedold = {
     val __obj = js.Dynamic.literal(newState = newState.asInstanceOf[js.Any], oldState = oldState.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], timestampMillis = timestampMillis.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MediaStateChanged")
     __obj.asInstanceOf[EventMediaStateChangedold]
   }
   

@@ -3,69 +3,67 @@ package typings.googleapis.docsV1Mod.docsV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Google Docs document.
   */
-@js.native
 trait SchemaDocument extends StObject {
   
   /**
     * The main body of the document.
     */
-  var body: js.UndefOr[SchemaBody] = js.native
+  var body: js.UndefOr[SchemaBody] = js.undefined
   
   /**
     * The ID of the document.
     */
-  var documentId: js.UndefOr[String] = js.native
+  var documentId: js.UndefOr[String] = js.undefined
   
   /**
     * The style of the document.
     */
-  var documentStyle: js.UndefOr[SchemaDocumentStyle] = js.native
+  var documentStyle: js.UndefOr[SchemaDocumentStyle] = js.undefined
   
   /**
     * The footers in the document, keyed by footer ID.
     */
-  var footers: js.UndefOr[StringDictionary[SchemaFooter]] = js.native
+  var footers: js.UndefOr[StringDictionary[SchemaFooter]] = js.undefined
   
   /**
     * The footnotes in the document, keyed by footnote ID.
     */
-  var footnotes: js.UndefOr[StringDictionary[SchemaFootnote]] = js.native
+  var footnotes: js.UndefOr[StringDictionary[SchemaFootnote]] = js.undefined
   
   /**
     * The headers in the document, keyed by header ID.
     */
-  var headers: js.UndefOr[StringDictionary[SchemaHeader]] = js.native
+  var headers: js.UndefOr[StringDictionary[SchemaHeader]] = js.undefined
   
   /**
     * The inline objects in the document, keyed by object ID.
     */
-  var inlineObjects: js.UndefOr[StringDictionary[SchemaInlineObject]] = js.native
+  var inlineObjects: js.UndefOr[StringDictionary[SchemaInlineObject]] = js.undefined
   
   /**
     * The lists in the document, keyed by list ID.
     */
-  var lists: js.UndefOr[StringDictionary[SchemaList]] = js.native
+  var lists: js.UndefOr[StringDictionary[SchemaList]] = js.undefined
   
   /**
     * The named ranges in the document, keyed by name.
     */
-  var namedRanges: js.UndefOr[StringDictionary[SchemaNamedRanges]] = js.native
+  var namedRanges: js.UndefOr[StringDictionary[SchemaNamedRanges]] = js.undefined
   
   /**
     * The named styles of the document.
     */
-  var namedStyles: js.UndefOr[SchemaNamedStyles] = js.native
+  var namedStyles: js.UndefOr[SchemaNamedStyles] = js.undefined
   
   /**
     * The positioned objects in the document, keyed by object ID.
     */
-  var positionedObjects: js.UndefOr[StringDictionary[SchemaPositionedObject]] = js.native
+  var positionedObjects: js.UndefOr[StringDictionary[SchemaPositionedObject]] = js.undefined
   
   /**
     * The revision ID of the document. Can be used in update requests to
@@ -80,30 +78,30 @@ trait SchemaDocument extends StObject {
     * usually means the document has been updated; however, a changed ID can
     * also be due to internal factors such as ID format changes.
     */
-  var revisionId: js.UndefOr[String] = js.native
+  var revisionId: js.UndefOr[String] = js.undefined
   
   /**
     * The suggested changes to the style of the document, keyed by suggestion
     * ID.
     */
-  var suggestedDocumentStyleChanges: js.UndefOr[StringDictionary[SchemaSuggestedDocumentStyle]] = js.native
+  var suggestedDocumentStyleChanges: js.UndefOr[StringDictionary[SchemaSuggestedDocumentStyle]] = js.undefined
   
   /**
     * The suggested changes to the named styles of the document, keyed by
     * suggestion ID.
     */
-  var suggestedNamedStylesChanges: js.UndefOr[StringDictionary[SchemaSuggestedNamedStyles]] = js.native
+  var suggestedNamedStylesChanges: js.UndefOr[StringDictionary[SchemaSuggestedNamedStyles]] = js.undefined
   
   /**
     * The suggestions view mode applied to the document.  Note: When editing a
     * document, changes must be based on a document with SUGGESTIONS_INLINE.
     */
-  var suggestionsViewMode: js.UndefOr[String] = js.native
+  var suggestionsViewMode: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the document.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaDocument {
   

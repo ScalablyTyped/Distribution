@@ -2,48 +2,46 @@ package typings.dirWalkerGen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ExcludeExtensions extends StObject {
     
     /**
       * List of extensions to ignore
       * @default []
       */
-    var excludeExtensions: js.UndefOr[js.Array[String]] = js.native
+    var excludeExtensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Exclude all folder that ends with any of the given strings
       * @default []
       */
-    var excludeFolders: js.UndefOr[js.Array[String]] = js.native
+    var excludeFolders: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * (Required) List of starting folders
       */
-    var folders: js.Array[String] = js.native
+    var folders: js.Array[String]
     
     /**
       * Ignores directories that start with a dot (e.g. .git, .vscode, etc)
       * @default {false}
       */
-    var ignoreDotDir: js.UndefOr[Boolean] = js.native
+    var ignoreDotDir: js.UndefOr[Boolean] = js.undefined
     
     /**
       * List of extensions to scan (all other extensions are ignored)
       * @default []
       */
-    var includeExtensions: js.UndefOr[js.Array[String]] = js.native
+    var includeExtensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Does not show console warning when directories do not exist
       * @default {false}
       */
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object ExcludeExtensions {
     

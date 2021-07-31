@@ -5,7 +5,6 @@ import typings.googleAppsScript.GoogleAppsScript.Drive.File
 import typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Sheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Bulk Uploads

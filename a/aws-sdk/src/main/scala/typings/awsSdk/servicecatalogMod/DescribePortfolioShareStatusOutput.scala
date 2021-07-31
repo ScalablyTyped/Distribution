@@ -2,36 +2,34 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePortfolioShareStatusOutput extends StObject {
   
   /**
     * Organization node identifier. It can be either account id, organizational unit id or organization id.
     */
-  var OrganizationNodeValue: js.UndefOr[typings.awsSdk.servicecatalogMod.OrganizationNodeValue] = js.native
+  var OrganizationNodeValue: js.UndefOr[typings.awsSdk.servicecatalogMod.OrganizationNodeValue] = js.undefined
   
   /**
     * The portfolio identifier.
     */
-  var PortfolioId: js.UndefOr[Id] = js.native
+  var PortfolioId: js.UndefOr[Id] = js.undefined
   
   /**
     * The token for the portfolio share operation. For example, share-6v24abcdefghi.
     */
-  var PortfolioShareToken: js.UndefOr[Id] = js.native
+  var PortfolioShareToken: js.UndefOr[Id] = js.undefined
   
   /**
     * Information about the portfolio share operation.
     */
-  var ShareDetails: js.UndefOr[typings.awsSdk.servicecatalogMod.ShareDetails] = js.native
+  var ShareDetails: js.UndefOr[typings.awsSdk.servicecatalogMod.ShareDetails] = js.undefined
   
   /**
     * Status of the portfolio share operation.
     */
-  var Status: js.UndefOr[ShareStatus] = js.native
+  var Status: js.UndefOr[ShareStatus] = js.undefined
 }
 object DescribePortfolioShareStatusOutput {
   

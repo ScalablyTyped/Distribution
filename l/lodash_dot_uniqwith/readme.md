@@ -11,8 +11,8 @@ The lodash method `_.uniqWith` exported as a module.
 | Full name          | lodash.uniqwith |
 | Keywords           | lodash-modularized, uniqwith |
 | # releases         | 0 |
-| # dependents       | 36 |
-| # downloads        | 1112451 |
+| # dependents       | 37 |
+| # downloads        | 1628753 |
 | # stars            | 0 |
 
 ## Links

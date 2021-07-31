@@ -7,7 +7,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.dayjs.esmMod.PluginFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object durationMod extends Shortcut {
@@ -18,11 +17,12 @@ object durationMod extends Shortcut {
   
   @js.native
   trait Duration
-    extends Instantiable1[/* input */ DurationInputType, Duration]
+    extends StObject
+       with Instantiable1[/* input */ DurationInputType, Duration]
        with Instantiable2[/* input */ DurationInputType, /* unit */ String, Duration]
        with Instantiable3[
           /* input */ DurationInputType, 
-          js.UndefOr[/* unit */ String], 
+          (/* unit */ String) | (/* unit */ Unit), 
           /* locale */ String, 
           Duration
         ] {
@@ -91,12 +91,11 @@ object durationMod extends Shortcut {
   /* augmented module */
   object dayjsEsmAugmentingMod {
     
-    @js.native
     trait Dayjs extends StObject {
       
-      def add(value: Duration): Dayjs = js.native
+      def add(value: Duration): Dayjs
       
-      def subtract(value: Duration): Dayjs = js.native
+      def subtract(value: Duration): Dayjs
     }
     object Dayjs {
       

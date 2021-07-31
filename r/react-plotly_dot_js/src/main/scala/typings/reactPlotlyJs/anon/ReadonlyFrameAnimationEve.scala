@@ -3,18 +3,16 @@ package typings.reactPlotlyJs.anon
 import typings.plotlyJs.anon.Frame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<plotly.js.plotly.js.FrameAnimationEvent> */
-@js.native
 trait ReadonlyFrameAnimationEve extends StObject {
   
-  val animation: Frame = js.native
+  val animation: Frame
   
-  val frame: typings.plotlyJs.mod.Frame = js.native
+  val frame: typings.plotlyJs.mod.Frame
   
-  val name: String = js.native
+  val name: String
 }
 object ReadonlyFrameAnimationEve {
   

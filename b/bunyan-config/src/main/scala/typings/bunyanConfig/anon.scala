@@ -2,17 +2,15 @@ package typings.bunyanConfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Host extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var port: Double = js.native
+    var port: Double
   }
   object Host {
     

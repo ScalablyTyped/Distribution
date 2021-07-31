@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouderrorreporting/v1beta1", "clouderrorreporting_v1beta1.Resource$Projects$Groupstats")
@@ -41,7 +40,7 @@ class ResourceProjectsGroupstats protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListGroupStatsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListGroupStatsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListGroupStatsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListGroupStatsResponse] = js.native
   def list(params: ParamsResourceProjectsGroupstatsList): GaxiosPromise[SchemaListGroupStatsResponse] = js.native
   def list(
     params: ParamsResourceProjectsGroupstatsList,

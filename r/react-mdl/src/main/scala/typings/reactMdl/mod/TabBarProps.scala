@@ -5,25 +5,24 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabBarProps
-  extends MDLHTMLAttributes
+  extends StObject
+     with MDLHTMLAttributes
      with MDLDOMAttributes[TabBar] {
   
-  var activeTab: js.UndefOr[Double] = js.native
+  var activeTab: js.UndefOr[Double] = js.undefined
   
-  var cssPrefix: String = js.native
+  var cssPrefix: String
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* tabId */ Double, _]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* tabId */ Double, js.Any]] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[TabBar]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[TabBar]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object TabBarProps {
   
@@ -52,7 +51,7 @@ object TabBarProps {
     def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setOnChange(value: /* tabId */ Double => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    def setOnChange(value: /* tabId */ Double => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)

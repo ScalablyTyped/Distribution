@@ -2,13 +2,11 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The Gradient object.
   */
-@js.native
 trait Gradient extends StObject {
   
   /** 
@@ -16,17 +14,17 @@ trait Gradient extends StObject {
     * 
     * @return true if they are equal
     */
-  def equals(gradient: Gradient): Boolean = js.native
+  def equals(gradient: Gradient): Boolean
   
   /** 
     * Specifies whether the gradient is radial or linear.
     */
-  var radial: Boolean = js.native
+  var radial: Boolean
   
   /** 
     * The gradient stops on the gradient ramp.
     */
-  var stops: js.Array[GradientStop] = js.native
+  var stops: js.Array[GradientStop]
 }
 object Gradient {
   

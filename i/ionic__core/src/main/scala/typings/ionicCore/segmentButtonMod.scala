@@ -1,12 +1,14 @@
 package typings.ionicCore
 
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
+import typings.ionicCore.ionicCoreStrings.button
+import typings.ionicCore.ionicCoreStrings.reset
+import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.segmentSegmentInterfaceMod.SegmentButtonLayout
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentButtonMod {
@@ -14,13 +16,17 @@ object segmentButtonMod {
   @JSImport("@ionic/core/dist/types/components/segment-button/segment-button", "SegmentButton")
   @js.native
   class SegmentButton ()
-    extends ComponentInterface
+    extends StObject
+       with ComponentInterface
        with ButtonInterface {
     
     var checked: Boolean = js.native
     
     @JSName("connectedCallback")
     def connectedCallback_MSegmentButton(): Unit = js.native
+    
+    /* CompleteClass */
+    var disabled: Boolean = js.native
     
     @JSName("disconnectedCallback")
     def disconnectedCallback_MSegmentButton(): Unit = js.native
@@ -40,6 +46,9 @@ object segmentButtonMod {
     def render_MSegmentButton(): js.Any = js.native
     
     var segmentEl: js.Any = js.native
+    
+    /* CompleteClass */
+    var `type`: submit | reset | button = js.native
     
     var updateState: js.Any = js.native
     

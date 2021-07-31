@@ -2,68 +2,76 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chartScrollbarMod {
   
   @JSImport("amcharts/ChartScrollbar", JSImport.Default)
   @js.native
-  class default () extends ChartScrollbar
-  
-  @js.native
-  trait ChartScrollbar extends StObject {
+  class default ()
+    extends StObject
+       with ChartScrollbar {
     
     /**
       * Specifies whether number of gridCount is specified automatically, acoarding to the axis size.
       */
+    /* CompleteClass */
     var autoGridCount: Boolean = js.native
     
     /**
       * Background opacity.
       * @default 1
       */
+    /* CompleteClass */
     var backgroundAlpha: Double = js.native
     
     /**
       * Background color of the scrollbar.
       * @default #D4D4D4
       */
+    /* CompleteClass */
     var backgroundColor: String = js.native
     
     /**
       * Read-only. Category axis of the scrollbar.
       */
+    /* CompleteClass */
     var categoryAxis: typings.amcharts.categoryAxisMod.default = js.native
     
     /**
       * Text color. Will use chart's color if not set.
       */
+    /* CompleteClass */
     var color: String = js.native
     
     /**
       * Specifies which graph will be displayed in the scrollbar. Only Serial chart's scrollbar can display a graph.
       */
+    /* CompleteClass */
     var graph: typings.amcharts.amGraphMod.default = js.native
     
     /**
       * Graph fill opacity. Value range is 0 - 1.  0.1
       */
+    /* CompleteClass */
     var graphFillAlpha: Double = js.native
     
     /**
       * Graph fill color. #000000
       */
+    /* CompleteClass */
     var graphFillColor: String = js.native
     
     /**
       * Graph line opacity. Value range is 0 - 1.
       */
+    /* CompleteClass */
     var graphLineAlpha: Double = js.native
     
     /**
       * Graph line color. #000000
       */
+    /* CompleteClass */
     var graphLineColor: String = js.native
     
     /**
@@ -71,82 +79,234 @@ object chartScrollbarMod {
       * however in case of "candlestick" or "ohlc" you might want to show line graph in the scrollbar.
       * Possible values are: "line", "column", "step", "smoothedLine", "candlestick", "ohlc".
       */
+    /* CompleteClass */
     var graphType: String = js.native
     
     /**
       * Grid opacity. Value range is 0 - 1. 0.7
       */
+    /* CompleteClass */
     var gridAlpha: Double = js.native
     
     /**
       * Grid color. #FFFFFF
       */
+    /* CompleteClass */
     var gridColor: String = js.native
     
     /**
       * The number of grid lines.
       */
+    /* CompleteClass */
     var gridCount: Double = js.native
     
     /**
       * Specifies whether resize grips are hidden when mouse is away from the scrollbar.
       */
+    /* CompleteClass */
     var hideResizeGrips: Boolean = js.native
     
     /**
       * Specifies whether scrollbar has a resize feature.
       * @default true
       */
+    /* CompleteClass */
     var resizeEnabled: Boolean = js.native
     
     /**
       * Duration of scrolling, when the user clicks on scrollbar's background, in seconds.
       * @default 2
       */
+    /* CompleteClass */
     var scrollDuration: Double = js.native
     
     /**
       * Height (width, if chart is rotated) of a scrollbar.
       * @default 20
       */
+    /* CompleteClass */
     var scrollbarHeight: Double = js.native
     
     /**
       * Selected backround opacity.
       * @default 1
       */
+    /* CompleteClass */
     var selectedBackgroundAlpha: Double = js.native
     
     /**
       * Selected background color. #EFEFEF
       */
+    /* CompleteClass */
     var selectedBackgroundColor: String = js.native
     
     /**
       * Selected graph's fill opacity. Value range is 0 - 1. 0.5
       */
+    /* CompleteClass */
     var selectedGraphFillAlpha: Double = js.native
     
     /**
       * Selected graph's fill color. #000000
       */
+    /* CompleteClass */
     var selectedGraphFillColor: String = js.native
     
     /**
       * Selected graph's line opacity. Value range is 0 - 1.
       */
+    /* CompleteClass */
     var selectedGraphLineAlpha: Double = js.native
     
     /**
       * Selected graph's line color. #000000
       */
+    /* CompleteClass */
     var selectedGraphLineColor: String = js.native
     
     /**
       * Specifies if the chart should be updated while dragging/resizing the scrollbar or only at the moment
       * when user releases mouse button.
       */
+    /* CompleteClass */
     var updateOnReleaseOnly: Boolean = js.native
+  }
+  
+  trait ChartScrollbar extends StObject {
+    
+    /**
+      * Specifies whether number of gridCount is specified automatically, acoarding to the axis size.
+      */
+    var autoGridCount: Boolean
+    
+    /**
+      * Background opacity.
+      * @default 1
+      */
+    var backgroundAlpha: Double
+    
+    /**
+      * Background color of the scrollbar.
+      * @default #D4D4D4
+      */
+    var backgroundColor: String
+    
+    /**
+      * Read-only. Category axis of the scrollbar.
+      */
+    var categoryAxis: typings.amcharts.categoryAxisMod.default
+    
+    /**
+      * Text color. Will use chart's color if not set.
+      */
+    var color: String
+    
+    /**
+      * Specifies which graph will be displayed in the scrollbar. Only Serial chart's scrollbar can display a graph.
+      */
+    var graph: typings.amcharts.amGraphMod.default
+    
+    /**
+      * Graph fill opacity. Value range is 0 - 1.  0.1
+      */
+    var graphFillAlpha: Double
+    
+    /**
+      * Graph fill color. #000000
+      */
+    var graphFillColor: String
+    
+    /**
+      * Graph line opacity. Value range is 0 - 1.
+      */
+    var graphLineAlpha: Double
+    
+    /**
+      * Graph line color. #000000
+      */
+    var graphLineColor: String
+    
+    /**
+      * By default the graph type is the same as the original graph's type,
+      * however in case of "candlestick" or "ohlc" you might want to show line graph in the scrollbar.
+      * Possible values are: "line", "column", "step", "smoothedLine", "candlestick", "ohlc".
+      */
+    var graphType: String
+    
+    /**
+      * Grid opacity. Value range is 0 - 1. 0.7
+      */
+    var gridAlpha: Double
+    
+    /**
+      * Grid color. #FFFFFF
+      */
+    var gridColor: String
+    
+    /**
+      * The number of grid lines.
+      */
+    var gridCount: Double
+    
+    /**
+      * Specifies whether resize grips are hidden when mouse is away from the scrollbar.
+      */
+    var hideResizeGrips: Boolean
+    
+    /**
+      * Specifies whether scrollbar has a resize feature.
+      * @default true
+      */
+    var resizeEnabled: Boolean
+    
+    /**
+      * Duration of scrolling, when the user clicks on scrollbar's background, in seconds.
+      * @default 2
+      */
+    var scrollDuration: Double
+    
+    /**
+      * Height (width, if chart is rotated) of a scrollbar.
+      * @default 20
+      */
+    var scrollbarHeight: Double
+    
+    /**
+      * Selected backround opacity.
+      * @default 1
+      */
+    var selectedBackgroundAlpha: Double
+    
+    /**
+      * Selected background color. #EFEFEF
+      */
+    var selectedBackgroundColor: String
+    
+    /**
+      * Selected graph's fill opacity. Value range is 0 - 1. 0.5
+      */
+    var selectedGraphFillAlpha: Double
+    
+    /**
+      * Selected graph's fill color. #000000
+      */
+    var selectedGraphFillColor: String
+    
+    /**
+      * Selected graph's line opacity. Value range is 0 - 1.
+      */
+    var selectedGraphLineAlpha: Double
+    
+    /**
+      * Selected graph's line color. #000000
+      */
+    var selectedGraphLineColor: String
+    
+    /**
+      * Specifies if the chart should be updated while dragging/resizing the scrollbar or only at the moment
+      * when user releases mouse button.
+      */
+    var updateOnReleaseOnly: Boolean
   }
   object ChartScrollbar {
     

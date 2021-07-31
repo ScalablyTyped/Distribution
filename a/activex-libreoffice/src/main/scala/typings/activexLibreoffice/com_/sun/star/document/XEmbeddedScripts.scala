@@ -3,14 +3,12 @@ package typings.activexLibreoffice.com_.sun.star.document
 import typings.activexLibreoffice.com_.sun.star.script.XStorageBasedLibraryContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is supported by OfficeDocuments which allow to embed scripts
   * @since OOo 2.4
   */
-@js.native
 trait XEmbeddedScripts extends StObject {
   
   /**
@@ -20,13 +18,13 @@ trait XEmbeddedScripts extends StObject {
     * location in relation to the trusted location, and the like.
     * @see MacroExecMode
     */
-  var AllowMacroExecution: Boolean = js.native
+  var AllowMacroExecution: Boolean
   
   /** is the container of `StarBasic` macro libraries contained in the document */
-  var BasicLibraries: XStorageBasedLibraryContainer = js.native
+  var BasicLibraries: XStorageBasedLibraryContainer
   
   /** is the container of dialogs libraries contained in the document */
-  var DialogLibraries: XStorageBasedLibraryContainer = js.native
+  var DialogLibraries: XStorageBasedLibraryContainer
 }
 object XEmbeddedScripts {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateEmbeddedObjectPositionResponse extends StObject {
   
   /** The new position of the embedded object. */
-  var position: js.UndefOr[EmbeddedObjectPosition] = js.native
+  var position: js.UndefOr[EmbeddedObjectPosition] = js.undefined
 }
 object UpdateEmbeddedObjectPositionResponse {
   

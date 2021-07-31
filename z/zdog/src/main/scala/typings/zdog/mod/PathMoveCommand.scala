@@ -2,14 +2,14 @@ package typings.zdog.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PathMoveCommand extends PathCommand {
+trait PathMoveCommand
+  extends StObject
+     with PathCommand {
   
   /** @see {@link https://zzz.dog/shapes#shape-move Zdog Shape API} */
-  var move: VectorOptions = js.native
+  var move: VectorOptions
 }
 object PathMoveCommand {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.dlmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LifecyclePolicySummary extends StObject {
   
   /**
     * The description of the lifecycle policy.
     */
-  var Description: js.UndefOr[PolicyDescription] = js.native
+  var Description: js.UndefOr[PolicyDescription] = js.undefined
   
   /**
     * The identifier of the lifecycle policy.
     */
-  var PolicyId: js.UndefOr[typings.awsSdk.dlmMod.PolicyId] = js.native
+  var PolicyId: js.UndefOr[typings.awsSdk.dlmMod.PolicyId] = js.undefined
   
   /**
     * The type of policy. EBS_SNAPSHOT_MANAGEMENT indicates that the policy manages the lifecycle of Amazon EBS snapshots. IMAGE_MANAGEMENT indicates that the policy manages the lifecycle of EBS-backed AMIs.
     */
-  var PolicyType: js.UndefOr[PolicyTypeValues] = js.native
+  var PolicyType: js.UndefOr[PolicyTypeValues] = js.undefined
   
   /**
     * The activation state of the lifecycle policy.
     */
-  var State: js.UndefOr[GettablePolicyStateValues] = js.native
+  var State: js.UndefOr[GettablePolicyStateValues] = js.undefined
   
   /**
     * The tags.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object LifecyclePolicySummary {
   

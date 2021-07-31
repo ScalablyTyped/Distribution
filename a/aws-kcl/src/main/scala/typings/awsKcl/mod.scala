@@ -4,81 +4,46 @@ import typings.node.fsMod.ReadStream
 import typings.node.fsMod.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("aws-kcl", JSImport.Namespace)
-  @js.native
-  def apply(recordProcessor: RecordProcessor): KCLManager = js.native
-  @JSImport("aws-kcl", JSImport.Namespace)
-  @js.native
-  def apply(
-    recordProcessor: RecordProcessor,
-    inputFile: js.UndefOr[scala.Nothing],
-    outputFile: js.UndefOr[scala.Nothing],
-    errorFile: WriteStream
-  ): KCLManager = js.native
-  @JSImport("aws-kcl", JSImport.Namespace)
-  @js.native
-  def apply(recordProcessor: RecordProcessor, inputFile: js.UndefOr[scala.Nothing], outputFile: WriteStream): KCLManager = js.native
-  @JSImport("aws-kcl", JSImport.Namespace)
-  @js.native
-  def apply(
-    recordProcessor: RecordProcessor,
-    inputFile: js.UndefOr[scala.Nothing],
-    outputFile: WriteStream,
-    errorFile: WriteStream
-  ): KCLManager = js.native
-  @JSImport("aws-kcl", JSImport.Namespace)
-  @js.native
-  def apply(recordProcessor: RecordProcessor, inputFile: ReadStream): KCLManager = js.native
-  @JSImport("aws-kcl", JSImport.Namespace)
-  @js.native
-  def apply(
-    recordProcessor: RecordProcessor,
-    inputFile: ReadStream,
-    outputFile: js.UndefOr[scala.Nothing],
-    errorFile: WriteStream
-  ): KCLManager = js.native
-  @JSImport("aws-kcl", JSImport.Namespace)
-  @js.native
-  def apply(recordProcessor: RecordProcessor, inputFile: ReadStream, outputFile: WriteStream): KCLManager = js.native
-  @JSImport("aws-kcl", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(recordProcessor: RecordProcessor): KCLManager = ^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any]).asInstanceOf[KCLManager]
+  @scala.inline
+  def apply(recordProcessor: RecordProcessor, inputFile: Unit, outputFile: Unit, errorFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any], errorFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
+  @scala.inline
+  def apply(recordProcessor: RecordProcessor, inputFile: Unit, outputFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
+  @scala.inline
+  def apply(recordProcessor: RecordProcessor, inputFile: Unit, outputFile: WriteStream, errorFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any], errorFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
+  @scala.inline
+  def apply(recordProcessor: RecordProcessor, inputFile: ReadStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
+  @scala.inline
+  def apply(recordProcessor: RecordProcessor, inputFile: ReadStream, outputFile: Unit, errorFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any], errorFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
+  @scala.inline
+  def apply(recordProcessor: RecordProcessor, inputFile: ReadStream, outputFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
+  @scala.inline
   def apply(
     recordProcessor: RecordProcessor,
     inputFile: ReadStream,
     outputFile: WriteStream,
     errorFile: WriteStream
-  ): KCLManager = js.native
+  ): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any], errorFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
+  
+  @JSImport("aws-kcl", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("aws-kcl", "KCLManager")
   @js.native
   class KCLManager protected () extends StObject {
     def this(kclManagerInput: KCLInput) = this()
     def this(kclManagerInput: KCLInput, inputFile: ReadStream) = this()
-    def this(kclManagerInput: KCLInput, inputFile: js.UndefOr[scala.Nothing], outputFile: WriteStream) = this()
+    def this(kclManagerInput: KCLInput, inputFile: Unit, outputFile: WriteStream) = this()
     def this(kclManagerInput: KCLInput, inputFile: ReadStream, outputFile: WriteStream) = this()
-    def this(
-      kclManagerInput: KCLInput,
-      inputFile: js.UndefOr[scala.Nothing],
-      outputFile: js.UndefOr[scala.Nothing],
-      errorFile: WriteStream
-    ) = this()
-    def this(
-      kclManagerInput: KCLInput,
-      inputFile: js.UndefOr[scala.Nothing],
-      outputFile: WriteStream,
-      errorFile: WriteStream
-    ) = this()
-    def this(
-      kclManagerInput: KCLInput,
-      inputFile: ReadStream,
-      outputFile: js.UndefOr[scala.Nothing],
-      errorFile: WriteStream
-    ) = this()
+    def this(kclManagerInput: KCLInput, inputFile: Unit, outputFile: Unit, errorFile: WriteStream) = this()
+    def this(kclManagerInput: KCLInput, inputFile: Unit, outputFile: WriteStream, errorFile: WriteStream) = this()
+    def this(kclManagerInput: KCLInput, inputFile: ReadStream, outputFile: Unit, errorFile: WriteStream) = this()
     def this(kclManagerInput: KCLInput, inputFile: ReadStream, outputFile: WriteStream, errorFile: WriteStream) = this()
     
     def checkpoint(sequenceNumber: String): Unit = js.native
@@ -90,10 +55,9 @@ object mod {
   
   type CheckpointCallback = js.Function2[/* error */ js.UndefOr[String], /* checkpointedSequenceNumber */ String, Unit]
   
-  @js.native
   trait CheckpointInput extends StObject {
     
-    var checkpointer: Checkpointer = js.native
+    var checkpointer: Checkpointer
   }
   object CheckpointInput {
     
@@ -129,14 +93,13 @@ object mod {
     def checkpoint(sequenceNumber: String, callback: CheckpointCallback): Unit = js.native
   }
   
-  @js.native
   trait InitializeInput extends StObject {
     
-    var sequenceNumber: js.UndefOr[String] = js.native
+    var sequenceNumber: js.UndefOr[String] = js.undefined
     
-    var shardId: String = js.native
+    var shardId: String
     
-    var subSequenceNumber: js.UndefOr[Double] = js.native
+    var subSequenceNumber: js.UndefOr[Double] = js.undefined
   }
   object InitializeInput {
     
@@ -166,12 +129,11 @@ object mod {
     }
   }
   
-  @js.native
   trait KCLInput extends StObject {
     
-    var recordProcessor: RecordProcessor = js.native
+    var recordProcessor: RecordProcessor
     
-    var version: js.Symbol = js.native
+    var version: js.Symbol
   }
   object KCLInput {
     
@@ -192,15 +154,15 @@ object mod {
     }
   }
   
-  @js.native
   trait LeaseLossInput extends StObject
   
-  @js.native
-  trait ProcessRecordsInput extends CheckpointInput {
+  trait ProcessRecordsInput
+    extends StObject
+       with CheckpointInput {
     
-    var millisBehindLatest: js.UndefOr[Double] = js.native
+    var millisBehindLatest: js.UndefOr[Double] = js.undefined
     
-    var records: js.Array[Record] = js.native
+    var records: js.Array[Record]
   }
   object ProcessRecordsInput {
     
@@ -227,14 +189,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Record extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var partitionKey: String = js.native
+    var partitionKey: String
     
-    var sequenceNumber: String = js.native
+    var sequenceNumber: String
   }
   object Record {
     
@@ -259,7 +220,6 @@ object mod {
   }
   
   // tslint:disable-line:no-empty-interface
-  @js.native
   trait RecordProcessor extends StObject {
     
     /**
@@ -270,7 +230,7 @@ object mod {
       * @param completeCallback - The callback that must be invoked
       *          once the initialization operation is complete.
       */
-    def initialize(initializeInput: InitializeInput, completeCallback: Callback): Unit = js.native
+    def initialize(initializeInput: InitializeInput, completeCallback: Callback): Unit
     
     /**
       * Called by the KCL to indicate that this record processor should shut down.
@@ -282,7 +242,7 @@ object mod {
       * @param completeCallback  The callback must be invoked once lease
       *             lost operations are completed.
       */
-    def leaseLost(leaseLostInput: LeaseLossInput, completeCallback: Callback): Unit = js.native
+    def leaseLost(leaseLostInput: LeaseLossInput, completeCallback: Callback): Unit
     
     /**
       * Called by KCL with a list of records to be processed and checkpointed.
@@ -300,7 +260,7 @@ object mod {
       *             once all records are processed and checkpoint (optional) is
       *             complete.
       */
-    def processRecords(processRecordsInput: ProcessRecordsInput, completeCallback: Callback): Unit = js.native
+    def processRecords(processRecordsInput: ProcessRecordsInput, completeCallback: Callback): Unit
     
     /**
       * Called by the KCL to indicate that this record processor should shutdown.
@@ -313,7 +273,7 @@ object mod {
       * @param completeCallback      The callback must be invoked once shard
       *               ended operations are completed.
       */
-    def shardEnded(shardEndedInput: ShardEndedInput, completeCallback: Callback): Unit = js.native
+    def shardEnded(shardEndedInput: ShardEndedInput, completeCallback: Callback): Unit
   }
   object RecordProcessor {
     

@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnenoteOperationError extends StObject {
   
   // The error code.
-  var code: js.UndefOr[NullableOption[String]] = js.native
+  var code: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The error message.
-  var message: js.UndefOr[NullableOption[String]] = js.native
+  var message: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object OnenoteOperationError {
   

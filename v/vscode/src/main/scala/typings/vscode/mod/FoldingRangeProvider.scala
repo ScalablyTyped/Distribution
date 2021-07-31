@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FoldingRangeProvider extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait FoldingRangeProvider extends StObject {
     * @param context Additional context information (for future use)
     * @param token A cancellation token.
     */
-  def provideFoldingRanges(document: TextDocument, context: FoldingContext, token: CancellationToken): ProviderResult[js.Array[FoldingRange]] = js.native
+  def provideFoldingRanges(document: TextDocument, context: FoldingContext, token: CancellationToken): ProviderResult[js.Array[FoldingRange]]
 }
 object FoldingRangeProvider {
   

@@ -2,18 +2,16 @@ package typings.angularFormly.AngularFormly
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * see http://docs.angular-formly.com/docs/field-configuration-object#validators-object
   */
-@js.native
 trait IValidator extends StObject {
   
-  var expression: String | IExpressionFunction = js.native
+  var expression: String | IExpressionFunction
   
-  var message: js.UndefOr[String | IExpressionFunction] = js.native
+  var message: js.UndefOr[String | IExpressionFunction] = js.undefined
 }
 object IValidator {
   

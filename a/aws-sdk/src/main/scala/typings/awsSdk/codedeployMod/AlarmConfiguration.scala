@@ -2,26 +2,24 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlarmConfiguration extends StObject {
   
   /**
     * A list of alarms configured for the deployment group. A maximum of 10 alarms can be added to a deployment group.
     */
-  var alarms: js.UndefOr[AlarmList] = js.native
+  var alarms: js.UndefOr[AlarmList] = js.undefined
   
   /**
     * Indicates whether the alarm configuration is enabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether a deployment should continue if information about the current state of alarms cannot be retrieved from Amazon CloudWatch. The default value is false.    true: The deployment proceeds even if alarm status information can't be retrieved from Amazon CloudWatch.    false: The deployment stops if alarm status information can't be retrieved from Amazon CloudWatch.  
     */
-  var ignorePollAlarmFailure: js.UndefOr[Boolean] = js.native
+  var ignorePollAlarmFailure: js.UndefOr[Boolean] = js.undefined
 }
 object AlarmConfiguration {
   

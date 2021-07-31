@@ -2,16 +2,14 @@ package typings.deezerSdk.DeezerSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://developers.deezer.com/sdk/javascript/loadtracks | Load tracks to a player}
   */
-@js.native
 trait PlayQueue extends StObject {
   
-  val tracks: js.Array[Track] = js.native
+  val tracks: js.Array[Track]
 }
 object PlayQueue {
   

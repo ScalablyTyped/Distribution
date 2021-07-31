@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("DashboardSelectionMode")
 @js.native
 class DashboardSelectionMode ()
-  extends typings.devexpressWeb.DashboardSelectionMode
+  extends StObject
+     with typings.devexpressWeb.DashboardSelectionMode
 object DashboardSelectionMode {
   
   @JSGlobal("DashboardSelectionMode")

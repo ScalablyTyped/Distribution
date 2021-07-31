@@ -2,15 +2,13 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateScalingParametersRequest extends StObject {
   
-  var DomainName: typings.awsSdk.cloudsearchMod.DomainName = js.native
+  var DomainName: typings.awsSdk.cloudsearchMod.DomainName
   
-  var ScalingParameters: typings.awsSdk.cloudsearchMod.ScalingParameters = js.native
+  var ScalingParameters: typings.awsSdk.cloudsearchMod.ScalingParameters
 }
 object UpdateScalingParametersRequest {
   

@@ -7,7 +7,6 @@ import typings.tslint.exclusionDescriptorsMod.ExclusionDescriptor
 import typings.tslint.exclusionMod.Exclusion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockExclusionMod {
@@ -20,10 +19,11 @@ object blockExclusionMod {
     val visibilities: Set[Visibility] = js.native
   }
   
-  @js.native
-  trait IBlockExclusionDescriptor extends ExclusionDescriptor {
+  trait IBlockExclusionDescriptor
+    extends StObject
+       with ExclusionDescriptor {
     
-    var visibilities: js.UndefOr[js.Array[Visibility]] = js.native
+    var visibilities: js.UndefOr[js.Array[Visibility]] = js.undefined
   }
   object IBlockExclusionDescriptor {
     

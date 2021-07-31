@@ -17,99 +17,97 @@ import typings.std.Uint8Array
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmscriptenModule extends StObject {
   
-  var FAST_MEMORY: Double = js.native
+  var FAST_MEMORY: Double
   
-  var FHEAP: Float64Array = js.native
+  var FHEAP: Float64Array
   
   // USE_TYPED_ARRAYS == 1
-  var HEAP: Int32Array = js.native
+  var HEAP: Int32Array
   
-  var HEAP16: Int16Array = js.native
+  var HEAP16: Int16Array
   
-  var HEAP32: Int32Array = js.native
+  var HEAP32: Int32Array
   
   // USE_TYPED_ARRAYS == 2
-  var HEAP8: Int8Array = js.native
+  var HEAP8: Int8Array
   
-  var HEAPF32: Float32Array = js.native
+  var HEAPF32: Float32Array
   
-  var HEAPF64: Float64Array = js.native
+  var HEAPF64: Float64Array
   
-  var HEAPU16: Uint16Array = js.native
+  var HEAPU16: Uint16Array
   
-  var HEAPU32: Uint32Array = js.native
+  var HEAPU32: Uint32Array
   
-  var HEAPU8: Uint8Array = js.native
+  var HEAPU8: Uint8Array
   
-  var IHEAP: Int32Array = js.native
+  var IHEAP: Int32Array
   
-  var TOTAL_MEMORY: Double = js.native
+  var TOTAL_MEMORY: Double
   
-  var TOTAL_STACK: Double = js.native
+  var TOTAL_STACK: Double
   
-  def _free(ptr: Double): Unit = js.native
+  def _free(ptr: Double): Unit
   
-  def _malloc(size: Double): Double = js.native
+  def _malloc(size: Double): Double
   
-  def addOnExit(cb: js.Function0[_]): Unit = js.native
+  def addOnExit(cb: js.Function0[js.Any]): Unit
   
-  def addOnInit(cb: js.Function0[_]): Unit = js.native
+  def addOnInit(cb: js.Function0[js.Any]): Unit
   
-  def addOnPostRun(cb: js.Function0[_]): Unit = js.native
+  def addOnPostRun(cb: js.Function0[js.Any]): Unit
   
-  def addOnPreMain(cb: js.Function0[_]): Unit = js.native
+  def addOnPreMain(cb: js.Function0[js.Any]): Unit
   
-  def addOnPreRun(cb: js.Function0[_]): Unit = js.native
+  def addOnPreRun(cb: js.Function0[js.Any]): Unit
   
-  var arguments: js.Array[String] = js.native
+  var arguments: js.Array[String]
   
-  def destroy(`object`: js.Object): Unit = js.native
+  def destroy(`object`: js.Object): Unit
   
-  var environment: EnvironmentType = js.native
+  var environment: EnvironmentType
   
-  var filePackagePrefixURL: String = js.native
+  var filePackagePrefixURL: String
   
-  def getPreloadedPackage(remotePackageName: String, remotePackageSize: Double): ArrayBuffer = js.native
+  def getPreloadedPackage(remotePackageName: String, remotePackageSize: Double): ArrayBuffer
   
-  def instantiateWasm(imports: WebAssemblyImports, successCallback: js.Function1[/* module */ Module, Unit]): WebAssemblyExports = js.native
+  def instantiateWasm(imports: WebAssemblyImports, successCallback: js.Function1[/* module */ Module, Unit]): WebAssemblyExports
   
-  def locateFile(url: String, scriptDirectory: String): String = js.native
+  def locateFile(url: String, scriptDirectory: String): String
   
-  var logReadFiles: Boolean = js.native
+  var logReadFiles: Boolean
   
-  var noExitRuntime: Boolean = js.native
+  var noExitRuntime: Boolean
   
-  var noInitialRun: Boolean = js.native
+  var noInitialRun: Boolean
   
-  def onAbort(what: js.Any): Unit = js.native
+  def onAbort(what: js.Any): Unit
   
-  def onCustomMessage(event: MessageEvent[_]): Unit = js.native
+  def onCustomMessage(event: MessageEvent[js.Any]): Unit
   
-  def onRuntimeInitialized(): Unit = js.native
+  def onRuntimeInitialized(): Unit
   
-  var postRun: js.Array[js.Function0[Unit]] = js.native
+  var postRun: js.Array[js.Function0[Unit]]
   
-  var preInit: js.Array[js.Function0[Unit]] = js.native
+  var preInit: js.Array[js.Function0[Unit]]
   
-  var preRun: js.Array[js.Function0[Unit]] = js.native
+  var preRun: js.Array[js.Function0[Unit]]
   
-  var preinitializedWebGLContext: WebGLRenderingContext = js.native
+  var preinitializedWebGLContext: WebGLRenderingContext
   
-  var preloadedAudios: js.Any = js.native
+  var preloadedAudios: js.Any
   
-  var preloadedImages: js.Any = js.native
+  var preloadedImages: js.Any
   
-  def print(str: String): Unit = js.native
+  def print(str: String): Unit
   
-  def printErr(str: String): Unit = js.native
+  def printErr(str: String): Unit
   
-  var wasmBinary: ArrayBuffer = js.native
+  var wasmBinary: ArrayBuffer
 }
 object EmscriptenModule {
   
@@ -131,11 +129,11 @@ object EmscriptenModule {
     TOTAL_STACK: Double,
     _free: Double => Unit,
     _malloc: Double => Double,
-    addOnExit: js.Function0[_] => Unit,
-    addOnInit: js.Function0[_] => Unit,
-    addOnPostRun: js.Function0[_] => Unit,
-    addOnPreMain: js.Function0[_] => Unit,
-    addOnPreRun: js.Function0[_] => Unit,
+    addOnExit: js.Function0[js.Any] => Unit,
+    addOnInit: js.Function0[js.Any] => Unit,
+    addOnPostRun: js.Function0[js.Any] => Unit,
+    addOnPreMain: js.Function0[js.Any] => Unit,
+    addOnPreRun: js.Function0[js.Any] => Unit,
     arguments: js.Array[String],
     destroy: js.Object => Unit,
     environment: EnvironmentType,
@@ -147,7 +145,7 @@ object EmscriptenModule {
     noExitRuntime: Boolean,
     noInitialRun: Boolean,
     onAbort: js.Any => Unit,
-    onCustomMessage: MessageEvent[_] => Unit,
+    onCustomMessage: MessageEvent[js.Any] => Unit,
     onRuntimeInitialized: () => Unit,
     postRun: js.Array[js.Function0[Unit]],
     preInit: js.Array[js.Function0[Unit]],
@@ -167,19 +165,19 @@ object EmscriptenModule {
   implicit class EmscriptenModuleMutableBuilder[Self <: EmscriptenModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAddOnExit(value: js.Function0[_] => Unit): Self = StObject.set(x, "addOnExit", js.Any.fromFunction1(value))
+    def setAddOnExit(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnExit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddOnInit(value: js.Function0[_] => Unit): Self = StObject.set(x, "addOnInit", js.Any.fromFunction1(value))
+    def setAddOnInit(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnInit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddOnPostRun(value: js.Function0[_] => Unit): Self = StObject.set(x, "addOnPostRun", js.Any.fromFunction1(value))
+    def setAddOnPostRun(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnPostRun", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddOnPreMain(value: js.Function0[_] => Unit): Self = StObject.set(x, "addOnPreMain", js.Any.fromFunction1(value))
+    def setAddOnPreMain(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnPreMain", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddOnPreRun(value: js.Function0[_] => Unit): Self = StObject.set(x, "addOnPreRun", js.Any.fromFunction1(value))
+    def setAddOnPreRun(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnPreRun", js.Any.fromFunction1(value))
     
     @scala.inline
     def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
@@ -254,7 +252,7 @@ object EmscriptenModule {
     def setOnAbort(value: js.Any => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCustomMessage(value: MessageEvent[_] => Unit): Self = StObject.set(x, "onCustomMessage", js.Any.fromFunction1(value))
+    def setOnCustomMessage(value: MessageEvent[js.Any] => Unit): Self = StObject.set(x, "onCustomMessage", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnRuntimeInitialized(value: () => Unit): Self = StObject.set(x, "onRuntimeInitialized", js.Any.fromFunction0(value))

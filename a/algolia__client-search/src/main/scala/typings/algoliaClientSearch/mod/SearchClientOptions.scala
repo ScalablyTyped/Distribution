@@ -3,27 +3,25 @@ package typings.algoliaClientSearch.mod
 import typings.algoliaClientCommon.mod.AuthModeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchClientOptions extends StObject {
   
   /**
     * The api key.
     */
-  val apiKey: String = js.native
+  val apiKey: String
   
   /**
     * The application id.
     */
-  val appId: String = js.native
+  val appId: String
   
   /**
     * The auth mode type. In browser environments credentials may
     * be passed within the headers.
     */
-  val authMode: js.UndefOr[AuthModeType] = js.native
+  val authMode: js.UndefOr[AuthModeType] = js.undefined
 }
 object SearchClientOptions {
   

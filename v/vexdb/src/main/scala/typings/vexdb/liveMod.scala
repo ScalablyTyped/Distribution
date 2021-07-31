@@ -37,35 +37,37 @@ import typings.vexdb.vexdbStrings.skills
 import typings.vexdb.vexdbStrings.teams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveMod {
   
-  @JSImport("vexdb/out/methods/live", JSImport.Default)
+  @JSImport("vexdb/out/methods/live", JSImport.Namespace)
   @js.native
-  def default(endpoint: String, params: LiveRequestObject[RequestObject]): LiveEventEmitter[RequestObject, ResponseObject] = js.native
-  @JSImport("vexdb/out/methods/live", JSImport.Default)
-  @js.native
-  def default_awards(endpoint: awards, params: LiveRequestObjectAwardsRe): LiveEventEmitter[AwardsRequestObject, AwardsResponseObject] = js.native
-  @JSImport("vexdb/out/methods/live", JSImport.Default)
-  @js.native
-  def default_events(endpoint: events, params: LiveRequestObjectEventsRe): LiveEventEmitter[EventsRequestObject, EventsResponseObject] = js.native
-  @JSImport("vexdb/out/methods/live", JSImport.Default)
-  @js.native
-  def default_matches(endpoint: matches, params: LiveRequestObjectMatchesR): LiveEventEmitter[MatchesRequestObject, MatchesResponseObject] = js.native
-  @JSImport("vexdb/out/methods/live", JSImport.Default)
-  @js.native
-  def default_rankings(endpoint: rankings, params: LiveRequestObjectRankings): LiveEventEmitter[RankingsRequestObject, RankingsResponseObject] = js.native
-  @JSImport("vexdb/out/methods/live", JSImport.Default)
-  @js.native
-  def default_seasonrankings(endpoint: season_rankings, params: LiveRequestObjectSeasonRa): LiveEventEmitter[SeasonRankingsRequestObject, SeasonRankingsResponseObject] = js.native
-  @JSImport("vexdb/out/methods/live", JSImport.Default)
-  @js.native
-  def default_skills(endpoint: skills, params: LiveRequestObjectSkillsRe): LiveEventEmitter[SkillsRequestObject, SkillsResponseObject] = js.native
-  @JSImport("vexdb/out/methods/live", JSImport.Default)
-  @js.native
-  def default_teams(endpoint: teams, params: LiveRequestObjectTeamsReq): LiveEventEmitter[TeamsRequestObject, TeamsResponseObject] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(endpoint: String, params: LiveRequestObject[RequestObject]): LiveEventEmitter[RequestObject, ResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[LiveEventEmitter[RequestObject, ResponseObject]]
+  
+  @scala.inline
+  def default_awards(endpoint: awards, params: LiveRequestObjectAwardsRe): LiveEventEmitter[AwardsRequestObject, AwardsResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[LiveEventEmitter[AwardsRequestObject, AwardsResponseObject]]
+  
+  @scala.inline
+  def default_events(endpoint: events, params: LiveRequestObjectEventsRe): LiveEventEmitter[EventsRequestObject, EventsResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[LiveEventEmitter[EventsRequestObject, EventsResponseObject]]
+  
+  @scala.inline
+  def default_matches(endpoint: matches, params: LiveRequestObjectMatchesR): LiveEventEmitter[MatchesRequestObject, MatchesResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[LiveEventEmitter[MatchesRequestObject, MatchesResponseObject]]
+  
+  @scala.inline
+  def default_rankings(endpoint: rankings, params: LiveRequestObjectRankings): LiveEventEmitter[RankingsRequestObject, RankingsResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[LiveEventEmitter[RankingsRequestObject, RankingsResponseObject]]
+  
+  @scala.inline
+  def default_seasonrankings(endpoint: season_rankings, params: LiveRequestObjectSeasonRa): LiveEventEmitter[SeasonRankingsRequestObject, SeasonRankingsResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[LiveEventEmitter[SeasonRankingsRequestObject, SeasonRankingsResponseObject]]
+  
+  @scala.inline
+  def default_skills(endpoint: skills, params: LiveRequestObjectSkillsRe): LiveEventEmitter[SkillsRequestObject, SkillsResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[LiveEventEmitter[SkillsRequestObject, SkillsResponseObject]]
+  
+  @scala.inline
+  def default_teams(endpoint: teams, params: LiveRequestObjectTeamsReq): LiveEventEmitter[TeamsRequestObject, TeamsResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(endpoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[LiveEventEmitter[TeamsRequestObject, TeamsResponseObject]]
   
   @js.native
   trait LiveEventEmitter[Q, R] extends EventEmitter {
@@ -86,5 +88,5 @@ object liveMod {
     def params(updateParameters: Q): Q = js.native
   }
   
-  type LiveRequestObject[T] = T with Prefetch
+  type LiveRequestObject[T] = T & Prefetch
 }

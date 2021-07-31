@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMathLimUpp extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val E: OMath = js.native
+  val E: OMath
   
-  val Lim: OMath = js.native
+  val Lim: OMath
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def ToLimLow(): OMathFunction = js.native
+  def ToLimLow(): OMathFunction
   
   @JSName("Word.OMathLimUpp_typekey")
-  var WordDotOMathLimUpp_typekey: OMathLimUpp = js.native
+  var WordDotOMathLimUpp_typekey: OMathLimUpp
 }
 object OMathLimUpp {
   

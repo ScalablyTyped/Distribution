@@ -2,16 +2,14 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidDBInstanceModificationsMessage extends StObject {
   
   /**
     * Valid storage options for your DB instance.
     */
-  var Storage: js.UndefOr[ValidStorageOptionsList] = js.native
+  var Storage: js.UndefOr[ValidStorageOptionsList] = js.undefined
 }
 object ValidDBInstanceModificationsMessage {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpAuthorization extends StObject {
   
   /**
     * Use Sig V4 authorization. For more information, see Signature Version 4 Signing Process.
     */
-  var sigv4: js.UndefOr[SigV4Authorization] = js.native
+  var sigv4: js.UndefOr[SigV4Authorization] = js.undefined
 }
 object HttpAuthorization {
   

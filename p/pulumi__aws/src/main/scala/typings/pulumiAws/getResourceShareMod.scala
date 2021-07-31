@@ -5,40 +5,40 @@ import typings.pulumiAws.inputMod.ram.GetResourceShareFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getResourceShareMod {
   
-  @JSImport("@pulumi/aws/ram/getResourceShare", "getResourceShare")
+  @JSImport("@pulumi/aws/ram/getResourceShare", JSImport.Namespace)
   @js.native
-  def getResourceShare(args: GetResourceShareArgs): js.Promise[GetResourceShareResult] = js.native
-  @JSImport("@pulumi/aws/ram/getResourceShare", "getResourceShare")
-  @js.native
-  def getResourceShare(args: GetResourceShareArgs, opts: InvokeOptions): js.Promise[GetResourceShareResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getResourceShare(args: GetResourceShareArgs): js.Promise[GetResourceShareResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceShare")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetResourceShareResult]]
+  @scala.inline
+  def getResourceShare(args: GetResourceShareArgs, opts: InvokeOptions): js.Promise[GetResourceShareResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResourceShare")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResourceShareResult]]
+  
   trait GetResourceShareArgs extends StObject {
     
     /**
       * A filter used to scope the list e.g. by tags. See [related docs] (https://docs.aws.amazon.com/ram/latest/APIReference/API_TagFilter.html).
       */
-    val filters: js.UndefOr[js.Array[GetResourceShareFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetResourceShareFilter]] = js.undefined
     
     /**
       * The name of the tag key to filter on.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The owner of the resource share. Valid values are SELF or OTHER-ACCOUNTS
       */
-    val resourceOwner: String = js.native
+    val resourceOwner: String
     
     /**
       * The Tags attached to the RAM share
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetResourceShareArgs {
     
@@ -74,39 +74,38 @@ object getResourceShareMod {
     }
   }
   
-  @js.native
   trait GetResourceShareResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the resource share.
       */
-    val arn: String = js.native
+    val arn: String
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ram.GetResourceShareFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ram.GetResourceShareFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * The ID of the AWS account that owns the resource share.
       */
-    val owningAccountId: String = js.native
+    val owningAccountId: String
     
-    val resourceOwner: String = js.native
+    val resourceOwner: String
     
     /**
       * The Status of the RAM share.
       */
-    val status: String = js.native
+    val status: String
     
     /**
       * The Tags attached to the RAM share
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetResourceShareResult {
     

@@ -2,27 +2,25 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Collection of contacts._
   * @see https://docs.scriptable.app/contactscontainer
   */
-@js.native
 trait ContactsContainer extends StObject {
   
   /**
     * _Identifier of the contacts container._
     * @see https://docs.scriptable.app/contactscontainer/#identifier
     */
-  var identifier: String = js.native
+  var identifier: String
   
   /**
     * _Name of the contacts container._
     * @see https://docs.scriptable.app/contactscontainer/#name
     */
-  var name: String = js.native
+  var name: String
 }
 object ContactsContainer {
   

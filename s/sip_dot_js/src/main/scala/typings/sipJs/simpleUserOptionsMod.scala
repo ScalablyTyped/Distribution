@@ -6,12 +6,10 @@ import typings.std.HTMLAudioElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object simpleUserOptionsMod {
   
-  @js.native
   trait SimpleUserMedia extends StObject {
     
     /**
@@ -22,13 +20,13 @@ object simpleUserOptionsMod {
       * If undefined, defaults to audio true and video false.
       * If audio and video are false, media stream will have no tracks.
       */
-    var constraints: js.UndefOr[SimpleUserMediaConstraints] = js.native
+    var constraints: js.UndefOr[SimpleUserMediaConstraints] = js.undefined
     
     /** HTML elements for local media streams. */
-    var local: js.UndefOr[SimpleUserMediaLocal] = js.native
+    var local: js.UndefOr[SimpleUserMediaLocal] = js.undefined
     
     /** Local HTML media elements. */
-    var remote: js.UndefOr[SimpleUserMediaRemote] = js.native
+    var remote: js.UndefOr[SimpleUserMediaRemote] = js.undefined
   }
   object SimpleUserMedia {
     
@@ -61,14 +59,13 @@ object simpleUserOptionsMod {
     }
   }
   
-  @js.native
   trait SimpleUserMediaConstraints extends StObject {
     
     /** If true, offer and answer to send and receive audio. */
-    var audio: Boolean = js.native
+    var audio: Boolean
     
     /** If true, offer and answer to send and receive video. */
-    var video: Boolean = js.native
+    var video: Boolean
   }
   object SimpleUserMediaConstraints {
     
@@ -89,11 +86,10 @@ object simpleUserOptionsMod {
     }
   }
   
-  @js.native
   trait SimpleUserMediaLocal extends StObject {
     
     /** The local video media stream is attached to this element. */
-    var video: js.UndefOr[HTMLVideoElement] = js.native
+    var video: js.UndefOr[HTMLVideoElement] = js.undefined
   }
   object SimpleUserMediaLocal {
     
@@ -114,14 +110,13 @@ object simpleUserOptionsMod {
     }
   }
   
-  @js.native
   trait SimpleUserMediaRemote extends StObject {
     
     /** The remote audio media stream is attached to this element. */
-    var audio: js.UndefOr[HTMLAudioElement] = js.native
+    var audio: js.UndefOr[HTMLAudioElement] = js.undefined
     
     /** The remote video media stream is attached to this element. */
-    var video: js.UndefOr[HTMLVideoElement] = js.native
+    var video: js.UndefOr[HTMLVideoElement] = js.undefined
   }
   object SimpleUserMediaRemote {
     
@@ -148,7 +143,6 @@ object simpleUserOptionsMod {
     }
   }
   
-  @js.native
   trait SimpleUserOptions extends StObject {
     
     /**
@@ -157,17 +151,17 @@ object simpleUserOptionsMod {
       * The AOR is registered to receive incoming calls.
       * If not specified, a random anonymous address is created for the user.
       */
-    var aor: js.UndefOr[String] = js.native
+    var aor: js.UndefOr[String] = js.undefined
     
     /**
       * Delegate for SimpleUser.
       */
-    var delegate: js.UndefOr[SimpleUserDelegate] = js.native
+    var delegate: js.UndefOr[SimpleUserDelegate] = js.undefined
     
     /**
       * Media options.
       */
-    var media: js.UndefOr[SimpleUserMedia] = js.native
+    var media: js.UndefOr[SimpleUserMedia] = js.undefined
     
     /**
       * Maximum number of times to attempt to reconnection.
@@ -179,18 +173,18 @@ object simpleUserOptionsMod {
       * https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine
       * @defaultValue 3
       */
-    var reconnectionAttempts: js.UndefOr[Double] = js.native
+    var reconnectionAttempts: js.UndefOr[Double] = js.undefined
     
     /**
       * Seconds to wait between reconnection attempts.
       * @defaultValue 4
       */
-    var reconnectionDelay: js.UndefOr[Double] = js.native
+    var reconnectionDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * Options for UserAgent.
       */
-    var userAgentOptions: js.UndefOr[UserAgentOptions] = js.native
+    var userAgentOptions: js.UndefOr[UserAgentOptions] = js.undefined
   }
   object SimpleUserOptions {
     

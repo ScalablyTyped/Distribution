@@ -5,17 +5,17 @@ import typings.nodeForge.nodeForgeStrings.server
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TLSError extends Error {
+trait TLSError
+  extends StObject
+     with Error {
   
-  var alert: Alert = js.native
+  var alert: Alert
   
-  var origin: server | client = js.native
+  var origin: server | client
   
-  var send: Boolean = js.native
+  var send: Boolean
 }
 object TLSError {
   

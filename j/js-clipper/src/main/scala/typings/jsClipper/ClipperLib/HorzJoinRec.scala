@@ -2,15 +2,13 @@ package typings.jsClipper.ClipperLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HorzJoinRec extends StObject {
   
-  var edge: TEdge = js.native
+  var edge: TEdge
   
-  var savedIdx: Double = js.native
+  var savedIdx: Double
 }
 object HorzJoinRec {
   

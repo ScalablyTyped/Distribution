@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Networking
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object DomainNameType extends StObject {
   
   /** A fully-qualified domain name. */
   @js.native
-  sealed trait fullyQualified extends DomainNameType
+  sealed trait fullyQualified
+    extends StObject
+       with DomainNameType
   
   /** The suffix of a domain name. */
   @js.native
-  sealed trait suffix extends DomainNameType
+  sealed trait suffix
+    extends StObject
+       with DomainNameType
 }

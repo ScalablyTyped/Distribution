@@ -2,36 +2,34 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyAttributeTypeDescription extends StObject {
   
   /**
     * The name of the attribute.
     */
-  var AttributeName: js.UndefOr[typings.awsSdk.elbMod.AttributeName] = js.native
+  var AttributeName: js.UndefOr[typings.awsSdk.elbMod.AttributeName] = js.undefined
   
   /**
     * The type of the attribute. For example, Boolean or Integer.
     */
-  var AttributeType: js.UndefOr[typings.awsSdk.elbMod.AttributeType] = js.native
+  var AttributeType: js.UndefOr[typings.awsSdk.elbMod.AttributeType] = js.undefined
   
   /**
     * The cardinality of the attribute. Valid values:   ONE(1) : Single value required   ZERO_OR_ONE(0..1) : Up to one value is allowed   ZERO_OR_MORE(0..*) : Optional. Multiple values are allowed   ONE_OR_MORE(1..*0) : Required. Multiple values are allowed  
     */
-  var Cardinality: js.UndefOr[typings.awsSdk.elbMod.Cardinality] = js.native
+  var Cardinality: js.UndefOr[typings.awsSdk.elbMod.Cardinality] = js.undefined
   
   /**
     * The default value of the attribute, if applicable.
     */
-  var DefaultValue: js.UndefOr[typings.awsSdk.elbMod.DefaultValue] = js.native
+  var DefaultValue: js.UndefOr[typings.awsSdk.elbMod.DefaultValue] = js.undefined
   
   /**
     * A description of the attribute.
     */
-  var Description: js.UndefOr[typings.awsSdk.elbMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.elbMod.Description] = js.undefined
 }
 object PolicyAttributeTypeDescription {
   

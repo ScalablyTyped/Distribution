@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceServicesDisable extends StandardParameters {
+trait ParamsResourceServicesDisable
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of the consumer and service to disable the service on.  The enable
@@ -23,12 +23,12 @@ trait ParamsResourceServicesDisable extends StandardParameters {
     * would be: `projects/123/services/serviceusage.googleapis.com` where `123`
     * is the project number (not project ID).
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaDisableServiceRequest] = js.native
+  var requestBody: js.UndefOr[SchemaDisableServiceRequest] = js.undefined
 }
 object ParamsResourceServicesDisable {
   

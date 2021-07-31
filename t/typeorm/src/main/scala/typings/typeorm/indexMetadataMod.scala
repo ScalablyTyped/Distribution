@@ -8,7 +8,6 @@ import typings.typeorm.entityMetadataMod.EntityMetadata
 import typings.typeorm.namingStrategyInterfaceMod.NamingStrategyInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexMetadataMod {
@@ -55,7 +54,7 @@ object indexMetadataMod {
       * User specified column names.
       */
     var givenColumnNames: js.UndefOr[
-        (js.Function1[/* object */ js.UndefOr[js.Any], js.Array[_] | StringDictionary[Double]]) | js.Array[String]
+        (js.Function1[/* object */ js.UndefOr[js.Any], js.Array[js.Any] | StringDictionary[Double]]) | js.Array[String]
       ] = js.native
     
     /**

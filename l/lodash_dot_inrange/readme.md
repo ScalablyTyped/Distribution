@@ -12,7 +12,7 @@ The lodash method `_.inRange` exported as a module.
 | Keywords           | lodash-modularized, inrange |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 148157 |
+| # downloads        | 177489 |
 | # stars            | 0 |
 
 ## Links

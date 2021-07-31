@@ -3,7 +3,6 @@ package typings.protobufjsCodegen
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,24 +12,20 @@ object mod {
     * @param [functionName] Function name if not anonymous
     * @returns Appender that appends code to the function's body
     */
-  @JSImport("@protobufjs/codegen", JSImport.Namespace)
-  @js.native
-  def apply(): Codegen = js.native
-  @JSImport("@protobufjs/codegen", JSImport.Namespace)
-  @js.native
-  def apply(functionName: String): Codegen = js.native
+  @scala.inline
+  def apply(): Codegen = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Codegen]
+  @scala.inline
+  def apply(functionName: String): Codegen = ^.asInstanceOf[js.Dynamic].apply(functionName.asInstanceOf[js.Any]).asInstanceOf[Codegen]
   /**
     * Begins generating a function.
     * @param functionParams Function parameter names
     * @param [functionName] Function name if not anonymous
     * @returns Appender that appends code to the function's body
     */
-  @JSImport("@protobufjs/codegen", JSImport.Namespace)
-  @js.native
-  def apply(functionParams: js.Array[String]): Codegen = js.native
-  @JSImport("@protobufjs/codegen", JSImport.Namespace)
-  @js.native
-  def apply(functionParams: js.Array[String], functionName: String): Codegen = js.native
+  @scala.inline
+  def apply(functionParams: js.Array[String]): Codegen = ^.asInstanceOf[js.Dynamic].apply(functionParams.asInstanceOf[js.Any]).asInstanceOf[Codegen]
+  @scala.inline
+  def apply(functionParams: js.Array[String], functionName: String): Codegen = (^.asInstanceOf[js.Dynamic].apply(functionParams.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[Codegen]
   
   @JSImport("@protobufjs/codegen", JSImport.Namespace)
   @js.native
@@ -50,9 +45,11 @@ object mod {
     * @returns Itself or the generated function if finished
     * @throws {Error} If format parameter counts do not match
     */
-  type Codegen = js.Function2[
-    /* formatStringOrScope */ js.UndefOr[String | StringDictionary[js.Any]], 
-    /* repeated */ js.Any, 
-    (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @protobufjs/codegen.@protobufjs/codegen.Codegen */ js.Object) | js.Function
-  ]
+  @js.native
+  trait Codegen extends StObject {
+    
+    def apply(formatStringOrScope: String, formatParams: js.Any*): Codegen | js.Function = js.native
+    def apply(formatStringOrScope: StringDictionary[js.Any], formatParams: js.Any*): Codegen | js.Function = js.native
+    def apply(formatStringOrScope: Unit, formatParams: js.Any*): Codegen | js.Function = js.native
+  }
 }

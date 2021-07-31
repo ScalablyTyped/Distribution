@@ -2,13 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TopicBuilder[Topic] extends DisplayBuilder[TopicBuilder[Topic]] {
+trait TopicBuilder[Topic]
+  extends StObject
+     with DisplayBuilder[TopicBuilder[Topic]] {
   
-  def withTopicId(topicId: Double): TopicBuilder[Topic] = js.native
+  def withTopicId(topicId: Double): TopicBuilder[Topic]
 }
 object TopicBuilder {
   
@@ -25,7 +25,7 @@ object TopicBuilder {
   }
   
   @scala.inline
-  implicit class TopicBuilderMutableBuilder[Self <: TopicBuilder[_], Topic] (val x: Self with TopicBuilder[Topic]) extends AnyVal {
+  implicit class TopicBuilderMutableBuilder[Self <: TopicBuilder[?], Topic] (val x: Self & TopicBuilder[Topic]) extends AnyVal {
     
     @scala.inline
     def setWithTopicId(value: Double => TopicBuilder[Topic]): Self = StObject.set(x, "withTopicId", js.Any.fromFunction1(value))

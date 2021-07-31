@@ -3,37 +3,35 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecGrpcRouteMatchMetadataMatch extends StObject {
   
   /**
     * The value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
     */
-  var exact: js.UndefOr[Input[String]] = js.native
+  var exact: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The value sent by the client must begin with the specified characters. Must be between 1 and 255 characters in length.
     * This parameter must always start with /, which by itself matches all requests to the virtual router service name.
     */
-  var prefix: js.UndefOr[Input[String]] = js.native
+  var prefix: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The object that specifies the range of numbers that the value sent by the client must be included in.
     */
-  var range: js.UndefOr[Input[RouteSpecGrpcRouteMatchMetadataMatchRange]] = js.native
+  var range: js.UndefOr[Input[RouteSpecGrpcRouteMatchMetadataMatchRange]] = js.undefined
   
   /**
     * The value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
     */
-  var regex: js.UndefOr[Input[String]] = js.native
+  var regex: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The value sent by the client must end with the specified characters. Must be between 1 and 255 characters in length.
     */
-  var suffix: js.UndefOr[Input[String]] = js.native
+  var suffix: js.UndefOr[Input[String]] = js.undefined
 }
 object RouteSpecGrpcRouteMatchMetadataMatch {
   

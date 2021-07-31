@@ -2,17 +2,17 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates the watch that generates program using the root files and compiler options
   */
-@js.native
-trait WatchOfFilesAndCompilerOptions[T] extends Watch[T] {
+trait WatchOfFilesAndCompilerOptions[T]
+  extends StObject
+     with Watch[T] {
   
   /** Updates the root files in the program, only if this is not config file compilation */
-  def updateRootFileNames(fileNames: js.Array[java.lang.String]): Unit = js.native
+  def updateRootFileNames(fileNames: js.Array[java.lang.String]): Unit
 }
 object WatchOfFilesAndCompilerOptions {
   
@@ -23,7 +23,7 @@ object WatchOfFilesAndCompilerOptions {
   }
   
   @scala.inline
-  implicit class WatchOfFilesAndCompilerOptionsMutableBuilder[Self <: WatchOfFilesAndCompilerOptions[_], T] (val x: Self with WatchOfFilesAndCompilerOptions[T]) extends AnyVal {
+  implicit class WatchOfFilesAndCompilerOptionsMutableBuilder[Self <: WatchOfFilesAndCompilerOptions[?], T] (val x: Self & WatchOfFilesAndCompilerOptions[T]) extends AnyVal {
     
     @scala.inline
     def setUpdateRootFileNames(value: js.Array[java.lang.String] => Unit): Self = StObject.set(x, "updateRootFileNames", js.Any.fromFunction1(value))

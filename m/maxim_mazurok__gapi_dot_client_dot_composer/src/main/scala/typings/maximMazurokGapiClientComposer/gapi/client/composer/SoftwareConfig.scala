@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientComposer.gapi.client.composer
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SoftwareConfig extends StObject {
   
   /**
@@ -19,8 +17,8 @@ trait SoftwareConfig extends StObject {
   var airflowConfigOverrides: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Optional. Additional environment variables to provide to the Apache Airflow scheduler, worker, and webserver processes. Environment variable names must match the regular expression
@@ -31,8 +29,8 @@ trait SoftwareConfig extends StObject {
   var envVariables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * The version of the software running in the environment. This encapsulates both the version of Cloud Composer functionality and the version of Apache Airflow. It must match the
@@ -42,7 +40,7 @@ trait SoftwareConfig extends StObject {
     * Composer version and stores that version number in the same field. The portion of the image version that follows *airflow-* is an official Apache Airflow repository [release
     * name](https://github.com/apache/incubator-airflow/releases). See also [Version List](/composer/docs/concepts/versioning/composer-versions).
     */
-  var imageVersion: js.UndefOr[String] = js.native
+  var imageVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Custom Python Package Index (PyPI) packages to be installed in the environment. Keys refer to the lowercase package name such as "numpy" and values are the lowercase
@@ -52,14 +50,14 @@ trait SoftwareConfig extends StObject {
   var pypiPackages: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Optional. The major version of Python used to run the Apache Airflow scheduler, worker, and webserver processes. Can be set to '2' or '3'. If not specified, the default is '2'.
     * Cannot be updated.
     */
-  var pythonVersion: js.UndefOr[String] = js.native
+  var pythonVersion: js.UndefOr[String] = js.undefined
 }
 object SoftwareConfig {
   
@@ -76,7 +74,7 @@ object SoftwareConfig {
     def setAirflowConfigOverrides(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "airflowConfigOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -86,7 +84,7 @@ object SoftwareConfig {
     def setEnvVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "envVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -102,7 +100,7 @@ object SoftwareConfig {
     def setPypiPackages(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "pypiPackages", value.asInstanceOf[js.Any])
     
     @scala.inline

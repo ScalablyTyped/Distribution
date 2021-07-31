@@ -4,17 +4,17 @@ import typings.kendoUi.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DropTargetAreaDragleaveEvent extends DropTargetAreaEvent {
+trait DropTargetAreaDragleaveEvent
+  extends StObject
+     with DropTargetAreaEvent {
   
-  var draggable: js.UndefOr[Draggable] = js.native
+  var draggable: js.UndefOr[Draggable] = js.undefined
   
-  var dropTarget: js.UndefOr[JQuery] = js.native
+  var dropTarget: js.UndefOr[JQuery] = js.undefined
   
-  var target: js.UndefOr[Element] = js.native
+  var target: js.UndefOr[Element] = js.undefined
 }
 object DropTargetAreaDragleaveEvent {
   

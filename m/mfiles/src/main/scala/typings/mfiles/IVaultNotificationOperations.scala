@@ -2,10 +2,8 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultNotificationOperations extends StObject {
   
   def SendCustomNotification(
@@ -15,7 +13,7 @@ trait IVaultNotificationOperations extends StObject {
     SendWithServerEmailIdentity: Boolean,
     Subject: String,
     Body: String
-  ): Unit = js.native
+  ): Unit
 }
 object IVaultNotificationOperations {
   

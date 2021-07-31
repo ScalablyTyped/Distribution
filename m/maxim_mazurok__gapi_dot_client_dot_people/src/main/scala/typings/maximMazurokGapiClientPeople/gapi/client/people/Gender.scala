@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gender extends StObject {
   
   /** The type of pronouns that should be used to address the person. The value can be custom or one of these predefined values: * `male` * `female` * `other` */
-  var addressMeAs: js.UndefOr[String] = js.native
+  var addressMeAs: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The value of the gender translated and formatted in the viewer's account locale or the `Accept-Language` HTTP header locale. Unspecified or custom value are not
     * localized.
     */
-  var formattedValue: js.UndefOr[String] = js.native
+  var formattedValue: js.UndefOr[String] = js.undefined
   
   /** Metadata about the gender. */
-  var metadata: js.UndefOr[FieldMetadata] = js.native
+  var metadata: js.UndefOr[FieldMetadata] = js.undefined
   
   /** The gender for the person. The gender can be custom or one of these predefined values: * `male` * `female` * `unspecified` */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object Gender {
   

@@ -2,15 +2,13 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILinksList extends StObject {
   
-  var dispose: js.UndefOr[js.Function0[Unit]] = js.native
+  var dispose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var links: js.Array[ILink] = js.native
+  var links: js.Array[ILink]
 }
 object ILinksList {
   

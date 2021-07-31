@@ -2,38 +2,36 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseParseOpts extends StObject {
   
   /** The number of lines of template above and below a line with an error to include in the error message. */
-  var contextLines: js.UndefOr[Double] = js.native
+  var contextLines: js.UndefOr[Double] = js.undefined
   
   /** Whether or not to produce a map of expression string -> function when parsing the template. */
-  var csp: js.UndefOr[Boolean] = js.native
+  var csp: js.UndefOr[Boolean] = js.undefined
   
   /** The regular mustach delimiters - defaults to {{ }}. */
-  var delimiters: js.UndefOr[ParseDelimiters] = js.native
+  var delimiters: js.UndefOr[ParseDelimiters] = js.undefined
   
   /** Whether or not to collapse consective whitespace into a single space. */
-  var preserveWhitespace: js.UndefOr[Boolean] = js.native
+  var preserveWhitespace: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not to remove certain elements and event attributes from the parsed template. */
-  var sanitize: js.UndefOr[Boolean | SanitizeOpts] = js.native
+  var sanitize: js.UndefOr[Boolean | SanitizeOpts] = js.undefined
   
   /** The static mustache delimiters - defaults to [[ ]]. */
-  var staticDelimiters: js.UndefOr[ParseDelimiters] = js.native
+  var staticDelimiters: js.UndefOr[ParseDelimiters] = js.undefined
   
   /** The static triple mustache delimiters - defaults to [[[ ]]]. */
-  var staticTripleDelimiters: js.UndefOr[ParseDelimiters] = js.native
+  var staticTripleDelimiters: js.UndefOr[ParseDelimiters] = js.undefined
   
   /** Whether or not to remove HTML comments from the template. Defaults to true. */
-  var stripComments: js.UndefOr[Boolean] = js.native
+  var stripComments: js.UndefOr[Boolean] = js.undefined
   
   /** The triple mustache delimiters - defaults to {{{ }}}. */
-  var tripleDelimiters: js.UndefOr[ParseDelimiters] = js.native
+  var tripleDelimiters: js.UndefOr[ParseDelimiters] = js.undefined
 }
 object BaseParseOpts {
   

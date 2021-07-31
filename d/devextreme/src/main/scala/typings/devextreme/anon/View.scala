@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait View extends StObject {
   
-  var component: js.UndefOr[js.Any] = js.native
+  var component: js.UndefOr[js.Any] = js.undefined
   
-  var date: js.UndefOr[typings.std.Date] = js.native
+  var date: js.UndefOr[typings.std.Date] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object View {
   

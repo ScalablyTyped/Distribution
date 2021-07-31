@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Network.SearchInResponseBodyRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SearchInResponseBodyResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeSearchInResponseBodyResponse extends StObject {
   
-  var paramsType: js.Array[SearchInResponseBodyRequest] = js.native
+  var paramsType: js.Array[SearchInResponseBodyRequest]
   
-  var returnType: SearchInResponseBodyResponse = js.native
+  var returnType: SearchInResponseBodyResponse
 }
 object ReturnTypeSearchInResponseBodyResponse {
   

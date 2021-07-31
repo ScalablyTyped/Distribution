@@ -2,24 +2,22 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of scan configs for the project.
   */
-@js.native
 trait SchemaListScanConfigsResponse extends StObject {
   
   /**
     * A page token to pass in order to get more scan configs.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The set of scan configs.
     */
-  var scanConfigs: js.UndefOr[js.Array[SchemaScanConfig]] = js.native
+  var scanConfigs: js.UndefOr[js.Array[SchemaScanConfig]] = js.undefined
 }
 object SchemaListScanConfigsResponse {
   

@@ -2,49 +2,47 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Summary of a single transformation. Only one of &#39;transformation&#39;,
   * &#39;field_transformation&#39;, or &#39;record_suppress&#39; will be set.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2TransformationSummary extends StObject {
   
   /**
     * Set if the transformation was limited to a specific FieldId.
     */
-  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
   
   /**
     * The field transformation that was applied. If multiple field
     * transformations are requested for a single field, this list will contain
     * all of them; otherwise, only one is supplied.
     */
-  var fieldTransformations: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldTransformation]] = js.native
+  var fieldTransformations: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldTransformation]] = js.undefined
   
   /**
     * Set if the transformation was limited to a specific InfoType.
     */
-  var infoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.native
+  var infoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.undefined
   
   /**
     * The specific suppression option these stats apply to.
     */
-  var recordSuppress: js.UndefOr[SchemaGooglePrivacyDlpV2RecordSuppression] = js.native
+  var recordSuppress: js.UndefOr[SchemaGooglePrivacyDlpV2RecordSuppression] = js.undefined
   
-  var results: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2SummaryResult]] = js.native
+  var results: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2SummaryResult]] = js.undefined
   
   /**
     * The specific transformation these stats apply to.
     */
-  var transformation: js.UndefOr[SchemaGooglePrivacyDlpV2PrimitiveTransformation] = js.native
+  var transformation: js.UndefOr[SchemaGooglePrivacyDlpV2PrimitiveTransformation] = js.undefined
   
   /**
     * Total size in bytes that were transformed in some way.
     */
-  var transformedBytes: js.UndefOr[String] = js.native
+  var transformedBytes: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2TransformationSummary {
   

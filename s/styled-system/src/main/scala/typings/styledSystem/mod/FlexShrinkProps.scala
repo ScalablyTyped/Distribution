@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlexShrinkProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -16,10 +14,10 @@ trait FlexShrinkProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StO
     */
   var flexShrink: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object FlexShrinkProps {
   
@@ -30,12 +28,12 @@ object FlexShrinkProps {
   }
   
   @scala.inline
-  implicit class FlexShrinkPropsMutableBuilder[Self <: FlexShrinkProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with FlexShrinkProps[ThemeType]) extends AnyVal {
+  implicit class FlexShrinkPropsMutableBuilder[Self <: FlexShrinkProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & FlexShrinkProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setFlexShrink(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
@@ -47,6 +45,8 @@ object FlexShrinkProps {
     def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
     
     @scala.inline
-    def setFlexShrinkVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "flexShrink", js.Array(value :_*))
+    def setFlexShrinkVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ js.Any) | Null)*
+    ): Self = StObject.set(x, "flexShrink", js.Array(value :_*))
   }
 }

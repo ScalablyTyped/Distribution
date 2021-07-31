@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,31 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * resource_for beta.targetHttpsProxies ==) (== resource_for
   * v1.targetHttpsProxies ==)
   */
-@js.native
 trait SchemaTargetHttpsProxy extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of resource. Always compute#targetHttpsProxy for
     * target HTTPS proxies.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -45,14 +43,14 @@ trait SchemaTargetHttpsProxy extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * This field only applies when the loadBalancingScheme is
     * INTERNAL_SELF_MANAGED. When set to true the Envoy binds on the IP address
     * specified by the forwarding rule. Default is false.
     */
-  var proxyBind: js.UndefOr[Boolean] = js.native
+  var proxyBind: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the QUIC override policy for this TargetHttpsProxy resource.
@@ -63,23 +61,23 @@ trait SchemaTargetHttpsProxy extends StObject {
     * policy with no user overrides, which is equivalent to DISABLE. Not
     * specifying this field is equivalent to specifying NONE.
     */
-  var quicOverride: js.UndefOr[String] = js.native
+  var quicOverride: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] URL of the region where the regional TargetHttpsProxy
     * resides. This field is not applicable to global TargetHttpsProxies.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource with the resource id.
     */
-  var selfLinkWithId: js.UndefOr[String] = js.native
+  var selfLinkWithId: js.UndefOr[String] = js.undefined
   
   /**
     * URLs to SslCertificate resources that are used to authenticate
@@ -87,14 +85,14 @@ trait SchemaTargetHttpsProxy extends StObject {
     * certificate must be specified. Currently, you may specify up to 15 SSL
     * certificates.
     */
-  var sslCertificates: js.UndefOr[js.Array[String]] = js.native
+  var sslCertificates: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * URL of SslPolicy resource that will be associated with the
     * TargetHttpsProxy resource. If not set, the TargetHttpsProxy resource will
     * not have any SSL policy configured.
     */
-  var sslPolicy: js.UndefOr[String] = js.native
+  var sslPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * A fully-qualified or valid partial URL to the UrlMap resource that
@@ -103,7 +101,7 @@ trait SchemaTargetHttpsProxy extends StObject {
     * https://www.googleapis.compute/v1/projects/project/global/urlMaps/url-map
     * - projects/project/global/urlMaps/url-map  - global/urlMaps/url-map
     */
-  var urlMap: js.UndefOr[String] = js.native
+  var urlMap: js.UndefOr[String] = js.undefined
 }
 object SchemaTargetHttpsProxy {
   

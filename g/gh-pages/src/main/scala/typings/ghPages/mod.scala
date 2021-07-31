@@ -11,14 +11,16 @@ import typings.ghPages.ghPagesStrings.`gh-pages`
 import typings.ghPages.ghPagesStrings.git
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gh-pages", "clean")
+  @JSImport("gh-pages", JSImport.Namespace)
   @js.native
-  def clean(): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def clean(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clean")().asInstanceOf[Unit]
   
   /* Inlined std.Readonly<gh-pages.gh-pages.Defaults> */
   object defaults {
@@ -76,64 +78,46 @@ object mod {
     val src: AsteriskAsteriskSlashAsterisk = js.native
   }
   
-  @JSImport("gh-pages", "publish")
-  @js.native
-  def publish(basePath: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
-  @JSImport("gh-pages", "publish")
-  @js.native
-  def publish(basePath: String, config: PublishOptions): Unit = js.native
-  @JSImport("gh-pages", "publish")
-  @js.native
-  def publish(basePath: String, config: PublishOptions, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def publish(basePath: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publish")(basePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def publish(basePath: String, config: PublishOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publish")(basePath.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def publish(basePath: String, config: PublishOptions, callback: js.Function1[/* err */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publish")(basePath.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Defaults_ extends StObject {
     
-    var add: `false` = js.native
+    var add: `false`
     
-    var branch: `gh-pages` = js.native
+    var branch: `gh-pages`
     
-    var depth: `1` = js.native
+    var depth: `1`
     
-    var dest: Dot = js.native
+    var dest: Dot
     
-    var dotfiles: `false` = js.native
+    var dotfiles: `false`
     
-    var git: typings.ghPages.ghPagesStrings.git = js.native
+    var git: typings.ghPages.ghPagesStrings.git
     
-    var history: `true` = js.native
+    var history: `true`
     
-    var message: Updates = js.native
+    var message: Updates
     
-    var push: `true` = js.native
+    var push: `true`
     
-    var remote: String = js.native
+    var remote: String
     
-    var remove: Dot = js.native
+    var remove: Dot
     
-    var silent: `false` = js.native
+    var silent: `false`
     
-    var src: AsteriskAsteriskSlashAsterisk = js.native
+    var src: AsteriskAsteriskSlashAsterisk
   }
   object Defaults_ {
     
     @scala.inline
-    def apply(
-      add: `false`,
-      branch: `gh-pages`,
-      depth: `1`,
-      dest: Dot,
-      dotfiles: `false`,
-      git: git,
-      history: `true`,
-      message: Updates,
-      push: `true`,
-      remote: String,
-      remove: Dot,
-      silent: `false`,
-      src: AsteriskAsteriskSlashAsterisk
-    ): Defaults_ = {
-      val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], branch = branch.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], dest = dest.asInstanceOf[js.Any], dotfiles = dotfiles.asInstanceOf[js.Any], git = git.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+    def apply(remote: String): Defaults_ = {
+      val __obj = js.Dynamic.literal(add = false, branch = "gh-pages", depth = 1, dest = ".", dotfiles = false, git = "git", history = true, message = "Updates", push = true, remote = remote.asInstanceOf[js.Any], remove = ".", silent = false, src = "**/*")
       __obj.asInstanceOf[Defaults_]
     }
     
@@ -181,49 +165,48 @@ object mod {
     }
   }
   
-  @js.native
   trait PublishOptions extends StObject {
     
-    var add: js.UndefOr[Boolean] = js.native
+    var add: js.UndefOr[Boolean] = js.undefined
     
-    var branch: js.UndefOr[String] = js.native
+    var branch: js.UndefOr[String] = js.undefined
     
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
-    var dotfiles: js.UndefOr[Boolean] = js.native
+    var dotfiles: js.UndefOr[Boolean] = js.undefined
     
-    var git: js.UndefOr[String] = js.native
+    var git: js.UndefOr[String] = js.undefined
     
     /**
       * Push force new commit without parent history
       * @default true
       */
-    var history: js.UndefOr[Boolean] = js.native
+    var history: js.UndefOr[Boolean] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var only: js.UndefOr[String] = js.native
+    var only: js.UndefOr[String] = js.undefined
     
-    var push: js.UndefOr[Boolean] = js.native
+    var push: js.UndefOr[Boolean] = js.undefined
     
-    var remote: js.UndefOr[String] = js.native
+    var remote: js.UndefOr[String] = js.undefined
     
     /**
       * Removes files that match the given pattern (Ignored if used together with --add).
       * By default, gh-pages removes everything inside the target branch auto-generated directory before copying the new files from dir.
       * @default '.'
       */
-    var remove: js.UndefOr[String] = js.native
+    var remove: js.UndefOr[String] = js.undefined
     
-    var repo: js.UndefOr[String] = js.native
+    var repo: js.UndefOr[String] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var src: js.UndefOr[String | js.Array[String]] = js.native
+    var src: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
-    var user: js.UndefOr[Null | Email] = js.native
+    var user: js.UndefOr[Null | Email] = js.undefined
   }
   object PublishOptions {
     

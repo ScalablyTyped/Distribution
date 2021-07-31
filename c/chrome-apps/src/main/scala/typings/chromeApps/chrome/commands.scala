@@ -3,7 +3,6 @@ package typings.chromeApps.chrome
 import typings.chromeApps.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -23,17 +22,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object commands {
   
-  @js.native
   trait Command extends StObject {
     
     /** The command description  */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /** The name of the command  */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** The shortcut active for this command, or blank if not active.  */
-    var shortcut: js.UndefOr[String] = js.native
+    var shortcut: js.UndefOr[String] = js.undefined
   }
   object Command {
     

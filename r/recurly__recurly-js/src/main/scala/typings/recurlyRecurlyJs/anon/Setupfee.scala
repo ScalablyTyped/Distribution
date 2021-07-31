@@ -2,15 +2,13 @@ package typings.recurlyRecurlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Setupfee extends StObject {
   
-  var setup_fee: String = js.native
+  var setup_fee: String
   
-  var unit: String = js.native
+  var unit: String
 }
 object Setupfee {
   

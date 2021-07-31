@@ -3,19 +3,19 @@ package typings.elasticsearch.mod
 import typings.elasticsearch.anon.Bulk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReindexResponse extends ReindexResponseBase {
+trait ReindexResponse
+  extends StObject
+     with ReindexResponseBase {
   
-  var failures: js.Array[_] = js.native
+  var failures: js.Array[js.Any]
   
-  var slices: js.UndefOr[js.Array[ReindexOrByQueryResponseSlice]] = js.native
+  var slices: js.UndefOr[js.Array[ReindexOrByQueryResponseSlice]] = js.undefined
   
-  var timed_out: Boolean = js.native
+  var timed_out: Boolean
   
-  var took: Double = js.native
+  var took: Double
 }
 object ReindexResponse {
   
@@ -23,7 +23,7 @@ object ReindexResponse {
   def apply(
     batches: Double,
     deleted: Double,
-    failures: js.Array[_],
+    failures: js.Array[js.Any],
     noops: Double,
     requests_per_second: Double,
     retries: Bulk,
@@ -43,7 +43,7 @@ object ReindexResponse {
   implicit class ReindexResponseMutableBuilder[Self <: ReindexResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setFailures(value: js.Array[_]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    def setFailures(value: js.Array[js.Any]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFailuresVarargs(value: js.Any*): Self = StObject.set(x, "failures", js.Array(value :_*))

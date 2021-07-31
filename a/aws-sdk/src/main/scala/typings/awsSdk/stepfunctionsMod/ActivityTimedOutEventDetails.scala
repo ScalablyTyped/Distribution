@@ -2,21 +2,19 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityTimedOutEventDetails extends StObject {
   
   /**
     * A more detailed explanation of the cause of the timeout.
     */
-  var cause: js.UndefOr[SensitiveCause] = js.native
+  var cause: js.UndefOr[SensitiveCause] = js.undefined
   
   /**
     * The error code of the failure.
     */
-  var error: js.UndefOr[SensitiveError] = js.native
+  var error: js.UndefOr[SensitiveError] = js.undefined
 }
 object ActivityTimedOutEventDetails {
   

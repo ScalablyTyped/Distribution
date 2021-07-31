@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotExtended extends StObject {
   
   /**
@@ -13,16 +11,16 @@ trait SnapshotExtended extends StObject {
     * revisions are sorted chronologically by their server creation time (oldest first). If there are too many conflicting revisions to return all of them in a single request this will
     * only contain the first batch. In such case, the presented conflicting revisions must be resolved first in order to fetch the next batch.
     */
-  var conflictingRevisions: js.UndefOr[js.Array[SnapshotRevision]] = js.native
+  var conflictingRevisions: js.UndefOr[js.Array[SnapshotRevision]] = js.undefined
   
   /** An indicator whether the snapshot has any conflicting revisions or not. Always set. */
-  var hasConflictingRevisions: js.UndefOr[Boolean] = js.native
+  var hasConflictingRevisions: js.UndefOr[Boolean] = js.undefined
   
   /** The current head revision (the canonical revision as understood by the server). */
-  var headRevision: js.UndefOr[SnapshotRevision] = js.native
+  var headRevision: js.UndefOr[SnapshotRevision] = js.undefined
   
   /** An identifier of the snapshot,developer-specified. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SnapshotExtended {
   

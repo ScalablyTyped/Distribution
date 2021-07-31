@@ -4,23 +4,21 @@ import typings.ignoreWalk.mod.Walker
 import typings.ignoreWalk.mod.WalkerSync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Follow extends StObject {
     
-    var follow: Boolean = js.native
+    var follow: Boolean
     
-    var ignoreFiles: js.Array[String] = js.native
+    var ignoreFiles: js.Array[String]
     
-    var includeEmpty: Boolean = js.native
+    var includeEmpty: Boolean
     
-    var parent: Walker | WalkerSync = js.native
+    var parent: Walker | WalkerSync
     
-    var path: String = js.native
+    var path: String
   }
   object Follow {
     

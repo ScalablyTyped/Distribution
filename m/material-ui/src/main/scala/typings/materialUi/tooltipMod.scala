@@ -7,7 +7,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipMod {
@@ -21,22 +20,23 @@ object tooltipMod {
   trait Tooltip
     extends Component[TooltipProps, js.Object, js.Any]
   
-  @js.native
-  trait TooltipProps extends Props[Tooltip] {
+  trait TooltipProps
+    extends StObject
+       with Props[Tooltip] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var horizontalPosition: js.UndefOr[tooltipHorizontal] = js.native
+    var horizontalPosition: js.UndefOr[tooltipHorizontal] = js.undefined
     
-    var label: js.Any = js.native
+    var label: js.Any
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var touch: js.UndefOr[Boolean] = js.native
+    var touch: js.UndefOr[Boolean] = js.undefined
     
-    var verticalPosition: js.UndefOr[vertical] = js.native
+    var verticalPosition: js.UndefOr[vertical] = js.undefined
   }
   object TooltipProps {
     

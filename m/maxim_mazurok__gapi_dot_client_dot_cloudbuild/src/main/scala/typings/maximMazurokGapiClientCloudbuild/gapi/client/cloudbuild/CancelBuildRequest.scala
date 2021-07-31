@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelBuildRequest extends StObject {
   
   /** Required. ID of the build. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The name of the `Build` to retrieve. Format: `projects/{project}/locations/{location}/builds/{build}` */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. ID of the project. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object CancelBuildRequest {
   

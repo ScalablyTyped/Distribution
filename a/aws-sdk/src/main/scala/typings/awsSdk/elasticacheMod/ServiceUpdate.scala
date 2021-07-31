@@ -2,71 +2,69 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceUpdate extends StObject {
   
   /**
     * Indicates whether the service update will be automatically applied once the recommended apply-by date has expired. 
     */
-  var AutoUpdateAfterRecommendedApplyByDate: js.UndefOr[BooleanOptional] = js.native
+  var AutoUpdateAfterRecommendedApplyByDate: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * The Elasticache engine to which the update applies. Either Redis or Memcached
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * The Elasticache engine version to which the update applies. Either Redis or Memcached engine version
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The estimated length of time the service update will take
     */
-  var EstimatedUpdateTime: js.UndefOr[String] = js.native
+  var EstimatedUpdateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Provides details of the service update
     */
-  var ServiceUpdateDescription: js.UndefOr[String] = js.native
+  var ServiceUpdateDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The date after which the service update is no longer available
     */
-  var ServiceUpdateEndDate: js.UndefOr[TStamp] = js.native
+  var ServiceUpdateEndDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The unique ID of the service update
     */
-  var ServiceUpdateName: js.UndefOr[String] = js.native
+  var ServiceUpdateName: js.UndefOr[String] = js.undefined
   
   /**
     * The recommendend date to apply the service update in order to ensure compliance. For information on compliance, see Self-Service Security Updates for Compliance.
     */
-  var ServiceUpdateRecommendedApplyByDate: js.UndefOr[TStamp] = js.native
+  var ServiceUpdateRecommendedApplyByDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The date when the service update is initially available
     */
-  var ServiceUpdateReleaseDate: js.UndefOr[TStamp] = js.native
+  var ServiceUpdateReleaseDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The severity of the service update
     */
-  var ServiceUpdateSeverity: js.UndefOr[typings.awsSdk.elasticacheMod.ServiceUpdateSeverity] = js.native
+  var ServiceUpdateSeverity: js.UndefOr[typings.awsSdk.elasticacheMod.ServiceUpdateSeverity] = js.undefined
   
   /**
     * The status of the service update
     */
-  var ServiceUpdateStatus: js.UndefOr[typings.awsSdk.elasticacheMod.ServiceUpdateStatus] = js.native
+  var ServiceUpdateStatus: js.UndefOr[typings.awsSdk.elasticacheMod.ServiceUpdateStatus] = js.undefined
   
   /**
     * Reflects the nature of the service update
     */
-  var ServiceUpdateType: js.UndefOr[typings.awsSdk.elasticacheMod.ServiceUpdateType] = js.native
+  var ServiceUpdateType: js.UndefOr[typings.awsSdk.elasticacheMod.ServiceUpdateType] = js.undefined
 }
 object ServiceUpdate {
   

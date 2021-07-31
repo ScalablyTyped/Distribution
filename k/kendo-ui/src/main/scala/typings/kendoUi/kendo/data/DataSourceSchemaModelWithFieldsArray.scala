@@ -2,14 +2,14 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataSourceSchemaModelWithFieldsArray extends DataSourceSchemaModel {
+trait DataSourceSchemaModelWithFieldsArray
+  extends StObject
+     with DataSourceSchemaModel {
   
   @JSName("fields")
-  var fields_DataSourceSchemaModelWithFieldsArray: js.UndefOr[js.Array[DataSourceSchemaModelField]] = js.native
+  var fields_DataSourceSchemaModelWithFieldsArray: js.UndefOr[js.Array[DataSourceSchemaModelField]] = js.undefined
 }
 object DataSourceSchemaModelWithFieldsArray {
   

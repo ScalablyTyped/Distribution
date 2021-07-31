@@ -5,21 +5,19 @@ import typings.rootAsn1.rootAsn1Booleans.`true`
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var json: `true` = js.native
+    var json: `true`
   }
   object `0` {
     
     @scala.inline
-    def apply(json: `true`): `0` = {
-      val __obj = js.Dynamic.literal(json = json.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(json = true)
       __obj.asInstanceOf[`0`]
     }
     
@@ -31,14 +29,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Der extends StObject {
     
-    var der: Uint8Array = js.native
+    var der: Uint8Array
     
-    var json: js.UndefOr[`true`] = js.native
+    var json: js.UndefOr[`true`] = js.undefined
     
-    var verbose: js.UndefOr[`false`] = js.native
+    var verbose: js.UndefOr[`false`] = js.undefined
   }
   object Der {
     
@@ -68,20 +65,19 @@ object anon {
     }
   }
   
-  @js.native
   trait DerJson extends StObject {
     
-    var der: Uint8Array = js.native
+    var der: Uint8Array
     
-    var json: js.UndefOr[`true`] = js.native
+    var json: js.UndefOr[`true`] = js.undefined
     
-    var verbose: `true` = js.native
+    var verbose: `true`
   }
   object DerJson {
     
     @scala.inline
-    def apply(der: Uint8Array, verbose: `true`): DerJson = {
-      val __obj = js.Dynamic.literal(der = der.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    def apply(der: Uint8Array): DerJson = {
+      val __obj = js.Dynamic.literal(der = der.asInstanceOf[js.Any], verbose = true)
       __obj.asInstanceOf[DerJson]
     }
     
@@ -102,10 +98,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Json extends StObject {
     
-    var json: js.UndefOr[`false`] = js.native
+    var json: js.UndefOr[`false`] = js.undefined
   }
   object Json {
     
@@ -126,20 +121,19 @@ object anon {
     }
   }
   
-  @js.native
   trait JsonVerbose extends StObject {
     
-    var der: Uint8Array = js.native
+    var der: Uint8Array
     
-    var json: `false` = js.native
+    var json: `false`
     
-    var verbose: `true` = js.native
+    var verbose: `true`
   }
   object JsonVerbose {
     
     @scala.inline
-    def apply(der: Uint8Array, json: `false`, verbose: `true`): JsonVerbose = {
-      val __obj = js.Dynamic.literal(der = der.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    def apply(der: Uint8Array): JsonVerbose = {
+      val __obj = js.Dynamic.literal(der = der.asInstanceOf[js.Any], json = false, verbose = true)
       __obj.asInstanceOf[JsonVerbose]
     }
     
@@ -157,20 +151,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Verbose extends StObject {
     
-    var der: Uint8Array = js.native
+    var der: Uint8Array
     
-    var json: `false` = js.native
+    var json: `false`
     
-    var verbose: js.UndefOr[`false`] = js.native
+    var verbose: js.UndefOr[`false`] = js.undefined
   }
   object Verbose {
     
     @scala.inline
-    def apply(der: Uint8Array, json: `false`): Verbose = {
-      val __obj = js.Dynamic.literal(der = der.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any])
+    def apply(der: Uint8Array): Verbose = {
+      val __obj = js.Dynamic.literal(der = der.asInstanceOf[js.Any], json = false)
       __obj.asInstanceOf[Verbose]
     }
     

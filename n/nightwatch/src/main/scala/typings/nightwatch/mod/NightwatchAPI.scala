@@ -3,13 +3,13 @@ package typings.nightwatch.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NightwatchAPI
-  extends WebDriverProtocol
+  extends StObject
      with SharedCommands
+     with WebDriverProtocol
      with NightwatchCustomCommands {
   
   var Keys: NightwatchKeys = js.native
@@ -28,7 +28,7 @@ trait NightwatchAPI
   
   var options: NightwatchTestOptions = js.native
   
-  var page: StringDictionary[js.Function0[EnhancedPageObject[_, _, _]]] = js.native
+  var page: StringDictionary[js.Function0[EnhancedPageObject[js.Any, js.Any, js.Any]]] = js.native
   
   /**
     * SessionId of the session used by the Nightwatch api.

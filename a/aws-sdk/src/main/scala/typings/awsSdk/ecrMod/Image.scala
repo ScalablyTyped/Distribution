@@ -2,36 +2,34 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
   /**
     * An object containing the image tag and image digest associated with an image.
     */
-  var imageId: js.UndefOr[ImageIdentifier] = js.native
+  var imageId: js.UndefOr[ImageIdentifier] = js.undefined
   
   /**
     * The image manifest associated with the image.
     */
-  var imageManifest: js.UndefOr[ImageManifest] = js.native
+  var imageManifest: js.UndefOr[ImageManifest] = js.undefined
   
   /**
     * The manifest media type of the image.
     */
-  var imageManifestMediaType: js.UndefOr[MediaType] = js.native
+  var imageManifestMediaType: js.UndefOr[MediaType] = js.undefined
   
   /**
     * The AWS account ID associated with the registry containing the image.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The name of the repository associated with the image.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }
 object Image {
   

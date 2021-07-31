@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientBigquery.anon
 import typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.ErrorProto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Errors extends StObject {
   
   /** Error information for the row indicated by the index property. */
-  var errors: js.UndefOr[js.Array[ErrorProto]] = js.native
+  var errors: js.UndefOr[js.Array[ErrorProto]] = js.undefined
   
   /** The index of the row that error applies to. */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
 }
 object Errors {
   

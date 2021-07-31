@@ -3,16 +3,14 @@ package typings.gitlab.anon
 import typings.gitlab.resourceAccessRequestsMod.AccessLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  accessLevel :gitlab.gitlab/dist/types/core/templates/ResourceAccessRequests.AccessLevel | undefined} & gitlab.gitlab/dist/types/core/infrastructure.Sudo */
-@js.native
 trait accessLevelAccessLevelund extends StObject {
   
-  var accessLevel: js.UndefOr[AccessLevel] = js.native
+  var accessLevel: js.UndefOr[AccessLevel] = js.undefined
   
-  var sudo: js.UndefOr[String | Double] = js.native
+  var sudo: js.UndefOr[String | Double] = js.undefined
 }
 object accessLevelAccessLevelund {
   

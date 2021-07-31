@@ -2,26 +2,25 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HexColor
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
   
   @JSName("type")
-  var type_HexColor: typings.cssTree.cssTreeStrings.HexColor = js.native
+  var type_HexColor: typings.cssTree.cssTreeStrings.HexColor
   
-  var value: String = js.native
+  var value: String
 }
 object HexColor {
   
   @scala.inline
-  def apply(`type`: typings.cssTree.cssTreeStrings.HexColor, value: String): HexColor = {
+  def apply(value: String): HexColor = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("HexColor")
     __obj.asInstanceOf[HexColor]
   }
   

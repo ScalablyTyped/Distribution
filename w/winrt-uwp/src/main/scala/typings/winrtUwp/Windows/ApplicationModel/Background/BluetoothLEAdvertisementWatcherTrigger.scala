@@ -4,30 +4,28 @@ import typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdver
 import typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothSignalStrengthFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that is registered to scan for Bluetooth LE advertisement in the background. */
-@js.native
 trait BluetoothLEAdvertisementWatcherTrigger extends StObject {
   
   /** Gets or sets the configuration of Bluetooth LE advertisement filtering that uses payload section-based filtering. */
-  var advertisementFilter: BluetoothLEAdvertisementFilter = js.native
+  var advertisementFilter: BluetoothLEAdvertisementFilter
   
   /** Gets the maximum out of range timeout supported for the SignalStrengthFilter property of this trigger. */
-  var maxOutOfRangeTimeout: Double = js.native
+  var maxOutOfRangeTimeout: Double
   
   /** Gets the maximum sampling interval supported for the SignalStrengthFilter property of this trigger. The maximum sampling interval is used to deactivate the sampling filter and only trigger received events based on the device coming in and out of range. */
-  var maxSamplingInterval: Double = js.native
+  var maxSamplingInterval: Double
   
   /** Gets the minimum out of range timeout supported for the SignalStrengthFilter property of this trigger. */
-  var minOutOfRangeTimeout: Double = js.native
+  var minOutOfRangeTimeout: Double
   
   /** Gets the minimum sampling interval supported for the SignalStrengthFilter property of this trigger. The minimum sampling interval for the background watcher cannot be zero unlike its foreground counterpart. */
-  var minSamplingInterval: Double = js.native
+  var minSamplingInterval: Double
   
   /** Gets or sets the configuration of Bluetooth LE advertisement filtering that uses signal strength-based filtering. */
-  var signalStrengthFilter: BluetoothSignalStrengthFilter = js.native
+  var signalStrengthFilter: BluetoothSignalStrengthFilter
 }
 object BluetoothLEAdvertisementWatcherTrigger {
   

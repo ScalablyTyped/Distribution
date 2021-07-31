@@ -11,10 +11,13 @@ import typings.tensorflowTfjsCore.distTypesMod.PixelData
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browser {
+  
+  @JSImport("@tensorflow/tfjs", "browser")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs", "browser.fromPixels")
   @js.native
@@ -24,10 +27,12 @@ object browser {
     Tensor3D
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs", "browser.toPixels")
-  @js.native
-  def toPixels(img: Tensor2D | Tensor3D | TensorLike): js.Promise[Uint8ClampedArray] = js.native
-  @JSImport("@tensorflow/tfjs", "browser.toPixels")
-  @js.native
-  def toPixels(img: Tensor2D | Tensor3D | TensorLike, canvas: HTMLCanvasElement): js.Promise[Uint8ClampedArray] = js.native
+  @scala.inline
+  def toPixels(img: Tensor2D | Tensor3D): js.Promise[Uint8ClampedArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPixels")(img.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Uint8ClampedArray]]
+  @scala.inline
+  def toPixels(img: Tensor2D | Tensor3D, canvas: HTMLCanvasElement): js.Promise[Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPixels")(img.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8ClampedArray]]
+  @scala.inline
+  def toPixels(img: TensorLike): js.Promise[Uint8ClampedArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPixels")(img.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Uint8ClampedArray]]
+  @scala.inline
+  def toPixels(img: TensorLike, canvas: HTMLCanvasElement): js.Promise[Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPixels")(img.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8ClampedArray]]
 }

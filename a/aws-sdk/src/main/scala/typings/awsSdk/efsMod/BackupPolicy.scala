@@ -2,16 +2,14 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupPolicy extends StObject {
   
   /**
     * Describes the status of the file system's backup policy.     ENABLED - EFS is automatically backing up the file system.      ENABLING - EFS is turning on automatic backups for the file system.      DISABLED - automatic back ups are turned off for the file system.      DISABLED - EFS is turning off automatic backups for the file system.   
     */
-  var Status: typings.awsSdk.efsMod.Status = js.native
+  var Status: typings.awsSdk.efsMod.Status
 }
 object BackupPolicy {
   

@@ -2,7 +2,6 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * a subset of the standard EventEmitter node module API.
   */
 @js.native
-trait NativeEventEmitter extends EventEmitter {
+trait NativeEventEmitter
+  extends StObject
+     with EventEmitter {
   
   def addListener(eventType: String, listener: js.Function1[/* event */ js.Any, Unit], context: js.Object): EmitterSubscription = js.native
 }

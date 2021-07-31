@@ -5,7 +5,6 @@ import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicesGlacierMod {
@@ -28,12 +27,11 @@ object servicesGlacierMod {
     def computeChecksums(data: Buffer): GlacierComputeChecksumsOutput = js.native
   }
   
-  @js.native
   trait GlacierComputeChecksumsOutput extends StObject {
     
-    var linearHash: String = js.native
+    var linearHash: String
     
-    var treeHash: String = js.native
+    var treeHash: String
   }
   object GlacierComputeChecksumsOutput {
     

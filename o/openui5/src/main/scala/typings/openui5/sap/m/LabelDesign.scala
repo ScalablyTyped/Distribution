@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait LabelDesign extends StObject
 object LabelDesign extends StObject {
   
   @js.native
-  sealed trait Bold extends LabelDesign
+  sealed trait Bold
+    extends StObject
+       with LabelDesign
   
   @js.native
-  sealed trait Standard extends LabelDesign
+  sealed trait Standard
+    extends StObject
+       with LabelDesign
 }

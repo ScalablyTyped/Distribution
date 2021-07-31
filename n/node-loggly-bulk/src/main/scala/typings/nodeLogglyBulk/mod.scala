@@ -6,53 +6,58 @@ import typings.loggly.mod.LogglyOptions
 import typings.nodeLogglyBulk.anon.RetriesInMilliSeconds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("node-loggly-bulk", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("node-loggly-bulk", "Loggly")
   @js.native
-  class Loggly protected () extends LogglyInstance {
+  class Loggly protected ()
+    extends StObject
+       with LogglyInstance {
     def this(options: LogglyBulkOptions) = this()
   }
   @JSImport("node-loggly-bulk", "Loggly")
   @js.native
   val Loggly: LogglyBulkConstructor = js.native
   
-  @JSImport("node-loggly-bulk", "createClient")
-  @js.native
-  def createClient(options: LogglyBulkOptions): LogglyInstance = js.native
+  @scala.inline
+  def createClient(options: LogglyBulkOptions): LogglyInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[LogglyInstance]
   
-  @JSImport("node-loggly-bulk", "serialize")
-  @js.native
-  def serialize(obj: js.Any): String = js.native
-  @JSImport("node-loggly-bulk", "serialize")
-  @js.native
-  def serialize(obj: js.Any, key: String): String = js.native
+  @scala.inline
+  def serialize(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def serialize(obj: js.Any, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("node-loggly-bulk", "version")
   @js.native
   val version: String = js.native
   
   @js.native
-  trait LogglyBulkConstructor extends Instantiable1[/* options */ LogglyBulkOptions, LogglyInstance]
+  trait LogglyBulkConstructor
+    extends StObject
+       with Instantiable1[/* options */ LogglyBulkOptions, LogglyInstance]
   
-  @js.native
-  trait LogglyBulkOptions extends LogglyOptions {
+  trait LogglyBulkOptions
+    extends StObject
+       with LogglyOptions {
     
-    var bufferOptions: js.UndefOr[RetriesInMilliSeconds] = js.native
+    var bufferOptions: js.UndefOr[RetriesInMilliSeconds] = js.undefined
     
-    var isBulk: js.UndefOr[Boolean] = js.native
+    var isBulk: js.UndefOr[Boolean] = js.undefined
     
-    var networkErrorsOnConsole: js.UndefOr[Boolean] = js.native
+    var networkErrorsOnConsole: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.native
+    var proxy: js.UndefOr[js.Any] = js.undefined
     
-    var useTagHeader: js.UndefOr[Boolean] = js.native
+    var useTagHeader: js.UndefOr[Boolean] = js.undefined
     
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
   }
   object LogglyBulkOptions {
     

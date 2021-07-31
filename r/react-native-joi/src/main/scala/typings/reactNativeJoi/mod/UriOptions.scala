@@ -3,27 +3,25 @@ package typings.reactNativeJoi.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UriOptions extends StObject {
   
   /**
     * Allow relative URIs. Defaults to `false`.
     */
-  var allowRelative: js.UndefOr[Boolean] = js.native
+  var allowRelative: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Restrict only relative URIs. Defaults to `false`.
     */
-  var relativeOnly: js.UndefOr[Boolean] = js.native
+  var relativeOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies one or more acceptable Schemes, should only include the scheme name.
     * Can be an Array or String (strings are automatically escaped for use in a Regular Expression).
     */
-  var scheme: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+  var scheme: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
 }
 object UriOptions {
   

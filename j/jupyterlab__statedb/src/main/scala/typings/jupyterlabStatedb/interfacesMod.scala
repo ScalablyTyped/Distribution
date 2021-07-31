@@ -10,7 +10,6 @@ import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
@@ -60,7 +59,7 @@ object interfacesMod {
       * tested for. For example, some back-ends may return a copy of the item of
       * type `T` being removed while others may return no content.
       */
-    def remove(id: V): js.Promise[_] = js.native
+    def remove(id: V): js.Promise[js.Any] = js.native
     
     /**
       * Save a value using the data connector.
@@ -77,11 +76,12 @@ object interfacesMod {
       * tested for. For example, some back-ends may return a copy of the item of
       * type `T` being saved while others may return no content.
       */
-    def save(id: V, value: U): js.Promise[_] = js.native
+    def save(id: V, value: U): js.Promise[js.Any] = js.native
   }
   
-  @js.native
-  trait IObjectPool[T /* <: IObservableDisposable */] extends IDisposable {
+  trait IObjectPool[T /* <: IObservableDisposable */]
+    extends StObject
+       with IDisposable {
     
     /**
       * A signal emitted when an object is added.
@@ -89,12 +89,12 @@ object interfacesMod {
       * ####
       * This signal does not emit if an object is added using `inject()`.
       */
-    val added: ISignal[this.type, T] = js.native
+    val added: ISignal[this.type, T]
     
     /**
       * The current object.
       */
-    val current: T | Null = js.native
+    val current: T | Null
     
     /**
       * A signal emitted when the current object changes.
@@ -102,14 +102,14 @@ object interfacesMod {
       * #### Notes
       * If the last object being tracked is disposed, `null` will be emitted.
       */
-    val currentChanged: ISignal[this.type, T | Null] = js.native
+    val currentChanged: ISignal[this.type, T | Null]
     
     /**
       * Filter the objects in the pool based on a predicate.
       *
       * @param fn - The function by which to filter.
       */
-    def filter(fn: js.Function1[/* obj */ T, Boolean]): js.Array[T] = js.native
+    def filter(fn: js.Function1[/* obj */ T, Boolean]): js.Array[T]
     
     /**
       * Find the first object in the pool that satisfies a filter function.
@@ -119,31 +119,31 @@ object interfacesMod {
       * #### Notes
       * If nothing is found, the value returned is `undefined`.
       */
-    def find(fn: js.Function1[/* obj */ T, Boolean]): js.UndefOr[T] = js.native
+    def find(fn: js.Function1[/* obj */ T, Boolean]): js.UndefOr[T]
     
     /**
       * Iterate through each object in the pool.
       *
       * @param fn - The function to call on each object.
       */
-    def forEach(fn: js.Function1[/* obj */ T, Unit]): Unit = js.native
+    def forEach(fn: js.Function1[/* obj */ T, Unit]): Unit
     
     /**
       * Check if this pool has the specified object.
       *
       * @param obj - The object whose existence is being checked.
       */
-    def has(obj: T): Boolean = js.native
+    def has(obj: T): Boolean
     
     /**
       * The number of objects held by the pool.
       */
-    val size: Double = js.native
+    val size: Double
     
     /**
       * A signal emitted when an object is updated.
       */
-    val updated: ISignal[this.type, T] = js.native
+    val updated: ISignal[this.type, T]
   }
   object IObjectPool {
     
@@ -160,12 +160,12 @@ object interfacesMod {
       size: Double,
       updated: ISignal[IObjectPool[T], T]
     ): IObjectPool[T] = {
-      val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], currentChanged = currentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), forEach = js.Any.fromFunction1(forEach), has = js.Any.fromFunction1(has), isDisposed = isDisposed.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], currentChanged = currentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), forEach = js.Any.fromFunction1(forEach), has = js.Any.fromFunction1(has), isDisposed = isDisposed.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any], current = null)
       __obj.asInstanceOf[IObjectPool[T]]
     }
     
     @scala.inline
-    implicit class IObjectPoolMutableBuilder[Self <: IObjectPool[_], T /* <: IObservableDisposable */] (val x: Self with IObjectPool[T]) extends AnyVal {
+    implicit class IObjectPoolMutableBuilder[Self <: IObjectPool[?], T /* <: IObservableDisposable */] (val x: Self & IObjectPool[T]) extends AnyVal {
       
       @scala.inline
       def setAdded(value: ISignal[IObjectPool[T], T]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
@@ -199,7 +199,6 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait IRestorable[T /* <: IObservableDisposable */, U] extends StObject {
     
     /**
@@ -210,12 +209,12 @@ object interfacesMod {
       * @returns A promise that settles when restored with `any` results.
       *
       */
-    def restore(options: IOptions[T]): js.Promise[U] = js.native
+    def restore(options: IOptions[T]): js.Promise[U]
     
     /**
       * A promise that settles when the collection has been restored.
       */
-    val restored: js.Promise[U] = js.native
+    val restored: js.Promise[U]
   }
   object IRestorable {
     
@@ -230,19 +229,19 @@ object interfacesMod {
       *
       * @typeparam T - The type of object held by the restorable collection.
       */
-    @js.native
     trait IOptions[T /* <: IObservableDisposable */]
-      extends typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions[T] {
+      extends StObject
+         with typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions[T] {
       
       /**
         * The data connector to fetch restore data.
         */
-      var connector: IDataConnector[ReadonlyPartialJSONValue, ReadonlyPartialJSONValue, String, String] = js.native
+      var connector: IDataConnector[ReadonlyPartialJSONValue, ReadonlyPartialJSONValue, String, String]
       
       /**
         * The command registry which holds the restore command.
         */
-      var registry: CommandRegistry = js.native
+      var registry: CommandRegistry
     }
     object IOptions {
       
@@ -258,7 +257,7 @@ object interfacesMod {
       }
       
       @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[_], T /* <: IObservableDisposable */] (val x: Self with IOptions[T]) extends AnyVal {
+      implicit class IOptionsMutableBuilder[Self <: IOptions[?], T /* <: IObservableDisposable */] (val x: Self & IOptions[T]) extends AnyVal {
         
         @scala.inline
         def setConnector(value: IDataConnector[ReadonlyPartialJSONValue, ReadonlyPartialJSONValue, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
@@ -269,7 +268,7 @@ object interfacesMod {
     }
     
     @scala.inline
-    implicit class IRestorableMutableBuilder[Self <: IRestorable[_, _], T /* <: IObservableDisposable */, U] (val x: Self with (IRestorable[T, U])) extends AnyVal {
+    implicit class IRestorableMutableBuilder[Self <: IRestorable[?, ?], T /* <: IObservableDisposable */, U] (val x: Self & (IRestorable[T, U])) extends AnyVal {
       
       @scala.inline
       def setRestore(value: IOptions[T] => js.Promise[U]): Self = StObject.set(x, "restore", js.Any.fromFunction1(value))
@@ -279,8 +278,7 @@ object interfacesMod {
     }
   }
   
-  @js.native
-  trait IRestorer[T /* <: IRestorable[U, _] */, U /* <: IObservableDisposable */, V] extends StObject {
+  trait IRestorer[T /* <: IRestorable[U, js.Any] */, U /* <: IObservableDisposable */, V] extends StObject {
     
     /**
       * Restore the objects in a given restorable collection.
@@ -292,17 +290,17 @@ object interfacesMod {
       * @returns A promise that settles when restored with `any` results.
       *
       */
-    def restore(restorable: T, options: IOptions[U]): js.Promise[V] = js.native
+    def restore(restorable: T, options: IOptions[U]): js.Promise[V]
     
     /**
       * A promise that settles when the collection has been restored.
       */
-    val restored: js.Promise[V] = js.native
+    val restored: js.Promise[V]
   }
   object IRestorer {
     
     @scala.inline
-    def apply[T /* <: IRestorable[U, _] */, U /* <: IObservableDisposable */, V](
+    def apply[T /* <: IRestorable[U, js.Any] */, U /* <: IObservableDisposable */, V](
       restore: (T, typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[U]) => js.Promise[V],
       restored: js.Promise[V]
     ): IRestorer[T, U, V] = {
@@ -315,28 +313,27 @@ object interfacesMod {
       *
       * @typeparam T - The type of object held by the restorable collection.
       */
-    @js.native
     trait IOptions[T /* <: IObservableDisposable */] extends StObject {
       
       /**
         * A function that returns the args needed to restore an instance.
         */
-      var args: js.UndefOr[js.Function1[/* obj */ T, ReadonlyPartialJSONObject]] = js.native
+      var args: js.UndefOr[js.Function1[/* obj */ T, ReadonlyPartialJSONObject]] = js.undefined
       
       /**
         * The command to execute when restoring instances.
         */
-      var command: String = js.native
+      var command: String
       
       /**
         * A function that returns a unique persistent name for this instance.
         */
-      def name(obj: T): String = js.native
+      def name(obj: T): String
       
       /**
         * The point after which it is safe to restore state.
         */
-      var when: js.UndefOr[js.Promise[_] | js.Array[js.Promise[_]]] = js.native
+      var when: js.UndefOr[js.Promise[js.Any] | js.Array[js.Promise[js.Any]]] = js.undefined
     }
     object IOptions {
       
@@ -347,7 +344,7 @@ object interfacesMod {
       }
       
       @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions[_], T /* <: IObservableDisposable */] (val x: Self with typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions[T]) extends AnyVal {
+      implicit class IOptionsMutableBuilder[Self <: typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions[?], T /* <: IObservableDisposable */] (val x: Self & typings.jupyterlabStatedb.interfacesMod.IRestorer.IOptions[T]) extends AnyVal {
         
         @scala.inline
         def setArgs(value: /* obj */ T => ReadonlyPartialJSONObject): Self = StObject.set(x, "args", js.Any.fromFunction1(value))
@@ -362,7 +359,7 @@ object interfacesMod {
         def setName(value: T => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
         
         @scala.inline
-        def setWhen(value: js.Promise[_] | js.Array[js.Promise[_]]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+        def setWhen(value: js.Promise[js.Any] | js.Array[js.Promise[js.Any]]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
@@ -373,7 +370,7 @@ object interfacesMod {
     }
     
     @scala.inline
-    implicit class IRestorerMutableBuilder[Self <: IRestorer[_, _, _], T /* <: IRestorable[U, _] */, U /* <: IObservableDisposable */, V] (val x: Self with (IRestorer[T, U, V])) extends AnyVal {
+    implicit class IRestorerMutableBuilder[Self <: IRestorer[?, ?, ?], T /* <: IRestorable[U, js.Any] */, U /* <: IObservableDisposable */, V] (val x: Self & (IRestorer[T, U, V])) extends AnyVal {
       
       @scala.inline
       def setRestore(value: (T, typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[U]) => js.Promise[V]): Self = StObject.set(x, "restore", js.Any.fromFunction2(value))

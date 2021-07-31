@@ -8,7 +8,6 @@ import typings.node.streamMod.WritableOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object batchMod {
@@ -22,18 +21,18 @@ object batchMod {
     def check(callback: js.Function1[/* batchInfo */ BatchInfo, Unit]): js.Promise[BatchInfo] = js.native
     
     def execute(): Batch = js.native
-    def execute(
-      input: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
-    ): Batch = js.native
     def execute(input: String): Batch = js.native
     def execute(
       input: String,
       callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
-    def execute(input: js.Array[Record[_]]): Batch = js.native
+    def execute(input: js.Array[Record[js.Any]]): Batch = js.native
     def execute(
-      input: js.Array[Record[_]],
+      input: js.Array[Record[js.Any]],
+      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+    ): Batch = js.native
+    def execute(
+      input: Unit,
       callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
     def execute(input: Stream): Batch = js.native
@@ -47,27 +46,26 @@ object batchMod {
     def retrieve(): js.Promise[js.Array[BatchResultInfo | RecordResult]] = js.native
     def retrieve(callback: js.Function1[/* batchInfo */ BatchInfo, Unit]): js.Promise[js.Array[BatchResultInfo | RecordResult]] = js.native
     
-    def `then`(): js.Promise[_] = js.native
+    def `then`(): js.Promise[js.Any] = js.native
     
     def thenAll(callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
   }
   
-  @js.native
   trait BatchInfo extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var jobId: String = js.native
+    var jobId: String
     
-    var numberRecordsFailed: String = js.native
+    var numberRecordsFailed: String
     
-    var numberRecordsProcessed: String = js.native
+    var numberRecordsProcessed: String
     
-    var state: String = js.native
+    var state: String
     
-    var stateMessage: String = js.native
+    var stateMessage: String
     
-    var totalProcessingTime: String = js.native
+    var totalProcessingTime: String
   }
   object BatchInfo {
     
@@ -111,18 +109,17 @@ object batchMod {
     }
   }
   
-  @js.native
   trait BatchResultInfo extends StObject {
     
-    var batchId: js.UndefOr[String] = js.native
+    var batchId: js.UndefOr[String] = js.undefined
     
-    var errors: js.UndefOr[js.Array[String]] = js.native
+    var errors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var jobId: js.UndefOr[String] = js.native
+    var jobId: js.UndefOr[String] = js.undefined
     
-    var success: js.UndefOr[Boolean] = js.native
+    var success: js.UndefOr[Boolean] = js.undefined
   }
   object BatchResultInfo {
     

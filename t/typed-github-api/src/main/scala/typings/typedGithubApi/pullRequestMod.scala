@@ -14,61 +14,59 @@ import typings.typedGithubApi.typedGithubApiStrings.open
 import typings.typedGithubApi.userMod.UserSummary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pullRequestMod {
   
-  @js.native
   trait PullRequest extends StObject {
     
-    var assignee: UserSummary | Null = js.native
+    var assignee: UserSummary | Null
     
-    var assignees: js.Array[UserSummary] = js.native
+    var assignees: js.Array[UserSummary]
     
-    var base: BranchSummary = js.native
+    var base: BranchSummary
     
-    var body: String = js.native
+    var body: String
     
-    var closed_at: Date | Null = js.native
+    var closed_at: Date | Null
     
-    var comments_url: String = js.native
+    var comments_url: String
     
-    var commits_url: String = js.native
+    var commits_url: String
     
-    var created_at: Date = js.native
+    var created_at: Date
     
-    var head: BranchSummary = js.native
+    var head: BranchSummary
     
-    var html_url: String = js.native
+    var html_url: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var issue_url: String = js.native
+    var issue_url: String
     
-    var locked: Boolean = js.native
+    var locked: Boolean
     
-    var merged_at: Date | Null = js.native
+    var merged_at: Date | Null
     
-    var milestone: Milestone | Null = js.native
+    var milestone: Milestone | Null
     
-    var number: Double = js.native
+    var number: Double
     
-    var review_comment_url: String = js.native
+    var review_comment_url: String
     
-    var review_comments_url: String = js.native
+    var review_comments_url: String
     
-    var state: open | closed = js.native
+    var state: open | closed
     
-    var statuses_url: String = js.native
+    var statuses_url: String
     
-    var title: String = js.native
+    var title: String
     
-    var updated_at: Date = js.native
+    var updated_at: Date
     
-    var url: String = js.native
+    var url: String
     
-    var user: UserSummary = js.native
+    var user: UserSummary
   }
   object PullRequest {
     
@@ -95,7 +93,7 @@ object pullRequestMod {
       url: String,
       user: UserSummary
     ): PullRequest = {
-      val __obj = js.Dynamic.literal(assignees = assignees.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_url = issue_url.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], review_comment_url = review_comment_url.asInstanceOf[js.Any], review_comments_url = review_comments_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(assignees = assignees.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_url = issue_url.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], review_comment_url = review_comment_url.asInstanceOf[js.Any], review_comments_url = review_comments_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], assignee = null, closed_at = null, merged_at = null, milestone = null)
       __obj.asInstanceOf[PullRequest]
     }
     
@@ -191,22 +189,21 @@ object pullRequestMod {
     }
   }
   
-  @js.native
   trait Review extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var commit_id: String = js.native
+    var commit_id: String
     
-    var html_url: String = js.native
+    var html_url: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var pull_request_url: String = js.native
+    var pull_request_url: String
     
-    var state: APPROVED | CHANGES_REQUESTED | COMMENTED | DISMISSED = js.native
+    var state: APPROVED | CHANGES_REQUESTED | COMMENTED | DISMISSED
     
-    var user: UserSummary = js.native
+    var user: UserSummary
   }
   object Review {
     
@@ -250,24 +247,25 @@ object pullRequestMod {
     }
   }
   
-  @js.native
-  trait ReviewComment extends IssueComment {
+  trait ReviewComment
+    extends StObject
+       with IssueComment {
     
-    var commit_id: String = js.native
+    var commit_id: String
     
-    var diff_hunk: String = js.native
+    var diff_hunk: String
     
-    var original_commit_id: String = js.native
+    var original_commit_id: String
     
-    var original_position: Double = js.native
+    var original_position: Double
     
-    var path: String = js.native
+    var path: String
     
-    var position: Double = js.native
+    var position: Double
     
-    var pull_request_review_id: Double = js.native
+    var pull_request_review_id: Double
     
-    var pull_request_url: String = js.native
+    var pull_request_url: String
   }
   object ReviewComment {
     
@@ -322,12 +320,11 @@ object pullRequestMod {
     }
   }
   
-  @js.native
   trait ReviewRequests extends StObject {
     
-    var teams: js.Array[Team] = js.native
+    var teams: js.Array[Team]
     
-    var users: js.Array[UserSummary] = js.native
+    var users: js.Array[UserSummary]
   }
   object ReviewRequests {
     

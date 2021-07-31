@@ -2,7 +2,6 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "MatchAllFilter")
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /*
   A filter that matches on all documents
   */
-class MatchAllFilter () extends Filter {
+class MatchAllFilter ()
+  extends StObject
+     with Filter {
   
   /*
     The type of ejs object.  For internal use only.

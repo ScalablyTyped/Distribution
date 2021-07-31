@@ -2,16 +2,14 @@ package typings.sauronjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofComponent extends StObject {
     
     /* static member */
-    var _index: Double = js.native
+    var _index: Double
   }
   object TypeofComponent {
     

@@ -11,8 +11,8 @@ Strip unused locales from Moment.js
 | Full name          | moment-locales-webpack-plugin |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 28 |
-| # downloads        | 9142057 |
+| # dependents       | 31 |
+| # downloads        | 11529004 |
 | # stars            | 0 |
 
 ## Links

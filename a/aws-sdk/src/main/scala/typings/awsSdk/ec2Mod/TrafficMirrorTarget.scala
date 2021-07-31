@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrafficMirrorTarget extends StObject {
   
   /**
     * Information about the Traffic Mirror target.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The network interface ID that is attached to the target.
     */
-  var NetworkInterfaceId: js.UndefOr[String] = js.native
+  var NetworkInterfaceId: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Network Load Balancer.
     */
-  var NetworkLoadBalancerArn: js.UndefOr[String] = js.native
+  var NetworkLoadBalancerArn: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the account that owns the Traffic Mirror target.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The tags assigned to the Traffic Mirror target.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the Traffic Mirror target.
     */
-  var TrafficMirrorTargetId: js.UndefOr[String] = js.native
+  var TrafficMirrorTargetId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of Traffic Mirror target.
     */
-  var Type: js.UndefOr[TrafficMirrorTargetType] = js.native
+  var Type: js.UndefOr[TrafficMirrorTargetType] = js.undefined
 }
 object TrafficMirrorTarget {
   

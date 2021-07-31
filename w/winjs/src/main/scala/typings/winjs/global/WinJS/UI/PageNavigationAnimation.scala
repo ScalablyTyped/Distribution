@@ -2,7 +2,6 @@ package typings.winjs.global.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PageNavigationAnimation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.winjs.WinJS.UI.PageNavigationAnimation with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.winjs.WinJS.UI.PageNavigationAnimation & Double] = js.native
   
-  /* 3 */ val continuum: typings.winjs.WinJS.UI.PageNavigationAnimation.continuum with Double = js.native
+  /* 3 */ val continuum: typings.winjs.WinJS.UI.PageNavigationAnimation.continuum & Double = js.native
   
-  /* 2 */ val enterPage: typings.winjs.WinJS.UI.PageNavigationAnimation.enterPage with Double = js.native
+  /* 2 */ val enterPage: typings.winjs.WinJS.UI.PageNavigationAnimation.enterPage & Double = js.native
   
-  /* 1 */ val slide: typings.winjs.WinJS.UI.PageNavigationAnimation.slide with Double = js.native
+  /* 1 */ val slide: typings.winjs.WinJS.UI.PageNavigationAnimation.slide & Double = js.native
   
-  /* 0 */ val turnstile: typings.winjs.WinJS.UI.PageNavigationAnimation.turnstile with Double = js.native
+  /* 0 */ val turnstile: typings.winjs.WinJS.UI.PageNavigationAnimation.turnstile & Double = js.native
 }

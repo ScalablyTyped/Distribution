@@ -4,32 +4,32 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.dotbin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DotBinTransform extends _Transforms {
+trait DotBinTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[String | SignalRef] = js.native
+  var as: js.UndefOr[String | SignalRef] = js.undefined
   
-  var field: FieldRef = js.native
+  var field: FieldRef
   
-  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.native
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   
-  var signal: js.UndefOr[SignalName] = js.native
+  var signal: js.UndefOr[SignalName] = js.undefined
   
-  var smooth: js.UndefOr[Boolean | SignalRef] = js.native
+  var smooth: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var step: js.UndefOr[Double | SignalRef] = js.native
+  var step: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var `type`: dotbin = js.native
+  var `type`: dotbin
 }
 object DotBinTransform {
   
   @scala.inline
-  def apply(field: FieldRef, `type`: dotbin): DotBinTransform = {
+  def apply(field: FieldRef): DotBinTransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("dotbin")
     __obj.asInstanceOf[DotBinTransform]
   }
   

@@ -3,20 +3,18 @@ package typings.apolloReportingProtobuf.protobufMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPathErrorStats extends StObject {
   
   /** PathErrorStats children */
-  var children: js.UndefOr[StringDictionary[IPathErrorStats] | Null] = js.native
+  var children: js.UndefOr[StringDictionary[IPathErrorStats] | Null] = js.undefined
   
   /** PathErrorStats errorsCount */
-  var errorsCount: js.UndefOr[Double | Null] = js.native
+  var errorsCount: js.UndefOr[Double | Null] = js.undefined
   
   /** PathErrorStats requestsWithErrorsCount */
-  var requestsWithErrorsCount: js.UndefOr[Double | Null] = js.native
+  var requestsWithErrorsCount: js.UndefOr[Double | Null] = js.undefined
 }
 object IPathErrorStats {
   

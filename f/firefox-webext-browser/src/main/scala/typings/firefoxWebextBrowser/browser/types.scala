@@ -3,7 +3,6 @@ package typings.firefoxWebextBrowser.browser
 import typings.firefoxWebextBrowser.WebExtEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,11 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object types {
   
   /** Which setting to clear. */
-  @js.native
   trait ClearDetails extends StObject {
     
     /** Where to clear the setting (default: regular). */
-    var scope: js.UndefOr[SettingScope] = js.native
+    var scope: js.UndefOr[SettingScope] = js.undefined
   }
   object ClearDetails {
     
@@ -40,11 +38,10 @@ object types {
   }
   
   /** Which setting to consider. */
-  @js.native
   trait GetDetails extends StObject {
     
     /** Whether to return the value that applies to the incognito session (default false). */
-    var incognito: js.UndefOr[Boolean] = js.native
+    var incognito: js.UndefOr[Boolean] = js.undefined
   }
   object GetDetails {
     
@@ -66,20 +63,19 @@ object types {
   }
   
   /** Details of the currently effective value. */
-  @js.native
   trait GetReturnDetails extends StObject {
     
     /**
       * Whether the effective value is specific to the incognito session.
       * This property will _only_ be present if the `incognito` property in the `details` parameter of `get()` was true.
       */
-    var incognitoSpecific: js.UndefOr[Boolean] = js.native
+    var incognitoSpecific: js.UndefOr[Boolean] = js.undefined
     
     /** The level of control of the setting. */
-    var levelOfControl: LevelOfControl = js.native
+    var levelOfControl: LevelOfControl
     
     /** The value of the setting. */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object GetReturnDetails {
     
@@ -136,20 +132,19 @@ object types {
     def not_controllable: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_controllable = "not_controllable".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_controllable]
   }
   
-  @js.native
   trait OnChangeDetails extends StObject {
     
     /**
       * Whether the value that has changed is specific to the incognito session.
       * This property will _only_ be present if the user has enabled the extension in incognito mode.
       */
-    var incognitoSpecific: js.UndefOr[Boolean] = js.native
+    var incognitoSpecific: js.UndefOr[Boolean] = js.undefined
     
     /** The level of control of the setting. */
-    var levelOfControl: LevelOfControl = js.native
+    var levelOfControl: LevelOfControl
     
     /** The value of the setting after the change. */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object OnChangeDetails {
     
@@ -177,17 +172,16 @@ object types {
   }
   
   /** Which setting to change. */
-  @js.native
   trait SetDetails extends StObject {
     
     /** Where to set the setting (default: regular). */
-    var scope: js.UndefOr[SettingScope] = js.native
+    var scope: js.UndefOr[SettingScope] = js.undefined
     
     /**
       * The value of the setting.
       * Note that every setting has a specific value type, which is described together with the setting. An extension should _not_ set a value of a different type.
       */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object SetDetails {
     
@@ -211,29 +205,28 @@ object types {
     }
   }
   
-  @js.native
   trait Setting extends StObject {
     
     /**
       * Clears the setting, restoring any default value.
       * @param details Which setting to clear.
       */
-    def clear(details: ClearDetails): js.Promise[Unit] = js.native
+    def clear(details: ClearDetails): js.Promise[Unit]
     
     /**
       * Gets the value of a setting.
       * @param details Which setting to consider.
       */
-    def get(details: GetDetails): js.Promise[GetReturnDetails] = js.native
+    def get(details: GetDetails): js.Promise[GetReturnDetails]
     
     /** Fired after the setting changes. */
-    var onChange: WebExtEvent[js.Function1[/* details */ OnChangeDetails, Unit]] = js.native
+    var onChange: WebExtEvent[js.Function1[/* details */ OnChangeDetails, Unit]]
     
     /**
       * Sets the value of a setting.
       * @param details Which setting to change.
       */
-    def set(details: SetDetails): js.Promise[Unit] = js.native
+    def set(details: SetDetails): js.Promise[Unit]
   }
   object Setting {
     

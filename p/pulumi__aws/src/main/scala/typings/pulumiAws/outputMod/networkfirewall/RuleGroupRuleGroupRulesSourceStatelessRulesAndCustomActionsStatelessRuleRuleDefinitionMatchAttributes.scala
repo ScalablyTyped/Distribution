@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.networkfirewall
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
     js.Array[
       RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set of configuration blocks describing the destination IP address and address ranges to inspect for, in CIDR notation. If not specified, this matches with any destination address. See Destination below for details.
@@ -24,12 +22,12 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
     js.Array[
       RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestination
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set of protocols to inspect for, specified using the protocol's assigned internet protocol number (IANA).
     */
-  var protocols: js.UndefOr[js.Array[Double]] = js.native
+  var protocols: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Set of configuration blocks describing the source ports to inspect for. If not specified, this matches with any source port. See Source Port below for details.
@@ -38,7 +36,7 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
     js.Array[
       RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set of configuration blocks describing the source IP address and address ranges to inspect for, in CIDR notation. If not specified, this matches with any source address. See Source below for details.
@@ -47,7 +45,7 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
     js.Array[
       RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSource
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set of configuration blocks containing the TCP flags and masks to inspect for. If not specified, this matches with any settings.
@@ -56,7 +54,7 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
     js.Array[
       RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes {
   

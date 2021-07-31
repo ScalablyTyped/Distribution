@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetDistributionCacheResult extends StObject {
   
   /**
     * The timestamp of the reset cache request (e.g., 1479734909.17) in Unix time format.
     */
-  var createTime: js.UndefOr[IsoDate] = js.native
+  var createTime: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * An array of objects that describe the result of the action, such as the status of the request, the timestamp of the request, and the resources affected by the request.
     */
-  var operation: js.UndefOr[Operation] = js.native
+  var operation: js.UndefOr[Operation] = js.undefined
   
   /**
     * The status of the reset cache request.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object ResetDistributionCacheResult {
   

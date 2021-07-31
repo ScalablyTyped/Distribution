@@ -2,61 +2,59 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConflictMetadata extends StObject {
   
   /**
     * A boolean value indicating whether there are conflicts in the content of a file.
     */
-  var contentConflict: js.UndefOr[IsContentConflict] = js.native
+  var contentConflict: js.UndefOr[IsContentConflict] = js.undefined
   
   /**
     * A boolean value indicating whether there are conflicts in the file mode of a file.
     */
-  var fileModeConflict: js.UndefOr[IsFileModeConflict] = js.native
+  var fileModeConflict: js.UndefOr[IsFileModeConflict] = js.undefined
   
   /**
     * The file modes of the file in the source, destination, and base of the merge.
     */
-  var fileModes: js.UndefOr[FileModes] = js.native
+  var fileModes: js.UndefOr[FileModes] = js.undefined
   
   /**
     * The path of the file that contains conflicts.
     */
-  var filePath: js.UndefOr[Path] = js.native
+  var filePath: js.UndefOr[Path] = js.undefined
   
   /**
     * The file sizes of the file in the source, destination, and base of the merge.
     */
-  var fileSizes: js.UndefOr[FileSizes] = js.native
+  var fileSizes: js.UndefOr[FileSizes] = js.undefined
   
   /**
     * A boolean value (true or false) indicating whether the file is binary or textual in the source, destination, and base of the merge.
     */
-  var isBinaryFile: js.UndefOr[IsBinaryFile] = js.native
+  var isBinaryFile: js.UndefOr[IsBinaryFile] = js.undefined
   
   /**
     * Whether an add, modify, or delete operation caused the conflict between the source and destination of the merge.
     */
-  var mergeOperations: js.UndefOr[MergeOperations] = js.native
+  var mergeOperations: js.UndefOr[MergeOperations] = js.undefined
   
   /**
     * The number of conflicts, including both hunk conflicts and metadata conflicts.
     */
-  var numberOfConflicts: js.UndefOr[NumberOfConflicts] = js.native
+  var numberOfConflicts: js.UndefOr[NumberOfConflicts] = js.undefined
   
   /**
     * A boolean value (true or false) indicating whether there are conflicts between the branches in the object type of a file, folder, or submodule.
     */
-  var objectTypeConflict: js.UndefOr[IsObjectTypeConflict] = js.native
+  var objectTypeConflict: js.UndefOr[IsObjectTypeConflict] = js.undefined
   
   /**
     * Information about any object type conflicts in a merge operation.
     */
-  var objectTypes: js.UndefOr[ObjectTypes] = js.native
+  var objectTypes: js.UndefOr[ObjectTypes] = js.undefined
 }
 object ConflictMetadata {
   

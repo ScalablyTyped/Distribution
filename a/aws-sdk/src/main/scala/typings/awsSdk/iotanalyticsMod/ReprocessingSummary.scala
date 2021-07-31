@@ -2,26 +2,24 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReprocessingSummary extends StObject {
   
   /**
     * The time the pipeline reprocessing was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The reprocessingId returned by StartPipelineReprocessing.
     */
-  var id: js.UndefOr[ReprocessingId] = js.native
+  var id: js.UndefOr[ReprocessingId] = js.undefined
   
   /**
     * The status of the pipeline reprocessing.
     */
-  var status: js.UndefOr[ReprocessingStatus] = js.native
+  var status: js.UndefOr[ReprocessingStatus] = js.undefined
 }
 object ReprocessingSummary {
   

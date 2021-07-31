@@ -6,19 +6,22 @@ import typings.koaSession.mod.stores
 import typings.redis.mod.ClientOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("koa2-session-redis", JSImport.Namespace)
   @js.native
-  class ^ () extends RedisStore {
+  class ^ ()
+    extends StObject
+       with RedisStore {
     def this(config: ClientOpts) = this()
   }
   
   @js.native
-  trait RedisStore extends stores {
+  trait RedisStore
+    extends StObject
+       with stores {
     
     /**
       * get session object by key

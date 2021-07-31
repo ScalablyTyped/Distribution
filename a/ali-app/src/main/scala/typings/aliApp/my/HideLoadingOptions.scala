@@ -2,16 +2,14 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HideLoadingOptions extends StObject {
   
   /**
     * 体指当前page实例，某些场景下，需要指明在哪个page执行hideLoading。
     */
-  var page: js.Any = js.native
+  var page: js.Any
 }
 object HideLoadingOptions {
   

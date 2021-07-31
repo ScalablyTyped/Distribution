@@ -4,14 +4,14 @@ import typings.googleAppsScript.GoogleAppsScript.Base.User
 import typings.googleAppsScript.GoogleAppsScript.Script.AuthMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: Is there a `user` attribute?
-@js.native
-trait CalendarEventUpdated extends AppsScriptEvent {
+trait CalendarEventUpdated
+  extends StObject
+     with AppsScriptEvent {
   
-  var calendarId: String = js.native
+  var calendarId: String
 }
 object CalendarEventUpdated {
   

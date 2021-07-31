@@ -9,19 +9,17 @@ import typings.astTypes.kindsMod.TSMethodSignatureKind
 import typings.astTypes.kindsMod.TSPropertySignatureKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyArray extends StObject {
   
   var body: js.Array[
     TSCallSignatureDeclarationKind | TSConstructSignatureDeclarationKind | TSIndexSignatureKind | TSMethodSignatureKind | TSPropertySignatureKind
-  ] = js.native
+  ]
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
 }
 object BodyArray {
   

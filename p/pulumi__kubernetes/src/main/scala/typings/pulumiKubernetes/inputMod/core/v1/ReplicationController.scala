@@ -4,39 +4,37 @@ import typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ReplicationController represents the configuration of a replication controller.
   */
-@js.native
 trait ReplicationController extends StObject {
   
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.v1]] = js.native
+  var apiVersion: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.v1]] = js.undefined
   
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
-  var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ReplicationController]] = js.native
+  var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ReplicationController]] = js.undefined
   
   /**
     * If the Labels of a ReplicationController are empty, they are defaulted to be the same as the Pod(s) that the replication controller manages. Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
-  var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+  var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
   
   /**
     * Spec defines the specification of the desired behavior of the replication controller. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
-  var spec: js.UndefOr[Input[ReplicationControllerSpec]] = js.native
+  var spec: js.UndefOr[Input[ReplicationControllerSpec]] = js.undefined
   
   /**
     * Status is the most recently observed status of the replication controller. This data may be out of date by some window of time. Populated by the system. Read-only. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
-  var status: js.UndefOr[Input[ReplicationControllerStatus]] = js.native
+  var status: js.UndefOr[Input[ReplicationControllerStatus]] = js.undefined
 }
 object ReplicationController {
   

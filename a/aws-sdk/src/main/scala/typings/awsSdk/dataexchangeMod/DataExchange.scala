@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,7 +23,7 @@ trait DataExchange extends Service {
   def cancelJob(params: CancelJobRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   
   @JSName("config")
-  var config_DataExchange: ConfigBase with ClientConfiguration = js.native
+  var config_DataExchange: ConfigBase & ClientConfiguration = js.native
   
   /**
     * This operation creates a data set.

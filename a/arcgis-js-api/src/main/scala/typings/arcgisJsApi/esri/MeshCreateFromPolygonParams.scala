@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MeshCreateFromPolygonParams extends Object {
+trait MeshCreateFromPolygonParams
+  extends StObject
+     with Object {
   
   /**
     * The material to be used for the mesh.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromPolygon)
     */
-  var material: js.UndefOr[MeshMaterial] = js.native
+  var material: js.UndefOr[MeshMaterial] = js.undefined
 }
 object MeshCreateFromPolygonParams {
   

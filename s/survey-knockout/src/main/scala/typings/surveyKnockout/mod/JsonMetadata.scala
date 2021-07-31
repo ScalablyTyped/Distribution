@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "JsonMetadata")
@@ -11,17 +10,21 @@ class JsonMetadata () extends StObject {
   
   def addAlterNativeClassName(name: String, alternativeName: String): Unit = js.native
   
-  def addClass(name: String, properties: js.Array[_]): JsonMetadataClass = js.native
-  def addClass(name: String, properties: js.Array[_], creator: js.UndefOr[scala.Nothing], parentName: String): JsonMetadataClass = js.native
-  def addClass(name: String, properties: js.Array[_], creator: js.Function1[/* json */ js.UndefOr[js.Any], _]): JsonMetadataClass = js.native
+  def addClass(name: String, properties: js.Array[js.Any]): JsonMetadataClass = js.native
   def addClass(
     name: String,
-    properties: js.Array[_],
-    creator: js.Function1[/* json */ js.UndefOr[js.Any], _],
+    properties: js.Array[js.Any],
+    creator: js.Function1[/* json */ js.UndefOr[js.Any], js.Any]
+  ): JsonMetadataClass = js.native
+  def addClass(
+    name: String,
+    properties: js.Array[js.Any],
+    creator: js.Function1[/* json */ js.UndefOr[js.Any], js.Any],
     parentName: String
   ): JsonMetadataClass = js.native
+  def addClass(name: String, properties: js.Array[js.Any], creator: Unit, parentName: String): JsonMetadataClass = js.native
   
-  def addProperties(className: String, propertiesInfos: js.Array[_]): Unit = js.native
+  def addProperties(className: String, propertiesInfos: js.Array[js.Any]): Unit = js.native
   
   def addProperty(className: String, propertyInfo: js.Any): JsonObjectProperty = js.native
   
@@ -55,9 +58,9 @@ class JsonMetadata () extends StObject {
   
   def isDescendantOf(className: String, ancestorClassName: String): Boolean = js.native
   
-  def overrideClassCreator(name: String, creator: js.Function0[_]): Unit = js.native
+  def overrideClassCreator(name: String, creator: js.Function0[js.Any]): Unit = js.native
   
-  def overrideClassCreatore(name: String, creator: js.Function0[_]): Unit = js.native
+  def overrideClassCreatore(name: String, creator: js.Function0[js.Any]): Unit = js.native
   
   def removeClass(name: String): Unit = js.native
   

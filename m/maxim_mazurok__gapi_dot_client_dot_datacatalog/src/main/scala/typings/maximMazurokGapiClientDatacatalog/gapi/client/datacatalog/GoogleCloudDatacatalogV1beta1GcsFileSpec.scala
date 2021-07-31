@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1GcsFileSpec extends StObject {
   
   /** Required. The full file path. Example: `gs://bucket_name/a/b.txt`. */
-  var filePath: js.UndefOr[String] = js.native
+  var filePath: js.UndefOr[String] = js.undefined
   
   /** Output only. Timestamps about the Cloud Storage file. */
-  var gcsTimestamps: js.UndefOr[GoogleCloudDatacatalogV1beta1SystemTimestamps] = js.native
+  var gcsTimestamps: js.UndefOr[GoogleCloudDatacatalogV1beta1SystemTimestamps] = js.undefined
   
   /** Output only. The size of the file, in bytes. */
-  var sizeBytes: js.UndefOr[String] = js.native
+  var sizeBytes: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1GcsFileSpec {
   

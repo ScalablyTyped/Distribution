@@ -2,13 +2,11 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientTokenGateway extends StObject {
   
-  def generate(request: ClientTokenRequest): js.Promise[ValidatedResponse[ClientToken]] = js.native
+  def generate(request: ClientTokenRequest): js.Promise[ValidatedResponse[ClientToken]]
 }
 object ClientTokenGateway {
   

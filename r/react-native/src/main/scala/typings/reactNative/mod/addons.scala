@@ -2,7 +2,6 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addons {
@@ -12,14 +11,13 @@ object addons {
   val TestModule: TestModuleStatic = js.native
   type TestModule = TestModuleStatic
   
-  @js.native
   trait TestModuleStatic extends StObject {
     
-    def markTestCompleted(): Unit = js.native
+    def markTestCompleted(): Unit
     
-    def markTestPassed(indicator: js.Any): Unit = js.native
+    def markTestPassed(indicator: js.Any): Unit
     
-    def verifySnapshot(done: js.Function1[/* indicator */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def verifySnapshot(done: js.Function1[/* indicator */ js.UndefOr[js.Any], Unit]): Unit
   }
   object TestModuleStatic {
     

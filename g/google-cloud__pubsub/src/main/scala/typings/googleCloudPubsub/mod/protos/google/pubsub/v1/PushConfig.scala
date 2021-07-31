@@ -9,7 +9,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a PushConfig. */
@@ -25,6 +24,10 @@ class PushConfig ()
 }
 object PushConfig {
   
+  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Represents an OidcToken. */
   @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken")
   @js.native
@@ -38,18 +41,20 @@ object PushConfig {
   }
   object OidcToken {
     
+    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new OidcToken instance using the specified properties.
       * @param [properties] Properties to set
       * @returns OidcToken instance
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.create")
-    @js.native
-    def create(): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.create")
-    @js.native
-    def create(properties: IOidcToken): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = js.native
+    @scala.inline
+    def create(): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken]
+    @scala.inline
+    def create(properties: IOidcToken): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken]
     
     /**
       * Decodes an OidcToken message from the specified reader or buffer.
@@ -60,18 +65,14 @@ object PushConfig {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.decode")
-    @js.native
-    def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.decode")
-    @js.native
-    def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = js.native
+    @scala.inline
+    def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken]
+    @scala.inline
+    def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken]
+    @scala.inline
+    def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken]
     
     /**
       * Decodes an OidcToken message from the specified reader or buffer, length delimited.
@@ -81,12 +82,10 @@ object PushConfig {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken]
     
     /**
       * Encodes the specified OidcToken message. Does not implicitly {@link google.pubsub.v1.PushConfig.OidcToken.verify|verify} messages.
@@ -95,12 +94,10 @@ object PushConfig {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.encode")
-    @js.native
-    def encode(message: IOidcToken): Writer = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.encode")
-    @js.native
-    def encode(message: IOidcToken, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IOidcToken): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IOidcToken, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified OidcToken message, length delimited. Does not implicitly {@link google.pubsub.v1.PushConfig.OidcToken.verify|verify} messages.
@@ -109,12 +106,10 @@ object PushConfig {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IOidcToken): Writer = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IOidcToken, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IOidcToken): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IOidcToken, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates an OidcToken message from a plain object. Also converts values to their respective internal types.
@@ -122,9 +117,8 @@ object PushConfig {
       * @returns OidcToken
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken]
     
     /**
       * Creates a plain object from an OidcToken message. Also converts values to other types if specified.
@@ -133,15 +127,13 @@ object PushConfig {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.toObject")
-    @js.native
-    def toObject(message: typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken): StringDictionary[js.Any] = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.toObject")
-    @js.native
+    @scala.inline
+    def toObject(message: typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
     def toObject(
       message: typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.OidcToken,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = js.native
+    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies an OidcToken message.
@@ -149,9 +141,8 @@ object PushConfig {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.OidcToken.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -160,12 +151,10 @@ object PushConfig {
     * @returns PushConfig instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.create")
-  @js.native
-  def create(): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.create")
-  @js.native
-  def create(properties: IPushConfig): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = js.native
+  @scala.inline
+  def create(): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig]
+  @scala.inline
+  def create(properties: IPushConfig): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig]
   
   /**
     * Decodes a PushConfig message from the specified reader or buffer.
@@ -176,18 +165,14 @@ object PushConfig {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.decode")
-  @js.native
-  def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig]
   
   /**
     * Decodes a PushConfig message from the specified reader or buffer, length delimited.
@@ -197,12 +182,10 @@ object PushConfig {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig]
   
   /**
     * Encodes the specified PushConfig message. Does not implicitly {@link google.pubsub.v1.PushConfig.verify|verify} messages.
@@ -211,12 +194,10 @@ object PushConfig {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.encode")
-  @js.native
-  def encode(message: IPushConfig): Writer = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.encode")
-  @js.native
-  def encode(message: IPushConfig, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IPushConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IPushConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified PushConfig message, length delimited. Does not implicitly {@link google.pubsub.v1.PushConfig.verify|verify} messages.
@@ -225,12 +206,10 @@ object PushConfig {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IPushConfig): Writer = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IPushConfig, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IPushConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IPushConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a PushConfig message from a plain object. Also converts values to their respective internal types.
@@ -238,9 +217,8 @@ object PushConfig {
     * @returns PushConfig
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig]
   
   /**
     * Creates a plain object from a PushConfig message. Also converts values to other types if specified.
@@ -249,15 +227,13 @@ object PushConfig {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.toObject")
-  @js.native
-  def toObject(message: typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.toObject")
-  @js.native
+  @scala.inline
+  def toObject(message: typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
   def toObject(
     message: typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = js.native
+  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a PushConfig message.
@@ -265,7 +241,6 @@ object PushConfig {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.PushConfig.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

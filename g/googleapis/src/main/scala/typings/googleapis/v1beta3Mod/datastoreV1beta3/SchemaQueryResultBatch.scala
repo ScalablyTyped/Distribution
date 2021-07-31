@@ -2,45 +2,43 @@ package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A batch of results produced by a query.
   */
-@js.native
 trait SchemaQueryResultBatch extends StObject {
   
   /**
     * A cursor that points to the position after the last result in the batch.
     */
-  var endCursor: js.UndefOr[String] = js.native
+  var endCursor: js.UndefOr[String] = js.undefined
   
   /**
     * The result type for every entity in `entity_results`.
     */
-  var entityResultType: js.UndefOr[String] = js.native
+  var entityResultType: js.UndefOr[String] = js.undefined
   
   /**
     * The results for this batch.
     */
-  var entityResults: js.UndefOr[js.Array[SchemaEntityResult]] = js.native
+  var entityResults: js.UndefOr[js.Array[SchemaEntityResult]] = js.undefined
   
   /**
     * The state of the query after the current batch.
     */
-  var moreResults: js.UndefOr[String] = js.native
+  var moreResults: js.UndefOr[String] = js.undefined
   
   /**
     * A cursor that points to the position after the last skipped result. Will
     * be set when `skipped_results` != 0.
     */
-  var skippedCursor: js.UndefOr[String] = js.native
+  var skippedCursor: js.UndefOr[String] = js.undefined
   
   /**
     * The number of results skipped, typically because of an offset.
     */
-  var skippedResults: js.UndefOr[Double] = js.native
+  var skippedResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The version number of the snapshot this batch was returned from. This
@@ -52,7 +50,7 @@ trait SchemaQueryResultBatch extends StObject {
     * valid for all preceding batches. The value will be zero for eventually
     * consistent queries.
     */
-  var snapshotVersion: js.UndefOr[String] = js.native
+  var snapshotVersion: js.UndefOr[String] = js.undefined
 }
 object SchemaQueryResultBatch {
   

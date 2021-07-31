@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDOMProcessingInstruction extends StObject {
   
   @JSName("MSHTML.IDOMProcessingInstruction_typekey")
-  var MSHTMLDotIDOMProcessingInstruction_typekey: IDOMProcessingInstruction = js.native
+  var MSHTMLDotIDOMProcessingInstruction_typekey: IDOMProcessingInstruction
   
-  var data: String = js.native
+  var data: String
   
-  val target: String = js.native
+  val target: String
 }
 object IDOMProcessingInstruction {
   

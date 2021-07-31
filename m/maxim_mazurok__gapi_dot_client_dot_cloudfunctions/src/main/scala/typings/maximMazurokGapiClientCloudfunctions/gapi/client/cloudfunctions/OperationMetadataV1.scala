@@ -3,33 +3,31 @@ package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationMetadataV1 extends StObject {
   
   /** The Cloud Build ID of the function created or updated by an API call. This field is only populated for Create and Update operations. */
-  var buildId: js.UndefOr[String] = js.native
+  var buildId: js.UndefOr[String] = js.undefined
   
   /** The original request that started the operation. */
   var request: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.OperationMetadataV1 with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.OperationMetadataV1 & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Target of the operation - for example projects/project-1/locations/region-1/functions/function-1 */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
   /** Type of operation. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** The last update timestamp of the operation. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /** Version id of the function created or updated by an API call. This field is only populated for Create and Update operations. */
-  var versionId: js.UndefOr[String] = js.native
+  var versionId: js.UndefOr[String] = js.undefined
 }
 object OperationMetadataV1 {
   
@@ -52,7 +50,7 @@ object OperationMetadataV1 {
     def setRequest(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.OperationMetadataV1 with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.OperationMetadataV1 & TopLevel[js.Any]
     ): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline

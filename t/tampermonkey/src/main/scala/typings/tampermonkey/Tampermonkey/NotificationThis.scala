@@ -2,13 +2,13 @@ package typings.tampermonkey.Tampermonkey
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NotificationThis extends Notification {
+trait NotificationThis
+  extends StObject
+     with Notification {
   
-  var id: String = js.native
+  var id: String
 }
 object NotificationThis {
   

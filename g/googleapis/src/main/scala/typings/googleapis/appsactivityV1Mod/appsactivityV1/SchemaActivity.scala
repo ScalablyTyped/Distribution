@@ -2,7 +2,6 @@ package typings.googleapis.appsactivityV1Mod.appsactivityV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * a list of individual events and a combined view of the common fields among
   * all events.
   */
-@js.native
 trait SchemaActivity extends StObject {
   
   /**
     * The fields common to all of the singleEvents that make up the Activity.
     */
-  var combinedEvent: js.UndefOr[SchemaEvent] = js.native
+  var combinedEvent: js.UndefOr[SchemaEvent] = js.undefined
   
   /**
     * A list of all the Events that make up the Activity.
     */
-  var singleEvents: js.UndefOr[js.Array[SchemaEvent]] = js.native
+  var singleEvents: js.UndefOr[js.Array[SchemaEvent]] = js.undefined
 }
 object SchemaActivity {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the signing profile.
     */
-  var resourceArn: String = js.native
+  var resourceArn: String
   
   /**
     * One or more tags to be associated with the signing profile.
     */
-  var tags: TagMap = js.native
+  var tags: TagMap
 }
 object TagResourceRequest {
   

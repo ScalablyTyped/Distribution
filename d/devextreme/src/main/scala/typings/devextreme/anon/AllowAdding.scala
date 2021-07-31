@@ -2,25 +2,23 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowAdding extends StObject {
   
-  var allowAdding: js.UndefOr[Boolean] = js.native
+  var allowAdding: js.UndefOr[Boolean] = js.undefined
   
-  var allowDeleting: js.UndefOr[Boolean] = js.native
+  var allowDeleting: js.UndefOr[Boolean] = js.undefined
   
-  var allowDragging: js.UndefOr[Boolean] = js.native
+  var allowDragging: js.UndefOr[Boolean] = js.undefined
   
-  var allowEditingTimeZones: js.UndefOr[Boolean] = js.native
+  var allowEditingTimeZones: js.UndefOr[Boolean] = js.undefined
   
-  var allowResizing: js.UndefOr[Boolean] = js.native
+  var allowResizing: js.UndefOr[Boolean] = js.undefined
   
-  var allowTimeZoneEditing: js.UndefOr[Boolean] = js.native
+  var allowTimeZoneEditing: js.UndefOr[Boolean] = js.undefined
   
-  var allowUpdating: js.UndefOr[Boolean] = js.native
+  var allowUpdating: js.UndefOr[Boolean] = js.undefined
 }
 object AllowAdding {
   

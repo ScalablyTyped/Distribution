@@ -3,23 +3,22 @@ package typings.vegaTypings.scaleMod
 import typings.vegaTypings.vegaTypingsStrings.point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointScale
-  extends BaseBandScale
+  extends StObject
+     with BaseBandScale
      with Scale {
   
   @JSName("type")
-  var type_PointScale: point = js.native
+  var type_PointScale: point
 }
 object PointScale {
   
   @scala.inline
-  def apply(name: String, `type`: point): PointScale = {
+  def apply(name: String): PointScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("point")
     __obj.asInstanceOf[PointScale]
   }
   

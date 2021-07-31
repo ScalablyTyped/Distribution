@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to invoke the Layout dialog.
   */
-@js.native
-trait OpenLayoutOptionsDialogCommand extends CommandWithSimpleStateBase {
+trait OpenLayoutOptionsDialogCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the OpenLayoutOptionsDialogCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object OpenLayoutOptionsDialogCommand {
   

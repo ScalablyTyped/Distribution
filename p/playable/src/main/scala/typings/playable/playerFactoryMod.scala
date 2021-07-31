@@ -1,84 +1,49 @@
 package typings.playable
 
-import typings.playable.bottomBlockTypesMod.IBottomBlockAPI
 import typings.playable.configMod.IPlayerConfig
 import typings.playable.createContainerMod.Container
-import typings.playable.downloadTypesMod.IDownloadButtonAPI
-import typings.playable.eventEmitterTypesMod.IEventEmitterAPI
-import typings.playable.fullScreenManagerTypesMod.IFullScreenAPI
-import typings.playable.logoTypesMod.ILogoAPI
-import typings.playable.mainUiBlockTypesMod.IMainUIBlockAPI
-import typings.playable.overlayTypesMod.IOverlayAPI
-import typings.playable.pictureInPictureTypesMod.IPictureInPictureAPI
-import typings.playable.playbackEngineTypesMod.IPlaybackEngineAPI
-import typings.playable.previewServiceTypesMod.IPreviewAPI
-import typings.playable.progressTypesMod.IProgressControlAPI
-import typings.playable.rootContainerTypesMod.IRootContainerAPI
-import typings.playable.screenTypesMod.IScreenAPI
-import typings.playable.themeTypesMod.IThemeAPI
+import typings.playable.defaultModulesMod.IPlayer
 import typings.playable.themeTypesMod.IThemeConfig
-import typings.playable.titleTypesMod.ITitleAPI
-import typings.playable.topBlockTypesMod.ITopBlockAPI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object playerFactoryMod {
   
-  @JSImport("playable/dist/src/core/player-factory", "clearAdditionalModules")
+  @JSImport("playable/dist/src/core/player-factory", JSImport.Namespace)
   @js.native
-  def clearAdditionalModules(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("playable/dist/src/core/player-factory", "clearPlaybackAdapters")
-  @js.native
-  def clearPlaybackAdapters(): Unit = js.native
+  @scala.inline
+  def clearAdditionalModules(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAdditionalModules")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def clearPlaybackAdapters(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearPlaybackAdapters")().asInstanceOf[Unit]
   
   @JSImport("playable/dist/src/core/player-factory", "container")
   @js.native
   val container: Container = js.native
   
-  @JSImport("playable/dist/src/core/player-factory", "create")
-  @js.native
-  def create(): IPlayerInstance = js.native
-  @JSImport("playable/dist/src/core/player-factory", "create")
-  @js.native
-  def create(params: js.UndefOr[scala.Nothing], themeConfig: IThemeConfig): IPlayerInstance = js.native
-  @JSImport("playable/dist/src/core/player-factory", "create")
-  @js.native
-  def create(params: IPlayerConfig): IPlayerInstance = js.native
-  @JSImport("playable/dist/src/core/player-factory", "create")
-  @js.native
-  def create(params: IPlayerConfig, themeConfig: IThemeConfig): IPlayerInstance = js.native
+  @scala.inline
+  def create(): IPlayerInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[IPlayerInstance]
+  @scala.inline
+  def create(params: Unit, themeConfig: IThemeConfig): IPlayerInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any], themeConfig.asInstanceOf[js.Any])).asInstanceOf[IPlayerInstance]
+  @scala.inline
+  def create(params: IPlayerConfig): IPlayerInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any]).asInstanceOf[IPlayerInstance]
+  @scala.inline
+  def create(params: IPlayerConfig, themeConfig: IThemeConfig): IPlayerInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any], themeConfig.asInstanceOf[js.Any])).asInstanceOf[IPlayerInstance]
   
-  @JSImport("playable/dist/src/core/player-factory", "registerModule")
-  @js.native
-  def registerModule(id: String, module: js.Any): Unit = js.native
+  @scala.inline
+  def registerModule(id: String, module: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerModule")(id.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("playable/dist/src/core/player-factory", "registerPlaybackAdapter")
-  @js.native
-  def registerPlaybackAdapter(adapter: js.Any): Unit = js.native
+  @scala.inline
+  def registerPlaybackAdapter(adapter: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlaybackAdapter")(adapter.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait IPlayerInstance
-    extends IRootContainerAPI
-       with IEventEmitterAPI
-       with IPlaybackEngineAPI
-       with IThemeAPI
-       with IFullScreenAPI
-       with IPictureInPictureAPI
-       with IScreenAPI
-       with IOverlayAPI
-       with IMainUIBlockAPI
-       with ITopBlockAPI
-       with ITitleAPI
-       with IBottomBlockAPI
-       with IProgressControlAPI
-       with ILogoAPI
-       with IDownloadButtonAPI
-       with IPreviewAPI {
+    extends StObject
+       with IPlayer {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
   }
   object IPlayerInstance {
     

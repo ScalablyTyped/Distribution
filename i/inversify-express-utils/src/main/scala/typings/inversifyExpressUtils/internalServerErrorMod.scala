@@ -5,21 +5,29 @@ import typings.inversifyExpressUtils.httpResponseMessageMod.HttpResponseMessage
 import typings.inversifyExpressUtils.interfacesMod.interfaces.IHttpActionResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object internalServerErrorMod {
   
   @JSImport("inversify-express-utils/dts/results/InternalServerError", JSImport.Default)
   @js.native
-  class default protected () extends InternalServerErrorResult {
+  class default protected ()
+    extends StObject
+       with InternalServerErrorResult {
     def this(apiController: BaseHttpController) = this()
+    
+    /* CompleteClass */
+    var apiController: js.Any = js.native
+    
+    /* CompleteClass */
+    override def executeAsync(): js.Promise[HttpResponseMessage] = js.native
   }
   
-  @js.native
-  trait InternalServerErrorResult extends IHttpActionResult {
+  trait InternalServerErrorResult
+    extends StObject
+       with IHttpActionResult {
     
-    var apiController: js.Any = js.native
+    var apiController: js.Any
   }
   object InternalServerErrorResult {
     

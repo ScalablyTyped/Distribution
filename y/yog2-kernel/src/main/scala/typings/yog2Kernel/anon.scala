@@ -7,16 +7,14 @@ import typings.nodeRal.mod.ConfigNormalizer
 import typings.nodeRal.mod.RAL.RalRunner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CleanCache extends StObject {
     
     // 清除viewcache
-    def cleanCache(): Unit = js.native
+    def cleanCache(): Unit
   }
   object CleanCache {
     

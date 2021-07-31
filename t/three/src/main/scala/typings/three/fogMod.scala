@@ -4,26 +4,30 @@ import typings.three.colorMod.Color
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fogMod {
   
   @JSImport("three/src/scenes/Fog", "Fog")
   @js.native
-  class Fog protected () extends IFog {
+  class Fog protected ()
+    extends StObject
+       with IFog {
     def this(color: String) = this()
     def this(color: Double) = this()
     def this(color: Color) = this()
     def this(color: String, near: Double) = this()
     def this(color: Double, near: Double) = this()
     def this(color: Color, near: Double) = this()
-    def this(color: String, near: js.UndefOr[scala.Nothing], far: Double) = this()
     def this(color: String, near: Double, far: Double) = this()
-    def this(color: Double, near: js.UndefOr[scala.Nothing], far: Double) = this()
+    def this(color: String, near: Unit, far: Double) = this()
     def this(color: Double, near: Double, far: Double) = this()
-    def this(color: Color, near: js.UndefOr[scala.Nothing], far: Double) = this()
+    def this(color: Double, near: Unit, far: Double) = this()
     def this(color: Color, near: Double, far: Double) = this()
+    def this(color: Color, near: Unit, far: Double) = this()
+    
+    /* CompleteClass */
+    var color: Color = js.native
     
     /**
     	 * The maximum distance at which fog stops being calculated and applied. Objects that are more than 'far' units away from the active camera won't be affected by fog.
@@ -33,21 +37,26 @@ object fogMod {
     
     val isFog: `true` = js.native
     
+    /* CompleteClass */
+    var name: String = js.native
+    
     /**
     	 * The minimum distance to start applying fog. Objects that are less than 'near' units from the active camera won't be affected by fog.
     	 * @default 1
     	 */
     var near: Double = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  @js.native
   trait IFog extends StObject {
     
-    var color: Color = js.native
+    var color: Color
     
-    var name: String = js.native
+    var name: String
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
   }
   object IFog {
     

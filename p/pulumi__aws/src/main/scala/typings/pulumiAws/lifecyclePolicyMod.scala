@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lifecyclePolicyMod {
@@ -60,6 +59,10 @@ object lifecyclePolicyMod {
   /* static members */
   object LifecyclePolicy {
     
+    @JSImport("@pulumi/aws/dlm/lifecyclePolicy", "LifecyclePolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LifecyclePolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -69,55 +72,49 @@ object lifecyclePolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/dlm/lifecyclePolicy", "LifecyclePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LifecyclePolicy = js.native
-    @JSImport("@pulumi/aws/dlm/lifecyclePolicy", "LifecyclePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LifecyclePolicy = js.native
-    @JSImport("@pulumi/aws/dlm/lifecyclePolicy", "LifecyclePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LifecyclePolicyState): LifecyclePolicy = js.native
-    @JSImport("@pulumi/aws/dlm/lifecyclePolicy", "LifecyclePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LifecyclePolicyState, opts: CustomResourceOptions): LifecyclePolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LifecyclePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LifecyclePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LifecyclePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LifecyclePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LifecyclePolicyState): LifecyclePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LifecyclePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LifecyclePolicyState, opts: CustomResourceOptions): LifecyclePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LifecyclePolicy]
     
     /**
       * Returns true if the given object is an instance of LifecyclePolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/dlm/lifecyclePolicy", "LifecyclePolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dlm/lifecyclePolicy.LifecyclePolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dlm/lifecyclePolicy.LifecyclePolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dlm/lifecyclePolicy.LifecyclePolicy */ Boolean]
   }
   
-  @js.native
   trait LifecyclePolicyArgs extends StObject {
     
     /**
       * A description for the DLM lifecycle policy.
       */
-    val description: Input[String] = js.native
+    val description: Input[String]
     
     /**
       * The ARN of an IAM role that is able to be assumed by the DLM service.
       */
-    val executionRoleArn: Input[String] = js.native
+    val executionRoleArn: Input[String]
     
     /**
       * See the `policyDetails` configuration block. Max of 1.
       */
-    val policyDetails: Input[typings.pulumiAws.inputMod.dlm.LifecyclePolicyPolicyDetails] = js.native
+    val policyDetails: Input[typings.pulumiAws.inputMod.dlm.LifecyclePolicyPolicyDetails]
     
     /**
       * Whether the lifecycle policy should be enabled or disabled. `ENABLED` or `DISABLED` are valid values. Defaults to `ENABLED`.
       */
-    val state: js.UndefOr[Input[String]] = js.native
+    val state: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object LifecyclePolicyArgs {
     
@@ -157,38 +154,37 @@ object lifecyclePolicyMod {
     }
   }
   
-  @js.native
   trait LifecyclePolicyState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the DLM Lifecycle Policy.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description for the DLM lifecycle policy.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of an IAM role that is able to be assumed by the DLM service.
       */
-    val executionRoleArn: js.UndefOr[Input[String]] = js.native
+    val executionRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * See the `policyDetails` configuration block. Max of 1.
       */
-    val policyDetails: js.UndefOr[Input[typings.pulumiAws.inputMod.dlm.LifecyclePolicyPolicyDetails]] = js.native
+    val policyDetails: js.UndefOr[Input[typings.pulumiAws.inputMod.dlm.LifecyclePolicyPolicyDetails]] = js.undefined
     
     /**
       * Whether the lifecycle policy should be enabled or disabled. `ENABLED` or `DISABLED` are valid values. Defaults to `ENABLED`.
       */
-    val state: js.UndefOr[Input[String]] = js.native
+    val state: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object LifecyclePolicyState {
     

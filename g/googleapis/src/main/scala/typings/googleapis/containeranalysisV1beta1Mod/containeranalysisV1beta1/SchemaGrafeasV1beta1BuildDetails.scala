@@ -2,19 +2,17 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details of a build occurrence.
   */
-@js.native
 trait SchemaGrafeasV1beta1BuildDetails extends StObject {
   
   /**
     * Required. The actual provenance for the build.
     */
-  var provenance: js.UndefOr[SchemaBuildProvenance] = js.native
+  var provenance: js.UndefOr[SchemaBuildProvenance] = js.undefined
   
   /**
     * Serialized JSON representation of the provenance, used in generating the
@@ -27,7 +25,7 @@ trait SchemaGrafeasV1beta1BuildDetails extends StObject {
     * how the provenance is marshalled to json as well to prevent
     * incompatibilities with future changes.
     */
-  var provenanceBytes: js.UndefOr[String] = js.native
+  var provenanceBytes: js.UndefOr[String] = js.undefined
 }
 object SchemaGrafeasV1beta1BuildDetails {
   

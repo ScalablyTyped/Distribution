@@ -2,17 +2,15 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectSpecification extends StObject {
   
-  var config: js.UndefOr[ConfigValues] = js.native
+  var config: js.UndefOr[ConfigValues] = js.undefined
   
-  var originPath: String = js.native
+  var originPath: String
   
-  var paths: js.Array[String] = js.native
+  var paths: js.Array[String]
 }
 object ProjectSpecification {
   

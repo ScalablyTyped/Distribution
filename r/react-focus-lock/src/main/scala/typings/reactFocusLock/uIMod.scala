@@ -1,6 +1,5 @@
 package typings.reactFocusLock
 
-import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.FC
 import typings.react.mod.RefObject
@@ -11,10 +10,13 @@ import typings.reactFocusLock.interfacesMod.InFocusGuardProps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object uIMod extends Shortcut {
+object uIMod {
+  
+  @JSImport("react-focus-lock/UI/UI", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Traps Focus inside a Lock
@@ -71,12 +73,6 @@ object uIMod extends Shortcut {
     def this(props: AutoFocusProps, context: js.Any) = this()
   }
   
-  @JSImport("react-focus-lock/UI/UI", "useFocusInside")
-  @js.native
-  def useFocusInside(node: RefObject[HTMLElement]): Unit = js.native
-  
-  type _To = FC[ReactFocusLockPropsReactN]
-  
-  /* This means you don't have to write `default`, but can instead just say `uIMod.foo` */
-  override def _to: FC[ReactFocusLockPropsReactN] = default
+  @scala.inline
+  def useFocusInside(node: RefObject[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusInside")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

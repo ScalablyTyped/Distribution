@@ -2,19 +2,18 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRefDataMeta extends StObject {
   
-  var extension: BaseAttributesExtensionObject = js.native
+  var `extension`: BaseAttributesExtensionObject
 }
 object CreateRefDataMeta {
   
   @scala.inline
-  def apply(extension: BaseAttributesExtensionObject): CreateRefDataMeta = {
-    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any])
+  def apply(`extension`: BaseAttributesExtensionObject): CreateRefDataMeta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRefDataMeta]
   }
   

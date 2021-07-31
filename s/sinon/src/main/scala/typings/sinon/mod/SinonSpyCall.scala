@@ -2,11 +2,12 @@ package typings.sinon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonSpyCall[TArgs /* <: js.Array[_] */, TReturnValue] extends SinonSpyCallApi[TArgs, TReturnValue] {
+trait SinonSpyCall[TArgs /* <: js.Array[js.Any] */, TReturnValue]
+  extends StObject
+     with SinonSpyCallApi[TArgs, TReturnValue] {
   
   /**
     * This property is a convenience for a call’s callback.
@@ -18,14 +19,14 @@ trait SinonSpyCall[TArgs /* <: js.Array[_] */, TReturnValue] extends SinonSpyCal
     * Returns true if the spy call occurred after another spy call.
     * @param call
     */
-  def calledAfter(call: SinonSpyCall[_, _]): Boolean = js.native
+  def calledAfter(call: SinonSpyCall[js.Any, js.Any]): Boolean = js.native
   
   /**
     * Returns true if the spy call occurred before another spy call.
     * @param call
     *
     */
-  def calledBefore(call: SinonSpyCall[_, _]): Boolean = js.native
+  def calledBefore(call: SinonSpyCall[js.Any, js.Any]): Boolean = js.native
   
   /**
     * Exception thrown, if any.

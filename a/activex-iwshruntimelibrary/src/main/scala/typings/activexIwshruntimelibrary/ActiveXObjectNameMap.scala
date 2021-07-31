@@ -6,22 +6,20 @@ import typings.activexIwshruntimelibrary.ScriptSigner.Signer
 import typings.activexIwshruntimelibrary.WSHControllerLibrary.WSHController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("Scripting.Signer")
-  var ScriptingDotSigner: Signer = js.native
+  var ScriptingDotSigner: Signer
   
-  var WSHController: typings.activexIwshruntimelibrary.WSHControllerLibrary.WSHController = js.native
+  var WSHController: typings.activexIwshruntimelibrary.WSHControllerLibrary.WSHController
   
   @JSName("WScript.Network")
-  var WScriptDotNetwork: WshNetwork = js.native
+  var WScriptDotNetwork: WshNetwork
   
   @JSName("WScript.Shell")
-  var WScriptDotShell: WshShell = js.native
+  var WScriptDotShell: WshShell
 }
 object ActiveXObjectNameMap {
   

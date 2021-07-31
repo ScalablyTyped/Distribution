@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAddressBookRequest extends StObject {
   
   /**
     * The ARN of the address book for which to request details.
     */
-  var AddressBookArn: Arn = js.native
+  var AddressBookArn: Arn
 }
 object GetAddressBookRequest {
   

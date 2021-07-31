@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsJobtriggersPatch extends StandardParameters {
+trait ParamsResourceProjectsJobtriggersPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Resource name of the project and the triggeredJob, for example
     * `projects/dlp-test-project/jobTriggers/53234423`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaGooglePrivacyDlpV2UpdateJobTriggerRequest] = js.native
+  var requestBody: js.UndefOr[SchemaGooglePrivacyDlpV2UpdateJobTriggerRequest] = js.undefined
 }
 object ParamsResourceProjectsJobtriggersPatch {
   

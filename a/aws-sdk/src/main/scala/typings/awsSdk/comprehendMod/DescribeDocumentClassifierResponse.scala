@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDocumentClassifierResponse extends StObject {
   
   /**
     * An object that contains the properties associated with a document classifier.
     */
-  var DocumentClassifierProperties: js.UndefOr[typings.awsSdk.comprehendMod.DocumentClassifierProperties] = js.native
+  var DocumentClassifierProperties: js.UndefOr[typings.awsSdk.comprehendMod.DocumentClassifierProperties] = js.undefined
 }
 object DescribeDocumentClassifierResponse {
   

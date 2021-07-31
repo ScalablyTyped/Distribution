@@ -6,39 +6,69 @@ import typings.jestWorker.typesMod.WorkerPoolOptions
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseWorkerPoolMod {
   
   @JSImport("jest-worker/build/base/BaseWorkerPool", JSImport.Default)
   @js.native
-  class default protected () extends BaseWorkerPool {
+  class default protected ()
+    extends StObject
+       with BaseWorkerPool {
     def this(workerPath: String, options: WorkerPoolOptions) = this()
+    
+    /* CompleteClass */
+    override val _options: WorkerPoolOptions = js.native
+    
+    /* CompleteClass */
+    override val _stderr: js.Any = js.native
+    
+    /* CompleteClass */
+    override val _stdout: js.Any = js.native
+    
+    /* CompleteClass */
+    override val _workers: js.Any = js.native
+    
+    /* CompleteClass */
+    override def createWorker(_workerOptions: WorkerOptions): WorkerInterface = js.native
+    
+    /* CompleteClass */
+    override def end(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getStderr(): ReadableStream = js.native
+    
+    /* CompleteClass */
+    override def getStdout(): ReadableStream = js.native
+    
+    /* CompleteClass */
+    override def getWorkerById(workerId: Double): WorkerInterface = js.native
+    
+    /* CompleteClass */
+    override def getWorkers(): js.Array[WorkerInterface] = js.native
   }
   
-  @js.native
   trait BaseWorkerPool extends StObject {
     
-    val _options: WorkerPoolOptions = js.native
+    val _options: WorkerPoolOptions
     
-    val _stderr: js.Any = js.native
+    val _stderr: js.Any
     
-    val _stdout: js.Any = js.native
+    val _stdout: js.Any
     
-    val _workers: js.Any = js.native
+    val _workers: js.Any
     
-    def createWorker(_workerOptions: WorkerOptions): WorkerInterface = js.native
+    def createWorker(_workerOptions: WorkerOptions): WorkerInterface
     
-    def end(): Unit = js.native
+    def end(): Unit
     
-    def getStderr(): ReadableStream = js.native
+    def getStderr(): ReadableStream
     
-    def getStdout(): ReadableStream = js.native
+    def getStdout(): ReadableStream
     
-    def getWorkerById(workerId: Double): WorkerInterface = js.native
+    def getWorkerById(workerId: Double): WorkerInterface
     
-    def getWorkers(): js.Array[WorkerInterface] = js.native
+    def getWorkers(): js.Array[WorkerInterface]
   }
   object BaseWorkerPool {
     

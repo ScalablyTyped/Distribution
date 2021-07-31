@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
   */
-@js.native
 trait PlusKeyKeyType extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusKeyKeyType extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
-  var backbutton: js.UndefOr[String] = js.native
+  var backbutton: js.UndefOr[String] = js.undefined
   
   /**
     * 键按下事件
@@ -28,7 +26,7 @@ trait PlusKeyKeyType extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
-  var keydown: js.UndefOr[String] = js.native
+  var keydown: js.UndefOr[String] = js.undefined
   
   /**
     * 键松开事件
@@ -37,7 +35,7 @@ trait PlusKeyKeyType extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
-  var keyup: js.UndefOr[String] = js.native
+  var keyup: js.UndefOr[String] = js.undefined
   
   /**
     * 长按键事件
@@ -46,7 +44,7 @@ trait PlusKeyKeyType extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
-  var longpressed: js.UndefOr[String] = js.native
+  var longpressed: js.UndefOr[String] = js.undefined
   
   /**
     * 设备“菜单”按钮按键事件
@@ -54,7 +52,7 @@ trait PlusKeyKeyType extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
-  var menubutton: js.UndefOr[String] = js.native
+  var menubutton: js.UndefOr[String] = js.undefined
   
   /**
     * 设备“搜索”按钮按键事件
@@ -62,7 +60,7 @@ trait PlusKeyKeyType extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
-  var searchbutton: js.UndefOr[String] = js.native
+  var searchbutton: js.UndefOr[String] = js.undefined
   
   /**
     * 设备“音量-”按钮按键事件
@@ -70,7 +68,7 @@ trait PlusKeyKeyType extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
-  var volumedownbutton: js.UndefOr[String] = js.native
+  var volumedownbutton: js.UndefOr[String] = js.undefined
   
   /**
     * 设备“音量+”按钮按键事件
@@ -78,7 +76,7 @@ trait PlusKeyKeyType extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
-  var volumeupbutton: js.UndefOr[String] = js.native
+  var volumeupbutton: js.UndefOr[String] = js.undefined
 }
 object PlusKeyKeyType {
   

@@ -2,181 +2,179 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsSecurityFinding extends StObject {
   
   /**
     * The AWS account ID that a finding is generated in.
     */
-  var AwsAccountId: NonEmptyString = js.native
+  var AwsAccountId: NonEmptyString
   
   /**
     * This data type is exclusive to findings that are generated as the result of a check run against a specific rule in a supported security standard, such as CIS AWS Foundations. Contains security standard-related finding details.
     */
-  var Compliance: js.UndefOr[typings.awsSdk.securityhubMod.Compliance] = js.native
+  var Compliance: js.UndefOr[typings.awsSdk.securityhubMod.Compliance] = js.undefined
   
   /**
     * A finding's confidence. Confidence is defined as the likelihood that a finding accurately identifies the behavior or issue that it was intended to identify. Confidence is scored on a 0-100 basis using a ratio scale, where 0 means zero percent confidence and 100 means 100 percent confidence.
     */
-  var Confidence: js.UndefOr[Integer] = js.native
+  var Confidence: js.UndefOr[Integer] = js.undefined
   
   /**
     * Indicates when the security-findings provider created the potential security issue that a finding captured. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreatedAt: NonEmptyString = js.native
+  var CreatedAt: NonEmptyString
   
   /**
     * The level of importance assigned to the resources associated with the finding. A score of 0 means that the underlying resources have no criticality, and a score of 100 is reserved for the most critical resources.
     */
-  var Criticality: js.UndefOr[Integer] = js.native
+  var Criticality: js.UndefOr[Integer] = js.undefined
   
   /**
     * A finding's description.  In this release, Description is a required property. 
     */
-  var Description: NonEmptyString = js.native
+  var Description: NonEmptyString
   
   /**
     * Indicates when the security-findings provider first observed the potential security issue that a finding captured. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var FirstObservedAt: js.UndefOr[NonEmptyString] = js.native
+  var FirstObservedAt: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier for the solution-specific component (a discrete unit of logic) that generated a finding. In various security-findings providers' solutions, this generator can be called a rule, a check, a detector, a plugin, etc. 
     */
-  var GeneratorId: NonEmptyString = js.native
+  var GeneratorId: NonEmptyString
   
   /**
     * The security findings provider-specific identifier for a finding.
     */
-  var Id: NonEmptyString = js.native
+  var Id: NonEmptyString
   
   /**
     * Indicates when the security-findings provider most recently observed the potential security issue that a finding captured. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var LastObservedAt: js.UndefOr[NonEmptyString] = js.native
+  var LastObservedAt: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A list of malware related to a finding.
     */
-  var Malware: js.UndefOr[MalwareList] = js.native
+  var Malware: js.UndefOr[MalwareList] = js.undefined
   
   /**
     * The details of network-related information about a finding.
     */
-  var Network: js.UndefOr[typings.awsSdk.securityhubMod.Network] = js.native
+  var Network: js.UndefOr[typings.awsSdk.securityhubMod.Network] = js.undefined
   
   /**
     * Provides information about a network path that is relevant to a finding. Each entry under NetworkPath represents a component of that path.
     */
-  var NetworkPath: js.UndefOr[NetworkPathList] = js.native
+  var NetworkPath: js.UndefOr[NetworkPathList] = js.undefined
   
   /**
     * A user-defined note added to a finding.
     */
-  var Note: js.UndefOr[typings.awsSdk.securityhubMod.Note] = js.native
+  var Note: js.UndefOr[typings.awsSdk.securityhubMod.Note] = js.undefined
   
   /**
     * Provides an overview of the patch compliance status for an instance against a selected compliance standard.
     */
-  var PatchSummary: js.UndefOr[typings.awsSdk.securityhubMod.PatchSummary] = js.native
+  var PatchSummary: js.UndefOr[typings.awsSdk.securityhubMod.PatchSummary] = js.undefined
   
   /**
     * The details of process-related information about a finding.
     */
-  var Process: js.UndefOr[ProcessDetails] = js.native
+  var Process: js.UndefOr[ProcessDetails] = js.undefined
   
   /**
     * The ARN generated by Security Hub that uniquely identifies a product that generates findings. This can be the ARN for a third-party product that is integrated with Security Hub, or the ARN for a custom integration.
     */
-  var ProductArn: NonEmptyString = js.native
+  var ProductArn: NonEmptyString
   
   /**
     * A data type where security-findings providers can include additional solution-specific details that aren't part of the defined AwsSecurityFinding format.
     */
-  var ProductFields: js.UndefOr[FieldMap] = js.native
+  var ProductFields: js.UndefOr[FieldMap] = js.undefined
   
   /**
     * The record state of a finding.
     */
-  var RecordState: js.UndefOr[typings.awsSdk.securityhubMod.RecordState] = js.native
+  var RecordState: js.UndefOr[typings.awsSdk.securityhubMod.RecordState] = js.undefined
   
   /**
     * A list of related findings.
     */
-  var RelatedFindings: js.UndefOr[RelatedFindingList] = js.native
+  var RelatedFindings: js.UndefOr[RelatedFindingList] = js.undefined
   
   /**
     * A data type that describes the remediation options for a finding.
     */
-  var Remediation: js.UndefOr[typings.awsSdk.securityhubMod.Remediation] = js.native
+  var Remediation: js.UndefOr[typings.awsSdk.securityhubMod.Remediation] = js.undefined
   
   /**
     * A set of resource data types that describe the resources that the finding refers to.
     */
-  var Resources: ResourceList = js.native
+  var Resources: ResourceList
   
   /**
     * The schema version that a finding is formatted for.
     */
-  var SchemaVersion: NonEmptyString = js.native
+  var SchemaVersion: NonEmptyString
   
   /**
     * A finding's severity.
     */
-  var Severity: typings.awsSdk.securityhubMod.Severity = js.native
+  var Severity: typings.awsSdk.securityhubMod.Severity
   
   /**
     * A URL that links to a page about the current finding in the security-findings provider's solution.
     */
-  var SourceUrl: js.UndefOr[NonEmptyString] = js.native
+  var SourceUrl: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Threat intelligence details related to a finding.
     */
-  var ThreatIntelIndicators: js.UndefOr[ThreatIntelIndicatorList] = js.native
+  var ThreatIntelIndicators: js.UndefOr[ThreatIntelIndicatorList] = js.undefined
   
   /**
     * A finding's title.  In this release, Title is a required property. 
     */
-  var Title: NonEmptyString = js.native
+  var Title: NonEmptyString
   
   /**
     * One or more finding types in the format of namespace/category/classifier that classify a finding. Valid namespace values are: Software and Configuration Checks | TTPs | Effects | Unusual Behaviors | Sensitive Data Identifications
     */
-  var Types: TypeList = js.native
+  var Types: TypeList
   
   /**
     * Indicates when the security-findings provider last updated the finding record. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var UpdatedAt: NonEmptyString = js.native
+  var UpdatedAt: NonEmptyString
   
   /**
     * A list of name/value string pairs associated with the finding. These are custom, user-defined fields added to a finding. 
     */
-  var UserDefinedFields: js.UndefOr[FieldMap] = js.native
+  var UserDefinedFields: js.UndefOr[FieldMap] = js.undefined
   
   /**
     * Indicates the veracity of a finding. 
     */
-  var VerificationState: js.UndefOr[typings.awsSdk.securityhubMod.VerificationState] = js.native
+  var VerificationState: js.UndefOr[typings.awsSdk.securityhubMod.VerificationState] = js.undefined
   
   /**
     * Provides a list of vulnerabilities associated with the findings.
     */
-  var Vulnerabilities: js.UndefOr[VulnerabilityList] = js.native
+  var Vulnerabilities: js.UndefOr[VulnerabilityList] = js.undefined
   
   /**
     * Provides information about the status of the investigation into a finding.
     */
-  var Workflow: js.UndefOr[typings.awsSdk.securityhubMod.Workflow] = js.native
+  var Workflow: js.UndefOr[typings.awsSdk.securityhubMod.Workflow] = js.undefined
   
   /**
     * The workflow state of a finding. 
     */
-  var WorkflowState: js.UndefOr[typings.awsSdk.securityhubMod.WorkflowState] = js.native
+  var WorkflowState: js.UndefOr[typings.awsSdk.securityhubMod.WorkflowState] = js.undefined
 }
 object AwsSecurityFinding {
   

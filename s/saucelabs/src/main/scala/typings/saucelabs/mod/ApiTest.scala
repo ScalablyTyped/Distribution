@@ -3,20 +3,19 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiTest
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var dataCenterId: js.UndefOr[Id] = js.native
+  var dataCenterId: js.UndefOr[Id] = js.undefined
   
-  var deviceId: js.UndefOr[Id] = js.native
+  var deviceId: js.UndefOr[Id] = js.undefined
   
-  var methodName: js.UndefOr[String] = js.native
+  var methodName: js.UndefOr[String] = js.undefined
 }
 object ApiTest {
   

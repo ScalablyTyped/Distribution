@@ -3,7 +3,6 @@ package typings.heredatalens.H.datalens
 import typings.heremaps.H.map.provider.RemoteTileProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Data is loaded by tiles.
   */
 @js.native
-trait SpatialTileProvider extends RemoteTileProvider {
+trait SpatialTileProvider
+  extends StObject
+     with RemoteTileProvider {
   
   /**
     * Updates the layer name to be used in the next call of the Data Lens REST API. Note that new data will be fetched only after the reload method is called.
@@ -32,14 +33,13 @@ object SpatialTileProvider {
     * Defines layer name and data accessibility parameters for SpatialTileProvider
     * This defines the layer name and dynamic parameters required for fetching tiled geometry data with the Data Lens REST API. Other options from Provider.Options are available.
     */
-  @js.native
   trait Options extends StObject {
     
     /** The name of the layer to fetch with the Data Lens REST API query */
-    var layerName: String = js.native
+    var layerName: String
     
     /** The query's dynamic parameters. The dynamic parameters can be used to filter data provided by the query. */
-    var queryParams: js.UndefOr[js.Any] = js.native
+    var queryParams: js.UndefOr[js.Any] = js.undefined
   }
   object Options {
     

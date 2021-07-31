@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object instanceFleetMod {
@@ -64,6 +63,10 @@ object instanceFleetMod {
   /* static members */
   object InstanceFleet {
     
+    @JSImport("@pulumi/aws/emr/instanceFleet", "InstanceFleet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing InstanceFleet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -73,62 +76,56 @@ object instanceFleetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/emr/instanceFleet", "InstanceFleet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): InstanceFleet = js.native
-    @JSImport("@pulumi/aws/emr/instanceFleet", "InstanceFleet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): InstanceFleet = js.native
-    @JSImport("@pulumi/aws/emr/instanceFleet", "InstanceFleet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InstanceFleetState): InstanceFleet = js.native
-    @JSImport("@pulumi/aws/emr/instanceFleet", "InstanceFleet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InstanceFleetState, opts: CustomResourceOptions): InstanceFleet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): InstanceFleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[InstanceFleet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): InstanceFleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[InstanceFleet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InstanceFleetState): InstanceFleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[InstanceFleet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InstanceFleetState, opts: CustomResourceOptions): InstanceFleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[InstanceFleet]
     
     /**
       * Returns true if the given object is an instance of InstanceFleet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/emr/instanceFleet", "InstanceFleet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/emr/instanceFleet.InstanceFleet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/emr/instanceFleet.InstanceFleet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/emr/instanceFleet.InstanceFleet */ Boolean]
   }
   
-  @js.native
   trait InstanceFleetArgs extends StObject {
     
     /**
       * ID of the EMR Cluster to attach to. Changing this forces a new resource to be created.
       */
-    val clusterId: Input[String] = js.native
+    val clusterId: Input[String]
     
     /**
       * Configuration block for instance fleet
       */
     val instanceTypeConfigs: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.emr.InstanceFleetInstanceTypeConfig]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration block for launch specification
       */
-    val launchSpecifications: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.InstanceFleetLaunchSpecifications]] = js.native
+    val launchSpecifications: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.InstanceFleetLaunchSpecifications]] = js.undefined
     
     /**
       * Friendly name given to the instance fleet.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The target capacity of On-Demand units for the instance fleet, which determines how many On-Demand instances to provision.
       */
-    val targetOnDemandCapacity: js.UndefOr[Input[Double]] = js.native
+    val targetOnDemandCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The target capacity of Spot units for the instance fleet, which determines how many Spot instances to provision.
       */
-    val targetSpotCapacity: js.UndefOr[Input[Double]] = js.native
+    val targetSpotCapacity: js.UndefOr[Input[Double]] = js.undefined
   }
   object InstanceFleetArgs {
     
@@ -179,44 +176,43 @@ object instanceFleetMod {
     }
   }
   
-  @js.native
   trait InstanceFleetState extends StObject {
     
     /**
       * ID of the EMR Cluster to attach to. Changing this forces a new resource to be created.
       */
-    val clusterId: js.UndefOr[Input[String]] = js.native
+    val clusterId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block for instance fleet
       */
     val instanceTypeConfigs: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.emr.InstanceFleetInstanceTypeConfig]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration block for launch specification
       */
-    val launchSpecifications: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.InstanceFleetLaunchSpecifications]] = js.native
+    val launchSpecifications: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.InstanceFleetLaunchSpecifications]] = js.undefined
     
     /**
       * Friendly name given to the instance fleet.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
-    val provisionedOnDemandCapacity: js.UndefOr[Input[Double]] = js.native
+    val provisionedOnDemandCapacity: js.UndefOr[Input[Double]] = js.undefined
     
-    val provisionedSpotCapacity: js.UndefOr[Input[Double]] = js.native
+    val provisionedSpotCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The target capacity of On-Demand units for the instance fleet, which determines how many On-Demand instances to provision.
       */
-    val targetOnDemandCapacity: js.UndefOr[Input[Double]] = js.native
+    val targetOnDemandCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The target capacity of Spot units for the instance fleet, which determines how many Spot instances to provision.
       */
-    val targetSpotCapacity: js.UndefOr[Input[Double]] = js.native
+    val targetSpotCapacity: js.UndefOr[Input[Double]] = js.undefined
   }
   object InstanceFleetState {
     

@@ -2,7 +2,6 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,9 +40,9 @@ trait Matrix3x3Helpers extends StObject {
     * @param py - the Y value to rotate around, defaults to 0.
     */
   def rotated(radians: AngleInRadians): js.Array[Double] = js.native
-  def rotated(radians: AngleInRadians, px: js.UndefOr[scala.Nothing], py: Double): js.Array[Double] = js.native
   def rotated(radians: AngleInRadians, px: Double): js.Array[Double] = js.native
   def rotated(radians: AngleInRadians, px: Double, py: Double): js.Array[Double] = js.native
+  def rotated(radians: AngleInRadians, px: Unit, py: Double): js.Array[Double] = js.native
   
   /**
     * Returns a new 3x3 matrix representing a scale in the x and y directions.
@@ -53,9 +52,9 @@ trait Matrix3x3Helpers extends StObject {
     * @param py - the Y value to scale from, defaults to 0.
     */
   def scaled(sx: Double, sy: Double): js.Array[Double] = js.native
-  def scaled(sx: Double, sy: Double, px: js.UndefOr[scala.Nothing], py: Double): js.Array[Double] = js.native
   def scaled(sx: Double, sy: Double, px: Double): js.Array[Double] = js.native
   def scaled(sx: Double, sy: Double, px: Double, py: Double): js.Array[Double] = js.native
+  def scaled(sx: Double, sy: Double, px: Unit, py: Double): js.Array[Double] = js.native
   
   /**
     * Returns a new 3x3 matrix representing a scale in the x and y directions.
@@ -65,9 +64,9 @@ trait Matrix3x3Helpers extends StObject {
     * @param py - the Y value to skew from, defaults to 0.
     */
   def skewed(kx: Double, ky: Double): js.Array[Double] = js.native
-  def skewed(kx: Double, ky: Double, px: js.UndefOr[scala.Nothing], py: Double): js.Array[Double] = js.native
   def skewed(kx: Double, ky: Double, px: Double): js.Array[Double] = js.native
   def skewed(kx: Double, ky: Double, px: Double, py: Double): js.Array[Double] = js.native
+  def skewed(kx: Double, ky: Double, px: Unit, py: Double): js.Array[Double] = js.native
   
   /**
     * Returns a new 3x3 matrix representing a translation in the x and y directions.

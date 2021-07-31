@@ -6,21 +6,19 @@ import typings.instagramPrivateApi.postingOptionsMod.PostingUsertags
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postingPhotoOptionsMod {
   
-  @js.native
   trait PostingPhotoOptions extends StObject {
     
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
-    var file: Buffer = js.native
+    var file: Buffer
     
-    var location: js.UndefOr[PostingLocation] = js.native
+    var location: js.UndefOr[PostingLocation] = js.undefined
     
-    var usertags: js.UndefOr[PostingUsertags] = js.native
+    var usertags: js.UndefOr[PostingUsertags] = js.undefined
   }
   object PostingPhotoOptions {
     
@@ -56,10 +54,11 @@ object postingPhotoOptionsMod {
     }
   }
   
-  @js.native
-  trait PostingStoryPhotoOptions extends PostingStoryOptions {
+  trait PostingStoryPhotoOptions
+    extends StObject
+       with PostingStoryOptions {
     
-    var file: Buffer = js.native
+    var file: Buffer
   }
   object PostingStoryPhotoOptions {
     

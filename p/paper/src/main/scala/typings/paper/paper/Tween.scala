@@ -2,7 +2,6 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Item#tweenTo(to, options)
   * @see Item#tweenFrom(from, options)
   */
-@js.native
 trait Tween extends StObject {
   
   /** 
@@ -25,17 +23,17 @@ trait Tween extends StObject {
     * object as its sole argument, containing the current progress of the
     * tweening and the factor calculated by the easing function.
     */
-  var onUpdate: js.Function | Null = js.native
+  var onUpdate: js.Function | Null
   
   /** 
     * Start tweening.
     */
-  def start(): Tween = js.native
+  def start(): Tween
   
   /** 
     * Stop tweening.
     */
-  def stop(): Tween = js.native
+  def stop(): Tween
   
   /** 
     * Set a function that will be executed when the tween completes.
@@ -43,13 +41,13 @@ trait Tween extends StObject {
     * @param function - the function to execute when the tween
     *     completes
     */
-  def `then`(callback: js.Function): Tween = js.native
+  def `then`(callback: js.Function): Tween
 }
 object Tween {
   
   @scala.inline
   def apply(start: () => Tween, stop: () => Tween, `then`: js.Function => Tween): Tween = {
-    val __obj = js.Dynamic.literal(start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
+    val __obj = js.Dynamic.literal(start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), onUpdate = null)
     __obj.updateDynamic("then")(js.Any.fromFunction1(`then`))
     __obj.asInstanceOf[Tween]
   }

@@ -2,16 +2,14 @@ package typings.agGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textAndNumberFilterParametersMod {
   
-  @js.native
   trait TextAndNumberFilterParameters extends StObject {
     
     /** What to do when new rows are loaded. The default is to reset the filter, to keep it in line with 'set' filters. If you want to keep the selection, then set this value to 'keep'. */
-    var newRowsAction: js.UndefOr[String] = js.native
+    var newRowsAction: js.UndefOr[String] = js.undefined
   }
   object TextAndNumberFilterParameters {
     

@@ -6,7 +6,6 @@ import typings.webcola.layoutMod.Link
 import typings.webcola.layoutMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "Layout")
@@ -20,54 +19,41 @@ object Layout {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("webcola", "Layout.drag")
-  @js.native
-  def drag(d: Group, position: X): Unit = js.native
-  @JSImport("webcola", "Layout.drag")
-  @js.native
-  def drag(d: Node, position: X): Unit = js.native
+  @scala.inline
+  def drag(d: Group, position: X): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drag")(d.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def drag(d: Node, position: X): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drag")(d.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("webcola", "Layout.dragEnd")
-  @js.native
-  def dragEnd(d: js.Any): Unit = js.native
+  @scala.inline
+  def dragEnd(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragEnd")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("webcola", "Layout.dragOrigin")
-  @js.native
-  def dragOrigin(d: Group): X = js.native
-  @JSImport("webcola", "Layout.dragOrigin")
-  @js.native
-  def dragOrigin(d: Node): X = js.native
+  @scala.inline
+  def dragOrigin(d: Group): X = ^.asInstanceOf[js.Dynamic].applyDynamic("dragOrigin")(d.asInstanceOf[js.Any]).asInstanceOf[X]
+  @scala.inline
+  def dragOrigin(d: Node): X = ^.asInstanceOf[js.Dynamic].applyDynamic("dragOrigin")(d.asInstanceOf[js.Any]).asInstanceOf[X]
   
-  @JSImport("webcola", "Layout.dragStart")
-  @js.native
-  def dragStart(d: Group): Unit = js.native
-  @JSImport("webcola", "Layout.dragStart")
-  @js.native
-  def dragStart(d: Node): Unit = js.native
+  @scala.inline
+  def dragStart(d: Group): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragStart")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def dragStart(d: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragStart")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("webcola", "Layout.getSourceIndex")
-  @js.native
-  def getSourceIndex(e: Link[Node | Double]): Double = js.native
+  @scala.inline
+  def getSourceIndex(e: Link[Node | Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceIndex")(e.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("webcola", "Layout.getTargetIndex")
-  @js.native
-  def getTargetIndex(e: Link[Node | Double]): Double = js.native
+  @scala.inline
+  def getTargetIndex(e: Link[Node | Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetIndex")(e.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("webcola", "Layout.linkId")
-  @js.native
-  def linkId(e: Link[Node | Double]): String = js.native
+  @scala.inline
+  def linkId(e: Link[Node | Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("linkId")(e.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("webcola", "Layout.mouseOut")
-  @js.native
-  def mouseOut(d: js.Any): Unit = js.native
+  @scala.inline
+  def mouseOut(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOut")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("webcola", "Layout.mouseOver")
-  @js.native
-  def mouseOver(d: js.Any): Unit = js.native
+  @scala.inline
+  def mouseOver(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOver")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("webcola", "Layout.setLinkLength")
-  @js.native
-  def setLinkLength(link: Link[Node | Double], length: Double): Unit = js.native
+  @scala.inline
+  def setLinkLength(link: Link[Node | Double], length: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLinkLength")(link.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("webcola", "Layout.stopNode")
   @js.native

@@ -10,7 +10,6 @@ import typings.konva.utilMod.Collection
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object containerMod {
@@ -85,7 +84,7 @@ object containerMod {
     
     def get(selector: js.Any): Collection[Node[NodeConfig]] = js.native
     
-    def getAllIntersections(pos: js.Any): js.Array[_] = js.native
+    def getAllIntersections(pos: js.Any): js.Array[js.Any] = js.native
     
     def getChildren(filterFunc: js.Function1[/* item */ Node[NodeConfig], Boolean]): Collection[Node[NodeConfig]] = js.native
     
@@ -94,20 +93,21 @@ object containerMod {
     def removeChildren(): this.type = js.native
   }
   
-  @js.native
-  trait ContainerConfig extends NodeConfig {
+  trait ContainerConfig
+    extends StObject
+       with NodeConfig {
     
-    var clearBeforeDraw: js.UndefOr[Boolean] = js.native
+    var clearBeforeDraw: js.UndefOr[Boolean] = js.undefined
     
-    var clipFunc: js.UndefOr[js.Function1[/* ctx */ CanvasRenderingContext2D, Unit]] = js.native
+    var clipFunc: js.UndefOr[js.Function1[/* ctx */ CanvasRenderingContext2D, Unit]] = js.undefined
     
-    var clipHeight: js.UndefOr[Double] = js.native
+    var clipHeight: js.UndefOr[Double] = js.undefined
     
-    var clipWidth: js.UndefOr[Double] = js.native
+    var clipWidth: js.UndefOr[Double] = js.undefined
     
-    var clipX: js.UndefOr[Double] = js.native
+    var clipX: js.UndefOr[Double] = js.undefined
     
-    var clipY: js.UndefOr[Double] = js.native
+    var clipY: js.UndefOr[Double] = js.undefined
   }
   object ContainerConfig {
     

@@ -2,14 +2,12 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A list of PDF conversion settings. */
-@js.native
 trait PdfSettings extends StObject {
   
-  var heading: js.UndefOr[PdfHeadingDetection] = js.native
+  var heading: js.UndefOr[PdfHeadingDetection] = js.undefined
 }
 object PdfSettings {
   

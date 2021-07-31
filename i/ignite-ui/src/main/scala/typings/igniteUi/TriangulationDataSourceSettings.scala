@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TriangulationDataSourceSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,27 +15,27 @@ trait TriangulationDataSourceSettings
   /**
     * Callback function to call when data binding is complete
     */
-  var callback: js.UndefOr[js.Function] = js.native
+  var callback: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Object on which to invoke the callback function
     */
-  var callee: js.UndefOr[js.Any] = js.native
+  var callee: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The unique identifier.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A Uri specifying the location of the Itf file.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * The TriangulationSource which is typically created after importing the Itf from the Source Uri.
     */
-  var triangulationSource: js.UndefOr[String] = js.native
+  var triangulationSource: js.UndefOr[String] = js.undefined
 }
 object TriangulationDataSourceSettings {
   

@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MeshOffsetParams extends Object {
+trait MeshOffsetParams
+  extends StObject
+     with Object {
   
   /**
     * Whether to georeference relative to the globe or the projected coordinate system (PCS).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#offset)
     */
-  var geographic: js.UndefOr[Boolean] = js.native
+  var geographic: js.UndefOr[Boolean] = js.undefined
 }
 object MeshOffsetParams {
   

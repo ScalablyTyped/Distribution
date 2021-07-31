@@ -5,7 +5,6 @@ import typings.vscodeLanguageserver.mod.Feature
 import typings.vscodeLanguageserver.mod._Languages
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object callHierarchyProposedMod {
@@ -14,10 +13,9 @@ object callHierarchyProposedMod {
   @js.native
   val CallHierarchyFeature: Feature[_Languages, CallHierarchy] = js.native
   
-  @js.native
   trait CallHierarchy extends StObject {
     
-    var callHierarchy: OnIncomingCalls = js.native
+    var callHierarchy: OnIncomingCalls
   }
   object CallHierarchy {
     

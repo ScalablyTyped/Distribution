@@ -12,7 +12,7 @@ A visual feedback indicator for the MaxLength attribute
 | Keywords           | form, maxlength, html5, input, feedback, jquery-plugin, jquery, bootstrap, bs |
 | # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 311367 |
+| # downloads        | 374965 |
 | # stars            | 1 |
 
 ## Links

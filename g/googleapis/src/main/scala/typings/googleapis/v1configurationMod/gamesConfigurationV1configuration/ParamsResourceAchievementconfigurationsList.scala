@@ -6,33 +6,33 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAchievementconfigurationsList extends StandardParameters {
+trait ParamsResourceAchievementconfigurationsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * The application ID from the Google Play developer console.
     */
-  var applicationId: js.UndefOr[String] = js.native
+  var applicationId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The maximum number of resource configurations to return in the response,
     * used for paging. For any response, the actual number of resources
     * returned may be less than the specified maxResults.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The token returned by the previous request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAchievementconfigurationsList {
   

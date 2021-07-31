@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Succeeded extends StObject {
   
-  var failed: scala.Double = js.native
+  var failed: scala.Double
   
-  var inProgress: scala.Double = js.native
+  var inProgress: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var pending: scala.Double = js.native
+  var pending: scala.Double
   
-  var succeeded: scala.Double = js.native
+  var succeeded: scala.Double
 }
 object Succeeded {
   

@@ -2,25 +2,23 @@ package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CollectionOverride allows resource handling overrides for specific
   * resources within a BaseType
   */
-@js.native
 trait SchemaCollectionOverride extends StObject {
   
   /**
     * The collection that identifies this resource within its service.
     */
-  var collection: js.UndefOr[String] = js.native
+  var collection: js.UndefOr[String] = js.undefined
   
   /**
     * The options to apply to this resource-level override
     */
-  var options: js.UndefOr[SchemaOptions] = js.native
+  var options: js.UndefOr[SchemaOptions] = js.undefined
 }
 object SchemaCollectionOverride {
   

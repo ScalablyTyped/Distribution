@@ -12,10 +12,13 @@ import typings.node.nodeStrings.resume
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readlineMod {
+  
+  @JSImport("readline", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("readline", "Interface")
   @js.native
@@ -39,29 +42,14 @@ object readlineMod {
       */
     protected def this(options: ReadLineOptions) = this()
     protected def this(input: ReadableStream, output: WritableStream) = this()
-    protected def this(input: ReadableStream, output: js.UndefOr[scala.Nothing], completer: AsyncCompleter) = this()
-    protected def this(input: ReadableStream, output: js.UndefOr[scala.Nothing], completer: Completer) = this()
+    protected def this(input: ReadableStream, output: Unit, completer: AsyncCompleter) = this()
+    protected def this(input: ReadableStream, output: Unit, completer: Completer) = this()
     protected def this(input: ReadableStream, output: WritableStream, completer: AsyncCompleter) = this()
     protected def this(input: ReadableStream, output: WritableStream, completer: Completer) = this()
-    protected def this(
-      input: ReadableStream,
-      output: js.UndefOr[scala.Nothing],
-      completer: js.UndefOr[scala.Nothing],
-      terminal: Boolean
-    ) = this()
-    protected def this(
-      input: ReadableStream,
-      output: js.UndefOr[scala.Nothing],
-      completer: AsyncCompleter,
-      terminal: Boolean
-    ) = this()
-    protected def this(input: ReadableStream, output: js.UndefOr[scala.Nothing], completer: Completer, terminal: Boolean) = this()
-    protected def this(
-      input: ReadableStream,
-      output: WritableStream,
-      completer: js.UndefOr[scala.Nothing],
-      terminal: Boolean
-    ) = this()
+    protected def this(input: ReadableStream, output: Unit, completer: Unit, terminal: Boolean) = this()
+    protected def this(input: ReadableStream, output: Unit, completer: AsyncCompleter, terminal: Boolean) = this()
+    protected def this(input: ReadableStream, output: Unit, completer: Completer, terminal: Boolean) = this()
+    protected def this(input: ReadableStream, output: WritableStream, completer: Unit, terminal: Boolean) = this()
     protected def this(input: ReadableStream, output: WritableStream, completer: AsyncCompleter, terminal: Boolean) = this()
     protected def this(input: ReadableStream, output: WritableStream, completer: Completer, terminal: Boolean) = this()
     
@@ -194,110 +182,70 @@ object readlineMod {
   /**
     * Clears the current line of this WriteStream in a direction identified by `dir`.
     */
-  @JSImport("readline", "clearLine")
-  @js.native
-  def clearLine(stream: WritableStream, dir: Direction): Boolean = js.native
-  @JSImport("readline", "clearLine")
-  @js.native
-  def clearLine(stream: WritableStream, dir: Direction, callback: js.Function0[Unit]): Boolean = js.native
+  @scala.inline
+  def clearLine(stream: WritableStream, dir: Direction): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("clearLine")(stream.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def clearLine(stream: WritableStream, dir: Direction, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("clearLine")(stream.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Clears this `WriteStream` from the current cursor down.
     */
-  @JSImport("readline", "clearScreenDown")
-  @js.native
-  def clearScreenDown(stream: WritableStream): Boolean = js.native
-  @JSImport("readline", "clearScreenDown")
-  @js.native
-  def clearScreenDown(stream: WritableStream, callback: js.Function0[Unit]): Boolean = js.native
+  @scala.inline
+  def clearScreenDown(stream: WritableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clearScreenDown")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def clearScreenDown(stream: WritableStream, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("clearScreenDown")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("readline", "createInterface")
-  @js.native
-  def createInterface(input: ReadableStream): Interface = js.native
-  @JSImport("readline", "createInterface")
-  @js.native
-  def createInterface(
-    input: ReadableStream,
-    output: js.UndefOr[scala.Nothing],
-    completer: js.UndefOr[scala.Nothing],
-    terminal: Boolean
-  ): Interface = js.native
-  @JSImport("readline", "createInterface")
-  @js.native
-  def createInterface(input: ReadableStream, output: js.UndefOr[scala.Nothing], completer: AsyncCompleter): Interface = js.native
-  @JSImport("readline", "createInterface")
-  @js.native
-  def createInterface(
-    input: ReadableStream,
-    output: js.UndefOr[scala.Nothing],
-    completer: AsyncCompleter,
-    terminal: Boolean
-  ): Interface = js.native
-  @JSImport("readline", "createInterface")
-  @js.native
-  def createInterface(input: ReadableStream, output: js.UndefOr[scala.Nothing], completer: Completer): Interface = js.native
-  @JSImport("readline", "createInterface")
-  @js.native
-  def createInterface(input: ReadableStream, output: js.UndefOr[scala.Nothing], completer: Completer, terminal: Boolean): Interface = js.native
-  @JSImport("readline", "createInterface")
-  @js.native
-  def createInterface(input: ReadableStream, output: WritableStream): Interface = js.native
-  @JSImport("readline", "createInterface")
-  @js.native
-  def createInterface(
-    input: ReadableStream,
-    output: WritableStream,
-    completer: js.UndefOr[scala.Nothing],
-    terminal: Boolean
-  ): Interface = js.native
-  @JSImport("readline", "createInterface")
-  @js.native
-  def createInterface(input: ReadableStream, output: WritableStream, completer: AsyncCompleter): Interface = js.native
-  @JSImport("readline", "createInterface")
-  @js.native
-  def createInterface(input: ReadableStream, output: WritableStream, completer: AsyncCompleter, terminal: Boolean): Interface = js.native
-  @JSImport("readline", "createInterface")
-  @js.native
-  def createInterface(input: ReadableStream, output: WritableStream, completer: Completer): Interface = js.native
-  @JSImport("readline", "createInterface")
-  @js.native
-  def createInterface(input: ReadableStream, output: WritableStream, completer: Completer, terminal: Boolean): Interface = js.native
-  @JSImport("readline", "createInterface")
-  @js.native
-  def createInterface(options: ReadLineOptions): Interface = js.native
+  @scala.inline
+  def createInterface(input: ReadableStream): Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any]).asInstanceOf[Interface]
+  @scala.inline
+  def createInterface(input: ReadableStream, output: Unit, completer: Unit, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  @scala.inline
+  def createInterface(input: ReadableStream, output: Unit, completer: AsyncCompleter): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  @scala.inline
+  def createInterface(input: ReadableStream, output: Unit, completer: AsyncCompleter, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  @scala.inline
+  def createInterface(input: ReadableStream, output: Unit, completer: Completer): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  @scala.inline
+  def createInterface(input: ReadableStream, output: Unit, completer: Completer, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  @scala.inline
+  def createInterface(input: ReadableStream, output: WritableStream): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  @scala.inline
+  def createInterface(input: ReadableStream, output: WritableStream, completer: Unit, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  @scala.inline
+  def createInterface(input: ReadableStream, output: WritableStream, completer: AsyncCompleter): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  @scala.inline
+  def createInterface(input: ReadableStream, output: WritableStream, completer: AsyncCompleter, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  @scala.inline
+  def createInterface(input: ReadableStream, output: WritableStream, completer: Completer): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  @scala.inline
+  def createInterface(input: ReadableStream, output: WritableStream, completer: Completer, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  @scala.inline
+  def createInterface(options: ReadLineOptions): Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(options.asInstanceOf[js.Any]).asInstanceOf[Interface]
   
   /**
     * Moves this WriteStream's cursor to the specified position.
     */
-  @JSImport("readline", "cursorTo")
-  @js.native
-  def cursorTo(stream: WritableStream, x: Double): Boolean = js.native
-  @JSImport("readline", "cursorTo")
-  @js.native
-  def cursorTo(stream: WritableStream, x: Double, y: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Boolean = js.native
-  @JSImport("readline", "cursorTo")
-  @js.native
-  def cursorTo(stream: WritableStream, x: Double, y: Double): Boolean = js.native
-  @JSImport("readline", "cursorTo")
-  @js.native
-  def cursorTo(stream: WritableStream, x: Double, y: Double, callback: js.Function0[Unit]): Boolean = js.native
+  @scala.inline
+  def cursorTo(stream: WritableStream, x: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cursorTo")(stream.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def cursorTo(stream: WritableStream, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cursorTo")(stream.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def cursorTo(stream: WritableStream, x: Double, y: Double, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cursorTo")(stream.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def cursorTo(stream: WritableStream, x: Double, y: Unit, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cursorTo")(stream.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("readline", "emitKeypressEvents")
-  @js.native
-  def emitKeypressEvents(stream: ReadableStream): Unit = js.native
-  @JSImport("readline", "emitKeypressEvents")
-  @js.native
-  def emitKeypressEvents(stream: ReadableStream, readlineInterface: Interface): Unit = js.native
+  @scala.inline
+  def emitKeypressEvents(stream: ReadableStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emitKeypressEvents")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def emitKeypressEvents(stream: ReadableStream, readlineInterface: Interface): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emitKeypressEvents")(stream.asInstanceOf[js.Any], readlineInterface.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Moves this WriteStream's cursor relative to its current position.
     */
-  @JSImport("readline", "moveCursor")
-  @js.native
-  def moveCursor(stream: WritableStream, dx: Double, dy: Double): Boolean = js.native
-  @JSImport("readline", "moveCursor")
-  @js.native
-  def moveCursor(stream: WritableStream, dx: Double, dy: Double, callback: js.Function0[Unit]): Boolean = js.native
+  @scala.inline
+  def moveCursor(stream: WritableStream, dx: Double, dy: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("moveCursor")(stream.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def moveCursor(stream: WritableStream, dx: Double, dy: Double, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("moveCursor")(stream.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type AsyncCompleter = js.Function2[
     /* line */ java.lang.String, 
@@ -310,12 +258,11 @@ object readlineMod {
   
   type CompleterResult = js.Tuple2[js.Array[java.lang.String], java.lang.String]
   
-  @js.native
   trait CursorPos extends StObject {
     
-    var cols: Double = js.native
+    var cols: Double
     
-    var rows: Double = js.native
+    var rows: Double
   }
   object CursorPos {
     
@@ -354,18 +301,17 @@ object readlineMod {
     def `1`: typings.node.nodeNumbers.`1` = 1.asInstanceOf[typings.node.nodeNumbers.`1`]
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var ctrl: js.UndefOr[Boolean] = js.native
+    var ctrl: js.UndefOr[Boolean] = js.undefined
     
-    var meta: js.UndefOr[Boolean] = js.native
+    var meta: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[java.lang.String] = js.native
+    var name: js.UndefOr[java.lang.String] = js.undefined
     
-    var sequence: js.UndefOr[java.lang.String] = js.native
+    var sequence: js.UndefOr[java.lang.String] = js.undefined
     
-    var shift: js.UndefOr[Boolean] = js.native
+    var shift: js.UndefOr[Boolean] = js.undefined
   }
   object Key {
     
@@ -412,28 +358,27 @@ object readlineMod {
   
   type ReadLine = Interface
   
-  @js.native
   trait ReadLineOptions extends StObject {
     
-    var completer: js.UndefOr[Completer | AsyncCompleter] = js.native
+    var completer: js.UndefOr[Completer | AsyncCompleter] = js.undefined
     
-    var crlfDelay: js.UndefOr[Double] = js.native
+    var crlfDelay: js.UndefOr[Double] = js.undefined
     
-    var escapeCodeTimeout: js.UndefOr[Double] = js.native
+    var escapeCodeTimeout: js.UndefOr[Double] = js.undefined
     
-    var historySize: js.UndefOr[Double] = js.native
+    var historySize: js.UndefOr[Double] = js.undefined
     
-    var input: ReadableStream = js.native
+    var input: ReadableStream
     
-    var output: js.UndefOr[WritableStream] = js.native
+    var output: js.UndefOr[WritableStream] = js.undefined
     
-    var prompt: js.UndefOr[java.lang.String] = js.native
+    var prompt: js.UndefOr[java.lang.String] = js.undefined
     
-    var removeHistoryDuplicates: js.UndefOr[Boolean] = js.native
+    var removeHistoryDuplicates: js.UndefOr[Boolean] = js.undefined
     
-    var tabSize: js.UndefOr[Double] = js.native
+    var tabSize: js.UndefOr[Double] = js.undefined
     
-    var terminal: js.UndefOr[Boolean] = js.native
+    var terminal: js.UndefOr[Boolean] = js.undefined
   }
   object ReadLineOptions {
     

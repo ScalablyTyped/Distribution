@@ -5,14 +5,16 @@ import typings.std.Element
 import typings.stylableRuntime.typesMod.NodeRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyedListRendererMod {
   
-  @JSImport("@stylable/runtime/cjs/keyed-list-renderer", "createDOMListRenderer")
+  @JSImport("@stylable/runtime/cjs/keyed-list-renderer", JSImport.Namespace)
   @js.native
-  def createDOMListRenderer[I, O /* <: Element */, C /* <: Element */](nodeRenderer: NodeRenderer[I, O]): DOMListRenderer[I, O, C] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createDOMListRenderer[I, O /* <: Element */, C /* <: Element */](nodeRenderer: NodeRenderer[I, O]): DOMListRenderer[I, O, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDOMListRenderer")(nodeRenderer.asInstanceOf[js.Any]).asInstanceOf[DOMListRenderer[I, O, C]]
   
   @js.native
   trait DOMListRenderer[I, O /* <: Element */, C /* <: Element */] extends StObject {

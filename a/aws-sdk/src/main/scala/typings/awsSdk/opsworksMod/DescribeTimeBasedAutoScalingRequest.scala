@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTimeBasedAutoScalingRequest extends StObject {
   
   /**
     * An array of instance IDs.
     */
-  var InstanceIds: Strings = js.native
+  var InstanceIds: Strings
 }
 object DescribeTimeBasedAutoScalingRequest {
   

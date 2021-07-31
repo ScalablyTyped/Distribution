@@ -7,26 +7,29 @@ import typings.jsmediatags.typesMod.LoadCallbackType
 import typings.jsmediatags.typesMod.TagType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaTagReaderMod {
   
   @JSImport("jsmediatags/build2/MediaTagReader", JSImport.Default)
   @js.native
-  class default protected () extends MediaTagReader {
+  class default protected ()
+    extends StObject
+       with MediaTagReader {
     def this(mediaFileReader: typings.jsmediatags.mediaFileReaderMod.default) = this()
   }
   /* static members */
   object default {
     
-    @JSImport("jsmediatags/build2/MediaTagReader", "default.canReadTagFormat")
+    @JSImport("jsmediatags/build2/MediaTagReader", JSImport.Default)
     @js.native
-    def canReadTagFormat(tagIdentifier: js.Array[Double]): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("jsmediatags/build2/MediaTagReader", "default.getTagIdentifierByteRange")
-    @js.native
-    def getTagIdentifierByteRange(): ByteRange = js.native
+    @scala.inline
+    def canReadTagFormat(tagIdentifier: js.Array[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadTagFormat")(tagIdentifier.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def getTagIdentifierByteRange(): ByteRange = ^.asInstanceOf[js.Dynamic].applyDynamic("getTagIdentifierByteRange")().asInstanceOf[ByteRange]
   }
   
   @js.native

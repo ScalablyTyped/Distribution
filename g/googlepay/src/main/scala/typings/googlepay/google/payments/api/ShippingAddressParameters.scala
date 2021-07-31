@@ -4,13 +4,11 @@ import typings.googlepay.googlepayBooleans.`false`
 import typings.googlepay.googlepayBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Optional shipping address parameters for the returned shipping address.
   */
-@js.native
 trait ShippingAddressParameters extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait ShippingAddressParameters extends StObject {
     * If omitted, a shipping address from any supported country may be
     * returned.
     */
-  var allowedCountryCodes: js.Array[String] = js.native
+  var allowedCountryCodes: js.Array[String]
   
   /**
     * Whether a phone number is additionally required from the buyer for
@@ -33,7 +31,7 @@ trait ShippingAddressParameters extends StObject {
     *
     * @default false
     */
-  var phoneNumberRequired: js.UndefOr[`false` | `true`] = js.native
+  var phoneNumberRequired: js.UndefOr[`false` | `true`] = js.undefined
 }
 object ShippingAddressParameters {
   

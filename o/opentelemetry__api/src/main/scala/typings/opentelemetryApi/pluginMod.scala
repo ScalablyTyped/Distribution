@@ -6,7 +6,6 @@ import typings.opentelemetryApi.tracerProviderMod.TracerProvider
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginMod {
@@ -42,45 +41,44 @@ object pluginMod {
     var supportedVersions: js.UndefOr[js.Array[String]] = js.native
   }
   
-  @js.native
   trait PluginConfig extends StObject {
     
     /**
       * Whether to enable the plugin.
       * @default true
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, additional information about query parameters and
       * results will be attached (as `attributes`) to spans representing
       * database operations.
       */
-    var enhancedDatabaseReporting: js.UndefOr[Boolean] = js.native
+    var enhancedDatabaseReporting: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Request methods that match any string in ignoreMethods will not be traced.
       */
-    var ignoreMethods: js.UndefOr[js.Array[String]] = js.native
+    var ignoreMethods: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * URLs that partially match any regex in ignoreUrls will not be traced.
       * In addition, URLs that are _exact matches_ of strings in ignoreUrls will
       * also not be traced.
       */
-    var ignoreUrls: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var ignoreUrls: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
     /**
       * List of internal files that need patch and are not exported by
       * default.
       */
-    var internalFilesExports: js.UndefOr[PluginInternalFiles] = js.native
+    var internalFilesExports: js.UndefOr[PluginInternalFiles] = js.undefined
     
     /**
       * Path of the trace plugin to load.
       * @default '@opentelemetry/plugin-http' in case of http.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object PluginConfig {
     

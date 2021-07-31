@@ -10,9 +10,9 @@ Angular File Upload is a module for the AngularJS framework
 | ------------------ | :-------------: |
 | Full name          | angular-file-upload |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 13 |
-| # downloads        | 792734 |
+| # downloads        | 845567 |
 | # stars            | 2 |
 
 ## Links

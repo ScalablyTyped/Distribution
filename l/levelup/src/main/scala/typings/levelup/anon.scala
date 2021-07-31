@@ -4,18 +4,16 @@ import typings.abstractLeveldown.mod.ErrorCallback
 import typings.abstractLeveldown.mod.ErrorValueCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Clear extends StObject {
     
     def clear(
       options: /* import warning: importer.ImportType#apply Failed type conversion: infer O */ js.Any,
       callback: ErrorCallback
-    ): Unit = js.native
+    ): Unit
   }
   object Clear {
     
@@ -37,14 +35,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Del extends StObject {
     
     def del(
       key: /* import warning: importer.ImportType#apply Failed type conversion: infer K */ js.Any,
       options: /* import warning: importer.ImportType#apply Failed type conversion: infer O */ js.Any,
       callback: ErrorCallback
-    ): Unit = js.native
+    ): Unit
   }
   object Del {
     
@@ -66,7 +63,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Get extends StObject {
     
     def get(
@@ -75,7 +71,7 @@ object anon {
       callback: ErrorValueCallback[
           /* import warning: importer.ImportType#apply Failed type conversion: infer V */ js.Any
         ]
-    ): Unit = js.native
+    ): Unit
   }
   object Get {
     
@@ -101,7 +97,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Put extends StObject {
     
     def put(
@@ -109,7 +104,7 @@ object anon {
       value: /* import warning: importer.ImportType#apply Failed type conversion: infer V */ js.Any,
       options: /* import warning: importer.ImportType#apply Failed type conversion: infer O */ js.Any,
       cb: js.Any
-    ): Unit = js.native
+    ): Unit
   }
   object Put {
     

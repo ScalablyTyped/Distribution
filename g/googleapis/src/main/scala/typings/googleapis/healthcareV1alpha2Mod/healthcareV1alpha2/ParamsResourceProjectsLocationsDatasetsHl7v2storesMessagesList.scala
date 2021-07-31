@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesList extends StandardParameters {
+trait ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Restricts messages returned to those matching a filter. Syntax:
@@ -51,31 +51,31 @@ trait ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesList extends Sta
     * "ADT"`.  The HasLabel(x) and Label(x) syntax from previous API versions
     * are deprecated; replaced by the `labels.x` syntax.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Orders messages returned by the specified order_by clause. Syntax:
     * https://cloud.google.com/apis/design/design_patterns#sorting_order Fields
     * available for ordering are:  *  `send_time`
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Limit on the number of messages to return in a single response. If zero
     * the default page size of 100 is used.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The next_page_token value returned from the previous List request, if
     * any.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the HL7v2 store to retrieve messages from.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesList {
   

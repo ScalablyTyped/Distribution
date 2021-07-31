@@ -2,15 +2,13 @@ package typings.jsonapiSerializer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait About extends StObject {
     
-    var about: js.UndefOr[String] = js.native
+    var about: js.UndefOr[String] = js.undefined
   }
   object About {
     
@@ -31,12 +29,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Parameter extends StObject {
     
-    var parameter: js.UndefOr[String] = js.native
+    var parameter: js.UndefOr[String] = js.undefined
     
-    var pointer: js.UndefOr[String] = js.native
+    var pointer: js.UndefOr[String] = js.undefined
   }
   object Parameter {
     

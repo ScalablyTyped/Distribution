@@ -2,95 +2,95 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Message extends OutlookItem {
+trait Message
+  extends StObject
+     with OutlookItem {
   
   // The fileAttachment and itemAttachment attachments for the message.
-  var attachments: js.UndefOr[NullableOption[js.Array[Attachment]]] = js.native
+  var attachments: js.UndefOr[NullableOption[js.Array[Attachment]]] = js.undefined
   
   // The Bcc: recipients for the message.
-  var bccRecipients: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.native
+  var bccRecipients: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.undefined
   
   // The body of the message. It can be in HTML or text format. Find out about safe HTML in a message body.
-  var body: js.UndefOr[NullableOption[ItemBody]] = js.native
+  var body: js.UndefOr[NullableOption[ItemBody]] = js.undefined
   
   // The first 255 characters of the message body. It is in text format.
-  var bodyPreview: js.UndefOr[NullableOption[String]] = js.native
+  var bodyPreview: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The Cc: recipients for the message.
-  var ccRecipients: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.native
+  var ccRecipients: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.undefined
   
   // The ID of the conversation the email belongs to.
-  var conversationId: js.UndefOr[NullableOption[String]] = js.native
+  var conversationId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates the position of the message within the conversation.
-  var conversationIndex: js.UndefOr[NullableOption[Double]] = js.native
+  var conversationIndex: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The collection of open extensions defined for the message. Nullable.
-  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.native
+  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.undefined
   
   // The flag value that indicates the status, start date, due date, or completion date for the message.
-  var flag: js.UndefOr[NullableOption[FollowupFlag]] = js.native
+  var flag: js.UndefOr[NullableOption[FollowupFlag]] = js.undefined
   
   /**
     * The owner of the mailbox from which the message is sent. In most cases, this value is the same as the sender property,
     * except for sharing or delegation scenarios. The value must correspond to the actual mailbox used. Find out more about
     * setting the from and sender properties of a message.
     */
-  var from: js.UndefOr[NullableOption[Recipient]] = js.native
+  var from: js.UndefOr[NullableOption[Recipient]] = js.undefined
   
   /**
     * Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message
     * contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body
     * property to look for a src attribute, such as &amp;lt;IMG src='cid:image001.jpg@01D26CD8.6C05F070'&amp;gt;.
     */
-  var hasAttachments: js.UndefOr[NullableOption[Boolean]] = js.native
+  var hasAttachments: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The importance of the message: Low, Normal, High.
-  var importance: js.UndefOr[NullableOption[Importance]] = js.native
+  var importance: js.UndefOr[NullableOption[Importance]] = js.undefined
   
   /**
     * The classification of the message for the user, based on inferred relevance or importance, or on an explicit override.
     * The possible values are: focused or other.
     */
-  var inferenceClassification: js.UndefOr[NullableOption[InferenceClassificationType]] = js.native
+  var inferenceClassification: js.UndefOr[NullableOption[InferenceClassificationType]] = js.undefined
   
   /**
     * A collection of message headers defined by RFC5322. The set includes message headers indicating the network path taken
     * by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the
     * message. Returned only on applying a $select query option. Read-only.
     */
-  var internetMessageHeaders: js.UndefOr[NullableOption[js.Array[InternetMessageHeader]]] = js.native
+  var internetMessageHeaders: js.UndefOr[NullableOption[js.Array[InternetMessageHeader]]] = js.undefined
   
   // The message ID in the format specified by RFC2822.
-  var internetMessageId: js.UndefOr[NullableOption[String]] = js.native
+  var internetMessageId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether a read receipt is requested for the message.
-  var isDeliveryReceiptRequested: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isDeliveryReceiptRequested: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.
-  var isDraft: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isDraft: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether the message has been read.
-  var isRead: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isRead: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether a read receipt is requested for the message.
-  var isReadReceiptRequested: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isReadReceiptRequested: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The collection of multi-value extended properties defined for the message. Nullable.
-  var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.native
+  var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.undefined
   
   // The unique identifier for the message's parent mailFolder.
-  var parentFolderId: js.UndefOr[NullableOption[String]] = js.native
+  var parentFolderId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The date and time the message was received.
-  var receivedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var receivedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The email addresses to use when replying.
-  var replyTo: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.native
+  var replyTo: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.undefined
   
   /**
     * The account that is actually used to generate the message. In most cases, this value is the same as the from property.
@@ -98,25 +98,25 @@ trait Message extends OutlookItem {
     * as a delegate. In any case, the value must correspond to the actual mailbox used. Find out more about setting the from
     * and sender properties of a message.
     */
-  var sender: js.UndefOr[NullableOption[Recipient]] = js.native
+  var sender: js.UndefOr[NullableOption[Recipient]] = js.undefined
   
   // The date and time the message was sent.
-  var sentDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var sentDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The collection of single-value extended properties defined for the message. Nullable.
-  var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.native
+  var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.undefined
   
   // The subject of the message.
-  var subject: js.UndefOr[NullableOption[String]] = js.native
+  var subject: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The To: recipients for the message.
-  var toRecipients: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.native
+  var toRecipients: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.undefined
   
   /**
     * The part of the body of the message that is unique to the current message. uniqueBody is not returned by default but
     * can be retrieved for a given message by use of the ?$select=uniqueBody query. It can be in HTML or text format.
     */
-  var uniqueBody: js.UndefOr[NullableOption[ItemBody]] = js.native
+  var uniqueBody: js.UndefOr[NullableOption[ItemBody]] = js.undefined
   
   /**
     * The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change
@@ -125,7 +125,7 @@ trait Message extends OutlookItem {
     * message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to
     * login if you are not already logged in with the browser.This URL cannot be accessed from within an iFrame.
     */
-  var webLink: js.UndefOr[NullableOption[String]] = js.native
+  var webLink: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Message {
   

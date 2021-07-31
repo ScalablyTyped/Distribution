@@ -5,10 +5,13 @@ import typings.terminalImage.anon.Readonlywidthstringnumber
 import typings.terminalImage.anon.ReadonlywidthstringnumberHeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("terminal-image", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
   	Display images in the terminal.
@@ -38,12 +41,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("terminal-image", "buffer")
-  @js.native
-  def buffer(imageBuffer: ReadonlyBuffer): js.Promise[String] = js.native
-  @JSImport("terminal-image", "buffer")
-  @js.native
-  def buffer(imageBuffer: ReadonlyBuffer, options: Readonlywidthstringnumber): js.Promise[String] = js.native
+  @scala.inline
+  def buffer(imageBuffer: ReadonlyBuffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(imageBuffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def buffer(imageBuffer: ReadonlyBuffer, options: Readonlywidthstringnumber): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(imageBuffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
   	Display images in the terminal. Please note that the image will always be scaled to fit the size of the terminal.
@@ -71,12 +72,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("terminal-image", "file")
-  @js.native
-  def file(filePath: String): js.Promise[String] = js.native
-  @JSImport("terminal-image", "file")
-  @js.native
-  def file(filePath: String, options: Readonlywidthstringnumber): js.Promise[String] = js.native
+  @scala.inline
+  def file(filePath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def file(filePath: String, options: Readonlywidthstringnumber): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
   	Display GIFs in the terminal.
@@ -109,12 +108,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("terminal-image", "gifBuffer")
-  @js.native
-  def gifBuffer(imageBuffer: ReadonlyBuffer): js.Function0[Unit] = js.native
-  @JSImport("terminal-image", "gifBuffer")
-  @js.native
-  def gifBuffer(imageBuffer: ReadonlyBuffer, options: ReadonlywidthstringnumberHeight): js.Function0[Unit] = js.native
+  @scala.inline
+  def gifBuffer(imageBuffer: ReadonlyBuffer): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("gifBuffer")(imageBuffer.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def gifBuffer(imageBuffer: ReadonlyBuffer, options: ReadonlywidthstringnumberHeight): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("gifBuffer")(imageBuffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   /**
   	Display gifs in the terminal.
@@ -145,12 +142,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("terminal-image", "gifFile")
-  @js.native
-  def gifFile(filePath: String): js.Function0[Unit] = js.native
-  @JSImport("terminal-image", "gifFile")
-  @js.native
-  def gifFile(filePath: String, options: ReadonlywidthstringnumberHeight): js.Function0[Unit] = js.native
+  @scala.inline
+  def gifFile(filePath: String): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("gifFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def gifFile(filePath: String, options: ReadonlywidthstringnumberHeight): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("gifFile")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   @js.native
   trait RenderFrame extends StObject {

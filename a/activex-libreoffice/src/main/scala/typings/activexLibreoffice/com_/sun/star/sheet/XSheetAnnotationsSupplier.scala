@@ -4,24 +4,24 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to a collection of cell annotations. */
-@js.native
-trait XSheetAnnotationsSupplier extends XInterface {
+trait XSheetAnnotationsSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the collection of cell annotations.
     * @see com.sun.star.sheet.CellAnnotations
     */
-  val Annotations: XSheetAnnotations = js.native
+  val Annotations: XSheetAnnotations
   
   /**
     * returns the collection of cell annotations.
     * @see com.sun.star.sheet.CellAnnotations
     */
-  def getAnnotations(): XSheetAnnotations = js.native
+  def getAnnotations(): XSheetAnnotations
 }
 object XSheetAnnotationsSupplier {
   

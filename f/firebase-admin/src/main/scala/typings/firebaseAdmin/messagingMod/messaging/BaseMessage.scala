@@ -3,23 +3,21 @@ package typings.firebaseAdmin.messagingMod.messaging
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseMessage extends StObject {
   
-  var android: js.UndefOr[AndroidConfig] = js.native
+  var android: js.UndefOr[AndroidConfig] = js.undefined
   
-  var apns: js.UndefOr[ApnsConfig] = js.native
+  var apns: js.UndefOr[ApnsConfig] = js.undefined
   
-  var data: js.UndefOr[StringDictionary[String]] = js.native
+  var data: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var fcmOptions: js.UndefOr[FcmOptions] = js.native
+  var fcmOptions: js.UndefOr[FcmOptions] = js.undefined
   
-  var notification: js.UndefOr[Notification] = js.native
+  var notification: js.UndefOr[Notification] = js.undefined
   
-  var webpush: js.UndefOr[WebpushConfig] = js.native
+  var webpush: js.UndefOr[WebpushConfig] = js.undefined
 }
 object BaseMessage {
   

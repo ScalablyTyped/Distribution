@@ -4,25 +4,23 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Rich Communication Services (RCS) end user message. */
-@js.native
 trait RcsEndUserMessage extends StObject {
   
   /** Gets the actions to which the user can respond. */
-  var actions: IVectorView[RcsEndUserMessageAction] = js.native
+  var actions: IVectorView[RcsEndUserMessageAction]
   
   /** Gets a Boolean value that specifies whether a PIN is required to be sent back with the response. */
-  var isPinRequired: Boolean = js.native
+  var isPinRequired: Boolean
   
   /**
     * Asynchronously sends the user's selection back.
     * @param action Specifies the label of the action.
     * @return An async action indicating that the operation has completed.
     */
-  def sendResponseAsync(action: RcsEndUserMessageAction): IPromiseWithIAsyncAction = js.native
+  def sendResponseAsync(action: RcsEndUserMessageAction): IPromiseWithIAsyncAction
   
   /**
     * Asynchronously sends the user's selection back with the specified PIN.
@@ -30,16 +28,16 @@ trait RcsEndUserMessage extends StObject {
     * @param pin The PIN to send.
     * @return An async action indicating that the operation has completed.
     */
-  def sendResponseWithPinAsync(action: RcsEndUserMessageAction, pin: String): IPromiseWithIAsyncAction = js.native
+  def sendResponseWithPinAsync(action: RcsEndUserMessageAction, pin: String): IPromiseWithIAsyncAction
   
   /** Gets the contents of the message. */
-  var text: String = js.native
+  var text: String
   
   /** Gets the title of the message. */
-  var title: String = js.native
+  var title: String
   
   /** Gets the ID of the transport where this message originated. */
-  var transportId: String = js.native
+  var transportId: String
 }
 object RcsEndUserMessage {
   

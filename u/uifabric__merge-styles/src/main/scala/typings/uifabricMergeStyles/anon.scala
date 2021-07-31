@@ -3,17 +3,15 @@ package typings.uifabricMergeStyles
 import typings.uifabricMergeStyles.istyleMod.IStyleBaseArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Classes extends StObject {
     
-    var classes: js.Array[String] = js.native
+    var classes: js.Array[String]
     
-    var objects: IStyleBaseArray = js.native
+    var objects: IStyleBaseArray
   }
   object Classes {
     
@@ -37,12 +35,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Css extends StObject {
     
-    var css: String = js.native
+    var css: String
     
-    var html: String = js.native
+    var html: String
   }
   object Css {
     

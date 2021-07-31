@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorFileBrowser extends StObject {
   
-  var fileTypes: js.UndefOr[String] = js.native
+  var fileTypes: js.UndefOr[String] = js.undefined
   
-  var messages: js.UndefOr[EditorFileBrowserMessages] = js.native
+  var messages: js.UndefOr[EditorFileBrowserMessages] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var schema: js.UndefOr[EditorFileBrowserSchema] = js.native
+  var schema: js.UndefOr[EditorFileBrowserSchema] = js.undefined
   
-  var transport: js.UndefOr[EditorFileBrowserTransport] = js.native
+  var transport: js.UndefOr[EditorFileBrowserTransport] = js.undefined
 }
 object EditorFileBrowser {
   

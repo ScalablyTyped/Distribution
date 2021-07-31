@@ -2,32 +2,32 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Is the layout for GenericDimensionProperties.
   */
-@js.native
-trait IGenericDimensionLayout extends IGenericBaseLayout {
+trait IGenericDimensionLayout
+  extends StObject
+     with IGenericBaseLayout {
   
   /**
     * Identifier and type of the dimension.
     */
-  var qDim: INxLibraryDimensionDef = js.native
+  var qDim: INxLibraryDimensionDef
   
   /**
     * Cardinal and tags related to the dimension.
     * Length of the longest value in the field.
     */
-  var qDimInfos: js.Array[IGenericDimensionInfo] = js.native
+  var qDimInfos: js.Array[IGenericDimensionInfo]
   
   /*add new member */
   /**
     * Information about publishing and permissions.
     */
   @JSName("qMeta")
-  var qMeta_IGenericDimensionLayout: INxMetaTitleDescriptionTag = js.native
+  var qMeta_IGenericDimensionLayout: INxMetaTitleDescriptionTag
 }
 object IGenericDimensionLayout {
   

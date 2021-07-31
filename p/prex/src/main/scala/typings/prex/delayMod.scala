@@ -4,36 +4,30 @@ import typings.esfxCancelable.distMod.Cancelable
 import typings.prex.cancellationMod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object delayMod {
   
-  @JSImport("prex/out/lib/delay", "delay")
+  @JSImport("prex/out/lib/delay", JSImport.Namespace)
   @js.native
-  def delay(msec: Double): js.Promise[Unit] = js.native
-  @JSImport("prex/out/lib/delay", "delay")
-  @js.native
-  def delay(token: Cancelable, msec: Double): js.Promise[Unit] = js.native
-  @JSImport("prex/out/lib/delay", "delay")
-  @js.native
-  def delay(token: CancellationToken, msec: Double): js.Promise[Unit] = js.native
-  @JSImport("prex/out/lib/delay", "delay")
-  @js.native
-  def delay[T](msec: Double, value: T): js.Promise[T] = js.native
-  @JSImport("prex/out/lib/delay", "delay")
-  @js.native
-  def delay[T](msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
-  @JSImport("prex/out/lib/delay", "delay")
-  @js.native
-  def delay[T](token: Cancelable, msec: Double, value: T): js.Promise[T] = js.native
-  @JSImport("prex/out/lib/delay", "delay")
-  @js.native
-  def delay[T](token: Cancelable, msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
-  @JSImport("prex/out/lib/delay", "delay")
-  @js.native
-  def delay[T](token: CancellationToken, msec: Double, value: T): js.Promise[T] = js.native
-  @JSImport("prex/out/lib/delay", "delay")
-  @js.native
-  def delay[T](token: CancellationToken, msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def delay(msec: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(msec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def delay(token: Cancelable, msec: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def delay(token: CancellationToken, msec: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def delay[T](msec: Double, value: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def delay[T](msec: Double, value: js.Thenable[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def delay[T](token: Cancelable, msec: Double, value: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def delay[T](token: Cancelable, msec: Double, value: js.Thenable[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def delay[T](token: CancellationToken, msec: Double, value: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def delay[T](token: CancellationToken, msec: Double, value: js.Thenable[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
 }

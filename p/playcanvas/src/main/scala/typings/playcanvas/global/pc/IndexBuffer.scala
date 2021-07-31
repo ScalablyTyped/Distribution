@@ -3,7 +3,6 @@ package typings.playcanvas.global.pc
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,7 +39,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.IndexBuffer")
 @js.native
 class IndexBuffer protected ()
-  extends typings.playcanvas.pc.IndexBuffer {
+  extends StObject
+     with typings.playcanvas.pc.IndexBuffer {
   def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice, format: Double, numIndices: Double) = this()
   def this(
     graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
@@ -52,14 +52,53 @@ class IndexBuffer protected ()
     graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
     format: Double,
     numIndices: Double,
-    usage: js.UndefOr[scala.Nothing],
+    usage: Double,
     initialData: ArrayBuffer
   ) = this()
   def this(
     graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
     format: Double,
     numIndices: Double,
-    usage: Double,
+    usage: Unit,
     initialData: ArrayBuffer
   ) = this()
+  
+  /**
+    * Frees resources associated with this index buffer.
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
+    * Returns the data format of the specified index buffer.
+    * @returns The data format of the specified index buffer. Can be:
+    *
+    * * {@link pc.INDEXFORMAT_UINT8}
+    * * {@link pc.INDEXFORMAT_UINT16}
+    * * {@link pc.INDEXFORMAT_UINT32}
+    */
+  /* CompleteClass */
+  override def getFormat(): Double = js.native
+  
+  /**
+    * Returns the number of indices stored in the specified index buffer.
+    * @returns The number of indices stored in the specified index buffer.
+    */
+  /* CompleteClass */
+  override def getNumIndices(): Double = js.native
+  
+  /**
+    * Gives access to the block of memory that stores the buffer's indices.
+    * @returns A contiguous block of memory where index data can be written to.
+    */
+  /* CompleteClass */
+  override def lock(): ArrayBuffer = js.native
+  
+  /**
+    * Signals that the block of memory returned by a call to the lock function is
+    * ready to be given to the graphics hardware. Only unlocked index buffers can be set on the
+    * currently active device.
+    */
+  /* CompleteClass */
+  override def unlock(): Unit = js.native
 }

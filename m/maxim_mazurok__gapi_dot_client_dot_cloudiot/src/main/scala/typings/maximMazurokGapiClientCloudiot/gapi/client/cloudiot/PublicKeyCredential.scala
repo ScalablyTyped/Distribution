@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicKeyCredential extends StObject {
   
   /** The format of the key. */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /** The key data. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
 }
 object PublicKeyCredential {
   

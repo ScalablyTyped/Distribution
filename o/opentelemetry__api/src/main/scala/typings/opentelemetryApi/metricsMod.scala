@@ -4,7 +4,6 @@ import typings.opentelemetryApi.meterMod.Meter
 import typings.opentelemetryApi.meterProviderMod.MeterProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metricsMod {
@@ -47,8 +46,7 @@ object metricsMod {
     def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /** Get the singleton instance of the Metrics API */
-    @JSImport("@opentelemetry/api/build/src/api/metrics", "MetricsAPI.getInstance")
-    @js.native
-    def getInstance(): MetricsAPI = js.native
+    @scala.inline
+    def getInstance(): MetricsAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[MetricsAPI]
   }
 }

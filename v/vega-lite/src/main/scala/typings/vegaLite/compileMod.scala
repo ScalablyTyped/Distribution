@@ -11,35 +11,35 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaUtil.mod.LoggerInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compileMod {
   
-  @JSImport("vega-lite/build/src/compile/compile", "compile")
+  @JSImport("vega-lite/build/src/compile/compile", JSImport.Namespace)
   @js.native
-  def compile(inputSpec: TopLevelSpec): Normalized = js.native
-  @JSImport("vega-lite/build/src/compile/compile", "compile")
-  @js.native
-  def compile(inputSpec: TopLevelSpec, opt: CompileOptions): Normalized = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def compile(inputSpec: TopLevelSpec): Normalized = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(inputSpec.asInstanceOf[js.Any]).asInstanceOf[Normalized]
+  @scala.inline
+  def compile(inputSpec: TopLevelSpec, opt: CompileOptions): Normalized = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(inputSpec.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Normalized]
+  
   trait CompileOptions extends StObject {
     
     /**
       * Sets a Vega-Lite configuration.
       */
-    var config: js.UndefOr[Config[ExprRef | SignalRef]] = js.native
+    var config: js.UndefOr[Config[ExprRef | SignalRef]] = js.undefined
     
     /**
       * Sets a field title formatter.
       */
-    var fieldTitle: js.UndefOr[FieldTitleFormatter] = js.native
+    var fieldTitle: js.UndefOr[FieldTitleFormatter] = js.undefined
     
     /**
       * Sets a custom logger.
       */
-    var logger: js.UndefOr[LoggerInterface] = js.native
+    var logger: js.UndefOr[LoggerInterface] = js.undefined
   }
   object CompileOptions {
     

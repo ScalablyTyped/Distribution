@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeNetworkInterfaceAttributeResult extends StObject {
   
   /**
     * The attachment (if any) of the network interface.
     */
-  var Attachment: js.UndefOr[NetworkInterfaceAttachment] = js.native
+  var Attachment: js.UndefOr[NetworkInterfaceAttachment] = js.undefined
   
   /**
     * The description of the network interface.
     */
-  var Description: js.UndefOr[AttributeValue] = js.native
+  var Description: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * The security groups associated with the network interface.
     */
-  var Groups: js.UndefOr[GroupIdentifierList] = js.native
+  var Groups: js.UndefOr[GroupIdentifierList] = js.undefined
   
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: js.UndefOr[String] = js.native
+  var NetworkInterfaceId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether source/destination checking is enabled.
     */
-  var SourceDestCheck: js.UndefOr[AttributeBooleanValue] = js.native
+  var SourceDestCheck: js.UndefOr[AttributeBooleanValue] = js.undefined
 }
 object DescribeNetworkInterfaceAttributeResult {
   

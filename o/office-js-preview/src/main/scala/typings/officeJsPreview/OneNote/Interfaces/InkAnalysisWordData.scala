@@ -3,11 +3,9 @@ package typings.officeJsPreview.OneNote.Interfaces
 import typings.officeJsPreview.OneNote.InkStrokePointer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "inkAnalysisWord.toJSON()". */
-@js.native
 trait InkAnalysisWordData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait InkAnalysisWordData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait InkAnalysisWordData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var languageId: js.UndefOr[String] = js.native
+  var languageId: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait InkAnalysisWordData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var line: js.UndefOr[InkAnalysisLineData] = js.native
+  var line: js.UndefOr[InkAnalysisLineData] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait InkAnalysisWordData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var strokePointers: js.UndefOr[js.Array[InkStrokePointer]] = js.native
+  var strokePointers: js.UndefOr[js.Array[InkStrokePointer]] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait InkAnalysisWordData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var wordAlternates: js.UndefOr[js.Array[String]] = js.native
+  var wordAlternates: js.UndefOr[js.Array[String]] = js.undefined
 }
 object InkAnalysisWordData {
   

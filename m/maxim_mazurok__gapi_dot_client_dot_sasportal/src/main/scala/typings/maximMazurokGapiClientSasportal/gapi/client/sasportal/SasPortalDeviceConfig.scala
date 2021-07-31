@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientSasportal.gapi.client.sasportal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalDeviceConfig extends StObject {
   
   /** Information about this device's air interface. */
-  var airInterface: js.UndefOr[SasPortalDeviceAirInterface] = js.native
+  var airInterface: js.UndefOr[SasPortalDeviceAirInterface] = js.undefined
   
   /** The call sign of the device operator. */
-  var callSign: js.UndefOr[String] = js.native
+  var callSign: js.UndefOr[String] = js.undefined
   
   /** FCC category of the device. */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /** Installation parameters for the device. */
-  var installationParams: js.UndefOr[SasPortalInstallationParams] = js.native
+  var installationParams: js.UndefOr[SasPortalInstallationParams] = js.undefined
   
   /** Output-only. Whether the configuration has been signed by a CPI. */
-  var isSigned: js.UndefOr[Boolean] = js.native
+  var isSigned: js.UndefOr[Boolean] = js.undefined
   
   /** Measurement reporting capabilities of the device. */
-  var measurementCapabilities: js.UndefOr[js.Array[String]] = js.native
+  var measurementCapabilities: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Information about this device model. */
-  var model: js.UndefOr[SasPortalDeviceModel] = js.native
+  var model: js.UndefOr[SasPortalDeviceModel] = js.undefined
   
   /** State of the configuration. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output-only. The last time the device configuration was edited. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /** The identifier of a device user. */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object SasPortalDeviceConfig {
   

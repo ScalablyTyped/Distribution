@@ -2,15 +2,13 @@ package typings.objectKeysMapping
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Camelcase extends StObject {
     
-    var camelcase: js.UndefOr[Boolean] = js.native
+    var camelcase: js.UndefOr[Boolean] = js.undefined
   }
   object Camelcase {
     

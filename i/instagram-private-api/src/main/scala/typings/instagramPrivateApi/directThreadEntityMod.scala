@@ -16,7 +16,6 @@ import typings.instagramPrivateApi.statusResponseMod.StatusResponse
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directThreadEntityMod {
@@ -53,9 +52,9 @@ object directThreadEntityMod {
         DirectThreadRepositoryBroadcastResponseRootObject | DirectThreadRepositoryBroadcastResponsePayload
       ] = js.native
     
-    def broadcastStory(input: DirectThreadBroadcastPhotoStoryOptions): js.Promise[_] = js.native
-    def broadcastStory(input: DirectThreadBroadcastVideoStoryOptions): js.Promise[_] = js.native
-    def broadcastStory(input: Buffer): js.Promise[_] = js.native
+    def broadcastStory(input: DirectThreadBroadcastPhotoStoryOptions): js.Promise[js.Any] = js.native
+    def broadcastStory(input: DirectThreadBroadcastVideoStoryOptions): js.Promise[js.Any] = js.native
+    def broadcastStory(input: Buffer): js.Promise[js.Any] = js.native
     
     def broadcastText(text: String): js.Promise[
         DirectThreadRepositoryBroadcastResponseRootObject | DirectThreadRepositoryBroadcastResponsePayload

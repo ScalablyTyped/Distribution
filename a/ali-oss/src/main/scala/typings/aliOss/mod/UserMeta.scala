@@ -2,15 +2,13 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserMeta extends StObject {
   
-  var pid: Double = js.native
+  var pid: Double
   
-  var uid: Double = js.native
+  var uid: Double
 }
 object UserMeta {
   

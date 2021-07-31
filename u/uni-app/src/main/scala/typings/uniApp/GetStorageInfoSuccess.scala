@@ -2,26 +2,24 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStorageInfoSuccess extends StObject {
   
   /**
     * 当前占用的空间大小, 单位 kb
     */
-  var currentSize: js.UndefOr[Double] = js.native
+  var currentSize: js.UndefOr[Double] = js.undefined
   
   /**
     * 当前storage中所有的 key
     */
-  var keys: js.UndefOr[js.Array[String]] = js.native
+  var keys: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * 限制的空间大小，单位kb
     */
-  var limitSize: js.UndefOr[Double] = js.native
+  var limitSize: js.UndefOr[Double] = js.undefined
 }
 object GetStorageInfoSuccess {
   

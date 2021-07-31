@@ -2,16 +2,16 @@ package typings.youtube.YT
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnStateChangeEvent extends PlayerEvent {
+trait OnStateChangeEvent
+  extends StObject
+     with PlayerEvent {
   
   /**
     * New player state.
     */
-  var data: PlayerState = js.native
+  var data: PlayerState
 }
 object OnStateChangeEvent {
   

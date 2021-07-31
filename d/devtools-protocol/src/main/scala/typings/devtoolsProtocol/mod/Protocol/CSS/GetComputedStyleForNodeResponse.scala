@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetComputedStyleForNodeResponse extends StObject {
   
   /**
     * Computed style for the specified DOM node.
     */
-  var computedStyle: js.Array[CSSComputedStyleProperty] = js.native
+  var computedStyle: js.Array[CSSComputedStyleProperty]
 }
 object GetComputedStyleForNodeResponse {
   

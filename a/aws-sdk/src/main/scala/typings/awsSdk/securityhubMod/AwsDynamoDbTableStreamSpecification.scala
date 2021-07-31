@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsDynamoDbTableStreamSpecification extends StObject {
   
   /**
     * Indicates whether DynamoDB Streams is enabled on the table.
     */
-  var StreamEnabled: js.UndefOr[Boolean] = js.native
+  var StreamEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines the information that is written to the table.
     */
-  var StreamViewType: js.UndefOr[NonEmptyString] = js.native
+  var StreamViewType: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsDynamoDbTableStreamSpecification {
   

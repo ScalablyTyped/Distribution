@@ -2,38 +2,36 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single iOS device.
   */
-@js.native
 trait SchemaIosDevice extends StObject {
   
   /**
     * Required. The id of the iOS device to be used. Use the
     * TestEnvironmentDiscoveryService to get supported options.
     */
-  var iosModelId: js.UndefOr[String] = js.native
+  var iosModelId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The id of the iOS major software version to be used. Use the
     * TestEnvironmentDiscoveryService to get supported options.
     */
-  var iosVersionId: js.UndefOr[String] = js.native
+  var iosVersionId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The locale the test device used for testing. Use the
     * TestEnvironmentDiscoveryService to get supported options.
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * Required. How the device is oriented during the test. Use the
     * TestEnvironmentDiscoveryService to get supported options.
     */
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
 }
 object SchemaIosDevice {
   

@@ -3,34 +3,32 @@ package typings.appleMapkitJsBrowser.mapkit
 import typings.appleMapkitJsBrowser.mapkit.Directions.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single route between a requested start and end point.
   */
-@js.native
 trait RouteStep extends StObject {
   
   /**
     * The step distance in meters.
     */
-  var distance: Double = js.native
+  var distance: Double
   
   /**
     * The written instructions for following the path represented by the step.
     */
-  var instructions: String = js.native
+  var instructions: String
   
   /**
     * An array of coordinate objects representing the path of the route segment.
     */
-  var path: js.Array[Coordinate] = js.native
+  var path: js.Array[Coordinate]
   
   /**
     * The transport type of the step.
     */
-  var transportType: Transport = js.native
+  var transportType: Transport
 }
 object RouteStep {
   

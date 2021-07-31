@@ -2,13 +2,11 @@ package typings.wechatMiniprogram.DB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGeoWithinCommandOptions extends StObject {
   
-  var geometry: GeoPolygon | GeoMultiPolygon = js.native
+  var geometry: GeoPolygon | GeoMultiPolygon
 }
 object IGeoWithinCommandOptions {
   

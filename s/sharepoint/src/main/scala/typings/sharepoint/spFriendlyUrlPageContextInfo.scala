@@ -2,19 +2,17 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait spFriendlyUrlPageContextInfo extends StObject {
   
-  var termId: String = js.native
+  var termId: String
   
-  var termSetId: String = js.native
+  var termSetId: String
   
-  var termStoreId: String = js.native
+  var termStoreId: String
   
-  var title: String = js.native
+  var title: String
 }
 object spFriendlyUrlPageContextInfo {
   

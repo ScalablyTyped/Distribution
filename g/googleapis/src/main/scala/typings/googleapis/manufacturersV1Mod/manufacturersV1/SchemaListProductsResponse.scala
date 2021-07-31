@@ -2,21 +2,19 @@ package typings.googleapis.manufacturersV1Mod.manufacturersV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListProductsResponse extends StObject {
   
   /**
     * The token for the retrieval of the next page of product statuses.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * List of the products.
     */
-  var products: js.UndefOr[js.Array[SchemaProduct]] = js.native
+  var products: js.UndefOr[js.Array[SchemaProduct]] = js.undefined
 }
 object SchemaListProductsResponse {
   

@@ -8,7 +8,6 @@ import typings.prettyFormat.typesMod.Refs
 import typings.prettyFormat.typesMod.Test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convertAnsiMod extends Shortcut {

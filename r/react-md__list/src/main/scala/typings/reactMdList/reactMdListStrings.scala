@@ -5,7 +5,6 @@ import typings.reactMdList.listItemAddonMod.ListItemAddonPosition
 import typings.reactMdList.listItemAddonMod.ListItemAddonType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdListStrings {
@@ -91,12 +90,16 @@ object reactMdListStrings {
   def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait auto extends ListItemHeight
+  sealed trait auto
+    extends StObject
+       with ListItemHeight
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait avatar extends ListItemAddonType
+  sealed trait avatar
+    extends StObject
+       with ListItemAddonType
   @scala.inline
   def avatar: avatar = "avatar".asInstanceOf[avatar]
   
@@ -141,7 +144,9 @@ object reactMdListStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottom extends ListItemAddonPosition
+  sealed trait bottom
+    extends StObject
+       with ListItemAddonPosition
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -301,7 +306,9 @@ object reactMdListStrings {
   def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
-  sealed trait `extra-large` extends ListItemHeight
+  sealed trait `extra-large`
+    extends StObject
+       with ListItemHeight
   @scala.inline
   def `extra-large`: `extra-large` = "extra-large".asInstanceOf[`extra-large`]
   
@@ -546,7 +553,9 @@ object reactMdListStrings {
   def i: i = "i".asInstanceOf[i]
   
   @js.native
-  sealed trait icon extends ListItemAddonType
+  sealed trait icon
+    extends StObject
+       with ListItemAddonType
   @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
   
@@ -601,12 +610,16 @@ object reactMdListStrings {
   def label: label = "label".asInstanceOf[label]
   
   @js.native
-  sealed trait large extends ListItemHeight
+  sealed trait large
+    extends StObject
+       with ListItemHeight
   @scala.inline
   def large: large = "large".asInstanceOf[large]
   
   @js.native
-  sealed trait `large-media` extends ListItemAddonType
+  sealed trait `large-media`
+    extends StObject
+       with ListItemAddonType
   @scala.inline
   def `large-media`: `large-media` = "large-media".asInstanceOf[`large-media`]
   
@@ -676,12 +689,16 @@ object reactMdListStrings {
   def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
-  sealed trait media extends ListItemAddonType
+  sealed trait media
+    extends StObject
+       with ListItemAddonType
   @scala.inline
   def media: media = "media".asInstanceOf[media]
   
   @js.native
-  sealed trait medium extends ListItemHeight
+  sealed trait medium
+    extends StObject
+       with ListItemHeight
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   
@@ -711,7 +728,9 @@ object reactMdListStrings {
   def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
-  sealed trait middle extends ListItemAddonPosition
+  sealed trait middle
+    extends StObject
+       with ListItemAddonPosition
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   
@@ -751,7 +770,9 @@ object reactMdListStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait normal extends ListItemHeight
+  sealed trait normal
+    extends StObject
+       with ListItemHeight
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
@@ -1091,7 +1112,9 @@ object reactMdListStrings {
   def title: title = "title".asInstanceOf[title]
   
   @js.native
-  sealed trait top extends ListItemAddonPosition
+  sealed trait top
+    extends StObject
+       with ListItemAddonPosition
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   

@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apigatewayIntegrationResponseMod {
@@ -74,6 +73,10 @@ object apigatewayIntegrationResponseMod {
   /* static members */
   object IntegrationResponse {
     
+    @JSImport("@pulumi/aws/apigateway/integrationResponse", "IntegrationResponse")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing IntegrationResponse resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -83,61 +86,55 @@ object apigatewayIntegrationResponseMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/integrationResponse", "IntegrationResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID]): IntegrationResponse = js.native
-    @JSImport("@pulumi/aws/apigateway/integrationResponse", "IntegrationResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IntegrationResponse = js.native
-    @JSImport("@pulumi/aws/apigateway/integrationResponse", "IntegrationResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IntegrationResponseState): IntegrationResponse = js.native
-    @JSImport("@pulumi/aws/apigateway/integrationResponse", "IntegrationResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IntegrationResponseState, opts: CustomResourceOptions): IntegrationResponse = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IntegrationResponseState): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IntegrationResponseState, opts: CustomResourceOptions): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
     
     /**
       * Returns true if the given object is an instance of IntegrationResponse.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/integrationResponse", "IntegrationResponse.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/integrationResponse.IntegrationResponse */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/integrationResponse.IntegrationResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/integrationResponse.IntegrationResponse */ Boolean]
   }
   
-  @js.native
   trait IntegrationResponseArgs extends StObject {
     
     /**
       * Specifies how to handle request payload content type conversions. Supported values are `CONVERT_TO_BINARY` and `CONVERT_TO_TEXT`. If this property is not defined, the response payload will be passed through from the integration response to the method response without modification.
       */
-    val contentHandling: js.UndefOr[Input[String]] = js.native
+    val contentHandling: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The HTTP method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `ANY`)
       */
-    val httpMethod: Input[String] = js.native
+    val httpMethod: Input[String]
     
     /**
       * The API resource ID
       */
-    val resourceId: Input[String] = js.native
+    val resourceId: Input[String]
     
     /**
       * A map of response parameters that can be read from the backend response.
       * For example: `responseParameters = { "method.response.header.X-Some-Header" = "integration.response.header.X-Some-Other-Header" }`
       */
-    val responseParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val responseParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map specifying the templates used to transform the integration response body
       */
-    val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ID of the associated REST API
       */
-    val restApi: Input[String | RestApi] = js.native
+    val restApi: Input[String | RestApi]
     
     /**
       * Specifies the regular expression pattern used to choose
@@ -145,12 +142,12 @@ object apigatewayIntegrationResponseMod {
       * If the backend is an `AWS` Lambda function, the AWS Lambda function error header is matched.
       * For all other `HTTP` and `AWS` backends, the HTTP status code is matched.
       */
-    val selectionPattern: js.UndefOr[Input[String]] = js.native
+    val selectionPattern: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The HTTP status code
       */
-    val statusCode: Input[String] = js.native
+    val statusCode: Input[String]
   }
   object IntegrationResponseArgs {
     
@@ -206,39 +203,38 @@ object apigatewayIntegrationResponseMod {
     }
   }
   
-  @js.native
   trait IntegrationResponseState extends StObject {
     
     /**
       * Specifies how to handle request payload content type conversions. Supported values are `CONVERT_TO_BINARY` and `CONVERT_TO_TEXT`. If this property is not defined, the response payload will be passed through from the integration response to the method response without modification.
       */
-    val contentHandling: js.UndefOr[Input[String]] = js.native
+    val contentHandling: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The HTTP method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `ANY`)
       */
-    val httpMethod: js.UndefOr[Input[String]] = js.native
+    val httpMethod: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The API resource ID
       */
-    val resourceId: js.UndefOr[Input[String]] = js.native
+    val resourceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of response parameters that can be read from the backend response.
       * For example: `responseParameters = { "method.response.header.X-Some-Header" = "integration.response.header.X-Some-Other-Header" }`
       */
-    val responseParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val responseParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map specifying the templates used to transform the integration response body
       */
-    val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ID of the associated REST API
       */
-    val restApi: js.UndefOr[Input[String | RestApi]] = js.native
+    val restApi: js.UndefOr[Input[String | RestApi]] = js.undefined
     
     /**
       * Specifies the regular expression pattern used to choose
@@ -246,12 +242,12 @@ object apigatewayIntegrationResponseMod {
       * If the backend is an `AWS` Lambda function, the AWS Lambda function error header is matched.
       * For all other `HTTP` and `AWS` backends, the HTTP status code is matched.
       */
-    val selectionPattern: js.UndefOr[Input[String]] = js.native
+    val selectionPattern: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The HTTP status code
       */
-    val statusCode: js.UndefOr[Input[String]] = js.native
+    val statusCode: js.UndefOr[Input[String]] = js.undefined
   }
   object IntegrationResponseState {
     

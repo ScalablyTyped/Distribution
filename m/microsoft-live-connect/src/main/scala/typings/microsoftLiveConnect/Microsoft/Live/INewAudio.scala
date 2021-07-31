@@ -2,49 +2,47 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a new audio item.
   */
-@js.native
 trait INewAudio extends StObject {
   
   /**
     * The audio's album name.
     */
-  var album: js.UndefOr[String] = js.native
+  var album: js.UndefOr[String] = js.undefined
   
   /**
     * The artist name of the audio's album.
     */
-  var album_artist: js.UndefOr[String] = js.native
+  var album_artist: js.UndefOr[String] = js.undefined
   
   /**
     * The audio's artist name.
     */
-  var artist: js.UndefOr[String] = js.native
+  var artist: js.UndefOr[String] = js.undefined
   
   /**
     * A description of the audio.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The audio's genre.
     */
-  var genre: js.UndefOr[String] = js.native
+  var genre: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the audio.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The audio's title.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object INewAudio {
   

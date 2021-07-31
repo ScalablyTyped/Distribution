@@ -2,25 +2,23 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HttpRouteRuleMatch criteria for field values that must stay within the
   * specified integer range.
   */
-@js.native
 trait SchemaInt64RangeMatch extends StObject {
   
   /**
     * The end of the range (exclusive) in signed long integer format.
     */
-  var rangeEnd: js.UndefOr[String] = js.native
+  var rangeEnd: js.UndefOr[String] = js.undefined
   
   /**
     * The start of the range (inclusive) in signed long integer format.
     */
-  var rangeStart: js.UndefOr[String] = js.native
+  var rangeStart: js.UndefOr[String] = js.undefined
 }
 object SchemaInt64RangeMatch {
   

@@ -3,12 +3,11 @@ package typings.xstate.typesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnyEventObject
-  extends EventObject
+  extends StObject
+     with EventObject
      with /* key */ StringDictionary[js.Any]
 object AnyEventObject {
   

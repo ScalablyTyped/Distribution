@@ -2,40 +2,38 @@ package typings.eyes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait All extends StObject {
     
     /** Overall base style applied to everything */
-    var all: js.UndefOr[String] = js.native
+    var all: js.UndefOr[String] = js.undefined
     
     /** Style when printing booleans */
-    var bool: js.UndefOr[String] = js.native
+    var bool: js.UndefOr[String] = js.undefined
     
     /** Style when printing the keys in object literals, like 'a' in `{a: 1}` */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** Style when printing inspection labels, like 'array' in `array: [1, 2, 3]` */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /** Style when printing numbers */
-    var number: js.UndefOr[String] = js.native
+    var number: js.UndefOr[String] = js.undefined
     
     /** Style when printing objects which don't have a literal representation, such as functions */
-    var other: js.UndefOr[String] = js.native
+    var other: js.UndefOr[String] = js.undefined
     
     /** Style when printing RegExps */
-    var regexp: js.UndefOr[String] = js.native
+    var regexp: js.UndefOr[String] = js.undefined
     
     /** Style when printing `null`, `undefined`, etc. */
-    var special: js.UndefOr[String] = js.native
+    var special: js.UndefOr[String] = js.undefined
     
     /** Style when printing strings */
-    var string: js.UndefOr[String] = js.native
+    var string: js.UndefOr[String] = js.undefined
   }
   object All {
     

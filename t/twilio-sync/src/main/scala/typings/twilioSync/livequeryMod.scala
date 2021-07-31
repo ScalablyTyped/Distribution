@@ -9,10 +9,13 @@ import typings.twilioSync.entityMod.RemovalHandler
 import typings.twilioSync.entityMod.SyncEntity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object livequeryMod {
+  
+  @JSImport("twilio-sync/lib/livequery", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("twilio-sync/lib/livequery", JSImport.Default)
   @js.native
@@ -147,18 +150,16 @@ object livequeryMod {
     var shouldIgnoreEvent: js.Any = js.native
   }
   
-  @JSImport("twilio-sync/lib/livequery", "queryItems")
-  @js.native
-  def queryItems(params: js.Any): js.Promise[InsightsQueryResponse] = js.native
+  @scala.inline
+  def queryItems(params: js.Any): js.Promise[InsightsQueryResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryItems")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InsightsQueryResponse]]
   
-  @js.native
   trait InsightsQueryResponse extends StObject {
     
-    var items: js.UndefOr[js.Array[Data]] = js.native
+    var items: js.UndefOr[js.Array[Data]] = js.undefined
     
-    var last_event_id: Double = js.native
+    var last_event_id: Double
     
-    var query_id: String = js.native
+    var query_id: String
   }
   object InsightsQueryResponse {
     
@@ -194,18 +195,17 @@ object livequeryMod {
   
   type LiveQueryCreator = js.Function2[/* indexName */ String, /* queryExpression */ String, js.Promise[LiveQuery]]
   
-  @js.native
   trait LiveQueryDescriptor extends StObject {
     
-    var indexName: String = js.native
+    var indexName: String
     
-    var last_event_id: Double = js.native
+    var last_event_id: Double
     
-    var queryExpression: String = js.native
+    var queryExpression: String
     
-    var queryUri: String = js.native
+    var queryUri: String
     
-    var sid: String = js.native
+    var sid: String
   }
   object LiveQueryDescriptor {
     

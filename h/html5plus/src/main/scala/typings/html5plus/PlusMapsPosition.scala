@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
-@js.native
 trait PlusMapsPosition extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusMapsPosition extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * 位置点的所属城市信息
@@ -27,7 +25,7 @@ trait PlusMapsPosition extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
   /**
     * 位置点的名称
@@ -35,7 +33,7 @@ trait PlusMapsPosition extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * 位置点的电话信息
@@ -43,7 +41,7 @@ trait PlusMapsPosition extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
   /**
     * 位置点的经纬度坐标
@@ -51,7 +49,7 @@ trait PlusMapsPosition extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var point: js.UndefOr[PlusMapsPoint] = js.native
+  var point: js.UndefOr[PlusMapsPoint] = js.undefined
   
   /**
     * 位置点的邮编信息
@@ -59,7 +57,7 @@ trait PlusMapsPosition extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var postcode: js.UndefOr[String] = js.native
+  var postcode: js.UndefOr[String] = js.undefined
 }
 object PlusMapsPosition {
   

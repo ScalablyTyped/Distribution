@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationInfo extends StObject {
   
   /**
     * The ID of the resource created at the destination.
     */
-  var id: js.UndefOr[NonEmptyString] = js.native
+  var id: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The destination service of the record.
     */
-  var service: js.UndefOr[NonEmptyString] = js.native
+  var service: js.UndefOr[NonEmptyString] = js.undefined
 }
 object DestinationInfo {
   

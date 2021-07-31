@@ -3,17 +3,17 @@ package typings.openfin.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dictkey extends /* key */ StringDictionary[String] {
+trait Dictkey
+  extends StObject
+     with /* key */ StringDictionary[String] {
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
-  var twitter: js.UndefOr[String] = js.native
+  var twitter: js.UndefOr[String] = js.undefined
 }
 object Dictkey {
   

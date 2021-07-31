@@ -2,16 +2,14 @@ package typings.awsSdk.codestarconnectionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateHostOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the host to be created.
     */
-  var HostArn: js.UndefOr[typings.awsSdk.codestarconnectionsMod.HostArn] = js.native
+  var HostArn: js.UndefOr[typings.awsSdk.codestarconnectionsMod.HostArn] = js.undefined
 }
 object CreateHostOutput {
   

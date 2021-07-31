@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryRecordEntry extends StObject {
   
   /**
     * Information about the event.
     */
-  var EventInformation: js.UndefOr[typings.awsSdk.ec2Mod.EventInformation] = js.native
+  var EventInformation: js.UndefOr[typings.awsSdk.ec2Mod.EventInformation] = js.undefined
   
   /**
     * The event type.
     */
-  var EventType: js.UndefOr[FleetEventType] = js.native
+  var EventType: js.UndefOr[FleetEventType] = js.undefined
   
   /**
     * The date and time of the event, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var Timestamp: js.UndefOr[DateTime] = js.native
+  var Timestamp: js.UndefOr[DateTime] = js.undefined
 }
 object HistoryRecordEntry {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteReplicationGroupMessage extends StObject {
   
   /**
     * The name of a final node group (shard) snapshot. ElastiCache creates the snapshot from the primary node in the cluster, rather than one of the replicas; this is to ensure that it captures the freshest data. After the final snapshot is taken, the replication group is immediately deleted.
     */
-  var FinalSnapshotIdentifier: js.UndefOr[String] = js.native
+  var FinalSnapshotIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the cluster to be deleted. This parameter is not case sensitive.
     */
-  var ReplicationGroupId: String = js.native
+  var ReplicationGroupId: String
   
   /**
     * If set to true, all of the read replicas are deleted, but the primary node is retained.
     */
-  var RetainPrimaryCluster: js.UndefOr[BooleanOptional] = js.native
+  var RetainPrimaryCluster: js.UndefOr[BooleanOptional] = js.undefined
 }
 object DeleteReplicationGroupMessage {
   

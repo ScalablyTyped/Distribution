@@ -2,14 +2,12 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface representing an Auth instance's settings, currently used for
   * enabling/disabling app verification for phone Auth testing.
   */
-@js.native
 trait AuthSettings extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait AuthSettings extends StObject {
     *
     * The default value is false (app verification is enabled).
     */
-  var appVerificationDisabledForTesting: Boolean = js.native
+  var appVerificationDisabledForTesting: Boolean
 }
 object AuthSettings {
   

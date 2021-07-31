@@ -4,21 +4,30 @@ import typings.openapiTypes.mod.OpenAPI.Request
 import typings.openapiTypes.mod.OpenAPIV2.ParameterObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("openapi-default-setter", JSImport.Default)
   @js.native
-  class default protected () extends OpenAPIDefaultSetter {
+  class default protected ()
+    extends StObject
+       with OpenAPIDefaultSetter {
     def this(args: OpenAPIDefaultSetterArgs) = this()
+    
+    /* CompleteClass */
+    override def handle(request: Request): Unit = js.native
+    
+    /* CompleteClass */
+    var headersDefaults: js.Any = js.native
+    
+    /* CompleteClass */
+    var queryDefaults: js.Any = js.native
   }
   
-  @js.native
   trait IOpenAPIDefaultSetter extends StObject {
     
-    def handle(request: Request): Unit = js.native
+    def handle(request: Request): Unit
   }
   object IOpenAPIDefaultSetter {
     
@@ -36,12 +45,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait OpenAPIDefaultSetter extends IOpenAPIDefaultSetter {
+  trait OpenAPIDefaultSetter
+    extends StObject
+       with IOpenAPIDefaultSetter {
     
-    var headersDefaults: js.Any = js.native
+    var headersDefaults: js.Any
     
-    var queryDefaults: js.Any = js.native
+    var queryDefaults: js.Any
   }
   object OpenAPIDefaultSetter {
     
@@ -62,12 +72,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenAPIDefaultSetterArgs extends StObject {
     
-    var loggingKey: js.UndefOr[String] = js.native
+    var loggingKey: js.UndefOr[String] = js.undefined
     
-    var parameters: js.Array[ParameterObject | typings.openapiTypes.mod.OpenAPIV3.ParameterObject] = js.native
+    var parameters: js.Array[ParameterObject | typings.openapiTypes.mod.OpenAPIV3.ParameterObject]
   }
   object OpenAPIDefaultSetterArgs {
     

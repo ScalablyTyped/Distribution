@@ -2,37 +2,35 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * OdbcDsn...
   */
-@js.native
 trait IOdbcDsn extends StObject {
   
   /**
     * This parameter is optional. Default is false.
     * Is set to true if the version of ODBC is 32-bit.
     */
-  var qBit32: js.UndefOr[Boolean] = js.native
+  var qBit32: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Description of the ODBC connection.
     */
-  var qDescription: String = js.native
+  var qDescription: String
   
   /**
     * Name of the ODBC connection.
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * This parameter is optional. Default is false.
     * Is set to true if the connection is User DSN.
     * The connection works only for a specific user.
     */
-  var qUserOnly: js.UndefOr[Boolean] = js.native
+  var qUserOnly: js.UndefOr[Boolean] = js.undefined
 }
 object IOdbcDsn {
   

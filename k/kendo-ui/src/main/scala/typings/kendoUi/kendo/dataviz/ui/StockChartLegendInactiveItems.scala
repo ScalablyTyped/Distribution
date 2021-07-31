@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartLegendInactiveItems extends StObject {
   
-  var labels: js.UndefOr[StockChartLegendInactiveItemsLabels] = js.native
+  var labels: js.UndefOr[StockChartLegendInactiveItemsLabels] = js.undefined
   
-  var markers: js.UndefOr[StockChartLegendInactiveItemsMarkers] = js.native
+  var markers: js.UndefOr[StockChartLegendInactiveItemsMarkers] = js.undefined
 }
 object StockChartLegendInactiveItems {
   

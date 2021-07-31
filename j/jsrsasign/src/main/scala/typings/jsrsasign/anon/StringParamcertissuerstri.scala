@@ -2,18 +2,16 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined jsrsasign.jsrsasign.KJUR.asn1.StringParam & {  certissuer :string | undefined,   certsubject :string | undefined} */
-@js.native
 trait StringParamcertissuerstri extends StObject {
   
-  var certissuer: js.UndefOr[String] = js.native
+  var certissuer: js.UndefOr[String] = js.undefined
   
-  var certsubject: js.UndefOr[String] = js.native
+  var certsubject: js.UndefOr[String] = js.undefined
   
-  var str: String = js.native
+  var str: String
 }
 object StringParamcertissuerstri {
   

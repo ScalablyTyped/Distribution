@@ -2,17 +2,16 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Static data for an LContainer */
-@js.native
 trait TContainerNode
-  extends TNode
+  extends StObject
+     with TNode
      with TNodeWithLocalRefs {
   
   @JSName("child")
-  var child_TContainerNode: Null = js.native
+  var child_TContainerNode: Null
   
   /**
     * Container nodes will have parents unless:
@@ -21,13 +20,13 @@ trait TContainerNode
     * - They are dynamically created
     */
   @JSName("parent")
-  var parent_TContainerNode: ɵangularPackagesCoreCoreBh | TElementContainerNode | Null = js.native
+  var parent_TContainerNode: ɵangularPackagesCoreCoreBh | TElementContainerNode | Null
   
   @JSName("projection")
-  var projection_TContainerNode: Null = js.native
+  var projection_TContainerNode: Null
   
   @JSName("value")
-  var value_TContainerNode: Null = js.native
+  var value_TContainerNode: Null
 }
 object TContainerNode {
   
@@ -47,7 +46,7 @@ object TContainerNode {
     `type`: TNodeType,
     value: Null
   ): TContainerNode = {
-    val __obj = js.Dynamic.literal(child = child.asInstanceOf[js.Any], classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(child = child.asInstanceOf[js.Any], classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null, tViews = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TContainerNode]
   }

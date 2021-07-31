@@ -7,7 +7,6 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalManagerMod {
@@ -19,18 +18,19 @@ object modalManagerMod {
     */
   @JSImport("react-overlays/cjs/ModalManager", JSImport.Default)
   @js.native
-  class default () extends ModalManager {
+  class default ()
+    extends StObject
+       with ModalManager {
     def this(hasHideSiblingNodesHandleContainerOverflow: HandleContainerOverflow) = this()
   }
   
-  type ContainerState = (Record[String, _]) with IsOverflowing
+  type ContainerState = (Record[String, js.Any]) & IsOverflowing
   
-  @js.native
   trait ModalInstance extends StObject {
     
-    var backdrop: Element = js.native
+    var backdrop: Element
     
-    var dialog: Element = js.native
+    var dialog: Element
   }
   object ModalInstance {
     

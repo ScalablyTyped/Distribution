@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.waf
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupActivatedRuleAction extends StObject {
   
   /**
     * The rule type, either `REGULAR`, `RATE_BASED`, or `GROUP`. Defaults to `REGULAR`.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object RuleGroupActivatedRuleAction {
   

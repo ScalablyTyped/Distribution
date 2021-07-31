@@ -5,7 +5,6 @@ import typings.braintreeWeb.anon.Client
 import typings.braintreeWeb.coreMod.callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paypalMod {
@@ -112,24 +111,23 @@ object paypalMod {
     def tokenize(options: BillingAgreementDescription, callback: callback[PayPalTokenizePayload]): PayPalTokenizeReturn = js.native
   }
   
-  @js.native
   trait PayPalAccountDetails extends StObject {
     
-    var billingAddress: PayPalBillingAddress = js.native
+    var billingAddress: PayPalBillingAddress
     
-    var countryCode: String = js.native
+    var countryCode: String
     
-    var email: String = js.native
+    var email: String
     
-    var firstName: String = js.native
+    var firstName: String
     
-    var lastName: String = js.native
+    var lastName: String
     
-    var payerId: String = js.native
+    var payerId: String
     
-    var phone: String = js.native
+    var phone: String
     
-    var shippingAddress: PayPalShippingAddress = js.native
+    var shippingAddress: PayPalShippingAddress
   }
   object PayPalAccountDetails {
     
@@ -177,20 +175,19 @@ object paypalMod {
     }
   }
   
-  @js.native
   trait PayPalBillingAddress extends StObject {
     
-    var city: String = js.native
+    var city: String
     
-    var countryCode: String = js.native
+    var countryCode: String
     
-    var line1: String = js.native
+    var line1: String
     
-    var line2: String = js.native
+    var line2: String
     
-    var postalCode: String = js.native
+    var postalCode: String
     
-    var state: String = js.native
+    var state: String
   }
   object PayPalBillingAddress {
     
@@ -223,22 +220,21 @@ object paypalMod {
     }
   }
   
-  @js.native
   trait PayPalShippingAddress extends StObject {
     
-    var city: String = js.native
+    var city: String
     
-    var countryCode: String = js.native
+    var countryCode: String
     
-    var line1: String = js.native
+    var line1: String
     
-    var line2: String = js.native
+    var line2: String
     
-    var postalCode: String = js.native
+    var postalCode: String
     
-    var recipientName: String = js.native
+    var recipientName: String
     
-    var state: String = js.native
+    var state: String
   }
   object PayPalShippingAddress {
     
@@ -282,14 +278,13 @@ object paypalMod {
     }
   }
   
-  @js.native
   trait PayPalTokenizePayload extends StObject {
     
-    var details: PayPalAccountDetails = js.native
+    var details: PayPalAccountDetails
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object PayPalTokenizePayload {
     
@@ -314,10 +309,9 @@ object paypalMod {
     }
   }
   
-  @js.native
   trait PayPalTokenizeReturn extends StObject {
     
-    def close(): js.Any = js.native
+    def close(): js.Any
   }
   object PayPalTokenizeReturn {
     

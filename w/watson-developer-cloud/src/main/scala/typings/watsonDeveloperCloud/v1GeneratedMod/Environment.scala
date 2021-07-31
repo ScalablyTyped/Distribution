@@ -2,45 +2,43 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Details about an environment. */
-@js.native
 trait Environment extends StObject {
   
   /** Creation date of the environment, in the format `yyyy-MM-dd'T'HH:mm:ss.SSS'Z'`. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** Description of the environment. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Unique identifier for the environment. */
-  var environment_id: js.UndefOr[String] = js.native
+  var environment_id: js.UndefOr[String] = js.undefined
   
   /** Details about the resource usage and capacity of the environment. */
-  var index_capacity: js.UndefOr[IndexCapacity] = js.native
+  var index_capacity: js.UndefOr[IndexCapacity] = js.undefined
   
   /** Name that identifies the environment. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** If `true`, the environment contains read-only collections that are maintained by IBM. */
-  var read_only: js.UndefOr[Boolean] = js.native
+  var read_only: js.UndefOr[Boolean] = js.undefined
   
   /** The new size requested for this environment. Only returned when the environment *status* is `resizing`. *Note:* Querying and indexing can still be performed during an environment upsize. */
-  var requested_size: js.UndefOr[String] = js.native
+  var requested_size: js.UndefOr[String] = js.undefined
   
   /** Information about the Continuous Relevancy Training for this environment. */
-  var search_status: js.UndefOr[SearchStatus] = js.native
+  var search_status: js.UndefOr[SearchStatus] = js.undefined
   
   /** Current size of the environment. */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
   /** Current status of the environment. `resizing` is displayed when a request to increase the environment size has been made, but is still in the process of being completed. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** Date of most recent environment update, in the format `yyyy-MM-dd'T'HH:mm:ss.SSS'Z'`. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object Environment {
   

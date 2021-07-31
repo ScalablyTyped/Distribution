@@ -40,7 +40,6 @@ import typings.std.Error
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mailerMod {
@@ -51,16 +50,15 @@ object mailerMod {
   class ^ protected () extends Mail {
     def this(transporter: Transport) = this()
     def this(transporter: Transport, options: TransportOptions) = this()
-    def this(transporter: Transport, options: js.UndefOr[scala.Nothing], defaults: TransportOptions) = this()
+    def this(transporter: Transport, options: Unit, defaults: TransportOptions) = this()
     def this(transporter: Transport, options: TransportOptions, defaults: TransportOptions) = this()
   }
   
-  @js.native
   trait Address extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var name: String = js.native
+    var name: String
   }
   object Address {
     
@@ -81,20 +79,21 @@ object mailerMod {
     }
   }
   
-  @js.native
-  trait AmpAttachment extends AttachmentLike {
+  trait AmpAttachment
+    extends StObject
+       with AttachmentLike {
     
     /** optional content type for the attachment, if not set will be derived from the filename property */
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
     /** defines optional content encoding, eg. ‘base64’ or ‘hex’. This only applies if the content is a string. By default an unicode string is assumed. */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /** is an alternative for content to load the AMP4EMAIL data from an URL */
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
     /** an optional value that overrides entire node content in the mime message. If used then all other options set for this node are ignored. */
-    var raw: js.UndefOr[String | Buffer | Readable | AttachmentLike] = js.native
+    var raw: js.UndefOr[String | Buffer | Readable | AttachmentLike] = js.undefined
   }
   object AmpAttachment {
     
@@ -133,32 +132,33 @@ object mailerMod {
     }
   }
   
-  @js.native
-  trait Attachment extends AttachmentLike {
+  trait Attachment
+    extends StObject
+       with AttachmentLike {
     
     /** optional content id for using inline images in HTML message source. Using cid sets the default contentDisposition to 'inline' and moves the attachment into a multipart/related mime node, so use it only if you actually want to use this attachment as an embedded image */
-    var cid: js.UndefOr[String] = js.native
+    var cid: js.UndefOr[String] = js.undefined
     
     /** optional content disposition type for the attachment, defaults to ‘attachment’ */
-    var contentDisposition: js.UndefOr[attachment | `inline`] = js.native
+    var contentDisposition: js.UndefOr[attachment | `inline`] = js.undefined
     
     /** optional transfer encoding for the attachment, if not set it will be derived from the contentType property. Example values: quoted-printable, base64. If it is unset then base64 encoding is used for the attachment. If it is set to false then previous default applies (base64 for most, 7bit for text). */
-    var contentTransferEncoding: js.UndefOr[`7bit` | base64 | `quoted-printable` | `false`] = js.native
+    var contentTransferEncoding: js.UndefOr[`7bit` | base64 | `quoted-printable` | `false`] = js.undefined
     
     /** optional content type for the attachment, if not set will be derived from the filename property */
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
     /** If set and content is string, then encodes the content to a Buffer using the specified encoding. Example values: base64, hex, binary etc. Useful if you want to use binary attachments in a JSON formatted e-mail object */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /** filename to be reported as the name of the attached file, use of unicode is allowed. If you do not want to use a filename, set this value as false, otherwise a filename is generated automatically */
-    var filename: js.UndefOr[String | `false`] = js.native
+    var filename: js.UndefOr[String | `false`] = js.undefined
     
     /** is an object of additional headers */
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
     /** an optional value that overrides entire node content in the mime message. If used then all other options set for this node are ignored. */
-    var raw: js.UndefOr[String | Buffer | Readable | AttachmentLike] = js.native
+    var raw: js.UndefOr[String | Buffer | Readable | AttachmentLike] = js.undefined
   }
   object Attachment {
     
@@ -224,14 +224,13 @@ object mailerMod {
     }
   }
   
-  @js.native
   trait AttachmentLike extends StObject {
     
     /** String, Buffer or a Stream contents for the attachmentent */
-    var content: js.UndefOr[String | Buffer | Readable] = js.native
+    var content: js.UndefOr[String | Buffer | Readable] = js.undefined
     
     /** path to a file or an URL (data uris are allowed as well) if you want to stream the file instead of including it (better for larger attachments) */
-    var path: js.UndefOr[String | Url] = js.native
+    var path: js.UndefOr[String | Url] = js.undefined
   }
   object AttachmentLike {
     
@@ -258,10 +257,9 @@ object mailerMod {
     }
   }
   
-  @js.native
   trait Connection extends StObject {
     
-    var connection: Socket = js.native
+    var connection: Socket
   }
   object Connection {
     
@@ -279,20 +277,19 @@ object mailerMod {
     }
   }
   
-  @js.native
   trait Envelope extends StObject {
     
     /** addresses from this value get added to RCPT TO list */
-    var bcc: js.UndefOr[String] = js.native
+    var bcc: js.UndefOr[String] = js.undefined
     
     /** addresses from this value get added to RCPT TO list */
-    var cc: js.UndefOr[String] = js.native
+    var cc: js.UndefOr[String] = js.undefined
     
     /** the first address gets used as MAIL FROM address in SMTP */
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
     /** addresses from this value get added to RCPT TO list */
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
   }
   object Envelope {
     
@@ -333,20 +330,21 @@ object mailerMod {
   
   type Headers = (StringDictionary[String | js.Array[String] | Prepared]) | js.Array[Value]
   
-  @js.native
-  trait IcalAttachment extends AttachmentLike {
+  trait IcalAttachment
+    extends StObject
+       with AttachmentLike {
     
     /** defines optional content encoding, eg. ‘base64’ or ‘hex’. This only applies if the content is a string. By default an unicode string is assumed. */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /** optional filename, defaults to ‘invite.ics’ */
-    var filename: js.UndefOr[String | `false`] = js.native
+    var filename: js.UndefOr[String | `false`] = js.undefined
     
     /** is an alternative for content to load the calendar data from an URL */
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
     /** optional method, case insensitive, defaults to ‘publish’. Other possible values would be ‘request’, ‘reply’, ‘cancel’ or any other valid calendar method listed in RFC5546. This should match the METHOD: value in calendar event file. */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
   }
   object IcalAttachment {
     
@@ -481,7 +479,7 @@ object mailerMod {
     
     var logger: Logger = js.native
     
-    var meta: Map[String, _] = js.native
+    var meta: Map[String, js.Any] = js.native
     
     @JSName("on")
     def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
@@ -520,7 +518,7 @@ object mailerMod {
       callback: js.Function2[/* err */ Error | Null, /* info */ SentMessageInfo, Unit]
     ): Unit = js.native
     
-    def set(key: String, value: js.Any): Map[String, _] = js.native
+    def set(key: String, value: js.Any): Map[String, js.Any] = js.native
     @JSName("set")
     def set_oauth2provisioncb(
       key: oauth2_provision_cb,
@@ -535,7 +533,7 @@ object mailerMod {
           ], 
           Unit
         ]
-    ): Map[String, _] = js.native
+    ): Map[String, js.Any] = js.native
     @JSName("set")
     def set_proxyhandlerhttp(
       key: proxy_handler_http,
@@ -549,7 +547,7 @@ object mailerMod {
           ], 
           Unit
         ]
-    ): Map[String, _] = js.native
+    ): Map[String, js.Any] = js.native
     @JSName("set")
     def set_proxyhandlerhttps(
       key: proxy_handler_https,
@@ -563,7 +561,7 @@ object mailerMod {
           ], 
           Unit
         ]
-    ): Map[String, _] = js.native
+    ): Map[String, js.Any] = js.native
     @JSName("set")
     def set_proxyhandlersocks(
       key: proxy_handler_socks,
@@ -577,7 +575,7 @@ object mailerMod {
           ], 
           Unit
         ]
-    ): Map[String, _] = js.native
+    ): Map[String, js.Any] = js.native
     @JSName("set")
     def set_proxyhandlersocks4(
       key: proxy_handler_socks4,
@@ -591,7 +589,7 @@ object mailerMod {
           ], 
           Unit
         ]
-    ): Map[String, _] = js.native
+    ): Map[String, js.Any] = js.native
     @JSName("set")
     def set_proxyhandlersocks4a(
       key: proxy_handler_socks4a,
@@ -605,7 +603,7 @@ object mailerMod {
           ], 
           Unit
         ]
-    ): Map[String, _] = js.native
+    ): Map[String, js.Any] = js.native
     @JSName("set")
     def set_proxyhandlersocks5(
       key: proxy_handler_socks5,
@@ -619,7 +617,7 @@ object mailerMod {
           ], 
           Unit
         ]
-    ): Map[String, _] = js.native
+    ): Map[String, js.Any] = js.native
     
     /** Sets up proxy handler for a Nodemailer object */
     def setupProxy(proxyUrl: String): Unit = js.native
@@ -634,94 +632,93 @@ object mailerMod {
     def verify_true(callback: js.Function2[/* err */ Error | Null, `true`, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** An array of alternative text contents (in addition to text and html parts) */
-    var alternatives: js.UndefOr[js.Array[Attachment]] = js.native
+    var alternatives: js.UndefOr[js.Array[Attachment]] = js.undefined
     
     /** AMP4EMAIL specific HTML version of the message, same usage as with text and html. Make sure it is a full and valid AMP4EMAIL document, otherwise the displaying email client falls back to html and ignores the amp part */
-    var amp: js.UndefOr[String | Buffer | Readable | AmpAttachment] = js.native
+    var amp: js.UndefOr[String | Buffer | Readable | AmpAttachment] = js.undefined
     
     /** An array of attachment objects */
-    var attachments: js.UndefOr[js.Array[Attachment]] = js.native
+    var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
     
     /** Comma separated list or an array of recipients e-mail addresses that will appear on the Bcc: field */
-    var bcc: js.UndefOr[String | Address | (js.Array[String | Address])] = js.native
+    var bcc: js.UndefOr[String | Address | (js.Array[String | Address])] = js.undefined
     
     /** Comma separated list or an array of recipients e-mail addresses that will appear on the Cc: field */
-    var cc: js.UndefOr[String | Address | (js.Array[String | Address])] = js.native
+    var cc: js.UndefOr[String | Address | (js.Array[String | Address])] = js.undefined
     
     /** optional Date value, current UTC string will be used if not set */
-    var date: js.UndefOr[Date | String] = js.native
+    var date: js.UndefOr[Date | String] = js.undefined
     
     /** if set to true then fails with an error when a node tries to load content from a file */
-    var disableFileAccess: js.UndefOr[Boolean] = js.native
+    var disableFileAccess: js.UndefOr[Boolean] = js.undefined
     
     /** if set to true then fails with an error when a node tries to load content from URL */
-    var disableUrlAccess: js.UndefOr[Boolean] = js.native
+    var disableUrlAccess: js.UndefOr[Boolean] = js.undefined
     
     /** is an object with DKIM options */
-    var dkim: js.UndefOr[typings.nodemailer.dkimMod.Options] = js.native
+    var dkim: js.UndefOr[typings.nodemailer.dkimMod.Options] = js.undefined
     
     /** optional transfer encoding for the textual parts */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /** optional SMTP envelope, if auto generated envelope is not suitable */
-    var envelope: js.UndefOr[Envelope | typings.nodemailer.mimeNodeMod.Envelope] = js.native
+    var envelope: js.UndefOr[Envelope | typings.nodemailer.mimeNodeMod.Envelope] = js.undefined
     
     /** The e-mail address of the sender. All e-mail addresses can be plain 'sender@server.com' or formatted 'Sender Name <sender@server.com>' */
-    var from: js.UndefOr[String | Address] = js.native
+    var from: js.UndefOr[String | Address] = js.undefined
     
     /** An object or array of additional header fields */
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
     /** The HTML version of the message */
-    var html: js.UndefOr[String | Buffer | Readable | AttachmentLike] = js.native
+    var html: js.UndefOr[String | Buffer | Readable | AttachmentLike] = js.undefined
     
     /** iCalendar event, same usage as with text and html. Event method attribute defaults to ‘PUBLISH’ or define it yourself: {method: 'REQUEST', content: iCalString}. This value is added as an additional alternative to html or text. Only utf-8 content is allowed */
-    var icalEvent: js.UndefOr[String | Buffer | Readable | IcalAttachment] = js.native
+    var icalEvent: js.UndefOr[String | Buffer | Readable | IcalAttachment] = js.undefined
     
     /** The message-id this message is replying */
-    var inReplyTo: js.UndefOr[String | Address] = js.native
+    var inReplyTo: js.UndefOr[String | Address] = js.undefined
     
     /** An object where key names are converted into list headers. List key help becomes List-Help header etc. */
-    var list: js.UndefOr[ListHeaders] = js.native
+    var list: js.UndefOr[ListHeaders] = js.undefined
     
     /** optional Message-Id value, random value will be generated if not set */
-    var messageId: js.UndefOr[String] = js.native
+    var messageId: js.UndefOr[String] = js.undefined
     
     /** method to normalize header keys for custom caseing */
-    var normalizeHeaderKey: js.UndefOr[js.Function1[/* key */ String, String]] = js.native
+    var normalizeHeaderKey: js.UndefOr[js.Function1[/* key */ String, String]] = js.undefined
     
-    var priority: js.UndefOr[high | normal | low] = js.native
+    var priority: js.UndefOr[high | normal | low] = js.undefined
     
     /** if set then overwrites entire message output with this value. The value is not parsed, so you should still set address headers or the envelope value for the message to work */
-    var raw: js.UndefOr[String | Buffer | Readable | AttachmentLike] = js.native
+    var raw: js.UndefOr[String | Buffer | Readable | AttachmentLike] = js.undefined
     
     /** Message-id list (an array or space separated string) */
-    var references: js.UndefOr[String | js.Array[String]] = js.native
+    var references: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** An e-mail address that will appear on the Reply-To: field */
-    var replyTo: js.UndefOr[String | Address] = js.native
+    var replyTo: js.UndefOr[String | Address] = js.undefined
     
     /** An e-mail address that will appear on the Sender: field */
-    var sender: js.UndefOr[String | Address] = js.native
+    var sender: js.UndefOr[String | Address] = js.undefined
     
     /** The subject of the e-mail */
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
     /** The plaintext version of the message */
-    var text: js.UndefOr[String | Buffer | Readable | AttachmentLike] = js.native
+    var text: js.UndefOr[String | Buffer | Readable | AttachmentLike] = js.undefined
     
     /** set explicitly which encoding to use for text parts (quoted-printable or base64). If not set then encoding is detected from text content (mostly ascii means quoted-printable, otherwise base64) */
-    var textEncoding: js.UndefOr[TextEncoding] = js.native
+    var textEncoding: js.UndefOr[TextEncoding] = js.undefined
     
     /** Comma separated list or an array of recipients e-mail addresses that will appear on the To: field */
-    var to: js.UndefOr[String | Address | (js.Array[String | Address])] = js.native
+    var to: js.UndefOr[String | Address | (js.Array[String | Address])] = js.undefined
     
     /** Apple Watch specific HTML version of the message, same usage as with text and html */
-    var watchHtml: js.UndefOr[String | Buffer | Readable | AttachmentLike] = js.native
+    var watchHtml: js.UndefOr[String | Buffer | Readable | AttachmentLike] = js.undefined
   }
   object Options {
     

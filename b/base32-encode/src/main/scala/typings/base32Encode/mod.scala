@@ -3,22 +3,22 @@ package typings.base32Encode
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("base32-encode", JSImport.Namespace)
-  @js.native
-  def apply(buffer: ArrayBuffer, variant: Variant): String = js.native
-  @JSImport("base32-encode", JSImport.Namespace)
-  @js.native
-  def apply(buffer: ArrayBuffer, variant: Variant, options: Options): String = js.native
+  @scala.inline
+  def apply(buffer: ArrayBuffer, variant: Variant): String = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(buffer: ArrayBuffer, variant: Variant, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], variant.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("base32-encode", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var padding: js.UndefOr[Boolean] = js.native
+    var padding: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

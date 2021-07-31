@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.s3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketLifecycleRuleNoncurrentVersionTransition extends StObject {
   
   /**
     * Specifies the number of days noncurrent object versions transition.
     */
-  var days: js.UndefOr[Double] = js.native
+  var days: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies the Amazon S3 storage class to which you want the noncurrent object versions to transition. Can be `ONEZONE_IA`, `STANDARD_IA`, `INTELLIGENT_TIERING`, `GLACIER`, or `DEEP_ARCHIVE`.
     */
-  var storageClass: String = js.native
+  var storageClass: String
 }
 object BucketLifecycleRuleNoncurrentVersionTransition {
   

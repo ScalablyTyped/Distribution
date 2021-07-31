@@ -10,9 +10,9 @@ Data-Mapper ORM for TypeScript, ES7, ES6, ES5. Supports MySQL, PostgreSQL, Maria
 | ------------------ | :-------------: |
 | Full name          | typeorm |
 | Keywords           | - |
-| # releases         | 56 |
-| # dependents       | 793 |
-| # downloads        | 13762538 |
+| # releases         | 45 |
+| # dependents       | 973 |
+| # downloads        | 18950752 |
 | # stars            | 12 |
 
 ## Links

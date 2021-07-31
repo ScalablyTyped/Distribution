@@ -2,13 +2,11 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The body of a single MIME message part.
   */
-@js.native
 trait SchemaMessagePartBody extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaMessagePartBody extends StObject {
     * present, the entire content of the message part body is contained in the
     * data field.
     */
-  var attachmentId: js.UndefOr[String] = js.native
+  var attachmentId: js.UndefOr[String] = js.undefined
   
   /**
     * The body data of a MIME message part as a base64url encoded string. May
@@ -25,12 +23,12 @@ trait SchemaMessagePartBody extends StObject {
     * body data is sent as a separate attachment. An attachment ID is present
     * if the body data is contained in a separate attachment.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * Number of bytes for the message part data (encoding notwithstanding).
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object SchemaMessagePartBody {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VariableFormatValue extends StObject {
   
   /** The option to convert a string-type variable value to either lowercase or uppercase. */
-  var caseConversionType: js.UndefOr[String] = js.native
+  var caseConversionType: js.UndefOr[String] = js.undefined
   
   /** The value to convert if a variable value is false. */
-  var convertFalseToValue: js.UndefOr[Parameter] = js.native
+  var convertFalseToValue: js.UndefOr[Parameter] = js.undefined
   
   /** The value to convert if a variable value is null. */
-  var convertNullToValue: js.UndefOr[Parameter] = js.native
+  var convertNullToValue: js.UndefOr[Parameter] = js.undefined
   
   /** The value to convert if a variable value is true. */
-  var convertTrueToValue: js.UndefOr[Parameter] = js.native
+  var convertTrueToValue: js.UndefOr[Parameter] = js.undefined
   
   /** The value to convert if a variable value is undefined. */
-  var convertUndefinedToValue: js.UndefOr[Parameter] = js.native
+  var convertUndefinedToValue: js.UndefOr[Parameter] = js.undefined
 }
 object VariableFormatValue {
   

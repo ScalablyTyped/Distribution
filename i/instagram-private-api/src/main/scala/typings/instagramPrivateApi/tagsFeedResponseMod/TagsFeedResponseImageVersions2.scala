@@ -2,13 +2,11 @@ package typings.instagramPrivateApi.tagsFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagsFeedResponseImageVersions2 extends StObject {
   
-  var candidates: js.Array[TagsFeedResponseCandidatesItem] = js.native
+  var candidates: js.Array[TagsFeedResponseCandidatesItem]
 }
 object TagsFeedResponseImageVersions2 {
   

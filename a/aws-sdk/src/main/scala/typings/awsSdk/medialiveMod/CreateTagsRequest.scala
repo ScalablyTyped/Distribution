@@ -2,15 +2,13 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTagsRequest extends StObject {
   
-  var ResourceArn: string = js.native
+  var ResourceArn: string
   
-  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.undefined
 }
 object CreateTagsRequest {
   

@@ -2,18 +2,19 @@ package typings.storybookAddonNotes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@storybook/addon-notes", "withMarkdownNotes")
+  @JSImport("@storybook/addon-notes", JSImport.Namespace)
   @js.native
-  def withMarkdownNotes(text: String, options: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@storybook/addon-notes", "withNotes")
-  @js.native
+  @scala.inline
+  def withMarkdownNotes(text: String, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("withMarkdownNotes")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def withNotes(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-  ): js.Any = js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withNotes")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

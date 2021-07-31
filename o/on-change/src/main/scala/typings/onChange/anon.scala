@@ -4,13 +4,11 @@ import typings.onChange.onChangeBooleans.`false`
 import typings.onChange.onChangeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined on-change.on-change.Options & {  pathAsArray :false | undefined} */
-  @js.native
   trait OptionspathAsArrayfalseun extends StObject {
     
     /**
@@ -35,31 +33,31 @@ object anon {
     		```
     		*/
     @JSName("equals")
-    var equals_FOptionspathAsArrayfalseun: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]] = js.native
+    var equals_FOptionspathAsArrayfalseun: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]] = js.undefined
     
     /**
     		Ignore changes to objects that become detached from the watched object.
     		@default false
     		*/
-    var ignoreDetached: js.UndefOr[Boolean] = js.native
+    var ignoreDetached: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Setting properties in this array won't trigger the callback.
     		@default undefined
     		*/
-    var ignoreKeys: js.UndefOr[js.Array[String | js.Symbol]] = js.native
+    var ignoreKeys: js.UndefOr[js.Array[String | js.Symbol]] = js.undefined
     
     /**
     		Setting properties as `Symbol` won't trigger the callback.
     		@default false
     		*/
-    var ignoreSymbols: js.UndefOr[Boolean] = js.native
+    var ignoreSymbols: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Setting properties with an underscore as the first character won't trigger the callback.
     		@default false
     		*/
-    var ignoreUnderscores: js.UndefOr[Boolean] = js.native
+    var ignoreUnderscores: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Deep changes will not trigger the callback. Only changes to the immediate properties of the original object.
@@ -82,18 +80,18 @@ object anon {
     		//=> 'Object changed: 1'
     		```
     		*/
-    var isShallow: js.UndefOr[Boolean] = js.native
+    var isShallow: js.UndefOr[Boolean] = js.undefined
     
     /**
     		The path will be provided as an array of keys instead of a delimited string.
     		@default false
     		*/
-    var pathAsArray: js.UndefOr[Boolean] with js.UndefOr[`false`] = js.native
+    var pathAsArray: js.UndefOr[Boolean] & js.UndefOr[`false`]
   }
   object OptionspathAsArrayfalseun {
     
     @scala.inline
-    def apply(pathAsArray: js.UndefOr[Boolean] with js.UndefOr[`false`]): OptionspathAsArrayfalseun = {
+    def apply(pathAsArray: js.UndefOr[Boolean] & js.UndefOr[`false`]): OptionspathAsArrayfalseun = {
       val __obj = js.Dynamic.literal(pathAsArray = pathAsArray.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionspathAsArrayfalseun]
     }
@@ -141,12 +139,11 @@ object anon {
       def setIsShallowUndefined: Self = StObject.set(x, "isShallow", js.undefined)
       
       @scala.inline
-      def setPathAsArray(value: js.UndefOr[Boolean] with js.UndefOr[`false`]): Self = StObject.set(x, "pathAsArray", value.asInstanceOf[js.Any])
+      def setPathAsArray(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "pathAsArray", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined on-change.on-change.Options & {  pathAsArray :true} */
-  @js.native
   trait OptionspathAsArraytrue extends StObject {
     
     /**
@@ -171,31 +168,31 @@ object anon {
     		```
     		*/
     @JSName("equals")
-    var equals_FOptionspathAsArraytrue: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]] = js.native
+    var equals_FOptionspathAsArraytrue: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]] = js.undefined
     
     /**
     		Ignore changes to objects that become detached from the watched object.
     		@default false
     		*/
-    var ignoreDetached: js.UndefOr[Boolean] = js.native
+    var ignoreDetached: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Setting properties in this array won't trigger the callback.
     		@default undefined
     		*/
-    var ignoreKeys: js.UndefOr[js.Array[String | js.Symbol]] = js.native
+    var ignoreKeys: js.UndefOr[js.Array[String | js.Symbol]] = js.undefined
     
     /**
     		Setting properties as `Symbol` won't trigger the callback.
     		@default false
     		*/
-    var ignoreSymbols: js.UndefOr[Boolean] = js.native
+    var ignoreSymbols: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Setting properties with an underscore as the first character won't trigger the callback.
     		@default false
     		*/
-    var ignoreUnderscores: js.UndefOr[Boolean] = js.native
+    var ignoreUnderscores: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Deep changes will not trigger the callback. Only changes to the immediate properties of the original object.
@@ -218,18 +215,18 @@ object anon {
     		//=> 'Object changed: 1'
     		```
     		*/
-    var isShallow: js.UndefOr[Boolean] = js.native
+    var isShallow: js.UndefOr[Boolean] = js.undefined
     
     /**
     		The path will be provided as an array of keys instead of a delimited string.
     		@default false
     		*/
-    var pathAsArray: js.UndefOr[Boolean] with `true` = js.native
+    var pathAsArray: js.UndefOr[Boolean] & `true`
   }
   object OptionspathAsArraytrue {
     
     @scala.inline
-    def apply(pathAsArray: js.UndefOr[Boolean] with `true`): OptionspathAsArraytrue = {
+    def apply(pathAsArray: js.UndefOr[Boolean] & `true`): OptionspathAsArraytrue = {
       val __obj = js.Dynamic.literal(pathAsArray = pathAsArray.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionspathAsArraytrue]
     }
@@ -277,7 +274,7 @@ object anon {
       def setIsShallowUndefined: Self = StObject.set(x, "isShallow", js.undefined)
       
       @scala.inline
-      def setPathAsArray(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "pathAsArray", value.asInstanceOf[js.Any])
+      def setPathAsArray(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "pathAsArray", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -3,17 +3,15 @@ package typings.ssh2.mod
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShellOptions extends StObject {
   
   /** An environment to use for the execution of the shell. */
-  var env: js.UndefOr[ProcessEnv] = js.native
+  var env: js.UndefOr[ProcessEnv] = js.undefined
   
   /** Set either to `true` to use defaults, a number to specify a specific screen number, or an object containing x11 settings. */
-  var x11: js.UndefOr[Boolean | Double | X11Options] = js.native
+  var x11: js.UndefOr[Boolean | Double | X11Options] = js.undefined
 }
 object ShellOptions {
   

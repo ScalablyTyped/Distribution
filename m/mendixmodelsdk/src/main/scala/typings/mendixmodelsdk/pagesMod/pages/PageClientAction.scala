@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction")
@@ -64,9 +63,8 @@ object PageClientAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.create")
-  @js.native
-  def create(model: IModel): PageClientAction = js.native
+  @scala.inline
+  def create(model: IModel): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -74,9 +72,8 @@ object PageClientAction {
     * of the parent ActionButton element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInActionButtonUnderAction")
-  @js.native
-  def createInActionButtonUnderAction(container: ActionButton): PageClientAction = js.native
+  @scala.inline
+  def createInActionButtonUnderAction(container: ActionButton): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -84,9 +81,8 @@ object PageClientAction {
     * of the parent ActionItem element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInActionItemUnderAction")
-  @js.native
-  def createInActionItemUnderAction(container: ActionItem): PageClientAction = js.native
+  @scala.inline
+  def createInActionItemUnderAction(container: ActionItem): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -97,9 +93,8 @@ object PageClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInAssociationWidgetUnderOnChangeAction")
-  @js.native
-  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): PageClientAction = js.native
+  @scala.inline
+  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -110,9 +105,8 @@ object PageClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInAttributeWidgetUnderOnChangeAction")
-  @js.native
-  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): PageClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -123,9 +117,8 @@ object PageClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInAttributeWidgetUnderOnEnterAction")
-  @js.native
-  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): PageClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -136,9 +129,8 @@ object PageClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInAttributeWidgetUnderOnLeaveAction")
-  @js.native
-  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): PageClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -149,9 +141,8 @@ object PageClientAction {
     *  8.0.0 to 8.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInBottomBarItemUnderAction")
-  @js.native
-  def createInBottomBarItemUnderAction(container: BottomBarItem): PageClientAction = js.native
+  @scala.inline
+  def createInBottomBarItemUnderAction(container: BottomBarItem): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -162,9 +153,8 @@ object PageClientAction {
     *  6.0.0 to 6.6.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInDataViewActionButtonUnderAction")
-  @js.native
-  def createInDataViewActionButtonUnderAction(container: DataViewActionButton): PageClientAction = js.native
+  @scala.inline
+  def createInDataViewActionButtonUnderAction(container: DataViewActionButton): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -175,9 +165,8 @@ object PageClientAction {
     *  8.3.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInDivContainerUnderOnClickAction")
-  @js.native
-  def createInDivContainerUnderOnClickAction(container: DivContainer): PageClientAction = js.native
+  @scala.inline
+  def createInDivContainerUnderOnClickAction(container: DivContainer): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -188,9 +177,8 @@ object PageClientAction {
     *  7.18.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInDynamicImageViewerUnderClickAction")
-  @js.native
-  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): PageClientAction = js.native
+  @scala.inline
+  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -198,9 +186,8 @@ object PageClientAction {
     * of the parent GridActionButton element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInGridActionButtonUnderAction")
-  @js.native
-  def createInGridActionButtonUnderAction(container: GridActionButton): PageClientAction = js.native
+  @scala.inline
+  def createInGridActionButtonUnderAction(container: GridActionButton): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -208,9 +195,8 @@ object PageClientAction {
     * of the parent ListView element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInListViewUnderClickAction")
-  @js.native
-  def createInListViewUnderClickAction(container: ListView): PageClientAction = js.native
+  @scala.inline
+  def createInListViewUnderClickAction(container: ListView): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -221,9 +207,8 @@ object PageClientAction {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInListViewUnderPullDownAction")
-  @js.native
-  def createInListViewUnderPullDownAction(container: ListView): PageClientAction = js.native
+  @scala.inline
+  def createInListViewUnderPullDownAction(container: ListView): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -231,9 +216,8 @@ object PageClientAction {
     * of the parent menus.MenuItem element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInMenuItemUnderAction")
-  @js.native
-  def createInMenuItemUnderAction(container: MenuItem): PageClientAction = js.native
+  @scala.inline
+  def createInMenuItemUnderAction(container: MenuItem): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -244,9 +228,8 @@ object PageClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInReferenceSetSelectorUnderOnChangeAction")
-  @js.native
-  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): PageClientAction = js.native
+  @scala.inline
+  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -254,9 +237,8 @@ object PageClientAction {
     * of the parent StaticImageViewer element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInStaticImageViewerUnderClickAction")
-  @js.native
-  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): PageClientAction = js.native
+  @scala.inline
+  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -267,9 +249,8 @@ object PageClientAction {
     *  8.7.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInTextBoxUnderOnEnterKeyPressAction")
-  @js.native
-  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): PageClientAction = js.native
+  @scala.inline
+  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
@@ -280,9 +261,8 @@ object PageClientAction {
     *  7.19.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInWidgetValueUnderAction")
-  @js.native
-  def createInWidgetValueUnderAction(container: WidgetValue): PageClientAction = js.native
+  @scala.inline
+  def createInWidgetValueUnderAction(container: WidgetValue): PageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[PageClientAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.structureTypeName")

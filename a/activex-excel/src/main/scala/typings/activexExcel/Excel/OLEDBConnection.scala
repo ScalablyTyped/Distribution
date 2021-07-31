@@ -4,7 +4,6 @@ import typings.activexAdodb.ADODB.Connection
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -71,9 +70,9 @@ trait OLEDBConnection extends StObject {
   var RobustConnect: XlRobustConnect = js.native
   
   def SaveAsODC(ODCFileName: String): Unit = js.native
-  def SaveAsODC(ODCFileName: String, Description: js.UndefOr[scala.Nothing], Keywords: String): Unit = js.native
   def SaveAsODC(ODCFileName: String, Description: String): Unit = js.native
   def SaveAsODC(ODCFileName: String, Description: String, Keywords: String): Unit = js.native
+  def SaveAsODC(ODCFileName: String, Description: Unit, Keywords: String): Unit = js.native
   
   var SavePassword: Boolean = js.native
   

@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,26 +12,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * next a rule with the buyer but an empty advertiser list, and otherwise look
   * for a matching rule where no buyer is set.
   */
-@js.native
 trait SchemaPricePerBuyer extends StObject {
   
   /**
     * The list of advertisers for this price when associated with this buyer.
     * If empty, all advertisers with this buyer pay this price.
     */
-  var advertiserIds: js.UndefOr[js.Array[String]] = js.native
+  var advertiserIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The buyer who will pay this price. If unset, all buyers can pay this
     * price (if the advertisers match, and there&#39;s no more specific rule
     * matching the buyer).
     */
-  var buyer: js.UndefOr[SchemaBuyer] = js.native
+  var buyer: js.UndefOr[SchemaBuyer] = js.undefined
   
   /**
     * The specified price.
     */
-  var price: js.UndefOr[SchemaPrice] = js.native
+  var price: js.UndefOr[SchemaPrice] = js.undefined
 }
 object SchemaPricePerBuyer {
   

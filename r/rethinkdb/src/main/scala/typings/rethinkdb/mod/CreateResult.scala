@@ -2,13 +2,11 @@ package typings.rethinkdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateResult extends StObject {
   
-  var created: Double = js.native
+  var created: Double
 }
 object CreateResult {
   

@@ -12,37 +12,35 @@ import typings.qiniuJs.qiniuJsStrings.SouthWest
 import typings.qiniuJs.qiniuJsStrings.West
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WaterMarkOptions2 extends StObject {
   
   // 水印文字，mode = 2 时 **必需**
-  var dissolve: Double = js.native
+  var dissolve: Double
   
   // 水印文字字体
-  var dx: Double = js.native
+  var dx: Double
   
   // 横轴边距，单位:像素(px)
-  var dy: Double = js.native
+  var dy: Double
   
   // 纵轴边距，单位:像素(px)
-  var fill: String = js.native
+  var fill: String
   
   // 字体大小，单位: 缇
-  var font: String = js.native
+  var font: String
   
   // 水印位置
-  var fontsize: Double = js.native
+  var fontsize: Double
   
   // 透明度，取值范围1-100，非必需，下同
-  var gravity: NorthWest | North | NorthEast | West | Center | East | SouthWest | South | SouthEast = js.native
+  var gravity: NorthWest | North | NorthEast | West | Center | East | SouthWest | South | SouthEast
   
-  var mode: `2` = js.native
+  var mode: `2`
   
   // 文字水印
-  var text: String = js.native
+  var text: String
 }
 object WaterMarkOptions2 {
   
@@ -55,10 +53,9 @@ object WaterMarkOptions2 {
     font: String,
     fontsize: Double,
     gravity: NorthWest | North | NorthEast | West | Center | East | SouthWest | South | SouthEast,
-    mode: `2`,
     text: String
   ): WaterMarkOptions2 = {
-    val __obj = js.Dynamic.literal(dissolve = dissolve.asInstanceOf[js.Any], dx = dx.asInstanceOf[js.Any], dy = dy.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], fontsize = fontsize.asInstanceOf[js.Any], gravity = gravity.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dissolve = dissolve.asInstanceOf[js.Any], dx = dx.asInstanceOf[js.Any], dy = dy.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], fontsize = fontsize.asInstanceOf[js.Any], gravity = gravity.asInstanceOf[js.Any], mode = 2, text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaterMarkOptions2]
   }
   

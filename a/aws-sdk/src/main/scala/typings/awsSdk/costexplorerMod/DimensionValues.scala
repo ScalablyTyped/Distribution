@@ -2,26 +2,24 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionValues extends StObject {
   
   /**
     * The names of the metadata types that you can use to filter and group your results. For example, AZ returns a list of Availability Zones.
     */
-  var Key: js.UndefOr[Dimension] = js.native
+  var Key: js.UndefOr[Dimension] = js.undefined
   
   /**
     * The match options that you can use to filter your results. MatchOptions is only applicable for actions related to Cost Category. The default values for MatchOptions are EQUALS and CASE_SENSITIVE.
     */
-  var MatchOptions: js.UndefOr[typings.awsSdk.costexplorerMod.MatchOptions] = js.native
+  var MatchOptions: js.UndefOr[typings.awsSdk.costexplorerMod.MatchOptions] = js.undefined
   
   /**
     * The metadata values that you can use to filter and group your results. You can use GetDimensionValues to find specific values.
     */
-  var Values: js.UndefOr[typings.awsSdk.costexplorerMod.Values] = js.native
+  var Values: js.UndefOr[typings.awsSdk.costexplorerMod.Values] = js.undefined
 }
 object DimensionValues {
   

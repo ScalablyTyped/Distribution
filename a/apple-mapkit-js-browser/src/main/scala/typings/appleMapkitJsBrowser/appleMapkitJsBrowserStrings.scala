@@ -5,7 +5,6 @@ import typings.appleMapkitJsBrowser.mapkit.InitializationEventType
 import typings.appleMapkitJsBrowser.mapkit.OverlayEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appleMapkitJsBrowserStrings {
@@ -31,13 +30,16 @@ object appleMapkitJsBrowserStrings {
   def Unauthorized: Unauthorized = "Unauthorized".asInstanceOf[Unauthorized]
   
   @js.native
-  sealed trait `configuration-change` extends InitializationEventType
+  sealed trait `configuration-change`
+    extends StObject
+       with InitializationEventType
   @scala.inline
   def `configuration-change`: `configuration-change` = "configuration-change".asInstanceOf[`configuration-change`]
   
   @js.native
   sealed trait deselect
-    extends AnnotationEventType
+    extends StObject
+       with AnnotationEventType
        with OverlayEventType
   @scala.inline
   def deselect: deselect = "deselect".asInstanceOf[deselect]
@@ -48,22 +50,30 @@ object appleMapkitJsBrowserStrings {
   def `double-tap`: `double-tap` = "double-tap".asInstanceOf[`double-tap`]
   
   @js.native
-  sealed trait `drag-end` extends AnnotationEventType
+  sealed trait `drag-end`
+    extends StObject
+       with AnnotationEventType
   @scala.inline
   def `drag-end`: `drag-end` = "drag-end".asInstanceOf[`drag-end`]
   
   @js.native
-  sealed trait `drag-start` extends AnnotationEventType
+  sealed trait `drag-start`
+    extends StObject
+       with AnnotationEventType
   @scala.inline
   def `drag-start`: `drag-start` = "drag-start".asInstanceOf[`drag-start`]
   
   @js.native
-  sealed trait dragging extends AnnotationEventType
+  sealed trait dragging
+    extends StObject
+       with AnnotationEventType
   @scala.inline
   def dragging: dragging = "dragging".asInstanceOf[dragging]
   
   @js.native
-  sealed trait error extends InitializationEventType
+  sealed trait error
+    extends StObject
+       with InitializationEventType
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -99,7 +109,8 @@ object appleMapkitJsBrowserStrings {
   
   @js.native
   sealed trait select
-    extends AnnotationEventType
+    extends StObject
+       with AnnotationEventType
        with OverlayEventType
   @scala.inline
   def select: select = "select".asInstanceOf[select]

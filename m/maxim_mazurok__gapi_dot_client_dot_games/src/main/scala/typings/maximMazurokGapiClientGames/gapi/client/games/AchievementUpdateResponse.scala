@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AchievementUpdateResponse extends StObject {
   
   /** The achievement this update is was applied to. */
-  var achievementId: js.UndefOr[String] = js.native
+  var achievementId: js.UndefOr[String] = js.undefined
   
   /** The current state of the achievement. */
-  var currentState: js.UndefOr[String] = js.native
+  var currentState: js.UndefOr[String] = js.undefined
   
   /** The current steps recorded for this achievement if it is incremental. */
-  var currentSteps: js.UndefOr[Double] = js.native
+  var currentSteps: js.UndefOr[Double] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#achievementUpdateResponse`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Whether this achievement was newly unlocked (that is, whether the unlock request for the achievement was the first for the player). */
-  var newlyUnlocked: js.UndefOr[Boolean] = js.native
+  var newlyUnlocked: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the requested updates actually affected the achievement. */
-  var updateOccurred: js.UndefOr[Boolean] = js.native
+  var updateOccurred: js.UndefOr[Boolean] = js.undefined
 }
 object AchievementUpdateResponse {
   

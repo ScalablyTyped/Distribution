@@ -2,18 +2,16 @@ package typings.googleAppsScript.GoogleAppsScript.Script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for document triggers.
   */
-@js.native
 trait DocumentTriggerBuilder extends StObject {
   
-  def create(): Trigger = js.native
+  def create(): Trigger
   
-  def onOpen(): DocumentTriggerBuilder = js.native
+  def onOpen(): DocumentTriggerBuilder
 }
 object DocumentTriggerBuilder {
   

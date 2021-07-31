@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRibbon.DialogBoxLauncherClicked event.
   */
-@js.native
-trait ASPxClientRibbonDialogBoxLauncherClickedEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientRibbonDialogBoxLauncherClickedEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets the client group object to which the clicked dialog box launcher belongs.
     */
-  var group: ASPxClientRibbonGroup = js.native
+  var group: ASPxClientRibbonGroup
 }
 object ASPxClientRibbonDialogBoxLauncherClickedEventArgs {
   

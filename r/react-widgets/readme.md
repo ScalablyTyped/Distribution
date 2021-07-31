@@ -10,9 +10,9 @@ An à la carte set of polished, extensible, and accessible inputs built for Reac
 | ------------------ | :-------------: |
 | Full name          | react-widgets |
 | Keywords           | react, widgets, dropdown, combobox, calendar, datepicker, date picker, numberpicker, number picker, radio group, checkbox list, multiselect, form, input, react-ui, react-component |
-| # releases         | 35 |
-| # dependents       | 45 |
-| # downloads        | 1909368 |
+| # releases         | 32 |
+| # dependents       | 44 |
+| # downloads        | 1910363 |
 | # stars            | 9 |
 
 ## Links

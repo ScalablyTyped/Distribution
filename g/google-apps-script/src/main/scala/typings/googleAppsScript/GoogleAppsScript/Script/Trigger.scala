@@ -2,24 +2,22 @@ package typings.googleAppsScript.GoogleAppsScript.Script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A script trigger.
   */
-@js.native
 trait Trigger extends StObject {
   
-  def getEventType(): EventType = js.native
+  def getEventType(): EventType
   
-  def getHandlerFunction(): String = js.native
+  def getHandlerFunction(): String
   
-  def getTriggerSource(): TriggerSource = js.native
+  def getTriggerSource(): TriggerSource
   
-  def getTriggerSourceId(): String = js.native
+  def getTriggerSourceId(): String
   
-  def getUniqueId(): String = js.native
+  def getUniqueId(): String
 }
 object Trigger {
   

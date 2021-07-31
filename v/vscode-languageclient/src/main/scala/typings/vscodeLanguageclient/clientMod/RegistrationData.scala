@@ -2,15 +2,13 @@ package typings.vscodeLanguageclient.clientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegistrationData[T] extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var registerOptions: T = js.native
+  var registerOptions: T
 }
 object RegistrationData {
   
@@ -21,7 +19,7 @@ object RegistrationData {
   }
   
   @scala.inline
-  implicit class RegistrationDataMutableBuilder[Self <: RegistrationData[_], T] (val x: Self with RegistrationData[T]) extends AnyVal {
+  implicit class RegistrationDataMutableBuilder[Self <: RegistrationData[?], T] (val x: Self & RegistrationData[T]) extends AnyVal {
     
     @scala.inline
     def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])

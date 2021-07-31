@@ -2,26 +2,24 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopActivityStreamResponse extends StObject {
   
   /**
     * The name of the Amazon Kinesis data stream used for the database activity stream.
     */
-  var KinesisStreamName: js.UndefOr[String] = js.native
+  var KinesisStreamName: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS KMS key identifier used for encrypting messages in the database activity stream.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the database activity stream.
     */
-  var Status: js.UndefOr[ActivityStreamStatus] = js.native
+  var Status: js.UndefOr[ActivityStreamStatus] = js.undefined
 }
 object StopActivityStreamResponse {
   

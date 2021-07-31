@@ -2,28 +2,26 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentThread extends StObject {
   
   /**
     * Whether the thread supports reply.
     * Defaults to true.
     */
-  var canReply: Boolean = js.native
+  var canReply: Boolean
   
   /**
     * Whether the thread should be collapsed or expanded when opening the document.
     * Defaults to Collapsed.
     */
-  var collapsibleState: CommentThreadCollapsibleState = js.native
+  var collapsibleState: CommentThreadCollapsibleState
   
   /**
     * The ordered comments of the thread.
     */
-  var comments: js.Array[Comment] = js.native
+  var comments: js.Array[Comment]
   
   /**
     * Context value of the comment thread. This can be used to contribute thread specific actions.
@@ -43,30 +41,30 @@ trait CommentThread extends StObject {
     * ```
     * This will show action `extension.deleteCommentThread` only for comment threads with `contextValue` is `editable`.
     */
-  var contextValue: js.UndefOr[String] = js.native
+  var contextValue: js.UndefOr[String] = js.undefined
   
   /**
     * Dispose this comment thread.
     *
     * Once disposed, this comment thread will be removed from visible editors and Comment Panel when appropriate.
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * The optional human-readable label describing the [Comment Thread](#CommentThread)
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The range the comment thread is located within the document. The thread icon will be shown
     * at the first line of the range.
     */
-  var range: Range = js.native
+  var range: Range
   
   /**
     * The uri of the document the thread has been created on.
     */
-  val uri: Uri = js.native
+  val uri: Uri
 }
 object CommentThread {
   

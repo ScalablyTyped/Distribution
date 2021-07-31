@@ -2,7 +2,6 @@ package typings.documentdbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -19,7 +18,6 @@ object global {
   @scala.inline
   def ___=(x: IObject): Unit = js.Dynamic.global.updateDynamic("__")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("getContext")
-  @js.native
-  def getContext(): IContext = js.native
+  @scala.inline
+  def getContext(): IContext = js.Dynamic.global.applyDynamic("getContext")().asInstanceOf[IContext]
 }

@@ -2,13 +2,13 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.VariantLayoutData")
 @js.native
 class VariantLayoutData protected ()
-  extends typings.openui5.sap.ui.core.VariantLayoutData {
+  extends StObject
+     with typings.openui5.sap.ui.core.VariantLayoutData {
   /**
     * Constructor for a new VariantLayoutData.Accepts an object literal <code>mSettings</code> that
     * defines initialproperty values, aggregated and associated objects as well as event handlers.See

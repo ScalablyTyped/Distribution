@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsIamPolicyVersion extends StObject {
   
   /**
     * Indicates when the version was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreateDate: js.UndefOr[NonEmptyString] = js.native
+  var CreateDate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether the version is the default version.
     */
-  var IsDefaultVersion: js.UndefOr[Boolean] = js.native
+  var IsDefaultVersion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The identifier of the policy version.
     */
-  var VersionId: js.UndefOr[NonEmptyString] = js.native
+  var VersionId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsIamPolicyVersion {
   

@@ -2,17 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PublicKeyCredential extends Credential {
+trait PublicKeyCredential
+  extends StObject
+     with Credential {
   
-  def getClientExtensionResults(): AuthenticationExtensionsClientOutputs = js.native
+  def getClientExtensionResults(): AuthenticationExtensionsClientOutputs
   
-  val rawId: ArrayBuffer = js.native
+  val rawId: ArrayBuffer
   
-  val response: AuthenticatorResponse = js.native
+  val response: AuthenticatorResponse
 }
 object PublicKeyCredential {
   

@@ -4,15 +4,13 @@ import typings.openfin.shapesIdentityMod.Identity
 import typings.openfin.viewViewMod.ViewCreationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateViewPayload extends StObject {
   
-  var opts: ViewCreationOptions = js.native
+  var opts: ViewCreationOptions
   
-  var target: Identity = js.native
+  var target: Identity
 }
 object CreateViewPayload {
   

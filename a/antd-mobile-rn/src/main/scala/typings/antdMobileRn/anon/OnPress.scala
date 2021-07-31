@@ -2,13 +2,11 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnPress extends StObject {
   
-  def onPress(): Unit = js.native
+  def onPress(): Unit
 }
 object OnPress {
   

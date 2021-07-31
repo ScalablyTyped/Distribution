@@ -2,31 +2,29 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFleetRequest extends StObject {
   
   /**
     * The fleet name to display.
     */
-  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.native
+  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.undefined
   
   /**
     * A unique name for the fleet.
     */
-  var FleetName: typings.awsSdk.worklinkMod.FleetName = js.native
+  var FleetName: typings.awsSdk.worklinkMod.FleetName
   
   /**
     * The option to optimize for better performance by routing traffic through the closest AWS Region to users, which may be outside of your home Region.
     */
-  var OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.native
+  var OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  The tags to add to the resource. A tag is a key-value pair.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateFleetRequest {
   

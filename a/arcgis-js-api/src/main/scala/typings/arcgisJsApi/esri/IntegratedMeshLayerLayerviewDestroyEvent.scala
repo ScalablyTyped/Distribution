@@ -2,15 +2,13 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntegratedMeshLayerLayerviewDestroyEvent extends StObject {
   
-  var layerView: LayerView = js.native
+  var layerView: LayerView
   
-  var view: View = js.native
+  var view: View
 }
 object IntegratedMeshLayerLayerviewDestroyEvent {
   

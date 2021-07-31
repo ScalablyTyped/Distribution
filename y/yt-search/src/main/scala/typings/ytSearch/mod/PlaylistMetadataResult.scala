@@ -2,29 +2,27 @@ package typings.ytSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaylistMetadataResult extends StObject {
   
-  var author: Author = js.native
+  var author: Author
   
-  var date: String = js.native
+  var date: String
   
-  var image: String = js.native
+  var image: String
   
-  var listId: String = js.native
+  var listId: String
   
-  var thumbnail: String = js.native
+  var thumbnail: String
   
-  var title: String = js.native
+  var title: String
   
-  var url: String = js.native
+  var url: String
   
-  var videos: js.Array[PlaylistItem] = js.native
+  var videos: js.Array[PlaylistItem]
   
-  var views: Double = js.native
+  var views: Double
 }
 object PlaylistMetadataResult {
   

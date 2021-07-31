@@ -2,15 +2,13 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdRefHttpApiEventAuthorizer extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var scopes: js.UndefOr[js.Array[String]] = js.native
+  var scopes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object IdRefHttpApiEventAuthorizer {
   

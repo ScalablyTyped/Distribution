@@ -2,16 +2,14 @@ package typings.awsSdk.acmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateOptions extends StObject {
   
   /**
     * You can opt out of certificate transparency logging by specifying the DISABLED option. Opt in by specifying ENABLED. 
     */
-  var CertificateTransparencyLoggingPreference: js.UndefOr[typings.awsSdk.acmMod.CertificateTransparencyLoggingPreference] = js.native
+  var CertificateTransparencyLoggingPreference: js.UndefOr[typings.awsSdk.acmMod.CertificateTransparencyLoggingPreference] = js.undefined
 }
 object CertificateOptions {
   

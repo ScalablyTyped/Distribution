@@ -2,13 +2,11 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentSizeHeightWidth extends StObject {
   
-  var contentSize: HeightWidth = js.native
+  var contentSize: HeightWidth
 }
 object ContentSizeHeightWidth {
   

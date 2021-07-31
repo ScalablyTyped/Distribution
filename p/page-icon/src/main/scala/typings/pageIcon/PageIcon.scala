@@ -3,15 +3,13 @@ package typings.pageIcon
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PageIcon {
   
-  @js.native
   trait FetchOptions extends StObject {
     
-    var ext: js.UndefOr[String] = js.native
+    var ext: js.UndefOr[String] = js.undefined
   }
   object FetchOptions {
     
@@ -32,20 +30,19 @@ object PageIcon {
     }
   }
   
-  @js.native
   trait Icon extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
-    var ext: String = js.native
+    var ext: String
     
-    var mime: String = js.native
+    var mime: String
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var source: String = js.native
+    var source: String
   }
   object Icon {
     

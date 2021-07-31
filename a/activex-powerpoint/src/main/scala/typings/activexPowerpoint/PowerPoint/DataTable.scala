@@ -2,40 +2,38 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataTable extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: js.Any
   
-  val Border: ChartBorder = js.native
+  val Border: ChartBorder
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val Font: ChartFont = js.native
+  val Font: ChartFont
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  var HasBorderHorizontal: Boolean = js.native
+  var HasBorderHorizontal: Boolean
   
-  var HasBorderOutline: Boolean = js.native
+  var HasBorderOutline: Boolean
   
-  var HasBorderVertical: Boolean = js.native
+  var HasBorderVertical: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.DataTable_typekey")
-  var PowerPointDotDataTable_typekey: DataTable = js.native
+  var PowerPointDotDataTable_typekey: DataTable
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
-  var ShowLegendKey: Boolean = js.native
+  var ShowLegendKey: Boolean
 }
 object DataTable {
   

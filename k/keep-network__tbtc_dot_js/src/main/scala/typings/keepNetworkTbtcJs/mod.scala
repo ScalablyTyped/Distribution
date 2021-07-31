@@ -12,10 +12,13 @@ import typings.keepNetworkTbtcJs.ethereumHelpersMod.EthereumHelpers.ContractCall
 import typings.keepNetworkTbtcJs.tbtcMod.TBTC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@keep-network/tbtc.js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@keep-network/tbtc.js", JSImport.Default)
   @js.native
@@ -26,73 +29,65 @@ object mod {
   /* static members */
   object default {
     
-    @JSImport("@keep-network/tbtc.js", "default.withConfig")
+    @JSImport("@keep-network/tbtc.js", JSImport.Default)
     @js.native
-    def withConfig(config: TBTCConfig): js.Promise[TBTC] = js.native
-    @JSImport("@keep-network/tbtc.js", "default.withConfig")
-    @js.native
-    def withConfig(config: TBTCConfig, networkMatchCheck: Boolean): js.Promise[TBTC] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def withConfig(config: TBTCConfig): js.Promise[TBTC] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TBTC]]
+    @scala.inline
+    def withConfig(config: TBTCConfig, networkMatchCheck: Boolean): js.Promise[TBTC] = (^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(config.asInstanceOf[js.Any], networkMatchCheck.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TBTC]]
   }
   
   object EthereumHelpers {
     
     object EthereumHelpers {
       
-      @JSImport("@keep-network/tbtc.js", "EthereumHelpers.EthereumHelpers.bytesToRaw")
+      @JSImport("@keep-network/tbtc.js", "EthereumHelpers.EthereumHelpers")
       @js.native
-      def bytesToRaw(bytesString: String): String = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("@keep-network/tbtc.js", "EthereumHelpers.EthereumHelpers.getDeployedContract")
-      @js.native
-      def getDeployedContract(artifact: Artifact, web3: Web3, networkId: String): Contract = js.native
+      @scala.inline
+      def bytesToRaw(bytesString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToRaw")(bytesString.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSImport("@keep-network/tbtc.js", "EthereumHelpers.EthereumHelpers.getEvent")
-      @js.native
-      def getEvent(sourceContract: Contract, eventName: String): js.Promise[_] = js.native
-      @JSImport("@keep-network/tbtc.js", "EthereumHelpers.EthereumHelpers.getEvent")
-      @js.native
-      def getEvent(sourceContract: Contract, eventName: String, filter: js.Any): js.Promise[_] = js.native
+      @scala.inline
+      def getDeployedContract(artifact: Artifact, web3: Web3, networkId: String): Contract = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeployedContract")(artifact.asInstanceOf[js.Any], web3.asInstanceOf[js.Any], networkId.asInstanceOf[js.Any])).asInstanceOf[Contract]
       
-      @JSImport("@keep-network/tbtc.js", "EthereumHelpers.EthereumHelpers.getExistingEvent")
-      @js.native
-      def getExistingEvent(source: Contract, eventName: String): js.Promise[_] = js.native
-      @JSImport("@keep-network/tbtc.js", "EthereumHelpers.EthereumHelpers.getExistingEvent")
-      @js.native
-      def getExistingEvent(source: Contract, eventName: String, filter: js.Any): js.Promise[_] = js.native
+      @scala.inline
+      def getEvent(sourceContract: Contract, eventName: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEvent")(sourceContract.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      @scala.inline
+      def getEvent(sourceContract: Contract, eventName: String, filter: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEvent")(sourceContract.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
       
-      @JSImport("@keep-network/tbtc.js", "EthereumHelpers.EthereumHelpers.isMainnet")
-      @js.native
-      def isMainnet(web3: Web3): js.Promise[Boolean] = js.native
+      @scala.inline
+      def getExistingEvent(source: Contract, eventName: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getExistingEvent")(source.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      @scala.inline
+      def getExistingEvent(source: Contract, eventName: String, filter: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getExistingEvent")(source.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
       
-      @JSImport("@keep-network/tbtc.js", "EthereumHelpers.EthereumHelpers.readEventFromTransaction")
-      @js.native
-      def readEventFromTransaction(web3: Web3, transaction: js.Any, sourceContract: Contract, eventName: String): StringDictionary[String] = js.native
+      @scala.inline
+      def isMainnet(web3: Web3): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isMainnet")(web3.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
       
-      @JSImport("@keep-network/tbtc.js", "EthereumHelpers.EthereumHelpers.sendSafely")
-      @js.native
-      def sendSafely(boundContractMethod: ContractCall): js.Promise[_] = js.native
-      @JSImport("@keep-network/tbtc.js", "EthereumHelpers.EthereumHelpers.sendSafely")
-      @js.native
-      def sendSafely(boundContractMethod: ContractCall, sendParams: js.UndefOr[scala.Nothing], forceSend: Boolean): js.Promise[_] = js.native
-      @JSImport("@keep-network/tbtc.js", "EthereumHelpers.EthereumHelpers.sendSafely")
-      @js.native
-      def sendSafely(boundContractMethod: ContractCall, sendParams: ContractCallOptions): js.Promise[_] = js.native
-      @JSImport("@keep-network/tbtc.js", "EthereumHelpers.EthereumHelpers.sendSafely")
-      @js.native
-      def sendSafely(boundContractMethod: ContractCall, sendParams: ContractCallOptions, forceSend: Boolean): js.Promise[_] = js.native
+      @scala.inline
+      def readEventFromTransaction(web3: Web3, transaction: js.Any, sourceContract: Contract, eventName: String): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readEventFromTransaction")(web3.asInstanceOf[js.Any], transaction.asInstanceOf[js.Any], sourceContract.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
       
-      @JSImport("@keep-network/tbtc.js", "EthereumHelpers.EthereumHelpers.sendSafelyRetryable")
-      @js.native
+      @scala.inline
+      def sendSafely(boundContractMethod: ContractCall): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendSafely")(boundContractMethod.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+      @scala.inline
+      def sendSafely(boundContractMethod: ContractCall, sendParams: Unit, forceSend: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSafely")(boundContractMethod.asInstanceOf[js.Any], sendParams.asInstanceOf[js.Any], forceSend.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      @scala.inline
+      def sendSafely(boundContractMethod: ContractCall, sendParams: ContractCallOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSafely")(boundContractMethod.asInstanceOf[js.Any], sendParams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      @scala.inline
+      def sendSafely(boundContractMethod: ContractCall, sendParams: ContractCallOptions, forceSend: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSafely")(boundContractMethod.asInstanceOf[js.Any], sendParams.asInstanceOf[js.Any], forceSend.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      
+      @scala.inline
       def sendSafelyRetryable(
         boundContractMethod: ContractCall,
         sendParams: ContractCallOptions,
         forceSend: Boolean,
         totalAttempts: Double
-      ): js.Promise[_] = js.native
+      ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSafelyRetryable")(boundContractMethod.asInstanceOf[js.Any], sendParams.asInstanceOf[js.Any], forceSend.asInstanceOf[js.Any], totalAttempts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     }
   }
   
-  @JSImport("@keep-network/tbtc.js", "getNetworkIdFromArtifact")
-  @js.native
-  def getNetworkIdFromArtifact(): String = js.native
+  @scala.inline
+  def getNetworkIdFromArtifact(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkIdFromArtifact")().asInstanceOf[String]
 }

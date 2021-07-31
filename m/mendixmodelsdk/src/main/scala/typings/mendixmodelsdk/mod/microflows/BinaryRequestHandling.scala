@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object BinaryRequestHandling {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.BinaryRequestHandling.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.BinaryRequestHandling = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.BinaryRequestHandling]
   
   /**
     * Creates and returns a new BinaryRequestHandling instance in the SDK and on the server.
@@ -53,9 +51,8 @@ object BinaryRequestHandling {
     *  6.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.BinaryRequestHandling.createInRestCallActionUnderRequestHandling")
-  @js.native
-  def createInRestCallActionUnderRequestHandling(container: typings.mendixmodelsdk.microflowsMod.microflows.RestCallAction): typings.mendixmodelsdk.microflowsMod.microflows.BinaryRequestHandling = js.native
+  @scala.inline
+  def createInRestCallActionUnderRequestHandling(container: typings.mendixmodelsdk.microflowsMod.microflows.RestCallAction): typings.mendixmodelsdk.microflowsMod.microflows.BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderRequestHandling")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.BinaryRequestHandling]
   
   /**
     * Creates and returns a new BinaryRequestHandling instance in the SDK and on the server.
@@ -66,9 +63,8 @@ object BinaryRequestHandling {
     *  6.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.BinaryRequestHandling.createInWebServiceCallActionUnderRequestBodyHandling")
-  @js.native
-  def createInWebServiceCallActionUnderRequestBodyHandling(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.BinaryRequestHandling = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderRequestBodyHandling(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestBodyHandling")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.BinaryRequestHandling]
   
   /**
     * Creates and returns a new BinaryRequestHandling instance in the SDK and on the server.
@@ -79,9 +75,8 @@ object BinaryRequestHandling {
     *  6.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.BinaryRequestHandling.createInWebServiceCallActionUnderRequestHeaderHandling")
-  @js.native
-  def createInWebServiceCallActionUnderRequestHeaderHandling(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.BinaryRequestHandling = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderRequestHeaderHandling(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestHeaderHandling")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.BinaryRequestHandling]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.BinaryRequestHandling.structureTypeName")

@@ -7,17 +7,18 @@ import typings.yayson.yaysonStrings.default
 import typings.yayson.yaysonStrings.sequelize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Yayson = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Yayson]
+  @scala.inline
+  def apply(arg: YaysonOptions): Yayson = ^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any]).asInstanceOf[Yayson]
+  
   @JSImport("yayson", JSImport.Namespace)
   @js.native
-  def apply(): Yayson = js.native
-  @JSImport("yayson", JSImport.Namespace)
-  @js.native
-  def apply(arg: YaysonOptions): Yayson = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Adapter extends StObject {
@@ -28,11 +29,11 @@ object mod {
     def id(model: js.Object): String = js.native
   }
   
-  @js.native
   trait JsonOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var meta: js.UndefOr[js.Object] = js.native
+    var meta: js.UndefOr[js.Object] = js.undefined
   }
   object JsonOptions {
     
@@ -69,16 +70,15 @@ object mod {
     var `type`: String = js.native
   }
   
-  @js.native
   trait Record extends StObject {
     
-    var attributes: js.Any = js.native
+    var attributes: js.Any
     
-    var id: js.Any = js.native
+    var id: js.Any
     
-    var relationships: js.Any = js.native
+    var relationships: js.Any
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Record {
     
@@ -111,7 +111,7 @@ object mod {
     
     def find(`type`: String, id: String): js.Any = js.native
     
-    def findAll(`type`: String): js.Array[_] = js.native
+    def findAll(`type`: String): js.Array[js.Any] = js.native
     
     var records: js.Array[Record] = js.native
     
@@ -125,21 +125,20 @@ object mod {
     def sync(obj: js.Object): js.Any = js.native
   }
   
-  @js.native
   trait Yayson extends StObject {
     
-    var Adapter: typings.yayson.mod.Adapter = js.native
+    var Adapter: typings.yayson.mod.Adapter
     
-    var Presenter: TypeofPresenter with Instantiable0[typings.yayson.mod.Presenter] = js.native
+    var Presenter: TypeofPresenter & Instantiable0[typings.yayson.mod.Presenter]
     
-    var Store: Instantiable0[typings.yayson.mod.Store] = js.native
+    var Store: Instantiable0[typings.yayson.mod.Store]
   }
   object Yayson {
     
     @scala.inline
     def apply(
       Adapter: Adapter,
-      Presenter: TypeofPresenter with Instantiable0[Presenter],
+      Presenter: TypeofPresenter & Instantiable0[Presenter],
       Store: Instantiable0[Store]
     ): Yayson = {
       val __obj = js.Dynamic.literal(Adapter = Adapter.asInstanceOf[js.Any], Presenter = Presenter.asInstanceOf[js.Any], Store = Store.asInstanceOf[js.Any])
@@ -153,17 +152,16 @@ object mod {
       def setAdapter(value: Adapter): Self = StObject.set(x, "Adapter", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPresenter(value: TypeofPresenter with Instantiable0[Presenter]): Self = StObject.set(x, "Presenter", value.asInstanceOf[js.Any])
+      def setPresenter(value: TypeofPresenter & Instantiable0[Presenter]): Self = StObject.set(x, "Presenter", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStore(value: Instantiable0[Store]): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait YaysonOptions extends StObject {
     
-    var adapter: js.UndefOr[default | sequelize] = js.native
+    var adapter: js.UndefOr[default | sequelize] = js.undefined
   }
   object YaysonOptions {
     

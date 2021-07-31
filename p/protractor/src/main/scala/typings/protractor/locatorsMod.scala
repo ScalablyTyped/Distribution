@@ -1,6 +1,5 @@
 package typings.protractor
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.seleniumWebdriver.byMod.ByHash
 import typings.seleniumWebdriver.mod.By
 import typings.seleniumWebdriver.mod.WebDriver
@@ -8,16 +7,27 @@ import typings.seleniumWebdriver.mod.WebElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object locatorsMod {
   
-  @JSImport("protractor/built/locators", "ProtractorBy")
+  @JSImport("protractor/built/locators", JSImport.Namespace)
   @js.native
-  class ProtractorBy ()
-    extends WebdriverBy
-       with /* key */ StringDictionary[js.Any] {
+  val ^ : js.Any = js.native
+  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @JSImport("protractor/built/locators", "ProtractorBy")
+  @js.native
+  class ProtractorBy () extends WebdriverBy {
     
     def addLocator(name: String, script: String): Unit = js.native
     /**
@@ -323,23 +333,21 @@ object locatorsMod {
     def xpath(xpath: String): By = js.native
   }
   
-  @JSImport("protractor/built/locators", "isProtractorLocator")
-  @js.native
-  def isProtractorLocator(x: Locator): /* is protractor.protractor/built/locators.ProtractorLocator */ Boolean = js.native
+  @scala.inline
+  def isProtractorLocator(x: Locator): /* is protractor.protractor/built/locators.ProtractorLocator */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProtractorLocator")(x.asInstanceOf[js.Any]).asInstanceOf[/* is protractor.protractor/built/locators.ProtractorLocator */ Boolean]
   
   type Locator = ProtractorLocator | WebDriverLocator
   
-  @js.native
   trait ProtractorLocator extends StObject {
     
-    var column: js.UndefOr[js.Function1[/* index */ String, Locator]] = js.native
+    var column: js.UndefOr[js.Function1[/* index */ String, Locator]] = js.undefined
     
-    def findElementsOverride(driver: WebDriver, using: WebElement, rootSelector: String): js.Promise[js.Array[WebElement]] = js.native
+    def findElementsOverride(driver: WebDriver, `using`: WebElement, rootSelector: String): js.Promise[js.Array[WebElement]]
     
-    var row: js.UndefOr[js.Function1[/* index */ Double, Locator]] = js.native
+    var row: js.UndefOr[js.Function1[/* index */ Double, Locator]] = js.undefined
     
     @JSName("toString")
-    var toString_FProtractorLocator: js.UndefOr[js.Function0[String]] = js.native
+    var toString_FProtractorLocator: js.UndefOr[js.Function0[String]] = js.undefined
   }
   object ProtractorLocator {
     

@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive status change events from an {@link XDataEditor} . */
-@js.native
-trait XDataEditorListener extends XInterface {
+trait XDataEditorListener
+  extends StObject
+     with XInterface {
   
   /** is called when the state of a connected {@link XDataEditor} changes. */
-  def updateDataEditorState(event: DataEditorEvent): Unit = js.native
+  def updateDataEditorState(event: DataEditorEvent): Unit
 }
 object XDataEditorListener {
   

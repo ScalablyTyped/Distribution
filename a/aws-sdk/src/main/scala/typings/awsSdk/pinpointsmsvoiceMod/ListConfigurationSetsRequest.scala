@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointsmsvoiceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListConfigurationSetsRequest extends StObject {
   
   /**
     * A token returned from a previous call to the API that indicates the position in the list of results.
     */
-  var NextToken: js.UndefOr[_String] = js.native
+  var NextToken: js.UndefOr[_String] = js.undefined
   
   /**
     * Used to specify the number of items that should be returned in the response.
     */
-  var PageSize: js.UndefOr[_String] = js.native
+  var PageSize: js.UndefOr[_String] = js.undefined
 }
 object ListConfigurationSetsRequest {
   

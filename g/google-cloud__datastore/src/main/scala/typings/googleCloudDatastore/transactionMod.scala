@@ -8,7 +8,6 @@ import typings.googleCloudDatastore.requestMod.DatastoreRequest
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionMod {
@@ -32,10 +31,9 @@ object transactionMod {
     def run(callback: TransactionCallback): Unit = js.native
   }
   
-  @js.native
   trait BeginTransactionResponse extends StObject {
     
-    var transaction: String = js.native
+    var transaction: String
   }
   object BeginTransactionResponse {
     

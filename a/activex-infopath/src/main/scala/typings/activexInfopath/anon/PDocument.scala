@@ -3,13 +3,11 @@ package typings.activexInfopath.anon
 import typings.activexInfopath.InfoPath._XDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDocument extends StObject {
   
-  val pDocument: _XDocument = js.native
+  val pDocument: _XDocument
 }
 object PDocument {
   

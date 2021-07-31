@@ -4,17 +4,17 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageTagProps extends HTMLAttributes[HTMLImageElement] {
+trait ImageTagProps
+  extends StObject
+     with HTMLAttributes[HTMLImageElement] {
   
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
-  var attribute: String = js.native
+  var attribute: String
   
-  var content: Binary | Obj | Widget = js.native
+  var content: Binary | Obj | Widget
 }
 object ImageTagProps {
   

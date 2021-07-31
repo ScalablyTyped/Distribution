@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `shapeGroup.toJSON()`. */
-@js.native
 trait ShapeGroupData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ShapeGroupData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ShapeGroupData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var shapes: js.UndefOr[js.Array[ShapeData]] = js.native
+  var shapes: js.UndefOr[js.Array[ShapeData]] = js.undefined
 }
 object ShapeGroupData {
   

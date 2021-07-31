@@ -11,7 +11,7 @@ Configurable, lightweight XML to JSON converter.
 | Keywords           | xml, convert, transform, json |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 29997 |
+| # downloads        | 50534 |
 | # stars            | 7 |
 
 ## Links

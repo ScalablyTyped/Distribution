@@ -2,19 +2,17 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FillStyle_ extends StObject {
   
-  var fillStyle: js.UndefOr[String] = js.native
+  var fillStyle: js.UndefOr[String] = js.undefined
   
-  var shadowBlur: js.UndefOr[String] = js.native
+  var shadowBlur: js.UndefOr[String] = js.undefined
   
-  var shadowColor: js.UndefOr[String] = js.native
+  var shadowColor: js.UndefOr[String] = js.undefined
   
-  var strokeStyle: js.UndefOr[String] = js.native
+  var strokeStyle: js.UndefOr[String] = js.undefined
 }
 object FillStyle_ {
   

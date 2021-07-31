@@ -2,25 +2,25 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RTCRtpEncodingParameters extends RTCRtpCodingParameters {
+trait RTCRtpEncodingParameters
+  extends StObject
+     with RTCRtpCodingParameters {
   
-  var active: js.UndefOr[scala.Boolean] = js.native
+  var active: js.UndefOr[scala.Boolean] = js.undefined
   
-  var codecPayloadType: js.UndefOr[Double] = js.native
+  var codecPayloadType: js.UndefOr[Double] = js.undefined
   
-  var dtx: js.UndefOr[RTCDtxStatus] = js.native
+  var dtx: js.UndefOr[RTCDtxStatus] = js.undefined
   
-  var maxBitrate: js.UndefOr[Double] = js.native
+  var maxBitrate: js.UndefOr[Double] = js.undefined
   
-  var maxFramerate: js.UndefOr[Double] = js.native
+  var maxFramerate: js.UndefOr[Double] = js.undefined
   
-  var ptime: js.UndefOr[Double] = js.native
+  var ptime: js.UndefOr[Double] = js.undefined
   
-  var scaleResolutionDownBy: js.UndefOr[Double] = js.native
+  var scaleResolutionDownBy: js.UndefOr[Double] = js.undefined
 }
 object RTCRtpEncodingParameters {
   

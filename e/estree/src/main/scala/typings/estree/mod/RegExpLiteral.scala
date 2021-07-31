@@ -4,29 +4,28 @@ import typings.estree.anon.Flags
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegExpLiteral
-  extends Literal
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with Literal {
   
-  var raw: js.UndefOr[String] = js.native
+  var raw: js.UndefOr[String] = js.undefined
   
-  var regex: Flags = js.native
+  var regex: Flags
   
   @JSName("type")
-  var type_RegExpLiteral: typings.estree.estreeStrings.Literal = js.native
+  var type_RegExpLiteral: typings.estree.estreeStrings.Literal
   
-  var value: js.UndefOr[RegExp | Null] = js.native
+  var value: js.UndefOr[RegExp | Null] = js.undefined
 }
 object RegExpLiteral {
   
   @scala.inline
-  def apply(regex: Flags, `type`: typings.estree.estreeStrings.Literal): RegExpLiteral = {
+  def apply(regex: Flags): RegExpLiteral = {
     val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Literal")
     __obj.asInstanceOf[RegExpLiteral]
   }
   

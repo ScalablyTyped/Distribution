@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrandResourceUrls extends StObject {
   
   /**
     * The URI for the email resource file that the brand uses.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the sending resource file that the brand uses.
     */
-  var sending: js.UndefOr[String] = js.native
+  var sending: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the signing resource file that the brand uses.
     */
-  var signing: js.UndefOr[String] = js.native
+  var signing: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the captive (embedded) signing resource file that the brand uses.
     */
-  var signingCaptive: js.UndefOr[String] = js.native
+  var signingCaptive: js.UndefOr[String] = js.undefined
 }
 object BrandResourceUrls {
   

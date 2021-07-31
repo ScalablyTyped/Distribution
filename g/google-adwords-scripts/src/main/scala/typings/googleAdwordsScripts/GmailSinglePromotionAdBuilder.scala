@@ -2,39 +2,39 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] extends AdBuilder[GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]] {
+trait GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
+  extends StObject
+     with AdBuilder[GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]] {
   
-  def withAdvertiser(advertiser: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = js.native
+  def withAdvertiser(advertiser: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   
-  def withCallToAction(callToAction: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = js.native
+  def withCallToAction(callToAction: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   
-  def withCallToActionButtonColor(callToActionButtonColor: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = js.native
+  def withCallToActionButtonColor(callToActionButtonColor: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   
-  def withCallToActionTextColor(callToActionTextColor: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = js.native
+  def withCallToActionTextColor(callToActionTextColor: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   
-  def withContent(content: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = js.native
+  def withContent(content: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   
-  def withDescription(description: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = js.native
+  def withDescription(description: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   
-  def withDisplayUrl(displayUrl: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = js.native
+  def withDisplayUrl(displayUrl: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   
-  def withHeader(header: Media): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = js.native
+  def withHeader(header: Media): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   
-  def withHeadline(headline: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = js.native
+  def withHeadline(headline: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   
-  def withHeadlineColor(headlineColor: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = js.native
+  def withHeadlineColor(headlineColor: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   
-  def withImage(image: Media): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = js.native
+  def withImage(image: Media): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   
-  def withLogo(logo: Media): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = js.native
+  def withLogo(logo: Media): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   
-  def withName(name: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = js.native
+  def withName(name: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   
-  def withSubject(subject: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = js.native
+  def withSubject(subject: String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
 }
 object GmailSinglePromotionAdBuilder {
   
@@ -65,7 +65,7 @@ object GmailSinglePromotionAdBuilder {
   }
   
   @scala.inline
-  implicit class GmailSinglePromotionAdBuilderMutableBuilder[Self <: GmailSinglePromotionAdBuilder[_], GmailSinglePromotionAd] (val x: Self with GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]) extends AnyVal {
+  implicit class GmailSinglePromotionAdBuilderMutableBuilder[Self <: GmailSinglePromotionAdBuilder[?], GmailSinglePromotionAd] (val x: Self & GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]) extends AnyVal {
     
     @scala.inline
     def setWithAdvertiser(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withAdvertiser", js.Any.fromFunction1(value))

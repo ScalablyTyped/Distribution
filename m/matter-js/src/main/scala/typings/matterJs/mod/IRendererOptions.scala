@@ -2,10 +2,8 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRendererOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait IRendererOptions extends StObject {
     * @type string
     * default undefined
     */
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
   /**
     * A flag that specifies if `render.bounds` should be used when rendering.
@@ -22,7 +20,7 @@ trait IRendererOptions extends StObject {
     * @type boolean
     * @default false
     */
-  var hasBounds: js.UndefOr[Boolean] = js.native
+  var hasBounds: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The target height in pixels of the `render.canvas` to be created.
@@ -31,7 +29,7 @@ trait IRendererOptions extends StObject {
     * @type number
     * @default 600
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The target width in pixels of the `render.canvas` to be created.
@@ -40,21 +38,21 @@ trait IRendererOptions extends StObject {
     * @type number
     * @default 800
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets wireframe background if `render.options.wireframes` is enabled
     * @type string
     * default undefined
     */
-  var wireframeBackground: js.UndefOr[String] = js.native
+  var wireframeBackground: js.UndefOr[String] = js.undefined
   
   /**
     * Render wireframes only
     * @type boolean
     * @default true
     */
-  var wireframes: js.UndefOr[Boolean] = js.native
+  var wireframes: js.UndefOr[Boolean] = js.undefined
 }
 object IRendererOptions {
   

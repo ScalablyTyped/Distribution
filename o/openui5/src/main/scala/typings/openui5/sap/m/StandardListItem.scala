@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.TextDirection
 import typings.openui5.sap.ui.core.ValueState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StandardListItem extends ListItemBase {
+trait StandardListItem
+  extends StObject
+     with ListItemBase {
   
   /**
     * Gets current value of property <code>activeIcon</code>.Defines the icon that is shown while the list

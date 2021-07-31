@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PositionedObjectPropertiesSuggestionState extends StObject {
   
   /** A mask that indicates which of the fields in embedded_object have been changed in this suggestion. */
-  var embeddedObjectSuggestionState: js.UndefOr[EmbeddedObjectSuggestionState] = js.native
+  var embeddedObjectSuggestionState: js.UndefOr[EmbeddedObjectSuggestionState] = js.undefined
   
   /** A mask that indicates which of the fields in positioning have been changed in this suggestion. */
-  var positioningSuggestionState: js.UndefOr[PositionedObjectPositioningSuggestionState] = js.native
+  var positioningSuggestionState: js.UndefOr[PositionedObjectPositioningSuggestionState] = js.undefined
 }
 object PositionedObjectPropertiesSuggestionState {
   

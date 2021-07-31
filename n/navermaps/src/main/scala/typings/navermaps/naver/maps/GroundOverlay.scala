@@ -2,11 +2,12 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroundOverlay extends OverlayView {
+trait GroundOverlay
+  extends StObject
+     with OverlayView {
   
   def getBounds(): Bounds = js.native
   

@@ -2,19 +2,17 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mod extends StObject {
   
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
-  var init: js.UndefOr[js.Function0[Unit]] = js.native
+  var init: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var load: js.UndefOr[js.Function1[/* data */ String, Unit]] = js.native
+  var load: js.UndefOr[js.Function1[/* data */ String, Unit]] = js.undefined
   
-  var save: js.UndefOr[js.Function0[String]] = js.native
+  var save: js.UndefOr[js.Function0[String]] = js.undefined
 }
 object Mod {
   

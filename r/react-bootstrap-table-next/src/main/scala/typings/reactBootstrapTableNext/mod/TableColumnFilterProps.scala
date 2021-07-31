@@ -3,28 +3,26 @@ package typings.reactBootstrapTableNext.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  id :string,   placeholder :string,   className :string,   defaultValue :any,   style :react.react.CSSProperties,   delay :number, getFilter (filter : FT): void, onFilter (filterValue : FT): void | std.Array<T>}> */
-@js.native
 trait TableColumnFilterProps[FT, T /* <: js.Object */] extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var getFilter: js.UndefOr[js.Function1[/* filter */ FT, Unit]] = js.native
+  var getFilter: js.UndefOr[js.Function1[/* filter */ FT, Unit]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var onFilter: js.UndefOr[js.Function1[/* filterValue */ FT, Unit | js.Array[T]]] = js.native
+  var onFilter: js.UndefOr[js.Function1[/* filterValue */ FT, Unit | js.Array[T]]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object TableColumnFilterProps {
   
@@ -35,7 +33,7 @@ object TableColumnFilterProps {
   }
   
   @scala.inline
-  implicit class TableColumnFilterPropsMutableBuilder[Self <: TableColumnFilterProps[_, _], FT, T /* <: js.Object */] (val x: Self with (TableColumnFilterProps[FT, T])) extends AnyVal {
+  implicit class TableColumnFilterPropsMutableBuilder[Self <: TableColumnFilterProps[?, ?], FT, T /* <: js.Object */] (val x: Self & (TableColumnFilterProps[FT, T])) extends AnyVal {
     
     @scala.inline
     def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])

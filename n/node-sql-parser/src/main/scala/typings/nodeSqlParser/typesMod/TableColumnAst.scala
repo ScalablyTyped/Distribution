@@ -2,17 +2,15 @@ package typings.nodeSqlParser.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableColumnAst extends StObject {
   
-  var ast: js.Array[AST] | AST = js.native
+  var ast: js.Array[AST] | AST
   
-  var columnList: js.Array[String] = js.native
+  var columnList: js.Array[String]
   
-  var tableList: js.Array[String] = js.native
+  var tableList: js.Array[String]
 }
 object TableColumnAst {
   

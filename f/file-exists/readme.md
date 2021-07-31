@@ -12,7 +12,7 @@ Check if filepath exists and is a file
 | Keywords           | file, exists, fs, isfile, is-file |
 | # releases         | 0 |
 | # dependents       | 274 |
-| # downloads        | 2030963 |
+| # downloads        | 2257572 |
 | # stars            | 6 |
 
 ## Links

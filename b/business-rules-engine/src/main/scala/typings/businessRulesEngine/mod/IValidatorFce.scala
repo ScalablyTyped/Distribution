@@ -3,17 +3,15 @@ package typings.businessRulesEngine.mod
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IValidatorFce extends StObject {
   
-  var AsyncValidationFce: js.UndefOr[IAsyncValidate] = js.native
+  var AsyncValidationFce: js.UndefOr[IAsyncValidate] = js.undefined
   
-  var Name: String = js.native
+  var Name: String
   
-  var ValidationFce: js.UndefOr[IValidate] = js.native
+  var ValidationFce: js.UndefOr[IValidate] = js.undefined
 }
 object IValidatorFce {
   

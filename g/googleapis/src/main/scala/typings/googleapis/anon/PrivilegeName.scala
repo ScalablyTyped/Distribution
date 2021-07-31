@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrivilegeName extends StObject {
   
-  var privilegeName: js.UndefOr[String] = js.native
+  var privilegeName: js.UndefOr[String] = js.undefined
   
-  var serviceId: js.UndefOr[String] = js.native
+  var serviceId: js.UndefOr[String] = js.undefined
 }
 object PrivilegeName {
   

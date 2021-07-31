@@ -9,7 +9,6 @@ import typings.passportSpotify.passportSpotifyBooleans.`true`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,38 +19,37 @@ object mod {
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query]): Unit = js.native
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
     
     var name: String = js.native
   }
   
-  @js.native
   trait Profile extends StObject {
     
-    var _json: js.Any = js.native
+    var _json: js.Any
     
-    var _raw: String = js.native
+    var _raw: String
     
-    var country: String = js.native
+    var country: String
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var emails: js.UndefOr[js.Array[Type]] = js.native
+    var emails: js.UndefOr[js.Array[Type]] = js.undefined
     
-    var followers: Double | Null = js.native
+    var followers: Double | Null
     
-    var id: String = js.native
+    var id: String
     
-    var photos: js.Array[String] | Null = js.native
+    var photos: js.Array[String] | Null
     
-    var product: String | Null = js.native
+    var product: String | Null
     
-    var profileUrl: String | Null = js.native
+    var profileUrl: String | Null
     
-    var provider: String = js.native
+    var provider: String
     
-    var username: String = js.native
+    var username: String
   }
   object Profile {
     
@@ -65,7 +63,7 @@ object mod {
       provider: String,
       username: String
     ): Profile = {
-      val __obj = js.Dynamic.literal(_json = _json.asInstanceOf[js.Any], _raw = _raw.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_json = _json.asInstanceOf[js.Any], _raw = _raw.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any], followers = null, photos = null, product = null, profileUrl = null)
       __obj.asInstanceOf[Profile]
     }
     
@@ -131,10 +129,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait StrategyOptions extends StrategyOptionsBase {
+  trait StrategyOptions
+    extends StObject
+       with StrategyOptionsBase {
     
-    var passReqToCallback: js.UndefOr[`false` | Null] = js.native
+    var passReqToCallback: js.UndefOr[`false` | Null] = js.undefined
   }
   object StrategyOptions {
     
@@ -158,26 +157,25 @@ object mod {
     }
   }
   
-  @js.native
   trait StrategyOptionsBase extends StObject {
     
-    var authorizationURL: js.UndefOr[String] = js.native
+    var authorizationURL: js.UndefOr[String] = js.undefined
     
-    var callbackURL: String = js.native
+    var callbackURL: String
     
-    var clientID: String = js.native
+    var clientID: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var scope: js.UndefOr[js.Array[String]] = js.native
+    var scope: js.UndefOr[js.Array[String]] = js.undefined
     
-    var scopeSeparator: js.UndefOr[String] = js.native
+    var scopeSeparator: js.UndefOr[String] = js.undefined
     
-    var showDialog: js.UndefOr[Boolean] = js.native
+    var showDialog: js.UndefOr[Boolean] = js.undefined
     
-    var tokenURL: js.UndefOr[String] = js.native
+    var tokenURL: js.UndefOr[String] = js.undefined
     
-    var userProfileURL: js.UndefOr[String] = js.native
+    var userProfileURL: js.UndefOr[String] = js.undefined
   }
   object StrategyOptionsBase {
     
@@ -240,16 +238,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait StrategyOptionsWithRequest extends StrategyOptionsBase {
+  trait StrategyOptionsWithRequest
+    extends StObject
+       with StrategyOptionsBase {
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
   }
   object StrategyOptionsWithRequest {
     
     @scala.inline
-    def apply(callbackURL: String, clientID: String, clientSecret: String, passReqToCallback: `true`): StrategyOptionsWithRequest = {
-      val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    def apply(callbackURL: String, clientID: String, clientSecret: String): StrategyOptionsWithRequest = {
+      val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     

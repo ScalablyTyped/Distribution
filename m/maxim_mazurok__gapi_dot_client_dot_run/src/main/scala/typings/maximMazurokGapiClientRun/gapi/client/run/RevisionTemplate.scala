@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevisionTemplate extends StObject {
   
   /**
@@ -14,10 +12,10 @@ trait RevisionTemplate extends StObject {
     * `run.googleapis.com/cloudsql-instances` sets Cloud SQL connections. Multiple values should be comma separated. * `run.googleapis.com/vpc-access-connector` sets a Serverless VPC
     * Access connector. * `run.googleapis.com/vpc-access-egress` sets VPC egress. Supported values are `all` and `private-ranges-only`.
     */
-  var metadata: js.UndefOr[ObjectMeta] = js.native
+  var metadata: js.UndefOr[ObjectMeta] = js.undefined
   
   /** RevisionSpec holds the desired state of the Revision (from the client). */
-  var spec: js.UndefOr[RevisionSpec] = js.native
+  var spec: js.UndefOr[RevisionSpec] = js.undefined
 }
 object RevisionTemplate {
   

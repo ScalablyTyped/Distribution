@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * thread.
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessControlContext extends XInterface {
+trait XAccessControlContext
+  extends StObject
+     with XInterface {
   
   /**
     * Determines whether the access request indicated by the specified permission should be allowed or denied, based on this context. The semantics are
@@ -32,7 +32,7 @@ trait XAccessControlContext extends XInterface {
     * @see com.sun.star.connection.SocketPermission
     * @throws AccessControlException thrown if access is denied
     */
-  def checkPermission(perm: js.Any): Unit = js.native
+  def checkPermission(perm: js.Any): Unit
 }
 object XAccessControlContext {
   

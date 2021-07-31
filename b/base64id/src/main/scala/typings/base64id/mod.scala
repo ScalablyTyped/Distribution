@@ -3,7 +3,6 @@ package typings.base64id
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,13 +24,11 @@ object mod {
   @scala.inline
   def bytesBuffer_=(x: Buffer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bytesBuffer")(x.asInstanceOf[js.Any])
   
-  @JSImport("base64id", "generateId")
-  @js.native
-  def generateId(): String = js.native
+  @scala.inline
+  def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
   
-  @JSImport("base64id", "getRandomBytes")
-  @js.native
-  def getRandomBytes(bytes: Double): Buffer = js.native
+  @scala.inline
+  def getRandomBytes(bytes: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   @JSImport("base64id", "isGeneratingBytes")
   @js.native

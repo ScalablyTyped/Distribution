@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.Basic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyBasic extends StObject {
   
-  var body: Basic = js.native
+  var body: Basic
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Basic = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Basic
 }
 object BodyBasic {
   
   @scala.inline
-  def apply(body: Basic, resourceType: typings.fhirKitClient.fhirKitClientStrings.Basic): BodyBasic = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: Basic): BodyBasic = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "Basic")
     __obj.asInstanceOf[BodyBasic]
   }
   

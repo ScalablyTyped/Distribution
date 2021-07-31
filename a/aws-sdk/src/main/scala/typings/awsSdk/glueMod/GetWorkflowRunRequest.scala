@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWorkflowRunRequest extends StObject {
   
   /**
     * Specifies whether to include the workflow graph in response or not.
     */
-  var IncludeGraph: js.UndefOr[NullableBoolean] = js.native
+  var IncludeGraph: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * Name of the workflow being run.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * The ID of the workflow run.
     */
-  var RunId: IdString = js.native
+  var RunId: IdString
 }
 object GetWorkflowRunRequest {
   

@@ -2,25 +2,23 @@ package typings.iitc.iitctypesMod.IITC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkData extends StObject {
   
-  var dGuid: String = js.native
+  var dGuid: String
   
-  var dLatE6: Double = js.native
+  var dLatE6: Double
   
-  var dLngE6: Double = js.native
+  var dLngE6: Double
   
-  var oGuid: String = js.native
+  var oGuid: String
   
-  var oLatE6: Double = js.native
+  var oLatE6: Double
   
-  var oLngE6: Double = js.native
+  var oLngE6: Double
   
-  var team: String = js.native
+  var team: String
 }
 object LinkData {
   

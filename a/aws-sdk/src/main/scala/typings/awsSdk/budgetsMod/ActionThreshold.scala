@@ -2,15 +2,13 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionThreshold extends StObject {
   
-  var ActionThresholdType: ThresholdType = js.native
+  var ActionThresholdType: ThresholdType
   
-  var ActionThresholdValue: NotificationThreshold = js.native
+  var ActionThresholdValue: NotificationThreshold
 }
 object ActionThreshold {
   

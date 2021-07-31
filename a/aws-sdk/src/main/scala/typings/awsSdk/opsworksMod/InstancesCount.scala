@@ -2,111 +2,109 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstancesCount extends StObject {
   
   /**
     * The number of instances in the Assigning state.
     */
-  var Assigning: js.UndefOr[Integer] = js.native
+  var Assigning: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with booting status.
     */
-  var Booting: js.UndefOr[Integer] = js.native
+  var Booting: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with connection_lost status.
     */
-  var ConnectionLost: js.UndefOr[Integer] = js.native
+  var ConnectionLost: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances in the Deregistering state.
     */
-  var Deregistering: js.UndefOr[Integer] = js.native
+  var Deregistering: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with online status.
     */
-  var Online: js.UndefOr[Integer] = js.native
+  var Online: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with pending status.
     */
-  var Pending: js.UndefOr[Integer] = js.native
+  var Pending: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with rebooting status.
     */
-  var Rebooting: js.UndefOr[Integer] = js.native
+  var Rebooting: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances in the Registered state.
     */
-  var Registered: js.UndefOr[Integer] = js.native
+  var Registered: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances in the Registering state.
     */
-  var Registering: js.UndefOr[Integer] = js.native
+  var Registering: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with requested status.
     */
-  var Requested: js.UndefOr[Integer] = js.native
+  var Requested: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with running_setup status.
     */
-  var RunningSetup: js.UndefOr[Integer] = js.native
+  var RunningSetup: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with setup_failed status.
     */
-  var SetupFailed: js.UndefOr[Integer] = js.native
+  var SetupFailed: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with shutting_down status.
     */
-  var ShuttingDown: js.UndefOr[Integer] = js.native
+  var ShuttingDown: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with start_failed status.
     */
-  var StartFailed: js.UndefOr[Integer] = js.native
+  var StartFailed: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with stop_failed status.
     */
-  var StopFailed: js.UndefOr[Integer] = js.native
+  var StopFailed: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with stopped status.
     */
-  var Stopped: js.UndefOr[Integer] = js.native
+  var Stopped: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with stopping status.
     */
-  var Stopping: js.UndefOr[Integer] = js.native
+  var Stopping: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with terminated status.
     */
-  var Terminated: js.UndefOr[Integer] = js.native
+  var Terminated: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances with terminating status.
     */
-  var Terminating: js.UndefOr[Integer] = js.native
+  var Terminating: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of instances in the Unassigning state.
     */
-  var Unassigning: js.UndefOr[Integer] = js.native
+  var Unassigning: js.UndefOr[Integer] = js.undefined
 }
 object InstancesCount {
   

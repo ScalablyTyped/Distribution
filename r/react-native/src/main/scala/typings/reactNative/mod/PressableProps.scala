@@ -15,18 +15,16 @@ import typings.reactNative.reactNativeStrings.radiobutton_unchecked
 import typings.reactNative.reactNativeStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent react-native.react-native.AccessibilityProps */
 /* Inlined parent react-native.react-native.Omit<react-native.react-native.ViewProps, 'style' | 'hitSlop'> */
-@js.native
 trait PressableProps extends StObject {
   
   /**
     * Provides an array of custom actions available for accessibility.
     */
-  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.native
+  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
   
   /**
     * In some cases, we also want to alert the end user of the type of selected component (i.e., that it is a “button”).
@@ -35,31 +33,31 @@ trait PressableProps extends StObject {
     * for any UI component. For instances, we support ‘button’, ‘radiobutton_checked’ and ‘radiobutton_unchecked’ and so on.
     * @platform android
     */
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
   /**
     * A Boolean value indicating whether the accessibility elements contained within this accessibility element
     * are hidden to the screen reader.
     * @platform ios
     */
-  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An accessibility hint helps users understand what will happen when they perform an action on the accessibility element when that result is not obvious from the accessibility label.
     */
-  var accessibilityHint: js.UndefOr[String] = js.native
+  var accessibilityHint: js.UndefOr[String] = js.undefined
   
   /**
     * https://reactnative.dev/docs/accessibility#accessibilityignoresinvertcolorsios
     * @platform ios
     */
-  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Overrides the text that's read by the screen reader when the user interacts with the element. By default, the
     * label is constructed by traversing all the children and accumulating all the Text nodes separated by space.
     */
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates to accessibility services whether the user should be notified when this view changes.
@@ -67,79 +65,79 @@ trait PressableProps extends StObject {
     * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
     * @platform android
     */
-  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
   
   /**
     * Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on Android the type of element that is focused on.
     */
-  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
   /**
     * Accessibility State tells a person using either VoiceOver on iOS or TalkBack on Android the state of the element currently focused on.
     */
-  var accessibilityState: js.UndefOr[AccessibilityState] = js.native
+  var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
   
   /**
     * Accessibility traits tell a person using VoiceOver what kind of element they have selected.
     * Is this element a label? A button? A header? These questions are answered by accessibilityTraits.
     * @platform ios
     */
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
   /**
     * Represents the current value of a component. It can be a textual description of a component's value, or for range-based components, such as sliders and progress bars,
     * it contains range information (minimum, current, and maximum).
     */
-  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.native
+  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
   /**
     * A Boolean value indicating whether VoiceOver should ignore the elements within views that are siblings of the receiver.
     * @platform ios
     */
-  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.native
+  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, indicates that the view is an accessibility element.
     * By default, all the touchable elements are accessible.
     */
-  var accessible: js.UndefOr[Boolean] = js.native
+  var accessible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, doesn't play system sound on touch.
     */
-  var android_disableSound: js.UndefOr[Null | Boolean] = js.native
+  var android_disableSound: js.UndefOr[Null | Boolean] = js.undefined
   
   /**
     * Enables the Android ripple effect and configures its color.
     */
-  var android_ripple: js.UndefOr[Null | PressableAndroidRippleConfig] = js.native
+  var android_ripple: js.UndefOr[Null | PressableAndroidRippleConfig] = js.undefined
   
   /**
     * Either children or a render prop that receives a boolean reflecting whether
     * the component is currently pressed.
     */
-  var children: js.UndefOr[ReactNode | (js.Function1[/* state */ PressableStateCallbackType, ReactNode])] = js.native
+  var children: js.UndefOr[ReactNode | (js.Function1[/* state */ PressableStateCallbackType, ReactNode])] = js.undefined
   
-  var collapsable: js.UndefOr[Boolean] = js.native
+  var collapsable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Duration (in milliseconds) from `onPressIn` before `onLongPress` is called.
     */
-  var delayLongPress: js.UndefOr[Null | Double] = js.native
+  var delayLongPress: js.UndefOr[Null | Double] = js.undefined
   
   /**
     * Whether the press behavior is disabled.
     */
-  var disabled: js.UndefOr[Null | Boolean] = js.native
+  var disabled: js.UndefOr[Null | Boolean] = js.undefined
   
-  var focusable: js.UndefOr[Boolean] = js.native
+  var focusable: js.UndefOr[Boolean] = js.undefined
   
-  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
+  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Additional distance outside of this view in which a press is detected.
     */
-  var hitSlop: js.UndefOr[Null | Insets | Double] = js.native
+  var hitSlop: js.UndefOr[Null | Insets | Double] = js.undefined
   
   /**
     * Controls how view is important for accessibility which is if it fires accessibility events
@@ -152,106 +150,106 @@ trait PressableProps extends StObject {
     *      'no' - The view is not important for accessibility.
     *      'no-hide-descendants' - The view is not important for accessibility, nor are any of its descendant views.
     */
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
   
-  var isTVSelectable: js.UndefOr[Boolean] = js.native
+  var isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
-  var nativeID: js.UndefOr[String] = js.native
+  var nativeID: js.UndefOr[String] = js.undefined
   
-  var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.native
+  var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When `accessible` is true, the system will try to invoke this function when the user performs an accessibility custom action.
     */
-  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.native
+  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
   
   /**
     * When accessibile is true, the system will invoke this function when the user performs the escape gesture (scrub with two fingers).
     * @platform ios
     */
-  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * When `accessible` is true, the system will try to invoke this function when the user performs accessibility tap gesture.
     * @platform ios
     */
-  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
   /**
     * Called when a long-tap gesture is detected.
     */
-  var onLongPress: js.UndefOr[Null | (js.Function1[/* event */ GestureResponderEvent, Unit])] = js.native
+  var onLongPress: js.UndefOr[Null | (js.Function1[/* event */ GestureResponderEvent, Unit])] = js.undefined
   
   /**
     * When accessible is true, the system will invoke this function when the user performs the magic tap gesture.
     * @platform ios
     */
-  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
   /**
     * Called when a single tap gesture is detected.
     */
-  var onPress: js.UndefOr[Null | (js.Function1[/* event */ GestureResponderEvent, Unit])] = js.native
+  var onPress: js.UndefOr[Null | (js.Function1[/* event */ GestureResponderEvent, Unit])] = js.undefined
   
   /**
     * Called when a touch is engaged before `onPress`.
     */
-  var onPressIn: js.UndefOr[Null | (js.Function1[/* event */ GestureResponderEvent, Unit])] = js.native
+  var onPressIn: js.UndefOr[Null | (js.Function1[/* event */ GestureResponderEvent, Unit])] = js.undefined
   
   /**
     * Called when a touch is released before `onPress`.
     */
-  var onPressOut: js.UndefOr[Null | (js.Function1[/* event */ GestureResponderEvent, Unit])] = js.native
+  var onPressOut: js.UndefOr[Null | (js.Function1[/* event */ GestureResponderEvent, Unit])] = js.undefined
   
-  var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  var onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.native
+  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
   
   /**
     * Additional distance outside of this view in which a touch is considered a
     * press before `onPressOut` is triggered.
     */
-  var pressRetentionOffset: js.UndefOr[Null | Insets | Double] = js.native
+  var pressRetentionOffset: js.UndefOr[Null | Insets | Double] = js.undefined
   
-  var removeClippedSubviews: js.UndefOr[Boolean] = js.native
+  var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
   
-  var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.native
+  var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
   
-  var shouldRasterizeIOS: js.UndefOr[Boolean] = js.native
+  var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Either view styles or a function that receives a boolean reflecting whether
@@ -259,24 +257,24 @@ trait PressableProps extends StObject {
     */
   var style: js.UndefOr[
     StyleProp[ViewStyle] | (js.Function1[/* state */ PressableStateCallbackType, StyleProp[ViewStyle]])
-  ] = js.native
+  ] = js.undefined
   
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
   
   /**
     * Used only for documentation or testing (e.g. snapshot testing).
     */
-  var testOnly_pressed: js.UndefOr[Null | Boolean] = js.native
+  var testOnly_pressed: js.UndefOr[Null | Boolean] = js.undefined
   
-  var tvParallaxMagnification: js.UndefOr[Double] = js.native
+  var tvParallaxMagnification: js.UndefOr[Double] = js.undefined
   
-  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.native
+  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
   
-  var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.native
+  var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined
   
-  var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.native
+  var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
   
-  var tvParallaxTiltAngle: js.UndefOr[Double] = js.native
+  var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
 }
 object PressableProps {
   

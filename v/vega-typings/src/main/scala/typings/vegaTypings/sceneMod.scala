@@ -6,10 +6,13 @@ import typings.vegaTypings.vegaTypingsStrings.ltr
 import typings.vegaTypings.vegaTypingsStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sceneMod {
+  
+  @JSImport("vega-typings/types/runtime/scene", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-typings/types/runtime/scene", "Bounds")
   @js.native
@@ -58,29 +61,26 @@ object sceneMod {
     var y2: Double = js.native
   }
   
-  @JSImport("vega-typings/types/runtime/scene", "sceneVisit")
-  @js.native
-  def sceneVisit(scene: SceneGroup, itemCallback: js.Function1[/* item */ Scene | SceneGroup | SceneItem, Unit]): Unit = js.native
-  @JSImport("vega-typings/types/runtime/scene", "sceneVisit")
-  @js.native
-  def sceneVisit(scene: Scene, itemCallback: js.Function1[/* item */ Scene | SceneGroup | SceneItem, Unit]): Unit = js.native
+  @scala.inline
+  def sceneVisit(scene: SceneGroup, itemCallback: js.Function1[/* item */ Scene | SceneGroup | SceneItem, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sceneVisit")(scene.asInstanceOf[js.Any], itemCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sceneVisit(scene: Scene, itemCallback: js.Function1[/* item */ Scene | SceneGroup | SceneItem, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sceneVisit")(scene.asInstanceOf[js.Any], itemCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Scene extends StObject {
     
-    var bounds: Bounds = js.native
+    var bounds: Bounds
     
-    var clip: Boolean = js.native
+    var clip: Boolean
     
-    var interactive: Boolean = js.native
+    var interactive: Boolean
     
-    var items: js.Array[SceneGroup] = js.native
+    var items: js.Array[SceneGroup]
     
-    var marktype: String = js.native
+    var marktype: String
     
-    var name: String = js.native
+    var name: String
     
-    var role: String = js.native
+    var role: String
   }
   object Scene {
     
@@ -127,10 +127,9 @@ object sceneMod {
     }
   }
   
-  @js.native
   trait SceneContext extends StObject {
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
   }
   object SceneContext {
     
@@ -151,29 +150,19 @@ object sceneMod {
     }
   }
   
-  /* Inlined vega-typings.vega-typings/types/runtime/scene.SceneItem & {  context :vega-typings.vega-typings/types/runtime/scene.SceneContext,   items :std.Array<vega-typings.vega-typings/types/runtime/scene.SceneItem>,   height :number,   width :number,   stroke :string | undefined} */
-  @js.native
-  trait SceneGroup extends StObject {
+  trait SceneGroup
+    extends StObject
+       with SceneItem {
     
-    var bounds: Bounds = js.native
+    var context: SceneContext
     
-    var context: SceneContext = js.native
+    var height: Double
     
-    var datum: js.UndefOr[js.Object] = js.native
+    var items: js.Array[SceneItem]
     
-    var height: Double = js.native
+    var stroke: js.UndefOr[String] = js.undefined
     
-    var items: js.Array[SceneItem] = js.native
-    
-    var mark: Role = js.native
-    
-    var stroke: js.UndefOr[String] = js.native
-    
-    var width: Double = js.native
-    
-    var x: Double = js.native
-    
-    var y: Double = js.native
+    var width: Double
   }
   object SceneGroup {
     
@@ -196,16 +185,7 @@ object sceneMod {
     implicit class SceneGroupMutableBuilder[Self <: SceneGroup] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setContext(value: SceneContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
       
       @scala.inline
       def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
@@ -217,9 +197,6 @@ object sceneMod {
       def setItemsVarargs(value: SceneItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
       @scala.inline
-      def setMark(value: Role): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -227,27 +204,20 @@ object sceneMod {
       
       @scala.inline
       def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait SceneItem extends StObject {
     
-    var bounds: Bounds = js.native
+    var bounds: Bounds
     
-    var datum: js.UndefOr[js.Object] = js.native
+    var datum: js.UndefOr[js.Object] = js.undefined
     
-    var mark: Role = js.native
+    var mark: Role
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object SceneItem {
     
@@ -280,10 +250,9 @@ object sceneMod {
     }
   }
   
-  @js.native
   trait SceneLegendItem extends StObject {
     
-    var datum: Index = js.native
+    var datum: Index
   }
   object SceneLegendItem {
     
@@ -301,29 +270,19 @@ object sceneMod {
     }
   }
   
-  /* Inlined vega-typings.vega-typings/types/runtime/scene.SceneItem & {  opacity :number,   stroke :string,   strokeWidth :number,   x2 :number,   y2 :number} */
-  @js.native
-  trait SceneLine extends StObject {
+  trait SceneLine
+    extends StObject
+       with SceneItem {
     
-    var bounds: Bounds = js.native
+    var opacity: Double
     
-    var datum: js.UndefOr[js.Object] = js.native
+    var stroke: String
     
-    var mark: Role = js.native
+    var strokeWidth: Double
     
-    var opacity: Double = js.native
+    var x2: Double
     
-    var stroke: String = js.native
-    
-    var strokeWidth: Double = js.native
-    
-    var x: Double = js.native
-    
-    var x2: Double = js.native
-    
-    var y: Double = js.native
-    
-    var y2: Double = js.native
+    var y2: Double
   }
   object SceneLine {
     
@@ -347,18 +306,6 @@ object sceneMod {
     implicit class SceneLineMutableBuilder[Self <: SceneLine] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
-      
-      @scala.inline
-      def setMark(value: Role): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -368,38 +315,22 @@ object sceneMod {
       def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined vega-typings.vega-typings/types/runtime/scene.SceneItem & {  fill :string,   height :number,   width :number} */
-  @js.native
-  trait SceneRect extends StObject {
+  trait SceneRect
+    extends StObject
+       with SceneItem {
     
-    var bounds: Bounds = js.native
+    var fill: String
     
-    var datum: js.UndefOr[js.Object] = js.native
+    var height: Double
     
-    var fill: String = js.native
-    
-    var height: Double = js.native
-    
-    var mark: Role = js.native
-    
-    var width: Double = js.native
-    
-    var x: Double = js.native
-    
-    var y: Double = js.native
+    var width: Double
   }
   object SceneRect {
     
@@ -413,55 +344,27 @@ object sceneMod {
     implicit class SceneRectMutableBuilder[Self <: SceneRect] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
-      
-      @scala.inline
       def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMark(value: Role): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined vega-typings.vega-typings/types/runtime/scene.SceneItem & {  fill :string,   shape :string,   size :number,   strokeWidth :number} */
-  @js.native
-  trait SceneSymbol extends StObject {
+  trait SceneSymbol
+    extends StObject
+       with SceneItem {
     
-    var bounds: Bounds = js.native
+    var fill: String
     
-    var datum: js.UndefOr[js.Object] = js.native
+    var shape: String
     
-    var fill: String = js.native
+    var size: Double
     
-    var mark: Role = js.native
-    
-    var shape: String = js.native
-    
-    var size: Double = js.native
-    
-    var strokeWidth: Double = js.native
-    
-    var x: Double = js.native
-    
-    var y: Double = js.native
+    var strokeWidth: Double
   }
   object SceneSymbol {
     
@@ -484,19 +387,7 @@ object sceneMod {
     implicit class SceneSymbolMutableBuilder[Self <: SceneSymbol] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
-      
-      @scala.inline
       def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMark(value: Role): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
@@ -506,64 +397,48 @@ object sceneMod {
       
       @scala.inline
       def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined vega-typings.vega-typings/types/runtime/scene.SceneItem & {  align :vega-typings.vega-typings/types/runtime/scene.SceneTextAlign | undefined,   angle :number | undefined,   baseline :vega-typings.vega-typings/types/runtime/scene.SceneTextBaseline,   dir :'rtl' | 'ltr' | undefined,   dx :number | undefined,   dy :number,   ellipsis :string | undefined,   fill :string,   font :string,   fontSize :number,   fontStyle :string | undefined,   fontWeight :number | string | undefined,   limit :number | undefined,   lineBreak :string | undefined,   lineHeight :number | undefined,   radius :number | undefined,   text :string,   theta :number | undefined} */
-  @js.native
-  trait SceneText extends StObject {
+  trait SceneText
+    extends StObject
+       with SceneItem {
     
-    var align: js.UndefOr[SceneTextAlign] = js.native
+    var align: js.UndefOr[SceneTextAlign] = js.undefined
     
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
-    var baseline: SceneTextBaseline = js.native
+    var baseline: SceneTextBaseline
     
-    var bounds: Bounds = js.native
+    var dir: js.UndefOr[rtl | ltr] = js.undefined
     
-    var datum: js.UndefOr[js.Object] = js.native
+    var dx: js.UndefOr[Double] = js.undefined
     
-    var dir: js.UndefOr[rtl | ltr] = js.native
+    var dy: Double
     
-    var dx: js.UndefOr[Double] = js.native
+    var ellipsis: js.UndefOr[String] = js.undefined
     
-    var dy: Double = js.native
+    var fill: String
     
-    var ellipsis: js.UndefOr[String] = js.native
+    var font: String
     
-    var fill: String = js.native
+    var fontSize: Double
     
-    var font: String = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
-    var fontSize: Double = js.native
+    var fontWeight: js.UndefOr[Double | String] = js.undefined
     
-    var fontStyle: js.UndefOr[String] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var fontWeight: js.UndefOr[Double | String] = js.native
+    var lineBreak: js.UndefOr[String] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var lineHeight: js.UndefOr[Double] = js.undefined
     
-    var lineBreak: js.UndefOr[String] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var lineHeight: js.UndefOr[Double] = js.native
+    var text: String
     
-    var mark: Role = js.native
-    
-    var radius: js.UndefOr[Double] = js.native
-    
-    var text: String = js.native
-    
-    var theta: js.UndefOr[Double] = js.native
-    
-    var x: Double = js.native
-    
-    var y: Double = js.native
+    var theta: js.UndefOr[Double] = js.undefined
   }
   object SceneText {
     
@@ -601,15 +476,6 @@ object sceneMod {
       
       @scala.inline
       def setBaseline(value: SceneTextBaseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
       
       @scala.inline
       def setDir(value: rtl | ltr): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
@@ -672,9 +538,6 @@ object sceneMod {
       def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
       @scala.inline
-      def setMark(value: Role): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -688,12 +551,6 @@ object sceneMod {
       
       @scala.inline
       def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
-      
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   

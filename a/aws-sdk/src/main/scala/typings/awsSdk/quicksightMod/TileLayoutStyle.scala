@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileLayoutStyle extends StObject {
   
   /**
     * The gutter settings that apply between tiles. 
     */
-  var Gutter: js.UndefOr[GutterStyle] = js.native
+  var Gutter: js.UndefOr[GutterStyle] = js.undefined
   
   /**
     * The margin settings that apply around the outside edge of sheets.
     */
-  var Margin: js.UndefOr[MarginStyle] = js.native
+  var Margin: js.UndefOr[MarginStyle] = js.undefined
 }
 object TileLayoutStyle {
   

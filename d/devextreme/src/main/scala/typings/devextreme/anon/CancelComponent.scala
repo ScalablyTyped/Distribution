@@ -3,21 +3,19 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.core.dxElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelComponent[T] extends StObject {
   
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var key: js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[js.Any] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object CancelComponent {
   
@@ -28,7 +26,7 @@ object CancelComponent {
   }
   
   @scala.inline
-  implicit class CancelComponentMutableBuilder[Self <: CancelComponent[_], T] (val x: Self with CancelComponent[T]) extends AnyVal {
+  implicit class CancelComponentMutableBuilder[Self <: CancelComponent[?], T] (val x: Self & CancelComponent[T]) extends AnyVal {
     
     @scala.inline
     def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])

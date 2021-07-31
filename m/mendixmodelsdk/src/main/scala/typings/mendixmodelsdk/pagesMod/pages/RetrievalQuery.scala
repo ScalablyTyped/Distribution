@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.securityMod.security.IUserRole
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -101,9 +100,8 @@ object RetrievalQuery {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.RetrievalQuery.create")
-  @js.native
-  def create(model: IModel): RetrievalQuery = js.native
+  @scala.inline
+  def create(model: IModel): RetrievalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[RetrievalQuery]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.RetrievalQuery.structureTypeName")

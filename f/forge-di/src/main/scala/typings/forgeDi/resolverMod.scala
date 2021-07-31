@@ -4,29 +4,44 @@ import typings.forgeDi.argumentsMod.Arguments
 import typings.forgeDi.dependencyMod.Dependency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolverMod {
   
   @JSImport("forge-di/dist/resolvers/Resolver", JSImport.Default)
   @js.native
-  abstract class default protected () extends Resolver {
+  abstract class default protected ()
+    extends StObject
+       with Resolver {
     def this(forge: typings.forgeDi.forgeMod.default, binding: typings.forgeDi.bindingMod.default) = this()
-  }
-  
-  @js.native
-  trait Resolver extends StObject {
     
+    /* CompleteClass */
     var binding: typings.forgeDi.bindingMod.default = js.native
     
+    /* CompleteClass */
     var dependencies: js.Array[Dependency] = js.native
     
+    /* CompleteClass */
     var forge: typings.forgeDi.forgeMod.default = js.native
     
-    def resolve(context: typings.forgeDi.contextMod.default, args: Arguments): js.Any = js.native
+    /* CompleteClass */
+    override def resolve(context: typings.forgeDi.contextMod.default, args: Arguments): js.Any = js.native
     
-    /* protected */ def resolveDependencies(context: typings.forgeDi.contextMod.default, dependencies: js.Array[Dependency], args: Arguments): js.Any = js.native
+    /* CompleteClass */
+    /* protected */ override def resolveDependencies(context: typings.forgeDi.contextMod.default, dependencies: js.Array[Dependency], args: Arguments): js.Any = js.native
+  }
+  
+  trait Resolver extends StObject {
+    
+    var binding: typings.forgeDi.bindingMod.default
+    
+    var dependencies: js.Array[Dependency]
+    
+    var forge: typings.forgeDi.forgeMod.default
+    
+    def resolve(context: typings.forgeDi.contextMod.default, args: Arguments): js.Any
+    
+    /* protected */ def resolveDependencies(context: typings.forgeDi.contextMod.default, dependencies: js.Array[Dependency], args: Arguments): js.Any
   }
   object Resolver {
     

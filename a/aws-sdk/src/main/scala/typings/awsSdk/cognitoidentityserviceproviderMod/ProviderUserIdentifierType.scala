@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProviderUserIdentifierType extends StObject {
   
   /**
     * The name of the provider attribute to link to, for example, NameID.
     */
-  var ProviderAttributeName: js.UndefOr[StringType] = js.native
+  var ProviderAttributeName: js.UndefOr[StringType] = js.undefined
   
   /**
     * The value of the provider attribute to link to, for example, xxxxx_account.
     */
-  var ProviderAttributeValue: js.UndefOr[StringType] = js.native
+  var ProviderAttributeValue: js.UndefOr[StringType] = js.undefined
   
   /**
     * The name of the provider, for example, Facebook, Google, or Login with Amazon.
     */
-  var ProviderName: js.UndefOr[ProviderNameType] = js.native
+  var ProviderName: js.UndefOr[ProviderNameType] = js.undefined
 }
 object ProviderUserIdentifierType {
   

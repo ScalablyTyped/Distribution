@@ -23,14 +23,15 @@ import typings.resizeObserverBrowser.ResizeObserver
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object openfinLayoutMod {
   
   @JSImport("openfin/_v2/api/platform/openfin-layout", JSImport.Default)
   @js.native
-  class default protected () extends LayoutManager {
+  class default protected ()
+    extends StObject
+       with LayoutManager {
     def this(fin: Fin) = this()
   }
   
@@ -132,8 +133,8 @@ object openfinLayoutMod {
     
     def setupWindowListeners(): js.Promise[Unit] = js.native
     
-    def showAllViews(): js.Promise[js.Array[_]] = js.native
-    def showAllViews(resize: Boolean): js.Promise[js.Array[_]] = js.native
+    def showAllViews(): js.Promise[js.Array[js.Any]] = js.native
+    def showAllViews(resize: Boolean): js.Promise[js.Array[js.Any]] = js.native
     
     var showBackgroundImages: Boolean = js.native
     

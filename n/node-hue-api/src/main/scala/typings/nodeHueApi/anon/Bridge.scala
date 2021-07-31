@@ -2,17 +2,15 @@ package typings.nodeHueApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bridge extends StObject {
   
-  var bridge: Boolean = js.native
+  var bridge: Boolean
   
-  var lights: js.Array[String] = js.native
+  var lights: js.Array[String]
   
-  var sensors: js.Array[String] = js.native
+  var sensors: js.Array[String]
 }
 object Bridge {
   

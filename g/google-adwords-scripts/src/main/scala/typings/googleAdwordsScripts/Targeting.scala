@@ -2,15 +2,15 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Targeting extends VideoCampaignTargeting {
+trait Targeting
+  extends StObject
+     with VideoCampaignTargeting {
   
-  def audiences(): AdWordsSelector[SearchCampaignAudience] = js.native
+  def audiences(): AdWordsSelector[SearchCampaignAudience]
   
-  def excludedAudiences(): AdWordsSelector[SearchCampaignExcludedAudience] = js.native
+  def excludedAudiences(): AdWordsSelector[SearchCampaignExcludedAudience]
 }
 object Targeting {
   

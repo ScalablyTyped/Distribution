@@ -3,15 +3,13 @@ package typings.reactBigCalendar.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewStatic extends StObject {
   
-  def navigate(date: Date, action: NavigateAction, props: js.Any): Date = js.native
+  def navigate(date: Date, action: NavigateAction, props: js.Any): Date
   
-  def title(date: Date, options: TitleOptions): String = js.native
+  def title(date: Date, options: TitleOptions): String
 }
 object ViewStatic {
   

@@ -2,23 +2,23 @@ package typings.hasura.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextColumnBoolExp extends ColumnBoolExp[String] {
+trait TextColumnBoolExp
+  extends StObject
+     with ColumnBoolExp[String] {
   
-  var _ilike: js.UndefOr[String] = js.native
+  var _ilike: js.UndefOr[String] = js.undefined
   
-  var _like: js.UndefOr[String] = js.native
+  var _like: js.UndefOr[String] = js.undefined
   
-  var _nilike: js.UndefOr[String] = js.native
+  var _nilike: js.UndefOr[String] = js.undefined
   
-  var _nlike: js.UndefOr[String] = js.native
+  var _nlike: js.UndefOr[String] = js.undefined
   
-  var _nsimilar: js.UndefOr[String] = js.native
+  var _nsimilar: js.UndefOr[String] = js.undefined
   
-  var _similar: js.UndefOr[String] = js.native
+  var _similar: js.UndefOr[String] = js.undefined
 }
 object TextColumnBoolExp {
   

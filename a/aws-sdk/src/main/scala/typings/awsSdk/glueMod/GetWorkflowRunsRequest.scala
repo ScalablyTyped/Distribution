@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWorkflowRunsRequest extends StObject {
   
   /**
     * Specifies whether to include the workflow graph in response or not.
     */
-  var IncludeGraph: js.UndefOr[NullableBoolean] = js.native
+  var IncludeGraph: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The maximum number of workflow runs to be included in the response.
     */
-  var MaxResults: js.UndefOr[PageSize] = js.native
+  var MaxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     * Name of the workflow whose metadata of runs should be returned.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * The maximum size of the response.
     */
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
 }
 object GetWorkflowRunsRequest {
   

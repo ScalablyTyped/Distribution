@@ -16,7 +16,6 @@ import typings.react.mod.ImgHTMLAttributes
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageMod {
@@ -24,27 +23,26 @@ object imageMod {
   @JSImport("grommet/components/Image", "Image")
   @js.native
   val Image: FC[
-    ImageProps with (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement])
+    ImageProps & (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement])
   ] = js.native
   
-  @js.native
   trait ImageProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var fallback: js.UndefOr[String] = js.native
+    var fallback: js.UndefOr[String] = js.undefined
     
-    var fill: js.UndefOr[FillType] = js.native
+    var fill: js.UndefOr[FillType] = js.undefined
     
-    var fit: js.UndefOr[cover | contain] = js.native
+    var fit: js.UndefOr[cover | contain] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var opacity: js.UndefOr[weak | medium | strong | String | Boolean] = js.native
+    var opacity: js.UndefOr[weak | medium | strong | String | Boolean] = js.undefined
   }
   object ImageProps {
     

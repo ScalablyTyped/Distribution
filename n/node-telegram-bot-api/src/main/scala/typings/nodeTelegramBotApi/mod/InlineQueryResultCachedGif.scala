@@ -3,30 +3,29 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.gif
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultCachedGif
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var gif_file_id: String = js.native
+  var gif_file_id: String
   
-  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: gif = js.native
+  var `type`: gif
 }
 object InlineQueryResultCachedGif {
   
   @scala.inline
-  def apply(gif_file_id: String, id: String, `type`: gif): InlineQueryResultCachedGif = {
+  def apply(gif_file_id: String, id: String): InlineQueryResultCachedGif = {
     val __obj = js.Dynamic.literal(gif_file_id = gif_file_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("gif")
     __obj.asInstanceOf[InlineQueryResultCachedGif]
   }
   

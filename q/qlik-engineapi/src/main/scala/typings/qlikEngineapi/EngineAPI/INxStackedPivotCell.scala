@@ -2,74 +2,72 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxStackedPivotCell...
   */
-@js.native
 trait INxStackedPivotCell extends StObject {
   
   /**
     * Attribute dimensions values.
     */
-  var qAttrDims: INxAttributeDimValues = js.native
+  var qAttrDims: INxAttributeDimValues
   
   /**
     * Attribute expressions values.
     */
-  var qAttrExps: INxAttributeExpressionValues = js.native
+  var qAttrExps: INxAttributeExpressionValues
   
   /**
     * If set to true, it means that the cell can be collapsed.
     * This parameter is not returned if it is set to false.
     */
-  var qCanCollapse: Boolean = js.native
+  var qCanCollapse: Boolean
   
   /**
     * If set to true, it means that the cell can be expanded.
     * This parameter is not returned if it is set to false.
     */
-  var qCanExpand: Boolean = js.native
+  var qCanExpand: Boolean
   
   /**
     * Number of elements that are part of the next tail.
     */
-  var qDown: Double = js.native
+  var qDown: Double
   
   /**
     * Rank number of the value.
     * If set to -1, it means that the value is not an element number.
     */
-  var qElemNo: Double = js.native
+  var qElemNo: Double
   
   /**
     * Total of the positive values in the current group of cells.
     */
-  var qMaxPos: Double = js.native
+  var qMaxPos: Double
   
   /**
     * Total of the negative values in the current group of cells.
     */
-  var qMinNeg: Double = js.native
+  var qMinNeg: Double
   
   /**
     * Row index in the data matrix.
     * The indexing starts from 0.
     */
-  var qRow: Double = js.native
+  var qRow: Double
   
   /**
     * Information about sub nodes (or sub cells).
     * The array is empty [ ] when there are no sub nodes.
     */
-  var qSubNodes: js.Array[INxStackedPivotCell] = js.native
+  var qSubNodes: js.Array[INxStackedPivotCell]
   
   /**
     * Some text.
     */
-  var qText: String = js.native
+  var qText: String
   
   /**
     * Type of the cell.
@@ -82,18 +80,18 @@ trait INxStackedPivotCell extends StObject {
     *      R for NX_DIM_CELL_ROOT. Applies to root node.
     *      U for NX_DIM_CELL_NULL. Applies to Null values in the data matrix.
     */
-  var qType: NxCellType = js.native
+  var qType: NxCellType
   
   /**
     * Number of elements that are part of the previous tail.
     */
-  var qUp: Double = js.native
+  var qUp: Double
   
   /**
     * Value of the cell.
     * Is set to NaN, if the value is not a number.
     */
-  var qValue: Double = js.native
+  var qValue: Double
 }
 object INxStackedPivotCell {
   

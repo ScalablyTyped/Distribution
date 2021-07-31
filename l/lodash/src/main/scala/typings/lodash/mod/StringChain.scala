@@ -2,12 +2,12 @@ package typings.lodash.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StringChain
-  extends LoDashExplicitWrapper[java.lang.String]
+  extends StObject
+     with LoDashExplicitWrapper[java.lang.String]
      with _ExpChain[js.Any] {
   
   /**
@@ -25,24 +25,24 @@ trait StringChain
     * @see _.each
     */
   def each(): StringChain = js.native
-  def each(iteratee: StringIterator[_]): StringChain = js.native
+  def each(iteratee: StringIterator[js.Any]): StringChain = js.native
   
   /**
     * @see _.eachRight
     */
   def eachRight(): StringChain = js.native
-  def eachRight(iteratee: StringIterator[_]): StringChain = js.native
+  def eachRight(iteratee: StringIterator[js.Any]): StringChain = js.native
   /**
     * @see _.eachRight
     */
   @JSName("eachRight")
-  var eachRight_Original: js.Function1[/* iteratee */ js.UndefOr[StringIterator[_]], StringChain] = js.native
+  var eachRight_Original: js.Function1[/* iteratee */ js.UndefOr[StringIterator[js.Any]], StringChain] = js.native
   
   /**
     * @see _.each
     */
   @JSName("each")
-  var each_Original: js.Function1[/* iteratee */ js.UndefOr[StringIterator[_]], StringChain] = js.native
+  var each_Original: js.Function1[/* iteratee */ js.UndefOr[StringIterator[js.Any]], StringChain] = js.native
   
   /**
     * @see _.filter
@@ -93,13 +93,13 @@ trait StringChain
     * @see _.forEach
     */
   def forEach(): StringChain = js.native
-  def forEach(iteratee: StringIterator[_]): StringChain = js.native
+  def forEach(iteratee: StringIterator[js.Any]): StringChain = js.native
   
   /**
     * @see _.forEachRight
     */
   def forEachRight(): StringChain = js.native
-  def forEachRight(iteratee: StringIterator[_]): StringChain = js.native
+  def forEachRight(iteratee: StringIterator[js.Any]): StringChain = js.native
   
   def get(path: js.Array[Double]): StringChain = js.native
   def get(path: js.Array[Double], defaultValue: java.lang.String): StringChain = js.native
@@ -138,7 +138,7 @@ trait StringChain
   /**
     * @see _.iteratee
     */
-  def iteratee(): FunctionChain[js.Function1[/* o */ js.Object, _]] = js.native
+  def iteratee(): FunctionChain[js.Function1[/* o */ js.Object, js.Any]] = js.native
   
   /**
     * @see _.join

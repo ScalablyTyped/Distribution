@@ -9,7 +9,6 @@ import typings.lokijs.anon.RemoveWhereFilters
 import typings.lokijs.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,7 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @implements LokiEventEmitter
   */
 @js.native
-trait DynamicView[E /* <: js.Object */] extends LokiEventEmitter {
+trait DynamicView[E /* <: js.Object */]
+  extends StObject
+     with LokiEventEmitter {
   
   /**
     * Implementation detail.
@@ -96,7 +97,7 @@ trait DynamicView[E /* <: js.Object */] extends LokiEventEmitter {
     * @param comparefun - a javascript compare function used for sorting
     * @returns this DynamicView object, for further chain ops.
     */
-  def applySort(comparefun: js.Function2[/* a */ E with LokiObj, /* b */ E with LokiObj, Double]): this.type = js.native
+  def applySort(comparefun: js.Function2[/* a */ E & LokiObj, /* b */ E & LokiObj, Double]): this.type = js.native
   
   /**
     * applySortCriteria() - Allows sorting a resultset based on multiple columns.
@@ -133,12 +134,12 @@ trait DynamicView[E /* <: js.Object */] extends LokiEventEmitter {
     * @param [parameters] - optional parameters (if optional transform requires them)
     * @returns A copy of the internal resultset for branched queries.
     */
-  def branchResultset(): Resultset[_] = js.native
-  def branchResultset(transform: js.UndefOr[scala.Nothing], parameters: js.Object): Resultset[_] = js.native
-  def branchResultset(transform: String): Resultset[_] = js.native
-  def branchResultset(transform: String, parameters: js.Object): Resultset[_] = js.native
-  def branchResultset(transform: js.Array[String | Transform]): Resultset[_] = js.native
-  def branchResultset(transform: js.Array[String | Transform], parameters: js.Object): Resultset[_] = js.native
+  def branchResultset(): Resultset[js.Any] = js.native
+  def branchResultset(transform: String): Resultset[js.Any] = js.native
+  def branchResultset(transform: String, parameters: js.Object): Resultset[js.Any] = js.native
+  def branchResultset(transform: js.Array[String | Transform]): Resultset[js.Any] = js.native
+  def branchResultset(transform: js.Array[String | Transform], parameters: js.Object): Resultset[js.Any] = js.native
+  def branchResultset(transform: Unit, parameters: js.Object): Resultset[js.Any] = js.native
   
   var cachedresultset: Resultset[E] | Null = js.native
   
@@ -169,8 +170,8 @@ trait DynamicView[E /* <: js.Object */] extends LokiEventEmitter {
     * @param [options.removeMeta] - Will force clones and strip $loki and meta properties from documents
     * @returns An array of documents representing the current DynamicView contents.
     */
-  def data(): js.Array[E with LokiObj] = js.native
-  def data(options: PartialGetDataOptions): js.Array[E with LokiObj] = js.native
+  def data(): js.Array[E & LokiObj] = js.native
+  def data(options: PartialGetDataOptions): js.Array[E & LokiObj] = js.native
   
   def evaluateDocument(objIndex: String): Unit = js.native
   def evaluateDocument(objIndex: String, isNew: Boolean): Unit = js.native
@@ -267,7 +268,7 @@ trait DynamicView[E /* <: js.Object */] extends LokiEventEmitter {
   def removeFilters(): Unit = js.native
   def removeFilters(options: QueueSortPhase): Unit = js.native
   
-  var resultdata: js.Array[E with LokiObj] = js.native
+  var resultdata: js.Array[E & LokiObj] = js.native
   
   var resultsdirty: Boolean = js.native
   
@@ -284,7 +285,7 @@ trait DynamicView[E /* <: js.Object */] extends LokiEventEmitter {
   
   var sortDirty: Boolean = js.native
   
-  var sortFunction: (js.Function2[/* a */ E with LokiObj, /* b */ E with LokiObj, Double]) | Null = js.native
+  var sortFunction: (js.Function2[/* a */ E & LokiObj, /* b */ E & LokiObj, Double]) | Null = js.native
   
   /**
     * startTransaction() - marks the beginning of a transaction.

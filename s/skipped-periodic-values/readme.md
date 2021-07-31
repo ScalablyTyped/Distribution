@@ -12,7 +12,7 @@ Given a point and a distance, determine how many periodic values were skipped.
 | Keywords           | mathematics, math, period, periodic, contained, solution, function |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 996368 |
+| # downloads        | 1323607 |
 | # stars            | 0 |
 
 ## Links

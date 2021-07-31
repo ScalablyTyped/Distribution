@@ -2,23 +2,21 @@ package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BandwidthStatistics extends StObject {
   
-  var inboundBandwidthPeaked: Boolean = js.native
+  var inboundBandwidthPeaked: Boolean
   
-  var inboundBitsPerSecond: Double = js.native
+  var inboundBitsPerSecond: Double
   
-  var inboundBitsPerSecondInstability: Double = js.native
+  var inboundBitsPerSecondInstability: Double
   
-  var outboundBandwidthPeaked: Boolean = js.native
+  var outboundBandwidthPeaked: Boolean
   
-  var outboundBitsPerSecond: Double = js.native
+  var outboundBitsPerSecond: Double
   
-  var outboundBitsPerSecondInstability: Double = js.native
+  var outboundBitsPerSecondInstability: Double
 }
 object BandwidthStatistics {
   

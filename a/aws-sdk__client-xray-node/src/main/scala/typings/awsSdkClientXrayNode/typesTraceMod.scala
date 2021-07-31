@@ -5,28 +5,26 @@ import typings.awsSdkClientXrayNode.typesSegmentMod.UnmarshalledSegment
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTraceMod {
   
-  @js.native
   trait Trace extends StObject {
     
     /**
       * <p>The length of time in seconds between the start time of the root segment and the end time of the last segment that completed.</p>
       */
-    var Duration: js.UndefOr[Double] = js.native
+    var Duration: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The unique identifier for the request that generated the trace's segments and subsegments.</p>
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Segment documents for the segments and subsegments that comprise the trace.</p>
       */
-    var Segments: js.UndefOr[js.Array[Segment] | Iterable[Segment]] = js.native
+    var Segments: js.UndefOr[js.Array[Segment] | Iterable[Segment]] = js.undefined
   }
   object Trace {
     
@@ -62,14 +60,15 @@ object typesTraceMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledTrace extends Trace {
+  trait UnmarshalledTrace
+    extends StObject
+       with Trace {
     
     /**
       * <p>Segment documents for the segments and subsegments that comprise the trace.</p>
       */
     @JSName("Segments")
-    var Segments_UnmarshalledTrace: js.UndefOr[js.Array[UnmarshalledSegment]] = js.native
+    var Segments_UnmarshalledTrace: js.UndefOr[js.Array[UnmarshalledSegment]] = js.undefined
   }
   object UnmarshalledTrace {
     

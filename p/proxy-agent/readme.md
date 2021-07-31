@@ -10,15 +10,12 @@ Maps proxy protocols to `http.Agent` implementations
 | ------------------ | :-------------: |
 | Full name          | proxy-agent |
 | Keywords           | http, https, socks, agent, mapping, proxy, cache |
-| # releases         | 4 |
-| # dependents       | 202 |
-| # downloads        | 90924446 |
+| # releases         | 5 |
+| # dependents       | 212 |
+| # downloads        | 100896676 |
 | # stars            | 9 |
 
 ## Links
-- [Homepage](https://github.com/TooTallNate/node-proxy-agent)
-- [Bugs](https://github.com/TooTallNate/node-proxy-agent/issues)
-- [Repository](https://github.com/TooTallNate/node-proxy-agent)
 - [Npm](https://www.npmjs.com/package/proxy-agent)
     
 

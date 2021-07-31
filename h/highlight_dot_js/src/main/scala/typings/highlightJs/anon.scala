@@ -7,15 +7,13 @@ import typings.std.RegExp
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait LanguageName extends StObject {
     
-    var languageName: String = js.native
+    var languageName: String
   }
   object LanguageName {
     
@@ -34,26 +32,25 @@ object anon {
   }
   
   /* Inlined std.Omit<highlight.js.HighlightResult, 'second_best'> */
-  @js.native
   trait OmitHighlightResultsecond extends StObject {
     
-    var emitter: Emitter = js.native
+    var emitter: Emitter
     
-    var errorRaised: js.UndefOr[Error] = js.native
+    var errorRaised: js.UndefOr[Error] = js.undefined
     
-    var illegal: Boolean = js.native
+    var illegal: Boolean
     
-    var illegalBy: js.UndefOr[illegalData] = js.native
+    var illegalBy: js.UndefOr[illegalData] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var relevance: Double = js.native
+    var relevance: Double
     
-    var sofar: js.UndefOr[String] = js.native
+    var sofar: js.UndefOr[String] = js.undefined
     
-    var top: js.UndefOr[Language | CompiledMode] = js.native
+    var top: js.UndefOr[Language | CompiledMode] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object OmitHighlightResultsecond {
     
@@ -111,22 +108,21 @@ object anon {
   }
   
   /* Inlined std.Partial<highlight.js.HLJSOptions> */
-  @js.native
   trait PartialHLJSOptions extends StObject {
     
-    var __emitter: js.UndefOr[EmitterConstructor] = js.native
+    var __emitter: js.UndefOr[EmitterConstructor] = js.undefined
     
-    var classPrefix: js.UndefOr[String] = js.native
+    var classPrefix: js.UndefOr[String] = js.undefined
     
-    var languageDetectRe: js.UndefOr[RegExp] = js.native
+    var languageDetectRe: js.UndefOr[RegExp] = js.undefined
     
-    var languages: js.UndefOr[js.Array[String]] = js.native
+    var languages: js.UndefOr[js.Array[String]] = js.undefined
     
-    var noHighlightRe: js.UndefOr[RegExp] = js.native
+    var noHighlightRe: js.UndefOr[RegExp] = js.undefined
     
-    var tabReplace: js.UndefOr[String] = js.native
+    var tabReplace: js.UndefOr[String] = js.undefined
     
-    var useBR: js.UndefOr[Boolean] = js.native
+    var useBR: js.UndefOr[Boolean] = js.undefined
   }
   object PartialHLJSOptions {
     
@@ -187,66 +183,65 @@ object anon {
   }
   
   /* Inlined std.Partial<highlight.js.Mode> & {  binary :string | std.RegExp | undefined} */
-  @js.native
   trait PartialModebinarystringRe extends StObject {
     
-    var __beforeBegin: js.UndefOr[js.Function] = js.native
+    var __beforeBegin: js.UndefOr[js.Function] = js.undefined
     
-    var begin: js.UndefOr[RegExp | String] = js.native
+    var begin: js.UndefOr[RegExp | String] = js.undefined
     
-    var beginKeywords: js.UndefOr[String] = js.native
+    var beginKeywords: js.UndefOr[String] = js.undefined
     
-    var binary: js.UndefOr[String | RegExp] = js.native
+    var binary: js.UndefOr[String | RegExp] = js.undefined
     
-    var cached_variants: js.UndefOr[js.Array[Mode]] = js.native
+    var cached_variants: js.UndefOr[js.Array[Mode]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var compiled: js.UndefOr[Boolean] = js.native
+    var compiled: js.UndefOr[Boolean] = js.undefined
     
-    var contains: js.UndefOr[js.Array[self | Mode]] = js.native
+    var contains: js.UndefOr[js.Array[self | Mode]] = js.undefined
     
-    var end: js.UndefOr[RegExp | String] = js.native
+    var end: js.UndefOr[RegExp | String] = js.undefined
     
-    var endSameAsBegin: js.UndefOr[Boolean] = js.native
+    var endSameAsBegin: js.UndefOr[Boolean] = js.undefined
     
-    var endsParent: js.UndefOr[Boolean] = js.native
+    var endsParent: js.UndefOr[Boolean] = js.undefined
     
-    var endsWithParent: js.UndefOr[Boolean] = js.native
+    var endsWithParent: js.UndefOr[Boolean] = js.undefined
     
-    var excludeBegin: js.UndefOr[Boolean] = js.native
+    var excludeBegin: js.UndefOr[Boolean] = js.undefined
     
-    var excludeEnd: js.UndefOr[Boolean] = js.native
+    var excludeEnd: js.UndefOr[Boolean] = js.undefined
     
-    var illegal: js.UndefOr[String | RegExp] = js.native
+    var illegal: js.UndefOr[String | RegExp] = js.undefined
     
-    var keywords: js.UndefOr[(Record[String, _]) | String] = js.native
+    var keywords: js.UndefOr[(Record[String, js.Any]) | String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var lexemes: js.UndefOr[String | RegExp] = js.native
+    var lexemes: js.UndefOr[String | RegExp] = js.undefined
     
     @JSName("on:begin")
-    var onColonbegin: js.UndefOr[ModeCallback] = js.native
+    var onColonbegin: js.UndefOr[ModeCallback] = js.undefined
     
     @JSName("on:end")
-    var onColonend: js.UndefOr[js.Function] = js.native
+    var onColonend: js.UndefOr[js.Function] = js.undefined
     
-    var parent: js.UndefOr[Mode] = js.native
+    var parent: js.UndefOr[Mode] = js.undefined
     
-    var relevance: js.UndefOr[Double] = js.native
+    var relevance: js.UndefOr[Double] = js.undefined
     
-    var returnBegin: js.UndefOr[Boolean] = js.native
+    var returnBegin: js.UndefOr[Boolean] = js.undefined
     
-    var returnEnd: js.UndefOr[Boolean] = js.native
+    var returnEnd: js.UndefOr[Boolean] = js.undefined
     
-    var skip: js.UndefOr[Boolean] = js.native
+    var skip: js.UndefOr[Boolean] = js.undefined
     
-    var starts: js.UndefOr[Mode] = js.native
+    var starts: js.UndefOr[Mode] = js.undefined
     
-    var subLanguage: js.UndefOr[String | js.Array[String]] = js.native
+    var subLanguage: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var variants: js.UndefOr[js.Array[Mode]] = js.native
+    var variants: js.UndefOr[js.Array[Mode]] = js.undefined
   }
   object PartialModebinarystringRe {
     
@@ -350,7 +345,7 @@ object anon {
       def setIllegalUndefined: Self = StObject.set(x, "illegal", js.undefined)
       
       @scala.inline
-      def setKeywords(value: (Record[String, _]) | String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+      def setKeywords(value: (Record[String, js.Any]) | String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)

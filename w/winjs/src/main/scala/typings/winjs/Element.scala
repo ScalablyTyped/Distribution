@@ -2,13 +2,11 @@ package typings.winjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Element extends StObject {
   
-  var winControl: js.Any = js.native
+  var winControl: js.Any
 }
 object Element {
   

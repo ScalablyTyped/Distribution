@@ -2,21 +2,19 @@ package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaImportFile extends StObject {
   
   /**
     * The contents of the file.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the file.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaImportFile {
   

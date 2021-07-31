@@ -2,19 +2,17 @@ package typings.hapiHapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseObjectHeaderOptions extends StObject {
   
-  var append: js.UndefOr[Boolean] = js.native
+  var append: js.UndefOr[Boolean] = js.undefined
   
-  var duplicate: js.UndefOr[Boolean] = js.native
+  var duplicate: js.UndefOr[Boolean] = js.undefined
   
-  var `override`: js.UndefOr[Boolean] = js.native
+  var `override`: js.UndefOr[Boolean] = js.undefined
   
-  var separator: js.UndefOr[String] = js.native
+  var separator: js.UndefOr[String] = js.undefined
 }
 object ResponseObjectHeaderOptions {
   

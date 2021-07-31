@@ -12,7 +12,7 @@ A simple and pragmatic library for testing Node.js console output.
 | Keywords           | console, stdout, stderr, test, spy, test double |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 297775 |
+| # downloads        | 358720 |
 | # stars            | 1 |
 
 ## Links

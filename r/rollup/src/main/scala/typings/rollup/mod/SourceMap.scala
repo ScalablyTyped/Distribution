@@ -2,25 +2,23 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceMap extends StObject {
   
-  var file: String = js.native
+  var file: String
   
-  var mappings: String = js.native
+  var mappings: String
   
-  var names: js.Array[String] = js.native
+  var names: js.Array[String]
   
-  var sources: js.Array[String] = js.native
+  var sources: js.Array[String]
   
-  var sourcesContent: js.Array[String] = js.native
+  var sourcesContent: js.Array[String]
   
-  def toUrl(): String = js.native
+  def toUrl(): String
   
-  var version: Double = js.native
+  var version: Double
 }
 object SourceMap {
   

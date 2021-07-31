@@ -2,15 +2,13 @@ package typings.cassanknex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LimitableQueryBuilder extends StObject {
   
-  def limit(limit: Double): this.type = js.native
+  def limit(limit: Double): this.type
   
-  def limitPerPartition(limit: Double): this.type = js.native
+  def limitPerPartition(limit: Double): this.type
 }
 object LimitableQueryBuilder {
   

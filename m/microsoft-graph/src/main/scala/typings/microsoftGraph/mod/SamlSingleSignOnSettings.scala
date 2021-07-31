@@ -2,14 +2,12 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SamlSingleSignOnSettings extends StObject {
   
   // The relative URI the service provider would redirect to after completion of the single sign-on flow.
-  var relayState: js.UndefOr[NullableOption[String]] = js.native
+  var relayState: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SamlSingleSignOnSettings {
   

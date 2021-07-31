@@ -10,7 +10,6 @@ import typings.agGrid.rowNodeMod.RowNode
 import typings.agGrid.utilsMod.NumberSequence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowNodeCacheMod {
@@ -100,30 +99,29 @@ object rowNodeCacheMod {
   
   type CacheUpdatedEvent = AgEvent
   
-  @js.native
   trait RowNodeCacheParams extends StObject {
     
-    var blockSize: Double = js.native
+    var blockSize: Double
     
-    var dynamicRowHeight: Boolean = js.native
+    var dynamicRowHeight: Boolean
     
-    var filterModel: js.Any = js.native
+    var filterModel: js.Any
     
-    var initialRowCount: Double = js.native
+    var initialRowCount: Double
     
-    var lastAccessedSequence: NumberSequence = js.native
+    var lastAccessedSequence: NumberSequence
     
-    var maxBlocksInCache: Double = js.native
+    var maxBlocksInCache: Double
     
-    var maxConcurrentRequests: Double = js.native
+    var maxConcurrentRequests: Double
     
-    var overflowSize: Double = js.native
+    var overflowSize: Double
     
-    var rowHeight: Double = js.native
+    var rowHeight: Double
     
-    var rowNodeBlockLoader: RowNodeBlockLoader = js.native
+    var rowNodeBlockLoader: RowNodeBlockLoader
     
-    var sortModel: js.Any = js.native
+    var sortModel: js.Any
   }
   object RowNodeCacheParams {
     

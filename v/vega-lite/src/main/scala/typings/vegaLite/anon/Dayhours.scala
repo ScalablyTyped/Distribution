@@ -2,105 +2,73 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dayhours extends StObject {
   
-  val dayhours: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val dayhours: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val dayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val dayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val dayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val dayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val hoursminutes: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val hoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val hoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val hoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val minutesseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val minutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val monthdate: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val monthdate: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val monthdatehours: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val monthdatehours: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val monthdatehoursminutes: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val monthdatehoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val monthdatehoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val monthdatehoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val quartermonth: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val quartermonth: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val secondsmilliseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val secondsmilliseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val weekday: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val weekday: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val weekdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val weekdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val weekdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val weekdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val weeksdayhours: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val weeksdayhours: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val yeardayofyear: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val yeardayofyear: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val yearmonth: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val yearmonth: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val yearmonthdate: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val yearmonthdate: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val yearmonthdatehours: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val yearmonthdatehours: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val yearmonthdatehoursminutes: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val yearmonthdatehoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val yearmonthdatehoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val yearmonthdatehoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val yearquarter: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val yearquarter: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val yearquartermonth: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val yearquartermonth: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val yearweek: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val yearweek: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val yearweekday: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val yearweekday: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val yearweekdayhours: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val yearweekdayhours: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val yearweekdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val yearweekdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val yearweekdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val yearweekdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
 }
 object Dayhours {
   
   @scala.inline
-  def apply(
-    dayhours: typings.vegaLite.vegaLiteNumbers.`1`,
-    dayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`,
-    dayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    hoursminutes: typings.vegaLite.vegaLiteNumbers.`1`,
-    hoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    minutesseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    monthdate: typings.vegaLite.vegaLiteNumbers.`1`,
-    monthdatehours: typings.vegaLite.vegaLiteNumbers.`1`,
-    monthdatehoursminutes: typings.vegaLite.vegaLiteNumbers.`1`,
-    monthdatehoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    quartermonth: typings.vegaLite.vegaLiteNumbers.`1`,
-    secondsmilliseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    weekday: typings.vegaLite.vegaLiteNumbers.`1`,
-    weekdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`,
-    weekdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    weeksdayhours: typings.vegaLite.vegaLiteNumbers.`1`,
-    yeardayofyear: typings.vegaLite.vegaLiteNumbers.`1`,
-    yearmonth: typings.vegaLite.vegaLiteNumbers.`1`,
-    yearmonthdate: typings.vegaLite.vegaLiteNumbers.`1`,
-    yearmonthdatehours: typings.vegaLite.vegaLiteNumbers.`1`,
-    yearmonthdatehoursminutes: typings.vegaLite.vegaLiteNumbers.`1`,
-    yearmonthdatehoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    yearquarter: typings.vegaLite.vegaLiteNumbers.`1`,
-    yearquartermonth: typings.vegaLite.vegaLiteNumbers.`1`,
-    yearweek: typings.vegaLite.vegaLiteNumbers.`1`,
-    yearweekday: typings.vegaLite.vegaLiteNumbers.`1`,
-    yearweekdayhours: typings.vegaLite.vegaLiteNumbers.`1`,
-    yearweekdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`,
-    yearweekdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
-  ): Dayhours = {
-    val __obj = js.Dynamic.literal(dayhours = dayhours.asInstanceOf[js.Any], dayhoursminutes = dayhoursminutes.asInstanceOf[js.Any], dayhoursminutesseconds = dayhoursminutesseconds.asInstanceOf[js.Any], hoursminutes = hoursminutes.asInstanceOf[js.Any], hoursminutesseconds = hoursminutesseconds.asInstanceOf[js.Any], minutesseconds = minutesseconds.asInstanceOf[js.Any], monthdate = monthdate.asInstanceOf[js.Any], monthdatehours = monthdatehours.asInstanceOf[js.Any], monthdatehoursminutes = monthdatehoursminutes.asInstanceOf[js.Any], monthdatehoursminutesseconds = monthdatehoursminutesseconds.asInstanceOf[js.Any], quartermonth = quartermonth.asInstanceOf[js.Any], secondsmilliseconds = secondsmilliseconds.asInstanceOf[js.Any], weekday = weekday.asInstanceOf[js.Any], weekdayhoursminutes = weekdayhoursminutes.asInstanceOf[js.Any], weekdayhoursminutesseconds = weekdayhoursminutesseconds.asInstanceOf[js.Any], weeksdayhours = weeksdayhours.asInstanceOf[js.Any], yeardayofyear = yeardayofyear.asInstanceOf[js.Any], yearmonth = yearmonth.asInstanceOf[js.Any], yearmonthdate = yearmonthdate.asInstanceOf[js.Any], yearmonthdatehours = yearmonthdatehours.asInstanceOf[js.Any], yearmonthdatehoursminutes = yearmonthdatehoursminutes.asInstanceOf[js.Any], yearmonthdatehoursminutesseconds = yearmonthdatehoursminutesseconds.asInstanceOf[js.Any], yearquarter = yearquarter.asInstanceOf[js.Any], yearquartermonth = yearquartermonth.asInstanceOf[js.Any], yearweek = yearweek.asInstanceOf[js.Any], yearweekday = yearweekday.asInstanceOf[js.Any], yearweekdayhours = yearweekdayhours.asInstanceOf[js.Any], yearweekdayhoursminutes = yearweekdayhoursminutes.asInstanceOf[js.Any], yearweekdayhoursminutesseconds = yearweekdayhoursminutesseconds.asInstanceOf[js.Any])
+  def apply(): Dayhours = {
+    val __obj = js.Dynamic.literal(dayhours = 1, dayhoursminutes = 1, dayhoursminutesseconds = 1, hoursminutes = 1, hoursminutesseconds = 1, minutesseconds = 1, monthdate = 1, monthdatehours = 1, monthdatehoursminutes = 1, monthdatehoursminutesseconds = 1, quartermonth = 1, secondsmilliseconds = 1, weekday = 1, weekdayhoursminutes = 1, weekdayhoursminutesseconds = 1, weeksdayhours = 1, yeardayofyear = 1, yearmonth = 1, yearmonthdate = 1, yearmonthdatehours = 1, yearmonthdatehoursminutes = 1, yearmonthdatehoursminutesseconds = 1, yearquarter = 1, yearquartermonth = 1, yearweek = 1, yearweekday = 1, yearweekdayhours = 1, yearweekdayhoursminutes = 1, yearweekdayhoursminutesseconds = 1)
     __obj.asInstanceOf[Dayhours]
   }
   

@@ -2,13 +2,11 @@ package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Raw pose measurement for an entity.
   */
-@js.native
 trait SchemaPose extends StObject {
   
   /**
@@ -19,20 +17,20 @@ trait SchemaPose extends StObject {
     * Other platforms have different methods of obtaining similar accuracy
     * estimations.
     */
-  var accuracyMeters: js.UndefOr[Double] = js.native
+  var accuracyMeters: js.UndefOr[Double] = js.undefined
   
   /**
     * Altitude of the pose in meters above WGS84 ellipsoid. NaN indicates an
     * unmeasured quantity.
     */
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
   /**
     * Compass heading, measured at the center of the photo in degrees clockwise
     * from North. Value must be &gt;=0 and &lt;360. NaN indicates an unmeasured
     * quantity.
     */
-  var heading: js.UndefOr[Double] = js.native
+  var heading: js.UndefOr[Double] = js.undefined
   
   /**
     * Latitude and longitude pair of the pose, as explained here:
@@ -42,12 +40,12 @@ trait SchemaPose extends StObject {
     * longitude pair not provided in the photo or exif header causes the photo
     * process to fail.
     */
-  var latLngPair: js.UndefOr[SchemaLatLng] = js.native
+  var latLngPair: js.UndefOr[SchemaLatLng] = js.undefined
   
   /**
     * Level (the floor in a building) used to configure vertical navigation.
     */
-  var level: js.UndefOr[SchemaLevel] = js.native
+  var level: js.UndefOr[SchemaLevel] = js.undefined
   
   /**
     * Pitch, measured at the center of the photo in degrees. Value must be
@@ -55,13 +53,13 @@ trait SchemaPose extends StObject {
     * value of 90 means looking directly up. NaN indicates an unmeasured
     * quantity.
     */
-  var pitch: js.UndefOr[Double] = js.native
+  var pitch: js.UndefOr[Double] = js.undefined
   
   /**
     * Roll, measured in degrees. Value must be &gt;= 0 and &lt;360. A value of
     * 0 means level with the horizon. NaN indicates an unmeasured quantity.
     */
-  var roll: js.UndefOr[Double] = js.native
+  var roll: js.UndefOr[Double] = js.undefined
 }
 object SchemaPose {
   

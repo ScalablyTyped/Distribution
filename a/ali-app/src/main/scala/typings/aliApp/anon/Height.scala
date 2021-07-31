@@ -2,19 +2,17 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
   // 图片宽度（单位px）
-  var height: Double = js.native
+  var height: Double
   
   // 图片高度（单位px）
-  var path: String = js.native
+  var path: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object Height {
   

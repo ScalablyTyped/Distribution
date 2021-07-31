@@ -6,7 +6,6 @@ import typings.storybookComponents.controlsTypesMod.BooleanValue
 import typings.storybookComponents.controlsTypesMod.ControlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object booleanMod {
@@ -15,5 +14,16 @@ object booleanMod {
   @js.native
   val BooleanControl: FC[BooleanProps] = js.native
   
-  type BooleanProps = ControlProps[BooleanValue] with BooleanConfig
+  trait BooleanProps
+    extends StObject
+       with ControlProps[BooleanValue]
+       with BooleanConfig
+  object BooleanProps {
+    
+    @scala.inline
+    def apply(name: String, onChange: BooleanValue => BooleanValue | Unit): BooleanProps = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
+      __obj.asInstanceOf[BooleanProps]
+    }
+  }
 }

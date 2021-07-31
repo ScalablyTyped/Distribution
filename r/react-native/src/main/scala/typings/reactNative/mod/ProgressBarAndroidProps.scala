@@ -9,32 +9,32 @@ import typings.reactNative.reactNativeStrings.Small
 import typings.reactNative.reactNativeStrings.SmallInverse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProgressBarAndroidProps extends ViewProps {
+trait ProgressBarAndroidProps
+  extends StObject
+     with ViewProps {
   
   /**
     * Whether to show the ProgressBar (true, the default) or hide it (false).
     */
-  var animating: js.UndefOr[Boolean] = js.native
+  var animating: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Color of the progress bar.
     */
-  var color: js.UndefOr[ColorValue] = js.native
+  var color: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * If the progress bar will show indeterminate progress.
     * Note that this can only be false if styleAttr is Horizontal.
     */
-  var indeterminate: js.UndefOr[Boolean] = js.native
+  var indeterminate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The progress value (between 0 and 1).
     */
-  var progress: js.UndefOr[Double] = js.native
+  var progress: js.UndefOr[Double] = js.undefined
   
   /**
     * Style of the ProgressBar. One of:
@@ -46,7 +46,7 @@ trait ProgressBarAndroidProps extends ViewProps {
     SmallInverse
     LargeInverse
     */
-  var styleAttr: js.UndefOr[Horizontal | Normal | Small | Large | Inverse | SmallInverse | LargeInverse] = js.native
+  var styleAttr: js.UndefOr[Horizontal | Normal | Small | Large | Inverse | SmallInverse | LargeInverse] = js.undefined
 }
 object ProgressBarAndroidProps {
   

@@ -2,25 +2,23 @@ package typings.timelinejs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object knightlab {
   
-  @js.native
   trait ITimeLine extends StObject {
     
-    var asset: js.UndefOr[ITimeLineAsset] = js.native
+    var asset: js.UndefOr[ITimeLineAsset] = js.undefined
     
-    var date: js.UndefOr[js.Array[ITimelineDate]] = js.native
+    var date: js.UndefOr[js.Array[ITimelineDate]] = js.undefined
     
-    var era: js.UndefOr[js.Array[ITimelineEra]] = js.native
+    var era: js.UndefOr[js.Array[ITimelineEra]] = js.undefined
     
-    var headline: js.UndefOr[String] = js.native
+    var headline: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ITimeLine {
     
@@ -77,16 +75,15 @@ object knightlab {
     }
   }
   
-  @js.native
   trait ITimeLineAsset extends StObject {
     
-    var caption: String = js.native
+    var caption: String
     
-    var credit: String = js.native
+    var credit: String
     
-    var media: String = js.native
+    var media: String
     
-    var thumbnail: js.UndefOr[String] = js.native
+    var thumbnail: js.UndefOr[String] = js.undefined
   }
   object ITimeLineAsset {
     
@@ -116,51 +113,50 @@ object knightlab {
     }
   }
   
-  @js.native
   trait ITimeLineConfiguration extends StObject {
     
     /*
       * Optional path to css
       */
-    var css: js.UndefOr[String] = js.native
+    var css: js.UndefOr[String] = js.undefined
     
     /*
       * Optional debug to console
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Optional use a different div id for embed
       */
-    var embed_id: js.UndefOr[String] = js.native
+    var embed_id: js.UndefOr[String] = js.undefined
     
     /*
       * Optional font
       */
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
     /*
       * required in order to use maptype
       */
-    var gmap_key: js.UndefOr[String] = js.native
+    var gmap_key: js.UndefOr[String] = js.undefined
     
     /*
       * Optional location bar hashes
       */
-    var hash_bookmark: js.UndefOr[Boolean] = js.native
+    var hash_bookmark: js.UndefOr[Boolean] = js.undefined
     
-    var height: String = js.native
+    var height: String
     
     /*
       * Optional path to js
       */
     @JSName("js")
-    var js_ : js.UndefOr[String] = js.native
+    var js_ : js.UndefOr[String] = js.undefined
     
     /*
       * Optional language
       */
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
     /*
       * Stamen Maps:
@@ -179,7 +175,7 @@ object knightlab {
       * OpenStreetMap:
       * osm
       */
-    var maptype: js.UndefOr[String] = js.native
+    var maptype: js.UndefOr[String] = js.undefined
     
     /*
       * path to json/ or link to googlespreadsheet
@@ -200,26 +196,26 @@ object knightlab {
       * Spreadsheets or Storify stories. Failing that, we assume the source is either JSON or JSONP. If string
       * matches on .jsonp, we will treat it as JSONP, otherwise, we will append ?callback=onJSONP_Data.
       */
-    var source: js.Any = js.native
+    var source: js.Any
     
     /*
       * Optional start at latest date
       */
-    var start_at_end: js.UndefOr[Boolean] = js.native
+    var start_at_end: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Optional start at specific slide
       */
-    var start_at_slide: js.UndefOr[String] = js.native
+    var start_at_slide: js.UndefOr[String] = js.undefined
     
     /*
       * Optional tweak the default zoom level
       */
-    var start_zoom_adjust: js.UndefOr[String] = js.native
+    var start_zoom_adjust: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var width: String = js.native
+    var width: String
   }
   object ITimeLineConfiguration {
     
@@ -321,12 +317,13 @@ object knightlab {
     }
   }
   
-  @js.native
-  trait ITimelineDate extends ITimelineEra {
+  trait ITimelineDate
+    extends StObject
+       with ITimelineEra {
     
-    var asset: js.UndefOr[ITimeLineAsset] = js.native
+    var asset: js.UndefOr[ITimeLineAsset] = js.undefined
     
-    var classname: js.UndefOr[String] = js.native
+    var classname: js.UndefOr[String] = js.undefined
   }
   object ITimelineDate {
     
@@ -353,24 +350,23 @@ object knightlab {
     }
   }
   
-  @js.native
   trait ITimelineEra extends StObject {
     
     /*
       * format example: 2011,12,10
       */
-    var endDate: String = js.native
+    var endDate: String
     
-    var headline: String = js.native
+    var headline: String
     
     /*
       * format example: 2011,12,10
       */
-    var startDate: String = js.native
+    var startDate: String
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
-    var text: String = js.native
+    var text: String
   }
   object ITimelineEra {
     
@@ -403,10 +399,9 @@ object knightlab {
     }
   }
   
-  @js.native
   trait ITimelineModel extends StObject {
     
-    var timeline: ITimeLine = js.native
+    var timeline: ITimeLine
   }
   object ITimelineModel {
     

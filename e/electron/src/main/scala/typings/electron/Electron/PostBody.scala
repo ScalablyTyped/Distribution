@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostBody extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/post-body
@@ -13,19 +11,19 @@ trait PostBody extends StObject {
     * The boundary used to separate multiple parts of the message. Only valid when
     * `contentType` is `multipart/form-data`.
     */
-  var boundary: js.UndefOr[String] = js.native
+  var boundary: js.UndefOr[String] = js.undefined
   
   /**
     * The `content-type` header used for the data. One of
     * `application/x-www-form-urlencoded` or `multipart/form-data`. Corresponds to the
     * `enctype` attribute of the submitted HTML form.
     */
-  var contentType: String = js.native
+  var contentType: String
   
   /**
     * The post data to be sent to the new window.
     */
-  var data: js.Array[PostData] = js.native
+  var data: js.Array[PostData]
 }
 object PostBody {
   

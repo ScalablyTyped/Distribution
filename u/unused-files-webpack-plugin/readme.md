@@ -11,8 +11,8 @@ Glob all files that are not compiled by webpack under webpack's context
 | Full name          | unused-files-webpack-plugin |
 | Keywords           | unused, redundancy, files, require, webpack, webpack-plugin |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 1947370 |
+| # dependents       | 9 |
+| # downloads        | 2423212 |
 | # stars            | 2 |
 
 ## Links

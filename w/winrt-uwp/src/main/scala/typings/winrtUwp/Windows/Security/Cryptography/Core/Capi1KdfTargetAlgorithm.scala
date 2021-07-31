@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Security.Cryptography.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object Capi1KdfTargetAlgorithm extends StObject {
   
   /** The target algorithm is AES. */
   @js.native
-  sealed trait aes extends Capi1KdfTargetAlgorithm
+  sealed trait aes
+    extends StObject
+       with Capi1KdfTargetAlgorithm
   
   /** The target algorithm is not AES. */
   @js.native
-  sealed trait notAes extends Capi1KdfTargetAlgorithm
+  sealed trait notAes
+    extends StObject
+       with Capi1KdfTargetAlgorithm
 }

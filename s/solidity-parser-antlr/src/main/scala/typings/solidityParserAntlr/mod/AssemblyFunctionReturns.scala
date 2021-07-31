@@ -2,23 +2,22 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssemblyFunctionReturns
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
   
   @JSName("type")
-  var type_AssemblyFunctionReturns: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionReturns = js.native
+  var type_AssemblyFunctionReturns: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionReturns
 }
 object AssemblyFunctionReturns {
   
   @scala.inline
-  def apply(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionReturns): AssemblyFunctionReturns = {
+  def apply(): AssemblyFunctionReturns = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AssemblyFunctionReturns")
     __obj.asInstanceOf[AssemblyFunctionReturns]
   }
   

@@ -9,36 +9,34 @@ import typings.wordpressComponents.wordpressComponentsStrings.success
 import typings.wordpressComponents.wordpressComponentsStrings.validating
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnMouseEnter extends StObject {
   
   /**
     * Function to call when onMouseEnter event triggered on token.
     */
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
   
   /**
     * Function to call when onMouseLeave is triggered on token.
     */
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
   
   /**
     * Applies styles to token.
     */
-  var status: js.UndefOr[error | validating | success] = js.native
+  var status: js.UndefOr[error | validating | success] = js.undefined
   
   /**
     * Adds a title to the token.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the token.
     */
-  var value: String = js.native
+  var value: String
 }
 object OnMouseEnter {
   

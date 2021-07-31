@@ -5,7 +5,6 @@ import typings.winrtUwp.Windows.Storage.FileProperties.ThumbnailOptions
 import typings.winrtUwp.Windows.Storage.Search.IStorageQueryResultBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes for searching, accessing, managing, and retrieving information about files and folders in the storage system. */
@@ -15,13 +14,15 @@ object BulkAccess {
   @JSGlobal("Windows.Storage.BulkAccess.FileInformation")
   @js.native
   abstract class FileInformation ()
-    extends typings.winrtUwp.Windows.Storage.BulkAccess.FileInformation
+    extends StObject
+       with typings.winrtUwp.Windows.Storage.BulkAccess.FileInformation
   
   /** Used to load information about files and folders from the results of a query and to bind these file system items to JavaScript ListView or XAML ListView and GridView controls. After information is loaded, an app can then access that information quickly using synchronous operations. */
   @JSGlobal("Windows.Storage.BulkAccess.FileInformationFactory")
   @js.native
   class FileInformationFactory protected ()
-    extends typings.winrtUwp.Windows.Storage.BulkAccess.FileInformationFactory {
+    extends StObject
+       with typings.winrtUwp.Windows.Storage.BulkAccess.FileInformationFactory {
     /**
       * Creates a new FileInformationFactory object that retrieves information about the StorageFile and StorageFolder objects in the specified query result.
       * @param queryResult The result of a query of files and folders on the system.
@@ -69,5 +70,6 @@ object BulkAccess {
   @JSGlobal("Windows.Storage.BulkAccess.FolderInformation")
   @js.native
   abstract class FolderInformation ()
-    extends typings.winrtUwp.Windows.Storage.BulkAccess.FolderInformation
+    extends StObject
+       with typings.winrtUwp.Windows.Storage.BulkAccess.FolderInformation
 }

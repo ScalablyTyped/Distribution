@@ -7,23 +7,23 @@ import typings.angularCompiler.compilerOptionsMod.AotCompilerOptions
 import typings.angularCompiler.urlResolverMod.UrlResolver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compilerFactoryMod {
   
-  @JSImport("@angular/compiler/src/aot/compiler_factory", "createAotCompiler")
+  @JSImport("@angular/compiler/src/aot/compiler_factory", JSImport.Namespace)
   @js.native
-  def createAotCompiler(compilerHost: AotCompilerHost, options: AotCompilerOptions): Compiler = js.native
-  @JSImport("@angular/compiler/src/aot/compiler_factory", "createAotCompiler")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createAotCompiler(compilerHost: AotCompilerHost, options: AotCompilerOptions): Compiler = (^.asInstanceOf[js.Dynamic].applyDynamic("createAotCompiler")(compilerHost.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Compiler]
+  @scala.inline
   def createAotCompiler(
     compilerHost: AotCompilerHost,
     options: AotCompilerOptions,
     errorCollector: js.Function2[/* error */ js.Any, /* type */ js.UndefOr[js.Any], Unit]
-  ): Compiler = js.native
+  ): Compiler = (^.asInstanceOf[js.Dynamic].applyDynamic("createAotCompiler")(compilerHost.asInstanceOf[js.Any], options.asInstanceOf[js.Any], errorCollector.asInstanceOf[js.Any])).asInstanceOf[Compiler]
   
-  @JSImport("@angular/compiler/src/aot/compiler_factory", "createAotUrlResolver")
-  @js.native
-  def createAotUrlResolver(host: ResourceNameToFileName): UrlResolver = js.native
+  @scala.inline
+  def createAotUrlResolver(host: ResourceNameToFileName): UrlResolver = ^.asInstanceOf[js.Dynamic].applyDynamic("createAotUrlResolver")(host.asInstanceOf[js.Any]).asInstanceOf[UrlResolver]
 }

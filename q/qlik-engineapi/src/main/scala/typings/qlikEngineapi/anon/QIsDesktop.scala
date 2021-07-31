@@ -2,15 +2,13 @@ package typings.qlikEngineapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QIsDesktop extends StObject {
   
-  var qIsDesktop: Boolean = js.native
+  var qIsDesktop: Boolean
   
-  var qSSOEnabled: Boolean = js.native
+  var qSSOEnabled: Boolean
 }
 object QIsDesktop {
   

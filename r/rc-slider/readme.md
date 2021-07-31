@@ -10,9 +10,9 @@ Slider UI component for React
 | ------------------ | :-------------: |
 | Full name          | rc-slider |
 | Keywords           | react, react-component, react-slider, slider, input, range |
-| # releases         | 32 |
-| # dependents       | 607 |
-| # downloads        | 36647592 |
+| # releases         | 36 |
+| # dependents       | 621 |
+| # downloads        | 38423211 |
 | # stars            | 13 |
 
 ## Links

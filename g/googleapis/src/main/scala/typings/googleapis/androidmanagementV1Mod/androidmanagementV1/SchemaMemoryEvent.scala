@@ -2,30 +2,28 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An event related to memory and storage measurements.
   */
-@js.native
 trait SchemaMemoryEvent extends StObject {
   
   /**
     * The number of free bytes in the medium, or for EXTERNAL_STORAGE_DETECTED,
     * the total capacity in bytes of the storage medium.
     */
-  var byteCount: js.UndefOr[String] = js.native
+  var byteCount: js.UndefOr[String] = js.undefined
   
   /**
     * The creation time of the event.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Event type.
     */
-  var eventType: js.UndefOr[String] = js.native
+  var eventType: js.UndefOr[String] = js.undefined
 }
 object SchemaMemoryEvent {
   

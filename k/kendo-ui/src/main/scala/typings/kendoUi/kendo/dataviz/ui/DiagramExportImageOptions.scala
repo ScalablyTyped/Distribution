@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramExportImageOptions extends StObject {
   
-  var cors: js.UndefOr[String] = js.native
+  var cors: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object DiagramExportImageOptions {
   

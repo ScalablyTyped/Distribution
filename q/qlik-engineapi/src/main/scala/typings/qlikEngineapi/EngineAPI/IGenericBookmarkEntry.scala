@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericBookmarkEntry...
   */
-@js.native
 trait IGenericBookmarkEntry extends StObject {
   
   /**
     * Information about the bookmark.
     */
-  var qBookmark: INxBookmark = js.native
+  var qBookmark: INxBookmark
   
   /**
     * Information about the properties of the bookmark.
     */
-  var qProperties: IGenericBookmarkProperties = js.native
+  var qProperties: IGenericBookmarkProperties
 }
 object IGenericBookmarkEntry {
   

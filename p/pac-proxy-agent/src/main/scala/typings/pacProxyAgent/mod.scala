@@ -7,20 +7,20 @@ import typings.node.httpMod.OutgoingHttpHeaders
 import typings.pacProxyAgent.agentMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(opts: PacProxyAgentOptions): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
+  @scala.inline
+  def apply(uri: String): default = ^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any]).asInstanceOf[default]
+  @scala.inline
+  def apply(uri: String, opts: PacProxyAgentOptions): default = (^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[default]
+  
   @JSImport("pac-proxy-agent", JSImport.Namespace)
   @js.native
-  def apply(opts: PacProxyAgentOptions): default = js.native
-  @JSImport("pac-proxy-agent", JSImport.Namespace)
-  @js.native
-  def apply(uri: String): default = js.native
-  @JSImport("pac-proxy-agent", JSImport.Namespace)
-  @js.native
-  def apply(uri: String, opts: PacProxyAgentOptions): default = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("pac-proxy-agent", "PacProxyAgent")
   @js.native
@@ -48,16 +48,16 @@ object mod {
   - typings.agentBase.mod.AgentOptions because var conflicts: timeout. Inlined 
   - typings.socksProxyAgent.mod.SocksProxyAgentOptions because var conflicts: timeout. Inlined 
   - typings.httpsProxyAgent.mod.HttpsProxyAgentOptions because var conflicts: timeout. Inlined 
-  - typings.httpProxyAgent.mod.HttpProxyAgentOptions because var conflicts: timeout. Inlined  */ @js.native
-  trait PacProxyAgentOptions
-    extends CompileOptions
+  - typings.httpProxyAgent.mod.HttpProxyAgentOptions because var conflicts: timeout. Inlined  */ trait PacProxyAgentOptions
+    extends StObject
+       with CompileOptions
        with BaseHttpProxyAgentOptions {
     
-    var fallbackToDirect: js.UndefOr[Boolean] = js.native
+    var fallbackToDirect: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
   }
   object PacProxyAgentOptions {
     

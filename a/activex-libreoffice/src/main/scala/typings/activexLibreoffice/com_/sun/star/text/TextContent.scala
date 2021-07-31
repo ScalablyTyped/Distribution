@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,20 +20,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see TextGraphicObject
   * @see TextEmbeddedObject
   */
-@js.native
-trait TextContent extends XTextContent {
+trait TextContent
+  extends StObject
+     with XTextContent {
   
   /** specifies how the text content is attached to its surrounding {@link Text} . */
-  var AnchorType: TextContentAnchorType = js.native
+  var AnchorType: TextContentAnchorType
   
   /**
     * contains the anchor type of the text content.
     * @see com.sun.star.text.TextContentAnchorType
     */
-  var AnchorTypes: SafeArray[TextContentAnchorType] = js.native
+  var AnchorTypes: SafeArray[TextContentAnchorType]
   
   /** specifies if the text content is a shape and how the text is wrapped around the shape. */
-  var TextWrap: WrapTextMode = js.native
+  var TextWrap: WrapTextMode
 }
 object TextContent {
   

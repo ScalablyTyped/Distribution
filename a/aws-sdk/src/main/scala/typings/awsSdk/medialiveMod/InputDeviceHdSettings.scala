@@ -2,51 +2,49 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputDeviceHdSettings extends StObject {
   
   /**
     * If you specified Auto as the configured input, specifies which of the sources is currently active (SDI or HDMI).
     */
-  var ActiveInput: js.UndefOr[InputDeviceActiveInput] = js.native
+  var ActiveInput: js.UndefOr[InputDeviceActiveInput] = js.undefined
   
   /**
     * The source at the input device that is currently active. You can specify this source.
     */
-  var ConfiguredInput: js.UndefOr[InputDeviceConfiguredInput] = js.native
+  var ConfiguredInput: js.UndefOr[InputDeviceConfiguredInput] = js.undefined
   
   /**
     * The state of the input device.
     */
-  var DeviceState: js.UndefOr[InputDeviceState] = js.native
+  var DeviceState: js.UndefOr[InputDeviceState] = js.undefined
   
   /**
     * The frame rate of the video source.
     */
-  var Framerate: js.UndefOr[double] = js.native
+  var Framerate: js.UndefOr[double] = js.undefined
   
   /**
     * The height of the video source, in pixels.
     */
-  var Height: js.UndefOr[integer] = js.native
+  var Height: js.UndefOr[integer] = js.undefined
   
   /**
     * The current maximum bitrate for ingesting this source, in bits per second. You can specify this maximum.
     */
-  var MaxBitrate: js.UndefOr[integer] = js.native
+  var MaxBitrate: js.UndefOr[integer] = js.undefined
   
   /**
     * The scan type of the video source.
     */
-  var ScanType: js.UndefOr[InputDeviceScanType] = js.native
+  var ScanType: js.UndefOr[InputDeviceScanType] = js.undefined
   
   /**
     * The width of the video source, in pixels.
     */
-  var Width: js.UndefOr[integer] = js.native
+  var Width: js.UndefOr[integer] = js.undefined
 }
 object InputDeviceHdSettings {
   

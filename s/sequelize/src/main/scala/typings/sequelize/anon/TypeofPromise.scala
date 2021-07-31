@@ -21,7 +21,6 @@ import typings.std.IterableIterator
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -158,37 +157,37 @@ trait TypeofPromise extends StObject {
   // TODO: After https://github.com/Microsoft/TypeScript/issues/2983 is implemented, we can use
   // the return type propagation of generators to automatically infer the return type T.
   /* static member */
-  def coroutine[T](generatorFunction: js.Function0[IterableIterator[_]]): js.Function0[Bluebird[T]] = js.native
-  def coroutine[T](generatorFunction: js.Function0[IterableIterator[_]], options: CoroutineOptions): js.Function0[Bluebird[T]] = js.native
+  def coroutine[T](generatorFunction: js.Function0[IterableIterator[js.Any]]): js.Function0[Bluebird[T]] = js.native
+  def coroutine[T](generatorFunction: js.Function0[IterableIterator[js.Any]], options: CoroutineOptions): js.Function0[Bluebird[T]] = js.native
   /* static member */
-  def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, IterableIterator[_]]): js.Function1[/* a1 */ A1, Bluebird[T]] = js.native
-  def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, IterableIterator[_]], options: CoroutineOptions): js.Function1[/* a1 */ A1, Bluebird[T]] = js.native
+  def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, IterableIterator[js.Any]]): js.Function1[/* a1 */ A1, Bluebird[T]] = js.native
+  def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, IterableIterator[js.Any]], options: CoroutineOptions): js.Function1[/* a1 */ A1, Bluebird[T]] = js.native
   /* static member */
-  def coroutine[T, A1, A2](generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[_]]): js.Function2[/* a1 */ A1, /* a2 */ A2, Bluebird[T]] = js.native
+  def coroutine[T, A1, A2](generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[js.Any]]): js.Function2[/* a1 */ A1, /* a2 */ A2, Bluebird[T]] = js.native
   def coroutine[T, A1, A2](
-    generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[_]],
+    generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[js.Any]],
     options: CoroutineOptions
   ): js.Function2[/* a1 */ A1, /* a2 */ A2, Bluebird[T]] = js.native
   /* static member */
-  def coroutine[T, A1, A2, A3](generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[_]]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, Bluebird[T]] = js.native
+  def coroutine[T, A1, A2, A3](generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[js.Any]]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3](
-    generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[_]],
+    generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[js.Any]],
     options: CoroutineOptions
   ): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, Bluebird[T]] = js.native
   /* static member */
   def coroutine[T, A1, A2, A3, A4](
-    generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, IterableIterator[_]]
+    generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, IterableIterator[js.Any]]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3, A4](
-    generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, IterableIterator[_]],
+    generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, IterableIterator[js.Any]],
     options: CoroutineOptions
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, Bluebird[T]] = js.native
   /* static member */
   def coroutine[T, A1, A2, A3, A4, A5](
-    generatorFunction: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, IterableIterator[_]]
+    generatorFunction: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, IterableIterator[js.Any]]
   ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3, A4, A5](
-    generatorFunction: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, IterableIterator[_]],
+    generatorFunction: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, IterableIterator[js.Any]],
     options: CoroutineOptions
   ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, Bluebird[T]] = js.native
   /* static member */
@@ -200,7 +199,7 @@ trait TypeofPromise extends StObject {
       /* a4 */ A4, 
       /* a5 */ A5, 
       /* a6 */ A6, 
-      IterableIterator[_]
+      IterableIterator[js.Any]
     ]
   ): js.Function6[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, /* a6 */ A6, Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3, A4, A5, A6](
@@ -211,7 +210,7 @@ trait TypeofPromise extends StObject {
       /* a4 */ A4, 
       /* a5 */ A5, 
       /* a6 */ A6, 
-      IterableIterator[_]
+      IterableIterator[js.Any]
     ],
     options: CoroutineOptions
   ): js.Function6[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, /* a6 */ A6, Bluebird[T]] = js.native
@@ -225,7 +224,7 @@ trait TypeofPromise extends StObject {
       /* a5 */ A5, 
       /* a6 */ A6, 
       /* a7 */ A7, 
-      IterableIterator[_]
+      IterableIterator[js.Any]
     ]
   ): js.Function7[
     /* a1 */ A1, 
@@ -246,7 +245,7 @@ trait TypeofPromise extends StObject {
       /* a5 */ A5, 
       /* a6 */ A6, 
       /* a7 */ A7, 
-      IterableIterator[_]
+      IterableIterator[js.Any]
     ],
     options: CoroutineOptions
   ): js.Function7[
@@ -270,7 +269,7 @@ trait TypeofPromise extends StObject {
       /* a6 */ A6, 
       /* a7 */ A7, 
       /* a8 */ A8, 
-      IterableIterator[_]
+      IterableIterator[js.Any]
     ]
   ): js.Function8[
     /* a1 */ A1, 
@@ -293,7 +292,7 @@ trait TypeofPromise extends StObject {
       /* a6 */ A6, 
       /* a7 */ A7, 
       /* a8 */ A8, 
-      IterableIterator[_]
+      IterableIterator[js.Any]
     ],
     options: CoroutineOptions
   ): js.Function8[
@@ -336,7 +335,7 @@ trait TypeofPromise extends StObject {
     * If the iterator function returns a promise or a thenable, the result for the promise is awaited for before continuing with next iteration.
     */
   /* static member */
-  def each[R](values: Resolvable[Iterable[Resolvable[R]]], iterator: IterateFunction[R, _]): Bluebird[js.Array[R]] = js.native
+  def each[R](values: Resolvable[Iterable[Resolvable[R]]], iterator: IterateFunction[R, js.Any]): Bluebird[js.Array[R]] = js.native
   
   /**
     * Filter an array, or a promise of an array,
@@ -558,12 +557,12 @@ trait TypeofPromise extends StObject {
     * Passing no value or a non-function will have the effect of removing any kind of handling for possibly unhandled rejections.
     */
   /* static member */
-  def onPossiblyUnhandledRejection(handler: js.Function1[/* reason */ js.Any, _]): Unit = js.native
-  def onPossiblyUnhandledRejection(handler: js.Function2[/* error */ Error, /* promise */ Bluebird[_], Unit]): Unit = js.native
+  def onPossiblyUnhandledRejection(handler: js.Function1[/* reason */ js.Any, js.Any]): Unit = js.native
+  def onPossiblyUnhandledRejection(handler: js.Function2[/* error */ Error, /* promise */ Bluebird[js.Any], Unit]): Unit = js.native
   
   /* static member */
-  def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, Bluebird[_]] = js.native
-  def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, Unit], options: PromisifyOptions): js.Function1[/* repeated */ js.Any, Bluebird[_]] = js.native
+  def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, Bluebird[js.Any]] = js.native
+  def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, Unit], options: PromisifyOptions): js.Function1[/* repeated */ js.Any, Bluebird[js.Any]] = js.native
   /* static member */
   def promisify[T, A1](
     func: js.Function2[
@@ -725,7 +724,8 @@ trait TypeofPromise extends StObject {
     */
   // map
   /* static member */
-  def props[K, V](map: Resolvable[Map[K, Resolvable[V]]]): Bluebird[Map[K, V]] = js.native
+  @JSName("props")
+  def props_KV[K, V](map: Resolvable[Map[K, Resolvable[V]]]): Bluebird[Map[K, V]] = js.native
   
   /**
     * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is
@@ -824,15 +824,15 @@ trait TypeofPromise extends StObject {
     *  necessary because there is no standard interface in node for disposing resources.
     */
   /* static member */
-  def using[R, T](disposer: Disposer[R], executor: js.Function1[/* transaction */ R, js.Thenable[T]]): Bluebird[T] = js.native
+  def `using`[R, T](disposer: Disposer[R], executor: js.Function1[/* transaction */ R, js.Thenable[T]]): Bluebird[T] = js.native
   /* static member */
-  def using[R1, R2, T](
+  def `using`[R1, R2, T](
     disposer: Disposer[R1],
     disposer2: Disposer[R2],
     executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, js.Thenable[T]]
   ): Bluebird[T] = js.native
   /* static member */
-  def using[R1, R2, R3, T](
+  def `using`[R1, R2, R3, T](
     disposer: Disposer[R1],
     disposer2: Disposer[R2],
     disposer3: Disposer[R3],

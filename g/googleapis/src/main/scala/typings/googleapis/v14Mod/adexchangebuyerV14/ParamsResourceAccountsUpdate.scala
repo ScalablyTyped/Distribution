@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAccountsUpdate extends StandardParameters {
+trait ParamsResourceAccountsUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Confirmation for erasing bidder and cookie matching urls.
     */
-  var confirmUnsafeAccountChange: js.UndefOr[Boolean] = js.native
+  var confirmUnsafeAccountChange: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The account id
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaAccount] = js.native
+  var requestBody: js.UndefOr[SchemaAccount] = js.undefined
 }
 object ParamsResourceAccountsUpdate {
   

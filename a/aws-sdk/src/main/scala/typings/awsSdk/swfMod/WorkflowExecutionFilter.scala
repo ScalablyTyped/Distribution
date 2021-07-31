@@ -2,16 +2,14 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowExecutionFilter extends StObject {
   
   /**
     * The workflowId to pass of match the criteria of this filter.
     */
-  var workflowId: WorkflowId = js.native
+  var workflowId: WorkflowId
 }
 object WorkflowExecutionFilter {
   

@@ -2,15 +2,13 @@ package typings.ionicReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForceLinearEasing extends StObject {
   
-  var forceLinearEasing: Boolean = js.native
+  var forceLinearEasing: Boolean
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
 }
 object ForceLinearEasing {
   

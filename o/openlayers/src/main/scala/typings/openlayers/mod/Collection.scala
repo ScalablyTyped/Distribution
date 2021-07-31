@@ -2,7 +2,6 @@ package typings.openlayers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Collection")
@@ -47,8 +46,11 @@ class Collection[T] () extends Object {
     * @template S
     * @api stable
     */
-  def forEach(f: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], _]): Unit = js.native
-  def forEach(f: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], _], opt_this: js.Any): Unit = js.native
+  def forEach(f: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], js.Any]): Unit = js.native
+  def forEach(
+    f: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], js.Any],
+    opt_this: js.Any
+  ): Unit = js.native
   
   /**
     * Get a reference to the underlying Array object. Warning: if the array

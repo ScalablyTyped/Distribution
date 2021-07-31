@@ -2,13 +2,11 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of reverting a trigger in a workspace.
   */
-@js.native
 trait SchemaRevertTriggerResponse extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaRevertTriggerResponse extends StObject {
     * workspace synchronization operation. If no trigger is present, that means
     * the trigger was deleted in the latest container version.
     */
-  var trigger: js.UndefOr[SchemaTrigger] = js.native
+  var trigger: js.UndefOr[SchemaTrigger] = js.undefined
 }
 object SchemaRevertTriggerResponse {
   

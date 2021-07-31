@@ -5,16 +5,18 @@ import typings.reactMdPortal.conditionalPortalMod.ConditionalPortalProps
 import typings.reactMdPortal.portalMod.PortalProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object ConditionalPortal {
     
+    @scala.inline
+    def apply(hasPortalPortalIntoPortalIntoIdChildren: ConditionalPortalProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasPortalPortalIntoPortalIntoIdChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
     @JSImport("@react-md/portal", "ConditionalPortal")
     @js.native
-    def apply(hasPortalPortalIntoPortalIntoIdChildren: ConditionalPortalProps): ReactElement | Null = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -52,9 +54,12 @@ object mod {
   
   object Portal {
     
+    @scala.inline
+    def apply(hasIntoIntoIdChildren: PortalProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasIntoIntoIdChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
     @JSImport("@react-md/portal", "Portal")
     @js.native
-    def apply(hasIntoIntoIdChildren: PortalProps): ReactElement | Null = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       

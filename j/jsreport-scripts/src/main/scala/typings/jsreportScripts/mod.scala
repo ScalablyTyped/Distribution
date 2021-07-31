@@ -4,22 +4,22 @@ import typings.jsreportCore.mod.ExtensionDefinition
 import typings.jsreportScripts.jsreportScriptsStrings.Asterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jsreport-scripts", JSImport.Namespace)
-  @js.native
-  def apply(): ExtensionDefinition = js.native
-  @JSImport("jsreport-scripts", JSImport.Namespace)
-  @js.native
-  def apply(cfg: Configuration): ExtensionDefinition = js.native
+  @scala.inline
+  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  @scala.inline
+  def apply(cfg: Configuration): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(cfg.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
   
+  @JSImport("jsreport-scripts", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Configuration extends StObject {
     
-    var allowedModules: js.UndefOr[js.Array[String] | Asterisk] = js.native
+    var allowedModules: js.UndefOr[js.Array[String] | Asterisk] = js.undefined
   }
   object Configuration {
     
@@ -43,14 +43,13 @@ object mod {
     }
   }
   
-  @js.native
   trait TemplateScript extends StObject {
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var shortid: js.UndefOr[String] = js.native
+    var shortid: js.UndefOr[String] = js.undefined
   }
   object TemplateScript {
     
@@ -86,10 +85,9 @@ object mod {
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    @js.native
     trait Template extends StObject {
       
-      var scripts: js.UndefOr[js.Array[TemplateScript]] = js.native
+      var scripts: js.UndefOr[js.Array[TemplateScript]] = js.undefined
     }
     object Template {
       

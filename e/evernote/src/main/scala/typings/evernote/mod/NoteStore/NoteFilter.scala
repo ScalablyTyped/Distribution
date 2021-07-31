@@ -4,7 +4,6 @@ import typings.evernote.anon.Ascending
 import typings.evernote.mod.Types.Guid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.NoteFilter")

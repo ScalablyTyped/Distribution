@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCertificateMessage extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the deleted certificate.
     */
-  var CertificateArn: String = js.native
+  var CertificateArn: String
 }
 object DeleteCertificateMessage {
   

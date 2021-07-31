@@ -2,7 +2,6 @@ package typings.heremaps.H
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** math *****/
@@ -18,12 +17,11 @@ object math {
     * @property x {number} - The point's coordinate on X-axis.
     * @property y {number} - The point's coordinate on Y-axis.
     */
-  @js.native
   trait IPoint extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object IPoint {
     
@@ -49,12 +47,11 @@ object math {
     * @property w {number} - The size's width.
     * @property h {number} - The size's height.
     */
-  @js.native
   trait ISize extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var w: Double = js.native
+    var w: Double
   }
   object ISize {
     
@@ -81,7 +78,9 @@ object math {
     * @property y {number} - The point's coordinate on Y-axis.
     */
   @js.native
-  trait Point extends IPoint {
+  trait Point
+    extends StObject
+       with IPoint {
     
     /**
       * This method adds given point coordinates to the current one.
@@ -159,7 +158,6 @@ object math {
   /**
     * Class defines a rectangle in 2-dimensional geometric space. It is used to represent the area in projected space.
     */
-  @js.native
   trait Rect extends StObject {
     
     /**
@@ -168,19 +166,19 @@ object math {
       * @param y {number} - y-coordinate to check
       * @returns {boolean} - returns true if coordinates lie within rectangle, if parameters are isNaN returns false
       */
-    def containsXY(x: Double, y: Double): Boolean = js.native
+    def containsXY(x: Double, y: Double): Boolean
     
     /**
       * To get the rectangle's bottom-right vertex
       * @returns {H.math.Point}
       */
-    def getBottomRight(): Point = js.native
+    def getBottomRight(): Point
     
     /**
       * To get the rectangle's top-left vertex
       * @returns {H.math.Point}
       */
-    def getTopLeft(): Point = js.native
+    def getTopLeft(): Point
     
     /**
       * To set all values of the rectangle's edges
@@ -189,7 +187,7 @@ object math {
       * @param right {number} - The rectangle's right edge x value
       * @param bottom {number} - The rectangle's bottom edge y value
       */
-    def set(left: Double, top: Double, right: Double, bottom: Double): Unit = js.native
+    def set(left: Double, top: Double, right: Double, bottom: Double): Unit
   }
   object Rect {
     
@@ -226,12 +224,11 @@ object math {
     * @property w {number} - The size's width value
     * @property h {number} - The size's height value
     */
-  @js.native
   trait Size extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var w: Double = js.native
+    var w: Double
   }
   object Size {
     

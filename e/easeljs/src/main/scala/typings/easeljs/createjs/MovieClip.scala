@@ -3,11 +3,12 @@ package typings.easeljs.createjs
 import typings.tweenjs.createjs.Timeline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MovieClip extends Container {
+trait MovieClip
+  extends StObject
+     with Container {
   
   // properties
   var actionsEnabled: Boolean = js.native

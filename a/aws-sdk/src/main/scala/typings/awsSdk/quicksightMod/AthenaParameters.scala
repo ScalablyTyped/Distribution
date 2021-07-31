@@ -2,16 +2,14 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AthenaParameters extends StObject {
   
   /**
     * The workgroup that Amazon Athena uses.
     */
-  var WorkGroup: js.UndefOr[typings.awsSdk.quicksightMod.WorkGroup] = js.native
+  var WorkGroup: js.UndefOr[typings.awsSdk.quicksightMod.WorkGroup] = js.undefined
 }
 object AthenaParameters {
   

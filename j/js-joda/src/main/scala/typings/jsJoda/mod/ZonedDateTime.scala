@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "ZonedDateTime")
@@ -121,37 +120,33 @@ class ZonedDateTime protected () extends ChronoZonedDateTime {
 }
 object ZonedDateTime {
   
-  /* static member */
-  @JSImport("js-joda", "ZonedDateTime.from")
+  @JSImport("js-joda", "ZonedDateTime")
   @js.native
-  def from(temporal: TemporalAccessor): ZonedDateTime = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("js-joda", "ZonedDateTime.now")
-  @js.native
-  def now(): ZonedDateTime = js.native
-  @JSImport("js-joda", "ZonedDateTime.now")
-  @js.native
-  def now(clockOrZone: Clock): ZonedDateTime = js.native
-  @JSImport("js-joda", "ZonedDateTime.now")
-  @js.native
-  def now(clockOrZone: ZoneId): ZonedDateTime = js.native
+  @scala.inline
+  def from(temporal: TemporalAccessor): ZonedDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[ZonedDateTime]
   
   /* static member */
-  @JSImport("js-joda", "ZonedDateTime.of")
-  @js.native
-  def of(): js.Any = js.native
+  @scala.inline
+  def now(): ZonedDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[ZonedDateTime]
+  @scala.inline
+  def now(clockOrZone: Clock): ZonedDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(clockOrZone.asInstanceOf[js.Any]).asInstanceOf[ZonedDateTime]
+  @scala.inline
+  def now(clockOrZone: ZoneId): ZonedDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(clockOrZone.asInstanceOf[js.Any]).asInstanceOf[ZonedDateTime]
+  
   /* static member */
-  @JSImport("js-joda", "ZonedDateTime.of")
-  @js.native
-  def of(date: LocalDate, time: LocalTime, zone: ZoneId): ZonedDateTime = js.native
+  @scala.inline
+  def of(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("of")().asInstanceOf[js.Any]
   /* static member */
-  @JSImport("js-joda", "ZonedDateTime.of")
-  @js.native
-  def of(localDateTime: LocalDateTime, zone: ZoneId): ZonedDateTime = js.native
+  @scala.inline
+  def of(date: LocalDate, time: LocalTime, zone: ZoneId): ZonedDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ZonedDateTime]
   /* static member */
-  @JSImport("js-joda", "ZonedDateTime.of")
-  @js.native
+  @scala.inline
+  def of(localDateTime: LocalDateTime, zone: ZoneId): ZonedDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(localDateTime.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ZonedDateTime]
+  /* static member */
+  @scala.inline
   def of(
     year: Double,
     month: Double,
@@ -161,39 +156,31 @@ object ZonedDateTime {
     second: Double,
     nanoOfSecond: Double,
     zone: ZoneId
-  ): ZonedDateTime = js.native
+  ): ZonedDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], dayOfMonth.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], nanoOfSecond.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ZonedDateTime]
   
   /* static member */
-  @JSImport("js-joda", "ZonedDateTime.ofInstant")
-  @js.native
-  def ofInstant(): ZonedDateTime = js.native
+  @scala.inline
+  def ofInstant(): ZonedDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("ofInstant")().asInstanceOf[ZonedDateTime]
   /* static member */
-  @JSImport("js-joda", "ZonedDateTime.ofInstant")
-  @js.native
-  def ofInstant(instant: Instant, zone: ZoneId): ZonedDateTime = js.native
+  @scala.inline
+  def ofInstant(instant: Instant, zone: ZoneId): ZonedDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("ofInstant")(instant.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ZonedDateTime]
   /* static member */
-  @JSImport("js-joda", "ZonedDateTime.ofInstant")
-  @js.native
-  def ofInstant(localDateTime: LocalDateTime, offset: ZoneOffset, zone: ZoneId): ZonedDateTime = js.native
+  @scala.inline
+  def ofInstant(localDateTime: LocalDateTime, offset: ZoneOffset, zone: ZoneId): ZonedDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("ofInstant")(localDateTime.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ZonedDateTime]
   
   /* static member */
-  @JSImport("js-joda", "ZonedDateTime.ofLocal")
-  @js.native
-  def ofLocal(localDateTime: LocalDateTime, zone: ZoneId): ZonedDateTime = js.native
-  @JSImport("js-joda", "ZonedDateTime.ofLocal")
-  @js.native
-  def ofLocal(localDateTime: LocalDateTime, zone: ZoneId, preferredOffset: ZoneOffset): ZonedDateTime = js.native
+  @scala.inline
+  def ofLocal(localDateTime: LocalDateTime, zone: ZoneId): ZonedDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("ofLocal")(localDateTime.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ZonedDateTime]
+  @scala.inline
+  def ofLocal(localDateTime: LocalDateTime, zone: ZoneId, preferredOffset: ZoneOffset): ZonedDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("ofLocal")(localDateTime.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], preferredOffset.asInstanceOf[js.Any])).asInstanceOf[ZonedDateTime]
   
   /* static member */
-  @JSImport("js-joda", "ZonedDateTime.ofStrict")
-  @js.native
-  def ofStrict(localDateTime: LocalDateTime, offset: ZoneOffset, zone: ZoneId): ZonedDateTime = js.native
+  @scala.inline
+  def ofStrict(localDateTime: LocalDateTime, offset: ZoneOffset, zone: ZoneId): ZonedDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("ofStrict")(localDateTime.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ZonedDateTime]
   
   /* static member */
-  @JSImport("js-joda", "ZonedDateTime.parse")
-  @js.native
-  def parse(text: String): ZonedDateTime = js.native
-  @JSImport("js-joda", "ZonedDateTime.parse")
-  @js.native
-  def parse(text: String, formatter: DateTimeFormatter): ZonedDateTime = js.native
+  @scala.inline
+  def parse(text: String): ZonedDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[ZonedDateTime]
+  @scala.inline
+  def parse(text: String, formatter: DateTimeFormatter): ZonedDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[ZonedDateTime]
 }

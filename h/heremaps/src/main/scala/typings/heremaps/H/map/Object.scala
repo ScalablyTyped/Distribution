@@ -7,14 +7,15 @@ import typings.heremaps.H.math.BitMask
 import typings.heremaps.H.util.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents the abstract base class for map objects such as polylines, polygons, markers, groups etc.
   */
 @js.native
-trait Object extends EventTarget {
+trait Object
+  extends StObject
+     with EventTarget {
   
   def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native
   
@@ -118,27 +119,39 @@ object Object {
     
     /** spatial object */
     @js.native
-    sealed trait ANY extends Type
+    sealed trait ANY
+      extends StObject
+         with Type
     
     /** DomMarker object */
     @js.native
-    sealed trait DOM_MARKER extends Type
+    sealed trait DOM_MARKER
+      extends StObject
+         with Type
     
     /** DomMarker object */
     @js.native
-    sealed trait GROUP extends Type
+    sealed trait GROUP
+      extends StObject
+         with Type
     
     /** Marker object */
     @js.native
-    sealed trait MARKER extends Type
+    sealed trait MARKER
+      extends StObject
+         with Type
     
     /** spatial object */
     @js.native
-    sealed trait OVERLAY extends Type
+    sealed trait OVERLAY
+      extends StObject
+         with Type
     
     /** spatial object */
     @js.native
-    sealed trait SPATIAL extends Type
+    sealed trait SPATIAL
+      extends StObject
+         with Type
   }
   
   /**
@@ -151,20 +164,19 @@ object Object {
     * an object.
     * @property data {*} - Optional arbitrary data to be stored with this map object. This data can be retrieved by calling getData.
     */
-  @js.native
   trait Options extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var provider: js.UndefOr[Provider] = js.native
+    var provider: js.UndefOr[Provider] = js.undefined
     
-    var visibility: js.UndefOr[Boolean] = js.native
+    var visibility: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

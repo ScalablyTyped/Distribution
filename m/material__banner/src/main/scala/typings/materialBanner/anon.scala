@@ -3,30 +3,28 @@ package typings.materialBanner
 import typings.materialBanner.constantsMod.CloseReason
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@material/banner.@material/banner/adapter.MDCBannerAdapter> */
-  @js.native
   trait PartialMDCBannerAdapter extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var getContentHeight: js.UndefOr[js.Function0[Double]] = js.native
+    var getContentHeight: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var notifyClosed: js.UndefOr[js.Function1[/* reason */ CloseReason, Unit]] = js.native
+    var notifyClosed: js.UndefOr[js.Function1[/* reason */ CloseReason, Unit]] = js.undefined
     
-    var notifyClosing: js.UndefOr[js.Function1[/* reason */ CloseReason, Unit]] = js.native
+    var notifyClosing: js.UndefOr[js.Function1[/* reason */ CloseReason, Unit]] = js.undefined
     
-    var notifyOpened: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyOpened: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var notifyOpening: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyOpening: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var setStyleProperty: js.UndefOr[js.Function2[/* propertyName */ String, /* value */ String, Unit]] = js.native
+    var setStyleProperty: js.UndefOr[js.Function2[/* propertyName */ String, /* value */ String, Unit]] = js.undefined
   }
   object PartialMDCBannerAdapter {
     

@@ -2,27 +2,25 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IVBSAXLocator interface */
-@js.native
 trait IVBSAXLocator extends StObject {
   
   @JSName("MSXML2.IVBSAXLocator_typekey")
-  var MSXML2DotIVBSAXLocator_typekey: IVBSAXLocator = js.native
+  var MSXML2DotIVBSAXLocator_typekey: IVBSAXLocator
   
   /** Get the column number where the current document event ends. */
-  val columnNumber: Double = js.native
+  val columnNumber: Double
   
   /** Get the line number where the current document event ends. */
-  val lineNumber: Double = js.native
+  val lineNumber: Double
   
   /** Get the public identifier for the current document event. */
-  val publicId: String = js.native
+  val publicId: String
   
   /** Get the system identifier for the current document event. */
-  val systemId: String = js.native
+  val systemId: String
 }
 object IVBSAXLocator {
   

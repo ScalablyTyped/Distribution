@@ -4,7 +4,6 @@ import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.L1L2
 import typings.tensorflowTfjsLayers.typesMod.BaseSerialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object regularizerConfigMod {
@@ -13,12 +12,11 @@ object regularizerConfigMod {
   @js.native
   val regularizerClassNames: js.Array[RegularizerClassName] = js.native
   
-  @js.native
   trait L1L2Config extends StObject {
     
-    var l1: js.UndefOr[Double] = js.native
+    var l1: js.UndefOr[Double] = js.undefined
     
-    var l2: js.UndefOr[Double] = js.native
+    var l2: js.UndefOr[Double] = js.undefined
   }
   object L1L2Config {
     

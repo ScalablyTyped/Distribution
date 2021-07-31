@@ -2,18 +2,16 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VPC extends StObject {
   
-  var VPCId: js.UndefOr[typings.awsSdk.route53Mod.VPCId] = js.native
+  var VPCId: js.UndefOr[typings.awsSdk.route53Mod.VPCId] = js.undefined
   
   /**
     * (Private hosted zones only) The region that an Amazon VPC was created in.
     */
-  var VPCRegion: js.UndefOr[typings.awsSdk.route53Mod.VPCRegion] = js.native
+  var VPCRegion: js.UndefOr[typings.awsSdk.route53Mod.VPCRegion] = js.undefined
 }
 object VPC {
   

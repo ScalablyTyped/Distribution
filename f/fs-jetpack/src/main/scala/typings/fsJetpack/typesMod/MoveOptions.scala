@@ -2,13 +2,11 @@ package typings.fsJetpack.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveOptions extends StObject {
   
-  var overwrite: js.UndefOr[Boolean] = js.native
+  var overwrite: js.UndefOr[Boolean] = js.undefined
 }
 object MoveOptions {
   

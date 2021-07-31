@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ComplexBehaviorDefinition extends BaseElement {
+trait ComplexBehaviorDefinition
+  extends StObject
+     with BaseElement {
   
-  var condition: FormalExpression = js.native
+  var condition: FormalExpression
   
-  var event: ImplicitThrowEvent = js.native
+  var event: ImplicitThrowEvent
 }
 object ComplexBehaviorDefinition {
   

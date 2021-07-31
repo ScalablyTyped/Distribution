@@ -3,7 +3,6 @@ package typings.firebase.mod.default.firestore
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("firebase", "default.firestore.Transaction")
@@ -16,7 +15,7 @@ class Transaction protected () extends StObject {
     * @param documentRef A reference to the document to be deleted.
     * @return This `Transaction` instance. Used for chaining method calls.
     */
-  def delete(documentRef: typings.firebase.mod.firebase.firestore.DocumentReference[_]): typings.firebase.mod.firebase.firestore.Transaction = js.native
+  def delete(documentRef: typings.firebase.mod.firebase.firestore.DocumentReference[js.Any]): typings.firebase.mod.firebase.firestore.Transaction = js.native
   
   /**
     * Reads the document referenced by the provided `DocumentReference.`
@@ -64,7 +63,7 @@ class Transaction protected () extends StObject {
     * @return This `Transaction` instance. Used for chaining method calls.
     */
   def update(
-    documentRef: typings.firebase.mod.firebase.firestore.DocumentReference[_],
+    documentRef: typings.firebase.mod.firebase.firestore.DocumentReference[js.Any],
     data: typings.firebase.mod.firebase.firestore.UpdateData
   ): typings.firebase.mod.firebase.firestore.Transaction = js.native
   /**
@@ -83,13 +82,13 @@ class Transaction protected () extends StObject {
     * to the backend (Note that it won't resolve while you're offline).
     */
   def update(
-    documentRef: typings.firebase.mod.firebase.firestore.DocumentReference[_],
+    documentRef: typings.firebase.mod.firebase.firestore.DocumentReference[js.Any],
     field: String,
     value: js.Any,
     moreFieldsAndValues: js.Any*
   ): typings.firebase.mod.firebase.firestore.Transaction = js.native
   def update(
-    documentRef: typings.firebase.mod.firebase.firestore.DocumentReference[_],
+    documentRef: typings.firebase.mod.firebase.firestore.DocumentReference[js.Any],
     field: typings.firebase.mod.firebase.firestore.FieldPath,
     value: js.Any,
     moreFieldsAndValues: js.Any*

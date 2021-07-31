@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.MultiViewCalendar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofMultiViewCalendar extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): MultiViewCalendar = js.native
+  def extend(proto: js.Object): MultiViewCalendar
   
   /* static member */
-  var fn: MultiViewCalendar = js.native
+  var fn: MultiViewCalendar
 }
 object TypeofMultiViewCalendar {
   

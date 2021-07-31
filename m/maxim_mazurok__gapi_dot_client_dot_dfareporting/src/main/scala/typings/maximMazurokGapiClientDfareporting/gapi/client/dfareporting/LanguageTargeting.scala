@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageTargeting extends StObject {
   
   /** Languages that this ad targets. For each language only languageId is required. The other fields are populated automatically when the ad is inserted or updated. */
-  var languages: js.UndefOr[js.Array[Language]] = js.native
+  var languages: js.UndefOr[js.Array[Language]] = js.undefined
 }
 object LanguageTargeting {
   

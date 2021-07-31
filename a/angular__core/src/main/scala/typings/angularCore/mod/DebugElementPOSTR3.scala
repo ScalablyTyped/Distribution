@@ -4,13 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.angularCore.mod.DebugNode because Already inherited
 - typings.angularCore.mod.DebugElement because var conflicts: componentInstance, context, injector, listeners, parent, providerTokens, references. Inlined name, properties, attributes, classes, styles, childNodes, nativeElement, children, query, queryAll, queryAllNodes, triggerEventHandler */ @js.native
-trait DebugElementPOSTR3 extends DebugNodePOSTR3 {
+trait DebugElementPOSTR3
+  extends StObject
+     with DebugNodePOSTR3 {
   
   def attributes: StringDictionary[String | Null] = js.native
   @JSName("attributes")

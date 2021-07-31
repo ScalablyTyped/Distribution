@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointInfo extends StObject {
   
   /** Destination IP address. */
-  var destinationIp: js.UndefOr[String] = js.native
+  var destinationIp: js.UndefOr[String] = js.undefined
   
   /** URI of the network where this packet is sent to. */
-  var destinationNetworkUri: js.UndefOr[String] = js.native
+  var destinationNetworkUri: js.UndefOr[String] = js.undefined
   
   /** Destination port. Only valid when protocol is TCP or UDP. */
-  var destinationPort: js.UndefOr[Double] = js.native
+  var destinationPort: js.UndefOr[Double] = js.undefined
   
   /** IP protocol in string format, for example: "TCP", "UDP", "ICMP". */
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
   /** Source IP address. */
-  var sourceIp: js.UndefOr[String] = js.native
+  var sourceIp: js.UndefOr[String] = js.undefined
   
   /** URI of the network where this packet originates from. */
-  var sourceNetworkUri: js.UndefOr[String] = js.native
+  var sourceNetworkUri: js.UndefOr[String] = js.undefined
   
   /** Source port. Only valid when protocol is TCP or UDP. */
-  var sourcePort: js.UndefOr[Double] = js.native
+  var sourcePort: js.UndefOr[Double] = js.undefined
 }
 object EndpointInfo {
   

@@ -6,13 +6,11 @@ import typings.aliApp.aliAppStrings.`6002`
 import typings.aliApp.aliAppStrings.`9000`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultStatus extends StObject {
   
-  var result: Admitstate = js.native
+  var result: Admitstate
   
   /**
     * 6001    用户取消了业务流程
@@ -20,7 +18,7 @@ trait ResultStatus extends StObject {
     * 9000    成功
     * 4000    系统异常
     */
-  var resultStatus: `6001` | `6002` | `9000` | `4000` | String = js.native
+  var resultStatus: `6001` | `6002` | `9000` | `4000` | String
 }
 object ResultStatus {
   

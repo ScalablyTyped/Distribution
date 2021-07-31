@@ -4,26 +4,24 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.black
 import typings.reactNativeNavigation.reactNativeNavigationStrings.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsTopBar extends StObject {
   
   /**
     * Controls whether TopBar visibility changes should be animated
     */
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Back button configuration
     */
-  var backButton: js.UndefOr[OptionsTopBarBackButton] = js.native
+  var backButton: js.UndefOr[OptionsTopBarBackButton] = js.undefined
   
   /**
     * Background configuration
     */
-  var background: js.UndefOr[OptionsTopBarBackground] = js.native
+  var background: js.UndefOr[OptionsTopBarBackground] = js.undefined
   
   /**
     * Control the NavBar blur style
@@ -31,141 +29,141 @@ trait OptionsTopBar extends StObject {
     * @requires translucent: true
     * @default 'default'
     */
-  var barStyle: js.UndefOr[default | black] = js.native
+  var barStyle: js.UndefOr[default | black] = js.undefined
   
   /**
     * Change the navbar border color
     */
-  var borderColor: js.UndefOr[Color] = js.native
+  var borderColor: js.UndefOr[Color] = js.undefined
   
   /**
     * Set the border height of the navbar in dp
     * #### (Android specific)
     */
-  var borderHeight: js.UndefOr[AndroidDensityNumber] = js.native
+  var borderHeight: js.UndefOr[AndroidDensityNumber] = js.undefined
   
   /**
     * Draw behind the navbar
     */
-  var drawBehind: js.UndefOr[Boolean] = js.native
+  var drawBehind: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the elevation of the navbar in dp
     * #### (Android specific)
     */
-  var elevation: js.UndefOr[AndroidDensityNumber] = js.native
+  var elevation: js.UndefOr[AndroidDensityNumber] = js.undefined
   
   /**
     * Set the height of the navbar in dp
     * #### (Android specific)
     */
-  var height: js.UndefOr[AndroidDensityNumber] = js.native
+  var height: js.UndefOr[AndroidDensityNumber] = js.undefined
   
   /**
     * Controls Hiding NavBar on focus UISearchBar
     * #### (iOS 11+ specific)
     */
-  var hideNavBarOnFocusSearchBar: js.UndefOr[Boolean] = js.native
+  var hideNavBarOnFocusSearchBar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Top bar will hide and show based on users scroll direction
     */
-  var hideOnScroll: js.UndefOr[Boolean] = js.native
+  var hideOnScroll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Control the Large Title configuration
     * #### (iOS 11+ specific)
     */
-  var largeTitle: js.UndefOr[OptionsTopBarLargeTitle] = js.native
+  var largeTitle: js.UndefOr[OptionsTopBarLargeTitle] = js.undefined
   
   /**
     * Change button colors in the top bar
     */
-  var leftButtonColor: js.UndefOr[Color] = js.native
+  var leftButtonColor: js.UndefOr[Color] = js.undefined
   
-  var leftButtonDisabledColor: js.UndefOr[Color] = js.native
+  var leftButtonDisabledColor: js.UndefOr[Color] = js.undefined
   
   /**
     * List of buttons to the left
     */
-  var leftButtons: js.UndefOr[js.Array[OptionsTopBarButton]] = js.native
+  var leftButtons: js.UndefOr[js.Array[OptionsTopBarButton]] = js.undefined
   
   /**
     * Disable the border on bottom of the navbar
     * #### (iOS specific)
     * @default false
     */
-  var noBorder: js.UndefOr[Boolean] = js.native
+  var noBorder: js.UndefOr[Boolean] = js.undefined
   
-  var rightButtonColor: js.UndefOr[Color] = js.native
+  var rightButtonColor: js.UndefOr[Color] = js.undefined
   
-  var rightButtonDisabledColor: js.UndefOr[Color] = js.native
+  var rightButtonDisabledColor: js.UndefOr[Color] = js.undefined
   
   /**
     * List of buttons to the right
     */
-  var rightButtons: js.UndefOr[js.Array[OptionsTopBarButton]] = js.native
+  var rightButtons: js.UndefOr[js.Array[OptionsTopBarButton]] = js.undefined
   
   /**
     *
     */
-  var scrollEdgeAppearance: js.UndefOr[OptionsTopBarScrollEdgeAppearance] = js.native
+  var scrollEdgeAppearance: js.UndefOr[OptionsTopBarScrollEdgeAppearance] = js.undefined
   
   /**
     * Show a UISearchBar in the Top Bar
     * #### (iOS 11+ specific)
     */
-  var searchBar: js.UndefOr[OptionsSearchBar] = js.native
+  var searchBar: js.UndefOr[OptionsSearchBar] = js.undefined
   
   /**
     * The background color of the UISearchBar's TextField
     * #### (iOS 13+ specific)
     */
-  var searchBarBackgroundColor: js.UndefOr[String] = js.native
+  var searchBarBackgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * Hides the UISearchBar when scrolling
     * #### (iOS 11+ specific)
     */
-  var searchBarHiddenWhenScrolling: js.UndefOr[Boolean] = js.native
+  var searchBarHiddenWhenScrolling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The placeholder value in the UISearchBar
     * #### (iOS 11+ specific)
     */
-  var searchBarPlaceholder: js.UndefOr[String] = js.native
+  var searchBarPlaceholder: js.UndefOr[String] = js.undefined
   
   /**
     * The tint color of the UISearchBar
     * #### (iOS 11+ specific)
     */
-  var searchBarTintColor: js.UndefOr[String] = js.native
+  var searchBarTintColor: js.UndefOr[String] = js.undefined
   
   /**
     * Subtitle configuration
     */
-  var subtitle: js.UndefOr[OptionsTopBarSubtitle] = js.native
+  var subtitle: js.UndefOr[OptionsTopBarSubtitle] = js.undefined
   
   /**
     * Can be used to reference the top bar in E2E tests
     */
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
   
   /**
     * Title configuration
     */
-  var title: js.UndefOr[OptionsTopBarTitle] = js.native
+  var title: js.UndefOr[OptionsTopBarTitle] = js.undefined
   
   /**
     * Layout top margin
     * #### (Android specific)
     */
-  var topMargin: js.UndefOr[Double] = js.native
+  var topMargin: js.UndefOr[Double] = js.undefined
   
   /**
     * Show or hide the top bar
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object OptionsTopBar {
   

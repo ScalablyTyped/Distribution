@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OAuth2PermissionGrant extends Entity {
+trait OAuth2PermissionGrant
+  extends StObject
+     with Entity {
   
   /**
     * The id of the client service principal for the application which is authorized to act on behalf of a signed-in user
     * when accessing an API. Required. Supports $filter (eq only).
     */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates if authorization is granted for the client application to impersonate all users or only a specific user.
@@ -20,19 +20,19 @@ trait OAuth2PermissionGrant extends Entity {
     * specific user. Consent on behalf of all users can be granted by an administrator. Non-admin users may be authorized to
     * consent on behalf of themselves in some cases, for some delegated permissions. Required. Supports $filter (eq only).
     */
-  var consentType: js.UndefOr[NullableOption[String]] = js.native
+  var consentType: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The id of the user on behalf of whom the client is authorized to access the resource, when consentType is Principal. If
     * consentType is AllPrincipals this value is null. Required when consentType is Principal.
     */
-  var principalId: js.UndefOr[NullableOption[String]] = js.native
+  var principalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The id of the resource service principal to which access is authorized. This identifies the API which the client is
     * authorized to attempt to call on behalf of a signed-in user.
     */
-  var resourceId: js.UndefOr[String] = js.native
+  var resourceId: js.UndefOr[String] = js.undefined
   
   /**
     * A space-separated list of the claim values for delegated permissions which should be included in access tokens for the
@@ -40,7 +40,7 @@ trait OAuth2PermissionGrant extends Entity {
     * value field of one of the delegated permissions defined by the API, listed in the publishedPermissionScopes property of
     * the resource service principal.
     */
-  var scope: js.UndefOr[NullableOption[String]] = js.native
+  var scope: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object OAuth2PermissionGrant {
   

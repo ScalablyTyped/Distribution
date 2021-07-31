@@ -2,21 +2,19 @@ package typings.forkTsCheckerWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typeScriptDiagnosticsOptionsMod {
   
-  @js.native
   trait TypeScriptDiagnosticsOptions extends StObject {
     
-    var declaration: Boolean = js.native
+    var declaration: Boolean
     
-    var global: Boolean = js.native
+    var global: Boolean
     
-    var semantic: Boolean = js.native
+    var semantic: Boolean
     
-    var syntactic: Boolean = js.native
+    var syntactic: Boolean
   }
   object TypeScriptDiagnosticsOptions {
     

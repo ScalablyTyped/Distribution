@@ -3,15 +3,13 @@ package typings.requestidlecallback
 import typings.std.DOMHighResTimeStamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdleDeadline extends StObject {
   
-  val didTimeout: Boolean = js.native
+  val didTimeout: Boolean
   
-  def timeRemaining(): DOMHighResTimeStamp = js.native
+  def timeRemaining(): DOMHighResTimeStamp
 }
 object IdleDeadline {
   

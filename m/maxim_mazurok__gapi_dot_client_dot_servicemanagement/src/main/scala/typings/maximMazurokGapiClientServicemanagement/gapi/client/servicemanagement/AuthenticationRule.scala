@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationRule extends StObject {
   
   /** If true, the service accepts API keys without any other credential. This flag only applies to HTTP and gRPC requests. */
-  var allowWithoutCredential: js.UndefOr[Boolean] = js.native
+  var allowWithoutCredential: js.UndefOr[Boolean] = js.undefined
   
   /** The requirements for OAuth credentials. */
-  var oauth: js.UndefOr[OAuthRequirements] = js.native
+  var oauth: js.UndefOr[OAuthRequirements] = js.undefined
   
   /** Requirements for additional authentication providers. */
-  var requirements: js.UndefOr[js.Array[AuthRequirement]] = js.native
+  var requirements: js.UndefOr[js.Array[AuthRequirement]] = js.undefined
   
   /** Selects the methods to which this rule applies. Refer to selector for syntax details. */
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
 }
 object AuthenticationRule {
   

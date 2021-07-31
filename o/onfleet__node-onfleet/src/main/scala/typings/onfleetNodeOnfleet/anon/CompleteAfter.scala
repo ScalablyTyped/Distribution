@@ -5,27 +5,25 @@ import typings.onfleetNodeOnfleet.metadataMod.OnfleetMetadata
 import typings.onfleetNodeOnfleet.recipientsMod.OnfleetRecipient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompleteAfter extends StObject {
   
-  var completeAfter: js.UndefOr[Double] = js.native
+  var completeAfter: js.UndefOr[Double] = js.undefined
   
-  var completeBefore: js.UndefOr[Double] = js.native
+  var completeBefore: js.UndefOr[Double] = js.undefined
   
-  var destination: js.UndefOr[String | CreateDestinationProps] = js.native
+  var destination: js.UndefOr[String | CreateDestinationProps] = js.undefined
   
-  var metadata: js.UndefOr[js.Array[OnfleetMetadata]] = js.native
+  var metadata: js.UndefOr[js.Array[OnfleetMetadata]] = js.undefined
   
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
-  var pickupTask: js.UndefOr[Boolean] = js.native
+  var pickupTask: js.UndefOr[Boolean] = js.undefined
   
-  var recipients: js.UndefOr[OnfleetRecipient | js.Array[OnfleetRecipient]] = js.native
+  var recipients: js.UndefOr[OnfleetRecipient | js.Array[OnfleetRecipient]] = js.undefined
   
-  var serviceTime: js.UndefOr[Double] = js.native
+  var serviceTime: js.UndefOr[Double] = js.undefined
 }
 object CompleteAfter {
   

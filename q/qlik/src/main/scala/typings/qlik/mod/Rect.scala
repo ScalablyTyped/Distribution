@@ -2,19 +2,17 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rect extends StObject {
   
-  var qHeight: Double = js.native
+  var qHeight: Double
   
-  var qLeft: Double = js.native
+  var qLeft: Double
   
-  var qTop: Double = js.native
+  var qTop: Double
   
-  var qWdith: Double = js.native
+  var qWdith: Double
 }
 object Rect {
   

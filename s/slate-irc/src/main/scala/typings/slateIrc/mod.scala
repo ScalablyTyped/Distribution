@@ -17,14 +17,16 @@ import typings.slateIrc.slateIrcStrings.welcome
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(socket: Socket): Client = ^.asInstanceOf[js.Dynamic].apply(socket.asInstanceOf[js.Any]).asInstanceOf[Client]
+  
   @JSImport("slate-irc", JSImport.Namespace)
   @js.native
-  def apply(socket: Socket): Client = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("slate-irc", "Client")
   @js.native
@@ -102,12 +104,11 @@ object mod {
     def write(str: String): Unit = js.native
   }
   
-  @js.native
   trait AwayEvent extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var nick: String = js.native
+    var nick: String
   }
   object AwayEvent {
     
@@ -128,18 +129,17 @@ object mod {
     }
   }
   
-  @js.native
   trait DataEvent extends StObject {
     
-    var command: String = js.native
+    var command: String
     
-    var params: String = js.native
+    var params: String
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var string: String = js.native
+    var string: String
     
-    var trailing: String = js.native
+    var trailing: String
   }
   object DataEvent {
     
@@ -169,14 +169,13 @@ object mod {
     }
   }
   
-  @js.native
   trait JoinEvent extends StObject {
     
-    var channel: String = js.native
+    var channel: String
     
-    var hostmask: String = js.native
+    var hostmask: String
     
-    var nick: String = js.native
+    var nick: String
   }
   object JoinEvent {
     
@@ -200,10 +199,9 @@ object mod {
     }
   }
   
-  @js.native
   trait MOTDEvent extends StObject {
     
-    var motd: js.Array[String] = js.native
+    var motd: js.Array[String]
   }
   object MOTDEvent {
     
@@ -224,16 +222,15 @@ object mod {
     }
   }
   
-  @js.native
   trait MessageEvent extends StObject {
     
-    var from: String = js.native
+    var from: String
     
-    var hostmask: String = js.native
+    var hostmask: String
     
-    var message: String = js.native
+    var message: String
     
-    var to: String = js.native
+    var to: String
   }
   object MessageEvent {
     
@@ -260,16 +257,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ModeEvent extends StObject {
     
-    var client: String = js.native
+    var client: String
     
-    var mode: String = js.native
+    var mode: String
     
-    var nick: String = js.native
+    var nick: String
     
-    var target: String = js.native
+    var target: String
   }
   object ModeEvent {
     
@@ -296,14 +292,13 @@ object mod {
     }
   }
   
-  @js.native
   trait NickEvent extends StObject {
     
-    var hostmask: String = js.native
+    var hostmask: String
     
-    var `new`: String = js.native
+    var `new`: String
     
-    var nick: String = js.native
+    var nick: String
   }
   object NickEvent {
     
@@ -328,14 +323,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PartEvent extends StObject {
     
-    var channels: js.Array[String] = js.native
+    var channels: js.Array[String]
     
-    var hostmask: String = js.native
+    var hostmask: String
     
-    var nick: String = js.native
+    var nick: String
   }
   object PartEvent {
     
@@ -362,14 +356,13 @@ object mod {
     }
   }
   
-  @js.native
   trait QuitEvent extends StObject {
     
-    var hostmask: String = js.native
+    var hostmask: String
     
-    var message: String = js.native
+    var message: String
     
-    var nick: String = js.native
+    var nick: String
   }
   object QuitEvent {
     
@@ -393,16 +386,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TopicEvent extends StObject {
     
-    var channel: String = js.native
+    var channel: String
     
-    var hostmask: String = js.native
+    var hostmask: String
     
-    var nick: String = js.native
+    var nick: String
     
-    var topic: String = js.native
+    var topic: String
   }
   object TopicEvent {
     

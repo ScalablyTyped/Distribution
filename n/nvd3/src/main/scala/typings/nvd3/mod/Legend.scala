@@ -2,13 +2,14 @@ package typings.nvd3.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region Chart Component
 @js.native
-trait Legend extends Nvd3Element {
+trait Legend
+  extends StObject
+     with Nvd3Element {
   
   def align(): Boolean = js.native
   def align(value: Boolean): this.type = js.native

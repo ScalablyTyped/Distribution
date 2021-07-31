@@ -2,7 +2,6 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -36,7 +35,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * &quot;type.googleapis.com/google.protobuf.Duration&quot;,
   * &quot;value&quot;: &quot;1.212s&quot; }
   */
-@js.native
 trait SchemaAny extends StObject {
   
   /**
@@ -61,12 +59,12 @@ trait SchemaAny extends StObject {
     * type.googleapis.com.  Schemes other than `http`, `https` (or the empty
     * scheme) might be used with implementation specific semantics.
     */
-  var typeUrl: js.UndefOr[String] = js.native
+  var typeUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Must be a valid serialized protocol buffer of the above specified type.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaAny {
   

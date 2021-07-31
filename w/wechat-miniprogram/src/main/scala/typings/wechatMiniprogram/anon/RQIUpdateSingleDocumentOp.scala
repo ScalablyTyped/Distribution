@@ -4,16 +4,14 @@ import typings.wechatMiniprogram.DB.IUpdateCondition
 import typings.wechatMiniprogram.ICloudConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined wechat-miniprogram.RQ<wechat-miniprogram.DB.IUpdateSingleDocumentOptions> */
-@js.native
 trait RQIUpdateSingleDocumentOp extends StObject {
   
-  var config: js.UndefOr[ICloudConfig] = js.native
+  var config: js.UndefOr[ICloudConfig] = js.undefined
   
-  var data: IUpdateCondition = js.native
+  var data: IUpdateCondition
 }
 object RQIUpdateSingleDocumentOp {
   

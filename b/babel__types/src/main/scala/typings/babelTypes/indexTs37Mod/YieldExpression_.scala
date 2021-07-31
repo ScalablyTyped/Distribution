@@ -3,29 +3,28 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.YieldExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait YieldExpression_
-  extends Expression
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait YieldExpression_
+  extends StObject
      with BaseNode
+     with Expression
      with Terminatorless {
   
-  var argument: Expression | Null = js.native
+  var argument: Expression | Null
   
-  var delegate: Boolean = js.native
+  var delegate: Boolean
   
   @JSName("type")
-  var type_YieldExpression_ : YieldExpression = js.native
+  var type_YieldExpression_ : YieldExpression
 }
 object YieldExpression_ {
   
   @scala.inline
-  def apply(delegate: Boolean, `type`: YieldExpression): YieldExpression_ = {
-    val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(delegate: Boolean): YieldExpression_ = {
+    val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any], argument = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("YieldExpression")
     __obj.asInstanceOf[YieldExpression_]
   }
   

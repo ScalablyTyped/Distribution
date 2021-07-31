@@ -2,56 +2,54 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationalDatabaseBundle extends StObject {
   
   /**
     * The ID for the database bundle.
     */
-  var bundleId: js.UndefOr[String] = js.native
+  var bundleId: js.UndefOr[String] = js.undefined
   
   /**
     * The number of virtual CPUs (vCPUs) for the database bundle.
     */
-  var cpuCount: js.UndefOr[integer] = js.native
+  var cpuCount: js.UndefOr[integer] = js.undefined
   
   /**
     * The size of the disk for the database bundle.
     */
-  var diskSizeInGb: js.UndefOr[integer] = js.native
+  var diskSizeInGb: js.UndefOr[integer] = js.undefined
   
   /**
     * A Boolean value indicating whether the database bundle is active.
     */
-  var isActive: js.UndefOr[Boolean] = js.native
+  var isActive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A Boolean value indicating whether the database bundle is encrypted.
     */
-  var isEncrypted: js.UndefOr[Boolean] = js.native
+  var isEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name for the database bundle.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The cost of the database bundle in US currency.
     */
-  var price: js.UndefOr[float] = js.native
+  var price: js.UndefOr[float] = js.undefined
   
   /**
     * The amount of RAM in GB (for example, 2.0) for the database bundle.
     */
-  var ramSizeInGb: js.UndefOr[float] = js.native
+  var ramSizeInGb: js.UndefOr[float] = js.undefined
   
   /**
     * The data transfer rate per month in GB for the database bundle.
     */
-  var transferPerMonthInGb: js.UndefOr[integer] = js.native
+  var transferPerMonthInGb: js.UndefOr[integer] = js.undefined
 }
 object RelationalDatabaseBundle {
   

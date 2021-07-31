@@ -2,41 +2,39 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleSymbolDetails extends StObject {
   
   /**
     * Absolute address.
     */
-  var address: NativePointer = js.native
+  var address: NativePointer
   
   /**
     * Whether symbol is globally visible.
     */
-  var isGlobal: Boolean = js.native
+  var isGlobal: Boolean
   
   /**
     * Symbol name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Which section this symbol resides in, if available.
     */
-  var section: js.UndefOr[ModuleSymbolSectionDetails] = js.native
+  var section: js.UndefOr[ModuleSymbolSectionDetails] = js.undefined
   
   /**
     * Size in bytes, if available.
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * The kind of symbol.
     */
-  var `type`: ModuleSymbolType = js.native
+  var `type`: ModuleSymbolType
 }
 object ModuleSymbolDetails {
   

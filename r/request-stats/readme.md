@@ -12,7 +12,7 @@ Get stats on your Node.js HTTP server requests
 | Keywords           | stats, statistics, http, https, middleware, connect, express, analytics |
 | # releases         | 1 |
 | # dependents       | 10 |
-| # downloads        | 1493799 |
+| # downloads        | 1851346 |
 | # stars            | 2 |
 
 ## Links

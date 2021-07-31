@@ -7,7 +7,6 @@ import typings.reactNativeChartsWrapper.mod.PieValuePosition
 import typings.reactNativeChartsWrapper.mod._ValueFormatter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeChartsWrapperStrings {
@@ -93,147 +92,205 @@ object reactNativeChartsWrapperStrings {
   def EMPTY: EMPTY = "EMPTY".asInstanceOf[EMPTY]
   
   @js.native
-  sealed trait EaseInBack extends EasingType
+  sealed trait EaseInBack
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInBack: EaseInBack = "EaseInBack".asInstanceOf[EaseInBack]
   
   @js.native
-  sealed trait EaseInBounce extends EasingType
+  sealed trait EaseInBounce
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInBounce: EaseInBounce = "EaseInBounce".asInstanceOf[EaseInBounce]
   
   @js.native
-  sealed trait EaseInCirc extends EasingType
+  sealed trait EaseInCirc
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInCirc: EaseInCirc = "EaseInCirc".asInstanceOf[EaseInCirc]
   
   @js.native
-  sealed trait EaseInCubic extends EasingType
+  sealed trait EaseInCubic
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInCubic: EaseInCubic = "EaseInCubic".asInstanceOf[EaseInCubic]
   
   @js.native
-  sealed trait EaseInElastic extends EasingType
+  sealed trait EaseInElastic
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInElastic: EaseInElastic = "EaseInElastic".asInstanceOf[EaseInElastic]
   
   @js.native
-  sealed trait EaseInExpo extends EasingType
+  sealed trait EaseInExpo
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInExpo: EaseInExpo = "EaseInExpo".asInstanceOf[EaseInExpo]
   
   @js.native
-  sealed trait EaseInOutBack extends EasingType
+  sealed trait EaseInOutBack
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInOutBack: EaseInOutBack = "EaseInOutBack".asInstanceOf[EaseInOutBack]
   
   @js.native
-  sealed trait EaseInOutBounce extends EasingType
+  sealed trait EaseInOutBounce
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInOutBounce: EaseInOutBounce = "EaseInOutBounce".asInstanceOf[EaseInOutBounce]
   
   @js.native
-  sealed trait EaseInOutCirc extends EasingType
+  sealed trait EaseInOutCirc
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInOutCirc: EaseInOutCirc = "EaseInOutCirc".asInstanceOf[EaseInOutCirc]
   
   @js.native
-  sealed trait EaseInOutCubic extends EasingType
+  sealed trait EaseInOutCubic
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInOutCubic: EaseInOutCubic = "EaseInOutCubic".asInstanceOf[EaseInOutCubic]
   
   @js.native
-  sealed trait EaseInOutElastic extends EasingType
+  sealed trait EaseInOutElastic
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInOutElastic: EaseInOutElastic = "EaseInOutElastic".asInstanceOf[EaseInOutElastic]
   
   @js.native
-  sealed trait EaseInOutExpo extends EasingType
+  sealed trait EaseInOutExpo
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInOutExpo: EaseInOutExpo = "EaseInOutExpo".asInstanceOf[EaseInOutExpo]
   
   @js.native
-  sealed trait EaseInOutQuad extends EasingType
+  sealed trait EaseInOutQuad
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInOutQuad: EaseInOutQuad = "EaseInOutQuad".asInstanceOf[EaseInOutQuad]
   
   @js.native
-  sealed trait EaseInOutQuart extends EasingType
+  sealed trait EaseInOutQuart
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInOutQuart: EaseInOutQuart = "EaseInOutQuart".asInstanceOf[EaseInOutQuart]
   
   @js.native
-  sealed trait EaseInOutSine extends EasingType
+  sealed trait EaseInOutSine
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInOutSine: EaseInOutSine = "EaseInOutSine".asInstanceOf[EaseInOutSine]
   
   @js.native
-  sealed trait EaseInQuad extends EasingType
+  sealed trait EaseInQuad
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInQuad: EaseInQuad = "EaseInQuad".asInstanceOf[EaseInQuad]
   
   @js.native
-  sealed trait EaseInQuart extends EasingType
+  sealed trait EaseInQuart
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInQuart: EaseInQuart = "EaseInQuart".asInstanceOf[EaseInQuart]
   
   @js.native
-  sealed trait EaseInSine extends EasingType
+  sealed trait EaseInSine
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseInSine: EaseInSine = "EaseInSine".asInstanceOf[EaseInSine]
   
   @js.native
-  sealed trait EaseOutBack extends EasingType
+  sealed trait EaseOutBack
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseOutBack: EaseOutBack = "EaseOutBack".asInstanceOf[EaseOutBack]
   
   @js.native
-  sealed trait EaseOutBounce extends EasingType
+  sealed trait EaseOutBounce
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseOutBounce: EaseOutBounce = "EaseOutBounce".asInstanceOf[EaseOutBounce]
   
   @js.native
-  sealed trait EaseOutCirc extends EasingType
+  sealed trait EaseOutCirc
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseOutCirc: EaseOutCirc = "EaseOutCirc".asInstanceOf[EaseOutCirc]
   
   @js.native
-  sealed trait EaseOutCubic extends EasingType
+  sealed trait EaseOutCubic
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseOutCubic: EaseOutCubic = "EaseOutCubic".asInstanceOf[EaseOutCubic]
   
   @js.native
-  sealed trait EaseOutElastic extends EasingType
+  sealed trait EaseOutElastic
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseOutElastic: EaseOutElastic = "EaseOutElastic".asInstanceOf[EaseOutElastic]
   
   @js.native
-  sealed trait EaseOutExpo extends EasingType
+  sealed trait EaseOutExpo
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseOutExpo: EaseOutExpo = "EaseOutExpo".asInstanceOf[EaseOutExpo]
   
   @js.native
-  sealed trait EaseOutQuad extends EasingType
+  sealed trait EaseOutQuad
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseOutQuad: EaseOutQuad = "EaseOutQuad".asInstanceOf[EaseOutQuad]
   
   @js.native
-  sealed trait EaseOutQuart extends EasingType
+  sealed trait EaseOutQuart
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseOutQuart: EaseOutQuart = "EaseOutQuart".asInstanceOf[EaseOutQuart]
   
   @js.native
-  sealed trait EaseOutSine extends EasingType
+  sealed trait EaseOutSine
+    extends StObject
+       with EasingType
   @scala.inline
   def EaseOutSine: EaseOutSine = "EaseOutSine".asInstanceOf[EaseOutSine]
   
   @js.native
-  sealed trait FILL extends CandleStickPaintStyle
+  sealed trait FILL
+    extends StObject
+       with CandleStickPaintStyle
   @scala.inline
   def FILL: FILL = "FILL".asInstanceOf[FILL]
   
   @js.native
-  sealed trait FILL_AND_STROKE extends CandleStickPaintStyle
+  sealed trait FILL_AND_STROKE
+    extends StObject
+       with CandleStickPaintStyle
   @scala.inline
   def FILL_AND_STROKE: FILL_AND_STROKE = "FILL_AND_STROKE".asInstanceOf[FILL_AND_STROKE]
   
@@ -258,12 +315,16 @@ object reactNativeChartsWrapperStrings {
   def INSIDE_CHART: INSIDE_CHART = "INSIDE_CHART".asInstanceOf[INSIDE_CHART]
   
   @js.native
-  sealed trait INSIDE_SLICE extends PieValuePosition
+  sealed trait INSIDE_SLICE
+    extends StObject
+       with PieValuePosition
   @scala.inline
   def INSIDE_SLICE: INSIDE_SLICE = "INSIDE_SLICE".asInstanceOf[INSIDE_SLICE]
   
   @js.native
-  sealed trait LEFT extends AxisDependency
+  sealed trait LEFT
+    extends StObject
+       with AxisDependency
   @scala.inline
   def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
   
@@ -298,7 +359,9 @@ object reactNativeChartsWrapperStrings {
   def LINEAR: LINEAR = "LINEAR".asInstanceOf[LINEAR]
   
   @js.native
-  sealed trait Linear_ extends EasingType
+  sealed trait Linear_
+    extends StObject
+       with EasingType
   @scala.inline
   def Linear_ : Linear_ = "Linear".asInstanceOf[Linear_]
   
@@ -323,12 +386,16 @@ object reactNativeChartsWrapperStrings {
   def OUTSIDE_CHART: OUTSIDE_CHART = "OUTSIDE_CHART".asInstanceOf[OUTSIDE_CHART]
   
   @js.native
-  sealed trait OUTSIDE_SLICE extends PieValuePosition
+  sealed trait OUTSIDE_SLICE
+    extends StObject
+       with PieValuePosition
   @scala.inline
   def OUTSIDE_SLICE: OUTSIDE_SLICE = "OUTSIDE_SLICE".asInstanceOf[OUTSIDE_SLICE]
   
   @js.native
-  sealed trait RIGHT extends AxisDependency
+  sealed trait RIGHT
+    extends StObject
+       with AxisDependency
   @scala.inline
   def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
   
@@ -373,7 +440,9 @@ object reactNativeChartsWrapperStrings {
   def STEPPED: STEPPED = "STEPPED".asInstanceOf[STEPPED]
   
   @js.native
-  sealed trait STROKE extends CandleStickPaintStyle
+  sealed trait STROKE
+    extends StObject
+       with CandleStickPaintStyle
   @scala.inline
   def STROKE: STROKE = "STROKE".asInstanceOf[STROKE]
   
@@ -418,17 +487,23 @@ object reactNativeChartsWrapperStrings {
   def X: X = "X".asInstanceOf[X]
   
   @js.native
-  sealed trait date extends _ValueFormatter
+  sealed trait date
+    extends StObject
+       with _ValueFormatter
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait largeValue extends _ValueFormatter
+  sealed trait largeValue
+    extends StObject
+       with _ValueFormatter
   @scala.inline
   def largeValue: largeValue = "largeValue".asInstanceOf[largeValue]
   
   @js.native
-  sealed trait percent extends _ValueFormatter
+  sealed trait percent
+    extends StObject
+       with _ValueFormatter
   @scala.inline
   def percent: percent = "percent".asInstanceOf[percent]
 }

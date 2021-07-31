@@ -2,26 +2,24 @@ package typings.mapbox.mod.global.L.mapbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Control * / any */ @js.native
-trait InfoControl_ extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Control * / any */ trait InfoControl_ extends StObject {
   
   /**
     * Adds an info string to infoControl.
     */
-  def addInfo(info: String): js.Any = js.native
+  def addInfo(info: String): js.Any
   
-  def onAdd(map: Map_): js.Any = js.native
+  def onAdd(map: Map_): js.Any
   
-  def onRemove(map: Map_): js.Any = js.native
+  def onRemove(map: Map_): js.Any
   
   /**
     * Removes an info string from infoControl
     */
-  def removeInfo(info: String): js.Any = js.native
+  def removeInfo(info: String): js.Any
 }
 object InfoControl_ {
   

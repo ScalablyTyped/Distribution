@@ -10,12 +10,15 @@ A pure JS Base64 <-> UInt8Array converter
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-base64-browser |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 412 |
-| # downloads        | 1567863 |
+| # releases         | 24 |
+| # dependents       | 258 |
+| # downloads        | 6755091 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-base64-browser)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Futil-base64-browser)
     
 

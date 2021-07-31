@@ -2,7 +2,6 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,69 +10,68 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://developer.android.com/training/testing/performance.html Statistics
   * will only be present for API 23+.
   */
-@js.native
 trait SchemaGraphicsStats extends StObject {
   
   /**
     * Histogram of frame render times. There should be 154 buckets ranging from
     * [5ms, 6ms) to [4950ms, infinity)
     */
-  var buckets: js.UndefOr[js.Array[SchemaGraphicsStatsBucket]] = js.native
+  var buckets: js.UndefOr[js.Array[SchemaGraphicsStatsBucket]] = js.undefined
   
   /**
     * Total &quot;high input latency&quot; events.
     */
-  var highInputLatencyCount: js.UndefOr[String] = js.native
+  var highInputLatencyCount: js.UndefOr[String] = js.undefined
   
   /**
     * Total frames with slow render time. Should be &lt;= total_frames.
     */
-  var jankyFrames: js.UndefOr[String] = js.native
+  var jankyFrames: js.UndefOr[String] = js.undefined
   
   /**
     * Total &quot;missed vsync&quot; events.
     */
-  var missedVsyncCount: js.UndefOr[String] = js.native
+  var missedVsyncCount: js.UndefOr[String] = js.undefined
   
   /**
     * 50th percentile frame render time in milliseconds.
     */
-  var p50Millis: js.UndefOr[String] = js.native
+  var p50Millis: js.UndefOr[String] = js.undefined
   
   /**
     * 90th percentile frame render time in milliseconds.
     */
-  var p90Millis: js.UndefOr[String] = js.native
+  var p90Millis: js.UndefOr[String] = js.undefined
   
   /**
     * 95th percentile frame render time in milliseconds.
     */
-  var p95Millis: js.UndefOr[String] = js.native
+  var p95Millis: js.UndefOr[String] = js.undefined
   
   /**
     * 99th percentile frame render time in milliseconds.
     */
-  var p99Millis: js.UndefOr[String] = js.native
+  var p99Millis: js.UndefOr[String] = js.undefined
   
   /**
     * Total &quot;slow bitmap upload&quot; events.
     */
-  var slowBitmapUploadCount: js.UndefOr[String] = js.native
+  var slowBitmapUploadCount: js.UndefOr[String] = js.undefined
   
   /**
     * Total &quot;slow draw&quot; events.
     */
-  var slowDrawCount: js.UndefOr[String] = js.native
+  var slowDrawCount: js.UndefOr[String] = js.undefined
   
   /**
     * Total &quot;slow UI thread&quot; events.
     */
-  var slowUiThreadCount: js.UndefOr[String] = js.native
+  var slowUiThreadCount: js.UndefOr[String] = js.undefined
   
   /**
     * Total frames rendered by package.
     */
-  var totalFrames: js.UndefOr[String] = js.native
+  var totalFrames: js.UndefOr[String] = js.undefined
 }
 object SchemaGraphicsStats {
   

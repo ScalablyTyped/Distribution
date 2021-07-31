@@ -2,21 +2,19 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanoramaData extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var id: String = js.native
+  var id: String
   
-  var links: js.Array[PanoramaLink] = js.native
+  var links: js.Array[PanoramaLink]
   
-  var position: Point = js.native
+  var position: Point
   
-  var tiles: PanoramaTileData = js.native
+  var tiles: PanoramaTileData
 }
 object PanoramaData {
   

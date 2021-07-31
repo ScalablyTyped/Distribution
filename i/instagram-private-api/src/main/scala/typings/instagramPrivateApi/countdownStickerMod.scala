@@ -4,7 +4,6 @@ import typings.instagramPrivateApi.instaStickerMod.InstaSticker
 import typings.luxon.mod.DateTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object countdownStickerMod {

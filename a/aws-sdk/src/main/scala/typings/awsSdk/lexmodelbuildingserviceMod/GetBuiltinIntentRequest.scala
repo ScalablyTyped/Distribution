@@ -2,16 +2,14 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBuiltinIntentRequest extends StObject {
   
   /**
     * The unique identifier for a built-in intent. To find the signature for an intent, see Standard Built-in Intents in the Alexa Skills Kit.
     */
-  var signature: BuiltinIntentSignature = js.native
+  var signature: BuiltinIntentSignature
 }
 object GetBuiltinIntentRequest {
   

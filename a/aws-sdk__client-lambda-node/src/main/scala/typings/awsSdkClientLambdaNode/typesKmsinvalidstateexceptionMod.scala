@@ -3,22 +3,22 @@ package typings.awsSdkClientLambdaNode
 import typings.awsSdkClientLambdaNode.invokeExceptionsUnionMod.InvokeExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesKmsinvalidstateexceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KMSInvalidStateExceptionDetails> * / any */ @js.native
-  trait KMSInvalidStateException extends InvokeExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KMSInvalidStateExceptionDetails> * / any */ trait KMSInvalidStateException
+    extends StObject
+       with InvokeExceptionsUnion {
     
-    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.KMSInvalidStateException = js.native
+    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.KMSInvalidStateException
   }
   object KMSInvalidStateException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.KMSInvalidStateException): KMSInvalidStateException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): KMSInvalidStateException = {
+      val __obj = js.Dynamic.literal(name = "KMSInvalidStateException")
       __obj.asInstanceOf[KMSInvalidStateException]
     }
     
@@ -30,18 +30,17 @@ object typesKmsinvalidstateexceptionMod {
     }
   }
   
-  @js.native
   trait KMSInvalidStateExceptionDetails extends StObject {
     
     /**
       * _String shape
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
     
     /**
       * _String shape
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
   }
   object KMSInvalidStateExceptionDetails {
     

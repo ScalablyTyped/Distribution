@@ -3,13 +3,11 @@ package typings.ionicReact.anon
 import typings.ionicReact.createControllerComponentMod.OverlayBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Create[OptionsType /* <: js.Object */, OverlayType /* <: OverlayBase */] extends StObject {
   
-  def create(options: OptionsType): js.Promise[OverlayType] = js.native
+  def create(options: OptionsType): js.Promise[OverlayType]
 }
 object Create {
   
@@ -20,7 +18,7 @@ object Create {
   }
   
   @scala.inline
-  implicit class CreateMutableBuilder[Self <: Create[_, _], OptionsType /* <: js.Object */, OverlayType /* <: OverlayBase */] (val x: Self with (Create[OptionsType, OverlayType])) extends AnyVal {
+  implicit class CreateMutableBuilder[Self <: Create[?, ?], OptionsType /* <: js.Object */, OverlayType /* <: OverlayBase */] (val x: Self & (Create[OptionsType, OverlayType])) extends AnyVal {
     
     @scala.inline
     def setCreate(value: OptionsType => js.Promise[OverlayType]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))

@@ -2,7 +2,6 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -89,9 +88,9 @@ trait IField extends StObject {
     * @returns - A promise true or false
     */
   def select(qMatch: String): js.Promise[Boolean] = js.native
-  def select(qMatch: String, qSoftLock: js.UndefOr[scala.Nothing], qExcludedValuesMode: Double): js.Promise[Boolean] = js.native
   def select(qMatch: String, qSoftLock: Boolean): js.Promise[Boolean] = js.native
   def select(qMatch: String, qSoftLock: Boolean, qExcludedValuesMode: Double): js.Promise[Boolean] = js.native
+  def select(qMatch: String, qSoftLock: Unit, qExcludedValuesMode: Double): js.Promise[Boolean] = js.native
   
   /**
     * Selects all values of a field. Excluded values are also selected.
@@ -153,9 +152,9 @@ trait IField extends StObject {
     * @returns - A promise true or false
     */
   def selectValues(qFieldValues: js.Array[IFieldValue]): js.Promise[Boolean] = js.native
-  def selectValues(qFieldValues: js.Array[IFieldValue], qToggleMode: js.UndefOr[scala.Nothing], qSoftLock: Boolean): js.Promise[Boolean] = js.native
   def selectValues(qFieldValues: js.Array[IFieldValue], qToggleMode: Boolean): js.Promise[Boolean] = js.native
   def selectValues(qFieldValues: js.Array[IFieldValue], qToggleMode: Boolean, qSoftLock: Boolean): js.Promise[Boolean] = js.native
+  def selectValues(qFieldValues: js.Array[IFieldValue], qToggleMode: Unit, qSoftLock: Boolean): js.Promise[Boolean] = js.native
   
   /**
     * Sets a field in the AND mode.
@@ -190,9 +189,9 @@ trait IField extends StObject {
     * @returns - A promise true or false
     */
   def toggleSelect(qMatch: String): js.Promise[Boolean] = js.native
-  def toggleSelect(qMatch: String, qSoftLock: js.UndefOr[scala.Nothing], qExcludedValuesMode: Double): js.Promise[Boolean] = js.native
   def toggleSelect(qMatch: String, qSoftLock: Boolean): js.Promise[Boolean] = js.native
   def toggleSelect(qMatch: String, qSoftLock: Boolean, qExcludedValuesMode: Double): js.Promise[Boolean] = js.native
+  def toggleSelect(qMatch: String, qSoftLock: Unit, qExcludedValuesMode: Double): js.Promise[Boolean] = js.native
   
   /**
     * Unlocks all selected values of a specific field if the target (or handle ) is a field.

@@ -3,13 +3,11 @@ package typings.pulumiKubernetes.inputMod.policy.v1beta1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AllowedHostPath defines the host volume conditions that will be enabled by a policy for pods to use. It requires the path prefix to be defined.
   */
-@js.native
 trait AllowedHostPath extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait AllowedHostPath extends StObject {
     *
     * Examples: `/foo` would allow `/foo`, `/foo/` and `/foo/bar` `/foo` would not allow `/food` or `/etc/foo`
     */
-  var pathPrefix: js.UndefOr[Input[String]] = js.native
+  var pathPrefix: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * when set to true, will allow host volumes matching the pathPrefix only if all volume mounts are readOnly.
     */
-  var readOnly: js.UndefOr[Input[Boolean]] = js.native
+  var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
 }
 object AllowedHostPath {
   

@@ -4,21 +4,19 @@ import typings.ltijs.idTokenMod.IdToken
 import typings.ltijs.ltijsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gradeServiceMod {
   
-  @js.native
   trait GradeFilters extends StObject {
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var resourceLinkId: js.UndefOr[Boolean] = js.native
+    var resourceLinkId: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[Boolean] = js.native
+    var tag: js.UndefOr[Boolean] = js.undefined
     
-    var userId: js.UndefOr[Boolean] = js.native
+    var userId: js.UndefOr[Boolean] = js.undefined
   }
   object GradeFilters {
     
@@ -66,16 +64,15 @@ object gradeServiceMod {
     def scorePublish(idtoken: IdToken, grade: PublishedGrade): js.Promise[Boolean] = js.native
   }
   
-  @js.native
   trait PublishedGrade extends StObject {
     
-    var activityProgress: String = js.native
+    var activityProgress: String
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var gradingProgress: String = js.native
+    var gradingProgress: String
     
-    var scoreGiven: Double = js.native
+    var scoreGiven: Double
   }
   object PublishedGrade {
     
@@ -105,20 +102,19 @@ object gradeServiceMod {
     }
   }
   
-  @js.native
   trait RetrievedGrade extends StObject {
     
-    var comment: String = js.native
+    var comment: String
     
-    var id: String = js.native
+    var id: String
     
-    var resultMaximum: Double = js.native
+    var resultMaximum: Double
     
-    var resultScore: Double = js.native
+    var resultScore: Double
     
-    var scoreOf: String = js.native
+    var scoreOf: String
     
-    var userId: String = js.native
+    var userId: String
   }
   object RetrievedGrade {
     

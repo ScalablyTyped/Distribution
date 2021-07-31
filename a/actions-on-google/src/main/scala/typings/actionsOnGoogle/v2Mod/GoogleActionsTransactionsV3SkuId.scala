@@ -2,27 +2,25 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsTransactionsV3SkuId extends StObject {
   
   /**
     * The identifier of the product SKU used for registration in the developer
     * console.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the android package under which the sku was registered.
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of SKU.
     */
-  var skuType: js.UndefOr[GoogleActionsTransactionsV3SkuIdSkuType] = js.native
+  var skuType: js.UndefOr[GoogleActionsTransactionsV3SkuIdSkuType] = js.undefined
 }
 object GoogleActionsTransactionsV3SkuId {
   

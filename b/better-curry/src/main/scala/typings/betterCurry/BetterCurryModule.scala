@@ -2,7 +2,6 @@ package typings.betterCurry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BetterCurryModule {
@@ -14,37 +13,25 @@ object BetterCurryModule {
     
     def delegate[T](proto: T, target: String): Delegate[T] = js.native
     
-    def flatten(args: (js.Array[_] | js.Any)*): js.Array[_] = js.native
+    def flatten(args: (js.Array[js.Any] | js.Any)*): js.Array[js.Any] = js.native
     
-    def predefine[T /* <: js.Function */](fn: T, args: js.Array[_]): OriginalFunctionReminder[T] = js.native
-    def predefine[T /* <: js.Function */](
-      fn: T,
-      args: js.Array[_],
-      context: js.UndefOr[scala.Nothing],
-      len: js.UndefOr[scala.Nothing],
-      checkArguments: Boolean
-    ): OriginalFunctionReminder[T] = js.native
-    def predefine[T /* <: js.Function */](fn: T, args: js.Array[_], context: js.UndefOr[scala.Nothing], len: Double): OriginalFunctionReminder[T] = js.native
-    def predefine[T /* <: js.Function */](fn: T, args: js.Array[_], context: js.UndefOr[scala.Nothing], len: Double, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
-    def predefine[T /* <: js.Function */](fn: T, args: js.Array[_], context: js.Object): OriginalFunctionReminder[T] = js.native
-    def predefine[T /* <: js.Function */](
-      fn: T,
-      args: js.Array[_],
-      context: js.Object,
-      len: js.UndefOr[scala.Nothing],
-      checkArguments: Boolean
-    ): OriginalFunctionReminder[T] = js.native
-    def predefine[T /* <: js.Function */](fn: T, args: js.Array[_], context: js.Object, len: Double): OriginalFunctionReminder[T] = js.native
-    def predefine[T /* <: js.Function */](fn: T, args: js.Array[_], context: js.Object, len: Double, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any]): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any], context: js.Object): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any], context: js.Object, len: Double): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any], context: js.Object, len: Double, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any], context: js.Object, len: Unit, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any], context: Unit, len: Double): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any], context: Unit, len: Double, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any], context: Unit, len: Unit, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
     
     def wrap[T /* <: js.Function */](fn: T): OriginalFunctionReminder[T] = js.native
-    def wrap[T /* <: js.Function */](fn: T, context: js.UndefOr[scala.Nothing], len: js.UndefOr[scala.Nothing], checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
-    def wrap[T /* <: js.Function */](fn: T, context: js.UndefOr[scala.Nothing], len: Double): OriginalFunctionReminder[T] = js.native
-    def wrap[T /* <: js.Function */](fn: T, context: js.UndefOr[scala.Nothing], len: Double, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
     def wrap[T /* <: js.Function */](fn: T, context: js.Object): OriginalFunctionReminder[T] = js.native
-    def wrap[T /* <: js.Function */](fn: T, context: js.Object, len: js.UndefOr[scala.Nothing], checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
     def wrap[T /* <: js.Function */](fn: T, context: js.Object, len: Double): OriginalFunctionReminder[T] = js.native
     def wrap[T /* <: js.Function */](fn: T, context: js.Object, len: Double, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
+    def wrap[T /* <: js.Function */](fn: T, context: js.Object, len: Unit, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
+    def wrap[T /* <: js.Function */](fn: T, context: Unit, len: Double): OriginalFunctionReminder[T] = js.native
+    def wrap[T /* <: js.Function */](fn: T, context: Unit, len: Double, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
+    def wrap[T /* <: js.Function */](fn: T, context: Unit, len: Unit, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
   }
   
   @js.native
@@ -59,12 +46,12 @@ object BetterCurryModule {
     def getter(name: String): Delegate[T] = js.native
     def getter(name: DelegateOptions): Delegate[T] = js.native
     
-    var getters: js.Array[_] = js.native
+    var getters: js.Array[js.Any] = js.native
     
     def method(name: String): Delegate[T] = js.native
     def method(name: DelegateOptions): Delegate[T] = js.native
     
-    var methods: js.Array[_] = js.native
+    var methods: js.Array[js.Any] = js.native
     
     var proto: T = js.native
     
@@ -73,21 +60,20 @@ object BetterCurryModule {
     def setter(name: String): Delegate[T] = js.native
     def setter(name: DelegateOptions): Delegate[T] = js.native
     
-    var setters: js.Array[_] = js.native
+    var setters: js.Array[js.Any] = js.native
     
     var target: String = js.native
   }
   
-  @js.native
   trait DelegateOptions extends StObject {
     
-    var args: js.UndefOr[js.Array[_]] = js.native
+    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var as: js.UndefOr[String] = js.native
+    var as: js.UndefOr[String] = js.undefined
     
-    var len: js.UndefOr[Double] = js.native
+    var len: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object DelegateOptions {
     
@@ -101,7 +87,7 @@ object BetterCurryModule {
     implicit class DelegateOptionsMutableBuilder[Self <: DelegateOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)

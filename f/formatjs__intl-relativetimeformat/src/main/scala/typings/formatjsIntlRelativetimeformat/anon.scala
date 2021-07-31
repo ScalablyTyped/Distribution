@@ -4,16 +4,14 @@ import typings.formatjsIntlRelativetimeformat.formatjsIntlRelativetimeformatStri
 import typings.formatjsIntlRelativetimeformat.formatjsIntlRelativetimeformatStrings.lookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Pick<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract.IntlRelativeTimeFormatOptions, 'localeMatcher'> */
-  @js.native
   trait PickIntlRelativeTimeForma extends StObject {
     
-    var localeMatcher: js.UndefOr[(`best fit`) | lookup] = js.native
+    var localeMatcher: js.UndefOr[(`best fit`) | lookup] = js.undefined
   }
   object PickIntlRelativeTimeForma {
     

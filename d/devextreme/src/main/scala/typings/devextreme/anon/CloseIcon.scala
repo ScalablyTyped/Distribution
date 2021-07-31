@@ -15,27 +15,25 @@ import typings.devextreme.devextremeStrings.up
 import typings.devextreme.mod.DevExpress.positionConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseIcon extends StObject {
   
-  var closeIcon: js.UndefOr[String] = js.native
+  var closeIcon: js.UndefOr[String] = js.undefined
   
-  var direction: js.UndefOr[auto | up | down] = js.native
+  var direction: js.UndefOr[auto | up | down] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var maxSpeedDialActionCount: js.UndefOr[Double] = js.native
+  var maxSpeedDialActionCount: js.UndefOr[Double] = js.undefined
   
   var position: js.UndefOr[
     bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | positionConfig | js.Function
-  ] = js.native
+  ] = js.undefined
   
-  var shading: js.UndefOr[Boolean] = js.native
+  var shading: js.UndefOr[Boolean] = js.undefined
 }
 object CloseIcon {
   

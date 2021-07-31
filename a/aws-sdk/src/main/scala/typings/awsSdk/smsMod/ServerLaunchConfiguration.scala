@@ -2,68 +2,66 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerLaunchConfiguration extends StObject {
   
   /**
     * Indicates whether a publicly accessible IP address is created when launching the server.
     */
-  var associatePublicIpAddress: js.UndefOr[AssociatePublicIpAddress] = js.native
+  var associatePublicIpAddress: js.UndefOr[AssociatePublicIpAddress] = js.undefined
   
-  var configureScript: js.UndefOr[S3Location] = js.native
+  var configureScript: js.UndefOr[S3Location] = js.undefined
   
   /**
     * The type of configuration script.
     */
-  var configureScriptType: js.UndefOr[ScriptType] = js.native
+  var configureScriptType: js.UndefOr[ScriptType] = js.undefined
   
   /**
     * The name of the Amazon EC2 SSH key to be used for connecting to the launched server.
     */
-  var ec2KeyName: js.UndefOr[EC2KeyName] = js.native
+  var ec2KeyName: js.UndefOr[EC2KeyName] = js.undefined
   
   /**
     * The name of the IAM instance profile.
     */
-  var iamInstanceProfileName: js.UndefOr[RoleName] = js.native
+  var iamInstanceProfileName: js.UndefOr[RoleName] = js.undefined
   
   /**
     * The instance type to use when launching the server.
     */
-  var instanceType: js.UndefOr[InstanceType] = js.native
+  var instanceType: js.UndefOr[InstanceType] = js.undefined
   
   /**
     * The logical ID of the server in the AWS CloudFormation template.
     */
-  var logicalId: js.UndefOr[LogicalId] = js.native
+  var logicalId: js.UndefOr[LogicalId] = js.undefined
   
   /**
     * The ID of the security group that applies to the launched server.
     */
-  var securityGroup: js.UndefOr[SecurityGroup] = js.native
+  var securityGroup: js.UndefOr[SecurityGroup] = js.undefined
   
   /**
     * The ID of the server with which the launch configuration is associated.
     */
-  var server: js.UndefOr[Server] = js.native
+  var server: js.UndefOr[Server] = js.undefined
   
   /**
     * The ID of the subnet the server should be launched into.
     */
-  var subnet: js.UndefOr[Subnet] = js.native
+  var subnet: js.UndefOr[Subnet] = js.undefined
   
   /**
     * Location of the user-data script to be executed when launching the server.
     */
-  var userData: js.UndefOr[UserData] = js.native
+  var userData: js.UndefOr[UserData] = js.undefined
   
   /**
     * The ID of the VPC into which the server should be launched.
     */
-  var vpc: js.UndefOr[VPC] = js.native
+  var vpc: js.UndefOr[VPC] = js.undefined
 }
 object ServerLaunchConfiguration {
   

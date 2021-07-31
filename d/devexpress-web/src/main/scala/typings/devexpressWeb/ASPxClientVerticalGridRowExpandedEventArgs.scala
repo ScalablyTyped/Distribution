@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientVerticalGrid.RowExpandedChanged event.
   */
-@js.native
-trait ASPxClientVerticalGridRowExpandedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientVerticalGridRowExpandedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the expanded row.
     */
-  var row: ASPxClientVerticalGridRow = js.native
+  var row: ASPxClientVerticalGridRow
 }
 object ASPxClientVerticalGridRowExpandedEventArgs {
   

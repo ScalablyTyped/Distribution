@@ -6,17 +6,17 @@ import typings.googleAppsScript.GoogleAppsScript.Script.AuthMode
 import typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SheetsOnFormSubmit extends AppsScriptEvent {
+trait SheetsOnFormSubmit
+  extends StObject
+     with AppsScriptEvent {
   
-  var namedValues: StringDictionary[js.Array[String]] = js.native
+  var namedValues: StringDictionary[js.Array[String]]
   
-  var range: Range = js.native
+  var range: Range
   
-  var values: js.Array[String] = js.native
+  var values: js.Array[String]
 }
 object SheetsOnFormSubmit {
   

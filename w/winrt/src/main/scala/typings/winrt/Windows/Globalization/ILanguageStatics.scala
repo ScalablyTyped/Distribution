@@ -2,15 +2,13 @@ package typings.winrt.Windows.Globalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILanguageStatics extends StObject {
   
-  var currentInputMethodLanguageTag: String = js.native
+  var currentInputMethodLanguageTag: String
   
-  def isWellFormed(languageTag: String): Boolean = js.native
+  def isWellFormed(languageTag: String): Boolean
 }
 object ILanguageStatics {
   

@@ -2,96 +2,94 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFunctionRequest extends StObject {
   
   /**
     * The code for the function.
     */
-  var Code: FunctionCode = js.native
+  var Code: FunctionCode
   
   /**
     * A dead letter queue configuration that specifies the queue or topic where Lambda sends asynchronous events when they fail processing. For more information, see Dead Letter Queues.
     */
-  var DeadLetterConfig: js.UndefOr[typings.awsSdk.lambdaMod.DeadLetterConfig] = js.native
+  var DeadLetterConfig: js.UndefOr[typings.awsSdk.lambdaMod.DeadLetterConfig] = js.undefined
   
   /**
     * A description of the function.
     */
-  var Description: js.UndefOr[typings.awsSdk.lambdaMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.lambdaMod.Description] = js.undefined
   
   /**
     * Environment variables that are accessible from function code during execution.
     */
-  var Environment: js.UndefOr[typings.awsSdk.lambdaMod.Environment] = js.native
+  var Environment: js.UndefOr[typings.awsSdk.lambdaMod.Environment] = js.undefined
   
   /**
     * Connection settings for an Amazon EFS file system.
     */
-  var FileSystemConfigs: js.UndefOr[FileSystemConfigList] = js.native
+  var FileSystemConfigs: js.UndefOr[FileSystemConfigList] = js.undefined
   
   /**
     * The name of the Lambda function.  Name formats     Function name - my-function.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
     */
-  var FunctionName: typings.awsSdk.lambdaMod.FunctionName = js.native
+  var FunctionName: typings.awsSdk.lambdaMod.FunctionName
   
   /**
     * The name of the method within your code that Lambda calls to execute your function. The format includes the file name. It can also include namespaces and other qualifiers, depending on the runtime. For more information, see Programming Model.
     */
-  var Handler: typings.awsSdk.lambdaMod.Handler = js.native
+  var Handler: typings.awsSdk.lambdaMod.Handler
   
   /**
     * The ARN of the AWS Key Management Service (AWS KMS) key that's used to encrypt your function's environment variables. If it's not provided, AWS Lambda uses a default service key.
     */
-  var KMSKeyArn: js.UndefOr[typings.awsSdk.lambdaMod.KMSKeyArn] = js.native
+  var KMSKeyArn: js.UndefOr[typings.awsSdk.lambdaMod.KMSKeyArn] = js.undefined
   
   /**
     * A list of function layers to add to the function's execution environment. Specify each layer by its ARN, including the version.
     */
-  var Layers: js.UndefOr[LayerList] = js.native
+  var Layers: js.UndefOr[LayerList] = js.undefined
   
   /**
     * The amount of memory that your function has access to. Increasing the function's memory also increases its CPU allocation. The default value is 128 MB. The value must be a multiple of 64 MB.
     */
-  var MemorySize: js.UndefOr[typings.awsSdk.lambdaMod.MemorySize] = js.native
+  var MemorySize: js.UndefOr[typings.awsSdk.lambdaMod.MemorySize] = js.undefined
   
   /**
     * Set to true to publish the first version of the function during creation.
     */
-  var Publish: js.UndefOr[Boolean] = js.native
+  var Publish: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the function's execution role.
     */
-  var Role: RoleArn = js.native
+  var Role: RoleArn
   
   /**
     * The identifier of the function's runtime.
     */
-  var Runtime: typings.awsSdk.lambdaMod.Runtime = js.native
+  var Runtime: typings.awsSdk.lambdaMod.Runtime
   
   /**
     * A list of tags to apply to the function.
     */
-  var Tags: js.UndefOr[typings.awsSdk.lambdaMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.lambdaMod.Tags] = js.undefined
   
   /**
     * The amount of time that Lambda allows a function to run before stopping it. The default is 3 seconds. The maximum allowed value is 900 seconds.
     */
-  var Timeout: js.UndefOr[typings.awsSdk.lambdaMod.Timeout] = js.native
+  var Timeout: js.UndefOr[typings.awsSdk.lambdaMod.Timeout] = js.undefined
   
   /**
     * Set Mode to Active to sample and trace a subset of incoming requests with AWS X-Ray.
     */
-  var TracingConfig: js.UndefOr[typings.awsSdk.lambdaMod.TracingConfig] = js.native
+  var TracingConfig: js.UndefOr[typings.awsSdk.lambdaMod.TracingConfig] = js.undefined
   
   /**
     * For network connectivity to AWS resources in a VPC, specify a list of security groups and subnets in the VPC. When you connect a function to a VPC, it can only access resources and the internet through that VPC. For more information, see VPC Settings.
     */
-  var VpcConfig: js.UndefOr[typings.awsSdk.lambdaMod.VpcConfig] = js.native
+  var VpcConfig: js.UndefOr[typings.awsSdk.lambdaMod.VpcConfig] = js.undefined
 }
 object CreateFunctionRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartDataCollectionByAgentIdsResponse extends StObject {
   
   /**
     * Information about agents or the connector that were instructed to start collecting data. Information includes the agent/connector ID, a description of the operation performed, and whether the agent/connector configuration was updated.
     */
-  var agentsConfigurationStatus: js.UndefOr[AgentConfigurationStatusList] = js.native
+  var agentsConfigurationStatus: js.UndefOr[AgentConfigurationStatusList] = js.undefined
 }
 object StartDataCollectionByAgentIdsResponse {
   

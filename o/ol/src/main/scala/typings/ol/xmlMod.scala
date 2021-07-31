@@ -4,14 +4,15 @@ import typings.std.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlMod {
   
   @JSImport("ol/format/XML", JSImport.Default)
   @js.native
-  abstract class default () extends XML
+  abstract class default ()
+    extends StObject
+       with XML
   
   @js.native
   trait XML extends StObject {

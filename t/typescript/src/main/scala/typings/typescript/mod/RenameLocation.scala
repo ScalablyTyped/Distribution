@@ -2,15 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenameLocation extends DocumentSpan {
+trait RenameLocation
+  extends StObject
+     with DocumentSpan {
   
-  val prefixText: js.UndefOr[java.lang.String] = js.native
+  val prefixText: js.UndefOr[java.lang.String] = js.undefined
   
-  val suffixText: js.UndefOr[java.lang.String] = js.native
+  val suffixText: js.UndefOr[java.lang.String] = js.undefined
 }
 object RenameLocation {
   

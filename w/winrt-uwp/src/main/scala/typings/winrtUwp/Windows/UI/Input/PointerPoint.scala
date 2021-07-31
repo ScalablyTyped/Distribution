@@ -4,36 +4,34 @@ import typings.winrtUwp.Windows.Devices.Input.PointerDevice
 import typings.winrtUwp.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides basic properties for the input pointer associated with a single mouse, pen/stylus, or touch contact. */
-@js.native
 trait PointerPoint extends StObject {
   
   /** Gets the ID of an input frame. */
-  var frameId: Double = js.native
+  var frameId: Double
   
   /** Gets a value that indicates whether the physical entity (touch, pen/stylus, or mouse button) is pressed down. */
-  var isInContact: Boolean = js.native
+  var isInContact: Boolean
   
   /** Gets information about the device associated with the input pointer. */
-  var pointerDevice: PointerDevice = js.native
+  var pointerDevice: PointerDevice
   
   /** Gets a unique identifier for the input pointer. */
-  var pointerId: Double = js.native
+  var pointerId: Double
   
   /** Gets the location of the pointer input in client coordinates. */
-  var position: Point = js.native
+  var position: Point
   
   /** Gets extended information about the input pointer. */
-  var properties: PointerPointProperties = js.native
+  var properties: PointerPointProperties
   
   /** Gets the raw location of the pointer input in client coordinates. */
-  var rawPosition: Point = js.native
+  var rawPosition: Point
   
   /** Gets the time when the input occurred. */
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object PointerPoint {
   

@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the UI settings for the SpeechRecognizer.RecognizeWithUIAsync method. */
-@js.native
 trait SpeechRecognizerUIOptions extends StObject {
   
   /** Gets or sets the heading text that is displayed on the Listening screen. The default is "Listening...". */
-  var audiblePrompt: String = js.native
+  var audiblePrompt: String
   
   /** Gets or sets the example text shown on the Listening screen. */
-  var exampleText: String = js.native
+  var exampleText: String
   
   /** Gets or sets whether the recognized text is spoken back to the user on the Heard you say screen. */
-  var isReadBackEnabled: Boolean = js.native
+  var isReadBackEnabled: Boolean
   
   /** Gets or sets whether a Heard you say screen is shown to the user after speech recognition is completed. */
-  var showConfirmation: Boolean = js.native
+  var showConfirmation: Boolean
 }
 object SpeechRecognizerUIOptions {
   

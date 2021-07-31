@@ -2,20 +2,18 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconSequence extends StObject {
   
-  var fixedRotation: js.UndefOr[Boolean] = js.native
+  var fixedRotation: js.UndefOr[Boolean] = js.undefined
   
   // tslint:disable-next-line:no-unnecessary-qualifier
-  var icon: js.UndefOr[Symbol] = js.native
+  var icon: js.UndefOr[Symbol] = js.undefined
   
-  var offset: js.UndefOr[String] = js.native
+  var offset: js.UndefOr[String] = js.undefined
   
-  var repeat: js.UndefOr[String] = js.native
+  var repeat: js.UndefOr[String] = js.undefined
 }
 object IconSequence {
   

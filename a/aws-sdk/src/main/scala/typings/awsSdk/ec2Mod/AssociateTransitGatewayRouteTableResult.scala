@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateTransitGatewayRouteTableResult extends StObject {
   
   /**
     * The ID of the association.
     */
-  var Association: js.UndefOr[TransitGatewayAssociation] = js.native
+  var Association: js.UndefOr[TransitGatewayAssociation] = js.undefined
 }
 object AssociateTransitGatewayRouteTableResult {
   

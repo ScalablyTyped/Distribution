@@ -3,33 +3,31 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticloadbalancing {
   
-  @js.native
   trait LoadBalancerAccessLogs extends StObject {
     
     /**
       * The S3 bucket name to store the logs in.
       */
-    var bucket: Input[String] = js.native
+    var bucket: Input[String]
     
     /**
       * The S3 bucket prefix. Logs are stored in the root if not configured.
       */
-    var bucketPrefix: js.UndefOr[Input[String]] = js.native
+    var bucketPrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean to enable / disable `accessLogs`. Default is `true`
       */
-    var enabled: js.UndefOr[Input[Boolean]] = js.native
+    var enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The publishing interval in minutes. Default: 60 minutes.
       */
-    var interval: js.UndefOr[Input[Double]] = js.native
+    var interval: js.UndefOr[Input[Double]] = js.undefined
   }
   object LoadBalancerAccessLogs {
     
@@ -65,18 +63,17 @@ object elasticloadbalancing {
     }
   }
   
-  @js.native
   trait LoadBalancerHealthCheck extends StObject {
     
     /**
       * The number of checks before the instance is declared healthy.
       */
-    var healthyThreshold: Input[Double] = js.native
+    var healthyThreshold: Input[Double]
     
     /**
       * The interval between checks.
       */
-    var interval: Input[Double] = js.native
+    var interval: Input[Double]
     
     /**
       * The target of the check. Valid pattern is "${PROTOCOL}:${PORT}${PATH}", where PROTOCOL
@@ -84,17 +81,17 @@ object elasticloadbalancing {
       * * `HTTP`, `HTTPS` - PORT and PATH are required
       * * `TCP`, `SSL` - PORT is required, PATH is not supported
       */
-    var target: Input[String] = js.native
+    var target: Input[String]
     
     /**
       * The length of time before the check times out.
       */
-    var timeout: Input[Double] = js.native
+    var timeout: Input[Double]
     
     /**
       * The number of checks before the instance is declared unhealthy.
       */
-    var unhealthyThreshold: Input[Double] = js.native
+    var unhealthyThreshold: Input[Double]
   }
   object LoadBalancerHealthCheck {
     
@@ -130,36 +127,35 @@ object elasticloadbalancing {
     }
   }
   
-  @js.native
   trait LoadBalancerListener extends StObject {
     
     /**
       * The port on the instance to route to
       */
-    var instancePort: Input[Double] = js.native
+    var instancePort: Input[Double]
     
     /**
       * The protocol to use to the instance. Valid
       * values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
       */
-    var instanceProtocol: Input[String] = js.native
+    var instanceProtocol: Input[String]
     
     /**
       * The port to listen on for the load balancer
       */
-    var lbPort: Input[Double] = js.native
+    var lbPort: Input[Double]
     
     /**
       * The protocol to listen on. Valid values are `HTTP`,
       * `HTTPS`, `TCP`, or `SSL`
       */
-    var lbProtocol: Input[String] = js.native
+    var lbProtocol: Input[String]
     
     /**
       * The ARN of an SSL certificate you have
       * uploaded to AWS IAM. **Note ECDSA-specific restrictions below.  Only valid when `lbProtocol` is either HTTPS or SSL**
       */
-    var sslCertificateId: js.UndefOr[Input[String]] = js.native
+    var sslCertificateId: js.UndefOr[Input[String]] = js.undefined
   }
   object LoadBalancerListener {
     
@@ -197,12 +193,11 @@ object elasticloadbalancing {
     }
   }
   
-  @js.native
   trait LoadBalancerPolicyPolicyAttribute extends StObject {
     
-    var name: js.UndefOr[Input[String]] = js.native
+    var name: js.UndefOr[Input[String]] = js.undefined
     
-    var value: js.UndefOr[Input[String]] = js.native
+    var value: js.UndefOr[Input[String]] = js.undefined
   }
   object LoadBalancerPolicyPolicyAttribute {
     
@@ -229,18 +224,17 @@ object elasticloadbalancing {
     }
   }
   
-  @js.native
   trait SslNegotiationPolicyAttribute extends StObject {
     
     /**
       * The name of the attribute
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * The value of the attribute
       */
-    var value: Input[String] = js.native
+    var value: Input[String]
   }
   object SslNegotiationPolicyAttribute {
     

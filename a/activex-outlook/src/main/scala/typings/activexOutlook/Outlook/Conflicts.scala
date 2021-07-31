@@ -2,34 +2,32 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Conflicts extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def GetFirst(): Conflict = js.native
+  def GetFirst(): Conflict
   
-  def GetLast(): Conflict = js.native
+  def GetLast(): Conflict
   
-  def GetNext(): Conflict = js.native
+  def GetNext(): Conflict
   
-  def GetPrevious(): Conflict = js.native
+  def GetPrevious(): Conflict
   
-  def Item(Index: js.Any): Conflict = js.native
+  def Item(Index: js.Any): Conflict
   
   @JSName("Outlook.Conflicts_typekey")
-  var OutlookDotConflicts_typekey: Conflicts = js.native
+  var OutlookDotConflicts_typekey: Conflicts
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object Conflicts {
   

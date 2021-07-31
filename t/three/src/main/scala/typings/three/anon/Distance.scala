@@ -3,15 +3,13 @@ package typings.three.anon
 import typings.three.object3DMod.Object3D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Distance extends StObject {
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var `object`: Object3D = js.native
+  var `object`: Object3D
 }
 object Distance {
   

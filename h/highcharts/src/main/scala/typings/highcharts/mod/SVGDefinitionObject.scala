@@ -3,18 +3,17 @@ package typings.highcharts.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGDefinitionObject
-  extends /* key */ StringDictionary[js.UndefOr[Boolean | Double | String | js.Array[SVGDefinitionObject]]] {
+  extends StObject
+     with /* key */ StringDictionary[js.UndefOr[Boolean | Double | String | js.Array[SVGDefinitionObject]]] {
   
-  var children: js.UndefOr[js.Array[SVGDefinitionObject]] = js.native
+  var children: js.UndefOr[js.Array[SVGDefinitionObject]] = js.undefined
   
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
   
-  var textContent: js.UndefOr[String] = js.native
+  var textContent: js.UndefOr[String] = js.undefined
 }
 object SVGDefinitionObject {
   

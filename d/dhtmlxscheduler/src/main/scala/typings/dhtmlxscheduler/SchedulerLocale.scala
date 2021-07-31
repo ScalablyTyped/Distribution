@@ -2,15 +2,13 @@ package typings.dhtmlxscheduler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerLocale extends StObject {
   
-  var date: SchedulerLocaleDate = js.native
+  var date: SchedulerLocaleDate
   
-  var labels: SchedulerLocaleLabels = js.native
+  var labels: SchedulerLocaleLabels
 }
 object SchedulerLocale {
   

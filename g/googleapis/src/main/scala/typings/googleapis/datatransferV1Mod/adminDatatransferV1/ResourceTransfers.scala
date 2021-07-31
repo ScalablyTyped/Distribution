@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/datatransfer_v1", "admin_datatransfer_v1.Resource$Transfers")
@@ -30,7 +29,7 @@ class ResourceTransfers protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDataTransfer] = js.native
   def get(callback: BodyResponseCallback[SchemaDataTransfer]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataTransfer] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDataTransfer] = js.native
   def get(params: ParamsResourceTransfersGet): GaxiosPromise[SchemaDataTransfer] = js.native
   def get(params: ParamsResourceTransfersGet, callback: BodyResponseCallback[SchemaDataTransfer]): Unit = js.native
   def get(
@@ -59,7 +58,7 @@ class ResourceTransfers protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaDataTransfer] = js.native
   def insert(callback: BodyResponseCallback[SchemaDataTransfer]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataTransfer] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDataTransfer] = js.native
   def insert(params: ParamsResourceTransfersInsert): GaxiosPromise[SchemaDataTransfer] = js.native
   def insert(params: ParamsResourceTransfersInsert, callback: BodyResponseCallback[SchemaDataTransfer]): Unit = js.native
   def insert(
@@ -94,7 +93,7 @@ class ResourceTransfers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaDataTransfersListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaDataTransfersListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataTransfersListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDataTransfersListResponse] = js.native
   def list(params: ParamsResourceTransfersList): GaxiosPromise[SchemaDataTransfersListResponse] = js.native
   def list(
     params: ParamsResourceTransfersList,

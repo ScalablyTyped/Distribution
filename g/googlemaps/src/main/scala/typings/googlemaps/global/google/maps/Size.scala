@@ -2,7 +2,6 @@ package typings.googlemaps.global.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("google.maps.Size")
 @js.native
 class Size protected ()
-  extends typings.googlemaps.google.maps.Size {
+  extends StObject
+     with typings.googlemaps.google.maps.Size {
   /**
     * Two-dimensional size.
     * @param width the distance on the x-axis
@@ -22,6 +22,27 @@ class Size protected ()
     */
   def this(width: Double, height: Double) = this()
   def this(width: Double, height: Double, widthUnit: String) = this()
-  def this(width: Double, height: Double, widthUnit: js.UndefOr[scala.Nothing], heightUnit: String) = this()
   def this(width: Double, height: Double, widthUnit: String, heightUnit: String) = this()
+  def this(width: Double, height: Double, widthUnit: Unit, heightUnit: String) = this()
+  
+  /**
+    * Compares two Sizes.
+    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/coordinates#Size.equals Maps JavaScript API}
+    */
+  /* CompleteClass */
+  override def equals(other: typings.googlemaps.google.maps.Size): Boolean = js.native
+  
+  /**
+    * The height along the y-axis, in pixels.
+    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/coordinates#Size.height Maps JavaScript API}
+    */
+  /* CompleteClass */
+  var height: Double = js.native
+  
+  /**
+    * The width along the x-axis, in pixels.
+    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/coordinates#Size.width Maps JavaScript API}
+    */
+  /* CompleteClass */
+  var width: Double = js.native
 }

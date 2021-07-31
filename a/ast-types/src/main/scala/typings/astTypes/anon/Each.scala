@@ -6,21 +6,19 @@ import typings.astTypes.kindsMod.PatternKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Each extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var each: Boolean = js.native
+  var each: Boolean
   
-  var left: PatternKind = js.native
+  var left: PatternKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var right: ExpressionKind = js.native
+  var right: ExpressionKind
 }
 object Each {
   

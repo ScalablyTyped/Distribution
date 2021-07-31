@@ -2,7 +2,6 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @class MouseConstraint
   */
-@js.native
 trait MouseConstraint extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait MouseConstraint extends StObject {
     * @type body
     * @default null
     */
-  var body: BodyType = js.native
+  var body: BodyType
   
   /**
     * An `Object` that specifies the collision filter properties.
@@ -33,7 +31,7 @@ trait MouseConstraint extends StObject {
     * @property collisionFilter
     * @type object
     */
-  var collisionFilter: ICollisionFilter = js.native
+  var collisionFilter: ICollisionFilter
   
   /**
     * The `Constraint` object that is used to move the body during interaction.
@@ -41,7 +39,7 @@ trait MouseConstraint extends StObject {
     * @property constraint
     * @type constraint
     */
-  var constraint: ConstraintType = js.native
+  var constraint: ConstraintType
   
   /**
     * A `String` denoting the type of object.
@@ -50,7 +48,7 @@ trait MouseConstraint extends StObject {
     * @type string
     * @default "constraint"
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object MouseConstraint {
   

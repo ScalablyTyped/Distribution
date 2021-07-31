@@ -2,19 +2,17 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delay extends StObject {
   
-  var delay: Double = js.native
+  var delay: Double
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var timingFunction: String = js.native
+  var timingFunction: String
   
-  var transformOrigin: String = js.native
+  var transformOrigin: String
 }
 object Delay {
   

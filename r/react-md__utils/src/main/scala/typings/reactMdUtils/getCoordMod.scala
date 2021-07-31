@@ -4,65 +4,57 @@ import typings.std.ClientRect
 import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getCoordMod {
   
-  @JSImport("@react-md/utils/types/positioning/getCoord", "getAboveCoord")
+  @JSImport("@react-md/utils/types/positioning/getCoord", JSImport.Namespace)
   @js.native
-  def getAboveCoord(hasYMarginInitialYElHeightContainerRect: YCoordConfig): Top = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-md/utils/types/positioning/getCoord", "getBelowCoord")
-  @js.native
-  def getBelowCoord(hasYMarginInitialYContainerRect: YCoordConfig): Top = js.native
+  @scala.inline
+  def getAboveCoord(hasYMarginInitialYElHeightContainerRect: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getAboveCoord")(hasYMarginInitialYElHeightContainerRect.asInstanceOf[js.Any]).asInstanceOf[Top]
   
-  @JSImport("@react-md/utils/types/positioning/getCoord", "getBottomCoord")
-  @js.native
-  def getBottomCoord(hasYMarginInitialYElHeightContainerRect: YCoordConfig): Top = js.native
+  @scala.inline
+  def getBelowCoord(hasYMarginInitialYContainerRect: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getBelowCoord")(hasYMarginInitialYContainerRect.asInstanceOf[js.Any]).asInstanceOf[Top]
   
-  @JSImport("@react-md/utils/types/positioning/getCoord", "getCenterXCoord")
-  @js.native
-  def getCenterXCoord(hasElWidthInitialXContainerRect: XCoordConfig): Left = js.native
+  @scala.inline
+  def getBottomCoord(hasYMarginInitialYElHeightContainerRect: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getBottomCoord")(hasYMarginInitialYElHeightContainerRect.asInstanceOf[js.Any]).asInstanceOf[Top]
   
-  @JSImport("@react-md/utils/types/positioning/getCoord", "getCenterYCoord")
-  @js.native
-  def getCenterYCoord(hasElHeightInitialYContainerRect: YCoordConfig): Top = js.native
+  @scala.inline
+  def getCenterXCoord(hasElWidthInitialXContainerRect: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getCenterXCoord")(hasElWidthInitialXContainerRect.asInstanceOf[js.Any]).asInstanceOf[Left]
   
-  @JSImport("@react-md/utils/types/positioning/getCoord", "getInnerLeftCoord")
-  @js.native
-  def getInnerLeftCoord(hasXMarginInitialXContainerRect: XCoordConfig): Left = js.native
+  @scala.inline
+  def getCenterYCoord(hasElHeightInitialYContainerRect: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getCenterYCoord")(hasElHeightInitialYContainerRect.asInstanceOf[js.Any]).asInstanceOf[Top]
   
-  @JSImport("@react-md/utils/types/positioning/getCoord", "getInnerRightCoord")
-  @js.native
-  def getInnerRightCoord(hasXMarginElWidthInitialXContainerRect: XCoordConfig): Left = js.native
+  @scala.inline
+  def getInnerLeftCoord(hasXMarginInitialXContainerRect: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getInnerLeftCoord")(hasXMarginInitialXContainerRect.asInstanceOf[js.Any]).asInstanceOf[Left]
   
-  @JSImport("@react-md/utils/types/positioning/getCoord", "getLeftCoord")
-  @js.native
-  def getLeftCoord(hasXMarginElWidthInitialXContainerRect: XCoordConfig): Left = js.native
+  @scala.inline
+  def getInnerRightCoord(hasXMarginElWidthInitialXContainerRect: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getInnerRightCoord")(hasXMarginElWidthInitialXContainerRect.asInstanceOf[js.Any]).asInstanceOf[Left]
   
-  @JSImport("@react-md/utils/types/positioning/getCoord", "getRightCoord")
-  @js.native
-  def getRightCoord(hasXMarginInitialXContainerRect: XCoordConfig): Left = js.native
+  @scala.inline
+  def getLeftCoord(hasXMarginElWidthInitialXContainerRect: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getLeftCoord")(hasXMarginElWidthInitialXContainerRect.asInstanceOf[js.Any]).asInstanceOf[Left]
   
-  @JSImport("@react-md/utils/types/positioning/getCoord", "getTopCoord")
-  @js.native
-  def getTopCoord(hasYMarginInitialYContainerRect: YCoordConfig): Top = js.native
+  @scala.inline
+  def getRightCoord(hasXMarginInitialXContainerRect: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getRightCoord")(hasXMarginInitialXContainerRect.asInstanceOf[js.Any]).asInstanceOf[Left]
+  
+  @scala.inline
+  def getTopCoord(hasYMarginInitialYContainerRect: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopCoord")(hasYMarginInitialYContainerRect.asInstanceOf[js.Any]).asInstanceOf[Top]
   
   type Left = Double
   
   type Top = Double
   
-  @js.native
   trait XCoordConfig extends StObject {
     
-    var containerRect: DOMRect | ClientRect = js.native
+    var containerRect: DOMRect | ClientRect
     
-    var elWidth: Double = js.native
+    var elWidth: Double
     
-    var initialX: js.UndefOr[Double] = js.native
+    var initialX: js.UndefOr[Double] = js.undefined
     
-    var xMargin: Double = js.native
+    var xMargin: Double
   }
   object XCoordConfig {
     
@@ -92,16 +84,15 @@ object getCoordMod {
     }
   }
   
-  @js.native
   trait YCoordConfig extends StObject {
     
-    var containerRect: DOMRect | ClientRect = js.native
+    var containerRect: DOMRect | ClientRect
     
-    var elHeight: Double = js.native
+    var elHeight: Double
     
-    var initialY: js.UndefOr[Double] = js.native
+    var initialY: js.UndefOr[Double] = js.undefined
     
-    var yMargin: Double = js.native
+    var yMargin: Double
   }
   object YCoordConfig {
     

@@ -8,7 +8,6 @@ import typings.wordpressCustomizeBrowser.classMod.Class
 import typings.wordpressCustomizeBrowser.valueMod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messengerMod {
@@ -52,14 +51,13 @@ object messengerMod {
     var url: Value[String] = js.native
   }
   
-  @js.native
   trait MessengerParams extends StObject {
     
-    var channel: String = js.native
+    var channel: String
     
-    var targetWindow: Window = js.native
+    var targetWindow: Window
     
-    var url: String = js.native
+    var url: String
   }
   object MessengerParams {
     

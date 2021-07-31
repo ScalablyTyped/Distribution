@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudbillingMod {
+  
+  @JSImport("googleapis/build/src/apis/cloudbilling", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object cloudbillingMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/cloudbilling", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/cloudbilling", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object cloudbillingMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/cloudbilling", "cloudbilling")
-  @js.native
-  def cloudbilling(options: Options): Cloudbilling = js.native
-  @JSImport("googleapis/build/src/apis/cloudbilling", "cloudbilling")
-  @js.native
-  def cloudbilling_v1(version: v1): Cloudbilling = js.native
+  @scala.inline
+  def cloudbilling(options: Options): Cloudbilling = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudbilling")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudbilling]
+  
+  @scala.inline
+  def cloudbilling_v1(version: v1): Cloudbilling = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudbilling")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudbilling]
 }

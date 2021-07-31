@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*************************
   * model interfaces
   ************************/
 /** AggregationResult. */
-@js.native
 trait AggregationResult extends StObject {
   
   /** Aggregations returned in the case of chained aggregations. */
-  var aggregations: js.UndefOr[js.Array[QueryAggregation]] = js.native
+  var aggregations: js.UndefOr[js.Array[QueryAggregation]] = js.undefined
   
   /** Key that matched the aggregation type. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Number of matching results. */
-  var matching_results: js.UndefOr[Double] = js.native
+  var matching_results: js.UndefOr[Double] = js.undefined
 }
 object AggregationResult {
   

@@ -4,24 +4,24 @@ import typings.zchatBrowser.mod.EventData
 import typings.zchatBrowser.zchatBrowserStrings.typing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Typing extends EventData {
+trait Typing
+  extends StObject
+     with EventData {
   
-  var nick: String = js.native
+  var nick: String
   
-  var `type`: typing = js.native
+  var `type`: typing
   
-  var typing: Boolean = js.native
+  var typing: Boolean
 }
 object Typing {
   
   @scala.inline
-  def apply(nick: String, `type`: typing, typing: Boolean): Typing = {
+  def apply(nick: String, typing: Boolean): Typing = {
     val __obj = js.Dynamic.literal(nick = nick.asInstanceOf[js.Any], typing = typing.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("typing")
     __obj.asInstanceOf[Typing]
   }
   

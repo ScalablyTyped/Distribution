@@ -3,24 +3,22 @@ package typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1beta1
 import typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1beta1.SynthesizeSpeechRequest.TimepointType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SynthesizeSpeechRequest. */
-@js.native
 trait ISynthesizeSpeechRequest extends StObject {
   
   /** SynthesizeSpeechRequest audioConfig */
-  var audioConfig: js.UndefOr[IAudioConfig | Null] = js.native
+  var audioConfig: js.UndefOr[IAudioConfig | Null] = js.undefined
   
   /** SynthesizeSpeechRequest enableTimePointing */
-  var enableTimePointing: js.UndefOr[js.Array[TimepointType] | Null] = js.native
+  var enableTimePointing: js.UndefOr[js.Array[TimepointType] | Null] = js.undefined
   
   /** SynthesizeSpeechRequest input */
-  var input: js.UndefOr[ISynthesisInput | Null] = js.native
+  var input: js.UndefOr[ISynthesisInput | Null] = js.undefined
   
   /** SynthesizeSpeechRequest voice */
-  var voice: js.UndefOr[IVoiceSelectionParams | Null] = js.native
+  var voice: js.UndefOr[IVoiceSelectionParams | Null] = js.undefined
 }
 object ISynthesizeSpeechRequest {
   

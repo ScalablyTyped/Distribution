@@ -3,28 +3,26 @@ package typings.azureArmResource.resourceModelsMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceGroupPatchable extends StObject {
   
   /**
     * The ID of the resource that manages this resource group.
     */
-  var managedBy: js.UndefOr[String] = js.native
+  var managedBy: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the resource group.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var properties: js.UndefOr[ResourceGroupProperties] = js.native
+  var properties: js.UndefOr[ResourceGroupProperties] = js.undefined
   
   /**
     * The tags attached to the resource group.
     */
-  var tags: js.UndefOr[StringDictionary[String]] = js.native
+  var tags: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object ResourceGroupPatchable {
   

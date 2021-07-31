@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,48 +13,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.Cell
   * @see com.sun.star.text.XTextTable
   */
-@js.native
-trait XTextTableCursor extends XInterface {
+trait XTextTableCursor
+  extends StObject
+     with XInterface {
   
   /**
     * @returns the name of the cell range that is selected by this cursor. The name is the cell name of the top left table cell of the range concatenated by ":"
     * @see com.sun:star.text.CellRange
     */
-  val RangeName: String = js.native
+  val RangeName: String
   
   /**
     * @returns the name of the cell range that is selected by this cursor. The name is the cell name of the top left table cell of the range concatenated by ":"
     * @see com.sun:star.text.CellRange
     */
-  def getRangeName(): String = js.native
+  def getRangeName(): String
   
   /**
     * moves the cursor to the bottom neighbor cell.
     * @param nCount the number of cells to move.
     * @param bExpand determines whether the selection is to be expanded.
     */
-  def goDown(nCount: Double, bExpand: Boolean): Boolean = js.native
+  def goDown(nCount: Double, bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the left neighbor.
     * @param nCount the number of cells to move.
     * @param bExpand determines whether the selection is to be expanded.
     */
-  def goLeft(nCount: Double, bExpand: Boolean): Boolean = js.native
+  def goLeft(nCount: Double, bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the right neighbor.
     * @param nCount the number of cells to move.
     * @param bExpand determines whether the selection is to be expanded.
     */
-  def goRight(nCount: Double, bExpand: Boolean): Boolean = js.native
+  def goRight(nCount: Double, bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the top neighbor.
     * @param nCount the number of cells to move.
     * @param bExpand determines whether the selection is to be expanded.
     */
-  def goUp(nCount: Double, bExpand: Boolean): Boolean = js.native
+  def goUp(nCount: Double, bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the cell with the specified name.
@@ -63,25 +63,25 @@ trait XTextTableCursor extends XInterface {
     * @param bExpand determines whether the selection is to be expanded.
     * @see com.sun.star.text.Cell
     */
-  def gotoCellByName(aCellName: String, bExpand: Boolean): Boolean = js.native
+  def gotoCellByName(aCellName: String, bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the bottom right cell of the table.
     * @param bExpand determines whether the selection is to be expanded.
     */
-  def gotoEnd(bExpand: Boolean): Unit = js.native
+  def gotoEnd(bExpand: Boolean): Unit
   
   /**
     * moves the cursor to the top left cell of the table.
     * @param bExpand determines whether the selection is to be expanded.
     */
-  def gotoStart(bExpand: Boolean): Unit = js.native
+  def gotoStart(bExpand: Boolean): Unit
   
   /**
     * merges the selected range of cells.
     * @see com.sun.star.CellRange
     */
-  def mergeRange(): Boolean = js.native
+  def mergeRange(): Boolean
   
   /**
     * splits the range of cells.
@@ -90,7 +90,7 @@ trait XTextTableCursor extends XInterface {
     * @see com.sun.star.Cell
     * @see com.sun.star.CellRange
     */
-  def splitRange(nCount: Double, bHorizontal: Boolean): Boolean = js.native
+  def splitRange(nCount: Double, bHorizontal: Boolean): Boolean
 }
 object XTextTableCursor {
   

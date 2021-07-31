@@ -2,35 +2,33 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Target scaling by disk usage. Only applicable in the App Engine flexible
   * environment.
   */
-@js.native
 trait SchemaDiskUtilization extends StObject {
   
   /**
     * Target bytes read per second.
     */
-  var targetReadBytesPerSecond: js.UndefOr[Double] = js.native
+  var targetReadBytesPerSecond: js.UndefOr[Double] = js.undefined
   
   /**
     * Target ops read per seconds.
     */
-  var targetReadOpsPerSecond: js.UndefOr[Double] = js.native
+  var targetReadOpsPerSecond: js.UndefOr[Double] = js.undefined
   
   /**
     * Target bytes written per second.
     */
-  var targetWriteBytesPerSecond: js.UndefOr[Double] = js.native
+  var targetWriteBytesPerSecond: js.UndefOr[Double] = js.undefined
   
   /**
     * Target ops written per second.
     */
-  var targetWriteOpsPerSecond: js.UndefOr[Double] = js.native
+  var targetWriteOpsPerSecond: js.UndefOr[Double] = js.undefined
 }
 object SchemaDiskUtilization {
   

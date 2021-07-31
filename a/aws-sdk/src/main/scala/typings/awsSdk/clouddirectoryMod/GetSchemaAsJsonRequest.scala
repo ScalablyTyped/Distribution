@@ -2,16 +2,14 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSchemaAsJsonRequest extends StObject {
   
   /**
     * The ARN of the schema to retrieve.
     */
-  var SchemaArn: Arn = js.native
+  var SchemaArn: Arn
 }
 object GetSchemaAsJsonRequest {
   

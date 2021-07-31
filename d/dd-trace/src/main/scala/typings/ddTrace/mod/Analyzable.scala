@@ -3,11 +3,9 @@ package typings.ddTrace.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
-@js.native
 trait Analyzable extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait Analyzable extends StObject {
     * control the sample rate, or to an key-value pair with span names as keys
     * and booleans or sample rates as values for more granular control.
     */
-  var analytics: js.UndefOr[Boolean | Double | (StringDictionary[Boolean | Double])] = js.native
+  var analytics: js.UndefOr[Boolean | Double | (StringDictionary[Boolean | Double])] = js.undefined
 }
 object Analyzable {
   

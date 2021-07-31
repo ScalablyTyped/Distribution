@@ -2,41 +2,39 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOpsSummaryRequest extends StObject {
   
   /**
     * Optional aggregators that return counts of OpsItems based on one or more expressions.
     */
-  var Aggregators: js.UndefOr[OpsAggregatorList] = js.native
+  var Aggregators: js.UndefOr[OpsAggregatorList] = js.undefined
   
   /**
     * Optional filters used to scope down the returned OpsItems. 
     */
-  var Filters: js.UndefOr[OpsFilterList] = js.native
+  var Filters: js.UndefOr[OpsFilterList] = js.undefined
   
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.ssmMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.ssmMod.MaxResults] = js.undefined
   
   /**
     * A token to start the list. Use this token to get the next set of results. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
     * The OpsItem data type to return.
     */
-  var ResultAttributes: js.UndefOr[OpsResultAttributeList] = js.native
+  var ResultAttributes: js.UndefOr[OpsResultAttributeList] = js.undefined
   
   /**
     * Specify the name of a resource data sync to get.
     */
-  var SyncName: js.UndefOr[ResourceDataSyncName] = js.native
+  var SyncName: js.UndefOr[ResourceDataSyncName] = js.undefined
 }
 object GetOpsSummaryRequest {
   

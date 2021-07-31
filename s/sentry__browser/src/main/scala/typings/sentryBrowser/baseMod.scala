@@ -10,14 +10,15 @@ import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
   
   @JSImport("@sentry/browser/dist/transports/base", "BaseTransport")
   @js.native
-  abstract class BaseTransport protected () extends Transport {
+  abstract class BaseTransport protected ()
+    extends StObject
+       with Transport {
     def this(options: TransportOptions) = this()
     
     /** Helper to get Sentry API endpoints. */

@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceFilesList extends StandardParameters {
+trait ParamsResourceFilesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Comma-separated list of bodies of items (files/documents) to which the
@@ -24,17 +24,17 @@ trait ParamsResourceFilesList extends StandardParameters {
     * values must be used in isolation. Prefer 'user' or 'teamDrive' to
     * 'allTeamDrives' for efficiency.
     */
-  var corpora: js.UndefOr[String] = js.native
+  var corpora: js.UndefOr[String] = js.undefined
   
   /**
     * The source of files to list. Deprecated: use 'corpora' instead.
     */
-  var corpus: js.UndefOr[String] = js.native
+  var corpus: js.UndefOr[String] = js.undefined
   
   /**
     * Whether Team Drive items should be included in results.
     */
-  var includeTeamDriveItems: js.UndefOr[Boolean] = js.native
+  var includeTeamDriveItems: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A comma-separated list of sort keys. Valid keys are 'createdTime',
@@ -46,42 +46,42 @@ trait ParamsResourceFilesList extends StandardParameters {
     * current limitation for users with approximately one million files in
     * which the requested sort order is ignored.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of files to return per page. Partial or empty result
     * pages are possible even before the end of the files list has been
     * reached.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The token for continuing a previous list request on the next page. This
     * should be set to the value of 'nextPageToken' from the previous response.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A query for filtering the file results. See the "Search for Files" guide
     * for supported syntax.
     */
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
   /**
     * A comma-separated list of spaces to query within the corpus. Supported
     * values are 'drive', 'appDataFolder' and 'photos'.
     */
-  var spaces: js.UndefOr[String] = js.native
+  var spaces: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the requesting application supports Team Drives.
     */
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ID of Team Drive to search.
     */
-  var teamDriveId: js.UndefOr[String] = js.native
+  var teamDriveId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceFilesList {
   

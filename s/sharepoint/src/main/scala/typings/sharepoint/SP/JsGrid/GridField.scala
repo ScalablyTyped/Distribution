@@ -2,43 +2,41 @@ package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridField extends StObject {
   
-  def CompareSingleDataEqual(dataValue1: js.Any, dataValue2: js.Any): Boolean = js.native
+  def CompareSingleDataEqual(dataValue1: js.Any, dataValue2: js.Any): Boolean
   
-  def GetDefaultCellStyleId(): js.Any = js.native
+  def GetDefaultCellStyleId(): js.Any
   
-  def GetEditMode(): EditMode = js.native
+  def GetEditMode(): EditMode
   
-  def GetIsMultiValue(): Boolean = js.native
+  def GetIsMultiValue(): Boolean
   
-  def GetMultiValuePropType(): js.Any = js.native
+  def GetMultiValuePropType(): js.Any
   
-  def GetPropType(): js.Any = js.native
+  def GetPropType(): js.Any
   
-  def GetSingleValuePropType(): js.Any = js.native
+  def GetSingleValuePropType(): js.Any
   
-  def SetEditMode(mode: EditMode): Unit = js.native
+  def SetEditMode(mode: EditMode): Unit
   
-  def SetIsMultiValue(listSeparator: js.Any): Unit = js.native
+  def SetIsMultiValue(listSeparator: js.Any): Unit
   
-  def SetSingleValuePropType(svPropType: js.Any): Unit = js.native
+  def SetSingleValuePropType(svPropType: js.Any): Unit
   
-  var csrInfo: js.Any = js.native
+  var csrInfo: js.Any
   
-  var dateOnly: Boolean = js.native
+  var dateOnly: Boolean
   
-  var hasDataValue: Boolean = js.native
+  var hasDataValue: Boolean
   
-  var hasLocalizedValue: Boolean = js.native
+  var hasLocalizedValue: Boolean
   
-  var key: String = js.native
+  var key: String
   
-  var textDirection: TextDirection = js.native
+  var textDirection: TextDirection
 }
 object GridField {
   

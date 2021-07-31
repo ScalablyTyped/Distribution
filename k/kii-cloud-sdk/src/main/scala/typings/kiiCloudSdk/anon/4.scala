@@ -3,15 +3,13 @@ package typings.kiiCloudSdk.anon
 import typings.kiiCloudSdk.KiiCloud.KiiTopic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `4` extends StObject {
   
-  def failure(anErrorString: String): js.Any = js.native
+  def failure(anErrorString: String): js.Any
   
-  def success(topicList: js.Array[KiiTopic], nextPaginationKey: String): js.Any = js.native
+  def success(topicList: js.Array[KiiTopic], nextPaginationKey: String): js.Any
 }
 object `4` {
   

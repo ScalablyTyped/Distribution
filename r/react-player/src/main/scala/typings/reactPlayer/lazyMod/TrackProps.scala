@@ -2,21 +2,19 @@ package typings.reactPlayer.lazyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrackProps extends StObject {
   
-  var default: js.UndefOr[Boolean] = js.native
+  var default: js.UndefOr[Boolean] = js.undefined
   
-  var kind: String = js.native
+  var kind: String
   
-  var label: String = js.native
+  var label: String
   
-  var src: String = js.native
+  var src: String
   
-  var srcLang: String = js.native
+  var srcLang: String
 }
 object TrackProps {
   

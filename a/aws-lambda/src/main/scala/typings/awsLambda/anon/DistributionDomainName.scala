@@ -6,19 +6,17 @@ import typings.awsLambda.awsLambdaStrings.`viewer-request`
 import typings.awsLambda.awsLambdaStrings.`viewer-response`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionDomainName extends StObject {
   
-  val distributionDomainName: String = js.native
+  val distributionDomainName: String
   
-  val distributionId: String = js.native
+  val distributionId: String
   
-  val eventType: `origin-request` | `origin-response` | `viewer-request` | `viewer-response` = js.native
+  val eventType: `origin-request` | `origin-response` | `viewer-request` | `viewer-response`
   
-  val requestId: String = js.native
+  val requestId: String
 }
 object DistributionDomainName {
   

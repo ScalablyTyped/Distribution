@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.cognito
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolAdminCreateUserConfig extends StObject {
   
   /**
     * Set to True if only the administrator is allowed to create user profiles. Set to False if users can sign themselves up via an app.
     */
-  var allowAdminCreateUserOnly: js.UndefOr[Boolean] = js.native
+  var allowAdminCreateUserOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The invite message template structure.
     */
-  var inviteMessageTemplate: js.UndefOr[UserPoolAdminCreateUserConfigInviteMessageTemplate] = js.native
+  var inviteMessageTemplate: js.UndefOr[UserPoolAdminCreateUserConfigInviteMessageTemplate] = js.undefined
 }
 object UserPoolAdminCreateUserConfig {
   

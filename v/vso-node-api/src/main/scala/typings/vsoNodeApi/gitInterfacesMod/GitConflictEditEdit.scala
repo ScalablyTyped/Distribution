@@ -4,19 +4,19 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GitConflictEditEdit extends GitConflict {
+trait GitConflictEditEdit
+  extends StObject
+     with GitConflict {
   
-  var baseBlob: GitBlobRef = js.native
+  var baseBlob: GitBlobRef
   
-  var resolution: GitResolutionMergeContent = js.native
+  var resolution: GitResolutionMergeContent
   
-  var sourceBlob: GitBlobRef = js.native
+  var sourceBlob: GitBlobRef
   
-  var targetBlob: GitBlobRef = js.native
+  var targetBlob: GitBlobRef
 }
 object GitConflictEditEdit {
   

@@ -3,27 +3,26 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfNode
-  extends TemplateChildNode
-     with Node2 {
+  extends StObject
+     with Node2
+     with TemplateChildNode {
   
-  var branches: js.Array[IfBranchNode] = js.native
+  var branches: js.Array[IfBranchNode]
   
-  var codegenNode: js.UndefOr[IfConditionalExpression | CacheExpression] = js.native
+  var codegenNode: js.UndefOr[IfConditionalExpression | CacheExpression] = js.undefined
   
   @JSName("type")
-  var type_IfNode: `9` = js.native
+  var type_IfNode: `9`
 }
 object IfNode {
   
   @scala.inline
-  def apply(branches: js.Array[IfBranchNode], loc: SourceLocation, `type`: `9`): IfNode = {
+  def apply(branches: js.Array[IfBranchNode], loc: SourceLocation): IfNode = {
     val __obj = js.Dynamic.literal(branches = branches.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(9)
     __obj.asInstanceOf[IfNode]
   }
   

@@ -2,35 +2,33 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An image, with a link to the main image and a thumbnail.
   */
-@js.native
 trait SchemaImage extends StObject {
   
   /**
     * An error explaining why the thumbnail could not be rendered.
     */
-  var error: js.UndefOr[SchemaStatus] = js.native
+  var error: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * A reference to the full-size, original image.  This is the same as the
     * tool_outputs entry for the image under its Step.  Always set.
     */
-  var sourceImage: js.UndefOr[SchemaToolOutputReference] = js.native
+  var sourceImage: js.UndefOr[SchemaToolOutputReference] = js.undefined
   
   /**
     * The step to which the image is attached.  Always set.
     */
-  var stepId: js.UndefOr[String] = js.native
+  var stepId: js.UndefOr[String] = js.undefined
   
   /**
     * The thumbnail.
     */
-  var thumbnail: js.UndefOr[SchemaThumbnail] = js.native
+  var thumbnail: js.UndefOr[SchemaThumbnail] = js.undefined
 }
 object SchemaImage {
   

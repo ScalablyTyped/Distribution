@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadialGaugePointerItem extends StObject {
   
-  var cap: js.UndefOr[RadialGaugePointerItemCap] = js.native
+  var cap: js.UndefOr[RadialGaugePointerItemCap] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object RadialGaugePointerItem {
   

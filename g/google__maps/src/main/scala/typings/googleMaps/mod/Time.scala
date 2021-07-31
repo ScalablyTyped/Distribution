@@ -3,23 +3,21 @@ package typings.googleMaps.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Time extends StObject {
   
   /** the time specified as a string. The time is displayed in the time zone of the transit stop. */
-  var text: String = js.native
+  var text: String
   
   /**
     * contains the time zone of this station. The value is the name of the time zone as defined in the
     * [IANA Time Zone Database](http://www.iana.org/time-zones), e.g. "America/New_York".
     */
-  var time_zone: String = js.native
+  var time_zone: String
   
   /** the time specified as a JavaScript `Date` object. */
-  var value: Date = js.native
+  var value: Date
 }
 object Time {
   

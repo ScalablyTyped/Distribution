@@ -15,14 +15,15 @@ import typings.dingtalkRobotSender.dingtalkRobotSenderStrings.text
 import typings.dingtalkRobotSender.mod.Message.FeedCardItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("dingtalk-robot-sender", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ChatBot {
+  class ^ protected ()
+    extends StObject
+       with ChatBot {
     def this(options: BaseUrlOptions) = this()
     /**
       * 机器人工厂，所有的消息推送项目都会调用 this.webhook 接口进行发送
@@ -35,14 +36,13 @@ object mod {
     def this(options: WebHookOptions) = this()
   }
   
-  @js.native
   trait BaseUrlOptions extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var httpclient: js.UndefOr[js.Any] = js.native
+    var httpclient: js.UndefOr[js.Any] = js.undefined
   }
   object BaseUrlOptions {
     
@@ -84,7 +84,7 @@ object mod {
       * @param card.btn.actionURL 某个按钮链接
       * @return
       */
-    def actionCard(card: BtnOrientation): js.Promise[AxiosResponse[_]] = js.native
+    def actionCard(card: BtnOrientation): js.Promise[AxiosResponse[js.Any]] = js.native
     
     /**
       * 发送feedCard，支持多图文链接
@@ -96,7 +96,7 @@ object mod {
       * @param link.picUrl 图片的链接
       * @return
       */
-    def feedCard(links: js.Array[FeedCardItem]): js.Promise[AxiosResponse[_]] = js.native
+    def feedCard(links: js.Array[FeedCardItem]): js.Promise[AxiosResponse[js.Any]] = js.native
     
     /**
       * 发送单个图文链接
@@ -107,7 +107,7 @@ object mod {
       * @param link.picUrl 图片的链接
       * @return
       */
-    def link(link: MessageUrl): js.Promise[AxiosResponse[_]] = js.native
+    def link(link: MessageUrl): js.Promise[AxiosResponse[js.Any]] = js.native
     
     /**
       * 发送Markdown消息
@@ -116,8 +116,8 @@ object mod {
       * @param text 消息内容(支持Markdown)
       * @return
       */
-    def markdown(title: String, text: String): js.Promise[AxiosResponse[_]] = js.native
-    def markdown(title: String, text: String, at: AtMobiles): js.Promise[AxiosResponse[_]] = js.native
+    def markdown(title: String, text: String): js.Promise[AxiosResponse[js.Any]] = js.native
+    def markdown(title: String, text: String, at: AtMobiles): js.Promise[AxiosResponse[js.Any]] = js.native
     
     /**
       * 发送钉钉消息
@@ -125,7 +125,7 @@ object mod {
       * @param content 发动的消息对象
       * @return
       */
-    def send(content: MessageType): js.Promise[AxiosResponse[_]] = js.native
+    def send(content: MessageType): js.Promise[AxiosResponse[js.Any]] = js.native
     
     /**
       * 发送纯文本消息，支持@群内成员
@@ -134,24 +134,25 @@ object mod {
       * @param at 群内@成员的手机号
       * @return
       */
-    def text(content: String): js.Promise[AxiosResponse[_]] = js.native
-    def text(content: String, at: js.UndefOr[AtMobiles]): js.Promise[AxiosResponse[_]] = js.native
+    def text(content: String): js.Promise[AxiosResponse[js.Any]] = js.native
+    def text(content: String, at: js.UndefOr[AtMobiles]): js.Promise[AxiosResponse[js.Any]] = js.native
   }
   
   object Message {
     
-    @js.native
-    trait ActionCard extends MessageType {
+    trait ActionCard
+      extends StObject
+         with MessageType {
       
-      var actionCard: BtnOrientation = js.native
+      var actionCard: BtnOrientation
       
-      var msgtype: actionCard = js.native
+      var msgtype: actionCard
     }
     object ActionCard {
       
       @scala.inline
-      def apply(actionCard: BtnOrientation, msgtype: actionCard): ActionCard = {
-        val __obj = js.Dynamic.literal(actionCard = actionCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
+      def apply(actionCard: BtnOrientation): ActionCard = {
+        val __obj = js.Dynamic.literal(actionCard = actionCard.asInstanceOf[js.Any], msgtype = "actionCard")
         __obj.asInstanceOf[ActionCard]
       }
       
@@ -166,18 +167,19 @@ object mod {
       }
     }
     
-    @js.native
-    trait FeedCardItem extends MessageType {
+    trait FeedCardItem
+      extends StObject
+         with MessageType {
       
-      var feedCard: MessageURL_ = js.native
+      var feedCard: MessageURL_
       
-      var msgtype: feedCard = js.native
+      var msgtype: feedCard
     }
     object FeedCardItem {
       
       @scala.inline
-      def apply(feedCard: MessageURL_, msgtype: feedCard): FeedCardItem = {
-        val __obj = js.Dynamic.literal(feedCard = feedCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
+      def apply(feedCard: MessageURL_): FeedCardItem = {
+        val __obj = js.Dynamic.literal(feedCard = feedCard.asInstanceOf[js.Any], msgtype = "feedCard")
         __obj.asInstanceOf[FeedCardItem]
       }
       
@@ -192,18 +194,19 @@ object mod {
       }
     }
     
-    @js.native
-    trait Link extends MessageType {
+    trait Link
+      extends StObject
+         with MessageType {
       
-      var link: MessageUrl = js.native
+      var link: MessageUrl
       
-      var msgtype: link = js.native
+      var msgtype: link
     }
     object Link {
       
       @scala.inline
-      def apply(link: MessageUrl, msgtype: link): Link = {
-        val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
+      def apply(link: MessageUrl): Link = {
+        val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], msgtype = "link")
         __obj.asInstanceOf[Link]
       }
       
@@ -218,18 +221,19 @@ object mod {
       }
     }
     
-    @js.native
-    trait Markdown extends MessageType {
+    trait Markdown
+      extends StObject
+         with MessageType {
       
-      var markdown: IsAtAll = js.native
+      var markdown: IsAtAll
       
-      var msgtype: markdown = js.native
+      var msgtype: markdown
     }
     object Markdown {
       
       @scala.inline
-      def apply(markdown: IsAtAll, msgtype: markdown): Markdown = {
-        val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
+      def apply(markdown: IsAtAll): Markdown = {
+        val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any], msgtype = "markdown")
         __obj.asInstanceOf[Markdown]
       }
       
@@ -244,20 +248,21 @@ object mod {
       }
     }
     
-    @js.native
-    trait Text extends MessageType {
+    trait Text
+      extends StObject
+         with MessageType {
       
-      var at: js.UndefOr[AtMobiles] = js.native
+      var at: js.UndefOr[AtMobiles] = js.undefined
       
-      var msgtype: text = js.native
+      var msgtype: text
       
-      var text: Content = js.native
+      var text: Content
     }
     object Text {
       
       @scala.inline
-      def apply(msgtype: text, text: Content): Text = {
-        val __obj = js.Dynamic.literal(msgtype = msgtype.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+      def apply(text: Content): Text = {
+        val __obj = js.Dynamic.literal(msgtype = "text", text = text.asInstanceOf[js.Any])
         __obj.asInstanceOf[Text]
       }
       
@@ -290,42 +295,41 @@ object mod {
   object MessageType {
     
     @scala.inline
-    def ActionCard(actionCard: BtnOrientation, msgtype: actionCard): typings.dingtalkRobotSender.mod.Message.ActionCard = {
-      val __obj = js.Dynamic.literal(actionCard = actionCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
+    def ActionCard(actionCard: BtnOrientation): typings.dingtalkRobotSender.mod.Message.ActionCard = {
+      val __obj = js.Dynamic.literal(actionCard = actionCard.asInstanceOf[js.Any], msgtype = "actionCard")
       __obj.asInstanceOf[typings.dingtalkRobotSender.mod.Message.ActionCard]
     }
     
     @scala.inline
-    def FeedCardItem(feedCard: MessageURL_, msgtype: feedCard): typings.dingtalkRobotSender.mod.Message.FeedCardItem = {
-      val __obj = js.Dynamic.literal(feedCard = feedCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
+    def FeedCardItem(feedCard: MessageURL_): typings.dingtalkRobotSender.mod.Message.FeedCardItem = {
+      val __obj = js.Dynamic.literal(feedCard = feedCard.asInstanceOf[js.Any], msgtype = "feedCard")
       __obj.asInstanceOf[typings.dingtalkRobotSender.mod.Message.FeedCardItem]
     }
     
     @scala.inline
-    def Link(link: MessageUrl, msgtype: link): typings.dingtalkRobotSender.mod.Message.Link = {
-      val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
+    def Link(link: MessageUrl): typings.dingtalkRobotSender.mod.Message.Link = {
+      val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], msgtype = "link")
       __obj.asInstanceOf[typings.dingtalkRobotSender.mod.Message.Link]
     }
     
     @scala.inline
-    def Markdown(markdown: IsAtAll, msgtype: markdown): typings.dingtalkRobotSender.mod.Message.Markdown = {
-      val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
+    def Markdown(markdown: IsAtAll): typings.dingtalkRobotSender.mod.Message.Markdown = {
+      val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any], msgtype = "markdown")
       __obj.asInstanceOf[typings.dingtalkRobotSender.mod.Message.Markdown]
     }
     
     @scala.inline
-    def Text(msgtype: text, text: Content): typings.dingtalkRobotSender.mod.Message.Text = {
-      val __obj = js.Dynamic.literal(msgtype = msgtype.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    def Text(text: Content): typings.dingtalkRobotSender.mod.Message.Text = {
+      val __obj = js.Dynamic.literal(msgtype = "text", text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.dingtalkRobotSender.mod.Message.Text]
     }
   }
   
-  @js.native
   trait WebHookOptions extends StObject {
     
-    var httpclient: js.UndefOr[js.Any] = js.native
+    var httpclient: js.UndefOr[js.Any] = js.undefined
     
-    var webhook: String = js.native
+    var webhook: String
   }
   object WebHookOptions {
     

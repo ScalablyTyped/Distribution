@@ -2,18 +2,16 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterCriteria extends StObject {
   
-  var filterType: Double = js.native
+  var filterType: Double
   
   /**
     * The value used in the match based on the filter type.
     */
-  var value: String = js.native
+  var value: String
 }
 object FilterCriteria {
   

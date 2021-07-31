@@ -3,7 +3,6 @@ package typings.cytoscape.mod.Css
 import typings.cytoscape.mod.EdgeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,47 +20,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Only mid arrows are supported on haystack edges.
   * http://js.cytoscape.org/#style/edge-arrow
   */
-@js.native
 trait EdgeArrow extends StObject {
   
   /** The size of the arrow. */
-  var `arrow-scale`: js.UndefOr[PropertyValueEdge[Double]] = js.native
+  var `arrow-scale`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
   /** The colour of the edge’s "mid-source" arrow. */
-  var `mid-source-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.native
+  var `mid-source-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
   
   /** The fill state of the edge’s mid-source arrow. */
-  var `mid-source-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.native
+  var `mid-source-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.undefined
   
   /** The shape of the edge’s mid-source arrow. */
-  var `mid-source-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.native
+  var `mid-source-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.undefined
   
   /** The colour of the edge’s "mid-target" arrow. */
-  var `mid-target-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.native
+  var `mid-target-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
   
   /** The fill state of the edge’s mid-target arrow. */
-  var `mid-target-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.native
+  var `mid-target-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.undefined
   
   /** The shape of the edge’s mid-target arrow. */
-  var `mid-target-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.native
+  var `mid-target-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.undefined
   
   /** The colour of the edge’s source arrow. */
-  var `source-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.native
+  var `source-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
   
   /** The fill state of the edge’s source arrow. */
-  var `source-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.native
+  var `source-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.undefined
   
   /** The shape of the edge’s source arrow. */
-  var `source-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.native
+  var `source-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.undefined
   
   /** The colour of the edge’s target arrow. */
-  var `target-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.native
+  var `target-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
   
   /** The fill state of the edge’s target arrow. */
-  var `target-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.native
+  var `target-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.undefined
   
   /** The shape of the edge’s target arrow. */
-  var `target-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.native
+  var `target-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.undefined
 }
 object EdgeArrow {
   

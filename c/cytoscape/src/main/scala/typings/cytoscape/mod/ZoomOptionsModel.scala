@@ -2,14 +2,12 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoomOptionsModel extends StObject {
   
   /** The position about which to zoom. */
-  var position: Position = js.native
+  var position: Position
 }
 object ZoomOptionsModel {
   

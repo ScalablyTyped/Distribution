@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,15 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XContentIdentifier
   * @version 1.0
   */
-@js.native
-trait XContentIdentifierFactory extends XInterface {
+trait XContentIdentifierFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates an identifier.
     * @param ContentId the content identifier string.
     * @returns the identifier.
     */
-  def createContentIdentifier(ContentId: String): XContentIdentifier = js.native
+  def createContentIdentifier(ContentId: String): XContentIdentifier
 }
 object XContentIdentifierFactory {
   

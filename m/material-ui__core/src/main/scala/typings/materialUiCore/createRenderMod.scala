@@ -4,22 +4,22 @@ import typings.materialUiCore.anon.Fn0
 import typings.materialUiCore.anon.PartialRenderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createRenderMod {
   
-  @JSImport("@material-ui/core/test-utils/createRender", JSImport.Default)
+  @JSImport("@material-ui/core/test-utils/createRender", JSImport.Namespace)
   @js.native
-  def default(): Fn0 = js.native
-  @JSImport("@material-ui/core/test-utils/createRender", JSImport.Default)
-  @js.native
-  def default(options: PartialRenderOptions): Fn0 = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Fn0 = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Fn0]
+  @scala.inline
+  def default(options: PartialRenderOptions): Fn0 = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Fn0]
+  
   trait RenderOptions extends StObject {
     
-    var render: Fn0 = js.native
+    var render: Fn0
   }
   object RenderOptions {
     

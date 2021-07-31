@@ -2,31 +2,29 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Trusted Apps response object of a user in Directory API.
   */
-@js.native
 trait SchemaTrustedApps extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the resource as trusted apps response.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Trusted Apps list.
     */
-  var trustedApps: js.UndefOr[js.Array[SchemaTrustedAppId]] = js.native
+  var trustedApps: js.UndefOr[js.Array[SchemaTrustedAppId]] = js.undefined
 }
 object SchemaTrustedApps {
   

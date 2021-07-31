@@ -2,28 +2,28 @@ package typings.relayRuntime.readerNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReaderLinkedField extends ReaderField {
+trait ReaderLinkedField
+  extends StObject
+     with ReaderField {
   
   // 'LinkedField';
-  val alias: js.UndefOr[String | Null] = js.native
+  val alias: js.UndefOr[String | Null] = js.undefined
   
-  val args: js.Array[ReaderArgument] = js.native
+  val args: js.Array[ReaderArgument]
   
-  val concreteType: js.UndefOr[String | Null] = js.native
+  val concreteType: js.UndefOr[String | Null] = js.undefined
   
-  val kind: String = js.native
+  val kind: String
   
-  val name: String = js.native
+  val name: String
   
-  val plural: Boolean = js.native
+  val plural: Boolean
   
-  val selections: js.Array[ReaderSelection] = js.native
+  val selections: js.Array[ReaderSelection]
   
-  val storageKey: js.UndefOr[String | Null] = js.native
+  val storageKey: js.UndefOr[String | Null] = js.undefined
 }
 object ReaderLinkedField {
   

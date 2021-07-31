@@ -3,14 +3,12 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.system.cpu.CpuInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofcpu extends StObject {
   
   /** Queries basic CPU information of the system. */
-  def getInfo(callback: js.Function1[/* info */ CpuInfo, Unit]): Unit = js.native
+  def getInfo(callback: js.Function1[/* info */ CpuInfo, Unit]): Unit
 }
 object Typeofcpu {
   

@@ -2,30 +2,28 @@ package typings.browserSync.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagNamesOptions extends StObject {
   
-  var css: js.UndefOr[String] = js.native
+  var css: js.UndefOr[String] = js.undefined
   
-  var gif: js.UndefOr[String] = js.native
+  var gif: js.UndefOr[String] = js.undefined
   
-  var jpeg: js.UndefOr[String] = js.native
+  var jpeg: js.UndefOr[String] = js.undefined
   
-  var jpg: js.UndefOr[String] = js.native
+  var jpg: js.UndefOr[String] = js.undefined
   
   @JSName("js")
-  var js_ : js.UndefOr[String] = js.native
+  var js_ : js.UndefOr[String] = js.undefined
   
-  var less: js.UndefOr[String] = js.native
+  var less: js.UndefOr[String] = js.undefined
   
-  var png: js.UndefOr[String] = js.native
+  var png: js.UndefOr[String] = js.undefined
   
-  var scss: js.UndefOr[String] = js.native
+  var scss: js.UndefOr[String] = js.undefined
   
-  var svg: js.UndefOr[String] = js.native
+  var svg: js.UndefOr[String] = js.undefined
 }
 object TagNamesOptions {
   

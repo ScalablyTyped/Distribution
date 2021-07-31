@@ -6,7 +6,6 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emptyMod extends Shortcut {
@@ -15,25 +14,24 @@ object emptyMod extends Shortcut {
   @js.native
   val default: EmptyType = js.native
   
-  @js.native
   trait EmptyProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[ReactNode] = js.native
+    var description: js.UndefOr[ReactNode] = js.undefined
     
-    var image: js.UndefOr[ReactNode] = js.native
+    var image: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * @since 3.16.0
       */
-    var imageStyle: js.UndefOr[CSSProperties] = js.native
+    var imageStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object EmptyProps {
     
@@ -91,17 +89,18 @@ object emptyMod extends Shortcut {
   }
   
   @js.native
-  trait EmptyType extends FunctionComponent[EmptyProps] {
+  trait EmptyType
+    extends StObject
+       with FunctionComponent[EmptyProps] {
     
     var PRESENTED_IMAGE_DEFAULT: ReactNode = js.native
     
     var PRESENTED_IMAGE_SIMPLE: ReactNode = js.native
   }
   
-  @js.native
   trait TransferLocale extends StObject {
     
-    var description: String = js.native
+    var description: String
   }
   object TransferLocale {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateEnvironmentOperationsRoleMessage extends StObject {
   
   /**
     * The name of the environment from which to disassociate the operations role.
     */
-  var EnvironmentName: typings.awsSdk.elasticbeanstalkMod.EnvironmentName = js.native
+  var EnvironmentName: typings.awsSdk.elasticbeanstalkMod.EnvironmentName
 }
 object DisassociateEnvironmentOperationsRoleMessage {
   

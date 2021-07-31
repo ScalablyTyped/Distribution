@@ -3,21 +3,22 @@ package typings.bresenham
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generatorMod {
   
+  @scala.inline
+  def apply(x0: Double, y0: Double, x1: Double, y1: Double): Generator[Point, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].apply(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Generator[Point, js.Any, js.Any]]
+  
   @JSImport("bresenham/generator", JSImport.Namespace)
   @js.native
-  def apply(x0: Double, y0: Double, x1: Double, y1: Double): Generator[Point, _, _] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Point extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     

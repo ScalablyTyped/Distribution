@@ -2,17 +2,15 @@ package typings.rcMenu.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Offset extends StObject {
   
-  var offset: js.Array[Double] = js.native
+  var offset: js.Array[Double]
   
-  var overflow: AdjustX = js.native
+  var overflow: AdjustX
   
-  var points: js.Array[String] = js.native
+  var points: js.Array[String]
 }
 object Offset {
   

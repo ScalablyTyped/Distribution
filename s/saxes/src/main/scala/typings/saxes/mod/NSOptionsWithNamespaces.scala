@@ -3,20 +3,20 @@ package typings.saxes.mod
 import typings.saxes.saxesBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NSOptionsWithNamespaces extends NSOptions {
+trait NSOptionsWithNamespaces
+  extends StObject
+     with NSOptions {
   
   @JSName("xmlns")
-  var xmlns_NSOptionsWithNamespaces: `true` = js.native
+  var xmlns_NSOptionsWithNamespaces: `true`
 }
 object NSOptionsWithNamespaces {
   
   @scala.inline
-  def apply(xmlns: `true`): NSOptionsWithNamespaces = {
-    val __obj = js.Dynamic.literal(xmlns = xmlns.asInstanceOf[js.Any])
+  def apply(): NSOptionsWithNamespaces = {
+    val __obj = js.Dynamic.literal(xmlns = true)
     __obj.asInstanceOf[NSOptionsWithNamespaces]
   }
   

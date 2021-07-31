@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,25 +13,37 @@ object MagneticStripeReaderTrackErrorType extends StObject {
   
   /** An end sentinel error. */
   @js.native
-  sealed trait endSentinelError extends MagneticStripeReaderTrackErrorType
+  sealed trait endSentinelError
+    extends StObject
+       with MagneticStripeReaderTrackErrorType
   
   /** An LRC error. */
   @js.native
-  sealed trait lrcError extends MagneticStripeReaderTrackErrorType
+  sealed trait lrcError
+    extends StObject
+       with MagneticStripeReaderTrackErrorType
   
   /** No specified error. */
   @js.native
-  sealed trait none extends MagneticStripeReaderTrackErrorType
+  sealed trait none
+    extends StObject
+       with MagneticStripeReaderTrackErrorType
   
   /** A parity error. */
   @js.native
-  sealed trait parityError extends MagneticStripeReaderTrackErrorType
+  sealed trait parityError
+    extends StObject
+       with MagneticStripeReaderTrackErrorType
   
   /** A start sentinel error. */
   @js.native
-  sealed trait startSentinelError extends MagneticStripeReaderTrackErrorType
+  sealed trait startSentinelError
+    extends StObject
+       with MagneticStripeReaderTrackErrorType
   
   /** An unknown error. */
   @js.native
-  sealed trait unknown extends MagneticStripeReaderTrackErrorType
+  sealed trait unknown
+    extends StObject
+       with MagneticStripeReaderTrackErrorType
 }

@@ -2,13 +2,11 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineAnimationOptions extends StObject {
   
-  var animation: js.UndefOr[TimelineAnimationType] = js.native
+  var animation: js.UndefOr[TimelineAnimationType] = js.undefined
 }
 object TimelineAnimationOptions {
   

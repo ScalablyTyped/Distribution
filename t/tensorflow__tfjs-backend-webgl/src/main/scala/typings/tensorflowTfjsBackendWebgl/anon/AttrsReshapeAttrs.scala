@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.ReshapeAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.ReshapeInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsReshapeAttrs extends StObject {
   
-  var attrs: ReshapeAttrs = js.native
+  var attrs: ReshapeAttrs
   
-  var backend: MathBackendWebGL = js.native
+  var backend: MathBackendWebGL
   
-  var inputs: ReshapeInputs = js.native
+  var inputs: ReshapeInputs
 }
 object AttrsReshapeAttrs {
   

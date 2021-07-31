@@ -2,20 +2,18 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Effects //////////////////////////////////////////////////
-@js.native
 trait EffectOptions extends StObject {
   
-  var complete: js.Function = js.native
+  var complete: js.Function
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
   
-  var effect: String = js.native
+  var effect: String
 }
 object EffectOptions {
   

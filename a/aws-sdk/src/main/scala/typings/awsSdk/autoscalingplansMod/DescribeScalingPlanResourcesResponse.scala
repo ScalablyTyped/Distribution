@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeScalingPlanResourcesResponse extends StObject {
   
   /**
     * The token required to get the next set of results. This value is null if there are no more results to return.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.autoscalingplansMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.autoscalingplansMod.NextToken] = js.undefined
   
   /**
     * Information about the scalable resources.
     */
-  var ScalingPlanResources: js.UndefOr[typings.awsSdk.autoscalingplansMod.ScalingPlanResources] = js.native
+  var ScalingPlanResources: js.UndefOr[typings.awsSdk.autoscalingplansMod.ScalingPlanResources] = js.undefined
 }
 object DescribeScalingPlanResourcesResponse {
   

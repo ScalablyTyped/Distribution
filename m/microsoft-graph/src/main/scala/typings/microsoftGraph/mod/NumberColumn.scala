@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberColumn extends StObject {
   
   // How many decimal places to display. See below for information about the possible values.
-  var decimalPlaces: js.UndefOr[NullableOption[String]] = js.native
+  var decimalPlaces: js.UndefOr[NullableOption[String]] = js.undefined
   
   // How the value should be presented in the UX. Must be one of number or percentage. If unspecified, treated as number.
-  var displayAs: js.UndefOr[NullableOption[String]] = js.native
+  var displayAs: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The maximum permitted value.
-  var maximum: js.UndefOr[NullableOption[Double]] = js.native
+  var maximum: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The minimum permitted value.
-  var minimum: js.UndefOr[NullableOption[Double]] = js.native
+  var minimum: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object NumberColumn {
   

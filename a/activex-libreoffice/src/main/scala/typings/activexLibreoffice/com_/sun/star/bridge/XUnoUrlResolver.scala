@@ -4,19 +4,19 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to resolve an object using the uno-url. */
-@js.native
-trait XUnoUrlResolver extends XInterface {
+trait XUnoUrlResolver
+  extends StObject
+     with XInterface {
   
   /**
     * resolves an object using the given uno-url.
     * @param sUnoUrl the uno-url. The uno-url is specified [here]{@link url="http://udk.openoffice.org/common/man/spec/uno-url.html"} .
     * @returns the resolved object, in general a proxy for a remote object. You can use it the same way as you use local references.
     */
-  def resolve(sUnoUrl: String): XInterface = js.native
+  def resolve(sUnoUrl: String): XInterface
 }
 object XUnoUrlResolver {
   

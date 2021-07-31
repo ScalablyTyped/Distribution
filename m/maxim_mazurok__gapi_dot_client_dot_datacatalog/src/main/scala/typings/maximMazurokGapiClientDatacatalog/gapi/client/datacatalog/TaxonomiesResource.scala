@@ -12,7 +12,6 @@ import typings.maximMazurokGapiClientDatacatalog.anon.QuotaUser
 import typings.maximMazurokGapiClientDatacatalog.anon.SerializedTaxonomies
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,8 +29,8 @@ trait TaxonomiesResource extends StObject {
     * Exports all taxonomies and their policy tags in a project. This method generates SerializedTaxonomy protos with nested policy tags that can be used as an input for future
     * ImportTaxonomies calls.
     */
-  def export(): Request[GoogleCloudDatacatalogV1beta1ExportTaxonomiesResponse] = js.native
-  def export(request: SerializedTaxonomies): Request[GoogleCloudDatacatalogV1beta1ExportTaxonomiesResponse] = js.native
+  def `export`(): Request[GoogleCloudDatacatalogV1beta1ExportTaxonomiesResponse] = js.native
+  def `export`(request: SerializedTaxonomies): Request[GoogleCloudDatacatalogV1beta1ExportTaxonomiesResponse] = js.native
   
   /** Gets a taxonomy. */
   def get(): Request[GoogleCloudDatacatalogV1beta1Taxonomy] = js.native

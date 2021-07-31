@@ -4,31 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionDailyStat extends StObject {
   
   /**
     * Stores the event counts
     */
-  var counts: EventCounts = js.native
+  var counts: EventCounts
   
   /**
     * Generic key/value pair to store extended statistics. Used for sending paid extension stats like Upgrade, Downgrade, Cancel trend etc.
     */
-  var extendedStats: StringDictionary[js.Any] = js.native
+  var extendedStats: StringDictionary[js.Any]
   
   /**
     * Timestamp of this data point
     */
-  var statisticDate: Date = js.native
+  var statisticDate: Date
   
   /**
     * Version of the extension
     */
-  var version: String = js.native
+  var version: String
 }
 object ExtensionDailyStat {
   

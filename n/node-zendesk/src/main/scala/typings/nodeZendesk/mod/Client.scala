@@ -3,105 +3,103 @@ package typings.nodeZendesk.mod
 import typings.nodeZendesk.mod.Attachments.Methods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Client extends StObject {
   
-  var accountsettings: js.Any = js.native
+  var accountsettings: js.Any
   
-  var activitystream: js.Any = js.native
+  var activitystream: js.Any
   
-  var attachments: Methods = js.native
+  var attachments: Methods
   
-  var brand: js.Any = js.native
+  var brand: js.Any
   
-  var categories: js.Any = js.native
+  var categories: js.Any
   
-  var customagentroles: js.Any = js.native
+  var customagentroles: js.Any
   
-  var dynamiccontent: js.Any = js.native
+  var dynamiccontent: js.Any
   
-  var forums: js.Any = js.native
+  var forums: js.Any
   
-  var forumsubscriptions: js.Any = js.native
+  var forumsubscriptions: js.Any
   
-  var groupmemberships: js.Any = js.native
+  var groupmemberships: js.Any
   
-  var groups: js.Any = js.native
+  var groups: js.Any
   
-  var helpers: js.Any = js.native
+  var helpers: js.Any
   
-  var imports: js.Any = js.native
+  var imports: js.Any
   
-  var installations: js.Any = js.native
+  var installations: js.Any
   
-  var jobstatuses: typings.nodeZendesk.mod.JobStatuses.Methods = js.native
+  var jobstatuses: typings.nodeZendesk.mod.JobStatuses.Methods
   
-  var locales: js.Any = js.native
+  var locales: js.Any
   
-  var macros: typings.nodeZendesk.mod.Macros.Methods = js.native
+  var macros: typings.nodeZendesk.mod.Macros.Methods
   
-  var oauthtokens: js.Any = js.native
+  var oauthtokens: js.Any
   
-  var organizationfields: js.Any = js.native
+  var organizationfields: js.Any
   
-  var organizationmemberships: js.Any = js.native
+  var organizationmemberships: js.Any
   
-  var organizations: js.Any = js.native
+  var organizations: js.Any
   
-  var policies: js.Any = js.native
+  var policies: js.Any
   
-  var requests: typings.nodeZendesk.mod.Requests.Methods = js.native
+  var requests: typings.nodeZendesk.mod.Requests.Methods
   
-  var satisfactionratings: js.Any = js.native
+  var satisfactionratings: js.Any
   
-  var search: js.Any = js.native
+  var search: js.Any
   
-  var sessions: js.Any = js.native
+  var sessions: js.Any
   
-  var sharingagreement: js.Any = js.native
+  var sharingagreement: js.Any
   
-  var suspendedtickets: js.Any = js.native
+  var suspendedtickets: js.Any
   
-  var tags: js.Any = js.native
+  var tags: js.Any
   
-  var targets: js.Any = js.native
+  var targets: js.Any
   
-  var ticketaudits: js.Any = js.native
+  var ticketaudits: js.Any
   
-  var ticketevents: js.Any = js.native
+  var ticketevents: js.Any
   
-  var ticketexport: js.Any = js.native
+  var ticketexport: js.Any
   
-  var ticketfields: js.Any = js.native
+  var ticketfields: js.Any
   
-  var ticketforms: js.Any = js.native
+  var ticketforms: js.Any
   
-  var ticketimport: js.Any = js.native
+  var ticketimport: js.Any
   
-  var ticketmetrics: js.Any = js.native
+  var ticketmetrics: js.Any
   
-  var tickets: typings.nodeZendesk.mod.Tickets.Methods = js.native
+  var tickets: typings.nodeZendesk.mod.Tickets.Methods
   
-  var topiccomments: js.Any = js.native
+  var topiccomments: js.Any
   
-  var topics: js.Any = js.native
+  var topics: js.Any
   
-  var topicsubscriptions: js.Any = js.native
+  var topicsubscriptions: js.Any
   
-  var topicvotes: js.Any = js.native
+  var topicvotes: js.Any
   
-  var triggers: js.Any = js.native
+  var triggers: js.Any
   
-  var userfields: typings.nodeZendesk.mod.Users.Fields.Methods = js.native
+  var userfields: typings.nodeZendesk.mod.Users.Fields.Methods
   
-  var useridentities: typings.nodeZendesk.mod.Users.Identities.Methods = js.native
+  var useridentities: typings.nodeZendesk.mod.Users.Identities.Methods
   
-  var users: typings.nodeZendesk.mod.Users.Methods = js.native
+  var users: typings.nodeZendesk.mod.Users.Methods
   
-  var views: js.Any = js.native
+  var views: js.Any
 }
 object Client {
   

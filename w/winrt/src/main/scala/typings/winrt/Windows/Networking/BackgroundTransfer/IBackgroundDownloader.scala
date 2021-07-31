@@ -6,11 +6,12 @@ import typings.winrt.Windows.Storage.IStorageFile
 import typings.winrt.Windows.Storage.Streams.IInputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBackgroundDownloader extends IBackgroundTransferBase {
+trait IBackgroundDownloader
+  extends StObject
+     with IBackgroundTransferBase {
   
   def createDownload(uri: Uri, resultFile: IStorageFile): DownloadOperation = js.native
   def createDownload(uri: Uri, resultFile: IStorageFile, requestBodyFile: IStorageFile): DownloadOperation = js.native

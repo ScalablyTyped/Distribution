@@ -2,106 +2,104 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceInformation extends StObject {
   
   /**
     * The activation ID created by Systems Manager when the server or VM was registered.
     */
-  var ActivationId: js.UndefOr[typings.awsSdk.ssmMod.ActivationId] = js.native
+  var ActivationId: js.UndefOr[typings.awsSdk.ssmMod.ActivationId] = js.undefined
   
   /**
     * The version of SSM Agent running on your Linux instance. 
     */
-  var AgentVersion: js.UndefOr[Version] = js.native
+  var AgentVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * Information about the association.
     */
-  var AssociationOverview: js.UndefOr[InstanceAggregatedAssociationOverview] = js.native
+  var AssociationOverview: js.UndefOr[InstanceAggregatedAssociationOverview] = js.undefined
   
   /**
     * The status of the association.
     */
-  var AssociationStatus: js.UndefOr[StatusName] = js.native
+  var AssociationStatus: js.UndefOr[StatusName] = js.undefined
   
   /**
     * The fully qualified host name of the managed instance.
     */
-  var ComputerName: js.UndefOr[typings.awsSdk.ssmMod.ComputerName] = js.native
+  var ComputerName: js.UndefOr[typings.awsSdk.ssmMod.ComputerName] = js.undefined
   
   /**
     * The IP address of the managed instance.
     */
-  var IPAddress: js.UndefOr[typings.awsSdk.ssmMod.IPAddress] = js.native
+  var IPAddress: js.UndefOr[typings.awsSdk.ssmMod.IPAddress] = js.undefined
   
   /**
     * The Amazon Identity and Access Management (IAM) role assigned to the on-premises Systems Manager managed instance. This call does not return the IAM role for EC2 instances. To retrieve the IAM role for an EC2 instance, use the Amazon EC2 DescribeInstances action. For information, see DescribeInstances in the Amazon EC2 API Reference or describe-instances in the AWS CLI Command Reference.
     */
-  var IamRole: js.UndefOr[typings.awsSdk.ssmMod.IamRole] = js.native
+  var IamRole: js.UndefOr[typings.awsSdk.ssmMod.IamRole] = js.undefined
   
   /**
     * The instance ID. 
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
   /**
     * Indicates whether the latest version of SSM Agent is running on your Linux Managed Instance. This field does not indicate whether or not the latest version is installed on Windows managed instances, because some older versions of Windows Server use the EC2Config service to process SSM requests.
     */
-  var IsLatestVersion: js.UndefOr[Boolean] = js.native
+  var IsLatestVersion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The date the association was last run.
     */
-  var LastAssociationExecutionDate: js.UndefOr[DateTime] = js.native
+  var LastAssociationExecutionDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The date and time when agent last pinged Systems Manager service. 
     */
-  var LastPingDateTime: js.UndefOr[DateTime] = js.native
+  var LastPingDateTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The last date the association was successfully run.
     */
-  var LastSuccessfulAssociationExecutionDate: js.UndefOr[DateTime] = js.native
+  var LastSuccessfulAssociationExecutionDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name assigned to an on-premises server or virtual machine (VM) when it is activated as a Systems Manager managed instance. The name is specified as the DefaultInstanceName property using the CreateActivation command. It is applied to the managed instance by specifying the Activation Code and Activation ID when you install SSM Agent on the instance, as explained in Install SSM Agent for a hybrid environment (Linux) and Install SSM Agent for a hybrid environment (Windows). To retrieve the Name tag of an EC2 instance, use the Amazon EC2 DescribeInstances action. For information, see DescribeInstances in the Amazon EC2 API Reference or describe-instances in the AWS CLI Command Reference.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * Connection status of SSM Agent.   The status Inactive has been deprecated and is no longer in use. 
     */
-  var PingStatus: js.UndefOr[typings.awsSdk.ssmMod.PingStatus] = js.native
+  var PingStatus: js.UndefOr[typings.awsSdk.ssmMod.PingStatus] = js.undefined
   
   /**
     * The name of the operating system platform running on your instance. 
     */
-  var PlatformName: js.UndefOr[String] = js.native
+  var PlatformName: js.UndefOr[String] = js.undefined
   
   /**
     * The operating system platform type. 
     */
-  var PlatformType: js.UndefOr[typings.awsSdk.ssmMod.PlatformType] = js.native
+  var PlatformType: js.UndefOr[typings.awsSdk.ssmMod.PlatformType] = js.undefined
   
   /**
     * The version of the OS platform running on your instance. 
     */
-  var PlatformVersion: js.UndefOr[String] = js.native
+  var PlatformVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The date the server or VM was registered with AWS as a managed instance.
     */
-  var RegistrationDate: js.UndefOr[DateTime] = js.native
+  var RegistrationDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The type of instance. Instances are either EC2 instances or managed instances. 
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.ssmMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.ssmMod.ResourceType] = js.undefined
 }
 object InstanceInformation {
   

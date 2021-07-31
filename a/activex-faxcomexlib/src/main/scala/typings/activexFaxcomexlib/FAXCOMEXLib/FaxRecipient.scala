@@ -2,21 +2,19 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxRecipient Class */
-@js.native
 trait FaxRecipient extends StObject {
   
   @JSName("FAXCOMEXLib.FaxRecipient_typekey")
-  var FAXCOMEXLibDotFaxRecipient_typekey: FaxRecipient = js.native
+  var FAXCOMEXLibDotFaxRecipient_typekey: FaxRecipient
   
   /** Recipient's fax number */
-  var FaxNumber: String = js.native
+  var FaxNumber: String
   
   /** Recipient's name */
-  var Name: String = js.native
+  var Name: String
 }
 object FaxRecipient {
   

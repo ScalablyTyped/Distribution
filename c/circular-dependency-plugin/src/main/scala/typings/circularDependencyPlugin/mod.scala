@@ -7,7 +7,6 @@ import typings.std.Plugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,7 +16,9 @@ object mod {
     */
   @JSImport("circular-dependency-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
@@ -26,42 +27,41 @@ object mod {
     */
   type CircularDependencyPlugin = Plugin
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * @default false
       */
-    var allowAsyncCycles: js.UndefOr[Boolean] = js.native
+    var allowAsyncCycles: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default process.cwd()
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * @default /$^/
       */
-    var exclude: js.UndefOr[RegExp] = js.native
+    var exclude: js.UndefOr[RegExp] = js.undefined
     
     /**
       * @default false
       */
-    var failOnError: js.UndefOr[Boolean] = js.native
+    var failOnError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default /.*\/
       */
-    var include: js.UndefOr[RegExp] = js.native
+    var include: js.UndefOr[RegExp] = js.undefined
     
     /**
       * @default false
       */
-    var onDetected: js.UndefOr[`false` | (js.Function1[/* x */ Compilation, Unit])] = js.native
+    var onDetected: js.UndefOr[`false` | (js.Function1[/* x */ Compilation, Unit])] = js.undefined
     
-    var onEnd: js.UndefOr[js.Function1[/* x */ CompilationAny, Unit]] = js.native
+    var onEnd: js.UndefOr[js.Function1[/* x */ CompilationAny, Unit]] = js.undefined
     
-    var onStart: js.UndefOr[js.Function1[/* x */ CompilationAny, Unit]] = js.native
+    var onStart: js.UndefOr[js.Function1[/* x */ CompilationAny, Unit]] = js.undefined
   }
   object Options {
     

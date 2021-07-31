@@ -5,7 +5,6 @@ import typings.storybookAddons.distMod.Collection
 import typings.storybookReactNative.anon.AddonSelected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addonsMod {

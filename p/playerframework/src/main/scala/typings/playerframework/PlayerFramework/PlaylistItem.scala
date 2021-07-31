@@ -2,15 +2,13 @@ package typings.playerframework.PlayerFramework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaylistItem extends StObject {
   
-  var src: String = js.native
+  var src: String
   
-  var tracks: js.UndefOr[js.Array[_]] = js.native
+  var tracks: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object PlaylistItem {
   
@@ -27,7 +25,7 @@ object PlaylistItem {
     def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTracks(value: js.Array[_]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    def setTracks(value: js.Array[js.Any]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)

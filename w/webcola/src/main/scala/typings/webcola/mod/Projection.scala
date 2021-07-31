@@ -4,7 +4,6 @@ import typings.webcola.rectangleMod.GraphNode
 import typings.webcola.rectangleMod.ProjectionGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "Projection")
@@ -16,41 +15,41 @@ class Projection protected ()
   def this(
     nodes: js.Array[GraphNode],
     groups: js.Array[ProjectionGroup],
-    rootGroup: js.UndefOr[scala.Nothing],
-    constraints: js.Array[_]
+    rootGroup: Unit,
+    constraints: js.Array[js.Any]
   ) = this()
   def this(
     nodes: js.Array[GraphNode],
     groups: js.Array[ProjectionGroup],
     rootGroup: ProjectionGroup,
-    constraints: js.Array[_]
+    constraints: js.Array[js.Any]
   ) = this()
   def this(
     nodes: js.Array[GraphNode],
     groups: js.Array[ProjectionGroup],
-    rootGroup: js.UndefOr[scala.Nothing],
-    constraints: js.UndefOr[scala.Nothing],
+    rootGroup: Unit,
+    constraints: js.Array[js.Any],
     avoidOverlaps: Boolean
   ) = this()
   def this(
     nodes: js.Array[GraphNode],
     groups: js.Array[ProjectionGroup],
-    rootGroup: js.UndefOr[scala.Nothing],
-    constraints: js.Array[_],
-    avoidOverlaps: Boolean
-  ) = this()
-  def this(
-    nodes: js.Array[GraphNode],
-    groups: js.Array[ProjectionGroup],
-    rootGroup: ProjectionGroup,
-    constraints: js.UndefOr[scala.Nothing],
+    rootGroup: Unit,
+    constraints: Unit,
     avoidOverlaps: Boolean
   ) = this()
   def this(
     nodes: js.Array[GraphNode],
     groups: js.Array[ProjectionGroup],
     rootGroup: ProjectionGroup,
-    constraints: js.Array[_],
+    constraints: js.Array[js.Any],
+    avoidOverlaps: Boolean
+  ) = this()
+  def this(
+    nodes: js.Array[GraphNode],
+    groups: js.Array[ProjectionGroup],
+    rootGroup: ProjectionGroup,
+    constraints: Unit,
     avoidOverlaps: Boolean
   ) = this()
 }

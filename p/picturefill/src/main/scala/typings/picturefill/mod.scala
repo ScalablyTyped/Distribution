@@ -5,28 +5,28 @@ import typings.std.Element
 import typings.std.NodeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  @scala.inline
+  def apply(arg: EvaluateArg): Unit = ^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("picturefill", JSImport.Namespace)
   @js.native
-  def apply(): Unit = js.native
-  @JSImport("picturefill", JSImport.Namespace)
-  @js.native
-  def apply(arg: EvaluateArg): Unit = js.native
+  val ^ : js.Any = js.native
   
   object Picturefill {
     
     type ElementNullable = Element | Null
     
-    @js.native
     trait EvaluateArg extends StObject {
       
-      var elements: NodeList | js.Array[ElementNullable] = js.native
+      var elements: NodeList | js.Array[ElementNullable]
       
-      var reevaluate: js.UndefOr[Boolean] = js.native
+      var reevaluate: js.UndefOr[Boolean] = js.undefined
     }
     object EvaluateArg {
       

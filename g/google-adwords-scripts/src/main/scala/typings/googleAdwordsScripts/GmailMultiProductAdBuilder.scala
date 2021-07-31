@@ -2,41 +2,41 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GmailMultiProductAdBuilder[GmailMultiProductAd] extends AdBuilder[GmailMultiProductAdBuilder[GmailImageAd]] {
+trait GmailMultiProductAdBuilder[GmailMultiProductAd]
+  extends StObject
+     with AdBuilder[GmailMultiProductAdBuilder[GmailImageAd]] {
   
-  def withAdvertiser(advertiser: String): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withAdvertiser(advertiser: String): GmailMultiProductAdBuilder[GmailMultiProductAd]
   
-  def withContent(content: String): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withContent(content: String): GmailMultiProductAdBuilder[GmailMultiProductAd]
   
-  def withDescription(description: String): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withDescription(description: String): GmailMultiProductAdBuilder[GmailMultiProductAd]
   
-  def withHeader(header: Media): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withHeader(header: Media): GmailMultiProductAdBuilder[GmailMultiProductAd]
   
-  def withHeadline(headline: String): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withHeadline(headline: String): GmailMultiProductAdBuilder[GmailMultiProductAd]
   
-  def withHeadlineColor(headlineColor: String): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withHeadlineColor(headlineColor: String): GmailMultiProductAdBuilder[GmailMultiProductAd]
   
-  def withItemButtonCallsToAction(itemCallsToAction: js.Array[String]): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withItemButtonCallsToAction(itemCallsToAction: js.Array[String]): GmailMultiProductAdBuilder[GmailMultiProductAd]
   
-  def withItemButtonFinalMobileUrls(itemButtonFinalMobileUrls: js.Array[String]): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withItemButtonFinalMobileUrls(itemButtonFinalMobileUrls: js.Array[String]): GmailMultiProductAdBuilder[GmailMultiProductAd]
   
-  def withItemButtonFinalUrls(itemButtonFinalUrls: js.Array[String]): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withItemButtonFinalUrls(itemButtonFinalUrls: js.Array[String]): GmailMultiProductAdBuilder[GmailMultiProductAd]
   
-  def withItemButtonTrackingTemplates(itemButtonTrackingTemplates: js.Array[String]): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withItemButtonTrackingTemplates(itemButtonTrackingTemplates: js.Array[String]): GmailMultiProductAdBuilder[GmailMultiProductAd]
   
-  def withItemImages(itemImages: js.Array[Media]): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withItemImages(itemImages: js.Array[Media]): GmailMultiProductAdBuilder[GmailMultiProductAd]
   
-  def withItemTitle(itemTitles: js.Array[String]): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withItemTitle(itemTitles: js.Array[String]): GmailMultiProductAdBuilder[GmailMultiProductAd]
   
-  def withLogo(logo: Media): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withLogo(logo: Media): GmailMultiProductAdBuilder[GmailMultiProductAd]
   
-  def withName(name: String): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withName(name: String): GmailMultiProductAdBuilder[GmailMultiProductAd]
   
-  def withSubject(subject: String): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
+  def withSubject(subject: String): GmailMultiProductAdBuilder[GmailMultiProductAd]
 }
 object GmailMultiProductAdBuilder {
   
@@ -68,7 +68,7 @@ object GmailMultiProductAdBuilder {
   }
   
   @scala.inline
-  implicit class GmailMultiProductAdBuilderMutableBuilder[Self <: GmailMultiProductAdBuilder[_], GmailMultiProductAd] (val x: Self with GmailMultiProductAdBuilder[GmailMultiProductAd]) extends AnyVal {
+  implicit class GmailMultiProductAdBuilderMutableBuilder[Self <: GmailMultiProductAdBuilder[?], GmailMultiProductAd] (val x: Self & GmailMultiProductAdBuilder[GmailMultiProductAd]) extends AnyVal {
     
     @scala.inline
     def setWithAdvertiser(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withAdvertiser", js.Any.fromFunction1(value))

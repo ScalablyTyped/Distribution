@@ -5,7 +5,6 @@ import typings.xrm.Xrm.GlobalContext
 import typings.xrm.Xrm.XrmStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,9 +16,8 @@ object global {
     * It is preferreed to use {@link Xrm.Utility.getGlobalContext Xrm.Utility.getGlobalContext()} instead.
     * @see {@link Xrm.Utility.getGlobalContext}
     */
-  @JSGlobal("GetGlobalContext")
-  @js.native
-  def GetGlobalContext(): GlobalContext = js.native
+  @scala.inline
+  def GetGlobalContext(): GlobalContext = js.Dynamic.global.applyDynamic("GetGlobalContext")().asInstanceOf[GlobalContext]
   
   /**
     * Xrm Namespace

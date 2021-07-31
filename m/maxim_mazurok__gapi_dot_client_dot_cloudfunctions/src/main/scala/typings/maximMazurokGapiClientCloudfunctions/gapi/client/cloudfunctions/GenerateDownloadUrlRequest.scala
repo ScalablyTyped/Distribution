@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateDownloadUrlRequest extends StObject {
   
   /** The optional version of function. If not set, default, current version is used. */
-  var versionId: js.UndefOr[String] = js.native
+  var versionId: js.UndefOr[String] = js.undefined
 }
 object GenerateDownloadUrlRequest {
   

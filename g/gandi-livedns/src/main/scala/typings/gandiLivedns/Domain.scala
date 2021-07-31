@@ -2,15 +2,13 @@ package typings.gandiLivedns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Domain extends StObject {
   
-  var fqdn: String = js.native
+  var fqdn: String
   
-  var zone_uuid: String = js.native
+  var zone_uuid: String
 }
 object Domain {
   

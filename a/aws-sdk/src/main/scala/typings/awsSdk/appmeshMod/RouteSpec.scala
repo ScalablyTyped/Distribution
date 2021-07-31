@@ -2,36 +2,34 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpec extends StObject {
   
   /**
     * An object that represents the specification of a gRPC route.
     */
-  var grpcRoute: js.UndefOr[GrpcRoute] = js.native
+  var grpcRoute: js.UndefOr[GrpcRoute] = js.undefined
   
   /**
     * An object that represents the specification of an HTTP/2 route.
     */
-  var http2Route: js.UndefOr[HttpRoute] = js.native
+  var http2Route: js.UndefOr[HttpRoute] = js.undefined
   
   /**
     * An object that represents the specification of an HTTP route.
     */
-  var httpRoute: js.UndefOr[HttpRoute] = js.native
+  var httpRoute: js.UndefOr[HttpRoute] = js.undefined
   
   /**
     * The priority for the route. Routes are matched based on the specified value, where 0 is the highest priority.
     */
-  var priority: js.UndefOr[RoutePriority] = js.native
+  var priority: js.UndefOr[RoutePriority] = js.undefined
   
   /**
     * An object that represents the specification of a TCP route.
     */
-  var tcpRoute: js.UndefOr[TcpRoute] = js.native
+  var tcpRoute: js.UndefOr[TcpRoute] = js.undefined
 }
 object RouteSpec {
   

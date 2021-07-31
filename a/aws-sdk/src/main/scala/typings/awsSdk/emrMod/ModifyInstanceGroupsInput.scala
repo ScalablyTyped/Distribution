@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyInstanceGroupsInput extends StObject {
   
   /**
     * The ID of the cluster to which the instance group belongs.
     */
-  var ClusterId: js.UndefOr[typings.awsSdk.emrMod.ClusterId] = js.native
+  var ClusterId: js.UndefOr[typings.awsSdk.emrMod.ClusterId] = js.undefined
   
   /**
     * Instance groups to change.
     */
-  var InstanceGroups: js.UndefOr[InstanceGroupModifyConfigList] = js.native
+  var InstanceGroups: js.UndefOr[InstanceGroupModifyConfigList] = js.undefined
 }
 object ModifyInstanceGroupsInput {
   

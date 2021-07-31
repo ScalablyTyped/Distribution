@@ -2,23 +2,21 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartLocalServiceDiscoveryOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[StartLocalServiceDiscoveryCompleteCallback] = js.native
+  var complete: js.UndefOr[StartLocalServiceDiscoveryCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[StartLocalServiceDiscoveryFailCallback] = js.native
+  var fail: js.UndefOr[StartLocalServiceDiscoveryFailCallback] = js.undefined
   
   /** 要搜索的服务类型 */
-  var serviceType: String = js.native
+  var serviceType: String
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[StartLocalServiceDiscoverySuccessCallback] = js.native
+  var success: js.UndefOr[StartLocalServiceDiscoverySuccessCallback] = js.undefined
 }
 object StartLocalServiceDiscoveryOption {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.acmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filters extends StObject {
   
   /**
     * Specify one or more ExtendedKeyUsage extension values.
     */
-  var extendedKeyUsage: js.UndefOr[ExtendedKeyUsageFilterList] = js.native
+  var extendedKeyUsage: js.UndefOr[ExtendedKeyUsageFilterList] = js.undefined
   
   /**
     * Specify one or more algorithms that can be used to generate key pairs. Default filtering returns only RSA_2048 certificates. To return other certificate types, provide the desired type signatures in a comma-separated list. For example, "keyTypes": ["RSA_2048,RSA_4096"] returns both RSA_2048 and RSA_4096 certificates.
     */
-  var keyTypes: js.UndefOr[KeyAlgorithmList] = js.native
+  var keyTypes: js.UndefOr[KeyAlgorithmList] = js.undefined
   
   /**
     * Specify one or more KeyUsage extension values.
     */
-  var keyUsage: js.UndefOr[KeyUsageFilterList] = js.native
+  var keyUsage: js.UndefOr[KeyUsageFilterList] = js.undefined
 }
 object Filters {
   

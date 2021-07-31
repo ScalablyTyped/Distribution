@@ -2,41 +2,39 @@ package typings.plotlyJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SunburstPlotDatum extends StObject {
   
-  var color: Double = js.native
+  var color: Double
   
-  var curveNumber: Double = js.native
+  var curveNumber: Double
   
-  var data: Data = js.native
+  var data: Data
   
-  var entry: String = js.native
+  var entry: String
   
-  var fullData: Data = js.native
+  var fullData: Data
   
-  var hovertext: String = js.native
+  var hovertext: String
   
-  var id: String = js.native
+  var id: String
   
-  var label: String = js.native
+  var label: String
   
-  var parent: String = js.native
+  var parent: String
   
-  var percentEntry: Double = js.native
+  var percentEntry: Double
   
-  var percentParent: Double = js.native
+  var percentParent: Double
   
-  var percentRoot: Double = js.native
+  var percentRoot: Double
   
-  var pointNumber: Double = js.native
+  var pointNumber: Double
   
-  var root: String = js.native
+  var root: String
   
-  var value: Double = js.native
+  var value: Double
 }
 object SunburstPlotDatum {
   

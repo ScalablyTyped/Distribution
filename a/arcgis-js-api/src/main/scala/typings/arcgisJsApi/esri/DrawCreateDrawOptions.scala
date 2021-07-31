@@ -7,18 +7,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DrawCreateDrawOptions extends Object {
+trait DrawCreateDrawOptions
+  extends StObject
+     with Object {
   
   /**
     * The drawing mode.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#create)
     */
-  var mode: js.UndefOr[hybrid | freehand | click] = js.native
+  var mode: js.UndefOr[hybrid | freehand | click] = js.undefined
 }
 object DrawCreateDrawOptions {
   

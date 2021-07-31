@@ -2,46 +2,44 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerConnectorInfo extends StObject {
   
   /**
     * Number of active discovery connectors.
     */
-  var activeConnectors: Integer = js.native
+  var activeConnectors: Integer
   
   /**
     * Number of blacklisted discovery connectors.
     */
-  var blackListedConnectors: Integer = js.native
+  var blackListedConnectors: Integer
   
   /**
     * Number of healthy discovery connectors.
     */
-  var healthyConnectors: Integer = js.native
+  var healthyConnectors: Integer
   
   /**
     * Number of discovery connectors with status SHUTDOWN,
     */
-  var shutdownConnectors: Integer = js.native
+  var shutdownConnectors: Integer
   
   /**
     * Total number of discovery connectors.
     */
-  var totalConnectors: Integer = js.native
+  var totalConnectors: Integer
   
   /**
     * Number of unhealthy discovery connectors.
     */
-  var unhealthyConnectors: Integer = js.native
+  var unhealthyConnectors: Integer
   
   /**
     * Number of unknown discovery connectors.
     */
-  var unknownConnectors: Integer = js.native
+  var unknownConnectors: Integer
 }
 object CustomerConnectorInfo {
   

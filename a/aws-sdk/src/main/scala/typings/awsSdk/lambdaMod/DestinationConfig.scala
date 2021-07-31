@@ -2,21 +2,19 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationConfig extends StObject {
   
   /**
     * The destination configuration for failed invocations.
     */
-  var OnFailure: js.UndefOr[typings.awsSdk.lambdaMod.OnFailure] = js.native
+  var OnFailure: js.UndefOr[typings.awsSdk.lambdaMod.OnFailure] = js.undefined
   
   /**
     * The destination configuration for successful invocations.
     */
-  var OnSuccess: js.UndefOr[typings.awsSdk.lambdaMod.OnSuccess] = js.native
+  var OnSuccess: js.UndefOr[typings.awsSdk.lambdaMod.OnSuccess] = js.undefined
 }
 object DestinationConfig {
   

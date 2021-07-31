@@ -14,18 +14,17 @@ import typings.winrtUwp.winrtUwpStrings.starting
 import typings.winrtUwp.winrtUwpStrings.switchstreamsrequested
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a media source that delivers media samples directly to the media pipeline. */
 @js.native
 trait MediaStreamSource extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_closed(`type`: closed, listener: TypedEventHandler[MediaStreamSource, MediaStreamSourceClosedEventArgs]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_paused(`type`: paused, listener: TypedEventHandler[MediaStreamSource, _]): Unit = js.native
+  def addEventListener_paused(`type`: paused, listener: TypedEventHandler[MediaStreamSource, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_samplerequested(
     `type`: samplerequested,
@@ -82,40 +81,40 @@ trait MediaStreamSource extends StObject {
   def notifyError(errorStatus: MediaStreamSourceErrorStatus): Unit = js.native
   
   /** Occurs when the MediaStreamSource is shutting down. */
-  def onclosed(ev: MediaStreamSourceClosedEventArgs with WinRTEvent[MediaStreamSource]): Unit = js.native
+  def onclosed(ev: MediaStreamSourceClosedEventArgs & WinRTEvent[MediaStreamSource]): Unit = js.native
   /** Occurs when the MediaStreamSource is shutting down. */
   @JSName("onclosed")
   var onclosed_Original: TypedEventHandler[MediaStreamSource, MediaStreamSourceClosedEventArgs] = js.native
   
   /** Occurs when the MediaStreamSource is paused and stops requesting MediaStreamSample objects for an unspecified period of time, but is expected to resume requesting MediaStreamSample objects from the current position. */
-  def onpaused(ev: js.Any with WinRTEvent[MediaStreamSource]): Unit = js.native
+  def onpaused(ev: js.Any & WinRTEvent[MediaStreamSource]): Unit = js.native
   /** Occurs when the MediaStreamSource is paused and stops requesting MediaStreamSample objects for an unspecified period of time, but is expected to resume requesting MediaStreamSample objects from the current position. */
   @JSName("onpaused")
-  var onpaused_Original: TypedEventHandler[MediaStreamSource, _] = js.native
+  var onpaused_Original: TypedEventHandler[MediaStreamSource, js.Any] = js.native
   
   /** Occurs when the MediaStreamSource request a MediaStreamSample for a specified stream. */
-  def onsamplerequested(ev: MediaStreamSourceSampleRequestedEventArgs with WinRTEvent[MediaStreamSource]): Unit = js.native
+  def onsamplerequested(ev: MediaStreamSourceSampleRequestedEventArgs & WinRTEvent[MediaStreamSource]): Unit = js.native
   /** Occurs when the MediaStreamSource request a MediaStreamSample for a specified stream. */
   @JSName("onsamplerequested")
   var onsamplerequested_Original: TypedEventHandler[MediaStreamSource, MediaStreamSourceSampleRequestedEventArgs] = js.native
   
   /** Occurs when the MediaStreamSource is ready to start requesting MediaStreamSample objects. The event can specify a position in the media time-line from which the first MediaStreamSample should be delivered. */
-  def onstarting(ev: MediaStreamSourceStartingEventArgs with WinRTEvent[MediaStreamSource]): Unit = js.native
+  def onstarting(ev: MediaStreamSourceStartingEventArgs & WinRTEvent[MediaStreamSource]): Unit = js.native
   /** Occurs when the MediaStreamSource is ready to start requesting MediaStreamSample objects. The event can specify a position in the media time-line from which the first MediaStreamSample should be delivered. */
   @JSName("onstarting")
   var onstarting_Original: TypedEventHandler[MediaStreamSource, MediaStreamSourceStartingEventArgs] = js.native
   
   /** Occurs when the MediaStreamSource will stop requesting MediaStreamSample objects for a certain stream and will start requesting MediaStreamSample objects from a different stream instead. */
-  def onswitchstreamsrequested(ev: MediaStreamSourceSwitchStreamsRequestedEventArgs with WinRTEvent[MediaStreamSource]): Unit = js.native
+  def onswitchstreamsrequested(ev: MediaStreamSourceSwitchStreamsRequestedEventArgs & WinRTEvent[MediaStreamSource]): Unit = js.native
   /** Occurs when the MediaStreamSource will stop requesting MediaStreamSample objects for a certain stream and will start requesting MediaStreamSample objects from a different stream instead. */
   @JSName("onswitchstreamsrequested")
   var onswitchstreamsrequested_Original: TypedEventHandler[MediaStreamSource, MediaStreamSourceSwitchStreamsRequestedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_closed(`type`: closed, listener: TypedEventHandler[MediaStreamSource, MediaStreamSourceClosedEventArgs]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_paused(`type`: paused, listener: TypedEventHandler[MediaStreamSource, _]): Unit = js.native
+  def removeEventListener_paused(`type`: paused, listener: TypedEventHandler[MediaStreamSource, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_samplerequested(
     `type`: samplerequested,

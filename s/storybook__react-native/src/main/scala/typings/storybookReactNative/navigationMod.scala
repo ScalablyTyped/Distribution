@@ -4,7 +4,6 @@ import typings.react.mod.PureComponent
 import typings.storybookReactNative.anon.IsUIVisible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navigationMod {
@@ -27,14 +26,13 @@ object navigationMod {
     var state_Navigation: IsUIVisible = js.native
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var initialUiVisible: js.UndefOr[Boolean] = js.native
+    var initialUiVisible: js.UndefOr[Boolean] = js.undefined
     
-    def onChangeTab(index: Double): Unit = js.native
+    def onChangeTab(index: Double): Unit
     
-    var tabOpen: Double = js.native
+    var tabOpen: Double
   }
   object Props {
     

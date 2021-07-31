@@ -4,28 +4,28 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.sequence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SequenceTransform extends _Transforms {
+trait SequenceTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[String | SignalRef] = js.native
+  var as: js.UndefOr[String | SignalRef] = js.undefined
   
-  var start: Double | SignalRef = js.native
+  var start: Double | SignalRef
   
-  var step: js.UndefOr[Double | SignalRef] = js.native
+  var step: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var stop: Double | SignalRef = js.native
+  var stop: Double | SignalRef
   
-  var `type`: sequence = js.native
+  var `type`: sequence
 }
 object SequenceTransform {
   
   @scala.inline
-  def apply(start: Double | SignalRef, stop: Double | SignalRef, `type`: sequence): SequenceTransform = {
+  def apply(start: Double | SignalRef, stop: Double | SignalRef): SequenceTransform = {
     val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sequence")
     __obj.asInstanceOf[SequenceTransform]
   }
   

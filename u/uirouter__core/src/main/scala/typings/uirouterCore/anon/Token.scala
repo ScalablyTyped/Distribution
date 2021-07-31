@@ -2,15 +2,13 @@ package typings.uirouterCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Token extends StObject {
   
-  var token: js.Any = js.native
+  var token: js.Any
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object Token {
   

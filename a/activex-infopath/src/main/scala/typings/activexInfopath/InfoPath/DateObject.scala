@@ -2,22 +2,20 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateObject extends StObject {
   
-  def AddDays(pvarDate: js.Any, pvarDays: js.Any): js.Any = js.native
+  def AddDays(pvarDate: js.Any, pvarDays: js.Any): js.Any
   
-  def AddSeconds(pvarTime: js.Any, pvarSeconds: js.Any): js.Any = js.native
+  def AddSeconds(pvarTime: js.Any, pvarSeconds: js.Any): js.Any
   
   @JSName("InfoPath.DateObject_typekey")
-  var InfoPathDotDateObject_typekey: DateObject = js.native
+  var InfoPathDotDateObject_typekey: DateObject
   
-  def Now(): js.Any = js.native
+  def Now(): js.Any
   
-  def Today(): js.Any = js.native
+  def Today(): js.Any
 }
 object DateObject {
   

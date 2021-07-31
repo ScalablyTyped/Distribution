@@ -7,14 +7,14 @@ import typings.dayjs.mod.UnitType
 import typings.dayjs.mod.UnitTypeShort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dayjsStrings {
   
   @js.native
   sealed trait M
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -29,14 +29,16 @@ object dayjsStrings {
   
   @js.native
   sealed trait Q
-    extends QUnitType
+    extends StObject
+       with QUnitType
        with typings.dayjs.esmMod.QUnitType
   @scala.inline
   def Q: Q = "Q".asInstanceOf[Q]
   
   @js.native
   sealed trait d
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -51,7 +53,8 @@ object dayjsStrings {
   
   @js.native
   sealed trait date
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -64,7 +67,8 @@ object dayjsStrings {
   
   @js.native
   sealed trait day
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -77,7 +81,8 @@ object dayjsStrings {
   
   @js.native
   sealed trait h
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -92,7 +97,8 @@ object dayjsStrings {
   
   @js.native
   sealed trait hour
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -105,14 +111,16 @@ object dayjsStrings {
   
   @js.native
   sealed trait isoWeek
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
   @scala.inline
   def isoWeek: isoWeek = "isoWeek".asInstanceOf[isoWeek]
   
   @js.native
   sealed trait m_
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -127,7 +135,8 @@ object dayjsStrings {
   
   @js.native
   sealed trait millisecond
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -140,7 +149,8 @@ object dayjsStrings {
   
   @js.native
   sealed trait minute
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -153,7 +163,8 @@ object dayjsStrings {
   
   @js.native
   sealed trait month
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -166,7 +177,8 @@ object dayjsStrings {
   
   @js.native
   sealed trait ms
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -181,14 +193,16 @@ object dayjsStrings {
   
   @js.native
   sealed trait quarter
-    extends QUnitType
+    extends StObject
+       with QUnitType
        with typings.dayjs.esmMod.QUnitType
   @scala.inline
   def quarter: quarter = "quarter".asInstanceOf[quarter]
   
   @js.native
   sealed trait s
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -203,7 +217,8 @@ object dayjsStrings {
   
   @js.native
   sealed trait second
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -216,7 +231,8 @@ object dayjsStrings {
   
   @js.native
   sealed trait w
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -225,7 +241,8 @@ object dayjsStrings {
   
   @js.native
   sealed trait week
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -234,7 +251,8 @@ object dayjsStrings {
   
   @js.native
   sealed trait y
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
@@ -249,7 +267,8 @@ object dayjsStrings {
   
   @js.native
   sealed trait year
-    extends ISOUnitType
+    extends StObject
+       with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType

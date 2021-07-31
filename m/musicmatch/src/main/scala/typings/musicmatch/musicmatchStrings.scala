@@ -4,13 +4,14 @@ import typings.musicmatch.mod.TFormat
 import typings.musicmatch.mod.TSort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object musicmatchStrings {
   
   @js.native
-  sealed trait asc extends TSort
+  sealed trait asc
+    extends StObject
+       with TSort
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   
@@ -20,7 +21,9 @@ object musicmatchStrings {
   def bad_characters: bad_characters = "bad_characters".asInstanceOf[bad_characters]
   
   @js.native
-  sealed trait desc extends TSort
+  sealed trait desc
+    extends StObject
+       with TSort
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   
@@ -30,7 +33,9 @@ object musicmatchStrings {
   def dfxp: dfxp = "dfxp".asInstanceOf[dfxp]
   
   @js.native
-  sealed trait json extends TFormat
+  sealed trait json
+    extends StObject
+       with TFormat
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   
@@ -70,7 +75,9 @@ object musicmatchStrings {
   def wrong_verses: wrong_verses = "wrong_verses".asInstanceOf[wrong_verses]
   
   @js.native
-  sealed trait xml extends TFormat
+  sealed trait xml
+    extends StObject
+       with TFormat
   @scala.inline
   def xml: xml = "xml".asInstanceOf[xml]
 }

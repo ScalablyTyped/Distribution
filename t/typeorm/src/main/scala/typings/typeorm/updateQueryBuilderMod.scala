@@ -13,7 +13,6 @@ import typings.typeorm.typeormStrings.`NULLS LAST`
 import typings.typeorm.whereExpressionMod.WhereExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object updateQueryBuilderMod {
@@ -24,9 +23,9 @@ object updateQueryBuilderMod {
     extends QueryBuilder[Entity]
        with WhereExpression {
     def this(connectionOrQueryBuilder: Connection) = this()
-    def this(connectionOrQueryBuilder: QueryBuilder[_]) = this()
+    def this(connectionOrQueryBuilder: QueryBuilder[js.Any]) = this()
     def this(connectionOrQueryBuilder: Connection, queryRunner: QueryRunner) = this()
-    def this(connectionOrQueryBuilder: QueryBuilder[_], queryRunner: QueryRunner) = this()
+    def this(connectionOrQueryBuilder: QueryBuilder[js.Any], queryRunner: QueryRunner) = this()
     
     /**
       * Adds ORDER BY condition in the query builder.
@@ -41,9 +40,9 @@ object updateQueryBuilderMod {
     @JSName("addOrderBy")
     def addOrderBy_DESC(sort: String, order: DESC): this.type = js.native
     @JSName("addOrderBy")
-    def addOrderBy_NULLSFIRST(sort: String, order: js.UndefOr[scala.Nothing], nulls: `NULLS FIRST`): this.type = js.native
+    def addOrderBy_NULLSFIRST(sort: String, order: Unit, nulls: `NULLS FIRST`): this.type = js.native
     @JSName("addOrderBy")
-    def addOrderBy_NULLSLAST(sort: String, order: js.UndefOr[scala.Nothing], nulls: `NULLS LAST`): this.type = js.native
+    def addOrderBy_NULLSLAST(sort: String, order: Unit, nulls: `NULLS LAST`): this.type = js.native
     
     /**
       * Creates "LIMIT" parts of SQL query.
@@ -100,9 +99,9 @@ object updateQueryBuilderMod {
     @JSName("orderBy")
     def orderBy_DESC(sort: String, order: DESC): this.type = js.native
     @JSName("orderBy")
-    def orderBy_NULLSFIRST(sort: String, order: js.UndefOr[scala.Nothing], nulls: `NULLS FIRST`): this.type = js.native
+    def orderBy_NULLSFIRST(sort: String, order: Unit, nulls: `NULLS FIRST`): this.type = js.native
     @JSName("orderBy")
-    def orderBy_NULLSLAST(sort: String, order: js.UndefOr[scala.Nothing], nulls: `NULLS LAST`): this.type = js.native
+    def orderBy_NULLSLAST(sort: String, order: Unit, nulls: `NULLS LAST`): this.type = js.native
     
     /**
       * Optional returning/output clause.

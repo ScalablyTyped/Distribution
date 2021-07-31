@@ -26,10 +26,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ebsMod {
+  
+  @JSImport("@pulumi/aws/ebs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/ebs", "DefaultKmsKey")
   @js.native
@@ -48,6 +51,10 @@ object ebsMod {
   /* static members */
   object DefaultKmsKey {
     
+    @JSImport("@pulumi/aws/ebs", "DefaultKmsKey")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DefaultKmsKey resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,26 +64,21 @@ object ebsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ebs", "DefaultKmsKey.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey = js.native
-    @JSImport("@pulumi/aws/ebs", "DefaultKmsKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey = js.native
-    @JSImport("@pulumi/aws/ebs", "DefaultKmsKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DefaultKmsKeyState): typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey = js.native
-    @JSImport("@pulumi/aws/ebs", "DefaultKmsKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DefaultKmsKeyState, opts: CustomResourceOptions): typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DefaultKmsKeyState): typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DefaultKmsKeyState, opts: CustomResourceOptions): typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey]
     
     /**
       * Returns true if the given object is an instance of DefaultKmsKey.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ebs", "DefaultKmsKey.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/defaultKmsKey.DefaultKmsKey */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/defaultKmsKey.DefaultKmsKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/defaultKmsKey.DefaultKmsKey */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ebs", "EncryptionByDefault")
@@ -92,11 +94,15 @@ object ebsMod {
       */
     def this(name: String) = this()
     def this(name: String, args: EncryptionByDefaultArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: EncryptionByDefaultArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object EncryptionByDefault {
+    
+    @JSImport("@pulumi/aws/ebs", "EncryptionByDefault")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing EncryptionByDefault resource's state with the given name, ID, and optional extra
@@ -107,26 +113,21 @@ object ebsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ebs", "EncryptionByDefault.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault = js.native
-    @JSImport("@pulumi/aws/ebs", "EncryptionByDefault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault = js.native
-    @JSImport("@pulumi/aws/ebs", "EncryptionByDefault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EncryptionByDefaultState): typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault = js.native
-    @JSImport("@pulumi/aws/ebs", "EncryptionByDefault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EncryptionByDefaultState, opts: CustomResourceOptions): typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EncryptionByDefaultState): typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EncryptionByDefaultState, opts: CustomResourceOptions): typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault]
     
     /**
       * Returns true if the given object is an instance of EncryptionByDefault.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ebs", "EncryptionByDefault.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/encryptionByDefault.EncryptionByDefault */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/encryptionByDefault.EncryptionByDefault */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/encryptionByDefault.EncryptionByDefault */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ebs", "Snapshot")
@@ -146,6 +147,10 @@ object ebsMod {
   /* static members */
   object Snapshot {
     
+    @JSImport("@pulumi/aws/ebs", "Snapshot")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Snapshot resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -155,26 +160,21 @@ object ebsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ebs", "Snapshot.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.snapshotMod.Snapshot = js.native
-    @JSImport("@pulumi/aws/ebs", "Snapshot.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.snapshotMod.Snapshot = js.native
-    @JSImport("@pulumi/aws/ebs", "Snapshot.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SnapshotState): typings.pulumiAws.snapshotMod.Snapshot = js.native
-    @JSImport("@pulumi/aws/ebs", "Snapshot.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SnapshotState, opts: CustomResourceOptions): typings.pulumiAws.snapshotMod.Snapshot = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.snapshotMod.Snapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.snapshotMod.Snapshot]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.snapshotMod.Snapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.snapshotMod.Snapshot]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SnapshotState): typings.pulumiAws.snapshotMod.Snapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.snapshotMod.Snapshot]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SnapshotState, opts: CustomResourceOptions): typings.pulumiAws.snapshotMod.Snapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.snapshotMod.Snapshot]
     
     /**
       * Returns true if the given object is an instance of Snapshot.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ebs", "Snapshot.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/snapshot.Snapshot */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/snapshot.Snapshot */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/snapshot.Snapshot */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ebs", "SnapshotCopy")
@@ -194,6 +194,10 @@ object ebsMod {
   /* static members */
   object SnapshotCopy {
     
+    @JSImport("@pulumi/aws/ebs", "SnapshotCopy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SnapshotCopy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -203,26 +207,21 @@ object ebsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ebs", "SnapshotCopy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.snapshotCopyMod.SnapshotCopy = js.native
-    @JSImport("@pulumi/aws/ebs", "SnapshotCopy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.snapshotCopyMod.SnapshotCopy = js.native
-    @JSImport("@pulumi/aws/ebs", "SnapshotCopy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SnapshotCopyState): typings.pulumiAws.snapshotCopyMod.SnapshotCopy = js.native
-    @JSImport("@pulumi/aws/ebs", "SnapshotCopy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SnapshotCopyState, opts: CustomResourceOptions): typings.pulumiAws.snapshotCopyMod.SnapshotCopy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.snapshotCopyMod.SnapshotCopy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.snapshotCopyMod.SnapshotCopy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.snapshotCopyMod.SnapshotCopy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.snapshotCopyMod.SnapshotCopy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SnapshotCopyState): typings.pulumiAws.snapshotCopyMod.SnapshotCopy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.snapshotCopyMod.SnapshotCopy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SnapshotCopyState, opts: CustomResourceOptions): typings.pulumiAws.snapshotCopyMod.SnapshotCopy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.snapshotCopyMod.SnapshotCopy]
     
     /**
       * Returns true if the given object is an instance of SnapshotCopy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ebs", "SnapshotCopy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/snapshotCopy.SnapshotCopy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/snapshotCopy.SnapshotCopy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/snapshotCopy.SnapshotCopy */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ebs", "Volume")
@@ -242,6 +241,10 @@ object ebsMod {
   /* static members */
   object Volume {
     
+    @JSImport("@pulumi/aws/ebs", "Volume")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Volume resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -251,91 +254,66 @@ object ebsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ebs", "Volume.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.volumeMod.Volume = js.native
-    @JSImport("@pulumi/aws/ebs", "Volume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.volumeMod.Volume = js.native
-    @JSImport("@pulumi/aws/ebs", "Volume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VolumeState): typings.pulumiAws.volumeMod.Volume = js.native
-    @JSImport("@pulumi/aws/ebs", "Volume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VolumeState, opts: CustomResourceOptions): typings.pulumiAws.volumeMod.Volume = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.volumeMod.Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.volumeMod.Volume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.volumeMod.Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.volumeMod.Volume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VolumeState): typings.pulumiAws.volumeMod.Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.volumeMod.Volume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VolumeState, opts: CustomResourceOptions): typings.pulumiAws.volumeMod.Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.volumeMod.Volume]
     
     /**
       * Returns true if the given object is an instance of Volume.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ebs", "Volume.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/volume.Volume */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/volume.Volume */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/volume.Volume */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/ebs", "getDefaultKmsKey")
-  @js.native
-  def getDefaultKmsKey(): js.Promise[GetDefaultKmsKeyResult] = js.native
-  @JSImport("@pulumi/aws/ebs", "getDefaultKmsKey")
-  @js.native
-  def getDefaultKmsKey(opts: InvokeOptions): js.Promise[GetDefaultKmsKeyResult] = js.native
+  @scala.inline
+  def getDefaultKmsKey(): js.Promise[GetDefaultKmsKeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultKmsKey")().asInstanceOf[js.Promise[GetDefaultKmsKeyResult]]
+  @scala.inline
+  def getDefaultKmsKey(opts: InvokeOptions): js.Promise[GetDefaultKmsKeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultKmsKey")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDefaultKmsKeyResult]]
   
-  @JSImport("@pulumi/aws/ebs", "getEbsVolumes")
-  @js.native
-  def getEbsVolumes(): js.Promise[GetEbsVolumesResult] = js.native
-  @JSImport("@pulumi/aws/ebs", "getEbsVolumes")
-  @js.native
-  def getEbsVolumes(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetEbsVolumesResult] = js.native
-  @JSImport("@pulumi/aws/ebs", "getEbsVolumes")
-  @js.native
-  def getEbsVolumes(args: GetEbsVolumesArgs): js.Promise[GetEbsVolumesResult] = js.native
-  @JSImport("@pulumi/aws/ebs", "getEbsVolumes")
-  @js.native
-  def getEbsVolumes(args: GetEbsVolumesArgs, opts: InvokeOptions): js.Promise[GetEbsVolumesResult] = js.native
+  @scala.inline
+  def getEbsVolumes(): js.Promise[GetEbsVolumesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")().asInstanceOf[js.Promise[GetEbsVolumesResult]]
+  @scala.inline
+  def getEbsVolumes(args: Unit, opts: InvokeOptions): js.Promise[GetEbsVolumesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEbsVolumesResult]]
+  @scala.inline
+  def getEbsVolumes(args: GetEbsVolumesArgs): js.Promise[GetEbsVolumesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEbsVolumesResult]]
+  @scala.inline
+  def getEbsVolumes(args: GetEbsVolumesArgs, opts: InvokeOptions): js.Promise[GetEbsVolumesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEbsVolumesResult]]
   
-  @JSImport("@pulumi/aws/ebs", "getEncryptionByDefault")
-  @js.native
-  def getEncryptionByDefault(): js.Promise[GetEncryptionByDefaultResult] = js.native
-  @JSImport("@pulumi/aws/ebs", "getEncryptionByDefault")
-  @js.native
-  def getEncryptionByDefault(opts: InvokeOptions): js.Promise[GetEncryptionByDefaultResult] = js.native
+  @scala.inline
+  def getEncryptionByDefault(): js.Promise[GetEncryptionByDefaultResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncryptionByDefault")().asInstanceOf[js.Promise[GetEncryptionByDefaultResult]]
+  @scala.inline
+  def getEncryptionByDefault(opts: InvokeOptions): js.Promise[GetEncryptionByDefaultResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncryptionByDefault")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEncryptionByDefaultResult]]
   
-  @JSImport("@pulumi/aws/ebs", "getSnapshot")
-  @js.native
-  def getSnapshot(): js.Promise[GetSnapshotResult] = js.native
-  @JSImport("@pulumi/aws/ebs", "getSnapshot")
-  @js.native
-  def getSnapshot(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSnapshotResult] = js.native
-  @JSImport("@pulumi/aws/ebs", "getSnapshot")
-  @js.native
-  def getSnapshot(args: GetSnapshotArgs): js.Promise[GetSnapshotResult] = js.native
-  @JSImport("@pulumi/aws/ebs", "getSnapshot")
-  @js.native
-  def getSnapshot(args: GetSnapshotArgs, opts: InvokeOptions): js.Promise[GetSnapshotResult] = js.native
+  @scala.inline
+  def getSnapshot(): js.Promise[GetSnapshotResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")().asInstanceOf[js.Promise[GetSnapshotResult]]
+  @scala.inline
+  def getSnapshot(args: Unit, opts: InvokeOptions): js.Promise[GetSnapshotResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotResult]]
+  @scala.inline
+  def getSnapshot(args: GetSnapshotArgs): js.Promise[GetSnapshotResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSnapshotResult]]
+  @scala.inline
+  def getSnapshot(args: GetSnapshotArgs, opts: InvokeOptions): js.Promise[GetSnapshotResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotResult]]
   
-  @JSImport("@pulumi/aws/ebs", "getSnapshotIds")
-  @js.native
-  def getSnapshotIds(): js.Promise[GetSnapshotIdsResult] = js.native
-  @JSImport("@pulumi/aws/ebs", "getSnapshotIds")
-  @js.native
-  def getSnapshotIds(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] = js.native
-  @JSImport("@pulumi/aws/ebs", "getSnapshotIds")
-  @js.native
-  def getSnapshotIds(args: GetSnapshotIdsArgs): js.Promise[GetSnapshotIdsResult] = js.native
-  @JSImport("@pulumi/aws/ebs", "getSnapshotIds")
-  @js.native
-  def getSnapshotIds(args: GetSnapshotIdsArgs, opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] = js.native
+  @scala.inline
+  def getSnapshotIds(): js.Promise[GetSnapshotIdsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")().asInstanceOf[js.Promise[GetSnapshotIdsResult]]
+  @scala.inline
+  def getSnapshotIds(args: Unit, opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotIdsResult]]
+  @scala.inline
+  def getSnapshotIds(args: GetSnapshotIdsArgs): js.Promise[GetSnapshotIdsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSnapshotIdsResult]]
+  @scala.inline
+  def getSnapshotIds(args: GetSnapshotIdsArgs, opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotIdsResult]]
   
-  @JSImport("@pulumi/aws/ebs", "getVolume")
-  @js.native
-  def getVolume(): js.Promise[GetVolumeResult] = js.native
-  @JSImport("@pulumi/aws/ebs", "getVolume")
-  @js.native
-  def getVolume(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVolumeResult] = js.native
-  @JSImport("@pulumi/aws/ebs", "getVolume")
-  @js.native
-  def getVolume(args: GetVolumeArgs): js.Promise[GetVolumeResult] = js.native
-  @JSImport("@pulumi/aws/ebs", "getVolume")
-  @js.native
-  def getVolume(args: GetVolumeArgs, opts: InvokeOptions): js.Promise[GetVolumeResult] = js.native
+  @scala.inline
+  def getVolume(): js.Promise[GetVolumeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")().asInstanceOf[js.Promise[GetVolumeResult]]
+  @scala.inline
+  def getVolume(args: Unit, opts: InvokeOptions): js.Promise[GetVolumeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVolumeResult]]
+  @scala.inline
+  def getVolume(args: GetVolumeArgs): js.Promise[GetVolumeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVolumeResult]]
+  @scala.inline
+  def getVolume(args: GetVolumeArgs, opts: InvokeOptions): js.Promise[GetVolumeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVolumeResult]]
 }

@@ -2,10 +2,8 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GEView extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait GEView extends StObject {
     * * GEPlugin.ALTITUDE_ABSOLUTE
     * * GEPlugin.ALTITUDE_RELATIVE_TO_SEA_FLOOR
     */
-  def copyAsCamera(altitudeMode: KmlAltitudeModeEnum): KmlCamera = js.native
+  def copyAsCamera(altitudeMode: KmlAltitudeModeEnum): KmlCamera
   
   /**
     * Creates and returns a new KmlLookAt object, initialized to the current camera position and orientation.
@@ -30,13 +28,13 @@ trait GEView extends StObject {
     * * GEPlugin.ALTITUDE_ABSOLUTE
     * * GEPlugin.ALTITUDE_RELATIVE_TO_SEA_FLOOR
     */
-  def copyAsLookAt(altitudeMode: KmlAltitudeModeEnum): KmlLookAt = js.native
+  def copyAsLookAt(altitudeMode: KmlAltitudeModeEnum): KmlLookAt
   
   /**
     * Returns a bounding box that completely contains the region of the globe that is currently visible.
     * The returned box will be larger than what is strictly visible, if that is necessary to include everything that is visible.
     */
-  def getViewportGlobeBounds(): KmlLatLonBox = js.native
+  def getViewportGlobeBounds(): KmlLatLonBox
   
   /**
     * Given a point on the screen in pixel coordinates, returns a GEHitTestResult with information about the geographic location corresponding to the point on the screen. 
@@ -51,7 +49,7 @@ trait GEView extends StObject {
     * * GEPlugin.HIT_TEST_TERRAIN
     * * GEPlugin.HIT_TEST_BUILDINGS
     */
-  def hitTest(x: Double, xUnits: KmlUnitsEnum, y: Double, yUnits: KmlUnitsEnum, mode: GEHitTestModeEnum): GEHitTestResult = js.native
+  def hitTest(x: Double, xUnits: KmlUnitsEnum, y: Double, yUnits: KmlUnitsEnum, mode: GEHitTestModeEnum): GEHitTestResult
   
   /**
     * Returns the screen x,y coordinates of a given point on the globe.
@@ -64,12 +62,12 @@ trait GEView extends StObject {
     * * GEPlugin.ALTITUDE_ABSOLUTE
     * * GEPlugin.ALTITUDE_RELATIVE_TO_SEA_FLOOR
     */
-  def project(lat: Double, lng: Double, alt: Double, altitudeMode: KmlAltitudeModeEnum): KmlVec2 = js.native
+  def project(lat: Double, lng: Double, alt: Double, altitudeMode: KmlAltitudeModeEnum): KmlVec2
   
   /**
     * Sets the camera that views the scene in Google Earth.
     */
-  def setAbstractView(view: KmlAbstractView): Unit = js.native
+  def setAbstractView(view: KmlAbstractView): Unit
 }
 object GEView {
   

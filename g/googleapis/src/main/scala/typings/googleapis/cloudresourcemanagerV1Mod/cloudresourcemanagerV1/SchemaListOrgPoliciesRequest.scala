@@ -2,13 +2,11 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request sent to the ListOrgPolicies method.
   */
-@js.native
 trait SchemaListOrgPoliciesRequest extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait SchemaListOrgPoliciesRequest extends StObject {
     * be ignored. The server may at any point start using this field to limit
     * page size.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Page token used to retrieve the next page. This is currently unsupported
     * and will be ignored. The server may at any point start using this field.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListOrgPoliciesRequest {
   

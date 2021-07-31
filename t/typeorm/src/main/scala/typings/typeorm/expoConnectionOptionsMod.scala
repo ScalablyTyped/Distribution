@@ -5,38 +5,37 @@ import typings.typeorm.connectionOptionsMod.ConnectionOptions
 import typings.typeorm.typeormStrings.expo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expoConnectionOptionsMod {
   
-  @js.native
   trait ExpoConnectionOptions
-    extends BaseConnectionOptions
+    extends StObject
+       with BaseConnectionOptions
        with ConnectionOptions {
     
     /**
       * Database name.
       */
-    val database: String = js.native
+    val database: String
     
     /**
       * Driver module
       */
-    val driver: js.Any = js.native
+    val driver: js.Any
     
     /**
       * Database type.
       */
     @JSName("type")
-    val type_ExpoConnectionOptions: expo = js.native
+    val type_ExpoConnectionOptions: expo
   }
   object ExpoConnectionOptions {
     
     @scala.inline
-    def apply(database: String, driver: js.Any, `type`: expo): ExpoConnectionOptions = {
+    def apply(database: String, driver: js.Any): ExpoConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], driver = driver.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("expo")
       __obj.asInstanceOf[ExpoConnectionOptions]
     }
     

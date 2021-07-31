@@ -3,14 +3,14 @@ package typings.ckeditorCkeditor5Engine.mod.model
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/model/nodelist
 @JSImport("@ckeditor/ckeditor5-engine", "model.NodeList")
 @js.native
 class NodeList ()
-  extends Iterable[Node]
+  extends StObject
+     with Iterable[Node]
      with _NodeSet {
   
   def getNode(index: Double): Node | Null = js.native

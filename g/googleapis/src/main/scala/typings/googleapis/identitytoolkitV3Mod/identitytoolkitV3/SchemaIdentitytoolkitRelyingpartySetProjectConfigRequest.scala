@@ -2,70 +2,68 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to set the project configuration.
   */
-@js.native
 trait SchemaIdentitytoolkitRelyingpartySetProjectConfigRequest extends StObject {
   
   /**
     * Whether to allow password user sign in or sign up.
     */
-  var allowPasswordUser: js.UndefOr[Boolean] = js.native
+  var allowPasswordUser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Browser API key, needed when making http request to Apiary.
     */
-  var apiKey: js.UndefOr[String] = js.native
+  var apiKey: js.UndefOr[String] = js.undefined
   
   /**
     * Authorized domains for widget redirect.
     */
-  var authorizedDomains: js.UndefOr[js.Array[String]] = js.native
+  var authorizedDomains: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Change email template.
     */
-  var changeEmailTemplate: js.UndefOr[SchemaEmailTemplate] = js.native
+  var changeEmailTemplate: js.UndefOr[SchemaEmailTemplate] = js.undefined
   
   /**
     * GCP project number of the requesting delegated app. Currently only
     * intended for Firebase V1 migration.
     */
-  var delegatedProjectNumber: js.UndefOr[String] = js.native
+  var delegatedProjectNumber: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to enable anonymous user.
     */
-  var enableAnonymousUser: js.UndefOr[Boolean] = js.native
+  var enableAnonymousUser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Oauth2 provider configuration.
     */
-  var idpConfig: js.UndefOr[js.Array[SchemaIdpConfig]] = js.native
+  var idpConfig: js.UndefOr[js.Array[SchemaIdpConfig]] = js.undefined
   
   /**
     * Legacy reset password email template.
     */
-  var legacyResetPasswordTemplate: js.UndefOr[SchemaEmailTemplate] = js.native
+  var legacyResetPasswordTemplate: js.UndefOr[SchemaEmailTemplate] = js.undefined
   
   /**
     * Reset password email template.
     */
-  var resetPasswordTemplate: js.UndefOr[SchemaEmailTemplate] = js.native
+  var resetPasswordTemplate: js.UndefOr[SchemaEmailTemplate] = js.undefined
   
   /**
     * Whether to use email sending provided by Firebear.
     */
-  var useEmailSending: js.UndefOr[Boolean] = js.native
+  var useEmailSending: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Verify email template.
     */
-  var verifyEmailTemplate: js.UndefOr[SchemaEmailTemplate] = js.native
+  var verifyEmailTemplate: js.UndefOr[SchemaEmailTemplate] = js.undefined
 }
 object SchemaIdentitytoolkitRelyingpartySetProjectConfigRequest {
   

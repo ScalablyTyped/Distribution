@@ -5,18 +5,16 @@ import typings.gaeaModel.FitGaea.Number
 import typings.gaeaModel.FitGaea.ViewportComponentFullInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BeforeName extends StObject {
     
-    var beforeName: String = js.native
+    var beforeName: String
     
     // 重置前的信息
-    var beforeProps: ComponentProps = js.native
+    var beforeProps: ComponentProps
   }
   object BeforeName {
     
@@ -37,17 +35,16 @@ object anon {
     }
   }
   
-  @js.native
   trait ComponentInfo extends StObject {
     
     // 组合的完整信息（不是 copy 的, 是真正对应的 mapUniqueKey）
-    var componentInfo: ViewportComponentFullInfo = js.native
+    var componentInfo: ViewportComponentFullInfo
     
     // 父级的 index
-    var index: Double = js.native
+    var index: Double
     
     // 父级 mapKey
-    var parentMapUniqueKey: String = js.native
+    var parentMapUniqueKey: String
   }
   object ComponentInfo {
     
@@ -71,26 +68,25 @@ object anon {
     }
   }
   
-  @js.native
   trait CurrentUnit extends StObject {
     
-    var currentUnit: String = js.native
+    var currentUnit: String
     
-    var inputRange: js.UndefOr[js.Array[Double]] = js.native
+    var inputRange: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var outputRange: js.UndefOr[js.Array[Double]] = js.native
+    var outputRange: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var slider: js.UndefOr[Boolean] = js.native
+    var slider: js.UndefOr[Boolean] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var units: js.Array[Number] = js.native
+    var units: js.Array[Number]
   }
   object CurrentUnit {
     
@@ -162,17 +158,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
     // 插入的位置
-    var index: Double = js.native
+    var index: Double
     
     // 父级 mapKey
-    var parentMapUniqueKey: String = js.native
+    var parentMapUniqueKey: String
     
     // 新增组件的唯一标识 id
-    var uniqueId: String = js.native
+    var uniqueId: String
   }
   object Index {
     
@@ -196,17 +191,16 @@ object anon {
     }
   }
   
-  @js.native
   trait MapUniqueKey extends StObject {
     
     // 当前拖拽组件的 mapUniqueKey
-    var mapUniqueKey: String = js.native
+    var mapUniqueKey: String
     
     // 拖拽目标的 index
-    var targetIndex: js.UndefOr[Double] = js.native
+    var targetIndex: js.UndefOr[Double] = js.undefined
     
     // 拖拽目标的 mapUniqueKey
-    var targetMapUniqueKey: js.UndefOr[String] = js.native
+    var targetMapUniqueKey: js.UndefOr[String] = js.undefined
   }
   object MapUniqueKey {
     
@@ -236,12 +230,11 @@ object anon {
     }
   }
   
-  @js.native
   trait NewIndex extends StObject {
     
-    var newIndex: Double = js.native
+    var newIndex: Double
     
-    var oldIndex: Double = js.native
+    var oldIndex: Double
   }
   object NewIndex {
     
@@ -262,12 +255,11 @@ object anon {
     }
   }
   
-  @js.native
   trait NewValue extends StObject {
     
-    var newValue: ComponentProps = js.native
+    var newValue: ComponentProps
     
-    var oldValue: ComponentProps = js.native
+    var oldValue: ComponentProps
   }
   object NewValue {
     
@@ -288,11 +280,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Source extends StObject {
     
     // combo 信息
-    var source: String = js.native
+    var source: String
   }
   object Source {
     
@@ -310,20 +301,19 @@ object anon {
     }
   }
   
-  @js.native
   trait SourceIndex extends StObject {
     
     // 移除的位置
-    var sourceIndex: Double = js.native
+    var sourceIndex: Double
     
     // 移动前父级 mapKey
-    var sourceParentMapUniqueKey: String = js.native
+    var sourceParentMapUniqueKey: String
     
     // 插入的位置
-    var targetIndex: Double = js.native
+    var targetIndex: Double
     
     // 移动到的父级 mapKey
-    var targetParentMapUniqueKey: String = js.native
+    var targetParentMapUniqueKey: String
   }
   object SourceIndex {
     
@@ -355,11 +345,10 @@ object anon {
     }
   }
   
-  @js.native
   trait UniqueKey extends StObject {
     
     // 唯一 key，用来实例化组件
-    var uniqueKey: String = js.native
+    var uniqueKey: String
   }
   object UniqueKey {
     

@@ -3,33 +3,31 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFUserAccountVaultRole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUserAccount extends StObject {
   
-  var AccessControlList: IAccessControlList = js.native
+  var AccessControlList: IAccessControlList
   
-  def AddVaultRoles(VaultRolesToAdd: MFUserAccountVaultRole): Unit = js.native
+  def AddVaultRoles(VaultRolesToAdd: MFUserAccountVaultRole): Unit
   
-  def Clone(): IUserAccount = js.native
+  def Clone(): IUserAccount
   
-  def CloneFrom(UserAccount: IUserAccount): Unit = js.native
+  def CloneFrom(UserAccount: IUserAccount): Unit
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var InternalUser: Boolean = js.native
+  var InternalUser: Boolean
   
-  var LoginName: String = js.native
+  var LoginName: String
   
-  def RemoveVaultRoles(VaultRolesToRemove: MFUserAccountVaultRole): Unit = js.native
+  def RemoveVaultRoles(VaultRolesToRemove: MFUserAccountVaultRole): Unit
   
-  var VaultLanguage: Double = js.native
+  var VaultLanguage: Double
   
-  var VaultRoles: MFUserAccountVaultRole = js.native
+  var VaultRoles: MFUserAccountVaultRole
 }
 object IUserAccount {
   

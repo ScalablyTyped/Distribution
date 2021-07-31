@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallRoute extends StObject {
   
   // The identity that was resolved to in the call.
-  var `final`: js.UndefOr[IdentitySet] = js.native
+  var `final`: js.UndefOr[IdentitySet] = js.undefined
   
   // The identity that was originally used in the call.
-  var original: js.UndefOr[IdentitySet] = js.native
+  var original: js.UndefOr[IdentitySet] = js.undefined
   
   // Possible values are: forwarded, lookup, selfFork.
-  var routingType: js.UndefOr[RoutingType] = js.native
+  var routingType: js.UndefOr[RoutingType] = js.undefined
 }
 object CallRoute {
   

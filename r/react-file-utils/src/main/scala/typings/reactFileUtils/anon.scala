@@ -11,12 +11,10 @@ import typings.std.Event
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accept extends StObject {
     
     /**
@@ -27,17 +25,17 @@ object anon {
       *
       * One of type: `string; string[]`
       */
-    var accept: js.UndefOr[String | js.Array[String]] = js.native
+    var accept: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Enable/disable the dropzone */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var handleFiles: js.UndefOr[js.Function1[/* files */ js.Array[FileLike], Unit]] = js.native
+    var handleFiles: js.UndefOr[js.Function1[/* files */ js.Array[FileLike], Unit]] = js.undefined
     
     /** Allow drag 'n' drop (or selection from the file dialog) of multiple files */
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
   }
   object Accept {
     
@@ -85,18 +83,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Accepts extends StObject {
     
-    var accepts: js.UndefOr[String | js.Array[String]] = js.native
+    var accepts: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var handleFiles: js.UndefOr[js.Function1[/* files */ js.Array[Blob], Unit]] = js.native
+    var handleFiles: js.UndefOr[js.Function1[/* files */ js.Array[Blob], Unit]] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
   }
   object Accepts {
     
@@ -144,16 +141,15 @@ object anon {
     }
   }
   
-  @js.native
   trait BackgroundColor extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object BackgroundColor {
     
@@ -192,17 +188,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Big extends StObject {
     
-    var big: js.UndefOr[Boolean] = js.native
+    var big: js.UndefOr[Boolean] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var mimeType: js.UndefOr[String] = js.native
+    var mimeType: js.UndefOr[String] = js.undefined
     
     // Size used for big icon
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object Big {
     
@@ -241,16 +236,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var handleFiles: js.UndefOr[js.Function1[/* files */ js.Array[File], Unit]] = js.native
+    var handleFiles: js.UndefOr[js.Function1[/* files */ js.Array[File], Unit]] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
   }
   object Children {
     
@@ -289,28 +283,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Disabled extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A callback to call with newly selected files
       * If this is not provided no 'ThumbnailPlaceholder' will be displayed
       */
-    var handleFiles: js.UndefOr[js.Function1[/* files */ js.Array[File], Unit]] = js.native
+    var handleFiles: js.UndefOr[js.Function1[/* files */ js.Array[File], Unit]] = js.undefined
     
     /** A callback to call when the remove icon is clicked */
-    var handleRemove: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.native
+    var handleRemove: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.undefined
     
     /** A callback to call when the retry icon is clicked */
-    var handleRetry: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.native
+    var handleRetry: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.undefined
     
     /** The list of image uploads that should be displayed */
-    var imageUploads: js.UndefOr[js.Array[ImageUpload]] = js.native
+    var imageUploads: js.UndefOr[js.Array[ImageUpload]] = js.undefined
     
     /** Allow drag 'n' drop (or selection from the file dialog) of multiple files */
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
   }
   object Disabled {
     
@@ -364,18 +357,17 @@ object anon {
     }
   }
   
-  @js.native
   trait HandleClose extends StObject {
     
-    var handleClose: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.native
+    var handleClose: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var imgSrc: js.UndefOr[js.Any] = js.native
+    var imgSrc: js.UndefOr[js.Any] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object HandleClose {
     
@@ -420,16 +412,15 @@ object anon {
     }
   }
   
-  @js.native
   trait HandleFiles extends StObject {
     
-    var handleFiles: js.UndefOr[js.Function1[/* files */ js.Array[File], Unit]] = js.native
+    var handleFiles: js.UndefOr[js.Function1[/* files */ js.Array[File], Unit]] = js.undefined
     
-    var handleRemove: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.native
+    var handleRemove: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.undefined
     
-    var handleRetry: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.native
+    var handleRetry: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.undefined
     
-    var uploads: js.UndefOr[js.Array[FileUpload]] = js.native
+    var uploads: js.UndefOr[js.Array[FileUpload]] = js.undefined
   }
   object HandleFiles {
     
@@ -471,12 +462,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Multiple extends StObject {
     
-    var handleFiles: js.UndefOr[js.Function1[/* files */ js.Array[File], Unit]] = js.native
+    var handleFiles: js.UndefOr[js.Function1[/* files */ js.Array[File], Unit]] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
   }
   object Multiple {
     
@@ -503,12 +493,11 @@ object anon {
     }
   }
   
-  @js.native
   trait OnClick extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]] = js.undefined
   }
   object OnClick {
     

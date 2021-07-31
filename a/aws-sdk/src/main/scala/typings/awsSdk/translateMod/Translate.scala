@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Translate extends Service {
   
   @JSName("config")
-  var config_Translate: ConfigBase with ClientConfiguration = js.native
+  var config_Translate: ConfigBase & ClientConfiguration = js.native
   
   /**
     * A synchronous action that deletes a custom terminology.

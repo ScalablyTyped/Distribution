@@ -14,7 +14,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,9 +48,8 @@ object TabContainer {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.create")
-  @js.native
-  def create(model: IModel): TabContainer = js.native
+  @scala.inline
+  def create(model: IModel): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -62,9 +60,8 @@ object TabContainer {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): TabContainer = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: BuildingBlock): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -75,9 +72,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): TabContainer = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: BuildingBlock): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -88,9 +84,8 @@ object TabContainer {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): TabContainer = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -101,9 +96,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: DataView): TabContainer = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: DataView): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -114,9 +108,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): TabContainer = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -127,9 +120,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: DataView): TabContainer = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: DataView): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -140,9 +132,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): TabContainer = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -153,9 +144,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: DivContainer): TabContainer = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: DivContainer): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -166,9 +156,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): TabContainer = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -179,9 +168,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: GroupBox): TabContainer = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: GroupBox): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -192,9 +180,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): TabContainer = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -205,9 +192,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: Header): TabContainer = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: Header): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -218,9 +204,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): TabContainer = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -231,9 +216,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: Header): TabContainer = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: Header): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -244,9 +228,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): TabContainer = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -257,9 +240,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): TabContainer = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -270,9 +252,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): TabContainer = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -283,9 +264,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): TabContainer = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -296,9 +276,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): TabContainer = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -309,9 +288,8 @@ object TabContainer {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: Layout): TabContainer = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: Layout): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -322,9 +300,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): TabContainer = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -335,9 +312,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): TabContainer = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -348,9 +324,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): TabContainer = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -361,9 +336,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: ListView): TabContainer = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: ListView): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -374,9 +348,8 @@ object TabContainer {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): TabContainer = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -387,9 +360,8 @@ object TabContainer {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): TabContainer = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -400,9 +372,8 @@ object TabContainer {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInNativeLayoutContentUnderSidebarWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): TabContainer = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -413,9 +384,8 @@ object TabContainer {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInNativeLayoutContentUnderWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): TabContainer = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -426,9 +396,8 @@ object TabContainer {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): TabContainer = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -439,9 +408,8 @@ object TabContainer {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): TabContainer = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -452,9 +420,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): TabContainer = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -465,9 +432,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): TabContainer = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: NavigationListItem): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -478,9 +444,8 @@ object TabContainer {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): TabContainer = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -491,9 +456,8 @@ object TabContainer {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): TabContainer = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -504,9 +468,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): TabContainer = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -517,9 +480,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): TabContainer = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -530,9 +492,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): TabContainer = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -543,9 +504,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: Snippet): TabContainer = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: Snippet): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -556,9 +516,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): TabContainer = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -569,9 +528,8 @@ object TabContainer {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): TabContainer = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: SplitPane): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -582,9 +540,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): TabContainer = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -595,9 +552,8 @@ object TabContainer {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): TabContainer = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: SplitPane): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -608,9 +564,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): TabContainer = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -621,9 +576,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: TabPage): TabContainer = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: TabPage): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -634,9 +588,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): TabContainer = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -647,9 +600,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: TableCell): TabContainer = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: TableCell): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -660,9 +612,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): TabContainer = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -673,9 +624,8 @@ object TabContainer {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): TabContainer = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -686,9 +636,8 @@ object TabContainer {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): TabContainer = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -699,9 +648,8 @@ object TabContainer {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInWebLayoutContentUnderWidgets")
-  @js.native
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): TabContainer = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
@@ -712,9 +660,8 @@ object TabContainer {
     *  8.2.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.createInWidgetValueUnderWidgets")
-  @js.native
-  def createInWidgetValueUnderWidgets(container: WidgetValue): TabContainer = js.native
+  @scala.inline
+  def createInWidgetValueUnderWidgets(container: WidgetValue): TabContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TabContainer]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabContainer.structureTypeName")

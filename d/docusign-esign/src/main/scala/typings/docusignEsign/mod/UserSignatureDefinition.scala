@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserSignatureDefinition extends StObject {
   
   /**
@@ -19,17 +17,17 @@ trait UserSignatureDefinition extends StObject {
     * - `DateAreaWidth`: The width of the rectangle.
     * - `DateAreaHeight`: The height of the rectangle.
     */
-  var dateStampProperties: js.UndefOr[DateStampProperties] = js.native
+  var dateStampProperties: js.UndefOr[DateStampProperties] = js.undefined
   
   /**
     * When set to **true**, users may not resize the stamp.
     */
-  var disallowUserResizeStamp: js.UndefOr[String] = js.native
+  var disallowUserResizeStamp: js.UndefOr[String] = js.undefined
   
   /**
     * Optionally specify an external identifier for the user's signature.
     */
-  var externalID: js.UndefOr[String] = js.native
+  var externalID: js.UndefOr[String] = js.undefined
   
   /**
     * Specificies the type of image. Valid values are:
@@ -37,49 +35,49 @@ trait UserSignatureDefinition extends StObject {
     * - `signature_image`
     * - `initials_image`
     */
-  var imageType: js.UndefOr[String] = js.native
+  var imageType: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean that specifies whether the signature is the default signature for the user.
     */
-  var isDefault: js.UndefOr[String] = js.native
+  var isDefault: js.UndefOr[String] = js.undefined
   
   /**
     * The National Association of Realtors (NAR) membership ID for a user who is a realtor.
     */
-  var nrdsId: js.UndefOr[String] = js.native
+  var nrdsId: js.UndefOr[String] = js.undefined
   
   /**
     * The realtor's last name.
     */
-  var nrdsLastName: js.UndefOr[String] = js.native
+  var nrdsLastName: js.UndefOr[String] = js.undefined
   
   /**
     * The phonetic spelling of the `signatureName`.
     */
-  var phoneticName: js.UndefOr[String] = js.native
+  var phoneticName: js.UndefOr[String] = js.undefined
   
   /**
     * The font to use for the signature.
     */
-  var signatureFont: js.UndefOr[String] = js.native
+  var signatureFont: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the signature ID associated with the signature name. You can use the signature ID in the URI in place of the signature name,
     * and the value stored in the `signatureName` property in the body is used. This allows the use of special characters (such as "&", "<", ">") in a the signature name.
     * Note that with each update to signatures, the returned signature ID might change, so the caller will need to trigger off the signature name to get the new signature ID.
     */
-  var signatureId: js.UndefOr[String] = js.native
+  var signatureId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the user's signature in initials format.
     */
-  var signatureInitials: js.UndefOr[String] = js.native
+  var signatureInitials: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the user's signature name.
     */
-  var signatureName: js.UndefOr[String] = js.native
+  var signatureName: js.UndefOr[String] = js.undefined
   
   /**
     * The format of a stamp. Valid values are:
@@ -87,12 +85,12 @@ trait UserSignatureDefinition extends StObject {
     * - `NameHanko`: The stamp represents only the signer's name.
     * - `NameDateHanko`: The stamp represents the signer's name and the date.
     */
-  var stampFormat: js.UndefOr[String] = js.native
+  var stampFormat: js.UndefOr[String] = js.undefined
   
   /**
     * The physical height of the stamp image (in millimeters) that the stamp vendor recommends for displaying the image in PDF documents.
     */
-  var stampSizeMM: js.UndefOr[String] = js.native
+  var stampSizeMM: js.UndefOr[String] = js.undefined
 }
 object UserSignatureDefinition {
   

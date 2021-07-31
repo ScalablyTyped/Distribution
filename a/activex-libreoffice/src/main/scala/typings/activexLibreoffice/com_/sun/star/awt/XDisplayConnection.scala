@@ -4,24 +4,24 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface should be implemented by toolkits that want to give access to their internal message handling loop. */
-@js.native
-trait XDisplayConnection extends XInterface {
+trait XDisplayConnection
+  extends StObject
+     with XInterface {
   
   /**
     * returns a identifier.
     * @returns a unique platform dependent identifier for a display connection.
     */
-  val Identifier: js.Any = js.native
+  val Identifier: js.Any
   
   /**
     * register an error handler for toolkit specific errors.
     * @param errorHandler the handler to register.
     */
-  def addErrorHandler(errorHandler: XEventHandler): Unit = js.native
+  def addErrorHandler(errorHandler: XEventHandler): Unit
   
   /**
     * registers an event handler.
@@ -29,26 +29,26 @@ trait XDisplayConnection extends XInterface {
     * @param eventHandler the handler to register.
     * @param eventMask the event mask specifies the events the handler is interested in.
     */
-  def addEventHandler(window: js.Any, eventHandler: XEventHandler, eventMask: Double): Unit = js.native
+  def addEventHandler(window: js.Any, eventHandler: XEventHandler, eventMask: Double): Unit
   
   /**
     * returns a identifier.
     * @returns a unique platform dependent identifier for a display connection.
     */
-  def getIdentifier(): js.Any = js.native
+  def getIdentifier(): js.Any
   
   /**
     * remover an error handler from the handler list.
     * @param errorHandler the handler to remove.
     */
-  def removeErrorHandler(errorHandler: XEventHandler): Unit = js.native
+  def removeErrorHandler(errorHandler: XEventHandler): Unit
   
   /**
     * removes a eventHandler from the handler list.
     * @param window the platform specific window id the handler should be unregistered for. If empty, the handler should be unregistered completely.
     * @param eventHandler the handler to remove.
     */
-  def removeEventHandler(window: js.Any, eventHandler: XEventHandler): Unit = js.native
+  def removeEventHandler(window: js.Any, eventHandler: XEventHandler): Unit
 }
 object XDisplayConnection {
   

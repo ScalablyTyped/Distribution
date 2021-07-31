@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelResizeMessage extends StObject {
   
   /**
     * The unique identifier for the cluster that you want to cancel a resize operation for.
     */
-  var ClusterIdentifier: String = js.native
+  var ClusterIdentifier: String
 }
 object CancelResizeMessage {
   

@@ -2,25 +2,23 @@ package typings.vis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderDashes extends StObject {
   
-  var borderDashes: js.UndefOr[Boolean | js.Array[Double]] = js.native
+  var borderDashes: js.UndefOr[Boolean | js.Array[Double]] = js.undefined
   
   // only for borders
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
   // only for box shape
-  var interpolation: js.UndefOr[Boolean] = js.native
+  var interpolation: js.UndefOr[Boolean] = js.undefined
   
   // only for image and circularImage shapes
-  var useBorderWithImage: js.UndefOr[Boolean] = js.native
+  var useBorderWithImage: js.UndefOr[Boolean] = js.undefined
   
   // only for image and circularImage shapes
-  var useImageSize: js.UndefOr[Boolean] = js.native
+  var useImageSize: js.UndefOr[Boolean] = js.undefined
 }
 object BorderDashes {
   

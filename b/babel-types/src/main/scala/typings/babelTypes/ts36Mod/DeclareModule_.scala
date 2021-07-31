@@ -3,23 +3,22 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.DeclareModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeclareModule_
-  extends Node
+  extends StObject
+     with Node
      with Declaration
      with Flow
      with FlowDeclaration
      with Statement {
   
-  var body: BlockStatement_ = js.native
+  var body: BlockStatement_
   
-  var id: StringLiteral_ | Identifier_ = js.native
+  var id: StringLiteral_ | Identifier_
   
   @JSName("type")
-  var type_DeclareModule_ : DeclareModule = js.native
+  var type_DeclareModule_ : DeclareModule
 }
 object DeclareModule_ {
   
@@ -29,11 +28,10 @@ object DeclareModule_ {
     end: Double,
     id: StringLiteral_ | Identifier_,
     loc: SourceLocation,
-    start: Double,
-    `type`: DeclareModule
+    start: Double
   ): DeclareModule_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DeclareModule")
     __obj.asInstanceOf[DeclareModule_]
   }
   

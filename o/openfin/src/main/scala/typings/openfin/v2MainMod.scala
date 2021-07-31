@@ -10,10 +10,13 @@ import typings.openfin.wireMod.ConnectConfig
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v2MainMod {
+  
+  @JSImport("openfin/_v2/main", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("openfin/_v2/main", "Application")
   @js.native
@@ -82,11 +85,9 @@ object v2MainMod {
     def this(wire: default, identity: Identity) = this()
   }
   
-  @JSImport("openfin/_v2/main", "connect")
-  @js.native
-  def connect(config: ConnectConfig): js.Promise[typings.openfin.finMod.default] = js.native
+  @scala.inline
+  def connect(config: ConnectConfig): js.Promise[typings.openfin.finMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openfin.finMod.default]]
   
-  @JSImport("openfin/_v2/main", "launch")
-  @js.native
-  def launch(config: ConnectConfig): js.Promise[Double] = js.native
+  @scala.inline
+  def launch(config: ConnectConfig): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
 }

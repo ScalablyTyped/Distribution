@@ -5,15 +5,15 @@ import typings.intercomClient.anon.Perpage
 import typings.intercomClient.intercomClientStrings.eventDotlist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventMod {
   
-  @js.native
-  trait EmailIdId extends EventIdentifier {
+  trait EmailIdId
+    extends StObject
+       with EventIdentifier {
     
-    var email: String = js.native
+    var email: String
   }
   object EmailIdId {
     
@@ -34,22 +34,21 @@ object eventMod {
   /* Inlined parent std.Partial<intercom-client.intercom-client/Event.UserIdId> */
   /* Inlined parent std.Partial<intercom-client.intercom-client/Event.IntercomUserIdId> */
   /* Inlined parent std.Partial<intercom-client.intercom-client/Event.EmailIdId> */
-  @js.native
   trait Event extends StObject {
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var event_name: String = js.native
+    var event_name: String
     
-    val id: String = js.native
+    val id: String
     
-    var intercom_user_id: js.UndefOr[String] = js.native
+    var intercom_user_id: js.UndefOr[String] = js.undefined
     
-    var metadata: js.UndefOr[js.Any] = js.native
+    var metadata: js.UndefOr[js.Any] = js.undefined
     
-    var user_id: js.UndefOr[String] = js.native
+    var user_id: js.UndefOr[String] = js.undefined
   }
   object Event {
     
@@ -124,10 +123,11 @@ object eventMod {
     }
   }
   
-  @js.native
-  trait IntercomUserIdId extends EventIdentifier {
+  trait IntercomUserIdId
+    extends StObject
+       with EventIdentifier {
     
-    var intercom_user_id: String = js.native
+    var intercom_user_id: String
   }
   object IntercomUserIdId {
     
@@ -145,23 +145,22 @@ object eventMod {
     }
   }
   
-  @js.native
   trait List extends StObject {
     
-    var events: js.Array[Event] = js.native
+    var events: js.Array[Event]
     
-    var pages: Next = js.native
+    var pages: Next
     
-    var total_count: Double = js.native
+    var total_count: Double
     
-    var `type`: eventDotlist = js.native
+    var `type`: eventDotlist
   }
   object List {
     
     @scala.inline
-    def apply(events: js.Array[Event], pages: Next, total_count: Double, `type`: eventDotlist): List = {
+    def apply(events: js.Array[Event], pages: Next, total_count: Double): List = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("event.list")
       __obj.asInstanceOf[List]
     }
     
@@ -185,12 +184,13 @@ object eventMod {
     }
   }
   
-  type ListParam = EventIdentifier with Perpage
+  type ListParam = EventIdentifier & Perpage
   
-  @js.native
-  trait UserIdId extends EventIdentifier {
+  trait UserIdId
+    extends StObject
+       with EventIdentifier {
     
-    var user_id: String = js.native
+    var user_id: String
   }
   object UserIdId {
     

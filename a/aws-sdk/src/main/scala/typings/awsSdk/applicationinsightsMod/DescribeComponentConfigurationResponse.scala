@@ -2,26 +2,24 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeComponentConfigurationResponse extends StObject {
   
   /**
     * The configuration settings of the component. The value is the escaped JSON of the configuration.
     */
-  var ComponentConfiguration: js.UndefOr[typings.awsSdk.applicationinsightsMod.ComponentConfiguration] = js.native
+  var ComponentConfiguration: js.UndefOr[typings.awsSdk.applicationinsightsMod.ComponentConfiguration] = js.undefined
   
   /**
     * Indicates whether the application component is monitored.
     */
-  var Monitor: js.UndefOr[typings.awsSdk.applicationinsightsMod.Monitor] = js.native
+  var Monitor: js.UndefOr[typings.awsSdk.applicationinsightsMod.Monitor] = js.undefined
   
   /**
     * The tier of the application component. Supported tiers include DOT_NET_CORE, DOT_NET_WORKER, DOT_NET_WEB, SQL_SERVER, and DEFAULT 
     */
-  var Tier: js.UndefOr[typings.awsSdk.applicationinsightsMod.Tier] = js.native
+  var Tier: js.UndefOr[typings.awsSdk.applicationinsightsMod.Tier] = js.undefined
 }
 object DescribeComponentConfigurationResponse {
   

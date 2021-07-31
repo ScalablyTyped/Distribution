@@ -4,28 +4,26 @@ import typings.twemoji.mod.ParseCallback
 import typings.twemoji.twemojiBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<twemoji.twemoji.ParseObject> */
-  @js.native
   trait PartialParseObject extends StObject {
     
-    var attributes: js.UndefOr[js.Function2[/* icon */ String, /* variant */ String, js.Object]] = js.native
+    var attributes: js.UndefOr[js.Function2[/* icon */ String, /* variant */ String, js.Object]] = js.undefined
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
-    var callback: js.UndefOr[ParseCallback] = js.native
+    var callback: js.UndefOr[ParseCallback] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var ext: js.UndefOr[String] = js.native
+    var ext: js.UndefOr[String] = js.undefined
     
-    var folder: js.UndefOr[String] = js.native
+    var folder: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[String | Double] = js.native
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object PartialParseObject {
     

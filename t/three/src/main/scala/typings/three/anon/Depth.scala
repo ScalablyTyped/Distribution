@@ -2,23 +2,21 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Depth extends StObject {
   
-  var depth: Double = js.native
+  var depth: Double
   
-  var depthSegments: Double = js.native
+  var depthSegments: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var heightSegments: Double = js.native
+  var heightSegments: Double
   
-  var width: Double = js.native
+  var width: Double
   
-  var widthSegments: Double = js.native
+  var widthSegments: Double
 }
 object Depth {
   

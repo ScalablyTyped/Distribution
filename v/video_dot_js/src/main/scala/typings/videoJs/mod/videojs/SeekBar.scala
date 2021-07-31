@@ -3,7 +3,6 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.EventTarget.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * as its `bar`.
   */
 @js.native
-trait SeekBar extends Slider {
+trait SeekBar
+  extends StObject
+     with Slider {
   
   /**
     * Get the percentage of media played so far.

@@ -2,46 +2,44 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "callback-functions"
 //#region "language-settings"
 // these are all optional
-@js.native
 trait LanguageSettings extends StObject {
   
-  var aria: js.UndefOr[LanguageAriaSettings] = js.native
+  var aria: js.UndefOr[LanguageAriaSettings] = js.undefined
   
-  var decimal: js.UndefOr[String] = js.native
+  var decimal: js.UndefOr[String] = js.undefined
   
-  var emptyTable: js.UndefOr[String] = js.native
+  var emptyTable: js.UndefOr[String] = js.undefined
   
-  var info: js.UndefOr[String] = js.native
+  var info: js.UndefOr[String] = js.undefined
   
-  var infoEmpty: js.UndefOr[String] = js.native
+  var infoEmpty: js.UndefOr[String] = js.undefined
   
-  var infoFiltered: js.UndefOr[String] = js.native
+  var infoFiltered: js.UndefOr[String] = js.undefined
   
-  var infoPostFix: js.UndefOr[String] = js.native
+  var infoPostFix: js.UndefOr[String] = js.undefined
   
-  var lengthMenu: js.UndefOr[String] = js.native
+  var lengthMenu: js.UndefOr[String] = js.undefined
   
-  var loadingRecords: js.UndefOr[String] = js.native
+  var loadingRecords: js.UndefOr[String] = js.undefined
   
-  var paginate: js.UndefOr[LanguagePaginateSettings] = js.native
+  var paginate: js.UndefOr[LanguagePaginateSettings] = js.undefined
   
-  var processing: js.UndefOr[String] = js.native
+  var processing: js.UndefOr[String] = js.undefined
   
-  var search: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.undefined
   
-  var searchPlaceholder: js.UndefOr[String] = js.native
+  var searchPlaceholder: js.UndefOr[String] = js.undefined
   
-  var thousands: js.UndefOr[String] = js.native
+  var thousands: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var zeroRecords: js.UndefOr[String] = js.native
+  var zeroRecords: js.UndefOr[String] = js.undefined
 }
 object LanguageSettings {
   

@@ -2,19 +2,17 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentLength extends StObject {
   
-  var contentLength: Double = js.native
+  var contentLength: Double
   
-  var renderedRows: Double = js.native
+  var renderedRows: Double
   
-  var totalRows: Double = js.native
+  var totalRows: Double
   
-  var visibleRows: Double = js.native
+  var visibleRows: Double
 }
 object ContentLength {
   

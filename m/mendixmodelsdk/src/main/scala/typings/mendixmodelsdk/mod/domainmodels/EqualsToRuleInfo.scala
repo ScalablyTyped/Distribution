@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "domainmodels.EqualsToRuleInfo")
@@ -37,9 +36,8 @@ object EqualsToRuleInfo {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "domainmodels.EqualsToRuleInfo.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.EqualsToRuleInfo = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.EqualsToRuleInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.EqualsToRuleInfo]
   
   /**
     * Creates and returns a new EqualsToRuleInfo instance in the SDK and on the server.
@@ -47,9 +45,8 @@ object EqualsToRuleInfo {
     * of the parent ValidationRule element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "domainmodels.EqualsToRuleInfo.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.ValidationRule): typings.mendixmodelsdk.domainmodelsMod.domainmodels.EqualsToRuleInfo = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.ValidationRule): typings.mendixmodelsdk.domainmodelsMod.domainmodels.EqualsToRuleInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.EqualsToRuleInfo]
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.EqualsToRuleInfo.structureTypeName")

@@ -2,21 +2,19 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartListElement extends StObject {
   
   /**
     * The byte range of a part, inclusive of the upper value of the range.
     */
-  var RangeInBytes: js.UndefOr[String] = js.native
+  var RangeInBytes: js.UndefOr[String] = js.undefined
   
   /**
     * The SHA256 tree hash value that Amazon S3 Glacier calculated for the part. This field is never null.
     */
-  var SHA256TreeHash: js.UndefOr[String] = js.native
+  var SHA256TreeHash: js.UndefOr[String] = js.undefined
 }
 object PartListElement {
   

@@ -2,20 +2,20 @@ package typings.ethersprojectSolidity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@ethersproject/solidity", "keccak256")
+  @JSImport("@ethersproject/solidity", JSImport.Namespace)
   @js.native
-  def keccak256(types: js.Array[String], values: js.Array[_]): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ethersproject/solidity", "pack")
-  @js.native
-  def pack(types: js.Array[String], values: js.Array[_]): String = js.native
+  @scala.inline
+  def keccak256(types: js.Array[String], values: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("keccak256")(types.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ethersproject/solidity", "sha256")
-  @js.native
-  def sha256(types: js.Array[String], values: js.Array[_]): String = js.native
+  @scala.inline
+  def pack(types: js.Array[String], values: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(types.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def sha256(types: js.Array[String], values: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(types.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
 }

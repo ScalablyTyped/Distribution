@@ -2,15 +2,13 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangeMaxPoint extends StObject {
   
-  var rangeMaxPoint: js.UndefOr[Double] = js.native
+  var rangeMaxPoint: js.UndefOr[Double] = js.undefined
   
-  var rangeMinPoint: js.UndefOr[Double] = js.native
+  var rangeMinPoint: js.UndefOr[Double] = js.undefined
 }
 object RangeMaxPoint {
   

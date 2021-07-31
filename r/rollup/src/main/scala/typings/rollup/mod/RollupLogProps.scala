@@ -3,33 +3,31 @@ package typings.rollup.mod
 import typings.rollup.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RollupLogProps extends StObject {
   
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
-  var frame: js.UndefOr[String] = js.native
+  var frame: js.UndefOr[String] = js.undefined
   
-  var hook: js.UndefOr[String] = js.native
+  var hook: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var loc: js.UndefOr[Column] = js.native
+  var loc: js.UndefOr[Column] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var plugin: js.UndefOr[String] = js.native
+  var plugin: js.UndefOr[String] = js.undefined
   
-  var pluginCode: js.UndefOr[String] = js.native
+  var pluginCode: js.UndefOr[String] = js.undefined
   
-  var pos: js.UndefOr[Double] = js.native
+  var pos: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object RollupLogProps {
   

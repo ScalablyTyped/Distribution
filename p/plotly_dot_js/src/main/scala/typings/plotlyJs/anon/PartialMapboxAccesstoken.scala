@@ -2,30 +2,28 @@ package typings.plotlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Mapbox> */
-@js.native
 trait PartialMapboxAccesstoken extends StObject {
   
-  var accesstoken: js.UndefOr[String] = js.native
+  var accesstoken: js.UndefOr[String] = js.undefined
   
-  var bearing: js.UndefOr[Double] = js.native
+  var bearing: js.UndefOr[Double] = js.undefined
   
-  var center: js.UndefOr[PartialMapboxCenter] = js.native
+  var center: js.UndefOr[PartialMapboxCenter] = js.undefined
   
-  var domain: js.UndefOr[PartialDomain] = js.native
+  var domain: js.UndefOr[PartialDomain] = js.undefined
   
-  var layers: js.UndefOr[js.Array[PartialMapboxLayersBelow]] = js.native
+  var layers: js.UndefOr[js.Array[PartialMapboxLayersBelow]] = js.undefined
   
-  var pitch: js.UndefOr[Double] = js.native
+  var pitch: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[Double | String] = js.native
+  var style: js.UndefOr[Double | String] = js.undefined
   
-  var uirevision: js.UndefOr[Double | String] = js.native
+  var uirevision: js.UndefOr[Double | String] = js.undefined
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object PartialMapboxAccesstoken {
   

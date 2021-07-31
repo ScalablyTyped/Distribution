@@ -2,17 +2,15 @@ package typings.lokijs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionChange extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var obj: js.Any = js.native
+  var obj: js.Any
   
-  var operation: String = js.native
+  var operation: String
 }
 object CollectionChange {
   

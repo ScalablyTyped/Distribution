@@ -2,17 +2,15 @@ package typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SemanticTokensEdit extends StObject {
   
-  var data: js.UndefOr[js.Array[Double]] = js.native
+  var data: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var deleteCount: Double = js.native
+  var deleteCount: Double
   
-  var start: Double = js.native
+  var start: Double
 }
 object SemanticTokensEdit {
   

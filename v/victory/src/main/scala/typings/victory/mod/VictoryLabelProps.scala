@@ -8,16 +8,14 @@ import typings.victory.victoryStrings.perpendicular
 import typings.victory.victoryStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VictoryLabelProps extends StObject {
   
   /**
     * Specifies the angle to rotate the text by.
     */
-  var angle: js.UndefOr[String | Double] = js.native
+  var angle: js.UndefOr[String | Double] = js.undefined
   
   /**
     * The capHeight prop defines a text metric for the font being used: the expected height of capital letters.
@@ -25,45 +23,45 @@ trait VictoryLabelProps extends StObject {
     * The value should ideally use the same units as `lineHeight` and `dy`, preferably ems. If given a unitless number, it is assumed to be ems.
     * @default "0.71em"
     */
-  var capHeight: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var capHeight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   /**
     * The children of this component define the content of the label.
     * This makes using the component similar to normal HTML spans or labels. strings, numbers, and functions of data / value are supported.
     */
-  var children: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var children: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   /**
     * The className prop specifies a class name that will be applied to the rendered text element.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * Labels that apply to an entire data series will recieve the entire series as `data` instead of an individual datum prop.
     */
-  var data: js.UndefOr[js.Array[_]] = js.native
+  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Victory components can pass a datum prop to their label component. This can be used to calculate functional styles, and determine child text
     */
-  var datum: js.UndefOr[js.Object] = js.native
+  var datum: js.UndefOr[js.Object] = js.undefined
   
   /**
     * The dx prop defines a horizontal shift from the `x` coordinate.
     */
-  var dx: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var dx: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   /**
     * The dy prop defines a vertical shift from the `y` coordinate.
     * Since this component already accounts for `capHeight`, `lineHeight`, and `verticalAnchor`, this will usually not be necessary.
     */
-  var dy: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var dy: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   /**
     * The events prop attaches arbitrary event handlers to the label component.
     * Event handlers are currently only called with their corresponding events.
     */
-  var events: js.UndefOr[DOMAttributes[_]] = js.native
+  var events: js.UndefOr[DOMAttributes[js.Any]] = js.undefined
   
   /**
     * The labelPlacement prop is used to specify the placement of labels relative to the data point they represent.
@@ -72,7 +70,7 @@ trait VictoryLabelProps extends StObject {
     * When this prop is not set, perpendicular label placement will be used for polar charts, and vertical label
     * placement will be used for cartesian charts.
     */
-  var labelPlacement: js.UndefOr[parallel | perpendicular | vertical] = js.native
+  var labelPlacement: js.UndefOr[parallel | perpendicular | vertical] = js.undefined
   
   /**
     * The lineHeight prop defines how much space a single line of text should take up.
@@ -82,63 +80,63 @@ trait VictoryLabelProps extends StObject {
     * If given a unitless number, it is assumed to be ems.
     * @default 1
     */
-  var lineHeight: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var lineHeight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   /**
     * Victory components will pass an origin prop is to define the center point in svg coordinates for polar charts.
     * **This prop should not be set manually.**
     */
-  var origin: js.UndefOr[XNumber] = js.native
+  var origin: js.UndefOr[XNumber] = js.undefined
   
   /**
     * Victory components can pass a boolean polar prop to specify whether a label is part of a polar chart.
     * **This prop should not be set manually.**
     */
-  var polar: js.UndefOr[Boolean] = js.native
+  var polar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The renderInPortal prop specifies whether VictoryLabel should render text in place or within a VictoryPortal.
     * Setting renderInPortal to true is equivalent to wrapping VictoryLabel in a VictoryPortal. This prop is false by default.
     */
-  var renderInPortal: js.UndefOr[Boolean] = js.native
+  var renderInPortal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The style prop applies CSS properties to the rendered `<text>` element.
     */
-  var style: js.UndefOr[CSSProperties | js.Array[CSSProperties]] = js.native
+  var style: js.UndefOr[CSSProperties | js.Array[CSSProperties]] = js.undefined
   
   /**
     * The text prop defines the text VictoryLabel will render. The text prop may be given as a string, number, a function of datum,
     * or an array of any of these. Strings may include newline characters, which VictoryLabel will split into separate
     * <tspan/> elements. When text is given as an array, separate <tspan/> elements will be created for each element in the array.
     */
-  var text: js.UndefOr[js.Array[String] | StringOrNumberOrCallback] = js.native
+  var text: js.UndefOr[js.Array[String] | StringOrNumberOrCallback] = js.undefined
   
   /**
     * The textAnchor prop defines how the text is horizontally positioned relative to the given `x` and `y` coordinates.
     */
-  var textAnchor: js.UndefOr[TextAnchorType | js.Function0[TextAnchorType]] = js.native
+  var textAnchor: js.UndefOr[TextAnchorType | js.Function0[TextAnchorType]] = js.undefined
   
   /**
     * The transform prop applies a transform to the rendered `<text>` element.
     * In addition to being a string, it can be an object containing transform definitions for easier authoring.
     */
-  var transform: js.UndefOr[String | js.Object | (js.Function0[String | js.Object])] = js.native
+  var transform: js.UndefOr[String | js.Object | (js.Function0[String | js.Object])] = js.undefined
   
   /**
     * The verticalAnchor prop defines how the text is vertically positioned relative to the given `x` and `y` coordinates.
     */
-  var verticalAnchor: js.UndefOr[VerticalAnchorType | js.Function0[VerticalAnchorType]] = js.native
+  var verticalAnchor: js.UndefOr[VerticalAnchorType | js.Function0[VerticalAnchorType]] = js.undefined
   
   /**
     * The x prop defines the x coordinate to use as a basis for horizontal positioning.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * The y prop defines the y coordinate to use as a basis for vertical positioning.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object VictoryLabelProps {
   
@@ -182,7 +180,7 @@ object VictoryLabelProps {
     def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -215,7 +213,7 @@ object VictoryLabelProps {
     def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
     @scala.inline
-    def setEvents(value: DOMAttributes[_]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    def setEvents(value: DOMAttributes[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)

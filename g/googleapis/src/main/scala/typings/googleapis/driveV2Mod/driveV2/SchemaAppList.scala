@@ -2,41 +2,39 @@ package typings.googleapis.driveV2Mod.driveV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of third-party applications which the user has installed or given
   * access to Google Drive.
   */
-@js.native
 trait SchemaAppList extends StObject {
   
   /**
     * List of app IDs that the user has specified to use by default. The list
     * is in reverse-priority order (lowest to highest).
     */
-  var defaultAppIds: js.UndefOr[js.Array[String]] = js.native
+  var defaultAppIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The ETag of the list.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The list of apps.
     */
-  var items: js.UndefOr[js.Array[SchemaApp]] = js.native
+  var items: js.UndefOr[js.Array[SchemaApp]] = js.undefined
   
   /**
     * This is always drive#appList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A link back to this list.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaAppList {
   

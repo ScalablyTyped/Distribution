@@ -2,31 +2,29 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBGPPeerRequest extends StObject {
   
   /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
     */
-  var asn: js.UndefOr[ASN] = js.native
+  var asn: js.UndefOr[ASN] = js.undefined
   
   /**
     * The ID of the BGP peer.
     */
-  var bgpPeerId: js.UndefOr[BGPPeerId] = js.native
+  var bgpPeerId: js.UndefOr[BGPPeerId] = js.undefined
   
   /**
     * The IP address assigned to the customer interface.
     */
-  var customerAddress: js.UndefOr[CustomerAddress] = js.native
+  var customerAddress: js.UndefOr[CustomerAddress] = js.undefined
   
   /**
     * The ID of the virtual interface.
     */
-  var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.native
+  var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.undefined
 }
 object DeleteBGPPeerRequest {
   

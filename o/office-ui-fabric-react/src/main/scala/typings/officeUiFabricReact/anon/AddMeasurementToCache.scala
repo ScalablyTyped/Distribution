@@ -2,24 +2,22 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddMeasurementToCache extends StObject {
   
   /**
     * Should be called whenever there is a new measurement associated with a given data object.
     * If the data has a cacheKey, store that measurement in the measurementsCache.
     */
-  def addMeasurementToCache(data: js.Any, measurement: Double): scala.Unit = js.native
+  def addMeasurementToCache(data: js.Any, measurement: Double): scala.Unit
   
   /**
     * Checks if the provided data has a cacheKey. If it has a cacheKey and there is a
     * corresponding entry in the measurementsCache, then it will return that value.
     * Returns undefined otherwise.
     */
-  def getCachedMeasurement(data: js.Any): js.UndefOr[Double] = js.native
+  def getCachedMeasurement(data: js.Any): js.UndefOr[Double]
 }
 object AddMeasurementToCache {
   

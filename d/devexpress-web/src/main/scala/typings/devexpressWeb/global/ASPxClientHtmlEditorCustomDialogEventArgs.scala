@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientHtmlEditorCustomDialogEventArgs")
 @js.native
 class ASPxClientHtmlEditorCustomDialogEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientHtmlEditorCustomDialogEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientHtmlEditorCustomDialogEventArgs {
   /**
     * Initializes a new instance of the ASPxClientHtmlEditorCustomDialogEventArgs class.
     * @param name A string value that specifies the custom dialog's name. Initializes the ASPxClientHtmlEditorCustomDialogEventArgs.name property.
     */
   def this(name: String) = this()
+  
+  /**
+    * Gets the name that uniquely identifies the processed custom dialog.
+    */
+  /* CompleteClass */
+  var name: String = js.native
 }

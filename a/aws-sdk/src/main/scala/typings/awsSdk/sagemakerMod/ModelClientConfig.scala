@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelClientConfig extends StObject {
   
   /**
     * The maximum number of retries when invocation requests are failing.
     */
-  var InvocationsMaxRetries: js.UndefOr[typings.awsSdk.sagemakerMod.InvocationsMaxRetries] = js.native
+  var InvocationsMaxRetries: js.UndefOr[typings.awsSdk.sagemakerMod.InvocationsMaxRetries] = js.undefined
   
   /**
     * The timeout value in seconds for an invocation request.
     */
-  var InvocationsTimeoutInSeconds: js.UndefOr[typings.awsSdk.sagemakerMod.InvocationsTimeoutInSeconds] = js.native
+  var InvocationsTimeoutInSeconds: js.UndefOr[typings.awsSdk.sagemakerMod.InvocationsTimeoutInSeconds] = js.undefined
 }
 object ModelClientConfig {
   

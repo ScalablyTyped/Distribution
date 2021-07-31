@@ -6,42 +6,41 @@ import typings.rrule.rruleMod.default
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rrulestrMod {
   
-  @JSImport("rrule/dist/esm/src/rrulestr", "parseInput")
+  @JSImport("rrule/dist/esm/src/rrulestr", JSImport.Namespace)
   @js.native
-  def parseInput(s: String, options: PartialRRuleStrOptions): Dtstart = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rrule/dist/esm/src/rrulestr", "rrulestr")
-  @js.native
-  def rrulestr(s: String): default | typings.rrule.rrulesetMod.default = js.native
-  @JSImport("rrule/dist/esm/src/rrulestr", "rrulestr")
-  @js.native
-  def rrulestr(s: String, options: PartialRRuleStrOptions): default | typings.rrule.rrulesetMod.default = js.native
+  @scala.inline
+  def parseInput(s: String, options: PartialRRuleStrOptions): Dtstart = (^.asInstanceOf[js.Dynamic].applyDynamic("parseInput")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Dtstart]
   
-  @js.native
+  @scala.inline
+  def rrulestr(s: String): default | typings.rrule.rrulesetMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("rrulestr")(s.asInstanceOf[js.Any]).asInstanceOf[default | typings.rrule.rrulesetMod.default]
+  @scala.inline
+  def rrulestr(s: String, options: PartialRRuleStrOptions): default | typings.rrule.rrulesetMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("rrulestr")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[default | typings.rrule.rrulesetMod.default]
+  
   trait RRuleStrOptions extends StObject {
     
-    var cache: Boolean = js.native
+    var cache: Boolean
     
-    var compatible: Boolean = js.native
+    var compatible: Boolean
     
-    var dtstart: Date | Null = js.native
+    var dtstart: Date | Null
     
-    var forceset: Boolean = js.native
+    var forceset: Boolean
     
-    var tzid: String | Null = js.native
+    var tzid: String | Null
     
-    var unfold: Boolean = js.native
+    var unfold: Boolean
   }
   object RRuleStrOptions {
     
     @scala.inline
     def apply(cache: Boolean, compatible: Boolean, forceset: Boolean, unfold: Boolean): RRuleStrOptions = {
-      val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], compatible = compatible.asInstanceOf[js.Any], forceset = forceset.asInstanceOf[js.Any], unfold = unfold.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], compatible = compatible.asInstanceOf[js.Any], forceset = forceset.asInstanceOf[js.Any], unfold = unfold.asInstanceOf[js.Any], dtstart = null, tzid = null)
       __obj.asInstanceOf[RRuleStrOptions]
     }
     

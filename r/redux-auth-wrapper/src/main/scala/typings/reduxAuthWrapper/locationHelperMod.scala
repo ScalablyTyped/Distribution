@@ -4,21 +4,22 @@ import typings.history.mod.LocationDescriptorObject
 import typings.history.mod.LocationState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object locationHelperMod {
   
-  @JSImport("redux-auth-wrapper/history3/locationHelper", JSImport.Default)
+  @JSImport("redux-auth-wrapper/history3/locationHelper", JSImport.Namespace)
   @js.native
-  def default[Props](config: LocationHelperConfig[Props]): LocationHelper[Props] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[Props](config: LocationHelperConfig[Props]): LocationHelper[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[LocationHelper[Props]]
+  
   trait LocationHelper[Props] extends StObject {
     
-    def createRedirectLoc(props: Props, redirectPath: String): LocationDescriptorObject[LocationState] = js.native
+    def createRedirectLoc(props: Props, redirectPath: String): LocationDescriptorObject[LocationState]
     
-    def getRedirectQueryParam(props: Props): String = js.native
+    def getRedirectQueryParam(props: Props): String
   }
   object LocationHelper {
     
@@ -32,7 +33,7 @@ object locationHelperMod {
     }
     
     @scala.inline
-    implicit class LocationHelperMutableBuilder[Self <: LocationHelper[_], Props] (val x: Self with LocationHelper[Props]) extends AnyVal {
+    implicit class LocationHelperMutableBuilder[Self <: LocationHelper[?], Props] (val x: Self & LocationHelper[Props]) extends AnyVal {
       
       @scala.inline
       def setCreateRedirectLoc(value: (Props, String) => LocationDescriptorObject[LocationState]): Self = StObject.set(x, "createRedirectLoc", js.Any.fromFunction2(value))
@@ -42,12 +43,11 @@ object locationHelperMod {
     }
   }
   
-  @js.native
   trait LocationHelperConfig[Props] extends StObject {
     
-    var locationSelector: js.UndefOr[js.Function1[/* props */ Props, LocationDescriptorObject[LocationState]]] = js.native
+    var locationSelector: js.UndefOr[js.Function1[/* props */ Props, LocationDescriptorObject[LocationState]]] = js.undefined
     
-    var redirectQueryParamName: js.UndefOr[String] = js.native
+    var redirectQueryParamName: js.UndefOr[String] = js.undefined
   }
   object LocationHelperConfig {
     
@@ -58,7 +58,7 @@ object locationHelperMod {
     }
     
     @scala.inline
-    implicit class LocationHelperConfigMutableBuilder[Self <: LocationHelperConfig[_], Props] (val x: Self with LocationHelperConfig[Props]) extends AnyVal {
+    implicit class LocationHelperConfigMutableBuilder[Self <: LocationHelperConfig[?], Props] (val x: Self & LocationHelperConfig[Props]) extends AnyVal {
       
       @scala.inline
       def setLocationSelector(value: /* props */ Props => LocationDescriptorObject[LocationState]): Self = StObject.set(x, "locationSelector", js.Any.fromFunction1(value))

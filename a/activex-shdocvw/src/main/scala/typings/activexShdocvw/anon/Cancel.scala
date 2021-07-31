@@ -2,21 +2,19 @@ package typings.activexShdocvw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cancel extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val Frame: js.Any = js.native
+  val Frame: js.Any
   
-  val StatusCode: js.Any = js.native
+  val StatusCode: js.Any
   
-  val URL: js.Any = js.native
+  val URL: js.Any
   
-  val pDisp: js.Any = js.native
+  val pDisp: js.Any
 }
 object Cancel {
   

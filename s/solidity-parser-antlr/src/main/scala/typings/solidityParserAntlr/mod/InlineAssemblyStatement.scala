@@ -2,32 +2,27 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineAssemblyStatement
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode
      with Statement {
   
-  var body: AssemblyBlock = js.native
+  var body: AssemblyBlock
   
-  var language: String = js.native
+  var language: String
   
   @JSName("type")
-  var type_InlineAssemblyStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.InlineAssemblyStatement = js.native
+  var type_InlineAssemblyStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.InlineAssemblyStatement
 }
 object InlineAssemblyStatement {
   
   @scala.inline
-  def apply(
-    body: AssemblyBlock,
-    language: String,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.InlineAssemblyStatement
-  ): InlineAssemblyStatement = {
+  def apply(body: AssemblyBlock, language: String): InlineAssemblyStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("InlineAssemblyStatement")
     __obj.asInstanceOf[InlineAssemblyStatement]
   }
   

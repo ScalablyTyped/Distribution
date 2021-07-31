@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In fact a named range is a named formula expression. A cell range address is one possible content of a named range.
   * @see com.sun.star.sheet.SpreadsheetDocument
   */
-@js.native
 trait NamedRanges
-  extends XNamedRanges
+  extends StObject
+     with XNamedRanges
      with XIndexAccess
      with XEnumerationAccess
      with XActionLockable

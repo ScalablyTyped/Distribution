@@ -2,16 +2,14 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishMetricAction extends StObject {
   
   /**
     * 
     */
-  var Dimensions: typings.awsSdk.networkfirewallMod.Dimensions = js.native
+  var Dimensions: typings.awsSdk.networkfirewallMod.Dimensions
 }
 object PublishMetricAction {
   

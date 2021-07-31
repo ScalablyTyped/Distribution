@@ -2,25 +2,23 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MotorOption extends StObject {
   
-  var address: js.UndefOr[Double] = js.native
+  var address: js.UndefOr[Double] = js.undefined
   
-  var bits: js.UndefOr[js.Any] = js.native
+  var bits: js.UndefOr[js.Any] = js.undefined
   
-  var controller: js.UndefOr[String] = js.native
+  var controller: js.UndefOr[String] = js.undefined
   
-  var current: js.UndefOr[SensorOption] = js.native
+  var current: js.UndefOr[SensorOption] = js.undefined
   
-  var invertPWM: js.UndefOr[Boolean] = js.native
+  var invertPWM: js.UndefOr[Boolean] = js.undefined
   
-  var pins: MotorPins = js.native
+  var pins: MotorPins
   
-  var register: js.UndefOr[js.Any] = js.native
+  var register: js.UndefOr[js.Any] = js.undefined
 }
 object MotorOption {
   

@@ -5,7 +5,6 @@ import typings.workboxRouting.routeHandlerMod.RouteHandler
 import typings.workboxRouting.routeMod.Route
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navigationRouteMod {
@@ -17,12 +16,11 @@ object navigationRouteMod {
     def this(handler: RouteHandler, options: NavigationRouteOptions) = this()
   }
   
-  @js.native
   trait NavigationRouteOptions extends StObject {
     
-    var blacklist: js.UndefOr[js.Array[RegExp]] = js.native
+    var blacklist: js.UndefOr[js.Array[RegExp]] = js.undefined
     
-    var whitelist: js.UndefOr[js.Array[RegExp]] = js.native
+    var whitelist: js.UndefOr[js.Array[RegExp]] = js.undefined
   }
   object NavigationRouteOptions {
     

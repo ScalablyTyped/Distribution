@@ -5,35 +5,33 @@ import typings.spotifyApi.spotifyApiStrings.artist
 import typings.spotifyApi.spotifyApiStrings.playlist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Context Object
   * [](https://developer.spotify.com/web-api/object-model/#context-object)
   */
-@js.native
 trait ContextObject extends StObject {
   
   /**
     * Known external URLs.
     */
-  var external_urls: ExternalUrlObject = js.native
+  var external_urls: ExternalUrlObject
   
   /**
     * A link to the Web API endpoint providing full details.
     */
-  var href: String = js.native
+  var href: String
   
   /**
     * The object type.
     */
-  var `type`: artist | playlist | album = js.native
+  var `type`: artist | playlist | album
   
   /**
     * The [Spotify URI](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids).
     */
-  var uri: String = js.native
+  var uri: String
 }
 object ContextObject {
   

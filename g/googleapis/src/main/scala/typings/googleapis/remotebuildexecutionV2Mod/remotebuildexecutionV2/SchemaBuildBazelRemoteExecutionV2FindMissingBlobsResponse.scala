@@ -2,19 +2,17 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response message for ContentAddressableStorage.FindMissingBlobs.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse extends StObject {
   
   /**
     * A list of the blobs requested *not* present in the storage.
     */
-  var missingBlobDigests: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2Digest]] = js.native
+  var missingBlobDigests: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2Digest]] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse {
   

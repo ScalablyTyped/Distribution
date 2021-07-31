@@ -3,17 +3,15 @@ package typings.aliApp.my
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventTarget extends StObject {
   
-  var dataset: StringDictionary[String] = js.native
+  var dataset: StringDictionary[String]
   
-  var id: String = js.native
+  var id: String
   
-  var tagName: String = js.native
+  var tagName: String
 }
 object EventTarget {
   

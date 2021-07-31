@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disabled extends StObject {
   
-  var disabled: scala.Double = js.native
+  var disabled: scala.Double
   
-  var enabled: scala.Double = js.native
+  var enabled: scala.Double
   
-  var paused: scala.Double = js.native
+  var paused: scala.Double
 }
 object Disabled {
   

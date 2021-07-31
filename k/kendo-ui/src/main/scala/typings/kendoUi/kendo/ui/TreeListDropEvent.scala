@@ -4,21 +4,21 @@ import typings.kendoUi.kendo.data.TreeListModel
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TreeListDropEvent extends TreeListEvent {
+trait TreeListDropEvent
+  extends StObject
+     with TreeListEvent {
   
-  var destination: js.UndefOr[TreeListModel] = js.native
+  var destination: js.UndefOr[TreeListModel] = js.undefined
   
-  var dropTarget: js.UndefOr[Element] = js.native
+  var dropTarget: js.UndefOr[Element] = js.undefined
   
-  var setValid: js.UndefOr[Boolean] = js.native
+  var setValid: js.UndefOr[Boolean] = js.undefined
   
-  var source: js.UndefOr[TreeListModel] = js.native
+  var source: js.UndefOr[TreeListModel] = js.undefined
   
-  var valid: js.UndefOr[Boolean] = js.native
+  var valid: js.UndefOr[Boolean] = js.undefined
 }
 object TreeListDropEvent {
   

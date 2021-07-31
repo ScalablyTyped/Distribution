@@ -5,7 +5,6 @@ import typings.angular.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularModal {
@@ -33,14 +32,13 @@ object angularModal {
   type AngularModalJQuerySelector = String | Element | (js.Array[js.Any | Element]) | JQuery | js.Function | js.Object
   
   // Possible arguments to IAugmentedJQueryStatic
-  @js.native
   trait AngularModalSettings extends StObject {
     
-    var container: js.UndefOr[AngularModalJQuerySelector] = js.native
+    var container: js.UndefOr[AngularModalJQuerySelector] = js.undefined
     
-    var controller: js.UndefOr[AngularModalControllerDefinition] = js.native
+    var controller: js.UndefOr[AngularModalControllerDefinition] = js.undefined
     
-    var controllerAs: js.UndefOr[String] = js.native
+    var controllerAs: js.UndefOr[String] = js.undefined
   }
   object AngularModalSettings {
     
@@ -76,10 +74,11 @@ object angularModal {
     }
   }
   
-  @js.native
-  trait AngularModalSettingsWithTemplate extends AngularModalSettings {
+  trait AngularModalSettingsWithTemplate
+    extends StObject
+       with AngularModalSettings {
     
-    var template: js.Any = js.native
+    var template: js.Any
   }
   object AngularModalSettingsWithTemplate {
     
@@ -97,10 +96,11 @@ object angularModal {
     }
   }
   
-  @js.native
-  trait AngularModalSettingsWithTemplateUrl extends AngularModalSettings {
+  trait AngularModalSettingsWithTemplateUrl
+    extends StObject
+       with AngularModalSettings {
     
-    var templateUrl: String = js.native
+    var templateUrl: String
   }
   object AngularModalSettingsWithTemplateUrl {
     

@@ -2,23 +2,21 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Current extends StObject {
   
-  var current: Double = js.native
+  var current: Double
   
-  var indicatorStyle: Null = js.native
+  var indicatorStyle: Null
   
-  var mode: String = js.native
+  var mode: String
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  var simple: Boolean = js.native
+  var simple: Boolean
   
-  var total: Double = js.native
+  var total: Double
 }
 object Current {
   

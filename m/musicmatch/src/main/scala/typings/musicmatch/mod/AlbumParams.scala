@@ -2,13 +2,11 @@ package typings.musicmatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlbumParams extends StObject {
   
-  var album_id: Double = js.native
+  var album_id: Double
 }
 object AlbumParams {
   

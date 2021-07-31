@@ -2,17 +2,15 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlQuerySpec extends StObject {
   
   /** The array of SqlParameters. */
-  var parameters: js.Array[SqlParameter] = js.native
+  var parameters: js.Array[SqlParameter]
   
   /** The body of the query. */
-  var query: String = js.native
+  var query: String
 }
 object SqlQuerySpec {
   

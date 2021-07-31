@@ -2,21 +2,19 @@ package typings.awsSdk.elasticinferenceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
   /**
     *  The filter name for the Elastic Inference Accelerator list. It can assume the following values: accelerator-type: the type of Elastic Inference Accelerator to filter for. instance-id: an EC2 instance id to filter for. 
     */
-  var name: js.UndefOr[FilterName] = js.native
+  var name: js.UndefOr[FilterName] = js.undefined
   
   /**
     *  The values for the filter of the Elastic Inference Accelerator list. 
     */
-  var values: js.UndefOr[ValueStringList] = js.native
+  var values: js.UndefOr[ValueStringList] = js.undefined
 }
 object Filter {
   

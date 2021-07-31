@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceGroupAutoscalingPolicyConfig extends StObject {
   
   /**
     * Required. Maximum number of instances for this group. Required for primary workers. Note that by default, clusters will not use secondary workers. Required for secondary workers if
     * the minimum secondary instances is set.Primary workers - Bounds: [min_instances, ). Secondary workers - Bounds: [min_instances, ). Default: 0.
     */
-  var maxInstances: js.UndefOr[Double] = js.native
+  var maxInstances: js.UndefOr[Double] = js.undefined
   
   /** Optional. Minimum number of instances for this group.Primary workers - Bounds: 2, max_instances. Default: 2. Secondary workers - Bounds: 0, max_instances. Default: 0. */
-  var minInstances: js.UndefOr[Double] = js.native
+  var minInstances: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. Weight for the instance group, which is used to determine the fraction of total workers in the cluster from this instance group. For example, if primary workers have
@@ -25,7 +23,7 @@ trait InstanceGroupAutoscalingPolicyConfig extends StObject {
     * number of workers in each group within the configured size bounds for each group. If weight is set for one group only, the cluster will default to zero weight on the unset group.
     * For example if weight is set only on primary workers, the cluster will use primary workers only and no secondary workers.
     */
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object InstanceGroupAutoscalingPolicyConfig {
   

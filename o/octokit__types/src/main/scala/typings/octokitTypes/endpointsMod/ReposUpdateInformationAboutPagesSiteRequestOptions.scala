@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposUpdateInformationAboutPagesSiteRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: PUT = js.native
+  var method: PUT
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: SlashreposSlashColonownerSlashColonrepoSlashpages = js.native
+  var url: SlashreposSlashColonownerSlashColonrepoSlashpages
 }
 object ReposUpdateInformationAboutPagesSiteRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: PUT,
-    request: RequestRequestOptions,
-    url: SlashreposSlashColonownerSlashColonrepoSlashpages
-  ): ReposUpdateInformationAboutPagesSiteRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposUpdateInformationAboutPagesSiteRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PUT", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/pages")
     __obj.asInstanceOf[ReposUpdateInformationAboutPagesSiteRequestOptions]
   }
   

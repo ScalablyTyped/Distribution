@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductViewAggregationValue extends StObject {
   
   /**
     * An approximate count of the products that match the value.
     */
-  var ApproximateCount: js.UndefOr[typings.awsSdk.servicecatalogMod.ApproximateCount] = js.native
+  var ApproximateCount: js.UndefOr[typings.awsSdk.servicecatalogMod.ApproximateCount] = js.undefined
   
   /**
     * The value of the product view aggregation.
     */
-  var Value: js.UndefOr[AttributeValue] = js.native
+  var Value: js.UndefOr[AttributeValue] = js.undefined
 }
 object ProductViewAggregationValue {
   

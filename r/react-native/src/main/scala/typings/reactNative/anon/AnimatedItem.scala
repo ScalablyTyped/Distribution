@@ -2,17 +2,15 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimatedItem[ItemT] extends StObject {
   
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
-  var item: ItemT = js.native
+  var item: ItemT
   
-  var viewPosition: js.UndefOr[Double] = js.native
+  var viewPosition: js.UndefOr[Double] = js.undefined
 }
 object AnimatedItem {
   
@@ -23,7 +21,7 @@ object AnimatedItem {
   }
   
   @scala.inline
-  implicit class AnimatedItemMutableBuilder[Self <: AnimatedItem[_], ItemT] (val x: Self with AnimatedItem[ItemT]) extends AnyVal {
+  implicit class AnimatedItemMutableBuilder[Self <: AnimatedItem[?], ItemT] (val x: Self & AnimatedItem[ItemT]) extends AnyVal {
     
     @scala.inline
     def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])

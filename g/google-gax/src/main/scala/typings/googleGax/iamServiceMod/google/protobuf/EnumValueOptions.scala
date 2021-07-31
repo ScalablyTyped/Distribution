@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an EnumValueOptions. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new EnumValueOptions.
   * @param [properties] Properties to set
   */
-class EnumValueOptions () extends IEnumValueOptions {
+class EnumValueOptions ()
+  extends StObject
+     with IEnumValueOptions {
   def this(properties: IEnumValueOptions) = this()
   
   /** EnumValueOptions deprecated. */
@@ -36,18 +37,20 @@ class EnumValueOptions () extends IEnumValueOptions {
 }
 object EnumValueOptions {
   
+  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new EnumValueOptions instance using the specified properties.
     * @param [properties] Properties to set
     * @returns EnumValueOptions instance
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.create")
-  @js.native
-  def create(): EnumValueOptions = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.create")
-  @js.native
-  def create(properties: IEnumValueOptions): EnumValueOptions = js.native
+  @scala.inline
+  def create(): EnumValueOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[EnumValueOptions]
+  @scala.inline
+  def create(properties: IEnumValueOptions): EnumValueOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[EnumValueOptions]
   
   /**
     * Decodes an EnumValueOptions message from the specified reader or buffer.
@@ -58,18 +61,14 @@ object EnumValueOptions {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.decode")
-  @js.native
-  def decode(reader: Reader): EnumValueOptions = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): EnumValueOptions = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.decode")
-  @js.native
-  def decode(reader: Uint8Array): EnumValueOptions = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): EnumValueOptions = js.native
+  @scala.inline
+  def decode(reader: Reader): EnumValueOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EnumValueOptions]
+  @scala.inline
+  def decode(reader: Reader, length: Double): EnumValueOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EnumValueOptions]
+  @scala.inline
+  def decode(reader: Uint8Array): EnumValueOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EnumValueOptions]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): EnumValueOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EnumValueOptions]
   
   /**
     * Decodes an EnumValueOptions message from the specified reader or buffer, length delimited.
@@ -79,12 +78,10 @@ object EnumValueOptions {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): EnumValueOptions = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): EnumValueOptions = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): EnumValueOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EnumValueOptions]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): EnumValueOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EnumValueOptions]
   
   /**
     * Encodes the specified EnumValueOptions message. Does not implicitly {@link google.protobuf.EnumValueOptions.verify|verify} messages.
@@ -93,12 +90,10 @@ object EnumValueOptions {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.encode")
-  @js.native
-  def encode(message: IEnumValueOptions): Writer = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.encode")
-  @js.native
-  def encode(message: IEnumValueOptions, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IEnumValueOptions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IEnumValueOptions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified EnumValueOptions message, length delimited. Does not implicitly {@link google.protobuf.EnumValueOptions.verify|verify} messages.
@@ -107,12 +102,10 @@ object EnumValueOptions {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IEnumValueOptions): Writer = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IEnumValueOptions, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IEnumValueOptions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IEnumValueOptions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an EnumValueOptions message from a plain object. Also converts values to their respective internal types.
@@ -120,9 +113,8 @@ object EnumValueOptions {
     * @returns EnumValueOptions
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): EnumValueOptions = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): EnumValueOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[EnumValueOptions]
   
   /**
     * Creates a plain object from an EnumValueOptions message. Also converts values to other types if specified.
@@ -131,12 +123,10 @@ object EnumValueOptions {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.toObject")
-  @js.native
-  def toObject(message: EnumValueOptions): StringDictionary[js.Any] = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.toObject")
-  @js.native
-  def toObject(message: EnumValueOptions, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: EnumValueOptions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: EnumValueOptions, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an EnumValueOptions message.
@@ -144,7 +134,6 @@ object EnumValueOptions {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.protobuf.EnumValueOptions.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

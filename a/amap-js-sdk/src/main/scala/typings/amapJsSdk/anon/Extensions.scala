@@ -4,23 +4,21 @@ import typings.amapJsSdk.AMap.DrivingPolicy
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extensions extends StObject {
   
-  var extensions: js.UndefOr[String] = js.native
+  var extensions: js.UndefOr[String] = js.undefined
   
-  var hideMarkers: js.UndefOr[Boolean] = js.native
+  var hideMarkers: js.UndefOr[Boolean] = js.undefined
   
-  var map: js.UndefOr[typings.amapJsSdk.AMap.Map] = js.native
+  var map: js.UndefOr[typings.amapJsSdk.AMap.Map] = js.undefined
   
-  var panel: js.UndefOr[String | HTMLElement] = js.native
+  var panel: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var policy: js.UndefOr[DrivingPolicy] = js.native
+  var policy: js.UndefOr[DrivingPolicy] = js.undefined
   
-  var showTraffic: js.UndefOr[Boolean] = js.native
+  var showTraffic: js.UndefOr[Boolean] = js.undefined
 }
 object Extensions {
   

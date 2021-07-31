@@ -2,157 +2,155 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaExplainQueryStage extends StObject {
   
   /**
     * Number of parallel input segments completed.
     */
-  var completedParallelInputs: js.UndefOr[String] = js.native
+  var completedParallelInputs: js.UndefOr[String] = js.undefined
   
   /**
     * Milliseconds the average shard spent on CPU-bound tasks.
     */
-  var computeMsAvg: js.UndefOr[String] = js.native
+  var computeMsAvg: js.UndefOr[String] = js.undefined
   
   /**
     * Milliseconds the slowest shard spent on CPU-bound tasks.
     */
-  var computeMsMax: js.UndefOr[String] = js.native
+  var computeMsMax: js.UndefOr[String] = js.undefined
   
   /**
     * Relative amount of time the average shard spent on CPU-bound tasks.
     */
-  var computeRatioAvg: js.UndefOr[Double] = js.native
+  var computeRatioAvg: js.UndefOr[Double] = js.undefined
   
   /**
     * Relative amount of time the slowest shard spent on CPU-bound tasks.
     */
-  var computeRatioMax: js.UndefOr[Double] = js.native
+  var computeRatioMax: js.UndefOr[Double] = js.undefined
   
   /**
     * Stage end time represented as milliseconds since epoch.
     */
-  var endMs: js.UndefOr[String] = js.native
+  var endMs: js.UndefOr[String] = js.undefined
   
   /**
     * Unique ID for stage within plan.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * IDs for stages that are inputs to this stage.
     */
-  var inputStages: js.UndefOr[js.Array[String]] = js.native
+  var inputStages: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Human-readable name for stage.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Number of parallel input segments to be processed.
     */
-  var parallelInputs: js.UndefOr[String] = js.native
+  var parallelInputs: js.UndefOr[String] = js.undefined
   
   /**
     * Milliseconds the average shard spent reading input.
     */
-  var readMsAvg: js.UndefOr[String] = js.native
+  var readMsAvg: js.UndefOr[String] = js.undefined
   
   /**
     * Milliseconds the slowest shard spent reading input.
     */
-  var readMsMax: js.UndefOr[String] = js.native
+  var readMsMax: js.UndefOr[String] = js.undefined
   
   /**
     * Relative amount of time the average shard spent reading input.
     */
-  var readRatioAvg: js.UndefOr[Double] = js.native
+  var readRatioAvg: js.UndefOr[Double] = js.undefined
   
   /**
     * Relative amount of time the slowest shard spent reading input.
     */
-  var readRatioMax: js.UndefOr[Double] = js.native
+  var readRatioMax: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of records read into the stage.
     */
-  var recordsRead: js.UndefOr[String] = js.native
+  var recordsRead: js.UndefOr[String] = js.undefined
   
   /**
     * Number of records written by the stage.
     */
-  var recordsWritten: js.UndefOr[String] = js.native
+  var recordsWritten: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of bytes written to shuffle.
     */
-  var shuffleOutputBytes: js.UndefOr[String] = js.native
+  var shuffleOutputBytes: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of bytes written to shuffle and spilled to disk.
     */
-  var shuffleOutputBytesSpilled: js.UndefOr[String] = js.native
+  var shuffleOutputBytesSpilled: js.UndefOr[String] = js.undefined
   
   /**
     * Stage start time represented as milliseconds since epoch.
     */
-  var startMs: js.UndefOr[String] = js.native
+  var startMs: js.UndefOr[String] = js.undefined
   
   /**
     * Current status for the stage.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * List of operations within the stage in dependency order (approximately
     * chronological).
     */
-  var steps: js.UndefOr[js.Array[SchemaExplainQueryStep]] = js.native
+  var steps: js.UndefOr[js.Array[SchemaExplainQueryStep]] = js.undefined
   
   /**
     * Milliseconds the average shard spent waiting to be scheduled.
     */
-  var waitMsAvg: js.UndefOr[String] = js.native
+  var waitMsAvg: js.UndefOr[String] = js.undefined
   
   /**
     * Milliseconds the slowest shard spent waiting to be scheduled.
     */
-  var waitMsMax: js.UndefOr[String] = js.native
+  var waitMsMax: js.UndefOr[String] = js.undefined
   
   /**
     * Relative amount of time the average shard spent waiting to be scheduled.
     */
-  var waitRatioAvg: js.UndefOr[Double] = js.native
+  var waitRatioAvg: js.UndefOr[Double] = js.undefined
   
   /**
     * Relative amount of time the slowest shard spent waiting to be scheduled.
     */
-  var waitRatioMax: js.UndefOr[Double] = js.native
+  var waitRatioMax: js.UndefOr[Double] = js.undefined
   
   /**
     * Milliseconds the average shard spent on writing output.
     */
-  var writeMsAvg: js.UndefOr[String] = js.native
+  var writeMsAvg: js.UndefOr[String] = js.undefined
   
   /**
     * Milliseconds the slowest shard spent on writing output.
     */
-  var writeMsMax: js.UndefOr[String] = js.native
+  var writeMsMax: js.UndefOr[String] = js.undefined
   
   /**
     * Relative amount of time the average shard spent on writing output.
     */
-  var writeRatioAvg: js.UndefOr[Double] = js.native
+  var writeRatioAvg: js.UndefOr[Double] = js.undefined
   
   /**
     * Relative amount of time the slowest shard spent on writing output.
     */
-  var writeRatioMax: js.UndefOr[Double] = js.native
+  var writeRatioMax: js.UndefOr[Double] = js.undefined
 }
 object SchemaExplainQueryStage {
   

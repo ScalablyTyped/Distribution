@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object persistentVolumeMod {
@@ -28,7 +27,7 @@ object persistentVolumeMod {
       */
     def this(name: String) = this()
     def this(name: String, args: PersistentVolumeArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: PersistentVolumeArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -59,6 +58,10 @@ object persistentVolumeMod {
   /* static members */
   object PersistentVolume {
     
+    @JSImport("@pulumi/kubernetes/core/v1/persistentVolume", "PersistentVolume")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PersistentVolume resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,44 +70,40 @@ object persistentVolumeMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/core/v1/persistentVolume", "PersistentVolume.get")
-    @js.native
-    def get(name: String, id: Input[ID]): PersistentVolume = js.native
-    @JSImport("@pulumi/kubernetes/core/v1/persistentVolume", "PersistentVolume.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): PersistentVolume = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): PersistentVolume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PersistentVolume]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): PersistentVolume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PersistentVolume]
     
     /**
       * Returns true if the given object is an instance of PersistentVolume.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/core/v1/persistentVolume", "PersistentVolume.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/persistentVolume.PersistentVolume */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/persistentVolume.PersistentVolume */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/persistentVolume.PersistentVolume */ Boolean]
   }
   
-  @js.native
   trait PersistentVolumeArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[v1]] = js.native
+    val apiVersion: js.UndefOr[Input[v1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.PersistentVolume]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.PersistentVolume]] = js.undefined
     
     /**
       * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
     
     /**
       * Spec defines a specification of a persistent volume owned by the cluster. Provisioned by an administrator. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistent-volumes
       */
-    val spec: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.core.v1.PersistentVolumeSpec]] = js.native
+    val spec: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.core.v1.PersistentVolumeSpec]] = js.undefined
   }
   object PersistentVolumeArgs {
     

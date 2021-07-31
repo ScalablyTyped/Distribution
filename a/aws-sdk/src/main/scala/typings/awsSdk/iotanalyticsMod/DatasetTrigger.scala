@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetTrigger extends StObject {
   
   /**
     * The data set whose content creation triggers the creation of this data set's contents.
     */
-  var dataset: js.UndefOr[TriggeringDataset] = js.native
+  var dataset: js.UndefOr[TriggeringDataset] = js.undefined
   
   /**
     * The Schedule when the trigger is initiated.
     */
-  var schedule: js.UndefOr[Schedule] = js.native
+  var schedule: js.UndefOr[Schedule] = js.undefined
 }
 object DatasetTrigger {
   

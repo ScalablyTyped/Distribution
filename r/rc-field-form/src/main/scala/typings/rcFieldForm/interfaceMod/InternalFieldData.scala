@@ -2,13 +2,13 @@ package typings.rcFieldForm.interfaceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InternalFieldData extends Meta {
+trait InternalFieldData
+  extends StObject
+     with Meta {
   
-  var value: StoreValue = js.native
+  var value: StoreValue
 }
 object InternalFieldData {
   

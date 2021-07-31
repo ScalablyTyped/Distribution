@@ -2,23 +2,21 @@ package typings.angularCommon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwitchView extends StObject {
   
-  var _created: js.Any = js.native
+  var _created: js.Any
   
-  var _templateRef: js.Any = js.native
+  var _templateRef: js.Any
   
-  var _viewContainerRef: js.Any = js.native
+  var _viewContainerRef: js.Any
   
-  def create(): Unit = js.native
+  def create(): Unit
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def enforceState(created: Boolean): Unit = js.native
+  def enforceState(created: Boolean): Unit
 }
 object SwitchView {
   

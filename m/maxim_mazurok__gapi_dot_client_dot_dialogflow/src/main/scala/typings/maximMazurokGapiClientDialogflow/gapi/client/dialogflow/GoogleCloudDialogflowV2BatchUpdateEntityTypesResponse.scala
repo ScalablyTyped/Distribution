@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2BatchUpdateEntityTypesResponse extends StObject {
   
   /** The collection of updated or created entity types. */
-  var entityTypes: js.UndefOr[js.Array[GoogleCloudDialogflowV2EntityType]] = js.native
+  var entityTypes: js.UndefOr[js.Array[GoogleCloudDialogflowV2EntityType]] = js.undefined
 }
 object GoogleCloudDialogflowV2BatchUpdateEntityTypesResponse {
   

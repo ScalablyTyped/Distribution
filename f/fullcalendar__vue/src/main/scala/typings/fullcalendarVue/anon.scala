@@ -5,29 +5,27 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AllDay extends StObject {
     
-    var allDay: Boolean = js.native
+    var allDay: Boolean
     
-    var date: Date = js.native
+    var date: Date
     
-    var dayEl: HTMLElement = js.native
+    var dayEl: HTMLElement
     
-    var hiddenSegs: js.Array[_] = js.native
+    var hiddenSegs: js.Array[js.Any]
     
-    var jsEvent: MouseEvent = js.native
+    var jsEvent: MouseEvent
     
-    var moreEl: HTMLElement = js.native
+    var moreEl: HTMLElement
     
-    var segs: js.Array[_] = js.native
+    var segs: js.Array[js.Any]
     
-    var view: js.Any = js.native
+    var view: js.Any
   }
   object AllDay {
     
@@ -36,10 +34,10 @@ object anon {
       allDay: Boolean,
       date: Date,
       dayEl: HTMLElement,
-      hiddenSegs: js.Array[_],
+      hiddenSegs: js.Array[js.Any],
       jsEvent: MouseEvent,
       moreEl: HTMLElement,
-      segs: js.Array[_],
+      segs: js.Array[js.Any],
       view: js.Any
     ): AllDay = {
       val __obj = js.Dynamic.literal(allDay = allDay.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], dayEl = dayEl.asInstanceOf[js.Any], hiddenSegs = hiddenSegs.asInstanceOf[js.Any], jsEvent = jsEvent.asInstanceOf[js.Any], moreEl = moreEl.asInstanceOf[js.Any], segs = segs.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
@@ -59,7 +57,7 @@ object anon {
       def setDayEl(value: HTMLElement): Self = StObject.set(x, "dayEl", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHiddenSegs(value: js.Array[_]): Self = StObject.set(x, "hiddenSegs", value.asInstanceOf[js.Any])
+      def setHiddenSegs(value: js.Array[js.Any]): Self = StObject.set(x, "hiddenSegs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHiddenSegsVarargs(value: js.Any*): Self = StObject.set(x, "hiddenSegs", js.Array(value :_*))
@@ -71,7 +69,7 @@ object anon {
       def setMoreEl(value: HTMLElement): Self = StObject.set(x, "moreEl", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSegs(value: js.Array[_]): Self = StObject.set(x, "segs", value.asInstanceOf[js.Any])
+      def setSegs(value: js.Array[js.Any]): Self = StObject.set(x, "segs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSegsVarargs(value: js.Any*): Self = StObject.set(x, "segs", js.Array(value :_*))

@@ -3,17 +3,15 @@ package typings.swaggerizeExpress.mod
 import typings.swaggerizeExpress.mod.Swagger.ApiDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var api: ApiDefinition = js.native
+  var api: ApiDefinition
   
-  var docspath: String = js.native
+  var docspath: String
   
-  var handlers: String | RouteSegment = js.native
+  var handlers: String | RouteSegment
 }
 object Options {
   

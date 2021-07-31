@@ -2,36 +2,34 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceDataContainer extends StObject {
   
   /**
     * Attributes that define the local device resource.
     */
-  var LocalDeviceResourceData: js.UndefOr[typings.awsSdk.greengrassMod.LocalDeviceResourceData] = js.native
+  var LocalDeviceResourceData: js.UndefOr[typings.awsSdk.greengrassMod.LocalDeviceResourceData] = js.undefined
   
   /**
     * Attributes that define the local volume resource.
     */
-  var LocalVolumeResourceData: js.UndefOr[typings.awsSdk.greengrassMod.LocalVolumeResourceData] = js.native
+  var LocalVolumeResourceData: js.UndefOr[typings.awsSdk.greengrassMod.LocalVolumeResourceData] = js.undefined
   
   /**
     * Attributes that define an Amazon S3 machine learning resource.
     */
-  var S3MachineLearningModelResourceData: js.UndefOr[typings.awsSdk.greengrassMod.S3MachineLearningModelResourceData] = js.native
+  var S3MachineLearningModelResourceData: js.UndefOr[typings.awsSdk.greengrassMod.S3MachineLearningModelResourceData] = js.undefined
   
   /**
     * Attributes that define an Amazon SageMaker machine learning resource.
     */
-  var SageMakerMachineLearningModelResourceData: js.UndefOr[typings.awsSdk.greengrassMod.SageMakerMachineLearningModelResourceData] = js.native
+  var SageMakerMachineLearningModelResourceData: js.UndefOr[typings.awsSdk.greengrassMod.SageMakerMachineLearningModelResourceData] = js.undefined
   
   /**
     * Attributes that define a secret resource, which references a secret from AWS Secrets Manager.
     */
-  var SecretsManagerSecretResourceData: js.UndefOr[typings.awsSdk.greengrassMod.SecretsManagerSecretResourceData] = js.native
+  var SecretsManagerSecretResourceData: js.UndefOr[typings.awsSdk.greengrassMod.SecretsManagerSecretResourceData] = js.undefined
 }
 object ResourceDataContainer {
   

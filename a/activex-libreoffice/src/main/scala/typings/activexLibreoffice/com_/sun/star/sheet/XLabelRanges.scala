@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,18 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.LabelRanges
   * @see com.sun.star.sheet.LabelRange
   */
-@js.native
-trait XLabelRanges extends XIndexAccess {
+trait XLabelRanges
+  extends StObject
+     with XIndexAccess {
   
   /**
     * adds a new label range to the collection.
     * @param aLabelArea the cell range containing the titles of the label range.
     * @param aDataArea the cell range containing the values of the label range.
     */
-  def addNew(aLabelArea: CellRangeAddress, aDataArea: CellRangeAddress): Unit = js.native
+  def addNew(aLabelArea: CellRangeAddress, aDataArea: CellRangeAddress): Unit
   
   /** removes a label range from the collection. */
-  def removeByIndex(nIndex: Double): Unit = js.native
+  def removeByIndex(nIndex: Double): Unit
 }
 object XLabelRanges {
   

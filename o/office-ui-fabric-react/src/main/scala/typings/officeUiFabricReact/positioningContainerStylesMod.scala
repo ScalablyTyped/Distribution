@@ -3,32 +3,33 @@ package typings.officeUiFabricReact
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object positioningContainerStylesMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/Coachmark/PositioningContainer/PositioningContainer.styles", "getClassNames")
+  @JSImport("office-ui-fabric-react/lib/components/Coachmark/PositioningContainer/PositioningContainer.styles", JSImport.Namespace)
   @js.native
-  def getClassNames(): IPositioningContainerNames = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getClassNames(): IPositioningContainerNames = ^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")().asInstanceOf[IPositioningContainerNames]
+  
   trait IPositioningContainerNames extends StObject {
     
-    var beak: js.UndefOr[String] = js.native
+    var beak: js.UndefOr[String] = js.undefined
     
-    var beakCurtain: js.UndefOr[String] = js.native
+    var beakCurtain: js.UndefOr[String] = js.undefined
     
-    var container: String = js.native
+    var container: String
     
-    var main: String = js.native
+    var main: String
     
-    var overFlowYHidden: String = js.native
+    var overFlowYHidden: String
     
     /**
       * Root html container for this component.
       */
-    var root: String = js.native
+    var root: String
   }
   object IPositioningContainerNames {
     
@@ -67,13 +68,12 @@ object positioningContainerStylesMod {
     }
   }
   
-  @js.native
   trait IPositioningContainerStyles extends StObject {
     
     /**
       * Style for the root element in the default enabled/unchecked state.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
   }
   object IPositioningContainerStyles {
     

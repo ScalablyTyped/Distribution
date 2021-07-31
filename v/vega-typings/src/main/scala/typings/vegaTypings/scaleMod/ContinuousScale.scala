@@ -3,21 +3,21 @@ package typings.vegaTypings.scaleMod
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContinuousScale extends BaseScale {
+trait ContinuousScale
+  extends StObject
+     with BaseScale {
   
-  var bins: js.UndefOr[ScaleBins] = js.native
+  var bins: js.UndefOr[ScaleBins] = js.undefined
   
-  var clamp: js.UndefOr[Boolean | SignalRef] = js.native
+  var clamp: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var interpolate: js.UndefOr[ScaleInterpolate] = js.native
+  var interpolate: js.UndefOr[ScaleInterpolate] = js.undefined
   
-  var padding: js.UndefOr[Double | SignalRef] = js.native
+  var padding: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var range: js.UndefOr[RangeScheme] = js.native
+  var range: js.UndefOr[RangeScheme] = js.undefined
 }
 object ContinuousScale {
   

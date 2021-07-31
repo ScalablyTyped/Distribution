@@ -7,38 +7,38 @@ import typings.figma.figmaStrings.IMAGE
 import typings.figma.figmaStrings.TILE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImagePaint extends Paint {
+trait ImagePaint
+  extends StObject
+     with Paint {
   
-  val blendMode: js.UndefOr[BlendMode] = js.native
+  val blendMode: js.UndefOr[BlendMode] = js.undefined
   
   // setting for "TILE"
-  val filters: js.UndefOr[ImageFilters] = js.native
+  val filters: js.UndefOr[ImageFilters] = js.undefined
   
-  val imageHash: String | Null = js.native
+  val imageHash: String | Null
   
-  val imageTransform: js.UndefOr[Transform] = js.native
+  val imageTransform: js.UndefOr[Transform] = js.undefined
   
-  val opacity: js.UndefOr[Double] = js.native
+  val opacity: js.UndefOr[Double] = js.undefined
   
-  val scaleMode: FILL | FIT | CROP | TILE = js.native
+  val scaleMode: FILL | FIT | CROP | TILE
   
   // setting for "CROP"
-  val scalingFactor: js.UndefOr[Double] = js.native
+  val scalingFactor: js.UndefOr[Double] = js.undefined
   
-  val `type`: IMAGE = js.native
+  val `type`: IMAGE
   
-  val visible: js.UndefOr[Boolean] = js.native
+  val visible: js.UndefOr[Boolean] = js.undefined
 }
 object ImagePaint {
   
   @scala.inline
-  def apply(scaleMode: FILL | FIT | CROP | TILE, `type`: IMAGE): ImagePaint = {
-    val __obj = js.Dynamic.literal(scaleMode = scaleMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(scaleMode: FILL | FIT | CROP | TILE): ImagePaint = {
+    val __obj = js.Dynamic.literal(scaleMode = scaleMode.asInstanceOf[js.Any], imageHash = null)
+    __obj.updateDynamic("type")("IMAGE")
     __obj.asInstanceOf[ImagePaint]
   }
   

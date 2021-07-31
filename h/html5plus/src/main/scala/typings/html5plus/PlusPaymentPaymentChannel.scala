@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -50,29 +49,21 @@ trait PlusPaymentPaymentChannel extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   def requestOrder(): Unit = js.native
+  def requestOrder(ids: js.Array[js.Any]): Unit = js.native
+  def requestOrder(ids: js.Array[js.Any], successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
   def requestOrder(
-    ids: js.UndefOr[scala.Nothing],
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def requestOrder(ids: js.UndefOr[scala.Nothing], successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
-  def requestOrder(
-    ids: js.UndefOr[scala.Nothing],
+    ids: js.Array[js.Any],
     successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
-  def requestOrder(ids: js.Array[_]): Unit = js.native
+  def requestOrder(ids: js.Array[js.Any], successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def requestOrder(ids: Unit, successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
   def requestOrder(
-    ids: js.Array[_],
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def requestOrder(ids: js.Array[_], successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
-  def requestOrder(
-    ids: js.Array[_],
+    ids: Unit,
     successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def requestOrder(ids: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 向IAP服务器请求已经购买的非消耗性商品和订阅商品
@@ -81,12 +72,9 @@ trait PlusPaymentPaymentChannel extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   def restoreComplateRequest(): Unit = js.native
-  def restoreComplateRequest(
-    options: js.UndefOr[scala.Nothing],
-    successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]
-  ): Unit = js.native
   def restoreComplateRequest(options: js.Any): Unit = js.native
   def restoreComplateRequest(options: js.Any, successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
+  def restoreComplateRequest(options: Unit, successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
   
   /**
     * 支付通道服务是否安装

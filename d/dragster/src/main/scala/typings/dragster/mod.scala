@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,19 +12,26 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("dragster", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Dragster {
+  class ^ protected ()
+    extends StObject
+       with Dragster {
     def this(elem: HTMLElement) = this()
+    
+    /* CompleteClass */
+    override def removeListeners(): Unit = js.native
+    
+    /* CompleteClass */
+    override def reset(): Unit = js.native
   }
   @JSImport("dragster", JSImport.Namespace)
   @js.native
   val ^ : DragsterStatic = js.native
   
-  @js.native
   trait Dragster extends StObject {
     
-    def removeListeners(): Unit = js.native
+    def removeListeners(): Unit
     
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object Dragster {
     
@@ -47,7 +53,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait DragsterStatic extends Instantiable1[/* elem */ HTMLElement, Dragster] {
+  trait DragsterStatic
+    extends StObject
+       with Instantiable1[/* elem */ HTMLElement, Dragster] {
     
     def apply(elem: HTMLElement): Dragster = js.native
   }
@@ -59,12 +67,26 @@ object mod extends Shortcut {
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
-      def Dragster(elem: HTMLElement): typings.dragster.mod.Dragster = js.native
+      def Dragster(elem: HTMLElement): typings.dragster.mod.Dragster
       @JSName("Dragster")
-      var Dragster_Original: DragsterStatic = js.native
+      var Dragster_Original: DragsterStatic
+    }
+    object Window {
+      
+      @scala.inline
+      def apply(Dragster: DragsterStatic): Window = {
+        val __obj = js.Dynamic.literal(Dragster = Dragster.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Window]
+      }
+      
+      @scala.inline
+      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setDragster(value: DragsterStatic): Self = StObject.set(x, "Dragster", value.asInstanceOf[js.Any])
+      }
     }
   }
 }

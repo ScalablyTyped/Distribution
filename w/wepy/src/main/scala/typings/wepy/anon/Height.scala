@@ -3,23 +3,21 @@ package typings.wepy.anon
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
-  var canvasId: String = js.native
+  var canvasId: String
   
-  var data: Uint8ClampedArray = js.native
+  var data: Uint8ClampedArray
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var wdith: Double = js.native
+  var wdith: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object Height {
   

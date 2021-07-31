@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForwardingRuleReference extends StObject {
   
-  var forwardingRule: js.UndefOr[String] = js.native
+  var forwardingRule: js.UndefOr[String] = js.undefined
 }
 object ForwardingRuleReference {
   

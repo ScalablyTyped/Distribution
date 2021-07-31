@@ -2,31 +2,29 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockDeviceMapping extends StObject {
   
   /**
     * The device name exposed to the EC2 instance (for example, /dev/sdh or xvdh). For more information, see Device Naming on Linux Instances in the Amazon EC2 User Guide for Linux Instances.
     */
-  var DeviceName: XmlStringMaxLen255 = js.native
+  var DeviceName: XmlStringMaxLen255
   
   /**
     * Parameters used to automatically set up EBS volumes when an instance is launched. You can specify either VirtualName or Ebs, but not both.
     */
-  var Ebs: js.UndefOr[typings.awsSdk.autoscalingMod.Ebs] = js.native
+  var Ebs: js.UndefOr[typings.awsSdk.autoscalingMod.Ebs] = js.undefined
   
   /**
     * Setting this value to true suppresses the specified device included in the block device mapping of the AMI. If NoDevice is true for the root device, instances might fail the EC2 health check. In that case, Amazon EC2 Auto Scaling launches replacement instances. If you specify NoDevice, you cannot specify Ebs.
     */
-  var NoDevice: js.UndefOr[typings.awsSdk.autoscalingMod.NoDevice] = js.native
+  var NoDevice: js.UndefOr[typings.awsSdk.autoscalingMod.NoDevice] = js.undefined
   
   /**
     * The name of the virtual device (for example, ephemeral0). You can specify either VirtualName or Ebs, but not both.
     */
-  var VirtualName: js.UndefOr[XmlStringMaxLen255] = js.native
+  var VirtualName: js.UndefOr[XmlStringMaxLen255] = js.undefined
 }
 object BlockDeviceMapping {
   

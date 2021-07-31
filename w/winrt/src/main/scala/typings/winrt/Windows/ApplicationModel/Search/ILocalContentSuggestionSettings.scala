@@ -4,19 +4,17 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Storage.StorageFolder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILocalContentSuggestionSettings extends StObject {
   
-  var aqsFilter: String = js.native
+  var aqsFilter: String
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var locations: IVector[StorageFolder] = js.native
+  var locations: IVector[StorageFolder]
   
-  var propertiesToMatch: IVector[String] = js.native
+  var propertiesToMatch: IVector[String]
 }
 object ILocalContentSuggestionSettings {
   

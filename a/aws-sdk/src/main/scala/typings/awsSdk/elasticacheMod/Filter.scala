@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
   /**
     * The property being filtered. For example, UserId.
     */
-  var Name: FilterName = js.native
+  var Name: FilterName
   
   /**
     * The property values to filter on. For example, "user-123".
     */
-  var Values: FilterValueList = js.native
+  var Values: FilterValueList
 }
 object Filter {
   

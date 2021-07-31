@@ -3,29 +3,27 @@ package typings.googleCloudStorage.fileMod
 import typings.googleCloudCommon.serviceObjectMod.Metadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateResumableUploadOptions extends StObject {
   
-  var configPath: js.UndefOr[String] = js.native
+  var configPath: js.UndefOr[String] = js.undefined
   
-  var metadata: js.UndefOr[Metadata] = js.native
+  var metadata: js.UndefOr[Metadata] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
-  var predefinedAcl: js.UndefOr[PredefinedAcl] = js.native
+  var predefinedAcl: js.UndefOr[PredefinedAcl] = js.undefined
   
-  var `private`: js.UndefOr[Boolean] = js.native
+  var `private`: js.UndefOr[Boolean] = js.undefined
   
-  var public: js.UndefOr[Boolean] = js.native
+  var public: js.UndefOr[Boolean] = js.undefined
   
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
 }
 object CreateResumableUploadOptions {
   

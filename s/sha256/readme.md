@@ -11,8 +11,8 @@ Compute SHA256 of bytes or strings.
 | Full name          | sha256 |
 | Keywords           | string, strings, sha256, bytes, cryptography |
 | # releases         | 0 |
-| # dependents       | 256 |
-| # downloads        | 1145678 |
+| # dependents       | 269 |
+| # downloads        | 1328489 |
 | # stars            | 9 |
 
 ## Links

@@ -3,22 +3,22 @@ package typings.interpret
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var extension: String = js.native
+    var `extension`: String
   }
   object Dictkey {
     
     @scala.inline
-    def apply(extension: String): Dictkey = {
-      val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any])
+    def apply(`extension`: String): Dictkey = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
@@ -30,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Extensions extends StObject {
     
-    var extensions: String = js.native
+    var extensions: String
   }
   object Extensions {
     

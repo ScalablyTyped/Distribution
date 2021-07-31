@@ -4,18 +4,19 @@ import typings.classValidator.validationOptionsMod.ValidationOptions
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validateIfMod {
   
-  @JSImport("class-validator/types/decorator/common/ValidateIf", "ValidateIf")
+  @JSImport("class-validator/types/decorator/common/ValidateIf", JSImport.Namespace)
   @js.native
-  def ValidateIf(condition: js.Function2[/* object */ js.Any, /* value */ js.Any, Boolean]): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/common/ValidateIf", "ValidateIf")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ValidateIf(condition: js.Function2[/* object */ js.Any, /* value */ js.Any, Boolean]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidateIf")(condition.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
   def ValidateIf(
     condition: js.Function2[/* object */ js.Any, /* value */ js.Any, Boolean],
     validationOptions: ValidationOptions
-  ): PropertyDecorator = js.native
+  ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateIf")(condition.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
 }

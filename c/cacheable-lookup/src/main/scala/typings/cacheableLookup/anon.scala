@@ -9,35 +9,33 @@ import typings.node.dnsMod.LookupOneOptions
 import typings.node.dnsMod.LookupOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined cacheable-lookup.cacheable-lookup.LookupOptions & {  all :true} */
-  @js.native
   trait LookupOptionsalltrue extends StObject {
     
     /**
     	 * When `true`, the callback returns all resolved addresses in an array. Otherwise, returns a single address.
     	 * @default false
     	 */
-    var all: js.UndefOr[Boolean] with `true` = js.native
+    var all: js.UndefOr[Boolean] & `true`
     
     /**
     	 * The record family. Must be `4` or `6`. IPv4 and IPv6 addresses are both returned by default.
     	 */
-    var family: js.UndefOr[IPFamily] = js.native
+    var family: js.UndefOr[IPFamily] = js.undefined
     
     /**
     	 * One or more supported getaddrinfo flags. Multiple flags may be passed by bitwise ORing their values.
     	 */
-    var hints: js.UndefOr[Double] = js.native
+    var hints: js.UndefOr[Double] = js.undefined
   }
   object LookupOptionsalltrue {
     
     @scala.inline
-    def apply(all: js.UndefOr[Boolean] with `true`): LookupOptionsalltrue = {
+    def apply(all: js.UndefOr[Boolean] & `true`): LookupOptionsalltrue = {
       val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any])
       __obj.asInstanceOf[LookupOptionsalltrue]
     }
@@ -46,7 +44,7 @@ object anon {
     implicit class LookupOptionsalltrueMutableBuilder[Self <: LookupOptionsalltrue] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAll(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      def setAll(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFamily(value: IPFamily): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])

@@ -2,25 +2,23 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Stores the list of events and times they occured for major events in job
   * execution.
   */
-@js.native
 trait SchemaTimestampEvent extends StObject {
   
   /**
     * String indicating the type of event
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The time this event occured.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
 }
 object SchemaTimestampEvent {
   

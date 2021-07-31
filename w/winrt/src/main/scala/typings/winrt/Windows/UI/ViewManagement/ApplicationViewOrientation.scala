@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait ApplicationViewOrientation extends StObject
 object ApplicationViewOrientation extends StObject {
   
   @js.native
-  sealed trait landscape extends ApplicationViewOrientation
+  sealed trait landscape
+    extends StObject
+       with ApplicationViewOrientation
   
   @js.native
-  sealed trait portrait extends ApplicationViewOrientation
+  sealed trait portrait
+    extends StObject
+       with ApplicationViewOrientation
 }

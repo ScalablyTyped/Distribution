@@ -2,40 +2,38 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Floor extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Border: ChartBorder = js.native
+  val Border: ChartBorder
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Fill: ChartFillFormat = js.native
+  val Fill: ChartFillFormat
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  val Interior: typings.activexWord.Word.Interior = js.native
+  val Interior: typings.activexWord.Word.Interior
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Paste(): Unit = js.native
+  def Paste(): Unit
   
-  var PictureType: js.Any = js.native
+  var PictureType: js.Any
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
   
-  var Thickness: Double = js.native
+  var Thickness: Double
   
   @JSName("Word.Floor_typekey")
-  var WordDotFloor_typekey: Floor = js.native
+  var WordDotFloor_typekey: Floor
 }
 object Floor {
   

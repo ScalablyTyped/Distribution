@@ -19,19 +19,17 @@ import typings.std.Date
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Client extends StObject {
     
-    var client: Double = js.native
+    var client: Double
     
-    var full: Double = js.native
+    var full: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Client {
     
@@ -55,10 +53,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CloseIcon extends StObject {
     
-    var closeIcon: String = js.native
+    var closeIcon: String
   }
   object CloseIcon {
     
@@ -76,12 +73,11 @@ object anon {
     }
   }
   
-  @js.native
   trait EndDate extends StObject {
     
-    var endDate: js.UndefOr[Date] = js.native
+    var endDate: js.UndefOr[Date] = js.undefined
     
-    var startDate: js.UndefOr[Date] = js.native
+    var startDate: js.UndefOr[Date] = js.undefined
   }
   object EndDate {
     
@@ -108,12 +104,11 @@ object anon {
     }
   }
   
-  @js.native
   trait FirstDate extends StObject {
     
-    var firstDate: Date = js.native
+    var firstDate: Date
     
-    var lastDate: Date = js.native
+    var lastDate: Date
   }
   object FirstDate {
     
@@ -134,18 +129,17 @@ object anon {
     }
   }
   
-  @js.native
   trait OnFinish extends StObject {
     
-    def onFinish(): Unit = js.native
+    def onFinish(): Unit
     
-    def onTouchCancel(): Unit = js.native
+    def onTouchCancel(): Unit
     
-    def onTouchEnd(): Unit = js.native
+    def onTouchEnd(): Unit
     
-    def onTouchMove(evt: TouchEvent[HTMLDivElement]): Unit = js.native
+    def onTouchMove(evt: TouchEvent[HTMLDivElement]): Unit
     
-    def onTouchStart(evt: TouchEvent[HTMLDivElement]): Unit = js.native
+    def onTouchStart(evt: TouchEvent[HTMLDivElement]): Unit
   }
   object OnFinish {
     
@@ -182,38 +176,37 @@ object anon {
   }
   
   /* Inlined std.Readonly<{  children :react.react.ReactNode | undefined}> & std.Readonly<rmc-calendar.rmc-calendar/lib/CalendarProps.default> */
-  @js.native
   trait ReadonlychildrenReactNode extends StObject {
     
-    val children: js.UndefOr[ReactNode] = js.native
+    val children: js.UndefOr[ReactNode] = js.undefined
     
-    val defaultDate: js.UndefOr[Date] = js.native
+    val defaultDate: js.UndefOr[Date] = js.undefined
     
-    val defaultTimeValue: js.UndefOr[Date] = js.native
+    val defaultTimeValue: js.UndefOr[Date] = js.undefined
     
-    val defaultValue: js.UndefOr[SelectDateType] = js.native
+    val defaultValue: js.UndefOr[SelectDateType] = js.undefined
     
-    val enterDirection: js.UndefOr[horizontal | vertical] = js.native
+    val enterDirection: js.UndefOr[horizontal | vertical] = js.undefined
     
-    val getDateExtra: js.UndefOr[js.Function1[/* date */ Date, ExtraData]] = js.native
+    val getDateExtra: js.UndefOr[js.Function1[/* date */ Date, ExtraData]] = js.undefined
     
-    val infiniteOpt: js.UndefOr[Boolean] = js.native
+    val infiniteOpt: js.UndefOr[Boolean] = js.undefined
     
-    val initalMonths: js.UndefOr[Double] = js.native
+    val initalMonths: js.UndefOr[Double] = js.undefined
     
-    val locale: js.UndefOr[Locale] = js.native
+    val locale: js.UndefOr[Locale] = js.undefined
     
-    val maxDate: js.UndefOr[Date] = js.native
+    val maxDate: js.UndefOr[Date] = js.undefined
     
-    val minDate: js.UndefOr[Date] = js.native
+    val minDate: js.UndefOr[Date] = js.undefined
     
-    val onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+    val onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    val onClear: js.UndefOr[js.Function0[Unit]] = js.native
+    val onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     val onConfirm: js.UndefOr[
         js.Function2[/* startDateTime */ js.UndefOr[Date], /* endDateTime */ js.UndefOr[Date], Unit]
-      ] = js.native
+      ] = js.undefined
     
     val onSelect: js.UndefOr[
         js.Function2[
@@ -221,38 +214,38 @@ object anon {
           /* state */ js.UndefOr[js.Tuple2[js.UndefOr[Date], js.UndefOr[Date]]], 
           SelectDateType | Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    val onSelectHasDisableDate: js.UndefOr[js.Function1[/* date */ js.Array[Date], Unit]] = js.native
+    val onSelectHasDisableDate: js.UndefOr[js.Function1[/* date */ js.Array[Date], Unit]] = js.undefined
     
-    val pickTime: js.UndefOr[Boolean] = js.native
+    val pickTime: js.UndefOr[Boolean] = js.undefined
     
-    val prefixCls: js.UndefOr[String] = js.native
+    val prefixCls: js.UndefOr[String] = js.undefined
     
-    val renderHeader: js.UndefOr[js.Function1[/* prop */ PropsType, ReactNode]] = js.native
+    val renderHeader: js.UndefOr[js.Function1[/* prop */ PropsType, ReactNode]] = js.undefined
     
     val renderShortcut: js.UndefOr[
         js.Function1[
           /* select */ js.Function2[/* startDate */ js.UndefOr[Date], /* endDate */ js.UndefOr[Date], Unit], 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
-    val rowSize: js.UndefOr[normal | xl] = js.native
+    val rowSize: js.UndefOr[normal | xl] = js.undefined
     
-    val showShortcut: js.UndefOr[Boolean] = js.native
+    val showShortcut: js.UndefOr[Boolean] = js.undefined
     
-    val style: js.UndefOr[CSSProperties] = js.native
+    val style: js.UndefOr[CSSProperties] = js.undefined
     
-    val timePickerPickerPrefixCls: js.UndefOr[String] = js.native
+    val timePickerPickerPrefixCls: js.UndefOr[String] = js.undefined
     
-    val timePickerPrefixCls: js.UndefOr[String] = js.native
+    val timePickerPrefixCls: js.UndefOr[String] = js.undefined
     
-    val title: js.UndefOr[String] = js.native
+    val title: js.UndefOr[String] = js.undefined
     
-    val `type`: js.UndefOr[one | range] = js.native
+    val `type`: js.UndefOr[one | range] = js.undefined
     
-    val visible: js.UndefOr[Boolean] = js.native
+    val visible: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlychildrenReactNode {
     
@@ -443,15 +436,16 @@ object anon {
   }
   
   @js.native
-  trait TypeofHeader extends Instantiable0[default] {
+  trait TypeofHeader
+    extends StObject
+       with Instantiable0[default] {
     
     var defaultProps: CloseIcon = js.native
   }
   
-  @js.native
   trait WeekComponents extends StObject {
     
-    var weekComponents: js.Array[ReactNode] = js.native
+    var weekComponents: js.Array[ReactNode]
   }
   object WeekComponents {
     

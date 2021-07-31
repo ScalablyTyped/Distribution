@@ -11,13 +11,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.XServiceDisplayName
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** offers hyphenation functionality. */
-@js.native
 trait Hyphenator
-  extends XHyphenator
+  extends StObject
+     with XHyphenator
      with XLinguServiceEventBroadcaster
      with XInitialization
      with XComponent
@@ -36,7 +35,7 @@ object Hyphenator {
     getServiceDisplayName: Locale => String,
     hasLocale: Locale => Boolean,
     hyphenate: (String, Locale, Double, PropertyValues) => XHyphenatedWord,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryAlternativeSpelling: (String, Locale, Double, PropertyValues) => XHyphenatedWord,
     queryInterface: `type` => js.Any,
     release: () => Unit,

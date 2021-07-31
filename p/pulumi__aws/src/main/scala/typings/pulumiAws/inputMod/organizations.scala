@@ -3,38 +3,36 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizations {
   
-  @js.native
   trait OrganizationAccount extends StObject {
     
     /**
       * ARN of the root
       */
-    var arn: js.UndefOr[Input[String]] = js.native
+    var arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Email of the account
       */
-    var email: js.UndefOr[Input[String]] = js.native
+    var email: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of the root
       */
-    var id: js.UndefOr[Input[String]] = js.native
+    var id: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the policy type
       */
-    var name: js.UndefOr[Input[String]] = js.native
+    var name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The status of the policy type as it relates to the associated root
       */
-    var status: js.UndefOr[Input[String]] = js.native
+    var status: js.UndefOr[Input[String]] = js.undefined
   }
   object OrganizationAccount {
     
@@ -79,33 +77,32 @@ object organizations {
     }
   }
   
-  @js.native
   trait OrganizationNonMasterAccount extends StObject {
     
     /**
       * ARN of the root
       */
-    var arn: js.UndefOr[Input[String]] = js.native
+    var arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Email of the account
       */
-    var email: js.UndefOr[Input[String]] = js.native
+    var email: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of the root
       */
-    var id: js.UndefOr[Input[String]] = js.native
+    var id: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the policy type
       */
-    var name: js.UndefOr[Input[String]] = js.native
+    var name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The status of the policy type as it relates to the associated root
       */
-    var status: js.UndefOr[Input[String]] = js.native
+    var status: js.UndefOr[Input[String]] = js.undefined
   }
   object OrganizationNonMasterAccount {
     
@@ -150,28 +147,27 @@ object organizations {
     }
   }
   
-  @js.native
   trait OrganizationRoot extends StObject {
     
     /**
       * ARN of the root
       */
-    var arn: js.UndefOr[Input[String]] = js.native
+    var arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of the root
       */
-    var id: js.UndefOr[Input[String]] = js.native
+    var id: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the policy type
       */
-    var name: js.UndefOr[Input[String]] = js.native
+    var name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of policy types enabled for this root. All elements have these attributes:
       */
-    var policyTypes: js.UndefOr[Input[js.Array[Input[OrganizationRootPolicyType]]]] = js.native
+    var policyTypes: js.UndefOr[Input[js.Array[Input[OrganizationRootPolicyType]]]] = js.undefined
   }
   object OrganizationRoot {
     
@@ -213,15 +209,14 @@ object organizations {
     }
   }
   
-  @js.native
   trait OrganizationRootPolicyType extends StObject {
     
     /**
       * The status of the policy type as it relates to the associated root
       */
-    var status: js.UndefOr[Input[String]] = js.native
+    var status: js.UndefOr[Input[String]] = js.undefined
     
-    var `type`: js.UndefOr[Input[String]] = js.native
+    var `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object OrganizationRootPolicyType {
     
@@ -248,28 +243,27 @@ object organizations {
     }
   }
   
-  @js.native
   trait OrganizationalUnitAccount extends StObject {
     
     /**
       * ARN of the organizational unit
       */
-    var arn: js.UndefOr[Input[String]] = js.native
+    var arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Email of the account
       */
-    var email: js.UndefOr[Input[String]] = js.native
+    var email: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of the organization unit
       */
-    var id: js.UndefOr[Input[String]] = js.native
+    var id: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name for the organizational unit
       */
-    var name: js.UndefOr[Input[String]] = js.native
+    var name: js.UndefOr[Input[String]] = js.undefined
   }
   object OrganizationalUnitAccount {
     

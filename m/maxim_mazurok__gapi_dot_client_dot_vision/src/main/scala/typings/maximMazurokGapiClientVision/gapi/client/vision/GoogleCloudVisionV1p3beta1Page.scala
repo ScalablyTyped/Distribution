@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p3beta1Page extends StObject {
   
   /** List of blocks of text, images etc on this page. */
-  var blocks: js.UndefOr[js.Array[GoogleCloudVisionV1p3beta1Block]] = js.native
+  var blocks: js.UndefOr[js.Array[GoogleCloudVisionV1p3beta1Block]] = js.undefined
   
   /** Confidence of the OCR results on the page. Range [0, 1]. */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /** Page height. For PDFs the unit is points. For images (including TIFFs) the unit is pixels. */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** Additional information detected on the page. */
-  var property: js.UndefOr[GoogleCloudVisionV1p3beta1TextAnnotationTextProperty] = js.native
+  var property: js.UndefOr[GoogleCloudVisionV1p3beta1TextAnnotationTextProperty] = js.undefined
   
   /** Page width. For PDFs the unit is points. For images (including TIFFs) the unit is pixels. */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudVisionV1p3beta1Page {
   

@@ -2,30 +2,29 @@ package typings.extjs.Ext.chart
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INumericAxis
-  extends typings.extjs.Ext.chart.axis.IAxis {
+  extends StObject
+     with typings.extjs.Ext.chart.axis.IAxis {
   
   /** [Config Option] (Boolean) */
-  var adjustMaximumByMajorUnit: js.UndefOr[Boolean] = js.native
+  var adjustMaximumByMajorUnit: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var adjustMinimumByMajorUnit: js.UndefOr[Boolean] = js.native
+  var adjustMinimumByMajorUnit: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var constrain: js.UndefOr[Boolean] = js.native
+  var constrain: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var decimals: js.UndefOr[Double] = js.native
+  var decimals: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var maximum: js.UndefOr[Double] = js.native
+  var maximum: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var minimum: js.UndefOr[Double] = js.native
+  var minimum: js.UndefOr[Double] = js.undefined
 }
 object INumericAxis {
   

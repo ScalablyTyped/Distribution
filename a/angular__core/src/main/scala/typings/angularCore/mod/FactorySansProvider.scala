@@ -2,23 +2,23 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FactorySansProvider extends InjectableProvider {
+trait FactorySansProvider
+  extends StObject
+     with InjectableProvider {
   
   /**
     * A list of `token`s to be resolved by the injector. The list of values is then
     * used as arguments to the `useFactory` function.
     */
-  var deps: js.UndefOr[js.Array[_]] = js.native
+  var deps: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * A function to invoke to create a value for this `token`. The function is invoked with
     * resolved values of `token`s in the `deps` field.
     */
-  var useFactory: js.Function = js.native
+  var useFactory: js.Function
 }
 object FactorySansProvider {
   
@@ -32,7 +32,7 @@ object FactorySansProvider {
   implicit class FactorySansProviderMutableBuilder[Self <: FactorySansProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDeps(value: js.Array[_]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)

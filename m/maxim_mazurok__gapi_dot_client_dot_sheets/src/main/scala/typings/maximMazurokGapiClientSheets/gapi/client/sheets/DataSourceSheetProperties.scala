@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSheetProperties extends StObject {
   
   /** The columns displayed on the sheet, corresponding to the values in RowData. */
-  var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.native
+  var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.undefined
   
   /** The data execution status. */
-  var dataExecutionStatus: js.UndefOr[DataExecutionStatus] = js.native
+  var dataExecutionStatus: js.UndefOr[DataExecutionStatus] = js.undefined
   
   /** ID of the DataSource the sheet is connected to. */
-  var dataSourceId: js.UndefOr[String] = js.native
+  var dataSourceId: js.UndefOr[String] = js.undefined
 }
 object DataSourceSheetProperties {
   

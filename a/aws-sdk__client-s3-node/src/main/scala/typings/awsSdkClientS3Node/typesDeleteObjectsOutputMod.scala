@@ -8,30 +8,29 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeleteObjectsOutputMod {
   
-  @js.native
   trait DeleteObjectsOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * _DeletedObjects shape
       */
-    var Deleted: js.UndefOr[js.Array[UnmarshalledDeletedObject]] = js.native
+    var Deleted: js.UndefOr[js.Array[UnmarshalledDeletedObject]] = js.undefined
     
     /**
       * _Errors shape
       */
-    var Errors: js.UndefOr[js.Array[UnmarshalledError]] = js.native
+    var Errors: js.UndefOr[js.Array[UnmarshalledError]] = js.undefined
     
     /**
       * <p>If present, indicates that the requester was successfully charged for the request.</p>
       */
-    var RequestCharged: js.UndefOr[requester_ | String] = js.native
+    var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
   }
   object DeleteObjectsOutput {
     

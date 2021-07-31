@@ -5,35 +5,34 @@ import typings.std.Date
 import typings.tablesorter.dateOptionsMod.DateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uidaterangeoptionsMod {
   
-  @js.native
   trait UIDateRangeOptions
-    extends DatepickerOptions
+    extends StObject
+       with DatepickerOptions
        with DateOptions {
     
     /**
       * The default `from`-value.
       */
-    var from: js.UndefOr[Date] = js.native
+    var from: js.UndefOr[Date] = js.undefined
     
     /**
       * The label of the "from"-input.
       */
-    var textFrom: js.UndefOr[String] = js.native
+    var textFrom: js.UndefOr[String] = js.undefined
     
     /**
       * The label of the "to"-input.
       */
-    var textTo: js.UndefOr[String] = js.native
+    var textTo: js.UndefOr[String] = js.undefined
     
     /**
       * The default `to`-value.
       */
-    var to: js.UndefOr[Date] = js.native
+    var to: js.UndefOr[Date] = js.undefined
   }
   object UIDateRangeOptions {
     

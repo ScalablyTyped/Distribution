@@ -2,7 +2,6 @@ package typings.officeJs.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,47 +21,61 @@ object EventType extends StObject {
     *
     */
   @js.native
-  sealed trait annotationAdded extends EventType
+  sealed trait annotationAdded
+    extends StObject
+       with EventType
   
   /**
     * AnnotationAdded represents the event an annotation has been updated in the document.
     *
     */
   @js.native
-  sealed trait annotationChanged extends EventType
+  sealed trait annotationChanged
+    extends StObject
+       with EventType
   
   /**
     * AnnotationAdded represents the event an annotation has been deleted from the document.
     *
     */
   @js.native
-  sealed trait annotationDeleted extends EventType
+  sealed trait annotationDeleted
+    extends StObject
+       with EventType
   
   /**
     * ContentControlAdded represents the event a content control has been added to the document.
     *
     */
   @js.native
-  sealed trait contentControlAdded extends EventType
+  sealed trait contentControlAdded
+    extends StObject
+       with EventType
   
   /**
     * ContentControlDataChanged represents the event that the data in the content control have been changed.
     *
     */
   @js.native
-  sealed trait contentControlDataChanged extends EventType
+  sealed trait contentControlDataChanged
+    extends StObject
+       with EventType
   
   /**
     * ContentControlDeleted represent the event that the content control has been deleted.
     *
     */
   @js.native
-  sealed trait contentControlDeleted extends EventType
+  sealed trait contentControlDeleted
+    extends StObject
+       with EventType
   
   /**
     * ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
     *
     */
   @js.native
-  sealed trait contentControlSelectionChanged extends EventType
+  sealed trait contentControlSelectionChanged
+    extends StObject
+       with EventType
 }

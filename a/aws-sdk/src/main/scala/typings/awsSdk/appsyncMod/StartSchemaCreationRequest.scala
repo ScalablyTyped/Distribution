@@ -2,21 +2,19 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartSchemaCreationRequest extends StObject {
   
   /**
     * The API ID.
     */
-  var apiId: String = js.native
+  var apiId: String
   
   /**
     * The schema definition, in GraphQL schema language format.
     */
-  var definition: _Blob = js.native
+  var definition: _Blob
 }
 object StartSchemaCreationRequest {
   

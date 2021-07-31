@@ -9,7 +9,6 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,9 +27,9 @@ trait TypeofBFSUtils extends StObject {
   def checkOptions(fsType: FileSystemConstructor, opts: js.Any, cb: BFSOneArgCallback): Unit = js.native
   
   def copyingSlice(buff: Buffer): Buffer = js.native
-  def copyingSlice(buff: Buffer, start: js.UndefOr[scala.Nothing], end: Double): Buffer = js.native
   def copyingSlice(buff: Buffer, start: Double): Buffer = js.native
   def copyingSlice(buff: Buffer, start: Double, end: Double): Buffer = js.native
+  def copyingSlice(buff: Buffer, start: Unit, end: Double): Buffer = js.native
   
   def deprecationMessage(print: Boolean, fsName: String, opts: js.Any): Unit = js.native
   

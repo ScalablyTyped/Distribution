@@ -2,26 +2,24 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HyperParameterRanges extends StObject {
   
   /**
     * The categorical hyperparameters and their ranges.
     */
-  var categoricalHyperParameterRanges: js.UndefOr[CategoricalHyperParameterRanges] = js.native
+  var categoricalHyperParameterRanges: js.UndefOr[CategoricalHyperParameterRanges] = js.undefined
   
   /**
     * The continuous hyperparameters and their ranges.
     */
-  var continuousHyperParameterRanges: js.UndefOr[ContinuousHyperParameterRanges] = js.native
+  var continuousHyperParameterRanges: js.UndefOr[ContinuousHyperParameterRanges] = js.undefined
   
   /**
     * The integer-valued hyperparameters and their ranges.
     */
-  var integerHyperParameterRanges: js.UndefOr[IntegerHyperParameterRanges] = js.native
+  var integerHyperParameterRanges: js.UndefOr[IntegerHyperParameterRanges] = js.undefined
 }
 object HyperParameterRanges {
   

@@ -4,36 +4,34 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AjaxNavigate extends StObject {
   
-  def add_navigate(handler: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
+  def add_navigate(handler: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit]): Unit
   
-  def convertMDSURLtoRegularURL(mdsPath: String): String = js.native
+  def convertMDSURLtoRegularURL(mdsPath: String): String
   
-  def getParam(paramName: String): String = js.native
+  def getParam(paramName: String): String
   
-  def getSavedFormAction(): String = js.native
+  def getSavedFormAction(): String
   
-  def get_hash(): String = js.native
+  def get_hash(): String
   
-  def get_href(): String = js.native
+  def get_href(): String
   
-  def get_search(): String = js.native
+  def get_search(): String
   
-  def remove_navigate(handler: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
+  def remove_navigate(handler: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit]): Unit
   
-  def submit(formToSubmit: HTMLFormElement): Unit = js.native
+  def submit(formToSubmit: HTMLFormElement): Unit
   
   def update(
     url: String,
     updateParts: StringDictionary[String | Double],
     fullNavigate: Boolean,
     anchorName: String
-  ): Unit = js.native
+  ): Unit
 }
 object AjaxNavigate {
   

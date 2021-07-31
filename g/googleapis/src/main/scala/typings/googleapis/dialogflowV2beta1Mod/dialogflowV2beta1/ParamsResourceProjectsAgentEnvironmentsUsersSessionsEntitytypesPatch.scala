@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsAgentEnvironmentsUsersSessionsEntitytypesPatch extends StandardParameters {
+trait ParamsResourceProjectsAgentEnvironmentsUsersSessionsEntitytypesPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The unique identifier of this session entity type. Format:
@@ -28,17 +28,17 @@ trait ParamsResourceProjectsAgentEnvironmentsUsersSessionsEntitytypesPatch exten
     * be the display name of an existing entity type in the same agent that
     * will be overridden or supplemented.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = js.native
+  var requestBody: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = js.undefined
   
   /**
     * Optional. The mask to control which fields get updated.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsAgentEnvironmentsUsersSessionsEntitytypesPatch {
   

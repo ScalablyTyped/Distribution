@@ -35,7 +35,6 @@ import typings.semanticUiReact.semanticUiReactStrings.youtube
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonButtonMod {
@@ -70,62 +69,63 @@ object buttonButtonMod {
   
   type ButtonProps = StrictButtonProps
   
-  @js.native
-  trait StrictButtonProps extends ButtonHTMLAttributes[HTMLButtonElement] {
+  trait StrictButtonProps
+    extends StObject
+       with ButtonHTMLAttributes[HTMLButtonElement] {
     
     /** A button can show it is currently the active user selection. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** A button can animate to show hidden content. */
-    var animated: js.UndefOr[Boolean | fade | vertical] = js.native
+    var animated: js.UndefOr[Boolean | fade | vertical] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A button can be attached to other content. */
-    var attached: js.UndefOr[Boolean | left | right | top | bottom] = js.native
+    var attached: js.UndefOr[Boolean | left | right | top | bottom] = js.undefined
     
     /** A basic button is less pronounced. */
-    var basic: js.UndefOr[Boolean] = js.native
+    var basic: js.UndefOr[Boolean] = js.undefined
     
     /** A button can be circular. */
-    var circular: js.UndefOr[Boolean] = js.native
+    var circular: js.UndefOr[Boolean] = js.undefined
     
     /** A button can have different colors. */
     @JSName("color")
     var color_StrictButtonProps: js.UndefOr[
         SemanticCOLORS | facebook | (`google plus`) | vk | twitter | linkedin | instagram | youtube
-      ] = js.native
+      ] = js.undefined
     
     /** A button can reduce its padding to fit into tighter spaces. */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A button can be aligned to the left or right of its container. */
-    var floated: js.UndefOr[SemanticFLOATS] = js.native
+    var floated: js.UndefOr[SemanticFLOATS] = js.undefined
     
     /** A button can take the width of its container. */
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
     
     /** Add an Icon by name, props object, or pass an <Icon />. */
-    var icon: js.UndefOr[Boolean | SemanticShorthandItem[IconProps]] = js.native
+    var icon: js.UndefOr[Boolean | SemanticShorthandItem[IconProps]] = js.undefined
     
     /** A button can be formatted to appear on dark backgrounds. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Add a Label by text, props object, or pass a <Label />. */
-    var label: js.UndefOr[SemanticShorthandItem[LabelProps]] = js.native
+    var label: js.UndefOr[SemanticShorthandItem[LabelProps]] = js.undefined
     
     /** A labeled button can format a Label or Icon to appear on the left or right. */
-    var labelPosition: js.UndefOr[right | left] = js.native
+    var labelPosition: js.UndefOr[right | left] = js.undefined
     
     /** A button can show a loading indicator. */
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
     /** A button can hint towards a negative consequence. */
-    var negative: js.UndefOr[Boolean] = js.native
+    var negative: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Called after user's click.
@@ -139,26 +139,26 @@ object buttonButtonMod {
           /* data */ ButtonProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** A button can hint towards a positive consequence. */
-    var positive: js.UndefOr[Boolean] = js.native
+    var positive: js.UndefOr[Boolean] = js.undefined
     
     /** A button can be formatted to show different levels of emphasis. */
-    var primary: js.UndefOr[Boolean] = js.native
+    var primary: js.UndefOr[Boolean] = js.undefined
     
     /** A button can be formatted to show different levels of emphasis. */
-    var secondary: js.UndefOr[Boolean] = js.native
+    var secondary: js.UndefOr[Boolean] = js.undefined
     
     /** A button can have different sizes. */
-    var size: js.UndefOr[SemanticSIZES] = js.native
+    var size: js.UndefOr[SemanticSIZES] = js.undefined
     
     /** A button can receive focus. */
     @JSName("tabIndex")
-    var tabIndex_StrictButtonProps: js.UndefOr[Double | String] = js.native
+    var tabIndex_StrictButtonProps: js.UndefOr[Double | String] = js.undefined
     
     /** A button can be formatted to toggle on and off. */
-    var toggle: js.UndefOr[Boolean] = js.native
+    var toggle: js.UndefOr[Boolean] = js.undefined
   }
   object StrictButtonProps {
     

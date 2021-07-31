@@ -7,39 +7,37 @@ import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadingInterfaceMod {
   
-  @js.native
   trait LoadingOptions extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var backdropDismiss: js.UndefOr[Boolean] = js.native
+    var backdropDismiss: js.UndefOr[Boolean] = js.undefined
     
-    var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var keyboardClose: js.UndefOr[Boolean] = js.native
+    var keyboardClose: js.UndefOr[Boolean] = js.undefined
     
-    var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var message: js.UndefOr[String | IonicSafeString] = js.native
+    var message: js.UndefOr[String | IonicSafeString] = js.undefined
     
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
     
-    var showBackdrop: js.UndefOr[Boolean] = js.native
+    var showBackdrop: js.UndefOr[Boolean] = js.undefined
     
-    var spinner: js.UndefOr[SpinnerTypes | Null] = js.native
+    var spinner: js.UndefOr[SpinnerTypes | Null] = js.undefined
     
-    var translucent: js.UndefOr[Boolean] = js.native
+    var translucent: js.UndefOr[Boolean] = js.undefined
   }
   object LoadingOptions {
     

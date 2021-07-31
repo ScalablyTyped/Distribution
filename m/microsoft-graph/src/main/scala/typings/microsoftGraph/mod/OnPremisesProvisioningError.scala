@@ -2,26 +2,24 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnPremisesProvisioningError extends StObject {
   
   /**
     * Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: PropertyConflict
     * - indicates a property value is not unique. Other objects contain the same value for the property.
     */
-  var category: js.UndefOr[NullableOption[String]] = js.native
+  var category: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The date and time at which the error occurred.
-  var occurredDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var occurredDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of the directory property causing the error. Current possible values: UserPrincipalName or ProxyAddress
-  var propertyCausingError: js.UndefOr[NullableOption[String]] = js.native
+  var propertyCausingError: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Value of the property causing the error.
-  var value: js.UndefOr[NullableOption[String]] = js.native
+  var value: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object OnPremisesProvisioningError {
   

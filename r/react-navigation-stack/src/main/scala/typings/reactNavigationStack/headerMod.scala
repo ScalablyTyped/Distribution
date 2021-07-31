@@ -5,7 +5,6 @@ import typings.react.mod.NamedExoticComponent
 import typings.reactNavigationStack.vendorTypesMod.StackHeaderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerMod extends Shortcut {

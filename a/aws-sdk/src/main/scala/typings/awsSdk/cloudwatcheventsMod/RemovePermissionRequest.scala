@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemovePermissionRequest extends StObject {
   
   /**
     * The name of the event bus to revoke permissions for. If you omit this, the default event bus is used.
     */
-  var EventBusName: js.UndefOr[NonPartnerEventBusName] = js.native
+  var EventBusName: js.UndefOr[NonPartnerEventBusName] = js.undefined
   
   /**
     * Specifies whether to remove all permissions.
     */
-  var RemoveAllPermissions: js.UndefOr[Boolean] = js.native
+  var RemoveAllPermissions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The statement ID corresponding to the account that is no longer allowed to put events to the default event bus.
     */
-  var StatementId: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.StatementId] = js.native
+  var StatementId: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.StatementId] = js.undefined
 }
 object RemovePermissionRequest {
   

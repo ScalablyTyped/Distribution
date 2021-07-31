@@ -3,20 +3,23 @@ package typings.coreDecorators
 import typings.std.Console
 import typings.std.MethodDecorator
 import typings.std.PropertyDecorator
+import typings.std.TypedPropertyDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("core-decorators", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("core-decorators", "autobind")
   @js.native
   val autobind: js.Function = js.native
   
-  @JSImport("core-decorators", "decorate")
-  @js.native
-  def decorate(func: js.Function, args: js.Any*): MethodDecorator = js.native
+  @scala.inline
+  def decorate(func: js.Function, args: js.Any*): MethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[MethodDecorator]
   
   @JSImport("core-decorators", "deprecate")
   @js.native
@@ -42,6 +45,10 @@ object mod {
   @js.native
   val nonenumerable: PropertyOrMethodDecorator = js.native
   
+  @JSImport("core-decorators", "override")
+  @js.native
+  val `override`: MethodDecorator = js.native
+  
   @JSImport("core-decorators", "readonly")
   @js.native
   val readonly: PropertyOrMethodDecorator = js.native
@@ -50,17 +57,14 @@ object mod {
   @js.native
   val suppressWarnings: MethodDecorator = js.native
   
-  @JSImport("core-decorators", "time")
-  @js.native
-  def time(label: String): MethodDecorator = js.native
-  @JSImport("core-decorators", "time")
-  @js.native
-  def time(label: String, console: Console): MethodDecorator = js.native
+  @scala.inline
+  def time(label: String): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(label.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
+  @scala.inline
+  def time(label: String, console: Console): MethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("time")(label.asInstanceOf[js.Any], console.asInstanceOf[js.Any])).asInstanceOf[MethodDecorator]
   
-  @js.native
   trait DeprecateOption extends StObject {
     
-    var url: String = js.native
+    var url: String
   }
   object DeprecateOption {
     
@@ -82,21 +86,26 @@ object mod {
   trait Deprecate_ extends MethodDecorator {
     
     def apply(): MethodDecorator = js.native
-    def apply(message: js.UndefOr[scala.Nothing], option: DeprecateOption): MethodDecorator = js.native
     def apply(message: String): MethodDecorator = js.native
     def apply(message: String, option: DeprecateOption): MethodDecorator = js.native
+    def apply(message: Unit, option: DeprecateOption): MethodDecorator = js.native
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - js.Function because Already inherited
-  - typings.std.PropertyDecorator because var conflicts: length. Inlined  */ @js.native
-  trait PropertyOrMethodDecorator extends MethodDecorator {
+  @js.native
+  trait PropertyOrMethodDecorator
+    extends MethodDecorator
+       with PropertyDecorator {
     
     def apply(target: js.Object, propertyKey: String): Unit = js.native
     def apply(target: js.Object, propertyKey: js.Symbol): Unit = js.native
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: /* target */ js.Object, arg2: /* propertyKey */ String | js.Symbol): Unit = js.native
+    /* InferMemberOverrides */
+    override def apply(
+      arg1: /* target */ js.Object,
+      arg2: /* propertyKey */ String | js.Symbol,
+      arg3: /* descriptor */ TypedPropertyDescriptor[js.Any]
+    ): TypedPropertyDescriptor[js.Any] | Unit = js.native
   }
-  
-  @JSImport("core-decorators", "override")
-  @js.native
-  val `override`: MethodDecorator = js.native
 }

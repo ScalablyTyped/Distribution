@@ -3,17 +3,15 @@ package typings.reactNativeModals
 import typings.reactNativeModals.mod.SlideFromTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AnimationDuration extends StObject {
     
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
-    var toValue: js.UndefOr[Double] = js.native
+    var toValue: js.UndefOr[Double] = js.undefined
   }
   object AnimationDuration {
     
@@ -40,16 +38,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Height {
     
@@ -76,12 +73,11 @@ object anon {
     }
   }
   
-  @js.native
   trait SlideFrom extends StObject {
     
-    var slideFrom: js.UndefOr[SlideFromTypes] = js.native
+    var slideFrom: js.UndefOr[SlideFromTypes] = js.undefined
     
-    var toValue: js.UndefOr[Double] = js.native
+    var toValue: js.UndefOr[Double] = js.undefined
   }
   object SlideFrom {
     
@@ -108,12 +104,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Width extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Width {
     
@@ -134,12 +129,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

@@ -2,31 +2,29 @@ package typings.bootstrapFilestyle
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilestyleOptions extends StObject {
   
-  var badge: js.UndefOr[Boolean] = js.native
+  var badge: js.UndefOr[Boolean] = js.undefined
   
-  var buttonBefore: js.UndefOr[Boolean] = js.native
+  var buttonBefore: js.UndefOr[Boolean] = js.undefined
   
-  var buttonName: js.UndefOr[String] = js.native
+  var buttonName: js.UndefOr[String] = js.undefined
   
-  var buttonText: js.UndefOr[String] = js.native
+  var buttonText: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[Boolean] = js.native
+  var icon: js.UndefOr[Boolean] = js.undefined
   
-  var iconName: js.UndefOr[String] = js.native
+  var iconName: js.UndefOr[String] = js.undefined
   
-  var input: js.UndefOr[Boolean] = js.native
+  var input: js.UndefOr[Boolean] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
 }
 object FilestyleOptions {
   

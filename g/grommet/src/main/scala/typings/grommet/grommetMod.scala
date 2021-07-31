@@ -14,7 +14,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object grommetMod {
@@ -24,43 +23,42 @@ object grommetMod {
   @js.native
   class Grommet protected ()
     extends Component[
-          GrommetProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          GrommetProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: GrommetProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: GrommetProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: GrommetProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: GrommetProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet/components/Grommet", "Grommet")
   @js.native
   val Grommet: ComponentClass[
-    GrommetProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    GrommetProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
-  @js.native
   trait GrommetProps extends StObject {
     
-    var background: js.UndefOr[BackgroundType] = js.native
+    var background: js.UndefOr[BackgroundType] = js.undefined
     
-    var containerTarget: js.UndefOr[HTMLElement] = js.native
+    var containerTarget: js.UndefOr[HTMLElement] = js.undefined
     
-    var cssVars: js.UndefOr[Boolean] = js.native
+    var cssVars: js.UndefOr[Boolean] = js.undefined
     
-    var dir: js.UndefOr[rtl] = js.native
+    var dir: js.UndefOr[rtl] = js.undefined
     
-    var full: js.UndefOr[Boolean] = js.native
+    var full: js.UndefOr[Boolean] = js.undefined
     
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[ThemeType] = js.native
+    var theme: js.UndefOr[ThemeType] = js.undefined
     
-    var themeMode: js.UndefOr[dark | light] = js.native
+    var themeMode: js.UndefOr[dark | light] = js.undefined
     
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
   }
   object GrommetProps {
     

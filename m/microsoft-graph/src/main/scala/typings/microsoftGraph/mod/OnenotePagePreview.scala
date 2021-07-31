@@ -2,15 +2,13 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnenotePagePreview extends StObject {
   
-  var links: js.UndefOr[NullableOption[OnenotePagePreviewLinks]] = js.native
+  var links: js.UndefOr[NullableOption[OnenotePagePreviewLinks]] = js.undefined
   
-  var previewText: js.UndefOr[NullableOption[String]] = js.native
+  var previewText: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object OnenotePagePreview {
   

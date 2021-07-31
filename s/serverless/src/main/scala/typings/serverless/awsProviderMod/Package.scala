@@ -2,21 +2,19 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Package extends StObject {
   
-  var artifact: js.UndefOr[String] = js.native
+  var artifact: js.UndefOr[String] = js.undefined
   
-  var exclude: js.UndefOr[js.Array[String]] = js.native
+  var exclude: js.UndefOr[js.Array[String]] = js.undefined
   
-  var excludeDevDependencies: js.UndefOr[Boolean] = js.native
+  var excludeDevDependencies: js.UndefOr[Boolean] = js.undefined
   
-  var include: js.UndefOr[js.Array[String]] = js.native
+  var include: js.UndefOr[js.Array[String]] = js.undefined
   
-  var individually: js.UndefOr[Boolean] = js.native
+  var individually: js.UndefOr[Boolean] = js.undefined
 }
 object Package {
   

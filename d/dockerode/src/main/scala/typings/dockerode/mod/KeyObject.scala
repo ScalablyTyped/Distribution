@@ -3,15 +3,13 @@ package typings.dockerode.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyObject extends StObject {
   
-  var passphrase: js.UndefOr[String] = js.native
+  var passphrase: js.UndefOr[String] = js.undefined
   
-  var pem: String | Buffer = js.native
+  var pem: String | Buffer
 }
 object KeyObject {
   

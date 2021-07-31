@@ -2,15 +2,13 @@ package typings.intercomClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Segmentid extends StObject {
   
-  var segment_id: js.UndefOr[String] = js.native
+  var segment_id: js.UndefOr[String] = js.undefined
   
-  var tag_id: js.UndefOr[String] = js.native
+  var tag_id: js.UndefOr[String] = js.undefined
 }
 object Segmentid {
   

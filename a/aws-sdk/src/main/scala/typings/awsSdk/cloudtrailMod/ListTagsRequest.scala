@@ -2,21 +2,19 @@ package typings.awsSdk.cloudtrailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsRequest extends StObject {
   
   /**
     * Reserved for future use.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies a list of trail ARNs whose tags will be listed. The list has a limit of 20 ARNs. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
     */
-  var ResourceIdList: typings.awsSdk.cloudtrailMod.ResourceIdList = js.native
+  var ResourceIdList: typings.awsSdk.cloudtrailMod.ResourceIdList
 }
 object ListTagsRequest {
   

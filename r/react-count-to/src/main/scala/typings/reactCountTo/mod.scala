@@ -4,7 +4,6 @@ import typings.react.mod.PureComponent
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,28 +13,27 @@ object mod {
   class ^ ()
     extends PureComponent[Props, js.Object, js.Any]
   
-  @js.native
   trait Props extends StObject {
     
-    var children: js.UndefOr[js.Function1[/* value */ Double, ReactElement]] = js.native
+    var children: js.UndefOr[js.Function1[/* value */ Double, ReactElement]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var digits: js.UndefOr[Double] = js.native
+    var digits: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* progress */ Double, Double]] = js.native
+    var easing: js.UndefOr[js.Function1[/* progress */ Double, Double]] = js.undefined
     
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
-    var onComplete: js.UndefOr[js.Function0[Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var speed: Double = js.native
+    var speed: Double
     
-    var tagName: js.UndefOr[String] = js.native
+    var tagName: js.UndefOr[String] = js.undefined
     
-    var to: Double = js.native
+    var to: Double
   }
   object Props {
     

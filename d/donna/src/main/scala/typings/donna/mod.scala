@@ -5,23 +5,24 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.donna.mod.DonnaTypes.Metadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("donna", "generateMetadata")
+  @JSImport("donna", JSImport.Namespace)
   @js.native
-  def generateMetadata(modules: js.Array[String]): Metadata = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def generateMetadata(modules: js.Array[String]): Metadata = ^.asInstanceOf[js.Dynamic].applyDynamic("generateMetadata")(modules.asInstanceOf[js.Any]).asInstanceOf[Metadata]
   
   object DonnaTypes {
     
-    @js.native
     trait File extends StObject {
       
-      var exports: js.Any = js.native
+      var exports: js.Any
       
-      var objects: NumberDictionary[Line] = js.native
+      var objects: NumberDictionary[Line]
     }
     object File {
       
@@ -44,10 +45,9 @@ object mod {
     
     type Line = NumberDictionary[Object]
     
-    @js.native
     trait Metadata extends StObject {
       
-      var files: StringDictionary[File] = js.native
+      var files: StringDictionary[File]
     }
     object Metadata {
       
@@ -65,24 +65,23 @@ object mod {
       }
     }
     
-    @js.native
     trait Object extends StObject {
       
-      var bindingType: String = js.native
+      var bindingType: String
       
-      var classProperties: js.UndefOr[js.Array[_]] = js.native
+      var classProperties: js.UndefOr[js.Array[js.Any]] = js.undefined
       
-      var doc: js.UndefOr[String] = js.native
+      var doc: js.UndefOr[String] = js.undefined
       
-      var name: String = js.native
+      var name: String
       
-      var paramNames: js.UndefOr[js.Array[String]] = js.native
+      var paramNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var prototypeProperties: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+      var prototypeProperties: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
       
-      var range: js.Array[js.Array[Double]] = js.native
+      var range: js.Array[js.Array[Double]]
       
-      var `type`: String = js.native
+      var `type`: String
     }
     object Object {
       
@@ -100,7 +99,7 @@ object mod {
         def setBindingType(value: String): Self = StObject.set(x, "bindingType", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setClassProperties(value: js.Array[_]): Self = StObject.set(x, "classProperties", value.asInstanceOf[js.Any])
+        def setClassProperties(value: js.Array[js.Any]): Self = StObject.set(x, "classProperties", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setClassPropertiesUndefined: Self = StObject.set(x, "classProperties", js.undefined)

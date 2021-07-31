@@ -2,16 +2,14 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceTags extends StObject {
   
   /**
     * Metadata to assign to AppConfig resources. Tags help organize and categorize your AppConfig resources. Each tag consists of a key and an optional value, both of which you define.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object ResourceTags {
   

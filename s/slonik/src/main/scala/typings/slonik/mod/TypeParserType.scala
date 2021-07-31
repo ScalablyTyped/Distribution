@@ -2,18 +2,16 @@ package typings.slonik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeParserType[T] extends StObject {
   
   /**
     * Value of "pg_type"."typname" (e.g. "int8", "timestamp", "timestamptz")
     */
-  var name: String = js.native
+  var name: String
   
-  def parse(value: String): T = js.native
+  def parse(value: String): T
 }
 object TypeParserType {
   
@@ -24,7 +22,7 @@ object TypeParserType {
   }
   
   @scala.inline
-  implicit class TypeParserTypeMutableBuilder[Self <: TypeParserType[_], T] (val x: Self with TypeParserType[T]) extends AnyVal {
+  implicit class TypeParserTypeMutableBuilder[Self <: TypeParserType[?], T] (val x: Self & TypeParserType[T]) extends AnyVal {
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

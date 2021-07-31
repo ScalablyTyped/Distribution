@@ -2,13 +2,11 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstallabilityErrorsResponse extends StObject {
   
-  var installabilityErrors: js.Array[InstallabilityError] = js.native
+  var installabilityErrors: js.Array[InstallabilityError]
 }
 object GetInstallabilityErrorsResponse {
   

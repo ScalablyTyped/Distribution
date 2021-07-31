@@ -10,9 +10,9 @@ React Lazy Logviewer
 | ------------------ | :-------------: |
 | Full name          | react-lazylog |
 | Keywords           | react, log, viewer, logviewer, lazy, lazylog |
-| # releases         | 21 |
-| # dependents       | 7 |
-| # downloads        | 163616 |
+| # releases         | 20 |
+| # dependents       | 10 |
+| # downloads        | 335643 |
 | # stars            | 1 |
 
 ## Links

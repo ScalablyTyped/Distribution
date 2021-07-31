@@ -3,15 +3,13 @@ package typings.codemirror.anon
 import typings.codemirror.mod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FromTo extends StObject {
   
-  var from: Position | Double = js.native
+  var from: Position | Double
   
-  var to: Position | Double = js.native
+  var to: Position | Double
 }
 object FromTo {
   

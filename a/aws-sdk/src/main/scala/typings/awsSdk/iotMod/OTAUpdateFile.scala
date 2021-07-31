@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OTAUpdateFile extends StObject {
   
   /**
     * A list of name/attribute pairs.
     */
-  var attributes: js.UndefOr[AttributesMap] = js.native
+  var attributes: js.UndefOr[AttributesMap] = js.undefined
   
   /**
     * The code signing method of the file.
     */
-  var codeSigning: js.UndefOr[CodeSigning] = js.native
+  var codeSigning: js.UndefOr[CodeSigning] = js.undefined
   
   /**
     * The location of the updated firmware.
     */
-  var fileLocation: js.UndefOr[FileLocation] = js.native
+  var fileLocation: js.UndefOr[FileLocation] = js.undefined
   
   /**
     * The name of the file.
     */
-  var fileName: js.UndefOr[FileName] = js.native
+  var fileName: js.UndefOr[FileName] = js.undefined
   
   /**
     * The file version.
     */
-  var fileVersion: js.UndefOr[OTAUpdateFileVersion] = js.native
+  var fileVersion: js.UndefOr[OTAUpdateFileVersion] = js.undefined
 }
 object OTAUpdateFile {
   

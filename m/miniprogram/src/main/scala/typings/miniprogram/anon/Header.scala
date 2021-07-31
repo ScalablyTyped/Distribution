@@ -2,17 +2,15 @@ package typings.miniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Header extends StObject {
   
-  var data: String = js.native
+  var data: String
   
-  var header: js.Any = js.native
+  var header: js.Any
   
-  var statusCode: String = js.native
+  var statusCode: String
 }
 object Header {
   

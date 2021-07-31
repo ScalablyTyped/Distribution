@@ -10,9 +10,9 @@ The primary entrypoint to the Firebase JS SDK
 | ------------------ | :-------------: |
 | Full name          | @firebase/app |
 | Keywords           | - |
-| # releases         | 1205 |
-| # dependents       | 48 |
-| # downloads        | 37893416 |
+| # releases         | 1383 |
+| # dependents       | 55 |
+| # downloads        | 41734763 |
 | # stars            | 1 |
 
 ## Links

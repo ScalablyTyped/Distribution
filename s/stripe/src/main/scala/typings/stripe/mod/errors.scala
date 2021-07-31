@@ -6,7 +6,6 @@ import typings.stripe.mod.paymentMethods.IPaymentMethod
 import typings.stripe.mod.setupIntents.ISetupIntent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,15 @@ object errors {
   @JSImport("stripe", "errors._Error")
   @js.native
   class Error ()
-    extends typings.std.Error
+    extends StObject
+       with typings.std.Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("stripe", "errors.StripeAPIError")
   @js.native
@@ -94,10 +101,13 @@ object errors {
   }
   object StripeError {
     
-    /* static member */
-    @JSImport("stripe", "errors.StripeError.populate")
+    @JSImport("stripe", "errors.StripeError")
     @js.native
-    def populate(`type`: RawType): StripeError = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def populate(`type`: RawType): StripeError = ^.asInstanceOf[js.Dynamic].applyDynamic("populate")(`type`.asInstanceOf[js.Any]).asInstanceOf[StripeError]
   }
   
   @JSImport("stripe", "errors.StripeIdempotencyError")

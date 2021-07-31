@@ -2,23 +2,23 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChartAxisLabelClickEvent extends ChartEvent {
+trait ChartAxisLabelClickEvent
+  extends StObject
+     with ChartEvent {
   
-  var axis: js.UndefOr[js.Any] = js.native
+  var axis: js.UndefOr[js.Any] = js.undefined
   
-  var dataItem: js.UndefOr[js.Any] = js.native
+  var dataItem: js.UndefOr[js.Any] = js.undefined
   
-  var element: js.UndefOr[js.Any] = js.native
+  var element: js.UndefOr[js.Any] = js.undefined
   
-  var index: js.UndefOr[js.Any] = js.native
+  var index: js.UndefOr[js.Any] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object ChartAxisLabelClickEvent {
   

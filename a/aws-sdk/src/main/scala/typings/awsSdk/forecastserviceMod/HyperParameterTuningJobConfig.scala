@@ -2,16 +2,14 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HyperParameterTuningJobConfig extends StObject {
   
   /**
     * Specifies the ranges of valid values for the hyperparameters.
     */
-  var ParameterRanges: js.UndefOr[typings.awsSdk.forecastserviceMod.ParameterRanges] = js.native
+  var ParameterRanges: js.UndefOr[typings.awsSdk.forecastserviceMod.ParameterRanges] = js.undefined
 }
 object HyperParameterTuningJobConfig {
   

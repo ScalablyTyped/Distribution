@@ -2,25 +2,23 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitTooltipOptions extends StObject {
   
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
-  var cls: js.UndefOr[String] = js.native
+  var cls: js.UndefOr[String] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[Double | Boolean] = js.native
+  var offset: js.UndefOr[Double | Boolean] = js.undefined
   
-  var pos: js.UndefOr[String] = js.native
+  var pos: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object UIkitTooltipOptions {
   

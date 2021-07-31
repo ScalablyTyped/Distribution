@@ -2,31 +2,29 @@ package typings.xrm.Xrm.Controls
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for an entity's form selector item.
   */
-@js.native
 trait FormItem extends StObject {
   
   /**
     * Gets the unique identifier of the form.
     * @returns The identifier, in Guid format.
     */
-  def getId(): String = js.native
+  def getId(): String
   
   /**
     * Gets the label for the form.
     * @returns The label.
     */
-  def getLabel(): String = js.native
+  def getLabel(): String
   
   /**
     * Navigates the user to this form.
     */
-  def navigate(): Unit = js.native
+  def navigate(): Unit
 }
 object FormItem {
   

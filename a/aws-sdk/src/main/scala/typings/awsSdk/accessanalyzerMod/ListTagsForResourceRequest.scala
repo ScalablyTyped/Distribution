@@ -2,16 +2,14 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * The ARN of the resource to retrieve tags from.
     */
-  var resourceArn: String = js.native
+  var resourceArn: String
 }
 object ListTagsForResourceRequest {
   

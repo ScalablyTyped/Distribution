@@ -17,20 +17,22 @@ import typings.tablesorter.storageTypeMod.StorageType
 import typings.tablesorter.stringSortingMod.StringSorting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tablesorterStrings {
   
   @js.native
   sealed trait default
-    extends ColumnFilter
+    extends StObject
+       with ColumnFilter
        with CoreTheme
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait a extends RelativeSorting
+  sealed trait a
+    extends StObject
+       with RelativeSorting
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   
@@ -50,7 +52,9 @@ object tablesorterStrings {
   def altKey: altKey = "altKey".asInstanceOf[altKey]
   
   @js.native
-  sealed trait appendCache extends ParameterlessTriggerNameMap
+  sealed trait appendCache
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def appendCache: appendCache = "appendCache".asInstanceOf[appendCache]
   
@@ -60,12 +64,16 @@ object tablesorterStrings {
   def applyWidgetId: applyWidgetId = "applyWidgetId".asInstanceOf[applyWidgetId]
   
   @js.native
-  sealed trait applyWidgets extends ParameterlessTriggerNameMap
+  sealed trait applyWidgets
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def applyWidgets: applyWidgets = "applyWidgets".asInstanceOf[applyWidgets]
   
   @js.native
-  sealed trait asc extends SortOrder
+  sealed trait asc
+    extends StObject
+       with SortOrder
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   
@@ -75,23 +83,30 @@ object tablesorterStrings {
   def basic: basic = "basic".asInstanceOf[basic]
   
   @js.native
-  sealed trait blackice extends CoreTheme
+  sealed trait blackice
+    extends StObject
+       with CoreTheme
   @scala.inline
   def blackice: blackice = "blackice".asInstanceOf[blackice]
   
   @js.native
-  sealed trait blue extends CoreTheme
+  sealed trait blue
+    extends StObject
+       with CoreTheme
   @scala.inline
   def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
-  sealed trait bootstrap extends CoreTheme
+  sealed trait bootstrap
+    extends StObject
+       with CoreTheme
   @scala.inline
   def bootstrap: bootstrap = "bootstrap".asInstanceOf[bootstrap]
   
   @js.native
   sealed trait bottom
-    extends EmptySorting
+    extends StObject
+       with EmptySorting
        with StringSorting
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
@@ -107,7 +122,9 @@ object tablesorterStrings {
   def buttons: buttons = "buttons".asInstanceOf[buttons]
   
   @js.native
-  sealed trait c extends StorageType
+  sealed trait c
+    extends StObject
+       with StorageType
   @scala.inline
   def c: c = "c".asInstanceOf[c]
   
@@ -128,13 +145,16 @@ object tablesorterStrings {
   
   @js.native
   sealed trait d
-    extends RelativeSorting
+    extends StObject
+       with RelativeSorting
        with StorageType
   @scala.inline
   def d: d = "d".asInstanceOf[d]
   
   @js.native
-  sealed trait dark extends CoreTheme
+  sealed trait dark
+    extends StObject
+       with CoreTheme
   @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
   
@@ -144,27 +164,37 @@ object tablesorterStrings {
   def dateFormat: dateFormat = "dateFormat".asInstanceOf[dateFormat]
   
   @js.native
-  sealed trait desc extends SortOrder
+  sealed trait desc
+    extends StObject
+       with SortOrder
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait destroy extends ParameterlessTriggerNameMap
+  sealed trait destroy
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait destroyPager extends ParameterlessTriggerNameMap
+  sealed trait destroyPager
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def destroyPager: destroyPager = "destroyPager".asInstanceOf[destroyPager]
   
   @js.native
-  sealed trait disablePager extends ParameterlessTriggerNameMap
+  sealed trait disablePager
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def disablePager: disablePager = "disablePager".asInstanceOf[disablePager]
   
   @js.native
-  sealed trait dropbox extends CoreTheme
+  sealed trait dropbox
+    extends StObject
+       with CoreTheme
   @scala.inline
   def dropbox: dropbox = "dropbox".asInstanceOf[dropbox]
   
@@ -174,27 +204,37 @@ object tablesorterStrings {
   def empty: empty = "empty".asInstanceOf[empty]
   
   @js.native
-  sealed trait emptyMax extends EmptySorting
+  sealed trait emptyMax
+    extends StObject
+       with EmptySorting
   @scala.inline
   def emptyMax: emptyMax = "emptyMax".asInstanceOf[emptyMax]
   
   @js.native
-  sealed trait emptyMin extends EmptySorting
+  sealed trait emptyMin
+    extends StObject
+       with EmptySorting
   @scala.inline
   def emptyMin: emptyMin = "emptyMin".asInstanceOf[emptyMin]
   
   @js.native
-  sealed trait enablePager extends ParameterlessTriggerNameMap
+  sealed trait enablePager
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def enablePager: enablePager = "enablePager".asInstanceOf[enablePager]
   
   @js.native
-  sealed trait exact extends MatchType
+  sealed trait exact
+    extends StObject
+       with MatchType
   @scala.inline
   def exact: exact = "exact".asInstanceOf[exact]
   
   @js.native
-  sealed trait `false` extends ColumnFilter
+  sealed trait `false`
+    extends StObject
+       with ColumnFilter
   @scala.inline
   def `false`: `false` = "false".asInstanceOf[`false`]
   
@@ -204,27 +244,37 @@ object tablesorterStrings {
   def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
-  sealed trait filterAndSortReset extends ParameterlessTriggerNameMap
+  sealed trait filterAndSortReset
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def filterAndSortReset: filterAndSortReset = "filterAndSortReset".asInstanceOf[filterAndSortReset]
   
   @js.native
-  sealed trait filterEnd extends ConfigEventMap
+  sealed trait filterEnd
+    extends StObject
+       with ConfigEventMap
   @scala.inline
   def filterEnd: filterEnd = "filterEnd".asInstanceOf[filterEnd]
   
   @js.native
-  sealed trait filterInit extends ConfigEventMap
+  sealed trait filterInit
+    extends StObject
+       with ConfigEventMap
   @scala.inline
   def filterInit: filterInit = "filterInit".asInstanceOf[filterInit]
   
   @js.native
-  sealed trait filterReset extends ParameterlessTriggerNameMap
+  sealed trait filterReset
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def filterReset: filterReset = "filterReset".asInstanceOf[filterReset]
   
   @js.native
-  sealed trait filterResetSaved extends ParameterlessTriggerNameMap
+  sealed trait filterResetSaved
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def filterResetSaved: filterResetSaved = "filterResetSaved".asInstanceOf[filterResetSaved]
   
@@ -234,27 +284,37 @@ object tablesorterStrings {
   def filterStart: filterStart = "filterStart".asInstanceOf[filterStart]
   
   @js.native
-  sealed trait from extends FilterBox
+  sealed trait from
+    extends StObject
+       with FilterBox
   @scala.inline
   def from: from = "from".asInstanceOf[from]
   
   @js.native
-  sealed trait green extends CoreTheme
+  sealed trait green
+    extends StObject
+       with CoreTheme
   @scala.inline
   def green: green = "green".asInstanceOf[green]
   
   @js.native
-  sealed trait grey extends CoreTheme
+  sealed trait grey
+    extends StObject
+       with CoreTheme
   @scala.inline
   def grey: grey = "grey".asInstanceOf[grey]
   
   @js.native
-  sealed trait ice extends CoreTheme
+  sealed trait ice
+    extends StObject
+       with CoreTheme
   @scala.inline
   def ice: ice = "ice".asInstanceOf[ice]
   
   @js.native
-  sealed trait jui extends CoreTheme
+  sealed trait jui
+    extends StObject
+       with CoreTheme
   @scala.inline
   def jui: jui = "jui".asInstanceOf[jui]
   
@@ -264,12 +324,16 @@ object tablesorterStrings {
   def lockedOrder: lockedOrder = "lockedOrder".asInstanceOf[lockedOrder]
   
   @js.native
-  sealed trait `match` extends MatchType
+  sealed trait `match`
+    extends StObject
+       with MatchType
   @scala.inline
   def `match`: `match` = "match".asInstanceOf[`match`]
   
   @js.native
-  sealed trait max extends StringSorting
+  sealed trait max
+    extends StObject
+       with StringSorting
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   
@@ -279,12 +343,16 @@ object tablesorterStrings {
   def metaKey: metaKey = "metaKey".asInstanceOf[metaKey]
   
   @js.native
-  sealed trait `metro-dark` extends CoreTheme
+  sealed trait `metro-dark`
+    extends StObject
+       with CoreTheme
   @scala.inline
   def `metro-dark`: `metro-dark` = "metro-dark".asInstanceOf[`metro-dark`]
   
   @js.native
-  sealed trait min extends StringSorting
+  sealed trait min
+    extends StObject
+       with StringSorting
   @scala.inline
   def min: min = "min".asInstanceOf[min]
   
@@ -299,12 +367,16 @@ object tablesorterStrings {
   def movementY: movementY = "movementY".asInstanceOf[movementY]
   
   @js.native
-  sealed trait numeric extends ParserType
+  sealed trait numeric
+    extends StObject
+       with ParserType
   @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
-  sealed trait o extends RelativeSorting
+  sealed trait o
+    extends StObject
+       with RelativeSorting
   @scala.inline
   def o: o = "o".asInstanceOf[o]
   
@@ -324,7 +396,9 @@ object tablesorterStrings {
   def pageAndSize: pageAndSize = "pageAndSize".asInstanceOf[pageAndSize]
   
   @js.native
-  sealed trait pageMoved extends PagerEventMap
+  sealed trait pageMoved
+    extends StObject
+       with PagerEventMap
   @scala.inline
   def pageMoved: pageMoved = "pageMoved".asInstanceOf[pageMoved]
   
@@ -349,32 +423,44 @@ object tablesorterStrings {
   def pageY: pageY = "pageY".asInstanceOf[pageY]
   
   @js.native
-  sealed trait pagerBeforeInitialized extends PagerEventMap
+  sealed trait pagerBeforeInitialized
+    extends StObject
+       with PagerEventMap
   @scala.inline
   def pagerBeforeInitialized: pagerBeforeInitialized = "pagerBeforeInitialized".asInstanceOf[pagerBeforeInitialized]
   
   @js.native
-  sealed trait pagerChange extends PagerEventMap
+  sealed trait pagerChange
+    extends StObject
+       with PagerEventMap
   @scala.inline
   def pagerChange: pagerChange = "pagerChange".asInstanceOf[pagerChange]
   
   @js.native
-  sealed trait pagerComplete extends PagerEventMap
+  sealed trait pagerComplete
+    extends StObject
+       with PagerEventMap
   @scala.inline
   def pagerComplete: pagerComplete = "pagerComplete".asInstanceOf[pagerComplete]
   
   @js.native
-  sealed trait pagerInitialized extends PagerEventMap
+  sealed trait pagerInitialized
+    extends StObject
+       with PagerEventMap
   @scala.inline
   def pagerInitialized: pagerInitialized = "pagerInitialized".asInstanceOf[pagerInitialized]
   
   @js.native
-  sealed trait pagerUpdate extends ParameterlessTriggerNameMap
+  sealed trait pagerUpdate
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def pagerUpdate: pagerUpdate = "pagerUpdate".asInstanceOf[pagerUpdate]
   
   @js.native
-  sealed trait parsed extends ColumnFilter
+  sealed trait parsed
+    extends StObject
+       with ColumnFilter
   @scala.inline
   def parsed: parsed = "parsed".asInstanceOf[parsed]
   
@@ -384,7 +470,9 @@ object tablesorterStrings {
   def parser: parser = "parser".asInstanceOf[parser]
   
   @js.native
-  sealed trait refreshComplete extends EventMap
+  sealed trait refreshComplete
+    extends StObject
+       with EventMap
   @scala.inline
   def refreshComplete: refreshComplete = "refreshComplete".asInstanceOf[refreshComplete]
   
@@ -404,7 +492,9 @@ object tablesorterStrings {
   def removeWidget: removeWidget = "removeWidget".asInstanceOf[removeWidget]
   
   @js.native
-  sealed trait resetToLoadState extends ParameterlessTriggerNameMap
+  sealed trait resetToLoadState
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def resetToLoadState: resetToLoadState = "resetToLoadState".asInstanceOf[resetToLoadState]
   
@@ -415,13 +505,16 @@ object tablesorterStrings {
   
   @js.native
   sealed trait s
-    extends RelativeSorting
+    extends StObject
+       with RelativeSorting
        with StorageType
   @scala.inline
   def s: s = "s".asInstanceOf[s]
   
   @js.native
-  sealed trait saveSortReset extends ParameterlessTriggerNameMap
+  sealed trait saveSortReset
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def saveSortReset: saveSortReset = "saveSortReset".asInstanceOf[saveSortReset]
   
@@ -437,13 +530,16 @@ object tablesorterStrings {
   
   @js.native
   sealed trait search
-    extends FilterBox
+    extends StObject
+       with FilterBox
        with ParameterlessTriggerNameMap
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait select extends FilterBox
+  sealed trait select
+    extends StObject
+       with FilterBox
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   
@@ -454,28 +550,37 @@ object tablesorterStrings {
   
   @js.native
   sealed trait sort
-    extends ParameterlessTriggerNameMap
+    extends StObject
+       with ParameterlessTriggerNameMap
        with SortInitiator
   @scala.inline
   def sort: sort = "sort".asInstanceOf[sort]
   
   @js.native
-  sealed trait sortAppend extends SortInitiator
+  sealed trait sortAppend
+    extends StObject
+       with SortInitiator
   @scala.inline
   def sortAppend: sortAppend = "sortAppend".asInstanceOf[sortAppend]
   
   @js.native
-  sealed trait sortBegin extends EventMap
+  sealed trait sortBegin
+    extends StObject
+       with EventMap
   @scala.inline
   def sortBegin: sortBegin = "sortBegin".asInstanceOf[sortBegin]
   
   @js.native
-  sealed trait sortEnd extends EventMap
+  sealed trait sortEnd
+    extends StObject
+       with EventMap
   @scala.inline
   def sortEnd: sortEnd = "sortEnd".asInstanceOf[sortEnd]
   
   @js.native
-  sealed trait sortForce extends SortInitiator
+  sealed trait sortForce
+    extends StObject
+       with SortInitiator
   @scala.inline
   def sortForce: sortForce = "sortForce".asInstanceOf[sortForce]
   
@@ -490,7 +595,9 @@ object tablesorterStrings {
   def sortReset: sortReset = "sortReset".asInstanceOf[sortReset]
   
   @js.native
-  sealed trait sortStart extends EventMap
+  sealed trait sortStart
+    extends StObject
+       with EventMap
   @scala.inline
   def sortStart: sortStart = "sortStart".asInstanceOf[sortStart]
   
@@ -500,7 +607,9 @@ object tablesorterStrings {
   def sorter: sorter = "sorter".asInstanceOf[sorter]
   
   @js.native
-  sealed trait sorton extends SortInitiator
+  sealed trait sorton
+    extends StObject
+       with SortInitiator
   @scala.inline
   def sorton: sorton = "sorton".asInstanceOf[sorton]
   
@@ -520,44 +629,59 @@ object tablesorterStrings {
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait `tablesorter-initialized` extends EventMap
+  sealed trait `tablesorter-initialized`
+    extends StObject
+       with EventMap
   @scala.inline
   def `tablesorter-initialized`: `tablesorter-initialized` = "tablesorter-initialized".asInstanceOf[`tablesorter-initialized`]
   
   @js.native
-  sealed trait `tablesorter-ready` extends EventMap
+  sealed trait `tablesorter-ready`
+    extends StObject
+       with EventMap
   @scala.inline
   def `tablesorter-ready`: `tablesorter-ready` = "tablesorter-ready".asInstanceOf[`tablesorter-ready`]
   
   @js.native
-  sealed trait text extends ParserType
+  sealed trait text
+    extends StObject
+       with ParserType
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait to extends FilterBox
+  sealed trait to
+    extends StObject
+       with FilterBox
   @scala.inline
   def to: to = "to".asInstanceOf[to]
   
   @js.native
   sealed trait top
-    extends EmptySorting
+    extends StObject
+       with EmptySorting
        with StringSorting
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait update extends ParameterlessTriggerNameMap
+  sealed trait update
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def update: update = "update".asInstanceOf[update]
   
   @js.native
-  sealed trait updateAll extends ParameterlessTriggerNameMap
+  sealed trait updateAll
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def updateAll: updateAll = "updateAll".asInstanceOf[updateAll]
   
   @js.native
-  sealed trait updateCache extends ParameterlessTriggerNameMap
+  sealed trait updateCache
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def updateCache: updateCache = "updateCache".asInstanceOf[updateCache]
   
@@ -567,27 +691,37 @@ object tablesorterStrings {
   def updateCell: updateCell = "updateCell".asInstanceOf[updateCell]
   
   @js.native
-  sealed trait updateComplete extends EventMap
+  sealed trait updateComplete
+    extends StObject
+       with EventMap
   @scala.inline
   def updateComplete: updateComplete = "updateComplete".asInstanceOf[updateComplete]
   
   @js.native
-  sealed trait updateHeaders extends ParameterlessTriggerNameMap
+  sealed trait updateHeaders
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def updateHeaders: updateHeaders = "updateHeaders".asInstanceOf[updateHeaders]
   
   @js.native
-  sealed trait updateRows extends ParameterlessTriggerNameMap
+  sealed trait updateRows
+    extends StObject
+       with ParameterlessTriggerNameMap
   @scala.inline
   def updateRows: updateRows = "updateRows".asInstanceOf[updateRows]
   
   @js.native
-  sealed trait user extends SortInitiator
+  sealed trait user
+    extends StObject
+       with SortInitiator
   @scala.inline
   def user: user = "user".asInstanceOf[user]
   
   @js.native
-  sealed trait widgetRemoveEnd extends EventMap
+  sealed trait widgetRemoveEnd
+    extends StObject
+       with EventMap
   @scala.inline
   def widgetRemoveEnd: widgetRemoveEnd = "widgetRemoveEnd".asInstanceOf[widgetRemoveEnd]
   
@@ -603,7 +737,8 @@ object tablesorterStrings {
   
   @js.native
   sealed trait zero
-    extends EmptySorting
+    extends StObject
+       with EmptySorting
        with StringSorting
   @scala.inline
   def zero: zero = "zero".asInstanceOf[zero]

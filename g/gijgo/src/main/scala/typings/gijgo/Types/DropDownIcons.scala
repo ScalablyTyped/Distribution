@@ -2,14 +2,12 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // DropDown
-@js.native
 trait DropDownIcons extends StObject {
   
-  var dropdown: js.UndefOr[String] = js.native
+  var dropdown: js.UndefOr[String] = js.undefined
 }
 object DropDownIcons {
   

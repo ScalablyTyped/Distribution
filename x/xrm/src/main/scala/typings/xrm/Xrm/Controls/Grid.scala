@@ -6,14 +6,12 @@ import typings.xrm.Xrm.Data
 import typings.xrm.Xrm.LookupValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for a grid.  Use Grid methods to access information about data in the grid. Grid is returned by the
   * GridControl.getGrid method.
   */
-@js.native
 trait Grid extends StObject {
   
   /**
@@ -21,20 +19,20 @@ trait Grid extends StObject {
     * @returns The rows.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
-  def getRows(): ItemCollection[GridRow] = js.native
+  def getRows(): ItemCollection[GridRow]
   
   /**
     * Returns a collection of every selected GridRow in the Grid.
     * @returns The selected rows.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
-  def getSelectedRows(): ItemCollection[GridRow] = js.native
+  def getSelectedRows(): ItemCollection[GridRow]
   
   /**
     * Returns the total number of records in the Grid.
     * @returns The total record count.
     */
-  def getTotalRecordCount(): Double = js.native
+  def getTotalRecordCount(): Double
 }
 object Grid {
   
@@ -54,7 +52,6 @@ object Grid {
     *
     * @deprecated Use GridRow.data.entity instead.
     */
-  @js.native
   trait GridEntity extends StObject {
     
     /**
@@ -63,7 +60,7 @@ object Grid {
       * @returns The entity name.
       * @deprecated Use GridRow.data.entity.getEntityName() instead.
       */
-    def getEntityName(): String = js.native
+    def getEntityName(): String
     
     /**
       * Returns a LookupValue that references this record.
@@ -71,7 +68,7 @@ object Grid {
       * @returns The entity reference.
       * @deprecated Use GridRow.data.entity.getEntityReference() instead.
       */
-    def getEntityReference(): LookupValue = js.native
+    def getEntityReference(): LookupValue
     
     /**
       * Returns the id for the record in the row.
@@ -80,7 +77,7 @@ object Grid {
       * @example Example return: "{00000000-0000-0000-0000-000000000000}"
       * @deprecated Use GridRow.data.entity.getId() instead.
       */
-    def getId(): String = js.native
+    def getId(): String
     
     /**
       * Returns the primary attribute value for the record in the row.  (Commonly the name.)
@@ -88,7 +85,7 @@ object Grid {
       * @returns The primary attribute value.
       * @deprecated Use GridRow.data.entity.getPrimaryAttributeValue() instead.
       */
-    def getPrimaryAttributeValue(): String = js.native
+    def getPrimaryAttributeValue(): String
   }
   object GridEntity {
     
@@ -138,20 +135,19 @@ object Grid {
     * returned by Grid.getRows and Grid.getSelectedRows methods.
     * In V9 - this is essentailly a form context
     */
-  @js.native
   trait GridRow extends StObject {
     
     /**
       * Provides methods to work with the row data.
       */
-    var data: Data = js.native
+    var data: Data
     
     /**
       * Returns the GridRowData for the GridRow.
       * @deprecated Deprecated in V9 - use data field instead
       * @returns The data.
       */
-    def getData(): GridRowData = js.native
+    def getData(): GridRowData
   }
   object GridRow {
     
@@ -176,7 +172,6 @@ object Grid {
     * Interface for grid row data.  Use the GridRowData.getEntity method to access the GridEntity. GridRowData is
     * returned by the GridRow.getData method.
     */
-  @js.native
   trait GridRowData extends StObject {
     
     /**
@@ -184,7 +179,7 @@ object Grid {
       * @returns The entity.
       * @deprecated Use GridRow.data.entity instead of using GridRow.getData().getEntity().
       */
-    def getEntity(): GridEntity = js.native
+    def getEntity(): GridEntity
   }
   object GridRowData {
     

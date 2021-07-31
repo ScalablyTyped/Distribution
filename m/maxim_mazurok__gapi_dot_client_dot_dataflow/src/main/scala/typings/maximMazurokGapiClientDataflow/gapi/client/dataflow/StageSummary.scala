@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StageSummary extends StObject {
   
   /** End time of this stage. If the work item is completed, this is the actual end time of the stage. Otherwise, it is the predicted end time. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Metrics for this stage. */
-  var metrics: js.UndefOr[js.Array[MetricUpdate]] = js.native
+  var metrics: js.UndefOr[js.Array[MetricUpdate]] = js.undefined
   
   /** Progress for this stage. Only applicable to Batch jobs. */
-  var progress: js.UndefOr[ProgressTimeseries] = js.native
+  var progress: js.UndefOr[ProgressTimeseries] = js.undefined
   
   /** ID of this stage */
-  var stageId: js.UndefOr[String] = js.native
+  var stageId: js.UndefOr[String] = js.undefined
   
   /** Start time of this stage. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** State of this stage. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object StageSummary {
   

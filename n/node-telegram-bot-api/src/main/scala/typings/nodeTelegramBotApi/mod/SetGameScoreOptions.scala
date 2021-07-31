@@ -2,21 +2,19 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetGameScoreOptions extends StObject {
   
-  var chat_id: js.UndefOr[Double] = js.native
+  var chat_id: js.UndefOr[Double] = js.undefined
   
-  var disable_edit_message: js.UndefOr[Boolean] = js.native
+  var disable_edit_message: js.UndefOr[Boolean] = js.undefined
   
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
-  var inline_message_id: js.UndefOr[String] = js.native
+  var inline_message_id: js.UndefOr[String] = js.undefined
   
-  var message_id: js.UndefOr[Double] = js.native
+  var message_id: js.UndefOr[Double] = js.undefined
 }
 object SetGameScoreOptions {
   

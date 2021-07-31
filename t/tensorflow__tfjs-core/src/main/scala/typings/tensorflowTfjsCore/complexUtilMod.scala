@@ -6,40 +6,35 @@ import typings.tensorflowTfjsCore.anon.Real
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object complexUtilMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/backends/complex_util", "assignToTypedArray")
+  @JSImport("@tensorflow/tfjs-core/dist/backends/complex_util", JSImport.Namespace)
   @js.native
-  def assignToTypedArray(data: TypedArray, real: Double, imag: Double, index: Double): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/backends/complex_util", "complexWithEvenIndex")
-  @js.native
-  def complexWithEvenIndex(complex: Float32Array): Imag = js.native
+  @scala.inline
+  def assignToTypedArray(data: TypedArray, real: Double, imag: Double, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assignToTypedArray")(data.asInstanceOf[js.Any], real.asInstanceOf[js.Any], imag.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-core/dist/backends/complex_util", "complexWithOddIndex")
-  @js.native
-  def complexWithOddIndex(complex: Float32Array): Imag = js.native
+  @scala.inline
+  def complexWithEvenIndex(complex: Float32Array): Imag = ^.asInstanceOf[js.Dynamic].applyDynamic("complexWithEvenIndex")(complex.asInstanceOf[js.Any]).asInstanceOf[Imag]
   
-  @JSImport("@tensorflow/tfjs-core/dist/backends/complex_util", "exponent")
-  @js.native
-  def exponent(k: Double, n: Double, inverse: Boolean): Real = js.native
+  @scala.inline
+  def complexWithOddIndex(complex: Float32Array): Imag = ^.asInstanceOf[js.Dynamic].applyDynamic("complexWithOddIndex")(complex.asInstanceOf[js.Any]).asInstanceOf[Imag]
   
-  @JSImport("@tensorflow/tfjs-core/dist/backends/complex_util", "exponents")
-  @js.native
-  def exponents(n: Double, inverse: Boolean): Imag = js.native
+  @scala.inline
+  def exponent(k: Double, n: Double, inverse: Boolean): Real = (^.asInstanceOf[js.Dynamic].applyDynamic("exponent")(k.asInstanceOf[js.Any], n.asInstanceOf[js.Any], inverse.asInstanceOf[js.Any])).asInstanceOf[Real]
   
-  @JSImport("@tensorflow/tfjs-core/dist/backends/complex_util", "getComplexWithIndex")
-  @js.native
-  def getComplexWithIndex(complex: Float32Array, index: Double): Real = js.native
+  @scala.inline
+  def exponents(n: Double, inverse: Boolean): Imag = (^.asInstanceOf[js.Dynamic].applyDynamic("exponents")(n.asInstanceOf[js.Any], inverse.asInstanceOf[js.Any])).asInstanceOf[Imag]
   
-  @JSImport("@tensorflow/tfjs-core/dist/backends/complex_util", "mergeRealAndImagArrays")
-  @js.native
-  def mergeRealAndImagArrays(real: Float32Array, imag: Float32Array): Float32Array = js.native
+  @scala.inline
+  def getComplexWithIndex(complex: Float32Array, index: Double): Real = (^.asInstanceOf[js.Dynamic].applyDynamic("getComplexWithIndex")(complex.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Real]
   
-  @JSImport("@tensorflow/tfjs-core/dist/backends/complex_util", "splitRealAndImagArrays")
-  @js.native
-  def splitRealAndImagArrays(complex: Float32Array): Imag = js.native
+  @scala.inline
+  def mergeRealAndImagArrays(real: Float32Array, imag: Float32Array): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeRealAndImagArrays")(real.asInstanceOf[js.Any], imag.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  
+  @scala.inline
+  def splitRealAndImagArrays(complex: Float32Array): Imag = ^.asInstanceOf[js.Dynamic].applyDynamic("splitRealAndImagArrays")(complex.asInstanceOf[js.Any]).asInstanceOf[Imag]
 }

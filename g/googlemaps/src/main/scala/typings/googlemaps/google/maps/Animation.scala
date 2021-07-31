@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,12 +21,16 @@ object Animation extends StObject {
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Animation.BOUNCE Maps JavaScript API}
     */
   @js.native
-  sealed trait BOUNCE extends Animation
+  sealed trait BOUNCE
+    extends StObject
+       with Animation
   
   /**
     * Marker falls from the top of the map ending with a small bounce.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Animation.DROP Maps JavaScript API}
     */
   @js.native
-  sealed trait DROP extends Animation
+  sealed trait DROP
+    extends StObject
+       with Animation
 }

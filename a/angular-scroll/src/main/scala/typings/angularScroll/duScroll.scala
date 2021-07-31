@@ -4,7 +4,6 @@ import typings.angular.mod.IAugmentedJQuery
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object duScroll {
@@ -15,7 +14,8 @@ object duScroll {
     */
   @js.native
   trait IDocumentService
-    extends typings.angular.mod.IDocumentService {
+    extends StObject
+       with typings.angular.mod.IDocumentService {
     
     def duScrollLeft(): Double = js.native
     def duScrollLeft(left: Double): Unit = js.native

@@ -2,21 +2,19 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenizeLineResult extends StObject {
   
   /** The string of text that was tokenized. */
-  var line: String = js.native
+  var line: String
   
   /**
     *  An array of rules representing the tokenized state at the end of the line.
     *  These should be passed back into this method when tokenizing the next line
     *  in the file.
     */
-  var ruleStack: js.Array[GrammarRule] = js.native
+  var ruleStack: js.Array[GrammarRule]
   
   /**
     *  An array of integer scope ids and strings. Positive ids indicate the
@@ -24,14 +22,14 @@ trait TokenizeLineResult extends StObject {
     *  to scope names, call GrammarRegistry::scopeForId with the absolute
     *  value of the id.
     */
-  var tags: js.Array[Double | String] = js.native
+  var tags: js.Array[Double | String]
   
   /**
     *  This is a dynamic property. Invoking it will incur additional overhead,
     *  but will automatically translate the `tags` into token objects with `value`
     *  and `scopes` properties.
     */
-  var tokens: js.Array[GrammarToken] = js.native
+  var tokens: js.Array[GrammarToken]
 }
 object TokenizeLineResult {
   

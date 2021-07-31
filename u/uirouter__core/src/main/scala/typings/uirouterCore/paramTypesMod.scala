@@ -3,7 +3,6 @@ package typings.uirouterCore
 import typings.uirouterCore.paramsInterfaceMod.ParamTypeDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paramTypesMod {
@@ -26,15 +25,11 @@ object paramTypesMod {
       * End users should call [[UrlMatcherFactory.type]], which delegates to this method.
       */
     def `type`(name: String): js.Any = js.native
-    def `type`(
-      name: String,
-      definition: js.UndefOr[scala.Nothing],
-      definitionFn: js.Function0[ParamTypeDefinition]
-    ): js.Any = js.native
+    def `type`(name: String, definition: Unit, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
     
-    var typeQueue: js.Array[_] = js.native
+    var typeQueue: js.Array[js.Any] = js.native
     
     var types: js.Any = js.native
   }

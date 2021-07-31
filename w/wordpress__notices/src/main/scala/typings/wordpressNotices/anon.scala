@@ -7,26 +7,24 @@ import typings.wordpressNotices.wordpressNoticesStrings.default
 import typings.wordpressNotices.wordpressNoticesStrings.snackbar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@wordpress/notices.@wordpress/notices.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var actions: js.UndefOr[js.Array[Action]] = js.native
+    var actions: js.UndefOr[js.Array[Action]] = js.undefined
     
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var isDismissible: js.UndefOr[Boolean] = js.native
+    var isDismissible: js.UndefOr[Boolean] = js.undefined
     
-    var speak: js.UndefOr[Boolean] = js.native
+    var speak: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.UndefOr[default | snackbar] = js.native
+    var `type`: js.UndefOr[default | snackbar] = js.undefined
   }
   object PartialOptions {
     
@@ -89,8 +87,8 @@ object anon {
     def createInfoNotice(content: String): Unit = js.native
     def createInfoNotice(content: String, options: PartialOptions): Unit = js.native
     
-    def createNotice(status: js.UndefOr[scala.Nothing], content: String): Unit = js.native
-    def createNotice(status: js.UndefOr[scala.Nothing], content: String, options: PartialOptions): Unit = js.native
+    def createNotice(status: Unit, content: String): Unit = js.native
+    def createNotice(status: Unit, content: String, options: PartialOptions): Unit = js.native
     def createNotice(status: Status, content: String): Unit = js.native
     def createNotice(status: Status, content: String, options: PartialOptions): Unit = js.native
     

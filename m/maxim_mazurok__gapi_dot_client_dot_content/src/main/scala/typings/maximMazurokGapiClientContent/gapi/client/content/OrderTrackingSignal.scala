@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderTrackingSignal extends StObject {
   
   /** The shipping fee of the order; this value should be set to zero in the case of free shipping. */
-  var customerShippingFee: js.UndefOr[PriceAmount] = js.native
+  var customerShippingFee: js.UndefOr[PriceAmount] = js.undefined
   
   /** Required. The delivery postal code, as a continuous string without spaces or dashes, e.g. "95016". */
-  var deliveryPostalCode: js.UndefOr[String] = js.native
+  var deliveryPostalCode: js.UndefOr[String] = js.undefined
   
   /** Required. The [CLDR territory code] (http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml) for the shipping destination. */
-  var deliveryRegionCode: js.UndefOr[String] = js.native
+  var deliveryRegionCode: js.UndefOr[String] = js.undefined
   
   /** Information about line items in the order. */
-  var lineItems: js.UndefOr[js.Array[OrderTrackingSignalLineItemDetails]] = js.native
+  var lineItems: js.UndefOr[js.Array[OrderTrackingSignalLineItemDetails]] = js.undefined
   
   /**
     * The Google merchant ID of this order tracking signal. This value is optional. If left unset, the caller's merchant ID is used. You must request access in order to provide data on
     * behalf of another merchant. For more information, see [Submitting Order Tracking Signals](/shopping-content/guides/order-tracking-signals).
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /** Required. The time when the order was created on the merchant side. Include the year and timezone string, if available. */
-  var orderCreatedTime: js.UndefOr[DateTime] = js.native
+  var orderCreatedTime: js.UndefOr[DateTime] = js.undefined
   
   /** Required. The ID of the order on the merchant side. */
-  var orderId: js.UndefOr[String] = js.native
+  var orderId: js.UndefOr[String] = js.undefined
   
   /** Output only. The ID that uniquely identifies this order tracking signal. */
-  var orderTrackingSignalId: js.UndefOr[String] = js.native
+  var orderTrackingSignalId: js.UndefOr[String] = js.undefined
   
   /** The mapping of the line items to the shipment information. */
-  var shipmentLineItemMapping: js.UndefOr[js.Array[OrderTrackingSignalShipmentLineItemMapping]] = js.native
+  var shipmentLineItemMapping: js.UndefOr[js.Array[OrderTrackingSignalShipmentLineItemMapping]] = js.undefined
   
   /** The shipping information for the order. */
-  var shippingInfo: js.UndefOr[js.Array[OrderTrackingSignalShippingInfo]] = js.native
+  var shippingInfo: js.UndefOr[js.Array[OrderTrackingSignalShippingInfo]] = js.undefined
 }
 object OrderTrackingSignal {
   

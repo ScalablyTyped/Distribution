@@ -6,57 +6,57 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the items of a combo box and makes it possible to register item and action event listeners. */
-@js.native
-trait XComboBox extends XInterface {
+trait XComboBox
+  extends StObject
+     with XInterface {
   
   /** returns the number of visible lines in the drop down mode. */
-  var DropDownLineCount: Double = js.native
+  var DropDownLineCount: Double
   
   /** returns the number of items in the combo box. */
-  val ItemCount: Double = js.native
+  val ItemCount: Double
   
   /** returns all items of the combo box. */
-  val Items: SafeArray[String] = js.native
+  val Items: SafeArray[String]
   
   /** registers a listener for action events. */
-  def addActionListener(l: XActionListener): Unit = js.native
+  def addActionListener(l: XActionListener): Unit
   
   /** adds an item at the specified position. */
-  def addItem(aItem: String, nPos: Double): Unit = js.native
+  def addItem(aItem: String, nPos: Double): Unit
   
   /** registers a listener for item events. */
-  def addItemListener(l: XItemListener): Unit = js.native
+  def addItemListener(l: XItemListener): Unit
   
   /** adds multiple items at the specified position. */
-  def addItems(aItems: SeqEquiv[String], nPos: Double): Unit = js.native
+  def addItems(aItems: SeqEquiv[String], nPos: Double): Unit
   
   /** returns the number of visible lines in the drop down mode. */
-  def getDropDownLineCount(): Double = js.native
+  def getDropDownLineCount(): Double
   
   /** returns the item at the specified position. */
-  def getItem(nPos: Double): String = js.native
+  def getItem(nPos: Double): String
   
   /** returns the number of items in the combo box. */
-  def getItemCount(): Double = js.native
+  def getItemCount(): Double
   
   /** returns all items of the combo box. */
-  def getItems(): SafeArray[String] = js.native
+  def getItems(): SafeArray[String]
   
   /** unregisters a listener for action events. */
-  def removeActionListener(l: XActionListener): Unit = js.native
+  def removeActionListener(l: XActionListener): Unit
   
   /** unregisters a listener for item events. */
-  def removeItemListener(l: XItemListener): Unit = js.native
+  def removeItemListener(l: XItemListener): Unit
   
   /** removes a number of items at the specified position. */
-  def removeItems(nPos: Double, nCount: Double): Unit = js.native
+  def removeItems(nPos: Double, nCount: Double): Unit
   
   /** sets the number of visible lines for drop down mode. */
-  def setDropDownLineCount(nLines: Double): Unit = js.native
+  def setDropDownLineCount(nLines: Double): Unit
 }
 object XComboBox {
   

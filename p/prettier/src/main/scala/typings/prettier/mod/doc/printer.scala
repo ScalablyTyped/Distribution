@@ -4,39 +4,40 @@ import typings.prettier.anon.CursorNodeStart
 import typings.prettier.mod.Doc_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object printer {
   
-  @JSImport("prettier", "doc.printer.printDocToString")
+  @JSImport("prettier", "doc.printer")
   @js.native
-  def printDocToString(doc: Doc_, options: Options): CursorNodeStart = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def printDocToString(doc: Doc_, options: Options): CursorNodeStart = (^.asInstanceOf[js.Dynamic].applyDynamic("printDocToString")(doc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CursorNodeStart]
+  
   trait Options extends StObject {
     
-    var embeddedInHtml: Boolean = js.native
+    var embeddedInHtml: Boolean
     
-    var parentParser: js.UndefOr[String] = js.native
+    var parentParser: js.UndefOr[String] = js.undefined
     
     /**
       * Specify the line length that the printer will wrap on.
       * @default 80
       */
-    var printWidth: Double = js.native
+    var printWidth: Double
     
     /**
       * Specify the number of spaces per indentation-level.
       * @default 2
       */
-    var tabWidth: Double = js.native
+    var tabWidth: Double
     
     /**
       * Indent lines with tabs instead of spaces
       * @default false
       */
-    var useTabs: Boolean = js.native
+    var useTabs: Boolean
   }
   object Options {
     

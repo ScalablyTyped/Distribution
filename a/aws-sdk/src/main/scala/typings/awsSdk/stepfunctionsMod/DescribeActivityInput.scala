@@ -2,16 +2,14 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeActivityInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the activity to describe.
     */
-  var activityArn: Arn = js.native
+  var activityArn: Arn
 }
 object DescribeActivityInput {
   

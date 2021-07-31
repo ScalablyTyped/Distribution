@@ -3,19 +3,32 @@ package typings.phaser.Phaser.Types.GameObjects.Particles
 import typings.phaser.Phaser.Math.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RandomZoneSource extends StObject {
   
   /**
     * A function modifying its point argument.
     */
-  def getRandomPoint(point: Vector2): Unit = js.native
+  def getRandomPoint(point: Vector2): Unit
   /**
     * A function modifying its point argument.
     */
   @JSName("getRandomPoint")
-  var getRandomPoint_Original: RandomZoneSourceCallback = js.native
+  var getRandomPoint_Original: RandomZoneSourceCallback
+}
+object RandomZoneSource {
+  
+  @scala.inline
+  def apply(getRandomPoint: /* point */ Vector2 => Unit): RandomZoneSource = {
+    val __obj = js.Dynamic.literal(getRandomPoint = js.Any.fromFunction1(getRandomPoint))
+    __obj.asInstanceOf[RandomZoneSource]
+  }
+  
+  @scala.inline
+  implicit class RandomZoneSourceMutableBuilder[Self <: RandomZoneSource] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setGetRandomPoint(value: /* point */ Vector2 => Unit): Self = StObject.set(x, "getRandomPoint", js.Any.fromFunction1(value))
+  }
 }

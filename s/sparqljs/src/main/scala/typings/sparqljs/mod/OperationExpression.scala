@@ -3,27 +3,26 @@ package typings.sparqljs.mod
 import typings.sparqljs.sparqljsStrings.operation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationExpression
-  extends BaseExpression
+  extends StObject
+     with BaseExpression
      with _Expression {
   
-  var args: js.Array[Expression] = js.native
+  var args: js.Array[Expression]
   
-  var operator: String = js.native
+  var operator: String
   
   @JSName("type")
-  var type_OperationExpression: operation = js.native
+  var type_OperationExpression: operation
 }
 object OperationExpression {
   
   @scala.inline
-  def apply(args: js.Array[Expression], operator: String, `type`: operation): OperationExpression = {
+  def apply(args: js.Array[Expression], operator: String): OperationExpression = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("operation")
     __obj.asInstanceOf[OperationExpression]
   }
   

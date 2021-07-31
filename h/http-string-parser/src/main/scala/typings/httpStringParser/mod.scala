@@ -3,39 +3,36 @@ package typings.httpStringParser
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("http-string-parser", "parseHeaders")
+  @JSImport("http-string-parser", JSImport.Namespace)
   @js.native
-  def parseHeaders(headerLines: js.Array[String]): StringDictionary[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("http-string-parser", "parseRequest")
-  @js.native
-  def parseRequest(requestString: String): ParseRequestResult = js.native
+  @scala.inline
+  def parseHeaders(headerLines: js.Array[String]): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHeaders")(headerLines.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   
-  @JSImport("http-string-parser", "parseRequestLine")
-  @js.native
-  def parseRequestLine(requestLineString: String): ParseRequestLineResult = js.native
+  @scala.inline
+  def parseRequest(requestString: String): ParseRequestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(requestString.asInstanceOf[js.Any]).asInstanceOf[ParseRequestResult]
   
-  @JSImport("http-string-parser", "parseResponse")
-  @js.native
-  def parseResponse(responseString: String): ParseResponseResult = js.native
+  @scala.inline
+  def parseRequestLine(requestLineString: String): ParseRequestLineResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRequestLine")(requestLineString.asInstanceOf[js.Any]).asInstanceOf[ParseRequestLineResult]
   
-  @JSImport("http-string-parser", "parseStatusLine")
-  @js.native
-  def parseStatusLine(statusLine: String): ParseStatusLineResult = js.native
+  @scala.inline
+  def parseResponse(responseString: String): ParseResponseResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseResponse")(responseString.asInstanceOf[js.Any]).asInstanceOf[ParseResponseResult]
   
-  @js.native
+  @scala.inline
+  def parseStatusLine(statusLine: String): ParseStatusLineResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStatusLine")(statusLine.asInstanceOf[js.Any]).asInstanceOf[ParseStatusLineResult]
+  
   trait ParseRequestLineResult extends StObject {
     
-    var method: String = js.native
+    var method: String
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var uri: String = js.native
+    var uri: String
   }
   object ParseRequestLineResult {
     
@@ -59,16 +56,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseRequestResult extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
-    var method: String = js.native
+    var method: String
     
-    var uri: String = js.native
+    var uri: String
   }
   object ParseRequestResult {
     
@@ -95,16 +91,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseResponseResult extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
-    var statusCode: String = js.native
+    var statusCode: String
     
-    var statusMessage: String = js.native
+    var statusMessage: String
   }
   object ParseResponseResult {
     
@@ -131,14 +126,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseStatusLineResult extends StObject {
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var statusCode: String = js.native
+    var statusCode: String
     
-    var statusMessage: String = js.native
+    var statusMessage: String
   }
   object ParseStatusLineResult {
     

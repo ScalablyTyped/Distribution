@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,23 +12,37 @@ sealed trait BaseType extends StObject
 object BaseType extends StObject {
   
   @js.native
-  sealed trait discussionBoard extends BaseType
+  sealed trait discussionBoard
+    extends StObject
+       with BaseType
   
   @js.native
-  sealed trait documentLibrary extends BaseType
+  sealed trait documentLibrary
+    extends StObject
+       with BaseType
   
   @js.native
-  sealed trait genericList extends BaseType
+  sealed trait genericList
+    extends StObject
+       with BaseType
   
   @js.native
-  sealed trait issue extends BaseType
+  sealed trait issue
+    extends StObject
+       with BaseType
   
   @js.native
-  sealed trait none extends BaseType
+  sealed trait none
+    extends StObject
+       with BaseType
   
   @js.native
-  sealed trait survey extends BaseType
+  sealed trait survey
+    extends StObject
+       with BaseType
   
   @js.native
-  sealed trait unused extends BaseType
+  sealed trait unused
+    extends StObject
+       with BaseType
 }

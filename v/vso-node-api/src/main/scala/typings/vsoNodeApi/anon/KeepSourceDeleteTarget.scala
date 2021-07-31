@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeepSourceDeleteTarget extends StObject {
   
-  var keepSourceDeleteTarget: scala.Double = js.native
+  var keepSourceDeleteTarget: scala.Double
   
-  var keepSourceRenameTarget: scala.Double = js.native
+  var keepSourceRenameTarget: scala.Double
   
-  var keepTargetDeleteSource: scala.Double = js.native
+  var keepTargetDeleteSource: scala.Double
   
-  var keepTargetRenameSource: scala.Double = js.native
+  var keepTargetRenameSource: scala.Double
   
-  var undecided: scala.Double = js.native
+  var undecided: scala.Double
 }
 object KeepSourceDeleteTarget {
   

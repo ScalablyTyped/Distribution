@@ -2,7 +2,6 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * instances, by simply ignoring the newly pushed instance (it will not
   * overwrite).
   */
-@js.native
 trait SchemaImportDicomDataRequest extends StObject {
   
   /**
     * Specifies where the imported data resides.
     */
-  var inputConfig: js.UndefOr[SchemaInputConfig] = js.native
+  var inputConfig: js.UndefOr[SchemaInputConfig] = js.undefined
 }
 object SchemaImportDicomDataRequest {
   

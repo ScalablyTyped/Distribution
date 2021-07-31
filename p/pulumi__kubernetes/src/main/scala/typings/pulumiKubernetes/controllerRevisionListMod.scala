@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controllerRevisionListMod {
@@ -27,7 +26,7 @@ object controllerRevisionListMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ControllerRevisionListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ControllerRevisionListArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -53,6 +52,10 @@ object controllerRevisionListMod {
   /* static members */
   object ControllerRevisionList {
     
+    @JSImport("@pulumi/kubernetes/apps/v1beta1/controllerRevisionList", "ControllerRevisionList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ControllerRevisionList resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,46 +64,42 @@ object controllerRevisionListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/apps/v1beta1/controllerRevisionList", "ControllerRevisionList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ControllerRevisionList = js.native
-    @JSImport("@pulumi/kubernetes/apps/v1beta1/controllerRevisionList", "ControllerRevisionList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): ControllerRevisionList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ControllerRevisionList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ControllerRevisionList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): ControllerRevisionList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ControllerRevisionList]
     
     /**
       * Returns true if the given object is an instance of ControllerRevisionList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/apps/v1beta1/controllerRevisionList", "ControllerRevisionList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevisionList.ControllerRevisionList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevisionList.ControllerRevisionList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevisionList.ControllerRevisionList */ Boolean]
   }
   
-  @js.native
   trait ControllerRevisionListArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[appsSlashv1beta1]] = js.native
+    val apiVersion: js.UndefOr[Input[appsSlashv1beta1]] = js.undefined
     
     /**
       * Items is the list of ControllerRevisions
       */
     val items: Input[
         js.Array[Input[typings.pulumiKubernetes.inputMod.apps.v1beta1.ControllerRevision]]
-      ] = js.native
+      ]
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ControllerRevisionList]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ControllerRevisionList]] = js.undefined
     
     /**
       * More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.undefined
   }
   object ControllerRevisionListArgs {
     

@@ -2,51 +2,49 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Channel extends StObject {
   
   /**
     * The ARN of the channel.
     */
-  var arn: js.UndefOr[ChannelArn] = js.native
+  var arn: js.UndefOr[ChannelArn] = js.undefined
   
   /**
     * When the channel was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The last time when a new message arrived in the channel. AWS IoT Analytics updates this value at most once per minute for one channel. Hence, the lastMessageArrivalTime value is an approximation. This feature only applies to messages that arrived in the data store after October 23, 2020. 
     */
-  var lastMessageArrivalTime: js.UndefOr[Timestamp] = js.native
+  var lastMessageArrivalTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * When the channel was last updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.native
+  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the channel.
     */
-  var name: js.UndefOr[ChannelName] = js.native
+  var name: js.UndefOr[ChannelName] = js.undefined
   
   /**
     * How long, in days, message data is kept for the channel.
     */
-  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.native
+  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
   
   /**
     * The status of the channel.
     */
-  var status: js.UndefOr[ChannelStatus] = js.native
+  var status: js.UndefOr[ChannelStatus] = js.undefined
   
   /**
     * Where channel data is stored. You can choose one of serviceManagedS3 or customerManagedS3 storage. If not specified, the default is serviceManagedS3. You cannot change this storage option after the channel is created.
     */
-  var storage: js.UndefOr[ChannelStorage] = js.native
+  var storage: js.UndefOr[ChannelStorage] = js.undefined
 }
 object Channel {
   

@@ -10,7 +10,6 @@ import typings.react.mod.ReactElement
 import typings.reactNative.mod.LayoutChangeEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepsIndexNativeMod {
@@ -47,11 +46,12 @@ object stepsIndexNativeMod {
     def onLayout(e: LayoutChangeEvent): Unit = js.native
   }
   
-  @js.native
-  trait StepsNativeProps extends StepsProps {
+  trait StepsNativeProps
+    extends StObject
+       with StepsProps {
     
     @JSName("styles")
-    var styles_StepsNativeProps: js.UndefOr[IStepsStyle] = js.native
+    var styles_StepsNativeProps: js.UndefOr[IStepsStyle] = js.undefined
   }
   object StepsNativeProps {
     
@@ -72,17 +72,18 @@ object stepsIndexNativeMod {
     }
   }
   
-  @js.native
-  trait StepsProps extends StepsPropsType {
+  trait StepsProps
+    extends StObject
+       with StepsPropsType {
     
     @JSName("children")
-    var children_StepsProps: js.Array[ReactElement] = js.native
+    var children_StepsProps: js.Array[ReactElement]
     
-    var direction: js.UndefOr[vertical | horizontal] = js.native
+    var direction: js.UndefOr[vertical | horizontal] = js.undefined
     
-    var finishIcon: js.UndefOr[String] = js.native
+    var finishIcon: js.UndefOr[String] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.native
+    var styles: js.UndefOr[js.Any] = js.undefined
   }
   object StepsProps {
     

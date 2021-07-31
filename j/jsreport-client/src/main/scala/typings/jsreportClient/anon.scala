@@ -4,20 +4,18 @@ import typings.jsreportCore.anon.PartialTemplate
 import typings.jsreportCore.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<jsreport-core.jsreport-core.Request> */
-  @js.native
   trait PartialRequest extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
     
-    var template: js.UndefOr[PartialTemplate] = js.native
+    var template: js.UndefOr[PartialTemplate] = js.undefined
   }
   object PartialRequest {
     

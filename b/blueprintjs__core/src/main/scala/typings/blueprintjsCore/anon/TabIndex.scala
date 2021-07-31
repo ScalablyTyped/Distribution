@@ -2,13 +2,11 @@ package typings.blueprintjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabIndex extends StObject {
   
-  var tabIndex: Double = js.native
+  var tabIndex: Double
 }
 object TabIndex {
   

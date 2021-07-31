@@ -2,16 +2,14 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInterconnectLoaResponse extends StObject {
   
   /**
     * The Letter of Authorization - Connecting Facility Assignment (LOA-CFA).
     */
-  var loa: js.UndefOr[Loa] = js.native
+  var loa: js.UndefOr[Loa] = js.undefined
 }
 object DescribeInterconnectLoaResponse {
   

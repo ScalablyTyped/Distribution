@@ -10,9 +10,9 @@ Promise-based log library using console log.
 | ------------------ | :-------------: |
 | Full name          | @algolia/logger-console |
 | Keywords           | - |
-| # releases         | 32 |
-| # dependents       | 3 |
-| # downloads        | 4066477 |
+| # releases         | 38 |
+| # dependents       | 5 |
+| # downloads        | 6726135 |
 | # stars            | 0 |
 
 ## Links

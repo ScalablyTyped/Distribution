@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiveBroadcastStatistics extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait LiveBroadcastStatistics extends StObject {
     * at least one message. Note that this field will not be filled after the broadcast ends. So this property would not identify the number of chat messages for an archived video of a
     * completed live broadcast.
     */
-  var totalChatCount: js.UndefOr[String] = js.native
+  var totalChatCount: js.UndefOr[String] = js.undefined
 }
 object LiveBroadcastStatistics {
   

@@ -2,14 +2,12 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Gives a position relative to some size defined by other means. Values from 0 to 1 cover the entire reference rectangle. Values may also be greater
   * than one, meaning a bigger size than the reference size. Negative values are not allowed.
   */
-@js.native
 trait RelativeSize extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait RelativeSize extends StObject {
     *
     * For a western Orientation this is the width.
     */
-  var Primary: Double = js.native
+  var Primary: Double
   
   /**
     * The extension in the secondary direction. The direction is defined by the object using this point.
@@ -32,7 +30,7 @@ trait RelativeSize extends StObject {
     *
     * For a western Orientation this is the height.
     */
-  var Secondary: Double = js.native
+  var Secondary: Double
 }
 object RelativeSize {
   

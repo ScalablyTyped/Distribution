@@ -2,44 +2,42 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SetMaintenancePolicyRequest sets the maintenance policy for a cluster.
   */
-@js.native
 trait SchemaSetMaintenancePolicyRequest extends StObject {
   
   /**
     * The name of the cluster to update.
     */
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The maintenance policy to be set for the cluster. An empty field clears
     * the existing maintenance policy.
     */
-  var maintenancePolicy: js.UndefOr[SchemaMaintenancePolicy] = js.native
+  var maintenancePolicy: js.UndefOr[SchemaMaintenancePolicy] = js.undefined
   
   /**
     * The name (project, location, cluster id) of the cluster to set
     * maintenance policy. Specified in the format
     * &#39;projects/x/locations/x/clusters/ *&#39;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The Google Developers Console [project ID or project
     * number](https://support.google.com/cloud/answer/6158840).
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Google Compute Engine
     * [zone](/compute/docs/zones#available) in which the cluster resides.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaSetMaintenancePolicyRequest {
   

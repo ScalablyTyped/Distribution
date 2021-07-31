@@ -2,7 +2,6 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * values at the time of the request. Statistics are only returned for live
   * broadcasts.
   */
-@js.native
 trait SchemaLiveBroadcastStatistics extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SchemaLiveBroadcastStatistics extends StObject {
     * of viewers watching an archived video of a live broadcast that already
     * ended.
     */
-  var concurrentViewers: js.UndefOr[String] = js.native
+  var concurrentViewers: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of live chat messages currently on the broadcast. The
@@ -32,7 +30,7 @@ trait SchemaLiveBroadcastStatistics extends StObject {
     * would not identify the number of chat messages for an archived video of a
     * completed live broadcast.
     */
-  var totalChatCount: js.UndefOr[String] = js.native
+  var totalChatCount: js.UndefOr[String] = js.undefined
 }
 object SchemaLiveBroadcastStatistics {
   

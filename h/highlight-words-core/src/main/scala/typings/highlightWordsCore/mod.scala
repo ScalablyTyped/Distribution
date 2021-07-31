@@ -2,23 +2,24 @@ package typings.highlightWordsCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("highlight-words-core", "findAll")
+  @JSImport("highlight-words-core", JSImport.Namespace)
   @js.native
-  def findAll(args: FindAllArgs): js.Array[Chunk] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def findAll(args: FindAllArgs): js.Array[Chunk] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAll")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[Chunk]]
+  
   trait Chunk extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var highlight: Boolean = js.native
+    var highlight: Boolean
     
-    var start: Double = js.native
+    var start: Double
   }
   object Chunk {
     
@@ -42,10 +43,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait FindAllArgs extends FindChunksArgs {
+  trait FindAllArgs
+    extends StObject
+       with FindChunksArgs {
     
-    var findChunks: js.UndefOr[js.Function1[/* args */ FindChunksArgs, js.Array[Chunk]]] = js.native
+    var findChunks: js.UndefOr[js.Function1[/* args */ FindChunksArgs, js.Array[Chunk]]] = js.undefined
   }
   object FindAllArgs {
     
@@ -66,18 +68,17 @@ object mod {
     }
   }
   
-  @js.native
   trait FindChunksArgs extends StObject {
     
-    var autoEscape: js.UndefOr[Boolean] = js.native
+    var autoEscape: js.UndefOr[Boolean] = js.undefined
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var sanitize: js.UndefOr[js.Function1[/* text */ String, String]] = js.native
+    var sanitize: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
     
-    var searchWords: js.Array[String] = js.native
+    var searchWords: js.Array[String]
     
-    var textToHighlight: String = js.native
+    var textToHighlight: String
   }
   object FindChunksArgs {
     

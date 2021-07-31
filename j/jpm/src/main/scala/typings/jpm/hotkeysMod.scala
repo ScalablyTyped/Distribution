@@ -3,15 +3,13 @@ package typings.jpm
 import typings.jpm.anon.Combo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hotkeysMod {
   
-  @js.native
   trait Hotkey extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
   }
   object Hotkey {
     

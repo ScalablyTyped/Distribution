@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object templateMod {
@@ -24,7 +23,7 @@ object templateMod {
       */
     def this(name: String) = this()
     def this(name: String, args: TemplateArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: TemplateArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -50,6 +49,10 @@ object templateMod {
   /* static members */
   object Template {
     
+    @JSImport("@pulumi/aws/ses/template", "Template")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Template resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -59,50 +62,44 @@ object templateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ses/template", "Template.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Template = js.native
-    @JSImport("@pulumi/aws/ses/template", "Template.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Template = js.native
-    @JSImport("@pulumi/aws/ses/template", "Template.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TemplateState): Template = js.native
-    @JSImport("@pulumi/aws/ses/template", "Template.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TemplateState, opts: CustomResourceOptions): Template = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Template]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Template]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TemplateState): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Template]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TemplateState, opts: CustomResourceOptions): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Template]
     
     /**
       * Returns true if the given object is an instance of Template.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ses/template", "Template.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/template.Template */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/template.Template */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/template.Template */ Boolean]
   }
   
-  @js.native
   trait TemplateArgs extends StObject {
     
     /**
       * The HTML body of the email. Must be less than 500KB in size, including both the text and HTML parts.
       */
-    val html: js.UndefOr[Input[String]] = js.native
+    val html: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the template. Cannot exceed 64 characters. You will refer to this name when you send email.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The subject line of the email.
       */
-    val subject: js.UndefOr[Input[String]] = js.native
+    val subject: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The email body that will be visible to recipients whose email clients do not display HTML. Must be less than 500KB in size, including both the text and HTML parts.
       */
-    val text: js.UndefOr[Input[String]] = js.native
+    val text: js.UndefOr[Input[String]] = js.undefined
   }
   object TemplateArgs {
     
@@ -141,28 +138,27 @@ object templateMod {
     }
   }
   
-  @js.native
   trait TemplateState extends StObject {
     
     /**
       * The HTML body of the email. Must be less than 500KB in size, including both the text and HTML parts.
       */
-    val html: js.UndefOr[Input[String]] = js.native
+    val html: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the template. Cannot exceed 64 characters. You will refer to this name when you send email.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The subject line of the email.
       */
-    val subject: js.UndefOr[Input[String]] = js.native
+    val subject: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The email body that will be visible to recipients whose email clients do not display HTML. Must be less than 500KB in size, including both the text and HTML parts.
       */
-    val text: js.UndefOr[Input[String]] = js.native
+    val text: js.UndefOr[Input[String]] = js.undefined
   }
   object TemplateState {
     

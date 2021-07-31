@@ -2,11 +2,11 @@ package typings.extjs.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IXTemplateParser extends IBase {
+trait IXTemplateParser
+  extends StObject
+     with IBase {
   
   /** [Method] This method is called to process lt tpl case action gt
     * @param action String
@@ -14,13 +14,13 @@ trait IXTemplateParser extends IBase {
     */
   var doCase: js.UndefOr[
     js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] This method is called to process lt tpl default gt */
-  var doDefault: js.UndefOr[js.Function0[Unit]] = js.native
+  var doDefault: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] This method is called to process lt tpl else gt */
-  var doElse: js.UndefOr[js.Function0[Unit]] = js.native
+  var doElse: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] This method is called to process lt tpl elseif action gt
     * @param action String
@@ -28,7 +28,7 @@ trait IXTemplateParser extends IBase {
     */
   var doElseIf: js.UndefOr[
     js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] This method is called to process lt tpl gt
     * @param type String The type of action that is being ended.
@@ -36,12 +36,12 @@ trait IXTemplateParser extends IBase {
     */
   var doEnd: js.UndefOr[
     js.Function2[/* type */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] This method is called to process text
     * @param text String
     */
-  var doEval: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var doEval: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] This method is called to process lt tpl exec action gt
     * @param action String
@@ -49,12 +49,12 @@ trait IXTemplateParser extends IBase {
     */
   var doExec: js.UndefOr[
     js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] This method is called to process expressions like  expr
     * @param expr String The body of the expression (inside "{[" and "]}").
     */
-  var doExpr: js.UndefOr[js.Function1[/* expr */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var doExpr: js.UndefOr[js.Function1[/* expr */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] This method is called to process lt tpl for action gt
     * @param action String
@@ -62,7 +62,7 @@ trait IXTemplateParser extends IBase {
     */
   var doFor: js.UndefOr[
     js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] This method is called to process lt tpl foreach action gt
     * @param action String
@@ -70,7 +70,7 @@ trait IXTemplateParser extends IBase {
     */
   var doForEach: js.UndefOr[
     js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] This method is called to process lt tpl if action gt
     * @param action String
@@ -78,7 +78,7 @@ trait IXTemplateParser extends IBase {
     */
   var doIf: js.UndefOr[
     js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] This method is called to process lt tpl switch action gt
     * @param action String
@@ -86,21 +86,21 @@ trait IXTemplateParser extends IBase {
     */
   var doSwitch: js.UndefOr[
     js.Function2[/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] This method is called to process simple tags like tag  */
-  var doTag: js.UndefOr[js.Function0[Unit]] = js.native
+  var doTag: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] This method is called to process a piece of raw text from the tpl
     * @param text String
     */
-  var doText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var doText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] This method is called to process an empty lt tpl gt */
-  var doTpl: js.UndefOr[js.Function0[Unit]] = js.native
+  var doTpl: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Property] (Number) */
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
 }
 object IXTemplateParser {
   

@@ -2,18 +2,16 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleSummary extends StObject {
   
-  var Action: js.UndefOr[RuleAction] = js.native
+  var Action: js.UndefOr[RuleAction] = js.undefined
   
   /**
     * The name of the rule. 
     */
-  var Name: js.UndefOr[EntityName] = js.native
+  var Name: js.UndefOr[EntityName] = js.undefined
 }
 object RuleSummary {
   

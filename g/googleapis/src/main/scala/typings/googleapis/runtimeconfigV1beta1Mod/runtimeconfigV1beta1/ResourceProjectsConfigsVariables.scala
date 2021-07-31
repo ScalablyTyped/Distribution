@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/runtimeconfig/v1beta1", "runtimeconfig_v1beta1.Resource$Projects$Configs$Variables")
@@ -37,7 +36,7 @@ class ResourceProjectsConfigsVariables protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaVariable] = js.native
   def create(callback: BodyResponseCallback[SchemaVariable]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
   def create(params: ParamsResourceProjectsConfigsVariablesCreate): GaxiosPromise[SchemaVariable] = js.native
   def create(
     params: ParamsResourceProjectsConfigsVariablesCreate,
@@ -73,7 +72,7 @@ class ResourceProjectsConfigsVariables protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsConfigsVariablesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsConfigsVariablesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -102,7 +101,7 @@ class ResourceProjectsConfigsVariables protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaVariable] = js.native
   def get(callback: BodyResponseCallback[SchemaVariable]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
   def get(params: ParamsResourceProjectsConfigsVariablesGet): GaxiosPromise[SchemaVariable] = js.native
   def get(params: ParamsResourceProjectsConfigsVariablesGet, callback: BodyResponseCallback[SchemaVariable]): Unit = js.native
   def get(
@@ -138,7 +137,7 @@ class ResourceProjectsConfigsVariables protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListVariablesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListVariablesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListVariablesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListVariablesResponse] = js.native
   def list(params: ParamsResourceProjectsConfigsVariablesList): GaxiosPromise[SchemaListVariablesResponse] = js.native
   def list(
     params: ParamsResourceProjectsConfigsVariablesList,
@@ -175,7 +174,7 @@ class ResourceProjectsConfigsVariables protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsConfigsVariablesTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsConfigsVariablesTestiampermissions,
@@ -208,7 +207,7 @@ class ResourceProjectsConfigsVariables protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaVariable] = js.native
   def update(callback: BodyResponseCallback[SchemaVariable]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
   def update(params: ParamsResourceProjectsConfigsVariablesUpdate): GaxiosPromise[SchemaVariable] = js.native
   def update(
     params: ParamsResourceProjectsConfigsVariablesUpdate,
@@ -250,7 +249,7 @@ class ResourceProjectsConfigsVariables protected () extends StObject {
     */
   def watch(): GaxiosPromise[SchemaVariable] = js.native
   def watch(callback: BodyResponseCallback[SchemaVariable]): Unit = js.native
-  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
+  def watch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
   def watch(params: ParamsResourceProjectsConfigsVariablesWatch): GaxiosPromise[SchemaVariable] = js.native
   def watch(
     params: ParamsResourceProjectsConfigsVariablesWatch,

@@ -2,36 +2,34 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to search for potentially sensitive info in an image and redact it
   * by covering it with a colored rectangle.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2RedactImageRequest extends StObject {
   
   /**
     * The content must be PNG, JPEG, SVG or BMP.
     */
-  var byteItem: js.UndefOr[SchemaGooglePrivacyDlpV2ByteContentItem] = js.native
+  var byteItem: js.UndefOr[SchemaGooglePrivacyDlpV2ByteContentItem] = js.undefined
   
   /**
     * The configuration for specifying what content to redact from images.
     */
-  var imageRedactionConfigs: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2ImageRedactionConfig]] = js.native
+  var imageRedactionConfigs: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2ImageRedactionConfig]] = js.undefined
   
   /**
     * Whether the response should include findings along with the redacted
     * image.
     */
-  var includeFindings: js.UndefOr[Boolean] = js.native
+  var includeFindings: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Configuration for the inspector.
     */
-  var inspectConfig: js.UndefOr[SchemaGooglePrivacyDlpV2InspectConfig] = js.native
+  var inspectConfig: js.UndefOr[SchemaGooglePrivacyDlpV2InspectConfig] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2RedactImageRequest {
   

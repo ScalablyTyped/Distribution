@@ -2,20 +2,18 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * MaintenancePolicy defines the maintenance policy to be used for the
   * cluster.
   */
-@js.native
 trait SchemaMaintenancePolicy extends StObject {
   
   /**
     * Specifies the maintenance window in which maintenance may be performed.
     */
-  var window: js.UndefOr[SchemaMaintenanceWindow] = js.native
+  var window: js.UndefOr[SchemaMaintenanceWindow] = js.undefined
 }
 object SchemaMaintenancePolicy {
   

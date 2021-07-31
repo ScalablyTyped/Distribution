@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unifiedSignaturesRuleMod {
@@ -22,26 +21,20 @@ object unifiedSignaturesRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/unifiedSignaturesRule", "Rule.FAILURE_STRING_OMITTING_REST_PARAMETER")
-    @js.native
-    def FAILURE_STRING_OMITTING_REST_PARAMETER(): String = js.native
-    @JSImport("tslint/lib/rules/unifiedSignaturesRule", "Rule.FAILURE_STRING_OMITTING_REST_PARAMETER")
-    @js.native
-    def FAILURE_STRING_OMITTING_REST_PARAMETER(otherLine: Double): String = js.native
+    @scala.inline
+    def FAILURE_STRING_OMITTING_REST_PARAMETER(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_OMITTING_REST_PARAMETER")().asInstanceOf[String]
+    @scala.inline
+    def FAILURE_STRING_OMITTING_REST_PARAMETER(otherLine: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_OMITTING_REST_PARAMETER")(otherLine.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("tslint/lib/rules/unifiedSignaturesRule", "Rule.FAILURE_STRING_OMITTING_SINGLE_PARAMETER")
-    @js.native
-    def FAILURE_STRING_OMITTING_SINGLE_PARAMETER(): String = js.native
-    @JSImport("tslint/lib/rules/unifiedSignaturesRule", "Rule.FAILURE_STRING_OMITTING_SINGLE_PARAMETER")
-    @js.native
-    def FAILURE_STRING_OMITTING_SINGLE_PARAMETER(otherLine: Double): String = js.native
+    @scala.inline
+    def FAILURE_STRING_OMITTING_SINGLE_PARAMETER(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_OMITTING_SINGLE_PARAMETER")().asInstanceOf[String]
+    @scala.inline
+    def FAILURE_STRING_OMITTING_SINGLE_PARAMETER(otherLine: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_OMITTING_SINGLE_PARAMETER")(otherLine.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("tslint/lib/rules/unifiedSignaturesRule", "Rule.FAILURE_STRING_SINGLE_PARAMETER_DIFFERENCE")
-    @js.native
-    def FAILURE_STRING_SINGLE_PARAMETER_DIFFERENCE(otherLine: js.UndefOr[scala.Nothing], type1: String, type2: String): String = js.native
-    @JSImport("tslint/lib/rules/unifiedSignaturesRule", "Rule.FAILURE_STRING_SINGLE_PARAMETER_DIFFERENCE")
-    @js.native
-    def FAILURE_STRING_SINGLE_PARAMETER_DIFFERENCE(otherLine: Double, type1: String, type2: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING_SINGLE_PARAMETER_DIFFERENCE(otherLine: Double, type1: String, type2: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_SINGLE_PARAMETER_DIFFERENCE")(otherLine.asInstanceOf[js.Any], type1.asInstanceOf[js.Any], type2.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def FAILURE_STRING_SINGLE_PARAMETER_DIFFERENCE(otherLine: Unit, type1: String, type2: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_SINGLE_PARAMETER_DIFFERENCE")(otherLine.asInstanceOf[js.Any], type1.asInstanceOf[js.Any], type2.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/unifiedSignaturesRule", "Rule.FAILURE_STRING_START")
     @js.native

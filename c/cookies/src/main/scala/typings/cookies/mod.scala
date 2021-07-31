@@ -15,19 +15,20 @@ import typings.node.httpMod.ServerResponse
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("cookies", JSImport.Namespace)
   @js.native
-  val ^ : CookiesFunction = js.native
+  val ^ : js.Object & CookiesFunction = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("cookies", JSImport.Namespace)
   @js.native
-  class Class protected () extends Cookies {
+  class Class protected ()
+    extends StObject
+       with Cookies {
     def this(request: IncomingMessage, response: ServerResponse) = this()
     /**
       * "options" array of key strings is deprecated, provide using options {"keys": keygrip}
@@ -44,42 +45,82 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("cookies", "Cookie")
   @js.native
-  class CookieCls protected () extends Cookie {
+  class CookieCls protected ()
+    extends StObject
+       with Cookie {
     def this(name: String) = this()
     def this(name: String, value: String) = this()
-    def this(name: String, value: js.UndefOr[scala.Nothing], attrs: CookieAttr) = this()
     def this(name: String, value: String, attrs: CookieAttr) = this()
-  }
-  
-  @js.native
-  trait Cookie extends StObject {
+    def this(name: String, value: Unit, attrs: CookieAttr) = this()
     
+    /* CompleteClass */
     var domain: String = js.native
     
+    /* CompleteClass */
     var expires: Date = js.native
     
+    /* CompleteClass */
     var httpOnly: Boolean = js.native
     
+    /* CompleteClass */
     var maxAge: Double = js.native
     
     /**
       * "maxage" is deprecated, use "maxAge" instead
       */
+    /* CompleteClass */
     var maxage: Double = js.native
     
+    /* CompleteClass */
     var name: String = js.native
     
+    /* CompleteClass */
     var overwrite: Boolean = js.native
     
+    /* CompleteClass */
     var path: String = js.native
     
+    /* CompleteClass */
     var sameSite: Boolean = js.native
     
+    /* CompleteClass */
     var secure: Boolean = js.native
     
-    def toHeader(): String = js.native
+    /* CompleteClass */
+    override def toHeader(): String = js.native
     
+    /* CompleteClass */
     var value: String = js.native
+  }
+  
+  trait Cookie extends StObject {
+    
+    var domain: String
+    
+    var expires: Date
+    
+    var httpOnly: Boolean
+    
+    var maxAge: Double
+    
+    /**
+      * "maxage" is deprecated, use "maxAge" instead
+      */
+    var maxage: Double
+    
+    var name: String
+    
+    var overwrite: Boolean
+    
+    var path: String
+    
+    var sameSite: Boolean
+    
+    var secure: Boolean
+    
+    def toHeader(): String
+    
+    var value: String
   }
   object Cookie {
     
@@ -172,7 +213,8 @@ object mod extends Shortcut {
   
   @js.native
   trait CookiesFunction
-    extends /**
+    extends StObject
+       with /**
     * "options" array of key strings is deprecated, provide using options {"keys": keygrip}
     */
   /**
@@ -208,10 +250,9 @@ object mod extends Shortcut {
     def express(keys: Keygrip): Handler = js.native
   }
   
-  @js.native
   trait GetOption extends StObject {
     
-    var signed: Boolean = js.native
+    var signed: Boolean
   }
   object GetOption {
     
@@ -239,12 +280,11 @@ object mod extends Shortcut {
     */
   type IOptions = SetOption
   
-  @js.native
   trait Option extends StObject {
     
-    var keys: js.UndefOr[js.Array[String] | Keygrip] = js.native
+    var keys: js.UndefOr[js.Array[String] | Keygrip] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
   }
   object Option {
     
@@ -274,30 +314,29 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait SetOption extends StObject {
     
     /**
       * a string indicating the domain of the cookie (no default).
       */
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     /**
       * a Date object indicating the cookie's expiration
       * date (expires at the end of session by default).
       */
-    var expires: js.UndefOr[Date] = js.native
+    var expires: js.UndefOr[Date] = js.undefined
     
     /**
       * a boolean indicating whether the cookie is only to be sent over HTTP(S),
       * and not made available to client JavaScript (true by default).
       */
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * a number representing the milliseconds from Date.now() for expiry
       */
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /**
       * a boolean indicating whether to overwrite previously set
@@ -306,29 +345,29 @@ object mod extends Shortcut {
       * name (regardless of path or domain) are filtered out of
       * the Set-Cookie header when setting this cookie.
       */
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
     
     /**
       * a string indicating the path of the cookie (/ by default).
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * a boolean or string indicating whether the cookie is a "same site" cookie (false by default).
       * This can be set to 'strict', 'lax', or true (which maps to 'strict').
       */
-    var sameSite: js.UndefOr[strict | lax | none | Boolean] = js.native
+    var sameSite: js.UndefOr[strict | lax | none | Boolean] = js.undefined
     
     /**
       * a boolean indicating whether the cookie is only to be sent
       * over HTTPS (false by default for HTTP, true by default for HTTPS).
       */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * "secureProxy" option is deprecated; use "secure" option, provide "secure" to constructor if needed
       */
-    var secureProxy: js.UndefOr[Boolean] = js.native
+    var secureProxy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * a boolean indicating whether the cookie is to be signed (false by default).
@@ -337,7 +376,7 @@ object mod extends Shortcut {
       * representing the hash of cookie-name=cookie-value against the first Keygrip key.
       * This signature key is used to detect tampering the next time a cookie is received.
       */
-    var signed: js.UndefOr[Boolean] = js.native
+    var signed: js.UndefOr[Boolean] = js.undefined
   }
   object SetOption {
     
@@ -412,8 +451,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = CookiesFunction
+  type _To = js.Object & CookiesFunction
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: CookiesFunction = ^
+  override def _to: js.Object & CookiesFunction = ^
 }

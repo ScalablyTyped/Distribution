@@ -2,71 +2,69 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalDocumentSources extends StObject {
   
   /**
     * The account is enabled to allow external documents to be attached from BoxNet.
     */
-  var boxnetEnabled: js.UndefOr[String] = js.native
+  var boxnetEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata indicating whether the `boxnetEnabled` property is editable.
     */
   var boxnetMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The account is enabled to allow external documents to be attached from DropBox.
     */
-  var dropboxEnabled: js.UndefOr[String] = js.native
+  var dropboxEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata indicating whether the `dropboxEnabled` property is editable.
     */
   var dropboxMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The account is enabled to allow external documents to be attached from Google Drive.
     */
-  var googleDriveEnabled: js.UndefOr[String] = js.native
+  var googleDriveEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata indicating whether the `googleDriveEnabled` property is editable.
     */
   var googleDriveMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The account is enabled to allow external documents to be attached from OneDrive.
     */
-  var oneDriveEnabled: js.UndefOr[String] = js.native
+  var oneDriveEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata indicating whether the `oneDriveEnabled` property is editable.
     */
   var oneDriveMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The account is enabled to allow external documents to be attached from Salesforce.
     */
-  var salesforceEnabled: js.UndefOr[String] = js.native
+  var salesforceEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata indicating whether the `salesforceEnabled` property is editable.
     */
   var salesforceMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
 }
 object ExternalDocumentSources {
   

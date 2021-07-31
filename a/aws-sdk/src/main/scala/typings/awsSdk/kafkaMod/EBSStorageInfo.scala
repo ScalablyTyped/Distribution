@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EBSStorageInfo extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait EBSStorageInfo extends StObject {
     The size in GiB of the EBS volume for the data drive on each broker node.
     
     */
-  var VolumeSize: js.UndefOr[integerMin1Max16384] = js.native
+  var VolumeSize: js.UndefOr[integerMin1Max16384] = js.undefined
 }
 object EBSStorageInfo {
   

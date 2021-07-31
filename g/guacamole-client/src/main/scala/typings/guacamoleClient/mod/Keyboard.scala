@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "Keyboard")
@@ -30,13 +29,16 @@ object Keyboard {
   /* static members */
   object ModifierState {
     
+    @JSImport("guacamole-client", "Keyboard.ModifierState")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns the modifier state applicable to the keyboard event given.
       * @param event The keyboard event to read.
       * @returns The current state of keyboard modifiers.
       */
-    @JSImport("guacamole-client", "Keyboard.ModifierState.fromKeyboardEvent")
-    @js.native
-    def fromKeyboardEvent(event: KeyboardEvent): typings.guacamoleClient.keyboardMod.Keyboard.ModifierState = js.native
+    @scala.inline
+    def fromKeyboardEvent(event: KeyboardEvent): typings.guacamoleClient.keyboardMod.Keyboard.ModifierState = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKeyboardEvent")(event.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleClient.keyboardMod.Keyboard.ModifierState]
   }
 }

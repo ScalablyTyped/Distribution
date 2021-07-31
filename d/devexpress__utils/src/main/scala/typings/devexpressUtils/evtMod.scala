@@ -7,7 +7,6 @@ import typings.std.TouchEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object evtMod {
@@ -22,9 +21,8 @@ object evtMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@devexpress/utils/lib/utils/evt", "EvtUtils.cancelBubble")
-    @js.native
-    def cancelBubble(evt: Event): Unit = js.native
+    @scala.inline
+    def cancelBubble(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelBubble")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("@devexpress/utils/lib/utils/evt", "EvtUtils.clientEventRequiresDocScrollCorrection")
     @js.native
@@ -32,49 +30,37 @@ object evtMod {
     @scala.inline
     def clientEventRequiresDocScrollCorrection_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clientEventRequiresDocScrollCorrection")(x.asInstanceOf[js.Any])
     
-    @JSImport("@devexpress/utils/lib/utils/evt", "EvtUtils.getEventSource")
-    @js.native
-    def getEventSource(evt: Event): HTMLElement | Null = js.native
+    @scala.inline
+    def getEventSource(evt: Event): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventSource")(evt.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/evt", "EvtUtils.getEventSourceByPosition")
-    @js.native
-    def getEventSourceByPosition(evt: MouseEvent): HTMLElement | Null = js.native
-    @JSImport("@devexpress/utils/lib/utils/evt", "EvtUtils.getEventSourceByPosition")
-    @js.native
-    def getEventSourceByPosition(evt: TouchEvent): HTMLElement | Null = js.native
+    @scala.inline
+    def getEventSourceByPosition(evt: MouseEvent): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventSourceByPosition")(evt.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
+    @scala.inline
+    def getEventSourceByPosition(evt: TouchEvent): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventSourceByPosition")(evt.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/evt", "EvtUtils.getEventX")
-    @js.native
-    def getEventX(evt: MouseEvent): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/evt", "EvtUtils.getEventX")
-    @js.native
-    def getEventX(evt: TouchEvent): Double = js.native
+    @scala.inline
+    def getEventX(evt: MouseEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventX")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def getEventX(evt: TouchEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventX")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("@devexpress/utils/lib/utils/evt", "EvtUtils.getEventY")
-    @js.native
-    def getEventY(evt: MouseEvent): Double = js.native
-    @JSImport("@devexpress/utils/lib/utils/evt", "EvtUtils.getEventY")
-    @js.native
-    def getEventY(evt: TouchEvent): Double = js.native
+    @scala.inline
+    def getEventY(evt: MouseEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventY")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def getEventY(evt: TouchEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventY")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("@devexpress/utils/lib/utils/evt", "EvtUtils.getMouseWheelEventName")
-    @js.native
-    def getMouseWheelEventName(): String = js.native
+    @scala.inline
+    def getMouseWheelEventName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMouseWheelEventName")().asInstanceOf[String]
     
-    @JSImport("@devexpress/utils/lib/utils/evt", "EvtUtils.getWheelDelta")
-    @js.native
-    def getWheelDelta(evt: WheelEvent): Double = js.native
+    @scala.inline
+    def getWheelDelta(evt: WheelEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWheelDelta")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("@devexpress/utils/lib/utils/evt", "EvtUtils.isLeftButtonPressed")
-    @js.native
-    def isLeftButtonPressed(evt: Event): Boolean = js.native
+    @scala.inline
+    def isLeftButtonPressed(evt: Event): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeftButtonPressed")(evt.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("@devexpress/utils/lib/utils/evt", "EvtUtils.preventEvent")
-    @js.native
-    def preventEvent(evt: Event): Unit = js.native
+    @scala.inline
+    def preventEvent(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@devexpress/utils/lib/utils/evt", "EvtUtils.preventEventAndBubble")
-    @js.native
-    def preventEventAndBubble(evt: Event): Unit = js.native
+    @scala.inline
+    def preventEventAndBubble(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventEventAndBubble")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

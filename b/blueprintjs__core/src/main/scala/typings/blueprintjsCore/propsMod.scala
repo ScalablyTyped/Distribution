@@ -18,48 +18,47 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propsMod {
+  
+  @JSImport("@blueprintjs/core/lib/esm/common/props", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@blueprintjs/core/lib/esm/common/props", "DISPLAYNAME_PREFIX")
   @js.native
   val DISPLAYNAME_PREFIX: /* "Blueprint3" */ String = js.native
   
-  @JSImport("@blueprintjs/core/lib/esm/common/props", "removeNonHTMLProps")
-  @js.native
-  def removeNonHTMLProps(props: StringDictionary[js.Any]): StringDictionary[js.Any] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/props", "removeNonHTMLProps")
-  @js.native
-  def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.UndefOr[scala.Nothing], shouldMerge: Boolean): StringDictionary[js.Any] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/props", "removeNonHTMLProps")
-  @js.native
-  def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String]): StringDictionary[js.Any] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/props", "removeNonHTMLProps")
-  @js.native
-  def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String], shouldMerge: Boolean): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def removeNonHTMLProps(props: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String], shouldMerge: Boolean): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: Unit, shouldMerge: Boolean): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   type HTMLDivProps = HTMLAttributes[HTMLDivElement]
   
   type HTMLInputProps = InputHTMLAttributes[HTMLInputElement]
   
-  @js.native
   trait IActionProps
-    extends IIntentProps
+    extends StObject
+       with IIntentProps
        with IProps {
     
     /** Whether this action is non-interactive. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Name of a Blueprint UI icon (or an icon element) to render before the text. */
-    var icon: js.UndefOr[IconName | MaybeElement] = js.native
+    var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
     
     /** Click event handler. */
-    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     /** Action text. Can be any single React renderable. */
-    var text: js.UndefOr[ReactNode] = js.native
+    var text: js.UndefOr[ReactNode] = js.undefined
   }
   object IActionProps {
     
@@ -101,17 +100,16 @@ object propsMod {
     }
   }
   
-  @js.native
   trait IControlledProps extends StObject {
     
     /** Initial value of the input, for uncontrolled usage. */
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
     /** Change event handler. Use `event.target.value` for new value. */
-    var onChange: js.UndefOr[FormEventHandler[HTMLElement]] = js.native
+    var onChange: js.UndefOr[FormEventHandler[HTMLElement]] = js.undefined
     
     /** Form value of the input, for controlled usage. */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object IControlledProps {
     
@@ -144,11 +142,10 @@ object propsMod {
     }
   }
   
-  @js.native
   trait IElementRefProps[E /* <: HTMLElement */] extends StObject {
     
     /** A ref handler or a ref object that receives the native HTML element rendered by this component. */
-    var elementRef: js.UndefOr[IRef[E]] = js.native
+    var elementRef: js.UndefOr[IRef[E]] = js.undefined
   }
   object IElementRefProps {
     
@@ -159,7 +156,7 @@ object propsMod {
     }
     
     @scala.inline
-    implicit class IElementRefPropsMutableBuilder[Self <: IElementRefProps[_], E /* <: HTMLElement */] (val x: Self with IElementRefProps[E]) extends AnyVal {
+    implicit class IElementRefPropsMutableBuilder[Self <: IElementRefProps[?], E /* <: HTMLElement */] (val x: Self & IElementRefProps[E]) extends AnyVal {
       
       @scala.inline
       def setElementRef(value: IRef[E]): Self = StObject.set(x, "elementRef", value.asInstanceOf[js.Any])
@@ -172,11 +169,10 @@ object propsMod {
     }
   }
   
-  @js.native
   trait IIntentProps extends StObject {
     
     /** Visual intent color to apply to element. */
-    var intent: js.UndefOr[Intent] = js.native
+    var intent: js.UndefOr[Intent] = js.undefined
   }
   object IIntentProps {
     
@@ -197,14 +193,13 @@ object propsMod {
     }
   }
   
-  @js.native
   trait ILinkProps extends StObject {
     
     /** Link URL. */
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
     /** Link target attribute. Use `"_blank"` to open in a new window. */
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
   }
   object ILinkProps {
     
@@ -231,17 +226,18 @@ object propsMod {
     }
   }
   
-  @js.native
-  trait IOptionProps extends IProps {
+  trait IOptionProps
+    extends StObject
+       with IProps {
     
     /** Whether this option is non-interactive. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Label text for this option. If omitted, `value` is used as the label. */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /** Value of this option. */
-    var value: String | Double = js.native
+    var value: String | Double
   }
   object IOptionProps {
     
@@ -271,11 +267,10 @@ object propsMod {
     }
   }
   
-  @js.native
   trait IProps extends StObject {
     
     /** A space-delimited list of class names to pass along to a child element. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
   }
   object IProps {
     

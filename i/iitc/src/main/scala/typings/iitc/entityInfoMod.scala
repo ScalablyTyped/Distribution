@@ -6,7 +6,6 @@ import typings.iitc.iitcNumbers.`2`
 import typings.iitc.iitctypesMod.IITC.PortalData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entityInfoMod {
@@ -16,12 +15,10 @@ object entityInfoMod {
     /**
       * given the entity detail data, returns the team the entity belongs to. Uses TEAM_* enum values.
       */
-    @JSGlobal("getTeam")
-    @js.native
-    def getTeam(details: PortalData): `0` | `1` | `2` = js.native
+    @scala.inline
+    def getTeam(details: PortalData): `0` | `1` | `2` = js.Dynamic.global.applyDynamic("getTeam")(details.asInstanceOf[js.Any]).asInstanceOf[`0` | `1` | `2`]
     
-    @JSGlobal("teamStringToId")
-    @js.native
-    def teamStringToId(teamStr: String): `0` | `1` | `2` = js.native
+    @scala.inline
+    def teamStringToId(teamStr: String): `0` | `1` | `2` = js.Dynamic.global.applyDynamic("teamStringToId")(teamStr.asInstanceOf[js.Any]).asInstanceOf[`0` | `1` | `2`]
   }
 }

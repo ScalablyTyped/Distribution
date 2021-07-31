@@ -3,32 +3,32 @@ package typings.clampJs
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("clamp-js", JSImport.Namespace)
-  @js.native
-  def apply(element: HTMLElement): ClampResponse = js.native
-  @JSImport("clamp-js", JSImport.Namespace)
-  @js.native
-  def apply(element: HTMLElement, options: ClampOptions): ClampResponse = js.native
+  @scala.inline
+  def apply(element: HTMLElement): ClampResponse = ^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any]).asInstanceOf[ClampResponse]
+  @scala.inline
+  def apply(element: HTMLElement, options: ClampOptions): ClampResponse = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClampResponse]
   
+  @JSImport("clamp-js", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ClampOptions extends StObject {
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var clamp: js.UndefOr[Double | String] = js.native
+    var clamp: js.UndefOr[Double | String] = js.undefined
     
-    var splitOnChars: js.UndefOr[js.Array[String]] = js.native
+    var splitOnChars: js.UndefOr[js.Array[String]] = js.undefined
     
-    var truncationChar: js.UndefOr[String] = js.native
+    var truncationChar: js.UndefOr[String] = js.undefined
     
-    var truncationHTML: js.UndefOr[String | Null] = js.native
+    var truncationHTML: js.UndefOr[String | Null] = js.undefined
     
-    var useNativeClamp: js.UndefOr[Boolean] = js.native
+    var useNativeClamp: js.UndefOr[Boolean] = js.undefined
   }
   object ClampOptions {
     
@@ -85,12 +85,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ClampResponse extends StObject {
     
-    var clamped: String = js.native
+    var clamped: String
     
-    var original: String = js.native
+    var original: String
   }
   object ClampResponse {
     

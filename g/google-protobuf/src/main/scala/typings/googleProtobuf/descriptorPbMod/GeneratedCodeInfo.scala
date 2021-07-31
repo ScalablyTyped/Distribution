@@ -10,7 +10,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo")
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class GeneratedCodeInfo () extends Message {
   
   def addAnnotation(): Annotation = js.native
-  def addAnnotation(value: js.UndefOr[scala.Nothing], index: Double): Annotation = js.native
+  def addAnnotation(value: Unit, index: Double): Annotation = js.native
   def addAnnotation(value: Annotation): Annotation = js.native
   def addAnnotation(value: Annotation, index: Double): Annotation = js.native
   
@@ -79,13 +78,11 @@ object GeneratedCodeInfo {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo.Annotation.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): Annotation = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Annotation]
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo.Annotation.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: Annotation, reader: BinaryReader): Annotation = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: Annotation, reader: BinaryReader): Annotation = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Annotation]
     
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo.Annotation.extensions")
     @js.native
@@ -100,24 +97,21 @@ object GeneratedCodeInfo {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo.Annotation.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: Annotation, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: Annotation, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo.Annotation.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: Annotation): typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: Annotation): typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var begin: js.UndefOr[Double] = js.native
+      var begin: js.UndefOr[Double] = js.undefined
       
-      var end: js.UndefOr[Double] = js.native
+      var end: js.UndefOr[Double] = js.undefined
       
-      var pathList: js.Array[Double] = js.native
+      var pathList: js.Array[Double]
       
-      var sourceFile: js.UndefOr[String] = js.native
+      var sourceFile: js.UndefOr[String] = js.undefined
     }
     object AsObject {
       
@@ -157,13 +151,11 @@ object GeneratedCodeInfo {
     }
   }
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): GeneratedCodeInfo = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GeneratedCodeInfo]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: GeneratedCodeInfo, reader: BinaryReader): GeneratedCodeInfo = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: GeneratedCodeInfo, reader: BinaryReader): GeneratedCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GeneratedCodeInfo]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo.extensions")
   @js.native
@@ -178,18 +170,15 @@ object GeneratedCodeInfo {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: GeneratedCodeInfo, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: GeneratedCodeInfo, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: GeneratedCodeInfo): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: GeneratedCodeInfo): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var annotationList: js.Array[typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject] = js.native
+    var annotationList: js.Array[typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject]
   }
   object AsObject {
     

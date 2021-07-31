@@ -2,21 +2,19 @@ package typings.flexmonster.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Blocking extends StObject {
   
-  var blocking: js.UndefOr[Boolean] = js.native
+  var blocking: js.UndefOr[Boolean] = js.undefined
   
-  var buttons: js.UndefOr[js.Array[Handler]] = js.native
+  var buttons: js.UndefOr[js.Array[Handler]] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Blocking {
   

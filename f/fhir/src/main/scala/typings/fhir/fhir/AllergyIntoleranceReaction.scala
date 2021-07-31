@@ -2,64 +2,64 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Adverse Reaction Events linked to exposure to substance
   */
-@js.native
-trait AllergyIntoleranceReaction extends BackboneElement {
+trait AllergyIntoleranceReaction
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'onset'.
     */
-  var _onset: js.UndefOr[Element] = js.native
+  var _onset: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'severity'.
     */
-  var _severity: js.UndefOr[Element] = js.native
+  var _severity: js.UndefOr[Element] = js.undefined
   
   /**
     * Description of the event as a whole
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * How the subject was exposed to the substance
     */
-  var exposureRoute: js.UndefOr[CodeableConcept] = js.native
+  var exposureRoute: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Clinical symptoms/signs associated with the Event
     */
-  var manifestation: js.Array[CodeableConcept] = js.native
+  var manifestation: js.Array[CodeableConcept]
   
   /**
     * Text about event not captured in other fields
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.native
+  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
     * Date(/time) when manifestations showed
     */
-  var onset: js.UndefOr[dateTime] = js.native
+  var onset: js.UndefOr[dateTime] = js.undefined
   
   /**
     * mild | moderate | severe (of event as a whole)
     */
-  var severity: js.UndefOr[code] = js.native
+  var severity: js.UndefOr[code] = js.undefined
   
   /**
     * Specific substance or pharmaceutical product considered to be responsible for event
     */
-  var substance: js.UndefOr[CodeableConcept] = js.native
+  var substance: js.UndefOr[CodeableConcept] = js.undefined
 }
 object AllergyIntoleranceReaction {
   

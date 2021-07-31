@@ -3,19 +3,17 @@ package typings.miniprogram.anon
 import typings.miniprogram.miniprogramBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Success extends StObject {
   
-  var success: `true` = js.native
+  var success: `true`
 }
 object Success {
   
   @scala.inline
-  def apply(success: `true`): Success = {
-    val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
+  def apply(): Success = {
+    val __obj = js.Dynamic.literal(success = true)
     __obj.asInstanceOf[Success]
   }
   

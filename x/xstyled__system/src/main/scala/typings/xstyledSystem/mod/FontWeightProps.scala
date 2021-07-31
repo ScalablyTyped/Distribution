@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontWeightProps extends StObject {
   
   val fontWeight: js.UndefOr[
     ResponsiveValue[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _) | AliasKey
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | AliasKey
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object FontWeightProps {
   
@@ -28,7 +26,7 @@ object FontWeightProps {
     @scala.inline
     def setFontWeight(
       value: ResponsiveValue[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _) | AliasKey
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | AliasKey
         ]
     ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object FontWeightProps {
     def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def setFontWeightVarargs(value: (js.Any | AliasKey)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+    def setFontWeightVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | AliasKey)*
+    ): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
   }
 }

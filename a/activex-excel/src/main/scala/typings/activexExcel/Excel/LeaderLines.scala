@@ -2,28 +2,26 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeaderLines extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Border: typings.activexExcel.Excel.Border = js.native
+  val Border: typings.activexExcel.Excel.Border
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
   @JSName("Excel.LeaderLines_typekey")
-  var ExcelDotLeaderLines_typekey: LeaderLines = js.native
+  var ExcelDotLeaderLines_typekey: LeaderLines
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Select(): Unit = js.native
+  def Select(): Unit
 }
 object LeaderLines {
   

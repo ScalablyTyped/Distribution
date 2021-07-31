@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFunctionsResponse extends StObject {
   
   /** The functions that match the request. */
-  var functions: js.UndefOr[js.Array[CloudFunction]] = js.native
+  var functions: js.UndefOr[js.Array[CloudFunction]] = js.undefined
   
   /**
     * If not empty, indicates that there may be more functions that match the request; this value should be passed in a new google.cloud.functions.v1.ListFunctionsRequest to get more
     * functions.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Locations that could not be reached. The response does not include any functions from these locations. */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListFunctionsResponse {
   

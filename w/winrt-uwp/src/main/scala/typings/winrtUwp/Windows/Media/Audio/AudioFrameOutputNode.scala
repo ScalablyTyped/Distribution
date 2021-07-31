@@ -6,54 +6,52 @@ import typings.winrtUwp.Windows.Media.Effects.IAudioEffectDefinition
 import typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an audio frame output node. */
-@js.native
 trait AudioFrameOutputNode extends StObject {
   
   /** Closes the audio frame output node. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /** Gets or sets a value indicating if the audio frame output node consumes input. */
-  var consumeInput: Boolean = js.native
+  var consumeInput: Boolean
   
   /**
     * Disables all effects in the EffectDefinitions list with the specified effect definition.
     * @param definition The effect definition of the effects to disable.
     */
-  def disableEffectsByDefinition(definition: IAudioEffectDefinition): Unit = js.native
+  def disableEffectsByDefinition(definition: IAudioEffectDefinition): Unit
   
   /** Gets the list of effect definitions for the audio frame output node. */
-  var effectDefinitions: IVector[IAudioEffectDefinition] = js.native
+  var effectDefinitions: IVector[IAudioEffectDefinition]
   
   /**
     * Enables all effects in the EffectDefinitions list with the specified effect definition.
     * @param definition The effect definition of the effects to enable.
     */
-  def enableEffectsByDefinition(definition: IAudioEffectDefinition): Unit = js.native
+  def enableEffectsByDefinition(definition: IAudioEffectDefinition): Unit
   
   /** Gets the encoding properties for the audio frame output node. */
-  var encodingProperties: AudioEncodingProperties = js.native
+  var encodingProperties: AudioEncodingProperties
   
   /**
     * Gets an audio frame containing all of the data accumulated by this node since the previous call to GetFrame. If GetFrame has not yet been called, the audio frame will contain all of the data accumulated since the node was created.
     * @return An AudioFrame object representing the frame.
     */
-  def getFrame(): AudioFrame = js.native
+  def getFrame(): AudioFrame
   
   /** Gets or sets the outgoing gain for the audio frame output node. */
-  var outgoingGain: Double = js.native
+  var outgoingGain: Double
   
   /** Resets the audio frame output node. */
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   /** Starts the audio frame output node. */
-  def start(): Unit = js.native
+  def start(): Unit
   
   /** Stops the audio frame output node. */
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object AudioFrameOutputNode {
   

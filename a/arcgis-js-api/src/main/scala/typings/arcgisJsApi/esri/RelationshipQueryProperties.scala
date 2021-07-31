@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationshipQueryProperties extends StObject {
   
   /**
@@ -13,105 +11,105 @@ trait RelationshipQueryProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#gdbVersion)
     */
-  var gdbVersion: js.UndefOr[String] = js.native
+  var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the number of decimal places for the geometries returned by the query operation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#geometryPrecision)
     */
-  var geometryPrecision: js.UndefOr[Double] = js.native
+  var geometryPrecision: js.UndefOr[Double] = js.undefined
   
   /**
     * The historic moment to query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#historicMoment)
     */
-  var historicMoment: js.UndefOr[DateProperties] = js.native
+  var historicMoment: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * The maximum allowable offset used for generalizing geometries returned by the query operation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#maxAllowableOffset)
     */
-  var maxAllowableOffset: js.UndefOr[Double] = js.native
+  var maxAllowableOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of features to retrieve.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#num)
     */
-  var num: js.UndefOr[Double] = js.native
+  var num: js.UndefOr[Double] = js.undefined
   
   /**
     * An array of objectIds for the features in the layer/table being queried.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#objectIds)
     */
-  var objectIds: js.UndefOr[js.Array[Double]] = js.native
+  var objectIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * One or more field names used to order the query results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#orderByFields)
     */
-  var orderByFields: js.UndefOr[js.Array[String]] = js.native
+  var orderByFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Attribute fields to include in the FeatureSet.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#outFields)
     */
-  var outFields: js.UndefOr[js.Array[String]] = js.native
+  var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The spatial reference for the returned geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#outSpatialReference)
     */
-  var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * The ID of the relationship to be queried.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#relationshipId)
     */
-  var relationshipId: js.UndefOr[Double] = js.native
+  var relationshipId: js.UndefOr[Double] = js.undefined
   
   /**
     * If `true`, each feature in the [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) includes the geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#returnGeometry)
     */
-  var returnGeometry: js.UndefOr[Boolean] = js.native
+  var returnGeometry: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#returnGeometry) is `true`, then m-values are included in the geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#returnM)
     */
-  var returnM: js.UndefOr[Boolean] = js.native
+  var returnM: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#returnGeometry) is `true`, then z-values are included in the geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#returnZ)
     */
-  var returnZ: js.UndefOr[Boolean] = js.native
+  var returnZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The zero-based index indicating where to begin retrieving features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#start)
     */
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
   
   /**
     * The definition expression to be applied to the related table or layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#where)
     */
-  var where: js.UndefOr[String] = js.native
+  var where: js.UndefOr[String] = js.undefined
 }
 object RelationshipQueryProperties {
   

@@ -5,29 +5,29 @@ import typings.awsSdkClientCodecommitNode.typesRepositoryMetadataMod.Unmarshalle
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBatchGetRepositoriesOutputMod {
   
-  @js.native
-  trait BatchGetRepositoriesOutput extends OutputTypesUnion {
+  trait BatchGetRepositoriesOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>A list of repositories returned by the batch get repositories operation.</p>
       */
-    var repositories: js.UndefOr[js.Array[UnmarshalledRepositoryMetadata]] = js.native
+    var repositories: js.UndefOr[js.Array[UnmarshalledRepositoryMetadata]] = js.undefined
     
     /**
       * <p>Returns a list of repository names for which information could not be found.</p>
       */
-    var repositoriesNotFound: js.UndefOr[js.Array[String]] = js.native
+    var repositoriesNotFound: js.UndefOr[js.Array[String]] = js.undefined
   }
   object BatchGetRepositoriesOutput {
     

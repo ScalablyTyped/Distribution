@@ -8,7 +8,6 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyboardMod {
@@ -131,14 +130,17 @@ object keyboardMod {
     /* static members */
     object ModifierState {
       
+      @JSImport("guacamole-client/lib/Keyboard", "Keyboard.ModifierState")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Returns the modifier state applicable to the keyboard event given.
         * @param event The keyboard event to read.
         * @returns The current state of keyboard modifiers.
         */
-      @JSImport("guacamole-client/lib/Keyboard", "Keyboard.ModifierState.fromKeyboardEvent")
-      @js.native
-      def fromKeyboardEvent(event: KeyboardEvent): ModifierState = js.native
+      @scala.inline
+      def fromKeyboardEvent(event: KeyboardEvent): ModifierState = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKeyboardEvent")(event.asInstanceOf[js.Any]).asInstanceOf[ModifierState]
     }
   }
 }

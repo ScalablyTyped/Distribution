@@ -2,7 +2,6 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GET /v1/albums?ids={ids}
   * https://developer.spotify.com/web-api/get-several-albums/
   */
-@js.native
 trait MultipleAlbumsResponse extends StObject {
   
-  var albums: js.Array[AlbumObjectFull] = js.native
+  var albums: js.Array[AlbumObjectFull]
 }
 object MultipleAlbumsResponse {
   

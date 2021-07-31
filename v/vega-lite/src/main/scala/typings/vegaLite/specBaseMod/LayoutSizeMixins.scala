@@ -3,10 +3,8 @@ package typings.vegaLite.specBaseMod
 import typings.vegaLite.vegaLiteStrings.container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayoutSizeMixins extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait LayoutSizeMixins extends StObject {
     *
     * __See also:__ [`height`](https://vega.github.io/vega-lite/docs/size.html) documentation.
     */
-  var height: js.UndefOr[Double | container | Step] = js.native
+  var height: js.UndefOr[Double | container | Step] = js.undefined
   
   /**
     * The width of a visualization.
@@ -38,7 +36,7 @@ trait LayoutSizeMixins extends StObject {
     *
     * __See also:__ [`width`](https://vega.github.io/vega-lite/docs/size.html) documentation.
     */
-  var width: js.UndefOr[Double | container | Step] = js.native
+  var width: js.UndefOr[Double | container | Step] = js.undefined
 }
 object LayoutSizeMixins {
   

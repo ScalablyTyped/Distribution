@@ -3,15 +3,13 @@ package typings.angularCompiler.compileMetadataMod
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompileEntryComponentMetadata extends StObject {
   
-  var componentFactory: StaticSymbol | js.Object = js.native
+  var componentFactory: StaticSymbol | js.Object
   
-  var componentType: js.Any = js.native
+  var componentType: js.Any
 }
 object CompileEntryComponentMetadata {
   

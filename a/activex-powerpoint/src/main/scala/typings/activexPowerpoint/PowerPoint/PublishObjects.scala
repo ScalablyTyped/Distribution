@@ -2,22 +2,20 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishObjects extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): PublishObject = js.native
+  def Item(Index: Double): PublishObject
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.PublishObjects_typekey")
-  var PowerPointDotPublishObjects_typekey: PublishObjects = js.native
+  var PowerPointDotPublishObjects_typekey: PublishObjects
 }
 object PublishObjects {
   

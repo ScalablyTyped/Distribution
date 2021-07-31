@@ -2,15 +2,13 @@ package typings.actionsOnGoogle.v1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1FollowupEvent extends StObject {
   
-  var data: js.UndefOr[DialogflowV1Parameters] = js.native
+  var data: js.UndefOr[DialogflowV1Parameters] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1FollowupEvent {
   

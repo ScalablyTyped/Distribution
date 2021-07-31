@@ -17,7 +17,6 @@ import typings.chromeApps.chromeAppsStrings.progress_
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion chrome.networking.*
@@ -33,6 +32,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see[Docs]{@link https://developer.chrome.com/extensions/notifications}
   */
 object notifications {
+  
+  @JSGlobal("chrome.notifications")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * @enum
@@ -101,12 +104,10 @@ object notifications {
     * @param notificationId The id of the notification to be cleared. This is returned by notifications.create method.
     * @param callback Called to indicate whether a matching notification existed.
     */
-  @JSGlobal("chrome.notifications.clear")
-  @js.native
-  def clear(notificationId: String): Unit = js.native
-  @JSGlobal("chrome.notifications.clear")
-  @js.native
-  def clear(notificationId: String, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def clear(notificationId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(notificationId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def clear(notificationId: String, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(notificationId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates and displays a notification.
@@ -118,28 +119,24 @@ object notifications {
     * @param options Contents of the notification.
     * @param [callback] Returns the notification id (either supplied or generated) that represents the created notification.
     */
-  @JSGlobal("chrome.notifications.create")
-  @js.native
-  def create(notificationId: String, options: NotificationOptions): Unit = js.native
-  @JSGlobal("chrome.notifications.create")
-  @js.native
+  @scala.inline
+  def create(notificationId: String, options: NotificationOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(notificationId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def create(
     notificationId: String,
     options: NotificationOptions,
     callback: js.Function1[/* notificationId */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(notificationId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Creates and displays a notification.
     * @param notificationId Identifier of the notification.
     * @param options Contents of the notification.
     * @param [callback] Returns the notification id (either supplied or generated) that represents the created notification.
     */
-  @JSGlobal("chrome.notifications.create")
-  @js.native
-  def create(options: NotificationOptions): Unit = js.native
-  @JSGlobal("chrome.notifications.create")
-  @js.native
-  def create(options: NotificationOptions, callback: js.Function1[/* notificationId */ String, Unit]): Unit = js.native
+  @scala.inline
+  def create(options: NotificationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def create(options: NotificationOptions, callback: js.Function1[/* notificationId */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Retrieves all the active notifications.
@@ -151,9 +148,8 @@ object notifications {
     *  console.log('Active notifications:', Object.keys(result));
     * });
     */
-  @JSGlobal("chrome.notifications.getAll")
-  @js.native
-  def getAll_true(callback: js.Function1[/* notifications */ StringDictionary[`true`], Unit]): Unit = js.native
+  @scala.inline
+  def getAll_true(callback: js.Function1[/* notifications */ StringDictionary[`true`], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Retrieves whether the user has enabled notifications from this app .
@@ -161,8 +157,7 @@ object notifications {
     * @param callback Returns the current permission level.
     * @see enum PermissionLevel
     */
-  @JSGlobal("chrome.notifications.getPermissionLevel")
-  @js.native
+  @scala.inline
   def getPermissionLevel(
     callback: js.Function1[
       /* level */ ToStringLiteral[
@@ -175,7 +170,7 @@ object notifications {
       ], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPermissionLevel")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** The user pressed a button in the notification. */
   @JSGlobal("chrome.notifications.onButtonClicked")
@@ -216,14 +211,12 @@ object notifications {
     * @param options Contents of the notification to update to.
     * @param [callback] Called to indicate whether a matching notification existed.
     */
-  @JSGlobal("chrome.notifications.update")
-  @js.native
-  def update(notificationId: String, options: PartialNotificationOption): Unit = js.native
-  @JSGlobal("chrome.notifications.update")
-  @js.native
+  @scala.inline
+  def update(notificationId: String, options: PartialNotificationOption): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(notificationId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def update(
     notificationId: String,
     options: PartialNotificationOption,
     callback: js.Function1[/* wasUpdated */ Boolean, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(notificationId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

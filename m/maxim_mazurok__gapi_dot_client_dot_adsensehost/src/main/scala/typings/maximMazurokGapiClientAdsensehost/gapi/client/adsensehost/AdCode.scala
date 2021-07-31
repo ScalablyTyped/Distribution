@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdsensehost.gapi.client.adsensehost
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdCode extends StObject {
   
   /** The ad code snippet. */
-  var adCode: js.UndefOr[String] = js.native
+  var adCode: js.UndefOr[String] = js.undefined
   
   /** Kind this is, in this case adsensehost#adCode. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object AdCode {
   

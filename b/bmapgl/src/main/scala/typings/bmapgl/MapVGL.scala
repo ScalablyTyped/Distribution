@@ -7,21 +7,19 @@ import typings.bmapgl.bmapglStrings.bmap
 import typings.bmapgl.bmapglStrings.cesium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MapVGL {
   
-  @js.native
   trait Effects extends StObject
   
-  @js.native
   trait GeoJSON
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var geometry: Coordinates = js.native
+    var geometry: Coordinates
     
-    var properties: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var properties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object GeoJSON {
     
@@ -45,20 +43,19 @@ object MapVGL {
     }
   }
   
-  @js.native
   trait Layer extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getData(): js.Array[GeoJSON] = js.native
+    def getData(): js.Array[GeoJSON]
     
-    def getDefaultOptions(): LayerOptions = js.native
+    def getDefaultOptions(): LayerOptions
     
-    def getOptions(): LayerOptions = js.native
+    def getOptions(): LayerOptions
     
-    def setData(x: js.Array[GeoJSON]): Unit = js.native
+    def setData(x: js.Array[GeoJSON]): Unit
     
-    def setOptions(x: LayerOptions): Unit = js.native
+    def setOptions(x: LayerOptions): Unit
   }
   object Layer {
     
@@ -98,13 +95,13 @@ object MapVGL {
     }
   }
   
-  @js.native
   trait LayerOptions
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var data: js.UndefOr[js.Array[GeoJSON]] = js.native
+    var data: js.UndefOr[js.Array[GeoJSON]] = js.undefined
     
-    var repeat: js.UndefOr[Boolean] = js.native
+    var repeat: js.UndefOr[Boolean] = js.undefined
   }
   object LayerOptions {
     
@@ -134,18 +131,17 @@ object MapVGL {
     }
   }
   
-  @js.native
   trait View extends StObject {
     
-    def addLayer(x: Layer): Unit = js.native
+    def addLayer(x: Layer): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getAllLayers(x: Layer): js.Array[Layer] = js.native
+    def getAllLayers(x: Layer): js.Array[Layer]
     
-    def getAllThreeLayers(x: Layer): js.Array[Layer] = js.native
+    def getAllThreeLayers(x: Layer): js.Array[Layer]
     
-    def removeLayer(x: Layer): Unit = js.native
+    def removeLayer(x: Layer): Unit
   }
   object View {
     
@@ -181,14 +177,13 @@ object MapVGL {
     }
   }
   
-  @js.native
   trait ViewOptions extends StObject {
     
-    var effects: js.UndefOr[js.Array[Effects]] = js.native
+    var effects: js.UndefOr[js.Array[Effects]] = js.undefined
     
-    var map: js.UndefOr[js.Object] = js.native
+    var map: js.UndefOr[js.Object] = js.undefined
     
-    var mapType: js.UndefOr[bmap | blank | cesium] = js.native
+    var mapType: js.UndefOr[bmap | blank | cesium] = js.undefined
   }
   object ViewOptions {
     

@@ -8,23 +8,21 @@ import typings.activexOffice.Office.CustomXMLPart
 import typings.activexStdole.stdole.GUID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CNames extends StObject {
     
-    val cNames: Double = js.native
+    val cNames: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    var rgdispid: Double = js.native
+    var rgdispid: Double
     
-    val rgszNames: Double = js.native
+    val rgszNames: Double
     
-    val riid: GUID = js.native
+    val riid: GUID
   }
   object CNames {
     
@@ -54,12 +52,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CancelDefault extends StObject {
     
-    var CancelDefault: Boolean = js.native
+    var CancelDefault: Boolean
     
-    val Ctrl: CommandBarButton = js.native
+    val Ctrl: CommandBarButton
   }
   object CancelDefault {
     
@@ -80,10 +77,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Ctrl extends StObject {
     
-    val Ctrl: CommandBarComboBox = js.native
+    val Ctrl: CommandBarComboBox
   }
   object Ctrl {
     
@@ -101,10 +97,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CustomTaskPaneInst extends StObject {
     
-    val CustomTaskPaneInst: CustomTaskPane = js.native
+    val CustomTaskPaneInst: CustomTaskPane
   }
   object CustomTaskPaneInst {
     
@@ -122,16 +117,15 @@ object anon {
     }
   }
   
-  @js.native
   trait InUndoRedo extends StObject {
     
-    val InUndoRedo: Boolean = js.native
+    val InUndoRedo: Boolean
     
-    val OldNextSibling: CustomXMLNode = js.native
+    val OldNextSibling: CustomXMLNode
     
-    val OldNode: CustomXMLNode = js.native
+    val OldNode: CustomXMLNode
     
-    val OldParentNode: CustomXMLNode = js.native
+    val OldParentNode: CustomXMLNode
   }
   object InUndoRedo {
     
@@ -163,20 +157,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Itinfo extends StObject {
     
-    val itinfo: Double = js.native
+    val itinfo: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    var pptinfo: js.UndefOr[scala.Nothing] = js.native
+    var pptinfo: Unit
   }
   object Itinfo {
     
     @scala.inline
-    def apply(itinfo: Double, lcid: Double): Itinfo = {
-      val __obj = js.Dynamic.literal(itinfo = itinfo.asInstanceOf[js.Any], lcid = lcid.asInstanceOf[js.Any])
+    def apply(itinfo: Double, lcid: Double, pptinfo: Unit): Itinfo = {
+      val __obj = js.Dynamic.literal(itinfo = itinfo.asInstanceOf[js.Any], lcid = lcid.asInstanceOf[js.Any], pptinfo = pptinfo.asInstanceOf[js.Any])
       __obj.asInstanceOf[Itinfo]
     }
     
@@ -188,15 +181,17 @@ object anon {
       
       @scala.inline
       def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPptinfo(value: Unit): Self = StObject.set(x, "pptinfo", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait NewNode extends StObject {
     
-    val InUndoRedo: Boolean = js.native
+    val InUndoRedo: Boolean
     
-    val NewNode: CustomXMLNode = js.native
+    val NewNode: CustomXMLNode
   }
   object NewNode {
     
@@ -217,10 +212,9 @@ object anon {
     }
   }
   
-  @js.native
   trait NewPart extends StObject {
     
-    val NewPart: CustomXMLPart = js.native
+    val NewPart: CustomXMLPart
   }
   object NewPart {
     
@@ -238,14 +232,13 @@ object anon {
     }
   }
   
-  @js.native
   trait OldNode extends StObject {
     
-    val InUndoRedo: Boolean = js.native
+    val InUndoRedo: Boolean
     
-    val NewNode: CustomXMLNode = js.native
+    val NewNode: CustomXMLNode
     
-    val OldNode: CustomXMLNode = js.native
+    val OldNode: CustomXMLNode
   }
   object OldNode {
     
@@ -269,10 +262,9 @@ object anon {
     }
   }
   
-  @js.native
   trait OldPart extends StObject {
     
-    val OldPart: CustomXMLPart = js.native
+    val OldPart: CustomXMLPart
   }
   object OldPart {
     
@@ -290,10 +282,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Part extends StObject {
     
-    val Part: CustomXMLPart = js.native
+    val Part: CustomXMLPart
   }
   object Part {
     
@@ -311,10 +302,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Pctinfo extends StObject {
     
-    var pctinfo: Double = js.native
+    var pctinfo: Double
   }
   object Pctinfo {
     
@@ -332,23 +322,25 @@ object anon {
     }
   }
   
-  @js.native
   trait PpvObj extends StObject {
     
-    var ppvObj: js.UndefOr[scala.Nothing] = js.native
+    var ppvObj: Unit
     
-    val riid: GUID = js.native
+    val riid: GUID
   }
   object PpvObj {
     
     @scala.inline
-    def apply(riid: GUID): PpvObj = {
-      val __obj = js.Dynamic.literal(riid = riid.asInstanceOf[js.Any])
+    def apply(ppvObj: Unit, riid: GUID): PpvObj = {
+      val __obj = js.Dynamic.literal(ppvObj = ppvObj.asInstanceOf[js.Any], riid = riid.asInstanceOf[js.Any])
       __obj.asInstanceOf[PpvObj]
     }
     
     @scala.inline
     implicit class PpvObjMutableBuilder[Self <: PpvObj] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setPpvObj(value: Unit): Self = StObject.set(x, "ppvObj", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])

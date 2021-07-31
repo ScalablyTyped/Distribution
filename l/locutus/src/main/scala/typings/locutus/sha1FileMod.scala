@@ -2,15 +2,16 @@ package typings.locutus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sha1FileMod {
   
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(str_filename: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(str_filename.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   @JSImport("locutus/php/strings/sha1_file", JSImport.Namespace)
   @js.native
-  def apply(): js.Any = js.native
-  @JSImport("locutus/php/strings/sha1_file", JSImport.Namespace)
-  @js.native
-  def apply(str_filename: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
 }

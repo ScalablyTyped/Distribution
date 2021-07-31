@@ -6,26 +6,24 @@ import typings.vegaLite.srcMarkMod.Mark
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EndPositionPrefix[P /* <: PartsMixins[_] */] extends StObject {
+trait EndPositionPrefix[P /* <: PartsMixins[js.Any] */] extends StObject {
   
-  var endPositionPrefix: js.UndefOr[String] = js.native
+  var endPositionPrefix: js.UndefOr[String] = js.undefined
   
-  var extraEncoding: js.UndefOr[typings.vegaLite.encodingMod.Encoding[String]] = js.native
+  var extraEncoding: js.UndefOr[typings.vegaLite.encodingMod.Encoding[String]] = js.undefined
   
-  var mark: Mark | (typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef]) = js.native
+  var mark: Mark | (typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef])
   
-  var partName: /* keyof P */ String = js.native
+  var partName: /* keyof P */ String
   
-  var positionPrefix: String = js.native
+  var positionPrefix: String
 }
 object EndPositionPrefix {
   
   @scala.inline
-  def apply[P /* <: PartsMixins[_] */](
+  def apply[P /* <: PartsMixins[js.Any] */](
     mark: Mark | (typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef]),
     partName: /* keyof P */ String,
     positionPrefix: String
@@ -35,7 +33,7 @@ object EndPositionPrefix {
   }
   
   @scala.inline
-  implicit class EndPositionPrefixMutableBuilder[Self <: EndPositionPrefix[_], P /* <: PartsMixins[_] */] (val x: Self with EndPositionPrefix[P]) extends AnyVal {
+  implicit class EndPositionPrefixMutableBuilder[Self <: EndPositionPrefix[?], P /* <: PartsMixins[js.Any] */] (val x: Self & EndPositionPrefix[P]) extends AnyVal {
     
     @scala.inline
     def setEndPositionPrefix(value: String): Self = StObject.set(x, "endPositionPrefix", value.asInstanceOf[js.Any])

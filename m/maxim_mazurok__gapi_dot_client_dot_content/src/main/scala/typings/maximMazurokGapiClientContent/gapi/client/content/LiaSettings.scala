@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiaSettings extends StObject {
   
   /** The ID of the account to which these LIA settings belong. Ignored upon update, always present in get request responses. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** The LIA settings for each country. */
-  var countrySettings: js.UndefOr[js.Array[LiaCountrySettings]] = js.native
+  var countrySettings: js.UndefOr[js.Array[LiaCountrySettings]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#liaSettings`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object LiaSettings {
   

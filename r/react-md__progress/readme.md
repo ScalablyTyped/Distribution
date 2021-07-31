@@ -10,9 +10,9 @@ Create horizontal, vertical, and circular progress indicators
 | ------------------ | :-------------: |
 | Full name          | @react-md/progress |
 | Keywords           | react-md, material design, react, progress, component, components |
-| # releases         | 31 |
+| # releases         | 38 |
 | # dependents       | 2 |
-| # downloads        | 7314 |
+| # downloads        | 20521 |
 | # stars            | 0 |
 
 ## Links

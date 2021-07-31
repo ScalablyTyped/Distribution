@@ -3,49 +3,47 @@ package typings.dockerode.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArgsEscaped extends StObject {
   
-  var ArgsEscaped: Boolean = js.native
+  var ArgsEscaped: Boolean
   
-  var AttachStderr: Boolean = js.native
+  var AttachStderr: Boolean
   
-  var AttachStdin: Boolean = js.native
+  var AttachStdin: Boolean
   
-  var AttachStdout: Boolean = js.native
+  var AttachStdout: Boolean
   
-  var Cmd: js.Array[String] = js.native
+  var Cmd: js.Array[String]
   
-  var Domainname: String = js.native
+  var Domainname: String
   
-  var Entrypoint: js.UndefOr[String | js.Array[String]] = js.native
+  var Entrypoint: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var Env: js.Array[String] = js.native
+  var Env: js.Array[String]
   
-  var ExposedPorts: StringDictionary[js.Object] = js.native
+  var ExposedPorts: StringDictionary[js.Object]
   
-  var Hostname: String = js.native
+  var Hostname: String
   
-  var Image: String = js.native
+  var Image: String
   
-  var Labels: StringDictionary[String] = js.native
+  var Labels: StringDictionary[String]
   
-  var OnBuild: js.UndefOr[js.Array[_]] = js.native
+  var OnBuild: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var OpenStdin: Boolean = js.native
+  var OpenStdin: Boolean
   
-  var StdinOnce: Boolean = js.native
+  var StdinOnce: Boolean
   
-  var Tty: Boolean = js.native
+  var Tty: Boolean
   
-  var User: String = js.native
+  var User: String
   
-  var Volumes: StringDictionary[js.Object] = js.native
+  var Volumes: StringDictionary[js.Object]
   
-  var WorkingDir: String = js.native
+  var WorkingDir: String
 }
 object ArgsEscaped {
   
@@ -125,7 +123,7 @@ object ArgsEscaped {
     def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBuild(value: js.Array[_]): Self = StObject.set(x, "OnBuild", value.asInstanceOf[js.Any])
+    def setOnBuild(value: js.Array[js.Any]): Self = StObject.set(x, "OnBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnBuildUndefined: Self = StObject.set(x, "OnBuild", js.undefined)

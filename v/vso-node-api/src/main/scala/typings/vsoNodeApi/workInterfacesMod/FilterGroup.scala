@@ -2,17 +2,15 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterGroup extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  var level: Double = js.native
+  var level: Double
   
-  var start: Double = js.native
+  var start: Double
 }
 object FilterGroup {
   

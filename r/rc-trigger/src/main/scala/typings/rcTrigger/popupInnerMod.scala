@@ -20,57 +20,55 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popupInnerMod extends Shortcut {
   
   @JSImport("rc-trigger/es/Popup/PopupInner", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[PopupInnerProps with RefAttributes[PopupInnerRef]] = js.native
+  val default: ForwardRefExoticComponent[PopupInnerProps & RefAttributes[PopupInnerRef]] = js.native
   
-  @js.native
   trait PopupInnerProps extends StObject {
     
-    var align: js.UndefOr[AlignType] = js.native
+    var align: js.UndefOr[AlignType] = js.undefined
     
-    var animation: AnimationType = js.native
+    var animation: AnimationType
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var destroyPopupOnHide: js.UndefOr[Boolean] = js.native
+    var destroyPopupOnHide: js.UndefOr[Boolean] = js.undefined
     
-    var getClassNameFromAlign: js.UndefOr[js.Function1[/* align */ AlignType, String]] = js.native
+    var getClassNameFromAlign: js.UndefOr[js.Function1[/* align */ AlignType, String]] = js.undefined
     
-    var getRootDomNode: js.UndefOr[js.Function0[HTMLElement]] = js.native
+    var getRootDomNode: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
-    var motion: CSSMotionProps = js.native
+    var motion: CSSMotionProps
     
-    var onAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.native
+    var onAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
-    var point: js.UndefOr[Point] = js.native
+    var point: js.UndefOr[Point] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var stretch: js.UndefOr[StretchType] = js.native
+    var stretch: js.UndefOr[StretchType] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var transitionName: TransitionNameType = js.native
+    var transitionName: TransitionNameType
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object PopupInnerProps {
     
@@ -198,12 +196,11 @@ object popupInnerMod extends Shortcut {
     }
   }
   
-  @js.native
   trait PopupInnerRef extends StObject {
     
-    def forceAlign(): Unit = js.native
+    def forceAlign(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
   }
   object PopupInnerRef {
     
@@ -224,8 +221,8 @@ object popupInnerMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[PopupInnerProps with RefAttributes[PopupInnerRef]]
+  type _To = ForwardRefExoticComponent[PopupInnerProps & RefAttributes[PopupInnerRef]]
   
   /* This means you don't have to write `default`, but can instead just say `popupInnerMod.foo` */
-  override def _to: ForwardRefExoticComponent[PopupInnerProps with RefAttributes[PopupInnerRef]] = default
+  override def _to: ForwardRefExoticComponent[PopupInnerProps & RefAttributes[PopupInnerRef]] = default
 }

@@ -2,105 +2,103 @@ package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReelMediaViewerFeedResponseUser extends StObject {
   
-  var account_type: js.UndefOr[Double] = js.native
+  var account_type: js.UndefOr[Double] = js.undefined
   
-  var address_street: js.UndefOr[String] = js.native
+  var address_street: js.UndefOr[String] = js.undefined
   
-  var allowed_commenter_type: js.UndefOr[String] = js.native
+  var allowed_commenter_type: js.UndefOr[String] = js.undefined
   
-  var biography: js.UndefOr[String] = js.native
+  var biography: js.UndefOr[String] = js.undefined
   
-  var biography_with_entities: js.UndefOr[ListReelMediaViewerFeedResponseBiographyWithEntities] = js.native
+  var biography_with_entities: js.UndefOr[ListReelMediaViewerFeedResponseBiographyWithEntities] = js.undefined
   
-  var business_contact_method: js.UndefOr[String] = js.native
+  var business_contact_method: js.UndefOr[String] = js.undefined
   
-  var can_boost_post: js.UndefOr[Boolean] = js.native
+  var can_boost_post: js.UndefOr[Boolean] = js.undefined
   
-  var can_hide_category: js.UndefOr[Boolean] = js.native
+  var can_hide_category: js.UndefOr[Boolean] = js.undefined
   
-  var can_hide_public_contacts: js.UndefOr[Boolean] = js.native
+  var can_hide_public_contacts: js.UndefOr[Boolean] = js.undefined
   
-  var can_see_organic_insights: js.UndefOr[Boolean] = js.native
+  var can_see_organic_insights: js.UndefOr[Boolean] = js.undefined
   
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
-  var city_id: js.UndefOr[Double] = js.native
+  var city_id: js.UndefOr[Double] = js.undefined
   
-  var city_name: js.UndefOr[String] = js.native
+  var city_name: js.UndefOr[String] = js.undefined
   
-  var contact_phone_number: js.UndefOr[String] = js.native
+  var contact_phone_number: js.UndefOr[String] = js.undefined
   
-  var direct_messaging: js.UndefOr[String] = js.native
+  var direct_messaging: js.UndefOr[String] = js.undefined
   
-  var external_lynx_url: js.UndefOr[String] = js.native
+  var external_lynx_url: js.UndefOr[String] = js.undefined
   
-  var external_url: js.UndefOr[String] = js.native
+  var external_url: js.UndefOr[String] = js.undefined
   
-  var fb_page_call_to_action_id: js.UndefOr[String] = js.native
+  var fb_page_call_to_action_id: js.UndefOr[String] = js.undefined
   
-  var follower_count: js.UndefOr[Double] = js.native
+  var follower_count: js.UndefOr[Double] = js.undefined
   
-  var following_count: js.UndefOr[Double] = js.native
+  var following_count: js.UndefOr[Double] = js.undefined
   
-  var following_tag_count: js.UndefOr[Double] = js.native
+  var following_tag_count: js.UndefOr[Double] = js.undefined
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.native
+  var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined
   
-  var has_biography_translation: js.UndefOr[Boolean] = js.native
+  var has_biography_translation: js.UndefOr[Boolean] = js.undefined
   
-  var instagram_location_id: js.UndefOr[String] = js.native
+  var instagram_location_id: js.UndefOr[String] = js.undefined
   
-  var is_business: js.UndefOr[Boolean] = js.native
+  var is_business: js.UndefOr[Boolean] = js.undefined
   
-  var is_call_to_action_enabled: js.UndefOr[Boolean] = js.native
+  var is_call_to_action_enabled: js.UndefOr[Boolean] = js.undefined
   
-  var is_private: Boolean = js.native
+  var is_private: Boolean
   
-  var is_unpublished: js.UndefOr[Boolean] = js.native
+  var is_unpublished: js.UndefOr[Boolean] = js.undefined
   
-  var is_verified: Boolean = js.native
+  var is_verified: Boolean
   
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
   
-  var media_count: js.UndefOr[Double] = js.native
+  var media_count: js.UndefOr[Double] = js.undefined
   
-  var mutual_followers_count: js.UndefOr[Double] = js.native
+  var mutual_followers_count: js.UndefOr[Double] = js.undefined
   
-  var pk: Double = js.native
+  var pk: Double
   
-  var profile_pic_id: String = js.native
+  var profile_pic_id: String
   
-  var profile_pic_url: String = js.native
+  var profile_pic_url: String
   
-  var public_email: js.UndefOr[String] = js.native
+  var public_email: js.UndefOr[String] = js.undefined
   
-  var public_phone_country_code: js.UndefOr[String] = js.native
+  var public_phone_country_code: js.UndefOr[String] = js.undefined
   
-  var public_phone_number: js.UndefOr[String] = js.native
+  var public_phone_number: js.UndefOr[String] = js.undefined
   
-  var reel_auto_archive: js.UndefOr[String] = js.native
+  var reel_auto_archive: js.UndefOr[String] = js.undefined
   
-  var should_show_category: js.UndefOr[Boolean] = js.native
+  var should_show_category: js.UndefOr[Boolean] = js.undefined
   
-  var should_show_public_contacts: js.UndefOr[Boolean] = js.native
+  var should_show_public_contacts: js.UndefOr[Boolean] = js.undefined
   
-  var should_show_tabbed_inbox: js.UndefOr[Boolean] = js.native
+  var should_show_tabbed_inbox: js.UndefOr[Boolean] = js.undefined
   
-  var show_insights_terms: js.UndefOr[Boolean] = js.native
+  var show_insights_terms: js.UndefOr[Boolean] = js.undefined
   
-  var username: String = js.native
+  var username: String
   
-  var zip: js.UndefOr[String] = js.native
+  var zip: js.UndefOr[String] = js.undefined
 }
 object ListReelMediaViewerFeedResponseUser {
   

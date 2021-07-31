@@ -2,26 +2,24 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebExtensionManifestChromeSettingsOverridesSearchProviderParams extends StObject {
   
   /** The type of param can be either "purpose" or "pref". */
-  var condition: js.UndefOr[WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition] = js.native
+  var condition: js.UndefOr[WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition] = js.undefined
   
   /** A url parameter name */
-  var name: String = js.native
+  var name: String
   
   /** The preference to retrieve the value from. */
-  var pref: js.UndefOr[String] = js.native
+  var pref: js.UndefOr[String] = js.undefined
   
   /** The context that initiates a search, required if condition is "purpose". */
-  var purpose: js.UndefOr[WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose] = js.native
+  var purpose: js.UndefOr[WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose] = js.undefined
   
   /** A url parameter value. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object WebExtensionManifestChromeSettingsOverridesSearchProviderParams {
   

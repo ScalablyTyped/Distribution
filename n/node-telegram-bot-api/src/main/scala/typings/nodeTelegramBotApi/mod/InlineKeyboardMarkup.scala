@@ -2,13 +2,11 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineKeyboardMarkup extends StObject {
   
-  var inline_keyboard: js.Array[js.Array[InlineKeyboardButton]] = js.native
+  var inline_keyboard: js.Array[js.Array[InlineKeyboardButton]]
 }
 object InlineKeyboardMarkup {
   

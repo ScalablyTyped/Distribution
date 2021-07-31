@@ -3,37 +3,35 @@ package typings.sipJs
 import typings.sipJs.grammarMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogStateMod {
   
-  @js.native
   trait DialogState extends StObject {
     
-    var callId: String = js.native
+    var callId: String
     
-    var early: Boolean = js.native
+    var early: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var localSequenceNumber: js.UndefOr[Double] = js.native
+    var localSequenceNumber: js.UndefOr[Double] = js.undefined
     
-    var localTag: String = js.native
+    var localTag: String
     
-    var localURI: URI = js.native
+    var localURI: URI
     
-    var remoteSequenceNumber: js.UndefOr[Double] = js.native
+    var remoteSequenceNumber: js.UndefOr[Double] = js.undefined
     
-    var remoteTag: String = js.native
+    var remoteTag: String
     
-    var remoteTarget: URI = js.native
+    var remoteTarget: URI
     
-    var remoteURI: URI = js.native
+    var remoteURI: URI
     
-    var routeSet: js.Array[String] = js.native
+    var routeSet: js.Array[String]
     
-    var secure: Boolean = js.native
+    var secure: Boolean
   }
   object DialogState {
     

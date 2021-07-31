@@ -12,7 +12,7 @@ Unlimited shelljs commands with ES6 proxies
 | Keywords           | shelljs, exec, proxy, es6, git |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 43094 |
+| # downloads        | 5905 |
 | # stars            | 2 |
 
 ## Links

@@ -27,7 +27,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xsd {
@@ -121,32 +120,33 @@ object xsd {
   }
   
   /** specifies an [XSD compliant date type]{@link url="http://www.w3.org/TR/xmlschema-2/#date"} */
-  @js.native
-  trait Date extends XDataType {
+  trait Date
+    extends StObject
+       with XDataType {
     
     /**
       * specifies the exclusive upper bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-maxExclusive
       */
-    var MaxExclusiveDate: typings.activexLibreoffice.com_.sun.star.util.Date = js.native
+    var MaxExclusiveDate: typings.activexLibreoffice.com_.sun.star.util.Date
     
     /**
       * specifies the inclusive upper bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-maxInclusive
       */
-    var MaxInclusiveDate: typings.activexLibreoffice.com_.sun.star.util.Date = js.native
+    var MaxInclusiveDate: typings.activexLibreoffice.com_.sun.star.util.Date
     
     /**
       * specifies the exclusive lower bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-minExclusive
       */
-    var MinExclusiveDate: typings.activexLibreoffice.com_.sun.star.util.Date = js.native
+    var MinExclusiveDate: typings.activexLibreoffice.com_.sun.star.util.Date
     
     /**
       * specifies the inclusive lower bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-minInclusive
       */
-    var MinInclusiveDate: typings.activexLibreoffice.com_.sun.star.util.Date = js.native
+    var MinInclusiveDate: typings.activexLibreoffice.com_.sun.star.util.Date
   }
   object Date {
     
@@ -197,32 +197,33 @@ object xsd {
   }
   
   /** specifies an [XSD compliant dateTime type]{@link url="http://www.w3.org/TR/xmlschema-2/#dateTime"} */
-  @js.native
-  trait DateTime extends XDataType {
+  trait DateTime
+    extends StObject
+       with XDataType {
     
     /**
       * specifies the exclusive upper bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-maxExclusive
       */
-    var MaxExclusiveDateTime: typings.activexLibreoffice.com_.sun.star.util.DateTime = js.native
+    var MaxExclusiveDateTime: typings.activexLibreoffice.com_.sun.star.util.DateTime
     
     /**
       * specifies the inclusive upper bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-maxInclusive
       */
-    var MaxInclusiveDateTime: typings.activexLibreoffice.com_.sun.star.util.DateTime = js.native
+    var MaxInclusiveDateTime: typings.activexLibreoffice.com_.sun.star.util.DateTime
     
     /**
       * specifies the exclusive lower bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-minExclusive
       */
-    var MinExclusiveDateTime: typings.activexLibreoffice.com_.sun.star.util.DateTime = js.native
+    var MinExclusiveDateTime: typings.activexLibreoffice.com_.sun.star.util.DateTime
     
     /**
       * specifies the inclusive lower bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-minInclusive
       */
-    var MinInclusiveDateTime: typings.activexLibreoffice.com_.sun.star.util.DateTime = js.native
+    var MinInclusiveDateTime: typings.activexLibreoffice.com_.sun.star.util.DateTime
   }
   object DateTime {
     
@@ -273,32 +274,33 @@ object xsd {
   }
   
   /** specifies an [XSD compliant gDay type]{@link url="http://www.w3.org/TR/xmlschema-2/#gDay"} */
-  @js.native
-  trait Day extends XDataType {
+  trait Day
+    extends StObject
+       with XDataType {
     
     /**
       * specifies the exclusive upper bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-maxExclusive
       */
-    var MaxExclusiveInt: Double = js.native
+    var MaxExclusiveInt: Double
     
     /**
       * specifies the inclusive upper bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-maxInclusive
       */
-    var MaxInclusiveInt: Double = js.native
+    var MaxInclusiveInt: Double
     
     /**
       * specifies the exclusive lower bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-minExclusive
       */
-    var MinExclusiveInt: Double = js.native
+    var MinExclusiveInt: Double
     
     /**
       * specifies the inclusive lower bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-minInclusive
       */
-    var MinInclusiveInt: Double = js.native
+    var MinInclusiveInt: Double
   }
   object Day {
     
@@ -349,8 +351,9 @@ object xsd {
   }
   
   /** specifies an [XSD compliant decimal type]{@link url="http://www.w3.org/TR/xmlschema-2/#decimal"} */
-  @js.native
-  trait Decimal extends XDataType {
+  trait Decimal
+    extends StObject
+       with XDataType {
     
     /**
       * fractionDigits is the maximum number of digits in the fractional part of values of decimal data
@@ -359,31 +362,31 @@ object xsd {
       *
       * See [http://www.w3.org/TR/xmlschema-2/#rf-fractionDigits]{@link url="http://www.w3.org/TR/xmlschema-2/#rf-fractionDigits"}
       */
-    var FractionDigits: Double = js.native
+    var FractionDigits: Double
     
     /**
       * specifies the exclusive upper bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-maxExclusive
       */
-    var MaxExclusiveDouble: Double = js.native
+    var MaxExclusiveDouble: Double
     
     /**
       * specifies the inclusive upper bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-maxInclusive
       */
-    var MaxInclusiveDouble: Double = js.native
+    var MaxInclusiveDouble: Double
     
     /**
       * specifies the exclusive lower bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-minExclusive
       */
-    var MinExclusiveDouble: Double = js.native
+    var MinExclusiveDouble: Double
     
     /**
       * specifies the inclusive lower bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-minInclusive
       */
-    var MinInclusiveDouble: Double = js.native
+    var MinInclusiveDouble: Double
     
     /**
       * totalDigits is the maximum number of digits in values of decimal data types.
@@ -392,7 +395,7 @@ object xsd {
       *
       * See [http://www.w3.org/TR/xmlschema-2/#rf-totalDigits]{@link url="http://www.w3.org/TR/xmlschema-2/#rf-totalDigits"}
       */
-    var TotalDigits: Double = js.native
+    var TotalDigits: Double
   }
   object Decimal {
     
@@ -451,32 +454,33 @@ object xsd {
   }
   
   /** specifies an [XSD compliant gMonth type]{@link url="http://www.w3.org/TR/xmlschema-2/#gMonth"} */
-  @js.native
-  trait Month extends XDataType {
+  trait Month
+    extends StObject
+       with XDataType {
     
     /**
       * specifies the exclusive upper bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-maxExclusive
       */
-    var MaxExclusiveInt: Double = js.native
+    var MaxExclusiveInt: Double
     
     /**
       * specifies the inclusive upper bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-maxInclusive
       */
-    var MaxInclusiveInt: Double = js.native
+    var MaxInclusiveInt: Double
     
     /**
       * specifies the exclusive lower bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-minExclusive
       */
-    var MinExclusiveInt: Double = js.native
+    var MinExclusiveInt: Double
     
     /**
       * specifies the inclusive lower bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-minInclusive
       */
-    var MinInclusiveInt: Double = js.native
+    var MinInclusiveInt: Double
   }
   object Month {
     
@@ -527,29 +531,30 @@ object xsd {
   }
   
   /** specifies an [XSD compliant string type]{@link url="http://www.w3.org/TR/xmlschema-2/#string"} */
-  @js.native
-  trait String extends XDataType {
+  trait String
+    extends StObject
+       with XDataType {
     
     /**
       * specifies the length of the string
       *
       * Note that you cannot specify {@link Length} together with {@link MinLength} or {@link MaxLength} .
       */
-    var Length: Double = js.native
+    var Length: Double
     
     /**
       * specifies the maximum length of the string
       *
       * Note that you cannot specify {@link MaxLength} together with {@link Length} .
       */
-    var MaxLength: Double = js.native
+    var MaxLength: Double
     
     /**
       * specifies the minimum length of the string
       *
       * Note that you cannot specify {@link MinLength} together with {@link Length} .
       */
-    var MinLength: Double = js.native
+    var MinLength: Double
   }
   object String {
     
@@ -596,32 +601,33 @@ object xsd {
   }
   
   /** specifies an [XSD compliant time type]{@link url="http://www.w3.org/TR/xmlschema-2/#time"} */
-  @js.native
-  trait Time extends XDataType {
+  trait Time
+    extends StObject
+       with XDataType {
     
     /**
       * specifies the exclusive upper bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-maxExclusive
       */
-    var MaxExclusiveTime: typings.activexLibreoffice.com_.sun.star.util.Time = js.native
+    var MaxExclusiveTime: typings.activexLibreoffice.com_.sun.star.util.Time
     
     /**
       * specifies the inclusive upper bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-maxInclusive
       */
-    var MaxInclusiveTime: typings.activexLibreoffice.com_.sun.star.util.Time = js.native
+    var MaxInclusiveTime: typings.activexLibreoffice.com_.sun.star.util.Time
     
     /**
       * specifies the exclusive lower bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-minExclusive
       */
-    var MinExclusiveTime: typings.activexLibreoffice.com_.sun.star.util.Time = js.native
+    var MinExclusiveTime: typings.activexLibreoffice.com_.sun.star.util.Time
     
     /**
       * specifies the inclusive lower bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-minInclusive
       */
-    var MinInclusiveTime: typings.activexLibreoffice.com_.sun.star.util.Time = js.native
+    var MinInclusiveTime: typings.activexLibreoffice.com_.sun.star.util.Time
   }
   object Time {
     
@@ -693,42 +699,43 @@ object xsd {
   }
   
   /** specifies an [XSD compliant simple data type]{@link url="http://www.w3.org/TR/xmlschema-2/#built-in-datatypes"} */
-  @js.native
-  trait XDataType extends XPropertySet {
+  trait XDataType
+    extends StObject
+       with XPropertySet {
     
     /**
       * specifies whether the type is a basic type
       *
       * Basic types are built into the type system, and cannot be changed by the user.
       */
-    var IsBasic: scala.Boolean = js.native
+    var IsBasic: scala.Boolean
     
     /** provides access to the name of the type */
-    var Name: java.lang.String = js.native
+    var Name: java.lang.String
     
     /**
       * specifies the pattern which strings conforming to this type comply to
       *
       * See [http://www.w3.org/TR/xmlschema-2/#rf-pattern]{@link url="http://www.w3.org/TR/xmlschema-2/#rf-pattern"}
       */
-    var Pattern: java.lang.String = js.native
+    var Pattern: java.lang.String
     
     /**
       * class of the type
       * @see DataTypeClass
       */
-    var TypeClass: Double = js.native
+    var TypeClass: Double
     
     /**
       * specifies how strings of this data type are to be processed, with respect to white spaces
       *
       * See [http://www.w3.org/TR/xmlschema-2/#rf-whiteSpace]{@link url="http://www.w3.org/TR/xmlschema-2/#rf-whiteSpace"}
       */
-    var WhiteSpaceTreatment: Double = js.native
+    var WhiteSpaceTreatment: Double
     
-    def explainInvalid(value: java.lang.String): java.lang.String = js.native
+    def explainInvalid(value: java.lang.String): java.lang.String
     
-    def validate(value: java.lang.String): scala.Boolean = js.native
+    def validate(value: java.lang.String): scala.Boolean
   }
   object XDataType {
     
@@ -784,32 +791,33 @@ object xsd {
   }
   
   /** specifies an [XSD compliant gYear type]{@link url="http://www.w3.org/TR/xmlschema-2/#gYear"} */
-  @js.native
-  trait Year extends XDataType {
+  trait Year
+    extends StObject
+       with XDataType {
     
     /**
       * specifies the exclusive upper bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-maxExclusive
       */
-    var MaxExclusiveInt: Double = js.native
+    var MaxExclusiveInt: Double
     
     /**
       * specifies the inclusive upper bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-maxInclusive
       */
-    var MaxInclusiveInt: Double = js.native
+    var MaxInclusiveInt: Double
     
     /**
       * specifies the exclusive lower bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-minExclusive
       */
-    var MinExclusiveInt: Double = js.native
+    var MinExclusiveInt: Double
     
     /**
       * specifies the inclusive lower bound for the value
       * @see http://www.w3.org/TR/xmlschema-2/#rf-minInclusive
       */
-    var MinInclusiveInt: Double = js.native
+    var MinInclusiveInt: Double
   }
   object Year {
     

@@ -4,51 +4,49 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskAgentJobRequest extends StObject {
   
-  var assignTime: Date = js.native
+  var assignTime: Date
   
-  var data: StringDictionary[String] = js.native
+  var data: StringDictionary[String]
   
-  var definition: TaskOrchestrationOwner = js.native
+  var definition: TaskOrchestrationOwner
   
-  var demands: js.Array[_] = js.native
+  var demands: js.Array[js.Any]
   
-  var finishTime: Date = js.native
+  var finishTime: Date
   
-  var hostId: String = js.native
+  var hostId: String
   
-  var jobId: String = js.native
+  var jobId: String
   
-  var jobName: String = js.native
+  var jobName: String
   
-  var lockedUntil: Date = js.native
+  var lockedUntil: Date
   
-  var matchedAgents: js.Array[TaskAgentReference] = js.native
+  var matchedAgents: js.Array[TaskAgentReference]
   
-  var owner: TaskOrchestrationOwner = js.native
+  var owner: TaskOrchestrationOwner
   
-  var planId: String = js.native
+  var planId: String
   
-  var planType: String = js.native
+  var planType: String
   
-  var queueTime: Date = js.native
+  var queueTime: Date
   
-  var receiveTime: Date = js.native
+  var receiveTime: Date
   
-  var requestId: Double = js.native
+  var requestId: Double
   
-  var reservedAgent: TaskAgentReference = js.native
+  var reservedAgent: TaskAgentReference
   
-  var result: TaskResult = js.native
+  var result: TaskResult
   
-  var scopeId: String = js.native
+  var scopeId: String
   
-  var serviceOwner: String = js.native
+  var serviceOwner: String
 }
 object TaskAgentJobRequest {
   
@@ -57,7 +55,7 @@ object TaskAgentJobRequest {
     assignTime: Date,
     data: StringDictionary[String],
     definition: TaskOrchestrationOwner,
-    demands: js.Array[_],
+    demands: js.Array[js.Any],
     finishTime: Date,
     hostId: String,
     jobId: String,
@@ -92,7 +90,7 @@ object TaskAgentJobRequest {
     def setDefinition(value: TaskOrchestrationOwner): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemands(value: js.Array[_]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))

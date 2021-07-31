@@ -8,30 +8,29 @@ import typings.firebaseAnalyticsTypes.mod.MinimalDynamicConfig
 import typings.std.HTMLScriptElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
   
-  @JSImport("@firebase/analytics/dist/src/helpers", "findGtagScriptOnPage")
+  @JSImport("@firebase/analytics/dist/src/helpers", JSImport.Namespace)
   @js.native
-  def findGtagScriptOnPage(): HTMLScriptElement | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/analytics/dist/src/helpers", "getOrCreateDataLayer")
-  @js.native
-  def getOrCreateDataLayer(dataLayerName: String): DataLayer = js.native
+  @scala.inline
+  def findGtagScriptOnPage(): HTMLScriptElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findGtagScriptOnPage")().asInstanceOf[HTMLScriptElement | Null]
   
-  @JSImport("@firebase/analytics/dist/src/helpers", "insertScriptTag")
-  @js.native
-  def insertScriptTag(dataLayerName: String): Unit = js.native
+  @scala.inline
+  def getOrCreateDataLayer(dataLayerName: String): DataLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateDataLayer")(dataLayerName.asInstanceOf[js.Any]).asInstanceOf[DataLayer]
   
-  @JSImport("@firebase/analytics/dist/src/helpers", "wrapOrCreateGtag")
-  @js.native
+  @scala.inline
+  def insertScriptTag(dataLayerName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertScriptTag")(dataLayerName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
   def wrapOrCreateGtag(
     initializationPromisesMap: StringDictionary[js.Promise[String]],
     dynamicConfigPromisesList: js.Array[js.Promise[DynamicConfig | MinimalDynamicConfig]],
     measurementIdToAppId: StringDictionary[String],
     dataLayerName: String,
     gtagFunctionName: String
-  ): GtagCore = js.native
+  ): GtagCore = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrCreateGtag")(initializationPromisesMap.asInstanceOf[js.Any], dynamicConfigPromisesList.asInstanceOf[js.Any], measurementIdToAppId.asInstanceOf[js.Any], dataLayerName.asInstanceOf[js.Any], gtagFunctionName.asInstanceOf[js.Any])).asInstanceOf[GtagCore]
 }

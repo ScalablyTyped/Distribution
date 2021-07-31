@@ -3,15 +3,15 @@ package typings.domInputevent
 import typings.std.UIEventInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InputEventInit extends UIEventInit {
+trait InputEventInit
+  extends StObject
+     with UIEventInit {
   
-  var data: js.UndefOr[String | Null] = js.native
+  var data: js.UndefOr[String | Null] = js.undefined
   
-  var isComposing: js.UndefOr[Boolean] = js.native
+  var isComposing: js.UndefOr[Boolean] = js.undefined
 }
 object InputEventInit {
   

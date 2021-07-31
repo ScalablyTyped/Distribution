@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetCacheDisabledRequest extends StObject {
   
   /**
     * Cache disabled state.
     */
-  var cacheDisabled: Boolean = js.native
+  var cacheDisabled: Boolean
 }
 object SetCacheDisabledRequest {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Http extends StObject {
   
   /**
     * When set to true, URL path parameters will be fully URI-decoded except in cases of single segment matches in reserved expansion, where "%2F" will be left encoded. The default
     * behavior is to not decode RFC 6570 reserved characters in multi segment matches.
     */
-  var fullyDecodeReservedExpansion: js.UndefOr[Boolean] = js.native
+  var fullyDecodeReservedExpansion: js.UndefOr[Boolean] = js.undefined
   
   /** A list of HTTP configuration rules that apply to individual API methods. **NOTE:** All service configuration rules follow "last one wins" order. */
-  var rules: js.UndefOr[js.Array[HttpRule]] = js.native
+  var rules: js.UndefOr[js.Array[HttpRule]] = js.undefined
 }
 object Http {
   

@@ -3,7 +3,6 @@ package typings.fridaGum.Java
 import typings.fridaGum.NativePointerValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,7 +18,7 @@ trait ClassFactory extends StObject {
     * @param elements Array of JavaScript values to use for constructing the
     *                 Java array.
     */
-  def array(`type`: String, elements: js.Array[_]): js.Array[_] = js.native
+  def array(`type`: String, elements: js.Array[js.Any]): js.Array[js.Any] = js.native
   
   /**
     * Path to cache directory currently being used. For the default class

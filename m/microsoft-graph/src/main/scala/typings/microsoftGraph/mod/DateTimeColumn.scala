@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateTimeColumn extends StObject {
   
   /**
     * How the value should be presented in the UX. Must be one of default, friendly, or standard. See below for more details.
     * If unspecified, treated as default.
     */
-  var displayAs: js.UndefOr[NullableOption[String]] = js.native
+  var displayAs: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
-  var format: js.UndefOr[NullableOption[String]] = js.native
+  var format: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DateTimeColumn {
   

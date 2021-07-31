@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserInfo extends StObject {
   
   /**
     * The date when the specified commit was commited, in timestamp format with GMT offset.
     */
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
   /**
     * The email address associated with the user who made the commit, if any.
     */
-  var email: js.UndefOr[Email] = js.native
+  var email: js.UndefOr[Email] = js.undefined
   
   /**
     * The name of the user who made the specified commit.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
 }
 object UserInfo {
   

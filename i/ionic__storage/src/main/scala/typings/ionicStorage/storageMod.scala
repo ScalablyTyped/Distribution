@@ -6,10 +6,13 @@ import typings.localforage.LocalForage
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storageMod {
+  
+  @JSImport("@ionic/storage/storage", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/storage/storage", "Storage")
   @js.native
@@ -48,7 +51,7 @@ object storageMod {
       * @returns Returns a promise that resolves when the iteration has finished.
       */
     def forEach(
-      iteratorCallback: js.Function3[/* value */ js.Any, /* key */ String, /* iterationNumber */ Number, _]
+      iteratorCallback: js.Function3[/* value */ js.Any, /* key */ String, /* iterationNumber */ Number, js.Any]
     ): js.Promise[Unit] = js.native
     
     /**
@@ -56,7 +59,7 @@ object storageMod {
       * @param key the key to identify this value
       * @returns Returns a promise with the value of the given key
       */
-    def get(key: String): js.Promise[_] = js.native
+    def get(key: String): js.Promise[js.Any] = js.native
     
     /**
       * @returns Returns a promise that resolves with the keys in the store.
@@ -81,7 +84,7 @@ object storageMod {
       * @param key the key to identify this value
       * @returns Returns a promise that resolves when the value is removed
       */
-    def remove(key: String): js.Promise[_] = js.native
+    def remove(key: String): js.Promise[js.Any] = js.native
     
     /**
       * Set the value for the given key.
@@ -89,37 +92,34 @@ object storageMod {
       * @param value the value for this key
       * @returns Returns a promise that resolves when the key and value are set
       */
-    def set(key: String, value: js.Any): js.Promise[_] = js.native
+    def set(key: String, value: js.Any): js.Promise[js.Any] = js.native
   }
   
   @JSImport("@ionic/storage/storage", "StorageConfigToken")
   @js.native
   val StorageConfigToken: InjectionToken[js.Any] = js.native
   
-  @JSImport("@ionic/storage/storage", "getDefaultConfig")
-  @js.native
-  def getDefaultConfig(): DbKey = js.native
+  @scala.inline
+  def getDefaultConfig(): DbKey = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultConfig")().asInstanceOf[DbKey]
   
-  @JSImport("@ionic/storage/storage", "provideStorage")
-  @js.native
-  def provideStorage(storageConfig: StorageConfig, platformID: js.Object): Storage = js.native
+  @scala.inline
+  def provideStorage(storageConfig: StorageConfig, platformID: js.Object): Storage = (^.asInstanceOf[js.Dynamic].applyDynamic("provideStorage")(storageConfig.asInstanceOf[js.Any], platformID.asInstanceOf[js.Any])).asInstanceOf[Storage]
   
-  @js.native
   trait StorageConfig extends StObject {
     
-    var dbKey: js.UndefOr[String] = js.native
+    var dbKey: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var driverOrder: js.UndefOr[js.Array[String]] = js.native
+    var driverOrder: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var storeName: js.UndefOr[String] = js.native
+    var storeName: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object StorageConfig {
     

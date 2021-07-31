@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoToProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GoToProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GoTo.html#goToOverride)
     */
-  var goToOverride: js.UndefOr[GoToOverride] = js.native
+  var goToOverride: js.UndefOr[GoToOverride] = js.undefined
 }
 object GoToProperties {
   

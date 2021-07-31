@@ -2,31 +2,29 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetailButton extends StObject {
   
-  var detailButton: String = js.native
+  var detailButton: String
   
-  var detailButtonExpanded: String = js.native
+  var detailButtonExpanded: String
   
-  var detailCell: String = js.native
+  var detailCell: String
   
-  var detailIcon: String = js.native
+  var detailIcon: String
   
-  var detailIconExpanded: String = js.native
+  var detailIconExpanded: String
   
-  var detailPanelCell: String = js.native
+  var detailPanelCell: String
   
-  var detailRowText: String = js.native
+  var detailRowText: String
   
-  var headerCell: String = js.native
+  var headerCell: String
   
-  var itemValue: String = js.native
+  var itemValue: String
   
-  var root: String = js.native
+  var root: String
 }
 object DetailButton {
   

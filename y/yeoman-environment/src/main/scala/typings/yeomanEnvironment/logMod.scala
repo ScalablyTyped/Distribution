@@ -7,7 +7,6 @@ import typings.std.Console
 import typings.yeomanEnvironment.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logMod {
@@ -18,16 +17,19 @@ object logMod {
     * @param options
     * The options for creating the new logger.
     */
+  @scala.inline
+  def apply[TCategories /* <: String | Double | js.Symbol */](options: LoggerOptions[TCategories]): Logger[TCategories] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Logger[TCategories]]
+  
   @JSImport("yeoman-environment/lib/util/log", JSImport.Namespace)
   @js.native
-  def apply[TCategories /* <: String | Double | js.Symbol */](options: LoggerOptions[TCategories]): Logger[TCategories] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Provides a set of colors.
     */
   type ColorMap[TKeys /* <: String | Double | js.Symbol */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in TKeys ]: / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Color * / any | / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Modifiers * / any}
-    */ typings.yeomanEnvironment.yeomanEnvironmentStrings.ColorMap with TopLevel[js.Any]
+    */ typings.yeomanEnvironment.yeomanEnvironmentStrings.ColorMap & TopLevel[js.Any]
   
   /**
     * Provides default color-categories.
@@ -69,33 +71,32 @@ object logMod {
   /**
     * Provides the functionality to log messages.
     */
-  type Logger[TCategories /* <: String | Double | js.Symbol */] = EventEmitter with typings.yeomanEnvironment.yeomanEnvironmentStrings.Logger with TopLevel[js.Any] with Call
+  type Logger[TCategories /* <: String | Double | js.Symbol */] = EventEmitter & typings.yeomanEnvironment.yeomanEnvironmentStrings.Logger & TopLevel[js.Any] & Call
   
   /**
     * Provides options for creating a logger.
     */
-  @js.native
   trait LoggerOptions[TCategories /* <: String | Double | js.Symbol */] extends StObject {
     
     /**
       * A set of categories and assigned `chalk`-formats.
       */
-    var colors: js.UndefOr[ColorMap[TCategories]] = js.native
+    var colors: js.UndefOr[ColorMap[TCategories]] = js.undefined
     
     /**
       * The console to write log-messages to.
       */
-    var console: js.UndefOr[Console] = js.native
+    var console: js.UndefOr[Console] = js.undefined
     
     /**
       * The stream to write other messages to.
       */
-    var stderr: js.UndefOr[WriteStream] = js.native
+    var stderr: js.UndefOr[WriteStream] = js.undefined
     
     /**
       * The stream to write other messages to.
       */
-    var stdout: js.UndefOr[WriteStream] = js.native
+    var stdout: js.UndefOr[WriteStream] = js.undefined
   }
   object LoggerOptions {
     
@@ -106,7 +107,7 @@ object logMod {
     }
     
     @scala.inline
-    implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions[_], TCategories /* <: String | Double | js.Symbol */] (val x: Self with LoggerOptions[TCategories]) extends AnyVal {
+    implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions[?], TCategories /* <: String | Double | js.Symbol */] (val x: Self & LoggerOptions[TCategories]) extends AnyVal {
       
       @scala.inline
       def setColors(value: ColorMap[TCategories]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])

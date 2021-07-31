@@ -2,19 +2,20 @@ package typings.fastifyFavicon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  
   @JSImport("fastify-favicon", JSImport.Namespace)
   @js.native
-  def apply(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait FastifyFaviconOptions extends StObject {
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object FastifyFaviconOptions {
     

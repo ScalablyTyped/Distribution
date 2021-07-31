@@ -3,19 +3,19 @@ package typings.reactLeaflet.mod
 import typings.leaflet.mod.LatLngExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.leaflet.mod.LayerOptions because Already inherited
 - typings.leaflet.mod.InteractiveLayerOptions because Already inherited
 - typings.leaflet.mod.PathOptions because Already inherited
-- typings.leaflet.mod.CircleMarkerOptions because var conflicts: attribution, bubblingMouseEvents, className, color, dashArray, dashOffset, fill, fillColor, fillOpacity, fillRule, interactive, lineCap, lineJoin, opacity, pane, renderer, stroke, weight. Inlined radius */ @js.native
-trait CircleMarkerProps extends PathProps {
+- typings.leaflet.mod.CircleMarkerOptions because var conflicts: attribution, bubblingMouseEvents, className, color, dashArray, dashOffset, fill, fillColor, fillOpacity, fillRule, interactive, lineCap, lineJoin, opacity, pane, renderer, stroke, weight. Inlined radius */ trait CircleMarkerProps
+  extends StObject
+     with PathProps {
   
-  var center: LatLngExpression = js.native
+  var center: LatLngExpression
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double]
 }
 object CircleMarkerProps {
   

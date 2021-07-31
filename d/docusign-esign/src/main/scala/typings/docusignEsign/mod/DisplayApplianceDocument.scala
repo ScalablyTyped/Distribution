@@ -2,29 +2,27 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayApplianceDocument extends StObject {
   
-  var attachmentDescription: js.UndefOr[String] = js.native
+  var attachmentDescription: js.UndefOr[String] = js.undefined
   
-  var documentId: js.UndefOr[/* Integer that identifies the document in the envelope.*/ String] = js.native
+  var documentId: js.UndefOr[/* Integer that identifies the document in the envelope.*/ String] = js.undefined
   
-  var documentType: js.UndefOr[String] = js.native
+  var documentType: js.UndefOr[String] = js.undefined
   
   var envelopeId: js.UndefOr[
     /*The envelope's GUID. \n\nExample: `93be49ab-afa0-4adf-933c-f752070d71ec`*/ String
-  ] = js.native
+  ] = js.undefined
   
-  var externalDocumentId: js.UndefOr[String] = js.native
+  var externalDocumentId: js.UndefOr[String] = js.undefined
   
-  var latestPDFId: js.UndefOr[String] = js.native
+  var latestPDFId: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pages: js.UndefOr[/*An array of page objects.*/ Double] = js.native
+  var pages: js.UndefOr[/*An array of page objects.*/ Double] = js.undefined
 }
 object DisplayApplianceDocument {
   

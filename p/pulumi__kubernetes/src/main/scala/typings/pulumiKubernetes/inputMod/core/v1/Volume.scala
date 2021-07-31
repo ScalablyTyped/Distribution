@@ -3,59 +3,57 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Volume represents a named volume in a pod that may be accessed by any container in the pod.
   */
-@js.native
 trait Volume extends StObject {
   
   /**
     * AWSElasticBlockStore represents an AWS Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
     */
-  var awsElasticBlockStore: js.UndefOr[Input[AWSElasticBlockStoreVolumeSource]] = js.native
+  var awsElasticBlockStore: js.UndefOr[Input[AWSElasticBlockStoreVolumeSource]] = js.undefined
   
   /**
     * AzureDisk represents an Azure Data Disk mount on the host and bind mount to the pod.
     */
-  var azureDisk: js.UndefOr[Input[AzureDiskVolumeSource]] = js.native
+  var azureDisk: js.UndefOr[Input[AzureDiskVolumeSource]] = js.undefined
   
   /**
     * AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
     */
-  var azureFile: js.UndefOr[Input[AzureFileVolumeSource]] = js.native
+  var azureFile: js.UndefOr[Input[AzureFileVolumeSource]] = js.undefined
   
   /**
     * CephFS represents a Ceph FS mount on the host that shares a pod's lifetime
     */
-  var cephfs: js.UndefOr[Input[CephFSVolumeSource]] = js.native
+  var cephfs: js.UndefOr[Input[CephFSVolumeSource]] = js.undefined
   
   /**
     * Cinder represents a cinder volume attached and mounted on kubelets host machine. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
     */
-  var cinder: js.UndefOr[Input[CinderVolumeSource]] = js.native
+  var cinder: js.UndefOr[Input[CinderVolumeSource]] = js.undefined
   
   /**
     * ConfigMap represents a configMap that should populate this volume
     */
-  var configMap: js.UndefOr[Input[ConfigMapVolumeSource]] = js.native
+  var configMap: js.UndefOr[Input[ConfigMapVolumeSource]] = js.undefined
   
   /**
     * CSI (Container Storage Interface) represents ephemeral storage that is handled by certain external CSI drivers (Beta feature).
     */
-  var csi: js.UndefOr[Input[CSIVolumeSource]] = js.native
+  var csi: js.UndefOr[Input[CSIVolumeSource]] = js.undefined
   
   /**
     * DownwardAPI represents downward API about the pod that should populate this volume
     */
-  var downwardAPI: js.UndefOr[Input[DownwardAPIVolumeSource]] = js.native
+  var downwardAPI: js.UndefOr[Input[DownwardAPIVolumeSource]] = js.undefined
   
   /**
     * EmptyDir represents a temporary directory that shares a pod's lifetime. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
     */
-  var emptyDir: js.UndefOr[Input[EmptyDirVolumeSource]] = js.native
+  var emptyDir: js.UndefOr[Input[EmptyDirVolumeSource]] = js.undefined
   
   /**
     * Ephemeral represents a volume that is handled by a cluster storage driver (Alpha feature). The volume's lifecycle is tied to the pod that defines it - it will be created before the pod starts, and deleted when the pod is removed.
@@ -73,107 +71,107 @@ trait Volume extends StObject {
     *
     * A pod can use both types of ephemeral volumes and persistent volumes at the same time.
     */
-  var ephemeral: js.UndefOr[Input[EphemeralVolumeSource]] = js.native
+  var ephemeral: js.UndefOr[Input[EphemeralVolumeSource]] = js.undefined
   
   /**
     * FC represents a Fibre Channel resource that is attached to a kubelet's host machine and then exposed to the pod.
     */
-  var fc: js.UndefOr[Input[FCVolumeSource]] = js.native
+  var fc: js.UndefOr[Input[FCVolumeSource]] = js.undefined
   
   /**
     * FlexVolume represents a generic volume resource that is provisioned/attached using an exec based plugin.
     */
-  var flexVolume: js.UndefOr[Input[FlexVolumeSource]] = js.native
+  var flexVolume: js.UndefOr[Input[FlexVolumeSource]] = js.undefined
   
   /**
     * Flocker represents a Flocker volume attached to a kubelet's host machine. This depends on the Flocker control service being running
     */
-  var flocker: js.UndefOr[Input[FlockerVolumeSource]] = js.native
+  var flocker: js.UndefOr[Input[FlockerVolumeSource]] = js.undefined
   
   /**
     * GCEPersistentDisk represents a GCE Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
     */
-  var gcePersistentDisk: js.UndefOr[Input[GCEPersistentDiskVolumeSource]] = js.native
+  var gcePersistentDisk: js.UndefOr[Input[GCEPersistentDiskVolumeSource]] = js.undefined
   
   /**
     * GitRepo represents a git repository at a particular revision. DEPRECATED: GitRepo is deprecated. To provision a container with a git repo, mount an EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir into the Pod's container.
     */
-  var gitRepo: js.UndefOr[Input[GitRepoVolumeSource]] = js.native
+  var gitRepo: js.UndefOr[Input[GitRepoVolumeSource]] = js.undefined
   
   /**
     * Glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime. More info: https://examples.k8s.io/volumes/glusterfs/README.md
     */
-  var glusterfs: js.UndefOr[Input[GlusterfsVolumeSource]] = js.native
+  var glusterfs: js.UndefOr[Input[GlusterfsVolumeSource]] = js.undefined
   
   /**
     * HostPath represents a pre-existing file or directory on the host machine that is directly exposed to the container. This is generally used for system agents or other privileged things that are allowed to see the host machine. Most containers will NOT need this. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
     */
-  var hostPath: js.UndefOr[Input[HostPathVolumeSource]] = js.native
+  var hostPath: js.UndefOr[Input[HostPathVolumeSource]] = js.undefined
   
   /**
     * ISCSI represents an ISCSI Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://examples.k8s.io/volumes/iscsi/README.md
     */
-  var iscsi: js.UndefOr[Input[ISCSIVolumeSource]] = js.native
+  var iscsi: js.UndefOr[Input[ISCSIVolumeSource]] = js.undefined
   
   /**
     * Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
   
   /**
     * NFS represents an NFS mount on the host that shares a pod's lifetime More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
     */
-  var nfs: js.UndefOr[Input[NFSVolumeSource]] = js.native
+  var nfs: js.UndefOr[Input[NFSVolumeSource]] = js.undefined
   
   /**
     * PersistentVolumeClaimVolumeSource represents a reference to a PersistentVolumeClaim in the same namespace. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
     */
-  var persistentVolumeClaim: js.UndefOr[Input[PersistentVolumeClaimVolumeSource]] = js.native
+  var persistentVolumeClaim: js.UndefOr[Input[PersistentVolumeClaimVolumeSource]] = js.undefined
   
   /**
     * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
     */
-  var photonPersistentDisk: js.UndefOr[Input[PhotonPersistentDiskVolumeSource]] = js.native
+  var photonPersistentDisk: js.UndefOr[Input[PhotonPersistentDiskVolumeSource]] = js.undefined
   
   /**
     * PortworxVolume represents a portworx volume attached and mounted on kubelets host machine
     */
-  var portworxVolume: js.UndefOr[Input[PortworxVolumeSource]] = js.native
+  var portworxVolume: js.UndefOr[Input[PortworxVolumeSource]] = js.undefined
   
   /**
     * Items for all in one resources secrets, configmaps, and downward API
     */
-  var projected: js.UndefOr[Input[ProjectedVolumeSource]] = js.native
+  var projected: js.UndefOr[Input[ProjectedVolumeSource]] = js.undefined
   
   /**
     * Quobyte represents a Quobyte mount on the host that shares a pod's lifetime
     */
-  var quobyte: js.UndefOr[Input[QuobyteVolumeSource]] = js.native
+  var quobyte: js.UndefOr[Input[QuobyteVolumeSource]] = js.undefined
   
   /**
     * RBD represents a Rados Block Device mount on the host that shares a pod's lifetime. More info: https://examples.k8s.io/volumes/rbd/README.md
     */
-  var rbd: js.UndefOr[Input[RBDVolumeSource]] = js.native
+  var rbd: js.UndefOr[Input[RBDVolumeSource]] = js.undefined
   
   /**
     * ScaleIO represents a ScaleIO persistent volume attached and mounted on Kubernetes nodes.
     */
-  var scaleIO: js.UndefOr[Input[ScaleIOVolumeSource]] = js.native
+  var scaleIO: js.UndefOr[Input[ScaleIOVolumeSource]] = js.undefined
   
   /**
     * Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
     */
-  var secret: js.UndefOr[Input[SecretVolumeSource]] = js.native
+  var secret: js.UndefOr[Input[SecretVolumeSource]] = js.undefined
   
   /**
     * StorageOS represents a StorageOS volume attached and mounted on Kubernetes nodes.
     */
-  var storageos: js.UndefOr[Input[StorageOSVolumeSource]] = js.native
+  var storageos: js.UndefOr[Input[StorageOSVolumeSource]] = js.undefined
   
   /**
     * VsphereVolume represents a vSphere volume attached and mounted on kubelets host machine
     */
-  var vsphereVolume: js.UndefOr[Input[VsphereVirtualDiskVolumeSource]] = js.native
+  var vsphereVolume: js.UndefOr[Input[VsphereVirtualDiskVolumeSource]] = js.undefined
 }
 object Volume {
   

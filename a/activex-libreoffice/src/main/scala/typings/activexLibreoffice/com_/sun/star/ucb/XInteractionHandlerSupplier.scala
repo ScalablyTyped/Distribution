@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface should be implemented by an internal {@link XCommandEnvironment} that can not supply an {@link com.sun.star.task.XInteractionHandler} ,
   * but instead wants interaction requests to be handled by other internal error handling mechanism.
   */
-@js.native
-trait XInteractionHandlerSupplier extends XInterface {
+trait XInteractionHandlerSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * Returns whether an {@link com.sun.star.task.XInteractionHandler} can be supplied.
     * @returns `TRUE` , if an {@link com.sun.star.task.XInteractionHandler} can be supplied, `FALSE` otherwise.
     */
-  def hasInteractionHandler(): Boolean = js.native
+  def hasInteractionHandler(): Boolean
 }
 object XInteractionHandlerSupplier {
   

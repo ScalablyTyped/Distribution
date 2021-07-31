@@ -12,7 +12,7 @@ Kinesis Client Libray (KCL) in Node.js.
 | Keywords           | api, amazon, aws, big data, kinesis, kinesis client library, kcl, node.js |
 | # releases         | 4 |
 | # dependents       | 5 |
-| # downloads        | 264424 |
+| # downloads        | 240433 |
 | # stars            | 1 |
 
 ## Links

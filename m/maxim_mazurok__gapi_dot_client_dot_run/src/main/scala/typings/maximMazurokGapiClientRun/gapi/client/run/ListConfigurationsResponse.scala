@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListConfigurationsResponse extends StObject {
   
   /** The API version for this call such as "serving.knative.dev/v1". */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /** List of Configurations. */
-  var items: js.UndefOr[js.Array[Configuration]] = js.native
+  var items: js.UndefOr[js.Array[Configuration]] = js.undefined
   
   /** The kind of this resource, in this case "ConfigurationList". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Metadata associated with this Configuration list. */
-  var metadata: js.UndefOr[ListMeta] = js.native
+  var metadata: js.UndefOr[ListMeta] = js.undefined
   
   /** Locations that could not be reached. */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListConfigurationsResponse {
   

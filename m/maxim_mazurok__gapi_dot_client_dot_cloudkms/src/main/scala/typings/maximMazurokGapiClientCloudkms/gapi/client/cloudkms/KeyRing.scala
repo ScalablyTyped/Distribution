@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyRing extends StObject {
   
   /** Output only. The time at which this KeyRing was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name for the KeyRing in the format `projects/∗/locations/∗/keyRings/ *`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object KeyRing {
   

@@ -4,16 +4,14 @@ import typings.minappEnv.DB.IDocumentData
 import typings.minappEnv.ICloudConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined minapp-env.RQ<minapp-env.DB.IAddDocumentOptions> */
-@js.native
 trait RQIAddDocumentOptions extends StObject {
   
-  var config: js.UndefOr[ICloudConfig] = js.native
+  var config: js.UndefOr[ICloudConfig] = js.undefined
   
-  var data: IDocumentData = js.native
+  var data: IDocumentData
 }
 object RQIAddDocumentOptions {
   

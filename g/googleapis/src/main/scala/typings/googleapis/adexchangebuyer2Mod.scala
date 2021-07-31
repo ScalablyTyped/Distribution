@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adexchangebuyer2Mod {
+  
+  @JSImport("googleapis/build/src/apis/adexchangebuyer2", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -47,12 +50,11 @@ object adexchangebuyer2Mod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2beta1")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/adexchangebuyer2", "adexchangebuyer2")
-  @js.native
-  def adexchangebuyer2(options: Options): Adexchangebuyer2 = js.native
-  @JSImport("googleapis/build/src/apis/adexchangebuyer2", "adexchangebuyer2")
-  @js.native
-  def adexchangebuyer2_v2beta1(version: v2beta1): Adexchangebuyer2 = js.native
+  @scala.inline
+  def adexchangebuyer2(options: Options): Adexchangebuyer2 = ^.asInstanceOf[js.Dynamic].applyDynamic("adexchangebuyer2")(options.asInstanceOf[js.Any]).asInstanceOf[Adexchangebuyer2]
+  
+  @scala.inline
+  def adexchangebuyer2_v2beta1(version: v2beta1): Adexchangebuyer2 = ^.asInstanceOf[js.Dynamic].applyDynamic("adexchangebuyer2")(version.asInstanceOf[js.Any]).asInstanceOf[Adexchangebuyer2]
   
   object auth extends Shortcut {
     
@@ -83,9 +85,12 @@ object adexchangebuyer2Mod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/adexchangebuyer2", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/adexchangebuyer2", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

@@ -3,17 +3,15 @@ package typings.reactable
 import typings.reactable.mod.SortDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Column extends StObject {
     
-    var column: String = js.native
+    var column: String
     
-    var direction: SortDirection = js.native
+    var direction: SortDirection
   }
   object Column {
     

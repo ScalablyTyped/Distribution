@@ -5,10 +5,13 @@ import typings.reactSelect.srcCreatableMod.Props
 import typings.reactSelect.typesMod.OptionTypeBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object creatableMod {
+  
+  @JSImport("react-select/creatable", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-select/creatable", JSImport.Default)
   @js.native
@@ -64,7 +67,6 @@ object creatableMod {
   @js.native
   val defaultProps: Props[js.Any] = js.native
   
-  @JSImport("react-select/creatable", "makeCreatableSelect")
-  @js.native
-  def makeCreatableSelect(SelectComponent: ComponentType[_]): typings.reactSelect.srcCreatableMod.Creatable[_] = js.native
+  @scala.inline
+  def makeCreatableSelect(SelectComponent: ComponentType[js.Any]): typings.reactSelect.srcCreatableMod.Creatable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeCreatableSelect")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[typings.reactSelect.srcCreatableMod.Creatable[js.Any]]
 }

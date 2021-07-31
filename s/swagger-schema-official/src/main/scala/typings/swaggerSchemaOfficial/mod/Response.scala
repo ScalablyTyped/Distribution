@@ -3,19 +3,17 @@ package typings.swaggerSchemaOfficial.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var examples: js.UndefOr[StringDictionary[js.Object]] = js.native
+  var examples: js.UndefOr[StringDictionary[js.Object]] = js.undefined
   
-  var headers: js.UndefOr[StringDictionary[Header]] = js.native
+  var headers: js.UndefOr[StringDictionary[Header]] = js.undefined
   
-  var schema: js.UndefOr[Schema] = js.native
+  var schema: js.UndefOr[Schema] = js.undefined
 }
 object Response {
   

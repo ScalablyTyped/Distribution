@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientCommandConsts")
 @js.native
 class ASPxClientCommandConsts ()
-  extends typings.devexpressWeb.ASPxClientCommandConsts
+  extends StObject
+     with typings.devexpressWeb.ASPxClientCommandConsts
 object ASPxClientCommandConsts {
   
   @JSGlobal("ASPxClientCommandConsts")

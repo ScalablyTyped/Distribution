@@ -6,30 +6,27 @@ import typings.std.Partial
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@fnando/sparkline", JSImport.Default)
+  @JSImport("@fnando/sparkline", JSImport.Namespace)
   @js.native
-  def default[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry]): String = js.native
-  @JSImport("@fnando/sparkline", JSImport.Default)
-  @js.native
-  def default[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNativeOptions[TEntry]): String = js.native
-  @JSImport("@fnando/sparkline", JSImport.Default)
-  @js.native
-  def default[TEntry](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNonNativeOptions[TEntry]): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@fnando/sparkline", "sparkline")
-  @js.native
-  def sparkline[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry]): String = js.native
-  @JSImport("@fnando/sparkline", "sparkline")
-  @js.native
-  def sparkline[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNativeOptions[TEntry]): String = js.native
-  @JSImport("@fnando/sparkline", "sparkline")
-  @js.native
-  def sparkline[TEntry](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNonNativeOptions[TEntry]): String = js.native
+  @scala.inline
+  def default[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default[TEntry](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNonNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def sparkline[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sparkline[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sparkline[TEntry](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNonNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type SparklineNativeEntry = Double | Value
   
@@ -55,34 +52,34 @@ object mod {
     }
   }
   
-  @js.native
   trait SparklineOptions
-    extends SparklineNonNativeOptions[js.Any] {
+    extends StObject
+       with SparklineNonNativeOptions[js.Any] {
     
     /**
       * Set the cursor width. The default is 2.
       */
-    var cursorwidth: js.UndefOr[Double] = js.native
+    var cursorwidth: js.UndefOr[Double] = js.undefined
     
     /**
       * When true, this enables the interactive mode. You don't have to set this option if you're providing a onmousemove callback.
       */
-    var interactive: js.UndefOr[Boolean] = js.native
+    var interactive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By setting this callback function, you'll enable the interactive mode (unless you set options.interactive to false).
       */
-    var onmousemove: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onmousemove: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
     /**
       * This callback function is called every time the mouse leaves the SVG area. You can use it to hide things like tooltips.
       */
-    var onmouseout: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onmouseout: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
     /**
       * Set the spot radius. The default is 2.
       */
-    var spotRadius: js.UndefOr[Double] = js.native
+    var spotRadius: js.UndefOr[Double] = js.undefined
   }
   object SparklineOptions {
     
@@ -127,13 +124,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait SparklineOptionsFetch[TEntry] extends SparklineNonNativeOptions[TEntry] {
+  trait SparklineOptionsFetch[TEntry]
+    extends StObject
+       with SparklineNonNativeOptions[TEntry] {
     
     /**
       * Use this function to return the value if you have a different data structure that's not natively supported by sparkline.
       */
-    def fetch(entry: TEntry): Double = js.native
+    def fetch(entry: TEntry): Double
   }
   object SparklineOptionsFetch {
     
@@ -144,7 +142,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SparklineOptionsFetchMutableBuilder[Self <: SparklineOptionsFetch[_], TEntry] (val x: Self with SparklineOptionsFetch[TEntry]) extends AnyVal {
+    implicit class SparklineOptionsFetchMutableBuilder[Self <: SparklineOptionsFetch[?], TEntry] (val x: Self & SparklineOptionsFetch[TEntry]) extends AnyVal {
       
       @scala.inline
       def setFetch(value: TEntry => Double): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))

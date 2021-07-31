@@ -2,23 +2,29 @@ package typings.kmsJson
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("kms-json", JSImport.Namespace)
   @js.native
-  class ^ protected () extends KmsJson {
+  class ^ protected ()
+    extends StObject
+       with KmsJson {
     def this(options: KmsJsonOptions) = this()
+    
+    /* CompleteClass */
+    override def decrypt(cipherText: String): js.Object = js.native
+    
+    /* CompleteClass */
+    override def encrypt(inputJson: js.Object): String = js.native
   }
   
-  @js.native
   trait KmsJson extends StObject {
     
-    def decrypt(cipherText: String): js.Object = js.native
+    def decrypt(cipherText: String): js.Object
     
-    def encrypt(inputJson: js.Object): String = js.native
+    def encrypt(inputJson: js.Object): String
   }
   object KmsJson {
     
@@ -39,14 +45,13 @@ object mod {
     }
   }
   
-  @js.native
   trait KmsJsonOptions extends StObject {
     
-    var awsKmsSettings: js.UndefOr[js.Object] = js.native
+    var awsKmsSettings: js.UndefOr[js.Object] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var keyId: String = js.native
+    var keyId: String
   }
   object KmsJsonOptions {
     

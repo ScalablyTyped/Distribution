@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 import typings.devtoolsProtocol.mod.Protocol.Runtime.TimeDelta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecuteWasmEvaluatorRequest extends StObject {
   
   /**
     * WebAssembly call frame identifier to evaluate on.
     */
-  var callFrameId: CallFrameId = js.native
+  var callFrameId: CallFrameId
   
   /**
     * Code of the evaluator module.
     */
-  var evaluator: String = js.native
+  var evaluator: String
   
   /**
     * Terminate execution after timing out (number of milliseconds).
     */
-  var timeout: js.UndefOr[TimeDelta] = js.native
+  var timeout: js.UndefOr[TimeDelta] = js.undefined
 }
 object ExecuteWasmEvaluatorRequest {
   

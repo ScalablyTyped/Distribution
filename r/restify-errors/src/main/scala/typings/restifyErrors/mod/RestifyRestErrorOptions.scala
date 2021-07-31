@@ -2,13 +2,13 @@ package typings.restifyErrors.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RestifyRestErrorOptions extends RestifyHttpErrorOptions {
+trait RestifyRestErrorOptions
+  extends StObject
+     with RestifyHttpErrorOptions {
   
-  var restCode: js.UndefOr[String] = js.native
+  var restCode: js.UndefOr[String] = js.undefined
 }
 object RestifyRestErrorOptions {
   

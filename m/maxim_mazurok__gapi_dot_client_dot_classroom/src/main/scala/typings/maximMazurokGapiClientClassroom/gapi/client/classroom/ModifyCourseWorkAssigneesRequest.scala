@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyCourseWorkAssigneesRequest extends StObject {
   
   /** Mode of the coursework describing whether it will be assigned to all students or specified individual students. */
-  var assigneeMode: js.UndefOr[String] = js.native
+  var assigneeMode: js.UndefOr[String] = js.undefined
   
   /** Set which students are assigned or not assigned to the coursework. Must be specified only when `assigneeMode` is `INDIVIDUAL_STUDENTS`. */
-  var modifyIndividualStudentsOptions: js.UndefOr[ModifyIndividualStudentsOptions] = js.native
+  var modifyIndividualStudentsOptions: js.UndefOr[ModifyIndividualStudentsOptions] = js.undefined
 }
 object ModifyCourseWorkAssigneesRequest {
   

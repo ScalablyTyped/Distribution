@@ -2,14 +2,16 @@ package typings.gaussian
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(mean: Double, variance: Double): Gaussian = (^.asInstanceOf[js.Dynamic].apply(mean.asInstanceOf[js.Any], variance.asInstanceOf[js.Any])).asInstanceOf[Gaussian]
+  
   @JSImport("gaussian", JSImport.Namespace)
   @js.native
-  def apply(mean: Double, variance: Double): Gaussian = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Gaussian extends StObject {

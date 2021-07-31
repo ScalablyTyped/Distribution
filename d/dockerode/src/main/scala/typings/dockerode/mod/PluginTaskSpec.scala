@@ -3,24 +3,23 @@ package typings.dockerode.mod
 import typings.dockerode.dockerodeStrings.plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluginTaskSpec
-  extends TaskSpecBase
+  extends StObject
+     with TaskSpecBase
      with TaskSpec {
   
-  var PluginSpec: typings.dockerode.mod.PluginSpec = js.native
+  var PluginSpec: typings.dockerode.mod.PluginSpec
   
   @JSName("Runtime")
-  var Runtime_PluginTaskSpec: plugin = js.native
+  var Runtime_PluginTaskSpec: plugin
 }
 object PluginTaskSpec {
   
   @scala.inline
-  def apply(PluginSpec: PluginSpec, Runtime: plugin): PluginTaskSpec = {
-    val __obj = js.Dynamic.literal(PluginSpec = PluginSpec.asInstanceOf[js.Any], Runtime = Runtime.asInstanceOf[js.Any])
+  def apply(PluginSpec: PluginSpec): PluginTaskSpec = {
+    val __obj = js.Dynamic.literal(PluginSpec = PluginSpec.asInstanceOf[js.Any], Runtime = "plugin")
     __obj.asInstanceOf[PluginTaskSpec]
   }
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Network extends StObject {
   
   /**
     * Deprecated in favor of subnet mode networks. The range of internal addresses that are legal on this network. This range is a CIDR specification, for example: 192.168.0.0/16.
     * Provided by the client when the network is created.
     */
-  var IPv4Range: js.UndefOr[String] = js.native
+  var IPv4Range: js.UndefOr[String] = js.undefined
   
   /**
     * Must be set to create a VPC network. If not set, a legacy network is created.
@@ -23,44 +21,44 @@ trait Network extends StObject {
     *
     * For custom mode VPC networks, you can add subnets using the subnetworks insert method.
     */
-  var autoCreateSubnetworks: js.UndefOr[Boolean] = js.native
+  var autoCreateSubnetworks: js.UndefOr[Boolean] = js.undefined
   
   /** [Output Only] Creation timestamp in RFC3339 text format. */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /** An optional description of this resource. Provide this field when you create the resource. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The gateway address for default routing out of the network, selected by GCP. */
-  var gatewayIPv4: js.UndefOr[String] = js.native
+  var gatewayIPv4: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Type of the resource. Always compute#network for networks. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Maximum Transmission Unit in bytes. The minimum value for this field is 1460 and the maximum value is 1500 bytes. */
-  var mtu: js.UndefOr[Double] = js.native
+  var mtu: js.UndefOr[Double] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63
     * characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?`. The first character must be a lowercase letter, and all following characters (except for the last
     * character) must be a dash, lowercase letter, or digit. The last character must be a lowercase letter or digit.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Output Only] A list of network peerings for the resource. */
-  var peerings: js.UndefOr[js.Array[NetworkPeering]] = js.native
+  var peerings: js.UndefOr[js.Array[NetworkPeering]] = js.undefined
   
   /** The network-level routing configuration for this network. Used by Cloud Router to determine what type of network-wide routing behavior to enforce. */
-  var routingConfig: js.UndefOr[NetworkRoutingConfig] = js.native
+  var routingConfig: js.UndefOr[NetworkRoutingConfig] = js.undefined
   
   /** [Output Only] Server-defined URL for the resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Server-defined fully-qualified URLs for all subnetworks in this VPC network. */
-  var subnetworks: js.UndefOr[js.Array[String]] = js.native
+  var subnetworks: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Network {
   

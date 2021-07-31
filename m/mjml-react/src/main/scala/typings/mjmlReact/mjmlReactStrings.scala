@@ -3,7 +3,6 @@ package typings.mjmlReact
 import typings.mjmlReact.utilsMod.TextAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mjmlReactStrings {
@@ -14,7 +13,9 @@ object mjmlReactStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait center extends TextAlignment
+  sealed trait center
+    extends StObject
+       with TextAlignment
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -79,7 +80,9 @@ object mjmlReactStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait inherit extends TextAlignment
+  sealed trait inherit
+    extends StObject
+       with TextAlignment
   @scala.inline
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   
@@ -94,12 +97,16 @@ object mjmlReactStrings {
   def instagram: instagram = "instagram".asInstanceOf[instagram]
   
   @js.native
-  sealed trait justify extends TextAlignment
+  sealed trait justify
+    extends StObject
+       with TextAlignment
   @scala.inline
   def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
-  sealed trait left extends TextAlignment
+  sealed trait left
+    extends StObject
+       with TextAlignment
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -134,7 +141,9 @@ object mjmlReactStrings {
   def `pinterest-noshare`: `pinterest-noshare` = "pinterest-noshare".asInstanceOf[`pinterest-noshare`]
   
   @js.native
-  sealed trait right extends TextAlignment
+  sealed trait right
+    extends StObject
+       with TextAlignment
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   

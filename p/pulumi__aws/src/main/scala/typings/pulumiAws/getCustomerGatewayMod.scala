@@ -5,41 +5,39 @@ import typings.pulumiAws.inputMod.ec2.GetCustomerGatewayFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getCustomerGatewayMod {
   
-  @JSImport("@pulumi/aws/ec2/getCustomerGateway", "getCustomerGateway")
+  @JSImport("@pulumi/aws/ec2/getCustomerGateway", JSImport.Namespace)
   @js.native
-  def getCustomerGateway(): js.Promise[GetCustomerGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getCustomerGateway", "getCustomerGateway")
-  @js.native
-  def getCustomerGateway(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetCustomerGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getCustomerGateway", "getCustomerGateway")
-  @js.native
-  def getCustomerGateway(args: GetCustomerGatewayArgs): js.Promise[GetCustomerGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getCustomerGateway", "getCustomerGateway")
-  @js.native
-  def getCustomerGateway(args: GetCustomerGatewayArgs, opts: InvokeOptions): js.Promise[GetCustomerGatewayResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getCustomerGateway(): js.Promise[GetCustomerGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomerGateway")().asInstanceOf[js.Promise[GetCustomerGatewayResult]]
+  @scala.inline
+  def getCustomerGateway(args: Unit, opts: InvokeOptions): js.Promise[GetCustomerGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCustomerGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCustomerGatewayResult]]
+  @scala.inline
+  def getCustomerGateway(args: GetCustomerGatewayArgs): js.Promise[GetCustomerGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomerGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCustomerGatewayResult]]
+  @scala.inline
+  def getCustomerGateway(args: GetCustomerGatewayArgs, opts: InvokeOptions): js.Promise[GetCustomerGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCustomerGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCustomerGatewayResult]]
+  
   trait GetCustomerGatewayArgs extends StObject {
     
     /**
       * One or more [name-value pairs][dcg-filters] to filter by.
       */
-    val filters: js.UndefOr[js.Array[GetCustomerGatewayFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetCustomerGatewayFilter]] = js.undefined
     
     /**
       * The ID of the gateway.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * Map of key-value pairs assigned to the gateway.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetCustomerGatewayArgs {
     
@@ -75,37 +73,36 @@ object getCustomerGatewayMod {
     }
   }
   
-  @js.native
   trait GetCustomerGatewayResult extends StObject {
     
     /**
       * The ARN of the customer gateway.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * (Optional) The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
       */
-    val bgpAsn: Double = js.native
+    val bgpAsn: Double
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetCustomerGatewayFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetCustomerGatewayFilter]] = js.undefined
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * (Optional) The IP address of the gateway's Internet-routable external interface.
       */
-    val ipAddress: String = js.native
+    val ipAddress: String
     
     /**
       * Map of key-value pairs assigned to the gateway.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * (Optional) The type of customer gateway. The only type AWS supports at this time is "ipsec.1".
       */
-    val `type`: String = js.native
+    val `type`: String
   }
   object GetCustomerGatewayResult {
     

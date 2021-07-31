@@ -2,16 +2,17 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kex {
   
-  @JSGlobal("KSR.kex.resetdebug")
+  @JSGlobal("KSR.kex")
   @js.native
-  def resetdebug(): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.kex.setdebug")
-  @js.native
-  def setdebug(lval: Double): Double = js.native
+  @scala.inline
+  def resetdebug(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("resetdebug")().asInstanceOf[Double]
+  
+  @scala.inline
+  def setdebug(lval: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setdebug")(lval.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

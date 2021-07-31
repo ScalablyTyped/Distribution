@@ -2,17 +2,15 @@ package typings.babelTypes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Column extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object Column {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Cooked extends StObject {
     
-    var cooked: js.UndefOr[String] = js.native
+    var cooked: js.UndefOr[String] = js.undefined
     
-    var raw: js.UndefOr[String] = js.native
+    var raw: js.UndefOr[String] = js.undefined
   }
   object Cooked {
     
@@ -65,12 +62,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Raw extends StObject {
     
-    var cooked: String = js.native
+    var cooked: String
     
-    var raw: String = js.native
+    var raw: String
   }
   object Raw {
     

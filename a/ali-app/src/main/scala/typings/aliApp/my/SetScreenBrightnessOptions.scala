@@ -2,15 +2,14 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetScreenBrightnessOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 需要设置的屏幕亮度，取值范围0-1 */
-  var brightness: Double = js.native
+  var brightness: Double
 }
 object SetScreenBrightnessOptions {
   

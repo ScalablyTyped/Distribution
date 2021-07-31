@@ -2,19 +2,17 @@ package typings.slackMock.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InteractiveButtons[T] extends StObject {
   
-  def addResponse(opts: InteractiveButtonOptions[T]): Unit = js.native
+  def addResponse(opts: InteractiveButtonOptions[T]): Unit
   
-  var calls: js.Array[InteractiveButtonCall[T]] = js.native
+  var calls: js.Array[InteractiveButtonCall[T]]
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def send(targetUrl: InteractiveButtonUrl, body: T): js.Promise[Unit] = js.native
+  def send(targetUrl: InteractiveButtonUrl, body: T): js.Promise[Unit]
 }
 object InteractiveButtons {
   
@@ -30,7 +28,7 @@ object InteractiveButtons {
   }
   
   @scala.inline
-  implicit class InteractiveButtonsMutableBuilder[Self <: InteractiveButtons[_], T] (val x: Self with InteractiveButtons[T]) extends AnyVal {
+  implicit class InteractiveButtonsMutableBuilder[Self <: InteractiveButtons[?], T] (val x: Self & InteractiveButtons[T]) extends AnyVal {
     
     @scala.inline
     def setAddResponse(value: InteractiveButtonOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))

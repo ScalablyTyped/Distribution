@@ -2,38 +2,36 @@ package typings.invityApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuyProviderInfo extends StObject {
   
   // simplex
-  var companyName: String = js.native
+  var companyName: String
   
   // simplex-icon.jpg
-  var isActive: Boolean = js.native
+  var isActive: Boolean
   
   // Simplex
-  var logo: String = js.native
+  var logo: String
   
-  var name: String = js.native
+  var name: String
   
   // ['AT', 'BE']
-  var paymentMethods: js.Array[BuyCryptoPaymentMethod] = js.native
+  var paymentMethods: js.Array[BuyCryptoPaymentMethod]
   
-  var statusUrl: String = js.native
+  var statusUrl: String
   
   // https://payment-status.simplex.com/api/v1/user/payments?uuid={{paymentId}}
-  var supportUrl: String = js.native
+  var supportUrl: String
   
   // ['EUR', 'USD']
-  var supportedCountries: js.Array[String] = js.native
+  var supportedCountries: js.Array[String]
   
-  var tradedCoins: js.Array[String] = js.native
+  var tradedCoins: js.Array[String]
   
   // ['BTC', 'BCH', 'LTC', 'XRP', 'ETH']
-  var tradedFiatCurrencies: js.Array[String] = js.native
+  var tradedFiatCurrencies: js.Array[String]
 }
 object BuyProviderInfo {
   

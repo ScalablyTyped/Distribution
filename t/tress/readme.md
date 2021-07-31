@@ -12,7 +12,7 @@ Easy to use asynchronous job queue. Successor of 'caolan/async.queue'.
 | Keywords           | async, queue |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 19986 |
+| # downloads        | 14487 |
 | # stars            | 1 |
 
 ## Links

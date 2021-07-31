@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,57 +14,56 @@ object mod extends Shortcut {
   
   type GulpMsBuild = js.Function1[/* options */ js.UndefOr[Options], ReadWriteStream]
   
-  @js.native
   trait Options extends StObject {
     
     // 4.0
-    var architecture: js.UndefOr[String] = js.native
+    var architecture: js.UndefOr[String] = js.undefined
     
     // ['Rebuild']
-    var configuration: js.UndefOr[String] = js.native
+    var configuration: js.UndefOr[String] = js.undefined
     
     // msbuild({ fileLoggerParameters: 'LogFile=Build.log;Append;Verbosity=diagnostic' })
-    var consoleLoggerParameters: js.UndefOr[String] = js.native
+    var consoleLoggerParameters: js.UndefOr[String] = js.undefined
     
     // msbuild({ loggerParameters: 'XMLLogger,./MyLogger.dll;OutputAsHTML' })
-    var emitEndEvent: js.UndefOr[Boolean] = js.native
+    var emitEndEvent: js.UndefOr[Boolean] = js.undefined
     
     // true
-    var errorOnFail: js.UndefOr[Boolean] = js.native
+    var errorOnFail: js.UndefOr[Boolean] = js.undefined
     
     // false -> Show Startup Banner and Copyright Message
-    var fileLoggerParameters: js.UndefOr[String] = js.native
+    var fileLoggerParameters: js.UndefOr[String] = js.undefined
     
     // false
-    var logCommand: js.UndefOr[Boolean] = js.native
+    var logCommand: js.UndefOr[Boolean] = js.undefined
     
-    var loggerParameters: js.UndefOr[String] = js.native
+    var loggerParameters: js.UndefOr[String] = js.undefined
     
     // 'quiet', 'minimal', 'normal', 'detailed', 'diagnostic'
-    var maxcpucount: js.UndefOr[Double] = js.native
+    var maxcpucount: js.UndefOr[Double] = js.undefined
     
     // Default: 0 = Automatic selection | Possible Values: -1 (MSBuild Default), 0 (Automatic), > 0 (Concrete value)
-    var nodeReuse: js.UndefOr[Boolean] = js.native
+    var nodeReuse: js.UndefOr[Boolean] = js.undefined
     
     // true = Nodes remain after the build finishes so that subsequent builds can use them
-    var nologo: js.UndefOr[Boolean] = js.native
+    var nologo: js.UndefOr[Boolean] = js.undefined
     
     // 'x86' | 'x64'
-    var properties: js.UndefOr[js.Any] = js.native
+    var properties: js.UndefOr[js.Any] = js.undefined
     
     // false
-    var stderr: js.UndefOr[Boolean] = js.native
+    var stderr: js.UndefOr[Boolean] = js.undefined
     
-    var stdout: js.UndefOr[Boolean] = js.native
+    var stdout: js.UndefOr[Boolean] = js.undefined
     
     // false
-    var targets: js.UndefOr[js.Array[String]] = js.native
+    var targets: js.UndefOr[js.Array[String]] = js.undefined
     
     // 'Release' | 'Debug'
-    var toolsVersion: js.UndefOr[Double] = js.native
+    var toolsVersion: js.UndefOr[Double] = js.undefined
     
     // msbuild({ properties: { WarningLevel: 2 } })
-    var verbosity: js.UndefOr[String] = js.native
+    var verbosity: js.UndefOr[String] = js.undefined
   }
   object Options {
     

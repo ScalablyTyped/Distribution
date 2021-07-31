@@ -2,21 +2,19 @@ package typings.pulumiAws.inputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAutoscalingGroupsFilter extends StObject {
   
   /**
     * The name of the filter. The valid values are: `auto-scaling-group`, `key`, `value`, and `propagate-at-launch`.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The value of the filter.
     */
-  var values: js.Array[String] = js.native
+  var values: js.Array[String]
 }
 object GetAutoscalingGroupsFilter {
   

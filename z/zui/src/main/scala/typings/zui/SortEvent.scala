@@ -4,14 +4,15 @@ import typings.std.Event
 import typings.zui.anon.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * sortable
   */
 @js.native
-trait SortEvent extends Event {
+trait SortEvent
+  extends StObject
+     with Event {
   
   var element: JQuery | js.Object = js.native
   

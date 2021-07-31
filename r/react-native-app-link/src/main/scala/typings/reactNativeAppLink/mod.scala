@@ -2,40 +2,42 @@ package typings.reactNativeAppLink
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("react-native-app-link", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object default {
     
-    @JSImport("react-native-app-link", "default.maybeOpenURL")
+    @JSImport("react-native-app-link", JSImport.Default)
     @js.native
-    def maybeOpenURL(url: String, options: AppLinkOptions): js.Promise[Unit] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-native-app-link", "default.openInStore")
-    @js.native
-    def openInStore(options: AppLinkOptions): js.Promise[Unit] = js.native
+    @scala.inline
+    def maybeOpenURL(url: String, options: AppLinkOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("maybeOpenURL")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    
+    @scala.inline
+    def openInStore(options: AppLinkOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openInStore")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   }
   
-  @JSImport("react-native-app-link", "maybeOpenURL")
-  @js.native
-  def maybeOpenURL(url: String, options: AppLinkOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def maybeOpenURL(url: String, options: AppLinkOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("maybeOpenURL")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("react-native-app-link", "openInStore")
-  @js.native
-  def openInStore(options: AppLinkOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def openInStore(options: AppLinkOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openInStore")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
   trait AppLinkOptions extends StObject {
     
-    val appName: String = js.native
+    val appName: String
     
-    val appStoreId: Double = js.native
+    val appStoreId: Double
     
-    val appStoreLocale: String = js.native
+    val appStoreLocale: String
     
-    val playStoreId: String = js.native
+    val playStoreId: String
   }
   object AppLinkOptions {
     

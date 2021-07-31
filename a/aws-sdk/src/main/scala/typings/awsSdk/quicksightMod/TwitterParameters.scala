@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TwitterParameters extends StObject {
   
   /**
     * Maximum number of rows to query Twitter.
     */
-  var MaxRows: PositiveInteger = js.native
+  var MaxRows: PositiveInteger
   
   /**
     * Twitter query string.
     */
-  var Query: typings.awsSdk.quicksightMod.Query = js.native
+  var Query: typings.awsSdk.quicksightMod.Query
 }
 object TwitterParameters {
   

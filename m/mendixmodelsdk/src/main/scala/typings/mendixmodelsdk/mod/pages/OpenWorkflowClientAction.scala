@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,9 +45,8 @@ object OpenWorkflowClientAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -59,9 +57,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInActionButtonUnderAction")
-  @js.native
-  def createInActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.ActionButton): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.ActionButton): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -72,9 +69,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInActionItemUnderAction")
-  @js.native
-  def createInActionItemUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.ActionItem): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInActionItemUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.ActionItem): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -85,9 +81,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInAssociationWidgetUnderOnChangeAction")
-  @js.native
-  def createInAssociationWidgetUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.AssociationWidget): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInAssociationWidgetUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.AssociationWidget): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -98,9 +93,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInAttributeWidgetUnderOnChangeAction")
-  @js.native
-  def createInAttributeWidgetUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -111,9 +105,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInAttributeWidgetUnderOnEnterAction")
-  @js.native
-  def createInAttributeWidgetUnderOnEnterAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnEnterAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -124,9 +117,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInAttributeWidgetUnderOnLeaveAction")
-  @js.native
-  def createInAttributeWidgetUnderOnLeaveAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnLeaveAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -137,9 +129,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInDivContainerUnderOnClickAction")
-  @js.native
-  def createInDivContainerUnderOnClickAction(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInDivContainerUnderOnClickAction(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -150,9 +141,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInDynamicImageViewerUnderClickAction")
-  @js.native
-  def createInDynamicImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.DynamicImageViewer): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInDynamicImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.DynamicImageViewer): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -163,9 +153,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInGridActionButtonUnderAction")
-  @js.native
-  def createInGridActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.GridActionButton): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInGridActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.GridActionButton): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -176,9 +165,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInListViewUnderClickAction")
-  @js.native
-  def createInListViewUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInListViewUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -189,9 +177,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInListViewUnderPullDownAction")
-  @js.native
-  def createInListViewUnderPullDownAction(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInListViewUnderPullDownAction(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -202,9 +189,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInMenuItemUnderAction")
-  @js.native
-  def createInMenuItemUnderAction(container: MenuItem): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInMenuItemUnderAction(container: MenuItem): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -215,9 +201,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInReferenceSetSelectorUnderOnChangeAction")
-  @js.native
-  def createInReferenceSetSelectorUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSelector): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInReferenceSetSelectorUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSelector): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -228,9 +213,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInStaticImageViewerUnderClickAction")
-  @js.native
-  def createInStaticImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInStaticImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -241,9 +225,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInTextBoxUnderOnEnterKeyPressAction")
-  @js.native
-  def createInTextBoxUnderOnEnterKeyPressAction(container: typings.mendixmodelsdk.pagesMod.pages.TextBox): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInTextBoxUnderOnEnterKeyPressAction(container: typings.mendixmodelsdk.pagesMod.pages.TextBox): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /**
     * Creates and returns a new OpenWorkflowClientAction instance in the SDK and on the server.
@@ -254,9 +237,8 @@ object OpenWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.createInWidgetValueUnderAction")
-  @js.native
-  def createInWidgetValueUnderAction(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = js.native
+  @scala.inline
+  def createInWidgetValueUnderAction(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.OpenWorkflowClientAction.structureTypeName")

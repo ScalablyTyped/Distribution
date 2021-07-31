@@ -10,14 +10,12 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a set of properties to describe the style of characters.
   * @see ParagraphProperties
   */
-@js.native
 trait CharacterProperties extends StObject {
   
   /**
@@ -25,73 +23,73 @@ trait CharacterProperties extends StObject {
     *
     * Automatic **kerning** applies a spacing in between certain pairs of characters to make the text look better.
     */
-  var CharAutoKerning: Boolean = js.native
+  var CharAutoKerning: Boolean
   
   /** This optional property contains the text background color. */
-  var CharBackColor: Color = js.native
+  var CharBackColor: Color
   
   /** This property determines if the text background color is set to transparent. */
-  var CharBackTransparent: Boolean = js.native
+  var CharBackTransparent: Boolean
   
   /**
     * This property contains the distance from the border to the object.
     * @since LibreOffice 4.2
     */
-  var CharBorderDistance: Double = js.native
+  var CharBorderDistance: Double
   
   /**
     * This property contains the bottom border of the object.
     * @since LibreOffice 4.2
     */
-  var CharBottomBorder: BorderLine2 = js.native
+  var CharBottomBorder: BorderLine2
   
   /**
     * This property contains the distance from the bottom border to the object.
     * @since LibreOffice 4.2
     */
-  var CharBottomBorderDistance: Double = js.native
+  var CharBottomBorderDistance: Double
   
   /**
     * This optional property contains the value of the case-mapping of the text for formatting and displaying.
     * @see CaseMap
     */
-  var CharCaseMap: Double = js.native
+  var CharCaseMap: Double
   
   /** This property contains the value of the text color. */
-  var CharColor: Color = js.native
+  var CharColor: Color
   
   /**
     * This optional property determines whether text is formatted in two lines.
     *
     * It is linked to the properties CharCombinePrefix and CharCombineSuffix.
     */
-  var CharCombineIsOn: Boolean = js.native
+  var CharCombineIsOn: Boolean
   
   /**
     * This optional property contains the prefix (usually parenthesis) before text that is formatted in two lines.
     *
     * It is linked to the properties CharCombineIsOn and CharCombineSuffix.
     */
-  var CharCombinePrefix: String = js.native
+  var CharCombinePrefix: String
   
   /**
     * This optional property contains the suffix (usually parenthesis) after text that is formatted in two lines.
     *
     * It is linked to the properties CharCombineIsOn and CharCombinePrefix.
     */
-  var CharCombineSuffix: String = js.native
+  var CharCombineSuffix: String
   
   /** This optional property specifies if the characters are formatted and displayed with a contour effect. */
-  var CharContoured: Boolean = js.native
+  var CharContoured: Boolean
   
   /** This property is `TRUE` if the characters are crossed out. */
-  var CharCrossedOut: Boolean = js.native
+  var CharCrossedOut: Boolean
   
   /**
     * This optional property contains the font emphasis value.
     * @see com.sun.star.text.FontEmphasis
     */
-  var CharEmphasis: Double = js.native
+  var CharEmphasis: Double
   
   /**
     * specifies the percentage by which to raise/lower superscript/subscript characters.
@@ -99,7 +97,7 @@ trait CharacterProperties extends StObject {
     * Negative values denote subscripts and positive values superscripts.
     * @see CharEscapementHeight
     */
-  var CharEscapement: Double = js.native
+  var CharEscapement: Double
   
   /**
     * This is the relative height used for subscript or superscript characters in units of percent.
@@ -107,97 +105,97 @@ trait CharacterProperties extends StObject {
     * The value 100 denotes the original height of the characters.
     * @see CharEscapement
     */
-  var CharEscapementHeight: Double = js.native
+  var CharEscapementHeight: Double
   
   /** If this optional property is `TRUE` , then the characters are flashing. */
-  var CharFlash: Boolean = js.native
+  var CharFlash: Boolean
   
   /**
     * This property contains the text encoding of the font.
     * @see com.sun.star.awt.CharSet
     */
-  var CharFontCharSet: Double = js.native
+  var CharFontCharSet: Double
   
   /**
     * This property contains font family.
     * @see com.sun.star.awt.FontFamily
     */
-  var CharFontFamily: Double = js.native
+  var CharFontFamily: Double
   
   /**
     * This property specifies the name of the font style.
     *
     * It may contain more than one name separated by comma.
     */
-  var CharFontName: String = js.native
+  var CharFontName: String
   
   /**
     * This property contains the font pitch.
     * @see com.sun.star.awt.FontPitch
     */
-  var CharFontPitch: Double = js.native
+  var CharFontPitch: Double
   
   /**
     * This property contains the name of the font style.
     *
     * This property may be empty.
     */
-  var CharFontStyleName: String = js.native
+  var CharFontStyleName: String
   
   /**
     * This optional property specifies the fundamental technology of the font.
     * @see com.sun.star.awt.FontType
     */
-  var CharFontType: Double = js.native
+  var CharFontType: Double
   
   /** This value contains the height of the characters in point. */
-  var CharHeight: Double = js.native
+  var CharHeight: Double
   
   /**
     * If this optional property is `TRUE` , then the characters are invisible.
     * @since OOo 2.0
     */
-  var CharHidden: Boolean = js.native
+  var CharHidden: Boolean
   
   /**
     * Determines the color of the highlight.
     * @since LibreOffice 4.2
     */
-  var CharHighlight: Color = js.native
+  var CharHighlight: Color
   
   /**
     * Grab bag of character properties, used as a string-any map for interim interop purposes.
     * @since LibreOffice 4.3  This property is intentionally not handled by the ODF filter. Any member that should be handled there should be first moved out
     */
-  var CharInteropGrabBag: SafeArray[PropertyValue] = js.native
+  var CharInteropGrabBag: SafeArray[PropertyValue]
   
   /**
     * This optional property marks a range of characters to prevent it from being broken into two lines.
     *
     * A line break is applied before the range of characters if the layout makes a break necessary within the range.
     */
-  var CharKeepTogether: Boolean = js.native
+  var CharKeepTogether: Boolean
   
   /** This optional property contains the value of the kerning of the characters. */
-  var CharKerning: Double = js.native
+  var CharKerning: Double
   
   /**
     * This property contains the left border of the object.
     * @since LibreOffice 4.2
     */
-  var CharLeftBorder: BorderLine2 = js.native
+  var CharLeftBorder: BorderLine2
   
   /**
     * This property contains the distance from the left border to the object.
     * @since LibreOffice 4.2
     */
-  var CharLeftBorderDistance: Double = js.native
+  var CharLeftBorderDistance: Double
   
   /** This property contains the value of the locale. */
-  var CharLocale: Locale = js.native
+  var CharLocale: Locale
   
   /** This optional property determines if the word can be hyphenated at the character. */
-  var CharNoHyphenation: Boolean = js.native
+  var CharNoHyphenation: Boolean
   
   /**
     * This optional property marks a range of characters to ignore a line break in this area.
@@ -205,69 +203,69 @@ trait CharacterProperties extends StObject {
     * A line break is applied behind the range of characters if the layout makes a break necessary within the range. That means that the text may go through
     * the border.
     */
-  var CharNoLineBreak: Boolean = js.native
+  var CharNoLineBreak: Boolean
   
   /**
     * This property contains the value of the posture of the document.
     * @see com.sun.star.awt.FontSlant
     */
-  var CharPosture: FontSlant = js.native
+  var CharPosture: FontSlant
   
   /**
     * This optional property contains the relief style of the characters.
     * @see com.sun.star.text.FontRelief
     */
-  var CharRelief: Double = js.native
+  var CharRelief: Double
   
   /**
     * This property contains the right border of the object.
     * @since LibreOffice 4.2
     */
-  var CharRightBorder: BorderLine2 = js.native
+  var CharRightBorder: BorderLine2
   
   /**
     * This property contains the distance from the right border to the object.
     * @since LibreOffice 4.2
     */
-  var CharRightBorderDistance: Double = js.native
+  var CharRightBorderDistance: Double
   
   /**
     * This optional property determines the rotation of a character in tenths of a degree.
     *
     * Depending on the implementation only certain values may be allowed.
     */
-  var CharRotation: Double = js.native
+  var CharRotation: Double
   
   /** This optional property determines whether the text formatting tries to fit rotated text into the surrounded line height. */
-  var CharRotationIsFitToLine: Boolean = js.native
+  var CharRotationIsFitToLine: Boolean
   
   /**
     * This optional property determines the percentage value for scaling the width of characters.
     *
     * The value refers to the original width which is denoted by 100, and it has to be greater than 0.
     */
-  var CharScaleWidth: Double = js.native
+  var CharScaleWidth: Double
   
   /** This optional property contains the text shading value. */
-  var CharShadingValue: Double = js.native
+  var CharShadingValue: Double
   
   /**
     * Determines the type, color, and width of the shadow.
     * @since LibreOffice 4.2
     */
-  var CharShadowFormat: ShadowFormat = js.native
+  var CharShadowFormat: ShadowFormat
   
   /** This optional property specifies if the characters are formatted and displayed with a shadow effect. */
-  var CharShadowed: Boolean = js.native
+  var CharShadowed: Boolean
   
   /**
     * This property determines the type of the strike out of the character.
     * @see com.sun.star.awt.FontStrikeout
     */
-  var CharStrikeout: Double = js.native
+  var CharStrikeout: Double
   
   /** This optional property specifies the name of the style of the font. */
-  var CharStyleName: String = js.native
+  var CharStyleName: String
   
   /**
     * This optional property specifies the names of the all styles applied to the font.
@@ -275,82 +273,82 @@ trait CharacterProperties extends StObject {
     * It is not guaranteed that the order in the sequence reflects the order of the evaluation of the character style attributes.
     * @since OOo 1.1.2
     */
-  var CharStyleNames: SafeArray[String] = js.native
+  var CharStyleNames: SafeArray[String]
   
   /**
     * This property contains the top border of the object.
     * @since LibreOffice 4.2
     */
-  var CharTopBorder: BorderLine2 = js.native
+  var CharTopBorder: BorderLine2
   
   /**
     * This property contains the distance from the top border to the object.
     * @since LibreOffice 4.2
     */
-  var CharTopBorderDistance: Double = js.native
+  var CharTopBorderDistance: Double
   
   /**
     * This property contains the value for the character underline.
     * @see com.sun.star.awt.FontUnderline
     */
-  var CharUnderline: Double = js.native
+  var CharUnderline: Double
   
   /**
     * This property contains the color of the underline for the characters.
     * @see CharUnderlineHasColor
     */
-  var CharUnderlineColor: Color = js.native
+  var CharUnderlineColor: Color
   
   /**
     * This property specifies if the property CharUnderlineColor is used for an underline.
     * @see CharUnderlineColor
     */
-  var CharUnderlineHasColor: Boolean = js.native
+  var CharUnderlineHasColor: Boolean
   
   /**
     * This property contains the value of the font weight.
     * @see com.sun.star.awt.FontWeight
     */
-  var CharWeight: Double = js.native
+  var CharWeight: Double
   
   /** If this property is `TRUE` , the underline and strike-through properties are not applied to white spaces. */
-  var CharWordMode: Boolean = js.native
+  var CharWordMode: Boolean
   
   /** This optional property contains the name of the hyperlink. */
-  var HyperLinkName: String = js.native
+  var HyperLinkName: String
   
   /** This optional property contains the name of the target for a hyperlink. */
-  var HyperLinkTarget: String = js.native
+  var HyperLinkTarget: String
   
   /** This optional property contains the URL of a hyperlink. */
-  var HyperLinkURL: String = js.native
+  var HyperLinkURL: String
   
   /**
     * This optional property determines the adjustment of the ruby .
     * @see com.sun.star.text.RubyAdjust
     */
-  var RubyAdjust: Double = js.native
+  var RubyAdjust: Double
   
   /** This optional property contains the name of the character style that is applied to RubyText. */
-  var RubyCharStyleName: String = js.native
+  var RubyCharStyleName: String
   
   /** This optional property determines whether the ruby text is printed above/left or below/right of the text. */
-  var RubyIsAbove: Boolean = js.native
+  var RubyIsAbove: Boolean
   
   /** This optional property contains the text that is set as ruby. */
-  var RubyText: String = js.native
+  var RubyText: String
   
   /**
     * This property stores XML attributes. They will be saved to and restored from automatic styles inside XML files.
     * @see com.sun.star.xml.AttributeContainer
     */
-  var TextUserDefinedAttributes: XNameContainer = js.native
+  var TextUserDefinedAttributes: XNameContainer
   
   /** This optional property contains the character style name for unvisited hyperlinks. */
-  var UnvisitedCharStyleName: String = js.native
+  var UnvisitedCharStyleName: String
   
   /** This optional property contains the character style name for visited hyperlinks. */
-  var VisitedCharStyleName: String = js.native
+  var VisitedCharStyleName: String
 }
 object CharacterProperties {
   

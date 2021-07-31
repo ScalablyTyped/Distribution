@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListContactGroupsResponse extends StObject {
   
   /** The list of contact groups. Members of the contact groups are not populated. */
-  var contactGroups: js.UndefOr[js.Array[ContactGroup]] = js.native
+  var contactGroups: js.UndefOr[js.Array[ContactGroup]] = js.undefined
   
   /** The token that can be used to retrieve the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The token that can be used to retrieve changes since the last request. */
-  var nextSyncToken: js.UndefOr[String] = js.native
+  var nextSyncToken: js.UndefOr[String] = js.undefined
   
   /** The total number of items in the list without pagination. */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object ListContactGroupsResponse {
   

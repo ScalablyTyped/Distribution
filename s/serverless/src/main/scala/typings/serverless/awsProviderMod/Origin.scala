@@ -3,17 +3,15 @@ package typings.serverless.awsProviderMod
 import typings.serverless.anon.OriginProtocolPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Origin extends StObject {
   
-  var CustomOriginConfig: OriginProtocolPolicy = js.native
+  var CustomOriginConfig: OriginProtocolPolicy
   
-  var DomainName: String = js.native
+  var DomainName: String
   
-  var OriginPath: String = js.native
+  var OriginPath: String
 }
 object Origin {
   

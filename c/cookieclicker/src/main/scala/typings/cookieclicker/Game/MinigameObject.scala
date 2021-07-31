@@ -9,14 +9,14 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MinigameObject[T /* <: Minigame */] extends GameObject {
+trait MinigameObject[T /* <: Minigame */]
+  extends StObject
+     with GameObject {
   
   @JSName("minigame")
-  var minigame_MinigameObject: T = js.native
+  var minigame_MinigameObject: T
 }
 object MinigameObject {
   
@@ -79,7 +79,7 @@ object MinigameObject {
     redraw: () => Unit,
     refresh: () => Unit,
     sacrafice: Double => Unit,
-    sell: (Double, js.UndefOr[scala.Nothing]) => Unit,
+    sell: (Double, Unit) => Unit,
     single: String,
     storedCps: Double,
     storedTotalCps: Double,
@@ -96,7 +96,7 @@ object MinigameObject {
   }
   
   @scala.inline
-  implicit class MinigameObjectMutableBuilder[Self <: MinigameObject[_], T /* <: Minigame */] (val x: Self with MinigameObject[T]) extends AnyVal {
+  implicit class MinigameObjectMutableBuilder[Self <: MinigameObject[?], T /* <: Minigame */] (val x: Self & MinigameObject[T]) extends AnyVal {
     
     @scala.inline
     def setMinigame(value: T): Self = StObject.set(x, "minigame", value.asInstanceOf[js.Any])

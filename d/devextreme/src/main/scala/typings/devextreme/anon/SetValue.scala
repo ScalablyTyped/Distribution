@@ -3,17 +3,15 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.ui.dxFilterBuilderField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetValue extends StObject {
   
-  var field: js.UndefOr[dxFilterBuilderField] = js.native
+  var field: js.UndefOr[dxFilterBuilderField] = js.undefined
   
-  var setValue: js.UndefOr[js.Function] = js.native
+  var setValue: js.UndefOr[js.Function] = js.undefined
   
-  var value: js.UndefOr[String | Double | typings.std.Date] = js.native
+  var value: js.UndefOr[String | Double | typings.std.Date] = js.undefined
 }
 object SetValue {
   

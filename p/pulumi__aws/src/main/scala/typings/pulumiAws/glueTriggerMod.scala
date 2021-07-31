@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object glueTriggerMod {
@@ -81,6 +80,10 @@ object glueTriggerMod {
   /* static members */
   object Trigger {
     
+    @JSImport("@pulumi/aws/glue/trigger", "Trigger")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Trigger resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -90,75 +93,69 @@ object glueTriggerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glue/trigger", "Trigger.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Trigger = js.native
-    @JSImport("@pulumi/aws/glue/trigger", "Trigger.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Trigger = js.native
-    @JSImport("@pulumi/aws/glue/trigger", "Trigger.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TriggerState): Trigger = js.native
-    @JSImport("@pulumi/aws/glue/trigger", "Trigger.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TriggerState, opts: CustomResourceOptions): Trigger = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Trigger]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trigger]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TriggerState): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Trigger]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TriggerState, opts: CustomResourceOptions): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trigger]
     
     /**
       * Returns true if the given object is an instance of Trigger.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glue/trigger", "Trigger.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/trigger.Trigger */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/trigger.Trigger */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/trigger.Trigger */ Boolean]
   }
   
-  @js.native
   trait TriggerArgs extends StObject {
     
     /**
       * List of actions initiated by this trigger when it fires. Defined below.
       */
-    val actions: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.TriggerAction]]] = js.native
+    val actions: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.TriggerAction]]]
     
     /**
       * A description of the new trigger.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Start the trigger. Defaults to `true`. Not valid to disable for `ON_DEMAND` type.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the trigger.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A predicate to specify when the new trigger should fire. Required when trigger type is `CONDITIONAL`. Defined below.
       */
-    val predicate: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.TriggerPredicate]] = js.native
+    val predicate: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.TriggerPredicate]] = js.undefined
     
     /**
       * A cron expression used to specify the schedule. [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html)
       */
-    val schedule: js.UndefOr[Input[String]] = js.native
+    val schedule: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of trigger. Valid values are `CONDITIONAL`, `ON_DEMAND`, and `SCHEDULED`.
       */
-    val `type`: Input[String] = js.native
+    val `type`: Input[String]
     
     /**
       * A workflow to which the trigger should be associated to. Every workflow graph (DAG) needs a starting trigger (`ON_DEMAND` or `SCHEDULED` type) and can contain multiple additional `CONDITIONAL` triggers.
       */
-    val workflowName: js.UndefOr[Input[String]] = js.native
+    val workflowName: js.UndefOr[Input[String]] = js.undefined
   }
   object TriggerArgs {
     
@@ -228,58 +225,57 @@ object glueTriggerMod {
     }
   }
   
-  @js.native
   trait TriggerState extends StObject {
     
     /**
       * List of actions initiated by this trigger when it fires. Defined below.
       */
-    val actions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.TriggerAction]]]] = js.native
+    val actions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.TriggerAction]]]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of Glue Trigger
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description of the new trigger.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Start the trigger. Defaults to `true`. Not valid to disable for `ON_DEMAND` type.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the trigger.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A predicate to specify when the new trigger should fire. Required when trigger type is `CONDITIONAL`. Defined below.
       */
-    val predicate: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.TriggerPredicate]] = js.native
+    val predicate: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.TriggerPredicate]] = js.undefined
     
     /**
       * A cron expression used to specify the schedule. [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html)
       */
-    val schedule: js.UndefOr[Input[String]] = js.native
+    val schedule: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of trigger. Valid values are `CONDITIONAL`, `ON_DEMAND`, and `SCHEDULED`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A workflow to which the trigger should be associated to. Every workflow graph (DAG) needs a starting trigger (`ON_DEMAND` or `SCHEDULED` type) and can contain multiple additional `CONDITIONAL` triggers.
       */
-    val workflowName: js.UndefOr[Input[String]] = js.native
+    val workflowName: js.UndefOr[Input[String]] = js.undefined
   }
   object TriggerState {
     

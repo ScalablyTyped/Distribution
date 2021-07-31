@@ -3,68 +3,66 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 import typings.googleapis.anon.MaxValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for FieldSpec resource for Schemas in Directory API.
   */
-@js.native
 trait SchemaSchemaFieldSpec extends StObject {
   
   /**
     * Display Name of the field.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier of Field (Read-only)
     */
-  var fieldId: js.UndefOr[String] = js.native
+  var fieldId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the field.
     */
-  var fieldName: js.UndefOr[String] = js.native
+  var fieldName: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the field.
     */
-  var fieldType: js.UndefOr[String] = js.native
+  var fieldType: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean specifying whether the field is indexed or not.
     */
-  var indexed: js.UndefOr[Boolean] = js.native
+  var indexed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean specifying whether this is a multi-valued field or not.
     */
-  var multiValued: js.UndefOr[Boolean] = js.native
+  var multiValued: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indexing spec for a numeric field. By default, only exact match queries
     * will be supported for numeric fields. Setting the numericIndexingSpec
     * allows range queries to be supported.
     */
-  var numericIndexingSpec: js.UndefOr[MaxValue] = js.native
+  var numericIndexingSpec: js.UndefOr[MaxValue] = js.undefined
   
   /**
     * Read ACLs on the field specifying who can view values of this field.
     * Valid values are &quot;ALL_DOMAIN_USERS&quot; and
     * &quot;ADMINS_AND_SELF&quot;.
     */
-  var readAccessType: js.UndefOr[String] = js.native
+  var readAccessType: js.UndefOr[String] = js.undefined
 }
 object SchemaSchemaFieldSpec {
   

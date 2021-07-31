@@ -2,16 +2,17 @@ package typings.uifabricUtilities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resourcesMod {
   
-  @JSImport("@uifabric/utilities/lib/resources", "getResourceUrl")
+  @JSImport("@uifabric/utilities/lib/resources", JSImport.Namespace)
   @js.native
-  def getResourceUrl(url: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@uifabric/utilities/lib/resources", "setBaseUrl")
-  @js.native
-  def setBaseUrl(baseUrl: String): Unit = js.native
+  @scala.inline
+  def getResourceUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def setBaseUrl(baseUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBaseUrl")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

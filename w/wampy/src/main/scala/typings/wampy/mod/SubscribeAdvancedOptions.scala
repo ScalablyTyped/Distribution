@@ -4,13 +4,11 @@ import typings.wampy.wampyStrings.prefix
 import typings.wampy.wampyStrings.wildcard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscribeAdvancedOptions extends StObject {
   
-  var `match`: js.UndefOr[prefix | wildcard] = js.native
+  var `match`: js.UndefOr[prefix | wildcard] = js.undefined
 }
 object SubscribeAdvancedOptions {
   

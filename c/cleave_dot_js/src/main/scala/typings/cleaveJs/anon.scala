@@ -2,15 +2,13 @@ package typings.cleaveJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait RawValue extends StObject {
     
-    var rawValue: String = js.native
+    var rawValue: String
   }
   object RawValue {
     

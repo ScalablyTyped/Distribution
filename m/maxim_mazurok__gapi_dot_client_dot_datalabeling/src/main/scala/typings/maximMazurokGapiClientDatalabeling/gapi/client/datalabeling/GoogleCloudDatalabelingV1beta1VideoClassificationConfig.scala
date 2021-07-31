@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1VideoClassificationConfig extends StObject {
   
   /**
     * Required. The list of annotation spec set configs. Since watching a video clip takes much longer time than an image, we support label with multiple AnnotationSpecSet at the same
     * time. Labels in each AnnotationSpecSet will be shown in a group to contributors. Contributors can select one or more (depending on whether to allow multi label) from each group.
     */
-  var annotationSpecSetConfigs: js.UndefOr[js.Array[GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig]] = js.native
+  var annotationSpecSetConfigs: js.UndefOr[js.Array[GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig]] = js.undefined
   
   /** Optional. Option to apply shot detection on the video. */
-  var applyShotDetection: js.UndefOr[Boolean] = js.native
+  var applyShotDetection: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1VideoClassificationConfig {
   

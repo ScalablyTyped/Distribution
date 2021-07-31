@@ -3,33 +3,31 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the identifying information, config, and status of a cluster of
   * Compute Engine instances.
   */
-@js.native
 trait SchemaCluster extends StObject {
   
   /**
     * Required. The cluster name. Cluster names within a project must be
     * unique. Names of deleted clusters can be reused.
     */
-  var clusterName: js.UndefOr[String] = js.native
+  var clusterName: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. A cluster UUID (Unique Universal Identifier). Cloud Dataproc
     * generates this value when it creates the cluster.
     */
-  var clusterUuid: js.UndefOr[String] = js.native
+  var clusterUuid: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The cluster config. Note that Cloud Dataproc may set default
     * values, and values may change when clusters are updated.
     */
-  var config: js.UndefOr[SchemaClusterConfig] = js.native
+  var config: js.UndefOr[SchemaClusterConfig] = js.undefined
   
   /**
     * Optional. The labels to associate with this cluster. Label keys must
@@ -39,30 +37,30 @@ trait SchemaCluster extends StObject {
     * (https://www.ietf.org/rfc/rfc1035.txt). No more than 32 labels can be
     * associated with a cluster.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Output only. Contains cluster daemon metrics such as HDFS and YARN
     * stats.Beta Feature: This report is available for testing purposes only.
     * It may be changed before final release.
     */
-  var metrics: js.UndefOr[SchemaClusterMetrics] = js.native
+  var metrics: js.UndefOr[SchemaClusterMetrics] = js.undefined
   
   /**
     * Required. The Google Cloud Platform project ID that the cluster belongs
     * to.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Cluster status.
     */
-  var status: js.UndefOr[SchemaClusterStatus] = js.native
+  var status: js.UndefOr[SchemaClusterStatus] = js.undefined
   
   /**
     * Output only. The previous cluster status.
     */
-  var statusHistory: js.UndefOr[js.Array[SchemaClusterStatus]] = js.native
+  var statusHistory: js.UndefOr[js.Array[SchemaClusterStatus]] = js.undefined
 }
 object SchemaCluster {
   

@@ -10,10 +10,10 @@ JSON schema generator based on draft-v4.
 | ------------------ | :-------------: |
 | Full name          | json-schema-generator |
 | Keywords           | json schema, json schema generator, schema, json, generator, draft, v4 |
-| # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 250388 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 30 |
+| # downloads        | 597909 |
+| # stars            | 7 |
 
 ## Links
 - [Homepage](https://github.com/krg7880/json-schema-generator)

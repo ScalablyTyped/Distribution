@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.typeCheck.anon.TypeOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TypeCheck {
   
   type CustomType = StringDictionary[TypeOf]
   
-  @js.native
   trait Options extends StObject {
     
-    var customTypes: CustomType = js.native
+    var customTypes: CustomType
   }
   object Options {
     

@@ -7,7 +7,6 @@ import typings.react.mod.FC
 import typings.react.mod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeContextMod {
@@ -16,10 +15,11 @@ object themeContextMod {
   @js.native
   val ThemeContext: ThemeContextI = js.native
   
-  @js.native
-  trait ThemeContextI extends Context[ThemeValue] {
+  trait ThemeContextI
+    extends StObject
+       with Context[ThemeValue] {
     
-    var Extend: FC[ValueThemeValue] = js.native
+    var Extend: FC[ValueThemeValue]
   }
   object ThemeContextI {
     

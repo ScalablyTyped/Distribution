@@ -2,24 +2,22 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for google.datastore.admin.v1.DatastoreAdmin.ListIndexes.
   */
-@js.native
 trait SchemaGoogleDatastoreAdminV1ListIndexesResponse extends StObject {
   
   /**
     * The indexes.
     */
-  var indexes: js.UndefOr[js.Array[SchemaGoogleDatastoreAdminV1Index]] = js.native
+  var indexes: js.UndefOr[js.Array[SchemaGoogleDatastoreAdminV1Index]] = js.undefined
   
   /**
     * The standard List next-page token.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDatastoreAdminV1ListIndexesResponse {
   

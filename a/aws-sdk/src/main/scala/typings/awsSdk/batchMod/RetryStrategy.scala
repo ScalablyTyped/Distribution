@@ -2,21 +2,19 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetryStrategy extends StObject {
   
   /**
     * The number of times to move a job to the RUNNABLE status. You may specify between 1 and 10 attempts. If the value of attempts is greater than one, the job is retried on failure the same number of attempts as the value.
     */
-  var attempts: js.UndefOr[Integer] = js.native
+  var attempts: js.UndefOr[Integer] = js.undefined
   
   /**
     * Array of up to 5 objects that specify conditions under which the job should be retried or failed. If this parameter is specified, then the attempts parameter must also be specified.
     */
-  var evaluateOnExit: js.UndefOr[EvaluateOnExitList] = js.native
+  var evaluateOnExit: js.UndefOr[EvaluateOnExitList] = js.undefined
 }
 object RetryStrategy {
   

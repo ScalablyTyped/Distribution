@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateImageResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the image.
     */
-  var ImageArn: js.UndefOr[typings.awsSdk.sagemakerMod.ImageArn] = js.native
+  var ImageArn: js.UndefOr[typings.awsSdk.sagemakerMod.ImageArn] = js.undefined
 }
 object CreateImageResponse {
   

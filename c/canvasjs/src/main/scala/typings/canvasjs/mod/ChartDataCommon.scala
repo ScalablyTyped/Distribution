@@ -3,10 +3,8 @@ package typings.canvasjs.mod
 import typings.canvasjs.anon.DataSeries
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartDataCommon extends StObject {
   
   /**
@@ -15,21 +13,21 @@ trait ChartDataCommon extends StObject {
     * Parameter includes dataPoint and dataSeries corresponding to the event.
     * Default: null
     */
-  var click: js.UndefOr[js.Function1[/* event */ ChartEvent, Unit]] = js.native
+  var click: js.UndefOr[js.Function1[/* event */ ChartEvent, Unit]] = js.undefined
   
   /**
     * Sets the color of dataSeries. The value of tickColor can be a "HTML Color Name" or "Hex Code".
     * Default: Automatically set from Theme.
     * Example: "red", "green" ..
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * Enables or Disables highlighting of dataPoints on mouse hover.
     * Default: true
     * Example: true,false
     */
-  var highlightEnabled: js.UndefOr[Boolean] = js.native
+  var highlightEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Instead of setting string values for all indexLabels, you can also use keywords like x, y, etc that will automatically show corresponding properties as indexLabel.
@@ -40,55 +38,55 @@ trait ChartDataCommon extends StObject {
     * Default: null
     * Example: "{label}", "Win", "x: {x}, y: {y} "
     */
-  var indexLabel: js.UndefOr[String] = js.native
+  var indexLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the Background color of Index Labels. The value of indexLabelBackgroundColor can be a "HTML Color Name" or "Hex Code".
     * Default: null
     * Example: "red", "#FAC003" ..
     */
-  var indexLabelBackgroundColor: js.UndefOr[String] = js.native
+  var indexLabelBackgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the Index Label’s Font color. The value of IndexLabelFontColor can be a "HTML Color Name" or "Hex Code".
     * Default: "grey"
     * Example: "red", "#FAC003" ..
     */
-  var indexLabelFontColor: js.UndefOr[String] = js.native
+  var indexLabelFontColor: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the Index Label’s Font Family.
     * Default: "Calibri, Optima, Candara, Verdana, Geneva, sans-serif"
     * Example: "calibri", "tahoma", "verdana"..
     */
-  var indexLabelFontFamily: js.UndefOr[String] = js.native
+  var indexLabelFontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the Index Label’s Font Size in pixels.
     * Default: 18
     * Example: 12, 16, 22..
     */
-  var indexLabelFontSize: js.UndefOr[Double] = js.native
+  var indexLabelFontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the Index Label’s Font Style. It can be set to one of the below options.
     * Default: "normal"
     * Options: "italic", "oblique", "normal"
     */
-  var indexLabelFontStyle: js.UndefOr[String] = js.native
+  var indexLabelFontStyle: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the Index Label’s Font Weight. It can be set to one of the below options.
     * Default: "normal"
     * Example: "lighter", "normal" ,"bold" , "bolder"
     */
-  var indexLabelFontWeight: js.UndefOr[String] = js.native
+  var indexLabelFontWeight: js.UndefOr[String] = js.undefined
   
   /**
     * A custom formatter function which returns the text to be displayed as indexLabel on dataPoints.
     * @param e event object
     */
-  var indexLabelFormatter: js.UndefOr[js.Function1[/* e */ DataSeries, String]] = js.native
+  var indexLabelFormatter: js.UndefOr[js.Function1[/* e */ DataSeries, String]] = js.undefined
   
   /**
     * Sets the color of line connecting index labels with their dataPoint. It is only applicable for pie and doughnut chart when indexLabelPlacment is outside.
@@ -96,14 +94,14 @@ trait ChartDataCommon extends StObject {
     * Default: "lightgrey"
     * Example: "red", "#FAC003" ..
     */
-  var indexLabelLineColor: js.UndefOr[String] = js.native
+  var indexLabelLineColor: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the Dash Type for indexLabel’s line. It is applicable only for pie and doughnut charts when indexLabelPlacement is set to “outside”.
     * For other chart-types, indexLabelLineThickness should be set greater than zero.
     * Default: solid
     */
-  var indexLabelLineDashType: js.UndefOr[DashType] = js.native
+  var indexLabelLineDashType: js.UndefOr[DashType] = js.undefined
   
   /**
     * Sets the thickness of line connecting indexLabel with its corresponding dataPoint.
@@ -111,35 +109,35 @@ trait ChartDataCommon extends StObject {
     * Default: 2
     * Example: 4, 6
     */
-  var indexLabelLineThickness: js.UndefOr[Double] = js.native
+  var indexLabelLineThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the Orientation of indexLabel to "horizontal" or "vertical".
     * Default: "horizontal"
     * Options: "horizontal", "vertical"
     */
-  var indexLabelOrientation: js.UndefOr[String] = js.native
+  var indexLabelOrientation: js.UndefOr[String] = js.undefined
   
   /**
     * Using this property you can define whether to render indexLabel "inside" or "outside" the dataPoint.
     * Default: "outside"
     * Example: "outside", "inside"
     */
-  var indexLabelPlacement: js.UndefOr[String] = js.native
+  var indexLabelPlacement: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border color around the legend marker. Value of legendMarkerBorderColor can be “color names” or “hex code”.
     * Default: dataSeries color.
     * Example: “red”, “#008000” ..
     */
-  var legendMarkerBorderColor: js.UndefOr[String] = js.native
+  var legendMarkerBorderColor: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the thickness of the legend’s Marker Border in pixels.
     * Default: 0
     * Example: 2, 4 ..
     */
-  var legendMarkerBorderThickness: js.UndefOr[Double] = js.native
+  var legendMarkerBorderThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the color of marker that is displayed on legend. This property overrides default Marker’s Color in Legend, which is same as dataSeries Marker Color.
@@ -147,42 +145,42 @@ trait ChartDataCommon extends StObject {
     * Default: dataSeries marker color
     * Example: "red", "#008000" ..
     */
-  var legendMarkerColor: js.UndefOr[String] = js.native
+  var legendMarkerColor: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the Legend Marker to one of the options below. This property is used to override the default marker in legend, which is same as dataSeries Marker Type.
     * Default: same as markerType
     * Options: "circle", "square", "cross" and "triangle"
     */
-  var legendMarkerType: js.UndefOr[String] = js.native
+  var legendMarkerType: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the text that describes the dataSeries in legend.
     * Default: "DataSeries 1", "DataSeries 2" ..etc
     * Example: "2010", "2011"..
     */
-  var legendText: js.UndefOr[String] = js.native
+  var legendText: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border color around marker. Value of markerBorderColor can be "HTML Color Name" or "hex code".
     * Default: dataSeries color.
     * Example: "red", "#008000" ..
     */
-  var markerBorderColor: js.UndefOr[String] = js.native
+  var markerBorderColor: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the thickness of the Marker’s Border in pixels.
     * Default: 1
     * Example: 2,4 ..
     */
-  var markerBorderThickness: js.UndefOr[Double] = js.native
+  var markerBorderThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the color of marker that is displayed on the Chart. Legend Marker for the series uses the same Color as set here unless overridden using legendMarkerColor property.
     * Default: dataSeries Color
     * Example: "red", "#008000" ..
     */
-  var markerColor: js.UndefOr[String] = js.native
+  var markerColor: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the Size of the marker that is drawn. To display marker in area Chart, set markerSize to a value greater than zero.
@@ -190,7 +188,7 @@ trait ChartDataCommon extends StObject {
     * Default: auto. Zero for area chart
     * Example: 5, 10..
     */
-  var markerSize: js.UndefOr[Double] = js.native
+  var markerSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets marker type to be rendered at each dataPoint. While markers are helpful in highlighting individual dataPoints, they do not help much when the dataPoints are crowded.
@@ -199,7 +197,7 @@ trait ChartDataCommon extends StObject {
     * Default: "circle"
     * Options: "none", "circle", "square", "triangle" and "cross"
     */
-  var markerType: js.UndefOr[String] = js.native
+  var markerType: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the mousemove event handler for dataSeries which is triggered when user Moves mouse on a dataSeries.
@@ -207,7 +205,7 @@ trait ChartDataCommon extends StObject {
     * Parameter includes dataPoint and dataSeries corresponding to the event.
     * Default: null
     */
-  var mousemove: js.UndefOr[js.Function1[/* event */ ChartEvent, Unit]] = js.native
+  var mousemove: js.UndefOr[js.Function1[/* event */ ChartEvent, Unit]] = js.undefined
   
   /**
     * Sets the mouseout event handler for dataSeries which is triggered when user moves mouse out of a dataSeries.
@@ -215,7 +213,7 @@ trait ChartDataCommon extends StObject {
     * Parameter includes dataPoint and dataSeries corresponding to the event.
     * Default: null
     */
-  var mouseout: js.UndefOr[js.Function1[/* event */ ChartEvent, Unit]] = js.native
+  var mouseout: js.UndefOr[js.Function1[/* event */ ChartEvent, Unit]] = js.undefined
   
   /**
     * Sets the mouseover event handler for dataSeries which is triggered when user moves Mouse Over a dataSeries.
@@ -223,21 +221,21 @@ trait ChartDataCommon extends StObject {
     * Parameter includes dataPoint and dataSeries corresponding to the event.
     * Default: null
     */
-  var mouseover: js.UndefOr[js.Function1[/* event */ ChartEvent, Unit]] = js.native
+  var mouseover: js.UndefOr[js.Function1[/* event */ ChartEvent, Unit]] = js.undefined
   
   /**
     * Sets the dataPoint Name. dataPoint name is shown in various places like toolTip & legend unless overridden.
     * Default: Automatically Named ("dataPoint 1", "dataPoint 2" .. )
     * Example: "apple", "mango" ..
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Default Tooltip can be modified at dataSeries or dataPoint level. You can add content to be displayed in toolTip using toolTipContent.
     * toolTipContent set at dataPoint will override toolTipContent set at dataSeries level.
     * Default: auto set depending on chart type.
     */
-  var toolTipContent: js.UndefOr[String] = js.native
+  var toolTipContent: js.UndefOr[String] = js.undefined
 }
 object ChartDataCommon {
   

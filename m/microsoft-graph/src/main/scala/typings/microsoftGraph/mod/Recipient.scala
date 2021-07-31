@@ -2,14 +2,12 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Recipient extends StObject {
   
   // The recipient's email address.
-  var emailAddress: js.UndefOr[NullableOption[EmailAddress]] = js.native
+  var emailAddress: js.UndefOr[NullableOption[EmailAddress]] = js.undefined
 }
 object Recipient {
   

@@ -2,21 +2,19 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Algorithms extends StObject {
   
-  var cipher: js.UndefOr[js.Array[String]] = js.native
+  var cipher: js.UndefOr[js.Array[String]] = js.undefined
   
-  var compress: js.UndefOr[js.Array[String]] = js.native
+  var compress: js.UndefOr[js.Array[String]] = js.undefined
   
-  var hmac: js.UndefOr[js.Array[String]] = js.native
+  var hmac: js.UndefOr[js.Array[String]] = js.undefined
   
-  var kex: js.UndefOr[js.Array[String]] = js.native
+  var kex: js.UndefOr[js.Array[String]] = js.undefined
   
-  var serverHostKey: js.UndefOr[js.Array[String]] = js.native
+  var serverHostKey: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Algorithms {
   

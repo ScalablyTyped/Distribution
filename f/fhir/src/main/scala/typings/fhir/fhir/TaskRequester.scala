@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Who is asking for task to be done
   */
-@js.native
-trait TaskRequester extends BackboneElement {
+trait TaskRequester
+  extends StObject
+     with BackboneElement {
   
   /**
     * Individual asking for task
     */
-  var agent: Reference = js.native
+  var agent: Reference
   
   /**
     * Organization individual is acting for
     */
-  var onBehalfOf: js.UndefOr[Reference] = js.native
+  var onBehalfOf: js.UndefOr[Reference] = js.undefined
 }
 object TaskRequester {
   

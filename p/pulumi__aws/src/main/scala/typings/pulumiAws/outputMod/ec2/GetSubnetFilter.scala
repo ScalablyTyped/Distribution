@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSubnetFilter extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait GetSubnetFilter extends StObject {
     * [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSubnets.html).
     * For example, if matching against tag `Name`, use:
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Set of values that are accepted for the given field.
     * A subnet will be selected if any one of the given values matches.
     */
-  var values: js.Array[String] = js.native
+  var values: js.Array[String]
 }
 object GetSubnetFilter {
   

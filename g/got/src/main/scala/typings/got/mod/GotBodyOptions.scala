@@ -4,15 +4,15 @@ import typings.node.Buffer
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GotBodyOptions[E /* <: String | Null */] extends GotOptions[E] {
+trait GotBodyOptions[E /* <: String | Null */]
+  extends StObject
+     with GotOptions[E] {
   
-  var body: js.UndefOr[String | Buffer | Readable] = js.native
+  var body: js.UndefOr[String | Buffer | Readable] = js.undefined
   
-  var hooks: js.UndefOr[Hooks[GotBodyOptions[E], String | Buffer | Readable]] = js.native
+  var hooks: js.UndefOr[Hooks[GotBodyOptions[E], String | Buffer | Readable]] = js.undefined
 }
 object GotBodyOptions {
   
@@ -23,7 +23,7 @@ object GotBodyOptions {
   }
   
   @scala.inline
-  implicit class GotBodyOptionsMutableBuilder[Self <: GotBodyOptions[_], E /* <: String | Null */] (val x: Self with GotBodyOptions[E]) extends AnyVal {
+  implicit class GotBodyOptionsMutableBuilder[Self <: GotBodyOptions[?], E /* <: String | Null */] (val x: Self & GotBodyOptions[E]) extends AnyVal {
     
     @scala.inline
     def setBody(value: String | Buffer | Readable): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

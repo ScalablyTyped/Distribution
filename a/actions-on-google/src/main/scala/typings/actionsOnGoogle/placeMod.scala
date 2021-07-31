@@ -6,7 +6,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2Location
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2PlaceValueSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object placeMod {
@@ -23,7 +22,6 @@ object placeMod {
   
   type PlaceArgument = js.UndefOr[GoogleActionsV2Location]
   
-  @js.native
   trait PlaceOptions extends StObject {
     
     /**
@@ -33,14 +31,14 @@ object placeMod {
       *     Can I get that from Google?".
       * @public
       */
-    var context: String = js.native
+    var context: String
     
     /**
       * This is the initial response by location sub-dialog.
       * For example: "Where do you want to get picked up?"
       * @public
       */
-    var prompt: String = js.native
+    var prompt: String
   }
   object PlaceOptions {
     

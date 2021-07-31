@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Reports$Compatiblefields")
@@ -33,7 +32,7 @@ class ResourceReportsCompatiblefields protected () extends StObject {
     */
   def query(): GaxiosPromise[SchemaCompatibleFields] = js.native
   def query(callback: BodyResponseCallback[SchemaCompatibleFields]): Unit = js.native
-  def query(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCompatibleFields] = js.native
+  def query(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCompatibleFields] = js.native
   def query(params: ParamsResourceReportsCompatiblefieldsQuery): GaxiosPromise[SchemaCompatibleFields] = js.native
   def query(
     params: ParamsResourceReportsCompatiblefieldsQuery,

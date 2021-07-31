@@ -2,15 +2,13 @@ package typings.pulumiAws.outputMod.lex
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSlotTypeEnumerationValue extends StObject {
   
-  var synonyms: js.Array[String] = js.native
+  var synonyms: js.Array[String]
   
-  var value: String = js.native
+  var value: String
 }
 object GetSlotTypeEnumerationValue {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudwatchAlarmAction extends StObject {
   
   /**
     * The CloudWatch alarm name.
     */
-  var alarmName: AlarmName = js.native
+  var alarmName: AlarmName
   
   /**
     * The IAM role that allows access to the CloudWatch alarm.
     */
-  var roleArn: AwsArn = js.native
+  var roleArn: AwsArn
   
   /**
     * The reason for the alarm change.
     */
-  var stateReason: StateReason = js.native
+  var stateReason: StateReason
   
   /**
     * The value of the alarm state. Acceptable values are: OK, ALARM, INSUFFICIENT_DATA.
     */
-  var stateValue: StateValue = js.native
+  var stateValue: StateValue
 }
 object CloudwatchAlarmAction {
   

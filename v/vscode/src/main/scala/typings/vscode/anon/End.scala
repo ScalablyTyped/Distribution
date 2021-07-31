@@ -3,15 +3,13 @@ package typings.vscode.anon
 import typings.vscode.mod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait End extends StObject {
   
-  var end: js.UndefOr[Position] = js.native
+  var end: js.UndefOr[Position] = js.undefined
   
-  var start: js.UndefOr[Position] = js.native
+  var start: js.UndefOr[Position] = js.undefined
 }
 object End {
   

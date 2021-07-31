@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputChannelLevel extends StObject {
   
   /**
     * Remixing value. Units are in dB and acceptable values are within the range from -60 (mute) and 6 dB.
     */
-  var Gain: integerMinNegative60Max6 = js.native
+  var Gain: integerMinNegative60Max6
   
   /**
     * The index of the input channel used as a source.
     */
-  var InputChannel: integerMin0Max15 = js.native
+  var InputChannel: integerMin0Max15
 }
 object InputChannelLevel {
   

@@ -3,23 +3,21 @@ package typings.weappApi.mod.wx
 import typings.weappApi.anon.TapIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionSheetOptions extends StObject {
   
-  var complete: js.UndefOr[ResponseCallback] = js.native
+  var complete: js.UndefOr[ResponseCallback] = js.undefined
   
-  var fail: js.UndefOr[ResponseCallback] = js.native
+  var fail: js.UndefOr[ResponseCallback] = js.undefined
   
   // 按钮的文字颜色
-  var itemColor: js.UndefOr[String] = js.native
+  var itemColor: js.UndefOr[String] = js.undefined
   
   // 必填，按钮的文字数组，数组长度最大为 6
-  var itemList: js.Array[String] = js.native
+  var itemList: js.Array[String]
   
-  var success: js.UndefOr[ActionSheetSuccessCallback] = js.native
+  var success: js.UndefOr[ActionSheetSuccessCallback] = js.undefined
 }
 object ActionSheetOptions {
   

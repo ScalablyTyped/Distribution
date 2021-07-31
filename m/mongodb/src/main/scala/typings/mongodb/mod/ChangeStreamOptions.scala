@@ -4,27 +4,25 @@ import typings.mongodb.mongodbStrings.default_
 import typings.mongodb.mongodbStrings.updateLookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeStreamOptions extends StObject {
   
-  var batchSize: js.UndefOr[scala.Double] = js.native
+  var batchSize: js.UndefOr[scala.Double] = js.undefined
   
-  var collation: js.UndefOr[CollationDocument] = js.native
+  var collation: js.UndefOr[CollationDocument] = js.undefined
   
-  var fullDocument: js.UndefOr[default_ | updateLookup] = js.native
+  var fullDocument: js.UndefOr[default_ | updateLookup] = js.undefined
   
-  var maxAwaitTimeMS: js.UndefOr[scala.Double] = js.native
+  var maxAwaitTimeMS: js.UndefOr[scala.Double] = js.undefined
   
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   
-  var resumeAfter: js.UndefOr[ResumeToken] = js.native
+  var resumeAfter: js.UndefOr[ResumeToken] = js.undefined
   
-  var startAfter: js.UndefOr[ResumeToken] = js.native
+  var startAfter: js.UndefOr[ResumeToken] = js.undefined
   
-  var startAtOperationTime: js.UndefOr[typings.bson.mod.Timestamp] = js.native
+  var startAtOperationTime: js.UndefOr[typings.bson.mod.Timestamp] = js.undefined
 }
 object ChangeStreamOptions {
   

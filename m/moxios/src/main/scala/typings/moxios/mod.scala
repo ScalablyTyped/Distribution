@@ -6,7 +6,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,12 +23,10 @@ object mod {
   /**
     * Install the mock adapter for axios
     */
-  @JSImport("moxios", "install")
-  @js.native
-  def install(): Unit = js.native
-  @JSImport("moxios", "install")
-  @js.native
-  def install(instance: AxiosInstance): Unit = js.native
+  @scala.inline
+  def install(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[Unit]
+  @scala.inline
+  def install(instance: AxiosInstance): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("moxios", "requests")
   @js.native
@@ -46,12 +43,10 @@ object mod {
     * @param urlOrRegExp A URL or RegExp to test against
     * @param response The response to use when a match is made
     */
-  @JSImport("moxios", "stubFailure")
-  @js.native
-  def stubFailure(method: String, urlOrRegExp: String, response: Item): js.Promise[Unit] = js.native
-  @JSImport("moxios", "stubFailure")
-  @js.native
-  def stubFailure(method: String, urlOrRegExp: RegExp, response: Item): js.Promise[Unit] = js.native
+  @scala.inline
+  def stubFailure(method: String, urlOrRegExp: String, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubFailure")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def stubFailure(method: String, urlOrRegExp: RegExp, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubFailure")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Stub a response to be used one or more times to respond to a request matching a
@@ -61,12 +56,10 @@ object mod {
     * @param urlOrRegExp A URL or RegExp to test against
     * @param response The response to use when a match is made
     */
-  @JSImport("moxios", "stubOnce")
-  @js.native
-  def stubOnce(method: String, urlOrRegExp: String, response: Item): js.Promise[Unit] = js.native
-  @JSImport("moxios", "stubOnce")
-  @js.native
-  def stubOnce(method: String, urlOrRegExp: RegExp, response: Item): js.Promise[Unit] = js.native
+  @scala.inline
+  def stubOnce(method: String, urlOrRegExp: String, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubOnce")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def stubOnce(method: String, urlOrRegExp: RegExp, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubOnce")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Stub a response to be used to respond to a request matching a URL or RegExp
@@ -74,24 +67,20 @@ object mod {
     * @param urlOrRegExp A URL or RegExp to test against
     * @param response The response to use when a match is made
     */
-  @JSImport("moxios", "stubRequest")
-  @js.native
-  def stubRequest(urlOrRegExp: String, response: Item): Unit = js.native
-  @JSImport("moxios", "stubRequest")
-  @js.native
-  def stubRequest(urlOrRegExp: RegExp, response: Item): Unit = js.native
+  @scala.inline
+  def stubRequest(urlOrRegExp: String, response: Item): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stubRequest")(urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def stubRequest(urlOrRegExp: RegExp, response: Item): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stubRequest")(urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Stub a timeout to be used to respond to a request matching a URL or RegExp
     *
     * @param urlOrRegExp A URL or RegExp to test against
     */
-  @JSImport("moxios", "stubTimeout")
-  @js.native
-  def stubTimeout(urlOrRegExp: String): String = js.native
-  @JSImport("moxios", "stubTimeout")
-  @js.native
-  def stubTimeout(urlOrRegExp: RegExp): String = js.native
+  @scala.inline
+  def stubTimeout(urlOrRegExp: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stubTimeout")(urlOrRegExp.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stubTimeout(urlOrRegExp: RegExp): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stubTimeout")(urlOrRegExp.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("moxios", "stubs")
   @js.native
@@ -108,12 +97,10 @@ object mod {
   /**
     * Uninstall the mock adapter and reset state
     */
-  @JSImport("moxios", "uninstall")
-  @js.native
-  def uninstall(): Unit = js.native
-  @JSImport("moxios", "uninstall")
-  @js.native
-  def uninstall(instance: AxiosInstance): Unit = js.native
+  @scala.inline
+  def uninstall(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")().asInstanceOf[Unit]
+  @scala.inline
+  def uninstall(instance: AxiosInstance): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Wait for request to be made before proceding.
@@ -123,12 +110,10 @@ object mod {
     * @param fn The function to execute once waiting is over
     * @param delay How much time in milliseconds to wait
     */
-  @JSImport("moxios", "wait")
-  @js.native
-  def wait_(fn: js.Function0[Unit]): Unit = js.native
-  @JSImport("moxios", "wait")
-  @js.native
-  def wait_(fn: js.Function0[Unit], delay: Double): Unit = js.native
+  @scala.inline
+  def wait_(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def wait_(fn: js.Function0[Unit], delay: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Run a single test with mock adapter installed.
@@ -137,22 +122,20 @@ object mod {
     *
     * @param fn The function to be executed
     */
-  @JSImport("moxios", "withMock")
-  @js.native
-  def withMock(fn: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def withMock(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("withMock")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Item extends StObject {
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var response: js.UndefOr[js.Any] = js.native
+    var response: js.UndefOr[js.Any] = js.undefined
     
-    var responseText: js.UndefOr[String] = js.native
+    var responseText: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
-    var statusText: js.UndefOr[String] = js.native
+    var statusText: js.UndefOr[String] = js.undefined
   }
   object Item {
     
@@ -197,12 +180,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
-    var config: AxiosRequestConfig = js.native
+    var config: AxiosRequestConfig
     
-    var headers: js.Any = js.native
+    var headers: js.Any
     
     /**
       * Respond to this request with a specified result
@@ -210,22 +192,22 @@ object mod {
       * @param res The data representing the result of the request
       * @return A Promise that resolves once the response is ready
       */
-    def respondWith(res: Item): js.Promise[Response] = js.native
+    def respondWith(res: Item): js.Promise[Response]
     
     /**
       * Respond to this request with a timeout result
       *
       * @return A Promise that rejects with a timeout result
       */
-    def respondWithTimeout(): js.Promise[Response] = js.native
+    def respondWithTimeout(): js.Promise[Response]
     
-    var responseType: String = js.native
+    var responseType: String
     
-    var timeout: Double = js.native
+    var timeout: Double
     
-    var url: String = js.native
+    var url: String
     
-    var withCredentials: Boolean = js.native
+    var withCredentials: Boolean
   }
   object Request {
     
@@ -273,22 +255,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var config: AxiosRequestConfig = js.native
+    var config: AxiosRequestConfig
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.Any = js.native
+    var headers: js.Any
     
-    var request: Request = js.native
+    var request: Request
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
-    var statusText: js.UndefOr[String] = js.native
+    var statusText: js.UndefOr[String] = js.undefined
   }
   object Response {
     

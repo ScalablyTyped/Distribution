@@ -3,28 +3,28 @@ package typings.expoVectorIcons
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createMultiStyleIconSetMod {
   
-  @JSImport("@expo/vector-icons/build/createMultiStyleIconSet", JSImport.Default)
+  @JSImport("@expo/vector-icons/build/createMultiStyleIconSet", JSImport.Namespace)
   @js.native
-  def default(styles: FontStyles): js.Any = js.native
-  @JSImport("@expo/vector-icons/build/createMultiStyleIconSet", JSImport.Default)
-  @js.native
-  def default(styles: FontStyles, optionsInput: js.Object): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(styles: FontStyles): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def default(styles: FontStyles, optionsInput: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(styles.asInstanceOf[js.Any], optionsInput.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   trait FontStyle extends StObject {
     
-    var fontFamily: String = js.native
+    var fontFamily: String
     
-    var fontFile: js.Any = js.native
+    var fontFile: js.Any
     
-    var fontStyle: js.Any = js.native
+    var fontStyle: js.Any
     
-    var glyphMap: js.Any = js.native
+    var glyphMap: js.Any
   }
   object FontStyle {
     

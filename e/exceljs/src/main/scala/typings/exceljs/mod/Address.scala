@@ -2,22 +2,20 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
   @JSName("$col$row")
-  var DollarcolDollarrow: String = js.native
+  var DollarcolDollarrow: String
   
-  var address: String = js.native
+  var address: String
   
-  var col: String = js.native
+  var col: String
   
-  var row: String = js.native
+  var row: String
   
-  var sheetName: js.UndefOr[String] = js.native
+  var sheetName: js.UndefOr[String] = js.undefined
 }
 object Address {
   

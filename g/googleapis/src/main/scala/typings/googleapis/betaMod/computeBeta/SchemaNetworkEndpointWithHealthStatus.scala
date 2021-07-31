@@ -2,21 +2,19 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaNetworkEndpointWithHealthStatus extends StObject {
   
   /**
     * [Output only] The health status of network endpoint;
     */
-  var healths: js.UndefOr[js.Array[SchemaHealthStatusForNetworkEndpoint]] = js.native
+  var healths: js.UndefOr[js.Array[SchemaHealthStatusForNetworkEndpoint]] = js.undefined
   
   /**
     * [Output only] The network endpoint;
     */
-  var networkEndpoint: js.UndefOr[SchemaNetworkEndpoint] = js.native
+  var networkEndpoint: js.UndefOr[SchemaNetworkEndpoint] = js.undefined
 }
 object SchemaNetworkEndpointWithHealthStatus {
   

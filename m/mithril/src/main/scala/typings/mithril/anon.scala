@@ -16,7 +16,6 @@ import typings.std.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -41,45 +40,45 @@ object anon {
   trait FnCallElementComponent extends StObject {
     
     def apply(element: Element, component: Null): Unit = js.native
-    def apply(element: Element, component: ComponentTypes[_, _]): Unit = js.native
+    def apply(element: Element, component: ComponentTypes[js.Any, js.Any]): Unit = js.native
   }
   
   @js.native
   trait FnCallUrlOptions extends StObject {
     
-    def apply[T](options: RequestOptions[T] with Url): js.Promise[T] = js.native
+    def apply[T](options: RequestOptions[T] & Url): js.Promise[T] = js.native
     def apply[T](url: String): js.Promise[T] = js.native
     def apply[T](url: String, options: RequestOptions[T]): js.Promise[T] = js.native
   }
   
   @js.native
   trait Instantiable[A]
-    extends _ComponentTypes[A, js.Any]
+    extends StObject
        with Instantiable1[/* vnode */ CVnode[A], ClassComponent[A]]
+       with _ComponentTypes[A, js.Any]
   
   /* Inlined mithril.mithril.JsonpOptions & {  url :string} */
-  @js.native
   trait JsonpOptionsurlstring extends StObject {
     
     /** If false, redraws mounted components upon completion of the request. If true, it does not. */
-    var background: js.UndefOr[Boolean] = js.native
+    var background: js.UndefOr[Boolean] = js.undefined
     
     /** The data to be serialized into the request body. */
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
     /** The name of the querystring parameter name that specifies the callback name. */
-    var callbackKey: js.UndefOr[String] = js.native
+    var callbackKey: js.UndefOr[String] = js.undefined
     
     /** The name of the function that will be called as the callback. */
-    var callbackName: js.UndefOr[String] = js.native
+    var callbackName: js.UndefOr[String] = js.undefined
     
     /** The data to be interpolated into the URL and serialized into the querystring. */
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /** A constructor to be applied to each object in the response. */
-    var `type`: js.UndefOr[Instantiable1[/* o */ js.Any, js.Any]] = js.native
+    var `type`: js.UndefOr[Instantiable1[/* o */ js.Any, js.Any]] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object JsonpOptionsurlstring {
     
@@ -133,10 +132,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: js.UndefOr[String | Double] = js.native
+    var key: js.UndefOr[String | Double] = js.undefined
   }
   object Key {
     
@@ -158,33 +156,44 @@ object anon {
   }
   
   /* Inlined mithril.mithril.Lifecycle<any, any> & {[key: string] : any} */
-  @js.native
   trait Lifecycleanyanykeystringa
-    extends /* key */ StringDictionary[js.Any]
+    extends StObject
+       with /* key */ StringDictionary[js.Any]
        with /** WORKAROUND: TypeScript 2.4 does not allow extending an interface with all-optional properties. */
   /* _ */ NumberDictionary[js.Any] {
     
     /** The onbeforeremove hook is called before a DOM element is detached from the document. If a Promise is returned, Mithril only detaches the DOM element after the promise completes. */
     var onbeforeremove: js.UndefOr[
-        js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[_, _], js.Promise[_] | Unit]
-      ] = js.native
+        js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[js.Any, js.Any], js.Promise[js.Any] | Unit]
+      ] = js.undefined
     
     /** The onbeforeupdate hook is called before a vnode is diffed in a update. */
     var onbeforeupdate: js.UndefOr[
-        js.ThisFunction2[/* this */ js.Any, /* vnode */ Vnode[_, _], /* old */ VnodeDOM[_, _], Boolean | Unit]
-      ] = js.native
+        js.ThisFunction2[
+          /* this */ js.Any, 
+          /* vnode */ Vnode[js.Any, js.Any], 
+          /* old */ VnodeDOM[js.Any, js.Any], 
+          Boolean | Unit
+        ]
+      ] = js.undefined
     
     /** The oncreate hook is called after a DOM element is created and attached to the document. */
-    var oncreate: js.UndefOr[js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[_, _], _]] = js.native
+    var oncreate: js.UndefOr[
+        js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[js.Any, js.Any], js.Any]
+      ] = js.undefined
     
     /** The oninit hook is called before a vnode is touched by the virtual DOM engine. */
-    var oninit: js.UndefOr[js.ThisFunction1[/* this */ js.Any, /* vnode */ Vnode[_, _], _]] = js.native
+    var oninit: js.UndefOr[js.ThisFunction1[/* this */ js.Any, /* vnode */ Vnode[js.Any, js.Any], js.Any]] = js.undefined
     
     /** The onremove hook is called before a DOM element is removed from the document. */
-    var onremove: js.UndefOr[js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[_, _], _]] = js.native
+    var onremove: js.UndefOr[
+        js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[js.Any, js.Any], js.Any]
+      ] = js.undefined
     
     /** The onupdate hook is called after a DOM element is updated, while attached to the document. */
-    var onupdate: js.UndefOr[js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[_, _], _]] = js.native
+    var onupdate: js.UndefOr[
+        js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[js.Any, js.Any], js.Any]
+      ] = js.undefined
   }
   object Lifecycleanyanykeystringa {
     
@@ -198,51 +207,57 @@ object anon {
     implicit class LifecycleanyanykeystringaMutableBuilder[Self <: Lifecycleanyanykeystringa] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnbeforeremove(value: js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[_, _], js.Promise[_] | Unit]): Self = StObject.set(x, "onbeforeremove", value.asInstanceOf[js.Any])
+      def setOnbeforeremove(
+        value: js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[js.Any, js.Any], js.Promise[js.Any] | Unit]
+      ): Self = StObject.set(x, "onbeforeremove", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnbeforeremoveUndefined: Self = StObject.set(x, "onbeforeremove", js.undefined)
       
       @scala.inline
       def setOnbeforeupdate(
-        value: js.ThisFunction2[/* this */ js.Any, /* vnode */ Vnode[_, _], /* old */ VnodeDOM[_, _], Boolean | Unit]
+        value: js.ThisFunction2[
+              /* this */ js.Any, 
+              /* vnode */ Vnode[js.Any, js.Any], 
+              /* old */ VnodeDOM[js.Any, js.Any], 
+              Boolean | Unit
+            ]
       ): Self = StObject.set(x, "onbeforeupdate", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnbeforeupdateUndefined: Self = StObject.set(x, "onbeforeupdate", js.undefined)
       
       @scala.inline
-      def setOncreate(value: js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[_, _], _]): Self = StObject.set(x, "oncreate", value.asInstanceOf[js.Any])
+      def setOncreate(value: js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[js.Any, js.Any], js.Any]): Self = StObject.set(x, "oncreate", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOncreateUndefined: Self = StObject.set(x, "oncreate", js.undefined)
       
       @scala.inline
-      def setOninit(value: js.ThisFunction1[/* this */ js.Any, /* vnode */ Vnode[_, _], _]): Self = StObject.set(x, "oninit", value.asInstanceOf[js.Any])
+      def setOninit(value: js.ThisFunction1[/* this */ js.Any, /* vnode */ Vnode[js.Any, js.Any], js.Any]): Self = StObject.set(x, "oninit", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOninitUndefined: Self = StObject.set(x, "oninit", js.undefined)
       
       @scala.inline
-      def setOnremove(value: js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[_, _], _]): Self = StObject.set(x, "onremove", value.asInstanceOf[js.Any])
+      def setOnremove(value: js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[js.Any, js.Any], js.Any]): Self = StObject.set(x, "onremove", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnremoveUndefined: Self = StObject.set(x, "onremove", js.undefined)
       
       @scala.inline
-      def setOnupdate(value: js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[_, _], _]): Self = StObject.set(x, "onupdate", value.asInstanceOf[js.Any])
+      def setOnupdate(value: js.ThisFunction1[/* this */ js.Any, /* vnode */ VnodeDOM[js.Any, js.Any], js.Any]): Self = StObject.set(x, "onupdate", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnupdateUndefined: Self = StObject.set(x, "onupdate", js.undefined)
     }
   }
   
-  @js.native
   trait Params extends StObject {
     
-    var params: typings.mithril.mod.Params = js.native
+    var params: typings.mithril.mod.Params
     
-    var path: String = js.native
+    var path: String
   }
   object Params {
     
@@ -263,10 +278,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var url: String = js.native
+    var url: String
   }
   object Url {
     

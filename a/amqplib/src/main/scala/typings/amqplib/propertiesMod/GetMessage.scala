@@ -3,14 +3,14 @@ package typings.amqplib.propertiesMod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetMessage extends Message {
+trait GetMessage
+  extends StObject
+     with Message {
   
   @JSName("fields")
-  var fields_GetMessage: GetMessageFields = js.native
+  var fields_GetMessage: GetMessageFields
 }
 object GetMessage {
   

@@ -6,27 +6,25 @@ import typings.storybookUi.sidebarTypesMod.Highlight
 import typings.storybookUi.sidebarTypesMod.RefType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refsMod {
   
   @JSImport("@storybook/ui/dist/components/sidebar/Refs", "Ref")
   @js.native
-  val Ref: FunctionComponent[RefType with RefProps] = js.native
+  val Ref: FunctionComponent[RefType & RefProps] = js.native
   
-  @js.native
   trait RefProps extends StObject {
     
-    var highlightedRef: MutableRefObject[Highlight] = js.native
+    var highlightedRef: MutableRefObject[Highlight]
     
-    var isBrowsing: Boolean = js.native
+    var isBrowsing: Boolean
     
-    var isLoading: Boolean = js.native
+    var isLoading: Boolean
     
-    var selectedStoryId: String | Null = js.native
+    var selectedStoryId: String | Null
     
-    def setHighlighted(highlight: Highlight): Unit = js.native
+    def setHighlighted(highlight: Highlight): Unit
   }
   object RefProps {
     
@@ -37,7 +35,7 @@ object refsMod {
       isLoading: Boolean,
       setHighlighted: Highlight => Unit
     ): RefProps = {
-      val __obj = js.Dynamic.literal(highlightedRef = highlightedRef.asInstanceOf[js.Any], isBrowsing = isBrowsing.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], setHighlighted = js.Any.fromFunction1(setHighlighted))
+      val __obj = js.Dynamic.literal(highlightedRef = highlightedRef.asInstanceOf[js.Any], isBrowsing = isBrowsing.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], setHighlighted = js.Any.fromFunction1(setHighlighted), selectedStoryId = null)
       __obj.asInstanceOf[RefProps]
     }
     

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectorySiteSettings extends StObject {
   
   /** Whether this directory site has disabled active view creatives. */
-  var activeViewOptOut: js.UndefOr[Boolean] = js.native
+  var activeViewOptOut: js.UndefOr[Boolean] = js.undefined
   
   /** Directory site Ad Manager settings. */
-  var dfpSettings: js.UndefOr[DfpSettings] = js.native
+  var dfpSettings: js.UndefOr[DfpSettings] = js.undefined
   
   /** Whether this site accepts in-stream video ads. */
-  var instreamVideoPlacementAccepted: js.UndefOr[Boolean] = js.native
+  var instreamVideoPlacementAccepted: js.UndefOr[Boolean] = js.undefined
   
   /** Whether this site accepts interstitial ads. */
-  var interstitialPlacementAccepted: js.UndefOr[Boolean] = js.native
+  var interstitialPlacementAccepted: js.UndefOr[Boolean] = js.undefined
 }
 object DirectorySiteSettings {
   

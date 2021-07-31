@@ -2,16 +2,14 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancellationToken extends StObject {
   
-  def isCancellationRequested(): Boolean = js.native
+  def isCancellationRequested(): Boolean
   
   /** @throws OperationCanceledException if isCancellationRequested is true */
-  def throwIfCancellationRequested(): Unit = js.native
+  def throwIfCancellationRequested(): Unit
 }
 object CancellationToken {
   

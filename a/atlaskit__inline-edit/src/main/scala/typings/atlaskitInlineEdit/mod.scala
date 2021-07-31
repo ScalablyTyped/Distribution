@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,53 +25,52 @@ object mod {
     def this(props: StatelessProps, context: js.Any) = this()
   }
   
-  @js.native
   trait BaseProps extends StObject {
     
     /** Sets whether the checkmark and cross are displayed in the bottom right fo the field. */
-    var areActionButtonsHidden: js.UndefOr[Boolean] = js.native
+    var areActionButtonsHidden: js.UndefOr[Boolean] = js.undefined
     
     /** Set whether default stylings should be disabled when editing. */
-    var disableEditViewFieldBase: js.UndefOr[Boolean] = js.native
+    var disableEditViewFieldBase: js.UndefOr[Boolean] = js.undefined
     
     /** Component to be shown when editing. Should be an @atlaskit/input. */
-    var editView: js.UndefOr[ReactElement] = js.native
+    var editView: js.UndefOr[ReactElement] = js.undefined
     
     /** Component to be shown in an @atlaskit/inline-dialog when edit view is open. */
-    var invalidMessage: js.UndefOr[ReactElement] = js.native
+    var invalidMessage: js.UndefOr[ReactElement] = js.undefined
     
     /** Sets whether the confirm function is called when the input loses focus. */
-    var isConfirmOnBlurDisabled: js.UndefOr[Boolean] = js.native
+    var isConfirmOnBlurDisabled: js.UndefOr[Boolean] = js.undefined
     
     /** Set whether the read view should fit width, most obvious when hovered. */
-    var isFitContainerWidthReadView: js.UndefOr[Boolean] = js.native
+    var isFitContainerWidthReadView: js.UndefOr[Boolean] = js.undefined
     
     /** Sets yellow border with warning symbol at end of input. Removes confirm and cancel buttons. */
-    var isInvalid: js.UndefOr[Boolean] = js.native
+    var isInvalid: js.UndefOr[Boolean] = js.undefined
     
     /** Determine whether the label is shown. */
-    var isLabelHidden: js.UndefOr[Boolean] = js.native
+    var isLabelHidden: js.UndefOr[Boolean] = js.undefined
     
     /** Greys out text and shows spinner. Does not disable input. */
-    var isWaiting: js.UndefOr[Boolean] = js.native
+    var isWaiting: js.UndefOr[Boolean] = js.undefined
     
     /** Label above the input. */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /** html to pass down to the label htmlFor prop. */
-    var labelHtmlFor: js.UndefOr[String] = js.native
+    var labelHtmlFor: js.UndefOr[String] = js.undefined
     
     /** Handler called when the cross is clicked on. */
-    def onCancel(): Unit = js.native
+    def onCancel(): Unit
     
     /** Handler called when checkmark is clicked. Also by default called when the input loses focus. */
-    def onConfirm(): Unit = js.native
+    def onConfirm(): Unit
     
     /** Component to be shown when reading only */
-    var readView: ReactElement = js.native
+    var readView: ReactElement
     
     /** Set whether onConfirm is called on pressing enter. */
-    var shouldConfirmOnEnter: js.UndefOr[Boolean] = js.native
+    var shouldConfirmOnEnter: js.UndefOr[Boolean] = js.undefined
   }
   object BaseProps {
     
@@ -172,14 +170,15 @@ object mod {
   
   type StatefulProps = BaseProps
   
-  @js.native
-  trait StatelessProps extends BaseProps {
+  trait StatelessProps
+    extends StObject
+       with BaseProps {
     
     /** Whether the component shows the readView or the editView. */
-    var isEditing: Boolean = js.native
+    var isEditing: Boolean
     
     /** Handler called when the wrapper or the label are clicked. */
-    def onEditRequested(): Unit = js.native
+    def onEditRequested(): Unit
   }
   object StatelessProps {
     

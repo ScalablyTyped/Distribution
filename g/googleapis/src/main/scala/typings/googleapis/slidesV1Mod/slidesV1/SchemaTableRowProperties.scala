@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Properties of each row in a table.
   */
-@js.native
 trait SchemaTableRowProperties extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaTableRowProperties extends StObject {
     * at a height equal to or greater than this value in order to show all the
     * text in the row&#39;s cell(s).
     */
-  var minRowHeight: js.UndefOr[SchemaDimension] = js.native
+  var minRowHeight: js.UndefOr[SchemaDimension] = js.undefined
 }
 object SchemaTableRowProperties {
   

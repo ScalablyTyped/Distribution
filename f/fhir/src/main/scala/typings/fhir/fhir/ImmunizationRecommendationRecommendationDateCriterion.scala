@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Dates governing proposed immunization
   */
-@js.native
-trait ImmunizationRecommendationRecommendationDateCriterion extends BackboneElement {
+trait ImmunizationRecommendationRecommendationDateCriterion
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'value'.
     */
-  var _value: js.UndefOr[Element] = js.native
+  var _value: js.UndefOr[Element] = js.undefined
   
   /**
     * Type of date
     */
-  var code: CodeableConcept = js.native
+  var code: CodeableConcept
   
   /**
     * Recommended date
     */
-  var value: dateTime = js.native
+  var value: dateTime
 }
 object ImmunizationRecommendationRecommendationDateCriterion {
   

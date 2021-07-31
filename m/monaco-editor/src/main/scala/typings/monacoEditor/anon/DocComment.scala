@@ -3,13 +3,11 @@ package typings.monacoEditor.anon
 import typings.monacoEditor.mod.languages.IDocComment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocComment extends StObject {
   
-  var docComment: js.UndefOr[IDocComment] = js.native
+  var docComment: js.UndefOr[IDocComment] = js.undefined
 }
 object DocComment {
   

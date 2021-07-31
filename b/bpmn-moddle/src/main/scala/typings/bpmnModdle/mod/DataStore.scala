@@ -2,17 +2,17 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataStore extends ItemAwareElement {
+trait DataStore
+  extends StObject
+     with ItemAwareElement {
   
-  var capacity: Double = js.native
+  var capacity: Double
   
-  var isUnlimited: Boolean = js.native
+  var isUnlimited: Boolean
   
-  var name: String = js.native
+  var name: String
 }
 object DataStore {
   

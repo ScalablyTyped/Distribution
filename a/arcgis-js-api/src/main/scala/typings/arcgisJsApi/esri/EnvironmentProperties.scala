@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentProperties extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait EnvironmentProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html#atmosphereEnabled)
     */
-  var atmosphereEnabled: js.UndefOr[Boolean] = js.native
+  var atmosphereEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies how the background of the scene (which lies behind sky, stars and atmosphere) should be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html#background)
     */
-  var background: js.UndefOr[BackgroundProperties] = js.native
+  var background: js.UndefOr[BackgroundProperties] = js.undefined
   
   /**
     * Settings for defining the lighting of the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html#lighting)
     */
-  var lighting: js.UndefOr[LightingProperties] = js.native
+  var lighting: js.UndefOr[LightingProperties] = js.undefined
   
   /**
     * Specifies whether stars should be displayed in the sky.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html#starsEnabled)
     */
-  var starsEnabled: js.UndefOr[Boolean] = js.native
+  var starsEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object EnvironmentProperties {
   

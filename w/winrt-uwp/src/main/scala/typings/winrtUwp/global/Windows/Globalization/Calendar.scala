@@ -3,7 +3,6 @@ package typings.winrtUwp.global.Windows.Globalization
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manipulates the representation of a date and time within a given calendar and clock. */
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /** Creates a Calendar object and initializes it to the current date and time. */
 class Calendar ()
-  extends typings.winrtUwp.Windows.Globalization.Calendar {
+  extends StObject
+     with typings.winrtUwp.Windows.Globalization.Calendar {
   /**
     * Creates a Calendar object that is initialized with a language list.
     * @param languages The list of language identifiers, in priority order, that represents the choice of languages. These are used for resolving patterns to strings. See Remarks.

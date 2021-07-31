@@ -2,18 +2,16 @@ package typings.reactDates.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<'unicode' | 'label' | 'action', string> */
-@js.native
 trait Recordunicodelabelactions extends StObject {
   
-  var action: String = js.native
+  var action: String
   
-  var label: String = js.native
+  var label: String
   
-  var unicode: String = js.native
+  var unicode: String
 }
 object Recordunicodelabelactions {
   

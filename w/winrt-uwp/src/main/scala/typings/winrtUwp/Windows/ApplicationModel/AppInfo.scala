@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.ApplicationModel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an application such as it name, logo, package information, ID. */
-@js.native
 trait AppInfo extends StObject {
   
   /** An identifier that uniquely identifies the app. */
-  var appUserModelId: String = js.native
+  var appUserModelId: String
   
   /** Gets information that describes the application. */
-  var displayInfo: AppDisplayInfo = js.native
+  var displayInfo: AppDisplayInfo
   
   /** Gets the app identifier. */
-  var id: String = js.native
+  var id: String
   
   /** An identifier that uniquely identifies the app's package. */
-  var packageFamilyName: String = js.native
+  var packageFamilyName: String
 }
 object AppInfo {
   

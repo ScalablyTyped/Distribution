@@ -2,39 +2,37 @@ package typings.mysql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OkPacket extends StObject {
   
   /**
     * The number of affected rows from an insert, update, or delete statement.
     */
-  var affectedRows: Double = js.native
+  var affectedRows: Double
   
   /**
     * The number of changed rows from an update statement. "changedRows" differs from "affectedRows" in that it does not count updated rows whose values were not changed.
     */
-  var changedRows: Double = js.native
+  var changedRows: Double
   
-  var fieldCount: Double = js.native
+  var fieldCount: Double
   
   /**
     * The insert id after inserting a row into a table with an auto increment primary key.
     */
-  var insertId: Double = js.native
+  var insertId: Double
   
   /**
     * The server result message from an insert, update, or delete statement.
     */
-  var message: String = js.native
+  var message: String
   
-  var protocol41: Boolean = js.native
+  var protocol41: Boolean
   
-  var serverStatus: js.UndefOr[Double] = js.native
+  var serverStatus: js.UndefOr[Double] = js.undefined
   
-  var warningCount: js.UndefOr[Double] = js.native
+  var warningCount: js.UndefOr[Double] = js.undefined
 }
 object OkPacket {
   

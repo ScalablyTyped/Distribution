@@ -2,17 +2,15 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeLine extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var line: Double = js.native
+  var line: Double
   
-  var point: Double = js.native
+  var point: Double
 }
 object CodeLine {
   

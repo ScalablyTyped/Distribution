@@ -11,8 +11,8 @@ Force V8 to use fast properties for an object
 | Full name          | to-fast-properties |
 | Keywords           | object, properties, props, v8, optimize, fast, convert, mode |
 | # releases         | 3 |
-| # dependents       | 120 |
-| # downloads        | 757078831 |
+| # dependents       | 160 |
+| # downloads        | 866961244 |
 | # stars            | 0 |
 
 ## Links

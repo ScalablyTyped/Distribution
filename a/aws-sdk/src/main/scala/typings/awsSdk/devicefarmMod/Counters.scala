@@ -2,46 +2,44 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Counters extends StObject {
   
   /**
     * The number of errored entities.
     */
-  var errored: js.UndefOr[Integer] = js.native
+  var errored: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of failed entities.
     */
-  var failed: js.UndefOr[Integer] = js.native
+  var failed: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of passed entities.
     */
-  var passed: js.UndefOr[Integer] = js.native
+  var passed: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of skipped entities.
     */
-  var skipped: js.UndefOr[Integer] = js.native
+  var skipped: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of stopped entities.
     */
-  var stopped: js.UndefOr[Integer] = js.native
+  var stopped: js.UndefOr[Integer] = js.undefined
   
   /**
     * The total number of entities.
     */
-  var total: js.UndefOr[Integer] = js.native
+  var total: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of warned entities.
     */
-  var warned: js.UndefOr[Integer] = js.native
+  var warned: js.UndefOr[Integer] = js.undefined
 }
 object Counters {
   

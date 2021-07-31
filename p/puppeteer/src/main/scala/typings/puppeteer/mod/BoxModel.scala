@@ -2,27 +2,25 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoxModel extends StObject {
   
   /** Border box, represented as an array of {x, y} points. */
-  var border: js.Array[Box] = js.native
+  var border: js.Array[Box]
   
   /** Content box, represented as an array of {x, y} points. */
-  var content: js.Array[Box] = js.native
+  var content: js.Array[Box]
   
-  var height: Double = js.native
+  var height: Double
   
   /** Margin box, represented as an array of {x, y} points. */
-  var margin: js.Array[Box] = js.native
+  var margin: js.Array[Box]
   
   /** Padding box, represented as an array of {x, y} points. */
-  var padding: js.Array[Box] = js.native
+  var padding: js.Array[Box]
   
-  var width: Double = js.native
+  var width: Double
 }
 object BoxModel {
   

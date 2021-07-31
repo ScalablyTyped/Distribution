@@ -2,53 +2,51 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntuneBrand extends StObject {
   
   // Email address of the person/organization responsible for IT support.
-  var contactITEmailAddress: js.UndefOr[NullableOption[String]] = js.native
+  var contactITEmailAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of the person/organization responsible for IT support.
-  var contactITName: js.UndefOr[NullableOption[String]] = js.native
+  var contactITName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Text comments regarding the person/organization responsible for IT support.
-  var contactITNotes: js.UndefOr[NullableOption[String]] = js.native
+  var contactITNotes: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Phone number of the person/organization responsible for IT support.
-  var contactITPhoneNumber: js.UndefOr[NullableOption[String]] = js.native
+  var contactITPhoneNumber: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Logo image displayed in Company Portal apps which have a dark background behind the logo.
-  var darkBackgroundLogo: js.UndefOr[NullableOption[MimeContent]] = js.native
+  var darkBackgroundLogo: js.UndefOr[NullableOption[MimeContent]] = js.undefined
   
   // Company/organization name that is displayed to end users.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Logo image displayed in Company Portal apps which have a light background behind the logo.
-  var lightBackgroundLogo: js.UndefOr[NullableOption[MimeContent]] = js.native
+  var lightBackgroundLogo: js.UndefOr[NullableOption[MimeContent]] = js.undefined
   
   // Display name of the company/organization’s IT helpdesk site.
-  var onlineSupportSiteName: js.UndefOr[NullableOption[String]] = js.native
+  var onlineSupportSiteName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // URL to the company/organization’s IT helpdesk site.
-  var onlineSupportSiteUrl: js.UndefOr[NullableOption[String]] = js.native
+  var onlineSupportSiteUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // URL to the company/organization’s privacy policy.
-  var privacyUrl: js.UndefOr[NullableOption[String]] = js.native
+  var privacyUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
-  var showDisplayNameNextToLogo: js.UndefOr[Boolean] = js.native
+  var showDisplayNameNextToLogo: js.UndefOr[Boolean] = js.undefined
   
   // Boolean that represents whether the administrator-supplied logo images are shown or not shown.
-  var showLogo: js.UndefOr[Boolean] = js.native
+  var showLogo: js.UndefOr[Boolean] = js.undefined
   
   // Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
-  var showNameNextToLogo: js.UndefOr[Boolean] = js.native
+  var showNameNextToLogo: js.UndefOr[Boolean] = js.undefined
   
   // Primary theme color used in the Company Portal applications and web portal.
-  var themeColor: js.UndefOr[NullableOption[RgbColor]] = js.native
+  var themeColor: js.UndefOr[NullableOption[RgbColor]] = js.undefined
 }
 object IntuneBrand {
   

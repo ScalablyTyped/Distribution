@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.mobile.ui.PopOverOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.mobile.ui.PopOver")
 @js.native
 class PopOver protected ()
-  extends typings.kendoUi.kendo.mobile.ui.PopOver {
+  extends StObject
+     with typings.kendoUi.kendo.mobile.ui.PopOver {
   def this(element: Element) = this()
   def this(element: Element, options: PopOverOptions) = this()
 }
@@ -21,9 +21,8 @@ object PopOver {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.mobile.ui.PopOver.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.PopOver = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.PopOver = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.mobile.ui.PopOver]
   
   /* static member */
   @JSGlobal("kendo.mobile.ui.PopOver.fn")

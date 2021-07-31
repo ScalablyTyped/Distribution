@@ -3,7 +3,6 @@ package typings.winjs.global.WinJS.UI
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,9 +18,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options An object that contains one or more property/value pairs to apply to the new control. This object can contain these properties: initiallyZoomedOut Boolean, zoomFactor 0.2–0.85.
   **/
 class SemanticZoom ()
-  extends typings.winjs.WinJS.UI.SemanticZoom {
+  extends StObject
+     with typings.winjs.WinJS.UI.SemanticZoom {
   def this(element: HTMLElement) = this()
-  def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
+  def this(element: Unit, options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
 object SemanticZoom {

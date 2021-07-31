@@ -3,12 +3,13 @@ package typings.elasticJs.mod
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "SpanNearQuery")
 @js.native
-class SpanNearQuery protected () extends Query {
+class SpanNearQuery protected ()
+  extends StObject
+     with Query {
   def this(clauses: js.Array[Query], slop: Double) = this()
   /*
     Matches spans which are near one another.

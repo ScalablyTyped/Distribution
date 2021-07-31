@@ -2,37 +2,35 @@ package typings.cordovaIonic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Ionic {
   
-  @js.native
   trait Keyboard extends StObject {
     
     /**
       * Close the keyboard if it is open.
       */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /**
       * Disable native scrolling, useful if you are using JavaScript to scroll
       *
       * @param disbale
       */
-    def disableScroll(disbale: Boolean): Unit = js.native
+    def disableScroll(disbale: Boolean): Unit
     
     /**
       * Hide the keyboard accessory bar with the next, previous and done buttons.
       *
       * @param hide
       */
-    def hideKeyboardAccessoryBar(hide: Boolean): Unit = js.native
+    def hideKeyboardAccessoryBar(hide: Boolean): Unit
     
     /**
       * Whether or not the keyboard is currently visible.
       */
-    var isVisible: Boolean = js.native
+    var isVisible: Boolean
     
     /**
       * Force keyboard to be shown on Android.
@@ -40,7 +38,7 @@ object Ionic {
       *
       * Supported Platforms: Android, Blackberry 10
       */
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object Keyboard {
     

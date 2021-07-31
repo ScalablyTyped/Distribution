@@ -10,9 +10,9 @@ Typings are for version 1.1
 | ------------------ | :-------------: |
 | Full name          | react-native-shared-group-preferences |
 | Keywords           | react-native |
-| # releases         | 16 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 7562 |
+| # downloads        | 27839 |
 | # stars            | 0 |
 
 ## Links

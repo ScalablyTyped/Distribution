@@ -7,27 +7,27 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides functionality to ...
   * @since OOo 3.0
   */
-@js.native
-trait XFlatParagraph extends XTextMarkup {
+trait XFlatParagraph
+  extends StObject
+     with XTextMarkup {
   
   /**
     * get a list of indexes that separate each two different languages
     * @returns a list of indices.
     */
-  val LanguagePortions: SafeArray[Double] = js.native
+  val LanguagePortions: SafeArray[Double]
   
   /**
     * get the content of the paragraph
     * @returns the content of the paragraph.
     */
-  val Text: String = js.native
+  val Text: String
   
   /**
     * replace the attributes of the specific text with the given set of attributes.
@@ -36,7 +36,7 @@ trait XFlatParagraph extends XTextMarkup {
     * @param aAttributes the given set of attributes e.g. Language.
     * @throws IllegalArgumentException when any argument is wrong.
     */
-  def changeAttributes(nPos: Double, nLen: Double, aAttributes: SeqEquiv[PropertyValue]): Unit = js.native
+  def changeAttributes(nPos: Double, nLen: Double, aAttributes: SeqEquiv[PropertyValue]): Unit
   
   /**
     * replace the specific text with new text.
@@ -46,7 +46,7 @@ trait XFlatParagraph extends XTextMarkup {
     * @param aAttributes the given set of attributes e.g. Language
     * @throws IllegalArgumentException when any argument is wrong.
     */
-  def changeText(nPos: Double, nLen: Double, NewText: String, aAttributes: SeqEquiv[PropertyValue]): Unit = js.native
+  def changeText(nPos: Double, nLen: Double, NewText: String, aAttributes: SeqEquiv[PropertyValue]): Unit
   
   /**
     * get the language of the specific text
@@ -55,13 +55,13 @@ trait XFlatParagraph extends XTextMarkup {
     * @returns the locale for the language identified. If no language could be identified, the locale will be empty.
     * @throws IllegalArgumentException when any argument is wrong.
     */
-  def getLanguageOfText(nPos: Double, nLen: Double): Locale = js.native
+  def getLanguageOfText(nPos: Double, nLen: Double): Locale
   
   /**
     * get a list of indexes that separate each two different languages
     * @returns a list of indices.
     */
-  def getLanguagePortions(): SafeArray[Double] = js.native
+  def getLanguagePortions(): SafeArray[Double]
   
   /**
     * get the single most probable language of the specific text, especially after getLanguageOfText fails
@@ -70,33 +70,33 @@ trait XFlatParagraph extends XTextMarkup {
     * @returns the locale for the language identified.
     * @throws IllegalArgumentException when any argument is wrong.
     */
-  def getPrimaryLanguageOfText(nPos: Double, nLen: Double): Locale = js.native
+  def getPrimaryLanguageOfText(nPos: Double, nLen: Double): Locale
   
   /**
     * get the content of the paragraph
     * @returns the content of the paragraph.
     */
-  def getText(): String = js.native
+  def getText(): String
   
   /**
     * returns whether the respective text node has already been processed
     * @param nType type, see {@link TextMarkupType} .
     * @returns `TRUE` if the respective text node has been checked `FALSE` otherwise.
     */
-  def isChecked(nType: Double): Boolean = js.native
+  def isChecked(nType: Double): Boolean
   
   /**
     * check whether the content has been modified
     * @returns `TRUE` if the content has been modified, `FALSE` otherwise.
     */
-  def isModified(): Boolean = js.native
+  def isModified(): Boolean
   
   /**
     * change the "checked" flag of the respective text node, i.e., mark the text node as "processed"
     * @param nType type, see {@link TextMarkupType} .
     * @param bVal `TRUE` the respective text node has been processed `FALSE` the respective text node needs to be processed again later
     */
-  def setChecked(nType: Double, bVal: Boolean): Unit = js.native
+  def setChecked(nType: Double, bVal: Boolean): Unit
 }
 object XFlatParagraph {
   

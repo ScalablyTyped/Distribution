@@ -2,17 +2,17 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SourceTargetPathRequestedEventOptions extends RequestedEventOptions {
+trait SourceTargetPathRequestedEventOptions
+  extends StObject
+     with RequestedEventOptions {
   
   /** The source path for the operation. */
-  var sourcePath: String = js.native
+  var sourcePath: String
   
   /** The destination path for the operation. */
-  var targetPath: String = js.native
+  var targetPath: String
 }
 object SourceTargetPathRequestedEventOptions {
   

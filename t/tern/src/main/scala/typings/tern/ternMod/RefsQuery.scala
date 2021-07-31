@@ -3,30 +3,29 @@ package typings.tern.ternMod
 import typings.tern.ternStrings.refs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefsQuery
-  extends BaseQueryWithFile
+  extends StObject
+     with BaseQueryWithFile
      with Query {
   
   /** Specify the location of the expression. */
-  var end: Double | Position = js.native
+  var end: Double | Position
   
   /** Specify the location of the expression. */
-  var start: js.UndefOr[Double | Position] = js.native
+  var start: js.UndefOr[Double | Position] = js.undefined
   
   /** Used to find all references to a given variable or property. */
   @JSName("type")
-  var type_RefsQuery: refs = js.native
+  var type_RefsQuery: refs
 }
 object RefsQuery {
   
   @scala.inline
-  def apply(end: Double | Position, file: String, `type`: refs): RefsQuery = {
+  def apply(end: Double | Position, file: String): RefsQuery = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("refs")
     __obj.asInstanceOf[RefsQuery]
   }
   

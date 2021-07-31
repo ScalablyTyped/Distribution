@@ -2,25 +2,23 @@ package typings.googleapis.v1configurationMod.gamesConfigurationV1configuration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a number format resource.
   */
-@js.native
 trait SchemaGamesNumberFormatConfiguration extends StObject {
   
   /**
     * The curreny code string. Only used for CURRENCY format type.
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * The number of decimal places for number. Only used for NUMERIC format
     * type.
     */
-  var numDecimalPlaces: js.UndefOr[Double] = js.native
+  var numDecimalPlaces: js.UndefOr[Double] = js.undefined
   
   /**
     * The formatting for the number. Possible values are:   -
@@ -30,13 +28,13 @@ trait SchemaGamesNumberFormatConfiguration extends StObject {
     * formatted to hours, minutes and seconds. - &quot;CURRENCY&quot; - Numbers
     * are formatted to currency according to locale.
     */
-  var numberFormatType: js.UndefOr[String] = js.native
+  var numberFormatType: js.UndefOr[String] = js.undefined
   
   /**
     * An optional suffix for the NUMERIC format type. These strings follow the
     * same  plural rules as all Android string resources.
     */
-  var suffix: js.UndefOr[SchemaGamesNumberAffixConfiguration] = js.native
+  var suffix: js.UndefOr[SchemaGamesNumberAffixConfiguration] = js.undefined
 }
 object SchemaGamesNumberFormatConfiguration {
   

@@ -16,7 +16,6 @@ import typings.std.HTMLSpanElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextTypesMod {
@@ -27,12 +26,11 @@ object contextTypesMod {
   
   type NodeDragEventHandler[T] = js.Function2[/* e */ MouseEvent[T, NativeMouseEvent], /* node */ NodeInstance, Unit]
   
-  @js.native
   trait NodeDragEventParams[T] extends StObject {
     
-    var event: MouseEvent[T, NativeMouseEvent] = js.native
+    var event: MouseEvent[T, NativeMouseEvent]
     
-    var node: EventDataNode = js.native
+    var node: EventDataNode
   }
   object NodeDragEventParams {
     
@@ -43,7 +41,7 @@ object contextTypesMod {
     }
     
     @scala.inline
-    implicit class NodeDragEventParamsMutableBuilder[Self <: NodeDragEventParams[_], T] (val x: Self with NodeDragEventParams[T]) extends AnyVal {
+    implicit class NodeDragEventParamsMutableBuilder[Self <: NodeDragEventParams[?], T] (val x: Self & NodeDragEventParams[T]) extends AnyVal {
       
       @scala.inline
       def setEvent(value: MouseEvent[T, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
@@ -55,12 +53,11 @@ object contextTypesMod {
   
   type NodeMouseEventHandler[T] = js.Function2[/* e */ MouseEvent[T, NativeMouseEvent], /* node */ EventDataNode, Unit]
   
-  @js.native
   trait NodeMouseEventParams[T] extends StObject {
     
-    var event: MouseEvent[T, NativeMouseEvent] = js.native
+    var event: MouseEvent[T, NativeMouseEvent]
     
-    var node: EventDataNode = js.native
+    var node: EventDataNode
   }
   object NodeMouseEventParams {
     
@@ -71,7 +68,7 @@ object contextTypesMod {
     }
     
     @scala.inline
-    implicit class NodeMouseEventParamsMutableBuilder[Self <: NodeMouseEventParams[_], T] (val x: Self with NodeMouseEventParams[T]) extends AnyVal {
+    implicit class NodeMouseEventParamsMutableBuilder[Self <: NodeMouseEventParams[?], T] (val x: Self & NodeMouseEventParams[T]) extends AnyVal {
       
       @scala.inline
       def setEvent(value: MouseEvent[T, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
@@ -81,64 +78,63 @@ object contextTypesMod {
     }
   }
   
-  @js.native
   trait TreeContextProps extends StObject {
     
-    var checkStrictly: Boolean = js.native
+    var checkStrictly: Boolean
     
-    var checkable: Boolean | ReactNode = js.native
+    var checkable: Boolean | ReactNode
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var draggable: Boolean = js.native
+    var draggable: Boolean
     
-    def filterTreeNode(treeNode: EventDataNode): Boolean = js.native
+    def filterTreeNode(treeNode: EventDataNode): Boolean
     
-    var icon: IconType = js.native
+    var icon: IconType
     
-    var keyEntities: Record[Key, DataEntity] = js.native
+    var keyEntities: Record[Key, DataEntity]
     
-    def loadData(treeNode: EventDataNode): js.Promise[Unit] = js.native
+    def loadData(treeNode: EventDataNode): js.Promise[Unit]
     
-    def onNodeCheck(e: MouseEvent[HTMLSpanElement, NativeMouseEvent], treeNode: EventDataNode, checked: Boolean): Unit = js.native
+    def onNodeCheck(e: MouseEvent[HTMLSpanElement, NativeMouseEvent], treeNode: EventDataNode, checked: Boolean): Unit
     
-    var onNodeClick: NodeMouseEventHandler[HTMLSpanElement] = js.native
+    var onNodeClick: NodeMouseEventHandler[HTMLSpanElement]
     
-    var onNodeContextMenu: NodeMouseEventHandler[HTMLSpanElement] = js.native
+    var onNodeContextMenu: NodeMouseEventHandler[HTMLSpanElement]
     
-    var onNodeDoubleClick: NodeMouseEventHandler[HTMLSpanElement] = js.native
+    var onNodeDoubleClick: NodeMouseEventHandler[HTMLSpanElement]
     
-    var onNodeDragEnd: NodeDragEventHandler[HTMLDivElement] = js.native
+    var onNodeDragEnd: NodeDragEventHandler[HTMLDivElement]
     
-    var onNodeDragEnter: NodeDragEventHandler[HTMLDivElement] = js.native
+    var onNodeDragEnter: NodeDragEventHandler[HTMLDivElement]
     
-    var onNodeDragLeave: NodeDragEventHandler[HTMLDivElement] = js.native
+    var onNodeDragLeave: NodeDragEventHandler[HTMLDivElement]
     
-    var onNodeDragOver: NodeDragEventHandler[HTMLDivElement] = js.native
+    var onNodeDragOver: NodeDragEventHandler[HTMLDivElement]
     
-    var onNodeDragStart: NodeDragEventHandler[HTMLDivElement] = js.native
+    var onNodeDragStart: NodeDragEventHandler[HTMLDivElement]
     
-    var onNodeDrop: NodeDragEventHandler[HTMLDivElement] = js.native
+    var onNodeDrop: NodeDragEventHandler[HTMLDivElement]
     
-    var onNodeExpand: NodeMouseEventHandler[HTMLSpanElement] = js.native
+    var onNodeExpand: NodeMouseEventHandler[HTMLSpanElement]
     
-    def onNodeLoad(treeNode: EventDataNode): Unit = js.native
+    def onNodeLoad(treeNode: EventDataNode): Unit
     
-    var onNodeMouseEnter: NodeMouseEventHandler[HTMLSpanElement] = js.native
+    var onNodeMouseEnter: NodeMouseEventHandler[HTMLSpanElement]
     
-    var onNodeMouseLeave: NodeMouseEventHandler[HTMLSpanElement] = js.native
+    var onNodeMouseLeave: NodeMouseEventHandler[HTMLSpanElement]
     
-    var onNodeSelect: NodeMouseEventHandler[HTMLSpanElement] = js.native
+    var onNodeSelect: NodeMouseEventHandler[HTMLSpanElement]
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var selectable: Boolean = js.native
+    var selectable: Boolean
     
-    var showIcon: Boolean = js.native
+    var showIcon: Boolean
     
-    var switcherIcon: IconType = js.native
+    var switcherIcon: IconType
     
-    var titleRender: js.UndefOr[js.Function1[/* node */ DataNode, ReactNode]] = js.native
+    var titleRender: js.UndefOr[js.Function1[/* node */ DataNode, ReactNode]] = js.undefined
   }
   object TreeContextProps {
     

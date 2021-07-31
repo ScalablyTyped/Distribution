@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** receives events which get fired whenever the state of a bound property is changed. */
-@js.native
-trait XPropertyStateChangeListener extends XEventListener {
+trait XPropertyStateChangeListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is called when a bound property's state is changed.
     * @param aEvent describes the event source and the property that has changed.
     */
-  def propertyStateChange(aEvent: PropertyStateChangeEvent): Unit = js.native
+  def propertyStateChange(aEvent: PropertyStateChangeEvent): Unit
 }
 object XPropertyStateChangeListener {
   

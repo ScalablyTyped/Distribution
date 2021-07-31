@@ -2,7 +2,6 @@ package typings.googleapis.v13Mod.adexchangebuyerV13
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * access to. This includes direct deals set up for the buyer account as well
   * as its merged stream seats.
   */
-@js.native
 trait SchemaDirectDealsList extends StObject {
   
   /**
     * A list of direct deals relevant for your account.
     */
-  var directDeals: js.UndefOr[js.Array[SchemaDirectDeal]] = js.native
+  var directDeals: js.UndefOr[js.Array[SchemaDirectDeal]] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaDirectDealsList {
   

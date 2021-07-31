@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,53 +11,87 @@ sealed trait GestureSettings extends StObject
 object GestureSettings extends StObject {
   
   @js.native
-  sealed trait crossSlide extends GestureSettings
+  sealed trait crossSlide
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait doubleTap extends GestureSettings
+  sealed trait doubleTap
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait drag extends GestureSettings
+  sealed trait drag
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait hold extends GestureSettings
+  sealed trait hold
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait holdWithMouse extends GestureSettings
+  sealed trait holdWithMouse
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait manipulationRotate extends GestureSettings
+  sealed trait manipulationRotate
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait manipulationRotateInertia extends GestureSettings
+  sealed trait manipulationRotateInertia
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait manipulationScale extends GestureSettings
+  sealed trait manipulationScale
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait manipulationScaleInertia extends GestureSettings
+  sealed trait manipulationScaleInertia
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait manipulationTranslateInertia extends GestureSettings
+  sealed trait manipulationTranslateInertia
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait manipulationTranslateRailsX extends GestureSettings
+  sealed trait manipulationTranslateRailsX
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait manipulationTranslateRailsY extends GestureSettings
+  sealed trait manipulationTranslateRailsY
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait manipulationTranslateX extends GestureSettings
+  sealed trait manipulationTranslateX
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait manipulationTranslateY extends GestureSettings
+  sealed trait manipulationTranslateY
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait none extends GestureSettings
+  sealed trait none
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait rightTap extends GestureSettings
+  sealed trait rightTap
+    extends StObject
+       with GestureSettings
   
   @js.native
-  sealed trait tap extends GestureSettings
+  sealed trait tap
+    extends StObject
+       with GestureSettings
 }

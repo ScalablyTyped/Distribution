@@ -4,19 +4,17 @@ import typings.xregexp.xregexpStrings.none
 import typings.xregexp.xregexpStrings.or
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional options for when doing a RegExp union.
   */
-@js.native
 trait UnionOptions extends StObject {
   
   /**
     * The conjunction to use for the union. Default is `none`.
     */
-  var conjunction: js.UndefOr[or | none | Null] = js.native
+  var conjunction: js.UndefOr[or | none | Null] = js.undefined
 }
 object UnionOptions {
   

@@ -8,7 +8,6 @@ import typings.i18n.i18n.Replacements
 import typings.i18n.i18n.TranslateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

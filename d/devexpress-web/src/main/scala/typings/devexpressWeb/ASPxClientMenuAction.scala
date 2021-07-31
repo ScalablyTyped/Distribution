@@ -2,29 +2,27 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxClientMenuAction extends StObject {
   
-  var clickAction: js.Function = js.native
+  var clickAction: js.Function
   
-  var container: String = js.native
+  var container: String
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var hasSeparator: Boolean = js.native
+  var hasSeparator: Boolean
   
-  var hotKey: ASPxClientMenuActionHotKey = js.native
+  var hotKey: ASPxClientMenuActionHotKey
   
-  var imageClassName: String = js.native
+  var imageClassName: String
   
-  var imageTemplateName: String = js.native
+  var imageTemplateName: String
   
-  var text: String = js.native
+  var text: String
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object ASPxClientMenuAction {
   

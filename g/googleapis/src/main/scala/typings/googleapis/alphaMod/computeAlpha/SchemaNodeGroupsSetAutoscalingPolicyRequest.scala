@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaNodeGroupsSetAutoscalingPolicyRequest extends StObject {
   
-  var autoscalingPolicy: js.UndefOr[SchemaNodeGroupAutoscalingPolicy] = js.native
+  var autoscalingPolicy: js.UndefOr[SchemaNodeGroupAutoscalingPolicy] = js.undefined
 }
 object SchemaNodeGroupsSetAutoscalingPolicyRequest {
   

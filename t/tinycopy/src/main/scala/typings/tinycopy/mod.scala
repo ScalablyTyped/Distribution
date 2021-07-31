@@ -7,14 +7,15 @@ import typings.tinycopy.tinycopyStrings.error
 import typings.tinycopy.tinycopyStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("tinycopy", JSImport.Default)
   @js.native
-  class default protected () extends TinyCopy {
+  class default protected ()
+    extends StObject
+       with TinyCopy {
     def this(trigger: Element, target: String) = this()
     def this(trigger: Element, target: Element) = this()
     def this(trigger: Element, target: NodeListOf[Element]) = this()
@@ -22,12 +23,15 @@ object mod {
   /* static members */
   object default {
     
-    @JSImport("tinycopy", "default.exec")
+    @JSImport("tinycopy", JSImport.Default)
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def exec(
       value: String,
       callback: js.Function2[/* err */ js.UndefOr[Error], /* data */ js.UndefOr[String], Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @js.native

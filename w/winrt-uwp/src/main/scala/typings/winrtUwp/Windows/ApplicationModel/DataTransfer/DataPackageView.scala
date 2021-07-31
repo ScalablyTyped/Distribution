@@ -8,7 +8,6 @@ import typings.winrtUwp.Windows.Security.EnterpriseData.ProtectionPolicyEvaluati
 import typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A read-only version of a DataPackage . Apps that receive shared content get this object when acquiring content. */
@@ -42,7 +41,7 @@ trait DataPackageView extends StObject {
     * @param formatId Specifies the format of the data. We recommend that you set this value by using the StandardDataFormats class.
     * @return The data.
     */
-  def getDataAsync(formatId: String): IPromiseWithIAsyncOperation[_] = js.native
+  def getDataAsync(formatId: String): IPromiseWithIAsyncOperation[js.Any] = js.native
   
   /**
     * Gets the HTML stored in the DataPackageView object.
@@ -54,7 +53,7 @@ trait DataPackageView extends StObject {
     * Gets the data (such as an image) referenced in HTML content.
     * @return The data referenced in the HTML content.
     */
-  def getResourceMapAsync(): IPromiseWithIAsyncOperation[IMapView[_, _]] = js.native
+  def getResourceMapAsync(): IPromiseWithIAsyncOperation[IMapView[js.Any, js.Any]] = js.native
   
   /**
     * Gets the rich text formatted (RTF) content contained in a DataPackageView .
@@ -66,7 +65,7 @@ trait DataPackageView extends StObject {
     * Gets the files and folders stored in a DataPackageView object.
     * @return An array of files and folders stored in a DataPackageView .
     */
-  def getStorageItemsAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getStorageItemsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Gets the text in the DataPackageView object.

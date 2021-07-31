@@ -2,16 +2,14 @@ package typings.awsSdk.ssoadminMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePermissionSetResponse extends StObject {
   
   /**
     * Defines the level of access on an AWS account.
     */
-  var PermissionSet: js.UndefOr[typings.awsSdk.ssoadminMod.PermissionSet] = js.native
+  var PermissionSet: js.UndefOr[typings.awsSdk.ssoadminMod.PermissionSet] = js.undefined
 }
 object CreatePermissionSetResponse {
   

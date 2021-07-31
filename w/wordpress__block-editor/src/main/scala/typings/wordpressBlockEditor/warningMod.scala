@@ -8,7 +8,6 @@ import typings.wordpressBlockEditor.anon.OnClick
 import typings.wordpressBlockEditor.warningMod.Warning.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object warningMod {
@@ -27,16 +26,15 @@ object warningMod {
   
   object Warning {
     
-    @js.native
     trait Props extends StObject {
       
-      var actions: js.UndefOr[ReactFragment] = js.native
+      var actions: js.UndefOr[ReactFragment] = js.undefined
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
-      var secondaryActions: js.UndefOr[js.Array[OnClick]] = js.native
+      var secondaryActions: js.UndefOr[js.Array[OnClick]] = js.undefined
     }
     object Props {
       

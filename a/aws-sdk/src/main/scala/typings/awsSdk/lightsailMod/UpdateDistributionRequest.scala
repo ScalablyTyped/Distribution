@@ -2,41 +2,39 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDistributionRequest extends StObject {
   
   /**
     * An object that describes the cache behavior settings for the distribution.  The cacheBehaviorSettings specified in your UpdateDistributionRequest will replace your distribution's existing settings. 
     */
-  var cacheBehaviorSettings: js.UndefOr[CacheSettings] = js.native
+  var cacheBehaviorSettings: js.UndefOr[CacheSettings] = js.undefined
   
   /**
     * An array of objects that describe the per-path cache behavior for the distribution.
     */
-  var cacheBehaviors: js.UndefOr[CacheBehaviorList] = js.native
+  var cacheBehaviors: js.UndefOr[CacheBehaviorList] = js.undefined
   
   /**
     * An object that describes the default cache behavior for the distribution.
     */
-  var defaultCacheBehavior: js.UndefOr[CacheBehavior] = js.native
+  var defaultCacheBehavior: js.UndefOr[CacheBehavior] = js.undefined
   
   /**
     * The name of the distribution to update. Use the GetDistributions action to get a list of distribution names that you can specify.
     */
-  var distributionName: ResourceName = js.native
+  var distributionName: ResourceName
   
   /**
     * Indicates whether to enable the distribution.
     */
-  var isEnabled: js.UndefOr[Boolean] = js.native
+  var isEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An object that describes the origin resource for the distribution, such as a Lightsail instance or load balancer. The distribution pulls, caches, and serves content from the origin.
     */
-  var origin: js.UndefOr[InputOrigin] = js.native
+  var origin: js.UndefOr[InputOrigin] = js.undefined
 }
 object UpdateDistributionRequest {
   

@@ -4,7 +4,6 @@ import typings.facebookJsSdk.facebook.FacebookEventType
 import typings.facebookJsSdk.facebook.LoginStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object facebookJsSdkStrings {
@@ -65,27 +64,37 @@ object facebookJsSdkStrings {
   def async: async = "async".asInstanceOf[async]
   
   @js.native
-  sealed trait authDotauthResponseChange extends FacebookEventType
+  sealed trait authDotauthResponseChange
+    extends StObject
+       with FacebookEventType
   @scala.inline
   def authDotauthResponseChange: authDotauthResponseChange = "auth.authResponseChange".asInstanceOf[authDotauthResponseChange]
   
   @js.native
-  sealed trait authDotlogin extends FacebookEventType
+  sealed trait authDotlogin
+    extends StObject
+       with FacebookEventType
   @scala.inline
   def authDotlogin: authDotlogin = "auth.login".asInstanceOf[authDotlogin]
   
   @js.native
-  sealed trait authDotlogout extends FacebookEventType
+  sealed trait authDotlogout
+    extends StObject
+       with FacebookEventType
   @scala.inline
   def authDotlogout: authDotlogout = "auth.logout".asInstanceOf[authDotlogout]
   
   @js.native
-  sealed trait authDotstatusChange extends FacebookEventType
+  sealed trait authDotstatusChange
+    extends StObject
+       with FacebookEventType
   @scala.inline
   def authDotstatusChange: authDotstatusChange = "auth.statusChange".asInstanceOf[authDotstatusChange]
   
   @js.native
-  sealed trait authorization_expired extends LoginStatus
+  sealed trait authorization_expired
+    extends StObject
+       with LoginStatus
   @scala.inline
   def authorization_expired: authorization_expired = "authorization_expired".asInstanceOf[authorization_expired]
   
@@ -105,7 +114,9 @@ object facebookJsSdkStrings {
   def completed: completed = "completed".asInstanceOf[completed]
   
   @js.native
-  sealed trait connected extends LoginStatus
+  sealed trait connected
+    extends StObject
+       with LoginStatus
   @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]
   
@@ -150,7 +161,9 @@ object facebookJsSdkStrings {
   def live_broadcast: live_broadcast = "live_broadcast".asInstanceOf[live_broadcast]
   
   @js.native
-  sealed trait not_authorized extends LoginStatus
+  sealed trait not_authorized
+    extends StObject
+       with LoginStatus
   @scala.inline
   def not_authorized: not_authorized = "not_authorized".asInstanceOf[not_authorized]
   
@@ -230,12 +243,16 @@ object facebookJsSdkStrings {
   def turn: turn = "turn".asInstanceOf[turn]
   
   @js.native
-  sealed trait unknown extends LoginStatus
+  sealed trait unknown
+    extends StObject
+       with LoginStatus
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
-  sealed trait xfbmlDotrender extends FacebookEventType
+  sealed trait xfbmlDotrender
+    extends StObject
+       with FacebookEventType
   @scala.inline
   def xfbmlDotrender: xfbmlDotrender = "xfbml.render".asInstanceOf[xfbmlDotrender]
 }

@@ -10,9 +10,9 @@ Typings are for version 11.1.1
 | ------------------ | :-------------: |
 | Full name          | @emotion/react |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 46 |
-| # downloads        | 603358 |
+| # releases         | 17 |
+| # dependents       | 330 |
+| # downloads        | 2316227 |
 | # stars            | 0 |
 
 ## Links

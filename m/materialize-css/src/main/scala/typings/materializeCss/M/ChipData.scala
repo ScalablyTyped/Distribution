@@ -2,21 +2,19 @@ package typings.materializeCss.M
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChipData extends StObject {
   
   /**
     * Chip image
     */
-  var img: js.UndefOr[String] = js.native
+  var img: js.UndefOr[String] = js.undefined
   
   /**
     * Chip tag
     */
-  var tag: String = js.native
+  var tag: String
 }
 object ChipData {
   

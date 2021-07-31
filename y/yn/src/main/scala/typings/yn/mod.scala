@@ -2,17 +2,14 @@ package typings.yn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("yn", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Any): js.UndefOr[Boolean] = js.native
-  @JSImport("yn", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Any, options: Options): js.UndefOr[Boolean] = js.native
+  @scala.inline
+  def apply(input: js.Any): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
+  @scala.inline
+  def apply(input: js.Any, options: Options): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
   /**
   Parse yes/no like values.
   The following case-insensitive values are recognized: `'y', 'yes', 'true', true, '1', 1, 'n', 'no', 'false', false, '0', 0`, 'on', 'off'
@@ -35,24 +32,26 @@ object mod {
   //=> false
   ```
   */
+  @scala.inline
+  def apply(input: js.Any, options: OptionsWithDefault): Boolean = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   @JSImport("yn", JSImport.Namespace)
   @js.native
-  def apply(input: js.Any, options: OptionsWithDefault): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Default value if no match was found.
     		@default undefined
     		*/
-    val default: js.UndefOr[Boolean] = js.native
+    val default: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Use a key distance-based score to leniently accept typos of `yes` and `no`.
     		@default false
     		*/
-    val lenient: js.UndefOr[Boolean] = js.native
+    val lenient: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -79,11 +78,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait OptionsWithDefault extends Options {
+  trait OptionsWithDefault
+    extends StObject
+       with Options {
     
     @JSName("default")
-    var default_OptionsWithDefault: Boolean = js.native
+    var default_OptionsWithDefault: Boolean
   }
   object OptionsWithDefault {
     

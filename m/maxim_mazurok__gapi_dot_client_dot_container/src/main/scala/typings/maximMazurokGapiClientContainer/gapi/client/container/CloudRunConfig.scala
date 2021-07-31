@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudRunConfig extends StObject {
   
   /** Whether Cloud Run addon is enabled for this cluster. */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /** Which load balancer type is installed for Cloud Run. */
-  var loadBalancerType: js.UndefOr[String] = js.native
+  var loadBalancerType: js.UndefOr[String] = js.undefined
 }
 object CloudRunConfig {
   

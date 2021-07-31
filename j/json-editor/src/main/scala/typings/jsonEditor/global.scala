@@ -8,7 +8,6 @@ import typings.jsonEditor.anon.Theme
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -16,7 +15,8 @@ object global {
   @JSGlobal("JSONEditor")
   @js.native
   class JSONEditor[TValue] protected ()
-    extends typings.jsonEditor.JSONEditor[TValue] {
+    extends StObject
+       with typings.jsonEditor.JSONEditor[TValue] {
     def this(element: HTMLElement, options: JSONEditorOptions[TValue]) = this()
   }
   object JSONEditor {

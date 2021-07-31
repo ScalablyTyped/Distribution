@@ -2,7 +2,6 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * this way, calendar events that occur closer to the time of the search query
   * are considered higher quality and ranked accordingly.
   */
-@js.native
 trait SchemaFreshnessOptions extends StObject {
   
   /**
     * The duration after which an object should be considered stale. The
     * default value is 180 days (in seconds).
     */
-  var freshnessDuration: js.UndefOr[String] = js.native
+  var freshnessDuration: js.UndefOr[String] = js.undefined
   
   /**
     * This property indicates the freshness level of the object in the index.
@@ -31,7 +29,7 @@ trait SchemaFreshnessOptions extends StObject {
     * length is 256 characters.  When a property is used to calculate
     * fresheness, the value defaults to 2 years from the current time.
     */
-  var freshnessProperty: js.UndefOr[String] = js.native
+  var freshnessProperty: js.UndefOr[String] = js.undefined
 }
 object SchemaFreshnessOptions {
   

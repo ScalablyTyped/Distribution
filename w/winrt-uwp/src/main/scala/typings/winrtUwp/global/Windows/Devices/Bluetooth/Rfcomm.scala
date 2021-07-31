@@ -3,7 +3,6 @@ package typings.winrtUwp.global.Windows.Devices.Bluetooth
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Windows.Devices.Bluetooth.Rfcomm namespace defines Windows Runtime classes that a Windows Store apps and desktop applications can use to communicate with Bluetooth devices. For more information, see Bluetooth */
@@ -13,8 +12,13 @@ object Rfcomm {
   @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService")
   @js.native
   abstract class RfcommDeviceService ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService
   object RfcommDeviceService {
+    
+    @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Gets an RfcommDeviceService object from a DeviceInformation Id for an RFCOMM service instance.
@@ -22,9 +26,8 @@ object Rfcomm {
       * @return The RfcommDeviceService object that represents the RFCOMM service instance.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService.fromIdAsync")
-    @js.native
-    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService] = js.native
+    @scala.inline
+    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService]]
     
     /**
       * Gets an Advanced Query Syntax (AQS) string for identifying instances of an RFCOMM service. This string is passed to the CreateWatcher method.
@@ -32,16 +35,35 @@ object Rfcomm {
       * @return An AQS string for identifying RFCOMM service instances.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService.getDeviceSelector")
-    @js.native
-    def getDeviceSelector(serviceId: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): String = js.native
+    @scala.inline
+    def getDeviceSelector(serviceId: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(serviceId.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** Represents an RFCOMM service ID. */
   @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId")
   @js.native
   abstract class RfcommServiceId ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId {
+    
+    /**
+      * Converts the RfcommServiceId to a 32-bit service id if possible.
+      * @return Returns the 32-bit service id if the RfcommServiceId represents a standardized service.
+      */
+    /* CompleteClass */
+    override def asShortId(): Double = js.native
+    
+    /**
+      * Converts the RfcommServiceId to a string.
+      * @return Returns the string representation of the 128-bit service id.
+      */
+    /* CompleteClass */
+    override def asString(): String = js.native
+    
+    /** Retrieves the 128-bit service id. */
+    /* CompleteClass */
+    var uuid: String = js.native
+  }
   object RfcommServiceId {
     
     @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId")
@@ -54,9 +76,8 @@ object Rfcomm {
       * @return The RfcommServiceId object.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId.fromShortId")
-    @js.native
-    def fromShortId(shortId: Double): typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId = js.native
+    @scala.inline
+    def fromShortId(shortId: Double): typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId = ^.asInstanceOf[js.Dynamic].applyDynamic("fromShortId")(shortId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId]
     
     /**
       * Creates a RfcommServiceId object from a 128-bit service id.
@@ -64,9 +85,8 @@ object Rfcomm {
       * @return The RfcommServiceId object.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId.fromUuid")
-    @js.native
-    def fromUuid(uuid: String): typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId = js.native
+    @scala.inline
+    def fromUuid(uuid: String): typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUuid")(uuid.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId]
     
     /** Creates a RfcommServiceId object corresponding to the service id for the standardized Generic File Transfer service (with short id 0x1202). */
     /* static member */
@@ -121,8 +141,13 @@ object Rfcomm {
   @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider")
   @js.native
   abstract class RfcommServiceProvider ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider
   object RfcommServiceProvider {
+    
+    @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Gets a RfcommServiceProvider object from a DeviceInformation Id for a RFCOMM service instance.
@@ -130,8 +155,7 @@ object Rfcomm {
       * @return The RfcommServiceProvider object that represents the local RFCOMM service instance.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider.createAsync")
-    @js.native
-    def createAsync(serviceId: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider] = js.native
+    @scala.inline
+    def createAsync(serviceId: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(serviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider]]
   }
 }

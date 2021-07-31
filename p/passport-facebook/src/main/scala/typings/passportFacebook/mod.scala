@@ -11,7 +11,6 @@ import typings.passportFacebook.passportFacebookStrings.reauthenticate
 import typings.passportFacebook.passportFacebookStrings.touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,18 +18,19 @@ object mod {
   @JSImport("passport-facebook", "Strategy")
   @js.native
   class Strategy protected ()
-    extends typings.passport.mod.Strategy {
+    extends StObject
+       with typings.passport.mod.Strategy {
     def this(options: StrategyOptionWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOption, verify: VerifyFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
   }
   
-  @js.native
   trait AuthenticateOptions
-    extends typings.passport.mod.AuthenticateOptions {
+    extends StObject
+       with typings.passport.mod.AuthenticateOptions {
     
-    var authType: js.UndefOr[String] = js.native
+    var authType: js.UndefOr[String] = js.undefined
   }
   object AuthenticateOptions {
     
@@ -51,21 +51,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Profile
-    extends typings.passport.mod.Profile {
+    extends StObject
+       with typings.passport.mod.Profile {
     
-    var _json: js.Any = js.native
+    var _json: js.Any
     
-    var _raw: String = js.native
+    var _raw: String
     
-    var ageRange: js.UndefOr[Max] = js.native
+    var ageRange: js.UndefOr[Max] = js.undefined
     
-    var birthday: String = js.native
+    var birthday: String
     
-    var gender: js.UndefOr[String] = js.native
+    var gender: js.UndefOr[String] = js.undefined
     
-    var profileUrl: js.UndefOr[String] = js.native
+    var profileUrl: js.UndefOr[String] = js.undefined
   }
   object Profile {
     
@@ -107,34 +107,33 @@ object mod {
     }
   }
   
-  @js.native
   trait StrategyOption extends StObject {
     
-    var authNonce: js.UndefOr[String] = js.native
+    var authNonce: js.UndefOr[String] = js.undefined
     
-    var authType: js.UndefOr[reauthenticate] = js.native
+    var authType: js.UndefOr[reauthenticate] = js.undefined
     
-    var authorizationURL: js.UndefOr[String] = js.native
+    var authorizationURL: js.UndefOr[String] = js.undefined
     
-    var callbackURL: String = js.native
+    var callbackURL: String
     
-    var clientID: String = js.native
+    var clientID: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var display: js.UndefOr[page | popup | touch] = js.native
+    var display: js.UndefOr[page | popup | touch] = js.undefined
     
-    var enableProof: js.UndefOr[Boolean] = js.native
+    var enableProof: js.UndefOr[Boolean] = js.undefined
     
-    var graphAPIVersion: js.UndefOr[String] = js.native
+    var graphAPIVersion: js.UndefOr[String] = js.undefined
     
-    var profileFields: js.UndefOr[js.Array[String]] = js.native
+    var profileFields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var profileURL: js.UndefOr[String] = js.native
+    var profileURL: js.UndefOr[String] = js.undefined
     
-    var scopeSeparator: js.UndefOr[String] = js.native
+    var scopeSeparator: js.UndefOr[String] = js.undefined
     
-    var tokenURL: js.UndefOr[String] = js.native
+    var tokenURL: js.UndefOr[String] = js.undefined
   }
   object StrategyOption {
     
@@ -221,16 +220,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait StrategyOptionWithRequest extends StrategyOption {
+  trait StrategyOptionWithRequest
+    extends StObject
+       with StrategyOption {
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
   }
   object StrategyOptionWithRequest {
     
     @scala.inline
-    def apply(callbackURL: String, clientID: String, clientSecret: String, passReqToCallback: `true`): StrategyOptionWithRequest = {
-      val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    def apply(callbackURL: String, clientID: String, clientSecret: String): StrategyOptionWithRequest = {
+      val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionWithRequest]
     }
     

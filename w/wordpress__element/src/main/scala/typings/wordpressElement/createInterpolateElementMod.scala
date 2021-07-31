@@ -3,52 +3,53 @@ package typings.wordpressElement
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createInterpolateElementMod {
   
-  @JSImport("@wordpress/element/build-types/create-interpolate-element", JSImport.Default)
+  @JSImport("@wordpress/element/build-types/create-interpolate-element", JSImport.Namespace)
   @js.native
-  def default(interpolatedString: String, conversionMap: js.Any): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(interpolatedString: String, conversionMap: js.Any): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(interpolatedString.asInstanceOf[js.Any], conversionMap.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  
   trait Frame extends StObject {
     
     /**
       * Children.
       */
-    var children: js.Array[ReactElement] = js.native
+    var children: js.Array[ReactElement]
     
     /**
       * A parent element which may still have
       */
-    var element: ReactElement = js.native
+    var element: ReactElement
     
     /**
       * Offset at which last closing element
       *  finished, used for finding text between
       *  elements.
       */
-    var leadingTextStart: js.UndefOr[Double] = js.native
+    var leadingTextStart: js.UndefOr[Double] = js.undefined
     
     /**
       * Running offset at which parsing should
       *        continue.
       */
-    var prevOffset: js.UndefOr[Double] = js.native
+    var prevOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * Length of string marking start of parent
       * element.
       */
-    var tokenLength: Double = js.native
+    var tokenLength: Double
     
     /**
       * Offset at which parent element first
       * appears.
       */
-    var tokenStart: Double = js.native
+    var tokenStart: Double
   }
   object Frame {
     

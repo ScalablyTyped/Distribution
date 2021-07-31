@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Resolvedappaccesssettings")
@@ -27,7 +26,7 @@ class ResourceResolvedappaccesssettings protected () extends StObject {
     */
   def GetSettings(): GaxiosPromise[SchemaAppAccessCollections] = js.native
   def GetSettings(callback: BodyResponseCallback[SchemaAppAccessCollections]): Unit = js.native
-  def GetSettings(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppAccessCollections] = js.native
+  def GetSettings(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAppAccessCollections] = js.native
   def GetSettings(params: ParamsResourceResolvedappaccesssettingsGetsettings): GaxiosPromise[SchemaAppAccessCollections] = js.native
   def GetSettings(
     params: ParamsResourceResolvedappaccesssettingsGetsettings,
@@ -59,7 +58,7 @@ class ResourceResolvedappaccesssettings protected () extends StObject {
     */
   def ListTrustedApps(): GaxiosPromise[SchemaTrustedApps] = js.native
   def ListTrustedApps(callback: BodyResponseCallback[SchemaTrustedApps]): Unit = js.native
-  def ListTrustedApps(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTrustedApps] = js.native
+  def ListTrustedApps(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTrustedApps] = js.native
   def ListTrustedApps(params: ParamsResourceResolvedappaccesssettingsListtrustedapps): GaxiosPromise[SchemaTrustedApps] = js.native
   def ListTrustedApps(
     params: ParamsResourceResolvedappaccesssettingsListtrustedapps,

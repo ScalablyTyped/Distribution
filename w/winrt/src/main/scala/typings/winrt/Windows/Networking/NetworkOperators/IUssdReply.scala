@@ -2,15 +2,13 @@ package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUssdReply extends StObject {
   
-  var message: UssdMessage = js.native
+  var message: UssdMessage
   
-  var resultCode: UssdResultCode = js.native
+  var resultCode: UssdResultCode
 }
 object IUssdReply {
   

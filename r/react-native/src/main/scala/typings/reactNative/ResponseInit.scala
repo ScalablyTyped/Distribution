@@ -2,17 +2,15 @@ package typings.reactNative
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseInit extends StObject {
   
-  var headers: js.UndefOr[HeadersInit] = js.native
+  var headers: js.UndefOr[HeadersInit] = js.undefined
   
-  var status: js.UndefOr[Double] = js.native
+  var status: js.UndefOr[Double] = js.undefined
   
-  var statusText: js.UndefOr[String] = js.native
+  var statusText: js.UndefOr[String] = js.undefined
 }
 object ResponseInit {
   

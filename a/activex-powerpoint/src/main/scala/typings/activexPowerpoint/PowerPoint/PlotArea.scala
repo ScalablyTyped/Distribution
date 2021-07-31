@@ -2,52 +2,50 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotArea extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Border: ChartBorder = js.native
+  val Border: ChartBorder
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Fill: ChartFillFormat = js.native
+  val Fill: ChartFillFormat
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  var Height: Double = js.native
+  var Height: Double
   
-  var InsideHeight: Double = js.native
+  var InsideHeight: Double
   
-  var InsideLeft: Double = js.native
+  var InsideLeft: Double
   
-  var InsideTop: Double = js.native
+  var InsideTop: Double
   
-  var InsideWidth: Double = js.native
+  var InsideWidth: Double
   
-  val Interior: typings.activexPowerpoint.PowerPoint.Interior = js.native
+  val Interior: typings.activexPowerpoint.PowerPoint.Interior
   
-  var Left: Double = js.native
+  var Left: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Position: XlChartElementPosition = js.native
+  var Position: XlChartElementPosition
   
   @JSName("PowerPoint.PlotArea_typekey")
-  var PowerPointDotPlotArea_typekey: PlotArea = js.native
+  var PowerPointDotPlotArea_typekey: PlotArea
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
   
-  var Top: Double = js.native
+  var Top: Double
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object PlotArea {
   

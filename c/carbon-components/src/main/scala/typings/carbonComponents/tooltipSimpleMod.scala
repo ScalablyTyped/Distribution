@@ -3,15 +3,25 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipSimpleMod {
   
   @JSImport("carbon-components/components/tooltip/tooltip--simple", JSImport.Default)
   @js.native
-  class default protected () extends TooltipSimple {
+  class default protected ()
+    extends StObject
+       with TooltipSimple {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def allowTooltipVisibility(hasVisible: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def getTooltipTriggerButton(): js.Any = js.native
+    
+    /* CompleteClass */
+    var tooltipFadeOut: js.Any = js.native
   }
   /* static members */
   object default {
@@ -28,14 +38,13 @@ object tooltipSimpleMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait TooltipSimple extends StObject {
+  - Dropped any */ trait TooltipSimple extends StObject {
     
-    def allowTooltipVisibility(hasVisible: js.Any): Unit = js.native
+    def allowTooltipVisibility(hasVisible: js.Any): Unit
     
-    def getTooltipTriggerButton(): js.Any = js.native
+    def getTooltipTriggerButton(): js.Any
     
-    var tooltipFadeOut: js.Any = js.native
+    var tooltipFadeOut: js.Any
   }
   object TooltipSimple {
     

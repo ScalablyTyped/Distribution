@@ -3,13 +3,11 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a DICOM store.
   */
-@js.native
 trait SchemaDicomStore extends StObject {
   
   /**
@@ -22,18 +20,18 @@ trait SchemaDicomStore extends StObject {
     * [\p{Ll}\p{Lo}\p{N}_-]{0,63}  No more than 64 labels can be associated
     * with a given store.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Output only. Resource name of the DICOM store, of the form
     * `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/dicomStores/{dicom_store_id}`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Notification destination for new DICOM instances. Supplied by the client.
     */
-  var notificationConfig: js.UndefOr[SchemaNotificationConfig] = js.native
+  var notificationConfig: js.UndefOr[SchemaNotificationConfig] = js.undefined
 }
 object SchemaDicomStore {
   

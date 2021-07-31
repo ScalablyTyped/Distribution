@@ -10,10 +10,10 @@ Elegant terminal spinner
 | ------------------ | :-------------: |
 | Full name          | ora |
 | Keywords           | cli, spinner, spinners, terminal, term, console, ascii, unicode, loading, indicator, progress, busy, wait, idle |
-| # releases         | 14 |
-| # dependents       | 10107 |
-| # downloads        | 217526101 |
-| # stars            | 144 |
+| # releases         | 16 |
+| # dependents       | 11772 |
+| # downloads        | 286248609 |
+| # stars            | 145 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/ora#readme)

@@ -2,19 +2,19 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DrawOrderTimeline extends Timeline {
+trait DrawOrderTimeline
+  extends StObject
+     with Timeline {
   
-  var drawOrders: js.Array[js.Array[Double]] = js.native
+  var drawOrders: js.Array[js.Array[Double]]
   
-  var frames: ArrayLike[Double] = js.native
+  var frames: ArrayLike[Double]
   
-  def getFrameCount(): Double = js.native
+  def getFrameCount(): Double
   
-  def setFrame(frameIndex: Double, time: Double, drawOrder: js.Array[Double]): Unit = js.native
+  def setFrame(frameIndex: Double, time: Double, drawOrder: js.Array[Double]): Unit
 }
 object DrawOrderTimeline {
   

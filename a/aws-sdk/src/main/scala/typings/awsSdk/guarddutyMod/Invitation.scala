@@ -2,31 +2,29 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invitation extends StObject {
   
   /**
     * The ID of the account that the invitation was sent from.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.guarddutyMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.guarddutyMod.AccountId] = js.undefined
   
   /**
     * The ID of the invitation. This value is used to validate the inviter account to the member account.
     */
-  var InvitationId: js.UndefOr[String] = js.native
+  var InvitationId: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp when the invitation was sent.
     */
-  var InvitedAt: js.UndefOr[String] = js.native
+  var InvitedAt: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the relationship between the inviter and invitee accounts.
     */
-  var RelationshipStatus: js.UndefOr[String] = js.native
+  var RelationshipStatus: js.UndefOr[String] = js.undefined
 }
 object Invitation {
   

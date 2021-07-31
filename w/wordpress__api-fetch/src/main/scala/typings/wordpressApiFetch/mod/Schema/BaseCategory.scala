@@ -4,31 +4,30 @@ import typings.std.Record
 import typings.wordpressApiFetch.anon.Dictk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseCategory
-  extends BaseResponse
+  extends StObject
+     with BaseResponse
      with Category[js.Any] {
   
-  var count: Double = js.native
+  var count: Double
   
-  var description: String = js.native
+  var description: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var link: String = js.native
+  var link: String
   
-  var meta: js.Array[_] = js.native
+  var meta: js.Array[js.Any]
   
-  var name: String = js.native
+  var name: String
   
-  var parent: Double = js.native
+  var parent: Double
   
-  var slug: String = js.native
+  var slug: String
   
-  var taxonomy: TaxonomyKind = js.native
+  var taxonomy: TaxonomyKind
 }
 object BaseCategory {
   
@@ -39,7 +38,7 @@ object BaseCategory {
     description: String,
     id: Double,
     link: String,
-    meta: js.Array[_],
+    meta: js.Array[js.Any],
     name: String,
     parent: Double,
     slug: String,
@@ -65,7 +64,7 @@ object BaseCategory {
     def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Array[_]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    def setMeta(value: js.Array[js.Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMetaVarargs(value: js.Any*): Self = StObject.set(x, "meta", js.Array(value :_*))

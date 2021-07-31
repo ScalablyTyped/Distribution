@@ -2,15 +2,14 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CampaignUrls
-  extends AdWordsUrls
+  extends StObject
+     with AdWordsUrls
      with hasSetTrackingTemplate {
   
-  def clearTrackingTemplate(): Unit = js.native
+  def clearTrackingTemplate(): Unit
 }
 object CampaignUrls {
   

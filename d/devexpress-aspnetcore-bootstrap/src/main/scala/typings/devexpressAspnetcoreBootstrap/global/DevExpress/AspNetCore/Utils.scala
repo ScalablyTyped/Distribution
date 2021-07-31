@@ -3,38 +3,32 @@ package typings.devexpressAspnetcoreBootstrap.global.DevExpress.AspNetCore
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Utils {
   
-  @JSGlobal("DevExpress.AspNetCore.Utils.getControls")
+  @JSGlobal("DevExpress.AspNetCore.Utils")
   @js.native
-  def getControls(): js.Array[typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.Control] = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("DevExpress.AspNetCore.Utils.getEditorValuesInContainer")
-  @js.native
-  def getEditorValuesInContainer(containerOrId: String): js.Any = js.native
-  @JSGlobal("DevExpress.AspNetCore.Utils.getEditorValuesInContainer")
-  @js.native
-  def getEditorValuesInContainer(containerOrId: String, processInvisibleEditors: Boolean): js.Any = js.native
-  @JSGlobal("DevExpress.AspNetCore.Utils.getEditorValuesInContainer")
-  @js.native
-  def getEditorValuesInContainer(containerOrId: HTMLElement): js.Any = js.native
-  @JSGlobal("DevExpress.AspNetCore.Utils.getEditorValuesInContainer")
-  @js.native
-  def getEditorValuesInContainer(containerOrId: HTMLElement, processInvisibleEditors: Boolean): js.Any = js.native
+  @scala.inline
+  def getControls(): js.Array[typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.Control] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControls")().asInstanceOf[js.Array[typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.Control]]
   
-  @JSGlobal("DevExpress.AspNetCore.Utils.getSerializedEditorValuesInContainer")
-  @js.native
-  def getSerializedEditorValuesInContainer(containerOrId: String): js.Any = js.native
-  @JSGlobal("DevExpress.AspNetCore.Utils.getSerializedEditorValuesInContainer")
-  @js.native
-  def getSerializedEditorValuesInContainer(containerOrId: String, processInvisibleEditors: Boolean): js.Any = js.native
-  @JSGlobal("DevExpress.AspNetCore.Utils.getSerializedEditorValuesInContainer")
-  @js.native
-  def getSerializedEditorValuesInContainer(containerOrId: HTMLElement): js.Any = js.native
-  @JSGlobal("DevExpress.AspNetCore.Utils.getSerializedEditorValuesInContainer")
-  @js.native
-  def getSerializedEditorValuesInContainer(containerOrId: HTMLElement, processInvisibleEditors: Boolean): js.Any = js.native
+  @scala.inline
+  def getEditorValuesInContainer(containerOrId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditorValuesInContainer")(containerOrId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getEditorValuesInContainer(containerOrId: String, processInvisibleEditors: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getEditorValuesInContainer")(containerOrId.asInstanceOf[js.Any], processInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getEditorValuesInContainer(containerOrId: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditorValuesInContainer")(containerOrId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getEditorValuesInContainer(containerOrId: HTMLElement, processInvisibleEditors: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getEditorValuesInContainer")(containerOrId.asInstanceOf[js.Any], processInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def getSerializedEditorValuesInContainer(containerOrId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSerializedEditorValuesInContainer")(containerOrId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getSerializedEditorValuesInContainer(containerOrId: String, processInvisibleEditors: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSerializedEditorValuesInContainer")(containerOrId.asInstanceOf[js.Any], processInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getSerializedEditorValuesInContainer(containerOrId: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSerializedEditorValuesInContainer")(containerOrId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getSerializedEditorValuesInContainer(containerOrId: HTMLElement, processInvisibleEditors: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSerializedEditorValuesInContainer")(containerOrId.asInstanceOf[js.Any], processInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

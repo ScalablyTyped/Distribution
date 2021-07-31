@@ -4,7 +4,6 @@ import typings.loopback.mod.LoopBackApplication
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -79,18 +78,18 @@ object mod {
     * @param app LoopBack application created by loopback().
     * @param options Boot options; If String, this is the application root directory; if object, has below properties.
     */
+  @scala.inline
+  def apply(app: LoopBackApplication, options: String): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(app: LoopBackApplication, options: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(app: LoopBackApplication, options: OptionsLB): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(app: LoopBackApplication, options: OptionsLB, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("loopback-boot", JSImport.Namespace)
   @js.native
-  def apply(app: LoopBackApplication, options: String): Unit = js.native
-  @JSImport("loopback-boot", JSImport.Namespace)
-  @js.native
-  def apply(app: LoopBackApplication, options: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("loopback-boot", JSImport.Namespace)
-  @js.native
-  def apply(app: LoopBackApplication, options: OptionsLB): Unit = js.native
-  @JSImport("loopback-boot", JSImport.Namespace)
-  @js.native
-  def apply(app: LoopBackApplication, options: OptionsLB, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
     * compileToBrowserify
@@ -112,104 +111,103 @@ object mod {
     var appId: String = js.native
   }
   
-  @js.native
   trait OptionsLB extends StObject {
     
     /**
       * Directory to use when loading config.json. Defaults to appRootDir.
       */
-    var appConfigRootDir: String = js.native
+    var appConfigRootDir: String
     
     /**
       * Directory to use when loading JSON and JavaScript files.
       * Defaults to the current directory (process.cwd()).
       */
-    var appRootDir: String = js.native
+    var appRootDir: String
     
     /**
       * List of directories where to look for boot scripts.
       */
-    var bootDirs: js.Array[String] = js.native
+    var bootDirs: js.Array[String]
     
     /**
       * List of script files to execute on boot.
       */
-    var bootScripts: js.Array[String] = js.native
+    var bootScripts: js.Array[String]
     
     /**
       * Directory to use when loading component-config.json. Defaults to appRootDir.
       */
-    var componentRootDir: String = js.native
+    var componentRootDir: String
     
     /**
       * Component configuration to use instead of {appRootDir}/component-config.json
       */
-    var components: js.Any = js.native
+    var components: js.Any
     
     /**
       * Object containing DataSource definitions.
       */
-    var dataSources: js.Any = js.native
+    var dataSources: js.Any
     
     /**
       * Directory to use when loading datasources.json. Defaults to appRootDir.
       */
-    var dsRootDir: String = js.native
+    var dsRootDir: String
     
     /**
       * Environment type, defaults to process.env.NODE_ENV or development.
       * Common values are development, staging and production;
       * however the applications are free to use any names.
       */
-    var env: String = js.native
+    var env: String
     
     /**
       * Middleware configuration to use instead of {appRootDir}/middleware.json
       */
-    var middleware: js.Any = js.native
+    var middleware: js.Any
     
     /**
       * Directory to use when loading middleware.json. Defaults to appRootDir.
       */
-    var middlewareRootDir: String = js.native
+    var middlewareRootDir: String
     
     /**
       * List of directories where to look for files containing model mixin definitions.
       * All files (mixins) found in these directory are loaded.
       */
-    var mixinDirs: js.Array[String] = js.native
+    var mixinDirs: js.Array[String]
     
     /**
       * List of directories where to look for files containing model mixin definitions.
       *  Only mixins used by application models are loaded from these directories.
       */
-    var mixinSources: js.Array[String] = js.native
+    var mixinSources: js.Array[String]
     
     /**
       * List of model definitions to use. When options.modelDefinitions is provided,
       * loopback-boot does not search filesystem and use only the models provided in this argument.
       */
-    var modelDefinitions: js.Array[_] = js.native
+    var modelDefinitions: js.Array[js.Any]
     
     /**
       * List of directories where to look for files containing model definitions.
       */
-    var modelSources: js.Array[String] = js.native
+    var modelSources: js.Array[String]
     
     /**
       * Object containing Model configurations.
       */
-    var models: js.Any = js.native
+    var models: js.Any
     
     /**
       * Directory to use when loading model-config.json. Defaults to appRootDir.
       */
-    var modelsRootDir: String = js.native
+    var modelsRootDir: String
     
     /**
       * Mixin normalization format: false, 'none', 'classify', 'dasherize' - defaults to 'classify'.
       */
-    var normalization: String | Boolean | js.Any = js.native
+    var normalization: String | Boolean | js.Any
   }
   object OptionsLB {
     
@@ -228,7 +226,7 @@ object mod {
       middlewareRootDir: String,
       mixinDirs: js.Array[String],
       mixinSources: js.Array[String],
-      modelDefinitions: js.Array[_],
+      modelDefinitions: js.Array[js.Any],
       modelSources: js.Array[String],
       models: js.Any,
       modelsRootDir: String,
@@ -293,7 +291,7 @@ object mod {
       def setMixinSourcesVarargs(value: String*): Self = StObject.set(x, "mixinSources", js.Array(value :_*))
       
       @scala.inline
-      def setModelDefinitions(value: js.Array[_]): Self = StObject.set(x, "modelDefinitions", value.asInstanceOf[js.Any])
+      def setModelDefinitions(value: js.Array[js.Any]): Self = StObject.set(x, "modelDefinitions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setModelDefinitionsVarargs(value: js.Any*): Self = StObject.set(x, "modelDefinitions", js.Array(value :_*))

@@ -2,46 +2,44 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteStackInstancesInput extends StObject {
   
   /**
     * [Self-managed permissions] The names of the AWS accounts that you want to delete stack instances for. You can specify Accounts or DeploymentTargets, but not both.
     */
-  var Accounts: js.UndefOr[AccountList] = js.native
+  var Accounts: js.UndefOr[AccountList] = js.undefined
   
   /**
     * [Service-managed permissions] The AWS Organizations accounts from which to delete stack instances. You can specify Accounts or DeploymentTargets, but not both.
     */
-  var DeploymentTargets: js.UndefOr[typings.awsSdk.cloudformationMod.DeploymentTargets] = js.native
+  var DeploymentTargets: js.UndefOr[typings.awsSdk.cloudformationMod.DeploymentTargets] = js.undefined
   
   /**
     * The unique identifier for this stack set operation.  If you don't specify an operation ID, the SDK generates one automatically.  The operation ID also functions as an idempotency token, to ensure that AWS CloudFormation performs the stack set operation only once, even if you retry the request multiple times. You can retry stack set operation requests to ensure that AWS CloudFormation successfully received them. Repeating this stack set operation with a new operation ID retries all stack instances whose status is OUTDATED. 
     */
-  var OperationId: js.UndefOr[ClientRequestToken] = js.native
+  var OperationId: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * Preferences for how AWS CloudFormation performs this stack set operation.
     */
-  var OperationPreferences: js.UndefOr[StackSetOperationPreferences] = js.native
+  var OperationPreferences: js.UndefOr[StackSetOperationPreferences] = js.undefined
   
   /**
     * The Regions where you want to delete stack set instances. 
     */
-  var Regions: RegionList = js.native
+  var Regions: RegionList
   
   /**
     * Removes the stack instances from the specified stack set, but doesn't delete the stacks. You can't reassociate a retained stack or add an existing, saved stack to a new stack set. For more information, see Stack set operation options.
     */
-  var RetainStacks: typings.awsSdk.cloudformationMod.RetainStacks = js.native
+  var RetainStacks: typings.awsSdk.cloudformationMod.RetainStacks
   
   /**
     * The name or unique ID of the stack set that you want to delete stack instances for.
     */
-  var StackSetName: typings.awsSdk.cloudformationMod.StackSetName = js.native
+  var StackSetName: typings.awsSdk.cloudformationMod.StackSetName
 }
 object DeleteStackInstancesInput {
   

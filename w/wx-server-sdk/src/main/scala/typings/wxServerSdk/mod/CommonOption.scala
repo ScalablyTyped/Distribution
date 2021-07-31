@@ -2,13 +2,11 @@ package typings.wxServerSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonOption[T] extends StObject {
   
-  var data: T = js.native
+  var data: T
 }
 object CommonOption {
   
@@ -19,7 +17,7 @@ object CommonOption {
   }
   
   @scala.inline
-  implicit class CommonOptionMutableBuilder[Self <: CommonOption[_], T] (val x: Self with CommonOption[T]) extends AnyVal {
+  implicit class CommonOptionMutableBuilder[Self <: CommonOption[?], T] (val x: Self & CommonOption[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

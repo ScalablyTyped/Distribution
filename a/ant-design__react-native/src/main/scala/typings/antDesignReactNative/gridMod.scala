@@ -10,7 +10,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridMod {
@@ -39,14 +38,14 @@ object gridMod {
     def getFlexItemStyle(columnNum: Double): BorderRightWidth = js.native
   }
   
-  @js.native
   trait GridProps
-    extends GridPropsType
+    extends StObject
+       with GridPropsType
        with WithThemeStyles[GridStyle] {
     
-    var carouselProps: js.UndefOr[CarouselProps] = js.native
+    var carouselProps: js.UndefOr[CarouselProps] = js.undefined
     
-    var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object GridProps {
     

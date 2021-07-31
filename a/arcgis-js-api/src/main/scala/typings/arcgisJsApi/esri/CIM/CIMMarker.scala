@@ -2,82 +2,82 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CIMMarker extends CIMSymbolLayerBase {
+trait CIMMarker
+  extends StObject
+     with CIMSymbolLayerBase {
   
   /**
     * The specified location where all transformation property operations originate.
     */
-  var anchorPoint: js.UndefOr[ExternalReferencePoint] = js.native
+  var anchorPoint: js.UndefOr[ExternalReferencePoint] = js.undefined
   
   /**
     * A value which specifies if the anchor point location is considered a percentage of the size or as an absolute distance.
     */
   var anchorPointUnits: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SymbolUnits * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The angle the marker is rotated around the X axis. This type of rotation is also referred to as tilt and is only applied in 3D. The order of how this is applied with respect to other rotations depends on the RotationOrder3D. The name in the user interface is Tilt.
     */
-  var angleX: js.UndefOr[Double] = js.native
+  var angleX: js.UndefOr[Double] = js.undefined
   
   /**
     * The angle the marker is rotated around the Y axis. This type of rotation is also referred to as roll and is only applied in 3D. The order of how this is applied with respect to other rotations depends on the RotationOrder3D. The name in the user interface is Roll.
     */
-  var angleY: js.UndefOr[Double] = js.native
+  var angleY: js.UndefOr[Double] = js.undefined
   
   /**
     * The billboard mode of the marker.
     */
   var billboardMode3D: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BillboardMode * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Which axis is considered as the Size in 3D. Only applicable when the marker layer is a 3DShapeMarker.
     */
   var dominantSizeAxis3D: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DominantSizeAxis * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Marker placements which determine how markers are placed along a line or within a polygon.
     */
-  var markerPlacement: js.UndefOr[CIMMarkerPlacementType] = js.native
+  var markerPlacement: js.UndefOr[CIMMarkerPlacementType] = js.undefined
   
   /**
     * The value the marker is moved along the X axis from the anchor point. This is applied after all rotation, as opposed to anchor point which is applied before the rotation.
     */
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * The value the marker is moved along the Y axis from the anchor point. This is applied after all rotation, as opposed to anchor point which is applied before the rotation.
     */
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * The value the marker is moved along the Z axis from the anchor point. This is applied after all rotation, as opposed to anchor point which is applied before the rotation.
     */
-  var offsetZ: js.UndefOr[Double] = js.native
+  var offsetZ: js.UndefOr[Double] = js.undefined
   
   /**
     * A value indicating whether the rotation is applied clockwise or counterclockwise to the marker layer.
     */
-  var rotateClockwise: js.UndefOr[Boolean] = js.native
+  var rotateClockwise: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The angle that the marker is rotated around the anchor point, in degrees.
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * The height of the marker. Modifying Size changes the marker's height to the specified size and the width is updated proportionally.
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object CIMMarker {
   

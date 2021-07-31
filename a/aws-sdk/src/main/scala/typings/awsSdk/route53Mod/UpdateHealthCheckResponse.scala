@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateHealthCheckResponse extends StObject {
   
   /**
     * A complex type that contains the response to an UpdateHealthCheck request.
     */
-  var HealthCheck: typings.awsSdk.route53Mod.HealthCheck = js.native
+  var HealthCheck: typings.awsSdk.route53Mod.HealthCheck
 }
 object UpdateHealthCheckResponse {
   

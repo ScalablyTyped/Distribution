@@ -4,7 +4,6 @@ import typings.memFsEditor.mod.Editor
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storageMod {
@@ -16,7 +15,9 @@ object storageMod {
     */
   @JSImport("yeoman-generator/lib/util/storage", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Storage {
+  class ^ protected ()
+    extends StObject
+       with Storage {
     /**
       * Initializes a new instance of the `Storage` class.
       *
@@ -27,65 +28,64 @@ object storageMod {
       */
     def this(name: String, fs: Editor, configPath: String) = this()
     def this(name: String, fs: Editor, configPath: String, options: StorageOptions) = this()
-  }
-  
-  /**
-    * Storage instances handle a json file where Generator authors can store data.
-    *
-    * The `Generator` class instantiate the storage named `config` by default.
-    */
-  @js.native
-  trait Storage extends StObject {
     
     /**
       * Creates a proxy object.
       */
-    def createProxy(): js.Object = js.native
+    /* CompleteClass */
+    override def createProxy(): js.Object = js.native
     
     /**
       * Creates a child storage.
       *
       * @param path The relative property-path of the key to create a new storage.
       */
-    def createStorage(path: String): Storage = js.native
+    /* CompleteClass */
+    override def createStorage(path: String): Storage = js.native
     
     /**
       * Recreates the store with `defaults` value and schedules a save. If keys already exist, the initial value is kept.
       *
       * @param defaults The key-value object to store.
       */
-    def defaults(defaults: Record[String, _]): Record[String, _] = js.native
+    /* CompleteClass */
+    override def defaults(defaults: Record[String, js.Any]): Record[String, js.Any] = js.native
     
     /**
       * Deletes a key from the store and schedules a save.
       *
       * @param key The key under which the value is stored.
       */
-    def delete(key: String): Unit = js.native
+    /* CompleteClass */
+    override def delete(key: String): Unit = js.native
     
     /**
       * Gets a stored value
       *
       * @param key The key under which the value is stored.
       */
-    def get(key: String): js.Any = js.native
+    /* CompleteClass */
+    override def get(key: String): js.Any = js.native
     
     /**
       * Gets all the stored values.
       */
-    def getAll(): Record[String, _] = js.native
+    /* CompleteClass */
+    override def getAll(): Record[String, js.Any] = js.native
     
     /**
       * Gets a stored value from a property-path.
       *
       * @param path The property-path under which the value is stored.
       */
-    def getPath(path: String): js.Any = js.native
+    /* CompleteClass */
+    override def getPath(path: String): js.Any = js.native
     
     /**
       * Saves a new object of values.
       */
-    def save(): Unit = js.native
+    /* CompleteClass */
+    override def save(): Unit = js.native
     
     /**
       * Assigns a key to a value and schedules a save.
@@ -93,7 +93,8 @@ object storageMod {
       * @param key The key under which the value is stored.
       * @param value Any valid JSON type value.
       */
-    def set[T /* <: js.Any */](key: String, value: T): T = js.native
+    /* CompleteClass */
+    override def set[T /* <: js.Any */](key: String, value: T): T = js.native
     
     /**
       * Assigns a lodash path to a value and schedules a save.
@@ -101,7 +102,82 @@ object storageMod {
       * @param path The property-path under which the value is stored.
       * @param value Any valid JSON type value.
       */
-    def setPath[T /* <: js.Any */](path: String, value: T): T = js.native
+    /* CompleteClass */
+    override def setPath[T /* <: js.Any */](path: String, value: T): T = js.native
+  }
+  
+  /**
+    * Storage instances handle a json file where Generator authors can store data.
+    *
+    * The `Generator` class instantiate the storage named `config` by default.
+    */
+  trait Storage extends StObject {
+    
+    /**
+      * Creates a proxy object.
+      */
+    def createProxy(): js.Object
+    
+    /**
+      * Creates a child storage.
+      *
+      * @param path The relative property-path of the key to create a new storage.
+      */
+    def createStorage(path: String): Storage
+    
+    /**
+      * Recreates the store with `defaults` value and schedules a save. If keys already exist, the initial value is kept.
+      *
+      * @param defaults The key-value object to store.
+      */
+    def defaults(defaults: Record[String, js.Any]): Record[String, js.Any]
+    
+    /**
+      * Deletes a key from the store and schedules a save.
+      *
+      * @param key The key under which the value is stored.
+      */
+    def delete(key: String): Unit
+    
+    /**
+      * Gets a stored value
+      *
+      * @param key The key under which the value is stored.
+      */
+    def get(key: String): js.Any
+    
+    /**
+      * Gets all the stored values.
+      */
+    def getAll(): Record[String, js.Any]
+    
+    /**
+      * Gets a stored value from a property-path.
+      *
+      * @param path The property-path under which the value is stored.
+      */
+    def getPath(path: String): js.Any
+    
+    /**
+      * Saves a new object of values.
+      */
+    def save(): Unit
+    
+    /**
+      * Assigns a key to a value and schedules a save.
+      *
+      * @param key The key under which the value is stored.
+      * @param value Any valid JSON type value.
+      */
+    def set[T /* <: js.Any */](key: String, value: T): T
+    
+    /**
+      * Assigns a lodash path to a value and schedules a save.
+      *
+      * @param path The property-path under which the value is stored.
+      * @param value Any valid JSON type value.
+      */
+    def setPath[T /* <: js.Any */](path: String, value: T): T
   }
   object Storage {
     
@@ -109,10 +185,10 @@ object storageMod {
     def apply(
       createProxy: () => js.Object,
       createStorage: String => Storage,
-      defaults: Record[String, _] => Record[String, _],
+      defaults: Record[String, js.Any] => Record[String, js.Any],
       delete: String => Unit,
       get: String => js.Any,
-      getAll: () => Record[String, _],
+      getAll: () => Record[String, js.Any],
       getPath: String => js.Any,
       save: () => Unit,
       set: (String, js.Any) => js.Any,
@@ -132,7 +208,7 @@ object storageMod {
       def setCreateStorage(value: String => Storage): Self = StObject.set(x, "createStorage", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setDefaults(value: Record[String, _] => Record[String, _]): Self = StObject.set(x, "defaults", js.Any.fromFunction1(value))
+      def setDefaults(value: Record[String, js.Any] => Record[String, js.Any]): Self = StObject.set(x, "defaults", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
@@ -141,7 +217,7 @@ object storageMod {
       def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setGetAll(value: () => Record[String, _]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
+      def setGetAll(value: () => Record[String, js.Any]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetPath(value: String => js.Any): Self = StObject.set(x, "getPath", js.Any.fromFunction1(value))
@@ -160,23 +236,22 @@ object storageMod {
   /**
     * Provides options for the `Storage` class.
     */
-  @js.native
   trait StorageOptions extends StObject {
     
     /**
       * A value indicating whether json object cache should be disabled.
       */
-    var disableCache: Boolean = js.native
+    var disableCache: Boolean
     
     /**
       * A value indicating whether the cache should not be cleaned after each fs change.
       */
-    var disableCacheByFile: Boolean = js.native
+    var disableCacheByFile: Boolean
     
     /**
       * A value indicating whether the name should be treated as a lodash path.
       */
-    var lodashPath: Boolean = js.native
+    var lodashPath: Boolean
   }
   object StorageOptions {
     

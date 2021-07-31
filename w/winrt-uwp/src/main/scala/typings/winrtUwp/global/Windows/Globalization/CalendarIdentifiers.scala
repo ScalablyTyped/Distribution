@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Globalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the calendar identifiers for the supported calendars, as static properties. */
 @JSGlobal("Windows.Globalization.CalendarIdentifiers")
 @js.native
 abstract class CalendarIdentifiers ()
-  extends typings.winrtUwp.Windows.Globalization.CalendarIdentifiers
+  extends StObject
+     with typings.winrtUwp.Windows.Globalization.CalendarIdentifiers
 object CalendarIdentifiers {
   
   @JSGlobal("Windows.Globalization.CalendarIdentifiers")

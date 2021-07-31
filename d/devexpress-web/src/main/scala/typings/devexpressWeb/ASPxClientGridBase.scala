@@ -2,36 +2,36 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client ASPxGridView.
   */
-@js.native
-trait ASPxClientGridBase extends ASPxClientControl {
+trait ASPxClientGridBase
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Fires when a user changes the summary item value.
     */
-  var BatchEditSummaryDisplayText: ASPxClientEvent[ASPxClientGridBatchEditSummaryDisplayTextEventHandler[ASPxClientGridBase]] = js.native
+  var BatchEditSummaryDisplayText: ASPxClientEvent[ASPxClientGridBatchEditSummaryDisplayTextEventHandler[ASPxClientGridBase]]
   
   /**
     * Returns a grid's toolbar specified by its index. An ASPxClientMenu object that is the toolbar located at the specified index within the control's Toolbars collection.
     * @param index An integer value specifying the zero-based index of the toolbar object to retrieve.
     */
-  def GetToolbar(index: Double): ASPxClientMenu = js.native
+  def GetToolbar(index: Double): ASPxClientMenu
   
   /**
     * Returns a toolbar specified by its name. An ASPxClientMenu object that is the toolbar with the specified name.
     * @param name A string value specifying the toolbar name.
     */
-  def GetToolbarByName(name: String): ASPxClientMenu = js.native
+  def GetToolbarByName(name: String): ASPxClientMenu
   
   /**
     * Fires after a toolbar item has been clicked.
     */
-  var ToolbarItemClick: ASPxClientEvent[ASPxClientGridToolbarItemClickEventHandler[ASPxClientGridBase]] = js.native
+  var ToolbarItemClick: ASPxClientEvent[ASPxClientGridToolbarItemClickEventHandler[ASPxClientGridBase]]
 }
 object ASPxClientGridBase {
   

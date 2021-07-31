@@ -4,27 +4,27 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is implemented by objects that can be linked to a {@link MasterPage} .
   * @see DrawPage
   */
-@js.native
-trait XMasterPageTarget extends XInterface {
+trait XMasterPageTarget
+  extends StObject
+     with XInterface {
   
   /** @returns the {@link MasterPage} linked to this object. */
-  var MasterPage: XDrawPage = js.native
+  var MasterPage: XDrawPage
   
   /** @returns the {@link MasterPage} linked to this object. */
-  def getMasterPage(): XDrawPage = js.native
+  def getMasterPage(): XDrawPage
   
   /**
     * links a {@link MasterPage} to this object.
     * @param xMasterPage the {@link MasterPage} that is linked to this object
     */
-  def setMasterPage(xMasterPage: XDrawPage): Unit = js.native
+  def setMasterPage(xMasterPage: XDrawPage): Unit
 }
 object XMasterPageTarget {
   

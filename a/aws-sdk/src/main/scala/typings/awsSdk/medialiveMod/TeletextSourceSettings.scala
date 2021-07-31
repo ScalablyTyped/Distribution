@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeletextSourceSettings extends StObject {
   
   /**
     * Specifies the teletext page number within the data stream from which to extract captions. Range of 0x100 (256) to 0x8FF (2303). Unused for passthrough. Should be specified as a hexadecimal string with no "0x" prefix.
     */
-  var PageNumber: js.UndefOr[string] = js.native
+  var PageNumber: js.UndefOr[string] = js.undefined
 }
 object TeletextSourceSettings {
   

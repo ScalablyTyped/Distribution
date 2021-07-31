@@ -6,7 +6,6 @@ import typings.ngTable.publicInterfacesMod.IFilterConfigValues
 import typings.ngTable.publicInterfacesMod.IFilterTemplateDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngTableFilterConfigMod {
@@ -55,9 +54,14 @@ object ngTableFilterConfigMod {
   
   @JSImport("ng-table/src/browser/ngTableFilterConfig", "NgTableFilterConfigProvider")
   @js.native
-  class NgTableFilterConfigProvider protected () extends IServiceProvider {
+  class NgTableFilterConfigProvider protected ()
+    extends StObject
+       with IServiceProvider {
     def this($injector: IInjectorService) = this()
     
+    /* CompleteClass */
+    @JSName("$get")
+    var $get: js.Any = js.native
     @JSName("$get")
     def $get_MNgTableFilterConfigProvider(): NgTableFilterConfig = js.native
     

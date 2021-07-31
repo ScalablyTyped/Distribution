@@ -10,7 +10,6 @@ import typings.libraCore.accessPathPbMod.AccessPath
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/transaction_pb", "WriteOp")
@@ -46,13 +45,11 @@ object WriteOp {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "WriteOp.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): WriteOp = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): WriteOp = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[WriteOp]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "WriteOp.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: WriteOp, reader: BinaryReader): WriteOp = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: WriteOp, reader: BinaryReader): WriteOp = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[WriteOp]
   
   @JSImport("libra-core/lib/@/generated/transaction_pb", "WriteOp.extensions")
   @js.native
@@ -67,22 +64,19 @@ object WriteOp {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "WriteOp.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: WriteOp, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: WriteOp, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "WriteOp.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: WriteOp): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: WriteOp): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var accessPath: js.UndefOr[typings.libraCore.accessPathPbMod.AccessPath.AsObject] = js.native
+    var accessPath: js.UndefOr[typings.libraCore.accessPathPbMod.AccessPath.AsObject] = js.undefined
     
-    var `type`: WriteOpType = js.native
+    var `type`: WriteOpType
     
-    var value: Uint8Array | String = js.native
+    var value: Uint8Array | String
   }
   object AsObject {
     

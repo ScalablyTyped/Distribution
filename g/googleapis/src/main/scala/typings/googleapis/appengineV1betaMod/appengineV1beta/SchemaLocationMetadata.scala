@@ -2,26 +2,24 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata for the given google.cloud.location.Location.
   */
-@js.native
 trait SchemaLocationMetadata extends StObject {
   
   /**
     * App Engine flexible environment is available in the given
     * location.@OutputOnly
     */
-  var flexibleEnvironmentAvailable: js.UndefOr[Boolean] = js.native
+  var flexibleEnvironmentAvailable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * App Engine standard environment is available in the given
     * location.@OutputOnly
     */
-  var standardEnvironmentAvailable: js.UndefOr[Boolean] = js.native
+  var standardEnvironmentAvailable: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaLocationMetadata {
   

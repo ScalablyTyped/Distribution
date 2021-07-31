@@ -2,19 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Block extends AST {
+trait Block
+  extends StObject
+     with AST {
   
-  var closeBraceLeadingComments: js.Array[Comment] = js.native
+  var closeBraceLeadingComments: js.Array[Comment]
   
-  var closeBraceToken: IASTSpan = js.native
+  var closeBraceToken: IASTSpan
   
-  var statements: ISyntaxList2 = js.native
+  var statements: ISyntaxList2
   
-  def structuralEquals(ast: Block, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: Block, includingPosition: Boolean): Boolean
 }
 object Block {
   

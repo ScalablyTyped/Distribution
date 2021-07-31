@@ -5,23 +5,22 @@ import typings.vegaTypings.encodeMod.RuleEncodeEntry
 import typings.vegaTypings.vegaTypingsStrings.rule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleMark
-  extends BaseMark
+  extends StObject
+     with BaseMark
      with Encodable[RuleEncodeEntry]
      with Mark {
   
-  var `type`: rule = js.native
+  var `type`: rule
 }
 object RuleMark {
   
   @scala.inline
-  def apply(`type`: rule): RuleMark = {
+  def apply(): RuleMark = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("rule")
     __obj.asInstanceOf[RuleMark]
   }
   

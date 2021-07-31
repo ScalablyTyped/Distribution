@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnlinkIdentityInput extends StObject {
   
   /**
     * A unique identifier in the format REGION:GUID.
     */
-  var IdentityId: typings.awsSdk.cognitoidentityMod.IdentityId = js.native
+  var IdentityId: typings.awsSdk.cognitoidentityMod.IdentityId
   
   /**
     * A set of optional name-value pairs that map provider names to provider tokens.
     */
-  var Logins: LoginsMap = js.native
+  var Logins: LoginsMap
   
   /**
     * Provider names to unlink from this identity.
     */
-  var LoginsToRemove: LoginsList = js.native
+  var LoginsToRemove: LoginsList
 }
 object UnlinkIdentityInput {
   

@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientFitness.gapi.client.fitness
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketByTime extends StObject {
   
   /** Specifies that result buckets aggregate data by exactly durationMillis time frames. Time frames that contain no data will be included in the response with an empty dataset. */
-  var durationMillis: js.UndefOr[String] = js.native
+  var durationMillis: js.UndefOr[String] = js.undefined
   
-  var period: js.UndefOr[BucketByTimePeriod] = js.native
+  var period: js.UndefOr[BucketByTimePeriod] = js.undefined
 }
 object BucketByTime {
   

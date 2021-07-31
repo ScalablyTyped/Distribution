@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the options selected for an email mailbox query. */
-@js.native
 trait EmailQueryOptions extends StObject {
   
   /** Gets the identifiers for the folders in which to search. */
-  var folderIds: IVector[String] = js.native
+  var folderIds: IVector[String]
   
   /** Gets or sets the kind of emails for which to query. */
-  var kind: EmailQueryKind = js.native
+  var kind: EmailQueryKind
   
   /** Gets or sets the direction of the sort for the query results. */
-  var sortDirection: EmailQuerySortDirection = js.native
+  var sortDirection: EmailQuerySortDirection
   
   /** Gets or sets a Boolean value indicating whether the query results should be sorted. */
-  var sortProperty: EmailQuerySortProperty = js.native
+  var sortProperty: EmailQuerySortProperty
   
   /** Gets the text to search for. */
-  var textSearch: EmailQueryTextSearch = js.native
+  var textSearch: EmailQueryTextSearch
 }
 object EmailQueryOptions {
   

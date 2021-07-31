@@ -4,7 +4,6 @@ import typings.geojson.mod.Feature
 import typings.geojson.mod.GeometryObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "Polyline")

@@ -2,25 +2,23 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignItemsBorderLeftWidth extends StObject {
   
-  var alignItems: String = js.native
+  var alignItems: String
   
-  var borderLeftWidth: Double = js.native
+  var borderLeftWidth: Double
   
-  var borderRightWidth: Double = js.native
+  var borderRightWidth: Double
   
-  var borderStyle: String = js.native
+  var borderStyle: String
   
-  var flex: Double = js.native
+  var flex: Double
   
-  var justifyContent: String = js.native
+  var justifyContent: String
   
-  var paddingVertical: Double = js.native
+  var paddingVertical: Double
 }
 object AlignItemsBorderLeftWidth {
   

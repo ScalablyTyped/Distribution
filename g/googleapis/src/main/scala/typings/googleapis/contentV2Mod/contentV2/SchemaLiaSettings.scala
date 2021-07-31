@@ -2,32 +2,30 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Local Inventory ads (LIA) settings. All methods except listposdataproviders
   * require the admin role.
   */
-@js.native
 trait SchemaLiaSettings extends StObject {
   
   /**
     * The ID of the account to which these LIA settings belong. Ignored upon
     * update, always present in get request responses.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The LIA settings for each country.
     */
-  var countrySettings: js.UndefOr[js.Array[SchemaLiaCountrySettings]] = js.native
+  var countrySettings: js.UndefOr[js.Array[SchemaLiaCountrySettings]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#liaSettings&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaLiaSettings {
   

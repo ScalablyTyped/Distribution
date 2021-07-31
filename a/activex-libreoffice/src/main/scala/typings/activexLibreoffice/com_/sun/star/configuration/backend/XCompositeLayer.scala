@@ -4,22 +4,22 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides read access to layers that contain sublayers accessible through an additional criterion (for instance the locale they contain data for).
   * @since OOo 1.1.2
   */
-@js.native
-trait XCompositeLayer extends XLayer {
+trait XCompositeLayer
+  extends StObject
+     with XLayer {
   
   /**
     * Returns a list of the criteria that can be used to access the sublayers.
     * @returns a list supported sublayer identifiers
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs in the retrieval of the data.
     */
-  def listSubLayerIds(): SafeArray[String] = js.native
+  def listSubLayerIds(): SafeArray[String]
   
   /**
     * Describes the content of a particular sublayer to an {@link XLayerHandler} .
@@ -30,7 +30,7 @@ trait XCompositeLayer extends XLayer {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs in the access to or processing of the data.
     * @throws com::sun::star::configuration::backend::MalformedDataException if the data read from the layer is rejected as invalid by the {@link XLayerHandler} .
     */
-  def readSubLayerData(aHandler: XLayerHandler, aSubLayerId: String): Unit = js.native
+  def readSubLayerData(aHandler: XLayerHandler, aSubLayerId: String): Unit
 }
 object XCompositeLayer {
   

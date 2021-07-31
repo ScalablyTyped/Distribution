@@ -2,19 +2,17 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Drive item which is a folder.
   */
-@js.native
 trait SchemaFolder extends StObject {
   
   /**
     * The type of Drive folder.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaFolder {
   

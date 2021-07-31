@@ -2,11 +2,9 @@ package typings.officeJsPreview.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "application.toJSON()". */
-@js.native
 trait ApplicationData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ApplicationData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var showBorders: js.UndefOr[Boolean] = js.native
+  var showBorders: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ApplicationData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var showToolbars: js.UndefOr[Boolean] = js.native
+  var showToolbars: js.UndefOr[Boolean] = js.undefined
 }
 object ApplicationData {
   

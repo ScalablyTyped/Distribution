@@ -2,21 +2,21 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditInitializeParams extends IEditSessionOperationParams {
+trait EditInitializeParams
+  extends StObject
+     with IEditSessionOperationParams {
   
-  var filters: EditInitializeFiltering = js.native
+  var filters: EditInitializeFiltering
   
-  var objectName: String = js.native
+  var objectName: String
   
-  var objectType: String = js.native
+  var objectType: String
   
-  var queryString: String = js.native
+  var queryString: String
   
-  var schemaName: String = js.native
+  var schemaName: String
 }
 object EditInitializeParams {
   

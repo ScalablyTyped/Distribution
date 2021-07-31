@@ -2,27 +2,25 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Commits extends StObject {
   
-  var comments: HrefString = js.native
+  var comments: HrefString
   
-  var commits: HrefString = js.native
+  var commits: HrefString
   
-  var html: HrefString = js.native
+  var html: HrefString
   
-  var issue: HrefString = js.native
+  var issue: HrefString
   
-  var review_comment: HrefString = js.native
+  var review_comment: HrefString
   
-  var review_comments: HrefString = js.native
+  var review_comments: HrefString
   
-  var self: HrefString = js.native
+  var self: HrefString
   
-  var statuses: HrefString = js.native
+  var statuses: HrefString
 }
 object Commits {
   

@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleIdentityAccesscontextmanagerV1AccessLevel extends StObject {
   
   /** A `BasicLevel` composed of `Conditions`. */
-  var basic: js.UndefOr[GoogleIdentityAccesscontextmanagerV1BasicLevel] = js.native
+  var basic: js.UndefOr[GoogleIdentityAccesscontextmanagerV1BasicLevel] = js.undefined
   
   /** A `CustomLevel` written in the Common Expression Language. */
-  var custom: js.UndefOr[GoogleIdentityAccesscontextmanagerV1CustomLevel] = js.native
+  var custom: js.UndefOr[GoogleIdentityAccesscontextmanagerV1CustomLevel] = js.undefined
   
   /** Description of the `AccessLevel` and its use. Does not affect behavior. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Resource name for the Access Level. The `short_name` component must begin with a letter and only include alphanumeric and '_'. Format:
     * `accessPolicies/{policy_id}/accessLevels/{short_name}`. The maximum length of the `short_name` component is 50 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Human readable title. Must be unique within the Policy. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object GoogleIdentityAccesscontextmanagerV1AccessLevel {
   

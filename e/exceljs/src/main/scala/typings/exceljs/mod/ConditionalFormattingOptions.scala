@@ -2,15 +2,13 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalFormattingOptions extends StObject {
   
-  var ref: String = js.native
+  var ref: String
   
-  var rules: js.Array[ConditionalFormattingRule] = js.native
+  var rules: js.Array[ConditionalFormattingRule]
 }
 object ConditionalFormattingOptions {
   

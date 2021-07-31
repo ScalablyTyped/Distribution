@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvaluationMetrics extends StObject {
   
   /**
     * The evaluation metrics for the find matches algorithm.
     */
-  var FindMatchesMetrics: js.UndefOr[typings.awsSdk.glueMod.FindMatchesMetrics] = js.native
+  var FindMatchesMetrics: js.UndefOr[typings.awsSdk.glueMod.FindMatchesMetrics] = js.undefined
   
   /**
     * The type of machine learning transform.
     */
-  var TransformType: typings.awsSdk.glueMod.TransformType = js.native
+  var TransformType: typings.awsSdk.glueMod.TransformType
 }
 object EvaluationMetrics {
   

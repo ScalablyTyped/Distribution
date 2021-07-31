@@ -3,15 +3,13 @@ package typings.nodeRedRuntime.anon
 import typings.nodeRedRuntime.mod.CommsConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Topic extends StObject {
   
-  var client: CommsConnection = js.native
+  var client: CommsConnection
   
-  var topic: String = js.native
+  var topic: String
 }
 object Topic {
   

@@ -2,98 +2,96 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailOptions extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var AutoFormatAsYouTypeApplyBorders: Boolean = js.native
+  var AutoFormatAsYouTypeApplyBorders: Boolean
   
-  var AutoFormatAsYouTypeApplyBulletedLists: Boolean = js.native
+  var AutoFormatAsYouTypeApplyBulletedLists: Boolean
   
-  var AutoFormatAsYouTypeApplyClosings: Boolean = js.native
+  var AutoFormatAsYouTypeApplyClosings: Boolean
   
-  var AutoFormatAsYouTypeApplyDates: Boolean = js.native
+  var AutoFormatAsYouTypeApplyDates: Boolean
   
-  var AutoFormatAsYouTypeApplyFirstIndents: Boolean = js.native
+  var AutoFormatAsYouTypeApplyFirstIndents: Boolean
   
-  var AutoFormatAsYouTypeApplyHeadings: Boolean = js.native
+  var AutoFormatAsYouTypeApplyHeadings: Boolean
   
-  var AutoFormatAsYouTypeApplyNumberedLists: Boolean = js.native
+  var AutoFormatAsYouTypeApplyNumberedLists: Boolean
   
-  var AutoFormatAsYouTypeApplyTables: Boolean = js.native
+  var AutoFormatAsYouTypeApplyTables: Boolean
   
-  var AutoFormatAsYouTypeAutoLetterWizard: Boolean = js.native
+  var AutoFormatAsYouTypeAutoLetterWizard: Boolean
   
-  var AutoFormatAsYouTypeDefineStyles: Boolean = js.native
+  var AutoFormatAsYouTypeDefineStyles: Boolean
   
-  var AutoFormatAsYouTypeDeleteAutoSpaces: Boolean = js.native
+  var AutoFormatAsYouTypeDeleteAutoSpaces: Boolean
   
-  var AutoFormatAsYouTypeFormatListItemBeginning: Boolean = js.native
+  var AutoFormatAsYouTypeFormatListItemBeginning: Boolean
   
-  var AutoFormatAsYouTypeInsertClosings: Boolean = js.native
+  var AutoFormatAsYouTypeInsertClosings: Boolean
   
-  var AutoFormatAsYouTypeInsertOvers: Boolean = js.native
+  var AutoFormatAsYouTypeInsertOvers: Boolean
   
-  var AutoFormatAsYouTypeMatchParentheses: Boolean = js.native
+  var AutoFormatAsYouTypeMatchParentheses: Boolean
   
-  var AutoFormatAsYouTypeReplaceFarEastDashes: Boolean = js.native
+  var AutoFormatAsYouTypeReplaceFarEastDashes: Boolean
   
-  var AutoFormatAsYouTypeReplaceFractions: Boolean = js.native
+  var AutoFormatAsYouTypeReplaceFractions: Boolean
   
-  var AutoFormatAsYouTypeReplaceHyperlinks: Boolean = js.native
+  var AutoFormatAsYouTypeReplaceHyperlinks: Boolean
   
-  var AutoFormatAsYouTypeReplaceOrdinals: Boolean = js.native
+  var AutoFormatAsYouTypeReplaceOrdinals: Boolean
   
-  var AutoFormatAsYouTypeReplacePlainTextEmphasis: Boolean = js.native
+  var AutoFormatAsYouTypeReplacePlainTextEmphasis: Boolean
   
-  var AutoFormatAsYouTypeReplaceQuotes: Boolean = js.native
+  var AutoFormatAsYouTypeReplaceQuotes: Boolean
   
-  var AutoFormatAsYouTypeReplaceSymbols: Boolean = js.native
+  var AutoFormatAsYouTypeReplaceSymbols: Boolean
   
-  val ComposeStyle: Style = js.native
+  val ComposeStyle: Style
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Dummy1: Boolean = js.native
+  val Dummy1: Boolean
   
-  val Dummy2: Boolean = js.native
+  val Dummy2: Boolean
   
-  def Dummy3(): Unit = js.native
+  def Dummy3(): Unit
   
-  val EmailSignature: typings.activexWord.Word.EmailSignature = js.native
+  val EmailSignature: typings.activexWord.Word.EmailSignature
   
-  var EmbedSmartTag: Boolean = js.native
+  var EmbedSmartTag: Boolean
   
-  var HTMLFidelity: WdEmailHTMLFidelity = js.native
+  var HTMLFidelity: WdEmailHTMLFidelity
   
-  var MarkComments: Boolean = js.native
+  var MarkComments: Boolean
   
-  var MarkCommentsWith: String = js.native
+  var MarkCommentsWith: String
   
-  var NewColorOnReply: Boolean = js.native
+  var NewColorOnReply: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PlainTextStyle: Style = js.native
+  val PlainTextStyle: Style
   
-  var RelyOnCSS: Boolean = js.native
+  var RelyOnCSS: Boolean
   
-  val ReplyStyle: Style = js.native
+  val ReplyStyle: Style
   
-  var TabIndentKey: Boolean = js.native
+  var TabIndentKey: Boolean
   
-  var ThemeName: String = js.native
+  var ThemeName: String
   
-  var UseThemeStyle: Boolean = js.native
+  var UseThemeStyle: Boolean
   
-  var UseThemeStyleOnReply: Boolean = js.native
+  var UseThemeStyleOnReply: Boolean
   
   @JSName("Word.EmailOptions_typekey")
-  var WordDotEmailOptions_typekey: EmailOptions = js.native
+  var WordDotEmailOptions_typekey: EmailOptions
 }
 object EmailOptions {
   

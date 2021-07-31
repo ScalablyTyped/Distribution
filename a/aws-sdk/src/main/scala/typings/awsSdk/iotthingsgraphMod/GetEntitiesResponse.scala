@@ -2,16 +2,14 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEntitiesResponse extends StObject {
   
   /**
     * An array of descriptions for the specified entities.
     */
-  var descriptions: js.UndefOr[EntityDescriptions] = js.native
+  var descriptions: js.UndefOr[EntityDescriptions] = js.undefined
 }
 object GetEntitiesResponse {
   

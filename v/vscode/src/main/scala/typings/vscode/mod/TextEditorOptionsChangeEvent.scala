@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEditorOptionsChangeEvent extends StObject {
   
   /**
     * The new value for the [text editor's options](#TextEditor.options).
     */
-  val options: TextEditorOptions = js.native
+  val options: TextEditorOptions
   
   /**
     * The [text editor](#TextEditor) for which the options have changed.
     */
-  val textEditor: TextEditor = js.native
+  val textEditor: TextEditor
 }
 object TextEditorOptionsChangeEvent {
   

@@ -14,17 +14,16 @@ import typings.activexLibreoffice.com_.sun.star.ui.XUIElement
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Unified interface for {@link LayoutManager} service.
   * @since LibreOffice 4.2
   */
-@js.native
 trait XLayoutManager2
-  extends XFrameActionListener
+  extends StObject
      with XLayoutManager
+     with XFrameActionListener
      with XUIConfigurationListener
      with XMenuBarMergingAcceptor
      with XLayoutManagerEventBroadcaster

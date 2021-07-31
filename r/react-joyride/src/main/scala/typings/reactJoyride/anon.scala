@@ -2,23 +2,21 @@ package typings.reactJoyride
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Arialabel extends StObject {
     
-    var `aria-label`: String = js.native
+    var `aria-label`: String
     
-    var `data-action`: String = js.native
+    var `data-action`: String
     
-    def onClick(): Unit = js.native
+    def onClick(): Unit
     
-    var role: String = js.native
+    var role: String
     
-    var title: String = js.native
+    var title: String
   }
   object Arialabel {
     
@@ -50,14 +48,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Ariamodal extends StObject {
     
-    var `aria-modal`: Boolean = js.native
+    var `aria-modal`: Boolean
     
-    def ref(): Unit = js.native
+    def ref(): Unit
     
-    var role: String = js.native
+    var role: String
   }
   object Ariamodal {
     
@@ -82,26 +79,25 @@ object anon {
     }
   }
   
-  @js.native
   trait ArrowColor extends StObject {
     
-    var arrowColor: js.UndefOr[String] = js.native
+    var arrowColor: js.UndefOr[String] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var beaconSize: js.UndefOr[Double] = js.native
+    var beaconSize: js.UndefOr[Double] = js.undefined
     
-    var overlayColor: js.UndefOr[String] = js.native
+    var overlayColor: js.UndefOr[String] = js.undefined
     
-    var primaryColor: js.UndefOr[String] = js.native
+    var primaryColor: js.UndefOr[String] = js.undefined
     
-    var spotlightShadow: js.UndefOr[String] = js.native
+    var spotlightShadow: js.UndefOr[String] = js.undefined
     
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object ArrowColor {
     

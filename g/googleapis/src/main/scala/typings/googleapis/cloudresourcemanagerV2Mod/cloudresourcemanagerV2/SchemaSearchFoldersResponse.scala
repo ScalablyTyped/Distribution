@@ -2,26 +2,24 @@ package typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response message for searching folders.
   */
-@js.native
 trait SchemaSearchFoldersResponse extends StObject {
   
   /**
     * A possibly paginated folder search results. the specified parent
     * resource.
     */
-  var folders: js.UndefOr[js.Array[SchemaFolder]] = js.native
+  var folders: js.UndefOr[js.Array[SchemaFolder]] = js.undefined
   
   /**
     * A pagination token returned from a previous call to `SearchFolders` that
     * indicates from where searching should continue. This field is optional.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaSearchFoldersResponse {
   

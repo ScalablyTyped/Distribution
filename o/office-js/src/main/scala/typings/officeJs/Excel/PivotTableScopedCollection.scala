@@ -8,7 +8,6 @@ import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.12]
   */
 @js.native
-trait PivotTableScopedCollection extends ClientObject {
+trait PivotTableScopedCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -65,7 +66,7 @@ trait PivotTableScopedCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): PivotTableScopedCollection = js.native
-  def load(options: PivotTableScopedCollectionLoadOptions with CollectionLoadOptions): PivotTableScopedCollection = js.native
+  def load(options: PivotTableScopedCollectionLoadOptions & CollectionLoadOptions): PivotTableScopedCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): PivotTableScopedCollection = js.native
   def load(propertyNames: String): PivotTableScopedCollection = js.native
   def load(propertyNames: js.Array[String]): PivotTableScopedCollection = js.native

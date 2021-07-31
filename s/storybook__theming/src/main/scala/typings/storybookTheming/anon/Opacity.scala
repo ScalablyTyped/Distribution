@@ -2,13 +2,11 @@ package typings.storybookTheming.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Opacity extends StObject {
   
-  var opacity: Double = js.native
+  var opacity: Double
 }
 object Opacity {
   

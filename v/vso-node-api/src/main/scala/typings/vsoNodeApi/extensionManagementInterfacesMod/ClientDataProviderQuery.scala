@@ -2,16 +2,16 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientDataProviderQuery extends DataProviderQuery {
+trait ClientDataProviderQuery
+  extends StObject
+     with DataProviderQuery {
   
   /**
     * The Id of the service instance type that should be communicated with in order to resolve the data providers from the client given the query values.
     */
-  var queryServiceInstanceType: String = js.native
+  var queryServiceInstanceType: String
 }
 object ClientDataProviderQuery {
   

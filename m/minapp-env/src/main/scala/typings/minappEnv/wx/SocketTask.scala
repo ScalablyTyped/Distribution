@@ -2,45 +2,43 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocketTask extends StObject {
   
   /** [SocketTask.close(Object object)](SocketTask.close.md)
     *
     * 关闭 WebSocket 连接 */
-  def close(option: CloseOption): Unit = js.native
+  def close(option: CloseOption): Unit
   
   /** [SocketTask.onClose(function callback)](SocketTask.onClose.md)
     *
     * 监听 WebSocket 连接关闭事件 */
   def onClose(/** WebSocket 连接关闭事件的回调函数 */
-  callback: OnCloseCallback): Unit = js.native
+  callback: OnCloseCallback): Unit
   
   /** [SocketTask.onError(function callback)](SocketTask.onError.md)
     *
     * 监听 WebSocket 错误事件 */
   def onError(/** WebSocket 错误事件的回调函数 */
-  callback: SocketTaskOnErrorCallback): Unit = js.native
+  callback: SocketTaskOnErrorCallback): Unit
   
   /** [SocketTask.onMessage(function callback)](SocketTask.onMessage.md)
     *
     * 监听 WebSocket 接受到服务器的消息事件 */
   def onMessage(/** WebSocket 接受到服务器的消息事件的回调函数 */
-  callback: SocketTaskOnMessageCallback): Unit = js.native
+  callback: SocketTaskOnMessageCallback): Unit
   
   /** [SocketTask.onOpen(function callback)](SocketTask.onOpen.md)
     *
     * 监听 WebSocket 连接打开事件 */
   def onOpen(/** WebSocket 连接打开事件的回调函数 */
-  callback: OnOpenCallback): Unit = js.native
+  callback: OnOpenCallback): Unit
   
   /** [SocketTask.send(Object object)](SocketTask.send.md)
     *
     * 通过 WebSocket 连接发送数据 */
-  def send(option: SendOption): Unit = js.native
+  def send(option: SendOption): Unit
 }
 object SocketTask {
   

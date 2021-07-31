@@ -10,9 +10,9 @@ TypeScript typings for Cloud Identity-Aware Proxy API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.iap |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 924 |
+| # downloads        | 1010 |
 | # stars            | 0 |
 
 ## Links

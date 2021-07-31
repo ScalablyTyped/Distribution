@@ -2,17 +2,15 @@ package typings.ssri.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsSingleStrict extends StObject {
   
-  var options: js.UndefOr[js.Array[String]] = js.native
+  var options: js.UndefOr[js.Array[String]] = js.undefined
   
-  var single: js.UndefOr[Boolean] = js.native
+  var single: js.UndefOr[Boolean] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object OptionsSingleStrict {
   

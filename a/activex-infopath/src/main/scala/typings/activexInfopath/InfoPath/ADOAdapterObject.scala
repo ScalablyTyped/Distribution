@@ -3,32 +3,30 @@ package typings.activexInfopath.InfoPath
 import typings.activexMsxml2.MSXML2.IXMLDOMNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ADOAdapterObject extends StObject {
   
-  def BuildSQLFromXMLNodes(pXmlNode: IXMLDOMNode): String = js.native
+  def BuildSQLFromXMLNodes(pXmlNode: IXMLDOMNode): String
   
-  var Command: String = js.native
+  var Command: String
   
-  var Connection: String = js.native
+  var Connection: String
   
   @JSName("InfoPath.ADOAdapterObject_typekey")
-  var InfoPathDotADOAdapterObject_typekey: ADOAdapterObject = js.native
+  var InfoPathDotADOAdapterObject_typekey: ADOAdapterObject
   
-  val Name: String = js.native
+  val Name: String
   
-  def Query(): Unit = js.native
+  def Query(): Unit
   
-  val QueryAllowed: Boolean = js.native
+  val QueryAllowed: Boolean
   
-  def Submit(): Unit = js.native
+  def Submit(): Unit
   
-  val SubmitAllowed: Boolean = js.native
+  val SubmitAllowed: Boolean
   
-  var Timeout: Double = js.native
+  var Timeout: Double
 }
 object ADOAdapterObject {
   

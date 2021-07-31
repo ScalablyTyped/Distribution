@@ -4,25 +4,24 @@ import typings.std.RegExp
 import typings.uuidv4.anon.Pattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("uuidv4", "empty")
+  @JSImport("uuidv4", JSImport.Namespace)
   @js.native
-  def empty(): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("uuidv4", "fromString")
-  @js.native
-  def fromString(text: String): String = js.native
-  @JSImport("uuidv4", "fromString")
-  @js.native
-  def fromString(text: String, namespace: String): String = js.native
+  @scala.inline
+  def empty(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[String]
   
-  @JSImport("uuidv4", "isUuid")
-  @js.native
-  def isUuid(value: String): Boolean = js.native
+  @scala.inline
+  def fromString(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def fromString(text: String, namespace: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def isUuid(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUuid")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   object jsonSchema {
     
@@ -62,7 +61,6 @@ object mod {
     def v5_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v5")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("uuidv4", "uuid")
-  @js.native
-  def uuid(): String = js.native
+  @scala.inline
+  def uuid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid")().asInstanceOf[String]
 }

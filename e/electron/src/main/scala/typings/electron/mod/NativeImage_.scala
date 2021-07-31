@@ -6,52 +6,51 @@ import typings.electron.Electron.Size
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("electron", "NativeImage")
 @js.native
 class NativeImage_ ()
-  extends typings.electron.Electron.NativeImage_
+  extends StObject
+     with typings.electron.Electron.NativeImage_
 object NativeImage_ {
+  
+  @JSImport("electron", "NativeImage")
+  @js.native
+  val ^ : js.Any = js.native
   
   // Docs: https://electronjs.org/docs/api/native-image
   /**
     * Creates an empty `NativeImage` instance.
     */
   /* static member */
-  @JSImport("electron", "NativeImage.createEmpty")
-  @js.native
-  def createEmpty(): typings.electron.Electron.NativeImage_ = js.native
+  @scala.inline
+  def createEmpty(): typings.electron.Electron.NativeImage_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmpty")().asInstanceOf[typings.electron.Electron.NativeImage_]
   
   /**
     * Creates a new `NativeImage` instance from `buffer` that contains the raw bitmap
     * pixel data returned by `toBitmap()`. The specific format is platform-dependent.
     */
   /* static member */
-  @JSImport("electron", "NativeImage.createFromBitmap")
-  @js.native
-  def createFromBitmap(buffer: Buffer, options: CreateFromBitmapOptions): typings.electron.Electron.NativeImage_ = js.native
+  @scala.inline
+  def createFromBitmap(buffer: Buffer, options: CreateFromBitmapOptions): typings.electron.Electron.NativeImage_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromBitmap")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.electron.Electron.NativeImage_]
   
   /**
     * Creates a new `NativeImage` instance from `buffer`. Tries to decode as PNG or
     * JPEG first.
     */
   /* static member */
-  @JSImport("electron", "NativeImage.createFromBuffer")
-  @js.native
-  def createFromBuffer(buffer: Buffer): typings.electron.Electron.NativeImage_ = js.native
-  @JSImport("electron", "NativeImage.createFromBuffer")
-  @js.native
-  def createFromBuffer(buffer: Buffer, options: CreateFromBufferOptions): typings.electron.Electron.NativeImage_ = js.native
+  @scala.inline
+  def createFromBuffer(buffer: Buffer): typings.electron.Electron.NativeImage_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.NativeImage_]
+  @scala.inline
+  def createFromBuffer(buffer: Buffer, options: CreateFromBufferOptions): typings.electron.Electron.NativeImage_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.electron.Electron.NativeImage_]
   
   /**
     * Creates a new `NativeImage` instance from `dataURL`.
     */
   /* static member */
-  @JSImport("electron", "NativeImage.createFromDataURL")
-  @js.native
-  def createFromDataURL(dataURL: String): typings.electron.Electron.NativeImage_ = js.native
+  @scala.inline
+  def createFromDataURL(dataURL: String): typings.electron.Electron.NativeImage_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromDataURL")(dataURL.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.NativeImage_]
   
   /**
     * Creates a new `NativeImage` instance from the NSImage that maps to the given
@@ -85,12 +84,10 @@ object NativeImage_ {
     * @platform darwin
     */
   /* static member */
-  @JSImport("electron", "NativeImage.createFromNamedImage")
-  @js.native
-  def createFromNamedImage(imageName: String): typings.electron.Electron.NativeImage_ = js.native
-  @JSImport("electron", "NativeImage.createFromNamedImage")
-  @js.native
-  def createFromNamedImage(imageName: String, hslShift: js.Array[Double]): typings.electron.Electron.NativeImage_ = js.native
+  @scala.inline
+  def createFromNamedImage(imageName: String): typings.electron.Electron.NativeImage_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromNamedImage")(imageName.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.NativeImage_]
+  @scala.inline
+  def createFromNamedImage(imageName: String, hslShift: js.Array[Double]): typings.electron.Electron.NativeImage_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromNamedImage")(imageName.asInstanceOf[js.Any], hslShift.asInstanceOf[js.Any])).asInstanceOf[typings.electron.Electron.NativeImage_]
   
   /**
     * Creates a new `NativeImage` instance from a file located at `path`. This method
@@ -98,9 +95,8 @@ object NativeImage_ {
     * valid image.
     */
   /* static member */
-  @JSImport("electron", "NativeImage.createFromPath")
-  @js.native
-  def createFromPath(path: String): typings.electron.Electron.NativeImage_ = js.native
+  @scala.inline
+  def createFromPath(path: String): typings.electron.Electron.NativeImage_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.NativeImage_]
   
   /**
     * fulfilled with the file's thumbnail preview image, which is a NativeImage.
@@ -108,7 +104,6 @@ object NativeImage_ {
     * @platform darwin,win32
     */
   /* static member */
-  @JSImport("electron", "NativeImage.createThumbnailFromPath")
-  @js.native
-  def createThumbnailFromPath(path: String, maxSize: Size): js.Promise[typings.electron.Electron.NativeImage_] = js.native
+  @scala.inline
+  def createThumbnailFromPath(path: String, maxSize: Size): js.Promise[typings.electron.Electron.NativeImage_] = (^.asInstanceOf[js.Dynamic].applyDynamic("createThumbnailFromPath")(path.asInstanceOf[js.Any], maxSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.electron.Electron.NativeImage_]]
 }

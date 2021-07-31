@@ -2,45 +2,43 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disk extends StObject {
   
   /**
     * The iSCSI qualified name (IQN) that is defined for a disk. This field is not included in the response if the local disk is not defined as an iSCSI target. The format of this field is targetIqn::LUNNumber::region-volumeId.
     */
-  var DiskAllocationResource: js.UndefOr[String] = js.native
+  var DiskAllocationResource: js.UndefOr[String] = js.undefined
   
-  var DiskAllocationType: js.UndefOr[typings.awsSdk.storagegatewayMod.DiskAllocationType] = js.native
+  var DiskAllocationType: js.UndefOr[typings.awsSdk.storagegatewayMod.DiskAllocationType] = js.undefined
   
-  var DiskAttributeList: js.UndefOr[typings.awsSdk.storagegatewayMod.DiskAttributeList] = js.native
+  var DiskAttributeList: js.UndefOr[typings.awsSdk.storagegatewayMod.DiskAttributeList] = js.undefined
   
   /**
     * The unique device ID or other distinguishing data that identifies a local disk.
     */
-  var DiskId: js.UndefOr[typings.awsSdk.storagegatewayMod.DiskId] = js.native
+  var DiskId: js.UndefOr[typings.awsSdk.storagegatewayMod.DiskId] = js.undefined
   
   /**
     * The device node of a local disk as assigned by the virtualization environment.
     */
-  var DiskNode: js.UndefOr[String] = js.native
+  var DiskNode: js.UndefOr[String] = js.undefined
   
   /**
     * The path of a local disk in the gateway virtual machine (VM).
     */
-  var DiskPath: js.UndefOr[String] = js.native
+  var DiskPath: js.UndefOr[String] = js.undefined
   
   /**
     * The local disk size in bytes.
     */
-  var DiskSizeInBytes: js.UndefOr[long] = js.native
+  var DiskSizeInBytes: js.UndefOr[long] = js.undefined
   
   /**
     * A value that represents the status of a local disk.
     */
-  var DiskStatus: js.UndefOr[String] = js.native
+  var DiskStatus: js.UndefOr[String] = js.undefined
 }
 object Disk {
   

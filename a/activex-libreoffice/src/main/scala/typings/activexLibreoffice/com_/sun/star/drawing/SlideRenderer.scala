@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.awt.XBitmap
 import typings.activexLibreoffice.com_.sun.star.rendering.XCanvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Create preview bitmaps for single slides. */
-@js.native
-trait SlideRenderer extends XSlideRenderer {
+trait SlideRenderer
+  extends StObject
+     with XSlideRenderer {
   
   /** Create a new {@link SlideRenderer} object. */
-  def create(): Unit = js.native
+  def create(): Unit
 }
 object SlideRenderer {
   

@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events which concern manipulations on the control's items.
   */
-@js.native
-trait ASPxClientTitleIndexItemEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientTitleIndexItemEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets the HTML object that contains the processed item.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: js.Any
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
   
   /**
     * Gets the name that uniquely identifies the processed item.
     */
-  var name: js.Any = js.native
+  var name: js.Any
 }
 object ASPxClientTitleIndexItemEventArgs {
   

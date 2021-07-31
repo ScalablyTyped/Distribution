@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListConfigurationRevisionsResponse extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait ListConfigurationRevisionsResponse extends StObject {
     Paginated results marker.
     
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * 
     List of ConfigurationRevision objects.
     
     */
-  var Revisions: js.UndefOr[listOfConfigurationRevision] = js.native
+  var Revisions: js.UndefOr[listOfConfigurationRevision] = js.undefined
 }
 object ListConfigurationRevisionsResponse {
   

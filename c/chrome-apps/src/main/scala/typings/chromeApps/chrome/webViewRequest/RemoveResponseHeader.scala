@@ -2,24 +2,24 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Removes all response headers of the specified names and values.
   */
-@js.native
-trait RemoveResponseHeader extends OnRequestActions {
+trait RemoveResponseHeader
+  extends StObject
+     with OnRequestActions {
   
-  val instanceType: String = js.native
+  val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.RemoveResponseHeader = js.native
+  val typeGuard: typings.chromeApps.chromeAppsStrings.RemoveResponseHeader
 }
 object RemoveResponseHeader {
   
   @scala.inline
-  def apply(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.RemoveResponseHeader): RemoveResponseHeader = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def apply(instanceType: String): RemoveResponseHeader = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RemoveResponseHeader")
     __obj.asInstanceOf[RemoveResponseHeader]
   }
   

@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatedBefore extends StObject {
   
-  var age: js.UndefOr[Double] = js.native
+  var age: js.UndefOr[Double] = js.undefined
   
-  var createdBefore: js.UndefOr[String] = js.native
+  var createdBefore: js.UndefOr[String] = js.undefined
   
-  var isLive: js.UndefOr[Boolean] = js.native
+  var isLive: js.UndefOr[Boolean] = js.undefined
   
-  var numNewerVersions: js.UndefOr[Double] = js.native
+  var numNewerVersions: js.UndefOr[Double] = js.undefined
 }
 object CreatedBefore {
   

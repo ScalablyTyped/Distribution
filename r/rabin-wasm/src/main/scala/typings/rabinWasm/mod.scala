@@ -4,7 +4,6 @@ import typings.rabinWasm.mod.ASModule.i32
 import typings.rabinWasm.mod.ASModule.u32
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,8 +24,54 @@ object mod {
     @JSImport("rabin-wasm/dist/rabin-wasm", "default.Rabin")
     @js.native
     class Rabin protected ()
-      extends typings.rabinWasm.mod.ASModule.Rabin {
+      extends StObject
+         with typings.rabinWasm.mod.ASModule.Rabin {
       def this(average_bits: u32, minsize: u32, maxsize: u32, window_size: i32) = this()
+      
+      /* CompleteClass */
+      var chunk_cut_fingerprint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      
+      /* CompleteClass */
+      var chunk_length: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      
+      /* CompleteClass */
+      var chunk_start: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      
+      /* CompleteClass */
+      var count: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      
+      /* CompleteClass */
+      var digest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      
+      /* CompleteClass */
+      override def fingerprint(buf: u32, lengths: u32): u32 = js.native
+      
+      /* CompleteClass */
+      var mask: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      
+      /* CompleteClass */
+      var maxsize: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      
+      /* CompleteClass */
+      var minsize: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      
+      /* CompleteClass */
+      var polynomial: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      
+      /* CompleteClass */
+      var pos: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      
+      /* CompleteClass */
+      var start: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      
+      /* CompleteClass */
+      var window: u32 = js.native
+      
+      /* CompleteClass */
+      var window_size: i32 = js.native
+      
+      /* CompleteClass */
+      var wpos: i32 = js.native
     }
     
     @JSImport("rabin-wasm/dist/rabin-wasm", "default.Uint8Array_ID")
@@ -36,34 +81,28 @@ object mod {
     @scala.inline
     def Uint8ArrayID_=(x: u32): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Uint8Array_ID")(x.asInstanceOf[js.Any])
     
-    @JSImport("rabin-wasm/dist/rabin-wasm", "default.__alloc")
-    @js.native
-    def alloc(size: u32, id: u32): u32 = js.native
+    @scala.inline
+    def alloc(size: u32, id: u32): u32 = (^.asInstanceOf[js.Dynamic].applyDynamic("__alloc")(size.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[u32]
     
-    @JSImport("rabin-wasm/dist/rabin-wasm", "default.__collect")
-    @js.native
-    def collect(): Unit = js.native
+    @scala.inline
+    def collect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__collect")().asInstanceOf[Unit]
     
-    @JSImport("rabin-wasm/dist/rabin-wasm", "default.degree")
-    @js.native
+    @scala.inline
     def degree(
       polynom: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-    ): i32 = js.native
+    ): i32 = ^.asInstanceOf[js.Dynamic].applyDynamic("degree")(polynom.asInstanceOf[js.Any]).asInstanceOf[i32]
     
-    @JSImport("rabin-wasm/dist/rabin-wasm", "default.mod")
-    @js.native
+    @scala.inline
     def mod(
       x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any,
       p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("rabin-wasm/dist/rabin-wasm", "default.__release")
-    @js.native
-    def release(ptr: u32): Unit = js.native
+    @scala.inline
+    def release(ptr: u32): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__release")(ptr.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rabin-wasm/dist/rabin-wasm", "default.__retain")
-    @js.native
-    def retain(ptr: u32): u32 = js.native
+    @scala.inline
+    def retain(ptr: u32): u32 = ^.asInstanceOf[js.Dynamic].applyDynamic("__retain")(ptr.asInstanceOf[js.Any]).asInstanceOf[u32]
     
     @JSImport("rabin-wasm/dist/rabin-wasm", "default.__rtti_base")
     @js.native
@@ -75,38 +114,37 @@ object mod {
   
   object ASModule {
     
-    @js.native
     trait Rabin extends StObject {
       
-      var chunk_cut_fingerprint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var chunk_cut_fingerprint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
       
-      var chunk_length: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var chunk_length: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
       
-      var chunk_start: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var chunk_start: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
       
-      var count: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var count: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
       
-      var digest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var digest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
       
-      def fingerprint(buf: u32, lengths: u32): u32 = js.native
+      def fingerprint(buf: u32, lengths: u32): u32
       
-      var mask: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var mask: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
       
-      var maxsize: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var maxsize: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
       
-      var minsize: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var minsize: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
       
-      var polynomial: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var polynomial: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
       
-      var pos: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var pos: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
       
-      var start: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any = js.native
+      var start: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U64 */ js.Any
       
-      var window: u32 = js.native
+      var window: u32
       
-      var window_size: i32 = js.native
+      var window_size: i32
       
-      var wpos: i32 = js.native
+      var wpos: i32
     }
     object Rabin {
       

@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextSymbol3DLayerHaloProperties extends Object {
+trait TextSymbol3DLayerHaloProperties
+  extends StObject
+     with Object {
   
   /**
     * The color of the halo.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#halo)
     */
-  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * The size of the halo in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#halo)
     */
-  var size: js.UndefOr[Double | String] = js.native
+  var size: js.UndefOr[Double | String] = js.undefined
 }
 object TextSymbol3DLayerHaloProperties {
   

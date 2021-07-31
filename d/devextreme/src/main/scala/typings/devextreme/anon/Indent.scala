@@ -3,19 +3,17 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.ui.format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Indent extends StObject {
   
-  var customizeText: js.UndefOr[js.Function1[/* indicatedValue */ ValueText, String]] = js.native
+  var customizeText: js.UndefOr[js.Function1[/* indicatedValue */ ValueText, String]] = js.undefined
   
-  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.native
+  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
   
-  var indent: js.UndefOr[Double] = js.native
+  var indent: js.UndefOr[Double] = js.undefined
 }
 object Indent {
   

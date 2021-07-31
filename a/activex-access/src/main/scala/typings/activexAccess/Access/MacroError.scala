@@ -2,28 +2,26 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MacroError extends StObject {
   
   @JSName("Access.MacroError_typekey")
-  var AccessDotMacroError_typekey: MacroError = js.native
+  var AccessDotMacroError_typekey: MacroError
   
-  val ActionName: String = js.native
+  val ActionName: String
   
-  val Arguments: String = js.native
+  val Arguments: String
   
-  val Condition: String = js.native
+  val Condition: String
   
-  val Description: String = js.native
+  val Description: String
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  val MacroName: String = js.native
+  val MacroName: String
   
-  val Number: Double = js.native
+  val Number: Double
 }
 object MacroError {
   

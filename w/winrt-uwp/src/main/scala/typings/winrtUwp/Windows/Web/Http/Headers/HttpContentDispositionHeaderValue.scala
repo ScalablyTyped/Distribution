@@ -3,30 +3,28 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Content-Disposition HTTP header on HTTP content in a request or a response. */
-@js.native
 trait HttpContentDispositionHeaderValue extends StObject {
   
   /** Gets or sets the value of the disposition-type information in the Content-Disposition HTTP header. */
-  var dispositionType: String = js.native
+  var dispositionType: String
   
   /** Gets or sets the value of the filename-parm information in the Content-Disposition HTTP header for a single file. */
-  var fileName: String = js.native
+  var fileName: String
   
   /** Gets or sets the value of the filename-parm characteristic in the Content-Disposition HTTP header for multiple files. */
-  var fileNameStar: String = js.native
+  var fileNameStar: String
   
   /** Gets or sets the name for a content body part in the Content-Disposition HTTP header. */
-  var name: String = js.native
+  var name: String
   
   /** Gets a set of parameters included in the Content-Disposition HTTP header. */
-  var parameters: IVector[HttpNameValueHeaderValue] = js.native
+  var parameters: IVector[HttpNameValueHeaderValue]
   
   /** Gets or sets the approximate size, in bytes, of the file used in the Content-Disposition HTTP header. */
-  var size: Double = js.native
+  var size: Double
 }
 object HttpContentDispositionHeaderValue {
   

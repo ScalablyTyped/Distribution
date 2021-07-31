@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDetectorResponse extends StObject {
   
   /**
     * The unique ID of the created detector.
     */
-  var DetectorId: js.UndefOr[typings.awsSdk.guarddutyMod.DetectorId] = js.native
+  var DetectorId: js.UndefOr[typings.awsSdk.guarddutyMod.DetectorId] = js.undefined
 }
 object CreateDetectorResponse {
   

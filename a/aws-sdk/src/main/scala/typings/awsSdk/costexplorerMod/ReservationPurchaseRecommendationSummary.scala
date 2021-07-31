@@ -2,26 +2,24 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservationPurchaseRecommendationSummary extends StObject {
   
   /**
     * The currency code used for this recommendation.
     */
-  var CurrencyCode: js.UndefOr[GenericString] = js.native
+  var CurrencyCode: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The total amount that AWS estimates that this recommendation could save you in a month.
     */
-  var TotalEstimatedMonthlySavingsAmount: js.UndefOr[GenericString] = js.native
+  var TotalEstimatedMonthlySavingsAmount: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The total amount that AWS estimates that this recommendation could save you in a month, as a percentage of your costs.
     */
-  var TotalEstimatedMonthlySavingsPercentage: js.UndefOr[GenericString] = js.native
+  var TotalEstimatedMonthlySavingsPercentage: js.UndefOr[GenericString] = js.undefined
 }
 object ReservationPurchaseRecommendationSummary {
   

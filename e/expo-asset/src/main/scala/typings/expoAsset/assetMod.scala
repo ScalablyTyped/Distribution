@@ -3,7 +3,6 @@ package typings.expoAsset
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object assetMod {
@@ -54,46 +53,38 @@ object assetMod {
     @scala.inline
     def byUri_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("byUri")(x.asInstanceOf[js.Any])
     
-    @JSImport("expo-asset/build/Asset", "Asset.fromMetadata")
-    @js.native
-    def fromMetadata(meta: AssetMetadata): Asset = js.native
+    @scala.inline
+    def fromMetadata(meta: AssetMetadata): Asset = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMetadata")(meta.asInstanceOf[js.Any]).asInstanceOf[Asset]
     
-    @JSImport("expo-asset/build/Asset", "Asset.fromModule")
-    @js.native
-    def fromModule(virtualAssetModule: String): Asset = js.native
-    @JSImport("expo-asset/build/Asset", "Asset.fromModule")
-    @js.native
-    def fromModule(virtualAssetModule: Double): Asset = js.native
+    @scala.inline
+    def fromModule(virtualAssetModule: String): Asset = ^.asInstanceOf[js.Dynamic].applyDynamic("fromModule")(virtualAssetModule.asInstanceOf[js.Any]).asInstanceOf[Asset]
+    @scala.inline
+    def fromModule(virtualAssetModule: Double): Asset = ^.asInstanceOf[js.Dynamic].applyDynamic("fromModule")(virtualAssetModule.asInstanceOf[js.Any]).asInstanceOf[Asset]
     
-    @JSImport("expo-asset/build/Asset", "Asset.fromURI")
-    @js.native
-    def fromURI(uri: String): Asset = js.native
+    @scala.inline
+    def fromURI(uri: String): Asset = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURI")(uri.asInstanceOf[js.Any]).asInstanceOf[Asset]
     
-    @JSImport("expo-asset/build/Asset", "Asset.loadAsync")
-    @js.native
-    def loadAsync(moduleId: String): js.Promise[js.Array[Asset]] = js.native
-    @JSImport("expo-asset/build/Asset", "Asset.loadAsync")
-    @js.native
-    def loadAsync(moduleId: js.Array[Double | String]): js.Promise[js.Array[Asset]] = js.native
-    @JSImport("expo-asset/build/Asset", "Asset.loadAsync")
-    @js.native
-    def loadAsync(moduleId: Double): js.Promise[js.Array[Asset]] = js.native
+    @scala.inline
+    def loadAsync(moduleId: String): js.Promise[js.Array[Asset]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Asset]]]
+    @scala.inline
+    def loadAsync(moduleId: js.Array[Double | String]): js.Promise[js.Array[Asset]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Asset]]]
+    @scala.inline
+    def loadAsync(moduleId: Double): js.Promise[js.Array[Asset]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Asset]]]
   }
   
-  @js.native
   trait AssetDescriptor extends StObject {
     
-    var hash: js.UndefOr[String | Null] = js.native
+    var hash: js.UndefOr[String | Null] = js.undefined
     
-    var height: js.UndefOr[Double | Null] = js.native
+    var height: js.UndefOr[Double | Null] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var uri: String = js.native
+    var uri: String
     
-    var width: js.UndefOr[Double | Null] = js.native
+    var width: js.UndefOr[Double | Null] = js.undefined
   }
   object AssetDescriptor {
     
@@ -147,12 +138,11 @@ object assetMod {
   
   type AssetMetadata = typings.expoAsset.assetSourcesMod.AssetMetadata
   
-  @js.native
   trait DownloadPromiseCallbacks extends StObject {
     
-    def reject(error: Error): Unit = js.native
+    def reject(error: Error): Unit
     
-    def resolve(): Unit = js.native
+    def resolve(): Unit
   }
   object DownloadPromiseCallbacks {
     

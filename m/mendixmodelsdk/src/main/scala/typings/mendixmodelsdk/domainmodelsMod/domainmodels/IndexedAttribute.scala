@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.IndexedAttribute")
@@ -51,9 +50,8 @@ object IndexedAttribute {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.IndexedAttribute.create")
-  @js.native
-  def create(model: IModel): IndexedAttribute = js.native
+  @scala.inline
+  def create(model: IModel): IndexedAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[IndexedAttribute]
   
   /**
     * Creates and returns a new IndexedAttribute instance in the SDK and on the server.
@@ -61,9 +59,8 @@ object IndexedAttribute {
     * of the parent Index element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.IndexedAttribute.createIn")
-  @js.native
-  def createIn(container: Index): IndexedAttribute = js.native
+  @scala.inline
+  def createIn(container: Index): IndexedAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[IndexedAttribute]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.IndexedAttribute.structureTypeName")

@@ -4,16 +4,16 @@ import typings.cytoscape.cytoscapeStrings.base64
 import typings.cytoscape.cytoscapeStrings.base64uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExportStringOptions extends ExportOptions {
+trait ExportStringOptions
+  extends StObject
+     with ExportOptions {
   
   /**
     * output Whether the output should be 'base64uri' (default), 'base64', or 'blob'.
     */
-  var output: js.UndefOr[base64uri | base64] = js.native
+  var output: js.UndefOr[base64uri | base64] = js.undefined
 }
 object ExportStringOptions {
   

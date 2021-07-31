@@ -7,12 +7,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PopupViewModel
-  extends Accessor
+  extends StObject
+     with Accessor
      with Evented
      with GoTo {
   
@@ -152,7 +152,7 @@ trait PopupViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#promises)
     */
-  var promises: js.Array[js.Promise[_]] = js.native
+  var promises: js.Array[js.Promise[js.Any]] = js.native
   
   /**
     * The selected feature accessed by the popup.

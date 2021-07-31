@@ -4,14 +4,14 @@ import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReshapeLayerArgs extends LayerArgs {
+trait ReshapeLayerArgs
+  extends StObject
+     with LayerArgs {
   
   /** The target shape. Does not include the batch axis. */
-  var targetShape: Shape = js.native
+  var targetShape: Shape
 }
 object ReshapeLayerArgs {
   

@@ -2,13 +2,11 @@ package typings.mangopay2NodejsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityInfoData extends StObject {
   
-  var AVSResult: typings.mangopay2NodejsSdk.mod.AVSResult = js.native
+  var AVSResult: typings.mangopay2NodejsSdk.mod.AVSResult
 }
 object SecurityInfoData {
   

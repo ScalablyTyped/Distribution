@@ -3,10 +3,13 @@ package typings.fileSaver
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("file-saver", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object global {
     
@@ -14,10 +17,9 @@ object mod {
     @js.native
     val saveAs: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof FileSaver.saveAs */ js.Any = js.native
     
-    @js.native
     trait Window extends StObject {
       
-      var saveAs: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FileSaver.saveAs */ js.Any = js.native
+      var saveAs: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FileSaver.saveAs */ js.Any
     }
     object Window {
       
@@ -40,24 +42,18 @@ object mod {
     }
   }
   
-  @JSImport("file-saver", "saveAs")
-  @js.native
-  def saveAs(data: String): Unit = js.native
-  @JSImport("file-saver", "saveAs")
-  @js.native
-  def saveAs(data: String, filename: js.UndefOr[scala.Nothing], disableAutoBOM: Boolean): Unit = js.native
-  @JSImport("file-saver", "saveAs")
-  @js.native
-  def saveAs(data: String, filename: js.UndefOr[scala.Nothing], options: FileSaverOptions): Unit = js.native
-  @JSImport("file-saver", "saveAs")
-  @js.native
-  def saveAs(data: String, filename: String): Unit = js.native
-  @JSImport("file-saver", "saveAs")
-  @js.native
-  def saveAs(data: String, filename: String, disableAutoBOM: Boolean): Unit = js.native
-  @JSImport("file-saver", "saveAs")
-  @js.native
-  def saveAs(data: String, filename: String, options: FileSaverOptions): Unit = js.native
+  @scala.inline
+  def saveAs(data: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def saveAs(data: String, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def saveAs(data: String, filename: String, disableAutoBOM: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], disableAutoBOM.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def saveAs(data: String, filename: String, options: FileSaverOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def saveAs(data: String, filename: Unit, disableAutoBOM: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], disableAutoBOM.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def saveAs(data: String, filename: Unit, options: FileSaverOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * FileSaver.js implements the saveAs() FileSaver interface in browsers that do not natively support it.
     * @param data - The actual file data blob or URL.
@@ -72,33 +68,26 @@ object mod {
     * @deprecated use `{ autoBom: false }` as the third argument
     */
   // tslint:disable-next-line:unified-signatures
-  @JSImport("file-saver", "saveAs")
-  @js.native
-  def saveAs(data: Blob): Unit = js.native
-  @JSImport("file-saver", "saveAs")
-  @js.native
-  def saveAs(data: Blob, filename: js.UndefOr[scala.Nothing], disableAutoBOM: Boolean): Unit = js.native
-  @JSImport("file-saver", "saveAs")
-  @js.native
-  def saveAs(data: Blob, filename: js.UndefOr[scala.Nothing], options: FileSaverOptions): Unit = js.native
-  @JSImport("file-saver", "saveAs")
-  @js.native
-  def saveAs(data: Blob, filename: String): Unit = js.native
-  @JSImport("file-saver", "saveAs")
-  @js.native
-  def saveAs(data: Blob, filename: String, disableAutoBOM: Boolean): Unit = js.native
-  @JSImport("file-saver", "saveAs")
-  @js.native
-  def saveAs(data: Blob, filename: String, options: FileSaverOptions): Unit = js.native
+  @scala.inline
+  def saveAs(data: Blob): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def saveAs(data: Blob, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def saveAs(data: Blob, filename: String, disableAutoBOM: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], disableAutoBOM.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def saveAs(data: Blob, filename: String, options: FileSaverOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def saveAs(data: Blob, filename: Unit, disableAutoBOM: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], disableAutoBOM.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def saveAs(data: Blob, filename: Unit, options: FileSaverOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait FileSaverOptions extends StObject {
     
     /**
       * Automatically provide Unicode text encoding hints
       * @default false
       */
-    var autoBom: Boolean = js.native
+    var autoBom: Boolean
   }
   object FileSaverOptions {
     

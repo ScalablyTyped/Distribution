@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotPyramid3dDataLabelsAnimationOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait PlotPyramid3dDataLabelsAnimationOptions extends StObject {
     * milliseconds. Set to `0` renders dataLabel immediately. As `undefined`
     * inherits defer time from the series.animation.defer.
     */
-  var defer: js.UndefOr[Double] = js.native
+  var defer: js.UndefOr[Double] = js.undefined
 }
 object PlotPyramid3dDataLabelsAnimationOptions {
   

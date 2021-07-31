@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tapePoolMod {
@@ -59,6 +58,10 @@ object tapePoolMod {
   /* static members */
   object TapePool {
     
+    @JSImport("@pulumi/aws/storagegateway/tapePool", "TapePool")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TapePool resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -68,55 +71,49 @@ object tapePoolMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway/tapePool", "TapePool.get")
-    @js.native
-    def get(name: String, id: Input[ID]): TapePool = js.native
-    @JSImport("@pulumi/aws/storagegateway/tapePool", "TapePool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TapePool = js.native
-    @JSImport("@pulumi/aws/storagegateway/tapePool", "TapePool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TapePoolState): TapePool = js.native
-    @JSImport("@pulumi/aws/storagegateway/tapePool", "TapePool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TapePoolState, opts: CustomResourceOptions): TapePool = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TapePool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TapePool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TapePoolState): TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TapePool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TapePoolState, opts: CustomResourceOptions): TapePool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TapePool]
     
     /**
       * Returns true if the given object is an instance of TapePool.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway/tapePool", "TapePool.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/tapePool.TapePool */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/tapePool.TapePool */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/tapePool.TapePool */ Boolean]
   }
   
-  @js.native
   trait TapePoolArgs extends StObject {
     
     /**
       * The name of the new custom tape pool.
       */
-    val poolName: Input[String] = js.native
+    val poolName: Input[String]
     
     /**
       * Tape retention lock time is set in days. Tape retention lock can be enabled for up to 100 years (36,500 days). Default value is 0.
       */
-    val retentionLockTimeInDays: js.UndefOr[Input[Double]] = js.native
+    val retentionLockTimeInDays: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Tape retention lock can be configured in two modes. When configured in governance mode, AWS accounts with specific IAM permissions are authorized to remove the tape retention lock from archived virtual tapes. When configured in compliance mode, the tape retention lock cannot be removed by any user, including the root AWS account. Possible values are `COMPLIANCE`, `GOVERNANCE`, and `NONE`. Default value is `NONE`.
       */
-    val retentionLockType: js.UndefOr[Input[String]] = js.native
+    val retentionLockType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The storage class that is associated with the new custom pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class that corresponds to the pool. Possible values are `DEEP_ARCHIVE` or `GLACIER`.
       */
-    val storageClass: Input[String] = js.native
+    val storageClass: Input[String]
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object TapePoolArgs {
     
@@ -155,38 +152,37 @@ object tapePoolMod {
     }
   }
   
-  @js.native
   trait TapePoolState extends StObject {
     
     /**
       * Volume Amazon Resource Name (ARN), e.g. `aws_storagegateway_tape_pool.example arn:aws:storagegateway:us-east-1:123456789012:tapepool/pool-12345678`.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the new custom tape pool.
       */
-    val poolName: js.UndefOr[Input[String]] = js.native
+    val poolName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Tape retention lock time is set in days. Tape retention lock can be enabled for up to 100 years (36,500 days). Default value is 0.
       */
-    val retentionLockTimeInDays: js.UndefOr[Input[Double]] = js.native
+    val retentionLockTimeInDays: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Tape retention lock can be configured in two modes. When configured in governance mode, AWS accounts with specific IAM permissions are authorized to remove the tape retention lock from archived virtual tapes. When configured in compliance mode, the tape retention lock cannot be removed by any user, including the root AWS account. Possible values are `COMPLIANCE`, `GOVERNANCE`, and `NONE`. Default value is `NONE`.
       */
-    val retentionLockType: js.UndefOr[Input[String]] = js.native
+    val retentionLockType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The storage class that is associated with the new custom pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class that corresponds to the pool. Possible values are `DEEP_ARCHIVE` or `GLACIER`.
       */
-    val storageClass: js.UndefOr[Input[String]] = js.native
+    val storageClass: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object TapePoolState {
     

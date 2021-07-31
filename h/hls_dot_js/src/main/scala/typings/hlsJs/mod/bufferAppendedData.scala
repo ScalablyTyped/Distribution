@@ -3,15 +3,13 @@ package typings.hlsJs.mod
 import typings.hlsJs.anon.Audio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait bufferAppendedData extends StObject {
   
-  var pending: Double = js.native
+  var pending: Double
   
-  var timeRanges: Audio = js.native
+  var timeRanges: Audio
 }
 object bufferAppendedData {
   

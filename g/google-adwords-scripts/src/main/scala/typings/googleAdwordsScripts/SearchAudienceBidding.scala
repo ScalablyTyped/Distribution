@@ -2,13 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchAudienceBidding extends canSetBidModifier {
+trait SearchAudienceBidding
+  extends StObject
+     with canSetBidModifier {
   
-  def clearBidModifier(): Unit = js.native
+  def clearBidModifier(): Unit
 }
 object SearchAudienceBidding {
   

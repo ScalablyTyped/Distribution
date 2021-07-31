@@ -12,7 +12,7 @@ Furigana extension for markdown-it.
 | Keywords           | markdown-it, markdown, furigana |
 | # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 256 |
+| # downloads        | 502 |
 | # stars            | 0 |
 
 ## Links

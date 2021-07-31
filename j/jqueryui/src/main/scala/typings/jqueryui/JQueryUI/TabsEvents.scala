@@ -3,21 +3,19 @@ package typings.jqueryui.JQueryUI
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabsEvents extends StObject {
   
-  var activate: js.UndefOr[TabsEvent[TabsActivationUIParams]] = js.native
+  var activate: js.UndefOr[TabsEvent[TabsActivationUIParams]] = js.undefined
   
-  var beforeActivate: js.UndefOr[TabsEvent[TabsActivationUIParams]] = js.native
+  var beforeActivate: js.UndefOr[TabsEvent[TabsActivationUIParams]] = js.undefined
   
-  var beforeLoad: js.UndefOr[TabsEvent[TabsBeforeLoadUIParams]] = js.native
+  var beforeLoad: js.UndefOr[TabsEvent[TabsBeforeLoadUIParams]] = js.undefined
   
-  var create: js.UndefOr[TabsEvent[TabsCreateOrLoadUIParams]] = js.native
+  var create: js.UndefOr[TabsEvent[TabsCreateOrLoadUIParams]] = js.undefined
   
-  var load: js.UndefOr[TabsEvent[TabsCreateOrLoadUIParams]] = js.native
+  var load: js.UndefOr[TabsEvent[TabsCreateOrLoadUIParams]] = js.undefined
 }
 object TabsEvents {
   

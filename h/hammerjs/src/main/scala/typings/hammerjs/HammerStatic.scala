@@ -7,12 +7,12 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HammerStatic
-  extends Instantiable1[(/* element */ HTMLElement) | (/* element */ SVGElement), HammerManager]
+  extends StObject
+     with Instantiable1[(/* element */ HTMLElement) | (/* element */ SVGElement), HammerManager]
      with Instantiable2[
       (/* element */ HTMLElement) | (/* element */ SVGElement), 
       /* options */ HammerOptions, 

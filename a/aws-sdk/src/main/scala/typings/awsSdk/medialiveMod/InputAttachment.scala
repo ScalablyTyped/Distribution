@@ -2,31 +2,29 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputAttachment extends StObject {
   
   /**
     * User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input.
     */
-  var AutomaticInputFailoverSettings: js.UndefOr[typings.awsSdk.medialiveMod.AutomaticInputFailoverSettings] = js.native
+  var AutomaticInputFailoverSettings: js.UndefOr[typings.awsSdk.medialiveMod.AutomaticInputFailoverSettings] = js.undefined
   
   /**
     * User-specified name for the attachment. This is required if the user wants to use this input in an input switch action.
     */
-  var InputAttachmentName: js.UndefOr[string] = js.native
+  var InputAttachmentName: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the input
     */
-  var InputId: js.UndefOr[string] = js.native
+  var InputId: js.UndefOr[string] = js.undefined
   
   /**
     * Settings of an input (caption selector, etc.)
     */
-  var InputSettings: js.UndefOr[typings.awsSdk.medialiveMod.InputSettings] = js.native
+  var InputSettings: js.UndefOr[typings.awsSdk.medialiveMod.InputSettings] = js.undefined
 }
 object InputAttachment {
   

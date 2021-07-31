@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.gitlab.baseServiceMod.BaseService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestHelperMod {
@@ -23,12 +22,10 @@ object requestHelperMod {
         /* options */ js.UndefOr[BaseRequestOptions], 
         js.Promise[DelResponse]
       ] = js.native
-    @JSImport("gitlab/dist/types/core/infrastructure/RequestHelper", "RequestHelper.del")
-    @js.native
-    def del(service: BaseService, endpoint: String): js.Promise[DelResponse] = js.native
-    @JSImport("gitlab/dist/types/core/infrastructure/RequestHelper", "RequestHelper.del")
-    @js.native
-    def del(service: BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[DelResponse] = js.native
+    @scala.inline
+    def del(service: BaseService, endpoint: String): js.Promise[DelResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DelResponse]]
+    @scala.inline
+    def del(service: BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[DelResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DelResponse]]
     @scala.inline
     def del_=(
       x: js.Function3[
@@ -47,12 +44,10 @@ object requestHelperMod {
         /* options */ js.UndefOr[PaginatedRequestOptions], 
         js.Promise[GetResponse]
       ] = js.native
-    @JSImport("gitlab/dist/types/core/infrastructure/RequestHelper", "RequestHelper.get")
-    @js.native
-    def get(service: BaseService, endpoint: String): js.Promise[GetResponse] = js.native
-    @JSImport("gitlab/dist/types/core/infrastructure/RequestHelper", "RequestHelper.get")
-    @js.native
-    def get(service: BaseService, endpoint: String, options: PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    @scala.inline
+    def get(service: BaseService, endpoint: String): js.Promise[GetResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResponse]]
+    @scala.inline
+    def get(service: BaseService, endpoint: String, options: PaginatedRequestOptions): js.Promise[GetResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResponse]]
     @scala.inline
     def get_=(
       x: js.Function3[
@@ -71,12 +66,10 @@ object requestHelperMod {
         /* options */ js.UndefOr[BaseRequestOptions], 
         js.Promise[PostResponse]
       ] = js.native
-    @JSImport("gitlab/dist/types/core/infrastructure/RequestHelper", "RequestHelper.post")
-    @js.native
-    def post(service: BaseService, endpoint: String): js.Promise[PostResponse] = js.native
-    @JSImport("gitlab/dist/types/core/infrastructure/RequestHelper", "RequestHelper.post")
-    @js.native
-    def post(service: BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[PostResponse] = js.native
+    @scala.inline
+    def post(service: BaseService, endpoint: String): js.Promise[PostResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PostResponse]]
+    @scala.inline
+    def post(service: BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[PostResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PostResponse]]
     @scala.inline
     def post_=(
       x: js.Function3[
@@ -95,12 +88,10 @@ object requestHelperMod {
         /* options */ js.UndefOr[BaseRequestOptions], 
         js.Promise[PutResponse]
       ] = js.native
-    @JSImport("gitlab/dist/types/core/infrastructure/RequestHelper", "RequestHelper.put")
-    @js.native
-    def put(service: BaseService, endpoint: String): js.Promise[PutResponse] = js.native
-    @JSImport("gitlab/dist/types/core/infrastructure/RequestHelper", "RequestHelper.put")
-    @js.native
-    def put(service: BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[PutResponse] = js.native
+    @scala.inline
+    def put(service: BaseService, endpoint: String): js.Promise[PutResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PutResponse]]
+    @scala.inline
+    def put(service: BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[PutResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PutResponse]]
     @scala.inline
     def put_=(
       x: js.Function3[
@@ -119,12 +110,10 @@ object requestHelperMod {
         /* options */ js.UndefOr[BaseRequestOptions], 
         js.Any
       ] = js.native
-    @JSImport("gitlab/dist/types/core/infrastructure/RequestHelper", "RequestHelper.stream")
-    @js.native
-    def stream(service: BaseService, endpoint: String): js.Any = js.native
-    @JSImport("gitlab/dist/types/core/infrastructure/RequestHelper", "RequestHelper.stream")
-    @js.native
-    def stream(service: BaseService, endpoint: String, options: BaseRequestOptions): js.Any = js.native
+    @scala.inline
+    def stream(service: BaseService, endpoint: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def stream(service: BaseService, endpoint: String, options: BaseRequestOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     @scala.inline
     def stream_=(
       x: js.Function3[
@@ -136,9 +125,9 @@ object requestHelperMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait BaseRequestOptions
-    extends Sudo
+    extends StObject
+       with Sudo
        with /* key */ StringDictionary[js.Any]
   object BaseRequestOptions {
     
@@ -153,16 +142,17 @@ object requestHelperMod {
   
   type GetResponse = PaginationResponse | js.Object | js.Array[js.Object]
   
-  @js.native
-  trait PaginatedRequestOptions extends BaseRequestOptions {
+  trait PaginatedRequestOptions
+    extends StObject
+       with BaseRequestOptions {
     
-    var maxPages: js.UndefOr[Double] = js.native
+    var maxPages: js.UndefOr[Double] = js.undefined
     
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
-    var perPage: js.UndefOr[Double] = js.native
+    var perPage: js.UndefOr[Double] = js.undefined
     
-    var showPagination: js.UndefOr[Boolean] = js.native
+    var showPagination: js.UndefOr[Boolean] = js.undefined
   }
   object PaginatedRequestOptions {
     
@@ -201,26 +191,25 @@ object requestHelperMod {
     }
   }
   
-  @js.native
   trait PaginationOptions extends StObject {
     
-    var current: Double = js.native
+    var current: Double
     
-    var next: Double | Null = js.native
+    var next: Double | Null
     
-    var perPage: Double = js.native
+    var perPage: Double
     
-    var previous: Double | Null = js.native
+    var previous: Double | Null
     
-    var total: Double = js.native
+    var total: Double
     
-    var totalPages: Double = js.native
+    var totalPages: Double
   }
   object PaginationOptions {
     
     @scala.inline
     def apply(current: Double, perPage: Double, total: Double, totalPages: Double): PaginationOptions = {
-      val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], perPage = perPage.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], totalPages = totalPages.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], perPage = perPage.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], totalPages = totalPages.asInstanceOf[js.Any], next = null, previous = null)
       __obj.asInstanceOf[PaginationOptions]
     }
     
@@ -253,12 +242,11 @@ object requestHelperMod {
     }
   }
   
-  @js.native
   trait PaginationResponse extends StObject {
     
-    var data: js.Array[js.Object] = js.native
+    var data: js.Array[js.Object]
     
-    var pagination: PaginationOptions = js.native
+    var pagination: PaginationOptions
   }
   object PaginationResponse {
     
@@ -286,10 +274,9 @@ object requestHelperMod {
   
   type PutResponse = js.Object
   
-  @js.native
   trait Sudo extends StObject {
     
-    var sudo: js.UndefOr[String | Double] = js.native
+    var sudo: js.UndefOr[String | Double] = js.undefined
   }
   object Sudo {
     

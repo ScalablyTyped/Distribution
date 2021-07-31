@@ -6,7 +6,6 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,18 +22,14 @@ object mod {
   	termImg('unicorn.jpg', {fallback});
   	```
   	*/
-  @JSImport("term-img", JSImport.Namespace)
-  @js.native
-  def apply[FallbackType](image: String): String | FallbackType = js.native
-  @JSImport("term-img", JSImport.Namespace)
-  @js.native
-  def apply[FallbackType](image: String, options: Options[FallbackType]): String | FallbackType = js.native
-  @JSImport("term-img", JSImport.Namespace)
-  @js.native
-  def apply[FallbackType](image: Buffer): String | FallbackType = js.native
-  @JSImport("term-img", JSImport.Namespace)
-  @js.native
-  def apply[FallbackType](image: Buffer, options: Options[FallbackType]): String | FallbackType = js.native
+  @scala.inline
+  def apply[FallbackType](image: String): String | FallbackType = ^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any]).asInstanceOf[String | FallbackType]
+  @scala.inline
+  def apply[FallbackType](image: String, options: Options[FallbackType]): String | FallbackType = (^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | FallbackType]
+  @scala.inline
+  def apply[FallbackType](image: Buffer): String | FallbackType = ^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any]).asInstanceOf[String | FallbackType]
+  @scala.inline
+  def apply[FallbackType](image: Buffer, options: Options[FallbackType]): String | FallbackType = (^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | FallbackType]
   
   @JSImport("term-img", JSImport.Namespace)
   @js.native
@@ -48,19 +43,32 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("term-img", "UnsupportedTerminalError")
   @js.native
-  class UnsupportedTerminalErrorCls () extends UnsupportedTerminalErrorClass
+  class UnsupportedTerminalErrorCls ()
+    extends StObject
+       with UnsupportedTerminalErrorClass {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    override val name_UnsupportedTerminalErrorClass: typings.termImg.termImgStrings.UnsupportedTerminalError = js.native
+  }
   
   @scala.inline
   def UnsupportedTerminalError_=(x: Instantiable0[UnsupportedTerminalErrorClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnsupportedTerminalError")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait Options[FallbackType] extends ImageOptions {
+  trait Options[FallbackType]
+    extends StObject
+       with ImageOptions {
     
     /**
     		Enables you to do something else when the terminal doesn't support images.
     		@default () => throw new UnsupportedTerminalError()
     		*/
-    val fallback: js.UndefOr[js.Function0[FallbackType]] = js.native
+    val fallback: js.UndefOr[js.Function0[FallbackType]] = js.undefined
   }
   object Options {
     
@@ -71,7 +79,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], FallbackType] (val x: Self with Options[FallbackType]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], FallbackType] (val x: Self & Options[FallbackType]) extends AnyVal {
       
       @scala.inline
       def setFallback(value: () => FallbackType): Self = StObject.set(x, "fallback", js.Any.fromFunction0(value))
@@ -81,17 +89,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait UnsupportedTerminalErrorClass extends Error {
+  trait UnsupportedTerminalErrorClass
+    extends StObject
+       with Error {
     
     @JSName("name")
-    val name_UnsupportedTerminalErrorClass: typings.termImg.termImgStrings.UnsupportedTerminalError = js.native
+    val name_UnsupportedTerminalErrorClass: typings.termImg.termImgStrings.UnsupportedTerminalError
   }
   object UnsupportedTerminalErrorClass {
     
     @scala.inline
-    def apply(message: String, name: typings.termImg.termImgStrings.UnsupportedTerminalError): UnsupportedTerminalErrorClass = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(message: String): UnsupportedTerminalErrorClass = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "UnsupportedTerminalError")
       __obj.asInstanceOf[UnsupportedTerminalErrorClass]
     }
     

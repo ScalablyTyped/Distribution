@@ -2,10 +2,8 @@ package typings.dynatable.JQueryDynatable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Features extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Features extends StObject {
     *
     * @default true
     */
-  var paginate: js.UndefOr[Boolean] = js.native
+  var paginate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable the perPageSelect feature
@@ -21,7 +19,7 @@ trait Features extends StObject {
     *
     * @default true
     */
-  var perPageSelect: js.UndefOr[Boolean] = js.native
+  var perPageSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable the pushState feature
@@ -29,7 +27,7 @@ trait Features extends StObject {
     *
     * @default true
     */
-  var pushState: js.UndefOr[Boolean] = js.native
+  var pushState: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable the recordCount feature
@@ -37,21 +35,21 @@ trait Features extends StObject {
     *
     * @default true
     */
-  var recordCount: js.UndefOr[Boolean] = js.native
+  var recordCount: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable the search feature
     *
     * @default true
     */
-  var search: js.UndefOr[Boolean] = js.native
+  var search: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable the sorting feature
     *
     * @default true
     */
-  var sort: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[Boolean] = js.undefined
 }
 object Features {
   

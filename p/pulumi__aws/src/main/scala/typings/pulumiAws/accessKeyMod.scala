@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accessKeyMod {
@@ -71,6 +70,10 @@ object accessKeyMod {
   /* static members */
   object AccessKey {
     
+    @JSImport("@pulumi/aws/iam/accessKey", "AccessKey")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AccessKey resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -80,29 +83,23 @@ object accessKeyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/accessKey", "AccessKey.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AccessKey = js.native
-    @JSImport("@pulumi/aws/iam/accessKey", "AccessKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AccessKey = js.native
-    @JSImport("@pulumi/aws/iam/accessKey", "AccessKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccessKeyState): AccessKey = js.native
-    @JSImport("@pulumi/aws/iam/accessKey", "AccessKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccessKeyState, opts: CustomResourceOptions): AccessKey = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AccessKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AccessKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AccessKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccessKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccessKeyState): AccessKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AccessKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccessKeyState, opts: CustomResourceOptions): AccessKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccessKey]
     
     /**
       * Returns true if the given object is an instance of AccessKey.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/accessKey", "AccessKey.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accessKey.AccessKey */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accessKey.AccessKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/accessKey.AccessKey */ Boolean]
   }
   
-  @js.native
   trait AccessKeyArgs extends StObject {
     
     /**
@@ -110,18 +107,18 @@ object accessKeyMod {
       * keybase username in the form `keybase:some_person_that_exists`, for use
       * in the `encryptedSecret` output attribute.
       */
-    val pgpKey: js.UndefOr[Input[String]] = js.native
+    val pgpKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The access key status to apply. Defaults to `Active`.
       * Valid values are `Active` and `Inactive`.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM user to associate with this access key.
       */
-    val user: Input[String] = js.native
+    val user: Input[String]
   }
   object AccessKeyArgs {
     
@@ -151,23 +148,22 @@ object accessKeyMod {
     }
   }
   
-  @js.native
   trait AccessKeyState extends StObject {
     
-    val encryptedSecret: js.UndefOr[Input[String]] = js.native
+    val encryptedSecret: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The fingerprint of the PGP key used to encrypt
       * the secret
       */
-    val keyFingerprint: js.UndefOr[Input[String]] = js.native
+    val keyFingerprint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Either a base-64 encoded PGP public key, or a
       * keybase username in the form `keybase:some_person_that_exists`, for use
       * in the `encryptedSecret` output attribute.
       */
-    val pgpKey: js.UndefOr[Input[String]] = js.native
+    val pgpKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The secret access key. Note that this will be written
@@ -176,7 +172,7 @@ object accessKeyMod {
       * prevent the secret from being stored in plaintext, at the cost of preventing
       * the use of the secret key in automation.
       */
-    val secret: js.UndefOr[Input[String]] = js.native
+    val secret: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The secret access key converted into an SES SMTP
@@ -184,18 +180,18 @@ object accessKeyMod {
       * algorithm](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html#smtp-credentials-convert).
       * As SigV4 is region specific, valid Provider regions are `ap-south-1`, `ap-southeast-2`, `eu-central-1`, `eu-west-1`, `us-east-1` and `us-west-2`. See current [AWS SES regions](https://docs.aws.amazon.com/general/latest/gr/rande.html#ses_region)
       */
-    val sesSmtpPasswordV4: js.UndefOr[Input[String]] = js.native
+    val sesSmtpPasswordV4: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The access key status to apply. Defaults to `Active`.
       * Valid values are `Active` and `Inactive`.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM user to associate with this access key.
       */
-    val user: js.UndefOr[Input[String]] = js.native
+    val user: js.UndefOr[Input[String]] = js.undefined
   }
   object AccessKeyState {
     

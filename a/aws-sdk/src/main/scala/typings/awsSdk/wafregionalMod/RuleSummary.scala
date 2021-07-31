@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleSummary extends StObject {
   
   /**
     * A friendly name or description of the Rule. You can't change the name of a Rule after you create it.
     */
-  var Name: ResourceName = js.native
+  var Name: ResourceName
   
   /**
     * A unique identifier for a Rule. You use RuleId to get more information about a Rule (see GetRule), update a Rule (see UpdateRule), insert a Rule into a WebACL or delete one from a WebACL (see UpdateWebACL), or delete a Rule from AWS WAF (see DeleteRule).  RuleId is returned by CreateRule and by ListRules.
     */
-  var RuleId: ResourceId = js.native
+  var RuleId: ResourceId
 }
 object RuleSummary {
   

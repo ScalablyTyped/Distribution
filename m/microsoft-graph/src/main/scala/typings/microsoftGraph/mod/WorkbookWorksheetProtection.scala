@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookWorksheetProtection extends Entity {
+trait WorkbookWorksheetProtection
+  extends StObject
+     with Entity {
   
   // Sheet protection options. Read-only.
-  var options: js.UndefOr[NullableOption[WorkbookWorksheetProtectionOptions]] = js.native
+  var options: js.UndefOr[NullableOption[WorkbookWorksheetProtectionOptions]] = js.undefined
   
   // Indicates if the worksheet is protected. Read-only.
-  var `protected`: js.UndefOr[Boolean] = js.native
+  var `protected`: js.UndefOr[Boolean] = js.undefined
 }
 object WorkbookWorksheetProtection {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcConfig extends StObject {
   
   /**
     * A list of VPC security groups IDs.
     */
-  var SecurityGroupIds: js.UndefOr[typings.awsSdk.lambdaMod.SecurityGroupIds] = js.native
+  var SecurityGroupIds: js.UndefOr[typings.awsSdk.lambdaMod.SecurityGroupIds] = js.undefined
   
   /**
     * A list of VPC subnet IDs.
     */
-  var SubnetIds: js.UndefOr[typings.awsSdk.lambdaMod.SubnetIds] = js.native
+  var SubnetIds: js.UndefOr[typings.awsSdk.lambdaMod.SubnetIds] = js.undefined
 }
 object VpcConfig {
   

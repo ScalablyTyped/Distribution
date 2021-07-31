@@ -10,9 +10,9 @@ ReactNative Windows implementation using react-native's c++ ReactCommon bridge
 | ------------------ | :-------------: |
 | Full name          | react-native-windows |
 | Keywords           | - |
-| # releases         | 894 |
-| # dependents       | 27 |
-| # downloads        | 1518506 |
+| # releases         | 966 |
+| # dependents       | 28 |
+| # downloads        | 2081221 |
 | # stars            | 3 |
 
 ## Links

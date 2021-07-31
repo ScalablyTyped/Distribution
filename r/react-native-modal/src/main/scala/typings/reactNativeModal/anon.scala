@@ -10,87 +10,85 @@ import typings.reactNativeModal.reactNativeModalStrings.absolute
 import typings.reactNativeModal.reactNativeModalStrings.center
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AnimationIn extends StObject {
     
-    var animationIn: Requireable[String | js.Object] = js.native
+    var animationIn: Requireable[String | js.Object]
     
-    var animationInTiming: Requireable[Double] = js.native
+    var animationInTiming: Requireable[Double]
     
-    var animationOut: Requireable[String | js.Object] = js.native
+    var animationOut: Requireable[String | js.Object]
     
-    var animationOutTiming: Requireable[Double] = js.native
+    var animationOutTiming: Requireable[Double]
     
-    var avoidKeyboard: Requireable[Boolean] = js.native
+    var avoidKeyboard: Requireable[Boolean]
     
-    var backdropColor: Requireable[String] = js.native
+    var backdropColor: Requireable[String]
     
-    var backdropOpacity: Requireable[Double] = js.native
+    var backdropOpacity: Requireable[Double]
     
-    var backdropTransitionInTiming: Requireable[Double] = js.native
+    var backdropTransitionInTiming: Requireable[Double]
     
-    var backdropTransitionOutTiming: Requireable[Double] = js.native
+    var backdropTransitionOutTiming: Requireable[Double]
     
-    var children: Validator[String | Double | Boolean | js.Object | ReactElementLike | ReactNodeArray] = js.native
+    var children: Validator[String | Double | Boolean | js.Object | ReactElementLike | ReactNodeArray]
     
-    var coverScreen: Requireable[Boolean] = js.native
+    var coverScreen: Requireable[Boolean]
     
-    var customBackdrop: Requireable[ReactNodeLike] = js.native
+    var customBackdrop: Requireable[ReactNodeLike]
     
-    var deviceHeight: Requireable[Double] = js.native
+    var deviceHeight: Requireable[Double]
     
-    var deviceWidth: Requireable[Double] = js.native
+    var deviceWidth: Requireable[Double]
     
-    var hasBackdrop: Requireable[Boolean] = js.native
+    var hasBackdrop: Requireable[Boolean]
     
-    var hideModalContentWhileAnimating: Requireable[Boolean] = js.native
+    var hideModalContentWhileAnimating: Requireable[Boolean]
     
-    var isVisible: Validator[Boolean] = js.native
+    var isVisible: Validator[Boolean]
     
-    var onBackButtonPress: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var onBackButtonPress: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var onBackdropPress: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var onBackdropPress: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var onModalHide: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var onModalHide: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var onModalShow: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var onModalShow: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var onModalWillHide: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var onModalWillHide: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var onModalWillShow: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var onModalWillShow: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var onSwipeCancel: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var onSwipeCancel: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var onSwipeComplete: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var onSwipeComplete: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var onSwipeMove: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var onSwipeMove: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var onSwipeStart: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var onSwipeStart: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var propagateSwipe: Requireable[Boolean] = js.native
+    var propagateSwipe: Requireable[Boolean]
     
-    var scrollHorizontal: Requireable[Boolean] = js.native
+    var scrollHorizontal: Requireable[Boolean]
     
-    var scrollOffset: Requireable[Double] = js.native
+    var scrollOffset: Requireable[Double]
     
-    var scrollOffsetMax: Requireable[Double] = js.native
+    var scrollOffsetMax: Requireable[Double]
     
-    var scrollTo: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var scrollTo: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var style: Requireable[_] = js.native
+    var style: Requireable[js.Any]
     
-    var supportedOrientations: Requireable[js.Array[js.UndefOr[String | Null]]] = js.native
+    var supportedOrientations: Requireable[js.Array[js.UndefOr[String | Null]]]
     
-    var swipeDirection: Requireable[String | (js.Array[js.UndefOr[String | Null]])] = js.native
+    var swipeDirection: Requireable[String | (js.Array[js.UndefOr[String | Null]])]
     
-    var swipeThreshold: Requireable[Double] = js.native
+    var swipeThreshold: Requireable[Double]
     
-    var useNativeDriver: Requireable[Boolean] = js.native
+    var useNativeDriver: Requireable[Boolean]
   }
   object AnimationIn {
     
@@ -113,22 +111,22 @@ object anon {
       hasBackdrop: Requireable[Boolean],
       hideModalContentWhileAnimating: Requireable[Boolean],
       isVisible: Validator[Boolean],
-      onBackButtonPress: Requireable[js.Function1[/* repeated */ _, _]],
-      onBackdropPress: Requireable[js.Function1[/* repeated */ _, _]],
-      onModalHide: Requireable[js.Function1[/* repeated */ _, _]],
-      onModalShow: Requireable[js.Function1[/* repeated */ _, _]],
-      onModalWillHide: Requireable[js.Function1[/* repeated */ _, _]],
-      onModalWillShow: Requireable[js.Function1[/* repeated */ _, _]],
-      onSwipeCancel: Requireable[js.Function1[/* repeated */ _, _]],
-      onSwipeComplete: Requireable[js.Function1[/* repeated */ _, _]],
-      onSwipeMove: Requireable[js.Function1[/* repeated */ _, _]],
-      onSwipeStart: Requireable[js.Function1[/* repeated */ _, _]],
+      onBackButtonPress: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      onBackdropPress: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      onModalHide: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      onModalShow: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      onModalWillHide: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      onModalWillShow: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      onSwipeCancel: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      onSwipeComplete: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      onSwipeMove: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      onSwipeStart: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
       propagateSwipe: Requireable[Boolean],
       scrollHorizontal: Requireable[Boolean],
       scrollOffset: Requireable[Double],
       scrollOffsetMax: Requireable[Double],
-      scrollTo: Requireable[js.Function1[/* repeated */ _, _]],
-      style: Requireable[_],
+      scrollTo: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      style: Requireable[js.Any],
       supportedOrientations: Requireable[js.Array[js.UndefOr[String | Null]]],
       swipeDirection: Requireable[String | (js.Array[js.UndefOr[String | Null]])],
       swipeThreshold: Requireable[Double],
@@ -193,34 +191,34 @@ object anon {
       def setIsVisible(value: Validator[Boolean]): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnBackButtonPress(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onBackButtonPress", value.asInstanceOf[js.Any])
+      def setOnBackButtonPress(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onBackButtonPress", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnBackdropPress(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onBackdropPress", value.asInstanceOf[js.Any])
+      def setOnBackdropPress(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onBackdropPress", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnModalHide(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onModalHide", value.asInstanceOf[js.Any])
+      def setOnModalHide(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onModalHide", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnModalShow(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onModalShow", value.asInstanceOf[js.Any])
+      def setOnModalShow(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onModalShow", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnModalWillHide(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onModalWillHide", value.asInstanceOf[js.Any])
+      def setOnModalWillHide(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onModalWillHide", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnModalWillShow(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onModalWillShow", value.asInstanceOf[js.Any])
+      def setOnModalWillShow(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onModalWillShow", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSwipeCancel(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onSwipeCancel", value.asInstanceOf[js.Any])
+      def setOnSwipeCancel(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onSwipeCancel", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSwipeComplete(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onSwipeComplete", value.asInstanceOf[js.Any])
+      def setOnSwipeComplete(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onSwipeComplete", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSwipeMove(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onSwipeMove", value.asInstanceOf[js.Any])
+      def setOnSwipeMove(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onSwipeMove", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSwipeStart(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onSwipeStart", value.asInstanceOf[js.Any])
+      def setOnSwipeStart(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onSwipeStart", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPropagateSwipe(value: Requireable[Boolean]): Self = StObject.set(x, "propagateSwipe", value.asInstanceOf[js.Any])
@@ -235,10 +233,10 @@ object anon {
       def setScrollOffsetMax(value: Requireable[Double]): Self = StObject.set(x, "scrollOffsetMax", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setScrollTo(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "scrollTo", value.asInstanceOf[js.Any])
+      def setScrollTo(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "scrollTo", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setStyle(value: Requireable[_]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      def setStyle(value: Requireable[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSupportedOrientations(value: Requireable[js.Array[js.UndefOr[String | Null]]]): Self = StObject.set(x, "supportedOrientations", value.asInstanceOf[js.Any])
@@ -254,68 +252,67 @@ object anon {
     }
   }
   
-  @js.native
   trait AnimationInTiming extends StObject {
     
-    var animationIn: String = js.native
+    var animationIn: String
     
-    var animationInTiming: Double = js.native
+    var animationInTiming: Double
     
-    var animationOut: String = js.native
+    var animationOut: String
     
-    var animationOutTiming: Double = js.native
+    var animationOutTiming: Double
     
-    var avoidKeyboard: Boolean = js.native
+    var avoidKeyboard: Boolean
     
-    var backdropColor: String = js.native
+    var backdropColor: String
     
-    var backdropOpacity: Double = js.native
+    var backdropOpacity: Double
     
-    var backdropTransitionInTiming: Double = js.native
+    var backdropTransitionInTiming: Double
     
-    var backdropTransitionOutTiming: Double = js.native
+    var backdropTransitionOutTiming: Double
     
-    var coverScreen: Boolean = js.native
+    var coverScreen: Boolean
     
-    var customBackdrop: Null = js.native
+    var customBackdrop: Null
     
-    var deviceHeight: Null = js.native
+    var deviceHeight: Null
     
-    var deviceWidth: Null = js.native
+    var deviceWidth: Null
     
-    var hasBackdrop: Boolean = js.native
+    var hasBackdrop: Boolean
     
-    var hideModalContentWhileAnimating: Boolean = js.native
+    var hideModalContentWhileAnimating: Boolean
     
-    var isVisible: Boolean = js.native
+    var isVisible: Boolean
     
-    def onBackButtonPress(): Null = js.native
+    def onBackButtonPress(): Null
     
-    def onBackdropPress(): Null = js.native
+    def onBackdropPress(): Null
     
-    def onModalHide(): Null = js.native
+    def onModalHide(): Null
     
-    def onModalShow(): Null = js.native
+    def onModalShow(): Null
     
-    def onModalWillHide(): Null = js.native
+    def onModalWillHide(): Null
     
-    def onModalWillShow(): Null = js.native
+    def onModalWillShow(): Null
     
-    var propagateSwipe: Boolean = js.native
+    var propagateSwipe: Boolean
     
-    var scrollHorizontal: Boolean = js.native
+    var scrollHorizontal: Boolean
     
-    var scrollOffset: Double = js.native
+    var scrollOffset: Double
     
-    var scrollOffsetMax: Double = js.native
+    var scrollOffsetMax: Double
     
-    var scrollTo: Null = js.native
+    var scrollTo: Null
     
-    var supportedOrientations: js.Array[String] = js.native
+    var supportedOrientations: js.Array[String]
     
-    var swipeThreshold: Double = js.native
+    var swipeThreshold: Double
     
-    var useNativeDriver: Boolean = js.native
+    var useNativeDriver: Boolean
   }
   object AnimationInTiming {
     
@@ -454,12 +451,11 @@ object anon {
     }
   }
   
-  @js.native
   trait AnimationOut extends StObject {
     
-    var animationIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any = js.native
+    var animationIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any
     
-    var animationOut: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any = js.native
+    var animationOut: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any
   }
   object AnimationOut {
     
@@ -483,36 +479,27 @@ object anon {
     }
   }
   
-  @js.native
   trait BackgroundColor extends StObject {
     
-    var backgroundColor: String = js.native
+    var backgroundColor: String
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var opacity: Double = js.native
+    var opacity: Double
     
-    var position: absolute = js.native
+    var position: absolute
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object BackgroundColor {
     
     @scala.inline
-    def apply(
-      backgroundColor: String,
-      bottom: Double,
-      left: Double,
-      opacity: Double,
-      position: absolute,
-      right: Double,
-      top: Double
-    ): BackgroundColor = {
-      val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+    def apply(backgroundColor: String, bottom: Double, left: Double, opacity: Double, right: Double, top: Double): BackgroundColor = {
+      val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], position = "absolute", right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[BackgroundColor]
     }
     
@@ -542,18 +529,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Flex extends StObject {
     
-    var flex: Double = js.native
+    var flex: Double
     
-    var justifyContent: center = js.native
+    var justifyContent: center
   }
   object Flex {
     
     @scala.inline
-    def apply(flex: Double, justifyContent: center): Flex = {
-      val __obj = js.Dynamic.literal(flex = flex.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any])
+    def apply(flex: Double): Flex = {
+      val __obj = js.Dynamic.literal(flex = flex.asInstanceOf[js.Any], justifyContent = "center")
       __obj.asInstanceOf[Flex]
     }
     
@@ -568,12 +554,11 @@ object anon {
     }
   }
   
-  @js.native
   trait From extends StObject {
     
-    var from: StringDictionary[Double] = js.native
+    var from: StringDictionary[Double]
     
-    var to: StringDictionary[Double] = js.native
+    var to: StringDictionary[Double]
   }
   object From {
     
@@ -594,12 +579,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IsVisible extends StObject {
     
-    var isVisible: Boolean = js.native
+    var isVisible: Boolean
     
-    var showContent: Boolean = js.native
+    var showContent: Boolean
   }
   object IsVisible {
     
@@ -620,14 +604,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Opacity extends StObject {
     
-    var backgroundColor: String = js.native
+    var backgroundColor: String
     
-    var opacity: Double = js.native
+    var opacity: Double
     
-    var zIndex: Double = js.native
+    var zIndex: Double
   }
   object Opacity {
     

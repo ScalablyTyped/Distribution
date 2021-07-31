@@ -36,11 +36,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.WordArtVertical
 import typings.officeJsPreview.officeJsPreviewStrings.WordArtVerticalRTL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`. */
-@js.native
 trait TextFrameUpdateData extends StObject {
   
   /**
@@ -51,7 +49,7 @@ trait TextFrameUpdateData extends StObject {
     */
   var autoSizeSetting: js.UndefOr[
     ShapeAutoSize | AutoSizeNone | AutoSizeTextToFitShape | AutoSizeShapeToFitText | AutoSizeMixed
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -59,7 +57,7 @@ trait TextFrameUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var bottomMargin: js.UndefOr[Double] = js.native
+  var bottomMargin: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -69,7 +67,7 @@ trait TextFrameUpdateData extends StObject {
     */
   var horizontalAlignment: js.UndefOr[
     ShapeTextHorizontalAlignment | Left | Center | Right | Justify | JustifyLow | Distributed | ThaiDistributed
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -77,7 +75,7 @@ trait TextFrameUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var horizontalOverflow: js.UndefOr[ShapeTextHorizontalOverflow | Overflow | Clip] = js.native
+  var horizontalOverflow: js.UndefOr[ShapeTextHorizontalOverflow | Overflow | Clip] = js.undefined
   
   /**
     *
@@ -85,7 +83,7 @@ trait TextFrameUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var leftMargin: js.UndefOr[Double] = js.native
+  var leftMargin: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -95,7 +93,7 @@ trait TextFrameUpdateData extends StObject {
     */
   var orientation: js.UndefOr[
     ShapeTextOrientation | Horizontal | Vertical | Vertical270 | WordArtVertical | EastAsianVertical | MongolianVertical | WordArtVerticalRTL
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -103,7 +101,7 @@ trait TextFrameUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var readingOrder: js.UndefOr[ShapeTextReadingOrder | LeftToRight | RightToLeft] = js.native
+  var readingOrder: js.UndefOr[ShapeTextReadingOrder | LeftToRight | RightToLeft] = js.undefined
   
   /**
     *
@@ -111,7 +109,7 @@ trait TextFrameUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rightMargin: js.UndefOr[Double] = js.native
+  var rightMargin: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -119,7 +117,7 @@ trait TextFrameUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var topMargin: js.UndefOr[Double] = js.native
+  var topMargin: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -127,7 +125,7 @@ trait TextFrameUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var verticalAlignment: js.UndefOr[ShapeTextVerticalAlignment | Top | Middle | Bottom | Justified | Distributed] = js.native
+  var verticalAlignment: js.UndefOr[ShapeTextVerticalAlignment | Top | Middle | Bottom | Justified | Distributed] = js.undefined
   
   /**
     *
@@ -135,7 +133,7 @@ trait TextFrameUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var verticalOverflow: js.UndefOr[ShapeTextVerticalOverflow | Overflow | Ellipsis | Clip] = js.native
+  var verticalOverflow: js.UndefOr[ShapeTextVerticalOverflow | Overflow | Ellipsis | Clip] = js.undefined
 }
 object TextFrameUpdateData {
   

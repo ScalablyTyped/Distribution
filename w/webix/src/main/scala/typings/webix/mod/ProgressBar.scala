@@ -1,8 +1,8 @@
 package typings.webix.mod
 
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,4 +12,9 @@ trait ProgressBar extends StObject {
   
   def showProgress(): Unit = js.native
   def showProgress(config: js.Any): Unit = js.native
+}
+object ProgressBar {
+  
+  @scala.inline
+  def apply: ProgressBar = ^.asInstanceOf[js.Dynamic].selectDynamic("ProgressBar").asInstanceOf[ProgressBar]
 }

@@ -10,9 +10,9 @@ Allows peeking/pushing an iterable
 | ------------------ | :-------------: |
 | Full name          | it-peekable |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 21810 |
+| # releases         | 4 |
+| # dependents       | 2 |
+| # downloads        | 272713 |
 | # stars            | 0 |
 
 ## Links

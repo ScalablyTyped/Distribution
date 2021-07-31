@@ -3,27 +3,25 @@ package typings.sweetalert
 import typings.sweetalert.stateMod.SwalState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionsMod {
   
-  @JSImport("sweetalert/typings/modules/actions", "getState")
+  @JSImport("sweetalert/typings/modules/actions", JSImport.Namespace)
   @js.native
-  def getState(): SwalState = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sweetalert/typings/modules/actions", "onAction")
-  @js.native
-  def onAction(): Unit = js.native
-  @JSImport("sweetalert/typings/modules/actions", "onAction")
-  @js.native
-  def onAction(namespace: String): Unit = js.native
+  @scala.inline
+  def getState(): SwalState = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")().asInstanceOf[SwalState]
   
-  @JSImport("sweetalert/typings/modules/actions", "openModal")
-  @js.native
-  def openModal(): Unit = js.native
+  @scala.inline
+  def onAction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAction")().asInstanceOf[Unit]
+  @scala.inline
+  def onAction(namespace: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAction")(namespace.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("sweetalert/typings/modules/actions", "stopLoading")
-  @js.native
-  def stopLoading(): Unit = js.native
+  @scala.inline
+  def openModal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openModal")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def stopLoading(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopLoading")().asInstanceOf[Unit]
 }

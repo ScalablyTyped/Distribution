@@ -2,7 +2,6 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Class_TcpServer")
 @js.native
 class ClassTcpServer protected ()
-  extends typings.fibjs.ClassTcpServer {
+  extends StObject
+     with typings.fibjs.ClassTcpServer {
   /**
     * 
     * @brief TcpServer 构造函数，在所有本机地址侦听

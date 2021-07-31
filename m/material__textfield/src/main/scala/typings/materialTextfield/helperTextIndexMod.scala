@@ -4,7 +4,6 @@ import typings.materialTextfield.anon.PartialMDCTextFieldHelper
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helperTextIndexMod {
@@ -13,7 +12,7 @@ object helperTextIndexMod {
   @js.native
   class MDCTextFieldHelperText protected ()
     extends typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTextfield.helperTextFoundationMod.MDCTextFieldHelperTextFoundation,
@@ -23,9 +22,12 @@ object helperTextIndexMod {
   /* static members */
   object MDCTextFieldHelperText {
     
-    @JSImport("@material/textfield/helper-text/index", "MDCTextFieldHelperText.attachTo")
+    @JSImport("@material/textfield/helper-text/index", "MDCTextFieldHelperText")
     @js.native
-    def attachTo(root: Element): typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText]
   }
   
   @JSImport("@material/textfield/helper-text/index", "MDCTextFieldHelperTextFoundation")

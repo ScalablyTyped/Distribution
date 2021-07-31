@@ -9,7 +9,6 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object avatarMod extends Shortcut {
@@ -23,7 +22,9 @@ object avatarMod extends Shortcut {
   val Group: FC[GroupProps] = js.native
   
   @js.native
-  trait CompoundedComponent extends ForwardRefExoticComponent[AvatarProps with RefAttributes[HTMLElement]] {
+  trait CompoundedComponent
+    extends StObject
+       with ForwardRefExoticComponent[AvatarProps & RefAttributes[HTMLElement]] {
     
     var Group: FC[GroupProps] = js.native
   }

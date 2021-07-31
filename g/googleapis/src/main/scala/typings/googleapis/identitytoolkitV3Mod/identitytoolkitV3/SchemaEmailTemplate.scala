@@ -2,44 +2,42 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Template for an email template.
   */
-@js.native
 trait SchemaEmailTemplate extends StObject {
   
   /**
     * Email body.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * Email body format.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * From address of the email.
     */
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
   /**
     * From display name.
     */
-  var fromDisplayName: js.UndefOr[String] = js.native
+  var fromDisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * Reply-to address.
     */
-  var replyTo: js.UndefOr[String] = js.native
+  var replyTo: js.UndefOr[String] = js.undefined
   
   /**
     * Subject of the email.
     */
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
 }
 object SchemaEmailTemplate {
   

@@ -4,21 +4,19 @@ import typings.sdpTransform.sdpTransformStrings.excl
 import typings.sdpTransform.sdpTransformStrings.incl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddressTypes extends StObject {
   
-  var addressTypes: String = js.native
+  var addressTypes: String
   
-  var destAddress: String = js.native
+  var destAddress: String
   
-  var filterMode: excl | incl = js.native
+  var filterMode: excl | incl
   
-  var netType: String = js.native
+  var netType: String
   
-  var srcList: String = js.native
+  var srcList: String
 }
 object AddressTypes {
   

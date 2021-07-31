@@ -4,25 +4,23 @@ import typings.googlemaps.google.maps.LatLngBounds
 import typings.googlemaps.google.maps.LatLngBoundsLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutocompleteOptions extends StObject {
   
-  var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.native
+  var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.undefined
   
-  var componentRestrictions: js.UndefOr[ComponentRestrictions] = js.native
+  var componentRestrictions: js.UndefOr[ComponentRestrictions] = js.undefined
   
-  var fields: js.UndefOr[js.Array[String]] = js.native
+  var fields: js.UndefOr[js.Array[String]] = js.undefined
   
-  var placeIdOnly: js.UndefOr[Boolean] = js.native
+  var placeIdOnly: js.UndefOr[Boolean] = js.undefined
   
-  var strictBounds: js.UndefOr[Boolean] = js.native
+  var strictBounds: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var types: js.UndefOr[js.Array[String]] = js.native
+  var types: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AutocompleteOptions {
   

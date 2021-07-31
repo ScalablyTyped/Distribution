@@ -2,55 +2,53 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReservationsRequest extends StObject {
   
   /**
     * Filter by channel class, 'STANDARD' or 'SINGLE_PIPELINE'
     */
-  var ChannelClass: js.UndefOr[string] = js.native
+  var ChannelClass: js.UndefOr[string] = js.undefined
   
   /**
     * Filter by codec, 'AVC', 'HEVC', 'MPEG2', 'AUDIO', or 'LINK'
     */
-  var Codec: js.UndefOr[string] = js.native
+  var Codec: js.UndefOr[string] = js.undefined
   
-  var MaxResults: js.UndefOr[typings.awsSdk.medialiveMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.medialiveMod.MaxResults] = js.undefined
   
   /**
     * Filter by bitrate, 'MAX_10_MBPS', 'MAX_20_MBPS', or 'MAX_50_MBPS'
     */
-  var MaximumBitrate: js.UndefOr[string] = js.native
+  var MaximumBitrate: js.UndefOr[string] = js.undefined
   
   /**
     * Filter by framerate, 'MAX_30_FPS' or 'MAX_60_FPS'
     */
-  var MaximumFramerate: js.UndefOr[string] = js.native
+  var MaximumFramerate: js.UndefOr[string] = js.undefined
   
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * Filter by resolution, 'SD', 'HD', 'FHD', or 'UHD'
     */
-  var Resolution: js.UndefOr[string] = js.native
+  var Resolution: js.UndefOr[string] = js.undefined
   
   /**
     * Filter by resource type, 'INPUT', 'OUTPUT', 'MULTIPLEX', or 'CHANNEL'
     */
-  var ResourceType: js.UndefOr[string] = js.native
+  var ResourceType: js.UndefOr[string] = js.undefined
   
   /**
     * Filter by special feature, 'ADVANCED_AUDIO' or 'AUDIO_NORMALIZATION'
     */
-  var SpecialFeature: js.UndefOr[string] = js.native
+  var SpecialFeature: js.UndefOr[string] = js.undefined
   
   /**
     * Filter by video quality, 'STANDARD', 'ENHANCED', or 'PREMIUM'
     */
-  var VideoQuality: js.UndefOr[string] = js.native
+  var VideoQuality: js.UndefOr[string] = js.undefined
 }
 object ListReservationsRequest {
   

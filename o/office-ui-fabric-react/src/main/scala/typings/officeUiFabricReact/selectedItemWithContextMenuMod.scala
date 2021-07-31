@@ -9,7 +9,6 @@ import typings.std.HTMLDivElement
 import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectedItemWithContextMenuMod {
@@ -27,10 +26,9 @@ object selectedItemWithContextMenuMod {
     var itemElement: RefObject[HTMLDivElement] = js.native
   }
   
-  @js.native
   trait IPeoplePickerItemState extends StObject {
     
-    var contextualMenuVisible: Boolean = js.native
+    var contextualMenuVisible: Boolean
   }
   object IPeoplePickerItemState {
     
@@ -48,17 +46,17 @@ object selectedItemWithContextMenuMod {
     }
   }
   
-  @js.native
   trait ISelectedItemWithContextMenuProps
-    extends IBaseProps[js.Any] {
+    extends StObject
+       with IBaseProps[js.Any] {
     
-    var beginEditing: js.UndefOr[js.Function1[/* item */ IExtendedPersonaProps, Unit]] = js.native
+    var beginEditing: js.UndefOr[js.Function1[/* item */ IExtendedPersonaProps, Unit]] = js.undefined
     
-    var item: IExtendedPersonaProps = js.native
+    var item: IExtendedPersonaProps
     
-    var menuItems: js.Array[IContextualMenuItem] = js.native
+    var menuItems: js.Array[IContextualMenuItem]
     
-    var renderedItem: Element = js.native
+    var renderedItem: Element
   }
   object ISelectedItemWithContextMenuProps {
     

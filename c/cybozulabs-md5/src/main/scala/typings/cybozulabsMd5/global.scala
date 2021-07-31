@@ -2,7 +2,6 @@ package typings.cybozulabsMd5
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -33,12 +32,10 @@ object global {
       @scala.inline
       def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
       
-      @JSGlobal("CybozuLabs.MD5.calc")
-      @js.native
-      def calc(str: String): String = js.native
-      @JSGlobal("CybozuLabs.MD5.calc")
-      @js.native
-      def calc(str: String, option: Double): String = js.native
+      @scala.inline
+      def calc(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("calc")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+      @scala.inline
+      def calc(str: String, option: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calc")(str.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[String]
     }
   }
 }

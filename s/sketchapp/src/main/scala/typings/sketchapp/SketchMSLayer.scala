@@ -2,56 +2,54 @@ package typings.sketchapp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSLayer extends StObject {
   
-  var _class: String = js.native
+  var _class: String
   
-  var booleanOperation: SketchMSLayerBooleanOperation = js.native
+  var booleanOperation: SketchMSLayerBooleanOperation
   
-  var clippingMaskMode: SketchMSLayerClippingMaskMode = js.native
+  var clippingMaskMode: SketchMSLayerClippingMaskMode
   
   // xLayers custom property
-  var css: js.UndefOr[String] = js.native
+  var css: js.UndefOr[String] = js.undefined
   
-  var do_objectID: String = js.native
+  var do_objectID: String
   
-  var exportOptions: SketchMSLayerExportOptions = js.native
+  var exportOptions: SketchMSLayerExportOptions
   
-  var frame: SketchMSLayerFrame = js.native
+  var frame: SketchMSLayerFrame
   
-  var hasClippingMask: Boolean = js.native
+  var hasClippingMask: Boolean
   
-  var isFixedToViewport: Boolean = js.native
+  var isFixedToViewport: Boolean
   
-  var isFlippedHorizontal: Boolean = js.native
+  var isFlippedHorizontal: Boolean
   
-  var isFlippedVertical: Boolean = js.native
+  var isFlippedVertical: Boolean
   
-  var isLocked: Boolean = js.native
+  var isLocked: Boolean
   
-  var isVisible: Boolean = js.native
+  var isVisible: Boolean
   
-  var layerListExpandedType: Double = js.native
+  var layerListExpandedType: Double
   
-  var layers: js.UndefOr[js.Array[SketchMSLayer]] = js.native
+  var layers: js.UndefOr[js.Array[SketchMSLayer]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var nameIsFixed: Boolean = js.native
+  var nameIsFixed: Boolean
   
-  var resizingConstraint: Double = js.native
+  var resizingConstraint: Double
   
-  var resizingType: SketchMSLayerResizingType = js.native
+  var resizingType: SketchMSLayerResizingType
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var shouldBreakMaskChain: Boolean = js.native
+  var shouldBreakMaskChain: Boolean
   
-  var style: SketchMSStyle = js.native
+  var style: SketchMSStyle
 }
 object SketchMSLayer {
   

@@ -2,15 +2,15 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DefaultLoginOptions extends LoginOptions {
+trait DefaultLoginOptions
+  extends StObject
+     with LoginOptions {
   
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
-  var realm: String = js.native
+  var realm: String
 }
 object DefaultLoginOptions {
   

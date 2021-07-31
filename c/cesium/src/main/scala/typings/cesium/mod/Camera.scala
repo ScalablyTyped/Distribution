@@ -5,7 +5,6 @@ import typings.cesium.anon.Complete
 import typings.cesium.anon.Convert
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Camera")
@@ -24,10 +23,10 @@ class Camera protected () extends StObject {
   
   def cancelFlight(): Unit = js.native
   
-  val changed: Event[js.Array[_]] = js.native
+  val changed: Event[js.Array[js.Any]] = js.native
   
   def computeViewRectangle(): js.UndefOr[Rectangle] = js.native
-  def computeViewRectangle(ellipsoid: js.UndefOr[scala.Nothing], result: Rectangle): js.UndefOr[Rectangle] = js.native
+  def computeViewRectangle(ellipsoid: Unit, result: Rectangle): js.UndefOr[Rectangle] = js.native
   def computeViewRectangle(ellipsoid: Ellipsoid): js.UndefOr[Rectangle] = js.native
   def computeViewRectangle(ellipsoid: Ellipsoid, result: Rectangle): js.UndefOr[Rectangle] = js.native
   
@@ -107,7 +106,7 @@ class Camera protected () extends StObject {
   def moveDown(): Unit = js.native
   def moveDown(amount: Double): Unit = js.native
   
-  val moveEnd: Event[js.Array[_]] = js.native
+  val moveEnd: Event[js.Array[js.Any]] = js.native
   
   def moveForward(): Unit = js.native
   def moveForward(amount: Double): Unit = js.native
@@ -118,7 +117,7 @@ class Camera protected () extends StObject {
   def moveRight(): Unit = js.native
   def moveRight(amount: Double): Unit = js.native
   
-  val moveStart: Event[js.Array[_]] = js.native
+  val moveStart: Event[js.Array[js.Any]] = js.native
   
   def moveUp(): Unit = js.native
   def moveUp(amount: Double): Unit = js.native
@@ -126,7 +125,7 @@ class Camera protected () extends StObject {
   var percentageChanged: Double = js.native
   
   def pickEllipsoid(windowPosition: Cartesian2): Cartesian3 = js.native
-  def pickEllipsoid(windowPosition: Cartesian2, ellipsoid: js.UndefOr[scala.Nothing], result: Cartesian3): Cartesian3 = js.native
+  def pickEllipsoid(windowPosition: Cartesian2, ellipsoid: Unit, result: Cartesian3): Cartesian3 = js.native
   def pickEllipsoid(windowPosition: Cartesian2, ellipsoid: Ellipsoid): Cartesian3 = js.native
   def pickEllipsoid(windowPosition: Cartesian2, ellipsoid: Ellipsoid, result: Cartesian3): Cartesian3 = js.native
   

@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IQVersion extends StObject {
   
-  var qComponentVersion: String = js.native
+  var qComponentVersion: String
 }
 object IQVersion {
   

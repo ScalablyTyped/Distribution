@@ -3,25 +3,24 @@ package typings.ecmarkdown.nodeTypesMod
 import typings.ecmarkdown.ecmarkdownStrings.comment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentNode
-  extends FragmentNode
+  extends StObject
+     with FragmentNode
      with Node {
   
-  var contents: String = js.native
+  var contents: String
   
-  var location: LocationRange = js.native
+  var location: LocationRange
   
-  var name: comment = js.native
+  var name: comment
 }
 object CommentNode {
   
   @scala.inline
-  def apply(contents: String, location: LocationRange, name: comment): CommentNode = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(contents: String, location: LocationRange): CommentNode = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "comment")
     __obj.asInstanceOf[CommentNode]
   }
   

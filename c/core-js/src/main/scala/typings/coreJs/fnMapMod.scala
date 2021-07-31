@@ -5,7 +5,6 @@ import typings.std.Iterable
 import typings.std.MapConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fnMapMod extends Shortcut {
@@ -14,16 +13,17 @@ object fnMapMod extends Shortcut {
   @JSImport("core-js/fn/map", JSImport.Namespace)
   @js.native
   class ^[K, V] ()
-    extends typings.std.Map[K, V] {
+    extends StObject
+       with typings.std.Map[K, V] {
     def this(entries: js.Array[js.Tuple2[K, V]]) = this()
     def this(iterable: Iterable[js.Tuple2[K, V]]) = this()
   }
   @JSImport("core-js/fn/map", JSImport.Namespace)
   @js.native
-  val ^ : MapConstructor = js.native
+  val ^ : js.Object & MapConstructor = js.native
   
-  type _To = MapConstructor
+  type _To = js.Object & MapConstructor
   
   /* This means you don't have to write `^`, but can instead just say `fnMapMod.foo` */
-  override def _to: MapConstructor = ^
+  override def _to: js.Object & MapConstructor = ^
 }

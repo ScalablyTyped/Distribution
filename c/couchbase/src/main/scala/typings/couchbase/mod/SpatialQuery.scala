@@ -3,7 +3,6 @@ package typings.couchbase.mod
 import typings.couchbase.mod.SpatialQuery.Update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -52,6 +51,10 @@ class SpatialQuery () extends StObject {
 }
 object SpatialQuery {
   
+  @JSImport("couchbase", "SpatialQuery")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait Update extends StObject
   /**
@@ -62,28 +65,34 @@ object SpatialQuery {
   object Update extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Update with Double] = js.native
+    def apply(value: Double): js.UndefOr[Update & Double] = js.native
     
     /**
       *     Forces the view to be indexed after the results of this query has been fetched.
       */
     @js.native
-    sealed trait AFTER extends Update
-    /* 2 */ val AFTER: typings.couchbase.mod.SpatialQuery.Update.AFTER with Double = js.native
+    sealed trait AFTER
+      extends StObject
+         with Update
+    /* 2 */ val AFTER: typings.couchbase.mod.SpatialQuery.Update.AFTER & Double = js.native
     
     /**
       * Causes the view to be fully indexed before results are retrieved.
       */
     @js.native
-    sealed trait BEFORE extends Update
-    /* 0 */ val BEFORE: typings.couchbase.mod.SpatialQuery.Update.BEFORE with Double = js.native
+    sealed trait BEFORE
+      extends StObject
+         with Update
+    /* 0 */ val BEFORE: typings.couchbase.mod.SpatialQuery.Update.BEFORE & Double = js.native
     
     /**
       * Allows the index to stay in whatever state it is already in prior retrieval of the query results.
       */
     @js.native
-    sealed trait NONE extends Update
-    /* 1 */ val NONE: typings.couchbase.mod.SpatialQuery.Update.NONE with Double = js.native
+    sealed trait NONE
+      extends StObject
+         with Update
+    /* 1 */ val NONE: typings.couchbase.mod.SpatialQuery.Update.NONE & Double = js.native
   }
   
   /**
@@ -92,7 +101,6 @@ object SpatialQuery {
     * @param name     The view to use.
     */
   /* static member */
-  @JSImport("couchbase", "SpatialQuery.from")
-  @js.native
-  def from(ddoc: String, name: String): SpatialQuery = js.native
+  @scala.inline
+  def from(ddoc: String, name: String): SpatialQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(ddoc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[SpatialQuery]
 }

@@ -2,13 +2,13 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CallActivity extends Activity {
+trait CallActivity
+  extends StObject
+     with Activity {
   
-  var calledElement: String = js.native
+  var calledElement: String
 }
 object CallActivity {
   

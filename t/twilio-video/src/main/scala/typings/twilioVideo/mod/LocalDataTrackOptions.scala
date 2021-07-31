@@ -2,17 +2,15 @@ package typings.twilioVideo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalDataTrackOptions extends StObject {
   
-  var maxPacketLifeTime: js.UndefOr[Double | Null] = js.native
+  var maxPacketLifeTime: js.UndefOr[Double | Null] = js.undefined
   
-  var maxRetransmits: js.UndefOr[Double | Null] = js.native
+  var maxRetransmits: js.UndefOr[Double | Null] = js.undefined
   
-  var ordered: js.UndefOr[Boolean] = js.native
+  var ordered: js.UndefOr[Boolean] = js.undefined
 }
 object LocalDataTrackOptions {
   

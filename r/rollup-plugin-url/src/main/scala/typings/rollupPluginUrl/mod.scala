@@ -3,36 +3,36 @@ package typings.rollupPluginUrl
 import typings.rollup.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rollup-plugin-url", JSImport.Default)
+  @JSImport("rollup-plugin-url", JSImport.Namespace)
   @js.native
-  def default(): Plugin = js.native
-  @JSImport("rollup-plugin-url", JSImport.Default)
-  @js.native
-  def default(options: PluginURLOptions): Plugin = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
+  @scala.inline
+  def default(options: PluginURLOptions): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  
   trait PluginURLOptions extends StObject {
     
-    var destDist: js.UndefOr[String] = js.native
+    var destDist: js.UndefOr[String] = js.undefined
     
-    var emitFile: js.UndefOr[Boolean] = js.native
+    var emitFile: js.UndefOr[Boolean] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var include: js.UndefOr[js.Array[String]] = js.native
+    var include: js.UndefOr[js.Array[String]] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var publicPath: js.UndefOr[String] = js.native
+    var publicPath: js.UndefOr[String] = js.undefined
     
-    var sourceDir: js.UndefOr[String] = js.native
+    var sourceDir: js.UndefOr[String] = js.undefined
   }
   object PluginURLOptions {
     

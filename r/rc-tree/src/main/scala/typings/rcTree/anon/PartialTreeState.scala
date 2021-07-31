@@ -7,46 +7,44 @@ import typings.rcTree.treeMod.TreeProps
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<rc-tree.rc-tree/es/Tree.TreeState> */
-@js.native
 trait PartialTreeState extends StObject {
   
-  var activeKey: js.UndefOr[typings.rcTree.interfaceMod.Key] = js.native
+  var activeKey: js.UndefOr[typings.rcTree.interfaceMod.Key] = js.undefined
   
-  var checkedKeys: js.UndefOr[js.Array[typings.rcTree.interfaceMod.Key]] = js.native
+  var checkedKeys: js.UndefOr[js.Array[typings.rcTree.interfaceMod.Key]] = js.undefined
   
-  var dragNodesKeys: js.UndefOr[js.Array[typings.rcTree.interfaceMod.Key]] = js.native
+  var dragNodesKeys: js.UndefOr[js.Array[typings.rcTree.interfaceMod.Key]] = js.undefined
   
-  var dragOverNodeKey: js.UndefOr[typings.rcTree.interfaceMod.Key] = js.native
+  var dragOverNodeKey: js.UndefOr[typings.rcTree.interfaceMod.Key] = js.undefined
   
-  var dragging: js.UndefOr[Boolean] = js.native
+  var dragging: js.UndefOr[Boolean] = js.undefined
   
-  var dropPosition: js.UndefOr[Double] = js.native
+  var dropPosition: js.UndefOr[Double] = js.undefined
   
-  var expandedKeys: js.UndefOr[js.Array[typings.rcTree.interfaceMod.Key]] = js.native
+  var expandedKeys: js.UndefOr[js.Array[typings.rcTree.interfaceMod.Key]] = js.undefined
   
-  var flattenNodes: js.UndefOr[js.Array[FlattenNode]] = js.native
+  var flattenNodes: js.UndefOr[js.Array[FlattenNode]] = js.undefined
   
-  var focused: js.UndefOr[Boolean] = js.native
+  var focused: js.UndefOr[Boolean] = js.undefined
   
-  var halfCheckedKeys: js.UndefOr[js.Array[typings.rcTree.interfaceMod.Key]] = js.native
+  var halfCheckedKeys: js.UndefOr[js.Array[typings.rcTree.interfaceMod.Key]] = js.undefined
   
-  var keyEntities: js.UndefOr[Record[typings.rcTree.interfaceMod.Key, DataEntity]] = js.native
+  var keyEntities: js.UndefOr[Record[typings.rcTree.interfaceMod.Key, DataEntity]] = js.undefined
   
-  var listChanging: js.UndefOr[Boolean] = js.native
+  var listChanging: js.UndefOr[Boolean] = js.undefined
   
-  var loadedKeys: js.UndefOr[js.Array[typings.rcTree.interfaceMod.Key]] = js.native
+  var loadedKeys: js.UndefOr[js.Array[typings.rcTree.interfaceMod.Key]] = js.undefined
   
-  var loadingKeys: js.UndefOr[js.Array[typings.rcTree.interfaceMod.Key]] = js.native
+  var loadingKeys: js.UndefOr[js.Array[typings.rcTree.interfaceMod.Key]] = js.undefined
   
-  var prevProps: js.UndefOr[TreeProps] = js.native
+  var prevProps: js.UndefOr[TreeProps] = js.undefined
   
-  var selectedKeys: js.UndefOr[js.Array[typings.rcTree.interfaceMod.Key]] = js.native
+  var selectedKeys: js.UndefOr[js.Array[typings.rcTree.interfaceMod.Key]] = js.undefined
   
-  var treeData: js.UndefOr[js.Array[DataNode]] = js.native
+  var treeData: js.UndefOr[js.Array[DataNode]] = js.undefined
 }
 object PartialTreeState {
   

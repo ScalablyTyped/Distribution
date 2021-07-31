@@ -6,58 +6,56 @@ import typings.table.tableStrings.left
 import typings.table.tableStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("table", "createStream")
+  @JSImport("table", JSImport.Namespace)
   @js.native
-  def createStream(userConfig: TableUserConfig): TableStream = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("table", "getBorderCharacters")
-  @js.native
-  def getBorderCharacters(templateName: TableBorderTemplate): TableBorder = js.native
+  @scala.inline
+  def createStream(userConfig: TableUserConfig): TableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(userConfig.asInstanceOf[js.Any]).asInstanceOf[TableStream]
   
-  @JSImport("table", "table")
-  @js.native
-  def table(data: js.Array[_]): String = js.native
-  @JSImport("table", "table")
-  @js.native
-  def table(data: js.Array[_], userConfig: TableUserConfig): String = js.native
+  @scala.inline
+  def getBorderCharacters(templateName: TableBorderTemplate): TableBorder = ^.asInstanceOf[js.Dynamic].applyDynamic("getBorderCharacters")(templateName.asInstanceOf[js.Any]).asInstanceOf[TableBorder]
   
-  @js.native
+  @scala.inline
+  def table(data: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("table")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def table(data: js.Array[js.Any], userConfig: TableUserConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("table")(data.asInstanceOf[js.Any], userConfig.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait TableBorder extends StObject {
     
-    var bodyJoin: js.UndefOr[String] = js.native
+    var bodyJoin: js.UndefOr[String] = js.undefined
     
-    var bodyLeft: js.UndefOr[String] = js.native
+    var bodyLeft: js.UndefOr[String] = js.undefined
     
-    var bodyRight: js.UndefOr[String] = js.native
+    var bodyRight: js.UndefOr[String] = js.undefined
     
-    var bottomBody: js.UndefOr[String] = js.native
+    var bottomBody: js.UndefOr[String] = js.undefined
     
-    var bottomJoin: js.UndefOr[String] = js.native
+    var bottomJoin: js.UndefOr[String] = js.undefined
     
-    var bottomLeft: js.UndefOr[String] = js.native
+    var bottomLeft: js.UndefOr[String] = js.undefined
     
-    var bottomRight: js.UndefOr[String] = js.native
+    var bottomRight: js.UndefOr[String] = js.undefined
     
-    var joinBody: js.UndefOr[String] = js.native
+    var joinBody: js.UndefOr[String] = js.undefined
     
-    var joinJoin: js.UndefOr[String] = js.native
+    var joinJoin: js.UndefOr[String] = js.undefined
     
-    var joinLeft: js.UndefOr[String] = js.native
+    var joinLeft: js.UndefOr[String] = js.undefined
     
-    var joinRight: js.UndefOr[String] = js.native
+    var joinRight: js.UndefOr[String] = js.undefined
     
-    var topBody: js.UndefOr[String] = js.native
+    var topBody: js.UndefOr[String] = js.undefined
     
-    var topJoin: js.UndefOr[String] = js.native
+    var topJoin: js.UndefOr[String] = js.undefined
     
-    var topLeft: js.UndefOr[String] = js.native
+    var topLeft: js.UndefOr[String] = js.undefined
     
-    var topRight: js.UndefOr[String] = js.native
+    var topRight: js.UndefOr[String] = js.undefined
   }
   object TableBorder {
     
@@ -184,20 +182,19 @@ object mod {
     def void: typings.table.tableStrings.void = "void".asInstanceOf[typings.table.tableStrings.void]
   }
   
-  @js.native
   trait TableColumns extends StObject {
     
-    var alignment: js.UndefOr[left | center | right] = js.native
+    var alignment: js.UndefOr[left | center | right] = js.undefined
     
-    var paddingLeft: js.UndefOr[Double] = js.native
+    var paddingLeft: js.UndefOr[Double] = js.undefined
     
-    var paddingRight: js.UndefOr[Double] = js.native
+    var paddingRight: js.UndefOr[Double] = js.undefined
     
-    var truncate: js.UndefOr[Double] = js.native
+    var truncate: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var wrapWord: js.UndefOr[Boolean] = js.native
+    var wrapWord: js.UndefOr[Boolean] = js.undefined
   }
   object TableColumns {
     
@@ -250,10 +247,9 @@ object mod {
   
   type TableDrawHorizontalLine = js.Function2[/* index */ Double, /* size */ Double, Boolean]
   
-  @js.native
   trait TableStream extends StObject {
     
-    def write(row: js.Array[String]): Unit = js.native
+    def write(row: js.Array[String]): Unit
   }
   object TableStream {
     
@@ -271,20 +267,19 @@ object mod {
     }
   }
   
-  @js.native
   trait TableUserConfig extends StObject {
     
-    var border: js.UndefOr[TableBorder] = js.native
+    var border: js.UndefOr[TableBorder] = js.undefined
     
-    var columnCount: js.UndefOr[Double] = js.native
+    var columnCount: js.UndefOr[Double] = js.undefined
     
-    var columnDefault: js.UndefOr[TableColumns] = js.native
+    var columnDefault: js.UndefOr[TableColumns] = js.undefined
     
-    var columns: js.UndefOr[NumberDictionary[TableColumns]] = js.native
+    var columns: js.UndefOr[NumberDictionary[TableColumns]] = js.undefined
     
-    var drawHorizontalLine: js.UndefOr[TableDrawHorizontalLine] = js.native
+    var drawHorizontalLine: js.UndefOr[TableDrawHorizontalLine] = js.undefined
     
-    var singleLine: js.UndefOr[Boolean] = js.native
+    var singleLine: js.UndefOr[Boolean] = js.undefined
   }
   object TableUserConfig {
     

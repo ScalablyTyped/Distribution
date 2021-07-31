@@ -3,27 +3,26 @@ package typings.ecmarkdown.nodeTypesMod
 import typings.ecmarkdown.ecmarkdownStrings.ul
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnorderedListNode
-  extends ListNode
+  extends StObject
+     with ListNode
      with Node {
   
-  var contents: js.Array[UnorderedListItemNode] = js.native
+  var contents: js.Array[UnorderedListItemNode]
   
-  var indent: Double = js.native
+  var indent: Double
   
-  var location: LocationRange = js.native
+  var location: LocationRange
   
-  var name: ul = js.native
+  var name: ul
 }
 object UnorderedListNode {
   
   @scala.inline
-  def apply(contents: js.Array[UnorderedListItemNode], indent: Double, location: LocationRange, name: ul): UnorderedListNode = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(contents: js.Array[UnorderedListItemNode], indent: Double, location: LocationRange): UnorderedListNode = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "ul")
     __obj.asInstanceOf[UnorderedListNode]
   }
   

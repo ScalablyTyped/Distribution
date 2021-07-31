@@ -17,153 +17,153 @@ import typings.awsSdkTypes.responseMod.ResponseMetadata
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetObjectOutputMod {
   
-  @js.native
-  trait GetObjectOutput[StreamType] extends MetadataBearer {
+  trait GetObjectOutput[StreamType]
+    extends StObject
+       with MetadataBearer {
     
     /**
       * _AcceptRanges shape
       */
-    var AcceptRanges: js.UndefOr[String] = js.native
+    var AcceptRanges: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Object data.</p>
       */
-    var Body: js.UndefOr[StreamType] = js.native
+    var Body: js.UndefOr[StreamType] = js.undefined
     
     /**
       * <p>Specifies caching behavior along the request/reply chain.</p>
       */
-    var CacheControl: js.UndefOr[String] = js.native
+    var CacheControl: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Specifies presentational information for the object.</p>
       */
-    var ContentDisposition: js.UndefOr[String] = js.native
+    var ContentDisposition: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Specifies what content encodings have been applied to the object and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field.</p>
       */
-    var ContentEncoding: js.UndefOr[String] = js.native
+    var ContentEncoding: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The language the content is in.</p>
       */
-    var ContentLanguage: js.UndefOr[String] = js.native
+    var ContentLanguage: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Size of the body in bytes.</p>
       */
-    var ContentLength: js.UndefOr[Double] = js.native
+    var ContentLength: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The portion of the object returned in the response.</p>
       */
-    var ContentRange: js.UndefOr[String] = js.native
+    var ContentRange: js.UndefOr[String] = js.undefined
     
     /**
       * <p>A standard MIME type describing the format of the object data.</p>
       */
-    var ContentType: js.UndefOr[String] = js.native
+    var ContentType: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Specifies whether the object retrieved was (true) or was not (false) a Delete Marker. If false, this response header does not appear in the response.</p>
       */
-    var DeleteMarker: js.UndefOr[Boolean] = js.native
+    var DeleteMarker: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>An ETag is an opaque identifier assigned by a web server to a specific version of a resource found at a URL</p>
       */
-    var ETag: js.UndefOr[String] = js.native
+    var ETag: js.UndefOr[String] = js.undefined
     
     /**
       * <p>If the object expiration is configured (see PUT Bucket lifecycle), the response includes this header. It includes the expiry-date and rule-id key value pairs providing object expiration information. The value of the rule-id is URL encoded.</p>
       */
-    var Expiration: js.UndefOr[String] = js.native
+    var Expiration: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The date and time at which the object is no longer cacheable.</p>
       */
-    var Expires: js.UndefOr[Date] = js.native
+    var Expires: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>Last modified date of the object</p>
       */
-    var LastModified: js.UndefOr[Date] = js.native
+    var LastModified: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>A map of metadata to store with the object in S3.</p>
       */
-    var Metadata: js.UndefOr[StringDictionary[String]] = js.native
+    var Metadata: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * <p>This is set to the number of metadata entries not returned in x-amz-meta headers. This can happen if you create metadata using an API like SOAP that supports more flexible metadata than the REST API. For example, using SOAP, you can create metadata whose values are not legal HTTP headers.</p>
       */
-    var MissingMeta: js.UndefOr[Double] = js.native
+    var MissingMeta: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The count of parts this object has.</p>
       */
-    var PartsCount: js.UndefOr[Double] = js.native
+    var PartsCount: js.UndefOr[Double] = js.undefined
     
     /**
       * _ReplicationStatus shape
       */
-    var ReplicationStatus: js.UndefOr[COMPLETE | PENDING | FAILED | REPLICA | String] = js.native
+    var ReplicationStatus: js.UndefOr[COMPLETE | PENDING | FAILED | REPLICA | String] = js.undefined
     
     /**
       * <p>If present, indicates that the requester was successfully charged for the request.</p>
       */
-    var RequestCharged: js.UndefOr[requester_ | String] = js.native
+    var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
     
     /**
       * <p>Provides information about object restoration operation and expiration time of the restored object copy.</p>
       */
-    var Restore: js.UndefOr[String] = js.native
+    var Restore: js.UndefOr[String] = js.undefined
     
     /**
       * <p>If server-side encryption with a customer-provided encryption key was requested, the response will include this header confirming the encryption algorithm used.</p>
       */
-    var SSECustomerAlgorithm: js.UndefOr[String] = js.native
+    var SSECustomerAlgorithm: js.UndefOr[String] = js.undefined
     
     /**
       * <p>If server-side encryption with a customer-provided encryption key was requested, the response will include this header to provide round trip message integrity verification of the customer-provided encryption key.</p>
       */
-    var SSECustomerKeyMD5: js.UndefOr[String] = js.native
+    var SSECustomerKeyMD5: js.UndefOr[String] = js.undefined
     
     /**
       * <p>If present, specifies the ID of the AWS Key Management Service (KMS) master encryption key that was used for the object.</p>
       */
-    var SSEKMSKeyId: js.UndefOr[String] = js.native
+    var SSEKMSKeyId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The Server-side encryption algorithm used when storing this object in S3 (e.g., AES256, aws:kms).</p>
       */
-    var ServerSideEncryption: js.UndefOr[AES256 | awsColonkms | String] = js.native
+    var ServerSideEncryption: js.UndefOr[AES256 | awsColonkms | String] = js.undefined
     
     /**
       * _StorageClass shape
       */
-    var StorageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String] = js.native
+    var StorageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String] = js.undefined
     
     /**
       * <p>The number of tags, if any, on the object.</p>
       */
-    var TagCount: js.UndefOr[Double] = js.native
+    var TagCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>Version of the object.</p>
       */
-    var VersionId: js.UndefOr[String] = js.native
+    var VersionId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>If the bucket is configured as a website, redirects requests for this object to another object in the same bucket or to an external URL. Amazon S3 stores the value of this header in the object metadata.</p>
       */
-    var WebsiteRedirectLocation: js.UndefOr[String] = js.native
+    var WebsiteRedirectLocation: js.UndefOr[String] = js.undefined
   }
   object GetObjectOutput {
     
@@ -174,7 +174,7 @@ object typesGetObjectOutputMod {
     }
     
     @scala.inline
-    implicit class GetObjectOutputMutableBuilder[Self <: GetObjectOutput[_], StreamType] (val x: Self with GetObjectOutput[StreamType]) extends AnyVal {
+    implicit class GetObjectOutputMutableBuilder[Self <: GetObjectOutput[?], StreamType] (val x: Self & GetObjectOutput[StreamType]) extends AnyVal {
       
       @scala.inline
       def setAcceptRanges(value: String): Self = StObject.set(x, "AcceptRanges", value.asInstanceOf[js.Any])

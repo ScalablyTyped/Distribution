@@ -2,7 +2,6 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to
   * https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/generated.proto
   */
-@js.native
 trait SchemaQuantity extends StObject {
   
   /**
     * Stringified version of the quantity, e.g., &quot;800 MiB&quot;.
     */
-  var string: js.UndefOr[String] = js.native
+  var string: js.UndefOr[String] = js.undefined
 }
 object SchemaQuantity {
   

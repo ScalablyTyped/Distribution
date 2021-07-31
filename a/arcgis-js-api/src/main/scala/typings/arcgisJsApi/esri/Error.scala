@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait Error extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#details)
     */
-  var details: js.Any = js.native
+  var details: js.Any
   
   /**
     * A message describing the details of the error.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#message)
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * A unique error name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#name)
     */
-  var name: String = js.native
+  var name: String
 }
 object Error {
   

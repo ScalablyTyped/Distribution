@@ -2,20 +2,18 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The input content for the `ImportProductSets` method.
   */
-@js.native
 trait SchemaImportProductSetsInputConfig extends StObject {
   
   /**
     * The Google Cloud Storage location for a csv file which preserves a list
     * of ImportProductSetRequests in each line.
     */
-  var gcsSource: js.UndefOr[SchemaImportProductSetsGcsSource] = js.native
+  var gcsSource: js.UndefOr[SchemaImportProductSetsGcsSource] = js.undefined
 }
 object SchemaImportProductSetsInputConfig {
   

@@ -7,25 +7,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SeparableWrapModes extends Object {
+trait SeparableWrapModes
+  extends StObject
+     with Object {
   
   /**
     * Horizontal wrapping mode.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#SeparableWrapModes)
     */
-  var horizontal: clamp | repeat | mirror = js.native
+  var horizontal: clamp | repeat | mirror
   
   /**
     * Vertical wrapping mode.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#SeparableWrapModes)
     */
-  var vertical: clamp | repeat | mirror = js.native
+  var vertical: clamp | repeat | mirror
 }
 object SeparableWrapModes {
   

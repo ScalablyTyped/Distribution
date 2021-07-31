@@ -10,17 +10,16 @@ import typings.awsLambda.awsLambdaStrings.Update
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudformationCustomResourceMod {
   
-  @js.native
   trait CloudFormationCustomResourceCreateEvent
-    extends CloudFormationCustomResourceEventCommon
+    extends StObject
+       with CloudFormationCustomResourceEventCommon
        with CloudFormationCustomResourceEvent {
     
-    var RequestType: Create = js.native
+    var RequestType: Create
   }
   object CloudFormationCustomResourceCreateEvent {
     
@@ -28,14 +27,13 @@ object cloudformationCustomResourceMod {
     def apply(
       LogicalResourceId: String,
       RequestId: String,
-      RequestType: Create,
       ResourceProperties: DictKey,
       ResourceType: String,
       ResponseURL: String,
       ServiceToken: String,
       StackId: String
     ): CloudFormationCustomResourceCreateEvent = {
-      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], RequestType = RequestType.asInstanceOf[js.Any], ResourceProperties = ResourceProperties.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], ResponseURL = ResponseURL.asInstanceOf[js.Any], ServiceToken = ServiceToken.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], RequestType = "Create", ResourceProperties = ResourceProperties.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], ResponseURL = ResponseURL.asInstanceOf[js.Any], ServiceToken = ServiceToken.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudFormationCustomResourceCreateEvent]
     }
     
@@ -47,14 +45,14 @@ object cloudformationCustomResourceMod {
     }
   }
   
-  @js.native
   trait CloudFormationCustomResourceDeleteEvent
-    extends CloudFormationCustomResourceEventCommon
+    extends StObject
+       with CloudFormationCustomResourceEventCommon
        with CloudFormationCustomResourceEvent {
     
-    var PhysicalResourceId: String = js.native
+    var PhysicalResourceId: String
     
-    var RequestType: Delete = js.native
+    var RequestType: Delete
   }
   object CloudFormationCustomResourceDeleteEvent {
     
@@ -63,14 +61,13 @@ object cloudformationCustomResourceMod {
       LogicalResourceId: String,
       PhysicalResourceId: String,
       RequestId: String,
-      RequestType: Delete,
       ResourceProperties: DictKey,
       ResourceType: String,
       ResponseURL: String,
       ServiceToken: String,
       StackId: String
     ): CloudFormationCustomResourceDeleteEvent = {
-      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], RequestType = RequestType.asInstanceOf[js.Any], ResourceProperties = ResourceProperties.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], ResponseURL = ResponseURL.asInstanceOf[js.Any], ServiceToken = ServiceToken.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], RequestType = "Delete", ResourceProperties = ResourceProperties.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], ResponseURL = ResponseURL.asInstanceOf[js.Any], ServiceToken = ServiceToken.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudFormationCustomResourceDeleteEvent]
     }
     
@@ -97,14 +94,13 @@ object cloudformationCustomResourceMod {
     def CloudFormationCustomResourceCreateEvent(
       LogicalResourceId: String,
       RequestId: String,
-      RequestType: Create,
       ResourceProperties: DictKey,
       ResourceType: String,
       ResponseURL: String,
       ServiceToken: String,
       StackId: String
     ): typings.awsLambda.cloudformationCustomResourceMod.CloudFormationCustomResourceCreateEvent = {
-      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], RequestType = RequestType.asInstanceOf[js.Any], ResourceProperties = ResourceProperties.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], ResponseURL = ResponseURL.asInstanceOf[js.Any], ServiceToken = ServiceToken.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], RequestType = "Create", ResourceProperties = ResourceProperties.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], ResponseURL = ResponseURL.asInstanceOf[js.Any], ServiceToken = ServiceToken.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsLambda.cloudformationCustomResourceMod.CloudFormationCustomResourceCreateEvent]
     }
     
@@ -113,14 +109,13 @@ object cloudformationCustomResourceMod {
       LogicalResourceId: String,
       PhysicalResourceId: String,
       RequestId: String,
-      RequestType: Delete,
       ResourceProperties: DictKey,
       ResourceType: String,
       ResponseURL: String,
       ServiceToken: String,
       StackId: String
     ): typings.awsLambda.cloudformationCustomResourceMod.CloudFormationCustomResourceDeleteEvent = {
-      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], RequestType = RequestType.asInstanceOf[js.Any], ResourceProperties = ResourceProperties.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], ResponseURL = ResponseURL.asInstanceOf[js.Any], ServiceToken = ServiceToken.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], RequestType = "Delete", ResourceProperties = ResourceProperties.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], ResponseURL = ResponseURL.asInstanceOf[js.Any], ServiceToken = ServiceToken.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsLambda.cloudformationCustomResourceMod.CloudFormationCustomResourceDeleteEvent]
     }
     
@@ -130,34 +125,32 @@ object cloudformationCustomResourceMod {
       OldResourceProperties: StringDictionary[js.Any],
       PhysicalResourceId: String,
       RequestId: String,
-      RequestType: Update,
       ResourceProperties: DictKey,
       ResourceType: String,
       ResponseURL: String,
       ServiceToken: String,
       StackId: String
     ): typings.awsLambda.cloudformationCustomResourceMod.CloudFormationCustomResourceUpdateEvent = {
-      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], OldResourceProperties = OldResourceProperties.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], RequestType = RequestType.asInstanceOf[js.Any], ResourceProperties = ResourceProperties.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], ResponseURL = ResponseURL.asInstanceOf[js.Any], ServiceToken = ServiceToken.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], OldResourceProperties = OldResourceProperties.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], RequestType = "Update", ResourceProperties = ResourceProperties.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], ResponseURL = ResponseURL.asInstanceOf[js.Any], ServiceToken = ServiceToken.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsLambda.cloudformationCustomResourceMod.CloudFormationCustomResourceUpdateEvent]
     }
   }
   
-  @js.native
   trait CloudFormationCustomResourceEventCommon extends StObject {
     
-    var LogicalResourceId: String = js.native
+    var LogicalResourceId: String
     
-    var RequestId: String = js.native
+    var RequestId: String
     
-    var ResourceProperties: DictKey = js.native
+    var ResourceProperties: DictKey
     
-    var ResourceType: String = js.native
+    var ResourceType: String
     
-    var ResponseURL: String = js.native
+    var ResponseURL: String
     
-    var ServiceToken: String = js.native
+    var ServiceToken: String
     
-    var StackId: String = js.native
+    var StackId: String
   }
   object CloudFormationCustomResourceEventCommon {
     
@@ -201,14 +194,14 @@ object cloudformationCustomResourceMod {
     }
   }
   
-  @js.native
   trait CloudFormationCustomResourceFailedResponse
-    extends CloudFormationCustomResourceResponseCommon
+    extends StObject
+       with CloudFormationCustomResourceResponseCommon
        with CloudFormationCustomResourceResponse {
     
-    var Reason: String = js.native
+    var Reason: String
     
-    var Status: FAILED = js.native
+    var Status: FAILED
   }
   object CloudFormationCustomResourceFailedResponse {
     
@@ -218,10 +211,9 @@ object cloudformationCustomResourceMod {
       PhysicalResourceId: String,
       Reason: String,
       RequestId: String,
-      StackId: String,
-      Status: FAILED
+      StackId: String
     ): CloudFormationCustomResourceFailedResponse = {
-      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any], Status = "FAILED")
       __obj.asInstanceOf[CloudFormationCustomResourceFailedResponse]
     }
     
@@ -251,40 +243,32 @@ object cloudformationCustomResourceMod {
       PhysicalResourceId: String,
       Reason: String,
       RequestId: String,
-      StackId: String,
-      Status: FAILED
+      StackId: String
     ): typings.awsLambda.cloudformationCustomResourceMod.CloudFormationCustomResourceFailedResponse = {
-      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any], Status = "FAILED")
       __obj.asInstanceOf[typings.awsLambda.cloudformationCustomResourceMod.CloudFormationCustomResourceFailedResponse]
     }
     
     @scala.inline
-    def CloudFormationCustomResourceSuccessResponse(
-      LogicalResourceId: String,
-      PhysicalResourceId: String,
-      RequestId: String,
-      StackId: String,
-      Status: SUCCESS
-    ): typings.awsLambda.cloudformationCustomResourceMod.CloudFormationCustomResourceSuccessResponse = {
-      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
+    def CloudFormationCustomResourceSuccessResponse(LogicalResourceId: String, PhysicalResourceId: String, RequestId: String, StackId: String): typings.awsLambda.cloudformationCustomResourceMod.CloudFormationCustomResourceSuccessResponse = {
+      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any], Status = "SUCCESS")
       __obj.asInstanceOf[typings.awsLambda.cloudformationCustomResourceMod.CloudFormationCustomResourceSuccessResponse]
     }
   }
   
-  @js.native
   trait CloudFormationCustomResourceResponseCommon extends StObject {
     
-    var Data: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var Data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var LogicalResourceId: String = js.native
+    var LogicalResourceId: String
     
-    var NoEcho: js.UndefOr[Boolean] = js.native
+    var NoEcho: js.UndefOr[Boolean] = js.undefined
     
-    var PhysicalResourceId: String = js.native
+    var PhysicalResourceId: String
     
-    var RequestId: String = js.native
+    var RequestId: String
     
-    var StackId: String = js.native
+    var StackId: String
   }
   object CloudFormationCustomResourceResponseCommon {
     
@@ -323,26 +307,20 @@ object cloudformationCustomResourceMod {
     }
   }
   
-  @js.native
   trait CloudFormationCustomResourceSuccessResponse
-    extends CloudFormationCustomResourceResponseCommon
+    extends StObject
+       with CloudFormationCustomResourceResponseCommon
        with CloudFormationCustomResourceResponse {
     
-    var Reason: js.UndefOr[String] = js.native
+    var Reason: js.UndefOr[String] = js.undefined
     
-    var Status: SUCCESS = js.native
+    var Status: SUCCESS
   }
   object CloudFormationCustomResourceSuccessResponse {
     
     @scala.inline
-    def apply(
-      LogicalResourceId: String,
-      PhysicalResourceId: String,
-      RequestId: String,
-      StackId: String,
-      Status: SUCCESS
-    ): CloudFormationCustomResourceSuccessResponse = {
-      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
+    def apply(LogicalResourceId: String, PhysicalResourceId: String, RequestId: String, StackId: String): CloudFormationCustomResourceSuccessResponse = {
+      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any], Status = "SUCCESS")
       __obj.asInstanceOf[CloudFormationCustomResourceSuccessResponse]
     }
     
@@ -360,16 +338,16 @@ object cloudformationCustomResourceMod {
     }
   }
   
-  @js.native
   trait CloudFormationCustomResourceUpdateEvent
-    extends CloudFormationCustomResourceEventCommon
+    extends StObject
+       with CloudFormationCustomResourceEventCommon
        with CloudFormationCustomResourceEvent {
     
-    var OldResourceProperties: StringDictionary[js.Any] = js.native
+    var OldResourceProperties: StringDictionary[js.Any]
     
-    var PhysicalResourceId: String = js.native
+    var PhysicalResourceId: String
     
-    var RequestType: Update = js.native
+    var RequestType: Update
   }
   object CloudFormationCustomResourceUpdateEvent {
     
@@ -379,14 +357,13 @@ object cloudformationCustomResourceMod {
       OldResourceProperties: StringDictionary[js.Any],
       PhysicalResourceId: String,
       RequestId: String,
-      RequestType: Update,
       ResourceProperties: DictKey,
       ResourceType: String,
       ResponseURL: String,
       ServiceToken: String,
       StackId: String
     ): CloudFormationCustomResourceUpdateEvent = {
-      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], OldResourceProperties = OldResourceProperties.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], RequestType = RequestType.asInstanceOf[js.Any], ResourceProperties = ResourceProperties.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], ResponseURL = ResponseURL.asInstanceOf[js.Any], ServiceToken = ServiceToken.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], OldResourceProperties = OldResourceProperties.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], RequestType = "Update", ResourceProperties = ResourceProperties.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], ResponseURL = ResponseURL.asInstanceOf[js.Any], ServiceToken = ServiceToken.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudFormationCustomResourceUpdateEvent]
     }
     

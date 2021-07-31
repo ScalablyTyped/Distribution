@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignBlobRequest extends StObject {
   
   /** Required. Deprecated. [Migrate to Service Account Credentials API](https://cloud.google.com/iam/help/credentials/migrate-api). The bytes to sign. */
-  var bytesToSign: js.UndefOr[String] = js.native
+  var bytesToSign: js.UndefOr[String] = js.undefined
 }
 object SignBlobRequest {
   

@@ -4,7 +4,6 @@ import typings.axeCore.mod.Result
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object infoMod {
@@ -13,10 +12,9 @@ object infoMod {
   @js.native
   val Info: FunctionComponent[InfoProps] = js.native
   
-  @js.native
   trait InfoProps extends StObject {
     
-    var item: Result = js.native
+    var item: Result
   }
   object InfoProps {
     

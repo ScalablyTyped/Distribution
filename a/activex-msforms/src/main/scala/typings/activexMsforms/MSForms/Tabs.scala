@@ -2,7 +2,6 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,13 +10,13 @@ trait Tabs extends StObject {
   def apply(varg: js.Any): js.Any = js.native
   
   def Add(): Tab = js.native
-  def Add(bstrName: js.UndefOr[scala.Nothing], bstrCaption: js.UndefOr[scala.Nothing], lIndex: js.Any): Tab = js.native
-  def Add(bstrName: js.UndefOr[scala.Nothing], bstrCaption: js.Any): Tab = js.native
-  def Add(bstrName: js.UndefOr[scala.Nothing], bstrCaption: js.Any, lIndex: js.Any): Tab = js.native
   def Add(bstrName: js.Any): Tab = js.native
-  def Add(bstrName: js.Any, bstrCaption: js.UndefOr[scala.Nothing], lIndex: js.Any): Tab = js.native
   def Add(bstrName: js.Any, bstrCaption: js.Any): Tab = js.native
   def Add(bstrName: js.Any, bstrCaption: js.Any, lIndex: js.Any): Tab = js.native
+  def Add(bstrName: js.Any, bstrCaption: Unit, lIndex: js.Any): Tab = js.native
+  def Add(bstrName: Unit, bstrCaption: js.Any): Tab = js.native
+  def Add(bstrName: Unit, bstrCaption: js.Any, lIndex: js.Any): Tab = js.native
+  def Add(bstrName: Unit, bstrCaption: Unit, lIndex: js.Any): Tab = js.native
   
   def Clear(): Unit = js.native
   

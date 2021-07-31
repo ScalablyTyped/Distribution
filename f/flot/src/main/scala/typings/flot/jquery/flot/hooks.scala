@@ -5,59 +5,57 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait hooks extends StObject {
   
   var bindEvents: js.UndefOr[
     js.Array[js.Function2[/* plot */ plot, /* eventHolder */ JQuery[HTMLElement], Unit]]
-  ] = js.native
+  ] = js.undefined
   
   var draw: js.UndefOr[
     js.Array[js.Function2[/* plot */ plot, /* context */ CanvasRenderingContext2D, Unit]]
-  ] = js.native
+  ] = js.undefined
   
   var drawBackground: js.UndefOr[
     js.Array[js.Function2[/* plot */ plot, /* context */ CanvasRenderingContext2D, Unit]]
-  ] = js.native
+  ] = js.undefined
   
   var drawOverlay: js.UndefOr[
     js.Array[js.Function2[/* plot */ plot, /* context */ CanvasRenderingContext2D, Unit]]
-  ] = js.native
+  ] = js.undefined
   
   var drawSeries: js.UndefOr[
     js.Array[
       js.Function3[/* plot */ plot, /* context */ CanvasRenderingContext2D, /* series */ dataSeries, Unit]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var processDatapoints: js.UndefOr[
     js.Array[
       js.Function3[/* plot */ plot, /* series */ dataSeries, /* datapoints */ datapoints, Unit]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var processOffset: js.UndefOr[js.Array[js.Function2[/* plot */ plot, /* offset */ canvasPoint, Unit]]] = js.native
+  var processOffset: js.UndefOr[js.Array[js.Function2[/* plot */ plot, /* offset */ canvasPoint, Unit]]] = js.undefined
   
-  var processOptions: js.UndefOr[js.Array[js.Function2[/* plot */ plot, /* options */ plotOptions, Unit]]] = js.native
+  var processOptions: js.UndefOr[js.Array[js.Function2[/* plot */ plot, /* options */ plotOptions, Unit]]] = js.undefined
   
   var processRawData: js.UndefOr[
     js.Array[
       js.Function4[
         /* plot */ plot, 
         /* series */ dataSeries, 
-        /* data */ js.Array[_], 
+        /* data */ js.Array[js.Any], 
         /* datapoints */ datapoints, 
         Unit
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var shutdown: js.UndefOr[
     js.Array[js.Function2[/* plot */ plot, /* eventHolder */ JQuery[HTMLElement], Unit]]
-  ] = js.native
+  ] = js.undefined
 }
 object hooks {
   
@@ -160,7 +158,7 @@ object hooks {
           js.Function4[
             /* plot */ plot, 
             /* series */ dataSeries, 
-            /* data */ js.Array[_], 
+            /* data */ js.Array[js.Any], 
             /* datapoints */ datapoints, 
             Unit
           ]

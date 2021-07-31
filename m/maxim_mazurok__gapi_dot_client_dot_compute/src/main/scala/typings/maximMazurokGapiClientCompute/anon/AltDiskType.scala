@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientCompute.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AltDiskType extends StObject {
   
   /** Data format for the response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** Name of the disk type to return. */
-  var diskType: String = js.native
+  var diskType: String
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Project ID for this request. */
-  var project: String = js.native
+  var project: String
   
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** The name of the region for this request. */
-  var region: String = js.native
+  var region: String
   
   /** Deprecated. Please use quotaUser instead. */
-  var userIp: js.UndefOr[String] = js.native
+  var userIp: js.UndefOr[String] = js.undefined
 }
 object AltDiskType {
   

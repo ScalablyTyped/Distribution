@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterDialogFilterAddingEventUIParam extends StObject {
   
   /**
     * Gets reference to filters table body DOM element.
     */
-  var filtersTableBody: js.UndefOr[String] = js.native
+  var filtersTableBody: js.UndefOr[String] = js.undefined
   
   /**
     * Gets reference to GridFiltering.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object FilterDialogFilterAddingEventUIParam {
   

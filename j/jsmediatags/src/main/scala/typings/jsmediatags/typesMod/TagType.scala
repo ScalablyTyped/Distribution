@@ -2,15 +2,13 @@ package typings.jsmediatags.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagType extends StObject {
   
-  var tags: Tags = js.native
+  var tags: Tags
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object TagType {
   

@@ -2,22 +2,20 @@ package typings.atlassianConnectJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  jql :string,   header :string,   descriptionText :string,   submitText :string,   cancelText :string}> */
-@js.native
 trait Partialjqlstringheaderstr extends StObject {
   
-  var cancelText: js.UndefOr[String] = js.native
+  var cancelText: js.UndefOr[String] = js.undefined
   
-  var descriptionText: js.UndefOr[String] = js.native
+  var descriptionText: js.UndefOr[String] = js.undefined
   
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
-  var jql: js.UndefOr[String] = js.native
+  var jql: js.UndefOr[String] = js.undefined
   
-  var submitText: js.UndefOr[String] = js.native
+  var submitText: js.UndefOr[String] = js.undefined
 }
 object Partialjqlstringheaderstr {
   

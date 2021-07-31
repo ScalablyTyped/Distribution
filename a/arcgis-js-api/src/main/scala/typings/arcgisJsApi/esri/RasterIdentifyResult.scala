@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RasterIdentifyResult extends Object {
+trait RasterIdentifyResult
+  extends StObject
+     with Object {
   
   /**
     * The identified location.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#RasterIdentifyResult)
     */
-  var location: Point = js.native
+  var location: Point
   
   /**
     * Image service pixel values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#RasterIdentifyResult)
     */
-  var value: js.Array[Double] = js.native
+  var value: js.Array[Double]
 }
 object RasterIdentifyResult {
   

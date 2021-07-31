@@ -14,15 +14,14 @@ import typings.awsSdkClientCognitoIdentityBrowser.unlinkIdentityExceptionsUnionM
 import typings.awsSdkClientCognitoIdentityBrowser.updateIdentityPoolExceptionsUnionMod.UpdateIdentityPoolExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesResourceConflictExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ResourceConflictExceptionDetails> * / any */ @js.native
-  trait ResourceConflictException
-    extends CreateIdentityPoolExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ResourceConflictExceptionDetails> * / any */ trait ResourceConflictException
+    extends StObject
+       with CreateIdentityPoolExceptionsUnion
        with GetCredentialsForIdentityExceptionsUnion
        with GetIdExceptionsUnion
        with GetIdentityPoolRolesExceptionsUnion
@@ -35,15 +34,13 @@ object typesResourceConflictExceptionMod {
        with UnlinkIdentityExceptionsUnion
        with UpdateIdentityPoolExceptionsUnion {
     
-    var name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ResourceConflictException = js.native
+    var name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ResourceConflictException
   }
   object ResourceConflictException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ResourceConflictException
-    ): ResourceConflictException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ResourceConflictException = {
+      val __obj = js.Dynamic.literal(name = "ResourceConflictException")
       __obj.asInstanceOf[ResourceConflictException]
     }
     
@@ -57,13 +54,12 @@ object typesResourceConflictExceptionMod {
     }
   }
   
-  @js.native
   trait ResourceConflictExceptionDetails extends StObject {
     
     /**
       * <p>The message returned by a ResourceConflictException.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ResourceConflictExceptionDetails {
     

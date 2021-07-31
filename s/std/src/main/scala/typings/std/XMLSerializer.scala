@@ -2,14 +2,12 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the serializeToString() method to construct an XML string representing a DOM tree. */
-@js.native
 trait XMLSerializer extends StObject {
   
-  def serializeToString(root: Node): java.lang.String = js.native
+  def serializeToString(root: Node): java.lang.String
 }
 object XMLSerializer {
   

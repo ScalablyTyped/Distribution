@@ -2,19 +2,17 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventTriggerCondition extends StObject {
   
-  var name: String = js.native
+  var name: String
   
   // 是否由自己的生命周期触发
-  var selfCallback: js.UndefOr[Boolean] = js.native
+  var selfCallback: js.UndefOr[Boolean] = js.undefined
   
   // 触发类型
-  var `type`: String = js.native
+  var `type`: String
 }
 object EventTriggerCondition {
   

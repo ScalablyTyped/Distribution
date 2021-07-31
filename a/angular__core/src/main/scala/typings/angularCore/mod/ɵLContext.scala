@@ -3,42 +3,40 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ɵLContext extends StObject {
   
   /**
     * The instance of the Component node.
     */
-  var component: js.UndefOr[js.Object | Null] = js.native
+  var component: js.UndefOr[js.Object | Null] = js.undefined
   
   /**
     * The list of active directives that exist on this element.
     */
-  var directives: js.UndefOr[js.Array[_] | Null] = js.native
+  var directives: js.UndefOr[js.Array[js.Any] | Null] = js.undefined
   
   /**
     * The component's parent view data.
     */
-  var lView: ɵangularPackagesCoreCoreBv = js.native
+  var lView: ɵangularPackagesCoreCoreBv
   
   /**
     * The map of local references (local reference name => element or directive instance) that exist
     * on this element.
     */
-  var localRefs: js.UndefOr[StringDictionary[js.Any] | Null] = js.native
+  var localRefs: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
   
   /**
     * The instance of the DOM node that is attached to the lNode.
     */
-  var native: RNode = js.native
+  var native: RNode
   
   /**
     * The index instance of the node.
     */
-  var nodeIndex: Double = js.native
+  var nodeIndex: Double
 }
 object ɵLContext {
   
@@ -61,7 +59,7 @@ object ɵLContext {
     def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def setDirectives(value: js.Array[_]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    def setDirectives(value: js.Array[js.Any]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDirectivesNull: Self = StObject.set(x, "directives", null)

@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,24 +14,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     var item = form.addSectionHeaderItem();
   *     item.setTitle('Title of new section');
   */
-@js.native
 trait SectionHeaderItem extends StObject {
   
-  def duplicate(): SectionHeaderItem = js.native
+  def duplicate(): SectionHeaderItem
   
-  def getHelpText(): String = js.native
+  def getHelpText(): String
   
-  def getId(): Integer = js.native
+  def getId(): Integer
   
-  def getIndex(): Integer = js.native
+  def getIndex(): Integer
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def getType(): ItemType = js.native
+  def getType(): ItemType
   
-  def setHelpText(text: String): SectionHeaderItem = js.native
+  def setHelpText(text: String): SectionHeaderItem
   
-  def setTitle(title: String): SectionHeaderItem = js.native
+  def setTitle(title: String): SectionHeaderItem
 }
 object SectionHeaderItem {
   

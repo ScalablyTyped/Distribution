@@ -2,17 +2,17 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldsetHTMLAttributes[T] extends HTMLAttributes[T] {
+trait FieldsetHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var disabled: js.UndefOr[Boolean | String] = js.native
+  var disabled: js.UndefOr[Boolean | String] = js.undefined
   
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object FieldsetHTMLAttributes {
   
@@ -23,7 +23,7 @@ object FieldsetHTMLAttributes {
   }
   
   @scala.inline
-  implicit class FieldsetHTMLAttributesMutableBuilder[Self <: FieldsetHTMLAttributes[_], T] (val x: Self with FieldsetHTMLAttributes[T]) extends AnyVal {
+  implicit class FieldsetHTMLAttributesMutableBuilder[Self <: FieldsetHTMLAttributes[?], T] (val x: Self & FieldsetHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setDisabled(value: Boolean | String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])

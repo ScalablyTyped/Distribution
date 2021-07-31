@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientEventarc.gapi.client.eventarc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudRunService extends StObject {
   
   /**
     * Optional. The relative path on the Cloud Run service the events should be sent to. The value must conform to the definition of URI path segment (section 3.3 of RFC2396). Examples:
     * "/route", "route", "route/subroute".
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** Required. The region the Cloud Run service is deployed in. */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The name of the Cloud run service being addressed (see https://cloud.google.com/run/docs/reference/rest/v1/namespaces.services). Only services located in the same project
     * of the trigger object can be addressed.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
 }
 object CloudRunService {
   

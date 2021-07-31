@@ -2,25 +2,23 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageMapTypeOptions extends StObject {
   
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
-  def getTileUrl(tileCoord: Point, zoom: Double): String = js.native
+  def getTileUrl(tileCoord: Point, zoom: Double): String
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var tileSize: Size = js.native
+  var tileSize: Size
 }
 object ImageMapTypeOptions {
   

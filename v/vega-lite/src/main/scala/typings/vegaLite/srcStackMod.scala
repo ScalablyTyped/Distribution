@@ -29,10 +29,13 @@ import typings.vegaLite.vegaLiteStrings.y
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcStackMod {
+  
+  @JSImport("vega-lite/build/src/stack", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/stack", "STACKABLE_MARKS")
   @js.native
@@ -46,22 +49,17 @@ object srcStackMod {
     square | area | circle | image | line | rect | text | point | arc | rule | trail | geoshape | bar | tick
   ] = js.native
   
-  @JSImport("vega-lite/build/src/stack", "isStackOffset")
-  @js.native
-  def isStackOffset(s: String): /* is vega-lite.vega-lite/build/src/stack.StackOffset */ Boolean = js.native
+  @scala.inline
+  def isStackOffset(s: String): /* is vega-lite.vega-lite/build/src/stack.StackOffset */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStackOffset")(s.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/stack.StackOffset */ Boolean]
   
-  @JSImport("vega-lite/build/src/stack", "stack")
-  @js.native
-  def stack(m: MarkDef[Mark, ExprRef | SignalRef], encoding: Encoding[String]): StackProperties = js.native
-  @JSImport("vega-lite/build/src/stack", "stack")
-  @js.native
-  def stack(m: MarkDef[Mark, ExprRef | SignalRef], encoding: Encoding[String], opt: DisallowNonLinearStack): StackProperties = js.native
-  @JSImport("vega-lite/build/src/stack", "stack")
-  @js.native
-  def stack(m: Mark, encoding: Encoding[String]): StackProperties = js.native
-  @JSImport("vega-lite/build/src/stack", "stack")
-  @js.native
-  def stack(m: Mark, encoding: Encoding[String], opt: DisallowNonLinearStack): StackProperties = js.native
+  @scala.inline
+  def stack(m: MarkDef[Mark, ExprRef | SignalRef], encoding: Encoding[String]): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
+  @scala.inline
+  def stack(m: MarkDef[Mark, ExprRef | SignalRef], encoding: Encoding[String], opt: DisallowNonLinearStack): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
+  @scala.inline
+  def stack(m: Mark, encoding: Encoding[String]): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
+  @scala.inline
+  def stack(m: Mark, encoding: Encoding[String], opt: DisallowNonLinearStack): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
   
   /* keyof vega-lite.anon.Center */ /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.zero
@@ -70,30 +68,29 @@ object srcStackMod {
   */
   trait StackOffset extends StObject
   
-  @js.native
   trait StackProperties extends StObject {
     
     /** Measure axis of the stack. */
-    var fieldChannel: x | y | theta | radius = js.native
+    var fieldChannel: x | y | theta | radius
     
     /** Dimension axis of the stack. */
-    var groupbyChannel: js.UndefOr[x | y | theta | radius] = js.native
+    var groupbyChannel: js.UndefOr[x | y | theta | radius] = js.undefined
     
     /** Field for groupbyChannel. */
-    var groupbyField: js.UndefOr[FieldName] = js.native
+    var groupbyField: js.UndefOr[FieldName] = js.undefined
     
     /**
       * Whether this stack will produce impute transform
       */
-    var impute: Boolean = js.native
+    var impute: Boolean
     
     /**
       * See `stack` property of Position Field Def.
       */
-    var offset: StackOffset = js.native
+    var offset: StackOffset
     
     /** Stack-by fields e.g., color, detail */
-    var stackBy: js.Array[ChannelFieldDef] = js.native
+    var stackBy: js.Array[ChannelFieldDef]
   }
   object StackProperties {
     

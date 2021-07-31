@@ -2,14 +2,12 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sub object of REST objects that contains information about who the
   * item is shared with.
   */
-@js.native
 trait ISharedWith extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait ISharedWith extends StObject {
     * - People with a link
     * The default is Just me.
     */
-  var access: String = js.native
+  var access: String
 }
 object ISharedWith {
   

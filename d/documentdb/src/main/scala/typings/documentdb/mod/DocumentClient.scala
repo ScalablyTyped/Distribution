@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("documentdb", "DocumentClient")
@@ -22,7 +21,7 @@ class DocumentClient protected () extends StObject {
   def this(
     urlConnection: String,
     auth: AuthOptions,
-    connectionPolicy: js.UndefOr[scala.Nothing],
+    connectionPolicy: Unit,
     consistencyLevel: ConsistencyLevel
   ) = this()
   def this(
@@ -305,7 +304,7 @@ class DocumentClient protected () extends StObject {
     */
   def deleteUserDefinedFunction(udfLink: String, options: RequestOptions, callback: RequestCallback[Unit]): Unit = js.native
   
-  def executeStoredProcedure[TResult](procedureLink: String, paramsOrOptions: js.Array[_], callback: RequestCallback[TResult]): Unit = js.native
+  def executeStoredProcedure[TResult](procedureLink: String, paramsOrOptions: js.Array[js.Any], callback: RequestCallback[TResult]): Unit = js.native
   def executeStoredProcedure[TResult](procedureLink: String, paramsOrOptions: RequestOptions, callback: RequestCallback[TResult]): Unit = js.native
   /**
     * Execute the StoredProcedure represented by the object.
@@ -316,7 +315,7 @@ class DocumentClient protected () extends StObject {
     */
   def executeStoredProcedure[TResult](
     procedureLink: String,
-    params: js.Array[_],
+    params: js.Array[js.Any],
     options: RequestOptions,
     callback: RequestCallback[TResult]
   ): Unit = js.native
@@ -366,8 +365,8 @@ class DocumentClient protected () extends StObject {
     * @param query             - A SQL query.
     * @param [options]         - Represents the feed options.
     */
-  def queryConflicts(collectionLink: String, query: DocumentQuery): QueryIterator[_] = js.native
-  def queryConflicts(collectionLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[_] = js.native
+  def queryConflicts(collectionLink: String, query: DocumentQuery): QueryIterator[js.Any] = js.native
+  def queryConflicts(collectionLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[js.Any] = js.native
   
   /**
     * Lists all databases that satisfy a query.
@@ -385,16 +384,16 @@ class DocumentClient protected () extends StObject {
     * @param [options]      - Represents the feed options.
     * @returns              - An instance of queryIterator to handle reading feed.
     */
-  def queryDocuments[TDocument](collectionLink: String, query: DocumentQuery): QueryIterator[RetrievedDocument with TDocument] = js.native
-  def queryDocuments[TDocument](collectionLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[RetrievedDocument with TDocument] = js.native
+  def queryDocuments[TDocument](collectionLink: String, query: DocumentQuery): QueryIterator[RetrievedDocument & TDocument] = js.native
+  def queryDocuments[TDocument](collectionLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[RetrievedDocument & TDocument] = js.native
   
   /**
     * Lists all offers that satisfy a query.
     * @param query     - A SQL query.
     * @param options   - The feed options.
     */
-  def queryOffers(query: DocumentQuery): QueryIterator[_] = js.native
-  def queryOffers(query: DocumentQuery, options: FeedOptions): QueryIterator[_] = js.native
+  def queryOffers(query: DocumentQuery): QueryIterator[js.Any] = js.native
+  def queryOffers(query: DocumentQuery, options: FeedOptions): QueryIterator[js.Any] = js.native
   
   /**
     * Query the permission for the user.
@@ -478,22 +477,22 @@ class DocumentClient protected () extends StObject {
   def readCollections(databaseLink: String): QueryIterator[CollectionMeta] = js.native
   def readCollections(databaseLink: String, options: FeedOptions): QueryIterator[CollectionMeta] = js.native
   
-  def readConflict(conflictLink: String, callback: RequestCallback[_]): Unit = js.native
+  def readConflict(conflictLink: String, callback: RequestCallback[js.Any]): Unit = js.native
   /**
     * Read a conflict.
     * @param conflictLink      - The self-link of the conflict.
     * @param options           - The request options.
     * @param callback          - The callback for the request.
     */
-  def readConflict(conflictLink: String, options: RequestOptions, callback: RequestCallback[_]): Unit = js.native
+  def readConflict(conflictLink: String, options: RequestOptions, callback: RequestCallback[js.Any]): Unit = js.native
   
   /**
     * Get all conflicts in this collection.
     * @param collectionLink    - The self-link of the collection.
     * @param options           - The feed options.
     */
-  def readConflicts(collectionLink: String): QueryIterator[_] = js.native
-  def readConflicts(collectionLink: String, options: FeedOptions): QueryIterator[_] = js.native
+  def readConflicts(collectionLink: String): QueryIterator[js.Any] = js.native
+  def readConflicts(collectionLink: String, options: FeedOptions): QueryIterator[js.Any] = js.native
   
   def readDatabase(databaseLink: String, callback: RequestCallback[DatabaseMeta]): Unit = js.native
   /**
@@ -540,14 +539,14 @@ class DocumentClient protected () extends StObject {
     * @param offerLink     - The self-link of the offer.
     * @param callback      - The callback for the request.
     */
-  def readOffer(offerLink: String, callback: RequestCallback[_]): Unit = js.native
+  def readOffer(offerLink: String, callback: RequestCallback[js.Any]): Unit = js.native
   
   /**
     * List all offers
     * @param options       - The feed options.
     */
-  def readOffers(): QueryIterator[js.Array[_]] = js.native
-  def readOffers(options: FeedOptions): QueryIterator[js.Array[_]] = js.native
+  def readOffers(): QueryIterator[js.Array[js.Any]] = js.native
+  def readOffers(options: FeedOptions): QueryIterator[js.Array[js.Any]] = js.native
   
   def readPermission(permissionLink: String, callback: RequestCallback[PermissionMeta]): Unit = js.native
   /**
@@ -685,7 +684,7 @@ class DocumentClient protected () extends StObject {
     * @param offer         - Represent the new offer body.
     * @param callback      - The callback for the request.
     */
-  def replaceOffer(offerLink: String, offer: js.Any, callback: RequestCallback[_]): Unit = js.native
+  def replaceOffer(offerLink: String, offer: js.Any, callback: RequestCallback[js.Any]): Unit = js.native
   
   def replacePermission(permissionLink: String, permission: Permission, callback: RequestCallback[PermissionMeta]): Unit = js.native
   /**
@@ -757,7 +756,7 @@ class DocumentClient protected () extends StObject {
     callback: RequestCallback[UserDefinedFunctionMeta]
   ): Unit = js.native
   
-  def updateMedia(mediaLink: String, readableStream: ReadableStream, callback: RequestCallback[_]): Unit = js.native
+  def updateMedia(mediaLink: String, readableStream: ReadableStream, callback: RequestCallback[js.Any]): Unit = js.native
   /**
     * Update media for the attachment
     * @param mediaLink         - The media link of the media in the attachment.
@@ -769,7 +768,7 @@ class DocumentClient protected () extends StObject {
     mediaLink: String,
     readableStream: ReadableStream,
     options: MediaOptions,
-    callback: RequestCallback[_]
+    callback: RequestCallback[js.Any]
   ): Unit = js.native
   
   def upsertAttachment(documentLink: String, body: Attachment, callback: RequestCallback[AttachmentMeta]): Unit = js.native
@@ -791,7 +790,7 @@ class DocumentClient protected () extends StObject {
     callback: RequestCallback[AttachmentMeta]
   ): Unit = js.native
   
-  def upsertAttachmentAndUploadMedia(documentLink: String, readableStream: ReadableStream, callback: RequestCallback[_]): Unit = js.native
+  def upsertAttachmentAndUploadMedia(documentLink: String, readableStream: ReadableStream, callback: RequestCallback[js.Any]): Unit = js.native
   /**
     * Upsert an attachment for the document object.
     * @param documentLink      - The self-link of the document.
@@ -803,7 +802,7 @@ class DocumentClient protected () extends StObject {
     documentLink: String,
     readableStream: ReadableStream,
     options: MediaOptions,
-    callback: RequestCallback[_]
+    callback: RequestCallback[js.Any]
   ): Unit = js.native
   
   def upsertDocument[T](

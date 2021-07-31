@@ -2,48 +2,46 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A rule to be applied in a Policy.
   */
-@js.native
 trait SchemaRule extends StObject {
   
   /**
     * Required
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * Additional restrictions that must be met. All conditions must pass for
     * the rule to match.
     */
-  var conditions: js.UndefOr[js.Array[SchemaCondition]] = js.native
+  var conditions: js.UndefOr[js.Array[SchemaCondition]] = js.undefined
   
   /**
     * Human-readable description of the rule.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * If one or more &#39;in&#39; clauses are specified, the rule matches if
     * the PRINCIPAL/AUTHORITY_SELECTOR is in at least one of these entries.
     */
-  var ins: js.UndefOr[js.Array[String]] = js.native
+  var ins: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The config returned to callers of tech.iam.IAM.CheckPolicy for any
     * entries that match the LOG action.
     */
-  var logConfigs: js.UndefOr[js.Array[SchemaLogConfig]] = js.native
+  var logConfigs: js.UndefOr[js.Array[SchemaLogConfig]] = js.undefined
   
   /**
     * If one or more &#39;not_in&#39; clauses are specified, the rule matches
     * if the PRINCIPAL/AUTHORITY_SELECTOR is in none of the entries.
     */
-  var notIns: js.UndefOr[js.Array[String]] = js.native
+  var notIns: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A permission is a string of form &#39;..&#39; (e.g.,
@@ -51,7 +49,7 @@ trait SchemaRule extends StObject {
     * permissions, and a verb part of &#39;*&#39; (e.g.,
     * &#39;storage.buckets.*&#39;) matches all verbs.
     */
-  var permissions: js.UndefOr[js.Array[String]] = js.native
+  var permissions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaRule {
   

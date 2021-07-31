@@ -4,12 +4,14 @@ import typings.enzyme.mod.ReactWrapper
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object findOutermostIntrinsicMod {
   
-  @JSImport("@material-ui/core/test-utils/findOutermostIntrinsic", JSImport.Default)
+  @JSImport("@material-ui/core/test-utils/findOutermostIntrinsic", JSImport.Namespace)
   @js.native
-  def default(reactWrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, _]]): ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, _]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(reactWrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]): ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reactWrapper.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]]
 }

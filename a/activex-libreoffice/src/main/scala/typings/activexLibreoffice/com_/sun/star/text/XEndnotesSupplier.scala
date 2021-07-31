@@ -6,24 +6,24 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to access the endnotes within the context (e.g. document). */
-@js.native
-trait XEndnotesSupplier extends XInterface {
+trait XEndnotesSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the endnote settings of the document. */
-  val EndnoteSettings: XPropertySet = js.native
+  val EndnoteSettings: XPropertySet
   
   /** @returns a collection of endnotes. */
-  val Endnotes: XIndexAccess = js.native
+  val Endnotes: XIndexAccess
   
   /** @returns the endnote settings of the document. */
-  def getEndnoteSettings(): XPropertySet = js.native
+  def getEndnoteSettings(): XPropertySet
   
   /** @returns a collection of endnotes. */
-  def getEndnotes(): XIndexAccess = js.native
+  def getEndnotes(): XIndexAccess
 }
 object XEndnotesSupplier {
   

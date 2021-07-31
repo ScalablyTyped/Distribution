@@ -11,8 +11,8 @@ Native AngularJS (Angular) directives for Bootstrap
 | Full name          | angular-ui-bootstrap |
 | Keywords           | angularjs, angular, bootstrap, ui |
 | # releases         | 0 |
-| # dependents       | 232 |
-| # downloads        | 6472987 |
+| # dependents       | 234 |
+| # downloads        | 8468542 |
 | # stars            | 27 |
 
 ## Links

@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An instance of this interface is used by the {@link XGridRowSelection} to get notifications about selection changes. */
-@js.native
-trait XGridSelectionListener extends XEventListener {
+trait XGridSelectionListener
+  extends StObject
+     with XEventListener {
   
   /** Invoked after a selection was changed. */
-  def selectionChanged(gridSelectionEvent: GridSelectionEvent): Unit = js.native
+  def selectionChanged(gridSelectionEvent: GridSelectionEvent): Unit
 }
 object XGridSelectionListener {
   

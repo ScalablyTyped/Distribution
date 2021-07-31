@@ -6,7 +6,6 @@ import typings.std.Blob
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("scrivito", "Binary")
@@ -37,17 +36,17 @@ class Binary protected () extends StObject {
 /* static members */
 object Binary {
   
-  @JSImport("scrivito", "Binary.uplload")
+  @JSImport("scrivito", "Binary")
   @js.native
-  def uplload(source: File): FutureBinary = js.native
-  @JSImport("scrivito", "Binary.uplload")
-  @js.native
-  def uplload(source: File, options: Filename): FutureBinary = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("scrivito", "Binary.upload")
-  @js.native
-  def upload(source: Blob, options: ContentType): FutureBinary = js.native
-  @JSImport("scrivito", "Binary.upload")
-  @js.native
-  def upload(source: File, options: ContentType): FutureBinary = js.native
+  @scala.inline
+  def uplload(source: File): FutureBinary = ^.asInstanceOf[js.Dynamic].applyDynamic("uplload")(source.asInstanceOf[js.Any]).asInstanceOf[FutureBinary]
+  @scala.inline
+  def uplload(source: File, options: Filename): FutureBinary = (^.asInstanceOf[js.Dynamic].applyDynamic("uplload")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FutureBinary]
+  
+  @scala.inline
+  def upload(source: Blob, options: ContentType): FutureBinary = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FutureBinary]
+  @scala.inline
+  def upload(source: File, options: ContentType): FutureBinary = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FutureBinary]
 }

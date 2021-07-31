@@ -2,31 +2,29 @@ package typings.tedious.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionAuthenticationOptions extends StObject {
   
   /**
     * Once you set domain, driver will connect to SQL Server using domain login.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * Password to use for authentication.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * Authentication token used when type is 'azure-active-directory-access-token'
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
   
   /**
     * User name to use for authentication.
     */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
 }
 object ConnectionAuthenticationOptions {
   

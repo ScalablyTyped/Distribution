@@ -2,31 +2,29 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateResourceDataSyncRequest extends StObject {
   
   /**
     * Amazon S3 configuration details for the sync. This parameter is required if the SyncType value is SyncToDestination.
     */
-  var S3Destination: js.UndefOr[ResourceDataSyncS3Destination] = js.native
+  var S3Destination: js.UndefOr[ResourceDataSyncS3Destination] = js.undefined
   
   /**
     * A name for the configuration.
     */
-  var SyncName: ResourceDataSyncName = js.native
+  var SyncName: ResourceDataSyncName
   
   /**
     * Specify information about the data sources to synchronize. This parameter is required if the SyncType value is SyncFromSource.
     */
-  var SyncSource: js.UndefOr[ResourceDataSyncSource] = js.native
+  var SyncSource: js.UndefOr[ResourceDataSyncSource] = js.undefined
   
   /**
     * Specify SyncToDestination to create a resource data sync that synchronizes data to an S3 bucket for Inventory. If you specify SyncToDestination, you must provide a value for S3Destination. Specify SyncFromSource to synchronize data from a single account and multiple Regions, or multiple AWS accounts and Regions, as listed in AWS Organizations for Explorer. If you specify SyncFromSource, you must provide a value for SyncSource. The default value is SyncToDestination.
     */
-  var SyncType: js.UndefOr[ResourceDataSyncType] = js.native
+  var SyncType: js.UndefOr[ResourceDataSyncType] = js.undefined
 }
 object CreateResourceDataSyncRequest {
   

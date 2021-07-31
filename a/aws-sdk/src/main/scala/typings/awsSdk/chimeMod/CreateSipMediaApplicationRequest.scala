@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSipMediaApplicationRequest extends StObject {
   
   /**
     * AWS Region assigned to the SIP media application.
     */
-  var AwsRegion: String = js.native
+  var AwsRegion: String
   
   /**
     * List of endpoints (Lambda Amazon Resource Names) specified for the SIP media application. Currently, only one endpoint is supported.
     */
-  var Endpoints: SipMediaApplicationEndpointList = js.native
+  var Endpoints: SipMediaApplicationEndpointList
   
   /**
     * The SIP media application name.
     */
-  var Name: js.UndefOr[SipMediaApplicationName] = js.native
+  var Name: js.UndefOr[SipMediaApplicationName] = js.undefined
 }
 object CreateSipMediaApplicationRequest {
   

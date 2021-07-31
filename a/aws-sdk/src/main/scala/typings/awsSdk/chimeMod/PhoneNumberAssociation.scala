@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhoneNumberAssociation extends StObject {
   
   /**
     * The timestamp of the phone number association, in ISO 8601 format.
     */
-  var AssociatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var AssociatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * Defines the association with an Amazon Chime account ID, user ID, Amazon Chime Voice Connector ID, or Amazon Chime Voice Connector group ID.
     */
-  var Name: js.UndefOr[PhoneNumberAssociationName] = js.native
+  var Name: js.UndefOr[PhoneNumberAssociationName] = js.undefined
   
   /**
     * Contains the ID for the entity specified in Name.
     */
-  var Value: js.UndefOr[String] = js.native
+  var Value: js.UndefOr[String] = js.undefined
 }
 object PhoneNumberAssociation {
   

@@ -2,13 +2,14 @@ package typings.openui5.sap.ui.model
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object json {
   
   @js.native
-  trait JSONModel extends ClientModel {
+  trait JSONModel
+    extends StObject
+       with ClientModel {
     
     /**
       * Serializes the current JSON data of the model into a string.Note: May not work in Internet Explorer
@@ -74,8 +75,8 @@ object json {
       * found.
       */
     def setProperty(sPath: String, oValue: js.Any): Boolean = js.native
-    def setProperty(sPath: String, oValue: js.Any, oContext: js.UndefOr[scala.Nothing], bAsyncUpdate: Boolean): Boolean = js.native
     def setProperty(sPath: String, oValue: js.Any, oContext: js.Any): Boolean = js.native
     def setProperty(sPath: String, oValue: js.Any, oContext: js.Any, bAsyncUpdate: Boolean): Boolean = js.native
+    def setProperty(sPath: String, oValue: js.Any, oContext: Unit, bAsyncUpdate: Boolean): Boolean = js.native
   }
 }

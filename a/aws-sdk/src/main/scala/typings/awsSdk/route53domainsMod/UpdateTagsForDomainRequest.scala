@@ -2,21 +2,19 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTagsForDomainRequest extends StObject {
   
   /**
     * The domain for which you want to add or update tags.
     */
-  var DomainName: typings.awsSdk.route53domainsMod.DomainName = js.native
+  var DomainName: typings.awsSdk.route53domainsMod.DomainName
   
   /**
     * A list of the tag keys and values that you want to add or update. If you specify a key that already exists, the corresponding value will be replaced.
     */
-  var TagsToUpdate: js.UndefOr[TagList] = js.native
+  var TagsToUpdate: js.UndefOr[TagList] = js.undefined
 }
 object UpdateTagsForDomainRequest {
   

@@ -12,7 +12,7 @@ A simple hash set in JavaScript
 | Keywords           | HashSet, JavaScript, Node |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 64065 |
+| # downloads        | 60230 |
 | # stars            | 0 |
 
 ## Links

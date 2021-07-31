@@ -6,10 +6,13 @@ import typings.appBuilderLib.platformPackagerMod.PlatformPackager
 import typings.builderUtil.archMod.Arch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object targetUtilMod {
+  
+  @JSImport("app-builder-lib/out/targets/targetUtil", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("app-builder-lib/out/targets/targetUtil", "StageDir")
   @js.native
@@ -23,15 +26,12 @@ object targetUtilMod {
     def getTempFile(name: String): String = js.native
   }
   
-  @JSImport("app-builder-lib/out/targets/targetUtil", "createStageDir")
-  @js.native
-  def createStageDir(target: Target, packager: PlatformPackager[_], arch: Arch): js.Promise[StageDir] = js.native
+  @scala.inline
+  def createStageDir(target: Target, packager: PlatformPackager[js.Any], arch: Arch): js.Promise[StageDir] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStageDir")(target.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StageDir]]
   
-  @JSImport("app-builder-lib/out/targets/targetUtil", "createStageDirPath")
-  @js.native
-  def createStageDirPath(target: Target, packager: PlatformPackager[_], arch: Arch): js.Promise[String] = js.native
+  @scala.inline
+  def createStageDirPath(target: Target, packager: PlatformPackager[js.Any], arch: Arch): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStageDirPath")(target.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("app-builder-lib/out/targets/targetUtil", "getWindowsInstallationDirName")
-  @js.native
-  def getWindowsInstallationDirName(appInfo: AppInfo, isTryToUseProductName: Boolean): String = js.native
+  @scala.inline
+  def getWindowsInstallationDirName(appInfo: AppInfo, isTryToUseProductName: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getWindowsInstallationDirName")(appInfo.asInstanceOf[js.Any], isTryToUseProductName.asInstanceOf[js.Any])).asInstanceOf[String]
 }

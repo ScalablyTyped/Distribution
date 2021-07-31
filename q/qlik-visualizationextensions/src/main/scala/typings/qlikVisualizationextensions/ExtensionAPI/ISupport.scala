@@ -2,21 +2,19 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISupport extends StObject {
   
   // | () => boolean;
-  var canTakeSnapshot: js.UndefOr[Boolean] = js.native
+  var canTakeSnapshot: js.UndefOr[Boolean] = js.undefined
   
   // | () => boolean;
-  var export: js.UndefOr[Boolean] = js.native
+  var `export`: js.UndefOr[Boolean] = js.undefined
   
-  var exportData: js.UndefOr[Boolean] = js.native
+  var exportData: js.UndefOr[Boolean] = js.undefined
   
-  var snapshot: js.UndefOr[Boolean] = js.native
+  var snapshot: js.UndefOr[Boolean] = js.undefined
 }
 object ISupport {
   

@@ -2,20 +2,19 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TextColumns extends StObject {
   
   def Add(): TextColumn = js.native
-  def Add(Width: js.UndefOr[scala.Nothing], Spacing: js.UndefOr[scala.Nothing], EvenlySpaced: js.Any): TextColumn = js.native
-  def Add(Width: js.UndefOr[scala.Nothing], Spacing: js.Any): TextColumn = js.native
-  def Add(Width: js.UndefOr[scala.Nothing], Spacing: js.Any, EvenlySpaced: js.Any): TextColumn = js.native
   def Add(Width: js.Any): TextColumn = js.native
-  def Add(Width: js.Any, Spacing: js.UndefOr[scala.Nothing], EvenlySpaced: js.Any): TextColumn = js.native
   def Add(Width: js.Any, Spacing: js.Any): TextColumn = js.native
   def Add(Width: js.Any, Spacing: js.Any, EvenlySpaced: js.Any): TextColumn = js.native
+  def Add(Width: js.Any, Spacing: Unit, EvenlySpaced: js.Any): TextColumn = js.native
+  def Add(Width: Unit, Spacing: js.Any): TextColumn = js.native
+  def Add(Width: Unit, Spacing: js.Any, EvenlySpaced: js.Any): TextColumn = js.native
+  def Add(Width: Unit, Spacing: Unit, EvenlySpaced: js.Any): TextColumn = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   

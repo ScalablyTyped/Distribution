@@ -2,12 +2,12 @@ package typings.postcssSelectorParser.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Container[Value /* <: js.UndefOr[String] */, Child /* <: Node */]
-  extends Base[Value, js.UndefOr[Container[String, Node]]] {
+  extends StObject
+     with Base[Value, js.UndefOr[Container[String, Node]]] {
   
   def append(selector: Selector_): this.type = js.native
   

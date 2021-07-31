@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventBatchRecordFailure extends StObject {
   
   /** The cause for the update failure. */
-  var failureCause: js.UndefOr[String] = js.native
+  var failureCause: js.UndefOr[String] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#eventBatchRecordFailure`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The time range which was rejected; empty for a request-wide failure. */
-  var range: js.UndefOr[EventPeriodRange] = js.native
+  var range: js.UndefOr[EventPeriodRange] = js.undefined
 }
 object EventBatchRecordFailure {
   

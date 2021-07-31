@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.WechatMiniprogram.Component
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullProperty[T /* <: PropertyType */] extends StObject {
   
   /** 属性值被更改时的响应函数 */
@@ -16,16 +14,16 @@ trait FullProperty[T /* <: PropertyType */] extends StObject {
       /* changedPath */ js.Array[String | Double], 
       Unit
     ])
-  ] = js.native
+  ] = js.undefined
   
   /** 属性的类型（可以指定多个） */
-  var optionalTypes: js.UndefOr[js.Array[ShortProperty]] = js.native
+  var optionalTypes: js.UndefOr[js.Array[ShortProperty]] = js.undefined
   
   /** 属性类型 */
-  var `type`: T = js.native
+  var `type`: T
   
   /** 属性初始值 */
-  var value: js.UndefOr[ValueType[T]] = js.native
+  var value: js.UndefOr[ValueType[T]] = js.undefined
 }
 object FullProperty {
   
@@ -37,7 +35,7 @@ object FullProperty {
   }
   
   @scala.inline
-  implicit class FullPropertyMutableBuilder[Self <: FullProperty[_], T /* <: PropertyType */] (val x: Self with FullProperty[T]) extends AnyVal {
+  implicit class FullPropertyMutableBuilder[Self <: FullProperty[?], T /* <: PropertyType */] (val x: Self & FullProperty[T]) extends AnyVal {
     
     @scala.inline
     def setObserver(

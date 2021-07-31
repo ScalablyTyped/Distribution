@@ -2,31 +2,29 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncreaseNodeGroupsInGlobalReplicationGroupMessage extends StObject {
   
   /**
     * Indicates that the process begins immediately. At present, the only permitted value for this parameter is true.
     */
-  var ApplyImmediately: Boolean = js.native
+  var ApplyImmediately: Boolean
   
   /**
     * The name of the Global Datastore
     */
-  var GlobalReplicationGroupId: String = js.native
+  var GlobalReplicationGroupId: String
   
   /**
     * The number of node groups you wish to add
     */
-  var NodeGroupCount: Integer = js.native
+  var NodeGroupCount: Integer
   
   /**
     * Describes the replication group IDs, the AWS regions where they are stored and the shard configuration for each that comprise the Global Datastore
     */
-  var RegionalConfigurations: js.UndefOr[RegionalConfigurationList] = js.native
+  var RegionalConfigurations: js.UndefOr[RegionalConfigurationList] = js.undefined
 }
 object IncreaseNodeGroupsInGlobalReplicationGroupMessage {
   

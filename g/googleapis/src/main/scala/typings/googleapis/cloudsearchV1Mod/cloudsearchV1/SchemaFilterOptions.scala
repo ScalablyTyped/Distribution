@@ -2,26 +2,24 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Filter options to be applied on query.
   */
-@js.native
 trait SchemaFilterOptions extends StObject {
   
   /**
     * Generic filter to restrict the search, such as `lang:en`, `site:xyz`.
     */
-  var filter: js.UndefOr[SchemaFilter] = js.native
+  var filter: js.UndefOr[SchemaFilter] = js.undefined
   
   /**
     * If object_type is set, only objects of that type are returned. This
     * should correspond to the name of the object that was registered within
     * the definition of schema. The maximum length is 256 characters.
     */
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
 }
 object SchemaFilterOptions {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientPopupControlBase.CloseUp event.
   */
-@js.native
-trait ASPxClientPopupWindowCloseUpEventArgs extends ASPxClientPopupWindowEventArgs {
+trait ASPxClientPopupWindowCloseUpEventArgs
+  extends StObject
+     with ASPxClientPopupWindowEventArgs {
   
   /**
     * Gets the value that identifies the reason the popup window closes.
     */
-  var closeReason: ASPxClientPopupControlCloseReason = js.native
+  var closeReason: ASPxClientPopupControlCloseReason
 }
 object ASPxClientPopupWindowCloseUpEventArgs {
   

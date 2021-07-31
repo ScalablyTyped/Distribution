@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -68,6 +67,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "LayoutGroupComponent")
 @js.native
 class LayoutGroupComponent protected ()
-  extends typings.playcanvas.pc.LayoutGroupComponent {
+  extends StObject
+     with typings.playcanvas.pc.LayoutGroupComponent {
   def this(system: typings.playcanvas.pc.LayoutGroupComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }

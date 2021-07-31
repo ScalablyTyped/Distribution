@@ -2,125 +2,123 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGElementTagNameMap extends StObject {
   
-  var a: SVGAElement = js.native
+  var a: SVGAElement
   
-  var circle: SVGCircleElement = js.native
+  var circle: SVGCircleElement
   
-  var clipPath: SVGClipPathElement = js.native
+  var clipPath: SVGClipPathElement
   
-  var defs: SVGDefsElement = js.native
+  var defs: SVGDefsElement
   
-  var desc: SVGDescElement = js.native
+  var desc: SVGDescElement
   
-  var ellipse: SVGEllipseElement = js.native
+  var ellipse: SVGEllipseElement
   
-  var feBlend: SVGFEBlendElement = js.native
+  var feBlend: SVGFEBlendElement
   
-  var feColorMatrix: SVGFEColorMatrixElement = js.native
+  var feColorMatrix: SVGFEColorMatrixElement
   
-  var feComponentTransfer: SVGFEComponentTransferElement = js.native
+  var feComponentTransfer: SVGFEComponentTransferElement
   
-  var feComposite: SVGFECompositeElement = js.native
+  var feComposite: SVGFECompositeElement
   
-  var feConvolveMatrix: SVGFEConvolveMatrixElement = js.native
+  var feConvolveMatrix: SVGFEConvolveMatrixElement
   
-  var feDiffuseLighting: SVGFEDiffuseLightingElement = js.native
+  var feDiffuseLighting: SVGFEDiffuseLightingElement
   
-  var feDisplacementMap: SVGFEDisplacementMapElement = js.native
+  var feDisplacementMap: SVGFEDisplacementMapElement
   
-  var feDistantLight: SVGFEDistantLightElement = js.native
+  var feDistantLight: SVGFEDistantLightElement
   
-  var feFlood: SVGFEFloodElement = js.native
+  var feFlood: SVGFEFloodElement
   
-  var feFuncA: SVGFEFuncAElement = js.native
+  var feFuncA: SVGFEFuncAElement
   
-  var feFuncB: SVGFEFuncBElement = js.native
+  var feFuncB: SVGFEFuncBElement
   
-  var feFuncG: SVGFEFuncGElement = js.native
+  var feFuncG: SVGFEFuncGElement
   
-  var feFuncR: SVGFEFuncRElement = js.native
+  var feFuncR: SVGFEFuncRElement
   
-  var feGaussianBlur: SVGFEGaussianBlurElement = js.native
+  var feGaussianBlur: SVGFEGaussianBlurElement
   
-  var feImage: SVGFEImageElement = js.native
+  var feImage: SVGFEImageElement
   
-  var feMerge: SVGFEMergeElement = js.native
+  var feMerge: SVGFEMergeElement
   
-  var feMergeNode: SVGFEMergeNodeElement = js.native
+  var feMergeNode: SVGFEMergeNodeElement
   
-  var feMorphology: SVGFEMorphologyElement = js.native
+  var feMorphology: SVGFEMorphologyElement
   
-  var feOffset: SVGFEOffsetElement = js.native
+  var feOffset: SVGFEOffsetElement
   
-  var fePointLight: SVGFEPointLightElement = js.native
+  var fePointLight: SVGFEPointLightElement
   
-  var feSpecularLighting: SVGFESpecularLightingElement = js.native
+  var feSpecularLighting: SVGFESpecularLightingElement
   
-  var feSpotLight: SVGFESpotLightElement = js.native
+  var feSpotLight: SVGFESpotLightElement
   
-  var feTile: SVGFETileElement = js.native
+  var feTile: SVGFETileElement
   
-  var feTurbulence: SVGFETurbulenceElement = js.native
+  var feTurbulence: SVGFETurbulenceElement
   
-  var filter: SVGFilterElement = js.native
+  var filter: SVGFilterElement
   
-  var foreignObject: SVGForeignObjectElement = js.native
+  var foreignObject: SVGForeignObjectElement
   
-  var g: SVGGElement = js.native
+  var g: SVGGElement
   
-  var image: SVGImageElement = js.native
+  var image: SVGImageElement
   
-  var line: SVGLineElement = js.native
+  var line: SVGLineElement
   
-  var linearGradient: SVGLinearGradientElement = js.native
+  var linearGradient: SVGLinearGradientElement
   
-  var marker: SVGMarkerElement = js.native
+  var marker: SVGMarkerElement
   
-  var mask: SVGMaskElement = js.native
+  var mask: SVGMaskElement
   
-  var metadata: SVGMetadataElement = js.native
+  var metadata: SVGMetadataElement
   
-  var path: SVGPathElement = js.native
+  var path: SVGPathElement
   
-  var pattern: SVGPatternElement = js.native
+  var pattern: SVGPatternElement
   
-  var polygon: SVGPolygonElement = js.native
+  var polygon: SVGPolygonElement
   
-  var polyline: SVGPolylineElement = js.native
+  var polyline: SVGPolylineElement
   
-  var radialGradient: SVGRadialGradientElement = js.native
+  var radialGradient: SVGRadialGradientElement
   
-  var rect: SVGRectElement = js.native
+  var rect: SVGRectElement
   
-  var script: SVGScriptElement = js.native
+  var script: SVGScriptElement
   
-  var stop: SVGStopElement = js.native
+  var stop: SVGStopElement
   
-  var style: SVGStyleElement = js.native
+  var style: SVGStyleElement
   
-  var svg: SVGSVGElement = js.native
+  var svg: SVGSVGElement
   
-  var switch: SVGSwitchElement = js.native
+  var switch: SVGSwitchElement
   
-  var symbol: SVGSymbolElement = js.native
+  var symbol: SVGSymbolElement
   
-  var text: SVGTextElement = js.native
+  var text: SVGTextElement
   
-  var textPath: SVGTextPathElement = js.native
+  var textPath: SVGTextPathElement
   
-  var title: SVGTitleElement = js.native
+  var title: SVGTitleElement
   
-  var tspan: SVGTSpanElement = js.native
+  var tspan: SVGTSpanElement
   
-  var use: SVGUseElement = js.native
+  var use: SVGUseElement
   
-  var view: SVGViewElement = js.native
+  var view: SVGViewElement
 }
 object SVGElementTagNameMap {
   

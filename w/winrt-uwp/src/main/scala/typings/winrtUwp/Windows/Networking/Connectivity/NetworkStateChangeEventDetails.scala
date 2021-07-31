@@ -2,36 +2,34 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates which properties of a network have changed after a network state change background trigger. */
-@js.native
 trait NetworkStateChangeEventDetails extends StObject {
   
   /** Indicates if a connected network has a new connection cost. */
-  var hasNewConnectionCost: Boolean = js.native
+  var hasNewConnectionCost: Boolean
   
   /** Indicates a connected network has a new domain connectivity level. */
-  var hasNewDomainConnectivityLevel: Boolean = js.native
+  var hasNewDomainConnectivityLevel: Boolean
   
   /** Indicates if the list of host names returned by GetHostNames has changed. */
-  var hasNewHostNameList: Boolean = js.native
+  var hasNewHostNameList: Boolean
   
   /** Indicates if the local machine has a new connection profile associated with the current internet connection. */
-  var hasNewInternetConnectionProfile: Boolean = js.native
+  var hasNewInternetConnectionProfile: Boolean
   
   /** Indicates if the network connectivity level for any connection profiles has changed. */
-  var hasNewNetworkConnectivityLevel: Boolean = js.native
+  var hasNewNetworkConnectivityLevel: Boolean
   
   /** Gets a value indicating whether the network state change event shows a new tethering client count. */
-  var hasNewTetheringClientCount: Boolean = js.native
+  var hasNewTetheringClientCount: Boolean
   
   /** Gets a value that indicates whether the tethering operational state has changed. */
-  var hasNewTetheringOperationalState: Boolean = js.native
+  var hasNewTetheringOperationalState: Boolean
   
   /** Indicates if the network state change event represents a change to the registration state of a WWAN connection. The current registration state can be retrieved from WwanConnectionProfileDetails.GetNetworkRegistrationState . */
-  var hasNewWwanRegistrationState: Boolean = js.native
+  var hasNewWwanRegistrationState: Boolean
 }
 object NetworkStateChangeEventDetails {
   

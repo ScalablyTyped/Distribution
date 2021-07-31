@@ -3,42 +3,42 @@ package typings.c3.mod
 import typings.c3.anon.PositionText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait YAxisConfiguration extends AxisConfiguration {
+trait YAxisConfiguration
+  extends StObject
+     with AxisConfiguration {
   
   /**
     * Set default range of y axis. This option set the default value for y axis when there is no data on init.
     */
-  var default: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var default: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
   /**
     * Set center value of y axis.
     */
-  var center: js.UndefOr[Double] = js.native
+  var center: js.UndefOr[Double] = js.undefined
   
   /**
     * Change the direction of y axis.
     * If true set, the direction will be from the top to the bottom.
     */
-  var inverted: js.UndefOr[Boolean] = js.native
+  var inverted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set label on Y axis.
     */
-  var label: js.UndefOr[String | PositionText] = js.native
+  var label: js.UndefOr[String | PositionText] = js.undefined
   
   @JSName("max")
-  var max_YAxisConfiguration: js.UndefOr[Double] = js.native
+  var max_YAxisConfiguration: js.UndefOr[Double] = js.undefined
   
   @JSName("min")
-  var min_YAxisConfiguration: js.UndefOr[Double] = js.native
+  var min_YAxisConfiguration: js.UndefOr[Double] = js.undefined
   
-  var tick: js.UndefOr[YTickConfiguration] = js.native
+  var tick: js.UndefOr[YTickConfiguration] = js.undefined
   
-  var `type`: js.UndefOr[YAxisType] = js.native
+  var `type`: js.UndefOr[YAxisType] = js.undefined
 }
 object YAxisConfiguration {
   

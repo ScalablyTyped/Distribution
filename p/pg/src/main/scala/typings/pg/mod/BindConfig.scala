@@ -3,19 +3,17 @@ package typings.pg.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindConfig extends StObject {
   
-  var binary: js.UndefOr[String] = js.native
+  var binary: js.UndefOr[String] = js.undefined
   
-  var portal: js.UndefOr[String] = js.native
+  var portal: js.UndefOr[String] = js.undefined
   
-  var statement: js.UndefOr[String] = js.native
+  var statement: js.UndefOr[String] = js.undefined
   
-  var values: js.UndefOr[js.Array[js.UndefOr[Buffer | Null | String]]] = js.native
+  var values: js.UndefOr[js.Array[js.UndefOr[Buffer | Null | String]]] = js.undefined
 }
 object BindConfig {
   

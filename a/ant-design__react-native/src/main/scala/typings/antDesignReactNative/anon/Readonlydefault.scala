@@ -4,24 +4,22 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<@ant-design/react-native.@ant-design/react-native/lib/picker/MultiPickerProps.default> */
-@js.native
 trait Readonlydefault extends StObject {
   
-  val children: js.UndefOr[js.Any] = js.native
+  val children: js.UndefOr[js.Any] = js.undefined
   
-  val onScrollChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.native
+  val onScrollChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.undefined
   
-  val onValueChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.native
+  val onValueChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.undefined
   
-  val rootNativeProps: js.UndefOr[js.Any] = js.native
+  val rootNativeProps: js.UndefOr[js.Any] = js.undefined
   
-  val selectedValue: js.UndefOr[js.Array[_]] = js.native
+  val selectedValue: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  val style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  val style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object Readonlydefault {
   
@@ -59,7 +57,7 @@ object Readonlydefault {
     def setRootNativePropsUndefined: Self = StObject.set(x, "rootNativeProps", js.undefined)
     
     @scala.inline
-    def setSelectedValue(value: js.Array[_]): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
+    def setSelectedValue(value: js.Array[js.Any]): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)

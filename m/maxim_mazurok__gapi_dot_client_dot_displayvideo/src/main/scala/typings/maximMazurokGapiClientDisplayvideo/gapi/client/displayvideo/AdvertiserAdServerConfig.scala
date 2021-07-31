@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdvertiserAdServerConfig extends StObject {
   
   /** The configuration for advertisers that use both Campaign Manager 360 (CM360) and third-party ad servers. */
-  var cmHybridConfig: js.UndefOr[CmHybridConfig] = js.native
+  var cmHybridConfig: js.UndefOr[CmHybridConfig] = js.undefined
   
   /** The configuration for advertisers that use third-party ad servers only. */
-  var thirdPartyOnlyConfig: js.UndefOr[ThirdPartyOnlyConfig] = js.native
+  var thirdPartyOnlyConfig: js.UndefOr[ThirdPartyOnlyConfig] = js.undefined
 }
 object AdvertiserAdServerConfig {
   

@@ -2,34 +2,33 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapedLayoutOptions
-  extends BaseLayoutOptions
+  extends StObject
+     with BaseLayoutOptions
      with AnimatedLayoutOptions {
   
   // prevents node overlap, may overflow boundingBox if not enough space
-  var avoidOverlap: js.UndefOr[Boolean] = js.native
+  var avoidOverlap: js.UndefOr[Boolean] = js.undefined
   
   // constrain layout bounds
-  var boundingBox: js.UndefOr[BoundingBox12 | BoundingBoxWH] = js.native
+  var boundingBox: js.UndefOr[BoundingBox12 | BoundingBoxWH] = js.undefined
   
   // whether to fit to viewport
-  var fit: Boolean = js.native
+  var fit: Boolean
   
   // Excludes the label when calculating node bounding boxes for the layout algorithm
-  var nodeDimensionsIncludeLabels: Boolean = js.native
+  var nodeDimensionsIncludeLabels: Boolean
   
   // padding used on fit
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
   // a sorting function to order the nodes
-  var sort: js.UndefOr[SortingFunction] = js.native
+  var sort: js.UndefOr[SortingFunction] = js.undefined
   
   // Applies a multiplicative factor (>0) to expand or compress the overall area that the nodes take up
-  var spacingFactor: js.UndefOr[Double] = js.native
+  var spacingFactor: js.UndefOr[Double] = js.undefined
 }
 object ShapedLayoutOptions {
   

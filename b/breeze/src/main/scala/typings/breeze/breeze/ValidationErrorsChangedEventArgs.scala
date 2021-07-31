@@ -2,17 +2,15 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationErrorsChangedEventArgs extends StObject {
   
-  var added: js.Array[ValidationError] = js.native
+  var added: js.Array[ValidationError]
   
-  var entity: Entity = js.native
+  var entity: Entity
   
-  var removed: js.Array[ValidationError] = js.native
+  var removed: js.Array[ValidationError]
 }
 object ValidationErrorsChangedEventArgs {
   

@@ -3,34 +3,27 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ExportAllDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportAllDeclaration_
-  extends Node
+  extends StObject
+     with Node
      with Declaration
      with ExportDeclaration
      with ModuleDeclaration
      with Statement {
   
-  var source: StringLiteral_ = js.native
+  var source: StringLiteral_
   
   @JSName("type")
-  var type_ExportAllDeclaration_ : ExportAllDeclaration = js.native
+  var type_ExportAllDeclaration_ : ExportAllDeclaration
 }
 object ExportAllDeclaration_ {
   
   @scala.inline
-  def apply(
-    end: Double,
-    loc: SourceLocation,
-    source: StringLiteral_,
-    start: Double,
-    `type`: ExportAllDeclaration
-  ): ExportAllDeclaration_ = {
+  def apply(end: Double, loc: SourceLocation, source: StringLiteral_, start: Double): ExportAllDeclaration_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ExportAllDeclaration")
     __obj.asInstanceOf[ExportAllDeclaration_]
   }
   

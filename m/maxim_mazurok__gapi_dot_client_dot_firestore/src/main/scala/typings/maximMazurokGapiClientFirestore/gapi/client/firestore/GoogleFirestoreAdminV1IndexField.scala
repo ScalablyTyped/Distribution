@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleFirestoreAdminV1IndexField extends StObject {
   
   /** Indicates that this field supports operations on `array_value`s. */
-  var arrayConfig: js.UndefOr[String] = js.native
+  var arrayConfig: js.UndefOr[String] = js.undefined
   
   /** Can be __name__. For single field indexes, this must match the name of the field or may be omitted. */
-  var fieldPath: js.UndefOr[String] = js.native
+  var fieldPath: js.UndefOr[String] = js.undefined
   
   /** Indicates that this field supports ordering by the specified order or comparing using =, <, <=, >, >=. */
-  var order: js.UndefOr[String] = js.native
+  var order: js.UndefOr[String] = js.undefined
 }
 object GoogleFirestoreAdminV1IndexField {
   

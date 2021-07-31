@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playableloca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleMapsPlayablelocationsV3SampleAreaFilter extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GoogleMapsPlayablelocationsV3SampleAreaFilter extends StObject {
     * hierarchical, and can therefore be used for spatial indexing. The S2 geometry library is available in a number of languages: * [C++](https://github.com/google/s2geometry) *
     * [Java](https://github.com/google/s2-geometry-library-java) * [Go](https://github.com/golang/geo) * [Python](https://github.com/google/s2geometry/tree/master/src/python)
     */
-  var s2CellId: js.UndefOr[String] = js.native
+  var s2CellId: js.UndefOr[String] = js.undefined
 }
 object GoogleMapsPlayablelocationsV3SampleAreaFilter {
   

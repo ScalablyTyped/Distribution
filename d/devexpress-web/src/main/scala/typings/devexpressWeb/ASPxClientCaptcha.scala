@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxCaptcha control.
   */
-@js.native
-trait ASPxClientCaptcha extends ASPxClientControl {
+trait ASPxClientCaptcha
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Sets input focus to the control's text box.
     */
-  def Focus(): Unit = js.native
+  def Focus(): Unit
   
   /**
     * Refreshes the code displayed within the editor's challenge image.
     */
-  def Refresh(): Unit = js.native
+  def Refresh(): Unit
 }
 object ASPxClientCaptcha {
   

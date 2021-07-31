@@ -2,16 +2,16 @@ package typings.diff.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WordsOptions extends BaseOptions {
+trait WordsOptions
+  extends StObject
+     with BaseOptions {
   
   /**
     * `true` to ignore leading and trailing whitespace. This is the same as `diffWords()`.
     */
-  var ignoreWhitespace: js.UndefOr[Boolean] = js.native
+  var ignoreWhitespace: js.UndefOr[Boolean] = js.undefined
 }
 object WordsOptions {
   

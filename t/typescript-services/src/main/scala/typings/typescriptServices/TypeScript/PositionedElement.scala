@@ -2,55 +2,53 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PositionedElement extends StObject {
   
-  var _element: js.Any = js.native
+  var _element: js.Any
   
-  var _fullStart: js.Any = js.native
+  var _fullStart: js.Any
   
-  var _parent: js.Any = js.native
+  var _parent: js.Any
   
-  def childAt(index: Double): PositionedElement = js.native
+  def childAt(index: Double): PositionedElement
   
-  def childCount(): Double = js.native
+  def childCount(): Double
   
-  def childEnd(child: ISyntaxElement): Double = js.native
+  def childEnd(child: ISyntaxElement): Double
   
-  def childEndAt(index: Double): Double = js.native
+  def childEndAt(index: Double): Double
   
-  def childIndex(child: ISyntaxElement): Double = js.native
+  def childIndex(child: ISyntaxElement): Double
   
-  def childStart(child: ISyntaxElement): Double = js.native
+  def childStart(child: ISyntaxElement): Double
   
-  def childStartAt(index: Double): Double = js.native
+  def childStartAt(index: Double): Double
   
-  def containingNode(): PositionedNode = js.native
+  def containingNode(): PositionedNode
   
-  def element(): ISyntaxElement = js.native
+  def element(): ISyntaxElement
   
-  def end(): Double = js.native
+  def end(): Double
   
-  def fullEnd(): Double = js.native
+  def fullEnd(): Double
   
-  def fullStart(): Double = js.native
+  def fullStart(): Double
   
-  def fullWidth(): Double = js.native
+  def fullWidth(): Double
   
-  def getPositionedChild(child: ISyntaxElement): PositionedElement = js.native
+  def getPositionedChild(child: ISyntaxElement): PositionedElement
   
-  def kind(): SyntaxKind = js.native
+  def kind(): SyntaxKind
   
-  def parent(): PositionedElement = js.native
+  def parent(): PositionedElement
   
-  def parentElement(): ISyntaxElement = js.native
+  def parentElement(): ISyntaxElement
   
-  def root(): PositionedNode = js.native
+  def root(): PositionedNode
   
-  def start(): Double = js.native
+  def start(): Double
 }
 object PositionedElement {
   

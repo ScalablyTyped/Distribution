@@ -2,187 +2,185 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NightwatchKeys extends StObject {
   
   /** The numpad add (+) key. */
-  var ADD: String = js.native
+  var ADD: String
   
   /** The alt key. */
-  var ALT: String = js.native
+  var ALT: String
   
   /** The down arrow. */
-  var ARROW_DOWN: String = js.native
+  var ARROW_DOWN: String
   
   /** The left arrow. */
-  var ARROW_LEFT: String = js.native
+  var ARROW_LEFT: String
   
   /** The right arrow. */
-  var ARROW_RIGHT: String = js.native
+  var ARROW_RIGHT: String
   
   /** The up arrow. */
-  var ARROW_UP: String = js.native
+  var ARROW_UP: String
   
   /** The backspace key. */
-  var BACK_SPACE: String = js.native
+  var BACK_SPACE: String
   
   /** OS-specific keystroke sequence that performs a cancel action. */
-  var CANCEL: String = js.native
+  var CANCEL: String
   
   /** The clear key. This key only appears on full-size Apple keyboards in place of Num Lock key. */
-  var CLEAR: String = js.native
+  var CLEAR: String
   
   /** The command (⌘) key. */
-  var COMMAND: String = js.native
+  var COMMAND: String
   
   /** The control key. */
-  var CONTROL: String = js.native
+  var CONTROL: String
   
   /** The numpad decimal (.) key. */
-  var DECIMAL: String = js.native
+  var DECIMAL: String
   
   /** The delete key. */
-  var DELETE: String = js.native
+  var DELETE: String
   
   /** The numpad divide (/) key. */
-  var DIVIDE: String = js.native
+  var DIVIDE: String
   
-  var DOWN_ARROW: String = js.native
+  var DOWN_ARROW: String
   
   /** The end key. */
-  var END: String = js.native
+  var END: String
   
   /** The enter (numpad) key. */
-  var ENTER: String = js.native
+  var ENTER: String
   
   /** The equals key. */
-  var EQUALS: String = js.native
+  var EQUALS: String
   
   /** The escape key. */
-  var ESCAPE: String = js.native
+  var ESCAPE: String
   
   /** The F1 key. */
-  var F1: String = js.native
+  var F1: String
   
   /** The F10 key. */
-  var F10: String = js.native
+  var F10: String
   
   /** The F11 key. */
-  var F11: String = js.native
+  var F11: String
   
   /** The F12 key. */
-  var F12: String = js.native
+  var F12: String
   
   /** The F2 key. */
-  var F2: String = js.native
+  var F2: String
   
   /** The F3 key. */
-  var F3: String = js.native
+  var F3: String
   
   /** The F4 key. */
-  var F4: String = js.native
+  var F4: String
   
   /** The F5 key. */
-  var F5: String = js.native
+  var F5: String
   
   /** The F6 key. */
-  var F6: String = js.native
+  var F6: String
   
   /** The F7 key. */
-  var F7: String = js.native
+  var F7: String
   
   /** The F8 key. */
-  var F8: String = js.native
+  var F8: String
   
   /** The F9 key. */
-  var F9: String = js.native
+  var F9: String
   
   /** The help key. This key only appears on older Apple keyboards in place of the Insert key. */
-  var HELP: String = js.native
+  var HELP: String
   
   /** The home key. */
-  var HOME: String = js.native
+  var HOME: String
   
   /** The insert key. */
-  var INSERT: String = js.native
+  var INSERT: String
   
-  var LEFT_ARROW: String = js.native
+  var LEFT_ARROW: String
   
   /** The meta (Windows) key. */
-  var META: String = js.native
+  var META: String
   
   /** The numpad multiply (*) key. */
-  var MULTIPLY: String = js.native
+  var MULTIPLY: String
   
   /** Releases all held modifier keys. */
-  var NULL: String = js.native
+  var NULL: String
   
   /** The numpad zero key. */
-  var NUMPAD0: String = js.native
+  var NUMPAD0: String
   
   /** The numpad one key. */
-  var NUMPAD1: String = js.native
+  var NUMPAD1: String
   
   /** The numpad two key. */
-  var NUMPAD2: String = js.native
+  var NUMPAD2: String
   
   /** The numpad three key. */
-  var NUMPAD3: String = js.native
+  var NUMPAD3: String
   
   /** The numpad four key. */
-  var NUMPAD4: String = js.native
+  var NUMPAD4: String
   
   /** The numpad five key. */
-  var NUMPAD5: String = js.native
+  var NUMPAD5: String
   
   /** The numpad six key. */
-  var NUMPAD6: String = js.native
+  var NUMPAD6: String
   
   /** The numpad seven key. */
-  var NUMPAD7: String = js.native
+  var NUMPAD7: String
   
   /** The numpad eight key. */
-  var NUMPAD8: String = js.native
+  var NUMPAD8: String
   
   /** The numpad nine key. */
-  var NUMPAD9: String = js.native
+  var NUMPAD9: String
   
   /** The page down key. */
-  var PAGEDOWN: String = js.native
+  var PAGEDOWN: String
   
   /** The page up key. */
-  var PAGEUP: String = js.native
+  var PAGEUP: String
   
   /** The pause key. */
-  var PAUSE: String = js.native
+  var PAUSE: String
   
   /** The return key. */
-  var RETURN: String = js.native
+  var RETURN: String
   
-  var RIGHT_ARROW: String = js.native
+  var RIGHT_ARROW: String
   
   /** The semicolon key. */
-  var SEMICOLON: String = js.native
+  var SEMICOLON: String
   
   /** The numpad separator (=) key. */
-  var SEPARATOR: String = js.native
+  var SEPARATOR: String
   
   /** The shift key. */
-  var SHIFT: String = js.native
+  var SHIFT: String
   
   /** The space bar. */
-  var SPACE: String = js.native
+  var SPACE: String
   
   /** The numpad subtract (-) key. */
-  var SUBTRACT: String = js.native
+  var SUBTRACT: String
   
   /** The tab key. */
-  var TAB: String = js.native
+  var TAB: String
   
-  var UP_ARROW: String = js.native
+  var UP_ARROW: String
 }
 object NightwatchKeys {
   

@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2UiElementsSuggestion extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait GoogleActionsV2UiElementsSuggestion extends StObject {
     * Max 25 chars
     * Required
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2UiElementsSuggestion {
   

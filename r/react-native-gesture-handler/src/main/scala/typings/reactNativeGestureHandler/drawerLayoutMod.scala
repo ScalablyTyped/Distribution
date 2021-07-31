@@ -8,7 +8,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object drawerLayoutMod {
@@ -42,42 +41,41 @@ object drawerLayoutMod {
     def openDrawer(options: DrawerMovementOptionType): Unit = js.native
   }
   
-  @js.native
   trait DrawerLayoutProperties extends StObject {
     
-    var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var drawerBackgroundColor: js.UndefOr[String] = js.native
+    var drawerBackgroundColor: js.UndefOr[String] = js.undefined
     
-    var drawerLockMode: js.UndefOr[DrawerLockMode] = js.native
+    var drawerLockMode: js.UndefOr[DrawerLockMode] = js.undefined
     
-    var drawerPosition: js.UndefOr[DrawerPosition] = js.native
+    var drawerPosition: js.UndefOr[DrawerPosition] = js.undefined
     
-    var drawerType: js.UndefOr[DrawerType] = js.native
+    var drawerType: js.UndefOr[DrawerType] = js.undefined
     
-    var drawerWidth: js.UndefOr[Double] = js.native
+    var drawerWidth: js.UndefOr[Double] = js.undefined
     
-    var edgeWidth: js.UndefOr[Double] = js.native
+    var edgeWidth: js.UndefOr[Double] = js.undefined
     
-    var hideStatusBar: js.UndefOr[Boolean] = js.native
+    var hideStatusBar: js.UndefOr[Boolean] = js.undefined
     
-    var keyboardDismissMode: js.UndefOr[DrawerKeyboardDismissMode] = js.native
+    var keyboardDismissMode: js.UndefOr[DrawerKeyboardDismissMode] = js.undefined
     
-    var minSwipeDistance: js.UndefOr[Double] = js.native
+    var minSwipeDistance: js.UndefOr[Double] = js.undefined
     
-    var onDrawerClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDrawerClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDrawerOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDrawerOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDrawerStateChanged: js.UndefOr[js.Function2[/* newState */ DrawerState, /* drawerWillShow */ Boolean, Unit]] = js.native
+    var onDrawerStateChanged: js.UndefOr[js.Function2[/* newState */ DrawerState, /* drawerWillShow */ Boolean, Unit]] = js.undefined
     
-    var overlayColor: js.UndefOr[String] = js.native
+    var overlayColor: js.UndefOr[String] = js.undefined
     
-    def renderNavigationView(progressAnimatedValue: Value): ReactNode = js.native
+    def renderNavigationView(progressAnimatedValue: Value): ReactNode
     
-    var statusBarAnimation: js.UndefOr[StatusBarAnimation] = js.native
+    var statusBarAnimation: js.UndefOr[StatusBarAnimation] = js.undefined
     
-    var useNativeAnimations: js.UndefOr[Boolean] = js.native
+    var useNativeAnimations: js.UndefOr[Boolean] = js.undefined
   }
   object DrawerLayoutProperties {
     
@@ -212,10 +210,9 @@ object drawerLayoutMod {
     def unlocked: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.unlocked = "unlocked".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.unlocked]
   }
   
-  @js.native
   trait DrawerMovementOptionType extends StObject {
     
-    var velocity: js.UndefOr[Double] = js.native
+    var velocity: js.UndefOr[Double] = js.undefined
   }
   object DrawerMovementOptionType {
     

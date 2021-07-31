@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 用以创建和管理 Redis 数据库，创建方法：,```JavaScript,var db = require("db");,var test = new db.openRedis("redis-server");,```
   */
 @js.native
-trait ClassRedis extends ClassObject {
+trait ClassRedis
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -35,9 +36,9 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def bitcount(key: ClassBuffer): Double = js.native
-  def bitcount(key: ClassBuffer, start: js.UndefOr[scala.Nothing], end: Double): Double = js.native
   def bitcount(key: ClassBuffer, start: Double): Double = js.native
   def bitcount(key: ClassBuffer, start: Double, end: Double): Double = js.native
+  def bitcount(key: ClassBuffer, start: Unit, end: Double): Double = js.native
   
   /**
     * 
@@ -87,7 +88,7 @@ trait ClassRedis extends ClassObject {
     * 
     * 
     */
-  def del(keys: js.Array[_]): Double = js.native
+  def del(keys: js.Array[js.Any]): Double = js.native
   
   /**
     * 
@@ -224,7 +225,7 @@ trait ClassRedis extends ClassObject {
     * 
     * 
     */
-  def keys(pattern: String): js.Array[_] = js.native
+  def keys(pattern: String): js.Array[js.Any] = js.native
   
   /**
     * 
@@ -234,7 +235,7 @@ trait ClassRedis extends ClassObject {
     * 
     * 
     */
-  def mget(keys: js.Any*): js.Array[_] = js.native
+  def mget(keys: js.Any*): js.Array[js.Any] = js.native
   /**
     * 
     * @brief 返回所有(一个或多个)给定 key 的值。如果给定的 key 里面，有某个 key 不存在，那么这个 key 返回特殊值 nil 。
@@ -243,7 +244,7 @@ trait ClassRedis extends ClassObject {
     * 
     * 
     */
-  def mget(keys: js.Array[_]): js.Array[_] = js.native
+  def mget(keys: js.Array[js.Any]): js.Array[js.Any] = js.native
   
   /**
     * 
@@ -512,7 +513,7 @@ trait ClassRedis extends ClassObject {
     * 
     * 
     */
-  def unpsub(patterns: js.Array[_]): Unit = js.native
+  def unpsub(patterns: js.Array[js.Any]): Unit = js.native
   
   /**
     * 
@@ -522,7 +523,7 @@ trait ClassRedis extends ClassObject {
     * 
     * 
     */
-  def unsub(channels: js.Array[_]): Unit = js.native
+  def unsub(channels: js.Array[js.Any]): Unit = js.native
   /**
     * 
     * @brief 退订给定的频道的全部回调

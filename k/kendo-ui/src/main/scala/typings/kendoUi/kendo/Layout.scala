@@ -3,11 +3,12 @@ package typings.kendoUi.kendo
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Layout extends View {
+trait Layout
+  extends StObject
+     with View {
   
   var containers: StringDictionary[ViewContainer] = js.native
   

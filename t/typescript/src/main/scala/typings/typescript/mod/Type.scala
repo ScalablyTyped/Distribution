@@ -2,65 +2,65 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Type extends FlowType {
+trait Type
+  extends StObject
+     with FlowType {
   
-  var aliasSymbol: js.UndefOr[Symbol] = js.native
+  var aliasSymbol: js.UndefOr[Symbol] = js.undefined
   
-  var aliasTypeArguments: js.UndefOr[js.Array[Type]] = js.native
+  var aliasTypeArguments: js.UndefOr[js.Array[Type]] = js.undefined
   
-  var flags: TypeFlags = js.native
+  var flags: TypeFlags
   
-  def getApparentProperties(): js.Array[Symbol] = js.native
+  def getApparentProperties(): js.Array[Symbol]
   
-  def getBaseTypes(): js.UndefOr[js.Array[BaseType]] = js.native
+  def getBaseTypes(): js.UndefOr[js.Array[BaseType]]
   
-  def getCallSignatures(): js.Array[Signature] = js.native
+  def getCallSignatures(): js.Array[Signature]
   
-  def getConstraint(): js.UndefOr[Type] = js.native
+  def getConstraint(): js.UndefOr[Type]
   
-  def getConstructSignatures(): js.Array[Signature] = js.native
+  def getConstructSignatures(): js.Array[Signature]
   
-  def getDefault(): js.UndefOr[Type] = js.native
+  def getDefault(): js.UndefOr[Type]
   
-  def getFlags(): TypeFlags = js.native
+  def getFlags(): TypeFlags
   
-  def getNonNullableType(): Type = js.native
+  def getNonNullableType(): Type
   
-  def getNumberIndexType(): js.UndefOr[Type] = js.native
+  def getNumberIndexType(): js.UndefOr[Type]
   
-  def getProperties(): js.Array[Symbol] = js.native
+  def getProperties(): js.Array[Symbol]
   
-  def getProperty(propertyName: java.lang.String): js.UndefOr[Symbol] = js.native
+  def getProperty(propertyName: java.lang.String): js.UndefOr[Symbol]
   
-  def getStringIndexType(): js.UndefOr[Type] = js.native
+  def getStringIndexType(): js.UndefOr[Type]
   
-  def getSymbol(): js.UndefOr[Symbol] = js.native
+  def getSymbol(): js.UndefOr[Symbol]
   
-  def isClass(): /* is typescript.typescript.InterfaceType */ Boolean = js.native
+  def isClass(): /* is typescript.typescript.InterfaceType */ Boolean
   
-  def isClassOrInterface(): /* is typescript.typescript.InterfaceType */ Boolean = js.native
+  def isClassOrInterface(): /* is typescript.typescript.InterfaceType */ Boolean
   
-  def isIntersection(): /* is typescript.typescript.IntersectionType */ Boolean = js.native
+  def isIntersection(): /* is typescript.typescript.IntersectionType */ Boolean
   
-  def isLiteral(): /* is typescript.typescript.LiteralType */ Boolean = js.native
+  def isLiteral(): /* is typescript.typescript.LiteralType */ Boolean
   
-  def isNumberLiteral(): /* is typescript.typescript.NumberLiteralType */ Boolean = js.native
+  def isNumberLiteral(): /* is typescript.typescript.NumberLiteralType */ Boolean
   
-  def isStringLiteral(): /* is typescript.typescript.StringLiteralType */ Boolean = js.native
+  def isStringLiteral(): /* is typescript.typescript.StringLiteralType */ Boolean
   
-  def isTypeParameter(): /* is typescript.typescript.TypeParameter */ Boolean = js.native
+  def isTypeParameter(): /* is typescript.typescript.TypeParameter */ Boolean
   
-  def isUnion(): /* is typescript.typescript.UnionType */ Boolean = js.native
+  def isUnion(): /* is typescript.typescript.UnionType */ Boolean
   
-  def isUnionOrIntersection(): /* is typescript.typescript.UnionOrIntersectionType */ Boolean = js.native
+  def isUnionOrIntersection(): /* is typescript.typescript.UnionOrIntersectionType */ Boolean
   
-  var pattern: js.UndefOr[DestructuringPattern] = js.native
+  var pattern: js.UndefOr[DestructuringPattern] = js.undefined
   
-  var symbol: Symbol = js.native
+  var symbol: Symbol
 }
 object Type {
   

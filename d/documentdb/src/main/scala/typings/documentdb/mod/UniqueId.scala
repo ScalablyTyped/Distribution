@@ -2,14 +2,12 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UniqueId extends StObject {
   
   /** The user-defined unique identifier for a document or other DocumentDB object (database, collection, procedure...) */
-  var id: String = js.native
+  var id: String
 }
 object UniqueId {
   

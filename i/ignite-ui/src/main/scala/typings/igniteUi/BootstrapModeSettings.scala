@@ -3,19 +3,18 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapModeSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var visibilityTester: js.UndefOr[js.Any] = js.native
+  var visibilityTester: js.UndefOr[js.Any] = js.undefined
 }
 object BootstrapModeSettings {
   

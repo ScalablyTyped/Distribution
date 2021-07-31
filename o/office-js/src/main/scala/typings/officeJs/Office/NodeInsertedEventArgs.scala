@@ -2,26 +2,24 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides information about the inserted node that raised the nodeInserted event.
   */
-@js.native
 trait NodeInsertedEventArgs extends StObject {
   
   /**
     * Gets whether the node was inserted as part of an Undo/Redo action by the user.
     */
-  var isUndoRedo: Boolean = js.native
+  var isUndoRedo: Boolean
   
   /**
     * Gets the node that was just added to the CustomXMLPart object.
     * 
     * Note that this node may have children, if a subtree was just added to the document.
     */
-  var newNode: CustomXmlNode = js.native
+  var newNode: CustomXmlNode
 }
 object NodeInsertedEventArgs {
   

@@ -7,7 +7,6 @@ import typings.antvGBase.interfacesMod.IGroup
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object continuousMod {
@@ -55,7 +54,7 @@ object continuousMod {
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def getEvents(): (Record[String, js.Array[EventType]]) with js.Any = js.native
+    override def getEvents(): (Record[String, js.Array[EventType]]) & js.Any = js.native
     
     var getHandlerPath: js.Any = js.native
     
@@ -88,13 +87,13 @@ object continuousMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(): this.type with js.Any = js.native
+    override def off(): this.type & js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String): this.type with js.Any = js.native
+    override def off(evt: String): this.type & js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String, callback: js.Function): this.type with js.Any = js.native
+    override def off(evt: String, callback: js.Function): this.type & js.Any = js.native
     
     /**
       * 监听一个事件
@@ -104,7 +103,7 @@ object continuousMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def on(evt: String, callback: js.Function): this.type with js.Any = js.native
+    override def on(evt: String, callback: js.Function): this.type & js.Any = js.native
     
     var resetHandler: js.Any = js.native
     

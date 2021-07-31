@@ -2,61 +2,59 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlapTableViewHeaderCell extends StObject {
   
   /**
     * Returns the name of the axis this header cell is related to.
     */
-  def axisName(): String = js.native
+  def axisName(): String
   
   /**
     * Returns the caption for the header cell.
     */
-  def caption(): String = js.native
+  def caption(): String
   
   /**
     * Returns the column index for the header cell.
     */
-  def columnIndex(): Double = js.native
+  def columnIndex(): Double
   
   /**
     * Returns the column span for the header cell.
     */
-  def columnSpan(): Double = js.native
+  def columnSpan(): Double
   
   /**
     * Indicates whether the header cell can be expanded.
     */
-  def isExpanable(): Boolean = js.native
+  def isExpanable(): Boolean
   
   /**
     * Returns the expaned state for the header cell.
     */
-  def isExpanded(): Boolean = js.native
+  def isExpanded(): Boolean
   
   /**
     * Returns the index of the axis member in the tuple this header cell is related to.
     */
-  def memberIndex(): Double = js.native
+  def memberIndex(): Double
   
   /**
     * Returns the row index for the header cell.
     */
-  def rowIndex(): Double = js.native
+  def rowIndex(): Double
   
   /**
     * Returns the row span for the header cell.
     */
-  def rowSpan(): Double = js.native
+  def rowSpan(): Double
   
   /**
     * Returns the index of tuple in the axis this header cell is related to.
     */
-  def tupleIndex(): Double = js.native
+  def tupleIndex(): Double
 }
 object OlapTableViewHeaderCell {
   

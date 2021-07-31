@@ -5,26 +5,24 @@ import typings.reactMdTable.configMod.TableCellVerticalAlignment
 import typings.reactMdTable.reactMdTableStrings.padded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Required<@react-md/table.@react-md/table/types/config.TableConfig> */
-  @js.native
   trait RequiredTableConfig extends StObject {
     
-    var disableBorders: Boolean = js.native
+    var disableBorders: Boolean
     
-    var disableHover: Boolean = js.native
+    var disableHover: Boolean
     
-    var hAlign: TableCellHorizontalAlignment = js.native
+    var hAlign: TableCellHorizontalAlignment
     
-    var header: Boolean = js.native
+    var header: Boolean
     
-    var lineWrap: Boolean | padded = js.native
+    var lineWrap: Boolean | padded
     
-    var vAlign: TableCellVerticalAlignment = js.native
+    var vAlign: TableCellVerticalAlignment
   }
   object RequiredTableConfig {
     

@@ -3,7 +3,6 @@ package typings.storybookComponents
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storybookLogoMod {
@@ -12,10 +11,9 @@ object storybookLogoMod {
   @js.native
   val StorybookLogo: FunctionComponent[StorybookLogoProps] = js.native
   
-  @js.native
   trait StorybookLogoProps extends StObject {
     
-    var alt: String = js.native
+    var alt: String
   }
   object StorybookLogoProps {
     

@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.glue
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrawlerCatalogTarget extends StObject {
   
   /**
     * The name of the Glue database to be synchronized.
     */
-  var databaseName: Input[String] = js.native
+  var databaseName: Input[String]
   
   /**
     * A list of catalog tables to be synchronized.
     */
-  var tables: Input[js.Array[Input[String]]] = js.native
+  var tables: Input[js.Array[Input[String]]]
 }
 object CrawlerCatalogTarget {
   

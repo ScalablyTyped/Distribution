@@ -2,25 +2,23 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisksIoData extends StObject {
   
-  var ms: Double = js.native
+  var ms: Double
   
-  var rIO: Double = js.native
+  var rIO: Double
   
-  var rIO_sec: Double = js.native
+  var rIO_sec: Double
   
-  var tIO: Double = js.native
+  var tIO: Double
   
-  var tIO_sec: Double = js.native
+  var tIO_sec: Double
   
-  var wIO: Double = js.native
+  var wIO: Double
   
-  var wIO_sec: Double = js.native
+  var wIO_sec: Double
 }
 object DisksIoData {
   

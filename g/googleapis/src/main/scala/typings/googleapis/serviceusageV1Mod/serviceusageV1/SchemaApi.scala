@@ -2,7 +2,6 @@ package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,40 +14,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * contexts, such as the name of this message itself. See
   * https://cloud.google.com/apis/design/glossary for detailed terminology.
   */
-@js.native
 trait SchemaApi extends StObject {
   
   /**
     * The methods of this interface, in unspecified order.
     */
-  var methods: js.UndefOr[js.Array[SchemaMethod]] = js.native
+  var methods: js.UndefOr[js.Array[SchemaMethod]] = js.undefined
   
   /**
     * Included interfaces. See Mixin.
     */
-  var mixins: js.UndefOr[js.Array[SchemaMixin]] = js.native
+  var mixins: js.UndefOr[js.Array[SchemaMixin]] = js.undefined
   
   /**
     * The fully qualified name of this interface, including package name
     * followed by the interface&#39;s simple name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Any metadata attached to the interface.
     */
-  var options: js.UndefOr[js.Array[SchemaOption]] = js.native
+  var options: js.UndefOr[js.Array[SchemaOption]] = js.undefined
   
   /**
     * Source context for the protocol buffer service represented by this
     * message.
     */
-  var sourceContext: js.UndefOr[SchemaSourceContext] = js.native
+  var sourceContext: js.UndefOr[SchemaSourceContext] = js.undefined
   
   /**
     * The source syntax of the service.
     */
-  var syntax: js.UndefOr[String] = js.native
+  var syntax: js.UndefOr[String] = js.undefined
   
   /**
     * A version string for this interface. If specified, must have the form
@@ -67,7 +65,7 @@ trait SchemaApi extends StObject {
     * omitted. Zero major versions must only be used for experimental, non-GA
     * interfaces.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaApi {
   

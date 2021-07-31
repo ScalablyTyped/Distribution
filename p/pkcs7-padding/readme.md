@@ -12,7 +12,7 @@ A tiny package that handles PKCS #7 padding for both strings and byte arrays
 | Keywords           | pkcs7, padding |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 10636 |
+| # downloads        | 18144 |
 | # stars            | 0 |
 
 ## Links

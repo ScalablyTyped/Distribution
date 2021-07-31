@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.DecimalLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `201` extends StObject {
   
-  var `type`: DecimalLiteral = js.native
+  var `type`: DecimalLiteral
 }
 object `201` {
   
   @scala.inline
-  def apply(`type`: DecimalLiteral): `201` = {
+  def apply(): `201` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DecimalLiteral")
     __obj.asInstanceOf[`201`]
   }
   

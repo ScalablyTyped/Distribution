@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.UnaryExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `172` extends StObject {
   
-  var `type`: UnaryExpression = js.native
+  var `type`: UnaryExpression
 }
 object `172` {
   
   @scala.inline
-  def apply(`type`: UnaryExpression): `172` = {
+  def apply(): `172` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("UnaryExpression")
     __obj.asInstanceOf[`172`]
   }
   

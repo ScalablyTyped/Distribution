@@ -4,21 +4,20 @@ import typings.hermesProfileTransformer.anon.Linkedid
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.LINKED_ID_EVENTS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkedIDEvent
-  extends SharedEventProperties
+  extends StObject
+     with SharedEventProperties
      with Event {
   
   @JSName("args")
-  var args_LinkedIDEvent: Linkedid = js.native
+  var args_LinkedIDEvent: Linkedid
   
-  var id: Double = js.native
+  var id: Double
   
   @JSName("ph")
-  var ph_LinkedIDEvent: LINKED_ID_EVENTS = js.native
+  var ph_LinkedIDEvent: LINKED_ID_EVENTS
 }
 object LinkedIDEvent {
   

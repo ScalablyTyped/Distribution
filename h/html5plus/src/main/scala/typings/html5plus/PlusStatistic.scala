@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,13 +19,13 @@ trait PlusStatistic extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/statistic.html](http://www.html5plus.org/doc/zh_cn/statistic.html)
     */
   def eventDuration(): Unit = js.native
-  def eventDuration(id: js.UndefOr[scala.Nothing], duration: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
-  def eventDuration(id: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
-  def eventDuration(id: js.UndefOr[scala.Nothing], duration: Double, value: js.Any): Unit = js.native
   def eventDuration(id: String): Unit = js.native
-  def eventDuration(id: String, duration: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def eventDuration(id: String, duration: Double): Unit = js.native
   def eventDuration(id: String, duration: Double, value: js.Any): Unit = js.native
+  def eventDuration(id: String, duration: Unit, value: js.Any): Unit = js.native
+  def eventDuration(id: Unit, duration: Double): Unit = js.native
+  def eventDuration(id: Unit, duration: Double, value: js.Any): Unit = js.native
+  def eventDuration(id: Unit, duration: Unit, value: js.Any): Unit = js.native
   
   /**
     * 结束持续事件（过期API，不推荐使用）
@@ -35,9 +34,9 @@ trait PlusStatistic extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/statistic.html](http://www.html5plus.org/doc/zh_cn/statistic.html)
     */
   def eventEnd(): Unit = js.native
-  def eventEnd(id: js.UndefOr[scala.Nothing], label: String): Unit = js.native
   def eventEnd(id: String): Unit = js.native
   def eventEnd(id: String, label: String): Unit = js.native
+  def eventEnd(id: Unit, label: String): Unit = js.native
   
   /**
     * 开始持续事件（过期API，不推荐使用）
@@ -46,9 +45,9 @@ trait PlusStatistic extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/statistic.html](http://www.html5plus.org/doc/zh_cn/statistic.html)
     */
   def eventStart(): Unit = js.native
-  def eventStart(id: js.UndefOr[scala.Nothing], value: String): Unit = js.native
   def eventStart(id: String): Unit = js.native
   def eventStart(id: String, value: String): Unit = js.native
+  def eventStart(id: Unit, value: String): Unit = js.native
   
   /**
     * 触发事件
@@ -57,7 +56,7 @@ trait PlusStatistic extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/statistic.html](http://www.html5plus.org/doc/zh_cn/statistic.html)
     */
   def eventTrig(): Unit = js.native
-  def eventTrig(id: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def eventTrig(id: String): Unit = js.native
   def eventTrig(id: String, value: js.Any): Unit = js.native
+  def eventTrig(id: Unit, value: js.Any): Unit = js.native
 }

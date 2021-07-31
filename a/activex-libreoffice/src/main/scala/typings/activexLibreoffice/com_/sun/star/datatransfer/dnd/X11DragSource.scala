@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * via Drag and Drop operations.
   * @see XDragSource
   */
-@js.native
 trait X11DragSource
-  extends XDragSource
+  extends StObject
+     with XDragSource
      with XInitialization
      with XComponent
 object X11DragSource {
@@ -29,7 +28,7 @@ object X11DragSource {
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,
     getDefaultCursor: Double => Double,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     isDragImageSupported: () => Boolean,
     queryInterface: `type` => js.Any,
     release: () => Unit,

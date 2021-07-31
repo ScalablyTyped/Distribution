@@ -2,76 +2,74 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityResponse extends StObject {
   
   /**
     * The unique identifier for the application that the campaign applies to.
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
   /**
     * The unique identifier for the campaign that the activity applies to.
     */
-  var CampaignId: string = js.native
+  var CampaignId: string
   
   /**
     * The actual time, in ISO 8601 format, when the activity was marked CANCELLED or COMPLETED.
     */
-  var End: js.UndefOr[string] = js.native
+  var End: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the activity.
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * Specifies whether the activity succeeded. Possible values are SUCCESS and FAIL.
     */
-  var Result: js.UndefOr[string] = js.native
+  var Result: js.UndefOr[string] = js.undefined
   
   /**
     * The scheduled start time, in ISO 8601 format, for the activity.
     */
-  var ScheduledStart: js.UndefOr[string] = js.native
+  var ScheduledStart: js.UndefOr[string] = js.undefined
   
   /**
     * The actual start time, in ISO 8601 format, of the activity.
     */
-  var Start: js.UndefOr[string] = js.native
+  var Start: js.UndefOr[string] = js.undefined
   
   /**
     * The current status of the activity. Possible values are: PENDING, INITIALIZING, RUNNING, PAUSED, CANCELLED, and COMPLETED.
     */
-  var State: js.UndefOr[string] = js.native
+  var State: js.UndefOr[string] = js.undefined
   
   /**
     * The total number of endpoints that the campaign successfully delivered messages to.
     */
-  var SuccessfulEndpointCount: js.UndefOr[integer] = js.native
+  var SuccessfulEndpointCount: js.UndefOr[integer] = js.undefined
   
   /**
     * The total number of time zones that were completed.
     */
-  var TimezonesCompletedCount: js.UndefOr[integer] = js.native
+  var TimezonesCompletedCount: js.UndefOr[integer] = js.undefined
   
   /**
     * The total number of unique time zones that are in the segment for the campaign.
     */
-  var TimezonesTotalCount: js.UndefOr[integer] = js.native
+  var TimezonesTotalCount: js.UndefOr[integer] = js.undefined
   
   /**
     * The total number of endpoints that the campaign attempted to deliver messages to.
     */
-  var TotalEndpointCount: js.UndefOr[integer] = js.native
+  var TotalEndpointCount: js.UndefOr[integer] = js.undefined
   
   /**
     * The unique identifier for the campaign treatment that the activity applies to. A treatment is a variation of a campaign that's used for A/B testing of a campaign.
     */
-  var TreatmentId: js.UndefOr[string] = js.native
+  var TreatmentId: js.UndefOr[string] = js.undefined
 }
 object ActivityResponse {
   

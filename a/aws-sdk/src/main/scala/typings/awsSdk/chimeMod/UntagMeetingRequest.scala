@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagMeetingRequest extends StObject {
   
   /**
     * The Amazon Chime SDK meeting ID.
     */
-  var MeetingId: GuidString = js.native
+  var MeetingId: GuidString
   
   /**
     * The tag keys.
     */
-  var TagKeys: MeetingTagKeyList = js.native
+  var TagKeys: MeetingTagKeyList
 }
 object UntagMeetingRequest {
   

@@ -4,25 +4,25 @@ import typings.sharepoint.anon.BDelayInit
 import typings.sharepoint.anon.DataValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMultiValuePropertyType extends IPropertyType {
+trait IMultiValuePropertyType
+  extends StObject
+     with IPropertyType {
   
-  def GetSerializableMultiValuePropType(): BDelayInit = js.native
+  def GetSerializableMultiValuePropType(): BDelayInit
   
-  def InitSingleValuePropType(): Unit = js.native
+  def InitSingleValuePropType(): Unit
   
-  def LocStrArrayToLocStr(locStrArray: js.Array[String]): String = js.native
+  def LocStrArrayToLocStr(locStrArray: js.Array[String]): String
   
-  def LocStrToLocStrArray(locStr: String): js.Array[String] = js.native
+  def LocStrToLocStrArray(locStr: String): js.Array[String]
   
-  var bMultiValue: Boolean = js.native
+  var bMultiValue: Boolean
   
-  var separator: String = js.native
+  var separator: String
   
-  var singleValuePropType: String = js.native
+  var singleValuePropType: String
 }
 object IMultiValuePropertyType {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUserProfilesResponse extends StObject {
   
   /**
     * If the previous response was truncated, you will receive this token. Use it in your next request to receive the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * The list of user profiles.
     */
-  var UserProfiles: js.UndefOr[UserProfileList] = js.native
+  var UserProfiles: js.UndefOr[UserProfileList] = js.undefined
 }
 object ListUserProfilesResponse {
   

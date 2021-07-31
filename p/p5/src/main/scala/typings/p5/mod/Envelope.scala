@@ -2,7 +2,6 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -63,9 +62,9 @@ trait Envelope extends StObject {
     *   releasing the envelope
     */
   def play(unit: js.Object): Unit = js.native
-  def play(unit: js.Object, startTime: js.UndefOr[scala.Nothing], sustainTime: Double): Unit = js.native
   def play(unit: js.Object, startTime: Double): Unit = js.native
   def play(unit: js.Object, startTime: Double, sustainTime: Double): Unit = js.native
+  def play(unit: js.Object, startTime: Unit, sustainTime: Double): Unit = js.native
   
   /**
     *   Exponentially ramp to a value using the first two
@@ -147,18 +146,13 @@ trait Envelope extends StObject {
     *   (defaults to 0)
     */
   def setADSR(attackTime: Double): Unit = js.native
-  def setADSR(
-    attackTime: Double,
-    decayTime: js.UndefOr[scala.Nothing],
-    susRatio: js.UndefOr[scala.Nothing],
-    releaseTime: Double
-  ): Unit = js.native
-  def setADSR(attackTime: Double, decayTime: js.UndefOr[scala.Nothing], susRatio: Double): Unit = js.native
-  def setADSR(attackTime: Double, decayTime: js.UndefOr[scala.Nothing], susRatio: Double, releaseTime: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double): Unit = js.native
-  def setADSR(attackTime: Double, decayTime: Double, susRatio: js.UndefOr[scala.Nothing], releaseTime: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Double, susRatio: Unit, releaseTime: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Unit, susRatio: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Unit, susRatio: Double, releaseTime: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Unit, susRatio: Unit, releaseTime: Double): Unit = js.native
   
   /**
     *   Set whether the envelope ramp is linear (default)

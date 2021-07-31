@@ -22,7 +22,6 @@ import typings.node.streamMod.Transform
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operationsClientMod {
@@ -72,7 +71,7 @@ object operationsClientMod {
     def cancelOperation(request: CancelOperationRequest): js.Promise[Empty] = js.native
     def cancelOperation(
       request: CancelOperationRequest,
-      optionsOrCallback: js.UndefOr[scala.Nothing],
+      optionsOrCallback: Unit,
       callback: Callback[CancelOperationRequest, Empty, js.UndefOr[js.Object | Null]]
     ): js.Promise[Empty] = js.native
     def cancelOperation(
@@ -118,7 +117,7 @@ object operationsClientMod {
     def deleteOperation(request: DeleteOperationRequest): js.Promise[Empty] = js.native
     def deleteOperation(
       request: DeleteOperationRequest,
-      optionsOrCallback: js.UndefOr[scala.Nothing],
+      optionsOrCallback: Unit,
       callback: Callback[Empty, DeleteOperationRequest, js.UndefOr[js.Object | Null]]
     ): js.Promise[Empty] = js.native
     def deleteOperation(
@@ -173,7 +172,7 @@ object operationsClientMod {
     def getOperation(request: GetOperationRequest): js.Promise[js.Array[Operation]] = js.native
     def getOperation(
       request: GetOperationRequest,
-      optionsOrCallback: js.UndefOr[scala.Nothing],
+      optionsOrCallback: Unit,
       callback: Callback[Operation, GetOperationRequest, js.UndefOr[js.Object | Null]]
     ): js.Promise[js.Array[Operation]] = js.native
     def getOperation(
@@ -195,7 +194,7 @@ object operationsClientMod {
     def getOperationInternal(request: GetOperationRequest): CancellablePromise[ResultTuple] = js.native
     def getOperationInternal(
       request: GetOperationRequest,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: Callback[Operation, GetOperationRequest, js.UndefOr[js.Object | Null]]
     ): CancellablePromise[ResultTuple] = js.native
     def getOperationInternal(request: GetOperationRequest, options: CallOptions): CancellablePromise[ResultTuple] = js.native
@@ -295,7 +294,7 @@ object operationsClientMod {
     def listOperations(request: ListOperationsRequest): js.Promise[ListOperationsResponse] = js.native
     def listOperations(
       request: ListOperationsRequest,
-      optionsOrCallback: js.UndefOr[scala.Nothing],
+      optionsOrCallback: Unit,
       callback: Callback[ListOperationsResponse, ListOperationsRequest, js.UndefOr[js.Object | Null]]
     ): js.Promise[ListOperationsResponse] = js.native
     def listOperations(

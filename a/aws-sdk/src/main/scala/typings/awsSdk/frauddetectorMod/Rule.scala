@@ -2,26 +2,24 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rule extends StObject {
   
   /**
     * The detector for which the rule is associated.
     */
-  var detectorId: identifier = js.native
+  var detectorId: identifier
   
   /**
     * The rule ID.
     */
-  var ruleId: identifier = js.native
+  var ruleId: identifier
   
   /**
     * The rule version.
     */
-  var ruleVersion: wholeNumberVersionString = js.native
+  var ruleVersion: wholeNumberVersionString
 }
 object Rule {
   

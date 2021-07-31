@@ -2,56 +2,54 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetImportJobResponse extends StObject {
   
   /**
     * The time stamp of when the import job was completed.
     */
-  var CompletedTimestamp: js.UndefOr[Timestamp] = js.native
+  var CompletedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time stamp of when the import job was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The number of records that failed processing because of invalid input or other reasons.
     */
-  var FailedRecordsCount: js.UndefOr[typings.awsSdk.sesv2Mod.FailedRecordsCount] = js.native
+  var FailedRecordsCount: js.UndefOr[typings.awsSdk.sesv2Mod.FailedRecordsCount] = js.undefined
   
   /**
     * The failure details about an import job.
     */
-  var FailureInfo: js.UndefOr[typings.awsSdk.sesv2Mod.FailureInfo] = js.native
+  var FailureInfo: js.UndefOr[typings.awsSdk.sesv2Mod.FailureInfo] = js.undefined
   
   /**
     * The data source of the import job.
     */
-  var ImportDataSource: js.UndefOr[typings.awsSdk.sesv2Mod.ImportDataSource] = js.native
+  var ImportDataSource: js.UndefOr[typings.awsSdk.sesv2Mod.ImportDataSource] = js.undefined
   
   /**
     * The destination of the import job.
     */
-  var ImportDestination: js.UndefOr[typings.awsSdk.sesv2Mod.ImportDestination] = js.native
+  var ImportDestination: js.UndefOr[typings.awsSdk.sesv2Mod.ImportDestination] = js.undefined
   
   /**
     * A string that represents the import job ID.
     */
-  var JobId: js.UndefOr[typings.awsSdk.sesv2Mod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.sesv2Mod.JobId] = js.undefined
   
   /**
     * The status of the import job.
     */
-  var JobStatus: js.UndefOr[typings.awsSdk.sesv2Mod.JobStatus] = js.native
+  var JobStatus: js.UndefOr[typings.awsSdk.sesv2Mod.JobStatus] = js.undefined
   
   /**
     * The current number of records processed.
     */
-  var ProcessedRecordsCount: js.UndefOr[typings.awsSdk.sesv2Mod.ProcessedRecordsCount] = js.native
+  var ProcessedRecordsCount: js.UndefOr[typings.awsSdk.sesv2Mod.ProcessedRecordsCount] = js.undefined
 }
 object GetImportJobResponse {
   

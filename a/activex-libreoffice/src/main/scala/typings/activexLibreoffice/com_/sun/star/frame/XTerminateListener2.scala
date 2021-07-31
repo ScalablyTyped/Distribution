@@ -4,12 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extend interface {@link XTerminateListener} so a listener will be informed in case termination process was canceled by other reasons. */
-@js.native
-trait XTerminateListener2 extends XTerminateListener {
+trait XTerminateListener2
+  extends StObject
+     with XTerminateListener {
   
   /**
     * is called when the master environment (e.g., desktop) was canceled in it's terminate request.
@@ -20,7 +20,7 @@ trait XTerminateListener2 extends XTerminateListener {
     * then. Using this optional(!) interface will make it possible to be informed about canceled termination requests also.
     * @param Event describe the source of the event (e.g., the desktop)
     */
-  def cancelTermination(Event: EventObject): Unit = js.native
+  def cancelTermination(Event: EventObject): Unit
 }
 object XTerminateListener2 {
   

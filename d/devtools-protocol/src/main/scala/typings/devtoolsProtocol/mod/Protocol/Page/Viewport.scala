@@ -2,36 +2,34 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Viewport extends StObject {
   
   /**
     * Rectangle height in device independent pixels (dip).
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Page scale factor.
     */
-  var scale: Double = js.native
+  var scale: Double
   
   /**
     * Rectangle width in device independent pixels (dip).
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * X offset in device independent pixels (dip).
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Y offset in device independent pixels (dip).
     */
-  var y: Double = js.native
+  var y: Double
 }
 object Viewport {
   

@@ -10,37 +10,38 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filterDropdownMod {
   
-  @JSImport("antd/lib/table/hooks/useFilter/FilterDropdown", JSImport.Default)
+  @JSImport("antd/lib/table/hooks/useFilter/FilterDropdown", JSImport.Namespace)
   @js.native
-  def default[RecordType](props: FilterDropdownProps[RecordType]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[RecordType](props: FilterDropdownProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait FilterDropdownProps[RecordType] extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var column: ColumnType[RecordType] = js.native
+    var column: ColumnType[RecordType]
     
-    var columnKey: Key = js.native
+    var columnKey: Key
     
-    var dropdownPrefixCls: String = js.native
+    var dropdownPrefixCls: String
     
-    var filterMultiple: Boolean = js.native
+    var filterMultiple: Boolean
     
-    var filterState: js.UndefOr[FilterState[RecordType]] = js.native
+    var filterState: js.UndefOr[FilterState[RecordType]] = js.undefined
     
-    var getPopupContainer: js.UndefOr[GetPopupContainer] = js.native
+    var getPopupContainer: js.UndefOr[GetPopupContainer] = js.undefined
     
-    var locale: TableLocale = js.native
+    var locale: TableLocale
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    def triggerFilter(filterState: FilterState[RecordType]): Unit = js.native
+    def triggerFilter(filterState: FilterState[RecordType]): Unit
   }
   object FilterDropdownProps {
     
@@ -59,7 +60,7 @@ object filterDropdownMod {
     }
     
     @scala.inline
-    implicit class FilterDropdownPropsMutableBuilder[Self <: FilterDropdownProps[_], RecordType] (val x: Self with FilterDropdownProps[RecordType]) extends AnyVal {
+    implicit class FilterDropdownPropsMutableBuilder[Self <: FilterDropdownProps[?], RecordType] (val x: Self & FilterDropdownProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

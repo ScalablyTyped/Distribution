@@ -2,24 +2,23 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusBarProps
-  extends StatusBarPropsIOS
+  extends StObject
+     with StatusBarPropsIOS
      with StatusBarPropsAndroid {
   
   /**
     * If the transition between status bar property changes should be
     * animated. Supported for backgroundColor, barStyle and hidden.
     */
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If the status bar is hidden.
     */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
 }
 object StatusBarProps {
   

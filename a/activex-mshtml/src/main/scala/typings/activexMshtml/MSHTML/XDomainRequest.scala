@@ -2,16 +2,14 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XDomainRequest extends StObject {
   
   @JSName("MSHTML.XDomainRequest_typekey")
-  var MSHTMLDotXDomainRequest_typekey: XDomainRequest = js.native
+  var MSHTMLDotXDomainRequest_typekey: XDomainRequest
   
-  val constructor: js.Any = js.native
+  val constructor: js.Any
 }
 object XDomainRequest {
   

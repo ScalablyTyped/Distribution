@@ -2,7 +2,6 @@ package typings.mithril.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Any Javascript object that has a view method can be used as a Mithril component.
   * Components can be consumed via the m() utility.
   */
-@js.native
 trait Component[Attrs, State /* <: Lifecycle[Attrs, State] */]
-  extends Lifecycle[Attrs, State]
+  extends StObject
+     with Lifecycle[Attrs, State]
      with _ComponentTypes[Attrs, State] {
   
   /** Creates a view out of virtual elements. */
-  def view(vnode: Vnode[Attrs, State]): Children | Null | Unit = js.native
+  def view(vnode: Vnode[Attrs, State]): Children | Null | Unit
 }
 object Component {
   
@@ -27,7 +26,7 @@ object Component {
   }
   
   @scala.inline
-  implicit class ComponentMutableBuilder[Self <: Component[_, _], Attrs, State /* <: Lifecycle[Attrs, State] */] (val x: Self with (Component[Attrs, State])) extends AnyVal {
+  implicit class ComponentMutableBuilder[Self <: Component[?, ?], Attrs, State /* <: Lifecycle[Attrs, State] */] (val x: Self & (Component[Attrs, State])) extends AnyVal {
     
     @scala.inline
     def setView(value: Vnode[Attrs, State] => Children | Null | Unit): Self = StObject.set(x, "view", js.Any.fromFunction1(value))

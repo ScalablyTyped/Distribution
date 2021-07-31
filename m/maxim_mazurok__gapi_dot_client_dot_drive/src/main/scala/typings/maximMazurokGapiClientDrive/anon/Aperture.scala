@@ -2,74 +2,72 @@ package typings.maximMazurokGapiClientDrive.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aperture extends StObject {
   
   /** The aperture used to create the photo (f-number). */
-  var aperture: js.UndefOr[Double] = js.native
+  var aperture: js.UndefOr[Double] = js.undefined
   
   /** The make of the camera used to create the photo. */
-  var cameraMake: js.UndefOr[String] = js.native
+  var cameraMake: js.UndefOr[String] = js.undefined
   
   /** The model of the camera used to create the photo. */
-  var cameraModel: js.UndefOr[String] = js.native
+  var cameraModel: js.UndefOr[String] = js.undefined
   
   /** The color space of the photo. */
-  var colorSpace: js.UndefOr[String] = js.native
+  var colorSpace: js.UndefOr[String] = js.undefined
   
   /** The exposure bias of the photo (APEX value). */
-  var exposureBias: js.UndefOr[Double] = js.native
+  var exposureBias: js.UndefOr[Double] = js.undefined
   
   /** The exposure mode used to create the photo. */
-  var exposureMode: js.UndefOr[String] = js.native
+  var exposureMode: js.UndefOr[String] = js.undefined
   
   /** The length of the exposure, in seconds. */
-  var exposureTime: js.UndefOr[Double] = js.native
+  var exposureTime: js.UndefOr[Double] = js.undefined
   
   /** Whether a flash was used to create the photo. */
-  var flashUsed: js.UndefOr[Boolean] = js.native
+  var flashUsed: js.UndefOr[Boolean] = js.undefined
   
   /** The focal length used to create the photo, in millimeters. */
-  var focalLength: js.UndefOr[Double] = js.native
+  var focalLength: js.UndefOr[Double] = js.undefined
   
   /** The height of the image in pixels. */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** The ISO speed used to create the photo. */
-  var isoSpeed: js.UndefOr[Double] = js.native
+  var isoSpeed: js.UndefOr[Double] = js.undefined
   
   /** The lens used to create the photo. */
-  var lens: js.UndefOr[String] = js.native
+  var lens: js.UndefOr[String] = js.undefined
   
   /** Geographic location information stored in the image. */
-  var location: js.UndefOr[Altitude] = js.native
+  var location: js.UndefOr[Altitude] = js.undefined
   
   /** The smallest f-number of the lens at the focal length used to create the photo (APEX value). */
-  var maxApertureValue: js.UndefOr[Double] = js.native
+  var maxApertureValue: js.UndefOr[Double] = js.undefined
   
   /** The metering mode used to create the photo. */
-  var meteringMode: js.UndefOr[String] = js.native
+  var meteringMode: js.UndefOr[String] = js.undefined
   
   /** The number of clockwise 90 degree rotations applied from the image's original orientation. */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /** The type of sensor used to create the photo. */
-  var sensor: js.UndefOr[String] = js.native
+  var sensor: js.UndefOr[String] = js.undefined
   
   /** The distance to the subject of the photo, in meters. */
-  var subjectDistance: js.UndefOr[Double] = js.native
+  var subjectDistance: js.UndefOr[Double] = js.undefined
   
   /** The date and time the photo was taken (EXIF DateTime). */
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
   
   /** The white balance mode used to create the photo. */
-  var whiteBalance: js.UndefOr[String] = js.native
+  var whiteBalance: js.UndefOr[String] = js.undefined
   
   /** The width of the image in pixels. */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Aperture {
   

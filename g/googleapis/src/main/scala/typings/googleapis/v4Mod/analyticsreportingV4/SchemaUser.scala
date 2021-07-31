@@ -2,25 +2,23 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information to identify a particular user uniquely.
   */
-@js.native
 trait SchemaUser extends StObject {
   
   /**
     * Type of the user in the request. The field `userId` is associated with
     * this type.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Unique Id of the user for which the data is being requested.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object SchemaUser {
   

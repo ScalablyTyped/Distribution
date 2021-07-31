@@ -2,21 +2,19 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteRecipeVersionResponse extends StObject {
   
   /**
     * Errors, if any, that were encountered when deleting the recipe versions.
     */
-  var Errors: js.UndefOr[RecipeErrorList] = js.native
+  var Errors: js.UndefOr[RecipeErrorList] = js.undefined
   
   /**
     * The name of the recipe that was modified.
     */
-  var Name: RecipeName = js.native
+  var Name: RecipeName
 }
 object BatchDeleteRecipeVersionResponse {
   

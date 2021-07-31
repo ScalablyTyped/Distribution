@@ -3,23 +3,23 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.playbackStarted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlaybackStartedEvent extends Event {
+trait PlaybackStartedEvent
+  extends StObject
+     with Event {
   
-  var startTime: Double | Null = js.native
+  var startTime: Double | Null
   
   @JSName("type")
-  var type_PlaybackStartedEvent: playbackStarted = js.native
+  var type_PlaybackStartedEvent: playbackStarted
 }
 object PlaybackStartedEvent {
   
   @scala.inline
-  def apply(`type`: playbackStarted): PlaybackStartedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): PlaybackStartedEvent = {
+    val __obj = js.Dynamic.literal(startTime = null)
+    __obj.updateDynamic("type")("playbackStarted")
     __obj.asInstanceOf[PlaybackStartedEvent]
   }
   

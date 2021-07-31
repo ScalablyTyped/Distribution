@@ -2,19 +2,17 @@ package typings.googleapis.driveV2Mod.driveV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A comment on a file in Google Drive.
   */
-@js.native
 trait SchemaCommentReply extends StObject {
   
   /**
     * The user who wrote this reply.
     */
-  var author: js.UndefOr[SchemaUser] = js.native
+  var author: js.UndefOr[SchemaUser] = js.undefined
   
   /**
     * The plain text content used to create this reply. This is not HTML safe
@@ -22,39 +20,39 @@ trait SchemaCommentReply extends StObject {
     * reply&#39;s content. This field is required on inserts if no verb is
     * specified (resolve/reopen).
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * The date when this reply was first created.
     */
-  var createdDate: js.UndefOr[String] = js.native
+  var createdDate: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this reply has been deleted. If a reply has been deleted the
     * content will be cleared and this will only represent a reply that once
     * existed.
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * HTML formatted content for this reply.
     */
-  var htmlContent: js.UndefOr[String] = js.native
+  var htmlContent: js.UndefOr[String] = js.undefined
   
   /**
     * This is always drive#commentReply.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The date when this reply was last modified.
     */
-  var modifiedDate: js.UndefOr[String] = js.native
+  var modifiedDate: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the reply.
     */
-  var replyId: js.UndefOr[String] = js.native
+  var replyId: js.UndefOr[String] = js.undefined
   
   /**
     * The action this reply performed to the parent comment. When creating a
@@ -62,7 +60,7 @@ trait SchemaCommentReply extends StObject {
     * Possible values are:   - &quot;resolve&quot; - To resolve a comment.  -
     * &quot;reopen&quot; - To reopen (un-resolve) a comment.
     */
-  var verb: js.UndefOr[String] = js.native
+  var verb: js.UndefOr[String] = js.undefined
 }
 object SchemaCommentReply {
   

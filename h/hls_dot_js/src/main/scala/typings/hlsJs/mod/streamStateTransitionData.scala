@@ -2,15 +2,13 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait streamStateTransitionData extends StObject {
   
-  var nextState: js.Any = js.native
+  var nextState: js.Any
   
-  var previousState: js.Any = js.native
+  var previousState: js.Any
 }
 object streamStateTransitionData {
   

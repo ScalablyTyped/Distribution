@@ -3,23 +3,21 @@ package typings.winrt.Windows.Networking
 import typings.winrt.Windows.Networking.Connectivity.IPInformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHostName extends StObject {
   
-  var canonicalName: String = js.native
+  var canonicalName: String
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var iPInformation: IPInformation = js.native
+  var iPInformation: IPInformation
   
-  def isEqual(hostName: HostName): Boolean = js.native
+  def isEqual(hostName: HostName): Boolean
   
-  var rawName: String = js.native
+  var rawName: String
   
-  var `type`: HostNameType = js.native
+  var `type`: HostNameType
 }
 object IHostName {
   

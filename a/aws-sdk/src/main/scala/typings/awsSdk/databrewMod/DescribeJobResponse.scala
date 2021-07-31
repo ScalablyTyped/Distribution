@@ -2,103 +2,101 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeJobResponse extends StObject {
   
   /**
     * The date and time that the job was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.native
+  var CreateDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The identifier (user name) of the user associated with the creation of the job.
     */
-  var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.native
+  var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.undefined
   
   /**
     * The dataset that the job acts upon.
     */
-  var DatasetName: js.UndefOr[typings.awsSdk.databrewMod.DatasetName] = js.native
+  var DatasetName: js.UndefOr[typings.awsSdk.databrewMod.DatasetName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of an encryption key that is used to protect the job.
     */
-  var EncryptionKeyArn: js.UndefOr[typings.awsSdk.databrewMod.EncryptionKeyArn] = js.native
+  var EncryptionKeyArn: js.UndefOr[typings.awsSdk.databrewMod.EncryptionKeyArn] = js.undefined
   
   /**
     * The encryption mode for the job, which can be one of the following:    SSE-KMS - Server-side encryption with AWS KMS-managed keys.    SSE-S3 - Server-side encryption with keys managed by Amazon S3.  
     */
-  var EncryptionMode: js.UndefOr[typings.awsSdk.databrewMod.EncryptionMode] = js.native
+  var EncryptionMode: js.UndefOr[typings.awsSdk.databrewMod.EncryptionMode] = js.undefined
   
   /**
     * The identifier (user name) of the user who last modified the job.
     */
-  var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.native
+  var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.undefined
   
   /**
     * The date and time that the job was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.native
+  var LastModifiedDate: js.UndefOr[Date] = js.undefined
   
   /**
     * A value that indicates whether Amazon CloudWatch logging is enabled for this job.
     */
-  var LogSubscription: js.UndefOr[typings.awsSdk.databrewMod.LogSubscription] = js.native
+  var LogSubscription: js.UndefOr[typings.awsSdk.databrewMod.LogSubscription] = js.undefined
   
   /**
     * The maximum number of nodes that AWS Glue DataBrew can consume when the job processes data.
     */
-  var MaxCapacity: js.UndefOr[typings.awsSdk.databrewMod.MaxCapacity] = js.native
+  var MaxCapacity: js.UndefOr[typings.awsSdk.databrewMod.MaxCapacity] = js.undefined
   
   /**
     * The maximum number of times to retry the job after a job run fails.
     */
-  var MaxRetries: js.UndefOr[typings.awsSdk.databrewMod.MaxRetries] = js.native
+  var MaxRetries: js.UndefOr[typings.awsSdk.databrewMod.MaxRetries] = js.undefined
   
   /**
     * The name of the job.
     */
-  var Name: JobName = js.native
+  var Name: JobName
   
   /**
     * One or more artifacts that represent the output from running the job.
     */
-  var Outputs: js.UndefOr[OutputList] = js.native
+  var Outputs: js.UndefOr[OutputList] = js.undefined
   
   /**
     * The DataBrew project associated with this job.
     */
-  var ProjectName: js.UndefOr[typings.awsSdk.databrewMod.ProjectName] = js.native
+  var ProjectName: js.UndefOr[typings.awsSdk.databrewMod.ProjectName] = js.undefined
   
-  var RecipeReference: js.UndefOr[typings.awsSdk.databrewMod.RecipeReference] = js.native
+  var RecipeReference: js.UndefOr[typings.awsSdk.databrewMod.RecipeReference] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the job.
     */
-  var ResourceArn: js.UndefOr[Arn] = js.native
+  var ResourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ARN of the AWS Identity and Access Management (IAM) role that was assumed for this request.
     */
-  var RoleArn: js.UndefOr[Arn] = js.native
+  var RoleArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * Metadata tags associated with this job.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The job's timeout in minutes. A job that attempts to run longer than this timeout period ends with a status of TIMEOUT.
     */
-  var Timeout: js.UndefOr[typings.awsSdk.databrewMod.Timeout] = js.native
+  var Timeout: js.UndefOr[typings.awsSdk.databrewMod.Timeout] = js.undefined
   
   /**
     * The job type, which must be one of the following:    PROFILE - The job analyzes the dataset to determine its size, data types, data distribution, and more.    RECIPE - The job applies one or more transformations to a dataset.  
     */
-  var Type: js.UndefOr[JobType] = js.native
+  var Type: js.UndefOr[JobType] = js.undefined
 }
 object DescribeJobResponse {
   

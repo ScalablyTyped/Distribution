@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * in the center pane is replaced by another one. The sub controller handles the things that are not common to all views, i.e. properties, the current
   * page/slide, and the selection.
   */
-@js.native
 trait XDrawSubController
-  extends XDrawView
+  extends StObject
+     with XDrawView
      with XSelectionSupplier
      with XFastPropertySet
 object XDrawSubController {

@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHostnameSuggestionResult extends StObject {
   
   /**
     * The generated host name.
     */
-  var Hostname: js.UndefOr[String] = js.native
+  var Hostname: js.UndefOr[String] = js.undefined
   
   /**
     * The layer ID.
     */
-  var LayerId: js.UndefOr[String] = js.native
+  var LayerId: js.UndefOr[String] = js.undefined
 }
 object GetHostnameSuggestionResult {
   

@@ -10,9 +10,9 @@ Get the visual width of the widest line in a string - the number of columns requ
 | ------------------ | :-------------: |
 | Full name          | widest-line |
 | Keywords           | string, character, unicode, width, visual, column, columns, fullwidth, full-width, full, ansi, escape, codes, cli, command-line, terminal, console, cjk, chinese, japanese, korean, fixed-width |
-| # releases         | 4 |
-| # dependents       | 37 |
-| # downloads        | 336851182 |
+| # releases         | 3 |
+| # dependents       | 56 |
+| # downloads        | 436898986 |
 | # stars            | 1 |
 
 ## Links

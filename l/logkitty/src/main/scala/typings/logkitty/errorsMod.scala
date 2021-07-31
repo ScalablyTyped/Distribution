@@ -3,18 +3,25 @@ package typings.logkitty
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
   
   @JSImport("logkitty/build/errors", "CodeError")
   @js.native
-  class CodeError protected () extends Error {
+  class CodeError protected ()
+    extends StObject
+       with Error {
     def this(code: String) = this()
     def this(code: String, message: String) = this()
     
     var code: String = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("logkitty/build/errors", "ERR_ANDROID_CANNOT_CLEAN_LOGCAT_BUFFER")

@@ -21,7 +21,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -97,11 +96,11 @@ object mod {
   @js.native
   val forge: CryptoInterface = js.native
   
-  @js.native
   trait Authorization
-    extends typings.acmeClient.rfc8555Mod.Authorization {
+    extends StObject
+       with typings.acmeClient.rfc8555Mod.Authorization {
     
-    var url: String = js.native
+    var url: String
   }
   object Authorization {
     
@@ -126,12 +125,11 @@ object mod {
   
   type CertificateBuffer = Buffer
   
-  @js.native
   trait CertificateDomains extends StObject {
     
-    var altNames: js.Array[String] = js.native
+    var altNames: js.Array[String]
     
-    var commonName: String = js.native
+    var commonName: String
   }
   object CertificateDomains {
     
@@ -155,16 +153,15 @@ object mod {
     }
   }
   
-  @js.native
   trait CertificateInfo extends StObject {
     
-    var domains: CertificateDomains = js.native
+    var domains: CertificateDomains
     
-    var issuer: CertificateIssuer = js.native
+    var issuer: CertificateIssuer
     
-    var notAfter: Date = js.native
+    var notAfter: Date
     
-    var notBefore: Date = js.native
+    var notBefore: Date
   }
   object CertificateInfo {
     
@@ -191,10 +188,9 @@ object mod {
     }
   }
   
-  @js.native
   trait CertificateIssuer extends StObject {
     
-    var commonName: String = js.native
+    var commonName: String
   }
   object CertificateIssuer {
     
@@ -214,31 +210,30 @@ object mod {
   
   type CertificateString = String
   
-  @js.native
   trait ClientAutoOptions extends StObject {
     
-    def challengeCreateFn(authz: Authorization, challenge: Challenge, keyAuthorization: String): js.Promise[_] = js.native
+    def challengeCreateFn(authz: Authorization, challenge: Challenge, keyAuthorization: String): js.Promise[js.Any]
     
-    var challengePriority: js.UndefOr[js.Array[String]] = js.native
+    var challengePriority: js.UndefOr[js.Array[String]] = js.undefined
     
-    def challengeRemoveFn(authz: Authorization, challenge: Challenge, keyAuthorization: String): js.Promise[_] = js.native
+    def challengeRemoveFn(authz: Authorization, challenge: Challenge, keyAuthorization: String): js.Promise[js.Any]
     
-    var csr: CsrBuffer | CsrString = js.native
+    var csr: CsrBuffer | CsrString
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var preferredChain: js.UndefOr[String] = js.native
+    var preferredChain: js.UndefOr[String] = js.undefined
     
-    var skipChallengeVerification: js.UndefOr[Boolean] = js.native
+    var skipChallengeVerification: js.UndefOr[Boolean] = js.undefined
     
-    var termsOfServiceAgreed: js.UndefOr[Boolean] = js.native
+    var termsOfServiceAgreed: js.UndefOr[Boolean] = js.undefined
   }
   object ClientAutoOptions {
     
     @scala.inline
     def apply(
-      challengeCreateFn: (Authorization, Challenge, String) => js.Promise[_],
-      challengeRemoveFn: (Authorization, Challenge, String) => js.Promise[_],
+      challengeCreateFn: (Authorization, Challenge, String) => js.Promise[js.Any],
+      challengeRemoveFn: (Authorization, Challenge, String) => js.Promise[js.Any],
       csr: CsrBuffer | CsrString
     ): ClientAutoOptions = {
       val __obj = js.Dynamic.literal(challengeCreateFn = js.Any.fromFunction3(challengeCreateFn), challengeRemoveFn = js.Any.fromFunction3(challengeRemoveFn), csr = csr.asInstanceOf[js.Any])
@@ -249,7 +244,7 @@ object mod {
     implicit class ClientAutoOptionsMutableBuilder[Self <: ClientAutoOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setChallengeCreateFn(value: (Authorization, Challenge, String) => js.Promise[_]): Self = StObject.set(x, "challengeCreateFn", js.Any.fromFunction3(value))
+      def setChallengeCreateFn(value: (Authorization, Challenge, String) => js.Promise[js.Any]): Self = StObject.set(x, "challengeCreateFn", js.Any.fromFunction3(value))
       
       @scala.inline
       def setChallengePriority(value: js.Array[String]): Self = StObject.set(x, "challengePriority", value.asInstanceOf[js.Any])
@@ -261,7 +256,7 @@ object mod {
       def setChallengePriorityVarargs(value: String*): Self = StObject.set(x, "challengePriority", js.Array(value :_*))
       
       @scala.inline
-      def setChallengeRemoveFn(value: (Authorization, Challenge, String) => js.Promise[_]): Self = StObject.set(x, "challengeRemoveFn", js.Any.fromFunction3(value))
+      def setChallengeRemoveFn(value: (Authorization, Challenge, String) => js.Promise[js.Any]): Self = StObject.set(x, "challengeRemoveFn", js.Any.fromFunction3(value))
       
       @scala.inline
       def setCsr(value: CsrBuffer | CsrString): Self = StObject.set(x, "csr", value.asInstanceOf[js.Any])
@@ -292,20 +287,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ClientOptions extends StObject {
     
-    var accountKey: PrivateKeyBuffer | PrivateKeyString = js.native
+    var accountKey: PrivateKeyBuffer | PrivateKeyString
     
-    var accountUrl: js.UndefOr[String] = js.native
+    var accountUrl: js.UndefOr[String] = js.undefined
     
-    var backoffAttempts: js.UndefOr[Double] = js.native
+    var backoffAttempts: js.UndefOr[Double] = js.undefined
     
-    var backoffMax: js.UndefOr[Double] = js.native
+    var backoffMax: js.UndefOr[Double] = js.undefined
     
-    var backoffMin: js.UndefOr[Double] = js.native
+    var backoffMin: js.UndefOr[Double] = js.undefined
     
-    var directoryUrl: String = js.native
+    var directoryUrl: String
   }
   object ClientOptions {
     
@@ -363,15 +357,13 @@ object mod {
     def createPublicKey(key: PrivateKeyBuffer): js.Promise[PublicKeyBuffer] = js.native
     def createPublicKey(key: PrivateKeyString): js.Promise[PublicKeyBuffer] = js.native
     
-    def getModulus(
-      input: CertificateBuffer | CertificateString | CsrBuffer | CsrString | PrivateKeyBuffer | PrivateKeyString | PublicKeyBuffer | PublicKeyString
-    ): js.Promise[Buffer] = js.native
+    def getModulus(input: CertificateBuffer | CsrBuffer | PrivateKeyBuffer | PublicKeyBuffer): js.Promise[Buffer] = js.native
+    def getModulus(input: CertificateString | CsrString | PrivateKeyString | PublicKeyString): js.Promise[Buffer] = js.native
     
     def getPemBody(str: String): String = js.native
     
-    def getPublicExponent(
-      input: CertificateBuffer | CertificateString | CsrBuffer | CsrString | PrivateKeyBuffer | PrivateKeyString | PublicKeyBuffer | PublicKeyString
-    ): js.Promise[Buffer] = js.native
+    def getPublicExponent(input: CertificateString | CsrString | PrivateKeyString | PublicKeyString): js.Promise[Buffer] = js.native
+    def getPublicExponent(input: CertificateBuffer | CsrBuffer | PrivateKeyBuffer | PublicKeyBuffer): js.Promise[Buffer] = js.native
     
     def readCertificateInfo(cert: CertificateBuffer): js.Promise[CertificateInfo] = js.native
     def readCertificateInfo(cert: CertificateString): js.Promise[CertificateInfo] = js.native
@@ -384,26 +376,25 @@ object mod {
   
   type CsrBuffer = Buffer
   
-  @js.native
   trait CsrOptions extends StObject {
     
-    var altNames: js.UndefOr[js.Array[String]] = js.native
+    var altNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    var commonName: js.UndefOr[String] = js.native
+    var commonName: js.UndefOr[String] = js.undefined
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var emailAddress: js.UndefOr[String] = js.native
+    var emailAddress: js.UndefOr[String] = js.undefined
     
-    var keySize: js.UndefOr[Double] = js.native
+    var keySize: js.UndefOr[Double] = js.undefined
     
-    var locality: js.UndefOr[String] = js.native
+    var locality: js.UndefOr[String] = js.undefined
     
-    var organization: js.UndefOr[String] = js.native
+    var organization: js.UndefOr[String] = js.undefined
     
-    var organizationUnit: js.UndefOr[String] = js.native
+    var organizationUnit: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object CsrOptions {
     
@@ -477,11 +468,11 @@ object mod {
   
   type CsrString = String
   
-  @js.native
   trait Order
-    extends typings.acmeClient.rfc8555Mod.Order {
+    extends StObject
+       with typings.acmeClient.rfc8555Mod.Order {
     
-    var url: String = js.native
+    var url: String
   }
   object Order {
     

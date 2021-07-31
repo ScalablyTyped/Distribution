@@ -6,7 +6,6 @@ import typings.sipJs.grammarMod.NameAddrHeader
 import typings.sipJs.grammarMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outgoingRequestMessageMod {
@@ -16,14 +15,7 @@ object outgoingRequestMessageMod {
   class OutgoingRequestMessage protected () extends StObject {
     def this(method: String, ruri: URI, fromURI: URI, toURI: URI) = this()
     def this(method: String, ruri: URI, fromURI: URI, toURI: URI, options: OutgoingRequestMessageOptions) = this()
-    def this(
-      method: String,
-      ruri: URI,
-      fromURI: URI,
-      toURI: URI,
-      options: js.UndefOr[scala.Nothing],
-      extraHeaders: js.Array[String]
-    ) = this()
+    def this(method: String, ruri: URI, fromURI: URI, toURI: URI, options: Unit, extraHeaders: js.Array[String]) = this()
     def this(
       method: String,
       ruri: URI,
@@ -37,16 +29,17 @@ object outgoingRequestMessageMod {
       ruri: URI,
       fromURI: URI,
       toURI: URI,
-      options: js.UndefOr[scala.Nothing],
-      extraHeaders: js.UndefOr[scala.Nothing],
+      options: Unit,
+      extraHeaders: js.Array[String],
       body: Body
     ) = this()
+    def this(method: String, ruri: URI, fromURI: URI, toURI: URI, options: Unit, extraHeaders: Unit, body: Body) = this()
     def this(
       method: String,
       ruri: URI,
       fromURI: URI,
       toURI: URI,
-      options: js.UndefOr[scala.Nothing],
+      options: OutgoingRequestMessageOptions,
       extraHeaders: js.Array[String],
       body: Body
     ) = this()
@@ -56,16 +49,7 @@ object outgoingRequestMessageMod {
       fromURI: URI,
       toURI: URI,
       options: OutgoingRequestMessageOptions,
-      extraHeaders: js.UndefOr[scala.Nothing],
-      body: Body
-    ) = this()
-    def this(
-      method: String,
-      ruri: URI,
-      fromURI: URI,
-      toURI: URI,
-      options: OutgoingRequestMessageOptions,
-      extraHeaders: js.Array[String],
+      extraHeaders: Unit,
       body: Body
     ) = this()
     
@@ -168,34 +152,33 @@ object outgoingRequestMessageMod {
     def makeNameAddrHeader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeNameAddrHeader")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait OutgoingRequestMessageOptions extends StObject {
     
-    var callId: js.UndefOr[String] = js.native
+    var callId: js.UndefOr[String] = js.undefined
     
-    var callIdPrefix: js.UndefOr[String] = js.native
+    var callIdPrefix: js.UndefOr[String] = js.undefined
     
-    var cseq: js.UndefOr[Double] = js.native
+    var cseq: js.UndefOr[Double] = js.undefined
     
-    var forceRport: js.UndefOr[Boolean] = js.native
+    var forceRport: js.UndefOr[Boolean] = js.undefined
     
-    var fromDisplayName: js.UndefOr[String] = js.native
+    var fromDisplayName: js.UndefOr[String] = js.undefined
     
-    var fromTag: js.UndefOr[String] = js.native
+    var fromTag: js.UndefOr[String] = js.undefined
     
-    var hackViaTcp: js.UndefOr[Boolean] = js.native
+    var hackViaTcp: js.UndefOr[Boolean] = js.undefined
     
-    var optionTags: js.UndefOr[js.Array[String]] = js.native
+    var optionTags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var routeSet: js.UndefOr[js.Array[String]] = js.native
+    var routeSet: js.UndefOr[js.Array[String]] = js.undefined
     
-    var toDisplayName: js.UndefOr[String] = js.native
+    var toDisplayName: js.UndefOr[String] = js.undefined
     
-    var toTag: js.UndefOr[String] = js.native
+    var toTag: js.UndefOr[String] = js.undefined
     
-    var userAgentString: js.UndefOr[String] = js.native
+    var userAgentString: js.UndefOr[String] = js.undefined
     
-    var viaHost: js.UndefOr[String] = js.native
+    var viaHost: js.UndefOr[String] = js.undefined
   }
   object OutgoingRequestMessageOptions {
     

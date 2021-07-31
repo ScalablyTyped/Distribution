@@ -2,44 +2,42 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ScriptSyntaxError...
   */
-@js.native
 trait IScriptSyntaxError extends StObject {
   
   /**
     * Position of the erroneous text from the beginning of the line
     */
-  var qColInLine: Double = js.native
+  var qColInLine: Double
   
   /**
     * Length of the word where the error is located
     */
-  var qErrLen: Double = js.native
+  var qErrLen: Double
   
   /**
     * Line number in the section where the error is located
     */
-  var qLineInTab: Double = js.native
+  var qLineInTab: Double
   
   /**
     * The default value is false.
     */
-  var qSecondaryFailure: Boolean = js.native
+  var qSecondaryFailure: Boolean
   
   /**
     * Number of the faulty section
     */
-  var qTabIx: Double = js.native
+  var qTabIx: Double
   
   /**
     * Position of the erroneous text from the beginning of the script
     */
-  var qTextPos: Double = js.native
+  var qTextPos: Double
 }
 object IScriptSyntaxError {
   

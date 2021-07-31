@@ -2,26 +2,24 @@ package typings.reactBootstrapTableNext.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizePerPageOptionRendererOptions extends StObject {
   
   /**
     * call it when you need to change size per page
     */
-  def onSizePerPageChange(page: Double, sizePerPage: Double): Unit = js.native
+  def onSizePerPageChange(page: Double, sizePerPage: Double): Unit
   
   /**
     * size of per page option
     */
-  var page: Double = js.native
+  var page: Double
   
   /**
     * text of the option
     */
-  var text: String = js.native
+  var text: String
 }
 object SizePerPageOptionRendererOptions {
   

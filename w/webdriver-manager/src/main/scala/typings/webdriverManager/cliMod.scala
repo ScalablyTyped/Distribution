@@ -5,10 +5,13 @@ import typings.webdriverManager.loggerMod.WriteTo
 import typings.webdriverManager.optionsMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cliMod {
+  
+  @JSImport("webdriver-manager/built/lib/cli", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("webdriver-manager/built/lib/cli", "Cli")
   @js.native
@@ -20,15 +23,15 @@ object cliMod {
   object LogLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.webdriverManager.loggerMod.LogLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.webdriverManager.loggerMod.LogLevel & Double] = js.native
     
-    /* 3 */ val DEBUG: typings.webdriverManager.loggerMod.LogLevel.DEBUG with Double = js.native
+    /* 3 */ val DEBUG: typings.webdriverManager.loggerMod.LogLevel.DEBUG & Double = js.native
     
-    /* 0 */ val ERROR: typings.webdriverManager.loggerMod.LogLevel.ERROR with Double = js.native
+    /* 0 */ val ERROR: typings.webdriverManager.loggerMod.LogLevel.ERROR & Double = js.native
     
-    /* 2 */ val INFO: typings.webdriverManager.loggerMod.LogLevel.INFO with Double = js.native
+    /* 2 */ val INFO: typings.webdriverManager.loggerMod.LogLevel.INFO & Double = js.native
     
-    /* 1 */ val WARN: typings.webdriverManager.loggerMod.LogLevel.WARN with Double = js.native
+    /* 1 */ val WARN: typings.webdriverManager.loggerMod.LogLevel.WARN & Double = js.native
   }
   
   @JSImport("webdriver-manager/built/lib/cli", "Logger")
@@ -66,9 +69,8 @@ object cliMod {
       * @param writeTo The enum for where to write the logs.
       * @return The string of the formatted id
       */
-    @JSImport("webdriver-manager/built/lib/cli", "Logger.id_")
-    @js.native
-    def id_(logLevel: LogLevel, id: String, writeTo: WriteTo): String = js.native
+    @scala.inline
+    def id_(logLevel: LogLevel, id: String, writeTo: WriteTo): String = (^.asInstanceOf[js.Dynamic].applyDynamic("id_")(logLevel.asInstanceOf[js.Any], id.asInstanceOf[js.Any], writeTo.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Get the log level formatted with the first letter. For info, it is I.
@@ -76,9 +78,8 @@ object cliMod {
       * @param writeTo The enum for where to write the logs.
       * @return The string of the formatted log level
       */
-    @JSImport("webdriver-manager/built/lib/cli", "Logger.level_")
-    @js.native
-    def level_(logLevel: LogLevel, id: String, writeTo: WriteTo): String = js.native
+    @scala.inline
+    def level_(logLevel: LogLevel, id: String, writeTo: WriteTo): String = (^.asInstanceOf[js.Dynamic].applyDynamic("level_")(logLevel.asInstanceOf[js.Any], id.asInstanceOf[js.Any], writeTo.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("webdriver-manager/built/lib/cli", "Logger.logLevel")
     @js.native
@@ -91,21 +92,18 @@ object cliMod {
       * @param msgs The list of messages.
       * @return The string of the formatted messages
       */
-    @JSImport("webdriver-manager/built/lib/cli", "Logger.msgToFile_")
-    @js.native
-    def msgToFile_(msgs: js.Array[_]): String = js.native
+    @scala.inline
+    def msgToFile_(msgs: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("msgToFile_")(msgs.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Set up the write location. If writing to a file, get the file descriptor.
       * @param writeTo The enum for where to write the logs.
       * @param opt_logFile An optional parameter to override the log file location.
       */
-    @JSImport("webdriver-manager/built/lib/cli", "Logger.setWrite")
-    @js.native
-    def setWrite(writeTo: WriteTo): Unit = js.native
-    @JSImport("webdriver-manager/built/lib/cli", "Logger.setWrite")
-    @js.native
-    def setWrite(writeTo: WriteTo, opt_logFile: String): Unit = js.native
+    @scala.inline
+    def setWrite(writeTo: WriteTo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWrite")(writeTo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setWrite(writeTo: WriteTo, opt_logFile: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setWrite")(writeTo.asInstanceOf[js.Any], opt_logFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("webdriver-manager/built/lib/cli", "Logger.showId")
     @js.native
@@ -124,9 +122,8 @@ object cliMod {
       * @param writeTo The enum for where to write the logs.
       * @return The string of the formatted timestamp
       */
-    @JSImport("webdriver-manager/built/lib/cli", "Logger.timestamp_")
-    @js.native
-    def timestamp_(writeTo: WriteTo): String = js.native
+    @scala.inline
+    def timestamp_(writeTo: WriteTo): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp_")(writeTo.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("webdriver-manager/built/lib/cli", "Logger.writeTo")
     @js.native
@@ -168,18 +165,17 @@ object cliMod {
   object WriteTo extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.webdriverManager.loggerMod.WriteTo with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.webdriverManager.loggerMod.WriteTo & Double] = js.native
     
-    /* 2 */ val BOTH: typings.webdriverManager.loggerMod.WriteTo.BOTH with Double = js.native
+    /* 2 */ val BOTH: typings.webdriverManager.loggerMod.WriteTo.BOTH & Double = js.native
     
-    /* 0 */ val CONSOLE: typings.webdriverManager.loggerMod.WriteTo.CONSOLE with Double = js.native
+    /* 0 */ val CONSOLE: typings.webdriverManager.loggerMod.WriteTo.CONSOLE & Double = js.native
     
-    /* 1 */ val FILE: typings.webdriverManager.loggerMod.WriteTo.FILE with Double = js.native
+    /* 1 */ val FILE: typings.webdriverManager.loggerMod.WriteTo.FILE & Double = js.native
     
-    /* 3 */ val NONE: typings.webdriverManager.loggerMod.WriteTo.NONE with Double = js.native
+    /* 3 */ val NONE: typings.webdriverManager.loggerMod.WriteTo.NONE & Double = js.native
   }
   
-  @JSImport("webdriver-manager/built/lib/cli", "unparseOptions")
-  @js.native
-  def unparseOptions(options: Options): js.Array[String] = js.native
+  @scala.inline
+  def unparseOptions(options: Options): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("unparseOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

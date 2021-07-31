@@ -2,30 +2,28 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Placement List Response
   */
-@js.native
 trait SchemaPlacementsListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#placementsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Placement collection.
     */
-  var placements: js.UndefOr[js.Array[SchemaPlacement]] = js.native
+  var placements: js.UndefOr[js.Array[SchemaPlacement]] = js.undefined
 }
 object SchemaPlacementsListResponse {
   

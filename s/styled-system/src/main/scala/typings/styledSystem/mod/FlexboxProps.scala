@@ -2,12 +2,11 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlexboxProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
-  extends AlignItemsProps[ThemeType]
+  extends StObject
+     with AlignItemsProps[ThemeType]
      with AlignContentProps[ThemeType]
      with JustifyItemsProps[ThemeType]
      with JustifyContentProps[ThemeType]

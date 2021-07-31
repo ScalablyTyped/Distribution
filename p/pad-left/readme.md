@@ -11,8 +11,8 @@ Left pad a string with zeros or a specified string. Fastest implementation.
 | Full name          | pad-left |
 | Keywords           | align, fill, left, pad, pad-left, padded, padding, spaces, string, zero, zero-fill, zeros |
 | # releases         | 0 |
-| # dependents       | 74 |
-| # downloads        | 4093122 |
+| # dependents       | 77 |
+| # downloads        | 4942301 |
 | # stars            | 3 |
 
 ## Links

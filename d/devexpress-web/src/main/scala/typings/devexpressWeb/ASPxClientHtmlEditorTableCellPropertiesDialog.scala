@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides client functionality for the Cell Properties dialog within the ASPxHtmlEditor.
   */
-@js.native
-trait ASPxClientHtmlEditorTableCellPropertiesDialog extends ASPxClientHtmlEditorTableElementPropertiesDialog {
+trait ASPxClientHtmlEditorTableCellPropertiesDialog
+  extends StObject
+     with ASPxClientHtmlEditorTableElementPropertiesDialog {
   
   /**
     * Provides access to the client object of the "Apply to all cells in the table" check box in the Html Editor's Cell Properties dialog.
     */
-  def GetApplyToAllCellsCheckBox(): ASPxClientCheckBox = js.native
+  def GetApplyToAllCellsCheckBox(): ASPxClientCheckBox
 }
 object ASPxClientHtmlEditorTableCellPropertiesDialog {
   

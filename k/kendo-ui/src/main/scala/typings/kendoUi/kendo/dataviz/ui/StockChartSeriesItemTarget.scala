@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartSeriesItemTarget extends StObject {
   
-  var border: js.UndefOr[js.Function | StockChartSeriesItemTargetBorder] = js.native
+  var border: js.UndefOr[js.Function | StockChartSeriesItemTargetBorder] = js.undefined
   
-  var color: js.UndefOr[String | js.Function] = js.native
+  var color: js.UndefOr[String | js.Function] = js.undefined
   
-  var line: js.UndefOr[StockChartSeriesItemTargetLine] = js.native
+  var line: js.UndefOr[StockChartSeriesItemTargetLine] = js.undefined
 }
 object StockChartSeriesItemTarget {
   

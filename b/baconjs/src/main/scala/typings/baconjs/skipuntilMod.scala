@@ -3,16 +3,20 @@ package typings.baconjs
 import typings.baconjs.observableMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skipuntilMod {
   
-  @JSImport("baconjs/types/skipuntil", JSImport.Default)
+  @JSImport("baconjs/types/skipuntil", JSImport.Namespace)
   @js.native
-  def default[V](src: typings.baconjs.observableMod.default[V], starter: typings.baconjs.observableMod.default[_]): typings.baconjs.observableMod.default[V] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("baconjs/types/skipuntil", "skipUntil")
-  @js.native
-  def skipUntil[V](src: default[V], starter: default[_]): default[V] = js.native
+  @scala.inline
+  def default[V](
+    src: typings.baconjs.observableMod.default[V],
+    starter: typings.baconjs.observableMod.default[js.Any]
+  ): typings.baconjs.observableMod.default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], starter.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[V]]
+  
+  @scala.inline
+  def skipUntil[V](src: default[V], starter: default[js.Any]): default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("skipUntil")(src.asInstanceOf[js.Any], starter.asInstanceOf[js.Any])).asInstanceOf[default[V]]
 }

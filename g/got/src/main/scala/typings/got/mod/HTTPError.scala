@@ -5,24 +5,23 @@ import typings.node.Buffer
 import typings.node.httpMod.IncomingHttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTTPError
-  extends StdError
+  extends StObject
+     with StdError
      with GotError {
   
-  var body: Buffer | String | js.Object = js.native
+  var body: Buffer | String | js.Object
   
-  var headers: IncomingHttpHeaders = js.native
+  var headers: IncomingHttpHeaders
   
   @JSName("name")
-  var name_HTTPError: typings.got.gotStrings.HTTPError = js.native
+  var name_HTTPError: typings.got.gotStrings.HTTPError
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var statusMessage: String = js.native
+  var statusMessage: String
 }
 object HTTPError {
   

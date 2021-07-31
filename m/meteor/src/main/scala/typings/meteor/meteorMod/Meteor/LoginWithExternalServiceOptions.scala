@@ -2,26 +2,24 @@ package typings.meteor.meteorMod.Meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Login **/
-@js.native
 trait LoginWithExternalServiceOptions extends StObject {
   
-  var forceApprovalPrompt: js.UndefOr[Boolean] = js.native
+  var forceApprovalPrompt: js.UndefOr[Boolean] = js.undefined
   
-  var loginHint: js.UndefOr[String] = js.native
+  var loginHint: js.UndefOr[String] = js.undefined
   
-  var loginStyle: js.UndefOr[String] = js.native
+  var loginStyle: js.UndefOr[String] = js.undefined
   
-  var loginUrlParameters: js.UndefOr[js.Object] = js.native
+  var loginUrlParameters: js.UndefOr[js.Object] = js.undefined
   
-  var redirectUrl: js.UndefOr[String] = js.native
+  var redirectUrl: js.UndefOr[String] = js.undefined
   
-  var requestOfflineToken: js.UndefOr[Boolean] = js.native
+  var requestOfflineToken: js.UndefOr[Boolean] = js.undefined
   
-  var requestPermissions: js.UndefOr[js.Array[String]] = js.native
+  var requestPermissions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object LoginWithExternalServiceOptions {
   

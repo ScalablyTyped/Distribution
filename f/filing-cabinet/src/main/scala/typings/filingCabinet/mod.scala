@@ -2,14 +2,16 @@ package typings.filingCabinet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("filing-cabinet", JSImport.Namespace)
   @js.native
-  def apply(options: Options): String = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Register a custom lookup resolver for a file extension
@@ -19,55 +21,53 @@ object mod {
     * @param extension the extension of the file that should use the custom resolver (ex: '.py', '.php')
     * @param resolver  A resolver of partial paths
     */
-  @JSImport("filing-cabinet", "register")
-  @js.native
-  def register(extension: String, resolver: Resolver): Unit = js.native
+  @scala.inline
+  def register(`extension`: String, resolver: Resolver): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(`extension`.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * the parsed AST for filename
       * Useful optimization for avoiding a parse of filename
       */
-    var ast: js.UndefOr[js.Any] = js.native
+    var ast: js.UndefOr[js.Any] = js.undefined
     
     /**
       * `requirejs` config for resolving aliased JavaScript modules
       */
-    var config: js.UndefOr[js.Any] = js.native
+    var config: js.UndefOr[js.Any] = js.undefined
     
     /** the path to all files */
-    var directory: String = js.native
+    var directory: String
     
     /** the path to the file containing the partial */
-    var filename: String = js.native
+    var filename: String
     
     /**
       * For typescript files, whether to prefer *.js over *.d.ts
       */
-    var noTypeDefinitions: js.UndefOr[Boolean] = js.native
+    var noTypeDefinitions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * config for resolving entry file for `node_modules`.
       * This value overrides the main attribute in the `package.json` file;
       * used in conjunction with the `packageFilter` of the resolve package
       */
-    var nodeModulesConfig: js.UndefOr[js.Any] = js.native
+    var nodeModulesConfig: js.UndefOr[js.Any] = js.undefined
     
     /** the dependency path */
-    var partial: String = js.native
+    var partial: String
     
     /**
       * Path to a typescript configuration.
       * Could also be an object representing a pre-parsed typescript config
       */
-    var tsConfig: js.UndefOr[String | js.Object] = js.native
+    var tsConfig: js.UndefOr[String | js.Object] = js.undefined
     
     /**
       * `webpack` config for resolving aliased JavaScript modules
       */
-    var webpackConfig: js.UndefOr[js.Any] = js.native
+    var webpackConfig: js.UndefOr[js.Any] = js.undefined
   }
   object Options {
     

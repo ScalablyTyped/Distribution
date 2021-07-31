@@ -12,7 +12,7 @@ Calculate percent
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 9796 |
+| # downloads        | 9432 |
 | # stars            | 0 |
 
 ## Links

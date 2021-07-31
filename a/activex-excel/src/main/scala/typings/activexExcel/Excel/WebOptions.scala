@@ -5,46 +5,44 @@ import typings.activexOffice.Office.MsoScreenSize
 import typings.activexOffice.Office.MsoTargetBrowser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebOptions extends StObject {
   
-  var AllowPNG: Boolean = js.native
+  var AllowPNG: Boolean
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  var DownloadComponents: Boolean = js.native
+  var DownloadComponents: Boolean
   
-  var Encoding: MsoEncoding = js.native
+  var Encoding: MsoEncoding
   
   @JSName("Excel.WebOptions_typekey")
-  var ExcelDotWebOptions_typekey: WebOptions = js.native
+  var ExcelDotWebOptions_typekey: WebOptions
   
-  val FolderSuffix: String = js.native
+  val FolderSuffix: String
   
-  var LocationOfComponents: String = js.native
+  var LocationOfComponents: String
   
-  var OrganizeInFolder: Boolean = js.native
+  var OrganizeInFolder: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var PixelsPerInch: Double = js.native
+  var PixelsPerInch: Double
   
-  var RelyOnCSS: Boolean = js.native
+  var RelyOnCSS: Boolean
   
-  var RelyOnVML: Boolean = js.native
+  var RelyOnVML: Boolean
   
-  var ScreenSize: MsoScreenSize = js.native
+  var ScreenSize: MsoScreenSize
   
-  var TargetBrowser: MsoTargetBrowser = js.native
+  var TargetBrowser: MsoTargetBrowser
   
-  def UseDefaultFolderSuffix(): Unit = js.native
+  def UseDefaultFolderSuffix(): Unit
   
-  var UseLongFileNames: Boolean = js.native
+  var UseLongFileNames: Boolean
 }
 object WebOptions {
   

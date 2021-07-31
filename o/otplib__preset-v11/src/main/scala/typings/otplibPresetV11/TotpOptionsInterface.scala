@@ -2,17 +2,17 @@ package typings.otplibPresetV11
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TotpOptionsInterface extends HotpOptionsInterface {
+trait TotpOptionsInterface
+  extends StObject
+     with HotpOptionsInterface {
   
-  var epoch: js.UndefOr[js.Any] = js.native
+  var epoch: js.UndefOr[js.Any] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var window: js.UndefOr[Double | js.Array[Double]] = js.native
+  var window: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
 object TotpOptionsInterface {
   

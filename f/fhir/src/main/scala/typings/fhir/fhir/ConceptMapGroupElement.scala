@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Mappings for a concept from the source set
   */
-@js.native
-trait ConceptMapGroupElement extends BackboneElement {
+trait ConceptMapGroupElement
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'display'.
     */
-  var _display: js.UndefOr[Element] = js.native
+  var _display: js.UndefOr[Element] = js.undefined
   
   /**
     * Identifies element being mapped
     */
-  var code: js.UndefOr[typings.fhir.fhir.code] = js.native
+  var code: js.UndefOr[typings.fhir.fhir.code] = js.undefined
   
   /**
     * Display for the code
     */
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
   /**
     * Concept in target system for element
     */
-  var target: js.UndefOr[js.Array[ConceptMapGroupElementTarget]] = js.native
+  var target: js.UndefOr[js.Array[ConceptMapGroupElementTarget]] = js.undefined
 }
 object ConceptMapGroupElement {
   

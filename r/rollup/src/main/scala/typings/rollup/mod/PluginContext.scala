@@ -7,11 +7,12 @@ import typings.std.IterableIterator
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PluginContext extends MinimalPluginContext {
+trait PluginContext
+  extends StObject
+     with MinimalPluginContext {
   
   def addWatchFile(id: String): Unit = js.native
   
@@ -59,9 +60,9 @@ trait PluginContext extends MinimalPluginContext {
   
   def getWatchFiles(): js.Array[String] = js.native
   
-  def isExternal(source: String, importer: js.UndefOr[scala.Nothing], isResolved: Boolean): Boolean = js.native
   /** @deprecated Use `this.resolve` instead */
   def isExternal(source: String, importer: String, isResolved: Boolean): Boolean = js.native
+  def isExternal(source: String, importer: Unit, isResolved: Boolean): Boolean = js.native
   /** @deprecated Use `this.resolve` instead */
   @JSName("isExternal")
   var isExternal_Original: IsExternal = js.native
@@ -73,9 +74,9 @@ trait PluginContext extends MinimalPluginContext {
   def parse(input: String, options: js.Any): AcornNode = js.native
   
   def resolve(source: String): js.Promise[ResolvedId | Null] = js.native
-  def resolve(source: String, importer: js.UndefOr[scala.Nothing], options: Custom): js.Promise[ResolvedId | Null] = js.native
   def resolve(source: String, importer: String): js.Promise[ResolvedId | Null] = js.native
   def resolve(source: String, importer: String, options: Custom): js.Promise[ResolvedId | Null] = js.native
+  def resolve(source: String, importer: Unit, options: Custom): js.Promise[ResolvedId | Null] = js.native
   
   /** @deprecated Use `this.resolve` instead */
   def resolveId(source: String): js.Promise[String | Null] = js.native

@@ -3,15 +3,16 @@ package typings.typeorm
 import typings.typeorm.findOperatorMod.FindOperator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notMod {
   
-  @JSImport("typeorm/browser/find-options/operator/Not", "Not")
+  @JSImport("typeorm/browser/find-options/operator/Not", JSImport.Namespace)
   @js.native
-  def Not[T](value: T): FindOperator[T] = js.native
-  @JSImport("typeorm/browser/find-options/operator/Not", "Not")
-  @js.native
-  def Not[T](value: FindOperator[T]): FindOperator[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Not[T](value: T): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Not")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
+  @scala.inline
+  def Not[T](value: FindOperator[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Not")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
 }

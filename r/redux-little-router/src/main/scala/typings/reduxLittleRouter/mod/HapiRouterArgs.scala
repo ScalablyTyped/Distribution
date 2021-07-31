@@ -3,15 +3,13 @@ package typings.reduxLittleRouter.mod
 import typings.reduxLittleRouter.anon.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HapiRouterArgs extends StObject {
   
-  var request: Path = js.native
+  var request: Path
   
-  var routes: Routes = js.native
+  var routes: Routes
 }
 object HapiRouterArgs {
   

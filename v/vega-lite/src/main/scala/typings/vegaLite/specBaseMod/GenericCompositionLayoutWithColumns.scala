@@ -1,0 +1,18 @@
+package typings.vegaLite.specBaseMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait GenericCompositionLayoutWithColumns
+  extends StObject
+     with GenericCompositionLayout
+     with ColumnMixins
+object GenericCompositionLayoutWithColumns {
+  
+  @scala.inline
+  def apply(): GenericCompositionLayoutWithColumns = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[GenericCompositionLayoutWithColumns]
+  }
+}

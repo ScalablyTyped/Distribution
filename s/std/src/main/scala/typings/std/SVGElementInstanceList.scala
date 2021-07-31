@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGElementInstanceList extends StObject {
   
   /** @deprecated */
-  def item(index: Double): SVGElementInstance = js.native
+  def item(index: Double): SVGElementInstance
   
   /** @deprecated */
-  val length: Double = js.native
+  val length: Double
 }
 object SVGElementInstanceList {
   

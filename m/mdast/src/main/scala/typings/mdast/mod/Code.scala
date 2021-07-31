@@ -3,27 +3,26 @@ package typings.mdast.mod
 import typings.mdast.mdastStrings.code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code
-  extends Literal
+  extends StObject
+     with Literal
      with BlockContent {
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var meta: js.UndefOr[String] = js.native
+  var meta: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_Code: code = js.native
+  var type_Code: code
 }
 object Code {
   
   @scala.inline
-  def apply(`type`: code, value: js.Any): Code = {
+  def apply(value: js.Any): Code = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("code")
     __obj.asInstanceOf[Code]
   }
   

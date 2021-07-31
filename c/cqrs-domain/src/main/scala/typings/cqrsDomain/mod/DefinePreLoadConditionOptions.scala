@@ -2,18 +2,16 @@ package typings.cqrsDomain.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // endregion
 // region definePreCondition
-@js.native
 trait DefinePreLoadConditionOptions extends StObject {
   
   /**
     * optional
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * the command name
@@ -21,22 +19,22 @@ trait DefinePreLoadConditionOptions extends StObject {
     * if name is '' it will handle all commands that matches the appropriate aggregate
     * if name is an array of strings it will handle all commands that matches the appropriate name
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * optional, if not defined it will use what is defined as default in aggregate or pass the whole command
     */
-  var payload: js.UndefOr[String] = js.native
+  var payload: js.UndefOr[String] = js.undefined
   
   /**
     * optional, default Infinity, all pre-conditions will be sorted by this value
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     * optional, default 0
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object DefinePreLoadConditionOptions {
   

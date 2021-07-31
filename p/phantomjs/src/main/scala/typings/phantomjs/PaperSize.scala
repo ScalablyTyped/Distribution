@@ -2,21 +2,19 @@ package typings.phantomjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaperSize extends StObject {
   
-  var border: String = js.native
+  var border: String
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object PaperSize {
   

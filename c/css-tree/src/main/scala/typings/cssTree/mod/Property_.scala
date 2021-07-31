@@ -2,23 +2,21 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Property_ extends StObject {
   
-  val basename: String = js.native
+  val basename: String
   
-  val custom: Boolean = js.native
+  val custom: Boolean
   
-  val hack: String = js.native
+  val hack: String
   
-  val name: String = js.native
+  val name: String
   
-  val prefix: String = js.native
+  val prefix: String
   
-  val vendor: String = js.native
+  val vendor: String
 }
 object Property_ {
   

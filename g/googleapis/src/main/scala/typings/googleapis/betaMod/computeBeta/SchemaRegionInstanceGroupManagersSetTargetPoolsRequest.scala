@@ -2,10 +2,8 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRegionInstanceGroupManagersSetTargetPoolsRequest extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait SchemaRegionInstanceGroupManagersSetTargetPoolsRequest extends StObject {
     * contents. This field is used for optimistic locking when you update the
     * target pool entries. This field is optional.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of all TargetPool resources to which instances in the
     * instanceGroup field are added. The target pools automatically apply to
     * all of the instances in the managed instance group.
     */
-  var targetPools: js.UndefOr[js.Array[String]] = js.native
+  var targetPools: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaRegionInstanceGroupManagersSetTargetPoolsRequest {
   

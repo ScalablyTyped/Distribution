@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.ssm
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowTaskTaskInvocationParametersLambdaParameters extends StObject {
   
   /**
     * Pass client-specific information to the Lambda function that you are invoking.
     */
-  var clientContext: js.UndefOr[Input[String]] = js.native
+  var clientContext: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * JSON to provide to your Lambda function as input.
     */
-  var payload: js.UndefOr[Input[String]] = js.native
+  var payload: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Specify a Lambda function version or alias name.
     */
-  var qualifier: js.UndefOr[Input[String]] = js.native
+  var qualifier: js.UndefOr[Input[String]] = js.undefined
 }
 object MaintenanceWindowTaskTaskInvocationParametersLambdaParameters {
   

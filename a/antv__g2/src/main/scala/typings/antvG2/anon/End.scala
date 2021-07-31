@@ -3,33 +3,31 @@ package typings.antvG2.anon
 import typings.antvG2.mod.Styles.line
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait End extends StObject {
   
   /**
     * 辅助线结束位置，值为原始数据值，支持 callback
     */
-  var end: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.native
+  var end: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.undefined
   
   /**
     * 图形样式配置
     */
-  var lineStyle: js.UndefOr[line] = js.native
+  var lineStyle: js.UndefOr[line] = js.undefined
   
   /**
     * 辅助线起始位置，值为原始数据值，支持 callback
     */
-  var start: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.native
+  var start: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.undefined
   
-  var text: js.UndefOr[AutoRotate] = js.native
+  var text: js.UndefOr[AutoRotate] = js.undefined
   
   /**
     * 指定 guide 是否绘制在 canvas 最上层，默认为 false, 即绘制在最下层
     */
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
 }
 object End {
   

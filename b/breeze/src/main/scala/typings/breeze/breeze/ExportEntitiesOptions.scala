@@ -2,16 +2,14 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportEntitiesOptions extends StObject {
   
-  var asString: Boolean = js.native
+  var asString: Boolean
   
   // default true
-  var includeMetadata: Boolean = js.native
+  var includeMetadata: Boolean
 }
 object ExportEntitiesOptions {
   

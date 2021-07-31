@@ -6,7 +6,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providerMod {
@@ -17,9 +16,9 @@ object providerMod {
   
   object Provider {
     
-    @JSImport("mobx-react/dist/Provider", "Provider")
-    @js.native
-    def apply(props: ProviderProps): Element = js.native
+    @scala.inline
+    def apply(props: ProviderProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("mobx-react/dist/Provider", "Provider")
     @js.native
     val ^ : js.Any = js.native
@@ -32,10 +31,9 @@ object providerMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in string ]: any} */ @js.native
-  trait ProviderProps extends StObject {
+  - Dropped {[ P in string ]: any} */ trait ProviderProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object ProviderProps {
     

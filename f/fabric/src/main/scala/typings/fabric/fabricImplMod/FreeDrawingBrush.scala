@@ -2,21 +2,19 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FreeDrawingBrush extends StObject {
   
   /**
     * Can be any regular color value.
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * Brush width measured in pixels.
     */
-  var width: Double = js.native
+  var width: Double
 }
 object FreeDrawingBrush {
   

@@ -4,31 +4,29 @@ import typings.fortawesomeFontawesomeCommonTypes.mod.IconPrefix
 import typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.nest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config_ extends StObject {
   
-  var autoA11y: Boolean = js.native
+  var autoA11y: Boolean
   
-  var autoAddCss: Boolean = js.native
+  var autoAddCss: Boolean
   
-  var autoReplaceSvg: Boolean | nest = js.native
+  var autoReplaceSvg: Boolean | nest
   
-  var familyPrefix: IconPrefix = js.native
+  var familyPrefix: IconPrefix
   
-  var keepOriginalSource: Boolean = js.native
+  var keepOriginalSource: Boolean
   
-  var measurePerformance: Boolean = js.native
+  var measurePerformance: Boolean
   
-  var observeMutations: Boolean = js.native
+  var observeMutations: Boolean
   
-  var replacementClass: String = js.native
+  var replacementClass: String
   
-  var searchPseudoElements: Boolean = js.native
+  var searchPseudoElements: Boolean
   
-  var showMissingIcons: Boolean = js.native
+  var showMissingIcons: Boolean
 }
 object Config_ {
   

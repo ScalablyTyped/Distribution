@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMembersRequest extends StObject {
   
   /**
     * The maximum number of items to return in the response. 
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.securityhubMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.securityhubMod.MaxResults] = js.undefined
   
   /**
     * The token that is required for pagination. On your first call to the ListMembers operation, set the value of this parameter to NULL. For subsequent calls to the operation, to continue listing data, set the value of this parameter to the value returned from the previous response.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.undefined
   
   /**
     * Specifies which member accounts to include in the response based on their relationship status with the master account. The default value is TRUE. If OnlyAssociated is set to TRUE, the response includes member accounts whose relationship status with the master is set to ENABLED or DISABLED. If OnlyAssociated is set to FALSE, the response includes all existing member accounts. 
     */
-  var OnlyAssociated: js.UndefOr[Boolean] = js.native
+  var OnlyAssociated: js.UndefOr[Boolean] = js.undefined
 }
 object ListMembersRequest {
   

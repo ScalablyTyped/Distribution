@@ -8,7 +8,6 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,8 +31,8 @@ object mod {
     def dispatchAs(name: String, args: js.Any*): js.Function1[/* repeated */ js.Any, Unit] = js.native
     
     def fit(): this.type = js.native
-    def fit(fitOptions: js.UndefOr[scala.Nothing], watchOptions: Boolean): this.type = js.native
-    def fit(fitOptions: js.UndefOr[scala.Nothing], watchOptions: WatchOptions): this.type = js.native
+    def fit(fitOptions: Unit, watchOptions: Boolean): this.type = js.native
+    def fit(fitOptions: Unit, watchOptions: WatchOptions): this.type = js.native
     def fit(fitOptions: FitOptions): this.type = js.native
     def fit(fitOptions: FitOptions, watchOptions: Boolean): this.type = js.native
     def fit(fitOptions: FitOptions, watchOptions: WatchOptions): this.type = js.native
@@ -65,9 +64,12 @@ object mod {
   /* static members */
   object AbstractChart {
     
-    @JSImport("d3kit", "AbstractChart.getCustomEventNames")
+    @JSImport("d3kit", "AbstractChart")
     @js.native
-    def getCustomEventNames(): js.Array[String] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getCustomEventNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomEventNames")().asInstanceOf[js.Array[String]]
   }
   
   @JSImport("d3kit", "AbstractPlate")
@@ -80,17 +82,19 @@ object mod {
     
     def getNode(): Element = js.native
     
-    def getSelection(): Selection_[BaseType, _, BaseType, _] = js.native
+    def getSelection(): Selection_[BaseType, js.Any, BaseType, js.Any] = js.native
   }
   /* static members */
   object AbstractPlate {
     
-    @JSImport("d3kit", "AbstractPlate.getDefaultOptions")
+    @JSImport("d3kit", "AbstractPlate")
     @js.native
-    def getDefaultOptions(): ChartOptions = js.native
-    @JSImport("d3kit", "AbstractPlate.getDefaultOptions")
-    @js.native
-    def getDefaultOptions(options: ChartOptions): ChartOptions = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
+    @scala.inline
+    def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
   }
   
   @JSImport("d3kit", "Base")
@@ -123,12 +127,14 @@ object mod {
   /* static members */
   object Base {
     
-    @JSImport("d3kit", "Base.getDefaultOptions")
+    @JSImport("d3kit", "Base")
     @js.native
-    def getDefaultOptions(): ChartOptions = js.native
-    @JSImport("d3kit", "Base.getDefaultOptions")
-    @js.native
-    def getDefaultOptions(options: ChartOptions): ChartOptions = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
+    @scala.inline
+    def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
   }
   
   @JSImport("d3kit", "CanvasChart")
@@ -146,9 +152,12 @@ object mod {
   /* static members */
   object CanvasChart {
     
-    @JSImport("d3kit", "CanvasChart.getDefaultOptions")
+    @JSImport("d3kit", "CanvasChart")
     @js.native
-    def getDefaultOptions(): ChartOptions = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
   }
   
   @JSImport("d3kit", "CanvasPlate")
@@ -163,12 +172,14 @@ object mod {
   /* static members */
   object CanvasPlate {
     
-    @JSImport("d3kit", "CanvasPlate.getDefaultOptions")
+    @JSImport("d3kit", "CanvasPlate")
     @js.native
-    def getDefaultOptions(): ChartOptions = js.native
-    @JSImport("d3kit", "CanvasPlate.getDefaultOptions")
-    @js.native
-    def getDefaultOptions(options: ChartOptions): ChartOptions = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
+    @scala.inline
+    def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
   }
   
   @JSImport("d3kit", "DivPlate")
@@ -179,12 +190,14 @@ object mod {
   /* static members */
   object DivPlate {
     
-    @JSImport("d3kit", "DivPlate.getDefaultOptions")
+    @JSImport("d3kit", "DivPlate")
     @js.native
-    def getDefaultOptions(): ChartOptions = js.native
-    @JSImport("d3kit", "DivPlate.getDefaultOptions")
-    @js.native
-    def getDefaultOptions(options: ChartOptions): ChartOptions = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
+    @scala.inline
+    def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
   }
   
   @JSImport("d3kit", "HybridChart")
@@ -199,29 +212,32 @@ object mod {
     
     var plate: SvgPlate = js.native
     
-    var rootG: Selection_[BaseType, _, BaseType, _] = js.native
+    var rootG: Selection_[BaseType, js.Any, BaseType, js.Any] = js.native
     
-    var svg: Selection_[BaseType, _, BaseType, _] = js.native
+    var svg: Selection_[BaseType, js.Any, BaseType, js.Any] = js.native
   }
   /* static members */
   object HybridChart {
     
-    @JSImport("d3kit", "HybridChart.getDefaultOptions")
+    @JSImport("d3kit", "HybridChart")
     @js.native
-    def getDefaultOptions(): ChartOptions = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
   }
   
   @JSImport("d3kit", "LayerOrganizer")
   @js.native
   class LayerOrganizer protected () extends StObject {
-    def this(container: Selection_[BaseType, _, BaseType, _]) = this()
-    def this(container: Selection_[BaseType, _, BaseType, _], defaultTag: String) = this()
+    def this(container: Selection_[BaseType, js.Any, BaseType, js.Any]) = this()
+    def this(container: Selection_[BaseType, js.Any, BaseType, js.Any], defaultTag: String) = this()
     
-    def create(layerNames: String): (Selection_[BaseType, _, BaseType, _]) | (js.Array[Selection_[BaseType, _, BaseType, _]]) = js.native
-    def create(layerNames: js.Array[LayerConfig | String]): (Selection_[BaseType, _, BaseType, _]) | (js.Array[Selection_[BaseType, _, BaseType, _]]) = js.native
-    def create(layerNames: LayerConfig): (Selection_[BaseType, _, BaseType, _]) | (js.Array[Selection_[BaseType, _, BaseType, _]]) = js.native
+    def create(layerNames: String): (Selection_[BaseType, js.Any, BaseType, js.Any]) | (js.Array[Selection_[BaseType, js.Any, BaseType, js.Any]]) = js.native
+    def create(layerNames: js.Array[LayerConfig | String]): (Selection_[BaseType, js.Any, BaseType, js.Any]) | (js.Array[Selection_[BaseType, js.Any, BaseType, js.Any]]) = js.native
+    def create(layerNames: LayerConfig): (Selection_[BaseType, js.Any, BaseType, js.Any]) | (js.Array[Selection_[BaseType, js.Any, BaseType, js.Any]]) = js.native
     
-    def get(name: String): Selection_[BaseType, _, BaseType, _] = js.native
+    def get(name: String): Selection_[BaseType, js.Any, BaseType, js.Any] = js.native
     
     def has(name: String): Boolean = js.native
   }
@@ -238,9 +254,9 @@ object mod {
     
     var plate: SvgPlate = js.native
     
-    var rootG: Selection_[BaseType, _, BaseType, _] = js.native
+    var rootG: Selection_[BaseType, js.Any, BaseType, js.Any] = js.native
     
-    var svg: Selection_[BaseType, _, BaseType, _] = js.native
+    var svg: Selection_[BaseType, js.Any, BaseType, js.Any] = js.native
   }
   
   @JSImport("d3kit", "SvgPlate")
@@ -250,68 +266,64 @@ object mod {
     
     var layers: LayerOrganizer = js.native
     
-    var rootG: Selection_[BaseType, _, BaseType, _] = js.native
+    var rootG: Selection_[BaseType, js.Any, BaseType, js.Any] = js.native
   }
   /* static members */
   object SvgPlate {
     
-    @JSImport("d3kit", "SvgPlate.getDefaultOptions")
+    @JSImport("d3kit", "SvgPlate")
     @js.native
-    def getDefaultOptions(): ChartOptions = js.native
-    @JSImport("d3kit", "SvgPlate.getDefaultOptions")
-    @js.native
-    def getDefaultOptions(options: ChartOptions): ChartOptions = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
+    @scala.inline
+    def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
   }
   
   object helper {
     
-    @JSImport("d3kit", "helper.debounce")
+    @JSImport("d3kit", "helper")
     @js.native
-    def debounce(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function1[/* repeated */ js.Any, Unit] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("d3kit", "helper.deepExtend")
-    @js.native
-    def deepExtend(dest: js.Any, args: js.Any*): js.Any = js.native
+    @scala.inline
+    def debounce(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
     
-    @JSImport("d3kit", "helper.extend")
-    @js.native
-    def extend(dest: js.Any, args: js.Any*): js.Any = js.native
+    @scala.inline
+    def deepExtend(dest: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepExtend")(dest.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("d3kit", "helper.functor")
-    @js.native
-    def functor(value: js.Any): js.Function1[/* repeated */ js.Any, _] = js.native
+    @scala.inline
+    def extend(dest: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(dest.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("d3kit", "helper.isFunction")
-    @js.native
-    def isFunction(value: js.Any): Boolean = js.native
+    @scala.inline
+    def functor(value: js.Any): js.Function1[/* repeated */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("functor")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    @JSImport("d3kit", "helper.isObject")
-    @js.native
-    def isObject(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isFunction(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("d3kit", "helper.kebabCase")
-    @js.native
-    def kebabCase(str: String): String = js.native
+    @scala.inline
+    def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("d3kit", "helper.rebind")
-    @js.native
-    def rebind(target: js.Any, source: js.Any): js.Any = js.native
+    @scala.inline
+    def kebabCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("kebabCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("d3kit", "helper.throttle")
-    @js.native
-    def throttle(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function1[/* repeated */ js.Any, Unit] = js.native
+    @scala.inline
+    def rebind(target: js.Any, source: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("rebind")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def throttle(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
   }
   
-  @js.native
   trait ChartMargin extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object ChartMargin {
     
@@ -350,18 +362,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ChartOptions extends StObject {
     
-    var initialHeight: js.UndefOr[Double] = js.native
+    var initialHeight: js.UndefOr[Double] = js.undefined
     
-    var initialWidth: js.UndefOr[Double] = js.native
+    var initialWidth: js.UndefOr[Double] = js.undefined
     
-    var margin: js.UndefOr[ChartMargin] = js.native
+    var margin: js.UndefOr[ChartMargin] = js.undefined
     
-    var offset: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var offset: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var pixelRatio: js.UndefOr[Double] = js.native
+    var pixelRatio: js.UndefOr[Double] = js.undefined
   }
   object ChartOptions {
     
@@ -406,20 +417,19 @@ object mod {
     }
   }
   
-  @js.native
   trait FitOptions extends StObject {
     
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
-    var maxHeight: js.UndefOr[String | Double] = js.native
+    var maxHeight: js.UndefOr[String | Double] = js.undefined
     
-    var maxWidth: js.UndefOr[String | Double] = js.native
+    var maxWidth: js.UndefOr[String | Double] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var ratio: js.UndefOr[Double] = js.native
+    var ratio: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object FitOptions {
     
@@ -470,9 +480,9 @@ object mod {
     }
   }
   
-  @js.native
   trait LayerConfig
-    extends /* layerName */ StringDictionary[String | (js.Array[LayerConfig | String]) | LayerConfig]
+    extends StObject
+       with /* layerName */ StringDictionary[String | (js.Array[LayerConfig | String]) | LayerConfig]
   object LayerConfig {
     
     @scala.inline
@@ -482,14 +492,13 @@ object mod {
     }
   }
   
-  @js.native
   trait WatchOptions extends StObject {
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[Element | (js.Tuple2[Double, Double]) | Height | Null] = js.native
+    var target: js.UndefOr[Element | (js.Tuple2[Double, Double]) | Height | Null] = js.undefined
   }
   object WatchOptions {
     

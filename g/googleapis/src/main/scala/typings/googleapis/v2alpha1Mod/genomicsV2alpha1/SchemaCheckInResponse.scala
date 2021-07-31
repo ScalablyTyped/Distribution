@@ -3,13 +3,11 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response to the CheckIn method.
   */
-@js.native
 trait SchemaCheckInResponse extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaCheckInResponse extends StObject {
     * must attempt to transmit the extension request no later than the
     * deadline.
     */
-  var deadline: js.UndefOr[String] = js.native
+  var deadline: js.UndefOr[String] = js.undefined
   
   /**
     * The metadata that describes the operation assigned to the worker.
     */
-  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaCheckInResponse {
   

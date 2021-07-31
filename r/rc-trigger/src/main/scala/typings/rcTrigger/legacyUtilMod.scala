@@ -5,25 +5,26 @@ import typings.rcTrigger.interfaceMod.AnimationType
 import typings.rcTrigger.interfaceMod.TransitionNameType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object legacyUtilMod {
   
-  @JSImport("rc-trigger/es/utils/legacyUtil", "getMotion")
+  @JSImport("rc-trigger/es/utils/legacyUtil", JSImport.Namespace)
   @js.native
-  def getMotion(hasPrefixClsMotionAnimationTransitionName: GetMotionProps): CSSMotionProps = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getMotion(hasPrefixClsMotionAnimationTransitionName: GetMotionProps): CSSMotionProps = ^.asInstanceOf[js.Dynamic].applyDynamic("getMotion")(hasPrefixClsMotionAnimationTransitionName.asInstanceOf[js.Any]).asInstanceOf[CSSMotionProps]
+  
   trait GetMotionProps extends StObject {
     
-    var animation: AnimationType = js.native
+    var animation: AnimationType
     
-    var motion: CSSMotionProps = js.native
+    var motion: CSSMotionProps
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var transitionName: TransitionNameType = js.native
+    var transitionName: TransitionNameType
   }
   object GetMotionProps {
     

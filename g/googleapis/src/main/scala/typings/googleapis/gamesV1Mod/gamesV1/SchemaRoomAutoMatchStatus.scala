@@ -2,27 +2,25 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for status of room automatching that is in
   * progress.
   */
-@js.native
 trait SchemaRoomAutoMatchStatus extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#roomAutoMatchStatus.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * An estimate for the amount of time (in seconds) that auto-matching is
     * expected to take to complete.
     */
-  var waitEstimateSeconds: js.UndefOr[Double] = js.native
+  var waitEstimateSeconds: js.UndefOr[Double] = js.undefined
 }
 object SchemaRoomAutoMatchStatus {
   

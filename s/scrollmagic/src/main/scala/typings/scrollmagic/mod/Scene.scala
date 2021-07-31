@@ -2,7 +2,6 @@ package typings.scrollmagic.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("scrollmagic", "Scene")
@@ -39,13 +38,13 @@ class Scene () extends StObject {
   // leads to errors (the compiler tries to match the event interfaces rather than
   // treating the generic Event interface as an abstract base interface
   // tslint:disable-next-line no-unnecessary-generics
-  def off[T /* <: Event[EventType] */](events: String, callback: js.Function1[/* event */ T, _]): Scene = js.native
+  def off[T /* <: Event[EventType] */](events: String, callback: js.Function1[/* event */ T, js.Any]): Scene = js.native
   
   def offset(): Double = js.native
   def offset(newOffset: Double): Scene = js.native
   
   // tslint:disable-next-line no-unnecessary-generics
-  def on[T /* <: Event[EventType] */](events: String, callback: js.Function1[/* event */ T, _]): Scene = js.native
+  def on[T /* <: Event[EventType] */](events: String, callback: js.Function1[/* event */ T, js.Any]): Scene = js.native
   
   def progress(): Double = js.native
   def progress(progress: Double): Scene = js.native

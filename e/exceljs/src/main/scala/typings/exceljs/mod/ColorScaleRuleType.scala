@@ -4,26 +4,25 @@ import typings.exceljs.anon.PartialColor
 import typings.exceljs.exceljsStrings.colorScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorScaleRuleType
-  extends ConditionalFormattingBaseRule
+  extends StObject
+     with ConditionalFormattingBaseRule
      with ConditionalFormattingRule {
   
-  var cfvo: js.UndefOr[js.Array[Cvfo]] = js.native
+  var cfvo: js.UndefOr[js.Array[Cvfo]] = js.undefined
   
-  var color: js.UndefOr[js.Array[PartialColor]] = js.native
+  var color: js.UndefOr[js.Array[PartialColor]] = js.undefined
   
-  var `type`: colorScale = js.native
+  var `type`: colorScale
 }
 object ColorScaleRuleType {
   
   @scala.inline
-  def apply(priority: Double, `type`: colorScale): ColorScaleRuleType = {
+  def apply(priority: Double): ColorScaleRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("colorScale")
     __obj.asInstanceOf[ColorScaleRuleType]
   }
   

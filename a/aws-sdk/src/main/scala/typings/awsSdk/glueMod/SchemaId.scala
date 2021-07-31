@@ -2,17 +2,15 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaId extends StObject {
   
-  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.undefined
   
-  var SchemaArn: js.UndefOr[GlueResourceArn] = js.native
+  var SchemaArn: js.UndefOr[GlueResourceArn] = js.undefined
   
-  var SchemaName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var SchemaName: js.UndefOr[SchemaRegistryNameString] = js.undefined
 }
 object SchemaId {
   

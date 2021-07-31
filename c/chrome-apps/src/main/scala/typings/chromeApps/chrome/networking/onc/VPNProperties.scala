@@ -2,17 +2,15 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VPNProperties[M /* <: ManagedObject */, B, S] extends StObject {
   
   /** Whether the VPN network should be connected automatically. */
-  var AutoConnect: js.UndefOr[B] = js.native
+  var AutoConnect: js.UndefOr[B] = js.undefined
   
   /** The VPN host. */
-  var Host: js.UndefOr[S] = js.native
+  var Host: js.UndefOr[S] = js.undefined
   
   /**
     * The VPN type.
@@ -20,7 +18,7 @@ trait VPNProperties[M /* <: ManagedObject */, B, S] extends StObject {
     * This is optional for NetworkConfigProperties which is passed to
     * *setProperties* which may be used to set only specific properties.
     */
-  var Type: js.UndefOr[S] = js.native
+  var Type: js.UndefOr[S] = js.undefined
 }
 object VPNProperties {
   
@@ -31,7 +29,7 @@ object VPNProperties {
   }
   
   @scala.inline
-  implicit class VPNPropertiesMutableBuilder[Self <: VPNProperties[_, _, _], M /* <: ManagedObject */, B, S] (val x: Self with (VPNProperties[M, B, S])) extends AnyVal {
+  implicit class VPNPropertiesMutableBuilder[Self <: VPNProperties[?, ?, ?], M /* <: ManagedObject */, B, S] (val x: Self & (VPNProperties[M, B, S])) extends AnyVal {
     
     @scala.inline
     def setAutoConnect(value: B): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])

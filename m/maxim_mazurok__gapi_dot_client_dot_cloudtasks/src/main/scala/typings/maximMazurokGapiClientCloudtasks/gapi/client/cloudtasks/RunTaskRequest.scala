@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudtasks.gapi.client.cloudtasks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunTaskRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait RunTaskRequest extends StObject {
     * payloads, might be desirable to return only when needed because of its large size or because of the sensitivity of data that it contains. Authorization for FULL requires
     * `cloudtasks.tasks.fullView` [Google IAM](https://cloud.google.com/iam/) permission on the Task resource.
     */
-  var responseView: js.UndefOr[String] = js.native
+  var responseView: js.UndefOr[String] = js.undefined
 }
 object RunTaskRequest {
   

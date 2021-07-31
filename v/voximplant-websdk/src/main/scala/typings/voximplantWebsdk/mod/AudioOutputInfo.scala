@@ -2,24 +2,22 @@ package typings.voximplantWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Audio playback device info
   */
-@js.native
 trait AudioOutputInfo extends StObject {
   
   /**
     *    Device id that can be used to choose audio playback device
     */
-  var id: Double | String = js.native
+  var id: Double | String
   
   /**
     *    Device name , in WebRTC mode populated with real data only when app has been opened using HTTPS protocol
     */
-  var name: String = js.native
+  var name: String
 }
 object AudioOutputInfo {
   

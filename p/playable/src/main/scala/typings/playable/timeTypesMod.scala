@@ -4,23 +4,21 @@ import typings.playable.themeTypesMod.IThemeService
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timeTypesMod {
   
-  @js.native
   trait ITimeControl extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object ITimeControl {
     
@@ -56,10 +54,9 @@ object timeTypesMod {
     }
   }
   
-  @js.native
   trait ITimeViewConfig extends StObject {
     
-    var theme: IThemeService = js.native
+    var theme: IThemeService
   }
   object ITimeViewConfig {
     
@@ -77,20 +74,19 @@ object timeTypesMod {
     }
   }
   
-  @js.native
   trait ITimeViewStyles extends StObject {
     
-    var current: String = js.native
+    var current: String
     
-    var duration: String = js.native
+    var duration: String
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var separator: String = js.native
+    var separator: String
     
-    var time: String = js.native
+    var time: String
     
-    var timeWrapper: String = js.native
+    var timeWrapper: String
   }
   object ITimeViewStyles {
     

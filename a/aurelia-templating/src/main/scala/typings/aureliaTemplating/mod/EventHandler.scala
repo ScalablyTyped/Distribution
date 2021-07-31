@@ -2,21 +2,19 @@ package typings.aureliaTemplating.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventHandler extends StObject {
   
-  var bubbles: Boolean = js.native
+  var bubbles: Boolean
   
-  var capture: Boolean = js.native
+  var capture: Boolean
   
-  var dispose: js.Function = js.native
+  var dispose: js.Function
   
-  var eventName: String = js.native
+  var eventName: String
   
-  var handler: js.Function = js.native
+  var handler: js.Function
 }
 object EventHandler {
   

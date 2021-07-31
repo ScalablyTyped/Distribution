@@ -2,13 +2,11 @@ package typings.uiGrid.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBuildColumnsOptions extends StObject {
   
-  var orderByColumnDefs: js.UndefOr[Boolean] = js.native
+  var orderByColumnDefs: js.UndefOr[Boolean] = js.undefined
 }
 object IBuildColumnsOptions {
   

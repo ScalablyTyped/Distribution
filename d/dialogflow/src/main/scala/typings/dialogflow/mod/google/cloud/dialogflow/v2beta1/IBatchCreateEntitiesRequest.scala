@@ -3,21 +3,19 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.IEntity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a BatchCreateEntitiesRequest. */
-@js.native
 trait IBatchCreateEntitiesRequest extends StObject {
   
   /** BatchCreateEntitiesRequest entities */
-  var entities: js.UndefOr[js.Array[IEntity] | Null] = js.native
+  var entities: js.UndefOr[js.Array[IEntity] | Null] = js.undefined
   
   /** BatchCreateEntitiesRequest languageCode */
-  var languageCode: js.UndefOr[String | Null] = js.native
+  var languageCode: js.UndefOr[String | Null] = js.undefined
   
   /** BatchCreateEntitiesRequest parent */
-  var parent: js.UndefOr[String | Null] = js.native
+  var parent: js.UndefOr[String | Null] = js.undefined
 }
 object IBatchCreateEntitiesRequest {
   

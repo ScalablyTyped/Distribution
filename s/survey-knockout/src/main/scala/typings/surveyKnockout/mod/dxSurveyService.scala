@@ -4,7 +4,6 @@ import typings.std.File
 import typings.std.JSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "dxSurveyService")
@@ -17,7 +16,7 @@ class dxSurveyService () extends StObject {
     onGetResult: js.Function4[
       /* success */ Boolean, 
       /* data */ js.Any, 
-      /* dataList */ js.Array[_], 
+      /* dataList */ js.Array[js.Any], 
       /* response */ js.Any, 
       Unit
     ]
@@ -61,13 +60,6 @@ class dxSurveyService () extends StObject {
     postId: String,
     result: JSON,
     onSendResult: js.Function3[/* success */ Boolean, /* response */ js.Any, /* request */ js.UndefOr[js.Any], Unit],
-    clientId: js.UndefOr[scala.Nothing],
-    isPartialCompleted: Boolean
-  ): Unit = js.native
-  def sendResult(
-    postId: String,
-    result: JSON,
-    onSendResult: js.Function3[/* success */ Boolean, /* response */ js.Any, /* request */ js.UndefOr[js.Any], Unit],
     clientId: String
   ): Unit = js.native
   def sendResult(
@@ -75,6 +67,13 @@ class dxSurveyService () extends StObject {
     result: JSON,
     onSendResult: js.Function3[/* success */ Boolean, /* response */ js.Any, /* request */ js.UndefOr[js.Any], Unit],
     clientId: String,
+    isPartialCompleted: Boolean
+  ): Unit = js.native
+  def sendResult(
+    postId: String,
+    result: JSON,
+    onSendResult: js.Function3[/* success */ Boolean, /* response */ js.Any, /* request */ js.UndefOr[js.Any], Unit],
+    clientId: Unit,
     isPartialCompleted: Boolean
   ): Unit = js.native
 }

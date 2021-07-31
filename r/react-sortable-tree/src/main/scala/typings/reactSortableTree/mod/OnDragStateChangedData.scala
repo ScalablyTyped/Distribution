@@ -2,15 +2,13 @@ package typings.reactSortableTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnDragStateChangedData extends StObject {
   
-  var draggedNode: TreeItem = js.native
+  var draggedNode: TreeItem
   
-  var isDragging: Boolean = js.native
+  var isDragging: Boolean
 }
 object OnDragStateChangedData {
   

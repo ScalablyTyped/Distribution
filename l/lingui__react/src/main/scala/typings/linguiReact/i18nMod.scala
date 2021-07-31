@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object i18nMod {
@@ -17,14 +16,13 @@ object i18nMod {
   
   type I18nComponent = Component[I18nComponentProps, js.Object, js.Any]
   
-  @js.native
   trait I18nComponentProps extends StObject {
     
-    def children(hasI18nI18nHash: I18n): ReactNode = js.native
+    def children(hasI18nI18nHash: I18n): ReactNode
     
-    var update: js.UndefOr[Boolean] = js.native
+    var update: js.UndefOr[Boolean] = js.undefined
     
-    var withHash: js.UndefOr[Boolean] = js.native
+    var withHash: js.UndefOr[Boolean] = js.undefined
   }
   object I18nComponentProps {
     

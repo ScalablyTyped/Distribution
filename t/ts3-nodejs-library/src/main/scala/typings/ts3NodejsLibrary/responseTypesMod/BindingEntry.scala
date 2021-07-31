@@ -3,13 +3,13 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BindingEntry extends ResponseEntry {
+trait BindingEntry
+  extends StObject
+     with ResponseEntry {
   
-  var ip: String = js.native
+  var ip: String
 }
 object BindingEntry {
   

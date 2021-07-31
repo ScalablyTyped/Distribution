@@ -10,9 +10,9 @@ The TypeScript compiler with onSuccess command
 | ------------------ | :-------------: |
 | Full name          | tsc-watch |
 | Keywords           | TypeScript |
-| # releases         | 38 |
-| # dependents       | 41 |
-| # downloads        | 5607577 |
+| # releases         | 21 |
+| # dependents       | 51 |
+| # downloads        | 6596245 |
 | # stars            | 1 |
 
 ## Links

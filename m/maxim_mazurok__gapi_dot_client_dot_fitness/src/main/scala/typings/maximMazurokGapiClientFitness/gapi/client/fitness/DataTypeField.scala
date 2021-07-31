@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientFitness.gapi.client.fitness
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataTypeField extends StObject {
   
   /** The different supported formats for each field in a data type. */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /** Defines the name and format of data. Unlike data type names, field names are not namespaced, and only need to be unique within the data type. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var optional: js.UndefOr[Boolean] = js.native
+  var optional: js.UndefOr[Boolean] = js.undefined
 }
 object DataTypeField {
   

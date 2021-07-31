@@ -2,7 +2,6 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to customers. These fields are propagated from PARTNER_PROVIDER attachments
   * to their corresponding PARTNER attachments.
   */
-@js.native
 trait SchemaInterconnectAttachmentPartnerMetadata extends StObject {
   
   /**
@@ -18,20 +16,20 @@ trait SchemaInterconnectAttachmentPartnerMetadata extends StObject {
     * displayed in the Partner?s portal. For instance &quot;Chicago 1&quot;.
     * This value may be validated to match approved Partner values.
     */
-  var interconnectName: js.UndefOr[String] = js.native
+  var interconnectName: js.UndefOr[String] = js.undefined
   
   /**
     * Plain text name of the Partner providing this attachment. This value may
     * be validated to match approved Partner values.
     */
-  var partnerName: js.UndefOr[String] = js.native
+  var partnerName: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the Partner?s portal for this Attachment. Partners may customise
     * this to be a deep-link to the specific resource on the Partner portal.
     * This value may be validated to match approved Partner values.
     */
-  var portalUrl: js.UndefOr[String] = js.native
+  var portalUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaInterconnectAttachmentPartnerMetadata {
   

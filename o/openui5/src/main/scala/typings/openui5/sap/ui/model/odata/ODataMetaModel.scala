@@ -5,11 +5,12 @@ import typings.openui5.sap.ui.model.Context
 import typings.openui5.sap.ui.model.MetaModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ODataMetaModel extends MetaModel {
+trait ODataMetaModel
+  extends StObject
+     with MetaModel {
   
   /**
     * Returns the OData meta model context corresponding to the given OData model path.
@@ -138,13 +139,13 @@ trait ODataMetaModel extends MetaModel {
     * @returns a Promise that gets resolved as soon as the value lists as well as the required model 
     * elements have been loaded
     */
-  def getODataValueLists(oPropertyContext: Context): JQueryPromise[_] = js.native
+  def getODataValueLists(oPropertyContext: Context): JQueryPromise[js.Any] = js.native
   
   /**
     * Returns a promise which is fulfilled once the meta model data is loaded and can be used.
     * @returns a Promise
     */
-  def loaded(): JQueryPromise[_] = js.native
+  def loaded(): JQueryPromise[js.Any] = js.native
   
   /**
     * Refresh not supported by OData meta model!

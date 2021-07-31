@@ -6,43 +6,41 @@ import typings.kendoUi.kendoUiStrings.read
 import typings.kendoUi.kendoUiStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceTransport extends StObject {
   
   var create: js.UndefOr[
     String | DataSourceTransportCreate | (js.Function1[/* options */ DataSourceTransportOptions, Unit])
-  ] = js.native
+  ] = js.undefined
   
   var destroy: js.UndefOr[
     String | DataSourceTransportDestroy | (js.Function1[/* options */ DataSourceTransportOptions, Unit])
-  ] = js.native
+  ] = js.undefined
   
   var parameterMap: js.UndefOr[
     js.Function2[
       /* data */ DataSourceTransportParameterMapData, 
       /* type */ create | destroy | read | update, 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var push: js.UndefOr[js.Function] = js.native
+  var push: js.UndefOr[js.Function] = js.undefined
   
   var read: js.UndefOr[
     String | DataSourceTransportRead | (js.Function1[/* options */ DataSourceTransportOptions, Unit])
-  ] = js.native
+  ] = js.undefined
   
   var signalr: js.UndefOr[
     DataSourceTransportSignalr | (js.Function1[/* options */ DataSourceTransportOptions, Unit])
-  ] = js.native
+  ] = js.undefined
   
-  var submit: js.UndefOr[js.Function] = js.native
+  var submit: js.UndefOr[js.Function] = js.undefined
   
   var update: js.UndefOr[
     String | DataSourceTransportUpdate | (js.Function1[/* options */ DataSourceTransportOptions, Unit])
-  ] = js.native
+  ] = js.undefined
 }
 object DataSourceTransport {
   
@@ -79,7 +77,7 @@ object DataSourceTransport {
     
     @scala.inline
     def setParameterMap(
-      value: (/* data */ DataSourceTransportParameterMapData, /* type */ create | destroy | read | update) => _
+      value: (/* data */ DataSourceTransportParameterMapData, /* type */ create | destroy | read | update) => js.Any
     ): Self = StObject.set(x, "parameterMap", js.Any.fromFunction2(value))
     
     @scala.inline

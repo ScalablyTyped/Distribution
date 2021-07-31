@@ -7,7 +7,6 @@ import typings.layuiSrc.layuiSrcStrings.select
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,11 +20,11 @@ trait Form extends StObject {
     * @param event    select|submit
     * @param callback
     */
-  def on(event: String, callback: js.Function1[/* data */ LayFormData, _]): Unit = js.native
+  def on(event: String, callback: js.Function1[/* data */ LayFormData, js.Any]): Unit = js.native
   
   def render(): js.Any = js.native
-  def render(`type`: js.UndefOr[scala.Nothing], filter: String): js.Any = js.native
   def render(`type`: Null, filter: String): js.Any = js.native
+  def render(`type`: Unit, filter: String): js.Any = js.native
   @JSName("render")
   def render_checkbox(`type`: checkbox): js.Any = js.native
   @JSName("render")

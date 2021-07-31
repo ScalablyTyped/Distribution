@@ -2,17 +2,15 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Count extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var uniques: Double = js.native
+  var uniques: Double
 }
 object Count {
   

@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** EmotionScores. */
-@js.native
 trait EmotionScores extends StObject {
   
   /** Anger score from 0 to 1. A higher score means that the text is more likely to convey anger. */
-  var anger: js.UndefOr[Double] = js.native
+  var anger: js.UndefOr[Double] = js.undefined
   
   /** Disgust score from 0 to 1. A higher score means that the text is more likely to convey disgust. */
-  var disgust: js.UndefOr[Double] = js.native
+  var disgust: js.UndefOr[Double] = js.undefined
   
   /** Fear score from 0 to 1. A higher score means that the text is more likely to convey fear. */
-  var fear: js.UndefOr[Double] = js.native
+  var fear: js.UndefOr[Double] = js.undefined
   
   /** Joy score from 0 to 1. A higher score means that the text is more likely to convey joy. */
-  var joy: js.UndefOr[Double] = js.native
+  var joy: js.UndefOr[Double] = js.undefined
   
   /** Sadness score from 0 to 1. A higher score means that the text is more likely to convey sadness. */
-  var sadness: js.UndefOr[Double] = js.native
+  var sadness: js.UndefOr[Double] = js.undefined
 }
 object EmotionScores {
   

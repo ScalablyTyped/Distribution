@@ -2,24 +2,22 @@ package typings.semanticUiPopup.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-popup.SemanticUI.Popup.MetadataSettings._Impl, keyof semantic-ui-popup.SemanticUI.Popup.MetadataSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplContent extends StObject {
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[String] = js.native
+  var offset: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var variation: js.UndefOr[String] = js.native
+  var variation: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplContent {
   

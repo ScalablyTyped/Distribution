@@ -3,18 +3,16 @@ package typings.googleGax.operationsMod.google.longrunning
 import typings.googleGax.operationsMod.google.protobuf.IDuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a WaitOperationRequest. */
-@js.native
 trait IWaitOperationRequest extends StObject {
   
   /** WaitOperationRequest name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** WaitOperationRequest timeout */
-  var timeout: js.UndefOr[IDuration | Null] = js.native
+  var timeout: js.UndefOr[IDuration | Null] = js.undefined
 }
 object IWaitOperationRequest {
   

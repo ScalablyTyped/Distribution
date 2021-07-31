@@ -3,19 +3,17 @@ package typings.promiseSftp
 import typings.ssh2Streams.mod.Attributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attrs extends StObject {
     
-    var attrs: Attributes = js.native
+    var attrs: Attributes
     
-    var filename: String = js.native
+    var filename: String
     
-    var longname: String = js.native
+    var longname: String
   }
   object Attrs {
     
@@ -39,24 +37,23 @@ object anon {
     }
   }
   
-  @js.native
   trait AutoClose extends StObject {
     
-    var autoClose: js.UndefOr[Boolean] = js.native
+    var autoClose: js.UndefOr[Boolean] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
-    var fd: js.UndefOr[Double] = js.native
+    var fd: js.UndefOr[Double] = js.undefined
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object AutoClose {
     
@@ -119,17 +116,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Buffer extends StObject {
     
     /** The buffer passed to `#read()`, but offset-adjusted */
-    var buffer: typings.node.Buffer = js.native
+    var buffer: typings.node.Buffer
     
     /** The number of bytes successfully read */
-    var bytesRead: Double = js.native
+    var bytesRead: Double
     
     /** The position passed to `#read()` */
-    var position: Double = js.native
+    var position: Double
   }
   object Buffer {
     
@@ -153,14 +149,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Echo extends StObject {
     
     /** Whether the user's input should be displayed on-screen */
-    var echo: Boolean = js.native
+    var echo: Boolean
     
     /** The query to pose to the user */
-    var prompt: String = js.native
+    var prompt: String
   }
   object Echo {
     
@@ -181,14 +176,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Group extends StObject {
     
-    var group: String = js.native
+    var group: String
     
-    var other: String = js.native
+    var other: String
     
-    var user: String = js.native
+    var user: String
   }
   object Group {
     

@@ -2,20 +2,18 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A PageElement kind representing a linked chart embedded from Google Sheets.
   */
-@js.native
 trait SchemaSheetsChart extends StObject {
   
   /**
     * The ID of the specific chart in the Google Sheets spreadsheet that is
     * embedded.
     */
-  var chartId: js.UndefOr[Double] = js.native
+  var chartId: js.UndefOr[Double] = js.undefined
   
   /**
     * The URL of an image of the embedded chart, with a default lifetime of 30
@@ -24,17 +22,17 @@ trait SchemaSheetsChart extends StObject {
     * Access to the image may be lost if the presentation&#39;s sharing
     * settings change.
     */
-  var contentUrl: js.UndefOr[String] = js.native
+  var contentUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The properties of the Sheets chart.
     */
-  var sheetsChartProperties: js.UndefOr[SchemaSheetsChartProperties] = js.native
+  var sheetsChartProperties: js.UndefOr[SchemaSheetsChartProperties] = js.undefined
   
   /**
     * The ID of the Google Sheets spreadsheet that contains the source chart.
     */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
 }
 object SchemaSheetsChart {
   

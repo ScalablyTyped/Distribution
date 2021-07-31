@@ -4,7 +4,6 @@ import typings.asmcryptoJs.aesMod.AES
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cfbMod {
@@ -22,18 +21,18 @@ object cfbMod {
   /* static members */
   object AES_CFB {
     
-    @JSImport("asmcrypto.js/dist_es8/aes/cfb", "AES_CFB.decrypt")
+    @JSImport("asmcrypto.js/dist_es8/aes/cfb", "AES_CFB")
     @js.native
-    def decrypt(data: Uint8Array, key: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js/dist_es8/aes/cfb", "AES_CFB.decrypt")
-    @js.native
-    def decrypt(data: Uint8Array, key: Uint8Array, iv: Uint8Array): Uint8Array = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("asmcrypto.js/dist_es8/aes/cfb", "AES_CFB.encrypt")
-    @js.native
-    def encrypt(data: Uint8Array, key: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js/dist_es8/aes/cfb", "AES_CFB.encrypt")
-    @js.native
-    def encrypt(data: Uint8Array, key: Uint8Array, iv: Uint8Array): Uint8Array = js.native
+    @scala.inline
+    def decrypt(data: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def decrypt(data: Uint8Array, key: Uint8Array, iv: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    
+    @scala.inline
+    def encrypt(data: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def encrypt(data: Uint8Array, key: Uint8Array, iv: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   }
 }

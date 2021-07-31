@@ -5,10 +5,8 @@ import typings.firebaseAdmin.firebaseAdminStrings.high
 import typings.firebaseAdmin.firebaseAdminStrings.normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidConfig extends StObject {
   
   /**
@@ -17,40 +15,40 @@ trait AndroidConfig extends StObject {
     * sent when delivery can be resumed. A maximum of four different collapse keys
     * may be active at any given time.
     */
-  var collapseKey: js.UndefOr[String] = js.native
+  var collapseKey: js.UndefOr[String] = js.undefined
   
   /**
     * A collection of data fields to be included in the message. All values must
     * be strings. When provided, overrides any data fields set on the top-level
     * `admin.messaging.Message`.}
     */
-  var data: js.UndefOr[StringDictionary[String]] = js.native
+  var data: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Options for features provided by the FCM SDK for Android.
     */
-  var fcmOptions: js.UndefOr[AndroidFcmOptions] = js.native
+  var fcmOptions: js.UndefOr[AndroidFcmOptions] = js.undefined
   
   /**
     * Android notification to be included in the message.
     */
-  var notification: js.UndefOr[AndroidNotification] = js.native
+  var notification: js.UndefOr[AndroidNotification] = js.undefined
   
   /**
     * Priority of the message. Must be either `normal` or `high`.
     */
-  var priority: js.UndefOr[high | normal] = js.native
+  var priority: js.UndefOr[high | normal] = js.undefined
   
   /**
     * Package name of the application where the registration tokens must match
     * in order to receive the message.
     */
-  var restrictedPackageName: js.UndefOr[String] = js.native
+  var restrictedPackageName: js.UndefOr[String] = js.undefined
   
   /**
     * Time-to-live duration of the message in milliseconds.
     */
-  var ttl: js.UndefOr[Double] = js.native
+  var ttl: js.UndefOr[Double] = js.undefined
 }
 object AndroidConfig {
   

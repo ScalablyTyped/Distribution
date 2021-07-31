@@ -9,7 +9,6 @@ import typings.react.mod.ReactType
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,7 +20,6 @@ object mod {
   
   type IdyllDocument = PureComponent[IdyllDocumentProps, js.Any, js.Any]
   
-  @js.native
   trait IdyllDocumentProps extends StObject {
     
     /**
@@ -29,53 +27,53 @@ object mod {
       * If provided, this will be used insteaed of
       * the markup
       */
-    var ast: js.UndefOr[AST] = js.native
+    var ast: js.UndefOr[AST] = js.undefined
     
     /**
       * Compiler option for Idyll compiler when compiling markup
       */
-    var compilerOptions: js.UndefOr[Options] = js.native
+    var compilerOptions: js.UndefOr[Options] = js.undefined
     
     /**
       * Components to be rendered with
       */
-    var components: js.Any = js.native
+    var components: js.Any
     
-    var context: js.UndefOr[js.Function1[/* context */ js.Any, Unit]] = js.native
+    var context: js.UndefOr[js.Function1[/* context */ js.Any, Unit]] = js.undefined
     
     /**
       * Initial data set
       */
-    var datasets: js.UndefOr[js.Object] = js.native
+    var datasets: js.UndefOr[js.Object] = js.undefined
     
     /**
       * The React component rendered when an error occurs
       */
-    var errorComponent: js.UndefOr[ReactType[Children]] = js.native
+    var errorComponent: js.UndefOr[ReactType[Children]] = js.undefined
     
-    var initialState: js.UndefOr[js.Any] = js.native
+    var initialState: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The layout for idyll document
       * Will correspond to one one layout in idyll-layouts package
       */
-    var layout: js.UndefOr[String] = js.native
+    var layout: js.UndefOr[String] = js.undefined
     
     /**
       * The Idyll markup to be compiled into AST
       */
-    var markup: js.UndefOr[String] = js.native
+    var markup: js.UndefOr[String] = js.undefined
     
     /**
       * Callback function if error happens during compilation
       */
-    var onError: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
     
     /**
       * The theme for idyll document
       * Will correspond to one theme in idyll-theme package
       */
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
   }
   object IdyllDocumentProps {
     

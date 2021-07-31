@@ -118,7 +118,6 @@ import typings.keyboardKey.keyboardKeyNumbers.`91`
 import typings.keyboardKey.keyboardKeyNumbers.`93`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -132,6 +131,50 @@ object mod extends Shortcut {
   def $: `52` = js.native
   @scala.inline
   def $_=(x: `52`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$")(x.asInstanceOf[js.Any])
+  
+  @JSImport("keyboard-key", "0")
+  @js.native
+  val `0`: `48` = js.native
+  
+  @JSImport("keyboard-key", "1")
+  @js.native
+  val `1`: `49` = js.native
+  
+  @JSImport("keyboard-key", "2")
+  @js.native
+  val `2`: `50` = js.native
+  
+  @JSImport("keyboard-key", "3")
+  @js.native
+  val `3`: `51` = js.native
+  
+  @JSImport("keyboard-key", "4")
+  @js.native
+  val `4`: `52` = js.native
+  
+  @JSImport("keyboard-key", "5")
+  @js.native
+  val `5`: `53` = js.native
+  
+  @JSImport("keyboard-key", "6")
+  @js.native
+  val `6`: `54` = js.native
+  
+  @JSImport("keyboard-key", "7")
+  @js.native
+  val `7`: `55` = js.native
+  
+  @JSImport("keyboard-key", "8")
+  @js.native
+  val `8`: `56` = js.native
+  
+  @JSImport("keyboard-key", "9")
+  @js.native
+  val `9`: `57` = js.native
+  
+  @JSImport("keyboard-key", "@")
+  @js.native
+  val `@`: `50` = js.native
   
   @JSImport("keyboard-key", "A")
   @js.native
@@ -1154,6 +1197,14 @@ object mod extends Shortcut {
   @scala.inline
   def ZoomOut_=(x: `251`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZoomOut")(x.asInstanceOf[js.Any])
   
+  @JSImport("keyboard-key", "[")
+  @js.native
+  val `[`: `219` = js.native
+  
+  @JSImport("keyboard-key", "]")
+  @js.native
+  val `]`: `221` = js.native
+  
   @JSImport("keyboard-key", "_")
   @js.native
   def __ : `189` = js.native
@@ -1229,24 +1280,20 @@ object mod extends Shortcut {
     * @param eventOrKey A keyboard event-like object or `key` name. If an object, at least one of
     * `key`, `keyCode`, or `which` must be defined.
     */
-  @JSImport("keyboard-key", "getCode")
-  @js.native
-  def getCode(eventOrKey: String): js.UndefOr[Double] = js.native
-  @JSImport("keyboard-key", "getCode")
-  @js.native
-  def getCode(eventOrKey: PickKeyboardEventkeykeyCo): js.UndefOr[Double] = js.native
+  @scala.inline
+  def getCode(eventOrKey: String): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCode")(eventOrKey.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
+  def getCode(eventOrKey: PickKeyboardEventkeykeyCo): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCode")(eventOrKey.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   
   /**
     * Get the key name from a keyboard event, `keyCode`, or `which` value.
     * @param eventOrCode A keyboard event-like object or key code. If an object, at least one of
     * `key`, `keyCode`, or `which` must be defined. If `key` is defined, it will be returned.
     */
-  @JSImport("keyboard-key", "getKey")
-  @js.native
-  def getKey(eventOrCode: Double): js.UndefOr[String] = js.native
-  @JSImport("keyboard-key", "getKey")
-  @js.native
-  def getKey(eventOrCode: PickKeyboardEventkeykeyCoKey): js.UndefOr[String] = js.native
+  @scala.inline
+  def getKey(eventOrCode: Double): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(eventOrCode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def getKey(eventOrCode: PickKeyboardEventkeykeyCoKey): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(eventOrCode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   @JSImport("keyboard-key", "h")
   @js.native
@@ -1361,58 +1408,6 @@ object mod extends Shortcut {
   def z: `90` = js.native
   @scala.inline
   def z_=(x: `90`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("z")(x.asInstanceOf[js.Any])
-  
-  @JSImport("keyboard-key", "0")
-  @js.native
-  val `0`: `48` = js.native
-  
-  @JSImport("keyboard-key", "1")
-  @js.native
-  val `1`: `49` = js.native
-  
-  @JSImport("keyboard-key", "2")
-  @js.native
-  val `2`: `50` = js.native
-  
-  @JSImport("keyboard-key", "3")
-  @js.native
-  val `3`: `51` = js.native
-  
-  @JSImport("keyboard-key", "4")
-  @js.native
-  val `4`: `52` = js.native
-  
-  @JSImport("keyboard-key", "5")
-  @js.native
-  val `5`: `53` = js.native
-  
-  @JSImport("keyboard-key", "6")
-  @js.native
-  val `6`: `54` = js.native
-  
-  @JSImport("keyboard-key", "7")
-  @js.native
-  val `7`: `55` = js.native
-  
-  @JSImport("keyboard-key", "8")
-  @js.native
-  val `8`: `56` = js.native
-  
-  @JSImport("keyboard-key", "9")
-  @js.native
-  val `9`: `57` = js.native
-  
-  @JSImport("keyboard-key", "@")
-  @js.native
-  val `@`: `50` = js.native
-  
-  @JSImport("keyboard-key", "[")
-  @js.native
-  val `[`: `219` = js.native
-  
-  @JSImport("keyboard-key", "]")
-  @js.native
-  val `]`: `221` = js.native
   
   type _To = `54`
   

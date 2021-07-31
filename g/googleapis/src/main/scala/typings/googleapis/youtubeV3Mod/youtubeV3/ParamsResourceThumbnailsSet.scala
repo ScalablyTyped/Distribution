@@ -7,21 +7,21 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceThumbnailsSet extends StandardParameters {
+trait ParamsResourceThumbnailsSet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -35,13 +35,13 @@ trait ParamsResourceThumbnailsSet extends StandardParameters {
     * channel. The actual CMS account that the user authenticates with must be
     * linked to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * The videoId parameter specifies a YouTube video ID for which the custom
     * video thumbnail is being provided.
     */
-  var videoId: js.UndefOr[String] = js.native
+  var videoId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceThumbnailsSet {
   

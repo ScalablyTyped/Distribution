@@ -8,7 +8,6 @@ import typings.cassandraDriver.mod.Host
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trackerMod {
@@ -17,7 +16,9 @@ object trackerMod {
     
     @JSImport("cassandra-driver/lib/tracker", "tracker.RequestLogger")
     @js.native
-    class RequestLogger protected () extends RequestTracker {
+    class RequestLogger protected ()
+      extends StObject
+         with RequestTracker {
       def this(options: LogErroredRequests) = this()
     }
     
@@ -27,7 +28,7 @@ object trackerMod {
       def onError(
         host: Host,
         query: String,
-        parameters: js.Array[_],
+        parameters: js.Array[js.Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
         err: Error,
@@ -54,7 +55,7 @@ object trackerMod {
       def onError(
         host: Host,
         query: js.Array[ParamsQuery],
-        parameters: js.Array[_],
+        parameters: js.Array[js.Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
         err: Error,
@@ -82,7 +83,7 @@ object trackerMod {
       def onSuccess(
         host: Host,
         query: String,
-        parameters: js.Array[_],
+        parameters: js.Array[js.Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
         responseLength: Double,
@@ -109,7 +110,7 @@ object trackerMod {
       def onSuccess(
         host: Host,
         query: js.Array[ParamsQuery],
-        parameters: js.Array[_],
+        parameters: js.Array[js.Any],
         executionOptions: ExecutionOptions,
         requestLength: Double,
         responseLength: Double,

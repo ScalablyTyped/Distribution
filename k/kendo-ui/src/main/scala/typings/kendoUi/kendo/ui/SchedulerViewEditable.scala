@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerViewEditable extends StObject {
   
-  var create: js.UndefOr[Boolean] = js.native
+  var create: js.UndefOr[Boolean] = js.undefined
   
-  var destroy: js.UndefOr[Boolean] = js.native
+  var destroy: js.UndefOr[Boolean] = js.undefined
   
-  var update: js.UndefOr[Boolean] = js.native
+  var update: js.UndefOr[Boolean] = js.undefined
 }
 object SchedulerViewEditable {
   

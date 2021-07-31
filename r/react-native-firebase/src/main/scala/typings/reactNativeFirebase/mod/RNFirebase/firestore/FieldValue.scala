@@ -2,7 +2,6 @@ package typings.reactNativeFirebase.mod.RNFirebase.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-firebase", "RNFirebase.firestore.FieldValue")
@@ -10,28 +9,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class FieldValue () extends StObject
 object FieldValue {
   
-  /* static member */
-  @JSImport("react-native-firebase", "RNFirebase.firestore.FieldValue.arrayRemove")
+  @JSImport("react-native-firebase", "RNFirebase.firestore.FieldValue")
   @js.native
-  def arrayRemove(elements: AnyJs*): FieldValue = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("react-native-firebase", "RNFirebase.firestore.FieldValue.arrayUnion")
-  @js.native
-  def arrayUnion(elements: AnyJs*): FieldValue = js.native
+  @scala.inline
+  def arrayRemove(elements: AnyJs*): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[js.Any]).asInstanceOf[FieldValue]
   
   /* static member */
-  @JSImport("react-native-firebase", "RNFirebase.firestore.FieldValue.delete")
-  @js.native
-  def delete(): FieldValue = js.native
+  @scala.inline
+  def arrayUnion(elements: AnyJs*): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[js.Any]).asInstanceOf[FieldValue]
   
   /* static member */
-  @JSImport("react-native-firebase", "RNFirebase.firestore.FieldValue.increment")
-  @js.native
-  def increment(n: Double): FieldValue = js.native
+  @scala.inline
+  def delete(): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")().asInstanceOf[FieldValue]
   
   /* static member */
-  @JSImport("react-native-firebase", "RNFirebase.firestore.FieldValue.serverTimestamp")
-  @js.native
-  def serverTimestamp(): FieldValue = js.native
+  @scala.inline
+  def increment(n: Double): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(n.asInstanceOf[js.Any]).asInstanceOf[FieldValue]
+  
+  /* static member */
+  @scala.inline
+  def serverTimestamp(): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[FieldValue]
 }

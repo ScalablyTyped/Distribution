@@ -4,24 +4,22 @@ import typings.ionic.definitionsMod.ProjectIntegrations
 import typings.ionic.definitionsMod.ProjectType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Readonly<ionic.ionic/definitions.IProjectConfig>> */
-@js.native
 trait PartialReadonlyIProjectCo extends StObject {
   
-  var hooks: js.UndefOr[RecordHookNamestringArray] = js.native
+  var hooks: js.UndefOr[RecordHookNamestringArray] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var integrations: js.UndefOr[ProjectIntegrations] = js.native
+  var integrations: js.UndefOr[ProjectIntegrations] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[ProjectType] = js.native
+  var `type`: js.UndefOr[ProjectType] = js.undefined
 }
 object PartialReadonlyIProjectCo {
   

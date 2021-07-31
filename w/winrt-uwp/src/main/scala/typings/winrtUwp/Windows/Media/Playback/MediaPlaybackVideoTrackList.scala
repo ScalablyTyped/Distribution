@@ -12,16 +12,17 @@ import typings.winrtUwp.anon.ItemsVideoTrack
 import typings.winrtUwp.winrtUwpStrings.selectedindexchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a read-only list of video tracks, of which a single track can be selected at one time. */
 @js.native
-trait MediaPlaybackVideoTrackList extends Array[VideoTrack] {
+trait MediaPlaybackVideoTrackList
+  extends StObject
+     with Array[VideoTrack] {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_selectedindexchanged(`type`: selectedindexchanged, listener: TypedEventHandler[ISingleSelectMediaTrackList, _]): Unit = js.native
+  def addEventListener_selectedindexchanged(`type`: selectedindexchanged, listener: TypedEventHandler[ISingleSelectMediaTrackList, js.Any]): Unit = js.native
   
   /**
     * Returns an iterator that iterates over the items in the collection.
@@ -48,14 +49,14 @@ trait MediaPlaybackVideoTrackList extends Array[VideoTrack] {
   def indexOf_Double(searchElement: VideoTrack): Double = js.native
   
   /** Occurs when the index of the currently selected video track changes. */
-  def onselectedindexchanged(ev: js.Any with WinRTEvent[ISingleSelectMediaTrackList]): Unit = js.native
+  def onselectedindexchanged(ev: js.Any & WinRTEvent[ISingleSelectMediaTrackList]): Unit = js.native
   /** Occurs when the index of the currently selected video track changes. */
   @JSName("onselectedindexchanged")
-  var onselectedindexchanged_Original: TypedEventHandler[ISingleSelectMediaTrackList, _] = js.native
+  var onselectedindexchanged_Original: TypedEventHandler[ISingleSelectMediaTrackList, js.Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_selectedindexchanged(`type`: selectedindexchanged, listener: TypedEventHandler[ISingleSelectMediaTrackList, _]): Unit = js.native
+  def removeEventListener_selectedindexchanged(`type`: selectedindexchanged, listener: TypedEventHandler[ISingleSelectMediaTrackList, js.Any]): Unit = js.native
   
   /** Gets or sets the index of the currently selected video track in the list. */
   var selectedIndex: Double = js.native

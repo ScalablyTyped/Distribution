@@ -2,19 +2,17 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroundOverlayOptions extends StObject {
   
-  var displayOnMaxLevel: js.UndefOr[Double] = js.native
+  var displayOnMaxLevel: js.UndefOr[Double] = js.undefined
   
-  var displayOnMinLevel: js.UndefOr[Double] = js.native
+  var displayOnMinLevel: js.UndefOr[Double] = js.undefined
   
-  var imageURL: js.UndefOr[String] = js.native
+  var imageURL: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
 }
 object GroundOverlayOptions {
   

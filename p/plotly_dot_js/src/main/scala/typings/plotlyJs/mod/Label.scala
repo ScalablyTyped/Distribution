@@ -3,20 +3,18 @@ package typings.plotlyJs.mod
 import typings.plotlyJs.anon.PartialFont
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Label extends StObject {
   
   /** Sets the background color of all hover labels on graph. */
-  var bgcolor: String = js.native
+  var bgcolor: String
   
   /** Sets the border color of all hover labels on graph. */
-  var bordercolor: String = js.native
+  var bordercolor: String
   
   /** Sets the default hover label font used by all traces on the graph. */
-  var font: PartialFont = js.native
+  var font: PartialFont
 }
 object Label {
   

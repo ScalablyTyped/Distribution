@@ -8,7 +8,6 @@ import typings.reactColor.mod.ColorResult
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compactMod {
@@ -22,15 +21,16 @@ object compactMod {
   trait CompactPicker
     extends Component[CompactPickerProps, js.Object, js.Any]
   
-  @js.native
-  trait CompactPickerProps extends ColorPickerProps[CompactPicker] {
+  trait CompactPickerProps
+    extends StObject
+       with ColorPickerProps[CompactPicker] {
     
-    var colors: js.UndefOr[js.Array[String]] = js.native
+    var colors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var onSwatchHover: js.UndefOr[js.Function2[/* color */ ColorResult, /* event */ MouseEvent, Unit]] = js.native
+    var onSwatchHover: js.UndefOr[js.Function2[/* color */ ColorResult, /* event */ MouseEvent, Unit]] = js.undefined
     
     @JSName("styles")
-    var styles_CompactPickerProps: js.UndefOr[PartialClassesCompactPick] = js.native
+    var styles_CompactPickerProps: js.UndefOr[PartialClassesCompactPick] = js.undefined
   }
   object CompactPickerProps {
     
@@ -66,14 +66,13 @@ object compactMod {
     }
   }
   
-  @js.native
   trait CompactPickerStylesProps extends StObject {
     
-    var Compact: CSSProperties = js.native
+    var Compact: CSSProperties
     
-    var clear: CSSProperties = js.native
+    var clear: CSSProperties
     
-    var compact: CSSProperties = js.native
+    var compact: CSSProperties
   }
   object CompactPickerStylesProps {
     

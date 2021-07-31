@@ -2,23 +2,21 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBeaconsSuccess extends StObject {
   
-  var beacons: js.Array[Beacon] = js.native
+  var beacons: js.Array[Beacon]
   
   /**
     * errorCode=0 ,接口调用成功
     */
-  var errCode: String = js.native
+  var errCode: String
   
   /**
     * ok
     */
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object GetBeaconsSuccess {
   

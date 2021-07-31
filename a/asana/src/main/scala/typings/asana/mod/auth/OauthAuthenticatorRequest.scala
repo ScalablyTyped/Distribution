@@ -3,17 +3,15 @@ package typings.asana.mod.auth
 import typings.asana.anon.Authorization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OauthAuthenticatorRequest extends StObject {
   
   /**
     * When browserify-d, the `auth` component of the `request` library
     * doesn't work so well, so we just manually set the bearer token instead.
     */
-  var headers: Authorization = js.native
+  var headers: Authorization
 }
 object OauthAuthenticatorRequest {
   

@@ -4,7 +4,6 @@ import typings.rascal.anon.Counters
 import typings.rascal.anon.Redeliveries
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testConfig {

@@ -2,76 +2,74 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
   /**
     * The date and time that the site was created.
     */
-  var CreatedAt: js.UndefOr[DateTime] = js.native
+  var CreatedAt: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The description of the device.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the device.
     */
-  var DeviceArn: js.UndefOr[String] = js.native
+  var DeviceArn: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the device.
     */
-  var DeviceId: js.UndefOr[String] = js.native
+  var DeviceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: js.UndefOr[String] = js.native
+  var GlobalNetworkId: js.UndefOr[String] = js.undefined
   
   /**
     * The site location.
     */
-  var Location: js.UndefOr[typings.awsSdk.networkmanagerMod.Location] = js.native
+  var Location: js.UndefOr[typings.awsSdk.networkmanagerMod.Location] = js.undefined
   
   /**
     * The device model.
     */
-  var Model: js.UndefOr[String] = js.native
+  var Model: js.UndefOr[String] = js.undefined
   
   /**
     * The device serial number.
     */
-  var SerialNumber: js.UndefOr[String] = js.native
+  var SerialNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The site ID.
     */
-  var SiteId: js.UndefOr[String] = js.native
+  var SiteId: js.UndefOr[String] = js.undefined
   
   /**
     * The device state.
     */
-  var State: js.UndefOr[DeviceState] = js.native
+  var State: js.UndefOr[DeviceState] = js.undefined
   
   /**
     * The tags for the device.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The device type.
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
   
   /**
     * The device vendor.
     */
-  var Vendor: js.UndefOr[String] = js.native
+  var Vendor: js.UndefOr[String] = js.undefined
 }
 object Device {
   

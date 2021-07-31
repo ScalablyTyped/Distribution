@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.provinces.mod.global.Province
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,33 +22,32 @@ object mod extends Shortcut {
     /**
       * @see {@link https://github.com/substack/provinces#data-format}
       */
-    @js.native
     trait Province extends StObject {
       
       /**
         * optional array of additional names and abbreviations
         */
-      var alt: js.UndefOr[js.Array[String]] = js.native
+      var alt: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * country abbreviation
         */
-      var country: String = js.native
+      var country: String
       
       /**
         * full name of the province or state
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * optional region of a country (for example: "Wales")
         */
-      var region: js.UndefOr[String] = js.native
+      var region: js.UndefOr[String] = js.undefined
       
       /**
         * optional 2 or 3 character short name
         */
-      var short: js.UndefOr[String] = js.native
+      var short: js.UndefOr[String] = js.undefined
     }
     object Province {
       

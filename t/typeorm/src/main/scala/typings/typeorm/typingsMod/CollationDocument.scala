@@ -2,29 +2,27 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollationDocument extends StObject {
   
-  var alternate: js.UndefOr[String] = js.native
+  var alternate: js.UndefOr[String] = js.undefined
   
-  var backwards: js.UndefOr[Boolean] = js.native
+  var backwards: js.UndefOr[Boolean] = js.undefined
   
-  var caseFirst: js.UndefOr[String] = js.native
+  var caseFirst: js.UndefOr[String] = js.undefined
   
-  var caseLevel: js.UndefOr[Boolean] = js.native
+  var caseLevel: js.UndefOr[Boolean] = js.undefined
   
-  var locale: String = js.native
+  var locale: String
   
-  var maxVariable: js.UndefOr[String] = js.native
+  var maxVariable: js.UndefOr[String] = js.undefined
   
-  var normalization: js.UndefOr[Boolean] = js.native
+  var normalization: js.UndefOr[Boolean] = js.undefined
   
-  var numericOrdering: js.UndefOr[Boolean] = js.native
+  var numericOrdering: js.UndefOr[Boolean] = js.undefined
   
-  var strength: js.UndefOr[scala.Double] = js.native
+  var strength: js.UndefOr[scala.Double] = js.undefined
 }
 object CollationDocument {
   

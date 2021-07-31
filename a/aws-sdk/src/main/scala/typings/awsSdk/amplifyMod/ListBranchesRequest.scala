@@ -2,26 +2,24 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBranchesRequest extends StObject {
   
   /**
     *  The unique ID for an Amplify app. 
     */
-  var appId: AppId = js.native
+  var appId: AppId
   
   /**
     *  The maximum number of records to list in a single response. 
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     *  A pagination token. Set to null to start listing branches from the start. If a non-null pagination token is returned in a result, pass its value in here to list more branches. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListBranchesRequest {
   

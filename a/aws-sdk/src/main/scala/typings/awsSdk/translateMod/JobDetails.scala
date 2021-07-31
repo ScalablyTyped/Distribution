@@ -2,26 +2,24 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobDetails extends StObject {
   
   /**
     * The number of documents that could not be processed during a translation job.
     */
-  var DocumentsWithErrorsCount: js.UndefOr[Integer] = js.native
+  var DocumentsWithErrorsCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of documents used as input in a translation job.
     */
-  var InputDocumentsCount: js.UndefOr[Integer] = js.native
+  var InputDocumentsCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of documents successfully processed during a translation job.
     */
-  var TranslatedDocumentsCount: js.UndefOr[Integer] = js.native
+  var TranslatedDocumentsCount: js.UndefOr[Integer] = js.undefined
 }
 object JobDetails {
   

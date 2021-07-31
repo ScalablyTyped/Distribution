@@ -3,27 +3,25 @@ package typings.playerframework.PlayerFramework
 import typings.std.MediaSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluginBase extends StObject {
   
-  var currentMediaSource: MediaSource = js.native
+  var currentMediaSource: MediaSource
   
-  var isActive: Boolean = js.native
+  var isActive: Boolean
   
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
-  var isLoaded: Boolean = js.native
+  var isLoaded: Boolean
   
-  def load(): Unit = js.native
+  def load(): Unit
   
-  var mediaPlayer: MediaPlayer = js.native
+  var mediaPlayer: MediaPlayer
   
-  def unload(): Unit = js.native
+  def unload(): Unit
   
-  def update(mediaSource: MediaSource): Unit = js.native
+  def update(mediaSource: MediaSource): Unit
 }
 object PluginBase {
   

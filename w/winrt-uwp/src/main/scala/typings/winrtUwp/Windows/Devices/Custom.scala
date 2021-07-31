@@ -6,7 +6,6 @@ import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Opens a custom device asynchronously, and with the object returned from the open operation send asynchronous IOCTLs to the device. */
@@ -21,15 +20,21 @@ object Custom {
     
     /** Read access. */
     @js.native
-    sealed trait read extends DeviceAccessMode
+    sealed trait read
+      extends StObject
+         with DeviceAccessMode
     
     /** Read/write access. */
     @js.native
-    sealed trait readWrite extends DeviceAccessMode
+    sealed trait readWrite
+      extends StObject
+         with DeviceAccessMode
     
     /** Write access. */
     @js.native
-    sealed trait write extends DeviceAccessMode
+    sealed trait write
+      extends StObject
+         with DeviceAccessMode
   }
   
   @js.native
@@ -41,11 +46,15 @@ object Custom {
     
     /** The device is exclusive. */
     @js.native
-    sealed trait exclusive extends DeviceSharingMode
+    sealed trait exclusive
+      extends StObject
+         with DeviceSharingMode
     
     /** The device is shared. */
     @js.native
-    sealed trait shared extends DeviceSharingMode
+    sealed trait shared
+      extends StObject
+         with DeviceSharingMode
   }
   
   @js.native
@@ -57,19 +66,27 @@ object Custom {
     
     /** Any mode. */
     @js.native
-    sealed trait any extends IOControlAccessMode
+    sealed trait any
+      extends StObject
+         with IOControlAccessMode
     
     /** Read mode. */
     @js.native
-    sealed trait read extends IOControlAccessMode
+    sealed trait read
+      extends StObject
+         with IOControlAccessMode
     
     /** Read/write mode. */
     @js.native
-    sealed trait readWrite extends IOControlAccessMode
+    sealed trait readWrite
+      extends StObject
+         with IOControlAccessMode
     
     /** Write mode. */
     @js.native
-    sealed trait write extends IOControlAccessMode
+    sealed trait write
+      extends StObject
+         with IOControlAccessMode
   }
   
   @js.native
@@ -81,30 +98,37 @@ object Custom {
     
     /** Buffered. */
     @js.native
-    sealed trait buffered extends IOControlBufferingMethod
+    sealed trait buffered
+      extends StObject
+         with IOControlBufferingMethod
     
     /** Direct input. */
     @js.native
-    sealed trait directInput extends IOControlBufferingMethod
+    sealed trait directInput
+      extends StObject
+         with IOControlBufferingMethod
     
     /** Direct output. */
     @js.native
-    sealed trait directOutput extends IOControlBufferingMethod
+    sealed trait directOutput
+      extends StObject
+         with IOControlBufferingMethod
     
     /** Neither. */
     @js.native
-    sealed trait neither extends IOControlBufferingMethod
+    sealed trait neither
+      extends StObject
+         with IOControlBufferingMethod
   }
   
   /** Represents a custom device. */
-  @js.native
   trait CustomDevice extends StObject {
     
     /** The input stream. */
-    var inputStream: IInputStream = js.native
+    var inputStream: IInputStream
     
     /** The output stream. */
-    var outputStream: IOutputStream = js.native
+    var outputStream: IOutputStream
     
     /**
       * Sends an IO control code.
@@ -113,7 +137,7 @@ object Custom {
       * @param outputBuffer The output buffer.
       * @return The result of the async operation.
       */
-    def sendIOControlAsync(ioControlCode: IIOControlCode, inputBuffer: IBuffer, outputBuffer: IBuffer): IPromiseWithIAsyncOperation[Double] = js.native
+    def sendIOControlAsync(ioControlCode: IIOControlCode, inputBuffer: IBuffer, outputBuffer: IBuffer): IPromiseWithIAsyncOperation[Double]
     
     /**
       * Sends an IO control code. A return value indicates whether the operation succeeded.
@@ -122,7 +146,7 @@ object Custom {
       * @param outputBuffer The output buffer.
       * @return true if the operation is successful; otherwise, false.
       */
-    def trySendIOControlAsync(ioControlCode: IIOControlCode, inputBuffer: IBuffer, outputBuffer: IBuffer): IPromiseWithIAsyncOperation[Boolean] = js.native
+    def trySendIOControlAsync(ioControlCode: IIOControlCode, inputBuffer: IBuffer, outputBuffer: IBuffer): IPromiseWithIAsyncOperation[Boolean]
   }
   object CustomDevice {
     
@@ -155,23 +179,22 @@ object Custom {
   }
   
   /** Represents IO control code. */
-  @js.native
   trait IIOControlCode extends StObject {
     
     /** The access mode. */
-    var accessMode: IOControlAccessMode = js.native
+    var accessMode: IOControlAccessMode
     
     /** The buffering method. */
-    var bufferingMethod: IOControlBufferingMethod = js.native
+    var bufferingMethod: IOControlBufferingMethod
     
     /** The control code. */
-    var controlCode: Double = js.native
+    var controlCode: Double
     
     /** The device type. */
-    var deviceType: Double = js.native
+    var deviceType: Double
     
     /** The function. */
-    var function: Double = js.native
+    var function: Double
   }
   object IIOControlCode {
     
@@ -208,23 +231,22 @@ object Custom {
   }
   
   /** Represents the control code. */
-  @js.native
   trait IOControlCode extends StObject {
     
     /** The access mode. */
-    var accessMode: IOControlAccessMode = js.native
+    var accessMode: IOControlAccessMode
     
     /** The buffering method. */
-    var bufferingMethod: IOControlBufferingMethod = js.native
+    var bufferingMethod: IOControlBufferingMethod
     
     /** The control code. */
-    var controlCode: Double = js.native
+    var controlCode: Double
     
     /** The device type. */
-    var deviceType: Double = js.native
+    var deviceType: Double
     
     /** The function. */
-    var function: Double = js.native
+    var function: Double
   }
   object IOControlCode {
     
@@ -261,6 +283,5 @@ object Custom {
   }
   
   /** Represents know device types. */
-  @js.native
   trait KnownDeviceTypes extends StObject
 }

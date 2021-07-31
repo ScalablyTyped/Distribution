@@ -2,10 +2,13 @@ package typings.baconjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schedulerMod {
+  
+  @JSImport("baconjs/types/scheduler", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -24,26 +27,23 @@ object schedulerMod {
   @js.native
   val defaultScheduler: Scheduler = js.native
   
-  @JSImport("baconjs/types/scheduler", "getScheduler")
-  @js.native
-  def getScheduler(): Scheduler = js.native
+  @scala.inline
+  def getScheduler(): Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("getScheduler")().asInstanceOf[Scheduler]
   
-  @JSImport("baconjs/types/scheduler", "setScheduler")
-  @js.native
-  def setScheduler(newScheduler: Scheduler): Unit = js.native
+  @scala.inline
+  def setScheduler(newScheduler: Scheduler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setScheduler")(newScheduler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Scheduler extends StObject {
     
-    def clearInterval(id: Double): js.Any = js.native
+    def clearInterval(id: Double): js.Any
     
-    def clearTimeout(id: Double): js.Any = js.native
+    def clearTimeout(id: Double): js.Any
     
-    def now(): Double = js.native
+    def now(): Double
     
-    def setInterval(f: js.Function, i: Double): Double = js.native
+    def setInterval(f: js.Function, i: Double): Double
     
-    def setTimeout(f: js.Function, d: Double): Double = js.native
+    def setTimeout(f: js.Function, d: Double): Double
   }
   object Scheduler {
     

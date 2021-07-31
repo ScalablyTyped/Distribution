@@ -3,15 +3,13 @@ package typings.rcTable.anon
 import typings.rcTable.rcTableBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X extends StObject {
   
-  var x: js.UndefOr[Double | `true` | String] = js.native
+  var x: js.UndefOr[Double | `true` | String] = js.undefined
   
-  var y: js.UndefOr[Double | String] = js.native
+  var y: js.UndefOr[Double | String] = js.undefined
 }
 object X {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularAnimations.mod.AnimationPlayer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testingMod {
@@ -37,7 +36,7 @@ object testingMod {
       duration: Double,
       delay: Double,
       easing: String,
-      previousPlayers: js.Array[_]
+      previousPlayers: js.Array[js.Any]
     ) = this()
   }
 }

@@ -4,55 +4,55 @@ import typings.ts3NodejsLibrary.enumMod.Codec
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChannelEntry extends ResponseEntry {
+trait ChannelEntry
+  extends StObject
+     with ResponseEntry {
   
   /** only in server version >= 3.11.x */
-  var channelBannerGfxUrl: String = js.native
+  var channelBannerGfxUrl: String
   
   /** only in server version >= 3.11.x */
-  var channelBannerMode: Double = js.native
+  var channelBannerMode: Double
   
-  var channelCodec: Codec = js.native
+  var channelCodec: Codec
   
-  var channelCodecQuality: Double = js.native
+  var channelCodecQuality: Double
   
-  var channelFlagDefault: Boolean = js.native
+  var channelFlagDefault: Boolean
   
-  var channelFlagPassword: Boolean = js.native
+  var channelFlagPassword: Boolean
   
-  var channelFlagPermanent: Boolean = js.native
+  var channelFlagPermanent: Boolean
   
-  var channelFlagSemiPermanent: Boolean = js.native
+  var channelFlagSemiPermanent: Boolean
   
-  var channelIconId: String = js.native
+  var channelIconId: String
   
-  var channelMaxclients: Double = js.native
+  var channelMaxclients: Double
   
-  var channelMaxfamilyclients: Double = js.native
+  var channelMaxfamilyclients: Double
   
-  var channelName: String = js.native
+  var channelName: String
   
-  var channelNeededSubscribePower: Double = js.native
+  var channelNeededSubscribePower: Double
   
-  var channelNeededTalkPower: Double = js.native
+  var channelNeededTalkPower: Double
   
-  var channelOrder: Double = js.native
+  var channelOrder: Double
   
-  var channelTopic: String = js.native
+  var channelTopic: String
   
-  var cid: String = js.native
+  var cid: String
   
-  var pid: String = js.native
+  var pid: String
   
-  var secondsEmpty: Double = js.native
+  var secondsEmpty: Double
   
-  var totalClients: Double = js.native
+  var totalClients: Double
   
-  var totalClientsFamily: Double = js.native
+  var totalClientsFamily: Double
 }
 object ChannelEntry {
   

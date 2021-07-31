@@ -2,17 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CloseEventInit extends EventInit {
+trait CloseEventInit
+  extends StObject
+     with EventInit {
   
-  var code: js.UndefOr[Double] = js.native
+  var code: js.UndefOr[Double] = js.undefined
   
-  var reason: js.UndefOr[java.lang.String] = js.native
+  var reason: js.UndefOr[java.lang.String] = js.undefined
   
-  var wasClean: js.UndefOr[scala.Boolean] = js.native
+  var wasClean: js.UndefOr[scala.Boolean] = js.undefined
 }
 object CloseEventInit {
   

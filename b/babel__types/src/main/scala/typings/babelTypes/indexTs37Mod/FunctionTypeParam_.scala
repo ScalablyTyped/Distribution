@@ -3,30 +3,29 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.FunctionTypeParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait FunctionTypeParam_
-  extends Flow
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait FunctionTypeParam_
+  extends StObject
+     with BaseNode
+     with Flow {
   
-  var name: Identifier_ | Null = js.native
+  var name: Identifier_ | Null
   
-  var optional: Boolean | Null = js.native
+  var optional: Boolean | Null
   
-  var typeAnnotation: FlowType = js.native
+  var typeAnnotation: FlowType
   
   @JSName("type")
-  var type_FunctionTypeParam_ : FunctionTypeParam = js.native
+  var type_FunctionTypeParam_ : FunctionTypeParam
 }
 object FunctionTypeParam_ {
   
   @scala.inline
-  def apply(`type`: FunctionTypeParam, typeAnnotation: FlowType): FunctionTypeParam_ = {
-    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(typeAnnotation: FlowType): FunctionTypeParam_ = {
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, name = null, optional = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("FunctionTypeParam")
     __obj.asInstanceOf[FunctionTypeParam_]
   }
   

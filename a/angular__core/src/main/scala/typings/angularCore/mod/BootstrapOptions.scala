@@ -4,7 +4,6 @@ import typings.angularCore.angularCoreStrings.noop
 import typings.angularCore.angularCoreStrings.zoneDotjs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   *
   */
-@js.native
 trait BootstrapOptions extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait BootstrapOptions extends StObject {
     * - `zone.js` - Use default `NgZone` which requires `Zone.js`.
     * - `noop` - Use `NoopNgZone` which does nothing.
     */
-  var ngZone: js.UndefOr[NgZone | zoneDotjs | noop] = js.native
+  var ngZone: js.UndefOr[NgZone | zoneDotjs | noop] = js.undefined
   
   /**
     * Optionally specify coalescing event change detections or not.
@@ -43,7 +41,7 @@ trait BootstrapOptions extends StObject {
     * triggered async by scheduling a animation frame. So in the case above,
     * the change detection will only be triggered once.
     */
-  var ngZoneEventCoalescing: js.UndefOr[Boolean] = js.native
+  var ngZoneEventCoalescing: js.UndefOr[Boolean] = js.undefined
 }
 object BootstrapOptions {
   

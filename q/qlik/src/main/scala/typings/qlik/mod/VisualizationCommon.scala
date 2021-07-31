@@ -2,21 +2,19 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VisualizationCommon extends StObject {
   
-  var footnote: String = js.native
+  var footnote: String
   
-  var qHyperCubeDef: HyperCubeDef = js.native
+  var qHyperCubeDef: HyperCubeDef
   
-  var showTitles: Boolean = js.native
+  var showTitles: Boolean
   
-  var subtitle: String = js.native
+  var subtitle: String
   
-  var title: String = js.native
+  var title: String
 }
 object VisualizationCommon {
   

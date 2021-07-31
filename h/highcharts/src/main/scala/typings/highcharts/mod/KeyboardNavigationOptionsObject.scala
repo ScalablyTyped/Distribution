@@ -2,23 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyboardNavigationOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable keyboard navigation for
     * the chart.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the focus border
     * drawn around elements while navigating through them.
     */
-  var focusBorder: js.UndefOr[KeyboardNavigationFocusBorderOptionsObject] = js.native
+  var focusBorder: js.UndefOr[KeyboardNavigationFocusBorderOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Order of tab navigation in the
@@ -26,20 +24,20 @@ trait KeyboardNavigationOptionsObject extends StObject {
     * are: `series`, `zoom`, `rangeSelector`, `chartMenu`, `legend`. In
     * addition, any custom components can be added here.
     */
-  var order: js.UndefOr[js.Array[String]] = js.native
+  var order: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the keyboard
     * navigation of data points and series.
     */
-  var seriesNavigation: js.UndefOr[KeyboardNavigationSeriesNavigationOptionsObject] = js.native
+  var seriesNavigation: js.UndefOr[KeyboardNavigationSeriesNavigationOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether or not to wrap around
     * when reaching the end of arrow-key navigation for an element in the
     * chart.
     */
-  var wrapAround: js.UndefOr[Boolean] = js.native
+  var wrapAround: js.UndefOr[Boolean] = js.undefined
 }
 object KeyboardNavigationOptionsObject {
   

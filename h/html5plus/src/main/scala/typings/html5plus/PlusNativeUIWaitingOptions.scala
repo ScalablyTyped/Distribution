@@ -7,7 +7,6 @@ import typings.html5plus.html5plusStrings.transmit
 import typings.html5plus.html5plusStrings.white
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
-@js.native
 trait PlusNativeUIWaitingOptions extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait PlusNativeUIWaitingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var back: js.UndefOr[none | close | transmit] = js.native
+  var back: js.UndefOr[none | close | transmit] = js.undefined
   
   /**
     * 等待对话框显示区域的背景色
@@ -35,7 +33,7 @@ trait PlusNativeUIWaitingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
   /**
     * 等待框中文字的颜色
@@ -43,7 +41,7 @@ trait PlusNativeUIWaitingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * 等待框背景区域的高度
@@ -51,14 +49,14 @@ trait PlusNativeUIWaitingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * 自定义等待框上loading图标样式
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var loading: js.UndefOr[PlusNativeUIWaitingLoadingOptions] = js.native
+  var loading: js.UndefOr[PlusNativeUIWaitingLoadingOptions] = js.undefined
   
   /**
     * 等待框是否模态显示
@@ -66,7 +64,7 @@ trait PlusNativeUIWaitingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 等待对话框的内边距
@@ -74,7 +72,7 @@ trait PlusNativeUIWaitingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var padding: js.UndefOr[String] = js.native
+  var padding: js.UndefOr[String] = js.undefined
   
   /**
     * 点击等待显示区域是否自动关闭
@@ -82,7 +80,7 @@ trait PlusNativeUIWaitingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var padlock: js.UndefOr[Boolean] = js.native
+  var padlock: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 等待框显示区域的圆角
@@ -90,7 +88,7 @@ trait PlusNativeUIWaitingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var round: js.UndefOr[Double] = js.native
+  var round: js.UndefOr[Double] = js.undefined
   
   /**
     * 等待框中文字的字体大小
@@ -98,7 +96,7 @@ trait PlusNativeUIWaitingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
   /**
     * 等待对话框样式
@@ -109,7 +107,7 @@ trait PlusNativeUIWaitingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var style: js.UndefOr[black | white] = js.native
+  var style: js.UndefOr[black | white] = js.undefined
   
   /**
     * 等待对话框中标题文字的水平对齐方式
@@ -117,7 +115,7 @@ trait PlusNativeUIWaitingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var textalign: js.UndefOr[String] = js.native
+  var textalign: js.UndefOr[String] = js.undefined
   
   /**
     * 等待框背景区域的宽度
@@ -125,7 +123,7 @@ trait PlusNativeUIWaitingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object PlusNativeUIWaitingOptions {
   

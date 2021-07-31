@@ -2,13 +2,13 @@ package typings.winrtUwp.global.Windows.System
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.System.ShutdownManager")
 @js.native
 abstract class ShutdownManager ()
-  extends typings.winrtUwp.Windows.System.ShutdownManager
+  extends StObject
+     with typings.winrtUwp.Windows.System.ShutdownManager
 object ShutdownManager {
   
   @JSGlobal("Windows.System.ShutdownManager")

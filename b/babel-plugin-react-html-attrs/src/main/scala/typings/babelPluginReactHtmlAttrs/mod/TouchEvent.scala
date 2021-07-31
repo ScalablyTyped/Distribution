@@ -3,30 +3,30 @@ package typings.babelPluginReactHtmlAttrs.mod
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TouchEvent[T] extends BaseSyntheticEvent[NativeTouchEvent, EventTarget with T, EventTarget] {
+trait TouchEvent[T]
+  extends StObject
+     with BaseSyntheticEvent[NativeTouchEvent, EventTarget & T, EventTarget] {
   
-  var altKey: Boolean = js.native
+  var altKey: Boolean
   
-  var changedTouches: TouchList = js.native
+  var changedTouches: TouchList
   
-  var ctrlKey: Boolean = js.native
+  var ctrlKey: Boolean
   
   /**
     * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
     */
-  def getModifierState(key: String): Boolean = js.native
+  def getModifierState(key: String): Boolean
   
-  var metaKey: Boolean = js.native
+  var metaKey: Boolean
   
-  var shiftKey: Boolean = js.native
+  var shiftKey: Boolean
   
-  var targetTouches: TouchList = js.native
+  var targetTouches: TouchList
   
-  var touches: TouchList = js.native
+  var touches: TouchList
 }
 object TouchEvent {
   
@@ -37,7 +37,7 @@ object TouchEvent {
     cancelable: Boolean,
     changedTouches: TouchList,
     ctrlKey: Boolean,
-    currentTarget: EventTarget with T,
+    currentTarget: EventTarget & T,
     defaultPrevented: Boolean,
     eventPhase: Double,
     getModifierState: String => Boolean,
@@ -62,7 +62,7 @@ object TouchEvent {
   }
   
   @scala.inline
-  implicit class TouchEventMutableBuilder[Self <: TouchEvent[_], T] (val x: Self with TouchEvent[T]) extends AnyVal {
+  implicit class TouchEventMutableBuilder[Self <: TouchEvent[?], T] (val x: Self & TouchEvent[T]) extends AnyVal {
     
     @scala.inline
     def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])

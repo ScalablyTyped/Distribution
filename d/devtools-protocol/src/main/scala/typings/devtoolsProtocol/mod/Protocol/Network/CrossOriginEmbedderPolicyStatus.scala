@@ -2,19 +2,17 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrossOriginEmbedderPolicyStatus extends StObject {
   
-  var reportOnlyReportingEndpoint: js.UndefOr[String] = js.native
+  var reportOnlyReportingEndpoint: js.UndefOr[String] = js.undefined
   
-  var reportOnlyValue: CrossOriginEmbedderPolicyValue = js.native
+  var reportOnlyValue: CrossOriginEmbedderPolicyValue
   
-  var reportingEndpoint: js.UndefOr[String] = js.native
+  var reportingEndpoint: js.UndefOr[String] = js.undefined
   
-  var value: CrossOriginEmbedderPolicyValue = js.native
+  var value: CrossOriginEmbedderPolicyValue
 }
 object CrossOriginEmbedderPolicyStatus {
   

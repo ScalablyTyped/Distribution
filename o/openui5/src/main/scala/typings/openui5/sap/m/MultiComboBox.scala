@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiComboBox extends ComboBoxBase {
+trait MultiComboBox
+  extends StObject
+     with ComboBoxBase {
   
   /**
     * Adds some item <code>oItem</code> to the association named <code>selectedItems</code>.
@@ -122,7 +123,7 @@ trait MultiComboBox extends ComboBoxBase {
     * Removes all the controls in the association named <code>selectedItems</code>.
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllSelectedItems(): js.Array[_] = js.native
+  def removeAllSelectedItems(): js.Array[js.Any] = js.native
   
   def removeSelectedItem(vSelectedItem: js.Any): js.Any = js.native
   /**

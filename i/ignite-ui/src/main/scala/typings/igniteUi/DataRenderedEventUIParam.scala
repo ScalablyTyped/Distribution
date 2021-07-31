@@ -2,16 +2,14 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataRenderedEventUIParam extends StObject {
   
   /**
     * Gets a reference to the grid.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object DataRenderedEventUIParam {
   

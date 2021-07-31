@@ -2,33 +2,31 @@ package typings.angulartics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoBasePath extends StObject {
     
-    var autoBasePath: Boolean = js.native
+    var autoBasePath: Boolean
     
-    var autoTrackingFirstPage: Boolean = js.native
+    var autoTrackingFirstPage: Boolean
     
-    var autoTrackingVirtualPages: Boolean = js.native
+    var autoTrackingVirtualPages: Boolean
     
-    var basePath: String = js.native
+    var basePath: String
     
-    var excludedRoutes: js.Array[String] = js.native
+    var excludedRoutes: js.Array[String]
     
-    var queryKeysBlacklisted: js.Array[String] = js.native
+    var queryKeysBlacklisted: js.Array[String]
     
-    var queryKeysWhitelisted: js.Array[String] = js.native
+    var queryKeysWhitelisted: js.Array[String]
     
-    var trackRelativePath: Boolean = js.native
+    var trackRelativePath: Boolean
     
-    var trackRoutes: Boolean = js.native
+    var trackRoutes: Boolean
     
-    var trackStates: Boolean = js.native
+    var trackStates: Boolean
   }
   object AutoBasePath {
     
@@ -93,18 +91,17 @@ object anon {
     }
   }
   
-  @js.native
   trait BufferFlushDelay extends StObject {
     
-    var bufferFlushDelay: Double = js.native
+    var bufferFlushDelay: Double
     
-    var developerMode: Boolean = js.native
+    var developerMode: Boolean
     
-    var optOut: Boolean = js.native
+    var optOut: Boolean
     
-    var pageTracking: AutoBasePath = js.native
+    var pageTracking: AutoBasePath
     
-    var trackExceptions: Boolean = js.native
+    var trackExceptions: Boolean
   }
   object BufferFlushDelay {
     

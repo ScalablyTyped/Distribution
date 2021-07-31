@@ -6,36 +6,41 @@ import typings.node.httpMod.ServerResponse
 import typings.stacktraceParser.mod.StackFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object middlewareMod {
   
-  @JSImport("@next/react-dev-overlay/lib/middleware", "createOriginalStackFrame")
+  @JSImport("@next/react-dev-overlay/lib/middleware", JSImport.Namespace)
   @js.native
-  def createOriginalStackFrame(hasLineColumnSourceRootDirectoryFrame: Column): js.Promise[OriginalStackFrameResponse | Null] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@next/react-dev-overlay/lib/middleware", "getOverlayMiddleware")
-  @js.native
+  @scala.inline
+  def createOriginalStackFrame(hasLineColumnSourceRootDirectoryFrame: Column): js.Promise[OriginalStackFrameResponse | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOriginalStackFrame")(hasLineColumnSourceRootDirectoryFrame.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OriginalStackFrameResponse | Null]]
+  
+  @scala.inline
   def getOverlayMiddleware(options: OverlayMiddlewareOptions): js.Function3[
     /* req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function, 
-    js.Promise[_]
-  ] = js.native
+    js.Promise[js.Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverlayMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* req */ IncomingMessage, 
+    /* res */ ServerResponse, 
+    /* next */ js.Function, 
+    js.Promise[js.Any]
+  ]]
   
-  @js.native
   trait OriginalStackFrameResponse extends StObject {
     
-    var originalCodeFrame: String | Null = js.native
+    var originalCodeFrame: String | Null
     
-    var originalStackFrame: StackFrame = js.native
+    var originalStackFrame: StackFrame
   }
   object OriginalStackFrameResponse {
     
     @scala.inline
     def apply(originalStackFrame: StackFrame): OriginalStackFrameResponse = {
-      val __obj = js.Dynamic.literal(originalStackFrame = originalStackFrame.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(originalStackFrame = originalStackFrame.asInstanceOf[js.Any], originalCodeFrame = null)
       __obj.asInstanceOf[OriginalStackFrameResponse]
     }
     
@@ -53,14 +58,13 @@ object middlewareMod {
     }
   }
   
-  @js.native
   trait OverlayMiddlewareOptions extends StObject {
     
-    var rootDirectory: String = js.native
+    var rootDirectory: String
     
-    def serverStats(): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Stats */ js.Any) | Null = js.native
+    def serverStats(): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Stats */ js.Any) | Null
     
-    def stats(): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Stats */ js.Any) | Null = js.native
+    def stats(): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Stats */ js.Any) | Null
   }
   object OverlayMiddlewareOptions {
     

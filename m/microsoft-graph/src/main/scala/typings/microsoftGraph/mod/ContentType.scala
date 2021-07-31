@@ -2,47 +2,47 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContentType extends Entity {
+trait ContentType
+  extends StObject
+     with Entity {
   
   // The collection of columns that are required by this content type
-  var columnLinks: js.UndefOr[NullableOption[js.Array[ColumnLink]]] = js.native
+  var columnLinks: js.UndefOr[NullableOption[js.Array[ColumnLink]]] = js.undefined
   
   // The descriptive text for the item.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The name of the group this content type belongs to. Helps organize related content types.
-  var group: js.UndefOr[NullableOption[String]] = js.native
+  var group: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether the content type is hidden in the list's 'New' menu.
-  var hidden: js.UndefOr[NullableOption[Boolean]] = js.native
+  var hidden: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * If this content type is inherited from another scope (like a site), provides a reference to the item where the content
     * type is defined.
     */
-  var inheritedFrom: js.UndefOr[NullableOption[ItemReference]] = js.native
+  var inheritedFrom: js.UndefOr[NullableOption[ItemReference]] = js.undefined
   
   // The name of the content type.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Specifies the order in which the content type appears in the selection UI.
-  var order: js.UndefOr[NullableOption[ContentTypeOrder]] = js.native
+  var order: js.UndefOr[NullableOption[ContentTypeOrder]] = js.undefined
   
   // The unique identifier of the content type.
-  var parentId: js.UndefOr[NullableOption[String]] = js.native
+  var parentId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // If true, the content type cannot be modified unless this value is first set to false.
-  var readOnly: js.UndefOr[NullableOption[Boolean]] = js.native
+  var readOnly: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * If true, the content type cannot be modified by users or through push-down operations. Only site collection
     * administrators can seal or unseal content types.
     */
-  var `sealed`: js.UndefOr[NullableOption[Boolean]] = js.native
+  var `sealed`: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object ContentType {
   

@@ -2,84 +2,82 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 9. Virtual Box
-@js.native
 trait VboxInfoData extends StObject {
   
-  var ACPI: Boolean = js.native
+  var ACPI: Boolean
   
-  var APIC: Boolean = js.native
+  var APIC: Boolean
   
-  var HPET: Boolean = js.native
+  var HPET: Boolean
   
-  var IOAPIC: Boolean = js.native
+  var IOAPIC: Boolean
   
-  var PAE: Boolean = js.native
+  var PAE: Boolean
   
-  var RTC: String = js.native
+  var RTC: String
   
-  var X2APIC: Boolean = js.native
+  var X2APIC: Boolean
   
-  var biosAPICmode: String = js.native
+  var biosAPICmode: String
   
-  var bootDevice1: String = js.native
+  var bootDevice1: String
   
-  var bootDevice2: String = js.native
+  var bootDevice2: String
   
-  var bootDevice3: String = js.native
+  var bootDevice3: String
   
-  var bootDevice4: String = js.native
+  var bootDevice4: String
   
-  var bootMenuMode: String = js.native
+  var bootMenuMode: String
   
-  var chipset: String = js.native
+  var chipset: String
   
-  var configFile: String = js.native
+  var configFile: String
   
-  var cpuExepCap: String = js.native
+  var cpuExepCap: String
   
-  var cpuProfile: String = js.native
+  var cpuProfile: String
   
-  var cpus: Double = js.native
+  var cpus: Double
   
-  var firmware: String = js.native
+  var firmware: String
   
-  var guestOS: String = js.native
+  var guestOS: String
   
-  var hardwareUUID: String = js.native
+  var hardwareUUID: String
   
-  var id: String = js.native
+  var id: String
   
-  var logFolder: String = js.native
+  var logFolder: String
   
-  var longMode: Boolean = js.native
+  var longMode: Boolean
   
-  var memory: Double = js.native
+  var memory: Double
   
-  var name: String = js.native
+  var name: String
   
-  var pageFusion: Boolean = js.native
+  var pageFusion: Boolean
   
-  var running: Boolean = js.native
+  var running: Boolean
   
-  var runningSince: Double = js.native
+  var runningSince: Double
   
-  var snapshotFolder: String = js.native
+  var snapshotFolder: String
   
-  var started: String = js.native
+  var started: String
   
-  var stopped: String = js.native
+  var stopped: String
   
-  var stoppedSince: Double = js.native
+  var stoppedSince: Double
   
-  var timeOffset: String = js.native
+  var timeOffset: String
   
-  var tripleFaultReset: Boolean = js.native
+  var tripleFaultReset: Boolean
   
-  var vram: Double = js.native
+  var vram: Double
 }
 object VboxInfoData {
   

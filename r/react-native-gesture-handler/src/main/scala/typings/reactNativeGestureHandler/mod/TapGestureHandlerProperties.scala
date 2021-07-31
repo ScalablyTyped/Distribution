@@ -2,29 +2,29 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TapGestureHandlerProperties extends GestureHandlerProperties {
+trait TapGestureHandlerProperties
+  extends StObject
+     with GestureHandlerProperties {
   
-  var maxDelayMs: js.UndefOr[Double] = js.native
+  var maxDelayMs: js.UndefOr[Double] = js.undefined
   
-  var maxDeltaX: js.UndefOr[Double] = js.native
+  var maxDeltaX: js.UndefOr[Double] = js.undefined
   
-  var maxDeltaY: js.UndefOr[Double] = js.native
+  var maxDeltaY: js.UndefOr[Double] = js.undefined
   
-  var maxDist: js.UndefOr[Double] = js.native
+  var maxDist: js.UndefOr[Double] = js.undefined
   
-  var maxDurationMs: js.UndefOr[Double] = js.native
+  var maxDurationMs: js.UndefOr[Double] = js.undefined
   
-  var minPointers: js.UndefOr[Double] = js.native
+  var minPointers: js.UndefOr[Double] = js.undefined
   
-  var numberOfTaps: js.UndefOr[Double] = js.native
+  var numberOfTaps: js.UndefOr[Double] = js.undefined
   
-  var onGestureEvent: js.UndefOr[js.Function1[/* event */ TapGestureHandlerGestureEvent, Unit]] = js.native
+  var onGestureEvent: js.UndefOr[js.Function1[/* event */ TapGestureHandlerGestureEvent, Unit]] = js.undefined
   
-  var onHandlerStateChange: js.UndefOr[js.Function1[/* event */ TapGestureHandlerStateChangeEvent, Unit]] = js.native
+  var onHandlerStateChange: js.UndefOr[js.Function1[/* event */ TapGestureHandlerStateChangeEvent, Unit]] = js.undefined
 }
 object TapGestureHandlerProperties {
   

@@ -3,15 +3,28 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tileMod {
   
   @JSImport("carbon-components/components/tile/tile", JSImport.Default)
   @js.native
-  class default protected () extends Tile {
+  class default protected ()
+    extends StObject
+       with Tile {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _getClass(`type`: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def _hookActions(tileClass: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _setTileHeight(): Unit = js.native
+    
+    /* CompleteClass */
+    override def release(): Unit = js.native
   }
   object default {
     
@@ -28,16 +41,15 @@ object tileMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait Tile extends StObject {
+  - Dropped any */ trait Tile extends StObject {
     
-    def _getClass(`type`: js.Any): js.Any = js.native
+    def _getClass(`type`: js.Any): js.Any
     
-    def _hookActions(tileClass: js.Any): Unit = js.native
+    def _hookActions(tileClass: js.Any): Unit
     
-    def _setTileHeight(): Unit = js.native
+    def _setTileHeight(): Unit
     
-    def release(): Unit = js.native
+    def release(): Unit
   }
   object Tile {
     

@@ -8,27 +8,25 @@ import typings.node.Buffer
 import typings.refNapi.mod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The struct type meta-constructor. */
 object mod {
   
+  @scala.inline
+  def apply(): StructType = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StructType]
+  @scala.inline
+  def apply(fields: js.Array[js.Any]): StructType = ^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any]).asInstanceOf[StructType]
+  @scala.inline
+  def apply(fields: js.Object): StructType = ^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any]).asInstanceOf[StructType]
+  @scala.inline
+  def apply(fields: js.Object, opt: js.Object): StructType = (^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[StructType]
+  @scala.inline
+  def apply(fields: Unit, opt: js.Object): StructType = (^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[StructType]
+  
   @JSImport("ref-struct-napi", JSImport.Namespace)
   @js.native
-  def apply(): StructType = js.native
-  @JSImport("ref-struct-napi", JSImport.Namespace)
-  @js.native
-  def apply(fields: js.UndefOr[scala.Nothing], opt: js.Object): StructType = js.native
-  @JSImport("ref-struct-napi", JSImport.Namespace)
-  @js.native
-  def apply(fields: js.Array[_]): StructType = js.native
-  @JSImport("ref-struct-napi", JSImport.Namespace)
-  @js.native
-  def apply(fields: js.Object): StructType = js.native
-  @JSImport("ref-struct-napi", JSImport.Namespace)
-  @js.native
-  def apply(fields: js.Object, opt: js.Object): StructType = js.native
+  val ^ : js.Any = js.native
   
   /**
     * This is the `constructor` of the Struct type that gets returned.
@@ -42,7 +40,8 @@ object mod {
     */
   @js.native
   trait StructType
-    extends Type
+    extends StObject
+       with Type
        with /** Pass it an existing Buffer instance to use that as the backing buffer. */
   Instantiable1[(/* arg */ Buffer) | (/* data */ js.Object), js.Any]
        with Instantiable0[js.Any]

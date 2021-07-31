@@ -2,13 +2,11 @@ package typings.cassandraDriver.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fields extends StObject {
   
-  var fields: js.UndefOr[js.Array[String]] = js.native
+  var fields: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Fields {
   

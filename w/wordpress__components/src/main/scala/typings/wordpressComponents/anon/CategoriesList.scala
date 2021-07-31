@@ -2,17 +2,15 @@ package typings.wordpressComponents.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CategoriesList extends StObject {
   
-  var categoriesList: js.Array[Id] = js.native
+  var categoriesList: js.Array[Id]
   
-  def onCategoryChange(categoryId: Double): Unit = js.native
+  def onCategoryChange(categoryId: Double): Unit
   
-  var selectedCategoryId: Double = js.native
+  var selectedCategoryId: Double
 }
 object CategoriesList {
   

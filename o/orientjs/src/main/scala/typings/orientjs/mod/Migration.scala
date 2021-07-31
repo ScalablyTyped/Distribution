@@ -2,7 +2,6 @@ package typings.orientjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Migration {
@@ -19,13 +18,13 @@ object Migration {
     
     var db: ODB = js.native
     
-    def down(): js.Promise[_] = js.native
+    def down(): js.Promise[js.Any] = js.native
     
     var name: String = js.native
     
     var server: OServer = js.native
     
-    def up(): js.Promise[_] = js.native
+    def up(): js.Promise[js.Any] = js.native
   }
   
   @JSImport("orientjs", "Migration.MigrationManager")
@@ -44,7 +43,7 @@ object Migration {
       * @param   name The name of the migation.
       * @promise {Mixed} The result of the migration.
       */
-    def applyMigration(name: String): js.Promise[_] = js.native
+    def applyMigration(name: String): js.Promise[js.Any] = js.native
     
     var className: String = js.native
     
@@ -66,8 +65,8 @@ object Migration {
       * @param   limit The maximum number of migrations to revert, if any.
       * @promise {Mixed} The result of the migration.
       */
-    def down(): js.Promise[_] = js.native
-    def down(limit: Double): js.Promise[_] = js.native
+    def down(): js.Promise[js.Any] = js.native
+    def down(limit: Double): js.Promise[js.Any] = js.native
     
     /**
       * Ensure the migration class exists.
@@ -95,7 +94,7 @@ object Migration {
       *
       * @promise {Object[]} The applied migrations.
       */
-    def listApplied(): js.Promise[js.Array[_]] = js.native
+    def listApplied(): js.Promise[js.Array[js.Any]] = js.native
     
     /**
       * List all the available migrations.
@@ -120,7 +119,7 @@ object Migration {
       * @param   name The name of the migation.
       * @promise {Mixed} The result of the migration.
       */
-    def revertMigration(name: String): js.Promise[_] = js.native
+    def revertMigration(name: String): js.Promise[js.Any] = js.native
     
     var server: OServer = js.native
     
@@ -130,20 +129,19 @@ object Migration {
       * @param   limit The maximum number of migrations to apply, if any.
       * @promise {Mixed} The result of the migration.
       */
-    def up(): js.Promise[_] = js.native
-    def up(limit: Double): js.Promise[_] = js.native
+    def up(): js.Promise[js.Any] = js.native
+    def up(limit: Double): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait MigrationManagerConfig extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var db: js.UndefOr[ODB] = js.native
+    var db: js.UndefOr[ODB] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object MigrationManagerConfig {
     

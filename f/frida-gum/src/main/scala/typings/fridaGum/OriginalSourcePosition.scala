@@ -2,37 +2,35 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginalSourcePosition extends StObject {
   
   /**
     * Column number.
     */
-  var column: Double = js.native
+  var column: Double
   
   /**
     * Line number.
     */
-  var line: Double = js.native
+  var line: Double
   
   /**
     * Identifier, if available.
     */
-  var name: String | Null = js.native
+  var name: String | Null
   
   /**
     * Source file name.
     */
-  var source: String = js.native
+  var source: String
 }
 object OriginalSourcePosition {
   
   @scala.inline
   def apply(column: Double, line: Double, source: String): OriginalSourcePosition = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], name = null)
     __obj.asInstanceOf[OriginalSourcePosition]
   }
   

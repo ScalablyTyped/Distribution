@@ -2,31 +2,29 @@ package typings.bip174.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PsbtInputUpdate extends StObject {
   
-  var bip32Derivation: js.UndefOr[js.Array[Bip32Derivation]] = js.native
+  var bip32Derivation: js.UndefOr[js.Array[Bip32Derivation]] = js.undefined
   
-  var finalScriptSig: js.UndefOr[FinalScriptSig] = js.native
+  var finalScriptSig: js.UndefOr[FinalScriptSig] = js.undefined
   
-  var finalScriptWitness: js.UndefOr[FinalScriptWitness] = js.native
+  var finalScriptWitness: js.UndefOr[FinalScriptWitness] = js.undefined
   
-  var nonWitnessUtxo: js.UndefOr[NonWitnessUtxo] = js.native
+  var nonWitnessUtxo: js.UndefOr[NonWitnessUtxo] = js.undefined
   
-  var partialSig: js.UndefOr[js.Array[PartialSig]] = js.native
+  var partialSig: js.UndefOr[js.Array[PartialSig]] = js.undefined
   
-  var porCommitment: js.UndefOr[PorCommitment] = js.native
+  var porCommitment: js.UndefOr[PorCommitment] = js.undefined
   
-  var redeemScript: js.UndefOr[RedeemScript] = js.native
+  var redeemScript: js.UndefOr[RedeemScript] = js.undefined
   
-  var sighashType: js.UndefOr[SighashType] = js.native
+  var sighashType: js.UndefOr[SighashType] = js.undefined
   
-  var witnessScript: js.UndefOr[WitnessScript] = js.native
+  var witnessScript: js.UndefOr[WitnessScript] = js.undefined
   
-  var witnessUtxo: js.UndefOr[WitnessUtxo] = js.native
+  var witnessUtxo: js.UndefOr[WitnessUtxo] = js.undefined
 }
 object PsbtInputUpdate {
   

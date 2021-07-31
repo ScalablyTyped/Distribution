@@ -7,25 +7,25 @@ import typings.arcgisJsApi.arcgisJsApiStrings.roll
 import typings.arcgisJsApi.arcgisJsApiStrings.tilt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RotationVariableProperties extends VisualVariableProperties {
+trait RotationVariableProperties
+  extends StObject
+     with VisualVariableProperties {
   
   /**
     * Only applicable when working in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-RotationVariable.html#axis)
     */
-  var axis: js.UndefOr[heading | tilt | roll] = js.native
+  var axis: js.UndefOr[heading | tilt | roll] = js.undefined
   
   /**
     * Defines the origin and direction of rotation depending on how the angle of rotation was measured.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-RotationVariable.html#rotationType)
     */
-  var rotationType: js.UndefOr[geographic | arithmetic] = js.native
+  var rotationType: js.UndefOr[geographic | arithmetic] = js.undefined
 }
 object RotationVariableProperties {
   

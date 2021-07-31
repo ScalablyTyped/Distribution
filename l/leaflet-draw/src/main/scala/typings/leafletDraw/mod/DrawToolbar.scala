@@ -4,7 +4,6 @@ import typings.leafletDraw.mod.Control.DrawConstructorOptions
 import typings.leafletDraw.mod.Draw.Feature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "DrawToolbar")

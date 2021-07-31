@@ -6,7 +6,6 @@ import typings.wordpressComponents.noticeMod.Notice.Action
 import typings.wordpressComponents.snackbarMod.Snackbar.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snackbarMod {
@@ -25,20 +24,19 @@ object snackbarMod {
   
   object Snackbar {
     
-    @js.native
     trait Props extends StObject {
       
       /**
         * An array of `Notice.Action` objects.
         */
-      var actions: js.UndefOr[js.Array[Action]] = js.native
+      var actions: js.UndefOr[js.Array[Action]] = js.undefined
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * Callback to be called when the snackbar is to be removed.
         */
-      var onRemove: js.UndefOr[js.Function0[Unit]] = js.native
+      var onRemove: js.UndefOr[js.Function0[Unit]] = js.undefined
     }
     object Props {
       

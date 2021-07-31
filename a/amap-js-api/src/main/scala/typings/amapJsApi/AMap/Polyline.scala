@@ -5,11 +5,12 @@ import typings.amapJsApi.anon.LngLatcontrolPointsArrayL
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Polyline[ExtraData] extends PathOverlay[ExtraData] {
+trait Polyline[ExtraData]
+  extends StObject
+     with PathOverlay[ExtraData] {
   
   /**
     * 获取折线的总长度（单位：米）
@@ -37,59 +38,59 @@ object Polyline {
   
   type EventMap[I] = typings.amapJsApi.AMap.PathOverlay.EventMap[I]
   
-  @js.native
   trait GetOptionsResult[ExtraData]
-    extends typings.amapJsApi.AMap.ShapeOverlay.GetOptionsResult[ExtraData] {
+    extends StObject
+       with typings.amapJsApi.AMap.ShapeOverlay.GetOptionsResult[ExtraData] {
     
     /**
       * 描边的宽度
       */
-    var borderWeight: Double = js.native
+    var borderWeight: Double
     
     /**
       * 方向箭头颜色
       */
-    var dirColor: String = js.native
+    var dirColor: String
     
     /**
       * 方向箭头图片
       */
-    var dirImg: String = js.native
+    var dirImg: String
     
     /**
       * 是否绘制成大地线
       */
-    var geodesic: Boolean = js.native
+    var geodesic: Boolean
     
     /**
       * 线条是否带描边
       */
-    var isOutline: Boolean = js.native
+    var isOutline: Boolean
     
     /**
       * 折线两端线帽的绘制样式
       */
-    var lineCap: StrokeLineCap = js.native
+    var lineCap: StrokeLineCap
     
     /**
       * 折线拐点的绘制样式
       */
-    var lineJoin: StrokeLineJoin = js.native
+    var lineJoin: StrokeLineJoin
     
     /**
       * 线条描边颜色
       */
-    var outlineColor: String = js.native
+    var outlineColor: String
     
     /**
       * 折线的节点数组
       */
-    var path: js.Array[LngLat] = js.native
+    var path: js.Array[LngLat]
     
     /**
       * 是否延路径显示方向箭头
       */
-    var showDir: Boolean = js.native
+    var showDir: Boolean
   }
   object GetOptionsResult {
     
@@ -121,7 +122,7 @@ object Polyline {
     }
     
     @scala.inline
-    implicit class GetOptionsResultMutableBuilder[Self <: GetOptionsResult[_], ExtraData] (val x: Self with GetOptionsResult[ExtraData]) extends AnyVal {
+    implicit class GetOptionsResultMutableBuilder[Self <: GetOptionsResult[?], ExtraData] (val x: Self & GetOptionsResult[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setBorderWeight(value: Double): Self = StObject.set(x, "borderWeight", value.asInstanceOf[js.Any])
@@ -158,45 +159,45 @@ object Polyline {
     }
   }
   
-  @js.native
   trait Options[ExtraData]
-    extends typings.amapJsApi.AMap.PathOverlay.Options[ExtraData] {
+    extends StObject
+       with typings.amapJsApi.AMap.PathOverlay.Options[ExtraData] {
     
     /**
       * 描边的宽度
       */
-    var borderWeight: js.UndefOr[Double] = js.native
+    var borderWeight: js.UndefOr[Double] = js.undefined
     
     /**
       * 方向箭头颜色
       */
-    var dirColor: js.UndefOr[String] = js.native
+    var dirColor: js.UndefOr[String] = js.undefined
     
     /**
       * 是否绘制成大地线
       */
-    var geodesic: js.UndefOr[Boolean] = js.native
+    var geodesic: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 线条是否带描边
       */
-    var isOutline: js.UndefOr[Boolean] = js.native
+    var isOutline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 线条描边颜色
       */
-    var outlineColor: js.UndefOr[String] = js.native
+    var outlineColor: js.UndefOr[String] = js.undefined
     
     // internal
     /**
       * 折线的节点数组
       */
-    var path: js.UndefOr[js.Array[LocationValue]] = js.native
+    var path: js.UndefOr[js.Array[LocationValue]] = js.undefined
     
     /**
       * 是否延路径显示方向箭头
       */
-    var showDir: js.UndefOr[Boolean] = js.native
+    var showDir: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -207,7 +208,7 @@ object Polyline {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], ExtraData] (val x: Self with Options[ExtraData]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setBorderWeight(value: Double): Self = StObject.set(x, "borderWeight", value.asInstanceOf[js.Any])

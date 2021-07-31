@@ -3,24 +3,24 @@ package typings.jsreportReports
 import typings.jsreportCore.mod.ExtensionDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jsreport-reports", JSImport.Namespace)
-  @js.native
-  def apply(): ExtensionDefinition = js.native
-  @JSImport("jsreport-reports", JSImport.Namespace)
-  @js.native
-  def apply(cfg: Configuration): ExtensionDefinition = js.native
+  @scala.inline
+  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  @scala.inline
+  def apply(cfg: Configuration): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(cfg.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
   
+  @JSImport("jsreport-reports", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Configuration extends StObject {
     
-    var cleanInterval: js.UndefOr[String] = js.native
+    var cleanInterval: js.UndefOr[String] = js.undefined
     
-    var cleanTreshold: js.UndefOr[String] = js.native
+    var cleanTreshold: js.UndefOr[String] = js.undefined
   }
   object Configuration {
     
@@ -47,14 +47,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ReportsOptions extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var public: js.UndefOr[Boolean] = js.native
+    var public: js.UndefOr[Boolean] = js.undefined
     
-    var save: js.UndefOr[Boolean] = js.native
+    var save: js.UndefOr[Boolean] = js.undefined
   }
   object ReportsOptions {
     
@@ -90,10 +89,9 @@ object mod {
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    @js.native
     trait Options extends StObject {
       
-      var reports: js.UndefOr[ReportsOptions] = js.native
+      var reports: js.UndefOr[ReportsOptions] = js.undefined
     }
     object Options {
       

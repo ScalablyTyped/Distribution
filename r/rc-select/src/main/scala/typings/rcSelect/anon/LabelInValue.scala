@@ -6,19 +6,17 @@ import typings.rcSelect.generatorMod.LabelValueType
 import typings.rcSelect.generatorMod.RawValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelInValue[FOT /* <: FlattenOptionsType[js.Array[js.Object]] */] extends StObject {
   
-  var labelInValue: Boolean = js.native
+  var labelInValue: Boolean
   
-  var optionLabelProp: String = js.native
+  var optionLabelProp: String
   
-  var options: FOT = js.native
+  var options: FOT
   
-  var prevValue: DefaultValueType = js.native
+  var prevValue: DefaultValueType
 }
 object LabelInValue {
   
@@ -29,7 +27,7 @@ object LabelInValue {
   }
   
   @scala.inline
-  implicit class LabelInValueMutableBuilder[Self <: LabelInValue[_], FOT /* <: FlattenOptionsType[js.Array[js.Object]] */] (val x: Self with LabelInValue[FOT]) extends AnyVal {
+  implicit class LabelInValueMutableBuilder[Self <: LabelInValue[?], FOT /* <: FlattenOptionsType[js.Array[js.Object]] */] (val x: Self & LabelInValue[FOT]) extends AnyVal {
     
     @scala.inline
     def setLabelInValue(value: Boolean): Self = StObject.set(x, "labelInValue", value.asInstanceOf[js.Any])

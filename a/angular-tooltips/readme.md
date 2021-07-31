@@ -12,7 +12,7 @@ Angular.js tooltips module.
 | Keywords           | tiptip, tooltip, tooltips, popover, angularjs, angular |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 287400 |
+| # downloads        | 278734 |
 | # stars            | 0 |
 
 ## Links

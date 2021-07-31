@@ -9,39 +9,39 @@ import typings.arcgisJsApi.arcgisJsApiStrings.slight
 import typings.arcgisJsApi.arcgisJsApiStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WaterSymbol3DLayerProperties extends Symbol3DLayerProperties {
+trait WaterSymbol3DLayerProperties
+  extends StObject
+     with Symbol3DLayerProperties {
   
   /**
     * The dominant color used to shade the water.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#color)
     */
-  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * Indicates the size of the waterbody which is represented by the symbol layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waterbodySize)
     */
-  var waterbodySize: js.UndefOr[small | medium | large] = js.native
+  var waterbodySize: js.UndefOr[small | medium | large] = js.undefined
   
   /**
     * Indicates the direction in which the waves travel.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waveDirection)
     */
-  var waveDirection: js.UndefOr[Double] = js.native
+  var waveDirection: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the shape and intensity of the waves.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waveStrength)
     */
-  var waveStrength: js.UndefOr[calm | rippled | slight | moderate] = js.native
+  var waveStrength: js.UndefOr[calm | rippled | slight | moderate] = js.undefined
 }
 object WaterSymbol3DLayerProperties {
   

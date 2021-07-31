@@ -2,43 +2,38 @@ package typings.meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object randomMod {
   
   object Random {
     
-    // @param str, @return a random char in str
-    @JSImport("meteor/random", "Random.choice")
+    @JSImport("meteor/random", "Random")
     @js.native
-    def choice(str: String): String = js.native
-    // @param array, @return a random element in array
-    @JSImport("meteor/random", "Random.choice")
-    @js.native
-    def choice[T](array: js.Array[T]): js.UndefOr[T] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("meteor/random", "Random.fraction")
-    @js.native
-    def fraction(): Double = js.native
+    // @param str, @return a random char in str
+    @scala.inline
+    def choice(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("choice")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    // @param array, @return a random element in array
+    @scala.inline
+    def choice[T](array: js.Array[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("choice")(array.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+    
+    @scala.inline
+    def fraction(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fraction")().asInstanceOf[Double]
     
     // @param numberOfDigits, @returns a random hex string of the given length
-    @JSImport("meteor/random", "Random.hexString")
-    @js.native
-    def hexString(numberOfDigits: Double): String = js.native
+    @scala.inline
+    def hexString(numberOfDigits: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexString")(numberOfDigits.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("meteor/random", "Random.id")
-    @js.native
-    def id(): String = js.native
-    @JSImport("meteor/random", "Random.id")
-    @js.native
-    def id(numberOfChars: Double): String = js.native
+    @scala.inline
+    def id(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[String]
+    @scala.inline
+    def id(numberOfChars: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(numberOfChars.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("meteor/random", "Random.secret")
-    @js.native
-    def secret(): String = js.native
-    @JSImport("meteor/random", "Random.secret")
-    @js.native
-    def secret(numberOfChars: Double): String = js.native
+    @scala.inline
+    def secret(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("secret")().asInstanceOf[String]
+    @scala.inline
+    def secret(numberOfChars: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("secret")(numberOfChars.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

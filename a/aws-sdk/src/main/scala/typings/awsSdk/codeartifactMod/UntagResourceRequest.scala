@@ -2,21 +2,19 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource to which you want to remove tags.
     */
-  var resourceArn: Arn = js.native
+  var resourceArn: Arn
   
   /**
     * The tag key for each tag that you want to remove from the resource.
     */
-  var tagKeys: TagKeyList = js.native
+  var tagKeys: TagKeyList
 }
 object UntagResourceRequest {
   

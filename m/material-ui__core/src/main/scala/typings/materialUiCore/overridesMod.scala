@@ -184,197 +184,195 @@ import typings.materialUiCore.touchRippleMod.TouchRippleClassKey
 import typings.materialUiCore.typographyTypographyMod.TypographyClassKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overridesMod {
   
-  @js.native
   trait ComponentNameToClassKey extends StObject {
     
-    var MuiAppBar: AppBarClassKey = js.native
+    var MuiAppBar: AppBarClassKey
     
-    var MuiAvatar: AvatarClassKey = js.native
+    var MuiAvatar: AvatarClassKey
     
-    var MuiBackdrop: BackdropClassKey = js.native
+    var MuiBackdrop: BackdropClassKey
     
-    var MuiBadge: BadgeClassKey = js.native
+    var MuiBadge: BadgeClassKey
     
-    var MuiBottomNavigation: BottomNavigationClassKey = js.native
+    var MuiBottomNavigation: BottomNavigationClassKey
     
-    var MuiBottomNavigationAction: BottomNavigationActionClassKey = js.native
+    var MuiBottomNavigationAction: BottomNavigationActionClassKey
     
-    var MuiButton: ButtonClassKey = js.native
+    var MuiButton: ButtonClassKey
     
-    var MuiButtonBase: ButtonBaseClassKey = js.native
+    var MuiButtonBase: ButtonBaseClassKey
     
-    var MuiCard: CardClassKey = js.native
+    var MuiCard: CardClassKey
     
-    var MuiCardActionArea: CardActionAreaClassKey = js.native
+    var MuiCardActionArea: CardActionAreaClassKey
     
-    var MuiCardActions: CardActionsClassKey = js.native
+    var MuiCardActions: CardActionsClassKey
     
-    var MuiCardContent: CardContentClassKey = js.native
+    var MuiCardContent: CardContentClassKey
     
-    var MuiCardHeader: CardHeaderClassKey = js.native
+    var MuiCardHeader: CardHeaderClassKey
     
-    var MuiCardMedia: CardMediaClassKey = js.native
+    var MuiCardMedia: CardMediaClassKey
     
-    var MuiCheckbox: CheckboxClassKey = js.native
+    var MuiCheckbox: CheckboxClassKey
     
-    var MuiChip: ChipClassKey = js.native
+    var MuiChip: ChipClassKey
     
-    var MuiCircularProgress: CircularProgressClassKey = js.native
+    var MuiCircularProgress: CircularProgressClassKey
     
-    var MuiCollapse: CollapseClassKey = js.native
+    var MuiCollapse: CollapseClassKey
     
-    var MuiCssBaseline: CssBaselineClassKey = js.native
+    var MuiCssBaseline: CssBaselineClassKey
     
-    var MuiDialog: DialogClassKey = js.native
+    var MuiDialog: DialogClassKey
     
-    var MuiDialogActions: DialogActionsClassKey = js.native
+    var MuiDialogActions: DialogActionsClassKey
     
-    var MuiDialogContent: DialogContentClassKey = js.native
+    var MuiDialogContent: DialogContentClassKey
     
-    var MuiDialogContentText: DialogContentTextClassKey = js.native
+    var MuiDialogContentText: DialogContentTextClassKey
     
-    var MuiDialogTitle: DialogTitleClassKey = js.native
+    var MuiDialogTitle: DialogTitleClassKey
     
-    var MuiDivider: DividerClassKey = js.native
+    var MuiDivider: DividerClassKey
     
-    var MuiDrawer: DrawerClassKey = js.native
+    var MuiDrawer: DrawerClassKey
     
-    var MuiExpansionPanel: ExpansionPanelClassKey = js.native
+    var MuiExpansionPanel: ExpansionPanelClassKey
     
-    var MuiExpansionPanelActions: ExpansionPanelActionsClassKey = js.native
+    var MuiExpansionPanelActions: ExpansionPanelActionsClassKey
     
-    var MuiExpansionPanelDetails: ExpansionPanelDetailsClassKey = js.native
+    var MuiExpansionPanelDetails: ExpansionPanelDetailsClassKey
     
-    var MuiExpansionPanelSummary: ExpansionPanelSummaryClassKey = js.native
+    var MuiExpansionPanelSummary: ExpansionPanelSummaryClassKey
     
-    var MuiFab: FabClassKey = js.native
+    var MuiFab: FabClassKey
     
-    var MuiFilledInput: FilledInputClassKey = js.native
+    var MuiFilledInput: FilledInputClassKey
     
-    var MuiFormControl: FormControlClassKey = js.native
+    var MuiFormControl: FormControlClassKey
     
-    var MuiFormControlLabel: FormControlLabelClassKey = js.native
+    var MuiFormControlLabel: FormControlLabelClassKey
     
-    var MuiFormGroup: FormGroupClassKey = js.native
+    var MuiFormGroup: FormGroupClassKey
     
-    var MuiFormHelperText: FormHelperTextClassKey = js.native
+    var MuiFormHelperText: FormHelperTextClassKey
     
-    var MuiFormLabel: FormLabelClassKey = js.native
+    var MuiFormLabel: FormLabelClassKey
     
-    var MuiGrid: GridClassKey = js.native
+    var MuiGrid: GridClassKey
     
-    var MuiGridList: GridListClassKey = js.native
+    var MuiGridList: GridListClassKey
     
-    var MuiGridListTile: GridListTileClassKey = js.native
+    var MuiGridListTile: GridListTileClassKey
     
-    var MuiGridListTileBar: GridListTileBarClassKey = js.native
+    var MuiGridListTileBar: GridListTileBarClassKey
     
-    var MuiIcon: IconClassKey = js.native
+    var MuiIcon: IconClassKey
     
-    var MuiIconButton: IconButtonClassKey = js.native
+    var MuiIconButton: IconButtonClassKey
     
-    var MuiInput: InputClassKey = js.native
+    var MuiInput: InputClassKey
     
-    var MuiInputAdornment: InputAdornmentClassKey = js.native
+    var MuiInputAdornment: InputAdornmentClassKey
     
-    var MuiInputBase: InputBaseClassKey = js.native
+    var MuiInputBase: InputBaseClassKey
     
-    var MuiInputLabel: InputLabelClassKey = js.native
+    var MuiInputLabel: InputLabelClassKey
     
-    var MuiLinearProgress: LinearProgressClassKey = js.native
+    var MuiLinearProgress: LinearProgressClassKey
     
-    var MuiLink: LinkClassKey = js.native
+    var MuiLink: LinkClassKey
     
-    var MuiList: ListClassKey = js.native
+    var MuiList: ListClassKey
     
-    var MuiListItem: ListItemClassKey = js.native
+    var MuiListItem: ListItemClassKey
     
-    var MuiListItemAvatar: ListItemAvatarClassKey = js.native
+    var MuiListItemAvatar: ListItemAvatarClassKey
     
-    var MuiListItemIcon: ListItemIconClassKey = js.native
+    var MuiListItemIcon: ListItemIconClassKey
     
-    var MuiListItemSecondaryAction: ListItemSecondaryActionClassKey = js.native
+    var MuiListItemSecondaryAction: ListItemSecondaryActionClassKey
     
-    var MuiListItemText: ListItemTextClassKey = js.native
+    var MuiListItemText: ListItemTextClassKey
     
-    var MuiListSubheader: ListSubheaderClassKey = js.native
+    var MuiListSubheader: ListSubheaderClassKey
     
-    var MuiMenu: MenuClassKey = js.native
+    var MuiMenu: MenuClassKey
     
-    var MuiMenuItem: MenuItemClassKey = js.native
+    var MuiMenuItem: MenuItemClassKey
     
-    var MuiMobileStepper: MobileStepperClassKey = js.native
+    var MuiMobileStepper: MobileStepperClassKey
     
-    var MuiModal: ModalClassKey = js.native
+    var MuiModal: ModalClassKey
     
-    var MuiNativeSelect: NativeSelectClassKey = js.native
+    var MuiNativeSelect: NativeSelectClassKey
     
-    var MuiOutlinedInput: OutlinedInputClassKey = js.native
+    var MuiOutlinedInput: OutlinedInputClassKey
     
-    var MuiPaper: PaperClassKey = js.native
+    var MuiPaper: PaperClassKey
     
-    var MuiPopover: PopoverClassKey = js.native
+    var MuiPopover: PopoverClassKey
     
-    var MuiRadio: RadioClassKey = js.native
+    var MuiRadio: RadioClassKey
     
-    var MuiSelect: SelectClassKey = js.native
+    var MuiSelect: SelectClassKey
     
-    var MuiSnackbar: SnackbarClassKey = js.native
+    var MuiSnackbar: SnackbarClassKey
     
-    var MuiSnackbarContent: SnackbarContentClassKey = js.native
+    var MuiSnackbarContent: SnackbarContentClassKey
     
-    var MuiStep: StepClasskey = js.native
+    var MuiStep: StepClasskey
     
-    var MuiStepButton: StepButtonClasskey = js.native
+    var MuiStepButton: StepButtonClasskey
     
-    var MuiStepConnector: StepConnectorClasskey = js.native
+    var MuiStepConnector: StepConnectorClasskey
     
-    var MuiStepContent: StepContentClasskey = js.native
+    var MuiStepContent: StepContentClasskey
     
-    var MuiStepIcon: StepIconClasskey = js.native
+    var MuiStepIcon: StepIconClasskey
     
-    var MuiStepLabel: StepLabelClasskey = js.native
+    var MuiStepLabel: StepLabelClasskey
     
-    var MuiStepper: StepperClasskey = js.native
+    var MuiStepper: StepperClasskey
     
-    var MuiSvgIcon: SvgIconClassKey = js.native
+    var MuiSvgIcon: SvgIconClassKey
     
-    var MuiSwitch: SwitchClassKey = js.native
+    var MuiSwitch: SwitchClassKey
     
-    var MuiSwitchBase: SwitchBaseClassKey = js.native
+    var MuiSwitchBase: SwitchBaseClassKey
     
-    var MuiTab: TabClassKey = js.native
+    var MuiTab: TabClassKey
     
-    var MuiTable: TableClassKey = js.native
+    var MuiTable: TableClassKey
     
-    var MuiTableBody: TableBodyClassKey = js.native
+    var MuiTableBody: TableBodyClassKey
     
-    var MuiTableCell: TableCellClassKey = js.native
+    var MuiTableCell: TableCellClassKey
     
-    var MuiTableFooter: TableFooterClassKey = js.native
+    var MuiTableFooter: TableFooterClassKey
     
-    var MuiTableHead: TableHeadClassKey = js.native
+    var MuiTableHead: TableHeadClassKey
     
-    var MuiTablePagination: TablePaginationClassKey = js.native
+    var MuiTablePagination: TablePaginationClassKey
     
-    var MuiTableRow: TableRowClassKey = js.native
+    var MuiTableRow: TableRowClassKey
     
-    var MuiTableSortLabel: TableSortLabelClassKey = js.native
+    var MuiTableSortLabel: TableSortLabelClassKey
     
-    var MuiTabs: TabsClassKey = js.native
+    var MuiTabs: TabsClassKey
     
-    var MuiToolbar: ToolbarClassKey = js.native
+    var MuiToolbar: ToolbarClassKey
     
-    var MuiTooltip: TooltipClassKey = js.native
+    var MuiTooltip: TooltipClassKey
     
-    var MuiTouchRipple: TouchRippleClassKey = js.native
+    var MuiTouchRipple: TouchRippleClassKey
     
-    var MuiTypography: TypographyClassKey = js.native
+    var MuiTypography: TypographyClassKey
   }
   object ComponentNameToClassKey {
     
@@ -660,192 +658,191 @@ object overridesMod {
   }
   
   /* Inlined {[ Name in keyof @material-ui/core.@material-ui/core/styles/overrides.ComponentNameToClassKey ]:? std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/styles/overrides.ComponentNameToClassKey[Name]>>} */
-  @js.native
   trait Overrides extends StObject {
     
-    var MuiAppBar: js.UndefOr[PartialStyleRulesAppBarCl] = js.native
+    var MuiAppBar: js.UndefOr[PartialStyleRulesAppBarCl] = js.undefined
     
-    var MuiAvatar: js.UndefOr[PartialStyleRulesAvatarCl] = js.native
+    var MuiAvatar: js.UndefOr[PartialStyleRulesAvatarCl] = js.undefined
     
-    var MuiBackdrop: js.UndefOr[PartialStyleRulesBackdrop] = js.native
+    var MuiBackdrop: js.UndefOr[PartialStyleRulesBackdrop] = js.undefined
     
-    var MuiBadge: js.UndefOr[PartialStyleRulesBadgeCla] = js.native
+    var MuiBadge: js.UndefOr[PartialStyleRulesBadgeCla] = js.undefined
     
-    var MuiBottomNavigation: js.UndefOr[PartialStyleRulesBottomNaRoot] = js.native
+    var MuiBottomNavigation: js.UndefOr[PartialStyleRulesBottomNaRoot] = js.undefined
     
-    var MuiBottomNavigationAction: js.UndefOr[PartialStyleRulesBottomNa] = js.native
+    var MuiBottomNavigationAction: js.UndefOr[PartialStyleRulesBottomNa] = js.undefined
     
-    var MuiButton: js.UndefOr[PartialStyleRulesButtonCl] = js.native
+    var MuiButton: js.UndefOr[PartialStyleRulesButtonCl] = js.undefined
     
-    var MuiButtonBase: js.UndefOr[PartialStyleRulesButtonBa] = js.native
+    var MuiButtonBase: js.UndefOr[PartialStyleRulesButtonBa] = js.undefined
     
-    var MuiCard: js.UndefOr[PartialStyleRulesCardClas] = js.native
+    var MuiCard: js.UndefOr[PartialStyleRulesCardClas] = js.undefined
     
-    var MuiCardActionArea: js.UndefOr[PartialStyleRulesCardActiFocusHighlight] = js.native
+    var MuiCardActionArea: js.UndefOr[PartialStyleRulesCardActiFocusHighlight] = js.undefined
     
-    var MuiCardActions: js.UndefOr[PartialStyleRulesCardActi] = js.native
+    var MuiCardActions: js.UndefOr[PartialStyleRulesCardActi] = js.undefined
     
-    var MuiCardContent: js.UndefOr[PartialStyleRulesCardCont] = js.native
+    var MuiCardContent: js.UndefOr[PartialStyleRulesCardCont] = js.undefined
     
-    var MuiCardHeader: js.UndefOr[PartialStyleRulesCardHead] = js.native
+    var MuiCardHeader: js.UndefOr[PartialStyleRulesCardHead] = js.undefined
     
-    var MuiCardMedia: js.UndefOr[PartialStyleRulesCardMedi] = js.native
+    var MuiCardMedia: js.UndefOr[PartialStyleRulesCardMedi] = js.undefined
     
-    var MuiCheckbox: js.UndefOr[PartialStyleRulesCheckbox] = js.native
+    var MuiCheckbox: js.UndefOr[PartialStyleRulesCheckbox] = js.undefined
     
-    var MuiChip: js.UndefOr[PartialStyleRulesChipClas] = js.native
+    var MuiChip: js.UndefOr[PartialStyleRulesChipClas] = js.undefined
     
-    var MuiCircularProgress: js.UndefOr[PartialStyleRulesCircular] = js.native
+    var MuiCircularProgress: js.UndefOr[PartialStyleRulesCircular] = js.undefined
     
-    var MuiCollapse: js.UndefOr[PartialStyleRulesCollapse] = js.native
+    var MuiCollapse: js.UndefOr[PartialStyleRulesCollapse] = js.undefined
     
-    var MuiCssBaseline: js.UndefOr[PartialStyleRulesCssBasel] = js.native
+    var MuiCssBaseline: js.UndefOr[PartialStyleRulesCssBasel] = js.undefined
     
-    var MuiDialog: js.UndefOr[PartialStyleRulesDialogCl] = js.native
+    var MuiDialog: js.UndefOr[PartialStyleRulesDialogCl] = js.undefined
     
-    var MuiDialogActions: js.UndefOr[PartialStyleRulesDialogAc] = js.native
+    var MuiDialogActions: js.UndefOr[PartialStyleRulesDialogAc] = js.undefined
     
-    var MuiDialogContent: js.UndefOr[PartialStyleRulesDialogCo] = js.native
+    var MuiDialogContent: js.UndefOr[PartialStyleRulesDialogCo] = js.undefined
     
-    var MuiDialogContentText: js.UndefOr[PartialStyleRulesDialogCo] = js.native
+    var MuiDialogContentText: js.UndefOr[PartialStyleRulesDialogCo] = js.undefined
     
-    var MuiDialogTitle: js.UndefOr[PartialStyleRulesDialogTi] = js.native
+    var MuiDialogTitle: js.UndefOr[PartialStyleRulesDialogTi] = js.undefined
     
-    var MuiDivider: js.UndefOr[PartialStyleRulesDividerC] = js.native
+    var MuiDivider: js.UndefOr[PartialStyleRulesDividerC] = js.undefined
     
-    var MuiDrawer: js.UndefOr[PartialStyleRulesDrawerCl] = js.native
+    var MuiDrawer: js.UndefOr[PartialStyleRulesDrawerCl] = js.undefined
     
-    var MuiExpansionPanel: js.UndefOr[PartialStyleRulesExpansioDisabled] = js.native
+    var MuiExpansionPanel: js.UndefOr[PartialStyleRulesExpansioDisabled] = js.undefined
     
-    var MuiExpansionPanelActions: js.UndefOr[PartialStyleRulesExpansioAction] = js.native
+    var MuiExpansionPanelActions: js.UndefOr[PartialStyleRulesExpansioAction] = js.undefined
     
-    var MuiExpansionPanelDetails: js.UndefOr[PartialStyleRulesExpansio] = js.native
+    var MuiExpansionPanelDetails: js.UndefOr[PartialStyleRulesExpansio] = js.undefined
     
-    var MuiExpansionPanelSummary: js.UndefOr[PartialStyleRulesExpansioContent] = js.native
+    var MuiExpansionPanelSummary: js.UndefOr[PartialStyleRulesExpansioContent] = js.undefined
     
-    var MuiFab: js.UndefOr[PartialStyleRulesFabClass] = js.native
+    var MuiFab: js.UndefOr[PartialStyleRulesFabClass] = js.undefined
     
-    var MuiFilledInput: js.UndefOr[PartialStyleRulesFilledIn] = js.native
+    var MuiFilledInput: js.UndefOr[PartialStyleRulesFilledIn] = js.undefined
     
-    var MuiFormControl: js.UndefOr[PartialStyleRulesFormCont] = js.native
+    var MuiFormControl: js.UndefOr[PartialStyleRulesFormCont] = js.undefined
     
-    var MuiFormControlLabel: js.UndefOr[PartialStyleRulesFormContDisabled] = js.native
+    var MuiFormControlLabel: js.UndefOr[PartialStyleRulesFormContDisabled] = js.undefined
     
-    var MuiFormGroup: js.UndefOr[PartialStyleRulesFormGrou] = js.native
+    var MuiFormGroup: js.UndefOr[PartialStyleRulesFormGrou] = js.undefined
     
-    var MuiFormHelperText: js.UndefOr[PartialStyleRulesFormHelp] = js.native
+    var MuiFormHelperText: js.UndefOr[PartialStyleRulesFormHelp] = js.undefined
     
-    var MuiFormLabel: js.UndefOr[PartialStyleRulesFormLabe] = js.native
+    var MuiFormLabel: js.UndefOr[PartialStyleRulesFormLabe] = js.undefined
     
-    var MuiGrid: js.UndefOr[PartialStyleRulesGridClas] = js.native
+    var MuiGrid: js.UndefOr[PartialStyleRulesGridClas] = js.undefined
     
-    var MuiGridList: js.UndefOr[PartialStyleRulesGridListRoot] = js.native
+    var MuiGridList: js.UndefOr[PartialStyleRulesGridListRoot] = js.undefined
     
-    var MuiGridListTile: js.UndefOr[PartialStyleRulesGridList] = js.native
+    var MuiGridListTile: js.UndefOr[PartialStyleRulesGridList] = js.undefined
     
-    var MuiGridListTileBar: js.UndefOr[PartialStyleRulesGridListActionIcon] = js.native
+    var MuiGridListTileBar: js.UndefOr[PartialStyleRulesGridListActionIcon] = js.undefined
     
-    var MuiIcon: js.UndefOr[PartialStyleRulesIconClas] = js.native
+    var MuiIcon: js.UndefOr[PartialStyleRulesIconClas] = js.undefined
     
-    var MuiIconButton: js.UndefOr[PartialStyleRulesIconButt] = js.native
+    var MuiIconButton: js.UndefOr[PartialStyleRulesIconButt] = js.undefined
     
-    var MuiInput: js.UndefOr[PartialStyleRulesInputCla] = js.native
+    var MuiInput: js.UndefOr[PartialStyleRulesInputCla] = js.undefined
     
-    var MuiInputAdornment: js.UndefOr[PartialStyleRulesInputAdo] = js.native
+    var MuiInputAdornment: js.UndefOr[PartialStyleRulesInputAdo] = js.undefined
     
-    var MuiInputBase: js.UndefOr[PartialStyleRulesInputBas] = js.native
+    var MuiInputBase: js.UndefOr[PartialStyleRulesInputBas] = js.undefined
     
-    var MuiInputLabel: js.UndefOr[PartialStyleRulesInputLab] = js.native
+    var MuiInputLabel: js.UndefOr[PartialStyleRulesInputLab] = js.undefined
     
-    var MuiLinearProgress: js.UndefOr[PartialStyleRulesLinearPr] = js.native
+    var MuiLinearProgress: js.UndefOr[PartialStyleRulesLinearPr] = js.undefined
     
-    var MuiLink: js.UndefOr[PartialStyleRulesLinkClas] = js.native
+    var MuiLink: js.UndefOr[PartialStyleRulesLinkClas] = js.undefined
     
-    var MuiList: js.UndefOr[PartialStyleRulesListClas] = js.native
+    var MuiList: js.UndefOr[PartialStyleRulesListClas] = js.undefined
     
-    var MuiListItem: js.UndefOr[PartialStyleRulesListItemButton] = js.native
+    var MuiListItem: js.UndefOr[PartialStyleRulesListItemButton] = js.undefined
     
-    var MuiListItemAvatar: js.UndefOr[PartialStyleRulesListItemIcon] = js.native
+    var MuiListItemAvatar: js.UndefOr[PartialStyleRulesListItemIcon] = js.undefined
     
-    var MuiListItemIcon: js.UndefOr[PartialStyleRulesListItemRoot] = js.native
+    var MuiListItemIcon: js.UndefOr[PartialStyleRulesListItemRoot] = js.undefined
     
-    var MuiListItemSecondaryAction: js.UndefOr[PartialStyleRulesListItemRoot] = js.native
+    var MuiListItemSecondaryAction: js.UndefOr[PartialStyleRulesListItemRoot] = js.undefined
     
-    var MuiListItemText: js.UndefOr[PartialStyleRulesListItem] = js.native
+    var MuiListItemText: js.UndefOr[PartialStyleRulesListItem] = js.undefined
     
-    var MuiListSubheader: js.UndefOr[PartialStyleRulesListSubh] = js.native
+    var MuiListSubheader: js.UndefOr[PartialStyleRulesListSubh] = js.undefined
     
-    var MuiMenu: js.UndefOr[PartialStyleRulesMenuClas] = js.native
+    var MuiMenu: js.UndefOr[PartialStyleRulesMenuClas] = js.undefined
     
-    var MuiMenuItem: js.UndefOr[PartialStyleRulesMenuItem] = js.native
+    var MuiMenuItem: js.UndefOr[PartialStyleRulesMenuItem] = js.undefined
     
-    var MuiMobileStepper: js.UndefOr[PartialStyleRulesMobileSt] = js.native
+    var MuiMobileStepper: js.UndefOr[PartialStyleRulesMobileSt] = js.undefined
     
-    var MuiModal: js.UndefOr[PartialStyleRulesModalCla] = js.native
+    var MuiModal: js.UndefOr[PartialStyleRulesModalCla] = js.undefined
     
-    var MuiNativeSelect: js.UndefOr[PartialStyleRulesNativeSe] = js.native
+    var MuiNativeSelect: js.UndefOr[PartialStyleRulesNativeSe] = js.undefined
     
-    var MuiOutlinedInput: js.UndefOr[PartialStyleRulesOutlined] = js.native
+    var MuiOutlinedInput: js.UndefOr[PartialStyleRulesOutlined] = js.undefined
     
-    var MuiPaper: js.UndefOr[PartialStyleRulesPaperCla] = js.native
+    var MuiPaper: js.UndefOr[PartialStyleRulesPaperCla] = js.undefined
     
-    var MuiPopover: js.UndefOr[PartialStyleRulesPopoverC] = js.native
+    var MuiPopover: js.UndefOr[PartialStyleRulesPopoverC] = js.undefined
     
-    var MuiRadio: js.UndefOr[PartialStyleRulesRadioCla] = js.native
+    var MuiRadio: js.UndefOr[PartialStyleRulesRadioCla] = js.undefined
     
-    var MuiSelect: js.UndefOr[PartialStyleRulesSelectCl] = js.native
+    var MuiSelect: js.UndefOr[PartialStyleRulesSelectCl] = js.undefined
     
-    var MuiSnackbar: js.UndefOr[PartialStyleRulesSnackbar] = js.native
+    var MuiSnackbar: js.UndefOr[PartialStyleRulesSnackbar] = js.undefined
     
-    var MuiSnackbarContent: js.UndefOr[PartialStyleRulesSnackbarAction] = js.native
+    var MuiSnackbarContent: js.UndefOr[PartialStyleRulesSnackbarAction] = js.undefined
     
-    var MuiStep: js.UndefOr[PartialStyleRulesStepClas] = js.native
+    var MuiStep: js.UndefOr[PartialStyleRulesStepClas] = js.undefined
     
-    var MuiStepButton: js.UndefOr[PartialStyleRulesStepButt] = js.native
+    var MuiStepButton: js.UndefOr[PartialStyleRulesStepButt] = js.undefined
     
-    var MuiStepConnector: js.UndefOr[PartialStyleRulesStepConn] = js.native
+    var MuiStepConnector: js.UndefOr[PartialStyleRulesStepConn] = js.undefined
     
-    var MuiStepContent: js.UndefOr[PartialStyleRulesStepCont] = js.native
+    var MuiStepContent: js.UndefOr[PartialStyleRulesStepCont] = js.undefined
     
-    var MuiStepIcon: js.UndefOr[PartialStyleRulesStepIcon] = js.native
+    var MuiStepIcon: js.UndefOr[PartialStyleRulesStepIcon] = js.undefined
     
-    var MuiStepLabel: js.UndefOr[PartialStyleRulesStepLabe] = js.native
+    var MuiStepLabel: js.UndefOr[PartialStyleRulesStepLabe] = js.undefined
     
-    var MuiStepper: js.UndefOr[PartialStyleRulesStepperC] = js.native
+    var MuiStepper: js.UndefOr[PartialStyleRulesStepperC] = js.undefined
     
-    var MuiSvgIcon: js.UndefOr[PartialStyleRulesSvgIconC] = js.native
+    var MuiSvgIcon: js.UndefOr[PartialStyleRulesSvgIconC] = js.undefined
     
-    var MuiSwitch: js.UndefOr[PartialStyleRulesSwitchCl] = js.native
+    var MuiSwitch: js.UndefOr[PartialStyleRulesSwitchCl] = js.undefined
     
-    var MuiSwitchBase: js.UndefOr[PartialStyleRulesSwitchBa] = js.native
+    var MuiSwitchBase: js.UndefOr[PartialStyleRulesSwitchBa] = js.undefined
     
-    var MuiTab: js.UndefOr[PartialStyleRulesTabClass] = js.native
+    var MuiTab: js.UndefOr[PartialStyleRulesTabClass] = js.undefined
     
-    var MuiTable: js.UndefOr[PartialStyleRulesTableCla] = js.native
+    var MuiTable: js.UndefOr[PartialStyleRulesTableCla] = js.undefined
     
-    var MuiTableBody: js.UndefOr[PartialStyleRulesTableBod] = js.native
+    var MuiTableBody: js.UndefOr[PartialStyleRulesTableBod] = js.undefined
     
-    var MuiTableCell: js.UndefOr[PartialStyleRulesTableCel] = js.native
+    var MuiTableCell: js.UndefOr[PartialStyleRulesTableCel] = js.undefined
     
-    var MuiTableFooter: js.UndefOr[PartialStyleRulesTableFoo] = js.native
+    var MuiTableFooter: js.UndefOr[PartialStyleRulesTableFoo] = js.undefined
     
-    var MuiTableHead: js.UndefOr[PartialStyleRulesTableHea] = js.native
+    var MuiTableHead: js.UndefOr[PartialStyleRulesTableHea] = js.undefined
     
-    var MuiTablePagination: js.UndefOr[PartialStyleRulesTablePag] = js.native
+    var MuiTablePagination: js.UndefOr[PartialStyleRulesTablePag] = js.undefined
     
-    var MuiTableRow: js.UndefOr[PartialStyleRulesTableRow] = js.native
+    var MuiTableRow: js.UndefOr[PartialStyleRulesTableRow] = js.undefined
     
-    var MuiTableSortLabel: js.UndefOr[PartialStyleRulesTableSor] = js.native
+    var MuiTableSortLabel: js.UndefOr[PartialStyleRulesTableSor] = js.undefined
     
-    var MuiTabs: js.UndefOr[PartialStyleRulesTabsClas] = js.native
+    var MuiTabs: js.UndefOr[PartialStyleRulesTabsClas] = js.undefined
     
-    var MuiToolbar: js.UndefOr[PartialStyleRulesToolbarC] = js.native
+    var MuiToolbar: js.UndefOr[PartialStyleRulesToolbarC] = js.undefined
     
-    var MuiTooltip: js.UndefOr[PartialStyleRulesTooltipC] = js.native
+    var MuiTooltip: js.UndefOr[PartialStyleRulesTooltipC] = js.undefined
     
-    var MuiTouchRipple: js.UndefOr[PartialStyleRulesTouchRip] = js.native
+    var MuiTouchRipple: js.UndefOr[PartialStyleRulesTouchRip] = js.undefined
     
-    var MuiTypography: js.UndefOr[PartialStyleRulesTypograp] = js.native
+    var MuiTypography: js.UndefOr[PartialStyleRulesTypograp] = js.undefined
   }
   object Overrides {
     

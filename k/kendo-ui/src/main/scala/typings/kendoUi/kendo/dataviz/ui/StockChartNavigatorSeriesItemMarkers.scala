@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartNavigatorSeriesItemMarkers extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[StockChartNavigatorSeriesItemMarkersBorder] = js.native
+  var border: js.UndefOr[StockChartNavigatorSeriesItemMarkersBorder] = js.undefined
   
-  var rotation: js.UndefOr[Double | js.Function] = js.native
+  var rotation: js.UndefOr[Double | js.Function] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object StockChartNavigatorSeriesItemMarkers {
   

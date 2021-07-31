@@ -5,54 +5,54 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** manages multiple rectangles which make up a region. */
-@js.native
-trait XRegion extends XInterface {
+trait XRegion
+  extends StObject
+     with XInterface {
   
   /** returns the bounding box of the shape. */
-  val Bounds: Rectangle = js.native
+  val Bounds: Rectangle
   
   /** returns all rectangles which are making up this region. */
-  val Rectangles: SafeArray[Rectangle] = js.native
+  val Rectangles: SafeArray[Rectangle]
   
   /** makes this region an empty region. */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /** removes the area of the specified rectangle from this region. */
-  def excludeRectangle(Rect: Rectangle): Unit = js.native
+  def excludeRectangle(Rect: Rectangle): Unit
   
   /** removes the area of the specified region from this region. */
-  def excludeRegion(Region: XRegion): Unit = js.native
+  def excludeRegion(Region: XRegion): Unit
   
   /** returns the bounding box of the shape. */
-  def getBounds(): Rectangle = js.native
+  def getBounds(): Rectangle
   
   /** returns all rectangles which are making up this region. */
-  def getRectangles(): SafeArray[Rectangle] = js.native
+  def getRectangles(): SafeArray[Rectangle]
   
   /** intersects the specified rectangle with the current region. */
-  def intersectRectangle(Region: Rectangle): Unit = js.native
+  def intersectRectangle(Region: Rectangle): Unit
   
   /** intersects the specified region with the current region. */
-  def intersectRegion(Region: XRegion): Unit = js.native
+  def intersectRegion(Region: XRegion): Unit
   
   /** moves this region by the specified horizontal and vertical delta. */
-  def move(nHorzMove: Double, nVertMove: Double): Unit = js.native
+  def move(nHorzMove: Double, nVertMove: Double): Unit
   
   /** adds the specified rectangle to this region. */
-  def unionRectangle(Rect: Rectangle): Unit = js.native
+  def unionRectangle(Rect: Rectangle): Unit
   
   /** adds the specified region to this region. */
-  def unionRegion(Region: XRegion): Unit = js.native
+  def unionRegion(Region: XRegion): Unit
   
   /** applies an exclusive-or operation with the specified rectangle to this region. */
-  def xOrRectangle(Rect: Rectangle): Unit = js.native
+  def xOrRectangle(Rect: Rectangle): Unit
   
   /** applies an exclusive-or operation with the specified region to this region. */
-  def xOrRegion(Region: XRegion): Unit = js.native
+  def xOrRegion(Region: XRegion): Unit
 }
 object XRegion {
   

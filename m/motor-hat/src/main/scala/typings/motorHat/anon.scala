@@ -5,21 +5,19 @@ import typings.motorHat.mod.MotorPins
 import typings.motorHat.mod.PinDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait M1 extends StObject {
     
-    var M1: MotorPins = js.native
+    var M1: MotorPins
     
-    var M2: MotorPins = js.native
+    var M2: MotorPins
     
-    var M3: MotorPins = js.native
+    var M3: MotorPins
     
-    var M4: MotorPins = js.native
+    var M4: MotorPins
   }
   object M1 {
     
@@ -46,18 +44,17 @@ object anon {
     }
   }
   
-  @js.native
   trait W1 extends StObject {
     
     /**
       * Pin definition for winding 1 of the stepper
       */
-    var W1: PinDefinition = js.native
+    var W1: PinDefinition
     
     /**
       * Pin definition for winding 2 of the stepper
       */
-    var W2: PinDefinition = js.native
+    var W2: PinDefinition
   }
   object W1 {
     
@@ -84,12 +81,11 @@ object anon {
     }
   }
   
-  @js.native
   trait W2 extends StObject {
     
-    var W1: Motor = js.native
+    var W1: Motor
     
-    var W2: Motor = js.native
+    var W2: Motor
   }
   object W2 {
     

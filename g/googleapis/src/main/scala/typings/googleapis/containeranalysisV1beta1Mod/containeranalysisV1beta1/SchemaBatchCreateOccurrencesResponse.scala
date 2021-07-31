@@ -2,19 +2,17 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for creating occurrences in batch.
   */
-@js.native
 trait SchemaBatchCreateOccurrencesResponse extends StObject {
   
   /**
     * The occurrences that were created.
     */
-  var occurrences: js.UndefOr[js.Array[SchemaOccurrence]] = js.native
+  var occurrences: js.UndefOr[js.Array[SchemaOccurrence]] = js.undefined
 }
 object SchemaBatchCreateOccurrencesResponse {
   

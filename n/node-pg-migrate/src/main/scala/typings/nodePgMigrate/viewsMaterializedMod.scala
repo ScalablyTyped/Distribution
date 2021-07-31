@@ -9,32 +9,29 @@ import typings.nodePgMigrate.viewsMaterializedTypesMod.RenameMaterializedView
 import typings.nodePgMigrate.viewsMaterializedTypesMod.RenameMaterializedViewColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewsMaterializedMod {
   
-  @JSImport("node-pg-migrate/dist/operations/viewsMaterialized", "alterMaterializedView")
+  @JSImport("node-pg-migrate/dist/operations/viewsMaterialized", JSImport.Namespace)
   @js.native
-  def alterMaterializedView(mOptions: MigrationOptions): AlterMaterializedView = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-pg-migrate/dist/operations/viewsMaterialized", "createMaterializedView")
-  @js.native
-  def createMaterializedView(mOptions: MigrationOptions): CreateMaterializedView = js.native
+  @scala.inline
+  def alterMaterializedView(mOptions: MigrationOptions): AlterMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("alterMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterMaterializedView]
   
-  @JSImport("node-pg-migrate/dist/operations/viewsMaterialized", "dropMaterializedView")
-  @js.native
-  def dropMaterializedView(mOptions: MigrationOptions): DropMaterializedView = js.native
+  @scala.inline
+  def createMaterializedView(mOptions: MigrationOptions): CreateMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("createMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateMaterializedView]
   
-  @JSImport("node-pg-migrate/dist/operations/viewsMaterialized", "refreshMaterializedView")
-  @js.native
-  def refreshMaterializedView(mOptions: MigrationOptions): RefreshMaterializedView = js.native
+  @scala.inline
+  def dropMaterializedView(mOptions: MigrationOptions): DropMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("dropMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropMaterializedView]
   
-  @JSImport("node-pg-migrate/dist/operations/viewsMaterialized", "renameMaterializedView")
-  @js.native
-  def renameMaterializedView(mOptions: MigrationOptions): RenameMaterializedView = js.native
+  @scala.inline
+  def refreshMaterializedView(mOptions: MigrationOptions): RefreshMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RefreshMaterializedView]
   
-  @JSImport("node-pg-migrate/dist/operations/viewsMaterialized", "renameMaterializedViewColumn")
-  @js.native
-  def renameMaterializedViewColumn(mOptions: MigrationOptions): RenameMaterializedViewColumn = js.native
+  @scala.inline
+  def renameMaterializedView(mOptions: MigrationOptions): RenameMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("renameMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameMaterializedView]
+  
+  @scala.inline
+  def renameMaterializedViewColumn(mOptions: MigrationOptions): RenameMaterializedViewColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("renameMaterializedViewColumn")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameMaterializedViewColumn]
 }

@@ -2,23 +2,21 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Game extends StObject {
   
-  var animation: js.UndefOr[Animation] = js.native
+  var animation: js.UndefOr[Animation] = js.undefined
   
-  var description: String = js.native
+  var description: String
   
-  var photo: js.Array[PhotoSize] = js.native
+  var photo: js.Array[PhotoSize]
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var text_entities: js.UndefOr[js.Array[MessageEntity]] = js.native
+  var text_entities: js.UndefOr[js.Array[MessageEntity]] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object Game {
   

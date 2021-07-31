@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCertificateRequest extends StObject {
   
   /**
     * The ID of the certificate. (The last part of the certificate ARN contains the certificate ID.)
     */
-  var certificateId: CertificateId = js.native
+  var certificateId: CertificateId
   
   /**
     * The new status.  Note: Setting the status to PENDING_TRANSFER or PENDING_ACTIVATION will result in an exception being thrown. PENDING_TRANSFER and PENDING_ACTIVATION are statuses used internally by AWS IoT. They are not intended for developer use.  Note: The status value REGISTER_INACTIVE is deprecated and should not be used.
     */
-  var newStatus: CertificateStatus = js.native
+  var newStatus: CertificateStatus
 }
 object UpdateCertificateRequest {
   

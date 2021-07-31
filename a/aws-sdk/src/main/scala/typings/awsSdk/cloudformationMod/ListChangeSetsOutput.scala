@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChangeSetsOutput extends StObject {
   
   /**
     * If the output exceeds 1 MB, a string that identifies the next page of change sets. If there is no additional page, this value is null.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
   
   /**
     * A list of ChangeSetSummary structures that provides the ID and status of each change set for the specified stack.
     */
-  var Summaries: js.UndefOr[ChangeSetSummaries] = js.native
+  var Summaries: js.UndefOr[ChangeSetSummaries] = js.undefined
 }
 object ListChangeSetsOutput {
   

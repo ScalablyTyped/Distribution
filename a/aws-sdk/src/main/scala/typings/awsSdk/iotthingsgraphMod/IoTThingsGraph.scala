@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait IoTThingsGraph extends Service {
   ): Request[AssociateEntityToThingResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_IoTThingsGraph: ConfigBase with ClientConfiguration = js.native
+  var config_IoTThingsGraph: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a workflow template. Workflows can be created only in the user's namespace. (The public namespace contains only entities.) The workflow can contain only entities in the specified namespace. The workflow is validated against the entities in the latest version of the user's namespace unless another namespace version is specified in the request.

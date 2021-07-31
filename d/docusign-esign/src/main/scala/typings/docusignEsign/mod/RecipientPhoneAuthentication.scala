@@ -2,51 +2,49 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientPhoneAuthentication extends StObject {
   
   /**
     * Boolean. When set to **true**, the recipient can supply a phone number their choice.
     */
-  var recipMayProvideNumber: js.UndefOr[String] = js.native
+  var recipMayProvideNumber: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `recipMayProvideNumber` property can be edited.
     */
-  var recipMayProvideNumberMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var recipMayProvideNumberMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var recordVoicePrint: js.UndefOr[String] = js.native
+  var recordVoicePrint: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var recordVoicePrintMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var recordVoicePrintMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * An array containing a list of phone numbers that the recipient can use for SMS text authentication.
     */
-  var senderProvidedNumbers: js.UndefOr[js.Array[String]] = js.native
+  var senderProvidedNumbers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Metadata that indicates whether the `senderProvidedNumbers` property can be edited.
     */
-  var senderProvidedNumbersMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var senderProvidedNumbersMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     *  Reserved for DocuSign.
     */
-  var validateRecipProvidedNumber: js.UndefOr[String] = js.native
+  var validateRecipProvidedNumber: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var validateRecipProvidedNumberMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var validateRecipProvidedNumberMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
 }
 object RecipientPhoneAuthentication {
   

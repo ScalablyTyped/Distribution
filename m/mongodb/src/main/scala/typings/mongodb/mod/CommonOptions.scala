@@ -2,13 +2,13 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CommonOptions extends WriteConcern {
+trait CommonOptions
+  extends StObject
+     with WriteConcern {
   
-  var session: js.UndefOr[ClientSession] = js.native
+  var session: js.UndefOr[ClientSession] = js.undefined
 }
 object CommonOptions {
   

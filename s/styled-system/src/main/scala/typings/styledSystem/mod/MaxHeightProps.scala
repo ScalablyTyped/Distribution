@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait MaxHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extend
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
     */
-  var maxHeight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var maxHeight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object MaxHeightProps {
   
@@ -25,7 +23,7 @@ object MaxHeightProps {
   }
   
   @scala.inline
-  implicit class MaxHeightPropsMutableBuilder[Self <: MaxHeightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (MaxHeightProps[ThemeType, TVal])) extends AnyVal {
+  implicit class MaxHeightPropsMutableBuilder[Self <: MaxHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (MaxHeightProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setMaxHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])

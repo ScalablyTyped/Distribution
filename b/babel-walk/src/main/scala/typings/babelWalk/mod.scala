@@ -866,1176 +866,1175 @@ import typings.babelWalk.babelWalkStrings.YieldExpression
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("babel-walk/lib", "ancestor")
+  @JSImport("babel-walk/lib", JSImport.Namespace)
   @js.native
-  def ancestor[TState](visitors: AncestorVisitor[TState]): js.Function2[/* node */ Node, /* state */ TState, Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("babel-walk/lib", "recursive")
-  @js.native
-  def recursive[TState](visitors: RecursiveVisitors[TState]): js.Function2[/* node */ Node, /* state */ TState, Unit] = js.native
+  @scala.inline
+  def ancestor[TState](visitors: AncestorVisitor[TState]): js.Function2[/* node */ Node, /* state */ TState, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ancestor")(visitors.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* node */ Node, /* state */ TState, Unit]]
   
-  @JSImport("babel-walk/lib", "simple")
-  @js.native
-  def simple[TState](visitors: SimpleVisitors[TState]): js.Function2[/* node */ Node, /* state */ TState, Unit] = js.native
+  @scala.inline
+  def recursive[TState](visitors: RecursiveVisitors[TState]): js.Function2[/* node */ Node, /* state */ TState, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("recursive")(visitors.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* node */ Node, /* state */ TState, Unit]]
+  
+  @scala.inline
+  def simple[TState](visitors: SimpleVisitors[TState]): js.Function2[/* node */ Node, /* state */ TState, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")(visitors.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* node */ Node, /* state */ TState, Unit]]
   
   type AncestorFunction[TKey /* <: String */, TState] = js.Function3[/* node */ NodeType[TKey], /* state */ TState, /* ancestors */ js.Array[Node], Unit]
   
   /* Inlined {[ key in keyof @babel/types.@babel/types.Aliases | @babel/types.@babel/types.Node['type'] ]:? babel-walk.babel-walk/lib.AncestorFunction<key, TState> | {  enter :babel-walk.babel-walk/lib.AncestorFunction<key, TState> | undefined,   exit :babel-walk.babel-walk/lib.AncestorFunction<key, TState> | undefined}} */
-  @js.native
   trait AncestorVisitor[TState] extends StObject {
     
     var AnyTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.AnyTypeAnnotation, TState]) | `359`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ArgumentPlaceholder: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ArgumentPlaceholder, TState]) | `558`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ArrayExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ArrayExpression, TState]) | `348`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ArrayPattern: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ArrayPattern, TState]) | `412`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ArrayTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ArrayTypeAnnotation, TState]) | `380`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ArrowFunctionExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ArrowFunctionExpression, TState]) | `454`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var AssignmentExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.AssignmentExpression, TState]) | `439`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var AssignmentPattern: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.AssignmentPattern, TState]) | `358`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var AwaitExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.AwaitExpression, TState]) | `410`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BigIntLiteral: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.BigIntLiteral, TState]) | `497`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Binary: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Binary, TState]) | `555`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BinaryExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.BinaryExpression, TState]) | `383`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BindExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.BindExpression, TState]) | `372`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Block: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Block, TState]) | `527`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BlockParent: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.BlockParent, TState]) | `295`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BlockStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.BlockStatement, TState]) | `312`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BooleanLiteral: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.BooleanLiteral, TState]) | `436`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BooleanLiteralTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.BooleanLiteralTypeAnnotation, TState]) | `490`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BooleanTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.BooleanTypeAnnotation, TState]) | `496`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BreakStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.BreakStatement, TState]) | `287`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var CallExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.CallExpression, TState]) | `339`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var CatchClause: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.CatchClause, TState]) | `487`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Class: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Class, TState]) | `480`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassBody: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ClassBody, TState]) | `550`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ClassDeclaration, TState]) | `406`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ClassExpression, TState]) | `284`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassImplements: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ClassImplements, TState]) | `532`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassMethod: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ClassMethod, TState]) | `503`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassPrivateMethod: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ClassPrivateMethod, TState]) | `553`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassPrivateProperty: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ClassPrivateProperty, TState]) | `548`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassProperty: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ClassProperty, TState]) | `508`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var CompletionStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.CompletionStatement, TState]) | `562`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Conditional: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Conditional, TState]) | `494`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ConditionalExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ConditionalExpression, TState]) | `479`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ContinueStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ContinueStatement, TState]) | `332`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DebuggerStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DebuggerStatement, TState]) | `445`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DecimalLiteral: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DecimalLiteral, TState]) | `525`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Declaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Declaration, TState]) | `461`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareClass: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DeclareClass, TState]) | `563`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareExportAllDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DeclareExportAllDeclaration, TState]) | `407`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareExportDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DeclareExportDeclaration, TState]) | `467`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareFunction: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DeclareFunction, TState]) | `400`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareInterface: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DeclareInterface, TState]) | `470`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareModule: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DeclareModule, TState]) | `326`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareModuleExports: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DeclareModuleExports, TState]) | `541`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareOpaqueType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DeclareOpaqueType, TState]) | `547`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareTypeAlias: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DeclareTypeAlias, TState]) | `476`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareVariable: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DeclareVariable, TState]) | `495`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclaredPredicate: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DeclaredPredicate, TState]) | `502`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Decorator: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Decorator, TState]) | `376`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Directive: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Directive, TState]) | `357`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DirectiveLiteral: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DirectiveLiteral, TState]) | `451`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DoExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DoExpression, TState]) | `537`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DoWhileStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.DoWhileStatement, TState]) | `517`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EmptyStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.EmptyStatement, TState]) | `405`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EmptyTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.EmptyTypeAnnotation, TState]) | `449`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumBody: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.EnumBody, TState]) | `567`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumBooleanBody: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.EnumBooleanBody, TState]) | `441`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumBooleanMember: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.EnumBooleanMember, TState]) | `414`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.EnumDeclaration, TState]) | `361`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumDefaultedMember: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.EnumDefaultedMember, TState]) | `507`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumMember: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.EnumMember, TState]) | `304`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumNumberBody: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.EnumNumberBody, TState]) | `559`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumNumberMember: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.EnumNumberMember, TState]) | `523`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumStringBody: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.EnumStringBody, TState]) | `472`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumStringMember: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.EnumStringMember, TState]) | `290`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumSymbolBody: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.EnumSymbolBody, TState]) | `515`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExistsTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ExistsTypeAnnotation, TState]) | `416`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExportAllDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ExportAllDeclaration, TState]) | `329`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExportDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ExportDeclaration, TState]) | `350`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExportDefaultDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ExportDefaultDeclaration, TState]) | `374`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExportDefaultSpecifier: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ExportDefaultSpecifier, TState]) | `289`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExportNamedDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ExportNamedDeclaration, TState]) | `338`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExportNamespaceSpecifier: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ExportNamespaceSpecifier, TState]) | `491`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExportSpecifier: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ExportSpecifier, TState]) | `413`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Expression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Expression, TState]) | `488`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExpressionStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ExpressionStatement, TState]) | `356`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExpressionWrapper: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ExpressionWrapper, TState]) | `498`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var File: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.File, TState]) | `318`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Flow: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Flow, TState]) | `355`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FlowBaseAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.FlowBaseAnnotation, TState]) | `442`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FlowDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.FlowDeclaration, TState]) | `561`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FlowPredicate: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.FlowPredicate, TState]) | `420`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FlowType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.FlowType, TState]) | `327`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var For: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.For, TState]) | `443`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ForInStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ForInStatement, TState]) | `303`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ForOfStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ForOfStatement, TState]) | `475`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ForStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ForStatement, TState]) | `504`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ForXStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ForXStatement, TState]) | `384`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Function: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Function, TState]) | `486`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.FunctionDeclaration, TState]) | `440`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.FunctionExpression, TState]) | `509`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionParent: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.FunctionParent, TState]) | `510`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.FunctionTypeAnnotation, TState]) | `333`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionTypeParam: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.FunctionTypeParam, TState]) | `546`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var GenericTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.GenericTypeAnnotation, TState]) | `566`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Identifier: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Identifier, TState]) | `394`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var IfStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.IfStatement, TState]) | `379`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Immutable: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Immutable, TState]) | `565`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Import: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Import, TState]) | `482`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ImportAttribute: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ImportAttribute, TState]) | `421`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ImportDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ImportDeclaration, TState]) | `564`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ImportDefaultSpecifier: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ImportDefaultSpecifier, TState]) | `306`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ImportNamespaceSpecifier: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ImportNamespaceSpecifier, TState]) | `520`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ImportSpecifier: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ImportSpecifier, TState]) | `411`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var InferredPredicate: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.InferredPredicate, TState]) | `438`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var InterfaceDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.InterfaceDeclaration, TState]) | `340`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var InterfaceExtends: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.InterfaceExtends, TState]) | `446`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var InterfaceTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.InterfaceTypeAnnotation, TState]) | `294`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var InterpreterDirective: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.InterpreterDirective, TState]) | `382`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var IntersectionTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.IntersectionTypeAnnotation, TState]) | `534`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSX: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSX, TState]) | `317`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXAttribute: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXAttribute, TState]) | `398`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXClosingElement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXClosingElement, TState]) | `431`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXClosingFragment: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXClosingFragment, TState]) | `531`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXElement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXElement, TState]) | `484`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXEmptyExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXEmptyExpression, TState]) | `424`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXExpressionContainer: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXExpressionContainer, TState]) | `323`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXFragment: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXFragment, TState]) | `458`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXIdentifier: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXIdentifier, TState]) | `381`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXMemberExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXMemberExpression, TState]) | `514`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXNamespacedName: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXNamespacedName, TState]) | `463`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXOpeningElement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXOpeningElement, TState]) | `367`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXOpeningFragment: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXOpeningFragment, TState]) | `538`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXSpreadAttribute: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXSpreadAttribute, TState]) | `341`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXSpreadChild: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXSpreadChild, TState]) | `366`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXText: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.JSXText, TState]) | `512`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var LVal: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.LVal, TState]) | `462`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var LabeledStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.LabeledStatement, TState]) | `328`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Literal: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Literal, TState]) | `459`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var LogicalExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.LogicalExpression, TState]) | `363`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Loop: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Loop, TState]) | `286`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var MemberExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.MemberExpression, TState]) | `353`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var MetaProperty: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.MetaProperty, TState]) | `377`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Method: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Method, TState]) | `422`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var MixedTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.MixedTypeAnnotation, TState]) | `349`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ModuleDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ModuleDeclaration, TState]) | `426`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ModuleSpecifier: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ModuleSpecifier, TState]) | `444`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var NewExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.NewExpression, TState]) | `352`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Noop: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Noop, TState]) | `325`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var NullLiteral: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.NullLiteral, TState]) | `568`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var NullLiteralTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.NullLiteralTypeAnnotation, TState]) | `335`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var NullableTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.NullableTypeAnnotation, TState]) | `393`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var NumberLiteralTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.NumberLiteralTypeAnnotation, TState]) | `466`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var NumberTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.NumberTypeAnnotation, TState]) | `473`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var NumericLiteral: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.NumericLiteral, TState]) | `535`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ObjectExpression, TState]) | `423`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectMember: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ObjectMember, TState]) | `434`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectMethod: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ObjectMethod, TState]) | `425`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectPattern: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ObjectPattern, TState]) | `542`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectProperty: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ObjectProperty, TState]) | `452`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ObjectTypeAnnotation, TState]) | `378`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeCallProperty: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ObjectTypeCallProperty, TState]) | `299`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeIndexer: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ObjectTypeIndexer, TState]) | `485`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeInternalSlot: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ObjectTypeInternalSlot, TState]) | `551`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeProperty: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ObjectTypeProperty, TState]) | `468`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeSpreadProperty: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ObjectTypeSpreadProperty, TState]) | `375`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var OpaqueType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.OpaqueType, TState]) | `364`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var OptionalCallExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.OptionalCallExpression, TState]) | `337`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var OptionalMemberExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.OptionalMemberExpression, TState]) | `316`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ParenthesizedExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ParenthesizedExpression, TState]) | `522`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Pattern: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Pattern, TState]) | `313`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var PatternLike: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.PatternLike, TState]) | `401`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var PipelineBareFunction: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.PipelineBareFunction, TState]) | `471`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var PipelinePrimaryTopicReference: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.PipelinePrimaryTopicReference, TState]) | `322`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var PipelineTopicExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.PipelineTopicExpression, TState]) | `402`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Placeholder: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Placeholder, TState]) | `477`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Private: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Private, TState]) | `524`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var PrivateName: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.PrivateName, TState]) | `390`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Program: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Program, TState]) | `464`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Property: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Property, TState]) | `450`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Pureish: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Pureish, TState]) | `427`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var QualifiedTypeIdentifier: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.QualifiedTypeIdentifier, TState]) | `368`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var RecordExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.RecordExpression, TState]) | `354`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var RegExpLiteral: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.RegExpLiteral, TState]) | `330`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var RestElement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.RestElement, TState]) | `314`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ReturnStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ReturnStatement, TState]) | `291`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Scopable: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Scopable, TState]) | `404`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var SequenceExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.SequenceExpression, TState]) | `481`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var SpreadElement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.SpreadElement, TState]) | `310`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Statement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Statement, TState]) | `505`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var StaticBlock: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.StaticBlock, TState]) | `408`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var StringLiteral: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.StringLiteral, TState]) | `435`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var StringLiteralTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.StringLiteralTypeAnnotation, TState]) | `544`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var StringTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.StringTypeAnnotation, TState]) | `288`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Super: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Super, TState]) | `474`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var SwitchCase: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.SwitchCase, TState]) | `346`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var SwitchStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.SwitchStatement, TState]) | `336`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var SymbolTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.SymbolTypeAnnotation, TState]) | `342`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSAnyKeyword: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSAnyKeyword, TState]) | `296`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSArrayType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSArrayType, TState]) | `285`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSAsExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSAsExpression, TState]) | `293`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSBaseType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSBaseType, TState]) | `518`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSBigIntKeyword: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSBigIntKeyword, TState]) | `345`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSBooleanKeyword: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSBooleanKeyword, TState]) | `543`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSCallSignatureDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSCallSignatureDeclaration, TState]) | `457`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSConditionalType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSConditionalType, TState]) | `305`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSConstructSignatureDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSConstructSignatureDeclaration, TState]) | `419`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSConstructorType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSConstructorType, TState]) | `533`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSDeclareFunction: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSDeclareFunction, TState]) | `519`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSDeclareMethod: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSDeclareMethod, TState]) | `370`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSEntityName: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSEntityName, TState]) | `433`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSEnumDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSEnumDeclaration, TState]) | `386`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSEnumMember: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSEnumMember, TState]) | `437`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSExportAssignment: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSExportAssignment, TState]) | `453`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSExpressionWithTypeArguments: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSExpressionWithTypeArguments, TState]) | `455`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSExternalModuleReference: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSExternalModuleReference, TState]) | `418`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSFunctionType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSFunctionType, TState]) | `334`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSImportEqualsDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSImportEqualsDeclaration, TState]) | `469`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSImportType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSImportType, TState]) | `560`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSIndexSignature: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSIndexSignature, TState]) | `526`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSIndexedAccessType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSIndexedAccessType, TState]) | `319`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSInferType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSInferType, TState]) | `399`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSInterfaceBody: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSInterfaceBody, TState]) | `292`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSInterfaceDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSInterfaceDeclaration, TState]) | `501`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSIntersectionType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSIntersectionType, TState]) | `557`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSIntrinsicKeyword: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSIntrinsicKeyword, TState]) | `360`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSLiteralType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSLiteralType, TState]) | `307`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSMappedType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSMappedType, TState]) | `430`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSMethodSignature: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSMethodSignature, TState]) | `521`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSModuleBlock: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSModuleBlock, TState]) | `549`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSModuleDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSModuleDeclaration, TState]) | `302`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSNamedTupleMember: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSNamedTupleMember, TState]) | `540`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSNamespaceExportDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSNamespaceExportDeclaration, TState]) | `385`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSNeverKeyword: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSNeverKeyword, TState]) | `556`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSNonNullExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSNonNullExpression, TState]) | `392`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSNullKeyword: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSNullKeyword, TState]) | `324`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSNumberKeyword: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSNumberKeyword, TState]) | `493`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSObjectKeyword: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSObjectKeyword, TState]) | `536`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSOptionalType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSOptionalType, TState]) | `499`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSParameterProperty: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSParameterProperty, TState]) | `513`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSParenthesizedType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSParenthesizedType, TState]) | `545`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSPropertySignature: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSPropertySignature, TState]) | `415`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSQualifiedName: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSQualifiedName, TState]) | `320`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSRestType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSRestType, TState]) | `530`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSStringKeyword: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSStringKeyword, TState]) | `397`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSSymbolKeyword: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSSymbolKeyword, TState]) | `429`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSThisType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSThisType, TState]) | `528`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTupleType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSTupleType, TState]) | `516`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSType, TState]) | `373`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeAliasDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSTypeAliasDeclaration, TState]) | `387`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSTypeAnnotation, TState]) | `409`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeAssertion: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSTypeAssertion, TState]) | `554`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeElement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSTypeElement, TState]) | `428`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeLiteral: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSTypeLiteral, TState]) | `465`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeOperator: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSTypeOperator, TState]) | `344`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeParameter: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSTypeParameter, TState]) | `389`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeParameterDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSTypeParameterDeclaration, TState]) | `308`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeParameterInstantiation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSTypeParameterInstantiation, TState]) | `369`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypePredicate: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSTypePredicate, TState]) | `500`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeQuery: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSTypeQuery, TState]) | `417`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeReference: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSTypeReference, TState]) | `570`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSUndefinedKeyword: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSUndefinedKeyword, TState]) | `478`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSUnionType: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSUnionType, TState]) | `388`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSUnknownKeyword: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSUnknownKeyword, TState]) | `347`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSVoidKeyword: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TSVoidKeyword, TState]) | `351`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TaggedTemplateExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TaggedTemplateExpression, TState]) | `365`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TemplateElement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TemplateElement, TState]) | `511`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TemplateLiteral: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TemplateLiteral, TState]) | `371`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Terminatorless: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Terminatorless, TState]) | `396`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ThisExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ThisExpression, TState]) | `552`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ThisTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ThisTypeAnnotation, TState]) | `343`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ThrowStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.ThrowStatement, TState]) | `447`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TryStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TryStatement, TState]) | `311`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TupleExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TupleExpression, TState]) | `529`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TupleTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TupleTypeAnnotation, TState]) | `300`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TypeAlias: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TypeAlias, TState]) | `492`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TypeAnnotation, TState]) | `309`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TypeCastExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TypeCastExpression, TState]) | `297`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TypeParameter: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TypeParameter, TState]) | `483`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TypeParameterDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TypeParameterDeclaration, TState]) | `301`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TypeParameterInstantiation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TypeParameterInstantiation, TState]) | `569`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TypeofTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.TypeofTypeAnnotation, TState]) | `456`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var UnaryExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.UnaryExpression, TState]) | `489`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var UnaryLike: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.UnaryLike, TState]) | `506`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var UnionTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.UnionTypeAnnotation, TState]) | `539`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var UpdateExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.UpdateExpression, TState]) | `395`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var UserWhitespacable: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.UserWhitespacable, TState]) | `321`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var V8IntrinsicIdentifier: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.V8IntrinsicIdentifier, TState]) | `448`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var VariableDeclaration: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.VariableDeclaration, TState]) | `362`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var VariableDeclarator: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.VariableDeclarator, TState]) | `432`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Variance: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.Variance, TState]) | `460`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var VoidTypeAnnotation: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.VoidTypeAnnotation, TState]) | `403`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var While: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.While, TState]) | `315`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var WhileStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.WhileStatement, TState]) | `331`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var WithStatement: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.WithStatement, TState]) | `391`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var YieldExpression: js.UndefOr[
         (AncestorFunction[typings.babelWalk.babelWalkStrings.YieldExpression, TState]) | `298`[TState]
-      ] = js.native
+      ] = js.undefined
   }
   object AncestorVisitor {
     
@@ -2046,7 +2045,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AncestorVisitorMutableBuilder[Self <: AncestorVisitor[_], TState] (val x: Self with AncestorVisitor[TState]) extends AnyVal {
+    implicit class AncestorVisitorMutableBuilder[Self <: AncestorVisitor[?], TState] (val x: Self & AncestorVisitor[TState]) extends AnyVal {
       
       @scala.inline
       def setAnyTypeAnnotation(value: (AncestorFunction[AnyTypeAnnotation, TState]) | `359`[TState]): Self = StObject.set(x, "AnyTypeAnnotation", value.asInstanceOf[js.Any])
@@ -4724,7 +4723,6 @@ object mod {
   type NodeType[`type` /* <: String */] = (Extract[Node, Type[`type`]]) | (/* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Aliases[type] */ js.Any)
   
   /* Inlined {[ key in keyof @babel/types.@babel/types.Aliases | @babel/types.@babel/types.Node['type'] ]:? (node : babel-walk.babel-walk/lib.NodeType<key>, state : TState, recurse : (node : @babel/types.@babel/types.Node): void): void} */
-  @js.native
   trait RecursiveVisitors[TState] extends StObject {
     
     var AnyTypeAnnotation: js.UndefOr[
@@ -4734,7 +4732,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ArgumentPlaceholder: js.UndefOr[
         js.Function3[
@@ -4743,7 +4741,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ArrayExpression: js.UndefOr[
         js.Function3[
@@ -4752,7 +4750,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ArrayPattern: js.UndefOr[
         js.Function3[
@@ -4761,7 +4759,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ArrayTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -4770,7 +4768,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ArrowFunctionExpression: js.UndefOr[
         js.Function3[
@@ -4779,7 +4777,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var AssignmentExpression: js.UndefOr[
         js.Function3[
@@ -4788,7 +4786,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var AssignmentPattern: js.UndefOr[
         js.Function3[
@@ -4797,7 +4795,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var AwaitExpression: js.UndefOr[
         js.Function3[
@@ -4806,7 +4804,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var BigIntLiteral: js.UndefOr[
         js.Function3[
@@ -4815,7 +4813,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Binary: js.UndefOr[
         js.Function3[
@@ -4824,7 +4822,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var BinaryExpression: js.UndefOr[
         js.Function3[
@@ -4833,7 +4831,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var BindExpression: js.UndefOr[
         js.Function3[
@@ -4842,7 +4840,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Block: js.UndefOr[
         js.Function3[
@@ -4851,7 +4849,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var BlockParent: js.UndefOr[
         js.Function3[
@@ -4860,7 +4858,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var BlockStatement: js.UndefOr[
         js.Function3[
@@ -4869,7 +4867,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var BooleanLiteral: js.UndefOr[
         js.Function3[
@@ -4878,7 +4876,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var BooleanLiteralTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -4887,7 +4885,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var BooleanTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -4896,7 +4894,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var BreakStatement: js.UndefOr[
         js.Function3[
@@ -4905,7 +4903,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var CallExpression: js.UndefOr[
         js.Function3[
@@ -4914,7 +4912,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var CatchClause: js.UndefOr[
         js.Function3[
@@ -4923,7 +4921,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Class: js.UndefOr[
         js.Function3[
@@ -4932,7 +4930,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ClassBody: js.UndefOr[
         js.Function3[
@@ -4941,7 +4939,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ClassDeclaration: js.UndefOr[
         js.Function3[
@@ -4950,7 +4948,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ClassExpression: js.UndefOr[
         js.Function3[
@@ -4959,7 +4957,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ClassImplements: js.UndefOr[
         js.Function3[
@@ -4968,7 +4966,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ClassMethod: js.UndefOr[
         js.Function3[
@@ -4977,7 +4975,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ClassPrivateMethod: js.UndefOr[
         js.Function3[
@@ -4986,7 +4984,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ClassPrivateProperty: js.UndefOr[
         js.Function3[
@@ -4995,7 +4993,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ClassProperty: js.UndefOr[
         js.Function3[
@@ -5004,7 +5002,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var CompletionStatement: js.UndefOr[
         js.Function3[
@@ -5013,7 +5011,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Conditional: js.UndefOr[
         js.Function3[
@@ -5022,7 +5020,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ConditionalExpression: js.UndefOr[
         js.Function3[
@@ -5031,7 +5029,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ContinueStatement: js.UndefOr[
         js.Function3[
@@ -5040,7 +5038,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DebuggerStatement: js.UndefOr[
         js.Function3[
@@ -5049,7 +5047,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DecimalLiteral: js.UndefOr[
         js.Function3[
@@ -5058,7 +5056,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Declaration: js.UndefOr[
         js.Function3[
@@ -5067,7 +5065,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareClass: js.UndefOr[
         js.Function3[
@@ -5076,7 +5074,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareExportAllDeclaration: js.UndefOr[
         js.Function3[
@@ -5085,7 +5083,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareExportDeclaration: js.UndefOr[
         js.Function3[
@@ -5094,7 +5092,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareFunction: js.UndefOr[
         js.Function3[
@@ -5103,7 +5101,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareInterface: js.UndefOr[
         js.Function3[
@@ -5112,7 +5110,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareModule: js.UndefOr[
         js.Function3[
@@ -5121,7 +5119,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareModuleExports: js.UndefOr[
         js.Function3[
@@ -5130,7 +5128,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareOpaqueType: js.UndefOr[
         js.Function3[
@@ -5139,7 +5137,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareTypeAlias: js.UndefOr[
         js.Function3[
@@ -5148,7 +5146,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareVariable: js.UndefOr[
         js.Function3[
@@ -5157,7 +5155,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DeclaredPredicate: js.UndefOr[
         js.Function3[
@@ -5166,7 +5164,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Decorator: js.UndefOr[
         js.Function3[
@@ -5175,7 +5173,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Directive: js.UndefOr[
         js.Function3[
@@ -5184,7 +5182,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DirectiveLiteral: js.UndefOr[
         js.Function3[
@@ -5193,7 +5191,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DoExpression: js.UndefOr[
         js.Function3[
@@ -5202,7 +5200,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var DoWhileStatement: js.UndefOr[
         js.Function3[
@@ -5211,7 +5209,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var EmptyStatement: js.UndefOr[
         js.Function3[
@@ -5220,7 +5218,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var EmptyTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -5229,7 +5227,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var EnumBody: js.UndefOr[
         js.Function3[
@@ -5238,7 +5236,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var EnumBooleanBody: js.UndefOr[
         js.Function3[
@@ -5247,7 +5245,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var EnumBooleanMember: js.UndefOr[
         js.Function3[
@@ -5256,7 +5254,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var EnumDeclaration: js.UndefOr[
         js.Function3[
@@ -5265,7 +5263,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var EnumDefaultedMember: js.UndefOr[
         js.Function3[
@@ -5274,7 +5272,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var EnumMember: js.UndefOr[
         js.Function3[
@@ -5283,7 +5281,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var EnumNumberBody: js.UndefOr[
         js.Function3[
@@ -5292,7 +5290,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var EnumNumberMember: js.UndefOr[
         js.Function3[
@@ -5301,7 +5299,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var EnumStringBody: js.UndefOr[
         js.Function3[
@@ -5310,7 +5308,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var EnumStringMember: js.UndefOr[
         js.Function3[
@@ -5319,7 +5317,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var EnumSymbolBody: js.UndefOr[
         js.Function3[
@@ -5328,7 +5326,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ExistsTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -5337,7 +5335,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ExportAllDeclaration: js.UndefOr[
         js.Function3[
@@ -5346,7 +5344,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ExportDeclaration: js.UndefOr[
         js.Function3[
@@ -5355,7 +5353,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ExportDefaultDeclaration: js.UndefOr[
         js.Function3[
@@ -5364,7 +5362,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ExportDefaultSpecifier: js.UndefOr[
         js.Function3[
@@ -5373,7 +5371,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ExportNamedDeclaration: js.UndefOr[
         js.Function3[
@@ -5382,7 +5380,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ExportNamespaceSpecifier: js.UndefOr[
         js.Function3[
@@ -5391,7 +5389,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ExportSpecifier: js.UndefOr[
         js.Function3[
@@ -5400,7 +5398,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Expression: js.UndefOr[
         js.Function3[
@@ -5409,7 +5407,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ExpressionStatement: js.UndefOr[
         js.Function3[
@@ -5418,7 +5416,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ExpressionWrapper: js.UndefOr[
         js.Function3[
@@ -5427,7 +5425,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var File: js.UndefOr[
         js.Function3[
@@ -5436,7 +5434,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Flow: js.UndefOr[
         js.Function3[
@@ -5445,7 +5443,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var FlowBaseAnnotation: js.UndefOr[
         js.Function3[
@@ -5454,7 +5452,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var FlowDeclaration: js.UndefOr[
         js.Function3[
@@ -5463,7 +5461,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var FlowPredicate: js.UndefOr[
         js.Function3[
@@ -5472,7 +5470,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var FlowType: js.UndefOr[
         js.Function3[
@@ -5481,7 +5479,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var For: js.UndefOr[
         js.Function3[
@@ -5490,7 +5488,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ForInStatement: js.UndefOr[
         js.Function3[
@@ -5499,7 +5497,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ForOfStatement: js.UndefOr[
         js.Function3[
@@ -5508,7 +5506,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ForStatement: js.UndefOr[
         js.Function3[
@@ -5517,7 +5515,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ForXStatement: js.UndefOr[
         js.Function3[
@@ -5526,7 +5524,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Function: js.UndefOr[
         js.Function3[
@@ -5535,7 +5533,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionDeclaration: js.UndefOr[
         js.Function3[
@@ -5544,7 +5542,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionExpression: js.UndefOr[
         js.Function3[
@@ -5553,7 +5551,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionParent: js.UndefOr[
         js.Function3[
@@ -5562,7 +5560,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -5571,7 +5569,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionTypeParam: js.UndefOr[
         js.Function3[
@@ -5580,7 +5578,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var GenericTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -5589,7 +5587,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Identifier: js.UndefOr[
         js.Function3[
@@ -5598,7 +5596,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var IfStatement: js.UndefOr[
         js.Function3[
@@ -5607,7 +5605,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Immutable: js.UndefOr[
         js.Function3[
@@ -5616,7 +5614,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Import: js.UndefOr[
         js.Function3[
@@ -5625,7 +5623,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ImportAttribute: js.UndefOr[
         js.Function3[
@@ -5634,7 +5632,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ImportDeclaration: js.UndefOr[
         js.Function3[
@@ -5643,7 +5641,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ImportDefaultSpecifier: js.UndefOr[
         js.Function3[
@@ -5652,7 +5650,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ImportNamespaceSpecifier: js.UndefOr[
         js.Function3[
@@ -5661,7 +5659,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ImportSpecifier: js.UndefOr[
         js.Function3[
@@ -5670,7 +5668,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var InferredPredicate: js.UndefOr[
         js.Function3[
@@ -5679,7 +5677,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var InterfaceDeclaration: js.UndefOr[
         js.Function3[
@@ -5688,7 +5686,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var InterfaceExtends: js.UndefOr[
         js.Function3[
@@ -5697,7 +5695,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var InterfaceTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -5706,7 +5704,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var InterpreterDirective: js.UndefOr[
         js.Function3[
@@ -5715,7 +5713,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var IntersectionTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -5724,7 +5722,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSX: js.UndefOr[
         js.Function3[
@@ -5733,7 +5731,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXAttribute: js.UndefOr[
         js.Function3[
@@ -5742,7 +5740,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXClosingElement: js.UndefOr[
         js.Function3[
@@ -5751,7 +5749,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXClosingFragment: js.UndefOr[
         js.Function3[
@@ -5760,7 +5758,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXElement: js.UndefOr[
         js.Function3[
@@ -5769,7 +5767,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXEmptyExpression: js.UndefOr[
         js.Function3[
@@ -5778,7 +5776,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXExpressionContainer: js.UndefOr[
         js.Function3[
@@ -5787,7 +5785,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXFragment: js.UndefOr[
         js.Function3[
@@ -5796,7 +5794,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXIdentifier: js.UndefOr[
         js.Function3[
@@ -5805,7 +5803,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXMemberExpression: js.UndefOr[
         js.Function3[
@@ -5814,7 +5812,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXNamespacedName: js.UndefOr[
         js.Function3[
@@ -5823,7 +5821,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXOpeningElement: js.UndefOr[
         js.Function3[
@@ -5832,7 +5830,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXOpeningFragment: js.UndefOr[
         js.Function3[
@@ -5841,7 +5839,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXSpreadAttribute: js.UndefOr[
         js.Function3[
@@ -5850,7 +5848,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXSpreadChild: js.UndefOr[
         js.Function3[
@@ -5859,7 +5857,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var JSXText: js.UndefOr[
         js.Function3[
@@ -5868,7 +5866,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var LVal: js.UndefOr[
         js.Function3[
@@ -5877,7 +5875,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var LabeledStatement: js.UndefOr[
         js.Function3[
@@ -5886,7 +5884,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Literal: js.UndefOr[
         js.Function3[
@@ -5895,7 +5893,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var LogicalExpression: js.UndefOr[
         js.Function3[
@@ -5904,7 +5902,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Loop: js.UndefOr[
         js.Function3[
@@ -5913,7 +5911,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MemberExpression: js.UndefOr[
         js.Function3[
@@ -5922,7 +5920,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MetaProperty: js.UndefOr[
         js.Function3[
@@ -5931,7 +5929,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Method: js.UndefOr[
         js.Function3[
@@ -5940,7 +5938,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MixedTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -5949,7 +5947,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ModuleDeclaration: js.UndefOr[
         js.Function3[
@@ -5958,7 +5956,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ModuleSpecifier: js.UndefOr[
         js.Function3[
@@ -5967,7 +5965,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var NewExpression: js.UndefOr[
         js.Function3[
@@ -5976,7 +5974,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Noop: js.UndefOr[
         js.Function3[
@@ -5985,7 +5983,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var NullLiteral: js.UndefOr[
         js.Function3[
@@ -5994,7 +5992,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var NullLiteralTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -6003,7 +6001,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var NullableTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -6012,7 +6010,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var NumberLiteralTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -6021,7 +6019,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var NumberTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -6030,7 +6028,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var NumericLiteral: js.UndefOr[
         js.Function3[
@@ -6039,7 +6037,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectExpression: js.UndefOr[
         js.Function3[
@@ -6048,7 +6046,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectMember: js.UndefOr[
         js.Function3[
@@ -6057,7 +6055,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectMethod: js.UndefOr[
         js.Function3[
@@ -6066,7 +6064,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectPattern: js.UndefOr[
         js.Function3[
@@ -6075,7 +6073,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectProperty: js.UndefOr[
         js.Function3[
@@ -6084,7 +6082,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -6093,7 +6091,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeCallProperty: js.UndefOr[
         js.Function3[
@@ -6102,7 +6100,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeIndexer: js.UndefOr[
         js.Function3[
@@ -6111,7 +6109,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeInternalSlot: js.UndefOr[
         js.Function3[
@@ -6120,7 +6118,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeProperty: js.UndefOr[
         js.Function3[
@@ -6129,7 +6127,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeSpreadProperty: js.UndefOr[
         js.Function3[
@@ -6138,7 +6136,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var OpaqueType: js.UndefOr[
         js.Function3[
@@ -6147,7 +6145,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var OptionalCallExpression: js.UndefOr[
         js.Function3[
@@ -6156,7 +6154,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var OptionalMemberExpression: js.UndefOr[
         js.Function3[
@@ -6165,7 +6163,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ParenthesizedExpression: js.UndefOr[
         js.Function3[
@@ -6174,7 +6172,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Pattern: js.UndefOr[
         js.Function3[
@@ -6183,7 +6181,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var PatternLike: js.UndefOr[
         js.Function3[
@@ -6192,7 +6190,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var PipelineBareFunction: js.UndefOr[
         js.Function3[
@@ -6201,7 +6199,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var PipelinePrimaryTopicReference: js.UndefOr[
         js.Function3[
@@ -6210,7 +6208,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var PipelineTopicExpression: js.UndefOr[
         js.Function3[
@@ -6219,7 +6217,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Placeholder: js.UndefOr[
         js.Function3[
@@ -6228,7 +6226,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Private: js.UndefOr[
         js.Function3[
@@ -6237,7 +6235,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var PrivateName: js.UndefOr[
         js.Function3[
@@ -6246,7 +6244,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Program: js.UndefOr[
         js.Function3[
@@ -6255,7 +6253,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Property: js.UndefOr[
         js.Function3[
@@ -6264,7 +6262,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Pureish: js.UndefOr[
         js.Function3[
@@ -6273,7 +6271,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var QualifiedTypeIdentifier: js.UndefOr[
         js.Function3[
@@ -6282,7 +6280,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var RecordExpression: js.UndefOr[
         js.Function3[
@@ -6291,7 +6289,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var RegExpLiteral: js.UndefOr[
         js.Function3[
@@ -6300,7 +6298,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var RestElement: js.UndefOr[
         js.Function3[
@@ -6309,7 +6307,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ReturnStatement: js.UndefOr[
         js.Function3[
@@ -6318,7 +6316,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Scopable: js.UndefOr[
         js.Function3[
@@ -6327,7 +6325,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var SequenceExpression: js.UndefOr[
         js.Function3[
@@ -6336,7 +6334,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var SpreadElement: js.UndefOr[
         js.Function3[
@@ -6345,7 +6343,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Statement: js.UndefOr[
         js.Function3[
@@ -6354,7 +6352,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var StaticBlock: js.UndefOr[
         js.Function3[
@@ -6363,7 +6361,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var StringLiteral: js.UndefOr[
         js.Function3[
@@ -6372,7 +6370,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var StringLiteralTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -6381,7 +6379,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var StringTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -6390,7 +6388,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Super: js.UndefOr[
         js.Function3[
@@ -6399,7 +6397,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var SwitchCase: js.UndefOr[
         js.Function3[
@@ -6408,7 +6406,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var SwitchStatement: js.UndefOr[
         js.Function3[
@@ -6417,7 +6415,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var SymbolTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -6426,7 +6424,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSAnyKeyword: js.UndefOr[
         js.Function3[
@@ -6435,7 +6433,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSArrayType: js.UndefOr[
         js.Function3[
@@ -6444,7 +6442,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSAsExpression: js.UndefOr[
         js.Function3[
@@ -6453,7 +6451,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSBaseType: js.UndefOr[
         js.Function3[
@@ -6462,7 +6460,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSBigIntKeyword: js.UndefOr[
         js.Function3[
@@ -6471,7 +6469,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSBooleanKeyword: js.UndefOr[
         js.Function3[
@@ -6480,7 +6478,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSCallSignatureDeclaration: js.UndefOr[
         js.Function3[
@@ -6489,7 +6487,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSConditionalType: js.UndefOr[
         js.Function3[
@@ -6498,7 +6496,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSConstructSignatureDeclaration: js.UndefOr[
         js.Function3[
@@ -6507,7 +6505,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSConstructorType: js.UndefOr[
         js.Function3[
@@ -6516,7 +6514,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSDeclareFunction: js.UndefOr[
         js.Function3[
@@ -6525,7 +6523,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSDeclareMethod: js.UndefOr[
         js.Function3[
@@ -6534,7 +6532,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSEntityName: js.UndefOr[
         js.Function3[
@@ -6543,7 +6541,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSEnumDeclaration: js.UndefOr[
         js.Function3[
@@ -6552,7 +6550,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSEnumMember: js.UndefOr[
         js.Function3[
@@ -6561,7 +6559,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSExportAssignment: js.UndefOr[
         js.Function3[
@@ -6570,7 +6568,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSExpressionWithTypeArguments: js.UndefOr[
         js.Function3[
@@ -6579,7 +6577,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSExternalModuleReference: js.UndefOr[
         js.Function3[
@@ -6588,7 +6586,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSFunctionType: js.UndefOr[
         js.Function3[
@@ -6597,7 +6595,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSImportEqualsDeclaration: js.UndefOr[
         js.Function3[
@@ -6606,7 +6604,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSImportType: js.UndefOr[
         js.Function3[
@@ -6615,7 +6613,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSIndexSignature: js.UndefOr[
         js.Function3[
@@ -6624,7 +6622,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSIndexedAccessType: js.UndefOr[
         js.Function3[
@@ -6633,7 +6631,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSInferType: js.UndefOr[
         js.Function3[
@@ -6642,7 +6640,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSInterfaceBody: js.UndefOr[
         js.Function3[
@@ -6651,7 +6649,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSInterfaceDeclaration: js.UndefOr[
         js.Function3[
@@ -6660,7 +6658,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSIntersectionType: js.UndefOr[
         js.Function3[
@@ -6669,7 +6667,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSIntrinsicKeyword: js.UndefOr[
         js.Function3[
@@ -6678,7 +6676,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSLiteralType: js.UndefOr[
         js.Function3[
@@ -6687,7 +6685,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSMappedType: js.UndefOr[
         js.Function3[
@@ -6696,7 +6694,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSMethodSignature: js.UndefOr[
         js.Function3[
@@ -6705,7 +6703,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSModuleBlock: js.UndefOr[
         js.Function3[
@@ -6714,7 +6712,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSModuleDeclaration: js.UndefOr[
         js.Function3[
@@ -6723,7 +6721,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSNamedTupleMember: js.UndefOr[
         js.Function3[
@@ -6732,7 +6730,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSNamespaceExportDeclaration: js.UndefOr[
         js.Function3[
@@ -6741,7 +6739,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSNeverKeyword: js.UndefOr[
         js.Function3[
@@ -6750,7 +6748,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSNonNullExpression: js.UndefOr[
         js.Function3[
@@ -6759,7 +6757,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSNullKeyword: js.UndefOr[
         js.Function3[
@@ -6768,7 +6766,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSNumberKeyword: js.UndefOr[
         js.Function3[
@@ -6777,7 +6775,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSObjectKeyword: js.UndefOr[
         js.Function3[
@@ -6786,7 +6784,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSOptionalType: js.UndefOr[
         js.Function3[
@@ -6795,7 +6793,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSParameterProperty: js.UndefOr[
         js.Function3[
@@ -6804,7 +6802,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSParenthesizedType: js.UndefOr[
         js.Function3[
@@ -6813,7 +6811,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSPropertySignature: js.UndefOr[
         js.Function3[
@@ -6822,7 +6820,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSQualifiedName: js.UndefOr[
         js.Function3[
@@ -6831,7 +6829,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSRestType: js.UndefOr[
         js.Function3[
@@ -6840,7 +6838,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSStringKeyword: js.UndefOr[
         js.Function3[
@@ -6849,7 +6847,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSSymbolKeyword: js.UndefOr[
         js.Function3[
@@ -6858,7 +6856,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSThisType: js.UndefOr[
         js.Function3[
@@ -6867,7 +6865,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSTupleType: js.UndefOr[
         js.Function3[
@@ -6876,7 +6874,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSType: js.UndefOr[
         js.Function3[
@@ -6885,7 +6883,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeAliasDeclaration: js.UndefOr[
         js.Function3[
@@ -6894,7 +6892,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -6903,7 +6901,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeAssertion: js.UndefOr[
         js.Function3[
@@ -6912,7 +6910,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeElement: js.UndefOr[
         js.Function3[
@@ -6921,7 +6919,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeLiteral: js.UndefOr[
         js.Function3[
@@ -6930,7 +6928,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeOperator: js.UndefOr[
         js.Function3[
@@ -6939,7 +6937,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeParameter: js.UndefOr[
         js.Function3[
@@ -6948,7 +6946,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeParameterDeclaration: js.UndefOr[
         js.Function3[
@@ -6957,7 +6955,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeParameterInstantiation: js.UndefOr[
         js.Function3[
@@ -6966,7 +6964,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypePredicate: js.UndefOr[
         js.Function3[
@@ -6975,7 +6973,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeQuery: js.UndefOr[
         js.Function3[
@@ -6984,7 +6982,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeReference: js.UndefOr[
         js.Function3[
@@ -6993,7 +6991,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSUndefinedKeyword: js.UndefOr[
         js.Function3[
@@ -7002,7 +7000,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSUnionType: js.UndefOr[
         js.Function3[
@@ -7011,7 +7009,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSUnknownKeyword: js.UndefOr[
         js.Function3[
@@ -7020,7 +7018,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TSVoidKeyword: js.UndefOr[
         js.Function3[
@@ -7029,7 +7027,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TaggedTemplateExpression: js.UndefOr[
         js.Function3[
@@ -7038,7 +7036,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TemplateElement: js.UndefOr[
         js.Function3[
@@ -7047,7 +7045,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TemplateLiteral: js.UndefOr[
         js.Function3[
@@ -7056,7 +7054,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Terminatorless: js.UndefOr[
         js.Function3[
@@ -7065,7 +7063,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ThisExpression: js.UndefOr[
         js.Function3[
@@ -7074,7 +7072,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ThisTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -7083,7 +7081,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ThrowStatement: js.UndefOr[
         js.Function3[
@@ -7092,7 +7090,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TryStatement: js.UndefOr[
         js.Function3[
@@ -7101,7 +7099,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TupleExpression: js.UndefOr[
         js.Function3[
@@ -7110,7 +7108,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TupleTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -7119,7 +7117,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TypeAlias: js.UndefOr[
         js.Function3[
@@ -7128,7 +7126,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TypeAnnotation: js.UndefOr[
         js.Function3[
@@ -7137,7 +7135,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TypeCastExpression: js.UndefOr[
         js.Function3[
@@ -7146,7 +7144,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TypeParameter: js.UndefOr[
         js.Function3[
@@ -7155,7 +7153,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TypeParameterDeclaration: js.UndefOr[
         js.Function3[
@@ -7164,7 +7162,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TypeParameterInstantiation: js.UndefOr[
         js.Function3[
@@ -7173,7 +7171,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var TypeofTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -7182,7 +7180,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var UnaryExpression: js.UndefOr[
         js.Function3[
@@ -7191,7 +7189,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var UnaryLike: js.UndefOr[
         js.Function3[
@@ -7200,7 +7198,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var UnionTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -7209,7 +7207,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var UpdateExpression: js.UndefOr[
         js.Function3[
@@ -7218,7 +7216,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var UserWhitespacable: js.UndefOr[
         js.Function3[
@@ -7227,7 +7225,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var V8IntrinsicIdentifier: js.UndefOr[
         js.Function3[
@@ -7236,7 +7234,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var VariableDeclaration: js.UndefOr[
         js.Function3[
@@ -7245,7 +7243,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var VariableDeclarator: js.UndefOr[
         js.Function3[
@@ -7254,7 +7252,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Variance: js.UndefOr[
         js.Function3[
@@ -7263,7 +7261,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var VoidTypeAnnotation: js.UndefOr[
         js.Function3[
@@ -7272,7 +7270,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var While: js.UndefOr[
         js.Function3[
@@ -7281,7 +7279,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WhileStatement: js.UndefOr[
         js.Function3[
@@ -7290,7 +7288,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WithStatement: js.UndefOr[
         js.Function3[
@@ -7299,7 +7297,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var YieldExpression: js.UndefOr[
         js.Function3[
@@ -7308,7 +7306,7 @@ object mod {
           /* recurse */ js.Function1[/* node */ Node, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object RecursiveVisitors {
     
@@ -7319,7 +7317,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RecursiveVisitorsMutableBuilder[Self <: RecursiveVisitors[_], TState] (val x: Self with RecursiveVisitors[TState]) extends AnyVal {
+    implicit class RecursiveVisitorsMutableBuilder[Self <: RecursiveVisitors[?], TState] (val x: Self & RecursiveVisitors[TState]) extends AnyVal {
       
       @scala.inline
       def setAnyTypeAnnotation(
@@ -9622,1146 +9620,1145 @@ object mod {
   type SimpleFunction[TKey /* <: String */, TState] = js.Function2[/* node */ NodeType[TKey], /* state */ TState, Unit]
   
   /* Inlined {[ key in keyof @babel/types.@babel/types.Aliases | @babel/types.@babel/types.Node['type'] ]:? babel-walk.babel-walk/lib.SimpleFunction<key, TState> | {  enter :babel-walk.babel-walk/lib.SimpleFunction<key, TState> | undefined,   exit :babel-walk.babel-walk/lib.SimpleFunction<key, TState> | undefined}} */
-  @js.native
   trait SimpleVisitors[TState] extends StObject {
     
     var AnyTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.AnyTypeAnnotation, TState]) | `72`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ArgumentPlaceholder: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ArgumentPlaceholder, TState]) | `271`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ArrayExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ArrayExpression, TState]) | `61`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ArrayPattern: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ArrayPattern, TState]) | `125`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ArrayTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ArrayTypeAnnotation, TState]) | `93`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ArrowFunctionExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ArrowFunctionExpression, TState]) | `167`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var AssignmentExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.AssignmentExpression, TState]) | `152`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var AssignmentPattern: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.AssignmentPattern, TState]) | `71`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var AwaitExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.AwaitExpression, TState]) | `123`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BigIntLiteral: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.BigIntLiteral, TState]) | `210`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Binary: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Binary, TState]) | `268`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BinaryExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.BinaryExpression, TState]) | `96`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BindExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.BindExpression, TState]) | `85`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Block: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Block, TState]) | `240`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BlockParent: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.BlockParent, TState]) | `8`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BlockStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.BlockStatement, TState]) | `25`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BooleanLiteral: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.BooleanLiteral, TState]) | `149`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BooleanLiteralTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.BooleanLiteralTypeAnnotation, TState]) | `203`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BooleanTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.BooleanTypeAnnotation, TState]) | `209`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var BreakStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.BreakStatement, TState]) | `0`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var CallExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.CallExpression, TState]) | `52`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var CatchClause: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.CatchClause, TState]) | `200`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Class: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Class, TState]) | `193`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassBody: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ClassBody, TState]) | `263`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ClassDeclaration, TState]) | `119`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ClassExpression, TState]) | Enter[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassImplements: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ClassImplements, TState]) | `245`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassMethod: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ClassMethod, TState]) | `216`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassPrivateMethod: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ClassPrivateMethod, TState]) | `266`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassPrivateProperty: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ClassPrivateProperty, TState]) | `261`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ClassProperty: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ClassProperty, TState]) | `221`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var CompletionStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.CompletionStatement, TState]) | `275`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Conditional: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Conditional, TState]) | `207`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ConditionalExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ConditionalExpression, TState]) | `192`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ContinueStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ContinueStatement, TState]) | `45`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DebuggerStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DebuggerStatement, TState]) | `158`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DecimalLiteral: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DecimalLiteral, TState]) | `238`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Declaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Declaration, TState]) | `174`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareClass: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DeclareClass, TState]) | `276`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareExportAllDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DeclareExportAllDeclaration, TState]) | `120`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareExportDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DeclareExportDeclaration, TState]) | `180`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareFunction: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DeclareFunction, TState]) | `113`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareInterface: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DeclareInterface, TState]) | `183`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareModule: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DeclareModule, TState]) | `39`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareModuleExports: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DeclareModuleExports, TState]) | `254`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareOpaqueType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DeclareOpaqueType, TState]) | `260`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareTypeAlias: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DeclareTypeAlias, TState]) | `189`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclareVariable: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DeclareVariable, TState]) | `208`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DeclaredPredicate: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DeclaredPredicate, TState]) | `215`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Decorator: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Decorator, TState]) | `89`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Directive: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Directive, TState]) | `70`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DirectiveLiteral: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DirectiveLiteral, TState]) | `164`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DoExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DoExpression, TState]) | `250`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var DoWhileStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.DoWhileStatement, TState]) | `230`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EmptyStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.EmptyStatement, TState]) | `118`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EmptyTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.EmptyTypeAnnotation, TState]) | `162`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumBody: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.EnumBody, TState]) | `280`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumBooleanBody: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.EnumBooleanBody, TState]) | `154`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumBooleanMember: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.EnumBooleanMember, TState]) | `127`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.EnumDeclaration, TState]) | `74`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumDefaultedMember: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.EnumDefaultedMember, TState]) | `220`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumMember: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.EnumMember, TState]) | `17`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumNumberBody: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.EnumNumberBody, TState]) | `272`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumNumberMember: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.EnumNumberMember, TState]) | `236`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumStringBody: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.EnumStringBody, TState]) | `185`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumStringMember: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.EnumStringMember, TState]) | `3`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var EnumSymbolBody: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.EnumSymbolBody, TState]) | `228`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExistsTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ExistsTypeAnnotation, TState]) | `129`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExportAllDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ExportAllDeclaration, TState]) | `42`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExportDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ExportDeclaration, TState]) | `63`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExportDefaultDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ExportDefaultDeclaration, TState]) | `87`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExportDefaultSpecifier: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ExportDefaultSpecifier, TState]) | `2`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExportNamedDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ExportNamedDeclaration, TState]) | `51`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExportNamespaceSpecifier: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ExportNamespaceSpecifier, TState]) | `204`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExportSpecifier: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ExportSpecifier, TState]) | `126`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Expression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Expression, TState]) | `201`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExpressionStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ExpressionStatement, TState]) | `69`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ExpressionWrapper: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ExpressionWrapper, TState]) | `211`[TState]
-      ] = js.native
+      ] = js.undefined
     
-    var File: js.UndefOr[(SimpleFunction[typings.babelWalk.babelWalkStrings.File, TState]) | `31`[TState]] = js.native
+    var File: js.UndefOr[(SimpleFunction[typings.babelWalk.babelWalkStrings.File, TState]) | `31`[TState]] = js.undefined
     
-    var Flow: js.UndefOr[(SimpleFunction[typings.babelWalk.babelWalkStrings.Flow, TState]) | `68`[TState]] = js.native
+    var Flow: js.UndefOr[(SimpleFunction[typings.babelWalk.babelWalkStrings.Flow, TState]) | `68`[TState]] = js.undefined
     
     var FlowBaseAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.FlowBaseAnnotation, TState]) | `155`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FlowDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.FlowDeclaration, TState]) | `274`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FlowPredicate: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.FlowPredicate, TState]) | `133`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FlowType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.FlowType, TState]) | `40`[TState]
-      ] = js.native
+      ] = js.undefined
     
-    var For: js.UndefOr[(SimpleFunction[typings.babelWalk.babelWalkStrings.For, TState]) | `156`[TState]] = js.native
+    var For: js.UndefOr[(SimpleFunction[typings.babelWalk.babelWalkStrings.For, TState]) | `156`[TState]] = js.undefined
     
     var ForInStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ForInStatement, TState]) | `16`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ForOfStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ForOfStatement, TState]) | `188`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ForStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ForStatement, TState]) | `217`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ForXStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ForXStatement, TState]) | `97`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Function: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Function, TState]) | `199`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.FunctionDeclaration, TState]) | `153`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.FunctionExpression, TState]) | `222`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionParent: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.FunctionParent, TState]) | `223`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.FunctionTypeAnnotation, TState]) | `46`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var FunctionTypeParam: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.FunctionTypeParam, TState]) | `259`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var GenericTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.GenericTypeAnnotation, TState]) | `279`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Identifier: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Identifier, TState]) | `107`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var IfStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.IfStatement, TState]) | `92`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Immutable: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Immutable, TState]) | `278`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Import: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Import, TState]) | `195`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ImportAttribute: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ImportAttribute, TState]) | `134`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ImportDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ImportDeclaration, TState]) | `277`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ImportDefaultSpecifier: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ImportDefaultSpecifier, TState]) | `19`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ImportNamespaceSpecifier: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ImportNamespaceSpecifier, TState]) | `233`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ImportSpecifier: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ImportSpecifier, TState]) | `124`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var InferredPredicate: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.InferredPredicate, TState]) | `151`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var InterfaceDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.InterfaceDeclaration, TState]) | `53`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var InterfaceExtends: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.InterfaceExtends, TState]) | `159`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var InterfaceTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.InterfaceTypeAnnotation, TState]) | `7`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var InterpreterDirective: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.InterpreterDirective, TState]) | `95`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var IntersectionTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.IntersectionTypeAnnotation, TState]) | `247`[TState]
-      ] = js.native
+      ] = js.undefined
     
-    var JSX: js.UndefOr[(SimpleFunction[typings.babelWalk.babelWalkStrings.JSX, TState]) | `30`[TState]] = js.native
+    var JSX: js.UndefOr[(SimpleFunction[typings.babelWalk.babelWalkStrings.JSX, TState]) | `30`[TState]] = js.undefined
     
     var JSXAttribute: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXAttribute, TState]) | `111`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXClosingElement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXClosingElement, TState]) | `144`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXClosingFragment: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXClosingFragment, TState]) | `244`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXElement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXElement, TState]) | `197`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXEmptyExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXEmptyExpression, TState]) | `137`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXExpressionContainer: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXExpressionContainer, TState]) | `36`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXFragment: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXFragment, TState]) | `171`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXIdentifier: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXIdentifier, TState]) | `94`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXMemberExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXMemberExpression, TState]) | `227`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXNamespacedName: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXNamespacedName, TState]) | `176`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXOpeningElement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXOpeningElement, TState]) | `80`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXOpeningFragment: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXOpeningFragment, TState]) | `251`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXSpreadAttribute: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXSpreadAttribute, TState]) | `54`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXSpreadChild: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXSpreadChild, TState]) | `79`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var JSXText: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.JSXText, TState]) | `225`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var LVal: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.LVal, TState]) | `175`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var LabeledStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.LabeledStatement, TState]) | `41`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Literal: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Literal, TState]) | `172`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var LogicalExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.LogicalExpression, TState]) | `76`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Loop: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Loop, TState]) | EnterExit[TState]
-      ] = js.native
+      ] = js.undefined
     
     var MemberExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.MemberExpression, TState]) | `66`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var MetaProperty: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.MetaProperty, TState]) | `90`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Method: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Method, TState]) | `135`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var MixedTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.MixedTypeAnnotation, TState]) | `62`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ModuleDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ModuleDeclaration, TState]) | `139`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ModuleSpecifier: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ModuleSpecifier, TState]) | `157`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var NewExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.NewExpression, TState]) | `65`[TState]
-      ] = js.native
+      ] = js.undefined
     
-    var Noop: js.UndefOr[(SimpleFunction[typings.babelWalk.babelWalkStrings.Noop, TState]) | `38`[TState]] = js.native
+    var Noop: js.UndefOr[(SimpleFunction[typings.babelWalk.babelWalkStrings.Noop, TState]) | `38`[TState]] = js.undefined
     
     var NullLiteral: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.NullLiteral, TState]) | `281`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var NullLiteralTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.NullLiteralTypeAnnotation, TState]) | `48`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var NullableTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.NullableTypeAnnotation, TState]) | `106`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var NumberLiteralTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.NumberLiteralTypeAnnotation, TState]) | `179`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var NumberTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.NumberTypeAnnotation, TState]) | `186`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var NumericLiteral: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.NumericLiteral, TState]) | `248`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ObjectExpression, TState]) | `136`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectMember: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ObjectMember, TState]) | `147`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectMethod: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ObjectMethod, TState]) | `138`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectPattern: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ObjectPattern, TState]) | `255`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectProperty: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ObjectProperty, TState]) | `165`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ObjectTypeAnnotation, TState]) | `91`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeCallProperty: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ObjectTypeCallProperty, TState]) | `12`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeIndexer: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ObjectTypeIndexer, TState]) | `198`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeInternalSlot: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ObjectTypeInternalSlot, TState]) | `264`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeProperty: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ObjectTypeProperty, TState]) | `181`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ObjectTypeSpreadProperty: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ObjectTypeSpreadProperty, TState]) | `88`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var OpaqueType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.OpaqueType, TState]) | `77`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var OptionalCallExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.OptionalCallExpression, TState]) | `50`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var OptionalMemberExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.OptionalMemberExpression, TState]) | `29`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ParenthesizedExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ParenthesizedExpression, TState]) | `235`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Pattern: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Pattern, TState]) | `26`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var PatternLike: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.PatternLike, TState]) | `114`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var PipelineBareFunction: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.PipelineBareFunction, TState]) | `184`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var PipelinePrimaryTopicReference: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.PipelinePrimaryTopicReference, TState]) | `35`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var PipelineTopicExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.PipelineTopicExpression, TState]) | `115`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Placeholder: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Placeholder, TState]) | `190`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Private: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Private, TState]) | `237`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var PrivateName: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.PrivateName, TState]) | `103`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Program: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Program, TState]) | `177`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Property: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Property, TState]) | `163`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Pureish: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Pureish, TState]) | `140`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var QualifiedTypeIdentifier: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.QualifiedTypeIdentifier, TState]) | `81`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var RecordExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.RecordExpression, TState]) | `67`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var RegExpLiteral: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.RegExpLiteral, TState]) | `43`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var RestElement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.RestElement, TState]) | `27`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ReturnStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ReturnStatement, TState]) | `4`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Scopable: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Scopable, TState]) | `117`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var SequenceExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.SequenceExpression, TState]) | `194`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var SpreadElement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.SpreadElement, TState]) | `23`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Statement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Statement, TState]) | `218`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var StaticBlock: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.StaticBlock, TState]) | `121`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var StringLiteral: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.StringLiteral, TState]) | `148`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var StringLiteralTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.StringLiteralTypeAnnotation, TState]) | `257`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var StringTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.StringTypeAnnotation, TState]) | `1`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Super: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Super, TState]) | `187`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var SwitchCase: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.SwitchCase, TState]) | `59`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var SwitchStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.SwitchStatement, TState]) | `49`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var SymbolTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.SymbolTypeAnnotation, TState]) | `55`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSAnyKeyword: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSAnyKeyword, TState]) | `9`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSArrayType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSArrayType, TState]) | Exit[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSAsExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSAsExpression, TState]) | `6`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSBaseType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSBaseType, TState]) | `231`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSBigIntKeyword: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSBigIntKeyword, TState]) | `58`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSBooleanKeyword: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSBooleanKeyword, TState]) | `256`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSCallSignatureDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSCallSignatureDeclaration, TState]) | `170`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSConditionalType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSConditionalType, TState]) | `18`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSConstructSignatureDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSConstructSignatureDeclaration, TState]) | `132`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSConstructorType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSConstructorType, TState]) | `246`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSDeclareFunction: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSDeclareFunction, TState]) | `232`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSDeclareMethod: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSDeclareMethod, TState]) | `83`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSEntityName: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSEntityName, TState]) | `146`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSEnumDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSEnumDeclaration, TState]) | `99`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSEnumMember: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSEnumMember, TState]) | `150`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSExportAssignment: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSExportAssignment, TState]) | `166`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSExpressionWithTypeArguments: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSExpressionWithTypeArguments, TState]) | `168`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSExternalModuleReference: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSExternalModuleReference, TState]) | `131`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSFunctionType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSFunctionType, TState]) | `47`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSImportEqualsDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSImportEqualsDeclaration, TState]) | `182`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSImportType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSImportType, TState]) | `273`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSIndexSignature: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSIndexSignature, TState]) | `239`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSIndexedAccessType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSIndexedAccessType, TState]) | `32`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSInferType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSInferType, TState]) | `112`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSInterfaceBody: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSInterfaceBody, TState]) | `5`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSInterfaceDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSInterfaceDeclaration, TState]) | `214`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSIntersectionType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSIntersectionType, TState]) | `270`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSIntrinsicKeyword: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSIntrinsicKeyword, TState]) | `73`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSLiteralType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSLiteralType, TState]) | `20`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSMappedType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSMappedType, TState]) | `143`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSMethodSignature: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSMethodSignature, TState]) | `234`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSModuleBlock: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSModuleBlock, TState]) | `262`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSModuleDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSModuleDeclaration, TState]) | `15`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSNamedTupleMember: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSNamedTupleMember, TState]) | `253`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSNamespaceExportDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSNamespaceExportDeclaration, TState]) | `98`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSNeverKeyword: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSNeverKeyword, TState]) | `269`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSNonNullExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSNonNullExpression, TState]) | `105`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSNullKeyword: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSNullKeyword, TState]) | `37`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSNumberKeyword: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSNumberKeyword, TState]) | `206`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSObjectKeyword: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSObjectKeyword, TState]) | `249`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSOptionalType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSOptionalType, TState]) | `212`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSParameterProperty: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSParameterProperty, TState]) | `226`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSParenthesizedType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSParenthesizedType, TState]) | `258`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSPropertySignature: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSPropertySignature, TState]) | `128`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSQualifiedName: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSQualifiedName, TState]) | `33`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSRestType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSRestType, TState]) | `243`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSStringKeyword: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSStringKeyword, TState]) | `110`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSSymbolKeyword: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSSymbolKeyword, TState]) | `142`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSThisType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSThisType, TState]) | `241`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTupleType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSTupleType, TState]) | `229`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSType, TState]) | `86`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeAliasDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSTypeAliasDeclaration, TState]) | `100`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSTypeAnnotation, TState]) | `122`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeAssertion: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSTypeAssertion, TState]) | `267`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeElement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSTypeElement, TState]) | `141`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeLiteral: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSTypeLiteral, TState]) | `178`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeOperator: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSTypeOperator, TState]) | `57`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeParameter: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSTypeParameter, TState]) | `102`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeParameterDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSTypeParameterDeclaration, TState]) | `21`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeParameterInstantiation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSTypeParameterInstantiation, TState]) | `82`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypePredicate: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSTypePredicate, TState]) | `213`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeQuery: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSTypeQuery, TState]) | `130`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSTypeReference: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSTypeReference, TState]) | `283`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSUndefinedKeyword: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSUndefinedKeyword, TState]) | `191`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSUnionType: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSUnionType, TState]) | `101`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSUnknownKeyword: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSUnknownKeyword, TState]) | `60`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TSVoidKeyword: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TSVoidKeyword, TState]) | `64`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TaggedTemplateExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TaggedTemplateExpression, TState]) | `78`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TemplateElement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TemplateElement, TState]) | `224`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TemplateLiteral: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TemplateLiteral, TState]) | `84`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Terminatorless: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Terminatorless, TState]) | `109`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ThisExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ThisExpression, TState]) | `265`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ThisTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ThisTypeAnnotation, TState]) | `56`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var ThrowStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.ThrowStatement, TState]) | `160`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TryStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TryStatement, TState]) | `24`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TupleExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TupleExpression, TState]) | `242`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TupleTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TupleTypeAnnotation, TState]) | `13`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TypeAlias: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TypeAlias, TState]) | `205`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TypeAnnotation, TState]) | `22`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TypeCastExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TypeCastExpression, TState]) | `10`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TypeParameter: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TypeParameter, TState]) | `196`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TypeParameterDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TypeParameterDeclaration, TState]) | `14`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TypeParameterInstantiation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TypeParameterInstantiation, TState]) | `282`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var TypeofTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.TypeofTypeAnnotation, TState]) | `169`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var UnaryExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.UnaryExpression, TState]) | `202`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var UnaryLike: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.UnaryLike, TState]) | `219`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var UnionTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.UnionTypeAnnotation, TState]) | `252`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var UpdateExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.UpdateExpression, TState]) | `108`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var UserWhitespacable: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.UserWhitespacable, TState]) | `34`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var V8IntrinsicIdentifier: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.V8IntrinsicIdentifier, TState]) | `161`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var VariableDeclaration: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.VariableDeclaration, TState]) | `75`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var VariableDeclarator: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.VariableDeclarator, TState]) | `145`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var Variance: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.Variance, TState]) | `173`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var VoidTypeAnnotation: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.VoidTypeAnnotation, TState]) | `116`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var While: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.While, TState]) | `28`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var WhileStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.WhileStatement, TState]) | `44`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var WithStatement: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.WithStatement, TState]) | `104`[TState]
-      ] = js.native
+      ] = js.undefined
     
     var YieldExpression: js.UndefOr[
         (SimpleFunction[typings.babelWalk.babelWalkStrings.YieldExpression, TState]) | `11`[TState]
-      ] = js.native
+      ] = js.undefined
   }
   object SimpleVisitors {
     
@@ -10772,7 +10769,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SimpleVisitorsMutableBuilder[Self <: SimpleVisitors[_], TState] (val x: Self with SimpleVisitors[TState]) extends AnyVal {
+    implicit class SimpleVisitorsMutableBuilder[Self <: SimpleVisitors[?], TState] (val x: Self & SimpleVisitors[TState]) extends AnyVal {
       
       @scala.inline
       def setAnyTypeAnnotation(value: (SimpleFunction[AnyTypeAnnotation, TState]) | `72`[TState]): Self = StObject.set(x, "AnyTypeAnnotation", value.asInstanceOf[js.Any])

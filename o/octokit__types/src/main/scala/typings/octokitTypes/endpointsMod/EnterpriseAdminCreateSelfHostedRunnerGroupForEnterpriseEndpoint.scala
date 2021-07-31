@@ -4,36 +4,34 @@ import typings.octokitTypes.octokitTypesStrings.all
 import typings.octokitTypes.octokitTypesStrings.selected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint extends StObject {
   
   /**
     * The slug version of the enterprise name. You can also substitute this value with the enterprise id.
     */
-  var enterprise: String = js.native
+  var enterprise: String
   
   /**
     * Name of the runner group.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * List of runner IDs to add to the runner group.
     */
-  var runners: js.UndefOr[js.Array[Double]] = js.native
+  var runners: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * List of organization IDs that can access the runner group.
     */
-  var selected_organization_ids: js.UndefOr[js.Array[Double]] = js.native
+  var selected_organization_ids: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Visibility of a runner group. You can select all organizations or select individual organization. Can be one of: `all` or `selected`
     */
-  var visibility: js.UndefOr[selected | all] = js.native
+  var visibility: js.UndefOr[selected | all] = js.undefined
 }
 object EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint {
   

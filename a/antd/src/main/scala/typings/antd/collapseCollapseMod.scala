@@ -8,7 +8,6 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collapseCollapseMod extends Shortcut {
@@ -18,38 +17,39 @@ object collapseCollapseMod extends Shortcut {
   val default: CollapseInterface = js.native
   
   @js.native
-  trait CollapseInterface extends FunctionComponent[CollapseProps] {
+  trait CollapseInterface
+    extends StObject
+       with FunctionComponent[CollapseProps] {
     
     var Panel: FC[CollapsePanelProps] = js.native
   }
   
-  @js.native
   trait CollapseProps extends StObject {
     
     /** 手风琴效果 */
-    var accordion: js.UndefOr[Boolean] = js.native
+    var accordion: js.UndefOr[Boolean] = js.undefined
     
-    var activeKey: js.UndefOr[(js.Array[String | Double]) | String | Double] = js.native
+    var activeKey: js.UndefOr[(js.Array[String | Double]) | String | Double] = js.undefined
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var defaultActiveKey: js.UndefOr[(js.Array[String | Double]) | String | Double] = js.native
+    var defaultActiveKey: js.UndefOr[(js.Array[String | Double]) | String | Double] = js.undefined
     
-    var destroyInactivePanel: js.UndefOr[Boolean] = js.native
+    var destroyInactivePanel: js.UndefOr[Boolean] = js.undefined
     
-    var expandIcon: js.UndefOr[js.Function1[/* panelProps */ PanelProps, ReactNode]] = js.native
+    var expandIcon: js.UndefOr[js.Function1[/* panelProps */ PanelProps, ReactNode]] = js.undefined
     
-    var expandIconPosition: js.UndefOr[ExpandIconPosition] = js.native
+    var expandIconPosition: js.UndefOr[ExpandIconPosition] = js.undefined
     
-    var ghost: js.UndefOr[Boolean] = js.native
+    var ghost: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* key */ String | js.Array[String], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* key */ String | js.Array[String], Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object CollapseProps {
     
@@ -145,28 +145,27 @@ object collapseCollapseMod extends Shortcut {
   /* Rewritten from type alias, can be one of: 
     - typings.antd.antdStrings.left
     - typings.antd.antdStrings.right
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
   */
   type ExpandIconPosition = js.UndefOr[_ExpandIconPosition]
   
-  @js.native
   trait PanelProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var header: js.UndefOr[ReactNode] = js.native
+    var header: js.UndefOr[ReactNode] = js.undefined
     
-    var isActive: js.UndefOr[Boolean] = js.native
+    var isActive: js.UndefOr[Boolean] = js.undefined
     
-    var showArrow: js.UndefOr[Boolean] = js.native
+    var showArrow: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object PanelProps {
     

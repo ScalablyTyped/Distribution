@@ -3,26 +3,25 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.venue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultVenue
-  extends InlineQueryResultLocationBase
+  extends StObject
+     with InlineQueryResultLocationBase
      with InlineQueryResult {
   
-  var address: String = js.native
+  var address: String
   
-  var foursquare_id: js.UndefOr[String] = js.native
+  var foursquare_id: js.UndefOr[String] = js.undefined
   
-  var `type`: venue = js.native
+  var `type`: venue
 }
 object InlineQueryResultVenue {
   
   @scala.inline
-  def apply(address: String, id: String, latitude: Double, longitude: Double, title: String, `type`: venue): InlineQueryResultVenue = {
+  def apply(address: String, id: String, latitude: Double, longitude: Double, title: String): InlineQueryResultVenue = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("venue")
     __obj.asInstanceOf[InlineQueryResultVenue]
   }
   

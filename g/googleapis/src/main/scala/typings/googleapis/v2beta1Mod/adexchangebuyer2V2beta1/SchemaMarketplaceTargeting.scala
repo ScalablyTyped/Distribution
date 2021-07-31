@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,34 +10,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * only if the user is in the US. Multiple types of targeting are always
   * applied as a logical AND, unless noted otherwise.
   */
-@js.native
 trait SchemaMarketplaceTargeting extends StObject {
   
   /**
     * Geo criteria IDs to be included/excluded.
     */
-  var geoTargeting: js.UndefOr[SchemaCriteriaTargeting] = js.native
+  var geoTargeting: js.UndefOr[SchemaCriteriaTargeting] = js.undefined
   
   /**
     * Inventory sizes to be included/excluded.
     */
-  var inventorySizeTargeting: js.UndefOr[SchemaInventorySizeTargeting] = js.native
+  var inventorySizeTargeting: js.UndefOr[SchemaInventorySizeTargeting] = js.undefined
   
   /**
     * Placement targeting information, e.g., URL, mobile applications.
     */
-  var placementTargeting: js.UndefOr[SchemaPlacementTargeting] = js.native
+  var placementTargeting: js.UndefOr[SchemaPlacementTargeting] = js.undefined
   
   /**
     * Technology targeting information, e.g., operating system, device
     * category.
     */
-  var technologyTargeting: js.UndefOr[SchemaTechnologyTargeting] = js.native
+  var technologyTargeting: js.UndefOr[SchemaTechnologyTargeting] = js.undefined
   
   /**
     * Video targeting information.
     */
-  var videoTargeting: js.UndefOr[SchemaVideoTargeting] = js.native
+  var videoTargeting: js.UndefOr[SchemaVideoTargeting] = js.undefined
 }
 object SchemaMarketplaceTargeting {
   

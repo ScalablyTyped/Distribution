@@ -3,31 +3,30 @@ package typings.extjs.Ext.form
 import typings.extjs.Ext.data.IModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
-- typings.extjs.Ext.form.IFieldAncestor because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined fieldDefaults, initFieldAncestor, onFieldErrorChange, onFieldValidityChange */ @js.native
-trait IPanel
-  extends typings.extjs.Ext.panel.IPanel {
+- typings.extjs.Ext.form.IFieldAncestor because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined fieldDefaults, initFieldAncestor, onFieldErrorChange, onFieldValidityChange */ trait IPanel
+  extends StObject
+     with typings.extjs.Ext.panel.IPanel {
   
   /** [Method] Forces each field within the form panel to check if its value has changed  */
-  var checkChange: js.UndefOr[js.Function0[Unit]] = js.native
+  var checkChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var fieldDefaults: js.UndefOr[js.Any] = js.native
+  var fieldDefaults: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Provides access to the Form which this Panel contains
     * @returns Ext.form.Basic The Form which this Panel contains.
     */
-  var getForm: js.UndefOr[js.Function0[IBasic]] = js.native
+  var getForm: js.UndefOr[js.Function0[IBasic]] = js.undefined
   
   /** [Method] Returns the currently loaded Ext data Model instance if one was loaded via loadRecord
     * @returns Ext.data.Model The loaded instance
     */
-  var getRecord: js.UndefOr[js.Function0[IModel]] = js.native
+  var getRecord: js.UndefOr[js.Function0[IModel]] = js.undefined
   
   /** [Method] Convenience function for fetching the current value of each field in the form
     * @param asString Boolean If true, will return the key/value collection as a single URL-encoded param string.
@@ -42,42 +41,42 @@ trait IPanel
       /* dirtyOnly */ js.UndefOr[Boolean], 
       /* includeEmptyText */ js.UndefOr[Boolean], 
       /* useDataValues */ js.UndefOr[Boolean], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Convenience function to check if the form has any invalid fields  */
-  var hasInvalidField: js.UndefOr[js.Function0[Unit]] = js.native
+  var hasInvalidField: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Initializes the FieldAncestor s state this must be called from the initComponent method of any components importing */
-  var initFieldAncestor: js.UndefOr[js.Function0[Unit]] = js.native
+  var initFieldAncestor: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Convenience function to check if the form has any dirty fields
     * @returns Boolean
     */
-  var isDirty: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isDirty: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Convenience function to check if the form has all valid fields
     * @returns Boolean
     */
-  var isValid: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isValid: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] This is a proxy for the underlying BasicForm s Ext form Basic load call
     * @param options Object The options to pass to the action (see Ext.form.Basic.load and Ext.form.Basic.doAction for details)
     */
-  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
+  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Loads an Ext data Model into this form internally just calls Ext form Basic loadRecord See also trackResetOnLoad
     * @param record Ext.data.Model The record to load
     * @returns Ext.form.Basic The Ext.form.Basic attached to this FormPanel
     */
-  var loadRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], IBasic]] = js.native
+  var loadRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], IBasic]] = js.undefined
   
   /** [Method] Fired when the error message of any field within the container changes
     * @param field Ext.form.Labelable The sub-field whose active error changed
     * @param error String The new active error message
     */
-  var onFieldErrorChange: js.UndefOr[js.Function2[js.UndefOr[ILabelable], js.UndefOr[String], Unit]] = js.native
+  var onFieldErrorChange: js.UndefOr[js.Function2[js.UndefOr[ILabelable], js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Fired when the validity of any field within the container changes
     * @param field Ext.form.field.Field The sub-field whose validity changed
@@ -85,32 +84,32 @@ trait IPanel
     */
   var onFieldValidityChange: js.UndefOr[
     js.Function2[js.UndefOr[typings.extjs.Ext.form.field.IField], js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var pollForChanges: js.UndefOr[Boolean] = js.native
+  var pollForChanges: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var pollInterval: js.UndefOr[Double] = js.native
+  var pollInterval: js.UndefOr[Double] = js.undefined
   
   /** [Method] Start an interval task to continuously poll all the fields in the form for changes in their values
     * @param interval Number The interval in milliseconds at which the check should run.
     */
-  var startPolling: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.native
+  var startPolling: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Stop a running interval task that was started by startPolling  */
-  var stopPolling: js.UndefOr[js.Function0[Unit]] = js.native
+  var stopPolling: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] This is a proxy for the underlying BasicForm s Ext form Basic submit call
     * @param options Object The options to pass to the action (see Ext.form.Basic.submit and Ext.form.Basic.doAction for details)
     */
-  var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
+  var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Persists the values in this form into the passed Ext data Model object in a beginEdit endEdit block
     * @param record Ext.data.Model The record to edit
     * @returns Ext.form.Basic The Ext.form.Basic attached to this FormPanel
     */
-  var updateRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], IBasic]] = js.native
+  var updateRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], IBasic]] = js.undefined
 }
 object IPanel {
   
@@ -149,7 +148,7 @@ object IPanel {
     
     @scala.inline
     def setGetValues(
-      value: (/* asString */ js.UndefOr[Boolean], /* dirtyOnly */ js.UndefOr[Boolean], /* includeEmptyText */ js.UndefOr[Boolean], /* useDataValues */ js.UndefOr[Boolean]) => _
+      value: (/* asString */ js.UndefOr[Boolean], /* dirtyOnly */ js.UndefOr[Boolean], /* includeEmptyText */ js.UndefOr[Boolean], /* useDataValues */ js.UndefOr[Boolean]) => js.Any
     ): Self = StObject.set(x, "getValues", js.Any.fromFunction4(value))
     
     @scala.inline

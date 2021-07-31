@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.protocolProxyApiMod.ProtocolProxyApi
 import typings.devtoolsProtocol.mod.Protocol.Schema.GetDomainsResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaApi extends StObject {
   
   /**
     * Returns supported domains.
     */
-  def getDomains(): js.Promise[GetDomainsResponse] = js.native
+  def getDomains(): js.Promise[GetDomainsResponse]
 }
 object SchemaApi {
   

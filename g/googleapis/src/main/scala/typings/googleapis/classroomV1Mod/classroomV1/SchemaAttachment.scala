@@ -2,35 +2,33 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Attachment added to student assignment work.  When creating attachments,
   * setting the `form` field is not supported.
   */
-@js.native
 trait SchemaAttachment extends StObject {
   
   /**
     * Google Drive file attachment.
     */
-  var driveFile: js.UndefOr[SchemaDriveFile] = js.native
+  var driveFile: js.UndefOr[SchemaDriveFile] = js.undefined
   
   /**
     * Google Forms attachment.
     */
-  var form: js.UndefOr[SchemaForm] = js.native
+  var form: js.UndefOr[SchemaForm] = js.undefined
   
   /**
     * Link attachment.
     */
-  var link: js.UndefOr[SchemaLink] = js.native
+  var link: js.UndefOr[SchemaLink] = js.undefined
   
   /**
     * Youtube video attachment.
     */
-  var youTubeVideo: js.UndefOr[SchemaYouTubeVideo] = js.native
+  var youTubeVideo: js.UndefOr[SchemaYouTubeVideo] = js.undefined
 }
 object SchemaAttachment {
   

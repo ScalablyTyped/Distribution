@@ -2,10 +2,13 @@ package typings.symphonyApiClientNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object presenceClientMod {
+  
+  @JSImport("symphony-api-client-node/PresenceClient", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("symphony-api-client-node/PresenceClient", "STATUS_AVAILABLE")
   @js.native
@@ -39,26 +42,22 @@ object presenceClientMod {
   @js.native
   val STATUS_OUT_OF_OFFICE: String = js.native
   
-  @JSImport("symphony-api-client-node/PresenceClient", "getUserPresence")
-  @js.native
-  def getUserPresence(userId: Double, local: Boolean): Unit = js.native
+  @scala.inline
+  def getUserPresence(userId: Double, local: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserPresence")(userId.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("symphony-api-client-node/PresenceClient", "registerInterestExtUser")
-  @js.native
-  def registerInterestExtUser(userIds: js.Array[Double]): Unit = js.native
+  @scala.inline
+  def registerInterestExtUser(userIds: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerInterestExtUser")(userIds.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("symphony-api-client-node/PresenceClient", "setPresence")
-  @js.native
-  def setPresence(status: String): js.Promise[UserPresenceResponse] = js.native
+  @scala.inline
+  def setPresence(status: String): js.Promise[UserPresenceResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("setPresence")(status.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UserPresenceResponse]]
   
-  @js.native
   trait UserPresenceResponse extends StObject {
     
-    var category: String = js.native
+    var category: String
     
-    var timestamp: Double = js.native
+    var timestamp: Double
     
-    var userId: Double = js.native
+    var userId: Double
   }
   object UserPresenceResponse {
     

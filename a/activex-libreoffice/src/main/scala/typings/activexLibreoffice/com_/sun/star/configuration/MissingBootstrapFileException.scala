@@ -4,14 +4,14 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is thrown when creating a configuration provider fails because a bootstrap file needed to locate the configuration is missing */
-@js.native
-trait MissingBootstrapFileException extends Exception {
+trait MissingBootstrapFileException
+  extends StObject
+     with Exception {
   
-  var BootstrapFileURL: String = js.native
+  var BootstrapFileURL: String
 }
 object MissingBootstrapFileException {
   

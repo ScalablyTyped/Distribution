@@ -2,19 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Events
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsScriptHttpRequestEventPostData extends StObject {
   
-  var contents: String = js.native
+  var contents: String
   
-  var length: Double = js.native
+  var length: Double
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object AppsScriptHttpRequestEventPostData {
   

@@ -3,21 +3,21 @@ package typings.chromeApps.chrome.runtime
 import typings.chromeApps.chromeAppsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AutomationDesktop extends _AutomationOptions {
+trait AutomationDesktop
+  extends StObject
+     with _AutomationOptions {
   
-  var desktop: `true` = js.native
+  var desktop: `true`
   
-  var interact: js.UndefOr[`true`] = js.native
+  var interact: js.UndefOr[`true`] = js.undefined
 }
 object AutomationDesktop {
   
   @scala.inline
-  def apply(desktop: `true`): AutomationDesktop = {
-    val __obj = js.Dynamic.literal(desktop = desktop.asInstanceOf[js.Any])
+  def apply(): AutomationDesktop = {
+    val __obj = js.Dynamic.literal(desktop = true)
     __obj.asInstanceOf[AutomationDesktop]
   }
   

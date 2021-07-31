@@ -2,35 +2,33 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Services extends StObject {
   
   /**
     * Reserved: TBD
     */
-  var buildBranch: js.UndefOr[String] = js.native
+  var buildBranch: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var buildBranchDeployedDateTime: js.UndefOr[String] = js.native
+  var buildBranchDeployedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var buildSHA: js.UndefOr[String] = js.native
+  var buildSHA: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var buildVersion: js.UndefOr[String] = js.native
+  var buildVersion: js.UndefOr[String] = js.undefined
   
-  var linkedSites: js.UndefOr[js.Array[String]] = js.native
+  var linkedSites: js.UndefOr[js.Array[String]] = js.undefined
   
-  var serviceVersions: js.UndefOr[js.Array[ServiceVersion]] = js.native
+  var serviceVersions: js.UndefOr[js.Array[ServiceVersion]] = js.undefined
 }
 object Services {
   

@@ -1,6 +1,6 @@
 package typings.proj4leaflet
 
-import typings.geojson.mod.BBox
+import typings.geojson.mod.Feature
 import typings.geojson.mod.GeoJsonObject
 import typings.geojson.mod.GeoJsonProperties
 import typings.geojson.mod.GeometryObject
@@ -8,14 +8,17 @@ import typings.leaflet.mod.Bounds_
 import typings.leaflet.mod.GeoJSONOptions
 import typings.leaflet.mod.ImageOverlayOptions
 import typings.leaflet.mod.LatLngBoundsExpression
+import typings.leaflet.mod.LatLngExpression
+import typings.leaflet.mod.LatLngLiteral
+import typings.leaflet.mod.LatLng_
+import typings.leaflet.mod.PointExpression
+import typings.leaflet.mod.Point_
 import typings.leaflet.mod.Projection
 import typings.leaflet.mod.Transformation
 import typings.proj4.mod.InterfaceProjection
 import typings.proj4leaflet.anon.Properties
-import typings.proj4leaflet.proj4leafletStrings.Feature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,18 +28,49 @@ object mod {
     
     object Proj {
       
+      @JSImport("leaflet", "Proj")
+      @js.native
+      val ^ : js.Any = js.native
+      
       @JSImport("leaflet", "Proj.CRS")
       @js.native
-      class CRS protected ()
-        extends typings.leaflet.mod.CRS {
+      class CRS protected () extends StObject {
         def this(projection: InterfaceProjection) = this()
         def this(code: String, proj4def: String) = this()
         def this(projection: InterfaceProjection, options: ProjCRSOptions) = this()
         def this(code: String, proj4def: String, options: ProjCRSOptions) = this()
         
+        var code: js.UndefOr[String] = js.native
+        
+        def distance(latlng1: LatLngExpression, latlng2: LatLngExpression): Double = js.native
+        
+        def getProjectedBounds(zoom: Double): Bounds_ = js.native
+        
+        var infinite: Boolean = js.native
+        
+        def latLngToPoint(latlng: LatLngExpression, zoom: Double): Point_ = js.native
+        
+        def pointToLatLng(point: PointExpression, zoom: Double): LatLng_ = js.native
+        
+        def project(latlng: LatLngLiteral): Point_ = js.native
+        def project(latlng: LatLng_): Point_ = js.native
+        
         var projection: Projection = js.native
         
+        def scale(zoom: Double): Double = js.native
+        
         var transformation: Transformation = js.native
+        
+        def unproject(point: PointExpression): LatLng_ = js.native
+        
+        var wrapLat: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+        
+        def wrapLatLng(latlng: LatLngLiteral): LatLng_ = js.native
+        def wrapLatLng(latlng: LatLng_): LatLng_ = js.native
+        
+        var wrapLng: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+        
+        def zoom(scale: Double): Double = js.native
       }
       
       @JSImport("leaflet", "Proj.GeoJSON")
@@ -44,8 +78,8 @@ object mod {
       class GeoJSON_ ()
         extends typings.leaflet.mod.GeoJSON_[js.Any] {
         def this(geojson: GeoJsonObject) = this()
-        def this(geojson: js.UndefOr[scala.Nothing], options: GeoJSONOptions[_]) = this()
-        def this(geojson: GeoJsonObject, options: GeoJSONOptions[_]) = this()
+        def this(geojson: Unit, options: GeoJSONOptions[js.Any]) = this()
+        def this(geojson: GeoJsonObject, options: GeoJSONOptions[js.Any]) = this()
       }
       
       @JSImport("leaflet", "Proj.ImageOverlay")
@@ -56,38 +90,31 @@ object mod {
         def this(imageUrl: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions) = this()
       }
       
-      @JSImport("leaflet", "Proj.geoJson")
-      @js.native
-      def geoJson(): GeoJSON_ = js.native
-      @JSImport("leaflet", "Proj.geoJson")
-      @js.native
-      def geoJson(geojson: js.UndefOr[scala.Nothing], options: GeoJSONOptions[_]): GeoJSON_ = js.native
-      @JSImport("leaflet", "Proj.geoJson")
-      @js.native
-      def geoJson(geojson: Proj4GeoJSONFeature): GeoJSON_ = js.native
-      @JSImport("leaflet", "Proj.geoJson")
-      @js.native
-      def geoJson(geojson: Proj4GeoJSONFeature, options: GeoJSONOptions[_]): GeoJSON_ = js.native
+      @scala.inline
+      def geoJson(): GeoJSON_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")().asInstanceOf[GeoJSON_]
+      @scala.inline
+      def geoJson(geojson: Unit, options: GeoJSONOptions[js.Any]): GeoJSON_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON_]
+      @scala.inline
+      def geoJson(geojson: Proj4GeoJSONFeature): GeoJSON_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any]).asInstanceOf[GeoJSON_]
+      @scala.inline
+      def geoJson(geojson: Proj4GeoJSONFeature, options: GeoJSONOptions[js.Any]): GeoJSON_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON_]
       
-      @JSImport("leaflet", "Proj.imageOverlay")
-      @js.native
-      def imageOverlay(imageUrl: String, bounds: LatLngBoundsExpression): ImageOverlay_ = js.native
-      @JSImport("leaflet", "Proj.imageOverlay")
-      @js.native
-      def imageOverlay(imageUrl: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): ImageOverlay_ = js.native
+      @scala.inline
+      def imageOverlay(imageUrl: String, bounds: LatLngBoundsExpression): ImageOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("imageOverlay")(imageUrl.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[ImageOverlay_]
+      @scala.inline
+      def imageOverlay(imageUrl: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): ImageOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("imageOverlay")(imageUrl.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ImageOverlay_]
       
-      @js.native
       trait ProjCRSOptions extends StObject {
         
-        var bounds: js.UndefOr[Bounds_] = js.native
+        var bounds: js.UndefOr[Bounds_] = js.undefined
         
-        var origin: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+        var origin: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
         
-        var resolutions: js.UndefOr[js.Array[Double]] = js.native
+        var resolutions: js.UndefOr[js.Array[Double]] = js.undefined
         
-        var scales: js.UndefOr[js.Array[Double]] = js.native
+        var scales: js.UndefOr[js.Array[Double]] = js.undefined
         
-        var transformation: js.UndefOr[Transformation] = js.native
+        var transformation: js.UndefOr[Transformation] = js.undefined
       }
       object ProjCRSOptions {
         
@@ -140,46 +167,18 @@ object mod {
     }
   }
   
-  /* Inlined geojson.geojson.Feature<geojson.geojson.GeometryObject, geojson.geojson.GeoJsonProperties> & {  crs :{  type :string,   properties :{  name :string}} | undefined} */
-  @js.native
-  trait Proj4GeoJSONFeature extends StObject {
+  trait Proj4GeoJSONFeature
+    extends StObject
+       with Feature[GeometryObject, GeoJsonProperties] {
     
-    /**
-      * Bounding box of the coordinate range of the object's Geometries, Features, or Feature Collections.
-      * The value of the bbox member is an array of length 2*n where n is the number of dimensions
-      * represented in the contained geometries, with all axes of the most southwesterly point
-      * followed by all axes of the more northeasterly point.
-      * The axes order of a bbox follows the axes order of geometries.
-      * https://tools.ietf.org/html/rfc7946#section-5
-      */
-    var bbox: js.UndefOr[BBox] = js.native
-    
-    var crs: js.UndefOr[Properties] = js.native
-    
-    /**
-      * The feature's geometry
-      */
-    var geometry: GeometryObject = js.native
-    
-    /**
-      * A value that uniquely identifies this feature in a
-      * https://tools.ietf.org/html/rfc7946#section-3.2.
-      */
-    var id: js.UndefOr[String | Double] = js.native
-    
-    /**
-      * Properties associated with this feature.
-      */
-    var properties: GeoJsonProperties = js.native
-    
-    var `type`: Feature = js.native
+    var crs: js.UndefOr[Properties] = js.undefined
   }
   object Proj4GeoJSONFeature {
     
     @scala.inline
-    def apply(geometry: GeometryObject, `type`: Feature): Proj4GeoJSONFeature = {
-      val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(geometry: GeometryObject): Proj4GeoJSONFeature = {
+      val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = null)
+      __obj.updateDynamic("type")("Feature")
       __obj.asInstanceOf[Proj4GeoJSONFeature]
     }
     
@@ -187,34 +186,10 @@ object mod {
     implicit class Proj4GeoJSONFeatureMutableBuilder[Self <: Proj4GeoJSONFeature] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBbox(value: BBox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
-      
-      @scala.inline
       def setCrs(value: Properties): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCrsUndefined: Self = StObject.set(x, "crs", js.undefined)
-      
-      @scala.inline
-      def setGeometry(value: GeometryObject): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-      
-      @scala.inline
-      def setProperties(value: GeoJsonProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPropertiesNull: Self = StObject.set(x, "properties", null)
-      
-      @scala.inline
-      def setType(value: Feature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

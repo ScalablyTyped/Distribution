@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesIncludeEmailAddress extends StObject {
   
-  var enumValues: IncludeEmailAddress = js.native
+  var enumValues: IncludeEmailAddress
 }
 object EnumValuesIncludeEmailAddress {
   

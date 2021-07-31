@@ -2,13 +2,11 @@ package typings.vegaTypings.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Role extends StObject {
   
-  var role: String = js.native
+  var role: String
 }
 object Role {
   

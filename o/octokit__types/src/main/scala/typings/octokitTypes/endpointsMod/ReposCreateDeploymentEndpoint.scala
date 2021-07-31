@@ -2,62 +2,60 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCreateDeploymentEndpoint extends StObject {
   
   /**
     * Attempts to automatically merge the default branch into the requested ref, if it's behind the default branch.
     */
-  var auto_merge: js.UndefOr[Boolean] = js.native
+  var auto_merge: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Short description of the deployment.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Name for the target deployment environment (e.g., `production`, `staging`, `qa`).
     */
-  var environment: js.UndefOr[String] = js.native
+  var environment: js.UndefOr[String] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * JSON payload with extra information about the deployment.
     */
-  var payload: js.UndefOr[js.Any] = js.native
+  var payload: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Specifies if the given environment is one that end-users directly interact with. Default: `true` when `environment` is `production` and `false` otherwise.
     * **Note:** This parameter requires you to use the [`application/vnd.github.ant-man-preview+json`](https://developer.github.com/v3/previews/#enhanced-deployments) custom media type.
     */
-  var production_environment: js.UndefOr[Boolean] = js.native
+  var production_environment: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ref to deploy. This can be a branch, tag, or SHA.
     */
-  var ref: String = js.native
+  var ref: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * The [status](https://developer.github.com/v3/repos/statuses/) contexts to verify against commit status checks. If you omit this parameter, GitHub verifies all unique contexts before creating a deployment. To bypass checking entirely, pass an empty array. Defaults to all unique contexts.
     */
-  var required_contexts: js.UndefOr[js.Array[String]] = js.native
+  var required_contexts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies a task to execute (e.g., `deploy` or `deploy:migrations`).
     */
-  var task: js.UndefOr[String] = js.native
+  var task: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies if the given environment is specific to the deployment and will no longer exist at some point in the future. Default: `false`
     * **Note:** This parameter requires you to use the [`application/vnd.github.ant-man-preview+json`](https://developer.github.com/v3/previews/#enhanced-deployments) custom media type. **Note:** This parameter requires you to use the [`application/vnd.github.ant-man-preview+json`](https://developer.github.com/v3/previews/#enhanced-deployments) custom media type.
     */
-  var transient_environment: js.UndefOr[Boolean] = js.native
+  var transient_environment: js.UndefOr[Boolean] = js.undefined
 }
 object ReposCreateDeploymentEndpoint {
   

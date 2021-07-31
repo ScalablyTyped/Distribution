@@ -10,9 +10,9 @@ Javascript natural sort algorithm with unicode support.
 | ------------------ | :-------------: |
 | Full name          | natsort |
 | Keywords           | natural, natsort, sort, sorter, numeric, unicode, algorithm, date, datetime, desc, case-insensitive |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 252944 |
+| # downloads        | 251023 |
 | # stars            | 1 |
 
 ## Links

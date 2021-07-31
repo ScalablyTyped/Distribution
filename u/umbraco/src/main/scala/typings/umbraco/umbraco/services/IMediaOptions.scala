@@ -2,18 +2,16 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Media options
   */
-@js.native
 trait IMediaOptions extends StObject {
   
-  var imageOnly: Boolean = js.native
+  var imageOnly: Boolean
   
-  var mediaModel: IMediaModel = js.native
+  var mediaModel: IMediaModel
 }
 object IMediaOptions {
   

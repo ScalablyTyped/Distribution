@@ -2,16 +2,17 @@ package typings.reactBootstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propTypesMod {
   
-  @JSImport("react-bootstrap/lib/utils/PropTypes", "exclusiveRoles")
+  @JSImport("react-bootstrap/lib/utils/PropTypes", JSImport.Namespace)
   @js.native
-  def exclusiveRoles(roles: js.Any*): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-bootstrap/lib/utils/PropTypes", "requiredRoles")
-  @js.native
-  def requiredRoles(roles: js.Any*): js.Any = js.native
+  @scala.inline
+  def exclusiveRoles(roles: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("exclusiveRoles")(roles.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def requiredRoles(roles: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredRoles")(roles.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

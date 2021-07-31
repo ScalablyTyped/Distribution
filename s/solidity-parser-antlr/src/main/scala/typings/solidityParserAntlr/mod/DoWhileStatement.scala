@@ -2,32 +2,27 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoWhileStatement
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode
      with Statement {
   
-  var body: Statement = js.native
+  var body: Statement
   
-  var condition: Expression = js.native
+  var condition: Expression
   
   @JSName("type")
-  var type_DoWhileStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.DoWhileStatement = js.native
+  var type_DoWhileStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.DoWhileStatement
 }
 object DoWhileStatement {
   
   @scala.inline
-  def apply(
-    body: Statement,
-    condition: Expression,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.DoWhileStatement
-  ): DoWhileStatement = {
+  def apply(body: Statement, condition: Expression): DoWhileStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DoWhileStatement")
     __obj.asInstanceOf[DoWhileStatement]
   }
   

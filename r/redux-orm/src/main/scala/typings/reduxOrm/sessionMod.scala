@@ -16,7 +16,6 @@ import typings.std.Extract
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionMod {
@@ -24,12 +23,14 @@ object sessionMod {
   @JSImport("redux-orm/Session", JSImport.Default)
   @js.native
   class default[I /* <: IndexedModelClasses[
-    _, 
+    js.Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
     ]
-  ] */] protected () extends Session[I] {
+  ] */] protected ()
+    extends StObject
+       with Session[I] {
     /**
       * Creates a new Session.
       *
@@ -47,7 +48,7 @@ object sessionMod {
             I, 
             /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.default with TopLevel[I]
+      */ typings.reduxOrm.reduxOrmStrings.default & TopLevel[I]
           ],
       state: OrmState[I]
     ) = this()
@@ -57,7 +58,7 @@ object sessionMod {
             I, 
             /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.default with TopLevel[I]
+      */ typings.reduxOrm.reduxOrmStrings.default & TopLevel[I]
           ],
       state: OrmState[I],
       withMutations: Boolean
@@ -68,10 +69,10 @@ object sessionMod {
             I, 
             /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.default with TopLevel[I]
+      */ typings.reduxOrm.reduxOrmStrings.default & TopLevel[I]
           ],
       state: OrmState[I],
-      withMutations: js.UndefOr[scala.Nothing],
+      withMutations: Boolean,
       batchToken: BatchToken
     ) = this()
     def this(
@@ -80,18 +81,68 @@ object sessionMod {
             I, 
             /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.default with TopLevel[I]
+      */ typings.reduxOrm.reduxOrmStrings.default & TopLevel[I]
           ],
       state: OrmState[I],
-      withMutations: Boolean,
+      withMutations: Unit,
       batchToken: BatchToken
     ) = this()
+    
+    /**
+      * Applies update to a model state.
+      *
+      * @param  update - the update command object.
+      *
+      * @returns query result.
+      *
+      * @see {@link DbAction}
+      * @see {@link UpdateSpec}
+      * @see {@link DbActionResult}
+      * @see {@link UpdateResult}
+      */
+    /* CompleteClass */
+    override def applyUpdate[P](update: UpdateSpec[P]): P = js.native
+    
+    /**
+      * Executes query against model state.
+      *
+      * @param query - the query command object.
+      *
+      * @returns query result.
+      *
+      * @see {@link QueryType}
+      * @see {@link QueryClause}
+      * @see {@link QuerySpec}
+      * @see {@link QueryResult}
+      */
+    /* CompleteClass */
+    override def query(query: QuerySpec): QueryResult[js.Object] = js.native
+    
+    /**
+      * list of bound {@link Model} classes bound to this session, bootstrapped during {@link @ORM.register}.
+      *
+      * @see {@link ModelType}
+      */
+    /* CompleteClass */
+    override val sessionBoundModels: js.Array[
+        ModelType[
+          InstanceType[
+            /* import warning: importer.ImportType#apply Failed type conversion: I[keyof I] */ js.Any
+          ]
+        ]
+      ] = js.native
+    
+    /**
+      * Current {@link OrmState}, specific to registered schema
+      */
+    /* CompleteClass */
+    override val state: OrmState[I] = js.native
   }
   
   type BatchToken = js.Any
   
   type OrmSession[I /* <: IndexedModelClasses[
-    _, 
+    js.Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -100,28 +151,27 @@ object sessionMod {
     Session[I], 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof I ]: redux-orm.redux-orm/Model.ModelType<std.InstanceType<I[K]>>}
-    */ typings.reduxOrm.reduxOrmStrings.OrmSession with TopLevel[I], 
+    */ typings.reduxOrm.reduxOrmStrings.OrmSession & TopLevel[I], 
     (Diff[
       Session[I], 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof I ]: redux-orm.redux-orm/Model.ModelType<std.InstanceType<I[K]>>}
-    */ typings.reduxOrm.reduxOrmStrings.OrmSession with TopLevel[I]
-    ]) with (Intersection[
+    */ typings.reduxOrm.reduxOrmStrings.OrmSession & TopLevel[I]
+    ]) & (Intersection[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof I ]: redux-orm.redux-orm/Model.ModelType<std.InstanceType<I[K]>>}
-    */ typings.reduxOrm.reduxOrmStrings.OrmSession with TopLevel[I], 
+    */ typings.reduxOrm.reduxOrmStrings.OrmSession & TopLevel[I], 
       Session[I]
-    ]) with (Diff[
+    ]) & (Diff[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof I ]: redux-orm.redux-orm/Model.ModelType<std.InstanceType<I[K]>>}
-    */ typings.reduxOrm.reduxOrmStrings.OrmSession with TopLevel[I], 
+    */ typings.reduxOrm.reduxOrmStrings.OrmSession & TopLevel[I], 
       Session[I]
     ])
   ]
   
-  @js.native
   trait Session[I /* <: IndexedModelClasses[
-    _, 
+    js.Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -140,7 +190,7 @@ object sessionMod {
       * @see {@link DbActionResult}
       * @see {@link UpdateResult}
       */
-    def applyUpdate[P](update: UpdateSpec[P]): P = js.native
+    def applyUpdate[P](update: UpdateSpec[P]): P
     
     /**
       * Executes query against model state.
@@ -154,7 +204,7 @@ object sessionMod {
       * @see {@link QuerySpec}
       * @see {@link QueryResult}
       */
-    def query(query: QuerySpec): QueryResult[js.Object] = js.native
+    def query(query: QuerySpec): QueryResult[js.Object]
     
     /**
       * list of bound {@link Model} classes bound to this session, bootstrapped during {@link @ORM.register}.
@@ -167,18 +217,18 @@ object sessionMod {
             /* import warning: importer.ImportType#apply Failed type conversion: I[keyof I] */ js.Any
           ]
         ]
-      ] = js.native
+      ]
     
     /**
       * Current {@link OrmState}, specific to registered schema
       */
-    val state: OrmState[I] = js.native
+    val state: OrmState[I]
   }
   object Session {
     
     @scala.inline
     def apply[I /* <: IndexedModelClasses[
-        _, 
+        js.Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -200,13 +250,13 @@ object sessionMod {
     }
     
     @scala.inline
-    implicit class SessionMutableBuilder[Self <: Session[_], I /* <: IndexedModelClasses[
-        _, 
+    implicit class SessionMutableBuilder[Self <: Session[?], I /* <: IndexedModelClasses[
+        js.Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
-      ] */] (val x: Self with Session[I]) extends AnyVal {
+      ] */] (val x: Self & Session[I]) extends AnyVal {
       
       @scala.inline
       def setApplyUpdate(value: UpdateSpec[js.Any] => js.Any): Self = StObject.set(x, "applyUpdate", js.Any.fromFunction1(value))

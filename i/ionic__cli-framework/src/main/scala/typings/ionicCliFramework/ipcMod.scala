@@ -7,7 +7,6 @@ import typings.node.processMod.global.NodeJS.Process
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ipcMod {
@@ -19,7 +18,7 @@ object ipcMod {
     
     val args: js.Array[String] = js.native
     
-    def call[R /* <: RPCResponse[_, js.Object] */](
+    def call[R /* <: RPCResponse[js.Any, js.Object] */](
       procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any,
       args: /* import warning: importer.ImportType#apply Failed type conversion: R['request']['args'] */ js.Any
     ): js.Promise[
@@ -30,7 +29,7 @@ object ipcMod {
     
     val modulePath: String = js.native
     
-    def register[R /* <: RPCResponse[_, js.Object] */](
+    def register[R /* <: RPCResponse[js.Any, js.Object] */](
       procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any,
       fn: js.Function1[
           /* import warning: importer.ImportType#apply Failed type conversion: R['request']['args'] */ /* args */ js.Any, 
@@ -50,7 +49,7 @@ object ipcMod {
   class RPCProcess () extends StObject {
     def this(hasNameTimeout: RPCProcessOptions) = this()
     
-    def call[R /* <: RPCResponse[_, js.Object] */](
+    def call[R /* <: RPCResponse[js.Any, js.Object] */](
       procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any,
       args: /* import warning: importer.ImportType#apply Failed type conversion: R['request']['args'] */ js.Any
     ): js.Promise[
@@ -63,7 +62,7 @@ object ipcMod {
     
     var proc: js.UndefOr[ChildProcess] = js.native
     
-    def register[R /* <: RPCResponse[_, js.Object] */](
+    def register[R /* <: RPCResponse[js.Any, js.Object] */](
       procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any,
       fn: js.Function1[
           /* import warning: importer.ImportType#apply Failed type conversion: R['request']['args'] */ /* args */ js.Any, 
@@ -73,7 +72,7 @@ object ipcMod {
         ]
     ): Unit = js.native
     
-    var responseProcedures: Map[String, js.Function1[/* args */ js.Array[_], js.Promise[_]]] = js.native
+    var responseProcedures: Map[String, js.Function1[/* args */ js.Array[js.Any], js.Promise[js.Any]]] = js.native
     
     def start(proc: ChildProcess): Unit = js.native
     def start(proc: Process): Unit = js.native
@@ -81,14 +80,13 @@ object ipcMod {
     val timeout: Double = js.native
   }
   
-  type RPC[P /* <: String */, A /* <: js.Array[_] */, D /* <: js.Object */] = RPCResponse[RPCRequest[P, A], D]
+  type RPC[P /* <: String */, A /* <: js.Array[js.Any] */, D /* <: js.Object */] = RPCResponse[RPCRequest[P, A], D]
   
-  @js.native
   trait RPCProcessOptions extends StObject {
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
   }
   object RPCProcessOptions {
     
@@ -115,28 +113,27 @@ object ipcMod {
     }
   }
   
-  @js.native
-  trait RPCRequest[P /* <: String */, A /* <: js.Array[_] */] extends StObject {
+  trait RPCRequest[P /* <: String */, A /* <: js.Array[js.Any] */] extends StObject {
     
-    var args: A = js.native
+    var args: A
     
-    var id: String = js.native
+    var id: String
     
-    var procedure: P = js.native
+    var procedure: P
     
-    var `type`: `rpc-request` = js.native
+    var `type`: `rpc-request`
   }
   object RPCRequest {
     
     @scala.inline
-    def apply[P /* <: String */, A /* <: js.Array[_] */](args: A, id: String, procedure: P, `type`: `rpc-request`): RPCRequest[P, A] = {
+    def apply[P /* <: String */, A /* <: js.Array[js.Any] */](args: A, id: String, procedure: P): RPCRequest[P, A] = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], procedure = procedure.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("rpc-request")
       __obj.asInstanceOf[RPCRequest[P, A]]
     }
     
     @scala.inline
-    implicit class RPCRequestMutableBuilder[Self <: RPCRequest[_, _], P /* <: String */, A /* <: js.Array[_] */] (val x: Self with (RPCRequest[P, A])) extends AnyVal {
+    implicit class RPCRequestMutableBuilder[Self <: RPCRequest[?, ?], P /* <: String */, A /* <: js.Array[js.Any] */] (val x: Self & (RPCRequest[P, A])) extends AnyVal {
       
       @scala.inline
       def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
@@ -152,38 +149,36 @@ object ipcMod {
     }
   }
   
-  @js.native
-  trait RPCResponse[R /* <: RPCRequest[_, _] */, D /* <: js.Object */] extends StObject {
+  trait RPCResponse[R /* <: RPCRequest[js.Any, js.Any] */, D /* <: js.Object */] extends StObject {
     
-    var data: D = js.native
+    var data: D
     
-    var err: js.UndefOr[js.Any] = js.native
+    var err: js.UndefOr[js.Any] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any = js.native
+    var procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any
     
-    var request: R = js.native
+    var request: R
     
-    var `type`: `rpc-response` = js.native
+    var `type`: `rpc-response`
   }
   object RPCResponse {
     
     @scala.inline
-    def apply[R /* <: RPCRequest[_, _] */, D /* <: js.Object */](
+    def apply[R /* <: RPCRequest[js.Any, js.Any] */, D /* <: js.Object */](
       data: D,
       id: String,
       procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any,
-      request: R,
-      `type`: `rpc-response`
+      request: R
     ): RPCResponse[R, D] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], procedure = procedure.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("rpc-response")
       __obj.asInstanceOf[RPCResponse[R, D]]
     }
     
     @scala.inline
-    implicit class RPCResponseMutableBuilder[Self <: RPCResponse[_, _], R /* <: RPCRequest[_, _] */, D /* <: js.Object */] (val x: Self with (RPCResponse[R, D])) extends AnyVal {
+    implicit class RPCResponseMutableBuilder[Self <: RPCResponse[?, ?], R /* <: RPCRequest[js.Any, js.Any] */, D /* <: js.Object */] (val x: Self & (RPCResponse[R, D])) extends AnyVal {
       
       @scala.inline
       def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

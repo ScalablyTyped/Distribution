@@ -11,8 +11,8 @@ Pure-JS CRC-32
 | Full name          | crc-32 |
 | Keywords           | crc, crc32, checksum |
 | # releases         | 0 |
-| # dependents       | 261 |
-| # downloads        | 28815365 |
+| # dependents       | 312 |
+| # downloads        | 45372885 |
 | # stars            | 2 |
 
 ## Links

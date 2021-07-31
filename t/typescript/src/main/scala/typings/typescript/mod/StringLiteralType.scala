@@ -2,14 +2,14 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StringLiteralType extends LiteralType {
+trait StringLiteralType
+  extends StObject
+     with LiteralType {
   
   @JSName("value")
-  var value_StringLiteralType: java.lang.String = js.native
+  var value_StringLiteralType: java.lang.String
 }
 object StringLiteralType {
   

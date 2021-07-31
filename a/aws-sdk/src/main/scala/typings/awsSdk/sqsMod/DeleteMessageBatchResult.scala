@@ -2,21 +2,19 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMessageBatchResult extends StObject {
   
   /**
     * A list of  BatchResultErrorEntry  items.
     */
-  var Failed: BatchResultErrorEntryList = js.native
+  var Failed: BatchResultErrorEntryList
   
   /**
     * A list of  DeleteMessageBatchResultEntry  items.
     */
-  var Successful: DeleteMessageBatchResultEntryList = js.native
+  var Successful: DeleteMessageBatchResultEntryList
 }
 object DeleteMessageBatchResult {
   

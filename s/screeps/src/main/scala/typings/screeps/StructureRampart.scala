@@ -2,34 +2,33 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Blocks movement of hostile creeps, and defends your creeps and structures on
   * the same tile. Can be used as a controllable gate.
   */
-@js.native
 trait StructureRampart
-  extends OwnedStructure[STRUCTURE_RAMPART]
+  extends StObject
+     with OwnedStructure[STRUCTURE_RAMPART]
      with AnyOwnedStructure
      with ConcreteStructure[js.Any] {
   
   /**
     * If false (default), only your creeps can step on the same square. If true, any hostile creeps can pass through.
     */
-  var isPublic: Boolean = js.native
+  var isPublic: Boolean
   
   /**
     * Make this rampart public to allow other players' creeps to pass through.
     * @param isPublic Whether this rampart should be public or non-public
     */
-  def setPublic(isPublic: Boolean): js.UndefOr[scala.Nothing] = js.native
+  def setPublic(isPublic: Boolean): Unit
   
   /**
     * The amount of game ticks when this rampart will lose some hit points.
     */
-  var ticksToDecay: Double = js.native
+  var ticksToDecay: Double
 }
 object StructureRampart {
   
@@ -46,7 +45,7 @@ object StructureRampart {
     notifyWhenAttacked: Boolean => ScreepsReturnCode,
     pos: RoomPosition,
     room: Room,
-    setPublic: Boolean => js.UndefOr[scala.Nothing],
+    setPublic: Boolean => Unit,
     structureType: STRUCTURE_RAMPART,
     ticksToDecay: Double
   ): StructureRampart = {
@@ -61,7 +60,7 @@ object StructureRampart {
     def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPublic(value: Boolean => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "setPublic", js.Any.fromFunction1(value))
+    def setSetPublic(value: Boolean => Unit): Self = StObject.set(x, "setPublic", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])

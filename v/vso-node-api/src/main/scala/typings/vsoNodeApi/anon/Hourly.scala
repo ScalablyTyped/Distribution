@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hourly extends StObject {
   
-  var daily: scala.Double = js.native
+  var daily: scala.Double
   
-  var hourly: scala.Double = js.native
+  var hourly: scala.Double
 }
 object Hourly {
   

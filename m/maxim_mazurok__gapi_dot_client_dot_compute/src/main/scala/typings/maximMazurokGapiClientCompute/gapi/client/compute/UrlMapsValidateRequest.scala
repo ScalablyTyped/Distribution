@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlMapsValidateRequest extends StObject {
   
   /** Content of the UrlMap to be validated. */
-  var resource: js.UndefOr[UrlMap] = js.native
+  var resource: js.UndefOr[UrlMap] = js.undefined
 }
 object UrlMapsValidateRequest {
   

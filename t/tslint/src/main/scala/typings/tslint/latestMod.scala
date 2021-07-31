@@ -5,10 +5,13 @@ import typings.tslint.anon.OptionsNumber
 import typings.tslint.anon.OptionsString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object latestMod {
+  
+  @JSImport("tslint/lib/configs/latest", "extends")
+  @js.native
+  val `extends`: /* "tslint:recommended" */ String = js.native
   
   object rules {
     
@@ -147,8 +150,4 @@ object latestMod {
     @scala.inline
     def whitespace_=(x: OptionsArray): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("whitespace")(x.asInstanceOf[js.Any])
   }
-  
-  @JSImport("tslint/lib/configs/latest", "extends")
-  @js.native
-  val `extends`: /* "tslint:recommended" */ String = js.native
 }

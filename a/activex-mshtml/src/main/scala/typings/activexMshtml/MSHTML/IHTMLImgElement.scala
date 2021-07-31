@@ -2,72 +2,70 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLImgElement extends StObject {
   
   @JSName("MSHTML.IHTMLImgElement_typekey")
-  var MSHTMLDotIHTMLImgElement_typekey: IHTMLImgElement = js.native
+  var MSHTMLDotIHTMLImgElement_typekey: IHTMLImgElement
   
-  var align: String = js.native
+  var align: String
   
-  var alt: String = js.native
+  var alt: String
   
-  var border: js.Any = js.native
+  var border: js.Any
   
-  val complete: Boolean = js.native
+  val complete: Boolean
   
-  var dynsrc: String = js.native
+  var dynsrc: String
   
-  val fileCreatedDate: String = js.native
+  val fileCreatedDate: String
   
-  val fileModifiedDate: String = js.native
+  val fileModifiedDate: String
   
-  val fileSize: String = js.native
+  val fileSize: String
   
-  val fileUpdatedDate: String = js.native
+  val fileUpdatedDate: String
   
-  var height: Double = js.native
+  var height: Double
   
-  val href: String = js.native
+  val href: String
   
-  var hspace: Double = js.native
+  var hspace: Double
   
-  var isMap: Boolean = js.native
+  var isMap: Boolean
   
-  var loop: js.Any = js.native
+  var loop: js.Any
   
-  var lowsrc: String = js.native
+  var lowsrc: String
   
-  val mimeType: String = js.native
+  val mimeType: String
   
-  var name: String = js.native
+  var name: String
   
-  val nameProp: String = js.native
+  val nameProp: String
   
-  var onabort: js.Any = js.native
+  var onabort: js.Any
   
-  var onerror: js.Any = js.native
+  var onerror: js.Any
   
-  var onload: js.Any = js.native
+  var onload: js.Any
   
-  val protocol: String = js.native
+  val protocol: String
   
-  val readyState: String = js.native
+  val readyState: String
   
-  var src: String = js.native
+  var src: String
   
-  var start: String = js.native
+  var start: String
   
-  var useMap: String = js.native
+  var useMap: String
   
-  var vrml: String = js.native
+  var vrml: String
   
-  var vspace: Double = js.native
+  var vspace: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object IHTMLImgElement {
   

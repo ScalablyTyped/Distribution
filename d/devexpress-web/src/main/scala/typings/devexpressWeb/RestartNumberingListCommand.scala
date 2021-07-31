@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to restart the numbering list.
   */
-@js.native
-trait RestartNumberingListCommand extends CommandWithSimpleStateBase {
+trait RestartNumberingListCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the RestartNumberingListCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object RestartNumberingListCommand {
   

@@ -10,7 +10,6 @@ import typings.ionicCore.mod.Mode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navInterfaceMod {
@@ -25,23 +24,22 @@ object navInterfaceMod {
   
   type NavComponent = ComponentRef | typings.ionicCore.viewControllerMod.ViewController
   
-  @js.native
   trait NavComponentWithProps[T] extends StObject {
     
-    var component: NavComponent = js.native
+    var component: NavComponent
     
-    var componentProps: js.UndefOr[ComponentProps[T] | Null] = js.native
+    var componentProps: js.UndefOr[ComponentProps[T] | Null] = js.undefined
   }
   object NavComponentWithProps {
     
     @scala.inline
     def apply[T](): NavComponentWithProps[T] = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(component = null)
       __obj.asInstanceOf[NavComponentWithProps[T]]
     }
     
     @scala.inline
-    implicit class NavComponentWithPropsMutableBuilder[Self <: NavComponentWithProps[_], T] (val x: Self with NavComponentWithProps[T]) extends AnyVal {
+    implicit class NavComponentWithPropsMutableBuilder[Self <: NavComponentWithProps[?], T] (val x: Self & NavComponentWithProps[T]) extends AnyVal {
       
       @scala.inline
       def setComponent(value: NavComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
@@ -74,14 +72,15 @@ object navInterfaceMod {
     def forward: typings.ionicCore.ionicCoreStrings.forward = "forward".asInstanceOf[typings.ionicCore.ionicCoreStrings.forward]
   }
   
-  @js.native
-  trait NavOptions extends RouterOutletOptions {
+  trait NavOptions
+    extends StObject
+       with RouterOutletOptions {
     
-    var delegate: js.UndefOr[FrameworkDelegate] = js.native
+    var delegate: js.UndefOr[FrameworkDelegate] = js.undefined
     
-    var updateURL: js.UndefOr[Boolean] = js.native
+    var updateURL: js.UndefOr[Boolean] = js.undefined
     
-    var viewIsReady: js.UndefOr[js.Function1[/* enteringEl */ HTMLElement, js.Promise[_]]] = js.native
+    var viewIsReady: js.UndefOr[js.Function1[/* enteringEl */ HTMLElement, js.Promise[js.Any]]] = js.undefined
   }
   object NavOptions {
     
@@ -107,25 +106,24 @@ object navInterfaceMod {
       def setUpdateURLUndefined: Self = StObject.set(x, "updateURL", js.undefined)
       
       @scala.inline
-      def setViewIsReady(value: /* enteringEl */ HTMLElement => js.Promise[_]): Self = StObject.set(x, "viewIsReady", js.Any.fromFunction1(value))
+      def setViewIsReady(value: /* enteringEl */ HTMLElement => js.Promise[js.Any]): Self = StObject.set(x, "viewIsReady", js.Any.fromFunction1(value))
       
       @scala.inline
       def setViewIsReadyUndefined: Self = StObject.set(x, "viewIsReady", js.undefined)
     }
   }
   
-  @js.native
   trait NavResult extends StObject {
     
-    var direction: js.UndefOr[NavDirection] = js.native
+    var direction: js.UndefOr[NavDirection] = js.undefined
     
-    var enteringView: js.UndefOr[typings.ionicCore.viewControllerMod.ViewController] = js.native
+    var enteringView: js.UndefOr[typings.ionicCore.viewControllerMod.ViewController] = js.undefined
     
-    var hasCompleted: Boolean = js.native
+    var hasCompleted: Boolean
     
-    var leavingView: js.UndefOr[typings.ionicCore.viewControllerMod.ViewController] = js.native
+    var leavingView: js.UndefOr[typings.ionicCore.viewControllerMod.ViewController] = js.undefined
     
-    var requiresTransition: Boolean = js.native
+    var requiresTransition: Boolean
   }
   object NavResult {
     
@@ -166,30 +164,29 @@ object navInterfaceMod {
   
   type Page = Instantiable1[/* args (repeated) */ js.Any, js.Any]
   
-  @js.native
   trait RouterOutletOptions extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var animationBuilder: js.UndefOr[AnimationBuilder] = js.native
+    var animationBuilder: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var deepWait: js.UndefOr[Boolean] = js.native
+    var deepWait: js.UndefOr[Boolean] = js.undefined
     
-    var direction: js.UndefOr[NavDirection] = js.native
+    var direction: js.UndefOr[NavDirection] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
-    var keyboardClose: js.UndefOr[Boolean] = js.native
+    var keyboardClose: js.UndefOr[Boolean] = js.undefined
     
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
     
-    var progressAnimation: js.UndefOr[Boolean] = js.native
+    var progressAnimation: js.UndefOr[Boolean] = js.undefined
     
-    var showGoBack: js.UndefOr[Boolean] = js.native
+    var showGoBack: js.UndefOr[Boolean] = js.undefined
     
-    var skipIfBusy: js.UndefOr[Boolean] = js.native
+    var skipIfBusy: js.UndefOr[Boolean] = js.undefined
   }
   object RouterOutletOptions {
     
@@ -270,14 +267,13 @@ object navInterfaceMod {
     }
   }
   
-  @js.native
   trait SwipeGestureHandler extends StObject {
     
-    def canStart(): Boolean = js.native
+    def canStart(): Boolean
     
-    def onEnd(shouldComplete: Boolean): Unit = js.native
+    def onEnd(shouldComplete: Boolean): Unit
     
-    def onStart(): Unit = js.native
+    def onStart(): Unit
   }
   object SwipeGestureHandler {
     
@@ -310,30 +306,29 @@ object navInterfaceMod {
     Unit
   ]
   
-  @js.native
   trait TransitionInstruction extends StObject {
     
-    var done: js.UndefOr[TransitionDoneFn] = js.native
+    var done: js.UndefOr[TransitionDoneFn] = js.undefined
     
-    var enteringRequiresTransition: js.UndefOr[Boolean] = js.native
+    var enteringRequiresTransition: js.UndefOr[Boolean] = js.undefined
     
-    var insertStart: js.UndefOr[Double] = js.native
+    var insertStart: js.UndefOr[Double] = js.undefined
     
-    var insertViews: js.UndefOr[js.Array[_]] = js.native
+    var insertViews: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var leavingRequiresTransition: js.UndefOr[Boolean] = js.native
+    var leavingRequiresTransition: js.UndefOr[Boolean] = js.undefined
     
-    var opts: js.UndefOr[NavOptions | Null] = js.native
+    var opts: js.UndefOr[NavOptions | Null] = js.undefined
     
-    var reject: js.UndefOr[js.Function1[/* rejectReason */ String, Unit]] = js.native
+    var reject: js.UndefOr[js.Function1[/* rejectReason */ String, Unit]] = js.undefined
     
-    var removeCount: js.UndefOr[Double] = js.native
+    var removeCount: js.UndefOr[Double] = js.undefined
     
-    var removeStart: js.UndefOr[Double] = js.native
+    var removeStart: js.UndefOr[Double] = js.undefined
     
-    var removeView: js.UndefOr[typings.ionicCore.viewControllerMod.ViewController] = js.native
+    var removeView: js.UndefOr[typings.ionicCore.viewControllerMod.ViewController] = js.undefined
     
-    var resolve: js.UndefOr[js.Function1[/* hasCompleted */ Boolean, Unit]] = js.native
+    var resolve: js.UndefOr[js.Function1[/* hasCompleted */ Boolean, Unit]] = js.undefined
   }
   object TransitionInstruction {
     
@@ -367,7 +362,7 @@ object navInterfaceMod {
       def setInsertStartUndefined: Self = StObject.set(x, "insertStart", js.undefined)
       
       @scala.inline
-      def setInsertViews(value: js.Array[_]): Self = StObject.set(x, "insertViews", value.asInstanceOf[js.Any])
+      def setInsertViews(value: js.Array[js.Any]): Self = StObject.set(x, "insertViews", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInsertViewsUndefined: Self = StObject.set(x, "insertViews", js.undefined)

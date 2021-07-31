@@ -3,25 +3,23 @@ package typings.pulumiAws.inputMod.ssm
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentParameter extends StObject {
   
-  var defaultValue: js.UndefOr[Input[String]] = js.native
+  var defaultValue: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The description of the document.
     */
-  var description: js.UndefOr[Input[String]] = js.native
+  var description: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The name of the document.
     */
-  var name: js.UndefOr[Input[String]] = js.native
+  var name: js.UndefOr[Input[String]] = js.undefined
   
-  var `type`: js.UndefOr[Input[String]] = js.native
+  var `type`: js.UndefOr[Input[String]] = js.undefined
 }
 object DocumentParameter {
   

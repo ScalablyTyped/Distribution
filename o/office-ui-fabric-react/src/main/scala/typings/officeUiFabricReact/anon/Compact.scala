@@ -3,17 +3,15 @@ package typings.officeUiFabricReact.anon
 import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Compact extends StObject {
   
-  var compact: Boolean = js.native
+  var compact: Boolean
   
-  var isHeaderVisible: Boolean = js.native
+  var isHeaderVisible: Boolean
   
-  var selectionMode: SelectionMode = js.native
+  var selectionMode: SelectionMode
 }
 object Compact {
   

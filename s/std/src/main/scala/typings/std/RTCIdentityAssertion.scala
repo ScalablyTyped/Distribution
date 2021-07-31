@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCIdentityAssertion extends StObject {
   
-  var idp: java.lang.String = js.native
+  var idp: java.lang.String
   
-  var name: java.lang.String = js.native
+  var name: java.lang.String
 }
 object RTCIdentityAssertion {
   

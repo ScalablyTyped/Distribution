@@ -4,7 +4,6 @@ import typings.std.Document
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("knockout", "templateEngine")
@@ -25,26 +24,30 @@ abstract class templateEngine () extends StObject {
   def makeTemplateSource(template: Node): TemplateSource = js.native
   def makeTemplateSource(template: Node, templateDocument: Document): TemplateSource = js.native
   
-  def renderTemplate(template: String, bindingContext: BindingContext[_], options: TemplateOptions[_]): js.Array[Node] = js.native
+  def renderTemplate(template: String, bindingContext: BindingContext[js.Any], options: TemplateOptions[js.Any]): js.Array[Node] = js.native
   def renderTemplate(
     template: String,
-    bindingContext: BindingContext[_],
-    options: TemplateOptions[_],
+    bindingContext: BindingContext[js.Any],
+    options: TemplateOptions[js.Any],
     templateDocument: Document
   ): js.Array[Node] = js.native
-  def renderTemplate(template: Node, bindingContext: BindingContext[_], options: TemplateOptions[_]): js.Array[Node] = js.native
+  def renderTemplate(template: Node, bindingContext: BindingContext[js.Any], options: TemplateOptions[js.Any]): js.Array[Node] = js.native
   def renderTemplate(
     template: Node,
-    bindingContext: BindingContext[_],
-    options: TemplateOptions[_],
+    bindingContext: BindingContext[js.Any],
+    options: TemplateOptions[js.Any],
     templateDocument: Document
   ): js.Array[Node] = js.native
   
-  def renderTemplateSource(templateSource: TemplateSource, bindingContext: BindingContext[_], options: TemplateOptions[_]): js.Array[Node] = js.native
   def renderTemplateSource(
     templateSource: TemplateSource,
-    bindingContext: BindingContext[_],
-    options: TemplateOptions[_],
+    bindingContext: BindingContext[js.Any],
+    options: TemplateOptions[js.Any]
+  ): js.Array[Node] = js.native
+  def renderTemplateSource(
+    templateSource: TemplateSource,
+    bindingContext: BindingContext[js.Any],
+    options: TemplateOptions[js.Any],
     templateDocument: Document
   ): js.Array[Node] = js.native
   

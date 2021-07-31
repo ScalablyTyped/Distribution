@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRuleMod {
   
-  @JSImport("@pulumi/aws/wafregional/getRule", "getRule")
+  @JSImport("@pulumi/aws/wafregional/getRule", JSImport.Namespace)
   @js.native
-  def getRule(args: GetRuleArgs): js.Promise[GetRuleResult] = js.native
-  @JSImport("@pulumi/aws/wafregional/getRule", "getRule")
-  @js.native
-  def getRule(args: GetRuleArgs, opts: InvokeOptions): js.Promise[GetRuleResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRule(args: GetRuleArgs): js.Promise[GetRuleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRule")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRuleResult]]
+  @scala.inline
+  def getRule(args: GetRuleArgs, opts: InvokeOptions): js.Promise[GetRuleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRule")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRuleResult]]
+  
   trait GetRuleArgs extends StObject {
     
     /**
       * The name of the WAF Regional rule.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetRuleArgs {
     
@@ -39,15 +39,14 @@ object getRuleMod {
     }
   }
   
-  @js.native
   trait GetRuleResult extends StObject {
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
   }
   object GetRuleResult {
     

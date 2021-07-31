@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrivateIpAddressDetails extends StObject {
   
   /**
     * The private DNS name of the EC2 instance.
     */
-  var PrivateDnsName: js.UndefOr[String] = js.native
+  var PrivateDnsName: js.UndefOr[String] = js.undefined
   
   /**
     * The private IP address of the EC2 instance.
     */
-  var PrivateIpAddress: js.UndefOr[String] = js.native
+  var PrivateIpAddress: js.UndefOr[String] = js.undefined
 }
 object PrivateIpAddressDetails {
   

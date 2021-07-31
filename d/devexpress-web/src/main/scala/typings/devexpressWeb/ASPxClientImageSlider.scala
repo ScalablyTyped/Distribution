@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxImageSlider object.
   */
 @js.native
-trait ASPxClientImageSlider extends ASPxClientControl {
+trait ASPxClientImageSlider
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs after the active image, displayed within the image area, is changed.

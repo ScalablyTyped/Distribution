@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationSchemeForPolyline
-  extends Object
+  extends StObject
+     with Object
      with LocationScheme {
   
   /**
@@ -17,21 +16,21 @@ trait LocationSchemeForPolyline
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolyline)
     */
-  var color: Color_ = js.native
+  var color: Color_
   
   /**
     * The opacity of the line symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolyline)
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * The width of the line symbol in pixels or points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolyline)
     */
-  var width: Double = js.native
+  var width: Double
 }
 object LocationSchemeForPolyline {
   

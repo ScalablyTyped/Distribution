@@ -4,11 +4,12 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SectionListStatic[ItemT, SectionT] extends ComponentClass[SectionListProps[ItemT, SectionT], ComponentState] {
+trait SectionListStatic[ItemT, SectionT]
+  extends StObject
+     with ComponentClass[SectionListProps[ItemT, SectionT], ComponentState] {
   
   /**
     * Scrolls to the item at the specified sectionIndex and itemIndex (within the section)

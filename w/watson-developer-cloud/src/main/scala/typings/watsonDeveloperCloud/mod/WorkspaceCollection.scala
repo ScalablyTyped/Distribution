@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** WorkspaceCollection. */
-@js.native
 trait WorkspaceCollection extends StObject {
   
   /** The pagination data for the returned objects. */
-  var pagination: Pagination = js.native
+  var pagination: Pagination
   
   /** An array of objects describing the workspaces associated with the service instance. */
-  var workspaces: js.Array[Workspace] = js.native
+  var workspaces: js.Array[Workspace]
 }
 object WorkspaceCollection {
   

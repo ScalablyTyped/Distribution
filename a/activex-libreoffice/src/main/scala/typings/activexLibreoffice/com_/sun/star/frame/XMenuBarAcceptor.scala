@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.XMenuBar
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,15 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   * @since OOo 2.0
   */
-@js.native
-trait XMenuBarAcceptor extends XInterface {
+trait XMenuBarAcceptor
+  extends StObject
+     with XInterface {
   
   /**
     * update menu bar according to the current frame mode. This is used in inplace editing mode where we have to merge our own menu into the container
     * applications menu.
     * @param xMenuBar the menu bar that should be merged with current one.
     */
-  def updateMenuBar(xMenuBar: js.Array[XMenuBar]): Unit = js.native
+  def updateMenuBar(xMenuBar: js.Array[XMenuBar]): Unit
 }
 object XMenuBarAcceptor {
   

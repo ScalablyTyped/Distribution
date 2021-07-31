@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopMonitoringMembersRequest extends StObject {
   
   /**
     * A list of account IDs for the member accounts to stop monitoring.
     */
-  var AccountIds: typings.awsSdk.guarddutyMod.AccountIds = js.native
+  var AccountIds: typings.awsSdk.guarddutyMod.AccountIds
   
   /**
     * The unique ID of the detector associated with the GuardDuty master account that is monitoring member accounts.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
 }
 object StopMonitoringMembersRequest {
   

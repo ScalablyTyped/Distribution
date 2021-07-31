@@ -2,21 +2,19 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataRetrievalRule extends StObject {
   
   /**
     * The maximum number of bytes that can be retrieved in an hour. This field is required only if the value of the Strategy field is BytesPerHour. Your PUT operation will be rejected if the Strategy field is not set to BytesPerHour and you set this field.
     */
-  var BytesPerHour: js.UndefOr[NullableLong] = js.native
+  var BytesPerHour: js.UndefOr[NullableLong] = js.undefined
   
   /**
     * The type of data retrieval policy to set. Valid values: BytesPerHour|FreeTier|None
     */
-  var Strategy: js.UndefOr[String] = js.native
+  var Strategy: js.UndefOr[String] = js.undefined
 }
 object DataRetrievalRule {
   

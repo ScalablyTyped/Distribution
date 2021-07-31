@@ -2,10 +2,8 @@ package typings.vegaLite.srcMarkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenericMarkDef[M] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait GenericMarkDef[M] extends StObject {
     * `"area"`, `"point"`, `"geoshape"`, `"rule"`, and `"text"`)
     * or a composite mark type (`"boxplot"`, `"errorband"`, `"errorbar"`).
     */
-  var `type`: M = js.native
+  var `type`: M
 }
 object GenericMarkDef {
   
@@ -26,7 +24,7 @@ object GenericMarkDef {
   }
   
   @scala.inline
-  implicit class GenericMarkDefMutableBuilder[Self <: GenericMarkDef[_], M] (val x: Self with GenericMarkDef[M]) extends AnyVal {
+  implicit class GenericMarkDefMutableBuilder[Self <: GenericMarkDef[?], M] (val x: Self & GenericMarkDef[M]) extends AnyVal {
     
     @scala.inline
     def setType(value: M): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

@@ -2,43 +2,47 @@ package typings.classValidator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validationArgumentsMod {
   
-  @js.native
   trait ValidationArguments extends StObject {
     
     /**
       * Constraints set by this validation type.
       */
-    var constraints: js.Array[_] = js.native
+    var constraints: js.Array[js.Any]
     
     /**
       * Object that is being validated.
       */
-    var `object`: js.Object = js.native
+    var `object`: js.Object
     
     /**
       * Name of the object's property being validated.
       */
-    var property: String = js.native
+    var property: String
     
     /**
       * Name of the target that is being validated.
       */
-    var targetName: String = js.native
+    var targetName: String
     
     /**
       * Validating value.
       */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ValidationArguments {
     
     @scala.inline
-    def apply(constraints: js.Array[_], `object`: js.Object, property: String, targetName: String, value: js.Any): ValidationArguments = {
+    def apply(
+      constraints: js.Array[js.Any],
+      `object`: js.Object,
+      property: String,
+      targetName: String,
+      value: js.Any
+    ): ValidationArguments = {
       val __obj = js.Dynamic.literal(constraints = constraints.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], targetName = targetName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationArguments]
@@ -48,7 +52,7 @@ object validationArgumentsMod {
     implicit class ValidationArgumentsMutableBuilder[Self <: ValidationArguments] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setConstraints(value: js.Array[_]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      def setConstraints(value: js.Array[js.Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setConstraintsVarargs(value: js.Any*): Self = StObject.set(x, "constraints", js.Array(value :_*))

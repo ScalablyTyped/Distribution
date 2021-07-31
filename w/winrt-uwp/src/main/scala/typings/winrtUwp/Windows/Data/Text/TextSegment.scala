@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Data.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Identifies a sub-string of a source text string. Your app can use this structure to obtain the segment of your provided text that is identified by AlternateWordForm , SelectableWordSegment , WordSegment , or SemanticTextQuery . */
-@js.native
 trait TextSegment extends StObject {
   
   /** The number of characters in the associated text segment. */
-  var length: Double = js.native
+  var length: Double
   
   /** The zero-based index of the start of the associated text segment. */
-  var startPosition: Double = js.native
+  var startPosition: Double
 }
 object TextSegment {
   

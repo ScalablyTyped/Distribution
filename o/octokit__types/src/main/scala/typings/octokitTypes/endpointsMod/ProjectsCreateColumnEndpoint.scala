@@ -1,37 +1,32 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`7`
+import typings.octokitTypes.anon.`0`
+import typings.octokitTypes.octokitTypesStrings.inertia
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  project_id :number,   name :string} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'inertia'> */
-@js.native
-trait ProjectsCreateColumnEndpoint extends StObject {
-  
-  var mediaType: `7` = js.native
+trait ProjectsCreateColumnEndpoint
+  extends StObject
+     with RequiredPreview[inertia] {
   
   /**
     * The name of the column.
     */
-  var name: String = js.native
+  var name: String
   
-  var project_id: Double = js.native
+  var project_id: Double
 }
 object ProjectsCreateColumnEndpoint {
   
   @scala.inline
-  def apply(mediaType: `7`, name: String, project_id: Double): ProjectsCreateColumnEndpoint = {
+  def apply(mediaType: `0`[inertia], name: String, project_id: Double): ProjectsCreateColumnEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsCreateColumnEndpoint]
   }
   
   @scala.inline
   implicit class ProjectsCreateColumnEndpointMutableBuilder[Self <: ProjectsCreateColumnEndpoint] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def setMediaType(value: `7`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

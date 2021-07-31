@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVPCEConfigurationRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the VPC endpoint configuration you want to describe.
     */
-  var arn: AmazonResourceName = js.native
+  var arn: AmazonResourceName
 }
 object GetVPCEConfigurationRequest {
   

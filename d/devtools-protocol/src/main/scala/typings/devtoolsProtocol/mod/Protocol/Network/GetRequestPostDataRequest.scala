@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRequestPostDataRequest extends StObject {
   
   /**
     * Identifier of the network request to get content for.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
 }
 object GetRequestPostDataRequest {
   

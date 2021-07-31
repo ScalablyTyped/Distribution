@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * StaticContentListItem...
   */
-@js.native
 trait IStaticContentListItem extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait IStaticContentListItem extends StObject {
     * - in the /content/default/ folder are outside the qvf file.
     * - in the /media/ folder are embedded in the qvf file.
     */
-  var qUrl: String = js.native
+  var qUrl: String
   
   /**
     * Relative path to the content file. The URL is static.
@@ -39,7 +37,7 @@ trait IStaticContentListItem extends StObject {
     * - in the /content/default/ folder are outside the qvf file.
     * - in the /media/ folder are embedded in the qvf file.
     */
-  var qUrlDef: String = js.native
+  var qUrlDef: String
 }
 object IStaticContentListItem {
   

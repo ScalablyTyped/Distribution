@@ -7,7 +7,6 @@ import typings.react.mod.Component
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollablePaneBaseMod {
@@ -70,6 +69,14 @@ object scrollablePaneBaseMod {
     
     val contentContainer: HTMLDivElement | Null = js.native
     
+    /** Triggers a layout update for the pane. */
+    /* CompleteClass */
+    override def forceLayoutUpdate(): Unit = js.native
+    
+    /** Gets the current scroll position of the scrollable pane */
+    /* CompleteClass */
+    override def getScrollPosition(): Double = js.native
+    
     def notifySubscribers(): Unit = js.native
     
     def removeSticky(sticky: Sticky): Unit = js.native
@@ -97,16 +104,15 @@ object scrollablePaneBaseMod {
     def updateStickyRefHeights(): Unit = js.native
   }
   
-  @js.native
   trait IScrollablePaneState extends StObject {
     
-    var scrollbarHeight: Double = js.native
+    var scrollbarHeight: Double
     
-    var scrollbarWidth: Double = js.native
+    var scrollbarWidth: Double
     
-    var stickyBottomHeight: Double = js.native
+    var stickyBottomHeight: Double
     
-    var stickyTopHeight: Double = js.native
+    var stickyTopHeight: Double
   }
   object IScrollablePaneState {
     

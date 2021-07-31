@@ -2,29 +2,27 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response corresponding to a single blob that the client tried to upload.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse extends StObject {
   
   /**
     * The raw binary data.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * The digest to which this response corresponds.
     */
-  var digest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.native
+  var digest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /**
     * The result of attempting to download that blob.
     */
-  var status: js.UndefOr[SchemaGoogleRpcStatus] = js.native
+  var status: js.UndefOr[SchemaGoogleRpcStatus] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse {
   

@@ -7,25 +7,24 @@ import typings.node.nodeStrings.pipe
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForkOptions
-  extends ProcessEnvOptions
+  extends StObject
+     with ProcessEnvOptions
      with MessagingOptions {
   
-  var detached: js.UndefOr[Boolean] = js.native
+  var detached: js.UndefOr[Boolean] = js.undefined
   
-  var execArgv: js.UndefOr[js.Array[String]] = js.native
+  var execArgv: js.UndefOr[js.Array[String]] = js.undefined
   
-  var execPath: js.UndefOr[String] = js.native
+  var execPath: js.UndefOr[String] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var stdio: js.UndefOr[StdioOptions] = js.native
+  var stdio: js.UndefOr[StdioOptions] = js.undefined
   
-  var windowsVerbatimArguments: js.UndefOr[Boolean] = js.native
+  var windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
 }
 object ForkOptions {
   

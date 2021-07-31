@@ -2,7 +2,6 @@ package typings.akamaiEdgeworkers.EW
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,32 +12,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * * If user location properties can not be supplied for any reason,
   *   undefined is returned for that property
   */
-@js.native
 trait UserLocation extends StObject {
   
   /**
     * The city value is the city (within a 50-mile radius) that the IP
     * address maps to.
     */
-  val city: js.UndefOr[String] = js.native
+  val city: js.UndefOr[String] = js.undefined
   
   /**
     * The continent value is a two-letter code for the continent that
     * the IP address maps to.
     */
-  val continent: js.UndefOr[String] = js.native
+  val continent: js.UndefOr[String] = js.undefined
   
   /**
     * The country value is an ISO-3166, two-letter code for the country
     * where the IP address maps to.
     */
-  val country: js.UndefOr[String] = js.native
+  val country: js.UndefOr[String] = js.undefined
   
   /**
     * The region value is an ISO-3166, two-letter code for the state,
     * province, or region where the IP address maps to.
     */
-  val region: js.UndefOr[String] = js.native
+  val region: js.UndefOr[String] = js.undefined
   
   /**
     * The zipCode value is the zipcode that the IP address maps to
@@ -64,7 +62,7 @@ trait UserLocation extends StObject {
     *
     * See the EdgeScape Users Guide for more details.
     */
-  val zipCode: js.UndefOr[String] = js.native
+  val zipCode: js.UndefOr[String] = js.undefined
 }
 object UserLocation {
   

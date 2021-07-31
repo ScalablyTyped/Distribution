@@ -9,42 +9,41 @@ import typings.saucelabs.saucelabsStrings.PIRANHA
 import typings.saucelabs.saucelabsStrings.XCUITEST
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionReport
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var appId: js.UndefOr[Id] = js.native
+  var appId: js.UndefOr[Id] = js.undefined
   
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
-  var deviceDescriptorId: js.UndefOr[Id] = js.native
+  var deviceDescriptorId: js.UndefOr[Id] = js.undefined
   
-  var durationInSeconds: js.UndefOr[Double] = js.native
+  var durationInSeconds: js.UndefOr[Double] = js.undefined
   
-  var endDateTime: js.UndefOr[String] = js.native
+  var endDateTime: js.UndefOr[String] = js.undefined
   
-  var frameworkAppId: js.UndefOr[Id] = js.native
+  var frameworkAppId: js.UndefOr[Id] = js.undefined
   
-  var id: js.UndefOr[Id] = js.native
+  var id: js.UndefOr[Id] = js.undefined
   
-  var projectId: js.UndefOr[Id] = js.native
+  var projectId: js.UndefOr[Id] = js.undefined
   
-  var startDateTime: js.UndefOr[String] = js.native
+  var startDateTime: js.UndefOr[String] = js.undefined
   
-  var testFrameworkType: js.UndefOr[String] = js.native
+  var testFrameworkType: js.UndefOr[String] = js.undefined
   
-  var testFrameworkVersion: js.UndefOr[String] = js.native
+  var testFrameworkVersion: js.UndefOr[String] = js.undefined
   
-  var testIds: js.UndefOr[js.Array[Id]] = js.native
+  var testIds: js.UndefOr[js.Array[Id]] = js.undefined
   
-  var testReportIds: js.UndefOr[js.Array[Id]] = js.native
+  var testReportIds: js.UndefOr[js.Array[Id]] = js.undefined
   
-  var usage: js.UndefOr[MANUAL | BATCH | APPIUM | PIRANHA | XCUITEST | ANDROID_INSTRUMENTATION] = js.native
+  var usage: js.UndefOr[MANUAL | BATCH | APPIUM | PIRANHA | XCUITEST | ANDROID_INSTRUMENTATION] = js.undefined
   
-  var userId: js.UndefOr[Id] = js.native
+  var userId: js.UndefOr[Id] = js.undefined
 }
 object SessionReport {
   

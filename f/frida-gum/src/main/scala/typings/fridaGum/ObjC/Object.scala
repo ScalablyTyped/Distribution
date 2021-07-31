@@ -5,16 +5,17 @@ import typings.fridaGum.NativePointer
 import typings.fridaGum.ObjectWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Dynamically generated wrapper for any Objective-C instance, class, or meta-class.
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- org.scalablytyped.runtime.StObject because Already inherited
 - org.scalablytyped.runtime.StringDictionary because Already inherited */ @js.native
 trait Object
-  extends ObjectWrapper
+  extends StObject
+     with ObjectWrapper
      with ObjectMethods {
   
   /**

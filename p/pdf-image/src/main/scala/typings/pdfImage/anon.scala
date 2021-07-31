@@ -2,15 +2,13 @@ package typings.pdfImage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0`[CombinedImage /* <: Boolean */] extends StObject {
     
-    var combinedImage: js.UndefOr[CombinedImage] = js.native
+    var combinedImage: js.UndefOr[CombinedImage] = js.undefined
   }
   object `0` {
     
@@ -21,7 +19,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[_], CombinedImage /* <: Boolean */] (val x: Self with `0`[CombinedImage]) extends AnyVal {
+    implicit class `0MutableBuilder`[Self <: `0`[?], CombinedImage /* <: Boolean */] (val x: Self & `0`[CombinedImage]) extends AnyVal {
       
       @scala.inline
       def setCombinedImage(value: CombinedImage): Self = StObject.set(x, "combinedImage", value.asInstanceOf[js.Any])
@@ -31,10 +29,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CombinedImageCombinedImage[CombinedImage /* <: Boolean */] extends StObject {
     
-    var combinedImage: CombinedImage = js.native
+    var combinedImage: CombinedImage
   }
   object CombinedImageCombinedImage {
     
@@ -45,7 +42,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class CombinedImageCombinedImageMutableBuilder[Self <: CombinedImageCombinedImage[_], CombinedImage /* <: Boolean */] (val x: Self with CombinedImageCombinedImage[CombinedImage]) extends AnyVal {
+    implicit class CombinedImageCombinedImageMutableBuilder[Self <: CombinedImageCombinedImage[?], CombinedImage /* <: Boolean */] (val x: Self & CombinedImageCombinedImage[CombinedImage]) extends AnyVal {
       
       @scala.inline
       def setCombinedImage(value: CombinedImage): Self = StObject.set(x, "combinedImage", value.asInstanceOf[js.Any])
@@ -53,492 +50,491 @@ object anon {
   }
   
   /* Inlined std.Readonly<pdf-image.pdf-image.ConvertOptions> */
-  @js.native
   trait ReadonlyConvertOptions extends StObject {
     
-    val `-adaptive-blur`: js.UndefOr[String] = js.native
+    val `-adaptive-blur`: js.UndefOr[String] = js.undefined
     
-    val `-adaptive-resize`: js.UndefOr[String] = js.native
+    val `-adaptive-resize`: js.UndefOr[String] = js.undefined
     
-    val `-adaptive-sharpen`: js.UndefOr[String] = js.native
+    val `-adaptive-sharpen`: js.UndefOr[String] = js.undefined
     
-    val `-adjoin`: js.UndefOr[String] = js.native
+    val `-adjoin`: js.UndefOr[String] = js.undefined
     
-    val `-affine`: js.UndefOr[String] = js.native
+    val `-affine`: js.UndefOr[String] = js.undefined
     
-    val `-alpha`: js.UndefOr[String] = js.native
+    val `-alpha`: js.UndefOr[String] = js.undefined
     
-    val `-annotate`: js.UndefOr[String] = js.native
+    val `-annotate`: js.UndefOr[String] = js.undefined
     
-    val `-antialias`: js.UndefOr[String] = js.native
+    val `-antialias`: js.UndefOr[String] = js.undefined
     
-    val `-append`: js.UndefOr[String] = js.native
+    val `-append`: js.UndefOr[String] = js.undefined
     
-    val `-authenticate`: js.UndefOr[String] = js.native
+    val `-authenticate`: js.UndefOr[String] = js.undefined
     
-    val `-auto-gamma`: js.UndefOr[String] = js.native
+    val `-auto-gamma`: js.UndefOr[String] = js.undefined
     
-    val `-auto-level`: js.UndefOr[String] = js.native
+    val `-auto-level`: js.UndefOr[String] = js.undefined
     
-    val `-auto-orient`: js.UndefOr[String] = js.native
+    val `-auto-orient`: js.UndefOr[String] = js.undefined
     
-    val `-auto-threshold`: js.UndefOr[String] = js.native
+    val `-auto-threshold`: js.UndefOr[String] = js.undefined
     
-    val `-background`: js.UndefOr[String] = js.native
+    val `-background`: js.UndefOr[String] = js.undefined
     
-    val `-bench`: js.UndefOr[String] = js.native
+    val `-bench`: js.UndefOr[String] = js.undefined
     
-    val `-bias`: js.UndefOr[String] = js.native
+    val `-bias`: js.UndefOr[String] = js.undefined
     
-    val `-black-threshold`: js.UndefOr[String] = js.native
+    val `-black-threshold`: js.UndefOr[String] = js.undefined
     
-    val `-blue-primary`: js.UndefOr[String] = js.native
+    val `-blue-primary`: js.UndefOr[String] = js.undefined
     
-    val `-blue-shift`: js.UndefOr[String] = js.native
+    val `-blue-shift`: js.UndefOr[String] = js.undefined
     
-    val `-blur`: js.UndefOr[String] = js.native
+    val `-blur`: js.UndefOr[String] = js.undefined
     
-    val `-border`: js.UndefOr[String] = js.native
+    val `-border`: js.UndefOr[String] = js.undefined
     
-    val `-bordercolor`: js.UndefOr[String] = js.native
+    val `-bordercolor`: js.UndefOr[String] = js.undefined
     
-    val `-brightness-contrast`: js.UndefOr[String] = js.native
+    val `-brightness-contrast`: js.UndefOr[String] = js.undefined
     
-    val `-canny`: js.UndefOr[String] = js.native
+    val `-canny`: js.UndefOr[String] = js.undefined
     
-    val `-caption`: js.UndefOr[String] = js.native
+    val `-caption`: js.UndefOr[String] = js.undefined
     
-    val `-cdl`: js.UndefOr[String] = js.native
+    val `-cdl`: js.UndefOr[String] = js.undefined
     
-    val `-channel`: js.UndefOr[String] = js.native
+    val `-channel`: js.UndefOr[String] = js.undefined
     
-    val `-charcoal`: js.UndefOr[String] = js.native
+    val `-charcoal`: js.UndefOr[String] = js.undefined
     
-    val `-chop`: js.UndefOr[String] = js.native
+    val `-chop`: js.UndefOr[String] = js.undefined
     
-    val `-clahe`: js.UndefOr[String] = js.native
+    val `-clahe`: js.UndefOr[String] = js.undefined
     
-    val `-clamp`: js.UndefOr[String] = js.native
+    val `-clamp`: js.UndefOr[String] = js.undefined
     
-    val `-clip`: js.UndefOr[String] = js.native
+    val `-clip`: js.UndefOr[String] = js.undefined
     
-    val `-clip-mask`: js.UndefOr[String] = js.native
+    val `-clip-mask`: js.UndefOr[String] = js.undefined
     
-    val `-clip-path`: js.UndefOr[String] = js.native
+    val `-clip-path`: js.UndefOr[String] = js.undefined
     
-    val `-clone`: js.UndefOr[String] = js.native
+    val `-clone`: js.UndefOr[String] = js.undefined
     
-    val `-clut`: js.UndefOr[String] = js.native
+    val `-clut`: js.UndefOr[String] = js.undefined
     
-    val `-coalesce`: js.UndefOr[String] = js.native
+    val `-coalesce`: js.UndefOr[String] = js.undefined
     
-    val `-color-matrix`: js.UndefOr[String] = js.native
+    val `-color-matrix`: js.UndefOr[String] = js.undefined
     
-    val `-colorize`: js.UndefOr[String] = js.native
+    val `-colorize`: js.UndefOr[String] = js.undefined
     
-    val `-colors`: js.UndefOr[String] = js.native
+    val `-colors`: js.UndefOr[String] = js.undefined
     
-    val `-colorspace`: js.UndefOr[String] = js.native
+    val `-colorspace`: js.UndefOr[String] = js.undefined
     
-    val `-combine`: js.UndefOr[String] = js.native
+    val `-combine`: js.UndefOr[String] = js.undefined
     
-    val `-comment`: js.UndefOr[String] = js.native
+    val `-comment`: js.UndefOr[String] = js.undefined
     
-    val `-compare`: js.UndefOr[String] = js.native
+    val `-compare`: js.UndefOr[String] = js.undefined
     
-    val `-complexoperator`: js.UndefOr[String] = js.native
+    val `-complexoperator`: js.UndefOr[String] = js.undefined
     
-    val `-compose`: js.UndefOr[String] = js.native
+    val `-compose`: js.UndefOr[String] = js.undefined
     
-    val `-composite`: js.UndefOr[String] = js.native
+    val `-composite`: js.UndefOr[String] = js.undefined
     
-    val `-compress`: js.UndefOr[String] = js.native
+    val `-compress`: js.UndefOr[String] = js.undefined
     
-    val `-connected-components`: js.UndefOr[String] = js.native
+    val `-connected-components`: js.UndefOr[String] = js.undefined
     
-    val `-contrast`: js.UndefOr[String] = js.native
+    val `-contrast`: js.UndefOr[String] = js.undefined
     
-    val `-contrast-stretch`: js.UndefOr[String] = js.native
+    val `-contrast-stretch`: js.UndefOr[String] = js.undefined
     
-    val `-convolve`: js.UndefOr[String] = js.native
+    val `-convolve`: js.UndefOr[String] = js.undefined
     
-    val `-copy`: js.UndefOr[String] = js.native
+    val `-copy`: js.UndefOr[String] = js.undefined
     
-    val `-crop`: js.UndefOr[String] = js.native
+    val `-crop`: js.UndefOr[String] = js.undefined
     
-    val `-cycle`: js.UndefOr[String] = js.native
+    val `-cycle`: js.UndefOr[String] = js.undefined
     
-    val `-debug`: js.UndefOr[String] = js.native
+    val `-debug`: js.UndefOr[String] = js.undefined
     
-    val `-decipher`: js.UndefOr[String] = js.native
+    val `-decipher`: js.UndefOr[String] = js.undefined
     
-    val `-deconstruct`: js.UndefOr[String] = js.native
+    val `-deconstruct`: js.UndefOr[String] = js.undefined
     
-    val `-define`: js.UndefOr[String] = js.native
+    val `-define`: js.UndefOr[String] = js.undefined
     
-    val `-delay`: js.UndefOr[String] = js.native
+    val `-delay`: js.UndefOr[String] = js.undefined
     
-    val `-delete`: js.UndefOr[String] = js.native
+    val `-delete`: js.UndefOr[String] = js.undefined
     
-    val `-density`: js.UndefOr[String] = js.native
+    val `-density`: js.UndefOr[String] = js.undefined
     
-    val `-depth`: js.UndefOr[String] = js.native
+    val `-depth`: js.UndefOr[String] = js.undefined
     
-    val `-despeckle`: js.UndefOr[String] = js.native
+    val `-despeckle`: js.UndefOr[String] = js.undefined
     
-    val `-direction`: js.UndefOr[String] = js.native
+    val `-direction`: js.UndefOr[String] = js.undefined
     
-    val `-display`: js.UndefOr[String] = js.native
+    val `-display`: js.UndefOr[String] = js.undefined
     
-    val `-dispose`: js.UndefOr[String] = js.native
+    val `-dispose`: js.UndefOr[String] = js.undefined
     
-    val `-distort`: js.UndefOr[String] = js.native
+    val `-distort`: js.UndefOr[String] = js.undefined
     
-    val `-distribute-cache`: js.UndefOr[String] = js.native
+    val `-distribute-cache`: js.UndefOr[String] = js.undefined
     
-    val `-dither`: js.UndefOr[String] = js.native
+    val `-dither`: js.UndefOr[String] = js.undefined
     
-    val `-draw`: js.UndefOr[String] = js.native
+    val `-draw`: js.UndefOr[String] = js.undefined
     
-    val `-duplicate`: js.UndefOr[String] = js.native
+    val `-duplicate`: js.UndefOr[String] = js.undefined
     
-    val `-edge`: js.UndefOr[String] = js.native
+    val `-edge`: js.UndefOr[String] = js.undefined
     
-    val `-emboss`: js.UndefOr[String] = js.native
+    val `-emboss`: js.UndefOr[String] = js.undefined
     
-    val `-encipher`: js.UndefOr[String] = js.native
+    val `-encipher`: js.UndefOr[String] = js.undefined
     
-    val `-encoding`: js.UndefOr[String] = js.native
+    val `-encoding`: js.UndefOr[String] = js.undefined
     
-    val `-endian`: js.UndefOr[String] = js.native
+    val `-endian`: js.UndefOr[String] = js.undefined
     
-    val `-enhance`: js.UndefOr[String] = js.native
+    val `-enhance`: js.UndefOr[String] = js.undefined
     
-    val `-equalize`: js.UndefOr[String] = js.native
+    val `-equalize`: js.UndefOr[String] = js.undefined
     
-    val `-evaluate`: js.UndefOr[String] = js.native
+    val `-evaluate`: js.UndefOr[String] = js.undefined
     
-    val `-evaluate-sequence`: js.UndefOr[String] = js.native
+    val `-evaluate-sequence`: js.UndefOr[String] = js.undefined
     
-    val `-extent`: js.UndefOr[String] = js.native
+    val `-extent`: js.UndefOr[String] = js.undefined
     
-    val `-extract`: js.UndefOr[String] = js.native
+    val `-extract`: js.UndefOr[String] = js.undefined
     
-    val `-family`: js.UndefOr[String] = js.native
+    val `-family`: js.UndefOr[String] = js.undefined
     
-    val `-features`: js.UndefOr[String] = js.native
+    val `-features`: js.UndefOr[String] = js.undefined
     
-    val `-fft`: js.UndefOr[String] = js.native
+    val `-fft`: js.UndefOr[String] = js.undefined
     
-    val `-fill`: js.UndefOr[String] = js.native
+    val `-fill`: js.UndefOr[String] = js.undefined
     
-    val `-filter`: js.UndefOr[String] = js.native
+    val `-filter`: js.UndefOr[String] = js.undefined
     
-    val `-flatten`: js.UndefOr[String] = js.native
+    val `-flatten`: js.UndefOr[String] = js.undefined
     
-    val `-flip`: js.UndefOr[String] = js.native
+    val `-flip`: js.UndefOr[String] = js.undefined
     
-    val `-floodfill`: js.UndefOr[String] = js.native
+    val `-floodfill`: js.UndefOr[String] = js.undefined
     
-    val `-flop`: js.UndefOr[String] = js.native
+    val `-flop`: js.UndefOr[String] = js.undefined
     
-    val `-font`: js.UndefOr[String] = js.native
+    val `-font`: js.UndefOr[String] = js.undefined
     
-    val `-format`: js.UndefOr[String] = js.native
+    val `-format`: js.UndefOr[String] = js.undefined
     
-    val `-frame`: js.UndefOr[String] = js.native
+    val `-frame`: js.UndefOr[String] = js.undefined
     
-    val `-function`: js.UndefOr[String] = js.native
+    val `-function`: js.UndefOr[String] = js.undefined
     
-    val `-fuzz`: js.UndefOr[String] = js.native
+    val `-fuzz`: js.UndefOr[String] = js.undefined
     
-    val `-fx`: js.UndefOr[String] = js.native
+    val `-fx`: js.UndefOr[String] = js.undefined
     
-    val `-gamma`: js.UndefOr[String] = js.native
+    val `-gamma`: js.UndefOr[String] = js.undefined
     
-    val `-gaussian-blur`: js.UndefOr[String] = js.native
+    val `-gaussian-blur`: js.UndefOr[String] = js.undefined
     
-    val `-geometry`: js.UndefOr[String] = js.native
+    val `-geometry`: js.UndefOr[String] = js.undefined
     
-    val `-gravity`: js.UndefOr[String] = js.native
+    val `-gravity`: js.UndefOr[String] = js.undefined
     
-    val `-grayscale`: js.UndefOr[String] = js.native
+    val `-grayscale`: js.UndefOr[String] = js.undefined
     
-    val `-green-primary`: js.UndefOr[String] = js.native
+    val `-green-primary`: js.UndefOr[String] = js.undefined
     
-    val `-help`: js.UndefOr[String] = js.native
+    val `-help`: js.UndefOr[String] = js.undefined
     
-    val `-hough-lines`: js.UndefOr[String] = js.native
+    val `-hough-lines`: js.UndefOr[String] = js.undefined
     
-    val `-identify`: js.UndefOr[String] = js.native
+    val `-identify`: js.UndefOr[String] = js.undefined
     
-    val `-ift`: js.UndefOr[String] = js.native
+    val `-ift`: js.UndefOr[String] = js.undefined
     
-    val `-implode`: js.UndefOr[String] = js.native
+    val `-implode`: js.UndefOr[String] = js.undefined
     
-    val `-insert`: js.UndefOr[String] = js.native
+    val `-insert`: js.UndefOr[String] = js.undefined
     
-    val `-intensity`: js.UndefOr[String] = js.native
+    val `-intensity`: js.UndefOr[String] = js.undefined
     
-    val `-intent`: js.UndefOr[String] = js.native
+    val `-intent`: js.UndefOr[String] = js.undefined
     
-    val `-interlace`: js.UndefOr[String] = js.native
+    val `-interlace`: js.UndefOr[String] = js.undefined
     
-    val `-interline-spacing`: js.UndefOr[String] = js.native
+    val `-interline-spacing`: js.UndefOr[String] = js.undefined
     
-    val `-interpolate`: js.UndefOr[String] = js.native
+    val `-interpolate`: js.UndefOr[String] = js.undefined
     
-    val `-interword-spacing`: js.UndefOr[String] = js.native
+    val `-interword-spacing`: js.UndefOr[String] = js.undefined
     
-    val `-kerning`: js.UndefOr[String] = js.native
+    val `-kerning`: js.UndefOr[String] = js.undefined
     
-    val `-kmeans`: js.UndefOr[String] = js.native
+    val `-kmeans`: js.UndefOr[String] = js.undefined
     
-    val `-kuwahara`: js.UndefOr[String] = js.native
+    val `-kuwahara`: js.UndefOr[String] = js.undefined
     
-    val `-label`: js.UndefOr[String] = js.native
+    val `-label`: js.UndefOr[String] = js.undefined
     
-    val `-lat`: js.UndefOr[String] = js.native
+    val `-lat`: js.UndefOr[String] = js.undefined
     
-    val `-layers`: js.UndefOr[String] = js.native
+    val `-layers`: js.UndefOr[String] = js.undefined
     
-    val `-level`: js.UndefOr[String] = js.native
+    val `-level`: js.UndefOr[String] = js.undefined
     
-    val `-limit`: js.UndefOr[String] = js.native
+    val `-limit`: js.UndefOr[String] = js.undefined
     
-    val `-linear-stretch`: js.UndefOr[String] = js.native
+    val `-linear-stretch`: js.UndefOr[String] = js.undefined
     
-    val `-liquid-rescale`: js.UndefOr[String] = js.native
+    val `-liquid-rescale`: js.UndefOr[String] = js.undefined
     
-    val `-list`: js.UndefOr[String] = js.native
+    val `-list`: js.UndefOr[String] = js.undefined
     
-    val `-log`: js.UndefOr[String] = js.native
+    val `-log`: js.UndefOr[String] = js.undefined
     
-    val `-loop`: js.UndefOr[String] = js.native
+    val `-loop`: js.UndefOr[String] = js.undefined
     
-    val `-mattecolor`: js.UndefOr[String] = js.native
+    val `-mattecolor`: js.UndefOr[String] = js.undefined
     
-    val `-mean-shift`: js.UndefOr[String] = js.native
+    val `-mean-shift`: js.UndefOr[String] = js.undefined
     
-    val `-median`: js.UndefOr[String] = js.native
+    val `-median`: js.UndefOr[String] = js.undefined
     
-    val `-metric`: js.UndefOr[String] = js.native
+    val `-metric`: js.UndefOr[String] = js.undefined
     
-    val `-mode`: js.UndefOr[String] = js.native
+    val `-mode`: js.UndefOr[String] = js.undefined
     
-    val `-modulate`: js.UndefOr[String] = js.native
+    val `-modulate`: js.UndefOr[String] = js.undefined
     
-    val `-moments`: js.UndefOr[String] = js.native
+    val `-moments`: js.UndefOr[String] = js.undefined
     
-    val `-monitor`: js.UndefOr[String] = js.native
+    val `-monitor`: js.UndefOr[String] = js.undefined
     
-    val `-monochrome`: js.UndefOr[String] = js.native
+    val `-monochrome`: js.UndefOr[String] = js.undefined
     
-    val `-morph`: js.UndefOr[String] = js.native
+    val `-morph`: js.UndefOr[String] = js.undefined
     
-    val `-morphology`: js.UndefOr[String] = js.native
+    val `-morphology`: js.UndefOr[String] = js.undefined
     
-    val `-motion-blur`: js.UndefOr[String] = js.native
+    val `-motion-blur`: js.UndefOr[String] = js.undefined
     
-    val `-negate`: js.UndefOr[String] = js.native
+    val `-negate`: js.UndefOr[String] = js.undefined
     
-    val `-noise`: js.UndefOr[String] = js.native
+    val `-noise`: js.UndefOr[String] = js.undefined
     
-    val `-normalize`: js.UndefOr[String] = js.native
+    val `-normalize`: js.UndefOr[String] = js.undefined
     
-    val `-opaque`: js.UndefOr[String] = js.native
+    val `-opaque`: js.UndefOr[String] = js.undefined
     
-    val `-ordered-dither`: js.UndefOr[String] = js.native
+    val `-ordered-dither`: js.UndefOr[String] = js.undefined
     
-    val `-orient`: js.UndefOr[String] = js.native
+    val `-orient`: js.UndefOr[String] = js.undefined
     
-    val `-page`: js.UndefOr[String] = js.native
+    val `-page`: js.UndefOr[String] = js.undefined
     
-    val `-paint`: js.UndefOr[String] = js.native
+    val `-paint`: js.UndefOr[String] = js.undefined
     
-    val `-perceptible`: js.UndefOr[String] = js.native
+    val `-perceptible`: js.UndefOr[String] = js.undefined
     
-    val `-ping`: js.UndefOr[String] = js.native
+    val `-ping`: js.UndefOr[String] = js.undefined
     
-    val `-pointsize`: js.UndefOr[String] = js.native
+    val `-pointsize`: js.UndefOr[String] = js.undefined
     
-    val `-polaroid`: js.UndefOr[String] = js.native
+    val `-polaroid`: js.UndefOr[String] = js.undefined
     
-    val `-poly`: js.UndefOr[String] = js.native
+    val `-poly`: js.UndefOr[String] = js.undefined
     
-    val `-posterize`: js.UndefOr[String] = js.native
+    val `-posterize`: js.UndefOr[String] = js.undefined
     
-    val `-precision`: js.UndefOr[String] = js.native
+    val `-precision`: js.UndefOr[String] = js.undefined
     
-    val `-preview`: js.UndefOr[String] = js.native
+    val `-preview`: js.UndefOr[String] = js.undefined
     
-    val `-print`: js.UndefOr[String] = js.native
+    val `-print`: js.UndefOr[String] = js.undefined
     
-    val `-process`: js.UndefOr[String] = js.native
+    val `-process`: js.UndefOr[String] = js.undefined
     
-    val `-profile`: js.UndefOr[String] = js.native
+    val `-profile`: js.UndefOr[String] = js.undefined
     
-    val `-quality`: js.UndefOr[String] = js.native
+    val `-quality`: js.UndefOr[String] = js.undefined
     
-    val `-quantize`: js.UndefOr[String] = js.native
+    val `-quantize`: js.UndefOr[String] = js.undefined
     
-    val `-quiet`: js.UndefOr[String] = js.native
+    val `-quiet`: js.UndefOr[String] = js.undefined
     
-    val `-radial-blur`: js.UndefOr[String] = js.native
+    val `-radial-blur`: js.UndefOr[String] = js.undefined
     
-    val `-raise`: js.UndefOr[String] = js.native
+    val `-raise`: js.UndefOr[String] = js.undefined
     
-    val `-random-threshold`: js.UndefOr[String] = js.native
+    val `-random-threshold`: js.UndefOr[String] = js.undefined
     
-    val `-range-threshold`: js.UndefOr[String] = js.native
+    val `-range-threshold`: js.UndefOr[String] = js.undefined
     
-    val `-read-mask`: js.UndefOr[String] = js.native
+    val `-read-mask`: js.UndefOr[String] = js.undefined
     
-    val `-red-primary`: js.UndefOr[String] = js.native
+    val `-red-primary`: js.UndefOr[String] = js.undefined
     
-    val `-regard-warnings`: js.UndefOr[String] = js.native
+    val `-regard-warnings`: js.UndefOr[String] = js.undefined
     
-    val `-region`: js.UndefOr[String] = js.native
+    val `-region`: js.UndefOr[String] = js.undefined
     
-    val `-remap`: js.UndefOr[String] = js.native
+    val `-remap`: js.UndefOr[String] = js.undefined
     
-    val `-render`: js.UndefOr[String] = js.native
+    val `-render`: js.UndefOr[String] = js.undefined
     
-    val `-repage`: js.UndefOr[String] = js.native
+    val `-repage`: js.UndefOr[String] = js.undefined
     
-    val `-resample`: js.UndefOr[String] = js.native
+    val `-resample`: js.UndefOr[String] = js.undefined
     
-    val `-resize`: js.UndefOr[String] = js.native
+    val `-resize`: js.UndefOr[String] = js.undefined
     
-    val `-respect-parentheses`: js.UndefOr[String] = js.native
+    val `-respect-parentheses`: js.UndefOr[String] = js.undefined
     
-    val `-roll`: js.UndefOr[String] = js.native
+    val `-roll`: js.UndefOr[String] = js.undefined
     
-    val `-rotate`: js.UndefOr[String] = js.native
+    val `-rotate`: js.UndefOr[String] = js.undefined
     
-    val `-sample`: js.UndefOr[String] = js.native
+    val `-sample`: js.UndefOr[String] = js.undefined
     
-    val `-sampling-factor`: js.UndefOr[String] = js.native
+    val `-sampling-factor`: js.UndefOr[String] = js.undefined
     
-    val `-scale`: js.UndefOr[String] = js.native
+    val `-scale`: js.UndefOr[String] = js.undefined
     
-    val `-scene`: js.UndefOr[String] = js.native
+    val `-scene`: js.UndefOr[String] = js.undefined
     
-    val `-seed`: js.UndefOr[String] = js.native
+    val `-seed`: js.UndefOr[String] = js.undefined
     
-    val `-segment`: js.UndefOr[String] = js.native
+    val `-segment`: js.UndefOr[String] = js.undefined
     
-    val `-selective-blur`: js.UndefOr[String] = js.native
+    val `-selective-blur`: js.UndefOr[String] = js.undefined
     
-    val `-separate`: js.UndefOr[String] = js.native
+    val `-separate`: js.UndefOr[String] = js.undefined
     
-    val `-sepia-tone`: js.UndefOr[String] = js.native
+    val `-sepia-tone`: js.UndefOr[String] = js.undefined
     
-    val `-set`: js.UndefOr[String] = js.native
+    val `-set`: js.UndefOr[String] = js.undefined
     
-    val `-shade`: js.UndefOr[String] = js.native
+    val `-shade`: js.UndefOr[String] = js.undefined
     
-    val `-shadow`: js.UndefOr[String] = js.native
+    val `-shadow`: js.UndefOr[String] = js.undefined
     
-    val `-sharpen`: js.UndefOr[String] = js.native
+    val `-sharpen`: js.UndefOr[String] = js.undefined
     
-    val `-shave`: js.UndefOr[String] = js.native
+    val `-shave`: js.UndefOr[String] = js.undefined
     
-    val `-shear`: js.UndefOr[String] = js.native
+    val `-shear`: js.UndefOr[String] = js.undefined
     
-    val `-sigmoidal-contrast`: js.UndefOr[String] = js.native
+    val `-sigmoidal-contrast`: js.UndefOr[String] = js.undefined
     
-    val `-size`: js.UndefOr[String] = js.native
+    val `-size`: js.UndefOr[String] = js.undefined
     
-    val `-sketch`: js.UndefOr[String] = js.native
+    val `-sketch`: js.UndefOr[String] = js.undefined
     
-    val `-smush`: js.UndefOr[String] = js.native
+    val `-smush`: js.UndefOr[String] = js.undefined
     
-    val `-solarize`: js.UndefOr[String] = js.native
+    val `-solarize`: js.UndefOr[String] = js.undefined
     
-    val `-splice`: js.UndefOr[String] = js.native
+    val `-splice`: js.UndefOr[String] = js.undefined
     
-    val `-spread`: js.UndefOr[String] = js.native
+    val `-spread`: js.UndefOr[String] = js.undefined
     
-    val `-statistic`: js.UndefOr[String] = js.native
+    val `-statistic`: js.UndefOr[String] = js.undefined
     
-    val `-stretch`: js.UndefOr[String] = js.native
+    val `-stretch`: js.UndefOr[String] = js.undefined
     
-    val `-strip`: js.UndefOr[String] = js.native
+    val `-strip`: js.UndefOr[String] = js.undefined
     
-    val `-stroke`: js.UndefOr[String] = js.native
+    val `-stroke`: js.UndefOr[String] = js.undefined
     
-    val `-strokewidth`: js.UndefOr[String] = js.native
+    val `-strokewidth`: js.UndefOr[String] = js.undefined
     
-    val `-style`: js.UndefOr[String] = js.native
+    val `-style`: js.UndefOr[String] = js.undefined
     
-    val `-swap`: js.UndefOr[String] = js.native
+    val `-swap`: js.UndefOr[String] = js.undefined
     
-    val `-swirl`: js.UndefOr[String] = js.native
+    val `-swirl`: js.UndefOr[String] = js.undefined
     
-    val `-synchronize`: js.UndefOr[String] = js.native
+    val `-synchronize`: js.UndefOr[String] = js.undefined
     
-    val `-taint`: js.UndefOr[String] = js.native
+    val `-taint`: js.UndefOr[String] = js.undefined
     
-    val `-texture`: js.UndefOr[String] = js.native
+    val `-texture`: js.UndefOr[String] = js.undefined
     
-    val `-threshold`: js.UndefOr[String] = js.native
+    val `-threshold`: js.UndefOr[String] = js.undefined
     
-    val `-thumbnail`: js.UndefOr[String] = js.native
+    val `-thumbnail`: js.UndefOr[String] = js.undefined
     
-    val `-tile`: js.UndefOr[String] = js.native
+    val `-tile`: js.UndefOr[String] = js.undefined
     
-    val `-tile-offset`: js.UndefOr[String] = js.native
+    val `-tile-offset`: js.UndefOr[String] = js.undefined
     
-    val `-tint`: js.UndefOr[String] = js.native
+    val `-tint`: js.UndefOr[String] = js.undefined
     
-    val `-transform`: js.UndefOr[String] = js.native
+    val `-transform`: js.UndefOr[String] = js.undefined
     
-    val `-transparent`: js.UndefOr[String] = js.native
+    val `-transparent`: js.UndefOr[String] = js.undefined
     
-    val `-transparent-color`: js.UndefOr[String] = js.native
+    val `-transparent-color`: js.UndefOr[String] = js.undefined
     
-    val `-transpose`: js.UndefOr[String] = js.native
+    val `-transpose`: js.UndefOr[String] = js.undefined
     
-    val `-transverse`: js.UndefOr[String] = js.native
+    val `-transverse`: js.UndefOr[String] = js.undefined
     
-    val `-treedepth`: js.UndefOr[String] = js.native
+    val `-treedepth`: js.UndefOr[String] = js.undefined
     
-    val `-trim`: js.UndefOr[String] = js.native
+    val `-trim`: js.UndefOr[String] = js.undefined
     
-    val `-type`: js.UndefOr[String] = js.native
+    val `-type`: js.UndefOr[String] = js.undefined
     
-    val `-undercolor`: js.UndefOr[String] = js.native
+    val `-undercolor`: js.UndefOr[String] = js.undefined
     
-    val `-unique-colors`: js.UndefOr[String] = js.native
+    val `-unique-colors`: js.UndefOr[String] = js.undefined
     
-    val `-units`: js.UndefOr[String] = js.native
+    val `-units`: js.UndefOr[String] = js.undefined
     
-    val `-unsharp`: js.UndefOr[String] = js.native
+    val `-unsharp`: js.UndefOr[String] = js.undefined
     
-    val `-verbose`: js.UndefOr[String] = js.native
+    val `-verbose`: js.UndefOr[String] = js.undefined
     
-    val `-version`: js.UndefOr[String] = js.native
+    val `-version`: js.UndefOr[String] = js.undefined
     
-    val `-view`: js.UndefOr[String] = js.native
+    val `-view`: js.UndefOr[String] = js.undefined
     
-    val `-vignette`: js.UndefOr[String] = js.native
+    val `-vignette`: js.UndefOr[String] = js.undefined
     
-    val `-virtual-pixel`: js.UndefOr[String] = js.native
+    val `-virtual-pixel`: js.UndefOr[String] = js.undefined
     
-    val `-wave`: js.UndefOr[String] = js.native
+    val `-wave`: js.UndefOr[String] = js.undefined
     
-    val `-wavelet-denoise`: js.UndefOr[String] = js.native
+    val `-wavelet-denoise`: js.UndefOr[String] = js.undefined
     
-    val `-weight`: js.UndefOr[String] = js.native
+    val `-weight`: js.UndefOr[String] = js.undefined
     
-    val `-white-point`: js.UndefOr[String] = js.native
+    val `-white-point`: js.UndefOr[String] = js.undefined
     
-    val `-white-threshold`: js.UndefOr[String] = js.native
+    val `-white-threshold`: js.UndefOr[String] = js.undefined
     
-    val `-write`: js.UndefOr[String] = js.native
+    val `-write`: js.UndefOr[String] = js.undefined
     
-    val `-write-mask`: js.UndefOr[String] = js.native
+    val `-write-mask`: js.UndefOr[String] = js.undefined
   }
   object ReadonlyConvertOptions {
     

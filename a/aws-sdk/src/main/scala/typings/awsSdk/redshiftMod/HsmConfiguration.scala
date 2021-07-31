@@ -2,36 +2,34 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HsmConfiguration extends StObject {
   
   /**
     * A text description of the HSM configuration.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Amazon Redshift HSM configuration.
     */
-  var HsmConfigurationIdentifier: js.UndefOr[String] = js.native
+  var HsmConfigurationIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The IP address that the Amazon Redshift cluster must use to access the HSM.
     */
-  var HsmIpAddress: js.UndefOr[String] = js.native
+  var HsmIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the partition in the HSM where the Amazon Redshift clusters will store their database encryption keys.
     */
-  var HsmPartitionName: js.UndefOr[String] = js.native
+  var HsmPartitionName: js.UndefOr[String] = js.undefined
   
   /**
     * The list of tags for the HSM configuration.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object HsmConfiguration {
   

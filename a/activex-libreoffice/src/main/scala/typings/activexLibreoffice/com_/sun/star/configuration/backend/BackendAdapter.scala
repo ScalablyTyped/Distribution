@@ -6,16 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * implements {@link Backend} retrieving data from a {@link SingleBackend} .
   * @since OOo 1.1.2
   */
-@js.native
 trait BackendAdapter
-  extends Backend
+  extends StObject
+     with Backend
      with XInitialization
 object BackendAdapter {
   
@@ -29,7 +28,7 @@ object BackendAdapter {
     getOwnUpdateHandler: String => XUpdateHandler,
     getOwnerEntity: () => String,
     getUpdateHandler: (String, String) => XUpdateHandler,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     isEqualEntity: (String, String) => Boolean,
     listLayers: (String, String) => SafeArray[XLayer],
     listOwnLayers: String => SafeArray[XLayer],

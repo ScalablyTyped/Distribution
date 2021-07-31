@@ -9,7 +9,6 @@ import typings.javascriptTimeAgo.javascriptTimeAgoStrings.two
 import typings.javascriptTimeAgo.localeMod.Duration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deMod extends Shortcut {
@@ -18,33 +17,31 @@ object deMod extends Shortcut {
   @js.native
   val ^ : Locale = js.native
   
-  @js.native
   trait Locale extends StObject {
     
-    var locale: de = js.native
+    var locale: de
     
-    var long: Duration = js.native
+    var long: Duration
     
-    var `long-time`: Duration = js.native
+    var `long-time`: Duration
     
-    var narrow: Duration = js.native
+    var narrow: Duration
     
-    def quantify(n: Double): one | two | few | other = js.native
+    def quantify(n: Double): one | two | few | other
     
-    var short: Duration = js.native
+    var short: Duration
   }
   object Locale {
     
     @scala.inline
     def apply(
-      locale: de,
       long: Duration,
       `long-time`: Duration,
       narrow: Duration,
       quantify: Double => one | two | few | other,
       short: Duration
     ): Locale = {
-      val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], narrow = narrow.asInstanceOf[js.Any], quantify = js.Any.fromFunction1(quantify), short = short.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(locale = "de", long = long.asInstanceOf[js.Any], narrow = narrow.asInstanceOf[js.Any], quantify = js.Any.fromFunction1(quantify), short = short.asInstanceOf[js.Any])
       __obj.updateDynamic("long-time")(`long-time`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Locale]
     }

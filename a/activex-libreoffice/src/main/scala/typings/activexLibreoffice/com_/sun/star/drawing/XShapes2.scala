@@ -2,14 +2,12 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows insertion of shapes at different positions.
   * @since LibreOffice 4.2
   */
-@js.native
 trait XShapes2 extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait XShapes2 extends StObject {
     * @param xShape shape to be inserted.
     * @since LibreOffice 4.2
     */
-  def addBottom(xShape: XShape): Unit = js.native
+  def addBottom(xShape: XShape): Unit
   
   /**
     * Insert a new shape to the top of the stack.
     * @param xShape shape to be inserted.
     * @since LibreOffice 4.2
     */
-  def addTop(xShape: XShape): Unit = js.native
+  def addTop(xShape: XShape): Unit
 }
 object XShapes2 {
   

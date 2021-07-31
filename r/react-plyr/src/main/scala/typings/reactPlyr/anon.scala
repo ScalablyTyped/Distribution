@@ -2,15 +2,13 @@ package typings.reactPlyr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Active extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
   }
   object Active {
     
@@ -31,12 +29,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Controls extends StObject {
     
-    var controls: js.UndefOr[Boolean] = js.native
+    var controls: js.UndefOr[Boolean] = js.undefined
     
-    var seek: js.UndefOr[Boolean] = js.native
+    var seek: js.UndefOr[Boolean] = js.undefined
   }
   object Controls {
     
@@ -63,12 +60,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Default extends StObject {
     
-    var default: js.UndefOr[String | Double] = js.native
+    var default: js.UndefOr[String | Double] = js.undefined
     
-    var option: js.UndefOr[js.Array[Double | String]] = js.native
+    var option: js.UndefOr[js.Array[Double | String]] = js.undefined
   }
   object Default {
     
@@ -98,14 +94,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Enabled extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var fallback: js.UndefOr[Boolean] = js.native
+    var fallback: js.UndefOr[Boolean] = js.undefined
     
-    var iosNative: js.UndefOr[Boolean] = js.native
+    var iosNative: js.UndefOr[Boolean] = js.undefined
   }
   object Enabled {
     
@@ -138,12 +133,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Focused extends StObject {
     
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
-    var global: js.UndefOr[Boolean] = js.native
+    var global: js.UndefOr[Boolean] = js.undefined
   }
   object Focused {
     
@@ -170,12 +164,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object Key {
     
@@ -202,20 +195,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Kind extends StObject {
     
-    var default: js.UndefOr[Boolean] = js.native
+    var default: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[js.Any] = js.native
+    var key: js.UndefOr[js.Any] = js.undefined
     
-    var kind: js.UndefOr[String] = js.native
+    var kind: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var src: String = js.native
+    var src: String
     
-    var srclang: js.UndefOr[String] = js.native
+    var srclang: js.UndefOr[String] = js.undefined
   }
   object Kind {
     
@@ -263,12 +255,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var options: js.UndefOr[js.Array[Double]] = js.native
+    var options: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var selected: js.UndefOr[Double] = js.native
+    var selected: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -298,14 +289,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var src: String = js.native
+    var src: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Size {
     

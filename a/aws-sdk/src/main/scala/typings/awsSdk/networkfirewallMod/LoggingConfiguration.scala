@@ -2,16 +2,14 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingConfiguration extends StObject {
   
   /**
     * Defines the logging destinations for the logs for a firewall. Network Firewall generates logs for stateful rule groups. 
     */
-  var LogDestinationConfigs: typings.awsSdk.networkfirewallMod.LogDestinationConfigs = js.native
+  var LogDestinationConfigs: typings.awsSdk.networkfirewallMod.LogDestinationConfigs
 }
 object LoggingConfiguration {
   

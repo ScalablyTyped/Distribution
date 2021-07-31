@@ -2,31 +2,29 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportDocumentationPartsRequest extends StObject {
   
   /**
     * [Required] Raw byte array representing the to-be-imported documentation parts. To import from an OpenAPI file, this is a JSON object.
     */
-  var body: _Blob = js.native
+  var body: _Blob
   
   /**
     * A query parameter to specify whether to rollback the documentation importation (true) or not (false) when a warning is encountered. The default value is false.
     */
-  var failOnWarnings: js.UndefOr[Boolean] = js.native
+  var failOnWarnings: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A query parameter to indicate whether to overwrite (OVERWRITE) any existing DocumentationParts definition or to merge (MERGE) the new definition into the existing one. The default value is MERGE.
     */
-  var mode: js.UndefOr[PutMode] = js.native
+  var mode: js.UndefOr[PutMode] = js.undefined
   
   /**
     * [Required] The string identifier of the associated RestApi.
     */
-  var restApiId: String = js.native
+  var restApiId: String
 }
 object ImportDocumentationPartsRequest {
   

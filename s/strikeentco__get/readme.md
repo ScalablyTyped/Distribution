@@ -12,7 +12,7 @@ Get a property from a nested object using a dot path or custom separator
 | Keywords           | obj, object, prop, property, dot, path, get, access, notation, dotty, key, nested, paths, properties, props, segment, value, values, custom, separator, small, fast |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 46780 |
+| # downloads        | 82090 |
 | # stars            | 0 |
 
 ## Links

@@ -2,84 +2,82 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountUISettings extends StObject {
   
-  var adminMessage: js.UndefOr[AdminMessage] = js.native
+  var adminMessage: js.UndefOr[AdminMessage] = js.undefined
   
-  var askAnAdmin: js.UndefOr[AskAnAdmin] = js.native
+  var askAnAdmin: js.UndefOr[AskAnAdmin] = js.undefined
   
-  var enableAdminMessage: js.UndefOr[String] = js.native
+  var enableAdminMessage: js.UndefOr[String] = js.undefined
   
   var enableAdminMessageMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var enableEasySignCanUseMultiTemplateApply: js.UndefOr[String] = js.native
+  var enableEasySignCanUseMultiTemplateApply: js.UndefOr[String] = js.undefined
   
   var enableEasySignCanUseMultiTemplateApplyMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var enableEasySignTemplateUpload: js.UndefOr[String] = js.native
+  var enableEasySignTemplateUpload: js.UndefOr[String] = js.undefined
   
   var enableEasySignTemplateUploadMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var enableEnvelopeCopyWithData: js.UndefOr[String] = js.native
+  var enableEnvelopeCopyWithData: js.UndefOr[String] = js.undefined
   
   var enableEnvelopeCopyWithDataMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var hideSendAnEnvelope: js.UndefOr[String] = js.native
+  var hideSendAnEnvelope: js.UndefOr[String] = js.undefined
   
   var hideSendAnEnvelopeMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, the **Templates** menu is hidden from account users who are not Admins. The default value is **false**.
     */
-  var hideUseATemplate: js.UndefOr[String] = js.native
+  var hideUseATemplate: js.UndefOr[String] = js.undefined
   
-  var hideUseATemplateInPrepare: js.UndefOr[String] = js.native
+  var hideUseATemplateInPrepare: js.UndefOr[String] = js.undefined
   
   var hideUseATemplateInPrepareMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   var hideUseATemplateMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var orderBasedRecipientIdGeneration: js.UndefOr[String] = js.native
+  var orderBasedRecipientIdGeneration: js.UndefOr[String] = js.undefined
   
   var orderBasedRecipientIdGenerationMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var removeEnvelopeForwarding: js.UndefOr[String] = js.native
+  var removeEnvelopeForwarding: js.UndefOr[String] = js.undefined
   
   var removeEnvelopeForwardingMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var shouldRedactAccessCode: js.UndefOr[String] = js.native
+  var shouldRedactAccessCode: js.UndefOr[String] = js.undefined
   
   var shouldRedactAccessCodeMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var uploadNewImageToSignOrInitial: js.UndefOr[String] = js.native
+  var uploadNewImageToSignOrInitial: js.UndefOr[String] = js.undefined
   
   var uploadNewImageToSignOrInitialMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
 }
 object AccountUISettings {
   

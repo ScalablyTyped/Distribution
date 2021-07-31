@@ -2,29 +2,27 @@ package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Digest holds a cryptographic message digest.
   */
-@js.native
 trait SchemaDigest extends StObject {
   
   /**
     * A message digest produced with the SHA-256 algorithm.
     */
-  var sha256: js.UndefOr[String] = js.native
+  var sha256: js.UndefOr[String] = js.undefined
   
   /**
     * A message digest produced with the SHA-384 algorithm.
     */
-  var sha384: js.UndefOr[String] = js.native
+  var sha384: js.UndefOr[String] = js.undefined
   
   /**
     * A message digest produced with the SHA-512 algorithm.
     */
-  var sha512: js.UndefOr[String] = js.native
+  var sha512: js.UndefOr[String] = js.undefined
 }
 object SchemaDigest {
   

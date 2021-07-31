@@ -2,17 +2,17 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The phone info options for single-factor sign-in. Only phone number is
   * required.
   */
-@js.native
-trait PhoneSingleFactorInfoOptions extends PhoneInfoOptions {
+trait PhoneSingleFactorInfoOptions
+  extends StObject
+     with PhoneInfoOptions {
   
-  var phoneNumber: String = js.native
+  var phoneNumber: String
 }
 object PhoneSingleFactorInfoOptions {
   

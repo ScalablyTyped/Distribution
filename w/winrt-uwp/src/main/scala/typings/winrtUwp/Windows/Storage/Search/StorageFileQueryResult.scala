@@ -12,18 +12,17 @@ import typings.winrtUwp.winrtUwpStrings.contentschanged
 import typings.winrtUwp.winrtUwpStrings.optionschanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the results of a query of the files in the location that is represented by a storageFolder object. You can use storageFileQueryResult to enumerate the files in that storageFolder location. */
 @js.native
 trait StorageFileQueryResult extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_contentschanged(`type`: contentschanged, listener: TypedEventHandler[IStorageQueryResultBase, _]): Unit = js.native
+  def addEventListener_contentschanged(`type`: contentschanged, listener: TypedEventHandler[IStorageQueryResultBase, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_optionschanged(`type`: optionschanged, listener: TypedEventHandler[IStorageQueryResultBase, _]): Unit = js.native
+  def addEventListener_optionschanged(`type`: optionschanged, listener: TypedEventHandler[IStorageQueryResultBase, js.Any]): Unit = js.native
   
   /**
     * Modifies query results based on new QueryOptions .
@@ -51,14 +50,14 @@ trait StorageFileQueryResult extends StObject {
     * Retrieves a list of all the files in the query result set.
     * @return When this method completes successfully, it returns a list (type IVectorView ) of files that are represented by storageFile objects.
     */
-  def getFilesAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getFilesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   /**
     * Retrieves a list of files in a specified range.
     * @param startIndex The zero-based index of the first file to retrieve. This parameter is 0 by default.
     * @param maxNumberOfItems The maximum number of files to retrieve. Use -1 to retrieve all files. If the range contains fewer files than the max number, all files in the range are returned.
     * @return When this method completes successfully, it returns a list (type IVectorView ) of files that are represented by storageFile objects.
     */
-  def getFilesAsync(startIndex: Double, maxNumberOfItems: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getFilesAsync(startIndex: Double, maxNumberOfItems: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Retrieves the number of files in the set of query results.
@@ -71,23 +70,23 @@ trait StorageFileQueryResult extends StObject {
     * @param file The file to query for properties.
     * @return The matched properties and corresponding text ranges.
     */
-  def getMatchingPropertiesWithRanges(file: StorageFile): IMap[String, IVectorView[_]] = js.native
+  def getMatchingPropertiesWithRanges(file: StorageFile): IMap[String, IVectorView[js.Any]] = js.native
   
   /** Fires when a file is added to, deleted from, or modified in the folder being queried. This event only fires after GetFilesAsync has been called at least once. */
-  def oncontentschanged(ev: js.Any with WinRTEvent[IStorageQueryResultBase]): Unit = js.native
+  def oncontentschanged(ev: js.Any & WinRTEvent[IStorageQueryResultBase]): Unit = js.native
   /** Fires when a file is added to, deleted from, or modified in the folder being queried. This event only fires after GetFilesAsync has been called at least once. */
   @JSName("oncontentschanged")
-  var oncontentschanged_Original: TypedEventHandler[IStorageQueryResultBase, _] = js.native
+  var oncontentschanged_Original: TypedEventHandler[IStorageQueryResultBase, js.Any] = js.native
   
   /** Fires when the query options change. */
-  def onoptionschanged(ev: js.Any with WinRTEvent[IStorageQueryResultBase]): Unit = js.native
+  def onoptionschanged(ev: js.Any & WinRTEvent[IStorageQueryResultBase]): Unit = js.native
   /** Fires when the query options change. */
   @JSName("onoptionschanged")
-  var onoptionschanged_Original: TypedEventHandler[IStorageQueryResultBase, _] = js.native
+  var onoptionschanged_Original: TypedEventHandler[IStorageQueryResultBase, js.Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_contentschanged(`type`: contentschanged, listener: TypedEventHandler[IStorageQueryResultBase, _]): Unit = js.native
+  def removeEventListener_contentschanged(`type`: contentschanged, listener: TypedEventHandler[IStorageQueryResultBase, js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_optionschanged(`type`: optionschanged, listener: TypedEventHandler[IStorageQueryResultBase, _]): Unit = js.native
+  def removeEventListener_optionschanged(`type`: optionschanged, listener: TypedEventHandler[IStorageQueryResultBase, js.Any]): Unit = js.native
 }

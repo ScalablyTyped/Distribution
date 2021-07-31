@@ -2,17 +2,15 @@ package typings.rcFieldForm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invalid extends StObject {
   
-  var format: String = js.native
+  var format: String
   
-  var invalid: String = js.native
+  var invalid: String
   
-  var parse: String = js.native
+  var parse: String
 }
 object Invalid {
   

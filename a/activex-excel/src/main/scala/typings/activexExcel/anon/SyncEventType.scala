@@ -4,15 +4,13 @@ import typings.activexExcel.Excel.Workbook
 import typings.activexOffice.Office.MsoSyncEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SyncEventType extends StObject {
   
-  val SyncEventType: MsoSyncEventType = js.native
+  val SyncEventType: MsoSyncEventType
   
-  val Wb: Workbook = js.native
+  val Wb: Workbook
 }
 object SyncEventType {
   

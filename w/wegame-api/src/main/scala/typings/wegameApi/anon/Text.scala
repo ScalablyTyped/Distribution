@@ -4,19 +4,17 @@ import typings.wegameApi.wx.types.ButtonStyle
 import typings.wegameApi.wx.types.ButtonType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Text extends StObject {
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[ButtonStyle] = js.native
+  var style: js.UndefOr[ButtonStyle] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var `type`: ButtonType = js.native
+  var `type`: ButtonType
 }
 object Text {
   

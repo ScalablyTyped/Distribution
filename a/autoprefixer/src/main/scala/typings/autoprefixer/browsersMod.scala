@@ -4,28 +4,37 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.browserslist.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browsersMod {
   
   @JSImport("autoprefixer/lib/browsers", JSImport.Namespace)
   @js.native
-  class ^ protected () extends BrowsersImpl {
+  class ^ protected ()
+    extends StObject
+       with BrowsersImpl {
     def this(data: StringDictionary[js.Any]) = this()
     def this(data: StringDictionary[js.Any], options: js.Any) = this()
-    def this(data: StringDictionary[js.Any], options: js.UndefOr[scala.Nothing], browserslistOpts: Options) = this()
     def this(data: StringDictionary[js.Any], options: js.Any, browserslistOpts: Options) = this()
+    def this(data: StringDictionary[js.Any], options: Unit, browserslistOpts: Options) = this()
+    
+    /* CompleteClass */
+    override def isSelected(browser: String): Boolean = js.native
+    
+    /* CompleteClass */
+    override def parse(queries: Queries): js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def prefix(browser: String): String = js.native
   }
   
-  @js.native
   trait Browsers extends StObject {
     
-    def isSelected(browser: String): Boolean = js.native
+    def isSelected(browser: String): Boolean
     
-    def parse(queries: Queries): js.Array[String] = js.native
+    def parse(queries: Queries): js.Array[String]
     
-    def prefix(browser: String): String = js.native
+    def prefix(browser: String): String
   }
   object Browsers {
     
@@ -50,7 +59,9 @@ object browsersMod {
   }
   
   @js.native
-  trait BrowsersImpl extends Browsers {
+  trait BrowsersImpl
+    extends StObject
+       with Browsers {
     
     def parse(queries: String): js.Array[String] = js.native
     def parse(queries: js.Array[String]): js.Array[String] = js.native

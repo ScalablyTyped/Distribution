@@ -5,7 +5,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("H.map.Overlay")
 @js.native
 class Overlay protected ()
-  extends typings.heremaps.H.map.Overlay {
+  extends StObject
+     with typings.heremaps.H.map.Overlay {
   /**
     * Constructor
     * @param bounds {H.geo.Rect} - The geographical reactangular area of this overlay

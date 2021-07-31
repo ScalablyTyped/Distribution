@@ -2,25 +2,25 @@ package typings.knockback.Knockback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ViewModelOptions extends OptionsBase {
+trait ViewModelOptions
+  extends StObject
+     with OptionsBase {
   
   // the path to the value (used to create related observables from the factory).
-  var factories: js.UndefOr[js.Any] = js.native
+  var factories: js.UndefOr[js.Any] = js.undefined
   
   // restricts the keys used on a model. Useful for reducing the number of kb.Observables created from a limited set of Backbone.Model attributes
-  def `if`(objOrArray: js.Any): js.Any = js.native
+  def `if`(objOrArray: js.Any): js.Any
   
-  var internals: js.UndefOr[js.Array[String]] = js.native
+  var internals: js.UndefOr[js.Array[String]] = js.undefined
   
   // an array of atttributes that will have kb.Observables created even if they do not exist on the Backbone.Model. Useful for binding Views that require specific observables to exist
-  var keys: js.UndefOr[js.Array[String]] = js.native
+  var keys: js.UndefOr[js.Array[String]] = js.undefined
   
   // an array of atttributes that should be scoped with an underscore, eg. name -> _name
-  var requires: js.UndefOr[js.Array[String]] = js.native
+  var requires: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ViewModelOptions {
   

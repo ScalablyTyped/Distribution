@@ -6,12 +6,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OGCFeatureLayerProperties
-  extends LayerProperties
+  extends StObject
+     with LayerProperties
      with ScaleRangeLayerProperties
      with RefreshableLayerProperties
      with BlendLayerProperties {
@@ -21,112 +20,112 @@ trait OGCFeatureLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#collectionId)
     */
-  var collectionId: js.UndefOr[String] = js.native
+  var collectionId: js.UndefOr[String] = js.undefined
   
   /**
     * Copyright information for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#copyright)
     */
-  var copyright: js.UndefOr[String] = js.native
+  var copyright: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the layer's primary display field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#displayField)
     */
-  var displayField: js.UndefOr[String] = js.native
+  var displayField: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies how graphics are placed on the vertical axis (z).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#elevationInfo)
     */
-  var elevationInfo: js.UndefOr[OGCFeatureLayerElevationInfo] = js.native
+  var elevationInfo: js.UndefOr[OGCFeatureLayerElevationInfo] = js.undefined
   
   /**
     * Configures the method for reducing the number of point features in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#featureReduction)
     */
-  var featureReduction: js.UndefOr[FeatureReductionClusterProperties | FeatureReductionSelectionProperties] = js.native
+  var featureReduction: js.UndefOr[FeatureReductionClusterProperties | FeatureReductionSelectionProperties] = js.undefined
   
   /**
     * An array of fields in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#fields)
     */
-  var fields: js.UndefOr[js.Array[FieldProperties]] = js.native
+  var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   
   /**
     * The geometry type of features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#geometryType)
     */
-  var geometryType: js.UndefOr[point | polygon | polyline | multipoint] = js.native
+  var geometryType: js.UndefOr[point | polygon | polyline | multipoint] = js.undefined
   
   /**
     * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#labelingInfo)
     */
-  var labelingInfo: js.UndefOr[js.Array[LabelClassProperties]] = js.native
+  var labelingInfo: js.UndefOr[js.Array[LabelClassProperties]] = js.undefined
   
   /**
     * Indicates whether to display labels for this layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#labelsVisible)
     */
-  var labelsVisible: js.UndefOr[Boolean] = js.native
+  var labelsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the layer will be included in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#legendEnabled)
     */
-  var legendEnabled: js.UndefOr[Boolean] = js.native
+  var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The url query string in the format request json content from the server.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#mediaType)
     */
-  var mediaType: js.UndefOr[String] = js.native
+  var mediaType: js.UndefOr[String] = js.undefined
   
   /**
     * The OGCFeatureLayer requires that each feature be uniquely identified with an object id.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#objectIdField)
     */
-  var objectIdField: js.UndefOr[String] = js.native
+  var objectIdField: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether to display popups when features in the layer are clicked.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#popupEnabled)
     */
-  var popupEnabled: js.UndefOr[Boolean] = js.native
+  var popupEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The popup template for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#popupTemplate)
     */
-  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.native
+  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
     * The renderer assigned to the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#renderer)
     */
-  var renderer: js.UndefOr[RendererProperties] = js.native
+  var renderer: js.UndefOr[RendererProperties] = js.undefined
   
   /**
     * The URL to the server.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#url)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object OGCFeatureLayerProperties {
   

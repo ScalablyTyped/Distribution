@@ -2,16 +2,14 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDisassociateServiceActionFromProvisioningArtifactOutput extends StObject {
   
   /**
     * An object that contains a list of errors, along with information to help you identify the self-service action.
     */
-  var FailedServiceActionAssociations: js.UndefOr[typings.awsSdk.servicecatalogMod.FailedServiceActionAssociations] = js.native
+  var FailedServiceActionAssociations: js.UndefOr[typings.awsSdk.servicecatalogMod.FailedServiceActionAssociations] = js.undefined
 }
 object BatchDisassociateServiceActionFromProvisioningArtifactOutput {
   

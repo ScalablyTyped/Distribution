@@ -2,18 +2,16 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a GeneratedExpression. */
-@js.native
 trait IGeneratedExpression extends StObject {
   
   /** GeneratedExpression parameterTypeNames */
-  var parameterTypeNames: js.UndefOr[js.Array[String] | Null] = js.native
+  var parameterTypeNames: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** GeneratedExpression text */
-  var text: js.UndefOr[String | Null] = js.native
+  var text: js.UndefOr[String | Null] = js.undefined
 }
 object IGeneratedExpression {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1BuiltInAlgorithmOutput extends StObject {
   
   /** Framework on which the built-in algorithm was trained. */
-  var framework: js.UndefOr[String] = js.native
+  var framework: js.UndefOr[String] = js.undefined
   
   /** The Cloud Storage path to the `model/` directory where the training job saves the trained model. Only set for successful jobs that don't use hyperparameter tuning. */
-  var modelPath: js.UndefOr[String] = js.native
+  var modelPath: js.UndefOr[String] = js.undefined
   
   /** Python version on which the built-in algorithm was trained. */
-  var pythonVersion: js.UndefOr[String] = js.native
+  var pythonVersion: js.UndefOr[String] = js.undefined
   
   /** AI Platform runtime version on which the built-in algorithm was trained. */
-  var runtimeVersion: js.UndefOr[String] = js.native
+  var runtimeVersion: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1BuiltInAlgorithmOutput {
   

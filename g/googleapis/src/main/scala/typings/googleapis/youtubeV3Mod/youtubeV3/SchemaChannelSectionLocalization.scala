@@ -2,19 +2,17 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ChannelSection localization setting
   */
-@js.native
 trait SchemaChannelSectionLocalization extends StObject {
   
   /**
     * The localized strings for channel section&#39;s title.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaChannelSectionLocalization {
   

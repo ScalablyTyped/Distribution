@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -57,9 +56,8 @@ object BinaryRequestHandling {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.create")
-  @js.native
-  def create(model: IModel): BinaryRequestHandling = js.native
+  @scala.inline
+  def create(model: IModel): BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BinaryRequestHandling]
   
   /**
     * Creates and returns a new BinaryRequestHandling instance in the SDK and on the server.
@@ -70,9 +68,8 @@ object BinaryRequestHandling {
     *  6.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.createInRestCallActionUnderRequestHandling")
-  @js.native
-  def createInRestCallActionUnderRequestHandling(container: RestCallAction): BinaryRequestHandling = js.native
+  @scala.inline
+  def createInRestCallActionUnderRequestHandling(container: RestCallAction): BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderRequestHandling")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryRequestHandling]
   
   /**
     * Creates and returns a new BinaryRequestHandling instance in the SDK and on the server.
@@ -83,9 +80,8 @@ object BinaryRequestHandling {
     *  6.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.createInWebServiceCallActionUnderRequestBodyHandling")
-  @js.native
-  def createInWebServiceCallActionUnderRequestBodyHandling(container: WebServiceCallAction): BinaryRequestHandling = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderRequestBodyHandling(container: WebServiceCallAction): BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestBodyHandling")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryRequestHandling]
   
   /**
     * Creates and returns a new BinaryRequestHandling instance in the SDK and on the server.
@@ -96,9 +92,8 @@ object BinaryRequestHandling {
     *  6.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.createInWebServiceCallActionUnderRequestHeaderHandling")
-  @js.native
-  def createInWebServiceCallActionUnderRequestHeaderHandling(container: WebServiceCallAction): BinaryRequestHandling = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderRequestHeaderHandling(container: WebServiceCallAction): BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestHeaderHandling")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryRequestHandling]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.structureTypeName")

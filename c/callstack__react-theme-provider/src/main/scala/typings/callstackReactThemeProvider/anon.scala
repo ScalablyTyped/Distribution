@@ -3,15 +3,13 @@ package typings.callstackReactThemeProvider
 import typings.callstackReactThemeProvider.mod.DeepPartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0`[Theme] extends StObject {
     
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
   }
   object `0` {
     
@@ -22,7 +20,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[_], Theme] (val x: Self with `0`[Theme]) extends AnyVal {
+    implicit class `0MutableBuilder`[Self <: `0`[?], Theme] (val x: Self & `0`[Theme]) extends AnyVal {
       
       @scala.inline
       def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
@@ -32,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `1`[Theme] extends StObject {
     
-    var theme: js.UndefOr[DeepPartial[Theme]] = js.native
+    var theme: js.UndefOr[DeepPartial[Theme]] = js.undefined
   }
   object `1` {
     
@@ -46,7 +43,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`[_], Theme] (val x: Self with `1`[Theme]) extends AnyVal {
+    implicit class `1MutableBuilder`[Self <: `1`[?], Theme] (val x: Self & `1`[Theme]) extends AnyVal {
       
       @scala.inline
       def setTheme(value: DeepPartial[Theme]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
@@ -56,10 +53,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ThemeTheme[Theme] extends StObject {
     
-    var theme: Theme = js.native
+    var theme: Theme
   }
   object ThemeTheme {
     
@@ -70,7 +66,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ThemeThemeMutableBuilder[Self <: ThemeTheme[_], Theme] (val x: Self with ThemeTheme[Theme]) extends AnyVal {
+    implicit class ThemeThemeMutableBuilder[Self <: ThemeTheme[?], Theme] (val x: Self & ThemeTheme[Theme]) extends AnyVal {
       
       @scala.inline
       def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])

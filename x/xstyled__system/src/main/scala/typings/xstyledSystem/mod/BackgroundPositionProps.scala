@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundPositionProps[TLength] extends StObject {
   
   val backgroundPosition: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object BackgroundPositionProps {
   
@@ -23,12 +21,12 @@ object BackgroundPositionProps {
   }
   
   @scala.inline
-  implicit class BackgroundPositionPropsMutableBuilder[Self <: BackgroundPositionProps[_], TLength] (val x: Self with BackgroundPositionProps[TLength]) extends AnyVal {
+  implicit class BackgroundPositionPropsMutableBuilder[Self <: BackgroundPositionProps[?], TLength] (val x: Self & BackgroundPositionProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setBackgroundPosition(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object BackgroundPositionProps {
     def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
     
     @scala.inline
-    def setBackgroundPositionVarargs(value: js.Any*): Self = StObject.set(x, "backgroundPosition", js.Array(value :_*))
+    def setBackgroundPositionVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "backgroundPosition", js.Array(value :_*))
   }
 }

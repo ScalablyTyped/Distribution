@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows initiating an update of linked parts of a document. */
-@js.native
-trait XLinkUpdate extends XInterface {
+trait XLinkUpdate
+  extends StObject
+     with XInterface {
   
   /** initiates the reloading of all linked document content like linked graphics, linked text sections. */
-  def updateLinks(): Unit = js.native
+  def updateLinks(): Unit
 }
 object XLinkUpdate {
   

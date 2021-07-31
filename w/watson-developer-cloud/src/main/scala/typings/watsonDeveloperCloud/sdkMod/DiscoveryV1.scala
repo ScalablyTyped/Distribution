@@ -4,7 +4,6 @@ import typings.watsonDeveloperCloud.v1GeneratedMod.Options
 import typings.watsonDeveloperCloud.v1GeneratedMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,20 +48,20 @@ object DiscoveryV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.AddDocumentConstants.FileContentType with String
+            typings.watsonDeveloperCloud.v1GeneratedMod.AddDocumentConstants.FileContentType & String
           ] = js.native
       
-      /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.v1GeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_JSON with String = js.native
+      /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.v1GeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_JSON & String = js.native
       
-      /* "application/msword" */ val APPLICATION_MSWORD: typings.watsonDeveloperCloud.v1GeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_MSWORD with String = js.native
+      /* "application/msword" */ val APPLICATION_MSWORD: typings.watsonDeveloperCloud.v1GeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_MSWORD & String = js.native
       
-      /* "application/pdf" */ val APPLICATION_PDF: typings.watsonDeveloperCloud.v1GeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_PDF with String = js.native
+      /* "application/pdf" */ val APPLICATION_PDF: typings.watsonDeveloperCloud.v1GeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_PDF & String = js.native
       
-      /* "application/vnd.openxmlformats-officedocument.wordprocessingml.document" */ val APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT with String = js.native
+      /* "application/vnd.openxmlformats-officedocument.wordprocessingml.document" */ val APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT & String = js.native
       
-      /* "application/xhtml+xml" */ val APPLICATION_XHTML_XML: typings.watsonDeveloperCloud.v1GeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_XHTML_XML with String = js.native
+      /* "application/xhtml+xml" */ val APPLICATION_XHTML_XML: typings.watsonDeveloperCloud.v1GeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_XHTML_XML & String = js.native
       
-      /* "text/html" */ val TEXT_HTML: typings.watsonDeveloperCloud.v1GeneratedMod.AddDocumentConstants.FileContentType.TEXT_HTML with String = js.native
+      /* "text/html" */ val TEXT_HTML: typings.watsonDeveloperCloud.v1GeneratedMod.AddDocumentConstants.FileContentType.TEXT_HTML & String = js.native
     }
   }
   
@@ -76,30 +75,30 @@ object DiscoveryV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language with String
+            typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language & String
           ] = js.native
       
-      /* "ar" */ val AR: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.AR with String = js.native
+      /* "ar" */ val AR: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.AR & String = js.native
       
-      /* "de" */ val DE: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.DE with String = js.native
+      /* "de" */ val DE: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.DE & String = js.native
       
-      /* "en" */ val EN: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.EN with String = js.native
+      /* "en" */ val EN: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.EN & String = js.native
       
-      /* "es" */ val ES: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.ES with String = js.native
+      /* "es" */ val ES: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.ES & String = js.native
       
-      /* "fr" */ val FR: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.FR with String = js.native
+      /* "fr" */ val FR: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.FR & String = js.native
       
-      /* "it" */ val IT: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.IT with String = js.native
+      /* "it" */ val IT: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.IT & String = js.native
       
-      /* "ja" */ val JA: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.JA with String = js.native
+      /* "ja" */ val JA: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.JA & String = js.native
       
-      /* "ko" */ val KO: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.KO with String = js.native
+      /* "ko" */ val KO: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.KO & String = js.native
       
-      /* "nl" */ val NL: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.NL with String = js.native
+      /* "nl" */ val NL: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.NL & String = js.native
       
-      /* "pt" */ val PT: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.PT with String = js.native
+      /* "pt" */ val PT: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.PT & String = js.native
       
-      /* "zh-CN" */ val ZH_CN: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.ZH_CN with String = js.native
+      /* "zh-CN" */ val ZH_CN: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language.ZH_CN & String = js.native
     }
   }
   
@@ -113,18 +112,18 @@ object DiscoveryV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.CreateCredentialsConstants.SourceType with String
+            typings.watsonDeveloperCloud.v1GeneratedMod.CreateCredentialsConstants.SourceType & String
           ] = js.native
       
-      /* "box" */ val BOX: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCredentialsConstants.SourceType.BOX with String = js.native
+      /* "box" */ val BOX: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCredentialsConstants.SourceType.BOX & String = js.native
       
-      /* "cloud_object_storage" */ val CLOUD_OBJECT_STORAGE: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCredentialsConstants.SourceType.CLOUD_OBJECT_STORAGE with String = js.native
+      /* "cloud_object_storage" */ val CLOUD_OBJECT_STORAGE: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCredentialsConstants.SourceType.CLOUD_OBJECT_STORAGE & String = js.native
       
-      /* "salesforce" */ val SALESFORCE: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCredentialsConstants.SourceType.SALESFORCE with String = js.native
+      /* "salesforce" */ val SALESFORCE: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCredentialsConstants.SourceType.SALESFORCE & String = js.native
       
-      /* "sharepoint" */ val SHAREPOINT: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCredentialsConstants.SourceType.SHAREPOINT with String = js.native
+      /* "sharepoint" */ val SHAREPOINT: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCredentialsConstants.SourceType.SHAREPOINT & String = js.native
       
-      /* "web_crawl" */ val WEB_CRAWL: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCredentialsConstants.SourceType.WEB_CRAWL with String = js.native
+      /* "web_crawl" */ val WEB_CRAWL: typings.watsonDeveloperCloud.v1GeneratedMod.CreateCredentialsConstants.SourceType.WEB_CRAWL & String = js.native
     }
   }
   
@@ -138,28 +137,28 @@ object DiscoveryV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size with String
+            typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size & String
           ] = js.native
       
-      /* "L" */ val L: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.L with String = js.native
+      /* "L" */ val L: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.L & String = js.native
       
-      /* "LT" */ val LT: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.LT with String = js.native
+      /* "LT" */ val LT: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.LT & String = js.native
       
-      /* "M" */ val M: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.M with String = js.native
+      /* "M" */ val M: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.M & String = js.native
       
-      /* "ML" */ val ML: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.ML with String = js.native
+      /* "ML" */ val ML: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.ML & String = js.native
       
-      /* "MS" */ val MS: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.MS with String = js.native
+      /* "MS" */ val MS: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.MS & String = js.native
       
-      /* "S" */ val S: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.S with String = js.native
+      /* "S" */ val S: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.S & String = js.native
       
-      /* "XL" */ val XL: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.XL with String = js.native
+      /* "XL" */ val XL: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.XL & String = js.native
       
-      /* "XS" */ val XS: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.XS with String = js.native
+      /* "XS" */ val XS: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.XS & String = js.native
       
-      /* "XXL" */ val XXL: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.XXL with String = js.native
+      /* "XXL" */ val XXL: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.XXL & String = js.native
       
-      /* "XXXL" */ val XXXL: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.XXXL with String = js.native
+      /* "XXXL" */ val XXXL: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size.XXXL & String = js.native
     }
   }
   
@@ -172,11 +171,9 @@ object DiscoveryV1 {
     object Type extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.CreateEventConstants.Type with String
-          ] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.v1GeneratedMod.CreateEventConstants.Type & String] = js.native
       
-      /* "click" */ val CLICK: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEventConstants.Type.CLICK with String = js.native
+      /* "click" */ val CLICK: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEventConstants.Type.CLICK & String = js.native
     }
   }
   
@@ -190,10 +187,10 @@ object DiscoveryV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsEventRateConstants.ResultType with String
+            typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsEventRateConstants.ResultType & String
           ] = js.native
       
-      /* "document" */ val DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsEventRateConstants.ResultType.DOCUMENT with String = js.native
+      /* "document" */ val DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsEventRateConstants.ResultType.DOCUMENT & String = js.native
     }
   }
   
@@ -207,10 +204,10 @@ object DiscoveryV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsQueryConstants.ResultType with String
+            typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsQueryConstants.ResultType & String
           ] = js.native
       
-      /* "document" */ val DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsQueryConstants.ResultType.DOCUMENT with String = js.native
+      /* "document" */ val DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsQueryConstants.ResultType.DOCUMENT & String = js.native
     }
   }
   
@@ -224,10 +221,10 @@ object DiscoveryV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsQueryEventConstants.ResultType with String
+            typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsQueryEventConstants.ResultType & String
           ] = js.native
       
-      /* "document" */ val DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsQueryEventConstants.ResultType.DOCUMENT with String = js.native
+      /* "document" */ val DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsQueryEventConstants.ResultType.DOCUMENT & String = js.native
     }
   }
   
@@ -241,10 +238,10 @@ object DiscoveryV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsQueryNoResultsConstants.ResultType with String
+            typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsQueryNoResultsConstants.ResultType & String
           ] = js.native
       
-      /* "document" */ val DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsQueryNoResultsConstants.ResultType.DOCUMENT with String = js.native
+      /* "document" */ val DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsQueryNoResultsConstants.ResultType.DOCUMENT & String = js.native
     }
   }
   
@@ -258,12 +255,12 @@ object DiscoveryV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.QueryRelationsConstants.Sort with String
+            typings.watsonDeveloperCloud.v1GeneratedMod.QueryRelationsConstants.Sort & String
           ] = js.native
       
-      /* "frequency" */ val FREQUENCY: typings.watsonDeveloperCloud.v1GeneratedMod.QueryRelationsConstants.Sort.FREQUENCY with String = js.native
+      /* "frequency" */ val FREQUENCY: typings.watsonDeveloperCloud.v1GeneratedMod.QueryRelationsConstants.Sort.FREQUENCY & String = js.native
       
-      /* "score" */ val SCORE: typings.watsonDeveloperCloud.v1GeneratedMod.QueryRelationsConstants.Sort.SCORE with String = js.native
+      /* "score" */ val SCORE: typings.watsonDeveloperCloud.v1GeneratedMod.QueryRelationsConstants.Sort.SCORE & String = js.native
     }
   }
   
@@ -277,20 +274,20 @@ object DiscoveryV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.FileContentType with String
+            typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.FileContentType & String
           ] = js.native
       
-      /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.FileContentType.APPLICATION_JSON with String = js.native
+      /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.FileContentType.APPLICATION_JSON & String = js.native
       
-      /* "application/msword" */ val APPLICATION_MSWORD: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.FileContentType.APPLICATION_MSWORD with String = js.native
+      /* "application/msword" */ val APPLICATION_MSWORD: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.FileContentType.APPLICATION_MSWORD & String = js.native
       
-      /* "application/pdf" */ val APPLICATION_PDF: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.FileContentType.APPLICATION_PDF with String = js.native
+      /* "application/pdf" */ val APPLICATION_PDF: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.FileContentType.APPLICATION_PDF & String = js.native
       
-      /* "application/vnd.openxmlformats-officedocument.wordprocessingml.document" */ val APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.FileContentType.APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT with String = js.native
+      /* "application/vnd.openxmlformats-officedocument.wordprocessingml.document" */ val APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.FileContentType.APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT & String = js.native
       
-      /* "application/xhtml+xml" */ val APPLICATION_XHTML_XML: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.FileContentType.APPLICATION_XHTML_XML with String = js.native
+      /* "application/xhtml+xml" */ val APPLICATION_XHTML_XML: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.FileContentType.APPLICATION_XHTML_XML & String = js.native
       
-      /* "text/html" */ val TEXT_HTML: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.FileContentType.TEXT_HTML with String = js.native
+      /* "text/html" */ val TEXT_HTML: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.FileContentType.TEXT_HTML & String = js.native
     }
     
     /** Specify to only run the input document through the given step instead of running the input document through the entire ingestion workflow. Valid values are `convert`, `enrich`, and `normalize`. */
@@ -300,20 +297,20 @@ object DiscoveryV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.Step with String
+            typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.Step & String
           ] = js.native
       
-      /* "enrichments_output" */ val ENRICHMENTS_OUTPUT: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.Step.ENRICHMENTS_OUTPUT with String = js.native
+      /* "enrichments_output" */ val ENRICHMENTS_OUTPUT: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.Step.ENRICHMENTS_OUTPUT & String = js.native
       
-      /* "html_input" */ val HTML_INPUT: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.Step.HTML_INPUT with String = js.native
+      /* "html_input" */ val HTML_INPUT: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.Step.HTML_INPUT & String = js.native
       
-      /* "html_output" */ val HTML_OUTPUT: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.Step.HTML_OUTPUT with String = js.native
+      /* "html_output" */ val HTML_OUTPUT: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.Step.HTML_OUTPUT & String = js.native
       
-      /* "json_normalizations_output" */ val JSON_NORMALIZATIONS_OUTPUT: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.Step.JSON_NORMALIZATIONS_OUTPUT with String = js.native
+      /* "json_normalizations_output" */ val JSON_NORMALIZATIONS_OUTPUT: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.Step.JSON_NORMALIZATIONS_OUTPUT & String = js.native
       
-      /* "json_output" */ val JSON_OUTPUT: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.Step.JSON_OUTPUT with String = js.native
+      /* "json_output" */ val JSON_OUTPUT: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.Step.JSON_OUTPUT & String = js.native
       
-      /* "normalizations_output" */ val NORMALIZATIONS_OUTPUT: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.Step.NORMALIZATIONS_OUTPUT with String = js.native
+      /* "normalizations_output" */ val NORMALIZATIONS_OUTPUT: typings.watsonDeveloperCloud.v1GeneratedMod.TestConfigurationInEnvironmentConstants.Step.NORMALIZATIONS_OUTPUT & String = js.native
     }
   }
   
@@ -334,18 +331,18 @@ object DiscoveryV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType with String
+            typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType & String
           ] = js.native
       
-      /* "box" */ val BOX: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.BOX with String = js.native
+      /* "box" */ val BOX: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.BOX & String = js.native
       
-      /* "cloud_object_storage" */ val CLOUD_OBJECT_STORAGE: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.CLOUD_OBJECT_STORAGE with String = js.native
+      /* "cloud_object_storage" */ val CLOUD_OBJECT_STORAGE: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.CLOUD_OBJECT_STORAGE & String = js.native
       
-      /* "salesforce" */ val SALESFORCE: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.SALESFORCE with String = js.native
+      /* "salesforce" */ val SALESFORCE: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.SALESFORCE & String = js.native
       
-      /* "sharepoint" */ val SHAREPOINT: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.SHAREPOINT with String = js.native
+      /* "sharepoint" */ val SHAREPOINT: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.SHAREPOINT & String = js.native
       
-      /* "web_crawl" */ val WEB_CRAWL: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.WEB_CRAWL with String = js.native
+      /* "web_crawl" */ val WEB_CRAWL: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.WEB_CRAWL & String = js.native
     }
   }
   
@@ -359,20 +356,20 @@ object DiscoveryV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType with String
+            typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType & String
           ] = js.native
       
-      /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType.APPLICATION_JSON with String = js.native
+      /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType.APPLICATION_JSON & String = js.native
       
-      /* "application/msword" */ val APPLICATION_MSWORD: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType.APPLICATION_MSWORD with String = js.native
+      /* "application/msword" */ val APPLICATION_MSWORD: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType.APPLICATION_MSWORD & String = js.native
       
-      /* "application/pdf" */ val APPLICATION_PDF: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType.APPLICATION_PDF with String = js.native
+      /* "application/pdf" */ val APPLICATION_PDF: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType.APPLICATION_PDF & String = js.native
       
-      /* "application/vnd.openxmlformats-officedocument.wordprocessingml.document" */ val APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType.APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT with String = js.native
+      /* "application/vnd.openxmlformats-officedocument.wordprocessingml.document" */ val APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType.APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT & String = js.native
       
-      /* "application/xhtml+xml" */ val APPLICATION_XHTML_XML: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType.APPLICATION_XHTML_XML with String = js.native
+      /* "application/xhtml+xml" */ val APPLICATION_XHTML_XML: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType.APPLICATION_XHTML_XML & String = js.native
       
-      /* "text/html" */ val TEXT_HTML: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType.TEXT_HTML with String = js.native
+      /* "text/html" */ val TEXT_HTML: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType.TEXT_HTML & String = js.native
     }
   }
   
@@ -386,24 +383,24 @@ object DiscoveryV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size with String
+            typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size & String
           ] = js.native
       
-      /* "L" */ val L: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.L with String = js.native
+      /* "L" */ val L: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.L & String = js.native
       
-      /* "M" */ val M: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.M with String = js.native
+      /* "M" */ val M: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.M & String = js.native
       
-      /* "ML" */ val ML: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.ML with String = js.native
+      /* "ML" */ val ML: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.ML & String = js.native
       
-      /* "MS" */ val MS: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.MS with String = js.native
+      /* "MS" */ val MS: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.MS & String = js.native
       
-      /* "S" */ val S: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.S with String = js.native
+      /* "S" */ val S: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.S & String = js.native
       
-      /* "XL" */ val XL: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.XL with String = js.native
+      /* "XL" */ val XL: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.XL & String = js.native
       
-      /* "XXL" */ val XXL: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.XXL with String = js.native
+      /* "XXL" */ val XXL: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.XXL & String = js.native
       
-      /* "XXXL" */ val XXXL: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.XXXL with String = js.native
+      /* "XXXL" */ val XXXL: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateEnvironmentConstants.Size.XXXL & String = js.native
     }
   }
 }

@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,29 +11,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object coroutineMod {
   
+  @JSImport("coroutine", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("coroutine", "Condition")
   @js.native
-  class Condition () extends ClassCondition
+  class Condition ()
+    extends StObject
+       with ClassCondition
   
   @JSImport("coroutine", "Event")
   @js.native
-  class Event () extends ClassEvent
+  class Event ()
+    extends StObject
+       with ClassEvent
   
   @JSImport("coroutine", "Lock")
   @js.native
-  class Lock () extends ClassLock
+  class Lock ()
+    extends StObject
+       with ClassLock
   
   @JSImport("coroutine", "Semaphore")
   @js.native
-  class Semaphore () extends ClassSemaphore
+  class Semaphore ()
+    extends StObject
+       with ClassSemaphore
   
   @JSImport("coroutine", "Worker")
   @js.native
-  class Worker () extends ClassWorker
+  class Worker ()
+    extends StObject
+       with ClassWorker
   
-  @JSImport("coroutine", "current")
-  @js.native
-  def current(): ClassFiber = js.native
+  @scala.inline
+  def current(): ClassFiber = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[ClassFiber]
   
   @JSImport("coroutine", "fibers")
   @js.native
@@ -44,42 +56,32 @@ object coroutineMod {
   @js.native
   val loglevel: Double = js.native
   
-  @JSImport("coroutine", "parallel")
-  @js.native
-  def parallel(datas: js.Array[_], func: js.Function): js.Array[_] = js.native
-  @JSImport("coroutine", "parallel")
-  @js.native
-  def parallel(datas: js.Array[_], func: js.Function, fibers: Double): js.Array[_] = js.native
-  @JSImport("coroutine", "parallel")
-  @js.native
-  def parallel(func: js.Function, num: Double): js.Array[_] = js.native
-  @JSImport("coroutine", "parallel")
-  @js.native
-  def parallel(func: js.Function, num: Double, fibers: Double): js.Array[_] = js.native
-  @JSImport("coroutine", "parallel")
-  @js.native
-  def parallel(funcs: js.Any*): js.Array[_] = js.native
-  @JSImport("coroutine", "parallel")
-  @js.native
-  def parallel(funcs: js.Array[_]): js.Array[_] = js.native
-  @JSImport("coroutine", "parallel")
-  @js.native
-  def parallel(funcs: js.Array[_], fibers: Double): js.Array[_] = js.native
+  @scala.inline
+  def parallel(datas: js.Array[js.Any], func: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(datas.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def parallel(datas: js.Array[js.Any], func: js.Function, fibers: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(datas.asInstanceOf[js.Any], func.asInstanceOf[js.Any], fibers.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def parallel(func: js.Function, num: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(func.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def parallel(func: js.Function, num: Double, fibers: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(func.asInstanceOf[js.Any], num.asInstanceOf[js.Any], fibers.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def parallel(funcs: js.Any*): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(funcs.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def parallel(funcs: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(funcs.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def parallel(funcs: js.Array[js.Any], fibers: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(funcs.asInstanceOf[js.Any], fibers.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("coroutine", "sleep")
-  @js.native
-  def sleep(): Unit = js.native
-  @JSImport("coroutine", "sleep")
-  @js.native
-  def sleep(ms: Double): Unit = js.native
+  @scala.inline
+  def sleep(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")().asInstanceOf[Unit]
+  @scala.inline
+  def sleep(ms: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(ms.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("coroutine", "spareFibers")
   @js.native
   val spareFibers: Double = js.native
   
-  @JSImport("coroutine", "start")
-  @js.native
-  def start(func: js.Function, args: js.Any*): ClassFiber = js.native
+  @scala.inline
+  def start(func: js.Function, args: js.Any*): ClassFiber = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassFiber]
   
   @JSImport("coroutine", "vmid")
   @js.native

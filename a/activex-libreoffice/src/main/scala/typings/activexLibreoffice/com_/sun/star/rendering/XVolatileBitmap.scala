@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.geometry.IntegerSize2D
 import typings.activexLibreoffice.com_.sun.star.geometry.RealSize2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is a specialized interface to a volatile bitmap (which can become invalid at any point in time). */
-@js.native
-trait XVolatileBitmap extends XBitmap {
+trait XVolatileBitmap
+  extends StObject
+     with XBitmap {
   
   /**
     * Query whether this volatile bitmap still has valid content.
@@ -18,7 +18,7 @@ trait XVolatileBitmap extends XBitmap {
     * As the video RAM allocated to this bitmap can be reclaimed at any time, a return value of true here does not imply that the next draw operation with
     * this bitmap will succeed. Instead, the exception VolatileContentDestroyed might then be thrown, if lost bitmap data is accessed.
     */
-  def isValid(): Boolean = js.native
+  def isValid(): Boolean
 }
 object XVolatileBitmap {
   

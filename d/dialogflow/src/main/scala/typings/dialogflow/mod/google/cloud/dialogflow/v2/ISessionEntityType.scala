@@ -4,23 +4,21 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2.EntityType.IEntity
 import typings.dialogflow.mod.google.cloud.dialogflow.v2.SessionEntityType.EntityOverrideMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SessionEntityType. */
-@js.native
 trait ISessionEntityType extends StObject {
   
   /** SessionEntityType entities */
-  var entities: js.UndefOr[js.Array[IEntity] | Null] = js.native
+  var entities: js.UndefOr[js.Array[IEntity] | Null] = js.undefined
   
   /** SessionEntityType entityOverrideMode */
   var entityOverrideMode: js.UndefOr[
     EntityOverrideMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.SessionEntityType.EntityOverrideMode * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** SessionEntityType name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object ISessionEntityType {
   

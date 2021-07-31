@@ -2,27 +2,25 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectionWrapper extends StObject {
   
-  def execCommand(name: js.Object, args: js.Object): Unit = js.native
+  def execCommand(name: js.Object, args: js.Object): Unit
   
-  def focus(): Unit = js.native
+  def focus(): Unit
   
-  def getSelectedItem(): Unit = js.native
+  def getSelectedItem(): Unit
   
-  def getSelectionAsText(): Unit = js.native
+  def getSelectionAsText(): Unit
   
-  def insertElement(element: js.Object): Unit = js.native
+  def insertElement(element: js.Object): Unit
   
-  def insertTable(table: js.Object): Unit = js.native
+  def insertTable(table: js.Object): Unit
   
-  def replaceNode(newNode: js.Object): Unit = js.native
+  def replaceNode(newNode: js.Object): Unit
   
-  def select(element: js.Object): Unit = js.native
+  def select(element: js.Object): Unit
 }
 object SelectionWrapper {
   

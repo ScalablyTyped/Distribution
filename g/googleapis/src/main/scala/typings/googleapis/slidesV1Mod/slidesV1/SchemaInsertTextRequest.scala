@@ -2,20 +2,18 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Inserts text into a shape or a table cell.
   */
-@js.native
 trait SchemaInsertTextRequest extends StObject {
   
   /**
     * The optional table cell location if the text is to be inserted into a
     * table cell. If present, the object_id must refer to a table.
     */
-  var cellLocation: js.UndefOr[SchemaTableCellLocation] = js.native
+  var cellLocation: js.UndefOr[SchemaTableCellLocation] = js.undefined
   
   /**
     * The index where the text will be inserted, in Unicode code units, based
@@ -24,12 +22,12 @@ trait SchemaInsertTextRequest extends StObject {
     * inside Unicode grapheme clusters. In these cases, the text will be
     * inserted immediately after the grapheme cluster.
     */
-  var insertionIndex: js.UndefOr[Double] = js.native
+  var insertionIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The object ID of the shape or table where the text will be inserted.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The text to be inserted.  Inserting a newline character will implicitly
@@ -43,7 +41,7 @@ trait SchemaInsertTextRequest extends StObject {
     * Multilingual Plane Private Use Area (U+E000-U+F8FF) will be stripped out
     * of the inserted text.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SchemaInsertTextRequest {
   

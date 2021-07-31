@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object beforeAfterWrapperMod {
@@ -19,20 +18,21 @@ object beforeAfterWrapperMod {
   trait BeforeAfterWrapper
     extends Component[BeforeAfterWrapperProps, js.Object, js.Any]
   
-  @js.native
-  trait BeforeAfterWrapperProps extends Props[BeforeAfterWrapper] {
+  trait BeforeAfterWrapperProps
+    extends StObject
+       with Props[BeforeAfterWrapper] {
     
-    var afterElementType: js.UndefOr[String] = js.native
+    var afterElementType: js.UndefOr[String] = js.undefined
     
-    var afterStyle: js.UndefOr[CSSProperties] = js.native
+    var afterStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var beforeElementType: js.UndefOr[String] = js.native
+    var beforeElementType: js.UndefOr[String] = js.undefined
     
-    var beforeStyle: js.UndefOr[CSSProperties] = js.native
+    var beforeStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var elementType: js.UndefOr[String] = js.native
+    var elementType: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object BeforeAfterWrapperProps {
     

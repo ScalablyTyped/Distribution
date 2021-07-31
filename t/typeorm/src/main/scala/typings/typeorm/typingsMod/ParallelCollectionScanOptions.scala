@@ -2,32 +2,30 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParallelCollectionScanOptions extends StObject {
   
   /**
     * Set the batchSize for the getMoreCommand when iterating over the query results.
     */
-  var batchSize: js.UndefOr[scala.Double] = js.native
+  var batchSize: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * The maximum number of parallel command cursors to return (the number of returned cursors will be in the range 1:numCursors).
     */
-  var numCursors: js.UndefOr[scala.Double] = js.native
+  var numCursors: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Return all BSON documents as Raw Buffer documents.
     */
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The preferred read preference (ReadPreference.PRIMARY, ReadPreference.PRIMARY_PREFERRED,
     * ReadPreference.SECONDARY, ReadPreference.SECONDARY_PREFERRED, ReadPreference.NEAREST).
     */
-  var readPreference: js.UndefOr[ReadPreference | String] = js.native
+  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
 }
 object ParallelCollectionScanOptions {
   

@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.gitRemote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `4` extends StObject {
   
-  var name: gitRemote = js.native
+  var name: gitRemote
 }
 object `4` {
   
   @scala.inline
-  def apply(name: gitRemote): `4` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `4` = {
+    val __obj = js.Dynamic.literal(name = "gitRemote")
     __obj.asInstanceOf[`4`]
   }
   

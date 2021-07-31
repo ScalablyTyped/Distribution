@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaDataSharingSettings extends StObject {
   
   /** Output only. Resource name. Format: accounts/{account}/dataSharingSettings Example: "accounts/1000/dataSharingSettings" */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Allows any of Google sales to access the data in order to suggest configuration changes to improve results. */
-  var sharingWithGoogleAnySalesEnabled: js.UndefOr[Boolean] = js.native
+  var sharingWithGoogleAnySalesEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows Google sales teams that are assigned to the customer to access the data in order to suggest configuration changes to improve results. Sales team restrictions still apply when
     * enabled.
     */
-  var sharingWithGoogleAssignedSalesEnabled: js.UndefOr[Boolean] = js.native
+  var sharingWithGoogleAssignedSalesEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Allows Google to use the data to improve other Google products or services. */
-  var sharingWithGoogleProductsEnabled: js.UndefOr[Boolean] = js.native
+  var sharingWithGoogleProductsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Allows Google support to access the data in order to help troubleshoot issues. */
-  var sharingWithGoogleSupportEnabled: js.UndefOr[Boolean] = js.native
+  var sharingWithGoogleSupportEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Allows Google to share the data anonymously in aggregate form with others. */
-  var sharingWithOthersEnabled: js.UndefOr[Boolean] = js.native
+  var sharingWithOthersEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaDataSharingSettings {
   

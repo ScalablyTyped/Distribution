@@ -2,27 +2,26 @@ package typings.rxjsCompat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distinctMod {
   
-  @JSImport("rxjs-compat/operators/distinct", "distinct")
+  @JSImport("rxjs-compat/operators/distinct", JSImport.Namespace)
   @js.native
-  def distinct[T, K](): js.Any = js.native
-  @JSImport("rxjs-compat/operators/distinct", "distinct")
-  @js.native
-  def distinct[T, K](
-    keySelector: js.UndefOr[scala.Nothing],
-    flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs-compat/operators/distinct", "distinct")
-  @js.native
-  def distinct[T, K](keySelector: js.Function1[/* value */ T, K]): js.Any = js.native
-  @JSImport("rxjs-compat/operators/distinct", "distinct")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def distinct[T, K](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")().asInstanceOf[js.Any]
+  @scala.inline
+  def distinct[T, K](keySelector: js.Function1[/* value */ T, K]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
   def distinct[T, K](
     keySelector: js.Function1[/* value */ T, K],
     flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any], flushes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def distinct[T, K](
+    keySelector: Unit,
+    flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any], flushes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

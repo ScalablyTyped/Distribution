@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImplicitGrantSettings extends StObject {
   
   // Specifies whether this web application can request an access token using the OAuth 2.0 implicit flow.
-  var enableAccessTokenIssuance: js.UndefOr[NullableOption[Boolean]] = js.native
+  var enableAccessTokenIssuance: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Specifies whether this web application can request an ID token using the OAuth 2.0 implicit flow.
-  var enableIdTokenIssuance: js.UndefOr[NullableOption[Boolean]] = js.native
+  var enableIdTokenIssuance: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object ImplicitGrantSettings {
   

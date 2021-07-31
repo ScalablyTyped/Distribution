@@ -26,17 +26,15 @@ import typings.std.Error
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jimpMod {
   
-  @js.native
   trait DiffReturn[This] extends StObject {
     
-    var image: This = js.native
+    var image: This
     
-    var percent: Double = js.native
+    var percent: Double
   }
   object DiffReturn {
     
@@ -47,7 +45,7 @@ object jimpMod {
     }
     
     @scala.inline
-    implicit class DiffReturnMutableBuilder[Self <: DiffReturn[_], This] (val x: Self with DiffReturn[This]) extends AnyVal {
+    implicit class DiffReturnMutableBuilder[Self <: DiffReturn[?], This] (val x: Self & DiffReturn[This]) extends AnyVal {
       
       @scala.inline
       def setImage(value: This): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
@@ -82,17 +80,17 @@ object jimpMod {
     
     // Effect methods
     def composite(src: Jimp, x: Double, y: Double): this.type = js.native
-    def composite(src: Jimp, x: Double, y: Double, options: js.UndefOr[scala.Nothing], cb: ImageCallback[this.type]): this.type = js.native
+    def composite(src: Jimp, x: Double, y: Double, options: Unit, cb: ImageCallback[this.type]): this.type = js.native
     def composite(src: Jimp, x: Double, y: Double, options: BlendMode): this.type = js.native
     def composite(src: Jimp, x: Double, y: Double, options: BlendMode, cb: ImageCallback[this.type]): this.type = js.native
     
     def distanceFromHash(hash: String): Double = js.native
     
-    def getBase64(mime: String, cb: GenericCallback[String, _, this.type]): this.type = js.native
+    def getBase64(mime: String, cb: GenericCallback[String, js.Any, this.type]): this.type = js.native
     
     def getBase64Async(mime: String): js.Promise[String] = js.native
     
-    def getBuffer(mime: String, cb: GenericCallback[Buffer, _, _]): this.type = js.native
+    def getBuffer(mime: String, cb: GenericCallback[Buffer, js.Any, js.Any]): this.type = js.native
     
     def getBufferAsync(mime: String): js.Promise[Buffer] = js.native
     
@@ -103,37 +101,37 @@ object jimpMod {
     def getMIME(): String = js.native
     
     def getPixelColor(x: Double, y: Double): Double = js.native
-    def getPixelColor(x: Double, y: Double, cb: GenericCallback[Double, _, this.type]): Double = js.native
+    def getPixelColor(x: Double, y: Double, cb: GenericCallback[Double, js.Any, this.type]): Double = js.native
     
     def getPixelColour(x: Double, y: Double): Double = js.native
-    def getPixelColour(x: Double, y: Double, cb: GenericCallback[Double, _, this.type]): Double = js.native
+    def getPixelColour(x: Double, y: Double, cb: GenericCallback[Double, js.Any, this.type]): Double = js.native
     
     def getPixelIndex(x: Double, y: Double): Double = js.native
-    def getPixelIndex(x: Double, y: Double, cb: GenericCallback[Double, _, this.type]): Double = js.native
+    def getPixelIndex(x: Double, y: Double, cb: GenericCallback[Double, js.Any, this.type]): Double = js.native
     def getPixelIndex(x: Double, y: Double, edgeHandling: String): Double = js.native
-    def getPixelIndex(x: Double, y: Double, edgeHandling: String, cb: GenericCallback[Double, _, this.type]): Double = js.native
+    def getPixelIndex(x: Double, y: Double, edgeHandling: String, cb: GenericCallback[Double, js.Any, this.type]): Double = js.native
     
     def getWidth(): Double = js.native
     
     def hasAlpha(): Boolean = js.native
     
     def hash(): String = js.native
-    def hash(base: js.UndefOr[scala.Nothing], cb: GenericCallback[String, _, this.type]): String = js.native
     def hash(base: Double): String = js.native
-    def hash(base: Double, cb: GenericCallback[String, _, this.type]): String = js.native
-    def hash(base: Null, cb: GenericCallback[String, _, this.type]): String = js.native
-    def hash(cb: GenericCallback[String, _, this.type]): String = js.native
+    def hash(base: Double, cb: GenericCallback[String, js.Any, this.type]): String = js.native
+    def hash(base: Null, cb: GenericCallback[String, js.Any, this.type]): String = js.native
+    def hash(base: Unit, cb: GenericCallback[String, js.Any, this.type]): String = js.native
+    def hash(cb: GenericCallback[String, js.Any, this.type]): String = js.native
     
     def inspect(): String = js.native
     
     // Methods
-    def on[T /* <: ListenableName */](event: T, cb: js.Function1[/* data */ ListenerData[T], _]): js.Any = js.native
+    def on[T /* <: ListenableName */](event: T, cb: js.Function1[/* data */ ListenerData[T], js.Any]): js.Any = js.native
     
     def parseBitmap(data: Buffer): Unit = js.native
-    def parseBitmap(data: Buffer, path: js.UndefOr[scala.Nothing], cb: ImageCallback[this.type]): Unit = js.native
     def parseBitmap(data: Buffer, path: String): Unit = js.native
     def parseBitmap(data: Buffer, path: String, cb: ImageCallback[this.type]): Unit = js.native
     def parseBitmap(data: Buffer, path: Null, cb: ImageCallback[this.type]): Unit = js.native
+    def parseBitmap(data: Buffer, path: Unit, cb: ImageCallback[this.type]): Unit = js.native
     
     def rgba(bool: Boolean): this.type = js.native
     def rgba(bool: Boolean, cb: ImageCallback[this.type]): this.type = js.native
@@ -143,14 +141,14 @@ object jimpMod {
       y: Double,
       w: Double,
       h: Double,
-      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, _]
+      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, js.Any]
     ): this.type = js.native
     def scan(
       x: Double,
       y: Double,
       w: Double,
       h: Double,
-      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, _],
+      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, js.Any],
       cb: ImageCallback[this.type]
     ): this.type = js.native
     
@@ -161,14 +159,14 @@ object jimpMod {
       y: Double,
       w: Double,
       h: Double,
-      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, _]
+      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, js.Any]
     ): this.type = js.native
     def scanQuiet(
       x: Double,
       y: Double,
       w: Double,
       h: Double,
-      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, _],
+      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, js.Any],
       cb: ImageCallback[this.type]
     ): this.type = js.native
     
@@ -186,7 +184,8 @@ object jimpMod {
   
   @js.native
   trait JimpConstructors
-    extends // Constructors
+    extends StObject
+       with // Constructors
   // For custom constructors when using Jimp.appendConstructorOption
   Instantiable1[
           (/* args (repeated) */ js.Any) | (/* data */ Bitmap) | (/* data */ Buffer) | (/* image */ Jimp) | (/* path */ String) | (/* urlOptions */ URLOptions), 
@@ -210,7 +209,7 @@ object jimpMod {
        with Instantiable4[
           /* w */ Double, 
           /* h */ Double, 
-          js.UndefOr[(/* background */ Double) | (/* background */ String)], 
+          (/* background */ Double) | (/* background */ String) | (/* background */ Unit), 
           /* cb */ ImageCallback[
             /* import warning: importer.ImportType#apply Failed type conversion: @jimp/core.@jimp/core/types/jimp.JimpConstructors['prototype'] */ js.Any
           ], 
@@ -269,15 +268,15 @@ object jimpMod {
       * it's not possible RN:
       * https://github.com/microsoft/TypeScript/issues/26113
       */
-    def appendConstructorOption[Args /* <: js.Array[_] */, J /* <: Jimp */](
+    def appendConstructorOption[Args /* <: js.Array[js.Any] */, J /* <: Jimp */](
       name: String,
       test: js.Function1[/* repeated */ js.Any, Boolean],
       run: js.ThisFunction3[
           /* this */ J, 
-          /* resolve */ js.Function1[/* jimp */ js.UndefOr[J], _], 
-          /* reject */ js.Function1[/* reason */ Error, _], 
+          /* resolve */ js.Function1[/* jimp */ js.UndefOr[J], js.Any], 
+          /* reject */ js.Function1[/* reason */ Error, js.Any], 
           /* repeated */ js.Any, 
-          _
+          js.Any
         ]
     ): Unit = js.native
     
@@ -317,7 +316,7 @@ object jimpMod {
     def distance(img1: Jimp, img2: Jimp): Double = js.native
     
     def intToRGBA(i: Double): RGBA = js.native
-    def intToRGBA(i: Double, cb: GenericCallback[RGBA, _, _]): RGBA = js.native
+    def intToRGBA(i: Double, cb: GenericCallback[RGBA, js.Any, js.Any]): RGBA = js.native
     
     def limit255(n: Double): Double = js.native
     
@@ -370,17 +369,6 @@ object jimpMod {
     def read_prototype(
       w: Double,
       h: Double,
-      background: js.UndefOr[scala.Nothing],
-      cb: ImageCallback[
-          /* import warning: importer.ImportType#apply Failed type conversion: this['prototype'] */ js.Any
-        ]
-    ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: this['prototype'] */ js.Any
-      ] = js.native
-    @JSName("read")
-    def read_prototype(
-      w: Double,
-      h: Double,
       background: String,
       cb: ImageCallback[
           /* import warning: importer.ImportType#apply Failed type conversion: this['prototype'] */ js.Any
@@ -399,6 +387,17 @@ object jimpMod {
     ): js.Promise[
         /* import warning: importer.ImportType#apply Failed type conversion: this['prototype'] */ js.Any
       ] = js.native
+    @JSName("read")
+    def read_prototype(
+      w: Double,
+      h: Double,
+      background: Unit,
+      cb: ImageCallback[
+          /* import warning: importer.ImportType#apply Failed type conversion: this['prototype'] */ js.Any
+        ]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: this['prototype'] */ js.Any
+      ] = js.native
     
     def rgbaToInt(r: Double, g: Double, b: Double, a: Double): Double = js.native
     @JSName("rgbaToInt")
@@ -409,22 +408,21 @@ object jimpMod {
       a: Double,
       cb: GenericCallback[
           Double, 
-          _, 
+          js.Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: this['prototype'] */ js.Any
         ]
     ): Double = js.native
   }
   
-  @js.native
   trait ScanIteratorReturn[This] extends StObject {
     
-    var idx: Double = js.native
+    var idx: Double
     
-    var image: This = js.native
+    var image: This
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object ScanIteratorReturn {
     
@@ -435,7 +433,7 @@ object jimpMod {
     }
     
     @scala.inline
-    implicit class ScanIteratorReturnMutableBuilder[Self <: ScanIteratorReturn[_], This] (val x: Self with ScanIteratorReturn[This]) extends AnyVal {
+    implicit class ScanIteratorReturnMutableBuilder[Self <: ScanIteratorReturn[?], This] (val x: Self & ScanIteratorReturn[This]) extends AnyVal {
       
       @scala.inline
       def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])

@@ -2,51 +2,49 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IVBSAXAttributes interface */
-@js.native
 trait IVBSAXAttributes extends StObject {
   
   @JSName("MSXML2.IVBSAXAttributes_typekey")
-  var MSXML2DotIVBSAXAttributes_typekey: IVBSAXAttributes = js.native
+  var MSXML2DotIVBSAXAttributes_typekey: IVBSAXAttributes
   
   /** Look up the index of an attribute by Namespace name. */
-  def getIndexFromName(strURI: String, strLocalName: String): Double = js.native
+  def getIndexFromName(strURI: String, strLocalName: String): Double
   
   /** Look up the index of an attribute by XML 1.0 qualified name. */
-  def getIndexFromQName(strQName: String): Double = js.native
+  def getIndexFromQName(strQName: String): Double
   
   /** Look up an attribute's local name by index. */
-  def getLocalName(nIndex: Double): String = js.native
+  def getLocalName(nIndex: Double): String
   
   /** Look up an attribute's XML 1.0 qualified name by index. */
-  def getQName(nIndex: Double): String = js.native
+  def getQName(nIndex: Double): String
   
   /** Look up an attribute's type by index. */
-  def getType(nIndex: Double): String = js.native
+  def getType(nIndex: Double): String
   
   /** Look up an attribute's type by Namespace name. */
-  def getTypeFromName(strURI: String, strLocalName: String): String = js.native
+  def getTypeFromName(strURI: String, strLocalName: String): String
   
   /** Look up an attribute's type by XML 1.0 qualified name. */
-  def getTypeFromQName(strQName: String): String = js.native
+  def getTypeFromQName(strQName: String): String
   
   /** Look up an attribute's Namespace URI by index. */
-  def getURI(nIndex: Double): String = js.native
+  def getURI(nIndex: Double): String
   
   /** Look up an attribute's value by index. */
-  def getValue(nIndex: Double): String = js.native
+  def getValue(nIndex: Double): String
   
   /** Look up an attribute's value by Namespace name. */
-  def getValueFromName(strURI: String, strLocalName: String): String = js.native
+  def getValueFromName(strURI: String, strLocalName: String): String
   
   /** Look up an attribute's value by XML 1.0 qualified name. */
-  def getValueFromQName(strQName: String): String = js.native
+  def getValueFromQName(strQName: String): String
   
   /** Get the number of attributes in the list. */
-  val length: Double = js.native
+  val length: Double
 }
 object IVBSAXAttributes {
   

@@ -10,9 +10,9 @@ SDK for Auth0 API v2
 | ------------------ | :-------------: |
 | Full name          | auth0 |
 | Keywords           | auth0, api |
-| # releases         | 20 |
-| # dependents       | 55 |
-| # downloads        | 4060000 |
+| # releases         | 24 |
+| # dependents       | 60 |
+| # downloads        | 5145141 |
 | # stars            | 7 |
 
 ## Links

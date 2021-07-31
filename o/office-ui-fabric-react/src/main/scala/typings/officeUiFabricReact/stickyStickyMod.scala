@@ -9,7 +9,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stickyStickyMod {
@@ -104,10 +103,9 @@ object stickyStickyMod {
     def defaultProps_=(x: IStickyProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IStickyContext extends StObject {
     
-    var scrollablePane: Requireable[js.Object] = js.native
+    var scrollablePane: Requireable[js.Object]
   }
   object IStickyContext {
     
@@ -125,14 +123,13 @@ object stickyStickyMod {
     }
   }
   
-  @js.native
   trait IStickyState extends StObject {
     
-    var distanceFromTop: js.UndefOr[Double] = js.native
+    var distanceFromTop: js.UndefOr[Double] = js.undefined
     
-    var isStickyBottom: Boolean = js.native
+    var isStickyBottom: Boolean
     
-    var isStickyTop: Boolean = js.native
+    var isStickyTop: Boolean
   }
   object IStickyState {
     

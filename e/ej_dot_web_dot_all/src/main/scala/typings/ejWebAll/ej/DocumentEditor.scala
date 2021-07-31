@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentEditor extends Widget_ {
+trait DocumentEditor
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -59,12 +60,11 @@ trait DocumentEditor extends Widget_ {
 }
 object DocumentEditor {
   
-  @js.native
   trait ImportExportSettings extends StObject {
     
     /** Gets or sets URL of Web API that should be used to parse the document while loading.
       */
-    var importUrl: js.UndefOr[String] = js.native
+    var importUrl: js.UndefOr[String] = js.undefined
   }
   object ImportExportSettings {
     
@@ -85,28 +85,27 @@ object DocumentEditor {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Gets or sets an object that indicates initialization of importing and exporting documents in document editor.
       */
-    var importExportSettings: js.UndefOr[ImportExportSettings] = js.native
+    var importExportSettings: js.UndefOr[ImportExportSettings] = js.undefined
     
     /** Triggers when the document changes.
       */
-    var onDocumentChange: js.UndefOr[js.Function1[/* e */ OnDocumentChangeEventArgs, Unit]] = js.native
+    var onDocumentChange: js.UndefOr[js.Function1[/* e */ OnDocumentChangeEventArgs, Unit]] = js.undefined
     
     /** Triggers when the hyperlink is clicked.
       */
-    var onRequestNavigate: js.UndefOr[js.Function1[/* e */ OnRequestNavigateEventArgs, Unit]] = js.native
+    var onRequestNavigate: js.UndefOr[js.Function1[/* e */ OnRequestNavigateEventArgs, Unit]] = js.undefined
     
     /** Triggers when the selection changes.
       */
-    var onSelectionChange: js.UndefOr[js.Function1[/* e */ OnSelectionChangeEventArgs, Unit]] = js.native
+    var onSelectionChange: js.UndefOr[js.Function1[/* e */ OnSelectionChangeEventArgs, Unit]] = js.undefined
     
     /** Triggers when the zoom factor changes.
       */
-    var onZoomFactorChange: js.UndefOr[js.Function1[/* e */ OnZoomFactorChangeEventArgs, Unit]] = js.native
+    var onZoomFactorChange: js.UndefOr[js.Function1[/* e */ OnZoomFactorChangeEventArgs, Unit]] = js.undefined
   }
   object Model {
     
@@ -151,20 +150,19 @@ object DocumentEditor {
     }
   }
   
-  @js.native
   trait OnDocumentChangeEventArgs extends StObject {
     
     /** True, if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the document editor model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OnDocumentChangeEventArgs {
     
@@ -197,24 +195,23 @@ object DocumentEditor {
     }
   }
   
-  @js.native
   trait OnRequestNavigateEventArgs extends StObject {
     
     /** true, if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the link type and navigation link.
       */
-    var hyperlink: js.UndefOr[js.Any] = js.native
+    var hyperlink: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the document editor model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OnRequestNavigateEventArgs {
     
@@ -253,20 +250,19 @@ object DocumentEditor {
     }
   }
   
-  @js.native
   trait OnSelectionChangeEventArgs extends StObject {
     
     /** True, if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the document editor model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OnSelectionChangeEventArgs {
     
@@ -299,20 +295,19 @@ object DocumentEditor {
     }
   }
   
-  @js.native
   trait OnZoomFactorChangeEventArgs extends StObject {
     
     /** True, if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the document editor model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OnZoomFactorChangeEventArgs {
     

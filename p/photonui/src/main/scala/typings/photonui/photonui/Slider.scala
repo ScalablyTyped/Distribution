@@ -5,13 +5,13 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Slider extends NumericField {
+trait Slider
+  extends StObject
+     with NumericField {
   
-  var fieldVisible: Boolean = js.native
+  var fieldVisible: Boolean
 }
 object Slider {
   

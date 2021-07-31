@@ -14,14 +14,15 @@ import typings.ol.sizeMod.Size
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object executorMod {
   
   @JSImport("ol/render/canvas/Executor", JSImport.Default)
   @js.native
-  class default protected () extends Executor {
+  class default protected ()
+    extends StObject
+       with Executor {
     def this(
       resolution: Double,
       pixelRatio: Double,
@@ -51,13 +52,6 @@ object executorMod {
       context: CanvasRenderingContext2D,
       transform: Transform,
       viewRotation: Double,
-      opt_featureCallback: js.UndefOr[scala.Nothing],
-      opt_hitExtent: Extent
-    ): js.UndefOr[T] = js.native
-    def executeHitDetection[T](
-      context: CanvasRenderingContext2D,
-      transform: Transform,
-      viewRotation: Double,
       opt_featureCallback: js.Function0[Unit]
     ): js.UndefOr[T] = js.native
     def executeHitDetection[T](
@@ -67,10 +61,17 @@ object executorMod {
       opt_featureCallback: js.Function0[Unit],
       opt_hitExtent: Extent
     ): js.UndefOr[T] = js.native
+    def executeHitDetection[T](
+      context: CanvasRenderingContext2D,
+      transform: Transform,
+      viewRotation: Double,
+      opt_featureCallback: Unit,
+      opt_hitExtent: Extent
+    ): js.UndefOr[T] = js.native
     
-    var hitDetectionInstructions: js.Array[_] = js.native
+    var hitDetectionInstructions: js.Array[js.Any] = js.native
     
-    var instructions: js.Array[_] = js.native
+    var instructions: js.Array[js.Any] = js.native
     
     var overlaps: Boolean = js.native
     
@@ -84,28 +85,27 @@ object executorMod {
       p2: Coordinate,
       p3: Coordinate,
       p4: Coordinate,
-      fillInstruction: js.Array[_],
-      strokeInstruction: js.Array[_],
+      fillInstruction: js.Array[js.Any],
+      strokeInstruction: js.Array[js.Any],
       declutter: Boolean
     ): Unit = js.native
     
     var resolution: Double = js.native
   }
   
-  @js.native
   trait SerializableInstructions extends StObject {
     
-    var coordinates: js.Array[Double] = js.native
+    var coordinates: js.Array[Double]
     
-    var fillStates: StringDictionary[FillState] = js.native
+    var fillStates: StringDictionary[FillState]
     
-    var hitDetectionInstructions: js.Array[_] = js.native
+    var hitDetectionInstructions: js.Array[js.Any]
     
-    var instructions: js.Array[_] = js.native
+    var instructions: js.Array[js.Any]
     
-    var strokeStates: StringDictionary[StrokeState] = js.native
+    var strokeStates: StringDictionary[StrokeState]
     
-    var textStates: StringDictionary[TextState] = js.native
+    var textStates: StringDictionary[TextState]
   }
   object SerializableInstructions {
     
@@ -113,8 +113,8 @@ object executorMod {
     def apply(
       coordinates: js.Array[Double],
       fillStates: StringDictionary[FillState],
-      hitDetectionInstructions: js.Array[_],
-      instructions: js.Array[_],
+      hitDetectionInstructions: js.Array[js.Any],
+      instructions: js.Array[js.Any],
       strokeStates: StringDictionary[StrokeState],
       textStates: StringDictionary[TextState]
     ): SerializableInstructions = {
@@ -135,13 +135,13 @@ object executorMod {
       def setFillStates(value: StringDictionary[FillState]): Self = StObject.set(x, "fillStates", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHitDetectionInstructions(value: js.Array[_]): Self = StObject.set(x, "hitDetectionInstructions", value.asInstanceOf[js.Any])
+      def setHitDetectionInstructions(value: js.Array[js.Any]): Self = StObject.set(x, "hitDetectionInstructions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHitDetectionInstructionsVarargs(value: js.Any*): Self = StObject.set(x, "hitDetectionInstructions", js.Array(value :_*))
       
       @scala.inline
-      def setInstructions(value: js.Array[_]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+      def setInstructions(value: js.Array[js.Any]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInstructionsVarargs(value: js.Any*): Self = StObject.set(x, "instructions", js.Array(value :_*))

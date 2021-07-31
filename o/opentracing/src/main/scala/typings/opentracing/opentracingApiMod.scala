@@ -2,16 +2,17 @@ package typings.opentracing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object opentracingApiMod {
   
-  @JSImport("opentracing/lib/test/opentracing_api", JSImport.Default)
+  @JSImport("opentracing/lib/test/opentracing_api", JSImport.Namespace)
   @js.native
-  def default(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("opentracing/lib/test/opentracing_api", "opentracingAPITests")
-  @js.native
-  def opentracingAPITests(): Unit = js.native
+  @scala.inline
+  def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def opentracingAPITests(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opentracingAPITests")().asInstanceOf[Unit]
 }

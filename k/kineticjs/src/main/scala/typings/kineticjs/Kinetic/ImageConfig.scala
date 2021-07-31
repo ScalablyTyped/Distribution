@@ -2,17 +2,16 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageConfig
-  extends DrawOptionsConfig
+  extends StObject
+     with DrawOptionsConfig
      with ObjectOptionsConfig {
   
-  var crop: js.UndefOr[js.Any] = js.native
+  var crop: js.UndefOr[js.Any] = js.undefined
   
-  var image: js.Any = js.native
+  var image: js.Any
 }
 object ImageConfig {
   

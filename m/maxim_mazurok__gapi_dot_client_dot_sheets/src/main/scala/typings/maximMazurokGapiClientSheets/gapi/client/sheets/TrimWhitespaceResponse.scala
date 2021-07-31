@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrimWhitespaceResponse extends StObject {
   
   /** The number of cells that were trimmed of whitespace. */
-  var cellsChangedCount: js.UndefOr[Double] = js.native
+  var cellsChangedCount: js.UndefOr[Double] = js.undefined
 }
 object TrimWhitespaceResponse {
   

@@ -3,41 +3,39 @@ package typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata common to all Datastore Admin operations.
   */
-@js.native
 trait SchemaGoogleDatastoreAdminV1CommonMetadata extends StObject {
   
   /**
     * The time the operation ended, either successfully or otherwise.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * The client-assigned labels which were provided when the operation was
     * created. May also include additional labels.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The type of the operation. Can be used as a filter in
     * ListOperationsRequest.
     */
-  var operationType: js.UndefOr[String] = js.native
+  var operationType: js.UndefOr[String] = js.undefined
   
   /**
     * The time that work began on the operation.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the Operation.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDatastoreAdminV1CommonMetadata {
   

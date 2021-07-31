@@ -6,7 +6,6 @@ import typings.stormReactDiagrams.diagramEngineMod.DiagramEngine
 import typings.stormReactDiagrams.nodeModelMod.NodeModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeWidgetMod {
@@ -20,14 +19,15 @@ object nodeWidgetMod {
     def shouldComponentUpdate_MNodeWidget(): Boolean = js.native
   }
   
-  @js.native
-  trait NodeProps extends BaseWidgetProps {
+  trait NodeProps
+    extends StObject
+       with BaseWidgetProps {
     
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
     
-    var diagramEngine: DiagramEngine = js.native
+    var diagramEngine: DiagramEngine
     
-    var node: NodeModel = js.native
+    var node: NodeModel
   }
   object NodeProps {
     
@@ -54,6 +54,5 @@ object nodeWidgetMod {
     }
   }
   
-  @js.native
   trait NodeState extends StObject
 }

@@ -3,7 +3,6 @@ package typings.reactLeaflet.mod
 import typings.leaflet.mod.Evented
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-leaflet", "MapComponent")

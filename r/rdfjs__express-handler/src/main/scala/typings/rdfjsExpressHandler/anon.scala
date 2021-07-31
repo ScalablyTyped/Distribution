@@ -6,17 +6,15 @@ import typings.rdfJs.mod.Stream
 import typings.rdfjsSinkMap.mod.SinkMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Typeofformats extends StObject {
     
-    var parsers: SinkMap[EventEmitter, Stream[Quad]] = js.native
+    var parsers: SinkMap[EventEmitter, Stream[Quad]]
     
-    var serializers: SinkMap[Stream[Quad], EventEmitter] = js.native
+    var serializers: SinkMap[Stream[Quad], EventEmitter]
   }
   object Typeofformats {
     

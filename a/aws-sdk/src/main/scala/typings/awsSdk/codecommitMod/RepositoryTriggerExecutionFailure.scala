@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepositoryTriggerExecutionFailure extends StObject {
   
   /**
     * Message information about the trigger that did not run.
     */
-  var failureMessage: js.UndefOr[RepositoryTriggerExecutionFailureMessage] = js.native
+  var failureMessage: js.UndefOr[RepositoryTriggerExecutionFailureMessage] = js.undefined
   
   /**
     * The name of the trigger that did not run.
     */
-  var trigger: js.UndefOr[RepositoryTriggerName] = js.native
+  var trigger: js.UndefOr[RepositoryTriggerName] = js.undefined
 }
 object RepositoryTriggerExecutionFailure {
   

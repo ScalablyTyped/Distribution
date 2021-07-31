@@ -2,15 +2,13 @@ package typings.kuromoji.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViterbiLattice extends StObject {
   
-  def append(node: ViterbiNode): Unit = js.native
+  def append(node: ViterbiNode): Unit
   
-  def appendEos(): Unit = js.native
+  def appendEos(): Unit
 }
 object ViterbiLattice {
   

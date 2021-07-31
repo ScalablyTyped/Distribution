@@ -2,53 +2,44 @@ package typings.regression
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("regression", "exponential")
+  @JSImport("regression", JSImport.Namespace)
   @js.native
-  def exponential(data: js.Array[DataPoint]): Result = js.native
-  @JSImport("regression", "exponential")
-  @js.native
-  def exponential(data: js.Array[DataPoint], options: Options): Result = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("regression", "linear")
-  @js.native
-  def linear(data: js.Array[DataPoint]): Result = js.native
-  @JSImport("regression", "linear")
-  @js.native
-  def linear(data: js.Array[DataPoint], options: Options): Result = js.native
+  @scala.inline
+  def exponential(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
+  @scala.inline
+  def exponential(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
-  @JSImport("regression", "logarithmic")
-  @js.native
-  def logarithmic(data: js.Array[DataPoint]): Result = js.native
-  @JSImport("regression", "logarithmic")
-  @js.native
-  def logarithmic(data: js.Array[DataPoint], options: Options): Result = js.native
+  @scala.inline
+  def linear(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("linear")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
+  @scala.inline
+  def linear(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("linear")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
-  @JSImport("regression", "polynomial")
-  @js.native
-  def polynomial(data: js.Array[DataPoint]): Result = js.native
-  @JSImport("regression", "polynomial")
-  @js.native
-  def polynomial(data: js.Array[DataPoint], options: Options): Result = js.native
+  @scala.inline
+  def logarithmic(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("logarithmic")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
+  @scala.inline
+  def logarithmic(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("logarithmic")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
-  @JSImport("regression", "power")
-  @js.native
-  def power(data: js.Array[DataPoint]): Result = js.native
-  @JSImport("regression", "power")
-  @js.native
-  def power(data: js.Array[DataPoint], options: Options): Result = js.native
+  @scala.inline
+  def polynomial(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("polynomial")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
+  @scala.inline
+  def polynomial(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("polynomial")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
-  @JSImport("regression", "_round")
-  @js.native
-  def round(number: Double, precision: Double): Double = js.native
+  @scala.inline
+  def power(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("power")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
+  @scala.inline
+  def power(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("power")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  
+  @scala.inline
+  def round(number: Double, precision: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("_round")(number.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   type DataPoint = js.Tuple2[Double, Double]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -56,14 +47,14 @@ object mod {
       * the number of coefficients to calculate). Only
       * relevant for polynomial fitting.
       */
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of decimal places to round to.
       * This is used to round the calculated fitting coefficients,
       * the output predictions, and the value of r^2.
       */
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -90,7 +81,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
     /**
@@ -105,7 +95,7 @@ object mod {
       * ```y = a0 * x ^ N + a1 * x ^ (N - 1) + ... + aN```
       * where N is the order (default 2).
       */
-    var equation: js.Array[Double] = js.native
+    var equation: js.Array[Double]
     
     /**
       * For each point (x, y) in the input data, a point
@@ -114,7 +104,7 @@ object mod {
       * One could use this to directly evaluate the quality
       * of the fit.
       */
-    var points: js.Array[DataPoint] = js.native
+    var points: js.Array[DataPoint]
     
     /**
       * Function that takes an arbitrary value of x and
@@ -124,7 +114,7 @@ object mod {
       * a number of decimal places defined in the options
       * (default is 2).
       */
-    def predict(x: Double): DataPoint = js.native
+    def predict(x: Double): DataPoint
     
     /**
       * The value of R squared, a statistical measure of the conformance of the
@@ -134,7 +124,7 @@ object mod {
       * This value is rounded to the number of decimal places defined by
       * the precision option (default 2).
       */
-    var r2: Double = js.native
+    var r2: Double
     
     /**
       * A human-readable string representation of the derived
@@ -142,7 +132,7 @@ object mod {
       * fitting method used and the coefficients that were
       * calculated.
       */
-    var string: String = js.native
+    var string: String
   }
   object Result {
     

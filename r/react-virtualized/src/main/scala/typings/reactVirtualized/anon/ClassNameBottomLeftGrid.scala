@@ -4,37 +4,35 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassNameBottomLeftGrid extends StObject {
   
-  var classNameBottomLeftGrid: Validator[String] = js.native
+  var classNameBottomLeftGrid: Validator[String]
   
-  var classNameBottomRightGrid: Validator[String] = js.native
+  var classNameBottomRightGrid: Validator[String]
   
-  var classNameTopLeftGrid: Validator[String] = js.native
+  var classNameTopLeftGrid: Validator[String]
   
-  var classNameTopRightGrid: Validator[String] = js.native
+  var classNameTopRightGrid: Validator[String]
   
-  var enableFixedColumnScroll: Validator[Boolean] = js.native
+  var enableFixedColumnScroll: Validator[Boolean]
   
-  var enableFixedRowScroll: Validator[Boolean] = js.native
+  var enableFixedRowScroll: Validator[Boolean]
   
-  var fixedColumnCount: Validator[Double] = js.native
+  var fixedColumnCount: Validator[Double]
   
-  var fixedRowCount: Validator[Double] = js.native
+  var fixedRowCount: Validator[Double]
   
-  var style: Validator[CSSProperties] = js.native
+  var style: Validator[CSSProperties]
   
-  var styleBottomLeftGrid: Validator[CSSProperties] = js.native
+  var styleBottomLeftGrid: Validator[CSSProperties]
   
-  var styleBottomRightGrid: Validator[CSSProperties] = js.native
+  var styleBottomRightGrid: Validator[CSSProperties]
   
-  var styleTopLeftGrid: Validator[CSSProperties] = js.native
+  var styleTopLeftGrid: Validator[CSSProperties]
   
-  var styleTopRightGrid: Validator[CSSProperties] = js.native
+  var styleTopRightGrid: Validator[CSSProperties]
 }
 object ClassNameBottomLeftGrid {
   

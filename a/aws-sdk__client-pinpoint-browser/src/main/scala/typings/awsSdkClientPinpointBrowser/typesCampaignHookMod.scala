@@ -4,28 +4,26 @@ import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.DE
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.FILTER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCampaignHookMod {
   
-  @js.native
   trait CampaignHook extends StObject {
     
     /**
       * Lambda function name or arn to be called for delivery
       */
-    var LambdaFunctionName: js.UndefOr[String] = js.native
+    var LambdaFunctionName: js.UndefOr[String] = js.undefined
     
     /**
       * What mode Lambda should be invoked in.
       */
-    var Mode: js.UndefOr[DELIVERY | FILTER | String] = js.native
+    var Mode: js.UndefOr[DELIVERY | FILTER | String] = js.undefined
     
     /**
       * Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request
       */
-    var WebUrl: js.UndefOr[String] = js.native
+    var WebUrl: js.UndefOr[String] = js.undefined
   }
   object CampaignHook {
     

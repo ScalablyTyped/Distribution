@@ -2,7 +2,6 @@ package typings.awsSdkClientDynamodbNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryExceptionsUnionMod {
@@ -16,22 +15,20 @@ object queryExceptionsUnionMod {
   object QueryExceptionsUnion {
     
     @scala.inline
-    def InternalServerError(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.InternalServerError): typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def InternalServerError(): typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError = {
+      val __obj = js.Dynamic.literal(name = "InternalServerError")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError]
     }
     
     @scala.inline
-    def ProvisionedThroughputExceededException(
-      name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ProvisionedThroughputExceededException
-    ): typings.awsSdkClientDynamodbNode.typesProvisionedThroughputExceededExceptionMod.ProvisionedThroughputExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def ProvisionedThroughputExceededException(): typings.awsSdkClientDynamodbNode.typesProvisionedThroughputExceededExceptionMod.ProvisionedThroughputExceededException = {
+      val __obj = js.Dynamic.literal(name = "ProvisionedThroughputExceededException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesProvisionedThroughputExceededExceptionMod.ProvisionedThroughputExceededException]
     }
     
     @scala.inline
-    def ResourceNotFoundException(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ResourceNotFoundException): typings.awsSdkClientDynamodbNode.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def ResourceNotFoundException(): typings.awsSdkClientDynamodbNode.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
+      val __obj = js.Dynamic.literal(name = "ResourceNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesResourceNotFoundExceptionMod.ResourceNotFoundException]
     }
   }

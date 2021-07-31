@@ -2,34 +2,32 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The currently supported iOS devices.
   */
-@js.native
 trait SchemaIosDeviceCatalog extends StObject {
   
   /**
     * The set of supported iOS device models.
     */
-  var models: js.UndefOr[js.Array[SchemaIosModel]] = js.native
+  var models: js.UndefOr[js.Array[SchemaIosModel]] = js.undefined
   
   /**
     * The set of supported runtime configurations.
     */
-  var runtimeConfiguration: js.UndefOr[SchemaIosRuntimeConfiguration] = js.native
+  var runtimeConfiguration: js.UndefOr[SchemaIosRuntimeConfiguration] = js.undefined
   
   /**
     * The set of supported iOS software versions.
     */
-  var versions: js.UndefOr[js.Array[SchemaIosVersion]] = js.native
+  var versions: js.UndefOr[js.Array[SchemaIosVersion]] = js.undefined
   
   /**
     * The set of supported Xcode versions.
     */
-  var xcodeVersions: js.UndefOr[js.Array[SchemaXcodeVersion]] = js.native
+  var xcodeVersions: js.UndefOr[js.Array[SchemaXcodeVersion]] = js.undefined
 }
 object SchemaIosDeviceCatalog {
   

@@ -3,17 +3,15 @@ package typings.cesium.anon
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LowFrameRateMessage extends StObject {
   
-  var container: Element | String = js.native
+  var container: Element | String
   
-  var lowFrameRateMessage: js.UndefOr[String] = js.native
+  var lowFrameRateMessage: js.UndefOr[String] = js.undefined
   
-  var scene: typings.cesium.mod.Scene = js.native
+  var scene: typings.cesium.mod.Scene
 }
 object LowFrameRateMessage {
   

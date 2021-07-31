@@ -2,24 +2,22 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutocompleteResultPoi extends StObject {
   
-  var City: String = js.native
+  var City: String
   
-  var business: String = js.native
+  var business: String
   
   // wtf
-  var district: String = js.native
+  var district: String
   
-  var province: String = js.native
+  var province: String
   
-  var street: String = js.native
+  var street: String
   
-  var streetNumber: String = js.native
+  var streetNumber: String
 }
 object AutocompleteResultPoi {
   

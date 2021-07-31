@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Group extends StObject {
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object Group {
   

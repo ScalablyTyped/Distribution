@@ -10,9 +10,9 @@ Extend native Error to create custom errors
 | ------------------ | :-------------: |
 | Full name          | ts-custom-error |
 | Keywords           | custom Error, extend, Error |
-| # releases         | 4 |
-| # dependents       | 59 |
-| # downloads        | 1599060 |
+| # releases         | 5 |
+| # dependents       | 77 |
+| # downloads        | 2048071 |
 | # stars            | 0 |
 
 ## Links

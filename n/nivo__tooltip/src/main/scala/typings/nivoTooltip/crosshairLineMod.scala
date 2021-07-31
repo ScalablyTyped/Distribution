@@ -4,7 +4,6 @@ import typings.react.mod.MemoExoticComponent
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object crosshairLineMod {
@@ -13,16 +12,15 @@ object crosshairLineMod {
   @js.native
   val CrosshairLine: MemoExoticComponent[js.Function1[/* hasX0X1Y0Y1 */ CrosshairLineProps, Element]] = js.native
   
-  @js.native
   trait CrosshairLineProps extends StObject {
     
-    var x0: Double = js.native
+    var x0: Double
     
-    var x1: Double = js.native
+    var x1: Double
     
-    var y0: Double = js.native
+    var y0: Double
     
-    var y1: Double = js.native
+    var y1: Double
   }
   object CrosshairLineProps {
     

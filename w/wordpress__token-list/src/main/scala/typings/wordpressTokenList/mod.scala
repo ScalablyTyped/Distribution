@@ -3,7 +3,6 @@ package typings.wordpressTokenList
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,7 +14,9 @@ object mod {
     *
     * @param {string} initialValue Initial value to assign.
     */
-  class default () extends TokenList {
+  class default ()
+    extends StObject
+       with TokenList {
     def this(initialValue: String) = this()
   }
   

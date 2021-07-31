@@ -5,14 +5,16 @@ import typings.vegaLite.vegaLiteStrings.height
 import typings.vegaLite.vegaLiteStrings.width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutsizeComponentMod {
   
-  @JSImport("vega-lite/build/src/compile/layoutsize/component", "getSizeTypeFromLayoutSizeType")
+  @JSImport("vega-lite/build/src/compile/layoutsize/component", JSImport.Namespace)
   @js.native
-  def getSizeTypeFromLayoutSizeType(layoutSizeType: LayoutSizeType): width | height = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getSizeTypeFromLayoutSizeType(layoutSizeType: LayoutSizeType): width | height = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeTypeFromLayoutSizeType")(layoutSizeType.asInstanceOf[js.Any]).asInstanceOf[width | height]
   
   /* Rewritten from type alias, can be one of: 
     - scala.Double
@@ -24,16 +26,15 @@ object layoutsizeComponentMod {
   
   type LayoutSizeComponent = Split[LayoutSizeIndex]
   
-  @js.native
   trait LayoutSizeIndex extends StObject {
     
-    var childHeight: js.UndefOr[LayoutSize] = js.native
+    var childHeight: js.UndefOr[LayoutSize] = js.undefined
     
-    var childWidth: js.UndefOr[LayoutSize] = js.native
+    var childWidth: js.UndefOr[LayoutSize] = js.undefined
     
-    var height: js.UndefOr[LayoutSize] = js.native
+    var height: js.UndefOr[LayoutSize] = js.undefined
     
-    var width: js.UndefOr[LayoutSize] = js.native
+    var width: js.UndefOr[LayoutSize] = js.undefined
   }
   object LayoutSizeIndex {
     

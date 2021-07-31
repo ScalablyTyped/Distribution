@@ -8,7 +8,6 @@ import typings.sentryTypes.responseMod.Response
 import typings.sentryTypes.sessionMod.Session
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transportMod {
@@ -41,26 +40,25 @@ object transportMod {
   
   type TransportClass[T /* <: Transport */] = Instantiable1[/* options */ TransportOptions, T]
   
-  @js.native
   trait TransportOptions extends StObject {
     
     /** HTTPS proxy certificates path */
-    var caCerts: js.UndefOr[String] = js.native
+    var caCerts: js.UndefOr[String] = js.undefined
     
     /** Sentry DSN */
-    var dsn: DsnLike = js.native
+    var dsn: DsnLike
     
     /** Fetch API init parameters */
-    var fetchParameters: js.UndefOr[StringDictionary[String]] = js.native
+    var fetchParameters: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** Define custom headers */
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** Set a HTTP proxy that should be used for outbound requests. */
-    var httpProxy: js.UndefOr[String] = js.native
+    var httpProxy: js.UndefOr[String] = js.undefined
     
     /** Set a HTTPS proxy that should be used for outbound requests. */
-    var httpsProxy: js.UndefOr[String] = js.native
+    var httpsProxy: js.UndefOr[String] = js.undefined
   }
   object TransportOptions {
     

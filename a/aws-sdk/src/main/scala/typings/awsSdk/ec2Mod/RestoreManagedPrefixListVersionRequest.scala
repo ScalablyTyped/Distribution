@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreManagedPrefixListVersionRequest extends StObject {
   
   /**
     * The current version number for the prefix list.
     */
-  var CurrentVersion: Long = js.native
+  var CurrentVersion: Long
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the prefix list.
     */
-  var PrefixListId: PrefixListResourceId = js.native
+  var PrefixListId: PrefixListResourceId
   
   /**
     * The version to restore.
     */
-  var PreviousVersion: Long = js.native
+  var PreviousVersion: Long
 }
 object RestoreManagedPrefixListVersionRequest {
   

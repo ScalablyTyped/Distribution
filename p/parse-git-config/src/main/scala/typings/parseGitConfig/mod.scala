@@ -5,14 +5,12 @@ import typings.parseGitConfig.parseGitConfigStrings.global
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("parse-git-config", JSImport.Namespace)
-  @js.native
-  def apply(): js.Promise[Config | Null] = js.native
+  @scala.inline
+  def apply(): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Config | Null]]
   /**
     * Asynchronously parse a `.git/config` file. If only the callback is passed,
     * the `.git/config` file relative to `process.cwd()` is used.
@@ -33,21 +31,20 @@ object mod {
     * @param options Options with `cwd` or `path`, the cwd to use, or the callback function.
     * @param callback callback function if the first argument is options or cwd.
     */
+  @scala.inline
+  def apply(cb: ParseCallback): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(options: String): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | Null]]
+  @scala.inline
+  def apply(options: String, cb: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(options: Options): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | Null]]
+  @scala.inline
+  def apply(options: Options, cb: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("parse-git-config", JSImport.Namespace)
   @js.native
-  def apply(cb: ParseCallback): Unit = js.native
-  @JSImport("parse-git-config", JSImport.Namespace)
-  @js.native
-  def apply(options: String): js.Promise[Config | Null] = js.native
-  @JSImport("parse-git-config", JSImport.Namespace)
-  @js.native
-  def apply(options: String, cb: ParseCallback): Unit = js.native
-  @JSImport("parse-git-config", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[Config | Null] = js.native
-  @JSImport("parse-git-config", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, cb: ParseCallback): Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Returns an object with only the properties that had ini-style keys
@@ -59,34 +56,28 @@ object mod {
     * ```
     * @param config The parsed git config object.
     */
-  @JSImport("parse-git-config", "expandKeys")
-  @js.native
-  def expandKeys(config: Config): Config = js.native
+  @scala.inline
+  def expandKeys(config: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("expandKeys")(config.asInstanceOf[js.Any]).asInstanceOf[Config]
   
   /**
     * Asynchronously parse a .git/config file. Returns a promise.
     * Resolves with `null` if unable to resolve path to the git config file.
     * If no arguments are passed, the .git/config file relative to process.cwd() is used.
     */
-  @JSImport("parse-git-config", "promise")
-  @js.native
-  def promise(): js.Promise[Config | Null] = js.native
-  @JSImport("parse-git-config", "promise")
-  @js.native
-  def promise(options: String): js.Promise[Config | Null] = js.native
-  @JSImport("parse-git-config", "promise")
-  @js.native
-  def promise(options: Options): js.Promise[Config | Null] = js.native
+  @scala.inline
+  def promise(): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")().asInstanceOf[js.Promise[Config | Null]]
+  @scala.inline
+  def promise(options: String): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | Null]]
+  @scala.inline
+  def promise(options: Options): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | Null]]
   
   /**
     * Resolve the git config path
     */
-  @JSImport("parse-git-config", "resolveConfigPath")
-  @js.native
-  def resolveConfigPath(options: String): String | Null = js.native
-  @JSImport("parse-git-config", "resolveConfigPath")
-  @js.native
-  def resolveConfigPath(options: ResolveConfigOptions): String | Null = js.native
+  @scala.inline
+  def resolveConfigPath(options: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfigPath")(options.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
+  def resolveConfigPath(options: ResolveConfigOptions): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfigPath")(options.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /**
     * Synchronously parse a `.git/config` file. If no arguments are passed,
@@ -99,25 +90,23 @@ object mod {
     * ```
     * @param options Options with `cwd` or `path`, or the cwd to use.
     */
-  @JSImport("parse-git-config", "sync")
-  @js.native
-  def sync(): Config = js.native
-  @JSImport("parse-git-config", "sync")
-  @js.native
-  def sync(options: String): Config = js.native
-  @JSImport("parse-git-config", "sync")
-  @js.native
-  def sync(options: Options): Config = js.native
+  @scala.inline
+  def sync(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[Config]
+  @scala.inline
+  def sync(options: String): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[Config]
+  @scala.inline
+  def sync(options: Options): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[Config]
   
   // TODO: Can this be defined more precisely?
   type Config = StringDictionary[js.Any]
   
-  @js.native
-  trait Options extends ResolveConfigOptions {
+  trait Options
+    extends StObject
+       with ResolveConfigOptions {
     
-    var expandKeys: js.UndefOr[Boolean] = js.native
+    var expandKeys: js.UndefOr[Boolean] = js.undefined
     
-    var include: js.UndefOr[Boolean] = js.native
+    var include: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -146,14 +135,13 @@ object mod {
   
   type ParseCallback = js.Function2[/* err */ Error | Null, /* config */ Config, Unit]
   
-  @js.native
   trait ResolveConfigOptions extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[global] = js.native
+    var `type`: js.UndefOr[global] = js.undefined
   }
   object ResolveConfigOptions {
     

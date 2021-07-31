@@ -3,14 +3,12 @@ package typings.atom.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextMenuManager extends StObject {
   
   /** Add context menu items scoped by CSS selectors. */
-  def add(itemsBySelector: StringDictionary[js.Array[ContextMenuOptions]]): Disposable = js.native
+  def add(itemsBySelector: StringDictionary[js.Array[ContextMenuOptions]]): Disposable
 }
 object ContextMenuManager {
   

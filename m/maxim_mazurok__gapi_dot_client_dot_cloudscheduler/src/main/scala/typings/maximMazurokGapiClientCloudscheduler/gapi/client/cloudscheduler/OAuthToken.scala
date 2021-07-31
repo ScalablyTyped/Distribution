@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudscheduler.gapi.client.cloudscheduler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OAuthToken extends StObject {
   
   /** OAuth scope to be used for generating OAuth access token. If not specified, "https://www.googleapis.com/auth/cloud-platform" will be used. */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
   /**
     * [Service account email](https://cloud.google.com/iam/docs/service-accounts) to be used for generating OAuth token. The service account must be within the same project as the job.
     * The caller must have iam.serviceAccounts.actAs permission for the service account.
     */
-  var serviceAccountEmail: js.UndefOr[String] = js.native
+  var serviceAccountEmail: js.UndefOr[String] = js.undefined
 }
 object OAuthToken {
   

@@ -4,12 +4,19 @@ import typings.monacoEditor.anon.Authority
 import typings.monacoEditor.anon.Fragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("monaco-editor", "Uri")
 @js.native
-class Uri () extends UriComponents {
+class Uri ()
+  extends StObject
+     with UriComponents {
+  
+  /* CompleteClass */
+  var authority: String = js.native
+  
+  /* CompleteClass */
+  var fragment: String = js.native
   
   /**
     * Returns a string representing the corresponding file system path of this Uri.
@@ -37,6 +44,15 @@ class Uri () extends UriComponents {
     */
   def fsPath: String = js.native
   
+  /* CompleteClass */
+  var path: String = js.native
+  
+  /* CompleteClass */
+  var query: String = js.native
+  
+  /* CompleteClass */
+  var scheme: String = js.native
+  
   def toJSON(): UriComponents = js.native
   
   def toString(skipEncoding: Boolean): String = js.native
@@ -45,6 +61,10 @@ class Uri () extends UriComponents {
 }
 /* static members */
 object Uri {
+  
+  @JSImport("monaco-editor", "Uri")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a new Uri from a file system path, e.g. `c:\my\files`,
@@ -67,17 +87,14 @@ object Uri {
     *
     * @param path A file system path (see `Uri#fsPath`)
     */
-  @JSImport("monaco-editor", "Uri.file")
-  @js.native
-  def file(path: String): Uri = js.native
+  @scala.inline
+  def file(path: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[Uri]
   
-  @JSImport("monaco-editor", "Uri.from")
-  @js.native
-  def from(components: Fragment): Uri = js.native
+  @scala.inline
+  def from(components: Fragment): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(components.asInstanceOf[js.Any]).asInstanceOf[Uri]
   
-  @JSImport("monaco-editor", "Uri.isUri")
-  @js.native
-  def isUri(thing: js.Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = js.native
+  @scala.inline
+  def isUri(thing: js.Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUri")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.Uri */ Boolean]
   
   /**
     * Join a Uri path with path fragments and normalizes the resulting path.
@@ -86,9 +103,8 @@ object Uri {
     * @param pathFragment The path fragment to add to the Uri path.
     * @returns The resulting Uri.
     */
-  @JSImport("monaco-editor", "Uri.joinPath")
-  @js.native
-  def joinPath(uri: Uri, pathFragment: String*): Uri = js.native
+  @scala.inline
+  def joinPath(uri: Uri, pathFragment: String*): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(uri.asInstanceOf[js.Any], pathFragment.asInstanceOf[js.Any])).asInstanceOf[Uri]
   
   /**
     * Creates a new Uri from a string, e.g. `http://www.msft.com/some/path`,
@@ -96,26 +112,20 @@ object Uri {
     *
     * @param value A string which represents an Uri (see `Uri#toString`).
     */
-  @JSImport("monaco-editor", "Uri.parse")
-  @js.native
-  def parse(value: String): Uri = js.native
-  @JSImport("monaco-editor", "Uri.parse")
-  @js.native
-  def parse(value: String, _strict: Boolean): Uri = js.native
+  @scala.inline
+  def parse(value: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  @scala.inline
+  def parse(value: String, _strict: Boolean): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any], _strict.asInstanceOf[js.Any])).asInstanceOf[Uri]
   
-  @JSImport("monaco-editor", "Uri.revive")
-  @js.native
-  def revive(): js.UndefOr[Uri] = js.native
-  @JSImport("monaco-editor", "Uri.revive")
-  @js.native
-  def revive(data: Uri): js.UndefOr[Uri] = js.native
-  @JSImport("monaco-editor", "Uri.revive")
-  @js.native
-  def revive(data: UriComponents): js.UndefOr[Uri] = js.native
-  @JSImport("monaco-editor", "Uri.revive")
-  @js.native
-  def revive_Uri(data: Uri): Uri = js.native
-  @JSImport("monaco-editor", "Uri.revive")
-  @js.native
-  def revive_Uri(data: UriComponents): Uri = js.native
+  @scala.inline
+  def revive(): js.UndefOr[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")().asInstanceOf[js.UndefOr[Uri]]
+  @scala.inline
+  def revive(data: Uri): js.UndefOr[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Uri]]
+  @scala.inline
+  def revive(data: UriComponents): js.UndefOr[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Uri]]
+  
+  @scala.inline
+  def revive_Uri(data: Uri): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  @scala.inline
+  def revive_Uri(data: UriComponents): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[Uri]
 }

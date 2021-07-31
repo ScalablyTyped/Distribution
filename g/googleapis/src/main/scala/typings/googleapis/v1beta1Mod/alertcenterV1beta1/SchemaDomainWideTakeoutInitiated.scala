@@ -2,25 +2,23 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A takeout operation for the entire domain was initiated by an admin.
   * Derived from audit logs.
   */
-@js.native
 trait SchemaDomainWideTakeoutInitiated extends StObject {
   
   /**
     * The email of the admin who initiated the takeout.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The takeout request ID.
     */
-  var takeoutRequestId: js.UndefOr[String] = js.native
+  var takeoutRequestId: js.UndefOr[String] = js.undefined
 }
 object SchemaDomainWideTakeoutInitiated {
   

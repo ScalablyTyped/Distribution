@@ -5,7 +5,6 @@ import typings.angular.mod.IRootScopeService
 import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -14,17 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ///////////////////////////////////////////////////////////////////////////
 object modal {
   
-  @js.native
   trait IModal extends StObject {
     
     @JSName("$promise")
-    var $promise: IPromise[Unit] = js.native
+    var $promise: IPromise[Unit]
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
     
-    def toggle(): Unit = js.native
+    def toggle(): Unit
   }
   object IModal {
     
@@ -51,56 +49,55 @@ object modal {
     }
   }
   
-  @js.native
   trait IModalOptions extends StObject {
     
-    var animation: js.UndefOr[String] = js.native
+    var animation: js.UndefOr[String] = js.undefined
     
-    var backdrop: js.UndefOr[Boolean | String] = js.native
+    var backdrop: js.UndefOr[Boolean | String] = js.undefined
     
-    var backdropAnimation: js.UndefOr[String] = js.native
+    var backdropAnimation: js.UndefOr[String] = js.undefined
     
-    var container: js.UndefOr[String | Boolean] = js.native
+    var container: js.UndefOr[String | Boolean] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var contentTemplate: js.UndefOr[String] = js.native
+    var contentTemplate: js.UndefOr[String] = js.undefined
     
-    var controller: js.UndefOr[js.Any] = js.native
+    var controller: js.UndefOr[js.Any] = js.undefined
     
-    var controllerAs: js.UndefOr[String] = js.native
+    var controllerAs: js.UndefOr[String] = js.undefined
     
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var locals: js.UndefOr[js.Any] = js.native
+    var locals: js.UndefOr[js.Any] = js.undefined
     
-    var onBeforeHide: js.UndefOr[js.Function1[/* modal */ IModal, Unit]] = js.native
+    var onBeforeHide: js.UndefOr[js.Function1[/* modal */ IModal, Unit]] = js.undefined
     
-    var onBeforeShow: js.UndefOr[js.Function1[/* modal */ IModal, Unit]] = js.native
+    var onBeforeShow: js.UndefOr[js.Function1[/* modal */ IModal, Unit]] = js.undefined
     
-    var onHide: js.UndefOr[js.Function1[/* modal */ IModal, Unit]] = js.native
+    var onHide: js.UndefOr[js.Function1[/* modal */ IModal, Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function1[/* modal */ IModal, Unit]] = js.native
+    var onShow: js.UndefOr[js.Function1[/* modal */ IModal, Unit]] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var prefixEvent: js.UndefOr[String] = js.native
+    var prefixEvent: js.UndefOr[String] = js.undefined
     
-    var resolve: js.UndefOr[js.Any] = js.native
+    var resolve: js.UndefOr[js.Any] = js.undefined
     
-    var scope: js.UndefOr[IScope] = js.native
+    var scope: js.UndefOr[IScope] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var templateUrl: js.UndefOr[String] = js.native
+    var templateUrl: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object IModalOptions {
     
@@ -259,10 +256,9 @@ object modal {
     }
   }
   
-  @js.native
   trait IModalProvider extends StObject {
     
-    var defaults: IModalOptions = js.native
+    var defaults: IModalOptions
   }
   object IModalProvider {
     
@@ -281,7 +277,9 @@ object modal {
   }
   
   @js.native
-  trait IModalScope extends IRootScopeService {
+  trait IModalScope
+    extends StObject
+       with IRootScopeService {
     
     @JSName("$hide")
     def $hide(): Unit = js.native

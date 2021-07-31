@@ -2,28 +2,26 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object easingMod {
   
-  @JSImport("ol/easing", "easeIn")
+  @JSImport("ol/easing", JSImport.Namespace)
   @js.native
-  def easeIn(t: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ol/easing", "easeOut")
-  @js.native
-  def easeOut(t: Double): Double = js.native
+  @scala.inline
+  def easeIn(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeIn")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ol/easing", "inAndOut")
-  @js.native
-  def inAndOut(t: Double): Double = js.native
+  @scala.inline
+  def easeOut(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeOut")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ol/easing", "linear")
-  @js.native
-  def linear(t: Double): Double = js.native
+  @scala.inline
+  def inAndOut(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inAndOut")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ol/easing", "upAndDown")
-  @js.native
-  def upAndDown(t: Double): Double = js.native
+  @scala.inline
+  def linear(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("linear")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def upAndDown(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("upAndDown")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

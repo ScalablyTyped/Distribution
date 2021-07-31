@@ -5,7 +5,6 @@ import typings.antdMobile.anon.Animating
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activityIndicatorMod {
@@ -31,12 +30,13 @@ object activityIndicatorMod {
   trait ActivityIndicator
     extends Component[ActivityIndicatorProps, js.Any, js.Any]
   
-  @js.native
-  trait ActivityIndicatorProps extends ActivityIndicatorPropTypes {
+  trait ActivityIndicatorProps
+    extends StObject
+       with ActivityIndicatorPropTypes {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object ActivityIndicatorProps {
     

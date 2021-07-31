@@ -4,11 +4,12 @@ import typings.node.Buffer
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Lock extends EventEmitter {
+trait Lock
+  extends StObject
+     with EventEmitter {
   
   /**
     * Acquire lock
@@ -24,18 +25,17 @@ trait Lock extends EventEmitter {
 }
 object Lock {
   
-  @js.native
   trait Options extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var lockretrytime: js.UndefOr[String] = js.native
+    var lockretrytime: js.UndefOr[String] = js.undefined
     
-    var lockwaittime: js.UndefOr[String] = js.native
+    var lockwaittime: js.UndefOr[String] = js.undefined
     
-    var session: js.UndefOr[js.Object | String] = js.native
+    var session: js.UndefOr[js.Object | String] = js.undefined
     
-    var value: js.UndefOr[String | Buffer] = js.native
+    var value: js.UndefOr[String | Buffer] = js.undefined
   }
   object Options {
     

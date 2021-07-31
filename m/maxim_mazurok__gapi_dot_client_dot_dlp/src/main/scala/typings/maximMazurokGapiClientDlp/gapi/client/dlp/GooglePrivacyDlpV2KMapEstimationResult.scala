@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2KMapEstimationResult extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GooglePrivacyDlpV2KMapEstimationResult extends StObject {
     * records: {min_anonymity: 1, max_anonymity: 1, frequency: 17} {min_anonymity: 2, max_anonymity: 3, frequency: 42} {min_anonymity: 5, max_anonymity: 10, frequency: 99} mean that there
     * are no record with an estimated anonymity of 4, 5, or larger than 10.
     */
-  var kMapEstimationHistogram: js.UndefOr[js.Array[GooglePrivacyDlpV2KMapEstimationHistogramBucket]] = js.native
+  var kMapEstimationHistogram: js.UndefOr[js.Array[GooglePrivacyDlpV2KMapEstimationHistogramBucket]] = js.undefined
 }
 object GooglePrivacyDlpV2KMapEstimationResult {
   

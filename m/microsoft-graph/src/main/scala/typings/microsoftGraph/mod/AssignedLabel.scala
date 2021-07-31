@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignedLabel extends StObject {
   
   // The display name of the label. Read-only.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier of the label.
-  var labelId: js.UndefOr[NullableOption[String]] = js.native
+  var labelId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AssignedLabel {
   

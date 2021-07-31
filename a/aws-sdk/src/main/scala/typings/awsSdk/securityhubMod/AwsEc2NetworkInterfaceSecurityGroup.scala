@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsEc2NetworkInterfaceSecurityGroup extends StObject {
   
   /**
     * The ID of the security group.
     */
-  var GroupId: js.UndefOr[NonEmptyString] = js.native
+  var GroupId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the security group.
     */
-  var GroupName: js.UndefOr[NonEmptyString] = js.native
+  var GroupName: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsEc2NetworkInterfaceSecurityGroup {
   

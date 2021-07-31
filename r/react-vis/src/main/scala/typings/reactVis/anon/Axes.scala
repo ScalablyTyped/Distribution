@@ -3,17 +3,15 @@ package typings.reactVis.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Axes extends StObject {
   
-  var axes: js.UndefOr[CSSProperties] = js.native
+  var axes: js.UndefOr[CSSProperties] = js.undefined
   
-  var labels: js.UndefOr[CSSProperties] = js.native
+  var labels: js.UndefOr[CSSProperties] = js.undefined
   
-  var polygons: js.UndefOr[CSSProperties] = js.native
+  var polygons: js.UndefOr[CSSProperties] = js.undefined
 }
 object Axes {
   

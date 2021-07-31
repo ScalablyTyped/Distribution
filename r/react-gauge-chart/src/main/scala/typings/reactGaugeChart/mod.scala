@@ -4,55 +4,56 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-gauge-chart", JSImport.Default)
+  @JSImport("react-gauge-chart", JSImport.Namespace)
   @js.native
-  def default(props: GaugeChartProps): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: GaugeChartProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
   trait GaugeChartProps extends StObject {
     
-    var animDelay: js.UndefOr[Double] = js.native
+    var animDelay: js.UndefOr[Double] = js.undefined
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var arcPadding: js.UndefOr[Double] = js.native
+    var arcPadding: js.UndefOr[Double] = js.undefined
     
-    var arcWidth: js.UndefOr[Double] = js.native
+    var arcWidth: js.UndefOr[Double] = js.undefined
     
-    var arcsLength: js.UndefOr[js.Array[Double]] = js.native
+    var arcsLength: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var colors: js.UndefOr[js.Array[String]] = js.native
+    var colors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var cornerRadius: js.UndefOr[Double] = js.native
+    var cornerRadius: js.UndefOr[Double] = js.undefined
     
-    var fontSize: js.UndefOr[String] = js.native
+    var fontSize: js.UndefOr[String] = js.undefined
     
-    var formatTextValue: js.UndefOr[js.Function1[/* value */ String, String]] = js.native
+    var formatTextValue: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
     
-    var hideText: js.UndefOr[Boolean] = js.native
+    var hideText: js.UndefOr[Boolean] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var marginInPercent: js.UndefOr[Double] = js.native
+    var marginInPercent: js.UndefOr[Double] = js.undefined
     
-    var needleBaseColor: js.UndefOr[String] = js.native
+    var needleBaseColor: js.UndefOr[String] = js.undefined
     
-    var needleColor: js.UndefOr[String] = js.native
+    var needleColor: js.UndefOr[String] = js.undefined
     
-    var nrOfLevels: js.UndefOr[Double] = js.native
+    var nrOfLevels: js.UndefOr[Double] = js.undefined
     
-    var percent: js.UndefOr[Double] = js.native
+    var percent: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
   }
   object GaugeChartProps {
     

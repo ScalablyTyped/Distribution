@@ -2,14 +2,15 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Validator Interface
   */
 @js.native
-trait Validator extends ValidatorJSType {
+trait Validator
+  extends StObject
+     with ValidatorJSType {
   
   def contains(str: String, element: js.Array[String]): Boolean = js.native
   

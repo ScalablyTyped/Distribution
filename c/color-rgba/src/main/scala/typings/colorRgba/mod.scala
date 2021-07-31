@@ -2,14 +2,16 @@ package typings.colorRgba
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(string: ColorValue): js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Tuple4[Double, Double, Double, Double]]]
+  
   @JSImport("color-rgba", JSImport.Namespace)
   @js.native
-  def apply(string: ColorValue): js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
@@ -20,14 +22,15 @@ object mod {
   */
   type ColorValue = _ColorValue | String | RGBTuple
   
-  @js.native
-  trait HSL extends _ColorValue {
+  trait HSL
+    extends StObject
+       with _ColorValue {
     
-    var h: Double = js.native
+    var h: Double
     
-    var l: Double = js.native
+    var l: Double
     
-    var s: Double = js.native
+    var s: Double
   }
   object HSL {
     
@@ -51,14 +54,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait RGBColor extends _ColorValue {
+  trait RGBColor
+    extends StObject
+       with _ColorValue {
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object RGBColor {
     
@@ -82,14 +86,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait RGBKeyedColor extends _ColorValue {
+  trait RGBKeyedColor
+    extends StObject
+       with _ColorValue {
     
-    var blue: Double = js.native
+    var blue: Double
     
-    var green: Double = js.native
+    var green: Double
     
-    var red: Double = js.native
+    var red: Double
   }
   object RGBKeyedColor {
     

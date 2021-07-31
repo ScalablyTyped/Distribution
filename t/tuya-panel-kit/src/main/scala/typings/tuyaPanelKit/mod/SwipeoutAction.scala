@@ -6,31 +6,29 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwipeoutAction extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var content: js.UndefOr[ReactNode] = js.native
+  var content: js.UndefOr[ReactNode] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var onPress: js.UndefOr[js.Function1[/* e */ GestureResponderEvent, Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* e */ GestureResponderEvent, Unit]] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SwipeoutAction {
   

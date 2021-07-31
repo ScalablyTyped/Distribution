@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,36 +24,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setMultiline(true)
   *         .setBottomLabel("Bottom label - single line");
   */
-@js.native
 trait KeyValue extends StObject {
   
-  def setAuthorizationAction(action: AuthorizationAction): KeyValue = js.native
+  def setAuthorizationAction(action: AuthorizationAction): KeyValue
   
-  def setBottomLabel(text: String): KeyValue = js.native
+  def setBottomLabel(text: String): KeyValue
   
-  def setButton(button: Button): KeyValue = js.native
+  def setButton(button: Button): KeyValue
   
-  def setComposeAction(action: Action, composedEmailType: ComposedEmailType): KeyValue = js.native
+  def setComposeAction(action: Action, composedEmailType: ComposedEmailType): KeyValue
   
-  def setContent(text: String): KeyValue = js.native
+  def setContent(text: String): KeyValue
   
-  def setIcon(icon: Icon): KeyValue = js.native
+  def setIcon(icon: Icon): KeyValue
   
-  def setIconAltText(altText: String): KeyValue = js.native
+  def setIconAltText(altText: String): KeyValue
   
-  def setIconUrl(url: String): KeyValue = js.native
+  def setIconUrl(url: String): KeyValue
   
-  def setMultiline(multiline: Boolean): KeyValue = js.native
+  def setMultiline(multiline: Boolean): KeyValue
   
-  def setOnClickAction(action: Action): KeyValue = js.native
+  def setOnClickAction(action: Action): KeyValue
   
-  def setOnClickOpenLinkAction(action: Action): KeyValue = js.native
+  def setOnClickOpenLinkAction(action: Action): KeyValue
   
-  def setOpenLink(openLink: OpenLink): KeyValue = js.native
+  def setOpenLink(openLink: OpenLink): KeyValue
   
-  def setSwitch(switchToSet: Switch): KeyValue = js.native
+  def setSwitch(switchToSet: Switch): KeyValue
   
-  def setTopLabel(text: String): KeyValue = js.native
+  def setTopLabel(text: String): KeyValue
 }
 object KeyValue {
   

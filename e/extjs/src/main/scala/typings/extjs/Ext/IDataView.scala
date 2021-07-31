@@ -5,27 +5,27 @@ import typings.extjs.Ext.view.IAbstractView
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDataView extends IAbstractView {
+trait IDataView
+  extends StObject
+     with IAbstractView {
   
   /** [Method] Un highlights the currently highlighted item if any  */
-  var clearHighlight: js.UndefOr[js.Function0[Unit]] = js.native
+  var clearHighlight: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Focuses a node in the view
     * @param rec Ext.data.Model The record associated to the node that is to be focused.
     */
-  var focusNode: js.UndefOr[js.Function1[/* rec */ js.UndefOr[IModel], Unit]] = js.native
+  var focusNode: js.UndefOr[js.Function1[/* rec */ js.UndefOr[IModel], Unit]] = js.undefined
   
   /** [Method] Highlights a given item in the View
     * @param item HTMLElement The item to highlight
     */
-  var highlightItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[HTMLElement], Unit]] = js.native
+  var highlightItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[HTMLElement], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var mouseOverOutBuffer: js.UndefOr[Double] = js.native
+  var mouseOverOutBuffer: js.UndefOr[Double] = js.undefined
 }
 object IDataView {
   

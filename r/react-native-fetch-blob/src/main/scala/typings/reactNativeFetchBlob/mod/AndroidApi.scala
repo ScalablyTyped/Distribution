@@ -2,10 +2,8 @@ package typings.reactNativeFetchBlob.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidApi extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait AndroidApi extends StObject {
     * @param path Path of the file to be opened.
     * @param mime Basically system will open an app according to this MIME type.
     */
-  def actionViewIntent(path: String, mime: String): js.Promise[_] = js.native
+  def actionViewIntent(path: String, mime: String): js.Promise[js.Any]
 }
 object AndroidApi {
   
   @scala.inline
-  def apply(actionViewIntent: (String, String) => js.Promise[_]): AndroidApi = {
+  def apply(actionViewIntent: (String, String) => js.Promise[js.Any]): AndroidApi = {
     val __obj = js.Dynamic.literal(actionViewIntent = js.Any.fromFunction2(actionViewIntent))
     __obj.asInstanceOf[AndroidApi]
   }
@@ -28,6 +26,6 @@ object AndroidApi {
   implicit class AndroidApiMutableBuilder[Self <: AndroidApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setActionViewIntent(value: (String, String) => js.Promise[_]): Self = StObject.set(x, "actionViewIntent", js.Any.fromFunction2(value))
+    def setActionViewIntent(value: (String, String) => js.Promise[js.Any]): Self = StObject.set(x, "actionViewIntent", js.Any.fromFunction2(value))
   }
 }

@@ -5,7 +5,6 @@ import typings.typescript.mod.Node
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object declarationUsageVisitorMod {
@@ -102,19 +101,25 @@ object declarationUsageVisitorMod {
   object ResolvedUsage extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ResolvedUsage with Double] = js.native
+    def apply(value: Double): js.UndefOr[ResolvedUsage & Double] = js.native
     
     @js.native
-    sealed trait AMBIGUOUS extends ResolvedUsage
-    /* 2 */ val AMBIGUOUS: typings.angularCore.declarationUsageVisitorMod.ResolvedUsage.AMBIGUOUS with Double = js.native
+    sealed trait AMBIGUOUS
+      extends StObject
+         with ResolvedUsage
+    /* 2 */ val AMBIGUOUS: typings.angularCore.declarationUsageVisitorMod.ResolvedUsage.AMBIGUOUS & Double = js.native
     
     @js.native
-    sealed trait ASYNCHRONOUS extends ResolvedUsage
-    /* 1 */ val ASYNCHRONOUS: typings.angularCore.declarationUsageVisitorMod.ResolvedUsage.ASYNCHRONOUS with Double = js.native
+    sealed trait ASYNCHRONOUS
+      extends StObject
+         with ResolvedUsage
+    /* 1 */ val ASYNCHRONOUS: typings.angularCore.declarationUsageVisitorMod.ResolvedUsage.ASYNCHRONOUS & Double = js.native
     
     @js.native
-    sealed trait SYNCHRONOUS extends ResolvedUsage
-    /* 0 */ val SYNCHRONOUS: typings.angularCore.declarationUsageVisitorMod.ResolvedUsage.SYNCHRONOUS with Double = js.native
+    sealed trait SYNCHRONOUS
+      extends StObject
+         with ResolvedUsage
+    /* 0 */ val SYNCHRONOUS: typings.angularCore.declarationUsageVisitorMod.ResolvedUsage.SYNCHRONOUS & Double = js.native
   }
   
   type FunctionContext = Map[Node, Node]

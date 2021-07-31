@@ -2,15 +2,13 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JoinTokens extends StObject {
   
-  var Manager: String = js.native
+  var Manager: String
   
-  var Worker: String = js.native
+  var Worker: String
 }
 object JoinTokens {
   

@@ -2,7 +2,6 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "ConnectionStringParser")
@@ -31,7 +30,10 @@ class ConnectionStringParser protected () extends StObject {
 /* static members */
 object ConnectionStringParser {
   
-  @JSImport("azure", "ConnectionStringParser.parse")
+  @JSImport("azure", "ConnectionStringParser")
   @js.native
-  def parse(connectionString: String): Dictionary[String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def parse(connectionString: String): Dictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(connectionString.asInstanceOf[js.Any]).asInstanceOf[Dictionary[String]]
 }

@@ -7,19 +7,19 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This IDL was created from the service's places of use, so it is probably incomplete.
   * @since LibreOffice 4.1
   */
-@js.native
-trait TableDefinition extends XPropertySet {
+trait TableDefinition
+  extends StObject
+     with XPropertySet {
   
-  def createDefault(): Unit = js.native
+  def createDefault(): Unit
   
-  def createWithName(Name: String): Unit = js.native
+  def createWithName(Name: String): Unit
 }
 object TableDefinition {
   

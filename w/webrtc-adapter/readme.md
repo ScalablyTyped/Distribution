@@ -10,9 +10,9 @@ A shim to insulate apps from WebRTC spec changes and browser prefix differences
 | ------------------ | :-------------: |
 | Full name          | webrtc-adapter |
 | Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 292 |
-| # downloads        | 4306142 |
+| # releases         | 20 |
+| # dependents       | 337 |
+| # downloads        | 5207508 |
 | # stars            | 10 |
 
 ## Links

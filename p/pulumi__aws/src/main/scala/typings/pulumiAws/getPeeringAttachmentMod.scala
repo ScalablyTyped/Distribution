@@ -5,42 +5,40 @@ import typings.pulumiAws.inputMod.ec2transitgateway.GetPeeringAttachmentFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getPeeringAttachmentMod {
   
-  @JSImport("@pulumi/aws/ec2transitgateway/getPeeringAttachment", "getPeeringAttachment")
+  @JSImport("@pulumi/aws/ec2transitgateway/getPeeringAttachment", JSImport.Namespace)
   @js.native
-  def getPeeringAttachment(): js.Promise[GetPeeringAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getPeeringAttachment", "getPeeringAttachment")
-  @js.native
-  def getPeeringAttachment(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetPeeringAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getPeeringAttachment", "getPeeringAttachment")
-  @js.native
-  def getPeeringAttachment(args: GetPeeringAttachmentArgs): js.Promise[GetPeeringAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getPeeringAttachment", "getPeeringAttachment")
-  @js.native
-  def getPeeringAttachment(args: GetPeeringAttachmentArgs, opts: InvokeOptions): js.Promise[GetPeeringAttachmentResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getPeeringAttachment(): js.Promise[GetPeeringAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")().asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
+  @scala.inline
+  def getPeeringAttachment(args: Unit, opts: InvokeOptions): js.Promise[GetPeeringAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
+  @scala.inline
+  def getPeeringAttachment(args: GetPeeringAttachmentArgs): js.Promise[GetPeeringAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
+  @scala.inline
+  def getPeeringAttachment(args: GetPeeringAttachmentArgs, opts: InvokeOptions): js.Promise[GetPeeringAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
+  
   trait GetPeeringAttachmentArgs extends StObject {
     
     /**
       * One or more configuration blocks containing name-values filters. Detailed below.
       */
-    val filters: js.UndefOr[js.Array[GetPeeringAttachmentFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetPeeringAttachmentFilter]] = js.undefined
     
     /**
       * Identifier of the EC2 Transit Gateway Peering Attachment.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * A mapping of tags, each pair of which must exactly match
       * a pair on the specific EC2 Transit Gateway Peering Attachment to retrieve.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetPeeringAttachmentArgs {
     
@@ -76,36 +74,35 @@ object getPeeringAttachmentMod {
     }
   }
   
-  @js.native
   trait GetPeeringAttachmentResult extends StObject {
     
     val filters: js.UndefOr[
         js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetPeeringAttachmentFilter]
-      ] = js.native
+      ] = js.undefined
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * Identifier of the peer AWS account
       */
-    val peerAccountId: String = js.native
+    val peerAccountId: String
     
     /**
       * Identifier of the peer AWS region
       */
-    val peerRegion: String = js.native
+    val peerRegion: String
     
     /**
       * Identifier of the peer EC2 Transit Gateway
       */
-    val peerTransitGatewayId: String = js.native
+    val peerTransitGatewayId: String
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * Identifier of the local EC2 Transit Gateway
       */
-    val transitGatewayId: String = js.native
+    val transitGatewayId: String
   }
   object GetPeeringAttachmentResult {
     

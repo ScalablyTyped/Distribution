@@ -10,7 +10,6 @@ import typings.popperjsCore.typesMod.Padding
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flipMod extends Shortcut {
@@ -21,26 +20,25 @@ object flipMod extends Shortcut {
   
   type FlipModifier = Modifier[flip, Options]
   
-  @js.native
   trait Options extends StObject {
     
-    var allowedAutoPlacements: js.Array[Placement] = js.native
+    var allowedAutoPlacements: js.Array[Placement]
     
-    var altAxis: Boolean = js.native
+    var altAxis: Boolean
     
-    var altBoundary: Boolean = js.native
+    var altBoundary: Boolean
     
-    var boundary: Boundary = js.native
+    var boundary: Boundary
     
-    var fallbackPlacements: js.Array[Placement] = js.native
+    var fallbackPlacements: js.Array[Placement]
     
-    var flipVariations: Boolean = js.native
+    var flipVariations: Boolean
     
-    var mainAxis: Boolean = js.native
+    var mainAxis: Boolean
     
-    var padding: Padding = js.native
+    var padding: Padding
     
-    var rootBoundary: RootBoundary = js.native
+    var rootBoundary: RootBoundary
   }
   object Options {
     

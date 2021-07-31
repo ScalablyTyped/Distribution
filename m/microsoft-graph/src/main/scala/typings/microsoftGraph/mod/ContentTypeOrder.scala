@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentTypeOrder extends StObject {
   
   // Whether this is the default Content Type
-  var default: js.UndefOr[NullableOption[Boolean]] = js.native
+  var default: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Specifies the position in which the Content Type appears in the selection UI.
-  var position: js.UndefOr[NullableOption[Double]] = js.native
+  var position: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object ContentTypeOrder {
   

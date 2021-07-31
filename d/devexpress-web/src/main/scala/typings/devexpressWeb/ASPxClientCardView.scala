@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client ASPxCardView.
   */
 @js.native
-trait ASPxClientCardView extends ASPxClientGridBase {
+trait ASPxClientCardView
+  extends StObject
+     with ASPxClientGridBase {
   
   /**
     * Adds a new card.
@@ -322,7 +323,7 @@ trait ASPxClientCardView extends ASPxClientGridBase {
   /**
     * Returns key values of selected cards displayed within the current page.
     */
-  def GetSelectedKeysOnPage(): js.Array[_] = js.native
+  def GetSelectedKeysOnPage(): js.Array[js.Any] = js.native
   
   /**
     * Returns the index of the first card displayed within the grid's active page.
@@ -353,13 +354,13 @@ trait ASPxClientCardView extends ASPxClientGridBase {
   def GotoPage(pageIndex: Double): Unit = js.native
   
   def GroupBy(column: String): Unit = js.native
-  def GroupBy(column: String, groupIndex: js.UndefOr[scala.Nothing], sortOrder: String): Unit = js.native
   def GroupBy(column: String, groupIndex: Double): Unit = js.native
   def GroupBy(column: String, groupIndex: Double, sortOrder: String): Unit = js.native
+  def GroupBy(column: String, groupIndex: Unit, sortOrder: String): Unit = js.native
   def GroupBy(column: Double): Unit = js.native
-  def GroupBy(column: Double, groupIndex: js.UndefOr[scala.Nothing], sortOrder: String): Unit = js.native
   def GroupBy(column: Double, groupIndex: Double): Unit = js.native
   def GroupBy(column: Double, groupIndex: Double, sortOrder: String): Unit = js.native
+  def GroupBy(column: Double, groupIndex: Unit, sortOrder: String): Unit = js.native
   /**
     * Groups cards by the values of the specified column.
     * @param column An ASPxClientCardViewColumn object that represents the card view column.
@@ -367,9 +368,9 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     * @param sortOrder A string value that specifies the column's sort order.
     */
   def GroupBy(column: ASPxClientCardViewColumn): Unit = js.native
-  def GroupBy(column: ASPxClientCardViewColumn, groupIndex: js.UndefOr[scala.Nothing], sortOrder: String): Unit = js.native
   def GroupBy(column: ASPxClientCardViewColumn, groupIndex: Double): Unit = js.native
   def GroupBy(column: ASPxClientCardViewColumn, groupIndex: Double, sortOrder: String): Unit = js.native
+  def GroupBy(column: ASPxClientCardViewColumn, groupIndex: Unit, sortOrder: String): Unit = js.native
   
   /**
     * Fires before a group row is collapsed.
@@ -408,26 +409,22 @@ trait ASPxClientCardView extends ASPxClientGridBase {
   def IsNewCardEditing(): Boolean = js.native
   
   def MoveColumn(column: String): Unit = js.native
-  def MoveColumn(column: String, moveToColumnVisibleIndex: js.UndefOr[scala.Nothing], moveBefore: Boolean): Unit = js.native
   def MoveColumn(column: String, moveToColumnVisibleIndex: Double): Unit = js.native
   def MoveColumn(column: String, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
+  def MoveColumn(column: String, moveToColumnVisibleIndex: Unit, moveBefore: Boolean): Unit = js.native
   def MoveColumn(column: Double): Unit = js.native
-  def MoveColumn(column: Double, moveToColumnVisibleIndex: js.UndefOr[scala.Nothing], moveBefore: Boolean): Unit = js.native
   def MoveColumn(column: Double, moveToColumnVisibleIndex: Double): Unit = js.native
   def MoveColumn(column: Double, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
+  def MoveColumn(column: Double, moveToColumnVisibleIndex: Unit, moveBefore: Boolean): Unit = js.native
   /**
     * Moves the specified column to the specified visual position within the ASPxCardView.
     * @param moveToColumnVisibleIndex An integer value that identifies the target column displayed within the grid.
     * @param moveBefore true to move the column before the target column; otherwise, false.
     */
   def MoveColumn(column: ASPxClientCardViewColumn): Unit = js.native
-  def MoveColumn(
-    column: ASPxClientCardViewColumn,
-    moveToColumnVisibleIndex: js.UndefOr[scala.Nothing],
-    moveBefore: Boolean
-  ): Unit = js.native
   def MoveColumn(column: ASPxClientCardViewColumn, moveToColumnVisibleIndex: Double): Unit = js.native
   def MoveColumn(column: ASPxClientCardViewColumn, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
+  def MoveColumn(column: ASPxClientCardViewColumn, moveToColumnVisibleIndex: Unit, moveBefore: Boolean): Unit = js.native
   
   /**
     * Activates the next page.
@@ -473,11 +470,11 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     * @param selected true to select the specified cards; false to deselect the cards.
     */
   def SelectCards(): Unit = js.native
-  def SelectCards(visibleIndices: js.UndefOr[scala.Nothing], selected: Boolean): Unit = js.native
   def SelectCards(visibleIndices: js.Array[Double]): Unit = js.native
   def SelectCards(visibleIndices: js.Array[Double], selected: Boolean): Unit = js.native
   def SelectCards(visibleIndices: Double): Unit = js.native
   def SelectCards(visibleIndices: Double, selected: Boolean): Unit = js.native
+  def SelectCards(visibleIndices: Unit, selected: Boolean): Unit = js.native
   
   def SelectCardsByKey(keys: js.Any): Unit = js.native
   def SelectCardsByKey(keys: js.Any, selected: Boolean): Unit = js.native
@@ -485,8 +482,8 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     * Selects or deselects the specified card displayed within the CardView.
     * @param selected true to select the specified card; false to deselect the card.
     */
-  def SelectCardsByKey(keys: js.Array[_]): Unit = js.native
-  def SelectCardsByKey(keys: js.Array[_], selected: Boolean): Unit = js.native
+  def SelectCardsByKey(keys: js.Array[js.Any]): Unit = js.native
+  def SelectCardsByKey(keys: js.Array[js.Any], selected: Boolean): Unit = js.native
   
   /**
     * Fires after the selection has been changed.
@@ -545,31 +542,21 @@ trait ASPxClientCardView extends ASPxClientGridBase {
   def ShowFilterControl(): Unit = js.native
   
   def SortBy(column: String): Unit = js.native
-  def SortBy(
-    column: String,
-    sortOrder: js.UndefOr[scala.Nothing],
-    reset: js.UndefOr[scala.Nothing],
-    sortIndex: Double
-  ): Unit = js.native
-  def SortBy(column: String, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
-  def SortBy(column: String, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean, sortIndex: Double): Unit = js.native
   def SortBy(column: String, sortOrder: String): Unit = js.native
-  def SortBy(column: String, sortOrder: String, reset: js.UndefOr[scala.Nothing], sortIndex: Double): Unit = js.native
   def SortBy(column: String, sortOrder: String, reset: Boolean): Unit = js.native
   def SortBy(column: String, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(column: String, sortOrder: String, reset: Unit, sortIndex: Double): Unit = js.native
+  def SortBy(column: String, sortOrder: Unit, reset: Boolean): Unit = js.native
+  def SortBy(column: String, sortOrder: Unit, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(column: String, sortOrder: Unit, reset: Unit, sortIndex: Double): Unit = js.native
   def SortBy(column: Double): Unit = js.native
-  def SortBy(
-    column: Double,
-    sortOrder: js.UndefOr[scala.Nothing],
-    reset: js.UndefOr[scala.Nothing],
-    sortIndex: Double
-  ): Unit = js.native
-  def SortBy(column: Double, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
-  def SortBy(column: Double, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean, sortIndex: Double): Unit = js.native
   def SortBy(column: Double, sortOrder: String): Unit = js.native
-  def SortBy(column: Double, sortOrder: String, reset: js.UndefOr[scala.Nothing], sortIndex: Double): Unit = js.native
   def SortBy(column: Double, sortOrder: String, reset: Boolean): Unit = js.native
   def SortBy(column: Double, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(column: Double, sortOrder: String, reset: Unit, sortIndex: Double): Unit = js.native
+  def SortBy(column: Double, sortOrder: Unit, reset: Boolean): Unit = js.native
+  def SortBy(column: Double, sortOrder: Unit, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(column: Double, sortOrder: Unit, reset: Unit, sortIndex: Double): Unit = js.native
   /**
     * Sorts data by the specified data column's values, and places the column to the specified position among the sorted columns.
     * @param column An ASPxClientCardViewColumn object that represents the data column.
@@ -577,28 +564,13 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     * @param reset true to clear any previous sorting; otherwise, false.
     */
   def SortBy(column: ASPxClientCardViewColumn): Unit = js.native
-  def SortBy(
-    column: ASPxClientCardViewColumn,
-    sortOrder: js.UndefOr[scala.Nothing],
-    reset: js.UndefOr[scala.Nothing],
-    sortIndex: Double
-  ): Unit = js.native
-  def SortBy(column: ASPxClientCardViewColumn, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
-  def SortBy(
-    column: ASPxClientCardViewColumn,
-    sortOrder: js.UndefOr[scala.Nothing],
-    reset: Boolean,
-    sortIndex: Double
-  ): Unit = js.native
   def SortBy(column: ASPxClientCardViewColumn, sortOrder: String): Unit = js.native
-  def SortBy(
-    column: ASPxClientCardViewColumn,
-    sortOrder: String,
-    reset: js.UndefOr[scala.Nothing],
-    sortIndex: Double
-  ): Unit = js.native
   def SortBy(column: ASPxClientCardViewColumn, sortOrder: String, reset: Boolean): Unit = js.native
   def SortBy(column: ASPxClientCardViewColumn, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(column: ASPxClientCardViewColumn, sortOrder: String, reset: Unit, sortIndex: Double): Unit = js.native
+  def SortBy(column: ASPxClientCardViewColumn, sortOrder: Unit, reset: Boolean): Unit = js.native
+  def SortBy(column: ASPxClientCardViewColumn, sortOrder: Unit, reset: Boolean, sortIndex: Double): Unit = js.native
+  def SortBy(column: ASPxClientCardViewColumn, sortOrder: Unit, reset: Unit, sortIndex: Double): Unit = js.native
   
   /**
     * Switches the CardView to edit mode.
@@ -642,7 +614,7 @@ trait ASPxClientCardView extends ASPxClientGridBase {
     * Deselects the specified cards displayed within the ASPxCardView.
     * @param keys An array of objects that uniquely identify the cards.
     */
-  def UnselectCardsByKey(keys: js.Array[_]): Unit = js.native
+  def UnselectCardsByKey(keys: js.Array[js.Any]): Unit = js.native
   
   /**
     * Deselects all grid cards that match the filter criteria currently applied to the CardView.

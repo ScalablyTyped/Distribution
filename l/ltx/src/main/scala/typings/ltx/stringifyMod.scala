@@ -3,21 +3,20 @@ package typings.ltx
 import typings.ltx.elementMod.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringifyMod {
   
-  @JSImport("ltx/lib/stringify", "stringify")
+  @JSImport("ltx/lib/stringify", JSImport.Namespace)
   @js.native
-  def stringify(el: Element): String = js.native
-  @JSImport("ltx/lib/stringify", "stringify")
-  @js.native
-  def stringify(el: Element, indent: js.UndefOr[scala.Nothing], level: Double): String = js.native
-  @JSImport("ltx/lib/stringify", "stringify")
-  @js.native
-  def stringify(el: Element, indent: Double): String = js.native
-  @JSImport("ltx/lib/stringify", "stringify")
-  @js.native
-  def stringify(el: Element, indent: Double, level: Double): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def stringify(el: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(el.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(el: Element, indent: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(el.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(el: Element, indent: Double, level: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(el.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(el: Element, indent: Unit, level: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(el.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[String]
 }

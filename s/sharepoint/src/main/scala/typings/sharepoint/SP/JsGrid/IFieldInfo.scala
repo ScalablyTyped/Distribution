@@ -2,29 +2,27 @@ package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFieldInfo extends StObject {
   
-  var dateOnly: js.UndefOr[Boolean] = js.native
+  var dateOnly: js.UndefOr[Boolean] = js.undefined
   
-  var defaultCellStyleId: js.UndefOr[js.Any] = js.native
+  var defaultCellStyleId: js.UndefOr[js.Any] = js.undefined
   
-  var editMode: js.UndefOr[EditMode] = js.native
+  var editMode: js.UndefOr[EditMode] = js.undefined
   
-  var fieldKey: String = js.native
+  var fieldKey: String
   
-  var hasDataValue: js.UndefOr[Boolean] = js.native
+  var hasDataValue: js.UndefOr[Boolean] = js.undefined
   
-  var hasLocalizedValue: js.UndefOr[Boolean] = js.native
+  var hasLocalizedValue: js.UndefOr[Boolean] = js.undefined
   
-  var multiValue: js.UndefOr[Boolean] = js.native
+  var multiValue: js.UndefOr[Boolean] = js.undefined
   
-  var propertyTypeId: String = js.native
+  var propertyTypeId: String
   
-  var textDirection: js.UndefOr[TextDirection] = js.native
+  var textDirection: js.UndefOr[TextDirection] = js.undefined
 }
 object IFieldInfo {
   

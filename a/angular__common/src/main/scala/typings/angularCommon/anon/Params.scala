@@ -8,21 +8,19 @@ import typings.angularCommon.httpHttpMod.HttpHeaders
 import typings.angularCommon.httpHttpMod.HttpParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Params extends StObject {
   
-  var headers: js.UndefOr[HttpHeaders] = js.native
+  var headers: js.UndefOr[HttpHeaders] = js.undefined
   
-  var params: js.UndefOr[HttpParams] = js.native
+  var params: js.UndefOr[HttpParams] = js.undefined
   
-  var reportProgress: js.UndefOr[Boolean] = js.native
+  var reportProgress: js.UndefOr[Boolean] = js.undefined
   
-  var responseType: js.UndefOr[arraybuffer | blob | json | text] = js.native
+  var responseType: js.UndefOr[arraybuffer | blob | json | text] = js.undefined
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object Params {
   

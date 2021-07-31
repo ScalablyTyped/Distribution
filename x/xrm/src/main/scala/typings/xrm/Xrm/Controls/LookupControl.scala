@@ -3,7 +3,6 @@ package typings.xrm.Xrm.Controls
 import typings.xrm.Xrm.Events.ContextSensitiveHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link StandardControl}
   */
 @js.native
-trait LookupControl extends StandardControl {
+trait LookupControl
+  extends StObject
+     with StandardControl {
   
   /**
     * Adds an additional custom filter to the lookup, with the "AND" filter operator.

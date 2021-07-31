@@ -2,31 +2,29 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBackupsRequest extends StObject {
   
   /**
     * IDs of the backups you want to retrieve (String). This overrides any filters. If any IDs are not found, BackupNotFound will be thrown.
     */
-  var BackupIds: js.UndefOr[typings.awsSdk.fsxMod.BackupIds] = js.native
+  var BackupIds: js.UndefOr[typings.awsSdk.fsxMod.BackupIds] = js.undefined
   
   /**
     * Filters structure. Supported names are file-system-id and backup-type.
     */
-  var Filters: js.UndefOr[typings.awsSdk.fsxMod.Filters] = js.native
+  var Filters: js.UndefOr[typings.awsSdk.fsxMod.Filters] = js.undefined
   
   /**
     * Maximum number of backups to return in the response (integer). This parameter value must be greater than 0. The number of items that Amazon FSx returns is the minimum of the MaxResults parameter specified in the request and the service's internal maximum number of items per page.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.fsxMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.fsxMod.MaxResults] = js.undefined
   
   /**
     * Opaque pagination token returned from a previous DescribeBackups operation (String). If a token present, the action continues the list from where the returning call left off.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.fsxMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.fsxMod.NextToken] = js.undefined
 }
 object DescribeBackupsRequest {
   

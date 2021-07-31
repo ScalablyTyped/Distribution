@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScaleRangeSliderVisibleElements extends Object {
+trait ScaleRangeSliderVisibleElements
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether the preview thumbnail of the region is visible.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#VisibleElements)
     */
-  var preview: Boolean = js.native
+  var preview: Boolean
 }
 object ScaleRangeSliderVisibleElements {
   

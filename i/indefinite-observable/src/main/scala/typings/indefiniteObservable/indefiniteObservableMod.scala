@@ -2,9 +2,10 @@ package typings.indefiniteObservable
 
 import typings.indefiniteObservable.typesMod.Connect
 import typings.indefiniteObservable.typesMod.Observable
+import typings.indefiniteObservable.typesMod.ObserverOrNext
+import typings.indefiniteObservable.typesMod.Subscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indefiniteObservableMod {
@@ -25,7 +26,9 @@ object indefiniteObservableMod {
   
   @JSImport("indefinite-observable/dist/IndefiniteObservable", "IndefiniteObservable")
   @js.native
-  class IndefiniteObservable[T] protected () extends Observable[T] {
+  class IndefiniteObservable[T] protected ()
+    extends StObject
+       with Observable[T] {
     /**
       * The provided function should receive an observer and connect that
       * observer's `next` method to an event source (for instance,
@@ -37,5 +40,8 @@ object indefiniteObservableMod {
     def this(connect: Connect[T]) = this()
     
     var _connect: js.Any = js.native
+    
+    /* CompleteClass */
+    override def subscribe(observerOrNext: ObserverOrNext[T]): Subscription = js.native
   }
 }

@@ -2,23 +2,21 @@ package typings.node.dnsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NaptrRecord extends StObject {
   
-  var flags: String = js.native
+  var flags: String
   
-  var order: Double = js.native
+  var order: Double
   
-  var preference: Double = js.native
+  var preference: Double
   
-  var regexp: String = js.native
+  var regexp: String
   
-  var replacement: String = js.native
+  var replacement: String
   
-  var service: String = js.native
+  var service: String
 }
 object NaptrRecord {
   

@@ -2,15 +2,13 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AzureSpnOperationStatus extends StObject {
   
-  var state: String = js.native
+  var state: String
   
-  var statusMessage: String = js.native
+  var statusMessage: String
 }
 object AzureSpnOperationStatus {
   

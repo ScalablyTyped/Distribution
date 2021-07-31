@@ -15,10 +15,13 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutMod {
+  
+  @JSImport("@react-md/utils/types/layout", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-md/utils/types/layout", "CELL_MARGIN_VAR")
   @js.native
@@ -46,34 +49,31 @@ object layoutMod {
   
   @JSImport("@react-md/utils/types/layout", "Grid")
   @js.native
-  val Grid: ForwardRefExoticComponent[GridProps with RefAttributes[HTMLDivElement]] = js.native
+  val Grid: ForwardRefExoticComponent[GridProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("@react-md/utils/types/layout", "GridCell")
   @js.native
-  val GridCell: ForwardRefExoticComponent[GridCellProps with RefAttributes[HTMLDivElement]] = js.native
+  val GridCell: ForwardRefExoticComponent[GridCellProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("@react-md/utils/types/layout", "GridList")
   @js.native
-  val GridList: ForwardRefExoticComponent[GridListProps with RefAttributes[HTMLDivElement]] = js.native
+  val GridList: ForwardRefExoticComponent[GridListProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("@react-md/utils/types/layout", "GridListCell")
   @js.native
-  val GridListCell: ForwardRefExoticComponent[GridListCellProps with RefAttributes[HTMLDivElement]] = js.native
+  val GridListCell: ForwardRefExoticComponent[GridListCellProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("@react-md/utils/types/layout", "GridListSizeProvider")
   @js.native
   val GridListSizeProvider: Provider[GridListSize] = js.native
   
-  @JSImport("@react-md/utils/types/layout", "useGridList")
-  @js.native
-  def useGridList[E /* <: HTMLElement */](): UseGridListReturnValue[E] = js.native
-  @JSImport("@react-md/utils/types/layout", "useGridList")
-  @js.native
+  @scala.inline
+  def useGridList[E /* <: HTMLElement */](): UseGridListReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridList")().asInstanceOf[UseGridListReturnValue[E]]
+  @scala.inline
   def useGridList[E /* <: HTMLElement */](
-    hasRefStyleClassNameCellMarginDefaultSizeMaxCellSizeDisableHeightDisableWidthContainerPadding: PropsWithRef[UseGridListOptions, E]
-  ): UseGridListReturnValue[E] = js.native
+    hasPropRefStyleClassNameCellMarginDefaultSizeMaxCellSizeDisableHeightDisableWidthContainerPadding: PropsWithRef[UseGridListOptions, E]
+  ): UseGridListReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridList")(hasPropRefStyleClassNameCellMarginDefaultSizeMaxCellSizeDisableHeightDisableWidthContainerPadding.asInstanceOf[js.Any]).asInstanceOf[UseGridListReturnValue[E]]
   
-  @JSImport("@react-md/utils/types/layout", "useGridListSize")
-  @js.native
-  def useGridListSize(): GridListSize = js.native
+  @scala.inline
+  def useGridListSize(): GridListSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridListSize")().asInstanceOf[GridListSize]
 }

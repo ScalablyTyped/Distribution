@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectDisplayOptions extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait ObjectDisplayOptions extends StObject {
     * of the values are displayed before the next properties. For this reason, it is a good practice to specify singular properties before repeated properties in this list. All of the
     * properties must set is_returnable to true. The maximum number of metalines is 3.
     */
-  var metalines: js.UndefOr[js.Array[Metaline]] = js.native
+  var metalines: js.UndefOr[js.Array[Metaline]] = js.undefined
   
   /**
     * The user friendly label to display in the search result to indicate the type of the item. This is OPTIONAL; if not provided, an object label isn't displayed on the context line of
     * the search results. The maximum length is 64 characters.
     */
-  var objectDisplayLabel: js.UndefOr[String] = js.native
+  var objectDisplayLabel: js.UndefOr[String] = js.undefined
 }
 object ObjectDisplayOptions {
   

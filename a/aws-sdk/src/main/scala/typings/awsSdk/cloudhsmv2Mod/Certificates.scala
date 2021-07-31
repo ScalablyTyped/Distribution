@@ -2,36 +2,34 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Certificates extends StObject {
   
   /**
     * The HSM hardware certificate issued (signed) by AWS CloudHSM.
     */
-  var AwsHardwareCertificate: js.UndefOr[Cert] = js.native
+  var AwsHardwareCertificate: js.UndefOr[Cert] = js.undefined
   
   /**
     * The cluster certificate issued (signed) by the issuing certificate authority (CA) of the cluster's owner.
     */
-  var ClusterCertificate: js.UndefOr[Cert] = js.native
+  var ClusterCertificate: js.UndefOr[Cert] = js.undefined
   
   /**
     * The cluster's certificate signing request (CSR). The CSR exists only when the cluster's state is UNINITIALIZED.
     */
-  var ClusterCsr: js.UndefOr[Cert] = js.native
+  var ClusterCsr: js.UndefOr[Cert] = js.undefined
   
   /**
     * The HSM certificate issued (signed) by the HSM hardware.
     */
-  var HsmCertificate: js.UndefOr[Cert] = js.native
+  var HsmCertificate: js.UndefOr[Cert] = js.undefined
   
   /**
     * The HSM hardware certificate issued (signed) by the hardware manufacturer.
     */
-  var ManufacturerHardwareCertificate: js.UndefOr[Cert] = js.native
+  var ManufacturerHardwareCertificate: js.UndefOr[Cert] = js.undefined
 }
 object Certificates {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRedshiftClusterClusterParameterStatus extends StObject {
   
   /**
     * The error that prevented the parameter from being applied to the database.
     */
-  var ParameterApplyErrorDescription: js.UndefOr[NonEmptyString] = js.native
+  var ParameterApplyErrorDescription: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The status of the parameter. Indicates whether the parameter is in sync with the database, waiting for a cluster reboot, or encountered an error when it was applied. Valid values: in-sync | pending-reboot | applying | invalid-parameter | apply-deferred | apply-error | unknown-error 
     */
-  var ParameterApplyStatus: js.UndefOr[NonEmptyString] = js.native
+  var ParameterApplyStatus: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the parameter.
     */
-  var ParameterName: js.UndefOr[NonEmptyString] = js.native
+  var ParameterName: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsRedshiftClusterClusterParameterStatus {
   

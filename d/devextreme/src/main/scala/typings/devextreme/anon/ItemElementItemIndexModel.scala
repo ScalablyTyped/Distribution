@@ -5,25 +5,23 @@ import typings.devextreme.mod.DevExpress.ui.dxTreeView
 import typings.devextreme.mod.DevExpress.ui.dxTreeViewNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemElementItemIndexModel extends StObject {
   
-  var component: js.UndefOr[dxTreeView] = js.native
+  var component: js.UndefOr[dxTreeView] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var itemData: js.UndefOr[js.Any] = js.native
+  var itemData: js.UndefOr[js.Any] = js.undefined
   
-  var itemElement: js.UndefOr[dxElement] = js.native
+  var itemElement: js.UndefOr[dxElement] = js.undefined
   
-  var itemIndex: js.UndefOr[Double] = js.native
+  var itemIndex: js.UndefOr[Double] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var node: js.UndefOr[dxTreeViewNode] = js.native
+  var node: js.UndefOr[dxTreeViewNode] = js.undefined
 }
 object ItemElementItemIndexModel {
   

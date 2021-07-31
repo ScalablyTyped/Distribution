@@ -6,10 +6,13 @@ import typings.tslint.ruleMod.IRuleMetadata
 import typings.typescript.mod.SignatureDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adjacentOverloadSignaturesRuleMod {
+  
+  @JSImport("tslint/lib/rules/adjacentOverloadSignaturesRule", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("tslint/lib/rules/adjacentOverloadSignaturesRule", "Rule")
   @js.native
@@ -23,9 +26,8 @@ object adjacentOverloadSignaturesRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/adjacentOverloadSignaturesRule", "Rule.FAILURE_STRING")
-    @js.native
-    def FAILURE_STRING(name: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/adjacentOverloadSignaturesRule", "Rule.metadata")
     @js.native
@@ -34,7 +36,6 @@ object adjacentOverloadSignaturesRuleMod {
     def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("tslint/lib/rules/adjacentOverloadSignaturesRule", "getOverloadKey")
-  @js.native
-  def getOverloadKey(node: SignatureDeclaration): js.UndefOr[String] = js.native
+  @scala.inline
+  def getOverloadKey(node: SignatureDeclaration): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverloadKey")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

@@ -2,14 +2,12 @@ package typings.cordovaPluginGlobalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
   /** This plugin obtains information and performs operations specific to the user's locale and timezone. */
-  var globalization: Globalization = js.native
+  var globalization: Globalization
 }
 object Navigator {
   

@@ -3,27 +3,30 @@ package typings.masonryLayout
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("masonry-layout", JSImport.Namespace)
   @js.native
-  class ^ () extends Masonry {
+  class ^ ()
+    extends StObject
+       with Masonry {
     def this(options: Options) = this()
     def this(selector: String) = this()
     def this(selector: Element) = this()
     def this(selector: String, options: Options) = this()
     def this(selector: Element, options: Options) = this()
+    
+    /* CompleteClass */
+    var masonry: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]]) = js.native
   }
   
-  @js.native
   trait HiddenOrVisibleStyleOption extends StObject {
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var transform: js.UndefOr[String] = js.native
+    var transform: js.UndefOr[String] = js.undefined
   }
   object HiddenOrVisibleStyleOption {
     
@@ -50,50 +53,51 @@ object mod {
     }
   }
   
-  @js.native
   trait Masonry extends StObject {
     
-    var addItems: js.UndefOr[js.Function1[/* elements */ js.Array[_], Unit]] = js.native
+    var addItems: js.UndefOr[js.Function1[/* elements */ js.Array[js.Any], Unit]] = js.undefined
     
     // add and remove items
-    var appended: js.UndefOr[js.Function1[/* elements */ js.Array[_], Unit]] = js.native
+    var appended: js.UndefOr[js.Function1[/* elements */ js.Array[js.Any], Unit]] = js.undefined
     
-    var data: js.UndefOr[js.Function1[/* element */ Element, this.type]] = js.native
+    var data: js.UndefOr[js.Function1[/* element */ Element, this.type]] = js.undefined
     
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var getItemElements: js.UndefOr[js.Function0[js.Array[_]]] = js.native
+    var getItemElements: js.UndefOr[js.Function0[js.Array[js.Any]]] = js.undefined
     
     // layout
-    var layout: js.UndefOr[js.Function0[Unit]] = js.native
+    var layout: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var layoutItems: js.UndefOr[js.Function2[/* items */ js.Array[_], /* isStill */ js.UndefOr[Boolean], Unit]] = js.native
+    var layoutItems: js.UndefOr[
+        js.Function2[/* items */ js.Array[js.Any], /* isStill */ js.UndefOr[Boolean], Unit]
+      ] = js.undefined
     
-    var masonry: js.UndefOr[js.Function0[Unit]] with (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]]) = js.native
+    var masonry: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]])
     
-    var off: js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]] = js.native
+    var off: js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]] = js.undefined
     
     // events
-    var on: js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]] = js.native
+    var on: js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]] = js.undefined
     
-    var once: js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]] = js.native
+    var once: js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]] = js.undefined
     
-    var prepended: js.UndefOr[js.Function1[/* elements */ js.Array[_], Unit]] = js.native
+    var prepended: js.UndefOr[js.Function1[/* elements */ js.Array[js.Any], Unit]] = js.undefined
     
     // utilities
-    var reloadItems: js.UndefOr[js.Function0[Unit]] = js.native
+    var reloadItems: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var remove: js.UndefOr[js.Function1[/* elements */ js.Array[_], Unit]] = js.native
+    var remove: js.UndefOr[js.Function1[/* elements */ js.Array[js.Any], Unit]] = js.undefined
     
-    var stamp: js.UndefOr[js.Function1[/* elements */ js.Array[_], Unit]] = js.native
+    var stamp: js.UndefOr[js.Function1[/* elements */ js.Array[js.Any], Unit]] = js.undefined
     
-    var unstamp: js.UndefOr[js.Function1[/* elements */ js.Array[_], Unit]] = js.native
+    var unstamp: js.UndefOr[js.Function1[/* elements */ js.Array[js.Any], Unit]] = js.undefined
   }
   object Masonry {
     
     @scala.inline
     def apply(
-      masonry: js.UndefOr[js.Function0[Unit]] with (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]])
+      masonry: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]])
     ): Masonry = {
       val __obj = js.Dynamic.literal(masonry = masonry.asInstanceOf[js.Any])
       __obj.asInstanceOf[Masonry]
@@ -103,13 +107,13 @@ object mod {
     implicit class MasonryMutableBuilder[Self <: Masonry] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAddItems(value: /* elements */ js.Array[_] => Unit): Self = StObject.set(x, "addItems", js.Any.fromFunction1(value))
+      def setAddItems(value: /* elements */ js.Array[js.Any] => Unit): Self = StObject.set(x, "addItems", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAddItemsUndefined: Self = StObject.set(x, "addItems", js.undefined)
       
       @scala.inline
-      def setAppended(value: /* elements */ js.Array[_] => Unit): Self = StObject.set(x, "appended", js.Any.fromFunction1(value))
+      def setAppended(value: /* elements */ js.Array[js.Any] => Unit): Self = StObject.set(x, "appended", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAppendedUndefined: Self = StObject.set(x, "appended", js.undefined)
@@ -127,7 +131,7 @@ object mod {
       def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
       @scala.inline
-      def setGetItemElements(value: () => js.Array[_]): Self = StObject.set(x, "getItemElements", js.Any.fromFunction0(value))
+      def setGetItemElements(value: () => js.Array[js.Any]): Self = StObject.set(x, "getItemElements", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetItemElementsUndefined: Self = StObject.set(x, "getItemElements", js.undefined)
@@ -136,7 +140,7 @@ object mod {
       def setLayout(value: () => Unit): Self = StObject.set(x, "layout", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setLayoutItems(value: (/* items */ js.Array[_], /* isStill */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "layoutItems", js.Any.fromFunction2(value))
+      def setLayoutItems(value: (/* items */ js.Array[js.Any], /* isStill */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "layoutItems", js.Any.fromFunction2(value))
       
       @scala.inline
       def setLayoutItemsUndefined: Self = StObject.set(x, "layoutItems", js.undefined)
@@ -146,7 +150,7 @@ object mod {
       
       @scala.inline
       def setMasonry(
-        value: js.UndefOr[js.Function0[Unit]] with (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]])
+        value: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ js.Any, Unit]])
       ): Self = StObject.set(x, "masonry", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -168,7 +172,7 @@ object mod {
       def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
       
       @scala.inline
-      def setPrepended(value: /* elements */ js.Array[_] => Unit): Self = StObject.set(x, "prepended", js.Any.fromFunction1(value))
+      def setPrepended(value: /* elements */ js.Array[js.Any] => Unit): Self = StObject.set(x, "prepended", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPrependedUndefined: Self = StObject.set(x, "prepended", js.undefined)
@@ -180,61 +184,60 @@ object mod {
       def setReloadItemsUndefined: Self = StObject.set(x, "reloadItems", js.undefined)
       
       @scala.inline
-      def setRemove(value: /* elements */ js.Array[_] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      def setRemove(value: /* elements */ js.Array[js.Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
       @scala.inline
-      def setStamp(value: /* elements */ js.Array[_] => Unit): Self = StObject.set(x, "stamp", js.Any.fromFunction1(value))
+      def setStamp(value: /* elements */ js.Array[js.Any] => Unit): Self = StObject.set(x, "stamp", js.Any.fromFunction1(value))
       
       @scala.inline
       def setStampUndefined: Self = StObject.set(x, "stamp", js.undefined)
       
       @scala.inline
-      def setUnstamp(value: /* elements */ js.Array[_] => Unit): Self = StObject.set(x, "unstamp", js.Any.fromFunction1(value))
+      def setUnstamp(value: /* elements */ js.Array[js.Any] => Unit): Self = StObject.set(x, "unstamp", js.Any.fromFunction1(value))
       
       @scala.inline
       def setUnstampUndefined: Self = StObject.set(x, "unstamp", js.undefined)
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var columnWidth: js.UndefOr[js.Any] = js.native
+    var columnWidth: js.UndefOr[js.Any] = js.undefined
     
     // setup
-    var containerStyle: js.UndefOr[js.Object] = js.native
+    var containerStyle: js.UndefOr[js.Object] = js.undefined
     
-    var fitWidth: js.UndefOr[Boolean] = js.native
+    var fitWidth: js.UndefOr[Boolean] = js.undefined
     
-    var gutter: js.UndefOr[js.Any] = js.native
+    var gutter: js.UndefOr[js.Any] = js.undefined
     
-    var hiddenStyle: js.UndefOr[HiddenOrVisibleStyleOption] = js.native
+    var hiddenStyle: js.UndefOr[HiddenOrVisibleStyleOption] = js.undefined
     
-    var horizontalOrder: js.UndefOr[Boolean] = js.native
+    var horizontalOrder: js.UndefOr[Boolean] = js.undefined
     
-    var initLayout: js.UndefOr[Boolean] = js.native
+    var initLayout: js.UndefOr[Boolean] = js.undefined
     
     // layout
-    var itemSelector: js.UndefOr[String] = js.native
+    var itemSelector: js.UndefOr[String] = js.undefined
     
-    var originLeft: js.UndefOr[Boolean] = js.native
+    var originLeft: js.UndefOr[Boolean] = js.undefined
     
-    var originTop: js.UndefOr[Boolean] = js.native
+    var originTop: js.UndefOr[Boolean] = js.undefined
     
-    var percentPosition: js.UndefOr[Boolean] = js.native
+    var percentPosition: js.UndefOr[Boolean] = js.undefined
     
-    var resize: js.UndefOr[Boolean] = js.native
+    var resize: js.UndefOr[Boolean] = js.undefined
     
-    var stagger: js.UndefOr[String | Double] = js.native
+    var stagger: js.UndefOr[String | Double] = js.undefined
     
-    var stamp: js.UndefOr[String] = js.native
+    var stamp: js.UndefOr[String] = js.undefined
     
-    var transitionDuration: js.UndefOr[js.Any] = js.native
+    var transitionDuration: js.UndefOr[js.Any] = js.undefined
     
-    var visibleStyle: js.UndefOr[HiddenOrVisibleStyleOption] = js.native
+    var visibleStyle: js.UndefOr[HiddenOrVisibleStyleOption] = js.undefined
   }
   object Options {
     

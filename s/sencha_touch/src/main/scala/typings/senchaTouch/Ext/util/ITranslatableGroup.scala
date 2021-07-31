@@ -4,41 +4,41 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.util.translatable.IAbstract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITranslatableGroup extends IAbstract {
+trait ITranslatableGroup
+  extends StObject
+     with IAbstract {
   
   /** [Method] Returns the value of activeIndex
     * @returns Number
     */
-  var getActiveIndex: js.UndefOr[js.Function0[Double]] = js.native
+  var getActiveIndex: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of itemLength
     * @returns Object
     */
-  var getItemLength: js.UndefOr[js.Function0[_]] = js.native
+  var getItemLength: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of items
     * @returns Array
     */
-  var getItems: js.UndefOr[js.Function0[Array]] = js.native
+  var getItems: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Sets the value of activeIndex
     * @param activeIndex Number The new value.
     */
-  var setActiveIndex: js.UndefOr[js.Function1[/* activeIndex */ js.UndefOr[Double], Unit]] = js.native
+  var setActiveIndex: js.UndefOr[js.Function1[/* activeIndex */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of itemLength
     * @param itemLength Object The new value.
     */
-  var setItemLength: js.UndefOr[js.Function1[/* itemLength */ js.UndefOr[js.Any], Unit]] = js.native
+  var setItemLength: js.UndefOr[js.Function1[/* itemLength */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of items
     * @param items Array The new value.
     */
-  var setItems: js.UndefOr[js.Function1[/* items */ js.UndefOr[Array], Unit]] = js.native
+  var setItems: js.UndefOr[js.Function1[/* items */ js.UndefOr[Array], Unit]] = js.undefined
 }
 object ITranslatableGroup {
   
@@ -58,7 +58,7 @@ object ITranslatableGroup {
     def setGetActiveIndexUndefined: Self = StObject.set(x, "getActiveIndex", js.undefined)
     
     @scala.inline
-    def setGetItemLength(value: () => _): Self = StObject.set(x, "getItemLength", js.Any.fromFunction0(value))
+    def setGetItemLength(value: () => js.Any): Self = StObject.set(x, "getItemLength", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetItemLengthUndefined: Self = StObject.set(x, "getItemLength", js.undefined)

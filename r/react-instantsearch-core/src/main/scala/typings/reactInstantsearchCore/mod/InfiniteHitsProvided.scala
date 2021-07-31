@@ -2,23 +2,21 @@ package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InfiniteHitsProvided[THit] extends StObject {
   
   /** indicates if there are more pages to load */
-  var hasMore: Boolean = js.native
+  var hasMore: Boolean
   
-  var hasPrevious: Boolean = js.native
+  var hasPrevious: Boolean
   
   /** the records that matched the search */
-  var hits: js.Array[THit] = js.native
+  var hits: js.Array[THit]
   
-  def refineNext(args: js.Any*): js.Any = js.native
+  def refineNext(args: js.Any*): js.Any
   
-  def refinePrevious(args: js.Any*): js.Any = js.native
+  def refinePrevious(args: js.Any*): js.Any
 }
 object InfiniteHitsProvided {
   
@@ -35,7 +33,7 @@ object InfiniteHitsProvided {
   }
   
   @scala.inline
-  implicit class InfiniteHitsProvidedMutableBuilder[Self <: InfiniteHitsProvided[_], THit] (val x: Self with InfiniteHitsProvided[THit]) extends AnyVal {
+  implicit class InfiniteHitsProvidedMutableBuilder[Self <: InfiniteHitsProvided[?], THit] (val x: Self & InfiniteHitsProvided[THit]) extends AnyVal {
     
     @scala.inline
     def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])

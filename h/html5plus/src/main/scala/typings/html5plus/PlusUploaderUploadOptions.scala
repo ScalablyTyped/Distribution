@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
   */
-@js.native
 trait PlusUploaderUploadOptions extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusUploaderUploadOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
-  var blocksize: js.UndefOr[Double] = js.native
+  var blocksize: js.UndefOr[Double] = js.undefined
   
   /**
     * 网络请求类型
@@ -27,7 +25,7 @@ trait PlusUploaderUploadOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * 上传任务的优先级
@@ -35,7 +33,7 @@ trait PlusUploaderUploadOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     * 上传任务重试次数
@@ -43,7 +41,7 @@ trait PlusUploaderUploadOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
-  var retry: js.UndefOr[Double] = js.native
+  var retry: js.UndefOr[Double] = js.undefined
   
   /**
     * 上传任务重试间隔时间
@@ -51,7 +49,7 @@ trait PlusUploaderUploadOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
-  var retryInterval: js.UndefOr[Double] = js.native
+  var retryInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * 上传任务超时时间
@@ -60,7 +58,7 @@ trait PlusUploaderUploadOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object PlusUploaderUploadOptions {
   

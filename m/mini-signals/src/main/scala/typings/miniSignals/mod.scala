@@ -2,14 +2,15 @@ package typings.miniSignals
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("mini-signals", JSImport.Namespace)
   @js.native
-  class ^ () extends MiniSignal
+  class ^ ()
+    extends StObject
+       with MiniSignal
   
   @js.native
   trait MiniSignal extends StObject {
@@ -32,10 +33,9 @@ object mod {
     def once(fn: js.Function, thisArg: js.Any): MiniSignalBinding = js.native
   }
   
-  @js.native
   trait MiniSignalBinding extends StObject {
     
-    def detach(): Boolean = js.native
+    def detach(): Boolean
   }
   object MiniSignalBinding {
     

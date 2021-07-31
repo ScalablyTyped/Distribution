@@ -12,7 +12,7 @@ Get the fullname of the current user
 | Keywords           | name, fullname, realname, full name, surname, full, real, given, user, gecos, pwuid, uid |
 | # releases         | 3 |
 | # dependents       | 62 |
-| # downloads        | 3691742 |
+| # downloads        | 4306750 |
 | # stars            | 2 |
 
 ## Links

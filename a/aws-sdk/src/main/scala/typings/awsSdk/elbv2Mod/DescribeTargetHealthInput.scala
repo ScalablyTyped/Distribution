@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTargetHealthInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the target group.
     */
-  var TargetGroupArn: typings.awsSdk.elbv2Mod.TargetGroupArn = js.native
+  var TargetGroupArn: typings.awsSdk.elbv2Mod.TargetGroupArn
   
   /**
     * The targets.
     */
-  var Targets: js.UndefOr[TargetDescriptions] = js.native
+  var Targets: js.UndefOr[TargetDescriptions] = js.undefined
 }
 object DescribeTargetHealthInput {
   

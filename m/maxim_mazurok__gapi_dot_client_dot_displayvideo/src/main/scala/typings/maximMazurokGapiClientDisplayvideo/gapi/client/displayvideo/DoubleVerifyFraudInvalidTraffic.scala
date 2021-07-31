@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoubleVerifyFraudInvalidTraffic extends StObject {
   
   /** Insufficient Historical Fraud & IVT Stats. */
-  var avoidInsufficientOption: js.UndefOr[Boolean] = js.native
+  var avoidInsufficientOption: js.UndefOr[Boolean] = js.undefined
   
   /** Avoid Sites and Apps with historical Fraud & IVT. */
-  var avoidedFraudOption: js.UndefOr[String] = js.native
+  var avoidedFraudOption: js.UndefOr[String] = js.undefined
 }
 object DoubleVerifyFraudInvalidTraffic {
   

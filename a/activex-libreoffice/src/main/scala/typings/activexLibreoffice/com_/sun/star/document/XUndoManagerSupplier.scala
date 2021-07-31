@@ -2,21 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to an {@link XUndoManager} .
   * @since OOo 3.4
   */
-@js.native
 trait XUndoManagerSupplier extends StObject {
   
   /** returns the Undo manager associated with the component. */
-  val UndoManager: XUndoManager = js.native
+  val UndoManager: XUndoManager
   
   /** returns the Undo manager associated with the component. */
-  def getUndoManager(): XUndoManager = js.native
+  def getUndoManager(): XUndoManager
 }
 object XUndoManagerSupplier {
   

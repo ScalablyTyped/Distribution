@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait CoreWindowFlowDirection extends StObject
 object CoreWindowFlowDirection extends StObject {
   
   @js.native
-  sealed trait leftToRight extends CoreWindowFlowDirection
+  sealed trait leftToRight
+    extends StObject
+       with CoreWindowFlowDirection
   
   @js.native
-  sealed trait rightToLeft extends CoreWindowFlowDirection
+  sealed trait rightToLeft
+    extends StObject
+       with CoreWindowFlowDirection
 }

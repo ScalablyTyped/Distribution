@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExplainQueryStep extends StObject {
   
   /** Machine-readable operation type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Human-readable stage descriptions. */
-  var substeps: js.UndefOr[js.Array[String]] = js.native
+  var substeps: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ExplainQueryStep {
   

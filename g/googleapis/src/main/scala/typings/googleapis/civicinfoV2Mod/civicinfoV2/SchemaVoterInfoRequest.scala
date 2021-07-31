@@ -2,18 +2,16 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request for information about a voter.
   */
-@js.native
 trait SchemaVoterInfoRequest extends StObject {
   
-  var contextParams: js.UndefOr[SchemaContextParams] = js.native
+  var contextParams: js.UndefOr[SchemaContextParams] = js.undefined
   
-  var voterInfoSegmentResult: js.UndefOr[SchemaVoterInfoSegmentResult] = js.native
+  var voterInfoSegmentResult: js.UndefOr[SchemaVoterInfoSegmentResult] = js.undefined
 }
 object SchemaVoterInfoRequest {
   

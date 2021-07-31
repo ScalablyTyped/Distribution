@@ -6,37 +6,35 @@ import typings.vanillaSwipe.vanillaSwipeNumbers.`0`
 import typings.vanillaSwipe.vanillaSwipeNumbers.`10`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait ConstructorProps extends StObject {
     
-    var delta: js.UndefOr[Double | `10`] = js.native
+    var delta: js.UndefOr[Double | `10`] = js.undefined
     
-    var element: js.UndefOr[HTMLElement | Null] = js.native
+    var element: js.UndefOr[HTMLElement | Null] = js.undefined
     
-    var mouseTrackingEnabled: js.UndefOr[Boolean] = js.native
+    var mouseTrackingEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var onSwipeStart: js.UndefOr[EventHandler] = js.native
+    var onSwipeStart: js.UndefOr[EventHandler] = js.undefined
     
-    var onSwiped: js.UndefOr[EventHandler] = js.native
+    var onSwiped: js.UndefOr[EventHandler] = js.undefined
     
-    var onSwiping: js.UndefOr[EventHandler] = js.native
+    var onSwiping: js.UndefOr[EventHandler] = js.undefined
     
-    var onTap: js.UndefOr[EventHandler] = js.native
+    var onTap: js.UndefOr[EventHandler] = js.undefined
     
-    var preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.native
+    var preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.undefined
     
-    var preventTrackingOnMouseleave: js.UndefOr[Boolean] = js.native
+    var preventTrackingOnMouseleave: js.UndefOr[Boolean] = js.undefined
     
-    var rotationAngle: js.UndefOr[Double | `0`] = js.native
+    var rotationAngle: js.UndefOr[Double | `0`] = js.undefined
     
-    var target: js.UndefOr[HTMLElement | Null] = js.native
+    var target: js.UndefOr[HTMLElement | Null] = js.undefined
     
-    var touchTrackingEnabled: js.UndefOr[Boolean] = js.native
+    var touchTrackingEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object ConstructorProps {
     
@@ -129,24 +127,23 @@ object typesMod {
     }
   }
   
-  @js.native
   trait EventData extends StObject {
     
-    var absX: Double = js.native
+    var absX: Double
     
-    var absY: Double = js.native
+    var absY: Double
     
-    var deltaX: Double = js.native
+    var deltaX: Double
     
-    var deltaY: Double = js.native
+    var deltaY: Double
     
-    var directionX: String = js.native
+    var directionX: String
     
-    var directionY: String = js.native
+    var directionY: String
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var velocity: Double = js.native
+    var velocity: Double
   }
   object EventData {
     
@@ -196,20 +193,19 @@ object typesMod {
   
   type EventHandler = js.Function2[/* e */ Event, /* data */ EventData, Unit]
   
-  @js.native
   trait State extends StObject {
     
-    var isSwiping: Boolean = js.native
+    var isSwiping: Boolean
     
-    var start: Double = js.native
+    var start: Double
     
-    var traceX: Trace = js.native
+    var traceX: Trace
     
-    var traceY: Trace = js.native
+    var traceY: Trace
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object State {
     

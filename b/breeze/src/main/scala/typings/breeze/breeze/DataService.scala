@@ -2,27 +2,25 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataService extends StObject {
   
-  var adapterInstance: DataServiceAdapter = js.native
+  var adapterInstance: DataServiceAdapter
   
-  var adapterName: String = js.native
+  var adapterName: String
   
-  var hasServerMetadata: Boolean = js.native
+  var hasServerMetadata: Boolean
   
-  var jsonResultsAdapter: JsonResultsAdapter = js.native
+  var jsonResultsAdapter: JsonResultsAdapter
   
-  var serviceName: String = js.native
+  var serviceName: String
   
-  var uriBuilderName: String = js.native
+  var uriBuilderName: String
   
-  var useJsonp: Boolean = js.native
+  var useJsonp: Boolean
   
-  def using(config: DataServiceOptions): DataService = js.native
+  def `using`(config: DataServiceOptions): DataService
 }
 object DataService {
   
@@ -35,9 +33,10 @@ object DataService {
     serviceName: String,
     uriBuilderName: String,
     useJsonp: Boolean,
-    using: DataServiceOptions => DataService
+    `using`: DataServiceOptions => DataService
   ): DataService = {
-    val __obj = js.Dynamic.literal(adapterInstance = adapterInstance.asInstanceOf[js.Any], adapterName = adapterName.asInstanceOf[js.Any], hasServerMetadata = hasServerMetadata.asInstanceOf[js.Any], jsonResultsAdapter = jsonResultsAdapter.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], uriBuilderName = uriBuilderName.asInstanceOf[js.Any], useJsonp = useJsonp.asInstanceOf[js.Any], using = js.Any.fromFunction1(using))
+    val __obj = js.Dynamic.literal(adapterInstance = adapterInstance.asInstanceOf[js.Any], adapterName = adapterName.asInstanceOf[js.Any], hasServerMetadata = hasServerMetadata.asInstanceOf[js.Any], jsonResultsAdapter = jsonResultsAdapter.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], uriBuilderName = uriBuilderName.asInstanceOf[js.Any], useJsonp = useJsonp.asInstanceOf[js.Any])
+    __obj.updateDynamic("using")(js.Any.fromFunction1(`using`))
     __obj.asInstanceOf[DataService]
   }
   

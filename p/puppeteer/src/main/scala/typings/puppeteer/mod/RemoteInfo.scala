@@ -2,17 +2,15 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoteInfo extends StObject {
   
   /** the IP address of the remote server */
-  var ip: String = js.native
+  var ip: String
   
   /** the port used to connect to the remote server */
-  var port: Double = js.native
+  var port: Double
 }
 object RemoteInfo {
   

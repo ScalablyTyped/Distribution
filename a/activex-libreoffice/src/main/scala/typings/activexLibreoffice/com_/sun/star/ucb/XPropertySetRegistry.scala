@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XPersistentPropertySet
   * @version 1.0
   */
-@js.native
-trait XPropertySetRegistry extends XInterface {
+trait XPropertySetRegistry
+  extends StObject
+     with XInterface {
   
   /**
     * creates a new or opens an existing property set in the registry.
@@ -22,13 +22,13 @@ trait XPropertySetRegistry extends XInterface {
     * @param create Indicates whether a new set shall be created in case there does not already exist one for the given key.
     * @returns The property set.
     */
-  def openPropertySet(key: String, create: Boolean): XPersistentPropertySet = js.native
+  def openPropertySet(key: String, create: Boolean): XPersistentPropertySet
   
   /**
     * removes a property set from the registry.
     * @param key The key to use for addressing the property set.
     */
-  def removePropertySet(key: String): Unit = js.native
+  def removePropertySet(key: String): Unit
 }
 object XPropertySetRegistry {
   

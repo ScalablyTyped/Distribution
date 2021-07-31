@@ -2,24 +2,22 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents error information for QuotaOperation.
   */
-@js.native
 trait SchemaQuotaError extends StObject {
   
   /**
     * Error code.
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * Free-form text that provides details on the cause of the error.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Subject to whom this error applies. See the specific enum for more
@@ -27,7 +25,7 @@ trait SchemaQuotaError extends StObject {
     * client&gt;&quot; or &quot;project:&lt;Google developer project
     * id&gt;&quot;.
     */
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
 }
 object SchemaQuotaError {
   

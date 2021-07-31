@@ -5,7 +5,6 @@ import typings.googleAppsScript.GoogleAppsScript.Base.BlobSource
 import typings.googleAppsScript.GoogleAppsScript.Base.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Utilities {
@@ -20,10 +19,14 @@ object Utilities {
   object Charset extends StObject {
     
     @js.native
-    sealed trait US_ASCII extends Charset
+    sealed trait US_ASCII
+      extends StObject
+         with Charset
     
     @js.native
-    sealed trait UTF_8 extends Charset
+    sealed trait UTF_8
+      extends StObject
+         with Charset
   }
   
   @js.native
@@ -36,22 +39,34 @@ object Utilities {
   object DigestAlgorithm extends StObject {
     
     @js.native
-    sealed trait MD2 extends DigestAlgorithm
+    sealed trait MD2
+      extends StObject
+         with DigestAlgorithm
     
     @js.native
-    sealed trait MD5 extends DigestAlgorithm
+    sealed trait MD5
+      extends StObject
+         with DigestAlgorithm
     
     @js.native
-    sealed trait SHA_1 extends DigestAlgorithm
+    sealed trait SHA_1
+      extends StObject
+         with DigestAlgorithm
     
     @js.native
-    sealed trait SHA_256 extends DigestAlgorithm
+    sealed trait SHA_256
+      extends StObject
+         with DigestAlgorithm
     
     @js.native
-    sealed trait SHA_384 extends DigestAlgorithm
+    sealed trait SHA_384
+      extends StObject
+         with DigestAlgorithm
     
     @js.native
-    sealed trait SHA_512 extends DigestAlgorithm
+    sealed trait SHA_512
+      extends StObject
+         with DigestAlgorithm
   }
   
   @js.native
@@ -64,19 +79,29 @@ object Utilities {
   object MacAlgorithm extends StObject {
     
     @js.native
-    sealed trait HMAC_MD5 extends MacAlgorithm
+    sealed trait HMAC_MD5
+      extends StObject
+         with MacAlgorithm
     
     @js.native
-    sealed trait HMAC_SHA_1 extends MacAlgorithm
+    sealed trait HMAC_SHA_1
+      extends StObject
+         with MacAlgorithm
     
     @js.native
-    sealed trait HMAC_SHA_256 extends MacAlgorithm
+    sealed trait HMAC_SHA_256
+      extends StObject
+         with MacAlgorithm
     
     @js.native
-    sealed trait HMAC_SHA_384 extends MacAlgorithm
+    sealed trait HMAC_SHA_384
+      extends StObject
+         with MacAlgorithm
     
     @js.native
-    sealed trait HMAC_SHA_512 extends MacAlgorithm
+    sealed trait HMAC_SHA_512
+      extends StObject
+         with MacAlgorithm
   }
   
   @js.native
@@ -89,10 +114,14 @@ object Utilities {
   object RsaAlgorithm extends StObject {
     
     @js.native
-    sealed trait RSA_SHA_1 extends RsaAlgorithm
+    sealed trait RSA_SHA_1
+      extends StObject
+         with RsaAlgorithm
     
     @js.native
-    sealed trait RSA_SHA_256 extends RsaAlgorithm
+    sealed trait RSA_SHA_256
+      extends StObject
+         with RsaAlgorithm
   }
   
   /**

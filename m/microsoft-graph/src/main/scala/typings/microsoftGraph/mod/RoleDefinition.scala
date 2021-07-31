@@ -2,29 +2,29 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RoleDefinition extends Entity {
+trait RoleDefinition
+  extends StObject
+     with Entity {
   
   // Description of the Role definition.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Display Name of the Role definition.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.
-  var isBuiltIn: js.UndefOr[Boolean] = js.native
+  var isBuiltIn: js.UndefOr[Boolean] = js.undefined
   
   // List of Role assignments for this role definition.
-  var roleAssignments: js.UndefOr[NullableOption[js.Array[RoleAssignment]]] = js.native
+  var roleAssignments: js.UndefOr[NullableOption[js.Array[RoleAssignment]]] = js.undefined
   
   /**
     * List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of
     * the rolePermission.
     */
-  var rolePermissions: js.UndefOr[NullableOption[js.Array[RolePermission]]] = js.native
+  var rolePermissions: js.UndefOr[NullableOption[js.Array[RolePermission]]] = js.undefined
 }
 object RoleDefinition {
   

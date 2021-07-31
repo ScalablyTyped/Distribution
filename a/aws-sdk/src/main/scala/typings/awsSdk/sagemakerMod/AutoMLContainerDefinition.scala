@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMLContainerDefinition extends StObject {
   
   /**
     * Environment variables to set in the container. Refer to ContainerDefinition for more details.
     */
-  var Environment: js.UndefOr[EnvironmentMap] = js.native
+  var Environment: js.UndefOr[EnvironmentMap] = js.undefined
   
   /**
     * The ECR path of the container. Refer to ContainerDefinition for more details.
     */
-  var Image: ContainerImage = js.native
+  var Image: ContainerImage
   
   /**
     * The location of the model artifacts. Refer to ContainerDefinition for more details.
     */
-  var ModelDataUrl: Url = js.native
+  var ModelDataUrl: Url
 }
 object AutoMLContainerDefinition {
   

@@ -11,10 +11,13 @@ import typings.ionic.ionicBooleans.`true`
 import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libStartMod {
+  
+  @JSImport("ionic/lib/start", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ionic/lib/start", "STARTER_BASE_URL")
   @js.native
@@ -28,28 +31,22 @@ object libStartMod {
   @js.native
   val SUPPORTED_FRAMEWORKS: js.Array[SupportedFramework] = js.native
   
-  @JSImport("ionic/lib/start", "getAdvertisement")
-  @js.native
-  def getAdvertisement(): String = js.native
+  @scala.inline
+  def getAdvertisement(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdvertisement")().asInstanceOf[String]
   
-  @JSImport("ionic/lib/start", "getStarterList")
-  @js.native
-  def getStarterList(config: IConfig): js.Promise[StarterList] = js.native
-  @JSImport("ionic/lib/start", "getStarterList")
-  @js.native
-  def getStarterList(config: IConfig, tag: String): js.Promise[StarterList] = js.native
+  @scala.inline
+  def getStarterList(config: IConfig): js.Promise[StarterList] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStarterList")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StarterList]]
+  @scala.inline
+  def getStarterList(config: IConfig, tag: String): js.Promise[StarterList] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStarterList")(config.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StarterList]]
   
-  @JSImport("ionic/lib/start", "getStarterProjectTypes")
-  @js.native
-  def getStarterProjectTypes(): js.Array[String] = js.native
+  @scala.inline
+  def getStarterProjectTypes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStarterProjectTypes")().asInstanceOf[js.Array[String]]
   
-  @JSImport("ionic/lib/start", "readStarterManifest")
-  @js.native
-  def readStarterManifest(p: String): js.Promise[StarterManifest] = js.native
+  @scala.inline
+  def readStarterManifest(p: String): js.Promise[StarterManifest] = ^.asInstanceOf[js.Dynamic].applyDynamic("readStarterManifest")(p.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StarterManifest]]
   
-  @JSImport("ionic/lib/start", "verifyOptions")
-  @js.native
-  def verifyOptions(options: CommandLineOptions, hasLog: Log): Unit = js.native
+  @scala.inline
+  def verifyOptions(options: CommandLineOptions, hasLog: Log): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyOptions")(options.asInstanceOf[js.Any], hasLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ionic.libStartMod.NewAppSchema
@@ -59,36 +56,28 @@ object libStartMod {
   object AppSchema {
     
     @scala.inline
-    def ClonedAppSchema(cloned: `true`, projectDir: String, projectId: String, url: String): typings.ionic.libStartMod.ClonedAppSchema = {
-      val __obj = js.Dynamic.literal(cloned = cloned.asInstanceOf[js.Any], projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    def ClonedAppSchema(projectDir: String, projectId: String, url: String): typings.ionic.libStartMod.ClonedAppSchema = {
+      val __obj = js.Dynamic.literal(cloned = true, projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ionic.libStartMod.ClonedAppSchema]
     }
     
     @scala.inline
-    def NewAppSchema(
-      cloned: `false`,
-      name: String,
-      projectDir: String,
-      projectId: String,
-      template: String,
-      `type`: ProjectType
-    ): typings.ionic.libStartMod.NewAppSchema = {
-      val __obj = js.Dynamic.literal(cloned = cloned.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
+    def NewAppSchema(name: String, projectDir: String, projectId: String, template: String, `type`: ProjectType): typings.ionic.libStartMod.NewAppSchema = {
+      val __obj = js.Dynamic.literal(cloned = false, name = name.asInstanceOf[js.Any], projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ionic.libStartMod.NewAppSchema]
     }
   }
   
-  @js.native
   trait BaseAppSchema extends StObject {
     
-    var appflowId: js.UndefOr[String] = js.native
+    var appflowId: js.UndefOr[String] = js.undefined
     
-    var packageId: js.UndefOr[String] = js.native
+    var packageId: js.UndefOr[String] = js.undefined
     
-    var projectDir: String = js.native
+    var projectDir: String
     
-    var projectId: String = js.native
+    var projectId: String
   }
   object BaseAppSchema {
     
@@ -121,20 +110,20 @@ object libStartMod {
     }
   }
   
-  @js.native
   trait ClonedAppSchema
-    extends BaseAppSchema
+    extends StObject
+       with BaseAppSchema
        with AppSchema {
     
-    var cloned: `true` = js.native
+    var cloned: `true`
     
-    var url: String = js.native
+    var url: String
   }
   object ClonedAppSchema {
     
     @scala.inline
-    def apply(cloned: `true`, projectDir: String, projectId: String, url: String): ClonedAppSchema = {
-      val __obj = js.Dynamic.literal(cloned = cloned.asInstanceOf[js.Any], projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    def apply(projectDir: String, projectId: String, url: String): ClonedAppSchema = {
+      val __obj = js.Dynamic.literal(cloned = true, projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClonedAppSchema]
     }
     
@@ -149,31 +138,24 @@ object libStartMod {
     }
   }
   
-  @js.native
   trait NewAppSchema
-    extends BaseAppSchema
+    extends StObject
+       with BaseAppSchema
        with AppSchema {
     
-    var cloned: `false` = js.native
+    var cloned: `false`
     
-    var name: String = js.native
+    var name: String
     
-    var template: String = js.native
+    var template: String
     
-    var `type`: ProjectType = js.native
+    var `type`: ProjectType
   }
   object NewAppSchema {
     
     @scala.inline
-    def apply(
-      cloned: `false`,
-      name: String,
-      projectDir: String,
-      projectId: String,
-      template: String,
-      `type`: ProjectType
-    ): NewAppSchema = {
-      val __obj = js.Dynamic.literal(cloned = cloned.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
+    def apply(name: String, projectDir: String, projectId: String, template: String, `type`: ProjectType): NewAppSchema = {
+      val __obj = js.Dynamic.literal(cloned = false, name = name.asInstanceOf[js.Any], projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewAppSchema]
     }
@@ -195,14 +177,13 @@ object libStartMod {
     }
   }
   
-  @js.native
   trait SupportedFramework extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: ProjectType = js.native
+    var `type`: ProjectType
   }
   object SupportedFramework {
     

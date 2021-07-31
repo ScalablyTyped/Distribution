@@ -2,13 +2,11 @@ package typings.googleapis.cloudbillingV1Mod.cloudbillingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The price rate indicating starting usage and its corresponding price.
   */
-@js.native
 trait SchemaTierRate extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait SchemaTierRate extends StObject {
     * start_usage_amount of 10 indicates that the usage will be priced at the
     * unit_price after the first 10 usage_units.
     */
-  var startUsageAmount: js.UndefOr[Double] = js.native
+  var startUsageAmount: js.UndefOr[Double] = js.undefined
   
   /**
     * The price per unit of usage. Example: unit_price of amount $10 indicates
     * that each unit will cost $10.
     */
-  var unitPrice: js.UndefOr[SchemaMoney] = js.native
+  var unitPrice: js.UndefOr[SchemaMoney] = js.undefined
 }
 object SchemaTierRate {
   

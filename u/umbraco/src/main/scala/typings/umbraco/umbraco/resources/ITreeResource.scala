@@ -2,7 +2,6 @@ package typings.umbraco.umbraco.resources
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,17 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @name umbraco.resources.treeResource
   * @description Loads in data for trees
   **/
-@js.native
 trait ITreeResource extends StObject {
   
   /** Loads in the data to display the nodes for an application */
-  def loadApplication(options: js.Any): Unit = js.native
+  def loadApplication(options: js.Any): Unit
   
   /** Loads in the data to display the nodes menu */
-  def loadMenu(node: js.Any): Unit = js.native
+  def loadMenu(node: js.Any): Unit
   
   /** Loads in the data to display the child nodes for a given node */
-  def loadNodes(options: js.Any): Unit = js.native
+  def loadNodes(options: js.Any): Unit
 }
 object ITreeResource {
   

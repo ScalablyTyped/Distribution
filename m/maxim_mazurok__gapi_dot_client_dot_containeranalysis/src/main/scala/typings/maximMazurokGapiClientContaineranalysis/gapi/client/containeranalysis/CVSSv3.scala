@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CVSSv3 extends StObject {
   
-  var attackComplexity: js.UndefOr[String] = js.native
+  var attackComplexity: js.UndefOr[String] = js.undefined
   
   /** Base Metrics Represents the intrinsic characteristics of a vulnerability that are constant over time and across user environments. */
-  var attackVector: js.UndefOr[String] = js.native
+  var attackVector: js.UndefOr[String] = js.undefined
   
-  var availabilityImpact: js.UndefOr[String] = js.native
+  var availabilityImpact: js.UndefOr[String] = js.undefined
   
   /** The base score is a function of the base metric scores. */
-  var baseScore: js.UndefOr[Double] = js.native
+  var baseScore: js.UndefOr[Double] = js.undefined
   
-  var confidentialityImpact: js.UndefOr[String] = js.native
+  var confidentialityImpact: js.UndefOr[String] = js.undefined
   
-  var exploitabilityScore: js.UndefOr[Double] = js.native
+  var exploitabilityScore: js.UndefOr[Double] = js.undefined
   
-  var impactScore: js.UndefOr[Double] = js.native
+  var impactScore: js.UndefOr[Double] = js.undefined
   
-  var integrityImpact: js.UndefOr[String] = js.native
+  var integrityImpact: js.UndefOr[String] = js.undefined
   
-  var privilegesRequired: js.UndefOr[String] = js.native
+  var privilegesRequired: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var userInteraction: js.UndefOr[String] = js.native
+  var userInteraction: js.UndefOr[String] = js.undefined
 }
 object CVSSv3 {
   

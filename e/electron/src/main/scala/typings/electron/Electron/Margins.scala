@@ -6,37 +6,35 @@ import typings.electron.electronStrings.none
 import typings.electron.electronStrings.printableArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Margins extends StObject {
   
   /**
     * The bottom margin of the printed web page, in pixels.
     */
-  var bottom: js.UndefOr[Double] = js.native
+  var bottom: js.UndefOr[Double] = js.undefined
   
   /**
     * The left margin of the printed web page, in pixels.
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     * Can be `default`, `none`, `printableArea`, or `custom`. If `custom` is chosen,
     * you will also need to specify `top`, `bottom`, `left`, and `right`.
     */
-  var marginType: js.UndefOr[default | none | printableArea | custom] = js.native
+  var marginType: js.UndefOr[default | none | printableArea | custom] = js.undefined
   
   /**
     * The right margin of the printed web page, in pixels.
     */
-  var right: js.UndefOr[Double] = js.native
+  var right: js.UndefOr[Double] = js.undefined
   
   /**
     * The top margin of the printed web page, in pixels.
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object Margins {
   

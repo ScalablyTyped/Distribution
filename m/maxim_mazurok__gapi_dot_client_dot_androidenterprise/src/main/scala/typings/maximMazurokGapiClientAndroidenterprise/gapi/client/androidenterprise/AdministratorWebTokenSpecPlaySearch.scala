@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdministratorWebTokenSpecPlaySearch extends StObject {
   
   /** Allow access to the iframe in approve mode. Default is false. */
-  var approveApps: js.UndefOr[Boolean] = js.native
+  var approveApps: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the managed Play Search apps page is displayed. Default is true. */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object AdministratorWebTokenSpecPlaySearch {
   

@@ -6,14 +6,13 @@ import typings.wordpressBlockEditor.anon.OmitPropsname
 import typings.wordpressBlockEditor.inspectorControlsMod.InspectorControls.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object InspectorControls {
   
-  @JSImport("@wordpress/block-editor/components", "InspectorControls")
-  @js.native
-  def apply(props: Props): Element = js.native
+  @scala.inline
+  def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   @JSImport("@wordpress/block-editor/components", "InspectorControls")
   @js.native
   val ^ : js.Any = js.native

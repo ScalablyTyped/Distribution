@@ -2,21 +2,19 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonOption extends StObject {
   
-  var holdtime: js.UndefOr[Double] = js.native
+  var holdtime: js.UndefOr[Double] = js.undefined
   
-  var invert: js.UndefOr[Boolean] = js.native
+  var invert: js.UndefOr[Boolean] = js.undefined
   
-  var isPulldown: js.UndefOr[Boolean] = js.native
+  var isPulldown: js.UndefOr[Boolean] = js.undefined
   
-  var isPullup: js.UndefOr[Boolean] = js.native
+  var isPullup: js.UndefOr[Boolean] = js.undefined
   
-  var pin: Double | String = js.native
+  var pin: Double | String
 }
 object ButtonOption {
   

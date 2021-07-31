@@ -2,18 +2,16 @@ package typings.semanticUiDimmer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.SelectorSettings._Impl, keyof semantic-ui-dimmer.SemanticUI.Dimmer.SelectorSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplContent extends StObject {
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var dimmable: js.UndefOr[String] = js.native
+  var dimmable: js.UndefOr[String] = js.undefined
   
-  var dimmer: js.UndefOr[String] = js.native
+  var dimmer: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplContent {
   

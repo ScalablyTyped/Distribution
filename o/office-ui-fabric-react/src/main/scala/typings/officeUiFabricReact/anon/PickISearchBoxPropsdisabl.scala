@@ -3,16 +3,14 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/SearchBox/SearchBox.types.ISearchBoxProps, 'disableAnimation' | 'clearButtonProps'> */
-@js.native
 trait PickISearchBoxPropsdisabl extends StObject {
   
-  var clearButtonProps: js.UndefOr[IButtonProps] = js.native
+  var clearButtonProps: js.UndefOr[IButtonProps] = js.undefined
   
-  var disableAnimation: js.UndefOr[Boolean] = js.native
+  var disableAnimation: js.UndefOr[Boolean] = js.undefined
 }
 object PickISearchBoxPropsdisabl {
   

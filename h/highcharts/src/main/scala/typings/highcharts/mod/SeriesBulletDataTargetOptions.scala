@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesBulletDataTargetOptions extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait SeriesBulletDataTargetOptions extends StObject {
     *
     * In styled mode, use class `highcharts-bullet-target` instead.
     */
-  var borderColor: js.UndefOr[ColorString] = js.native
+  var borderColor: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highcharts) The border width of the rectangle representing the target.
     *
     * In styled mode, use class `highcharts-bullet-target` instead.
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The color of the rectangle representing the target. When not
@@ -31,18 +29,18 @@ trait SeriesBulletDataTargetOptions extends StObject {
     *
     * In styled mode, use class `highcharts-bullet-target` instead.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts) The height of the rectangle representing the target.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The width of the rectangle representing the target. Could be
     * set as a pixel value or as a percentage of a column width.
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object SeriesBulletDataTargetOptions {
   

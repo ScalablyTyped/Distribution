@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Devices.AllJoyn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about state and status changes to an AllJoyn bus connection managed by an AllJoynBusAttachment object. */
-@js.native
 trait AllJoynBusAttachmentStateChangedEventArgs extends StObject {
   
   /** Indicates the current state of a connection to an AllJoyn bus. */
-  var state: AllJoynBusAttachmentState = js.native
+  var state: AllJoynBusAttachmentState
   
   /** Contains a status code that provides status information for AllJoynBusAttachment change events. Properties used in the generation of possible values are defined by AllJoynStatus . */
-  var status: Double = js.native
+  var status: Double
 }
 object AllJoynBusAttachmentStateChangedEventArgs {
   

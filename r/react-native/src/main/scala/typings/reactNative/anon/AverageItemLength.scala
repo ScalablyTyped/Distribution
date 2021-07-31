@@ -2,17 +2,15 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AverageItemLength extends StObject {
   
-  var averageItemLength: Double = js.native
+  var averageItemLength: Double
   
-  var highestMeasuredFrameIndex: Double = js.native
+  var highestMeasuredFrameIndex: Double
   
-  var index: Double = js.native
+  var index: Double
 }
 object AverageItemLength {
   

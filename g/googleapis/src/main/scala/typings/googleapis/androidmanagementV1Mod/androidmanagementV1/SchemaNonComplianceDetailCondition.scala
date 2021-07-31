@@ -2,7 +2,6 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,27 +11,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NonComplianceDetailCondition match the corresponding NonComplianceDetail
   * fields.
   */
-@js.native
 trait SchemaNonComplianceDetailCondition extends StObject {
   
   /**
     * The reason the device is not in compliance with the setting. If not set,
     * then this condition matches any reason.
     */
-  var nonComplianceReason: js.UndefOr[String] = js.native
+  var nonComplianceReason: js.UndefOr[String] = js.undefined
   
   /**
     * The package name of the app that&#39;s out of compliance. If not set,
     * then this condition matches any package name.
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the policy setting. This is the JSON field name of a
     * top-level Policy field. If not set, then this condition matches any
     * setting name.
     */
-  var settingName: js.UndefOr[String] = js.native
+  var settingName: js.UndefOr[String] = js.undefined
 }
 object SchemaNonComplianceDetailCondition {
   

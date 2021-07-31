@@ -42,108 +42,106 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<rbx.rbx/components/navbar/navbar-item-container.NavbarItemContainerProps, 'active' | 'hidden' | 'up' | 'overlay' | 'expanded' | 'italic' | 'relative' | 'tab' | 'tooltip' | 'className' | 'badge' | 'badgeColor' | 'badgeOutlined' | 'badgeRounded' | 'badgeSize' | 'clearfix' | 'pull' | 'marginless' | 'paddingless' | 'radiusless' | 'shadowless' | 'unselectable' | 'clipped' | 'responsive' | 'textAlign' | 'textSize' | 'tooltipActive' | 'tooltipColor' | 'tooltipMultiline' | 'tooltipPosition' | 'tooltipResponsive' | 'backgroundColor' | 'textColor' | 'textTransform' | 'textWeight' | 'invisible' | 'srOnly' | 'hoverable' | 'managed' | 'dropdown' | 'onClick'> */
-@js.native
 trait PickNavbarItemContainerPr extends StObject {
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   var backgroundColor: js.UndefOr[
     primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-  ] = js.native
+  ] = js.undefined
   
-  var badge: js.UndefOr[Double | String] = js.native
+  var badge: js.UndefOr[Double | String] = js.undefined
   
   var badgeColor: js.UndefOr[
     primary | success | info | warning | danger | light | dark | white | black | link
-  ] = js.native
+  ] = js.undefined
   
-  var badgeOutlined: js.UndefOr[Boolean] = js.native
+  var badgeOutlined: js.UndefOr[Boolean] = js.undefined
   
-  var badgeRounded: js.UndefOr[Boolean] = js.native
+  var badgeRounded: js.UndefOr[Boolean] = js.undefined
   
-  var badgeSize: js.UndefOr[small | medium | large] = js.native
+  var badgeSize: js.UndefOr[small | medium | large] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var clearfix: js.UndefOr[Boolean] = js.native
+  var clearfix: js.UndefOr[Boolean] = js.undefined
   
-  var clipped: js.UndefOr[Boolean] = js.native
+  var clipped: js.UndefOr[Boolean] = js.undefined
   
-  var dropdown: js.UndefOr[Boolean] = js.native
+  var dropdown: js.UndefOr[Boolean] = js.undefined
   
-  var expanded: js.UndefOr[Boolean] = js.native
+  var expanded: js.UndefOr[Boolean] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var hoverable: js.UndefOr[Boolean] = js.native
+  var hoverable: js.UndefOr[Boolean] = js.undefined
   
-  var invisible: js.UndefOr[Boolean] = js.native
+  var invisible: js.UndefOr[Boolean] = js.undefined
   
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
-  var managed: js.UndefOr[Boolean] = js.native
+  var managed: js.UndefOr[Boolean] = js.undefined
   
-  var marginless: js.UndefOr[Boolean] = js.native
+  var marginless: js.UndefOr[Boolean] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[Element]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[Element]] = js.undefined
   
-  var overlay: js.UndefOr[Boolean] = js.native
+  var overlay: js.UndefOr[Boolean] = js.undefined
   
-  var paddingless: js.UndefOr[Boolean] = js.native
+  var paddingless: js.UndefOr[Boolean] = js.undefined
   
-  var pull: js.UndefOr[left | right] = js.native
+  var pull: js.UndefOr[left | right] = js.undefined
   
-  var radiusless: js.UndefOr[Boolean] = js.native
+  var radiusless: js.UndefOr[Boolean] = js.undefined
   
-  var relative: js.UndefOr[Boolean] = js.native
+  var relative: js.UndefOr[Boolean] = js.undefined
   
-  var responsive: js.UndefOr[typings.rbx.rbxStrings.PickNavbarItemContainerPr with TopLevel[js.Any]] = js.native
+  var responsive: js.UndefOr[typings.rbx.rbxStrings.PickNavbarItemContainerPr & TopLevel[js.Any]] = js.undefined
   
-  var shadowless: js.UndefOr[Boolean] = js.native
+  var shadowless: js.UndefOr[Boolean] = js.undefined
   
-  var srOnly: js.UndefOr[Boolean] = js.native
+  var srOnly: js.UndefOr[Boolean] = js.undefined
   
-  var tab: js.UndefOr[Boolean] = js.native
+  var tab: js.UndefOr[Boolean] = js.undefined
   
-  var textAlign: js.UndefOr[centered | justified | left | right] = js.native
+  var textAlign: js.UndefOr[centered | justified | left | right] = js.undefined
   
   var textColor: js.UndefOr[
     primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-  ] = js.native
+  ] = js.undefined
   
   var textSize: js.UndefOr[
     typings.rbx.rbxNumbers.`1` | typings.rbx.rbxNumbers.`2` | typings.rbx.rbxNumbers.`3` | typings.rbx.rbxNumbers.`4` | typings.rbx.rbxNumbers.`5` | typings.rbx.rbxNumbers.`6` | `7`
-  ] = js.native
+  ] = js.undefined
   
-  var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.native
+  var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.undefined
   
-  var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.native
+  var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.undefined
   
-  var tooltip: js.UndefOr[Double | String] = js.native
+  var tooltip: js.UndefOr[Double | String] = js.undefined
   
-  var tooltipActive: js.UndefOr[Boolean] = js.native
+  var tooltipActive: js.UndefOr[Boolean] = js.undefined
   
   var tooltipColor: js.UndefOr[
     primary | success | info | warning | danger | light | dark | white | black | link
-  ] = js.native
+  ] = js.undefined
   
-  var tooltipMultiline: js.UndefOr[Boolean] = js.native
+  var tooltipMultiline: js.UndefOr[Boolean] = js.undefined
   
-  var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.native
+  var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.undefined
   
   var tooltipResponsive: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
-    */ typings.rbx.rbxStrings.PickNavbarItemContainerPr with TopLevel[js.Any]
-  ] = js.native
+    */ typings.rbx.rbxStrings.PickNavbarItemContainerPr & TopLevel[js.Any]
+  ] = js.undefined
   
-  var unselectable: js.UndefOr[Boolean] = js.native
+  var unselectable: js.UndefOr[Boolean] = js.undefined
   
-  var up: js.UndefOr[Boolean] = js.native
+  var up: js.UndefOr[Boolean] = js.undefined
 }
 object PickNavbarItemContainerPr {
   
@@ -303,7 +301,7 @@ object PickNavbarItemContainerPr {
     def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
     
     @scala.inline
-    def setResponsive(value: typings.rbx.rbxStrings.PickNavbarItemContainerPr with TopLevel[js.Any]): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+    def setResponsive(value: typings.rbx.rbxStrings.PickNavbarItemContainerPr & TopLevel[js.Any]): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
@@ -391,7 +389,7 @@ object PickNavbarItemContainerPr {
     def setTooltipResponsive(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
-      */ typings.rbx.rbxStrings.PickNavbarItemContainerPr with TopLevel[js.Any]
+      */ typings.rbx.rbxStrings.PickNavbarItemContainerPr & TopLevel[js.Any]
     ): Self = StObject.set(x, "tooltipResponsive", value.asInstanceOf[js.Any])
     
     @scala.inline

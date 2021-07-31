@@ -4,15 +4,31 @@ import typings.ink.anon.Height
 import typings.ink.anon.Transformers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outputMod {
   
   @JSImport("ink/build/output", JSImport.Default)
   @js.native
-  class default protected () extends Output {
+  class default protected ()
+    extends StObject
+       with Output {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def get(): Height = js.native
+    
+    /* CompleteClass */
+    var height: Double = js.native
+    
+    /* CompleteClass */
+    var width: Double = js.native
+    
+    /* CompleteClass */
+    override def write(x: Double, y: Double, text: String, options: Transformers): Unit = js.native
+    
+    /* CompleteClass */
+    override val writes: js.Any = js.native
   }
   
   /**
@@ -23,12 +39,11 @@ object outputMod {
     *
     * Used to generate the final output of all nodes before writing it to actual output stream (e.g. stdout)
     */
-  @js.native
   trait Options extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Options {
     
@@ -49,18 +64,17 @@ object outputMod {
     }
   }
   
-  @js.native
   trait Output extends StObject {
     
-    def get(): Height = js.native
+    def get(): Height
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    def write(x: Double, y: Double, text: String, options: Transformers): Unit = js.native
+    def write(x: Double, y: Double, text: String, options: Transformers): Unit
     
-    val writes: js.Any = js.native
+    val writes: js.Any
   }
   object Output {
     

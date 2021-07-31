@@ -3,37 +3,35 @@ package typings.dropkickjs
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropkickOptions extends StObject {
   
-  var change: js.UndefOr[js.Function0[Unit]] = js.native
+  var change: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var close: js.UndefOr[js.Function0[Unit]] = js.native
+  var close: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var form: js.UndefOr[Node] = js.native
+  var form: js.UndefOr[Node] = js.undefined
   
-  var initialize: js.UndefOr[js.Function0[Unit]] = js.native
+  var initialize: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var mobile: js.UndefOr[Boolean] = js.native
+  var mobile: js.UndefOr[Boolean] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var open: js.UndefOr[js.Function0[Unit]] = js.native
+  var open: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var options: js.UndefOr[js.Array[String]] = js.native
+  var options: js.UndefOr[js.Array[String]] = js.undefined
   
-  var selectedIndex: js.UndefOr[Double] = js.native
+  var selectedIndex: js.UndefOr[Double] = js.undefined
   
-  var selectedOptions: js.UndefOr[js.Array[String]] = js.native
+  var selectedOptions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object DropkickOptions {
   

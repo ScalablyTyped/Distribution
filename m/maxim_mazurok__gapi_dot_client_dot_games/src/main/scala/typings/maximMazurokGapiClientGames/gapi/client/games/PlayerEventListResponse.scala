@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlayerEventListResponse extends StObject {
   
   /** The player events. */
-  var items: js.UndefOr[js.Array[PlayerEvent]] = js.native
+  var items: js.UndefOr[js.Array[PlayerEvent]] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#playerEventListResponse`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The pagination token for the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object PlayerEventListResponse {
   

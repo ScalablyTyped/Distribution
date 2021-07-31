@@ -2,19 +2,17 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `listEnvironments` operation. */
-@js.native
 trait ListEnvironmentsParams extends StObject {
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** Show only the environment with the given name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object ListEnvironmentsParams {
   

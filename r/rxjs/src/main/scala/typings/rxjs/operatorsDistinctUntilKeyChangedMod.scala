@@ -2,16 +2,17 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorsDistinctUntilKeyChangedMod {
   
-  @JSImport("rxjs/operators/distinctUntilKeyChanged", "distinctUntilKeyChanged")
+  @JSImport("rxjs/operators/distinctUntilKeyChanged", JSImport.Namespace)
   @js.native
-  def distinctUntilKeyChanged[T](key: /* keyof T */ String): js.Any = js.native
-  @JSImport("rxjs/operators/distinctUntilKeyChanged", "distinctUntilKeyChanged")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def distinctUntilKeyChanged[T](key: /* keyof T */ String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("distinctUntilKeyChanged")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
   def distinctUntilKeyChanged[T, K /* <: /* keyof T */ String */](
     key: K,
     compare: js.Function2[
@@ -19,5 +20,5 @@ object operatorsDistinctUntilKeyChangedMod {
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* y */ js.Any, 
       Boolean
     ]
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("distinctUntilKeyChanged")(key.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EachMember extends StObject {
   
-  var eachMember: scala.Double = js.native
+  var eachMember: scala.Double
   
-  var noDelivery: scala.Double = js.native
+  var noDelivery: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var notSet: scala.Double = js.native
+  var notSet: scala.Double
   
-  var preferredEmailAddress: scala.Double = js.native
+  var preferredEmailAddress: scala.Double
 }
 object EachMember {
   

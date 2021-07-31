@@ -4,30 +4,28 @@ import typings.std.Parameters
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("debounce-promise", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = js.native
-  @JSImport("debounce-promise", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: js.UndefOr[scala.Nothing], options: DebounceOptions): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = js.native
-  @JSImport("debounce-promise", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: Double): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = js.native
-  @JSImport("debounce-promise", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: Double, options: DebounceOptions): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = js.native
+  @scala.inline
+  def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
+  @scala.inline
+  def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Double): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
+  @scala.inline
+  def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Double, options: DebounceOptions): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
+  @scala.inline
+  def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Unit, options: DebounceOptions): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
   
+  @JSImport("debounce-promise", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait DebounceOptions extends StObject {
     
-    var accumulate: js.UndefOr[Boolean] = js.native
+    var accumulate: js.UndefOr[Boolean] = js.undefined
     
-    var leading: js.UndefOr[Boolean] = js.native
+    var leading: js.UndefOr[Boolean] = js.undefined
   }
   object DebounceOptions {
     

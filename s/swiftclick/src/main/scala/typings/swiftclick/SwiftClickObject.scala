@@ -2,17 +2,15 @@ package typings.swiftclick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwiftClickObject extends StObject {
   
-  def addNodeNamesToTrack(nodeNamesArray: js.Array[String]): Unit = js.native
+  def addNodeNamesToTrack(nodeNamesArray: js.Array[String]): Unit
   
-  def replaceNodeNamesToTrack(nodeNamesArray: js.Array[String]): Unit = js.native
+  def replaceNodeNamesToTrack(nodeNamesArray: js.Array[String]): Unit
   
-  def useCssParser(useParser: Boolean): Unit = js.native
+  def useCssParser(useParser: Boolean): Unit
 }
 object SwiftClickObject {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenewOfferingRequest extends StObject {
   
   /**
     * The ID of a request to renew an offering.
     */
-  var offeringId: js.UndefOr[OfferingIdentifier] = js.native
+  var offeringId: js.UndefOr[OfferingIdentifier] = js.undefined
   
   /**
     * The quantity requested in an offering renewal.
     */
-  var quantity: js.UndefOr[Integer] = js.native
+  var quantity: js.UndefOr[Integer] = js.undefined
 }
 object RenewOfferingRequest {
   

@@ -12,132 +12,132 @@ import typings.blessed.mod.Widgets.Types.TPosition
 import typings.blessed.mod.Widgets.Types.TTopLeft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ElementOptions extends INodeOptions {
+trait ElementOptions
+  extends StObject
+     with INodeOptions {
   
   /**
     * Text alignment: left, center, or right.
     */
-  var align: js.UndefOr[left | center | right] = js.native
+  var align: js.UndefOr[left | center | right] = js.undefined
   
-  var bg: js.UndefOr[String] = js.native
+  var bg: js.UndefOr[String] = js.undefined
   
-  var bold: js.UndefOr[String] = js.native
+  var bold: js.UndefOr[String] = js.undefined
   
   /**
     * Border object, see below.
     */
-  var border: js.UndefOr[Border | line | bg] = js.native
+  var border: js.UndefOr[Border | line | bg] = js.undefined
   
-  var bottom: js.UndefOr[TPosition] = js.native
+  var bottom: js.UndefOr[TPosition] = js.undefined
   
   /**
     * Background character (default is whitespace ).
     */
-  var ch: js.UndefOr[String] = js.native
+  var ch: js.UndefOr[String] = js.undefined
   
   /**
     * Element is clickable.
     */
-  var clickable: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Element's text content.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * Allow the element to be dragged with the mouse.
     */
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var fg: js.UndefOr[String] = js.native
+  var fg: js.UndefOr[String] = js.undefined
   
   /**
     * Element is focused.
     */
-  var focused: js.UndefOr[BlessedElement] = js.native
+  var focused: js.UndefOr[BlessedElement] = js.undefined
   
   /**
     * Offsets of the element relative to its parent. Can be a number, percentage (0-100%), or
     * keyword (center). right and bottom do not accept keywords. Percentages can also have
     * offsets (50%+1, 50%-1).
     */
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Whether the element is hidden.
     */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A floating text label for the element which appears on mouseover.
     */
-  var hoverText: js.UndefOr[String] = js.native
+  var hoverText: js.UndefOr[String] = js.undefined
   
   /**
     * Element is focusable and can receive key input.
     */
-  var input: js.UndefOr[Boolean] = js.native
+  var input: js.UndefOr[Boolean] = js.undefined
   
-  var keyable: js.UndefOr[Boolean] = js.native
+  var keyable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A simple text label for the element.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var left: js.UndefOr[TTopLeft] = js.native
+  var left: js.UndefOr[TTopLeft] = js.undefined
   
   /**
     * Amount of padding on the inside of the element. Can be a number or an object containing
     * the properties: left, right, top, and bottom.
     */
-  var padding: js.UndefOr[Double | Padding] = js.native
+  var padding: js.UndefOr[Double | Padding] = js.undefined
   
   /**
     * Can contain the above options.
     */
-  var position: js.UndefOr[Position] = js.native
+  var position: js.UndefOr[Position] = js.undefined
   
-  var right: js.UndefOr[TPosition] = js.native
+  var right: js.UndefOr[TPosition] = js.undefined
   
   /**
     * Whether the element is scrollable or not.
     */
-  var scrollable: js.UndefOr[Boolean] = js.native
+  var scrollable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Draw a translucent offset shadow behind the element.
     */
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shrink/flex/grow to content and child elements. Width/height during render.
     */
-  var shrink: js.UndefOr[Boolean] = js.native
+  var shrink: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[js.Any] = js.native
+  var style: js.UndefOr[js.Any] = js.undefined
   
-  var tags: js.UndefOr[Boolean] = js.native
+  var tags: js.UndefOr[Boolean] = js.undefined
   
-  var top: js.UndefOr[TTopLeft] = js.native
+  var top: js.UndefOr[TTopLeft] = js.undefined
   
-  var underline: js.UndefOr[String] = js.native
+  var underline: js.UndefOr[String] = js.undefined
   
   /**
     * Vertical text alignment: top, middle, or bottom.
     */
-  var valign: js.UndefOr[top | middle | bottom] = js.native
+  var valign: js.UndefOr[top | middle | bottom] = js.undefined
   
   /**
     * Width/height of the element, can be a number, percentage (0-100%), or keyword (half or shrink).
     * Percentages can also have offsets (50%+1, 50%-1).
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object ElementOptions {
   

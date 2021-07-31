@@ -2,26 +2,24 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response for listing creatives.
   */
-@js.native
 trait SchemaListCreativesResponse extends StObject {
   
   /**
     * The list of creatives.
     */
-  var creatives: js.UndefOr[js.Array[SchemaCreative]] = js.native
+  var creatives: js.UndefOr[js.Array[SchemaCreative]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the
     * ListCreativesRequest.page_token field in the subsequent call to
     * `ListCreatives` method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListCreativesResponse {
   

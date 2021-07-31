@@ -9,9 +9,9 @@ import typings.styletronEngineAtomic.anon.Block
 import typings.styletronStandard.mod.FontFace
 import typings.styletronStandard.mod.KeyframesObject
 import typings.styletronStandard.mod.StandardEngine
+import typings.styletronStandard.mod.StyleObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,7 +21,7 @@ object mod {
   class Cache[T] protected () extends StObject {
     def this(
       idGenerator: SequentialIDGenerator,
-      onNewValue: js.Function3[/* cache */ Cache[T], /* id */ String, /* value */ js.Any, _]
+      onNewValue: js.Function3[/* cache */ Cache[T], /* id */ String, /* value */ js.Any, js.Any]
     ) = this()
     
     def addValue(key: String, value: T): Double = js.native
@@ -37,7 +37,9 @@ object mod {
   
   @JSImport("styletron-engine-atomic", "Client")
   @js.native
-  class Client () extends StandardEngine {
+  class Client ()
+    extends StObject
+       with StandardEngine {
     def this(opts: ClientOptions) = this()
     
     var fontFaceCache: Cache[FontFace] = js.native
@@ -48,6 +50,15 @@ object mod {
     
     var keyframesSheet: HTMLStyleElement = js.native
     
+    /* CompleteClass */
+    override def renderFontFace(fontFace: FontFace): String = js.native
+    
+    /* CompleteClass */
+    override def renderKeyframes(keyframes: KeyframesObject): String = js.native
+    
+    /* CompleteClass */
+    override def renderStyle(style: StyleObject): String = js.native
+    
     var styleCache: MultiCache[Block] = js.native
     
     var styleElements: StringDictionary[HTMLStyleElement] = js.native
@@ -56,7 +67,11 @@ object mod {
   @JSImport("styletron-engine-atomic", "MultiCache")
   @js.native
   class MultiCache[T] protected () extends StObject {
-    def this(idGenerator: SequentialIDGenerator, onNewCache: js.Function0[_], onNewValue: js.Function0[_]) = this()
+    def this(
+      idGenerator: SequentialIDGenerator,
+      onNewCache: js.Function0[js.Any],
+      onNewValue: js.Function0[js.Any]
+    ) = this()
     
     var caches: StringDictionary[Cache[T]] = js.native
     
@@ -95,7 +110,9 @@ object mod {
   
   @JSImport("styletron-engine-atomic", "Server")
   @js.native
-  class Server () extends StandardEngine {
+  class Server ()
+    extends StObject
+       with StandardEngine {
     def this(opts: ServerOptions) = this()
     
     var fontFaceRules: String = js.native
@@ -109,17 +126,25 @@ object mod {
     
     var keyframesRules: String = js.native
     
+    /* CompleteClass */
+    override def renderFontFace(fontFace: FontFace): String = js.native
+    
+    /* CompleteClass */
+    override def renderKeyframes(keyframes: KeyframesObject): String = js.native
+    
+    /* CompleteClass */
+    override def renderStyle(style: StyleObject): String = js.native
+    
     var styleRules: StringDictionary[String] = js.native
   }
   
-  @js.native
   trait ClientOptions extends StObject {
     
-    var container: js.UndefOr[Element] = js.native
+    var container: js.UndefOr[Element] = js.undefined
     
-    var hydrate: js.UndefOr[hydrateType] = js.native
+    var hydrate: js.UndefOr[hydrateType] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object ClientOptions {
     
@@ -155,10 +180,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ServerOptions extends StObject {
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object ServerOptions {
     
@@ -179,12 +203,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Sheet extends StObject {
     
-    var attrs: StringDictionary[String] = js.native
+    var attrs: StringDictionary[String]
     
-    var css: String = js.native
+    var css: String
   }
   object Sheet {
     

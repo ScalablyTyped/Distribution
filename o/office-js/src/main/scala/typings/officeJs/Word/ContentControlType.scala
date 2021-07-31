@@ -2,7 +2,6 @@ package typings.officeJs.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,69 +17,103 @@ sealed trait ContentControlType extends StObject
 object ContentControlType extends StObject {
   
   @js.native
-  sealed trait buildingBlockGallery extends ContentControlType
+  sealed trait buildingBlockGallery
+    extends StObject
+       with ContentControlType
   
   @js.native
-  sealed trait checkBox extends ContentControlType
+  sealed trait checkBox
+    extends StObject
+       with ContentControlType
   
   @js.native
-  sealed trait comboBox extends ContentControlType
+  sealed trait comboBox
+    extends StObject
+       with ContentControlType
   
   @js.native
-  sealed trait datePicker extends ContentControlType
+  sealed trait datePicker
+    extends StObject
+       with ContentControlType
   
   @js.native
-  sealed trait dropDownList extends ContentControlType
+  sealed trait dropDownList
+    extends StObject
+       with ContentControlType
   
   @js.native
-  sealed trait picture extends ContentControlType
+  sealed trait picture
+    extends StObject
+       with ContentControlType
   
   @js.native
-  sealed trait plainText extends ContentControlType
+  sealed trait plainText
+    extends StObject
+       with ContentControlType
   
   @js.native
-  sealed trait plainTextInline extends ContentControlType
+  sealed trait plainTextInline
+    extends StObject
+       with ContentControlType
   
   @js.native
-  sealed trait plainTextParagraph extends ContentControlType
+  sealed trait plainTextParagraph
+    extends StObject
+       with ContentControlType
   
   @js.native
-  sealed trait repeatingSection extends ContentControlType
+  sealed trait repeatingSection
+    extends StObject
+       with ContentControlType
   
   /**
     * Identifies a rich text content control.
     *
     */
   @js.native
-  sealed trait richText extends ContentControlType
+  sealed trait richText
+    extends StObject
+       with ContentControlType
   
   @js.native
-  sealed trait richTextInline extends ContentControlType
+  sealed trait richTextInline
+    extends StObject
+       with ContentControlType
   
   @js.native
-  sealed trait richTextParagraphs extends ContentControlType
+  sealed trait richTextParagraphs
+    extends StObject
+       with ContentControlType
   
   /**
     * Contains a whole table.
     *
     */
   @js.native
-  sealed trait richTextTable extends ContentControlType
+  sealed trait richTextTable
+    extends StObject
+       with ContentControlType
   
   /**
     * Contains a whole cell.
     *
     */
   @js.native
-  sealed trait richTextTableCell extends ContentControlType
+  sealed trait richTextTableCell
+    extends StObject
+       with ContentControlType
   
   /**
     * Contains a whole row.
     *
     */
   @js.native
-  sealed trait richTextTableRow extends ContentControlType
+  sealed trait richTextTableRow
+    extends StObject
+       with ContentControlType
   
   @js.native
-  sealed trait unknown extends ContentControlType
+  sealed trait unknown
+    extends StObject
+       with ContentControlType
 }

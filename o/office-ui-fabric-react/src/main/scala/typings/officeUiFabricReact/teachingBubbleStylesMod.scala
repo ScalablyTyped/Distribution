@@ -4,12 +4,14 @@ import typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleStylePr
 import typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object teachingBubbleStylesMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/TeachingBubble/TeachingBubble.styles", "getStyles")
+  @JSImport("office-ui-fabric-react/lib/components/TeachingBubble/TeachingBubble.styles", JSImport.Namespace)
   @js.native
-  def getStyles(props: ITeachingBubbleStyleProps): ITeachingBubbleStyles = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getStyles(props: ITeachingBubbleStyleProps): ITeachingBubbleStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ITeachingBubbleStyles]
 }

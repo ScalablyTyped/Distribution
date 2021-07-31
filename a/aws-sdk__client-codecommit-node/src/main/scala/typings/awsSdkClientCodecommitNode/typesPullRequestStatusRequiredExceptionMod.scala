@@ -3,24 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.updatePullRequestStatusExceptionsUnionMod.UpdatePullRequestStatusExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPullRequestStatusRequiredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PullRequestStatusRequiredExceptionDetails> * / any */ @js.native
-  trait PullRequestStatusRequiredException extends UpdatePullRequestStatusExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PullRequestStatusRequiredExceptionDetails> * / any */ trait PullRequestStatusRequiredException
+    extends StObject
+       with UpdatePullRequestStatusExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestStatusRequiredException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestStatusRequiredException
   }
   object PullRequestStatusRequiredException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestStatusRequiredException
-    ): PullRequestStatusRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): PullRequestStatusRequiredException = {
+      val __obj = js.Dynamic.literal(name = "PullRequestStatusRequiredException")
       __obj.asInstanceOf[PullRequestStatusRequiredException]
     }
     
@@ -34,6 +32,5 @@ object typesPullRequestStatusRequiredExceptionMod {
     }
   }
   
-  @js.native
   trait PullRequestStatusRequiredExceptionDetails extends StObject
 }

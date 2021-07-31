@@ -5,15 +5,15 @@ import typings.inversifyRestifyUtils.interfacesMod.interfaces._RouteOptions
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Path extends _RouteOptions {
+  trait Path
+    extends StObject
+       with _RouteOptions {
     
-    var path: StrOrRegex = js.native
+    var path: StrOrRegex
   }
   object Path {
     
@@ -32,27 +32,28 @@ object anon {
   }
   
   /* Inlined {  options :std.Object,   path :inversify-restify-utils.inversify-restify-utils/dts/interfaces.interfaces.StrOrRegex} & std.Object */
-  @js.native
-  trait optionsObjectpathStrOrReg extends _RouteOptions {
+  trait optionsObjectpathStrOrReg
+    extends StObject
+       with _RouteOptions {
     
     /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
-    var constructor: js.Function = js.native
+    var constructor: js.Function
     
     /**
       * Determines whether an object has a property with the specified name.
       * @param v A property name.
       */
-    def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    def hasOwnProperty(v: PropertyKey): Boolean
     
-    var options: js.Object = js.native
+    var options: js.Object
     
-    var path: StrOrRegex = js.native
+    var path: StrOrRegex
     
     /**
       * Determines whether a specified property is enumerable.
       * @param v A property name.
       */
-    def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
+    def propertyIsEnumerable(v: PropertyKey): Boolean
   }
   object optionsObjectpathStrOrReg {
     

@@ -30,10 +30,13 @@ import typings.validator.mod.validator.MobilePhoneLocale
 import typings.validator.mod.validator.PostalCodeLocale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decoratorsMod {
+  
+  @JSImport("class-validator/types/decorator/decorators", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/decorator/decorators", "ARRAY_CONTAINS")
   @js.native
@@ -59,76 +62,58 @@ object decoratorsMod {
   @js.native
   val ARRAY_UNIQUE: /* "arrayUnique" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/decorators", "Allow")
-  @js.native
-  def Allow(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Allow")
-  @js.native
-  def Allow(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def Allow(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Allow")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Allow(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Allow")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "ArrayContains")
-  @js.native
-  def ArrayContains_(values: js.Array[_]): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "ArrayContains")
-  @js.native
-  def ArrayContains_(values: js.Array[_], validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def ArrayContains_(values: js.Array[js.Any]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayContains")(values.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ArrayContains_(values: js.Array[js.Any], validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayContains")(values.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "ArrayMaxSize")
-  @js.native
-  def ArrayMaxSize_(max: Double): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "ArrayMaxSize")
-  @js.native
-  def ArrayMaxSize_(max: Double, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def ArrayMaxSize_(max: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayMaxSize")(max.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ArrayMaxSize_(max: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayMaxSize")(max.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "ArrayMinSize")
-  @js.native
-  def ArrayMinSize_(min: Double): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "ArrayMinSize")
-  @js.native
-  def ArrayMinSize_(min: Double, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def ArrayMinSize_(min: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayMinSize")(min.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ArrayMinSize_(min: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayMinSize")(min.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "ArrayNotContains")
-  @js.native
-  def ArrayNotContains_(values: js.Array[_]): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "ArrayNotContains")
-  @js.native
-  def ArrayNotContains_(values: js.Array[_], validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def ArrayNotContains_(values: js.Array[js.Any]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayNotContains")(values.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ArrayNotContains_(values: js.Array[js.Any], validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayNotContains")(values.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "ArrayNotEmpty")
-  @js.native
-  def ArrayNotEmpty_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "ArrayNotEmpty")
-  @js.native
-  def ArrayNotEmpty_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def ArrayNotEmpty_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayNotEmpty")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ArrayNotEmpty_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayNotEmpty")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "ArrayUnique")
-  @js.native
-  def ArrayUnique_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "ArrayUnique")
-  @js.native
-  def ArrayUnique_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def ArrayUnique_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayUnique")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ArrayUnique_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayUnique")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
   @JSImport("class-validator/types/decorator/decorators", "CONTAINS")
   @js.native
   val CONTAINS: /* "contains" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/decorators", "Contains")
-  @js.native
-  def Contains_(seed: String): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Contains")
-  @js.native
-  def Contains_(seed: String, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def Contains_(seed: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(seed.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Contains_(seed: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(seed.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
   @JSImport("class-validator/types/decorator/decorators", "EQUALS")
   @js.native
   val EQUALS: /* "equals" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/decorators", "Equals")
-  @js.native
-  def Equals(comparison: js.Any): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Equals")
-  @js.native
-  def Equals(comparison: js.Any, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def Equals(comparison: js.Any): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(comparison.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Equals(comparison: js.Any, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(comparison.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
   @JSImport("class-validator/types/decorator/decorators", "IS_ALPHA")
   @js.native
@@ -454,752 +439,525 @@ object decoratorsMod {
   @js.native
   val IS_VARIABLE_WIDTH: /* "isVariableWidth" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/decorators", "IsAlpha")
-  @js.native
-  def IsAlpha_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsAlpha")
-  @js.native
-  def IsAlpha_(locale: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsAlpha")
-  @js.native
-  def IsAlpha_(locale: String): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsAlpha")
-  @js.native
-  def IsAlpha_(locale: String, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsAlpha_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAlpha")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsAlpha_(locale: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAlpha")(locale.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsAlpha_(locale: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsAlpha")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsAlpha_(locale: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsAlpha")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsAlphanumeric")
-  @js.native
-  def IsAlphanumeric_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsAlphanumeric")
-  @js.native
-  def IsAlphanumeric_(locale: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsAlphanumeric")
-  @js.native
-  def IsAlphanumeric_(locale: String): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsAlphanumeric")
-  @js.native
-  def IsAlphanumeric_(locale: String, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsAlphanumeric_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAlphanumeric")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsAlphanumeric_(locale: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAlphanumeric")(locale.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsAlphanumeric_(locale: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsAlphanumeric")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsAlphanumeric_(locale: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsAlphanumeric")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsArray")
-  @js.native
-  def IsArray_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsArray")
-  @js.native
-  def IsArray_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsArray_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsArray")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsArray_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsArray")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsAscii")
-  @js.native
-  def IsAscii_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsAscii")
-  @js.native
-  def IsAscii_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsAscii_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAscii")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsAscii_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAscii")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsBIC")
-  @js.native
-  def IsBIC_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsBIC")
-  @js.native
-  def IsBIC_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsBIC_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBIC")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsBIC_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBIC")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsBase32")
-  @js.native
-  def IsBase32_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsBase32")
-  @js.native
-  def IsBase32_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsBase32_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBase32")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsBase32_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBase32")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsBase64")
-  @js.native
-  def IsBase64_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsBase64")
-  @js.native
-  def IsBase64_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsBase64_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBase64")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsBase64_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBase64")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsBooleanString")
-  @js.native
-  def IsBooleanString_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsBooleanString")
-  @js.native
-  def IsBooleanString_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsBooleanString_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBooleanString")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsBooleanString_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBooleanString")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsBoolean")
-  @js.native
-  def IsBoolean_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsBoolean")
-  @js.native
-  def IsBoolean_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsBoolean_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBoolean")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsBoolean_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBoolean")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsBtcAddress")
-  @js.native
-  def IsBtcAddress_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsBtcAddress")
-  @js.native
-  def IsBtcAddress_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsBtcAddress_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBtcAddress")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsBtcAddress_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBtcAddress")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsByteLength")
-  @js.native
-  def IsByteLength_(min: Double): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsByteLength")
-  @js.native
-  def IsByteLength_(min: Double, max: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsByteLength")
-  @js.native
-  def IsByteLength_(min: Double, max: Double): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsByteLength")
-  @js.native
-  def IsByteLength_(min: Double, max: Double, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsByteLength_(min: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsByteLength")(min.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsByteLength_(min: Double, max: Double): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsByteLength")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsByteLength_(min: Double, max: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsByteLength")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsByteLength_(min: Double, max: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsByteLength")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsCreditCard")
-  @js.native
-  def IsCreditCard_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsCreditCard")
-  @js.native
-  def IsCreditCard_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsCreditCard_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsCreditCard")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsCreditCard_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsCreditCard")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsCurrency")
-  @js.native
-  def IsCurrency_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsCurrency")
-  @js.native
-  def IsCurrency_(options: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsCurrency")
-  @js.native
-  def IsCurrency_(options: IsCurrencyOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsCurrency")
-  @js.native
-  def IsCurrency_(options: IsCurrencyOptions, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsCurrency_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsCurrency")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsCurrency_(options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsCurrency")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsCurrency_(options: IsCurrencyOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsCurrency")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsCurrency_(options: IsCurrencyOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsCurrency")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsDataURI")
-  @js.native
-  def IsDataURI_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsDataURI")
-  @js.native
-  def IsDataURI_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsDataURI_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsDataURI")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsDataURI_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsDataURI")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsDateString")
-  @js.native
-  def IsDateString_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsDateString")
-  @js.native
-  def IsDateString_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsDateString_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsDateString")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsDateString_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsDateString")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsDate")
-  @js.native
-  def IsDate_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsDate")
-  @js.native
-  def IsDate_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsDate_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsDate")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsDate_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsDate")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsDecimal")
-  @js.native
-  def IsDecimal_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsDecimal")
-  @js.native
-  def IsDecimal_(options: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsDecimal")
-  @js.native
-  def IsDecimal_(options: IsDecimalOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsDecimal")
-  @js.native
-  def IsDecimal_(options: IsDecimalOptions, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsDecimal_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsDecimal")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsDecimal_(options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsDecimal")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsDecimal_(options: IsDecimalOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsDecimal")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsDecimal_(options: IsDecimalOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsDecimal")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsDefined")
-  @js.native
-  def IsDefined_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsDefined")
-  @js.native
-  def IsDefined_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsDefined_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsDefined")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsDefined_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsDefined")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsDivisibleBy")
-  @js.native
-  def IsDivisibleBy_(num: Double): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsDivisibleBy")
-  @js.native
-  def IsDivisibleBy_(num: Double, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsDivisibleBy_(num: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsDivisibleBy")(num.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsDivisibleBy_(num: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsDivisibleBy")(num.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsEAN")
-  @js.native
-  def IsEAN_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsEAN")
-  @js.native
-  def IsEAN_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsEAN_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEAN")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsEAN_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEAN")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsEmail")
-  @js.native
-  def IsEmail_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsEmail")
-  @js.native
-  def IsEmail_(options: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsEmail")
-  @js.native
-  def IsEmail_(options: IsEmailOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsEmail")
-  @js.native
-  def IsEmail_(options: IsEmailOptions, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsEmail_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEmail")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsEmail_(options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsEmail")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsEmail_(options: IsEmailOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEmail")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsEmail_(options: IsEmailOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsEmail")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsEmpty")
-  @js.native
-  def IsEmpty_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsEmpty")
-  @js.native
-  def IsEmpty_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsEmpty_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEmpty")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsEmpty_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEmpty")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsEnum")
-  @js.native
-  def IsEnum_(entity: js.Object): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsEnum")
-  @js.native
-  def IsEnum_(entity: js.Object, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsEnum_(entity: js.Object): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEnum")(entity.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsEnum_(entity: js.Object, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsEnum")(entity.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsEthereumAddress")
-  @js.native
-  def IsEthereumAddress_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsEthereumAddress")
-  @js.native
-  def IsEthereumAddress_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsEthereumAddress_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEthereumAddress")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsEthereumAddress_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEthereumAddress")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsFQDN")
-  @js.native
-  def IsFQDN_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsFQDN")
-  @js.native
-  def IsFQDN_(options: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsFQDN")
-  @js.native
-  def IsFQDN_(options: IsFQDNOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsFQDN")
-  @js.native
-  def IsFQDN_(options: IsFQDNOptions, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsFQDN_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFQDN")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsFQDN_(options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsFQDN")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsFQDN_(options: IsFQDNOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFQDN")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsFQDN_(options: IsFQDNOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsFQDN")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsFirebasePushId")
-  @js.native
-  def IsFirebasePushId_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsFirebasePushId")
-  @js.native
-  def IsFirebasePushId_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsFirebasePushId_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFirebasePushId")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsFirebasePushId_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFirebasePushId")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsFullWidth")
-  @js.native
-  def IsFullWidth_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsFullWidth")
-  @js.native
-  def IsFullWidth_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsFullWidth_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFullWidth")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsFullWidth_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFullWidth")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsHSL")
-  @js.native
-  def IsHSL_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsHSL")
-  @js.native
-  def IsHSL_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsHSL_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsHSL")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsHSL_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsHSL")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsHalfWidth")
-  @js.native
-  def IsHalfWidth_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsHalfWidth")
-  @js.native
-  def IsHalfWidth_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsHalfWidth_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsHalfWidth")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsHalfWidth_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsHalfWidth")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsHash")
-  @js.native
-  def IsHash_(algorithm: String): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsHash")
-  @js.native
-  def IsHash_(algorithm: String, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsHash_(algorithm: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsHash")(algorithm.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsHash_(algorithm: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsHash")(algorithm.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsHexColor")
-  @js.native
-  def IsHexColor_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsHexColor")
-  @js.native
-  def IsHexColor_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsHexColor_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsHexColor")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsHexColor_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsHexColor")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsHexadecimal")
-  @js.native
-  def IsHexadecimal_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsHexadecimal")
-  @js.native
-  def IsHexadecimal_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsHexadecimal_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsHexadecimal")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsHexadecimal_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsHexadecimal")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsIBAN")
-  @js.native
-  def IsIBAN_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsIBAN")
-  @js.native
-  def IsIBAN_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsIBAN_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsIBAN")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsIBAN_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsIBAN")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsIP")
-  @js.native
-  def IsIP_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsIP")
-  @js.native
-  def IsIP_(version: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsIP")
-  @js.native
-  def IsIP_(version: IsIpVersion): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsIP")
-  @js.native
-  def IsIP_(version: IsIpVersion, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsIP_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsIP")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsIP_(version: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsIP")(version.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsIP_(version: IsIpVersion): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsIP")(version.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsIP_(version: IsIpVersion, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsIP")(version.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsISBN")
-  @js.native
-  def IsISBN_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsISBN")
-  @js.native
-  def IsISBN_(version: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsISBN")
-  @js.native
-  def IsISBN_(version: IsISBNVersion): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsISBN")
-  @js.native
-  def IsISBN_(version: IsISBNVersion, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsISBN_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISBN")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsISBN_(version: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsISBN")(version.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsISBN_(version: IsISBNVersion): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISBN")(version.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsISBN_(version: IsISBNVersion, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsISBN")(version.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsISIN")
-  @js.native
-  def IsISIN_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsISIN")
-  @js.native
-  def IsISIN_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsISIN_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISIN")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsISIN_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISIN")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsISO31661Alpha2")
-  @js.native
-  def IsISO31661Alpha2_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsISO31661Alpha2")
-  @js.native
-  def IsISO31661Alpha2_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsISO31661Alpha2_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISO31661Alpha2")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsISO31661Alpha2_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISO31661Alpha2")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsISO31661Alpha3")
-  @js.native
-  def IsISO31661Alpha3_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsISO31661Alpha3")
-  @js.native
-  def IsISO31661Alpha3_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsISO31661Alpha3_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISO31661Alpha3")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsISO31661Alpha3_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISO31661Alpha3")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsISO8601")
-  @js.native
-  def IsISO8601_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsISO8601")
-  @js.native
-  def IsISO8601_(options: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsISO8601")
-  @js.native
-  def IsISO8601_(options: IsISO8601Options): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsISO8601")
-  @js.native
-  def IsISO8601_(options: IsISO8601Options, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsISO8601_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISO8601")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsISO8601_(options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsISO8601")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsISO8601_(options: IsISO8601Options): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISO8601")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsISO8601_(options: IsISO8601Options, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsISO8601")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsISRC")
-  @js.native
-  def IsISRC_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsISRC")
-  @js.native
-  def IsISRC_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsISRC_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISRC")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsISRC_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISRC")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsISSN")
-  @js.native
-  def IsISSN_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsISSN")
-  @js.native
-  def IsISSN_(options: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsISSN")
-  @js.native
-  def IsISSN_(options: IsISSNOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsISSN")
-  @js.native
-  def IsISSN_(options: IsISSNOptions, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsISSN_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISSN")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsISSN_(options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsISSN")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsISSN_(options: IsISSNOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISSN")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsISSN_(options: IsISSNOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsISSN")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsIdentityCard")
-  @js.native
-  def IsIdentityCard_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsIdentityCard")
-  @js.native
-  def IsIdentityCard_(locale: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsIdentityCard")
-  @js.native
-  def IsIdentityCard_(locale: IdentityCardLocale): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsIdentityCard")
-  @js.native
-  def IsIdentityCard_(locale: IdentityCardLocale, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsIdentityCard_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsIdentityCard")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsIdentityCard_(locale: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsIdentityCard")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsIdentityCard_(locale: IdentityCardLocale): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsIdentityCard")(locale.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsIdentityCard_(locale: IdentityCardLocale, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsIdentityCard")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsIn")
-  @js.native
-  def IsIn_(values: js.Array[_]): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsIn")
-  @js.native
-  def IsIn_(values: js.Array[_], validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsIn_(values: js.Array[js.Any]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsIn")(values.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsIn_(values: js.Array[js.Any], validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsIn")(values.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsInstance")
-  @js.native
-  def IsInstance_(targetType: Instantiable1[/* args (repeated) */ js.Any, js.Any]): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsInstance")
-  @js.native
+  @scala.inline
+  def IsInstance_(targetType: Instantiable1[/* args (repeated) */ js.Any, js.Any]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsInstance")(targetType.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
   def IsInstance_(
     targetType: Instantiable1[/* args (repeated) */ js.Any, js.Any],
     validationOptions: ValidationOptions
-  ): PropertyDecorator = js.native
+  ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsInstance")(targetType.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsInt")
-  @js.native
-  def IsInt_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsInt")
-  @js.native
-  def IsInt_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsInt_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsInt")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsInt_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsInt")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsJSON")
-  @js.native
-  def IsJSON_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsJSON")
-  @js.native
-  def IsJSON_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsJSON_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsJSON")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsJSON_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsJSON")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsJWT")
-  @js.native
-  def IsJWT_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsJWT")
-  @js.native
-  def IsJWT_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsJWT_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsJWT")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsJWT_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsJWT")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsLatLong")
-  @js.native
-  def IsLatLong_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsLatLong")
-  @js.native
-  def IsLatLong_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsLatLong_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLatLong")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsLatLong_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLatLong")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsLatitude")
-  @js.native
-  def IsLatitude_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsLatitude")
-  @js.native
-  def IsLatitude_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsLatitude_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLatitude")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsLatitude_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLatitude")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsLocale")
-  @js.native
-  def IsLocale_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsLocale")
-  @js.native
-  def IsLocale_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsLocale_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLocale")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsLocale_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLocale")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsLongitude")
-  @js.native
-  def IsLongitude_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsLongitude")
-  @js.native
-  def IsLongitude_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsLongitude_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLongitude")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsLongitude_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLongitude")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsLowercase")
-  @js.native
-  def IsLowercase_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsLowercase")
-  @js.native
-  def IsLowercase_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsLowercase_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLowercase")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsLowercase_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLowercase")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsMACAddress")
-  @js.native
-  def IsMACAddress_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMACAddress")
-  @js.native
-  def IsMACAddress_(optionsArg: js.UndefOr[scala.Nothing], validationOptionsArg: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMACAddress")
-  @js.native
-  def IsMACAddress_(optionsArg: IsMACAddressOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMACAddress")
-  @js.native
-  def IsMACAddress_(optionsArg: IsMACAddressOptions, validationOptionsArg: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMACAddress")
-  @js.native
-  def IsMACAddress_(validationOptionsArg: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsMACAddress_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMACAddress")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMACAddress_(optionsArg: Unit, validationOptionsArg: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsMACAddress")(optionsArg.asInstanceOf[js.Any], validationOptionsArg.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMACAddress_(optionsArg: IsMACAddressOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMACAddress")(optionsArg.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMACAddress_(optionsArg: IsMACAddressOptions, validationOptionsArg: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsMACAddress")(optionsArg.asInstanceOf[js.Any], validationOptionsArg.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMACAddress_(validationOptionsArg: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMACAddress")(validationOptionsArg.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsMagnetURI")
-  @js.native
-  def IsMagnetURI_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMagnetURI")
-  @js.native
-  def IsMagnetURI_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsMagnetURI_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMagnetURI")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMagnetURI_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMagnetURI")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsMilitaryTime")
-  @js.native
-  def IsMilitaryTime_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMilitaryTime")
-  @js.native
-  def IsMilitaryTime_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsMilitaryTime_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMilitaryTime")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMilitaryTime_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMilitaryTime")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsMimeType")
-  @js.native
-  def IsMimeType_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMimeType")
-  @js.native
-  def IsMimeType_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsMimeType_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMimeType")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMimeType_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMimeType")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsMobilePhone")
-  @js.native
-  def IsMobilePhone_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMobilePhone")
-  @js.native
-  def IsMobilePhone_(
-    locale: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    validationOptions: ValidationOptions
-  ): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMobilePhone")
-  @js.native
-  def IsMobilePhone_(locale: js.UndefOr[scala.Nothing], options: IsMobilePhoneOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMobilePhone")
-  @js.native
-  def IsMobilePhone_(
-    locale: js.UndefOr[scala.Nothing],
-    options: IsMobilePhoneOptions,
-    validationOptions: ValidationOptions
-  ): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMobilePhone")
-  @js.native
-  def IsMobilePhone_(locale: MobilePhoneLocale): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMobilePhone")
-  @js.native
-  def IsMobilePhone_(
-    locale: MobilePhoneLocale,
-    options: js.UndefOr[scala.Nothing],
-    validationOptions: ValidationOptions
-  ): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMobilePhone")
-  @js.native
-  def IsMobilePhone_(locale: MobilePhoneLocale, options: IsMobilePhoneOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMobilePhone")
-  @js.native
-  def IsMobilePhone_(locale: MobilePhoneLocale, options: IsMobilePhoneOptions, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsMobilePhone_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMobilePhone")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMobilePhone_(locale: Unit, options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsMobilePhone")(locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMobilePhone_(locale: Unit, options: IsMobilePhoneOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsMobilePhone")(locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMobilePhone_(locale: Unit, options: IsMobilePhoneOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsMobilePhone")(locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMobilePhone_(locale: MobilePhoneLocale): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMobilePhone")(locale.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMobilePhone_(locale: MobilePhoneLocale, options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsMobilePhone")(locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMobilePhone_(locale: MobilePhoneLocale, options: IsMobilePhoneOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsMobilePhone")(locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMobilePhone_(locale: MobilePhoneLocale, options: IsMobilePhoneOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsMobilePhone")(locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsMongoId")
-  @js.native
-  def IsMongoId_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMongoId")
-  @js.native
-  def IsMongoId_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsMongoId_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMongoId")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMongoId_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMongoId")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsMultibyte")
-  @js.native
-  def IsMultibyte_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsMultibyte")
-  @js.native
-  def IsMultibyte_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsMultibyte_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMultibyte")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMultibyte_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMultibyte")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsNegative")
-  @js.native
-  def IsNegative_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsNegative")
-  @js.native
-  def IsNegative_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsNegative_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNegative")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsNegative_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNegative")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsNotEmptyObject")
-  @js.native
-  def IsNotEmptyObject_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsNotEmptyObject")
-  @js.native
-  def IsNotEmptyObject_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsNotEmptyObject_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNotEmptyObject")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsNotEmptyObject_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNotEmptyObject")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsNotEmpty")
-  @js.native
-  def IsNotEmpty_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsNotEmpty")
-  @js.native
-  def IsNotEmpty_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsNotEmpty_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNotEmpty")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsNotEmpty_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNotEmpty")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsNotIn")
-  @js.native
-  def IsNotIn_(values: js.Array[_]): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsNotIn")
-  @js.native
-  def IsNotIn_(values: js.Array[_], validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsNotIn_(values: js.Array[js.Any]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNotIn")(values.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsNotIn_(values: js.Array[js.Any], validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsNotIn")(values.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsNumberString")
-  @js.native
-  def IsNumberString_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsNumberString")
-  @js.native
-  def IsNumberString_(options: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsNumberString")
-  @js.native
-  def IsNumberString_(options: IsNumericOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsNumberString")
-  @js.native
-  def IsNumberString_(options: IsNumericOptions, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsNumberString_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNumberString")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsNumberString_(options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsNumberString")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsNumberString_(options: IsNumericOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNumberString")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsNumberString_(options: IsNumericOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsNumberString")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsNumber")
-  @js.native
-  def IsNumber_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsNumber")
-  @js.native
-  def IsNumber_(options: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsNumber")
-  @js.native
-  def IsNumber_(options: IsNumberOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsNumber")
-  @js.native
-  def IsNumber_(options: IsNumberOptions, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsNumber_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNumber")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsNumber_(options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsNumber")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsNumber_(options: IsNumberOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNumber")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsNumber_(options: IsNumberOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsNumber")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsObject")
-  @js.native
-  def IsObject_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsObject")
-  @js.native
-  def IsObject_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsObject_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsObject")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsObject_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsObject")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsOctal")
-  @js.native
-  def IsOctal_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsOctal")
-  @js.native
-  def IsOctal_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsOctal_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsOctal")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsOctal_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsOctal")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsOptional")
-  @js.native
-  def IsOptional(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsOptional")
-  @js.native
-  def IsOptional(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsOptional(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsOptional")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsOptional(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsOptional")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsPassportNumber")
-  @js.native
-  def IsPassportNumber_(countryCode: String): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsPassportNumber")
-  @js.native
-  def IsPassportNumber_(countryCode: String, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsPassportNumber_(countryCode: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPassportNumber")(countryCode.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsPassportNumber_(countryCode: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsPassportNumber")(countryCode.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsPhoneNumber")
-  @js.native
-  def IsPhoneNumber_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsPhoneNumber")
-  @js.native
-  def IsPhoneNumber_(region: String): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsPhoneNumber")
-  @js.native
-  def IsPhoneNumber_(region: String, validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsPhoneNumber")
-  @js.native
-  def IsPhoneNumber_(region: Null, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsPhoneNumber_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPhoneNumber")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsPhoneNumber_(region: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPhoneNumber")(region.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsPhoneNumber_(region: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsPhoneNumber")(region.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsPhoneNumber_(region: Null, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsPhoneNumber")(region.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsPort")
-  @js.native
-  def IsPort_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsPort")
-  @js.native
-  def IsPort_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsPort_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPort")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsPort_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPort")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsPositive")
-  @js.native
-  def IsPositive_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsPositive")
-  @js.native
-  def IsPositive_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsPositive_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPositive")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsPositive_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPositive")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsPostalCode")
-  @js.native
-  def IsPostalCode_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsPostalCode")
-  @js.native
-  def IsPostalCode_(locale: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsPostalCode")
-  @js.native
-  def IsPostalCode_(locale: PostalCodeLocale): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsPostalCode")
-  @js.native
-  def IsPostalCode_(locale: PostalCodeLocale, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsPostalCode_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPostalCode")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsPostalCode_(locale: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsPostalCode")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsPostalCode_(locale: PostalCodeLocale): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPostalCode")(locale.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsPostalCode_(locale: PostalCodeLocale, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsPostalCode")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsRFC3339")
-  @js.native
-  def IsRFC3339_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsRFC3339")
-  @js.native
-  def IsRFC3339_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsRFC3339_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsRFC3339")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsRFC3339_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsRFC3339")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsRgbColor")
-  @js.native
-  def IsRgbColor_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsRgbColor")
-  @js.native
-  def IsRgbColor_(includePercentValues: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsRgbColor")
-  @js.native
-  def IsRgbColor_(includePercentValues: Boolean): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsRgbColor")
-  @js.native
-  def IsRgbColor_(includePercentValues: Boolean, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsRgbColor_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsRgbColor")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsRgbColor_(includePercentValues: Boolean): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsRgbColor")(includePercentValues.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsRgbColor_(includePercentValues: Boolean, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsRgbColor")(includePercentValues.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsRgbColor_(includePercentValues: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsRgbColor")(includePercentValues.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsSemVer")
-  @js.native
-  def IsSemVer_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsSemVer")
-  @js.native
-  def IsSemVer_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsSemVer_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSemVer")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsSemVer_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSemVer")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsString")
-  @js.native
-  def IsString_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsString")
-  @js.native
-  def IsString_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsString_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsString")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsString_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsString")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsSurrogatePair")
-  @js.native
-  def IsSurrogatePair_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsSurrogatePair")
-  @js.native
-  def IsSurrogatePair_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsSurrogatePair_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSurrogatePair")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsSurrogatePair_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSurrogatePair")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsUUID")
-  @js.native
-  def IsUUID_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsUUID")
-  @js.native
-  def IsUUID_(version: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsUUID")
-  @js.native
-  def IsUUID_(version: UUIDVersion): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsUUID")
-  @js.native
-  def IsUUID_(version: UUIDVersion, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsUUID_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsUUID")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsUUID_(version: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsUUID")(version.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsUUID_(version: UUIDVersion): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsUUID")(version.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsUUID_(version: UUIDVersion, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsUUID")(version.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsUppercase")
-  @js.native
-  def IsUppercase_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsUppercase")
-  @js.native
-  def IsUppercase_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsUppercase_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsUppercase")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsUppercase_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsUppercase")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsUrl")
-  @js.native
-  def IsUrl_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsUrl")
-  @js.native
-  def IsUrl_(options: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsUrl")
-  @js.native
-  def IsUrl_(options: IsURLOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsUrl")
-  @js.native
-  def IsUrl_(options: IsURLOptions, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsUrl_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsUrl")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsUrl_(options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsUrl")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsUrl_(options: IsURLOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsUrl")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsUrl_(options: IsURLOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsUrl")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "IsVariableWidth")
-  @js.native
-  def IsVariableWidth_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "IsVariableWidth")
-  @js.native
-  def IsVariableWidth_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsVariableWidth_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsVariableWidth")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsVariableWidth_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsVariableWidth")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
   @JSImport("class-validator/types/decorator/decorators", "LENGTH")
   @js.native
   val LENGTH: /* "length" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/decorators", "Length")
-  @js.native
-  def Length_(min: Double): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Length")
-  @js.native
-  def Length_(min: Double, max: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Length")
-  @js.native
-  def Length_(min: Double, max: Double): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Length")
-  @js.native
-  def Length_(min: Double, max: Double, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def Length_(min: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Length")(min.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Length_(min: Double, max: Double): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Length")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Length_(min: Double, max: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Length")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Length_(min: Double, max: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Length")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
   @JSImport("class-validator/types/decorator/decorators", "MATCHES")
   @js.native
@@ -1229,66 +987,48 @@ object decoratorsMod {
   @js.native
   val MIN_LENGTH: /* "minLength" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/decorators", "Matches")
-  @js.native
-  def Matches_(pattern: String): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Matches")
-  @js.native
-  def Matches_(pattern: String, modifiers: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Matches")
-  @js.native
-  def Matches_(pattern: String, modifiers: String): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Matches")
-  @js.native
-  def Matches_(pattern: String, modifiers: String, validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Matches")
-  @js.native
-  def Matches_(pattern: RegExp): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Matches")
-  @js.native
-  def Matches_(pattern: RegExp, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def Matches_(pattern: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Matches")(pattern.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Matches_(pattern: String, modifiers: String): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Matches")(pattern.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Matches_(pattern: String, modifiers: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Matches")(pattern.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Matches_(pattern: String, modifiers: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Matches")(pattern.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Matches_(pattern: RegExp): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Matches")(pattern.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Matches_(pattern: RegExp, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Matches")(pattern.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "MaxDate")
-  @js.native
-  def MaxDate_(date: Date): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "MaxDate")
-  @js.native
-  def MaxDate_(date: Date, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def MaxDate_(date: Date): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("MaxDate")(date.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def MaxDate_(date: Date, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MaxDate")(date.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "MaxLength")
-  @js.native
-  def MaxLength_(max: Double): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "MaxLength")
-  @js.native
-  def MaxLength_(max: Double, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def MaxLength_(max: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("MaxLength")(max.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def MaxLength_(max: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MaxLength")(max.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "Max")
-  @js.native
-  def Max_(maxValue: Double): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Max")
-  @js.native
-  def Max_(maxValue: Double, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def Max_(maxValue: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Max")(maxValue.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Max_(maxValue: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Max")(maxValue.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "MinDate")
-  @js.native
-  def MinDate_(date: Date): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "MinDate")
-  @js.native
-  def MinDate_(date: Date, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def MinDate_(date: Date): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("MinDate")(date.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def MinDate_(date: Date, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MinDate")(date.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "MinLength")
-  @js.native
-  def MinLength_(min: Double): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "MinLength")
-  @js.native
-  def MinLength_(min: Double, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def MinLength_(min: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("MinLength")(min.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def MinLength_(min: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MinLength")(min.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "Min")
-  @js.native
-  def Min_(minValue: Double): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Min")
-  @js.native
-  def Min_(minValue: Double, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def Min_(minValue: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Min")(minValue.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Min_(minValue: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Min")(minValue.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
   @JSImport("class-validator/types/decorator/decorators", "NOT_CONTAINS")
   @js.native
@@ -1298,550 +1038,403 @@ object decoratorsMod {
   @js.native
   val NOT_EQUALS: /* "notEquals" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/decorators", "NotContains")
-  @js.native
-  def NotContains_(seed: String): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "NotContains")
-  @js.native
-  def NotContains_(seed: String, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def NotContains_(seed: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("NotContains")(seed.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def NotContains_(seed: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("NotContains")(seed.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "NotEquals")
-  @js.native
-  def NotEquals_(comparison: js.Any): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "NotEquals")
-  @js.native
-  def NotEquals_(comparison: js.Any, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def NotEquals_(comparison: js.Any): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("NotEquals")(comparison.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def NotEquals_(comparison: js.Any, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("NotEquals")(comparison.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "Validate")
-  @js.native
-  def Validate(constraintClass: js.Function): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Validate")
-  @js.native
-  def Validate(
-    constraintClass: js.Function,
-    constraints: js.UndefOr[scala.Nothing],
-    validationOptions: ValidationOptions
-  ): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Validate")
-  @js.native
-  def Validate(constraintClass: js.Function, constraints: js.Array[_]): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Validate")
-  @js.native
-  def Validate(constraintClass: js.Function, constraints: js.Array[_], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "Validate")
-  @js.native
-  def Validate(constraintClass: js.Function, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def Validate(constraintClass: js.Function): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Validate")(constraintClass.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Validate(constraintClass: js.Function, constraints: js.Array[js.Any]): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Validate")(constraintClass.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Validate(constraintClass: js.Function, constraints: js.Array[js.Any], validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Validate")(constraintClass.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Validate(constraintClass: js.Function, constraints: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Validate")(constraintClass.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Validate(constraintClass: js.Function, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Validate")(constraintClass.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "ValidateBy")
-  @js.native
-  def ValidateBy(options: ValidateByOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "ValidateBy")
-  @js.native
-  def ValidateBy(options: ValidateByOptions, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def ValidateBy(options: ValidateByOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidateBy")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ValidateBy(options: ValidateByOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateBy")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "ValidateIf")
-  @js.native
-  def ValidateIf(condition: js.Function2[/* object */ js.Any, /* value */ js.Any, Boolean]): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "ValidateIf")
-  @js.native
+  @scala.inline
+  def ValidateIf(condition: js.Function2[/* object */ js.Any, /* value */ js.Any, Boolean]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidateIf")(condition.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
   def ValidateIf(
     condition: js.Function2[/* object */ js.Any, /* value */ js.Any, Boolean],
     validationOptions: ValidationOptions
-  ): PropertyDecorator = js.native
+  ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateIf")(condition.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "ValidateNested")
-  @js.native
-  def ValidateNested(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "ValidateNested")
-  @js.native
-  def ValidateNested(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def ValidateNested(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidateNested")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ValidateNested(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidateNested")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "ValidatePromise")
-  @js.native
-  def ValidatePromise(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/decorators", "ValidatePromise")
-  @js.native
-  def ValidatePromise(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def ValidatePromise(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidatePromise")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ValidatePromise(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidatePromise")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/decorators", "ValidatorConstraint")
-  @js.native
-  def ValidatorConstraint(): js.Function1[/* target */ js.Function, Unit] = js.native
-  @JSImport("class-validator/types/decorator/decorators", "ValidatorConstraint")
-  @js.native
-  def ValidatorConstraint(options: Async): js.Function1[/* target */ js.Function, Unit] = js.native
+  @scala.inline
+  def ValidatorConstraint(): js.Function1[/* target */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidatorConstraint")().asInstanceOf[js.Function1[/* target */ js.Function, Unit]]
+  @scala.inline
+  def ValidatorConstraint(options: Async): js.Function1[/* target */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidatorConstraint")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ js.Function, Unit]]
   
-  @JSImport("class-validator/types/decorator/decorators", "arrayContains")
-  @js.native
-  def arrayContains(array: js.Any, values: js.Array[_]): Boolean = js.native
+  @scala.inline
+  def arrayContains(array: js.Any, values: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayContains")(array.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("class-validator/types/decorator/decorators", "arrayMaxSize")
-  @js.native
-  def arrayMaxSize(array: js.Any, max: Double): Boolean = js.native
+  @scala.inline
+  def arrayMaxSize(array: js.Any, max: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMaxSize")(array.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("class-validator/types/decorator/decorators", "arrayMinSize")
-  @js.native
-  def arrayMinSize(array: js.Any, min: Double): Boolean = js.native
+  @scala.inline
+  def arrayMinSize(array: js.Any, min: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMinSize")(array.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("class-validator/types/decorator/decorators", "arrayNotContains")
-  @js.native
-  def arrayNotContains(array: js.Any, values: js.Array[_]): Boolean = js.native
+  @scala.inline
+  def arrayNotContains(array: js.Any, values: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayNotContains")(array.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("class-validator/types/decorator/decorators", "arrayNotEmpty")
-  @js.native
-  def arrayNotEmpty(array: js.Any): Boolean = js.native
+  @scala.inline
+  def arrayNotEmpty(array: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayNotEmpty")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("class-validator/types/decorator/decorators", "arrayUnique")
-  @js.native
-  def arrayUnique(array: js.Any): Boolean = js.native
+  @scala.inline
+  def arrayUnique(array: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnique")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("class-validator/types/decorator/decorators", "buildMessage")
-  @js.native
-  def buildMessage(impl: js.Function2[/* eachPrefix */ String, /* args */ js.UndefOr[ValidationArguments], String]): js.Function1[/* validationArguments */ js.UndefOr[ValidationArguments], String] = js.native
-  @JSImport("class-validator/types/decorator/decorators", "buildMessage")
-  @js.native
+  @scala.inline
+  def buildMessage(impl: js.Function2[/* eachPrefix */ String, /* args */ js.UndefOr[ValidationArguments], String]): js.Function1[/* validationArguments */ js.UndefOr[ValidationArguments], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildMessage")(impl.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* validationArguments */ js.UndefOr[ValidationArguments], String]]
+  @scala.inline
   def buildMessage(
     impl: js.Function2[/* eachPrefix */ String, /* args */ js.UndefOr[ValidationArguments], String],
     validationOptions: ValidationOptions
-  ): js.Function1[/* validationArguments */ js.UndefOr[ValidationArguments], String] = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "contains")
-  @js.native
-  def contains(value: js.Any, seed: String): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "equals")
-  @js.native
-  def equals_(value: js.Any, comparison: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isAlpha")
-  @js.native
-  def isAlpha(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isAlpha")
-  @js.native
-  def isAlpha(value: js.Any, locale: AlphaLocale): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isAlphanumeric")
-  @js.native
-  def isAlphanumeric(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isAlphanumeric")
-  @js.native
-  def isAlphanumeric(value: js.Any, locale: AlphanumericLocale): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isArray")
-  @js.native
-  def isArray(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isAscii")
-  @js.native
-  def isAscii(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isBIC")
-  @js.native
-  def isBIC(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isBase32")
-  @js.native
-  def isBase32(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isBase64")
-  @js.native
-  def isBase64(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isBoolean")
-  @js.native
-  def isBoolean(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isBooleanString")
-  @js.native
-  def isBooleanString(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isBtcAddress")
-  @js.native
-  def isBtcAddress(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isByteLength")
-  @js.native
-  def isByteLength(value: js.Any, min: Double): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isByteLength")
-  @js.native
-  def isByteLength(value: js.Any, min: Double, max: Double): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isCreditCard")
-  @js.native
-  def isCreditCard(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isCurrency")
-  @js.native
-  def isCurrency(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isCurrency")
-  @js.native
-  def isCurrency(value: js.Any, options: IsCurrencyOptions): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isDataURI")
-  @js.native
-  def isDataURI(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isDate")
-  @js.native
-  def isDate(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isDateString")
-  @js.native
-  def isDateString(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isDecimal")
-  @js.native
-  def isDecimal(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isDecimal")
-  @js.native
-  def isDecimal(value: js.Any, options: IsDecimalOptions): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isDefined")
-  @js.native
-  def isDefined(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isDivisibleBy")
-  @js.native
-  def isDivisibleBy(value: js.Any, num: Double): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isEAN")
-  @js.native
-  def isEAN(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isEmail")
-  @js.native
-  def isEmail(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isEmail")
-  @js.native
-  def isEmail(value: js.Any, options: IsEmailOptions): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isEmpty")
-  @js.native
-  def isEmpty(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isEnum")
-  @js.native
-  def isEnum(value: js.Any, entity: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isEthereumAddress")
-  @js.native
-  def isEthereumAddress(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isFQDN")
-  @js.native
-  def isFQDN(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isFQDN")
-  @js.native
-  def isFQDN(value: js.Any, options: IsFQDNOptions): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isFirebasePushId")
-  @js.native
-  def isFirebasePushId(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isFullWidth")
-  @js.native
-  def isFullWidth(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isHSL")
-  @js.native
-  def isHSL(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isHalfWidth")
-  @js.native
-  def isHalfWidth(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isHash")
-  @js.native
-  def isHash(value: js.Any, algorithm: HashAlgorithm): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isHexColor")
-  @js.native
-  def isHexColor(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isHexadecimal")
-  @js.native
-  def isHexadecimal(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isIBAN")
-  @js.native
-  def isIBAN(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isIP")
-  @js.native
-  def isIP(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isIP")
-  @js.native
-  def isIP(value: js.Any, version: IsIpVersion): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isISBN")
-  @js.native
-  def isISBN(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isISBN")
-  @js.native
-  def isISBN(value: js.Any, version: IsISBNVersion): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isISIN")
-  @js.native
-  def isISIN(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isISO31661Alpha2")
-  @js.native
-  def isISO31661Alpha2(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isISO31661Alpha3")
-  @js.native
-  def isISO31661Alpha3(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isISO8601")
-  @js.native
-  def isISO8601(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isISO8601")
-  @js.native
-  def isISO8601(value: js.Any, options: IsISO8601Options): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isISRC")
-  @js.native
-  def isISRC(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isISSN")
-  @js.native
-  def isISSN(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isISSN")
-  @js.native
-  def isISSN(value: js.Any, options: IsISSNOptions): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isIdentityCard")
-  @js.native
-  def isIdentityCard(value: js.Any, locale: IdentityCardLocale): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isIn")
-  @js.native
-  def isIn(value: js.Any, possibleValues: js.Array[_]): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isInstance")
-  @js.native
-  def isInstance(`object`: js.Any, targetTypeConstructor: Instantiable1[/* args (repeated) */ js.Any, js.Any]): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isInt")
-  @js.native
-  def isInt(`val`: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isJSON")
-  @js.native
-  def isJSON(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isJWT")
-  @js.native
-  def isJWT(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isLatLong")
-  @js.native
-  def isLatLong(value: String): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isLatitude")
-  @js.native
-  def isLatitude(value: String): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isLocale")
-  @js.native
-  def isLocale(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isLongitude")
-  @js.native
-  def isLongitude(value: String): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isLowercase")
-  @js.native
-  def isLowercase(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isMACAddress")
-  @js.native
-  def isMACAddress(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isMACAddress")
-  @js.native
-  def isMACAddress(value: js.Any, options: IsMACAddressOptions): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isMagnetURI")
-  @js.native
-  def isMagnetURI(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isMilitaryTime")
-  @js.native
-  def isMilitaryTime(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isMimeType")
-  @js.native
-  def isMimeType(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isMobilePhone")
-  @js.native
-  def isMobilePhone(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isMobilePhone")
-  @js.native
-  def isMobilePhone(value: js.Any, locale: js.UndefOr[scala.Nothing], options: IsMobilePhoneOptions): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isMobilePhone")
-  @js.native
-  def isMobilePhone(value: js.Any, locale: MobilePhoneLocale): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isMobilePhone")
-  @js.native
-  def isMobilePhone(value: js.Any, locale: MobilePhoneLocale, options: IsMobilePhoneOptions): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isMongoId")
-  @js.native
-  def isMongoId(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isMultibyte")
-  @js.native
-  def isMultibyte(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isNegative")
-  @js.native
-  def isNegative(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isNotEmpty")
-  @js.native
-  def isNotEmpty(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isNotEmptyObject")
-  @js.native
-  def isNotEmptyObject(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isNotIn")
-  @js.native
-  def isNotIn(value: js.Any, possibleValues: js.Array[_]): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isNumber")
-  @js.native
-  def isNumber(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isNumber")
-  @js.native
-  def isNumber(value: js.Any, options: IsNumberOptions): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isNumberString")
-  @js.native
-  def isNumberString(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isNumberString")
-  @js.native
-  def isNumberString(value: js.Any, options: IsNumericOptions): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isObject")
-  @js.native
-  def isObject(value: js.Any): /* is object */ Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isOctal")
-  @js.native
-  def isOctal(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isPassportNumber")
-  @js.native
-  def isPassportNumber(value: js.Any, countryCode: String): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isPhoneNumber")
-  @js.native
-  def isPhoneNumber(value: String): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isPhoneNumber")
-  @js.native
-  def isPhoneNumber(value: String, region: String): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isPort")
-  @js.native
-  def isPort(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isPositive")
-  @js.native
-  def isPositive(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isPostalCode")
-  @js.native
-  def isPostalCode(value: js.Any, locale: PostalCodeLocale): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isRFC3339")
-  @js.native
-  def isRFC3339(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isRgbColor")
-  @js.native
-  def isRgbColor(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isRgbColor")
-  @js.native
-  def isRgbColor(value: js.Any, includePercentValues: Boolean): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isSemVer")
-  @js.native
-  def isSemVer(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isString")
-  @js.native
-  def isString(value: js.Any): /* is string */ Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isSurrogatePair")
-  @js.native
-  def isSurrogatePair(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isURL")
-  @js.native
-  def isURL(value: String): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isURL")
-  @js.native
-  def isURL(value: String, options: IsURLOptions): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isUUID")
-  @js.native
-  def isUUID(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "isUUID")
-  @js.native
-  def isUUID(value: js.Any, version: UUIDVersion): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isUppercase")
-  @js.native
-  def isUppercase(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "isVariableWidth")
-  @js.native
-  def isVariableWidth(value: js.Any): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "length")
-  @js.native
-  def length(value: js.Any, min: Double): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "length")
-  @js.native
-  def length(value: js.Any, min: Double, max: Double): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "matches")
-  @js.native
-  def matches(value: String, pattern: String, modifiers: String): Boolean = js.native
-  @JSImport("class-validator/types/decorator/decorators", "matches")
-  @js.native
-  def matches(value: String, pattern: RegExp): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "max")
-  @js.native
-  def max(num: js.Any, max: Double): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "maxDate")
-  @js.native
-  def maxDate(date: js.Any, maxDate: Date): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "maxLength")
-  @js.native
-  def maxLength(value: js.Any, max: Double): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "min")
-  @js.native
-  def min(num: js.Any, min: Double): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "minDate")
-  @js.native
-  def minDate(date: js.Any, minDate: Date): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "minLength")
-  @js.native
-  def minLength(value: js.Any, min: Double): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "notContains")
-  @js.native
-  def notContains(value: js.Any, seed: String): Boolean = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "notEquals")
-  @js.native
-  def notEquals(value: js.Any, comparison: js.Any): Boolean = js.native
+  ): js.Function1[/* validationArguments */ js.UndefOr[ValidationArguments], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildMessage")(impl.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* validationArguments */ js.UndefOr[ValidationArguments], String]]
+  
+  @scala.inline
+  def contains(value: js.Any, seed: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(value.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def equals_(value: js.Any, comparison: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(value.asInstanceOf[js.Any], comparison.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isAlpha(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlpha")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isAlpha(value: js.Any, locale: AlphaLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlpha")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isAlphanumeric(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlphanumeric")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isAlphanumeric(value: js.Any, locale: AlphanumericLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphanumeric")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isArray(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isAscii(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAscii")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBIC(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBIC")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBase32(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase32")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBase64(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase64")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBoolean(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBooleanString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBooleanString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBtcAddress(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBtcAddress")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isByteLength(value: js.Any, min: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isByteLength")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isByteLength(value: js.Any, min: Double, max: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isByteLength")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isCreditCard(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCreditCard")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isCurrency(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCurrency")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isCurrency(value: js.Any, options: IsCurrencyOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCurrency")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isDataURI(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataURI")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isDate(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isDateString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isDecimal(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isDecimal(value: js.Any, options: IsDecimalOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isDefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isDivisibleBy(value: js.Any, num: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDivisibleBy")(value.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEAN(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEAN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEmail(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmail")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isEmail(value: js.Any, options: IsEmailOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEmail")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEmpty(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEnum(value: js.Any, entity: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnum")(value.asInstanceOf[js.Any], entity.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEthereumAddress(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEthereumAddress")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isFQDN(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFQDN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isFQDN(value: js.Any, options: IsFQDNOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFQDN")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isFirebasePushId(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirebasePushId")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isFullWidth(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullWidth")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isHSL(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHSL")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isHalfWidth(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHalfWidth")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isHash(value: js.Any, algorithm: HashAlgorithm): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isHash")(value.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isHexColor(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHexColor")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isHexadecimal(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHexadecimal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isIBAN(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIBAN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isIP(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIP")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isIP(value: js.Any, version: IsIpVersion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIP")(value.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isISBN(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISBN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isISBN(value: js.Any, version: IsISBNVersion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isISBN")(value.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isISIN(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISIN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isISO31661Alpha2(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISO31661Alpha2")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isISO31661Alpha3(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISO31661Alpha3")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isISO8601(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISO8601")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isISO8601(value: js.Any, options: IsISO8601Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isISO8601")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isISRC(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISRC")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isISSN(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISSN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isISSN(value: js.Any, options: IsISSNOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isISSN")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isIdentityCard(value: js.Any, locale: IdentityCardLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentityCard")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isIn(value: js.Any, possibleValues: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIn")(value.asInstanceOf[js.Any], possibleValues.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isInstance(`object`: js.Any, targetTypeConstructor: Instantiable1[/* args (repeated) */ js.Any, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(`object`.asInstanceOf[js.Any], targetTypeConstructor.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isInt(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInt")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isJSON(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSON")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isJWT(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJWT")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isLatLong(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLatLong")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isLatitude(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLatitude")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isLocale(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocale")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isLongitude(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLongitude")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isLowercase(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLowercase")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isMACAddress(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMACAddress")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isMACAddress(value: js.Any, options: IsMACAddressOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMACAddress")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isMagnetURI(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMagnetURI")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isMilitaryTime(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMilitaryTime")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isMimeType(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMimeType")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isMobilePhone(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMobilePhone")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isMobilePhone(value: js.Any, locale: Unit, options: IsMobilePhoneOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMobilePhone")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isMobilePhone(value: js.Any, locale: MobilePhoneLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMobilePhone")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isMobilePhone(value: js.Any, locale: MobilePhoneLocale, options: IsMobilePhoneOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMobilePhone")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isMongoId(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMongoId")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isMultibyte(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultibyte")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isNegative(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNegative")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isNotEmpty(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isNotEmptyObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotEmptyObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isNotIn(value: js.Any, possibleValues: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotIn")(value.asInstanceOf[js.Any], possibleValues.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isNumber(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isNumber(value: js.Any, options: IsNumberOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isNumberString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumberString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isNumberString(value: js.Any, options: IsNumericOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumberString")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isObject(value: js.Any): /* is object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is object */ Boolean]
+  
+  @scala.inline
+  def isOctal(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOctal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPassportNumber(value: js.Any, countryCode: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPassportNumber")(value.asInstanceOf[js.Any], countryCode.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPhoneNumber(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhoneNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isPhoneNumber(value: String, region: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPhoneNumber")(value.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPort(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPort")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPositive(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositive")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPostalCode(value: js.Any, locale: PostalCodeLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPostalCode")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isRFC3339(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRFC3339")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isRgbColor(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRgbColor")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isRgbColor(value: js.Any, includePercentValues: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRgbColor")(value.asInstanceOf[js.Any], includePercentValues.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isSemVer(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSemVer")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isString(value: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+  
+  @scala.inline
+  def isSurrogatePair(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSurrogatePair")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isURL(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isURL")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isURL(value: String, options: IsURLOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isURL")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isUUID(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUUID")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isUUID(value: js.Any, version: UUIDVersion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isUUID")(value.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isUppercase(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUppercase")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isVariableWidth(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariableWidth")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def length(value: js.Any, min: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("length")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def length(value: js.Any, min: Double, max: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("length")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def matches(value: String, pattern: String, modifiers: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def matches(value: String, pattern: RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def max(num: js.Any, max: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(num.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def maxDate(date: js.Any, maxDate: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("maxDate")(date.asInstanceOf[js.Any], maxDate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def maxLength(value: js.Any, max: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("maxLength")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def min(num: js.Any, min: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(num.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def minDate(date: js.Any, minDate: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("minDate")(date.asInstanceOf[js.Any], minDate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def minLength(value: js.Any, min: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("minLength")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def notContains(value: js.Any, seed: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("notContains")(value.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def notEquals(value: js.Any, comparison: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("notEquals")(value.asInstanceOf[js.Any], comparison.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

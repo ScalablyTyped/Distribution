@@ -10,7 +10,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lassoMod {
@@ -23,12 +22,11 @@ object lassoMod {
   
   type Callback = js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[js.Any], js.Any]
   
-  @js.native
   trait CustomPlugin extends StObject {
     
-    var config: js.Any = js.native
+    var config: js.Any
     
-    var plugin: String = js.native
+    var plugin: String
   }
   object CustomPlugin {
     
@@ -85,18 +83,18 @@ object lassoMod {
     
     var lassoCacheLookup: js.Any = js.native
     
-    def lassoPage(options: PageConfig): js.Promise[_] = js.native
+    def lassoPage(options: PageConfig): js.Promise[js.Any] = js.native
     def lassoPage(
       options: PageConfig,
       callback: js.Function2[/* err */ Error | Null, /* result */ LassoPageResult, Unit]
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     @JSName("lassoPage")
     var lassoPage_Original: LassoPage = js.native
     
     def lassoResource(path: String): Unit = js.native
-    def lassoResource(path: String, options: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
     def lassoResource(path: String, options: js.Any): Unit = js.native
     def lassoResource(path: String, options: js.Any, callback: Callback): Unit = js.native
+    def lassoResource(path: String, options: Unit, callback: Callback): Unit = js.native
     @JSName("lassoResource")
     var lassoResource_Original: LassoResource = js.native
     
@@ -107,48 +105,47 @@ object lassoMod {
     var writer_Original: typings.lasso.writersMod.Writer = js.native
   }
   
-  @js.native
   trait LassoConfig extends StObject {
     
-    var baseDir: js.UndefOr[String] = js.native
+    var baseDir: js.UndefOr[String] = js.undefined
     
-    var bundles: js.UndefOr[js.Array[Bundle]] = js.native
+    var bundles: js.UndefOr[js.Array[Bundle]] = js.undefined
     
-    var bundlingEnabled: js.UndefOr[Boolean] = js.native
+    var bundlingEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var cspNonceProvider: js.UndefOr[js.Function1[/* out */ js.Any, String]] = js.native
+    var cspNonceProvider: js.UndefOr[js.Function1[/* out */ js.Any, String]] = js.undefined
     
-    var fingerprintInlineCode: js.UndefOr[js.Function1[/* code */ js.Any, String]] = js.native
+    var fingerprintInlineCode: js.UndefOr[js.Function1[/* code */ js.Any, String]] = js.undefined
     
-    var fingerprintsEnabled: js.UndefOr[Boolean] = js.native
+    var fingerprintsEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var includeSlotNames: js.UndefOr[Boolean] = js.native
+    var includeSlotNames: js.UndefOr[Boolean] = js.undefined
     
-    var minify: js.UndefOr[Boolean] = js.native
+    var minify: js.UndefOr[Boolean] = js.undefined
     
-    var minifyCSS: js.UndefOr[Boolean] = js.native
+    var minifyCSS: js.UndefOr[Boolean] = js.undefined
     
-    var minifyInlineCSSOnly: js.UndefOr[Boolean] = js.native
+    var minifyInlineCSSOnly: js.UndefOr[Boolean] = js.undefined
     
-    var minifyInlineJSOnly: js.UndefOr[Boolean] = js.native
+    var minifyInlineJSOnly: js.UndefOr[Boolean] = js.undefined
     
-    var minifyInlineOnly: js.UndefOr[Boolean] = js.native
+    var minifyInlineOnly: js.UndefOr[Boolean] = js.undefined
     
-    var minifyJS: js.UndefOr[Boolean] = js.native
+    var minifyJS: js.UndefOr[Boolean] = js.undefined
     
-    var noConflict: js.UndefOr[String] = js.native
+    var noConflict: js.UndefOr[String] = js.undefined
     
-    var outputDir: js.UndefOr[String] = js.native
+    var outputDir: js.UndefOr[String] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[CustomPlugin | String]] = js.native
+    var plugins: js.UndefOr[js.Array[CustomPlugin | String]] = js.undefined
     
-    var relativeUrlsEnabled: js.UndefOr[Boolean] = js.native
+    var relativeUrlsEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var require: js.UndefOr[js.Any] = js.native
+    var require: js.UndefOr[js.Any] = js.undefined
     
-    var resolveCssUrls: js.UndefOr[Boolean] = js.native
+    var resolveCssUrls: js.UndefOr[Boolean] = js.undefined
     
-    var urlPrefix: js.UndefOr[String] = js.native
+    var urlPrefix: js.UndefOr[String] = js.undefined
   }
   object LassoConfig {
     
@@ -302,36 +299,35 @@ object lassoMod {
     Unit
   ]
   
-  @js.native
   trait PageConfig extends StObject {
     
-    var cache: js.UndefOr[js.Any] = js.native
+    var cache: js.UndefOr[js.Any] = js.undefined
     
-    var cacheKey: js.UndefOr[String] = js.native
+    var cacheKey: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var dependencies: (js.Array[DependencyConfig | String]) | String | Null = js.native
+    var dependencies: (js.Array[DependencyConfig | String]) | String | Null
     
-    var flags: js.UndefOr[js.Array[String]] = js.native
+    var flags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var lassoContext: js.UndefOr[typings.lasso.lassoContextMod.default] = js.native
+    var lassoContext: js.UndefOr[typings.lasso.lassoContextMod.default] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var packagePath: js.UndefOr[String] = js.native
+    var packagePath: js.UndefOr[String] = js.undefined
     
-    var packagePaths: js.UndefOr[js.Array[String]] = js.native
+    var packagePaths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var pageName: js.UndefOr[String] = js.native
+    var pageName: js.UndefOr[String] = js.undefined
   }
   object PageConfig {
     
     @scala.inline
     def apply(): PageConfig = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(dependencies = null)
       __obj.asInstanceOf[PageConfig]
     }
     

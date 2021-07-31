@@ -2,10 +2,8 @@ package typings.ionicCore.stencilPublicRuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait PropOptions extends StObject {
     * Stencil uses different heuristics to determine the default name of the attribute,
     * but using this property, you can override the default behaviour.
     */
-  var attribute: js.UndefOr[String | Null] = js.native
+  var attribute: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A Prop is _by default_ immutable from inside the component logic.
@@ -21,13 +19,13 @@ trait PropOptions extends StObject {
     * However, it's possible to explicitly allow a Prop to be mutated from inside the component,
     * by setting this `mutable` option to `true`.
     */
-  var mutable: js.UndefOr[Boolean] = js.native
+  var mutable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * In some cases it may be useful to keep a Prop in sync with an attribute.
     * In this case you can set the `reflect` option to `true`, since it defaults to `false`:
     */
-  var reflect: js.UndefOr[Boolean] = js.native
+  var reflect: js.UndefOr[Boolean] = js.undefined
 }
 object PropOptions {
   

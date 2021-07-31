@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageEditorMessages extends StObject {
   
-  var common: js.UndefOr[ImageEditorMessagesCommon] = js.native
+  var common: js.UndefOr[ImageEditorMessagesCommon] = js.undefined
   
-  var panes: js.UndefOr[ImageEditorMessagesPanes] = js.native
+  var panes: js.UndefOr[ImageEditorMessagesPanes] = js.undefined
   
-  var toolbar: js.UndefOr[ImageEditorMessagesToolbar] = js.native
+  var toolbar: js.UndefOr[ImageEditorMessagesToolbar] = js.undefined
 }
 object ImageEditorMessages {
   

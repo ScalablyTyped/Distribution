@@ -9,14 +9,15 @@ import typings.nodeStreamZip.nodeStreamZipStrings.extract
 import typings.nodeStreamZip.nodeStreamZipStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("node-stream-zip", JSImport.Namespace)
   @js.native
-  class ^ protected () extends StreamZip {
+  class ^ protected ()
+    extends StObject
+       with StreamZip {
     def this(config: StreamZipOptions) = this()
   }
   
@@ -77,40 +78,39 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait StreamZipOptions extends StObject {
     
     /**
       * Filesystem read chunk size
       * @default automatic based on file size
       */
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Alternatively, you can pass fd here
       * @default undefined
       */
-    var fd: js.UndefOr[Double] = js.native
+    var fd: js.UndefOr[Double] = js.undefined
     
     /**
       * File to read
       * @default undefined
       */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /**
       * By default, entry name is checked for malicious characters, like ../ or c:\123,
       * pass this flag to disable validation error
       * @default false
       */
-    var skipEntryNameValidation: js.UndefOr[Boolean] = js.native
+    var skipEntryNameValidation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * You will be able to work with entries inside zip archive,
       * otherwise the only way to access them is entry event
       * @default true
       */
-    var storeEntries: js.UndefOr[Boolean] = js.native
+    var storeEntries: js.UndefOr[Boolean] = js.undefined
   }
   object StreamZipOptions {
     
@@ -155,93 +155,92 @@ object mod {
     }
   }
   
-  @js.native
   trait ZipEntry extends StObject {
     
     /**
       * external file attributes
       */
-    var attr: Double = js.native
+    var attr: Double
     
     /**
       * file comment
       */
-    var comment: String = js.native
+    var comment: String
     
     /**
       * compressed size
       */
-    var compressedSize: Double = js.native
+    var compressedSize: Double
     
     /**
       * uncompressed file crc-32 value
       */
-    var crc: Double = js.native
+    var crc: Double
     
     /**
       * volume number start
       */
-    var diskStart: Double = js.native
+    var diskStart: Double
     
     /**
       * if the file is encrypted
       */
-    var encrypted: Boolean = js.native
+    var encrypted: Boolean
     
     /**
       * encrypt, decrypt flags
       */
-    var flags: Double = js.native
+    var flags: Double
     
     /**
       * internal file attributes
       */
-    var inattr: Double = js.native
+    var inattr: Double
     
     /**
       * true if it's a directory entry
       */
-    var isDirectory: Boolean = js.native
+    var isDirectory: Boolean
     
     /**
       * true if it's a file entry, see also isDirectory
       */
-    var isFile: Boolean = js.native
+    var isFile: Boolean
     
     /**
       * compression method
       */
-    var method: Double = js.native
+    var method: Double
     
     /**
       * file name
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * LOC header offset
       */
-    var offset: Double = js.native
+    var offset: Double
     
     /**
       * uncompressed size
       */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * modification time
       */
-    var time: Double = js.native
+    var time: Double
     
     /**
       * version made by
       */
-    var verMade: Double = js.native
+    var verMade: Double
     
     /**
       * version needed to extract
       */
-    var version: Double = js.native
+    var version: Double
   }
   object ZipEntry {
     

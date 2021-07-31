@@ -10,9 +10,9 @@ correct invalid SPDX expressions
 | ------------------ | :-------------: |
 | Full name          | spdx-correct |
 | Keywords           | SPDX, law, legal, license, metadata |
-| # releases         | 5 |
-| # dependents       | 107 |
-| # downloads        | 573151339 |
+| # releases         | 2 |
+| # dependents       | 145 |
+| # downloads        | 703005280 |
 | # stars            | 0 |
 
 ## Links

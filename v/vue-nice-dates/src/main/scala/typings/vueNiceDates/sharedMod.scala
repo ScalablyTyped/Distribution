@@ -5,37 +5,35 @@ import typings.dateFns.mod.Locale
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sharedMod {
   
   type DateLocale = Locale
   
-  @js.native
   trait DatePickerProps extends StObject {
     
-    var date: String = js.native
+    var date: String
     
-    var enableGridSwitch: Boolean = js.native
+    var enableGridSwitch: Boolean
     
-    var format: String = js.native
+    var format: String
     
-    var initialDate: js.UndefOr[Date] = js.native
+    var initialDate: js.UndefOr[Date] = js.undefined
     
-    var isFocus: Boolean = js.native
+    var isFocus: Boolean
     
-    var locale: DateLocale = js.native
+    var locale: DateLocale
     
-    var maximumDate: Date | Null = js.native
+    var maximumDate: Date | Null
     
-    var minimumDate: Date | Null = js.native
+    var minimumDate: Date | Null
     
-    var modifiers: Modifiers = js.native
+    var modifiers: Modifiers
     
-    var modifiersClassNames: ModifiersClassNames = js.native
+    var modifiersClassNames: ModifiersClassNames
     
-    var validator: StringDictionary[js.Function1[/* date */ Date, Boolean]] = js.native
+    var validator: StringDictionary[js.Function1[/* date */ Date, Boolean]]
   }
   object DatePickerProps {
     
@@ -50,7 +48,7 @@ object sharedMod {
       modifiersClassNames: ModifiersClassNames,
       validator: StringDictionary[js.Function1[/* date */ Date, Boolean]]
     ): DatePickerProps = {
-      val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], enableGridSwitch = enableGridSwitch.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], isFocus = isFocus.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], modifiersClassNames = modifiersClassNames.asInstanceOf[js.Any], validator = validator.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], enableGridSwitch = enableGridSwitch.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], isFocus = isFocus.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], modifiersClassNames = modifiersClassNames.asInstanceOf[js.Any], validator = validator.asInstanceOf[js.Any], maximumDate = null, minimumDate = null)
       __obj.asInstanceOf[DatePickerProps]
     }
     
@@ -101,34 +99,33 @@ object sharedMod {
     }
   }
   
-  @js.native
   trait DateRangePickerProps extends StObject {
     
-    var enableGridSwitch: Boolean = js.native
+    var enableGridSwitch: Boolean
     
-    var endDate: String = js.native
+    var endDate: String
     
-    var focusName: String = js.native
+    var focusName: String
     
-    var format: String = js.native
+    var format: String
     
-    var initialDate: js.UndefOr[Date] = js.native
+    var initialDate: js.UndefOr[Date] = js.undefined
     
-    var isFocus: Boolean = js.native
+    var isFocus: Boolean
     
-    var locale: DateLocale = js.native
+    var locale: DateLocale
     
-    var maximumDate: Date | Null = js.native
+    var maximumDate: Date | Null
     
-    var minimumDate: Date | Null = js.native
+    var minimumDate: Date | Null
     
-    var modifiers: Modifiers = js.native
+    var modifiers: Modifiers
     
-    var modifiersClassNames: ModifiersClassNames = js.native
+    var modifiersClassNames: ModifiersClassNames
     
-    var startDate: String = js.native
+    var startDate: String
     
-    var validator: StringDictionary[js.Function1[/* date */ Date, Boolean]] = js.native
+    var validator: StringDictionary[js.Function1[/* date */ Date, Boolean]]
   }
   object DateRangePickerProps {
     
@@ -145,7 +142,7 @@ object sharedMod {
       startDate: String,
       validator: StringDictionary[js.Function1[/* date */ Date, Boolean]]
     ): DateRangePickerProps = {
-      val __obj = js.Dynamic.literal(enableGridSwitch = enableGridSwitch.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], focusName = focusName.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], isFocus = isFocus.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], modifiersClassNames = modifiersClassNames.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], validator = validator.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(enableGridSwitch = enableGridSwitch.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], focusName = focusName.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], isFocus = isFocus.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], modifiersClassNames = modifiersClassNames.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], validator = validator.asInstanceOf[js.Any], maximumDate = null, minimumDate = null)
       __obj.asInstanceOf[DateRangePickerProps]
     }
     

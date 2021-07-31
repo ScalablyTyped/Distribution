@@ -2,14 +2,12 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The spec for modifying the path before sending the request to the matched
   * backend service.
   */
-@js.native
 trait SchemaUrlRewrite extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SchemaUrlRewrite extends StObject {
     * request&#39;s host header is replaced with contents of hostRewrite. The
     * value must be between 1 and 255 characters.
     */
-  var hostRewrite: js.UndefOr[String] = js.native
+  var hostRewrite: js.UndefOr[String] = js.undefined
   
   /**
     * Prior to forwarding the request to the selected backend service, the
     * matching portion of the request&#39;s path is replaced by
     * pathPrefixRewrite. The value must be between 1 and 1024 characters.
     */
-  var pathPrefixRewrite: js.UndefOr[String] = js.native
+  var pathPrefixRewrite: js.UndefOr[String] = js.undefined
 }
 object SchemaUrlRewrite {
   

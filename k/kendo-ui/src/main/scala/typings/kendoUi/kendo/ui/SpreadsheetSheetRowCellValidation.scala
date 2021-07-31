@@ -2,29 +2,27 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpreadsheetSheetRowCellValidation extends StObject {
   
-  var allowNulls: js.UndefOr[Boolean] = js.native
+  var allowNulls: js.UndefOr[Boolean] = js.undefined
   
-  var comparerType: js.UndefOr[String] = js.native
+  var comparerType: js.UndefOr[String] = js.undefined
   
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
-  var messageTemplate: js.UndefOr[String] = js.native
+  var messageTemplate: js.UndefOr[String] = js.undefined
   
-  var showButton: js.UndefOr[Boolean] = js.native
+  var showButton: js.UndefOr[Boolean] = js.undefined
   
-  var titleTemplate: js.UndefOr[String] = js.native
+  var titleTemplate: js.UndefOr[String] = js.undefined
   
-  var to: js.UndefOr[String] = js.native
+  var to: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SpreadsheetSheetRowCellValidation {
   

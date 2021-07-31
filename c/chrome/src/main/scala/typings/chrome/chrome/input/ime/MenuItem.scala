@@ -2,29 +2,27 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuItem extends StObject {
   
   /** Indicates this item should be drawn with a check. */
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates this item is enabled. */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /** String that will be passed to callbacks referencing this MenuItem. */
-  var id: String = js.native
+  var id: String
   
   /** Optional. Text displayed in the menu for this item. */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /** Optional. The type of menu item. */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /** Optional. Indicates this item is visible. */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object MenuItem {
   

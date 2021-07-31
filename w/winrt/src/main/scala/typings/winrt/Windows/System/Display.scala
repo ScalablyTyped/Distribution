@@ -2,13 +2,13 @@ package typings.winrt.Windows.System
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Display {
   
-  @js.native
-  trait DisplayRequest extends IDisplayRequest
+  trait DisplayRequest
+    extends StObject
+       with IDisplayRequest
   object DisplayRequest {
     
     @scala.inline
@@ -18,12 +18,11 @@ object Display {
     }
   }
   
-  @js.native
   trait IDisplayRequest extends StObject {
     
-    def requestActive(): Unit = js.native
+    def requestActive(): Unit
     
-    def requestRelease(): Unit = js.native
+    def requestRelease(): Unit
   }
   object IDisplayRequest {
     

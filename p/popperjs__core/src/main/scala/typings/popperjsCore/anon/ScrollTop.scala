@@ -2,15 +2,13 @@ package typings.popperjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollTop extends StObject {
   
-  var scrollLeft: js.Any = js.native
+  var scrollLeft: js.Any
   
-  var scrollTop: js.Any = js.native
+  var scrollTop: js.Any
 }
 object ScrollTop {
   

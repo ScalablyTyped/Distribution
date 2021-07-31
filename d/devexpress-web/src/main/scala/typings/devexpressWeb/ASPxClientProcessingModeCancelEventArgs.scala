@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the cancelable client-side events which allow the event's processing to be passed to the server side.
   */
-@js.native
-trait ASPxClientProcessingModeCancelEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientProcessingModeCancelEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets or sets a value indicating whether the action which raised the event should be canceled.
     */
-  var cancel: Boolean = js.native
+  var cancel: Boolean
 }
 object ASPxClientProcessingModeCancelEventArgs {
   

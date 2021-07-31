@@ -3,14 +3,15 @@ package typings.ipfsHttpServer
 import typings.ipfsHttpServer.anon.DebuggererrorDebugger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("ipfs-http-server/dist/src", JSImport.Namespace)
   @js.native
-  class ^ protected () extends HttpApi {
+  class ^ protected ()
+    extends StObject
+       with HttpApi {
     def this(ipfs: js.Any) = this()
     def this(ipfs: js.Any, options: js.Object) = this()
   }
@@ -18,9 +19,9 @@ object mod {
   @js.native
   trait HttpApi extends StObject {
     
-    var _apiServers: js.UndefOr[js.Array[_]] = js.native
+    var _apiServers: js.UndefOr[js.Array[js.Any]] = js.native
     
-    def _createApiServer(host: js.Any, port: js.Any, ipfs: js.Any, cors: js.Any): js.Promise[_] = js.native
+    def _createApiServer(host: js.Any, port: js.Any, ipfs: js.Any, cors: js.Any): js.Promise[js.Any] = js.native
     
     var _ipfs: js.Any = js.native
     

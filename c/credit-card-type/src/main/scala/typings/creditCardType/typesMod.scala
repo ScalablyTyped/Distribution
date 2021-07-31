@@ -15,22 +15,22 @@ import typings.creditCardType.creditCardTypeStrings.unionpay_
 import typings.creditCardType.creditCardTypeStrings.visa_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
-  trait BuiltInCreditCardType extends CreditCardType {
+  trait BuiltInCreditCardType
+    extends StObject
+       with CreditCardType {
     
     @JSName("code")
-    var code_BuiltInCreditCardType: Size = js.native
+    var code_BuiltInCreditCardType: Size
     
     @JSName("niceType")
-    var niceType_BuiltInCreditCardType: CreditCardTypeCardBrandNiceType = js.native
+    var niceType_BuiltInCreditCardType: CreditCardTypeCardBrandNiceType
     
     @JSName("type")
-    var type_BuiltInCreditCardType: CreditCardTypeCardBrandId = js.native
+    var type_BuiltInCreditCardType: CreditCardTypeCardBrandId
   }
   object BuiltInCreditCardType {
     
@@ -64,22 +64,21 @@ object typesMod {
   
   type CardCollection = StringDictionary[CreditCardType]
   
-  @js.native
   trait CreditCardType extends StObject {
     
-    var code: Name = js.native
+    var code: Name
     
-    var gaps: js.Array[Double] = js.native
+    var gaps: js.Array[Double]
     
-    var lengths: js.Array[Double] = js.native
+    var lengths: js.Array[Double]
     
-    var matchStrength: js.UndefOr[Double] = js.native
+    var matchStrength: js.UndefOr[Double] = js.undefined
     
-    var niceType: String = js.native
+    var niceType: String
     
-    var patterns: js.Array[js.Array[Double] | Double] = js.native
+    var patterns: js.Array[js.Array[Double] | Double]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object CreditCardType {
     

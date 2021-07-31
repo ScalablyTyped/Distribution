@@ -6,15 +6,16 @@ import typings.koa.mod.Middleware
 import typings.koaCacheControl.anon.MaxAge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(options: MaxAge): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  
   @JSImport("koa-cache-control", JSImport.Namespace)
   @js.native
-  def apply(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-cache-control", JSImport.Namespace)
-  @js.native
-  def apply(options: MaxAge): Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : js.Any = js.native
 }

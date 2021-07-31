@@ -10,9 +10,9 @@ Parses set-cookie headers into objects
 | ------------------ | :-------------: |
 | Full name          | set-cookie-parser |
 | Keywords           | set-cookie, set, cookie, cookies, header, parser |
-| # releases         | 10 |
-| # dependents       | 87 |
-| # downloads        | 7067954 |
+| # releases         | 8 |
+| # dependents       | 104 |
+| # downloads        | 13253125 |
 | # stars            | 1 |
 
 ## Links

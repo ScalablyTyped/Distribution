@@ -2,38 +2,36 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * One delta entry for Binding. Each individual change (only one member in
   * each entry) to a binding will be a separate entry.
   */
-@js.native
 trait SchemaBindingDelta extends StObject {
   
   /**
     * The action that was performed on a Binding. Required
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * Unimplemented. The condition that is associated with this binding. This
     * field is logged only for Cloud Audit Logging.
     */
-  var condition: js.UndefOr[SchemaExpr] = js.native
+  var condition: js.UndefOr[SchemaExpr] = js.undefined
   
   /**
     * A single identity requesting access for a Cloud Platform resource.
     * Follows the same format of Binding.members. Required
     */
-  var member: js.UndefOr[String] = js.native
+  var member: js.UndefOr[String] = js.undefined
   
   /**
     * Role that is assigned to `members`. For example, `roles/viewer`,
     * `roles/editor`, or `roles/owner`. Required
     */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object SchemaBindingDelta {
   

@@ -3,20 +3,18 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata entries that can be attached to a `Device`. To learn more, read
   * [Device metadata](/zero-touch/guides/metadata).
   */
-@js.native
 trait SchemaDeviceMetadata extends StObject {
   
   /**
     * Metadata entries recorded as key-value pairs.
     */
-  var entries: js.UndefOr[StringDictionary[String]] = js.native
+  var entries: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaDeviceMetadata {
   

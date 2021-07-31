@@ -2,70 +2,68 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelBuilder extends StObject {
   
-  def button(): ComponentBuilder[ButtonComponent] = js.native
+  def button(): ComponentBuilder[ButtonComponent]
   
   /**
     * @deprecated please use radioCardGroup component.
     */
-  def card(): ComponentBuilder[CardComponent] = js.native
+  def card(): ComponentBuilder[CardComponent]
   
-  def checkBox(): ComponentBuilder[CheckBoxComponent] = js.native
+  def checkBox(): ComponentBuilder[CheckBoxComponent]
   
-  def dashboardWebview(webviewId: String): ComponentBuilder[DashboardWebviewComponent] = js.native
+  def dashboardWebview(webviewId: String): ComponentBuilder[DashboardWebviewComponent]
   
-  def dashboardWidget(widgetId: String): ComponentBuilder[DashboardWidgetComponent] = js.native
+  def dashboardWidget(widgetId: String): ComponentBuilder[DashboardWidgetComponent]
   
-  def declarativeTable(): ComponentBuilder[DeclarativeTableComponent] = js.native
+  def declarativeTable(): ComponentBuilder[DeclarativeTableComponent]
   
-  def diffeditor(): ComponentBuilder[DiffEditorComponent] = js.native
+  def diffeditor(): ComponentBuilder[DiffEditorComponent]
   
-  def divContainer(): DivBuilder = js.native
+  def divContainer(): DivBuilder
   
-  def dom(): ComponentBuilder[DomComponent] = js.native
+  def dom(): ComponentBuilder[DomComponent]
   
-  def dropDown(): ComponentBuilder[DropDownComponent] = js.native
+  def dropDown(): ComponentBuilder[DropDownComponent]
   
-  def editor(): ComponentBuilder[EditorComponent] = js.native
+  def editor(): ComponentBuilder[EditorComponent]
   
-  def fileBrowserTree(): ComponentBuilder[FileBrowserTreeComponent] = js.native
+  def fileBrowserTree(): ComponentBuilder[FileBrowserTreeComponent]
   
-  def flexContainer(): FlexBuilder = js.native
+  def flexContainer(): FlexBuilder
   
-  def formContainer(): FormBuilder = js.native
+  def formContainer(): FormBuilder
   
-  def groupContainer(): GroupBuilder = js.native
+  def groupContainer(): GroupBuilder
   
-  def hyperlink(): ComponentBuilder[HyperlinkComponent] = js.native
+  def hyperlink(): ComponentBuilder[HyperlinkComponent]
   
-  def image(): ComponentBuilder[ImageComponent] = js.native
+  def image(): ComponentBuilder[ImageComponent]
   
-  def inputBox(): ComponentBuilder[InputBoxComponent] = js.native
+  def inputBox(): ComponentBuilder[InputBoxComponent]
   
-  def listBox(): ComponentBuilder[ListBoxComponent] = js.native
+  def listBox(): ComponentBuilder[ListBoxComponent]
   
-  def loadingComponent(): LoadingComponentBuilder = js.native
+  def loadingComponent(): LoadingComponentBuilder
   
-  def navContainer(): ContainerBuilder[NavContainer, _, _] = js.native
+  def navContainer(): ContainerBuilder[NavContainer, js.Any, js.Any]
   
-  def radioButton(): ComponentBuilder[RadioButtonComponent] = js.native
+  def radioButton(): ComponentBuilder[RadioButtonComponent]
   
-  def splitViewContainer(): SplitViewBuilder = js.native
+  def splitViewContainer(): SplitViewBuilder
   
-  def table(): ComponentBuilder[TableComponent] = js.native
+  def table(): ComponentBuilder[TableComponent]
   
-  def text(): ComponentBuilder[TextComponent] = js.native
+  def text(): ComponentBuilder[TextComponent]
   
-  def toolbarContainer(): ToolbarBuilder = js.native
+  def toolbarContainer(): ToolbarBuilder
   
-  def tree[T](): ComponentBuilder[TreeComponent[T]] = js.native
+  def tree[T](): ComponentBuilder[TreeComponent[T]]
   
-  def webView(): ComponentBuilder[WebViewComponent] = js.native
+  def webView(): ComponentBuilder[WebViewComponent]
 }
 object ModelBuilder {
   
@@ -91,7 +89,7 @@ object ModelBuilder {
     inputBox: () => ComponentBuilder[InputBoxComponent],
     listBox: () => ComponentBuilder[ListBoxComponent],
     loadingComponent: () => LoadingComponentBuilder,
-    navContainer: () => ContainerBuilder[NavContainer, _, _],
+    navContainer: () => ContainerBuilder[NavContainer, js.Any, js.Any],
     radioButton: () => ComponentBuilder[RadioButtonComponent],
     splitViewContainer: () => SplitViewBuilder,
     table: () => ComponentBuilder[TableComponent],
@@ -168,7 +166,7 @@ object ModelBuilder {
     def setLoadingComponent(value: () => LoadingComponentBuilder): Self = StObject.set(x, "loadingComponent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNavContainer(value: () => ContainerBuilder[NavContainer, _, _]): Self = StObject.set(x, "navContainer", js.Any.fromFunction0(value))
+    def setNavContainer(value: () => ContainerBuilder[NavContainer, js.Any, js.Any]): Self = StObject.set(x, "navContainer", js.Any.fromFunction0(value))
     
     @scala.inline
     def setRadioButton(value: () => ComponentBuilder[RadioButtonComponent]): Self = StObject.set(x, "radioButton", js.Any.fromFunction0(value))

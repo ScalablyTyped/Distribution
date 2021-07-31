@@ -2,24 +2,22 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response of getting account information.
   */
-@js.native
 trait SchemaGetAccountInfoResponse extends StObject {
   
   /**
     * The fixed string &quot;identitytoolkit#GetAccountInfoResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The info of the users.
     */
-  var users: js.UndefOr[js.Array[SchemaUserInfo]] = js.native
+  var users: js.UndefOr[js.Array[SchemaUserInfo]] = js.undefined
 }
 object SchemaGetAccountInfoResponse {
   

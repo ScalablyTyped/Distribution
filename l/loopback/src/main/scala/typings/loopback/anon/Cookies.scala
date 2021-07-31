@@ -2,27 +2,25 @@ package typings.loopback.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cookies extends StObject {
   
-  var cookies: js.UndefOr[js.Array[_]] = js.native
+  var cookies: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var currentUserLiteral: js.UndefOr[String] = js.native
+  var currentUserLiteral: js.UndefOr[String] = js.undefined
   
-  var enableDoublecheck: js.UndefOr[Boolean] = js.native
+  var enableDoublecheck: js.UndefOr[Boolean] = js.undefined
   
-  var headers: js.UndefOr[js.Array[_]] = js.native
+  var headers: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var model: js.UndefOr[js.Function0[Unit | String]] = js.native
+  var model: js.UndefOr[js.Function0[Unit | String]] = js.undefined
   
-  var overwriteExistingToken: js.UndefOr[Boolean] = js.native
+  var overwriteExistingToken: js.UndefOr[Boolean] = js.undefined
   
-  var params: js.UndefOr[js.Array[_]] = js.native
+  var params: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var searchDefaultTokenKeys: js.UndefOr[Boolean] = js.native
+  var searchDefaultTokenKeys: js.UndefOr[Boolean] = js.undefined
 }
 object Cookies {
   
@@ -36,7 +34,7 @@ object Cookies {
   implicit class CookiesMutableBuilder[Self <: Cookies] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCookies(value: js.Array[_]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    def setCookies(value: js.Array[js.Any]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
@@ -57,7 +55,7 @@ object Cookies {
     def setEnableDoublecheckUndefined: Self = StObject.set(x, "enableDoublecheck", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Array[_]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
@@ -78,7 +76,7 @@ object Cookies {
     def setOverwriteExistingTokenUndefined: Self = StObject.set(x, "overwriteExistingToken", js.undefined)
     
     @scala.inline
-    def setParams(value: js.Array[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

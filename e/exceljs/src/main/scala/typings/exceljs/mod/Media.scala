@@ -2,26 +2,25 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Media extends StObject {
   
-  var buffer: Buffer = js.native
+  var buffer: Buffer
   
-  var extension: String = js.native
+  var `extension`: String
   
   // image,background
-  var name: String = js.native
+  var name: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Media {
   
   @scala.inline
-  def apply(buffer: Buffer, extension: String, name: String, `type`: String): Media = {
-    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(buffer: Buffer, `extension`: String, name: String, `type`: String): Media = {
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Media]
   }

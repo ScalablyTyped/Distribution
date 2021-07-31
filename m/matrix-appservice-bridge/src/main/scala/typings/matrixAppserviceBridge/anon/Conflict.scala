@@ -3,15 +3,13 @@ package typings.matrixAppserviceBridge.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Conflict extends StObject {
   
-  var conflict: js.Array[RegExp] = js.native
+  var conflict: js.Array[RegExp]
   
-  var exempt: js.Array[RegExp] = js.native
+  var exempt: js.Array[RegExp]
 }
 object Conflict {
   

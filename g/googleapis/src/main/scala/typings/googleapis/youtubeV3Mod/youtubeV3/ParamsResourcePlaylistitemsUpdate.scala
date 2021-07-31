@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePlaylistitemsUpdate extends StandardParameters {
+trait ParamsResourcePlaylistitemsUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -29,7 +29,7 @@ trait ParamsResourcePlaylistitemsUpdate extends StandardParameters {
     * channel. The CMS account that the user authenticates with must be linked
     * to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter serves two purposes in this operation. It identifies
@@ -46,12 +46,12 @@ trait ParamsResourcePlaylistitemsUpdate extends StandardParameters {
     * does not specify values, the existing start and end times will be removed
     * and replaced with the default settings.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaPlaylistItem] = js.native
+  var requestBody: js.UndefOr[SchemaPlaylistItem] = js.undefined
 }
 object ParamsResourcePlaylistitemsUpdate {
   

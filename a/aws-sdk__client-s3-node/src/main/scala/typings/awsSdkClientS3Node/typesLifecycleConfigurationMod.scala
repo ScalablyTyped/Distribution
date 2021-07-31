@@ -5,18 +5,16 @@ import typings.awsSdkClientS3Node.typesRuleMod.UnmarshalledRule
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesLifecycleConfigurationMod {
   
-  @js.native
   trait LifecycleConfiguration extends StObject {
     
     /**
       * _Rules shape
       */
-    var Rules: js.Array[Rule] | Iterable[Rule] = js.native
+    var Rules: js.Array[Rule] | Iterable[Rule]
   }
   object LifecycleConfiguration {
     
@@ -37,14 +35,15 @@ object typesLifecycleConfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledLifecycleConfiguration extends LifecycleConfiguration {
+  trait UnmarshalledLifecycleConfiguration
+    extends StObject
+       with LifecycleConfiguration {
     
     /**
       * _Rules shape
       */
     @JSName("Rules")
-    var Rules_UnmarshalledLifecycleConfiguration: js.Array[UnmarshalledRule] = js.native
+    var Rules_UnmarshalledLifecycleConfiguration: js.Array[UnmarshalledRule]
   }
   object UnmarshalledLifecycleConfiguration {
     

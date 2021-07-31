@@ -2,25 +2,23 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AUDFJD extends StObject {
   
-  var AUD: js.Array[String] = js.native
+  var AUD: js.Array[String]
   
-  var FJD: js.Array[js.UndefOr[String]] = js.native
+  var FJD: js.Array[js.UndefOr[String]]
   
-  var JPY: js.Array[String] = js.native
+  var JPY: js.Array[String]
   
-  var NZD: js.Array[String] = js.native
+  var NZD: js.Array[String]
   
-  var SBD: js.Array[js.UndefOr[String]] = js.native
+  var SBD: js.Array[js.UndefOr[String]]
   
-  var TOP: js.Array[String] = js.native
+  var TOP: js.Array[String]
   
-  var USD: js.Array[String] = js.native
+  var USD: js.Array[String]
 }
 object AUDFJD {
   

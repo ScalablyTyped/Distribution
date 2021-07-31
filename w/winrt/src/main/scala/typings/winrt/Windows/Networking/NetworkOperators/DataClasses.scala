@@ -2,7 +2,6 @@ package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,47 +11,77 @@ sealed trait DataClasses extends StObject
 object DataClasses extends StObject {
   
   @js.native
-  sealed trait cdma1xEvdo extends DataClasses
+  sealed trait cdma1xEvdo
+    extends StObject
+       with DataClasses
   
   @js.native
-  sealed trait cdma1xEvdoRevA extends DataClasses
+  sealed trait cdma1xEvdoRevA
+    extends StObject
+       with DataClasses
   
   @js.native
-  sealed trait cdma1xEvdoRevB extends DataClasses
+  sealed trait cdma1xEvdoRevB
+    extends StObject
+       with DataClasses
   
   @js.native
-  sealed trait cdma1xEvdv extends DataClasses
+  sealed trait cdma1xEvdv
+    extends StObject
+       with DataClasses
   
   @js.native
-  sealed trait cdma1xRtt extends DataClasses
+  sealed trait cdma1xRtt
+    extends StObject
+       with DataClasses
   
   @js.native
-  sealed trait cdma3xRtt extends DataClasses
+  sealed trait cdma3xRtt
+    extends StObject
+       with DataClasses
   
   @js.native
-  sealed trait cdmaUmb extends DataClasses
+  sealed trait cdmaUmb
+    extends StObject
+       with DataClasses
   
   @js.native
-  sealed trait custom extends DataClasses
+  sealed trait custom
+    extends StObject
+       with DataClasses
   
   @js.native
-  sealed trait edge extends DataClasses
+  sealed trait edge
+    extends StObject
+       with DataClasses
   
   @js.native
-  sealed trait gprs extends DataClasses
+  sealed trait gprs
+    extends StObject
+       with DataClasses
   
   @js.native
-  sealed trait hsdpa extends DataClasses
+  sealed trait hsdpa
+    extends StObject
+       with DataClasses
   
   @js.native
-  sealed trait hsupa extends DataClasses
+  sealed trait hsupa
+    extends StObject
+       with DataClasses
   
   @js.native
-  sealed trait lteAdvanced extends DataClasses
+  sealed trait lteAdvanced
+    extends StObject
+       with DataClasses
   
   @js.native
-  sealed trait none extends DataClasses
+  sealed trait none
+    extends StObject
+       with DataClasses
   
   @js.native
-  sealed trait umts extends DataClasses
+  sealed trait umts
+    extends StObject
+       with DataClasses
 }

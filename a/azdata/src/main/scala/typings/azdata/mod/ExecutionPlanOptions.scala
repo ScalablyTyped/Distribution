@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionPlanOptions extends StObject {
   
-  var displayActualQueryPlan: js.UndefOr[Boolean] = js.native
+  var displayActualQueryPlan: js.UndefOr[Boolean] = js.undefined
   
-  var displayEstimatedQueryPlan: js.UndefOr[Boolean] = js.native
+  var displayEstimatedQueryPlan: js.UndefOr[Boolean] = js.undefined
 }
 object ExecutionPlanOptions {
   

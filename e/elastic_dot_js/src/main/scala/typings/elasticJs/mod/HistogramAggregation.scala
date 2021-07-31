@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "HistogramAggregation")
 @js.native
-class HistogramAggregation protected () extends Aggregation {
+class HistogramAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Aggregation that can be applied on numeric values extracted from the
     documents.

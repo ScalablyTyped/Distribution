@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientFile.gapi.client.file
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DenyMaintenancePeriod extends StObject {
   
   /**
     * Deny period end date. This can be: * A full date, with non-zero year, month and day values. * A month and day value, with a zero year. Allows recurring deny periods each year. Date
     * matching this period will have to be before the end.
     */
-  var endDate: js.UndefOr[Date] = js.native
+  var endDate: js.UndefOr[Date] = js.undefined
   
   /**
     * Deny period start date. This can be: * A full date, with non-zero year, month and day values. * A month and day value, with a zero year. Allows recurring deny periods each year.
     * Date matching this period will have to be the same or after the start.
     */
-  var startDate: js.UndefOr[Date] = js.native
+  var startDate: js.UndefOr[Date] = js.undefined
   
   /** Time in UTC when the Blackout period starts on start_date and ends on end_date. This can be: * Full time. * All zeros for 00:00:00 UTC */
-  var time: js.UndefOr[TimeOfDay] = js.native
+  var time: js.UndefOr[TimeOfDay] = js.undefined
 }
 object DenyMaintenancePeriod {
   

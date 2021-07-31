@@ -4,29 +4,27 @@ import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.IItemStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is triggered whenever an entity uses an item.
   */
-@js.native
 trait IEntityUseItemEventData extends StObject {
   
   /**
     * The entity who is using the item
     */
-  var entity: IEntity = js.native
+  var entity: IEntity
   
   /**
     * The item that is being used
     */
-  var item_stack: IItemStack = js.native
+  var item_stack: IItemStack
   
   /**
     * The way the entity used the item
     */
-  var use_method: String = js.native
+  var use_method: String
 }
 object IEntityUseItemEventData {
   

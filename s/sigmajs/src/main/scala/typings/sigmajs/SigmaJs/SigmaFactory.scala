@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SigmaFactory
-  extends Instantiable0[Sigma]
+  extends StObject
+     with Instantiable0[Sigma]
      with Instantiable1[
       (/* container */ Element) | (/* configuration */ SigmaConfigs) | (/* container */ String), 
       Sigma

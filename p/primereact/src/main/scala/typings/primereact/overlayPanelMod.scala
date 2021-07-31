@@ -7,7 +7,6 @@ import typings.std.Event
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlayPanelMod {
@@ -30,24 +29,23 @@ object overlayPanelMod {
     def toggle(event: SyntheticEvent[Element, Event]): Unit = js.native
   }
   
-  @js.native
   trait OverlayPanelProps extends StObject {
     
-    var appendTo: js.UndefOr[js.Any] = js.native
+    var appendTo: js.UndefOr[js.Any] = js.undefined
     
-    var ariaCloseLabel: js.UndefOr[String] = js.native
+    var ariaCloseLabel: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dismissable: js.UndefOr[Boolean] = js.native
+    var dismissable: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var onHide: js.UndefOr[js.Function0[Unit]] = js.native
+    var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var showCloseIcon: js.UndefOr[Boolean] = js.native
+    var showCloseIcon: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object OverlayPanelProps {
     

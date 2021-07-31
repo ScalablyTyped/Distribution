@@ -53,19 +53,19 @@ import typings.plotlyJs.plotlyJsStrings.tozero
 import typings.plotlyJs.plotlyJsStrings.trace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneAxis extends Axis {
+trait SceneAxis
+  extends StObject
+     with Axis {
   
-  var backgroundcolor: Color = js.native
+  var backgroundcolor: Color
   
-  var showaxeslabels: Boolean = js.native
+  var showaxeslabels: Boolean
   
-  var showbackground: Boolean = js.native
+  var showbackground: Boolean
   
-  var spikesides: Boolean = js.native
+  var spikesides: Boolean
 }
 object SceneAxis {
   
@@ -74,7 +74,7 @@ object SceneAxis {
     autorange: `true` | `false` | reversed,
     backgroundcolor: Color,
     calendar: Calendar,
-    categoryarray: js.Array[_],
+    categoryarray: js.Array[js.Any],
     categoryorder: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`),
     color: Color,
     dividercolor: Color,
@@ -89,7 +89,7 @@ object SceneAxis {
     linewidth: Double,
     mirror: `true` | ticks | `false` | all | allticks,
     nticks: Double,
-    range: js.Array[_],
+    range: js.Array[js.Any],
     rangemode: normal | tozero | nonnegative,
     separatethousands: Boolean,
     showaxeslabels: Boolean,
@@ -120,7 +120,7 @@ object SceneAxis {
     ticks: outside | inside | _empty,
     ticksuffix: String,
     ticktext: js.Array[String],
-    tickvals: js.Array[_],
+    tickvals: js.Array[js.Any],
     tickwidth: Double,
     title: String | PartialDataTitleFont,
     titlefont: PartialFont,

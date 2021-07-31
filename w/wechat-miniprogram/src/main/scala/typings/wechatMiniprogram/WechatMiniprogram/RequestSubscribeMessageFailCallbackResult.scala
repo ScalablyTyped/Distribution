@@ -2,17 +2,15 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestSubscribeMessageFailCallbackResult extends StObject {
   
   /** 接口调用失败错误码 */
-  var errCode: Double = js.native
+  var errCode: Double
   
   /** 接口调用失败错误信息 */
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object RequestSubscribeMessageFailCallbackResult {
   

@@ -8,68 +8,66 @@ import typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuil
 import typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution.BuildBazelRemoteExecutionV2WaitExecutionRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accesstoken extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** The hash. In the case of SHA-256, it will always be a lowercase hex string exactly 64 characters long. */
-    var hash: String = js.native
+    var hash: String
     
     /** A hint to the server to inline the contents of the listed output files. Each path needs to exactly match one path in `output_files` in the Command message. */
-    var inlineOutputFiles: js.UndefOr[String | js.Array[String]] = js.native
+    var inlineOutputFiles: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** A hint to the server to request inlining stderr in the ActionResult message. */
-    var inlineStderr: js.UndefOr[Boolean] = js.native
+    var inlineStderr: js.UndefOr[Boolean] = js.undefined
     
     /** A hint to the server to request inlining stdout in the ActionResult message. */
-    var inlineStdout: js.UndefOr[Boolean] = js.native
+    var inlineStdout: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The instance of the execution system to operate against. A server may support multiple instances of the execution system (with their own workers, storage, caches, etc.). The
       * server MAY require use of this field to select between them in an implementation-defined fashion, otherwise it can be omitted.
       */
-    var instanceName: String = js.native
+    var instanceName: String
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** The size of the blob, in bytes. */
-    var sizeBytes: String = js.native
+    var sizeBytes: String
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Accesstoken {
     
@@ -180,48 +178,47 @@ object anon {
     }
   }
   
-  @js.native
   trait Alt extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** The hash. In the case of SHA-256, it will always be a lowercase hex string exactly 64 characters long. */
-    var hash: String = js.native
+    var hash: String
     
     /**
       * The instance of the execution system to operate against. A server may support multiple instances of the execution system (with their own workers, storage, caches, etc.). The
       * server MAY require use of this field to select between them in an implementation-defined fashion, otherwise it can be omitted.
       */
-    var instanceName: String = js.native
+    var instanceName: String
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: BuildBazelRemoteExecutionV2ActionResult = js.native
+    var resource: BuildBazelRemoteExecutionV2ActionResult
     
     /**
       * The priority (relative importance) of this content in the overall cache. Generally, a lower value means a longer retention time or other advantage, but the interpretation of a
@@ -229,16 +226,16 @@ object anon {
       * server will have their own supported range of priorities, and will decide how these map into retention/eviction policy.
       */
     @JSName("resultsCachePolicy.priority")
-    var resultsCachePolicyDotpriority: js.UndefOr[Double] = js.native
+    var resultsCachePolicyDotpriority: js.UndefOr[Double] = js.undefined
     
     /** The size of the blob, in bytes. */
-    var sizeBytes: String = js.native
+    var sizeBytes: String
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Alt {
     
@@ -342,45 +339,44 @@ object anon {
     }
   }
   
-  @js.native
   trait Callback extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** The hash. In the case of SHA-256, it will always be a lowercase hex string exactly 64 characters long. */
-    var hash: String = js.native
+    var hash: String
     
     /**
       * The instance of the execution system to operate against. A server may support multiple instances of the execution system (with their own workers, storage, caches, etc.). The
       * server MAY require use of this field to select between them in an implementation-defined fashion, otherwise it can be omitted.
       */
-    var instanceName: String = js.native
+    var instanceName: String
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /**
       * The priority (relative importance) of this content in the overall cache. Generally, a lower value means a longer retention time or other advantage, but the interpretation of a
@@ -388,16 +384,16 @@ object anon {
       * server will have their own supported range of priorities, and will decide how these map into retention/eviction policy.
       */
     @JSName("resultsCachePolicy.priority")
-    var resultsCachePolicyDotpriority: js.UndefOr[Double] = js.native
+    var resultsCachePolicyDotpriority: js.UndefOr[Double] = js.undefined
     
     /** The size of the blob, in bytes. */
-    var sizeBytes: String = js.native
+    var sizeBytes: String
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Callback {
     
@@ -493,51 +489,50 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /**
       * The instance of the execution system to operate against. A server may support multiple instances of the execution system (with their own workers, storage, caches, etc.). The
       * server MAY require use of this field to select between them in an implementation-defined fashion, otherwise it can be omitted.
       */
-    var instanceName: String = js.native
+    var instanceName: String
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: BuildBazelRemoteExecutionV2ExecuteRequest = js.native
+    var resource: BuildBazelRemoteExecutionV2ExecuteRequest
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Fields {
     
@@ -624,66 +619,65 @@ object anon {
     }
   }
   
-  @js.native
   trait Hash extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** The hash. In the case of SHA-256, it will always be a lowercase hex string exactly 64 characters long. */
-    var hash: String = js.native
+    var hash: String
     
     /**
       * The instance of the execution system to operate against. A server may support multiple instances of the execution system (with their own workers, storage, caches, etc.). The
       * server MAY require use of this field to select between them in an implementation-defined fashion, otherwise it can be omitted.
       */
-    var instanceName: String = js.native
+    var instanceName: String
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /**
       * A maximum page size to request. If present, the server will request no more than this many items. Regardless of whether a page size is specified, the server may place its own
       * limit on the number of items to be returned and require the client to retrieve more items using a subsequent request.
       */
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
     /**
       * A page token, which must be a value received in a previous GetTreeResponse. If present, the server will use that token as an offset, returning only that page and the ones that
       * succeed it.
       */
-    var pageToken: js.UndefOr[String] = js.native
+    var pageToken: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** The size of the blob, in bytes. */
-    var sizeBytes: String = js.native
+    var sizeBytes: String
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Hash {
     
@@ -785,48 +779,47 @@ object anon {
     }
   }
   
-  @js.native
   trait InstanceName extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /**
       * The instance of the execution system to operate against. A server may support multiple instances of the execution system (with their own workers, storage, caches, etc.). The
       * server MAY require use of this field to select between them in an implementation-defined fashion, otherwise it can be omitted.
       */
-    var instanceName: String = js.native
+    var instanceName: String
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object InstanceName {
     
@@ -910,51 +903,50 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /**
       * The instance of the execution system to operate against. A server may support multiple instances of the execution system (with their own workers, storage, caches, etc.). The
       * server MAY require use of this field to select between them in an implementation-defined fashion, otherwise it can be omitted.
       */
-    var instanceName: String = js.native
+    var instanceName: String
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: BuildBazelRemoteExecutionV2BatchReadBlobsRequest = js.native
+    var resource: BuildBazelRemoteExecutionV2BatchReadBlobsRequest
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Key {
     
@@ -1041,48 +1033,47 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** The name of the Operation returned by Execute. */
-    var name: String = js.native
+    var name: String
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: BuildBazelRemoteExecutionV2WaitExecutionRequest = js.native
+    var resource: BuildBazelRemoteExecutionV2WaitExecutionRequest
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Name {
     
@@ -1169,51 +1160,50 @@ object anon {
     }
   }
   
-  @js.native
   trait Oauthtoken extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /**
       * The instance of the execution system to operate against. A server may support multiple instances of the execution system (with their own workers, storage, caches, etc.). The
       * server MAY require use of this field to select between them in an implementation-defined fashion, otherwise it can be omitted.
       */
-    var instanceName: String = js.native
+    var instanceName: String
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest = js.native
+    var resource: BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Oauthtoken {
     
@@ -1300,51 +1290,50 @@ object anon {
     }
   }
   
-  @js.native
   trait PrettyPrint extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /**
       * The instance of the execution system to operate against. A server may support multiple instances of the execution system (with their own workers, storage, caches, etc.). The
       * server MAY require use of this field to select between them in an implementation-defined fashion, otherwise it can be omitted.
       */
-    var instanceName: String = js.native
+    var instanceName: String
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: BuildBazelRemoteExecutionV2FindMissingBlobsRequest = js.native
+    var resource: BuildBazelRemoteExecutionV2FindMissingBlobsRequest
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object PrettyPrint {
     
@@ -1431,45 +1420,44 @@ object anon {
     }
   }
   
-  @js.native
   trait QuotaUser extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** The name of the Operation returned by Execute. */
-    var name: String = js.native
+    var name: String
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object QuotaUser {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveFlowSourceRequest extends StObject {
   
   /**
     * The flow that you want to remove a source from.
     */
-  var FlowArn: string = js.native
+  var FlowArn: string
   
   /**
     * The ARN of the source that you want to remove.
     */
-  var SourceArn: string = js.native
+  var SourceArn: string
 }
 object RemoveFlowSourceRequest {
   

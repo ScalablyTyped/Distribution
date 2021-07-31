@@ -5,7 +5,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -151,7 +150,7 @@ trait GanttStatic extends StObject {
     * @param name the event's name, case-insensitive
     * @param params an array of the event-related data
     */
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   /**
     * repaints the lighbox for the task according to its type
@@ -358,11 +357,11 @@ trait GanttStatic extends StObject {
     * @param master optional, the object, that 'this'  will refer to
     */
   def eachTask(code: GanttCallback): Unit = js.native
-  def eachTask(code: GanttCallback, parent: js.UndefOr[scala.Nothing], master: js.Any): Unit = js.native
   def eachTask(code: GanttCallback, parent: String): Unit = js.native
   def eachTask(code: GanttCallback, parent: String, master: js.Any): Unit = js.native
   def eachTask(code: GanttCallback, parent: Double): Unit = js.native
   def eachTask(code: GanttCallback, parent: Double, master: js.Any): Unit = js.native
+  def eachTask(code: GanttCallback, parent: Unit, master: js.Any): Unit = js.native
   
   /**
     * a set of flags which describe current environment
@@ -444,7 +443,7 @@ trait GanttStatic extends StObject {
   /**
     * returns all dependency loops in the chart
     */
-  def findCycles(): js.Array[_] = js.native
+  def findCycles(): js.Array[js.Any] = js.native
   
   /**
     * sets focus on the gantt
@@ -461,14 +460,14 @@ trait GanttStatic extends StObject {
   /**
     * gets all the calendars added into Gantt
     */
-  def getCalendars(): js.Array[_] = js.native
+  def getCalendars(): js.Array[js.Any] = js.native
   
   /**
     * returns the 1st-level child tasks of the specified parent branch
     * @param id the parent branch's id
     */
-  def getChildren(id: String): js.Array[_] = js.native
-  def getChildren(id: Double): js.Array[_] = js.native
+  def getChildren(id: String): js.Array[js.Any] = js.native
+  def getChildren(id: Double): js.Array[js.Any] = js.native
   
   /**
     * returns the closest working time
@@ -518,7 +517,7 @@ trait GanttStatic extends StObject {
   /**
     * gets columns of the Gantt chart
     */
-  def getGridColumns(): js.Array[_] = js.native
+  def getGridColumns(): js.Array[js.Any] = js.native
   
   /**
     * gets the label of a select control in the lightbox
@@ -576,7 +575,7 @@ trait GanttStatic extends StObject {
   /**
     * returns all links presented in the Gantt chart
     */
-  def getLinks(): js.Array[_] = js.native
+  def getLinks(): js.Array[js.Any] = js.native
   
   /**
     * gets the marker's object
@@ -622,14 +621,14 @@ trait GanttStatic extends StObject {
   /**
     * returns the stack of stored redo user actions
     */
-  def getRedoStack(): js.Array[_] = js.native
+  def getRedoStack(): js.Array[js.Any] = js.native
   
   /**
     * returns all tasks assigned to the resource
     * @param resourceId the id of the resource
     */
-  def getResourceAssignments(resourceId: String): js.Array[_] = js.native
-  def getResourceAssignments(resourceId: Double): js.Array[_] = js.native
+  def getResourceAssignments(resourceId: String): js.Array[js.Any] = js.native
+  def getResourceAssignments(resourceId: Double): js.Array[js.Any] = js.native
   
   /**
     * returns the configuration of the time scale
@@ -649,7 +648,7 @@ trait GanttStatic extends StObject {
   /**
     * returns an array of the currently selected tasks
     */
-  def getSelectedTasks(): js.Array[_] = js.native
+  def getSelectedTasks(): js.Array[js.Any] = js.native
   
   /**
     * gets a key navigation shortcut handler
@@ -662,8 +661,8 @@ trait GanttStatic extends StObject {
     * returns siblings of the specified  task (including itself)
     * @param id the task id
     */
-  def getSiblings(id: String): js.Array[_] = js.native
-  def getSiblings(id: Double): js.Array[_] = js.native
+  def getSiblings(id: String): js.Array[js.Any] = js.native
+  def getSiblings(id: Double): js.Array[js.Any] = js.native
   
   /**
     * checks how much time (in the current duration unit) a task has before it starts to affect other tasks
@@ -705,8 +704,8 @@ trait GanttStatic extends StObject {
     * @param propertyName the name of the property to match, or a filter function
     * @param propertyValue the property value
     */
-  def getTaskBy(propertyName: String, propertyValue: js.Any): js.Array[_] = js.native
-  def getTaskBy(propertyName: GanttCallback, propertyValue: js.Any): js.Array[_] = js.native
+  def getTaskBy(propertyName: String, propertyValue: js.Any): js.Array[js.Any] = js.native
+  def getTaskBy(propertyName: GanttCallback, propertyValue: js.Any): js.Array[js.Any] = js.native
   
   /**
     * returns a task by its index
@@ -719,10 +718,10 @@ trait GanttStatic extends StObject {
     * @param from optional, the start date of the period
     * @param to optional, the end date of the period
     */
-  def getTaskByTime(): js.Array[_] = js.native
-  def getTaskByTime(from: js.UndefOr[scala.Nothing], to: Date): js.Array[_] = js.native
-  def getTaskByTime(from: Date): js.Array[_] = js.native
-  def getTaskByTime(from: Date, to: Date): js.Array[_] = js.native
+  def getTaskByTime(): js.Array[js.Any] = js.native
+  def getTaskByTime(from: Unit, to: Date): js.Array[js.Any] = js.native
+  def getTaskByTime(from: Date): js.Array[js.Any] = js.native
+  def getTaskByTime(from: Date, to: Date): js.Array[js.Any] = js.native
   
   /**
     * returns a task by its WBS code
@@ -797,7 +796,7 @@ trait GanttStatic extends StObject {
   /**
     * returns the stack of stored undo user actions
     */
-  def getUndoStack(): js.Array[_] = js.native
+  def getUndoStack(): js.Array[js.Any] = js.native
   
   /**
     * gets the number of tasks visible on the screen (those that are not collapsed)
@@ -814,7 +813,7 @@ trait GanttStatic extends StObject {
     * returns the working hours of the specified date
     * @param date a date to check
     */
-  def getWorkHours(date: Date): js.Array[_] = js.native
+  def getWorkHours(date: Date): js.Array[js.Any] = js.native
   
   /**
     * groups tasks by the specified task's attribute
@@ -865,11 +864,11 @@ trait GanttStatic extends StObject {
     * @param to optional, the end value of the time scale (X&ndash;Axis)
     */
   def init(container: String): Unit = js.native
-  def init(container: String, from: js.UndefOr[scala.Nothing], to: Date): Unit = js.native
+  def init(container: String, from: Unit, to: Date): Unit = js.native
   def init(container: String, from: Date): Unit = js.native
   def init(container: String, from: Date, to: Date): Unit = js.native
   def init(container: HTMLElement): Unit = js.native
-  def init(container: HTMLElement, from: js.UndefOr[scala.Nothing], to: Date): Unit = js.native
+  def init(container: HTMLElement, from: Unit, to: Date): Unit = js.native
   def init(container: HTMLElement, from: Date): Unit = js.native
   def init(container: HTMLElement, from: Date, to: Date): Unit = js.native
   
@@ -989,9 +988,9 @@ trait GanttStatic extends StObject {
     * @param callback optional, the callback function
     */
   def load(url: String): Unit = js.native
-  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: GanttCallback): Unit = js.native
   def load(url: String, `type`: String): Unit = js.native
   def load(url: String, `type`: String, callback: GanttCallback): Unit = js.native
+  def load(url: String, `type`: Unit, callback: GanttCallback): Unit = js.native
   
   /**
     * a locale object (region-specific labels) of the Gantt chart
@@ -1178,8 +1177,8 @@ trait GanttStatic extends StObject {
     * @param list_name the name of a list
     * @param options optional, an array of options
     */
-  def serverList(list_name: String): js.Array[_] = js.native
-  def serverList(list_name: String, options: js.Array[_]): js.Array[_] = js.native
+  def serverList(list_name: String): js.Array[js.Any] = js.native
+  def serverList(list_name: String, options: js.Array[js.Any]): js.Array[js.Any] = js.native
   
   def setParent(task: String, pid: String): Unit = js.native
   def setParent(task: String, pid: Double): Unit = js.native
@@ -1254,34 +1253,29 @@ trait GanttStatic extends StObject {
     * @param silent optional, specifies whether rendering should be invoked after reordering items
     */
   def sort(field: String): Unit = js.native
-  def sort(field: String, desc: js.UndefOr[scala.Nothing], parent: js.UndefOr[scala.Nothing], silent: Boolean): Unit = js.native
-  def sort(field: String, desc: js.UndefOr[scala.Nothing], parent: String): Unit = js.native
-  def sort(field: String, desc: js.UndefOr[scala.Nothing], parent: String, silent: Boolean): Unit = js.native
-  def sort(field: String, desc: js.UndefOr[scala.Nothing], parent: Double): Unit = js.native
-  def sort(field: String, desc: js.UndefOr[scala.Nothing], parent: Double, silent: Boolean): Unit = js.native
   def sort(field: String, desc: Boolean): Unit = js.native
-  def sort(field: String, desc: Boolean, parent: js.UndefOr[scala.Nothing], silent: Boolean): Unit = js.native
   def sort(field: String, desc: Boolean, parent: String): Unit = js.native
   def sort(field: String, desc: Boolean, parent: String, silent: Boolean): Unit = js.native
   def sort(field: String, desc: Boolean, parent: Double): Unit = js.native
   def sort(field: String, desc: Boolean, parent: Double, silent: Boolean): Unit = js.native
+  def sort(field: String, desc: Boolean, parent: Unit, silent: Boolean): Unit = js.native
+  def sort(field: String, desc: Unit, parent: String): Unit = js.native
+  def sort(field: String, desc: Unit, parent: String, silent: Boolean): Unit = js.native
+  def sort(field: String, desc: Unit, parent: Double): Unit = js.native
+  def sort(field: String, desc: Unit, parent: Double, silent: Boolean): Unit = js.native
+  def sort(field: String, desc: Unit, parent: Unit, silent: Boolean): Unit = js.native
   def sort(field: GanttCallback): Unit = js.native
-  def sort(
-    field: GanttCallback,
-    desc: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[scala.Nothing],
-    silent: Boolean
-  ): Unit = js.native
-  def sort(field: GanttCallback, desc: js.UndefOr[scala.Nothing], parent: String): Unit = js.native
-  def sort(field: GanttCallback, desc: js.UndefOr[scala.Nothing], parent: String, silent: Boolean): Unit = js.native
-  def sort(field: GanttCallback, desc: js.UndefOr[scala.Nothing], parent: Double): Unit = js.native
-  def sort(field: GanttCallback, desc: js.UndefOr[scala.Nothing], parent: Double, silent: Boolean): Unit = js.native
   def sort(field: GanttCallback, desc: Boolean): Unit = js.native
-  def sort(field: GanttCallback, desc: Boolean, parent: js.UndefOr[scala.Nothing], silent: Boolean): Unit = js.native
   def sort(field: GanttCallback, desc: Boolean, parent: String): Unit = js.native
   def sort(field: GanttCallback, desc: Boolean, parent: String, silent: Boolean): Unit = js.native
   def sort(field: GanttCallback, desc: Boolean, parent: Double): Unit = js.native
   def sort(field: GanttCallback, desc: Boolean, parent: Double, silent: Boolean): Unit = js.native
+  def sort(field: GanttCallback, desc: Boolean, parent: Unit, silent: Boolean): Unit = js.native
+  def sort(field: GanttCallback, desc: Unit, parent: String): Unit = js.native
+  def sort(field: GanttCallback, desc: Unit, parent: String, silent: Boolean): Unit = js.native
+  def sort(field: GanttCallback, desc: Unit, parent: Double): Unit = js.native
+  def sort(field: GanttCallback, desc: Unit, parent: Double, silent: Boolean): Unit = js.native
+  def sort(field: GanttCallback, desc: Unit, parent: Unit, silent: Boolean): Unit = js.native
   
   /**
     * defines formatting templates for dates, titles, tooltips in the Gantt chart
@@ -1324,7 +1318,7 @@ trait GanttStatic extends StObject {
     * @param collection the name of the collection to update
     * @param options the new values of the collection
     */
-  def updateCollection(collection: String, options: js.Array[_]): Boolean = js.native
+  def updateCollection(collection: String, options: js.Array[js.Any]): Boolean = js.native
   
   /**
     * updates the specified dependency link

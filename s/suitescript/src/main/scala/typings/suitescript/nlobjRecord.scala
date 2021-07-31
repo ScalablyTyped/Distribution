@@ -3,7 +3,6 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait nlobjRecord
-  extends /**
+  extends StObject
+     with /**
   *
   * @return
   */
@@ -576,25 +576,13 @@ Instantiable0[js.Any] {
   def setCurrentLineItemMatrixValue(group: String, name: String, column: js.Any, value: String): js.Any = js.native
   
   def setCurrentLineItemText(group: String, name: String, value: String): Unit = js.native
-  def setCurrentLineItemText(
-    group: String,
-    name: String,
-    value: String,
-    firefieldchanged: js.UndefOr[scala.Nothing],
-    synchronous: Boolean
-  ): Unit = js.native
   def setCurrentLineItemText(group: String, name: String, value: String, firefieldchanged: Boolean): Unit = js.native
   def setCurrentLineItemText(group: String, name: String, value: String, firefieldchanged: Boolean, synchronous: Boolean): Unit = js.native
+  def setCurrentLineItemText(group: String, name: String, value: String, firefieldchanged: Unit, synchronous: Boolean): Unit = js.native
   def setCurrentLineItemText(group: String, name: String, value: Double): Unit = js.native
-  def setCurrentLineItemText(
-    group: String,
-    name: String,
-    value: Double,
-    firefieldchanged: js.UndefOr[scala.Nothing],
-    synchronous: Boolean
-  ): Unit = js.native
   def setCurrentLineItemText(group: String, name: String, value: Double, firefieldchanged: Boolean): Unit = js.native
   def setCurrentLineItemText(group: String, name: String, value: Double, firefieldchanged: Boolean, synchronous: Boolean): Unit = js.native
+  def setCurrentLineItemText(group: String, name: String, value: Double, firefieldchanged: Unit, synchronous: Boolean): Unit = js.native
   
   /**
     * Set the current value of a sublist field.
@@ -613,25 +601,13 @@ Instantiable0[js.Any] {
     * @return
     */
   def setCurrentLineItemValue(group: String, name: String, value: String): Unit = js.native
-  def setCurrentLineItemValue(
-    group: String,
-    name: String,
-    value: String,
-    firefieldchanged: js.UndefOr[scala.Nothing],
-    synchronous: Boolean
-  ): Unit = js.native
   def setCurrentLineItemValue(group: String, name: String, value: String, firefieldchanged: Boolean): Unit = js.native
   def setCurrentLineItemValue(group: String, name: String, value: String, firefieldchanged: Boolean, synchronous: Boolean): Unit = js.native
+  def setCurrentLineItemValue(group: String, name: String, value: String, firefieldchanged: Unit, synchronous: Boolean): Unit = js.native
   def setCurrentLineItemValue(group: String, name: String, value: Double): Unit = js.native
-  def setCurrentLineItemValue(
-    group: String,
-    name: String,
-    value: Double,
-    firefieldchanged: js.UndefOr[scala.Nothing],
-    synchronous: Boolean
-  ): Unit = js.native
   def setCurrentLineItemValue(group: String, name: String, value: Double, firefieldchanged: Boolean): Unit = js.native
   def setCurrentLineItemValue(group: String, name: String, value: Double, firefieldchanged: Boolean, synchronous: Boolean): Unit = js.native
+  def setCurrentLineItemValue(group: String, name: String, value: Double, firefieldchanged: Unit, synchronous: Boolean): Unit = js.native
   
   /**
     * set the value of a field.
@@ -789,14 +765,12 @@ object nlobjRecord {
     /**
       *
       */
-    @js.native
     trait GetFieldRet extends StObject
     
     // nlobjRecord.prototype.getSubList.!ret
     /**
       *
       */
-    @js.native
     trait GetSubListRet extends StObject
     object GetSubListRet {
       
@@ -806,7 +780,6 @@ object nlobjRecord {
         /**
           *
           */
-        @js.native
         trait AddButtonRet extends StObject
       }
     }

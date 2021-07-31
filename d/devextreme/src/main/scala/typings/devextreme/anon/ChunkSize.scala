@@ -2,15 +2,13 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChunkSize extends StObject {
   
-  var chunkSize: js.UndefOr[Double] = js.native
+  var chunkSize: js.UndefOr[Double] = js.undefined
   
-  var maxFileSize: js.UndefOr[Double] = js.native
+  var maxFileSize: js.UndefOr[Double] = js.undefined
 }
 object ChunkSize {
   

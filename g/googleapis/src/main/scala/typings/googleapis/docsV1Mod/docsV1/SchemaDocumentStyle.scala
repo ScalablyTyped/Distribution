@@ -2,29 +2,27 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The style of the document.
   */
-@js.native
 trait SchemaDocumentStyle extends StObject {
   
   /**
     * The background of the document.
     */
-  var background: js.UndefOr[SchemaBackground] = js.native
+  var background: js.UndefOr[SchemaBackground] = js.undefined
   
   /**
     * The ID of the default footer. If not set, there is no default footer.
     */
-  var defaultFooterId: js.UndefOr[String] = js.native
+  var defaultFooterId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the default header. If not set, there is no default header.
     */
-  var defaultHeaderId: js.UndefOr[String] = js.native
+  var defaultHeaderId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the footer used only for even pages. The value of
@@ -32,7 +30,7 @@ trait SchemaDocumentStyle extends StObject {
     * default_footer_id or this value for the footer on even pages. If not set,
     * there is no even page footer.
     */
-  var evenPageFooterId: js.UndefOr[String] = js.native
+  var evenPageFooterId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the header used only for even pages. The value of
@@ -40,7 +38,7 @@ trait SchemaDocumentStyle extends StObject {
     * default_header_id or this value for the header on even pages. If not set,
     * there is no even page header.
     */
-  var evenPageHeaderId: js.UndefOr[String] = js.native
+  var evenPageHeaderId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the footer used only for the first page. If not set then a
@@ -49,7 +47,7 @@ trait SchemaDocumentStyle extends StObject {
     * default_footer_id or this value for the footer on the first page. If not
     * set, there is no first page footer.
     */
-  var firstPageFooterId: js.UndefOr[String] = js.native
+  var firstPageFooterId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the header used only for the first page. If not set then a
@@ -58,49 +56,49 @@ trait SchemaDocumentStyle extends StObject {
     * default_header_id or this value for the header on the first page. If not
     * set, there is no first page header.
     */
-  var firstPageHeaderId: js.UndefOr[String] = js.native
+  var firstPageHeaderId: js.UndefOr[String] = js.undefined
   
   /**
     * The bottom page margin.
     */
-  var marginBottom: js.UndefOr[SchemaDimension] = js.native
+  var marginBottom: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The left page margin.
     */
-  var marginLeft: js.UndefOr[SchemaDimension] = js.native
+  var marginLeft: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The right page margin.
     */
-  var marginRight: js.UndefOr[SchemaDimension] = js.native
+  var marginRight: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The top page margin.
     */
-  var marginTop: js.UndefOr[SchemaDimension] = js.native
+  var marginTop: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The page number from which to start counting the number of pages.
     */
-  var pageNumberStart: js.UndefOr[Double] = js.native
+  var pageNumberStart: js.UndefOr[Double] = js.undefined
   
   /**
     * The size of a page in the document.
     */
-  var pageSize: js.UndefOr[SchemaSize] = js.native
+  var pageSize: js.UndefOr[SchemaSize] = js.undefined
   
   /**
     * Indicates whether to use the even page header / footer IDs for the even
     * pages.
     */
-  var useEvenPageHeaderFooter: js.UndefOr[Boolean] = js.native
+  var useEvenPageHeaderFooter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to use the first page header / footer IDs for the first
     * page.
     */
-  var useFirstPageHeaderFooter: js.UndefOr[Boolean] = js.native
+  var useFirstPageHeaderFooter: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaDocumentStyle {
   

@@ -9,7 +9,6 @@ import typings.maximMazurokGapiClientFactchecktools.anon.Key
 import typings.maximMazurokGapiClientFactchecktools.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -26,20 +25,19 @@ object gapi {
         def search(request: Accesstoken): Request[GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimSearchResponse] = js.native
       }
       
-      @js.native
       trait GoogleFactcheckingFactchecktoolsV1alpha1Claim extends StObject {
         
         /** The date that the claim was made. */
-        var claimDate: js.UndefOr[String] = js.native
+        var claimDate: js.UndefOr[String] = js.undefined
         
         /** One or more reviews of this claim (namely, a fact-checking article). */
-        var claimReview: js.UndefOr[js.Array[GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview]] = js.native
+        var claimReview: js.UndefOr[js.Array[GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview]] = js.undefined
         
         /** A person or organization stating the claim. For instance, "John Doe". */
-        var claimant: js.UndefOr[String] = js.native
+        var claimant: js.UndefOr[String] = js.undefined
         
         /** The claim text. For instance, "Crime has doubled in the last 2 years." */
-        var text: js.UndefOr[String] = js.native
+        var text: js.UndefOr[String] = js.undefined
       }
       object GoogleFactcheckingFactchecktoolsV1alpha1Claim {
         
@@ -81,20 +79,19 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor extends StObject {
         
         /** Corresponds to `ClaimReview.itemReviewed.author.image`. */
-        var imageUrl: js.UndefOr[String] = js.native
+        var imageUrl: js.UndefOr[String] = js.undefined
         
         /** Corresponds to `ClaimReview.itemReviewed.author.jobTitle`. */
-        var jobTitle: js.UndefOr[String] = js.native
+        var jobTitle: js.UndefOr[String] = js.undefined
         
         /** A person or organization stating the claim. For instance, "John Doe". Corresponds to `ClaimReview.itemReviewed.author.name`. */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** Corresponds to `ClaimReview.itemReviewed.author.sameAs`. */
-        var sameAs: js.UndefOr[String] = js.native
+        var sameAs: js.UndefOr[String] = js.undefined
       }
       object GoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor {
         
@@ -133,26 +130,25 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleFactcheckingFactchecktoolsV1alpha1ClaimRating extends StObject {
         
         /** For numeric ratings, the best value possible in the scale from worst to best. Corresponds to `ClaimReview.reviewRating.bestRating`. */
-        var bestRating: js.UndefOr[Double] = js.native
+        var bestRating: js.UndefOr[Double] = js.undefined
         
         /** Corresponds to `ClaimReview.reviewRating.image`. */
-        var imageUrl: js.UndefOr[String] = js.native
+        var imageUrl: js.UndefOr[String] = js.undefined
         
         /** Corresponds to `ClaimReview.reviewRating.ratingExplanation`. */
-        var ratingExplanation: js.UndefOr[String] = js.native
+        var ratingExplanation: js.UndefOr[String] = js.undefined
         
         /** A numeric rating of this claim, in the range worstRating — bestRating inclusive. Corresponds to `ClaimReview.reviewRating.ratingValue`. */
-        var ratingValue: js.UndefOr[Double] = js.native
+        var ratingValue: js.UndefOr[Double] = js.undefined
         
         /** The truthfulness rating as a human-readible short word or phrase. Corresponds to `ClaimReview.reviewRating.alternateName`. */
-        var textualRating: js.UndefOr[String] = js.native
+        var textualRating: js.UndefOr[String] = js.undefined
         
         /** For numeric ratings, the worst value possible in the scale from worst to best. Corresponds to `ClaimReview.reviewRating.worstRating`. */
-        var worstRating: js.UndefOr[Double] = js.native
+        var worstRating: js.UndefOr[Double] = js.undefined
       }
       object GoogleFactcheckingFactchecktoolsV1alpha1ClaimRating {
         
@@ -203,26 +199,25 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview extends StObject {
         
         /** The language this review was written in. For instance, "en" or "de". */
-        var languageCode: js.UndefOr[String] = js.native
+        var languageCode: js.UndefOr[String] = js.undefined
         
         /** The publisher of this claim review. */
-        var publisher: js.UndefOr[GoogleFactcheckingFactchecktoolsV1alpha1Publisher] = js.native
+        var publisher: js.UndefOr[GoogleFactcheckingFactchecktoolsV1alpha1Publisher] = js.undefined
         
         /** The date the claim was reviewed. */
-        var reviewDate: js.UndefOr[String] = js.native
+        var reviewDate: js.UndefOr[String] = js.undefined
         
         /** Textual rating. For instance, "Mostly false". */
-        var textualRating: js.UndefOr[String] = js.native
+        var textualRating: js.UndefOr[String] = js.undefined
         
         /** The title of this claim review, if it can be determined. */
-        var title: js.UndefOr[String] = js.native
+        var title: js.UndefOr[String] = js.undefined
         
         /** The URL of this claim review. */
-        var url: js.UndefOr[String] = js.native
+        var url: js.UndefOr[String] = js.undefined
       }
       object GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview {
         
@@ -273,14 +268,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor extends StObject {
         
         /** Corresponds to `ClaimReview.author.image`. */
-        var imageUrl: js.UndefOr[String] = js.native
+        var imageUrl: js.UndefOr[String] = js.undefined
         
         /** Name of the organization that is publishing the fact check. Corresponds to `ClaimReview.author.name`. */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
       }
       object GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor {
         
@@ -307,38 +301,37 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup extends StObject {
         
         /**
           * A list of links to works in which this claim appears, aside from the one specified in `claim_first_appearance`. Corresponds to
           * `ClaimReview.itemReviewed[@type=Claim].appearance.url`.
           */
-        var claimAppearances: js.UndefOr[js.Array[String]] = js.native
+        var claimAppearances: js.UndefOr[js.Array[String]] = js.undefined
         
         /** Info about the author of this claim. */
-        var claimAuthor: js.UndefOr[GoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor] = js.native
+        var claimAuthor: js.UndefOr[GoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor] = js.undefined
         
         /** The date when the claim was made or entered public discourse. Corresponds to `ClaimReview.itemReviewed.datePublished`. */
-        var claimDate: js.UndefOr[String] = js.native
+        var claimDate: js.UndefOr[String] = js.undefined
         
         /** A link to a work in which this claim first appears. Corresponds to `ClaimReview.itemReviewed[@type=Claim].firstAppearance.url`. */
-        var claimFirstAppearance: js.UndefOr[String] = js.native
+        var claimFirstAppearance: js.UndefOr[String] = js.undefined
         
         /** The location where this claim was made. Corresponds to `ClaimReview.itemReviewed.name`. */
-        var claimLocation: js.UndefOr[String] = js.native
+        var claimLocation: js.UndefOr[String] = js.undefined
         
         /** A short summary of the claim being evaluated. Corresponds to `ClaimReview.claimReviewed`. */
-        var claimReviewed: js.UndefOr[String] = js.native
+        var claimReviewed: js.UndefOr[String] = js.undefined
         
         /** Info about the rating of this claim review. */
-        var rating: js.UndefOr[GoogleFactcheckingFactchecktoolsV1alpha1ClaimRating] = js.native
+        var rating: js.UndefOr[GoogleFactcheckingFactchecktoolsV1alpha1ClaimRating] = js.undefined
         
         /**
           * This field is optional, and will default to the page URL. We provide this field to allow you the override the default value, but the only permitted override is the page URL plus an
           * optional anchor link ("page jump"). Corresponds to `ClaimReview.url`
           */
-        var url: js.UndefOr[String] = js.native
+        var url: js.UndefOr[String] = js.undefined
       }
       object GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup {
         
@@ -404,32 +397,31 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage extends StObject {
         
         /** Info about the author of this claim review. Similar to the above, semantically these are page-level fields, and each `ClaimReview` on this page will contain the same values. */
-        var claimReviewAuthor: js.UndefOr[GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor] = js.native
+        var claimReviewAuthor: js.UndefOr[GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor] = js.undefined
         
         /** A list of individual claim reviews for this page. Each item in the list corresponds to one `ClaimReview` element. */
-        var claimReviewMarkups: js.UndefOr[js.Array[GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup]] = js.native
+        var claimReviewMarkups: js.UndefOr[js.Array[GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup]] = js.undefined
         
         /** The name of this `ClaimReview` markup page resource, in the form of `pages/{page_id}`. Except for update requests, this field is output-only and should not be set by the user. */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /**
           * The URL of the page associated with this `ClaimReview` markup. While every individual `ClaimReview` has its own URL field, semantically this is a page-level field, and each
           * `ClaimReview` on this page will use this value unless individually overridden. Corresponds to `ClaimReview.url`
           */
-        var pageUrl: js.UndefOr[String] = js.native
+        var pageUrl: js.UndefOr[String] = js.undefined
         
         /**
           * The date when the fact check was published. Similar to the URL, semantically this is a page-level field, and each `ClaimReview` on this page will contain the same value. Corresponds
           * to `ClaimReview.datePublished`
           */
-        var publishDate: js.UndefOr[String] = js.native
+        var publishDate: js.UndefOr[String] = js.undefined
         
         /** The version ID for this markup. Except for update requests, this field is output-only and should not be set by the user. */
-        var versionId: js.UndefOr[String] = js.native
+        var versionId: js.UndefOr[String] = js.undefined
       }
       object GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage {
         
@@ -483,14 +475,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimSearchResponse extends StObject {
         
         /** The list of claims and all of their associated information. */
-        var claims: js.UndefOr[js.Array[GoogleFactcheckingFactchecktoolsV1alpha1Claim]] = js.native
+        var claims: js.UndefOr[js.Array[GoogleFactcheckingFactchecktoolsV1alpha1Claim]] = js.undefined
         
         /** The next pagination token in the Search response. It should be used as the `page_token` for the following request. An empty value means no more results. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimSearchResponse {
         
@@ -520,14 +511,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse extends StObject {
         
         /** The result list of pages of `ClaimReview` markup. */
-        var claimReviewMarkupPages: js.UndefOr[js.Array[GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage]] = js.native
+        var claimReviewMarkupPages: js.UndefOr[js.Array[GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage]] = js.undefined
         
         /** The next pagination token in the Search response. It should be used as the `page_token` for the following request. An empty value means no more results. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object GoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse {
         
@@ -557,14 +547,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleFactcheckingFactchecktoolsV1alpha1Publisher extends StObject {
         
         /** The name of this publisher. For instance, "Awesome Fact Checks". */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** Host-level site name, without the protocol or "www" prefix. For instance, "awesomefactchecks.com". This value of this field is based purely on the claim review URL. */
-        var site: js.UndefOr[String] = js.native
+        var site: js.UndefOr[String] = js.undefined
       }
       object GoogleFactcheckingFactchecktoolsV1alpha1Publisher {
         
@@ -592,7 +581,6 @@ object gapi {
       }
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait GoogleProtobufEmpty extends StObject
       
       @js.native

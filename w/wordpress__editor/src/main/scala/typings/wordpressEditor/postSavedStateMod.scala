@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressEditor.postSavedStateMod.PostSavedState.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postSavedStateMod {
@@ -24,14 +23,13 @@ object postSavedStateMod {
   
   object PostSavedState {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      var forceIsDirty: js.UndefOr[Boolean] = js.native
+      var forceIsDirty: js.UndefOr[Boolean] = js.undefined
       
-      var forceIsSaving: js.UndefOr[Boolean] = js.native
+      var forceIsSaving: js.UndefOr[Boolean] = js.undefined
     }
     object Props {
       

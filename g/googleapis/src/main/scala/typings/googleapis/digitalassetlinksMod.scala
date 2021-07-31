@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object digitalassetlinksMod {
+  
+  @JSImport("googleapis/build/src/apis/digitalassetlinks", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object digitalassetlinksMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/digitalassetlinks", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/digitalassetlinks", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object digitalassetlinksMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/digitalassetlinks", "digitalassetlinks")
-  @js.native
-  def digitalassetlinks(options: Options): Digitalassetlinks = js.native
-  @JSImport("googleapis/build/src/apis/digitalassetlinks", "digitalassetlinks")
-  @js.native
-  def digitalassetlinks_v1(version: v1): Digitalassetlinks = js.native
+  @scala.inline
+  def digitalassetlinks(options: Options): Digitalassetlinks = ^.asInstanceOf[js.Dynamic].applyDynamic("digitalassetlinks")(options.asInstanceOf[js.Any]).asInstanceOf[Digitalassetlinks]
+  
+  @scala.inline
+  def digitalassetlinks_v1(version: v1): Digitalassetlinks = ^.asInstanceOf[js.Dynamic].applyDynamic("digitalassetlinks")(version.asInstanceOf[js.Any]).asInstanceOf[Digitalassetlinks]
 }

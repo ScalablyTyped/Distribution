@@ -11,8 +11,8 @@ A simple RPC layer for communicating with web workers and over other transports
 | Full name          | worker-rpc |
 | Keywords           | worker, rpc |
 | # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 131772935 |
+| # dependents       | 6 |
+| # downloads        | 175742649 |
 | # stars            | 0 |
 
 ## Links

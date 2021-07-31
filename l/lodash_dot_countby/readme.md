@@ -12,7 +12,7 @@ The lodash method `_.countBy` exported as a module.
 | Keywords           | lodash-modularized, countby |
 | # releases         | 0 |
 | # dependents       | 24 |
-| # downloads        | 259632 |
+| # downloads        | 286159 |
 | # stars            | 0 |
 
 ## Links

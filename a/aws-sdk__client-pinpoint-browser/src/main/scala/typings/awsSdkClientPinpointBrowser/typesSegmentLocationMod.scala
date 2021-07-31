@@ -6,23 +6,21 @@ import typings.awsSdkClientPinpointBrowser.typesSetDimensionMod.SetDimension
 import typings.awsSdkClientPinpointBrowser.typesSetDimensionMod.UnmarshalledSetDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSegmentLocationMod {
   
-  @js.native
   trait SegmentLocation extends StObject {
     
     /**
       * The country or region, in ISO 3166-1 alpha-2 format.
       */
-    var Country: js.UndefOr[SetDimension] = js.native
+    var Country: js.UndefOr[SetDimension] = js.undefined
     
     /**
       * The GPS Point dimension.
       */
-    var GPSPoint: js.UndefOr[GPSPointDimension] = js.native
+    var GPSPoint: js.UndefOr[GPSPointDimension] = js.undefined
   }
   object SegmentLocation {
     
@@ -49,20 +47,21 @@ object typesSegmentLocationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSegmentLocation extends SegmentLocation {
+  trait UnmarshalledSegmentLocation
+    extends StObject
+       with SegmentLocation {
     
     /**
       * The country or region, in ISO 3166-1 alpha-2 format.
       */
     @JSName("Country")
-    var Country_UnmarshalledSegmentLocation: js.UndefOr[UnmarshalledSetDimension] = js.native
+    var Country_UnmarshalledSegmentLocation: js.UndefOr[UnmarshalledSetDimension] = js.undefined
     
     /**
       * The GPS Point dimension.
       */
     @JSName("GPSPoint")
-    var GPSPoint_UnmarshalledSegmentLocation: js.UndefOr[UnmarshalledGPSPointDimension] = js.native
+    var GPSPoint_UnmarshalledSegmentLocation: js.UndefOr[UnmarshalledGPSPointDimension] = js.undefined
   }
   object UnmarshalledSegmentLocation {
     

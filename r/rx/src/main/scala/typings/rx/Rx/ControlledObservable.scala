@@ -2,11 +2,12 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ControlledObservable[T] extends Observable[T] {
+trait ControlledObservable[T]
+  extends StObject
+     with Observable[T] {
   
   def request(): IDisposable = js.native
   def request(numberOfItems: Double): IDisposable = js.native

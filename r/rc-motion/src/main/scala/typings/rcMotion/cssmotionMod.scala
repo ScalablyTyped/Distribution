@@ -1,6 +1,5 @@
 package typings.rcMotion
 
-import org.scalablytyped.runtime.Shortcut
 import typings.rcMotion.anon.Appear
 import typings.rcMotion.anon.CSSMotionPropsrefRefanyun
 import typings.rcMotion.anon.Dictkey
@@ -17,86 +16,87 @@ import typings.react.mod.Ref
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object cssmotionMod extends Shortcut {
+object cssmotionMod {
+  
+  @JSImport("rc-motion/es/CSSMotion", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rc-motion/es/CSSMotion", JSImport.Default)
   @js.native
   val default: ForwardRefExoticComponent[CSSMotionPropsrefRefanyun] = js.native
   
-  @JSImport("rc-motion/es/CSSMotion", "genCSSMotion")
-  @js.native
-  def genCSSMotion(config: CSSMotionConfig): ForwardRefExoticComponent[CSSMotionPropsrefRefanyun] = js.native
+  @scala.inline
+  def genCSSMotion(config: CSSMotionConfig): ForwardRefExoticComponent[CSSMotionPropsrefRefanyun] = ^.asInstanceOf[js.Dynamic].applyDynamic("genCSSMotion")(config.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[CSSMotionPropsrefRefanyun]]
   
   type CSSMotionConfig = Boolean | ForwardRef
   
-  @js.native
   trait CSSMotionProps extends StObject {
     
     var children: js.UndefOr[
         js.Function2[/* props */ Dictkey, /* ref */ js.Function1[/* node */ js.Any, Unit], ReactElement]
-      ] = js.native
+      ] = js.undefined
     
     /** @private Used by CSSMotionList. Do not use in your production. */
-    var eventProps: js.UndefOr[js.Object] = js.native
+    var eventProps: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Create element in view even the element is invisible.
       * Will patch `display: none` style on it.
       */
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var internalRef: js.UndefOr[Ref[_]] = js.native
+    var internalRef: js.UndefOr[Ref[js.Any]] = js.undefined
     
-    var leavedClassName: js.UndefOr[String] = js.native
+    var leavedClassName: js.UndefOr[String] = js.undefined
     
-    var motionAppear: js.UndefOr[Boolean] = js.native
+    var motionAppear: js.UndefOr[Boolean] = js.undefined
     
-    var motionDeadline: js.UndefOr[Double] = js.native
+    var motionDeadline: js.UndefOr[Double] = js.undefined
     
-    var motionEnter: js.UndefOr[Boolean] = js.native
+    var motionEnter: js.UndefOr[Boolean] = js.undefined
     
-    var motionLeave: js.UndefOr[Boolean] = js.native
+    var motionLeave: js.UndefOr[Boolean] = js.undefined
     
-    var motionLeaveImmediately: js.UndefOr[Boolean] = js.native
+    var motionLeaveImmediately: js.UndefOr[Boolean] = js.undefined
     
-    var motionName: js.UndefOr[MotionName] = js.native
+    var motionName: js.UndefOr[MotionName] = js.undefined
     
-    var onAppearActive: js.UndefOr[MotionEventHandler] = js.native
+    var onAppearActive: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onAppearEnd: js.UndefOr[MotionEndEventHandler] = js.native
+    var onAppearEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
-    var onAppearPrepare: js.UndefOr[MotionPrepareEventHandler] = js.native
+    var onAppearPrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
-    var onAppearStart: js.UndefOr[MotionEventHandler] = js.native
+    var onAppearStart: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onEnterActive: js.UndefOr[MotionEventHandler] = js.native
+    var onEnterActive: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onEnterEnd: js.UndefOr[MotionEndEventHandler] = js.native
+    var onEnterEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
-    var onEnterPrepare: js.UndefOr[MotionPrepareEventHandler] = js.native
+    var onEnterPrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
-    var onEnterStart: js.UndefOr[MotionEventHandler] = js.native
+    var onEnterStart: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onLeaveActive: js.UndefOr[MotionEventHandler] = js.native
+    var onLeaveActive: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onLeaveEnd: js.UndefOr[MotionEndEventHandler] = js.native
+    var onLeaveEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
-    var onLeavePrepare: js.UndefOr[MotionPrepareEventHandler] = js.native
+    var onLeavePrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
-    var onLeaveStart: js.UndefOr[MotionEventHandler] = js.native
+    var onLeaveStart: js.UndefOr[MotionEventHandler] = js.undefined
     
     /** This will always trigger after final visible changed. Even if no motion configured. */
-    var onVisibleChanged: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onVisibleChanged: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
     /**
       * Remove element when motion end. This will not work when `forceRender` is set.
       */
-    var removeOnLeave: js.UndefOr[Boolean] = js.native
+    var removeOnLeave: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object CSSMotionProps {
     
@@ -128,10 +128,10 @@ object cssmotionMod extends Shortcut {
       def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
       @scala.inline
-      def setInternalRef(value: Ref[_]): Self = StObject.set(x, "internalRef", value.asInstanceOf[js.Any])
+      def setInternalRef(value: Ref[js.Any]): Self = StObject.set(x, "internalRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInternalRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "internalRef", js.Any.fromFunction1(value))
+      def setInternalRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "internalRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInternalRefNull: Self = StObject.set(x, "internalRef", null)
@@ -273,18 +273,17 @@ object cssmotionMod extends Shortcut {
     }
   }
   
-  @js.native
   trait CSSMotionState extends StObject {
     
-    var newStatus: js.UndefOr[Boolean] = js.native
+    var newStatus: js.UndefOr[Boolean] = js.undefined
     
-    var prevProps: js.UndefOr[CSSMotionProps] = js.native
+    var prevProps: js.UndefOr[CSSMotionProps] = js.undefined
     
-    var status: js.UndefOr[MotionStatus] = js.native
+    var status: js.UndefOr[MotionStatus] = js.undefined
     
-    var statusActive: js.UndefOr[Boolean] = js.native
+    var statusActive: js.UndefOr[Boolean] = js.undefined
     
-    var statusStyle: js.UndefOr[CSSProperties] = js.native
+    var statusStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object CSSMotionState {
     
@@ -330,9 +329,4 @@ object cssmotionMod extends Shortcut {
   }
   
   type MotionName = String | Appear
-  
-  type _To = ForwardRefExoticComponent[CSSMotionPropsrefRefanyun]
-  
-  /* This means you don't have to write `default`, but can instead just say `cssmotionMod.foo` */
-  override def _to: ForwardRefExoticComponent[CSSMotionPropsrefRefanyun] = default
 }

@@ -7,35 +7,35 @@ import typings.std.HTMLOListElement
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
   
   @JSImport("@react-md/list/types/List", "List")
   @js.native
-  val List: ForwardRefExoticComponent[ListProps with RefAttributes[ListElement]] = js.native
+  val List: ForwardRefExoticComponent[ListProps & RefAttributes[ListElement]] = js.native
   
   type ListElement = HTMLUListElement | HTMLOListElement
   
-  @js.native
-  trait ListProps extends HTMLAttributes[ListElement] {
+  trait ListProps
+    extends StObject
+       with HTMLAttributes[ListElement] {
     
     /**
       * Boolean if the dense spec should be applied to the list.
       */
-    var dense: js.UndefOr[Boolean] = js.native
+    var dense: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the list should appear horizontally instead of vertically.
       */
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the list's order is important. This will update the list to be
       * rendered as an `<ol>` instead of `<ul>`.
       */
-    var ordered: js.UndefOr[Boolean] = js.native
+    var ordered: js.UndefOr[Boolean] = js.undefined
   }
   object ListProps {
     

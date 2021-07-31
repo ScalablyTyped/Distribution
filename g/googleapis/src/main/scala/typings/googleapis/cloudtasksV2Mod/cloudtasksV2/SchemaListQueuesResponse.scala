@@ -2,13 +2,11 @@ package typings.googleapis.cloudtasksV2Mod.cloudtasksV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for ListQueues.
   */
-@js.native
 trait SchemaListQueuesResponse extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaListQueuesResponse extends StObject {
     * next_page_token is empty, there are no more results.  The page token is
     * valid for only 2 hours.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of queues.
     */
-  var queues: js.UndefOr[js.Array[SchemaQueue]] = js.native
+  var queues: js.UndefOr[js.Array[SchemaQueue]] = js.undefined
 }
 object SchemaListQueuesResponse {
   

@@ -8,7 +8,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2RegisterUpdateValueSpec
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2TriggerContextTimeContextFrequency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registerupdateMod {
@@ -25,7 +24,6 @@ object registerupdateMod {
   
   type RegisterUpdateArgument = GoogleActionsV2RegisterUpdateValue
   
-  @js.native
   trait RegisterUpdateOptions extends StObject {
     
     /**
@@ -33,19 +31,19 @@ object registerupdateMod {
       * These can be retrieved using {@link Arguments#get|conv.arguments.get}.
       * @public
       */
-    var arguments: js.Array[GoogleActionsV2Argument] = js.native
+    var arguments: js.Array[GoogleActionsV2Argument]
     
     /**
       * The high-level frequency of the recurring update.
       * @public
       */
-    var frequency: GoogleActionsV2TriggerContextTimeContextFrequency = js.native
+    var frequency: GoogleActionsV2TriggerContextTimeContextFrequency
     
     /**
       * The Dialogflow/Actions SDK intent name to be triggered when the update is received.
       * @public
       */
-    var intent: String = js.native
+    var intent: String
   }
   object RegisterUpdateOptions {
     

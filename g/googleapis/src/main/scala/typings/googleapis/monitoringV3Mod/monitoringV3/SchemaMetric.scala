@@ -3,27 +3,25 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A specific metric, identified by specifying values for all of the labels of
   * a MetricDescriptor.
   */
-@js.native
 trait SchemaMetric extends StObject {
   
   /**
     * The set of label values that uniquely identify this metric. All labels
     * listed in the MetricDescriptor must be assigned values.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * An existing metric type, see google.api.MetricDescriptor. For example,
     * custom.googleapis.com/invoice/paid/amount.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaMetric {
   

@@ -2,27 +2,25 @@ package typings.roslib.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Compression extends StObject {
   
-  var compression: js.UndefOr[java.lang.String] = js.native
+  var compression: js.UndefOr[java.lang.String] = js.undefined
   
-  var latch: js.UndefOr[Boolean] = js.native
+  var latch: js.UndefOr[Boolean] = js.undefined
   
-  var messageType: java.lang.String = js.native
+  var messageType: java.lang.String
   
-  var name: java.lang.String = js.native
+  var name: java.lang.String
   
-  var queue_length: js.UndefOr[Double] = js.native
+  var queue_length: js.UndefOr[Double] = js.undefined
   
-  var queue_size: js.UndefOr[Double] = js.native
+  var queue_size: js.UndefOr[Double] = js.undefined
   
-  var ros: typings.roslib.mod.Ros = js.native
+  var ros: typings.roslib.mod.Ros
   
-  var throttle_rate: js.UndefOr[Double] = js.native
+  var throttle_rate: js.UndefOr[Double] = js.undefined
 }
 object Compression {
   

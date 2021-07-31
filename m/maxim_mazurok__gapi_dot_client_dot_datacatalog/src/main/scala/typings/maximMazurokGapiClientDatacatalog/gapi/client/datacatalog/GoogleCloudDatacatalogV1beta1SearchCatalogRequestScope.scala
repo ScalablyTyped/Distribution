@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope extends StObject {
   
   /**
     * If `true`, include Google Cloud Platform (GCP) public datasets in the search results. Info on GCP public datasets is available at https://cloud.google.com/public-datasets/. By
     * default, GCP public datasets are excluded.
     */
-  var includeGcpPublicDatasets: js.UndefOr[Boolean] = js.native
+  var includeGcpPublicDatasets: js.UndefOr[Boolean] = js.undefined
   
   /** The list of organization IDs to search within. To find your organization ID, follow instructions in https://cloud.google.com/resource-manager/docs/creating-managing-organization. */
-  var includeOrgIds: js.UndefOr[js.Array[String]] = js.native
+  var includeOrgIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The list of project IDs to search within. To learn more about the distinction between project names/IDs/numbers, go to https://cloud.google.com/docs/overview/#projects. */
-  var includeProjectIds: js.UndefOr[js.Array[String]] = js.native
+  var includeProjectIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The list of locations to search within. 1. If empty, search will be performed in all locations; 2. If any of the locations are NOT in the valid locations list, error will
@@ -27,7 +25,7 @@ trait GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope extends StObject {
     * asia-east2 * asia-northeast1 * asia-northeast2 * asia-northeast3 * asia-south1 * asia-southeast1 * australia-southeast1 * eu * europe-north1 * europe-west1 * europe-west2 *
     * europe-west3 * europe-west4 * europe-west6 * global * northamerica-northeast1 * southamerica-east1 * us * us-central1 * us-east1 * us-east4 * us-west1 * us-west2
     */
-  var restrictedLocations: js.UndefOr[js.Array[String]] = js.native
+  var restrictedLocations: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope {
   

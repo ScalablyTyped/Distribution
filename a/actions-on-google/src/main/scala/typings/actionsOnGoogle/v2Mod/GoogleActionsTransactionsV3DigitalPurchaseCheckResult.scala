@@ -2,16 +2,14 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsTransactionsV3DigitalPurchaseCheckResult extends StObject {
   
   /**
     * Result type for digital purchase check result.
     */
-  var resultType: js.UndefOr[GoogleActionsTransactionsV3DigitalPurchaseCheckResultResultType] = js.native
+  var resultType: js.UndefOr[GoogleActionsTransactionsV3DigitalPurchaseCheckResultResultType] = js.undefined
 }
 object GoogleActionsTransactionsV3DigitalPurchaseCheckResult {
   

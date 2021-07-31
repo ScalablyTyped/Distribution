@@ -11,7 +11,6 @@ import typings.reactFlex.reactFlexStrings.fit
 import typings.reactFlex.reactFlexStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -40,64 +39,63 @@ object mod {
     def this(props: ItemProps, context: js.Any) = this()
   }
   
-  @js.native
   trait CommonFlexProps extends StObject {
     
     /**
       * A value for the `align-content` css property.
       */
-    var alignContent: js.UndefOr[String] = js.native
+    var alignContent: js.UndefOr[String] = js.undefined
     
     /**
       * A value for the `align-items` css property. Defaults to `'center'`.
       */
-    var alignItems: js.UndefOr[String] = js.native
+    var alignItems: js.UndefOr[String] = js.undefined
     
     /**
       * For `flex-direction: column`.
       */
-    var column: js.UndefOr[Boolean] = js.native
+    var column: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Customize the display to be `'flex'` or `'inline-flex'`.
       * Defaults to `'flex'`.
       */
-    var display: js.UndefOr[String] = js.native
+    var display: js.UndefOr[String] = js.undefined
     
     /**
       * A number/string from 0 to 24 for the `flex` css property. `false` for `'none'`.
       */
-    var flex: js.UndefOr[Double | String | Boolean] = js.native
+    var flex: js.UndefOr[Double | String | Boolean] = js.undefined
     
     /**
       * For `display: inline-flex`.
       */
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value for the `justify-content` css property.
       */
-    var justifyContent: js.UndefOr[String] = js.native
+    var justifyContent: js.UndefOr[String] = js.undefined
     
     /**
       * For reverse direction (eg. `flex-direction: column-reverse` or `row-reverse`).
       */
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * For `flex-direction: row`. Defaults to `true`.
       */
-    var row: js.UndefOr[Boolean] = js.native
+    var row: js.UndefOr[Boolean] = js.undefined
     
     /**
       * For custom style
       */
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
     /**
       * For `flex-wrap: wrap`. Defaults to `true`.
       */
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object CommonFlexProps {
     
@@ -178,9 +176,9 @@ object mod {
     }
   }
   
-  @js.native
   trait FlexProps
-    extends Props[Flex]
+    extends StObject
+       with Props[Flex]
        with CommonFlexProps
   object FlexProps {
     
@@ -191,9 +189,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ItemProps
-    extends Props[Flex]
+    extends StObject
+       with Props[Flex]
        with CommonFlexProps {
     
     /**
@@ -202,17 +200,17 @@ object mod {
       */
     var flexBasis: js.UndefOr[
         Double | none | auto | content | `fit-content` | `min-content` | `max-content` | fit
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A number/string from 0 to 24 for `flex-grow`. Most of the times, using `flex` is just enough.
       */
-    var flexGrow: js.UndefOr[Double | String | Boolean] = js.native
+    var flexGrow: js.UndefOr[Double | String | Boolean] = js.undefined
     
     /**
       * A value for the `flex-shrink` css property. From `0` to `24`.
       */
-    var flexShrink: js.UndefOr[Double | String] = js.native
+    var flexShrink: js.UndefOr[Double | String] = js.undefined
   }
   object ItemProps {
     

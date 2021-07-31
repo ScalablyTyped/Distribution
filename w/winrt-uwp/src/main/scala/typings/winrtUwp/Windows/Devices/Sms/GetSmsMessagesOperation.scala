@@ -8,43 +8,88 @@ import typings.winrtUwp.Windows.Foundation.IAsyncOperationWithProgress
 import typings.winrtUwp.Windows.WinRTError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports the retrieval of messages. */
-@js.native
 trait GetSmsMessagesOperation extends StObject {
   
   /** Cancels the asynchronous operations. */
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   /** Closes the asynchronous operations. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /** Specifies whether the asynchronous message retrieval operation has completed or not. */
-  def completed(asyncInfo: IAsyncOperationWithProgress[IVectorView[_], Double], asyncStatus: AsyncStatus): Unit = js.native
+  def completed(asyncInfo: IAsyncOperationWithProgress[IVectorView[js.Any], Double], asyncStatus: AsyncStatus): Unit
   /** Specifies whether the asynchronous message retrieval operation has completed or not. */
   @JSName("completed")
-  var completed_Original: AsyncOperationWithProgressCompletedHandler[IVectorView[_], Double] = js.native
+  var completed_Original: AsyncOperationWithProgressCompletedHandler[IVectorView[js.Any], Double]
   
   /** Specifies the error code for the asynchronous message operation. */
-  var errorCode: WinRTError = js.native
+  var errorCode: WinRTError
   
   /**
     * Retrieves the result of the asynchronous message retrieval operation.
     * @return A reference to the SMS messages retrieved.
     */
-  def getResults(): IVectorView[ISmsMessage] = js.native
+  def getResults(): IVectorView[ISmsMessage]
   
   /** Indicates the ID of the asynchronous message operation. */
-  var id: Double = js.native
+  var id: Double
   
   /** Specifies the progress status of the asynchronous message operation. */
-  def progress(asyncInfo: IAsyncOperationWithProgress[IVectorView[_], Double], progressInfo: Double): Unit = js.native
+  def progress(asyncInfo: IAsyncOperationWithProgress[IVectorView[js.Any], Double], progressInfo: Double): Unit
   /** Specifies the progress status of the asynchronous message operation. */
   @JSName("progress")
-  var progress_Original: AsyncOperationProgressHandler[IVectorView[_], Double] = js.native
+  var progress_Original: AsyncOperationProgressHandler[IVectorView[js.Any], Double]
   
   /** Specifies the status of the asynchronous message operations. */
-  var status: AsyncStatus = js.native
+  var status: AsyncStatus
+}
+object GetSmsMessagesOperation {
+  
+  @scala.inline
+  def apply(
+    cancel: () => Unit,
+    close: () => Unit,
+    completed: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[js.Any], Double], /* asyncStatus */ AsyncStatus) => Unit,
+    errorCode: WinRTError,
+    getResults: () => IVectorView[ISmsMessage],
+    id: Double,
+    progress: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[js.Any], Double], Double) => Unit,
+    status: AsyncStatus
+  ): GetSmsMessagesOperation = {
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), close = js.Any.fromFunction0(close), completed = js.Any.fromFunction2(completed), errorCode = errorCode.asInstanceOf[js.Any], getResults = js.Any.fromFunction0(getResults), id = id.asInstanceOf[js.Any], progress = js.Any.fromFunction2(progress), status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetSmsMessagesOperation]
+  }
+  
+  @scala.inline
+  implicit class GetSmsMessagesOperationMutableBuilder[Self <: GetSmsMessagesOperation] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setCompleted(
+      value: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[js.Any], Double], /* asyncStatus */ AsyncStatus) => Unit
+    ): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setErrorCode(value: WinRTError): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetResults(value: () => IVectorView[ISmsMessage]): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setProgress(value: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[js.Any], Double], Double) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setStatus(value: AsyncStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+  }
 }

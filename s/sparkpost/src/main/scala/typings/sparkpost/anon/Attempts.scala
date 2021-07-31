@@ -2,19 +2,17 @@ package typings.sparkpost.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attempts extends StObject {
   
-  var attempts: Double = js.native
+  var attempts: Double
   
-  var batch_id: String = js.native
+  var batch_id: String
   
-  var response_code: Double = js.native
+  var response_code: Double
   
-  var ts: String = js.native
+  var ts: String
 }
 object Attempts {
   

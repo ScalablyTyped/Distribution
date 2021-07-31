@@ -6,7 +6,6 @@ import typings.storybookApi.mod.Parameters
 import typings.storybookComponents.anon.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storyMod {
@@ -17,7 +16,7 @@ object storyMod {
     */
   @JSImport("@storybook/components/dist/blocks/Story", "Story")
   @js.native
-  val Story: FunctionComponent[StoryProps with Error] = js.native
+  val Story: FunctionComponent[StoryProps & Error] = js.native
   
   @js.native
   sealed trait StoryError extends StObject
@@ -26,21 +25,22 @@ object storyMod {
   object StoryError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[StoryError with String] = js.native
+    def apply(value: String): js.UndefOr[StoryError & String] = js.native
     
     @js.native
-    sealed trait NO_STORY extends StoryError
-    /* "No component or story to display" */ val NO_STORY: typings.storybookComponents.storyMod.StoryError.NO_STORY with String = js.native
+    sealed trait NO_STORY
+      extends StObject
+         with StoryError
+    /* "No component or story to display" */ val NO_STORY: typings.storybookComponents.storyMod.StoryError.NO_STORY & String = js.native
   }
   
-  @js.native
   trait CommonProps extends StObject {
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var title: String = js.native
+    var title: String
   }
   object CommonProps {
     
@@ -69,17 +69,18 @@ object storyMod {
   
   type IFrameStoryProps = CommonProps
   
-  @js.native
-  trait InlineStoryProps extends CommonProps {
+  trait InlineStoryProps
+    extends StObject
+       with CommonProps {
     
-    var parameters: Parameters = js.native
+    var parameters: Parameters
     
-    var storyFn: ElementType[_] = js.native
+    var storyFn: ElementType[js.Any]
   }
   object InlineStoryProps {
     
     @scala.inline
-    def apply(id: String, parameters: Parameters, storyFn: ElementType[_], title: String): InlineStoryProps = {
+    def apply(id: String, parameters: Parameters, storyFn: ElementType[js.Any], title: String): InlineStoryProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], storyFn = storyFn.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[InlineStoryProps]
     }
@@ -91,7 +92,7 @@ object storyMod {
       def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setStoryFn(value: ElementType[_]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
+      def setStoryFn(value: ElementType[js.Any]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
     }
   }
   

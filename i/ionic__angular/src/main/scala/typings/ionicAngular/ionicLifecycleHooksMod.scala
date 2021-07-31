@@ -2,18 +2,16 @@ package typings.ionicAngular
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionicLifecycleHooksMod {
   
-  @js.native
   trait ViewDidEnter extends StObject {
     
     /**
       * Fired when the component routing to has finished animating.
       */
-    def ionViewDidEnter(): Unit = js.native
+    def ionViewDidEnter(): Unit
   }
   object ViewDidEnter {
     
@@ -31,13 +29,12 @@ object ionicLifecycleHooksMod {
     }
   }
   
-  @js.native
   trait ViewDidLeave extends StObject {
     
     /**
       * Fired when the component routing to has finished animating.
       */
-    def ionViewDidLeave(): Unit = js.native
+    def ionViewDidLeave(): Unit
   }
   object ViewDidLeave {
     
@@ -55,13 +52,12 @@ object ionicLifecycleHooksMod {
     }
   }
   
-  @js.native
   trait ViewWillEnter extends StObject {
     
     /**
       * Fired when the component routing to is about to animate into view.
       */
-    def ionViewWillEnter(): Unit = js.native
+    def ionViewWillEnter(): Unit
   }
   object ViewWillEnter {
     
@@ -79,13 +75,12 @@ object ionicLifecycleHooksMod {
     }
   }
   
-  @js.native
   trait ViewWillLeave extends StObject {
     
     /**
       * Fired when the component routing from is about to animate.
       */
-    def ionViewWillLeave(): Unit = js.native
+    def ionViewWillLeave(): Unit
   }
   object ViewWillLeave {
     

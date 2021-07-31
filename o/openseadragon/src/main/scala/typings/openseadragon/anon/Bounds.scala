@@ -4,21 +4,19 @@ import typings.openseadragon.mod.Point
 import typings.openseadragon.mod.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bounds extends StObject {
   
-  var bounds: js.UndefOr[Rect] = js.native
+  var bounds: js.UndefOr[Rect] = js.undefined
   
-  var compositeOperation: js.UndefOr[String] = js.native
+  var compositeOperation: js.UndefOr[String] = js.undefined
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
-  var translate: js.UndefOr[Point] = js.native
+  var translate: js.UndefOr[Point] = js.undefined
 }
 object Bounds {
   

@@ -10,7 +10,6 @@ import typings.react.mod.SFC
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mentionsMod extends Shortcut {
@@ -24,7 +23,9 @@ object mentionsMod extends Shortcut {
   val Option: SFC[typings.rcMentions.optionMod.OptionProps] = js.native
   
   @js.native
-  trait CompoundedComponent extends ForwardRefExoticComponent[MentionProps with RefAttributes[HTMLElement]] {
+  trait CompoundedComponent
+    extends StObject
+       with ForwardRefExoticComponent[MentionProps & RefAttributes[HTMLElement]] {
     
     var Option: SFC[typings.rcMentions.optionMod.OptionProps] = js.native
     
@@ -46,10 +47,11 @@ object mentionsMod extends Shortcut {
     def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
   }
   
-  @js.native
-  trait MentionProps extends MentionsProps {
+  trait MentionProps
+    extends StObject
+       with MentionsProps {
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
   }
   object MentionProps {
     
@@ -70,10 +72,9 @@ object mentionsMod extends Shortcut {
     }
   }
   
-  @js.native
   trait MentionState extends StObject {
     
-    var focused: Boolean = js.native
+    var focused: Boolean
   }
   object MentionState {
     
@@ -91,12 +92,11 @@ object mentionsMod extends Shortcut {
     }
   }
   
-  @js.native
   trait MentionsConfig extends StObject {
     
-    var prefix: js.UndefOr[String | js.Array[String]] = js.native
+    var prefix: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var split: js.UndefOr[String] = js.native
+    var split: js.UndefOr[String] = js.undefined
   }
   object MentionsConfig {
     
@@ -126,12 +126,11 @@ object mentionsMod extends Shortcut {
     }
   }
   
-  @js.native
   trait MentionsEntity extends StObject {
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var value: String = js.native
+    var value: String
   }
   object MentionsEntity {
     
@@ -152,13 +151,13 @@ object mentionsMod extends Shortcut {
     }
   }
   
-  @js.native
   trait OptionProps
-    extends /* customProp */ StringDictionary[js.Any] {
+    extends StObject
+       with /* customProp */ StringDictionary[js.Any] {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var value: String = js.native
+    var value: String
   }
   object OptionProps {
     

@@ -2,15 +2,14 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowLabel
-  extends FlowNodeBase
+  extends StObject
+     with FlowNodeBase
      with FlowNode {
   
-  var antecedents: js.UndefOr[js.Array[FlowNode]] = js.native
+  var antecedents: js.UndefOr[js.Array[FlowNode]] = js.undefined
 }
 object FlowLabel {
   

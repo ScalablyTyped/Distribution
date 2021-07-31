@@ -2,7 +2,6 @@ package typings.officeJs.Visio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,7 +22,9 @@ object OverlayVerticalAlignment extends StObject {
     *
     */
   @js.native
-  sealed trait bottom extends OverlayVerticalAlignment
+  sealed trait bottom
+    extends StObject
+       with OverlayVerticalAlignment
   
   /**
     *
@@ -31,7 +32,9 @@ object OverlayVerticalAlignment extends StObject {
     *
     */
   @js.native
-  sealed trait middle extends OverlayVerticalAlignment
+  sealed trait middle
+    extends StObject
+       with OverlayVerticalAlignment
   
   /**
     *
@@ -39,5 +42,7 @@ object OverlayVerticalAlignment extends StObject {
     *
     */
   @js.native
-  sealed trait top extends OverlayVerticalAlignment
+  sealed trait top
+    extends StObject
+       with OverlayVerticalAlignment
 }

@@ -6,21 +6,19 @@ import typings.react.mod.Validator
 import typings.reactVirtualized.esColumnSizerMod.SizedColumnProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Children extends StObject {
   
-  var children: Validator[js.Function1[/* props */ SizedColumnProps, ReactNode]] = js.native
+  var children: Validator[js.Function1[/* props */ SizedColumnProps, ReactNode]]
   
-  var columnCount: Validator[Double] = js.native
+  var columnCount: Validator[Double]
   
-  var columnMaxWidth: Requireable[Double] = js.native
+  var columnMaxWidth: Requireable[Double]
   
-  var columnMinWidth: Requireable[Double] = js.native
+  var columnMinWidth: Requireable[Double]
   
-  var width: Validator[Double] = js.native
+  var width: Validator[Double]
 }
 object Children {
   

@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxAutoSortByStateDef...
   */
-@js.native
 trait INxAutoSortByStateDef extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait INxAutoSortByStateDef extends StObject {
     *
     * If qDisplayNumberOfRows is set to a negative value or to 0, the sort by state is disabled.
     */
-  var qDisplayNumberOfRows: Double = js.native
+  var qDisplayNumberOfRows: Double
 }
 object INxAutoSortByStateDef {
   

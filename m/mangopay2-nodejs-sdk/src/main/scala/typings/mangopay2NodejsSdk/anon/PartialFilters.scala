@@ -7,42 +7,40 @@ import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.report.Filters> */
-@js.native
 trait PartialFilters extends StObject {
   
-  var AfterDate: js.UndefOr[Timestamp] = js.native
+  var AfterDate: js.UndefOr[Timestamp] = js.undefined
   
-  var AuthorId: js.UndefOr[String] = js.native
+  var AuthorId: js.UndefOr[String] = js.undefined
   
-  var BeforeDate: js.UndefOr[Timestamp] = js.native
+  var BeforeDate: js.UndefOr[Timestamp] = js.undefined
   
-  var MaxDebitedFundsAmount: js.UndefOr[Double] = js.native
+  var MaxDebitedFundsAmount: js.UndefOr[Double] = js.undefined
   
-  var MaxDebitedFundsCurrency: js.UndefOr[CurrencyISO] = js.native
+  var MaxDebitedFundsCurrency: js.UndefOr[CurrencyISO] = js.undefined
   
-  var MaxFeesAmount: js.UndefOr[Double] = js.native
+  var MaxFeesAmount: js.UndefOr[Double] = js.undefined
   
-  var MaxFeesCurrency: js.UndefOr[CurrencyISO] = js.native
+  var MaxFeesCurrency: js.UndefOr[CurrencyISO] = js.undefined
   
-  var MinDebitedFundsAmount: js.UndefOr[Double] = js.native
+  var MinDebitedFundsAmount: js.UndefOr[Double] = js.undefined
   
-  var MinDebitedFundsCurrency: js.UndefOr[CurrencyISO] = js.native
+  var MinDebitedFundsCurrency: js.UndefOr[CurrencyISO] = js.undefined
   
-  var MinFeesAmount: js.UndefOr[Double] = js.native
+  var MinFeesAmount: js.UndefOr[Double] = js.undefined
   
-  var MinFeesCurrency: js.UndefOr[CurrencyISO] = js.native
+  var MinFeesCurrency: js.UndefOr[CurrencyISO] = js.undefined
   
-  var Nature: js.UndefOr[js.Array[TransactionNature]] = js.native
+  var Nature: js.UndefOr[js.Array[TransactionNature]] = js.undefined
   
-  var Status: js.UndefOr[js.Array[TransactionStatus]] = js.native
+  var Status: js.UndefOr[js.Array[TransactionStatus]] = js.undefined
   
-  var Type: js.UndefOr[js.Array[TransactionType]] = js.native
+  var Type: js.UndefOr[js.Array[TransactionType]] = js.undefined
   
-  var WalletId: js.UndefOr[String] = js.native
+  var WalletId: js.UndefOr[String] = js.undefined
 }
 object PartialFilters {
   

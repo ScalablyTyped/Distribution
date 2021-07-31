@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTimeSeriesRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait CreateTimeSeriesRequest extends StObject {
     * in its time series. Each TimeSeries value must fully specify a unique time series by supplying all label values for the metric and the monitored resource.The maximum number of
     * TimeSeries objects per Create request is 200.
     */
-  var timeSeries: js.UndefOr[js.Array[TimeSeries]] = js.native
+  var timeSeries: js.UndefOr[js.Array[TimeSeries]] = js.undefined
 }
 object CreateTimeSeriesRequest {
   

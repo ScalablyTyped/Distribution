@@ -11,8 +11,8 @@ Swagger loader and middleware for express
 | Full name          | swagger-express-mw |
 | Keywords           | swagger, api, apis, connect |
 | # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 4573509 |
+| # dependents       | 34 |
+| # downloads        | 6455530 |
 | # stars            | 6 |
 
 ## Links

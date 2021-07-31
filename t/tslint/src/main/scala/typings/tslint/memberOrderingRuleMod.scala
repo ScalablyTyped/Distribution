@@ -8,7 +8,6 @@ import typings.tslint.tslintNumbers.`0`
 import typings.tslint.tslintNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memberOrderingRuleMod {
@@ -25,9 +24,8 @@ object memberOrderingRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/memberOrderingRule", "Rule.FAILURE_STRING_ALPHABETIZE")
-    @js.native
-    def FAILURE_STRING_ALPHABETIZE(prevName: String, curName: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING_ALPHABETIZE(prevName: String, curName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_ALPHABETIZE")(prevName.asInstanceOf[js.Any], curName.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/memberOrderingRule", "Rule.metadata")
     @js.native
@@ -35,8 +33,7 @@ object memberOrderingRuleMod {
     @scala.inline
     def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
     
-    @JSImport("tslint/lib/rules/memberOrderingRule", "Rule.stringCompare")
-    @js.native
-    def stringCompare(a: String, b: String): `1` | `-1` | `0` = js.native
+    @scala.inline
+    def stringCompare(a: String, b: String): `1` | `-1` | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("stringCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `-1` | `0`]
   }
 }

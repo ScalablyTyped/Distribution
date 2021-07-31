@@ -3,51 +3,49 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the capabilities of journal station of a point-of-service printer. */
-@js.native
 trait JournalPrinterCapabilities extends StObject {
   
   /** Gets information about the sensors that the journal printer station has available to report the status of the printer cartridge. */
-  var cartridgeSensors: PosPrinterCartridgeSensors = js.native
+  var cartridgeSensors: PosPrinterCartridgeSensors
   
   /** Gets the color cartridges that the journal printer station can use to print in color. */
-  var colorCartridgeCapabilities: PosPrinterColorCapabilities = js.native
+  var colorCartridgeCapabilities: PosPrinterColorCapabilities
   
   /** Gets whether the journal printer station can print bold characters. */
-  var isBoldSupported: Boolean = js.native
+  var isBoldSupported: Boolean
   
   /** Gets whether the journal printer station can print characters that are both double-high and double-wide. */
-  var isDoubleHighDoubleWidePrintSupported: Boolean = js.native
+  var isDoubleHighDoubleWidePrintSupported: Boolean
   
   /** Gets whether the journal printer station can print double-high characters. */
-  var isDoubleHighPrintSupported: Boolean = js.native
+  var isDoubleHighPrintSupported: Boolean
   
   /** Gets whether the journal printer station can print double-wide characters. */
-  var isDoubleWidePrintSupported: Boolean = js.native
+  var isDoubleWidePrintSupported: Boolean
   
   /** Gets whether the journal printer station can print a dark color plus an alternate color. */
-  var isDualColorSupported: Boolean = js.native
+  var isDualColorSupported: Boolean
   
   /** Gets whether the journal printer station can print italic characters. */
-  var isItalicSupported: Boolean = js.native
+  var isItalicSupported: Boolean
   
   /** Gets whether the journal printer station has an out-of-paper sensor. */
-  var isPaperEmptySensorSupported: Boolean = js.native
+  var isPaperEmptySensorSupported: Boolean
   
   /** Gets whether the journal printer station has a low-paper sensor. */
-  var isPaperNearEndSensorSupported: Boolean = js.native
+  var isPaperNearEndSensorSupported: Boolean
   
   /** Gets whether a point-of-service printer with a station that functions as a journal printer station is present. */
-  var isPrinterPresent: Boolean = js.native
+  var isPrinterPresent: Boolean
   
   /** Gets whether the journal printer station can underline characters. */
-  var isUnderlineSupported: Boolean = js.native
+  var isUnderlineSupported: Boolean
   
   /** Gets a collection of the line widths in characters per line that the journal printer station supports. */
-  var supportedCharactersPerLine: IVectorView[Double] = js.native
+  var supportedCharactersPerLine: IVectorView[Double]
 }
 object JournalPrinterCapabilities {
   

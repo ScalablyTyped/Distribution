@@ -5,46 +5,44 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@ant-design/react-native.@ant-design/react-native/lib/list/style.ListStyle> */
-@js.native
 trait PartialListStyle extends StObject {
   
-  var Arrow: js.UndefOr[TextStyle] = js.native
+  var Arrow: js.UndefOr[TextStyle] = js.undefined
   
-  var ArrowV: js.UndefOr[TextStyle] = js.native
+  var ArrowV: js.UndefOr[TextStyle] = js.undefined
   
-  var Body: js.UndefOr[ViewStyle] = js.native
+  var Body: js.UndefOr[ViewStyle] = js.undefined
   
-  var BodyBottomLine: js.UndefOr[ViewStyle] = js.native
+  var BodyBottomLine: js.UndefOr[ViewStyle] = js.undefined
   
-  var Brief: js.UndefOr[ViewStyle] = js.native
+  var Brief: js.UndefOr[ViewStyle] = js.undefined
   
-  var BriefText: js.UndefOr[TextStyle] = js.native
+  var BriefText: js.UndefOr[TextStyle] = js.undefined
   
-  var Content: js.UndefOr[TextStyle] = js.native
+  var Content: js.UndefOr[TextStyle] = js.undefined
   
-  var Extra: js.UndefOr[TextStyle] = js.native
+  var Extra: js.UndefOr[TextStyle] = js.undefined
   
-  var Footer: js.UndefOr[TextStyle] = js.native
+  var Footer: js.UndefOr[TextStyle] = js.undefined
   
-  var Header: js.UndefOr[TextStyle] = js.native
+  var Header: js.UndefOr[TextStyle] = js.undefined
   
-  var Item: js.UndefOr[ViewStyle] = js.native
+  var Item: js.UndefOr[ViewStyle] = js.undefined
   
-  var Line: js.UndefOr[ViewStyle] = js.native
+  var Line: js.UndefOr[ViewStyle] = js.undefined
   
-  var Thumb: js.UndefOr[ImageStyle] = js.native
+  var Thumb: js.UndefOr[ImageStyle] = js.undefined
   
-  var column: js.UndefOr[ViewStyle] = js.native
+  var column: js.UndefOr[ViewStyle] = js.undefined
   
-  var multipleLine: js.UndefOr[ViewStyle] = js.native
+  var multipleLine: js.UndefOr[ViewStyle] = js.undefined
   
-  var multipleThumb: js.UndefOr[ImageStyle] = js.native
+  var multipleThumb: js.UndefOr[ImageStyle] = js.undefined
   
-  var underlayColor: js.UndefOr[ViewStyle] = js.native
+  var underlayColor: js.UndefOr[ViewStyle] = js.undefined
 }
 object PartialListStyle {
   

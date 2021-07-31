@@ -2,13 +2,11 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data for a payment method.
   */
-@js.native
 trait PaymentMethodData extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait PaymentMethodData extends StObject {
     * additional details, see
     * [[PaymentMethodData.info|`PaymentMethodData.info`]].
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Payment method information.
@@ -37,17 +35,17 @@ trait PaymentMethodData extends StObject {
     * - For [[PaymentMethodType|`CARD`]], this field
     *   will be an object conforming to [[CardInfo|`CardInfo`]].
     */
-  var info: js.UndefOr[CardInfo] = js.native
+  var info: js.UndefOr[CardInfo] = js.undefined
   
   /**
     * Tokenization data for the payment method.
     */
-  var tokenizationData: PaymentMethodTokenizationData = js.native
+  var tokenizationData: PaymentMethodTokenizationData
   
   /**
     * Type of payment method.
     */
-  var `type`: PaymentMethodType = js.native
+  var `type`: PaymentMethodType
 }
 object PaymentMethodData {
   

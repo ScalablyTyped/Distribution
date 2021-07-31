@@ -4,17 +4,15 @@ import typings.moment.mod.Moment
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartData extends StObject {
   
-  var datasets: js.UndefOr[js.Array[ChartDataSets]] = js.native
+  var datasets: js.UndefOr[js.Array[ChartDataSets]] = js.undefined
   
   var labels: js.UndefOr[
     js.Array[String | (js.Array[Date | Double | Moment | String]) | Double | Date | Moment]
-  ] = js.native
+  ] = js.undefined
 }
 object ChartData {
   

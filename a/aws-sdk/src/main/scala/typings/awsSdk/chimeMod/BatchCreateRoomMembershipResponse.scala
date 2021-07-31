@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchCreateRoomMembershipResponse extends StObject {
   
   /**
     * If the action fails for one or more of the member IDs in the request, a list of the member IDs is returned, along with error codes and error messages.
     */
-  var Errors: js.UndefOr[MemberErrorList] = js.native
+  var Errors: js.UndefOr[MemberErrorList] = js.undefined
 }
 object BatchCreateRoomMembershipResponse {
   

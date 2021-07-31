@@ -6,7 +6,6 @@ import typings.reactMdTable.tableCellContentMod.SortOrder
 import typings.reactMdTable.tableCheckboxMod.WantedCheckboxProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdTableStrings {
@@ -37,12 +36,16 @@ object reactMdTableStrings {
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait `aria-controls` extends WantedCheckboxProps
+  sealed trait `aria-controls`
+    extends StObject
+       with WantedCheckboxProps
   @scala.inline
   def `aria-controls`: `aria-controls` = "aria-controls".asInstanceOf[`aria-controls`]
   
   @js.native
-  sealed trait ascending extends SortOrder
+  sealed trait ascending
+    extends StObject
+       with SortOrder
   @scala.inline
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   
@@ -62,7 +65,9 @@ object reactMdTableStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottom extends TableCellVerticalAlignment
+  sealed trait bottom
+    extends StObject
+       with TableCellVerticalAlignment
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -72,7 +77,9 @@ object reactMdTableStrings {
   def cell: cell = "cell".asInstanceOf[cell]
   
   @js.native
-  sealed trait center extends TableCellHorizontalAlignment
+  sealed trait center
+    extends StObject
+       with TableCellHorizontalAlignment
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -82,7 +89,9 @@ object reactMdTableStrings {
   def char: char = "char".asInstanceOf[char]
   
   @js.native
-  sealed trait checked extends WantedCheckboxProps
+  sealed trait checked
+    extends StObject
+       with WantedCheckboxProps
   @scala.inline
   def checked: checked = "checked".asInstanceOf[checked]
   
@@ -117,12 +126,16 @@ object reactMdTableStrings {
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
-  sealed trait defaultChecked extends WantedCheckboxProps
+  sealed trait defaultChecked
+    extends StObject
+       with WantedCheckboxProps
   @scala.inline
   def defaultChecked: defaultChecked = "defaultChecked".asInstanceOf[defaultChecked]
   
   @js.native
-  sealed trait descending extends SortOrder
+  sealed trait descending
+    extends StObject
+       with SortOrder
   @scala.inline
   def descending: descending = "descending".asInstanceOf[descending]
   
@@ -132,7 +145,9 @@ object reactMdTableStrings {
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait disableIconOverlay extends WantedCheckboxProps
+  sealed trait disableIconOverlay
+    extends StObject
+       with WantedCheckboxProps
   @scala.inline
   def disableIconOverlay: disableIconOverlay = "disableIconOverlay".asInstanceOf[disableIconOverlay]
   
@@ -172,22 +187,30 @@ object reactMdTableStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait icon extends WantedCheckboxProps
+  sealed trait icon
+    extends StObject
+       with WantedCheckboxProps
   @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
   
   @js.native
-  sealed trait iconClassName extends WantedCheckboxProps
+  sealed trait iconClassName
+    extends StObject
+       with WantedCheckboxProps
   @scala.inline
   def iconClassName: iconClassName = "iconClassName".asInstanceOf[iconClassName]
   
   @js.native
-  sealed trait iconStyle extends WantedCheckboxProps
+  sealed trait iconStyle
+    extends StObject
+       with WantedCheckboxProps
   @scala.inline
   def iconStyle: iconStyle = "iconStyle".asInstanceOf[iconStyle]
   
   @js.native
-  sealed trait indeterminate extends WantedCheckboxProps
+  sealed trait indeterminate
+    extends StObject
+       with WantedCheckboxProps
   @scala.inline
   def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
   
@@ -207,7 +230,9 @@ object reactMdTableStrings {
   def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
-  sealed trait left extends TableCellHorizontalAlignment
+  sealed trait left
+    extends StObject
+       with TableCellHorizontalAlignment
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -237,7 +262,9 @@ object reactMdTableStrings {
   def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
-  sealed trait middle extends TableCellVerticalAlignment
+  sealed trait middle
+    extends StObject
+       with TableCellVerticalAlignment
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   
@@ -252,7 +279,9 @@ object reactMdTableStrings {
   def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait name extends WantedCheckboxProps
+  sealed trait name
+    extends StObject
+       with WantedCheckboxProps
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   
@@ -262,7 +291,9 @@ object reactMdTableStrings {
   def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait none extends SortOrder
+  sealed trait none
+    extends StObject
+       with SortOrder
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
@@ -282,12 +313,16 @@ object reactMdTableStrings {
   def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait onChange extends WantedCheckboxProps
+  sealed trait onChange
+    extends StObject
+       with WantedCheckboxProps
   @scala.inline
   def onChange: onChange = "onChange".asInstanceOf[onChange]
   
   @js.native
-  sealed trait other extends SortOrder
+  sealed trait other
+    extends StObject
+       with SortOrder
   @scala.inline
   def other: other = "other".asInstanceOf[other]
   
@@ -327,7 +362,9 @@ object reactMdTableStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait right extends TableCellHorizontalAlignment
+  sealed trait right
+    extends StObject
+       with TableCellHorizontalAlignment
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -387,17 +424,23 @@ object reactMdTableStrings {
   def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait toggleClassName extends WantedCheckboxProps
+  sealed trait toggleClassName
+    extends StObject
+       with WantedCheckboxProps
   @scala.inline
   def toggleClassName: toggleClassName = "toggleClassName".asInstanceOf[toggleClassName]
   
   @js.native
-  sealed trait toggleStyle extends WantedCheckboxProps
+  sealed trait toggleStyle
+    extends StObject
+       with WantedCheckboxProps
   @scala.inline
   def toggleStyle: toggleStyle = "toggleStyle".asInstanceOf[toggleStyle]
   
   @js.native
-  sealed trait top extends TableCellVerticalAlignment
+  sealed trait top
+    extends StObject
+       with TableCellVerticalAlignment
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
@@ -412,7 +455,9 @@ object reactMdTableStrings {
   def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait value extends WantedCheckboxProps
+  sealed trait value
+    extends StObject
+       with WantedCheckboxProps
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   

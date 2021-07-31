@@ -2,31 +2,29 @@ package typings.carbonComponents
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AttribLabelCollapse extends StObject {
     
-    var attribLabelCollapse: String = js.native
+    var attribLabelCollapse: String
     
-    var attribLabelExpand: String = js.native
+    var attribLabelExpand: String
     
-    var classNavigationMenuPanelHeaderActionActive: String = js.native
+    var classNavigationMenuPanelHeaderActionActive: String
     
-    var eventAfterCollapsed: String = js.native
+    var eventAfterCollapsed: String
     
-    var eventAfterExpanded: String = js.native
+    var eventAfterExpanded: String
     
-    var eventBeforeCollapsed: String = js.native
+    var eventBeforeCollapsed: String
     
-    var eventBeforeExpanded: String = js.native
+    var eventBeforeExpanded: String
     
-    var initEventNames: js.Array[String] = js.native
+    var initEventNames: js.Array[String]
     
-    var selectorFocusableMenuItem: String = js.native
+    var selectorFocusableMenuItem: String
   }
   object AttribLabelCollapse {
     
@@ -81,12 +79,11 @@ object anon {
     }
   }
   
-  @js.native
   trait BACKWARD extends StObject {
     
-    var BACKWARD: Double = js.native
+    var BACKWARD: Double
     
-    var FORWARD: Double = js.native
+    var FORWARD: Double
   }
   object BACKWARD {
     
@@ -107,16 +104,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ClassTooltipHidden extends StObject {
     
-    var classTooltipHidden: String = js.native
+    var classTooltipHidden: String
     
-    var classTooltipVisible: String = js.native
+    var classTooltipVisible: String
     
-    var selectorInit: String = js.native
+    var selectorInit: String
     
-    var selectorTriggerButton: String = js.native
+    var selectorTriggerButton: String
   }
   object ClassTooltipHidden {
     
@@ -148,12 +144,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Element extends StObject {
     
-    var element: js.Any = js.native
+    var element: js.Any
     
-    var index: Double = js.native
+    var index: Double
   }
   object Element {
     
@@ -174,12 +169,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Left extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Left {
     
@@ -200,16 +194,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Max extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var step: Double = js.native
+    var step: Double
     
-    var value: Double = js.native
+    var value: Double
   }
   object Max {
     
@@ -236,12 +229,11 @@ object anon {
     }
   }
   
-  @js.native
   trait NewValue extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var newValue: Double = js.native
+    var newValue: Double
   }
   object NewValue {
     
@@ -262,22 +254,21 @@ object anon {
     }
   }
   
-  @js.native
   trait PasswordIsVisible extends StObject {
     
-    var passwordIsVisible: String = js.native
+    var passwordIsVisible: String
     
-    var selectorInit: String = js.native
+    var selectorInit: String
     
-    var selectorPasswordField: String = js.native
+    var selectorPasswordField: String
     
-    var selectorPasswordVisibilityButton: String = js.native
+    var selectorPasswordVisibilityButton: String
     
-    var selectorPasswordVisibilityTooltip: String = js.native
+    var selectorPasswordVisibilityTooltip: String
     
-    var svgIconVisibilityOff: String = js.native
+    var svgIconVisibilityOff: String
     
-    var svgIconVisibilityOn: String = js.native
+    var svgIconVisibilityOn: String
   }
   object PasswordIsVisible {
     

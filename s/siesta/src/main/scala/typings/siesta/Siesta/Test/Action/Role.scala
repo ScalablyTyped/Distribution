@@ -2,7 +2,6 @@ package typings.siesta.Siesta.Test.Action
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Role {
@@ -10,14 +9,13 @@ object Role {
   /**
     * @mixin
     */
-  @js.native
   trait IHasTarget extends StObject {
     
-    var el: js.UndefOr[js.Any] = js.native
+    var el: js.UndefOr[js.Any] = js.undefined
     
-    var passTargetToNext: js.UndefOr[Boolean] = js.native
+    var passTargetToNext: js.UndefOr[Boolean] = js.undefined
     
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
   }
   object IHasTarget {
     

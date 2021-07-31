@@ -2,23 +2,21 @@ package typings.braintreeWeb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowNewBrowserTab extends StObject {
   
-  var allowNewBrowserTab: js.UndefOr[Boolean] = js.native
+  var allowNewBrowserTab: js.UndefOr[Boolean] = js.undefined
   
-  var authorization: js.UndefOr[String] = js.native
+  var authorization: js.UndefOr[String] = js.undefined
   
-  var client: js.UndefOr[typings.braintreeWeb.clientMod.Client] = js.native
+  var client: js.UndefOr[typings.braintreeWeb.clientMod.Client] = js.undefined
   
-  var deepLinkReturnUrl: js.UndefOr[String] = js.native
+  var deepLinkReturnUrl: js.UndefOr[String] = js.undefined
   
-  var ignoreHistoryChanges: js.UndefOr[Boolean] = js.native
+  var ignoreHistoryChanges: js.UndefOr[Boolean] = js.undefined
   
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
 }
 object AllowNewBrowserTab {
   

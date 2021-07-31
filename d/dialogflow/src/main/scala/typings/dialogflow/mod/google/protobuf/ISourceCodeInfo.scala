@@ -3,15 +3,13 @@ package typings.dialogflow.mod.google.protobuf
 import typings.dialogflow.mod.google.protobuf.SourceCodeInfo.ILocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SourceCodeInfo. */
-@js.native
 trait ISourceCodeInfo extends StObject {
   
   /** SourceCodeInfo location */
-  var location: js.UndefOr[js.Array[ILocation] | Null] = js.native
+  var location: js.UndefOr[js.Array[ILocation] | Null] = js.undefined
 }
 object ISourceCodeInfo {
   

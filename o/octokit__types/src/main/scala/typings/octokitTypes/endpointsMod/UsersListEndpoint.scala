@@ -2,16 +2,14 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsersListEndpoint extends StObject {
   
   /**
     * The integer ID of the last User that you've seen.
     */
-  var since: js.UndefOr[String] = js.native
+  var since: js.UndefOr[String] = js.undefined
 }
 object UsersListEndpoint {
   

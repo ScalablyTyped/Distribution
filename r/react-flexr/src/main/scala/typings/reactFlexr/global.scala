@@ -7,12 +7,15 @@ import typings.reactFlexr.ReactFlexr.GridProps
 import typings.reactFlexr.ReactFlexr.OptimizedResize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object ReactFlexr {
+    
+    @JSGlobal("__ReactFlexr")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSGlobal("__ReactFlexr.Cell")
     @js.native
@@ -28,17 +31,14 @@ object global {
     @js.native
     val desk: String = js.native
     
-    @JSGlobal("__ReactFlexr.findBreakpoints")
-    @js.native
-    def findBreakpoints(): js.Array[ErgonomicType] | Boolean = js.native
+    @scala.inline
+    def findBreakpoints(): js.Array[ErgonomicType] | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("findBreakpoints")().asInstanceOf[js.Array[ErgonomicType] | Boolean]
     
-    @JSGlobal("__ReactFlexr.findMatch")
-    @js.native
-    def findMatch(arguments: ErgonomicType*): Boolean = js.native
+    @scala.inline
+    def findMatch(arguments: ErgonomicType*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("findMatch")(arguments.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSGlobal("__ReactFlexr.getCurrentBreakpoints")
-    @js.native
-    def getCurrentBreakpoints(): js.Array[ErgonomicType] = js.native
+    @scala.inline
+    def getCurrentBreakpoints(): js.Array[ErgonomicType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentBreakpoints")().asInstanceOf[js.Array[ErgonomicType]]
     
     @JSGlobal("__ReactFlexr.lap")
     @js.native
@@ -56,8 +56,7 @@ object global {
     @js.native
     val portable: String = js.native
     
-    @JSGlobal("__ReactFlexr.setBreakpoints")
-    @js.native
-    def setBreakpoints(breakpoints: js.Array[ErgonomicType]): Unit = js.native
+    @scala.inline
+    def setBreakpoints(breakpoints: js.Array[ErgonomicType]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBreakpoints")(breakpoints.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

@@ -2,11 +2,9 @@ package typings.officeJsPreview.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Body object, for use in `body.set({ ... })`. */
-@js.native
 trait BodyUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait BodyUpdateData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var font: js.UndefOr[FontUpdateData] = js.native
+  var font: js.UndefOr[FontUpdateData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait BodyUpdateData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -33,7 +31,7 @@ trait BodyUpdateData extends StObject {
     */
   var styleBuiltIn: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any
-  ] = js.native
+  ] = js.undefined
 }
 object BodyUpdateData {
   

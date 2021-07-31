@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HtmlTitle extends StObject {
   
-  var htmlTitle: js.UndefOr[String] = js.native
+  var htmlTitle: js.UndefOr[String] = js.undefined
   
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object HtmlTitle {
   

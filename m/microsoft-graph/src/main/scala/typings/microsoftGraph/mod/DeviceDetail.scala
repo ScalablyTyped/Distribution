@@ -2,32 +2,30 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceDetail extends StObject {
   
   // Indicates the browser information of the used for signing in.
-  var browser: js.UndefOr[NullableOption[String]] = js.native
+  var browser: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Refers to the UniqueID of the device used for signing in.
-  var deviceId: js.UndefOr[NullableOption[String]] = js.native
+  var deviceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Refers to the name of the device used for signing in.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether the device is compliant.
-  var isCompliant: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isCompliant: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether the device is managed.
-  var isManaged: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isManaged: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates the operating system name and version used for signing in.
-  var operatingSystem: js.UndefOr[NullableOption[String]] = js.native
+  var operatingSystem: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Provides information about whether the signed-in device is Workplace Joined, AzureAD Joined, Domain Joined.
-  var trustType: js.UndefOr[NullableOption[String]] = js.native
+  var trustType: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DeviceDetail {
   

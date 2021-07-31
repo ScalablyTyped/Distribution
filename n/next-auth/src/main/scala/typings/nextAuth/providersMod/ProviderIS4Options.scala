@@ -3,36 +3,27 @@ package typings.nextAuth.providersMod
 import typings.nextAuth.nextAuthStrings.`identity-server4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProviderIS4Options extends StObject {
   
-  var clientId: String = js.native
+  var clientId: String
   
-  var clientSecret: String = js.native
+  var clientSecret: String
   
-  var domain: String = js.native
+  var domain: String
   
-  var id: `identity-server4` = js.native
+  var id: `identity-server4`
   
-  var name: typings.nextAuth.nextAuthStrings.IdentityServer4 = js.native
+  var name: typings.nextAuth.nextAuthStrings.IdentityServer4
   
-  var scope: String = js.native
+  var scope: String
 }
 object ProviderIS4Options {
   
   @scala.inline
-  def apply(
-    clientId: String,
-    clientSecret: String,
-    domain: String,
-    id: `identity-server4`,
-    name: typings.nextAuth.nextAuthStrings.IdentityServer4,
-    scope: String
-  ): ProviderIS4Options = {
-    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
+  def apply(clientId: String, clientSecret: String, domain: String, scope: String): ProviderIS4Options = {
+    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], id = "identity-server4", name = "IdentityServer4", scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderIS4Options]
   }
   

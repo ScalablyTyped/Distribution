@@ -8,7 +8,6 @@ import typings.easyXapiSupertest.eventsMod.EventEmitter
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object streamMod {
@@ -74,12 +73,13 @@ object streamMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.easyXapiSupertest.streamMod.WritableOptions because var conflicts: highWaterMark. Inlined decodeStrings */ @js.native
-  trait DuplexOptions extends ReadableOptions {
+  - typings.easyXapiSupertest.streamMod.WritableOptions because var conflicts: highWaterMark. Inlined decodeStrings */ trait DuplexOptions
+    extends StObject
+       with ReadableOptions {
     
-    var allowHalfOpen: js.UndefOr[Boolean] = js.native
+    var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
     
-    var decodeStrings: js.UndefOr[Boolean] = js.native
+    var decodeStrings: js.UndefOr[Boolean] = js.undefined
   }
   object DuplexOptions {
     
@@ -106,14 +106,13 @@ object streamMod {
     }
   }
   
-  @js.native
   trait ReadableOptions extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
   }
   object ReadableOptions {
     
@@ -154,10 +153,11 @@ object streamMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.easyXapiSupertest.streamMod.WritableOptions because var conflicts: highWaterMark. Inlined decodeStrings */ @js.native
-  trait TransformOptions extends ReadableOptions {
+  - typings.easyXapiSupertest.streamMod.WritableOptions because var conflicts: highWaterMark. Inlined decodeStrings */ trait TransformOptions
+    extends StObject
+       with ReadableOptions {
     
-    var decodeStrings: js.UndefOr[Boolean] = js.native
+    var decodeStrings: js.UndefOr[Boolean] = js.undefined
   }
   object TransformOptions {
     
@@ -178,12 +178,11 @@ object streamMod {
     }
   }
   
-  @js.native
   trait WritableOptions extends StObject {
     
-    var decodeStrings: js.UndefOr[Boolean] = js.native
+    var decodeStrings: js.UndefOr[Boolean] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
   }
   object WritableOptions {
     

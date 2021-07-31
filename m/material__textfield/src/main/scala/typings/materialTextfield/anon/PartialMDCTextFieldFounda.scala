@@ -5,20 +5,18 @@ import typings.materialTextfield.helperTextFoundationMod.MDCTextFieldHelperTextF
 import typings.materialTextfield.iconFoundationMod.MDCTextFieldIconFoundation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material/textfield.@material/textfield/types.MDCTextFieldFoundationMap> */
-@js.native
 trait PartialMDCTextFieldFounda extends StObject {
   
-  var characterCounter: js.UndefOr[MDCTextFieldCharacterCounterFoundation] = js.native
+  var characterCounter: js.UndefOr[MDCTextFieldCharacterCounterFoundation] = js.undefined
   
-  var helperText: js.UndefOr[MDCTextFieldHelperTextFoundation] = js.native
+  var helperText: js.UndefOr[MDCTextFieldHelperTextFoundation] = js.undefined
   
-  var leadingIcon: js.UndefOr[MDCTextFieldIconFoundation] = js.native
+  var leadingIcon: js.UndefOr[MDCTextFieldIconFoundation] = js.undefined
   
-  var trailingIcon: js.UndefOr[MDCTextFieldIconFoundation] = js.native
+  var trailingIcon: js.UndefOr[MDCTextFieldIconFoundation] = js.undefined
 }
 object PartialMDCTextFieldFounda {
   

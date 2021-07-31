@@ -2,39 +2,37 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parser results returned by {@link XCharacterClassification.parseAnyToken()} and {@link XCharacterClassification.parsePredefinedToken()} . */
-@js.native
 trait ParseResult extends StObject {
   
   /** Number of code points (not UTF-16 code units) of the parsed token, not including leading whitespace. */
-  var CharLen: Double = js.native
+  var CharLen: Double
   
   /** {@link KParseTokens} flags of remaining characters of actual token matched. */
-  var ContFlags: Double = js.native
+  var ContFlags: Double
   
   /** If a quoted name or string is encountered the dequoted result goes here. */
-  var DequotedNameOrString: String = js.native
+  var DequotedNameOrString: String
   
   /** UTF-16 code unit index of first unprocessed character. */
-  var EndPos: Double = js.native
+  var EndPos: Double
   
   /** Count of ignored leading whitespace, in UTF-16 code units, not Unicode code points. */
-  var LeadingWhiteSpace: Double = js.native
+  var LeadingWhiteSpace: Double
   
   /**
     * {@link KParseTokens} flags of first character of actual token matched. If **TokenType** is a {@link KParseType.SINGLE_QUOTE_NAME} or a {@link
     * KParseType.DOUBLE_QUOTE_STRING} the first character is the first character inside the quotes, not the quote itself.
     */
-  var StartFlags: Double = js.native
+  var StartFlags: Double
   
   /** {@link KParseType} token type like {@link KParseType.IDENTNAME} . */
-  var TokenType: Double = js.native
+  var TokenType: Double
   
   /** Value of token in case of numeric. */
-  var Value: Double = js.native
+  var Value: Double
 }
 object ParseResult {
   

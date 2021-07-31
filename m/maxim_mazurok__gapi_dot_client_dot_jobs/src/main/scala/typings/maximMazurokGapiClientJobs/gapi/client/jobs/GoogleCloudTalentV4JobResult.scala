@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudTalentV4JobResult extends StObject {
   
   /** Here Job only contains basic information including name, company, language_code and requisition_id, use getJob method to retrieve detailed information of the created/updated job. */
-  var job: js.UndefOr[GoogleCloudTalentV4Job] = js.native
+  var job: js.UndefOr[GoogleCloudTalentV4Job] = js.undefined
   
   /** The status of the job processed. This field is populated if the processing of the job fails. */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object GoogleCloudTalentV4JobResult {
   

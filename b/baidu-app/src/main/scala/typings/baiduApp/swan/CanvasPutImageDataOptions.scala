@@ -3,13 +3,13 @@ package typings.baiduApp.swan
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CanvasPutImageDataOptions extends CanvasImageDataOptions {
+trait CanvasPutImageDataOptions
+  extends StObject
+     with CanvasImageDataOptions {
   
-  var data: Uint8ClampedArray = js.native
+  var data: Uint8ClampedArray
 }
 object CanvasPutImageDataOptions {
   

@@ -2,10 +2,8 @@ package typings.validator.mod.validator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsISO8601Options extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait IsISO8601Options extends StObject {
     *
     * @default false
     */
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object IsISO8601Options {
   

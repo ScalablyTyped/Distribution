@@ -4,7 +4,6 @@ import typings.astTypes.anon.LocRaw
 import typings.astTypes.namedTypesMod.namedTypes.BigIntLiteralTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -2,28 +2,26 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLocationEfsResponse extends StObject {
   
   /**
     * The time that the EFS location was created.
     */
-  var CreationTime: js.UndefOr[Time] = js.native
+  var CreationTime: js.UndefOr[Time] = js.undefined
   
-  var Ec2Config: js.UndefOr[typings.awsSdk.datasyncMod.Ec2Config] = js.native
+  var Ec2Config: js.UndefOr[typings.awsSdk.datasyncMod.Ec2Config] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the EFS location that was described.
     */
-  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.native
+  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
   
   /**
     * The URL of the EFS location that was described.
     */
-  var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.native
+  var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.undefined
 }
 object DescribeLocationEfsResponse {
   

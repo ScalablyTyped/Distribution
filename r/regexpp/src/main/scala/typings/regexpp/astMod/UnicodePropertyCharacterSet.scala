@@ -3,28 +3,27 @@ package typings.regexpp.astMod
 import typings.regexpp.regexppStrings.property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnicodePropertyCharacterSet
-  extends CharacterSet
+  extends StObject
      with NodeBase
-     with CharacterClassElement {
+     with CharacterClassElement
+     with CharacterSet {
   
-  var key: String = js.native
+  var key: String
   
-  var kind: property = js.native
+  var kind: property
   
-  var negate: Boolean = js.native
+  var negate: Boolean
   
   @JSName("parent")
-  var parent_UnicodePropertyCharacterSet: Alternative | Quantifier | CharacterClass = js.native
+  var parent_UnicodePropertyCharacterSet: Alternative | Quantifier | CharacterClass
   
   @JSName("type")
-  var type_UnicodePropertyCharacterSet: typings.regexpp.regexppStrings.CharacterSet = js.native
+  var type_UnicodePropertyCharacterSet: typings.regexpp.regexppStrings.CharacterSet
   
-  var value: String | Null = js.native
+  var value: String | Null
 }
 object UnicodePropertyCharacterSet {
   
@@ -32,15 +31,13 @@ object UnicodePropertyCharacterSet {
   def apply(
     end: Double,
     key: String,
-    kind: property,
     negate: Boolean,
     parent: Alternative | Quantifier | CharacterClass,
     raw: String,
-    start: Double,
-    `type`: typings.regexpp.regexppStrings.CharacterSet
+    start: Double
   ): UnicodePropertyCharacterSet = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = "property", negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = null)
+    __obj.updateDynamic("type")("CharacterSet")
     __obj.asInstanceOf[UnicodePropertyCharacterSet]
   }
   

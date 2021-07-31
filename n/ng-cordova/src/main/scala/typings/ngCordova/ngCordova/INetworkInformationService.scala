@@ -2,21 +2,19 @@ package typings.ngCordova.ngCordova
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INetworkInformationService extends StObject {
   
-  def clearOfflineWatch(): Unit = js.native
+  def clearOfflineWatch(): Unit
   
-  def clearOnlineWatch(): Unit = js.native
+  def clearOnlineWatch(): Unit
   
-  def getNetwork(): String = js.native
+  def getNetwork(): String
   
-  def isOffline(): Boolean = js.native
+  def isOffline(): Boolean
   
-  def isOnline(): Boolean = js.native
+  def isOnline(): Boolean
 }
 object INetworkInformationService {
   

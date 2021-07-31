@@ -2,30 +2,28 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharePointListAdapterRWObject extends StObject {
   
-  var ContentTypeId: String = js.native
+  var ContentTypeId: String
   
   @JSName("InfoPath.SharePointListAdapterRWObject_typekey")
-  var InfoPathDotSharePointListAdapterRWObject_typekey: SharePointListAdapterRWObject = js.native
+  var InfoPathDotSharePointListAdapterRWObject_typekey: SharePointListAdapterRWObject
   
-  var ListId: String = js.native
+  var ListId: String
   
-  val Name: String = js.native
+  val Name: String
   
-  def Query(): Unit = js.native
+  def Query(): Unit
   
-  val QueryAllowed: Boolean = js.native
+  val QueryAllowed: Boolean
   
-  var SiteUrl: String = js.native
+  var SiteUrl: String
   
-  def Submit(): Unit = js.native
+  def Submit(): Unit
   
-  val SubmitAllowed: Boolean = js.native
+  val SubmitAllowed: Boolean
 }
 object SharePointListAdapterRWObject {
   

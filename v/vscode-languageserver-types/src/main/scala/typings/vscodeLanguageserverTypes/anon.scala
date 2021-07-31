@@ -2,17 +2,15 @@ package typings.vscodeLanguageserverTypes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Language extends StObject {
     
-    var language: String = js.native
+    var language: String
     
-    var value: String = js.native
+    var value: String
   }
   object Language {
     

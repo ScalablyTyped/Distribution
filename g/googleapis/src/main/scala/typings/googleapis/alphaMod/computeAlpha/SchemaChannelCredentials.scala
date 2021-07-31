@@ -2,19 +2,17 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gRPC channel credentials to access the SDS server.
   */
-@js.native
 trait SchemaChannelCredentials extends StObject {
   
   /**
     * The call credentials to access the SDS server.
     */
-  var certificates: js.UndefOr[SchemaTlsCertificatePaths] = js.native
+  var certificates: js.UndefOr[SchemaTlsCertificatePaths] = js.undefined
   
   /**
     * The channel credentials to access the SDS server. This field can be set
@@ -22,7 +20,7 @@ trait SchemaChannelCredentials extends StObject {
     * SDS server. GCE_VM: Use local GCE VM credentials to access the SDS
     * server.
     */
-  var channelCredentialType: js.UndefOr[String] = js.native
+  var channelCredentialType: js.UndefOr[String] = js.undefined
 }
 object SchemaChannelCredentials {
   

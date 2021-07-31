@@ -10,30 +10,29 @@ import typings.astTypes.kindsMod.VariableDeclarationKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Statement, 'type'> */
-@js.native
 trait ForStatement
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with NodeKind
      with PrintableKind
      with StatementKind {
   
-  var body: StatementKind = js.native
+  var body: StatementKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var init: VariableDeclarationKind | ExpressionKind | Null = js.native
+  var init: VariableDeclarationKind | ExpressionKind | Null
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var test: ExpressionKind | Null = js.native
+  var test: ExpressionKind | Null
   
-  var `type`: typings.astTypes.astTypesStrings.ForStatement = js.native
+  var `type`: typings.astTypes.astTypesStrings.ForStatement
   
-  var update: ExpressionKind | Null = js.native
+  var update: ExpressionKind | Null
 }
 object ForStatement {
   

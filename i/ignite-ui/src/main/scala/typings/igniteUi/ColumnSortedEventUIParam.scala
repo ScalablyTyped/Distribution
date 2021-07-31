@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnSortedEventUIParam extends StObject {
   
   /**
     * Gets the column key.
     */
-  var columnKey: js.UndefOr[String] = js.native
+  var columnKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the sorting direction.
     */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the sorted expressions.
     */
-  var expressions: js.UndefOr[js.Any] = js.native
+  var expressions: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to GridSorting.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ColumnSortedEventUIParam {
   

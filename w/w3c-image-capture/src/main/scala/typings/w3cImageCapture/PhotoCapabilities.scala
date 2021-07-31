@@ -2,19 +2,17 @@ package typings.w3cImageCapture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhotoCapabilities extends StObject {
   
-  val fillLightMode: js.Array[FillLightMode] = js.native
+  val fillLightMode: js.Array[FillLightMode]
   
-  val imageHeight: MediaSettingsRange = js.native
+  val imageHeight: MediaSettingsRange
   
-  val imageWidth: MediaSettingsRange = js.native
+  val imageWidth: MediaSettingsRange
   
-  val redEyeReduction: RedEyeReduction = js.native
+  val redEyeReduction: RedEyeReduction
 }
 object PhotoCapabilities {
   

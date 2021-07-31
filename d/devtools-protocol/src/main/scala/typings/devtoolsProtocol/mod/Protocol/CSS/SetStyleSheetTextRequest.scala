@@ -2,15 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetStyleSheetTextRequest extends StObject {
   
-  var styleSheetId: StyleSheetId = js.native
+  var styleSheetId: StyleSheetId
   
-  var text: String = js.native
+  var text: String
 }
 object SetStyleSheetTextRequest {
   

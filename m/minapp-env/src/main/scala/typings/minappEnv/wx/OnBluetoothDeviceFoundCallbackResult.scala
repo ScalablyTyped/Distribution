@@ -2,14 +2,12 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnBluetoothDeviceFoundCallbackResult extends StObject {
   
   /** 新搜索到的设备列表 */
-  var devices: CallbackResultBlueToothDevice = js.native
+  var devices: CallbackResultBlueToothDevice
 }
 object OnBluetoothDeviceFoundCallbackResult {
   

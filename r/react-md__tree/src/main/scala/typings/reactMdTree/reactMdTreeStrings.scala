@@ -3,7 +3,6 @@ package typings.reactMdTree
 import typings.reactMdTree.typesMod.TreeItemKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdTreeStrings {
@@ -59,7 +58,9 @@ object reactMdTreeStrings {
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
-  sealed trait depth extends TreeItemKeys
+  sealed trait depth
+    extends StObject
+       with TreeItemKeys
   @scala.inline
   def depth: depth = "depth".asInstanceOf[depth]
   
@@ -84,12 +85,16 @@ object reactMdTreeStrings {
   def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
-  sealed trait expanded extends TreeItemKeys
+  sealed trait expanded
+    extends StObject
+       with TreeItemKeys
   @scala.inline
   def expanded: expanded = "expanded".asInstanceOf[expanded]
   
   @js.native
-  sealed trait focused extends TreeItemKeys
+  sealed trait focused
+    extends StObject
+       with TreeItemKeys
   @scala.inline
   def focused: focused = "focused".asInstanceOf[focused]
   
@@ -109,7 +114,9 @@ object reactMdTreeStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait id extends TreeItemKeys
+  sealed trait id
+    extends StObject
+       with TreeItemKeys
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   
@@ -124,7 +131,9 @@ object reactMdTreeStrings {
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait itemIndex extends TreeItemKeys
+  sealed trait itemIndex
+    extends StObject
+       with TreeItemKeys
   @scala.inline
   def itemIndex: itemIndex = "itemIndex".asInstanceOf[itemIndex]
   
@@ -139,7 +148,9 @@ object reactMdTreeStrings {
   def list: list = "list".asInstanceOf[list]
   
   @js.native
-  sealed trait listSize extends TreeItemKeys
+  sealed trait listSize
+    extends StObject
+       with TreeItemKeys
   @scala.inline
   def listSize: listSize = "listSize".asInstanceOf[listSize]
   
@@ -229,7 +240,9 @@ object reactMdTreeStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait renderChildItems extends TreeItemKeys
+  sealed trait renderChildItems
+    extends StObject
+       with TreeItemKeys
   @scala.inline
   def renderChildItems: renderChildItems = "renderChildItems".asInstanceOf[renderChildItems]
   
@@ -239,7 +252,9 @@ object reactMdTreeStrings {
   def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait selected extends TreeItemKeys
+  sealed trait selected
+    extends StObject
+       with TreeItemKeys
   @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
   

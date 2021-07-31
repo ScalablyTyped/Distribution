@@ -2,10 +2,8 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PromiseOptions extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait PromiseOptions extends StObject {
     * @param Function callback : The function to call when the promise is fulfilled, successful or not.
     * @return PromiseOptions : An instance of a promise
     */
-  def done(callback: js.Function): PromiseOptions = js.native
+  def done(callback: js.Function): PromiseOptions
   
   /**
     * Call this on a promise to indicate failure.
@@ -27,7 +25,7 @@ trait PromiseOptions extends StObject {
     * @param Object param : The value to pass to the promise's failure handler.
     * @return PromiseOptions : An instance of a promise
     */
-  def failure(param: js.Any): PromiseOptions = js.native
+  def failure(param: js.Any): PromiseOptions
   
   /**
     * Call this on a promise to indicate success.
@@ -36,7 +34,7 @@ trait PromiseOptions extends StObject {
     * @param Object param : The value to pass to the promise's success handler.
     * @return PromiseOptions : An instance of a promise
     */
-  def success(param: js.Any): PromiseOptions = js.native
+  def success(param: js.Any): PromiseOptions
   
   /**
     * Register callbacks from success and failure.
@@ -49,7 +47,7 @@ trait PromiseOptions extends StObject {
     * @param Function failureCallback : The function to call when the promise is unsuccessfully fulfilled
     * @return PromiseOptions : An instance of a promise
     */
-  def `then`(successCallback: js.Function, failureCallback: js.Function): PromiseOptions = js.native
+  def `then`(successCallback: js.Function, failureCallback: js.Function): PromiseOptions
 }
 object PromiseOptions {
   

@@ -12,7 +12,7 @@ Creates a Leaflet Feature Group that adds its child layers into a parent group w
 | Keywords           | leaflet, leaflet.markercluster, plugins, maps, subgroup |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 63856 |
+| # downloads        | 80559 |
 | # stars            | 1 |
 
 ## Links

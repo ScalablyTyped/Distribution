@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getInstanceProfileMod {
   
-  @JSImport("@pulumi/aws/iam/getInstanceProfile", "getInstanceProfile")
+  @JSImport("@pulumi/aws/iam/getInstanceProfile", JSImport.Namespace)
   @js.native
-  def getInstanceProfile(args: GetInstanceProfileArgs): js.Promise[GetInstanceProfileResult] = js.native
-  @JSImport("@pulumi/aws/iam/getInstanceProfile", "getInstanceProfile")
-  @js.native
-  def getInstanceProfile(args: GetInstanceProfileArgs, opts: InvokeOptions): js.Promise[GetInstanceProfileResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getInstanceProfile(args: GetInstanceProfileArgs): js.Promise[GetInstanceProfileResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceProfile")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInstanceProfileResult]]
+  @scala.inline
+  def getInstanceProfile(args: GetInstanceProfileArgs, opts: InvokeOptions): js.Promise[GetInstanceProfileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceProfile")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceProfileResult]]
+  
   trait GetInstanceProfileArgs extends StObject {
     
     /**
       * The friendly IAM instance profile name to match.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetInstanceProfileArgs {
     
@@ -39,46 +39,45 @@ object getInstanceProfileMod {
     }
   }
   
-  @js.native
   trait GetInstanceProfileResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the instance profile.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The string representation of the date the instance profile
       * was created.
       */
-    val createDate: String = js.native
+    val createDate: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * The path to the instance profile.
       */
-    val path: String = js.native
+    val path: String
     
     /**
       * The role arn associated with this instance profile.
       */
-    val roleArn: String = js.native
+    val roleArn: String
     
     /**
       * The role id associated with this instance profile.
       */
-    val roleId: String = js.native
+    val roleId: String
     
     /**
       * The role name associated with this instance profile.
       */
-    val roleName: String = js.native
+    val roleName: String
   }
   object GetInstanceProfileResult {
     

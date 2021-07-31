@@ -3,23 +3,24 @@ package typings.forkTsCheckerWebpackPlugin
 import typings.forkTsCheckerWebpackPlugin.loggerMod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerFactoryMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/logger/LoggerFactory", "createLogger")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/logger/LoggerFactory", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def createLogger(
     `type`: LoggerType,
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-  ): Logger = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/logger/LoggerFactory", "createLogger")
-  @js.native
+  ): Logger = (^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")(`type`.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any])).asInstanceOf[Logger]
+  @scala.inline
   def createLogger(
     `type`: Logger,
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-  ): Logger = js.native
+  ): Logger = (^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")(`type`.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any])).asInstanceOf[Logger]
   
   /* Rewritten from type alias, can be one of: 
     - typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.console

@@ -4,15 +4,13 @@ import typings.coinbase.anon.Amount
 import typings.coinbase.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Price extends StObject {
   
-  var data: Amount = js.native
+  var data: Amount
   
-  var warnings: js.UndefOr[js.Array[Id]] = js.native
+  var warnings: js.UndefOr[js.Array[Id]] = js.undefined
 }
 object Price {
   

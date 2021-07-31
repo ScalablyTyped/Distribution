@@ -4,14 +4,22 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cancellationTokenMod {
   
   @JSImport("builder-util-runtime/out/CancellationToken", "CancellationError")
   @js.native
-  class CancellationError () extends Error
+  class CancellationError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("builder-util-runtime/out/CancellationToken", "CancellationToken")
   @js.native

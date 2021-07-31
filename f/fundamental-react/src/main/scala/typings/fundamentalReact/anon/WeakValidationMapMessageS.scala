@@ -3,34 +3,32 @@ package typings.fundamentalReact.anon
 import typings.react.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/MessageStrip/MessageStrip.MessageStripProps> */
-@js.native
 trait WeakValidationMapMessageS extends StObject {
   
-  var buttonProps: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var buttonProps: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var disableStyles: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var disableStyles: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var dismissible: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var dismissible: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var link: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var link: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var linkProps: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var linkProps: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var linkText: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var linkText: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var localizedText: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var localizedText: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var noGlyph: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var noGlyph: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var onCloseClicked: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]]] = js.native
+  var onCloseClicked: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* repeated */ js.Any, js.Any]) | Null]]] = js.undefined
   
-  var `type`: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var `type`: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
 }
 object WeakValidationMapMessageS {
   
@@ -44,7 +42,7 @@ object WeakValidationMapMessageS {
   implicit class WeakValidationMapMessageSMutableBuilder[Self <: WeakValidationMapMessageS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setButtonProps(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
+    def setButtonProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
@@ -71,7 +69,7 @@ object WeakValidationMapMessageS {
     def setLink(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkProps(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
+    def setLinkProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLinkPropsUndefined: Self = StObject.set(x, "linkProps", js.undefined)
@@ -86,7 +84,7 @@ object WeakValidationMapMessageS {
     def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def setLocalizedText(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
+    def setLocalizedText(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
@@ -98,13 +96,13 @@ object WeakValidationMapMessageS {
     def setNoGlyphUndefined: Self = StObject.set(x, "noGlyph", js.undefined)
     
     @scala.inline
-    def setOnCloseClicked(value: Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]]): Self = StObject.set(x, "onCloseClicked", value.asInstanceOf[js.Any])
+    def setOnCloseClicked(value: Validator[js.UndefOr[(js.Function1[/* repeated */ js.Any, js.Any]) | Null]]): Self = StObject.set(x, "onCloseClicked", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCloseClickedUndefined: Self = StObject.set(x, "onCloseClicked", js.undefined)
     
     @scala.inline
-    def setType(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    def setType(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)

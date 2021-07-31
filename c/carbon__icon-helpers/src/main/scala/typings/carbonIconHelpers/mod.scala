@@ -5,10 +5,13 @@ import typings.carbonIconHelpers.anon.Height
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@carbon/icon-helpers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object defaultAttributes {
     
@@ -29,22 +32,17 @@ object mod {
     def preserveAspectRatio_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preserveAspectRatio")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@carbon/icon-helpers", "formatAttributes")
-  @js.native
-  def formatAttributes(attrs: js.Any): String = js.native
+  @scala.inline
+  def formatAttributes(attrs: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatAttributes")(attrs.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@carbon/icon-helpers", "getAttributes")
-  @js.native
-  def getAttributes(): Focusable = js.native
-  @JSImport("@carbon/icon-helpers", "getAttributes")
-  @js.native
-  def getAttributes(hasWidthHeightViewBoxAttributes: Height): Focusable = js.native
+  @scala.inline
+  def getAttributes(): Focusable = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributes")().asInstanceOf[Focusable]
+  @scala.inline
+  def getAttributes(hasWidthHeightViewBoxAttributes: Height): Focusable = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributes")(hasWidthHeightViewBoxAttributes.asInstanceOf[js.Any]).asInstanceOf[Focusable]
   
-  @JSImport("@carbon/icon-helpers", "toSVG")
-  @js.native
-  def toSVG(descriptor: js.Any): SVGSVGElement = js.native
+  @scala.inline
+  def toSVG(descriptor: js.Any): SVGSVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(descriptor.asInstanceOf[js.Any]).asInstanceOf[SVGSVGElement]
   
-  @JSImport("@carbon/icon-helpers", "toString")
-  @js.native
-  def toString_(descriptor: js.Any): String = js.native
+  @scala.inline
+  def toString_(descriptor: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(descriptor.asInstanceOf[js.Any]).asInstanceOf[String]
 }

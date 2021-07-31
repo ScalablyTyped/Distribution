@@ -2,63 +2,61 @@ package typings.sharepoint.CUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ControlProperties extends StObject {
   
-  var Command: String = js.native
+  var Command: String
   
-  var Id: String = js.native
+  var Id: String
   
-  var Image16by16: String = js.native
+  var Image16by16: String
   
-  var Image16by16Class: String = js.native
+  var Image16by16Class: String
   
-  var Image16by16Left: Double = js.native
+  var Image16by16Left: Double
   
-  var Image16by16Top: Double = js.native
+  var Image16by16Top: Double
   
-  var Image32by32: String = js.native
+  var Image32by32: String
   
-  var Image32by32Class: String = js.native
+  var Image32by32Class: String
   
-  var Image32by32Left: Double = js.native
+  var Image32by32Left: Double
   
-  var Image32by32Top: Double = js.native
+  var Image32by32Top: Double
   
-  var LabelCss: String = js.native
+  var LabelCss: String
   
-  var LabelText: String = js.native
+  var LabelText: String
   
-  var PopulateDynamically: String = js.native
+  var PopulateDynamically: String
   
-  var PopulateOnlyOnce: String = js.native
+  var PopulateOnlyOnce: String
   
-  var PopulateQueryCommand: String = js.native
+  var PopulateQueryCommand: String
   
-  var TemplateAlias: String = js.native
+  var TemplateAlias: String
   
-  var ToolTipDescription: String = js.native
+  var ToolTipDescription: String
   
-  var ToolTipHelpKeyWord: String = js.native
+  var ToolTipHelpKeyWord: String
   
-  var ToolTipImage32by32: String = js.native
+  var ToolTipImage32by32: String
   
-  var ToolTipImage32by32Class: String = js.native
+  var ToolTipImage32by32Class: String
   
-  var ToolTipImage32by32Left: Double = js.native
+  var ToolTipImage32by32Left: Double
   
-  var ToolTipImage32by32Top: Double = js.native
+  var ToolTipImage32by32Top: Double
   
-  var ToolTipSelectedItemTitle: String = js.native
+  var ToolTipSelectedItemTitle: String
   
-  var ToolTipShortcutKey: String = js.native
+  var ToolTipShortcutKey: String
   
-  var ToolTipTitle: String = js.native
+  var ToolTipTitle: String
   
-  var Width: String = js.native
+  var Width: String
 }
 object ControlProperties {
   

@@ -12,7 +12,7 @@ cwise's internal compiler
 | Keywords           | cwise, ndarray, compiler |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 9048931 |
+| # downloads        | 11184032 |
 | # stars            | 0 |
 
 ## Links

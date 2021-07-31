@@ -3,19 +3,17 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFActionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IActionDefinition extends StObject {
   
-  var ActionCreateSeparateAssignment: IActionCreateAssignment = js.native
+  var ActionCreateSeparateAssignment: IActionCreateAssignment
   
-  val ActionType: MFActionType = js.native
+  val ActionType: MFActionType
   
-  def Clear(): Unit = js.native
+  def Clear(): Unit
   
-  def Clone(): IActionDefinition = js.native
+  def Clone(): IActionDefinition
 }
 object IActionDefinition {
   

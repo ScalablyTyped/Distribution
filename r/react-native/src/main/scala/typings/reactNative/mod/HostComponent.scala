@@ -13,24 +13,24 @@ import typings.reactNative.anon.ReadonlyNativeMethods
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<react.react.ComponentClass<P, react.react.ComponentState>, std.Exclude<keyof react.react.ComponentClass<P, react.react.ComponentState>, 'new'>> */
 @js.native
 trait HostComponent[P]
-  extends Instantiable1[/* props */ P, (Component[P, js.Object, _]) with ReadonlyNativeMethods]
+  extends StObject
+     with Instantiable1[/* props */ P, (Component[P, js.Object, js.Any]) & ReadonlyNativeMethods]
      with Instantiable2[
       /* props */ P, 
       /* context */ js.Any, 
-      (Component[P, js.Object, _]) with ReadonlyNativeMethods
+      (Component[P, js.Object, js.Any]) & ReadonlyNativeMethods
     ] {
   
-  var childContextTypes: js.UndefOr[ValidationMap[_]] = js.native
+  var childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
   
-  var contextType: js.UndefOr[Context[_]] = js.native
+  var contextType: js.UndefOr[Context[js.Any]] = js.native
   
-  var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
+  var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
   
   var defaultProps: js.UndefOr[Partial[typings.reactNative.reactNativeStrings.defaultProps]] = js.native
   

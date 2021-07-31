@@ -2,23 +2,21 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureLayerEditsEvent extends StObject {
   
-  var addedAttachments: js.Array[FeatureEditResult] = js.native
+  var addedAttachments: js.Array[FeatureEditResult]
   
-  var addedFeatures: js.Array[FeatureEditResult] = js.native
+  var addedFeatures: js.Array[FeatureEditResult]
   
-  var deletedAttachments: js.Array[FeatureEditResult] = js.native
+  var deletedAttachments: js.Array[FeatureEditResult]
   
-  var deletedFeatures: js.Array[FeatureEditResult] = js.native
+  var deletedFeatures: js.Array[FeatureEditResult]
   
-  var updatedAttachments: js.Array[FeatureEditResult] = js.native
+  var updatedAttachments: js.Array[FeatureEditResult]
   
-  var updatedFeatures: js.Array[FeatureEditResult] = js.native
+  var updatedFeatures: js.Array[FeatureEditResult]
 }
 object FeatureLayerEditsEvent {
   

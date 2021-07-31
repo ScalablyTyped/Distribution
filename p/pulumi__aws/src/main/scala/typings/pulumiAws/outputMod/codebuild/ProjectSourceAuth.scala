@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.codebuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectSourceAuth extends StObject {
   
   /**
     * The resource value that applies to the specified authorization type.
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
   /**
     * The authorization type to use. The only valid value is `OAUTH`
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ProjectSourceAuth {
   

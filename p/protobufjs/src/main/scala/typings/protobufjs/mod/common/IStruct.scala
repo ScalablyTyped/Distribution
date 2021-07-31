@@ -3,14 +3,12 @@ package typings.protobufjs.mod.common
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a google.protobuf.Struct message. */
-@js.native
 trait IStruct extends StObject {
   
-  var fields: js.UndefOr[StringDictionary[IValue]] = js.native
+  var fields: js.UndefOr[StringDictionary[IValue]] = js.undefined
 }
 object IStruct {
   

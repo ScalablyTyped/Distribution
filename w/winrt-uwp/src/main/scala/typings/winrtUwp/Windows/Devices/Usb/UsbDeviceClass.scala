@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Devices.Usb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a way for the app to get an Advanced Query Syntax (AQS) string by specifying the class code, subclass code, and the protocol code defined by the device. The properties in this class are passed in the call to GetDeviceClassSelector . */
-@js.native
 trait UsbDeviceClass extends StObject {
   
   /** Gets or sets the class code of the device. */
-  var classCode: Double = js.native
+  var classCode: Double
   
   /** Gets or sets the protocol code of the device. */
-  var protocolCode: Double = js.native
+  var protocolCode: Double
   
   /** Gets or sets the subclass code of the device. */
-  var subclassCode: Double = js.native
+  var subclassCode: Double
 }
 object UsbDeviceClass {
   

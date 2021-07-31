@@ -3,28 +3,27 @@ package typings.typeorm
 import typings.typeorm.anon.InstantiableT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object containerMod {
   
-  @JSImport("typeorm/browser/container", "getFromContainer")
+  @JSImport("typeorm/browser/container", JSImport.Namespace)
   @js.native
-  def getFromContainer[T](someClass: ContainedType[T]): T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("typeorm/browser/container", "useContainer")
-  @js.native
-  def useContainer(iocContainer: ContainerInterface): Unit = js.native
-  @JSImport("typeorm/browser/container", "useContainer")
-  @js.native
-  def useContainer(iocContainer: ContainerInterface, options: UseContainerOptions): Unit = js.native
+  @scala.inline
+  def getFromContainer[T](someClass: ContainedType[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getFromContainer")(someClass.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  @scala.inline
+  def useContainer(iocContainer: ContainerInterface): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useContainer")(iocContainer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def useContainer(iocContainer: ContainerInterface, options: UseContainerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useContainer")(iocContainer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type ContainedType[T] = InstantiableT[T] | js.Function
   
-  @js.native
   trait ContainerInterface extends StObject {
     
-    def get[T](someClass: ContainedType[T]): T = js.native
+    def get[T](someClass: ContainedType[T]): T
   }
   object ContainerInterface {
     
@@ -42,18 +41,17 @@ object containerMod {
     }
   }
   
-  @js.native
   trait UseContainerOptions extends StObject {
     
     /**
       * If set to true, then default container will be used in the case if given container haven't returned anything.
       */
-    var fallback: js.UndefOr[Boolean] = js.native
+    var fallback: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to true, then default container will be used in the case if given container thrown an exception.
       */
-    var fallbackOnErrors: js.UndefOr[Boolean] = js.native
+    var fallbackOnErrors: js.UndefOr[Boolean] = js.undefined
   }
   object UseContainerOptions {
     

@@ -2,26 +2,24 @@ package typings.filesystem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface represents a file system.
   */
-@js.native
 trait FileSystem extends StObject {
   
   /**
     * This is the name of the file system. The specifics of naming filesystems is unspecified, but a name must be unique across the list of exposed file systems.
     * @readonly
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The root directory of the file system.
     * @readonly
     */
-  var root: DirectoryEntry = js.native
+  var root: DirectoryEntry
 }
 object FileSystem {
   

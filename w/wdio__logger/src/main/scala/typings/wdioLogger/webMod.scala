@@ -3,16 +3,15 @@ package typings.wdioLogger
 import typings.std.Console
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webMod {
   
   object default {
     
-    @JSImport("@wdio/logger/build/web", JSImport.Default)
-    @js.native
-    def apply(component: String): Console = js.native
+    @scala.inline
+    def apply(component: String): Console = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[Console]
+    
     @JSImport("@wdio/logger/build/web", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native

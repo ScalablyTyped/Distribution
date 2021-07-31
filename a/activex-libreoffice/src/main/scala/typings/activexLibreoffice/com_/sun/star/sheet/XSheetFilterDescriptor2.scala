@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,17 +16,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see SheetFilterDescriptor
   * @since OOo 3.2
   */
-@js.native
-trait XSheetFilterDescriptor2 extends XInterface {
+trait XSheetFilterDescriptor2
+  extends StObject
+     with XInterface {
   
   /** returns the collection of filter fields. */
-  var FilterFields2: SafeArray[TableFilterField2] = js.native
+  var FilterFields2: SafeArray[TableFilterField2]
   
   /** returns the collection of filter fields. */
-  def getFilterFields2(): SafeArray[TableFilterField2] = js.native
+  def getFilterFields2(): SafeArray[TableFilterField2]
   
   /** sets a new collection of filter fields. */
-  def setFilterFields2(aFilterFields: SeqEquiv[TableFilterField2]): Unit = js.native
+  def setFilterFields2(aFilterFields: SeqEquiv[TableFilterField2]): Unit
 }
 object XSheetFilterDescriptor2 {
   

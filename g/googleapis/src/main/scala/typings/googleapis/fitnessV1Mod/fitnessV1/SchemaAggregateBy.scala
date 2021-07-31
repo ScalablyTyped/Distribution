@@ -2,13 +2,11 @@ package typings.googleapis.fitnessV1Mod.fitnessV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The specification of which data to aggregate.
   */
-@js.native
 trait SchemaAggregateBy extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaAggregateBy extends StObject {
     * aggregation. The dataset in the response will have the same data source
     * ID.
     */
-  var dataSourceId: js.UndefOr[String] = js.native
+  var dataSourceId: js.UndefOr[String] = js.undefined
   
   /**
     * The data type to aggregate. All data sources providing this data type
@@ -25,7 +23,7 @@ trait SchemaAggregateBy extends StObject {
     * single dataset for this data type name. The dataset will have a data
     * source ID of derived:com.google.:com.google.android.gms:aggregated
     */
-  var dataTypeName: js.UndefOr[String] = js.native
+  var dataTypeName: js.UndefOr[String] = js.undefined
 }
 object SchemaAggregateBy {
   

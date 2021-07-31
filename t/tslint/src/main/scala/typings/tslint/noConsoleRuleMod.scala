@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noConsoleRuleMod {
@@ -22,9 +21,8 @@ object noConsoleRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/noConsoleRule", "Rule.FAILURE_STRING_FACTORY")
-    @js.native
-    def FAILURE_STRING_FACTORY(method: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING_FACTORY(method: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_FACTORY")(method.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noConsoleRule", "Rule.metadata")
     @js.native

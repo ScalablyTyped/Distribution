@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.ComboBox")
 @js.native
 class ComboBox protected ()
-  extends typings.ejWebAll.ej.ComboBox {
+  extends StObject
+     with typings.ejWebAll.ej.ComboBox {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
@@ -34,13 +34,13 @@ object ComboBox {
   object SortOrder extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.ComboBox.SortOrder with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.ComboBox.SortOrder & Double] = js.native
     
-    /* 1 */ val Ascending: typings.ejWebAll.ej.ComboBox.SortOrder.Ascending with Double = js.native
+    /* 1 */ val Ascending: typings.ejWebAll.ej.ComboBox.SortOrder.Ascending & Double = js.native
     
-    /* 2 */ val Descending: typings.ejWebAll.ej.ComboBox.SortOrder.Descending with Double = js.native
+    /* 2 */ val Descending: typings.ejWebAll.ej.ComboBox.SortOrder.Descending & Double = js.native
     
-    /* 0 */ val None: typings.ejWebAll.ej.ComboBox.SortOrder.None with Double = js.native
+    /* 0 */ val None: typings.ejWebAll.ej.ComboBox.SortOrder.None & Double = js.native
   }
   
   /* static member */

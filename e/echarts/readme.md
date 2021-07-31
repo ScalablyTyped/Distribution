@@ -4,21 +4,21 @@
 Typings are for version 4.9.0
 
 ## Library description:
-A powerful charting and visualization library for browser
+Apache ECharts is a powerful, interactive charting and data visualization library for browser
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | echarts |
-| Keywords           | visualization, canvas |
-| # releases         | 19 |
-| # dependents       | 1589 |
-| # downloads        | 9522358 |
-| # stars            | 19 |
+| Keywords           | echarts, data-visualization, charts, charting-library, visualization, apache, data-viz, canvas, svg |
+| # releases         | 22 |
+| # dependents       | 2016 |
+| # downloads        | 11669887 |
+| # stars            | 18 |
 
 ## Links
 - [Homepage](http://echarts.apache.org)
-- [Bugs](https://github.com/apache/incubator-echarts/issues)
-- [Repository](https://github.com/apache/incubator-echarts)
+- [Bugs](https://github.com/apache/echarts/issues)
+- [Repository](https://github.com/apache/echarts)
 - [Npm](https://www.npmjs.com/package/echarts)
     
 

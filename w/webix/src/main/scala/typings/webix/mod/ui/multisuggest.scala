@@ -4,13 +4,13 @@ import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webix", "ui.multisuggest")
 @js.native
 class multisuggest ()
-  extends typings.webix.webix.ui.baseview {
+  extends StObject
+     with typings.webix.webix.ui.baseview {
   
   @JSName("$enterKey")
   def $enterKey(args: js.Any*): js.Any = js.native
@@ -26,9 +26,12 @@ class multisuggest ()
   def attachEvent(`type`: multisuggestEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: multisuggestEventName, functor: WebixCallback, id: String): String | Double = js.native
   
+  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   @JSName("config")
   var config_multisuggest: multisuggestConfig = js.native

@@ -2,30 +2,28 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options that determine map parameters used when showing items.
   */
-@js.native
 trait MapShowItemsOptions extends StObject {
   
   /**
     * A Boolean value that determines whether the map is animated as the map
     * region changes to show the items.
     */
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Spacing that is added around the computed map region when showing items.
     */
-  var minimumSpan: js.UndefOr[CoordinateSpan] = js.native
+  var minimumSpan: js.UndefOr[CoordinateSpan] = js.undefined
   
   /**
     * The minimum longitudinal and latitudinal span the map should display.
     */
-  var padding: js.UndefOr[Padding] = js.native
+  var padding: js.UndefOr[Padding] = js.undefined
 }
 object MapShowItemsOptions {
   

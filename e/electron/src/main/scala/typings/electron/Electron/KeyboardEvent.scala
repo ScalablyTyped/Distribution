@@ -2,38 +2,36 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyboardEvent extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/keyboard-event
   /**
     * whether an Alt key was used in an accelerator to trigger the Event
     */
-  var altKey: js.UndefOr[Boolean] = js.native
+  var altKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * whether the Control key was used in an accelerator to trigger the Event
     */
-  var ctrlKey: js.UndefOr[Boolean] = js.native
+  var ctrlKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * whether a meta key was used in an accelerator to trigger the Event
     */
-  var metaKey: js.UndefOr[Boolean] = js.native
+  var metaKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * whether a Shift key was used in an accelerator to trigger the Event
     */
-  var shiftKey: js.UndefOr[Boolean] = js.native
+  var shiftKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * whether an accelerator was used to trigger the event as opposed to another user
     * gesture like mouse click
     */
-  var triggeredByAccelerator: js.UndefOr[Boolean] = js.native
+  var triggeredByAccelerator: js.UndefOr[Boolean] = js.undefined
 }
 object KeyboardEvent {
   

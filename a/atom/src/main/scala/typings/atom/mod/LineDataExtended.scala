@@ -2,20 +2,20 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LineDataExtended extends LineData {
+trait LineDataExtended
+  extends StObject
+     with LineData {
   
   /** Boolean that is true if a fold may be created here. */
-  var foldable: Boolean = js.native
+  var foldable: Boolean
   
   /** Number the maximum number of digits necessary to represent any known screen row. */
-  var maxDigits: Double = js.native
+  var maxDigits: Double
   
   /** Boolean if this screen row is the soft-wrapped continuation of the same buffer row. */
-  var softWrapped: Boolean = js.native
+  var softWrapped: Boolean
 }
 object LineDataExtended {
   

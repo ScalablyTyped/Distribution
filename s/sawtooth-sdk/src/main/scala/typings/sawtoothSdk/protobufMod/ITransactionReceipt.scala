@@ -3,23 +3,21 @@ package typings.sawtoothSdk.protobufMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITransactionReceipt extends StObject {
   
   /** TransactionReceipt data */
-  var data: js.UndefOr[js.Array[Uint8Array] | Null] = js.native
+  var data: js.UndefOr[js.Array[Uint8Array] | Null] = js.undefined
   
   /** TransactionReceipt events */
-  var events: js.UndefOr[js.Array[IEvent] | Null] = js.native
+  var events: js.UndefOr[js.Array[IEvent] | Null] = js.undefined
   
   /** TransactionReceipt stateChanges */
-  var stateChanges: js.UndefOr[js.Array[IStateChange] | Null] = js.native
+  var stateChanges: js.UndefOr[js.Array[IStateChange] | Null] = js.undefined
   
   /** TransactionReceipt transactionId */
-  var transactionId: js.UndefOr[String | Null] = js.native
+  var transactionId: js.UndefOr[String | Null] = js.undefined
 }
 object ITransactionReceipt {
   

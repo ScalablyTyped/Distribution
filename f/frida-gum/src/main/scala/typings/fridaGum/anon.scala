@@ -4,23 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.fridaGum.Java.MethodDispatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Base extends StObject {
     
-    var base: js.UndefOr[X86Register] = js.native
+    var base: js.UndefOr[X86Register] = js.undefined
     
-    var disp: Double = js.native
+    var disp: Double
     
-    var index: js.UndefOr[X86Register] = js.native
+    var index: js.UndefOr[X86Register] = js.undefined
     
-    var scale: Double = js.native
+    var scale: Double
     
-    var segment: js.UndefOr[X86Register] = js.native
+    var segment: js.UndefOr[X86Register] = js.undefined
   }
   object Base {
     
@@ -59,12 +57,11 @@ object anon {
     }
   }
   
-  @js.native
   trait BaseDisp extends StObject {
     
-    var base: js.UndefOr[MipsRegister] = js.native
+    var base: js.UndefOr[MipsRegister] = js.undefined
     
-    var disp: Double = js.native
+    var disp: Double
   }
   object BaseDisp {
     
@@ -88,7 +85,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Block extends StObject {
     
     /**
@@ -96,31 +92,31 @@ object anon {
       *
       * Useful to record a coarse execution trace.
       */
-    var block: js.UndefOr[Boolean] = js.native
+    var block: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to generate events for CALL/BLR instructions.
       */
-    var call: js.UndefOr[Boolean] = js.native
+    var call: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to generate an event whenever a basic block is compiled.
       *
       * Useful for coverage.
       */
-    var compile: js.UndefOr[Boolean] = js.native
+    var compile: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to generate events for all instructions.
       *
       * Not recommended as it's potentially a lot of data.
       */
-    var exec: js.UndefOr[Boolean] = js.native
+    var exec: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to generate events for RET instructions.
       */
-    var ret: js.UndefOr[Boolean] = js.native
+    var ret: js.UndefOr[Boolean] = js.undefined
   }
   object Block {
     
@@ -165,16 +161,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Disp extends StObject {
     
-    var base: js.UndefOr[ArmRegister] = js.native
+    var base: js.UndefOr[ArmRegister] = js.undefined
     
-    var disp: Double = js.native
+    var disp: Double
     
-    var index: js.UndefOr[ArmRegister] = js.native
+    var index: js.UndefOr[ArmRegister] = js.undefined
     
-    var scale: Double = js.native
+    var scale: Double
   }
   object Disp {
     
@@ -207,14 +202,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var base: js.UndefOr[Arm64Register] = js.native
+    var base: js.UndefOr[Arm64Register] = js.undefined
     
-    var disp: Double = js.native
+    var disp: Double
     
-    var index: js.UndefOr[Arm64Register] = js.native
+    var index: js.UndefOr[Arm64Register] = js.undefined
   }
   object Index {
     
@@ -244,12 +238,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: ArmShifter = js.native
+    var `type`: ArmShifter
     
-    var value: Double = js.native
+    var value: Double
   }
   object Type {
     
@@ -271,12 +264,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var `type`: Arm64Shifter = js.native
+    var `type`: Arm64Shifter
     
-    var value: Double = js.native
+    var value: Double
   }
   object Value {
     
@@ -299,9 +291,9 @@ object anon {
   }
   
   /* Inlined frida-gum.Java.Wrapper<{}> */
-  @js.native
   trait Wrapper
-    extends /* name */ StringDictionary[js.Any] {
+    extends StObject
+       with /* name */ StringDictionary[js.Any] {
     
     /**
       * Allocates a new instance without initializing it.
@@ -309,20 +301,20 @@ object anon {
       * Call `$init()` to initialize it.
       */
     @JSName("$alloc")
-    def $alloc(params: js.Any*): js.Any = js.native
+    def $alloc(params: js.Any*): js.Any
     /**
       * Allocates a new instance without initializing it.
       *
       * Call `$init()` to initialize it.
       */
     @JSName("$alloc")
-    var $alloc_Original: MethodDispatcher[js.Object] = js.native
+    var $alloc_Original: MethodDispatcher[js.Object]
     
     /**
       * Canonical name of class being wrapped.
       */
     @JSName("$className")
-    var $className: String = js.native
+    var $className: String
     
     /**
       * Eagerly deletes the underlying JNI global reference without having to
@@ -333,7 +325,7 @@ object anon {
       * there's a risk of running out of global handles.
       */
     @JSName("$dispose")
-    def $dispose(): Unit = js.native
+    def $dispose(): Unit
     
     /**
       * Initializes an instance that was allocated but not yet initialized.
@@ -342,7 +334,7 @@ object anon {
       * Replace the `implementation` property to hook a given constructor.
       */
     @JSName("$init")
-    def $init(params: js.Any*): js.Any = js.native
+    def $init(params: js.Any*): js.Any
     /**
       * Initializes an instance that was allocated but not yet initialized.
       * This wraps the constructor(s).
@@ -350,7 +342,7 @@ object anon {
       * Replace the `implementation` property to hook a given constructor.
       */
     @JSName("$init")
-    var $init_Original: MethodDispatcher[js.Object] = js.native
+    var $init_Original: MethodDispatcher[js.Object]
     
     /**
       * Allocates and initializes a new instance of the given class.
@@ -358,31 +350,80 @@ object anon {
       * Use this to create a new instance.
       */
     @JSName("$new")
-    def $new(params: js.Any*): js.Any = js.native
+    def $new(params: js.Any*): js.Any
     /**
       * Allocates and initializes a new instance of the given class.
       *
       * Use this to create a new instance.
       */
     @JSName("$new")
-    var $new_Original: MethodDispatcher[js.Object] = js.native
+    var $new_Original: MethodDispatcher[js.Object]
     
     /**
       * Method and field names exposed by this object’s class, not including
       * parent classes.
       */
     @JSName("$ownMembers")
-    var $ownMembers: js.Array[String] = js.native
+    var $ownMembers: js.Array[String]
     
     /**
       * Instance used for chaining up to super-class method implementations.
       */
     @JSName("$super")
-    var $super: typings.fridaGum.Java.Wrapper[js.Object] = js.native
+    var $super: typings.fridaGum.Java.Wrapper[js.Object]
     
     /**
       * Retrieves a `java.lang.Class` wrapper for the current class.
       */
-    var `class`: typings.fridaGum.Java.Wrapper[js.Object] = js.native
+    var `class`: typings.fridaGum.Java.Wrapper[js.Object]
+  }
+  object Wrapper {
+    
+    @scala.inline
+    def apply(
+      $alloc: MethodDispatcher[js.Object],
+      $className: String,
+      $dispose: () => Unit,
+      $init: MethodDispatcher[js.Object],
+      $new: MethodDispatcher[js.Object],
+      $ownMembers: js.Array[String],
+      $super: typings.fridaGum.Java.Wrapper[js.Object],
+      `class`: typings.fridaGum.Java.Wrapper[js.Object]
+    ): Wrapper = {
+      val __obj = js.Dynamic.literal($alloc = $alloc.asInstanceOf[js.Any], $className = $className.asInstanceOf[js.Any], $dispose = js.Any.fromFunction0($dispose), $init = $init.asInstanceOf[js.Any], $new = $new.asInstanceOf[js.Any], $ownMembers = $ownMembers.asInstanceOf[js.Any], $super = $super.asInstanceOf[js.Any])
+      __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Wrapper]
+    }
+    
+    @scala.inline
+    implicit class WrapperMutableBuilder[Self <: Wrapper] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def set$alloc(value: MethodDispatcher[js.Object]): Self = StObject.set(x, "$alloc", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def set$className(value: String): Self = StObject.set(x, "$className", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def set$dispose(value: () => Unit): Self = StObject.set(x, "$dispose", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def set$init(value: MethodDispatcher[js.Object]): Self = StObject.set(x, "$init", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def set$new(value: MethodDispatcher[js.Object]): Self = StObject.set(x, "$new", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def set$ownMembers(value: js.Array[String]): Self = StObject.set(x, "$ownMembers", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def set$ownMembersVarargs(value: String*): Self = StObject.set(x, "$ownMembers", js.Array(value :_*))
+      
+      @scala.inline
+      def set$super(value: typings.fridaGum.Java.Wrapper[js.Object]): Self = StObject.set(x, "$super", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setClass(value: typings.fridaGum.Java.Wrapper[js.Object]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    }
   }
 }

@@ -3,13 +3,13 @@ package typings.std
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A <select> HTML Element. These elements also share all of the properties and methods of other HTML elements via the HTMLElement interface. */
 @js.native
 trait HTMLSelectElement
-  extends HTMLElement
+  extends StObject
+     with HTMLElement
      with /* name */ NumberDictionary[HTMLOptionElement | HTMLOptGroupElement] {
   
   def add(element: HTMLOptGroupElement): Unit = js.native

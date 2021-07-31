@@ -5,7 +5,6 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("blessed", "BlessedProgram")
@@ -17,9 +16,9 @@ class BlessedProgram () extends EventEmitter {
   def HPositionRelative(param: Double): Boolean = js.native
   
   def HVPosition(): Boolean = js.native
-  def HVPosition(row: js.UndefOr[scala.Nothing], col: Double): Boolean = js.native
   def HVPosition(row: Double): Boolean = js.native
   def HVPosition(row: Double, col: Double): Boolean = js.native
+  def HVPosition(row: Unit, col: Double): Boolean = js.native
   
   def VPositionRelative(): Boolean = js.native
   def VPositionRelative(param: Double): Boolean = js.native
@@ -63,9 +62,9 @@ class BlessedProgram () extends EventEmitter {
   def charPosAbsolute(param: Double): Boolean = js.native
   
   def charset(): Boolean = js.native
-  def charset(`val`: js.UndefOr[scala.Nothing], level: Double): Boolean = js.native
   def charset(`val`: String): Boolean = js.native
   def charset(`val`: String, level: Double): Boolean = js.native
+  def charset(`val`: Unit, level: Double): Boolean = js.native
   
   def cht(): Boolean = js.native
   def cht(param: Double): Boolean = js.native
@@ -100,9 +99,9 @@ class BlessedProgram () extends EventEmitter {
   def cuf(param: Double): Boolean = js.native
   
   def cup(): Boolean = js.native
-  def cup(row: js.UndefOr[scala.Nothing], col: Double): Boolean = js.native
   def cup(row: Double): Boolean = js.native
   def cup(row: Double, col: Double): Boolean = js.native
+  def cup(row: Unit, col: Double): Boolean = js.native
   
   def cursorBackward(): Boolean = js.native
   def cursorBackward(param: Double): Boolean = js.native
@@ -128,9 +127,9 @@ class BlessedProgram () extends EventEmitter {
   def cursorNextLine(param: Double): Boolean = js.native
   
   def cursorPos(): Boolean = js.native
-  def cursorPos(row: js.UndefOr[scala.Nothing], col: Double): Boolean = js.native
   def cursorPos(row: Double): Boolean = js.native
   def cursorPos(row: Double, col: Double): Boolean = js.native
+  def cursorPos(row: Unit, col: Double): Boolean = js.native
   
   def cursorPrecedingLine(): Boolean = js.native
   def cursorPrecedingLine(param: Double): Boolean = js.native
@@ -149,9 +148,9 @@ class BlessedProgram () extends EventEmitter {
   def cuu(param: Double): Boolean = js.native
   
   def da(): Boolean = js.native
-  def da(param: js.UndefOr[scala.Nothing], callback: js.Function): Boolean = js.native
   def da(param: Double): Boolean = js.native
   def da(param: Double, callback: js.Function): Boolean = js.native
+  def da(param: Unit, callback: js.Function): Boolean = js.native
   
   def dch(): Boolean = js.native
   def dch(param: Double): Boolean = js.native
@@ -182,9 +181,9 @@ class BlessedProgram () extends EventEmitter {
   def decreqtparm(param: Double): Boolean = js.native
   
   def decrqlp(): Boolean = js.native
-  def decrqlp(param: js.UndefOr[scala.Nothing], callback: js.Function): Boolean = js.native
   def decrqlp(param: String): Boolean = js.native
   def decrqlp(param: String, callback: js.Function): Boolean = js.native
+  def decrqlp(param: Unit, callback: js.Function): Boolean = js.native
   
   def decrqm(): Boolean = js.native
   def decrqm(param: Double): Boolean = js.native
@@ -231,41 +230,21 @@ class BlessedProgram () extends EventEmitter {
   def destroy(): Unit = js.native
   
   def deviceStatuses(): Boolean = js.native
-  def deviceStatuses(
-    param: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    dec: js.UndefOr[scala.Nothing],
-    noBypass: Boolean
-  ): Boolean = js.native
-  def deviceStatuses(param: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], dec: Boolean): Boolean = js.native
-  def deviceStatuses(
-    param: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    dec: Boolean,
-    noBypass: Boolean
-  ): Boolean = js.native
-  def deviceStatuses(param: js.UndefOr[scala.Nothing], callback: js.Function): Boolean = js.native
-  def deviceStatuses(
-    param: js.UndefOr[scala.Nothing],
-    callback: js.Function,
-    dec: js.UndefOr[scala.Nothing],
-    noBypass: Boolean
-  ): Boolean = js.native
-  def deviceStatuses(param: js.UndefOr[scala.Nothing], callback: js.Function, dec: Boolean): Boolean = js.native
-  def deviceStatuses(param: js.UndefOr[scala.Nothing], callback: js.Function, dec: Boolean, noBypass: Boolean): Boolean = js.native
   def deviceStatuses(param: String): Boolean = js.native
-  def deviceStatuses(
-    param: String,
-    callback: js.UndefOr[scala.Nothing],
-    dec: js.UndefOr[scala.Nothing],
-    noBypass: Boolean
-  ): Boolean = js.native
-  def deviceStatuses(param: String, callback: js.UndefOr[scala.Nothing], dec: Boolean): Boolean = js.native
-  def deviceStatuses(param: String, callback: js.UndefOr[scala.Nothing], dec: Boolean, noBypass: Boolean): Boolean = js.native
   def deviceStatuses(param: String, callback: js.Function): Boolean = js.native
-  def deviceStatuses(param: String, callback: js.Function, dec: js.UndefOr[scala.Nothing], noBypass: Boolean): Boolean = js.native
   def deviceStatuses(param: String, callback: js.Function, dec: Boolean): Boolean = js.native
   def deviceStatuses(param: String, callback: js.Function, dec: Boolean, noBypass: Boolean): Boolean = js.native
+  def deviceStatuses(param: String, callback: js.Function, dec: Unit, noBypass: Boolean): Boolean = js.native
+  def deviceStatuses(param: String, callback: Unit, dec: Boolean): Boolean = js.native
+  def deviceStatuses(param: String, callback: Unit, dec: Boolean, noBypass: Boolean): Boolean = js.native
+  def deviceStatuses(param: String, callback: Unit, dec: Unit, noBypass: Boolean): Boolean = js.native
+  def deviceStatuses(param: Unit, callback: js.Function): Boolean = js.native
+  def deviceStatuses(param: Unit, callback: js.Function, dec: Boolean): Boolean = js.native
+  def deviceStatuses(param: Unit, callback: js.Function, dec: Boolean, noBypass: Boolean): Boolean = js.native
+  def deviceStatuses(param: Unit, callback: js.Function, dec: Unit, noBypass: Boolean): Boolean = js.native
+  def deviceStatuses(param: Unit, callback: Unit, dec: Boolean): Boolean = js.native
+  def deviceStatuses(param: Unit, callback: Unit, dec: Boolean, noBypass: Boolean): Boolean = js.native
+  def deviceStatuses(param: Unit, callback: Unit, dec: Unit, noBypass: Boolean): Boolean = js.native
   
   def disableGpm(): Unit = js.native
   
@@ -280,41 +259,21 @@ class BlessedProgram () extends EventEmitter {
   def down(param: Double): Boolean = js.native
   
   def dsr(): Boolean = js.native
-  def dsr(
-    param: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    dec: js.UndefOr[scala.Nothing],
-    noBypass: Boolean
-  ): Boolean = js.native
-  def dsr(param: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], dec: Boolean): Boolean = js.native
-  def dsr(
-    param: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    dec: Boolean,
-    noBypass: Boolean
-  ): Boolean = js.native
-  def dsr(param: js.UndefOr[scala.Nothing], callback: js.Function): Boolean = js.native
-  def dsr(
-    param: js.UndefOr[scala.Nothing],
-    callback: js.Function,
-    dec: js.UndefOr[scala.Nothing],
-    noBypass: Boolean
-  ): Boolean = js.native
-  def dsr(param: js.UndefOr[scala.Nothing], callback: js.Function, dec: Boolean): Boolean = js.native
-  def dsr(param: js.UndefOr[scala.Nothing], callback: js.Function, dec: Boolean, noBypass: Boolean): Boolean = js.native
   def dsr(param: String): Boolean = js.native
-  def dsr(
-    param: String,
-    callback: js.UndefOr[scala.Nothing],
-    dec: js.UndefOr[scala.Nothing],
-    noBypass: Boolean
-  ): Boolean = js.native
-  def dsr(param: String, callback: js.UndefOr[scala.Nothing], dec: Boolean): Boolean = js.native
-  def dsr(param: String, callback: js.UndefOr[scala.Nothing], dec: Boolean, noBypass: Boolean): Boolean = js.native
   def dsr(param: String, callback: js.Function): Boolean = js.native
-  def dsr(param: String, callback: js.Function, dec: js.UndefOr[scala.Nothing], noBypass: Boolean): Boolean = js.native
   def dsr(param: String, callback: js.Function, dec: Boolean): Boolean = js.native
   def dsr(param: String, callback: js.Function, dec: Boolean, noBypass: Boolean): Boolean = js.native
+  def dsr(param: String, callback: js.Function, dec: Unit, noBypass: Boolean): Boolean = js.native
+  def dsr(param: String, callback: Unit, dec: Boolean): Boolean = js.native
+  def dsr(param: String, callback: Unit, dec: Boolean, noBypass: Boolean): Boolean = js.native
+  def dsr(param: String, callback: Unit, dec: Unit, noBypass: Boolean): Boolean = js.native
+  def dsr(param: Unit, callback: js.Function): Boolean = js.native
+  def dsr(param: Unit, callback: js.Function, dec: Boolean): Boolean = js.native
+  def dsr(param: Unit, callback: js.Function, dec: Boolean, noBypass: Boolean): Boolean = js.native
+  def dsr(param: Unit, callback: js.Function, dec: Unit, noBypass: Boolean): Boolean = js.native
+  def dsr(param: Unit, callback: Unit, dec: Boolean): Boolean = js.native
+  def dsr(param: Unit, callback: Unit, dec: Boolean, noBypass: Boolean): Boolean = js.native
+  def dsr(param: Unit, callback: Unit, dec: Unit, noBypass: Boolean): Boolean = js.native
   
   def dynamicColors(): Boolean = js.native
   def dynamicColors(param: String): Boolean = js.native
@@ -389,9 +348,9 @@ class BlessedProgram () extends EventEmitter {
   def ht(): Boolean = js.native
   
   def hvp(): Boolean = js.native
-  def hvp(row: js.UndefOr[scala.Nothing], col: Double): Boolean = js.native
   def hvp(row: Double): Boolean = js.native
   def hvp(row: Double, col: Double): Boolean = js.native
+  def hvp(row: Unit, col: Double): Boolean = js.native
   
   def ich(): Boolean = js.native
   def ich(param: Double): Boolean = js.native
@@ -452,9 +411,9 @@ class BlessedProgram () extends EventEmitter {
   def log(): Boolean = js.native
   
   def lrestoreCursor(): Unit = js.native
-  def lrestoreCursor(key: js.UndefOr[scala.Nothing], hide: Boolean): Unit = js.native
   def lrestoreCursor(key: String): Unit = js.native
   def lrestoreCursor(key: String, hide: Boolean): Unit = js.native
+  def lrestoreCursor(key: Unit, hide: Boolean): Unit = js.native
   
   def lsaveCursor(): Unit = js.native
   def lsaveCursor(key: String): Unit = js.native
@@ -506,9 +465,9 @@ class BlessedProgram () extends EventEmitter {
   def po(): Boolean = js.native
   
   def pos(): Boolean = js.native
-  def pos(row: js.UndefOr[scala.Nothing], col: Double): Boolean = js.native
   def pos(row: Double): Boolean = js.native
   def pos(row: Double, col: Double): Boolean = js.native
+  def pos(row: Unit, col: Double): Boolean = js.native
   
   def print(text: String): Boolean = js.native
   def print(text: String, attr: Boolean): Boolean = js.native
@@ -524,9 +483,9 @@ class BlessedProgram () extends EventEmitter {
   def ps(): Boolean = js.native
   
   def rc(): Boolean = js.native
-  def rc(key: js.UndefOr[scala.Nothing], hide: Boolean): Boolean = js.native
   def rc(key: String): Boolean = js.native
   def rc(key: String, hide: Boolean): Boolean = js.native
+  def rc(key: Unit, hide: Boolean): Boolean = js.native
   
   def rcA(): Boolean = js.native
   
@@ -543,22 +502,22 @@ class BlessedProgram () extends EventEmitter {
   def repeatPrecedingCharacter(param: Double): Boolean = js.native
   
   def req_mouse_pos(): Boolean = js.native
-  def req_mouse_pos(param: js.UndefOr[scala.Nothing], callback: js.Function): Boolean = js.native
   def req_mouse_pos(param: String): Boolean = js.native
   def req_mouse_pos(param: String, callback: js.Function): Boolean = js.native
+  def req_mouse_pos(param: Unit, callback: js.Function): Boolean = js.native
   
   def reqmp(): Boolean = js.native
-  def reqmp(param: js.UndefOr[scala.Nothing], callback: js.Function): Boolean = js.native
   def reqmp(param: String): Boolean = js.native
   def reqmp(param: String, callback: js.Function): Boolean = js.native
+  def reqmp(param: Unit, callback: js.Function): Boolean = js.native
   
   def requestAnsiMode(): Boolean = js.native
   def requestAnsiMode(param: Double): Boolean = js.native
   
   def requestLocatorPosition(): Boolean = js.native
-  def requestLocatorPosition(param: js.UndefOr[scala.Nothing], callback: js.Function): Boolean = js.native
   def requestLocatorPosition(param: String): Boolean = js.native
   def requestLocatorPosition(param: String, callback: js.Function): Boolean = js.native
+  def requestLocatorPosition(param: Unit, callback: js.Function): Boolean = js.native
   
   def requestParameters(): Boolean = js.native
   def requestParameters(param: Double): Boolean = js.native
@@ -583,9 +542,9 @@ class BlessedProgram () extends EventEmitter {
   def response(name: String, text: String, callback: js.Function, noBypass: Boolean): Boolean = js.native
   
   def restoreCursor(): Boolean = js.native
-  def restoreCursor(key: js.UndefOr[scala.Nothing], hide: Boolean): Boolean = js.native
   def restoreCursor(key: String): Boolean = js.native
   def restoreCursor(key: String, hide: Boolean): Boolean = js.native
+  def restoreCursor(key: Unit, hide: Boolean): Boolean = js.native
   
   def restoreCursorA(): Boolean = js.native
   
@@ -661,9 +620,9 @@ class BlessedProgram () extends EventEmitter {
   def selectiveEraseRectangle(args: String*): Boolean = js.native
   
   def sendDeviceAttributes(): Boolean = js.native
-  def sendDeviceAttributes(param: js.UndefOr[scala.Nothing], callback: js.Function): Boolean = js.native
   def sendDeviceAttributes(param: Double): Boolean = js.native
   def sendDeviceAttributes(param: Double, callback: js.Function): Boolean = js.native
+  def sendDeviceAttributes(param: Unit, callback: js.Function): Boolean = js.native
   
   def setAttrInRectangle(args: String*): Boolean = js.native
   
@@ -691,9 +650,9 @@ class BlessedProgram () extends EventEmitter {
   def setMode(args: String*): Boolean = js.native
   
   def setMouse(): Unit = js.native
-  def setMouse(opt: js.UndefOr[scala.Nothing], enable: Boolean): Unit = js.native
   def setMouse(opt: js.Object): Unit = js.native
   def setMouse(opt: js.Object, enable: Boolean): Unit = js.native
+  def setMouse(opt: Unit, enable: Boolean): Unit = js.native
   
   def setPointerMode(args: String*): Boolean = js.native
   
@@ -728,9 +687,9 @@ class BlessedProgram () extends EventEmitter {
   def sigtstp(callback: js.Function): Boolean = js.native
   
   def simpleInsert(ch: String): Boolean = js.native
-  def simpleInsert(ch: String, i: js.UndefOr[scala.Nothing], attr: Boolean): Boolean = js.native
   def simpleInsert(ch: String, i: Double): Boolean = js.native
   def simpleInsert(ch: String, i: Double, attr: Boolean): Boolean = js.native
+  def simpleInsert(ch: String, i: Unit, attr: Boolean): Boolean = js.native
   
   def sm(args: String*): Boolean = js.native
   

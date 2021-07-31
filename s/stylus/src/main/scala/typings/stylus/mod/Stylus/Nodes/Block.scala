@@ -3,30 +3,30 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Block extends Node {
+trait Block
+  extends StObject
+     with Node {
   
-  var hasMedia: scala.Boolean = js.native
+  var hasMedia: scala.Boolean
   
-  var hasProperties: scala.Boolean = js.native
+  var hasProperties: scala.Boolean
   
-  var isEmpty: scala.Boolean = js.native
+  var isEmpty: scala.Boolean
   
-  var node: Node = js.native
+  var node: Node
   
-  var nodes: js.Array[Node] = js.native
+  var nodes: js.Array[Node]
   
-  var parent: Block = js.native
+  var parent: Block
   
   /**
     * Push a `node` to this block.
     */
-  def push(node: Node): scala.Unit = js.native
+  def push(node: Node): scala.Unit
   
-  var scope: scala.Boolean = js.native
+  var scope: scala.Boolean
 }
 object Block {
   

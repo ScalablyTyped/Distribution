@@ -2,19 +2,17 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformationResult[T /* <: Node */] extends StObject {
   
   /** Gets diagnostics for the transformation. */
-  var diagnostics: js.UndefOr[js.Array[DiagnosticWithLocation]] = js.native
+  var diagnostics: js.UndefOr[js.Array[DiagnosticWithLocation]] = js.undefined
   
   /**
     * Clean up EmitNode entries on any parse-tree nodes.
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * Emits a node with possible notification.
@@ -23,14 +21,14 @@ trait TransformationResult[T /* <: Node */] extends StObject {
     * @param node The node to emit.
     * @param emitCallback A callback used to emit the node.
     */
-  def emitNodeWithNotification(hint: EmitHint, node: Node, emitCallback: js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]): Unit = js.native
+  def emitNodeWithNotification(hint: EmitHint, node: Node, emitCallback: js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]): Unit
   
   /**
     * Indicates if a given node needs an emit notification
     *
     * @param node The node to emit.
     */
-  var isEmitNotificationEnabled: js.UndefOr[js.Function1[/* node */ Node, Boolean]] = js.native
+  var isEmitNotificationEnabled: js.UndefOr[js.Function1[/* node */ Node, Boolean]] = js.undefined
   
   /**
     * Gets a substitute for a node, if one is available; otherwise, returns the original node.
@@ -38,10 +36,10 @@ trait TransformationResult[T /* <: Node */] extends StObject {
     * @param hint A hint as to the intended usage of the node.
     * @param node The node to substitute.
     */
-  def substituteNode(hint: EmitHint, node: Node): Node = js.native
+  def substituteNode(hint: EmitHint, node: Node): Node
   
   /** Gets the transformed source files. */
-  var transformed: js.Array[T] = js.native
+  var transformed: js.Array[T]
 }
 object TransformationResult {
   
@@ -57,7 +55,7 @@ object TransformationResult {
   }
   
   @scala.inline
-  implicit class TransformationResultMutableBuilder[Self <: TransformationResult[_], T /* <: Node */] (val x: Self with TransformationResult[T]) extends AnyVal {
+  implicit class TransformationResultMutableBuilder[Self <: TransformationResult[?], T /* <: Node */] (val x: Self & TransformationResult[T]) extends AnyVal {
     
     @scala.inline
     def setDiagnostics(value: js.Array[DiagnosticWithLocation]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])

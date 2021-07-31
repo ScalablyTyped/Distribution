@@ -2,37 +2,37 @@ package typings.`3dBinPacking`
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bws {
   
   object packer {
     
-    @js.native
-    trait GAWrapperArray extends WrapperArray {
+    trait GAWrapperArray
+      extends StObject
+         with WrapperArray {
       
-      /* private */ def constructResult(): js.Any = js.native
+      /* private */ def constructResult(): js.Any
       
       /**
         * @brief Get optimization result.
         *
         * @return result map.
         */
-      def getResult(): js.Any = js.native
+      def getResult(): js.Any
       
-      var instanceArray: InstanceArray = js.native
+      var instanceArray: InstanceArray
       
-      def less(obj: GAWrapperArray): Boolean = js.native
+      def less(obj: GAWrapperArray): Boolean
       
-      var price: js.Any = js.native
+      var price: js.Any
       
-      var result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ js.Any = js.native
+      var result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ js.Any
       
       /**
         * @brief Validity of this sequence list.
         */
-      var valid: js.Any = js.native
+      var valid: js.Any
     }
     object GAWrapperArray {
       
@@ -89,8 +89,7 @@ object bws {
       * @author Jeongho Nam <http://samchon.org>
       */
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.IEntity * / any */ @js.native
-    trait Instance extends StObject {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.IEntity * / any */ trait Instance extends StObject {
       
       /**
         * <p> A type, identifier of derived class. </p>
@@ -101,54 +100,54 @@ object bws {
         *	<li> {@link Wrapper wrapper} </li>
         * <ul>
         */
-      def TYPE(): String = js.native
+      def TYPE(): String
       
       /**
         * Get height, length on the Y-axis in 3D.
         */
-      def getHeight(): Double = js.native
+      def getHeight(): Double
       
       /**
         * Get length, length on the Z-axis in 3D.
         */
-      def getLength(): Double = js.native
+      def getLength(): Double
       
       /**
         * Get name.
         */
-      def getName(): String = js.native
+      def getName(): String
       
       /**
         * Get (calculate) volume.
         *
         * @return width x height x length
         */
-      def getVolume(): Double = js.native
+      def getVolume(): Double
       
       /**
         * Get width, length on the X-axis in 3D.
         */
-      def getWidth(): Double = js.native
+      def getWidth(): Double
       
       /**
         * Set height, length on the Y-axis in 3D.
         */
-      def setHeight(`val`: Double): Unit = js.native
+      def setHeight(`val`: Double): Unit
       
       /**
         * Set length, length on the Z-axis in 3D.
         */
-      def setLength(`val`: Double): Unit = js.native
+      def setLength(`val`: Double): Unit
       
       /**
         * Set name.
         */
-      def setName(`val`: String): Unit = js.native
+      def setName(`val`: String): Unit
       
       /**
         * Set width, length on the X-axis in 3D.
         */
-      def setWidth(`val`: Double): Unit = js.native
+      def setWidth(`val`: Double): Unit
     }
     object Instance {
       
@@ -210,25 +209,24 @@ object bws {
       * @author Jeongho Nam <http://samchon.org>
       */
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.EntityArray<Instance> * / any */ @js.native
-    trait InstanceArray extends StObject {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.EntityArray<Instance> * / any */ trait InstanceArray extends StObject {
       
       /**
         * @inheritdoc
         */
-      def CHILD_TAG(): String = js.native
+      def CHILD_TAG(): String
       
       /**
         * @inheritdoc
         */
-      def TAG(): String = js.native
+      def TAG(): String
       
       /**
         * @inheritdoc
         */
       def createChild(
         xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
-      ): Instance = js.native
+      ): Instance
     }
     object InstanceArray {
       
@@ -267,55 +265,54 @@ object bws {
       * @author Jeongho Nam <http://samchon.org>
       */
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @js.native
-    trait InstanceForm extends StObject {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ trait InstanceForm extends StObject {
       
       @JSName("$count")
-      var $count: String = js.native
+      var $count: String
       
       @JSName("$height")
-      var $height: String = js.native
+      var $height: String
       
       @JSName("$length")
-      var $length: String = js.native
+      var $length: String
       
       @JSName("$name")
-      var $name: String = js.native
+      var $name: String
       
       @JSName("$width")
-      var $width: String = js.native
+      var $width: String
       
       /**
         * @inheritdoc
         */
-      def TAG(): String = js.native
+      def TAG(): String
       
       /**
         * @inheritdoc
         */
       def construct(
         xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
-      ): Unit = js.native
+      ): Unit
       
       /**
         * Repeated count of the {@link instance}.
         */
-      var count: js.Any = js.native
+      var count: js.Any
       
-      /* private */ def createInstance(xml: js.Any): js.Any = js.native
+      /* private */ def createInstance(xml: js.Any): js.Any
       
-      def getCount(): Double = js.native
+      def getCount(): Double
       
-      def getInstance(): Instance = js.native
+      def getInstance(): Instance
       
       /**
         * A duplicated Instance.
         */
-      var instance: js.Any = js.native
+      var instance: js.Any
       
-      def key(): js.Any = js.native
+      def key(): js.Any
       
-      def setCount(`val`: Double): Unit = js.native
+      def setCount(`val`: Double): Unit
       
       /**
         * <p> Repeated {@link instance} to {@link InstanceArray}.
@@ -327,12 +324,12 @@ object bws {
         *
         * @return An array of instance containing repeated {@link instance}.
         */
-      def toInstanceArray(): InstanceArray = js.native
+      def toInstanceArray(): InstanceArray
       
       /**
         * @inheritdoc
         */
-      def toXML(): js.Any = js.native
+      def toXML(): js.Any
     }
     object InstanceForm {
       
@@ -420,23 +417,22 @@ object bws {
       * @author Jeongho Nam <http://samchon.org>
       */
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.EntityArrayCollection<InstanceForm> * / any */ @js.native
-    trait InstanceFormArray extends StObject {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.EntityArrayCollection<InstanceForm> * / any */ trait InstanceFormArray extends StObject {
       
-      def CHILD_TAG(): String = js.native
+      def CHILD_TAG(): String
       
-      def TAG(): String = js.native
+      def TAG(): String
       
       def createChild(
         xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
-      ): InstanceForm = js.native
+      ): InstanceForm
       
       /**
         * Convert {@link InstanceForm} objects to {@link InstanceArray}.
         *
         * @return An array of instance containing repeated instances in {@link InstanceForm} objects.
         */
-      def toInstanceArray(): InstanceArray = js.native
+      def toInstanceArray(): InstanceArray
     }
     object InstanceFormArray {
       
@@ -490,30 +486,29 @@ object bws {
       * @author Jeongho Nam <http://samchon.org>
       */
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @js.native
-    trait Packer extends StObject {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ trait Packer extends StObject {
       
       /**
         * @inheritdoc
         */
-      def TAG(): String = js.native
+      def TAG(): String
       
       /**
         * @inheritdoc
         */
       def construct(
         xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
-      ): Unit = js.native
+      ): Unit
       
       /**
         * Get instanceArray.
         */
-      def getInstanceArray(): InstanceArray = js.native
+      def getInstanceArray(): InstanceArray
       
       /**
         * Get wrapperArray.
         */
-      def getWrapperArray(): WrapperArray = js.native
+      def getWrapperArray(): WrapperArray
       
       /**
         * @brief Initialize sequence list (gene_array).
@@ -540,18 +535,18 @@ object bws {
         *
         * @return Initial sequence list.
         */
-      /* protected */ def initGenes(): GAWrapperArray = js.native
+      /* protected */ def initGenes(): GAWrapperArray
       
       /**
         * Instances trying to pack into the wrapper.
         */
-      var instanceArray: InstanceArray = js.native
+      var instanceArray: InstanceArray
       
       /**
         * <p> Deduct
         *
         */
-      def optimize(): WrapperArray = js.native
+      def optimize(): WrapperArray
       
       /**
         * Try to repack each wrappers to another type.
@@ -559,17 +554,17 @@ object bws {
         * @param $wrappers Wrappers to repack.
         * @return Re-packed wrappers.
         */
-      /* protected */ def repack($wrappers: WrapperArray): WrapperArray = js.native
+      /* protected */ def repack($wrappers: WrapperArray): WrapperArray
       
       /**
         * @inheritdoc
         */
-      def toXML(): js.Any = js.native
+      def toXML(): js.Any
       
       /**
         * Candidate wrappers who can contain instances.
         */
-      var wrapperArray: WrapperArray = js.native
+      var wrapperArray: WrapperArray
     }
     object Packer {
       
@@ -633,34 +628,33 @@ object bws {
       * @author Jeongho Nam <http://samchon.org>
       */
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @js.native
-    trait PackerForm extends StObject {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ trait PackerForm extends StObject {
       
-      def TAG(): String = js.native
+      def TAG(): String
       
       def construct(
         xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
-      ): Unit = js.native
+      ): Unit
       
-      def getInstanceFormArray(): InstanceFormArray = js.native
+      def getInstanceFormArray(): InstanceFormArray
       
-      def getWrapperArray(): WrapperArray = js.native
+      def getWrapperArray(): WrapperArray
       
       /**
         * Form of Instances to pack.
         */
-      var instanceFormArray: js.Any = js.native
+      var instanceFormArray: js.Any
       
-      def optimize(): WrapperArray = js.native
+      def optimize(): WrapperArray
       
-      def toPacker(): Packer = js.native
+      def toPacker(): Packer
       
-      def toXML(): js.Any = js.native
+      def toXML(): js.Any
       
       /**
         * Type of Wrappers to be used.
         */
-      var wrapperArray: js.Any = js.native
+      var wrapperArray: js.Any
     }
     object PackerForm {
       
@@ -720,45 +714,46 @@ object bws {
       * @author Jeongho Nam <http://samchon.org>
       */
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @js.native
-    trait Product extends Instance {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ trait Product
+      extends StObject
+         with Instance {
       
       /**
         * @inheritdoc
         */
-      def TAG(): String = js.native
+      def TAG(): String
       
       /**
         * Height of the Product, length on the Y-axis in 3D.
         */
-      var height: Double = js.native
+      var height: Double
       
       /**
         * Key of a Product is its name.
         */
-      def key(): js.Any = js.native
+      def key(): js.Any
       
       /**
         * Length of the Product, length on the Z-axis in 3D.
         */
-      var length: Double = js.native
+      var length: Double
       
       /**
         * <p> Name, key of the Product. </p>
         *
         * <p> The name must be unique because a name identifies a {@link Product}. </p>
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * @inheritdoc
         */
-      def toXML(): js.Any = js.native
+      def toXML(): js.Any
       
       /**
         * Width of the Product, length on the X-axis in 3D.
         */
-      var width: Double = js.native
+      var width: Double
     }
     object Product {
       
@@ -825,43 +820,42 @@ object bws {
       * @author Jeongho Nam <http://samchon.org>
       */
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @js.native
-    trait Wrap extends StObject {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ trait Wrap extends StObject {
       
       @JSName("$instanceName")
-      val $instanceName: String = js.native
+      val $instanceName: String
       
       @JSName("$layoutScale")
-      val $layoutScale: String = js.native
+      val $layoutScale: String
       
       @JSName("$position")
-      val $position: String = js.native
+      val $position: String
       
       /**
         * @inheritdoc
         */
-      def TAG(): String = js.native
+      def TAG(): String
       
       /**
         * @brief Orientation change is occured in level of the packer.
         *
         * @details orientation Packer's new orientation.
         */
-      def changeWrapperOrientation(orientation: Double): Unit = js.native
+      def changeWrapperOrientation(orientation: Double): Unit
       
       /**
         * @inheritdoc
         */
       def construct(
         xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
-      ): Unit = js.native
+      ): Unit
       
       /**
         * Factory method of wrapped Instance.
         *
         * @param type Type of contained Instance's type.
         */
-      /* protected */ def createInstance(`type`: String): Instance = js.native
+      /* protected */ def createInstance(`type`: String): Instance
       
       /**
         * @brief Estimate orientation by given size.
@@ -870,74 +864,74 @@ object bws {
         * @param height Height by placement.
         * @param length Length by placement.
         */
-      def estimateOrientation(width: Double, height: Double, length: Double): Unit = js.native
+      def estimateOrientation(width: Double, height: Double, length: Double): Unit
       
       /**
         * Get instance.
         */
-      def getInstance(): Instance = js.native
+      def getInstance(): Instance
       
       /**
         * Get height.
         */
-      def getLayoutHeight(): Double = js.native
+      def getLayoutHeight(): Double
       
       /**
         * Get width.
         */
-      def getLayoutWidth(): Double = js.native
+      def getLayoutWidth(): Double
       
       /**
         * Get length.
         */
-      def getLength(): Double = js.native
+      def getLength(): Double
       
       /**
         * Get orientation.
         */
-      def getOrientation(): Double = js.native
+      def getOrientation(): Double
       
       /**
         * Get volume.
         */
-      def getVolume(): Double = js.native
+      def getVolume(): Double
       
       /**
         * Get wrapper.
         */
-      def getWrapper(): Wrapper = js.native
+      def getWrapper(): Wrapper
       
       /**
         * Get x.
         */
-      def getX(): Double = js.native
+      def getX(): Double
       
       /**
         * Get y.
         */
-      def getY(): Double = js.native
+      def getY(): Double
       
       /**
         * Get z.
         */
-      def getZ(): Double = js.native
+      def getZ(): Double
       
       /**
         * An instance wrapped into the {@link wrapper}.
         */
-      var instance: Instance = js.native
+      var instance: Instance
       
       /**
         * Placement orientation of wrapped {@link instance}.
         */
-      var orientation: Double = js.native
+      var orientation: Double
       
       /**
         * Set orientation.
         *
         * @param orientation Orientation code (1 to 6).
         */
-      def setOrientation(orientation: Double): Unit = js.native
+      def setOrientation(orientation: Double): Unit
       
       /**
         * Set position.
@@ -946,32 +940,32 @@ object bws {
         * @param y Coordinate-Y of the instance placement in the wrapper.
         * @param z Coordinate-Z of the instance placement in the wrapper.
         */
-      def setPosition(x: Double, y: Double, z: Double): Unit = js.native
+      def setPosition(x: Double, y: Double, z: Double): Unit
       
       /**
         * @inheritdoc
         */
-      def toXML(): js.Any = js.native
+      def toXML(): js.Any
       
       /**
         * A wrapper wrapping the {@link instance}.
         */
-      var wrapper: Wrapper = js.native
+      var wrapper: Wrapper
       
       /**
         * Coordinate-X of the instance placement in the wrapper.
         */
-      var x: Double = js.native
+      var x: Double
       
       /**
         * Coordinate-Y of the instance placement in the wrapper.
         */
-      var y: Double = js.native
+      var y: Double
       
       /**
         * Coordinate-Z of the instance placement in the wrapper.
         */
-      var z: Double = js.native
+      var z: Double
     }
     object Wrap {
       
@@ -1103,42 +1097,43 @@ object bws {
       * @author Jeongho Nam <http://samchon.org>
       */
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.EntityDeque<Wrap> * / any */ @js.native
-    trait Wrapper extends Instance {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.EntityDeque<Wrap> * / any */ trait Wrapper
+      extends StObject
+         with Instance {
       
       @JSName("$height")
-      var $height: String = js.native
+      var $height: String
       
       @JSName("$length")
-      var $length: String = js.native
+      var $length: String
       
       @JSName("$name")
-      var $name: String = js.native
+      var $name: String
       
       @JSName("$price")
-      var $price: String = js.native
+      var $price: String
       
       @JSName("$scale")
-      val $scale: String = js.native
+      val $scale: String
       
       @JSName("$spaceUtilization")
-      val $spaceUtilization: String = js.native
+      val $spaceUtilization: String
       
       @JSName("$thickness")
-      var $thickness: String = js.native
+      var $thickness: String
       
       @JSName("$width")
-      var $width: String = js.native
+      var $width: String
       
       /**
         * @inheritdoc
         */
-      def CHILD_TAG(): String = js.native
+      def CHILD_TAG(): String
       
       /**
         * @inheritdoc
         */
-      def TAG(): String = js.native
+      def TAG(): String
       
       /**
         * <p> Wrapper is enough greater? </p>
@@ -1148,16 +1143,16 @@ object bws {
         * @param instance An Instance to test.
         * @return Enough greater or not.
         */
-      def containable(instance: Instance): Boolean = js.native
+      def containable(instance: Instance): Boolean
       
       /**
         * @inheritdoc
         */
       def createChild(
         xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
-      ): Wrap = js.native
+      ): Wrap
       
-      def equals(obj: Wrapper): Boolean = js.native
+      def equals(obj: Wrapper): Boolean
       
       /**
         * <p> Get (calculate) containable height, length on the Y-axis in 3D. </p>
@@ -1166,7 +1161,7 @@ object bws {
         *
         * @return height - (2 x thickness)
         */
-      def getContainableHeight(): Double = js.native
+      def getContainableHeight(): Double
       
       /**
         * <p> Get (calculate) containable length, length on the Z-axis in 3D. </p>
@@ -1175,7 +1170,7 @@ object bws {
         *
         * @return length - (2 x thickness)
         */
-      def getContainableLength(): Double = js.native
+      def getContainableLength(): Double
       
       /**
         * <p> Get (calculate) containable volume. </p>
@@ -1184,7 +1179,7 @@ object bws {
         *
         * @return volume - {(2 x thickness) ^ 3}
         */
-      def getContainableVolume(): Double = js.native
+      def getContainableVolume(): Double
       
       /**
         * <p> Get (calculate) containable width, length on the X-axis in 3D. </p>
@@ -1193,61 +1188,61 @@ object bws {
         *
         * @return width - (2 x thickness)
         */
-      def getContainableWidth(): Double = js.native
+      def getContainableWidth(): Double
       
       /**
         * Get price.
         */
-      def getPrice(): Double = js.native
+      def getPrice(): Double
       
       /**
         * Get thickness.
         */
-      def getThickness(): Double = js.native
+      def getThickness(): Double
       
       /**
         * Get utilization ratio of containable volume.
         *
         * @return utilization ratio.
         */
-      def getUtilization(): Double = js.native
+      def getUtilization(): Double
       
       /**
         * Height of the Wrapper, length on the Y-axis in 3D.
         */
-      var height: Double = js.native
+      var height: Double
       
       /**
         * Key of a Wrapper is its name.
         */
-      def key(): js.Any = js.native
+      def key(): js.Any
       
       /**
         * Length of the Wrapper, length on the Z-axis in 3D.
         */
-      var length: Double = js.native
+      var length: Double
       
       /**
         * <p> Name, key of the Wrapper. </p>
         *
         * <p> The name represents a type of Wrapper and identifies the Wrapper. </p>
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * Price, cost of using an Wrapper.
         */
-      var price: Double = js.native
+      var price: Double
       
       /**
         * Set price.
         */
-      def setPrice(`val`: Double): Unit = js.native
+      def setPrice(`val`: Double): Unit
       
       /**
         * Set thickness.
         */
-      def setThickness(`val`: Double): Unit = js.native
+      def setThickness(`val`: Double): Unit
       
       /**
         * <p> Thickness, margin of a Wrapper causes shrinkness of containable volume. </p>
@@ -1255,17 +1250,17 @@ object bws {
         * <p> The thickness reduces each dimension's containable size (dimension - 2*thickness),
         * so finally, it reduces total containable volume (-8 * thickness^3). </p>
         */
-      var thickness: Double = js.native
+      var thickness: Double
       
       /**
         * @inheritdoc
         */
-      def toXML(): js.Any = js.native
+      def toXML(): js.Any
       
       /**
         * Width of the Wrapper, length on the X-axis in 3D.
         */
-      var width: Double = js.native
+      var width: Double
     }
     object Wrapper {
       
@@ -1415,35 +1410,34 @@ object bws {
     }
     
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.EntityArrayCollection<Wrapper> * / any */ @js.native
-    trait WrapperArray extends StObject {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.EntityArrayCollection<Wrapper> * / any */ trait WrapperArray extends StObject {
       
       /**
         * @inheritdoc
         */
-      def CHILD_TAG(): String = js.native
+      def CHILD_TAG(): String
       
       /**
         * @inheritdoc
         */
-      def TAG(): String = js.native
+      def TAG(): String
       
       /**
         * @inheritdoc
         */
       def createChild(
         xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
-      ): Wrapper = js.native
+      ): Wrapper
       
       /**
         * Get (calculate) price.
         */
-      def getPrice(): Double = js.native
+      def getPrice(): Double
       
       /**
         * Get (calculate) utilization rate.
         */
-      def getUtilization(): Double = js.native
+      def getUtilization(): Double
     }
     object WrapperArray {
       
@@ -1487,7 +1481,9 @@ object bws {
       * @author Jeongho Nam <http://samchon.org>
       */
     @js.native
-    trait WrapperGroup extends WrapperArray {
+    trait WrapperGroup
+      extends StObject
+         with WrapperArray {
       
       /**
         * <p> Allocate instance(s) to the WrapperGroup. </p>

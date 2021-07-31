@@ -1,10 +1,11 @@
 package typings.sentryBrowser
 
 import typings.sentryBrowser.anon.Key
+import typings.sentryTypes.eventprocessorMod.EventProcessor
+import typings.sentryTypes.hubMod.Hub
 import typings.sentryTypes.integrationMod.Integration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkederrorsMod {
@@ -14,7 +15,9 @@ object linkederrorsMod {
   /**
     * @inheritDoc
     */
-  class LinkedErrors () extends Integration {
+  class LinkedErrors ()
+    extends StObject
+       with Integration {
     def this(options: Key) = this()
     
     /**
@@ -38,9 +41,24 @@ object linkederrorsMod {
     var _walkErrorTree: js.Any = js.native
     
     /**
+      * Returns {@link IntegrationClass.id}
+      */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /**
       * @inheritDoc
       */
     def setupOnce(): Unit = js.native
+    /**
+      * Sets the integration up only once.
+      * This takes no options on purpose, options should be passed in the constructor
+      */
+    /* CompleteClass */
+    override def setupOnce(
+      addGlobalEventProcessor: js.Function1[/* callback */ EventProcessor, Unit],
+      getCurrentHub: js.Function0[Hub]
+    ): Unit = js.native
   }
   /* static members */
   object LinkedErrors {

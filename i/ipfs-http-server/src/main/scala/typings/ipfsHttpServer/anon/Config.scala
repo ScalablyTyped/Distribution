@@ -2,13 +2,11 @@ package typings.ipfsHttpServer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config extends StObject {
   
-  var config: js.Any = js.native
+  var config: js.Any
 }
 object Config {
   

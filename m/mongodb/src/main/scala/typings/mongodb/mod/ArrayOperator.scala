@@ -3,23 +3,21 @@ package typings.mongodb.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayOperator[Type] extends StObject {
   
   @JSName("$each")
-  var $each: Type = js.native
+  var $each: Type
   
   @JSName("$position")
-  var $position: js.UndefOr[scala.Double] = js.native
+  var $position: js.UndefOr[scala.Double] = js.undefined
   
   @JSName("$slice")
-  var $slice: js.UndefOr[scala.Double] = js.native
+  var $slice: js.UndefOr[scala.Double] = js.undefined
   
   @JSName("$sort")
-  var $sort: js.UndefOr[SortValues | (Record[String, SortValues])] = js.native
+  var $sort: js.UndefOr[SortValues | (Record[String, SortValues])] = js.undefined
 }
 object ArrayOperator {
   
@@ -30,7 +28,7 @@ object ArrayOperator {
   }
   
   @scala.inline
-  implicit class ArrayOperatorMutableBuilder[Self <: ArrayOperator[_], Type] (val x: Self with ArrayOperator[Type]) extends AnyVal {
+  implicit class ArrayOperatorMutableBuilder[Self <: ArrayOperator[?], Type] (val x: Self & ArrayOperator[Type]) extends AnyVal {
     
     @scala.inline
     def set$each(value: Type): Self = StObject.set(x, "$each", value.asInstanceOf[js.Any])

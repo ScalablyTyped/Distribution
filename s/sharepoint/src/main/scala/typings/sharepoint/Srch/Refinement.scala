@@ -4,58 +4,58 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Refinement extends DisplayControl {
+trait Refinement
+  extends StObject
+     with DisplayControl {
   
-  def addRefinementFilter(filterName: String, filterToken: js.Any): Unit = js.native
+  def addRefinementFilter(filterName: String, filterToken: js.Any): Unit
   
-  def addRefinementFilters(refiners: js.Array[_]): Unit = js.native
+  def addRefinementFilters(refiners: js.Array[js.Any]): Unit
   
-  def addRefinementFiltersJSON(refinersJSON: String): Unit = js.native
+  def addRefinementFiltersJSON(refinersJSON: String): Unit
   
-  def addRefinementFiltersJSONWithOr(refinersJSON: String): Unit = js.native
+  def addRefinementFiltersJSONWithOr(refinersJSON: String): Unit
   
-  def addRefinementFiltersWithOp(refiners: js.Array[_], op: String): Unit = js.native
+  def addRefinementFiltersWithOp(refiners: js.Array[js.Any], op: String): Unit
   
-  def getCurrentRefinementCategory(refinementName: String): js.Any = js.native
+  def getCurrentRefinementCategory(refinementName: String): js.Any
   
   /** Gets refinement control with the specified propertyName */
-  def getRefinementControl(refinerName: String): RefinementControl = js.native
+  def getRefinementControl(refinerName: String): RefinementControl
   
-  def get_emptyRefinementMessageId(): String = js.native
+  def get_emptyRefinementMessageId(): String
   
-  def get_selectedRefinementControls(): js.Array[RefinementControl] = js.native
+  def get_selectedRefinementControls(): js.Array[RefinementControl]
   
-  def get_useManagedNavigationRefiners(): Boolean = js.native
+  def get_useManagedNavigationRefiners(): Boolean
   
-  def hasAllRefinementFilters(filterName: String, filterTokens: js.Array[String]): Boolean = js.native
+  def hasAllRefinementFilters(filterName: String, filterTokens: js.Array[String]): Boolean
   
-  def hasRefinementCategory(refinementName: String): Boolean = js.native
+  def hasRefinementCategory(refinementName: String): Boolean
   
-  def hasRefinementFilter(filterName: String, filterToken: String): Boolean = js.native
+  def hasRefinementFilter(filterName: String, filterToken: String): Boolean
   
   /** Returns true if selected refinement controls collection contains a control with the specified propertyName */
-  def hasRefiner(refinerName: String): Boolean = js.native
+  def hasRefiner(refinerName: String): Boolean
   
-  def removeRefinementCategory(rcs: js.Any, filterName: String): Unit = js.native
+  def removeRefinementCategory(rcs: js.Any, filterName: String): Unit
   
-  def removeRefinementFilter(filterName: String, filterToken: String): Unit = js.native
+  def removeRefinementFilter(filterName: String, filterToken: String): Unit
   
-  def removeRefinementFiltersJSON(refinersJSON: String): Unit = js.native
+  def removeRefinementFiltersJSON(refinersJSON: String): Unit
   
-  def replaceRefinementFilter(oldRefinementFilter: js.Any, newRefinementFilter: js.Any): Unit = js.native
+  def replaceRefinementFilter(oldRefinementFilter: js.Any, newRefinementFilter: js.Any): Unit
   
-  def set_emptyRefinementMessageId(value: String): String = js.native
+  def set_emptyRefinementMessageId(value: String): String
   
-  def set_selectedRefinementControls(value: js.Array[RefinementControl]): js.Array[RefinementControl] = js.native
+  def set_selectedRefinementControls(value: js.Array[RefinementControl]): js.Array[RefinementControl]
   
-  def set_useManagedNavigationRefiners(value: Boolean): Boolean = js.native
+  def set_useManagedNavigationRefiners(value: Boolean): Boolean
   
   /** Replaces the refinement controls */
-  def updateRefinementControls(newControls: js.Array[RefinementControl]): Unit = js.native
+  def updateRefinementControls(newControls: js.Array[RefinementControl]): Unit
   
   def updateRefinementFilters(
     filterName: String,
@@ -63,11 +63,11 @@ trait Refinement extends DisplayControl {
     op: String,
     useKQL: Boolean,
     tokenToDisplayValueMap: js.Any
-  ): Unit = js.native
+  ): Unit
   
-  def updateRefiners(refiners: js.Array[_], op: String, useKQL: Boolean, tokenToDisplayValueMap: js.Any): Unit = js.native
+  def updateRefiners(refiners: js.Array[js.Any], op: String, useKQL: Boolean, tokenToDisplayValueMap: js.Any): Unit
   
-  def updateRefinersJSON(refinersJSON: String): Unit = js.native
+  def updateRefinersJSON(refinersJSON: String): Unit
 }
 object Refinement {
   
@@ -75,10 +75,10 @@ object Refinement {
   def apply(
     addCssClass: String => Unit,
     addRefinementFilter: (String, js.Any) => Unit,
-    addRefinementFilters: js.Array[_] => Unit,
+    addRefinementFilters: js.Array[js.Any] => Unit,
     addRefinementFiltersJSON: String => Unit,
     addRefinementFiltersJSONWithOr: String => Unit,
-    addRefinementFiltersWithOp: (js.Array[_], String) => Unit,
+    addRefinementFiltersWithOp: (js.Array[js.Any], String) => Unit,
     add_disposing: js.Function => Unit,
     add_oneTimeResultRendered: js.Any => Unit,
     add_propertyChanged: js.Function => Unit,
@@ -106,7 +106,7 @@ object Refinement {
     get_isInitialLoad: () => Boolean,
     get_isInitialized: () => Boolean,
     get_isUpdating: () => Boolean,
-    get_messages: () => js.Array[_],
+    get_messages: () => js.Array[js.Any],
     get_nextUniqueId: () => String,
     get_queryGroupName: () => String,
     get_renderTemplateId: () => String,
@@ -155,7 +155,7 @@ object Refinement {
     scriptApplication_PostLoad: (js.Any, js.Any) => Unit,
     scriptApplication_PreLoad: (js.Any, js.Any) => Unit,
     serverTemplateScriptsCallback: () => Unit,
-    serverTemplateScriptsToLoad: js.Array[_],
+    serverTemplateScriptsToLoad: js.Array[js.Any],
     setControlElementVisibility: Boolean => js.Any,
     set_alternateErrorMessage: String => String,
     set_currentResultTableCollection: js.Any => js.Any,
@@ -163,7 +163,7 @@ object Refinement {
     set_emptyMessage: String => String,
     set_emptyRefinementMessageId: String => String,
     set_id: String => Unit,
-    set_messages: js.Array[_] => js.Array[_],
+    set_messages: js.Array[js.Any] => js.Array[js.Any],
     set_queryGroupName: String => String,
     set_renderTemplateId: String => String,
     set_renderedResult: Boolean => Boolean,
@@ -176,7 +176,7 @@ object Refinement {
     updateDisplayControlWithNewMessages: () => js.Any,
     updateRefinementControls: js.Array[RefinementControl] => Unit,
     updateRefinementFilters: (String, js.Array[String], String, Boolean, js.Any) => Unit,
-    updateRefiners: (js.Array[_], String, Boolean, js.Any) => Unit,
+    updateRefiners: (js.Array[js.Any], String, Boolean, js.Any) => Unit,
     updateRefinersJSON: String => Unit,
     updated: () => Unit
   ): Refinement = {
@@ -191,7 +191,7 @@ object Refinement {
     def setAddRefinementFilter(value: (String, js.Any) => Unit): Self = StObject.set(x, "addRefinementFilter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddRefinementFilters(value: js.Array[_] => Unit): Self = StObject.set(x, "addRefinementFilters", js.Any.fromFunction1(value))
+    def setAddRefinementFilters(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "addRefinementFilters", js.Any.fromFunction1(value))
     
     @scala.inline
     def setAddRefinementFiltersJSON(value: String => Unit): Self = StObject.set(x, "addRefinementFiltersJSON", js.Any.fromFunction1(value))
@@ -200,7 +200,7 @@ object Refinement {
     def setAddRefinementFiltersJSONWithOr(value: String => Unit): Self = StObject.set(x, "addRefinementFiltersJSONWithOr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddRefinementFiltersWithOp(value: (js.Array[_], String) => Unit): Self = StObject.set(x, "addRefinementFiltersWithOp", js.Any.fromFunction2(value))
+    def setAddRefinementFiltersWithOp(value: (js.Array[js.Any], String) => Unit): Self = StObject.set(x, "addRefinementFiltersWithOp", js.Any.fromFunction2(value))
     
     @scala.inline
     def setGetCurrentRefinementCategory(value: String => js.Any): Self = StObject.set(x, "getCurrentRefinementCategory", js.Any.fromFunction1(value))
@@ -257,7 +257,7 @@ object Refinement {
     def setUpdateRefinementFilters(value: (String, js.Array[String], String, Boolean, js.Any) => Unit): Self = StObject.set(x, "updateRefinementFilters", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setUpdateRefiners(value: (js.Array[_], String, Boolean, js.Any) => Unit): Self = StObject.set(x, "updateRefiners", js.Any.fromFunction4(value))
+    def setUpdateRefiners(value: (js.Array[js.Any], String, Boolean, js.Any) => Unit): Self = StObject.set(x, "updateRefiners", js.Any.fromFunction4(value))
     
     @scala.inline
     def setUpdateRefinersJSON(value: String => Unit): Self = StObject.set(x, "updateRefinersJSON", js.Any.fromFunction1(value))

@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XStringEscape
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The number and names of contained elements is not fixed in advance, but all elements have to be of one predetermined type.
   */
-@js.native
 trait SimpleSetAccess
-  extends XNameAccess
+  extends StObject
+     with XNameAccess
      with XTemplateContainer
      with XStringEscape
      with XContainer

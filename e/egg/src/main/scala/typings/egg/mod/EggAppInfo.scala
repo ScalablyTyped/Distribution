@@ -2,28 +2,26 @@ package typings.egg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EggAppInfo extends StObject {
   
   // equals to serverEnv
-  var HOME: String = js.native
+  var HOME: String
   
   // the application name from package.json
-  var baseDir: String = js.native
+  var baseDir: String
   
   // current directory of application
-  var env: EggEnvType = js.native
+  var env: EggEnvType
   
   // package.json
-  var name: String = js.native
+  var name: String
   
-  var pkg: js.Any = js.native
+  var pkg: js.Any
   
   // home directory of the OS
-  var root: String = js.native
+  var root: String
 }
 object EggAppInfo {
   

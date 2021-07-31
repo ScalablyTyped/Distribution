@@ -2,21 +2,19 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Hook. */
-@js.native
 trait IHook extends StObject {
   
   /** Hook id */
-  var id: js.UndefOr[String | Null] = js.native
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /** Hook sourceReference */
-  var sourceReference: js.UndefOr[ISourceReference | Null] = js.native
+  var sourceReference: js.UndefOr[ISourceReference | Null] = js.undefined
   
   /** Hook tagExpression */
-  var tagExpression: js.UndefOr[String | Null] = js.native
+  var tagExpression: js.UndefOr[String | Null] = js.undefined
 }
 object IHook {
   

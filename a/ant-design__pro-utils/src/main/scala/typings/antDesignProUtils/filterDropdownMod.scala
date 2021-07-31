@@ -6,7 +6,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filterDropdownMod extends Shortcut {
@@ -15,20 +14,19 @@ object filterDropdownMod extends Shortcut {
   @js.native
   val default: FC[DropdownProps] = js.native
   
-  @js.native
   trait DropdownProps extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var footer: js.UndefOr[DropdownFooterProps] = js.native
+    var footer: js.UndefOr[DropdownFooterProps] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object DropdownProps {
     

@@ -2,21 +2,19 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storyQuizParticipantsFeedResponseMod {
   
-  @js.native
   trait StoryQuizParticipantsFeedResponseParticipantInfo extends StObject {
     
-    var max_id: Null = js.native
+    var max_id: Null
     
-    var more_available: Boolean = js.native
+    var more_available: Boolean
     
-    var participants: js.Array[StoryQuizParticipantsFeedResponseParticipantsItem] = js.native
+    var participants: js.Array[StoryQuizParticipantsFeedResponseParticipantsItem]
     
-    var quiz_id: String = js.native
+    var quiz_id: String
   }
   object StoryQuizParticipantsFeedResponseParticipantInfo {
     
@@ -51,14 +49,13 @@ object storyQuizParticipantsFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoryQuizParticipantsFeedResponseParticipantsItem extends StObject {
     
-    var answer: Double = js.native
+    var answer: Double
     
-    var ts: Double = js.native
+    var ts: Double
     
-    var user: StoryQuizParticipantsFeedResponseUser = js.native
+    var user: StoryQuizParticipantsFeedResponseUser
   }
   object StoryQuizParticipantsFeedResponseParticipantsItem {
     
@@ -82,12 +79,11 @@ object storyQuizParticipantsFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoryQuizParticipantsFeedResponseRootObject extends StObject {
     
-    var participant_info: StoryQuizParticipantsFeedResponseParticipantInfo = js.native
+    var participant_info: StoryQuizParticipantsFeedResponseParticipantInfo
     
-    var status: String = js.native
+    var status: String
   }
   object StoryQuizParticipantsFeedResponseRootObject {
     
@@ -108,24 +104,23 @@ object storyQuizParticipantsFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoryQuizParticipantsFeedResponseUser extends StObject {
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var latest_reel_media: Double = js.native
+    var latest_reel_media: Double
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object StoryQuizParticipantsFeedResponseUser {
     

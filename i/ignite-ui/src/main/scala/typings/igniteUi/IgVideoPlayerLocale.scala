@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgVideoPlayerLocale
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,115 +16,115 @@ trait IgVideoPlayerLocale
     * Gets/Sets ad message text.
     *
     */
-  var adMessage: js.UndefOr[Boolean] = js.native
+  var adMessage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets long ad message text.
     *
     */
-  var adMessageLong: js.UndefOr[Boolean] = js.native
+  var adMessageLong: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets ad message text when no duration is specified.
     *
     */
-  var adMessageNoDuration: js.UndefOr[Boolean] = js.native
+  var adMessageNoDuration: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets new ad window title.
     *
     */
-  var adNewWindowTip: js.UndefOr[Boolean] = js.native
+  var adNewWindowTip: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets buffering label text.
     *
     */
-  var buffering: js.UndefOr[Boolean] = js.native
+  var buffering: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets enter fullscreen button title.
     *
     */
-  var enterFullscreen: js.UndefOr[Boolean] = js.native
+  var enterFullscreen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets exit fullscreen button title.
     *
     */
-  var exitFullscreen: js.UndefOr[Boolean] = js.native
+  var exitFullscreen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets live video title.
     *
     */
-  var live: js.UndefOr[Boolean] = js.native
+  var live: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets live stream video title.
     *
     */
-  var liveStream: js.UndefOr[Boolean] = js.native
+  var liveStream: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets paused button title.
     *
     */
-  var paused: js.UndefOr[Boolean] = js.native
+  var paused: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets play button title.
     *
     */
-  var play: js.UndefOr[Boolean] = js.native
+  var play: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets playing button title.
     *
     */
-  var playing: js.UndefOr[Boolean] = js.native
+  var playing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets progress label long format.
     *
     */
-  var progressLabelLongFormat: js.UndefOr[Boolean] = js.native
+  var progressLabelLongFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets progress label short format.
     *
     */
-  var progressLabelShortFormat: js.UndefOr[Boolean] = js.native
+  var progressLabelShortFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets related videos text.
     *
     */
-  var relatedVideos: js.UndefOr[Boolean] = js.native
+  var relatedVideos: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets replay button text.
     *
     */
-  var replayButton: js.UndefOr[Boolean] = js.native
+  var replayButton: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets replay button tooltip.
     *
     */
-  var replayTooltip: js.UndefOr[Boolean] = js.native
+  var replayTooltip: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets skip to button title.
     *
     */
-  var skipTo: js.UndefOr[Boolean] = js.native
+  var skipTo: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets volume button title.
     *
     */
-  var volume: js.UndefOr[Boolean] = js.native
+  var volume: js.UndefOr[Boolean] = js.undefined
 }
 object IgVideoPlayerLocale {
   

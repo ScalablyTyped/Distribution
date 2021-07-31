@@ -2,93 +2,93 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapWebClientUIWidget class.
   */
-@js.native
-trait BootstrapUIWidgetBase extends ASPxClientControl {
+trait BootstrapUIWidgetBase
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Fires when the widget is removed from the DOM using the remove(), empty(), or html() jQuery methods only.
     */
-  var Disposing: ASPxClientEvent[BootstrapUIWidgetDisposingEventHandler[BootstrapUIWidgetBase]] = js.native
+  var Disposing: ASPxClientEvent[BootstrapUIWidgetDisposingEventHandler[BootstrapUIWidgetBase]]
   
   /**
     * Fires when the widget has finished drawing itself.
     */
-  var Drawn: ASPxClientEvent[BootstrapUIWidgetDrawnEventHandler[BootstrapUIWidgetBase]] = js.native
+  var Drawn: ASPxClientEvent[BootstrapUIWidgetDrawnEventHandler[BootstrapUIWidgetBase]]
   
   /**
     * Exports the widget.
     * @param format A string specifying the target file format.
     * @param fileName A string specifying the file name.
     */
-  def ExportTo(format: String, fileName: String): Unit = js.native
+  def ExportTo(format: String, fileName: String): Unit
   
   /**
     * Fires after data from the widget is exported.
     */
-  var Exported: ASPxClientEvent[BootstrapUIWidgetExportedEventHandler[BootstrapUIWidgetBase]] = js.native
+  var Exported: ASPxClientEvent[BootstrapUIWidgetExportedEventHandler[BootstrapUIWidgetBase]]
   
   /**
     * Fires before data from the widget is exported.
     */
-  var Exporting: ASPxClientEvent[BootstrapUIWidgetExportingEventHandler[BootstrapUIWidgetBase]] = js.native
+  var Exporting: ASPxClientEvent[BootstrapUIWidgetExportingEventHandler[BootstrapUIWidgetBase]]
   
   /**
     * Raised before a file with exported data is saved on the user's local storage.
     */
-  var FileSaving: ASPxClientEvent[BootstrapUIWidgetFileSavingEventHandler[BootstrapUIWidgetBase]] = js.native
+  var FileSaving: ASPxClientEvent[BootstrapUIWidgetFileSavingEventHandler[BootstrapUIWidgetBase]]
   
   /**
     * Gets the client data source instance.
     */
-  def GetDataSource(): js.Any = js.native
+  def GetDataSource(): js.Any
   
-  def GetEnabled(): Boolean = js.native
+  def GetEnabled(): Boolean
   
   /**
     * Gets an instance of the widget.
     */
-  def GetInstance(): js.Any = js.native
+  def GetInstance(): js.Any
   
   /**
     * Fires when an error or warning appears in the widget.
     */
-  var IncidentOccurred: ASPxClientEvent[BootstrapUIWidgetErrorEventHandler[BootstrapUIWidgetBase]] = js.native
+  var IncidentOccurred: ASPxClientEvent[BootstrapUIWidgetErrorEventHandler[BootstrapUIWidgetBase]]
   
   /**
     * Fires once, after the widget is initialized.
     */
   @JSName("Init")
-  var Init_BootstrapUIWidgetBase: ASPxClientEvent[BootstrapUIWidgetInitializedEventHandler[BootstrapUIWidgetBase]] = js.native
+  var Init_BootstrapUIWidgetBase: ASPxClientEvent[BootstrapUIWidgetInitializedEventHandler[BootstrapUIWidgetBase]]
   
   /**
     * Fires after an option of the widget has been changed.
     */
-  var OptionChanged: ASPxClientEvent[BootstrapUIWidgetOptionChangedEventHandler[BootstrapUIWidgetBase]] = js.native
+  var OptionChanged: ASPxClientEvent[BootstrapUIWidgetOptionChangedEventHandler[BootstrapUIWidgetBase]]
   
   /**
     * Invokes the browser's Print window to print the widget's contents.
     */
-  def Print(): Unit = js.native
+  def Print(): Unit
   
   /**
     * Sets the client data source instance.
     * @param dataSource A DevExtreme DataSource object.
     */
-  def SetDataSource(dataSource: js.Any): Unit = js.native
+  def SetDataSource(dataSource: js.Any): Unit
   
-  def SetEnabled(enabled: Boolean): Unit = js.native
+  def SetEnabled(enabled: Boolean): Unit
   
   /**
     * Sets the widget's options to values specified in the passed object.
     * @param options An object containing key-value pairs specifying new option values.
     */
-  def SetOptions(options: js.Any): Unit = js.native
+  def SetOptions(options: js.Any): Unit
 }
 object BootstrapUIWidgetBase {
   

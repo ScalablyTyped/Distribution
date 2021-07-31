@@ -9,17 +9,15 @@ import typings.uirouterCore.stateInterfaceMod.ViewDeclaration
 import typings.uirouterCore.transitionInterfaceMod.HookResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
-  @js.native
   trait Ng1Controller extends StObject {
     
     /** @hidden */
     @JSName("$onInit")
-    def $onInit(): Unit = js.native
+    def $onInit(): Unit
     
     /**
       * This callback is called when the view's state is about to be exited.
@@ -67,7 +65,7 @@ object interfaceMod {
       * @param transition the new Transition that is about to exit the component's state
       * @return a HookResult, or a promise for a HookResult
       */
-    def uiCanExit(transition: Transition): HookResult = js.native
+    def uiCanExit(transition: Transition): HookResult
     
     /**
       * This callback is called when parameter values have changed.
@@ -94,7 +92,7 @@ object interfaceMod {
       * });
       * ```
       */
-    def uiOnParamsChanged(newValues: js.Any, DollartransitionDollar: Transition): Unit = js.native
+    def uiOnParamsChanged(newValues: js.Any, DollartransitionDollar: Transition): Unit
   }
   object Ng1Controller {
     
@@ -122,9 +120,9 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait Ng1StateDeclaration
-    extends _Ng1StateDeclaration
+    extends StObject
+       with _Ng1StateDeclaration
        with Ng1ViewDeclaration {
     
     /**
@@ -154,7 +152,7 @@ object interfaceMod {
       * ```
       */
     @JSName("onEnter")
-    var onEnter_Ng1StateDeclaration: js.UndefOr[Ng1StateTransitionHook | IInjectable] = js.native
+    var onEnter_Ng1StateDeclaration: js.UndefOr[Ng1StateTransitionHook | IInjectable] = js.undefined
     
     /**
       * A state hook invoked when a state is being exited.
@@ -183,7 +181,7 @@ object interfaceMod {
       * ```
       */
     @JSName("onExit")
-    var onExit_Ng1StateDeclaration: js.UndefOr[Ng1StateTransitionHook | IInjectable] = js.native
+    var onExit_Ng1StateDeclaration: js.UndefOr[Ng1StateTransitionHook | IInjectable] = js.undefined
     
     /**
       * A state hook invoked when a state is being retained.
@@ -212,7 +210,7 @@ object interfaceMod {
       * ```
       */
     @JSName("onRetain")
-    var onRetain_Ng1StateDeclaration: js.UndefOr[Ng1StateTransitionHook | IInjectable] = js.native
+    var onRetain_Ng1StateDeclaration: js.UndefOr[Ng1StateTransitionHook | IInjectable] = js.undefined
     
     /**
       * An optional object which defines multiple named views.
@@ -362,7 +360,7 @@ object interfaceMod {
       * - controllerProvider
       */
     @JSName("views")
-    var views_Ng1StateDeclaration: js.UndefOr[StringDictionary[String | Ng1ViewDeclaration]] = js.native
+    var views_Ng1StateDeclaration: js.UndefOr[StringDictionary[String | Ng1ViewDeclaration]] = js.undefined
   }
   object Ng1StateDeclaration {
     
@@ -421,8 +419,9 @@ object interfaceMod {
   
   type Ng1StateTransitionHook = js.Function1[/* repeated */ js.Any, HookResult]
   
-  @js.native
-  trait Ng1ViewDeclaration extends ViewDeclaration {
+  trait Ng1ViewDeclaration
+    extends StObject
+       with ViewDeclaration {
     
     /**
       * An object which maps `resolve`s to [[component]] `bindings`.
@@ -464,7 +463,7 @@ object interfaceMod {
       * ```
       *
       */
-    var bindings: js.UndefOr[StringDictionary[String]] = js.native
+    var bindings: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The name of the component to use for this view.
@@ -518,7 +517,7 @@ object interfaceMod {
       *
       * See also: Todd Motto's angular 1.3 and 1.4 [backport of .component()](https://github.com/toddmotto/angular-component)
       */
-    var component: js.UndefOr[String] = js.native
+    var component: js.UndefOr[String] = js.undefined
     
     /**
       * Dynamic component provider function.
@@ -540,7 +539,7 @@ object interfaceMod {
       * }
       * ```
       */
-    var componentProvider: js.UndefOr[IInjectable] = js.native
+    var componentProvider: js.UndefOr[IInjectable] = js.undefined
     
     /**
       * The view's controller function or name
@@ -555,7 +554,7 @@ object interfaceMod {
       *
       * See: [[Ng1Controller]] for information about component-level router hooks.
       */
-    var controller: js.UndefOr[IInjectable | String] = js.native
+    var controller: js.UndefOr[IInjectable | String] = js.undefined
     
     /**
       * A controller alias name.
@@ -565,7 +564,7 @@ object interfaceMod {
       * If present, the controller will be published to scope under the `controllerAs` name.
       * See: https://docs.angularjs.org/api/ng/directive/ngController
       */
-    var controllerAs: js.UndefOr[String] = js.native
+    var controllerAs: js.UndefOr[String] = js.undefined
     
     /**
       * Dynamic controller provider function.
@@ -591,7 +590,7 @@ object interfaceMod {
       * }
       * ```
       */
-    var controllerProvider: js.UndefOr[IInjectable] = js.native
+    var controllerProvider: js.UndefOr[IInjectable] = js.undefined
     
     /**
       * The scope variable name to use for resolve data.
@@ -603,7 +602,7 @@ object interfaceMod {
       *
       * Defaults to `$resolve`.
       */
-    var resolveAs: js.UndefOr[String] = js.native
+    var resolveAs: js.UndefOr[String] = js.undefined
     
     /**
       * The HTML template for the view.
@@ -629,7 +628,7 @@ object interfaceMod {
       * }
       * ```
       */
-    var template: js.UndefOr[js.Function | String] = js.native
+    var template: js.UndefOr[js.Function | String] = js.undefined
     
     /**
       * Injected function which returns the HTML template.
@@ -646,7 +645,7 @@ object interfaceMod {
       * }
       * ```
       */
-    var templateProvider: js.UndefOr[IInjectable] = js.native
+    var templateProvider: js.UndefOr[IInjectable] = js.undefined
     
     /**
       * The URL for the HTML template for the view.
@@ -670,7 +669,7 @@ object interfaceMod {
       * }
       * ```
       */
-    var templateUrl: js.UndefOr[String | js.Function] = js.native
+    var templateUrl: js.UndefOr[String | js.Function] = js.undefined
   }
   object Ng1ViewDeclaration {
     
@@ -757,7 +756,6 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait TemplateFactoryProvider extends StObject {
     
     /**
@@ -781,7 +779,7 @@ object interfaceMod {
       *
       * @param useUnsafeHttpService `true` to use `$http` to fetch templates
       */
-    def useHttpService(useUnsafeHttpService: Boolean): js.Any = js.native
+    def useHttpService(useUnsafeHttpService: Boolean): js.Any
   }
   object TemplateFactoryProvider {
     
@@ -799,20 +797,21 @@ object interfaceMod {
     }
   }
   
-  @js.native
-  trait _Ng1StateDeclaration extends StateDeclaration {
+  trait _Ng1StateDeclaration
+    extends StObject
+       with StateDeclaration {
     
     @JSName("onEnter")
-    var onEnter__Ng1StateDeclaration: js.UndefOr[js.Any] = js.native
+    var onEnter__Ng1StateDeclaration: js.UndefOr[js.Any] = js.undefined
     
     @JSName("onExit")
-    var onExit__Ng1StateDeclaration: js.UndefOr[js.Any] = js.native
+    var onExit__Ng1StateDeclaration: js.UndefOr[js.Any] = js.undefined
     
     @JSName("onRetain")
-    var onRetain__Ng1StateDeclaration: js.UndefOr[js.Any] = js.native
+    var onRetain__Ng1StateDeclaration: js.UndefOr[js.Any] = js.undefined
     
     @JSName("views")
-    var views__Ng1StateDeclaration: js.UndefOr[js.Any] = js.native
+    var views__Ng1StateDeclaration: js.UndefOr[js.Any] = js.undefined
   }
   object _Ng1StateDeclaration {
     

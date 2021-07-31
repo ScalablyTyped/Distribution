@@ -4,15 +4,13 @@ import typings.react.mod.KeyboardEvent
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
-  var event: typings.react.mod.SyntheticEvent[KeyboardEvent[HTMLInputElement], typings.std.Event] = js.native
+  var event: typings.react.mod.SyntheticEvent[KeyboardEvent[HTMLInputElement], typings.std.Event]
   
-  var value: String = js.native
+  var value: String
 }
 object `2` {
   

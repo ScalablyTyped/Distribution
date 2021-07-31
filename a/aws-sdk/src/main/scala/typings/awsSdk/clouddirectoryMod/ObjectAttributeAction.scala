@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectAttributeAction extends StObject {
   
   /**
     * A type that can be either Update or Delete.
     */
-  var ObjectAttributeActionType: js.UndefOr[UpdateActionType] = js.native
+  var ObjectAttributeActionType: js.UndefOr[UpdateActionType] = js.undefined
   
   /**
     * The value that you want to update to.
     */
-  var ObjectAttributeUpdateValue: js.UndefOr[TypedAttributeValue] = js.native
+  var ObjectAttributeUpdateValue: js.UndefOr[TypedAttributeValue] = js.undefined
 }
 object ObjectAttributeAction {
   

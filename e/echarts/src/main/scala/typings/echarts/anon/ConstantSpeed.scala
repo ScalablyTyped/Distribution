@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConstantSpeed extends js.Object {
+trait ConstantSpeed extends StObject {
   
   /**
     * The color of special effect symbol, which defaults to be
@@ -16,7 +15,7 @@ trait ConstantSpeed extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.effect.color
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * If symbol movement of special effect has a constant speed,
@@ -27,7 +26,7 @@ trait ConstantSpeed extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.effect.constantSpeed
     */
-  var constantSpeed: js.UndefOr[Double] = js.native
+  var constantSpeed: js.UndefOr[Double] = js.undefined
   
   /**
     * Effect animation delay.
@@ -36,7 +35,7 @@ trait ConstantSpeed extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.effect.delay
     */
-  var delay: js.UndefOr[js.Function | Double] = js.native
+  var delay: js.UndefOr[js.Function | Double] = js.undefined
   
   /**
     * Whether to loop the special effect animation.
@@ -46,7 +45,7 @@ trait ConstantSpeed extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-lines.effect.loop
     */
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The duration of special effect, which unit is second.
@@ -56,7 +55,7 @@ trait ConstantSpeed extends js.Object {
     * 4
     * @see https://echarts.apache.org/en/option.html#series-lines.effect.period
     */
-  var period: js.UndefOr[Double] = js.native
+  var period: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to show special effect.
@@ -64,7 +63,7 @@ trait ConstantSpeed extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.effect.show
     */
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The symbol of special effect.
@@ -116,7 +115,7 @@ trait ConstantSpeed extends js.Object {
     * "circle"
     * @see https://echarts.apache.org/en/option.html#series-lines.effect.symbol
     */
-  var symbol: js.UndefOr[String] = js.native
+  var symbol: js.UndefOr[String] = js.undefined
   
   /**
     * The symbol size of special effect, which could be set as
@@ -131,7 +130,7 @@ trait ConstantSpeed extends js.Object {
     * 3
     * @see https://echarts.apache.org/en/option.html#series-lines.effect.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[_] | Double] = js.native
+  var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
   
   /**
     * The length of trail of special effect.
@@ -143,7 +142,7 @@ trait ConstantSpeed extends js.Object {
     * 0.2
     * @see https://echarts.apache.org/en/option.html#series-lines.effect.trailLength
     */
-  var trailLength: js.UndefOr[Double] = js.native
+  var trailLength: js.UndefOr[Double] = js.undefined
 }
 object ConstantSpeed {
   
@@ -154,75 +153,63 @@ object ConstantSpeed {
   }
   
   @scala.inline
-  implicit class ConstantSpeedOps[Self <: ConstantSpeed] (val x: Self) extends AnyVal {
+  implicit class ConstantSpeedMutableBuilder[Self <: ConstantSpeed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConstantSpeed(value: Double): Self = StObject.set(x, "constantSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setConstantSpeedUndefined: Self = StObject.set(x, "constantSpeed", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDelay(value: js.Function | Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstantSpeed(value: Double): Self = this.set("constantSpeed", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def deleteConstantSpeed: Self = this.set("constantSpeed", js.undefined)
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: js.Function | Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Double): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
     
     @scala.inline
-    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
     
     @scala.inline
-    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
     @scala.inline
-    def setSymbolSizeVarargs(value: js.Any*): Self = this.set("symbolSize", js.Array(value :_*))
+    def setTrailLength(value: Double): Self = StObject.set(x, "trailLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolSize(value: js.Array[_] | Double): Self = this.set("symbolSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymbolSize: Self = this.set("symbolSize", js.undefined)
-    
-    @scala.inline
-    def setTrailLength(value: Double): Self = this.set("trailLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrailLength: Self = this.set("trailLength", js.undefined)
+    def setTrailLengthUndefined: Self = StObject.set(x, "trailLength", js.undefined)
   }
 }

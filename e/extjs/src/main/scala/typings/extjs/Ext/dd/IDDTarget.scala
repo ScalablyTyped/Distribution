@@ -2,17 +2,17 @@ package typings.extjs.Ext.dd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDDTarget extends IDragDrop {
+trait IDDTarget
+  extends StObject
+     with IDragDrop {
   
   /** [Method] toString method
     * @returns String string representation of the dd obj
     */
   @JSName("toString")
-  var toString_FIDDTarget: js.UndefOr[js.Function0[String]] = js.native
+  var toString_FIDDTarget: js.UndefOr[js.Function0[String]] = js.undefined
 }
 object IDDTarget {
   

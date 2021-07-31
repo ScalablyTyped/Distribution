@@ -3,7 +3,6 @@ package typings.winjs.mod.UI
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options The set of properties and values to apply to the new ToolBar.
   **/
 class ToolBar ()
-  extends typings.winjs.WinJS.UI.ToolBar {
+  extends StObject
+     with typings.winjs.WinJS.UI.ToolBar {
   def this(element: HTMLElement) = this()
-  def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
+  def this(element: Unit, options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
 object ToolBar {

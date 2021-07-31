@@ -2,16 +2,14 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCreateAccountStatusRequest extends StObject {
   
   /**
     * Specifies the Id value that uniquely identifies the CreateAccount request. You can get the value from the CreateAccountStatus.Id response in an earlier CreateAccount request, or from the ListCreateAccountStatus operation. The regex pattern for a create account request ID string requires "car-" followed by from 8 to 32 lowercase letters or digits.
     */
-  var CreateAccountRequestId: typings.awsSdk.organizationsMod.CreateAccountRequestId = js.native
+  var CreateAccountRequestId: typings.awsSdk.organizationsMod.CreateAccountRequestId
 }
 object DescribeCreateAccountStatusRequest {
   

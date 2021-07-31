@@ -2,12 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A generic interface for representing an audio processing module. Examples include: */
 @js.native
-trait AudioNode extends EventTarget {
+trait AudioNode
+  extends StObject
+     with EventTarget {
   
   var channelCount: Double = js.native
   
@@ -16,9 +17,9 @@ trait AudioNode extends EventTarget {
   var channelInterpretation: ChannelInterpretation = js.native
   
   def connect(destinationNode: AudioNode): AudioNode = js.native
-  def connect(destinationNode: AudioNode, output: js.UndefOr[scala.Nothing], input: Double): AudioNode = js.native
   def connect(destinationNode: AudioNode, output: Double): AudioNode = js.native
   def connect(destinationNode: AudioNode, output: Double, input: Double): AudioNode = js.native
+  def connect(destinationNode: AudioNode, output: Unit, input: Double): AudioNode = js.native
   def connect(destinationParam: AudioParam): Unit = js.native
   def connect(destinationParam: AudioParam, output: Double): Unit = js.native
   

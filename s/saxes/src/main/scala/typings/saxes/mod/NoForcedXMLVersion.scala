@@ -3,14 +3,14 @@ package typings.saxes.mod
 import typings.saxes.saxesBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NoForcedXMLVersion extends XMLVersionOptions {
+trait NoForcedXMLVersion
+  extends StObject
+     with XMLVersionOptions {
   
   @JSName("forceXMLVersion")
-  var forceXMLVersion_NoForcedXMLVersion: js.UndefOr[`false`] = js.native
+  var forceXMLVersion_NoForcedXMLVersion: js.UndefOr[`false`] = js.undefined
 }
 object NoForcedXMLVersion {
   

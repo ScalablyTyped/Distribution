@@ -14,7 +14,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,9 +45,8 @@ object DropDownButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.create")
-  @js.native
-  def create(model: IModel): DropDownButton = js.native
+  @scala.inline
+  def create(model: IModel): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -59,9 +57,8 @@ object DropDownButton {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): DropDownButton = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: BuildingBlock): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -72,9 +69,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): DropDownButton = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: BuildingBlock): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -85,9 +81,8 @@ object DropDownButton {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): DropDownButton = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -98,9 +93,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: DataView): DropDownButton = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: DataView): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -111,9 +105,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): DropDownButton = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -124,9 +117,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: DataView): DropDownButton = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: DataView): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -137,9 +129,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): DropDownButton = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -150,9 +141,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: DivContainer): DropDownButton = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: DivContainer): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -163,9 +153,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): DropDownButton = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -176,9 +165,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: GroupBox): DropDownButton = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: GroupBox): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -189,9 +177,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): DropDownButton = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -202,9 +189,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: Header): DropDownButton = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: Header): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -215,9 +201,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): DropDownButton = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -228,9 +213,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: Header): DropDownButton = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: Header): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -241,9 +225,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): DropDownButton = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -254,9 +237,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): DropDownButton = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -267,9 +249,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): DropDownButton = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -280,9 +261,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): DropDownButton = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -293,9 +273,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): DropDownButton = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -306,9 +285,8 @@ object DropDownButton {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: Layout): DropDownButton = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: Layout): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -319,9 +297,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): DropDownButton = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -332,9 +309,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): DropDownButton = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -345,9 +321,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): DropDownButton = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -358,9 +333,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: ListView): DropDownButton = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: ListView): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -371,9 +345,8 @@ object DropDownButton {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): DropDownButton = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -384,9 +357,8 @@ object DropDownButton {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DropDownButton = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -397,9 +369,8 @@ object DropDownButton {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInNativeLayoutContentUnderSidebarWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DropDownButton = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -410,9 +381,8 @@ object DropDownButton {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInNativeLayoutContentUnderWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): DropDownButton = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -423,9 +393,8 @@ object DropDownButton {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): DropDownButton = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -436,9 +405,8 @@ object DropDownButton {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): DropDownButton = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -449,9 +417,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): DropDownButton = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -462,9 +429,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): DropDownButton = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: NavigationListItem): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -475,9 +441,8 @@ object DropDownButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): DropDownButton = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -488,9 +453,8 @@ object DropDownButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): DropDownButton = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -501,9 +465,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): DropDownButton = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -514,9 +477,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): DropDownButton = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -527,9 +489,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): DropDownButton = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -540,9 +501,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: Snippet): DropDownButton = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: Snippet): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -553,9 +513,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): DropDownButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -566,9 +525,8 @@ object DropDownButton {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): DropDownButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: SplitPane): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -579,9 +537,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): DropDownButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -592,9 +549,8 @@ object DropDownButton {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): DropDownButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: SplitPane): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -605,9 +561,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): DropDownButton = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -618,9 +573,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: TabPage): DropDownButton = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: TabPage): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -631,9 +585,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): DropDownButton = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -644,9 +597,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: TableCell): DropDownButton = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: TableCell): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -657,9 +609,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): DropDownButton = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -670,9 +621,8 @@ object DropDownButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): DropDownButton = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -683,9 +633,8 @@ object DropDownButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): DropDownButton = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -696,9 +645,8 @@ object DropDownButton {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInWebLayoutContentUnderWidgets")
-  @js.native
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): DropDownButton = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /**
     * Creates and returns a new DropDownButton instance in the SDK and on the server.
@@ -709,9 +657,8 @@ object DropDownButton {
     *  8.2.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.createInWidgetValueUnderWidgets")
-  @js.native
-  def createInWidgetValueUnderWidgets(container: WidgetValue): DropDownButton = js.native
+  @scala.inline
+  def createInWidgetValueUnderWidgets(container: WidgetValue): DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButton.structureTypeName")

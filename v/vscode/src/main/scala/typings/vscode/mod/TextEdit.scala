@@ -2,7 +2,6 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "TextEdit")
@@ -37,15 +36,18 @@ class TextEdit protected () extends StObject {
 /* static members */
 object TextEdit {
   
+  @JSImport("vscode", "TextEdit")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Utility to create a delete edit.
     *
     * @param range A range.
     * @return A new text edit object.
     */
-  @JSImport("vscode", "TextEdit.delete")
-  @js.native
-  def delete(range: Range): TextEdit = js.native
+  @scala.inline
+  def delete(range: Range): TextEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(range.asInstanceOf[js.Any]).asInstanceOf[TextEdit]
   
   /**
     * Utility to create an insert edit.
@@ -54,9 +56,8 @@ object TextEdit {
     * @param newText A string.
     * @return A new text edit object.
     */
-  @JSImport("vscode", "TextEdit.insert")
-  @js.native
-  def insert(position: Position, newText: String): TextEdit = js.native
+  @scala.inline
+  def insert(position: Position, newText: String): TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(position.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[TextEdit]
   
   /**
     * Utility to create a replace edit.
@@ -65,9 +66,8 @@ object TextEdit {
     * @param newText A string.
     * @return A new text edit object.
     */
-  @JSImport("vscode", "TextEdit.replace")
-  @js.native
-  def replace(range: Range, newText: String): TextEdit = js.native
+  @scala.inline
+  def replace(range: Range, newText: String): TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(range.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[TextEdit]
   
   /**
     * Utility to create an eol-edit.
@@ -75,7 +75,6 @@ object TextEdit {
     * @param eol An eol-sequence
     * @return A new text edit object.
     */
-  @JSImport("vscode", "TextEdit.setEndOfLine")
-  @js.native
-  def setEndOfLine(eol: EndOfLine): TextEdit = js.native
+  @scala.inline
+  def setEndOfLine(eol: EndOfLine): TextEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEndOfLine")(eol.asInstanceOf[js.Any]).asInstanceOf[TextEdit]
 }

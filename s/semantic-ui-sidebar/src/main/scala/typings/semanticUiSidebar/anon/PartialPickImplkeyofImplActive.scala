@@ -2,34 +2,32 @@ package typings.semanticUiSidebar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-sidebar.SemanticUI.Sidebar.ClassNameSettings._Impl, keyof semantic-ui-sidebar.SemanticUI.Sidebar.ClassNameSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplActive extends StObject {
   
-  var active: js.UndefOr[String] = js.native
+  var active: js.UndefOr[String] = js.undefined
   
-  var animating: js.UndefOr[String] = js.native
+  var animating: js.UndefOr[String] = js.undefined
   
-  var bottom: js.UndefOr[String] = js.native
+  var bottom: js.UndefOr[String] = js.undefined
   
-  var dimmed: js.UndefOr[String] = js.native
+  var dimmed: js.UndefOr[String] = js.undefined
   
-  var ios: js.UndefOr[String] = js.native
+  var ios: js.UndefOr[String] = js.undefined
   
-  var left: js.UndefOr[String] = js.native
+  var left: js.UndefOr[String] = js.undefined
   
-  var pushable: js.UndefOr[String] = js.native
+  var pushable: js.UndefOr[String] = js.undefined
   
-  var pushed: js.UndefOr[String] = js.native
+  var pushed: js.UndefOr[String] = js.undefined
   
-  var right: js.UndefOr[String] = js.native
+  var right: js.UndefOr[String] = js.undefined
   
-  var top: js.UndefOr[String] = js.native
+  var top: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[String] = js.native
+  var visible: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplActive {
   

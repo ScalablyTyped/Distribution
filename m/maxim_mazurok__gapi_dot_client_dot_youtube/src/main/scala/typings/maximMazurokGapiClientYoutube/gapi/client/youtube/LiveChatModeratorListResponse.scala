@@ -2,37 +2,35 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiveChatModeratorListResponse extends StObject {
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Serialized EventId of the request which produced this response. */
-  var eventId: js.UndefOr[String] = js.native
+  var eventId: js.UndefOr[String] = js.undefined
   
   /** A list of moderators that match the request criteria. */
-  var items: js.UndefOr[js.Array[LiveChatModerator]] = js.native
+  var items: js.UndefOr[js.Array[LiveChatModerator]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#liveChatModeratorListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The token that can be used as the value of the pageToken parameter to retrieve the next page in the result set. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** General pagination information. */
-  var pageInfo: js.UndefOr[PageInfo] = js.native
+  var pageInfo: js.UndefOr[PageInfo] = js.undefined
   
   /** The token that can be used as the value of the pageToken parameter to retrieve the previous page in the result set. */
-  var prevPageToken: js.UndefOr[String] = js.native
+  var prevPageToken: js.UndefOr[String] = js.undefined
   
-  var tokenPagination: js.UndefOr[js.Any] = js.native
+  var tokenPagination: js.UndefOr[js.Any] = js.undefined
   
   /** The visitorId identifies the visitor. */
-  var visitorId: js.UndefOr[String] = js.native
+  var visitorId: js.UndefOr[String] = js.undefined
 }
 object LiveChatModeratorListResponse {
   

@@ -10,9 +10,9 @@ TypeScript typings for G Suite Vault API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.vault |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 899 |
+| # downloads        | 1118 |
 | # stars            | 0 |
 
 ## Links

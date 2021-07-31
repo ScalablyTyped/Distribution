@@ -2,7 +2,6 @@ package typings.parse.mod.global.Parse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,15 +17,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Op {
   
-  @js.native
-  trait Add extends BaseOperation {
+  trait Add
+    extends StObject
+       with BaseOperation {
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
   }
   object Add {
     
     @scala.inline
-    def apply(objects: () => js.Array[_], toJSON: () => js.Any): Add = {
+    def apply(objects: () => js.Array[js.Any], toJSON: () => js.Any): Add = {
       val __obj = js.Dynamic.literal(objects = js.Any.fromFunction0(objects), toJSON = js.Any.fromFunction0(toJSON))
       __obj.asInstanceOf[Add]
     }
@@ -39,15 +39,16 @@ object Op {
     }
   }
   
-  @js.native
-  trait AddUnique extends BaseOperation {
+  trait AddUnique
+    extends StObject
+       with BaseOperation {
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
   }
   object AddUnique {
     
     @scala.inline
-    def apply(objects: () => js.Array[_], toJSON: () => js.Any): AddUnique = {
+    def apply(objects: () => js.Array[js.Any], toJSON: () => js.Any): AddUnique = {
       val __obj = js.Dynamic.literal(objects = js.Any.fromFunction0(objects), toJSON = js.Any.fromFunction0(toJSON))
       __obj.asInstanceOf[AddUnique]
     }
@@ -60,15 +61,14 @@ object Op {
     }
   }
   
-  @js.native
   trait BaseOperation extends StObject {
     
-    def objects(): js.Array[_] = js.native
+    def objects(): js.Array[js.Any]
   }
   object BaseOperation {
     
     @scala.inline
-    def apply(objects: () => js.Array[_]): BaseOperation = {
+    def apply(objects: () => js.Array[js.Any]): BaseOperation = {
       val __obj = js.Dynamic.literal(objects = js.Any.fromFunction0(objects))
       __obj.asInstanceOf[BaseOperation]
     }
@@ -77,16 +77,15 @@ object Op {
     implicit class BaseOperationMutableBuilder[Self <: BaseOperation] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setObjects(value: () => js.Array[_]): Self = StObject.set(x, "objects", js.Any.fromFunction0(value))
+      def setObjects(value: () => js.Array[js.Any]): Self = StObject.set(x, "objects", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait Increment extends StObject {
     
-    var amount: Double = js.native
+    var amount: Double
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
   }
   object Increment {
     
@@ -107,14 +106,13 @@ object Op {
     }
   }
   
-  @js.native
   trait Relation extends StObject {
     
-    def added(): js.Array[Object[Attributes]] = js.native
+    def added(): js.Array[Object[Attributes]]
     
-    var removed: js.Array[Object[Attributes]] = js.native
+    var removed: js.Array[Object[Attributes]]
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
   }
   object Relation {
     
@@ -145,12 +143,11 @@ object Op {
     }
   }
   
-  @js.native
   trait Set extends StObject {
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def value(): js.Any = js.native
+    def value(): js.Any
   }
   object Set {
     
@@ -171,10 +168,9 @@ object Op {
     }
   }
   
-  @js.native
   trait Unset extends StObject {
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
   }
   object Unset {
     

@@ -2,40 +2,38 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Indicates various scans and whether they are turned on or off.
   */
-@js.native
 trait SchemaScanConfig extends StObject {
   
   /**
     * Output only. The time this scan config was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. A human-readable description of what the `ScanConfig` does.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the Scan is enabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output only. The name of the ScanConfig in the form
     * “projects/{project_id}/scanConfigs/{scan_config_id}&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time this scan config was last updated.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaScanConfig {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationTag extends StObject {
   
   /**
     * The configuration ID for the item to tag. You can specify a list of keys and values.
     */
-  var configurationId: js.UndefOr[ConfigurationId] = js.native
+  var configurationId: js.UndefOr[ConfigurationId] = js.undefined
   
   /**
     * A type of IT asset to tag.
     */
-  var configurationType: js.UndefOr[ConfigurationItemType] = js.native
+  var configurationType: js.UndefOr[ConfigurationItemType] = js.undefined
   
   /**
     * A type of tag on which to filter. For example, serverType.
     */
-  var key: js.UndefOr[TagKey] = js.native
+  var key: js.UndefOr[TagKey] = js.undefined
   
   /**
     * The time the configuration tag was created in Coordinated Universal Time (UTC).
     */
-  var timeOfCreation: js.UndefOr[TimeStamp] = js.native
+  var timeOfCreation: js.UndefOr[TimeStamp] = js.undefined
   
   /**
     * A value on which to filter. For example key = serverType and value = web server.
     */
-  var value: js.UndefOr[TagValue] = js.native
+  var value: js.UndefOr[TagValue] = js.undefined
 }
 object ConfigurationTag {
   

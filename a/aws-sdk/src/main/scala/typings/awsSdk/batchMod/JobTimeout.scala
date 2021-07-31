@@ -2,16 +2,14 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobTimeout extends StObject {
   
   /**
     * The time duration in seconds (measured from the job attempt's startedAt timestamp) after which AWS Batch terminates your jobs if they have not finished.
     */
-  var attemptDurationSeconds: js.UndefOr[Integer] = js.native
+  var attemptDurationSeconds: js.UndefOr[Integer] = js.undefined
 }
 object JobTimeout {
   

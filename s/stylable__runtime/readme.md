@@ -10,9 +10,9 @@ Stylable runtime DOM integration
 | ------------------ | :-------------: |
 | Full name          | @stylable/runtime |
 | Keywords           | - |
-| # releases         | 68 |
-| # dependents       | 10 |
-| # downloads        | 248454 |
+| # releases         | 77 |
+| # dependents       | 9 |
+| # downloads        | 310743 |
 | # stars            | 0 |
 
 ## Links

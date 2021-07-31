@@ -6,43 +6,43 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePostsInsert extends StandardParameters {
+trait ParamsResourcePostsInsert
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * ID of the blog to add the post to.
     */
-  var blogId: js.UndefOr[String] = js.native
+  var blogId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the body content of the post is included with the result
     * (default: true).
     */
-  var fetchBody: js.UndefOr[Boolean] = js.native
+  var fetchBody: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether image URL metadata for each post is included in the returned
     * result (default: false).
     */
-  var fetchImages: js.UndefOr[Boolean] = js.native
+  var fetchImages: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to create the post as a draft (default: false).
     */
-  var isDraft: js.UndefOr[Boolean] = js.native
+  var isDraft: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaPost] = js.native
+  var requestBody: js.UndefOr[SchemaPost] = js.undefined
 }
 object ParamsResourcePostsInsert {
   

@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a 2D texture material used in the 3D model. */
-@js.native
 trait Printing3DTexture2CoordMaterial extends StObject {
   
   /** Gets or sets the texture used in the 2D texture material. */
-  var texture: Printing3DModelTexture = js.native
+  var texture: Printing3DModelTexture
   
   /** Gets or sets the U-coordinate within the texture, horizontally right from the origin in the upper left of the texture. */
-  var u: Double = js.native
+  var u: Double
   
   /** Gets or sets the V-coordinate within the texture, vertically down from the origin in the upper left of the texture. */
-  var v: Double = js.native
+  var v: Double
 }
 object Printing3DTexture2CoordMaterial {
   

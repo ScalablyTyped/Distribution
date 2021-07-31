@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasRect extends StObject {
   
-  def clearRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  def clearRect(x: Double, y: Double, w: Double, h: Double): Unit
   
-  def fillRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  def fillRect(x: Double, y: Double, w: Double, h: Double): Unit
   
-  def strokeRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  def strokeRect(x: Double, y: Double, w: Double, h: Double): Unit
 }
 object CanvasRect {
   

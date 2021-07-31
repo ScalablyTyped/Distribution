@@ -2,25 +2,25 @@ package typings.clusterizeJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("clusterize.js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Clusterize {
+  class ^ protected ()
+    extends StObject
+       with Clusterize {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Callbacks extends StObject {
     
-    var clusterChanged: js.UndefOr[js.Function0[Unit]] = js.native
+    var clusterChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var clusterWillChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var clusterWillChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var scrollingProgress: js.UndefOr[js.Function1[/* progress */ Double, Unit]] = js.native
+    var scrollingProgress: js.UndefOr[js.Function1[/* progress */ Double, Unit]] = js.undefined
   }
   object Callbacks {
     
@@ -76,30 +76,29 @@ object mod {
     def update(data: js.Array[String]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var blocks_in_cluster: js.UndefOr[Double] = js.native
+    var blocks_in_cluster: js.UndefOr[Double] = js.undefined
     
-    var callbacks: js.UndefOr[Callbacks] = js.native
+    var callbacks: js.UndefOr[Callbacks] = js.undefined
     
-    var contentId: String = js.native
+    var contentId: String
     
-    var keep_parity: js.UndefOr[Boolean] = js.native
+    var keep_parity: js.UndefOr[Boolean] = js.undefined
     
-    var no_data_class: js.UndefOr[String] = js.native
+    var no_data_class: js.UndefOr[String] = js.undefined
     
-    var no_data_text: js.UndefOr[String] = js.native
+    var no_data_text: js.UndefOr[String] = js.undefined
     
-    var rows: js.UndefOr[js.Array[String]] = js.native
+    var rows: js.UndefOr[js.Array[String]] = js.undefined
     
-    var rows_in_block: js.UndefOr[Double] = js.native
+    var rows_in_block: js.UndefOr[Double] = js.undefined
     
-    var scrollId: String = js.native
+    var scrollId: String
     
-    var show_no_data_row: js.UndefOr[Boolean] = js.native
+    var show_no_data_row: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
   }
   object Options {
     

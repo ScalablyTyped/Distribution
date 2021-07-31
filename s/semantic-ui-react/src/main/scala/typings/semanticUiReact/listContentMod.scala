@@ -15,7 +15,6 @@ import typings.semanticUiReact.listDescriptionMod.ListDescriptionProps
 import typings.semanticUiReact.listHeaderMod.ListHeaderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listContentMod extends Shortcut {
@@ -24,9 +23,9 @@ object listContentMod extends Shortcut {
   @js.native
   val default: StatelessComponent[ListContentProps] = js.native
   
-  @js.native
   trait ListContentProps
-    extends StrictListContentProps
+    extends StObject
+       with StrictListContentProps
        with /* key */ StringDictionary[js.Any]
   object ListContentProps {
     
@@ -37,32 +36,31 @@ object listContentMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictListContentProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Shorthand for ListDescription. */
-    var description: js.UndefOr[SemanticShorthandItem[ListDescriptionProps]] = js.native
+    var description: js.UndefOr[SemanticShorthandItem[ListDescriptionProps]] = js.undefined
     
     /** An list content can be floated left or right. */
-    var floated: js.UndefOr[SemanticFLOATS] = js.native
+    var floated: js.UndefOr[SemanticFLOATS] = js.undefined
     
     /** Shorthand for ListHeader. */
-    var header: js.UndefOr[SemanticShorthandItem[ListHeaderProps]] = js.native
+    var header: js.UndefOr[SemanticShorthandItem[ListHeaderProps]] = js.undefined
     
     /** An element inside a list can be vertically aligned. */
-    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.native
+    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.undefined
   }
   object StrictListContentProps {
     

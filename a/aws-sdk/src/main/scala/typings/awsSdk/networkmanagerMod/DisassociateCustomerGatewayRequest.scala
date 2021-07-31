@@ -2,21 +2,19 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateCustomerGatewayRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the customer gateway. For more information, see Resources Defined by Amazon EC2.
     */
-  var CustomerGatewayArn: String = js.native
+  var CustomerGatewayArn: String
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String = js.native
+  var GlobalNetworkId: String
 }
 object DisassociateCustomerGatewayRequest {
   

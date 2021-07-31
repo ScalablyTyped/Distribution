@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.IssuesDeleteCommentRequestOptions
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersIssuesDeleteCommentEndpoint extends StObject {
   
-  var parameters: IssuesDeleteCommentEndpoint = js.native
+  var parameters: IssuesDeleteCommentEndpoint
   
-  var request: IssuesDeleteCommentRequestOptions = js.native
+  var request: IssuesDeleteCommentRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersIssuesDeleteCommentEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersIssuesDeleteCommentEndpoint {
   def apply(
     parameters: IssuesDeleteCommentEndpoint,
     request: IssuesDeleteCommentRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersIssuesDeleteCommentEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersIssuesDeleteCommentEndpoint]
@@ -39,6 +37,6 @@ object ParametersIssuesDeleteCommentEndpoint {
     def setRequest(value: IssuesDeleteCommentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

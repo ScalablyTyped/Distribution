@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReusableConfigValues extends StObject {
   
   /** Optional. Describes custom X.509 extensions. */
-  var additionalExtensions: js.UndefOr[js.Array[X509Extension]] = js.native
+  var additionalExtensions: js.UndefOr[js.Array[X509Extension]] = js.undefined
   
   /** Optional. Describes Online Certificate Status Protocol (OCSP) endpoint addresses that appear in the "Authority Information Access" extension in the certificate. */
-  var aiaOcspServers: js.UndefOr[js.Array[String]] = js.native
+  var aiaOcspServers: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Optional. Describes options in this ReusableConfigValues that are relevant in a CA certificate. */
-  var caOptions: js.UndefOr[CaOptions] = js.native
+  var caOptions: js.UndefOr[CaOptions] = js.undefined
   
   /** Optional. Indicates the intended use for keys that correspond to a certificate. */
-  var keyUsage: js.UndefOr[KeyUsage] = js.native
+  var keyUsage: js.UndefOr[KeyUsage] = js.undefined
   
   /** Optional. Describes the X.509 certificate policy object identifiers, per https://tools.ietf.org/html/rfc5280#section-4.2.1.4. */
-  var policyIds: js.UndefOr[js.Array[ObjectId]] = js.native
+  var policyIds: js.UndefOr[js.Array[ObjectId]] = js.undefined
 }
 object ReusableConfigValues {
   

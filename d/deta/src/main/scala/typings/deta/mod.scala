@@ -4,17 +4,18 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("deta", "Deta")
+  @JSImport("deta", JSImport.Namespace)
   @js.native
-  def Deta(projectKey: String): DetaInstance = js.native
-  @JSImport("deta", "Deta")
-  @js.native
-  def Deta(projectKey: String, host: String): DetaInstance = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Deta(projectKey: String): DetaInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("Deta")(projectKey.asInstanceOf[js.Any]).asInstanceOf[DetaInstance]
+  @scala.inline
+  def Deta(projectKey: String, host: String): DetaInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("Deta")(projectKey.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[DetaInstance]
   
   @js.native
   trait DetaBase extends StObject {
@@ -22,13 +23,13 @@ object mod {
     def delete(key: String): js.Promise[Unit] = js.native
     
     def fetch(): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
-    def fetch(query: js.UndefOr[scala.Nothing], limit: js.UndefOr[scala.Nothing], buffer: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
-    def fetch(query: js.UndefOr[scala.Nothing], limit: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
-    def fetch(query: js.UndefOr[scala.Nothing], limit: Double, buffer: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
+    def fetch(query: Unit, limit: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
+    def fetch(query: Unit, limit: Double, buffer: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
+    def fetch(query: Unit, limit: Unit, buffer: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
     def fetch(query: DetaBaseQuery): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
-    def fetch(query: DetaBaseQuery, limit: js.UndefOr[scala.Nothing], buffer: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
     def fetch(query: DetaBaseQuery, limit: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
     def fetch(query: DetaBaseQuery, limit: Double, buffer: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
+    def fetch(query: DetaBaseQuery, limit: Unit, buffer: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
     
     def get(key: String): js.Promise[Serializable | Null] = js.native
     
@@ -44,8 +45,9 @@ object mod {
     var util: DetaBaseUtil = js.native
   }
   
-  @js.native
-  trait DetaBaseQuery extends /* key */ StringDictionary[String | Double | Boolean | DetaBaseQuery]
+  trait DetaBaseQuery
+    extends StObject
+       with /* key */ StringDictionary[String | Double | Boolean | DetaBaseQuery]
   object DetaBaseQuery {
     
     @scala.inline
@@ -70,10 +72,9 @@ object mod {
     def trim(): js.Object = js.native
   }
   
-  @js.native
   trait DetaInstance extends StObject {
     
-    def Base(db: String): DetaBase = js.native
+    def Base(db: String): DetaBase
   }
   object DetaInstance {
     

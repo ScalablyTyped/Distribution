@@ -8,14 +8,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.logfilegenerated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the destination of logged messages from LoggingChannel instances. */
 @js.native
 trait FileLoggingSession extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_logfilegenerated(
     `type`: logfilegenerated,
@@ -47,12 +46,12 @@ trait FileLoggingSession extends StObject {
   var name: String = js.native
   
   /** Raised when a log file is saved. */
-  def onlogfilegenerated(ev: LogFileGeneratedEventArgs with WinRTEvent[IFileLoggingSession]): Unit = js.native
+  def onlogfilegenerated(ev: LogFileGeneratedEventArgs & WinRTEvent[IFileLoggingSession]): Unit = js.native
   /** Raised when a log file is saved. */
   @JSName("onlogfilegenerated")
   var onlogfilegenerated_Original: TypedEventHandler[IFileLoggingSession, LogFileGeneratedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_logfilegenerated(
     `type`: logfilegenerated,

@@ -3,33 +3,31 @@ package typings.winrtUwp.Windows.Media.Streaming.Adaptive
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the DownloadRequested event. */
-@js.native
 trait AdaptiveMediaSourceDownloadRequestedEventArgs extends StObject {
   
   /**
     * Gets a deferral that can be used to defer the completion of the DownloadRequested event so that the app can asynchronously download media content.
     * @return A deferral that can be used to defer the completion of the DownloadRequested event.
     */
-  def getDeferral(): AdaptiveMediaSourceDownloadRequestedDeferral = js.native
+  def getDeferral(): AdaptiveMediaSourceDownloadRequestedDeferral
   
   /** Gets the byte range length of the media download request. */
-  var resourceByteRangeLength: Double = js.native
+  var resourceByteRangeLength: Double
   
   /** Gets the byte range offset of the media download request. */
-  var resourceByteRangeOffset: Double = js.native
+  var resourceByteRangeOffset: Double
   
   /** Gets the resource type of the media download request. */
-  var resourceType: AdaptiveMediaSourceResourceType = js.native
+  var resourceType: AdaptiveMediaSourceResourceType
   
   /** Gets the resource URI of the media download request. */
-  var resourceUri: Uri = js.native
+  var resourceUri: Uri
   
   /** Gets an AdaptiveMediaSourceDownloadResult object representing the result of the media download request. */
-  var result: AdaptiveMediaSourceDownloadResult = js.native
+  var result: AdaptiveMediaSourceDownloadResult
 }
 object AdaptiveMediaSourceDownloadRequestedEventArgs {
   

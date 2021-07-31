@@ -3,17 +3,15 @@ package typings.angularFormly.AngularFormly
 import typings.angular.mod.IFormController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITemplateScopeOptions extends StObject {
   
-  var formControl: IFormController | js.Array[IFormController] = js.native
+  var formControl: IFormController | js.Array[IFormController]
   
-  var templateOptions: ITemplateOptions = js.native
+  var templateOptions: ITemplateOptions
   
-  var validation: js.Object = js.native
+  var validation: js.Object
 }
 object ITemplateScopeOptions {
   

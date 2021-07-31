@@ -6,7 +6,6 @@ import typings.std.DocumentFragment
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone.marionette", "Region")
@@ -20,6 +19,8 @@ class Region ()
      with DomMixin {
   def this(options: RegionConstructionOptions) = this()
   
+  /* CompleteClass */
+  var appendChildren: js.Any = js.native
   /**
     * Takes the DOM node el and appends the rendered children to the end of
     * the element's contents.
@@ -33,8 +34,10 @@ class Region ()
     * Override this method to change how the new view is appended to the
     * `$el` that the region is managing
     */
-  def attachHtml(view: typings.backbone.mod.View[Model[_, ModelSetOptions, js.Object]]): Unit = js.native
+  def attachHtml(view: typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]): Unit = js.native
   
+  /* CompleteClass */
+  var beforeEl: js.Any = js.native
   /**
     * Add sibling to the DOM immediately before the DOM node el. The
     * sibling will be at the same level as el.
@@ -49,6 +52,8 @@ class Region ()
     */
   var cidPrefix: String = js.native
   
+  /* CompleteClass */
+  var createBuffer: js.Any = js.native
   /**
     * Returns a new HTML DOM node instance. The resulting node can be
     * passed into the other DOM functions.
@@ -59,14 +64,16 @@ class Region ()
   /**
     * @returns view that this region has.
     */
-  var currentView: typings.backbone.mod.View[Model[_, ModelSetOptions, js.Object]] = js.native
+  var currentView: typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]] = js.native
   
   /**
     * Destroys the view taking into consideration if is a View descendant
     * or vanilla Backbone view.
     */
-  def destroyView[TModel /* <: Model[_, ModelSetOptions, js.Object] */](view: typings.backbone.mod.View[TModel]): typings.backbone.mod.View[TModel] = js.native
+  def destroyView[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](view: typings.backbone.mod.View[TModel]): typings.backbone.mod.View[TModel] = js.native
   
+  /* CompleteClass */
+  var detachContents: js.Any = js.native
   /**
     * Remove the inner contents of el from the DOM while leaving el itself
     * in the DOM.
@@ -75,6 +82,8 @@ class Region ()
   @JSName("detachContents")
   def detachContents_MRegion(el: js.Any): Unit = js.native
   
+  /* CompleteClass */
+  var detachEl: js.Any = js.native
   /**
     * Detach el from the DOM.
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
@@ -92,7 +101,7 @@ class Region ()
     * Empties the Region without destroying the view, returns the detached
     * view.
     */
-  def detachView(): typings.backbone.mod.View[Model[_, ModelSetOptions, js.Object]] = js.native
+  def detachView(): typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]] = js.native
   
   /**
     * Contains the element that this region should manage.
@@ -106,6 +115,8 @@ class Region ()
   def empty(): js.Any = js.native
   def empty(options: RegionViewOptions): js.Any = js.native
   
+  /* CompleteClass */
+  var findEls: js.Any = js.native
   /**
     * Lookup the selector string within the DOM node for context. The
     * optional context argument will come in as a DOM Node reference to run
@@ -141,6 +152,8 @@ class Region ()
     */
   def isSwappingView(): Boolean = js.native
   
+  /* CompleteClass */
+  var removeEl: js.Any = js.native
   /**
     * Remove el from the DOM.
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
@@ -152,8 +165,10 @@ class Region ()
     * Override the region's removeView method to change how and when the
     * view is destroyed / removed from the DOM.
     */
-  def removeView(view: typings.backbone.mod.View[Model[_, ModelSetOptions, js.Object]]): Unit = js.native
+  def removeView(view: typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]): Unit = js.native
   
+  /* CompleteClass */
+  var replaceEl: js.Any = js.native
   /**
     * Remove oldEl from the DOM and put newEl in its place.
     */
@@ -173,6 +188,8 @@ class Region ()
     */
   def reset(): js.Any = js.native
   
+  /* CompleteClass */
+  var setInnerContent: js.Any = js.native
   /**
     * Replace the contents of el with the HTML string of html. Unlike other
     * DOM functions, this takes a literal string for its second argument.
@@ -186,6 +203,9 @@ class Region ()
     * Renders and displays the specified view in this region.
     * @param view the view to display.
     */
-  def show(view: typings.backbone.mod.View[Model[_, ModelSetOptions, js.Object]]): Unit = js.native
-  def show(view: typings.backbone.mod.View[Model[_, ModelSetOptions, js.Object]], options: RegionViewOptions): Unit = js.native
+  def show(view: typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]): Unit = js.native
+  def show(
+    view: typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]],
+    options: RegionViewOptions
+  ): Unit = js.native
 }

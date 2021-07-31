@@ -2,36 +2,34 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugRuleEvaluationStatus extends StObject {
   
   /**
     * Timestamp when the rule evaluation status was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the rule configuration
     */
-  var RuleConfigurationName: js.UndefOr[typings.awsSdk.sagemakerMod.RuleConfigurationName] = js.native
+  var RuleConfigurationName: js.UndefOr[typings.awsSdk.sagemakerMod.RuleConfigurationName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the rule evaluation job.
     */
-  var RuleEvaluationJobArn: js.UndefOr[ProcessingJobArn] = js.native
+  var RuleEvaluationJobArn: js.UndefOr[ProcessingJobArn] = js.undefined
   
   /**
     * Status of the rule evaluation.
     */
-  var RuleEvaluationStatus: js.UndefOr[typings.awsSdk.sagemakerMod.RuleEvaluationStatus] = js.native
+  var RuleEvaluationStatus: js.UndefOr[typings.awsSdk.sagemakerMod.RuleEvaluationStatus] = js.undefined
   
   /**
     * Details from the rule evaluation.
     */
-  var StatusDetails: js.UndefOr[typings.awsSdk.sagemakerMod.StatusDetails] = js.native
+  var StatusDetails: js.UndefOr[typings.awsSdk.sagemakerMod.StatusDetails] = js.undefined
 }
 object DebugRuleEvaluationStatus {
   

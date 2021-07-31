@@ -5,7 +5,6 @@ import typings.html5plus.html5plusStrings.baidu
 import typings.html5plus.html5plusStrings.system
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
   */
-@js.native
 trait PlusGeolocationPositionOptions extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait PlusGeolocationPositionOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var coordsType: js.UndefOr[String] = js.native
+  var coordsType: js.UndefOr[String] = js.undefined
   
   /**
     * 是否高精确度获取位置信息
@@ -36,7 +34,7 @@ trait PlusGeolocationPositionOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var enableHighAccuracy: js.UndefOr[Boolean] = js.native
+  var enableHighAccuracy: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否解析地址信息
@@ -45,7 +43,7 @@ trait PlusGeolocationPositionOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var geocode: js.UndefOr[Boolean] = js.native
+  var geocode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 获取位置信息的间隔时间
@@ -54,7 +52,7 @@ trait PlusGeolocationPositionOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var maximumAge: js.UndefOr[Double] = js.native
+  var maximumAge: js.UndefOr[Double] = js.undefined
   
   /**
     * 优先使用的定位模块
@@ -70,7 +68,7 @@ trait PlusGeolocationPositionOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var provider: js.UndefOr[system | baidu | amap] = js.native
+  var provider: js.UndefOr[system | baidu | amap] = js.undefined
   
   /**
     * 获取位置信息的超时时间
@@ -78,7 +76,7 @@ trait PlusGeolocationPositionOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object PlusGeolocationPositionOptions {
   

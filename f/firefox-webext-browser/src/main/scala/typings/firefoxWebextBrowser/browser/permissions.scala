@@ -5,7 +5,6 @@ import typings.firefoxWebextBrowser.browser.manifest.OptionalPermission
 import typings.firefoxWebextBrowser.browser.manifest.Permission
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,12 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object permissions {
   
-  @js.native
   trait AnyPermissions extends StObject {
     
-    var origins: js.UndefOr[js.Array[MatchPattern]] = js.native
+    var origins: js.UndefOr[js.Array[MatchPattern]] = js.undefined
     
-    var permissions: js.UndefOr[js.Array[Permission]] = js.native
+    var permissions: js.UndefOr[js.Array[Permission]] = js.undefined
   }
   object AnyPermissions {
     
@@ -54,12 +52,11 @@ object permissions {
   }
   
   /* permissions types */
-  @js.native
   trait Permissions extends StObject {
     
-    var origins: js.UndefOr[js.Array[MatchPattern]] = js.native
+    var origins: js.UndefOr[js.Array[MatchPattern]] = js.undefined
     
-    var permissions: js.UndefOr[js.Array[OptionalPermission]] = js.native
+    var permissions: js.UndefOr[js.Array[OptionalPermission]] = js.undefined
   }
   object Permissions {
     

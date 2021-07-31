@@ -2,15 +2,13 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionChecksum extends StObject {
   
-  var checksum: String = js.native
+  var checksum: String
   
-  var revision: String = js.native
+  var revision: String
 }
 object CollectionChecksum {
   

@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricStructuredName extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait MetricStructuredName extends StObject {
   var context: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.MetricStructuredName with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.MetricStructuredName & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Worker-defined metric name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Origin (namespace) of metric name. May be blank for user-define metrics; will be "dataflow" for metrics defined by the Dataflow service or SDK. */
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
 }
 object MetricStructuredName {
   
@@ -40,7 +38,7 @@ object MetricStructuredName {
     def setContext(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.MetricStructuredName with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.MetricStructuredName & TopLevel[js.Any]
     ): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -4,17 +4,15 @@ import typings.lokijs.lokijsStrings.find
 import typings.lokijs.lokijsStrings.where
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var `type`: find | where = js.native
+  var `type`: find | where
   
-  var uid: js.UndefOr[String | Double] = js.native
+  var uid: js.UndefOr[String | Double] = js.undefined
   
-  var `val`: js.Any = js.native
+  var `val`: js.Any
 }
 object Type {
   

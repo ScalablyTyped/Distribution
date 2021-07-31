@@ -11,8 +11,8 @@ Lightweight full-text search engine in Javascript for browser search and offline
 | Full name          | elasticlunr |
 | Keywords           | search, text retrieval, offline search, full text search |
 | # releases         | 0 |
-| # dependents       | 52 |
-| # downloads        | 738026 |
+| # dependents       | 60 |
+| # downloads        | 1035812 |
 | # stars            | 10 |
 
 ## Links

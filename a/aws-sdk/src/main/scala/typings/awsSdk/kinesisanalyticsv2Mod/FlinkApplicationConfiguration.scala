@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlinkApplicationConfiguration extends StObject {
   
   /**
     * Describes an application's checkpointing configuration. Checkpointing is the process of persisting application state for fault tolerance. For more information, see  Checkpoints for Fault Tolerance in the Apache Flink Documentation. 
     */
-  var CheckpointConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CheckpointConfiguration] = js.native
+  var CheckpointConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CheckpointConfiguration] = js.undefined
   
   /**
     * Describes configuration parameters for Amazon CloudWatch logging for an application.
     */
-  var MonitoringConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.MonitoringConfiguration] = js.native
+  var MonitoringConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.MonitoringConfiguration] = js.undefined
   
   /**
     * Describes parameters for how an application executes multiple tasks simultaneously.
     */
-  var ParallelismConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ParallelismConfiguration] = js.native
+  var ParallelismConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ParallelismConfiguration] = js.undefined
 }
 object FlinkApplicationConfiguration {
   

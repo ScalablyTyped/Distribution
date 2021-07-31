@@ -2,67 +2,67 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGeoObjectOptions extends ICircleOptions {
+trait IGeoObjectOptions
+  extends StObject
+     with ICircleOptions {
   
-  var iconCaptionMaxWidth: js.UndefOr[Double] = js.native
+  var iconCaptionMaxWidth: js.UndefOr[Double] = js.undefined
   
-  var iconColor: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.undefined
   
-  var iconContentLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.native
+  var iconContentLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.undefined
   
-  var iconContentOffset: js.UndefOr[js.Array[Double]] = js.native
+  var iconContentOffset: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var iconContentPadding: js.UndefOr[js.Array[Double]] = js.native
+  var iconContentPadding: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var iconContentSize: js.UndefOr[js.Array[Double]] = js.native
+  var iconContentSize: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var iconImageClipRect: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var iconImageClipRect: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
-  var iconImageHref: js.UndefOr[String] = js.native
+  var iconImageHref: js.UndefOr[String] = js.undefined
   
-  var iconImageOffset: js.UndefOr[js.Array[Double]] = js.native
+  var iconImageOffset: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var iconImageShape: js.UndefOr[IShape | Null] = js.native
+  var iconImageShape: js.UndefOr[IShape | Null] = js.undefined
   
-  var iconImageSize: js.UndefOr[js.Array[Double]] = js.native
+  var iconImageSize: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var iconLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.native
+  var iconLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.undefined
   
-  var iconMaxHeight: js.UndefOr[Double] = js.native
+  var iconMaxHeight: js.UndefOr[Double] = js.undefined
   
-  var iconMaxWidth: js.UndefOr[Double] = js.native
+  var iconMaxWidth: js.UndefOr[Double] = js.undefined
   
-  var iconOffset: js.UndefOr[js.Array[Double]] = js.native
+  var iconOffset: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var iconShadow: js.UndefOr[Boolean] = js.native
+  var iconShadow: js.UndefOr[Boolean] = js.undefined
   
-  var iconShadowImageClipRect: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var iconShadowImageClipRect: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
-  var iconShadowImageHref: js.UndefOr[String] = js.native
+  var iconShadowImageHref: js.UndefOr[String] = js.undefined
   
-  var iconShadowImageOffset: js.UndefOr[js.Array[Double]] = js.native
+  var iconShadowImageOffset: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var iconShadowImageSize: js.UndefOr[js.Array[Double]] = js.native
+  var iconShadowImageSize: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var iconShadowLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.native
+  var iconShadowLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.undefined
   
-  var iconShadowOffset: js.UndefOr[js.Array[Double]] = js.native
+  var iconShadowOffset: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var lineStringOverlay: js.UndefOr[OverlayKey] = js.native
+  var lineStringOverlay: js.UndefOr[OverlayKey] = js.undefined
   
-  var pointOverlay: js.UndefOr[OverlayKey] = js.native
+  var pointOverlay: js.UndefOr[OverlayKey] = js.undefined
   
-  var polygonOverlay: js.UndefOr[OverlayKey] = js.native
+  var polygonOverlay: js.UndefOr[OverlayKey] = js.undefined
   
-  var preset: js.UndefOr[String] = js.native
+  var preset: js.UndefOr[String] = js.undefined
   
-  var rectangleOverlay: js.UndefOr[OverlayKey] = js.native
+  var rectangleOverlay: js.UndefOr[OverlayKey] = js.undefined
   
-  var setMapCursorInDragging: js.UndefOr[Boolean] = js.native
+  var setMapCursorInDragging: js.UndefOr[Boolean] = js.undefined
 }
 object IGeoObjectOptions {
   

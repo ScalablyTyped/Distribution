@@ -6,10 +6,13 @@ import typings.dagreLayout.anon.Name
 import typings.dagreLayout.mod.graphlib.Graph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("dagre-layout", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object graphlib {
     
@@ -39,9 +42,9 @@ object mod {
       def setEdge(params: Name): Graph = js.native
       def setEdge(params: Name, value: String): Graph = js.native
       def setEdge(sourceId: String, targetId: String): Graph = js.native
-      def setEdge(sourceId: String, targetId: String, options: js.UndefOr[scala.Nothing], value: String): Graph = js.native
       def setEdge(sourceId: String, targetId: String, options: StringDictionary[js.Any]): Graph = js.native
       def setEdge(sourceId: String, targetId: String, options: StringDictionary[js.Any], value: String): Graph = js.native
+      def setEdge(sourceId: String, targetId: String, options: Unit, value: String): Graph = js.native
       
       def setGraph(label: GraphLabel): Graph = js.native
       
@@ -51,18 +54,16 @@ object mod {
     }
   }
   
-  @JSImport("dagre-layout", "layout")
-  @js.native
-  def layout(graph: Graph): Unit = js.native
+  @scala.inline
+  def layout(graph: Graph): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("layout")(graph.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Edge extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var v: String = js.native
+    var v: String
     
-    var w: String = js.native
+    var w: String
   }
   object Edge {
     
@@ -89,32 +90,31 @@ object mod {
     }
   }
   
-  @js.native
   trait GraphLabel extends StObject {
     
-    var acyclicer: js.UndefOr[String] = js.native
+    var acyclicer: js.UndefOr[String] = js.undefined
     
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
-    var compound: js.UndefOr[Boolean] = js.native
+    var compound: js.UndefOr[Boolean] = js.undefined
     
-    var edgesep: js.UndefOr[Double] = js.native
+    var edgesep: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var marginx: js.UndefOr[Double] = js.native
+    var marginx: js.UndefOr[Double] = js.undefined
     
-    var marginy: js.UndefOr[Double] = js.native
+    var marginy: js.UndefOr[Double] = js.undefined
     
-    var nodesep: js.UndefOr[Double] = js.native
+    var nodesep: js.UndefOr[Double] = js.undefined
     
-    var rankdir: js.UndefOr[String] = js.native
+    var rankdir: js.UndefOr[String] = js.undefined
     
-    var ranker: js.UndefOr[String] = js.native
+    var ranker: js.UndefOr[String] = js.undefined
     
-    var ranksep: js.UndefOr[Double] = js.native
+    var ranksep: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object GraphLabel {
     

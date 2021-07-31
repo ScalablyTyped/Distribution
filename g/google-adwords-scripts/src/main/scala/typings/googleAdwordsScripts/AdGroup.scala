@@ -2,13 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Ad Group
 @js.native
 trait AdGroup
-  extends AdWordsEntity
+  extends StObject
+     with AdWordsEntity
      with canBeEnabled
      with hasExtensions
      with hasLabels

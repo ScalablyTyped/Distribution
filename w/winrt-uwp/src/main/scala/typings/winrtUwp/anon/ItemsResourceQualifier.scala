@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceQualifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsResourceQualifier extends StObject {
   
-  /** The objects in the view that start at startIndex. */ var items: ResourceQualifier = js.native
+  /** The objects in the view that start at startIndex. */ var items: ResourceQualifier
   
-  /** The number of objects returned. */ var returnValue: Double = js.native
+  /** The number of objects returned. */ var returnValue: Double
 }
 object ItemsResourceQualifier {
   

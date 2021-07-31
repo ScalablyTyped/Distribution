@@ -2,23 +2,21 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldTest extends StObject {
   
-  var field: Group = js.native
+  var field: Group
   
-  var test: String = js.native
+  var test: String
   
-  var value: js.UndefOr[scala.Nothing] = js.native
+  var value: Unit
 }
 object FieldTest {
   
   @scala.inline
-  def apply(field: Group, test: String): FieldTest = {
-    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+  def apply(field: Group, test: String, value: Unit): FieldTest = {
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldTest]
   }
   
@@ -30,5 +28,8 @@ object FieldTest {
     
     @scala.inline
     def setTest(value: String): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

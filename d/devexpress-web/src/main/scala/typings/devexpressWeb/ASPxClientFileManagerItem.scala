@@ -2,7 +2,6 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,9 @@ trait ASPxClientFileManagerItem extends StObject {
     * @param skipRootFolder true, to skip the root folder; otherwise, false.
     */
   def GetFullName(): String = js.native
-  def GetFullName(separator: js.UndefOr[scala.Nothing], skipRootFolder: Boolean): String = js.native
   def GetFullName(separator: String): String = js.native
   def GetFullName(separator: String, skipRootFolder: Boolean): String = js.native
+  def GetFullName(separator: Unit, skipRootFolder: Boolean): String = js.native
   
   /**
     * Gets the current item's metadata.

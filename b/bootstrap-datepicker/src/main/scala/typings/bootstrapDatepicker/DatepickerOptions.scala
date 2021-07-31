@@ -4,7 +4,6 @@ import typings.bootstrapDatepicker.bootstrapDatepickerStrings.linked
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,96 +15,95 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See online docs for more info:
   *  https://bootstrap-datepicker.readthedocs.io/en/latest/options.html
   */
-@js.native
 trait DatepickerOptions extends StObject {
   
-  var assumeNearbyYear: js.UndefOr[Boolean | Double] = js.native
+  var assumeNearbyYear: js.UndefOr[Boolean | Double] = js.undefined
   
-  var autoclose: js.UndefOr[Boolean] = js.native
+  var autoclose: js.UndefOr[Boolean] = js.undefined
   
   var beforeShowCentury: js.UndefOr[
     js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
-  ] = js.native
+  ] = js.undefined
   
   var beforeShowDay: js.UndefOr[
     js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowDayResponse]]
-  ] = js.native
+  ] = js.undefined
   
   var beforeShowDecade: js.UndefOr[
     js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
-  ] = js.native
+  ] = js.undefined
   
   var beforeShowMonth: js.UndefOr[
     js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
-  ] = js.native
+  ] = js.undefined
   
   var beforeShowYear: js.UndefOr[
     js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
-  ] = js.native
+  ] = js.undefined
   
-  var calendarWeeks: js.UndefOr[Boolean] = js.native
+  var calendarWeeks: js.UndefOr[Boolean] = js.undefined
   
-  var clearBtn: js.UndefOr[Boolean] = js.native
+  var clearBtn: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var datesDisabled: js.UndefOr[String | js.Array[String]] = js.native
+  var datesDisabled: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var daysOfWeekDisabled: js.UndefOr[String | js.Array[Double]] = js.native
+  var daysOfWeekDisabled: js.UndefOr[String | js.Array[Double]] = js.undefined
   
-  var daysOfWeekHighlighted: js.UndefOr[String | js.Array[Double]] = js.native
+  var daysOfWeekHighlighted: js.UndefOr[String | js.Array[Double]] = js.undefined
   
-  var defaultViewDate: js.UndefOr[Date | String | DatepickerViewDate] = js.native
+  var defaultViewDate: js.UndefOr[Date | String | DatepickerViewDate] = js.undefined
   
-  var enableOnReadonly: js.UndefOr[Boolean] = js.native
+  var enableOnReadonly: js.UndefOr[Boolean] = js.undefined
   
-  var endDate: js.UndefOr[Date | String] = js.native
+  var endDate: js.UndefOr[Date | String] = js.undefined
   
-  var forceParse: js.UndefOr[Boolean] = js.native
+  var forceParse: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[String | DatepickerCustomFormatOptions] = js.native
+  var format: js.UndefOr[String | DatepickerCustomFormatOptions] = js.undefined
   
-  var immediateUpdates: js.UndefOr[Boolean] = js.native
+  var immediateUpdates: js.UndefOr[Boolean] = js.undefined
   
-  var inputs: js.UndefOr[js.Array[_]] = js.native
+  var inputs: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var keepEmptyValues: js.UndefOr[Boolean] = js.native
+  var keepEmptyValues: js.UndefOr[Boolean] = js.undefined
   
-  var keyboardNavigation: js.UndefOr[Boolean] = js.native
+  var keyboardNavigation: js.UndefOr[Boolean] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var maxViewMode: js.UndefOr[DatepickerViewModes] = js.native
+  var maxViewMode: js.UndefOr[DatepickerViewModes] = js.undefined
   
-  var minViewMode: js.UndefOr[DatepickerViewModes] = js.native
+  var minViewMode: js.UndefOr[DatepickerViewModes] = js.undefined
   
-  var multidate: js.UndefOr[Boolean | Double] = js.native
+  var multidate: js.UndefOr[Boolean | Double] = js.undefined
   
-  var multidateSeparator: js.UndefOr[String] = js.native
+  var multidateSeparator: js.UndefOr[String] = js.undefined
   
-  var orientation: js.UndefOr[DatepickerOrientations] = js.native
+  var orientation: js.UndefOr[DatepickerOrientations] = js.undefined
   
-  var showOnFocus: js.UndefOr[Boolean] = js.native
+  var showOnFocus: js.UndefOr[Boolean] = js.undefined
   
-  var showWeekDays: js.UndefOr[Boolean] = js.native
+  var showWeekDays: js.UndefOr[Boolean] = js.undefined
   
-  var startDate: js.UndefOr[Date | String] = js.native
+  var startDate: js.UndefOr[Date | String] = js.undefined
   
-  var startView: js.UndefOr[DatepickerViewModes] = js.native
+  var startView: js.UndefOr[DatepickerViewModes] = js.undefined
   
-  var templates: js.UndefOr[js.Any] = js.native
+  var templates: js.UndefOr[js.Any] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var todayBtn: js.UndefOr[Boolean | linked] = js.native
+  var todayBtn: js.UndefOr[Boolean | linked] = js.undefined
   
-  var todayHighlight: js.UndefOr[Boolean] = js.native
+  var todayHighlight: js.UndefOr[Boolean] = js.undefined
   
-  var updateViewDate: js.UndefOr[Boolean] = js.native
+  var updateViewDate: js.UndefOr[Boolean] = js.undefined
   
-  var weekStart: js.UndefOr[Double] = js.native
+  var weekStart: js.UndefOr[Double] = js.undefined
   
-  var zIndexOffset: js.UndefOr[Double] = js.native
+  var zIndexOffset: js.UndefOr[Double] = js.undefined
 }
 object DatepickerOptions {
   
@@ -242,7 +240,7 @@ object DatepickerOptions {
     def setImmediateUpdatesUndefined: Self = StObject.set(x, "immediateUpdates", js.undefined)
     
     @scala.inline
-    def setInputs(value: js.Array[_]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    def setInputs(value: js.Array[js.Any]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)

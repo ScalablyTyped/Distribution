@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesEventsOptionsObject extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SeriesEventsOptionsObject extends StObject {
     * initial animation, or in case animation is disabled, immediately as the
     * series is displayed.
     */
-  var afterAnimate: js.UndefOr[SeriesAfterAnimateCallbackFunction] = js.native
+  var afterAnimate: js.UndefOr[SeriesAfterAnimateCallbackFunction] = js.undefined
   
   /**
     * (Highstock) Fires when the checkbox next to the series' name in the
@@ -22,7 +20,7 @@ trait SeriesEventsOptionsObject extends StObject {
     * found by `event.item`. Return `false` to prevent the default action which
     * is to toggle the select state of the series.
     */
-  var checkboxClick: js.UndefOr[js.Function | SeriesCheckboxClickCallbackFunction] = js.native
+  var checkboxClick: js.UndefOr[js.Function | SeriesCheckboxClickCallbackFunction] = js.undefined
   
   /**
     * (Highstock) Fires when the series is clicked. One parameter, `event`, is
@@ -30,13 +28,13 @@ trait SeriesEventsOptionsObject extends StObject {
     * Additionally, `event.point` holds a pointer to the nearest point on the
     * graph.
     */
-  var click: js.UndefOr[SeriesClickCallbackFunction] = js.native
+  var click: js.UndefOr[SeriesClickCallbackFunction] = js.undefined
   
   /**
     * (Highstock) Fires when the series is hidden after chart generation time,
     * either by clicking the legend item or by calling `.hide()`.
     */
-  var hide: js.UndefOr[SeriesHideCallbackFunction] = js.native
+  var hide: js.UndefOr[SeriesHideCallbackFunction] = js.undefined
   
   /**
     * (Highstock) Fires when the legend item belonging to the series is
@@ -44,7 +42,7 @@ trait SeriesEventsOptionsObject extends StObject {
     * action is to toggle the visibility of the series. This can be prevented
     * by returning `false` or calling `event.preventDefault()`.
     */
-  var legendItemClick: js.UndefOr[SeriesLegendItemClickCallbackFunction] = js.native
+  var legendItemClick: js.UndefOr[SeriesLegendItemClickCallbackFunction] = js.undefined
   
   /**
     * (Highstock) Fires when the mouse leaves the graph. One parameter,
@@ -52,13 +50,13 @@ trait SeriesEventsOptionsObject extends StObject {
     * If the stickyTracking option is true, `mouseOut` doesn't happen before
     * the mouse enters another graph or leaves the plot area.
     */
-  var mouseOut: js.UndefOr[SeriesMouseOutCallbackFunction] = js.native
+  var mouseOut: js.UndefOr[SeriesMouseOutCallbackFunction] = js.undefined
   
   /**
     * (Highstock) Fires when the mouse enters the graph. One parameter,
     * `event`, is passed to the function, containing common event information.
     */
-  var mouseOver: js.UndefOr[SeriesMouseOverCallbackFunction] = js.native
+  var mouseOver: js.UndefOr[SeriesMouseOverCallbackFunction] = js.undefined
   
   /**
     * (Highcharts) Fires on a request for change of root node for the tree,
@@ -66,13 +64,13 @@ trait SeriesEventsOptionsObject extends StObject {
     * containing additional properties `newRootId`, `previousRootId`, `redraw`
     * and `trigger`.
     */
-  var setRootNode: js.UndefOr[js.Function] = js.native
+  var setRootNode: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highstock) Fires when the series is shown after chart generation time,
     * either by clicking the legend item or by calling `.show()`.
     */
-  var show: js.UndefOr[SeriesShowCallbackFunction] = js.native
+  var show: js.UndefOr[SeriesShowCallbackFunction] = js.undefined
 }
 object SeriesEventsOptionsObject {
   

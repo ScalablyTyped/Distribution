@@ -4,27 +4,27 @@ import typings.std.Error
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("temp-fs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Remove all tracked files and directories asynchronously.
     */
-  @JSImport("temp-fs", "clear")
-  @js.native
-  def clear(): js.Any = js.native
-  @JSImport("temp-fs", "clear")
-  @js.native
-  def clear(callback: js.Function0[_]): js.Any = js.native
+  @scala.inline
+  def clear(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Any]
+  @scala.inline
+  def clear(callback: js.Function0[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Remove all tracked files and directories synchronously.
     */
-  @JSImport("temp-fs", "clearSync")
-  @js.native
-  def clearSync(): js.Any = js.native
+  @scala.inline
+  def clearSync(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSync")().asInstanceOf[js.Any]
   
   /**
     * A tempdir.
@@ -51,20 +51,23 @@ object mod {
       * @param callback makes it asynchronous.
       */
     def unlink(): js.Any = js.native
-    def unlink(callback: js.Function1[/* error */ Error, _]): js.Any = js.native
+    def unlink(callback: js.Function1[/* error */ Error, js.Any]): js.Any = js.native
   }
-  /**
-    * Return the path of a system-provided tempdir as
-    * <code>require('os').tmpdir()</code> does.
-    *
-    * You should not make any assumption about whether the path contains a
-    * trailing path separator, or it is a real path. On most system it is not a
-    * fixed path, and it can be changed by the user environment. When in doubt,
-    * check it first.
-    */
-  @JSImport("temp-fs", "dir")
-  @js.native
-  def dir(): String = js.native
+  object dir {
+    
+    /**
+      * Return the path of a system-provided tempdir as
+      * <code>require('os').tmpdir()</code> does.
+      *
+      * You should not make any assumption about whether the path contains a
+      * trailing path separator, or it is a real path. On most system it is not a
+      * fixed path, and it can be changed by the user environment. When in doubt,
+      * check it first.
+      */
+    @JSImport("temp-fs", "dir")
+    @js.native
+    def apply(): String = js.native
+  }
   
   /**
     * Try to create a new tempdir asynchronously.
@@ -74,40 +77,32 @@ object mod {
     *                 <code>null</code>, <code>dir</code> has the properties of
     *                 {@link dir}.
     */
-  @JSImport("temp-fs", "mkdir")
-  @js.native
-  def mkdir(): js.Any = js.native
-  @JSImport("temp-fs", "mkdir")
-  @js.native
-  def mkdir(options: js.UndefOr[scala.Nothing], callback: js.Function2[/* err */ js.Any, /* dir */ dir, _]): js.Any = js.native
-  @JSImport("temp-fs", "mkdir")
-  @js.native
-  def mkdir(options: options): js.Any = js.native
-  @JSImport("temp-fs", "mkdir")
-  @js.native
-  def mkdir(options: options, callback: js.Function2[/* err */ js.Any, /* dir */ dir, _]): js.Any = js.native
+  @scala.inline
+  def mkdir(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")().asInstanceOf[js.Any]
+  @scala.inline
+  def mkdir(options: Unit, callback: js.Function2[/* err */ js.Any, /* dir */ dir, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def mkdir(options: options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def mkdir(options: options, callback: js.Function2[/* err */ js.Any, /* dir */ dir, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * The synchronous version of {@link mkdir}.
     *
     * @throws when an error happens.
     */
-  @JSImport("temp-fs", "mkdirSync")
-  @js.native
-  def mkdirSync(): dir = js.native
-  @JSImport("temp-fs", "mkdirSync")
-  @js.native
-  def mkdirSync(options: options): dir = js.native
+  @scala.inline
+  def mkdirSync(): dir = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")().asInstanceOf[dir]
+  @scala.inline
+  def mkdirSync(options: options): dir = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(options.asInstanceOf[js.Any]).asInstanceOf[dir]
   
   /**
     * Return a customized/random filename/dirname.
     */
-  @JSImport("temp-fs", "name")
-  @js.native
-  def name(): String = js.native
-  @JSImport("temp-fs", "name")
-  @js.native
-  def name(options: options): String = js.native
+  @scala.inline
+  def name(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name")().asInstanceOf[String]
+  @scala.inline
+  def name(options: options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Try to open a unique tempfile asynchronously.
@@ -117,33 +112,26 @@ object mod {
     *                 <code>null</code>, <code>file</code> has the properties
     *                 of {@link file}.
     */
-  @JSImport("temp-fs", "open")
-  @js.native
-  def open(): js.Any = js.native
-  @JSImport("temp-fs", "open")
-  @js.native
-  def open(callback: js.Function2[/* err */ js.Any, /* file */ file, _]): js.Any = js.native
-  @JSImport("temp-fs", "open")
-  @js.native
-  def open(options: js.UndefOr[scala.Nothing], callback: js.Function2[/* err */ js.Any, /* file */ file, _]): js.Any = js.native
-  @JSImport("temp-fs", "open")
-  @js.native
-  def open(options: options): js.Any = js.native
-  @JSImport("temp-fs", "open")
-  @js.native
-  def open(options: options, callback: js.Function2[/* err */ js.Any, /* file */ file, _]): js.Any = js.native
+  @scala.inline
+  def open(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[js.Any]
+  @scala.inline
+  def open(callback: js.Function2[/* err */ js.Any, /* file */ file, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def open(options: Unit, callback: js.Function2[/* err */ js.Any, /* file */ file, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def open(options: options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def open(options: options, callback: js.Function2[/* err */ js.Any, /* file */ file, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * The synchronous version of {@link open}.
     *
     * @throws when an error happens.
     */
-  @JSImport("temp-fs", "openSync")
-  @js.native
-  def openSync(): file = js.native
-  @JSImport("temp-fs", "openSync")
-  @js.native
-  def openSync(options: options): file = js.native
+  @scala.inline
+  def openSync(): file = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")().asInstanceOf[file]
+  @scala.inline
+  def openSync(options: options): file = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(options.asInstanceOf[js.Any]).asInstanceOf[file]
   
   /**
     * Use it to switch global files/directories tracking on or off.
@@ -158,12 +146,10 @@ object mod {
     * <b>Note: When an uncaught exception occurs, all tracked temporary files
     * and directories will be removed no matter it is on or off.</b>
     */
-  @JSImport("temp-fs", "track")
-  @js.native
-  def track(): Unit = js.native
-  @JSImport("temp-fs", "track")
-  @js.native
-  def track(on: Boolean): Unit = js.native
+  @scala.inline
+  def track(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("track")().asInstanceOf[Unit]
+  @scala.inline
+  def track(on: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(on.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * A tempfile.
@@ -190,13 +176,12 @@ object mod {
       * @param callback makes it asynchronous.
       */
     def unlink(): js.Any = js.native
-    def unlink(callback: js.Function1[/* error */ Error, _]): js.Any = js.native
+    def unlink(callback: js.Function1[/* error */ Error, js.Any]): js.Any = js.native
   }
   
   /**
     * Options.
     */
-  @js.native
   trait options extends StObject {
     
     /**
@@ -204,47 +189,47 @@ object mod {
       *
       * Also see {@link options#name}. Default: <code>tempfs.dir()</code>
       */
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
     /**
       * The maximum number of chance to retry before throwing an error.
       *
       * It should be a finite number. Default: 5
       */
-    var limit: js.UndefOr[Number] = js.native
+    var limit: js.UndefOr[Number] = js.undefined
     
     /**
       * File mode (default: 0600) or directory mode (default: 0700) to use.
       */
-    var mode: js.UndefOr[Number] = js.native
+    var mode: js.UndefOr[Number] = js.undefined
     
     /**
       * If set, join the two paths <code>{@link options#dir} ||
       * tempfs.dir()</code> and {@link options#name} together and use the
       * result as the customized filename/pathname.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The prefix for the generated random name.
       *
       * Default: "tmp-"
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Whether {@link dir#unlink} should remove a directory recursively.
       *
       * Default: false
       */
-    var recursive: js.UndefOr[Boolean] = js.native
+    var recursive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The suffix for the generated random name.
       *
       * Default: ""
       */
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
     /**
       * A string containing some capital letters Xs for substitution with
@@ -253,7 +238,7 @@ object mod {
       * Then it is used as part of the filename/dirname. Just like what you
       * do with the <code>mktemp(3)</code> function in the C library.
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /**
       * If set to true, let temp-fs manage the the current file/directory for
@@ -261,7 +246,7 @@ object mod {
       * temp-fs manage it even if the global tracking is on. Otherwise, use
       * the current global setting.
       */
-    var track: js.UndefOr[Boolean] = js.native
+    var track: js.UndefOr[Boolean] = js.undefined
   }
   object options {
     

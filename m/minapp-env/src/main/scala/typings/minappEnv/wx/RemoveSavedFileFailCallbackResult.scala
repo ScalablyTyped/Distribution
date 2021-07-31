@@ -2,17 +2,15 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveSavedFileFailCallbackResult extends StObject {
   
   /** 错误信息
     *
     * 可选值：
     * - 'fail file not exist': 指定的 tempFilePath 找不到文件; */
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object RemoveSavedFileFailCallbackResult {
   

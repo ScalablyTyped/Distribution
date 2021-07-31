@@ -2,71 +2,69 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The status of a product, i.e., information about a product computed
   * asynchronously.
   */
-@js.native
 trait SchemaProductStatus extends StObject {
   
   /**
     * Date on which the item has been created, in ISO 8601 format.
     */
-  var creationDate: js.UndefOr[String] = js.native
+  var creationDate: js.UndefOr[String] = js.undefined
   
   /**
     * DEPRECATED - never populated
     */
-  var dataQualityIssues: js.UndefOr[js.Array[SchemaProductStatusDataQualityIssue]] = js.native
+  var dataQualityIssues: js.UndefOr[js.Array[SchemaProductStatusDataQualityIssue]] = js.undefined
   
   /**
     * The intended destinations for the product.
     */
-  var destinationStatuses: js.UndefOr[js.Array[SchemaProductStatusDestinationStatus]] = js.native
+  var destinationStatuses: js.UndefOr[js.Array[SchemaProductStatusDestinationStatus]] = js.undefined
   
   /**
     * Date on which the item expires in Google Shopping, in ISO 8601 format.
     */
-  var googleExpirationDate: js.UndefOr[String] = js.native
+  var googleExpirationDate: js.UndefOr[String] = js.undefined
   
   /**
     * A list of all issues associated with the product.
     */
-  var itemLevelIssues: js.UndefOr[js.Array[SchemaProductStatusItemLevelIssue]] = js.native
+  var itemLevelIssues: js.UndefOr[js.Array[SchemaProductStatusItemLevelIssue]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#productStatus&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Date on which the item has been last updated, in ISO 8601 format.
     */
-  var lastUpdateDate: js.UndefOr[String] = js.native
+  var lastUpdateDate: js.UndefOr[String] = js.undefined
   
   /**
     * The link to the product.
     */
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
   /**
     * Product data after applying all the join inputs.
     */
-  var product: js.UndefOr[SchemaProduct] = js.native
+  var product: js.UndefOr[SchemaProduct] = js.undefined
   
   /**
     * The ID of the product for which status is reported.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the product.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaProductStatus {
   

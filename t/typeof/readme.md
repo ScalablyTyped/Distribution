@@ -11,8 +11,8 @@ Node module. typeOf('a string') == 'string', typeOf([]) == 'array', etc.. Also s
 | Full name          | typeof |
 | Keywords           | typeof, type |
 | # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 115376 |
+| # dependents       | 38 |
+| # downloads        | 871876 |
 | # stars            | 1 |
 
 ## Links

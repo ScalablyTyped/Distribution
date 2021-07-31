@@ -3,34 +3,32 @@ package typings.antd.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<antd.antd/lib/transfer.TransferLocale> */
-@js.native
 trait PartialTransferLocale extends StObject {
   
-  var itemUnit: js.UndefOr[String] = js.native
+  var itemUnit: js.UndefOr[String] = js.undefined
   
-  var itemsUnit: js.UndefOr[String] = js.native
+  var itemsUnit: js.UndefOr[String] = js.undefined
   
-  var notFoundContent: js.UndefOr[ReactNode] = js.native
+  var notFoundContent: js.UndefOr[ReactNode] = js.undefined
   
-  var remove: js.UndefOr[String] = js.native
+  var remove: js.UndefOr[String] = js.undefined
   
-  var removeAll: js.UndefOr[String] = js.native
+  var removeAll: js.UndefOr[String] = js.undefined
   
-  var removeCurrent: js.UndefOr[String] = js.native
+  var removeCurrent: js.UndefOr[String] = js.undefined
   
-  var searchPlaceholder: js.UndefOr[String] = js.native
+  var searchPlaceholder: js.UndefOr[String] = js.undefined
   
-  var selectAll: js.UndefOr[String] = js.native
+  var selectAll: js.UndefOr[String] = js.undefined
   
-  var selectCurrent: js.UndefOr[String] = js.native
+  var selectCurrent: js.UndefOr[String] = js.undefined
   
-  var selectInvert: js.UndefOr[String] = js.native
+  var selectInvert: js.UndefOr[String] = js.undefined
   
-  var titles: js.UndefOr[js.Array[String]] = js.native
+  var titles: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PartialTransferLocale {
   

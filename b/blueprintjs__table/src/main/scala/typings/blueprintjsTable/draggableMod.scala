@@ -6,7 +6,6 @@ import typings.blueprintjsTable.dragTypesMod.IDragHandler
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object draggableMod {
@@ -47,9 +46,9 @@ object draggableMod {
     def defaultProps_=(x: PreventDefault): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDraggableProps
-    extends IProps
+    extends StObject
+       with IProps
        with IDragHandler
   object IDraggableProps {
     

@@ -3,7 +3,6 @@ package typings.angularUiRouterDefault
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -11,10 +10,9 @@ object mod {
   
   object ui {
     
-    @js.native
     trait IState extends StObject {
       
-      var default: js.UndefOr[StateDefaultSpecifier] = js.native
+      var default: js.UndefOr[StateDefaultSpecifier] = js.undefined
     }
     object IState {
       

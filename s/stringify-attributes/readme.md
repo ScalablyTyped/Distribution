@@ -12,7 +12,7 @@ Turn an object into a string of HTML attributes
 | Keywords           | html, attributes, stringify, element, tag, props, object, convert, transform |
 | # releases         | 2 |
 | # dependents       | 11 |
-| # downloads        | 152073 |
+| # downloads        | 185884 |
 | # stars            | 1 |
 
 ## Links

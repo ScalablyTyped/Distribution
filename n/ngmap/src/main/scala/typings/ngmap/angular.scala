@@ -9,19 +9,17 @@ import typings.std.HTMLElement
 import typings.std.PositionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angular {
   
   object map {
     
-    @js.native
     trait IGetMapOptions extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
     }
     object IGetMapOptions {
       
@@ -51,7 +49,7 @@ object angular {
     @js.native
     trait INgMap extends StObject {
       
-      def addMap(mapCtrl: js.Array[_]): Unit = js.native
+      def addMap(mapCtrl: js.Array[js.Any]): Unit = js.native
       /**
         * Add map to pool
         * @param {Function | any[]} mapCtrl Map controller
@@ -64,7 +62,7 @@ object angular {
         * controller in pool
         */
       def deleteMap(): Unit = js.native
-      def deleteMap(mapCtrl: js.Array[_]): Unit = js.native
+      def deleteMap(mapCtrl: js.Array[js.Any]): Unit = js.native
       def deleteMap(mapCtrl: js.Function): Unit = js.native
       
       /**
@@ -107,10 +105,9 @@ object angular {
       def setStyle(el: HTMLElement): Unit = js.native
     }
     
-    @js.native
     trait INgMapOptions extends StObject {
       
-      var marker: AnchorPoint = js.native
+      var marker: AnchorPoint
     }
     object INgMapOptions {
       
@@ -128,7 +125,6 @@ object angular {
       }
     }
     
-    @js.native
     trait INgMapProvider extends StObject {
       
       /**
@@ -142,7 +138,7 @@ object angular {
         *    });
         *  });
         */
-      def setDefaultOptions(options: INgMapOptions): Unit = js.native
+      def setDefaultOptions(options: INgMapOptions): Unit
     }
     object INgMapProvider {
       

@@ -4,21 +4,21 @@ import typings.senchaTouch.Ext.IBase
 import typings.senchaTouch.Ext.IEvented
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browser {
   
-  @js.native
-  trait IAbstract extends IBase {
+  trait IAbstract
+    extends StObject
+       with IBase {
     
     /** [Method] Used to close the browser if one is opened  */
-    var close: js.UndefOr[js.Function0[Unit]] = js.native
+    var close: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Used to open a new browser window
       * @param options Object The options to use when opening a new browser window.
       */
-    var open: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
+    var open: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -45,8 +45,9 @@ object browser {
     }
   }
   
-  @js.native
-  trait ICordova extends IAbstract
+  trait ICordova
+    extends StObject
+       with IAbstract
   object ICordova {
     
     @scala.inline

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy extends StObject {
   
   /**
     * Required. Catalog item categories. Each category should be a UTF-8 encoded string with a length limit of 2 KiB. Note that the order in the list denotes the specificity (from least
     * to most specific).
     */
-  var categories: js.UndefOr[js.Array[String]] = js.native
+  var categories: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy {
   

@@ -2,24 +2,22 @@ package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an import request.
   */
-@js.native
 trait SchemaImport extends StObject {
   
   /**
     * Type name: a template for an import request.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The number of rows received from the import request.
     */
-  var numRowsReceived: js.UndefOr[String] = js.native
+  var numRowsReceived: js.UndefOr[String] = js.undefined
 }
 object SchemaImport {
   

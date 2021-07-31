@@ -5,7 +5,6 @@ import typings.blueprintjsCore.propsMod.IIntentProps
 import typings.blueprintjsCore.propsMod.IProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spinnerMod {
@@ -55,9 +54,9 @@ object spinnerMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ISpinnerProps
-    extends IProps
+    extends StObject
+       with IProps
        with IIntentProps {
     
     /**
@@ -71,7 +70,7 @@ object spinnerMod {
       *
       * @default Spinner.SIZE_STANDARD = 50
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * HTML tag for the two wrapper elements. If rendering a `<Spinner>` inside
@@ -80,14 +79,14 @@ object spinnerMod {
       */
     var tagName: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A value between 0 and 1 (inclusive) representing how far along the operation is.
       * Values below 0 or above 1 will be interpreted as 0 or 1 respectively.
       * Omitting this prop will result in an "indeterminate" spinner where the head spins indefinitely.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ISpinnerProps {
     

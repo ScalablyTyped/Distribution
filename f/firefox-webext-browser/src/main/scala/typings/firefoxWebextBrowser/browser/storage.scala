@@ -3,7 +3,6 @@ package typings.firefoxWebextBrowser.browser
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,10 +22,10 @@ object storage {
       * Gets one or more items from storage.
       * @param [keys] A single key to get, list of keys to get, or a dictionary specifying default values (see description of the object). An empty list or object will return an empty result object. Pass in `null` to get the entire contents of storage.
       */
-    def get(): js.Promise[StringDictionary[_]] = js.native
-    def get(keys: String): js.Promise[StringDictionary[_]] = js.native
-    def get(keys: js.Array[String]): js.Promise[StringDictionary[_]] = js.native
-    def get(keys: StringDictionary[js.Any]): js.Promise[StringDictionary[_]] = js.native
+    def get(): js.Promise[StringDictionary[js.Any]] = js.native
+    def get(keys: String): js.Promise[StringDictionary[js.Any]] = js.native
+    def get(keys: js.Array[String]): js.Promise[StringDictionary[js.Any]] = js.native
+    def get(keys: StringDictionary[js.Any]): js.Promise[StringDictionary[js.Any]] = js.native
     
     /**
       * Gets the amount of space (in bytes) being used by one or more items.
@@ -63,10 +62,10 @@ object storage {
       * Gets one or more items from storage.
       * @param [keys] A single key to get, list of keys to get, or a dictionary specifying default values (see description of the object). An empty list or object will return an empty result object. Pass in `null` to get the entire contents of storage.
       */
-    def get(): js.Promise[StringDictionary[_]] = js.native
-    def get(keys: String): js.Promise[StringDictionary[_]] = js.native
-    def get(keys: js.Array[String]): js.Promise[StringDictionary[_]] = js.native
-    def get(keys: StringDictionary[js.Any]): js.Promise[StringDictionary[_]] = js.native
+    def get(): js.Promise[StringDictionary[js.Any]] = js.native
+    def get(keys: String): js.Promise[StringDictionary[js.Any]] = js.native
+    def get(keys: js.Array[String]): js.Promise[StringDictionary[js.Any]] = js.native
+    def get(keys: StringDictionary[js.Any]): js.Promise[StringDictionary[js.Any]] = js.native
     
     /**
       * Gets the amount of space (in bytes) being used by one or more items.
@@ -93,14 +92,13 @@ object storage {
   }
   
   /* storage types */
-  @js.native
   trait StorageChange extends StObject {
     
     /** The new value of the item, if there is a new value. */
-    var newValue: js.UndefOr[js.Any] = js.native
+    var newValue: js.UndefOr[js.Any] = js.undefined
     
     /** The old value of the item, if there was an old value. */
-    var oldValue: js.UndefOr[js.Any] = js.native
+    var oldValue: js.UndefOr[js.Any] = js.undefined
   }
   object StorageChange {
     

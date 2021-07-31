@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListImageVersionsResponse extends StObject {
   
   /**
     * A list of versions and their properties.
     */
-  var ImageVersions: js.UndefOr[typings.awsSdk.sagemakerMod.ImageVersions] = js.native
+  var ImageVersions: js.UndefOr[typings.awsSdk.sagemakerMod.ImageVersions] = js.undefined
   
   /**
     * A token for getting the next set of versions, if there are any.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
 }
 object ListImageVersionsResponse {
   

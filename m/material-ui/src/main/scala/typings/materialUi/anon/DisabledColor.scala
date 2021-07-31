@@ -2,31 +2,29 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisabledColor extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var disabledColor: js.UndefOr[String] = js.native
+  var disabledColor: js.UndefOr[String] = js.undefined
   
-  var disabledTextColor: js.UndefOr[String] = js.native
+  var disabledTextColor: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var fontWeight: js.UndefOr[Double] = js.native
+  var fontWeight: js.UndefOr[Double] = js.undefined
   
-  var primaryColor: js.UndefOr[String] = js.native
+  var primaryColor: js.UndefOr[String] = js.undefined
   
-  var primaryTextColor: js.UndefOr[String] = js.native
+  var primaryTextColor: js.UndefOr[String] = js.undefined
   
-  var secondaryColor: js.UndefOr[String] = js.native
+  var secondaryColor: js.UndefOr[String] = js.undefined
   
-  var secondaryTextColor: js.UndefOr[String] = js.native
+  var secondaryTextColor: js.UndefOr[String] = js.undefined
   
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
 }
 object DisabledColor {
   

@@ -2,15 +2,13 @@ package typings.reactNavigationStack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Borderless extends StObject {
   
-  var activeOpacity: Double = js.native
+  var activeOpacity: Double
   
-  var borderless: Boolean = js.native
+  var borderless: Boolean
 }
 object Borderless {
   

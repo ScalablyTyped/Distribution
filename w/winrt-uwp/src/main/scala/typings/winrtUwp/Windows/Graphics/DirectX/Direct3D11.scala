@@ -3,7 +3,6 @@ package typings.winrtUwp.Windows.Graphics.DirectX
 import typings.winrtUwp.Windows.Foundation.IClosable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides Windows Runtime projections of Microsoft Direct3D APIs to enable Windows Runtime components to exchange Direct3D surfaces and devices. */
@@ -18,43 +17,63 @@ object Direct3D11 {
     
     /** Bind a buffer as a constant buffer to a shader stage. */
     @js.native
-    sealed trait constantBuffer extends Direct3DBindings
+    sealed trait constantBuffer
+      extends StObject
+         with Direct3DBindings
     
     /** Set this flag to indicate that a 2D texture is used to receive output from the decoder API. */
     @js.native
-    sealed trait decoder extends Direct3DBindings
+    sealed trait decoder
+      extends StObject
+         with Direct3DBindings
     
     /** Bind a texture as a depth-stencil target for the output-merger stage. */
     @js.native
-    sealed trait depthStencil extends Direct3DBindings
+    sealed trait depthStencil
+      extends StObject
+         with Direct3DBindings
     
     /** Bind a buffer as an index buffer to the input-assembler stage. */
     @js.native
-    sealed trait indexBuffer extends Direct3DBindings
+    sealed trait indexBuffer
+      extends StObject
+         with Direct3DBindings
     
     /** Bind a texture as a render target for the output-merger stage. */
     @js.native
-    sealed trait renderTarget extends Direct3DBindings
+    sealed trait renderTarget
+      extends StObject
+         with Direct3DBindings
     
     /** Bind a buffer or texture to a shader stage. */
     @js.native
-    sealed trait shaderResource extends Direct3DBindings
+    sealed trait shaderResource
+      extends StObject
+         with Direct3DBindings
     
     /** Bind an output buffer for the stream-output stage. */
     @js.native
-    sealed trait streamOutput extends Direct3DBindings
+    sealed trait streamOutput
+      extends StObject
+         with Direct3DBindings
     
     /** Bind an unordered access resource. */
     @js.native
-    sealed trait unorderedAccess extends Direct3DBindings
+    sealed trait unorderedAccess
+      extends StObject
+         with Direct3DBindings
     
     /** Bind a buffer as a vertex buffer to the input-assembler stage. */
     @js.native
-    sealed trait vertexBuffer extends Direct3DBindings
+    sealed trait vertexBuffer
+      extends StObject
+         with Direct3DBindings
     
     /** Set this flag to indicate that a 2D texture is used to receive input from the video encoder API. */
     @js.native
-    sealed trait videoEncoder extends Direct3DBindings
+    sealed trait videoEncoder
+      extends StObject
+         with Direct3DBindings
   }
   
   @js.native
@@ -66,30 +85,37 @@ object Direct3D11 {
     
     /** A resource that requires read and write access by the GPU. */
     @js.native
-    sealed trait default extends Direct3DUsage
+    sealed trait default
+      extends StObject
+         with Direct3DUsage
     
     /** A resource that is accessible by both the GPU (read only) and the CPU (write only). A dynamic resource is a good choice for a resource that will be updated by the CPU at least once per frame. */
     @js.native
-    sealed trait dynamic extends Direct3DUsage
+    sealed trait dynamic
+      extends StObject
+         with Direct3DUsage
     
     /** A resource that can only be read by the GPU. It cannot be written by the GPU, and cannot be accessed at all by the CPU. This type of resource must be initialized when it is created, since it cannot be changed after creation. */
     @js.native
-    sealed trait immutable extends Direct3DUsage
+    sealed trait immutable
+      extends StObject
+         with Direct3DUsage
     
     /** A resource that supports data transfer (copy) from the GPU to the CPU. */
     @js.native
-    sealed trait staging extends Direct3DUsage
+    sealed trait staging
+      extends StObject
+         with Direct3DUsage
   }
   
   /** A Windows Runtime projection of the DXGI_SAMPLE_DESC structure. Describes multi-sampling parameters for a IDirect3DSurface . */
-  @js.native
   trait Direct3DMultisampleDescription extends StObject {
     
     /** The number of multisamples per pixel. */
-    var count: Double = js.native
+    var count: Double
     
     /** The image quality level. The higher the quality, the lower the performance. */
-    var quality: Double = js.native
+    var quality: Double
   }
   object Direct3DMultisampleDescription {
     
@@ -111,20 +137,19 @@ object Direct3D11 {
   }
   
   /** A Windows Runtime projection of the DXGI_SURFACE_DESC structure. Describes a IDirect3DSurface . */
-  @js.native
   trait Direct3DSurfaceDescription extends StObject {
     
     /** Pixel format of the surface. */
-    var format: DirectXPixelFormat = js.native
+    var format: DirectXPixelFormat
     
     /** Height of the surface. */
-    var height: Double = js.native
+    var height: Double
     
     /** Multi-sampling parameters for the surface. */
-    var multisampleDescription: Direct3DMultisampleDescription = js.native
+    var multisampleDescription: Direct3DMultisampleDescription
     
     /** Width of the surface. */
-    var width: Double = js.native
+    var width: Double
   }
   object Direct3DSurfaceDescription {
     
@@ -157,11 +182,12 @@ object Direct3D11 {
   }
   
   /** This represents an IDXGISurface and can be used to interop between Windows Runtime components that need to exchange IDXGISurface references. */
-  @js.native
-  trait IDirect3DSurface extends IClosable {
+  trait IDirect3DSurface
+    extends StObject
+       with IClosable {
     
     /** Gets a Direct3DSurfaceDescription describing the surface. */
-    var description: Direct3DSurfaceDescription = js.native
+    var description: Direct3DSurfaceDescription
   }
   object IDirect3DSurface {
     

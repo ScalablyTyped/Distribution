@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsElbLoadBalancerListenerDescription extends StObject {
   
   /**
     * Information about the listener.
     */
-  var Listener: js.UndefOr[AwsElbLoadBalancerListener] = js.native
+  var Listener: js.UndefOr[AwsElbLoadBalancerListener] = js.undefined
   
   /**
     * The policies enabled for the listener.
     */
-  var PolicyNames: js.UndefOr[StringList] = js.native
+  var PolicyNames: js.UndefOr[StringList] = js.undefined
 }
 object AwsElbLoadBalancerListenerDescription {
   

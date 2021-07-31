@@ -2,21 +2,19 @@ package typings.speakeasy.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedOptions extends StObject {
   
   /**
     * Algorithm, defaults to sha1
     */
-  var algorithm: js.UndefOr[Algorithm] = js.native
+  var algorithm: js.UndefOr[Algorithm] = js.undefined
   
   /**
     * Key encoding, defaults to ascii
     */
-  var encoding: js.UndefOr[Encoding] = js.native
+  var encoding: js.UndefOr[Encoding] = js.undefined
 }
 object SharedOptions {
   

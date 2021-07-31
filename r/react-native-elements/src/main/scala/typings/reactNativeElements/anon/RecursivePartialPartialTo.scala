@@ -8,46 +8,44 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeElements.mod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.TooltipProps>> */
-@js.native
 trait RecursivePartialPartialTo extends StObject {
   
-  var ModalComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.native
+  var ModalComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.undefined
   
-  var backgroundColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var backgroundColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var closeOnlyOnBackdropPress: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var closeOnlyOnBackdropPress: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var height: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var height: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var highlightColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var highlightColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var onClose: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onClose: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onOpen: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onOpen: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var overlayColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var overlayColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var pointerColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var pointerColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var popover: js.UndefOr[RecursivePartial[js.UndefOr[ReactElement]]] = js.native
+  var popover: js.UndefOr[RecursivePartial[js.UndefOr[ReactElement]]] = js.undefined
   
-  var skipAndroidStatusBar: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var skipAndroidStatusBar: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var toggleAction: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var toggleAction: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var toggleOnPress: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var toggleOnPress: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var width: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var width: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var withOverlay: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var withOverlay: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var withPointer: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var withPointer: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
 }
 object RecursivePartialPartialTo {
   

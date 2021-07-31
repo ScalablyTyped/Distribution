@@ -2,17 +2,15 @@ package typings.ngxInfiniteScroll
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClientHeightKey extends StObject {
     
-    var clientHeightKey: js.Any = js.native
+    var clientHeightKey: js.Any
     
-    var offsetHeightKey: js.Any = js.native
+    var offsetHeightKey: js.Any
   }
   object ClientHeightKey {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Fire extends StObject {
     
-    var fire: Boolean = js.native
+    var fire: Boolean
     
-    var scrollDown: Boolean = js.native
+    var scrollDown: Boolean
   }
   object Fire {
     
@@ -59,10 +56,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TotalToScroll extends StObject {
     
-    var totalToScroll: js.Any = js.native
+    var totalToScroll: js.Any
   }
   object TotalToScroll {
     

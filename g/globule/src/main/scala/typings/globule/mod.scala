@@ -6,7 +6,6 @@ import typings.globule.globuleStrings.first
 import typings.globule.globuleStrings.last
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,18 +14,19 @@ object mod extends Shortcut {
   @js.native
   val ^ : GlobuleStatic = js.native
   
-  @js.native
-  trait FindOptions extends IOptions {
+  trait FindOptions
+    extends StObject
+       with IOptions {
     
     var filter: js.UndefOr[
         String | (js.Function2[/* filepath */ js.UndefOr[String], /* options */ js.UndefOr[js.Any], Boolean])
-      ] = js.native
+      ] = js.undefined
     
-    var prefixBase: js.UndefOr[Boolean] = js.native
+    var prefixBase: js.UndefOr[Boolean] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
-    var srcBase: js.UndefOr[String] = js.native
+    var srcBase: js.UndefOr[String] = js.undefined
   }
   object FindOptions {
     
@@ -154,18 +154,19 @@ object mod extends Shortcut {
     def `match`(patterns: js.Array[String], filepaths: js.Array[String], options: typings.minimatch.mod.IOptions): js.Array[String] = js.native
   }
   
-  @js.native
-  trait MappingOptions extends FindOptions {
+  trait MappingOptions
+    extends StObject
+       with FindOptions {
     
-    var destBase: js.UndefOr[String] = js.native
+    var destBase: js.UndefOr[String] = js.undefined
     
-    var ext: js.UndefOr[String] = js.native
+    var ext: js.UndefOr[String] = js.undefined
     
-    var extDot: js.UndefOr[first | last] = js.native
+    var extDot: js.UndefOr[first | last] = js.undefined
     
-    var flatten: js.UndefOr[Boolean] = js.native
+    var flatten: js.UndefOr[Boolean] = js.undefined
     
-    var rename: js.UndefOr[js.Function1[/* p */ String, String]] = js.native
+    var rename: js.UndefOr[js.Function1[/* p */ String, String]] = js.undefined
   }
   object MappingOptions {
     
@@ -210,12 +211,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait OneMapping extends StObject {
     
-    var dest: String = js.native
+    var dest: String
     
-    var src: js.Array[String] = js.native
+    var src: js.Array[String]
   }
   object OneMapping {
     

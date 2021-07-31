@@ -3,63 +3,61 @@ package typings.casperjs.mod
 import typings.phantomjs.WebPage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CasperOptions extends StObject {
   
-  var clientScripts: js.UndefOr[js.Array[_]] = js.native
+  var clientScripts: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var exitOnError: js.UndefOr[Boolean] = js.native
+  var exitOnError: js.UndefOr[Boolean] = js.undefined
   
-  var httpStatusHandlers: js.UndefOr[js.Any] = js.native
+  var httpStatusHandlers: js.UndefOr[js.Any] = js.undefined
   
-  var logLevel: js.UndefOr[String] = js.native
+  var logLevel: js.UndefOr[String] = js.undefined
   
-  var onAlert: js.UndefOr[js.Function] = js.native
+  var onAlert: js.UndefOr[js.Function] = js.undefined
   
-  var onDie: js.UndefOr[js.Function] = js.native
+  var onDie: js.UndefOr[js.Function] = js.undefined
   
-  var onError: js.UndefOr[js.Function] = js.native
+  var onError: js.UndefOr[js.Function] = js.undefined
   
-  var onLoadError: js.UndefOr[js.Function] = js.native
+  var onLoadError: js.UndefOr[js.Function] = js.undefined
   
-  var onPageInitialized: js.UndefOr[js.Function] = js.native
+  var onPageInitialized: js.UndefOr[js.Function] = js.undefined
   
-  var onResourceReceived: js.UndefOr[js.Function] = js.native
+  var onResourceReceived: js.UndefOr[js.Function] = js.undefined
   
-  var onResourceRequested: js.UndefOr[js.Function] = js.native
+  var onResourceRequested: js.UndefOr[js.Function] = js.undefined
   
-  var onStepComplete: js.UndefOr[js.Function] = js.native
+  var onStepComplete: js.UndefOr[js.Function] = js.undefined
   
-  var onStepTimeout: js.UndefOr[js.Function] = js.native
+  var onStepTimeout: js.UndefOr[js.Function] = js.undefined
   
-  var onTimeout: js.UndefOr[js.Function] = js.native
+  var onTimeout: js.UndefOr[js.Function] = js.undefined
   
-  var onWaitTimeout: js.UndefOr[js.Function] = js.native
+  var onWaitTimeout: js.UndefOr[js.Function] = js.undefined
   
-  var page: js.UndefOr[WebPage] = js.native
+  var page: js.UndefOr[WebPage] = js.undefined
   
-  var pageSettings: js.UndefOr[js.Any] = js.native
+  var pageSettings: js.UndefOr[js.Any] = js.undefined
   
-  var remoteScripts: js.UndefOr[js.Array[_]] = js.native
+  var remoteScripts: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var retryTimeout: js.UndefOr[Double] = js.native
+  var retryTimeout: js.UndefOr[Double] = js.undefined
   
-  var safeLogs: js.UndefOr[Boolean] = js.native
+  var safeLogs: js.UndefOr[Boolean] = js.undefined
   
-  var silentErrors: js.UndefOr[Boolean] = js.native
+  var silentErrors: js.UndefOr[Boolean] = js.undefined
   
-  var stepTimeout: js.UndefOr[Double] = js.native
+  var stepTimeout: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
   
-  var viewportSize: js.UndefOr[js.Any] = js.native
+  var viewportSize: js.UndefOr[js.Any] = js.undefined
   
-  var waitTimeout: js.UndefOr[Double] = js.native
+  var waitTimeout: js.UndefOr[Double] = js.undefined
 }
 object CasperOptions {
   
@@ -73,7 +71,7 @@ object CasperOptions {
   implicit class CasperOptionsMutableBuilder[Self <: CasperOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setClientScripts(value: js.Array[_]): Self = StObject.set(x, "clientScripts", value.asInstanceOf[js.Any])
+    def setClientScripts(value: js.Array[js.Any]): Self = StObject.set(x, "clientScripts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setClientScriptsUndefined: Self = StObject.set(x, "clientScripts", js.undefined)
@@ -178,7 +176,7 @@ object CasperOptions {
     def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def setRemoteScripts(value: js.Array[_]): Self = StObject.set(x, "remoteScripts", value.asInstanceOf[js.Any])
+    def setRemoteScripts(value: js.Array[js.Any]): Self = StObject.set(x, "remoteScripts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRemoteScriptsUndefined: Self = StObject.set(x, "remoteScripts", js.undefined)

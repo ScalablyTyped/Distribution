@@ -2,10 +2,13 @@ package typings.atomically
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constsMod {
+  
+  @JSImport("atomically/dist/consts", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("atomically/dist/consts", "DEFAULT_ENCODING")
   @js.native
@@ -43,7 +46,6 @@ object constsMod {
   @js.native
   val LIMIT_FILES_DESCRIPTORS: /* 10000 */ Double = js.native
   
-  @JSImport("atomically/dist/consts", "NOOP")
-  @js.native
-  def NOOP(): Unit = js.native
+  @scala.inline
+  def NOOP(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("NOOP")().asInstanceOf[Unit]
 }

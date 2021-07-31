@@ -13,13 +13,15 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convUtilMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeConv2DInfo")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def computeConv2DInfo(
     inShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple4[Double, Double, Double, Double],
@@ -29,10 +31,9 @@ object convUtilMod {
     roundingMode: js.UndefOr[floor | round | ceil],
     depthwise: js.UndefOr[Boolean],
     dataFormat: js.UndefOr[channelsFirst | channelsLast]
-  ): Conv2DInfo = js.native
+  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeConv2DInfo")(inShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], roundingMode.asInstanceOf[js.Any], depthwise.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeConv3DInfo")
-  @js.native
+  @scala.inline
   def computeConv3DInfo(
     inShape: js.Tuple5[Double, Double, Double, Double, Double],
     filterShape: js.Tuple5[Double, Double, Double, Double, Double],
@@ -42,28 +43,23 @@ object convUtilMod {
     depthwise: js.UndefOr[Boolean],
     dataFormat: js.UndefOr[channelsFirst | channelsLast],
     roundingMode: js.UndefOr[floor | round | ceil]
-  ): Conv3DInfo = js.native
+  ): Conv3DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeConv3DInfo")(inShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], depthwise.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], roundingMode.asInstanceOf[js.Any])).asInstanceOf[Conv3DInfo]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDefaultPad")
-  @js.native
-  def computeDefaultPad(inputShape: js.Tuple2[Double, Double], fieldSize: Double, stride: Double): Double = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDefaultPad")
-  @js.native
-  def computeDefaultPad(inputShape: js.Tuple2[Double, Double], fieldSize: Double, stride: Double, dilation: Double): Double = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDefaultPad")
-  @js.native
-  def computeDefaultPad(inputShape: js.Tuple4[Double, Double, Double, Double], fieldSize: Double, stride: Double): Double = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDefaultPad")
-  @js.native
+  @scala.inline
+  def computeDefaultPad(inputShape: js.Tuple2[Double, Double], fieldSize: Double, stride: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaultPad")(inputShape.asInstanceOf[js.Any], fieldSize.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def computeDefaultPad(inputShape: js.Tuple2[Double, Double], fieldSize: Double, stride: Double, dilation: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaultPad")(inputShape.asInstanceOf[js.Any], fieldSize.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def computeDefaultPad(inputShape: js.Tuple4[Double, Double, Double, Double], fieldSize: Double, stride: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaultPad")(inputShape.asInstanceOf[js.Any], fieldSize.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def computeDefaultPad(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     fieldSize: Double,
     stride: Double,
     dilation: Double
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaultPad")(inputShape.asInstanceOf[js.Any], fieldSize.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDilation2DInfo")
-  @js.native
+  @scala.inline
   def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
@@ -71,9 +67,8 @@ object convUtilMod {
     pad: same_,
     dataFormat: NHWC,
     dilations: js.Tuple2[Double, Double]
-  ): Conv2DInfo = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDilation2DInfo")
-  @js.native
+  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
+  @scala.inline
   def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
@@ -81,9 +76,8 @@ object convUtilMod {
     pad: same_,
     dataFormat: NHWC,
     dilations: Double
-  ): Conv2DInfo = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDilation2DInfo")
-  @js.native
+  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
+  @scala.inline
   def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
@@ -91,9 +85,8 @@ object convUtilMod {
     pad: valid_,
     dataFormat: NHWC,
     dilations: js.Tuple2[Double, Double]
-  ): Conv2DInfo = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDilation2DInfo")
-  @js.native
+  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
+  @scala.inline
   def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
@@ -101,9 +94,8 @@ object convUtilMod {
     pad: valid_,
     dataFormat: NHWC,
     dilations: Double
-  ): Conv2DInfo = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDilation2DInfo")
-  @js.native
+  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
+  @scala.inline
   def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
@@ -111,9 +103,8 @@ object convUtilMod {
     pad: same_,
     dataFormat: NHWC,
     dilations: js.Tuple2[Double, Double]
-  ): Conv2DInfo = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDilation2DInfo")
-  @js.native
+  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
+  @scala.inline
   def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
@@ -121,9 +112,8 @@ object convUtilMod {
     pad: same_,
     dataFormat: NHWC,
     dilations: Double
-  ): Conv2DInfo = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDilation2DInfo")
-  @js.native
+  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
+  @scala.inline
   def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
@@ -131,9 +121,8 @@ object convUtilMod {
     pad: valid_,
     dataFormat: NHWC,
     dilations: js.Tuple2[Double, Double]
-  ): Conv2DInfo = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDilation2DInfo")
-  @js.native
+  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
+  @scala.inline
   def computeDilation2DInfo(
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
@@ -141,50 +130,46 @@ object convUtilMod {
     pad: valid_,
     dataFormat: NHWC,
     dilations: Double
-  ): Conv2DInfo = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDilation2DInfo")
-  @js.native
-  def computeDilation2DInfo_NHWC(
-    inputShape: js.Tuple4[Double, Double, Double, Double],
-    filterShape: js.Tuple3[Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: Double,
-    dataFormat: NHWC,
-    dilations: js.Tuple2[Double, Double]
-  ): Conv2DInfo = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDilation2DInfo")
-  @js.native
-  def computeDilation2DInfo_NHWC(
-    inputShape: js.Tuple4[Double, Double, Double, Double],
-    filterShape: js.Tuple3[Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: Double,
-    dataFormat: NHWC,
-    dilations: Double
-  ): Conv2DInfo = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDilation2DInfo")
-  @js.native
-  def computeDilation2DInfo_NHWC(
-    inputShape: js.Tuple4[Double, Double, Double, Double],
-    filterShape: js.Tuple3[Double, Double, Double],
-    strides: Double,
-    pad: Double,
-    dataFormat: NHWC,
-    dilations: js.Tuple2[Double, Double]
-  ): Conv2DInfo = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computeDilation2DInfo")
-  @js.native
-  def computeDilation2DInfo_NHWC(
-    inputShape: js.Tuple4[Double, Double, Double, Double],
-    filterShape: js.Tuple3[Double, Double, Double],
-    strides: Double,
-    pad: Double,
-    dataFormat: NHWC,
-    dilations: Double
-  ): Conv2DInfo = js.native
+  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computePool2DInfo")
-  @js.native
+  @scala.inline
+  def computeDilation2DInfo_NHWC(
+    inputShape: js.Tuple4[Double, Double, Double, Double],
+    filterShape: js.Tuple3[Double, Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: Double,
+    dataFormat: NHWC,
+    dilations: js.Tuple2[Double, Double]
+  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
+  @scala.inline
+  def computeDilation2DInfo_NHWC(
+    inputShape: js.Tuple4[Double, Double, Double, Double],
+    filterShape: js.Tuple3[Double, Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: Double,
+    dataFormat: NHWC,
+    dilations: Double
+  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
+  @scala.inline
+  def computeDilation2DInfo_NHWC(
+    inputShape: js.Tuple4[Double, Double, Double, Double],
+    filterShape: js.Tuple3[Double, Double, Double],
+    strides: Double,
+    pad: Double,
+    dataFormat: NHWC,
+    dilations: js.Tuple2[Double, Double]
+  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
+  @scala.inline
+  def computeDilation2DInfo_NHWC(
+    inputShape: js.Tuple4[Double, Double, Double, Double],
+    filterShape: js.Tuple3[Double, Double, Double],
+    strides: Double,
+    pad: Double,
+    dataFormat: NHWC,
+    dilations: Double
+  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
+  
+  @scala.inline
   def computePool2DInfo(
     inShape: js.Tuple4[Double, Double, Double, Double],
     filterSize: (js.Tuple2[Double, Double]) | Double,
@@ -193,10 +178,9 @@ object convUtilMod {
     pad: same_ | valid_ | Double,
     roundingMode: js.UndefOr[floor | round | ceil],
     dataFormat: js.UndefOr[channelsFirst | channelsLast]
-  ): Conv2DInfo = js.native
+  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computePool2DInfo")(inShape.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], roundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "computePool3DInfo")
-  @js.native
+  @scala.inline
   def computePool3DInfo(
     inShape: js.Tuple5[Double, Double, Double, Double, Double],
     filterSize: Double | (js.Tuple3[Double, Double, Double]),
@@ -205,77 +189,69 @@ object convUtilMod {
     pad: same_ | valid_ | Double,
     roundingMode: js.UndefOr[floor | round | ceil],
     dataFormat: js.UndefOr[NDHWC | NCDHW]
-  ): Conv3DInfo = js.native
+  ): Conv3DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computePool3DInfo")(inShape.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], roundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Conv3DInfo]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "convertConv2DDataFormat")
-  @js.native
-  def convertConv2DDataFormat_NCHW(dataFormat: NCHW): channelsLast | channelsFirst = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "convertConv2DDataFormat")
-  @js.native
-  def convertConv2DDataFormat_NHWC(dataFormat: NHWC): channelsLast | channelsFirst = js.native
+  @scala.inline
+  def convertConv2DDataFormat_NCHW(dataFormat: NCHW): channelsLast | channelsFirst = ^.asInstanceOf[js.Dynamic].applyDynamic("convertConv2DDataFormat")(dataFormat.asInstanceOf[js.Any]).asInstanceOf[channelsLast | channelsFirst]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "eitherStridesOrDilationsAreOne")
-  @js.native
-  def eitherStridesOrDilationsAreOne(strides: js.Array[Double], dilations: js.Array[Double]): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "eitherStridesOrDilationsAreOne")
-  @js.native
-  def eitherStridesOrDilationsAreOne(strides: js.Array[Double], dilations: Double): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "eitherStridesOrDilationsAreOne")
-  @js.native
-  def eitherStridesOrDilationsAreOne(strides: Double, dilations: js.Array[Double]): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "eitherStridesOrDilationsAreOne")
-  @js.native
-  def eitherStridesOrDilationsAreOne(strides: Double, dilations: Double): Boolean = js.native
+  @scala.inline
+  def convertConv2DDataFormat_NHWC(dataFormat: NHWC): channelsLast | channelsFirst = ^.asInstanceOf[js.Dynamic].applyDynamic("convertConv2DDataFormat")(dataFormat.asInstanceOf[js.Any]).asInstanceOf[channelsLast | channelsFirst]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "tupleValuesAreOne")
-  @js.native
-  def tupleValuesAreOne(param: js.Array[Double]): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv_util", "tupleValuesAreOne")
-  @js.native
-  def tupleValuesAreOne(param: Double): Boolean = js.native
+  @scala.inline
+  def eitherStridesOrDilationsAreOne(strides: js.Array[Double], dilations: js.Array[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def eitherStridesOrDilationsAreOne(strides: js.Array[Double], dilations: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def eitherStridesOrDilationsAreOne(strides: Double, dilations: js.Array[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def eitherStridesOrDilationsAreOne(strides: Double, dilations: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def tupleValuesAreOne(param: js.Array[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tupleValuesAreOne")(param.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def tupleValuesAreOne(param: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tupleValuesAreOne")(param.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait Conv2DInfo extends StObject {
     
-    var batchSize: Double = js.native
+    var batchSize: Double
     
-    var dataFormat: channelsFirst | channelsLast = js.native
+    var dataFormat: channelsFirst | channelsLast
     
-    var dilationHeight: Double = js.native
+    var dilationHeight: Double
     
-    var dilationWidth: Double = js.native
+    var dilationWidth: Double
     
-    var effectiveFilterHeight: Double = js.native
+    var effectiveFilterHeight: Double
     
-    var effectiveFilterWidth: Double = js.native
+    var effectiveFilterWidth: Double
     
-    var filterHeight: Double = js.native
+    var filterHeight: Double
     
-    var filterShape: js.Tuple4[Double, Double, Double, Double] = js.native
+    var filterShape: js.Tuple4[Double, Double, Double, Double]
     
-    var filterWidth: Double = js.native
+    var filterWidth: Double
     
-    var inChannels: Double = js.native
+    var inChannels: Double
     
-    var inHeight: Double = js.native
+    var inHeight: Double
     
-    var inShape: js.Tuple4[Double, Double, Double, Double] = js.native
+    var inShape: js.Tuple4[Double, Double, Double, Double]
     
-    var inWidth: Double = js.native
+    var inWidth: Double
     
-    var outChannels: Double = js.native
+    var outChannels: Double
     
-    var outHeight: Double = js.native
+    var outHeight: Double
     
-    var outShape: js.Tuple4[Double, Double, Double, Double] = js.native
+    var outShape: js.Tuple4[Double, Double, Double, Double]
     
-    var outWidth: Double = js.native
+    var outWidth: Double
     
-    var padInfo: PadInfo = js.native
+    var padInfo: PadInfo
     
-    var strideHeight: Double = js.native
+    var strideHeight: Double
     
-    var strideWidth: Double = js.native
+    var strideWidth: Double
   }
   object Conv2DInfo {
     
@@ -371,60 +347,59 @@ object convUtilMod {
     }
   }
   
-  @js.native
   trait Conv3DInfo extends StObject {
     
-    var batchSize: Double = js.native
+    var batchSize: Double
     
-    var dataFormat: channelsFirst | channelsLast = js.native
+    var dataFormat: channelsFirst | channelsLast
     
-    var dilationDepth: Double = js.native
+    var dilationDepth: Double
     
-    var dilationHeight: Double = js.native
+    var dilationHeight: Double
     
-    var dilationWidth: Double = js.native
+    var dilationWidth: Double
     
-    var effectiveFilterDepth: Double = js.native
+    var effectiveFilterDepth: Double
     
-    var effectiveFilterHeight: Double = js.native
+    var effectiveFilterHeight: Double
     
-    var effectiveFilterWidth: Double = js.native
+    var effectiveFilterWidth: Double
     
-    var filterDepth: Double = js.native
+    var filterDepth: Double
     
-    var filterHeight: Double = js.native
+    var filterHeight: Double
     
-    var filterShape: js.Tuple5[Double, Double, Double, Double, Double] = js.native
+    var filterShape: js.Tuple5[Double, Double, Double, Double, Double]
     
-    var filterWidth: Double = js.native
+    var filterWidth: Double
     
-    var inChannels: Double = js.native
+    var inChannels: Double
     
-    var inDepth: Double = js.native
+    var inDepth: Double
     
-    var inHeight: Double = js.native
+    var inHeight: Double
     
-    var inShape: js.Tuple5[Double, Double, Double, Double, Double] = js.native
+    var inShape: js.Tuple5[Double, Double, Double, Double, Double]
     
-    var inWidth: Double = js.native
+    var inWidth: Double
     
-    var outChannels: Double = js.native
+    var outChannels: Double
     
-    var outDepth: Double = js.native
+    var outDepth: Double
     
-    var outHeight: Double = js.native
+    var outHeight: Double
     
-    var outShape: js.Tuple5[Double, Double, Double, Double, Double] = js.native
+    var outShape: js.Tuple5[Double, Double, Double, Double, Double]
     
-    var outWidth: Double = js.native
+    var outWidth: Double
     
-    var padInfo: PadInfo3D = js.native
+    var padInfo: PadInfo3D
     
-    var strideDepth: Double = js.native
+    var strideDepth: Double
     
-    var strideHeight: Double = js.native
+    var strideHeight: Double
     
-    var strideWidth: Double = js.native
+    var strideWidth: Double
   }
   object Conv3DInfo {
     
@@ -551,18 +526,17 @@ object convUtilMod {
     js.Tuple2[Double, Double]
   ]
   
-  @js.native
   trait PadInfo extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var `type`: PadType = js.native
+    var `type`: PadType
   }
   object PadInfo {
     
@@ -593,22 +567,21 @@ object convUtilMod {
     }
   }
   
-  @js.native
   trait PadInfo3D extends StObject {
     
-    var back: Double = js.native
+    var back: Double
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var front: Double = js.native
+    var front: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var `type`: PadType = js.native
+    var `type`: PadType
   }
   object PadInfo3D {
     

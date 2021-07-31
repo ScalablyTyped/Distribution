@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSpeech.gapi.client.speech
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpeechContext extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SpeechContext extends StObject {
     * language. For example, rather than providing phrase hints for every month of the year, using the $MONTH class improves the likelihood of correctly transcribing audio that includes
     * months.
     */
-  var phrases: js.UndefOr[js.Array[String]] = js.native
+  var phrases: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SpeechContext {
   

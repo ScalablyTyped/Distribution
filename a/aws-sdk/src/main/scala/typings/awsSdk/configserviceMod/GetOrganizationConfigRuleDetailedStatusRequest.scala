@@ -2,31 +2,29 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOrganizationConfigRuleDetailedStatusRequest extends StObject {
   
   /**
     * A StatusDetailFilters object.
     */
-  var Filters: js.UndefOr[StatusDetailFilters] = js.native
+  var Filters: js.UndefOr[StatusDetailFilters] = js.undefined
   
   /**
     * The maximum number of OrganizationConfigRuleDetailedStatus returned on each page. If you do not specify a number, AWS Config uses the default. The default is 100.
     */
-  var Limit: js.UndefOr[CosmosPageLimit] = js.native
+  var Limit: js.UndefOr[CosmosPageLimit] = js.undefined
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response. 
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name of organization config rule for which you want status details for member accounts.
     */
-  var OrganizationConfigRuleName: typings.awsSdk.configserviceMod.OrganizationConfigRuleName = js.native
+  var OrganizationConfigRuleName: typings.awsSdk.configserviceMod.OrganizationConfigRuleName
 }
 object GetOrganizationConfigRuleDetailedStatusRequest {
   

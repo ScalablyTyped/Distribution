@@ -2,63 +2,61 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectType extends StObject {
   
-  var AccessControlList: IAccessControlList = js.native
+  var AccessControlList: IAccessControlList
   
-  var AllowAdding: Boolean = js.native
+  var AllowAdding: Boolean
   
-  var AllowedAsGroupingLevel: Boolean = js.native
+  var AllowedAsGroupingLevel: Boolean
   
-  var CanHaveFiles: Boolean = js.native
+  var CanHaveFiles: Boolean
   
-  def CanHaveItemIcons(): Boolean = js.native
+  def CanHaveItemIcons(): Boolean
   
-  def Clone(): IObjectType = js.native
+  def Clone(): IObjectType
   
-  var DefaultAccessControlList: IAccessControlList = js.native
+  var DefaultAccessControlList: IAccessControlList
   
-  var DefaultPropertyDef: Double = js.native
+  var DefaultPropertyDef: Double
   
-  var External: Boolean = js.native
+  var External: Boolean
   
-  val GUID: String = js.native
+  val GUID: String
   
-  def GetIconAsPNG(Width: Double, Height: Double): js.Array[Double] = js.native
+  def GetIconAsPNG(Width: Double, Height: Double): js.Array[Double]
   
-  var HasOwnerType: Boolean = js.native
+  var HasOwnerType: Boolean
   
-  var Hierarchical: Boolean = js.native
+  var Hierarchical: Boolean
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var Icon: js.Array[Double] = js.native
+  var Icon: js.Array[Double]
   
-  def IsAddingAllowedForUser(SessionInfo: ISessionInfo): Boolean = js.native
+  def IsAddingAllowedForUser(SessionInfo: ISessionInfo): Boolean
   
-  var NamePlural: String = js.native
+  var NamePlural: String
   
-  var NameSingular: String = js.native
+  var NameSingular: String
   
-  var ObjectTypeTargetsForBrowsing: IObjectTypeTargetsForBrowsing = js.native
+  var ObjectTypeTargetsForBrowsing: IObjectTypeTargetsForBrowsing
   
-  var OwnerPropertyDef: Double = js.native
+  var OwnerPropertyDef: Double
   
-  var OwnerType: Double = js.native
+  var OwnerType: Double
   
-  val ReadOnlyPropertiesDuringInsert: IIDs = js.native
+  val ReadOnlyPropertiesDuringInsert: IIDs
   
-  val ReadOnlyPropertiesDuringUpdate: IIDs = js.native
+  val ReadOnlyPropertiesDuringUpdate: IIDs
   
-  var RealObjectType: Boolean = js.native
+  var RealObjectType: Boolean
   
-  var ShowCreationCommandInTaskPane: Boolean = js.native
+  var ShowCreationCommandInTaskPane: Boolean
   
-  var Translatable: Boolean = js.native
+  var Translatable: Boolean
 }
 object IObjectType {
   

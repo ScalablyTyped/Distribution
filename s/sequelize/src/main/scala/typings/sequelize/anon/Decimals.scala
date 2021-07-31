@@ -2,15 +2,13 @@ package typings.sequelize.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Decimals extends StObject {
   
-  var decimals: js.UndefOr[Double] = js.native
+  var decimals: js.UndefOr[Double] = js.undefined
   
-  var length: Double = js.native
+  var length: Double
 }
 object Decimals {
   

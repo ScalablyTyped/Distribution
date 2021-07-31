@@ -2,18 +2,16 @@ package typings.muiDatatables.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  filename :string,   separator :string,   filterOptions :std.Partial<{  useDisplayedColumnsOnly :boolean,   useDisplayedRowsOnly :boolean}>}> */
-@js.native
 trait Partialfilenamestringsepa extends StObject {
   
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
-  var filterOptions: js.UndefOr[PartialuseDisplayedColumn] = js.native
+  var filterOptions: js.UndefOr[PartialuseDisplayedColumn] = js.undefined
   
-  var separator: js.UndefOr[String] = js.native
+  var separator: js.UndefOr[String] = js.undefined
 }
 object Partialfilenamestringsepa {
   

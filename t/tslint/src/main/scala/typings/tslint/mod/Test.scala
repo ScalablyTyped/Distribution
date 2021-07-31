@@ -4,36 +4,31 @@ import typings.tslint.runnerMod.Logger
 import typings.tslint.testMod.TestResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Test {
   
-  @JSImport("tslint", "Test.consoleTestResultHandler")
+  @JSImport("tslint", "Test")
   @js.native
-  def consoleTestResultHandler(testResult: TestResult, logger: Logger): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tslint", "Test.consoleTestResultsHandler")
-  @js.native
-  def consoleTestResultsHandler(testResults: js.Array[TestResult], logger: Logger): Boolean = js.native
+  @scala.inline
+  def consoleTestResultHandler(testResult: TestResult, logger: Logger): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("consoleTestResultHandler")(testResult.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tslint", "Test.runTest")
-  @js.native
-  def runTest(testDirectory: String): TestResult = js.native
-  @JSImport("tslint", "Test.runTest")
-  @js.native
-  def runTest(testDirectory: String, rulesDirectory: String): TestResult = js.native
-  @JSImport("tslint", "Test.runTest")
-  @js.native
-  def runTest(testDirectory: String, rulesDirectory: js.Array[String]): TestResult = js.native
+  @scala.inline
+  def consoleTestResultsHandler(testResults: js.Array[TestResult], logger: Logger): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("consoleTestResultsHandler")(testResults.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tslint", "Test.runTests")
-  @js.native
-  def runTests(patterns: js.Array[String]): js.Array[TestResult] = js.native
-  @JSImport("tslint", "Test.runTests")
-  @js.native
-  def runTests(patterns: js.Array[String], rulesDirectory: String): js.Array[TestResult] = js.native
-  @JSImport("tslint", "Test.runTests")
-  @js.native
-  def runTests(patterns: js.Array[String], rulesDirectory: js.Array[String]): js.Array[TestResult] = js.native
+  @scala.inline
+  def runTest(testDirectory: String): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("runTest")(testDirectory.asInstanceOf[js.Any]).asInstanceOf[TestResult]
+  @scala.inline
+  def runTest(testDirectory: String, rulesDirectory: String): TestResult = (^.asInstanceOf[js.Dynamic].applyDynamic("runTest")(testDirectory.asInstanceOf[js.Any], rulesDirectory.asInstanceOf[js.Any])).asInstanceOf[TestResult]
+  @scala.inline
+  def runTest(testDirectory: String, rulesDirectory: js.Array[String]): TestResult = (^.asInstanceOf[js.Dynamic].applyDynamic("runTest")(testDirectory.asInstanceOf[js.Any], rulesDirectory.asInstanceOf[js.Any])).asInstanceOf[TestResult]
+  
+  @scala.inline
+  def runTests(patterns: js.Array[String]): js.Array[TestResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("runTests")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[TestResult]]
+  @scala.inline
+  def runTests(patterns: js.Array[String], rulesDirectory: String): js.Array[TestResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("runTests")(patterns.asInstanceOf[js.Any], rulesDirectory.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestResult]]
+  @scala.inline
+  def runTests(patterns: js.Array[String], rulesDirectory: js.Array[String]): js.Array[TestResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("runTests")(patterns.asInstanceOf[js.Any], rulesDirectory.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestResult]]
 }

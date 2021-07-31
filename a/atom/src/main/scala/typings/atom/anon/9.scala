@@ -4,15 +4,13 @@ import typings.atom.atomStrings.Cursor
 import typings.atom.atomStrings.Word
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `9` extends StObject {
   
-  var newValue: Word | Cursor = js.native
+  var newValue: Word | Cursor
   
-  var oldValue: js.UndefOr[Word | Cursor] = js.native
+  var oldValue: js.UndefOr[Word | Cursor] = js.undefined
 }
 object `9` {
   

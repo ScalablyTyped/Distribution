@@ -4,23 +4,23 @@ import typings.classValidator.validationOptionsMod.ValidationOptions
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrayMinSizeMod {
+  
+  @JSImport("class-validator/types/decorator/array/ArrayMinSize", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/decorator/array/ArrayMinSize", "ARRAY_MIN_SIZE")
   @js.native
   val ARRAY_MIN_SIZE: /* "arrayMinSize" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/array/ArrayMinSize", "ArrayMinSize")
-  @js.native
-  def ArrayMinSize_(min: Double): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/array/ArrayMinSize", "ArrayMinSize")
-  @js.native
-  def ArrayMinSize_(min: Double, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def ArrayMinSize_(min: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayMinSize")(min.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ArrayMinSize_(min: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayMinSize")(min.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/array/ArrayMinSize", "arrayMinSize")
-  @js.native
-  def arrayMinSize(array: js.Any, min: Double): Boolean = js.native
+  @scala.inline
+  def arrayMinSize(array: js.Any, min: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMinSize")(array.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

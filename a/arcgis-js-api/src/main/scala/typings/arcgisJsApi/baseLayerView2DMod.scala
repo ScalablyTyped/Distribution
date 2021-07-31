@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.BaseLayerView2DConstructor
 import typings.arcgisJsApi.esri.BaseLayerView2DProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseLayerView2DMod extends Shortcut {
   
   @JSImport("esri/views/2d/layers/BaseLayerView2D", JSImport.Namespace)
   @js.native
-  val ^ : BaseLayerView2DConstructor = js.native
+  val ^ : js.Object & BaseLayerView2DConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/views/2d/layers/BaseLayerView2D", JSImport.Namespace)
@@ -23,12 +22,14 @@ object baseLayerView2DMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html)
     */
-  class Class () extends BaseLayerView2D {
+  class Class ()
+    extends StObject
+       with BaseLayerView2D {
     def this(properties: BaseLayerView2DProperties) = this()
   }
   
-  type _To = BaseLayerView2DConstructor
+  type _To = js.Object & BaseLayerView2DConstructor
   
   /* This means you don't have to write `^`, but can instead just say `baseLayerView2DMod.foo` */
-  override def _to: BaseLayerView2DConstructor = ^
+  override def _to: js.Object & BaseLayerView2DConstructor = ^
 }

@@ -3,14 +3,12 @@ package typings.semanticUiApi.anon
 import typings.semanticUiApi.semanticUiApiStrings.local
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.ApiSettings._Impl, 'cache'> */
-@js.native
 trait PickImplcache extends StObject {
   
-  var cache: local | Boolean = js.native
+  var cache: local | Boolean
 }
 object PickImplcache {
   

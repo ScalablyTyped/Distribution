@@ -2,42 +2,40 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @see {@link Symbol} */
-@js.native
 trait ReadonlySymbol extends StObject {
   
   /** @see {@link Symbol#anchor} */
-  val anchor: js.UndefOr[Point] = js.native
+  val anchor: js.UndefOr[Point] = js.undefined
   
   /** @see {@link Symbol#fillColor} */
-  val fillColor: js.UndefOr[String] = js.native
+  val fillColor: js.UndefOr[String] = js.undefined
   
   /** @see {@link Symbol#fillOpacity} */
-  val fillOpacity: js.UndefOr[Double] = js.native
+  val fillOpacity: js.UndefOr[Double] = js.undefined
   
   /** @see {@link Symbol#labelOrigin} */
-  val labelOrigin: js.UndefOr[Point] = js.native
+  val labelOrigin: js.UndefOr[Point] = js.undefined
   
   /** @see {@link Symbol#path} */
-  val path: SymbolPath | String = js.native
+  val path: SymbolPath | String
   
   /** @see {@link Symbol#rotation} */
-  val rotation: js.UndefOr[Double] = js.native
+  val rotation: js.UndefOr[Double] = js.undefined
   
   /** @see {@link Symbol#scale} */
-  val scale: js.UndefOr[Double] = js.native
+  val scale: js.UndefOr[Double] = js.undefined
   
   /** @see {@link Symbol#strokeColor} */
-  val strokeColor: js.UndefOr[String] = js.native
+  val strokeColor: js.UndefOr[String] = js.undefined
   
   /** @see {@link Symbol#strokeOpacity} */
-  val strokeOpacity: js.UndefOr[Double] = js.native
+  val strokeOpacity: js.UndefOr[Double] = js.undefined
   
   /** @see {@link Symbol#strokeWeight} */
-  val strokeWeight: js.UndefOr[Double] = js.native
+  val strokeWeight: js.UndefOr[Double] = js.undefined
 }
 object ReadonlySymbol {
   

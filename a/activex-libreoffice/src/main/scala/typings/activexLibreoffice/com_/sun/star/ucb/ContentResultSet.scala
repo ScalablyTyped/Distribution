@@ -21,7 +21,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,10 +28,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * It can be understand as a table containing a row for each child. The table columns may contain values of properties of the children.
   */
-@js.native
 trait ContentResultSet
-  extends ResultSet
-     with XContentAccess {
+  extends StObject
+     with XContentAccess
+     with ResultSet {
   
   /**
     * controls the travel mode of the result set cursor.
@@ -52,13 +51,13 @@ trait ContentResultSet
     * The implementation initially needs to set the value of this property to CursorTravelMode::BLOCKING.
     * @see CursorTravelMode
     */
-  var CursorTravelMode: Double = js.native
+  var CursorTravelMode: Double
   
   /** indicates that all rows of the result set have been obtained. */
-  var IsRowCountFinal: Boolean = js.native
+  var IsRowCountFinal: Boolean
   
   /** contains the number of rows obtained (so far) from the data source. */
-  var RowCount: Double = js.native
+  var RowCount: Double
 }
 object ContentResultSet {
   

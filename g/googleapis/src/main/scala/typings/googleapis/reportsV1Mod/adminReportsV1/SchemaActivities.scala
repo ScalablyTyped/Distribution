@@ -2,34 +2,32 @@ package typings.googleapis.reportsV1Mod.adminReportsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for a collection of activites.
   */
-@js.native
 trait SchemaActivities extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Each record in read response.
     */
-  var items: js.UndefOr[js.Array[SchemaActivity]] = js.native
+  var items: js.UndefOr[js.Array[SchemaActivity]] = js.undefined
   
   /**
     * Kind of list response this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token for retrieving the next page
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaActivities {
   

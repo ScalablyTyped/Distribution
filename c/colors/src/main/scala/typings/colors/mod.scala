@@ -2,7 +2,6 @@ package typings.colors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -67,13 +66,11 @@ object mod {
   @js.native
   val dim: Color = js.native
   
-  @JSImport("colors", "disable")
-  @js.native
-  def disable(): Unit = js.native
+  @scala.inline
+  def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
   
-  @JSImport("colors", "enable")
-  @js.native
-  def enable(): Unit = js.native
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   @JSImport("colors", "enabled")
   @js.native
@@ -125,9 +122,8 @@ object mod {
   @js.native
   val reset: Color = js.native
   
-  @JSImport("colors", "setTheme")
-  @js.native
-  def setTheme(theme: js.Any): Unit = js.native
+  @scala.inline
+  def setTheme(theme: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("colors", "strikethrough")
   @js.native
@@ -310,77 +306,76 @@ object mod {
   
   object global {
     
-    @js.native
     trait String extends StObject {
       
-      var america: java.lang.String = js.native
+      var america: java.lang.String
       
-      var bgBlack: java.lang.String = js.native
+      var bgBlack: java.lang.String
       
-      var bgBlue: java.lang.String = js.native
+      var bgBlue: java.lang.String
       
-      var bgCyan: java.lang.String = js.native
+      var bgCyan: java.lang.String
       
-      var bgGreen: java.lang.String = js.native
+      var bgGreen: java.lang.String
       
-      var bgMagenta: java.lang.String = js.native
+      var bgMagenta: java.lang.String
       
-      var bgRed: java.lang.String = js.native
+      var bgRed: java.lang.String
       
-      var bgWhite: java.lang.String = js.native
+      var bgWhite: java.lang.String
       
-      var bgYellow: java.lang.String = js.native
+      var bgYellow: java.lang.String
       
-      var black: java.lang.String = js.native
+      var black: java.lang.String
       
-      var blue: java.lang.String = js.native
+      var blue: java.lang.String
       
       // @ts-ignore
-      var bold: java.lang.String = js.native
+      var bold: java.lang.String
       
-      var cyan: java.lang.String = js.native
+      var cyan: java.lang.String
       
-      var dim: java.lang.String = js.native
+      var dim: java.lang.String
       
-      var gray: java.lang.String = js.native
+      var gray: java.lang.String
       
-      var green: java.lang.String = js.native
+      var green: java.lang.String
       
-      var grey: java.lang.String = js.native
+      var grey: java.lang.String
       
-      var hidden: java.lang.String = js.native
+      var hidden: java.lang.String
       
-      var inverse: java.lang.String = js.native
+      var inverse: java.lang.String
       
-      var italic: java.lang.String = js.native
+      var italic: java.lang.String
       
-      var magenta: java.lang.String = js.native
+      var magenta: java.lang.String
       
-      var rainbow: java.lang.String = js.native
+      var rainbow: java.lang.String
       
-      var random: java.lang.String = js.native
+      var random: java.lang.String
       
-      var red: java.lang.String = js.native
+      var red: java.lang.String
       
-      var reset: java.lang.String = js.native
+      var reset: java.lang.String
       
-      var strikethrough: java.lang.String = js.native
+      var strikethrough: java.lang.String
       
-      var strip: java.lang.String = js.native
+      var strip: java.lang.String
       
-      var stripColors: java.lang.String = js.native
+      var stripColors: java.lang.String
       
-      var trap: java.lang.String = js.native
+      var trap: java.lang.String
       
-      var underline: java.lang.String = js.native
+      var underline: java.lang.String
       
-      var white: java.lang.String = js.native
+      var white: java.lang.String
       
-      var yellow: java.lang.String = js.native
+      var yellow: java.lang.String
       
-      var zalgo: java.lang.String = js.native
+      var zalgo: java.lang.String
       
-      var zebra: java.lang.String = js.native
+      var zebra: java.lang.String
     }
     object String {
       

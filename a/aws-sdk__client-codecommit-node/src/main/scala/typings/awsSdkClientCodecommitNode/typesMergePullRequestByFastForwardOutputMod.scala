@@ -5,24 +5,24 @@ import typings.awsSdkClientCodecommitNode.typesPullRequestMod.UnmarshalledPullRe
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMergePullRequestByFastForwardOutputMod {
   
-  @js.native
-  trait MergePullRequestByFastForwardOutput extends OutputTypesUnion {
+  trait MergePullRequestByFastForwardOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Information about the specified pull request, including information about the merge.</p>
       */
-    var pullRequest: js.UndefOr[UnmarshalledPullRequest] = js.native
+    var pullRequest: js.UndefOr[UnmarshalledPullRequest] = js.undefined
   }
   object MergePullRequestByFastForwardOutput {
     

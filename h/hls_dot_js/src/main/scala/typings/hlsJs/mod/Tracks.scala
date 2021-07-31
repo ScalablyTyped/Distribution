@@ -2,21 +2,19 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tracks extends StObject {
   
-  var codec: String = js.native
+  var codec: String
   
-  var container: js.Any = js.native
+  var container: js.Any
   
-  var initSegment: js.Any = js.native
+  var initSegment: js.Any
   
-  var levelCodec: js.Any = js.native
+  var levelCodec: js.Any
   
-  var metadata: js.Any = js.native
+  var metadata: js.Any
 }
 object Tracks {
   

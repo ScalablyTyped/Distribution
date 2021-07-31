@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicKeyCredentialParameters extends StObject {
   
-  var alg: COSEAlgorithmIdentifier = js.native
+  var alg: COSEAlgorithmIdentifier
   
-  var `type`: PublicKeyCredentialType = js.native
+  var `type`: PublicKeyCredentialType
 }
 object PublicKeyCredentialParameters {
   

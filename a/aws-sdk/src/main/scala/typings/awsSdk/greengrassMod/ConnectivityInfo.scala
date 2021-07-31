@@ -2,31 +2,29 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectivityInfo extends StObject {
   
   /**
     * The endpoint for the Greengrass core. Can be an IP address or DNS.
     */
-  var HostAddress: js.UndefOr[string] = js.native
+  var HostAddress: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the connectivity information.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * Metadata for this endpoint.
     */
-  var Metadata: js.UndefOr[string] = js.native
+  var Metadata: js.UndefOr[string] = js.undefined
   
   /**
     * The port of the Greengrass core. Usually 8883.
     */
-  var PortNumber: js.UndefOr[integer] = js.native
+  var PortNumber: js.UndefOr[integer] = js.undefined
 }
 object ConnectivityInfo {
   

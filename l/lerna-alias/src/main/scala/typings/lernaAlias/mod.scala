@@ -4,31 +4,28 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.lernaAlias.lernaAliasBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("lerna-alias", "jest")
+  @JSImport("lerna-alias", JSImport.Namespace)
   @js.native
-  def jest(): Aliases = js.native
-  @JSImport("lerna-alias", "jest")
-  @js.native
-  def jest(options: Options): Aliases = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lerna-alias", "rollup")
-  @js.native
-  def rollup(): Aliases = js.native
-  @JSImport("lerna-alias", "rollup")
-  @js.native
-  def rollup(options: Options): Aliases = js.native
+  @scala.inline
+  def jest(): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("jest")().asInstanceOf[Aliases]
+  @scala.inline
+  def jest(options: Options): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("jest")(options.asInstanceOf[js.Any]).asInstanceOf[Aliases]
   
-  @JSImport("lerna-alias", "webpack")
-  @js.native
-  def webpack(): Aliases = js.native
-  @JSImport("lerna-alias", "webpack")
-  @js.native
-  def webpack(options: Options): Aliases = js.native
+  @scala.inline
+  def rollup(): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("rollup")().asInstanceOf[Aliases]
+  @scala.inline
+  def rollup(options: Options): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(options.asInstanceOf[js.Any]).asInstanceOf[Aliases]
+  
+  @scala.inline
+  def webpack(): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("webpack")().asInstanceOf[Aliases]
+  @scala.inline
+  def webpack(options: Options): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("webpack")(options.asInstanceOf[js.Any]).asInstanceOf[Aliases]
   
   type Aliases = /**
     * Key is the package name or an appropriate mapping for the tool.
@@ -37,28 +34,27 @@ object mod {
     */
   StringDictionary[String]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * From which directory the lerna monorepo should be searched for
       * @default `process.cwd()`
       */
-    var directory: js.UndefOr[String] = js.native
+    var directory: js.UndefOr[String] = js.undefined
     
     /**
       * Optional array of `mainFields` that should be used to resolve package's entry point,
       * similar to https://webpack.js.org/configuration/resolve/#resolve-mainfields .
       * Using this takes precedence over default `sourceDirectory` option.
       */
-    var mainFields: js.UndefOr[js.Array[String]] = js.native
+    var mainFields: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Which directory should be considered as containing source files of a package.
       * If specified as false it will use package's root.
       * @default 'src'
       */
-    var sourceDirectory: js.UndefOr[String | `false`] = js.native
+    var sourceDirectory: js.UndefOr[String | `false`] = js.undefined
   }
   object Options {
     

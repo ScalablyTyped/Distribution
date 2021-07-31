@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgColorPicker
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -20,21 +19,21 @@ trait IgColorPicker
     * Function takes arguments evt and ui.
     * Use ui.color to get a reference to the color object.
     */
-  var colorSelected: js.UndefOr[ColorSelectedEvent] = js.native
+  var colorSelected: js.UndefOr[ColorSelectedEvent] = js.undefined
   
   /**
     * Gets/Sets the default colors. Default colors are the ones displayed in the upper table of the color picker.
     *             The array should contain arrays that contain the color values for every next row.
     *
     */
-  var colors: js.UndefOr[String] = js.native
+  var colors: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the standard colors. Standard colors are the ones displayed in the color picker bottom,
     *             visually separated from the default colors. The array should contain the color values.
     *
     */
-  var standardColors: js.UndefOr[js.Array[_]] = js.native
+  var standardColors: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object IgColorPicker {
   
@@ -60,7 +59,7 @@ object IgColorPicker {
     def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def setStandardColors(value: js.Array[_]): Self = StObject.set(x, "standardColors", value.asInstanceOf[js.Any])
+    def setStandardColors(value: js.Array[js.Any]): Self = StObject.set(x, "standardColors", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStandardColorsUndefined: Self = StObject.set(x, "standardColors", js.undefined)

@@ -2,24 +2,22 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Shielded Instance Identity Entry.
   */
-@js.native
 trait SchemaShieldedInstanceIdentityEntry extends StObject {
   
   /**
     * A PEM-encoded X.509 certificate. This field can be empty.
     */
-  var ekCert: js.UndefOr[String] = js.native
+  var ekCert: js.UndefOr[String] = js.undefined
   
   /**
     * A PEM-encoded public key.
     */
-  var ekPub: js.UndefOr[String] = js.native
+  var ekPub: js.UndefOr[String] = js.undefined
 }
 object SchemaShieldedInstanceIdentityEntry {
   

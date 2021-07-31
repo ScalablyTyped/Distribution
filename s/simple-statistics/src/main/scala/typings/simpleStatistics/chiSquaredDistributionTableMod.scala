@@ -2,7 +2,6 @@ package typings.simpleStatistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chiSquaredDistributionTableMod {
@@ -161,41 +160,40 @@ object chiSquaredDistributionTableMod {
     val `90`: DistributionTable = js.native
   }
   
-  @js.native
   trait DistributionTable extends StObject {
     
     @JSName("0.005")
-    var `0Dot005`: Double = js.native
+    var `0Dot005`: Double
     
     @JSName("0.01")
-    var `0Dot01`: Double = js.native
+    var `0Dot01`: Double
     
     @JSName("0.025")
-    var `0Dot025`: Double = js.native
+    var `0Dot025`: Double
     
     @JSName("0.05")
-    var `0Dot05`: Double = js.native
+    var `0Dot05`: Double
     
     @JSName("0.1")
-    var `0Dot1`: Double = js.native
+    var `0Dot1`: Double
     
     @JSName("0.5")
-    var `0Dot5`: Double = js.native
+    var `0Dot5`: Double
     
     @JSName("0.9")
-    var `0Dot9`: Double = js.native
+    var `0Dot9`: Double
     
     @JSName("0.95")
-    var `0Dot95`: Double = js.native
+    var `0Dot95`: Double
     
     @JSName("0.975")
-    var `0Dot975`: Double = js.native
+    var `0Dot975`: Double
     
     @JSName("0.99")
-    var `0Dot99`: Double = js.native
+    var `0Dot99`: Double
     
     @JSName("0.995")
-    var `0Dot995`: Double = js.native
+    var `0Dot995`: Double
   }
   object DistributionTable {
     

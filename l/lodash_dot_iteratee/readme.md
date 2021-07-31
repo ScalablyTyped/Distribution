@@ -12,7 +12,7 @@ The lodash method `_.iteratee` exported as a module.
 | Keywords           | lodash-modularized, iteratee |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 2989582 |
+| # downloads        | 3410913 |
 | # stars            | 0 |
 
 ## Links

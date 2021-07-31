@@ -4,10 +4,8 @@ import typings.stripe.stripeStrings.any
 import typings.stripe.stripeStrings.automatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Requestthreedsecure extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait Requestthreedsecure extends StObject {
     * to `automatic`. Read our guide on manually requesting 3D Secure for more information
     * on how this configuration interacts with Radar and our SCA Engine.
     */
-  var request_three_d_secure: js.UndefOr[automatic | any] = js.native
+  var request_three_d_secure: js.UndefOr[automatic | any] = js.undefined
 }
 object Requestthreedsecure {
   

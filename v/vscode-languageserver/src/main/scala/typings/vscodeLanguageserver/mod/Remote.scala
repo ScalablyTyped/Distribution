@@ -4,13 +4,11 @@ import typings.vscodeLanguageserverProtocol.protocolMod.ClientCapabilities
 import typings.vscodeLanguageserverProtocol.protocolMod.ServerCapabilities
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
   */
-@js.native
 trait Remote extends StObject {
   
   /**
@@ -18,19 +16,19 @@ trait Remote extends StObject {
     *
     * @param connection The connection this remote is operating on.
     */
-  def attach(connection: IConnection): Unit = js.native
+  def attach(connection: IConnection): Unit
   
   /**
     * The connection this remote is attached to.
     */
-  var connection: IConnection = js.native
+  var connection: IConnection
   
   /**
     * Called to fill in the server capabilities this feature implements.
     *
     * @param capabilities The server capabilities to fill.
     */
-  def fillServerCapabilities(capabilities: ServerCapabilities[_]): Unit = js.native
+  def fillServerCapabilities(capabilities: ServerCapabilities[js.Any]): Unit
   
   /**
     * Called to initialize the remote with the given
@@ -38,7 +36,7 @@ trait Remote extends StObject {
     *
     * @param capabilities The client capabilities
     */
-  def initialize(capabilities: ClientCapabilities): Unit = js.native
+  def initialize(capabilities: ClientCapabilities): Unit
 }
 object Remote {
   
@@ -46,7 +44,7 @@ object Remote {
   def apply(
     attach: IConnection => Unit,
     connection: IConnection,
-    fillServerCapabilities: ServerCapabilities[_] => Unit,
+    fillServerCapabilities: ServerCapabilities[js.Any] => Unit,
     initialize: ClientCapabilities => Unit
   ): Remote = {
     val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), connection = connection.asInstanceOf[js.Any], fillServerCapabilities = js.Any.fromFunction1(fillServerCapabilities), initialize = js.Any.fromFunction1(initialize))
@@ -63,7 +61,7 @@ object Remote {
     def setConnection(value: IConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillServerCapabilities(value: ServerCapabilities[_] => Unit): Self = StObject.set(x, "fillServerCapabilities", js.Any.fromFunction1(value))
+    def setFillServerCapabilities(value: ServerCapabilities[js.Any] => Unit): Self = StObject.set(x, "fillServerCapabilities", js.Any.fromFunction1(value))
     
     @scala.inline
     def setInitialize(value: ClientCapabilities => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))

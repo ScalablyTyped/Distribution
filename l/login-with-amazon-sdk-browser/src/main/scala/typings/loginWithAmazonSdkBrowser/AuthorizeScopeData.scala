@@ -3,19 +3,17 @@ package typings.loginWithAmazonSdkBrowser
 import typings.loginWithAmazonSdkBrowser.anon.Essential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ scope in login-with-amazon-sdk-browser.AuthorizationScopeOptions ]:? {  essential :boolean}} */
-@js.native
 trait AuthorizeScopeData extends StObject {
   
-  var postal_code: js.UndefOr[Essential] = js.native
+  var postal_code: js.UndefOr[Essential] = js.undefined
   
-  var profile: js.UndefOr[Essential] = js.native
+  var profile: js.UndefOr[Essential] = js.undefined
   
   @JSName("profile:user_id")
-  var profileColonuser_id: js.UndefOr[Essential] = js.native
+  var profileColonuser_id: js.UndefOr[Essential] = js.undefined
 }
 object AuthorizeScopeData {
   

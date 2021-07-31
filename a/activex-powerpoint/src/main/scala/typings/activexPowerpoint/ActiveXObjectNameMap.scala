@@ -3,14 +3,12 @@ package typings.activexPowerpoint
 import typings.activexPowerpoint.PowerPoint.Application
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("PowerPoint.Application")
-  var PowerPointDotApplication: Application = js.native
+  var PowerPointDotApplication: Application
 }
 object ActiveXObjectNameMap {
   

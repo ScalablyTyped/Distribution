@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassicLinkDnsSupport extends StObject {
   
   /**
     * Indicates whether ClassicLink DNS support is enabled for the VPC.
     */
-  var ClassicLinkDnsSupported: js.UndefOr[Boolean] = js.native
+  var ClassicLinkDnsSupported: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the VPC.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object ClassicLinkDnsSupport {
   

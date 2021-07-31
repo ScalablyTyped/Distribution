@@ -3,13 +3,11 @@ package typings.knockstrap
 import typings.knockstrap.anon.Instance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutStatic extends StObject {
   
-  var stringTemplateEngine: Instance = js.native
+  var stringTemplateEngine: Instance
 }
 object KnockoutStatic {
   

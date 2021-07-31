@@ -4,14 +4,12 @@ import typings.semanticUiPopup.JQuery
 import typings.semanticUiPopup.semanticUiPopupBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-popup.SemanticUI.PopupSettings._Impl, 'target'> */
-@js.native
 trait PickImpltarget extends StObject {
   
-  var target: `false` | String | JQuery = js.native
+  var target: `false` | String | JQuery
 }
 object PickImpltarget {
   

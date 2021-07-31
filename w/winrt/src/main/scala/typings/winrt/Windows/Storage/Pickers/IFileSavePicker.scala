@@ -7,31 +7,29 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.StorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFileSavePicker extends StObject {
   
-  var commitButtonText: String = js.native
+  var commitButtonText: String
   
-  var continuationData: ValueSet = js.native
+  var continuationData: ValueSet
   
-  var defaultFileExtension: String = js.native
+  var defaultFileExtension: String
   
-  var fileTypeChoices: IMap[String, IVector[String]] = js.native
+  var fileTypeChoices: IMap[String, IVector[String]]
   
-  def pickSaveFileAndContinue(): Unit = js.native
+  def pickSaveFileAndContinue(): Unit
   
-  def pickSaveFileAsync(): IAsyncOperation[StorageFile] = js.native
+  def pickSaveFileAsync(): IAsyncOperation[StorageFile]
   
-  var settingsIdentifier: String = js.native
+  var settingsIdentifier: String
   
-  var suggestedFileName: String = js.native
+  var suggestedFileName: String
   
-  var suggestedSaveFile: StorageFile = js.native
+  var suggestedSaveFile: StorageFile
   
-  var suggestedStartLocation: PickerLocationId = js.native
+  var suggestedStartLocation: PickerLocationId
 }
 object IFileSavePicker {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartActivityIntent extends StObject {
   
   /** Action name. Required for START_ACTIVITY. */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /** Intent categories to set on the intent. */
-  var categories: js.UndefOr[js.Array[String]] = js.native
+  var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /** URI for the action. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object StartActivityIntent {
   

@@ -4,52 +4,43 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("qr-image", "image")
+  @JSImport("qr-image", JSImport.Namespace)
   @js.native
-  def image(text: String): ReadableStream = js.native
-  @JSImport("qr-image", "image")
-  @js.native
-  def image(text: String, level: ecLevel): ReadableStream = js.native
-  @JSImport("qr-image", "image")
-  @js.native
-  def image(text: String, options: Options): ReadableStream = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("qr-image", "imageSync")
-  @js.native
-  def imageSync(text: String): String | Buffer = js.native
-  @JSImport("qr-image", "imageSync")
-  @js.native
-  def imageSync(text: String, level: ecLevel): Buffer = js.native
-  @JSImport("qr-image", "imageSync")
-  @js.native
-  def imageSync(text: String, options: Options): String | Buffer = js.native
-  @JSImport("qr-image", "imageSync")
-  @js.native
-  def imageSync_Buffer(text: String): Buffer = js.native
+  @scala.inline
+  def image(text: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  @scala.inline
+  def image(text: String, level: ecLevel): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def image(text: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
-  @JSImport("qr-image", "matrix")
-  @js.native
-  def matrix(text: String): js.Array[js.Array[_]] = js.native
-  @JSImport("qr-image", "matrix")
-  @js.native
-  def matrix(text: String, level: ecLevel): js.Array[js.Array[_]] = js.native
+  @scala.inline
+  def imageSync(text: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+  @scala.inline
+  def imageSync(text: String, level: ecLevel): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def imageSync(text: String, options: Options): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
   
-  @JSImport("qr-image", "svgObject")
-  @js.native
-  def svgObject(text: String): js.Any = js.native
-  @JSImport("qr-image", "svgObject")
-  @js.native
-  def svgObject(text: String, level: ecLevel): js.Any = js.native
-  @JSImport("qr-image", "svgObject")
-  @js.native
-  def svgObject(text: String, options: Options): js.Any = js.native
+  @scala.inline
+  def imageSync_Buffer(text: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @js.native
+  @scala.inline
+  def matrix(text: String): js.Array[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("matrix")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[js.Any]]]
+  @scala.inline
+  def matrix(text: String, level: ecLevel): js.Array[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("matrix")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[js.Any]]]
+  
+  @scala.inline
+  def svgObject(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def svgObject(text: String, level: ecLevel): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def svgObject(text: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   trait Bitmap extends StObject {
     
     /**
@@ -69,12 +60,12 @@ object mod {
       * Each `<xx>` is a pixel of image.
       * It's value `0` — black, `255` — white, everything between are shades of gray.
       */
-    var data: Buffer = js.native
+    var data: Buffer
     
     /**
       * width (and height) of resulting image in pixels
       */
-    var size: Double = js.native
+    var size: Double
   }
   object Bitmap {
     
@@ -95,28 +86,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     // (experimental, default false) try to optimize QR-code for URLs.
     /**
       * (only png) — function to customize qr bitmap before encoding to PNG
       */
-    var customize: js.UndefOr[js.Function1[/* bitmap */ Bitmap, Unit]] = js.native
+    var customize: js.UndefOr[js.Function1[/* bitmap */ Bitmap, Unit]] = js.undefined
     
-    var ec_level: js.UndefOr[ecLevel] = js.native
+    var ec_level: js.UndefOr[ecLevel] = js.undefined
     
     // (png and svg only) for png and undefined for svg.-(png and svg only) — size of one module in pixels.
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
     // (only png)for png and 1 for others.-white space around QR image in modules.
-    var parse_url: js.UndefOr[Boolean] = js.native
+    var parse_url: js.UndefOr[Boolean] = js.undefined
     
     // image type. Possible values png(default), svg, pdf and eps.
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     // error correction level. One of L, M, Q, H. Default M.
-    var `type`: js.UndefOr[imageType] = js.native
+    var `type`: js.UndefOr[imageType] = js.undefined
   }
   object Options {
     

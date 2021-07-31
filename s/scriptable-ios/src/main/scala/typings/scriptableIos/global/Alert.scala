@@ -2,7 +2,6 @@ package typings.scriptableIos.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Alert")
@@ -12,4 +11,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/alert/#-new-alert
   */
 class Alert ()
-  extends typings.scriptableIos.Alert
+  extends StObject
+     with typings.scriptableIos.Alert

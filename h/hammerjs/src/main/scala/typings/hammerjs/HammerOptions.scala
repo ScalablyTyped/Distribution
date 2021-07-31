@@ -3,27 +3,25 @@ package typings.hammerjs
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HammerOptions extends StObject {
   
-  var cssProps: js.UndefOr[CssProps] = js.native
+  var cssProps: js.UndefOr[CssProps] = js.undefined
   
-  var domEvents: js.UndefOr[Boolean] = js.native
+  var domEvents: js.UndefOr[Boolean] = js.undefined
   
-  var enable: js.UndefOr[Boolean | (js.Function1[/* manager */ HammerManager, Boolean])] = js.native
+  var enable: js.UndefOr[Boolean | (js.Function1[/* manager */ HammerManager, Boolean])] = js.undefined
   
-  var inputClass: js.UndefOr[HammerInput] = js.native
+  var inputClass: js.UndefOr[HammerInput] = js.undefined
   
-  var inputTarget: js.UndefOr[EventTarget] = js.native
+  var inputTarget: js.UndefOr[EventTarget] = js.undefined
   
-  var preset: js.UndefOr[js.Array[RecognizerTuple]] = js.native
+  var preset: js.UndefOr[js.Array[RecognizerTuple]] = js.undefined
   
-  var recognizers: js.UndefOr[js.Array[RecognizerTuple]] = js.native
+  var recognizers: js.UndefOr[js.Array[RecognizerTuple]] = js.undefined
   
-  var touchAction: js.UndefOr[String] = js.native
+  var touchAction: js.UndefOr[String] = js.undefined
 }
 object HammerOptions {
   

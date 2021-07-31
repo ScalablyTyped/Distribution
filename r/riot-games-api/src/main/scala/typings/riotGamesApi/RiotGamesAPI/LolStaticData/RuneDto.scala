@@ -3,55 +3,53 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuneDto extends StObject {
   
-  var colloq: String = js.native
+  var colloq: String
   
-  var consumeOnFull: Boolean = js.native
+  var consumeOnFull: Boolean
   
-  var consumed: Boolean = js.native
+  var consumed: Boolean
   
-  var depth: Double = js.native
+  var depth: Double
   
-  var description: String = js.native
+  var description: String
   
-  var from: js.Array[String] = js.native
+  var from: js.Array[String]
   
-  var group: String = js.native
+  var group: String
   
-  var hideFromAll: Boolean = js.native
+  var hideFromAll: Boolean
   
-  var id: Double = js.native
+  var id: Double
   
-  var image: ImageDto = js.native
+  var image: ImageDto
   
-  var inStore: Boolean = js.native
+  var inStore: Boolean
   
-  var into: js.Array[String] = js.native
+  var into: js.Array[String]
   
-  var maps: js.Array[StringDictionary[Boolean]] = js.native
+  var maps: js.Array[StringDictionary[Boolean]]
   
-  var name: String = js.native
+  var name: String
   
-  var plaintext: String = js.native
+  var plaintext: String
   
-  var requiredChampion: String = js.native
+  var requiredChampion: String
   
-  var rune: MetaDataDto = js.native
+  var rune: MetaDataDto
   
-  var sanitizedDescription: String = js.native
+  var sanitizedDescription: String
   
-  var specialRecipe: Double = js.native
+  var specialRecipe: Double
   
-  var stacks: Double = js.native
+  var stacks: Double
   
-  var stats: BasicDataStatsDto = js.native
+  var stats: BasicDataStatsDto
   
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
 }
 object RuneDto {
   

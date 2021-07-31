@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeGenNodeArg extends StObject {
   
   /**
     * The name of the argument or property.
     */
-  var Name: CodeGenArgName = js.native
+  var Name: CodeGenArgName
   
   /**
     * True if the value is used as a parameter.
     */
-  var Param: js.UndefOr[Boolean] = js.native
+  var Param: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value of the argument or property.
     */
-  var Value: CodeGenArgValue = js.native
+  var Value: CodeGenArgValue
 }
 object CodeGenNodeArg {
   

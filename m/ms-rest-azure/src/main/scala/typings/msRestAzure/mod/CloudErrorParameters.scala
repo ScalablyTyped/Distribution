@@ -2,19 +2,17 @@ package typings.msRestAzure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudErrorParameters extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var details: js.UndefOr[js.Array[CloudError]] = js.native
+  var details: js.UndefOr[js.Array[CloudError]] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object CloudErrorParameters {
   

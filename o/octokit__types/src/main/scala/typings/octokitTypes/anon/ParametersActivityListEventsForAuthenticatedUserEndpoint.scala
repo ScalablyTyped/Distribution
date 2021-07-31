@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.ActivityListEventsForAuthenticatedUserR
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActivityListEventsForAuthenticatedUserEndpoint extends StObject {
   
-  var parameters: ActivityListEventsForAuthenticatedUserEndpoint = js.native
+  var parameters: ActivityListEventsForAuthenticatedUserEndpoint
   
-  var request: ActivityListEventsForAuthenticatedUserRequestOptions = js.native
+  var request: ActivityListEventsForAuthenticatedUserRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersActivityListEventsForAuthenticatedUserEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersActivityListEventsForAuthenticatedUserEndpoint {
   def apply(
     parameters: ActivityListEventsForAuthenticatedUserEndpoint,
     request: ActivityListEventsForAuthenticatedUserRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersActivityListEventsForAuthenticatedUserEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersActivityListEventsForAuthenticatedUserEndpoint]
@@ -39,6 +37,6 @@ object ParametersActivityListEventsForAuthenticatedUserEndpoint {
     def setRequest(value: ActivityListEventsForAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -9,10 +9,13 @@ import typings.storybookUi.anon.Layout
 import typings.storybookUi.sidebarMod.SidebarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sidebarStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -51,25 +54,20 @@ object sidebarStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", "Empty")
-  @js.native
-  def Empty(): Element = js.native
+  @scala.inline
+  def Empty(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Empty")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", "Loading")
-  @js.native
-  def Loading(): Element = js.native
+  @scala.inline
+  def Loading(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Loading")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", "LoadingWithRefs")
-  @js.native
-  def LoadingWithRefs(): Element = js.native
+  @scala.inline
+  def LoadingWithRefs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadingWithRefs")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", "Simple")
-  @js.native
-  def Simple(): Element = js.native
+  @scala.inline
+  def Simple(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Simple")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", "WithRefs")
-  @js.native
-  def WithRefs(): Element = js.native
+  @scala.inline
+  def WithRefs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("WithRefs")().asInstanceOf[Element]
   
   object loadingData {
     

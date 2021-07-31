@@ -2,36 +2,34 @@ package typings.openlayers.mod.olx.interaction
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interactions for the map. Default is `true` for all options.
   */
-@js.native
 trait DefaultsOptions extends StObject {
   
-  var altShiftDragRotate: js.UndefOr[Boolean] = js.native
+  var altShiftDragRotate: js.UndefOr[Boolean] = js.undefined
   
-  var constrainResolution: js.UndefOr[Boolean] = js.native
+  var constrainResolution: js.UndefOr[Boolean] = js.undefined
   
-  var doubleClickZoom: js.UndefOr[Boolean] = js.native
+  var doubleClickZoom: js.UndefOr[Boolean] = js.undefined
   
-  var dragPan: js.UndefOr[Boolean] = js.native
+  var dragPan: js.UndefOr[Boolean] = js.undefined
   
-  var keyboard: js.UndefOr[Boolean] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   
-  var mouseWheelZoom: js.UndefOr[Boolean] = js.native
+  var mouseWheelZoom: js.UndefOr[Boolean] = js.undefined
   
-  var pinchRotate: js.UndefOr[Boolean] = js.native
+  var pinchRotate: js.UndefOr[Boolean] = js.undefined
   
-  var pinchZoom: js.UndefOr[Boolean] = js.native
+  var pinchZoom: js.UndefOr[Boolean] = js.undefined
   
-  var shiftDragZoom: js.UndefOr[Boolean] = js.native
+  var shiftDragZoom: js.UndefOr[Boolean] = js.undefined
   
-  var zoomDelta: js.UndefOr[Double] = js.native
+  var zoomDelta: js.UndefOr[Double] = js.undefined
   
-  var zoomDuration: js.UndefOr[Double] = js.native
+  var zoomDuration: js.UndefOr[Double] = js.undefined
 }
 object DefaultsOptions {
   

@@ -2,13 +2,11 @@ package typings.awsSdkTypes.eventStreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventStreamSerdeContext extends StObject {
   
-  var eventStreamMarshaller: EventStreamMarshaller = js.native
+  var eventStreamMarshaller: EventStreamMarshaller
 }
 object EventStreamSerdeContext {
   

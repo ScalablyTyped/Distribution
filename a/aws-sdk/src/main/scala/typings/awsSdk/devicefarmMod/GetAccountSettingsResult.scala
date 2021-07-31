@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccountSettingsResult extends StObject {
   
   /**
     * The account settings.
     */
-  var accountSettings: js.UndefOr[AccountSettings] = js.native
+  var accountSettings: js.UndefOr[AccountSettings] = js.undefined
 }
 object GetAccountSettingsResult {
   

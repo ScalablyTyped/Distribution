@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object associationMod {
@@ -38,6 +37,10 @@ object associationMod {
   /* static members */
   object Association {
     
+    @JSImport("@pulumi/aws/licensemanager/association", "Association")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Association resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object associationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/licensemanager/association", "Association.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Association = js.native
-    @JSImport("@pulumi/aws/licensemanager/association", "Association.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Association = js.native
-    @JSImport("@pulumi/aws/licensemanager/association", "Association.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AssociationState): Association = js.native
-    @JSImport("@pulumi/aws/licensemanager/association", "Association.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AssociationState, opts: CustomResourceOptions): Association = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Association]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Association]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AssociationState): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Association]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AssociationState, opts: CustomResourceOptions): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Association]
     
     /**
       * Returns true if the given object is an instance of Association.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/licensemanager/association", "Association.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/licensemanager/association.Association */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/licensemanager/association.Association */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/licensemanager/association.Association */ Boolean]
   }
   
-  @js.native
   trait AssociationArgs extends StObject {
     
     /**
       * ARN of the license configuration.
       */
-    val licenseConfigurationArn: Input[String] = js.native
+    val licenseConfigurationArn: Input[String]
     
     /**
       * ARN of the resource associated with the license configuration.
       */
-    val resourceArn: Input[String] = js.native
+    val resourceArn: Input[String]
   }
   object AssociationArgs {
     
@@ -101,18 +98,17 @@ object associationMod {
     }
   }
   
-  @js.native
   trait AssociationState extends StObject {
     
     /**
       * ARN of the license configuration.
       */
-    val licenseConfigurationArn: js.UndefOr[Input[String]] = js.native
+    val licenseConfigurationArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ARN of the resource associated with the license configuration.
       */
-    val resourceArn: js.UndefOr[Input[String]] = js.native
+    val resourceArn: js.UndefOr[Input[String]] = js.undefined
   }
   object AssociationState {
     

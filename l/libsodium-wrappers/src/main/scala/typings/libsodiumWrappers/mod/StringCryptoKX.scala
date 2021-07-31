@@ -2,15 +2,13 @@ package typings.libsodiumWrappers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StringCryptoKX extends StObject {
   
-  var sharedRx: String = js.native
+  var sharedRx: String
   
-  var sharedTx: String = js.native
+  var sharedTx: String
 }
 object StringCryptoKX {
   

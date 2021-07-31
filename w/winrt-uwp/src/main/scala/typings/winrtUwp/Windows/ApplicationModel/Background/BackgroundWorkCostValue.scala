@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object BackgroundWorkCostValue extends StObject {
   
   /** Background resources are under heavy use and the background task should not do any work. */
   @js.native
-  sealed trait high extends BackgroundWorkCostValue
+  sealed trait high
+    extends StObject
+       with BackgroundWorkCostValue
   
   /** Background resource usage is low. The background task can do work. */
   @js.native
-  sealed trait low extends BackgroundWorkCostValue
+  sealed trait low
+    extends StObject
+       with BackgroundWorkCostValue
   
   /** Background resources are in use, but the background task can do some work. */
   @js.native
-  sealed trait medium extends BackgroundWorkCostValue
+  sealed trait medium
+    extends StObject
+       with BackgroundWorkCostValue
 }

@@ -4,21 +4,19 @@ import typings.winrtUwp.Windows.Devices.Input.PointerDeviceType
 import typings.winrtUwp.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the Holding event. */
-@js.native
 trait HoldingEventArgs extends StObject {
   
   /** Gets the state of the Holding event. */
-  var holdingState: HoldingState = js.native
+  var holdingState: HoldingState
   
   /** Gets the device type of the input source. */
-  var pointerDeviceType: PointerDeviceType = js.native
+  var pointerDeviceType: PointerDeviceType
   
   /** Gets the location of the touch, mouse, or pen/stylus contact. */
-  var position: Point = js.native
+  var position: Point
 }
 object HoldingEventArgs {
   

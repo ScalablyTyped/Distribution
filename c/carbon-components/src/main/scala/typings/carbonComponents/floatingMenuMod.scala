@@ -4,15 +4,47 @@ import typings.carbonComponents.anon.Left
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object floatingMenuMod {
   
+  @JSImport("carbon-components/components/floating-menu/floating-menu", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("carbon-components/components/floating-menu/floating-menu", JSImport.Default)
   @js.native
-  class default protected () extends FloatingMenu {
+  class default protected ()
+    extends StObject
+       with FloatingMenu {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _getContainer(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def _getPos(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def _handleKeydown(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _place(): Unit = js.native
+    
+    /* CompleteClass */
+    override def _testStyles(): Unit = js.native
+    
+    /* CompleteClass */
+    override def handleBlur(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def release(): Unit = js.native
+    
+    /* CompleteClass */
+    override def shouldStateBeChanged(state: js.Any): Boolean = js.native
   }
   object default {
     
@@ -90,9 +122,9 @@ object floatingMenuMod {
       
       @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.refNode")
       @js.native
-      def refNode: Null = js.native
+      def refNode: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
       @scala.inline
-      def refNode_=(x: Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refNode")(x.asInstanceOf[js.Any])
+      def refNode_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refNode")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/floating-menu/floating-menu", "default.options.selectorContainer")
       @js.native
@@ -124,31 +156,29 @@ object floatingMenuMod {
   @js.native
   val DIRECTION_TOP: /* "top" */ String = js.native
   
-  @JSImport("carbon-components/components/floating-menu/floating-menu", "getFloatingPosition")
-  @js.native
-  def getFloatingPosition(hasMenuSizeRefPositionOffsetDirectionScrollXScrollY: js.Any): js.Any = js.native
+  @scala.inline
+  def getFloatingPosition(hasMenuSizeRefPositionOffsetDirectionScrollXScrollY: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFloatingPosition")(hasMenuSizeRefPositionOffsetDirectionScrollXScrollY.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait FloatingMenu extends StObject {
+  - Dropped any */ trait FloatingMenu extends StObject {
     
-    def _changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit = js.native
+    def _changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit
     
-    def _getContainer(): js.Any = js.native
+    def _getContainer(): js.Any
     
-    def _getPos(): js.Any = js.native
+    def _getPos(): js.Any
     
-    def _handleKeydown(event: js.Any): Unit = js.native
+    def _handleKeydown(event: js.Any): Unit
     
-    def _place(): Unit = js.native
+    def _place(): Unit
     
-    def _testStyles(): Unit = js.native
+    def _testStyles(): Unit
     
-    def handleBlur(event: js.Any): Unit = js.native
+    def handleBlur(event: js.Any): Unit
     
-    def release(): Unit = js.native
+    def release(): Unit
     
-    def shouldStateBeChanged(state: js.Any): Boolean = js.native
+    def shouldStateBeChanged(state: js.Any): Boolean
   }
   object FloatingMenu {
     

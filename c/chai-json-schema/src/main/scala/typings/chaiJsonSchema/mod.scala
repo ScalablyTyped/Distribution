@@ -3,7 +3,6 @@ package typings.chaiJsonSchema
 import typings.tv4.mod.TV4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,10 +21,9 @@ object mod {
         def notJsonSchema(value: js.Any, schema: js.Any, msg: String): Unit = js.native
       }
       
-      @js.native
       trait ChaiStatic extends StObject {
         
-        var tv4: TV4 = js.native
+        var tv4: TV4
       }
       object ChaiStatic {
         

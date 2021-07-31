@@ -10,9 +10,9 @@ TypeScript typings for Cloud IoT API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudiot |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 45 |
+| # downloads        | 1080 |
 | # stars            | 0 |
 
 ## Links

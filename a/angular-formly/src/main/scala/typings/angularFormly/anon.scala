@@ -4,22 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularFormly.AngularFormly.IExpressionFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var attribute: js.UndefOr[js.Any] = js.native
+    var attribute: js.UndefOr[js.Any] = js.undefined
     
-    var bound: js.UndefOr[js.Any] = js.native
+    var bound: js.UndefOr[js.Any] = js.undefined
     
-    var expression: js.UndefOr[js.Any] = js.native
+    var expression: js.UndefOr[js.Any] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object Dictkey {
     
@@ -58,7 +57,6 @@ object anon {
     }
   }
   
-  @js.native
   trait ErrorExistsAndShouldBeVisible extends StObject {
     
     /**
@@ -67,20 +65,20 @@ object anon {
       * is set to true based on this rule: field invalid && (field touched || validation.show) (with slight difference
       * for pre-angular 1.3 because it doesn't have touched support).
       */
-    var errorExistsAndShouldBeVisible: js.UndefOr[Boolean] = js.native
+    var errorExistsAndShouldBeVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A map of Formly Expressions mapped to message names. This is really useful when you're using ng-messages
       * like in this example.
       */
-    var messages: js.UndefOr[StringDictionary[IExpressionFunction | String]] = js.native
+    var messages: js.UndefOr[StringDictionary[IExpressionFunction | String]] = js.undefined
     
     /**
       * A boolean you as the developer can set to specify to force options.validation.errorExistsAndShouldBeVisible
       * to be set to true when there are $errors. This is useful when you're trying to call the user's attention to
       * some fields for some reason.
       */
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
   }
   object ErrorExistsAndShouldBeVisible {
     

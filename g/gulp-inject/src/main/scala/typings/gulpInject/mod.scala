@@ -5,44 +5,44 @@ import typings.node.NodeJS.ReadableStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-inject", JSImport.Namespace)
-  @js.native
-  def apply(sources: ReadableStream): ReadWriteStream = js.native
-  @JSImport("gulp-inject", JSImport.Namespace)
-  @js.native
-  def apply(sources: ReadableStream, options: IOptions): ReadWriteStream = js.native
+  @scala.inline
+  def apply(sources: ReadableStream): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(sources.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(sources: ReadableStream, options: IOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(sources.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
+  @JSImport("gulp-inject", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait IOptions extends StObject {
     
-    var addPrefix: js.UndefOr[String] = js.native
+    var addPrefix: js.UndefOr[String] = js.undefined
     
-    var addRootSlash: js.UndefOr[Boolean] = js.native
+    var addRootSlash: js.UndefOr[Boolean] = js.undefined
     
-    var addSuffix: js.UndefOr[String] = js.native
+    var addSuffix: js.UndefOr[String] = js.undefined
     
-    var empty: js.UndefOr[Boolean] = js.native
+    var empty: js.UndefOr[Boolean] = js.undefined
     
-    var endtag: js.UndefOr[String | ITagFunction] = js.native
+    var endtag: js.UndefOr[String | ITagFunction] = js.undefined
     
-    var ignorePath: js.UndefOr[String | js.Array[String]] = js.native
+    var ignorePath: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var relative: js.UndefOr[Boolean] = js.native
+    var relative: js.UndefOr[Boolean] = js.undefined
     
-    var removeTags: js.UndefOr[Boolean] = js.native
+    var removeTags: js.UndefOr[Boolean] = js.undefined
     
-    var selfClosingTag: js.UndefOr[Boolean] = js.native
+    var selfClosingTag: js.UndefOr[Boolean] = js.undefined
     
-    var starttag: js.UndefOr[String | ITagFunction] = js.native
+    var starttag: js.UndefOr[String | ITagFunction] = js.undefined
     
-    var transform: js.UndefOr[ITransformFunction] = js.native
+    var transform: js.UndefOr[ITransformFunction] = js.undefined
   }
   object IOptions {
     

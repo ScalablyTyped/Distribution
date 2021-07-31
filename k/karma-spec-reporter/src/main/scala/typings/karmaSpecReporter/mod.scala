@@ -3,19 +3,17 @@ package typings.karmaSpecReporter
 import typings.karmaSpecReporter.anon.Failure
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * {@link https://github.com/mlex/karma-spec-reporter#configuration}
       */
-    var specReporter: js.UndefOr[SpecReporterOptions] = js.native
+    var specReporter: js.UndefOr[SpecReporterOptions] = js.undefined
   }
   object ConfigOptions {
     
@@ -36,32 +34,31 @@ object mod {
     }
   }
   
-  @js.native
   trait SpecReporterOptions extends StObject {
     
     /** test would finish with error when a first fail occurs */
-    var failFast: js.UndefOr[Boolean] = js.native
+    var failFast: js.UndefOr[Boolean] = js.undefined
     
     /** limit number of lines logged per test */
-    var maxLogLines: js.UndefOr[Double] = js.native
+    var maxLogLines: js.UndefOr[Double] = js.undefined
     
     /** custom prefixes to use when reporting passed/failed/skipped prefixes */
-    var prefixes: js.UndefOr[Failure] = js.native
+    var prefixes: js.UndefOr[Failure] = js.undefined
     
     /** print the time elapsed for each spec */
-    var showSpecTiming: js.UndefOr[Boolean] = js.native
+    var showSpecTiming: js.UndefOr[Boolean] = js.undefined
     
     /** do not print error summary */
-    var suppressErrorSummary: js.UndefOr[Boolean] = js.native
+    var suppressErrorSummary: js.UndefOr[Boolean] = js.undefined
     
     /** do not print information about failed tests */
-    var suppressFailed: js.UndefOr[Boolean] = js.native
+    var suppressFailed: js.UndefOr[Boolean] = js.undefined
     
     /** do not print information about passed tests */
-    var suppressPassed: js.UndefOr[Boolean] = js.native
+    var suppressPassed: js.UndefOr[Boolean] = js.undefined
     
     /** do not print information about skipped tests */
-    var suppressSkipped: js.UndefOr[Boolean] = js.native
+    var suppressSkipped: js.UndefOr[Boolean] = js.undefined
   }
   object SpecReporterOptions {
     

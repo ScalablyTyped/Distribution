@@ -2,26 +2,24 @@ package typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains a set of requested error group stats.
   */
-@js.native
 trait SchemaListGroupStatsResponse extends StObject {
   
   /**
     * The error group stats which match the given request.
     */
-  var errorGroupStats: js.UndefOr[js.Array[SchemaErrorGroupStats]] = js.native
+  var errorGroupStats: js.UndefOr[js.Array[SchemaErrorGroupStats]] = js.undefined
   
   /**
     * If non-empty, more results are available. Pass this token, along with the
     * same query parameters as the first request, to view the next page of
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp specifies the start time to which the request was
@@ -29,7 +27,7 @@ trait SchemaListGroupStatsResponse extends StObject {
     * may be adjusted to a later time if a project has exceeded the storage
     * quota and older data has been deleted.
     */
-  var timeRangeBegin: js.UndefOr[String] = js.native
+  var timeRangeBegin: js.UndefOr[String] = js.undefined
 }
 object SchemaListGroupStatsResponse {
   

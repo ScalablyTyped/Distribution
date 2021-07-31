@@ -2,36 +2,34 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDataSetPermissionsResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dataset.
     */
-  var DataSetArn: js.UndefOr[Arn] = js.native
+  var DataSetArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ID for the dataset that you want to create. This ID is unique per AWS Region for each AWS account.
     */
-  var DataSetId: js.UndefOr[ResourceId] = js.native
+  var DataSetId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * A list of resource permissions on the dataset.
     */
-  var Permissions: js.UndefOr[ResourcePermissionList] = js.native
+  var Permissions: js.UndefOr[ResourcePermissionList] = js.undefined
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.native
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
 }
 object DescribeDataSetPermissionsResponse {
   

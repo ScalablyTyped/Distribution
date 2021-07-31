@@ -2,26 +2,24 @@ package typings.contentfulManagement.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined type-fest.type-fest.Except<contentful-management.contentful-management/dist/typings/entities/locale.LocaleProps, 'sys'> */
-@js.native
 trait ExceptLocalePropssys extends StObject {
   
-  var default: Boolean = js.native
+  var default: Boolean
   
-  var code: String = js.native
+  var code: String
   
-  var contentDeliveryApi: Boolean = js.native
+  var contentDeliveryApi: Boolean
   
-  var contentManagementApi: Boolean = js.native
+  var contentManagementApi: Boolean
   
-  var fallbackCode: String = js.native
+  var fallbackCode: String
   
-  var name: String = js.native
+  var name: String
   
-  var optional: Boolean = js.native
+  var optional: Boolean
 }
 object ExceptLocalePropssys {
   

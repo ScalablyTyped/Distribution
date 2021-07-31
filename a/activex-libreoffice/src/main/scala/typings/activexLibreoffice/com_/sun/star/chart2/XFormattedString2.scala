@@ -7,16 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides unified interface for {@link FormattedString} service.
   * @since LibreOffice 4.1
   */
-@js.native
 trait XFormattedString2
-  extends XPropertySet
+  extends StObject
+     with XPropertySet
      with XFormattedString
 object XFormattedString2 {
   

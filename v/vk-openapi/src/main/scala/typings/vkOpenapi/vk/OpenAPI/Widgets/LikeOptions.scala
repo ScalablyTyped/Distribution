@@ -12,25 +12,23 @@ import typings.vkOpenapi.vkOpenapiStrings.mini
 import typings.vkOpenapi.vkOpenapiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LikeOptions extends StObject {
   
-  var height: js.UndefOr[`18` | `20` | `22` | `24` | `30`] = js.native
+  var height: js.UndefOr[`18` | `20` | `22` | `24` | `30`] = js.undefined
   
-  var pageImage: js.UndefOr[String] = js.native
+  var pageImage: js.UndefOr[String] = js.undefined
   
-  var pageTitle: js.UndefOr[String] = js.native
+  var pageTitle: js.UndefOr[String] = js.undefined
   
-  var pageUrl: js.UndefOr[String] = js.native
+  var pageUrl: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[button | mini | vertical | full] = js.native
+  var `type`: js.UndefOr[button | mini | vertical | full] = js.undefined
   
-  var verb: js.UndefOr[NumericBoolean] = js.native
+  var verb: js.UndefOr[NumericBoolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object LikeOptions {
   

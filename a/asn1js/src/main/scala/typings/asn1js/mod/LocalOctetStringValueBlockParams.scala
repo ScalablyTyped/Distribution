@@ -3,19 +3,19 @@ package typings.asn1js.mod
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.asn1js.mod.LocalBaseBlockParams because Already inherited
-- typings.asn1js.mod.LocalHexBlockParams because var conflicts: blockLength, error, valueBeforeDecode, warnings. Inlined isHexOnly, valueHex */ @js.native
-trait LocalOctetStringValueBlockParams extends LocalConstructedValueBlockParams {
+- typings.asn1js.mod.LocalHexBlockParams because var conflicts: blockLength, error, valueBeforeDecode, warnings. Inlined isHexOnly, valueHex */ trait LocalOctetStringValueBlockParams
+  extends StObject
+     with LocalConstructedValueBlockParams {
   
-  var isConstructed: js.UndefOr[scala.Boolean] = js.native
+  var isConstructed: js.UndefOr[scala.Boolean] = js.undefined
   
-  var isHexOnly: js.UndefOr[scala.Boolean] = js.native
+  var isHexOnly: js.UndefOr[scala.Boolean] = js.undefined
   
-  var valueHex: js.UndefOr[ArrayBuffer] = js.native
+  var valueHex: js.UndefOr[ArrayBuffer] = js.undefined
 }
 object LocalOctetStringValueBlockParams {
   

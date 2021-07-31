@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteResourceConfigRequest extends StObject {
   
   /**
     * Unique identifier of the resource.
     */
-  var ResourceId: typings.awsSdk.configserviceMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.configserviceMod.ResourceId
   
   /**
     * The type of the resource.
     */
-  var ResourceType: ResourceTypeString = js.native
+  var ResourceType: ResourceTypeString
 }
 object DeleteResourceConfigRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Phase2DHGroupNumbersListValue extends StObject {
   
   /**
     * The Diffie-Hellmann group number.
     */
-  var Value: js.UndefOr[Integer] = js.native
+  var Value: js.UndefOr[Integer] = js.undefined
 }
 object Phase2DHGroupNumbersListValue {
   

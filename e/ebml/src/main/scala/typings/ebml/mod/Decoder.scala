@@ -12,7 +12,6 @@ import typings.node.streamMod.TransformOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ebml", "Decoder")
@@ -32,9 +31,9 @@ class Decoder () extends Transform {
   
   def end(chunk: Buffer): Unit = js.native
   def end(chunk: Buffer, cb: js.Function0[Unit]): Unit = js.native
-  def end(chunk: Buffer, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: Buffer, encoding: String): Unit = js.native
   def end(chunk: Buffer, encoding: String, cb: js.Function0[Unit]): Unit = js.native
+  def end(chunk: Buffer, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
   
   def on[K /* <: /* keyof ebml.ebml.Decoder.EventListenerMap */ data | close | end | readable | error */](
     event: K,
@@ -75,33 +74,31 @@ class Decoder () extends Transform {
   
   def write(chunk: Buffer): Boolean = js.native
   def write(chunk: Buffer, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
-  def write(
-    chunk: Buffer,
-    encoding: js.UndefOr[scala.Nothing],
-    cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-  ): Boolean = js.native
   def write(chunk: Buffer, encoding: String): Boolean = js.native
   def write(chunk: Buffer, encoding: String, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
+  def write(chunk: Buffer, encoding: Unit, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
 }
 /* static members */
 object Decoder {
   
-  @JSImport("ebml", "Decoder.getSchemaInfo")
+  @JSImport("ebml", "Decoder")
   @js.native
-  def getSchemaInfo(tag: Double): EBMLTagSchema = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSchemaInfo(tag: Double): EBMLTagSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemaInfo")(tag.asInstanceOf[js.Any]).asInstanceOf[EBMLTagSchema]
+  
   trait EventListenerMap extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def data(chunk: StateAndTagData): Unit = js.native
+    def data(chunk: StateAndTagData): Unit
     
-    def end(): Unit = js.native
+    def end(): Unit
     
-    def error(err: Error): Unit = js.native
+    def error(err: Error): Unit
     
-    def readable(): Unit = js.native
+    def readable(): Unit
   }
   object EventListenerMap {
     

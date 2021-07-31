@@ -2,7 +2,6 @@ package typings.angularAria
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -59,10 +58,9 @@ object mod {
     /**
       * $ariaProvider (https://docs.angularjs.org/api/ngAria/provider/$ariaProvider).
       */
-    @js.native
     trait IAriaProvider extends StObject {
       
-      def config(config: IAriaProviderOptions): Unit = js.native
+      def config(config: IAriaProviderOptions): Unit
     }
     object IAriaProvider {
       
@@ -81,28 +79,27 @@ object mod {
     }
     
     /* Inlined {[ key in angular-aria.angular.aria.IAriaAttribute ]:? boolean} */
-    @js.native
     trait IAriaProviderOptions extends StObject {
       
-      var ariaChecked: js.UndefOr[Boolean] = js.native
+      var ariaChecked: js.UndefOr[Boolean] = js.undefined
       
-      var ariaDisabled: js.UndefOr[Boolean] = js.native
+      var ariaDisabled: js.UndefOr[Boolean] = js.undefined
       
-      var ariaHidden: js.UndefOr[Boolean] = js.native
+      var ariaHidden: js.UndefOr[Boolean] = js.undefined
       
-      var ariaInvalid: js.UndefOr[Boolean] = js.native
+      var ariaInvalid: js.UndefOr[Boolean] = js.undefined
       
-      var ariaReadonly: js.UndefOr[Boolean] = js.native
+      var ariaReadonly: js.UndefOr[Boolean] = js.undefined
       
-      var ariaRequired: js.UndefOr[Boolean] = js.native
+      var ariaRequired: js.UndefOr[Boolean] = js.undefined
       
-      var ariaValue: js.UndefOr[Boolean] = js.native
+      var ariaValue: js.UndefOr[Boolean] = js.undefined
       
-      var bindKeydown: js.UndefOr[Boolean] = js.native
+      var bindKeydown: js.UndefOr[Boolean] = js.undefined
       
-      var bindRoleForClick: js.UndefOr[Boolean] = js.native
+      var bindRoleForClick: js.UndefOr[Boolean] = js.undefined
       
-      var tabindex: js.UndefOr[Boolean] = js.native
+      var tabindex: js.UndefOr[Boolean] = js.undefined
     }
     object IAriaProviderOptions {
       
@@ -180,10 +177,9 @@ object mod {
     /**
       * $aria service (https://docs.angularjs.org/api/ngAria/service/$aria).
       */
-    @js.native
     trait IAriaService extends StObject {
       
-      def config(attribute: IAriaAttribute): Boolean = js.native
+      def config(attribute: IAriaAttribute): Boolean
     }
     object IAriaService {
       

@@ -2,16 +2,14 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait List extends StObject {
   
   /**
     * 可能对游戏感兴趣的未注册好友名单
     */
-  var list: js.Array[AvatarUrl] = js.native
+  var list: js.Array[AvatarUrl]
 }
 object List {
   

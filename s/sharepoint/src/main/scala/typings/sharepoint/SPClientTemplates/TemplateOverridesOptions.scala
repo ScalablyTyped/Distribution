@@ -2,32 +2,30 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateOverridesOptions extends StObject {
   
   /** Base view ID (SPView.BaseViewID) for which the template should be applied.
     If not defined, the templates will be applied to all views. */
-  var BaseViewID: js.UndefOr[Double | String] = js.native
+  var BaseViewID: js.UndefOr[Double | String] = js.undefined
   
   /** List template type (SPList.BaseTemplate) for which the template should be applied.
     If not defined, the templates will be applied to all lists. */
-  var ListTemplateType: js.UndefOr[Double] = js.native
+  var ListTemplateType: js.UndefOr[Double] = js.undefined
   
   /** Callbacks called after rendered html inserted into DOM. Can be function (ctx: RenderContext) => void or array of functions.*/
-  var OnPostRender: js.UndefOr[RenderCallback | js.Array[RenderCallback]] = js.native
+  var OnPostRender: js.UndefOr[RenderCallback | js.Array[RenderCallback]] = js.undefined
   
   /** Callbacks called before rendering starts. Can be function (ctx: RenderContext) => void or array of functions.*/
-  var OnPreRender: js.UndefOr[RenderCallback | js.Array[RenderCallback]] = js.native
+  var OnPreRender: js.UndefOr[RenderCallback | js.Array[RenderCallback]] = js.undefined
   
   /** Template overrides */
-  var Templates: js.UndefOr[TemplateOverrides] = js.native
+  var Templates: js.UndefOr[TemplateOverrides] = js.undefined
   
   /** View style (SPView.StyleID) for which the templates should be applied.
     If not defined, the templates will be applied only to default view style. */
-  var ViewStyle: js.UndefOr[Double] = js.native
+  var ViewStyle: js.UndefOr[Double] = js.undefined
 }
 object TemplateOverridesOptions {
   

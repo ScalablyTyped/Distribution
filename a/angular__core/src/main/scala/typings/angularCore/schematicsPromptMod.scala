@@ -2,22 +2,24 @@ package typings.angularCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schematicsPromptMod {
   
-  @JSImport("@angular/core/schematics/utils/schematics_prompt", "getInquirer")
+  @JSImport("@angular/core/schematics/utils/schematics_prompt", JSImport.Namespace)
   @js.native
-  def getInquirer(): Inquirer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/core/schematics/utils/schematics_prompt", "supportsPrompt")
-  @js.native
-  def supportsPrompt(): Boolean = js.native
+  @scala.inline
+  def getInquirer(): Inquirer = ^.asInstanceOf[js.Dynamic].applyDynamic("getInquirer")().asInstanceOf[Inquirer]
+  
+  @scala.inline
+  def supportsPrompt(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsPrompt")().asInstanceOf[Boolean]
   
   @js.native
   trait Inquirer
-    extends typings.inquirer.mod.Inquirer {
+    extends StObject
+       with typings.inquirer.mod.Inquirer {
     
     /**
       * Provides components for the prompts.

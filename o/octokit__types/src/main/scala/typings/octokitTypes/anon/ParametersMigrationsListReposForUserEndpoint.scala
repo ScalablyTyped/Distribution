@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.MigrationsListReposForUserResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersMigrationsListReposForUserEndpoint extends StObject {
   
-  var parameters: MigrationsListReposForUserEndpoint = js.native
+  var parameters: MigrationsListReposForUserEndpoint
   
-  var request: MigrationsListReposForUserRequestOptions = js.native
+  var request: MigrationsListReposForUserRequestOptions
   
-  var response: OctokitResponse[MigrationsListReposForUserResponseData] = js.native
+  var response: OctokitResponse[MigrationsListReposForUserResponseData]
 }
 object ParametersMigrationsListReposForUserEndpoint {
   

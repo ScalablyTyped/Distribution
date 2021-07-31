@@ -2,77 +2,75 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A rectangular area on a two-dimensional map projection.
   */
-@js.native
 trait MapRect extends StObject {
   
   /**
     * Returns a copy of a map rectangle.
     */
-  def copy(): MapRect = js.native
+  def copy(): MapRect
   
   /**
     * Indicates whether two map rectangles are equal.
     *
     * @param anotherRect The map rectangle to equate to.
     */
-  def equals(anotherRect: MapRect): Boolean = js.native
+  def equals(anotherRect: MapRect): Boolean
   
   /**
     * The maximum x-axis value of a rectangle.
     */
-  var maxX: Double = js.native
+  var maxX: Double
   
   /**
     * The maximum y-axis value of a rectangle.
     */
-  var maxY: Double = js.native
+  var maxY: Double
   
   /**
     * The mid-point along the x-axis of a rectangle.
     */
-  var midX: Double = js.native
+  var midX: Double
   
   /**
     * The mid-point along the y-axis of a rectangle.
     */
-  var midY: Double = js.native
+  var midY: Double
   
   /**
     * The minimum x-axis value of a rectangle.
     */
-  var minX: Double = js.native
+  var minX: Double
   
   /**
     * The minimum y-axis value of a rectangle.
     */
-  var minY: Double = js.native
+  var minY: Double
   
   /**
     * The origin point of a rectangle.
     */
-  var origin: MapPoint = js.native
+  var origin: MapPoint
   
   /**
     * @param scaleFactor The scale factor.
     * @param scaleCenter The center map point for scaling.
     */
-  def scale(scaleFactor: Double, scaleCenter: MapPoint): MapRect = js.native
+  def scale(scaleFactor: Double, scaleCenter: MapPoint): MapRect
   
   /**
     * The width and height of a rectangle, starting from the origin point.
     */
-  var size: MapSize = js.native
+  var size: MapSize
   
   /**
     * Returns the region that corresponds to a map rectangle.
     */
-  def toCoordinateRegion(): CoordinateRegion = js.native
+  def toCoordinateRegion(): CoordinateRegion
 }
 object MapRect {
   

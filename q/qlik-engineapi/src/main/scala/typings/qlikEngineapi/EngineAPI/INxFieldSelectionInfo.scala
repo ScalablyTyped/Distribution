@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxFieldSelectionInfo...
   */
-@js.native
 trait INxFieldSelectionInfo extends StObject {
   
   /**
     * Selection mode.
     */
-  var qFieldSelectionMode: FieldSelectionModeType = js.native
+  var qFieldSelectionMode: FieldSelectionModeType
   
   /**
     * Name of the field.
     */
-  var qName: String = js.native
+  var qName: String
 }
 object INxFieldSelectionInfo {
   

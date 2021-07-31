@@ -3,21 +3,19 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`vertex-add`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultipointDrawActionVertexAddEvent extends StObject {
   
-  var defaultPrevented: Boolean = js.native
+  var defaultPrevented: Boolean
   
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
-  var `type`: `vertex-add` = js.native
+  var `type`: `vertex-add`
   
-  var vertexIndex: Double = js.native
+  var vertexIndex: Double
   
-  var vertices: js.Array[js.Array[Double]] = js.native
+  var vertices: js.Array[js.Array[Double]]
 }
 object MultipointDrawActionVertexAddEvent {
   
@@ -25,12 +23,11 @@ object MultipointDrawActionVertexAddEvent {
   def apply(
     defaultPrevented: Boolean,
     preventDefault: js.Function,
-    `type`: `vertex-add`,
     vertexIndex: Double,
     vertices: js.Array[js.Array[Double]]
   ): MultipointDrawActionVertexAddEvent = {
     val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], vertexIndex = vertexIndex.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("vertex-add")
     __obj.asInstanceOf[MultipointDrawActionVertexAddEvent]
   }
   

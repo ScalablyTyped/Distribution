@@ -2,15 +2,13 @@ package typings.kolite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KoLiteCommandOptions extends StObject {
   
-  var canExecute: js.UndefOr[js.Function1[/* isExecuting */ Boolean, _]] = js.native
+  var canExecute: js.UndefOr[js.Function1[/* isExecuting */ Boolean, js.Any]] = js.undefined
   
-  def execute(args: js.Any*): js.Any = js.native
+  def execute(args: js.Any*): js.Any
 }
 object KoLiteCommandOptions {
   
@@ -24,7 +22,7 @@ object KoLiteCommandOptions {
   implicit class KoLiteCommandOptionsMutableBuilder[Self <: KoLiteCommandOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCanExecute(value: /* isExecuting */ Boolean => _): Self = StObject.set(x, "canExecute", js.Any.fromFunction1(value))
+    def setCanExecute(value: /* isExecuting */ Boolean => js.Any): Self = StObject.set(x, "canExecute", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCanExecuteUndefined: Self = StObject.set(x, "canExecute", js.undefined)

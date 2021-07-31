@@ -7,16 +7,18 @@ import typings.awsSdkClientS3Node.typesPutBucketWebsiteInputMod.PutBucketWebsite
 import typings.awsSdkClientS3Node.typesPutBucketWebsiteOutputMod.PutBucketWebsiteOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object putBucketWebsiteCommandMod {
   
   @JSImport("@aws-sdk/client-s3-node/commands/PutBucketWebsiteCommand", "PutBucketWebsiteCommand")
   @js.native
-  class PutBucketWebsiteCommand protected () extends Command[
+  class PutBucketWebsiteCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           PutBucketWebsiteInput, 
           OutputTypesUnion, 
@@ -25,11 +27,23 @@ object putBucketWebsiteCommandMod {
         ] {
     def this(input: PutBucketWebsiteInput) = this()
     
+    /* CompleteClass */
+    override val input: PutBucketWebsiteInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[PutBucketWebsiteInput, PutBucketWebsiteOutput] = js.native
+    
     val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ js.Any = js.native
     
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: S3ResolvedConfiguration
+    ): Handler[PutBucketWebsiteInput, PutBucketWebsiteOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: S3ResolvedConfiguration,
+      options: js.Any
     ): Handler[PutBucketWebsiteInput, PutBucketWebsiteOutput] = js.native
   }
 }

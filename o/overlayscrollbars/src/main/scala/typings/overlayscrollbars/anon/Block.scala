@@ -8,21 +8,21 @@ import typings.overlayscrollbars.mod._Coordinates
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Block extends _Coordinates {
+trait Block
+  extends StObject
+     with _Coordinates {
   
-  var block: js.UndefOr[BlockBehavior | XY | (js.Tuple2[BlockBehavior, BlockBehavior])] = js.native
+  var block: js.UndefOr[BlockBehavior | XY | (js.Tuple2[BlockBehavior, BlockBehavior])] = js.undefined
   
-  var el: HTMLElement | JQuery = js.native
+  var el: HTMLElement | JQuery
   
   var margin: js.UndefOr[
     Margin | Bottom | (js.Tuple2[Margin, Margin]) | (js.Tuple4[Margin, Margin, Margin, Margin])
-  ] = js.native
+  ] = js.undefined
   
-  var scroll: js.UndefOr[ScrollBehavior | Y | (js.Tuple2[ScrollBehavior, ScrollBehavior])] = js.native
+  var scroll: js.UndefOr[ScrollBehavior | Y | (js.Tuple2[ScrollBehavior, ScrollBehavior])] = js.undefined
 }
 object Block {
   

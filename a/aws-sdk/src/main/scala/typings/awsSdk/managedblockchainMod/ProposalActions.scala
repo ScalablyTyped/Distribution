@@ -2,21 +2,19 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProposalActions extends StObject {
   
   /**
     *  The actions to perform for an APPROVED proposal to invite an AWS account to create a member and join the network. 
     */
-  var Invitations: js.UndefOr[InviteActionList] = js.native
+  var Invitations: js.UndefOr[InviteActionList] = js.undefined
   
   /**
     *  The actions to perform for an APPROVED proposal to remove a member from the network, which deletes the member and all associated member resources from the network. 
     */
-  var Removals: js.UndefOr[RemoveActionList] = js.native
+  var Removals: js.UndefOr[RemoveActionList] = js.undefined
 }
 object ProposalActions {
   

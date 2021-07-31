@@ -7,7 +7,6 @@ import typings.regexpp.ecmaVersionsMod.EcmaVersion
 import typings.regexpp.parserMod.RegExpParser.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserMod {
@@ -18,32 +17,31 @@ object parserMod {
     def this(options: Options) = this()
     
     def parseFlags(source: String): Flags = js.native
-    def parseFlags(source: String, start: js.UndefOr[scala.Nothing], end: Double): Flags = js.native
     def parseFlags(source: String, start: Double): Flags = js.native
     def parseFlags(source: String, start: Double, end: Double): Flags = js.native
+    def parseFlags(source: String, start: Unit, end: Double): Flags = js.native
     
     def parseLiteral(source: String): RegExpLiteral = js.native
-    def parseLiteral(source: String, start: js.UndefOr[scala.Nothing], end: Double): RegExpLiteral = js.native
     def parseLiteral(source: String, start: Double): RegExpLiteral = js.native
     def parseLiteral(source: String, start: Double, end: Double): RegExpLiteral = js.native
+    def parseLiteral(source: String, start: Unit, end: Double): RegExpLiteral = js.native
     
     def parsePattern(source: String): Pattern = js.native
-    def parsePattern(source: String, start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], uFlag: Boolean): Pattern = js.native
-    def parsePattern(source: String, start: js.UndefOr[scala.Nothing], end: Double): Pattern = js.native
-    def parsePattern(source: String, start: js.UndefOr[scala.Nothing], end: Double, uFlag: Boolean): Pattern = js.native
     def parsePattern(source: String, start: Double): Pattern = js.native
-    def parsePattern(source: String, start: Double, end: js.UndefOr[scala.Nothing], uFlag: Boolean): Pattern = js.native
     def parsePattern(source: String, start: Double, end: Double): Pattern = js.native
     def parsePattern(source: String, start: Double, end: Double, uFlag: Boolean): Pattern = js.native
+    def parsePattern(source: String, start: Double, end: Unit, uFlag: Boolean): Pattern = js.native
+    def parsePattern(source: String, start: Unit, end: Double): Pattern = js.native
+    def parsePattern(source: String, start: Unit, end: Double, uFlag: Boolean): Pattern = js.native
+    def parsePattern(source: String, start: Unit, end: Unit, uFlag: Boolean): Pattern = js.native
   }
   object RegExpParser {
     
-    @js.native
     trait Options extends StObject {
       
-      var ecmaVersion: js.UndefOr[EcmaVersion] = js.native
+      var ecmaVersion: js.UndefOr[EcmaVersion] = js.undefined
       
-      var strict: js.UndefOr[Boolean] = js.native
+      var strict: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       

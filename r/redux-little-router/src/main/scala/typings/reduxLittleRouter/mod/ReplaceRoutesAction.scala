@@ -3,15 +3,15 @@ package typings.reduxLittleRouter.mod
 import typings.reduxLittleRouter.anon.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReplaceRoutesAction extends RouterActions {
+trait ReplaceRoutesAction
+  extends StObject
+     with RouterActions {
   
-  var payload: Options = js.native
+  var payload: Options
   
-  var `type`: /* "ROUTER_REPLACE_ROUTES" */ String = js.native
+  var `type`: /* "ROUTER_REPLACE_ROUTES" */ String
 }
 object ReplaceRoutesAction {
   

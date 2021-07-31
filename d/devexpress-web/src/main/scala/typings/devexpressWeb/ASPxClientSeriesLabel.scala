@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the SeriesLabelBase class.
   */
-@js.native
-trait ASPxClientSeriesLabel extends ASPxClientWebChartElement {
+trait ASPxClientSeriesLabel
+  extends StObject
+     with ASPxClientWebChartElement {
   
   /**
     * Gets the series that owns the current series label object.
     */
-  var series: ASPxClientSeries = js.native
+  var series: ASPxClientSeries
   
   /** @deprecated This property is obsolete and isn't used at all. */
   /**
     * Gets the common text for all series point labels.
     */
-  var text: String = js.native
+  var text: String
 }
 object ASPxClientSeriesLabel {
   

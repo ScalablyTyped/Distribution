@@ -2,41 +2,39 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureTransformation extends StObject {
   
   /**
     * The creation date and time (in Unix time) of the feature transformation.
     */
-  var creationDateTime: js.UndefOr[Date] = js.native
+  var creationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Provides the default parameters for feature transformation.
     */
-  var defaultParameters: js.UndefOr[FeaturizationParameters] = js.native
+  var defaultParameters: js.UndefOr[FeaturizationParameters] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the FeatureTransformation object.
     */
-  var featureTransformationArn: js.UndefOr[Arn] = js.native
+  var featureTransformationArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The last update date and time (in Unix time) of the feature transformation.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.native
+  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the feature transformation.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The status of the feature transformation. A feature transformation can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED  
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object FeatureTransformation {
   

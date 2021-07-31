@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LegendViewModelLayerInfos extends Object {
+trait LegendViewModelLayerInfos
+  extends StObject
+     with Object {
   
   /**
     * A layer to add to the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#layerInfos)
     */
-  var layer: js.UndefOr[Layer] = js.native
+  var layer: js.UndefOr[Layer] = js.undefined
   
   /**
     * Specify a title for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#layerInfos)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object LegendViewModelLayerInfos {
   

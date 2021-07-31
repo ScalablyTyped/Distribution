@@ -2,17 +2,17 @@ package typings.chartist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IChartistStepAxis extends ILineChartAxis {
+trait IChartistStepAxis
+  extends StObject
+     with ILineChartAxis {
   
-  var stretch: js.UndefOr[Boolean] = js.native
+  var stretch: js.UndefOr[Boolean] = js.undefined
   
-  var ticks: js.UndefOr[js.Array[Double | String]] = js.native
+  var ticks: js.UndefOr[js.Array[Double | String]] = js.undefined
   
-  var `type`: js.UndefOr[IStepAxisStatic] = js.native
+  var `type`: js.UndefOr[IStepAxisStatic] = js.undefined
 }
 object IChartistStepAxis {
   

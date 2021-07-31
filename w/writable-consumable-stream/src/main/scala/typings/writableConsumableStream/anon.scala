@@ -2,17 +2,15 @@ package typings.writableConsumableStream
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Done[T] extends StObject {
     
-    var done: Boolean = js.native
+    var done: Boolean
     
-    var value: T = js.native
+    var value: T
   }
   object Done {
     
@@ -23,7 +21,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DoneMutableBuilder[Self <: Done[_], T] (val x: Self with Done[T]) extends AnyVal {
+    implicit class DoneMutableBuilder[Self <: Done[?], T] (val x: Self & Done[T]) extends AnyVal {
       
       @scala.inline
       def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])

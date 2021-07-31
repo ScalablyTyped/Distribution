@@ -2,56 +2,54 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleRunConfiguration extends StObject {
   
   /**
     * A list of upload ARNs for app packages to be installed with your app.
     */
-  var auxiliaryApps: js.UndefOr[AmazonResourceNames] = js.native
+  var auxiliaryApps: js.UndefOr[AmazonResourceNames] = js.undefined
   
   /**
     * Specifies the billing method for a test run: metered or unmetered. If the parameter is not specified, the default value is metered.  If you have purchased unmetered device slots, you must set this parameter to unmetered to make use of them. Otherwise, your run counts against your metered time. 
     */
-  var billingMethod: js.UndefOr[BillingMethod] = js.native
+  var billingMethod: js.UndefOr[BillingMethod] = js.undefined
   
   /**
     * Input CustomerArtifactPaths object for the scheduled run configuration.
     */
-  var customerArtifactPaths: js.UndefOr[CustomerArtifactPaths] = js.native
+  var customerArtifactPaths: js.UndefOr[CustomerArtifactPaths] = js.undefined
   
   /**
     * The ARN of the extra data for the run. The extra data is a .zip file that AWS Device Farm extracts to external data for Android or the app's sandbox for iOS.
     */
-  var extraDataPackageArn: js.UndefOr[AmazonResourceName] = js.native
+  var extraDataPackageArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * Information about the locale that is used for the run.
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the location that is used for the run.
     */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /**
     * Reserved for internal use.
     */
-  var networkProfileArn: js.UndefOr[AmazonResourceName] = js.native
+  var networkProfileArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * Information about the radio states for the run.
     */
-  var radios: js.UndefOr[Radios] = js.native
+  var radios: js.UndefOr[Radios] = js.undefined
   
   /**
     * An array of ARNs for your VPC endpoint configurations.
     */
-  var vpceConfigurationArns: js.UndefOr[AmazonResourceNames] = js.native
+  var vpceConfigurationArns: js.UndefOr[AmazonResourceNames] = js.undefined
 }
 object ScheduleRunConfiguration {
   

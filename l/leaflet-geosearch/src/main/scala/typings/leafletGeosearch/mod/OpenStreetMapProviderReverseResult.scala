@@ -3,22 +3,20 @@ package typings.leafletGeosearch.mod
 import typings.leafletGeosearch.anon.Address
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined leaflet-geosearch.leaflet-geosearch.Omit<leaflet-geosearch.leaflet-geosearch.SearchResult<leaflet-geosearch.leaflet-geosearch.OpenStreetMapProviderResultRaw>, 'raw'> & {  raw :{  address :{  house_number :string,   road :string,   town :string,   city :string,   county :string,   state_district :string,   state :string,   postcode :string,   country :string,   country_code :string}}} */
-@js.native
 trait OpenStreetMapProviderReverseResult extends StObject {
   
-  var bounds: BoundsTuple = js.native
+  var bounds: BoundsTuple
   
-  var label: String = js.native
+  var label: String
   
-  var raw: Address = js.native
+  var raw: Address
   
-  var x: String = js.native
+  var x: String
   
-  var y: String = js.native
+  var y: String
 }
 object OpenStreetMapProviderReverseResult {
   

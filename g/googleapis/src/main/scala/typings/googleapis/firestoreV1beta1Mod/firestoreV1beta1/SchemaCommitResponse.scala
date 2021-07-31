@@ -2,25 +2,23 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for Firestore.Commit.
   */
-@js.native
 trait SchemaCommitResponse extends StObject {
   
   /**
     * The time at which the commit occurred.
     */
-  var commitTime: js.UndefOr[String] = js.native
+  var commitTime: js.UndefOr[String] = js.undefined
   
   /**
     * The result of applying the writes.  This i-th write result corresponds to
     * the i-th write in the request.
     */
-  var writeResults: js.UndefOr[js.Array[SchemaWriteResult]] = js.native
+  var writeResults: js.UndefOr[js.Array[SchemaWriteResult]] = js.undefined
 }
 object SchemaCommitResponse {
   

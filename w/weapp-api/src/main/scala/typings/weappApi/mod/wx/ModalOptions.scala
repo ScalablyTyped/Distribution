@@ -2,32 +2,32 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ModalOptions extends CommonCallbackOptions {
+trait ModalOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   //  取消按钮的文字颜色，必须是 16 进制格式的颜色字符串，默认值'#000000'
-  var cancelColor: js.UndefOr[String] = js.native
+  var cancelColor: js.UndefOr[String] = js.undefined
   
   //  取消按钮的文字，最多 4 个字符，默认值'取消'
-  var cancelText: js.UndefOr[String] = js.native
+  var cancelText: js.UndefOr[String] = js.undefined
   
   //  确认按钮的文字颜色，必须是 16 进制格式的颜色字符串，默认值'#3cc51f'
-  var confirmColor: js.UndefOr[Boolean] = js.native
+  var confirmColor: js.UndefOr[Boolean] = js.undefined
   
   //  确认按钮的文字，最多 4 个字符
-  var confirmText: js.UndefOr[String] = js.native
+  var confirmText: js.UndefOr[String] = js.undefined
   
   // 提示的内容
-  var content: String = js.native
+  var content: String
   
   //  是否显示取消按钮，默认值true
-  var showCancel: js.UndefOr[Boolean] = js.native
+  var showCancel: js.UndefOr[Boolean] = js.undefined
   
   // 提示的内容
-  var title: String = js.native
+  var title: String
 }
 object ModalOptions {
   

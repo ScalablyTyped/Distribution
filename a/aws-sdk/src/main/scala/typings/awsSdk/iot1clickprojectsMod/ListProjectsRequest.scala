@@ -2,21 +2,19 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProjectsRequest extends StObject {
   
   /**
     * The maximum number of results to return per request. If not set, a default value of 100 is used.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token to retrieve the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListProjectsRequest {
   

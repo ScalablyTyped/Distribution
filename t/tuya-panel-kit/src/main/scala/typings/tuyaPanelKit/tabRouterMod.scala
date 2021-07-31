@@ -9,6 +9,7 @@ import typings.tuyaPanelKit.anon.Source
 import typings.tuyaPanelKit.anon.Target
 import typings.tuyaPanelKit.anon.Type
 import typings.tuyaPanelKit.drawerRouterMod.DrawerActionType
+import typings.tuyaPanelKit.routersTypesMod.DefaultRouterOptions
 import typings.tuyaPanelKit.routersTypesMod.NavigationRoute
 import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import typings.tuyaPanelKit.routersTypesMod.Router
@@ -18,27 +19,34 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.none_
 import typings.tuyaPanelKit.tuyaPanelKitStrings.tab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabRouterMod {
   
-  @JSImport("tuya-panel-kit/@react-navigation/routers/TabRouter", JSImport.Default)
+  @JSImport("tuya-panel-kit/@react-navigation/routers/TabRouter", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(hasInitialRouteNameBackBehavior: TabRouterOptions): Router[
     TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
     Source | Payload | Target | Type | TabActionType
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasInitialRouteNameBackBehavior.asInstanceOf[js.Any]).asInstanceOf[Router[
+    TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
+    Source | Payload | Target | Type | TabActionType
+  ]]
   
   object TabActions {
     
+    @JSImport("tuya-panel-kit/@react-navigation/routers/TabRouter", "TabActions")
+    @js.native
+    val ^ : js.Any = js.native
+    
     // tslint:disable-next-line no-redundant-undefined
-    @JSImport("tuya-panel-kit/@react-navigation/routers/TabRouter", "TabActions.jumpTo")
-    @js.native
-    def jumpTo(name: String): TabActionType = js.native
-    @JSImport("tuya-panel-kit/@react-navigation/routers/TabRouter", "TabActions.jumpTo")
-    @js.native
-    def jumpTo(name: String, params: js.Object): TabActionType = js.native
+    @scala.inline
+    def jumpTo(name: String): TabActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any]).asInstanceOf[TabActionType]
+    @scala.inline
+    def jumpTo(name: String, params: js.Object): TabActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TabActionType]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -63,7 +71,6 @@ object tabRouterMod {
     def order: typings.tuyaPanelKit.tuyaPanelKitStrings.order = "order".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.order]
   }
   
-  @js.native
   trait TabActionHelpers[ParamList /* <: ParamListBase */] extends StObject {
     
     /**
@@ -78,7 +85,7 @@ object tabRouterMod {
           RouteName, 
           /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
         ]) | js.Array[RouteName]
-    ): Unit = js.native
+    ): Unit
   }
   object TabActionHelpers {
     
@@ -94,7 +101,7 @@ object tabRouterMod {
     }
     
     @scala.inline
-    implicit class TabActionHelpersMutableBuilder[Self <: TabActionHelpers[_], ParamList /* <: ParamListBase */] (val x: Self with TabActionHelpers[ParamList]) extends AnyVal {
+    implicit class TabActionHelpersMutableBuilder[Self <: TabActionHelpers[?], ParamList /* <: ParamListBase */] (val x: Self & TabActionHelpers[ParamList]) extends AnyVal {
       
       @scala.inline
       def setJumpTo(
@@ -106,23 +113,24 @@ object tabRouterMod {
     }
   }
   
-  @js.native
-  trait TabActionType extends DrawerActionType {
+  trait TabActionType
+    extends StObject
+       with DrawerActionType {
     
-    var payload: NameString = js.native
+    var payload: NameString
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var `type`: JUMP_TO = js.native
+    var `type`: JUMP_TO
   }
   object TabActionType {
     
     @scala.inline
-    def apply(payload: NameString, `type`: JUMP_TO): TabActionType = {
+    def apply(payload: NameString): TabActionType = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("JUMP_TO")
       __obj.asInstanceOf[TabActionType]
     }
     
@@ -150,29 +158,28 @@ object tabRouterMod {
   }
   
   /* Inlined std.Omit<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.NavigationState<ParamList>, 'history'> & {  type :'tab',   history :std.Array<{  type :'route',   key :string}>} */
-  @js.native
   trait TabNavigationState[ParamList /* <: ParamListBase */] extends StObject {
     
     /**
       * List of previously visited route keys.
       */
     // tslint:disable-next-line array-type
-    var history: js.Array[KeyType] = js.native
+    var history: js.Array[KeyType]
     
-    var index: Double = js.native
+    var index: Double
     
-    var key: String = js.native
+    var key: String
     
-    var routeNames: js.Array[Extract[/* keyof ParamList */ String, String]] = js.native
+    var routeNames: js.Array[Extract[/* keyof ParamList */ String, String]]
     
-    var routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]] = js.native
+    var routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]
     
-    var stale: `false` = js.native
+    var stale: `false`
     
     /**
       * Type of the router, in this case, it's tab.
       */
-    var `type`: String with tab = js.native
+    var `type`: String & tab
   }
   object TabNavigationState {
     
@@ -183,16 +190,15 @@ object tabRouterMod {
       key: String,
       routeNames: js.Array[Extract[/* keyof ParamList */ String, String]],
       routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]],
-      stale: `false`,
-      `type`: String with tab
+      `type`: String & tab
     ): TabNavigationState[ParamList] = {
-      val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = stale.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabNavigationState[ParamList]]
     }
     
     @scala.inline
-    implicit class TabNavigationStateMutableBuilder[Self <: TabNavigationState[_], ParamList /* <: ParamListBase */] (val x: Self with TabNavigationState[ParamList]) extends AnyVal {
+    implicit class TabNavigationStateMutableBuilder[Self <: TabNavigationState[?], ParamList /* <: ParamListBase */] (val x: Self & TabNavigationState[ParamList]) extends AnyVal {
       
       @scala.inline
       def setHistory(value: js.Array[KeyType]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
@@ -222,21 +228,15 @@ object tabRouterMod {
       def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setType(value: String with tab): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: String & tab): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.DefaultRouterOptions<string> & {  backBehavior :tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/TabRouter.BackBehavior | undefined} */
-  @js.native
-  trait TabRouterOptions extends StObject {
+  trait TabRouterOptions
+    extends StObject
+       with DefaultRouterOptions[String] {
     
-    var backBehavior: js.UndefOr[BackBehavior] = js.native
-    
-    /**
-      * Name of the route to focus by on initial render.
-      * If not specified, usually the first route is used.
-      */
-    var initialRouteName: js.UndefOr[String] = js.native
+    var backBehavior: js.UndefOr[BackBehavior] = js.undefined
   }
   object TabRouterOptions {
     
@@ -254,12 +254,6 @@ object tabRouterMod {
       
       @scala.inline
       def setBackBehaviorUndefined: Self = StObject.set(x, "backBehavior", js.undefined)
-      
-      @scala.inline
-      def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
     }
   }
 }

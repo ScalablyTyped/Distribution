@@ -2,10 +2,8 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RulesBucket extends StObject {
   
   def AddRule(
@@ -13,11 +11,11 @@ trait RulesBucket extends StObject {
     specificTokens: Boolean,
     constructionState: js.Array[RulesBucketConstructionState],
     rulesBucketIndex: Double
-  ): Unit = js.native
+  ): Unit
   
-  def Rules(): js.Array[Rule] = js.native
+  def Rules(): js.Array[Rule]
   
-  var rules: js.Any = js.native
+  var rules: js.Any
 }
 object RulesBucket {
   

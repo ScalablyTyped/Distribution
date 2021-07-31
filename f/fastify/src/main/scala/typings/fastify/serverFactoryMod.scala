@@ -10,7 +10,6 @@ import typings.node.httpMod.ServerResponse
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverFactoryMod {
@@ -26,8 +25,8 @@ object serverFactoryMod {
   ]
   
   type FastifyServerFactoryHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */] = js.Function2[
-    (/* request */ Http2ServerRequest with RawRequest) | (/* request */ IncomingMessage with RawRequest), 
-    (/* response */ Http2ServerResponse with RawReply) | (/* response */ ServerResponse with RawReply), 
+    (/* request */ Http2ServerRequest & RawRequest) | (/* request */ IncomingMessage & RawRequest), 
+    (/* response */ Http2ServerResponse & RawReply) | (/* response */ ServerResponse & RawReply), 
     Unit
   ]
 }

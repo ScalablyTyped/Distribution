@@ -2,26 +2,24 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteArchiveRuleRequest extends StObject {
   
   /**
     * The name of the analyzer that associated with the archive rule to delete.
     */
-  var analyzerName: Name = js.native
+  var analyzerName: Name
   
   /**
     * A client token.
     */
-  var clientToken: js.UndefOr[String] = js.native
+  var clientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the rule to delete.
     */
-  var ruleName: Name = js.native
+  var ruleName: Name
 }
 object DeleteArchiveRuleRequest {
   

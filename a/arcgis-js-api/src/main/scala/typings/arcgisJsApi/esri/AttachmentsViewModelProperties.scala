@@ -5,10 +5,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.edit
 import typings.arcgisJsApi.arcgisJsApiStrings.view
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachmentsViewModelProperties extends StObject {
   
   /**
@@ -16,28 +14,28 @@ trait AttachmentsViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#activeAttachmentInfo)
     */
-  var activeAttachmentInfo: js.UndefOr[AttachmentInfoProperties] = js.native
+  var activeAttachmentInfo: js.UndefOr[AttachmentInfoProperties] = js.undefined
   
   /**
     * The graphic for the attachments.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#graphic)
     */
-  var graphic: js.UndefOr[GraphicProperties] = js.native
+  var graphic: js.UndefOr[GraphicProperties] = js.undefined
   
   /**
     * The current mode performed by the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#mode)
     */
-  var mode: js.UndefOr[view | add | edit] = js.native
+  var mode: js.UndefOr[view | add | edit] = js.undefined
   
   /**
     * Defines whether or not the feature supports resizing attachments.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#supportsResizeAttachments)
     */
-  var supportsResizeAttachments: js.UndefOr[Boolean] = js.native
+  var supportsResizeAttachments: js.UndefOr[Boolean] = js.undefined
 }
 object AttachmentsViewModelProperties {
   

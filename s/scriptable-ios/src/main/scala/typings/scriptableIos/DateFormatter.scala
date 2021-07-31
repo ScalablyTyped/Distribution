@@ -3,7 +3,6 @@ package typings.scriptableIos
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * To convert between dates and their textual representation, use the `string()` and `date()` functions.
   * @see https://docs.scriptable.app/dateformatter/#-new-dateformatter
   */
-@js.native
 trait DateFormatter extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait DateFormatter extends StObject {
     * @param str - The string to parse into a date.
     * @see https://docs.scriptable.app/dateformatter/#-date
     */
-  def date(str: String): String = js.native
+  def date(str: String): String
   
   /**
     * _Date format to be used by the formatter._
@@ -90,7 +88,7 @@ trait DateFormatter extends StObject {
     * A great resource for experimenting with date formats is nsdateformatter.com developed by Ben Scheirman.
     * @see https://docs.scriptable.app/dateformatter/#dateformat
     */
-  var dateFormat: String = js.native
+  var dateFormat: String
   
   /**
     * _Locale to use when formatting._
@@ -98,14 +96,14 @@ trait DateFormatter extends StObject {
     * The locale should be specified using a string identifier, e.g. "en", "it" or "da". When no locale is set, the formatter will use the current locale of the device.
     * @see https://docs.scriptable.app/dateformatter/#locale
     */
-  var locale: String = js.native
+  var locale: String
   
   /**
     * _Creates a string from a date._
     * @param date - The date to convert to a string.
     * @see https://docs.scriptable.app/dateformatter/#-string
     */
-  def string(date: Date): String = js.native
+  def string(date: Date): String
   
   /**
     * _Use a full style for the date._
@@ -113,7 +111,7 @@ trait DateFormatter extends StObject {
     * Dates with a full style includes all details, e.g. "Friday, August 23, 2019 AD".
     * @see https://docs.scriptable.app/dateformatter/#-usefulldatestyle
     */
-  def useFullDateStyle(): Unit = js.native
+  def useFullDateStyle(): Unit
   
   /**
     * _Use a full style for the time._
@@ -121,7 +119,7 @@ trait DateFormatter extends StObject {
     * Times with a full style includes all details, e.g. "7:16:42 PM Pacific Standard Time".
     * @see https://docs.scriptable.app/dateformatter/#-usefulltimestyle
     */
-  def useFullTimeStyle(): Unit = js.native
+  def useFullTimeStyle(): Unit
   
   /**
     * _Use a long style for the date._
@@ -129,7 +127,7 @@ trait DateFormatter extends StObject {
     * Dates with a long style usually includes a full text, e.g. "August 23, 2019".
     * @see https://docs.scriptable.app/dateformatter/#-uselongdatestyle
     */
-  def useLongDateStyle(): Unit = js.native
+  def useLongDateStyle(): Unit
   
   /**
     * _Use a long style for the time._
@@ -137,7 +135,7 @@ trait DateFormatter extends StObject {
     * Times with a long style usually includes a full text, e.g. "7:16:42 PM PST".
     * @see https://docs.scriptable.app/dateformatter/#-uselongtimestyle
     */
-  def useLongTimeStyle(): Unit = js.native
+  def useLongTimeStyle(): Unit
   
   /**
     * _Use a medium style for the date._
@@ -145,7 +143,7 @@ trait DateFormatter extends StObject {
     * Dates with a medium style usually includes abbreviations, e.g. "Aug 23, 2019".
     * @see https://docs.scriptable.app/dateformatter/#-usemediumdatestyle
     */
-  def useMediumDateStyle(): Unit = js.native
+  def useMediumDateStyle(): Unit
   
   /**
     * _Use a short style for the time._
@@ -153,7 +151,7 @@ trait DateFormatter extends StObject {
     * Times with a medium style usually includes abbreviations, e.g. "7:16:42 PM".
     * @see https://docs.scriptable.app/dateformatter/#-usemediumtimestyle
     */
-  def useMediumTimeStyle(): Unit = js.native
+  def useMediumTimeStyle(): Unit
   
   /**
     * _Use no style for the date._
@@ -161,7 +159,7 @@ trait DateFormatter extends StObject {
     * This will remove the date from the formatted string.
     * @see https://docs.scriptable.app/dateformatter/#-usenodatestyle
     */
-  def useNoDateStyle(): Unit = js.native
+  def useNoDateStyle(): Unit
   
   /**
     * _Use no style for the time._
@@ -169,7 +167,7 @@ trait DateFormatter extends StObject {
     * This will remove the time from the formatted string.
     * @see https://docs.scriptable.app/dateformatter/#-usenotimestyle
     */
-  def useNoTimeStyle(): Unit = js.native
+  def useNoTimeStyle(): Unit
   
   /**
     * _Use a short style for the date._
@@ -177,7 +175,7 @@ trait DateFormatter extends StObject {
     * Dates with a short style are typically numeric only e.g. "08/23/19".
     * @see https://docs.scriptable.app/dateformatter/#-useshortdatestyle
     */
-  def useShortDateStyle(): Unit = js.native
+  def useShortDateStyle(): Unit
   
   /**
     * _Use a short style for the time._
@@ -185,7 +183,7 @@ trait DateFormatter extends StObject {
     * Times with a short style are typically numeric only but also includes the period for 12-hour clocks, e.g. "7:17 PM".
     * @see https://docs.scriptable.app/dateformatter/#-useshorttimestyle
     */
-  def useShortTimeStyle(): Unit = js.native
+  def useShortTimeStyle(): Unit
 }
 object DateFormatter {
   

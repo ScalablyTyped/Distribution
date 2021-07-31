@@ -7,23 +7,22 @@ import typings.heremaps.anon.Items
 import typings.heremaps.anon.Language
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This type encapsulates a response object provider by a HERE platform service.
   */
-@js.native
 trait ServiceResult
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var Response: js.UndefOr[Isolines] = js.native
+  var Response: js.UndefOr[Isolines] = js.undefined
   
-  var response: js.UndefOr[Language] = js.native
+  var response: js.UndefOr[Language] = js.undefined
   
-  var results: js.UndefOr[Items] = js.native
+  var results: js.UndefOr[Items] = js.undefined
   
-  var search: js.UndefOr[Context] = js.native
+  var search: js.UndefOr[Context] = js.undefined
 }
 object ServiceResult {
   

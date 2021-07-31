@@ -3,25 +3,25 @@ package typings.typedGraphql.mod
 import typings.typedGraphql.typedGraphqlStrings.UNION
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IntrospectionUnionType extends IntrospectionType {
+trait IntrospectionUnionType
+  extends StObject
+     with IntrospectionType {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var kind: UNION = js.native
+  var kind: UNION
   
-  var name: String = js.native
+  var name: String
   
-  var possibleTypes: js.Array[IntrospectionNamedTypeRef] = js.native
+  var possibleTypes: js.Array[IntrospectionNamedTypeRef]
 }
 object IntrospectionUnionType {
   
   @scala.inline
-  def apply(kind: UNION, name: String, possibleTypes: js.Array[IntrospectionNamedTypeRef]): IntrospectionUnionType = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], possibleTypes = possibleTypes.asInstanceOf[js.Any])
+  def apply(name: String, possibleTypes: js.Array[IntrospectionNamedTypeRef]): IntrospectionUnionType = {
+    val __obj = js.Dynamic.literal(kind = "UNION", name = name.asInstanceOf[js.Any], possibleTypes = possibleTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionUnionType]
   }
   

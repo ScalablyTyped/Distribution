@@ -3,48 +3,46 @@ package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommenderV1Insight extends StObject {
   
   /** Recommendations derived from this insight. */
-  var associatedRecommendations: js.UndefOr[js.Array[GoogleCloudRecommenderV1InsightRecommendationReference]] = js.native
+  var associatedRecommendations: js.UndefOr[js.Array[GoogleCloudRecommenderV1InsightRecommendationReference]] = js.undefined
   
   /** Category being targeted by the insight. */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /** A struct of custom fields to explain the insight. Example: "grantedPermissionsCount": "1000" */
   var content: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Insight with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Insight & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Free-form human readable summary in English. The maximum length is 500 characters. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Fingerprint of the Insight. Provides optimistic locking when updating states. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Insight subtype. Insight content schema will be stable for a given subtype. */
-  var insightSubtype: js.UndefOr[String] = js.native
+  var insightSubtype: js.UndefOr[String] = js.undefined
   
   /** Timestamp of the latest data used to generate the insight. */
-  var lastRefreshTime: js.UndefOr[String] = js.native
+  var lastRefreshTime: js.UndefOr[String] = js.undefined
   
   /** Name of the insight. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Observation period that led to the insight. The source data used to generate the insight ends at last_refresh_time and begins at (last_refresh_time - observation_period). */
-  var observationPeriod: js.UndefOr[String] = js.native
+  var observationPeriod: js.UndefOr[String] = js.undefined
   
   /** Information state and metadata. */
-  var stateInfo: js.UndefOr[GoogleCloudRecommenderV1InsightStateInfo] = js.native
+  var stateInfo: js.UndefOr[GoogleCloudRecommenderV1InsightStateInfo] = js.undefined
   
   /** Fully qualified resource names that this insight is targeting. */
-  var targetResources: js.UndefOr[js.Array[String]] = js.native
+  var targetResources: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleCloudRecommenderV1Insight {
   
@@ -76,7 +74,7 @@ object GoogleCloudRecommenderV1Insight {
     def setContent(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Insight with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Insight & TopLevel[js.Any]
     ): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline

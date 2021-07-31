@@ -5,7 +5,6 @@ import typings.gulpPugLinter.mod.GulpPugLinter.Options
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,12 +15,11 @@ object mod extends Shortcut {
   
   object GulpPugLinter {
     
-    @js.native
     trait Options extends StObject {
       
-      var failAfterError: js.UndefOr[Boolean] = js.native
+      var failAfterError: js.UndefOr[Boolean] = js.undefined
       
-      var reporter: js.UndefOr[js.Any] = js.native
+      var reporter: js.UndefOr[js.Any] = js.undefined
     }
     object Options {
       

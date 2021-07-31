@@ -2,23 +2,21 @@ package typings.instagramPrivateApi.directInboxFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectInboxFeedResponseFriendshipStatus extends StObject {
   
-  var blocking: Boolean = js.native
+  var blocking: Boolean
   
-  var following: Boolean = js.native
+  var following: Boolean
   
-  var incoming_request: Boolean = js.native
+  var incoming_request: Boolean
   
-  var is_bestie: Boolean = js.native
+  var is_bestie: Boolean
   
-  var is_private: Boolean = js.native
+  var is_private: Boolean
   
-  var outgoing_request: Boolean = js.native
+  var outgoing_request: Boolean
 }
 object DirectInboxFeedResponseFriendshipStatus {
   

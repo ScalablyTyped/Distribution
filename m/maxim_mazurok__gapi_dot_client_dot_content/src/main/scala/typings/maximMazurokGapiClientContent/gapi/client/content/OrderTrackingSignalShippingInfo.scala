@@ -2,56 +2,54 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderTrackingSignalShippingInfo extends StObject {
   
   /**
     * The time when the shipment was actually delivered. Include the year and timezone string, if available. This field is required, if one of the following fields is absent: tracking_id
     * or carrier_name.
     */
-  var actualDeliveryTime: js.UndefOr[DateTime] = js.native
+  var actualDeliveryTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name of the shipping carrier for the delivery. This field is required if one of the following fields is absent: earliest_delivery_promise_time, latest_delivery_promise_time, and
     * actual_delivery_time.
     */
-  var carrierName: js.UndefOr[String] = js.native
+  var carrierName: js.UndefOr[String] = js.undefined
   
   /** The service type for fulfillment, e.g., GROUND, FIRST_CLASS, etc. */
-  var carrierServiceName: js.UndefOr[String] = js.native
+  var carrierServiceName: js.UndefOr[String] = js.undefined
   
   /**
     * The earliest delivery promised time. Include the year and timezone string, if available. This field is required, if one of the following fields is absent: tracking_id or
     * carrier_name.
     */
-  var earliestDeliveryPromiseTime: js.UndefOr[DateTime] = js.native
+  var earliestDeliveryPromiseTime: js.UndefOr[DateTime] = js.undefined
   
   /** The latest delivery promised time. Include the year and timezone string, if available. This field is required, if one of the following fields is absent: tracking_id or carrier_name. */
-  var latestDeliveryPromiseTime: js.UndefOr[DateTime] = js.native
+  var latestDeliveryPromiseTime: js.UndefOr[DateTime] = js.undefined
   
   /** The origin postal code, as a continuous string without spaces or dashes, e.g. "95016". */
-  var originPostalCode: js.UndefOr[String] = js.native
+  var originPostalCode: js.UndefOr[String] = js.undefined
   
   /** The [CLDR territory code] (http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml) for the shipping origin. */
-  var originRegionCode: js.UndefOr[String] = js.native
+  var originRegionCode: js.UndefOr[String] = js.undefined
   
   /** Required. The shipment ID. */
-  var shipmentId: js.UndefOr[String] = js.native
+  var shipmentId: js.UndefOr[String] = js.undefined
   
   /** The time when the shipment was shipped. Include the year and timezone string, if available. */
-  var shippedTime: js.UndefOr[DateTime] = js.native
+  var shippedTime: js.UndefOr[DateTime] = js.undefined
   
   /** The status of the shipment. */
-  var shippingStatus: js.UndefOr[String] = js.native
+  var shippingStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The tracking ID of the shipment. This field is required if one of the following fields is absent: earliest_delivery_promise_time, latest_delivery_promise_time, and
     * actual_delivery_time.
     */
-  var trackingId: js.UndefOr[String] = js.native
+  var trackingId: js.UndefOr[String] = js.undefined
 }
 object OrderTrackingSignalShippingInfo {
   

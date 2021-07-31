@@ -2,26 +2,24 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetDBParameterGroupMessage extends StObject {
   
   /**
     * The name of the DB parameter group. Constraints:   Must match the name of an existing DBParameterGroup.  
     */
-  var DBParameterGroupName: String = js.native
+  var DBParameterGroupName: String
   
   /**
     * To reset the entire DB parameter group, specify the DBParameterGroup name and ResetAllParameters parameters. To reset specific parameters, provide a list of the following: ParameterName and ApplyMethod. A maximum of 20 parameters can be modified in a single request. Valid Values (for Apply method): pending-reboot 
     */
-  var Parameters: js.UndefOr[ParametersList] = js.native
+  var Parameters: js.UndefOr[ParametersList] = js.undefined
   
   /**
     * Specifies whether (true) or not (false) to reset all parameters in the DB parameter group to default values. Default: true 
     */
-  var ResetAllParameters: js.UndefOr[Boolean] = js.native
+  var ResetAllParameters: js.UndefOr[Boolean] = js.undefined
 }
 object ResetDBParameterGroupMessage {
   

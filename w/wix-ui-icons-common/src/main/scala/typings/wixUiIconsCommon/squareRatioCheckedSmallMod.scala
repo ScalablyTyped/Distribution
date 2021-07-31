@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object squareRatioCheckedSmallMod extends Shortcut {
@@ -15,10 +14,11 @@ object squareRatioCheckedSmallMod extends Shortcut {
   @js.native
   val default: SFC[SquareRatioCheckedSmallProps] = js.native
   
-  @js.native
-  trait SquareRatioCheckedSmallProps extends SVGAttributes[SVGElement] {
+  trait SquareRatioCheckedSmallProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object SquareRatioCheckedSmallProps {
     

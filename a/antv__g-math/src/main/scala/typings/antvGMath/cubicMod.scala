@@ -4,7 +4,6 @@ import typings.antvGMath.typesMod.BBox
 import typings.antvGMath.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cubicMod {
@@ -15,12 +14,10 @@ object cubicMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@antv/g-math/lib/cubic", "default.box")
-    @js.native
-    def box(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): BBox = js.native
+    @scala.inline
+    def box(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): BBox = (^.asInstanceOf[js.Dynamic].applyDynamic("box")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any])).asInstanceOf[BBox]
     
-    @JSImport("@antv/g-math/lib/cubic", "default.divide")
-    @js.native
+    @scala.inline
     def divide(
       x1: Double,
       y1: Double,
@@ -31,14 +28,13 @@ object cubicMod {
       x4: Double,
       y4: Double,
       t: Double
-    ): js.Array[js.Array[Double]] = js.native
+    ): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("divide")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
     
     @JSImport("@antv/g-math/lib/cubic", "default.extrema")
     @js.native
     def extrema: js.Function4[/* p0 */ Double, /* p1 */ Double, /* p2 */ Double, /* p3 */ Double, js.Array[js.Any]] = js.native
-    @JSImport("@antv/g-math/lib/cubic", "default.extrema")
-    @js.native
-    def extrema(p0: Double, p1: Double, p2: Double, p3: Double): js.Array[_] = js.native
+    @scala.inline
+    def extrema(p0: Double, p1: Double, p2: Double, p3: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("extrema")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     @scala.inline
     def extrema_=(
       x: js.Function4[/* p0 */ Double, /* p1 */ Double, /* p2 */ Double, /* p3 */ Double, js.Array[js.Any]]
@@ -47,20 +43,17 @@ object cubicMod {
     @JSImport("@antv/g-math/lib/cubic", "default.interpolationAt")
     @js.native
     def interpolationAt: js.Function5[/* p0 */ Double, /* p1 */ Double, /* p2 */ Double, /* p3 */ Double, /* t */ Double, Double] = js.native
-    @JSImport("@antv/g-math/lib/cubic", "default.interpolationAt")
-    @js.native
-    def interpolationAt(p0: Double, p1: Double, p2: Double, p3: Double, t: Double): Double = js.native
+    @scala.inline
+    def interpolationAt(p0: Double, p1: Double, p2: Double, p3: Double, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolationAt")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
     @scala.inline
     def interpolationAt_=(
       x: js.Function5[/* p0 */ Double, /* p1 */ Double, /* p2 */ Double, /* p3 */ Double, /* t */ Double, Double]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("interpolationAt")(x.asInstanceOf[js.Any])
     
-    @JSImport("@antv/g-math/lib/cubic", "default.length")
-    @js.native
-    def length(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): js.Any = js.native
+    @scala.inline
+    def length(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("length")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("@antv/g-math/lib/cubic", "default.nearestPoint")
-    @js.native
+    @scala.inline
     def nearestPoint(
       x1: Double,
       y1: Double,
@@ -72,9 +65,8 @@ object cubicMod {
       y4: Double,
       x0: Double,
       y0: Double
-    ): Point = js.native
-    @JSImport("@antv/g-math/lib/cubic", "default.nearestPoint")
-    @js.native
+    ): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestPoint")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Point]
+    @scala.inline
     def nearestPoint(
       x1: Double,
       y1: Double,
@@ -87,10 +79,9 @@ object cubicMod {
       x0: Double,
       y0: Double,
       length: Double
-    ): Point = js.native
+    ): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestPoint")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Point]
     
-    @JSImport("@antv/g-math/lib/cubic", "default.pointAt")
-    @js.native
+    @scala.inline
     def pointAt(
       x1: Double,
       y1: Double,
@@ -101,10 +92,9 @@ object cubicMod {
       x4: Double,
       y4: Double,
       t: Double
-    ): Point = js.native
+    ): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAt")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Point]
     
-    @JSImport("@antv/g-math/lib/cubic", "default.pointDistance")
-    @js.native
+    @scala.inline
     def pointDistance(
       x1: Double,
       y1: Double,
@@ -116,9 +106,8 @@ object cubicMod {
       y4: Double,
       x0: Double,
       y0: Double
-    ): Double = js.native
-    @JSImport("@antv/g-math/lib/cubic", "default.pointDistance")
-    @js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pointDistance")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
     def pointDistance(
       x1: Double,
       y1: Double,
@@ -131,10 +120,9 @@ object cubicMod {
       x0: Double,
       y0: Double,
       length: Double
-    ): Double = js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pointDistance")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("@antv/g-math/lib/cubic", "default.tangentAngle")
-    @js.native
+    @scala.inline
     def tangentAngle(
       x1: Double,
       y1: Double,
@@ -145,6 +133,6 @@ object cubicMod {
       x4: Double,
       y4: Double,
       t: Double
-    ): Double = js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tangentAngle")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

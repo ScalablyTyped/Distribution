@@ -5,25 +5,23 @@ import typings.parquetjs.anon.Codec
 import typings.parquetjs.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataInterfaceMod {
   
-  @js.native
   trait MetadataInterface extends StObject {
     
-    var created_by: String = js.native
+    var created_by: String
     
-    var key_value_metadata: js.Array[Key] = js.native
+    var key_value_metadata: js.Array[Key]
     
-    var num_rows: ^ = js.native
+    var num_rows: ^
     
-    var row_groups: js.Array[MetadataRowGroupsInterface] = js.native
+    var row_groups: js.Array[MetadataRowGroupsInterface]
     
-    var schema: js.Array[MetadataSchemaInterface] = js.native
+    var schema: js.Array[MetadataSchemaInterface]
     
-    var version: Double = js.native
+    var version: Double
   }
   object MetadataInterface {
     
@@ -72,20 +70,19 @@ object metadataInterfaceMod {
     }
   }
   
-  @js.native
   trait MetadataRowGroupsColumnsInterface extends StObject {
     
-    var file_offset: ^ = js.native
+    var file_offset: ^
     
-    var file_path: String | Null = js.native
+    var file_path: String | Null
     
-    var meta_data: Codec = js.native
+    var meta_data: Codec
   }
   object MetadataRowGroupsColumnsInterface {
     
     @scala.inline
     def apply(file_offset: ^, meta_data: Codec): MetadataRowGroupsColumnsInterface = {
-      val __obj = js.Dynamic.literal(file_offset = file_offset.asInstanceOf[js.Any], meta_data = meta_data.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(file_offset = file_offset.asInstanceOf[js.Any], meta_data = meta_data.asInstanceOf[js.Any], file_path = null)
       __obj.asInstanceOf[MetadataRowGroupsColumnsInterface]
     }
     
@@ -106,22 +103,21 @@ object metadataInterfaceMod {
     }
   }
   
-  @js.native
   trait MetadataRowGroupsInterface extends StObject {
     
-    var columns: js.Array[MetadataRowGroupsColumnsInterface] = js.native
+    var columns: js.Array[MetadataRowGroupsColumnsInterface]
     
-    var num_rows: ^ = js.native
+    var num_rows: ^
     
-    var sorting_columns: (js.Array[js.Array[String] | String]) | Null = js.native
+    var sorting_columns: (js.Array[js.Array[String] | String]) | Null
     
-    var total_byte_size: ^ = js.native
+    var total_byte_size: ^
   }
   object MetadataRowGroupsInterface {
     
     @scala.inline
     def apply(columns: js.Array[MetadataRowGroupsColumnsInterface], num_rows: ^, total_byte_size: ^): MetadataRowGroupsInterface = {
-      val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], num_rows = num_rows.asInstanceOf[js.Any], total_byte_size = total_byte_size.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], num_rows = num_rows.asInstanceOf[js.Any], total_byte_size = total_byte_size.asInstanceOf[js.Any], sorting_columns = null)
       __obj.asInstanceOf[MetadataRowGroupsInterface]
     }
     
@@ -151,32 +147,32 @@ object metadataInterfaceMod {
     }
   }
   
-  @js.native
   trait MetadataSchemaInterface extends StObject {
     
-    var converted_type: String | Null = js.native
+    var converted_type: String | Null
     
-    var field_id: Double | Null = js.native
+    var field_id: Double | Null
     
-    var name: String = js.native
+    var name: String
     
-    var num_children: Double | Null = js.native
+    var num_children: Double | Null
     
-    var precision: Double | Null = js.native
+    var precision: Double | Null
     
-    var repetition_type: String | Null = js.native
+    var repetition_type: String | Null
     
-    var scale: Double | Null = js.native
+    var scale: Double | Null
     
-    var `type`: Double | Null = js.native
+    var `type`: Double | Null
     
-    var type_length: Double | Null = js.native
+    var type_length: Double | Null
   }
   object MetadataSchemaInterface {
     
     @scala.inline
     def apply(name: String): MetadataSchemaInterface = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], converted_type = null, field_id = null, num_children = null, precision = null, repetition_type = null, scale = null, type_length = null)
+      __obj.updateDynamic("type")(null)
       __obj.asInstanceOf[MetadataSchemaInterface]
     }
     

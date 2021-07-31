@@ -2,42 +2,40 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorCheckingOptions extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var BackgroundChecking: Boolean = js.native
+  var BackgroundChecking: Boolean
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  var EmptyCellReferences: Boolean = js.native
+  var EmptyCellReferences: Boolean
   
-  var EvaluateToError: Boolean = js.native
+  var EvaluateToError: Boolean
   
   @JSName("Excel.ErrorCheckingOptions_typekey")
-  var ExcelDotErrorCheckingOptions_typekey: ErrorCheckingOptions = js.native
+  var ExcelDotErrorCheckingOptions_typekey: ErrorCheckingOptions
   
-  var InconsistentFormula: Boolean = js.native
+  var InconsistentFormula: Boolean
   
-  var InconsistentTableFormula: Boolean = js.native
+  var InconsistentTableFormula: Boolean
   
-  var IndicatorColorIndex: XlColorIndex = js.native
+  var IndicatorColorIndex: XlColorIndex
   
-  var ListDataValidation: Boolean = js.native
+  var ListDataValidation: Boolean
   
-  var NumberAsText: Boolean = js.native
+  var NumberAsText: Boolean
   
-  var OmittedCells: Boolean = js.native
+  var OmittedCells: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var TextDate: Boolean = js.native
+  var TextDate: Boolean
   
-  var UnlockedFormulaCells: Boolean = js.native
+  var UnlockedFormulaCells: Boolean
 }
 object ErrorCheckingOptions {
   

@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.lex
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntentFulfillmentActivityCodeHook extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait IntentFulfillmentActivityCodeHook extends StObject {
     * to invoke your Lambda function. For more information, see
     * [Using Lambda Functions](https://docs.aws.amazon.com/lex/latest/dg/using-lambda.html). Must be less than or equal to 5 characters in length.
     */
-  var messageVersion: String = js.native
+  var messageVersion: String
   
   /**
     * The Amazon Resource Name (ARN) of the Lambda function.
     */
-  var uri: String = js.native
+  var uri: String
 }
 object IntentFulfillmentActivityCodeHook {
   

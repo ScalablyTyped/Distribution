@@ -11,7 +11,6 @@ import typings.reactNativeWheelPick.reactNativeWheelPickStrings.time
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -40,28 +39,29 @@ object mod {
     def this(props: PickerProps[T], context: js.Any) = this()
   }
   
-  @js.native
-  trait DatePickerAndroidProps extends ViewProps {
+  trait DatePickerAndroidProps
+    extends StObject
+       with ViewProps {
     
-    var date: js.UndefOr[Date] = js.native
+    var date: js.UndefOr[Date] = js.undefined
     
-    var itemSpace: js.UndefOr[Double] = js.native
+    var itemSpace: js.UndefOr[Double] = js.undefined
     
-    var labelUnit: js.UndefOr[typings.reactNativeWheelPick.anon.Date] = js.native
+    var labelUnit: js.UndefOr[typings.reactNativeWheelPick.anon.Date] = js.undefined
     
-    var maximumDate: js.UndefOr[Date] = js.native
+    var maximumDate: js.UndefOr[Date] = js.undefined
     
-    var minimumDate: js.UndefOr[Date] = js.native
+    var minimumDate: js.UndefOr[Date] = js.undefined
     
-    var mode: js.UndefOr[date | time | datetime] = js.native
+    var mode: js.UndefOr[date | time | datetime] = js.undefined
     
-    def onDateChange(newDate: Date): Unit = js.native
+    def onDateChange(newDate: Date): Unit
     
-    var order: js.UndefOr[String] = js.native
+    var order: js.UndefOr[String] = js.undefined
     
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
     
-    var textSize: js.UndefOr[Double] = js.native
+    var textSize: js.UndefOr[Double] = js.undefined
   }
   object DatePickerAndroidProps {
     
@@ -133,18 +133,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait DatePickerIOSProps extends ViewProps {
+  trait DatePickerIOSProps
+    extends StObject
+       with ViewProps {
     
-    var date: js.UndefOr[Date] = js.native
+    var date: js.UndefOr[Date] = js.undefined
     
-    var maximumDate: js.UndefOr[Date] = js.native
+    var maximumDate: js.UndefOr[Date] = js.undefined
     
-    var minimumDate: js.UndefOr[Date] = js.native
+    var minimumDate: js.UndefOr[Date] = js.undefined
     
-    var mode: js.UndefOr[date | time | datetime] = js.native
+    var mode: js.UndefOr[date | time | datetime] = js.undefined
     
-    def onDateChange(newDate: Date): Unit = js.native
+    def onDateChange(newDate: Date): Unit
   }
   object DatePickerIOSProps {
     
@@ -187,17 +188,22 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.reactNative.mod.TVViewPropsIOS because Already inherited
+  - scala.Any because Already inherited
+  - scala.AnyRef because Already inherited
   - typings.reactNative.mod.AccessibilityPropsIOS because Already inherited
   - typings.reactNative.mod.AccessibilityPropsAndroid because Already inherited
+  - typings.reactNative.mod.TVViewPropsIOS because Already inherited
+  - js.Any because Already inherited
+  - typings.reactNative.mod.AccessibilityProps because Already inherited
   - typings.reactNative.mod.Touchable because Already inherited
   - typings.reactNative.mod.GestureResponderHandlers because Already inherited
   - typings.reactNative.mod.ViewPropsIOS because Already inherited
   - typings.reactNative.mod.ViewPropsAndroid because Already inherited
-  - typings.reactNative.mod.AccessibilityProps because Already inherited
+  - js.Object because Already inherited
   - typings.reactNative.mod.ViewProps because Already inherited
-  - typings.reactNativeWheelPick.mod.DatePickerIOSProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, collapsable, date, focusable, hasTVPreferredFocus, hitSlop, importantForAccessibility, isTVSelectable, maximumDate, minimumDate, mode, nativeID, needsOffscreenAlphaCompositing, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, onTouchCancel, onTouchEnd, onTouchEndCapture, onTouchMove, onTouchStart, pointerEvents, removeClippedSubviews, renderToHardwareTextureAndroid, shouldRasterizeIOS, style, testID, tvParallaxMagnification, tvParallaxProperties, tvParallaxShiftDistanceX, tvParallaxShiftDistanceY, tvParallaxTiltAngle. Inlined  */ @js.native
-  trait DatePickerProps extends DatePickerAndroidProps
+  - typings.reactNativeWheelPick.mod.DatePickerIOSProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, collapsable, date, focusable, hasTVPreferredFocus, hitSlop, importantForAccessibility, isTVSelectable, maximumDate, minimumDate, mode, nativeID, needsOffscreenAlphaCompositing, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, onTouchCancel, onTouchEnd, onTouchEndCapture, onTouchMove, onTouchStart, pointerEvents, removeClippedSubviews, renderToHardwareTextureAndroid, shouldRasterizeIOS, style, testID, tvParallaxMagnification, tvParallaxProperties, tvParallaxShiftDistanceX, tvParallaxShiftDistanceY, tvParallaxTiltAngle. Inlined  */ trait DatePickerProps
+    extends StObject
+       with DatePickerAndroidProps
   object DatePickerProps {
     
     @scala.inline
@@ -207,22 +213,23 @@ object mod {
     }
   }
   
-  @js.native
-  trait PickerProps[T] extends ViewProps {
+  trait PickerProps[T]
+    extends StObject
+       with ViewProps {
     
-    var itemSpace: js.UndefOr[Double] = js.native
+    var itemSpace: js.UndefOr[Double] = js.undefined
     
-    var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    def onValueChange(value: T): Unit = js.native
+    def onValueChange(value: T): Unit
     
-    var pickerData: js.Array[T] = js.native
+    var pickerData: js.Array[T]
     
-    var selectedValue: js.UndefOr[T] = js.native
+    var selectedValue: js.UndefOr[T] = js.undefined
     
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
     
-    var textSize: js.UndefOr[Double] = js.native
+    var textSize: js.UndefOr[Double] = js.undefined
   }
   object PickerProps {
     
@@ -233,7 +240,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PickerPropsMutableBuilder[Self <: PickerProps[_], T] (val x: Self with PickerProps[T]) extends AnyVal {
+    implicit class PickerPropsMutableBuilder[Self <: PickerProps[?], T] (val x: Self & PickerProps[T]) extends AnyVal {
       
       @scala.inline
       def setItemSpace(value: Double): Self = StObject.set(x, "itemSpace", value.asInstanceOf[js.Any])

@@ -2,19 +2,17 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowSize extends StObject {
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var idx: js.UndefOr[Double] = js.native
+  var idx: js.UndefOr[Double] = js.undefined
   
-  var measure: js.UndefOr[MeasureObject] = js.native
+  var measure: js.UndefOr[MeasureObject] = js.undefined
   
-  var tuple: js.UndefOr[js.Array[String]] = js.native
+  var tuple: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RowSize {
   

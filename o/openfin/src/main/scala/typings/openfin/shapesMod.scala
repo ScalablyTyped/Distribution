@@ -2,7 +2,6 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shapesMod {
@@ -29,20 +28,19 @@ object shapesMod {
     def `top-right`: typings.openfin.openfinStrings.`top-right` = "top-right".asInstanceOf[typings.openfin.openfinStrings.`top-right`]
   }
   
-  @js.native
   trait Bounds extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Bounds {
     
@@ -81,14 +79,13 @@ object shapesMod {
     }
   }
   
-  @js.native
   trait ContextMenuSettings extends StObject {
     
-    var devtools: js.UndefOr[Boolean] = js.native
+    var devtools: js.UndefOr[Boolean] = js.undefined
     
-    var enable: Boolean = js.native
+    var enable: Boolean
     
-    var reload: js.UndefOr[Boolean] = js.native
+    var reload: js.UndefOr[Boolean] = js.undefined
   }
   object ContextMenuSettings {
     
@@ -118,12 +115,11 @@ object shapesMod {
     }
   }
   
-  @js.native
   trait Hotkey extends StObject {
     
-    var keys: String = js.native
+    var keys: String
     
-    var preventDefault: js.UndefOr[Boolean] = js.native
+    var preventDefault: js.UndefOr[Boolean] = js.undefined
   }
   object Hotkey {
     
@@ -147,10 +143,11 @@ object shapesMod {
     }
   }
   
-  @js.native
-  trait Opacity extends TransitionBase {
+  trait Opacity
+    extends StObject
+       with TransitionBase {
     
-    var opacity: Double = js.native
+    var opacity: Double
   }
   object Opacity {
     
@@ -168,12 +165,13 @@ object shapesMod {
     }
   }
   
-  @js.native
-  trait Position extends TransitionBase {
+  trait Position
+    extends StObject
+       with TransitionBase {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Position {
     
@@ -194,14 +192,13 @@ object shapesMod {
     }
   }
   
-  @js.native
   trait RGB extends StObject {
     
-    var blue: Double = js.native
+    var blue: Double
     
-    var green: Double = js.native
+    var green: Double
     
-    var red: Double = js.native
+    var red: Double
   }
   object RGB {
     
@@ -225,10 +222,11 @@ object shapesMod {
     }
   }
   
-  @js.native
-  trait ShortcutOverride extends Hotkey {
+  trait ShortcutOverride
+    extends StObject
+       with Hotkey {
     
-    var command: String = js.native
+    var command: String
   }
   object ShortcutOverride {
     
@@ -246,12 +244,13 @@ object shapesMod {
     }
   }
   
-  @js.native
-  trait Size extends TransitionBase {
+  trait Size
+    extends StObject
+       with TransitionBase {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Size {
     
@@ -272,14 +271,13 @@ object shapesMod {
     }
   }
   
-  @js.native
   trait Transition extends StObject {
     
-    var opacity: js.UndefOr[Opacity] = js.native
+    var opacity: js.UndefOr[Opacity] = js.undefined
     
-    var position: js.UndefOr[Position] = js.native
+    var position: js.UndefOr[Position] = js.undefined
     
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
   }
   object Transition {
     
@@ -312,12 +310,11 @@ object shapesMod {
     }
   }
   
-  @js.native
   trait TransitionBase extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var relative: js.UndefOr[Boolean] = js.native
+    var relative: js.UndefOr[Boolean] = js.undefined
   }
   object TransitionBase {
     
@@ -341,12 +338,11 @@ object shapesMod {
     }
   }
   
-  @js.native
   trait TransitionOptions extends StObject {
     
-    var interrupt: Boolean = js.native
+    var interrupt: Boolean
     
-    var tween: js.UndefOr[String] = js.native
+    var tween: js.UndefOr[String] = js.undefined
   }
   object TransitionOptions {
     
@@ -371,16 +367,15 @@ object shapesMod {
   }
   
   /* Inlined std.Pick<openfin.openfin/_v2/shapes/shapes.Bounds, std.Exclude<keyof openfin.openfin/_v2/shapes/shapes.Bounds, 'right' | 'bottom'>> */
-  @js.native
   trait ViewBounds extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object ViewBounds {
     

@@ -5,7 +5,6 @@ import typings.react.mod.PureComponent
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorBoundaryMod {
@@ -37,16 +36,15 @@ object errorBoundaryMod {
     def onError(error: Error, componentStack: String): Unit = js.native
   }
   
-  @js.native
   trait ErrorBoundaryState extends StObject {
     
-    var error: Error | Null = js.native
+    var error: Error | Null
   }
   object ErrorBoundaryState {
     
     @scala.inline
     def apply(): ErrorBoundaryState = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(error = null)
       __obj.asInstanceOf[ErrorBoundaryState]
     }
     

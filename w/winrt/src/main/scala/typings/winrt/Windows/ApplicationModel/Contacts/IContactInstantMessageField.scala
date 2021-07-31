@@ -3,19 +3,19 @@ package typings.winrt.Windows.ApplicationModel.Contacts
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IContactInstantMessageField extends IContactField {
+trait IContactInstantMessageField
+  extends StObject
+     with IContactField {
   
-  var displayText: String = js.native
+  var displayText: String
   
-  var launchUri: Uri = js.native
+  var launchUri: Uri
   
-  var service: String = js.native
+  var service: String
   
-  var userName: String = js.native
+  var userName: String
 }
 object IContactInstantMessageField {
   

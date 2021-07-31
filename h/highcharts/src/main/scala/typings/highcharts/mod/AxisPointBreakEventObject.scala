@@ -4,21 +4,19 @@ import typings.highcharts.highchartsStrings.pointBreak
 import typings.highcharts.highchartsStrings.pointInBreak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisPointBreakEventObject extends StObject {
   
-  var brk: Dictionary[Double] = js.native
+  var brk: Dictionary[Double]
   
-  var point: Point = js.native
+  var point: Point
   
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
-  var target: SVGElement = js.native
+  var target: SVGElement
   
-  var `type`: pointBreak | pointInBreak = js.native
+  var `type`: pointBreak | pointInBreak
 }
 object AxisPointBreakEventObject {
   

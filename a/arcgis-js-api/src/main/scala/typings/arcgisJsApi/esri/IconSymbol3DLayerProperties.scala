@@ -12,11 +12,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.right
 import typings.arcgisJsApi.arcgisJsApiStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IconSymbol3DLayerProperties extends Symbol3DLayerProperties {
+trait IconSymbol3DLayerProperties
+  extends StObject
+     with Symbol3DLayerProperties {
   
   /**
     * The positioning of the icon relative to the geometry.
@@ -25,42 +25,42 @@ trait IconSymbol3DLayerProperties extends Symbol3DLayerProperties {
     */
   var anchor: js.UndefOr[
     center | left | right | top | bottom | `top-left` | `top-right` | `bottom-left` | `bottom-right` | relative
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Defines the [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchor) relative to the center of the icon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchorPosition)
     */
-  var anchorPosition: js.UndefOr[IconSymbol3DLayerAnchorPosition] = js.native
+  var anchorPosition: js.UndefOr[IconSymbol3DLayerAnchorPosition] = js.undefined
   
   /**
     * The material used to shade the icon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#material)
     */
-  var material: js.UndefOr[IconSymbol3DLayerMaterialProperties] = js.native
+  var material: js.UndefOr[IconSymbol3DLayerMaterialProperties] = js.undefined
   
   /**
     * The outline of the icon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#outline)
     */
-  var outline: js.UndefOr[IconSymbol3DLayerOutlineProperties] = js.native
+  var outline: js.UndefOr[IconSymbol3DLayerOutlineProperties] = js.undefined
   
   /**
     * The shape (`primitive`) or image URL (`href`) used to visualize the features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#resource)
     */
-  var resource: js.UndefOr[IconSymbol3DLayerResource] = js.native
+  var resource: js.UndefOr[IconSymbol3DLayerResource] = js.undefined
   
   /**
     * The size of the icon in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#size)
     */
-  var size: js.UndefOr[Double | String] = js.native
+  var size: js.UndefOr[Double | String] = js.undefined
 }
 object IconSymbol3DLayerProperties {
   

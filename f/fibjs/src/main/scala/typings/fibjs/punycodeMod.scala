@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,19 +11,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object punycodeMod {
   
-  @JSImport("punycode", "decode")
+  @JSImport("punycode", JSImport.Namespace)
   @js.native
-  def decode(domain: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("punycode", "encode")
-  @js.native
-  def encode(domain: String): String = js.native
+  @scala.inline
+  def decode(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("punycode", "toASCII")
-  @js.native
-  def toASCII(domain: String): String = js.native
+  @scala.inline
+  def encode(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("punycode", "toUnicode")
-  @js.native
-  def toUnicode(domain: String): String = js.native
+  @scala.inline
+  def toASCII(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toASCII")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def toUnicode(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUnicode")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
 }

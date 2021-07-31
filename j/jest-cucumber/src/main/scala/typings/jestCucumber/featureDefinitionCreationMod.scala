@@ -1,18 +1,19 @@
 package typings.jestCucumber
 
-import typings.jestCucumber.anon.Concurrent
 import typings.jestCucumber.modelsMod.ParsedFeature
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object featureDefinitionCreationMod {
   
-  @JSImport("jest-cucumber/dist/src/feature-definition-creation", "defineFeature")
+  @JSImport("jest-cucumber/dist/src/feature-definition-creation", JSImport.Namespace)
   @js.native
-  def defineFeature(featureFromFile: ParsedFeature, scenariosDefinitionCallback: ScenariosDefinitionCallbackFunction): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def defineFeature(featureFromFile: ParsedFeature, scenariosDefinitionCallback: ScenariosDefinitionCallbackFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineFeature")(featureFromFile.asInstanceOf[js.Any], scenariosDefinitionCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type DefineScenarioFunction = js.Function3[
     /* scenarioTitle */ String, 
@@ -21,7 +22,15 @@ object featureDefinitionCreationMod {
     Unit
   ]
   
-  type DefineScenarioFunctionWithAliases = DefineScenarioFunction with Concurrent
+  @js.native
+  trait DefineScenarioFunctionWithAliases extends DefineScenarioFunction {
+    
+    var concurrent: DefineScenarioFunction = js.native
+    
+    var only: DefineScenarioFunction = js.native
+    
+    var skip: DefineScenarioFunction = js.native
+  }
   
   type DefineStepFunction = js.Function2[
     /* stepMatcher */ String | RegExp, 
@@ -33,22 +42,21 @@ object featureDefinitionCreationMod {
   
   type StepsDefinitionCallbackFunction = js.Function1[/* options */ StepsDefinitionCallbackOptions, Unit]
   
-  @js.native
   trait StepsDefinitionCallbackOptions extends StObject {
     
-    var and: DefineStepFunction = js.native
+    var and: DefineStepFunction
     
-    var but: DefineStepFunction = js.native
+    var but: DefineStepFunction
     
-    var defineStep: DefineStepFunction = js.native
+    var defineStep: DefineStepFunction
     
-    var given: DefineStepFunction = js.native
+    var `given`: DefineStepFunction
     
-    def pending(): Unit = js.native
+    def pending(): Unit
     
-    var `then`: DefineStepFunction = js.native
+    var `then`: DefineStepFunction
     
-    var when: DefineStepFunction = js.native
+    var when: DefineStepFunction
   }
   object StepsDefinitionCallbackOptions {
     
@@ -57,12 +65,13 @@ object featureDefinitionCreationMod {
       and: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any,
       but: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any,
       defineStep: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any,
-      given: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any,
+      `given`: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any,
       pending: () => Unit,
       `then`: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any,
       when: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any
     ): StepsDefinitionCallbackOptions = {
-      val __obj = js.Dynamic.literal(and = js.Any.fromFunction2(and), but = js.Any.fromFunction2(but), defineStep = js.Any.fromFunction2(defineStep), given = js.Any.fromFunction2(given), pending = js.Any.fromFunction0(pending), when = js.Any.fromFunction2(when))
+      val __obj = js.Dynamic.literal(and = js.Any.fromFunction2(and), but = js.Any.fromFunction2(but), defineStep = js.Any.fromFunction2(defineStep), pending = js.Any.fromFunction0(pending), when = js.Any.fromFunction2(when))
+      __obj.updateDynamic("given")(js.Any.fromFunction2(`given`))
       __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
       __obj.asInstanceOf[StepsDefinitionCallbackOptions]
     }

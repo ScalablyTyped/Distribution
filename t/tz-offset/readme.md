@@ -11,8 +11,8 @@ Javascript Timezone Offset
 | Full name          | tz-offset |
 | Keywords           | timezone, offset, time, zone |
 | # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 3928638 |
+| # dependents       | 12 |
+| # downloads        | 14105729 |
 | # stars            | 0 |
 
 ## Links

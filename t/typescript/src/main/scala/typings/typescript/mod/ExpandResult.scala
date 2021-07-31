@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpandResult extends StObject {
   
-  var fileNames: js.Array[java.lang.String] = js.native
+  var fileNames: js.Array[java.lang.String]
   
-  var wildcardDirectories: MapLike[WatchDirectoryFlags] = js.native
+  var wildcardDirectories: MapLike[WatchDirectoryFlags]
 }
 object ExpandResult {
   

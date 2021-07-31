@@ -8,7 +8,6 @@ import typings.node.fsMod.BufferEncodingOption
 import typings.node.fsMod.PathLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,17 +19,17 @@ trait Typeofreadlink extends StObject {
   ): Unit = js.native
   def apply(
     path: PathLike,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* linkString */ String), Unit]
-  ): Unit = js.native
-  def apply(
-    path: PathLike,
     options: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String | Buffer, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     options: Null,
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* linkString */ String), Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    options: Unit,
     callback: js.Function2[ErrnoException | Null, Buffer | (/* linkString */ String), Unit]
   ): Unit = js.native
   def apply(

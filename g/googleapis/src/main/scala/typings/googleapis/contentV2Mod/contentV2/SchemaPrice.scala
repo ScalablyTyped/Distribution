@@ -2,21 +2,19 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPrice extends StObject {
   
   /**
     * The currency of the price.
     */
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
   /**
     * The price represented as a number.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaPrice {
   

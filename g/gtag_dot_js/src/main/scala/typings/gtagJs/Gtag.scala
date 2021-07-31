@@ -8,21 +8,19 @@ import typings.gtagJs.gtagJsStrings.set
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Gtag {
   
-  @js.native
   trait ControlParams extends StObject {
     
-    var event_callback: js.UndefOr[js.Function0[Unit]] = js.native
+    var event_callback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var event_timeout: js.UndefOr[Double] = js.native
+    var event_timeout: js.UndefOr[Double] = js.undefined
     
-    var groups: js.UndefOr[String | js.Array[String]] = js.native
+    var groups: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var send_to: js.UndefOr[String | js.Array[String]] = js.native
+    var send_to: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object ControlParams {
     
@@ -169,48 +167,47 @@ object Gtag {
     def view_search_results: typings.gtagJs.gtagJsStrings.view_search_results = "view_search_results".asInstanceOf[typings.gtagJs.gtagJsStrings.view_search_results]
   }
   
-  @js.native
   trait EventParams extends StObject {
     
-    var checkout_option: js.UndefOr[String] = js.native
+    var checkout_option: js.UndefOr[String] = js.undefined
     
-    var checkout_step: js.UndefOr[Double] = js.native
+    var checkout_step: js.UndefOr[Double] = js.undefined
     
-    var content_id: js.UndefOr[String] = js.native
+    var content_id: js.UndefOr[String] = js.undefined
     
-    var content_type: js.UndefOr[String] = js.native
+    var content_type: js.UndefOr[String] = js.undefined
     
-    var coupon: js.UndefOr[String] = js.native
+    var coupon: js.UndefOr[String] = js.undefined
     
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var event_category: js.UndefOr[String] = js.native
+    var event_category: js.UndefOr[String] = js.undefined
     
-    var event_label: js.UndefOr[String] = js.native
+    var event_label: js.UndefOr[String] = js.undefined
     
-    var fatal: js.UndefOr[Boolean] = js.native
+    var fatal: js.UndefOr[Boolean] = js.undefined
     
-    var items: js.UndefOr[js.Array[Item]] = js.native
+    var items: js.UndefOr[js.Array[Item]] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var number: js.UndefOr[String] = js.native
+    var number: js.UndefOr[String] = js.undefined
     
-    var promotions: js.UndefOr[js.Array[Promotion]] = js.native
+    var promotions: js.UndefOr[js.Array[Promotion]] = js.undefined
     
-    var screen_name: js.UndefOr[String] = js.native
+    var screen_name: js.UndefOr[String] = js.undefined
     
-    var search_term: js.UndefOr[String] = js.native
+    var search_term: js.UndefOr[String] = js.undefined
     
-    var shipping: js.UndefOr[Currency] = js.native
+    var shipping: js.UndefOr[Currency] = js.undefined
     
-    var tax: js.UndefOr[Currency] = js.native
+    var tax: js.UndefOr[Currency] = js.undefined
     
-    var transaction_id: js.UndefOr[String] = js.native
+    var transaction_id: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object EventParams {
     
@@ -370,26 +367,25 @@ object Gtag {
     def apply(command: set, config: CustomParams): Unit = js.native
   }
   
-  @js.native
   trait Item extends StObject {
     
-    var brand: js.UndefOr[String] = js.native
+    var brand: js.UndefOr[String] = js.undefined
     
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var creative_name: js.UndefOr[String] = js.native
+    var creative_name: js.UndefOr[String] = js.undefined
     
-    var creative_slot: js.UndefOr[String] = js.native
+    var creative_slot: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var location_id: js.UndefOr[String] = js.native
+    var location_id: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var price: js.UndefOr[Currency] = js.native
+    var price: js.UndefOr[Currency] = js.undefined
     
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
   }
   object Item {
     
@@ -458,16 +454,15 @@ object Gtag {
     }
   }
   
-  @js.native
   trait Promotion extends StObject {
     
-    var creative_name: js.UndefOr[String] = js.native
+    var creative_name: js.UndefOr[String] = js.undefined
     
-    var creative_slot: js.UndefOr[String] = js.native
+    var creative_slot: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Promotion {
     

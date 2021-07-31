@@ -3,15 +3,13 @@ package typings.node.fsMod
 import typings.node.NodeJS.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadVResult extends StObject {
   
-  var buffers: js.Array[ArrayBufferView] = js.native
+  var buffers: js.Array[ArrayBufferView]
   
-  var bytesRead: Double = js.native
+  var bytesRead: Double
 }
 object ReadVResult {
   

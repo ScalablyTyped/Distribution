@@ -13,17 +13,15 @@ import typings.std.HTMLVideoElement
 import typings.std.ImageBitmap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -45,42 +43,41 @@ object anon {
   }
   
   /* Inlined std.Partial<rot-js.rot-js/lib/display/types.DisplayOptions> */
-  @js.native
   trait PartialDisplayOptions extends StObject {
     
-    var bg: js.UndefOr[String] = js.native
+    var bg: js.UndefOr[String] = js.undefined
     
-    var border: js.UndefOr[Double] = js.native
+    var border: js.UndefOr[Double] = js.undefined
     
-    var fg: js.UndefOr[String] = js.native
+    var fg: js.UndefOr[String] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
-    var forceSquareRatio: js.UndefOr[Boolean] = js.native
+    var forceSquareRatio: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var layout: js.UndefOr[LayoutType] = js.native
+    var layout: js.UndefOr[LayoutType] = js.undefined
     
-    var spacing: js.UndefOr[Double] = js.native
+    var spacing: js.UndefOr[Double] = js.undefined
     
-    var tileColorize: js.UndefOr[Boolean] = js.native
+    var tileColorize: js.UndefOr[Boolean] = js.undefined
     
-    var tileHeight: js.UndefOr[Double] = js.native
+    var tileHeight: js.UndefOr[Double] = js.undefined
     
-    var tileMap: js.UndefOr[StringDictionary[js.Tuple2[Double, Double]]] = js.native
+    var tileMap: js.UndefOr[StringDictionary[js.Tuple2[Double, Double]]] = js.undefined
     
-    var tileSet: js.UndefOr[Null | HTMLCanvasElement | HTMLImageElement | HTMLVideoElement | ImageBitmap] = js.native
+    var tileSet: js.UndefOr[Null | HTMLCanvasElement | HTMLImageElement | HTMLVideoElement | ImageBitmap] = js.undefined
     
-    var tileWidth: js.UndefOr[Double] = js.native
+    var tileWidth: js.UndefOr[Double] = js.undefined
     
-    var transpose: js.UndefOr[Boolean] = js.native
+    var transpose: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PartialDisplayOptions {
     
@@ -201,10 +198,9 @@ object anon {
   }
   
   /* Inlined std.Partial<rot-js.rot-js/lib/path/path.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var topology: js.UndefOr[`4` | `6` | `8`] = js.native
+    var topology: js.UndefOr[`4` | `6` | `8`] = js.undefined
   }
   object PartialOptions {
     
@@ -226,14 +222,13 @@ object anon {
   }
   
   /* Inlined std.Partial<rot-js.rot-js/lib/map/cellular.Options> */
-  @js.native
   trait PartialOptionsBorn extends StObject {
     
-    var born: js.UndefOr[js.Array[Double]] = js.native
+    var born: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var survive: js.UndefOr[js.Array[Double]] = js.native
+    var survive: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var topology: js.UndefOr[`4` | `6` | `8`] = js.native
+    var topology: js.UndefOr[`4` | `6` | `8`] = js.undefined
   }
   object PartialOptionsBorn {
     
@@ -273,16 +268,15 @@ object anon {
   }
   
   /* Inlined std.Partial<rot-js.rot-js/lib/map/rogue.Options> */
-  @js.native
   trait PartialOptionsCellHeight extends StObject {
     
-    var cellHeight: js.UndefOr[Double] = js.native
+    var cellHeight: js.UndefOr[Double] = js.undefined
     
-    var cellWidth: js.UndefOr[Double] = js.native
+    var cellWidth: js.UndefOr[Double] = js.undefined
     
-    var roomHeight: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var roomHeight: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var roomWidth: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var roomWidth: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object PartialOptionsCellHeight {
     
@@ -322,18 +316,17 @@ object anon {
   }
   
   /* Inlined std.Partial<rot-js.rot-js/lib/map/digger.Options> */
-  @js.native
   trait PartialOptionsCorridorLength extends StObject {
     
-    var corridorLength: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var corridorLength: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var dugPercentage: js.UndefOr[Double] = js.native
+    var dugPercentage: js.UndefOr[Double] = js.undefined
     
-    var roomHeight: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var roomHeight: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var roomWidth: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var roomWidth: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var timeLimit: js.UndefOr[Double] = js.native
+    var timeLimit: js.UndefOr[Double] = js.undefined
   }
   object PartialOptionsCorridorLength {
     
@@ -379,14 +372,13 @@ object anon {
   }
   
   /* Inlined std.Partial<rot-js.rot-js/lib/lighting.Options> */
-  @js.native
   trait PartialOptionsEmissionThreshold extends StObject {
     
-    var emissionThreshold: js.UndefOr[Double] = js.native
+    var emissionThreshold: js.UndefOr[Double] = js.undefined
     
-    var passes: js.UndefOr[Double] = js.native
+    var passes: js.UndefOr[Double] = js.undefined
     
-    var range: js.UndefOr[Double] = js.native
+    var range: js.UndefOr[Double] = js.undefined
   }
   object PartialOptionsEmissionThreshold {
     
@@ -420,14 +412,13 @@ object anon {
   }
   
   /* Inlined std.Partial<rot-js.rot-js/lib/stringgenerator.Options> */
-  @js.native
   trait PartialOptionsOrder extends StObject {
     
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
     
-    var prior: js.UndefOr[Double] = js.native
+    var prior: js.UndefOr[Double] = js.undefined
     
-    var words: js.UndefOr[Boolean] = js.native
+    var words: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptionsOrder {
     
@@ -461,16 +452,15 @@ object anon {
   }
   
   /* Inlined std.Partial<rot-js.rot-js/lib/map/uniform.Options> */
-  @js.native
   trait PartialOptionsRoomDugPercentage extends StObject {
     
-    var roomDugPercentage: js.UndefOr[Double] = js.native
+    var roomDugPercentage: js.UndefOr[Double] = js.undefined
     
-    var roomHeight: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var roomHeight: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var roomWidth: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var roomWidth: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var timeLimit: js.UndefOr[Double] = js.native
+    var timeLimit: js.UndefOr[Double] = js.undefined
   }
   object PartialOptionsRoomDugPercentage {
     
@@ -510,14 +500,17 @@ object anon {
   }
   
   @js.native
-  trait TypeofRect extends Instantiable0[default] {
+  trait TypeofRect
+    extends StObject
+       with Instantiable0[default] {
     
     var cache: Boolean = js.native
   }
   
   @js.native
   trait TypeofTileGL
-    extends Instantiable0[typings.rotJs.tileGlMod.default] {
+    extends StObject
+       with Instantiable0[typings.rotJs.tileGlMod.default] {
     
     def isSupported(): Boolean = js.native
   }

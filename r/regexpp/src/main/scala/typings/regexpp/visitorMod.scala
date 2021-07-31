@@ -17,7 +17,6 @@ import typings.regexpp.astMod.RegExpLiteral
 import typings.regexpp.visitorMod.RegExpVisitor.Handlers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object visitorMod {
@@ -31,60 +30,59 @@ object visitorMod {
   }
   object RegExpVisitor {
     
-    @js.native
     trait Handlers extends StObject {
       
-      var onAlternativeEnter: js.UndefOr[js.Function1[/* node */ Alternative, Unit]] = js.native
+      var onAlternativeEnter: js.UndefOr[js.Function1[/* node */ Alternative, Unit]] = js.undefined
       
-      var onAlternativeLeave: js.UndefOr[js.Function1[/* node */ Alternative, Unit]] = js.native
+      var onAlternativeLeave: js.UndefOr[js.Function1[/* node */ Alternative, Unit]] = js.undefined
       
-      var onAssertionEnter: js.UndefOr[js.Function1[/* node */ Assertion, Unit]] = js.native
+      var onAssertionEnter: js.UndefOr[js.Function1[/* node */ Assertion, Unit]] = js.undefined
       
-      var onAssertionLeave: js.UndefOr[js.Function1[/* node */ Assertion, Unit]] = js.native
+      var onAssertionLeave: js.UndefOr[js.Function1[/* node */ Assertion, Unit]] = js.undefined
       
-      var onBackreferenceEnter: js.UndefOr[js.Function1[/* node */ Backreference, Unit]] = js.native
+      var onBackreferenceEnter: js.UndefOr[js.Function1[/* node */ Backreference, Unit]] = js.undefined
       
-      var onBackreferenceLeave: js.UndefOr[js.Function1[/* node */ Backreference, Unit]] = js.native
+      var onBackreferenceLeave: js.UndefOr[js.Function1[/* node */ Backreference, Unit]] = js.undefined
       
-      var onCapturingGroupEnter: js.UndefOr[js.Function1[/* node */ CapturingGroup, Unit]] = js.native
+      var onCapturingGroupEnter: js.UndefOr[js.Function1[/* node */ CapturingGroup, Unit]] = js.undefined
       
-      var onCapturingGroupLeave: js.UndefOr[js.Function1[/* node */ CapturingGroup, Unit]] = js.native
+      var onCapturingGroupLeave: js.UndefOr[js.Function1[/* node */ CapturingGroup, Unit]] = js.undefined
       
-      var onCharacterClassEnter: js.UndefOr[js.Function1[/* node */ CharacterClass, Unit]] = js.native
+      var onCharacterClassEnter: js.UndefOr[js.Function1[/* node */ CharacterClass, Unit]] = js.undefined
       
-      var onCharacterClassLeave: js.UndefOr[js.Function1[/* node */ CharacterClass, Unit]] = js.native
+      var onCharacterClassLeave: js.UndefOr[js.Function1[/* node */ CharacterClass, Unit]] = js.undefined
       
-      var onCharacterClassRangeEnter: js.UndefOr[js.Function1[/* node */ CharacterClassRange, Unit]] = js.native
+      var onCharacterClassRangeEnter: js.UndefOr[js.Function1[/* node */ CharacterClassRange, Unit]] = js.undefined
       
-      var onCharacterClassRangeLeave: js.UndefOr[js.Function1[/* node */ CharacterClassRange, Unit]] = js.native
+      var onCharacterClassRangeLeave: js.UndefOr[js.Function1[/* node */ CharacterClassRange, Unit]] = js.undefined
       
-      var onCharacterEnter: js.UndefOr[js.Function1[/* node */ Character, Unit]] = js.native
+      var onCharacterEnter: js.UndefOr[js.Function1[/* node */ Character, Unit]] = js.undefined
       
-      var onCharacterLeave: js.UndefOr[js.Function1[/* node */ Character, Unit]] = js.native
+      var onCharacterLeave: js.UndefOr[js.Function1[/* node */ Character, Unit]] = js.undefined
       
-      var onCharacterSetEnter: js.UndefOr[js.Function1[/* node */ CharacterSet, Unit]] = js.native
+      var onCharacterSetEnter: js.UndefOr[js.Function1[/* node */ CharacterSet, Unit]] = js.undefined
       
-      var onCharacterSetLeave: js.UndefOr[js.Function1[/* node */ CharacterSet, Unit]] = js.native
+      var onCharacterSetLeave: js.UndefOr[js.Function1[/* node */ CharacterSet, Unit]] = js.undefined
       
-      var onFlagsEnter: js.UndefOr[js.Function1[/* node */ Flags, Unit]] = js.native
+      var onFlagsEnter: js.UndefOr[js.Function1[/* node */ Flags, Unit]] = js.undefined
       
-      var onFlagsLeave: js.UndefOr[js.Function1[/* node */ Flags, Unit]] = js.native
+      var onFlagsLeave: js.UndefOr[js.Function1[/* node */ Flags, Unit]] = js.undefined
       
-      var onGroupEnter: js.UndefOr[js.Function1[/* node */ Group, Unit]] = js.native
+      var onGroupEnter: js.UndefOr[js.Function1[/* node */ Group, Unit]] = js.undefined
       
-      var onGroupLeave: js.UndefOr[js.Function1[/* node */ Group, Unit]] = js.native
+      var onGroupLeave: js.UndefOr[js.Function1[/* node */ Group, Unit]] = js.undefined
       
-      var onPatternEnter: js.UndefOr[js.Function1[/* node */ Pattern, Unit]] = js.native
+      var onPatternEnter: js.UndefOr[js.Function1[/* node */ Pattern, Unit]] = js.undefined
       
-      var onPatternLeave: js.UndefOr[js.Function1[/* node */ Pattern, Unit]] = js.native
+      var onPatternLeave: js.UndefOr[js.Function1[/* node */ Pattern, Unit]] = js.undefined
       
-      var onQuantifierEnter: js.UndefOr[js.Function1[/* node */ Quantifier, Unit]] = js.native
+      var onQuantifierEnter: js.UndefOr[js.Function1[/* node */ Quantifier, Unit]] = js.undefined
       
-      var onQuantifierLeave: js.UndefOr[js.Function1[/* node */ Quantifier, Unit]] = js.native
+      var onQuantifierLeave: js.UndefOr[js.Function1[/* node */ Quantifier, Unit]] = js.undefined
       
-      var onRegExpLiteralEnter: js.UndefOr[js.Function1[/* node */ RegExpLiteral, Unit]] = js.native
+      var onRegExpLiteralEnter: js.UndefOr[js.Function1[/* node */ RegExpLiteral, Unit]] = js.undefined
       
-      var onRegExpLiteralLeave: js.UndefOr[js.Function1[/* node */ RegExpLiteral, Unit]] = js.native
+      var onRegExpLiteralLeave: js.UndefOr[js.Function1[/* node */ RegExpLiteral, Unit]] = js.undefined
     }
     object Handlers {
       

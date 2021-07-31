@@ -3,12 +3,14 @@ package typings.reactDndHtml5Backend
 import typings.std.DataTransfer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getDataFromDataTransferMod {
   
-  @JSImport("react-dnd-html5-backend/lib/NativeDragSources/getDataFromDataTransfer", "getDataFromDataTransfer")
+  @JSImport("react-dnd-html5-backend/lib/NativeDragSources/getDataFromDataTransfer", JSImport.Namespace)
   @js.native
-  def getDataFromDataTransfer(dataTransfer: DataTransfer, typesToTry: js.Array[String], defaultValue: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getDataFromDataTransfer(dataTransfer: DataTransfer, typesToTry: js.Array[String], defaultValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDataFromDataTransfer")(dataTransfer.asInstanceOf[js.Any], typesToTry.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String]
 }

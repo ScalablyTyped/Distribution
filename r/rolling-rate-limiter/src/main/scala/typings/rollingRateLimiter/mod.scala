@@ -2,17 +2,18 @@ package typings.rollingRateLimiter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: InMemoryOptions): SyncOrAsyncLimiter = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[SyncOrAsyncLimiter]
+  @scala.inline
+  def apply(options: WithRedisOptions): AsyncLimiter = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AsyncLimiter]
+  
   @JSImport("rolling-rate-limiter", JSImport.Namespace)
   @js.native
-  def apply(options: InMemoryOptions): SyncOrAsyncLimiter = js.native
-  @JSImport("rolling-rate-limiter", JSImport.Namespace)
-  @js.native
-  def apply(options: WithRedisOptions): AsyncLimiter = js.native
+  val ^ : js.Any = js.native
   
   type AsyncLimiter = AsyncLimiterWithToken
   
@@ -22,10 +23,9 @@ object mod {
   
   type AsyncLimiterWithoutToken = js.Function1[/* callback */ AsyncLimiterCallback, Unit]
   
-  @js.native
   trait CompatibleRedisClient extends StObject {
     
-    def multi(): js.Any = js.native
+    def multi(): js.Any
   }
   object CompatibleRedisClient {
     
@@ -43,14 +43,13 @@ object mod {
     }
   }
   
-  @js.native
   trait GeneralOptions extends StObject {
     
-    var interval: Double = js.native
+    var interval: Double
     
-    var maxInInterval: Double = js.native
+    var maxInInterval: Double
     
-    var minDifference: js.UndefOr[Double] = js.native
+    var minDifference: js.UndefOr[Double] = js.undefined
   }
   object GeneralOptions {
     
@@ -81,14 +80,24 @@ object mod {
   
   type SyncLimiter = js.Function1[/* token */ js.UndefOr[String], Double]
   
-  type SyncOrAsyncLimiter = SyncLimiter with AsyncLimiter
-  
   @js.native
-  trait WithRedisOptions extends GeneralOptions {
+  trait SyncOrAsyncLimiter
+    extends SyncLimiter
+       with AsyncLimiterWithToken {
     
-    var namespace: js.UndefOr[String] = js.native
+    /* InferMemberOverrides */
+    override def apply(arg1: /* token */ js.UndefOr[String]): Double = js.native
+    /* InferMemberOverrides */
+    override def apply(arg1: /* token */ String, arg2: /* callback */ AsyncLimiterCallback): Unit = js.native
+  }
+  
+  trait WithRedisOptions
+    extends StObject
+       with GeneralOptions {
     
-    var redis: CompatibleRedisClient = js.native
+    var namespace: js.UndefOr[String] = js.undefined
+    
+    var redis: CompatibleRedisClient
   }
   object WithRedisOptions {
     

@@ -2,106 +2,104 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpotInstanceRequest extends StObject {
   
   /**
     * If you specified a duration and your Spot Instance request was fulfilled, this is the fixed hourly price in effect for the Spot Instance while it runs.
     */
-  var ActualBlockHourlyPrice: js.UndefOr[String] = js.native
+  var ActualBlockHourlyPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The Availability Zone group. If you specify the same Availability Zone group for all Spot Instance requests, all Spot Instances are launched in the same Availability Zone.
     */
-  var AvailabilityZoneGroup: js.UndefOr[String] = js.native
+  var AvailabilityZoneGroup: js.UndefOr[String] = js.undefined
   
   /**
     * The duration for the Spot Instance, in minutes.
     */
-  var BlockDurationMinutes: js.UndefOr[Integer] = js.native
+  var BlockDurationMinutes: js.UndefOr[Integer] = js.undefined
   
   /**
     * The date and time when the Spot Instance request was created, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var CreateTime: js.UndefOr[DateTime] = js.native
+  var CreateTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The fault codes for the Spot Instance request, if any.
     */
-  var Fault: js.UndefOr[SpotInstanceStateFault] = js.native
+  var Fault: js.UndefOr[SpotInstanceStateFault] = js.undefined
   
   /**
     * The instance ID, if an instance has been launched to fulfill the Spot Instance request.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.ec2Mod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.ec2Mod.InstanceId] = js.undefined
   
   /**
     * The behavior when a Spot Instance is interrupted.
     */
-  var InstanceInterruptionBehavior: js.UndefOr[typings.awsSdk.ec2Mod.InstanceInterruptionBehavior] = js.native
+  var InstanceInterruptionBehavior: js.UndefOr[typings.awsSdk.ec2Mod.InstanceInterruptionBehavior] = js.undefined
   
   /**
     * The instance launch group. Launch groups are Spot Instances that launch together and terminate together.
     */
-  var LaunchGroup: js.UndefOr[String] = js.native
+  var LaunchGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Additional information for launching instances.
     */
-  var LaunchSpecification: js.UndefOr[typings.awsSdk.ec2Mod.LaunchSpecification] = js.native
+  var LaunchSpecification: js.UndefOr[typings.awsSdk.ec2Mod.LaunchSpecification] = js.undefined
   
   /**
     * The Availability Zone in which the request is launched.
     */
-  var LaunchedAvailabilityZone: js.UndefOr[String] = js.native
+  var LaunchedAvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The product description associated with the Spot Instance.
     */
-  var ProductDescription: js.UndefOr[RIProductDescription] = js.native
+  var ProductDescription: js.UndefOr[RIProductDescription] = js.undefined
   
   /**
     * The ID of the Spot Instance request.
     */
-  var SpotInstanceRequestId: js.UndefOr[String] = js.native
+  var SpotInstanceRequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum price per hour that you are willing to pay for a Spot Instance.
     */
-  var SpotPrice: js.UndefOr[String] = js.native
+  var SpotPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the Spot Instance request. Spot status information helps track your Spot Instance requests. For more information, see Spot status in the Amazon EC2 User Guide for Linux Instances.
     */
-  var State: js.UndefOr[SpotInstanceState] = js.native
+  var State: js.UndefOr[SpotInstanceState] = js.undefined
   
   /**
     * The status code and status message describing the Spot Instance request.
     */
-  var Status: js.UndefOr[SpotInstanceStatus] = js.native
+  var Status: js.UndefOr[SpotInstanceStatus] = js.undefined
   
   /**
     * Any tags assigned to the resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The Spot Instance request type.
     */
-  var Type: js.UndefOr[SpotInstanceType] = js.native
+  var Type: js.UndefOr[SpotInstanceType] = js.undefined
   
   /**
     * The start date of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). The request becomes active at this date and time.
     */
-  var ValidFrom: js.UndefOr[DateTime] = js.native
+  var ValidFrom: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The end date of the request, in UTC format (YYYY-MM-DDTHH:MM:SSZ).   For a persistent request, the request remains active until the validUntil date and time is reached. Otherwise, the request remains active until you cancel it.    For a one-time request, the request remains active until all instances launch, the request is canceled, or the validUntil date and time is reached. By default, the request is valid for 7 days from the date the request was created.  
     */
-  var ValidUntil: js.UndefOr[DateTime] = js.native
+  var ValidUntil: js.UndefOr[DateTime] = js.undefined
 }
 object SpotInstanceRequest {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllocateIdsRequest extends StObject {
   
   /** Required. A list of keys with incomplete key paths for which to allocate IDs. No key may be reserved/read-only. */
-  var keys: js.UndefOr[js.Array[Key]] = js.native
+  var keys: js.UndefOr[js.Array[Key]] = js.undefined
 }
 object AllocateIdsRequest {
   

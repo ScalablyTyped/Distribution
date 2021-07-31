@@ -2,7 +2,6 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DateTimeInputType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.DateTimeInputType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.DateTimeInputType & Double] = js.native
   
-  /* 0 */ val Date: typings.openui5.sap.m.DateTimeInputType.Date with Double = js.native
+  /* 0 */ val Date: typings.openui5.sap.m.DateTimeInputType.Date & Double = js.native
   
-  /* 1 */ val DateTime: typings.openui5.sap.m.DateTimeInputType.DateTime with Double = js.native
+  /* 1 */ val DateTime: typings.openui5.sap.m.DateTimeInputType.DateTime & Double = js.native
   
-  /* 2 */ val Time: typings.openui5.sap.m.DateTimeInputType.Time with Double = js.native
+  /* 2 */ val Time: typings.openui5.sap.m.DateTimeInputType.Time & Double = js.native
 }

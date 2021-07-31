@@ -2,15 +2,13 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimatedWidth extends StObject {
   
-  var animatedWidth: Double = js.native
+  var animatedWidth: Double
   
-  var overflowWidth: Double = js.native
+  var overflowWidth: Double
 }
 object AnimatedWidth {
   

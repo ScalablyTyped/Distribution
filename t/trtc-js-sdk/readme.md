@@ -10,9 +10,9 @@ Tencent Cloud RTC SDK for Web
 | ------------------ | :-------------: |
 | Full name          | trtc-js-sdk |
 | Keywords           | 实时音视频, 视频通话, 音频通话, WEBRTC, 直播 |
-| # releases         | 31 |
-| # dependents       | 10 |
-| # downloads        | 25346 |
+| # releases         | 37 |
+| # dependents       | 11 |
+| # downloads        | 34900 |
 | # stars            | 0 |
 
 ## Links

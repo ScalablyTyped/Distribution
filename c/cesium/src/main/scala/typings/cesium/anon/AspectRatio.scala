@@ -2,19 +2,17 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AspectRatio extends StObject {
   
-  var aspectRatio: Double = js.native
+  var aspectRatio: Double
   
-  var far: Double = js.native
+  var far: Double
   
-  var near: Double = js.native
+  var near: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object AspectRatio {
   

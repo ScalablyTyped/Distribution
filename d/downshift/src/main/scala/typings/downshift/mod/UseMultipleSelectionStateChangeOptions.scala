@@ -3,13 +3,13 @@ package typings.downshift.mod
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UseMultipleSelectionStateChangeOptions[Item] extends UseMultipleSelectionDispatchAction[Item] {
+trait UseMultipleSelectionStateChangeOptions[Item]
+  extends StObject
+     with UseMultipleSelectionDispatchAction[Item] {
   
-  var changes: Partial[UseMultipleSelectionState[Item]] = js.native
+  var changes: Partial[UseMultipleSelectionState[Item]]
 }
 object UseMultipleSelectionStateChangeOptions {
   
@@ -21,7 +21,7 @@ object UseMultipleSelectionStateChangeOptions {
   }
   
   @scala.inline
-  implicit class UseMultipleSelectionStateChangeOptionsMutableBuilder[Self <: UseMultipleSelectionStateChangeOptions[_], Item] (val x: Self with UseMultipleSelectionStateChangeOptions[Item]) extends AnyVal {
+  implicit class UseMultipleSelectionStateChangeOptionsMutableBuilder[Self <: UseMultipleSelectionStateChangeOptions[?], Item] (val x: Self & UseMultipleSelectionStateChangeOptions[Item]) extends AnyVal {
     
     @scala.inline
     def setChanges(value: Partial[UseMultipleSelectionState[Item]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])

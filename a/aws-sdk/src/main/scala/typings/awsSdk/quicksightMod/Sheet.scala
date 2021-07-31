@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sheet extends StObject {
   
   /**
     * The name of a sheet. This name is displayed on the sheet's tab in the QuickSight console.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The unique identifier associated with a sheet.
     */
-  var SheetId: js.UndefOr[RestrictiveResourceId] = js.native
+  var SheetId: js.UndefOr[RestrictiveResourceId] = js.undefined
 }
 object Sheet {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoutingProfileQueueReference extends StObject {
   
   /**
     * The channels agents can handle in the Contact Control Panel (CCP) for this routing profile.
     */
-  var Channel: typings.awsSdk.connectMod.Channel = js.native
+  var Channel: typings.awsSdk.connectMod.Channel
   
   /**
     * The identifier of the queue.
     */
-  var QueueId: typings.awsSdk.connectMod.QueueId = js.native
+  var QueueId: typings.awsSdk.connectMod.QueueId
 }
 object RoutingProfileQueueReference {
   

@@ -32,7 +32,6 @@ import typings.mangopay2NodejsSdk.mod.user.UserNaturalData
 import typings.mangopay2NodejsSdk.mod.wallet.WalletData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Users")
@@ -297,7 +296,7 @@ class Users () extends StObject {
     * @param options
     */
   @JSName("createBankAccount")
-  var createBankAccount_Original: (TwoArgsMethodOverload[String, USDetails, USData]) with (TwoArgsMethodOverload[String, OtherDetails, OtherData]) with (TwoArgsMethodOverload[String, IBANDetails, IBANData]) with (TwoArgsMethodOverload[String, GBDetails, GBData]) with (TwoArgsMethodOverload[String, CADetails, CAData]) = js.native
+  var createBankAccount_Original: (TwoArgsMethodOverload[String, USDetails, USData]) & (TwoArgsMethodOverload[String, OtherDetails, OtherData]) & (TwoArgsMethodOverload[String, IBANDetails, IBANData]) & (TwoArgsMethodOverload[String, GBDetails, GBData]) & (TwoArgsMethodOverload[String, CADetails, CAData]) = js.native
   
   /**
     * Create new KYC document
@@ -510,7 +509,7 @@ class Users () extends StObject {
     * @param user
     */
   @JSName("create")
-  var create_Original: (MethodOverload[CreateUserLegalData, UserLegalData]) with (MethodOverload[CreateUserNaturalData, UserNaturalData]) = js.native
+  var create_Original: (MethodOverload[CreateUserLegalData, UserLegalData]) & (MethodOverload[CreateUserNaturalData, UserNaturalData]) = js.native
   
   /**
     * Deactivate a bank account
@@ -1254,5 +1253,5 @@ class Users () extends StObject {
     * @param options
     */
   @JSName("update")
-  var update_Original: (MethodOverload[UserLegal | UpdateUserLegalData, UserLegalData]) with (MethodOverload[UserNatural | UpdateUserNaturalData, UserNaturalData]) = js.native
+  var update_Original: (MethodOverload[UserLegal | UpdateUserLegalData, UserLegalData]) & (MethodOverload[UserNatural | UpdateUserNaturalData, UserNaturalData]) = js.native
 }

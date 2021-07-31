@@ -3,14 +3,18 @@ package typings.paper.global.paper
 import typings.std.HTMLScriptElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("paper.PaperScript")
 @js.native
 class PaperScript ()
-  extends typings.paper.paper.PaperScript
+  extends StObject
+     with typings.paper.paper.PaperScript
 object PaperScript {
+  
+  @JSGlobal("paper.PaperScript")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** 
     * Compiles PaperScript code into JavaScript code.
@@ -27,12 +31,10 @@ object PaperScript {
     *     into JavaScript code along with source-maps and other information.
     */
   /* static member */
-  @JSGlobal("paper.PaperScript.compile")
-  @js.native
-  def compile(code: String): js.Object = js.native
-  @JSGlobal("paper.PaperScript.compile")
-  @js.native
-  def compile(code: String, options: js.Object): js.Object = js.native
+  @scala.inline
+  def compile(code: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(code.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def compile(code: String, options: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   /** 
     * Compiles the PaperScript code into a compiled function and executes it.
@@ -53,12 +55,10 @@ object PaperScript {
     * @return the exports defined in the executed code
     */
   /* static member */
-  @JSGlobal("paper.PaperScript.execute")
-  @js.native
-  def execute(code: String, scope: typings.paper.paper.PaperScope): js.Object = js.native
-  @JSGlobal("paper.PaperScript.execute")
-  @js.native
-  def execute(code: String, scope: typings.paper.paper.PaperScope, options: js.Object): js.Object = js.native
+  @scala.inline
+  def execute(code: String, scope: typings.paper.paper.PaperScope): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def execute(code: String, scope: typings.paper.paper.PaperScope, options: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   /** 
     * Loads, compiles and executes PaperScript code in the HTML document. Note
@@ -77,10 +77,8 @@ object PaperScript {
     *     `undefined` of multiple scripts area loaded
     */
   /* static member */
-  @JSGlobal("paper.PaperScript.load")
-  @js.native
-  def load(): typings.paper.paper.PaperScope = js.native
-  @JSGlobal("paper.PaperScript.load")
-  @js.native
-  def load(script: HTMLScriptElement): typings.paper.paper.PaperScope = js.native
+  @scala.inline
+  def load(): typings.paper.paper.PaperScope = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[typings.paper.paper.PaperScope]
+  @scala.inline
+  def load(script: HTMLScriptElement): typings.paper.paper.PaperScope = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(script.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.PaperScope]
 }

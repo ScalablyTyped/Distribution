@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBlogger.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lat extends StObject {
   
   /** Location's latitude. */
-  var lat: js.UndefOr[Double] = js.native
+  var lat: js.UndefOr[Double] = js.undefined
   
   /** Location's longitude. */
-  var lng: js.UndefOr[Double] = js.native
+  var lng: js.UndefOr[Double] = js.undefined
   
   /** Location name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Location's viewport span. Can be used when rendering a map preview. */
-  var span: js.UndefOr[String] = js.native
+  var span: js.UndefOr[String] = js.undefined
 }
 object Lat {
   

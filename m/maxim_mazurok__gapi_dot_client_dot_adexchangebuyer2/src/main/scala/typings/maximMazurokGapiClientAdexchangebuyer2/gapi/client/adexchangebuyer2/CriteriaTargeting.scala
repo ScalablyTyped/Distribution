@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CriteriaTargeting extends StObject {
   
   /** A list of numeric IDs to be excluded. */
-  var excludedCriteriaIds: js.UndefOr[js.Array[String]] = js.native
+  var excludedCriteriaIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of numeric IDs to be included. */
-  var targetedCriteriaIds: js.UndefOr[js.Array[String]] = js.native
+  var targetedCriteriaIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CriteriaTargeting {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserStorageMetadata extends StObject {
   
   /**
     * The storage for a user.
     */
-  var StorageRule: js.UndefOr[StorageRuleType] = js.native
+  var StorageRule: js.UndefOr[StorageRuleType] = js.undefined
   
   /**
     * The amount of storage used, in bytes.
     */
-  var StorageUtilizedInBytes: js.UndefOr[SizeType] = js.native
+  var StorageUtilizedInBytes: js.UndefOr[SizeType] = js.undefined
 }
 object UserStorageMetadata {
   

@@ -3,7 +3,6 @@ package typings.xmljs
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,28 +10,43 @@ object mod {
   /*~ Write your module's methods and properties in this class */
   @JSImport("xmljs", JSImport.Namespace)
   @js.native
-  class ^ protected () extends XmlParser {
+  class ^ protected ()
+    extends StObject
+       with XmlParser {
     def this(oPar: ParserParameters) = this()
+    
+    /* CompleteClass */
+    var errors: js.Array[Error] = js.native
+    
+    /**
+      * Parses a xml string
+      * @param xml  XML string to parse
+      * @param cb Callback function with error and the result (an Node)
+      * @returns whenever or not there where any errors
+      */
+    /* CompleteClass */
+    override def parseString(xml: String, cb: js.Function2[/* err */ Null | js.Array[Error], /* xmlNode */ Node, Unit]): Boolean = js.native
   }
+  @JSImport("xmljs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Returns whenever a node is a XmlNode or not
     * @param n
     */
   /* static member */
-  @JSImport("xmljs", "isXmlNode")
-  @js.native
-  def isXmlNode(n: Node): /* is xmljs.xmljs.XmlNode */ Boolean = js.native
+  @scala.inline
+  def isXmlNode(n: Node): /* is xmljs.xmljs.XmlNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isXmlNode")(n.asInstanceOf[js.Any]).asInstanceOf[/* is xmljs.xmljs.XmlNode */ Boolean]
   
   /**
     * Attribute
     */
-  @js.native
   trait Attribute extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var text: String = js.native
+    var text: String
   }
   object Attribute {
     
@@ -53,7 +67,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Node extends StObject {
     
     /**
@@ -61,20 +74,20 @@ object mod {
       * @param attrName  Name of the attribute
       * @param ignoreCase  whenever or not to ignore the name casing
       */
-    def getAttribute(attrName: String, ignoreCase: Boolean): XmlAttribute = js.native
+    def getAttribute(attrName: String, ignoreCase: Boolean): XmlAttribute
     
     /**
       * Traverses the XML Nodes and iterates through specified path
       * @param path  Node names to traverse down
       * @param ignoreCase  Ignore the casing of the path / node names
       */
-    def path(path: js.Array[String], ignoreCase: Boolean): js.Array[XmlNode] = js.native
+    def path(path: js.Array[String], ignoreCase: Boolean): js.Array[XmlNode]
     
     /**
       * Recursively traverses the nodes and calls the given function in-order
       * @param fn Function to call for each node
       */
-    def visit(fn: js.Function1[/* n */ this.type, Unit]): Unit = js.native
+    def visit(fn: js.Function1[/* n */ this.type, Unit]): Unit
   }
   object Node {
     
@@ -102,43 +115,42 @@ object mod {
     }
   }
   
-  @js.native
   trait ParserParameters extends StObject {
     
     /**
       * Turn the tagsNames to lowercase
       */
-    var lowercaseTagnames: js.UndefOr[Boolean] = js.native
+    var lowercaseTagnames: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disables xml namespaces
       */
-    var noNamespaces: js.UndefOr[Boolean] = js.native
+    var noNamespaces: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Do not normalize whitespaces in text
       */
-    var noNormalizeWhitespaces: js.UndefOr[Boolean] = js.native
+    var noNormalizeWhitespaces: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable position tracing of sax
       */
-    var noTracing: js.UndefOr[Boolean] = js.native
+    var noTracing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Do not trimtext and comment nodes
       */
-    var noTrim: js.UndefOr[Boolean] = js.native
+    var noTrim: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whenever or not to use a strict parser
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allow only predefined entities
       */
-    var strictEntities: js.UndefOr[Boolean] = js.native
+    var strictEntities: js.UndefOr[Boolean] = js.undefined
   }
   object ParserParameters {
     
@@ -198,10 +210,11 @@ object mod {
   /**
     * XML Attribute, an attribute with a namespace
     */
-  @js.native
-  trait XmlAttribute extends Attribute {
+  trait XmlAttribute
+    extends StObject
+       with Attribute {
     
-    var ns: String = js.native
+    var ns: String
   }
   object XmlAttribute {
     
@@ -221,7 +234,8 @@ object mod {
   
   @js.native
   trait XmlNode
-    extends typings.std.Node {
+    extends StObject
+       with typings.std.Node {
     
     var localName: String = js.native
     
@@ -235,10 +249,9 @@ object mod {
   }
   
   /*~ Write your module's methods and properties in this class */
-  @js.native
   trait XmlParser extends StObject {
     
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[Error]
     
     /**
       * Parses a xml string
@@ -246,7 +259,7 @@ object mod {
       * @param cb Callback function with error and the result (an Node)
       * @returns whenever or not there where any errors
       */
-    def parseString(xml: String, cb: js.Function2[/* err */ Null | js.Array[Error], /* xmlNode */ Node, Unit]): Boolean = js.native
+    def parseString(xml: String, cb: js.Function2[/* err */ Null | js.Array[Error], /* xmlNode */ Node, Unit]): Boolean
   }
   object XmlParser {
     

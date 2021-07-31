@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyManagedPrefixListRequest extends StObject {
   
   /**
     * One or more entries to add to the prefix list.
     */
-  var AddEntries: js.UndefOr[AddPrefixListEntries] = js.native
+  var AddEntries: js.UndefOr[AddPrefixListEntries] = js.undefined
   
   /**
     * The current version of the prefix list.
     */
-  var CurrentVersion: js.UndefOr[Long] = js.native
+  var CurrentVersion: js.UndefOr[Long] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the prefix list.
     */
-  var PrefixListId: PrefixListResourceId = js.native
+  var PrefixListId: PrefixListResourceId
   
   /**
     * A name for the prefix list.
     */
-  var PrefixListName: js.UndefOr[String] = js.native
+  var PrefixListName: js.UndefOr[String] = js.undefined
   
   /**
     * One or more entries to remove from the prefix list.
     */
-  var RemoveEntries: js.UndefOr[RemovePrefixListEntries] = js.native
+  var RemoveEntries: js.UndefOr[RemovePrefixListEntries] = js.undefined
 }
 object ModifyManagedPrefixListRequest {
   

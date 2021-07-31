@@ -2,47 +2,45 @@ package typings.vsoNodeApi.identitiesInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Identity extends StObject {
   
   /**
     * The custom display name for the identity (if any). Setting this property to an empty string will clear the existing custom display name. Setting this property to null will not affect the existing persisted value (since null values do not get sent over the wire or to the database)
     */
-  var customDisplayName: String = js.native
+  var customDisplayName: String
   
-  var descriptor: IdentityDescriptor = js.native
+  var descriptor: IdentityDescriptor
   
-  var id: String = js.native
+  var id: String
   
-  var isActive: Boolean = js.native
+  var isActive: Boolean
   
-  var isContainer: Boolean = js.native
+  var isContainer: Boolean
   
-  var masterId: String = js.native
+  var masterId: String
   
-  var memberIds: js.Array[String] = js.native
+  var memberIds: js.Array[String]
   
-  var memberOf: js.Array[IdentityDescriptor] = js.native
+  var memberOf: js.Array[IdentityDescriptor]
   
-  var members: js.Array[IdentityDescriptor] = js.native
+  var members: js.Array[IdentityDescriptor]
   
-  var metaTypeId: Double = js.native
+  var metaTypeId: Double
   
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /**
     * The display name for the identity as specified by the source identity provider.
     */
-  var providerDisplayName: String = js.native
+  var providerDisplayName: String
   
-  var resourceVersion: Double = js.native
+  var resourceVersion: Double
   
-  var subjectDescriptor: String = js.native
+  var subjectDescriptor: String
   
-  var uniqueUserId: Double = js.native
+  var uniqueUserId: Double
 }
 object Identity {
   

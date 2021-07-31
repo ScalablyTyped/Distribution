@@ -2,19 +2,17 @@ package typings.stylefire
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AllowTransformNone extends StObject {
     
-    var allowTransformNone: js.UndefOr[Boolean] = js.native
+    var allowTransformNone: js.UndefOr[Boolean] = js.undefined
     
-    var enableHardwareAcceleration: js.UndefOr[Boolean] = js.native
+    var enableHardwareAcceleration: js.UndefOr[Boolean] = js.undefined
     
-    var isDashCase: js.UndefOr[Boolean] = js.native
+    var isDashCase: js.UndefOr[Boolean] = js.undefined
   }
   object AllowTransformNone {
     
@@ -47,12 +45,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Transform extends StObject {
     
-    var transform: js.UndefOr[String] = js.native
+    var transform: js.UndefOr[String] = js.undefined
     
-    var transformOrigin: js.UndefOr[String] = js.native
+    var transformOrigin: js.UndefOr[String] = js.undefined
   }
   object Transform {
     

@@ -4,15 +4,13 @@ import typings.angularCompiler.outputAstMod.LiteralPiece
 import typings.angularCompiler.outputAstMod.PlaceholderPiece
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageParts extends StObject {
   
-  var messageParts: js.Array[LiteralPiece] = js.native
+  var messageParts: js.Array[LiteralPiece]
   
-  var placeHolders: js.Array[PlaceholderPiece] = js.native
+  var placeHolders: js.Array[PlaceholderPiece]
 }
 object MessageParts {
   

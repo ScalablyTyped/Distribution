@@ -12,7 +12,7 @@ List of words for making random mnemonic sentences
 | Keywords           | mnemonic, words, word, wordlist, seed, sentence, code, bip39, bitcoin |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 210819 |
+| # downloads        | 172177 |
 | # stars            | 0 |
 
 ## Links

@@ -2,26 +2,24 @@ package typings.webgme.Gme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildType extends StObject {
   
   /**
     * The id of the loaded new child type
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * the maximum allowed children of this type
     */
-  var max: Double = js.native
+  var max: Double
   
   /**
     * the minimum necessary amount of this type of child
     */
-  var min: Double = js.native
+  var min: Double
 }
 object ChildType {
   

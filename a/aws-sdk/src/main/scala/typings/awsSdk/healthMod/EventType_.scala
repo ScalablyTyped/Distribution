@@ -2,26 +2,24 @@ package typings.awsSdk.healthMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventType_ extends StObject {
   
   /**
     * A list of event type category codes (issue, scheduledChange, or accountNotification).
     */
-  var category: js.UndefOr[eventTypeCategory] = js.native
+  var category: js.UndefOr[eventTypeCategory] = js.undefined
   
   /**
     * The unique identifier for the event type. The format is AWS_SERVICE_DESCRIPTION ; for example, AWS_EC2_SYSTEM_MAINTENANCE_EVENT.
     */
-  var code: js.UndefOr[eventTypeCode] = js.native
+  var code: js.UndefOr[eventTypeCode] = js.undefined
   
   /**
     * The AWS service that is affected by the event. For example, EC2, RDS.
     */
-  var service: js.UndefOr[typings.awsSdk.healthMod.service] = js.native
+  var service: js.UndefOr[typings.awsSdk.healthMod.service] = js.undefined
 }
 object EventType_ {
   

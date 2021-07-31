@@ -5,24 +5,22 @@ import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.NativeTouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-native.react-native.ButtonProps> */
-@js.native
 trait ReadonlyButtonProps extends StObject {
   
-  val accessibilityLabel: js.UndefOr[String] = js.native
+  val accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  val color: js.UndefOr[ColorValue] = js.native
+  val color: js.UndefOr[ColorValue] = js.undefined
   
-  val disabled: js.UndefOr[Boolean] = js.native
+  val disabled: js.UndefOr[Boolean] = js.undefined
   
-  val onPress: js.Function1[/* ev */ NativeSyntheticEvent[NativeTouchEvent], Unit] = js.native
+  val onPress: js.Function1[/* ev */ NativeSyntheticEvent[NativeTouchEvent], Unit]
   
-  val testID: js.UndefOr[String] = js.native
+  val testID: js.UndefOr[String] = js.undefined
   
-  val title: String = js.native
+  val title: String
 }
 object ReadonlyButtonProps {
   

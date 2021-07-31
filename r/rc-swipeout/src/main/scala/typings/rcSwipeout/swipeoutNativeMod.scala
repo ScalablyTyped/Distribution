@@ -9,7 +9,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swipeoutNativeMod {
@@ -40,34 +39,31 @@ object swipeoutNativeMod {
       @scala.inline
       def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
       
-      @JSImport("rc-swipeout/lib/Swipeout.native", "default.defaultProps.onClose")
-      @js.native
-      def onClose(): Unit = js.native
+      @scala.inline
+      def onClose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onClose")().asInstanceOf[Unit]
       
-      @JSImport("rc-swipeout/lib/Swipeout.native", "default.defaultProps.onOpen")
-      @js.native
-      def onOpen(): Unit = js.native
+      @scala.inline
+      def onOpen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onOpen")().asInstanceOf[Unit]
     }
   }
   
-  @js.native
   trait SwipeButttonType extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[Element] = js.native
+    var component: js.UndefOr[Element] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[typings.rcSwipeout.rcSwipeoutStrings.default | delete | primary | secondary] = js.native
+    var `type`: js.UndefOr[typings.rcSwipeout.rcSwipeoutStrings.default | delete | primary | secondary] = js.undefined
     
-    var underlayColor: js.UndefOr[String] = js.native
+    var underlayColor: js.UndefOr[String] = js.undefined
   }
   object SwipeButttonType {
     

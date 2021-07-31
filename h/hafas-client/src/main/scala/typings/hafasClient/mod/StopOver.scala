@@ -2,52 +2,50 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A stopover represents a vehicle stopping at a stop/station at a specific time.
   */
-@js.native
 trait StopOver extends StObject {
   
   /** null, if first stopOver of trip */
-  var arrival: js.UndefOr[String] = js.native
+  var arrival: js.UndefOr[String] = js.undefined
   
-  var arrivalDelay: js.UndefOr[Double] = js.native
+  var arrivalDelay: js.UndefOr[Double] = js.undefined
   
-  var arrivalPlatform: js.UndefOr[String] = js.native
+  var arrivalPlatform: js.UndefOr[String] = js.undefined
   
-  var cancelled: js.UndefOr[Boolean] = js.native
+  var cancelled: js.UndefOr[Boolean] = js.undefined
   
   /** null, if last stopOver of trip */
-  var departure: js.UndefOr[String] = js.native
+  var departure: js.UndefOr[String] = js.undefined
   
-  var departureDelay: js.UndefOr[Double] = js.native
+  var departureDelay: js.UndefOr[Double] = js.undefined
   
-  var departurePlatform: js.UndefOr[String] = js.native
+  var departurePlatform: js.UndefOr[String] = js.undefined
   
-  var passBy: js.UndefOr[Boolean] = js.native
+  var passBy: js.UndefOr[Boolean] = js.undefined
   
-  var plannedArrival: js.UndefOr[String] = js.native
+  var plannedArrival: js.UndefOr[String] = js.undefined
   
-  var plannedArrivalPlatform: js.UndefOr[String] = js.native
+  var plannedArrivalPlatform: js.UndefOr[String] = js.undefined
   
-  var plannedDeparture: js.UndefOr[String] = js.native
+  var plannedDeparture: js.UndefOr[String] = js.undefined
   
-  var plannedDeparturePlatform: js.UndefOr[String] = js.native
+  var plannedDeparturePlatform: js.UndefOr[String] = js.undefined
   
-  var prognosedArrival: js.UndefOr[String] = js.native
+  var prognosedArrival: js.UndefOr[String] = js.undefined
   
-  var prognosedArrivalPlatform: js.UndefOr[String] = js.native
+  var prognosedArrivalPlatform: js.UndefOr[String] = js.undefined
   
-  var prognosedDeparture: js.UndefOr[String] = js.native
+  var prognosedDeparture: js.UndefOr[String] = js.undefined
   
-  var prognosedDeparturePlatform: js.UndefOr[String] = js.native
+  var prognosedDeparturePlatform: js.UndefOr[String] = js.undefined
   
-  var remarks: js.UndefOr[js.Array[Hint | Warning]] = js.native
+  var remarks: js.UndefOr[js.Array[Hint | Warning]] = js.undefined
   
-  var stop: Station | Stop = js.native
+  var stop: Station | Stop
 }
 object StopOver {
   

@@ -11,9 +11,9 @@ CSS minifier with structural optimisations
 | Full name          | csso |
 | Keywords           | css, compress, minifier, minify, optimise, optimisation, csstree |
 | # releases         | 7 |
-| # dependents       | 246 |
-| # downloads        | 383510703 |
-| # stars            | 29 |
+| # dependents       | 254 |
+| # downloads        | 427736278 |
+| # stars            | 30 |
 
 ## Links
 - [Homepage](https://github.com/css/csso)

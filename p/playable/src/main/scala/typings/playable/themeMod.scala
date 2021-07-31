@@ -3,10 +3,13 @@ package typings.playable
 import typings.playable.anon.ThemeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeMod {
+  
+  @JSImport("playable/dist/src/modules/ui/core/theme", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("playable/dist/src/modules/ui/core/theme", JSImport.Default)
   @js.native
@@ -60,10 +63,8 @@ object themeMod {
     def progressColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressColor")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("playable/dist/src/modules/ui/core/theme", "transperentizeColor")
-  @js.native
-  def transperentizeColor(color: String): String = js.native
-  @JSImport("playable/dist/src/modules/ui/core/theme", "transperentizeColor")
-  @js.native
-  def transperentizeColor(color: String, alpha: Double): String = js.native
+  @scala.inline
+  def transperentizeColor(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("transperentizeColor")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def transperentizeColor(color: String, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transperentizeColor")(color.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
 }

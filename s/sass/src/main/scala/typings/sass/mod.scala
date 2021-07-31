@@ -17,18 +17,19 @@ import typings.sass.sassStrings.tab
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sass", "render")
+  @JSImport("sass", JSImport.Namespace)
   @js.native
-  def render(options: Options, callback: js.Function2[/* exception */ SassException, /* result */ Result, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sass", "renderSync")
-  @js.native
-  def renderSync(options: Options): Result = js.native
+  @scala.inline
+  def render(options: Options, callback: js.Function2[/* exception */ SassException, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def renderSync(options: Options): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSync")(options.asInstanceOf[js.Any]).asInstanceOf[Result]
   
   object types {
     
@@ -162,7 +163,6 @@ object mod {
   */
   type ImporterReturnType = _ImporterReturnType | Error | Null
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -172,21 +172,21 @@ object mod {
       *
       * @default null
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /**
       * Path to a file to compile.
       *
       * @default null
       */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /**
       * Holds a collection of custom functions that may be invoked by the sass files being compiled.
       *
       * @default undefined
       */
-    var functions: js.UndefOr[StringDictionary[js.Function1[/* repeated */ SassType, SassType | Unit]]] = js.native
+    var functions: js.UndefOr[StringDictionary[js.Function1[/* repeated */ SassType, SassType | Unit]]] = js.undefined
     
     /**
       * Handles when the @import directive is encountered.
@@ -195,7 +195,7 @@ object mod {
       *
       * @default undefined
       */
-    var importer: js.UndefOr[Importer | js.Array[Importer]] = js.native
+    var importer: js.UndefOr[Importer | js.Array[Importer]] = js.undefined
     
     /**
       * An array of paths that should be looked in to attempt to resolve your @import declarations.
@@ -203,42 +203,42 @@ object mod {
       *
       * @default []
       */
-    var includePaths: js.UndefOr[js.Array[String]] = js.native
+    var includePaths: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Used to determine whether to use space or tab character for indentation.
       *
       * @default 'space'
       */
-    var indentType: js.UndefOr[space | tab] = js.native
+    var indentType: js.UndefOr[space | tab] = js.undefined
     
     /**
       * Used to determine the number of spaces or tabs to be used for indentation.
       *
       * @default 2
       */
-    var indentWidth: js.UndefOr[Double] = js.native
+    var indentWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Enable Sass Indented Syntax for parsing the data string or file.
       *
       * @default false
       */
-    var indentedSyntax: js.UndefOr[Boolean] = js.native
+    var indentedSyntax: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Used to determine which sequence to use for line breaks.
       *
       * @default 'lf'
       */
-    var linefeed: js.UndefOr[cr | crlf | lf | lfcr] = js.native
+    var linefeed: js.UndefOr[cr | crlf | lf | lfcr] = js.undefined
     
     /**
       * Disable the inclusion of source map information in the output file.
       *
       * @default false
       */
-    var omitSourceMapUrl: js.UndefOr[Boolean] = js.native
+    var omitSourceMapUrl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify the intended location of the output file.
@@ -246,42 +246,42 @@ object mod {
       *
       * @default null
       */
-    var outFile: js.UndefOr[String] = js.native
+    var outFile: js.UndefOr[String] = js.undefined
     
     /**
       * Determines the output format of the final CSS style.
       *
       * @default 'expanded'
       */
-    var outputStyle: js.UndefOr[compressed | expanded] = js.native
+    var outputStyle: js.UndefOr[compressed | expanded] = js.undefined
     
     /**
       * Enables the outputting of a source map.
       *
       * @default undefined
       */
-    var sourceMap: js.UndefOr[Boolean | String] = js.native
+    var sourceMap: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * Includes the contents in the source map information.
       *
       * @default false
       */
-    var sourceMapContents: js.UndefOr[Boolean] = js.native
+    var sourceMapContents: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Embeds the source map as a data URI.
       *
       * @default false
       */
-    var sourceMapEmbed: js.UndefOr[Boolean] = js.native
+    var sourceMapEmbed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The value will be emitted as `sourceRoot` in the source map information.
       *
       * @default undefined
       */
-    var sourceMapRoot: js.UndefOr[String] = js.native
+    var sourceMapRoot: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -403,7 +403,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
     /**
@@ -411,14 +410,14 @@ object mod {
       *
       * Write this to a file, or serve it out as needed.
       */
-    var css: Buffer = js.native
+    var css: Buffer
     
     /**
       * The source map.
       */
-    var map: js.UndefOr[Buffer] = js.native
+    var map: js.UndefOr[Buffer] = js.undefined
     
-    var stats: Duration = js.native
+    var stats: Duration
   }
   object Result {
     
@@ -445,35 +444,36 @@ object mod {
     }
   }
   
-  @js.native
-  trait SassException extends Error {
+  trait SassException
+    extends StObject
+       with Error {
     
     /**
       * The column number of error.
       */
-    var column: Double = js.native
+    var column: Double
     
     /**
       * The filename of error.
       *
       * In case file option was not set (in favour of `data`), this will reflect the value `stdin`.
       */
-    var file: String = js.native
+    var file: String
     
     /**
       * The formatted error.
       */
-    var formatted: String = js.native
+    var formatted: String
     
     /**
       * The line number of error.
       */
-    var line: Double = js.native
+    var line: Double
     
     /**
       * The status code.
       */
-    var status: Double = js.native
+    var status: Double
   }
   object SassException {
     

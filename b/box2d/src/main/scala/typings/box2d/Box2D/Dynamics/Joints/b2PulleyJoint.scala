@@ -4,36 +4,36 @@ import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait b2PulleyJoint extends b2Joint {
+trait b2PulleyJoint
+  extends StObject
+     with b2Joint {
   
   /**
     * Get the first ground anchor.
     **/
-  def GetGroundAnchorA(): b2Vec2 = js.native
+  def GetGroundAnchorA(): b2Vec2
   
   /**
     * Get the second ground anchor.
     **/
-  def GetGroundAnchorB(): b2Vec2 = js.native
+  def GetGroundAnchorB(): b2Vec2
   
   /**
     * Get the current length of the segment attached to body1.
     **/
-  def GetLength1(): Double = js.native
+  def GetLength1(): Double
   
   /**
     * Get the current length of the segment attached to body2.
     **/
-  def GetLength2(): Double = js.native
+  def GetLength2(): Double
   
   /**
     * Get the pulley ratio.
     **/
-  def GetRatio(): Double = js.native
+  def GetRatio(): Double
 }
 object b2PulleyJoint {
   

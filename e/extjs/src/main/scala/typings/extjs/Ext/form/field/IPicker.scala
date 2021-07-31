@@ -4,47 +4,47 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.IComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPicker extends ITrigger {
+trait IPicker
+  extends StObject
+     with ITrigger {
   
   /** [Method] Aligns the picker to the input element */
-  var alignPicker: js.UndefOr[js.Function0[Unit]] = js.native
+  var alignPicker: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Collapses this field s picker dropdown  */
-  var collapse: js.UndefOr[js.Function0[Unit]] = js.native
+  var collapse: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Creates and returns the component to be used as this field s picker  */
-  var createPicker: js.UndefOr[js.Function0[Unit]] = js.native
+  var createPicker: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Expands this field s picker dropdown  */
-  var expand: js.UndefOr[js.Function0[Unit]] = js.native
+  var expand: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Returns a reference to the picker component for this field creating it if necessary by calling createPicker
     * @returns Ext.Component The picker component
     */
-  var getPicker: js.UndefOr[js.Function0[IComponent]] = js.native
+  var getPicker: js.UndefOr[js.Function0[IComponent]] = js.undefined
   
   /** [Property] (Boolean) */
-  var isExpanded: js.UndefOr[Boolean] = js.native
+  var isExpanded: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var matchFieldWidth: js.UndefOr[Boolean] = js.native
+  var matchFieldWidth: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Handles the trigger click by default toggles between expanding and collapsing the picker component  */
   @JSName("onTriggerClick")
-  var onTriggerClick_IPicker: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTriggerClick_IPicker: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var openCls: js.UndefOr[String] = js.native
+  var openCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var pickerAlign: js.UndefOr[String] = js.native
+  var pickerAlign: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number[]) */
-  var pickerOffset: js.UndefOr[Array] = js.native
+  var pickerOffset: js.UndefOr[Array] = js.undefined
 }
 object IPicker {
   

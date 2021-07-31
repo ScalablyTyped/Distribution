@@ -2,76 +2,74 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowDefinition extends StObject {
   
   /**
     *  Specifies when the flow was created. 
     */
-  var createdAt: js.UndefOr[Date] = js.native
+  var createdAt: js.UndefOr[Date] = js.undefined
   
   /**
     *  The ARN of the user who created the flow. 
     */
-  var createdBy: js.UndefOr[CreatedBy] = js.native
+  var createdBy: js.UndefOr[CreatedBy] = js.undefined
   
   /**
     *  A user-entered description of the flow. 
     */
-  var description: js.UndefOr[FlowDescription] = js.native
+  var description: js.UndefOr[FlowDescription] = js.undefined
   
   /**
     *  Specifies the destination connector type, such as Salesforce, Amazon S3, Amplitude, and so on. 
     */
-  var destinationConnectorType: js.UndefOr[ConnectorType] = js.native
+  var destinationConnectorType: js.UndefOr[ConnectorType] = js.undefined
   
   /**
     *  The flow's Amazon Resource Name (ARN). 
     */
-  var flowArn: js.UndefOr[FlowArn] = js.native
+  var flowArn: js.UndefOr[FlowArn] = js.undefined
   
   /**
     *  The specified name of the flow. Spaces are not allowed. Use underscores (_) or hyphens (-) only. 
     */
-  var flowName: js.UndefOr[FlowName] = js.native
+  var flowName: js.UndefOr[FlowName] = js.undefined
   
   /**
     *  Indicates the current status of the flow. 
     */
-  var flowStatus: js.UndefOr[FlowStatus] = js.native
+  var flowStatus: js.UndefOr[FlowStatus] = js.undefined
   
   /**
     *  Describes the details of the most recent flow run. 
     */
-  var lastRunExecutionDetails: js.UndefOr[ExecutionDetails] = js.native
+  var lastRunExecutionDetails: js.UndefOr[ExecutionDetails] = js.undefined
   
   /**
     *  Specifies when the flow was last updated. 
     */
-  var lastUpdatedAt: js.UndefOr[Date] = js.native
+  var lastUpdatedAt: js.UndefOr[Date] = js.undefined
   
   /**
     *  Specifies the account user name that most recently updated the flow. 
     */
-  var lastUpdatedBy: js.UndefOr[UpdatedBy] = js.native
+  var lastUpdatedBy: js.UndefOr[UpdatedBy] = js.undefined
   
   /**
     *  Specifies the source connector type, such as Salesforce, Amazon S3, Amplitude, and so on. 
     */
-  var sourceConnectorType: js.UndefOr[ConnectorType] = js.native
+  var sourceConnectorType: js.UndefOr[ConnectorType] = js.undefined
   
   /**
     *  The tags used to organize, track, or control access for your flow. 
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     *  Specifies the type of flow trigger. This can be OnDemand, Scheduled, or Event. 
     */
-  var triggerType: js.UndefOr[TriggerType] = js.native
+  var triggerType: js.UndefOr[TriggerType] = js.undefined
 }
 object FlowDefinition {
   

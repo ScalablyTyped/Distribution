@@ -7,16 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service connects the Java-like UNO Drag & Drop protocol to the protocol used on window platforms. It realizes the drop target.
   * @see XDropTarget
   */
-@js.native
 trait OleDropTarget
-  extends XDropTarget
+  extends StObject
+     with XDropTarget
      with XInitialization
      with XComponent
 object OleDropTarget {
@@ -29,7 +28,7 @@ object OleDropTarget {
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,
     getDefaultActions: () => Double,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     isActive: () => Boolean,
     queryInterface: `type` => js.Any,
     release: () => Unit,

@@ -2,19 +2,19 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The phone info options for multi-factor enrollment. Phone number and
   * multi-factor session are required.
   */
-@js.native
-trait PhoneMultiFactorEnrollInfoOptions extends PhoneInfoOptions {
+trait PhoneMultiFactorEnrollInfoOptions
+  extends StObject
+     with PhoneInfoOptions {
   
-  var phoneNumber: String = js.native
+  var phoneNumber: String
   
-  var session: MultiFactorSession = js.native
+  var session: MultiFactorSession
 }
 object PhoneMultiFactorEnrollInfoOptions {
   

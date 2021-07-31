@@ -2,32 +2,31 @@ package typings.uifabricMergeStyles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getVendorSettingsMod {
   
-  @JSImport("@uifabric/merge-styles/lib/getVendorSettings", "getVendorSettings")
+  @JSImport("@uifabric/merge-styles/lib/getVendorSettings", JSImport.Namespace)
   @js.native
-  def getVendorSettings(): IVendorSettings = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@uifabric/merge-styles/lib/getVendorSettings", "setVendorSettings")
-  @js.native
-  def setVendorSettings(): Unit = js.native
-  @JSImport("@uifabric/merge-styles/lib/getVendorSettings", "setVendorSettings")
-  @js.native
-  def setVendorSettings(vendorSettings: IVendorSettings): Unit = js.native
+  @scala.inline
+  def getVendorSettings(): IVendorSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getVendorSettings")().asInstanceOf[IVendorSettings]
   
-  @js.native
+  @scala.inline
+  def setVendorSettings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVendorSettings")().asInstanceOf[Unit]
+  @scala.inline
+  def setVendorSettings(vendorSettings: IVendorSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVendorSettings")(vendorSettings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait IVendorSettings extends StObject {
     
-    var isMoz: js.UndefOr[Boolean] = js.native
+    var isMoz: js.UndefOr[Boolean] = js.undefined
     
-    var isMs: js.UndefOr[Boolean] = js.native
+    var isMs: js.UndefOr[Boolean] = js.undefined
     
-    var isOpera: js.UndefOr[Boolean] = js.native
+    var isOpera: js.UndefOr[Boolean] = js.undefined
     
-    var isWebkit: js.UndefOr[Boolean] = js.native
+    var isWebkit: js.UndefOr[Boolean] = js.undefined
   }
   object IVendorSettings {
     

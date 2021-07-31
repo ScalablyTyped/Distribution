@@ -2,18 +2,16 @@ package typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Timepoint. */
-@js.native
 trait ITimepoint extends StObject {
   
   /** Timepoint markName */
-  var markName: js.UndefOr[String | Null] = js.native
+  var markName: js.UndefOr[String | Null] = js.undefined
   
   /** Timepoint timeSeconds */
-  var timeSeconds: js.UndefOr[Double | Null] = js.native
+  var timeSeconds: js.UndefOr[Double | Null] = js.undefined
 }
 object ITimepoint {
   

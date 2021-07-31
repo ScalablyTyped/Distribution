@@ -4,19 +4,19 @@ import org.scalablytyped.runtime.TopLevel
 import typings.ctrlTinycolor.distMod._ColorInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
-  @js.native
-  trait HSL extends _ColorInput {
+  trait HSL
+    extends StObject
+       with _ColorInput {
     
-    var h: Double | String = js.native
+    var h: Double | String
     
-    var l: Double | String = js.native
+    var l: Double | String
     
-    var s: Double | String = js.native
+    var s: Double | String
   }
   object HSL {
     
@@ -41,10 +41,11 @@ object interfacesMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.ctrlTinycolor.distMod._ColorInput because Already inherited */ @js.native
-  trait HSLA extends HSL {
+  - typings.ctrlTinycolor.distMod._ColorInput because Already inherited */ trait HSLA
+    extends StObject
+       with HSL {
     
-    var a: Double = js.native
+    var a: Double
   }
   object HSLA {
     
@@ -62,14 +63,15 @@ object interfacesMod {
     }
   }
   
-  @js.native
-  trait HSV extends _ColorInput {
+  trait HSV
+    extends StObject
+       with _ColorInput {
     
-    var h: Double | String = js.native
+    var h: Double | String
     
-    var s: Double | String = js.native
+    var s: Double | String
     
-    var v: Double | String = js.native
+    var v: Double | String
   }
   object HSV {
     
@@ -94,10 +96,11 @@ object interfacesMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.ctrlTinycolor.distMod._ColorInput because Already inherited */ @js.native
-  trait HSVA extends HSV {
+  - typings.ctrlTinycolor.distMod._ColorInput because Already inherited */ trait HSVA
+    extends StObject
+       with HSV {
     
-    var a: Double = js.native
+    var a: Double
   }
   object HSVA {
     
@@ -117,16 +120,17 @@ object interfacesMod {
   
   type Numberify[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: number}
-    */ typings.ctrlTinycolor.ctrlTinycolorStrings.Numberify with TopLevel[js.Any]
+    */ typings.ctrlTinycolor.ctrlTinycolorStrings.Numberify & TopLevel[js.Any]
   
-  @js.native
-  trait RGB extends _ColorInput {
+  trait RGB
+    extends StObject
+       with _ColorInput {
     
-    var b: Double | String = js.native
+    var b: Double | String
     
-    var g: Double | String = js.native
+    var g: Double | String
     
-    var r: Double | String = js.native
+    var r: Double | String
   }
   object RGB {
     
@@ -151,10 +155,11 @@ object interfacesMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.ctrlTinycolor.distMod._ColorInput because Already inherited */ @js.native
-  trait RGBA extends RGB {
+  - typings.ctrlTinycolor.distMod._ColorInput because Already inherited */ trait RGBA
+    extends StObject
+       with RGB {
     
-    var a: Double = js.native
+    var a: Double
   }
   object RGBA {
     

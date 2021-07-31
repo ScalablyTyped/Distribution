@@ -5,35 +5,34 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scatterNdUtilMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/scatter_nd_util", "calculateShapes")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/scatter_nd_util", JSImport.Namespace)
   @js.native
-  def calculateShapes(updates: TensorInfo, indices: TensorInfo, shape: js.Array[Double]): ScatterShapeInfo = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/scatter_nd_util", "validateInput")
-  @js.native
-  def validateInput(updates: Tensor[Rank], indices: Tensor[Rank], shape: js.Array[Double]): Unit = js.native
+  @scala.inline
+  def calculateShapes(updates: TensorInfo, indices: TensorInfo, shape: js.Array[Double]): ScatterShapeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateShapes")(updates.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[ScatterShapeInfo]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/scatter_nd_util", "validateUpdateShape")
-  @js.native
-  def validateUpdateShape(shape: js.Array[Double], indices: Tensor[Rank], updates: Tensor[Rank]): Unit = js.native
+  @scala.inline
+  def validateInput(updates: Tensor[Rank], indices: Tensor[Rank], shape: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateInput")(updates.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def validateUpdateShape(shape: js.Array[Double], indices: Tensor[Rank], updates: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateUpdateShape")(shape.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait ScatterShapeInfo extends StObject {
     
-    var numUpdates: Double = js.native
+    var numUpdates: Double
     
-    var outputSize: Double = js.native
+    var outputSize: Double
     
-    var sliceRank: Double = js.native
+    var sliceRank: Double
     
-    var sliceSize: Double = js.native
+    var sliceSize: Double
     
-    var strides: js.Array[Double] = js.native
+    var strides: js.Array[Double]
   }
   object ScatterShapeInfo {
     

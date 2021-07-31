@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRepricingRulesResponse extends StObject {
   
   /** A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The rules from the specified merchant. */
-  var repricingRules: js.UndefOr[js.Array[RepricingRule]] = js.native
+  var repricingRules: js.UndefOr[js.Array[RepricingRule]] = js.undefined
 }
 object ListRepricingRulesResponse {
   

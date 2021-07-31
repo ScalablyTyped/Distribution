@@ -3,28 +3,26 @@ package typings.akamaiEdgeworkers.streamsMod
 import typings.akamaiEdgeworkers.akamaiEdgeworkersStrings.bytes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnderlyingByteSource extends StObject {
   
-  var autoAllocateChunkSize: js.UndefOr[Double] = js.native
+  var autoAllocateChunkSize: js.UndefOr[Double] = js.undefined
   
-  var cancel: js.UndefOr[ReadableStreamErrorCallback] = js.native
+  var cancel: js.UndefOr[ReadableStreamErrorCallback] = js.undefined
   
-  var pull: js.UndefOr[ReadableByteStreamControllerCallback] = js.native
+  var pull: js.UndefOr[ReadableByteStreamControllerCallback] = js.undefined
   
-  var start: js.UndefOr[ReadableByteStreamControllerCallback] = js.native
+  var start: js.UndefOr[ReadableByteStreamControllerCallback] = js.undefined
   
-  var `type`: bytes = js.native
+  var `type`: bytes
 }
 object UnderlyingByteSource {
   
   @scala.inline
-  def apply(`type`: bytes): UnderlyingByteSource = {
+  def apply(): UnderlyingByteSource = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("bytes")
     __obj.asInstanceOf[UnderlyingByteSource]
   }
   

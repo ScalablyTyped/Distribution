@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiColumnComboBoxVirtual extends StObject {
   
-  var itemHeight: js.UndefOr[Double] = js.native
+  var itemHeight: js.UndefOr[Double] = js.undefined
   
-  var mapValueTo: js.UndefOr[String] = js.native
+  var mapValueTo: js.UndefOr[String] = js.undefined
   
-  var valueMapper: js.UndefOr[js.Function] = js.native
+  var valueMapper: js.UndefOr[js.Function] = js.undefined
 }
 object MultiColumnComboBoxVirtual {
   

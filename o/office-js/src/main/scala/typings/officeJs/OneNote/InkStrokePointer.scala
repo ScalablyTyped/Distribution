@@ -2,7 +2,6 @@ package typings.officeJs.OneNote
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
 trait InkStrokePointer extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait InkStrokePointer extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var contentId: String = js.native
+  var contentId: String
   
   /**
     *
@@ -28,7 +26,7 @@ trait InkStrokePointer extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var inkStrokeId: String = js.native
+  var inkStrokeId: String
 }
 object InkStrokePointer {
   

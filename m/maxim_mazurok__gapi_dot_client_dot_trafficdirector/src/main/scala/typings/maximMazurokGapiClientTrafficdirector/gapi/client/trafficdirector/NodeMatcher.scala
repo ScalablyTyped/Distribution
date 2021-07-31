@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeMatcher extends StObject {
   
   /** Specifies match criteria on the node id. */
-  var nodeId: js.UndefOr[StringMatcher] = js.native
+  var nodeId: js.UndefOr[StringMatcher] = js.undefined
   
   /** Specifies match criteria on the node metadata. */
-  var nodeMetadatas: js.UndefOr[js.Array[StructMatcher]] = js.native
+  var nodeMetadatas: js.UndefOr[js.Array[StructMatcher]] = js.undefined
 }
 object NodeMatcher {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSecurityConfigurationRequest extends StObject {
   
   /**
     * The name of the security configuration to retrieve.
     */
-  var Name: NameString = js.native
+  var Name: NameString
 }
 object GetSecurityConfigurationRequest {
   

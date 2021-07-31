@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the canonical names for the options represented by the PrintTaskOptions class. You can use the StandardPrintTaskOptions class to identify print options displayed in the user experience or to retrieve specific options using the PrintTaskOptionDetails class. */
 @JSGlobal("Windows.Graphics.Printing.StandardPrintTaskOptions")
 @js.native
 abstract class StandardPrintTaskOptions ()
-  extends typings.winrtUwp.Windows.Graphics.Printing.StandardPrintTaskOptions
+  extends StObject
+     with typings.winrtUwp.Windows.Graphics.Printing.StandardPrintTaskOptions
 object StandardPrintTaskOptions {
   
   @JSGlobal("Windows.Graphics.Printing.StandardPrintTaskOptions")

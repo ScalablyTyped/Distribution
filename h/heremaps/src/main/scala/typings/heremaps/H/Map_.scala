@@ -22,7 +22,6 @@ import typings.std.Element
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** Map *****/
@@ -31,7 +30,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Map class is an entry point to all operations related to layers, map objects and geo-screen transformations. By specifying options you can initialize map with predefined view.
   */
 @js.native
-trait Map_ extends EventTarget {
+trait Map_
+  extends StObject
+     with EventTarget {
   
   /**
     * This method adds a layer to the map.
@@ -135,7 +136,7 @@ trait Map_ extends EventTarget {
     * @param callback {function}
     * @returns {?H.map.Object} - the encountered top most map object or null if no object found
     */
-  def getObjectAt(x: Double, y: Double, callback: js.Function1[/* obj */ Object, _]): Object = js.native
+  def getObjectAt(x: Double, y: Double, callback: js.Function1[/* obj */ Object, js.Any]): Object = js.native
   
   /**
     * This method retrieves the list of all objects which have been added to the map.
@@ -251,163 +252,54 @@ trait Map_ extends EventTarget {
     * @returns {H.util.Request} - A handle to the created storage request
     */
   def storeContent(): Request = js.native
-  def storeContent(
-    opt_onprogress: js.UndefOr[scala.Nothing],
-    opt_bounds: js.UndefOr[scala.Nothing],
-    opt_min: js.UndefOr[scala.Nothing],
-    opt_max: js.UndefOr[scala.Nothing],
-    opt_layer: BaseTileLayer
-  ): Request = js.native
-  def storeContent(
-    opt_onprogress: js.UndefOr[scala.Nothing],
-    opt_bounds: js.UndefOr[scala.Nothing],
-    opt_min: js.UndefOr[scala.Nothing],
-    opt_max: Double
-  ): Request = js.native
-  def storeContent(
-    opt_onprogress: js.UndefOr[scala.Nothing],
-    opt_bounds: js.UndefOr[scala.Nothing],
-    opt_min: js.UndefOr[scala.Nothing],
-    opt_max: Double,
-    opt_layer: BaseTileLayer
-  ): Request = js.native
-  def storeContent(opt_onprogress: js.UndefOr[scala.Nothing], opt_bounds: js.UndefOr[scala.Nothing], opt_min: Double): Request = js.native
-  def storeContent(
-    opt_onprogress: js.UndefOr[scala.Nothing],
-    opt_bounds: js.UndefOr[scala.Nothing],
-    opt_min: Double,
-    opt_max: js.UndefOr[scala.Nothing],
-    opt_layer: BaseTileLayer
-  ): Request = js.native
-  def storeContent(
-    opt_onprogress: js.UndefOr[scala.Nothing],
-    opt_bounds: js.UndefOr[scala.Nothing],
-    opt_min: Double,
-    opt_max: Double
-  ): Request = js.native
-  def storeContent(
-    opt_onprogress: js.UndefOr[scala.Nothing],
-    opt_bounds: js.UndefOr[scala.Nothing],
-    opt_min: Double,
-    opt_max: Double,
-    opt_layer: BaseTileLayer
-  ): Request = js.native
-  def storeContent(opt_onprogress: js.UndefOr[scala.Nothing], opt_bounds: Rect): Request = js.native
-  def storeContent(
-    opt_onprogress: js.UndefOr[scala.Nothing],
-    opt_bounds: Rect,
-    opt_min: js.UndefOr[scala.Nothing],
-    opt_max: js.UndefOr[scala.Nothing],
-    opt_layer: BaseTileLayer
-  ): Request = js.native
-  def storeContent(
-    opt_onprogress: js.UndefOr[scala.Nothing],
-    opt_bounds: Rect,
-    opt_min: js.UndefOr[scala.Nothing],
-    opt_max: Double
-  ): Request = js.native
-  def storeContent(
-    opt_onprogress: js.UndefOr[scala.Nothing],
-    opt_bounds: Rect,
-    opt_min: js.UndefOr[scala.Nothing],
-    opt_max: Double,
-    opt_layer: BaseTileLayer
-  ): Request = js.native
-  def storeContent(opt_onprogress: js.UndefOr[scala.Nothing], opt_bounds: Rect, opt_min: Double): Request = js.native
-  def storeContent(
-    opt_onprogress: js.UndefOr[scala.Nothing],
-    opt_bounds: Rect,
-    opt_min: Double,
-    opt_max: js.UndefOr[scala.Nothing],
-    opt_layer: BaseTileLayer
-  ): Request = js.native
-  def storeContent(opt_onprogress: js.UndefOr[scala.Nothing], opt_bounds: Rect, opt_min: Double, opt_max: Double): Request = js.native
-  def storeContent(
-    opt_onprogress: js.UndefOr[scala.Nothing],
-    opt_bounds: Rect,
-    opt_min: Double,
-    opt_max: Double,
-    opt_layer: BaseTileLayer
-  ): Request = js.native
   def storeContent(opt_onprogress: js.Function1[/* req */ Request, Unit]): Request = js.native
+  def storeContent(opt_onprogress: js.Function1[/* req */ Request, Unit], opt_bounds: Unit, opt_min: Double): Request = js.native
   def storeContent(
     opt_onprogress: js.Function1[/* req */ Request, Unit],
-    opt_bounds: js.UndefOr[scala.Nothing],
-    opt_min: js.UndefOr[scala.Nothing],
-    opt_max: js.UndefOr[scala.Nothing],
-    opt_layer: BaseTileLayer
-  ): Request = js.native
-  def storeContent(
-    opt_onprogress: js.Function1[/* req */ Request, Unit],
-    opt_bounds: js.UndefOr[scala.Nothing],
-    opt_min: js.UndefOr[scala.Nothing],
-    opt_max: Double
-  ): Request = js.native
-  def storeContent(
-    opt_onprogress: js.Function1[/* req */ Request, Unit],
-    opt_bounds: js.UndefOr[scala.Nothing],
-    opt_min: js.UndefOr[scala.Nothing],
-    opt_max: Double,
-    opt_layer: BaseTileLayer
-  ): Request = js.native
-  def storeContent(
-    opt_onprogress: js.Function1[/* req */ Request, Unit],
-    opt_bounds: js.UndefOr[scala.Nothing],
-    opt_min: Double
-  ): Request = js.native
-  def storeContent(
-    opt_onprogress: js.Function1[/* req */ Request, Unit],
-    opt_bounds: js.UndefOr[scala.Nothing],
-    opt_min: Double,
-    opt_max: js.UndefOr[scala.Nothing],
-    opt_layer: BaseTileLayer
-  ): Request = js.native
-  def storeContent(
-    opt_onprogress: js.Function1[/* req */ Request, Unit],
-    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_bounds: Unit,
     opt_min: Double,
     opt_max: Double
   ): Request = js.native
   def storeContent(
     opt_onprogress: js.Function1[/* req */ Request, Unit],
-    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_bounds: Unit,
     opt_min: Double,
     opt_max: Double,
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: Unit,
+    opt_min: Double,
+    opt_max: Unit,
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: Unit,
+    opt_min: Unit,
+    opt_max: Double
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: Unit,
+    opt_min: Unit,
+    opt_max: Double,
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: Unit,
+    opt_min: Unit,
+    opt_max: Unit,
     opt_layer: BaseTileLayer
   ): Request = js.native
   def storeContent(opt_onprogress: js.Function1[/* req */ Request, Unit], opt_bounds: Rect): Request = js.native
-  def storeContent(
-    opt_onprogress: js.Function1[/* req */ Request, Unit],
-    opt_bounds: Rect,
-    opt_min: js.UndefOr[scala.Nothing],
-    opt_max: js.UndefOr[scala.Nothing],
-    opt_layer: BaseTileLayer
-  ): Request = js.native
-  def storeContent(
-    opt_onprogress: js.Function1[/* req */ Request, Unit],
-    opt_bounds: Rect,
-    opt_min: js.UndefOr[scala.Nothing],
-    opt_max: Double
-  ): Request = js.native
-  def storeContent(
-    opt_onprogress: js.Function1[/* req */ Request, Unit],
-    opt_bounds: Rect,
-    opt_min: js.UndefOr[scala.Nothing],
-    opt_max: Double,
-    opt_layer: BaseTileLayer
-  ): Request = js.native
   def storeContent(opt_onprogress: js.Function1[/* req */ Request, Unit], opt_bounds: Rect, opt_min: Double): Request = js.native
   def storeContent(
     opt_onprogress: js.Function1[/* req */ Request, Unit],
     opt_bounds: Rect,
     opt_min: Double,
-    opt_max: js.UndefOr[scala.Nothing],
-    opt_layer: BaseTileLayer
-  ): Request = js.native
-  def storeContent(
-    opt_onprogress: js.Function1[/* req */ Request, Unit],
-    opt_bounds: Rect,
-    opt_min: Double,
     opt_max: Double
   ): Request = js.native
   def storeContent(
@@ -417,6 +309,48 @@ trait Map_ extends EventTarget {
     opt_max: Double,
     opt_layer: BaseTileLayer
   ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: Rect,
+    opt_min: Double,
+    opt_max: Unit,
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: Rect,
+    opt_min: Unit,
+    opt_max: Double
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: Rect,
+    opt_min: Unit,
+    opt_max: Double,
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: Rect,
+    opt_min: Unit,
+    opt_max: Unit,
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Unit, opt_min: Double): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Unit, opt_min: Double, opt_max: Double): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Unit, opt_min: Double, opt_max: Double, opt_layer: BaseTileLayer): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Unit, opt_min: Double, opt_max: Unit, opt_layer: BaseTileLayer): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Unit, opt_min: Unit, opt_max: Double): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Unit, opt_min: Unit, opt_max: Double, opt_layer: BaseTileLayer): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Unit, opt_min: Unit, opt_max: Unit, opt_layer: BaseTileLayer): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Rect): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Rect, opt_min: Double): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Rect, opt_min: Double, opt_max: Double): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Rect, opt_min: Double, opt_max: Double, opt_layer: BaseTileLayer): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Rect, opt_min: Double, opt_max: Unit, opt_layer: BaseTileLayer): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Rect, opt_min: Unit, opt_max: Double): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Rect, opt_min: Unit, opt_max: Double, opt_layer: BaseTileLayer): Request = js.native
+  def storeContent(opt_onprogress: Unit, opt_bounds: Rect, opt_min: Unit, opt_max: Unit, opt_layer: BaseTileLayer): Request = js.native
   
   /**
     * This method changes the map zoom while keeping target screen coordinates specified as x,y at the same place where they were before.
@@ -438,10 +372,14 @@ object Map_ {
   object EngineType extends StObject {
     
     @js.native
-    sealed trait P2D extends EngineType
+    sealed trait P2D
+      extends StObject
+         with EngineType
     
     @js.native
-    sealed trait PANORAMA extends EngineType
+    sealed trait PANORAMA
+      extends StObject
+         with EngineType
   }
   
   /**
@@ -450,12 +388,11 @@ object Map_ {
     * @property lower {number} - The number of lower zoom levels to take into account, default is 0
     * @property higher {number} - The number of higher zoom levels to take into account, default is 0
     */
-  @js.native
   trait BackgroundRange extends StObject {
     
-    var higher: Double = js.native
+    var higher: Double
     
-    var lower: Double = js.native
+    var lower: Double
   }
   object BackgroundRange {
     
@@ -494,34 +431,33 @@ object Map_ {
     * @property fixedCenter {boolean=} - Indicates whether the center of the map should remain unchanged if the viewport's size or padding has been changed, default is true
     * @property noWrap {boolean=} - Indicates whether to wrap the world on longitude axes. When set to true, only one world will be rendered. Default is false, multiple worlds are rendered.
     */
-  @js.native
   trait Options extends StObject {
     
-    var autoColor: js.UndefOr[Boolean] = js.native
+    var autoColor: js.UndefOr[Boolean] = js.undefined
     
-    var bounds: js.UndefOr[Rect] = js.native
+    var bounds: js.UndefOr[Rect] = js.undefined
     
-    var center: js.UndefOr[IPoint] = js.native
+    var center: js.UndefOr[IPoint] = js.undefined
     
-    var engineType: js.UndefOr[EngineType] = js.native
+    var engineType: js.UndefOr[EngineType] = js.undefined
     
-    var fixedCenter: js.UndefOr[Boolean] = js.native
+    var fixedCenter: js.UndefOr[Boolean] = js.undefined
     
-    var imprint: js.UndefOr[typings.heremaps.H.map.Imprint.Options] = js.native
+    var imprint: js.UndefOr[typings.heremaps.H.map.Imprint.Options] = js.undefined
     
-    var layers: js.UndefOr[js.Array[Layer]] = js.native
+    var layers: js.UndefOr[js.Array[Layer]] = js.undefined
     
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
-    var noWrap: js.UndefOr[Boolean] = js.native
+    var noWrap: js.UndefOr[Boolean] = js.undefined
     
-    var padding: js.UndefOr[Padding] = js.native
+    var padding: js.UndefOr[Padding] = js.undefined
     
-    var pixelRatio: js.UndefOr[Double] = js.native
+    var pixelRatio: js.UndefOr[Double] = js.undefined
     
-    var renderBaseBackground: js.UndefOr[BackgroundRange] = js.native
+    var renderBaseBackground: js.UndefOr[BackgroundRange] = js.undefined
     
-    var zoom: js.UndefOr[Double] = js.native
+    var zoom: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

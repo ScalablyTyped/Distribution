@@ -9,31 +9,32 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spaceItemMod {
   
-  @JSImport("antd/lib/space/Item", JSImport.Default)
+  @JSImport("antd/lib/space/Item", JSImport.Namespace)
   @js.native
-  def default(hasClassNameDirectionIndexSizeMarginDirectionChildrenSplit: ItemProps): Element | Null = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasClassNameDirectionIndexSizeMarginDirectionChildrenSplit: ItemProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNameDirectionIndexSizeMarginDirectionChildrenSplit.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
   trait ItemProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: String = js.native
+    var className: String
     
-    var direction: js.UndefOr[horizontal | vertical] = js.native
+    var direction: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var index: Double = js.native
+    var index: Double
     
-    var marginDirection: marginLeft | marginRight = js.native
+    var marginDirection: marginLeft | marginRight
     
-    var size: js.UndefOr[SizeType | Double] = js.native
+    var size: js.UndefOr[SizeType | Double] = js.undefined
     
-    var split: js.UndefOr[String | ReactNode] = js.native
+    var split: js.UndefOr[String | ReactNode] = js.undefined
   }
   object ItemProps {
     

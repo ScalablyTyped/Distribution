@@ -10,10 +10,13 @@ import typings.expoConfigureSplashScreen.splashScreenConfigMod.AndroidSplashScre
 import typings.expoConfigureSplashScreen.splashScreenConfigMod.IosSplashScreenConfigJSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@expo/configure-splash-screen/build", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object SplashScreenImageResizeMode {
     
@@ -45,11 +48,9 @@ object mod {
     val LIGHT_CONTENT: `light-content` = js.native
   }
   
-  @JSImport("@expo/configure-splash-screen/build", "configureAndroidSplashScreen")
-  @js.native
-  def configureAndroidSplashScreen(projectRootPath: String, configJSON: AndroidSplashScreenConfigJSON): js.Promise[Unit] = js.native
+  @scala.inline
+  def configureAndroidSplashScreen(projectRootPath: String, configJSON: AndroidSplashScreenConfigJSON): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("configureAndroidSplashScreen")(projectRootPath.asInstanceOf[js.Any], configJSON.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@expo/configure-splash-screen/build", "configureIosSplashScreen")
-  @js.native
-  def configureIosSplashScreen(projectRootPath: String, config: IosSplashScreenConfigJSON): js.Promise[Unit] = js.native
+  @scala.inline
+  def configureIosSplashScreen(projectRootPath: String, config: IosSplashScreenConfigJSON): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("configureIosSplashScreen")(projectRootPath.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

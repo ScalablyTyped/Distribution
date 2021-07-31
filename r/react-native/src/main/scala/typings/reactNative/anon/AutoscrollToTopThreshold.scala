@@ -2,15 +2,13 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoscrollToTopThreshold extends StObject {
   
-  var autoscrollToTopThreshold: js.UndefOr[Double | Null] = js.native
+  var autoscrollToTopThreshold: js.UndefOr[Double | Null] = js.undefined
   
-  var minIndexForVisible: Double = js.native
+  var minIndexForVisible: Double
 }
 object AutoscrollToTopThreshold {
   

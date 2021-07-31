@@ -2,34 +2,36 @@ package typings.ink.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisabledFocusIds extends StObject {
   
-  var activeFocusId: js.UndefOr[scala.Nothing] = js.native
+  var activeFocusId: Unit
   
-  var disabledFocusIds: js.Array[scala.Nothing] = js.native
+  var disabledFocusIds: js.Array[scala.Nothing]
   
-  var focusIds: js.Array[scala.Nothing] = js.native
+  var focusIds: js.Array[scala.Nothing]
   
-  var isFocusEnabled: Boolean = js.native
+  var isFocusEnabled: Boolean
 }
 object DisabledFocusIds {
   
   @scala.inline
   def apply(
+    activeFocusId: Unit,
     disabledFocusIds: js.Array[scala.Nothing],
     focusIds: js.Array[scala.Nothing],
     isFocusEnabled: Boolean
   ): DisabledFocusIds = {
-    val __obj = js.Dynamic.literal(disabledFocusIds = disabledFocusIds.asInstanceOf[js.Any], focusIds = focusIds.asInstanceOf[js.Any], isFocusEnabled = isFocusEnabled.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activeFocusId = activeFocusId.asInstanceOf[js.Any], disabledFocusIds = disabledFocusIds.asInstanceOf[js.Any], focusIds = focusIds.asInstanceOf[js.Any], isFocusEnabled = isFocusEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisabledFocusIds]
   }
   
   @scala.inline
   implicit class DisabledFocusIdsMutableBuilder[Self <: DisabledFocusIds] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setActiveFocusId(value: Unit): Self = StObject.set(x, "activeFocusId", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDisabledFocusIds(value: js.Array[scala.Nothing]): Self = StObject.set(x, "disabledFocusIds", value.asInstanceOf[js.Any])

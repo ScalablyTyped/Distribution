@@ -12,7 +12,7 @@ IRI parsing and IRI-URI conversion utilities
 | Keywords           | IRI |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 8569 |
+| # downloads        | 10292 |
 | # stars            | 0 |
 
 ## Links

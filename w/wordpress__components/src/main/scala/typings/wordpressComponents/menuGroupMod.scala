@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.wordpressComponents.menuGroupMod.MenuGroup.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuGroupMod {
@@ -25,14 +24,13 @@ object menuGroupMod {
   
   object MenuGroup {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
-      var label: js.UndefOr[ReactNode] = js.native
+      var label: js.UndefOr[ReactNode] = js.undefined
     }
     object Props {
       

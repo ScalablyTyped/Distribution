@@ -2,16 +2,14 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Array of guest attribute namespace/key/value tuples.
   */
-@js.native
 trait SchemaGuestAttributesValue extends StObject {
   
-  var items: js.UndefOr[js.Array[SchemaGuestAttributesEntry]] = js.native
+  var items: js.UndefOr[js.Array[SchemaGuestAttributesEntry]] = js.undefined
 }
 object SchemaGuestAttributesValue {
   

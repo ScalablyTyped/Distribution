@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Statement extends StObject {
   
   /**
     * A collection of message objects.
     */
-  var messages: MessageList = js.native
+  var messages: MessageList
   
   /**
     *  At runtime, if the client is using the PostText API, Amazon Lex includes the response card in the response. It substitutes all of the session attributes and slot values for placeholders in the response card. 
     */
-  var responseCard: js.UndefOr[ResponseCard] = js.native
+  var responseCard: js.UndefOr[ResponseCard] = js.undefined
 }
 object Statement {
   

@@ -6,7 +6,6 @@ import typings.std.RegExp
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,20 +15,23 @@ object mod {
     */
   @JSImport("compression-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^[O] () extends CompressionPlugin[O] {
+  class ^[O] ()
+    extends StObject
+       with CompressionPlugin[O] {
     def this(options: Options[O]) = this()
   }
+  @JSImport("compression-webpack-plugin", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("compression-webpack-plugin", "isWebpack4")
-  @js.native
-  def isWebpack4(): Boolean = js.native
+  @scala.inline
+  def isWebpack4(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebpack4")().asInstanceOf[Boolean]
   
   type Algorithm[O] = js.Function3[/* source */ String, /* options */ O, /* callback */ AlgorithmCallback, Unit]
   
   type AlgorithmCallback = js.Function2[/* error */ Error | Null, /* result */ Uint8Array, Unit]
   
-  @js.native
   trait BaseOptions extends StObject {
     
     /**
@@ -37,45 +39,45 @@ object mod {
       * ⚠ Ignored in webpack 5! Please use webpack.js.org/configuration/other-options/#cache.
       * @default true
       */
-    var cache: js.UndefOr[Boolean | String] = js.native
+    var cache: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * @default false
       */
-    var deleteOriginalAssets: js.UndefOr[Boolean] = js.native
+    var deleteOriginalAssets: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Exclude all assets matching any of these conditions
       */
-    var exclude: js.UndefOr[Rules] = js.native
+    var exclude: js.UndefOr[Rules] = js.undefined
     
     /**
       * The target asset filename.
       * @default '[path].gz[query]'
       */
-    var filename: js.UndefOr[String | FilenameFunction] = js.native
+    var filename: js.UndefOr[String | FilenameFunction] = js.undefined
     
     /**
       * Include all assets matching any of these conditions
       */
-    var include: js.UndefOr[Rules] = js.native
+    var include: js.UndefOr[Rules] = js.undefined
     
     /**
       * Only assets that compress better than this ratio are processed (minRatio = Compressed Size / Original Size)
       * @default 0.8
       */
-    var minRatio: js.UndefOr[Double] = js.native
+    var minRatio: js.UndefOr[Double] = js.undefined
     
     /**
       * Include all assets that pass test assertion
       */
-    var test: js.UndefOr[Rules] = js.native
+    var test: js.UndefOr[Rules] = js.undefined
     
     /**
       * Only assets bigger than this size are processed (in bytes)
       * @default 0
       */
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object BaseOptions {
     
@@ -154,7 +156,9 @@ object mod {
     * Prepare compressed versions of assets to serve them with Content-Encoding.
     */
   @js.native
-  trait CompressionPlugin[O] extends Plugin {
+  trait CompressionPlugin[O]
+    extends StObject
+       with Plugin {
     
     @JSName("apply")
     def apply(
@@ -162,29 +166,49 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait CustomOptions[O]
-    extends BaseOptions
+    extends StObject
+       with BaseOptions
        with Options[O] {
     
-    def algorithm(source: String, options: O, callback: AlgorithmCallback): Unit = js.native
+    def algorithm(source: String, options: O, callback: AlgorithmCallback): Unit
     @JSName("algorithm")
-    var algorithm_Original: Algorithm[O] = js.native
+    var algorithm_Original: Algorithm[O]
     
-    var compressionOptions: js.UndefOr[O] = js.native
+    var compressionOptions: js.UndefOr[O] = js.undefined
+  }
+  object CustomOptions {
+    
+    @scala.inline
+    def apply[O](algorithm: (/* source */ String, O, /* callback */ AlgorithmCallback) => Unit): CustomOptions[O] = {
+      val __obj = js.Dynamic.literal(algorithm = js.Any.fromFunction3(algorithm))
+      __obj.asInstanceOf[CustomOptions[O]]
+    }
+    
+    @scala.inline
+    implicit class CustomOptionsMutableBuilder[Self <: CustomOptions[?], O] (val x: Self & CustomOptions[O]) extends AnyVal {
+      
+      @scala.inline
+      def setAlgorithm(value: (/* source */ String, O, /* callback */ AlgorithmCallback) => Unit): Self = StObject.set(x, "algorithm", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setCompressionOptions(value: O): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
+    }
   }
   
-  @js.native
   trait FileInfo extends StObject {
     
     /** original asset filename */
-    var file: String = js.native
+    var file: String
     
     /** path of the original asset */
-    var path: String = js.native
+    var path: String
     
     /** query */
-    var query: String = js.native
+    var query: String
   }
   object FileInfo {
     
@@ -215,6 +239,20 @@ object mod {
     - typings.compressionWebpackPlugin.mod.CustomOptions[O]
   */
   trait Options[O] extends StObject
+  object Options {
+    
+    @scala.inline
+    def CustomOptions[O](algorithm: (/* source */ String, O, /* callback */ AlgorithmCallback) => Unit): typings.compressionWebpackPlugin.mod.CustomOptions[O] = {
+      val __obj = js.Dynamic.literal(algorithm = js.Any.fromFunction3(algorithm))
+      __obj.asInstanceOf[typings.compressionWebpackPlugin.mod.CustomOptions[O]]
+    }
+    
+    @scala.inline
+    def ZlibOptions(): typings.compressionWebpackPlugin.mod.ZlibOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.compressionWebpackPlugin.mod.ZlibOptions]
+    }
+  }
   
   /** Filtering rule as regex or string */
   type Rule = String | RegExp
@@ -245,22 +283,22 @@ object mod {
     def gzip: typings.compressionWebpackPlugin.compressionWebpackPluginStrings.gzip = "gzip".asInstanceOf[typings.compressionWebpackPlugin.compressionWebpackPluginStrings.gzip]
   }
   
-  @js.native
   trait ZlibOptions
-    extends BaseOptions
+    extends StObject
+       with BaseOptions
        with Options[js.Any] {
     
     /**
       * The compression algorithm/function
       * @default 'gzip'
       */
-    var algorithm: js.UndefOr[ZlibAlgorithm] = js.native
+    var algorithm: js.UndefOr[ZlibAlgorithm] = js.undefined
     
     /**
       * Compression options for algorithm
       * @default { level: 9 }
       */
-    var compressionOptions: js.UndefOr[typings.node.zlibMod.ZlibOptions] = js.native
+    var compressionOptions: js.UndefOr[typings.node.zlibMod.ZlibOptions] = js.undefined
   }
   object ZlibOptions {
     

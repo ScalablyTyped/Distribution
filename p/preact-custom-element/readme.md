@@ -10,9 +10,9 @@ Wrap your component up as a custom element
 | ------------------ | :-------------: |
 | Full name          | preact-custom-element |
 | Keywords           | preact, web, components, custom, element |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 2043 |
+| # releases         | 5 |
+| # dependents       | 8 |
+| # downloads        | 5216 |
 | # stars            | 1 |
 
 ## Links

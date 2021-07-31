@@ -8,7 +8,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageStripMod {
@@ -16,12 +15,11 @@ object messageStripMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/MessageStrip/MessageStrip.MessageStripProps> & {  displayName :'MessageStrip'} */
   object default {
     
-    @JSImport("fundamental-react/lib/MessageStrip/MessageStrip", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[MessageStripProps]): ReactElement | Null = js.native
-    @JSImport("fundamental-react/lib/MessageStrip/MessageStrip", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[MessageStripProps], context: js.Any): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: PropsWithChildren[MessageStripProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
+    def apply(props: PropsWithChildren[MessageStripProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("fundamental-react/lib/MessageStrip/MessageStrip", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -51,30 +49,29 @@ object messageStripMod {
     def propTypes_=(x: js.UndefOr[WeakValidationMapMessageS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait MessageStripProps extends StObject {
     
-    var buttonProps: js.UndefOr[js.Any] = js.native
+    var buttonProps: js.UndefOr[js.Any] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
     
-    var dismissible: js.UndefOr[Boolean] = js.native
+    var dismissible: js.UndefOr[Boolean] = js.undefined
     
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
-    var linkProps: js.UndefOr[js.Any] = js.native
+    var linkProps: js.UndefOr[js.Any] = js.undefined
     
-    var linkText: js.UndefOr[String] = js.native
+    var linkText: js.UndefOr[String] = js.undefined
     
-    var localizedText: js.UndefOr[js.Any] = js.native
+    var localizedText: js.UndefOr[js.Any] = js.undefined
     
-    var noGlyph: js.UndefOr[Boolean] = js.native
+    var noGlyph: js.UndefOr[Boolean] = js.undefined
     
-    var onCloseClicked: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onCloseClicked: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
   }
   object MessageStripProps {
     
@@ -142,7 +139,7 @@ object messageStripMod {
       def setNoGlyphUndefined: Self = StObject.set(x, "noGlyph", js.undefined)
       
       @scala.inline
-      def setOnCloseClicked(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onCloseClicked", js.Any.fromFunction1(value))
+      def setOnCloseClicked(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onCloseClicked", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCloseClickedUndefined: Self = StObject.set(x, "onCloseClicked", js.undefined)

@@ -2,16 +2,14 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteVirtualInterfaceRequest extends StObject {
   
   /**
     * The ID of the virtual interface.
     */
-  var virtualInterfaceId: VirtualInterfaceId = js.native
+  var virtualInterfaceId: VirtualInterfaceId
 }
 object DeleteVirtualInterfaceRequest {
   

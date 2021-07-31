@@ -2,29 +2,29 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait translateMarkerOptions extends CommonCallbackOptions {
+trait translateMarkerOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   //  动画结束回调函数
-  var animationEnd: js.UndefOr[js.Function0[Unit]] = js.native
+  var animationEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   //  移动过程中是否自动旋转 marker
-  var autoRotate: Boolean = js.native
+  var autoRotate: Boolean
   
   //  指定 marker 移动到的目标点
-  var destination: LocationBaseOptions = js.native
+  var destination: LocationBaseOptions
   
   //  动画持续时长，平移与旋转分别计算
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   //  指定 marker
-  var markerId: Double = js.native
+  var markerId: Double
   
   //  marker 的旋转角度
-  var rotate: Double = js.native
+  var rotate: Double
 }
 object translateMarkerOptions {
   

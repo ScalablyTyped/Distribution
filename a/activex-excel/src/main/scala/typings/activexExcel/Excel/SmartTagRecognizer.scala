@@ -2,28 +2,26 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartTagRecognizer extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   @JSName("Excel.SmartTagRecognizer_typekey")
-  var ExcelDotSmartTagRecognizer_typekey: SmartTagRecognizer = js.native
+  var ExcelDotSmartTagRecognizer_typekey: SmartTagRecognizer
   
-  val FullName: String = js.native
+  val FullName: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val _Default: String = js.native
+  val _Default: String
   
-  val progID: String = js.native
+  val progID: String
 }
 object SmartTagRecognizer {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindFullHashesRequest extends StObject {
   
   /** Client metadata associated with callers of higher-level APIs built on top of the client's implementation. */
-  var apiClient: js.UndefOr[ClientInfo] = js.native
+  var apiClient: js.UndefOr[ClientInfo] = js.undefined
   
   /** The client metadata. */
-  var client: js.UndefOr[ClientInfo] = js.native
+  var client: js.UndefOr[ClientInfo] = js.undefined
   
   /** The current client states for each of the client's local threat lists. */
-  var clientStates: js.UndefOr[js.Array[String]] = js.native
+  var clientStates: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The lists and hashes to be checked. */
-  var threatInfo: js.UndefOr[ThreatInfo] = js.native
+  var threatInfo: js.UndefOr[ThreatInfo] = js.undefined
 }
 object FindFullHashesRequest {
   

@@ -2,45 +2,43 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsCreateEndpoint extends StObject {
   
   /**
     * The name of the branch you want the changes pulled into. This should be an existing branch on the current repository. You cannot submit a pull request to one repository that requests a merge to a base of another repository.
     */
-  var base: String = js.native
+  var base: String
   
   /**
     * The contents of the pull request.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the pull request is a draft. See "[Draft Pull Requests](https://docs.github.com/en/articles/about-pull-requests#draft-pull-requests)" in the GitHub Help documentation to learn more.
     */
-  var draft: js.UndefOr[Boolean] = js.native
+  var draft: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the branch where your changes are implemented. For cross-repository pull requests in the same network, namespace `head` with a user like this: `username:branch`.
     */
-  var head: String = js.native
+  var head: String
   
   /**
     * Indicates whether [maintainers can modify](https://docs.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/) the pull request.
     */
-  var maintainer_can_modify: js.UndefOr[Boolean] = js.native
+  var maintainer_can_modify: js.UndefOr[Boolean] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * The title of the new pull request.
     */
-  var title: String = js.native
+  var title: String
 }
 object PullsCreateEndpoint {
   

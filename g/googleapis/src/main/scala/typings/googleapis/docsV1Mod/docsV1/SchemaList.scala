@@ -3,7 +3,6 @@ package typings.googleapis.docsV1Mod.docsV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,30 +10,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * belong to the same list. A paragraph that is part of a list has a reference
   * to the list&#39;s ID in its bullet.
   */
-@js.native
 trait SchemaList extends StObject {
   
   /**
     * The properties of the list.
     */
-  var listProperties: js.UndefOr[SchemaListProperties] = js.native
+  var listProperties: js.UndefOr[SchemaListProperties] = js.undefined
   
   /**
     * The suggested deletion IDs. If empty, then there are no suggested
     * deletions of this list.
     */
-  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The suggested insertion ID. If empty, then this is not a suggested
     * insertion.
     */
-  var suggestedInsertionId: js.UndefOr[String] = js.native
+  var suggestedInsertionId: js.UndefOr[String] = js.undefined
   
   /**
     * The suggested changes to the list properties, keyed by suggestion ID.
     */
-  var suggestedListPropertiesChanges: js.UndefOr[StringDictionary[SchemaSuggestedListProperties]] = js.native
+  var suggestedListPropertiesChanges: js.UndefOr[StringDictionary[SchemaSuggestedListProperties]] = js.undefined
 }
 object SchemaList {
   

@@ -2,17 +2,15 @@ package typings.nodeWaves
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Delay extends StObject {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
   }
   object Delay {
     
@@ -39,13 +37,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var position: js.UndefOr[X] = js.native
+    var position: js.UndefOr[X] = js.undefined
     
     @JSName("wait")
-    var wait_FPosition: js.UndefOr[Double] = js.native
+    var wait_FPosition: js.UndefOr[Double] = js.undefined
   }
   object Position {
     
@@ -72,12 +69,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

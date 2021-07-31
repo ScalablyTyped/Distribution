@@ -2,29 +2,29 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Reindex[T] extends Generic {
+trait Reindex[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var max_docs: js.UndefOr[Double] = js.native
+  var max_docs: js.UndefOr[Double] = js.undefined
   
-  var refresh: js.UndefOr[Boolean] = js.native
+  var refresh: js.UndefOr[Boolean] = js.undefined
   
-  var requests_per_second: js.UndefOr[Double] = js.native
+  var requests_per_second: js.UndefOr[Double] = js.undefined
   
-  var scroll: js.UndefOr[String] = js.native
+  var scroll: js.UndefOr[String] = js.undefined
   
-  var slices: js.UndefOr[Double | String] = js.native
+  var slices: js.UndefOr[Double | String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var wait_for_active_shards: js.UndefOr[String] = js.native
+  var wait_for_active_shards: js.UndefOr[String] = js.undefined
   
-  var wait_for_completion: js.UndefOr[Boolean] = js.native
+  var wait_for_completion: js.UndefOr[Boolean] = js.undefined
 }
 object Reindex {
   
@@ -35,7 +35,7 @@ object Reindex {
   }
   
   @scala.inline
-  implicit class ReindexMutableBuilder[Self <: Reindex[_], T] (val x: Self with Reindex[T]) extends AnyVal {
+  implicit class ReindexMutableBuilder[Self <: Reindex[?], T] (val x: Self & Reindex[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

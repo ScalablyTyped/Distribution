@@ -15,7 +15,6 @@ import typings.yaml.utilMod.Type.QUOTE_SINGLE
 import typings.yaml.utilMod.Type.SEQ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AST {
@@ -86,21 +85,21 @@ object AST {
     var type_FlowSeq: FLOW_SEQ = js.native
   }
   
-  @js.native
   trait NodeToJsonContext
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var anchors: js.UndefOr[js.Array[_]] = js.native
+    var anchors: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var doc: Document = js.native
+    var doc: Document
     
-    var keep: js.UndefOr[Boolean] = js.native
+    var keep: js.UndefOr[Boolean] = js.undefined
     
-    var mapAsMap: js.UndefOr[Boolean] = js.native
+    var mapAsMap: js.UndefOr[Boolean] = js.undefined
     
-    var maxAliasCount: js.UndefOr[Double] = js.native
+    var maxAliasCount: js.UndefOr[Double] = js.undefined
     
-    var onCreate: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.native
+    var onCreate: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
   }
   object NodeToJsonContext {
     
@@ -114,7 +113,7 @@ object AST {
     implicit class NodeToJsonContextMutableBuilder[Self <: NodeToJsonContext] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAnchors(value: js.Array[_]): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
+      def setAnchors(value: js.Array[js.Any]): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnchorsUndefined: Self = StObject.set(x, "anchors", js.undefined)

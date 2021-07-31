@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTagsInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource whose tags you want to delete.
     */
-  var ResourceArn: typings.awsSdk.sagemakerMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.sagemakerMod.ResourceArn
   
   /**
     * An array or one or more tag keys to delete.
     */
-  var TagKeys: TagKeyList = js.native
+  var TagKeys: TagKeyList
 }
 object DeleteTagsInput {
   

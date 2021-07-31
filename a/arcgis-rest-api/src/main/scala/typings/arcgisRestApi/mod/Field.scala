@@ -2,19 +2,17 @@ package typings.arcgisRestApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Field extends StObject {
   
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Field {
   

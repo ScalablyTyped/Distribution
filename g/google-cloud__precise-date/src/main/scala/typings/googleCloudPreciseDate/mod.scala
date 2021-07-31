@@ -3,14 +3,15 @@ package typings.googleCloudPreciseDate
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@google-cloud/precise-date", "PreciseDate")
   @js.native
-  class PreciseDate () extends Date {
+  class PreciseDate ()
+    extends StObject
+       with Date {
     def this(preciseTime: String) = this()
     def this(preciseTime: js.BigInt) = this()
     def this(preciseTime: DateTuple) = this()
@@ -203,6 +204,10 @@ object mod {
   /* static members */
   object PreciseDate {
     
+    @JSImport("@google-cloud/precise-date", "PreciseDate")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Accepts the same number parameters as the PreciseDate constructor, but
       * treats them as UTC. It returns a string that represents the number of
@@ -223,9 +228,8 @@ object mod {
       * const time = PreciseDate.fullUTC(2019, 1, 8, 10, 34, 29, 481, 145, 231);
       * console.log(time); // expected output: 1549622069481145231n
       */
-    @JSImport("@google-cloud/precise-date", "PreciseDate.fullUTC")
-    @js.native
-    def fullUTC(args: Double*): js.BigInt = js.native
+    @scala.inline
+    def fullUTC(args: Double*): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("fullUTC")(args.asInstanceOf[js.Any]).asInstanceOf[js.BigInt]
     
     /**
       * Accepts the same number parameters as the PreciseDate constructor, but
@@ -241,9 +245,8 @@ object mod {
       * const time = PreciseDate.fullUTCString(2019, 1, 8, 10, 34, 29, 481, 145,
       * 231); console.log(time); // expected output: '1549622069481145231'
       */
-    @JSImport("@google-cloud/precise-date", "PreciseDate.fullUTCString")
-    @js.native
-    def fullUTCString(args: Double*): String = js.native
+    @scala.inline
+    def fullUTCString(args: Double*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullUTCString")(args.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Parses a precise time.
@@ -275,26 +278,21 @@ object mod {
       * const time = PreciseDate.parseFull(struct);
       * console.log(time); // expected output: "1549622069481145231"
       */
-    @JSImport("@google-cloud/precise-date", "PreciseDate.parseFull")
-    @js.native
-    def parseFull(time: String): String = js.native
-    @JSImport("@google-cloud/precise-date", "PreciseDate.parseFull")
-    @js.native
-    def parseFull(time: js.BigInt): String = js.native
-    @JSImport("@google-cloud/precise-date", "PreciseDate.parseFull")
-    @js.native
-    def parseFull(time: DateTuple): String = js.native
-    @JSImport("@google-cloud/precise-date", "PreciseDate.parseFull")
-    @js.native
-    def parseFull(time: ProtobufDate): String = js.native
+    @scala.inline
+    def parseFull(time: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFull")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def parseFull(time: js.BigInt): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFull")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def parseFull(time: DateTuple): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFull")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def parseFull(time: ProtobufDate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFull")(time.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @js.native
   trait DateStruct extends StObject {
     
-    var nanos: Double = js.native
+    var nanos: Double
     
-    var seconds: Double = js.native
+    var seconds: Double
   }
   object DateStruct {
     
@@ -317,10 +315,9 @@ object mod {
   
   type DateTuple = js.Tuple2[Double, Double]
   
-  @js.native
   trait Long extends StObject {
     
-    def toNumber(): Double = js.native
+    def toNumber(): Double
   }
   object Long {
     
@@ -338,12 +335,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ProtobufDate extends StObject {
     
-    var nanos: js.UndefOr[Double | String] = js.native
+    var nanos: js.UndefOr[Double | String] = js.undefined
     
-    var seconds: js.UndefOr[Double | String | Long] = js.native
+    var seconds: js.UndefOr[Double | String | Long] = js.undefined
   }
   object ProtobufDate {
     

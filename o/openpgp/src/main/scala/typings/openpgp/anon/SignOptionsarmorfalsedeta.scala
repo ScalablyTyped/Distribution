@@ -8,56 +8,54 @@ import typings.openpgp.openpgpStrings.web
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined openpgp.openpgp.SignOptions & {  armor :false,   detached :false | undefined} */
-@js.native
 trait SignOptionsarmorfalsedeta extends StObject {
   
   /**
     * (optional) if the return value should be ascii armored or the message object
     */
-  var armor: js.UndefOr[Boolean] with `false` = js.native
+  var armor: js.UndefOr[Boolean] & `false`
   
   /**
     * (optional) override the creation date of the signature
     */
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
   /**
     * (optional) if the return value should contain a detached signature
     */
-  var detached: js.UndefOr[Boolean] with js.UndefOr[`false`] = js.native
+  var detached: js.UndefOr[Boolean] & js.UndefOr[`false`]
   
   /**
     *  (optional) array of user IDs to sign with, one per key in `privateKeys`, e.g. [ { name:'Steve Sender', email:'steve@openpgp.org' }]
     */
-  var fromUserIds: js.UndefOr[js.Array[UserID]] = js.native
+  var fromUserIds: js.UndefOr[js.Array[UserID]] = js.undefined
   
   /**
     * (cleartext) message to be signed
     */
-  var message: CleartextMessage | typings.openpgp.mod.message.Message = js.native
+  var message: CleartextMessage | typings.openpgp.mod.message.Message
   
   /**
     * array of keys or single key with decrypted secret key data to sign cleartext
     */
-  var privateKeys: typings.openpgp.mod.key.Key | js.Array[_] = js.native
+  var privateKeys: typings.openpgp.mod.key.Key | js.Array[js.Any]
   
   /**
     * (optional) whether to return data as a stream. Defaults to the type of stream `message` was created from, if any.
     */
-  var streaming: js.UndefOr[web | node | `false`] = js.native
+  var streaming: js.UndefOr[web | node | `false`] = js.undefined
 }
 object SignOptionsarmorfalsedeta {
   
   @scala.inline
   def apply(
-    armor: js.UndefOr[Boolean] with `false`,
-    detached: js.UndefOr[Boolean] with js.UndefOr[`false`],
+    armor: js.UndefOr[Boolean] & `false`,
+    detached: js.UndefOr[Boolean] & js.UndefOr[`false`],
     message: CleartextMessage | typings.openpgp.mod.message.Message,
-    privateKeys: typings.openpgp.mod.key.Key | js.Array[_]
+    privateKeys: typings.openpgp.mod.key.Key | js.Array[js.Any]
   ): SignOptionsarmorfalsedeta = {
     val __obj = js.Dynamic.literal(armor = armor.asInstanceOf[js.Any], detached = detached.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], privateKeys = privateKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignOptionsarmorfalsedeta]
@@ -67,7 +65,7 @@ object SignOptionsarmorfalsedeta {
   implicit class SignOptionsarmorfalsedetaMutableBuilder[Self <: SignOptionsarmorfalsedeta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArmor(value: js.UndefOr[Boolean] with `false`): Self = StObject.set(x, "armor", value.asInstanceOf[js.Any])
+    def setArmor(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "armor", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
@@ -76,7 +74,7 @@ object SignOptionsarmorfalsedeta {
     def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def setDetached(value: js.UndefOr[Boolean] with js.UndefOr[`false`]): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+    def setDetached(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFromUserIds(value: js.Array[UserID]): Self = StObject.set(x, "fromUserIds", value.asInstanceOf[js.Any])
@@ -91,7 +89,7 @@ object SignOptionsarmorfalsedeta {
     def setMessage(value: CleartextMessage | typings.openpgp.mod.message.Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateKeys(value: typings.openpgp.mod.key.Key | js.Array[_]): Self = StObject.set(x, "privateKeys", value.asInstanceOf[js.Any])
+    def setPrivateKeys(value: typings.openpgp.mod.key.Key | js.Array[js.Any]): Self = StObject.set(x, "privateKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPrivateKeysVarargs(value: js.Any*): Self = StObject.set(x, "privateKeys", js.Array(value :_*))

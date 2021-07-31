@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEventSubscriptionMessage extends StObject {
   
   /**
     * The name of the DMS event notification subscription to be deleted.
     */
-  var SubscriptionName: String = js.native
+  var SubscriptionName: String
 }
 object DeleteEventSubscriptionMessage {
   

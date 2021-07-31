@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,8 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Both types may be implemented by the same object. When calling the sort method however properties from different descriptors must not be mixed.
   */
-@js.native
-trait XSortable extends XInterface {
+trait XSortable
+  extends StObject
+     with XInterface {
   
   /**
     * @returns a sequence of properties which allows to specify/modify the sort criteria.  The set of properties is specific to the type of object that implemen
@@ -37,7 +37,7 @@ trait XSortable extends XInterface {
     * @see com.sun.star.table.TableSortDescriptor2
     * @see com.sun.star.text.TextSortDescriptor2
     */
-  def createSortDescriptor(): SafeArray[PropertyValue] = js.native
+  def createSortDescriptor(): SafeArray[PropertyValue]
   
   /**
     * sorts the contents of the object according to the specified properties.
@@ -50,7 +50,7 @@ trait XSortable extends XInterface {
     * @see com.sun.star.table.TableSortDescriptor2
     * @see com.sun.star.text.TextSortDescriptor2
     */
-  def sort(xDescriptor: SeqEquiv[PropertyValue]): Unit = js.native
+  def sort(xDescriptor: SeqEquiv[PropertyValue]): Unit
 }
 object XSortable {
   

@@ -4,15 +4,15 @@
 Typings are for version 1.3.1
 
 ## Library description:
-Faster HTML entities encode/decode library.
+Fastest HTML entities encode/decode library.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | html-entities |
 | Keywords           | html, html entities, html entities encode, html entities decode, entities, entities encode, entities decode |
-| # releases         | 3 |
-| # dependents       | 719 |
-| # downloads        | 364364485 |
+| # releases         | 12 |
+| # dependents       | 740 |
+| # downloads        | 399398912 |
 | # stars            | 37 |
 
 ## Links

@@ -5,33 +5,31 @@ import typings.figma.figmaStrings.INSIDE
 import typings.figma.figmaStrings.OUTSIDE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeometryMixin extends StObject {
   
-  var dashPattern: js.Array[Double] = js.native
+  var dashPattern: js.Array[Double]
   
-  var fillStyleId: String | js.Symbol = js.native
+  var fillStyleId: String | js.Symbol
   
-  var fills: js.Array[Paint] | js.Symbol = js.native
+  var fills: js.Array[Paint] | js.Symbol
   
-  def outlineStroke(): VectorNode | Null = js.native
+  def outlineStroke(): VectorNode | Null
   
-  var strokeAlign: CENTER | INSIDE | OUTSIDE = js.native
+  var strokeAlign: CENTER | INSIDE | OUTSIDE
   
-  var strokeCap: StrokeCap | js.Symbol = js.native
+  var strokeCap: StrokeCap | js.Symbol
   
-  var strokeJoin: StrokeJoin | js.Symbol = js.native
+  var strokeJoin: StrokeJoin | js.Symbol
   
-  var strokeMiterLimit: Double = js.native
+  var strokeMiterLimit: Double
   
-  var strokeStyleId: String = js.native
+  var strokeStyleId: String
   
-  var strokeWeight: Double = js.native
+  var strokeWeight: Double
   
-  var strokes: js.Array[Paint] = js.native
+  var strokes: js.Array[Paint]
 }
 object GeometryMixin {
   

@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Accessibility.GetPartialAXTreeReque
 import typings.devtoolsProtocol.mod.Protocol.Accessibility.GetPartialAXTreeResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetPartialAXTreeResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[GetPartialAXTreeRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[GetPartialAXTreeRequest]]
   
-  var returnType: GetPartialAXTreeResponse = js.native
+  var returnType: GetPartialAXTreeResponse
 }
 object ReturnTypeGetPartialAXTreeResponse {
   

@@ -6,21 +6,19 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISmsDeviceMessageStore extends StObject {
   
-  def deleteMessageAsync(messageId: Double): IAsyncAction = js.native
+  def deleteMessageAsync(messageId: Double): IAsyncAction
   
-  def deleteMessagesAsync(messageFilter: SmsMessageFilter): IAsyncAction = js.native
+  def deleteMessagesAsync(messageFilter: SmsMessageFilter): IAsyncAction
   
-  def getMessageAsync(messageId: Double): IAsyncOperation[ISmsMessage] = js.native
+  def getMessageAsync(messageId: Double): IAsyncOperation[ISmsMessage]
   
-  def getMessagesAsync(messageFilter: SmsMessageFilter): IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double] = js.native
+  def getMessagesAsync(messageFilter: SmsMessageFilter): IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double]
   
-  var maxMessages: Double = js.native
+  var maxMessages: Double
 }
 object ISmsDeviceMessageStore {
   

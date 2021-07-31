@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProblemDetail extends StObject {
   
   /**
     * The problem detail's ARN.
     */
-  var arn: js.UndefOr[AmazonResourceName] = js.native
+  var arn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * The problem detail's name.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
 }
 object ProblemDetail {
   

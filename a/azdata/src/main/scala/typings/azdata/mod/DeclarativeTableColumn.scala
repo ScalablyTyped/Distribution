@@ -2,21 +2,19 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeclarativeTableColumn extends StObject {
   
-  var categoryValues: js.UndefOr[js.Array[CategoryValue]] = js.native
+  var categoryValues: js.UndefOr[js.Array[CategoryValue]] = js.undefined
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var isReadOnly: Boolean = js.native
+  var isReadOnly: Boolean
   
-  var valueType: DeclarativeDataType = js.native
+  var valueType: DeclarativeDataType
   
-  var width: Double | String = js.native
+  var width: Double | String
 }
 object DeclarativeTableColumn {
   

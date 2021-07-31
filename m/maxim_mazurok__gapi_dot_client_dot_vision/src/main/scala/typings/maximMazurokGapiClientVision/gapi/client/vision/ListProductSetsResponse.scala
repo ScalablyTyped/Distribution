@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProductSetsResponse extends StObject {
   
   /** Token to retrieve the next page of results, or empty if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** List of ProductSets. */
-  var productSets: js.UndefOr[js.Array[ProductSet]] = js.native
+  var productSets: js.UndefOr[js.Array[ProductSet]] = js.undefined
 }
 object ListProductSetsResponse {
   

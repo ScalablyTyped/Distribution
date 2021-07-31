@@ -2,69 +2,67 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service describes a {@link MeasureShape} . */
-@js.native
 trait MeasureProperties extends StObject {
   
   /** If this property is `TRUE` , the measure is drawn below the reference edge instead of above it. */
-  var MeasureBelowReferenceEdge: Boolean = js.native
+  var MeasureBelowReferenceEdge: Boolean
   
   /**
     * This value is the number of decimal places that is used to format the measure value.
     * @since OOo 1.1.2
     */
-  var MeasureDecimalPlaces: Double = js.native
+  var MeasureDecimalPlaces: Double
   
   /** This is the length of the first help line. */
-  var MeasureHelpLine1Length: Double = js.native
+  var MeasureHelpLine1Length: Double
   
   /** This is the length of the second help line. */
-  var MeasureHelpLine2Length: Double = js.native
+  var MeasureHelpLine2Length: Double
   
   /** This is the distance from the measure line to the start of the help lines. */
-  var MeasureHelpLineDistance: Double = js.native
+  var MeasureHelpLineDistance: Double
   
   /** This is the overhang of the two help lines. */
-  var MeasureHelpLineOverhang: Double = js.native
+  var MeasureHelpLineOverhang: Double
   
   /** This enumeration specifies the MeasureKind. */
-  var MeasureKind: typings.activexLibreoffice.com_.sun.star.drawing.MeasureKind = js.native
+  var MeasureKind: typings.activexLibreoffice.com_.sun.star.drawing.MeasureKind
   
   /** This is the distance from the reference edge to the measure line. */
-  var MeasureLineDistance: Double = js.native
+  var MeasureLineDistance: Double
   
   /** This is the overhang of the reference line over the help lines. */
-  var MeasureOverhang: Double = js.native
+  var MeasureOverhang: Double
   
   /** If this is `TRUE` , the unit of measure is shown in the measure text. */
-  var MeasureShowUnit: Boolean = js.native
+  var MeasureShowUnit: Boolean
   
   /** If this is `TRUE` , the angle of the measure is set automatically. */
-  var MeasureTextAutoAngle: Boolean = js.native
+  var MeasureTextAutoAngle: Boolean
   
   /** This is the automatic angle. */
-  var MeasureTextAutoAngleView: Double = js.native
+  var MeasureTextAutoAngleView: Double
   
   /** This is the fixed angle. */
-  var MeasureTextFixedAngle: Double = js.native
+  var MeasureTextFixedAngle: Double
   
   /** This is the horizontal position of the measure text. */
-  var MeasureTextHorizontalPosition: MeasureTextHorzPos = js.native
+  var MeasureTextHorizontalPosition: MeasureTextHorzPos
   
   /** If this value is `TRUE` , the measure has a fixed angle. */
-  var MeasureTextIsFixedAngle: Boolean = js.native
+  var MeasureTextIsFixedAngle: Boolean
   
   /** If this value is `TRUE` , the text is rotated 90 degrees. */
-  var MeasureTextRotate90: Boolean = js.native
+  var MeasureTextRotate90: Boolean
   
   /** If this value is `TRUE` , the text is printed upside down. */
-  var MeasureTextUpsideDown: Boolean = js.native
+  var MeasureTextUpsideDown: Boolean
   
   /** This is the vertical position of the text. */
-  var MeasureTextVerticalPosition: MeasureTextVertPos = js.native
+  var MeasureTextVerticalPosition: MeasureTextVertPos
 }
 object MeasureProperties {
   

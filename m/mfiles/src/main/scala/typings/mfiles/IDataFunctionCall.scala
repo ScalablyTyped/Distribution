@@ -3,33 +3,31 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFDataFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDataFunctionCall extends StObject {
   
-  val DataFunction: MFDataFunction = js.native
+  val DataFunction: MFDataFunction
   
-  def SetDataDate(): Unit = js.native
+  def SetDataDate(): Unit
   
-  def SetDataDaysFrom(): Unit = js.native
+  def SetDataDaysFrom(): Unit
   
-  def SetDataDaysTo(): Unit = js.native
+  def SetDataDaysTo(): Unit
   
-  def SetDataInitialCharGroup(Locale: Double): Unit = js.native
+  def SetDataInitialCharGroup(Locale: Double): Unit
   
-  def SetDataIntegerSegment(SegmentSize: Double): Unit = js.native
+  def SetDataIntegerSegment(SegmentSize: Double): Unit
   
-  def SetDataLeftChars(Characters: Double): Unit = js.native
+  def SetDataLeftChars(Characters: Double): Unit
   
-  def SetDataMonth(): Unit = js.native
+  def SetDataMonth(): Unit
   
-  def SetDataNoOp(): Unit = js.native
+  def SetDataNoOp(): Unit
   
-  def SetDataYear(): Unit = js.native
+  def SetDataYear(): Unit
   
-  def SetDataYearAndMonth(): Unit = js.native
+  def SetDataYearAndMonth(): Unit
 }
 object IDataFunctionCall {
   

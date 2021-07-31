@@ -2,33 +2,31 @@ package typings.nodeRedRuntime.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeployButton extends StObject {
   
-  var deployButton: js.UndefOr[Label] = js.native
+  var deployButton: js.UndefOr[Label] = js.undefined
   
-  var header: js.UndefOr[Image] = js.native
+  var header: js.UndefOr[Image] = js.undefined
   
-  var login: js.UndefOr[`0`] = js.native
+  var login: js.UndefOr[`0`] = js.undefined
   
   /**
     * Hide unwanted menu items by id
     */
-  var menu: js.UndefOr[Menuitemexportlibrary] = js.native
+  var menu: js.UndefOr[Menuitemexportlibrary] = js.undefined
   
-  var page: js.UndefOr[Css] = js.native
+  var page: js.UndefOr[Css] = js.undefined
   
-  var palette: js.UndefOr[Catalogues] = js.native
+  var palette: js.UndefOr[Catalogues] = js.undefined
   
-  var projects: js.UndefOr[Enabled] = js.native
+  var projects: js.UndefOr[Enabled] = js.undefined
   
   /**
     * Hide the user-menu even if adminAuth is enabled
     */
-  var userMenu: js.UndefOr[Boolean] = js.native
+  var userMenu: js.UndefOr[Boolean] = js.undefined
 }
 object DeployButton {
   

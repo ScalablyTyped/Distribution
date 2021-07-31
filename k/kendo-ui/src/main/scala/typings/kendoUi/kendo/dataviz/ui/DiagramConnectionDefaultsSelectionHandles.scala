@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramConnectionDefaultsSelectionHandles extends StObject {
   
-  var fill: js.UndefOr[String | DiagramConnectionDefaultsSelectionHandlesFill] = js.native
+  var fill: js.UndefOr[String | DiagramConnectionDefaultsSelectionHandlesFill] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var stroke: js.UndefOr[DiagramConnectionDefaultsSelectionHandlesStroke] = js.native
+  var stroke: js.UndefOr[DiagramConnectionDefaultsSelectionHandlesStroke] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object DiagramConnectionDefaultsSelectionHandles {
   

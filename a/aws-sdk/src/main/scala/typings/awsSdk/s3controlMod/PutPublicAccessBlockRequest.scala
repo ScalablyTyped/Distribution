@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutPublicAccessBlockRequest extends StObject {
   
   /**
     * The account ID for the AWS account whose PublicAccessBlock configuration you want to set.
     */
-  var AccountId: typings.awsSdk.s3controlMod.AccountId = js.native
+  var AccountId: typings.awsSdk.s3controlMod.AccountId
   
   /**
     * The PublicAccessBlock configuration that you want to apply to the specified AWS account.
     */
-  var PublicAccessBlockConfiguration: typings.awsSdk.s3controlMod.PublicAccessBlockConfiguration = js.native
+  var PublicAccessBlockConfiguration: typings.awsSdk.s3controlMod.PublicAccessBlockConfiguration
 }
 object PutPublicAccessBlockRequest {
   

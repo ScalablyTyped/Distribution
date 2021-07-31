@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CelebrityRecognition extends StObject {
   
   /**
     * Information about a recognized celebrity.
     */
-  var Celebrity: js.UndefOr[CelebrityDetail] = js.native
+  var Celebrity: js.UndefOr[CelebrityDetail] = js.undefined
   
   /**
     * The time, in milliseconds from the start of the video, that the celebrity was recognized.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.rekognitionMod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.rekognitionMod.Timestamp] = js.undefined
 }
 object CelebrityRecognition {
   

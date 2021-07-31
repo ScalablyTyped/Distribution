@@ -14,81 +14,65 @@ import typings.virtualDom.VirtualDOM.createProperties
 import typings.virtualDom.anon.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("virtual-dom", "create")
+  @JSImport("virtual-dom", JSImport.Namespace)
   @js.native
-  def create(vnode: Thunk): Element = js.native
-  @JSImport("virtual-dom", "create")
-  @js.native
-  def create(vnode: Thunk, opts: Document): Element = js.native
-  @JSImport("virtual-dom", "create")
-  @js.native
-  def create(vnode: VNode): Element = js.native
-  @JSImport("virtual-dom", "create")
-  @js.native
-  def create(vnode: VNode, opts: Document): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(vnode: Thunk): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(vnode.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @scala.inline
+  def create(vnode: Thunk, opts: Document): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(vnode.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Element]
+  @scala.inline
+  def create(vnode: VNode): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(vnode.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @scala.inline
+  def create(vnode: VNode, opts: Document): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(vnode.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Element]
   /**
     create() calls either document.createElement() or document.createElementNS(),
     for which the common denominator is Element (not HTMLElement).
     */
-  @JSImport("virtual-dom", "create")
-  @js.native
-  def create(vnode: VText): Text = js.native
-  @JSImport("virtual-dom", "create")
-  @js.native
-  def create(vnode: VText, opts: Document): Text = js.native
-  @JSImport("virtual-dom", "create")
-  @js.native
-  def create(vnode: Widget): Element = js.native
-  @JSImport("virtual-dom", "create")
-  @js.native
-  def create(vnode: Widget, opts: Document): Element = js.native
+  @scala.inline
+  def create(vnode: VText): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(vnode.asInstanceOf[js.Any]).asInstanceOf[Text]
+  @scala.inline
+  def create(vnode: VText, opts: Document): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(vnode.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Text]
+  @scala.inline
+  def create(vnode: Widget): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(vnode.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @scala.inline
+  def create(vnode: Widget, opts: Document): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(vnode.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  @JSImport("virtual-dom", "diff")
-  @js.native
-  def diff(left: VTree, right: VTree): js.Array[VPatch] = js.native
+  @scala.inline
+  def diff(left: VTree, right: VTree): js.Array[VPatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[VPatch]]
   
-  @JSImport("virtual-dom", "h")
-  @js.native
-  def h(tagName: String, children: String): VNode = js.native
-  @JSImport("virtual-dom", "h")
-  @js.native
-  def h(tagName: String, children: js.Array[VChild]): VNode = js.native
-  @JSImport("virtual-dom", "h")
-  @js.native
-  def h(tagName: String, properties: createProperties, children: String): VNode = js.native
-  @JSImport("virtual-dom", "h")
-  @js.native
-  def h(tagName: String, properties: createProperties, children: js.Array[VChild]): VNode = js.native
+  @scala.inline
+  def h(tagName: String, children: String): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def h(tagName: String, children: js.Array[VChild]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def h(tagName: String, properties: createProperties, children: String): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def h(tagName: String, properties: createProperties, children: js.Array[VChild]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
   
-  @JSImport("virtual-dom", "isThunk")
-  @js.native
-  def isThunk(vTree: VTree): /* is virtual-dom.VirtualDOM.Thunk */ Boolean = js.native
+  @scala.inline
+  def isThunk(vTree: VTree): /* is virtual-dom.VirtualDOM.Thunk */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThunk")(vTree.asInstanceOf[js.Any]).asInstanceOf[/* is virtual-dom.VirtualDOM.Thunk */ Boolean]
   
-  @JSImport("virtual-dom", "isVNode")
-  @js.native
-  def isVNode(vTree: VTree): /* is virtual-dom.VirtualDOM.VNode */ Boolean = js.native
+  @scala.inline
+  def isVNode(vTree: VTree): /* is virtual-dom.VirtualDOM.VNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVNode")(vTree.asInstanceOf[js.Any]).asInstanceOf[/* is virtual-dom.VirtualDOM.VNode */ Boolean]
   
-  @JSImport("virtual-dom", "isVText")
-  @js.native
-  def isVText(vTree: VTree): /* is virtual-dom.VirtualDOM.VText */ Boolean = js.native
+  @scala.inline
+  def isVText(vTree: VTree): /* is virtual-dom.VirtualDOM.VText */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVText")(vTree.asInstanceOf[js.Any]).asInstanceOf[/* is virtual-dom.VirtualDOM.VText */ Boolean]
   
-  @JSImport("virtual-dom", "isWidget")
-  @js.native
-  def isWidget(vTree: VTree): /* is virtual-dom.VirtualDOM.Widget */ Boolean = js.native
+  @scala.inline
+  def isWidget(vTree: VTree): /* is virtual-dom.VirtualDOM.Widget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWidget")(vTree.asInstanceOf[js.Any]).asInstanceOf[/* is virtual-dom.VirtualDOM.Widget */ Boolean]
   
   /**
     patch() usually just returns rootNode after doing stuff to it, so we want
     to preserve that type (though it will usually be just Element).
     */
-  @JSImport("virtual-dom", "patch")
-  @js.native
-  def patch[T /* <: Element */](rootNode: T, patches: js.Array[VPatch]): T = js.native
-  @JSImport("virtual-dom", "patch")
-  @js.native
-  def patch[T /* <: Element */](rootNode: T, patches: js.Array[VPatch], renderOptions: VPatchOptions[T]): T = js.native
+  @scala.inline
+  def patch[T /* <: Element */](rootNode: T, patches: js.Array[VPatch]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootNode.asInstanceOf[js.Any], patches.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def patch[T /* <: Element */](rootNode: T, patches: js.Array[VPatch], renderOptions: VPatchOptions[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootNode.asInstanceOf[js.Any], patches.asInstanceOf[js.Any], renderOptions.asInstanceOf[js.Any])).asInstanceOf[T]
 }

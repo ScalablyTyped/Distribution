@@ -2,26 +2,24 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRuleGroupRequest extends StObject {
   
   /**
     * The value returned by the most recent call to GetChangeToken.
     */
-  var ChangeToken: typings.awsSdk.wafMod.ChangeToken = js.native
+  var ChangeToken: typings.awsSdk.wafMod.ChangeToken
   
   /**
     * The RuleGroupId of the RuleGroup that you want to update. RuleGroupId is returned by CreateRuleGroup and by ListRuleGroups.
     */
-  var RuleGroupId: ResourceId = js.native
+  var RuleGroupId: ResourceId
   
   /**
     * An array of RuleGroupUpdate objects that you want to insert into or delete from a RuleGroup. You can only insert REGULAR rules into a rule group.  ActivatedRule|OverrideAction applies only when updating or adding a RuleGroup to a WebACL. In this case you do not use ActivatedRule|Action. For all other update requests, ActivatedRule|Action is used instead of ActivatedRule|OverrideAction.
     */
-  var Updates: RuleGroupUpdates = js.native
+  var Updates: RuleGroupUpdates
 }
 object UpdateRuleGroupRequest {
   

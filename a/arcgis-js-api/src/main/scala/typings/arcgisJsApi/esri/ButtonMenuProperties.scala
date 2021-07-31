@@ -2,39 +2,39 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ButtonMenuProperties extends WidgetProperties {
+trait ButtonMenuProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * Adds a CSS class to the menu button's DOM node.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenu.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * An array of individual [menu items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuItem.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenu.html#items)
     */
-  var items: js.UndefOr[js.Array[ButtonMenuItemProperties]] = js.native
+  var items: js.UndefOr[js.Array[ButtonMenuItemProperties]] = js.undefined
   
   /**
     * Indicates if the menu content is visible.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenu.html#open)
     */
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenu.html#viewModel)
     */
-  var viewModel: js.UndefOr[ButtonMenuViewModelProperties] = js.native
+  var viewModel: js.UndefOr[ButtonMenuViewModelProperties] = js.undefined
 }
 object ButtonMenuProperties {
   

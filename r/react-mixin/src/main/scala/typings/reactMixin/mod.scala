@@ -6,7 +6,6 @@ import typings.react.mod.ComponentState
 import typings.react.mod.Mixin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,11 +19,11 @@ object mod extends Shortcut {
   @js.native
   trait ReactMixin extends StObject {
     
-    def apply[S](clazz: js.Any, mixin: Mixin[_, _]): ComponentClass[S, ComponentState] = js.native
+    def apply[S](clazz: js.Any, mixin: Mixin[js.Any, js.Any]): ComponentClass[S, ComponentState] = js.native
     
-    def decorate(mixin: Mixin[_, _]): ClassDecorator = js.native
+    def decorate(mixin: Mixin[js.Any, js.Any]): ClassDecorator = js.native
     
-    def onClass[S](clazz: js.Any, mixin: Mixin[_, _]): ComponentClass[S, ComponentState] = js.native
+    def onClass[S](clazz: js.Any, mixin: Mixin[js.Any, js.Any]): ComponentClass[S, ComponentState] = js.native
   }
   
   type _To = ReactMixin

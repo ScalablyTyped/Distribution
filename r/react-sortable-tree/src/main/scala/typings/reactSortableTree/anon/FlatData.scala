@@ -4,13 +4,11 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlatData[T, I /* <: String | Double */, K /* <: /* keyof T */ String */, P /* <: /* keyof T */ String */] extends StObject {
   
-  var flatData: NumberDictionary[T] | StringDictionary[T] = js.native
+  var flatData: NumberDictionary[T] | StringDictionary[T]
   
   // tslint:disable-next-line:no-unnecessary-generics
   var getKey: js.UndefOr[
@@ -18,7 +16,7 @@ trait FlatData[T, I /* <: String | Double */, K /* <: /* keyof T */ String */, P
       /* item */ T, 
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   // tslint:disable-next-line:no-unnecessary-generics
   var getParentKey: js.UndefOr[
@@ -26,9 +24,9 @@ trait FlatData[T, I /* <: String | Double */, K /* <: /* keyof T */ String */, P
       /* item */ T, 
       /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var rootKey: js.UndefOr[I] = js.native
+  var rootKey: js.UndefOr[I] = js.undefined
 }
 object FlatData {
   
@@ -39,7 +37,7 @@ object FlatData {
   }
   
   @scala.inline
-  implicit class FlatDataMutableBuilder[Self <: FlatData[_, _, _, _], T, I /* <: String | Double */, K /* <: /* keyof T */ String */, P /* <: /* keyof T */ String */] (val x: Self with (FlatData[T, I, K, P])) extends AnyVal {
+  implicit class FlatDataMutableBuilder[Self <: FlatData[?, ?, ?, ?], T, I /* <: String | Double */, K /* <: /* keyof T */ String */, P /* <: /* keyof T */ String */] (val x: Self & (FlatData[T, I, K, P])) extends AnyVal {
     
     @scala.inline
     def setFlatData(value: NumberDictionary[T] | StringDictionary[T]): Self = StObject.set(x, "flatData", value.asInstanceOf[js.Any])

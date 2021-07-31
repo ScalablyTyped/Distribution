@@ -3,18 +3,18 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`text-area`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextAreaInputProperties extends TextInputProperties {
+trait TextAreaInputProperties
+  extends StObject
+     with TextInputProperties {
   
   /**
     * The type of form element input.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextAreaInput.html#type)
     */
-  var `type`: js.UndefOr[`text-area`] = js.native
+  var `type`: js.UndefOr[`text-area`] = js.undefined
 }
 object TextAreaInputProperties {
   

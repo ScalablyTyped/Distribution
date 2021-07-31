@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -419,7 +418,7 @@ trait CognitoIdentityServiceProvider extends Service {
   ): Request[ChangePasswordResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_CognitoIdentityServiceProvider: ConfigBase with ClientConfiguration = js.native
+  var config_CognitoIdentityServiceProvider: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Confirms tracking of the device. This API call is the call that begins device tracking.

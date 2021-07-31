@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesInProgress_ extends StObject {
   
-  var enumValues: InProgress_ = js.native
+  var enumValues: InProgress_
 }
 object EnumValuesInProgress_ {
   

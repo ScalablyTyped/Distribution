@@ -10,7 +10,6 @@ import typings.typeorm.typeormStrings.browser
 import typings.typeorm.typeormStrings.node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformPlatformToolsMod {
@@ -50,12 +49,10 @@ object platformPlatformToolsMod {
     
     /** @deprecated since v4.0.0 */
     /* static member */
-    @JSImport("typeorm/platform/PlatformTools", "EventEmitter.listenerCount")
-    @js.native
-    def listenerCount(emitter: typings.node.eventsMod.EventEmitter, event: String): Double = js.native
-    @JSImport("typeorm/platform/PlatformTools", "EventEmitter.listenerCount")
-    @js.native
-    def listenerCount(emitter: typings.node.eventsMod.EventEmitter, event: js.Symbol): Double = js.native
+    @scala.inline
+    def listenerCount(emitter: typings.node.eventsMod.EventEmitter, event: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def listenerCount(emitter: typings.node.eventsMod.EventEmitter, event: js.Symbol): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSImport("typeorm/platform/PlatformTools", "PlatformTools")
@@ -64,113 +61,93 @@ object platformPlatformToolsMod {
   /* static members */
   object PlatformTools {
     
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.appendFileSync")
+    @JSImport("typeorm/platform/PlatformTools", "PlatformTools")
     @js.native
-    def appendFileSync(filename: String, data: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def appendFileSync(filename: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Loads a dotenv file into the environment variables.
       *
       * @param path The file to load as a dotenv configuration
       */
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.dotenv")
-    @js.native
-    def dotenv(pathStr: String): Unit = js.native
+    @scala.inline
+    def dotenv(pathStr: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dotenv")(pathStr.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Synchronously checks if file exist. Does "fs.existsSync".
       */
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.fileExist")
-    @js.native
-    def fileExist(pathStr: String): Boolean = js.native
+    @scala.inline
+    def fileExist(pathStr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fileExist")(pathStr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Gets environment variable.
       */
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.getEnvVariable")
-    @js.native
-    def getEnvVariable(name: String): js.Any = js.native
+    @scala.inline
+    def getEnvVariable(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvVariable")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Gets global variable where global stuff can be stored.
       */
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.getGlobalVariable")
-    @js.native
-    def getGlobalVariable(): js.Any = js.native
+    @scala.inline
+    def getGlobalVariable(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalVariable")().asInstanceOf[js.Any]
     
     /**
       * Highlights json string to be print in the console.
       */
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.highlightJson")
-    @js.native
-    def highlightJson(json: String): String = js.native
+    @scala.inline
+    def highlightJson(json: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightJson")(json.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Highlights sql string to be print in the console.
       */
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.highlightSql")
-    @js.native
-    def highlightSql(sql: String): String = js.native
+    @scala.inline
+    def highlightSql(sql: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightSql")(sql.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Loads ("require"-s) given file or package.
       * This operation only supports on node platform
       */
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.load")
-    @js.native
-    def load(name: String): js.Any = js.native
+    @scala.inline
+    def load(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.log")
-    @js.native
-    def log(message: String): Unit = js.native
+    @scala.inline
+    def log(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.logError")
-    @js.native
-    def logError(prefix: String, error: js.Any): Unit = js.native
+    @scala.inline
+    def logError(prefix: String, error: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logError")(prefix.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Logging functions needed by AdvancedConsoleLogger
       */
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.logInfo")
-    @js.native
-    def logInfo(prefix: String, info: js.Any): Unit = js.native
+    @scala.inline
+    def logInfo(prefix: String, info: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logInfo")(prefix.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.logWarn")
-    @js.native
-    def logWarn(prefix: String, warning: js.Any): Unit = js.native
+    @scala.inline
+    def logWarn(prefix: String, warning: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logWarn")(prefix.asInstanceOf[js.Any], warning.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Gets file extension. Does "path.extname".
       */
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.pathExtname")
-    @js.native
-    def pathExtname(pathStr: String): String = js.native
+    @scala.inline
+    def pathExtname(pathStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathExtname")(pathStr.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Normalizes given path. Does "path.normalize".
       */
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.pathNormalize")
-    @js.native
-    def pathNormalize(pathStr: String): String = js.native
+    @scala.inline
+    def pathNormalize(pathStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathNormalize")(pathStr.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Resolved given path. Does "path.resolve".
       */
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.pathResolve")
-    @js.native
-    def pathResolve(pathStr: String): String = js.native
+    @scala.inline
+    def pathResolve(pathStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathResolve")(pathStr.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.readFileSync")
-    @js.native
-    def readFileSync(filename: String): Buffer = js.native
-    
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.warn")
-    @js.native
-    def warn(message: String): String = js.native
-    
-    @JSImport("typeorm/platform/PlatformTools", "PlatformTools.writeFile")
-    @js.native
-    def writeFile(path: String, data: js.Any): js.Promise[Unit] = js.native
+    @scala.inline
+    def readFileSync(filename: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(filename.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Type of the currently running platform.
@@ -178,6 +155,12 @@ object platformPlatformToolsMod {
     @JSImport("typeorm/platform/PlatformTools", "PlatformTools.type")
     @js.native
     val `type`: browser | node = js.native
+    
+    @scala.inline
+    def warn(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def writeFile(path: String, data: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
   @JSImport("typeorm/platform/PlatformTools", "ReadStream")
@@ -195,22 +178,22 @@ object platformPlatformToolsMod {
   }
   object Readable {
     
-    @JSImport("typeorm/platform/PlatformTools", "Readable.from")
+    @JSImport("typeorm/platform/PlatformTools", "Readable")
     @js.native
-    def from(iterable: AsyncIterable[_]): typings.node.streamMod.Readable = js.native
-    @JSImport("typeorm/platform/PlatformTools", "Readable.from")
-    @js.native
-    def from(iterable: AsyncIterable[_], options: ReadableOptions): typings.node.streamMod.Readable = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def from(iterable: AsyncIterable[js.Any]): typings.node.streamMod.Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[typings.node.streamMod.Readable]
+    @scala.inline
+    def from(iterable: AsyncIterable[js.Any], options: ReadableOptions): typings.node.streamMod.Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.streamMod.Readable]
     /**
       * A utility method for creating Readable Streams out of iterators.
       */
     /* static member */
-    @JSImport("typeorm/platform/PlatformTools", "Readable.from")
-    @js.native
-    def from(iterable: Iterable[_]): typings.node.streamMod.Readable = js.native
-    @JSImport("typeorm/platform/PlatformTools", "Readable.from")
-    @js.native
-    def from(iterable: Iterable[_], options: ReadableOptions): typings.node.streamMod.Readable = js.native
+    @scala.inline
+    def from(iterable: Iterable[js.Any]): typings.node.streamMod.Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[typings.node.streamMod.Readable]
+    @scala.inline
+    def from(iterable: Iterable[js.Any], options: ReadableOptions): typings.node.streamMod.Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.streamMod.Readable]
   }
   
   @JSImport("typeorm/platform/PlatformTools", "Writable")

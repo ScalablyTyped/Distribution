@@ -2,17 +2,15 @@ package typings.ssh2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X11Options extends StObject {
   
   /** The Screen number to use (default: `0`). */
-  var screen: js.UndefOr[Double] = js.native
+  var screen: js.UndefOr[Double] = js.undefined
   
   /** Whether to allow just a single connection (default: `false`).*/
-  var single: js.UndefOr[Boolean] = js.native
+  var single: js.UndefOr[Boolean] = js.undefined
 }
 object X11Options {
   

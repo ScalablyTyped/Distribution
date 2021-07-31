@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotDpoParamsOptions extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait PlotDpoParamsOptions extends StObject {
     * example using OHLC data, index=2 means the indicator will be calculated
     * using Low values.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Period for Detrended Price Oscillator
     */
-  var period: js.UndefOr[Double] = js.native
+  var period: js.UndefOr[Double] = js.undefined
 }
 object PlotDpoParamsOptions {
   

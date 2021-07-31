@@ -2,20 +2,19 @@ package typings.riotjsDomBindings.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfBindingData
-  extends BaseBindingData
+  extends StObject
+     with BaseBindingData
      with BindingData {
   
-  var template: TemplateChunk[_, _] = js.native
+  var template: TemplateChunk[js.Any, js.Any]
 }
 object IfBindingData {
   
   @scala.inline
-  def apply(template: TemplateChunk[_, _]): IfBindingData = {
+  def apply(template: TemplateChunk[js.Any, js.Any]): IfBindingData = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[IfBindingData]
   }
@@ -24,6 +23,6 @@ object IfBindingData {
   implicit class IfBindingDataMutableBuilder[Self <: IfBindingData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setTemplate(value: TemplateChunk[_, _]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    def setTemplate(value: TemplateChunk[js.Any, js.Any]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

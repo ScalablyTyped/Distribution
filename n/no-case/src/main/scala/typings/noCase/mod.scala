@@ -3,30 +3,30 @@ package typings.noCase
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("no-case", "noCase")
+  @JSImport("no-case", JSImport.Namespace)
   @js.native
-  def noCase(input: String): String = js.native
-  @JSImport("no-case", "noCase")
-  @js.native
-  def noCase(input: String, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def noCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("noCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def noCase(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("noCase")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Options extends StObject {
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
-    var splitRegexp: js.UndefOr[RegExp | js.Array[RegExp]] = js.native
+    var splitRegexp: js.UndefOr[RegExp | js.Array[RegExp]] = js.undefined
     
-    var stripRegexp: js.UndefOr[RegExp | js.Array[RegExp]] = js.native
+    var stripRegexp: js.UndefOr[RegExp | js.Array[RegExp]] = js.undefined
     
     var transform: js.UndefOr[
         js.Function3[/* part */ String, /* index */ Double, /* parts */ js.Array[String], String]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

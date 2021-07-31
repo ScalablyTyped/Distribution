@@ -9,66 +9,64 @@ import typings.winrtUwp.Windows.Web.Http.Headers.HttpContentHeaderCollection
 import typings.winrtUwp.anon.Length
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides HTTP content that uses the multipart/ * MIME type. */
-@js.native
 trait HttpMultipartContent extends StObject {
   
   /**
     * Add HTTP content to the HttpMultipartContent instance.
     * @param content The HTTP content to add to HttpMultipartContent .
     */
-  def add(content: IHttpContent): Unit = js.native
+  def add(content: IHttpContent): Unit
   
   /**
     * Serialize the HttpMultipartContent into memory as an asynchronous operation.
     * @return The object that represents the asynchronous operation.
     */
-  def bufferAllAsync(): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
+  def bufferAllAsync(): IPromiseWithIAsyncOperationWithProgress[Double, Double]
   
   /** Closes the HttpMultipartContent instance and releases allocated resources. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * Gets an object that can be used to enumerate the contents in the HttpMultipartContent object.
     * @return An object that can be used to enumerate the contents in the HttpMultipartContent object.
     */
-  def first(): IIterator[IHttpContent] = js.native
+  def first(): IIterator[IHttpContent]
   
   /** Get a collection of content headers set on the HttpMultipartContent . */
-  var headers: HttpContentHeaderCollection = js.native
+  var headers: HttpContentHeaderCollection
   
   /**
     * Serialize the HttpMultipartContent to a buffer as an asynchronous operation.
     * @return The object representing the asynchronous operation.
     */
-  def readAsBufferAsync(): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double] = js.native
+  def readAsBufferAsync(): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
   
   /**
     * Serialize the HttpMultipartContent and return an input stream that represents the content as an asynchronous operation.
     * @return The object representing the asynchronous operation.
     */
-  def readAsInputStreamAsync(): IPromiseWithIAsyncOperationWithProgress[IInputStream, Double] = js.native
+  def readAsInputStreamAsync(): IPromiseWithIAsyncOperationWithProgress[IInputStream, Double]
   
   /**
     * Serialize the HttpMultipartContent to a String as an asynchronous operation.
     * @return The object representing the asynchronous operation.
     */
-  def readAsStringAsync(): IPromiseWithIAsyncOperationWithProgress[String, Double] = js.native
+  def readAsStringAsync(): IPromiseWithIAsyncOperationWithProgress[String, Double]
   
   /**
     * Determines whether the HttpMultipartContent has a valid length in bytes.
     */
-  def tryComputeLength(): Length = js.native
+  def tryComputeLength(): Length
   
   /**
     * Write the HttpMultipartContent to an output stream as an asynchronous operation.
     * @param outputStream The output stream to write to.
     * @return The object that represents the asynchronous operation.
     */
-  def writeToStreamAsync(outputStream: IOutputStream): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
+  def writeToStreamAsync(outputStream: IOutputStream): IPromiseWithIAsyncOperationWithProgress[Double, Double]
 }
 object HttpMultipartContent {
   

@@ -5,29 +5,30 @@ import typings.officeUiFabricReact.anon.Viewport
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withViewportMod {
   
-  @JSImport("office-ui-fabric-react/lib/utilities/decorators/withViewport", "withViewport")
+  @JSImport("office-ui-fabric-react/lib/utilities/decorators/withViewport", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def withViewport[TProps /* <: Viewport */, TState](
     ComposedComponent: Instantiable2[/* props */ TProps, /* args (repeated) */ js.Any, Component[TProps, TState, js.Any]]
-  ): js.Any = js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withViewport")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
   trait IViewport extends StObject {
     
     /**
       * Height in pixels.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Width in pixels.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object IViewport {
     
@@ -48,7 +49,6 @@ object withViewportMod {
     }
   }
   
-  @js.native
   trait IWithViewportProps extends StObject {
     
     /**
@@ -58,7 +58,7 @@ object withViewportMod {
       *
       * This has no impact if `skipViewportMeasures` is `true`, as no viewport measurement strategy is used.
       */
-    var disableResizeObserver: js.UndefOr[Boolean] = js.native
+    var disableResizeObserver: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not `withViewport` should disable its viewport measurements, effectively making this decorator
@@ -75,7 +75,7 @@ object withViewportMod {
       * In addition, consider setting `skipViewportMeasures` to `true` when running within a React test renderer, to avoid
       * direct DOM dependencies.
       */
-    var skipViewportMeasures: js.UndefOr[Boolean] = js.native
+    var skipViewportMeasures: js.UndefOr[Boolean] = js.undefined
   }
   object IWithViewportProps {
     
@@ -102,10 +102,9 @@ object withViewportMod {
     }
   }
   
-  @js.native
   trait IWithViewportState extends StObject {
     
-    var viewport: js.UndefOr[IViewport] = js.native
+    var viewport: js.UndefOr[IViewport] = js.undefined
   }
   object IWithViewportState {
     

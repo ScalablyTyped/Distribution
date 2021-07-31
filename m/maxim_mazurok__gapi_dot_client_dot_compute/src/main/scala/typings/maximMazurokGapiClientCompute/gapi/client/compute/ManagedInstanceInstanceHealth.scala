@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedInstanceInstanceHealth extends StObject {
   
   /** [Output Only] The current detailed instance health state. */
-  var detailedHealthState: js.UndefOr[String] = js.native
+  var detailedHealthState: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The URL for the health check that verifies whether the instance is healthy. */
-  var healthCheck: js.UndefOr[String] = js.native
+  var healthCheck: js.UndefOr[String] = js.undefined
 }
 object ManagedInstanceInstanceHealth {
   

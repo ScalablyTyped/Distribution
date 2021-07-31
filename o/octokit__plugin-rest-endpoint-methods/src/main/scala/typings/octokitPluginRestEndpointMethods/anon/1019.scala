@@ -10,21 +10,19 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1019` extends StObject {
   
-  var parameters: RequestParameters with (Omit[ReposTransferEndpoint, baseUrl | headers | mediaType]) = js.native
+  var parameters: RequestParameters & (Omit[ReposTransferEndpoint, baseUrl | headers | mediaType])
   
-  var response: OctokitResponse[ReposTransferResponseData] = js.native
+  var response: OctokitResponse[ReposTransferResponseData]
 }
 object `1019` {
   
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[ReposTransferEndpoint, baseUrl | headers | mediaType]),
+    parameters: RequestParameters & (Omit[ReposTransferEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[ReposTransferResponseData]
   ): `1019` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
@@ -35,7 +33,7 @@ object `1019` {
   implicit class `1019MutableBuilder`[Self <: `1019`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setParameters(value: RequestParameters with (Omit[ReposTransferEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: RequestParameters & (Omit[ReposTransferEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResponse(value: OctokitResponse[ReposTransferResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])

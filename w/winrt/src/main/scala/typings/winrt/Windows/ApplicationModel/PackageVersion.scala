@@ -2,19 +2,17 @@ package typings.winrt.Windows.ApplicationModel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PackageVersion extends StObject {
   
-  var build: Double = js.native
+  var build: Double
   
-  var major: Double = js.native
+  var major: Double
   
-  var minor: Double = js.native
+  var minor: Double
   
-  var revision: Double = js.native
+  var revision: Double
 }
 object PackageVersion {
   

@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AsyncResultStatus extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeJsPreview.Office.AsyncResultStatus with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.officeJsPreview.Office.AsyncResultStatus & Double] = js.native
   
-  /* 1 */ val Failed: typings.officeJsPreview.Office.AsyncResultStatus.Failed with Double = js.native
+  /* 1 */ val Failed: typings.officeJsPreview.Office.AsyncResultStatus.Failed & Double = js.native
   
-  /* 0 */ val Succeeded: typings.officeJsPreview.Office.AsyncResultStatus.Succeeded with Double = js.native
+  /* 0 */ val Succeeded: typings.officeJsPreview.Office.AsyncResultStatus.Succeeded & Double = js.native
 }

@@ -4,21 +4,19 @@ import typings.kafkaNode.anon.Name
 import typings.kafkaNode.anon.Partition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTopicRequest extends StObject {
   
-  var configEntries: js.UndefOr[js.Array[Name]] = js.native
+  var configEntries: js.UndefOr[js.Array[Name]] = js.undefined
   
-  var partitions: Double = js.native
+  var partitions: Double
   
-  var replicaAssignment: js.UndefOr[js.Array[Partition]] = js.native
+  var replicaAssignment: js.UndefOr[js.Array[Partition]] = js.undefined
   
-  var replicationFactor: Double = js.native
+  var replicationFactor: Double
   
-  var topic: String = js.native
+  var topic: String
 }
 object CreateTopicRequest {
   

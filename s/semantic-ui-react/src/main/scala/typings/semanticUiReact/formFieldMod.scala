@@ -14,7 +14,6 @@ import typings.semanticUiReact.genericMod.SemanticWIDTHS
 import typings.semanticUiReact.labelLabelMod.LabelProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formFieldMod extends Shortcut {
@@ -23,9 +22,9 @@ object formFieldMod extends Shortcut {
   @js.native
   val default: StatelessComponent[FormFieldProps] = js.native
   
-  @js.native
   trait FormFieldProps
-    extends StrictFormFieldProps
+    extends StObject
+       with StrictFormFieldProps
        with /* key */ StringDictionary[js.Any]
   object FormFieldProps {
     
@@ -36,51 +35,50 @@ object formFieldMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictFormFieldProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /**
       * A form control component (i.e. Dropdown) or HTML tagName (i.e. 'input').
       * Extra FormField props are passed to the control component.
       * Mutually exclusive with children.
       */
-    var control: js.UndefOr[js.Any] = js.native
+    var control: js.UndefOr[js.Any] = js.undefined
     
     /** Individual fields may be disabled. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Individual fields may display an error state along with a message. */
-    var error: js.UndefOr[Boolean | SemanticShorthandItem[LabelProps]] = js.native
+    var error: js.UndefOr[Boolean | SemanticShorthandItem[LabelProps]] = js.undefined
     
     /** The id of the control */
-    var id: js.UndefOr[Double | String] = js.native
+    var id: js.UndefOr[Double | String] = js.undefined
     
     /** A field can have its label next to instead of above it. */
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /** Mutually exclusive with children. */
-    var label: js.UndefOr[SemanticShorthandItem[HtmlLabelProps]] = js.native
+    var label: js.UndefOr[SemanticShorthandItem[HtmlLabelProps]] = js.undefined
     
     /** A field can show that input is mandatory.  Requires a label. */
-    var required: js.UndefOr[js.Any] = js.native
+    var required: js.UndefOr[js.Any] = js.undefined
     
     /** Passed to the control component (i.e. <input type='password' />) */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** A field can specify its width in grid columns */
-    var width: js.UndefOr[SemanticWIDTHS] = js.native
+    var width: js.UndefOr[SemanticWIDTHS] = js.undefined
   }
   object StrictFormFieldProps {
     

@@ -2,15 +2,13 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureAvailableMetadata extends StObject {
   
-  var availabilty: js.UndefOr[String] = js.native
+  var availabilty: js.UndefOr[String] = js.undefined
   
-  var featureName: js.UndefOr[String] = js.native
+  var featureName: js.UndefOr[String] = js.undefined
 }
 object FeatureAvailableMetadata {
   

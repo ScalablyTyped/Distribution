@@ -3,11 +3,12 @@ package typings.jsClipper.ClipperLib
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Clipper extends ClipperBase {
+trait Clipper
+  extends StObject
+     with ClipperBase {
   
   def AddEdgeToSEL(edge: TEdge): Unit = js.native
   

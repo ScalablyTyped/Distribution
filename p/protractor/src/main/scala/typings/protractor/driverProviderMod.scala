@@ -5,7 +5,6 @@ import typings.q.mod.Promise
 import typings.seleniumWebdriver.mod.WebDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object driverProviderMod {
@@ -51,12 +50,12 @@ object driverProviderMod {
       * Set up environment specific to a particular driver provider. Overridden
       * by each driver provider.
       */
-    /* protected */ def setupDriverEnv(): Promise[_] = js.native
+    /* protected */ def setupDriverEnv(): Promise[js.Any] = js.native
     
     /**
       * Default setup environment method, common to all driver providers.
       */
-    def setupEnv(): Promise[_] = js.native
+    def setupEnv(): Promise[js.Any] = js.native
     
     /**
       * Teardown and destroy the environment and do any associated cleanup.
@@ -65,24 +64,27 @@ object driverProviderMod {
       * @public
       * @return {q.Promise<any>} A promise which will resolve when the environment is down.
       */
-    def teardownEnv(): Promise[_] = js.native
+    def teardownEnv(): Promise[js.Any] = js.native
     
     /**
       * Default update job method.
       * @return a promise
       */
-    def updateJob(update: js.Any): Promise[_] = js.native
+    def updateJob(update: js.Any): Promise[js.Any] = js.native
   }
   /* static members */
   object DriverProvider {
+    
+    @JSImport("protractor/built/driverProviders/driverProvider", "DriverProvider")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Quits an array of drivers and returns a q promise instead of a webdriver one
       *
       * @param drivers {webdriver.WebDriver[]} The webdriver instances
       */
-    @JSImport("protractor/built/driverProviders/driverProvider", "DriverProvider.quitDrivers")
-    @js.native
-    def quitDrivers(provider: DriverProvider, drivers: js.Array[WebDriver]): Promise[Unit] = js.native
+    @scala.inline
+    def quitDrivers(provider: DriverProvider, drivers: js.Array[WebDriver]): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("quitDrivers")(provider.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   }
 }

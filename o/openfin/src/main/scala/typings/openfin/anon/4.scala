@@ -3,15 +3,13 @@ package typings.openfin.anon
 import typings.openfin.windowOptionMod.ContentRedirect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `4` extends StObject {
   
-  var newVal: js.UndefOr[ContentRedirect] = js.native
+  var newVal: js.UndefOr[ContentRedirect] = js.undefined
   
-  var oldVal: js.UndefOr[ContentRedirect] = js.native
+  var oldVal: js.UndefOr[ContentRedirect] = js.undefined
 }
 object `4` {
   

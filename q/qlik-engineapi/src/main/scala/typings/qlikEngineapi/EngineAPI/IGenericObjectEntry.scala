@@ -2,29 +2,27 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericObjectEntry...
   */
-@js.native
 trait IGenericObjectEntry extends StObject {
   
   /**
     * Information about the children of the generic object.
     */
-  var qChildren: js.Array[IGenericObjectEntry] = js.native
+  var qChildren: js.Array[IGenericObjectEntry]
   
   /**
     * Reference to a bookmark/snapshot that is embedded in the generic object.
     */
-  var qEmbeddedSnapshotRef: IGenericBookmarkEntry = js.native
+  var qEmbeddedSnapshotRef: IGenericBookmarkEntry
   
   /**
     * Information about the generic object properties.
     */
-  var qProperty: IGenericObjectProperties = js.native
+  var qProperty: IGenericObjectProperties
 }
 object IGenericObjectEntry {
   

@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.chart
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,21 +10,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The cell addresses are in the format of the application that contains this chart.
   */
-@js.native
 trait ChartSeriesAddress extends StObject {
   
   /** contains the cell range address of the data for this series. */
-  var DataRangeAddress: String = js.native
+  var DataRangeAddress: String
   
   /**
     * contains cell addresses for each domain of this series.
     *
     * For XY (scatter) diagrams at least one series has a domain. Most of the other chart types use an empty sequence here.
     */
-  var DomainRangeAddresses: SafeArray[String] = js.native
+  var DomainRangeAddresses: SafeArray[String]
   
   /** contains the cell address of label (i.e. name) of this series. */
-  var LabelAddress: String = js.native
+  var LabelAddress: String
 }
 object ChartSeriesAddress {
   

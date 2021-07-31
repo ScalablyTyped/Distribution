@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleTypeDate extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait GoogleTypeDate extends StObject {
     * if specifying a year by itself or a year and month where the day is not
     * significant.
     */
-  var day: js.UndefOr[Double] = js.native
+  var day: js.UndefOr[Double] = js.undefined
   
   /**
     * Month of year. Must be from 1 to 12, or 0 if specifying a year without a
     * month and day.
     */
-  var month: js.UndefOr[Double] = js.native
+  var month: js.UndefOr[Double] = js.undefined
   
   /**
     * Year of date. Must be from 1 to 9999, or 0 if specifying a date without
     * a year.
     */
-  var year: js.UndefOr[Double] = js.native
+  var year: js.UndefOr[Double] = js.undefined
 }
 object GoogleTypeDate {
   

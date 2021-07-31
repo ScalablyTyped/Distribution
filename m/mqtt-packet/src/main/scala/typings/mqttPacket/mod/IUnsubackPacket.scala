@@ -4,24 +4,23 @@ import typings.mqttPacket.anon.ReasonString
 import typings.mqttPacket.mqttPacketStrings.unsuback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUnsubackPacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
   
   @JSName("cmd")
-  var cmd_IUnsubackPacket: unsuback = js.native
+  var cmd_IUnsubackPacket: unsuback
   
-  var properties: js.UndefOr[ReasonString] = js.native
+  var properties: js.UndefOr[ReasonString] = js.undefined
 }
 object IUnsubackPacket {
   
   @scala.inline
-  def apply(cmd: unsuback): IUnsubackPacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
+  def apply(): IUnsubackPacket = {
+    val __obj = js.Dynamic.literal(cmd = "unsuback")
     __obj.asInstanceOf[IUnsubackPacket]
   }
   

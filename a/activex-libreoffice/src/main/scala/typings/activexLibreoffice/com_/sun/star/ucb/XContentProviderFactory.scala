@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,15 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XContentProvider
   * @version 1.0
   */
-@js.native
-trait XContentProviderFactory extends XInterface {
+trait XContentProviderFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates a {@link XContentProvider} implementation object.
     * @param Service the name of the UNO service to be used to create the implementation of the content provider.
     * @returns a content provider.
     */
-  def createContentProvider(Service: String): XContentProvider = js.native
+  def createContentProvider(Service: String): XContentProvider
 }
 object XContentProviderFactory {
   

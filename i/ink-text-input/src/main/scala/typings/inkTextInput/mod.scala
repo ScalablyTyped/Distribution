@@ -2,7 +2,6 @@ package typings.inkTextInput
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,18 +13,17 @@ object mod {
   
   type TextInput = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<TextInputProps> */ js.Any
   
-  @js.native
   trait TextInputProps extends StObject {
     
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onSubmit: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onSubmit: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object TextInputProps {
     

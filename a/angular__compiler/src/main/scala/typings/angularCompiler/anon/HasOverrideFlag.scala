@@ -2,23 +2,21 @@ package typings.angularCompiler.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasOverrideFlag extends StObject {
   
-  var hasOverrideFlag: Boolean = js.native
+  var hasOverrideFlag: Boolean
   
-  var property: String = js.native
+  var property: String
   
-  var suffix: String | Null = js.native
+  var suffix: String | Null
 }
 object HasOverrideFlag {
   
   @scala.inline
   def apply(hasOverrideFlag: Boolean, property: String): HasOverrideFlag = {
-    val __obj = js.Dynamic.literal(hasOverrideFlag = hasOverrideFlag.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hasOverrideFlag = hasOverrideFlag.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], suffix = null)
     __obj.asInstanceOf[HasOverrideFlag]
   }
   

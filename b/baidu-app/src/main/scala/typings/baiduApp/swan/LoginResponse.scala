@@ -2,7 +2,6 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -19,7 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 通过swan.checkSession() 检测用户登录态是否失效。并决定是否调用swan.login()
   * 重新获取登录态
   */
-@js.native
 trait LoginResponse extends StObject {
   
   /**
@@ -28,10 +26,10 @@ trait LoginResponse extends StObject {
     * 使用code 换取 session_key api，
     * 将 code 换成 openid 和 session_key
     */
-  var code: String = js.native
+  var code: String
   
   /** 调用结果 */
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object LoginResponse {
   

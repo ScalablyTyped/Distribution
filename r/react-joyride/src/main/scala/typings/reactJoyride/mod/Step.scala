@@ -4,33 +4,33 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Step extends CommonProps {
+trait Step
+  extends StObject
+     with CommonProps {
   
-  var content: ReactNode = js.native
+  var content: ReactNode
   
-  var disableBeacon: js.UndefOr[Boolean] = js.native
+  var disableBeacon: js.UndefOr[Boolean] = js.undefined
   
-  var event: js.UndefOr[String] = js.native
+  var event: js.UndefOr[String] = js.undefined
   
-  var hideCloseButton: js.UndefOr[Boolean] = js.native
+  var hideCloseButton: js.UndefOr[Boolean] = js.undefined
   
-  var hideFooter: js.UndefOr[Boolean] = js.native
+  var hideFooter: js.UndefOr[Boolean] = js.undefined
   
-  var isFixed: js.UndefOr[Boolean] = js.native
+  var isFixed: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var placement: js.UndefOr[Placement] = js.native
+  var placement: js.UndefOr[Placement] = js.undefined
   
-  var placementBeacon: js.UndefOr[PlacementBeacon] = js.native
+  var placementBeacon: js.UndefOr[PlacementBeacon] = js.undefined
   
-  var target: String | HTMLElement = js.native
+  var target: String | HTMLElement
   
-  var title: js.UndefOr[ReactNode] = js.native
+  var title: js.UndefOr[ReactNode] = js.undefined
 }
 object Step {
   

@@ -2,19 +2,17 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadFileParameters extends StObject {
   
-  var channel: String = js.native
+  var channel: String
   
-  var cipherKey: js.UndefOr[String] = js.native
+  var cipherKey: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
 }
 object DownloadFileParameters {
   

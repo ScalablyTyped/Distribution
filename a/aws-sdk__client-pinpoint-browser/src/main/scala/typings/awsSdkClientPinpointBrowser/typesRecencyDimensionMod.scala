@@ -8,12 +8,10 @@ import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.HR
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.INACTIVE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRecencyDimensionMod {
   
-  @js.native
   trait RecencyDimension extends StObject {
     
     /**
@@ -21,7 +19,7 @@ object typesRecencyDimensionMod {
       *
       * Valid values: HR_24, DAY_7, DAY_14, DAY_30
       */
-    var Duration: js.UndefOr[HR_24 | DAY_7 | DAY_14 | DAY_30 | String] = js.native
+    var Duration: js.UndefOr[HR_24 | DAY_7 | DAY_14 | DAY_30 | String] = js.undefined
     
     /**
       * The recency dimension type:
@@ -30,7 +28,7 @@ object typesRecencyDimensionMod {
       *
       * INACTIVE - Users who have not used your app within the specified duration are included in the segment.
       */
-    var RecencyType: js.UndefOr[ACTIVE | INACTIVE | String] = js.native
+    var RecencyType: js.UndefOr[ACTIVE | INACTIVE | String] = js.undefined
   }
   object RecencyDimension {
     

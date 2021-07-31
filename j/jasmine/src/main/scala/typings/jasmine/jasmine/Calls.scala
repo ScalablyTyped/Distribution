@@ -3,38 +3,36 @@ package typings.jasmine.jasmine
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Calls[Fn /* <: Func */] extends StObject {
   
   /** By chaining the spy with calls.all(), will return the context (the this) and arguments passed all calls */
-  def all(): js.Array[CallInfo[Fn]] = js.native
+  def all(): js.Array[CallInfo[Fn]]
   
   /** By chaining the spy with calls.allArgs(), will return the arguments to all calls */
-  def allArgs(): js.Array[Parameters[Fn]] = js.native
+  def allArgs(): js.Array[Parameters[Fn]]
   
   /** By chaining the spy with calls.any(), will return false if the spy has not been called at all, and then true once at least one call happens. */
-  def any(): Boolean = js.native
+  def any(): Boolean
   
   /** By chaining the spy with calls.argsFor(), will return the arguments passed to call number index */
-  def argsFor(index: Double): Parameters[Fn] = js.native
+  def argsFor(index: Double): Parameters[Fn]
   
   /** By chaining the spy with calls.count(), will return the number of times the spy was called */
-  def count(): Double = js.native
+  def count(): Double
   
   /** By chaining the spy with calls.first(), will return the context (the this) and arguments for the first call */
-  def first(): CallInfo[Fn] = js.native
+  def first(): CallInfo[Fn]
   
   /** By chaining the spy with calls.mostRecent(), will return the context (the this) and arguments for the most recent call */
-  def mostRecent(): CallInfo[Fn] = js.native
+  def mostRecent(): CallInfo[Fn]
   
   /** By chaining the spy with calls.reset(), will clears all tracking for a spy */
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   /** Set this spy to do a shallow clone of arguments passed to each invocation. */
-  def saveArgumentsByValue(): Unit = js.native
+  def saveArgumentsByValue(): Unit
 }
 object Calls {
   
@@ -55,7 +53,7 @@ object Calls {
   }
   
   @scala.inline
-  implicit class CallsMutableBuilder[Self <: Calls[_], Fn /* <: Func */] (val x: Self with Calls[Fn]) extends AnyVal {
+  implicit class CallsMutableBuilder[Self <: Calls[?], Fn /* <: Func */] (val x: Self & Calls[Fn]) extends AnyVal {
     
     @scala.inline
     def setAll(value: () => js.Array[CallInfo[Fn]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))

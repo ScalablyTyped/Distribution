@@ -2,19 +2,17 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CarouselOptions extends StObject {
   
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
-  var keyboard: js.UndefOr[Boolean] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   
-  var pause: js.UndefOr[String] = js.native
+  var pause: js.UndefOr[String] = js.undefined
   
-  var wrap: js.UndefOr[Boolean] = js.native
+  var wrap: js.UndefOr[Boolean] = js.undefined
 }
 object CarouselOptions {
   

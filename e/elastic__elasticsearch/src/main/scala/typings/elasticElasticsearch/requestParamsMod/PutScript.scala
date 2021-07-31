@@ -2,21 +2,21 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PutScript[T] extends Generic {
+trait PutScript[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object PutScript {
   
@@ -27,7 +27,7 @@ object PutScript {
   }
   
   @scala.inline
-  implicit class PutScriptMutableBuilder[Self <: PutScript[_], T] (val x: Self with PutScript[T]) extends AnyVal {
+  implicit class PutScriptMutableBuilder[Self <: PutScript[?], T] (val x: Self & PutScript[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

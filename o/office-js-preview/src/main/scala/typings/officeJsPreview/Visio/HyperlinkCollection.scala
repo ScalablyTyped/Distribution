@@ -8,7 +8,6 @@ import typings.officeJsPreview.Visio.Interfaces.HyperlinkCollectionData
 import typings.officeJsPreview.Visio.Interfaces.HyperlinkCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set:  1.1]
   */
 @js.native
-trait HyperlinkCollection extends ClientObject {
+trait HyperlinkCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -62,7 +63,7 @@ trait HyperlinkCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): HyperlinkCollection = js.native
-  def load(option: HyperlinkCollectionLoadOptions with CollectionLoadOptions): HyperlinkCollection = js.native
+  def load(option: HyperlinkCollectionLoadOptions & CollectionLoadOptions): HyperlinkCollection = js.native
   def load(option: String): HyperlinkCollection = js.native
   def load(option: js.Array[String]): HyperlinkCollection = js.native
   def load(option: LoadOption): HyperlinkCollection = js.native

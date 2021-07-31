@@ -10,9 +10,9 @@ Primitive layout, typographic, and other components for use with Theme UI.
 | ------------------ | :-------------: |
 | Full name          | @theme-ui/components |
 | Keywords           | - |
-| # releases         | 30 |
-| # dependents       | 46 |
-| # downloads        | 2405742 |
+| # releases         | 45 |
+| # dependents       | 47 |
+| # downloads        | 3274791 |
 | # stars            | 0 |
 
 ## Links

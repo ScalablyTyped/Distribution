@@ -2,15 +2,13 @@ package typings.cordovaPluginMapsforge
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapsforgePlugin extends StObject {
   
-  var cache: MapsforgeCachePlugin = js.native
+  var cache: MapsforgeCachePlugin
   
-  var embedded: MapsforgeEmbeddedPlugin = js.native
+  var embedded: MapsforgeEmbeddedPlugin
 }
 object MapsforgePlugin {
   

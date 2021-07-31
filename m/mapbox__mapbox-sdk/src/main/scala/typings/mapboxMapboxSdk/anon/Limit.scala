@@ -2,17 +2,15 @@ package typings.mapboxMapboxSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Limit extends StObject {
   
-  var datasetId: String = js.native
+  var datasetId: String
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
 }
 object Limit {
   

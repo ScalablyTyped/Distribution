@@ -5,15 +5,43 @@ import typings.playable.keyboardControlTypesMod.IKeyboardControl
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyboardControlMod {
   
   @JSImport("playable/dist/src/modules/keyboard-control/keyboard-control", JSImport.Default)
   @js.native
-  class default protected () extends KeyboardControl {
+  class default protected ()
+    extends StObject
+       with KeyboardControl {
     def this(hasConfigEventEmitterRootContainerEngine: EventEmitter) = this()
+    
+    /* CompleteClass */
+    var _attachDefaultControls: js.Any = js.native
+    
+    /* CompleteClass */
+    var _destroyInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _engine: js.Any = js.native
+    
+    /* CompleteClass */
+    var _eventEmitter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _isEnabled: js.Any = js.native
+    
+    /* CompleteClass */
+    var _keyboardInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    override def addKeyControl(key: Double, callback: EventListener): Unit = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
   }
   /* static members */
   object default {
@@ -43,22 +71,23 @@ object keyboardControlMod {
   @js.native
   val AMOUNT_TO_SKIP_SECONDS: /* 5 */ Double = js.native
   
-  @js.native
-  trait KeyboardControl extends IKeyboardControl {
+  trait KeyboardControl
+    extends StObject
+       with IKeyboardControl {
     
-    var _attachDefaultControls: js.Any = js.native
+    var _attachDefaultControls: js.Any
     
-    var _destroyInterceptor: js.Any = js.native
+    var _destroyInterceptor: js.Any
     
-    var _engine: js.Any = js.native
+    var _engine: js.Any
     
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: js.Any
     
-    var _initInterceptor: js.Any = js.native
+    var _initInterceptor: js.Any
     
-    var _isEnabled: js.Any = js.native
+    var _isEnabled: js.Any
     
-    var _keyboardInterceptor: js.Any = js.native
+    var _keyboardInterceptor: js.Any
   }
   object KeyboardControl {
     

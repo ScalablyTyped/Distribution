@@ -3,63 +3,61 @@ package typings.awsSdkClientCodecommitNode
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRepositoryMetadataMod {
   
-  @js.native
   trait RepositoryMetadata extends StObject {
     
     /**
       * <p>The Amazon Resource Name (ARN) of the repository.</p>
       */
-    var Arn: js.UndefOr[String] = js.native
+    var Arn: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The ID of the AWS account associated with the repository.</p>
       */
-    var accountId: js.UndefOr[String] = js.native
+    var accountId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The URL to use for cloning the repository over HTTPS.</p>
       */
-    var cloneUrlHttp: js.UndefOr[String] = js.native
+    var cloneUrlHttp: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The URL to use for cloning the repository over SSH.</p>
       */
-    var cloneUrlSsh: js.UndefOr[String] = js.native
+    var cloneUrlSsh: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The date and time the repository was created, in timestamp format.</p>
       */
-    var creationDate: js.UndefOr[Date | String | Double] = js.native
+    var creationDate: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>The repository's default branch name.</p>
       */
-    var defaultBranch: js.UndefOr[String] = js.native
+    var defaultBranch: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The date and time the repository was last modified, in timestamp format.</p>
       */
-    var lastModifiedDate: js.UndefOr[Date | String | Double] = js.native
+    var lastModifiedDate: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>A comment or description about the repository.</p>
       */
-    var repositoryDescription: js.UndefOr[String] = js.native
+    var repositoryDescription: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The ID of the repository.</p>
       */
-    var repositoryId: js.UndefOr[String] = js.native
+    var repositoryId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The repository's name.</p>
       */
-    var repositoryName: js.UndefOr[String] = js.native
+    var repositoryName: js.UndefOr[String] = js.undefined
   }
   object RepositoryMetadata {
     
@@ -134,20 +132,21 @@ object typesRepositoryMetadataMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledRepositoryMetadata extends RepositoryMetadata {
+  trait UnmarshalledRepositoryMetadata
+    extends StObject
+       with RepositoryMetadata {
     
     /**
       * <p>The date and time the repository was created, in timestamp format.</p>
       */
     @JSName("creationDate")
-    var creationDate_UnmarshalledRepositoryMetadata: js.UndefOr[Date] = js.native
+    var creationDate_UnmarshalledRepositoryMetadata: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>The date and time the repository was last modified, in timestamp format.</p>
       */
     @JSName("lastModifiedDate")
-    var lastModifiedDate_UnmarshalledRepositoryMetadata: js.UndefOr[Date] = js.native
+    var lastModifiedDate_UnmarshalledRepositoryMetadata: js.UndefOr[Date] = js.undefined
   }
   object UnmarshalledRepositoryMetadata {
     

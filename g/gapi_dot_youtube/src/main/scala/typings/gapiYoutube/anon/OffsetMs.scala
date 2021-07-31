@@ -2,21 +2,19 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OffsetMs extends StObject {
   
   /**
     * The time offset, specified in milliseconds, that determines when the promoted item appears during video playbacks. The type propertys value determines whether the offset is measured from the start or end of the video.
     */
-  var offsetMs: Double = js.native
+  var offsetMs: Double
   
   /**
     * The timing method that determines when the promoted item is inserted during the video playback. If the value is offsetFromStart, then the offsetMs field represents an offset from the start of the video. If the value is offsetFromEnd, then the offsetMs field represents an offset from the end of the video.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object OffsetMs {
   

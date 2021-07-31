@@ -3,7 +3,6 @@ package typings.storybookReactNative
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object visibilityButtonMod {
@@ -12,10 +11,9 @@ object visibilityButtonMod {
   @js.native
   class default () extends VisibilityButton
   
-  @js.native
   trait Props extends StObject {
     
-    def onPress(): Unit = js.native
+    def onPress(): Unit
   }
   object Props {
     

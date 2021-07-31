@@ -2,19 +2,17 @@ package typings.nodeRedRuntime.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Library extends StObject {
   
-  var library: String = js.native
+  var library: String
   
-  var path: String = js.native
+  var path: String
   
-  var req: js.UndefOr[js.Object] = js.native
+  var req: js.UndefOr[js.Object] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Library {
   

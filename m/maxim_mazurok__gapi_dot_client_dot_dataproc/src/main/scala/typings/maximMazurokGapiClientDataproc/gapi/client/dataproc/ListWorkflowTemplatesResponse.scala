@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListWorkflowTemplatesResponse extends StObject {
   
   /**
     * Output only. This token is included in the response if there are more results to fetch. To fetch additional results, provide this value as the page_token in a subsequent
     * ListWorkflowTemplatesRequest.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Output only. WorkflowTemplates list. */
-  var templates: js.UndefOr[js.Array[WorkflowTemplate]] = js.native
+  var templates: js.UndefOr[js.Array[WorkflowTemplate]] = js.undefined
 }
 object ListWorkflowTemplatesResponse {
   

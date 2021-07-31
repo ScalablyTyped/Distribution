@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathFilter extends StObject {
   
   /** Filter on an event to be applied to some part of the path. */
-  var eventFilters: js.UndefOr[js.Array[EventFilter]] = js.native
+  var eventFilters: js.UndefOr[js.Array[EventFilter]] = js.undefined
   
   /** Indicates the position of the path the filter should match to (first, last, or any event in path). */
-  var pathMatchPosition: js.UndefOr[String] = js.native
+  var pathMatchPosition: js.UndefOr[String] = js.undefined
 }
 object PathFilter {
   

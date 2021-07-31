@@ -11,8 +11,8 @@ Check if the process is running inside Windows Subsystem for Linux (Bash on Wind
 | Full name          | is-wsl |
 | Keywords           | check, wsl, windows, subsystem, linux, detect, bash, process, console, terminal, is |
 | # releases         | 5 |
-| # dependents       | 674 |
-| # downloads        | 645893322 |
+| # dependents       | 715 |
+| # downloads        | 902013101 |
 | # stars            | 0 |
 
 ## Links

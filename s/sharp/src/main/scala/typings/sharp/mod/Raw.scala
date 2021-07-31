@@ -6,17 +6,15 @@ import typings.sharp.sharpNumbers.`3`
 import typings.sharp.sharpNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Raw extends StObject {
   
-  var channels: `1` | `2` | `3` | `4` = js.native
+  var channels: `1` | `2` | `3` | `4`
   
-  var height: Double = js.native
+  var height: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object Raw {
   

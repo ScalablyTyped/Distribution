@@ -2,23 +2,21 @@ package typings.reactNavigationNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Back extends StObject {
   
-  def back(): Unit = js.native
+  def back(): Unit
   
-  def forward(): Unit = js.native
+  def forward(): Unit
   
-  def go(n: Double): Unit = js.native
+  def go(n: Double): Unit
   
-  def pushState(state: js.Any, _underscore: String, path: String): Unit = js.native
+  def pushState(state: js.Any, _underscore: String, path: String): Unit
   
-  def replaceState(state: js.Any, _underscore: String, path: String): Unit = js.native
+  def replaceState(state: js.Any, _underscore: String, path: String): Unit
   
-  val state: js.Any = js.native
+  val state: js.Any
 }
 object Back {
   

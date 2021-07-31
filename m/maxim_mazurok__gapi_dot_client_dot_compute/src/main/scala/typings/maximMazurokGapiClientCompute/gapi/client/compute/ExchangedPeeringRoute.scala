@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExchangedPeeringRoute extends StObject {
   
   /** The destination range of the route. */
-  var destRange: js.UndefOr[String] = js.native
+  var destRange: js.UndefOr[String] = js.undefined
   
   /**
     * True if the peering route has been imported from a peer. The actual import happens if the field networkPeering.importCustomRoutes is true for this network, and
     * networkPeering.exportCustomRoutes is true for the peer network, and the import does not result in a route conflict.
     */
-  var imported: js.UndefOr[Boolean] = js.native
+  var imported: js.UndefOr[Boolean] = js.undefined
   
   /** The region of peering route next hop, only applies to dynamic routes. */
-  var nextHopRegion: js.UndefOr[String] = js.native
+  var nextHopRegion: js.UndefOr[String] = js.undefined
   
   /** The priority of the peering route. */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /** The type of the peering route. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ExchangedPeeringRoute {
   

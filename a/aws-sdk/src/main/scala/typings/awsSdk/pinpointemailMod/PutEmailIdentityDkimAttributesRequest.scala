@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutEmailIdentityDkimAttributesRequest extends StObject {
   
   /**
     * The email identity that you want to change the DKIM settings for.
     */
-  var EmailIdentity: Identity = js.native
+  var EmailIdentity: Identity
   
   /**
     * Sets the DKIM signing configuration for the identity. When you set this value true, then the messages that Amazon Pinpoint sends from the identity are DKIM-signed. When you set this value to false, then the messages that Amazon Pinpoint sends from the identity aren't DKIM-signed.
     */
-  var SigningEnabled: js.UndefOr[Enabled] = js.native
+  var SigningEnabled: js.UndefOr[Enabled] = js.undefined
 }
 object PutEmailIdentityDkimAttributesRequest {
   

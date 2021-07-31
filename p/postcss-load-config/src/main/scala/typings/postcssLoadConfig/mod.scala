@@ -16,81 +16,67 @@ import typings.std.Plugin
 import typings.std.Transformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("postcss-load-config", JSImport.Namespace)
-  @js.native
-  def apply(): js.Promise[Result] = js.native
-  @JSImport("postcss-load-config", JSImport.Namespace)
-  @js.native
-  def apply(ctx: js.UndefOr[scala.Nothing], path: js.UndefOr[scala.Nothing], options: Options): js.Promise[Result] = js.native
-  @JSImport("postcss-load-config", JSImport.Namespace)
-  @js.native
-  def apply(ctx: js.UndefOr[scala.Nothing], path: String): js.Promise[Result] = js.native
-  @JSImport("postcss-load-config", JSImport.Namespace)
-  @js.native
-  def apply(ctx: js.UndefOr[scala.Nothing], path: String, options: Options): js.Promise[Result] = js.native
-  @JSImport("postcss-load-config", JSImport.Namespace)
-  @js.native
-  def apply(ctx: ConfigContext): js.Promise[Result] = js.native
-  @JSImport("postcss-load-config", JSImport.Namespace)
-  @js.native
-  def apply(ctx: ConfigContext, path: js.UndefOr[scala.Nothing], options: Options): js.Promise[Result] = js.native
-  @JSImport("postcss-load-config", JSImport.Namespace)
-  @js.native
-  def apply(ctx: ConfigContext, path: String): js.Promise[Result] = js.native
-  @JSImport("postcss-load-config", JSImport.Namespace)
-  @js.native
-  def apply(ctx: ConfigContext, path: String, options: Options): js.Promise[Result] = js.native
+  @scala.inline
+  def apply(): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def apply(ctx: Unit, path: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def apply(ctx: Unit, path: String, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def apply(ctx: Unit, path: Unit, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def apply(ctx: ConfigContext): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def apply(ctx: ConfigContext, path: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def apply(ctx: ConfigContext, path: String, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def apply(ctx: ConfigContext, path: Unit, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  @JSImport("postcss-load-config", "sync")
+  @JSImport("postcss-load-config", JSImport.Namespace)
   @js.native
-  def sync(): Result = js.native
-  @JSImport("postcss-load-config", "sync")
-  @js.native
-  def sync(ctx: js.UndefOr[scala.Nothing], path: js.UndefOr[scala.Nothing], options: Options): Result = js.native
-  @JSImport("postcss-load-config", "sync")
-  @js.native
-  def sync(ctx: js.UndefOr[scala.Nothing], path: String): Result = js.native
-  @JSImport("postcss-load-config", "sync")
-  @js.native
-  def sync(ctx: js.UndefOr[scala.Nothing], path: String, options: Options): Result = js.native
-  @JSImport("postcss-load-config", "sync")
-  @js.native
-  def sync(ctx: ConfigContext): Result = js.native
-  @JSImport("postcss-load-config", "sync")
-  @js.native
-  def sync(ctx: ConfigContext, path: js.UndefOr[scala.Nothing], options: Options): Result = js.native
-  @JSImport("postcss-load-config", "sync")
-  @js.native
-  def sync(ctx: ConfigContext, path: String): Result = js.native
-  @JSImport("postcss-load-config", "sync")
-  @js.native
-  def sync(ctx: ConfigContext, path: String, options: Options): Result = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def sync(): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[Result]
+  @scala.inline
+  def sync(ctx: Unit, path: String): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Result]
+  @scala.inline
+  def sync(ctx: Unit, path: String, options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  @scala.inline
+  def sync(ctx: Unit, path: Unit, options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  @scala.inline
+  def sync(ctx: ConfigContext): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any]).asInstanceOf[Result]
+  @scala.inline
+  def sync(ctx: ConfigContext, path: String): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Result]
+  @scala.inline
+  def sync(ctx: ConfigContext, path: String, options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  @scala.inline
+  def sync(ctx: ConfigContext, path: Unit, options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(ctx.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
   // The full shape of the ConfigContext.
   /* Inlined postcss-load-config.postcss-load-config.Context & postcss-load-config.postcss-load-config.ProcessOptionsPreload & postcss-load-config.postcss-load-config.RemainingProcessOptions */
-  @js.native
   trait ConfigContext extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var map: js.UndefOr[SourceMapOptions | Boolean] = js.native
+    var map: js.UndefOr[SourceMapOptions | Boolean] = js.undefined
     
-    var parser: js.UndefOr[String | Parser] = js.native
+    var parser: js.UndefOr[String | Parser] = js.undefined
     
-    var stringifier: js.UndefOr[String | Stringifier] = js.native
+    var stringifier: js.UndefOr[String | Stringifier] = js.undefined
     
-    var syntax: js.UndefOr[String | Syntax] = js.native
+    var syntax: js.UndefOr[String | Syntax] = js.undefined
     
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
   }
   object ConfigContext {
     
@@ -160,12 +146,11 @@ object mod {
   }
   
   // Additional context options that postcss-load-config understands.
-  @js.native
   trait Context extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
   }
   object Context {
     
@@ -195,14 +180,13 @@ object mod {
   // In the ConfigContext, these three options can be instances of the
   // appropriate class, or strings. If they are strings, postcss-load-config will
   // require() them and pass the instances along.
-  @js.native
   trait ProcessOptionsPreload extends StObject {
     
-    var parser: js.UndefOr[String | Parser] = js.native
+    var parser: js.UndefOr[String | Parser] = js.undefined
     
-    var stringifier: js.UndefOr[String | Stringifier] = js.native
+    var stringifier: js.UndefOr[String | Stringifier] = js.undefined
     
-    var syntax: js.UndefOr[String | Syntax] = js.native
+    var syntax: js.UndefOr[String | Syntax] = js.undefined
   }
   object ProcessOptionsPreload {
     
@@ -243,14 +227,13 @@ object mod {
   
   // The remaining ProcessOptions, sans the three above.
   /* Inlined std.Pick<postcss.postcss.ProcessOptions, std.Exclude<keyof postcss.postcss.ProcessOptions, keyof postcss-load-config.postcss-load-config.ProcessOptionsPreload>> */
-  @js.native
   trait RemainingProcessOptions extends StObject {
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var map: js.UndefOr[SourceMapOptions | Boolean] = js.native
+    var map: js.UndefOr[SourceMapOptions | Boolean] = js.undefined
     
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
   }
   object RemainingProcessOptions {
     
@@ -283,14 +266,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var file: String = js.native
+    var file: String
     
-    var options: ProcessOptions = js.native
+    var options: ProcessOptions
     
-    var plugins: js.Array[ResultPlugin] = js.native
+    var plugins: js.Array[ResultPlugin]
   }
   object Result {
     

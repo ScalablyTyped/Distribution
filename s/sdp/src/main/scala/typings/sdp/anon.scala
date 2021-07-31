@@ -2,17 +2,15 @@ package typings.sdp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Mechanism extends StObject {
     
-    var mechanism: String = js.native
+    var mechanism: String
     
-    var ssrc: Double = js.native
+    var ssrc: Double
   }
   object Mechanism {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Ssrc extends StObject {
     
-    var ssrc: Double = js.native
+    var ssrc: Double
   }
   object Ssrc {
     

@@ -2,17 +2,17 @@ package typings.paypalRestSdk.mod.invoice
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BillingInfo extends Person {
+trait BillingInfo
+  extends StObject
+     with Person {
   
-  var additional_info: js.UndefOr[String] = js.native
+  var additional_info: js.UndefOr[String] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var notification_channel: js.UndefOr[String] = js.native
+  var notification_channel: js.UndefOr[String] = js.undefined
 }
 object BillingInfo {
   

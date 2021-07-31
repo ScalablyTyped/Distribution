@@ -2,14 +2,14 @@ package typings.googleMapReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChildComponentProps extends Coords {
+trait ChildComponentProps
+  extends StObject
+     with Coords {
   
   @JSName("$hover")
-  var $hover: js.UndefOr[Boolean] = js.native
+  var $hover: js.UndefOr[Boolean] = js.undefined
 }
 object ChildComponentProps {
   

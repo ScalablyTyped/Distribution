@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.PadV2Attrs
 import typings.tensorflowTfjsCore.kernelNamesMod.PadV2Inputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsPadV2Attrs extends StObject {
   
-  var attrs: PadV2Attrs = js.native
+  var attrs: PadV2Attrs
   
-  var backend: MathBackendCPU = js.native
+  var backend: MathBackendCPU
   
-  var inputs: PadV2Inputs = js.native
+  var inputs: PadV2Inputs
 }
 object AttrsPadV2Attrs {
   

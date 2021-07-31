@@ -6,33 +6,33 @@ import typings.smartFoxServer.SFS2X.Managers.RoomManager
 import typings.smartFoxServer.SFS2X.Requests.MMO.MapLimits
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MMORoom extends SFSRoom {
+trait MMORoom
+  extends StObject
+     with SFSRoom {
   
   /** @type {Data.Vec3D} Returns the default Area of Interest (AoI) of this MMORoom. */
-  var defaultAOI: Vec3D = js.native
+  var defaultAOI: Vec3D
   
   /**
     * Retrieves an MMOItem object from its id property. The item is available to the current user if it falls within their Area of Interest only.
     * @param  {number}  id The id of the item to be retrieved.
     * @return {MMOItem}    Returns: An MMOItem object, or null if the item with the passed id is not in proximity of the current user.
     */
-  def getMMOItem(id: Double): MMOItem = js.native
+  def getMMOItem(id: Double): MMOItem
   
   /**
     * Retrieves all MMOItem object in the MMORoom that fall within the current user's Area of Interest.
     * @return {MMOItem[]} Returns: A list of MMOItem objects, or an empty list if no item is in proximity of the current user.
     */
-  def getMMOItems(): js.Array[MMOItem] = js.native
+  def getMMOItems(): js.Array[MMOItem]
   
   /** @type {Requests.MMO.MapLimits} Returns the higher coordinates limit of the virtual environment represented by the MMORoom along the X,Y,Z axes. If null is returned, no limits were set at Room creation time. */
-  var higherMapLimit: MapLimits = js.native
+  var higherMapLimit: MapLimits
   
   /** @type {Requests.MMO.MapLimits} Returns the lower coordinates limit of the virtual environment represented by the MMORoom along the X,Y,Z axes. If null is returned, no limits were set at Room creation time. */
-  var lowerMapLimit: MapLimits = js.native
+  var lowerMapLimit: MapLimits
 }
 object MMORoom {
   

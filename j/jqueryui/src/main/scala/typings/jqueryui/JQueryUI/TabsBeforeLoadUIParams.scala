@@ -4,19 +4,17 @@ import typings.jquery.JQueryXHR
 import typings.jqueryui.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabsBeforeLoadUIParams extends StObject {
   
-  var ajaxSettings: js.Any = js.native
+  var ajaxSettings: js.Any
   
-  var jqXHR: JQueryXHR = js.native
+  var jqXHR: JQueryXHR
   
-  var panel: JQuery = js.native
+  var panel: JQuery
   
-  var tab: JQuery = js.native
+  var tab: JQuery
 }
 object TabsBeforeLoadUIParams {
   

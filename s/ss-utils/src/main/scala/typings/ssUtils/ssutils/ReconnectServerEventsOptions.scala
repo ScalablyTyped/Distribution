@@ -2,19 +2,17 @@ package typings.ssUtils.ssutils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReconnectServerEventsOptions extends StObject {
   
-  var errorArgs: js.UndefOr[js.Array[_]] = js.native
+  var errorArgs: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var onerror: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var onerror: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
-  var onmessage: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var onmessage: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ReconnectServerEventsOptions {
   
@@ -28,7 +26,7 @@ object ReconnectServerEventsOptions {
   implicit class ReconnectServerEventsOptionsMutableBuilder[Self <: ReconnectServerEventsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setErrorArgs(value: js.Array[_]): Self = StObject.set(x, "errorArgs", value.asInstanceOf[js.Any])
+    def setErrorArgs(value: js.Array[js.Any]): Self = StObject.set(x, "errorArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setErrorArgsUndefined: Self = StObject.set(x, "errorArgs", js.undefined)

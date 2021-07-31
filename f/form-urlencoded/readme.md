@@ -11,8 +11,8 @@ Return an object as an 'x-www-form-urlencoded' string
 | Full name          | form-urlencoded |
 | Keywords           | querystring, x-www-form-urlencoded, www-form-urlencoded, form-urlencoded, urlencoded, urlencode, encoding, encoded, encode, form, json encode |
 | # releases         | 10 |
-| # dependents       | 148 |
-| # downloads        | 4343634 |
+| # dependents       | 156 |
+| # downloads        | 5942585 |
 | # stars            | 6 |
 
 ## Links

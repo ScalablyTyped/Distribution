@@ -4,19 +4,20 @@ import typings.reactDnd.monitorsMod.HandlerManager
 import typings.reactDnd.monitorsMod.MonitorEventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useMonitorOutputMod {
   
-  @JSImport("react-dnd/lib/hooks/internal/useMonitorOutput", "useMonitorOutput")
+  @JSImport("react-dnd/lib/hooks/internal/useMonitorOutput", JSImport.Namespace)
   @js.native
-  def useMonitorOutput[Monitor /* <: HandlerManager */, Collected](monitor: Monitor with MonitorEventEmitter, collect: js.Function1[/* monitor */ Monitor, Collected]): Collected = js.native
-  @JSImport("react-dnd/lib/hooks/internal/useMonitorOutput", "useMonitorOutput")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useMonitorOutput[Monitor /* <: HandlerManager */, Collected](monitor: Monitor & MonitorEventEmitter, collect: js.Function1[/* monitor */ Monitor, Collected]): Collected = (^.asInstanceOf[js.Dynamic].applyDynamic("useMonitorOutput")(monitor.asInstanceOf[js.Any], collect.asInstanceOf[js.Any])).asInstanceOf[Collected]
+  @scala.inline
   def useMonitorOutput[Monitor /* <: HandlerManager */, Collected](
-    monitor: Monitor with MonitorEventEmitter,
+    monitor: Monitor & MonitorEventEmitter,
     collect: js.Function1[/* monitor */ Monitor, Collected],
     onCollect: js.Function0[Unit]
-  ): Collected = js.native
+  ): Collected = (^.asInstanceOf[js.Dynamic].applyDynamic("useMonitorOutput")(monitor.asInstanceOf[js.Any], collect.asInstanceOf[js.Any], onCollect.asInstanceOf[js.Any])).asInstanceOf[Collected]
 }

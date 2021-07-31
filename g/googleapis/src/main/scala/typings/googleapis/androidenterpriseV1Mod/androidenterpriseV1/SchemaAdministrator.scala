@@ -2,20 +2,18 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This represents an enterprise admin who can manage the enterprise in the
   * managed Google Play store.
   */
-@js.native
 trait SchemaAdministrator extends StObject {
   
   /**
     * The admin&#39;s email address.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
 }
 object SchemaAdministrator {
   

@@ -14,14 +14,15 @@ import typings.nodeHorseman.nodeHorsemanStrings.urlChanged
 import typings.std.ClientRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("node-horseman", JSImport.Namespace)
   @js.native
-  class ^ protected () extends horseman {
+  class ^ protected ()
+    extends StObject
+       with horseman {
     def this(options: js.Any) = this()
   }
   
@@ -85,7 +86,7 @@ object mod {
     
     /** Run a javascript function on the current page and optionally return the results. */
     def evaluate(fn: js.Function0[Unit]): this.type = js.native
-    def evaluate(fn: js.Function0[Unit], args: js.Array[_]): this.type = js.native
+    def evaluate(fn: js.Function0[Unit], args: js.Array[js.Any]): this.type = js.native
     
     /** Determine if the selector exists, at least once, on the page. */
     def exists(selector: String): Boolean = js.native
@@ -110,9 +111,9 @@ object mod {
     
     /** Get the HTML for the page, or optionally for a selector. */
     def html(): js.Promise[String] = js.native
-    def html(selector: js.UndefOr[scala.Nothing], file: String): js.Promise[String] = js.native
     def html(selector: String): js.Promise[String] = js.native
     def html(selector: String, file: String): js.Promise[String] = js.native
+    def html(selector: Unit, file: String): js.Promise[String] = js.native
     
     /** Includes javascript script from a url on the page. */
     def includeJs(url: String): this.type = js.native
@@ -122,13 +123,13 @@ object mod {
     
     /** Fire a key event. */
     def keyboardEvent(): this.type = js.native
-    def keyboardEvent(`type`: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], modifier: Double): this.type = js.native
-    def keyboardEvent(`type`: js.UndefOr[scala.Nothing], key: String): this.type = js.native
-    def keyboardEvent(`type`: js.UndefOr[scala.Nothing], key: String, modifier: Double): this.type = js.native
     def keyboardEvent(`type`: String): this.type = js.native
-    def keyboardEvent(`type`: String, key: js.UndefOr[scala.Nothing], modifier: Double): this.type = js.native
     def keyboardEvent(`type`: String, key: String): this.type = js.native
     def keyboardEvent(`type`: String, key: String, modifier: Double): this.type = js.native
+    def keyboardEvent(`type`: String, key: Unit, modifier: Double): this.type = js.native
+    def keyboardEvent(`type`: Unit, key: String): this.type = js.native
+    def keyboardEvent(`type`: Unit, key: String, modifier: Double): this.type = js.native
+    def keyboardEvent(`type`: Unit, key: Unit, modifier: Double): this.type = js.native
     
     /** Log the output from either a previous chain method, or a string the user passed in. */
     def log(): this.type = js.native
@@ -136,30 +137,25 @@ object mod {
     
     /** Run javascript on the page. */
     def manipulate(fn: js.Function0[Unit]): this.type = js.native
-    def manipulate(fn: js.Function0[Unit], args: js.Array[_]): this.type = js.native
+    def manipulate(fn: js.Function0[Unit], args: js.Array[js.Any]): this.type = js.native
     
     /** Fire a mouse event. */
     def mouseEvent(): this.type = js.native
-    def mouseEvent(
-      `type`: js.UndefOr[scala.Nothing],
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      button: String
-    ): this.type = js.native
-    def mouseEvent(`type`: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-    def mouseEvent(`type`: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double, button: String): this.type = js.native
-    def mouseEvent(`type`: js.UndefOr[scala.Nothing], x: Double): this.type = js.native
-    def mouseEvent(`type`: js.UndefOr[scala.Nothing], x: Double, y: js.UndefOr[scala.Nothing], button: String): this.type = js.native
-    def mouseEvent(`type`: js.UndefOr[scala.Nothing], x: Double, y: Double): this.type = js.native
-    def mouseEvent(`type`: js.UndefOr[scala.Nothing], x: Double, y: Double, button: String): this.type = js.native
     def mouseEvent(`type`: String): this.type = js.native
-    def mouseEvent(`type`: String, x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], button: String): this.type = js.native
-    def mouseEvent(`type`: String, x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-    def mouseEvent(`type`: String, x: js.UndefOr[scala.Nothing], y: Double, button: String): this.type = js.native
     def mouseEvent(`type`: String, x: Double): this.type = js.native
-    def mouseEvent(`type`: String, x: Double, y: js.UndefOr[scala.Nothing], button: String): this.type = js.native
     def mouseEvent(`type`: String, x: Double, y: Double): this.type = js.native
     def mouseEvent(`type`: String, x: Double, y: Double, button: String): this.type = js.native
+    def mouseEvent(`type`: String, x: Double, y: Unit, button: String): this.type = js.native
+    def mouseEvent(`type`: String, x: Unit, y: Double): this.type = js.native
+    def mouseEvent(`type`: String, x: Unit, y: Double, button: String): this.type = js.native
+    def mouseEvent(`type`: String, x: Unit, y: Unit, button: String): this.type = js.native
+    def mouseEvent(`type`: Unit, x: Double): this.type = js.native
+    def mouseEvent(`type`: Unit, x: Double, y: Double): this.type = js.native
+    def mouseEvent(`type`: Unit, x: Double, y: Double, button: String): this.type = js.native
+    def mouseEvent(`type`: Unit, x: Double, y: Unit, button: String): this.type = js.native
+    def mouseEvent(`type`: Unit, x: Unit, y: Double): this.type = js.native
+    def mouseEvent(`type`: Unit, x: Unit, y: Double, button: String): this.type = js.native
+    def mouseEvent(`type`: Unit, x: Unit, y: Unit, button: String): this.type = js.native
     
     /**
       * Handles page events.

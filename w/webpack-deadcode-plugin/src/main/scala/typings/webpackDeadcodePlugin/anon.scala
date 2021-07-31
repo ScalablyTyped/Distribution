@@ -2,28 +2,26 @@ package typings.webpackDeadcodePlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Required<webpack-deadcode-plugin.webpack-deadcode-plugin.Options> */
-  @js.native
   trait RequiredOptions extends StObject {
     
-    var context: String = js.native
+    var context: String
     
-    var detectUnusedExport: Boolean = js.native
+    var detectUnusedExport: Boolean
     
-    var detectUnusedFiles: Boolean = js.native
+    var detectUnusedFiles: Boolean
     
-    var exclude: js.Array[String] = js.native
+    var exclude: js.Array[String]
     
-    var failOnHint: Boolean = js.native
+    var failOnHint: Boolean
     
-    var outputFile: String = js.native
+    var outputFile: String
     
-    var patterns: js.Array[String] = js.native
+    var patterns: js.Array[String]
   }
   object RequiredOptions {
     

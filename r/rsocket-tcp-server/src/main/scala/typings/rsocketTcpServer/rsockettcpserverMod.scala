@@ -8,20 +8,28 @@ import typings.rsocketFlowable.mod.Flowable
 import typings.rsocketTypes.reactiveSocketTypesMod.DuplexConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rsockettcpserverMod {
   
   @JSImport("rsocket-tcp-server/RSocketTCPServer", JSImport.Default)
   @js.native
-  class default protected () extends RSocketTCPServer {
+  class default protected ()
+    extends StObject
+       with RSocketTCPServer {
     def this(options: ServerOptions) = this()
-    def this(options: ServerOptions, encoders: Encoders[_]) = this()
+    def this(options: ServerOptions, encoders: Encoders[js.Any]) = this()
+    
+    /* CompleteClass */
+    override def start(): Flowable[DuplexConnection] = js.native
+    
+    /* CompleteClass */
+    override def stop(): Unit = js.native
   }
   
-  @js.native
-  trait RSocketTCPServer extends TransportServer
+  trait RSocketTCPServer
+    extends StObject
+       with TransportServer
   object RSocketTCPServer {
     
     @scala.inline
@@ -31,14 +39,13 @@ object rsockettcpserverMod {
     }
   }
   
-  @js.native
   trait ServerOptions extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
     
-    var serverFactory: js.UndefOr[js.Function1[/* onConnect */ js.Function1[/* socket */ Socket, Unit], Server]] = js.native
+    var serverFactory: js.UndefOr[js.Function1[/* onConnect */ js.Function1[/* socket */ Socket, Unit], Server]] = js.undefined
   }
   object ServerOptions {
     

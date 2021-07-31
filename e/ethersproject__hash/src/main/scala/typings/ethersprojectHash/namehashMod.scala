@@ -2,16 +2,17 @@ package typings.ethersprojectHash
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object namehashMod {
   
-  @JSImport("@ethersproject/hash/lib/namehash", "isValidName")
+  @JSImport("@ethersproject/hash/lib/namehash", JSImport.Namespace)
   @js.native
-  def isValidName(name: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ethersproject/hash/lib/namehash", "namehash")
-  @js.native
-  def namehash(name: String): String = js.native
+  @scala.inline
+  def isValidName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def namehash(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("namehash")(name.asInstanceOf[js.Any]).asInstanceOf[String]
 }

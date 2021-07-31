@@ -23,7 +23,6 @@ import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.submoduleUpdateOptionsMod.SubmoduleUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object submoduleMod {
@@ -83,52 +82,44 @@ object submoduleMod {
   /* static members */
   object Submodule {
     
-    @JSImport("nodegit/submodule", "Submodule.addSetup")
+    @JSImport("nodegit/submodule", "Submodule")
     @js.native
-    def addSetup(repo: Repository, url: String, path: String, useGitLink: Double): js.Promise[Submodule] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/submodule", "Submodule.foreach")
-    @js.native
-    def foreach(repo: Repository): js.Promise[Double] = js.native
-    @JSImport("nodegit/submodule", "Submodule.foreach")
-    @js.native
-    def foreach(repo: Repository, callback: js.Function): js.Promise[Double] = js.native
+    @scala.inline
+    def addSetup(repo: Repository, url: String, path: String, useGitLink: Double): js.Promise[Submodule] = (^.asInstanceOf[js.Dynamic].applyDynamic("addSetup")(repo.asInstanceOf[js.Any], url.asInstanceOf[js.Any], path.asInstanceOf[js.Any], useGitLink.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Submodule]]
     
-    @JSImport("nodegit/submodule", "Submodule.lookup")
-    @js.native
-    def lookup(repo: Repository, name: String): js.Promise[Submodule] = js.native
+    @scala.inline
+    def foreach(repo: Repository): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    @scala.inline
+    def foreach(repo: Repository, callback: js.Function): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @JSImport("nodegit/submodule", "Submodule.resolveUrl")
-    @js.native
-    def resolveUrl(repo: Repository, url: String): js.Promise[Buf] = js.native
+    @scala.inline
+    def lookup(repo: Repository, name: String): js.Promise[Submodule] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Submodule]]
     
-    @JSImport("nodegit/submodule", "Submodule.setBranch")
-    @js.native
-    def setBranch(repo: Repository, name: String, branch: String): Double = js.native
+    @scala.inline
+    def resolveUrl(repo: Repository, url: String): js.Promise[Buf] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveUrl")(repo.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buf]]
     
-    @JSImport("nodegit/submodule", "Submodule.setFetchRecurseSubmodules")
-    @js.native
-    def setFetchRecurseSubmodules(repo: Repository, name: String, fetchRecurseSubmodules: Double): Double = js.native
+    @scala.inline
+    def setBranch(repo: Repository, name: String, branch: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setBranch")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], branch.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/submodule", "Submodule.setIgnore")
-    @js.native
-    def setIgnore(repo: Repository, name: String, ignore: Double): js.Promise[Double] = js.native
+    @scala.inline
+    def setFetchRecurseSubmodules(repo: Repository, name: String, fetchRecurseSubmodules: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setFetchRecurseSubmodules")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fetchRecurseSubmodules.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/submodule", "Submodule.setUpdate")
-    @js.native
-    def setUpdate(repo: Repository, name: String, update: Double): js.Promise[Double] = js.native
+    @scala.inline
+    def setIgnore(repo: Repository, name: String, ignore: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("setIgnore")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @JSImport("nodegit/submodule", "Submodule.setUrl")
-    @js.native
-    def setUrl(repo: Repository, name: String, url: String): js.Promise[Double] = js.native
+    @scala.inline
+    def setUpdate(repo: Repository, name: String, update: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("setUpdate")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], update.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @JSImport("nodegit/submodule", "Submodule.status")
-    @js.native
-    def status(repo: Repository, name: String, ignore: Double): js.Promise[Double] = js.native
+    @scala.inline
+    def setUrl(repo: Repository, name: String, url: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("setUrl")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @JSImport("nodegit/submodule", "Submodule.updateInitOptions")
-    @js.native
-    def updateInitOptions(opts: SubmoduleUpdateOptions, version: Double): Double = js.native
+    @scala.inline
+    def status(repo: Repository, name: String, ignore: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("status")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    
+    @scala.inline
+    def updateInitOptions(opts: SubmoduleUpdateOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInitOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`-1`

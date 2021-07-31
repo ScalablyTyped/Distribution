@@ -2,23 +2,21 @@ package typings.dropboxjs.Dropbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthDriver extends StObject {
   
-  def authType(): String = js.native
+  def authType(): String
   
-  def doAuthorize(authUrl: String, stateParam: String, client: Client, callback: QueryParamsCallback): Unit = js.native
+  def doAuthorize(authUrl: String, stateParam: String, client: Client, callback: QueryParamsCallback): Unit
   
-  def getStateParam(client: Client, callback: js.Function1[/* state */ String, Unit]): Unit = js.native
+  def getStateParam(client: Client, callback: js.Function1[/* state */ String, Unit]): Unit
   
-  def onAuthStepChange(client: Client, callback: js.Function0[Unit]): Unit = js.native
+  def onAuthStepChange(client: Client, callback: js.Function0[Unit]): Unit
   
-  def resumeAuthorize(stateParam: String, client: Client, callback: QueryParamsCallback): Unit = js.native
+  def resumeAuthorize(stateParam: String, client: Client, callback: QueryParamsCallback): Unit
   
-  def url(): String = js.native
+  def url(): String
 }
 object AuthDriver {
   
@@ -57,14 +55,13 @@ object AuthDriver {
     def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
   }
   
-  @js.native
   trait BrowserBase extends StObject {
     
-    def authType(): String = js.native
+    def authType(): String
     
-    def locationStateParam(url: String): String = js.native
+    def locationStateParam(url: String): String
     
-    def onAuthStepChange(client: Client, callback: js.Function0[Unit]): Unit = js.native
+    def onAuthStepChange(client: Client, callback: js.Function0[Unit]): Unit
   }
   object BrowserBase {
     
@@ -97,7 +94,9 @@ object AuthDriver {
   type ChromeExtension = IAuthDriver
   
   @js.native
-  trait Cordova extends IAuthDriver {
+  trait Cordova
+    extends StObject
+       with IAuthDriver {
     
     def url(): String = js.native
   }
@@ -111,7 +110,9 @@ object AuthDriver {
   }
   
   @js.native
-  trait NodeServer extends IAuthDriver {
+  trait NodeServer
+    extends StObject
+       with IAuthDriver {
     
     def authType(): String = js.native
     
@@ -130,19 +131,20 @@ object AuthDriver {
   }
   
   @js.native
-  trait Popup extends IAuthDriver {
+  trait Popup
+    extends StObject
+       with IAuthDriver {
     
     def url(): String = js.native
   }
   
-  @js.native
   trait Redirect extends StObject {
     
-    def doAuthorize(authUrl: String, stateParam: String, client: Client): Unit = js.native
+    def doAuthorize(authUrl: String, stateParam: String, client: Client): Unit
     
-    def resumeAuthorize(stateParam: String, client: Client, callback: QueryParamsCallback): Unit = js.native
+    def resumeAuthorize(stateParam: String, client: Client, callback: QueryParamsCallback): Unit
     
-    def url(): String = js.native
+    def url(): String
   }
   object Redirect {
     

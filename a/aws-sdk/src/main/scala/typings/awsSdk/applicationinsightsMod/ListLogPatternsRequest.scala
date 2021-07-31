@@ -2,31 +2,29 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLogPatternsRequest extends StObject {
   
   /**
     * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value.
     */
-  var MaxResults: js.UndefOr[MaxEntities] = js.native
+  var MaxResults: js.UndefOr[MaxEntities] = js.undefined
   
   /**
     * The token to request the next page of results.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The name of the log pattern set.
     */
-  var PatternSetName: js.UndefOr[LogPatternSetName] = js.native
+  var PatternSetName: js.UndefOr[LogPatternSetName] = js.undefined
   
   /**
     * The name of the resource group.
     */
-  var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName = js.native
+  var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName
 }
 object ListLogPatternsRequest {
   

@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,23 +27,37 @@ sealed trait DRAW_MODES extends StObject
 object DRAW_MODES extends StObject {
   
   @js.native
-  sealed trait LINES extends DRAW_MODES
+  sealed trait LINES
+    extends StObject
+       with DRAW_MODES
   
   @js.native
-  sealed trait LINE_LOOP extends DRAW_MODES
+  sealed trait LINE_LOOP
+    extends StObject
+       with DRAW_MODES
   
   @js.native
-  sealed trait LINE_STRIP extends DRAW_MODES
+  sealed trait LINE_STRIP
+    extends StObject
+       with DRAW_MODES
   
   @js.native
-  sealed trait POINTS extends DRAW_MODES
+  sealed trait POINTS
+    extends StObject
+       with DRAW_MODES
   
   @js.native
-  sealed trait TRIANGLES extends DRAW_MODES
+  sealed trait TRIANGLES
+    extends StObject
+       with DRAW_MODES
   
   @js.native
-  sealed trait TRIANGLE_FAN extends DRAW_MODES
+  sealed trait TRIANGLE_FAN
+    extends StObject
+       with DRAW_MODES
   
   @js.native
-  sealed trait TRIANGLE_STRIP extends DRAW_MODES
+  sealed trait TRIANGLE_STRIP
+    extends StObject
+       with DRAW_MODES
 }

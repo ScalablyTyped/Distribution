@@ -2,54 +2,52 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCalendar extends StObject {
   
   /**
     * Conferencing properties for this calendar, for example what types of
     * conferences are allowed.
     */
-  var conferenceProperties: js.UndefOr[SchemaConferenceProperties] = js.native
+  var conferenceProperties: js.UndefOr[SchemaConferenceProperties] = js.undefined
   
   /**
     * Description of the calendar. Optional.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the calendar. To retrieve IDs call the calendarList.list()
     * method.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the resource (&quot;calendar#calendar&quot;).
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Geographic location of the calendar as free-form text. Optional.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Title of the calendar.
     */
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
   /**
     * The time zone of the calendar. (Formatted as an IANA Time Zone Database
     * name, e.g. &quot;Europe/Zurich&quot;.) Optional.
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object SchemaCalendar {
   

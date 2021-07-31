@@ -2,10 +2,8 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapOptions extends StObject {
   
   /**
@@ -13,16 +11,16 @@ trait MapOptions extends StObject {
     * when tiles have not yet loaded as the user pans. This option can only be
     * set when the map is initialized.
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /** The initial Map center. Required. */
-  var center: js.UndefOr[LatLng | LatLngLiteral] = js.native
+  var center: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
   
   /**
     * When false, map icons are not clickable. A map icon represents a point of
     * interest, also known as a POI. By default map icons are clickable.
     */
-  var clickableIcons: js.UndefOr[Boolean] = js.native
+  var clickableIcons: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Size in pixels of the controls appearing on the map. This value must be
@@ -31,19 +29,19 @@ trait MapOptions extends StObject {
     * made by the Maps API itself. Does not scale developer created custom
     * controls.
     */
-  var controlSize: js.UndefOr[Double] = js.native
+  var controlSize: js.UndefOr[Double] = js.undefined
   
   /** Enables/disables all default UI. May be overridden individually. */
-  var disableDefaultUI: js.UndefOr[Boolean] = js.native
+  var disableDefaultUI: js.UndefOr[Boolean] = js.undefined
   
   /** Enables/disables zoom and center on double click. Enabled by default. */
-  var disableDoubleClickZoom: js.UndefOr[Boolean] = js.native
+  var disableDoubleClickZoom: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If false, prevents the map from being dragged. Dragging is enabled by
     * default.
     */
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name or url of the cursor to display when mousing over a draggable
@@ -52,7 +50,7 @@ trait MapOptions extends StObject {
     * is not a URL. For example: draggableCursor:
     * 'url(http://www.example.com/icon.png), auto;'.
     */
-  var draggableCursor: js.UndefOr[String] = js.native
+  var draggableCursor: js.UndefOr[String] = js.undefined
   
   /**
     * The name or url of the cursor to display when the map is being dragged.
@@ -61,40 +59,40 @@ trait MapOptions extends StObject {
     * not a URL. For example: draggingCursor:
     * 'url(http://www.example.com/icon.png), auto;'.
     */
-  var draggingCursor: js.UndefOr[String] = js.native
+  var draggingCursor: js.UndefOr[String] = js.undefined
   
   /** The enabled/disabled state of the Fullscreen control. */
-  var fullscreenControl: js.UndefOr[Boolean] = js.native
+  var fullscreenControl: js.UndefOr[Boolean] = js.undefined
   
   /** The display options for the Fullscreen control. */
-  var fullscreenControlOptions: js.UndefOr[FullscreenControlOptions] = js.native
+  var fullscreenControlOptions: js.UndefOr[FullscreenControlOptions] = js.undefined
   
   /**
     * This setting controls how gestures on the map are handled.
     */
-  var gestureHandling: js.UndefOr[GestureHandlingOptions] = js.native
+  var gestureHandling: js.UndefOr[GestureHandlingOptions] = js.undefined
   
   /**
     * The heading for aerial imagery in degrees measured clockwise from
     * cardinal direction North. Headings are snapped to the nearest available
     * angle for which imagery is available.
     */
-  var heading: js.UndefOr[Double] = js.native
+  var heading: js.UndefOr[Double] = js.undefined
   
   /**
     * If false, prevents the map from being controlled by the keyboard.
     * Keyboard shortcuts are enabled by default.
     */
-  var keyboardShortcuts: js.UndefOr[Boolean] = js.native
+  var keyboardShortcuts: js.UndefOr[Boolean] = js.undefined
   
   /** The initial enabled/disabled state of the Map type control. */
-  var mapTypeControl: js.UndefOr[Boolean] = js.native
+  var mapTypeControl: js.UndefOr[Boolean] = js.undefined
   
   /** The initial display options for the Map type control. */
-  var mapTypeControlOptions: js.UndefOr[MapTypeControlOptions] = js.native
+  var mapTypeControlOptions: js.UndefOr[MapTypeControlOptions] = js.undefined
   
   /** The initial Map mapTypeId. Defaults to ROADMAP. */
-  var mapTypeId: js.UndefOr[MapTypeId | String] = js.native
+  var mapTypeId: js.UndefOr[MapTypeId | String] = js.undefined
   
   /**
     * The maximum zoom level which will be displayed on the map. If omitted, or
@@ -102,7 +100,7 @@ trait MapOptions extends StObject {
     * Valid values: Integers between zero, and up to the supported maximum zoom
     * level.
     */
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum zoom level which will be displayed on the map. If omitted, or
@@ -110,10 +108,10 @@ trait MapOptions extends StObject {
     * Valid values: Integers between zero, and up to the supported maximum zoom
     * level.
     */
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
   /** If true, do not clear the contents of the Map div. */
-  var noClear: js.UndefOr[Boolean] = js.native
+  var noClear: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The enabled/disabled state of the Pan control.
@@ -125,7 +123,7 @@ trait MapOptions extends StObject {
     * https://developers.google.com/maps/articles/v322-controls-diff|What's New
     * in the v3.22 Map Controls}.
     */
-  var panControl: js.UndefOr[Boolean] = js.native
+  var panControl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The display options for the Pan control.
@@ -137,7 +135,7 @@ trait MapOptions extends StObject {
     * https://developers.google.com/maps/articles/v322-controls-diff|What's New
     * in the v3.22 Map Controls}.
     */
-  var panControlOptions: js.UndefOr[PanControlOptions] = js.native
+  var panControlOptions: js.UndefOr[PanControlOptions] = js.undefined
   
   /**
     * Defines a boundary that restricts the area of the map accessible to users.
@@ -145,32 +143,32 @@ trait MapOptions extends StObject {
     * limits of the boundary.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.restriction Maps JavaScript API}
     */
-  var restriction: js.UndefOr[MapRestriction] = js.native
+  var restriction: js.UndefOr[MapRestriction] = js.undefined
   
   /** The enabled/disabled state of the Rotate control. */
-  var rotateControl: js.UndefOr[Boolean] = js.native
+  var rotateControl: js.UndefOr[Boolean] = js.undefined
   
   /** The display options for the Rotate control. */
-  var rotateControlOptions: js.UndefOr[RotateControlOptions] = js.native
+  var rotateControlOptions: js.UndefOr[RotateControlOptions] = js.undefined
   
   /** The initial enabled/disabled state of the Scale control. */
-  var scaleControl: js.UndefOr[Boolean] = js.native
+  var scaleControl: js.UndefOr[Boolean] = js.undefined
   
   /** The initial display options for the Scale control. */
-  var scaleControlOptions: js.UndefOr[ScaleControlOptions] = js.native
+  var scaleControlOptions: js.UndefOr[ScaleControlOptions] = js.undefined
   
   /**
     * If false, disables scrollwheel zooming on the map. The scrollwheel is
     * enabled by default.
     */
-  var scrollwheel: js.UndefOr[Boolean] = js.native
+  var scrollwheel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A StreetViewPanorama to display when the Street View pegman is dropped on
     * the map. If no panorama is specified, a default StreetViewPanorama will
     * be displayed in the map's div when the pegman is dropped.
     */
-  var streetView: js.UndefOr[StreetViewPanorama] = js.native
+  var streetView: js.UndefOr[StreetViewPanorama] = js.undefined
   
   /**
     * The initial enabled/disabled state of the Street View Pegman control.
@@ -178,17 +176,17 @@ trait MapOptions extends StObject {
     * displaying a map type on which the Street View road overlay should not
     * appear (e.g. a non-Earth map type).
     */
-  var streetViewControl: js.UndefOr[Boolean] = js.native
+  var streetViewControl: js.UndefOr[Boolean] = js.undefined
   
   /** The initial display options for the Street View Pegman control. */
-  var streetViewControlOptions: js.UndefOr[StreetViewControlOptions] = js.native
+  var streetViewControlOptions: js.UndefOr[StreetViewControlOptions] = js.undefined
   
   /**
     * Styles to apply to each of the default map types. Note that for
     * satellite/hybrid and terrain modes, these styles will only apply to
     * labels and geometry.
     */
-  var styles: js.UndefOr[js.Array[MapTypeStyle]] = js.native
+  var styles: js.UndefOr[js.Array[MapTypeStyle]] = js.undefined
   
   /**
     * Controls the automatic switching behavior for the angle of incidence of
@@ -204,19 +202,19 @@ trait MapOptions extends StObject {
     * different things, do not bind() the tilt property; doing so may yield
     * unpredictable effects.
     */
-  var tilt: js.UndefOr[Double] = js.native
+  var tilt: js.UndefOr[Double] = js.undefined
   
   /**
     * The initial Map zoom level. Required. Valid values: Integers between
     * zero, and up to the supported maximum zoom level.
     */
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
   
   /** The enabled/disabled state of the Zoom control. */
-  var zoomControl: js.UndefOr[Boolean] = js.native
+  var zoomControl: js.UndefOr[Boolean] = js.undefined
   
   /** The display options for the Zoom control. */
-  var zoomControlOptions: js.UndefOr[ZoomControlOptions] = js.native
+  var zoomControlOptions: js.UndefOr[ZoomControlOptions] = js.undefined
 }
 object MapOptions {
   

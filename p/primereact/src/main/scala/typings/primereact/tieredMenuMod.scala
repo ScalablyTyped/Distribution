@@ -7,7 +7,6 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tieredMenuMod {
@@ -26,28 +25,27 @@ object tieredMenuMod {
     def toggle(event: SyntheticEvent[Element, Event]): Unit = js.native
   }
   
-  @js.native
   trait TieredMenuProps extends StObject {
     
-    var appendTo: js.UndefOr[js.Any] = js.native
+    var appendTo: js.UndefOr[js.Any] = js.undefined
     
-    var autoZIndex: js.UndefOr[Boolean] = js.native
+    var autoZIndex: js.UndefOr[Boolean] = js.undefined
     
-    var bazeZIndex: js.UndefOr[Double] = js.native
+    var bazeZIndex: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var model: js.UndefOr[js.Array[MenuItem]] = js.native
+    var model: js.UndefOr[js.Array[MenuItem]] = js.undefined
     
-    var onHide: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+    var onHide: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+    var onShow: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var popup: js.UndefOr[Boolean] = js.native
+    var popup: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object TieredMenuProps {
     

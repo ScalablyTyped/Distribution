@@ -3,21 +3,20 @@ package typings.reactMdUtils
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollIntoViewMod {
   
-  @JSImport("@react-md/utils/types/scrollIntoView", "scrollIntoView")
+  @JSImport("@react-md/utils/types/scrollIntoView", JSImport.Namespace)
   @js.native
-  def scrollIntoView(): Unit = js.native
-  @JSImport("@react-md/utils/types/scrollIntoView", "scrollIntoView")
-  @js.native
-  def scrollIntoView(container: Null, element: HTMLElement): Unit = js.native
-  @JSImport("@react-md/utils/types/scrollIntoView", "scrollIntoView")
-  @js.native
-  def scrollIntoView(container: HTMLElement): Unit = js.native
-  @JSImport("@react-md/utils/types/scrollIntoView", "scrollIntoView")
-  @js.native
-  def scrollIntoView(container: HTMLElement, element: HTMLElement): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def scrollIntoView(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")().asInstanceOf[Unit]
+  @scala.inline
+  def scrollIntoView(container: Null, element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")(container.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def scrollIntoView(container: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def scrollIntoView(container: HTMLElement, element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")(container.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

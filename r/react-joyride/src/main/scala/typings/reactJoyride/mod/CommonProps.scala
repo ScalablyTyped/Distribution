@@ -3,41 +3,39 @@ package typings.reactJoyride.mod
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonProps extends StObject {
   
-  var beaconComponent: js.UndefOr[ElementType[BeaconRenderProps]] = js.native
+  var beaconComponent: js.UndefOr[ElementType[BeaconRenderProps]] = js.undefined
   
-  var disableCloseOnEsc: js.UndefOr[Boolean] = js.native
+  var disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined
   
-  var disableOverlay: js.UndefOr[Boolean] = js.native
+  var disableOverlay: js.UndefOr[Boolean] = js.undefined
   
-  var disableOverlayClose: js.UndefOr[Boolean] = js.native
+  var disableOverlayClose: js.UndefOr[Boolean] = js.undefined
   
-  var disableScrollParentFix: js.UndefOr[Boolean] = js.native
+  var disableScrollParentFix: js.UndefOr[Boolean] = js.undefined
   
-  var disableScrolling: js.UndefOr[Boolean] = js.native
+  var disableScrolling: js.UndefOr[Boolean] = js.undefined
   
-  var floaterProps: js.UndefOr[FloaterProps] = js.native
+  var floaterProps: js.UndefOr[FloaterProps] = js.undefined
   
-  var hideBackButton: js.UndefOr[Boolean] = js.native
+  var hideBackButton: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[Locale] = js.native
+  var locale: js.UndefOr[Locale] = js.undefined
   
-  var showProgress: js.UndefOr[Boolean] = js.native
+  var showProgress: js.UndefOr[Boolean] = js.undefined
   
-  var showSkipButton: js.UndefOr[Boolean] = js.native
+  var showSkipButton: js.UndefOr[Boolean] = js.undefined
   
-  var spotlightClicks: js.UndefOr[Boolean] = js.native
+  var spotlightClicks: js.UndefOr[Boolean] = js.undefined
   
-  var spotlightPadding: js.UndefOr[Double] = js.native
+  var spotlightPadding: js.UndefOr[Double] = js.undefined
   
-  var styles: js.UndefOr[Styles] = js.native
+  var styles: js.UndefOr[Styles] = js.undefined
   
-  var tooltipComponent: js.UndefOr[ElementType[TooltipRenderProps]] = js.native
+  var tooltipComponent: js.UndefOr[ElementType[TooltipRenderProps]] = js.undefined
 }
 object CommonProps {
   

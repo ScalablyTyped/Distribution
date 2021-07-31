@@ -6,23 +6,21 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.octokitTypes.routeMod.Route
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   type Api = RestEndpointMethods
   
-  @js.native
   trait EndpointDecorations extends StObject {
     
-    var deprecated: js.UndefOr[String] = js.native
+    var deprecated: js.UndefOr[String] = js.undefined
     
-    var mapToData: js.UndefOr[String] = js.native
+    var mapToData: js.UndefOr[String] = js.undefined
     
-    var renamed: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var renamed: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var renamedParameters: js.UndefOr[StringDictionary[String]] = js.native
+    var renamedParameters: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object EndpointDecorations {
     

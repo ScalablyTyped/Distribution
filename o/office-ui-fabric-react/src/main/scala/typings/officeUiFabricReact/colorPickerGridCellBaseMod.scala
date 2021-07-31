@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridC
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorPickerGridCellBaseMod {

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client events  concerned with column processing, and that allow the event's processing to be passed to the server side.
   */
-@js.native
-trait ASPxClientGridViewColumnProcessingModeEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientGridViewColumnProcessingModeEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets a grid column related to the event.
     */
-  var column: ASPxClientGridViewColumn = js.native
+  var column: ASPxClientGridViewColumn
 }
 object ASPxClientGridViewColumnProcessingModeEventArgs {
   

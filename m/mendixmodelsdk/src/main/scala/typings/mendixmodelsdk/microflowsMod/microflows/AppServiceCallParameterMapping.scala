@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AppServiceCallParameterMapping")
@@ -64,9 +63,8 @@ object AppServiceCallParameterMapping {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AppServiceCallParameterMapping.create")
-  @js.native
-  def create(model: IModel): AppServiceCallParameterMapping = js.native
+  @scala.inline
+  def create(model: IModel): AppServiceCallParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[AppServiceCallParameterMapping]
   
   /**
     * Creates and returns a new AppServiceCallParameterMapping instance in the SDK and on the server.
@@ -74,9 +72,8 @@ object AppServiceCallParameterMapping {
     * of the parent AppServiceCallAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AppServiceCallParameterMapping.createIn")
-  @js.native
-  def createIn(container: AppServiceCallAction): AppServiceCallParameterMapping = js.native
+  @scala.inline
+  def createIn(container: AppServiceCallAction): AppServiceCallParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[AppServiceCallParameterMapping]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AppServiceCallParameterMapping.structureTypeName")

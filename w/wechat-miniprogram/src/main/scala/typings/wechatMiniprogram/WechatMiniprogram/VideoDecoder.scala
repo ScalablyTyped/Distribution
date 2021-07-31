@@ -7,7 +7,6 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.start
 import typings.wechatMiniprogram.wechatMiniprogramStrings.stop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,9 +24,12 @@ trait VideoDecoder extends StObject {
     * 取消监听录制事件。当对应事件触发时，该回调函数不再执行
     *
     * 最低基础库： `2.11.0` */
-  def off(/** 事件名 */
-  eventName: String, /** 事件触发时执行的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def off(
+    /** 事件名 */
+  eventName: String,
+    /** 事件触发时执行的回调函数 */
+  callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): Unit = js.native
   
   @JSName("on")
   def on_bufferchange(
@@ -41,7 +43,7 @@ trait VideoDecoder extends StObject {
     * - 'ended': 解码结束事件。; */
   eventName: bufferchange,
     /** 事件触发时执行的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]
+  callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   @JSName("on")
   def on_ended(
@@ -55,7 +57,7 @@ trait VideoDecoder extends StObject {
     * - 'ended': 解码结束事件。; */
   eventName: ended,
     /** 事件触发时执行的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]
+  callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   @JSName("on")
   def on_seek(
@@ -69,7 +71,7 @@ trait VideoDecoder extends StObject {
     * - 'ended': 解码结束事件。; */
   eventName: seek,
     /** 事件触发时执行的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]
+  callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   /** [VideoDecoder.on(string eventName, function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-decoder/VideoDecoder.on.html)
     *
@@ -88,7 +90,7 @@ trait VideoDecoder extends StObject {
     * - 'ended': 解码结束事件。; */
   eventName: start,
     /** 事件触发时执行的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]
+  callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   @JSName("on")
   def on_stop(
@@ -102,7 +104,7 @@ trait VideoDecoder extends StObject {
     * - 'ended': 解码结束事件。; */
   eventName: stop,
     /** 事件触发时执行的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]
+  callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   
   /** [VideoDecoder.remove()](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-decoder/VideoDecoder.remove.html)

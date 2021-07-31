@@ -9,7 +9,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -71,31 +70,31 @@ object mod extends Shortcut {
     def vertical: typings.reactFa.reactFaStrings.vertical = "vertical".asInstanceOf[typings.reactFa.reactFaStrings.vertical]
   }
   
-  @js.native
   trait IconProps
-    extends SizeOverrideHTMLProps[typings.reactFa.mod.Icon] {
+    extends StObject
+       with SizeOverrideHTMLProps[typings.reactFa.mod.Icon] {
     
-    var Component: js.UndefOr[CustomComponent] = js.native
+    var Component: js.UndefOr[CustomComponent] = js.undefined
     
-    var fixedWidth: js.UndefOr[Boolean] = js.native
+    var fixedWidth: js.UndefOr[Boolean] = js.undefined
     
-    var flip: js.UndefOr[IconFlip] = js.native
+    var flip: js.UndefOr[IconFlip] = js.undefined
     
-    var inverse: js.UndefOr[Boolean] = js.native
+    var inverse: js.UndefOr[Boolean] = js.undefined
     
     @JSName("name")
-    var name_IconProps: String = js.native
+    var name_IconProps: String
     
-    var pulse: js.UndefOr[Boolean] = js.native
+    var pulse: js.UndefOr[Boolean] = js.undefined
     
-    var rotate: js.UndefOr[IconRotation] = js.native
+    var rotate: js.UndefOr[IconRotation] = js.undefined
     
     @JSName("size")
-    var size_IconProps: js.UndefOr[IconSize] = js.native
+    var size_IconProps: js.UndefOr[IconSize] = js.undefined
     
-    var spin: js.UndefOr[Boolean] = js.native
+    var spin: js.UndefOr[Boolean] = js.undefined
     
-    var stack: js.UndefOr[IconStackSize] = js.native
+    var stack: js.UndefOr[IconStackSize] = js.undefined
   }
   object IconProps {
     
@@ -227,15 +226,15 @@ object mod extends Shortcut {
     def lg: typings.reactFa.reactFaStrings.lg = "lg".asInstanceOf[typings.reactFa.reactFaStrings.lg]
   }
   
-  @js.native
   trait IconStackProps
-    extends SizeOverrideHTMLProps[typings.reactFa.mod.IconStack] {
+    extends StObject
+       with SizeOverrideHTMLProps[typings.reactFa.mod.IconStack] {
     
     @JSName("children")
-    var children_IconStackProps: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.native
+    var children_IconStackProps: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.undefined
     
     @JSName("size")
-    var size_IconStackProps: js.UndefOr[IconSize] = js.native
+    var size_IconStackProps: js.UndefOr[IconSize] = js.undefined
   }
   object IconStackProps {
     
@@ -281,11 +280,12 @@ object mod extends Shortcut {
   
   // fake intermediate interface to remove typing on size, as the typing
   // is overrided by react-fa
-  @js.native
-  trait SizeOverrideHTMLProps[T] extends HTMLProps[T] {
+  trait SizeOverrideHTMLProps[T]
+    extends StObject
+       with HTMLProps[T] {
     
     @JSName("size")
-    var size_SizeOverrideHTMLProps: js.UndefOr[js.Any] = js.native
+    var size_SizeOverrideHTMLProps: js.UndefOr[js.Any] = js.undefined
   }
   object SizeOverrideHTMLProps {
     
@@ -296,7 +296,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class SizeOverrideHTMLPropsMutableBuilder[Self <: SizeOverrideHTMLProps[_], T] (val x: Self with SizeOverrideHTMLProps[T]) extends AnyVal {
+    implicit class SizeOverrideHTMLPropsMutableBuilder[Self <: SizeOverrideHTMLProps[?], T] (val x: Self & SizeOverrideHTMLProps[T]) extends AnyVal {
       
       @scala.inline
       def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])

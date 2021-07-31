@@ -2,99 +2,79 @@ package typings.belter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("belter", "getUserAgent")
+  @JSImport("belter", JSImport.Namespace)
   @js.native
-  def getUserAgent(): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("belter", "isAndroid")
-  @js.native
-  def isAndroid(ua: String): Boolean = js.native
+  @scala.inline
+  def getUserAgent(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserAgent")().asInstanceOf[String]
   
-  @JSImport("belter", "isAndroidWebview")
-  @js.native
-  def isAndroidWebview(): Boolean = js.native
-  @JSImport("belter", "isAndroidWebview")
-  @js.native
-  def isAndroidWebview(ua: String): Boolean = js.native
+  @scala.inline
+  def isAndroid(ua: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAndroid")(ua.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("belter", "isChrome")
-  @js.native
-  def isChrome(ua: String): Boolean = js.native
+  @scala.inline
+  def isAndroidWebview(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAndroidWebview")().asInstanceOf[Boolean]
+  @scala.inline
+  def isAndroidWebview(ua: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAndroidWebview")(ua.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("belter", "isDevice")
-  @js.native
-  def isDevice(userAgent: String): Boolean = js.native
+  @scala.inline
+  def isChrome(ua: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChrome")(ua.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("belter", "isEdgeIOS")
-  @js.native
-  def isEdgeIOS(ua: String): Boolean = js.native
+  @scala.inline
+  def isDevice(userAgent: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDevice")(userAgent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("belter", "isElectron")
-  @js.native
-  def isElectron(): Boolean = js.native
+  @scala.inline
+  def isEdgeIOS(ua: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEdgeIOS")(ua.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("belter", "isFacebookWebView")
-  @js.native
-  def isFacebookWebView(ua: String): Boolean = js.native
+  @scala.inline
+  def isElectron(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElectron")().asInstanceOf[Boolean]
   
-  @JSImport("belter", "isFirefoxIOS")
-  @js.native
-  def isFirefoxIOS(ua: String): Boolean = js.native
+  @scala.inline
+  def isFacebookWebView(ua: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacebookWebView")(ua.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("belter", "isGoogleSearchApp")
-  @js.native
-  def isGoogleSearchApp(ua: String): Boolean = js.native
+  @scala.inline
+  def isFirefoxIOS(ua: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirefoxIOS")(ua.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("belter", "isIE")
-  @js.native
-  def isIE(): Boolean = js.native
+  @scala.inline
+  def isGoogleSearchApp(ua: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGoogleSearchApp")(ua.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("belter", "isIECompHeader")
-  @js.native
-  def isIECompHeader(): Boolean = js.native
+  @scala.inline
+  def isIE(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIE")().asInstanceOf[Boolean]
   
-  @JSImport("belter", "isIEIntranet")
-  @js.native
-  def isIEIntranet(): Boolean = js.native
+  @scala.inline
+  def isIECompHeader(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIECompHeader")().asInstanceOf[Boolean]
   
-  @JSImport("belter", "isIos")
-  @js.native
-  def isIos(ua: String): Boolean = js.native
+  @scala.inline
+  def isIEIntranet(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIEIntranet")().asInstanceOf[Boolean]
   
-  @JSImport("belter", "isIosWebview")
-  @js.native
-  def isIosWebview(ua: String): Boolean = js.native
+  @scala.inline
+  def isIos(ua: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIos")(ua.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("belter", "isMacOsCna")
-  @js.native
-  def isMacOsCna(): Boolean = js.native
+  @scala.inline
+  def isIosWebview(ua: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIosWebview")(ua.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("belter", "isOperaMini")
-  @js.native
-  def isOperaMini(ua: String): Boolean = js.native
+  @scala.inline
+  def isMacOsCna(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacOsCna")().asInstanceOf[Boolean]
   
-  @JSImport("belter", "isQQBrowser")
-  @js.native
-  def isQQBrowser(ua: String): Boolean = js.native
+  @scala.inline
+  def isOperaMini(ua: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOperaMini")(ua.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("belter", "isSafari")
-  @js.native
-  def isSafari(ua: String): Boolean = js.native
+  @scala.inline
+  def isQQBrowser(ua: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQQBrowser")(ua.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("belter", "isStandAlone")
-  @js.native
-  def isStandAlone(): Boolean = js.native
+  @scala.inline
+  def isSafari(ua: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafari")(ua.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("belter", "isWebView")
-  @js.native
-  def isWebView(): Boolean = js.native
+  @scala.inline
+  def isStandAlone(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStandAlone")().asInstanceOf[Boolean]
   
-  @JSImport("belter", "supportsPopups")
-  @js.native
-  def supportsPopups(ua: String): Boolean = js.native
+  @scala.inline
+  def isWebView(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebView")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def supportsPopups(ua: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsPopups")(ua.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

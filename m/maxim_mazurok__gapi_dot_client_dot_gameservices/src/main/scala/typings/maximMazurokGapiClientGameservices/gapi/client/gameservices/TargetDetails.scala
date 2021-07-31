@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetDetails extends StObject {
   
   /** Agones fleet details for game server clusters and game server deployments. */
-  var fleetDetails: js.UndefOr[js.Array[TargetFleetDetails]] = js.native
+  var fleetDetails: js.UndefOr[js.Array[TargetFleetDetails]] = js.undefined
   
   /** The game server cluster name. Uses the form: `projects/{project}/locations/{location}/realms/{realm}/gameServerClusters/{cluster}`. */
-  var gameServerClusterName: js.UndefOr[String] = js.native
+  var gameServerClusterName: js.UndefOr[String] = js.undefined
   
   /** The game server deployment name. Uses the form: `projects/{project}/locations/{location}/gameServerDeployments/{deployment_id}`. */
-  var gameServerDeploymentName: js.UndefOr[String] = js.native
+  var gameServerDeploymentName: js.UndefOr[String] = js.undefined
 }
 object TargetDetails {
   

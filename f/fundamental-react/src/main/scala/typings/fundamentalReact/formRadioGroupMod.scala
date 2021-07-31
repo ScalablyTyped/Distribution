@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formRadioGroupMod {
@@ -16,21 +15,21 @@ object formRadioGroupMod {
   
   type FormRadioGroup = Component[FormRadioGroupProps, js.Object, js.Any]
   
-  @js.native
   trait FormRadioGroupProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   }
   object FormRadioGroupProps {
     
@@ -74,7 +73,7 @@ object formRadioGroupMod {
       def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)

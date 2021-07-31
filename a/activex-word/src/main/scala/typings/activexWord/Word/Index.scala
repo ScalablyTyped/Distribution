@@ -2,44 +2,42 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Index extends StObject {
   
-  var AccentedLetters: Boolean = js.native
+  var AccentedLetters: Boolean
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Filter: WdIndexFilter = js.native
+  var Filter: WdIndexFilter
   
-  var HeadingSeparator: WdHeadingSeparator = js.native
+  var HeadingSeparator: WdHeadingSeparator
   
-  var IndexLanguage: WdLanguageID = js.native
+  var IndexLanguage: WdLanguageID
   
-  var NumberOfColumns: Double = js.native
+  var NumberOfColumns: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  var RightAlignPageNumbers: Boolean = js.native
+  var RightAlignPageNumbers: Boolean
   
-  var SortBy: WdIndexSortBy = js.native
+  var SortBy: WdIndexSortBy
   
-  var TabLeader: WdTabLeader = js.native
+  var TabLeader: WdTabLeader
   
-  var Type: WdIndexType = js.native
+  var Type: WdIndexType
   
-  def Update(): Unit = js.native
+  def Update(): Unit
   
   @JSName("Word.Index_typekey")
-  var WordDotIndex_typekey: Index = js.native
+  var WordDotIndex_typekey: Index
 }
 object Index {
   

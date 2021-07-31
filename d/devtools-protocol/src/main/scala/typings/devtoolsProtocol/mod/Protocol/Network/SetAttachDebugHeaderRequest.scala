@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetAttachDebugHeaderRequest extends StObject {
   
   /**
     * Whether to send a debug header.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
 }
 object SetAttachDebugHeaderRequest {
   

@@ -2,7 +2,6 @@ package typings.rcFieldForm.interfaceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.rcFieldForm.rcFieldFormStrings.integer
   - typings.rcFieldForm.rcFieldFormStrings.float
   - typings.rcFieldForm.rcFieldFormStrings.`object`
-  - typings.rcFieldForm.rcFieldFormStrings.enum
+  - typings.rcFieldForm.rcFieldFormStrings.`enum`
   - typings.rcFieldForm.rcFieldFormStrings.date
   - typings.rcFieldForm.rcFieldFormStrings.url
   - typings.rcFieldForm.rcFieldFormStrings.hex
@@ -33,7 +32,7 @@ object RuleType {
   def email: typings.rcFieldForm.rcFieldFormStrings.email = "email".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.email]
   
   @scala.inline
-  def enum: typings.rcFieldForm.rcFieldFormStrings.enum = "enum".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.enum]
+  def `enum`: typings.rcFieldForm.rcFieldFormStrings.`enum` = "enum".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.`enum`]
   
   @scala.inline
   def float: typings.rcFieldForm.rcFieldFormStrings.float = "float".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.float]

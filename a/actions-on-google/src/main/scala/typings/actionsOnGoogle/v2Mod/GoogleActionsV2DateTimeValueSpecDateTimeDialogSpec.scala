@@ -2,29 +2,27 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec extends StObject {
   
   /**
     * This is used to create prompt to ask for date only.
     * For example: What date are you looking for?
     */
-  var requestDateText: js.UndefOr[String] = js.native
+  var requestDateText: js.UndefOr[String] = js.undefined
   
   /**
     * This is used to create initial prompt by datetime sub-dialog.
     * Example question: \"What date and time do you want?\"
     */
-  var requestDatetimeText: js.UndefOr[String] = js.native
+  var requestDatetimeText: js.UndefOr[String] = js.undefined
   
   /**
     * This is used to create prompt to ask for time only.
     * For example: What time?
     */
-  var requestTimeText: js.UndefOr[String] = js.native
+  var requestTimeText: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec {
   

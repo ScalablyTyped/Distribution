@@ -2,32 +2,30 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * OperationMetadata provides information about the operation execution.
   * Returned in the long-running operation&#39;s metadata field.
   */
-@js.native
 trait SchemaOperationMetadata extends StObject {
   
   /**
     * The name of the API method that initiated the operation.
     */
-  var apiMethodName: js.UndefOr[String] = js.native
+  var apiMethodName: js.UndefOr[String] = js.undefined
   
-  var counter: js.UndefOr[SchemaProgressCounter] = js.native
+  var counter: js.UndefOr[SchemaProgressCounter] = js.undefined
   
   /**
     * The time at which the operation was created by the API.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which execution was completed.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
 }
 object SchemaOperationMetadata {
   

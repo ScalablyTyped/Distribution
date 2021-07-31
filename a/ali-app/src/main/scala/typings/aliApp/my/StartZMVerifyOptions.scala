@@ -3,20 +3,19 @@ package typings.aliApp.my
 import typings.aliApp.anon.Passed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 芝麻认证 https://docs.alipay.com/mini/api/zm-service
-@js.native
 trait StartZMVerifyOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
-  var bizNo: String = js.native
+  var bizNo: String
   
   // 认证标识
   @JSName("success")
-  var success_StartZMVerifyOptions: js.UndefOr[js.Function1[/* res */ Passed, Unit]] = js.native
+  var success_StartZMVerifyOptions: js.UndefOr[js.Function1[/* res */ Passed, Unit]] = js.undefined
 }
 object StartZMVerifyOptions {
   

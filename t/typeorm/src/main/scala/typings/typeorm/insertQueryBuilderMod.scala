@@ -10,7 +10,6 @@ import typings.typeorm.queryPartialEntityMod.QueryDeepPartialEntity
 import typings.typeorm.queryRunnerMod.QueryRunner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object insertQueryBuilderMod {
@@ -25,7 +24,7 @@ object insertQueryBuilderMod {
     /**
       * QueryBuilder can be initialized from given Connection and QueryRunner objects or from given other QueryBuilder.
       */
-    def this(queryBuilder: QueryBuilder[_]) = this()
+    def this(queryBuilder: QueryBuilder[js.Any]) = this()
     def this(connection: Connection, queryRunner: QueryRunner) = this()
     
     /**

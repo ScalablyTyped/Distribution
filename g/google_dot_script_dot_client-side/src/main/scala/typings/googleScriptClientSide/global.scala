@@ -7,7 +7,6 @@ import typings.googleScriptClientSide.google.script.history.Query
 import typings.googleScriptClientSide.google.script.history.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,6 +16,10 @@ object global {
     object script {
       
       object history {
+        
+        @JSGlobal("google.script.history")
+        @js.native
+        val ^ : js.Any = js.native
         
         /**
           * Pushes the provided state object, URL parameters and URL fragment onto the browser history stack.
@@ -29,18 +32,14 @@ object global {
           * @param hash The string URL fragment appearing after the '#' character.
           * If null or undefined, the current URL fragment is not changed. If empty, the URL fragment is cleared.
           */
-        @JSGlobal("google.script.history.push")
-        @js.native
-        def push(stateObject: State): Unit = js.native
-        @JSGlobal("google.script.history.push")
-        @js.native
-        def push(stateObject: State, params: js.UndefOr[scala.Nothing], hash: String): Unit = js.native
-        @JSGlobal("google.script.history.push")
-        @js.native
-        def push(stateObject: State, params: Query): Unit = js.native
-        @JSGlobal("google.script.history.push")
-        @js.native
-        def push(stateObject: State, params: Query, hash: String): Unit = js.native
+        @scala.inline
+        def push(stateObject: State): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(stateObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        @scala.inline
+        def push(stateObject: State, params: Unit, hash: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(stateObject.asInstanceOf[js.Any], params.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        @scala.inline
+        def push(stateObject: State, params: Query): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(stateObject.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        @scala.inline
+        def push(stateObject: State, params: Query, hash: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(stateObject.asInstanceOf[js.Any], params.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Unit]
         
         /**
           * Replaces the top event on the browser history stack with the provided (developer-defined) state object, URL parameters and URL fragment.
@@ -53,45 +52,46 @@ object global {
           * @param hash The string URL fragment appearing after the '#' character.
           * If null or undefined, the current URL fragment is not changed. If empty, the URL fragment is cleared.
           */
-        @JSGlobal("google.script.history.replace")
-        @js.native
-        def replace(stateObject: State): Unit = js.native
-        @JSGlobal("google.script.history.replace")
-        @js.native
-        def replace(stateObject: State, params: js.UndefOr[scala.Nothing], hash: String): Unit = js.native
-        @JSGlobal("google.script.history.replace")
-        @js.native
-        def replace(stateObject: State, params: Query): Unit = js.native
-        @JSGlobal("google.script.history.replace")
-        @js.native
-        def replace(stateObject: State, params: Query, hash: String): Unit = js.native
+        @scala.inline
+        def replace(stateObject: State): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(stateObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        @scala.inline
+        def replace(stateObject: State, params: Unit, hash: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(stateObject.asInstanceOf[js.Any], params.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        @scala.inline
+        def replace(stateObject: State, params: Query): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(stateObject.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        @scala.inline
+        def replace(stateObject: State, params: Query, hash: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(stateObject.asInstanceOf[js.Any], params.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Unit]
         
         /**
           * Sets a callback function to respond to changes in the browser history.
           * @param callback a client-side callback function to run upon a history change event, using the event object as the only argument.
           */
-        @JSGlobal("google.script.history.setChangeHandler")
-        @js.native
-        def setChangeHandler(handler: js.Function1[/* event */ HistoryChangeEvent, Unit]): Unit = js.native
+        @scala.inline
+        def setChangeHandler(handler: js.Function1[/* event */ HistoryChangeEvent, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setChangeHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
       }
       
       object host {
         
+        @JSGlobal("google.script.host")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Closes the current dialog or sidebar.
           */
-        @JSGlobal("google.script.host.close")
-        @js.native
-        def close(): Unit = js.native
+        @scala.inline
+        def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
         
         object editor {
+          
+          @JSGlobal("google.script.host.editor")
+          @js.native
+          val ^ : js.Any = js.native
           
           /**
             * Switches browser focus from the dialog or sidebar to the Google Docs, Sheets, or Forms editor.
             */
-          @JSGlobal("google.script.host.editor.focus")
-          @js.native
-          def focus(): Unit = js.native
+          @scala.inline
+          def focus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focus")().asInstanceOf[Unit]
         }
         
         /**
@@ -105,17 +105,15 @@ object global {
           * Sets the height of the current dialog.
           * @param height the new height, in pixels
           */
-        @JSGlobal("google.script.host.setHeight")
-        @js.native
-        def setHeight(height: Double): Unit = js.native
+        @scala.inline
+        def setHeight(height: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHeight")(height.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
         /**
           * Sets the width of the current dialog.
           * @param width the new width, in pixels
           */
-        @JSGlobal("google.script.host.setWidth")
-        @js.native
-        def setWidth(width: Double): Unit = js.native
+        @scala.inline
+        def setWidth(width: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWidth")(width.asInstanceOf[js.Any]).asInstanceOf[Unit]
       }
       
       @JSGlobal("google.script.run")
@@ -124,13 +122,16 @@ object global {
       
       object url {
         
+        @JSGlobal("google.script.url")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Gets a URL location object and passes it to the specified callback function (as the only argument).
           * @param callback a client-side callback function to run, using the location object as the only argument.
           */
-        @JSGlobal("google.script.url.getLocation")
-        @js.native
-        def getLocation(callback: js.Function1[/* location */ UrlLocation, Unit]): Unit = js.native
+        @scala.inline
+        def getLocation(callback: js.Function1[/* location */ UrlLocation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       }
     }
   }

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playableloca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleMapsPlayablelocationsV3PlayerReport extends StObject {
   
   /**
     * Language code (in BCP-47 format) indicating the language of the freeform description provided in `reason_details`. Examples are "en", "en-US" or "ja-Latn". For more information, see
     * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /** Required. The name of the playable location. */
-  var locationName: js.UndefOr[String] = js.native
+  var locationName: js.UndefOr[String] = js.undefined
   
   /** Required. A free-form description detailing why the playable location is considered bad. */
-  var reasonDetails: js.UndefOr[String] = js.native
+  var reasonDetails: js.UndefOr[String] = js.undefined
   
   /** Required. One or more reasons why this playable location is considered bad. */
-  var reasons: js.UndefOr[js.Array[String]] = js.native
+  var reasons: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleMapsPlayablelocationsV3PlayerReport {
   

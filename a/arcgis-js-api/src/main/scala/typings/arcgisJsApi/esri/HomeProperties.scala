@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HomeProperties
-  extends WidgetProperties
+  extends StObject
+     with WidgetProperties
      with GoToProperties {
   
   /**
@@ -15,28 +14,28 @@ trait HomeProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home.html#viewModel)
     */
-  var viewModel: js.UndefOr[HomeViewModelProperties] = js.native
+  var viewModel: js.UndefOr[HomeViewModelProperties] = js.undefined
   
   /**
     * The [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html), or point of view, to zoom to when going home.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home.html#viewpoint)
     */
-  var viewpoint: js.UndefOr[ViewpointProperties] = js.native
+  var viewpoint: js.UndefOr[ViewpointProperties] = js.undefined
 }
 object HomeProperties {
   

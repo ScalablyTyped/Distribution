@@ -2,13 +2,11 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrchestrationConfig extends StObject {
   
-  var TaskHistoryRetentionLimit: js.UndefOr[Double] = js.native
+  var TaskHistoryRetentionLimit: js.UndefOr[Double] = js.undefined
 }
 object OrchestrationConfig {
   

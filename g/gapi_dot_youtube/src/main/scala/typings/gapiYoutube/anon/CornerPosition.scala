@@ -2,21 +2,19 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CornerPosition extends StObject {
   
   /**
     * The corner of the player where the promoted item will appear.
     */
-  var cornerPosition: String = js.native
+  var cornerPosition: String
   
   /**
     * The manner in which the promoted item is positioned in the video player.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object CornerPosition {
   

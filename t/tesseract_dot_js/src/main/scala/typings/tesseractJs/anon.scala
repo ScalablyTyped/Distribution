@@ -2,19 +2,17 @@ package typings.tesseractJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CorePath extends StObject {
     
-    var corePath: String = js.native
+    var corePath: String
     
-    var langPath: String = js.native
+    var langPath: String
     
-    var workerPath: String = js.native
+    var workerPath: String
   }
   object CorePath {
     

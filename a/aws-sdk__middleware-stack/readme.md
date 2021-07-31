@@ -10,12 +10,15 @@ Provides a means for composing multiple middleware functions into a single handl
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-stack |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 593 |
-| # downloads        | 1839403 |
+| # releases         | 39 |
+| # dependents       | 251 |
+| # downloads        | 7017898 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-stack)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fmiddleware-stack)
     
 

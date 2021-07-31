@@ -2,19 +2,17 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerificationAcmount extends StObject {
   
-  var makeDefault: js.UndefOr[Boolean] = js.native
+  var makeDefault: js.UndefOr[Boolean] = js.undefined
   
-  var verificationAcmount: js.UndefOr[String] = js.native
+  var verificationAcmount: js.UndefOr[String] = js.undefined
   
-  var verificationMerchantAccountId: js.UndefOr[String] = js.native
+  var verificationMerchantAccountId: js.UndefOr[String] = js.undefined
   
-  var verifyCard: js.UndefOr[Boolean] = js.native
+  var verifyCard: js.UndefOr[Boolean] = js.undefined
 }
 object VerificationAcmount {
   

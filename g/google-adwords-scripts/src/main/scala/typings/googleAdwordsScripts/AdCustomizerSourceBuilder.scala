@@ -2,17 +2,17 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AdCustomizerSourceBuilder[AdCustomizerSource] extends AdWordsBuilder[AdCustomizerSource] {
+trait AdCustomizerSourceBuilder[AdCustomizerSource]
+  extends StObject
+     with AdWordsBuilder[AdCustomizerSource] {
   
-  def addAttribute(name: String, `type`: String): AdCustomizerSourceBuilder[AdCustomizerSource] = js.native
+  def addAttribute(name: String, `type`: String): AdCustomizerSourceBuilder[AdCustomizerSource]
   
-  def addAttributes(attributes: js.Object): AdCustomizerSourceBuilder[AdCustomizerSource] = js.native
+  def addAttributes(attributes: js.Object): AdCustomizerSourceBuilder[AdCustomizerSource]
   
-  def withName(name: String): AdCustomizerSourceBuilder[AdCustomizerSource] = js.native
+  def withName(name: String): AdCustomizerSourceBuilder[AdCustomizerSource]
 }
 object AdCustomizerSourceBuilder {
   
@@ -28,7 +28,7 @@ object AdCustomizerSourceBuilder {
   }
   
   @scala.inline
-  implicit class AdCustomizerSourceBuilderMutableBuilder[Self <: AdCustomizerSourceBuilder[_], AdCustomizerSource] (val x: Self with AdCustomizerSourceBuilder[AdCustomizerSource]) extends AnyVal {
+  implicit class AdCustomizerSourceBuilderMutableBuilder[Self <: AdCustomizerSourceBuilder[?], AdCustomizerSource] (val x: Self & AdCustomizerSourceBuilder[AdCustomizerSource]) extends AnyVal {
     
     @scala.inline
     def setAddAttribute(value: (String, String) => AdCustomizerSourceBuilder[AdCustomizerSource]): Self = StObject.set(x, "addAttribute", js.Any.fromFunction2(value))

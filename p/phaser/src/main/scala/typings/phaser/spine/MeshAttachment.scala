@@ -2,43 +2,43 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MeshAttachment extends VertexAttachment {
+trait MeshAttachment
+  extends StObject
+     with VertexAttachment {
   
-  var color: Color = js.native
+  var color: Color
   
-  var edges: js.Array[Double] = js.native
+  var edges: js.Array[Double]
   
-  def getParentMesh(): MeshAttachment = js.native
+  def getParentMesh(): MeshAttachment
   
-  var height: Double = js.native
+  var height: Double
   
-  var hullLength: Double = js.native
+  var hullLength: Double
   
-  def newLinkedMesh(): MeshAttachment = js.native
+  def newLinkedMesh(): MeshAttachment
   
-  var parentMesh: js.Any = js.native
+  var parentMesh: js.Any
   
-  var path: String = js.native
+  var path: String
   
-  var region: TextureRegion = js.native
+  var region: TextureRegion
   
-  var regionUVs: ArrayLike[Double] = js.native
+  var regionUVs: ArrayLike[Double]
   
-  def setParentMesh(parentMesh: MeshAttachment): Unit = js.native
+  def setParentMesh(parentMesh: MeshAttachment): Unit
   
-  var tempColor: Color = js.native
+  var tempColor: Color
   
-  var triangles: js.Array[Double] = js.native
+  var triangles: js.Array[Double]
   
-  def updateUVs(): Unit = js.native
+  def updateUVs(): Unit
   
-  var uvs: ArrayLike[Double] = js.native
+  var uvs: ArrayLike[Double]
   
-  var width: Double = js.native
+  var width: Double
 }
 object MeshAttachment {
   

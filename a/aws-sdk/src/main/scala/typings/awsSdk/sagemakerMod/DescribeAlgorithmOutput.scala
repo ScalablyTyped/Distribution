@@ -2,66 +2,64 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAlgorithmOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the algorithm.
     */
-  var AlgorithmArn: typings.awsSdk.sagemakerMod.AlgorithmArn = js.native
+  var AlgorithmArn: typings.awsSdk.sagemakerMod.AlgorithmArn
   
   /**
     * A brief summary about the algorithm.
     */
-  var AlgorithmDescription: js.UndefOr[EntityDescription] = js.native
+  var AlgorithmDescription: js.UndefOr[EntityDescription] = js.undefined
   
   /**
     * The name of the algorithm being described.
     */
-  var AlgorithmName: EntityName = js.native
+  var AlgorithmName: EntityName
   
   /**
     * The current status of the algorithm.
     */
-  var AlgorithmStatus: typings.awsSdk.sagemakerMod.AlgorithmStatus = js.native
+  var AlgorithmStatus: typings.awsSdk.sagemakerMod.AlgorithmStatus
   
   /**
     * Details about the current status of the algorithm.
     */
-  var AlgorithmStatusDetails: typings.awsSdk.sagemakerMod.AlgorithmStatusDetails = js.native
+  var AlgorithmStatusDetails: typings.awsSdk.sagemakerMod.AlgorithmStatusDetails
   
   /**
     * Whether the algorithm is certified to be listed in AWS Marketplace.
     */
-  var CertifyForMarketplace: js.UndefOr[typings.awsSdk.sagemakerMod.CertifyForMarketplace] = js.native
+  var CertifyForMarketplace: js.UndefOr[typings.awsSdk.sagemakerMod.CertifyForMarketplace] = js.undefined
   
   /**
     * A timestamp specifying when the algorithm was created.
     */
-  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime = js.native
+  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime
   
   /**
     * Details about inference jobs that the algorithm runs.
     */
-  var InferenceSpecification: js.UndefOr[typings.awsSdk.sagemakerMod.InferenceSpecification] = js.native
+  var InferenceSpecification: js.UndefOr[typings.awsSdk.sagemakerMod.InferenceSpecification] = js.undefined
   
   /**
     * The product identifier of the algorithm.
     */
-  var ProductId: js.UndefOr[typings.awsSdk.sagemakerMod.ProductId] = js.native
+  var ProductId: js.UndefOr[typings.awsSdk.sagemakerMod.ProductId] = js.undefined
   
   /**
     * Details about training jobs run by this algorithm.
     */
-  var TrainingSpecification: typings.awsSdk.sagemakerMod.TrainingSpecification = js.native
+  var TrainingSpecification: typings.awsSdk.sagemakerMod.TrainingSpecification
   
   /**
     * Details about configurations for one or more training jobs that Amazon SageMaker runs to test the algorithm.
     */
-  var ValidationSpecification: js.UndefOr[AlgorithmValidationSpecification] = js.native
+  var ValidationSpecification: js.UndefOr[AlgorithmValidationSpecification] = js.undefined
 }
 object DescribeAlgorithmOutput {
   

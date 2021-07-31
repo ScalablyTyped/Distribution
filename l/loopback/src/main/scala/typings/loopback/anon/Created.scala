@@ -2,15 +2,13 @@ package typings.loopback.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Created[T] extends StObject {
   
-  var created: Boolean = js.native
+  var created: Boolean
   
-  var instance: T = js.native
+  var instance: T
 }
 object Created {
   
@@ -21,7 +19,7 @@ object Created {
   }
   
   @scala.inline
-  implicit class CreatedMutableBuilder[Self <: Created[_], T] (val x: Self with Created[T]) extends AnyVal {
+  implicit class CreatedMutableBuilder[Self <: Created[?], T] (val x: Self & Created[T]) extends AnyVal {
     
     @scala.inline
     def setCreated(value: Boolean): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])

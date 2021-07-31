@@ -3,15 +3,13 @@ package typings.monacoEditor.mod.languages
 import typings.monacoEditor.mod.IRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenameLocation extends StObject {
   
-  var range: IRange = js.native
+  var range: IRange
   
-  var text: String = js.native
+  var text: String
 }
 object RenameLocation {
   

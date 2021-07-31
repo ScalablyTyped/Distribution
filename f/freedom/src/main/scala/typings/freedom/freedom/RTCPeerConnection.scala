@@ -10,15 +10,13 @@ import typings.freedom.freedomStrings.onremovestream
 import typings.freedom.freedomStrings.onsignalingstatechange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RTCPeerConnection {
   
-  @js.native
   trait OnIceCandidateEvent extends StObject {
     
-    var candidate: RTCIceCandidate = js.native
+    var candidate: RTCIceCandidate
   }
   object OnIceCandidateEvent {
     
@@ -36,14 +34,13 @@ object RTCPeerConnection {
     }
   }
   
-  @js.native
   trait RTCConfiguration extends StObject {
     
-    var iceServers: js.Array[RTCIceServer] = js.native
+    var iceServers: js.Array[RTCIceServer]
     
-    var iceTransports: js.UndefOr[String] = js.native
+    var iceTransports: js.UndefOr[String] = js.undefined
     
-    var peerIdentity: js.UndefOr[String] = js.native
+    var peerIdentity: js.UndefOr[String] = js.undefined
   }
   object RTCConfiguration {
     
@@ -76,20 +73,19 @@ object RTCPeerConnection {
     }
   }
   
-  @js.native
   trait RTCDataChannelInit extends StObject {
     
-    var id: js.UndefOr[Double] = js.native
+    var id: js.UndefOr[Double] = js.undefined
     
-    var maxPacketLifeTime: js.UndefOr[Double] = js.native
+    var maxPacketLifeTime: js.UndefOr[Double] = js.undefined
     
-    var maxRetransmits: js.UndefOr[Double] = js.native
+    var maxRetransmits: js.UndefOr[Double] = js.undefined
     
-    var negotiated: js.UndefOr[Boolean] = js.native
+    var negotiated: js.UndefOr[Boolean] = js.undefined
     
-    var ordered: js.UndefOr[Boolean] = js.native
+    var ordered: js.UndefOr[Boolean] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
   }
   object RTCDataChannelInit {
     
@@ -140,14 +136,13 @@ object RTCPeerConnection {
     }
   }
   
-  @js.native
   trait RTCIceCandidate extends StObject {
     
-    var candidate: String = js.native
+    var candidate: String
     
-    var sdpMLineIndex: js.UndefOr[Double] = js.native
+    var sdpMLineIndex: js.UndefOr[Double] = js.undefined
     
-    var sdpMid: js.UndefOr[String] = js.native
+    var sdpMid: js.UndefOr[String] = js.undefined
   }
   object RTCIceCandidate {
     
@@ -177,14 +172,13 @@ object RTCPeerConnection {
     }
   }
   
-  @js.native
   trait RTCIceServer extends StObject {
     
-    var credential: js.UndefOr[String] = js.native
+    var credential: js.UndefOr[String] = js.undefined
     
-    var urls: js.Array[String] = js.native
+    var urls: js.Array[String]
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object RTCIceServer {
     
@@ -217,16 +211,15 @@ object RTCPeerConnection {
     }
   }
   
-  @js.native
   trait RTCOfferOptions extends StObject {
     
-    var iceRestart: js.UndefOr[Boolean] = js.native
+    var iceRestart: js.UndefOr[Boolean] = js.undefined
     
-    var offerToReceiveAudio: js.UndefOr[Double] = js.native
+    var offerToReceiveAudio: js.UndefOr[Double] = js.undefined
     
-    var offerToReceiveVideo: js.UndefOr[Double] = js.native
+    var offerToReceiveVideo: js.UndefOr[Double] = js.undefined
     
-    var voiceActivityDetection: js.UndefOr[Boolean] = js.native
+    var voiceActivityDetection: js.UndefOr[Boolean] = js.undefined
   }
   object RTCOfferOptions {
     
@@ -300,8 +293,8 @@ object RTCPeerConnection {
     
     def getSignalingState(): js.Promise[String] = js.native
     
-    def getStats(): js.Promise[_] = js.native
-    def getStats(selector: String): js.Promise[_] = js.native
+    def getStats(): js.Promise[js.Any] = js.native
+    def getStats(selector: String): js.Promise[js.Any] = js.native
     
     def getStreamById(id: String): js.Promise[String] = js.native
     
@@ -330,12 +323,11 @@ object RTCPeerConnection {
     def updateIce(configuration: RTCConfiguration): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait RTCSessionDescription extends StObject {
     
-    var sdp: String = js.native
+    var sdp: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object RTCSessionDescription {
     

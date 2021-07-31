@@ -2,96 +2,94 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDomainResponse extends StObject {
   
   /**
     * Specifies the VPC used for non-EFS traffic. The default value is PublicInternetOnly.    PublicInternetOnly - Non-EFS traffic is through a VPC managed by Amazon SageMaker, which allows direct internet access    VpcOnly - All Studio traffic is through the specified VPC and subnets  
     */
-  var AppNetworkAccessType: js.UndefOr[typings.awsSdk.sagemakerMod.AppNetworkAccessType] = js.native
+  var AppNetworkAccessType: js.UndefOr[typings.awsSdk.sagemakerMod.AppNetworkAccessType] = js.undefined
   
   /**
     * The domain's authentication mode.
     */
-  var AuthMode: js.UndefOr[typings.awsSdk.sagemakerMod.AuthMode] = js.native
+  var AuthMode: js.UndefOr[typings.awsSdk.sagemakerMod.AuthMode] = js.undefined
   
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.native
+  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.undefined
   
   /**
     * Settings which are applied to all UserProfiles in this domain, if settings are not explicitly specified in a given UserProfile. 
     */
-  var DefaultUserSettings: js.UndefOr[UserSettings] = js.native
+  var DefaultUserSettings: js.UndefOr[UserSettings] = js.undefined
   
   /**
     * The domain's Amazon Resource Name (ARN).
     */
-  var DomainArn: js.UndefOr[typings.awsSdk.sagemakerMod.DomainArn] = js.native
+  var DomainArn: js.UndefOr[typings.awsSdk.sagemakerMod.DomainArn] = js.undefined
   
   /**
     * The domain ID.
     */
-  var DomainId: js.UndefOr[typings.awsSdk.sagemakerMod.DomainId] = js.native
+  var DomainId: js.UndefOr[typings.awsSdk.sagemakerMod.DomainId] = js.undefined
   
   /**
     * The domain name.
     */
-  var DomainName: js.UndefOr[typings.awsSdk.sagemakerMod.DomainName] = js.native
+  var DomainName: js.UndefOr[typings.awsSdk.sagemakerMod.DomainName] = js.undefined
   
   /**
     * The failure reason.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * The ID of the Amazon Elastic File System (EFS) managed by this Domain.
     */
-  var HomeEfsFileSystemId: js.UndefOr[ResourceId] = js.native
+  var HomeEfsFileSystemId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * This member is deprecated and replaced with KmsKeyId.
     */
-  var HomeEfsFileSystemKmsKeyId: js.UndefOr[KmsKeyId] = js.native
+  var HomeEfsFileSystemKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
   /**
     * The AWS KMS customer managed CMK used to encrypt the EFS volume attached to the domain.
     */
-  var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.native
+  var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.undefined
   
   /**
     * The last modified time.
     */
-  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.native
+  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.undefined
   
   /**
     * The SSO managed application instance ID.
     */
-  var SingleSignOnManagedApplicationInstanceId: js.UndefOr[String256] = js.native
+  var SingleSignOnManagedApplicationInstanceId: js.UndefOr[String256] = js.undefined
   
   /**
     * The status.
     */
-  var Status: js.UndefOr[DomainStatus] = js.native
+  var Status: js.UndefOr[DomainStatus] = js.undefined
   
   /**
     * The VPC subnets that Studio uses for communication.
     */
-  var SubnetIds: js.UndefOr[Subnets] = js.native
+  var SubnetIds: js.UndefOr[Subnets] = js.undefined
   
   /**
     * The domain's URL.
     */
-  var Url: js.UndefOr[String1024] = js.native
+  var Url: js.UndefOr[String1024] = js.undefined
   
   /**
     * The ID of the Amazon Virtual Private Cloud (VPC) that Studio uses for communication.
     */
-  var VpcId: js.UndefOr[typings.awsSdk.sagemakerMod.VpcId] = js.native
+  var VpcId: js.UndefOr[typings.awsSdk.sagemakerMod.VpcId] = js.undefined
 }
 object DescribeDomainResponse {
   

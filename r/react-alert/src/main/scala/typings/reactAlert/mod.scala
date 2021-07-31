@@ -28,10 +28,13 @@ import typings.std.HTMLElement
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-alert", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-alert", "Provider")
   @js.native
@@ -57,36 +60,37 @@ object mod {
   @js.native
   val types: Types_ = js.native
   
-  @JSImport("react-alert", "useAlert")
-  @js.native
-  def useAlert(): AlertManager = js.native
-  @JSImport("react-alert", "useAlert")
-  @js.native
-  def useAlert(context: Context[js.UndefOr[AlertManager]]): AlertManager = js.native
+  @scala.inline
+  def useAlert(): AlertManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useAlert")().asInstanceOf[AlertManager]
+  @scala.inline
+  def useAlert(context: Context[js.UndefOr[AlertManager]]): AlertManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useAlert")(context.asInstanceOf[js.Any]).asInstanceOf[AlertManager]
   
-  @JSImport("react-alert", "withAlert")
-  @js.native
+  @scala.inline
   def withAlert[P /* <: Alert */](): js.Function1[
     /* c */ ComponentType[P], 
     ComponentType[Pick[P, Exclude[/* keyof P */ String, alert]]]
-  ] = js.native
-  @JSImport("react-alert", "withAlert")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withAlert")().asInstanceOf[js.Function1[
+    /* c */ ComponentType[P], 
+    ComponentType[Pick[P, Exclude[/* keyof P */ String, alert]]]
+  ]]
+  @scala.inline
   def withAlert[P /* <: Alert */](context: Context[js.UndefOr[AlertManager]]): js.Function1[
     /* c */ ComponentType[P], 
     ComponentType[Pick[P, Exclude[/* keyof P */ String, alert]]]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withAlert")(context.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* c */ ComponentType[P], 
+    ComponentType[Pick[P, Exclude[/* keyof P */ String, alert]]]
+  ]]
   
-  @js.native
   trait AlertComponentProps extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    var id: String = js.native
+    var id: String
     
-    var message: ReactNode = js.native
+    var message: ReactNode
     
-    var options: AlertCustomOptionsWithType = js.native
+    var options: AlertCustomOptionsWithType
   }
   object AlertComponentProps {
     
@@ -116,10 +120,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait AlertComponentPropsWithStyle extends AlertComponentProps {
+  trait AlertComponentPropsWithStyle
+    extends StObject
+       with AlertComponentProps {
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
   }
   object AlertComponentPropsWithStyle {
     
@@ -137,23 +142,22 @@ object mod {
     }
   }
   
-  @js.native
   trait AlertCustomOptions extends StObject {
     
     /**
       * Callback that will be executed after this alert is removed
       */
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback that will be executed after this alert open
       */
-    var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Custom timeout just for this one alert
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object AlertCustomOptions {
     
@@ -186,10 +190,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait AlertCustomOptionsWithType extends AlertCustomOptions {
+  trait AlertCustomOptionsWithType
+    extends StObject
+       with AlertCustomOptions {
     
-    var `type`: js.UndefOr[AlertType] = js.native
+    var `type`: js.UndefOr[AlertType] = js.undefined
   }
   object AlertCustomOptionsWithType {
     
@@ -216,24 +221,28 @@ object mod {
     var alerts: js.Array[AlertComponentProps] = js.native
     
     def error(): AlertComponentProps = js.native
-    def error(message: js.UndefOr[ReactNode], options: AlertCustomOptions): AlertComponentProps = js.native
+    def error(message: Unit, options: AlertCustomOptions): AlertComponentProps = js.native
     def error(message: ReactNode): AlertComponentProps = js.native
+    def error(message: ReactNode, options: AlertCustomOptions): AlertComponentProps = js.native
     
     def info(): AlertComponentProps = js.native
-    def info(message: js.UndefOr[ReactNode], options: AlertCustomOptions): AlertComponentProps = js.native
+    def info(message: Unit, options: AlertCustomOptions): AlertComponentProps = js.native
     def info(message: ReactNode): AlertComponentProps = js.native
+    def info(message: ReactNode, options: AlertCustomOptions): AlertComponentProps = js.native
     
     def remove(alert: AlertComponentProps): Unit = js.native
     
     var root: js.UndefOr[HTMLElement] = js.native
     
     def show(): AlertComponentProps = js.native
-    def show(message: js.UndefOr[ReactNode], options: AlertCustomOptionsWithType): AlertComponentProps = js.native
+    def show(message: Unit, options: AlertCustomOptionsWithType): AlertComponentProps = js.native
     def show(message: ReactNode): AlertComponentProps = js.native
+    def show(message: ReactNode, options: AlertCustomOptionsWithType): AlertComponentProps = js.native
     
     def success(): AlertComponentProps = js.native
-    def success(message: js.UndefOr[ReactNode], options: AlertCustomOptions): AlertComponentProps = js.native
+    def success(message: Unit, options: AlertCustomOptions): AlertComponentProps = js.native
     def success(message: ReactNode): AlertComponentProps = js.native
+    def success(message: ReactNode, options: AlertCustomOptions): AlertComponentProps = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -278,60 +287,61 @@ object mod {
     def `top right`: typings.reactAlert.reactAlertStrings.`top right` = ("top right").asInstanceOf[typings.reactAlert.reactAlertStrings.`top right`]
   }
   
-  @js.native
-  trait AlertProviderProps extends HTMLAttributes[HTMLDivElement] {
+  trait AlertProviderProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * The style of the alert container
       *
       * Default z-index value: 100
       */
-    var containerStyle: js.UndefOr[CSSProperties] = js.native
+    var containerStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Custom context to separate alerts.
       */
-    var context: js.UndefOr[Context[js.UndefOr[AlertManager]]] = js.native
+    var context: js.UndefOr[Context[js.UndefOr[AlertManager]]] = js.undefined
     
     /**
       * The margin of each alert
       *
       * Default value: '10px'
       */
-    var offset: js.UndefOr[String] = js.native
+    var offset: js.UndefOr[String] = js.undefined
     
     /**
       * The position of the alerts in the page
       *
       * Default value: 'top center'
       */
-    var position: js.UndefOr[AlertPosition] = js.native
+    var position: js.UndefOr[AlertPosition] = js.undefined
     
     /**
       * The alert component for each message
       */
-    var template: ComponentType[AlertComponentPropsWithStyle] = js.native
+    var template: ComponentType[AlertComponentPropsWithStyle]
     
     /**
       * Timeout to alert remove itself, if  set to 0 it never removes itself
       *
       * Default value: 0
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * The transition animation
       *
       * Default value: 'fade'
       */
-    var transition: js.UndefOr[AlertTransition] = js.native
+    var transition: js.UndefOr[AlertTransition] = js.undefined
     
     /**
       * The default alert type used when calling this.props.alert.show
       *
       * Default value: 'info'
       */
-    var `type`: js.UndefOr[AlertType] = js.native
+    var `type`: js.UndefOr[AlertType] = js.undefined
   }
   object AlertProviderProps {
     
@@ -423,42 +433,31 @@ object mod {
     def success: typings.reactAlert.reactAlertStrings.success = "success".asInstanceOf[typings.reactAlert.reactAlertStrings.success]
   }
   
-  @js.native
   trait Positions_ extends StObject {
     
-    var BOTTOM_CENTER: `bottom center` = js.native
+    var BOTTOM_CENTER: `bottom center`
     
-    var BOTTOM_LEFT: `bottom left` = js.native
+    var BOTTOM_LEFT: `bottom left`
     
-    var BOTTOM_RIGHT: `bottom right` = js.native
+    var BOTTOM_RIGHT: `bottom right`
     
-    var MIDDLE: middle = js.native
+    var MIDDLE: middle
     
-    var MIDDLE_LEFT: `middle left` = js.native
+    var MIDDLE_LEFT: `middle left`
     
-    var MIDDLE_RIGHT: `middle right` = js.native
+    var MIDDLE_RIGHT: `middle right`
     
-    var TOP_CENTER: `top center` = js.native
+    var TOP_CENTER: `top center`
     
-    var TOP_LEFT: `top left` = js.native
+    var TOP_LEFT: `top left`
     
-    var TOP_RIGHT: `top right` = js.native
+    var TOP_RIGHT: `top right`
   }
   object Positions_ {
     
     @scala.inline
-    def apply(
-      BOTTOM_CENTER: `bottom center`,
-      BOTTOM_LEFT: `bottom left`,
-      BOTTOM_RIGHT: `bottom right`,
-      MIDDLE: middle,
-      MIDDLE_LEFT: `middle left`,
-      MIDDLE_RIGHT: `middle right`,
-      TOP_CENTER: `top center`,
-      TOP_LEFT: `top left`,
-      TOP_RIGHT: `top right`
-    ): Positions_ = {
-      val __obj = js.Dynamic.literal(BOTTOM_CENTER = BOTTOM_CENTER.asInstanceOf[js.Any], BOTTOM_LEFT = BOTTOM_LEFT.asInstanceOf[js.Any], BOTTOM_RIGHT = BOTTOM_RIGHT.asInstanceOf[js.Any], MIDDLE = MIDDLE.asInstanceOf[js.Any], MIDDLE_LEFT = MIDDLE_LEFT.asInstanceOf[js.Any], MIDDLE_RIGHT = MIDDLE_RIGHT.asInstanceOf[js.Any], TOP_CENTER = TOP_CENTER.asInstanceOf[js.Any], TOP_LEFT = TOP_LEFT.asInstanceOf[js.Any], TOP_RIGHT = TOP_RIGHT.asInstanceOf[js.Any])
+    def apply(): Positions_ = {
+      val __obj = js.Dynamic.literal(BOTTOM_CENTER = "bottom center", BOTTOM_LEFT = "bottom left", BOTTOM_RIGHT = "bottom right", MIDDLE = "middle", MIDDLE_LEFT = "middle left", MIDDLE_RIGHT = "middle right", TOP_CENTER = "top center", TOP_LEFT = "top left", TOP_RIGHT = "top right")
       __obj.asInstanceOf[Positions_]
     }
     
@@ -494,18 +493,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Transitions_ extends StObject {
     
-    var FADE: fade = js.native
+    var FADE: fade
     
-    var SCALE: scale = js.native
+    var SCALE: scale
   }
   object Transitions_ {
     
     @scala.inline
-    def apply(FADE: fade, SCALE: scale): Transitions_ = {
-      val __obj = js.Dynamic.literal(FADE = FADE.asInstanceOf[js.Any], SCALE = SCALE.asInstanceOf[js.Any])
+    def apply(): Transitions_ = {
+      val __obj = js.Dynamic.literal(FADE = "fade", SCALE = "scale")
       __obj.asInstanceOf[Transitions_]
     }
     
@@ -520,20 +518,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Types_ extends StObject {
     
-    var ERROR: error = js.native
+    var ERROR: error
     
-    var INFO: info = js.native
+    var INFO: info
     
-    var SUCCESS: success = js.native
+    var SUCCESS: success
   }
   object Types_ {
     
     @scala.inline
-    def apply(ERROR: error, INFO: info, SUCCESS: success): Types_ = {
-      val __obj = js.Dynamic.literal(ERROR = ERROR.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], SUCCESS = SUCCESS.asInstanceOf[js.Any])
+    def apply(): Types_ = {
+      val __obj = js.Dynamic.literal(ERROR = "error", INFO = "info", SUCCESS = "success")
       __obj.asInstanceOf[Types_]
     }
     

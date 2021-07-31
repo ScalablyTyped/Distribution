@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsListJobsForWorkflowRunRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: GET = js.native
+  var method: GET
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs = js.native
+  var url: SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs
 }
 object ActionsListJobsForWorkflowRunRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: GET,
-    request: RequestRequestOptions,
-    url: SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs
-  ): ActionsListJobsForWorkflowRunRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsListJobsForWorkflowRunRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/actions/runs/:run_id/jobs")
     __obj.asInstanceOf[ActionsListJobsForWorkflowRunRequestOptions]
   }
   

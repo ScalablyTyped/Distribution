@@ -29,7 +29,6 @@ import typings.webgme.webgmeStrings.missing
 import typings.webgme.webgmeStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -38,17 +37,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Core {
   
-  @js.native
   trait Constraint extends StObject {
     
     /** Short description of the constraint. */
-    var info: String = js.native
+    var info: String
     
     /** Gives instructions on how to deal with violations of the constraint. */
-    var priority: Double = js.native
+    var priority: Double
     
     /** The script which checks if the constraint is met. */
-    var script: String = js.native
+    var script: String
   }
   object Constraint {
     
@@ -76,12 +74,11 @@ object Core {
   
   type GUID = String
   
-  @js.native
   trait GmePersisted extends StObject {
     
-    var objects: StringDictionary[DataObject] = js.native
+    var objects: StringDictionary[DataObject]
     
-    var rootHash: ObjectHash = js.native
+    var rootHash: ObjectHash
   }
   object GmePersisted {
     
@@ -102,37 +99,36 @@ object Core {
     }
   }
   
-  @js.native
   trait MixinViolation extends StObject {
     
     /** The colliding mixin nodes (if any). */
-    var collisionNodes: js.UndefOr[js.Array[Node]] = js.native
+    var collisionNodes: js.UndefOr[js.Array[Node]] = js.undefined
     
     /** The list of paths of colliding nodes (if any). */
-    var collisionPaths: js.UndefOr[js.Array[String]] = js.native
+    var collisionPaths: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Hint on how to resolve the issue. */
-    var hint: js.UndefOr[String] = js.native
+    var hint: js.UndefOr[String] = js.undefined
     
     /** The description of the violation. */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /** The name of the affected rule definition (if available). */
-    var ruleName: js.UndefOr[String] = js.native
+    var ruleName: js.UndefOr[String] = js.undefined
     
     /** The severity of the given error. */
-    var severity: js.UndefOr[error | warning] = js.native
+    var severity: js.UndefOr[error | warning] = js.undefined
     
     /** The name of the affected rule definition (if available). */
-    var targetInfo: js.UndefOr[String] = js.native
+    var targetInfo: js.UndefOr[String] = js.undefined
     
     /** The target node of the violation (if available). */
-    var targetNode: js.UndefOr[Node] = js.native
+    var targetNode: js.UndefOr[Node] = js.undefined
     
     /** What kind of violation */
     var `type`: js.UndefOr[
         missing | (`attribute collision`) | (`set collision`) | (`pointer collision`) | (`containment collision`) | (`aspect collision`) | (`constraint collision`)
-      ] = js.native
+      ] = js.undefined
   }
   object MixinViolation {
     
@@ -209,159 +205,158 @@ object Core {
     }
   }
   
-  @js.native
   trait Node extends StObject {
     
-    var _id: String = js.native
+    var _id: String
     
-    def canSetAsMixin(mixinPath: Path): Boolean = js.native
+    def canSetAsMixin(mixinPath: Path): Boolean
     
-    def getAspectMeta(): Metadata = js.native
+    def getAspectMeta(): Metadata
     
-    def getAttribute(name: Name): OutAttr = js.native
+    def getAttribute(name: Name): OutAttr
     
-    def getAttributeMeta(name: Name): AttrMeta = js.native
+    def getAttributeMeta(name: Name): AttrMeta
     
-    def getAttributeNames(): js.Array[Name] = js.native
+    def getAttributeNames(): js.Array[Name]
     
-    def getBaseId(): NodeId = js.native
+    def getBaseId(): NodeId
     
-    def getBaseTypeId(): Node | Null = js.native
+    def getBaseTypeId(): Node | Null
     
-    def getChildrenIds(): js.Array[NodeId] = js.native
+    def getChildrenIds(): js.Array[NodeId]
     
-    def getCollectionPaths(name: Name): js.Array[Path] = js.native
+    def getCollectionPaths(name: Name): js.Array[Path]
     
-    def getConstraint(name: Name): Constraint = js.native
+    def getConstraint(name: Name): Constraint
     
-    def getConstraintNames(): js.Array[Name] = js.native
+    def getConstraintNames(): js.Array[Name]
     
-    def getCrosscutsInfo(): CrosscutsInfo = js.native
+    def getCrosscutsInfo(): CrosscutsInfo
     
-    def getEditableAttribute(name: Name): OutAttr = js.native
+    def getEditableAttribute(name: Name): OutAttr
     
-    def getEditableMemberAttribute(setId: SetId, memberId: MemberId, name: Name): OutAttr = js.native
+    def getEditableMemberAttribute(setId: SetId, memberId: MemberId, name: Name): OutAttr
     
-    def getEditableMemberRegistry(setId: SetId, memberId: MemberId, name: Name): Registry = js.native
+    def getEditableMemberRegistry(setId: SetId, memberId: MemberId, name: Name): Registry
     
-    def getEditableRegistry(name: Name): Registry = js.native
+    def getEditableRegistry(name: Name): Registry
     
-    def getFullyQualifiedName(): Name = js.native
+    def getFullyQualifiedName(): Name
     
-    def getGuid(): GUID = js.native
+    def getGuid(): GUID
     
-    def getId(): NodeId = js.native
+    def getId(): NodeId
     
-    def getInheritorIds(): js.Array[NodeId] = js.native
+    def getInheritorIds(): js.Array[NodeId]
     
-    def getInstancePaths(): js.Array[Path] = js.native
+    def getInstancePaths(): js.Array[Path]
     
-    def getJsonMeta(): js.Array[Metadata] = js.native
+    def getJsonMeta(): js.Array[Metadata]
     
-    def getLibraryGuid(): GUID = js.native
+    def getLibraryGuid(): GUID
     
-    def getMemberAttribute(setId: SetId, memberId: MemberId): OutAttr = js.native
+    def getMemberAttribute(setId: SetId, memberId: MemberId): OutAttr
     
-    def getMemberAttributeNames(setId: SetId, memberId: MemberId): js.Array[Name] = js.native
+    def getMemberAttributeNames(setId: SetId, memberId: MemberId): js.Array[Name]
     
     /** Set */
-    def getMemberIds(setId: SetId): js.Array[Path] = js.native
+    def getMemberIds(setId: SetId): js.Array[Path]
     
-    def getMemberRegistry(setId: SetId, memberId: MemberId, name: Name): Registry = js.native
+    def getMemberRegistry(setId: SetId, memberId: MemberId, name: Name): Registry
     
-    def getMemberRegistryNames(setId: SetId, memberId: MemberId): js.Array[Name] = js.native
+    def getMemberRegistryNames(setId: SetId, memberId: MemberId): js.Array[Name]
     
-    def getMetaTypeId(): Node | Null = js.native
+    def getMetaTypeId(): Node | Null
     
     /** MixIns */
-    def getMixinPaths(): js.Array[Path] = js.native
+    def getMixinPaths(): js.Array[Path]
     
-    def getNamespace(): Name = js.native
+    def getNamespace(): Name
     
-    def getNode(id: NodeId, logger: GmeLogger, state: js.Any, storeNode: ResultCallback[Storage]): Node = js.native
+    def getNode(id: NodeId, logger: GmeLogger, state: js.Any, storeNode: ResultCallback[Storage]): Node
     
-    def getOwnAttribute(name: Name): OutAttr = js.native
+    def getOwnAttribute(name: Name): OutAttr
     
-    def getOwnAttributeNames(): js.Array[Name] = js.native
+    def getOwnAttributeNames(): js.Array[Name]
     
-    def getOwnConstraintNames(): js.Array[Name] = js.native
+    def getOwnConstraintNames(): js.Array[Name]
     
-    def getOwnEditableAttribute(name: Name): OutAttr = js.native
+    def getOwnEditableAttribute(name: Name): OutAttr
     
-    def getOwnEditableRegistry(name: Name): Registry = js.native
+    def getOwnEditableRegistry(name: Name): Registry
     
-    def getOwnPointer(name: Name): Pointer = js.native
+    def getOwnPointer(name: Name): Pointer
     
-    def getOwnPointerId(name: Name): SetId = js.native
+    def getOwnPointerId(name: Name): SetId
     
-    def getOwnPointerNames(): js.Array[Name] = js.native
+    def getOwnPointerNames(): js.Array[Name]
     
-    def getOwnRegistry(name: Name): Registry = js.native
+    def getOwnRegistry(name: Name): Registry
     
-    def getOwnRegistryNames(): js.Array[Name] = js.native
+    def getOwnRegistryNames(): js.Array[Name]
     
-    def getOwnValidAspectNames(): js.Array[Name] = js.native
+    def getOwnValidAspectNames(): js.Array[Name]
     
-    def getOwnValidAttributeNames(): js.Array[Name] = js.native
+    def getOwnValidAttributeNames(): js.Array[Name]
     
-    def getParentId(): NodeId = js.native
+    def getParentId(): NodeId
     
-    def getPointer(name: Name): Pointer = js.native
+    def getPointer(name: Name): Pointer
     
-    def getPointerId(name: Name): SetId = js.native
+    def getPointerId(name: Name): SetId
     
-    def getPointerNames(): js.Array[Name] = js.native
+    def getPointerNames(): js.Array[Name]
     
-    def getRegistry(name: Name): Registry = js.native
+    def getRegistry(name: Name): Registry
     
-    def getRegistryNames(): js.Array[Name] = js.native
+    def getRegistryNames(): js.Array[Name]
     
-    def getRelid(): RelId = js.native
+    def getRelid(): RelId
     
-    def getSetNames(): js.Array[Name] = js.native
+    def getSetNames(): js.Array[Name]
     
-    def getValidAspectNames(): js.Array[Name] = js.native
+    def getValidAspectNames(): js.Array[Name]
     
-    def getValidAttributeNames(): js.Array[Name] = js.native
+    def getValidAttributeNames(): js.Array[Name]
     
-    def getValidChildrenIds(): js.Array[NodeId] = js.native
+    def getValidChildrenIds(): js.Array[NodeId]
     
     /** META */
-    def getValidChildrenTypes(): js.Array[NodeId] = js.native
+    def getValidChildrenTypes(): js.Array[NodeId]
     
-    def getValidChildrenTypesDetailed(aspect: Aspect, noFilter: Boolean): Dictionary[_] = js.native
+    def getValidChildrenTypesDetailed(aspect: Aspect, noFilter: Boolean): Dictionary[js.Any]
     
-    def getValidPointerNames(): js.Array[Name] = js.native
+    def getValidPointerNames(): js.Array[Name]
     
-    def getValidSetMemberTypesDetailed(setName: Name): StringDictionary[js.Any] = js.native
+    def getValidSetMemberTypesDetailed(setName: Name): StringDictionary[js.Any]
     
-    def getValidSetNames(): js.Array[Name] = js.native
+    def getValidSetNames(): js.Array[Name]
     
-    def getValildAttributeNames(): js.Array[Name] = js.native
+    def getValildAttributeNames(): js.Array[Name]
     
-    def isAbstract(): Boolean = js.native
+    def isAbstract(): Boolean
     
-    def isConnection(): Boolean = js.native
+    def isConnection(): Boolean
     
-    def isLibraryElement(): Boolean = js.native
+    def isLibraryElement(): Boolean
     
-    def isLibraryRoot(): Boolean = js.native
+    def isLibraryRoot(): Boolean
     
-    def isMetaNode(): Boolean = js.native
+    def isMetaNode(): Boolean
     
-    def isReadOnly(): Boolean = js.native
+    def isReadOnly(): Boolean
     
-    def isTypeOf(typePath: Path): Boolean = js.native
+    def isTypeOf(typePath: Path): Boolean
     
-    def isValidAttributeValueOf(name: Name, value: js.Any): Boolean = js.native
+    def isValidAttributeValueOf(name: Name, value: js.Any): Boolean
     
-    def isValidChildOf(parentPath: Path): Boolean = js.native
+    def isValidChildOf(parentPath: Path): Boolean
     
-    def isValidNewBase(basePath: Path): Boolean = js.native
+    def isValidNewBase(basePath: Path): Boolean
     
-    def isValidNewParent(parentPath: Path): Boolean = js.native
+    def isValidNewParent(parentPath: Path): Boolean
     
-    def isValidTargetOf(sourcePath: Path, name: Name): Boolean = js.native
+    def isValidTargetOf(sourcePath: Path, name: Name): Boolean
   }
   object Node {
     
@@ -424,7 +419,7 @@ object Core {
       getValidAttributeNames: () => js.Array[Name],
       getValidChildrenIds: () => js.Array[NodeId],
       getValidChildrenTypes: () => js.Array[NodeId],
-      getValidChildrenTypesDetailed: (Aspect, Boolean) => Dictionary[_],
+      getValidChildrenTypesDetailed: (Aspect, Boolean) => Dictionary[js.Any],
       getValidPointerNames: () => js.Array[Name],
       getValidSetMemberTypesDetailed: Name => StringDictionary[js.Any],
       getValidSetNames: () => js.Array[Name],
@@ -618,7 +613,7 @@ object Core {
       def setGetValidChildrenTypes(value: () => js.Array[NodeId]): Self = StObject.set(x, "getValidChildrenTypes", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setGetValidChildrenTypesDetailed(value: (Aspect, Boolean) => Dictionary[_]): Self = StObject.set(x, "getValidChildrenTypesDetailed", js.Any.fromFunction2(value))
+      def setGetValidChildrenTypesDetailed(value: (Aspect, Boolean) => Dictionary[js.Any]): Self = StObject.set(x, "getValidChildrenTypesDetailed", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetValidPointerNames(value: () => js.Array[Name]): Self = StObject.set(x, "getValidPointerNames", js.Any.fromFunction0(value))
@@ -675,22 +670,32 @@ object Core {
   
   type ObjectHash = String
   
-  type RelationRule = RelationRuleDetail with RelationRuleDictionary
+  trait RelationRule
+    extends StObject
+       with RelationRuleDetail
+       with RelationRuleDictionary
+  object RelationRule {
+    
+    @scala.inline
+    def apply(): RelationRule = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RelationRule]
+    }
+  }
   
-  @js.native
   trait RelationRuleDetail extends StObject {
     
     /** 
       * The maximum amount of target necessary for the relationship 
       * (if not present or '-1' then there is no maximum rule that applies) 
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /** 
       * The minimum amount of target necessary for the relationship 
       * (if not present or '-1' then there is no minimum rule that applies) 
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object RelationRuleDetail {
     

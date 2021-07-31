@@ -2,28 +2,26 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An XSLTProcessor applies an XSLT stylesheet transformation to an XML document to produce a new XML document as output. It has methods to load the XSLT stylesheet, to manipulate <xsl:param> parameter values, and to apply the transformation to documents. */
-@js.native
 trait XSLTProcessor extends StObject {
   
-  def clearParameters(): Unit = js.native
+  def clearParameters(): Unit
   
-  def getParameter(namespaceURI: java.lang.String, localName: java.lang.String): js.Any = js.native
+  def getParameter(namespaceURI: java.lang.String, localName: java.lang.String): js.Any
   
-  def importStylesheet(style: Node): Unit = js.native
+  def importStylesheet(style: Node): Unit
   
-  def removeParameter(namespaceURI: java.lang.String, localName: java.lang.String): Unit = js.native
+  def removeParameter(namespaceURI: java.lang.String, localName: java.lang.String): Unit
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def setParameter(namespaceURI: java.lang.String, localName: java.lang.String, value: js.Any): Unit = js.native
+  def setParameter(namespaceURI: java.lang.String, localName: java.lang.String, value: js.Any): Unit
   
-  def transformToDocument(source: Node): Document = js.native
+  def transformToDocument(source: Node): Document
   
-  def transformToFragment(source: Node, document: Document): DocumentFragment = js.native
+  def transformToFragment(source: Node, document: Document): DocumentFragment
 }
 object XSLTProcessor {
   

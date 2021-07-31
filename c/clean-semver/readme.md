@@ -12,7 +12,7 @@ Clean a semver-compatible version.
 | Keywords           | semver, clean, version |
 | # releases         | 6 |
 | # dependents       | 5 |
-| # downloads        | 7326 |
+| # downloads        | 25694 |
 | # stars            | 0 |
 
 ## Links

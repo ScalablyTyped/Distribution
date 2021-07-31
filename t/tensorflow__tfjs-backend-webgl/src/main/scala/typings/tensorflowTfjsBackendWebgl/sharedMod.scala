@@ -5,15 +5,17 @@ import typings.tensorflowTfjsBackendCpu.binaryTypesMod.SimpleBinaryKernelImpl
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sharedMod {
   
-  /* was `typeof shared.simpleAbsImpl` */
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernel_utils/shared", "simpleAbsImplCPU")
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernel_utils/shared", JSImport.Namespace)
   @js.native
-  def simpleAbsImplCPU(vals: TypedArray): Float32Array = js.native
+  val ^ : js.Any = js.native
+  
+  /* was `typeof shared.simpleAbsImpl` */
+  @scala.inline
+  def simpleAbsImplCPU(vals: TypedArray): Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleAbsImplCPU")(vals.asInstanceOf[js.Any]).asInstanceOf[Float32Array]
   
   type SimpleBinaryKernelImplCPU = SimpleBinaryKernelImpl
 }

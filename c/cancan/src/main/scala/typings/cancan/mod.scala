@@ -2,14 +2,15 @@ package typings.cancan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("cancan", JSImport.Namespace)
   @js.native
-  class ^ () extends CanCan {
+  class ^ ()
+    extends StObject
+       with CanCan {
     def this(options: Option) = this()
   }
   
@@ -75,12 +76,11 @@ object mod {
     def cannot(performer: js.Any, action: String, target: js.Any, options: js.Any): Boolean = js.native
   }
   
-  @js.native
   trait Option extends StObject {
     
-    var createError: js.UndefOr[js.Function0[_]] = js.native
+    var createError: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var instanceOf: js.UndefOr[js.Function2[/* instance */ js.Any, /* model */ js.Any, Boolean]] = js.native
+    var instanceOf: js.UndefOr[js.Function2[/* instance */ js.Any, /* model */ js.Any, Boolean]] = js.undefined
   }
   object Option {
     
@@ -94,7 +94,7 @@ object mod {
     implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCreateError(value: () => _): Self = StObject.set(x, "createError", js.Any.fromFunction0(value))
+      def setCreateError(value: () => js.Any): Self = StObject.set(x, "createError", js.Any.fromFunction0(value))
       
       @scala.inline
       def setCreateErrorUndefined: Self = StObject.set(x, "createError", js.undefined)

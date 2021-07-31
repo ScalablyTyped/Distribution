@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FamilyRole extends StObject {
   
-  var familyRole: js.UndefOr[String] = js.native
+  var familyRole: js.UndefOr[String] = js.undefined
   
-  var isSharingAllowed: js.UndefOr[Boolean] = js.native
+  var isSharingAllowed: js.UndefOr[Boolean] = js.undefined
   
-  var isSharingDisabledByFop: js.UndefOr[Boolean] = js.native
+  var isSharingDisabledByFop: js.UndefOr[Boolean] = js.undefined
 }
 object FamilyRole {
   

@@ -6,14 +6,16 @@ import typings.history.mod.LocationListener
 import typings.history.mod.UnregisterCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createTransitionManagerMod {
   
-  @JSImport("history/createTransitionManager", JSImport.Default)
+  @JSImport("history/createTransitionManager", JSImport.Namespace)
   @js.native
-  def default[S](): TransitionManager[S] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[S](): TransitionManager[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[TransitionManager[S]]
   
   type Prompt[S] = PromptFunction[S] | Boolean
   

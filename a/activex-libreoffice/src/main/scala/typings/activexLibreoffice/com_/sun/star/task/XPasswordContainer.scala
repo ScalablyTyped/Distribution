@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Allows to save passwords with URL-pattern, to use them later. */
-@js.native
-trait XPasswordContainer extends XInterface {
+trait XPasswordContainer
+  extends StObject
+     with XInterface {
   
   /**
     * Save passwords in to the container.
@@ -20,7 +20,7 @@ trait XPasswordContainer extends XInterface {
     * @param Passwords The password-list.
     * @param Handler The handler to get super password to en/decrypt passwords
     */
-  def add(Url: String, UserName: String, Passwords: SeqEquiv[String], Handler: XInteractionHandler): Unit = js.native
+  def add(Url: String, UserName: String, Passwords: SeqEquiv[String], Handler: XInteractionHandler): Unit
   
   /**
     * Save passwords in to the container, and store them in the file.
@@ -29,7 +29,7 @@ trait XPasswordContainer extends XInterface {
     * @param Passwords The password-list.
     * @param Handler The handler to get super password to en/decrypt passwords
     */
-  def addPersistent(Url: String, UserName: String, Passwords: SeqEquiv[String], Handler: XInteractionHandler): Unit = js.native
+  def addPersistent(Url: String, UserName: String, Passwords: SeqEquiv[String], Handler: XInteractionHandler): Unit
   
   /**
     * Find users with passwords for the url pattern.
@@ -37,7 +37,7 @@ trait XPasswordContainer extends XInterface {
     * @param Handler The handler to get super password to en/decrypt passwords
     * @returns Best matched url-pattern with user-records list.
     */
-  def find(Url: String, Handler: XInteractionHandler): UrlRecord = js.native
+  def find(Url: String, Handler: XInteractionHandler): UrlRecord
   
   /**
     * Find passwords for the url pattern and username.
@@ -46,30 +46,30 @@ trait XPasswordContainer extends XInterface {
     * @param Handler The handler to get super password to en/decrypt passwords
     * @returns Best matched url-pattern for the username.
     */
-  def findForName(Url: String, UserName: String, Handler: XInteractionHandler): UrlRecord = js.native
+  def findForName(Url: String, UserName: String, Handler: XInteractionHandler): UrlRecord
   
   /**
     * Get all records from the file.
     * @returns List of url-records.
     */
-  def getAllPersistent(Handler: XInteractionHandler): SafeArray[UrlRecord] = js.native
+  def getAllPersistent(Handler: XInteractionHandler): SafeArray[UrlRecord]
   
   /**
     * Remove passwords for the url pattern and username.
     * @param Url URL-pattern to remove passwords for.
     * @param UserName Username to remove passwords for.
     */
-  def remove(Url: String, UserName: String): Unit = js.native
+  def remove(Url: String, UserName: String): Unit
   
   /** Clean the file. */
-  def removeAllPersistent(): Unit = js.native
+  def removeAllPersistent(): Unit
   
   /**
     * Remove passwords for the url pattern and username from the file.
     * @param Url URL-pattern to remove passwords for.
     * @param UserName Username to remove passwords for.
     */
-  def removePersistent(Url: String, UserName: String): Unit = js.native
+  def removePersistent(Url: String, UserName: String): Unit
 }
 object XPasswordContainer {
   

@@ -11,7 +11,7 @@ A mixin superclass. Its subclasses have `.extend` and `.includeInto` methods to 
 | Keywords           | mixin, trait |
 | # releases         | 0 |
 | # dependents       | 17 |
-| # downloads        | 2039845 |
+| # downloads        | 1905285 |
 | # stars            | 0 |
 
 ## Links

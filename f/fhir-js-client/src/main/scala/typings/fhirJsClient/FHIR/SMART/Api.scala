@@ -2,7 +2,6 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This exposes all the methods implemented by jqFhir.js adapter of fhir.js client library
   * https://github.com/FHIR/fhir.js
   */
-@js.native
 trait Api extends StObject {
   
   /**
@@ -18,26 +16,26 @@ trait Api extends StObject {
     *
     * @param input : An override to the base config object or just an empty object {}
     */
-  def conformance(input: js.Any): js.Promise[Response] = js.native
+  def conformance(input: js.Any): js.Promise[Response]
   
   /**
     * POST BASEURL/{resourceType} BODY: {entry without id}
     * @param entry : A valid FHIR entry containing the resource.
     */
-  def create(entry: Entry): js.Promise[Response] = js.native
+  def create(entry: Entry): js.Promise[Response]
   
   /**
     * DELETE BASEURL/{resourceType} BODY {entry with id}
     * @param entry : A valid FHIR entry object containing the resource object
     * or an object containing the id property(id of the resource to be deleted)
     */
-  def delete(entry: Entry): js.Promise[Response] = js.native
+  def delete(entry: Entry): js.Promise[Response]
   
   /**
     * POST BASEURL/Document
     * @param document
     */
-  def document(document: Entry): js.Promise[Response] = js.native
+  def document(document: Entry): js.Promise[Response]
   
   /**
     * GET BASEURL/{resourceType}?searchParams
@@ -50,10 +48,10 @@ trait Api extends StObject {
     */
   def drain(
     params: SearchParams,
-    process: js.Function1[/* entries */ js.Array[Entry], _],
-    done: js.Function0[_],
-    fail: js.Function1[/* error */ js.Any, _]
-  ): Unit = js.native
+    process: js.Function1[/* entries */ js.Array[Entry], js.Any],
+    done: js.Function0[js.Any],
+    fail: js.Function1[/* error */ js.Any, js.Any]
+  ): Unit
   
   /**
     * GET BASEURL/{resourceType}?searchParams
@@ -63,7 +61,7 @@ trait Api extends StObject {
     * Resolve: (entries:any[]) => { console.log(entries); }
     * Reject: (error:any) => { console.log(error); }
     */
-  def fetchAll(params: SearchParams): js.Promise[js.Array[Entry]] = js.native
+  def fetchAll(params: SearchParams): js.Promise[js.Array[Entry]]
   
   /**
     * GET BASEURL/{resourceType}?searchParams
@@ -75,40 +73,40 @@ trait Api extends StObject {
     * Resolve: (entries:Entry[],resolvedReferences:[index: string]: Resource) => { console.log(entries); console.log(resolvedReferences);}
     * Reject: (error:any) => { console.log(error); }
     */
-  def fetchAllWithReferences(params: SearchParams, resolveParams: js.Array[String]): js.Any = js.native
+  def fetchAllWithReferences(params: SearchParams, resolveParams: js.Array[String]): js.Any
   
   /**
     * GET BASEURL/_history?historyParams
     * Calls the _history API with the parameters specified
     * @param params
     */
-  def history(params: HistoryParams): js.Promise[Response] = js.native
+  def history(params: HistoryParams): js.Promise[Response]
   
   /**
     * GET BASEURL/_getpages=XXXX : Next link in the bundle
     * Fetches the next page based on the input bundle resource's next link.
     * @param bundle Input bundle resource containing the next link.
     */
-  def nextPage(bundle: Bundle): js.Promise[Response] = js.native
+  def nextPage(bundle: Bundle): js.Promise[Response]
   
   /**
     * GET BASEURL/_getpages=XXXX : Prev link in the bundle
     * Fetches the previous page based on the input bundle resource's previous link.
     * @param bundle Input bundle resource containing the previous link
     */
-  def prevPage(bundle: Bundle): js.Promise[Response] = js.native
+  def prevPage(bundle: Bundle): js.Promise[Response]
   
   /**
     * GET BASEURL/Profile/{resourceType}
     * @param resourceType
     */
-  def profile(resourceType: ResourceType): js.Promise[Response] = js.native
+  def profile(resourceType: ResourceType): js.Promise[Response]
   
   /**
     * GET BASEURL/{resourceType}/{id}
     * @param params An object with id and resourceType property
     */
-  def read(params: ReadParams): js.Promise[Response] = js.native
+  def read(params: ReadParams): js.Promise[Response]
   
   /**
     * Pass the node containing the property reference, which needs to be resolved. eg. myObservation.resource.subject
@@ -116,51 +114,51 @@ trait Api extends StObject {
     * If a bundle resource is passed, will try to resolve within that bundle first before querying the server
     * @param params The reference node to be resolved along with the resource and the bundle to be searched if the reference is a contained one.
     */
-  def resolve(params: ResolveParams): js.Promise[Response] = js.native
+  def resolve(params: ResolveParams): js.Promise[Response]
   
   /**
     * GET BASEURL/{resourceType}/{id}/_history?otherHistoryParams
     * @param params Should provide, resourceType and id either through id and type properties or the resource property
     */
-  def resourceHistory(params: HistoryParams): js.Promise[Response] = js.native
+  def resourceHistory(params: HistoryParams): js.Promise[Response]
   
   /**
     * GET BASEURL/{resourceType}?searchParams
     * @param searchParams Filters to be applied to the API call
     */
-  def search(params: SearchParams): js.Promise[Response] = js.native
+  def search(params: SearchParams): js.Promise[Response]
   
   /**
     * POST BASEURL Body: Bundle with entries containing a node 'request': { 'method': 'POST' }. The value of 'method' can be DELETE,POST,PUT or GET.
     * @param bundle
     */
-  def transaction(bundle: Bundle): js.Promise[Response] = js.native
+  def transaction(bundle: Bundle): js.Promise[Response]
   
   /**
     * GET BASEURL/{resourceType}/_history?historyParams
     * @param params
     */
-  def typeHistory(params: HistoryParams): js.Promise[Response] = js.native
+  def typeHistory(params: HistoryParams): js.Promise[Response]
   
   /**
     * PUT BASEURL/{resourceType}/{id}
     * @param entry : Entry containing the Resource to be updated
     */
-  def update(entry: Entry): js.Promise[Response] = js.native
+  def update(entry: Entry): js.Promise[Response]
   
   /**
     * POST BASEURL/{resourceType}/_validate BODY: Resource to be validated
     * PS: Cannot find the _validate endpoint on the SMART on FHIR open server. But $validate exists.
     * @param entry
     */
-  def validate(entry: Entry): js.Promise[Response] = js.native
+  def validate(entry: Entry): js.Promise[Response]
   
   /**
     * GET BASEURL/{resourceType}/{id}/_history/{versionId}
     * Fetches the specific historic version of the resource.
     * @param params ResourceType, ResourceId and the VersionId
     */
-  def vread(params: VersionReadParams): js.Promise[Response] = js.native
+  def vread(params: VersionReadParams): js.Promise[Response]
 }
 object Api {
   
@@ -170,7 +168,7 @@ object Api {
     create: Entry => js.Promise[Response],
     delete: Entry => js.Promise[Response],
     document: Entry => js.Promise[Response],
-    drain: (SearchParams, js.Function1[/* entries */ js.Array[Entry], _], js.Function0[_], js.Function1[/* error */ js.Any, _]) => Unit,
+    drain: (SearchParams, js.Function1[/* entries */ js.Array[Entry], js.Any], js.Function0[js.Any], js.Function1[/* error */ js.Any, js.Any]) => Unit,
     fetchAll: SearchParams => js.Promise[js.Array[Entry]],
     fetchAllWithReferences: (SearchParams, js.Array[String]) => js.Any,
     history: HistoryParams => js.Promise[Response],
@@ -208,7 +206,7 @@ object Api {
     
     @scala.inline
     def setDrain(
-      value: (SearchParams, js.Function1[/* entries */ js.Array[Entry], _], js.Function0[_], js.Function1[/* error */ js.Any, _]) => Unit
+      value: (SearchParams, js.Function1[/* entries */ js.Array[Entry], js.Any], js.Function0[js.Any], js.Function1[/* error */ js.Any, js.Any]) => Unit
     ): Self = StObject.set(x, "drain", js.Any.fromFunction4(value))
     
     @scala.inline

@@ -3,41 +3,39 @@ package typings.googleapis.docsV1Mod.docsV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A ParagraphElement representing a column break. A column break makes the
   * subsequent text start at the top of the next column.
   */
-@js.native
 trait SchemaColumnBreak extends StObject {
   
   /**
     * The suggested deletion IDs. If empty, then there are no suggested
     * deletions of this content.
     */
-  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The suggested insertion IDs. A ColumnBreak may have multiple insertion
     * IDs if it is a nested suggested change. If empty, then this is not a
     * suggested insertion.
     */
-  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The suggested text style changes to this ColumnBreak, keyed by suggestion
     * ID.
     */
-  var suggestedTextStyleChanges: js.UndefOr[StringDictionary[SchemaSuggestedTextStyle]] = js.native
+  var suggestedTextStyleChanges: js.UndefOr[StringDictionary[SchemaSuggestedTextStyle]] = js.undefined
   
   /**
     * The text style of this ColumnBreak.  Similar to text content, like text
     * runs and footnote references, the text style of a column break can affect
     * content layout as well as the styling of text inserted adjacent to it.
     */
-  var textStyle: js.UndefOr[SchemaTextStyle] = js.native
+  var textStyle: js.UndefOr[SchemaTextStyle] = js.undefined
 }
 object SchemaColumnBreak {
   

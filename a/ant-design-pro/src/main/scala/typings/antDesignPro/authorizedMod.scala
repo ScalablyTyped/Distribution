@@ -12,14 +12,16 @@ import typings.react.mod.ReactNode
 import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authorizedMod {
   
-  @JSImport("ant-design-pro/lib/Authorized", JSImport.Default)
+  @JSImport("ant-design-pro/lib/Authorized", JSImport.Namespace)
   @js.native
-  def default(currentAuthority: String): TypeofAuthorized = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(currentAuthority: String): TypeofAuthorized = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(currentAuthority.asInstanceOf[js.Any]).asInstanceOf[TypeofAuthorized]
   
   @JSImport("ant-design-pro/lib/Authorized", "Authorized")
   @js.native
@@ -58,12 +60,11 @@ object authorizedMod {
     def check_=(x: check): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("check")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IAuthorizedProps extends StObject {
     
-    var authority: typings.antDesignPro.authorizedRouteMod.authority = js.native
+    var authority: typings.antDesignPro.authorizedRouteMod.authority
     
-    var noMatch: js.UndefOr[ReactNode] = js.native
+    var noMatch: js.UndefOr[ReactNode] = js.undefined
   }
   object IAuthorizedProps {
     

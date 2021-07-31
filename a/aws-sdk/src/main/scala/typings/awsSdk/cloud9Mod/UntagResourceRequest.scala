@@ -2,21 +2,19 @@ package typings.awsSdk.cloud9Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Cloud9 development environment to remove tags from.
     */
-  var ResourceARN: EnvironmentArn = js.native
+  var ResourceARN: EnvironmentArn
   
   /**
     * The tag names of the tags to remove from the given AWS Cloud9 development environment.
     */
-  var TagKeys: TagKeyList = js.native
+  var TagKeys: TagKeyList
 }
 object UntagResourceRequest {
   

@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MicrosoftStoreForBusinessAppAssignmentSettings extends MobileAppAssignmentSettings {
+trait MicrosoftStoreForBusinessAppAssignmentSettings
+  extends StObject
+     with MobileAppAssignmentSettings {
   
   // Whether or not to use device execution context for Microsoft Store for Business mobile app.
-  var useDeviceContext: js.UndefOr[Boolean] = js.native
+  var useDeviceContext: js.UndefOr[Boolean] = js.undefined
 }
 object MicrosoftStoreForBusinessAppAssignmentSettings {
   

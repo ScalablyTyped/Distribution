@@ -2,22 +2,20 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DismissText extends StObject {
   
-  var DatePickerLocale: Day = js.native
+  var DatePickerLocale: Day
   
   /** 取消 */
-  var dismissText: String = js.native
+  var dismissText: String
   
   /** 请选择 */
-  var extra: String = js.native
+  var extra: String
   
   /** 确定 */
-  var okText: String = js.native
+  var okText: String
 }
 object DismissText {
   

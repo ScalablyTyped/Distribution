@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTagsInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var ResourceArns: typings.awsSdk.elbv2Mod.ResourceArns = js.native
+  var ResourceArns: typings.awsSdk.elbv2Mod.ResourceArns
   
   /**
     * The tag keys for the tags to remove.
     */
-  var TagKeys: typings.awsSdk.elbv2Mod.TagKeys = js.native
+  var TagKeys: typings.awsSdk.elbv2Mod.TagKeys
 }
 object RemoveTagsInput {
   

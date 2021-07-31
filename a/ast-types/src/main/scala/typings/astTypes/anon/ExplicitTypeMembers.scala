@@ -4,15 +4,13 @@ import typings.astTypes.kindsMod.EnumDefaultedMemberKind
 import typings.astTypes.kindsMod.EnumStringMemberKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExplicitTypeMembers extends StObject {
   
-  var explicitType: Boolean = js.native
+  var explicitType: Boolean
   
-  var members: js.Array[EnumDefaultedMemberKind | EnumStringMemberKind] = js.native
+  var members: js.Array[EnumDefaultedMemberKind | EnumStringMemberKind]
 }
 object ExplicitTypeMembers {
   

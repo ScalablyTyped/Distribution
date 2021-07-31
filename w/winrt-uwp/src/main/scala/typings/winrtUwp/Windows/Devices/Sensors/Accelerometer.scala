@@ -8,14 +8,13 @@ import typings.winrtUwp.winrtUwpStrings.readingchanged
 import typings.winrtUwp.winrtUwpStrings.shaken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an accelerometer sensor. */
 @js.native
 trait Accelerometer extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readingchanged(
     `type`: readingchanged,
@@ -40,13 +39,13 @@ trait Accelerometer extends StObject {
   var minimumReportInterval: Double = js.native
   
   /** Occurs each time the accelerometer reports a new sensor reading. */
-  def onreadingchanged(ev: AccelerometerReadingChangedEventArgs with WinRTEvent[Accelerometer]): Unit = js.native
+  def onreadingchanged(ev: AccelerometerReadingChangedEventArgs & WinRTEvent[Accelerometer]): Unit = js.native
   /** Occurs each time the accelerometer reports a new sensor reading. */
   @JSName("onreadingchanged")
   var onreadingchanged_Original: TypedEventHandler[Accelerometer, AccelerometerReadingChangedEventArgs] = js.native
   
   /** Occurs when the accelerometer detects that the PC has been shaken. */
-  def onshaken(ev: AccelerometerShakenEventArgs with WinRTEvent[Accelerometer]): Unit = js.native
+  def onshaken(ev: AccelerometerShakenEventArgs & WinRTEvent[Accelerometer]): Unit = js.native
   /** Occurs when the accelerometer detects that the PC has been shaken. */
   @JSName("onshaken")
   var onshaken_Original: TypedEventHandler[Accelerometer, AccelerometerShakenEventArgs] = js.native
@@ -54,7 +53,7 @@ trait Accelerometer extends StObject {
   /** Gets or sets the transformation that needs to be applied to sensor data. Transformations to be applied are tied to the display orientation with which to align the sensor data. */
   var readingTransform: DisplayOrientations = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readingchanged(
     `type`: readingchanged,

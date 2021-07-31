@@ -2,17 +2,15 @@ package typings.forestExpressMongoose.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionOptions extends StObject {
   
-  var actions: js.UndefOr[js.Array[SmartActionOptions]] = js.native
+  var actions: js.UndefOr[js.Array[SmartActionOptions]] = js.undefined
   
-  var fields: js.UndefOr[js.Array[SmartFieldOptions]] = js.native
+  var fields: js.UndefOr[js.Array[SmartFieldOptions]] = js.undefined
   
-  var segments: js.UndefOr[js.Array[SmartSegmentOptions]] = js.native
+  var segments: js.UndefOr[js.Array[SmartSegmentOptions]] = js.undefined
 }
 object CollectionOptions {
   

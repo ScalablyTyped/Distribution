@@ -10,9 +10,9 @@ Typings are for version 0.1.26
 | ------------------ | :-------------: |
 | Full name          | wonder-frp |
 | Keywords           | FRP, Wonder-FRP |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 1534 |
+| # downloads        | 1711 |
 | # stars            | 0 |
 
 ## Links

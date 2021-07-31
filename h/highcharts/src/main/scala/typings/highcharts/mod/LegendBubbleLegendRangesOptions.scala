@@ -2,35 +2,33 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendBubbleLegendRangesOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps) The color of the border for individual
     * range.
     */
-  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The color of the bubble for individual
     * range.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The color of the connector for
     * individual range.
     */
-  var connectorColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var connectorColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Range size value, similar to bubble Z
     * data.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object LegendBubbleLegendRangesOptions {
   

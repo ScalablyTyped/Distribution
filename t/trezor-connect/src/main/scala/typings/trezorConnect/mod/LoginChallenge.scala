@@ -2,15 +2,15 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LoginChallenge extends RequestLoginParams {
+trait LoginChallenge
+  extends StObject
+     with RequestLoginParams {
   
-  var challengeHidden: String = js.native
+  var challengeHidden: String
   
-  var challengeVisual: String = js.native
+  var challengeVisual: String
 }
 object LoginChallenge {
   

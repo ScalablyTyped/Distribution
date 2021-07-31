@@ -3,7 +3,6 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,43 +11,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * receives the request. Service peers should fill in the `service`,
   * `principal`, and `labels` as appropriate.
   */
-@js.native
 trait SchemaPeer extends StObject {
   
   /**
     * The IP address of the peer.
     */
-  var ip: js.UndefOr[String] = js.native
+  var ip: js.UndefOr[String] = js.undefined
   
   /**
     * The labels associated with the peer.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The network port of the peer.
     */
-  var port: js.UndefOr[String] = js.native
+  var port: js.UndefOr[String] = js.undefined
   
   /**
     * The identity of this peer. Similar to `Request.auth.principal`, but
     * relative to the peer instead of the request. For example, the idenity
     * associated with a load balancer that forwared the request.
     */
-  var principal: js.UndefOr[String] = js.native
+  var principal: js.UndefOr[String] = js.undefined
   
   /**
     * The CLDR country/region code associated with the above IP address. If the
     * IP address is private, the `region_code` should reflect the physical
     * location where this peer is running.
     */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
   
   /**
     * The canonical service name of the peer.  NOTE: different systems may have
     * different service naming schemes.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
 }
 object SchemaPeer {
   

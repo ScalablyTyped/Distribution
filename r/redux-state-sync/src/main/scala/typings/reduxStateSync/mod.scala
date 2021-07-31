@@ -9,66 +9,58 @@ import typings.redux.mod.Store
 import typings.std.BroadcastChannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("redux-state-sync", "createMessageListener")
+  @JSImport("redux-state-sync", JSImport.Namespace)
   @js.native
-  def createMessageListener(config: MessageListenerConfig): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("redux-state-sync", "createStateSyncMiddleware")
-  @js.native
-  def createStateSyncMiddleware(): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
-  @JSImport("redux-state-sync", "createStateSyncMiddleware")
-  @js.native
-  def createStateSyncMiddleware(config: Config): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+  @scala.inline
+  def createMessageListener(config: MessageListenerConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createMessageListener")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("redux-state-sync", "generateUuidForAction")
-  @js.native
-  def generateUuidForAction(action: AnyAction): StampedAction = js.native
+  @scala.inline
+  def createStateSyncMiddleware(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStateSyncMiddleware")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  @scala.inline
+  def createStateSyncMiddleware(config: Config): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStateSyncMiddleware")(config.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
   
-  @JSImport("redux-state-sync", "initMessageListener")
-  @js.native
-  def initMessageListener(store: Store[_, AnyAction]): Store[_, AnyAction] = js.native
+  @scala.inline
+  def generateUuidForAction(action: AnyAction): StampedAction = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUuidForAction")(action.asInstanceOf[js.Any]).asInstanceOf[StampedAction]
   
-  @JSImport("redux-state-sync", "initStateWithPrevTab")
-  @js.native
-  def initStateWithPrevTab(store: Store[_, AnyAction]): Store[_, AnyAction] = js.native
+  @scala.inline
+  def initMessageListener(store: Store[js.Any, AnyAction]): Store[js.Any, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("initMessageListener")(store.asInstanceOf[js.Any]).asInstanceOf[Store[js.Any, AnyAction]]
   
-  @JSImport("redux-state-sync", "isActionAllowed")
-  @js.native
-  def isActionAllowed(config: Config): js.Function1[/* type */ String, Boolean] = js.native
+  @scala.inline
+  def initStateWithPrevTab(store: Store[js.Any, AnyAction]): Store[js.Any, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("initStateWithPrevTab")(store.asInstanceOf[js.Any]).asInstanceOf[Store[js.Any, AnyAction]]
   
-  @JSImport("redux-state-sync", "isActionSynced")
-  @js.native
-  def isActionSynced(action: AnyAction): Boolean = js.native
+  @scala.inline
+  def isActionAllowed(config: Config): js.Function1[/* type */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isActionAllowed")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* type */ String, Boolean]]
   
-  @JSImport("redux-state-sync", "withReduxStateSync")
-  @js.native
-  def withReduxStateSync(appReducer: Reducer[_, AnyAction]): js.Function2[/* state */ js.Any, /* action */ AnyAction, Reducer[_, AnyAction]] = js.native
-  @JSImport("redux-state-sync", "withReduxStateSync")
-  @js.native
+  @scala.inline
+  def isActionSynced(action: AnyAction): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActionSynced")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def withReduxStateSync(appReducer: Reducer[js.Any, AnyAction]): js.Function2[/* state */ js.Any, /* action */ AnyAction, Reducer[js.Any, AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withReduxStateSync")(appReducer.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* state */ js.Any, /* action */ AnyAction, Reducer[js.Any, AnyAction]]]
+  @scala.inline
   def withReduxStateSync(
-    appReducer: Reducer[_, AnyAction],
-    prepareInitialStateForStore: js.Function1[/* state */ js.Any, _]
-  ): js.Function2[/* state */ js.Any, /* action */ AnyAction, Reducer[_, AnyAction]] = js.native
+    appReducer: Reducer[js.Any, AnyAction],
+    prepareInitialStateForStore: js.Function1[/* state */ js.Any, js.Any]
+  ): js.Function2[/* state */ js.Any, /* action */ AnyAction, Reducer[js.Any, AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withReduxStateSync")(appReducer.asInstanceOf[js.Any], prepareInitialStateForStore.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* state */ js.Any, /* action */ AnyAction, Reducer[js.Any, AnyAction]]]
   
-  @js.native
   trait Config extends StObject {
     
-    var blacklist: js.UndefOr[js.Array[String]] = js.native
+    var blacklist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var broadcastChannelOption: js.UndefOr[BroadcastChannelOptions] = js.native
+    var broadcastChannelOption: js.UndefOr[BroadcastChannelOptions] = js.undefined
     
-    var channel: js.UndefOr[String] = js.native
+    var channel: js.UndefOr[String] = js.undefined
     
-    var predicate: js.UndefOr[js.Function1[/* action */ AnyAction, Boolean | Null]] = js.native
+    var predicate: js.UndefOr[js.Function1[/* action */ AnyAction, Boolean | Null]] = js.undefined
     
-    var prepareState: js.UndefOr[js.Function1[/* state */ js.Any, _]] = js.native
+    var prepareState: js.UndefOr[js.Function1[/* state */ js.Any, js.Any]] = js.undefined
     
-    var whitelist: js.UndefOr[js.Array[String]] = js.native
+    var whitelist: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Config {
     
@@ -109,7 +101,7 @@ object mod {
       def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
       
       @scala.inline
-      def setPrepareState(value: /* state */ js.Any => _): Self = StObject.set(x, "prepareState", js.Any.fromFunction1(value))
+      def setPrepareState(value: /* state */ js.Any => js.Any): Self = StObject.set(x, "prepareState", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPrepareStateUndefined: Self = StObject.set(x, "prepareState", js.undefined)
@@ -136,17 +128,16 @@ object mod {
     def dispatch(action: StampedAction): Unit = js.native
   }
   
-  @js.native
   trait Stamp extends StObject {
     
     @JSName("$isSync")
-    var $isSync: Boolean = js.native
+    var $isSync: Boolean
     
     @JSName("$uuid")
-    var $uuid: String = js.native
+    var $uuid: String
     
     @JSName("$wuid")
-    var $wuid: String = js.native
+    var $wuid: String
   }
   object Stamp {
     
@@ -170,5 +161,17 @@ object mod {
     }
   }
   
-  type StampedAction = Stamp with AnyAction
+  trait StampedAction
+    extends StObject
+       with Stamp
+       with AnyAction
+  object StampedAction {
+    
+    @scala.inline
+    def apply($isSync: Boolean, $uuid: String, $wuid: String, `type`: js.Any): StampedAction = {
+      val __obj = js.Dynamic.literal($isSync = $isSync.asInstanceOf[js.Any], $uuid = $uuid.asInstanceOf[js.Any], $wuid = $wuid.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[StampedAction]
+    }
+  }
 }

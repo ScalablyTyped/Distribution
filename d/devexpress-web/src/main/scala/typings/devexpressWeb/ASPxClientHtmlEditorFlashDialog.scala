@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides client functionality for the Flash dialog within the  ASPxHtmlEditor.
   */
-@js.native
-trait ASPxClientHtmlEditorFlashDialog extends ASPxClientHtmlEditorMediaDialogBase {
+trait ASPxClientHtmlEditorFlashDialog
+  extends StObject
+     with ASPxClientHtmlEditorMediaDialogBase {
   
   /**
     * Provides access to the client object of the "Allow fullscreen" check box in the Html Editor's Flash dialog.
     */
-  def GetAllowFullscreenCheckBox(): ASPxClientCheckBox = js.native
+  def GetAllowFullscreenCheckBox(): ASPxClientCheckBox
   
   /**
     * Provides access to the client object of the "Auto play" check box in the Html Editor's Flash dialog.
     */
-  def GetAutoPlayCheckBox(): ASPxClientCheckBox = js.native
+  def GetAutoPlayCheckBox(): ASPxClientCheckBox
   
   /**
     * Provides access to the client object of the "Enable flash menu" check box in the Html Editor's Flash dialog.
     */
-  def GetEnableFlashMenuCheckBox(): ASPxClientCheckBox = js.native
+  def GetEnableFlashMenuCheckBox(): ASPxClientCheckBox
   
   /**
     * Provides access to the client object of the "Loop" check box in the Html Editor's Flash dialog.
     */
-  def GetLoopCheckBox(): ASPxClientCheckBox = js.native
+  def GetLoopCheckBox(): ASPxClientCheckBox
   
   /**
     * Provides access to the client object of the "Quality" combo box in the Html Editor's Flash dialog.
     */
-  def GetQualityComboBox(): ASPxClientComboBox = js.native
+  def GetQualityComboBox(): ASPxClientComboBox
 }
 object ASPxClientHtmlEditorFlashDialog {
   

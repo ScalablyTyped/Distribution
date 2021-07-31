@@ -2,61 +2,59 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
   /**
     * An array of column values.
     */
-  var arrayValues: js.UndefOr[ArrayValueList] = js.native
+  var arrayValues: js.UndefOr[ArrayValueList] = js.undefined
   
   /**
     * A value for a column of big integer data type.
     */
-  var bigIntValue: js.UndefOr[BoxedLong] = js.native
+  var bigIntValue: js.UndefOr[BoxedLong] = js.undefined
   
   /**
     * A value for a column of BIT data type.
     */
-  var bitValue: js.UndefOr[BoxedBoolean] = js.native
+  var bitValue: js.UndefOr[BoxedBoolean] = js.undefined
   
   /**
     * A value for a column of BLOB data type.
     */
-  var blobValue: js.UndefOr[_Blob] = js.native
+  var blobValue: js.UndefOr[_Blob] = js.undefined
   
   /**
     * A value for a column of double data type.
     */
-  var doubleValue: js.UndefOr[BoxedDouble] = js.native
+  var doubleValue: js.UndefOr[BoxedDouble] = js.undefined
   
   /**
     * A value for a column of integer data type.
     */
-  var intValue: js.UndefOr[BoxedInteger] = js.native
+  var intValue: js.UndefOr[BoxedInteger] = js.undefined
   
   /**
     * A NULL value.
     */
-  var isNull: js.UndefOr[BoxedBoolean] = js.native
+  var isNull: js.UndefOr[BoxedBoolean] = js.undefined
   
   /**
     * A value for a column of real data type.
     */
-  var realValue: js.UndefOr[BoxedFloat] = js.native
+  var realValue: js.UndefOr[BoxedFloat] = js.undefined
   
   /**
     * A value for a column of string data type.
     */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
   
   /**
     * A value for a column of STRUCT data type.
     */
-  var structValue: js.UndefOr[StructValue] = js.native
+  var structValue: js.UndefOr[StructValue] = js.undefined
 }
 object Value {
   

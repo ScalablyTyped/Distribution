@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.UI.Text.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines a range of text inside a text input control. */
-@js.native
 trait CoreTextRange extends StObject {
   
   /** The end position of a range in Application Character Position (ACP) terms. */
-  var endCaretPosition: Double = js.native
+  var endCaretPosition: Double
   
   /** The start position of a range in Application Character Position (ACP) terms. */
-  var startCaretPosition: Double = js.native
+  var startCaretPosition: Double
 }
 object CoreTextRange {
   

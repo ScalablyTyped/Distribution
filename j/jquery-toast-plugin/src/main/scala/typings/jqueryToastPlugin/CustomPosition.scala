@@ -3,19 +3,17 @@ package typings.jqueryToastPlugin
 import typings.jqueryToastPlugin.jqueryToastPluginStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPosition extends StObject {
   
-  var bottom: Double | auto = js.native
+  var bottom: Double | auto
   
-  var left: Double | auto = js.native
+  var left: Double | auto
   
-  var right: Double | auto = js.native
+  var right: Double | auto
   
-  var top: Double | auto = js.native
+  var top: Double | auto
 }
 object CustomPosition {
   

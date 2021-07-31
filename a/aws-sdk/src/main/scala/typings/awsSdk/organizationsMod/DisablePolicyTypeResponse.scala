@@ -2,16 +2,14 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisablePolicyTypeResponse extends StObject {
   
   /**
     * A structure that shows the root with the updated list of enabled policy types.
     */
-  var Root: js.UndefOr[typings.awsSdk.organizationsMod.Root] = js.native
+  var Root: js.UndefOr[typings.awsSdk.organizationsMod.Root] = js.undefined
 }
 object DisablePolicyTypeResponse {
   

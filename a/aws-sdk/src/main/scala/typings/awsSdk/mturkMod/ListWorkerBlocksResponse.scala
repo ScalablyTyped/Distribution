@@ -2,23 +2,21 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListWorkerBlocksResponse extends StObject {
   
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     *  The number of assignments on the page in the filtered results list, equivalent to the number of assignments returned by this call.
     */
-  var NumResults: js.UndefOr[Integer] = js.native
+  var NumResults: js.UndefOr[Integer] = js.undefined
   
   /**
     *  The list of WorkerBlocks, containing the collection of Worker IDs and reasons for blocking.
     */
-  var WorkerBlocks: js.UndefOr[WorkerBlockList] = js.native
+  var WorkerBlocks: js.UndefOr[WorkerBlockList] = js.undefined
 }
 object ListWorkerBlocksResponse {
   

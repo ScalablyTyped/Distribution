@@ -8,10 +8,13 @@ import typings.makerJs.MakerJs.IPathLine
 import typings.makerJs.MakerJs.IPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object point {
+  
+  @JSGlobal("MakerJs.point")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Add two points together and return the result as a new point object.
@@ -21,12 +24,10 @@ object point {
     * @param subtract Optional boolean to subtract instead of add.
     * @returns A new point object.
     */
-  @JSGlobal("MakerJs.point.add")
-  @js.native
-  def add(a: IPoint, b: IPoint): IPoint = js.native
-  @JSGlobal("MakerJs.point.add")
-  @js.native
-  def add(a: IPoint, b: IPoint, subtract: Boolean): IPoint = js.native
+  @scala.inline
+  def add(a: IPoint, b: IPoint): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[IPoint]
+  @scala.inline
+  def add(a: IPoint, b: IPoint, subtract: Boolean): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], subtract.asInstanceOf[js.Any])).asInstanceOf[IPoint]
   
   /**
     * Get the average of two points.
@@ -35,9 +36,8 @@ object point {
     * @param b Second point.
     * @returns New point object which is the average of a and b.
     */
-  @JSGlobal("MakerJs.point.average")
-  @js.native
-  def average(a: IPoint, b: IPoint): IPoint = js.native
+  @scala.inline
+  def average(a: IPoint, b: IPoint): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("average")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[IPoint]
   
   /**
     * Clone a point into a new point.
@@ -45,9 +45,8 @@ object point {
     * @param pointToClone The point to clone.
     * @returns A new point with same values as the original.
     */
-  @JSGlobal("MakerJs.point.clone")
-  @js.native
-  def clone_(pointToClone: IPoint): IPoint = js.native
+  @scala.inline
+  def clone_(pointToClone: IPoint): IPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(pointToClone.asInstanceOf[js.Any]).asInstanceOf[IPoint]
   
   /**
     * From an array of points, find the closest point to a given reference point.
@@ -56,9 +55,8 @@ object point {
     * @param pointOptions Array of points to choose from.
     * @returns The first closest point from the pointOptions.
     */
-  @JSGlobal("MakerJs.point.closest")
-  @js.native
-  def closest(referencePoint: IPoint, pointOptions: js.Array[IPoint]): IPoint = js.native
+  @scala.inline
+  def closest(referencePoint: IPoint, pointOptions: js.Array[IPoint]): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("closest")(referencePoint.asInstanceOf[js.Any], pointOptions.asInstanceOf[js.Any])).asInstanceOf[IPoint]
   
   /**
     * Distort a point's coordinates.
@@ -68,9 +66,8 @@ object point {
     * @param scaleY The amount of y scaling.
     * @returns A new point.
     */
-  @JSGlobal("MakerJs.point.distort")
-  @js.native
-  def distort(pointToDistort: IPoint, scaleX: Double, scaleY: Double): IPoint = js.native
+  @scala.inline
+  def distort(pointToDistort: IPoint, scaleX: Double, scaleY: Double): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("distort")(pointToDistort.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[IPoint]
   
   /**
     * Get a point on a circle or arc path, at a given angle.
@@ -78,9 +75,8 @@ object point {
     * @param circle A circle or arc.
     * @returns A new point object.
     */
-  @JSGlobal("MakerJs.point.fromAngleOnCircle")
-  @js.native
-  def fromAngleOnCircle(angleInDegrees: Double, circle: IPathCircle): IPoint = js.native
+  @scala.inline
+  def fromAngleOnCircle(angleInDegrees: Double, circle: IPathCircle): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAngleOnCircle")(angleInDegrees.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[IPoint]
   
   /**
     * Get the two end points of an arc path.
@@ -88,9 +84,8 @@ object point {
     * @param arc The arc path object.
     * @returns Array with 2 elements: [0] is the point object corresponding to the start angle, [1] is the point object corresponding to the end angle.
     */
-  @JSGlobal("MakerJs.point.fromArc")
-  @js.native
-  def fromArc(arc: IPathArc): js.Array[IPoint] = js.native
+  @scala.inline
+  def fromArc(arc: IPathArc): js.Array[IPoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArc")(arc.asInstanceOf[js.Any]).asInstanceOf[js.Array[IPoint]]
   
   /**
     * Get the two end points of a path.
@@ -98,12 +93,10 @@ object point {
     * @param pathContext The path object.
     * @returns Array with 2 elements: [0] is the point object corresponding to the origin, [1] is the point object corresponding to the end.
     */
-  @JSGlobal("MakerJs.point.fromPathEnds")
-  @js.native
-  def fromPathEnds(pathContext: IPath): js.Array[IPoint] = js.native
-  @JSGlobal("MakerJs.point.fromPathEnds")
-  @js.native
-  def fromPathEnds(pathContext: IPath, pathOffset: IPoint): js.Array[IPoint] = js.native
+  @scala.inline
+  def fromPathEnds(pathContext: IPath): js.Array[IPoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPathEnds")(pathContext.asInstanceOf[js.Any]).asInstanceOf[js.Array[IPoint]]
+  @scala.inline
+  def fromPathEnds(pathContext: IPath, pathOffset: IPoint): js.Array[IPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPathEnds")(pathContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPoint]]
   
   /**
     * Get a point from its polar coordinates.
@@ -112,9 +105,8 @@ object point {
     * @param radius The radius of the polar coordinate.
     * @returns A new point object.
     */
-  @JSGlobal("MakerJs.point.fromPolar")
-  @js.native
-  def fromPolar(angleInRadians: Double, radius: Double): IPoint = js.native
+  @scala.inline
+  def fromPolar(angleInRadians: Double, radius: Double): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPolar")(angleInRadians.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[IPoint]
   
   /**
     * Calculates the intersection of slopes of two lines.
@@ -124,12 +116,10 @@ object point {
     * @param options Optional IPathIntersectionOptions.
     * @returns point of intersection of the two slopes, or null if the slopes did not intersect.
     */
-  @JSGlobal("MakerJs.point.fromSlopeIntersection")
-  @js.native
-  def fromSlopeIntersection(lineA: IPathLine, lineB: IPathLine): IPoint = js.native
-  @JSGlobal("MakerJs.point.fromSlopeIntersection")
-  @js.native
-  def fromSlopeIntersection(lineA: IPathLine, lineB: IPathLine, options: IPathIntersectionBaseOptions): IPoint = js.native
+  @scala.inline
+  def fromSlopeIntersection(lineA: IPathLine, lineB: IPathLine): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSlopeIntersection")(lineA.asInstanceOf[js.Any], lineB.asInstanceOf[js.Any])).asInstanceOf[IPoint]
+  @scala.inline
+  def fromSlopeIntersection(lineA: IPathLine, lineB: IPathLine, options: IPathIntersectionBaseOptions): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSlopeIntersection")(lineA.asInstanceOf[js.Any], lineB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPoint]
   
   /**
     * Get the middle point of a path.
@@ -138,12 +128,10 @@ object point {
     * @param ratio Optional ratio (between 0 and 1) of point along the path. Default is .5 for middle.
     * @returns Point on the path, in the middle of the path.
     */
-  @JSGlobal("MakerJs.point.middle")
-  @js.native
-  def middle(pathContext: IPath): IPoint = js.native
-  @JSGlobal("MakerJs.point.middle")
-  @js.native
-  def middle(pathContext: IPath, ratio: Double): IPoint = js.native
+  @scala.inline
+  def middle(pathContext: IPath): IPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("middle")(pathContext.asInstanceOf[js.Any]).asInstanceOf[IPoint]
+  @scala.inline
+  def middle(pathContext: IPath, ratio: Double): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("middle")(pathContext.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[IPoint]
   
   /**
     * Create a clone of a point, mirrored on either or both x and y axes.
@@ -153,9 +141,8 @@ object point {
     * @param mirrorY Boolean to mirror on the y axis.
     * @returns Mirrored point.
     */
-  @JSGlobal("MakerJs.point.mirror")
-  @js.native
-  def mirror(pointToMirror: IPoint, mirrorX: Boolean, mirrorY: Boolean): IPoint = js.native
+  @scala.inline
+  def mirror(pointToMirror: IPoint, mirrorX: Boolean, mirrorY: Boolean): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("mirror")(pointToMirror.asInstanceOf[js.Any], mirrorX.asInstanceOf[js.Any], mirrorY.asInstanceOf[js.Any])).asInstanceOf[IPoint]
   
   /**
     * Rotate a point.
@@ -165,12 +152,10 @@ object point {
     * @param rotationOrigin The center point of rotation.
     * @returns A new point.
     */
-  @JSGlobal("MakerJs.point.rotate")
-  @js.native
-  def rotate(pointToRotate: IPoint, angleInDegrees: Double): IPoint = js.native
-  @JSGlobal("MakerJs.point.rotate")
-  @js.native
-  def rotate(pointToRotate: IPoint, angleInDegrees: Double, rotationOrigin: IPoint): IPoint = js.native
+  @scala.inline
+  def rotate(pointToRotate: IPoint, angleInDegrees: Double): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(pointToRotate.asInstanceOf[js.Any], angleInDegrees.asInstanceOf[js.Any])).asInstanceOf[IPoint]
+  @scala.inline
+  def rotate(pointToRotate: IPoint, angleInDegrees: Double, rotationOrigin: IPoint): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(pointToRotate.asInstanceOf[js.Any], angleInDegrees.asInstanceOf[js.Any], rotationOrigin.asInstanceOf[js.Any])).asInstanceOf[IPoint]
   
   /**
     * Round the values of a point.
@@ -179,12 +164,10 @@ object point {
     * @param accuracy Optional exemplar number of decimal places.
     * @returns A new point with the values rounded.
     */
-  @JSGlobal("MakerJs.point.rounded")
-  @js.native
-  def rounded(pointContext: IPoint): IPoint = js.native
-  @JSGlobal("MakerJs.point.rounded")
-  @js.native
-  def rounded(pointContext: IPoint, accuracy: Double): IPoint = js.native
+  @scala.inline
+  def rounded(pointContext: IPoint): IPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("rounded")(pointContext.asInstanceOf[js.Any]).asInstanceOf[IPoint]
+  @scala.inline
+  def rounded(pointContext: IPoint, accuracy: Double): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("rounded")(pointContext.asInstanceOf[js.Any], accuracy.asInstanceOf[js.Any])).asInstanceOf[IPoint]
   
   /**
     * Scale a point's coordinates.
@@ -193,9 +176,8 @@ object point {
     * @param scaleValue The amount of scaling.
     * @returns A new point.
     */
-  @JSGlobal("MakerJs.point.scale")
-  @js.native
-  def scale(pointToScale: IPoint, scaleValue: Double): IPoint = js.native
+  @scala.inline
+  def scale(pointToScale: IPoint, scaleValue: Double): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(pointToScale.asInstanceOf[js.Any], scaleValue.asInstanceOf[js.Any])).asInstanceOf[IPoint]
   
   /**
     * Subtract a point from another point, and return the result as a new point. Shortcut to Add(a, b, subtract = true).
@@ -204,9 +186,8 @@ object point {
     * @param b Second point.
     * @returns A new point object.
     */
-  @JSGlobal("MakerJs.point.subtract")
-  @js.native
-  def subtract(a: IPoint, b: IPoint): IPoint = js.native
+  @scala.inline
+  def subtract(a: IPoint, b: IPoint): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[IPoint]
   
   /**
     * A point at 0,0 coordinates.
@@ -214,7 +195,6 @@ object point {
     *
     * @returns A new point.
     */
-  @JSGlobal("MakerJs.point.zero")
-  @js.native
-  def zero(): IPoint = js.native
+  @scala.inline
+  def zero(): IPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")().asInstanceOf[IPoint]
 }

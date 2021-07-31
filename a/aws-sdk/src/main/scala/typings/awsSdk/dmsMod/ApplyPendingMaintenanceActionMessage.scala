@@ -2,26 +2,24 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplyPendingMaintenanceActionMessage extends StObject {
   
   /**
     * The pending maintenance action to apply to this resource.
     */
-  var ApplyAction: String = js.native
+  var ApplyAction: String
   
   /**
     * A value that specifies the type of opt-in request, or undoes an opt-in request. You can't undo an opt-in request of type immediate. Valid values:    immediate - Apply the maintenance action immediately.    next-maintenance - Apply the maintenance action during the next maintenance window for the resource.    undo-opt-in - Cancel any existing next-maintenance opt-in requests.  
     */
-  var OptInType: String = js.native
+  var OptInType: String
   
   /**
     * The Amazon Resource Name (ARN) of the AWS DMS resource that the pending maintenance action applies to.
     */
-  var ReplicationInstanceArn: String = js.native
+  var ReplicationInstanceArn: String
 }
 object ApplyPendingMaintenanceActionMessage {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDimensionRequest extends StObject {
   
   /**
     * A unique identifier for the dimension. Choose something that describes the type and value to make it easy to remember what it does.
     */
-  var name: DimensionName = js.native
+  var name: DimensionName
   
   /**
     * Specifies the value or list of values for the dimension. For TOPIC_FILTER dimensions, this is a pattern used to match the MQTT topic (for example, "admin/#").
     */
-  var stringValues: DimensionStringValues = js.native
+  var stringValues: DimensionStringValues
 }
 object UpdateDimensionRequest {
   

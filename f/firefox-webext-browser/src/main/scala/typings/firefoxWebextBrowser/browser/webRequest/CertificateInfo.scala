@@ -2,29 +2,27 @@ package typings.firefoxWebextBrowser.browser.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the certificate properties of the request if it is a secure request. */
-@js.native
 trait CertificateInfo extends StObject {
   
-  var fingerprint: CertificateInfoFingerprint = js.native
+  var fingerprint: CertificateInfoFingerprint
   
-  var isBuiltInRoot: Boolean = js.native
+  var isBuiltInRoot: Boolean
   
-  var issuer: String = js.native
+  var issuer: String
   
-  var rawDER: js.UndefOr[js.Array[Double]] = js.native
+  var rawDER: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var serialNumber: String = js.native
+  var serialNumber: String
   
-  var subject: String = js.native
+  var subject: String
   
-  var subjectPublicKeyInfoDigest: CertificateInfoSubjectPublicKeyInfoDigest = js.native
+  var subjectPublicKeyInfoDigest: CertificateInfoSubjectPublicKeyInfoDigest
   
   /** Contains start and end timestamps. */
-  var validity: CertificateInfoValidity = js.native
+  var validity: CertificateInfoValidity
 }
 object CertificateInfo {
   

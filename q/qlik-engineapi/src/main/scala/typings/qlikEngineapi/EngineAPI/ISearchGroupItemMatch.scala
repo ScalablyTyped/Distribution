@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SearchGroupItemMatch...
   */
-@js.native
 trait ISearchGroupItemMatch extends StObject {
   
   /**
@@ -22,14 +20,14 @@ trait ISearchGroupItemMatch extends StObject {
     *
     * For dimension values, the returned qProperty will be *.
     */
-  var qAttributes: js.Array[ISearchAttribute] = js.native
+  var qAttributes: js.Array[ISearchAttribute]
   
   /**
     * List of ranges.
     * For example, if the search terms are Price and Make, and the search group item value is Make by Price vs Mileage,
     * then there are two ranges: one for Price and one for Make.
     */
-  var qRanges: js.Array[ISearchCharRange] = js.native
+  var qRanges: js.Array[ISearchCharRange]
   
   /**
     * Search match value.
@@ -37,7 +35,7 @@ trait ISearchGroupItemMatch extends StObject {
     * If the match is found in a field, it corresponds to the value of the field.
     * If the match is found in a generic object property, it corresponds to the property value.
     */
-  var qText: String = js.native
+  var qText: String
 }
 object ISearchGroupItemMatch {
   

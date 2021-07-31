@@ -2,28 +2,27 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // WebSocket
-@js.native
 trait ConnectSocketOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** HTTP Header , header 中不能设置 Referer */
-  var header: js.UndefOr[RequestHeader] = js.native
+  var header: js.UndefOr[RequestHeader] = js.undefined
   
   /** 默认是GET，有效值为： OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * 子协议数组
     * @version 1.4.0
     */
-  var protocols: js.UndefOr[js.Array[String]] = js.native
+  var protocols: js.UndefOr[js.Array[String]] = js.undefined
   
   /** 开发者服务器接口地址，必须是 HTTPS 协议，且域名必须是后台配置的合法域名 */
-  var url: String = js.native
+  var url: String
 }
 object ConnectSocketOptions {
   

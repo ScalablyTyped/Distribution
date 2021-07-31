@@ -2,36 +2,34 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateOptionGroupMessage extends StObject {
   
   /**
     * Specifies the name of the engine that this option group should be associated with.
     */
-  var EngineName: String = js.native
+  var EngineName: String
   
   /**
     * Specifies the major version of the engine that this option group should be associated with.
     */
-  var MajorEngineVersion: String = js.native
+  var MajorEngineVersion: String
   
   /**
     * The description of the option group.
     */
-  var OptionGroupDescription: String = js.native
+  var OptionGroupDescription: String
   
   /**
     * Specifies the name of the option group to be created. Constraints:   Must be 1 to 255 letters, numbers, or hyphens   First character must be a letter   Can't end with a hyphen or contain two consecutive hyphens   Example: myoptiongroup 
     */
-  var OptionGroupName: String = js.native
+  var OptionGroupName: String
   
   /**
     * Tags to assign to the option group.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateOptionGroupMessage {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndOfMeetingReminder extends StObject {
   
   /**
     * Whether an end of meeting reminder is enabled or not.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A range of 3 to 15 minutes that determines when the reminder begins.
     */
-  var ReminderAtMinutes: js.UndefOr[EndOfMeetingReminderMinutesList] = js.native
+  var ReminderAtMinutes: js.UndefOr[EndOfMeetingReminderMinutesList] = js.undefined
   
   /**
     * The type of sound that users hear during the end of meeting reminder. 
     */
-  var ReminderType: js.UndefOr[EndOfMeetingReminderType] = js.native
+  var ReminderType: js.UndefOr[EndOfMeetingReminderType] = js.undefined
 }
 object EndOfMeetingReminder {
   

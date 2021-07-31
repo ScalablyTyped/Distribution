@@ -3,15 +3,13 @@ package typings.winrt.anon
 import typings.winrt.Windows.Data.Xml.Dom.IXmlNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
-  var items: js.Array[IXmlNode] = js.native
+  var items: js.Array[IXmlNode]
   
-  var returnValue: Double = js.native
+  var returnValue: Double
 }
 object `2` {
   

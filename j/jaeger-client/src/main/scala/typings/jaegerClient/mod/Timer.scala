@@ -2,14 +2,12 @@ package typings.jaegerClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timer extends StObject {
   
   // Records the time passed in.
-  def record(value: Double): Unit = js.native
+  def record(value: Double): Unit
 }
 object Timer {
   

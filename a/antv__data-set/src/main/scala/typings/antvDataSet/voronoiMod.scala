@@ -2,21 +2,19 @@ package typings.antvDataSet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object voronoiMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var as: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var as: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var extend: js.UndefOr[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]] = js.native
+    var extend: js.UndefOr[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]] = js.undefined
     
-    var fields: js.Tuple2[String, String] = js.native
+    var fields: js.Tuple2[String, String]
     
-    var size: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var size: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object Options {
     

@@ -2,41 +2,39 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBackupsInput extends StObject {
   
   /**
     * The backups from the table specified by BackupType are listed. Where BackupType can be:    USER - On-demand backup created by you.    SYSTEM - On-demand backup automatically created by DynamoDB.    ALL - All types of on-demand backups (USER and SYSTEM).  
     */
-  var BackupType: js.UndefOr[BackupTypeFilter] = js.native
+  var BackupType: js.UndefOr[BackupTypeFilter] = js.undefined
   
   /**
     *  LastEvaluatedBackupArn is the Amazon Resource Name (ARN) of the backup last evaluated when the current page of results was returned, inclusive of the current page of results. This value may be specified as the ExclusiveStartBackupArn of a new ListBackups operation in order to fetch the next page of results. 
     */
-  var ExclusiveStartBackupArn: js.UndefOr[BackupArn] = js.native
+  var ExclusiveStartBackupArn: js.UndefOr[BackupArn] = js.undefined
   
   /**
     * Maximum number of backups to return at once.
     */
-  var Limit: js.UndefOr[BackupsInputLimit] = js.native
+  var Limit: js.UndefOr[BackupsInputLimit] = js.undefined
   
   /**
     * The backups from the table specified by TableName are listed. 
     */
-  var TableName: js.UndefOr[typings.awsSdk.dynamodbMod.TableName] = js.native
+  var TableName: js.UndefOr[typings.awsSdk.dynamodbMod.TableName] = js.undefined
   
   /**
     * Only backups created after this time are listed. TimeRangeLowerBound is inclusive.
     */
-  var TimeRangeLowerBound: js.UndefOr[typings.awsSdk.dynamodbMod.TimeRangeLowerBound] = js.native
+  var TimeRangeLowerBound: js.UndefOr[typings.awsSdk.dynamodbMod.TimeRangeLowerBound] = js.undefined
   
   /**
     * Only backups created before this time are listed. TimeRangeUpperBound is exclusive. 
     */
-  var TimeRangeUpperBound: js.UndefOr[typings.awsSdk.dynamodbMod.TimeRangeUpperBound] = js.native
+  var TimeRangeUpperBound: js.UndefOr[typings.awsSdk.dynamodbMod.TimeRangeUpperBound] = js.undefined
 }
 object ListBackupsInput {
   

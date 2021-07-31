@@ -14,11 +14,12 @@ import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeSlider extends Widget_ {
+trait TimeSlider
+  extends StObject
+     with Widget_ {
   
   /**
     * When `true`, sets the widget to a disabled state so the user cannot interact with it.
@@ -49,17 +50,17 @@ trait TimeSlider extends Widget_ {
   val iconClass: String = js.native
   
   def labelFormatFunction(value: js.Array[Date]): Unit = js.native
-  def labelFormatFunction(value: js.Array[Date], `type`: js.UndefOr[scala.Nothing], element: HTMLElement): Unit = js.native
-  def labelFormatFunction(value: js.Array[Date], `type`: extent, element: js.UndefOr[scala.Nothing], layout: compact): Unit = js.native
-  def labelFormatFunction(value: js.Array[Date], `type`: extent, element: js.UndefOr[scala.Nothing], layout: wide): Unit = js.native
+  def labelFormatFunction(value: js.Array[Date], `type`: Unit, element: HTMLElement): Unit = js.native
+  def labelFormatFunction(value: js.Array[Date], `type`: extent, element: Unit, layout: compact): Unit = js.native
+  def labelFormatFunction(value: js.Array[Date], `type`: extent, element: Unit, layout: wide): Unit = js.native
   def labelFormatFunction(value: js.Array[Date], `type`: extent, element: HTMLElement, layout: compact): Unit = js.native
   def labelFormatFunction(value: js.Array[Date], `type`: extent, element: HTMLElement, layout: wide): Unit = js.native
-  def labelFormatFunction(value: js.Array[Date], `type`: max, element: js.UndefOr[scala.Nothing], layout: compact): Unit = js.native
-  def labelFormatFunction(value: js.Array[Date], `type`: max, element: js.UndefOr[scala.Nothing], layout: wide): Unit = js.native
+  def labelFormatFunction(value: js.Array[Date], `type`: max, element: Unit, layout: compact): Unit = js.native
+  def labelFormatFunction(value: js.Array[Date], `type`: max, element: Unit, layout: wide): Unit = js.native
   def labelFormatFunction(value: js.Array[Date], `type`: max, element: HTMLElement, layout: compact): Unit = js.native
   def labelFormatFunction(value: js.Array[Date], `type`: max, element: HTMLElement, layout: wide): Unit = js.native
-  def labelFormatFunction(value: js.Array[Date], `type`: min, element: js.UndefOr[scala.Nothing], layout: compact): Unit = js.native
-  def labelFormatFunction(value: js.Array[Date], `type`: min, element: js.UndefOr[scala.Nothing], layout: wide): Unit = js.native
+  def labelFormatFunction(value: js.Array[Date], `type`: min, element: Unit, layout: compact): Unit = js.native
+  def labelFormatFunction(value: js.Array[Date], `type`: min, element: Unit, layout: wide): Unit = js.native
   def labelFormatFunction(value: js.Array[Date], `type`: min, element: HTMLElement, layout: compact): Unit = js.native
   def labelFormatFunction(value: js.Array[Date], `type`: min, element: HTMLElement, layout: wide): Unit = js.native
   /**
@@ -68,17 +69,17 @@ trait TimeSlider extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Date): Unit = js.native
-  def labelFormatFunction(value: Date, `type`: js.UndefOr[scala.Nothing], element: HTMLElement): Unit = js.native
-  def labelFormatFunction(value: Date, `type`: extent, element: js.UndefOr[scala.Nothing], layout: compact): Unit = js.native
-  def labelFormatFunction(value: Date, `type`: extent, element: js.UndefOr[scala.Nothing], layout: wide): Unit = js.native
+  def labelFormatFunction(value: Date, `type`: Unit, element: HTMLElement): Unit = js.native
+  def labelFormatFunction(value: Date, `type`: extent, element: Unit, layout: compact): Unit = js.native
+  def labelFormatFunction(value: Date, `type`: extent, element: Unit, layout: wide): Unit = js.native
   def labelFormatFunction(value: Date, `type`: extent, element: HTMLElement, layout: compact): Unit = js.native
   def labelFormatFunction(value: Date, `type`: extent, element: HTMLElement, layout: wide): Unit = js.native
-  def labelFormatFunction(value: Date, `type`: max, element: js.UndefOr[scala.Nothing], layout: compact): Unit = js.native
-  def labelFormatFunction(value: Date, `type`: max, element: js.UndefOr[scala.Nothing], layout: wide): Unit = js.native
+  def labelFormatFunction(value: Date, `type`: max, element: Unit, layout: compact): Unit = js.native
+  def labelFormatFunction(value: Date, `type`: max, element: Unit, layout: wide): Unit = js.native
   def labelFormatFunction(value: Date, `type`: max, element: HTMLElement, layout: compact): Unit = js.native
   def labelFormatFunction(value: Date, `type`: max, element: HTMLElement, layout: wide): Unit = js.native
-  def labelFormatFunction(value: Date, `type`: min, element: js.UndefOr[scala.Nothing], layout: compact): Unit = js.native
-  def labelFormatFunction(value: Date, `type`: min, element: js.UndefOr[scala.Nothing], layout: wide): Unit = js.native
+  def labelFormatFunction(value: Date, `type`: min, element: Unit, layout: compact): Unit = js.native
+  def labelFormatFunction(value: Date, `type`: min, element: Unit, layout: wide): Unit = js.native
   def labelFormatFunction(value: Date, `type`: min, element: HTMLElement, layout: compact): Unit = js.native
   def labelFormatFunction(value: Date, `type`: min, element: HTMLElement, layout: wide): Unit = js.native
   /**
@@ -89,23 +90,13 @@ trait TimeSlider extends Widget_ {
   @JSName("labelFormatFunction")
   var labelFormatFunction_Original: DateLabelFormatter = js.native
   @JSName("labelFormatFunction")
-  def labelFormatFunction_compact(
-    value: js.Array[Date],
-    `type`: js.UndefOr[scala.Nothing],
-    element: js.UndefOr[scala.Nothing],
-    layout: compact
-  ): Unit = js.native
+  def labelFormatFunction_compact(value: js.Array[Date], `type`: Unit, element: Unit, layout: compact): Unit = js.native
   @JSName("labelFormatFunction")
-  def labelFormatFunction_compact(value: js.Array[Date], `type`: js.UndefOr[scala.Nothing], element: HTMLElement, layout: compact): Unit = js.native
+  def labelFormatFunction_compact(value: js.Array[Date], `type`: Unit, element: HTMLElement, layout: compact): Unit = js.native
   @JSName("labelFormatFunction")
-  def labelFormatFunction_compact(
-    value: Date,
-    `type`: js.UndefOr[scala.Nothing],
-    element: js.UndefOr[scala.Nothing],
-    layout: compact
-  ): Unit = js.native
+  def labelFormatFunction_compact(value: Date, `type`: Unit, element: Unit, layout: compact): Unit = js.native
   @JSName("labelFormatFunction")
-  def labelFormatFunction_compact(value: Date, `type`: js.UndefOr[scala.Nothing], element: HTMLElement, layout: compact): Unit = js.native
+  def labelFormatFunction_compact(value: Date, `type`: Unit, element: HTMLElement, layout: compact): Unit = js.native
   @JSName("labelFormatFunction")
   def labelFormatFunction_extent(value: js.Array[Date], `type`: extent): Unit = js.native
   @JSName("labelFormatFunction")
@@ -131,18 +122,13 @@ trait TimeSlider extends Widget_ {
   @JSName("labelFormatFunction")
   def labelFormatFunction_min(value: Date, `type`: min, element: HTMLElement): Unit = js.native
   @JSName("labelFormatFunction")
-  def labelFormatFunction_wide(
-    value: js.Array[Date],
-    `type`: js.UndefOr[scala.Nothing],
-    element: js.UndefOr[scala.Nothing],
-    layout: wide
-  ): Unit = js.native
+  def labelFormatFunction_wide(value: js.Array[Date], `type`: Unit, element: Unit, layout: wide): Unit = js.native
   @JSName("labelFormatFunction")
-  def labelFormatFunction_wide(value: js.Array[Date], `type`: js.UndefOr[scala.Nothing], element: HTMLElement, layout: wide): Unit = js.native
+  def labelFormatFunction_wide(value: js.Array[Date], `type`: Unit, element: HTMLElement, layout: wide): Unit = js.native
   @JSName("labelFormatFunction")
-  def labelFormatFunction_wide(value: Date, `type`: js.UndefOr[scala.Nothing], element: js.UndefOr[scala.Nothing], layout: wide): Unit = js.native
+  def labelFormatFunction_wide(value: Date, `type`: Unit, element: Unit, layout: wide): Unit = js.native
   @JSName("labelFormatFunction")
-  def labelFormatFunction_wide(value: Date, `type`: js.UndefOr[scala.Nothing], element: HTMLElement, layout: wide): Unit = js.native
+  def labelFormatFunction_wide(value: Date, `type`: Unit, element: HTMLElement, layout: wide): Unit = js.native
   
   /**
     * Determines the layout used by the TimeSlider widget.

@@ -11,43 +11,43 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.query_and_fetch
 import typings.elasticElasticsearch.elasticElasticsearchStrings.query_then_fetch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchTemplate[T] extends Generic {
+trait SearchTemplate[T]
+  extends StObject
+     with Generic {
   
-  var allow_no_indices: js.UndefOr[Boolean] = js.native
+  var allow_no_indices: js.UndefOr[Boolean] = js.undefined
   
-  var body: T = js.native
+  var body: T
   
-  var ccs_minimize_roundtrips: js.UndefOr[Boolean] = js.native
+  var ccs_minimize_roundtrips: js.UndefOr[Boolean] = js.undefined
   
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
   
-  var explain: js.UndefOr[Boolean] = js.native
+  var explain: js.UndefOr[Boolean] = js.undefined
   
-  var ignore_throttled: js.UndefOr[Boolean] = js.native
+  var ignore_throttled: js.UndefOr[Boolean] = js.undefined
   
-  var ignore_unavailable: js.UndefOr[Boolean] = js.native
+  var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
-  var profile: js.UndefOr[Boolean] = js.native
+  var profile: js.UndefOr[Boolean] = js.undefined
   
-  var rest_total_hits_as_int: js.UndefOr[Boolean] = js.native
+  var rest_total_hits_as_int: js.UndefOr[Boolean] = js.undefined
   
-  var routing: js.UndefOr[String | js.Array[String]] = js.native
+  var routing: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var scroll: js.UndefOr[String] = js.native
+  var scroll: js.UndefOr[String] = js.undefined
   
-  var search_type: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.native
+  var search_type: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.undefined
   
-  var `type`: js.UndefOr[String | js.Array[String]] = js.native
+  var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var typed_keys: js.UndefOr[Boolean] = js.native
+  var typed_keys: js.UndefOr[Boolean] = js.undefined
 }
 object SearchTemplate {
   
@@ -58,7 +58,7 @@ object SearchTemplate {
   }
   
   @scala.inline
-  implicit class SearchTemplateMutableBuilder[Self <: SearchTemplate[_], T] (val x: Self with SearchTemplate[T]) extends AnyVal {
+  implicit class SearchTemplateMutableBuilder[Self <: SearchTemplate[?], T] (val x: Self & SearchTemplate[T]) extends AnyVal {
     
     @scala.inline
     def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])

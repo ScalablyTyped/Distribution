@@ -4,7 +4,6 @@ import typings.tizenCommonWeb.tizenMod.ErrorCallback
 import typings.tizenCommonWeb.tizenMod.SuccessCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -259,11 +258,7 @@ trait ApplicationManager extends StObject {
     *
     */
   def kill(contextId: ApplicationContextId): Unit = js.native
-  def kill(
-    contextId: ApplicationContextId,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: ErrorCallback
-  ): Unit = js.native
+  def kill(contextId: ApplicationContextId, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
   def kill(contextId: ApplicationContextId, successCallback: SuccessCallback): Unit = js.native
   def kill(contextId: ApplicationContextId, successCallback: SuccessCallback, errorCallback: ErrorCallback): Unit = js.native
   
@@ -290,7 +285,7 @@ trait ApplicationManager extends StObject {
     *
     */
   def launch(id: ApplicationId): Unit = js.native
-  def launch(id: ApplicationId, successCallback: js.UndefOr[scala.Nothing], errorCallback: ErrorCallback): Unit = js.native
+  def launch(id: ApplicationId, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
   def launch(id: ApplicationId, successCallback: SuccessCallback): Unit = js.native
   def launch(id: ApplicationId, successCallback: SuccessCallback, errorCallback: ErrorCallback): Unit = js.native
   
@@ -339,41 +334,36 @@ trait ApplicationManager extends StObject {
   def launchAppControl(appControl: ApplicationControl): Unit = js.native
   def launchAppControl(
     appControl: ApplicationControl,
-    id: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
+    id: Unit,
+    successCallback: Unit,
+    errorCallback: Unit,
     replyCallback: ApplicationControlDataArrayReplyCallback
   ): Unit = js.native
+  def launchAppControl(appControl: ApplicationControl, id: Unit, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
   def launchAppControl(
     appControl: ApplicationControl,
-    id: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: ErrorCallback
-  ): Unit = js.native
-  def launchAppControl(
-    appControl: ApplicationControl,
-    id: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
+    id: Unit,
+    successCallback: Unit,
     errorCallback: ErrorCallback,
     replyCallback: ApplicationControlDataArrayReplyCallback
   ): Unit = js.native
-  def launchAppControl(appControl: ApplicationControl, id: js.UndefOr[scala.Nothing], successCallback: SuccessCallback): Unit = js.native
+  def launchAppControl(appControl: ApplicationControl, id: Unit, successCallback: SuccessCallback): Unit = js.native
   def launchAppControl(
     appControl: ApplicationControl,
-    id: js.UndefOr[scala.Nothing],
+    id: Unit,
     successCallback: SuccessCallback,
-    errorCallback: js.UndefOr[scala.Nothing],
+    errorCallback: Unit,
     replyCallback: ApplicationControlDataArrayReplyCallback
   ): Unit = js.native
   def launchAppControl(
     appControl: ApplicationControl,
-    id: js.UndefOr[scala.Nothing],
+    id: Unit,
     successCallback: SuccessCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
   def launchAppControl(
     appControl: ApplicationControl,
-    id: js.UndefOr[scala.Nothing],
+    id: Unit,
     successCallback: SuccessCallback,
     errorCallback: ErrorCallback,
     replyCallback: ApplicationControlDataArrayReplyCallback
@@ -382,20 +372,20 @@ trait ApplicationManager extends StObject {
   def launchAppControl(
     appControl: ApplicationControl,
     id: ApplicationId,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
+    successCallback: Unit,
+    errorCallback: Unit,
     replyCallback: ApplicationControlDataArrayReplyCallback
   ): Unit = js.native
   def launchAppControl(
     appControl: ApplicationControl,
     id: ApplicationId,
-    successCallback: js.UndefOr[scala.Nothing],
+    successCallback: Unit,
     errorCallback: ErrorCallback
   ): Unit = js.native
   def launchAppControl(
     appControl: ApplicationControl,
     id: ApplicationId,
-    successCallback: js.UndefOr[scala.Nothing],
+    successCallback: Unit,
     errorCallback: ErrorCallback,
     replyCallback: ApplicationControlDataArrayReplyCallback
   ): Unit = js.native
@@ -404,7 +394,7 @@ trait ApplicationManager extends StObject {
     appControl: ApplicationControl,
     id: ApplicationId,
     successCallback: SuccessCallback,
-    errorCallback: js.UndefOr[scala.Nothing],
+    errorCallback: Unit,
     replyCallback: ApplicationControlDataArrayReplyCallback
   ): Unit = js.native
   def launchAppControl(

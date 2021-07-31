@@ -4,41 +4,39 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InformationNode extends StObject {
   
   /**
     * Fields of the information node
     */
-  var fields: StringDictionary[String] = js.native
+  var fields: StringDictionary[String]
   
   /**
     * Process or person that last modified this node
     */
-  var lastModifiedBy: String = js.native
+  var lastModifiedBy: String
   
   /**
     * Date this node was last modified
     */
-  var lastModifiedDate: Date = js.native
+  var lastModifiedDate: Date
   
   /**
     * Node Id of this information node
     */
-  var nodeId: Double = js.native
+  var nodeId: Double
   
   /**
     * Id of parent node (xml tree)
     */
-  var parentId: Double = js.native
+  var parentId: Double
   
   /**
     * The type of the information node
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object InformationNode {
   

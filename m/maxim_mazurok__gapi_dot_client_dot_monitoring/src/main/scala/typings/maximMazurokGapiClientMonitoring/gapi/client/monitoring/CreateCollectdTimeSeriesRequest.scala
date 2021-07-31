@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCollectdTimeSeriesRequest extends StObject {
   
   /**
     * The collectd payloads representing the time series data. You must not include more than a single point for each time series, so no two payloads can have the same values for all of
     * the fields plugin, plugin_instance, type, and type_instance.
     */
-  var collectdPayloads: js.UndefOr[js.Array[CollectdPayload]] = js.native
+  var collectdPayloads: js.UndefOr[js.Array[CollectdPayload]] = js.undefined
   
   /** The version of collectd that collected the data. Example: "5.3.0-192.el6". */
-  var collectdVersion: js.UndefOr[String] = js.native
+  var collectdVersion: js.UndefOr[String] = js.undefined
   
   /** The monitored resource associated with the time series. */
-  var resource: js.UndefOr[MonitoredResource] = js.native
+  var resource: js.UndefOr[MonitoredResource] = js.undefined
 }
 object CreateCollectdTimeSeriesRequest {
   

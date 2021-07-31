@@ -4,20 +4,20 @@ import typings.std.MethodDecorator
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object partialMod {
   
-  @JSImport("lodash-decorators/partial", JSImport.Default)
+  @JSImport("lodash-decorators/partial", JSImport.Namespace)
   @js.native
-  def default(args: js.Any*): MethodDecorator with PropertyDecorator = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lodash-decorators/partial", "Partial")
-  @js.native
-  def Partial_(partials: js.Any*): PropertyDecorator = js.native
+  @scala.inline
+  def default(args: js.Any*): MethodDecorator & PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator & PropertyDecorator]
   
-  @JSImport("lodash-decorators/partial", "partial")
-  @js.native
-  def partial(partials: js.Any*): PropertyDecorator = js.native
+  @scala.inline
+  def Partial_(partials: js.Any*): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Partial")(partials.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  
+  @scala.inline
+  def partial(partials: js.Any*): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(partials.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
 }

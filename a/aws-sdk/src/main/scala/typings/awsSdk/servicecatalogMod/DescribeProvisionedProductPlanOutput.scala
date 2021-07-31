@@ -2,26 +2,24 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProvisionedProductPlanOutput extends StObject {
   
   /**
     * The page token to use to retrieve the next set of results. If there are no additional results, this value is null.
     */
-  var NextPageToken: js.UndefOr[PageToken] = js.native
+  var NextPageToken: js.UndefOr[PageToken] = js.undefined
   
   /**
     * Information about the plan.
     */
-  var ProvisionedProductPlanDetails: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisionedProductPlanDetails] = js.native
+  var ProvisionedProductPlanDetails: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisionedProductPlanDetails] = js.undefined
   
   /**
     * Information about the resource changes that will occur when the plan is executed.
     */
-  var ResourceChanges: js.UndefOr[typings.awsSdk.servicecatalogMod.ResourceChanges] = js.native
+  var ResourceChanges: js.UndefOr[typings.awsSdk.servicecatalogMod.ResourceChanges] = js.undefined
 }
 object DescribeProvisionedProductPlanOutput {
   

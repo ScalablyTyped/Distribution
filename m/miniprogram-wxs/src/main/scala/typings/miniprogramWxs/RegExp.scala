@@ -2,40 +2,38 @@ package typings.miniprogramWxs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegExp extends StObject {
   
   // Non-standard extensions
-  def compile(): this.type = js.native
+  def compile(): this.type
   
   /**
     * Executes a search on a string using a regular expression pattern, and returns an array containing the results of that search.
     * @param string The String object or string literal on which to perform the search.
     */
-  def exec(string: java.lang.String): RegExpExecArray | Null = js.native
+  def exec(string: java.lang.String): RegExpExecArray | Null
   
   /** Returns a Boolean value indicating the state of the global flag (g) used with a regular expression. Default is false. Read-only. */
-  val global: scala.Boolean = js.native
+  val global: scala.Boolean
   
   /** Returns a Boolean value indicating the state of the ignoreCase flag (i) used with a regular expression. Default is false. Read-only. */
-  val ignoreCase: scala.Boolean = js.native
+  val ignoreCase: scala.Boolean
   
-  var lastIndex: Double = js.native
+  var lastIndex: Double
   
   /** Returns a Boolean value indicating the state of the multiline flag (m) used with a regular expression. Default is false. Read-only. */
-  val multiline: scala.Boolean = js.native
+  val multiline: scala.Boolean
   
   /** Returns a copy of the text of the regular expression pattern. Read-only. The regExp argument is a Regular expression object. It can be a variable name or a literal. */
-  val source: java.lang.String = js.native
+  val source: java.lang.String
   
   /**
     * Returns a Boolean value that indicates whether or not a pattern exists in a searched string.
     * @param string String on which to perform the search.
     */
-  def test(string: java.lang.String): scala.Boolean = js.native
+  def test(string: java.lang.String): scala.Boolean
 }
 object RegExp {
   

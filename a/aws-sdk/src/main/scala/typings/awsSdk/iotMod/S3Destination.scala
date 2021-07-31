@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Destination extends StObject {
   
   /**
     * The S3 bucket that contains the updated firmware.
     */
-  var bucket: js.UndefOr[S3Bucket] = js.native
+  var bucket: js.UndefOr[S3Bucket] = js.undefined
   
   /**
     * The S3 prefix.
     */
-  var prefix: js.UndefOr[Prefix] = js.native
+  var prefix: js.UndefOr[Prefix] = js.undefined
 }
 object S3Destination {
   

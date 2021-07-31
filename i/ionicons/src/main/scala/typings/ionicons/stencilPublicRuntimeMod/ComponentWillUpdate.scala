@@ -2,10 +2,8 @@ package typings.ionicons.stencilPublicRuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentWillUpdate extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ComponentWillUpdate extends StObject {
     *
     * componentWillUpdate is not called on the first render.
     */
-  def componentWillUpdate(): js.Promise[Unit] | Unit = js.native
+  def componentWillUpdate(): js.Promise[Unit] | Unit
 }
 object ComponentWillUpdate {
   

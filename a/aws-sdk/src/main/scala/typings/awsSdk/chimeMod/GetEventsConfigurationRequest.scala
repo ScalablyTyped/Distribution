@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEventsConfigurationRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: NonEmptyString = js.native
+  var AccountId: NonEmptyString
   
   /**
     * The bot ID.
     */
-  var BotId: NonEmptyString = js.native
+  var BotId: NonEmptyString
 }
 object GetEventsConfigurationRequest {
   

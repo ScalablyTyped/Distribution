@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -119,8 +118,8 @@ trait Associations extends StObject {
     * @param options Options for the association
     * @return return type of association
     */
-  def belongsTo(target: Model[_, _, _]): IncludeAssociation = js.native
-  def belongsTo(target: Model[_, _, _], options: AssociationOptionsBelongsTo): IncludeAssociation = js.native
+  def belongsTo(target: Model[js.Any, js.Any, js.Any]): IncludeAssociation = js.native
+  def belongsTo(target: Model[js.Any, js.Any, js.Any], options: AssociationOptionsBelongsTo): IncludeAssociation = js.native
   
   /**
     * Create an N:M association with a join table
@@ -171,7 +170,7 @@ trait Associations extends StObject {
     * @return return type of association
     *
     */
-  def belongsToMany(target: Model[_, _, _], options: AssociationOptionsBelongsToMany): IncludeAssociation = js.native
+  def belongsToMany(target: Model[js.Any, js.Any, js.Any], options: AssociationOptionsBelongsToMany): IncludeAssociation = js.native
   
   /**
     * Create an association that is either 1:m or n:m.
@@ -226,8 +225,8 @@ trait Associations extends StObject {
     * @param options Options for the association
     * @return return type of association
     */
-  def hasMany(target: Model[_, _, _]): IncludeAssociation = js.native
-  def hasMany(target: Model[_, _, _], options: AssociationOptionsHasMany): IncludeAssociation = js.native
+  def hasMany(target: Model[js.Any, js.Any, js.Any]): IncludeAssociation = js.native
+  def hasMany(target: Model[js.Any, js.Any, js.Any], options: AssociationOptionsHasMany): IncludeAssociation = js.native
   
   /**
     * Creates an association between this (the source) and the provided target. The foreign key is added
@@ -239,6 +238,6 @@ trait Associations extends StObject {
     * @param options Options for the association
     * @return return type of association
     */
-  def hasOne(target: Model[_, _, _]): IncludeAssociation = js.native
-  def hasOne(target: Model[_, _, _], options: AssociationOptionsHasOne): IncludeAssociation = js.native
+  def hasOne(target: Model[js.Any, js.Any, js.Any]): IncludeAssociation = js.native
+  def hasOne(target: Model[js.Any, js.Any, js.Any], options: AssociationOptionsHasOne): IncludeAssociation = js.native
 }

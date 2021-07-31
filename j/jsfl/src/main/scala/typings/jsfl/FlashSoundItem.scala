@@ -2,31 +2,29 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashSoundItem extends StObject {
   
-  var bitRate: String = js.native
+  var bitRate: String
   
-  var bits: String = js.native
+  var bits: String
   
-  var compressionType: String = js.native
+  var compressionType: String
   
-  var convertStereoToMono: Boolean = js.native
+  var convertStereoToMono: Boolean
   
-  def exportToFile(fileURI: String): Boolean = js.native
+  def exportToFile(fileURI: String): Boolean
   
-  var fileLastModifiedDate: String = js.native
+  var fileLastModifiedDate: String
   
-  var originalCompressionType: String = js.native
+  var originalCompressionType: String
   
-  var quality: String = js.native
+  var quality: String
   
-  var sampleRate: String = js.native
+  var sampleRate: String
   
-  var sourceFileExists: Boolean = js.native
+  var sourceFileExists: Boolean
 }
 object FlashSoundItem {
   

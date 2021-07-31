@@ -18,53 +18,70 @@ import typings.tabulatorTables.Tabulator._Editor
 import typings.tabulatorTables.Tabulator._Formatter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabulatorTablesStrings {
   
   @js.native
-  sealed trait Equalssign extends FilterType
+  sealed trait Equalssign
+    extends StObject
+       with FilterType
   @scala.inline
   def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
-  sealed trait ExclamationmarkEqualssign extends FilterType
+  sealed trait ExclamationmarkEqualssign
+    extends StObject
+       with FilterType
   @scala.inline
   def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   
   @js.native
-  sealed trait GET extends HttpMethod
+  sealed trait GET
+    extends StObject
+       with HttpMethod
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait Greaterthansign extends FilterType
+  sealed trait Greaterthansign
+    extends StObject
+       with FilterType
   @scala.inline
   def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends FilterType
+  sealed trait GreaterthansignEqualssign
+    extends StObject
+       with FilterType
   @scala.inline
   def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait Lessthansign extends FilterType
+  sealed trait Lessthansign
+    extends StObject
+       with FilterType
   @scala.inline
   def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait LessthansignEqualssign extends FilterType
+  sealed trait LessthansignEqualssign
+    extends StObject
+       with FilterType
   @scala.inline
   def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
-  sealed trait POST extends HttpMethod
+  sealed trait POST
+    extends StObject
+       with HttpMethod
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait active extends RowRangeLookup
+  sealed trait active
+    extends StObject
+       with RowRangeLookup
   @scala.inline
   def active: active = "active".asInstanceOf[active]
   
@@ -74,7 +91,9 @@ object tabulatorTablesStrings {
   def add: add = "add".asInstanceOf[add]
   
   @js.native
-  sealed trait all extends RowRangeLookup
+  sealed trait all
+    extends StObject
+       with RowRangeLookup
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
@@ -94,22 +113,30 @@ object tabulatorTablesStrings {
   def arrow: arrow = "arrow".asInstanceOf[arrow]
   
   @js.native
-  sealed trait asc extends SortDirection
+  sealed trait asc
+    extends StObject
+       with SortDirection
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
-  sealed trait auto extends TextDirection
+  sealed trait auto
+    extends StObject
+       with TextDirection
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait autocomplete extends _Editor
+  sealed trait autocomplete
+    extends StObject
+       with _Editor
   @scala.inline
   def autocomplete: autocomplete = "autocomplete".asInstanceOf[autocomplete]
   
   @js.native
-  sealed trait avg extends _ColumnCalc
+  sealed trait avg
+    extends StObject
+       with _ColumnCalc
   @scala.inline
   def avg: avg = "avg".asInstanceOf[avg]
   
@@ -130,18 +157,23 @@ object tabulatorTablesStrings {
   
   @js.native
   sealed trait bottom
-    extends ScrollToRowPostition
+    extends StObject
+       with ScrollToRowPostition
        with VerticalAlign
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait buttonCross extends _Formatter
+  sealed trait buttonCross
+    extends StObject
+       with _Formatter
   @scala.inline
   def buttonCross: buttonCross = "buttonCross".asInstanceOf[buttonCross]
   
   @js.native
-  sealed trait buttonTick extends _Formatter
+  sealed trait buttonTick
+    extends StObject
+       with _Formatter
   @scala.inline
   def buttonTick: buttonTick = "buttonTick".asInstanceOf[buttonTick]
   
@@ -151,13 +183,16 @@ object tabulatorTablesStrings {
   def cell: cell = "cell".asInstanceOf[cell]
   
   @js.native
-  sealed trait cellEdit extends HistoryAction
+  sealed trait cellEdit
+    extends StObject
+       with HistoryAction
   @scala.inline
   def cellEdit: cellEdit = "cellEdit".asInstanceOf[cellEdit]
   
   @js.native
   sealed trait center
-    extends Align
+    extends StObject
+       with Align
        with ColumnDefinitionAlign
        with ScrollToColumnPosition
        with ScrollToRowPostition
@@ -180,7 +215,9 @@ object tabulatorTablesStrings {
   def collapse: collapse = "collapse".asInstanceOf[collapse]
   
   @js.native
-  sealed trait color extends _Formatter
+  sealed trait color
+    extends StObject
+       with _Formatter
   @scala.inline
   def color: color = "color".asInstanceOf[color]
   
@@ -190,7 +227,9 @@ object tabulatorTablesStrings {
   def columns: columns = "columns".asInstanceOf[columns]
   
   @js.native
-  sealed trait concat extends _ColumnCalc
+  sealed trait concat
+    extends StObject
+       with _ColumnCalc
   @scala.inline
   def concat: concat = "concat".asInstanceOf[concat]
   
@@ -205,12 +244,16 @@ object tabulatorTablesStrings {
   def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait count extends _ColumnCalc
+  sealed trait count
+    extends StObject
+       with _ColumnCalc
   @scala.inline
   def count: count = "count".asInstanceOf[count]
   
   @js.native
-  sealed trait csv extends DownloadType
+  sealed trait csv
+    extends StObject
+       with DownloadType
   @scala.inline
   def csv: csv = "csv".asInstanceOf[csv]
   
@@ -225,12 +268,16 @@ object tabulatorTablesStrings {
   def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait datetime extends _Formatter
+  sealed trait datetime
+    extends StObject
+       with _Formatter
   @scala.inline
   def datetime: datetime = "datetime".asInstanceOf[datetime]
   
   @js.native
-  sealed trait datetimediff extends _Formatter
+  sealed trait datetimediff
+    extends StObject
+       with _Formatter
   @scala.inline
   def datetimediff: datetimediff = "datetimediff".asInstanceOf[datetimediff]
   
@@ -245,7 +292,9 @@ object tabulatorTablesStrings {
   def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait desc extends SortDirection
+  sealed trait desc
+    extends StObject
+       with SortDirection
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   
@@ -265,7 +314,9 @@ object tabulatorTablesStrings {
   def editor: editor = "editor".asInstanceOf[editor]
   
   @js.native
-  sealed trait ends extends FilterType
+  sealed trait ends
+    extends StObject
+       with FilterType
   @scala.inline
   def ends: ends = "ends".asInstanceOf[ends]
   
@@ -315,7 +366,9 @@ object tabulatorTablesStrings {
   def flip: flip = "flip".asInstanceOf[flip]
   
   @js.native
-  sealed trait float extends StandardValidatorType
+  sealed trait float
+    extends StObject
+       with StandardValidatorType
   @scala.inline
   def float: float = "float".asInstanceOf[float]
   
@@ -330,7 +383,9 @@ object tabulatorTablesStrings {
   def group: group = "group".asInstanceOf[group]
   
   @js.native
-  sealed trait handle extends _Formatter
+  sealed trait handle
+    extends StObject
+       with _Formatter
   @scala.inline
   def handle: handle = "handle".asInstanceOf[handle]
   
@@ -361,7 +416,8 @@ object tabulatorTablesStrings {
   
   @js.native
   sealed trait html
-    extends DownloadType
+    extends StObject
+       with DownloadType
        with _Formatter
   @scala.inline
   def html: html = "html".asInstanceOf[html]
@@ -372,17 +428,23 @@ object tabulatorTablesStrings {
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   
   @js.native
-  sealed trait image extends _Formatter
+  sealed trait image
+    extends StObject
+       with _Formatter
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait in extends FilterType
+  sealed trait in
+    extends StObject
+       with FilterType
   @scala.inline
   def in: in = "in".asInstanceOf[in]
   
   @js.native
-  sealed trait input extends _Editor
+  sealed trait input
+    extends StObject
+       with _Editor
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   
@@ -392,17 +454,23 @@ object tabulatorTablesStrings {
   def insert: insert = "insert".asInstanceOf[insert]
   
   @js.native
-  sealed trait integer extends StandardValidatorType
+  sealed trait integer
+    extends StObject
+       with StandardValidatorType
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
-  sealed trait json extends DownloadType
+  sealed trait json
+    extends StObject
+       with DownloadType
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait justify extends Align
+  sealed trait justify
+    extends StObject
+       with Align
   @scala.inline
   def justify: justify = "justify".asInstanceOf[justify]
   
@@ -418,7 +486,8 @@ object tabulatorTablesStrings {
   
   @js.native
   sealed trait left
-    extends Align
+    extends StObject
+       with Align
        with ColumnDefinitionAlign
        with ScrollToColumnPosition
   @scala.inline
@@ -430,12 +499,16 @@ object tabulatorTablesStrings {
   def length: length = "length".asInstanceOf[length]
   
   @js.native
-  sealed trait like extends FilterType
+  sealed trait like
+    extends StObject
+       with FilterType
   @scala.inline
   def like: like = "like".asInstanceOf[like]
   
   @js.native
-  sealed trait link extends _Formatter
+  sealed trait link
+    extends StObject
+       with _Formatter
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   
@@ -450,12 +523,16 @@ object tabulatorTablesStrings {
   def local: local = "local".asInstanceOf[local]
   
   @js.native
-  sealed trait lookup extends _Formatter
+  sealed trait lookup
+    extends StObject
+       with _Formatter
   @scala.inline
   def lookup: lookup = "lookup".asInstanceOf[lookup]
   
   @js.native
-  sealed trait ltr extends TextDirection
+  sealed trait ltr
+    extends StObject
+       with TextDirection
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   
@@ -465,19 +542,24 @@ object tabulatorTablesStrings {
   def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
-  sealed trait max extends _ColumnCalc
+  sealed trait max
+    extends StObject
+       with _ColumnCalc
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   
   @js.native
   sealed trait middle
-    extends ScrollToColumnPosition
+    extends StObject
+       with ScrollToColumnPosition
        with VerticalAlign
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait min extends _ColumnCalc
+  sealed trait min
+    extends StObject
+       with _ColumnCalc
   @scala.inline
   def min: min = "min".asInstanceOf[min]
   
@@ -487,7 +569,9 @@ object tabulatorTablesStrings {
   def minutes: minutes = "minutes".asInstanceOf[minutes]
   
   @js.native
-  sealed trait money extends _Formatter
+  sealed trait money
+    extends StObject
+       with _Formatter
   @scala.inline
   def money: money = "money".asInstanceOf[money]
   
@@ -497,7 +581,9 @@ object tabulatorTablesStrings {
   def months: months = "months".asInstanceOf[months]
   
   @js.native
-  sealed trait nearest extends ScrollToRowPostition
+  sealed trait nearest
+    extends StObject
+       with ScrollToRowPostition
   @scala.inline
   def nearest: nearest = "nearest".asInstanceOf[nearest]
   
@@ -507,12 +593,16 @@ object tabulatorTablesStrings {
   def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait number extends _Editor
+  sealed trait number
+    extends StObject
+       with _Editor
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait numeric extends StandardValidatorType
+  sealed trait numeric
+    extends StObject
+       with StandardValidatorType
   @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
   
@@ -527,7 +617,9 @@ object tabulatorTablesStrings {
   def paste: paste = "paste".asInstanceOf[paste]
   
   @js.native
-  sealed trait pdf extends DownloadType
+  sealed trait pdf
+    extends StObject
+       with DownloadType
   @scala.inline
   def pdf: pdf = "pdf".asInstanceOf[pdf]
   
@@ -537,7 +629,9 @@ object tabulatorTablesStrings {
   def plain: plain = "plain".asInstanceOf[plain]
   
   @js.native
-  sealed trait plaintext extends _Formatter
+  sealed trait plaintext
+    extends StObject
+       with _Formatter
   @scala.inline
   def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
   
@@ -552,17 +646,23 @@ object tabulatorTablesStrings {
   def prev: prev = "prev".asInstanceOf[prev]
   
   @js.native
-  sealed trait progress extends _Formatter
+  sealed trait progress
+    extends StObject
+       with _Formatter
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait range extends _Editor
+  sealed trait range
+    extends StObject
+       with _Editor
   @scala.inline
   def range: range = "range".asInstanceOf[range]
   
   @js.native
-  sealed trait regex extends FilterType
+  sealed trait regex
+    extends StObject
+       with FilterType
   @scala.inline
   def regex: regex = "regex".asInstanceOf[regex]
   
@@ -577,50 +677,67 @@ object tabulatorTablesStrings {
   def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
-  sealed trait required extends StandardValidatorType
+  sealed trait required
+    extends StObject
+       with StandardValidatorType
   @scala.inline
   def required: required = "required".asInstanceOf[required]
   
   @js.native
-  sealed trait responsiveCollapse extends _Formatter
+  sealed trait responsiveCollapse
+    extends StObject
+       with _Formatter
   @scala.inline
   def responsiveCollapse: responsiveCollapse = "responsiveCollapse".asInstanceOf[responsiveCollapse]
   
   @js.native
   sealed trait right
-    extends Align
+    extends StObject
+       with Align
        with ColumnDefinitionAlign
        with ScrollToColumnPosition
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait rowAdd extends HistoryAction
+  sealed trait rowAdd
+    extends StObject
+       with HistoryAction
   @scala.inline
   def rowAdd: rowAdd = "rowAdd".asInstanceOf[rowAdd]
   
   @js.native
-  sealed trait rowDelete extends HistoryAction
+  sealed trait rowDelete
+    extends StObject
+       with HistoryAction
   @scala.inline
   def rowDelete: rowDelete = "rowDelete".asInstanceOf[rowDelete]
   
   @js.native
-  sealed trait rowMoved extends HistoryAction
+  sealed trait rowMoved
+    extends StObject
+       with HistoryAction
   @scala.inline
   def rowMoved: rowMoved = "rowMoved".asInstanceOf[rowMoved]
   
   @js.native
-  sealed trait rowSelection extends _Formatter
+  sealed trait rowSelection
+    extends StObject
+       with _Formatter
   @scala.inline
   def rowSelection: rowSelection = "rowSelection".asInstanceOf[rowSelection]
   
   @js.native
-  sealed trait rownum extends _Formatter
+  sealed trait rownum
+    extends StObject
+       with _Formatter
   @scala.inline
   def rownum: rownum = "rownum".asInstanceOf[rownum]
   
   @js.native
-  sealed trait rtl extends TextDirection
+  sealed trait rtl
+    extends StObject
+       with TextDirection
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   
@@ -635,12 +752,16 @@ object tabulatorTablesStrings {
   def seconds: seconds = "seconds".asInstanceOf[seconds]
   
   @js.native
-  sealed trait select extends _Editor
+  sealed trait select
+    extends StObject
+       with _Editor
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait selected extends RowRangeLookup
+  sealed trait selected
+    extends StObject
+       with RowRangeLookup
   @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
   
@@ -651,23 +772,30 @@ object tabulatorTablesStrings {
   
   @js.native
   sealed trait star
-    extends _Editor
+    extends StObject
+       with _Editor
        with _Formatter
   @scala.inline
   def star: star = "star".asInstanceOf[star]
   
   @js.native
-  sealed trait starts extends FilterType
+  sealed trait starts
+    extends StObject
+       with FilterType
   @scala.inline
   def starts: starts = "starts".asInstanceOf[starts]
   
   @js.native
-  sealed trait string extends StandardValidatorType
+  sealed trait string
+    extends StObject
+       with StandardValidatorType
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait sum extends _ColumnCalc
+  sealed trait sum
+    extends StObject
+       with _ColumnCalc
   @scala.inline
   def sum: sum = "sum".asInstanceOf[sum]
   
@@ -678,14 +806,16 @@ object tabulatorTablesStrings {
   
   @js.native
   sealed trait textarea
-    extends _Editor
+    extends StObject
+       with _Editor
        with _Formatter
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
   sealed trait tickCross
-    extends _Editor
+    extends StObject
+       with _Editor
        with _Formatter
   @scala.inline
   def tickCross: tickCross = "tickCross".asInstanceOf[tickCross]
@@ -697,18 +827,23 @@ object tabulatorTablesStrings {
   
   @js.native
   sealed trait top
-    extends ScrollToRowPostition
+    extends StObject
+       with ScrollToRowPostition
        with VerticalAlign
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait traffic extends _Formatter
+  sealed trait traffic
+    extends StObject
+       with _Formatter
   @scala.inline
   def traffic: traffic = "traffic".asInstanceOf[traffic]
   
   @js.native
-  sealed trait unique extends StandardValidatorType
+  sealed trait unique
+    extends StObject
+       with StandardValidatorType
   @scala.inline
   def unique: unique = "unique".asInstanceOf[unique]
   
@@ -718,7 +853,9 @@ object tabulatorTablesStrings {
   def update: update = "update".asInstanceOf[update]
   
   @js.native
-  sealed trait visible extends RowRangeLookup
+  sealed trait visible
+    extends StObject
+       with RowRangeLookup
   @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
   
@@ -728,7 +865,9 @@ object tabulatorTablesStrings {
   def weeks: weeks = "weeks".asInstanceOf[weeks]
   
   @js.native
-  sealed trait xlsx extends DownloadType
+  sealed trait xlsx
+    extends StObject
+       with DownloadType
   @scala.inline
   def xlsx: xlsx = "xlsx".asInstanceOf[xlsx]
   

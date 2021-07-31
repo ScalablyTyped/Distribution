@@ -5,17 +5,36 @@ import typings.tokenizerToken.mod.IGetToken
 import typings.tokenizerToken.mod.IToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("token-types", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("token-types", "AnsiStringType")
   @js.native
-  class AnsiStringType protected () extends IGetToken[String] {
+  class AnsiStringType protected ()
+    extends StObject
+       with IGetToken[String] {
     def this(len: Double) = this()
     
+    /**
+      * Decode value from buffer at offset
+      * @param buffer - Buffer to read the decoded value from
+      * @param offset - Decode offset
+      * @return Decoded value
+      */
+    /* CompleteClass */
+    override def get(buffer: Buffer, offset: Double): String = js.native
     def get(buf: Buffer): String = js.native
+    
+    /**
+      * Length of encoded token in bytes
+      */
+    /* CompleteClass */
+    var len: Double = js.native
   }
   /* static members */
   object AnsiStringType {
@@ -57,8 +76,25 @@ object mod {
   
   @JSImport("token-types", "BufferType")
   @js.native
-  class BufferType protected () extends IGetToken[Buffer] {
+  class BufferType protected ()
+    extends StObject
+       with IGetToken[Buffer] {
     def this(len: Double) = this()
+    
+    /**
+      * Decode value from buffer at offset
+      * @param buffer - Buffer to read the decoded value from
+      * @param offset - Decode offset
+      * @return Decoded value
+      */
+    /* CompleteClass */
+    override def get(buffer: Buffer, offset: Double): Buffer = js.native
+    
+    /**
+      * Length of encoded token in bytes
+      */
+    /* CompleteClass */
+    var len: Double = js.native
   }
   
   @JSImport("token-types", "Float16_BE")
@@ -131,19 +167,53 @@ object mod {
   
   @JSImport("token-types", "IgnoreType")
   @js.native
-  class IgnoreType protected () extends IGetToken[Unit] {
+  class IgnoreType protected ()
+    extends StObject
+       with IGetToken[Unit] {
     /**
       * @param len number of bytes to ignore
       */
     def this(len: Double) = this()
+    
+    /**
+      * Decode value from buffer at offset
+      * @param buffer - Buffer to read the decoded value from
+      * @param offset - Decode offset
+      * @return Decoded value
+      */
+    /* CompleteClass */
+    override def get(buffer: Buffer, offset: Double): Unit = js.native
+    
+    /**
+      * Length of encoded token in bytes
+      */
+    /* CompleteClass */
+    var len: Double = js.native
   }
   
   @JSImport("token-types", "StringType")
   @js.native
-  class StringType protected () extends IGetToken[String] {
+  class StringType protected ()
+    extends StObject
+       with IGetToken[String] {
     def this(len: Double, encoding: String) = this()
     
     var encoding: String = js.native
+    
+    /**
+      * Decode value from buffer at offset
+      * @param buffer - Buffer to read the decoded value from
+      * @param offset - Decode offset
+      * @return Decoded value
+      */
+    /* CompleteClass */
+    override def get(buffer: Buffer, offset: Double): String = js.native
+    
+    /**
+      * Length of encoded token in bytes
+      */
+    /* CompleteClass */
+    var len: Double = js.native
   }
   
   @JSImport("token-types", "UINT16_BE")
@@ -182,23 +252,18 @@ object mod {
   @js.native
   val UINT8: IToken[Double] = js.native
   
-  @JSImport("token-types", "readIntBE")
-  @js.native
-  def readIntBE(buf: Buffer, offset: Double, byteLength: Double): Double = js.native
+  @scala.inline
+  def readIntBE(buf: Buffer, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readIntBE")(buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("token-types", "readUIntBE")
-  @js.native
-  def readUIntBE(buf: Buffer, offset: Double, byteLength: Double): Double = js.native
+  @scala.inline
+  def readUIntBE(buf: Buffer, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readUIntBE")(buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("token-types", "writeIntBE")
-  @js.native
-  def writeIntBE(buf: Buffer, value: Double, offset: Double, byteLength: Double): Double = js.native
+  @scala.inline
+  def writeIntBE(buf: Buffer, value: Double, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeIntBE")(buf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("token-types", "writeIntLE")
-  @js.native
-  def writeIntLE(buf: Buffer, value: Double, offset: Double, byteLength: Double): Double = js.native
+  @scala.inline
+  def writeIntLE(buf: Buffer, value: Double, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeIntLE")(buf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("token-types", "writeUIntBE")
-  @js.native
-  def writeUIntBE(buf: Buffer, value: Double, offset: Double, byteLength: Double): Double = js.native
+  @scala.inline
+  def writeUIntBE(buf: Buffer, value: Double, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUIntBE")(buf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

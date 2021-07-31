@@ -4,28 +4,26 @@ import typings.antDesignPro.antDesignProStrings.downward
 import typings.antDesignPro.antDesignProStrings.upward
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<bizcharts.bizcharts.Guide.DataMarkerProps> */
-@js.native
 trait ReadonlyDataMarkerProps extends StObject {
   
-  val content: js.UndefOr[String] = js.native
+  val content: js.UndefOr[String] = js.undefined
   
-  val direction: js.UndefOr[upward | downward] = js.native
+  val direction: js.UndefOr[upward | downward] = js.undefined
   
-  val display: js.UndefOr[js.Object] = js.native
+  val display: js.UndefOr[js.Object] = js.undefined
   
-  val lineLength: js.UndefOr[Double] = js.native
+  val lineLength: js.UndefOr[Double] = js.undefined
   
   val position: js.UndefOr[
-    js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-  ] = js.native
+    js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+  ] = js.undefined
   
-  val style: js.UndefOr[js.Object] = js.native
+  val style: js.UndefOr[js.Object] = js.undefined
   
-  val top: js.UndefOr[Boolean] = js.native
+  val top: js.UndefOr[Boolean] = js.undefined
 }
 object ReadonlyDataMarkerProps {
   
@@ -64,11 +62,11 @@ object ReadonlyDataMarkerProps {
     
     @scala.inline
     def setPosition(
-      value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+      value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
+    def setPositionFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
     
     @scala.inline
     def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)

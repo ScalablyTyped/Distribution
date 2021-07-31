@@ -3,29 +3,27 @@ package typings.node.inspectorMod.Debugger
 import typings.node.inspectorMod.Runtime.ScriptId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Location in the source code.
   */
-@js.native
 trait Location extends StObject {
   
   /**
     * Column number in the script (0-based).
     */
-  var columnNumber: js.UndefOr[Double] = js.native
+  var columnNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * Line number in the script (0-based).
     */
-  var lineNumber: Double = js.native
+  var lineNumber: Double
   
   /**
     * Script identifier as reported in the <code>Debugger.scriptParsed</code>.
     */
-  var scriptId: ScriptId = js.native
+  var scriptId: ScriptId
 }
 object Location {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "Schema")
@@ -39,7 +38,7 @@ class Schema[N /* <: String */, M /* <: String */] protected () extends StObject
   /**
     * A map from mark names to mark type objects.
     */
-  var marks: typings.prosemirrorModel.prosemirrorModelStrings.Schema with TopLevel[js.Any] with (StringDictionary[MarkType[Schema[N, M]]]) = js.native
+  var marks: typings.prosemirrorModel.prosemirrorModelStrings.Schema & TopLevel[js.Any] & (StringDictionary[MarkType[Schema[N, M]]]) = js.native
   
   /**
     * Create a node in this schema. The `type` may be a string or a
@@ -48,45 +47,18 @@ class Schema[N /* <: String */, M /* <: String */] protected () extends StObject
     * `null`, a `Node`, or an array of nodes.
     */
   def node(`type`: String): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(
-    `type`: String,
-    attrs: js.UndefOr[scala.Nothing],
-    content: js.UndefOr[scala.Nothing],
-    marks: js.Array[Mark[Schema[N, M]]]
-  ): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(`type`: String, attrs: js.UndefOr[scala.Nothing], content: js.Array[ProsemirrorNode[Schema[N, M]]]): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(
-    `type`: String,
-    attrs: js.UndefOr[scala.Nothing],
-    content: js.Array[ProsemirrorNode[Schema[N, M]]],
-    marks: js.Array[Mark[Schema[N, M]]]
-  ): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(`type`: String, attrs: js.UndefOr[scala.Nothing], content: Fragment[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(
-    `type`: String,
-    attrs: js.UndefOr[scala.Nothing],
-    content: Fragment[Schema[N, M]],
-    marks: js.Array[Mark[Schema[N, M]]]
-  ): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(`type`: String, attrs: js.UndefOr[scala.Nothing], content: ProsemirrorNode[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(
-    `type`: String,
-    attrs: js.UndefOr[scala.Nothing],
-    content: ProsemirrorNode[Schema[N, M]],
-    marks: js.Array[Mark[Schema[N, M]]]
-  ): ProsemirrorNode[Schema[N, M]] = js.native
   def node(`type`: String, attrs: StringDictionary[js.Any]): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(
-    `type`: String,
-    attrs: StringDictionary[js.Any],
-    content: js.UndefOr[scala.Nothing],
-    marks: js.Array[Mark[Schema[N, M]]]
-  ): ProsemirrorNode[Schema[N, M]] = js.native
   def node(`type`: String, attrs: StringDictionary[js.Any], content: js.Array[ProsemirrorNode[Schema[N, M]]]): ProsemirrorNode[Schema[N, M]] = js.native
   def node(
     `type`: String,
     attrs: StringDictionary[js.Any],
     content: js.Array[ProsemirrorNode[Schema[N, M]]],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: String,
+    attrs: StringDictionary[js.Any],
+    content: Unit,
     marks: js.Array[Mark[Schema[N, M]]]
   ): ProsemirrorNode[Schema[N, M]] = js.native
   def node(`type`: String, attrs: StringDictionary[js.Any], content: Fragment[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
@@ -103,58 +75,40 @@ class Schema[N /* <: String */, M /* <: String */] protected () extends StObject
     content: ProsemirrorNode[Schema[N, M]],
     marks: js.Array[Mark[Schema[N, M]]]
   ): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(`type`: NodeType[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(`type`: String, attrs: Unit, content: js.Array[ProsemirrorNode[Schema[N, M]]]): ProsemirrorNode[Schema[N, M]] = js.native
   def node(
-    `type`: NodeType[Schema[N, M]],
-    attrs: js.UndefOr[scala.Nothing],
-    content: js.UndefOr[scala.Nothing],
-    marks: js.Array[Mark[Schema[N, M]]]
-  ): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(
-    `type`: NodeType[Schema[N, M]],
-    attrs: js.UndefOr[scala.Nothing],
-    content: js.Array[ProsemirrorNode[Schema[N, M]]]
-  ): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(
-    `type`: NodeType[Schema[N, M]],
-    attrs: js.UndefOr[scala.Nothing],
+    `type`: String,
+    attrs: Unit,
     content: js.Array[ProsemirrorNode[Schema[N, M]]],
     marks: js.Array[Mark[Schema[N, M]]]
   ): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(`type`: NodeType[Schema[N, M]], attrs: js.UndefOr[scala.Nothing], content: Fragment[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(`type`: String, attrs: Unit, content: Unit, marks: js.Array[Mark[Schema[N, M]]]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(`type`: String, attrs: Unit, content: Fragment[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(`type`: String, attrs: Unit, content: Fragment[Schema[N, M]], marks: js.Array[Mark[Schema[N, M]]]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(`type`: String, attrs: Unit, content: ProsemirrorNode[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
   def node(
-    `type`: NodeType[Schema[N, M]],
-    attrs: js.UndefOr[scala.Nothing],
-    content: Fragment[Schema[N, M]],
-    marks: js.Array[Mark[Schema[N, M]]]
-  ): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(
-    `type`: NodeType[Schema[N, M]],
-    attrs: js.UndefOr[scala.Nothing],
-    content: ProsemirrorNode[Schema[N, M]]
-  ): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(
-    `type`: NodeType[Schema[N, M]],
-    attrs: js.UndefOr[scala.Nothing],
+    `type`: String,
+    attrs: Unit,
     content: ProsemirrorNode[Schema[N, M]],
     marks: js.Array[Mark[Schema[N, M]]]
   ): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(`type`: NodeType[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
   def node(`type`: NodeType[Schema[N, M]], attrs: StringDictionary[js.Any]): ProsemirrorNode[Schema[N, M]] = js.native
   def node(
     `type`: NodeType[Schema[N, M]],
     attrs: StringDictionary[js.Any],
-    content: js.UndefOr[scala.Nothing],
-    marks: js.Array[Mark[Schema[N, M]]]
-  ): ProsemirrorNode[Schema[N, M]] = js.native
-  def node(
-    `type`: NodeType[Schema[N, M]],
-    attrs: StringDictionary[js.Any],
     content: js.Array[ProsemirrorNode[Schema[N, M]]]
   ): ProsemirrorNode[Schema[N, M]] = js.native
   def node(
     `type`: NodeType[Schema[N, M]],
     attrs: StringDictionary[js.Any],
     content: js.Array[ProsemirrorNode[Schema[N, M]]],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: NodeType[Schema[N, M]],
+    attrs: StringDictionary[js.Any],
+    content: Unit,
     marks: js.Array[Mark[Schema[N, M]]]
   ): ProsemirrorNode[Schema[N, M]] = js.native
   def node(`type`: NodeType[Schema[N, M]], attrs: StringDictionary[js.Any], content: Fragment[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
@@ -175,6 +129,28 @@ class Schema[N /* <: String */, M /* <: String */] protected () extends StObject
     content: ProsemirrorNode[Schema[N, M]],
     marks: js.Array[Mark[Schema[N, M]]]
   ): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(`type`: NodeType[Schema[N, M]], attrs: Unit, content: js.Array[ProsemirrorNode[Schema[N, M]]]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: NodeType[Schema[N, M]],
+    attrs: Unit,
+    content: js.Array[ProsemirrorNode[Schema[N, M]]],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(`type`: NodeType[Schema[N, M]], attrs: Unit, content: Unit, marks: js.Array[Mark[Schema[N, M]]]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(`type`: NodeType[Schema[N, M]], attrs: Unit, content: Fragment[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: NodeType[Schema[N, M]],
+    attrs: Unit,
+    content: Fragment[Schema[N, M]],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(`type`: NodeType[Schema[N, M]], attrs: Unit, content: ProsemirrorNode[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: NodeType[Schema[N, M]],
+    attrs: Unit,
+    content: ProsemirrorNode[Schema[N, M]],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
   
   /**
     * Deserialize a node from its JSON representation. This method is
@@ -185,7 +161,7 @@ class Schema[N /* <: String */, M /* <: String */] protected () extends StObject
   /**
     * An object mapping the schema's node names to node type objects.
     */
-  var nodes: typings.prosemirrorModel.prosemirrorModelStrings.Schema with TopLevel[js.Any] with (StringDictionary[NodeType[Schema[N, M]]]) = js.native
+  var nodes: typings.prosemirrorModel.prosemirrorModelStrings.Schema & TopLevel[js.Any] & (StringDictionary[NodeType[Schema[N, M]]]) = js.native
   
   /**
     * The [spec](#model.SchemaSpec) on which the schema is based,

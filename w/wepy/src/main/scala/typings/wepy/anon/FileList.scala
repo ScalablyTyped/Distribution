@@ -2,15 +2,13 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileList extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
   
-  var fileList: js.Array[js.Object] = js.native
+  var fileList: js.Array[js.Object]
 }
 object FileList {
   

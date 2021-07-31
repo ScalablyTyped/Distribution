@@ -2,36 +2,34 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /**
     * Limits the search to segments with given bearing in degrees towards true north in clockwise direction. Null or array with [{value},{range}]
     */
-  var bearings: js.UndefOr[js.Array[Bearing] | Null] = js.native
+  var bearings: js.UndefOr[js.Array[Bearing] | Null] = js.undefined
   
   /**
     * The coordinates this request will use. Array with [{lon},{lat}] values, in decimal degrees.
     */
-  var coordinates: js.UndefOr[js.Array[Coordinate]] = js.native
+  var coordinates: js.UndefOr[js.Array[Coordinate]] = js.undefined
   
   /**
     * Adds a Hint to the response which can be used in subsequent requests, see hints parameter.
     */
-  var generate_hints: js.UndefOr[Boolean] = js.native
+  var generate_hints: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Hint to derive position in street network. Base64 string
     */
-  var hints: js.UndefOr[js.Array[Hint]] = js.native
+  var hints: js.UndefOr[js.Array[Hint]] = js.undefined
   
   /**
     * Limits the search to given radius in meters. null or double >= 0 or unlimited (default)
     */
-  var radiuses: js.UndefOr[js.Array[Radius] | Null] = js.native
+  var radiuses: js.UndefOr[js.Array[Radius] | Null] = js.undefined
 }
 object Options {
   

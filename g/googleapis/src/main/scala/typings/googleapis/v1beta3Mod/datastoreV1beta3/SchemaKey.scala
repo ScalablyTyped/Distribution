@@ -2,7 +2,6 @@ package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * reserved/read-only. A reserved/read-only key is forbidden in certain
   * documented contexts.
   */
-@js.native
 trait SchemaKey extends StObject {
   
   /**
     * Entities are partitioned into subsets, currently identified by a project
     * ID and namespace ID. Queries are scoped to a single partition.
     */
-  var partitionId: js.UndefOr[SchemaPartitionId] = js.native
+  var partitionId: js.UndefOr[SchemaPartitionId] = js.undefined
   
   /**
     * The entity path. An entity path consists of one or more elements composed
@@ -35,7 +33,7 @@ trait SchemaKey extends StObject {
     * identifier.  A path can never be empty, and a path can have at most 100
     * elements.
     */
-  var path: js.UndefOr[js.Array[SchemaPathElement]] = js.native
+  var path: js.UndefOr[js.Array[SchemaPathElement]] = js.undefined
 }
 object SchemaKey {
   

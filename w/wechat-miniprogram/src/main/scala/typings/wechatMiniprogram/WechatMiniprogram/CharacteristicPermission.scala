@@ -2,24 +2,22 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 特征值权限 */
-@js.native
 trait CharacteristicPermission extends StObject {
   
   /** 加密读请求 */
-  var readEncryptionRequired: js.UndefOr[Boolean] = js.native
+  var readEncryptionRequired: js.UndefOr[Boolean] = js.undefined
   
   /** 可读 */
-  var readable: js.UndefOr[Boolean] = js.native
+  var readable: js.UndefOr[Boolean] = js.undefined
   
   /** 加密写请求 */
-  var writeEncryptionRequired: js.UndefOr[Boolean] = js.native
+  var writeEncryptionRequired: js.UndefOr[Boolean] = js.undefined
   
   /** 可写 */
-  var writeable: js.UndefOr[Boolean] = js.native
+  var writeable: js.UndefOr[Boolean] = js.undefined
 }
 object CharacteristicPermission {
   

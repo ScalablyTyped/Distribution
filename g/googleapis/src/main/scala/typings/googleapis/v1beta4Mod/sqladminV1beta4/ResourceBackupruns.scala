@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sqladmin/v1beta4", "sqladmin_v1beta4.Resource$Backupruns")
@@ -32,7 +31,7 @@ class ResourceBackupruns protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceBackuprunsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceBackuprunsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -63,7 +62,7 @@ class ResourceBackupruns protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaBackupRun] = js.native
   def get(callback: BodyResponseCallback[SchemaBackupRun]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBackupRun] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBackupRun] = js.native
   def get(params: ParamsResourceBackuprunsGet): GaxiosPromise[SchemaBackupRun] = js.native
   def get(params: ParamsResourceBackuprunsGet, callback: BodyResponseCallback[SchemaBackupRun]): Unit = js.native
   def get(
@@ -95,7 +94,7 @@ class ResourceBackupruns protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceBackuprunsInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceBackuprunsInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -129,7 +128,7 @@ class ResourceBackupruns protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaBackupRunsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaBackupRunsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBackupRunsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBackupRunsListResponse] = js.native
   def list(params: ParamsResourceBackuprunsList): GaxiosPromise[SchemaBackupRunsListResponse] = js.native
   def list(params: ParamsResourceBackuprunsList, callback: BodyResponseCallback[SchemaBackupRunsListResponse]): Unit = js.native
   def list(

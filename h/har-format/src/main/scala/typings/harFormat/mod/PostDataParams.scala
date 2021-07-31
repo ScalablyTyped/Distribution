@@ -2,21 +2,19 @@ package typings.harFormat.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostDataParams extends StObject {
   
   /**
     * List of posted parameters (in case of URL encoded parameters).
     */
-  var params: js.Array[Param] = js.native
+  var params: js.Array[Param]
   
   /**
     * _`params` and `text` fields are mutually exclusive._
     */
-  var text: js.UndefOr[scala.Nothing] = js.native
+  var text: js.UndefOr[scala.Nothing] = js.undefined
 }
 object PostDataParams {
   

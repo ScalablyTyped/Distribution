@@ -2,7 +2,6 @@ package typings.nodeZendesk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JobStatuses {
@@ -11,26 +10,27 @@ object JobStatuses {
   trait Methods extends StObject {
     
     def show(jobStatusId: ZendeskID): js.Promise[ResponsePayload] = js.native
-    def show(jobStatusId: ZendeskID, cb: ZendeskCallback[_, _]): ResponsePayload = js.native
+    def show(jobStatusId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): ResponsePayload = js.native
     
-    def watch(jobStatusId: ZendeskID, interval: Double, maxAttempts: Double): js.Promise[_] = js.native
-    def watch(jobStatusId: ZendeskID, interval: Double, maxAttempts: Double, cb: ZendeskCallback[_, _]): js.Any = js.native
+    def watch(jobStatusId: ZendeskID, interval: Double, maxAttempts: Double): js.Promise[js.Any] = js.native
+    def watch(jobStatusId: ZendeskID, interval: Double, maxAttempts: Double, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
   }
   
-  @js.native
-  trait ResponseModel extends PersistableModel {
+  trait ResponseModel
+    extends StObject
+       with PersistableModel {
     
-    val message: js.UndefOr[String | Null] = js.native
+    val message: js.UndefOr[String | Null] = js.undefined
     
-    val progress: js.UndefOr[Double] = js.native
+    val progress: js.UndefOr[Double] = js.undefined
     
-    val results: js.UndefOr[js.Array[Result]] = js.native
+    val results: js.UndefOr[js.Array[Result]] = js.undefined
     
-    val status: js.UndefOr[Status] = js.native
+    val status: js.UndefOr[Status] = js.undefined
     
-    val total: js.UndefOr[Double] = js.native
+    val total: js.UndefOr[Double] = js.undefined
     
-    val url: js.UndefOr[String | Null] = js.native
+    val url: js.UndefOr[String | Null] = js.undefined
   }
   object ResponseModel {
     
@@ -90,10 +90,9 @@ object JobStatuses {
     }
   }
   
-  @js.native
   trait ResponsePayload extends StObject {
     
-    val job_status: ResponseModel = js.native
+    val job_status: ResponseModel
   }
   object ResponsePayload {
     
@@ -111,14 +110,15 @@ object JobStatuses {
     }
   }
   
-  @js.native
-  trait Result extends PersistableModel {
+  trait Result
+    extends StObject
+       with PersistableModel {
     
-    val action: String = js.native
+    val action: String
     
-    val status: String = js.native
+    val status: String
     
-    val success: Boolean = js.native
+    val success: Boolean
   }
   object Result {
     

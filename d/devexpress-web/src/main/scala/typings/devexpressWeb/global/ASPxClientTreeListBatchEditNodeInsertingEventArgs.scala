@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientTreeListBatchEditNodeInsertingEventArgs")
 @js.native
 class ASPxClientTreeListBatchEditNodeInsertingEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientTreeListBatchEditNodeInsertingEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientTreeListBatchEditNodeInsertingEventArgs {
   /**
     * Initializes a new instance of the ASPxClientTreeListBatchEditNodeInsertingEventArgs class.
     * @param nodeKey A String value that identifies the processed node.
     * @param parentNodeKey A String value that identifies the processed node's parent node.
     */
   def this(nodeKey: String, parentNodeKey: String) = this()
+  
+  /**
+    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    */
+  /* CompleteClass */
+  var cancel: Boolean = js.native
+  
+  /**
+    * Gets the processed node's key value.
+    */
+  /* CompleteClass */
+  var nodeKey: String = js.native
+  
+  /**
+    * Gets the parent node key.
+    */
+  /* CompleteClass */
+  var parentNodeKey: String = js.native
 }

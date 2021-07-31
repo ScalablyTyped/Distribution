@@ -2,15 +2,13 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimpleTask extends StObject {
   
-  def gen(): Unit = js.native
+  def gen(): Unit
   
-  var name: String = js.native
+  var name: String
 }
 object SimpleTask {
   

@@ -3,7 +3,6 @@ package typings.officeUiFabricReact.mod
 import typings.uifabricUtilities.fabricPerformanceMod.IPerfSummary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "FabricPerformance")
@@ -29,17 +28,14 @@ object FabricPerformance {
     * @param name - The name of this measurement
     * @param func - The logic to be measured for execution time
     */
-  @JSImport("office-ui-fabric-react", "FabricPerformance.measure")
-  @js.native
-  def measure(name: String, func: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def measure(name: String, func: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measure")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("office-ui-fabric-react", "FabricPerformance.reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
-  @JSImport("office-ui-fabric-react", "FabricPerformance.setPeriodicReset")
-  @js.native
-  def setPeriodicReset(): Unit = js.native
+  @scala.inline
+  def setPeriodicReset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPeriodicReset")().asInstanceOf[Unit]
   
   @JSImport("office-ui-fabric-react", "FabricPerformance.summary")
   @js.native

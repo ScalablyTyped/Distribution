@@ -2,16 +2,14 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartDataSourceSyncJobResponse extends StObject {
   
   /**
     * Identifies a particular synchronization job.
     */
-  var ExecutionId: js.UndefOr[String] = js.native
+  var ExecutionId: js.UndefOr[String] = js.undefined
 }
 object StartDataSourceSyncJobResponse {
   

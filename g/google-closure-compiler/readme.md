@@ -9,9 +9,9 @@ Check, compile, optimize and compress Javascript with Closure-Compiler
 | ------------------ | :-------------: |
 | Full name          | google-closure-compiler |
 | Keywords           | javascript, compiler, optimizer, minifier, closure, gulpplugin, gruntplugin |
-| # releases         | 632 |
-| # dependents       | 57 |
-| # downloads        | 4362963 |
+| # releases         | 669 |
+| # dependents       | 61 |
+| # downloads        | 5088205 |
 | # stars            | 31 |
 
 ## Links

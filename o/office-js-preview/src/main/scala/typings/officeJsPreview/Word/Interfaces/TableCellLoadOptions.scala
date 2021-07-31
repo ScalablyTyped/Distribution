@@ -2,7 +2,6 @@ package typings.officeJsPreview.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: WordApi 1.3]
   */
-@js.native
 trait TableCellLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait TableCellLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var body: js.UndefOr[BodyLoadOptions] = js.native
+  var body: js.UndefOr[BodyLoadOptions] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait TableCellLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var cellIndex: js.UndefOr[Boolean] = js.native
+  var cellIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait TableCellLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var columnWidth: js.UndefOr[Boolean] = js.native
+  var columnWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait TableCellLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var horizontalAlignment: js.UndefOr[Boolean] = js.native
+  var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait TableCellLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentRow: js.UndefOr[TableRowLoadOptions] = js.native
+  var parentRow: js.UndefOr[TableRowLoadOptions] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait TableCellLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentTable: js.UndefOr[TableLoadOptions] = js.native
+  var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait TableCellLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var rowIndex: js.UndefOr[Boolean] = js.native
+  var rowIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait TableCellLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var shadingColor: js.UndefOr[Boolean] = js.native
+  var shadingColor: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait TableCellLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var value: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait TableCellLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var verticalAlignment: js.UndefOr[Boolean] = js.native
+  var verticalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -106,7 +104,7 @@ trait TableCellLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var width: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Boolean] = js.undefined
 }
 object TableCellLoadOptions {
   

@@ -2,7 +2,6 @@ package typings.microsoftAjax.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The EventArgs class is a base class and not intended to be used directly. Override this constructor to provide specific functionality.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb383795(v=vs.100).aspx}
   */
-@js.native
 trait EventArgs extends StObject {
   
   /**
     * An object of type EventArgs that is used as a convenient way to specify an empty EventArgs instance.
     */
-  var Empty: EventArgs = js.native
+  var Empty: EventArgs
 }
 object EventArgs {
   

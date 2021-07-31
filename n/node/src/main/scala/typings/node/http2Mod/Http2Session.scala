@@ -14,7 +14,6 @@ import typings.node.tlsMod.TLSSocket
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -59,7 +58,7 @@ trait Http2Session extends EventEmitter {
   val connecting: Boolean = js.native
   
   def destroy(): Unit = js.native
-  def destroy(error: js.UndefOr[scala.Nothing], code: Double): Unit = js.native
+  def destroy(error: Unit, code: Double): Unit = js.native
   def destroy(error: Error): Unit = js.native
   def destroy(error: Error, code: Double): Unit = js.native
   
@@ -85,17 +84,13 @@ trait Http2Session extends EventEmitter {
   val encrypted: js.UndefOr[Boolean] = js.native
   
   def goaway(): Unit = js.native
-  def goaway(
-    code: js.UndefOr[scala.Nothing],
-    lastStreamID: js.UndefOr[scala.Nothing],
-    opaqueData: ArrayBufferView
-  ): Unit = js.native
-  def goaway(code: js.UndefOr[scala.Nothing], lastStreamID: Double): Unit = js.native
-  def goaway(code: js.UndefOr[scala.Nothing], lastStreamID: Double, opaqueData: ArrayBufferView): Unit = js.native
   def goaway(code: Double): Unit = js.native
-  def goaway(code: Double, lastStreamID: js.UndefOr[scala.Nothing], opaqueData: ArrayBufferView): Unit = js.native
   def goaway(code: Double, lastStreamID: Double): Unit = js.native
   def goaway(code: Double, lastStreamID: Double, opaqueData: ArrayBufferView): Unit = js.native
+  def goaway(code: Double, lastStreamID: Unit, opaqueData: ArrayBufferView): Unit = js.native
+  def goaway(code: Unit, lastStreamID: Double): Unit = js.native
+  def goaway(code: Unit, lastStreamID: Double, opaqueData: ArrayBufferView): Unit = js.native
+  def goaway(code: Unit, lastStreamID: Unit, opaqueData: ArrayBufferView): Unit = js.native
   
   val localSettings: Settings = js.native
   

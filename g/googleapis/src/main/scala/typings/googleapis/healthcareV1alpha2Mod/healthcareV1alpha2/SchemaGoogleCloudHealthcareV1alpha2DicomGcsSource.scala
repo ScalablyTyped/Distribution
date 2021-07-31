@@ -2,13 +2,11 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the configuration for importing data from Cloud Storage.
   */
-@js.native
 trait SchemaGoogleCloudHealthcareV1alpha2DicomGcsSource extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait SchemaGoogleCloudHealthcareV1alpha2DicomGcsSource extends StObject {
     * match 1 character All other URI formats are invalid. Files matching the
     * wildcard are expected to contain content only, no metadata.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudHealthcareV1alpha2DicomGcsSource {
   

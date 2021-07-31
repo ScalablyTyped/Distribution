@@ -3,15 +3,13 @@ package typings.envCi.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var cwd: js.UndefOr[String] = js.native
+  var cwd: js.UndefOr[String] = js.undefined
   
-  var env: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var env: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object Options {
   

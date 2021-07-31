@@ -2,15 +2,13 @@ package typings.gestalt.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PulsarProps extends StObject {
   
-  var paused: js.UndefOr[Boolean] = js.native
+  var paused: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object PulsarProps {
   

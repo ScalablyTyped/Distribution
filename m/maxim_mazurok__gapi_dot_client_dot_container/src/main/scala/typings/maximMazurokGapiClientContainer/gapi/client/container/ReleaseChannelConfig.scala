@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseChannelConfig extends StObject {
   
   /** The release channel this configuration applies to. */
-  var channel: js.UndefOr[String] = js.native
+  var channel: js.UndefOr[String] = js.undefined
   
   /** The default version for newly created clusters on the channel. */
-  var defaultVersion: js.UndefOr[String] = js.native
+  var defaultVersion: js.UndefOr[String] = js.undefined
   
   /** List of valid versions for the channel. */
-  var validVersions: js.UndefOr[js.Array[String]] = js.native
+  var validVersions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ReleaseChannelConfig {
   

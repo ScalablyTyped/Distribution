@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CropHintsParams extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait CropHintsParams extends StObject {
     * 1.33333. If not specified, the best possible crop is returned. The number of provided aspect ratios is limited to a maximum of 16; any aspect ratios provided after the 16th are
     * ignored.
     */
-  var aspectRatios: js.UndefOr[js.Array[Double]] = js.native
+  var aspectRatios: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object CropHintsParams {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteClusterSnapshotsRequest extends StObject {
   
   /**
     * A list of identifiers for the snapshots that you want to delete.
     */
-  var Identifiers: DeleteClusterSnapshotMessageList = js.native
+  var Identifiers: DeleteClusterSnapshotMessageList
 }
 object BatchDeleteClusterSnapshotsRequest {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePullRequestApprovalStateInput extends StObject {
   
   /**
     * The approval state to associate with the user on the pull request.
     */
-  var approvalState: ApprovalState = js.native
+  var approvalState: ApprovalState
   
   /**
     * The system-generated ID of the pull request.
     */
-  var pullRequestId: PullRequestId = js.native
+  var pullRequestId: PullRequestId
   
   /**
     * The system-generated ID of the revision.
     */
-  var revisionId: RevisionId = js.native
+  var revisionId: RevisionId
 }
 object UpdatePullRequestApprovalStateInput {
   

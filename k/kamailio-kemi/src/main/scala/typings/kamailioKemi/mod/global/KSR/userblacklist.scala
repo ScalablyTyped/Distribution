@@ -2,32 +2,29 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userblacklist {
   
-  @JSGlobal("KSR.userblacklist.check_user_blacklist")
+  @JSGlobal("KSR.userblacklist")
   @js.native
-  def checkUserBlacklist(suser: String, sdomain: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.userblacklist.check_user_blacklist_number")
-  @js.native
-  def checkUserBlacklistNumber(suser: String, sdomain: String, snumber: String): Double = js.native
+  @scala.inline
+  def checkUserBlacklist(suser: String, sdomain: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("check_user_blacklist")(suser.asInstanceOf[js.Any], sdomain.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.userblacklist.check_user_blacklist_table")
-  @js.native
-  def checkUserBlacklistTable(suser: String, sdomain: String, snumber: String, stable: String): Double = js.native
+  @scala.inline
+  def checkUserBlacklistNumber(suser: String, sdomain: String, snumber: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("check_user_blacklist_number")(suser.asInstanceOf[js.Any], sdomain.asInstanceOf[js.Any], snumber.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.userblacklist.check_user_whitelist")
-  @js.native
-  def checkUserWhitelist(suser: String, sdomain: String): Double = js.native
+  @scala.inline
+  def checkUserBlacklistTable(suser: String, sdomain: String, snumber: String, stable: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("check_user_blacklist_table")(suser.asInstanceOf[js.Any], sdomain.asInstanceOf[js.Any], snumber.asInstanceOf[js.Any], stable.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.userblacklist.check_user_whitelist_number")
-  @js.native
-  def checkUserWhitelistNumber(suser: String, sdomain: String, snumber: String): Double = js.native
+  @scala.inline
+  def checkUserWhitelist(suser: String, sdomain: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("check_user_whitelist")(suser.asInstanceOf[js.Any], sdomain.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.userblacklist.check_user_whitelist_table")
-  @js.native
-  def checkUserWhitelistTable(suser: String, sdomain: String, snumber: String, stable: String): Double = js.native
+  @scala.inline
+  def checkUserWhitelistNumber(suser: String, sdomain: String, snumber: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("check_user_whitelist_number")(suser.asInstanceOf[js.Any], sdomain.asInstanceOf[js.Any], snumber.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def checkUserWhitelistTable(suser: String, sdomain: String, snumber: String, stable: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("check_user_whitelist_table")(suser.asInstanceOf[js.Any], sdomain.asInstanceOf[js.Any], snumber.asInstanceOf[js.Any], stable.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

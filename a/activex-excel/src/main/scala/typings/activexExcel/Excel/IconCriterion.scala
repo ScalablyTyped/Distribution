@@ -2,24 +2,22 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconCriterion extends StObject {
   
   @JSName("Excel.IconCriterion_typekey")
-  var ExcelDotIconCriterion_typekey: IconCriterion = js.native
+  var ExcelDotIconCriterion_typekey: IconCriterion
   
-  var Icon: XlIcon = js.native
+  var Icon: XlIcon
   
-  val Index: Double = js.native
+  val Index: Double
   
-  var Operator: Double = js.native
+  var Operator: Double
   
-  var Type: XlConditionValueTypes = js.native
+  var Type: XlConditionValueTypes
   
-  var Value: Double | String = js.native
+  var Value: Double | String
 }
 object IconCriterion {
   

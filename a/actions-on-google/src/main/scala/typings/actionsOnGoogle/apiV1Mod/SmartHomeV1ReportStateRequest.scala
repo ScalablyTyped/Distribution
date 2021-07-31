@@ -3,17 +3,15 @@ package typings.actionsOnGoogle.apiV1Mod
 import typings.actionsOnGoogle.anon.Devices
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartHomeV1ReportStateRequest extends StObject {
   
-  var agentUserId: String = js.native
+  var agentUserId: String
   
-  var payload: Devices = js.native
+  var payload: Devices
   
-  var requestId: String = js.native
+  var requestId: String
 }
 object SmartHomeV1ReportStateRequest {
   

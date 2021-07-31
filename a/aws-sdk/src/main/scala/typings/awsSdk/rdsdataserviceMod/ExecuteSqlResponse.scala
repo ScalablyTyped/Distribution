@@ -2,16 +2,14 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecuteSqlResponse extends StObject {
   
   /**
     * The results of the SQL statement or statements.
     */
-  var sqlStatementResults: js.UndefOr[SqlStatementResults] = js.native
+  var sqlStatementResults: js.UndefOr[SqlStatementResults] = js.undefined
 }
 object ExecuteSqlResponse {
   

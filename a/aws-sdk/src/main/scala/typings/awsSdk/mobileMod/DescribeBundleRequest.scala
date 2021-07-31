@@ -2,16 +2,14 @@ package typings.awsSdk.mobileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBundleRequest extends StObject {
   
   /**
     *  Unique bundle identifier. 
     */
-  var bundleId: BundleId = js.native
+  var bundleId: BundleId
 }
 object DescribeBundleRequest {
   

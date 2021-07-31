@@ -5,7 +5,6 @@ import typings.vegaLite.transformMod.DensityTransform
 import typings.vegaTypings.transformMod.KDETransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object densityMod {

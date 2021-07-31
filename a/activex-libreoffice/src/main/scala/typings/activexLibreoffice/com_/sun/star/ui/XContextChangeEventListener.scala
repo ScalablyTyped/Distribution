@@ -5,13 +5,13 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XContextChangeEventListener extends XEventListener {
+trait XContextChangeEventListener
+  extends StObject
+     with XEventListener {
   
-  def notifyContextChangeEvent(event: ContextChangeEventObject): Unit = js.native
+  def notifyContextChangeEvent(event: ContextChangeEventObject): Unit
 }
 object XContextChangeEventListener {
   

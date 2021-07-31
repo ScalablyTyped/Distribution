@@ -4,35 +4,33 @@ import typings.std.HTMLElement
 import typings.webix.webix.EventHash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait vscrollConfig extends StObject {
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var scroll: js.UndefOr[String] = js.native
+  var scroll: js.UndefOr[String] = js.undefined
   
-  var scrollHeight: js.UndefOr[Double] = js.native
+  var scrollHeight: js.UndefOr[Double] = js.undefined
   
-  var scrollPos: js.UndefOr[Double] = js.native
+  var scrollPos: js.UndefOr[Double] = js.undefined
   
-  var scrollSize: js.UndefOr[Double] = js.native
+  var scrollSize: js.UndefOr[Double] = js.undefined
   
-  var scrollStep: js.UndefOr[Double] = js.native
+  var scrollStep: js.UndefOr[Double] = js.undefined
   
-  var scrollVisible: js.UndefOr[Boolean] = js.native
+  var scrollVisible: js.UndefOr[Boolean] = js.undefined
   
-  var scrollWidth: js.UndefOr[Double] = js.native
+  var scrollWidth: js.UndefOr[Double] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object vscrollConfig {
   

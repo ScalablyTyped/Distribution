@@ -2,15 +2,15 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChangeToken extends ClientValueObject {
+trait ChangeToken
+  extends StObject
+     with ClientValueObject {
   
-  def get_stringValue(): String = js.native
+  def get_stringValue(): String
   
-  def set_stringValue(value: String): Unit = js.native
+  def set_stringValue(value: String): Unit
 }
 object ChangeToken {
   

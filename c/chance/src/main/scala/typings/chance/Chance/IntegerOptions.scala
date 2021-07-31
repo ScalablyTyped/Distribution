@@ -2,15 +2,13 @@ package typings.chance.Chance
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntegerOptions extends StObject {
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
 }
 object IntegerOptions {
   

@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gives access to the VCL window implementation.
   * @deprecated Deprecated
   */
-@js.native
-trait XVclWindowPeer extends XWindowPeer {
+trait XVclWindowPeer
+  extends StObject
+     with XWindowPeer {
   
   /** enables clipping of sibling windows. */
-  def enableClipSiblings(bClip: Boolean): Unit = js.native
+  def enableClipSiblings(bClip: Boolean): Unit
   
   /** returns the value of the property with the specified name. */
-  def getProperty(PropertyName: String): js.Any = js.native
+  def getProperty(PropertyName: String): js.Any
   
   /** returns the font, foreground and background color for the specified type. */
   def getStyles(
@@ -27,25 +27,25 @@ trait XVclWindowPeer extends XWindowPeer {
     Font: js.Array[FontDescriptor],
     ForegroundColor: js.Array[Color],
     BackgroundColor: js.Array[Color]
-  ): Unit = js.native
+  ): Unit
   
   /** returns `TRUE` if the window peer is a child, `FALSE` otherwise. */
-  def isChild(Peer: XWindowPeer): Boolean = js.native
+  def isChild(Peer: XWindowPeer): Boolean
   
   /** returns `TRUE` if the window peer is in design mode, `FALSE` otherwise. */
-  def isDesignMode(): Boolean = js.native
+  def isDesignMode(): Boolean
   
   /** sets the control font. */
-  def setControlFont(aFont: FontDescriptor): Unit = js.native
+  def setControlFont(aFont: FontDescriptor): Unit
   
   /** sets the design mode for use in a design editor. */
-  def setDesignMode(bOn: Boolean): Unit = js.native
+  def setDesignMode(bOn: Boolean): Unit
   
   /** sets the foreground color. */
-  def setForeground(Color: Color): Unit = js.native
+  def setForeground(Color: Color): Unit
   
   /** sets the value of the property with the specified name. */
-  def setProperty(PropertyName: String, Value: js.Any): Unit = js.native
+  def setProperty(PropertyName: String, Value: js.Any): Unit
 }
 object XVclWindowPeer {
   

@@ -3,31 +3,31 @@ package typings.azdata.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProfilerProvider extends DataProvider {
+trait ProfilerProvider
+  extends StObject
+     with DataProvider {
   
-  def connectSession(sessionId: String): Thenable[Boolean] = js.native
+  def connectSession(sessionId: String): Thenable[Boolean]
   
-  def createSession(sessionId: String, sessionName: String, template: ProfilerSessionTemplate): Thenable[Boolean] = js.native
+  def createSession(sessionId: String, sessionName: String, template: ProfilerSessionTemplate): Thenable[Boolean]
   
-  def disconnectSession(sessionId: String): Thenable[Boolean] = js.native
+  def disconnectSession(sessionId: String): Thenable[Boolean]
   
-  def getXEventSessions(sessionId: String): Thenable[js.Array[String]] = js.native
+  def getXEventSessions(sessionId: String): Thenable[js.Array[String]]
   
-  def pauseSession(sessionId: String): Thenable[Boolean] = js.native
+  def pauseSession(sessionId: String): Thenable[Boolean]
   
-  def registerOnProfilerSessionCreated(handler: js.Function1[/* response */ ProfilerSessionCreatedParams, _]): Unit = js.native
+  def registerOnProfilerSessionCreated(handler: js.Function1[/* response */ ProfilerSessionCreatedParams, js.Any]): Unit
   
-  def registerOnSessionEventsAvailable(handler: js.Function1[/* response */ ProfilerSessionEvents, _]): Unit = js.native
+  def registerOnSessionEventsAvailable(handler: js.Function1[/* response */ ProfilerSessionEvents, js.Any]): Unit
   
-  def registerOnSessionStopped(handler: js.Function1[/* response */ ProfilerSessionStoppedParams, _]): Unit = js.native
+  def registerOnSessionStopped(handler: js.Function1[/* response */ ProfilerSessionStoppedParams, js.Any]): Unit
   
-  def startSession(sessionId: String, sessionName: String): Thenable[Boolean] = js.native
+  def startSession(sessionId: String, sessionName: String): Thenable[Boolean]
   
-  def stopSession(sessionId: String): Thenable[Boolean] = js.native
+  def stopSession(sessionId: String): Thenable[Boolean]
 }
 object ProfilerProvider {
   
@@ -39,9 +39,9 @@ object ProfilerProvider {
     getXEventSessions: String => Thenable[js.Array[String]],
     pauseSession: String => Thenable[Boolean],
     providerId: String,
-    registerOnProfilerSessionCreated: js.Function1[/* response */ ProfilerSessionCreatedParams, _] => Unit,
-    registerOnSessionEventsAvailable: js.Function1[/* response */ ProfilerSessionEvents, _] => Unit,
-    registerOnSessionStopped: js.Function1[/* response */ ProfilerSessionStoppedParams, _] => Unit,
+    registerOnProfilerSessionCreated: js.Function1[/* response */ ProfilerSessionCreatedParams, js.Any] => Unit,
+    registerOnSessionEventsAvailable: js.Function1[/* response */ ProfilerSessionEvents, js.Any] => Unit,
+    registerOnSessionStopped: js.Function1[/* response */ ProfilerSessionStoppedParams, js.Any] => Unit,
     startSession: (String, String) => Thenable[Boolean],
     stopSession: String => Thenable[Boolean]
   ): ProfilerProvider = {
@@ -68,13 +68,13 @@ object ProfilerProvider {
     def setPauseSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "pauseSession", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterOnProfilerSessionCreated(value: js.Function1[/* response */ ProfilerSessionCreatedParams, _] => Unit): Self = StObject.set(x, "registerOnProfilerSessionCreated", js.Any.fromFunction1(value))
+    def setRegisterOnProfilerSessionCreated(value: js.Function1[/* response */ ProfilerSessionCreatedParams, js.Any] => Unit): Self = StObject.set(x, "registerOnProfilerSessionCreated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterOnSessionEventsAvailable(value: js.Function1[/* response */ ProfilerSessionEvents, _] => Unit): Self = StObject.set(x, "registerOnSessionEventsAvailable", js.Any.fromFunction1(value))
+    def setRegisterOnSessionEventsAvailable(value: js.Function1[/* response */ ProfilerSessionEvents, js.Any] => Unit): Self = StObject.set(x, "registerOnSessionEventsAvailable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterOnSessionStopped(value: js.Function1[/* response */ ProfilerSessionStoppedParams, _] => Unit): Self = StObject.set(x, "registerOnSessionStopped", js.Any.fromFunction1(value))
+    def setRegisterOnSessionStopped(value: js.Function1[/* response */ ProfilerSessionStoppedParams, js.Any] => Unit): Self = StObject.set(x, "registerOnSessionStopped", js.Any.fromFunction1(value))
     
     @scala.inline
     def setStartSession(value: (String, String) => Thenable[Boolean]): Self = StObject.set(x, "startSession", js.Any.fromFunction2(value))

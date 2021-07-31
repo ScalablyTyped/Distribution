@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionTargetHttpsProxiesSetSslCertificatesRequest extends StObject {
   
   /** New set of SslCertificate resources to associate with this TargetHttpsProxy resource. Currently exactly one SslCertificate resource must be specified. */
-  var sslCertificates: js.UndefOr[js.Array[String]] = js.native
+  var sslCertificates: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RegionTargetHttpsProxiesSetSslCertificatesRequest {
   

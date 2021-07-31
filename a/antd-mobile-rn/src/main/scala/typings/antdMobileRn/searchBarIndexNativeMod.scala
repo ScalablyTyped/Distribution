@@ -12,7 +12,6 @@ import typings.reactNative.mod.TextInput
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchBarIndexNativeMod {
@@ -62,17 +61,18 @@ object searchBarIndexNativeMod {
     def onSubmit(_underscore: NativeEvent): Unit = js.native
   }
   
-  @js.native
-  trait SearchBarNativeProps extends SearchBarPropsType {
+  trait SearchBarNativeProps
+    extends StObject
+       with SearchBarPropsType {
     
-    var onChangeText: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.native
+    var onChangeText: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
     
-    var onSubmitEditing: js.UndefOr[js.Function1[/* event */ NativeEvent, Unit]] = js.native
+    var onSubmitEditing: js.UndefOr[js.Function1[/* event */ NativeEvent, Unit]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     @JSName("styles")
-    var styles_SearchBarNativeProps: ISearchBarStyle = js.native
+    var styles_SearchBarNativeProps: ISearchBarStyle
   }
   object SearchBarNativeProps {
     

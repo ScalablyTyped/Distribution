@@ -2,7 +2,6 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -121,41 +120,21 @@ trait NightwatchCommonAssertions extends StObject {
   def equal(value: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
   
   def fail(): NightwatchAPI = js.native
-  def fail(
-    actual: js.UndefOr[scala.Nothing],
-    expected: js.UndefOr[scala.Nothing],
-    message: js.UndefOr[scala.Nothing],
-    operator: String
-  ): NightwatchAPI = js.native
-  def fail(actual: js.UndefOr[scala.Nothing], expected: js.UndefOr[scala.Nothing], message: String): NightwatchAPI = js.native
-  def fail(
-    actual: js.UndefOr[scala.Nothing],
-    expected: js.UndefOr[scala.Nothing],
-    message: String,
-    operator: String
-  ): NightwatchAPI = js.native
-  def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any): NightwatchAPI = js.native
-  def fail(
-    actual: js.UndefOr[scala.Nothing],
-    expected: js.Any,
-    message: js.UndefOr[scala.Nothing],
-    operator: String
-  ): NightwatchAPI = js.native
-  def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any, message: String): NightwatchAPI = js.native
-  def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any, message: String, operator: String): NightwatchAPI = js.native
   def fail(actual: js.Any): NightwatchAPI = js.native
-  def fail(
-    actual: js.Any,
-    expected: js.UndefOr[scala.Nothing],
-    message: js.UndefOr[scala.Nothing],
-    operator: String
-  ): NightwatchAPI = js.native
-  def fail(actual: js.Any, expected: js.UndefOr[scala.Nothing], message: String): NightwatchAPI = js.native
-  def fail(actual: js.Any, expected: js.UndefOr[scala.Nothing], message: String, operator: String): NightwatchAPI = js.native
   def fail(actual: js.Any, expected: js.Any): NightwatchAPI = js.native
-  def fail(actual: js.Any, expected: js.Any, message: js.UndefOr[scala.Nothing], operator: String): NightwatchAPI = js.native
   def fail(actual: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
   def fail(actual: js.Any, expected: js.Any, message: String, operator: String): NightwatchAPI = js.native
+  def fail(actual: js.Any, expected: js.Any, message: Unit, operator: String): NightwatchAPI = js.native
+  def fail(actual: js.Any, expected: Unit, message: String): NightwatchAPI = js.native
+  def fail(actual: js.Any, expected: Unit, message: String, operator: String): NightwatchAPI = js.native
+  def fail(actual: js.Any, expected: Unit, message: Unit, operator: String): NightwatchAPI = js.native
+  def fail(actual: Unit, expected: js.Any): NightwatchAPI = js.native
+  def fail(actual: Unit, expected: js.Any, message: String): NightwatchAPI = js.native
+  def fail(actual: Unit, expected: js.Any, message: String, operator: String): NightwatchAPI = js.native
+  def fail(actual: Unit, expected: js.Any, message: Unit, operator: String): NightwatchAPI = js.native
+  def fail(actual: Unit, expected: Unit, message: String): NightwatchAPI = js.native
+  def fail(actual: Unit, expected: Unit, message: String, operator: String): NightwatchAPI = js.native
+  def fail(actual: Unit, expected: Unit, message: Unit, operator: String): NightwatchAPI = js.native
   
   /**
     * Checks if the given element is not visible on the page.

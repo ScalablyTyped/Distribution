@@ -2,15 +2,13 @@ package typings.remarkable.libMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParserBlock extends StObject {
   
-  def parse(str: String, options: Options, env: Env, tokens: js.Array[Token]): Unit = js.native
+  def parse(str: String, options: Options, env: Env, tokens: js.Array[Token]): Unit
   
-  def tokenize(state: StateBlock, startLine: Double, endLine: Double): Unit = js.native
+  def tokenize(state: StateBlock, startLine: Double, endLine: Double): Unit
 }
 object ParserBlock {
   

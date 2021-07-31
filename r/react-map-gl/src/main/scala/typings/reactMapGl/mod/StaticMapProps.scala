@@ -4,23 +4,23 @@ import typings.reactMapGl.anon.Height
 import typings.reactMapGl.anon.MaxPitch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StaticMapProps extends MapboxProps {
+trait StaticMapProps
+  extends StObject
+     with MapboxProps {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var disableTokenWarning: js.UndefOr[Boolean] = js.native
+  var disableTokenWarning: js.UndefOr[Boolean] = js.undefined
   
-  var onResize: js.UndefOr[js.Function1[/* dimensions */ Height, Unit]] = js.native
+  var onResize: js.UndefOr[js.Function1[/* dimensions */ Height, Unit]] = js.undefined
   
-  var preventStyleDiffing: js.UndefOr[Boolean] = js.native
+  var preventStyleDiffing: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[js.Object] = js.native
+  var style: js.UndefOr[js.Object] = js.undefined
   
-  var visibilityConstraints: js.UndefOr[MaxPitch] = js.native
+  var visibilityConstraints: js.UndefOr[MaxPitch] = js.undefined
 }
 object StaticMapProps {
   

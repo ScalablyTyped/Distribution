@@ -2,36 +2,34 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListOrganizationPortfolioAccessInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * The organization node type that will be returned in the output.    ORGANIZATION - Organization that has access to the portfolio.     ORGANIZATIONAL_UNIT - Organizational unit that has access to the portfolio within your organization.    ACCOUNT - Account that has access to the portfolio within your organization.  
     */
-  var OrganizationNodeType: typings.awsSdk.servicecatalogMod.OrganizationNodeType = js.native
+  var OrganizationNodeType: typings.awsSdk.servicecatalogMod.OrganizationNodeType
   
   /**
     * The maximum number of items to return with this call.
     */
-  var PageSize: js.UndefOr[typings.awsSdk.servicecatalogMod.PageSize] = js.native
+  var PageSize: js.UndefOr[typings.awsSdk.servicecatalogMod.PageSize] = js.undefined
   
   /**
     * The page token for the next set of results. To retrieve the first set of results, use null.
     */
-  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.native
+  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.undefined
   
   /**
     * The portfolio identifier. For example, port-2abcdext3y5fk.
     */
-  var PortfolioId: Id = js.native
+  var PortfolioId: Id
 }
 object ListOrganizationPortfolioAccessInput {
   

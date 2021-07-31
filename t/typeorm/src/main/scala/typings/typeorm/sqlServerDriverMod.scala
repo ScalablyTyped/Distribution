@@ -12,14 +12,15 @@ import typings.typeorm.sqlServerConnectionOptionsMod.SqlServerConnectionOptions
 import typings.typeorm.tableColumnMod.TableColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqlServerDriverMod {
   
   @JSImport("typeorm/browser/driver/sqlserver/SqlServerDriver", "SqlServerDriver")
   @js.native
-  class SqlServerDriver protected () extends Driver {
+  class SqlServerDriver protected ()
+    extends StObject
+       with Driver {
     def this(connection: Connection) = this()
     
     def buildTableVariableDeclaration(identifier: String, columns: js.Array[ColumnMetadata]): String = js.native
@@ -42,7 +43,7 @@ object sqlServerDriverMod {
     /**
       * Creates a new connection pool for a given database credentials.
       */
-    /* protected */ def createPool(options: SqlServerConnectionOptions, credentials: SqlServerConnectionCredentialsOptions): js.Promise[_] = js.native
+    /* protected */ def createPool(options: SqlServerConnectionOptions, credentials: SqlServerConnectionCredentialsOptions): js.Promise[js.Any] = js.native
     
     def getColumnLength(column: TableColumn): String = js.native
     
@@ -97,6 +98,6 @@ object sqlServerDriverMod {
       * Pool for slave databases.
       * Used in replication.
       */
-    var slaves: js.Array[_] = js.native
+    var slaves: js.Array[js.Any] = js.native
   }
 }

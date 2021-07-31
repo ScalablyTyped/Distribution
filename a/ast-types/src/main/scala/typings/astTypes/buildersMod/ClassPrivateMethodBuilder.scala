@@ -11,7 +11,6 @@ import typings.astTypes.kindsMod.PrivateNameKind
 import typings.astTypes.namedTypesMod.namedTypes.ClassPrivateMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,23 +21,23 @@ trait ClassPrivateMethodBuilder extends StObject {
     key: PrivateNameKind,
     params: js.Array[PatternKind],
     body: BlockStatementKind,
-    kind: js.UndefOr[scala.Nothing],
-    computed: js.UndefOr[scala.Nothing],
-    staticParam: Boolean
-  ): ClassPrivateMethod = js.native
-  def apply(
-    key: PrivateNameKind,
-    params: js.Array[PatternKind],
-    body: BlockStatementKind,
-    kind: js.UndefOr[scala.Nothing],
+    kind: Unit,
     computed: Boolean
   ): ClassPrivateMethod = js.native
   def apply(
     key: PrivateNameKind,
     params: js.Array[PatternKind],
     body: BlockStatementKind,
-    kind: js.UndefOr[scala.Nothing],
+    kind: Unit,
     computed: Boolean,
+    staticParam: Boolean
+  ): ClassPrivateMethod = js.native
+  def apply(
+    key: PrivateNameKind,
+    params: js.Array[PatternKind],
+    body: BlockStatementKind,
+    kind: Unit,
+    computed: Unit,
     staticParam: Boolean
   ): ClassPrivateMethod = js.native
   def apply(key: PrivateNameKind, params: js.Array[PatternKind], body: BlockStatementKind, kind: constructor): ClassPrivateMethod = js.native
@@ -47,14 +46,6 @@ trait ClassPrivateMethodBuilder extends StObject {
     params: js.Array[PatternKind],
     body: BlockStatementKind,
     kind: constructor,
-    computed: js.UndefOr[scala.Nothing],
-    staticParam: Boolean
-  ): ClassPrivateMethod = js.native
-  def apply(
-    key: PrivateNameKind,
-    params: js.Array[PatternKind],
-    body: BlockStatementKind,
-    kind: constructor,
     computed: Boolean
   ): ClassPrivateMethod = js.native
   def apply(
@@ -63,6 +54,14 @@ trait ClassPrivateMethodBuilder extends StObject {
     body: BlockStatementKind,
     kind: constructor,
     computed: Boolean,
+    staticParam: Boolean
+  ): ClassPrivateMethod = js.native
+  def apply(
+    key: PrivateNameKind,
+    params: js.Array[PatternKind],
+    body: BlockStatementKind,
+    kind: constructor,
+    computed: Unit,
     staticParam: Boolean
   ): ClassPrivateMethod = js.native
   def apply(key: PrivateNameKind, params: js.Array[PatternKind], body: BlockStatementKind, kind: get): ClassPrivateMethod = js.native
@@ -71,14 +70,6 @@ trait ClassPrivateMethodBuilder extends StObject {
     params: js.Array[PatternKind],
     body: BlockStatementKind,
     kind: get,
-    computed: js.UndefOr[scala.Nothing],
-    staticParam: Boolean
-  ): ClassPrivateMethod = js.native
-  def apply(
-    key: PrivateNameKind,
-    params: js.Array[PatternKind],
-    body: BlockStatementKind,
-    kind: get,
     computed: Boolean
   ): ClassPrivateMethod = js.native
   def apply(
@@ -87,6 +78,14 @@ trait ClassPrivateMethodBuilder extends StObject {
     body: BlockStatementKind,
     kind: get,
     computed: Boolean,
+    staticParam: Boolean
+  ): ClassPrivateMethod = js.native
+  def apply(
+    key: PrivateNameKind,
+    params: js.Array[PatternKind],
+    body: BlockStatementKind,
+    kind: get,
+    computed: Unit,
     staticParam: Boolean
   ): ClassPrivateMethod = js.native
   def apply(key: PrivateNameKind, params: js.Array[PatternKind], body: BlockStatementKind, kind: method): ClassPrivateMethod = js.native
@@ -95,14 +94,6 @@ trait ClassPrivateMethodBuilder extends StObject {
     params: js.Array[PatternKind],
     body: BlockStatementKind,
     kind: method,
-    computed: js.UndefOr[scala.Nothing],
-    staticParam: Boolean
-  ): ClassPrivateMethod = js.native
-  def apply(
-    key: PrivateNameKind,
-    params: js.Array[PatternKind],
-    body: BlockStatementKind,
-    kind: method,
     computed: Boolean
   ): ClassPrivateMethod = js.native
   def apply(
@@ -111,6 +102,14 @@ trait ClassPrivateMethodBuilder extends StObject {
     body: BlockStatementKind,
     kind: method,
     computed: Boolean,
+    staticParam: Boolean
+  ): ClassPrivateMethod = js.native
+  def apply(
+    key: PrivateNameKind,
+    params: js.Array[PatternKind],
+    body: BlockStatementKind,
+    kind: method,
+    computed: Unit,
     staticParam: Boolean
   ): ClassPrivateMethod = js.native
   def apply(key: PrivateNameKind, params: js.Array[PatternKind], body: BlockStatementKind, kind: set): ClassPrivateMethod = js.native
@@ -119,14 +118,6 @@ trait ClassPrivateMethodBuilder extends StObject {
     params: js.Array[PatternKind],
     body: BlockStatementKind,
     kind: set,
-    computed: js.UndefOr[scala.Nothing],
-    staticParam: Boolean
-  ): ClassPrivateMethod = js.native
-  def apply(
-    key: PrivateNameKind,
-    params: js.Array[PatternKind],
-    body: BlockStatementKind,
-    kind: set,
     computed: Boolean
   ): ClassPrivateMethod = js.native
   def apply(
@@ -135,6 +126,14 @@ trait ClassPrivateMethodBuilder extends StObject {
     body: BlockStatementKind,
     kind: set,
     computed: Boolean,
+    staticParam: Boolean
+  ): ClassPrivateMethod = js.native
+  def apply(
+    key: PrivateNameKind,
+    params: js.Array[PatternKind],
+    body: BlockStatementKind,
+    kind: set,
+    computed: Unit,
     staticParam: Boolean
   ): ClassPrivateMethod = js.native
   

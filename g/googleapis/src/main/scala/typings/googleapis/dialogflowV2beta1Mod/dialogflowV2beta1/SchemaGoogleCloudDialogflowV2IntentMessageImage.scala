@@ -2,25 +2,23 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The image response message.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2IntentMessageImage extends StObject {
   
   /**
     * Optional. A text description of the image to be used for accessibility,
     * e.g., screen readers.
     */
-  var accessibilityText: js.UndefOr[String] = js.native
+  var accessibilityText: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The public URI to an image file.
     */
-  var imageUri: js.UndefOr[String] = js.native
+  var imageUri: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2IntentMessageImage {
   

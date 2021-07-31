@@ -2,17 +2,15 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RulesBucketConstructionState extends StObject {
   
-  def GetInsertionIndex(maskPosition: RulesPosition): Double = js.native
+  def GetInsertionIndex(maskPosition: RulesPosition): Double
   
-  def IncreaseInsertionIndex(maskPosition: RulesPosition): Unit = js.native
+  def IncreaseInsertionIndex(maskPosition: RulesPosition): Unit
   
-  var rulesInsertionIndexBitmap: js.Any = js.native
+  var rulesInsertionIndexBitmap: js.Any
 }
 object RulesBucketConstructionState {
   

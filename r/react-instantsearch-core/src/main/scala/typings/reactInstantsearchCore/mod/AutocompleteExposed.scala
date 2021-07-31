@@ -2,13 +2,11 @@ package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutocompleteExposed extends StObject {
   
-  var defaultRefinement: js.UndefOr[String] = js.native
+  var defaultRefinement: js.UndefOr[String] = js.undefined
 }
 object AutocompleteExposed {
   

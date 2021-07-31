@@ -3,44 +3,42 @@ package typings.hapi.mod
 import typings.hapi.anon.IsOriginMatch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestInfo extends StObject {
   
   /** the request preferred encoding. */
-  var acceptEncoding: String = js.native
+  var acceptEncoding: String
   
   /** request processing completion timestamp (0 is still processing). */
-  var completed: Double = js.native
+  var completed: Double
   
   /** if CORS is enabled for the route, contains the following: */
-  var cors: IsOriginMatch = js.native
+  var cors: IsOriginMatch
   
   /** content of the HTTP 'Host' header (e.g. 'example.com:8080'). */
-  var host: String = js.native
+  var host: String
   
   /** the hostname part of the 'Host' header (e.g. 'example.com'). */
-  var hostname: String = js.native
+  var hostname: String
   
   /** a unique request identifier (using the format '{now}:{connection.info.id}:{5 digits counter}') */
-  var id: String = js.native
+  var id: String
   
   /** request reception timestamp. */
-  var received: Double = js.native
+  var received: Double
   
   /** content of the HTTP 'Referrer' (or 'Referer') header. */
-  var referrer: String = js.native
+  var referrer: String
   
   /** remote client IP address. */
-  var remoteAddress: String = js.native
+  var remoteAddress: String
   
   /** remote client port. */
-  var remotePort: String = js.native
+  var remotePort: String
   
   /** request response timestamp (0 is not responded yet). */
-  var responded: Double = js.native
+  var responded: Double
 }
 object RequestInfo {
   

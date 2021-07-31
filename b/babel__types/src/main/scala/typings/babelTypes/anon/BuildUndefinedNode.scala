@@ -3,15 +3,13 @@ package typings.babelTypes.anon
 import typings.babelTypes.indexTs37Mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildUndefinedNode extends StObject {
   
-  def buildUndefinedNode(): Node = js.native
+  def buildUndefinedNode(): Node
   
-  def push(value: Id): Unit = js.native
+  def push(value: Id): Unit
 }
 object BuildUndefinedNode {
   

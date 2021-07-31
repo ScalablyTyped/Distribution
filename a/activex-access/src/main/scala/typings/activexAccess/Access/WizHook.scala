@@ -6,32 +6,30 @@ import typings.activexVbide.VBIDE.VBProject
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WizHook extends StObject {
   
   @JSName("Access.WizHook_typekey")
-  var AccessDotWizHook_typekey: WizHook = js.native
+  var AccessDotWizHook_typekey: WizHook
   
-  def AccessUserDataDir(): String = js.native
+  def AccessUserDataDir(): String
   
-  def AccessWizFilePath(bstrWhich: String): String = js.native
+  def AccessWizFilePath(bstrWhich: String): String
   
-  def AdpUIDPwd(pbstrUID: String, pbstrPwd: String): Boolean = js.native
+  def AdpUIDPwd(pbstrUID: String, pbstrPwd: String): Boolean
   
-  def AnalyzeQuery(Workspace: Workspace, Database: Database, Query: String, Results: String): Double = js.native
+  def AnalyzeQuery(Workspace: Workspace, Database: Database, Query: String, Results: String): Double
   
-  def AnalyzeTable(Workspace: Workspace, Database: Database, Table: String, ReturnDebugInfo: Boolean, Results: String): Double = js.native
+  def AnalyzeTable(Workspace: Workspace, Database: Database, Table: String, ReturnDebugInfo: Boolean, Results: String): Double
   
-  def ArgsOfActid(Actid: Double): Double = js.native
+  def ArgsOfActid(Actid: Double): Double
   
-  def BracketString(String: String, flags: Double): Boolean = js.native
+  def BracketString(String: String, flags: Double): Boolean
   
-  def CacheStatus(bstrStatus: String): Unit = js.native
+  def CacheStatus(bstrStatus: String): Unit
   
-  def CloseCurrentDatabase(): Boolean = js.native
+  def CloseCurrentDatabase(): Boolean
   
   def CreateDataPageControl(
     DpName: String,
@@ -44,47 +42,47 @@ trait WizHook extends StObject {
     Y: Double,
     dx: Double,
     dy: Double
-  ): Unit = js.native
+  ): Unit
   
-  def CurrentLangID(): Double = js.native
+  def CurrentLangID(): Double
   
-  val DbcVbProject: VBProject = js.native
+  val DbcVbProject: VBProject
   
-  def EmbedFileOnDataPage(DpName: String, FileToInsert: String): String = js.native
+  def EmbedFileOnDataPage(DpName: String, FileToInsert: String): String
   
-  def EnglishPictToLocal(In: String, Out: String): Boolean = js.native
+  def EnglishPictToLocal(In: String, Out: String): Boolean
   
-  def ExecuteTempImexSpec(bstrSpecXML: String): Unit = js.native
+  def ExecuteTempImexSpec(bstrSpecXML: String): Unit
   
-  def FCacheStatus(): Boolean = js.native
+  def FCacheStatus(): Boolean
   
-  def FCreateNameMap(objtyp: Double, bstrObjName: String): Boolean = js.native
+  def FCreateNameMap(objtyp: Double, bstrObjName: String): Boolean
   
-  def FGetMSDE(fBlockKeys: Boolean): Boolean = js.native
+  def FGetMSDE(fBlockKeys: Boolean): Boolean
   
-  def FIsFEWch(wch: Double): Boolean = js.native
+  def FIsFEWch(wch: Double): Boolean
   
-  def FIsPublishedXasTable(bstrObjectName: String): Boolean = js.native
+  def FIsPublishedXasTable(bstrObjectName: String): Boolean
   
-  def FIsValidXasObjectName(bstrObjectName: String, iobjtyp: AcObjectType): Boolean = js.native
+  def FIsValidXasObjectName(bstrObjectName: String, iobjtyp: AcObjectType): Boolean
   
-  def FIsXasDb(): Boolean = js.native
+  def FIsXasDb(): Boolean
   
-  def FileExists(File: String): Boolean = js.native
+  def FileExists(File: String): Boolean
   
-  def FirstDbcDataObject(Name: String, ObjType: AcObjectType, Attribs: Double): Boolean = js.native
+  def FirstDbcDataObject(Name: String, ObjType: AcObjectType, Attribs: Double): Boolean
   
-  def FullPath(RelativePath: String, FullPath: String): Double = js.native
+  def FullPath(RelativePath: String, FullPath: String): Double
   
-  def GetAccWizRCPath(): String = js.native
+  def GetAccWizRCPath(): String
   
-  def GetAdeRegistryPath(): String = js.native
+  def GetAdeRegistryPath(): String
   
-  def GetColumns(bstrBase: String): String = js.native
+  def GetColumns(bstrBase: String): String
   
-  def GetCurrentView(bstrTableName: String): Double = js.native
+  def GetCurrentView(bstrTableName: String): Double
   
-  def GetDisabledExtensions(): String = js.native
+  def GetDisabledExtensions(): String
   
   def GetFileName(
     hwndOwner: Double,
@@ -98,7 +96,7 @@ trait WizHook extends StObject {
     View: Double,
     flags: Double,
     fOpen: Boolean
-  ): Double = js.native
+  ): Double
   
   def GetFileName2(
     hwndOwner: Double,
@@ -113,75 +111,75 @@ trait WizHook extends StObject {
     flags: Double,
     fOpen: Boolean,
     fFileSystem: js.Any
-  ): Double = js.native
+  ): Double
   
-  def GetFileOdso(bstrExt: String, bstrFilename: String): Double = js.native
+  def GetFileOdso(bstrExt: String, bstrFilename: String): Double
   
-  def GetImexTblName(): String = js.native
+  def GetImexTblName(): String
   
-  def GetInfoForColumns(bstrBase: String): String = js.native
+  def GetInfoForColumns(bstrBase: String): String
   
-  def GetLinkedListProperty(bstrTableName: String, bstrPropertyName: String, fServer: Boolean): String = js.native
+  def GetLinkedListProperty(bstrTableName: String, bstrPropertyName: String, fServer: Boolean): String
   
-  def GetObjPubOption(bstrObjectName: String, iobjtyp: AcObjectType, fTablesAsClient: Boolean): Double = js.native
+  def GetObjPubOption(bstrObjectName: String, iobjtyp: AcObjectType, fTablesAsClient: Boolean): Double
   
-  def GetScriptString(HScr: Double, ScriptColumn: Double, Value: String): Boolean = js.native
+  def GetScriptString(HScr: Double, ScriptColumn: Double, Value: String): Boolean
   
-  def GetWizGlob(lWhich: Double): js.Any = js.native
+  def GetWizGlob(lWhich: Double): js.Any
   
-  def GlobalProcExists(Name: String): Boolean = js.native
+  def GlobalProcExists(Name: String): Boolean
   
-  def HideDates(): Boolean = js.native
+  def HideDates(): Boolean
   
-  def IsMatchToDbcConnectString(bstrConnectionString: String): Boolean = js.native
+  def IsMatchToDbcConnectString(bstrConnectionString: String): Boolean
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  def IsValidIdent(Identifier: String): Boolean = js.native
+  def IsValidIdent(Identifier: String): Boolean
   
-  val Key: Double = js.native
+  val Key: Double
   
-  def KeyboardLangID(): Double = js.native
+  def KeyboardLangID(): Double
   
-  def KnownWizLeaks(fStart: Boolean): Unit = js.native
+  def KnownWizLeaks(fStart: Boolean): Unit
   
-  def LoadImexSpecSolution(bstrFilename: String): Unit = js.native
+  def LoadImexSpecSolution(bstrFilename: String): Unit
   
-  def LocalFont(): String = js.native
+  def LocalFont(): String
   
-  def NameFromActid(Actid: Double): String = js.native
+  def NameFromActid(Actid: Double): String
   
-  def ObjTypOfRecordSource(RecordSource: String): Double = js.native
+  def ObjTypOfRecordSource(RecordSource: String): Double
   
-  def OfficeAddInDir(): String = js.native
+  def OfficeAddInDir(): String
   
-  def OpenEmScript(pProperty: AccessProperty, OpenMode: Double, Extra: Double, Version: Double): Double = js.native
+  def OpenEmScript(pProperty: AccessProperty, OpenMode: Double, Extra: Double, Version: Double): Double
   
-  def OpenPictureFile(File: String, Cancelled: Boolean): Boolean = js.native
+  def OpenPictureFile(File: String, Cancelled: Boolean): Boolean
   
-  def OpenScript(Script: String, Label: String, OpenMode: Double, Extra: Double, Version: Double): Double = js.native
+  def OpenScript(Script: String, Label: String, OpenMode: Double, Extra: Double, Version: Double): Double
   
-  def ReportLeaksToFile(fRptToFile: Boolean, bstrFileOut: String): Unit = js.native
+  def ReportLeaksToFile(fRptToFile: Boolean, bstrFileOut: String): Unit
   
-  def SaveObject(bstrName: String, objtyp: Double): Unit = js.native
+  def SaveObject(bstrName: String, objtyp: Double): Unit
   
-  def SaveScriptString(HScr: Double, ScriptColumn: Double, Value: String): Boolean = js.native
+  def SaveScriptString(HScr: Double, ScriptColumn: Double, Value: String): Boolean
   
-  def SetDefaultSpecName(bstrSpecName: String): Unit = js.native
+  def SetDefaultSpecName(bstrSpecName: String): Unit
   
-  def SetDpBlockKeyInput(fBlockKeys: Boolean): Unit = js.native
+  def SetDpBlockKeyInput(fBlockKeys: Boolean): Unit
   
-  def SetVbaPassword(bstrDbName: String, bstrConnect: String, bstrPasswd: String): Boolean = js.native
+  def SetVbaPassword(bstrDbName: String, bstrConnect: String, bstrPasswd: String): Boolean
   
-  def SetWizGlob(lWhich: Double, vValue: js.Any): Unit = js.native
+  def SetWizGlob(lWhich: Double, vValue: js.Any): Unit
   
-  def SortStringArray(Array: SafeArray[String]): Unit = js.native
+  def SortStringArray(Array: SafeArray[String]): Unit
   
-  def SplitPath(Path: String, Drive: String, Dir: String, File: String, Ext: String): Unit = js.native
+  def SplitPath(Path: String, Drive: String, Dir: String, File: String, Ext: String): Unit
   
-  def TableFieldHasUniqueIndex(Table: String, Columns: String): Boolean = js.native
+  def TableFieldHasUniqueIndex(Table: String, Columns: String): Boolean
   
-  def TranslateExpression(In: String, Out: String, ParseFlags: Double, TranslateFlags: Double): Boolean = js.native
+  def TranslateExpression(In: String, Out: String, ParseFlags: Double, TranslateFlags: Double): Boolean
   
   def TwipsFromFont(
     FontName: String,
@@ -194,13 +192,13 @@ trait WizHook extends StObject {
     MaxWidthCch: Double,
     dx: Double,
     dy: Double
-  ): Boolean = js.native
+  ): Boolean
   
-  def WizCopyCmdbars(bstrADPName: String): Unit = js.native
+  def WizCopyCmdbars(bstrADPName: String): Unit
   
-  def WizHelp(HelpFile: String, wCmd: Double, ContextID: Double): Boolean = js.native
+  def WizHelp(HelpFile: String, wCmd: Double, ContextID: Double): Boolean
   
-  def WizMsgBox(bstrText: String, bstrCaption: String, wStyle: Double, idHelpID: Double, bstrHelpFileName: String): Double = js.native
+  def WizMsgBox(bstrText: String, bstrCaption: String, wStyle: Double, idHelpID: Double, bstrHelpFileName: String): Double
 }
 object WizHook {
   

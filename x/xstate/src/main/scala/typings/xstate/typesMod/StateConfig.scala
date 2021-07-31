@@ -7,57 +7,55 @@ import typings.xstate.stateMod.State
 import typings.xstate.stateNodeMod.StateNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateConfig[TContext, TEvent /* <: EventObject */] extends StObject {
   
-  var _event: typings.xstate.typesMod.SCXML.Event[TEvent] = js.native
+  var _event: typings.xstate.typesMod.SCXML.Event[TEvent]
   
-  var _sessionid: String | Null = js.native
+  var _sessionid: String | Null
   
-  var actions: js.UndefOr[js.Array[ActionObject[TContext, TEvent]]] = js.native
+  var actions: js.UndefOr[js.Array[ActionObject[TContext, TEvent]]] = js.undefined
   
-  var activities: js.UndefOr[ActivityMap] = js.native
+  var activities: js.UndefOr[ActivityMap] = js.undefined
   
-  var children: Record[String, Actor[_, AnyEventObject]] = js.native
+  var children: Record[String, Actor[js.Any, AnyEventObject]]
   
-  var configuration: js.Array[StateNode[TContext, _, TEvent, ContextTContext[TContext]]] = js.native
+  var configuration: js.Array[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]]
   
-  var context: TContext = js.native
+  var context: TContext
   
-  var done: js.UndefOr[Boolean] = js.native
+  var done: js.UndefOr[Boolean] = js.undefined
   
-  var events: js.UndefOr[js.Array[TEvent]] = js.native
+  var events: js.UndefOr[js.Array[TEvent]] = js.undefined
   
-  var history: js.UndefOr[State[TContext, TEvent, _, ContextTContext[TContext]]] = js.native
+  var history: js.UndefOr[State[TContext, TEvent, js.Any, ContextTContext[TContext]]] = js.undefined
   
-  var historyValue: js.UndefOr[HistoryValue] = js.native
+  var historyValue: js.UndefOr[HistoryValue] = js.undefined
   
-  var meta: js.UndefOr[js.Any] = js.native
+  var meta: js.UndefOr[js.Any] = js.undefined
   
-  var transitions: js.Array[TransitionDefinition[TContext, TEvent]] = js.native
+  var transitions: js.Array[TransitionDefinition[TContext, TEvent]]
   
-  var value: StateValue = js.native
+  var value: StateValue
 }
 object StateConfig {
   
   @scala.inline
   def apply[TContext, TEvent /* <: EventObject */](
     _event: typings.xstate.typesMod.SCXML.Event[TEvent],
-    children: Record[String, Actor[_, AnyEventObject]],
-    configuration: js.Array[StateNode[TContext, _, TEvent, ContextTContext[TContext]]],
+    children: Record[String, Actor[js.Any, AnyEventObject]],
+    configuration: js.Array[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]],
     context: TContext,
     transitions: js.Array[TransitionDefinition[TContext, TEvent]],
     value: StateValue
   ): StateConfig[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(_event = _event.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], configuration = configuration.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], transitions = transitions.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_event = _event.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], configuration = configuration.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], transitions = transitions.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], _sessionid = null)
     __obj.asInstanceOf[StateConfig[TContext, TEvent]]
   }
   
   @scala.inline
-  implicit class StateConfigMutableBuilder[Self <: StateConfig[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (StateConfig[TContext, TEvent])) extends AnyVal {
+  implicit class StateConfigMutableBuilder[Self <: StateConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (StateConfig[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setActions(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
@@ -75,10 +73,10 @@ object StateConfig {
     def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
     
     @scala.inline
-    def setChildren(value: Record[String, Actor[_, AnyEventObject]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    def setChildren(value: Record[String, Actor[js.Any, AnyEventObject]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: js.Array[StateNode[TContext, _, TEvent, ContextTContext[TContext]]]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    def setConfiguration(value: js.Array[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setConfigurationVarargs(value: (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])*): Self = StObject.set(x, "configuration", js.Array(value :_*))
@@ -102,7 +100,7 @@ object StateConfig {
     def setEventsVarargs(value: TEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setHistory(value: State[TContext, TEvent, _, ContextTContext[TContext]]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    def setHistory(value: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)

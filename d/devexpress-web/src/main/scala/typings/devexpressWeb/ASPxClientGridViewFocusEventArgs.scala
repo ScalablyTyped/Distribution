@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the corresponding event.
   */
-@js.native
-trait ASPxClientGridViewFocusEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientGridViewFocusEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets whether the row focusing has been changed on the server.
     */
-  var isChangedOnServer: Boolean = js.native
+  var isChangedOnServer: Boolean
 }
 object ASPxClientGridViewFocusEventArgs {
   

@@ -2,83 +2,81 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartSpec extends StObject {
   
   /** The alternative text that describes the chart. This is often used for accessibility. */
-  var altText: js.UndefOr[String] = js.native
+  var altText: js.UndefOr[String] = js.undefined
   
   /** The background color of the entire chart. Not applicable to Org charts. */
-  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
   
   /** The background color of the entire chart. Not applicable to Org charts. If background_color is also set, this field takes precedence. */
-  var backgroundColorStyle: js.UndefOr[ColorStyle] = js.native
+  var backgroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** A basic chart specification, can be one of many kinds of charts. See BasicChartType for the list of all charts this supports. */
-  var basicChart: js.UndefOr[BasicChartSpec] = js.native
+  var basicChart: js.UndefOr[BasicChartSpec] = js.undefined
   
   /** A bubble chart specification. */
-  var bubbleChart: js.UndefOr[BubbleChartSpec] = js.native
+  var bubbleChart: js.UndefOr[BubbleChartSpec] = js.undefined
   
   /** A candlestick chart specification. */
-  var candlestickChart: js.UndefOr[CandlestickChartSpec] = js.native
+  var candlestickChart: js.UndefOr[CandlestickChartSpec] = js.undefined
   
   /** If present, the field contains data source chart specific properties. */
-  var dataSourceChartProperties: js.UndefOr[DataSourceChartProperties] = js.native
+  var dataSourceChartProperties: js.UndefOr[DataSourceChartProperties] = js.undefined
   
   /** The filters applied to the source data of the chart. Only supported for data source charts. */
-  var filterSpecs: js.UndefOr[js.Array[FilterSpec]] = js.native
+  var filterSpecs: js.UndefOr[js.Array[FilterSpec]] = js.undefined
   
   /** The name of the font to use by default for all chart text (e.g. title, axis labels, legend). If a font is specified for a specific part of the chart it will override this font name. */
-  var fontName: js.UndefOr[String] = js.native
+  var fontName: js.UndefOr[String] = js.undefined
   
   /** Determines how the charts will use hidden rows or columns. */
-  var hiddenDimensionStrategy: js.UndefOr[String] = js.native
+  var hiddenDimensionStrategy: js.UndefOr[String] = js.undefined
   
   /** A histogram chart specification. */
-  var histogramChart: js.UndefOr[HistogramChartSpec] = js.native
+  var histogramChart: js.UndefOr[HistogramChartSpec] = js.undefined
   
   /** True to make a chart fill the entire space in which it's rendered with minimum padding. False to use the default padding. (Not applicable to Geo and Org charts.) */
-  var maximized: js.UndefOr[Boolean] = js.native
+  var maximized: js.UndefOr[Boolean] = js.undefined
   
   /** An org chart specification. */
-  var orgChart: js.UndefOr[OrgChartSpec] = js.native
+  var orgChart: js.UndefOr[OrgChartSpec] = js.undefined
   
   /** A pie chart specification. */
-  var pieChart: js.UndefOr[PieChartSpec] = js.native
+  var pieChart: js.UndefOr[PieChartSpec] = js.undefined
   
   /** A scorecard chart specification. */
-  var scorecardChart: js.UndefOr[ScorecardChartSpec] = js.native
+  var scorecardChart: js.UndefOr[ScorecardChartSpec] = js.undefined
   
   /** The order to sort the chart data by. Only a single sort spec is supported. Only supported for data source charts. */
-  var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.native
+  var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.undefined
   
   /** The subtitle of the chart. */
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
   /** The subtitle text format. Strikethrough and underline are not supported. */
-  var subtitleTextFormat: js.UndefOr[TextFormat] = js.native
+  var subtitleTextFormat: js.UndefOr[TextFormat] = js.undefined
   
   /** The subtitle text position. This field is optional. */
-  var subtitleTextPosition: js.UndefOr[TextPosition] = js.native
+  var subtitleTextPosition: js.UndefOr[TextPosition] = js.undefined
   
   /** The title of the chart. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** The title text format. Strikethrough and underline are not supported. */
-  var titleTextFormat: js.UndefOr[TextFormat] = js.native
+  var titleTextFormat: js.UndefOr[TextFormat] = js.undefined
   
   /** The title text position. This field is optional. */
-  var titleTextPosition: js.UndefOr[TextPosition] = js.native
+  var titleTextPosition: js.UndefOr[TextPosition] = js.undefined
   
   /** A treemap chart specification. */
-  var treemapChart: js.UndefOr[TreemapChartSpec] = js.native
+  var treemapChart: js.UndefOr[TreemapChartSpec] = js.undefined
   
   /** A waterfall chart specification. */
-  var waterfallChart: js.UndefOr[WaterfallChartSpec] = js.native
+  var waterfallChart: js.UndefOr[WaterfallChartSpec] = js.undefined
 }
 object ChartSpec {
   

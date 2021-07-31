@@ -2,21 +2,19 @@ package typings.reactNativeMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KmlMarker extends StObject {
   
-  var coordinate: LatLng = js.native
+  var coordinate: LatLng
   
-  var description: String = js.native
+  var description: String
   
-  var id: String = js.native
+  var id: String
   
-  var position: Point = js.native
+  var position: Point
   
-  var title: String = js.native
+  var title: String
 }
 object KmlMarker {
   

@@ -3,48 +3,40 @@ package typings.expect
 import typings.expect.typesMod.Tester
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jasmineUtilsMod {
   
-  @JSImport("expect/build/jasmineUtils", "equals")
+  @JSImport("expect/build/jasmineUtils", JSImport.Namespace)
   @js.native
-  def equals_(a: js.Any, b: js.Any): Boolean = js.native
-  @JSImport("expect/build/jasmineUtils", "equals")
-  @js.native
-  def equals_(a: js.Any, b: js.Any, customTesters: js.UndefOr[scala.Nothing], strictCheck: Boolean): Boolean = js.native
-  @JSImport("expect/build/jasmineUtils", "equals")
-  @js.native
-  def equals_(a: js.Any, b: js.Any, customTesters: js.Array[Tester]): Boolean = js.native
-  @JSImport("expect/build/jasmineUtils", "equals")
-  @js.native
-  def equals_(a: js.Any, b: js.Any, customTesters: js.Array[Tester], strictCheck: Boolean): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("expect/build/jasmineUtils", "fnNameFor")
-  @js.native
-  def fnNameFor(func: js.Function): String = js.native
+  @scala.inline
+  def equals_(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(a: js.Any, b: js.Any, customTesters: js.Array[Tester]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(a: js.Any, b: js.Any, customTesters: js.Array[Tester], strictCheck: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any], strictCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(a: js.Any, b: js.Any, customTesters: Unit, strictCheck: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any], strictCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("expect/build/jasmineUtils", "hasProperty")
-  @js.native
-  def hasProperty(obj: js.Object, property: String): Boolean = js.native
-  @JSImport("expect/build/jasmineUtils", "hasProperty")
-  @js.native
-  def hasProperty(obj: Null, property: String): Boolean = js.native
+  @scala.inline
+  def fnNameFor(func: js.Function): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fnNameFor")(func.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("expect/build/jasmineUtils", "isA")
-  @js.native
-  def isA(typeName: String, value: js.Any): Boolean = js.native
+  @scala.inline
+  def hasProperty(obj: js.Object, property: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasProperty")(obj.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasProperty(obj: Null, property: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasProperty")(obj.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("expect/build/jasmineUtils", "isImmutableUnorderedKeyed")
-  @js.native
-  def isImmutableUnorderedKeyed(maybeKeyed: js.Any): Boolean = js.native
+  @scala.inline
+  def isA(typeName: String, value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isA")(typeName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("expect/build/jasmineUtils", "isImmutableUnorderedSet")
-  @js.native
-  def isImmutableUnorderedSet(maybeSet: js.Any): Boolean = js.native
+  @scala.inline
+  def isImmutableUnorderedKeyed(maybeKeyed: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImmutableUnorderedKeyed")(maybeKeyed.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("expect/build/jasmineUtils", "isUndefined")
-  @js.native
-  def isUndefined(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isImmutableUnorderedSet(maybeSet: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImmutableUnorderedSet")(maybeSet.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isUndefined(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateResourceRequest extends StObject {
   
   /**
     * The name of the new resource.
     */
-  var Name: ResourceName = js.native
+  var Name: ResourceName
   
   /**
     * The identifier associated with the organization for which the resource is created.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The type of the new resource. The available types are equipment and room.
     */
-  var Type: ResourceType = js.native
+  var Type: ResourceType
 }
 object CreateResourceRequest {
   

@@ -2,39 +2,37 @@ package typings.riotGamesApi.RiotGamesAPI.Match
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Team extends StObject {
   
-  var bans: js.Array[BannedChampion] = js.native
+  var bans: js.Array[BannedChampion]
   
-  var baronKills: Double = js.native
+  var baronKills: Double
   
-  var dominionVictoryScore: Double = js.native
+  var dominionVictoryScore: Double
   
-  var dragonKills: Double = js.native
+  var dragonKills: Double
   
-  var firstBaron: Boolean = js.native
+  var firstBaron: Boolean
   
-  var firstBlood: Boolean = js.native
+  var firstBlood: Boolean
   
-  var firstDragon: Boolean = js.native
+  var firstDragon: Boolean
   
-  var firstInhibitor: Boolean = js.native
+  var firstInhibitor: Boolean
   
-  var firstTower: Boolean = js.native
+  var firstTower: Boolean
   
-  var inhibitorKills: Double = js.native
+  var inhibitorKills: Double
   
-  var teamId: Double = js.native
+  var teamId: Double
   
-  var towerKills: Double = js.native
+  var towerKills: Double
   
-  var vilemawKills: Double = js.native
+  var vilemawKills: Double
   
-  var winner: Boolean = js.native
+  var winner: Boolean
 }
 object Team {
   

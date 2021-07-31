@@ -2,16 +2,14 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteLoggingConfigurationRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the web ACL from which you want to delete the LoggingConfiguration.
     */
-  var ResourceArn: typings.awsSdk.wafregionalMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.wafregionalMod.ResourceArn
 }
 object DeleteLoggingConfigurationRequest {
   

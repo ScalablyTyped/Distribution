@@ -2,18 +2,16 @@ package typings.genericNames
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<generic-names.generic-names.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
-    var hashPrefix: js.UndefOr[String] = js.native
+    var hashPrefix: js.UndefOr[String] = js.undefined
   }
   object PartialOptions {
     

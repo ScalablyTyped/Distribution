@@ -4,7 +4,6 @@ import typings.forkTsCheckerWebpackPlugin.anon.Canceled
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginOptionsMod.ForkTsCheckerWebpackPluginOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object forkTsCheckerWebpackPluginMod {
@@ -25,12 +24,15 @@ object forkTsCheckerWebpackPluginMod {
   }
   object ForkTsCheckerWebpackPlugin {
     
-    /* static member */
-    @JSImport("fork-ts-checker-webpack-plugin/lib/ForkTsCheckerWebpackPlugin", "ForkTsCheckerWebpackPlugin.getCompilerHooks")
+    @JSImport("fork-ts-checker-webpack-plugin/lib/ForkTsCheckerWebpackPlugin", "ForkTsCheckerWebpackPlugin")
     @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
     def getCompilerHooks(
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-    ): Canceled = js.native
+    ): Canceled = ^.asInstanceOf[js.Dynamic].applyDynamic("getCompilerHooks")(compiler.asInstanceOf[js.Any]).asInstanceOf[Canceled]
     
     /* static member */
     @JSImport("fork-ts-checker-webpack-plugin/lib/ForkTsCheckerWebpackPlugin", "ForkTsCheckerWebpackPlugin.version")

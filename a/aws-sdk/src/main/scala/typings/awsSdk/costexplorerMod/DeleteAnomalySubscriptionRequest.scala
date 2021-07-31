@@ -2,16 +2,14 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAnomalySubscriptionRequest extends StObject {
   
   /**
     *  The unique identifier of the cost anomaly subscription that you want to delete. 
     */
-  var SubscriptionArn: GenericString = js.native
+  var SubscriptionArn: GenericString
 }
 object DeleteAnomalySubscriptionRequest {
   

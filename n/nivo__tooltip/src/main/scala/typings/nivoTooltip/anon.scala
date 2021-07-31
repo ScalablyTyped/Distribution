@@ -4,17 +4,15 @@ import typings.nivoTooltip.contextMod.TooltipActionsContextData
 import typings.nivoTooltip.contextMod.TooltipStateContextData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Actions extends StObject {
     
-    var actions: TooltipActionsContextData = js.native
+    var actions: TooltipActionsContextData
     
-    var state: TooltipStateContextData = js.native
+    var state: TooltipStateContextData
   }
   object Actions {
     

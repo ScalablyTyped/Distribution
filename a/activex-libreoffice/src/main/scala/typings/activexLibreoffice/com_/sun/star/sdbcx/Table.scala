@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,9 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbc.XDatabaseMetaData
   * @see com.sun.star.sdbcx.Privilege
   */
-@js.native
 trait Table
-  extends XDataDescriptorFactory
+  extends StObject
+     with XDataDescriptorFactory
      with XColumnsSupplier
      with XIndexesSupplier
      with XKeysSupplier
@@ -35,19 +34,19 @@ trait Table
      with XPropertySet {
   
   /** is the name of the table catalog. */
-  var CatalogName: String = js.native
+  var CatalogName: String
   
   /** supplies a comment on the table. Could be empty, if not supported by the driver. */
-  var Description: String = js.native
+  var Description: String
   
   /** is the name of the table. */
-  var Name: String = js.native
+  var Name: String
   
   /** is the name of the table schema. */
-  var SchemaName: String = js.native
+  var SchemaName: String
   
   /** indicates the type of the table like (TABLE, VIEW, SYSTEM TABLE). Could be empty, if not supported by the driver. */
-  var Type: String = js.native
+  var Type: String
 }
 object Table {
   

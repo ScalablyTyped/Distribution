@@ -2,30 +2,28 @@ package typings.maximMazurokGapiClientCloudscheduler.gapi.client.cloudscheduler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Job extends StObject {
   
   /** App Engine HTTP target. */
-  var appEngineHttpTarget: js.UndefOr[AppEngineHttpTarget] = js.native
+  var appEngineHttpTarget: js.UndefOr[AppEngineHttpTarget] = js.undefined
   
   /**
     * The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled and the attempt is marked as a `DEADLINE_EXCEEDED` failure. The
     * failed attempt can be viewed in execution logs. Cloud Scheduler will retry the job according to the RetryConfig. The allowed duration for this deadline is: * For HTTP targets,
     * between 15 seconds and 30 minutes. * For App Engine HTTP targets, between 15 seconds and 24 hours.
     */
-  var attemptDeadline: js.UndefOr[String] = js.native
+  var attemptDeadline: js.UndefOr[String] = js.undefined
   
   /** Optionally caller-specified in CreateJob or UpdateJob. A human-readable description for the job. This string must not contain more than 500 characters. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** HTTP target. */
-  var httpTarget: js.UndefOr[HttpTarget] = js.native
+  var httpTarget: js.UndefOr[HttpTarget] = js.undefined
   
   /** Output only. The time the last job attempt started. */
-  var lastAttemptTime: js.UndefOr[String] = js.native
+  var lastAttemptTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optionally caller-specified in CreateJob, after which it becomes output only. The job name. For example: `projects/PROJECT_ID/locations/LOCATION_ID/jobs/JOB_ID`. * `PROJECT_ID` can
@@ -34,13 +32,13 @@ trait Job extends StObject {
     * available locations can be obtained by calling ListLocations. For more information, see https://cloud.google.com/about/locations/. * `JOB_ID` can contain only letters ([A-Za-z]),
     * numbers ([0-9]), hyphens (-), or underscores (_). The maximum length is 500 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Pub/Sub target. */
-  var pubsubTarget: js.UndefOr[PubsubTarget] = js.native
+  var pubsubTarget: js.UndefOr[PubsubTarget] = js.undefined
   
   /** Settings that determine the retry behavior. */
-  var retryConfig: js.UndefOr[RetryConfig] = js.native
+  var retryConfig: js.UndefOr[RetryConfig] = js.undefined
   
   /**
     * Required, except when used with UpdateJob. Describes the schedule on which the job will be executed. The schedule can be either of the following types: *
@@ -50,26 +48,26 @@ trait Job extends StObject {
     * if the previous execution has not ended when its scheduled time occurs. If retry_count > 0 and a job attempt fails, the job will be tried a total of retry_count times, with
     * exponential backoff, until the next scheduled start time.
     */
-  var schedule: js.UndefOr[String] = js.native
+  var schedule: js.UndefOr[String] = js.undefined
   
   /** Output only. The next time the job is scheduled. Note that this may be a retry of a previously failed attempt or the next execution time according to the schedule. */
-  var scheduleTime: js.UndefOr[String] = js.native
+  var scheduleTime: js.UndefOr[String] = js.undefined
   
   /** Output only. State of the job. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. The response from the target for the last attempted execution. */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
   
   /**
     * Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the [tz database](http://en.wikipedia.org/wiki/Tz_database). Note
     * that some time zones include a provision for daylight savings time. The rules for daylight saving time are determined by the chosen tz. For UTC use the string "utc". If a time zone
     * is not specified, the default will be in UTC (also known as GMT).
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
   
   /** Output only. The creation time of the job. */
-  var userUpdateTime: js.UndefOr[String] = js.native
+  var userUpdateTime: js.UndefOr[String] = js.undefined
 }
 object Job {
   

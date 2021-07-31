@@ -4,39 +4,37 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.jpeg
 import typings.devtoolsProtocol.devtoolsProtocolStrings.png
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object HeadlessExperimental {
   
-  @js.native
   trait BeginFrameRequest extends StObject {
     
     /**
       * Timestamp of this BeginFrame in Renderer TimeTicks (milliseconds of uptime). If not set,
       * the current time will be used.
       */
-    var frameTimeTicks: js.UndefOr[Double] = js.native
+    var frameTimeTicks: js.UndefOr[Double] = js.undefined
     
     /**
       * The interval between BeginFrames that is reported to the compositor, in milliseconds.
       * Defaults to a 60 frames/second interval, i.e. about 16.666 milliseconds.
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether updates should not be committed and drawn onto the display. False by default. If
       * true, only side effects of the BeginFrame will be run, such as layout and animations, but
       * any visual updates may not be visible on the display or in screenshots.
       */
-    var noDisplayUpdates: js.UndefOr[Boolean] = js.native
+    var noDisplayUpdates: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set, a screenshot of the frame will be captured and returned in the response. Otherwise,
       * no screenshot will be captured. Note that capturing a screenshot can fail, for example,
       * during renderer initialization. In such a case, no screenshot data will be returned.
       */
-    var screenshot: js.UndefOr[ScreenshotParams] = js.native
+    var screenshot: js.UndefOr[ScreenshotParams] = js.undefined
   }
   object BeginFrameRequest {
     
@@ -75,19 +73,18 @@ object HeadlessExperimental {
     }
   }
   
-  @js.native
   trait BeginFrameResponse extends StObject {
     
     /**
       * Whether the BeginFrame resulted in damage and, thus, a new frame was committed to the
       * display. Reported for diagnostic uses, may be removed in the future.
       */
-    var hasDamage: Boolean = js.native
+    var hasDamage: Boolean
     
     /**
       * Base64-encoded image data of the screenshot, if one was requested and successfully taken.
       */
-    var screenshotData: js.UndefOr[String] = js.native
+    var screenshotData: js.UndefOr[String] = js.undefined
   }
   object BeginFrameResponse {
     
@@ -111,13 +108,12 @@ object HeadlessExperimental {
     }
   }
   
-  @js.native
   trait NeedsBeginFramesChangedEvent extends StObject {
     
     /**
       * True if BeginFrames are needed, false otherwise.
       */
-    var needsBeginFrames: Boolean = js.native
+    var needsBeginFrames: Boolean
   }
   object NeedsBeginFramesChangedEvent {
     
@@ -135,18 +131,17 @@ object HeadlessExperimental {
     }
   }
   
-  @js.native
   trait ScreenshotParams extends StObject {
     
     /**
       * Image compression format (defaults to png). (ScreenshotParamsFormat enum)
       */
-    var format: js.UndefOr[jpeg | png] = js.native
+    var format: js.UndefOr[jpeg | png] = js.undefined
     
     /**
       * Compression quality from range [0..100] (jpeg only).
       */
-    var quality: js.UndefOr[integer] = js.native
+    var quality: js.UndefOr[integer] = js.undefined
   }
   object ScreenshotParams {
     

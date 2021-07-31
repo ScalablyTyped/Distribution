@@ -12,7 +12,6 @@ import typings.googleGax.gaxMod.CallOptions
 import typings.googleGax.mod.GoogleAuth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textToSpeechClientMod {
@@ -81,7 +80,7 @@ object textToSpeechClientMod {
     var descriptors: Descriptors = js.native
     
     def getProjectId(): js.Promise[String] = js.native
-    def getProjectId(callback: Callback[String, js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]): Unit = js.native
+    def getProjectId(callback: Callback[String, Unit, Unit]): Unit = js.native
     
     /**
       * Initialize the client.

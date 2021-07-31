@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizationCode extends StObject {
   
   /** The Authorization Code in ASCII. It can be used to transfer the domain to or from another registrar. */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
 }
 object AuthorizationCode {
   

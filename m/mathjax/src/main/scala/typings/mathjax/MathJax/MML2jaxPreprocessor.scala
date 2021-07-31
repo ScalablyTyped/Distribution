@@ -2,10 +2,8 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MML2jaxPreprocessor extends StObject {
   
   /*This controls whether mml2jax inserts MathJax_Preview spans to make a preview available, and what preview to
@@ -24,7 +22,7 @@ trait MML2jaxPreprocessor extends StObject {
     * preview: ["[math]"],     //  insert the text "[math]" as the preview
     * preview: [["img",{src: "/images/mypic.jpg"}]],  // insert an image as the preview
     */
-  var preview: js.UndefOr[js.Any] = js.native
+  var preview: js.UndefOr[js.Any] = js.undefined
 }
 object MML2jaxPreprocessor {
   

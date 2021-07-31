@@ -2,7 +2,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,10 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * GeneralNames ::= SEQUENCE SIZE (1..MAX) OF GeneralName
   */
-@js.native
 trait GeneralNames extends StObject {
   
-  def getEncodedHex(): String = js.native
+  def getEncodedHex(): String
   
   /**
     * set a array of `KJUR.asn1.x509.GeneralName` parameters
@@ -24,7 +22,7 @@ trait GeneralNames extends StObject {
     * gns = new KJUR.asn1.x509.GeneralNames();
     * gns.setByParamArray([{uri: 'http://aaa.com/'}, {uri: 'http://bbb.com/'}]);
     */
-  def setByParamArray(paramsArray: js.Array[GeneralNameParam]): Unit = js.native
+  def setByParamArray(paramsArray: js.Array[GeneralNameParam]): Unit
 }
 object GeneralNames {
   

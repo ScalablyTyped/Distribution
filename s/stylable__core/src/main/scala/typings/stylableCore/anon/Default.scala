@@ -11,46 +11,34 @@ import typings.stylableCore.stylableCoreStrings.`-st-root`
 import typings.stylableCore.stylableCoreStrings.`-st-states`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Default extends StObject {
   
-  var default: `-st-default` = js.native
+  var default: `-st-default`
   
-  var `extends`: `-st-extends` = js.native
+  var `extends`: `-st-extends`
   
-  var from: `-st-from` = js.native
+  var from: `-st-from`
   
-  var global: `-st-global` = js.native
+  var global: `-st-global`
   
-  var mixin: `-st-mixin` = js.native
+  var mixin: `-st-mixin`
   
-  var named: `-st-named` = js.native
+  var named: `-st-named`
   
-  var partialMixin: `-st-partial-mixin` = js.native
+  var partialMixin: `-st-partial-mixin`
   
-  var root: `-st-root` = js.native
+  var root: `-st-root`
   
-  var states: `-st-states` = js.native
+  var states: `-st-states`
 }
 object Default {
   
   @scala.inline
-  def apply(
-    default: `-st-default`,
-    `extends`: `-st-extends`,
-    from: `-st-from`,
-    global: `-st-global`,
-    mixin: `-st-mixin`,
-    named: `-st-named`,
-    partialMixin: `-st-partial-mixin`,
-    root: `-st-root`,
-    states: `-st-states`
-  ): Default = {
-    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], mixin = mixin.asInstanceOf[js.Any], named = named.asInstanceOf[js.Any], partialMixin = partialMixin.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
-    __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
+  def apply(): Default = {
+    val __obj = js.Dynamic.literal(default = "-st-default", from = "-st-from", global = "-st-global", mixin = "-st-mixin", named = "-st-named", partialMixin = "-st-partial-mixin", root = "-st-root", states = "-st-states")
+    __obj.updateDynamic("extends")("-st-extends")
     __obj.asInstanceOf[Default]
   }
   

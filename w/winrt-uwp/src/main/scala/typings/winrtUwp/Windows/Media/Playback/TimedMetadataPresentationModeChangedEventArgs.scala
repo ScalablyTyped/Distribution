@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Media.Playback
 import typings.winrtUwp.Windows.Media.Core.TimedMetadataTrack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the MediaPlaybackTimedMetadataTrackList::PresentationModeChanged event. */
-@js.native
 trait TimedMetadataPresentationModeChangedEventArgs extends StObject {
   
   /** Gets the new presentation mode. */
-  var newPresentationMode: TimedMetadataTrackPresentationMode = js.native
+  var newPresentationMode: TimedMetadataTrackPresentationMode
   
   /** Gets the old presentation mode. */
-  var oldPresentationMode: TimedMetadataTrackPresentationMode = js.native
+  var oldPresentationMode: TimedMetadataTrackPresentationMode
   
   /** Gets the TimedMetadataTrack associated with the presentation mode change. */
-  var track: TimedMetadataTrack = js.native
+  var track: TimedMetadataTrack
 }
 object TimedMetadataPresentationModeChangedEventArgs {
   

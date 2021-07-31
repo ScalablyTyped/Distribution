@@ -5,35 +5,35 @@ import typings.extjs.Ext.menu.ICheckItem
 import typings.extjs.Ext.menu.IMenu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICycleButton extends ISplit {
+trait ICycleButton
+  extends StObject
+     with ISplit {
   
   /** [Config Option] (Function) */
-  var changeHandler: js.UndefOr[js.Any] = js.native
+  var changeHandler: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var forceGlyph: js.UndefOr[js.Any] = js.native
+  var forceGlyph: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var forceIcon: js.UndefOr[java.lang.String] = js.native
+  var forceIcon: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Gets the currently active menu item
     * @returns Ext.menu.CheckItem The active item
     */
-  var getActiveItem: js.UndefOr[js.Function0[ICheckItem]] = js.native
+  var getActiveItem: js.UndefOr[js.Function0[ICheckItem]] = js.undefined
   
   /** [Config Option] (Object[]) */
-  var items: js.UndefOr[Array] = js.native
+  var items: js.UndefOr[Array] = js.undefined
   
   /** [Property] (Ext.menu.Menu) */
   @JSName("menu")
-  var menu_ICycleButton: js.UndefOr[IMenu] = js.native
+  var menu_ICycleButton: js.UndefOr[IMenu] = js.undefined
   
   /** [Config Option] (String) */
-  var prependText: js.UndefOr[java.lang.String] = js.native
+  var prependText: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Sets the button s active menu item
     * @param item Ext.menu.CheckItem The item to activate
@@ -41,13 +41,13 @@ trait ICycleButton extends ISplit {
     */
   var setActiveItem: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[ICheckItem], /* suppressEvent */ js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var showText: js.UndefOr[Boolean] = js.native
+  var showText: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] This is normally called internally on button click but can be called externally to advance the button s active item */
-  var toggleSelected: js.UndefOr[js.Function0[Unit]] = js.native
+  var toggleSelected: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object ICycleButton {
   

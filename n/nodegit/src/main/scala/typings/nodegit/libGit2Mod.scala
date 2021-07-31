@@ -15,7 +15,6 @@ import typings.nodegit.nodegitNumbers.`8`
 import typings.nodegit.nodegitNumbers.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libGit2Mod {
@@ -26,25 +25,24 @@ object libGit2Mod {
   /* static members */
   object Libgit2 {
     
-    @JSImport("nodegit/lib-git2", "Libgit2.features")
+    @JSImport("nodegit/lib-git2", "Libgit2")
     @js.native
-    def features(): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/lib-git2", "Libgit2.init")
-    @js.native
-    def init(): Double = js.native
+    @scala.inline
+    def features(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("features")().asInstanceOf[Double]
     
-    @JSImport("nodegit/lib-git2", "Libgit2.opts")
-    @js.native
-    def opts(option: Double): Double = js.native
+    @scala.inline
+    def init(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Double]
     
-    @JSImport("nodegit/lib-git2", "Libgit2.shutdown")
-    @js.native
-    def shutdown(): Double = js.native
+    @scala.inline
+    def opts(option: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("opts")(option.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("nodegit/lib-git2", "Libgit2.version")
-    @js.native
-    def version(major: Double, minor: Double, rev: Double): Unit = js.native
+    @scala.inline
+    def shutdown(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")().asInstanceOf[Double]
+    
+    @scala.inline
+    def version(major: Double, minor: Double, rev: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("version")(major.asInstanceOf[js.Any], minor.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`

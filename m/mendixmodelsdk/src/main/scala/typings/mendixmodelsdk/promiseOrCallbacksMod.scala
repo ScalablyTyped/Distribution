@@ -4,33 +4,33 @@ import typings.mendixmodelsdk.commonMod.common.ICallback
 import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promiseOrCallbacksMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/promiseOrCallbacks", "promiseOrCallbacks")
+  @JSImport("mendixmodelsdk/dist/sdk/internal/promiseOrCallbacks", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def promiseOrCallbacks[T](
     action: js.Function2[
       /* resolve */ js.Function1[/* result */ js.UndefOr[T], Unit], 
       /* reject */ js.Function1[/* err */ js.Any, Unit], 
       Unit
     ]
-  ): js.Promise[T] | Unit = js.native
-  @JSImport("mendixmodelsdk/dist/sdk/internal/promiseOrCallbacks", "promiseOrCallbacks")
-  @js.native
+  ): js.Promise[T] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("promiseOrCallbacks")(action.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T] | Unit]
+  @scala.inline
   def promiseOrCallbacks[T](
     action: js.Function2[
       /* resolve */ js.Function1[/* result */ js.UndefOr[T], Unit], 
       /* reject */ js.Function1[/* err */ js.Any, Unit], 
       Unit
     ],
-    callback: js.UndefOr[scala.Nothing],
+    callback: Unit,
     errorCallback: IErrorCallback
-  ): js.Promise[T] | Unit = js.native
-  @JSImport("mendixmodelsdk/dist/sdk/internal/promiseOrCallbacks", "promiseOrCallbacks")
-  @js.native
+  ): js.Promise[T] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("promiseOrCallbacks")(action.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T] | Unit]
+  @scala.inline
   def promiseOrCallbacks[T](
     action: js.Function2[
       /* resolve */ js.Function1[/* result */ js.UndefOr[T], Unit], 
@@ -38,9 +38,8 @@ object promiseOrCallbacksMod {
       Unit
     ],
     callback: ICallback[T]
-  ): js.Promise[T] | Unit = js.native
-  @JSImport("mendixmodelsdk/dist/sdk/internal/promiseOrCallbacks", "promiseOrCallbacks")
-  @js.native
+  ): js.Promise[T] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("promiseOrCallbacks")(action.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T] | Unit]
+  @scala.inline
   def promiseOrCallbacks[T](
     action: js.Function2[
       /* resolve */ js.Function1[/* result */ js.UndefOr[T], Unit], 
@@ -49,5 +48,5 @@ object promiseOrCallbacksMod {
     ],
     callback: ICallback[T],
     errorCallback: IErrorCallback
-  ): js.Promise[T] | Unit = js.native
+  ): js.Promise[T] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("promiseOrCallbacks")(action.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T] | Unit]
 }

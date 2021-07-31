@@ -28,7 +28,6 @@ import typings.testingLibraryDom.queryHelpersMod.SelectorMatcherOptions
 import typings.testingLibraryDom.waitForMod.waitForOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -41,25 +40,21 @@ object anon {
       * of elements
       */
     def debug(): Unit = js.native
-    def debug(element: js.UndefOr[scala.Nothing], maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-    def debug(element: js.UndefOr[scala.Nothing], maxLength: Double): Unit = js.native
-    def debug(element: js.UndefOr[scala.Nothing], maxLength: Double, options: OptionsReceived): Unit = js.native
     def debug(element: js.Array[Element | HTMLDocument]): Unit = js.native
-    def debug(
-      element: js.Array[Element | HTMLDocument],
-      maxLength: js.UndefOr[scala.Nothing],
-      options: OptionsReceived
-    ): Unit = js.native
     def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = js.native
     def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = js.native
+    def debug(element: js.Array[Element | HTMLDocument], maxLength: Unit, options: OptionsReceived): Unit = js.native
+    def debug(element: Unit, maxLength: Double): Unit = js.native
+    def debug(element: Unit, maxLength: Double, options: OptionsReceived): Unit = js.native
+    def debug(element: Unit, maxLength: Unit, options: OptionsReceived): Unit = js.native
     def debug(element: Element): Unit = js.native
-    def debug(element: Element, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
     def debug(element: Element, maxLength: Double): Unit = js.native
     def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = js.native
+    def debug(element: Element, maxLength: Unit, options: OptionsReceived): Unit = js.native
     def debug(element: HTMLDocument): Unit = js.native
-    def debug(element: HTMLDocument, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
     def debug(element: HTMLDocument, maxLength: Double): Unit = js.native
     def debug(element: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = js.native
+    def debug(element: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = js.native
     
     /**
       * Convenience function for `Testing Playground` which logs URL that
@@ -70,12 +65,11 @@ object anon {
     def logTestingPlaygroundURL(element: HTMLDocument): Unit = js.native
   }
   
-  @js.native
   trait DefaultInit extends StObject {
     
-    var EventType: js.UndefOr[String] = js.native
+    var EventType: js.UndefOr[String] = js.undefined
     
-    var defaultInit: js.UndefOr[js.Object] = js.native
+    var defaultInit: js.UndefOr[js.Object] = js.undefined
   }
   object DefaultInit {
     
@@ -102,12 +96,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Interval extends StObject {
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Interval {
     
@@ -135,26 +128,27 @@ object anon {
   }
   
   /* Inlined std.Partial<@testing-library/dom.@testing-library/dom/types/config.Config> */
-  @js.native
   trait PartialConfig extends StObject {
     
-    var asyncUtilTimeout: js.UndefOr[Double] = js.native
+    var asyncUtilTimeout: js.UndefOr[Double] = js.undefined
     
-    var asyncWrapper: js.UndefOr[js.Function1[/* cb */ js.Function1[/* repeated */ js.Any, _], js.Promise[_]]] = js.native
+    var asyncWrapper: js.UndefOr[
+        js.Function1[/* cb */ js.Function1[/* repeated */ js.Any, js.Any], js.Promise[js.Any]]
+      ] = js.undefined
     
-    var computedStyleSupportsPseudoElements: js.UndefOr[Boolean] = js.native
+    var computedStyleSupportsPseudoElements: js.UndefOr[Boolean] = js.undefined
     
-    var defaultHidden: js.UndefOr[Boolean] = js.native
+    var defaultHidden: js.UndefOr[Boolean] = js.undefined
     
-    var eventWrapper: js.UndefOr[js.Function1[/* cb */ js.Function1[/* repeated */ js.Any, _], Unit]] = js.native
+    var eventWrapper: js.UndefOr[js.Function1[/* cb */ js.Function1[/* repeated */ js.Any, js.Any], Unit]] = js.undefined
     
-    var getElementError: js.UndefOr[js.Function2[/* message */ String, /* container */ HTMLElement, Error]] = js.native
+    var getElementError: js.UndefOr[js.Function2[/* message */ String, /* container */ HTMLElement, Error]] = js.undefined
     
-    var showOriginalStackTrace: js.UndefOr[Boolean] = js.native
+    var showOriginalStackTrace: js.UndefOr[Boolean] = js.undefined
     
-    var testIdAttribute: js.UndefOr[String] = js.native
+    var testIdAttribute: js.UndefOr[String] = js.undefined
     
-    var throwSuggestions: js.UndefOr[Boolean] = js.native
+    var throwSuggestions: js.UndefOr[Boolean] = js.undefined
   }
   object PartialConfig {
     
@@ -174,7 +168,7 @@ object anon {
       def setAsyncUtilTimeoutUndefined: Self = StObject.set(x, "asyncUtilTimeout", js.undefined)
       
       @scala.inline
-      def setAsyncWrapper(value: /* cb */ js.Function1[/* repeated */ js.Any, _] => js.Promise[_]): Self = StObject.set(x, "asyncWrapper", js.Any.fromFunction1(value))
+      def setAsyncWrapper(value: /* cb */ js.Function1[/* repeated */ js.Any, js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "asyncWrapper", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAsyncWrapperUndefined: Self = StObject.set(x, "asyncWrapper", js.undefined)
@@ -192,7 +186,7 @@ object anon {
       def setDefaultHiddenUndefined: Self = StObject.set(x, "defaultHidden", js.undefined)
       
       @scala.inline
-      def setEventWrapper(value: /* cb */ js.Function1[/* repeated */ js.Any, _] => Unit): Self = StObject.set(x, "eventWrapper", js.Any.fromFunction1(value))
+      def setEventWrapper(value: /* cb */ js.Function1[/* repeated */ js.Any, js.Any] => Unit): Self = StObject.set(x, "eventWrapper", js.Any.fromFunction1(value))
       
       @scala.inline
       def setEventWrapperUndefined: Self = StObject.set(x, "eventWrapper", js.undefined)
@@ -223,104 +217,103 @@ object anon {
     }
   }
   
-  @js.native
   trait Typeofqueries extends StObject {
     
-    val findAllByAltText: FindAllByBoundAttribute = js.native
+    val findAllByAltText: FindAllByBoundAttribute
     
-    val findAllByDisplayValue: FindAllByBoundAttribute = js.native
+    val findAllByDisplayValue: FindAllByBoundAttribute
     
-    val findAllByLabelText: FindAllByText_ = js.native
+    val findAllByLabelText: FindAllByText_
     
-    val findAllByPlaceholderText: FindAllByBoundAttribute = js.native
+    val findAllByPlaceholderText: FindAllByBoundAttribute
     
-    val findAllByRole: FindAllByRole_ = js.native
+    val findAllByRole: FindAllByRole_
     
-    val findAllByTestId: FindAllByBoundAttribute = js.native
+    val findAllByTestId: FindAllByBoundAttribute
     
-    val findAllByText: FindAllByText_ = js.native
+    val findAllByText: FindAllByText_
     
-    val findAllByTitle: FindAllByBoundAttribute = js.native
+    val findAllByTitle: FindAllByBoundAttribute
     
-    val findByAltText: FindByBoundAttribute = js.native
+    val findByAltText: FindByBoundAttribute
     
-    val findByDisplayValue: FindByBoundAttribute = js.native
+    val findByDisplayValue: FindByBoundAttribute
     
-    val findByLabelText: FindByText_ = js.native
+    val findByLabelText: FindByText_
     
-    val findByPlaceholderText: FindByBoundAttribute = js.native
+    val findByPlaceholderText: FindByBoundAttribute
     
-    val findByRole: FindByRole_ = js.native
+    val findByRole: FindByRole_
     
-    val findByTestId: FindByBoundAttribute = js.native
+    val findByTestId: FindByBoundAttribute
     
-    val findByText: FindByText_ = js.native
+    val findByText: FindByText_
     
-    val findByTitle: FindByBoundAttribute = js.native
+    val findByTitle: FindByBoundAttribute
     
-    val getAllByAltText: AllByBoundAttribute = js.native
+    val getAllByAltText: AllByBoundAttribute
     
-    val getAllByDisplayValue: AllByBoundAttribute = js.native
+    val getAllByDisplayValue: AllByBoundAttribute
     
-    val getAllByLabelText: AllByText = js.native
+    val getAllByLabelText: AllByText
     
-    val getAllByPlaceholderText: AllByBoundAttribute = js.native
+    val getAllByPlaceholderText: AllByBoundAttribute
     
-    val getAllByRole: AllByRole = js.native
+    val getAllByRole: AllByRole
     
-    val getAllByTestId: AllByBoundAttribute = js.native
+    val getAllByTestId: AllByBoundAttribute
     
-    val getAllByText: AllByText = js.native
+    val getAllByText: AllByText
     
-    val getAllByTitle: AllByBoundAttribute = js.native
+    val getAllByTitle: AllByBoundAttribute
     
-    val getByAltText: GetByBoundAttribute = js.native
+    val getByAltText: GetByBoundAttribute
     
-    val getByDisplayValue: GetByBoundAttribute = js.native
+    val getByDisplayValue: GetByBoundAttribute
     
-    val getByLabelText: GetByText_ = js.native
+    val getByLabelText: GetByText_
     
-    val getByPlaceholderText: GetByBoundAttribute = js.native
+    val getByPlaceholderText: GetByBoundAttribute
     
-    val getByRole: GetByRole_ = js.native
+    val getByRole: GetByRole_
     
-    val getByTestId: GetByBoundAttribute = js.native
+    val getByTestId: GetByBoundAttribute
     
-    val getByText: GetByText_ = js.native
+    val getByText: GetByText_
     
-    val getByTitle: GetByBoundAttribute = js.native
+    val getByTitle: GetByBoundAttribute
     
-    val queryAllByAltText: AllByBoundAttribute = js.native
+    val queryAllByAltText: AllByBoundAttribute
     
-    val queryAllByDisplayValue: AllByBoundAttribute = js.native
+    val queryAllByDisplayValue: AllByBoundAttribute
     
-    val queryAllByLabelText: AllByText = js.native
+    val queryAllByLabelText: AllByText
     
-    val queryAllByPlaceholderText: AllByBoundAttribute = js.native
+    val queryAllByPlaceholderText: AllByBoundAttribute
     
-    val queryAllByRole: AllByRole = js.native
+    val queryAllByRole: AllByRole
     
-    val queryAllByTestId: AllByBoundAttribute = js.native
+    val queryAllByTestId: AllByBoundAttribute
     
-    val queryAllByText: AllByText = js.native
+    val queryAllByText: AllByText
     
-    val queryAllByTitle: AllByBoundAttribute = js.native
+    val queryAllByTitle: AllByBoundAttribute
     
-    val queryByAltText: QueryByBoundAttribute = js.native
+    val queryByAltText: QueryByBoundAttribute
     
-    val queryByDisplayValue: QueryByBoundAttribute = js.native
+    val queryByDisplayValue: QueryByBoundAttribute
     
-    val queryByLabelText: QueryByText_ = js.native
+    val queryByLabelText: QueryByText_
     
-    val queryByPlaceholderText: QueryByBoundAttribute = js.native
+    val queryByPlaceholderText: QueryByBoundAttribute
     
-    val queryByRole: QueryByRole_ = js.native
+    val queryByRole: QueryByRole_
     
-    val queryByTestId: QueryByBoundAttribute = js.native
+    val queryByTestId: QueryByBoundAttribute
     
-    val queryByText: QueryByText_ = js.native
+    val queryByText: QueryByText_
     
-    val queryByTitle: QueryByBoundAttribute = js.native
+    val queryByTitle: QueryByBoundAttribute
   }
   object Typeofqueries {
     

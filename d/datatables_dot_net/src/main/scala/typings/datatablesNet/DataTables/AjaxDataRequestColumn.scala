@@ -2,21 +2,19 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AjaxDataRequestColumn extends StObject {
   
-  var data: String | Double = js.native
+  var data: String | Double
   
-  var name: String = js.native
+  var name: String
   
-  var orderable: Boolean = js.native
+  var orderable: Boolean
   
-  var search: AjaxDataRequestSearch = js.native
+  var search: AjaxDataRequestSearch
   
-  var searchable: Boolean = js.native
+  var searchable: Boolean
 }
 object AjaxDataRequestColumn {
   

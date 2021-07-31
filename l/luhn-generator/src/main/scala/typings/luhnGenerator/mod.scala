@@ -2,59 +2,49 @@ package typings.luhnGenerator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("luhn-generator", "checksum")
+  @JSImport("luhn-generator", JSImport.Namespace)
   @js.native
-  def checksum(input: String): Double = js.native
-  @JSImport("luhn-generator", "checksum")
-  @js.native
-  def checksum(input: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("luhn-generator", "generate")
-  @js.native
-  def generate(input: String): Double = js.native
-  @JSImport("luhn-generator", "generate")
-  @js.native
-  def generate(input: String, inputOptions: InputOptions): Double = js.native
-  @JSImport("luhn-generator", "generate")
-  @js.native
-  def generate(input: Double): Double = js.native
-  @JSImport("luhn-generator", "generate")
-  @js.native
-  def generate(input: Double, inputOptions: InputOptions): Double = js.native
+  @scala.inline
+  def checksum(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("checksum")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def checksum(input: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("checksum")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("luhn-generator", "random")
-  @js.native
-  def random(input: String): Double = js.native
-  @JSImport("luhn-generator", "random")
-  @js.native
-  def random(input: String, inputOptions: InputOptions): Double = js.native
-  @JSImport("luhn-generator", "random")
-  @js.native
-  def random(input: Double): Double = js.native
-  @JSImport("luhn-generator", "random")
-  @js.native
-  def random(input: Double, inputOptions: InputOptions): Double = js.native
+  @scala.inline
+  def generate(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def generate(input: String, inputOptions: InputOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(input.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def generate(input: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def generate(input: Double, inputOptions: InputOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(input.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("luhn-generator", "validate")
-  @js.native
-  def validate(input: String): Boolean = js.native
-  @JSImport("luhn-generator", "validate")
-  @js.native
-  def validate(input: Double): Boolean = js.native
+  @scala.inline
+  def random(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def random(input: String, inputOptions: InputOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(input.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def random(input: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def random(input: Double, inputOptions: InputOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(input.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @js.native
+  @scala.inline
+  def validate(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def validate(input: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait InputOptions extends StObject {
     
     /** @default 0 */
-    var pad: js.UndefOr[Double] = js.native
+    var pad: js.UndefOr[Double] = js.undefined
     
     /** @default 2 */
-    var weightFactor: js.UndefOr[Double] = js.native
+    var weightFactor: js.UndefOr[Double] = js.undefined
   }
   object InputOptions {
     

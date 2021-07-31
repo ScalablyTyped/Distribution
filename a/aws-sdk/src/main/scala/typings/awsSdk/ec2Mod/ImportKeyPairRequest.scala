@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportKeyPairRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A unique name for the key pair.
     */
-  var KeyName: String = js.native
+  var KeyName: String
   
   /**
     * The public key. For API calls, the text must be base64-encoded. For command line tools, base64 encoding is performed for you.
     */
-  var PublicKeyMaterial: _Blob = js.native
+  var PublicKeyMaterial: _Blob
   
   /**
     * The tags to apply to the imported key pair.
     */
-  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
 }
 object ImportKeyPairRequest {
   

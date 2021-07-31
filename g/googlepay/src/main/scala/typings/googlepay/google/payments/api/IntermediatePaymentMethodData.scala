@@ -2,13 +2,11 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Limited data for a payment method for developer callbacks.
   */
-@js.native
 trait IntermediatePaymentMethodData extends StObject {
   
   /**
@@ -22,12 +20,12 @@ trait IntermediatePaymentMethodData extends StObject {
     *   will be an object conforming to
     *   [[IntermediateCardInfo|`IntermediateCardInfo`]].
     */
-  var info: js.UndefOr[IntermediateCardInfo] = js.native
+  var info: js.UndefOr[IntermediateCardInfo] = js.undefined
   
   /**
     * Type of payment method.
     */
-  var `type`: PaymentMethodType = js.native
+  var `type`: PaymentMethodType
 }
 object IntermediatePaymentMethodData {
   

@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridScrollable extends StObject {
   
-  var endless: js.UndefOr[Boolean] = js.native
+  var endless: js.UndefOr[Boolean] = js.undefined
   
-  var virtual: js.UndefOr[Boolean | String] = js.native
+  var virtual: js.UndefOr[Boolean | String] = js.undefined
 }
 object GridScrollable {
   

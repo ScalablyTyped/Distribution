@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait Position extends StObject
 object Position extends StObject {
   
   @js.native
-  sealed trait BOTTOM extends Position
+  sealed trait BOTTOM
+    extends StObject
+       with Position
   
   @js.native
-  sealed trait NONE extends Position
+  sealed trait NONE
+    extends StObject
+       with Position
   
   @js.native
-  sealed trait RIGHT extends Position
+  sealed trait RIGHT
+    extends StObject
+       with Position
   
   @js.native
-  sealed trait TOP extends Position
+  sealed trait TOP
+    extends StObject
+       with Position
 }

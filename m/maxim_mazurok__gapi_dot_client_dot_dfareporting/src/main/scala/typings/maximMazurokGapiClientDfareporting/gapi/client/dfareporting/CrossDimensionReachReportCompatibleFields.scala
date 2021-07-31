@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrossDimensionReachReportCompatibleFields extends StObject {
   
   /** Dimensions which are compatible to be selected in the "breakdown" section of the report. */
-  var breakdown: js.UndefOr[js.Array[Dimension]] = js.native
+  var breakdown: js.UndefOr[js.Array[Dimension]] = js.undefined
   
   /** Dimensions which are compatible to be selected in the "dimensionFilters" section of the report. */
-  var dimensionFilters: js.UndefOr[js.Array[Dimension]] = js.native
+  var dimensionFilters: js.UndefOr[js.Array[Dimension]] = js.undefined
   
   /** The kind of resource this is, in this case dfareporting#crossDimensionReachReportCompatibleFields. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Metrics which are compatible to be selected in the "metricNames" section of the report. */
-  var metrics: js.UndefOr[js.Array[Metric]] = js.native
+  var metrics: js.UndefOr[js.Array[Metric]] = js.undefined
   
   /** Metrics which are compatible to be selected in the "overlapMetricNames" section of the report. */
-  var overlapMetrics: js.UndefOr[js.Array[Metric]] = js.native
+  var overlapMetrics: js.UndefOr[js.Array[Metric]] = js.undefined
 }
 object CrossDimensionReachReportCompatibleFields {
   

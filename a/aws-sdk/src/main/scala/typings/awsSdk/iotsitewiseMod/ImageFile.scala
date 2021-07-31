@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageFile extends StObject {
   
   /**
     * The image file contents, represented as a base64-encoded string. The file size must be less than 1 MB.
     */
-  var data: ImageFileData = js.native
+  var data: ImageFileData
   
   /**
     * The file type of the image.
     */
-  var `type`: ImageFileType = js.native
+  var `type`: ImageFileType
 }
 object ImageFile {
   

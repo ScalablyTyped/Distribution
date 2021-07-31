@@ -2,16 +2,14 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTranscriptionJobResponse extends StObject {
   
   /**
     * An object that contains the results of the transcription job.
     */
-  var TranscriptionJob: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJob] = js.native
+  var TranscriptionJob: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJob] = js.undefined
 }
 object GetTranscriptionJobResponse {
   

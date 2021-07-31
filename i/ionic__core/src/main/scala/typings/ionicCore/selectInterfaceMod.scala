@@ -2,15 +2,13 @@ package typings.ionicCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectInterfaceMod {
   
-  @js.native
   trait SelectChangeEventDetail[T] extends StObject {
     
-    var value: T = js.native
+    var value: T
   }
   object SelectChangeEventDetail {
     
@@ -21,7 +19,7 @@ object selectInterfaceMod {
     }
     
     @scala.inline
-    implicit class SelectChangeEventDetailMutableBuilder[Self <: SelectChangeEventDetail[_], T] (val x: Self with SelectChangeEventDetail[T]) extends AnyVal {
+    implicit class SelectChangeEventDetailMutableBuilder[Self <: SelectChangeEventDetail[?], T] (val x: Self & SelectChangeEventDetail[T]) extends AnyVal {
       
       @scala.inline
       def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])

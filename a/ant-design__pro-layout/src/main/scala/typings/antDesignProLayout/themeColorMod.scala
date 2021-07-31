@@ -8,25 +8,23 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeColorMod extends Shortcut {
   
   @JSImport("@ant-design/pro-layout/lib/SettingDrawer/ThemeColor", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[ThemeColorProps with RefAttributes[HTMLDivElement]] = js.native
+  val default: ForwardRefExoticComponent[ThemeColorProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
   trait TagProps extends StObject {
     
-    var check: Boolean = js.native
+    var check: Boolean
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: String = js.native
+    var color: String
     
-    var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object TagProps {
     
@@ -59,16 +57,15 @@ object themeColorMod extends Shortcut {
     }
   }
   
-  @js.native
   trait ThemeColorProps extends StObject {
     
-    var colors: js.UndefOr[js.Array[Color]] = js.native
+    var colors: js.UndefOr[js.Array[Color]] = js.undefined
     
-    def formatMessage(data: DefaultMessage): String = js.native
+    def formatMessage(data: DefaultMessage): String
     
-    def onChange(color: String): Unit = js.native
+    def onChange(color: String): Unit
     
-    var value: String = js.native
+    var value: String
   }
   object ThemeColorProps {
     
@@ -101,8 +98,8 @@ object themeColorMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[ThemeColorProps with RefAttributes[HTMLDivElement]]
+  type _To = ForwardRefExoticComponent[ThemeColorProps & RefAttributes[HTMLDivElement]]
   
   /* This means you don't have to write `default`, but can instead just say `themeColorMod.foo` */
-  override def _to: ForwardRefExoticComponent[ThemeColorProps with RefAttributes[HTMLDivElement]] = default
+  override def _to: ForwardRefExoticComponent[ThemeColorProps & RefAttributes[HTMLDivElement]] = default
 }

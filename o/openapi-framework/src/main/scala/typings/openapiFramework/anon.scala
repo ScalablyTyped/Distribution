@@ -7,23 +7,21 @@ import typings.openapiResponseValidator.mod.IOpenAPIResponseValidator
 import typings.openapiSecurityHandler.mod.IOpenAPISecurityHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Coercer extends StObject {
     
-    var coercer: js.UndefOr[IOpenAPIRequestCoercer] = js.native
+    var coercer: js.UndefOr[IOpenAPIRequestCoercer] = js.undefined
     
-    var defaultSetter: js.UndefOr[IOpenAPIDefaultSetter] = js.native
+    var defaultSetter: js.UndefOr[IOpenAPIDefaultSetter] = js.undefined
     
-    var requestValidator: js.UndefOr[IOpenAPIRequestValidator] = js.native
+    var requestValidator: js.UndefOr[IOpenAPIRequestValidator] = js.undefined
     
-    var responseValidator: js.UndefOr[IOpenAPIResponseValidator] = js.native
+    var responseValidator: js.UndefOr[IOpenAPIResponseValidator] = js.undefined
     
-    var securityHandler: js.UndefOr[IOpenAPISecurityHandler] = js.native
+    var securityHandler: js.UndefOr[IOpenAPISecurityHandler] = js.undefined
   }
   object Coercer {
     
@@ -68,16 +66,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Enum extends StObject {
     
-    var enum: js.Array[String] = js.native
+    var `enum`: js.Array[String]
   }
   object Enum {
     
     @scala.inline
-    def apply(enum: js.Array[String]): Enum = {
-      val __obj = js.Dynamic.literal(enum = enum.asInstanceOf[js.Any])
+    def apply(`enum`: js.Array[String]): Enum = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("enum")(`enum`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Enum]
     }
     

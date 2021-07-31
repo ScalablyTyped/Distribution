@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.DateInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofDateInput extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): DateInput = js.native
+  def extend(proto: js.Object): DateInput
   
   /* static member */
-  var fn: DateInput = js.native
+  var fn: DateInput
 }
 object TypeofDateInput {
   

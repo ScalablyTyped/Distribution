@@ -1,9 +1,11 @@
 package typings.onsenui.mod
 
+import typings.std.AddEventListenerOptions
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *   Underlying components are not subject to any events while the modal component is shown
   */
 @js.native
-trait OnsModalElement extends HTMLElement {
+trait OnsModalElement
+  extends StObject
+     with HTMLElement {
+  
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
   /**
     * @return Resolves to the hidden element
@@ -27,6 +38,13 @@ trait OnsModalElement extends HTMLElement {
     * @description Back-button handler.
     */
   var onDeviceBackButton: js.Any = js.native
+  
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   
   /**
     * @param {Object} [options] Parameter object

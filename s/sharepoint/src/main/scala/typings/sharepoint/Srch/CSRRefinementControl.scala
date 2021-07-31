@@ -2,27 +2,27 @@ package typings.sharepoint.Srch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CSRRefinementControl extends RefinementControl {
+trait CSRRefinementControl
+  extends StObject
+     with RefinementControl {
   
-  var csr_displayTitle: String = js.native
+  var csr_displayTitle: String
   
-  var csr_filters: js.Array[CSRFilter] = js.native
+  var csr_filters: js.Array[CSRFilter]
   
-  var csr_isExpanded: String = js.native
+  var csr_isExpanded: String
   
-  var csr_propertyName: String = js.native
+  var csr_propertyName: String
   
-  var csr_renderEmptyContainer: Boolean = js.native
+  var csr_renderEmptyContainer: Boolean
   
-  var csr_showCounts: Boolean = js.native
+  var csr_showCounts: Boolean
   
-  var csr_useContains: Boolean = js.native
+  var csr_useContains: Boolean
   
-  var csr_useKQL: Boolean = js.native
+  var csr_useKQL: Boolean
 }
 object CSRRefinementControl {
   

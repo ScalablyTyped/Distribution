@@ -7,27 +7,25 @@ import typings.storybookAddonViewport.storybookAddonViewportStrings.other
 import typings.storybookAddonViewport.storybookAddonViewportStrings.tablet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewportMod {
   
   type Styles = ViewportStyles | (js.Function1[/* s */ ViewportStyles, ViewportStyles]) | Null
   
-  @js.native
   trait Viewport extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var styles: Styles = js.native
+    var styles: Styles
     
-    var `type`: desktop | mobile | tablet | other = js.native
+    var `type`: desktop | mobile | tablet | other
   }
   object Viewport {
     
     @scala.inline
     def apply(name: String, `type`: desktop | mobile | tablet | other): Viewport = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], styles = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Viewport]
     }
@@ -54,12 +52,11 @@ object viewportMod {
   
   type ViewportMap = StringDictionary[Viewport]
   
-  @js.native
   trait ViewportStyles extends StObject {
     
-    var height: String = js.native
+    var height: String
     
-    var width: String = js.native
+    var width: String
   }
   object ViewportStyles {
     

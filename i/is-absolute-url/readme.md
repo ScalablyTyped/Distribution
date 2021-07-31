@@ -11,8 +11,8 @@ Check if a URL is absolute
 | Full name          | is-absolute-url |
 | Keywords           | url, absolute, relative, uri, is, check |
 | # releases         | 5 |
-| # dependents       | 103 |
-| # downloads        | 420558667 |
+| # dependents       | 114 |
+| # downloads        | 574512411 |
 | # stars            | 3 |
 
 ## Links

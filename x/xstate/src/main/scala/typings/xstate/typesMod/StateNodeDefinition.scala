@@ -9,52 +9,50 @@ import typings.xstate.xstateStrings.parallel
 import typings.xstate.xstateStrings.shallow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StateNodeDefinition[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */] extends StObject {
+trait StateNodeDefinition[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */] extends StObject {
   
-  var activities: js.Array[ActivityDefinition[TContext, TEvent]] = js.native
+  var activities: js.Array[ActivityDefinition[TContext, TEvent]]
   
-  var context: TContext = js.native
+  var context: TContext
   
-  var data: js.UndefOr[(Mapper[TContext, TEvent, _]) | (PropertyMapper[TContext, TEvent, _])] = js.native
+  var data: js.UndefOr[(Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])] = js.undefined
   
-  var entry: js.Array[ActionObject[TContext, TEvent]] = js.native
+  var entry: js.Array[ActionObject[TContext, TEvent]]
   
-  var exit: js.Array[ActionObject[TContext, TEvent]] = js.native
+  var exit: js.Array[ActionObject[TContext, TEvent]]
   
-  var history: js.UndefOr[Boolean | shallow | deep] = js.native
+  var history: js.UndefOr[Boolean | shallow | deep] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
   var initial: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var invoke: js.Array[InvokeDefinition[TContext, TEvent]] = js.native
+  var invoke: js.Array[InvokeDefinition[TContext, TEvent]]
   
-  var key: String = js.native
+  var key: String
   
-  var meta: js.Any = js.native
+  var meta: js.Any
   
-  var on: TransitionDefinitionMap[TContext, TEvent] = js.native
+  var on: TransitionDefinitionMap[TContext, TEvent]
   
-  var order: Double = js.native
+  var order: Double
   
-  var states: StatesDefinition[TContext, TStateSchema, TEvent] = js.native
+  var states: StatesDefinition[TContext, TStateSchema, TEvent]
   
-  var transitions: js.Array[TransitionDefinition[TContext, TEvent]] = js.native
+  var transitions: js.Array[TransitionDefinition[TContext, TEvent]]
   
-  var `type`: atomic | compound | parallel | `final` | history = js.native
+  var `type`: atomic | compound | parallel | `final` | history
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object StateNodeDefinition {
   
   @scala.inline
-  def apply[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
+  def apply[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](
     activities: js.Array[ActivityDefinition[TContext, TEvent]],
     context: TContext,
     entry: js.Array[ActionObject[TContext, TEvent]],
@@ -75,7 +73,7 @@ object StateNodeDefinition {
   }
   
   @scala.inline
-  implicit class StateNodeDefinitionMutableBuilder[Self <: StateNodeDefinition[_, _, _], TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */] (val x: Self with (StateNodeDefinition[TContext, TStateSchema, TEvent])) extends AnyVal {
+  implicit class StateNodeDefinitionMutableBuilder[Self <: StateNodeDefinition[?, ?, ?], TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */] (val x: Self & (StateNodeDefinition[TContext, TStateSchema, TEvent])) extends AnyVal {
     
     @scala.inline
     def setActivities(value: js.Array[ActivityDefinition[TContext, TEvent]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
@@ -87,10 +85,10 @@ object StateNodeDefinition {
     def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: (Mapper[TContext, TEvent, _]) | (PropertyMapper[TContext, TEvent, _])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: (Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFunction2(value: (TContext, TEvent) => _): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
+    def setDataFunction2(value: (TContext, TEvent) => js.Any): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

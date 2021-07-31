@@ -8,7 +8,6 @@ import typings.reactColor.mod.ColorResult
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swatchesMod {
@@ -22,19 +21,20 @@ object swatchesMod {
   trait SwatchesPicker
     extends Component[SwatchesPickerProps, js.Object, js.Any]
   
-  @js.native
-  trait SwatchesPickerProps extends ColorPickerProps[SwatchesPicker] {
+  trait SwatchesPickerProps
+    extends StObject
+       with ColorPickerProps[SwatchesPicker] {
     
-    var colors: js.UndefOr[js.Array[js.Array[String]]] = js.native
+    var colors: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var onSwatchHover: js.UndefOr[js.Function2[/* color */ ColorResult, /* event */ MouseEvent, Unit]] = js.native
+    var onSwatchHover: js.UndefOr[js.Function2[/* color */ ColorResult, /* event */ MouseEvent, Unit]] = js.undefined
     
     @JSName("styles")
-    var styles_SwatchesPickerProps: js.UndefOr[PartialClassesSwatchesPic] = js.native
+    var styles_SwatchesPickerProps: js.UndefOr[PartialClassesSwatchesPic] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SwatchesPickerProps {
     
@@ -82,16 +82,15 @@ object swatchesMod {
     }
   }
   
-  @js.native
   trait SwatchesPickerStylesProps extends StObject {
     
-    var body: CSSProperties = js.native
+    var body: CSSProperties
     
-    var clear: CSSProperties = js.native
+    var clear: CSSProperties
     
-    var overflow: CSSProperties = js.native
+    var overflow: CSSProperties
     
-    var picker: CSSProperties = js.native
+    var picker: CSSProperties
   }
   object SwatchesPickerStylesProps {
     

@@ -2,23 +2,21 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shape extends StObject {
   
-  var boundingSphereRadius: Double = js.native
+  var boundingSphereRadius: Double
   
-  def calculateLocalInertia(mass: Double, target: Vec3): Vec3 = js.native
+  def calculateLocalInertia(mass: Double, target: Vec3): Vec3
   
-  var collisionResponse: Boolean = js.native
+  var collisionResponse: Boolean
   
-  var `type`: Double = js.native
+  var `type`: Double
   
-  def updateBoundingSphereRadius(): Double = js.native
+  def updateBoundingSphereRadius(): Double
   
-  def volume(): Double = js.native
+  def volume(): Double
 }
 object Shape {
   

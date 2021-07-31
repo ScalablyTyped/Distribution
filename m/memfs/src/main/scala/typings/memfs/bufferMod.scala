@@ -7,10 +7,13 @@ import typings.std.SharedArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bufferMod {
+  
+  @JSImport("memfs/lib/internal/buffer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("memfs/lib/internal/buffer", "Buffer")
   @js.native
@@ -29,7 +32,7 @@ object bufferMod {
       *
       * @param array The octets to store.
       */
-    def this(array: js.Array[_]) = this()
+    def this(array: js.Array[js.Any]) = this()
     /**
       * Allocates a new buffer containing the given {array} of octets.
       *
@@ -60,6 +63,10 @@ object bufferMod {
   /* static members */
   object Buffer {
     
+    @JSImport("memfs/lib/internal/buffer", "Buffer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Allocates a new buffer of {size} octets.
       *
@@ -68,30 +75,22 @@ object bufferMod {
       *    If parameter is omitted, buffer will be filled with zeros.
       * @param encoding encoding used for call to buf.fill while initializing
       */
-    @JSImport("memfs/lib/internal/buffer", "Buffer.alloc")
-    @js.native
-    def alloc(size: Double): typings.buffer.mod.Buffer = js.native
-    @JSImport("memfs/lib/internal/buffer", "Buffer.alloc")
-    @js.native
-    def alloc(size: Double, fill: js.UndefOr[scala.Nothing], encoding: String): typings.buffer.mod.Buffer = js.native
-    @JSImport("memfs/lib/internal/buffer", "Buffer.alloc")
-    @js.native
-    def alloc(size: Double, fill: String): typings.buffer.mod.Buffer = js.native
-    @JSImport("memfs/lib/internal/buffer", "Buffer.alloc")
-    @js.native
-    def alloc(size: Double, fill: String, encoding: String): typings.buffer.mod.Buffer = js.native
-    @JSImport("memfs/lib/internal/buffer", "Buffer.alloc")
-    @js.native
-    def alloc(size: Double, fill: Double): typings.buffer.mod.Buffer = js.native
-    @JSImport("memfs/lib/internal/buffer", "Buffer.alloc")
-    @js.native
-    def alloc(size: Double, fill: Double, encoding: String): typings.buffer.mod.Buffer = js.native
-    @JSImport("memfs/lib/internal/buffer", "Buffer.alloc")
-    @js.native
-    def alloc(size: Double, fill: typings.buffer.mod.Buffer): typings.buffer.mod.Buffer = js.native
-    @JSImport("memfs/lib/internal/buffer", "Buffer.alloc")
-    @js.native
-    def alloc(size: Double, fill: typings.buffer.mod.Buffer, encoding: String): typings.buffer.mod.Buffer = js.native
+    @scala.inline
+    def alloc(size: Double): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+    @scala.inline
+    def alloc(size: Double, fill: String): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+    @scala.inline
+    def alloc(size: Double, fill: String, encoding: String): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+    @scala.inline
+    def alloc(size: Double, fill: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+    @scala.inline
+    def alloc(size: Double, fill: Double, encoding: String): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+    @scala.inline
+    def alloc(size: Double, fill: Unit, encoding: String): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+    @scala.inline
+    def alloc(size: Double, fill: typings.buffer.mod.Buffer): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+    @scala.inline
+    def alloc(size: Double, fill: typings.buffer.mod.Buffer, encoding: String): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
     
     /**
       * Allocates a new buffer of {size} octets, leaving memory not initialized, so the contents
@@ -99,9 +98,8 @@ object bufferMod {
       *
       * @param size count of octets to allocate
       */
-    @JSImport("memfs/lib/internal/buffer", "Buffer.allocUnsafe")
-    @js.native
-    def allocUnsafe(size: Double): typings.buffer.mod.Buffer = js.native
+    @scala.inline
+    def allocUnsafe(size: Double): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocUnsafe")(size.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
     
     /**
       * Allocates a new non-pooled buffer of {size} octets, leaving memory not initialized, so the contents
@@ -109,9 +107,8 @@ object bufferMod {
       *
       * @param size count of octets to allocate
       */
-    @JSImport("memfs/lib/internal/buffer", "Buffer.allocUnsafeSlow")
-    @js.native
-    def allocUnsafeSlow(size: Double): typings.buffer.mod.Buffer = js.native
+    @scala.inline
+    def allocUnsafeSlow(size: Double): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocUnsafeSlow")(size.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
     
     /**
       * Gives the actual byte length of a string. encoding defaults to 'utf8'.
@@ -120,19 +117,16 @@ object bufferMod {
       * @param string string to test.
       * @param encoding encoding used to evaluate (defaults to 'utf8')
       */
-    @JSImport("memfs/lib/internal/buffer", "Buffer.byteLength")
-    @js.native
-    def byteLength(string: String): Double = js.native
-    @JSImport("memfs/lib/internal/buffer", "Buffer.byteLength")
-    @js.native
-    def byteLength(string: String, encoding: String): Double = js.native
+    @scala.inline
+    def byteLength(string: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def byteLength(string: String, encoding: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(string.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * The same as buf1.compare(buf2).
       */
-    @JSImport("memfs/lib/internal/buffer", "Buffer.compare")
-    @js.native
-    def compare(buf1: Uint8Array, buf2: Uint8Array): Double = js.native
+    @scala.inline
+    def compare(buf1: Uint8Array, buf2: Uint8Array): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(buf1.asInstanceOf[js.Any], buf2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns a buffer which is the result of concatenating all the buffers in the list together.
@@ -145,12 +139,10 @@ object bufferMod {
       * @param totalLength Total length of the buffers when concatenated.
       *   If totalLength is not provided, it is read from the buffers in the list. However, this adds an additional loop to the function, so it is faster to provide the length explicitly.
       */
-    @JSImport("memfs/lib/internal/buffer", "Buffer.concat")
-    @js.native
-    def concat(list: js.Array[Uint8Array]): typings.buffer.mod.Buffer = js.native
-    @JSImport("memfs/lib/internal/buffer", "Buffer.concat")
-    @js.native
-    def concat(list: js.Array[Uint8Array], totalLength: Double): typings.buffer.mod.Buffer = js.native
+    @scala.inline
+    def concat(list: js.Array[Uint8Array]): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+    @scala.inline
+    def concat(list: js.Array[Uint8Array], totalLength: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any], totalLength.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
     
     /**
       * When passed a reference to the .buffer property of a TypedArray instance,
@@ -162,37 +154,30 @@ object bufferMod {
       * @param byteOffset
       * @param length
       */
-    @JSImport("memfs/lib/internal/buffer", "Buffer.from")
-    @js.native
-    def from(arrayBuffer: ArrayBuffer): typings.buffer.mod.Buffer = js.native
-    @JSImport("memfs/lib/internal/buffer", "Buffer.from")
-    @js.native
-    def from(arrayBuffer: ArrayBuffer, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.buffer.mod.Buffer = js.native
-    @JSImport("memfs/lib/internal/buffer", "Buffer.from")
-    @js.native
-    def from(arrayBuffer: ArrayBuffer, byteOffset: Double): typings.buffer.mod.Buffer = js.native
-    @JSImport("memfs/lib/internal/buffer", "Buffer.from")
-    @js.native
-    def from(arrayBuffer: ArrayBuffer, byteOffset: Double, length: Double): typings.buffer.mod.Buffer = js.native
+    @scala.inline
+    def from(arrayBuffer: ArrayBuffer): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+    @scala.inline
+    def from(arrayBuffer: ArrayBuffer, byteOffset: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+    @scala.inline
+    def from(arrayBuffer: ArrayBuffer, byteOffset: Double, length: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+    @scala.inline
+    def from(arrayBuffer: ArrayBuffer, byteOffset: Unit, length: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
     /**
       * Allocates a new Buffer using an {array} of octets.
       *
       * @param array
       */
-    @JSImport("memfs/lib/internal/buffer", "Buffer.from")
-    @js.native
-    def from(array: js.Array[_]): typings.buffer.mod.Buffer = js.native
+    @scala.inline
+    def from(array: js.Array[js.Any]): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(array.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
     /**
       * Copies the passed {buffer} data onto a new Buffer instance.
       *
       * @param buffer
       */
-    @JSImport("memfs/lib/internal/buffer", "Buffer.from")
-    @js.native
-    def from(buffer: typings.buffer.mod.Buffer): typings.buffer.mod.Buffer = js.native
-    @JSImport("memfs/lib/internal/buffer", "Buffer.from")
-    @js.native
-    def from(buffer: Uint8Array): typings.buffer.mod.Buffer = js.native
+    @scala.inline
+    def from(buffer: typings.buffer.mod.Buffer): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+    @scala.inline
+    def from(buffer: Uint8Array): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
     /**
       * Creates a new Buffer containing the given JavaScript string {str}.
       * If provided, the {encoding} parameter identifies the character encoding.
@@ -200,21 +185,18 @@ object bufferMod {
       *
       * @param str
       */
-    @JSImport("memfs/lib/internal/buffer", "Buffer.from")
-    @js.native
-    def from(str: String): typings.buffer.mod.Buffer = js.native
-    @JSImport("memfs/lib/internal/buffer", "Buffer.from")
-    @js.native
-    def from(str: String, encoding: String): typings.buffer.mod.Buffer = js.native
+    @scala.inline
+    def from(str: String): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(str.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+    @scala.inline
+    def from(str: String, encoding: String): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(str.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
     
     /**
       * Returns true if {obj} is a Buffer
       *
       * @param obj object to test.
       */
-    @JSImport("memfs/lib/internal/buffer", "Buffer.isBuffer")
-    @js.native
-    def isBuffer(obj: js.Any): /* is buffer.buffer.Buffer */ Boolean = js.native
+    @scala.inline
+    def isBuffer(obj: js.Any): /* is buffer.buffer.Buffer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is buffer.buffer.Buffer */ Boolean]
     
     /**
       * Returns true if {encoding} is a valid encoding argument.
@@ -222,73 +204,51 @@ object bufferMod {
       *
       * @param encoding string to test.
       */
-    @JSImport("memfs/lib/internal/buffer", "Buffer.isEncoding")
-    @js.native
-    def isEncoding(encoding: String): Boolean = js.native
+    @scala.inline
+    def isEncoding(encoding: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEncoding")(encoding.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
-  @JSImport("memfs/lib/internal/buffer", "bufferAllocUnsafe")
-  @js.native
-  def bufferAllocUnsafe(size: Double): typings.buffer.mod.Buffer = js.native
+  @scala.inline
+  def bufferAllocUnsafe(size: Double): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferAllocUnsafe")(size.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
   
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(arrayBuffer: ArrayBuffer): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(arrayBuffer: ArrayBuffer, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(arrayBuffer: ArrayBuffer, byteOffset: Double): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(arrayBuffer: ArrayBuffer, byteOffset: Double, length: Double): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(arrayBuffer: SharedArrayBuffer): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(arrayBuffer: SharedArrayBuffer, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(arrayBuffer: SharedArrayBuffer, byteOffset: Double): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(arrayBuffer: SharedArrayBuffer, byteOffset: Double, length: Double): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(data: js.Array[_]): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(data: Uint8Array): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(obj: ToPrimitive): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(obj: ToPrimitive, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(obj: ToPrimitive, byteOffset: Double): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(obj: ToPrimitive, byteOffset: Double, length: Double): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(obj: ValueOf): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(obj: ValueOf, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(obj: ValueOf, byteOffset: Double): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(obj: ValueOf, byteOffset: Double, length: Double): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(str: String): typings.buffer.mod.Buffer = js.native
-  @JSImport("memfs/lib/internal/buffer", "bufferFrom")
-  @js.native
-  def bufferFrom(str: String, encoding: String): typings.buffer.mod.Buffer = js.native
+  @scala.inline
+  def bufferFrom(arrayBuffer: ArrayBuffer): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(arrayBuffer: ArrayBuffer, byteOffset: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(arrayBuffer: ArrayBuffer, byteOffset: Double, length: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(arrayBuffer: ArrayBuffer, byteOffset: Unit, length: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(arrayBuffer: SharedArrayBuffer): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(arrayBuffer: SharedArrayBuffer, byteOffset: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(arrayBuffer: SharedArrayBuffer, byteOffset: Double, length: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(arrayBuffer: SharedArrayBuffer, byteOffset: Unit, length: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(data: js.Array[js.Any]): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(data.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(data: Uint8Array): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(data.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(obj: ToPrimitive): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(obj: ToPrimitive, byteOffset: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(obj.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(obj: ToPrimitive, byteOffset: Double, length: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(obj.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(obj: ToPrimitive, byteOffset: Unit, length: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(obj.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(obj: ValueOf): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(obj: ValueOf, byteOffset: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(obj.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(obj: ValueOf, byteOffset: Double, length: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(obj.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(obj: ValueOf, byteOffset: Unit, length: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(obj.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(str: String): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(str.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+  @scala.inline
+  def bufferFrom(str: String, encoding: String): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferFrom")(str.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
 }

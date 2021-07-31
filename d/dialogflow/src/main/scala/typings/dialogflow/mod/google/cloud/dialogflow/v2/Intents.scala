@@ -14,7 +14,6 @@ import typings.protobufjs.mod.rpc.Service
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an Intents */
@@ -29,8 +28,8 @@ class Intents protected () extends Service {
     */
   def this(rpcImpl: RPCImpl) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
-  def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+  def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
   
   /**
     * Calls BatchDeleteIntents.
@@ -125,6 +124,10 @@ class Intents protected () extends Service {
 }
 object Intents {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.Intents")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates new Intents service using the specified rpc implementation.
     * @param rpcImpl RPC implementation
@@ -133,18 +136,14 @@ object Intents {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.Intents.create")
-  @js.native
-  def create(rpcImpl: RPCImpl): Intents = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.Intents.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): Intents = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.Intents.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Intents = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.Intents.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Intents = js.native
+  @scala.inline
+  def create(rpcImpl: RPCImpl): Intents = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[Intents]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Intents = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[Intents]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Intents = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Intents]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Intents = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Intents]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.Intents#batchDeleteIntents}.

@@ -2,38 +2,37 @@ package typings.vscodeLanguageserverProtocol.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TextEdit {
+  
+  @JSImport("vscode-languageserver-protocol", "TextEdit")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a delete text edit.
     * @param range The range of text to be deleted.
     */
-  @JSImport("vscode-languageserver-protocol", "TextEdit.del")
-  @js.native
-  def del(range: typings.vscodeLanguageserverTypes.mod.Range): typings.vscodeLanguageserverTypes.mod.TextEdit = js.native
+  @scala.inline
+  def del(range: typings.vscodeLanguageserverTypes.mod.Range): typings.vscodeLanguageserverTypes.mod.TextEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(range.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeLanguageserverTypes.mod.TextEdit]
   
   /**
     * Creates a insert text edit.
     * @param position The position to insert the text at.
     * @param newText The text to be inserted.
     */
-  @JSImport("vscode-languageserver-protocol", "TextEdit.insert")
-  @js.native
-  def insert(position: typings.vscodeLanguageserverTypes.mod.Position, newText: String): typings.vscodeLanguageserverTypes.mod.TextEdit = js.native
+  @scala.inline
+  def insert(position: typings.vscodeLanguageserverTypes.mod.Position, newText: String): typings.vscodeLanguageserverTypes.mod.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(position.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.TextEdit]
   
-  @JSImport("vscode-languageserver-protocol", "TextEdit.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextEdit */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextEdit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextEdit */ Boolean]
   
   /**
     * Creates a replace text edit.
     * @param range The range of text to be replaced.
     * @param newText The new text.
     */
-  @JSImport("vscode-languageserver-protocol", "TextEdit.replace")
-  @js.native
-  def replace(range: typings.vscodeLanguageserverTypes.mod.Range, newText: String): typings.vscodeLanguageserverTypes.mod.TextEdit = js.native
+  @scala.inline
+  def replace(range: typings.vscodeLanguageserverTypes.mod.Range, newText: String): typings.vscodeLanguageserverTypes.mod.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(range.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.TextEdit]
 }

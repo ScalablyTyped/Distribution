@@ -2,31 +2,29 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoteOnProposalInput extends StObject {
   
   /**
     *  The unique identifier of the network. 
     */
-  var NetworkId: ResourceIdString = js.native
+  var NetworkId: ResourceIdString
   
   /**
     *  The unique identifier of the proposal. 
     */
-  var ProposalId: ResourceIdString = js.native
+  var ProposalId: ResourceIdString
   
   /**
     *  The value of the vote. 
     */
-  var Vote: VoteValue = js.native
+  var Vote: VoteValue
   
   /**
     * The unique identifier of the member casting the vote. 
     */
-  var VoterMemberId: ResourceIdString = js.native
+  var VoterMemberId: ResourceIdString
 }
 object VoteOnProposalInput {
   

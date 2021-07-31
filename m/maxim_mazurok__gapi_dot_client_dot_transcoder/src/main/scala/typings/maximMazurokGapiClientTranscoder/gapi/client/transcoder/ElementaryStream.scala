@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementaryStream extends StObject {
   
   /** Encoding of an audio stream. */
-  var audioStream: js.UndefOr[AudioStream] = js.native
+  var audioStream: js.UndefOr[AudioStream] = js.undefined
   
   /** A unique key for this elementary stream. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Encoding of a text stream. For example, closed captions or subtitles. */
-  var textStream: js.UndefOr[TextStream] = js.native
+  var textStream: js.UndefOr[TextStream] = js.undefined
   
   /** Encoding of a video stream. */
-  var videoStream: js.UndefOr[VideoStream] = js.native
+  var videoStream: js.UndefOr[VideoStream] = js.undefined
 }
 object ElementaryStream {
   

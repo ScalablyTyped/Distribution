@@ -8,7 +8,6 @@ import typings.reactNative.mod.TextInputProps
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,54 +19,53 @@ object mod {
   
   type SearchBar = Component[SearchBarProps, js.Any, js.Any]
   
-  @js.native
   trait SearchBarProps extends StObject {
     
-    var alwaysShowBackButton: js.UndefOr[Boolean] = js.native
+    var alwaysShowBackButton: js.UndefOr[Boolean] = js.undefined
     
-    var autoCorrect: js.UndefOr[Boolean] = js.native
+    var autoCorrect: js.UndefOr[Boolean] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var iconBackName: js.UndefOr[String] = js.native
+    var iconBackName: js.UndefOr[String] = js.undefined
     
-    var iconCloseName: js.UndefOr[String] = js.native
+    var iconCloseName: js.UndefOr[String] = js.undefined
     
-    var iconColor: js.UndefOr[String] = js.native
+    var iconColor: js.UndefOr[String] = js.undefined
     
-    var iconPadding: js.UndefOr[Double] = js.native
+    var iconPadding: js.UndefOr[Double] = js.undefined
     
-    var iconSearchName: js.UndefOr[String] = js.native
+    var iconSearchName: js.UndefOr[String] = js.undefined
     
-    var iconSize: js.UndefOr[Double] = js.native
+    var iconSize: js.UndefOr[Double] = js.undefined
     
-    var inputProps: js.UndefOr[TextInputProps] = js.native
+    var inputProps: js.UndefOr[TextInputProps] = js.undefined
     
-    var inputStyle: js.UndefOr[TextStyle] = js.native
+    var inputStyle: js.UndefOr[TextStyle] = js.undefined
     
-    var onBackPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBackPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onEndEditing: js.UndefOr[js.Function0[Unit]] = js.native
+    var onEndEditing: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSearchChange: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.native
+    var onSearchChange: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
     
-    var onSubmitEditing: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSubmitEditing: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var placeholderColor: js.UndefOr[String] = js.native
+    var placeholderColor: js.UndefOr[String] = js.undefined
     
-    var returnKeyType: js.UndefOr[ReturnKeyType | ReturnKeyTypeAndroid | ReturnKeyTypeIOS] = js.native
+    var returnKeyType: js.UndefOr[ReturnKeyType | ReturnKeyTypeAndroid | ReturnKeyTypeIOS] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.native
+    var textStyle: js.UndefOr[TextStyle] = js.undefined
   }
   object SearchBarProps {
     

@@ -2,29 +2,27 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DateTimeUtil {
   
-  @js.native
   trait SimpleDate extends StObject {
     
-    def get_day(): Double = js.native
+    def get_day(): Double
     
-    def get_era(): Double = js.native
+    def get_era(): Double
     
-    def get_month(): Double = js.native
+    def get_month(): Double
     
-    def get_year(): Double = js.native
+    def get_year(): Double
     
-    def set_day(value: Double): Unit = js.native
+    def set_day(value: Double): Unit
     
-    def set_era(value: Double): Unit = js.native
+    def set_era(value: Double): Unit
     
-    def set_month(value: Double): Unit = js.native
+    def set_month(value: Double): Unit
     
-    def set_year(value: Double): Unit = js.native
+    def set_year(value: Double): Unit
   }
   object SimpleDate {
     

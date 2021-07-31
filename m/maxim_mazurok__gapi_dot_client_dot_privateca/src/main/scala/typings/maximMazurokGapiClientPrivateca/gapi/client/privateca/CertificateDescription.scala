@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateDescription extends StObject {
   
   /** Describes lists of issuer CA certificate URLs that appear in the "Authority Information Access" extension in the certificate. */
-  var aiaIssuingCertificateUrls: js.UndefOr[js.Array[String]] = js.native
+  var aiaIssuingCertificateUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Identifies the subject_key_id of the parent certificate, per https://tools.ietf.org/html/rfc5280#section-4.2.1.1 */
-  var authorityKeyId: js.UndefOr[KeyId] = js.native
+  var authorityKeyId: js.UndefOr[KeyId] = js.undefined
   
   /** The hash of the x.509 certificate. */
-  var certFingerprint: js.UndefOr[CertificateFingerprint] = js.native
+  var certFingerprint: js.UndefOr[CertificateFingerprint] = js.undefined
   
   /** Describes some of the technical fields in a certificate. */
-  var configValues: js.UndefOr[ReusableConfigValues] = js.native
+  var configValues: js.UndefOr[ReusableConfigValues] = js.undefined
   
   /** Describes a list of locations to obtain CRL information, i.e. the DistributionPoint.fullName described by https://tools.ietf.org/html/rfc5280#section-4.2.1.13 */
-  var crlDistributionPoints: js.UndefOr[js.Array[String]] = js.native
+  var crlDistributionPoints: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The public key that corresponds to an issued certificate. */
-  var publicKey: js.UndefOr[PublicKey] = js.native
+  var publicKey: js.UndefOr[PublicKey] = js.undefined
   
   /** Describes some of the values in a certificate that are related to the subject and lifetime. */
-  var subjectDescription: js.UndefOr[SubjectDescription] = js.native
+  var subjectDescription: js.UndefOr[SubjectDescription] = js.undefined
   
   /** Provides a means of identifiying certificates that contain a particular public key, per https://tools.ietf.org/html/rfc5280#section-4.2.1.2. */
-  var subjectKeyId: js.UndefOr[KeyId] = js.native
+  var subjectKeyId: js.UndefOr[KeyId] = js.undefined
 }
 object CertificateDescription {
   

@@ -2,32 +2,30 @@ package typings.tern.ternMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeQueryResult extends StObject {
   
   /** If the type had documentation associated with it, these will also be returned. */
-  var doc: js.UndefOr[String] = js.native
+  var doc: js.UndefOr[String] = js.undefined
   
   /** When the inspected expression was an identifier or a property access, this will hold the name of the variable or property. */
-  var exprName: js.UndefOr[String] = js.native
+  var exprName: js.UndefOr[String] = js.undefined
   
   /** Whether the given type was guessed, or should be considered reliable. */
-  var guess: Boolean = js.native
+  var guess: Boolean
   
   /** The name associated with the type. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** If the type had origin information associated with it, these will also be returned. */
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
   /** A description of the type of the value. May be "?" when no type was found. */
-  var `type`: String = js.native
+  var `type`: String
   
   /** If the type had urls associated with it, these will also be returned. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object TypeQueryResult {
   

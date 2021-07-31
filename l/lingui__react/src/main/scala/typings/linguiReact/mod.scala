@@ -18,10 +18,13 @@ import typings.std.Intl.NumberFormatOptions
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@lingui/react", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@lingui/react", "DateFormat")
@@ -97,20 +100,23 @@ object mod {
   class Trans ()
     extends typings.linguiReact.transMod.default
   
-  @JSImport("@lingui/react", "i18nMark")
-  @js.native
-  def i18nMark(id: String): String = js.native
+  @scala.inline
+  def i18nMark(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nMark")(id.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@lingui/react", "withI18n")
-  @js.native
+  @scala.inline
   def withI18n(): js.Function1[
-    /* WrappedComponent */ ComponentConstructor[_], 
-    ComponentClass[Pick[_, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
-  ] = js.native
-  @JSImport("@lingui/react", "withI18n")
-  @js.native
+    /* WrappedComponent */ ComponentConstructor[js.Any], 
+    ComponentClass[Pick[js.Any, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withI18n")().asInstanceOf[js.Function1[
+    /* WrappedComponent */ ComponentConstructor[js.Any], 
+    ComponentClass[Pick[js.Any, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
+  ]]
+  @scala.inline
   def withI18n(options: withI18nOptions): js.Function1[
-    /* WrappedComponent */ ComponentConstructor[_], 
-    ComponentClass[Pick[_, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
-  ] = js.native
+    /* WrappedComponent */ ComponentConstructor[js.Any], 
+    ComponentClass[Pick[js.Any, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withI18n")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* WrappedComponent */ ComponentConstructor[js.Any], 
+    ComponentClass[Pick[js.Any, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
+  ]]
 }

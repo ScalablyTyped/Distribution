@@ -14,17 +14,20 @@ import typings.chromeLauncher.chromeLauncherStrings.wsl
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
+  
+  @JSImport("chrome-launcher/dist/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("chrome-launcher/dist/utils", "ChromeNotInstalledError")
   @js.native
   class ChromeNotInstalledError () extends LauncherError {
     def this(message: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], code: String) = this()
     def this(message: String, code: String) = this()
+    def this(message: Unit, code: String) = this()
     
     @JSName("code")
     var code_ChromeNotInstalledError: LaunchErrorCodes = js.native
@@ -34,8 +37,8 @@ object utilsMod {
   @js.native
   class ChromePathNotSetError () extends LauncherError {
     def this(message: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], code: String) = this()
     def this(message: String, code: String) = this()
+    def this(message: Unit, code: String) = this()
     
     @JSName("code")
     var code_ChromePathNotSetError: LaunchErrorCodes = js.native
@@ -45,8 +48,8 @@ object utilsMod {
   @js.native
   class InvalidUserDataDirectoryError () extends LauncherError {
     def this(message: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], code: String) = this()
     def this(message: String, code: String) = this()
+    def this(message: Unit, code: String) = this()
     
     @JSName("code")
     var code_InvalidUserDataDirectoryError: LaunchErrorCodes = js.native
@@ -54,54 +57,54 @@ object utilsMod {
   
   @JSImport("chrome-launcher/dist/utils", "LauncherError")
   @js.native
-  class LauncherError () extends Error {
+  class LauncherError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], code: String) = this()
     def this(message: String, code: String) = this()
+    def this(message: Unit, code: String) = this()
     
     var code: js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("chrome-launcher/dist/utils", "UnsupportedPlatformError")
   @js.native
   class UnsupportedPlatformError () extends LauncherError {
     def this(message: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], code: String) = this()
     def this(message: String, code: String) = this()
+    def this(message: Unit, code: String) = this()
     
     @JSName("code")
     var code_UnsupportedPlatformError: LaunchErrorCodes = js.native
   }
   
-  @JSImport("chrome-launcher/dist/utils", "defaults")
-  @js.native
-  def defaults[T](`val`: T, `def`: T): T = js.native
-  @JSImport("chrome-launcher/dist/utils", "defaults")
-  @js.native
-  def defaults[T](`val`: js.UndefOr[scala.Nothing], `def`: T): T = js.native
+  @scala.inline
+  def defaults[T](`val`: T, `def`: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(`val`.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def defaults[T](`val`: Unit, `def`: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(`val`.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("chrome-launcher/dist/utils", "delay")
-  @js.native
-  def delay(time: Double): js.Promise[_] = js.native
+  @scala.inline
+  def delay(time: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("chrome-launcher/dist/utils", "getLocalAppDataPath")
-  @js.native
-  def getLocalAppDataPath(path: String): String = js.native
+  @scala.inline
+  def getLocalAppDataPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalAppDataPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("chrome-launcher/dist/utils", "getPlatform")
-  @js.native
-  def getPlatform(): aix | android | darwin | freebsd | linux | openbsd | sunos | win32 | cygwin | netbsd | wsl = js.native
+  @scala.inline
+  def getPlatform(): aix | android | darwin | freebsd | linux | openbsd | sunos | win32 | cygwin | netbsd | wsl = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")().asInstanceOf[aix | android | darwin | freebsd | linux | openbsd | sunos | win32 | cygwin | netbsd | wsl]
   
-  @JSImport("chrome-launcher/dist/utils", "makeTmpDir")
-  @js.native
-  def makeTmpDir(): String = js.native
+  @scala.inline
+  def makeTmpDir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTmpDir")().asInstanceOf[String]
   
-  @JSImport("chrome-launcher/dist/utils", "toWinDirFormat")
-  @js.native
-  def toWinDirFormat(): String = js.native
-  @JSImport("chrome-launcher/dist/utils", "toWinDirFormat")
-  @js.native
-  def toWinDirFormat(dir: String): String = js.native
+  @scala.inline
+  def toWinDirFormat(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toWinDirFormat")().asInstanceOf[String]
+  @scala.inline
+  def toWinDirFormat(dir: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toWinDirFormat")(dir.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_PATH_NOT_SET

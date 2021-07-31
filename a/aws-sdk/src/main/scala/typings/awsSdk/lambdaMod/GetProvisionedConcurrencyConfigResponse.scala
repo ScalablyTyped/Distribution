@@ -2,41 +2,39 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetProvisionedConcurrencyConfigResponse extends StObject {
   
   /**
     * The amount of provisioned concurrency allocated.
     */
-  var AllocatedProvisionedConcurrentExecutions: js.UndefOr[NonNegativeInteger] = js.native
+  var AllocatedProvisionedConcurrentExecutions: js.UndefOr[NonNegativeInteger] = js.undefined
   
   /**
     * The amount of provisioned concurrency available.
     */
-  var AvailableProvisionedConcurrentExecutions: js.UndefOr[NonNegativeInteger] = js.native
+  var AvailableProvisionedConcurrentExecutions: js.UndefOr[NonNegativeInteger] = js.undefined
   
   /**
     * The date and time that a user last updated the configuration, in ISO 8601 format.
     */
-  var LastModified: js.UndefOr[Timestamp] = js.native
+  var LastModified: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The amount of provisioned concurrency requested.
     */
-  var RequestedProvisionedConcurrentExecutions: js.UndefOr[PositiveInteger] = js.native
+  var RequestedProvisionedConcurrentExecutions: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
     * The status of the allocation process.
     */
-  var Status: js.UndefOr[ProvisionedConcurrencyStatusEnum] = js.native
+  var Status: js.UndefOr[ProvisionedConcurrencyStatusEnum] = js.undefined
   
   /**
     * For failed allocations, the reason that provisioned concurrency could not be allocated.
     */
-  var StatusReason: js.UndefOr[String] = js.native
+  var StatusReason: js.UndefOr[String] = js.undefined
 }
 object GetProvisionedConcurrencyConfigResponse {
   

@@ -3,15 +3,13 @@ package typings.phaser.MatterJS
 import typings.phaser.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBound extends StObject {
   
-  var max: X = js.native
+  var max: X
   
-  var min: X = js.native
+  var min: X
 }
 object IBound {
   

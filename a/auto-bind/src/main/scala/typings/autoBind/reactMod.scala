@@ -4,7 +4,6 @@ import typings.autoBind.mod.Options
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMod {
@@ -24,10 +23,12 @@ object reactMod {
   }
   ```
   */
+  @scala.inline
+  def apply[SelfType /* <: Component[js.Object, js.Object, js.Any] */](self: SelfType): SelfType = ^.asInstanceOf[js.Dynamic].apply(self.asInstanceOf[js.Any]).asInstanceOf[SelfType]
+  @scala.inline
+  def apply[SelfType /* <: Component[js.Object, js.Object, js.Any] */](self: SelfType, options: Options): SelfType = (^.asInstanceOf[js.Dynamic].apply(self.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SelfType]
+  
   @JSImport("auto-bind/react", JSImport.Namespace)
   @js.native
-  def apply[SelfType /* <: Component[js.Object, js.Object, _] */](self: SelfType): SelfType = js.native
-  @JSImport("auto-bind/react", JSImport.Namespace)
-  @js.native
-  def apply[SelfType /* <: Component[js.Object, js.Object, _] */](self: SelfType, options: Options): SelfType = js.native
+  val ^ : js.Any = js.native
 }

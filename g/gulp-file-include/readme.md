@@ -4,15 +4,15 @@
 Typings are for version 0.14.0
 
 ## Library description:
-a gulp plugin for file include
+A gulp plugin for file include
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | gulp-file-include |
 | Keywords           | gulpplugin, file, include, replace, gulp, plugin |
-| # releases         | 6 |
-| # dependents       | 62 |
-| # downloads        | 373739 |
+| # releases         | 7 |
+| # dependents       | 64 |
+| # downloads        | 395960 |
 | # stars            | 92 |
 
 ## Links

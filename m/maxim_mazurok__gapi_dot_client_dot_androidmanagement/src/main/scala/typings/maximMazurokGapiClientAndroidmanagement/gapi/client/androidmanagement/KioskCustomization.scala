@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KioskCustomization extends StObject {
   
   /** Specifies whether the Settings app is allowed in kiosk mode. */
-  var deviceSettings: js.UndefOr[String] = js.native
+  var deviceSettings: js.UndefOr[String] = js.undefined
   
   /** Sets the behavior of a device in kiosk mode when a user presses and holds (long-presses) the Power button. */
-  var powerButtonActions: js.UndefOr[String] = js.native
+  var powerButtonActions: js.UndefOr[String] = js.undefined
   
   /** Specifies whether system info and notifications are disabled in kiosk mode. */
-  var statusBar: js.UndefOr[String] = js.native
+  var statusBar: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether system error dialogs for crashed or unresponsive apps are blocked in kiosk mode. When blocked, the system will force-stop the app as if the user chooses the "close
     * app" option on the UI.
     */
-  var systemErrorWarnings: js.UndefOr[String] = js.native
+  var systemErrorWarnings: js.UndefOr[String] = js.undefined
   
   /** Specifies which navigation features are enabled (e.g. Home, Overview buttons) in kiosk mode. */
-  var systemNavigation: js.UndefOr[String] = js.native
+  var systemNavigation: js.UndefOr[String] = js.undefined
 }
 object KioskCustomization {
   

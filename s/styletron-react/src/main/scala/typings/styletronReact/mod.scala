@@ -9,14 +9,9 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ElementType
 import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
-import typings.react.mod.PropsWithChildren
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.ValidationMap
-import typings.react.mod.WeakValidationMap
 import typings.react.mod.global.JSX.Element
 import typings.std.Exclude
-import typings.std.Partial
 import typings.std.Pick
 import typings.std.ReturnType
 import typings.styletronReact.anon.Children
@@ -203,15 +198,19 @@ import typings.styletronStandard.mod.StandardEngine
 import typings.styletronStandard.mod.StyleObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("styletron-react", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("styletron-react", "BrowserDebugEngine")
   @js.native
   class BrowserDebugEngine ()
-    extends typings.styletronReact.mod.DebugEngine {
+    extends StObject
+       with typings.styletronReact.mod.DebugEngine {
     
     def debug(stack: typings.styletronReact.anon.StackIndex): String = js.native
   }
@@ -225,9 +224,8 @@ object mod {
   @js.native
   val DebugEngine: Instantiable0[BrowserDebugEngine | NoopDebugEngine] = js.native
   
-  @JSImport("styletron-react", "DevConsumer")
-  @js.native
-  def DevConsumer(props: Children): Element = js.native
+  @scala.inline
+  def DevConsumer(props: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DevConsumer")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("styletron-react", "DevProvider")
   @js.native
@@ -244,7 +242,8 @@ object mod {
   @JSImport("styletron-react", "NoopDebugEngine")
   @js.native
   class NoopDebugEngine ()
-    extends typings.styletronReact.mod.DebugEngine {
+    extends StObject
+       with typings.styletronReact.mod.DebugEngine {
     
     def debug(): Unit = js.native
   }
@@ -253,8 +252,7 @@ object mod {
   @js.native
   val Provider: Instantiable0[DevProvider] | typings.react.mod.Provider[StandardEngine] = js.native
   
-  @JSImport("styletron-react", "autoComposeDeep")
-  @js.native
+  @scala.inline
   def autoComposeDeep(styletron: Styletron, styleArg: js.Function1[/* props */ js.Object, StyleObject]): ReturnType[
     js.Function2[
       /* styletron */ Styletron, 
@@ -263,9 +261,16 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: typeof composeDynamic */ js.Any
       ]
     ]
-  ] = js.native
-  @JSImport("styletron-react", "autoComposeDeep")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("autoComposeDeep")(styletron.asInstanceOf[js.Any], styleArg.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
+    js.Function2[
+      /* styletron */ Styletron, 
+      /* styleArg */ js.Function1[/* props */ js.Object, StyleObject], 
+      ReturnType[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof composeDynamic */ js.Any
+      ]
+    ]
+  ]]
+  @scala.inline
   def autoComposeDeep(styletron: Styletron, styleArg: StyleObject): ReturnType[
     js.Function2[
       /* styletron */ Styletron, 
@@ -274,10 +279,17 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: typeof composeStatic */ js.Any
       ]
     ]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("autoComposeDeep")(styletron.asInstanceOf[js.Any], styleArg.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
+    js.Function2[
+      /* styletron */ Styletron, 
+      /* style */ StyleObject, 
+      ReturnType[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof composeStatic */ js.Any
+      ]
+    ]
+  ]]
   
-  @JSImport("styletron-react", "autoComposeShallow")
-  @js.native
+  @scala.inline
   def autoComposeShallow(styletron: Styletron, styleArg: js.Function1[/* props */ js.Object, StyleObject]): ReturnType[
     js.Function2[
       /* styletron */ Styletron, 
@@ -286,9 +298,16 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: typeof composeStatic */ js.Any
       ]
     ]
-  ] = js.native
-  @JSImport("styletron-react", "autoComposeShallow")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("autoComposeShallow")(styletron.asInstanceOf[js.Any], styleArg.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
+    js.Function2[
+      /* styletron */ Styletron, 
+      /* style */ StyleObject, 
+      ReturnType[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof composeStatic */ js.Any
+      ]
+    ]
+  ]]
+  @scala.inline
   def autoComposeShallow(styletron: Styletron, styleArg: StyleObject): ReturnType[
     js.Function2[
       /* styletron */ Styletron, 
@@ -297,78 +316,90 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: typeof composeStatic */ js.Any
       ]
     ]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("autoComposeShallow")(styletron.asInstanceOf[js.Any], styleArg.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
+    js.Function2[
+      /* styletron */ Styletron, 
+      /* style */ StyleObject, 
+      ReturnType[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof composeStatic */ js.Any
+      ]
+    ]
+  ]]
   
-  @JSImport("styletron-react", "composeDynamic")
-  @js.native
+  @scala.inline
   def composeDynamic(
     styletron: Styletron,
     reducer: js.Function2[/* style */ StyleObject, /* props */ js.Object, StyleObject]
-  ): Styletron = js.native
+  ): Styletron = (^.asInstanceOf[js.Dynamic].applyDynamic("composeDynamic")(styletron.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[Styletron]
   
-  @JSImport("styletron-react", "composeStatic")
-  @js.native
-  def composeStatic(styletron: Styletron, reducerContainer: ReducerContainer): Styletron = js.native
+  @scala.inline
+  def composeStatic(styletron: Styletron, reducerContainer: ReducerContainer): Styletron = (^.asInstanceOf[js.Dynamic].applyDynamic("composeStatic")(styletron.asInstanceOf[js.Any], reducerContainer.asInstanceOf[js.Any])).asInstanceOf[Styletron]
   
-  @JSImport("styletron-react", "createDeepMergeReducer")
-  @js.native
-  def createDeepMergeReducer(style: StyleObject): AssignmentCommutativeReducerContainer = js.native
+  @scala.inline
+  def createDeepMergeReducer(style: StyleObject): AssignmentCommutativeReducerContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeepMergeReducer")(style.asInstanceOf[js.Any]).asInstanceOf[AssignmentCommutativeReducerContainer]
   
-  @JSImport("styletron-react", "createShallowMergeReducer")
-  @js.native
-  def createShallowMergeReducer(style: StyleObject): AssignmentCommutativeReducerContainer = js.native
+  @scala.inline
+  def createShallowMergeReducer(style: StyleObject): AssignmentCommutativeReducerContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createShallowMergeReducer")(style.asInstanceOf[js.Any]).asInstanceOf[AssignmentCommutativeReducerContainer]
   
-  @JSImport("styletron-react", "createStyled")
-  @js.native
-  def createStyled(options: CreateStyledOptions): StyledFn = js.native
+  @scala.inline
+  def createStyled(options: CreateStyledOptions): StyledFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyled")(options.asInstanceOf[js.Any]).asInstanceOf[StyledFn]
   
-  @JSImport("styletron-react", "createStyledElementComponent")
-  @js.native
-  def createStyledElementComponent(styletron: Styletron): StyletronComponent[_] = js.native
+  @scala.inline
+  def createStyledElementComponent(styletron: Styletron): StyletronComponent[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyledElementComponent")(styletron.asInstanceOf[js.Any]).asInstanceOf[StyletronComponent[js.Any]]
   
-  @JSImport("styletron-react", "dynamicComposeDeep")
-  @js.native
+  @scala.inline
   def dynamicComposeDeep(styletron: Styletron, styleArg: js.Function1[/* props */ js.Object, StyleObject]): ReturnType[
     js.Function2[
       /* styletron */ Styletron, 
       /* reducer */ js.Function2[/* style */ StyleObject, /* props */ js.Object, StyleObject], 
       Styletron
     ]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("dynamicComposeDeep")(styletron.asInstanceOf[js.Any], styleArg.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
+    js.Function2[
+      /* styletron */ Styletron, 
+      /* reducer */ js.Function2[/* style */ StyleObject, /* props */ js.Object, StyleObject], 
+      Styletron
+    ]
+  ]]
   
-  @JSImport("styletron-react", "dynamicComposeShallow")
-  @js.native
+  @scala.inline
   def dynamicComposeShallow(styletron: Styletron, styleArg: js.Function1[/* props */ js.Object, StyleObject]): ReturnType[
     js.Function2[
       /* styletron */ Styletron, 
       /* reducer */ js.Function2[/* style */ StyleObject, /* props */ js.Object, StyleObject], 
       Styletron
     ]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("dynamicComposeShallow")(styletron.asInstanceOf[js.Any], styleArg.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
+    js.Function2[
+      /* styletron */ Styletron, 
+      /* reducer */ js.Function2[/* style */ StyleObject, /* props */ js.Object, StyleObject], 
+      Styletron
+    ]
+  ]]
   
-  @JSImport("styletron-react", "resolveStyle")
-  @js.native
-  def resolveStyle(getInitialStyle: js.Function0[StyleObject], reducers: js.Array[ReducerContainer], props: js.Object): StyleObject = js.native
+  @scala.inline
+  def resolveStyle(getInitialStyle: js.Function0[StyleObject], reducers: js.Array[ReducerContainer], props: js.Object): StyleObject = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveStyle")(getInitialStyle.asInstanceOf[js.Any], reducers.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[StyleObject]
   
-  @JSImport("styletron-react", "staticComposeDeep")
-  @js.native
+  @scala.inline
   def staticComposeDeep(styletron: Styletron, style: StyleObject): ReturnType[
     js.Function2[/* styletron */ Styletron, /* reducerContainer */ ReducerContainer, Styletron]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("staticComposeDeep")(styletron.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
+    js.Function2[/* styletron */ Styletron, /* reducerContainer */ ReducerContainer, Styletron]
+  ]]
   
-  @JSImport("styletron-react", "staticComposeShallow")
-  @js.native
+  @scala.inline
   def staticComposeShallow(styletron: Styletron, style: StyleObject): ReturnType[
     js.Function2[/* styletron */ Styletron, /* reducerContainer */ ReducerContainer, Styletron]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("staticComposeShallow")(styletron.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
+    js.Function2[/* styletron */ Styletron, /* reducerContainer */ ReducerContainer, Styletron]
+  ]]
   
   @JSImport("styletron-react", "styled")
   @js.native
   val styled: ReturnType[js.Function1[/* options */ CreateStyledOptions, StyledFn]] = js.native
   
-  @JSImport("styletron-react", "useStyletron")
-  @js.native
-  def useStyletron(): js.Array[CSSFn] = js.native
+  @scala.inline
+  def useStyletron(): js.Array[CSSFn] = ^.asInstanceOf[js.Dynamic].applyDynamic("useStyletron")().asInstanceOf[js.Array[CSSFn]]
   
   @JSImport("styletron-react", "withStyle")
   @js.native
@@ -386,27 +417,27 @@ object mod {
   @js.native
   val withWrapper: WithWrapperFn = js.native
   
-  @js.native
-  trait AssignmentCommutativeReducerContainer extends ReducerContainer {
+  trait AssignmentCommutativeReducerContainer
+    extends StObject
+       with ReducerContainer {
     
-    var assignmentCommutative: `true` = js.native
+    var assignmentCommutative: `true`
     
-    def factory(style: StyleObject): AssignmentCommutativeReducerContainer = js.native
+    def factory(style: StyleObject): AssignmentCommutativeReducerContainer
     
-    var reducer: Reducer = js.native
+    var reducer: Reducer
     
-    var style: StyleObject = js.native
+    var style: StyleObject
   }
   object AssignmentCommutativeReducerContainer {
     
     @scala.inline
     def apply(
-      assignmentCommutative: `true`,
       factory: StyleObject => AssignmentCommutativeReducerContainer,
       reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject,
       style: StyleObject
     ): AssignmentCommutativeReducerContainer = {
-      val __obj = js.Dynamic.literal(assignmentCommutative = assignmentCommutative.asInstanceOf[js.Any], factory = js.Any.fromFunction1(factory), reducer = js.Any.fromFunction2(reducer), style = style.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(assignmentCommutative = true, factory = js.Any.fromFunction1(factory), reducer = js.Any.fromFunction2(reducer), style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssignmentCommutativeReducerContainer]
     }
     
@@ -429,14 +460,13 @@ object mod {
   
   type CSSFn = js.Function1[/* style */ StyleObject, String]
   
-  @js.native
   trait CreateStyledOptions extends StObject {
     
-    var driver: StyletronDriver = js.native
+    var driver: StyletronDriver
     
-    var getInitialStyle: StyletronGetInitialStyle = js.native
+    var getInitialStyle: StyletronGetInitialStyle
     
-    var wrapper: StyletronWrapper = js.native
+    var wrapper: StyletronWrapper
   }
   object CreateStyledOptions {
     
@@ -464,17 +494,16 @@ object mod {
     }
   }
   
-  @js.native
   trait DevProviderProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
     /** DebugEngineContext */
-    var debug: js.UndefOr[typings.styletronReact.mod.DebugEngine] = js.native
+    var debug: js.UndefOr[typings.styletronReact.mod.DebugEngine] = js.undefined
     
-    var debugAfterHydration: js.UndefOr[Boolean] = js.native
+    var debugAfterHydration: js.UndefOr[Boolean] = js.undefined
     
-    var value: StandardEngine = js.native
+    var value: StandardEngine
   }
   object DevProviderProps {
     
@@ -510,21 +539,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait NonAssignmentCommutativeReducerContainer extends ReducerContainer {
+  trait NonAssignmentCommutativeReducerContainer
+    extends StObject
+       with ReducerContainer {
     
-    var assignmentCommutative: `false` = js.native
+    var assignmentCommutative: `false`
     
-    var reducer: Reducer = js.native
+    var reducer: Reducer
   }
   object NonAssignmentCommutativeReducerContainer {
     
     @scala.inline
-    def apply(
-      assignmentCommutative: `false`,
-      reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject
-    ): NonAssignmentCommutativeReducerContainer = {
-      val __obj = js.Dynamic.literal(assignmentCommutative = assignmentCommutative.asInstanceOf[js.Any], reducer = js.Any.fromFunction2(reducer))
+    def apply(reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject): NonAssignmentCommutativeReducerContainer = {
+      val __obj = js.Dynamic.literal(assignmentCommutative = false, reducer = js.Any.fromFunction2(reducer))
       __obj.asInstanceOf[NonAssignmentCommutativeReducerContainer]
     }
     
@@ -550,35 +577,30 @@ object mod {
     
     @scala.inline
     def AssignmentCommutativeReducerContainer(
-      assignmentCommutative: `true`,
       factory: StyleObject => typings.styletronReact.mod.AssignmentCommutativeReducerContainer,
       reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject,
       style: StyleObject
     ): typings.styletronReact.mod.AssignmentCommutativeReducerContainer = {
-      val __obj = js.Dynamic.literal(assignmentCommutative = assignmentCommutative.asInstanceOf[js.Any], factory = js.Any.fromFunction1(factory), reducer = js.Any.fromFunction2(reducer), style = style.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(assignmentCommutative = true, factory = js.Any.fromFunction1(factory), reducer = js.Any.fromFunction2(reducer), style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.styletronReact.mod.AssignmentCommutativeReducerContainer]
     }
     
     @scala.inline
-    def NonAssignmentCommutativeReducerContainer(
-      assignmentCommutative: `false`,
-      reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject
-    ): typings.styletronReact.mod.NonAssignmentCommutativeReducerContainer = {
-      val __obj = js.Dynamic.literal(assignmentCommutative = assignmentCommutative.asInstanceOf[js.Any], reducer = js.Any.fromFunction2(reducer))
+    def NonAssignmentCommutativeReducerContainer(reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject): typings.styletronReact.mod.NonAssignmentCommutativeReducerContainer = {
+      val __obj = js.Dynamic.literal(assignmentCommutative = false, reducer = js.Any.fromFunction2(reducer))
       __obj.asInstanceOf[typings.styletronReact.mod.NonAssignmentCommutativeReducerContainer]
     }
   }
   
   type StackIndex = Double
   
-  @js.native
   trait StackInfo extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
     
-    var stacktrace: js.Any = js.native
+    var stacktrace: js.Any
   }
   object StackInfo {
     
@@ -1662,7 +1684,7 @@ object mod {
           Exclude[/* keyof react.react.ComponentProps<'webview'> */ String, ClassName]
         ]
       ] = js.native
-    def apply[C /* <: (ComponentClass[_, ComponentState]) | FunctionComponent[_] */](component: C, style: StyleObject): StyletronComponent[
+    def apply[C /* <: (ComponentClass[js.Any, ComponentState]) | FunctionComponent[js.Any] */](component: C, style: StyleObject): StyletronComponent[
         Pick[
           ComponentProps[C], 
           Exclude[/* keyof react.react.ComponentProps<C> */ String, ClassName]
@@ -1672,1074 +1694,1073 @@ object mod {
         (Pick[
           ComponentProps[`object`], 
           Exclude[/* keyof react.react.ComponentProps<'object'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: `var`, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[`var`], 
           Exclude[/* keyof react.react.ComponentProps<'var'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: abbr, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[abbr], 
           Exclude[/* keyof react.react.ComponentProps<'abbr'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: address, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[address], 
           Exclude[/* keyof react.react.ComponentProps<'address'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: animateMotion, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[animateMotion], 
           Exclude[/* keyof react.react.ComponentProps<'animateMotion'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: animateTransform, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[animateTransform], 
           Exclude[/* keyof react.react.ComponentProps<'animateTransform'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: animate, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[animate], 
           Exclude[/* keyof react.react.ComponentProps<'animate'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: area, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[area], 
           Exclude[/* keyof react.react.ComponentProps<'area'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: article, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[article], 
           Exclude[/* keyof react.react.ComponentProps<'article'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: aside, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[aside], 
           Exclude[/* keyof react.react.ComponentProps<'aside'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: a, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[a], 
           Exclude[/* keyof react.react.ComponentProps<'a'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: audio, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[audio], 
           Exclude[/* keyof react.react.ComponentProps<'audio'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: base, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[base], 
           Exclude[/* keyof react.react.ComponentProps<'base'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: bdi, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[bdi], 
           Exclude[/* keyof react.react.ComponentProps<'bdi'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: bdo, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[bdo], 
           Exclude[/* keyof react.react.ComponentProps<'bdo'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: big, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[big], 
           Exclude[/* keyof react.react.ComponentProps<'big'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: blockquote, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[blockquote], 
           Exclude[/* keyof react.react.ComponentProps<'blockquote'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: body, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[body], 
           Exclude[/* keyof react.react.ComponentProps<'body'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: br, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[br], 
           Exclude[/* keyof react.react.ComponentProps<'br'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: b, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[b], 
           Exclude[/* keyof react.react.ComponentProps<'b'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: button, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[button], 
           Exclude[/* keyof react.react.ComponentProps<'button'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: canvas, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[canvas], 
           Exclude[/* keyof react.react.ComponentProps<'canvas'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: caption, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[caption], 
           Exclude[/* keyof react.react.ComponentProps<'caption'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: circle, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[circle], 
           Exclude[/* keyof react.react.ComponentProps<'circle'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: cite, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[cite], 
           Exclude[/* keyof react.react.ComponentProps<'cite'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: clipPath, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[clipPath], 
           Exclude[/* keyof react.react.ComponentProps<'clipPath'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: code, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[code], 
           Exclude[/* keyof react.react.ComponentProps<'code'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: colgroup, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[colgroup], 
           Exclude[/* keyof react.react.ComponentProps<'colgroup'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: col, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[col], 
           Exclude[/* keyof react.react.ComponentProps<'col'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: datalist, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[datalist], 
           Exclude[/* keyof react.react.ComponentProps<'datalist'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: data, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[data], 
           Exclude[/* keyof react.react.ComponentProps<'data'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: dd, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[dd], 
           Exclude[/* keyof react.react.ComponentProps<'dd'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: defs, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[defs], 
           Exclude[/* keyof react.react.ComponentProps<'defs'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: del, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[del], 
           Exclude[/* keyof react.react.ComponentProps<'del'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: desc, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[desc], 
           Exclude[/* keyof react.react.ComponentProps<'desc'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: details, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[details], 
           Exclude[/* keyof react.react.ComponentProps<'details'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: dfn, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[dfn], 
           Exclude[/* keyof react.react.ComponentProps<'dfn'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: dialog, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[dialog], 
           Exclude[/* keyof react.react.ComponentProps<'dialog'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: div, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[div], 
           Exclude[/* keyof react.react.ComponentProps<'div'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: dl, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[dl], 
           Exclude[/* keyof react.react.ComponentProps<'dl'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: dt, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[dt], 
           Exclude[/* keyof react.react.ComponentProps<'dt'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: ellipse, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[ellipse], 
           Exclude[/* keyof react.react.ComponentProps<'ellipse'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: embed, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[embed], 
           Exclude[/* keyof react.react.ComponentProps<'embed'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: em, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[em], 
           Exclude[/* keyof react.react.ComponentProps<'em'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feBlend, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feBlend], 
           Exclude[/* keyof react.react.ComponentProps<'feBlend'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feColorMatrix, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feColorMatrix], 
           Exclude[/* keyof react.react.ComponentProps<'feColorMatrix'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feComponentTransfer, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feComponentTransfer], 
           Exclude[/* keyof react.react.ComponentProps<'feComponentTransfer'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feComposite, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feComposite], 
           Exclude[/* keyof react.react.ComponentProps<'feComposite'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feConvolveMatrix, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feConvolveMatrix], 
           Exclude[/* keyof react.react.ComponentProps<'feConvolveMatrix'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feDiffuseLighting, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feDiffuseLighting], 
           Exclude[/* keyof react.react.ComponentProps<'feDiffuseLighting'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feDisplacementMap, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feDisplacementMap], 
           Exclude[/* keyof react.react.ComponentProps<'feDisplacementMap'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feDistantLight, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feDistantLight], 
           Exclude[/* keyof react.react.ComponentProps<'feDistantLight'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feDropShadow, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feDropShadow], 
           Exclude[/* keyof react.react.ComponentProps<'feDropShadow'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feFlood, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feFlood], 
           Exclude[/* keyof react.react.ComponentProps<'feFlood'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feFuncA, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feFuncA], 
           Exclude[/* keyof react.react.ComponentProps<'feFuncA'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feFuncB, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feFuncB], 
           Exclude[/* keyof react.react.ComponentProps<'feFuncB'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feFuncG, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feFuncG], 
           Exclude[/* keyof react.react.ComponentProps<'feFuncG'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feFuncR, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feFuncR], 
           Exclude[/* keyof react.react.ComponentProps<'feFuncR'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feGaussianBlur, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feGaussianBlur], 
           Exclude[/* keyof react.react.ComponentProps<'feGaussianBlur'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feImage, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feImage], 
           Exclude[/* keyof react.react.ComponentProps<'feImage'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feMergeNode, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feMergeNode], 
           Exclude[/* keyof react.react.ComponentProps<'feMergeNode'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feMerge, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feMerge], 
           Exclude[/* keyof react.react.ComponentProps<'feMerge'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feMorphology, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feMorphology], 
           Exclude[/* keyof react.react.ComponentProps<'feMorphology'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feOffset, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feOffset], 
           Exclude[/* keyof react.react.ComponentProps<'feOffset'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: fePointLight, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[fePointLight], 
           Exclude[/* keyof react.react.ComponentProps<'fePointLight'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feSpecularLighting, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feSpecularLighting], 
           Exclude[/* keyof react.react.ComponentProps<'feSpecularLighting'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feSpotLight, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feSpotLight], 
           Exclude[/* keyof react.react.ComponentProps<'feSpotLight'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feTile, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feTile], 
           Exclude[/* keyof react.react.ComponentProps<'feTile'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: feTurbulence, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[feTurbulence], 
           Exclude[/* keyof react.react.ComponentProps<'feTurbulence'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: fieldset, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[fieldset], 
           Exclude[/* keyof react.react.ComponentProps<'fieldset'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: figcaption, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[figcaption], 
           Exclude[/* keyof react.react.ComponentProps<'figcaption'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: figure, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[figure], 
           Exclude[/* keyof react.react.ComponentProps<'figure'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: filter, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[filter], 
           Exclude[/* keyof react.react.ComponentProps<'filter'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: footer, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[footer], 
           Exclude[/* keyof react.react.ComponentProps<'footer'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: foreignObject, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[foreignObject], 
           Exclude[/* keyof react.react.ComponentProps<'foreignObject'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: form, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[form], 
           Exclude[/* keyof react.react.ComponentProps<'form'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: g, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[g], 
           Exclude[/* keyof react.react.ComponentProps<'g'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: h1, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[h1], 
           Exclude[/* keyof react.react.ComponentProps<'h1'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: h2, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[h2], 
           Exclude[/* keyof react.react.ComponentProps<'h2'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: h3, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[h3], 
           Exclude[/* keyof react.react.ComponentProps<'h3'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: h4, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[h4], 
           Exclude[/* keyof react.react.ComponentProps<'h4'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: h5, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[h5], 
           Exclude[/* keyof react.react.ComponentProps<'h5'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: h6, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[h6], 
           Exclude[/* keyof react.react.ComponentProps<'h6'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: header, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[header], 
           Exclude[/* keyof react.react.ComponentProps<'header'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: head, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[head], 
           Exclude[/* keyof react.react.ComponentProps<'head'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: hgroup, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[hgroup], 
           Exclude[/* keyof react.react.ComponentProps<'hgroup'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: hr, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[hr], 
           Exclude[/* keyof react.react.ComponentProps<'hr'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: html, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[html], 
           Exclude[/* keyof react.react.ComponentProps<'html'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: iframe, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[iframe], 
           Exclude[/* keyof react.react.ComponentProps<'iframe'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: image, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[image], 
           Exclude[/* keyof react.react.ComponentProps<'image'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: img, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[img], 
           Exclude[/* keyof react.react.ComponentProps<'img'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: input, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[input], 
           Exclude[/* keyof react.react.ComponentProps<'input'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: ins, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[ins], 
           Exclude[/* keyof react.react.ComponentProps<'ins'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: i, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[i], 
           Exclude[/* keyof react.react.ComponentProps<'i'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: kbd, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[kbd], 
           Exclude[/* keyof react.react.ComponentProps<'kbd'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: keygen, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[keygen], 
           Exclude[/* keyof react.react.ComponentProps<'keygen'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: label, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[label], 
           Exclude[/* keyof react.react.ComponentProps<'label'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: legend, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[legend], 
           Exclude[/* keyof react.react.ComponentProps<'legend'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: linearGradient, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[linearGradient], 
           Exclude[/* keyof react.react.ComponentProps<'linearGradient'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: line, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[line], 
           Exclude[/* keyof react.react.ComponentProps<'line'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: link, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[link], 
           Exclude[/* keyof react.react.ComponentProps<'link'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: li, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[li], 
           Exclude[/* keyof react.react.ComponentProps<'li'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: main, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[main], 
           Exclude[/* keyof react.react.ComponentProps<'main'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: map, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[map], 
           Exclude[/* keyof react.react.ComponentProps<'map'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: marker, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[marker], 
           Exclude[/* keyof react.react.ComponentProps<'marker'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: mark, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[mark], 
           Exclude[/* keyof react.react.ComponentProps<'mark'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: mask, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[mask], 
           Exclude[/* keyof react.react.ComponentProps<'mask'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: menuitem, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[menuitem], 
           Exclude[/* keyof react.react.ComponentProps<'menuitem'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: menu, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[menu], 
           Exclude[/* keyof react.react.ComponentProps<'menu'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: metadata, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[metadata], 
           Exclude[/* keyof react.react.ComponentProps<'metadata'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: meta, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[meta], 
           Exclude[/* keyof react.react.ComponentProps<'meta'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: meter, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[meter], 
           Exclude[/* keyof react.react.ComponentProps<'meter'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: mpath, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[mpath], 
           Exclude[/* keyof react.react.ComponentProps<'mpath'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: nav, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[nav], 
           Exclude[/* keyof react.react.ComponentProps<'nav'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: noindex, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[noindex], 
           Exclude[/* keyof react.react.ComponentProps<'noindex'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: noscript, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[noscript], 
           Exclude[/* keyof react.react.ComponentProps<'noscript'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: ol, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[ol], 
           Exclude[/* keyof react.react.ComponentProps<'ol'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: optgroup, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[optgroup], 
           Exclude[/* keyof react.react.ComponentProps<'optgroup'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: option, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[option], 
           Exclude[/* keyof react.react.ComponentProps<'option'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: output, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[output], 
           Exclude[/* keyof react.react.ComponentProps<'output'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: param, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[param], 
           Exclude[/* keyof react.react.ComponentProps<'param'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: path, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[path], 
           Exclude[/* keyof react.react.ComponentProps<'path'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: pattern, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[pattern], 
           Exclude[/* keyof react.react.ComponentProps<'pattern'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: picture, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[picture], 
           Exclude[/* keyof react.react.ComponentProps<'picture'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: polygon, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[polygon], 
           Exclude[/* keyof react.react.ComponentProps<'polygon'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: polyline, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[polyline], 
           Exclude[/* keyof react.react.ComponentProps<'polyline'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: pre, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[pre], 
           Exclude[/* keyof react.react.ComponentProps<'pre'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: progress, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[progress], 
           Exclude[/* keyof react.react.ComponentProps<'progress'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: p, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[p], 
           Exclude[/* keyof react.react.ComponentProps<'p'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: q, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[q], 
           Exclude[/* keyof react.react.ComponentProps<'q'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: radialGradient, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[radialGradient], 
           Exclude[/* keyof react.react.ComponentProps<'radialGradient'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: rect, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[rect], 
           Exclude[/* keyof react.react.ComponentProps<'rect'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: rp, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[rp], 
           Exclude[/* keyof react.react.ComponentProps<'rp'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: rt, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[rt], 
           Exclude[/* keyof react.react.ComponentProps<'rt'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: ruby, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[ruby], 
           Exclude[/* keyof react.react.ComponentProps<'ruby'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: samp, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[samp], 
           Exclude[/* keyof react.react.ComponentProps<'samp'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: script, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[script], 
           Exclude[/* keyof react.react.ComponentProps<'script'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: section, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[section], 
           Exclude[/* keyof react.react.ComponentProps<'section'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: select, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[select], 
           Exclude[/* keyof react.react.ComponentProps<'select'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: slot, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[slot], 
           Exclude[/* keyof react.react.ComponentProps<'slot'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: small, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[small], 
           Exclude[/* keyof react.react.ComponentProps<'small'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: source, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[source], 
           Exclude[/* keyof react.react.ComponentProps<'source'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: span, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[span], 
           Exclude[/* keyof react.react.ComponentProps<'span'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: s, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[s], 
           Exclude[/* keyof react.react.ComponentProps<'s'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: stop, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[stop], 
           Exclude[/* keyof react.react.ComponentProps<'stop'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: strong, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[strong], 
           Exclude[/* keyof react.react.ComponentProps<'strong'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: style, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[style], 
           Exclude[/* keyof react.react.ComponentProps<'style'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: sub, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[sub], 
           Exclude[/* keyof react.react.ComponentProps<'sub'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: summary, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[summary], 
           Exclude[/* keyof react.react.ComponentProps<'summary'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: sup, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[sup], 
           Exclude[/* keyof react.react.ComponentProps<'sup'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: svg, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[svg], 
           Exclude[/* keyof react.react.ComponentProps<'svg'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: switch, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[switch], 
           Exclude[/* keyof react.react.ComponentProps<'switch'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: symbol, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[symbol], 
           Exclude[/* keyof react.react.ComponentProps<'symbol'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: table, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[table], 
           Exclude[/* keyof react.react.ComponentProps<'table'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: tbody, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[tbody], 
           Exclude[/* keyof react.react.ComponentProps<'tbody'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: td, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[td], 
           Exclude[/* keyof react.react.ComponentProps<'td'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: template, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[template], 
           Exclude[/* keyof react.react.ComponentProps<'template'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: textPath, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[textPath], 
           Exclude[/* keyof react.react.ComponentProps<'textPath'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: textarea, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[textarea], 
           Exclude[/* keyof react.react.ComponentProps<'textarea'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: text, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[text], 
           Exclude[/* keyof react.react.ComponentProps<'text'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: tfoot, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[tfoot], 
           Exclude[/* keyof react.react.ComponentProps<'tfoot'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: thead, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[thead], 
           Exclude[/* keyof react.react.ComponentProps<'thead'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: th, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[th], 
           Exclude[/* keyof react.react.ComponentProps<'th'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: time, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[time], 
           Exclude[/* keyof react.react.ComponentProps<'time'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: title, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[title], 
           Exclude[/* keyof react.react.ComponentProps<'title'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: track, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[track], 
           Exclude[/* keyof react.react.ComponentProps<'track'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: tr, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[tr], 
           Exclude[/* keyof react.react.ComponentProps<'tr'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: tspan, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[tspan], 
           Exclude[/* keyof react.react.ComponentProps<'tspan'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: ul, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[ul], 
           Exclude[/* keyof react.react.ComponentProps<'ul'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: use, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[use], 
           Exclude[/* keyof react.react.ComponentProps<'use'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: u, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[u], 
           Exclude[/* keyof react.react.ComponentProps<'u'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: video, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[video], 
           Exclude[/* keyof react.react.ComponentProps<'video'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: view, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[view], 
           Exclude[/* keyof react.react.ComponentProps<'view'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: wbr, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[wbr], 
           Exclude[/* keyof react.react.ComponentProps<'wbr'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
     def apply[P /* <: js.Object */](component: webview, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[webview], 
           Exclude[/* keyof react.react.ComponentProps<'webview'> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
-    def apply[C /* <: (ComponentClass[_, ComponentState]) | FunctionComponent[_] */, P /* <: js.Object */](component: C, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
+    def apply[C /* <: (ComponentClass[js.Any, ComponentState]) | FunctionComponent[js.Any] */, P /* <: js.Object */](component: C, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[
         (Pick[
           ComponentProps[C], 
           Exclude[/* keyof react.react.ComponentProps<C> */ String, ClassName]
-        ]) with P
+        ]) & P
       ] = js.native
   }
   
-  @js.native
   trait Styletron extends StObject {
     
-    var base: StyletronBase = js.native
+    var base: StyletronBase
     
-    var debug: js.UndefOr[typings.styletronReact.anon.StackIndex] = js.native
+    var debug: js.UndefOr[typings.styletronReact.anon.StackIndex] = js.undefined
     
-    var driver: StyletronDriver = js.native
+    var driver: StyletronDriver
     
-    var getInitialStyle: StyletronGetInitialStyle = js.native
+    var getInitialStyle: StyletronGetInitialStyle
     
-    var reducers: js.Array[ReducerContainer] = js.native
+    var reducers: js.Array[ReducerContainer]
     
-    var wrapper: StyletronWrapper = js.native
+    var wrapper: StyletronWrapper
   }
   object Styletron {
     
@@ -2786,32 +2807,21 @@ object mod {
   
   type StyletronBase = ElementType[js.Any]
   
-  /* Inlined react.react.FC<P & styletron-react.styletron-react.StyletronComponentInjectedProps<P>> & {  __STYLETRON__ :styletron-react.styletron-react.Styletron} */
   @js.native
-  trait StyletronComponent[P /* <: js.Object */] extends StObject {
-    
-    def apply(props: PropsWithChildren[P with StyletronComponentInjectedProps[P]]): ReactElement | Null = js.native
-    def apply(props: PropsWithChildren[P with StyletronComponentInjectedProps[P]], context: js.Any): ReactElement | Null = js.native
+  trait StyletronComponent[P /* <: js.Object */]
+    extends StObject
+       with FunctionComponent[P & StyletronComponentInjectedProps[P]] {
     
     var __STYLETRON__ : Styletron = js.native
-    
-    var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
-    
-    var defaultProps: js.UndefOr[Partial[P with StyletronComponentInjectedProps[P]]] = js.native
-    
-    var displayName: js.UndefOr[String] = js.native
-    
-    var propTypes: js.UndefOr[WeakValidationMap[P with StyletronComponentInjectedProps[P]]] = js.native
   }
   
-  @js.native
   trait StyletronComponentInjectedProps[P /* <: js.Object */] extends StObject {
     
     @JSName("$as")
-    var $as: js.UndefOr[StyletronBase] = js.native
+    var $as: js.UndefOr[StyletronBase] = js.undefined
     
     @JSName("$style")
-    var $style: js.UndefOr[StyleProp[P]] = js.native
+    var $style: js.UndefOr[StyleProp[P]] = js.undefined
   }
   object StyletronComponentInjectedProps {
     
@@ -2822,7 +2832,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class StyletronComponentInjectedPropsMutableBuilder[Self <: StyletronComponentInjectedProps[_], P /* <: js.Object */] (val x: Self with StyletronComponentInjectedProps[P]) extends AnyVal {
+    implicit class StyletronComponentInjectedPropsMutableBuilder[Self <: StyletronComponentInjectedProps[?], P /* <: js.Object */] (val x: Self & StyletronComponentInjectedProps[P]) extends AnyVal {
       
       @scala.inline
       def set$as(value: StyletronBase): Self = StObject.set(x, "$as", value.asInstanceOf[js.Any])
@@ -2850,19 +2860,19 @@ object mod {
   @js.native
   trait WithStyleFn extends StObject {
     
-    def apply[C /* <: StyletronComponent[_] */](component: C, style: StyleObject): StyletronComponent[ComponentProps[C]] = js.native
-    def apply[C /* <: StyletronComponent[_] */, P /* <: js.Object */](component: C, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[ComponentProps[C] with P] = js.native
+    def apply[C /* <: StyletronComponent[js.Any] */](component: C, style: StyleObject): StyletronComponent[ComponentProps[C]] = js.native
+    def apply[C /* <: StyletronComponent[js.Any] */, P /* <: js.Object */](component: C, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[ComponentProps[C] & P] = js.native
   }
   
   type WithTransformFn = js.Function2[
     /* component */ StyletronComponent[js.Any], 
     /* style */ js.Function2[/* style */ StyleObject, /* props */ js.Object, StyleObject], 
-    StyletronComponent[ComponentProps[StyletronComponent[_]] with js.Object]
+    StyletronComponent[ComponentProps[StyletronComponent[js.Any]] & js.Object]
   ]
   
   type WithWrapperFn = js.Function2[
     /* component */ StyletronComponent[js.Any], 
     /* wrapper */ js.Function1[/* component */ StyletronComponent[js.Any], ComponentType[js.Object]], 
-    StyletronComponent[ComponentProps[StyletronComponent[_]] with js.Object]
+    StyletronComponent[ComponentProps[StyletronComponent[js.Any]] & js.Object]
   ]
 }

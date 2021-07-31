@@ -2,21 +2,19 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodegroupResources extends StObject {
   
   /**
     * The Auto Scaling groups associated with the node group.
     */
-  var autoScalingGroups: js.UndefOr[AutoScalingGroupList] = js.native
+  var autoScalingGroups: js.UndefOr[AutoScalingGroupList] = js.undefined
   
   /**
     * The remote access security group associated with the node group. This security group controls SSH access to the worker nodes.
     */
-  var remoteAccessSecurityGroup: js.UndefOr[String] = js.native
+  var remoteAccessSecurityGroup: js.UndefOr[String] = js.undefined
 }
 object NodegroupResources {
   

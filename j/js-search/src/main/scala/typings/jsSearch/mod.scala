@@ -3,7 +3,6 @@ package typings.jsSearch
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,23 +13,53 @@ object mod {
   
   @JSImport("js-search", "AllSubstringsIndexStrategy")
   @js.native
-  class AllSubstringsIndexStrategy () extends IIndexStrategy
+  class AllSubstringsIndexStrategy ()
+    extends StObject
+       with IIndexStrategy {
+    
+    /* CompleteClass */
+    override def expandToken(token: String): js.Array[String] = js.native
+  }
   
   @JSImport("js-search", "CaseSensitiveSanitizer")
   @js.native
-  class CaseSensitiveSanitizer () extends ISanitizer
+  class CaseSensitiveSanitizer ()
+    extends StObject
+       with ISanitizer {
+    
+    /* CompleteClass */
+    override def sanitize(text: String): String = js.native
+  }
   
   @JSImport("js-search", "ExactWordIndexStrategy")
   @js.native
-  class ExactWordIndexStrategy () extends IIndexStrategy
+  class ExactWordIndexStrategy ()
+    extends StObject
+       with IIndexStrategy {
+    
+    /* CompleteClass */
+    override def expandToken(token: String): js.Array[String] = js.native
+  }
   
   @JSImport("js-search", "LowerCaseSanitizer")
   @js.native
-  class LowerCaseSanitizer () extends ISanitizer
+  class LowerCaseSanitizer ()
+    extends StObject
+       with ISanitizer {
+    
+    /* CompleteClass */
+    override def sanitize(text: String): String = js.native
+  }
   
   @JSImport("js-search", "PrefixIndexStrategy")
   @js.native
-  class PrefixIndexStrategy () extends IIndexStrategy
+  class PrefixIndexStrategy ()
+    extends StObject
+       with IIndexStrategy {
+    
+    /* CompleteClass */
+    override def expandToken(token: String): js.Array[String] = js.native
+  }
   
   @JSImport("js-search", "Search")
   @js.native
@@ -58,12 +87,23 @@ object mod {
   
   @JSImport("js-search", "SimpleTokenizer")
   @js.native
-  class SimpleTokenizer () extends ITokenizer
+  class SimpleTokenizer ()
+    extends StObject
+       with ITokenizer {
+    
+    /* CompleteClass */
+    override def tokenize(text: String): js.Array[String] = js.native
+  }
   
   @JSImport("js-search", "StemmingTokenizer")
   @js.native
-  class StemmingTokenizer protected () extends ITokenizer {
+  class StemmingTokenizer protected ()
+    extends StObject
+       with ITokenizer {
     def this(stemmingFunction: StemmingFunction, decoratedTokenizer: ITokenizer) = this()
+    
+    /* CompleteClass */
+    override def tokenize(text: String): js.Array[String] = js.native
   }
   
   @JSImport("js-search", "StopWordsMap")
@@ -74,15 +114,28 @@ object mod {
   
   @JSImport("js-search", "StopWordsTokenizer")
   @js.native
-  class StopWordsTokenizer protected () extends ITokenizer {
+  class StopWordsTokenizer protected ()
+    extends StObject
+       with ITokenizer {
     def this(decoratedTokenizer: ITokenizer) = this()
+    
+    /* CompleteClass */
+    override def tokenize(text: String): js.Array[String] = js.native
   }
   
   @JSImport("js-search", "TfIdfSearchIndex")
   @js.native
-  class TfIdfSearchIndex protected () extends ISearchIndex {
+  class TfIdfSearchIndex protected ()
+    extends StObject
+       with ISearchIndex {
     def this(uidFieldName: String) = this()
     def this(uidFieldName: js.Array[String]) = this()
+    
+    /* CompleteClass */
+    override def indexDocument(token: String, uid: String, document: js.Object): Unit = js.native
+    
+    /* CompleteClass */
+    override def search(tokens: js.Array[String], corpus: js.Array[js.Object]): js.Array[js.Object] = js.native
   }
   
   @JSImport("js-search", "TokenHighlighter")
@@ -95,12 +148,20 @@ object mod {
   
   @JSImport("js-search", "UnorderedSearchIndex")
   @js.native
-  class UnorderedSearchIndex () extends ISearchIndex
+  class UnorderedSearchIndex ()
+    extends StObject
+       with ISearchIndex {
+    
+    /* CompleteClass */
+    override def indexDocument(token: String, uid: String, document: js.Object): Unit = js.native
+    
+    /* CompleteClass */
+    override def search(tokens: js.Array[String], corpus: js.Array[js.Object]): js.Array[js.Object] = js.native
+  }
   
-  @js.native
   trait IIndexStrategy extends StObject {
     
-    def expandToken(token: String): js.Array[String] = js.native
+    def expandToken(token: String): js.Array[String]
   }
   object IIndexStrategy {
     
@@ -118,10 +179,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ISanitizer extends StObject {
     
-    def sanitize(text: String): String = js.native
+    def sanitize(text: String): String
   }
   object ISanitizer {
     
@@ -139,12 +199,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ISearchIndex extends StObject {
     
-    def indexDocument(token: String, uid: String, document: js.Object): Unit = js.native
+    def indexDocument(token: String, uid: String, document: js.Object): Unit
     
-    def search(tokens: js.Array[String], corpus: js.Array[js.Object]): js.Array[js.Object] = js.native
+    def search(tokens: js.Array[String], corpus: js.Array[js.Object]): js.Array[js.Object]
   }
   object ISearchIndex {
     
@@ -170,17 +229,16 @@ object mod {
   
   type ITfIdfTokenMap = StringDictionary[ITfIdfTokenMetadata]
   
-  @js.native
   trait ITfIdfTokenMetadata extends StObject {
     
     @JSName("$numDocumentOccurrences")
-    var $numDocumentOccurrences: Double = js.native
+    var $numDocumentOccurrences: Double
     
     @JSName("$totalNumOccurrences")
-    var $totalNumOccurrences: Double = js.native
+    var $totalNumOccurrences: Double
     
     @JSName("$uidMap")
-    var $uidMap: ITfIdfUidMap = js.native
+    var $uidMap: ITfIdfUidMap
   }
   object ITfIdfTokenMetadata {
     
@@ -206,14 +264,13 @@ object mod {
   
   type ITfIdfUidMap = StringDictionary[ITfIdfUidMetadata]
   
-  @js.native
   trait ITfIdfUidMetadata extends StObject {
     
     @JSName("$document")
-    var $document: js.Object = js.native
+    var $document: js.Object
     
     @JSName("$numTokenOccurrences")
-    var $numTokenOccurrences: Double = js.native
+    var $numTokenOccurrences: Double
   }
   object ITfIdfUidMetadata {
     
@@ -234,10 +291,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ITokenizer extends StObject {
     
-    def tokenize(text: String): js.Array[String] = js.native
+    def tokenize(text: String): js.Array[String]
   }
   object ITokenizer {
     

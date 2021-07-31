@@ -9,27 +9,25 @@ import typings.devextreme.mod.DevExpress.viz.chartAxisObject
 import typings.devextreme.mod.DevExpress.viz.dxChart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Axis extends StObject {
   
-  var actionType: js.UndefOr[zoom | pan] = js.native
+  var actionType: js.UndefOr[zoom | pan] = js.undefined
   
-  var axis: js.UndefOr[chartAxisObject] = js.native
+  var axis: js.UndefOr[chartAxisObject] = js.undefined
   
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
-  var component: js.UndefOr[dxChart] = js.native
+  var component: js.UndefOr[dxChart] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var range: js.UndefOr[VizRange] = js.native
+  var range: js.UndefOr[VizRange] = js.undefined
 }
 object Axis {
   

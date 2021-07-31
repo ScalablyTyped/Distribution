@@ -5,7 +5,6 @@ import typings.revalidator.revalidatorStrings.`object`
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Revalidator {
@@ -60,12 +59,11 @@ object Revalidator {
     def `utc-millisec`: typings.revalidator.revalidatorStrings.`utc-millisec` = "utc-millisec".asInstanceOf[typings.revalidator.revalidatorStrings.`utc-millisec`]
   }
   
-  @js.native
   trait IErrrorProperty extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var property: String = js.native
+    var property: String
   }
   object IErrrorProperty {
     
@@ -86,23 +84,22 @@ object Revalidator {
     }
   }
   
-  @js.native
   trait IOptions extends StObject {
     
     /** When additionalProperties is true allow additional unvisited properties on the object. (default true) */
-    var additionalProperties: js.UndefOr[Boolean] = js.native
+    var additionalProperties: js.UndefOr[Boolean] = js.undefined
     
     /** Enforce casting of some types (for integers/numbers are only supported) when it's possible, e.g. "42" => 42, but "forty2" => "forty2" for the integer type. */
-    var cast: js.UndefOr[Boolean] = js.native
+    var cast: js.UndefOr[Boolean] = js.undefined
     
     /** When validateFormats is true also validate formats defined in validate.formatExtensions (default true) */
-    var validateFormatExtensions: js.UndefOr[Boolean] = js.native
+    var validateFormatExtensions: js.UndefOr[Boolean] = js.undefined
     
     /** Enforce format constraints (default true) */
-    var validateFormats: js.UndefOr[Boolean] = js.native
+    var validateFormats: js.UndefOr[Boolean] = js.undefined
     
     /** When validateFormats is true treat unrecognized formats as validation errors (default false) */
-    var validateFormatsStrict: js.UndefOr[Boolean] = js.native
+    var validateFormatsStrict: js.UndefOr[Boolean] = js.undefined
   }
   object IOptions {
     
@@ -147,12 +144,11 @@ object Revalidator {
     }
   }
   
-  @js.native
   trait IReturnMessage extends StObject {
     
-    var errors: js.Array[IErrrorProperty] = js.native
+    var errors: js.Array[IErrrorProperty]
     
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object IReturnMessage {
     
@@ -176,77 +172,76 @@ object Revalidator {
     }
   }
   
-  @js.native
   trait ISchema[T] extends StObject {
     
     /**Default value */
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
     /**If false, the value must not be an empty string */
-    var allowEmpty: js.UndefOr[Boolean] = js.native
+    var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
     /**Value must conform to constraint denoted by expected value */
-    var conform: js.UndefOr[js.Function2[/* value */ js.Any, /* data */ js.UndefOr[T], Boolean]] = js.native
+    var conform: js.UndefOr[js.Function2[/* value */ js.Any, /* data */ js.UndefOr[T], Boolean]] = js.undefined
     
     /**Value is valid only if the dependent value is valid */
-    var dependencies: js.UndefOr[String] = js.native
+    var dependencies: js.UndefOr[String] = js.undefined
     
     /**Description for this object */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**Value must be divisible by expected value */
-    var divisibleBy: js.UndefOr[Double] = js.native
+    var divisibleBy: js.UndefOr[Double] = js.undefined
     
     /**Value must be present in the array of expected values */
-    var enum: js.UndefOr[js.Array[_]] = js.native
+    var `enum`: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**Value must be lesser than expected value */
-    var exclusiveMaximum: js.UndefOr[Double] = js.native
+    var exclusiveMaximum: js.UndefOr[Double] = js.undefined
     
     /**Value must be greater than expected value */
-    var exclusiveMinimum: js.UndefOr[Double] = js.native
+    var exclusiveMinimum: js.UndefOr[Double] = js.undefined
     
     /**Value must be a valid format */
-    var format: js.UndefOr[Formats] = js.native
+    var format: js.UndefOr[Formats] = js.undefined
     
     /**Property to describe items for type: 'array' */
-    var items: js.UndefOr[ISchema[T] | JSONSchema[T]] = js.native
+    var items: js.UndefOr[ISchema[T] | JSONSchema[T]] = js.undefined
     
     /**Value must contain fewer than expected number of items */
-    var maxItems: js.UndefOr[Double] = js.native
+    var maxItems: js.UndefOr[Double] = js.undefined
     
     /**The length of value must be greater than or equal to expected value */
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
     /**Value must be lesser than or equal to the expected value */
-    var maximum: js.UndefOr[Double] = js.native
+    var maximum: js.UndefOr[Double] = js.undefined
     
     /**Custom messages for different constraints */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**Custom messages for different constraints */
-    var messages: js.UndefOr[StringDictionary[String]] = js.native
+    var messages: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**Value must contain more than expected number of items */
-    var minItems: js.UndefOr[Double] = js.native
+    var minItems: js.UndefOr[Double] = js.undefined
     
     /**The length of value must be lesser than or equal to expected value */
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
     /**Value must be greater than or equal to the expected value */
-    var minimum: js.UndefOr[Double] = js.native
+    var minimum: js.UndefOr[Double] = js.undefined
     
     /**The expected value regex needs to be satisfied by the value */
-    var pattern: js.UndefOr[RegExp | String] = js.native
+    var pattern: js.UndefOr[RegExp | String] = js.undefined
     
     /**If true, the value should not be undefined */
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
     /**The type of value should be equal to the expected value */
-    var `type`: Types | js.Array[Types] = js.native
+    var `type`: Types | js.Array[Types]
     
     /**Value must hold a unique set of values */
-    var uniqueItems: js.UndefOr[Boolean] = js.native
+    var uniqueItems: js.UndefOr[Boolean] = js.undefined
   }
   object ISchema {
     
@@ -258,7 +253,7 @@ object Revalidator {
     }
     
     @scala.inline
-    implicit class ISchemaMutableBuilder[Self <: ISchema[_], T] (val x: Self with ISchema[T]) extends AnyVal {
+    implicit class ISchemaMutableBuilder[Self <: ISchema[?], T] (val x: Self & ISchema[T]) extends AnyVal {
       
       @scala.inline
       def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
@@ -297,7 +292,7 @@ object Revalidator {
       def setDivisibleByUndefined: Self = StObject.set(x, "divisibleBy", js.undefined)
       
       @scala.inline
-      def setEnum(value: js.Array[_]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      def setEnum(value: js.Array[js.Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
@@ -405,14 +400,13 @@ object Revalidator {
   
   type ISchemas[T] = StringDictionary[ISchema[T] | JSONSchema[T]]
   
-  @js.native
   trait JSONSchema[T] extends StObject {
     
-    var patternProperties: js.UndefOr[ISchemas[T]] = js.native
+    var patternProperties: js.UndefOr[ISchemas[T]] = js.undefined
     
-    var properties: js.UndefOr[ISchemas[T]] = js.native
+    var properties: js.UndefOr[ISchemas[T]] = js.undefined
     
-    var `type`: js.UndefOr[`object`] = js.native
+    var `type`: js.UndefOr[`object`] = js.undefined
   }
   object JSONSchema {
     
@@ -423,7 +417,7 @@ object Revalidator {
     }
     
     @scala.inline
-    implicit class JSONSchemaMutableBuilder[Self <: JSONSchema[_], T] (val x: Self with JSONSchema[T]) extends AnyVal {
+    implicit class JSONSchemaMutableBuilder[Self <: JSONSchema[?], T] (val x: Self & JSONSchema[T]) extends AnyVal {
       
       @scala.inline
       def setPatternProperties(value: ISchemas[T]): Self = StObject.set(x, "patternProperties", value.asInstanceOf[js.Any])

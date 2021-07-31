@@ -2,13 +2,11 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Definition of an error in PaymentData.
   */
-@js.native
 trait PaymentDataError extends StObject {
   
   /**
@@ -19,21 +17,21 @@ trait PaymentDataError extends StObject {
     *
     * This field is required.
     */
-  var intent: CallbackIntent = js.native
+  var intent: CallbackIntent
   
   /**
     * Custom user visible error that will be displayed in a dialog.
     *
     * This field is required.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Predifined error reason
     *
     * This field is required.
     */
-  var reason: ErrorReason = js.native
+  var reason: ErrorReason
 }
 object PaymentDataError {
   

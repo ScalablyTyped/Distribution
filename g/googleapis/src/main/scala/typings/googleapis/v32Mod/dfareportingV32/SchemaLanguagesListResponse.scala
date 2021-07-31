@@ -2,25 +2,23 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Language List Response
   */
-@js.native
 trait SchemaLanguagesListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#languagesListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Language collection.
     */
-  var languages: js.UndefOr[js.Array[SchemaLanguage]] = js.native
+  var languages: js.UndefOr[js.Array[SchemaLanguage]] = js.undefined
 }
 object SchemaLanguagesListResponse {
   

@@ -3,28 +3,28 @@ package typings.history
 import typings.history.mod.History
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createHashHistoryMod {
   
-  @JSImport("history/createHashHistory", JSImport.Default)
+  @JSImport("history/createHashHistory", JSImport.Namespace)
   @js.native
-  def default[S](): History[S] = js.native
-  @JSImport("history/createHashHistory", JSImport.Default)
-  @js.native
-  def default[S](options: HashHistoryBuildOptions): History[S] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[History[S]]
+  @scala.inline
+  def default[S](options: HashHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
+  
   trait HashHistoryBuildOptions extends StObject {
     
-    var basename: js.UndefOr[String] = js.native
+    var basename: js.UndefOr[String] = js.undefined
     
     var getUserConfirmation: js.UndefOr[
         js.Function2[/* message */ String, /* callback */ js.Function1[/* result */ Boolean, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var hashType: js.UndefOr[HashType] = js.native
+    var hashType: js.UndefOr[HashType] = js.undefined
   }
   object HashHistoryBuildOptions {
     

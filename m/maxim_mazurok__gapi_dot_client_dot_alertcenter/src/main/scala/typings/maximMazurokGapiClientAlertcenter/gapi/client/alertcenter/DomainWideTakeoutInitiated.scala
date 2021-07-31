@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainWideTakeoutInitiated extends StObject {
   
   /** The email of the admin who initiated the takeout. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /** The takeout request ID. */
-  var takeoutRequestId: js.UndefOr[String] = js.native
+  var takeoutRequestId: js.UndefOr[String] = js.undefined
 }
 object DomainWideTakeoutInitiated {
   

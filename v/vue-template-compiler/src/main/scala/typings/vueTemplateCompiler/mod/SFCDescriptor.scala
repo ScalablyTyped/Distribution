@@ -2,19 +2,17 @@ package typings.vueTemplateCompiler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SFCDescriptor extends StObject {
   
-  var customBlocks: js.Array[SFCBlock] = js.native
+  var customBlocks: js.Array[SFCBlock]
   
-  var script: js.UndefOr[SFCBlock] = js.native
+  var script: js.UndefOr[SFCBlock] = js.undefined
   
-  var styles: js.Array[SFCBlock] = js.native
+  var styles: js.Array[SFCBlock]
   
-  var template: js.UndefOr[SFCBlock] = js.native
+  var template: js.UndefOr[SFCBlock] = js.undefined
 }
 object SFCDescriptor {
   

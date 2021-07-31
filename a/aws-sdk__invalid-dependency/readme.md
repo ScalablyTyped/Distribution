@@ -4,19 +4,19 @@
 Typings are for version 1.0.0-rc.3
 
 ## Library description:
-[![NPM version](https://img.shields.io/npm/v/@aws-sdk/@aws-sdk/invalid-dependency/rc.svg)](https://www.npmjs.com/package/@aws-sdk/@aws-sdk/invalid-dependency) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/@aws-sdk/invalid-dependency.svg)](https
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/invalid-dependency/latest.svg)](https://www.npmjs.com/package/@aws-sdk/invalid-dependency) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/invalid-dependency.svg)](https://www.npmjs.com/packag
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/invalid-dependency |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 232 |
-| # downloads        | 3348125 |
+| # releases         | 24 |
+| # dependents       | 247 |
+| # downloads        | 6710934 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/master/packages/invalid-dependency)
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/invalid-dependency)
 - [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
 - [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Finvalid-dependency)

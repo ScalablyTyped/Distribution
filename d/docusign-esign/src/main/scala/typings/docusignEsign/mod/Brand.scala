@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Brand extends StObject {
   
   /**
     * The name of the company associated with the brand.
     */
-  var brandCompany: js.UndefOr[String] = js.native
+  var brandCompany: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the brand.
     */
-  var brandId: js.UndefOr[String] = js.native
+  var brandId: js.UndefOr[String] = js.undefined
   
   /**
     * An array of two-letter codes for the languages that you want to use with the brand. The supported languages are:
@@ -66,12 +64,12 @@ trait Brand extends StObject {
     * - Ukranian (`uk`)
     * - Vietnamese (`vi`)
     */
-  var brandLanguages: js.UndefOr[js.Array[String]] = js.native
+  var brandLanguages: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The name of the brand.
     */
-  var brandName: js.UndefOr[String] = js.native
+  var brandName: js.UndefOr[String] = js.undefined
   
   /**
     * An array of name-value pairs specifying the colors that the brand uses for the following elements:
@@ -85,7 +83,7 @@ trait Brand extends StObject {
     js.Array[
       /* A name-value pair that describes an item and provides a value for the item. */ NameValue
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The two-letter code for the language that you want to use as the brand default. The supported languages are:
@@ -135,34 +133,34 @@ trait Brand extends StObject {
     * - Ukranian (`uk`)
     * - Vietnamese (`vi`)
     */
-  var defaultBrandLanguage: js.UndefOr[String] = js.native
+  var defaultBrandLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated.
     */
-  var emailContent: js.UndefOr[js.Array[/* Deprecated. */ BrandEmailContent]] = js.native
+  var emailContent: js.UndefOr[js.Array[/* Deprecated. */ BrandEmailContent]] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, the `brandCompany` property is overriding the name of the company in the account settings.
     */
-  var isOverridingCompanyName: js.UndefOr[Boolean] = js.native
+  var isOverridingCompanyName: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When **true**, the sending brand is the default brand for sending new envelopes.
     */
-  var isSendingDefault: js.UndefOr[Boolean] = js.native
+  var isSendingDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When **true**, the siging brand is the default brand for the signing experience.
     */
-  var isSigningDefault: js.UndefOr[Boolean] = js.native
+  var isSigningDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of name/value pairs specifying the pages to which the user is redirected after the following events occur:
@@ -180,17 +178,17 @@ trait Brand extends StObject {
     js.Array[
       /* A name-value pair that describes an item and provides a value for the item. */ NameValue
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * An array of `brandLink` objects that contain information about the links that the brand uses.
     */
-  var links: js.UndefOr[js.Array[/* Information about a link that a brand uses. */ BrandLink]] = js.native
+  var links: js.UndefOr[js.Array[/* Information about a link that a brand uses. */ BrandLink]] = js.undefined
   
   /**
     * The URIs for retrieving the logos that are associated with the brand.
     */
-  var logos: js.UndefOr[/* Information about the logos associated with the brand. */ BrandLogos] = js.native
+  var logos: js.UndefOr[/* Information about the logos associated with the brand. */ BrandLogos] = js.undefined
   
   /**
     * An object containing the URLs for the four DocuSign master resource files that the brand uses for sending, signing, email messages, and captive (embedded) signing.
@@ -198,7 +196,7 @@ trait Brand extends StObject {
     *
     * **Note**: This object is returned only when the `resourceContentType` is `sending`, `signing`, `email`, or `signing_captive`.
     */
-  var resources: js.UndefOr[BrandResourceUrls] = js.native
+  var resources: js.UndefOr[BrandResourceUrls] = js.undefined
 }
 object Brand {
   

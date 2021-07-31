@@ -4,7 +4,6 @@ import typings.primereact.anon.Value
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listBoxHeaderMod {
@@ -21,14 +20,13 @@ object listBoxHeaderMod {
     def this(props: ListBoxHeaderProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ListBoxHeaderProps extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
-    var onFilter: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onFilter: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
   }
   object ListBoxHeaderProps {
     

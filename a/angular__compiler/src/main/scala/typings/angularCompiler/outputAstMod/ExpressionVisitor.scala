@@ -2,59 +2,57 @@ package typings.angularCompiler.outputAstMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpressionVisitor extends StObject {
   
-  def visitAssertNotNullExpr(ast: AssertNotNull_, context: js.Any): js.Any = js.native
+  def visitAssertNotNullExpr(ast: AssertNotNull_, context: js.Any): js.Any
   
-  def visitBinaryOperatorExpr(ast: BinaryOperatorExpr, context: js.Any): js.Any = js.native
+  def visitBinaryOperatorExpr(ast: BinaryOperatorExpr, context: js.Any): js.Any
   
-  def visitCastExpr(ast: CastExpr, context: js.Any): js.Any = js.native
+  def visitCastExpr(ast: CastExpr, context: js.Any): js.Any
   
-  def visitCommaExpr(ast: CommaExpr, context: js.Any): js.Any = js.native
+  def visitCommaExpr(ast: CommaExpr, context: js.Any): js.Any
   
-  def visitConditionalExpr(ast: ConditionalExpr, context: js.Any): js.Any = js.native
+  def visitConditionalExpr(ast: ConditionalExpr, context: js.Any): js.Any
   
-  def visitExternalExpr(ast: ExternalExpr, context: js.Any): js.Any = js.native
+  def visitExternalExpr(ast: ExternalExpr, context: js.Any): js.Any
   
-  def visitFunctionExpr(ast: FunctionExpr, context: js.Any): js.Any = js.native
+  def visitFunctionExpr(ast: FunctionExpr, context: js.Any): js.Any
   
-  def visitInstantiateExpr(ast: InstantiateExpr, context: js.Any): js.Any = js.native
+  def visitInstantiateExpr(ast: InstantiateExpr, context: js.Any): js.Any
   
-  def visitInvokeFunctionExpr(ast: InvokeFunctionExpr, context: js.Any): js.Any = js.native
+  def visitInvokeFunctionExpr(ast: InvokeFunctionExpr, context: js.Any): js.Any
   
-  def visitInvokeMethodExpr(ast: InvokeMethodExpr, context: js.Any): js.Any = js.native
+  def visitInvokeMethodExpr(ast: InvokeMethodExpr, context: js.Any): js.Any
   
-  def visitLiteralArrayExpr(ast: LiteralArrayExpr, context: js.Any): js.Any = js.native
+  def visitLiteralArrayExpr(ast: LiteralArrayExpr, context: js.Any): js.Any
   
-  def visitLiteralExpr(ast: LiteralExpr, context: js.Any): js.Any = js.native
+  def visitLiteralExpr(ast: LiteralExpr, context: js.Any): js.Any
   
-  def visitLiteralMapExpr(ast: LiteralMapExpr, context: js.Any): js.Any = js.native
+  def visitLiteralMapExpr(ast: LiteralMapExpr, context: js.Any): js.Any
   
-  def visitLocalizedString(ast: LocalizedString_, context: js.Any): js.Any = js.native
+  def visitLocalizedString(ast: LocalizedString_, context: js.Any): js.Any
   
-  def visitNotExpr(ast: NotExpr, context: js.Any): js.Any = js.native
+  def visitNotExpr(ast: NotExpr, context: js.Any): js.Any
   
-  def visitReadKeyExpr(ast: ReadKeyExpr, context: js.Any): js.Any = js.native
+  def visitReadKeyExpr(ast: ReadKeyExpr, context: js.Any): js.Any
   
-  def visitReadPropExpr(ast: ReadPropExpr, context: js.Any): js.Any = js.native
+  def visitReadPropExpr(ast: ReadPropExpr, context: js.Any): js.Any
   
-  def visitReadVarExpr(ast: ReadVarExpr, context: js.Any): js.Any = js.native
+  def visitReadVarExpr(ast: ReadVarExpr, context: js.Any): js.Any
   
-  def visitTypeofExpr(ast: TypeofExpr_, context: js.Any): js.Any = js.native
+  def visitTypeofExpr(ast: TypeofExpr_, context: js.Any): js.Any
   
-  def visitUnaryOperatorExpr(ast: UnaryOperatorExpr, context: js.Any): js.Any = js.native
+  def visitUnaryOperatorExpr(ast: UnaryOperatorExpr, context: js.Any): js.Any
   
-  def visitWrappedNodeExpr(ast: WrappedNodeExpr[_], context: js.Any): js.Any = js.native
+  def visitWrappedNodeExpr(ast: WrappedNodeExpr[js.Any], context: js.Any): js.Any
   
-  def visitWriteKeyExpr(expr: WriteKeyExpr, context: js.Any): js.Any = js.native
+  def visitWriteKeyExpr(expr: WriteKeyExpr, context: js.Any): js.Any
   
-  def visitWritePropExpr(expr: WritePropExpr, context: js.Any): js.Any = js.native
+  def visitWritePropExpr(expr: WritePropExpr, context: js.Any): js.Any
   
-  def visitWriteVarExpr(expr: WriteVarExpr, context: js.Any): js.Any = js.native
+  def visitWriteVarExpr(expr: WriteVarExpr, context: js.Any): js.Any
 }
 object ExpressionVisitor {
   
@@ -80,7 +78,7 @@ object ExpressionVisitor {
     visitReadVarExpr: (ReadVarExpr, js.Any) => js.Any,
     visitTypeofExpr: (TypeofExpr_, js.Any) => js.Any,
     visitUnaryOperatorExpr: (UnaryOperatorExpr, js.Any) => js.Any,
-    visitWrappedNodeExpr: (WrappedNodeExpr[_], js.Any) => js.Any,
+    visitWrappedNodeExpr: (WrappedNodeExpr[js.Any], js.Any) => js.Any,
     visitWriteKeyExpr: (WriteKeyExpr, js.Any) => js.Any,
     visitWritePropExpr: (WritePropExpr, js.Any) => js.Any,
     visitWriteVarExpr: (WriteVarExpr, js.Any) => js.Any
@@ -153,7 +151,7 @@ object ExpressionVisitor {
     def setVisitUnaryOperatorExpr(value: (UnaryOperatorExpr, js.Any) => js.Any): Self = StObject.set(x, "visitUnaryOperatorExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitWrappedNodeExpr(value: (WrappedNodeExpr[_], js.Any) => js.Any): Self = StObject.set(x, "visitWrappedNodeExpr", js.Any.fromFunction2(value))
+    def setVisitWrappedNodeExpr(value: (WrappedNodeExpr[js.Any], js.Any) => js.Any): Self = StObject.set(x, "visitWrappedNodeExpr", js.Any.fromFunction2(value))
     
     @scala.inline
     def setVisitWriteKeyExpr(value: (WriteKeyExpr, js.Any) => js.Any): Self = StObject.set(x, "visitWriteKeyExpr", js.Any.fromFunction2(value))

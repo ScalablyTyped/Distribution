@@ -2,25 +2,23 @@ package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the ModifyPushConfig method.
   */
-@js.native
 trait SchemaModifyPushConfigRequest extends StObject {
   
   /**
     * An empty &lt;code&gt;push_config&lt;/code&gt; indicates that the Pub/Sub
     * system should pause pushing messages from the given subscription.
     */
-  var pushConfig: js.UndefOr[SchemaPushConfig] = js.native
+  var pushConfig: js.UndefOr[SchemaPushConfig] = js.undefined
   
   /**
     * The name of the subscription.
     */
-  var subscription: js.UndefOr[String] = js.native
+  var subscription: js.UndefOr[String] = js.undefined
 }
 object SchemaModifyPushConfigRequest {
   

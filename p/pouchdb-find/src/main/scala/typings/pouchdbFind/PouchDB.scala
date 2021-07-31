@@ -20,7 +20,6 @@ import typings.pouchdbFind.pouchdbFindStrings.number
 import typings.pouchdbFind.pouchdbFindStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PouchDB {
@@ -61,24 +60,23 @@ object PouchDB {
   
   object Find {
     
-    @js.native
     trait CombinationOperators extends StObject {
       
       /** Matches if all the selectors in the array match. */
       @JSName("$and")
-      var $and: js.UndefOr[js.Array[Selector]] = js.native
+      var $and: js.UndefOr[js.Array[Selector]] = js.undefined
       
       /** Matches if none of the selectors in the array match. */
       @JSName("$nor")
-      var $nor: js.UndefOr[js.Array[Selector]] = js.native
+      var $nor: js.UndefOr[js.Array[Selector]] = js.undefined
       
       /** Matches if the given selector does not match. */
       @JSName("$not")
-      var $not: js.UndefOr[Selector] = js.native
+      var $not: js.UndefOr[Selector] = js.undefined
       
       /** Matches if any of the selectors in the array match. All selectors must use the same index. */
       @JSName("$or")
-      var $or: js.UndefOr[js.Array[Selector]] = js.native
+      var $or: js.UndefOr[js.Array[Selector]] = js.undefined
     }
     object CombinationOperators {
       
@@ -126,43 +124,42 @@ object PouchDB {
       }
     }
     
-    @js.native
     trait ConditionOperators extends StObject {
       
       /** Matches an array value if it contains all the elements of the argument array. */
       @JSName("$all")
-      var $all: js.UndefOr[js.Array[_]] = js.native
+      var $all: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       @JSName("$elemMatch")
-      var $elemMatch: js.UndefOr[ConditionOperators] = js.native
+      var $elemMatch: js.UndefOr[ConditionOperators] = js.undefined
       
       /** Match fields equal to this one. */
       @JSName("$eq")
-      var $eq: js.UndefOr[js.Any] = js.native
+      var $eq: js.UndefOr[js.Any] = js.undefined
       
       /** True if the field should exist, false otherwise. */
       @JSName("$exists")
-      var $exists: js.UndefOr[Boolean] = js.native
+      var $exists: js.UndefOr[Boolean] = js.undefined
       
       /** Match fields "greater than" this one. */
       @JSName("$gt")
-      var $gt: js.UndefOr[js.Any] = js.native
+      var $gt: js.UndefOr[js.Any] = js.undefined
       
       /** Match fields "greater than or equal to" this one. */
       @JSName("$gte")
-      var $gte: js.UndefOr[js.Any] = js.native
+      var $gte: js.UndefOr[js.Any] = js.undefined
       
       /** The document field must exist in the list provided. */
       @JSName("$in")
-      var $in: js.UndefOr[js.Array[_]] = js.native
+      var $in: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       /** Match fields "less than" this one. */
       @JSName("$lt")
-      var $lt: js.UndefOr[js.Any] = js.native
+      var $lt: js.UndefOr[js.Any] = js.undefined
       
       /** Match fields "less than or equal to" this one. */
       @JSName("$lte")
-      var $lte: js.UndefOr[js.Any] = js.native
+      var $lte: js.UndefOr[js.Any] = js.undefined
       
       /**
         * Divisor and Remainder are both positive or negative integers.
@@ -171,27 +168,27 @@ object PouchDB {
         * [divisor, remainder]
         */
       @JSName("$mod")
-      var $mod: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+      var $mod: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
       
       /** Match fields not equal to this one. */
       @JSName("$ne")
-      var $ne: js.UndefOr[js.Any] = js.native
+      var $ne: js.UndefOr[js.Any] = js.undefined
       
       /** The document field must not exist in the list provided. */
       @JSName("$nin")
-      var $nin: js.UndefOr[js.Array[_]] = js.native
+      var $nin: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       /** A regular expression pattern to match against the document field. Only matches when the field is a string value and matches the supplied regular expression. */
       @JSName("$regex")
-      var $regex: js.UndefOr[String] = js.native
+      var $regex: js.UndefOr[String] = js.undefined
       
       /** Special condition to match the length of an array field in a document. Non-array fields cannot match this condition. */
       @JSName("$size")
-      var $size: js.UndefOr[Double] = js.native
+      var $size: js.UndefOr[Double] = js.undefined
       
       /** One of: "null", "boolean", "number", "string", "array", or "object". */
       @JSName("$type")
-      var $type: js.UndefOr[`null` | boolean | number | string | array | `object`] = js.native
+      var $type: js.UndefOr[`null` | boolean | number | string | array | `object`] = js.undefined
     }
     object ConditionOperators {
       
@@ -205,7 +202,7 @@ object PouchDB {
       implicit class ConditionOperatorsMutableBuilder[Self <: ConditionOperators] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def set$all(value: js.Array[_]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+        def set$all(value: js.Array[js.Any]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
         
         @scala.inline
         def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
@@ -244,7 +241,7 @@ object PouchDB {
         def set$gteUndefined: Self = StObject.set(x, "$gte", js.undefined)
         
         @scala.inline
-        def set$in(value: js.Array[_]): Self = StObject.set(x, "$in", value.asInstanceOf[js.Any])
+        def set$in(value: js.Array[js.Any]): Self = StObject.set(x, "$in", value.asInstanceOf[js.Any])
         
         @scala.inline
         def set$inUndefined: Self = StObject.set(x, "$in", js.undefined)
@@ -277,7 +274,7 @@ object PouchDB {
         def set$neUndefined: Self = StObject.set(x, "$ne", js.undefined)
         
         @scala.inline
-        def set$nin(value: js.Array[_]): Self = StObject.set(x, "$nin", value.asInstanceOf[js.Any])
+        def set$nin(value: js.Array[js.Any]): Self = StObject.set(x, "$nin", value.asInstanceOf[js.Any])
         
         @scala.inline
         def set$ninUndefined: Self = StObject.set(x, "$nin", js.undefined)
@@ -305,10 +302,9 @@ object PouchDB {
       }
     }
     
-    @js.native
     trait CreateIndexOptions extends StObject {
       
-      var index: Ddoc = js.native
+      var index: Ddoc
     }
     object CreateIndexOptions {
       
@@ -326,10 +322,9 @@ object PouchDB {
       }
     }
     
-    @js.native
     trait CreateIndexResponse[Content /* <: js.Object */] extends StObject {
       
-      var result: String = js.native
+      var result: String
     }
     object CreateIndexResponse {
       
@@ -340,24 +335,23 @@ object PouchDB {
       }
       
       @scala.inline
-      implicit class CreateIndexResponseMutableBuilder[Self <: CreateIndexResponse[_], Content /* <: js.Object */] (val x: Self with CreateIndexResponse[Content]) extends AnyVal {
+      implicit class CreateIndexResponseMutableBuilder[Self <: CreateIndexResponse[?], Content /* <: js.Object */] (val x: Self & CreateIndexResponse[Content]) extends AnyVal {
         
         @scala.inline
         def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       }
     }
     
-    @js.native
     trait DeleteIndexOptions extends StObject {
       
       /** Design document name */
-      var ddoc: String = js.native
+      var ddoc: String
       
       /** Name of the index */
-      var name: String = js.native
+      var name: String
       
       /** Default 'json' */
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object DeleteIndexOptions {
       
@@ -386,26 +380,25 @@ object PouchDB {
     
     type DeleteIndexResponse[Content /* <: js.Object */] = StringDictionary[js.Any]
     
-    @js.native
     trait FindRequest[Content /* <: js.Object */] extends StObject {
       
       /** Defines a list of fields that you want to receive. If omitted, you get the full documents. */
-      var fields: js.UndefOr[js.Array[String]] = js.native
+      var fields: js.UndefOr[js.Array[String]] = js.undefined
       
       /** Maximum number of documents to return. */
-      var limit: js.UndefOr[Double] = js.native
+      var limit: js.UndefOr[Double] = js.undefined
       
       /** Defines a selector to filter the results. Required */
-      var selector: Selector = js.native
+      var selector: Selector
       
       /** Number of docs to skip before returning. */
-      var skip: js.UndefOr[Double] = js.native
+      var skip: js.UndefOr[Double] = js.undefined
       
       /** Defines a list of fields defining how you want to sort. Note that sorted fields also have to be selected in the selector. */
-      var sort: js.UndefOr[js.Array[String | (StringDictionary[asc | desc])]] = js.native
+      var sort: js.UndefOr[js.Array[String | (StringDictionary[asc | desc])]] = js.undefined
       
       /** Set which index to use for the query. It can be “design-doc-name” or “[‘design-doc-name’, ‘name’]”. */
-      var use_index: js.UndefOr[String | (js.Tuple2[String, String])] = js.native
+      var use_index: js.UndefOr[String | (js.Tuple2[String, String])] = js.undefined
     }
     object FindRequest {
       
@@ -416,7 +409,7 @@ object PouchDB {
       }
       
       @scala.inline
-      implicit class FindRequestMutableBuilder[Self <: FindRequest[_], Content /* <: js.Object */] (val x: Self with FindRequest[Content]) extends AnyVal {
+      implicit class FindRequestMutableBuilder[Self <: FindRequest[?], Content /* <: js.Object */] (val x: Self & FindRequest[Content]) extends AnyVal {
         
         @scala.inline
         def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
@@ -459,21 +452,20 @@ object PouchDB {
       }
     }
     
-    @js.native
     trait FindResponse[Content /* <: js.Object */] extends StObject {
       
       var docs: js.Array[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ _
-          ] = js.native
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ js.Any
+          ]
       
-      var warning: js.UndefOr[String] = js.native
+      var warning: js.UndefOr[String] = js.undefined
     }
     object FindResponse {
       
       @scala.inline
       def apply[Content /* <: js.Object */](
         docs: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ js.Any
             ]
       ): FindResponse[Content] = {
         val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any])
@@ -481,17 +473,19 @@ object PouchDB {
       }
       
       @scala.inline
-      implicit class FindResponseMutableBuilder[Self <: FindResponse[_], Content /* <: js.Object */] (val x: Self with FindResponse[Content]) extends AnyVal {
+      implicit class FindResponseMutableBuilder[Self <: FindResponse[?], Content /* <: js.Object */] (val x: Self & FindResponse[Content]) extends AnyVal {
         
         @scala.inline
         def setDocs(
           value: js.Array[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ js.Any
                 ]
         ): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setDocsVarargs(value: js.Any*): Self = StObject.set(x, "docs", js.Array(value :_*))
+        def setDocsVarargs(
+          value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ js.Any)*
+        ): Self = StObject.set(x, "docs", js.Array(value :_*))
         
         @scala.inline
         def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
@@ -501,10 +495,9 @@ object PouchDB {
       }
     }
     
-    @js.native
     trait GetIndexesResponse[Content /* <: js.Object */] extends StObject {
       
-      var indexes: js.Array[Index] = js.native
+      var indexes: js.Array[Index]
     }
     object GetIndexesResponse {
       
@@ -515,7 +508,7 @@ object PouchDB {
       }
       
       @scala.inline
-      implicit class GetIndexesResponseMutableBuilder[Self <: GetIndexesResponse[_], Content /* <: js.Object */] (val x: Self with GetIndexesResponse[Content]) extends AnyVal {
+      implicit class GetIndexesResponseMutableBuilder[Self <: GetIndexesResponse[?], Content /* <: js.Object */] (val x: Self & GetIndexesResponse[Content]) extends AnyVal {
         
         @scala.inline
         def setIndexes(value: js.Array[Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
@@ -525,25 +518,24 @@ object PouchDB {
       }
     }
     
-    @js.native
     trait Index extends StObject {
       
       /** Design document name (i.e. the part after '_design/', auto-generated if you don't include it */
-      var ddoc: String | Null = js.native
+      var ddoc: String | Null
       
-      var `def`: Fields = js.native
+      var `def`: Fields
       
       /** Name of the index, auto-generated if you don't include it */
-      var name: String = js.native
+      var name: String
       
       /** Only supports 'json' */
-      var `type`: String = js.native
+      var `type`: String
     }
     object Index {
       
       @scala.inline
       def apply(`def`: Fields, name: String, `type`: String): Index = {
-        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], ddoc = null)
         __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Index]
@@ -569,12 +561,12 @@ object PouchDB {
       }
     }
     
-    @js.native
     trait Selector
-      extends CombinationOperators
+      extends StObject
+         with CombinationOperators
          with /* field */ StringDictionary[Selector | js.Array[Selector] | ConditionOperators | js.Any] {
       
-      var _id: js.UndefOr[String | ConditionOperators] = js.native
+      var _id: js.UndefOr[String | ConditionOperators] = js.undefined
     }
     object Selector {
       

@@ -5,69 +5,67 @@ import typings.nwJs.nwJsStrings.no_restriction
 import typings.nwJs.nwJsStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents information about an HTTP cookie.
   */
-@js.native
 trait Cookie extends StObject {
   
   /**
     * The domain of the cookie (e.g. "www.google.com", "example.com").
     */
-  var domain: String = js.native
+  var domain: String
   
   /**
     * (Optional) The expiration date of the cookie as the number of seconds since the UNIX epoch. Not provided for session cookies.
     */
-  var expirationDate: js.UndefOr[Double] = js.native
+  var expirationDate: js.UndefOr[Double] = js.undefined
   
   /**
     * True if the cookie is a host-only cookie (i.e. a request's host must exactly match the domain of the cookie).
     */
-  var hostOnly: Boolean = js.native
+  var hostOnly: Boolean
   
   /**
     * True if the cookie is marked as HttpOnly (i.e. the cookie is inaccessible to client-side scripts).
     */
-  var httpOnly: Boolean = js.native
+  var httpOnly: Boolean
   
   /**
     * The name of the cookie.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The path of the cookie.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * The cookie's same-site status (i.e. whether the cookie is sent with cross-site requests).
     */
-  var sameSite: String | no_restriction | lax | strict = js.native
+  var sameSite: String | no_restriction | lax | strict
   
   /**
     * True if the cookie is marked as Secure (i.e. its scope is limited to secure channels, typically HTTPS).
     */
-  var secure: Boolean = js.native
+  var secure: Boolean
   
   /**
     * True if the cookie is a session cookie, as opposed to a persistent cookie with an expiration date.
     */
-  var session: Boolean = js.native
+  var session: Boolean
   
   /**
     * The ID of the cookie store containing this cookie.
     */
-  var storeId: String = js.native
+  var storeId: String
   
   /**
     * The value of the cookie.
     */
-  var value: String = js.native
+  var value: String
 }
 object Cookie {
   

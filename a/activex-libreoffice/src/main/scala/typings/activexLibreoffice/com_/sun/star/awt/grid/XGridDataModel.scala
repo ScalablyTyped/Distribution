@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,22 +15,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If you do not need your own model implementation, you can also use the {@link DefaultGridDataModel} .
   * @since OOo 3.3
   */
-@js.native
 trait XGridDataModel
-  extends XComponent
+  extends StObject
+     with XComponent
      with XCloneable {
   
   /** denotes the number of columns for which the model can provide data */
-  var ColumnCount: Double = js.native
+  var ColumnCount: Double
   
   /** denotes the number of rows for which the model can provide data */
-  var RowCount: Double = js.native
+  var RowCount: Double
   
   /**
     * retrieves the data for a given cell
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the column or row index do not denote a valid cell position.
     */
-  def getCellData(Column: Double, RowIndex: Double): js.Any = js.native
+  def getCellData(Column: Double, RowIndex: Double): js.Any
   
   /**
     * retrieves the tool tip to be displayed when the mouse hovers over a given cell
@@ -41,7 +40,7 @@ trait XGridDataModel
     * If `VOID` is returned here, the cell's content will be displayed as tip, but only if it does not fit into the cell.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the column or row index do not denote a valid cell position.
     */
-  def getCellToolTip(Column: Double, RowIndex: Double): js.Any = js.native
+  def getCellToolTip(Column: Double, RowIndex: Double): js.Any
   
   /**
     * retrieves the data for a complete row
@@ -50,7 +49,7 @@ trait XGridDataModel
     * @param RowIndex the index of the row whose data should is to be retrieved.
     * @throws com::sun::star::lang::IndexOutOfBoundsException of the given row index does not denote a valid row.
     */
-  def getRowData(RowIndex: Double): SafeArray[_] = js.native
+  def getRowData(RowIndex: Double): SafeArray[js.Any]
   
   /**
     * retrieves the heading of a given row
@@ -60,7 +59,7 @@ trait XGridDataModel
     * At the moment, only strings are supported as row headings.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the given index does not denote a valid row.
     */
-  def getRowHeading(RowIndex: Double): js.Any = js.native
+  def getRowHeading(RowIndex: Double): js.Any
 }
 object XGridDataModel {
   
@@ -74,7 +73,7 @@ object XGridDataModel {
     dispose: () => Unit,
     getCellData: (Double, Double) => js.Any,
     getCellToolTip: (Double, Double) => js.Any,
-    getRowData: Double => SafeArray[_],
+    getRowData: Double => SafeArray[js.Any],
     getRowHeading: Double => js.Any,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -97,7 +96,7 @@ object XGridDataModel {
     def setGetCellToolTip(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellToolTip", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetRowData(value: Double => SafeArray[_]): Self = StObject.set(x, "getRowData", js.Any.fromFunction1(value))
+    def setGetRowData(value: Double => SafeArray[js.Any]): Self = StObject.set(x, "getRowData", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetRowHeading(value: Double => js.Any): Self = StObject.set(x, "getRowHeading", js.Any.fromFunction1(value))

@@ -2,16 +2,14 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAssetRequest extends StObject {
   
   /**
     * The ID of an MediaPackage VOD Asset resource.
     */
-  var Id: string = js.native
+  var Id: string
 }
 object DescribeAssetRequest {
   

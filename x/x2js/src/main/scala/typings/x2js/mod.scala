@@ -9,7 +9,6 @@ import typings.x2js.x2jsStrings.property
 import typings.x2js.x2jsStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,11 +22,12 @@ object mod {
     * 
     * @memberOf X2JS
     */
-  class ^ () extends X2JS {
+  class ^ ()
+    extends StObject
+       with X2JS {
     def this(config: Options) = this()
   }
   
-  @js.native
   trait AttributeConverter extends StObject {
     
     /**
@@ -39,7 +39,7 @@ object mod {
       * 
       * @memberOf X2JS.AttributeConverter
       */
-    def convert(name: String, value: js.Any): String = js.native
+    def convert(name: String, value: js.Any): String
     
     /**
       * Indicates whether an attribute should be converted.
@@ -50,7 +50,7 @@ object mod {
       * 
       * @memberOf X2JS.AttributeConverter
       */
-    def test(name: String, value: js.Any): Boolean = js.native
+    def test(name: String, value: js.Any): Boolean
   }
   object AttributeConverter {
     
@@ -71,7 +71,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -80,7 +79,7 @@ object mod {
       * @type {('property' | 'none')}
       * @memberOf X2JS.Options
       */
-    var arrayAccessForm: js.UndefOr[property | none] = js.native
+    var arrayAccessForm: js.UndefOr[property | none] = js.undefined
     
     /**
       * Any elements that match the paths listed here will be stored in JavaScript objects as arrays even if there is only one of them. The path can be a plain string (parent.child1.child2), a regex (/.*\.child2/) or function(elementName, elementPath).
@@ -92,7 +91,7 @@ object mod {
         js.Array[
           String | RegExp | (js.Function2[/* elementName */ String, /* elementPath */ String, Boolean])
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Allows attribute values to be converted on the fly during parsing to objects.
@@ -100,7 +99,7 @@ object mod {
       * @type {Array<X2JS.AttributeConverter>}
       * @memberOf X2JS.Options
       */
-    var attributeConverters: js.UndefOr[js.Array[AttributeConverter]] = js.native
+    var attributeConverters: js.UndefOr[js.Array[AttributeConverter]] = js.undefined
     
     /**
       * Prefix to use for properties that are created to represent XML attributes. 
@@ -108,7 +107,7 @@ object mod {
       * @type {string}
       * @memberOf X2JS.Options
       */
-    var attributePrefix: js.UndefOr[String] = js.native
+    var attributePrefix: js.UndefOr[String] = js.undefined
     
     /**
       * Any elements that match the paths here will have their text parsed as an XML datetime value (2011-11-12T13:00:00-07:00 style). The path can be a plain string (parent.child1.child2), a regex (/.*\.child2/) or function(elementPath).
@@ -116,7 +115,7 @@ object mod {
       * @type {(Array<string | RegExp | ((elementPath: string) => boolean)>)}
       * @memberOf X2JS.Options
       */
-    var datetimeAccessFormPaths: js.UndefOr[js.Array[String | RegExp | (js.Function1[/* elementPath */ String, Boolean])]] = js.native
+    var datetimeAccessFormPaths: js.UndefOr[js.Array[String | RegExp | (js.Function1[/* elementPath */ String, Boolean])]] = js.undefined
     
     /**
       * If "text" then <empty></empty> will be transformed to "". If "object" then <empty></empty> will be transformed to {}.
@@ -124,7 +123,7 @@ object mod {
       * @type {('object' | 'text')}
       * @memberOf X2JS.Options
       */
-    var emptyNodeForm: js.UndefOr[`object` | text] = js.native
+    var emptyNodeForm: js.UndefOr[`object` | text] = js.undefined
     
     /**
       * If true, a toString function is generated to print nodes containing text or cdata. Useful if you want to accept both plain text and CData as equivalent inputs.
@@ -132,7 +131,7 @@ object mod {
       * @type {boolean}
       * @memberOf X2JS.Options
       */
-    var enableToStringFunc: js.UndefOr[Boolean] = js.native
+    var enableToStringFunc: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether XML characters in text are escaped when reading/writing XML.
@@ -140,7 +139,7 @@ object mod {
       * @type {boolean}
       * @memberOf X2JS.Options
       */
-    var escapeMode: js.UndefOr[Boolean] = js.native
+    var escapeMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the root element of the XML document is ignored when converting to objects. The result will directly have the root element's children as its own properties.
@@ -148,7 +147,7 @@ object mod {
       * @type {boolean}
       * @memberOf X2JS.Options
       */
-    var ignoreRoot: js.UndefOr[Boolean] = js.native
+    var ignoreRoot: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If this property defined as false and an XML element has CData node ONLY, it will be converted to text without additional property "__cdata".
@@ -156,7 +155,7 @@ object mod {
       * @type {boolean}
       * @memberOf X2JS.Options
       */
-    var keepCData: js.UndefOr[Boolean] = js.native
+    var keepCData: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If this property defined as true, use { __text: 'abc' } over 'abc'
@@ -164,7 +163,7 @@ object mod {
       * @type {boolean}
       * @memberOf X2JS.Options
       */
-    var keepText: js.UndefOr[Boolean] = js.native
+    var keepText: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, empty elements will created as self closing elements (<element />). If false, empty elements will be created with start and end tags (<element></element>).
@@ -172,7 +171,7 @@ object mod {
       * @type {boolean}
       * @memberOf X2JS.Options
       */
-    var selfClosingElements: js.UndefOr[Boolean] = js.native
+    var selfClosingElements: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, empty text tags are ignored for elements with child nodes.
@@ -180,7 +179,7 @@ object mod {
       * @type {boolean}
       * @memberOf X2JS.Options
       */
-    var skipEmptyTextNodesForObj: js.UndefOr[Boolean] = js.native
+    var skipEmptyTextNodesForObj: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, whitespace is trimmed from text nodes.
@@ -188,7 +187,7 @@ object mod {
       * @type {boolean}
       * @memberOf X2JS.Options
       */
-    var stripWhitespaces: js.UndefOr[Boolean] = js.native
+    var stripWhitespaces: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, double quotes are used in generated XML. 
@@ -196,7 +195,7 @@ object mod {
       * @type {boolean}
       * @memberOf X2JS.Options
       */
-    var useDoubleQuotes: js.UndefOr[Boolean] = js.native
+    var useDoubleQuotes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If "object" then <empty></empty> will be transformed to {}.
@@ -204,7 +203,7 @@ object mod {
       * @type {'object'}
       * @memberOf X2JS.Options
       */
-    var xmldomOptions: js.UndefOr[`object`] = js.native
+    var xmldomOptions: js.UndefOr[`object`] = js.undefined
   }
   object Options {
     

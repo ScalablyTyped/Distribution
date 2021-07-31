@@ -10,7 +10,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object badgeMod {
@@ -36,20 +35,21 @@ object badgeMod {
   trait Badge
     extends Component[BadgeProps, js.Any, js.Any]
   
-  @js.native
-  trait BadgeProps extends WithThemeStyles[BadgeStyle] {
+  trait BadgeProps
+    extends StObject
+       with WithThemeStyles[BadgeStyle] {
     
-    var corner: js.UndefOr[Boolean] = js.native
+    var corner: js.UndefOr[Boolean] = js.undefined
     
-    var dot: js.UndefOr[Boolean] = js.native
+    var dot: js.UndefOr[Boolean] = js.undefined
     
-    var overflowCount: js.UndefOr[Double] = js.native
+    var overflowCount: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[large | small] = js.native
+    var size: js.UndefOr[large | small] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var text: js.UndefOr[js.Any] = js.native
+    var text: js.UndefOr[js.Any] = js.undefined
   }
   object BadgeProps {
     

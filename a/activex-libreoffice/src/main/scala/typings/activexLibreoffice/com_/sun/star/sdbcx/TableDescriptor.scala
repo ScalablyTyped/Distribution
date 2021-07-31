@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,20 +17,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * appended at the database.
   * @see com.sun.star.sdbcx.Table
   */
-@js.native
 trait TableDescriptor
-  extends Descriptor
+  extends StObject
      with XColumnsSupplier
-     with XKeysSupplier {
+     with XKeysSupplier
+     with Descriptor {
   
   /** is the name of the table catalog. */
-  var CatalogName: String = js.native
+  var CatalogName: String
   
   /** supplies a comment on the table, Could be empty if not supported by the driver. */
-  var Description: String = js.native
+  var Description: String
   
   /** is the name of the table schema. */
-  var SchemaName: String = js.native
+  var SchemaName: String
 }
 object TableDescriptor {
   

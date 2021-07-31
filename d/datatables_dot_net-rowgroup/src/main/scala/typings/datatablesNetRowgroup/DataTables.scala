@@ -5,15 +5,13 @@ import typings.datatablesNet.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DataTables {
   
-  @js.native
   trait Api extends StObject {
     
-    def rowGroup(): RowGroupApi = js.native
+    def rowGroup(): RowGroupApi
   }
   object Api {
     
@@ -59,38 +57,37 @@ object DataTables {
   /**
     * RowGroup extension options
     */
-  @js.native
   trait RowGroupSettings extends StObject {
     
     /**
       * Set the class name to be used for the grouping rows
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Set the data point to use as the grouping data source
       */
-    var dataSrc: js.UndefOr[Double | String] = js.native
+    var dataSrc: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Provides the ability to disable row grouping at initialisation
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the class name to be used for the grouping end rows
       */
-    var endClassName: js.UndefOr[String] = js.native
+    var endClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Provide a function that can be used to control the data shown in the end grouping row
       */
-    var endRender: js.UndefOr[js.Function2[/* rows */ Api, /* group */ String, String | HTMLElement | JQuery]] = js.native
+    var endRender: js.UndefOr[js.Function2[/* rows */ Api, /* group */ String, String | HTMLElement | JQuery]] = js.undefined
     
     /**
       * Provide a function that can be used to control the data shown in the start grouping row
       */
-    var startRender: js.UndefOr[js.Function2[/* rows */ Api, /* group */ String, String | HTMLElement | JQuery]] = js.native
+    var startRender: js.UndefOr[js.Function2[/* rows */ Api, /* group */ String, String | HTMLElement | JQuery]] = js.undefined
   }
   object RowGroupSettings {
     
@@ -143,24 +140,20 @@ object DataTables {
   
   @js.native
   trait RowGroupStaticFunctions
-    extends Instantiable2[
-          /* dt */ Api, 
-          (/* settings */ Boolean) | (/* settings */ RowGroupSettings), 
-          js.UndefOr[scala.Nothing]
-        ] {
+    extends StObject
+       with Instantiable2[/* dt */ Api, (/* settings */ Boolean) | (/* settings */ RowGroupSettings), Unit] {
     
     var defaults: RowGroupSettings = js.native
     
     var version: String = js.native
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /**
       * RowGroup extension options
       */
-    var rowGroup: js.UndefOr[Boolean | RowGroupSettings] = js.native
+    var rowGroup: js.UndefOr[Boolean | RowGroupSettings] = js.undefined
   }
   object Settings {
     
@@ -181,10 +174,9 @@ object DataTables {
     }
   }
   
-  @js.native
   trait StaticFunctions extends StObject {
     
-    var RowGroup: RowGroupStaticFunctions = js.native
+    var RowGroup: RowGroupStaticFunctions
   }
   object StaticFunctions {
     

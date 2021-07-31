@@ -2,20 +2,18 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dialog extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.Dialog_typekey")
-  var ExcelDotDialog_typekey: Dialog = js.native
+  var ExcelDotDialog_typekey: Dialog
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   def Show(
     Arg1: js.UndefOr[js.Any],
@@ -48,7 +46,7 @@ trait Dialog extends StObject {
     Arg28: js.UndefOr[js.Any],
     Arg29: js.UndefOr[js.Any],
     Arg30: js.UndefOr[js.Any]
-  ): Boolean = js.native
+  ): Boolean
 }
 object Dialog {
   

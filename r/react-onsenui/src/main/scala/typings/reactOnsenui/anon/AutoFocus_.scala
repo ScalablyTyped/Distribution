@@ -3,25 +3,23 @@ package typings.reactOnsenui.anon
 import typings.reactOnsenui.mod.SwitchChangeEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoFocus_ extends StObject {
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var inputId: js.UndefOr[String] = js.native
+  var inputId: js.UndefOr[String] = js.undefined
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* e */ SwitchChangeEvent, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* e */ SwitchChangeEvent, Unit]] = js.undefined
 }
 object AutoFocus_ {
   

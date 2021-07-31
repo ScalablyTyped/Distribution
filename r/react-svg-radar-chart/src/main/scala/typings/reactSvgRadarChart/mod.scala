@@ -8,7 +8,6 @@ import typings.reactSvgRadarChart.anon.Fill
 import typings.reactSvgRadarChart.anon.FontFamily
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,12 +17,11 @@ object mod {
   class default ()
     extends Component[ChartProps, js.Object, js.Any]
   
-  @js.native
   trait ChartData extends StObject {
     
-    var data: StringDictionary[Double] = js.native
+    var data: StringDictionary[Double]
     
-    var meta: Color = js.native
+    var meta: Color
   }
   object ChartData {
     
@@ -44,56 +42,55 @@ object mod {
     }
   }
   
-  @js.native
   trait ChartOptionsProps extends StObject {
     
     /**
       * show axes
       * @default true
       */
-    var axes: js.UndefOr[Boolean] = js.native
+    var axes: js.UndefOr[Boolean] = js.undefined
     
     /** custom axis props */
-    var axisProps: js.UndefOr[js.Function0[ClassName]] = js.native
+    var axisProps: js.UndefOr[js.Function0[ClassName]] = js.undefined
     
     /**
       * set caption margin
       * @default 10
       */
-    var captionMargin: js.UndefOr[Double] = js.native
+    var captionMargin: js.UndefOr[Double] = js.undefined
     
     /** custom captions props */
-    var captionProps: js.UndefOr[js.Function0[FontFamily]] = js.native
+    var captionProps: js.UndefOr[js.Function0[FontFamily]] = js.undefined
     
     /**
       * show captions
       * @default true
       */
-    var captions: js.UndefOr[Boolean] = js.native
+    var captions: js.UndefOr[Boolean] = js.undefined
     
     /** custom dot props */
-    var dotProps: js.UndefOr[js.Function0[ClassName]] = js.native
+    var dotProps: js.UndefOr[js.Function0[ClassName]] = js.undefined
     
     /**
       * show dots
       * @default false
       */
-    var dots: js.UndefOr[Boolean] = js.native
+    var dots: js.UndefOr[Boolean] = js.undefined
     
     /** custom scale props */
-    var scaleProps: js.UndefOr[js.Function0[Fill]] = js.native
+    var scaleProps: js.UndefOr[js.Function0[Fill]] = js.undefined
     
     /**
       * show scale circles
       * @default 3
       */
-    var scales: js.UndefOr[Double] = js.native
+    var scales: js.UndefOr[Double] = js.undefined
     
     /** custom viewBox */
-    var setViewBox: js.UndefOr[js.Function1[/* options */ this.type, Double]] = js.native
+    var setViewBox: js.UndefOr[js.Function1[/* options */ this.type, Double]] = js.undefined
     
     /** custom shape props */
-    var shapeProps: js.UndefOr[js.Function0[ClassName]] = js.native
+    var shapeProps: js.UndefOr[js.Function0[ClassName]] = js.undefined
     
     /**
       * set size
@@ -101,16 +98,16 @@ object mod {
       * overwritten by size prop on component
       * @default 300
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** custom smoothing fn */
-    var smoothing: js.UndefOr[js.Function1[/* points */ js.Array[js.Array[js.Any]], String]] = js.native
+    var smoothing: js.UndefOr[js.Function1[/* points */ js.Array[js.Array[js.Any]], String]] = js.undefined
     
     /**
       * where on the axes are the captions
       * @default 1.2
       */
-    var zoomDistance: js.UndefOr[Double] = js.native
+    var zoomDistance: js.UndefOr[Double] = js.undefined
   }
   object ChartOptionsProps {
     
@@ -209,16 +206,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ChartProps extends StObject {
     
-    var captions: StringDictionary[String] = js.native
+    var captions: StringDictionary[String]
     
-    var data: js.Array[ChartData] = js.native
+    var data: js.Array[ChartData]
     
-    var options: js.UndefOr[ChartOptionsProps] = js.native
+    var options: js.UndefOr[ChartOptionsProps] = js.undefined
     
-    var size: Double = js.native
+    var size: Double
   }
   object ChartProps {
     

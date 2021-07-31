@@ -2,19 +2,17 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An API executable entry point.
   */
-@js.native
 trait SchemaGoogleAppsScriptTypeExecutionApiEntryPoint extends StObject {
   
   /**
     * The entry point&#39;s configuration.
     */
-  var entryPointConfig: js.UndefOr[SchemaGoogleAppsScriptTypeExecutionApiConfig] = js.native
+  var entryPointConfig: js.UndefOr[SchemaGoogleAppsScriptTypeExecutionApiConfig] = js.undefined
 }
 object SchemaGoogleAppsScriptTypeExecutionApiEntryPoint {
   

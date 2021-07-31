@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tagging extends StObject {
   
   /**
     * A collection for a set of tags
     */
-  var TagSet: typings.awsSdk.s3Mod.TagSet = js.native
+  var TagSet: typings.awsSdk.s3Mod.TagSet
 }
 object Tagging {
   

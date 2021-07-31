@@ -2,13 +2,11 @@ package typings.cryptoJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Formatting strategy.
   */
-@js.native
 trait Format_ extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait Format_ extends StObject {
     *
     *     var cipherParams = CryptoJS.format.OpenSSL.parse(openSSLString);
     */
-  def parse(str: String): CipherParams = js.native
+  def parse(str: String): CipherParams
   
   /**
     * Converts a cipher params object to an OpenSSL-compatible string.
@@ -35,7 +33,7 @@ trait Format_ extends StObject {
     *
     *     var openSSLString = CryptoJS.format.OpenSSL.stringify(cipherParams);
     */
-  def stringify(cipherParams: CipherParams): String = js.native
+  def stringify(cipherParams: CipherParams): String
 }
 object Format_ {
   

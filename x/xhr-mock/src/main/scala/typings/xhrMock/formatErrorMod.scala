@@ -4,15 +4,16 @@ import typings.std.Error
 import typings.xhrMock.mockRequestMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatErrorMod {
   
-  @JSImport("xhr-mock/lib/formatError", "formatError")
+  @JSImport("xhr-mock/lib/formatError", JSImport.Namespace)
   @js.native
-  def formatError(msg: String, req: default): String = js.native
-  @JSImport("xhr-mock/lib/formatError", "formatError")
-  @js.native
-  def formatError(msg: String, req: default, err: Error): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def formatError(msg: String, req: default): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(msg.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatError(msg: String, req: default, err: Error): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(msg.asInstanceOf[js.Any], req.asInstanceOf[js.Any], err.asInstanceOf[js.Any])).asInstanceOf[String]
 }

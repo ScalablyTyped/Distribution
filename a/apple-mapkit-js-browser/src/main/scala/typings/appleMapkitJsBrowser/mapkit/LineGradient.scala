@@ -2,13 +2,11 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A line that displays with a gradient along the length of the line.
   */
-@js.native
 trait LineGradient extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait LineGradient extends StObject {
     * @param offset The unit distance at which to add the color.
     * @param color The CSS color at the transition point.
     */
-  def addColorStop(offset: Double, color: String): Unit = js.native
+  def addColorStop(offset: Double, color: String): Unit
   
   /**
     * Adds a color transition at the index point in the list of points within a polyline.
@@ -25,7 +23,7 @@ trait LineGradient extends StObject {
     * @param index A valid index into a polyline’s points.
     * @param color The CSS color at the index point.
     */
-  def addColorStopAtIndex(index: Double, color: String): Unit = js.native
+  def addColorStopAtIndex(index: Double, color: String): Unit
 }
 object LineGradient {
   

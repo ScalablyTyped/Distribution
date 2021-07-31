@@ -10,16 +10,17 @@ import typings.vue.vueMod.Vue
 import typings.vueClassComponent.declarationsMod.VueClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
   
-  @JSImport("vue-class-component/lib/component", "componentFactory")
+  @JSImport("vue-class-component/lib/component", JSImport.Namespace)
   @js.native
-  def componentFactory(Component: VueClass[Vue]): VueClass[Vue] = js.native
-  @JSImport("vue-class-component/lib/component", "componentFactory")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def componentFactory(Component: VueClass[Vue]): VueClass[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFactory")(Component.asInstanceOf[js.Any]).asInstanceOf[VueClass[Vue]]
+  @scala.inline
   def componentFactory(
     Component: VueClass[Vue],
     options: ComponentOptions[
@@ -30,7 +31,7 @@ object componentMod {
       PropsDefinition[DefaultProps], 
       DefaultProps
     ]
-  ): VueClass[Vue] = js.native
+  ): VueClass[Vue] = (^.asInstanceOf[js.Dynamic].applyDynamic("componentFactory")(Component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueClass[Vue]]
   
   @JSImport("vue-class-component/lib/component", "$internalHooks")
   @js.native

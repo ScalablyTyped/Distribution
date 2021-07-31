@@ -7,7 +7,6 @@ import typings.reactDnd.connectorsMod.ConnectableElement
 import typings.reactDnd.optionsMod.DragPreviewOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragPreviewImageMod {
@@ -16,12 +15,11 @@ object dragPreviewImageMod {
   @js.native
   val DragPreviewImage: FC[DragPreviewImageProps] = js.native
   
-  @js.native
   trait DragPreviewImageProps extends StObject {
     
-    var connect: ConnectDragPreview = js.native
+    var connect: ConnectDragPreview
     
-    var src: String = js.native
+    var src: String
   }
   object DragPreviewImageProps {
     

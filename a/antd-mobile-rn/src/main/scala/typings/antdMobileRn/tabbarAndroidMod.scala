@@ -5,7 +5,6 @@ import typings.antdMobileRn.tabBarStyleIndexNativeMod.ITabBarStyle
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabbarAndroidMod {
@@ -57,14 +56,15 @@ object tabbarAndroidMod {
   trait TabBar
     extends Component[TabBarNativeProps, js.Any, js.Any] {
     
-    def getPanes(content: Boolean): js.Array[_] = js.native
+    def getPanes(content: Boolean): js.Array[js.Any] = js.native
   }
   
-  @js.native
-  trait TabBarNativeProps extends TabBarProps {
+  trait TabBarNativeProps
+    extends StObject
+       with TabBarProps {
     
     @JSName("styles")
-    var styles_TabBarNativeProps: js.UndefOr[ITabBarStyle] = js.native
+    var styles_TabBarNativeProps: js.UndefOr[ITabBarStyle] = js.undefined
   }
   object TabBarNativeProps {
     

@@ -8,15 +8,15 @@ import typings.thrift.mod.TProtocol
 import typings.thrift.mod.TTransport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Client[TClient] extends TClientConstructor[TClient] {
+  trait Client[TClient]
+    extends StObject
+       with TClientConstructor[TClient] {
     
-    var Client: InstantiableTClient[TClient] = js.native
+    var Client: InstantiableTClient[TClient]
   }
   object Client {
     
@@ -27,19 +27,18 @@ object anon {
     }
     
     @scala.inline
-    implicit class ClientMutableBuilder[Self <: Client[_], TClient] (val x: Self with Client[TClient]) extends AnyVal {
+    implicit class ClientMutableBuilder[Self <: Client[?], TClient] (val x: Self & Client[TClient]) extends AnyVal {
       
       @scala.inline
       def setClient(value: InstantiableTClient[TClient]): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Handler[TProcessor, THandler] extends StObject {
     
-    var handler: THandler = js.native
+    var handler: THandler
     
-    var processor: TProcessorConstructor[TProcessor, THandler] = js.native
+    var processor: TProcessorConstructor[TProcessor, THandler]
   }
   object Handler {
     
@@ -50,7 +49,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class HandlerMutableBuilder[Self <: Handler[_, _], TProcessor, THandler] (val x: Self with (Handler[TProcessor, THandler])) extends AnyVal {
+    implicit class HandlerMutableBuilder[Self <: Handler[?, ?], TProcessor, THandler] (val x: Self & (Handler[TProcessor, THandler])) extends AnyVal {
       
       @scala.inline
       def setHandler(value: THandler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
@@ -62,21 +61,26 @@ object anon {
   
   @js.native
   trait Instantiable[THandler, TProcessor]
-    extends TProcessorConstructor[TProcessor, THandler]
+    extends StObject
        with Instantiable1[/* handler */ THandler, TProcessor]
+       with TProcessorConstructor[TProcessor, THandler]
   
   @js.native
   trait InstantiableTClient[TClient]
-    extends TClientConstructor[TClient]
+    extends StObject
        with Instantiable2[/* output */ TTransport, /* pClass */ InstantiableTProtocol, TClient]
+       with TClientConstructor[TClient]
   
   @js.native
-  trait InstantiableTProtocol extends Instantiable1[/* trans */ TTransport, TProtocol]
+  trait InstantiableTProtocol
+    extends StObject
+       with Instantiable1[/* trans */ TTransport, TProtocol]
   
-  @js.native
-  trait Processor[THandler, TProcessor] extends TProcessorConstructor[TProcessor, THandler] {
+  trait Processor[THandler, TProcessor]
+    extends StObject
+       with TProcessorConstructor[TProcessor, THandler] {
     
-    var Processor: Instantiable[THandler, TProcessor] = js.native
+    var Processor: Instantiable[THandler, TProcessor]
   }
   object Processor {
     
@@ -87,7 +91,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ProcessorMutableBuilder[Self <: Processor[_, _], THandler, TProcessor] (val x: Self with (Processor[THandler, TProcessor])) extends AnyVal {
+    implicit class ProcessorMutableBuilder[Self <: Processor[?, ?], THandler, TProcessor] (val x: Self & (Processor[THandler, TProcessor])) extends AnyVal {
       
       @scala.inline
       def setProcessor(value: Instantiable[THandler, TProcessor]): Self = StObject.set(x, "Processor", value.asInstanceOf[js.Any])

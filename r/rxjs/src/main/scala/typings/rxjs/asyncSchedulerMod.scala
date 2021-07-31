@@ -6,7 +6,6 @@ import typings.rxjs.asyncActionMod.AsyncAction
 import typings.rxjs.schedulerMod.Scheduler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncSchedulerMod {
@@ -36,7 +35,7 @@ object asyncSchedulerMod {
       now: js.Function0[Double]
     ) = this()
     
-    var actions: js.Array[AsyncAction[_]] = js.native
+    var actions: js.Array[AsyncAction[js.Any]] = js.native
     
     /**
       * A flag to indicate whether the Scheduler is currently executing a batch of
@@ -46,7 +45,7 @@ object asyncSchedulerMod {
       */
     var active: Boolean = js.native
     
-    def flush(action: AsyncAction[_]): Unit = js.native
+    def flush(action: AsyncAction[js.Any]): Unit = js.native
     
     /**
       * An internal ID used to track the latest asynchronous task such as those

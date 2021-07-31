@@ -2,31 +2,29 @@ package typings.firebaseDatabase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddExpectedEvents extends StObject {
   
-  def addExpectedEvents(moreEvents: js.Any): Unit = js.native
+  def addExpectedEvents(moreEvents: js.Any): Unit
   
-  var initPromise: js.Promise[_] = js.native
+  var initPromise: js.Promise[js.Any]
   
-  var promise: js.Promise[_] = js.native
+  var promise: js.Promise[js.Any]
   
-  def unregister(): Unit = js.native
+  def unregister(): Unit
   
-  def waiter(): Boolean = js.native
+  def waiter(): Boolean
   
-  def watchesInitializedWaiter(): Boolean = js.native
+  def watchesInitializedWaiter(): Boolean
 }
 object AddExpectedEvents {
   
   @scala.inline
   def apply(
     addExpectedEvents: js.Any => Unit,
-    initPromise: js.Promise[_],
-    promise: js.Promise[_],
+    initPromise: js.Promise[js.Any],
+    promise: js.Promise[js.Any],
     unregister: () => Unit,
     waiter: () => Boolean,
     watchesInitializedWaiter: () => Boolean
@@ -42,10 +40,10 @@ object AddExpectedEvents {
     def setAddExpectedEvents(value: js.Any => Unit): Self = StObject.set(x, "addExpectedEvents", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInitPromise(value: js.Promise[_]): Self = StObject.set(x, "initPromise", value.asInstanceOf[js.Any])
+    def setInitPromise(value: js.Promise[js.Any]): Self = StObject.set(x, "initPromise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromise(value: js.Promise[_]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    def setPromise(value: js.Promise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnregister(value: () => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))

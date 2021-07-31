@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShipmentTrackingInfo extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait ShipmentTrackingInfo extends StObject {
     * "`dpd`" - "`dynamex`" - "`eCourier`" - "`easypost`" - "`efw`" - "`fedex`" - "`fedexSmartpost`" - "`geodis`" - "`gls`" - "`googleCourier`" - "`gsx`" - "`jdLogistics`" - "`laPoste`" -
     * "`lasership`" - "`manual`" - "`mpx`" - "`onTrac`" - "`other`" - "`tnt`" - "`uds`" - "`ups`" - "`usps`"
     */
-  var carrier: js.UndefOr[String] = js.native
+  var carrier: js.UndefOr[String] = js.undefined
   
   /** The tracking number for the package. */
-  var trackingNumber: js.UndefOr[String] = js.native
+  var trackingNumber: js.UndefOr[String] = js.undefined
 }
 object ShipmentTrackingInfo {
   

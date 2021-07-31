@@ -2,22 +2,20 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectVerbs extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): String = js.native
+  def Item(Index: Double): String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.ObjectVerbs_typekey")
-  var PowerPointDotObjectVerbs_typekey: ObjectVerbs = js.native
+  var PowerPointDotObjectVerbs_typekey: ObjectVerbs
 }
 object ObjectVerbs {
   

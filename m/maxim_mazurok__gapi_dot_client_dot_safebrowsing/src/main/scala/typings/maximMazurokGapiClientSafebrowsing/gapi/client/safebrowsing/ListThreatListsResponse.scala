@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListThreatListsResponse extends StObject {
   
   /** The lists available for download by the client. */
-  var threatLists: js.UndefOr[js.Array[ThreatListDescriptor]] = js.native
+  var threatLists: js.UndefOr[js.Array[ThreatListDescriptor]] = js.undefined
 }
 object ListThreatListsResponse {
   

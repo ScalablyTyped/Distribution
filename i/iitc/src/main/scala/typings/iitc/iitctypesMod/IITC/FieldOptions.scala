@@ -3,19 +3,19 @@ package typings.iitc.iitctypesMod.IITC
 import typings.leaflet.mod.PathOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldOptions extends PathOptions {
+trait FieldOptions
+  extends StObject
+     with PathOptions {
   
-  var data: FieldData = js.native
+  var data: FieldData
   
-  var guid: String = js.native
+  var guid: String
   
-  var team: Double = js.native
+  var team: Double
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object FieldOptions {
   

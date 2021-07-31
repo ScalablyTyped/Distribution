@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * health checks and an endpoint to which to send notification of changes in
   * the health status of the backends.
   */
-@js.native
 trait SchemaHealthCheckService extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * List of URLs to the HealthCheck resources. Must have at least one
@@ -34,7 +32,7 @@ trait SchemaHealthCheckService extends StObject {
     * belong to the same region. Regional HealthChecks&lt;/code? must belong to
     * the same region as zones of NEGs.
     */
-  var healthChecks: js.UndefOr[js.Array[String]] = js.native
+  var healthChecks: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Policy for how the results from multiple health checks for the same
@@ -44,19 +42,19 @@ trait SchemaHealthCheckService extends StObject {
     * HealthState of the entire health check service. If all backend&#39;s are
     * healthy, the HealthState of the health check service is HEALTHY. .
     */
-  var healthStatusAggregationStrategy: js.UndefOr[String] = js.native
+  var healthStatusAggregationStrategy: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] Type of the resource. Always compute#healthCheckServicefor
     * health check services.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. The name must be 1-63 characters long, and comply
@@ -66,14 +64,14 @@ trait SchemaHealthCheckService extends StObject {
     * must be a dash, lowercase letter, or digit, except the last character,
     * which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * List of URLs to the NetworkEndpointGroup resources. Must not have more
     * than 100. For regional HealthCheckService, NEGs must be in zones in the
     * region of the HealthCheckService.
     */
-  var networkEndpointGroups: js.UndefOr[js.Array[String]] = js.native
+  var networkEndpointGroups: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of URLs to the NotificationEndpoint resources. Must not have more
@@ -82,7 +80,7 @@ trait SchemaHealthCheckService extends StObject {
     * be regional and in the same region. For global HealthCheckService,
     * NotificationEndpoint must be global.
     */
-  var notificationEndpoints: js.UndefOr[js.Array[String]] = js.native
+  var notificationEndpoints: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [Output Only] URL of the region where the health check service resides.
@@ -90,17 +88,17 @@ trait SchemaHealthCheckService extends StObject {
     * specify this field as part of the HTTP request URL. It is not settable as
     * a field in the request body.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL with id for the resource.
     */
-  var selfLinkWithId: js.UndefOr[String] = js.native
+  var selfLinkWithId: js.UndefOr[String] = js.undefined
 }
 object SchemaHealthCheckService {
   

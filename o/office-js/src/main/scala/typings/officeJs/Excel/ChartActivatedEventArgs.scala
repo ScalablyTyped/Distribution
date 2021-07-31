@@ -3,7 +3,6 @@ package typings.officeJs.Excel
 import typings.officeJs.officeJsStrings.ChartActivated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.8]
   */
-@js.native
 trait ChartActivatedEventArgs extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait ChartActivatedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var chartId: String = js.native
+  var chartId: String
   
   /**
     *
@@ -29,7 +27,7 @@ trait ChartActivatedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var `type`: ChartActivated = js.native
+  var `type`: ChartActivated
   
   /**
     *
@@ -37,14 +35,14 @@ trait ChartActivatedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object ChartActivatedEventArgs {
   
   @scala.inline
-  def apply(chartId: String, `type`: ChartActivated, worksheetId: String): ChartActivatedEventArgs = {
+  def apply(chartId: String, worksheetId: String): ChartActivatedEventArgs = {
     val __obj = js.Dynamic.literal(chartId = chartId.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ChartActivated")
     __obj.asInstanceOf[ChartActivatedEventArgs]
   }
   

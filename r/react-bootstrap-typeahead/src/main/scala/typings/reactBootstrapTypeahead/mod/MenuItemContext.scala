@@ -3,22 +3,20 @@ package typings.reactBootstrapTypeahead.mod
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadContext<T>, react-bootstrap-typeahead.react-bootstrap-typeahead.MenuItemContextKeys> */
-@js.native
 trait MenuItemContext[T /* <: TypeaheadModel */] extends StObject {
   
-  var activeIndex: js.UndefOr[Double] = js.native
+  var activeIndex: js.UndefOr[Double] = js.undefined
   
-  var isOnlyResult: js.UndefOr[Boolean] = js.native
+  var isOnlyResult: js.UndefOr[Boolean] = js.undefined
   
-  var onActiveItemChange: js.UndefOr[js.Function1[/* options */ T, Unit]] = js.native
+  var onActiveItemChange: js.UndefOr[js.Function1[/* options */ T, Unit]] = js.undefined
   
-  var onInitialItemChange: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.native
+  var onInitialItemChange: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.undefined
   
-  var onMenuItemClick: js.UndefOr[js.Function2[/* option */ T, /* e */ Event, Unit]] = js.native
+  var onMenuItemClick: js.UndefOr[js.Function2[/* option */ T, /* e */ Event, Unit]] = js.undefined
 }
 object MenuItemContext {
   
@@ -29,7 +27,7 @@ object MenuItemContext {
   }
   
   @scala.inline
-  implicit class MenuItemContextMutableBuilder[Self <: MenuItemContext[_], T /* <: TypeaheadModel */] (val x: Self with MenuItemContext[T]) extends AnyVal {
+  implicit class MenuItemContextMutableBuilder[Self <: MenuItemContext[?], T /* <: TypeaheadModel */] (val x: Self & MenuItemContext[T]) extends AnyVal {
     
     @scala.inline
     def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])

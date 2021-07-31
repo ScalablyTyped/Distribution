@@ -1,10 +1,8 @@
 package typings.semver
 
 import typings.semver.mod.Options
-import typings.semver.rangeMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object intersectsMod {
@@ -12,40 +10,32 @@ object intersectsMod {
   /**
     * Return true if any of the ranges comparators intersect
     */
+  @scala.inline
+  def apply(range1: String, range2: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(range1: String, range2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(range1: String, range2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(range1: String, range2: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].apply(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(range1: String, range2: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(range1: String, range2: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(range1: typings.semver.rangeMod.^, range2: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(range1: typings.semver.rangeMod.^, range2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(range1: typings.semver.rangeMod.^, range2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(range1: typings.semver.rangeMod.^, range2: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].apply(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(range1: typings.semver.rangeMod.^, range2: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(range1: typings.semver.rangeMod.^, range2: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   @JSImport("semver/ranges/intersects", JSImport.Namespace)
   @js.native
-  def apply(range1: String, range2: String): Boolean = js.native
-  @JSImport("semver/ranges/intersects", JSImport.Namespace)
-  @js.native
-  def apply(range1: String, range2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/ranges/intersects", JSImport.Namespace)
-  @js.native
-  def apply(range1: String, range2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/ranges/intersects", JSImport.Namespace)
-  @js.native
-  def apply(range1: String, range2: ^): Boolean = js.native
-  @JSImport("semver/ranges/intersects", JSImport.Namespace)
-  @js.native
-  def apply(range1: String, range2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/ranges/intersects", JSImport.Namespace)
-  @js.native
-  def apply(range1: String, range2: ^, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/ranges/intersects", JSImport.Namespace)
-  @js.native
-  def apply(range1: ^, range2: String): Boolean = js.native
-  @JSImport("semver/ranges/intersects", JSImport.Namespace)
-  @js.native
-  def apply(range1: ^, range2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/ranges/intersects", JSImport.Namespace)
-  @js.native
-  def apply(range1: ^, range2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/ranges/intersects", JSImport.Namespace)
-  @js.native
-  def apply(range1: ^, range2: ^): Boolean = js.native
-  @JSImport("semver/ranges/intersects", JSImport.Namespace)
-  @js.native
-  def apply(range1: ^, range2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/ranges/intersects", JSImport.Namespace)
-  @js.native
-  def apply(range1: ^, range2: ^, optionsOrLoose: Options): Boolean = js.native
+  val ^ : js.Any = js.native
 }

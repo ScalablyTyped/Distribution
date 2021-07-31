@@ -5,29 +5,29 @@ import typings.awsSdkClientLambdaNode.typesEventSourceMappingConfigurationMod.Un
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListEventSourceMappingsOutputMod {
   
-  @js.native
-  trait ListEventSourceMappingsOutput extends OutputTypesUnion {
+  trait ListEventSourceMappingsOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>An array of <code>EventSourceMappingConfiguration</code> objects.</p>
       */
-    var EventSourceMappings: js.UndefOr[js.Array[UnmarshalledEventSourceMappingConfiguration]] = js.native
+    var EventSourceMappings: js.UndefOr[js.Array[UnmarshalledEventSourceMappingConfiguration]] = js.undefined
     
     /**
       * <p>A string, present if there are more event source mappings.</p>
       */
-    var NextMarker: js.UndefOr[String] = js.native
+    var NextMarker: js.UndefOr[String] = js.undefined
   }
   object ListEventSourceMappingsOutput {
     

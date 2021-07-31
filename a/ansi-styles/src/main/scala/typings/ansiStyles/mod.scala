@@ -3,7 +3,6 @@ package typings.ansiStyles
 import typings.std.ReadonlyMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined { readonly modifier :ansi-styles.ansi-styles.Modifier,  readonly color :ansi-styles.ansi-styles.ForegroundColor & ansi-styles.ansi-styles.ColorBase,  readonly bgColor :ansi-styles.ansi-styles.BackgroundColor & ansi-styles.ansi-styles.ColorBase,  readonly codes :std.ReadonlyMap<number, number>} & ansi-styles.ansi-styles.BackgroundColor & ansi-styles.ansi-styles.ForegroundColor & ansi-styles.ansi-styles.Modifier */
@@ -27,7 +26,7 @@ object mod {
   
   @JSImport("ansi-styles", "bgColor")
   @js.native
-  val bgColor: BackgroundColor with ColorBase = js.native
+  val bgColor: BackgroundColor & ColorBase = js.native
   
   @JSImport("ansi-styles", "bgCyan")
   @js.native
@@ -120,7 +119,7 @@ object mod {
   
   @JSImport("ansi-styles", "color")
   @js.native
-  val color: ForegroundColor with ColorBase = js.native
+  val color: ForegroundColor & ColorBase = js.native
   
   @JSImport("ansi-styles", "cyan")
   @js.native
@@ -237,50 +236,49 @@ object mod {
   @js.native
   val yellowBright: CSPair = js.native
   
-  @js.native
   trait BackgroundColor extends StObject {
     
-    val bgBlack: CSPair = js.native
+    val bgBlack: CSPair
     
-    val bgBlackBright: CSPair = js.native
+    val bgBlackBright: CSPair
     
-    val bgBlue: CSPair = js.native
+    val bgBlue: CSPair
     
-    val bgBlueBright: CSPair = js.native
+    val bgBlueBright: CSPair
     
-    val bgCyan: CSPair = js.native
+    val bgCyan: CSPair
     
-    val bgCyanBright: CSPair = js.native
-    
-    /**
-    		Alias for `bgBlackBright`.
-    		*/
-    val bgGray: CSPair = js.native
-    
-    val bgGreen: CSPair = js.native
-    
-    val bgGreenBright: CSPair = js.native
+    val bgCyanBright: CSPair
     
     /**
     		Alias for `bgBlackBright`.
     		*/
-    val bgGrey: CSPair = js.native
+    val bgGray: CSPair
     
-    val bgMagenta: CSPair = js.native
+    val bgGreen: CSPair
     
-    val bgMagentaBright: CSPair = js.native
+    val bgGreenBright: CSPair
     
-    val bgRed: CSPair = js.native
+    /**
+    		Alias for `bgBlackBright`.
+    		*/
+    val bgGrey: CSPair
     
-    val bgRedBright: CSPair = js.native
+    val bgMagenta: CSPair
     
-    val bgWhite: CSPair = js.native
+    val bgMagentaBright: CSPair
     
-    val bgWhiteBright: CSPair = js.native
+    val bgRed: CSPair
     
-    val bgYellow: CSPair = js.native
+    val bgRedBright: CSPair
     
-    val bgYellowBright: CSPair = js.native
+    val bgWhite: CSPair
+    
+    val bgWhiteBright: CSPair
+    
+    val bgYellow: CSPair
+    
+    val bgYellowBright: CSPair
   }
   object BackgroundColor {
     
@@ -368,18 +366,17 @@ object mod {
     }
   }
   
-  @js.native
   trait CSPair extends StObject {
     
     /**
     		The ANSI terminal control sequence for ending this style.
     		*/
-    val close: String = js.native
+    val close: String
     
     /**
     		The ANSI terminal control sequence for starting this style.
     		*/
-    val open: String = js.native
+    val open: String
   }
   object CSPair {
     
@@ -998,19 +995,18 @@ object mod {
     def yellowgreen: typings.ansiStyles.ansiStylesStrings.yellowgreen = "yellowgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.yellowgreen]
   }
   
-  @js.native
   trait ColorBase extends StObject {
     
-    val ansi: ColorConvert = js.native
+    val ansi: ColorConvert
     
-    val ansi16m: ColorConvert = js.native
+    val ansi16m: ColorConvert
     
-    val ansi256: ColorConvert = js.native
+    val ansi256: ColorConvert
     
     /**
     		The ANSI terminal control sequence for ending this color.
     		*/
-    val close: String = js.native
+    val close: String
   }
   object ColorBase {
     
@@ -1037,24 +1033,23 @@ object mod {
     }
   }
   
-  @js.native
   trait ColorConvert extends StObject {
     
     /**
     		Use a [4-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4-bit) to set text color.
     		*/
-    def ansi(ansi: Double): String = js.native
+    def ansi(ansi: Double): String
     
     /**
     		Use an [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set text color.
     		*/
-    def ansi256(ansi: Double): String = js.native
+    def ansi256(ansi: Double): String
     
     /**
     		The RGB HEX color space.
     		@param hex - A hexadecimal string containing RGB data.
     		*/
-    def hex(hex: String): String = js.native
+    def hex(hex: String): String
     
     /**
     		The HSL color space.
@@ -1062,7 +1057,7 @@ object mod {
     		@param saturation - (`0`-`100`)
     		@param lightness - (`0`-`100`)
     		*/
-    def hsl(hue: Double, saturation: Double, lightness: Double): String = js.native
+    def hsl(hue: Double, saturation: Double, lightness: Double): String
     
     /**
     		The HSV color space.
@@ -1070,7 +1065,7 @@ object mod {
     		@param saturation - (`0`-`100`)
     		@param value - (`0`-`100`)
     		*/
-    def hsv(hue: Double, saturation: Double, value: Double): String = js.native
+    def hsv(hue: Double, saturation: Double, value: Double): String
     
     /**
     		The HSV color space.
@@ -1078,12 +1073,12 @@ object mod {
     		@param whiteness - (`0`-`100`)
     		@param blackness - (`0`-`100`)
     		*/
-    def hwb(hue: Double, whiteness: Double, blackness: Double): String = js.native
+    def hwb(hue: Double, whiteness: Double, blackness: Double): String
     
     /**
     		@param keyword - A CSS color name.
     		*/
-    def keyword(keyword: CSSColor): String = js.native
+    def keyword(keyword: CSSColor): String
     
     /**
     		The RGB color space.
@@ -1091,7 +1086,7 @@ object mod {
     		@param green - (`0`-`255`)
     		@param blue - (`0`-`255`)
     		*/
-    def rgb(red: Double, green: Double, blue: Double): String = js.native
+    def rgb(red: Double, green: Double, blue: Double): String
   }
   object ColorConvert {
     
@@ -1139,50 +1134,49 @@ object mod {
     }
   }
   
-  @js.native
   trait ForegroundColor extends StObject {
     
-    val black: CSPair = js.native
+    val black: CSPair
     
-    val blackBright: CSPair = js.native
+    val blackBright: CSPair
     
-    val blue: CSPair = js.native
+    val blue: CSPair
     
-    val blueBright: CSPair = js.native
+    val blueBright: CSPair
     
-    val cyan: CSPair = js.native
+    val cyan: CSPair
     
-    val cyanBright: CSPair = js.native
-    
-    /**
-    		Alias for `blackBright`.
-    		*/
-    val gray: CSPair = js.native
-    
-    val green: CSPair = js.native
-    
-    val greenBright: CSPair = js.native
+    val cyanBright: CSPair
     
     /**
     		Alias for `blackBright`.
     		*/
-    val grey: CSPair = js.native
+    val gray: CSPair
     
-    val magenta: CSPair = js.native
+    val green: CSPair
     
-    val magentaBright: CSPair = js.native
+    val greenBright: CSPair
     
-    val red: CSPair = js.native
+    /**
+    		Alias for `blackBright`.
+    		*/
+    val grey: CSPair
     
-    val redBright: CSPair = js.native
+    val magenta: CSPair
     
-    val white: CSPair = js.native
+    val magentaBright: CSPair
     
-    val whiteBright: CSPair = js.native
+    val red: CSPair
     
-    val yellow: CSPair = js.native
+    val redBright: CSPair
     
-    val yellowBright: CSPair = js.native
+    val white: CSPair
+    
+    val whiteBright: CSPair
+    
+    val yellow: CSPair
+    
+    val yellowBright: CSPair
   }
   object ForegroundColor {
     
@@ -1270,48 +1264,47 @@ object mod {
     }
   }
   
-  @js.native
   trait Modifier extends StObject {
     
     /**
     		Make text bold.
     		*/
-    val bold: CSPair = js.native
+    val bold: CSPair
     
     /**
     		Emitting only a small amount of light.
     		*/
-    val dim: CSPair = js.native
+    val dim: CSPair
     
     /**
     		Prints the text, but makes it invisible.
     		*/
-    val hidden: CSPair = js.native
+    val hidden: CSPair
     
     /**
     		Inverse background and foreground colors.
     		*/
-    val inverse: CSPair = js.native
+    val inverse: CSPair
     
     /**
     		Make text italic. (Not widely supported)
     		*/
-    val italic: CSPair = js.native
+    val italic: CSPair
     
     /**
     		Resets the current color chain.
     		*/
-    val reset: CSPair = js.native
+    val reset: CSPair
     
     /**
     		Puts a horizontal line through the center of the text. (Not widely supported)
     		*/
-    val strikethrough: CSPair = js.native
+    val strikethrough: CSPair
     
     /**
     		Make text underline. (Not widely supported)
     		*/
-    val underline: CSPair = js.native
+    val underline: CSPair
   }
   object Modifier {
     

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPartnersResponse extends StObject {
   
   /** A token to retrieve the next page of results. Pass this value in the page_token field in the subsequent call to `ListPartners` method to retrieve the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of partners. This list will be absent if empty. */
-  var partners: js.UndefOr[js.Array[Partner]] = js.native
+  var partners: js.UndefOr[js.Array[Partner]] = js.undefined
 }
 object ListPartnersResponse {
   

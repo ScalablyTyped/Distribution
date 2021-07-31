@@ -2,53 +2,51 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefreshJourneyOptions extends StObject {
   
   /**
     * parse & expose entrances of stops/stations?
     * @default true
     */
-  var entrances: js.UndefOr[Boolean] = js.native
+  var entrances: js.UndefOr[Boolean] = js.undefined
   
   /**
     * language
     * @default en
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * return a shape for each leg?
     * @default false
     */
-  var polylines: js.UndefOr[Boolean] = js.native
+  var polylines: js.UndefOr[Boolean] = js.undefined
   
   /**
     * parse & expose hints & warnings?
     * @default true
     */
-  var remarks: js.UndefOr[Boolean] = js.native
+  var remarks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * return stations on the way?
     * @default false
     */
-  var stopovers: js.UndefOr[Boolean] = js.native
+  var stopovers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * parse & expose sub-stops of stations?
     * @default true
     */
-  var subStops: js.UndefOr[Boolean] = js.native
+  var subStops: js.UndefOr[Boolean] = js.undefined
   
   /**
     * return tickets? only available with some profiles
     * @default false
     */
-  var tickets: js.UndefOr[Boolean] = js.native
+  var tickets: js.UndefOr[Boolean] = js.undefined
 }
 object RefreshJourneyOptions {
   

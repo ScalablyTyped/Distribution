@@ -5,31 +5,29 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessibilityLabel extends StObject {
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var activeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var activeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var activeTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var activeTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var key: String = js.native
+  var key: String
   
-  var onItemPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onItemPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPress: js.UndefOr[js.Function1[/* index */ String, Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* index */ String, Unit]] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var textAccessibilityLabel: js.UndefOr[String] = js.native
+  var textAccessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object AccessibilityLabel {
   

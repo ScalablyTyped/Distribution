@@ -3,21 +3,21 @@ package typings.caseless
 import typings.caseless.caselessBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("caseless", JSImport.Namespace)
-  @js.native
-  def apply(): Caseless = js.native
-  @JSImport("caseless", JSImport.Namespace)
-  @js.native
-  def apply(dict: RawDict): Caseless = js.native
+  @scala.inline
+  def apply(): Caseless = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Caseless]
+  @scala.inline
+  def apply(dict: RawDict): Caseless = ^.asInstanceOf[js.Dynamic].apply(dict.asInstanceOf[js.Any]).asInstanceOf[Caseless]
   
-  @JSImport("caseless", "httpify")
+  @JSImport("caseless", JSImport.Namespace)
   @js.native
-  def httpify(resp: js.Object, headers: RawDict): Caseless = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def httpify(resp: js.Object, headers: RawDict): Caseless = (^.asInstanceOf[js.Dynamic].applyDynamic("httpify")(resp.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Caseless]
   
   @js.native
   trait Caseless extends StObject {

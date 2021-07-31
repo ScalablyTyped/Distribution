@@ -4,27 +4,25 @@ import typings.stylus.mod.Stylus.Dictionary
 import typings.stylus.mod.Stylus.Nodes.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Map extends StObject {
   
-  var __type: String = js.native
+  var __type: String
   
-  var column: Double = js.native
+  var column: Double
   
-  var filename: String = js.native
+  var filename: String
   
-  var isList: Boolean = js.native
+  var isList: Boolean
   
-  var lineno: Double = js.native
+  var lineno: Double
   
-  var map: Dictionary[Node] = js.native
+  var map: Dictionary[Node]
   
-  var nodes: js.Array[Node] = js.native
+  var nodes: js.Array[Node]
   
-  var preserve: Boolean = js.native
+  var preserve: Boolean
 }
 object Map {
   

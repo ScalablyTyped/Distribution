@@ -2,500 +2,498 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementTypes extends StObject {
   
   @JSName("bioc:ColoredEdge")
-  var biocColonColoredEdge: ColoredEdge = js.native
+  var biocColonColoredEdge: ColoredEdge
   
   @JSName("bioc:ColoredShape")
-  var biocColonColoredShape: ColoredShape = js.native
+  var biocColonColoredShape: ColoredShape
   
   @JSName("bpmn:Activity")
-  var bpmnColonActivity: Activity = js.native
+  var bpmnColonActivity: Activity
   
   @JSName("bpmn:AdHocSubProcess")
-  var bpmnColonAdHocSubProcess: AdHocSubProcess = js.native
+  var bpmnColonAdHocSubProcess: AdHocSubProcess
   
   @JSName("bpmn:Artifact")
-  var bpmnColonArtifact: Artifact = js.native
+  var bpmnColonArtifact: Artifact
   
   @JSName("bpmn:Assignment")
-  var bpmnColonAssignment: Assignment = js.native
+  var bpmnColonAssignment: Assignment
   
   @JSName("bpmn:Association")
-  var bpmnColonAssociation: Association = js.native
+  var bpmnColonAssociation: Association
   
   @JSName("bpmn:Auditing")
-  var bpmnColonAuditing: Auditing = js.native
+  var bpmnColonAuditing: Auditing
   
   @JSName("bpmn:BaseElement")
-  var bpmnColonBaseElement: BaseElement = js.native
+  var bpmnColonBaseElement: BaseElement
   
   @JSName("bpmn:BoundaryEvent")
-  var bpmnColonBoundaryEvent: BoundaryEvent = js.native
+  var bpmnColonBoundaryEvent: BoundaryEvent
   
   @JSName("bpmn:BusinessRuleTask")
-  var bpmnColonBusinessRuleTask: BusinessRuleTask = js.native
+  var bpmnColonBusinessRuleTask: BusinessRuleTask
   
   @JSName("bpmn:CallActivity")
-  var bpmnColonCallActivity: CallActivity = js.native
+  var bpmnColonCallActivity: CallActivity
   
   @JSName("bpmn:CallChoreography")
-  var bpmnColonCallChoreography: CallChoreography = js.native
+  var bpmnColonCallChoreography: CallChoreography
   
   @JSName("bpmn:CallConversation")
-  var bpmnColonCallConversation: CallConversation = js.native
+  var bpmnColonCallConversation: CallConversation
   
   @JSName("bpmn:CallableElement")
-  var bpmnColonCallableElement: CallableElement = js.native
+  var bpmnColonCallableElement: CallableElement
   
   @JSName("bpmn:CancelEventDefinition")
-  var bpmnColonCancelEventDefinition: CancelEventDefinition = js.native
+  var bpmnColonCancelEventDefinition: CancelEventDefinition
   
   @JSName("bpmn:CatchEvent")
-  var bpmnColonCatchEvent: CatchEvent = js.native
+  var bpmnColonCatchEvent: CatchEvent
   
   @JSName("bpmn:Category")
-  var bpmnColonCategory: Category = js.native
+  var bpmnColonCategory: Category
   
   @JSName("bpmn:CategoryValue")
-  var bpmnColonCategoryValue: CategoryValue = js.native
+  var bpmnColonCategoryValue: CategoryValue
   
   @JSName("bpmn:Choreography")
-  var bpmnColonChoreography: Choreography = js.native
+  var bpmnColonChoreography: Choreography
   
   @JSName("bpmn:ChoreographyActivity")
-  var bpmnColonChoreographyActivity: ChoreographyActivity = js.native
+  var bpmnColonChoreographyActivity: ChoreographyActivity
   
   @JSName("bpmn:ChoreographyTask")
-  var bpmnColonChoreographyTask: ChoreographyTask = js.native
+  var bpmnColonChoreographyTask: ChoreographyTask
   
   @JSName("bpmn:Collaboration")
-  var bpmnColonCollaboration: Collaboration = js.native
+  var bpmnColonCollaboration: Collaboration
   
   @JSName("bpmn:CompensateEventDefinition")
-  var bpmnColonCompensateEventDefinition: CompensateEventDefinition = js.native
+  var bpmnColonCompensateEventDefinition: CompensateEventDefinition
   
   @JSName("bpmn:ComplexBehaviorDefinition")
-  var bpmnColonComplexBehaviorDefinition: ComplexBehaviorDefinition = js.native
+  var bpmnColonComplexBehaviorDefinition: ComplexBehaviorDefinition
   
   @JSName("bpmn:ComplexGateway")
-  var bpmnColonComplexGateway: ComplexGateway = js.native
+  var bpmnColonComplexGateway: ComplexGateway
   
   @JSName("bpmn:ConditionalEventDefinition")
-  var bpmnColonConditionalEventDefinition: ConditionalEventDefinition = js.native
+  var bpmnColonConditionalEventDefinition: ConditionalEventDefinition
   
   @JSName("bpmn:Conversation")
-  var bpmnColonConversation: Conversation = js.native
+  var bpmnColonConversation: Conversation
   
   @JSName("bpmn:ConversationAssociation")
-  var bpmnColonConversationAssociation: ConversationAssociation = js.native
+  var bpmnColonConversationAssociation: ConversationAssociation
   
   @JSName("bpmn:ConversationLink")
-  var bpmnColonConversationLink: ConversationLink = js.native
+  var bpmnColonConversationLink: ConversationLink
   
   @JSName("bpmn:ConversationNode")
-  var bpmnColonConversationNode: ConversationNode = js.native
+  var bpmnColonConversationNode: ConversationNode
   
   @JSName("bpmn:CorrelationKey")
-  var bpmnColonCorrelationKey: CorrelationKey = js.native
+  var bpmnColonCorrelationKey: CorrelationKey
   
   @JSName("bpmn:CorrelationProperty")
-  var bpmnColonCorrelationProperty: CorrelationProperty = js.native
+  var bpmnColonCorrelationProperty: CorrelationProperty
   
   @JSName("bpmn:CorrelationPropertyBinding")
-  var bpmnColonCorrelationPropertyBinding: CorrelationPropertyBinding = js.native
+  var bpmnColonCorrelationPropertyBinding: CorrelationPropertyBinding
   
   @JSName("bpmn:CorrelationPropertyRetrievalExpression")
-  var bpmnColonCorrelationPropertyRetrievalExpression: CorrelationPropertyRetrievalExpression = js.native
+  var bpmnColonCorrelationPropertyRetrievalExpression: CorrelationPropertyRetrievalExpression
   
   @JSName("bpmn:CorrelationSubscription")
-  var bpmnColonCorrelationSubscription: CorrelationSubscription = js.native
+  var bpmnColonCorrelationSubscription: CorrelationSubscription
   
   @JSName("bpmn:DataAssociation")
-  var bpmnColonDataAssociation: DataAssociation = js.native
+  var bpmnColonDataAssociation: DataAssociation
   
   @JSName("bpmn:DataInput")
-  var bpmnColonDataInput: DataInput = js.native
+  var bpmnColonDataInput: DataInput
   
   @JSName("bpmn:DataInputAssociation")
-  var bpmnColonDataInputAssociation: DataInputAssociation = js.native
+  var bpmnColonDataInputAssociation: DataInputAssociation
   
   @JSName("bpmn:DataObject")
-  var bpmnColonDataObject: DataObject = js.native
+  var bpmnColonDataObject: DataObject
   
   @JSName("bpmn:DataObjectReference")
-  var bpmnColonDataObjectReference: DataObjectReference = js.native
+  var bpmnColonDataObjectReference: DataObjectReference
   
   @JSName("bpmn:DataOutput")
-  var bpmnColonDataOutput: DataOutput = js.native
+  var bpmnColonDataOutput: DataOutput
   
   @JSName("bpmn:DataOutputAssociation")
-  var bpmnColonDataOutputAssociation: DataOutputAssociation = js.native
+  var bpmnColonDataOutputAssociation: DataOutputAssociation
   
   @JSName("bpmn:DataState")
-  var bpmnColonDataState: DataState = js.native
+  var bpmnColonDataState: DataState
   
   @JSName("bpmn:DataStore")
-  var bpmnColonDataStore: DataStore = js.native
+  var bpmnColonDataStore: DataStore
   
   @JSName("bpmn:DataStoreReference")
-  var bpmnColonDataStoreReference: DataStoreReference = js.native
+  var bpmnColonDataStoreReference: DataStoreReference
   
   @JSName("bpmn:Definitions")
-  var bpmnColonDefinitions: Definitions = js.native
+  var bpmnColonDefinitions: Definitions
   
   @JSName("bpmn:Documentation")
-  var bpmnColonDocumentation: Documentation = js.native
+  var bpmnColonDocumentation: Documentation
   
   @JSName("bpmn:EndEvent")
-  var bpmnColonEndEvent: EndEvent = js.native
+  var bpmnColonEndEvent: EndEvent
   
   @JSName("bpmn:EndPoint")
-  var bpmnColonEndPoint: EndPoint = js.native
+  var bpmnColonEndPoint: EndPoint
   
   @JSName("bpmn:Error")
-  var bpmnColonError: ErrorElement = js.native
+  var bpmnColonError: ErrorElement
   
   @JSName("bpmn:ErrorEventDefinition")
-  var bpmnColonErrorEventDefinition: ErrorEventDefinition = js.native
+  var bpmnColonErrorEventDefinition: ErrorEventDefinition
   
   @JSName("bpmn:Escalation")
-  var bpmnColonEscalation: Escalation = js.native
+  var bpmnColonEscalation: Escalation
   
   @JSName("bpmn:EscalationEventDefinition")
-  var bpmnColonEscalationEventDefinition: EscalationEventDefinition = js.native
+  var bpmnColonEscalationEventDefinition: EscalationEventDefinition
   
   @JSName("bpmn:Event")
-  var bpmnColonEvent: Event = js.native
+  var bpmnColonEvent: Event
   
   @JSName("bpmn:EventBasedGateway")
-  var bpmnColonEventBasedGateway: EventBasedGateway = js.native
+  var bpmnColonEventBasedGateway: EventBasedGateway
   
   @JSName("bpmn:EventDefinition")
-  var bpmnColonEventDefinition: EventDefinition = js.native
+  var bpmnColonEventDefinition: EventDefinition
   
   @JSName("bpmn:ExclusiveGateway")
-  var bpmnColonExclusiveGateway: ExclusiveGateway = js.native
+  var bpmnColonExclusiveGateway: ExclusiveGateway
   
   @JSName("bpmn:Expression")
-  var bpmnColonExpression: Expression = js.native
+  var bpmnColonExpression: Expression
   
   @JSName("bpmn:Extension")
-  var bpmnColonExtension: Extension = js.native
+  var bpmnColonExtension: Extension
   
   @JSName("bpmn:ExtensionAttributeDefinition")
-  var bpmnColonExtensionAttributeDefinition: ExtensionAttributeDefinition = js.native
+  var bpmnColonExtensionAttributeDefinition: ExtensionAttributeDefinition
   
   @JSName("bpmn:ExtensionDefinition")
-  var bpmnColonExtensionDefinition: ExtensionDefinition = js.native
+  var bpmnColonExtensionDefinition: ExtensionDefinition
   
   @JSName("bpmn:ExtensionElements")
-  var bpmnColonExtensionElements: ExtensionElements = js.native
+  var bpmnColonExtensionElements: ExtensionElements
   
   @JSName("bpmn:FlowElement")
-  var bpmnColonFlowElement: FlowElement = js.native
+  var bpmnColonFlowElement: FlowElement
   
   @JSName("bpmn:FlowElementsContainer")
-  var bpmnColonFlowElementsContainer: FlowElementsContainer = js.native
+  var bpmnColonFlowElementsContainer: FlowElementsContainer
   
   @JSName("bpmn:FlowNode")
-  var bpmnColonFlowNode: FlowNode = js.native
+  var bpmnColonFlowNode: FlowNode
   
   @JSName("bpmn:FormalExpression")
-  var bpmnColonFormalExpression: FormalExpression = js.native
+  var bpmnColonFormalExpression: FormalExpression
   
   @JSName("bpmn:Gateway")
-  var bpmnColonGateway: Gateway = js.native
+  var bpmnColonGateway: Gateway
   
   @JSName("bpmn:GlobalBusinessRuleTask")
-  var bpmnColonGlobalBusinessRuleTask: GlobalBusinessRuleTask = js.native
+  var bpmnColonGlobalBusinessRuleTask: GlobalBusinessRuleTask
   
   @JSName("bpmn:GlobalChoreographyTask")
-  var bpmnColonGlobalChoreographyTask: GlobalChoreographyTask = js.native
+  var bpmnColonGlobalChoreographyTask: GlobalChoreographyTask
   
   @JSName("bpmn:GlobalConversation")
-  var bpmnColonGlobalConversation: GlobalConversation = js.native
+  var bpmnColonGlobalConversation: GlobalConversation
   
   @JSName("bpmn:GlobalManualTask")
-  var bpmnColonGlobalManualTask: GlobalManualTask = js.native
+  var bpmnColonGlobalManualTask: GlobalManualTask
   
   @JSName("bpmn:GlobalScriptTask")
-  var bpmnColonGlobalScriptTask: GlobalScriptTask = js.native
+  var bpmnColonGlobalScriptTask: GlobalScriptTask
   
   @JSName("bpmn:GlobalTask")
-  var bpmnColonGlobalTask: GlobalTask = js.native
+  var bpmnColonGlobalTask: GlobalTask
   
   @JSName("bpmn:GlobalUserTask")
-  var bpmnColonGlobalUserTask: GlobalUserTask = js.native
+  var bpmnColonGlobalUserTask: GlobalUserTask
   
   @JSName("bpmn:Group")
-  var bpmnColonGroup: Group = js.native
+  var bpmnColonGroup: Group
   
   @JSName("bpmn:HumanPerformer")
-  var bpmnColonHumanPerformer: HumanPerformer = js.native
+  var bpmnColonHumanPerformer: HumanPerformer
   
   @JSName("bpmn:ImplicitThrowEvent")
-  var bpmnColonImplicitThrowEvent: ImplicitThrowEvent = js.native
+  var bpmnColonImplicitThrowEvent: ImplicitThrowEvent
   
   @JSName("bpmn:Import")
-  var bpmnColonImport: Import = js.native
+  var bpmnColonImport: Import
   
   @JSName("bpmn:InclusiveGateway")
-  var bpmnColonInclusiveGateway: InclusiveGateway = js.native
+  var bpmnColonInclusiveGateway: InclusiveGateway
   
   @JSName("bpmn:InputOutputBinding")
-  var bpmnColonInputOutputBinding: InputOutputBinding = js.native
+  var bpmnColonInputOutputBinding: InputOutputBinding
   
   @JSName("bpmn:InputOutputSpecification")
-  var bpmnColonInputOutputSpecification: InputOutputSpecification = js.native
+  var bpmnColonInputOutputSpecification: InputOutputSpecification
   
   @JSName("bpmn:InputSet")
-  var bpmnColonInputSet: InputSet = js.native
+  var bpmnColonInputSet: InputSet
   
   @JSName("bpmn:InteractionNode")
-  var bpmnColonInteractionNode: InteractionNode = js.native
+  var bpmnColonInteractionNode: InteractionNode
   
   @JSName("bpmn:Interface")
-  var bpmnColonInterface: Interface = js.native
+  var bpmnColonInterface: Interface
   
   @JSName("bpmn:IntermediateCatchEvent")
-  var bpmnColonIntermediateCatchEvent: IntermediateCatchEvent = js.native
+  var bpmnColonIntermediateCatchEvent: IntermediateCatchEvent
   
   @JSName("bpmn:IntermediateThrowEvent")
-  var bpmnColonIntermediateThrowEvent: IntermediateThrowEvent = js.native
+  var bpmnColonIntermediateThrowEvent: IntermediateThrowEvent
   
   @JSName("bpmn:ItemAwareElement")
-  var bpmnColonItemAwareElement: ItemAwareElement = js.native
+  var bpmnColonItemAwareElement: ItemAwareElement
   
   @JSName("bpmn:ItemDefinition")
-  var bpmnColonItemDefinition: ItemDefinition = js.native
+  var bpmnColonItemDefinition: ItemDefinition
   
   @JSName("bpmn:Lane")
-  var bpmnColonLane: Lane = js.native
+  var bpmnColonLane: Lane
   
   @JSName("bpmn:LaneSet")
-  var bpmnColonLaneSet: LaneSet = js.native
+  var bpmnColonLaneSet: LaneSet
   
   @JSName("bpmn:LinkEventDefinition")
-  var bpmnColonLinkEventDefinition: LinkEventDefinition = js.native
+  var bpmnColonLinkEventDefinition: LinkEventDefinition
   
   @JSName("bpmn:LoopCharacteristics")
-  var bpmnColonLoopCharacteristics: LoopCharacteristics = js.native
+  var bpmnColonLoopCharacteristics: LoopCharacteristics
   
   @JSName("bpmn:ManualTask")
-  var bpmnColonManualTask: ManualTask = js.native
+  var bpmnColonManualTask: ManualTask
   
   @JSName("bpmn:Message")
-  var bpmnColonMessage: Message = js.native
+  var bpmnColonMessage: Message
   
   @JSName("bpmn:MessageEventDefinition")
-  var bpmnColonMessageEventDefinition: MessageEventDefinition = js.native
+  var bpmnColonMessageEventDefinition: MessageEventDefinition
   
   @JSName("bpmn:MessageFlow")
-  var bpmnColonMessageFlow: MessageFlow = js.native
+  var bpmnColonMessageFlow: MessageFlow
   
   @JSName("bpmn:MessageFlowAssociation")
-  var bpmnColonMessageFlowAssociation: MessageFlowAssociation = js.native
+  var bpmnColonMessageFlowAssociation: MessageFlowAssociation
   
   @JSName("bpmn:Monitoring")
-  var bpmnColonMonitoring: Monitoring = js.native
+  var bpmnColonMonitoring: Monitoring
   
   @JSName("bpmn:MultiInstanceLoopCharacteristics")
-  var bpmnColonMultiInstanceLoopCharacteristics: MultiInstanceLoopCharacteristics = js.native
+  var bpmnColonMultiInstanceLoopCharacteristics: MultiInstanceLoopCharacteristics
   
   @JSName("bpmn:Operation")
-  var bpmnColonOperation: Operation = js.native
+  var bpmnColonOperation: Operation
   
   @JSName("bpmn:OutputSet")
-  var bpmnColonOutputSet: OutputSet = js.native
+  var bpmnColonOutputSet: OutputSet
   
   @JSName("bpmn:ParallelGateway")
-  var bpmnColonParallelGateway: ParallelGateway = js.native
+  var bpmnColonParallelGateway: ParallelGateway
   
   @JSName("bpmn:Participant")
-  var bpmnColonParticipant: Participant = js.native
+  var bpmnColonParticipant: Participant
   
   @JSName("bpmn:ParticipantAssociation")
-  var bpmnColonParticipantAssociation: ParticipantAssociation = js.native
+  var bpmnColonParticipantAssociation: ParticipantAssociation
   
   @JSName("bpmn:ParticipantMultiplicity")
-  var bpmnColonParticipantMultiplicity: ParticipantMultiplicity = js.native
+  var bpmnColonParticipantMultiplicity: ParticipantMultiplicity
   
   @JSName("bpmn:PartnerEntity")
-  var bpmnColonPartnerEntity: PartnerEntity = js.native
+  var bpmnColonPartnerEntity: PartnerEntity
   
   @JSName("bpmn:PartnerRole")
-  var bpmnColonPartnerRole: PartnerRole = js.native
+  var bpmnColonPartnerRole: PartnerRole
   
   @JSName("bpmn:Performer")
-  var bpmnColonPerformer: Performer = js.native
+  var bpmnColonPerformer: Performer
   
   @JSName("bpmn:PotentialOwner")
-  var bpmnColonPotentialOwner: PotentialOwner = js.native
+  var bpmnColonPotentialOwner: PotentialOwner
   
   @JSName("bpmn:Process")
-  var bpmnColonProcess: Process = js.native
+  var bpmnColonProcess: Process
   
   @JSName("bpmn:Property")
-  var bpmnColonProperty: Property = js.native
+  var bpmnColonProperty: Property
   
   @JSName("bpmn:ReceiveTask")
-  var bpmnColonReceiveTask: ReceiveTask = js.native
+  var bpmnColonReceiveTask: ReceiveTask
   
   @JSName("bpmn:Relationship")
-  var bpmnColonRelationship: Relationship = js.native
+  var bpmnColonRelationship: Relationship
   
   @JSName("bpmn:Rendering")
-  var bpmnColonRendering: Rendering = js.native
+  var bpmnColonRendering: Rendering
   
   @JSName("bpmn:Resource")
-  var bpmnColonResource: Resource = js.native
+  var bpmnColonResource: Resource
   
   @JSName("bpmn:ResourceAssignmentExpression")
-  var bpmnColonResourceAssignmentExpression: ResourceAssignmentExpression = js.native
+  var bpmnColonResourceAssignmentExpression: ResourceAssignmentExpression
   
   @JSName("bpmn:ResourceParameter")
-  var bpmnColonResourceParameter: ResourceParameter = js.native
+  var bpmnColonResourceParameter: ResourceParameter
   
   @JSName("bpmn:ResourceParameterBinding")
-  var bpmnColonResourceParameterBinding: ResourceParameterBinding = js.native
+  var bpmnColonResourceParameterBinding: ResourceParameterBinding
   
   @JSName("bpmn:ResourceRole")
-  var bpmnColonResourceRole: ResourceRole = js.native
+  var bpmnColonResourceRole: ResourceRole
   
   @JSName("bpmn:RootElement")
-  var bpmnColonRootElement: RootElement = js.native
+  var bpmnColonRootElement: RootElement
   
   @JSName("bpmn:ScriptTask")
-  var bpmnColonScriptTask: ScriptTask = js.native
+  var bpmnColonScriptTask: ScriptTask
   
   @JSName("bpmn:SendTask")
-  var bpmnColonSendTask: SendTask = js.native
+  var bpmnColonSendTask: SendTask
   
   @JSName("bpmn:SequenceFlow")
-  var bpmnColonSequenceFlow: SequenceFlow = js.native
+  var bpmnColonSequenceFlow: SequenceFlow
   
   @JSName("bpmn:ServiceTask")
-  var bpmnColonServiceTask: ServiceTask = js.native
+  var bpmnColonServiceTask: ServiceTask
   
   @JSName("bpmn:Signal")
-  var bpmnColonSignal: Signal = js.native
+  var bpmnColonSignal: Signal
   
   @JSName("bpmn:SignalEventDefinition")
-  var bpmnColonSignalEventDefinition: SignalEventDefinition = js.native
+  var bpmnColonSignalEventDefinition: SignalEventDefinition
   
   @JSName("bpmn:StandardLoopCharacteristics")
-  var bpmnColonStandardLoopCharacteristics: StandardLoopCharacteristics = js.native
+  var bpmnColonStandardLoopCharacteristics: StandardLoopCharacteristics
   
   @JSName("bpmn:StartEvent")
-  var bpmnColonStartEvent: StartEvent = js.native
+  var bpmnColonStartEvent: StartEvent
   
   @JSName("bpmn:SubChoreography")
-  var bpmnColonSubChoreography: SubChoreography = js.native
+  var bpmnColonSubChoreography: SubChoreography
   
   @JSName("bpmn:SubConversation")
-  var bpmnColonSubConversation: SubConversation = js.native
+  var bpmnColonSubConversation: SubConversation
   
   @JSName("bpmn:SubProcess")
-  var bpmnColonSubProcess: SubProcess = js.native
+  var bpmnColonSubProcess: SubProcess
   
   @JSName("bpmn:Task")
-  var bpmnColonTask: Task = js.native
+  var bpmnColonTask: Task
   
   @JSName("bpmn:TerminateEventDefinition")
-  var bpmnColonTerminateEventDefinition: TerminateEventDefinition = js.native
+  var bpmnColonTerminateEventDefinition: TerminateEventDefinition
   
   @JSName("bpmn:TextAnnotation")
-  var bpmnColonTextAnnotation: TextAnnotation = js.native
+  var bpmnColonTextAnnotation: TextAnnotation
   
   @JSName("bpmn:ThrowEvent")
-  var bpmnColonThrowEvent: ThrowEvent = js.native
+  var bpmnColonThrowEvent: ThrowEvent
   
   @JSName("bpmn:TimerEventDefinition")
-  var bpmnColonTimerEventDefinition: TimerEventDefinition = js.native
+  var bpmnColonTimerEventDefinition: TimerEventDefinition
   
   @JSName("bpmn:Transaction")
-  var bpmnColonTransaction: Transaction = js.native
+  var bpmnColonTransaction: Transaction
   
   @JSName("bpmn:UserTask")
-  var bpmnColonUserTask: UserTask = js.native
+  var bpmnColonUserTask: UserTask
   
   @JSName("bpmndi:BPMNDiagram")
-  var bpmndiColonBPMNDiagram: BPMNDiagram = js.native
+  var bpmndiColonBPMNDiagram: BPMNDiagram
   
   @JSName("bpmndi:BPMNEdge")
-  var bpmndiColonBPMNEdge: BPMNEdge = js.native
+  var bpmndiColonBPMNEdge: BPMNEdge
   
   @JSName("bpmndi:BPMNLabel")
-  var bpmndiColonBPMNLabel: BPMNLabel = js.native
+  var bpmndiColonBPMNLabel: BPMNLabel
   
   @JSName("bpmndi:BPMNLabelStyle")
-  var bpmndiColonBPMNLabelStyle: BPMNLabelStyle = js.native
+  var bpmndiColonBPMNLabelStyle: BPMNLabelStyle
   
   @JSName("bpmndi:BPMNPlane")
-  var bpmndiColonBPMNPlane: BPMNPlane = js.native
+  var bpmndiColonBPMNPlane: BPMNPlane
   
   @JSName("bpmndi:BPMNShape")
-  var bpmndiColonBPMNShape: BPMNShape = js.native
+  var bpmndiColonBPMNShape: BPMNShape
   
   @JSName("dc:Bounds")
-  var dcColonBounds: Bounds = js.native
+  var dcColonBounds: Bounds
   
   @JSName("dc:Font")
-  var dcColonFont: Font = js.native
+  var dcColonFont: Font
   
   @JSName("dc:Point")
-  var dcColonPoint: Point = js.native
+  var dcColonPoint: Point
   
   @JSName("dc:Real")
-  var dcColonReal: js.Any = js.native
+  var dcColonReal: js.Any
   
   @JSName("dc:boolean")
-  var dcColonboolean: Boolean = js.native
+  var dcColonboolean: Boolean
   
   @JSName("dc:number")
-  var dcColonnumber: Double = js.native
+  var dcColonnumber: Double
   
   @JSName("dc:string")
-  var dcColonstring: String = js.native
+  var dcColonstring: String
   
   @JSName("di:Diagram")
-  var diColonDiagram: Diagram = js.native
+  var diColonDiagram: Diagram
   
   @JSName("di:DiagramElement")
-  var diColonDiagramElement: DiagramElement = js.native
+  var diColonDiagramElement: DiagramElement
   
   @JSName("di:Edge")
-  var diColonEdge: Edge = js.native
+  var diColonEdge: Edge
   
   @JSName("di:Extension")
-  var diColonExtension: Extension = js.native
+  var diColonExtension: Extension
   
   @JSName("di:Label")
-  var diColonLabel: Label = js.native
+  var diColonLabel: Label
   
   @JSName("di:LabeledEdge")
-  var diColonLabeledEdge: LabeledEdge = js.native
+  var diColonLabeledEdge: LabeledEdge
   
   @JSName("di:LabeledShape")
-  var diColonLabeledShape: LabeledShape = js.native
+  var diColonLabeledShape: LabeledShape
   
   @JSName("di:Node")
-  var diColonNode: Node = js.native
+  var diColonNode: Node
   
   @JSName("di:Plane")
-  var diColonPlane: Plane = js.native
+  var diColonPlane: Plane
   
   @JSName("di:Shape")
-  var diColonShape: Shape = js.native
+  var diColonShape: Shape
   
   @JSName("di:Style")
-  var diColonStyle: Style = js.native
+  var diColonStyle: Style
 }
 object ElementTypes {
   

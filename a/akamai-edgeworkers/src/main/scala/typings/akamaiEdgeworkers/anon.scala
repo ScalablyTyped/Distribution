@@ -10,15 +10,13 @@ import typings.akamaiEdgeworkers.streamsMod.ReadableStream
 import typings.akamaiEdgeworkers.streamsMod.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Aborted extends StObject {
     
-    var aborted: Boolean = js.native
+    var aborted: Boolean
   }
   object Aborted {
     
@@ -36,16 +34,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Body extends StObject {
     
-    var body: js.UndefOr[js.Object] = js.native
+    var body: js.UndefOr[js.Object] = js.undefined
     
-    var denyReason: js.UndefOr[String] = js.native
+    var denyReason: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[typings.akamaiEdgeworkers.createResponseMod.Headers] = js.native
+    var headers: js.UndefOr[typings.akamaiEdgeworkers.createResponseMod.Headers] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
   }
   object Body {
     
@@ -84,26 +81,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Domain extends StObject {
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var expires: js.UndefOr[ToUTCString] = js.native
+    var expires: js.UndefOr[ToUTCString] = js.undefined
     
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var sameSite: js.UndefOr[Strict | Lax | None | `true`] = js.native
+    var sameSite: js.UndefOr[Strict | Lax | None | `true`] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Domain {
     
@@ -172,16 +168,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Headers extends StObject {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.native
+    var headers: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Headers {
     
@@ -220,10 +215,9 @@ object anon {
     }
   }
   
-  @js.native
   trait HighWaterMark extends StObject {
     
-    var highWaterMark: Double = js.native
+    var highWaterMark: Double
   }
   object HighWaterMark {
     
@@ -241,16 +235,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Mode extends StObject {
     
-    var mode: byob = js.native
+    var mode: byob
   }
   object Mode {
     
     @scala.inline
-    def apply(mode: byob): Mode = {
-      val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+    def apply(): Mode = {
+      val __obj = js.Dynamic.literal(mode = "byob")
       __obj.asInstanceOf[Mode]
     }
     
@@ -262,12 +255,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Readable[R, T] extends StObject {
     
-    var readable: ReadableStream[T] = js.native
+    var readable: ReadableStream[T]
     
-    var writable: WritableStream[R] = js.native
+    var writable: WritableStream[R]
   }
   object Readable {
     
@@ -278,7 +270,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ReadableMutableBuilder[Self <: Readable[_, _], R, T] (val x: Self with (Readable[R, T])) extends AnyVal {
+    implicit class ReadableMutableBuilder[Self <: Readable[?, ?], R, T] (val x: Self & (Readable[R, T])) extends AnyVal {
       
       @scala.inline
       def setReadable(value: ReadableStream[T]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
@@ -288,18 +280,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[scala.Nothing] = js.native
+    var size: Unit
   }
   object Size {
     
     @scala.inline
-    def apply(): Size = {
-      val __obj = js.Dynamic.literal()
+    def apply(size: Unit): Size = {
+      val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Size]
     }
     
@@ -311,13 +302,15 @@ object anon {
       
       @scala.inline
       def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      
+      @scala.inline
+      def setSize(value: Unit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ToUTCString extends StObject {
     
-    def toUTCString(): String = js.native
+    def toUTCString(): String
   }
   object ToUTCString {
     

@@ -4,16 +4,14 @@ import typings.plotlyJs.mod.Slider
 import typings.plotlyJs.mod.SliderStep
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<plotly.js.plotly.js.SliderEndEvent> */
-@js.native
 trait ReadonlySliderEndEvent extends StObject {
   
-  val slider: Slider = js.native
+  val slider: Slider
   
-  val step: SliderStep = js.native
+  val step: SliderStep
 }
 object ReadonlySliderEndEvent {
   

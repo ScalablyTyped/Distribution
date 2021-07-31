@@ -9,7 +9,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,6 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Original document is [here](https://www.npmjs.com/package/firebird).
   */
 object mod {
+  
+  @JSImport("firebird", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Handles database connection and queries. Supports Synchronous and Asynchronous operation.
@@ -353,9 +356,9 @@ object mod {
     def end(buffer: Buffer, cb: js.Function): Unit = js.native
     def end(str: String): Unit = js.native
     def end(str: String, cb: js.Function): Unit = js.native
-    def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
     def end(str: String, encoding: String): Unit = js.native
     def end(str: String, encoding: String, cb: js.Function): Unit = js.native
+    def end(str: String, encoding: Unit, cb: js.Function): Unit = js.native
     
     def pause(): this.type = js.native
     
@@ -371,17 +374,16 @@ object mod {
     def write(buffer: String, cb: js.Function): Boolean = js.native
     def write(buffer: Buffer): Boolean = js.native
     def write(buffer: Buffer, cb: js.Function): Boolean = js.native
-    def write(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Boolean = js.native
     def write(str: String, encoding: String): Boolean = js.native
     def write(str: String, encoding: String, cb: js.Function): Boolean = js.native
+    def write(str: String, encoding: Unit, cb: js.Function): Boolean = js.native
   }
   
   /**
     * @see createConnection() method will create Firebird Connection object for you
     */
-  @JSImport("firebird", "createConnection")
-  @js.native
-  def createConnection(): Connection = js.native
+  @scala.inline
+  def createConnection(): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")().asInstanceOf[Connection]
   
   /**
     * @desc
@@ -441,31 +443,31 @@ object mod {
       */
     def _readAll(): Unit = js.native
     def _readAll(callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]): Unit = js.native
-    def _readAll(
-      initialSize: js.UndefOr[scala.Nothing],
-      chunkSize: js.UndefOr[scala.Nothing],
-      callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
-    ): Unit = js.native
-    def _readAll(initialSize: js.UndefOr[scala.Nothing], chunkSize: Double): Unit = js.native
-    def _readAll(
-      initialSize: js.UndefOr[scala.Nothing],
-      chunkSize: Double,
-      callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
-    ): Unit = js.native
     def _readAll(initialSize: Double): Unit = js.native
     def _readAll(
       initialSize: Double,
-      callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
-    ): Unit = js.native
-    def _readAll(
-      initialSize: Double,
-      chunkSize: js.UndefOr[scala.Nothing],
       callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
     ): Unit = js.native
     def _readAll(initialSize: Double, chunkSize: Double): Unit = js.native
     def _readAll(
       initialSize: Double,
       chunkSize: Double,
+      callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
+    ): Unit = js.native
+    def _readAll(
+      initialSize: Double,
+      chunkSize: Unit,
+      callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
+    ): Unit = js.native
+    def _readAll(initialSize: Unit, chunkSize: Double): Unit = js.native
+    def _readAll(
+      initialSize: Unit,
+      chunkSize: Double,
+      callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
+    ): Unit = js.native
+    def _readAll(
+      initialSize: Unit,
+      chunkSize: Unit,
       callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
     ): Unit = js.native
     
@@ -485,13 +487,9 @@ object mod {
       * @param callback function(err), err - Error object in case of error, or null;
       */
     def _write(buffer: Buffer): Unit = js.native
-    def _write(
-      buffer: Buffer,
-      len: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ Error | Null, Unit]
-    ): Unit = js.native
     def _write(buffer: Buffer, len: Double): Unit = js.native
     def _write(buffer: Buffer, len: Double, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def _write(buffer: Buffer, len: Unit, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
     
     /**
       * Synchronously writes BLOB segment (chunk) from buffer.
@@ -511,7 +509,6 @@ object mod {
     * To get instance of this object call @see startNewTransactionSync or @see startNewTransaction methods of @see Connection object.
     * Transaction objects may be reused after commit or rollback.
     */
-  @js.native
   trait Transaction extends StObject {
     
     /**
@@ -522,7 +519,7 @@ object mod {
       *
       * @param callback function(err), where err is error object in case of error.
       */
-    def commit(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def commit(callback: js.Function1[/* err */ Error | Null, Unit]): Unit
     
     /**
       * Synchronously commits this transaction.
@@ -533,12 +530,12 @@ object mod {
       * if this object does not have active transaction (check inTransaction property).
       * You also should note that DDL statements (altering database structure) are commited automatically.
       */
-    def commitSync(): Unit = js.native
+    def commitSync(): Unit
     
     /*
       * A boolean readonly property indicating if this transaction is in started state.
       */
-    var inTransaction: Boolean = js.native
+    var inTransaction: Boolean
     
     /**
       * Synchronously prepares SQL statement
@@ -546,7 +543,7 @@ object mod {
       * @param sql an SQL query to prepare.
       * @returns object in context of this transaction.
       */
-    def prepareSync(sql: String): FBStatement = js.native
+    def prepareSync(sql: String): FBStatement
     
     /**
       * Asynchronously executes query in context of this transaction.
@@ -554,14 +551,14 @@ object mod {
       * @param sql an SQL query to execute.
       * @param callback err - is error object or null, res - FBResult object.
       */
-    def query(sql: String, callback: js.Function2[/* err */ Error | Null, /* res */ FBResult, Unit]): Unit = js.native
+    def query(sql: String, callback: js.Function2[/* err */ Error | Null, /* res */ FBResult, Unit]): Unit
     
     /**
       * Executes SQL query in context of this transaction. Returns FBResult object in case of success. Raises error otherwise.
       *
       * @param sql an SQL query to execute.
       */
-    def querySync(sql: String): Unit = js.native
+    def querySync(sql: String): Unit
     
     /**
       * Asynchronously rollbacks transaction.
@@ -571,7 +568,7 @@ object mod {
       *
       * @param callback function(err), where err is error object in case of error.
       */
-    def rollback(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def rollback(callback: js.Function1[/* err */ Error | Null, Unit]): Unit
     
     /**
       * Synchronously rollbacks transaction.
@@ -579,7 +576,7 @@ object mod {
       * @desc
       * Read notes in @see commitSync() .
       */
-    def rollbackSync(): Unit = js.native
+    def rollbackSync(): Unit
     
     /**
       * Asynchronously starts new transaction.
@@ -589,7 +586,7 @@ object mod {
       *
       * @param callback function(err), where err is error object in case of error.
       */
-    def start(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def start(callback: js.Function1[/* err */ Error | Null, Unit]): Unit
     
     /**
       * Synchronously starts transaction.
@@ -599,7 +596,7 @@ object mod {
       * Read notes in @see commitSync() .
       * See @see inTransaction property.
       */
-    def startSync(): Unit = js.native
+    def startSync(): Unit
   }
   object Transaction {
     

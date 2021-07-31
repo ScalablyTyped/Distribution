@@ -2,13 +2,11 @@ package typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes one specific error.
   */
-@js.native
 trait SchemaErrorProto extends StObject {
   
   /**
@@ -16,26 +14,26 @@ trait SchemaErrorProto extends StObject {
     * given the error domain and code.  Different error codes require different
     * arguments.
     */
-  var argument: js.UndefOr[js.Array[String]] = js.native
+  var argument: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Error code in the error domain. This should correspond to a value of the
     * enum type whose name is in domain. See the core error domain in
     * error_domain.proto.
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * Debugging information, which should not be shared externally.
     */
-  var debugInfo: js.UndefOr[String] = js.native
+  var debugInfo: js.UndefOr[String] = js.undefined
   
   /**
     * Error domain. RoSy services can define their own domain and error codes.
     * This should normally be the name of an enum type, such as:
     * gdata.CoreErrorDomain
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * A short explanation for the error, which can be shared outside Google.
@@ -46,7 +44,7 @@ trait SchemaErrorProto extends StObject {
     * should not be exposed. It is safer if external APIs can understand the
     * errors and decide what the error message should look like.
     */
-  var externalErrorMessage: js.UndefOr[String] = js.native
+  var externalErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Location of the error, as specified by the location type.  If
@@ -55,9 +53,9 @@ trait SchemaErrorProto extends StObject {
     * (net/proto2/util/public/field_path.h).  Examples:
     * authenticated_user.gaia_id   resource.address[2].country
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var locationType: js.UndefOr[String] = js.native
+  var locationType: js.UndefOr[String] = js.undefined
 }
 object SchemaErrorProto {
   

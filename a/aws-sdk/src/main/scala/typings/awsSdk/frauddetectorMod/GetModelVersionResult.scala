@@ -2,51 +2,49 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetModelVersionResult extends StObject {
   
   /**
     * The model version ARN.
     */
-  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  var arn: js.UndefOr[fraudDetectorArn] = js.undefined
   
   /**
     * The event details.
     */
-  var externalEventsDetail: js.UndefOr[ExternalEventsDetail] = js.native
+  var externalEventsDetail: js.UndefOr[ExternalEventsDetail] = js.undefined
   
   /**
     * The model ID.
     */
-  var modelId: js.UndefOr[modelIdentifier] = js.native
+  var modelId: js.UndefOr[modelIdentifier] = js.undefined
   
   /**
     * The model type.
     */
-  var modelType: js.UndefOr[ModelTypeEnum] = js.native
+  var modelType: js.UndefOr[ModelTypeEnum] = js.undefined
   
   /**
     * The model version number.
     */
-  var modelVersionNumber: js.UndefOr[floatVersionString] = js.native
+  var modelVersionNumber: js.UndefOr[floatVersionString] = js.undefined
   
   /**
     * The model version status. Possible values are:    TRAINING_IN_PROGRESS     TRAINING_COMPLETE     ACTIVATE_REQUESTED     ACTIVATE_IN_PROGRESS     ACTIVE     INACTIVATE_REQUESTED     INACTIVATE_IN_PROGRESS     INACTIVE     ERROR   
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The training data schema.
     */
-  var trainingDataSchema: js.UndefOr[TrainingDataSchema] = js.native
+  var trainingDataSchema: js.UndefOr[TrainingDataSchema] = js.undefined
   
   /**
     * The training data source.
     */
-  var trainingDataSource: js.UndefOr[TrainingDataSourceEnum] = js.native
+  var trainingDataSource: js.UndefOr[TrainingDataSourceEnum] = js.undefined
 }
 object GetModelVersionResult {
   

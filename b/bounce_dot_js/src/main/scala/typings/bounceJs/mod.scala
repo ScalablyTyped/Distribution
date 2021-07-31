@@ -6,14 +6,15 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("bounce.js", JSImport.Default)
   @js.native
-  class default () extends Bounce
+  class default ()
+    extends StObject
+       with Bounce
   object default {
     
     @JSImport("bounce.js", JSImport.Default)
@@ -35,19 +36,17 @@ object mod {
     def counter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("counter")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("bounce.js", "default.isSupported")
-    @js.native
-    def isSupported(): Boolean = js.native
+    @scala.inline
+    def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   }
   
-  @js.native
   trait AnimationOptions extends StObject {
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var onComplete: js.UndefOr[js.Function0[Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var remove: js.UndefOr[Boolean] = js.native
+    var remove: js.UndefOr[Boolean] = js.undefined
   }
   object AnimationOptions {
     
@@ -107,22 +106,21 @@ object mod {
     def translate(options: BounceOptions[Point2D]): Bounce = js.native
   }
   
-  @js.native
   trait BounceOptions[T] extends StObject {
     
-    var bounces: js.UndefOr[Double] = js.native
+    var bounces: js.UndefOr[Double] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
-    var from: T = js.native
+    var from: T
     
-    var stiffness: js.UndefOr[Double] = js.native
+    var stiffness: js.UndefOr[Double] = js.undefined
     
-    var to: T = js.native
+    var to: T
   }
   object BounceOptions {
     
@@ -133,7 +131,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class BounceOptionsMutableBuilder[Self <: BounceOptions[_], T] (val x: Self with BounceOptions[T]) extends AnyVal {
+    implicit class BounceOptionsMutableBuilder[Self <: BounceOptions[?], T] (val x: Self & BounceOptions[T]) extends AnyVal {
       
       @scala.inline
       def setBounces(value: Double): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
@@ -173,12 +171,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Point2D extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point2D {
     
@@ -199,24 +196,23 @@ object mod {
     }
   }
   
-  @js.native
   trait SerailizedComponent[T] extends StObject {
     
-    var bounces: Double = js.native
+    var bounces: Double
     
-    var delay: Double = js.native
+    var delay: Double
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var easing: String = js.native
+    var easing: String
     
-    var from: T = js.native
+    var from: T
     
-    var stiffness: Double = js.native
+    var stiffness: Double
     
-    var to: T = js.native
+    var to: T
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SerailizedComponent {
     
@@ -237,7 +233,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SerailizedComponentMutableBuilder[Self <: SerailizedComponent[_], T] (val x: Self with SerailizedComponent[T]) extends AnyVal {
+    implicit class SerailizedComponentMutableBuilder[Self <: SerailizedComponent[?], T] (val x: Self & SerailizedComponent[T]) extends AnyVal {
       
       @scala.inline
       def setBounces(value: Double): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])

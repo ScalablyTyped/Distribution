@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAttributesResponse extends StObject {
   
   /**
     * A list of attribute objects that meet the criteria of the request.
     */
-  var attributes: js.UndefOr[Attributes] = js.native
+  var attributes: js.UndefOr[Attributes] = js.undefined
   
   /**
     * The nextToken value to include in a future ListAttributes request. When the results of a ListAttributes request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object ListAttributesResponse {
   

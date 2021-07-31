@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryStatistics extends StObject {
   
   /**
     * The total number of bytes in the log events scanned during the query.
     */
-  var bytesScanned: js.UndefOr[StatsValue] = js.native
+  var bytesScanned: js.UndefOr[StatsValue] = js.undefined
   
   /**
     * The number of log events that matched the query string.
     */
-  var recordsMatched: js.UndefOr[StatsValue] = js.native
+  var recordsMatched: js.UndefOr[StatsValue] = js.undefined
   
   /**
     * The total number of log events scanned during the query.
     */
-  var recordsScanned: js.UndefOr[StatsValue] = js.native
+  var recordsScanned: js.UndefOr[StatsValue] = js.undefined
 }
 object QueryStatistics {
   

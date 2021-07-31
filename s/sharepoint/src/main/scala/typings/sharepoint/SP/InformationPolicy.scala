@@ -2,13 +2,14 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object InformationPolicy {
   
   @js.native
-  trait ProjectPolicy extends ClientObject {
+  trait ProjectPolicy
+    extends StObject
+       with ClientObject {
     
     def get_description(): String = js.native
     

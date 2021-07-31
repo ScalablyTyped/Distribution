@@ -2,33 +2,31 @@ package typings.kendoUi.kendo.dataviz.map
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkerTooltip extends StObject {
   
-  var animation: js.UndefOr[MarkerTooltipAnimation] = js.native
+  var animation: js.UndefOr[MarkerTooltipAnimation] = js.undefined
   
-  var autoHide: js.UndefOr[Boolean] = js.native
+  var autoHide: js.UndefOr[Boolean] = js.undefined
   
-  var callout: js.UndefOr[Boolean] = js.native
+  var callout: js.UndefOr[Boolean] = js.undefined
   
-  var content: js.UndefOr[String | js.Function | MarkerTooltipContent] = js.native
+  var content: js.UndefOr[String | js.Function | MarkerTooltipContent] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var iframe: js.UndefOr[Boolean] = js.native
+  var iframe: js.UndefOr[Boolean] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var showAfter: js.UndefOr[Double] = js.native
+  var showAfter: js.UndefOr[Double] = js.undefined
   
-  var showOn: js.UndefOr[String] = js.native
+  var showOn: js.UndefOr[String] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object MarkerTooltip {
   

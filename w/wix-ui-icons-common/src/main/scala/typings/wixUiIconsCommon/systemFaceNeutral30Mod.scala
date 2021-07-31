@@ -5,7 +5,6 @@ import typings.react.mod.SFC
 import typings.wixUiIconsCommon.faceNeutral30Mod.FaceNeutral30Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object systemFaceNeutral30Mod extends Shortcut {

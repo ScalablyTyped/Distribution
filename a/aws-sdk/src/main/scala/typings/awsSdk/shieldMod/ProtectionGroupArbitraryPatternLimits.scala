@@ -2,16 +2,14 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtectionGroupArbitraryPatternLimits extends StObject {
   
   /**
     * The maximum number of resources you can specify for a single arbitrary pattern in a protection group.
     */
-  var MaxMembers: Long = js.native
+  var MaxMembers: Long
 }
 object ProtectionGroupArbitraryPatternLimits {
   

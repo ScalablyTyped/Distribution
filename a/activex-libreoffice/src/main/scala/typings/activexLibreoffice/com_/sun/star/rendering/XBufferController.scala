@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface provides methods to enable and control double/multi-buffering facilities on screen devices.
   * @since OOo 2.0
   */
-@js.native
-trait XBufferController extends XInterface {
+trait XBufferController
+  extends StObject
+     with XInterface {
   
   /**
     * Create the given number of background buffers.
@@ -24,10 +24,10 @@ trait XBufferController extends XInterface {
     * @returns the number of actually generated buffers, which might be between 0 (no double-buffering available) and nBuffers.
     * @throws com::sun::star::lang::IllegalArgumentException if nBuffers is smaller than one.
     */
-  def createBuffers(nBuffers: Double): Double = js.native
+  def createBuffers(nBuffers: Double): Double
   
   /** Destroy all buffers generated via this object. */
-  def destroyBuffers(): Unit = js.native
+  def destroyBuffers(): Unit
   
   /**
     * Switch the display to show the specified buffer.
@@ -40,7 +40,7 @@ trait XBufferController extends XInterface {
     * @returns whether the switch was performed successfully.
     * @throws com::sun::star::lang::IllegalArgumentException if nBuffer is outside the permissible range.
     */
-  def showBuffer(bUpdateAll: Boolean): Boolean = js.native
+  def showBuffer(bUpdateAll: Boolean): Boolean
   
   /**
     * Schedule the display of the specified buffer.
@@ -56,7 +56,7 @@ trait XBufferController extends XInterface {
     * @param bUpdateAll When `TRUE` , update the whole screen. When `FALSE` , implementation is permitted to restrict update to areas the canvas itself change
     * @returns whether the switch was performed successfully.
     */
-  def switchBuffer(bUpdateAll: Boolean): Boolean = js.native
+  def switchBuffer(bUpdateAll: Boolean): Boolean
 }
 object XBufferController {
   

@@ -2,14 +2,14 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginPrefixIds extends PluginConfig {
+trait PluginPrefixIds
+  extends StObject
+     with PluginConfig {
   
   /** prefix IDs and classes with the SVG filename or an arbitrary string     */
-  var prefixIds: Boolean | js.Object = js.native
+  var prefixIds: Boolean | js.Object
 }
 object PluginPrefixIds {
   

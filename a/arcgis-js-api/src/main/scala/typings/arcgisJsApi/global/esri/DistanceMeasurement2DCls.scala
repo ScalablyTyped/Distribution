@@ -3,7 +3,6 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.DistanceMeasurement2DProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -15,6 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html)
   */
 class DistanceMeasurement2DCls ()
-  extends typings.arcgisJsApi.esri.DistanceMeasurement2D {
+  extends StObject
+     with typings.arcgisJsApi.esri.DistanceMeasurement2D {
   def this(properties: DistanceMeasurement2DProperties) = this()
 }

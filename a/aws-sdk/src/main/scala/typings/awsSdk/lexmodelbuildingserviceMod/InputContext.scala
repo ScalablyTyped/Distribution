@@ -2,16 +2,14 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputContext extends StObject {
   
   /**
     * The name of the context.
     */
-  var name: InputContextName = js.native
+  var name: InputContextName
 }
 object InputContext {
   

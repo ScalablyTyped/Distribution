@@ -8,12 +8,13 @@ import typings.rx.anon.InstantiableTPromise
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.rx.Rx.ObservableOrPromise because Already inherited */ @js.native
-trait Observable[T] extends IObservable[T] {
+trait Observable[T]
+  extends StObject
+     with IObservable[T] {
   
   /**
     * Propagates the observable sequence or Promise that reacts first.
@@ -43,7 +44,7 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} An observable sequence containing a single element with the average of the sequence of values.
     */
   def average(): Observable[Double] = js.native
-  def average(keySelector: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[Double] = js.native
+  def average(keySelector: Unit, thisArg: js.Any): Observable[Double] = js.native
   def average(keySelector: Selector[T, Double]): Observable[Double] = js.native
   def average(keySelector: Selector[T, Double], thisArg: js.Any): Observable[Double] = js.native
   
@@ -367,13 +368,13 @@ trait Observable[T] extends IObservable[T] {
     */
   def concatMapObserver[T, TResult](
     onNext: js.Function2[/* value */ T, /* i */ Double, ObservableOrPromise[TResult]],
-    onError: js.Function1[/* error */ js.Any, ObservableOrPromise[_]],
-    onCompleted: js.Function0[ObservableOrPromise[_]]
+    onError: js.Function1[/* error */ js.Any, ObservableOrPromise[js.Any]],
+    onCompleted: js.Function0[ObservableOrPromise[js.Any]]
   ): Observable[TResult] = js.native
   def concatMapObserver[T, TResult](
     onNext: js.Function2[/* value */ T, /* i */ Double, ObservableOrPromise[TResult]],
-    onError: js.Function1[/* error */ js.Any, ObservableOrPromise[_]],
-    onCompleted: js.Function0[ObservableOrPromise[_]],
+    onError: js.Function1[/* error */ js.Any, ObservableOrPromise[js.Any]],
+    onCompleted: js.Function0[ObservableOrPromise[js.Any]],
     thisArg: js.Any
   ): Observable[TResult] = js.native
   
@@ -387,9 +388,9 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} The observable sequence which only propagates values on request.
     */
   def controlled(): ControlledObservable[T] = js.native
-  def controlled(enableQueue: js.UndefOr[scala.Nothing], scheduler: IScheduler): ControlledObservable[T] = js.native
   def controlled(enableQueue: Boolean): ControlledObservable[T] = js.native
   def controlled(enableQueue: Boolean, scheduler: IScheduler): ControlledObservable[T] = js.native
+  def controlled(enableQueue: Unit, scheduler: IScheduler): ControlledObservable[T] = js.native
   
   /**
     * Returns an observable sequence containing a value that represents how many elements in the specified observable sequence satisfy a condition if provided, else the count of items.
@@ -401,7 +402,7 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} An observable sequence containing a single element with a number that represents how many elements in the input sequence satisfy the condition in the predicate function if provided, else the count of items in the sequence.
     */
   def count(): Observable[Double] = js.native
-  def count(predicate: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[Double] = js.native
+  def count(predicate: Unit, thisArg: js.Any): Observable[Double] = js.native
   def count(predicate: Predicate[T]): Observable[Double] = js.native
   def count(predicate: Predicate[T], thisArg: js.Any): Observable[Double] = js.native
   
@@ -410,7 +411,7 @@ trait Observable[T] extends IObservable[T] {
     * @param {Function} durationSelector Selector function to retrieve a sequence indicating the throttle duration for each given element.
     * @returns {Observable} The debounced sequence.
     */
-  def debounce(debounceDurationSelector: js.Function1[/* item */ T, ObservableOrPromise[_]]): Observable[T] = js.native
+  def debounce(debounceDurationSelector: js.Function1[/* item */ T, ObservableOrPromise[js.Any]]): Observable[T] = js.native
   /**
     *  Ignores values from an observable sequence which are followed by another value before dueTime.
     * @param {Number} dueTime Duration of the debounce period for each value (specified as an integer denoting milliseconds).
@@ -526,12 +527,12 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} An observable sequence only containing the distinct elements, based on a computed key value, from the source sequence.
     */
   def distinct[TKey](): Observable[T] = js.native
-  def distinct[TKey](keySelector: js.UndefOr[scala.Nothing], keySerializer: js.Function1[/* key */ TKey, String]): Observable[T] = js.native
   def distinct[TKey](keySelector: js.Function1[/* value */ T, TKey]): Observable[T] = js.native
   def distinct[TKey](
     keySelector: js.Function1[/* value */ T, TKey],
     keySerializer: js.Function1[/* key */ TKey, String]
   ): Observable[T] = js.native
+  def distinct[TKey](keySelector: Unit, keySerializer: js.Function1[/* key */ TKey, String]): Observable[T] = js.native
   
   /**
     *  Returns an observable sequence that contains only distinct contiguous elements according to the keySelector and the comparer.
@@ -545,9 +546,9 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} An observable sequence only containing the distinct contiguous elements, based on a computed key value, from the source sequence.
     */
   def distinctUntilChanged[TValue](): Observable[T] = js.native
-  def distinctUntilChanged[TValue](keySelector: js.UndefOr[scala.Nothing], comparer: Comparer[TValue, Boolean]): Observable[T] = js.native
   def distinctUntilChanged[TValue](keySelector: js.Function1[/* value */ T, TValue]): Observable[T] = js.native
   def distinctUntilChanged[TValue](keySelector: js.Function1[/* value */ T, TValue], comparer: Comparer[TValue, Boolean]): Observable[T] = js.native
+  def distinctUntilChanged[TValue](keySelector: Unit, comparer: Comparer[TValue, Boolean]): Observable[T] = js.native
   
   /**
     *  Invokes an action for each element in the observable sequence and invokes an action upon graceful or exceptional termination of the observable sequence.
@@ -567,29 +568,17 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} The source sequence with the side-effecting behavior applied.
     */
   def `do`(observer: Observer[T]): Observable[T] = js.native
-  def `do`(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
-  def `do`(onNext: js.UndefOr[scala.Nothing], onError: js.Function1[/* exception */ js.Any, Unit]): Observable[T] = js.native
-  def `do`(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.Function1[/* exception */ js.Any, Unit],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
   def `do`(onNext: js.Function1[/* value */ T, Unit]): Observable[T] = js.native
-  def `do`(
-    onNext: js.Function1[/* value */ T, Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
   def `do`(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* exception */ js.Any, Unit]): Observable[T] = js.native
   def `do`(
     onNext: js.Function1[/* value */ T, Unit],
     onError: js.Function1[/* exception */ js.Any, Unit],
     onCompleted: js.Function0[Unit]
   ): Observable[T] = js.native
+  def `do`(onNext: js.Function1[/* value */ T, Unit], onError: Unit, onCompleted: js.Function0[Unit]): Observable[T] = js.native
+  def `do`(onNext: Unit, onError: js.Function1[/* exception */ js.Any, Unit]): Observable[T] = js.native
+  def `do`(onNext: Unit, onError: js.Function1[/* exception */ js.Any, Unit], onCompleted: js.Function0[Unit]): Observable[T] = js.native
+  def `do`(onNext: Unit, onError: Unit, onCompleted: js.Function0[Unit]): Observable[T] = js.native
   
   /**
     *  Invokes an action upon graceful termination of the observable sequence.
@@ -652,7 +641,7 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} An observable sequence containing a single element determining whether all elements in the source sequence pass the test in the specified predicate.
     */
   def every(): Observable[Boolean] = js.native
-  def every(predicate: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[Boolean] = js.native
+  def every(predicate: Unit, thisArg: js.Any): Observable[Boolean] = js.native
   def every(predicate: Predicate[T]): Observable[Boolean] = js.native
   def every(predicate: Predicate[T], thisArg: js.Any): Observable[Boolean] = js.native
   
@@ -719,7 +708,7 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} Sequence containing the first element in the observable sequence that satisfies the condition in the predicate if provided, else the first item in the sequence.
     */
   def first(): Observable[T] = js.native
-  def first(predicate: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[T] = js.native
+  def first(predicate: Unit, thisArg: js.Any): Observable[T] = js.native
   def first(predicate: Predicate[T]): Observable[T] = js.native
   def first(predicate: Predicate[T], thisArg: js.Any): Observable[T] = js.native
   
@@ -918,29 +907,17 @@ trait Observable[T] extends IObservable[T] {
     *  @returns {Diposable} A disposable handling the subscriptions and unsubscriptions.
     */
   def forEach(observer: IObserver[T]): IDisposable = js.native
-  def forEach(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ): IDisposable = js.native
-  def forEach(onNext: js.UndefOr[scala.Nothing], onError: js.Function1[/* exception */ js.Any, Unit]): IDisposable = js.native
-  def forEach(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.Function1[/* exception */ js.Any, Unit],
-    onCompleted: js.Function0[Unit]
-  ): IDisposable = js.native
   def forEach(onNext: js.Function1[/* value */ T, Unit]): IDisposable = js.native
-  def forEach(
-    onNext: js.Function1[/* value */ T, Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ): IDisposable = js.native
   def forEach(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* exception */ js.Any, Unit]): IDisposable = js.native
   def forEach(
     onNext: js.Function1[/* value */ T, Unit],
     onError: js.Function1[/* exception */ js.Any, Unit],
     onCompleted: js.Function0[Unit]
   ): IDisposable = js.native
+  def forEach(onNext: js.Function1[/* value */ T, Unit], onError: Unit, onCompleted: js.Function0[Unit]): IDisposable = js.native
+  def forEach(onNext: Unit, onError: js.Function1[/* exception */ js.Any, Unit]): IDisposable = js.native
+  def forEach(onNext: Unit, onError: js.Function1[/* exception */ js.Any, Unit], onCompleted: js.Function0[Unit]): IDisposable = js.native
+  def forEach(onNext: Unit, onError: Unit, onCompleted: js.Function0[Unit]): IDisposable = js.native
   
   /**
     *  Runs two observable sequences in parallel and combines their last elemenets.
@@ -986,15 +963,15 @@ trait Observable[T] extends IObservable[T] {
     elementSelector: js.Function1[/* value */ T, TElement],
     keySerializer: js.Function1[/* key */ TKey, String]
   ): Observable[GroupedObservable[TKey, TElement]] = js.native
-  def groupBy[TKey, TElement](
-    keySelector: js.Function1[/* value */ T, TKey],
-    skipElementSelector: js.UndefOr[scala.Nothing],
-    keySerializer: js.Function1[/* key */ TKey, String]
-  ): Observable[GroupedObservable[TKey, T]] = js.native
   def groupBy[TKey, TElement](keySelector: js.Function1[/* value */ T, TKey], skipElementSelector: Boolean): Observable[GroupedObservable[TKey, T]] = js.native
   def groupBy[TKey, TElement](
     keySelector: js.Function1[/* value */ T, TKey],
     skipElementSelector: Boolean,
+    keySerializer: js.Function1[/* key */ TKey, String]
+  ): Observable[GroupedObservable[TKey, T]] = js.native
+  def groupBy[TKey, TElement](
+    keySelector: js.Function1[/* value */ T, TKey],
+    skipElementSelector: Unit,
     keySerializer: js.Function1[/* key */ TKey, String]
   ): Observable[GroupedObservable[TKey, T]] = js.native
   
@@ -1134,7 +1111,7 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} Sequence containing the last element in the observable sequence that satisfies the condition in the predicate.
     */
   def last(): Observable[T] = js.native
-  def last(predicate: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[T] = js.native
+  def last(predicate: Unit, thisArg: js.Any): Observable[T] = js.native
   def last(predicate: Predicate[T]): Observable[T] = js.native
   def last(predicate: Predicate[T], thisArg: js.Any): Observable[T] = js.native
   
@@ -1515,28 +1492,6 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} An observable sequence that contains the elements of a sequence produced by multicasting the source sequence within a selector function.
     */
   def replay(): ConnectableObservable[T] = js.native
-  def replay(
-    selector: js.UndefOr[scala.Nothing],
-    bufferSize: js.UndefOr[scala.Nothing],
-    window: js.UndefOr[scala.Nothing],
-    scheduler: IScheduler
-  ): ConnectableObservable[T] = js.native
-  def replay(selector: js.UndefOr[scala.Nothing], bufferSize: js.UndefOr[scala.Nothing], window: Double): ConnectableObservable[T] = js.native
-  def replay(
-    selector: js.UndefOr[scala.Nothing],
-    bufferSize: js.UndefOr[scala.Nothing],
-    window: Double,
-    scheduler: IScheduler
-  ): ConnectableObservable[T] = js.native
-  def replay(selector: js.UndefOr[scala.Nothing], bufferSize: Double): ConnectableObservable[T] = js.native
-  def replay(
-    selector: js.UndefOr[scala.Nothing],
-    bufferSize: Double,
-    window: js.UndefOr[scala.Nothing],
-    scheduler: IScheduler
-  ): ConnectableObservable[T] = js.native
-  def replay(selector: js.UndefOr[scala.Nothing], bufferSize: Double, window: Double): ConnectableObservable[T] = js.native
-  def replay(selector: js.UndefOr[scala.Nothing], bufferSize: Double, window: Double, scheduler: IScheduler): ConnectableObservable[T] = js.native
   // hack to catch first omitted parameter
   /**
     * Returns an observable sequence that is the result of invoking the selector on a connectable observable sequence that shares a single subscription to the underlying sequence replaying notifications subject to a maximum time length for the replay buffer.
@@ -1555,33 +1510,10 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} An observable sequence that contains the elements of a sequence produced by multicasting the source sequence within a selector function.
     */
   def replay(selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]]): Observable[T] = js.native
-  def replay(
-    selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
-    bufferSize: js.UndefOr[scala.Nothing],
-    window: js.UndefOr[scala.Nothing],
-    scheduler: IScheduler
-  ): Observable[T] = js.native
-  def replay(
-    selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
-    bufferSize: js.UndefOr[scala.Nothing],
-    window: Double
-  ): Observable[T] = js.native
-  def replay(
-    selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
-    bufferSize: js.UndefOr[scala.Nothing],
-    window: Double,
-    scheduler: IScheduler
-  ): Observable[T] = js.native
   def replay(selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]], bufferSize: Double): Observable[T] = js.native
   def replay(
     selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
     bufferSize: Double,
-    window: js.UndefOr[scala.Nothing],
-    scheduler: IScheduler
-  ): Observable[T] = js.native
-  def replay(
-    selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
-    bufferSize: Double,
     window: Double
   ): Observable[T] = js.native
   def replay(
@@ -1590,19 +1522,37 @@ trait Observable[T] extends IObservable[T] {
     window: Double,
     scheduler: IScheduler
   ): Observable[T] = js.native
-  def replay(selector: Unit): ConnectableObservable[T] = js.native
   def replay(
-    selector: Unit,
-    bufferSize: js.UndefOr[scala.Nothing],
-    window: js.UndefOr[scala.Nothing],
+    selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
+    bufferSize: Double,
+    window: Unit,
     scheduler: IScheduler
-  ): ConnectableObservable[T] = js.native
-  def replay(selector: Unit, bufferSize: js.UndefOr[scala.Nothing], window: Double): ConnectableObservable[T] = js.native
-  def replay(selector: Unit, bufferSize: js.UndefOr[scala.Nothing], window: Double, scheduler: IScheduler): ConnectableObservable[T] = js.native
+  ): Observable[T] = js.native
+  def replay(
+    selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
+    bufferSize: Unit,
+    window: Double
+  ): Observable[T] = js.native
+  def replay(
+    selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
+    bufferSize: Unit,
+    window: Double,
+    scheduler: IScheduler
+  ): Observable[T] = js.native
+  def replay(
+    selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
+    bufferSize: Unit,
+    window: Unit,
+    scheduler: IScheduler
+  ): Observable[T] = js.native
+  def replay(selector: Unit): ConnectableObservable[T] = js.native
   def replay(selector: Unit, bufferSize: Double): ConnectableObservable[T] = js.native
-  def replay(selector: Unit, bufferSize: Double, window: js.UndefOr[scala.Nothing], scheduler: IScheduler): ConnectableObservable[T] = js.native
   def replay(selector: Unit, bufferSize: Double, window: Double): ConnectableObservable[T] = js.native
   def replay(selector: Unit, bufferSize: Double, window: Double, scheduler: IScheduler): ConnectableObservable[T] = js.native
+  def replay(selector: Unit, bufferSize: Double, window: Unit, scheduler: IScheduler): ConnectableObservable[T] = js.native
+  def replay(selector: Unit, bufferSize: Unit, window: Double): ConnectableObservable[T] = js.native
+  def replay(selector: Unit, bufferSize: Unit, window: Double, scheduler: IScheduler): ConnectableObservable[T] = js.native
+  def replay(selector: Unit, bufferSize: Unit, window: Unit, scheduler: IScheduler): ConnectableObservable[T] = js.native
   
   /**
     *  Repeats the source observable sequence the specified number of times or until it successfully terminates. If the retry count is not specified, it retries indefinitely.
@@ -1627,7 +1577,7 @@ trait Observable[T] extends IObservable[T] {
     * @param {Observable} [notifier] An observable that triggers the retries or completes the observable with onNext or onCompleted respectively.
     * @returns {Observable} An observable sequence producing the elements of the given sequence repeatedly until it terminates successfully.
     */
-  def retryWhen(notifier: js.Function1[/* errors */ Observable[_], Observable[_]]): Observable[T] = js.native
+  def retryWhen(notifier: js.Function1[/* errors */ Observable[js.Any], Observable[js.Any]]): Observable[T] = js.native
   
   /**
     *  Samples the observable sequence at each interval.
@@ -1753,13 +1703,13 @@ trait Observable[T] extends IObservable[T] {
     */
   def selectConcatObserver[T, TResult](
     onNext: js.Function2[/* value */ T, /* i */ Double, ObservableOrPromise[TResult]],
-    onError: js.Function1[/* error */ js.Any, ObservableOrPromise[_]],
-    onCompleted: js.Function0[ObservableOrPromise[_]]
+    onError: js.Function1[/* error */ js.Any, ObservableOrPromise[js.Any]],
+    onCompleted: js.Function0[ObservableOrPromise[js.Any]]
   ): Observable[TResult] = js.native
   def selectConcatObserver[T, TResult](
     onNext: js.Function2[/* value */ T, /* i */ Double, ObservableOrPromise[TResult]],
-    onError: js.Function1[/* error */ js.Any, ObservableOrPromise[_]],
-    onCompleted: js.Function0[ObservableOrPromise[_]],
+    onError: js.Function1[/* error */ js.Any, ObservableOrPromise[js.Any]],
+    onCompleted: js.Function0[ObservableOrPromise[js.Any]],
     thisArg: js.Any
   ): Observable[TResult] = js.native
   
@@ -1997,13 +1947,13 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} An observable sequence that contains the elements of a sequence produced by multicasting the source sequence.
     */
   def shareReplay(): Observable[T] = js.native
-  def shareReplay(bufferSize: js.UndefOr[scala.Nothing], window: js.UndefOr[scala.Nothing], scheduler: IScheduler): Observable[T] = js.native
-  def shareReplay(bufferSize: js.UndefOr[scala.Nothing], window: Double): Observable[T] = js.native
-  def shareReplay(bufferSize: js.UndefOr[scala.Nothing], window: Double, scheduler: IScheduler): Observable[T] = js.native
   def shareReplay(bufferSize: Double): Observable[T] = js.native
-  def shareReplay(bufferSize: Double, window: js.UndefOr[scala.Nothing], scheduler: IScheduler): Observable[T] = js.native
   def shareReplay(bufferSize: Double, window: Double): Observable[T] = js.native
   def shareReplay(bufferSize: Double, window: Double, scheduler: IScheduler): Observable[T] = js.native
+  def shareReplay(bufferSize: Double, window: Unit, scheduler: IScheduler): Observable[T] = js.native
+  def shareReplay(bufferSize: Unit, window: Double): Observable[T] = js.native
+  def shareReplay(bufferSize: Unit, window: Double, scheduler: IScheduler): Observable[T] = js.native
+  def shareReplay(bufferSize: Unit, window: Unit, scheduler: IScheduler): Observable[T] = js.native
   
   /**
     * Returns an observable sequence that shares a single subscription to the underlying sequence and starts with an initialValue.
@@ -2020,7 +1970,7 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} Sequence containing the single element in the observable sequence that satisfies the condition in the predicate.
     */
   def single(): Observable[T] = js.native
-  def single(predicate: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[T] = js.native
+  def single(predicate: Unit, thisArg: js.Any): Observable[T] = js.native
   def single(predicate: Predicate[T]): Observable[T] = js.native
   def single(predicate: Predicate[T], thisArg: js.Any): Observable[T] = js.native
   
@@ -2137,7 +2087,7 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} An observable sequence containing a single element determining whether any elements in the source sequence pass the test in the specified predicate if given, else if any items are in the sequence.
     */
   def some(): Observable[Boolean] = js.native
-  def some(predicate: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[Boolean] = js.native
+  def some(predicate: Unit, thisArg: js.Any): Observable[Boolean] = js.native
   def some(predicate: Predicate[T]): Observable[Boolean] = js.native
   def some(predicate: Predicate[T], thisArg: js.Any): Observable[Boolean] = js.native
   
@@ -2204,7 +2154,7 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} An observable sequence containing a single element with the sum of the values in the source sequence.
     */
   def sum(): Observable[Double] = js.native
-  def sum(keySelector: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[Double] = js.native
+  def sum(keySelector: Unit, thisArg: js.Any): Observable[Double] = js.native
   def sum(keySelector: Selector[T, Double]): Observable[Double] = js.native
   def sum(keySelector: Selector[T, Double], thisArg: js.Any): Observable[Double] = js.native
   
@@ -2284,7 +2234,7 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} An observable sequence with the elements taken during the specified duration from the end of the source sequence.
     */
   def takeLastWithTime(duration: Double): Observable[T] = js.native
-  def takeLastWithTime(duration: Double, timerScheduler: js.UndefOr[scala.Nothing], loopScheduler: IScheduler): Observable[T] = js.native
+  def takeLastWithTime(duration: Double, timerScheduler: Unit, loopScheduler: IScheduler): Observable[T] = js.native
   def takeLastWithTime(duration: Double, timerScheduler: IScheduler): Observable[T] = js.native
   def takeLastWithTime(duration: Double, timerScheduler: IScheduler, loopScheduler: IScheduler): Observable[T] = js.native
   
@@ -2356,29 +2306,17 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} The source sequence with the side-effecting behavior applied.
     */
   def tap(observer: Observer[T]): Observable[T] = js.native
-  def tap(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
-  def tap(onNext: js.UndefOr[scala.Nothing], onError: js.Function1[/* exception */ js.Any, Unit]): Observable[T] = js.native
-  def tap(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.Function1[/* exception */ js.Any, Unit],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
   def tap(onNext: js.Function1[/* value */ T, Unit]): Observable[T] = js.native
-  def tap(
-    onNext: js.Function1[/* value */ T, Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
   def tap(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* exception */ js.Any, Unit]): Observable[T] = js.native
   def tap(
     onNext: js.Function1[/* value */ T, Unit],
     onError: js.Function1[/* exception */ js.Any, Unit],
     onCompleted: js.Function0[Unit]
   ): Observable[T] = js.native
+  def tap(onNext: js.Function1[/* value */ T, Unit], onError: Unit, onCompleted: js.Function0[Unit]): Observable[T] = js.native
+  def tap(onNext: Unit, onError: js.Function1[/* exception */ js.Any, Unit]): Observable[T] = js.native
+  def tap(onNext: Unit, onError: js.Function1[/* exception */ js.Any, Unit], onCompleted: js.Function0[Unit]): Observable[T] = js.native
+  def tap(onNext: Unit, onError: Unit, onCompleted: js.Function0[Unit]): Observable[T] = js.native
   
   /**
     *  Invokes an action upon graceful termination of the observable sequence.
@@ -2477,7 +2415,7 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} The source sequence switching to the other sequence in case of a timeout.
     */
   def timeout(dueTime: Double): Observable[T] = js.native
-  def timeout(dueTime: Double, other: js.UndefOr[scala.Nothing], scheduler: IScheduler): Observable[T] = js.native
+  def timeout(dueTime: Double, other: Unit, scheduler: IScheduler): Observable[T] = js.native
   def timeout(dueTime: Double, other: Observable[T]): Observable[T] = js.native
   def timeout(dueTime: Double, other: Observable[T], scheduler: IScheduler): Observable[T] = js.native
   def timeout(dueTime: Double, scheduler: IScheduler): Observable[T] = js.native
@@ -2488,7 +2426,7 @@ trait Observable[T] extends IObservable[T] {
     * @returns {Observable} The source sequence switching to the other sequence in case of a timeout.
     */
   def timeout(dueTime: Date): Observable[T] = js.native
-  def timeout(dueTime: Date, other: js.UndefOr[scala.Nothing], scheduler: IScheduler): Observable[T] = js.native
+  def timeout(dueTime: Date, other: Unit, scheduler: IScheduler): Observable[T] = js.native
   def timeout(dueTime: Date, other: Observable[T]): Observable[T] = js.native
   def timeout(dueTime: Date, other: Observable[T], scheduler: IScheduler): Observable[T] = js.native
   def timeout(dueTime: Date, scheduler: IScheduler): Observable[T] = js.native

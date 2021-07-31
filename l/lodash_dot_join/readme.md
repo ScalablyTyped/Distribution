@@ -12,7 +12,7 @@ The lodash method `_.join` exported as a module.
 | Keywords           | lodash-modularized, join |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 117315 |
+| # downloads        | 122940 |
 | # stars            | 0 |
 
 ## Links

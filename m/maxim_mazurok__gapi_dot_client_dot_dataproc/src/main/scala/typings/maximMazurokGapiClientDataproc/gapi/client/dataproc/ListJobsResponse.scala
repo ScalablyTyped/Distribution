@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsResponse extends StObject {
   
   /** Output only. Jobs list. */
-  var jobs: js.UndefOr[js.Array[Job]] = js.native
+  var jobs: js.UndefOr[js.Array[Job]] = js.undefined
   
   /**
     * Optional. This token is included in the response if there are more results to fetch. To fetch additional results, provide this value as the page_token in a subsequent
     * ListJobsRequest.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListJobsResponse {
   

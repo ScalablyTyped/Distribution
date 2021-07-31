@@ -3,34 +3,34 @@ package typings.voximplantWebsdk.mod.IMEventTypes
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched in case of error during chat room message modification
   */
-@js.native
-trait ChatRoomMessageNotModified extends VoxImplantIMEvent {
+trait ChatRoomMessageNotModified
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     * Error code
     */
-  var code: Double = js.native
+  var code: Double
   
   /**
     * Message id
     */
-  var message_id: String = js.native
+  var message_id: String
   
   /**
     * Private/public message flag
     */
-  var private_message: String = js.native
+  var private_message: String
   
   /**
     * Room id
     */
-  var room: String = js.native
+  var room: String
 }
 object ChatRoomMessageNotModified {
   

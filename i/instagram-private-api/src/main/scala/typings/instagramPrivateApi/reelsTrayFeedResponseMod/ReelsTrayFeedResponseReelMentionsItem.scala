@@ -2,33 +2,31 @@ package typings.instagramPrivateApi.reelsTrayFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReelsTrayFeedResponseReelMentionsItem extends StObject {
   
-  var display_type: String = js.native
+  var display_type: String
   
-  var height: Double | String = js.native
+  var height: Double | String
   
-  var is_hidden: Double = js.native
+  var is_hidden: Double
   
-  var is_pinned: Double = js.native
+  var is_pinned: Double
   
-  var is_sticker: Double = js.native
+  var is_sticker: Double
   
-  var rotation: String | Double = js.native
+  var rotation: String | Double
   
-  var user: ReelsTrayFeedResponseUser = js.native
+  var user: ReelsTrayFeedResponseUser
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: String | Double = js.native
+  var y: String | Double
   
-  var z: Double = js.native
+  var z: Double
 }
 object ReelsTrayFeedResponseReelMentionsItem {
   

@@ -2,34 +2,32 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Projection that may be projected along with other supported volume types
   */
-@js.native
 trait VolumeProjection extends StObject {
   
   /**
     * information about the configMap data to project
     */
-  var configMap: ConfigMapProjection = js.native
+  var configMap: ConfigMapProjection
   
   /**
     * information about the downwardAPI data to project
     */
-  var downwardAPI: DownwardAPIProjection = js.native
+  var downwardAPI: DownwardAPIProjection
   
   /**
     * information about the secret data to project
     */
-  var secret: SecretProjection = js.native
+  var secret: SecretProjection
   
   /**
     * information about the serviceAccountToken data to project
     */
-  var serviceAccountToken: ServiceAccountTokenProjection = js.native
+  var serviceAccountToken: ServiceAccountTokenProjection
 }
 object VolumeProjection {
   

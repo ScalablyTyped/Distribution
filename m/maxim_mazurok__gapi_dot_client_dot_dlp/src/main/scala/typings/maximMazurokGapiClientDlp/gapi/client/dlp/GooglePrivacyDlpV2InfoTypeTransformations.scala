@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2InfoTypeTransformations extends StObject {
   
   /** Required. Transformation for each infoType. Cannot specify more than one for a given infoType. */
-  var transformations: js.UndefOr[js.Array[GooglePrivacyDlpV2InfoTypeTransformation]] = js.native
+  var transformations: js.UndefOr[js.Array[GooglePrivacyDlpV2InfoTypeTransformation]] = js.undefined
 }
 object GooglePrivacyDlpV2InfoTypeTransformations {
   

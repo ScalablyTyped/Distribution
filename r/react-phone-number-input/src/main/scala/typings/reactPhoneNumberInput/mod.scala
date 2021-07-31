@@ -102,81 +102,74 @@ import typings.std.Event
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-phone-number-input", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-phone-number-input", JSImport.Default)
   @js.native
   class default ()
     extends Component[PhoneInputProps, js.Object, js.Any]
   
-  @JSImport("react-phone-number-input", "formatPhoneNumber")
-  @js.native
-  def formatPhoneNumber(value: String): String = js.native
+  @scala.inline
+  def formatPhoneNumber(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatPhoneNumber")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("react-phone-number-input", "formatPhoneNumberIntl")
-  @js.native
-  def formatPhoneNumberIntl(): String = js.native
-  @JSImport("react-phone-number-input", "formatPhoneNumberIntl")
-  @js.native
-  def formatPhoneNumberIntl(value: String): String = js.native
+  @scala.inline
+  def formatPhoneNumberIntl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatPhoneNumberIntl")().asInstanceOf[String]
+  @scala.inline
+  def formatPhoneNumberIntl(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatPhoneNumberIntl")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("react-phone-number-input", "getCountries")
-  @js.native
-  def getCountries(): js.Array[String] = js.native
+  @scala.inline
+  def getCountries(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountries")().asInstanceOf[js.Array[String]]
   
-  @JSImport("react-phone-number-input", "getCountryCallingCode")
-  @js.native
-  def getCountryCallingCode(country: String): String = js.native
+  @scala.inline
+  def getCountryCallingCode(country: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountryCallingCode")(country.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("react-phone-number-input", "isPossiblePhoneNumber")
-  @js.native
-  def isPossiblePhoneNumber(value: String): Boolean = js.native
+  @scala.inline
+  def isPossiblePhoneNumber(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPossiblePhoneNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-phone-number-input", "isValidPhoneNumber")
-  @js.native
-  def isValidPhoneNumber(): Boolean = js.native
-  @JSImport("react-phone-number-input", "isValidPhoneNumber")
-  @js.native
-  def isValidPhoneNumber(value: String): Boolean = js.native
+  @scala.inline
+  def isValidPhoneNumber(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPhoneNumber")().asInstanceOf[Boolean]
+  @scala.inline
+  def isValidPhoneNumber(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPhoneNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-phone-number-input", "parsePhoneNumber")
-  @js.native
-  def parsePhoneNumber(input: String): js.UndefOr[PhoneNumber] = js.native
+  @scala.inline
+  def parsePhoneNumber(input: String): js.UndefOr[PhoneNumber] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumber")(input.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[PhoneNumber]]
   
-  @js.native
   trait CountrySelectComponentProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Language translations
       */
-    var labels: js.UndefOr[StringDictionary[String]] = js.native
+    var labels: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * The list of all selectable countries (including "International")
       */
-    var options: js.UndefOr[js.Array[Icon]] = js.native
+    var options: js.UndefOr[js.Array[Icon]] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * The currently selected country code
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object CountrySelectComponentProps {
     
@@ -259,157 +252,156 @@ object mod {
   type PhoneInput = Component[PhoneInputProps, js.Object, js.Any]
   
   /* Inlined parent std.Omit<react.react.InputHTMLAttributes<string>, 'onChange'> */
-  @js.native
   trait PhoneInputProps extends StObject {
     
-    var about: js.UndefOr[String] = js.native
+    var about: js.UndefOr[String] = js.undefined
     
-    var accept: js.UndefOr[String] = js.native
+    var accept: js.UndefOr[String] = js.undefined
     
-    var accessKey: js.UndefOr[String] = js.native
+    var accessKey: js.UndefOr[String] = js.undefined
     
     // Optional props
     /**
       * Set to false to remove the "International" option from country <select/>.
       */
-    var addInternationalOption: js.UndefOr[Boolean] = js.native
+    var addInternationalOption: js.UndefOr[Boolean] = js.undefined
     
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
-    var `aria-activedescendant`: js.UndefOr[String] = js.native
+    var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.native
+    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.native
+    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-colcount`: js.UndefOr[Double] = js.native
+    var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colindex`: js.UndefOr[Double] = js.native
+    var `aria-colindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colspan`: js.UndefOr[Double] = js.native
+    var `aria-colspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-controls`: js.UndefOr[String] = js.native
+    var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
     
-    var `aria-describedby`: js.UndefOr[String] = js.native
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    var `aria-details`: js.UndefOr[String] = js.native
+    var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.native
+    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
-    var `aria-errormessage`: js.UndefOr[String] = js.native
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.native
+    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-flowto`: js.UndefOr[String] = js.native
+    var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.native
+    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
-    var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+    var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var `aria-level`: js.UndefOr[Double] = js.native
+    var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.native
+    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.native
+    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var `aria-owns`: js.UndefOr[String] = js.native
+    var `aria-owns`: js.UndefOr[String] = js.undefined
     
-    var `aria-placeholder`: js.UndefOr[String] = js.native
+    var `aria-placeholder`: js.UndefOr[String] = js.undefined
     
-    var `aria-posinset`: js.UndefOr[Double] = js.native
+    var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.native
+    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-      ] = js.native
+      ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.native
+    var `aria-required`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-roledescription`: js.UndefOr[String] = js.native
+    var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
-    var `aria-rowcount`: js.UndefOr[Double] = js.native
+    var `aria-rowcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowindex`: js.UndefOr[Double] = js.native
+    var `aria-rowindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowspan`: js.UndefOr[Double] = js.native
+    var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.native
+    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-setsize`: js.UndefOr[Double] = js.native
+    var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
     
-    var `aria-valuemax`: js.UndefOr[Double] = js.native
+    var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuemin`: js.UndefOr[Double] = js.native
+    var `aria-valuemin`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuenow`: js.UndefOr[Double] = js.native
+    var `aria-valuenow`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuetext`: js.UndefOr[String] = js.native
+    var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var autoCapitalize: js.UndefOr[String] = js.native
+    var autoCapitalize: js.UndefOr[String] = js.undefined
     
-    var autoComplete: js.UndefOr[String] = js.native
+    var autoComplete: js.UndefOr[String] = js.undefined
     
-    var autoCorrect: js.UndefOr[String] = js.native
+    var autoCorrect: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var autoSave: js.UndefOr[String] = js.native
+    var autoSave: js.UndefOr[String] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.native
+    var capture: js.UndefOr[Boolean | String] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
-    var contextMenu: js.UndefOr[String] = js.native
+    var contextMenu: js.UndefOr[String] = js.undefined
     
     /**
       * If specified, only these countries will be available for selection.
       * @example ["RU", "UA", "KZ"]
       */
-    var countries: js.UndefOr[js.Array[String]] = js.native
+    var countries: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * If country is specified then the phone number can only be input in "national"
       * (not "international") format, and will be parsed as a phone number belonging
       * to the country. Example: country="US"
       */
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
     /**
       * Can be used to place some countries on top of the list of country <select/> options.
@@ -420,23 +412,23 @@ object mod {
       * @example
       * ["US", "CA", "AU", "|", "..."]
       */
-    var countryOptionsOrder: js.UndefOr[js.Array[String]] = js.native
+    var countryOptionsOrder: js.UndefOr[js.Array[String]] = js.undefined
     
-    var countrySelectComponent: js.UndefOr[ComponentType[CountrySelectComponentProps]] = js.native
+    var countrySelectComponent: js.UndefOr[ComponentType[CountrySelectComponentProps]] = js.undefined
     
     /**
       * Country <select/> component props. Along with the usual DOM properties such as aria-label
       * and tabIndex, some custom properties are supported, such as arrowComponent and unicodeFlags.
       */
-    var countrySelectProps: js.UndefOr[js.Object] = js.native
+    var countrySelectProps: js.UndefOr[js.Object] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
-    var datatype: js.UndefOr[String] = js.native
+    var datatype: js.UndefOr[String] = js.undefined
     
-    var defaultChecked: js.UndefOr[Boolean] = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A two-letter country code for formatting `value`
@@ -445,26 +437,26 @@ object mod {
       * Example: "US".
       * `country` and `defaultCountry` properties are mutually exclusive.
       */
-    var defaultCountry: js.UndefOr[String] = js.native
+    var defaultCountry: js.UndefOr[String] = js.undefined
     
-    var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+    var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
     /**
       * Set to true to disable both the phone number <input/> and the country <select/>
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var displayInitialValueAsLocalNumber: js.UndefOr[Boolean] = js.native
+    var displayInitialValueAsLocalNumber: js.UndefOr[Boolean] = js.undefined
     
-    var draggable: js.UndefOr[Booleanish] = js.native
+    var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.native
+    var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var flagComponent: js.UndefOr[ComponentType[Country]] = js.native
+    var flagComponent: js.UndefOr[ComponentType[Country]] = js.undefined
     
     /**
       * A URL template of a country flag, where "{XX}" is a two-letter country code in upper case,
@@ -476,31 +468,31 @@ object mod {
       * time before updating this library, otherwise there's a possibility that some new country flag
       * would be missing.
       */
-    var flagUrl: js.UndefOr[String] = js.native
+    var flagUrl: js.UndefOr[String] = js.undefined
     
-    var flags: js.UndefOr[FlagsMap] = js.native
+    var flags: js.UndefOr[FlagsMap] = js.undefined
     
-    var form: js.UndefOr[String] = js.native
+    var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.native
+    var formAction: js.UndefOr[String] = js.undefined
     
-    var formEncType: js.UndefOr[String] = js.native
+    var formEncType: js.UndefOr[String] = js.undefined
     
-    var formMethod: js.UndefOr[String] = js.native
+    var formMethod: js.UndefOr[String] = js.undefined
     
-    var formNoValidate: js.UndefOr[Boolean] = js.native
+    var formNoValidate: js.UndefOr[Boolean] = js.undefined
     
-    var formTarget: js.UndefOr[String] = js.native
+    var formTarget: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.native
+    var inlist: js.UndefOr[js.Any] = js.undefined
     
-    var inputClassName: js.UndefOr[String] = js.native
+    var inputClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Phone number <input/> component.
@@ -515,10 +507,10 @@ object mod {
       * Must also either use React.forwardRef() to "forward" ref to the <input/> or implement .focus() method.
       */
     var inputComponent: js.UndefOr[
-        ForwardRefExoticComponent[InputHTMLAttributes[HTMLInputElement] with RefAttributes[_]]
-      ] = js.native
+        ForwardRefExoticComponent[InputHTMLAttributes[HTMLInputElement] & RefAttributes[js.Any]]
+      ] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
     /**
       * If country is specified and international property is true then the phone number can only be input
@@ -530,7 +522,7 @@ object mod {
       * phone number input components that show "country calling code" part before the input field and then
       * the user can fill in the rest of their phone number in the input field.
       */
-    var international: js.UndefOr[Boolean] = js.native
+    var international: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `country` property is passed along with `international={true}` property
@@ -542,241 +534,241 @@ object mod {
       * the phone number will be input in the "international" format for `US` (`213 373 4253`)
       * (without "country calling code" `+1`).
       */
-    var internationalIcon: js.UndefOr[ComponentType[js.Object]] = js.native
+    var internationalIcon: js.UndefOr[ComponentType[js.Object]] = js.undefined
     
-    var is: js.UndefOr[String] = js.native
+    var is: js.UndefOr[String] = js.undefined
     
-    var itemID: js.UndefOr[String] = js.native
+    var itemID: js.UndefOr[String] = js.undefined
     
-    var itemProp: js.UndefOr[String] = js.native
+    var itemProp: js.UndefOr[String] = js.undefined
     
-    var itemRef: js.UndefOr[String] = js.native
+    var itemRef: js.UndefOr[String] = js.undefined
     
-    var itemScope: js.UndefOr[Boolean] = js.native
+    var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemType: js.UndefOr[String] = js.native
+    var itemType: js.UndefOr[String] = js.undefined
     
-    var labels: js.UndefOr[StringDictionary[String]] = js.native
+    var labels: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
     /**
       * If set to true the phone number input will get trimmed if it exceeds the maximum length for the country.
       */
-    var limitMaxLength: js.UndefOr[Boolean] = js.native
+    var limitMaxLength: js.UndefOr[Boolean] = js.undefined
     
-    var list: js.UndefOr[String] = js.native
+    var list: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[Double | String] = js.native
+    var max: js.UndefOr[Double | String] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var metadata: js.UndefOr[js.Object] = js.native
+    var metadata: js.UndefOr[js.Object] = js.undefined
     
-    var min: js.UndefOr[Double | String] = js.native
+    var min: js.UndefOr[Double | String] = js.undefined
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Phone number <input/> component additional props.
       */
-    var numberInputProps: js.UndefOr[js.Object] = js.native
+    var numberInputProps: js.UndefOr[js.Object] = js.undefined
     
-    var onAbort: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onAbort: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onAnimationEnd: js.UndefOr[AnimationEventHandler[String]] = js.native
+    var onAnimationEnd: js.UndefOr[AnimationEventHandler[String]] = js.undefined
     
-    var onAnimationIteration: js.UndefOr[AnimationEventHandler[String]] = js.native
+    var onAnimationIteration: js.UndefOr[AnimationEventHandler[String]] = js.undefined
     
-    var onAnimationStart: js.UndefOr[AnimationEventHandler[String]] = js.native
+    var onAnimationStart: js.UndefOr[AnimationEventHandler[String]] = js.undefined
     
-    var onAuxClick: js.UndefOr[MouseEventHandler[String]] = js.native
+    var onAuxClick: js.UndefOr[MouseEventHandler[String]] = js.undefined
     
-    var onBeforeInput: js.UndefOr[FormEventHandler[String]] = js.native
+    var onBeforeInput: js.UndefOr[FormEventHandler[String]] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[String]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[String]] = js.undefined
     
-    var onCanPlay: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onCanPlay: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onCanPlayThrough: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onCanPlayThrough: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
     // Required props
-    def onChange(value: String): Unit = js.native
+    def onChange(value: String): Unit
     
-    var onClick: js.UndefOr[MouseEventHandler[String]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[String]] = js.undefined
     
-    var onCompositionEnd: js.UndefOr[CompositionEventHandler[String]] = js.native
+    var onCompositionEnd: js.UndefOr[CompositionEventHandler[String]] = js.undefined
     
-    var onCompositionStart: js.UndefOr[CompositionEventHandler[String]] = js.native
+    var onCompositionStart: js.UndefOr[CompositionEventHandler[String]] = js.undefined
     
-    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[String]] = js.native
+    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[String]] = js.undefined
     
-    var onContextMenu: js.UndefOr[MouseEventHandler[String]] = js.native
+    var onContextMenu: js.UndefOr[MouseEventHandler[String]] = js.undefined
     
-    var onCopy: js.UndefOr[ClipboardEventHandler[String]] = js.native
+    var onCopy: js.UndefOr[ClipboardEventHandler[String]] = js.undefined
     
     /**
       * Is called every time the selected country changes: either programmatically or when user selects it manually from the list.
       */
-    var onCountryChange: js.UndefOr[js.Function1[/* countryCode */ js.UndefOr[String], Unit]] = js.native
+    var onCountryChange: js.UndefOr[js.Function1[/* countryCode */ js.UndefOr[String], Unit]] = js.undefined
     
-    var onCut: js.UndefOr[ClipboardEventHandler[String]] = js.native
+    var onCut: js.UndefOr[ClipboardEventHandler[String]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[MouseEventHandler[String]] = js.native
+    var onDoubleClick: js.UndefOr[MouseEventHandler[String]] = js.undefined
     
-    var onDrag: js.UndefOr[DragEventHandler[String]] = js.native
+    var onDrag: js.UndefOr[DragEventHandler[String]] = js.undefined
     
-    var onDragEnd: js.UndefOr[DragEventHandler[String]] = js.native
+    var onDragEnd: js.UndefOr[DragEventHandler[String]] = js.undefined
     
-    var onDragEnter: js.UndefOr[DragEventHandler[String]] = js.native
+    var onDragEnter: js.UndefOr[DragEventHandler[String]] = js.undefined
     
-    var onDragExit: js.UndefOr[DragEventHandler[String]] = js.native
+    var onDragExit: js.UndefOr[DragEventHandler[String]] = js.undefined
     
-    var onDragLeave: js.UndefOr[DragEventHandler[String]] = js.native
+    var onDragLeave: js.UndefOr[DragEventHandler[String]] = js.undefined
     
-    var onDragOver: js.UndefOr[DragEventHandler[String]] = js.native
+    var onDragOver: js.UndefOr[DragEventHandler[String]] = js.undefined
     
-    var onDragStart: js.UndefOr[DragEventHandler[String]] = js.native
+    var onDragStart: js.UndefOr[DragEventHandler[String]] = js.undefined
     
-    var onDrop: js.UndefOr[DragEventHandler[String]] = js.native
+    var onDrop: js.UndefOr[DragEventHandler[String]] = js.undefined
     
-    var onDurationChange: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onDurationChange: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onEmptied: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onEmptied: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onEncrypted: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onEncrypted: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onEnded: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onEnded: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onError: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onError: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[String]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[String]] = js.undefined
     
-    var onInput: js.UndefOr[FormEventHandler[String]] = js.native
+    var onInput: js.UndefOr[FormEventHandler[String]] = js.undefined
     
-    var onInvalid: js.UndefOr[FormEventHandler[String]] = js.native
+    var onInvalid: js.UndefOr[FormEventHandler[String]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[String]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[String]] = js.undefined
     
-    var onKeyPress: js.UndefOr[KeyboardEventHandler[String]] = js.native
+    var onKeyPress: js.UndefOr[KeyboardEventHandler[String]] = js.undefined
     
-    var onKeyUp: js.UndefOr[KeyboardEventHandler[String]] = js.native
+    var onKeyUp: js.UndefOr[KeyboardEventHandler[String]] = js.undefined
     
-    var onLoad: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onLoad: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onLoadStart: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onLoadStart: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onLoadedData: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onLoadedData: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onLoadedMetadata: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onLoadedMetadata: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[String]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[String]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[String]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[String]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[String]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[String]] = js.undefined
     
-    var onMouseMove: js.UndefOr[MouseEventHandler[String]] = js.native
+    var onMouseMove: js.UndefOr[MouseEventHandler[String]] = js.undefined
     
-    var onMouseOut: js.UndefOr[MouseEventHandler[String]] = js.native
+    var onMouseOut: js.UndefOr[MouseEventHandler[String]] = js.undefined
     
-    var onMouseOver: js.UndefOr[MouseEventHandler[String]] = js.native
+    var onMouseOver: js.UndefOr[MouseEventHandler[String]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[String]] = js.native
+    var onMouseUp: js.UndefOr[MouseEventHandler[String]] = js.undefined
     
-    var onPaste: js.UndefOr[ClipboardEventHandler[String]] = js.native
+    var onPaste: js.UndefOr[ClipboardEventHandler[String]] = js.undefined
     
-    var onPause: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onPause: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onPlay: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onPlay: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onPlaying: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onPlaying: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onPointerCancel: js.UndefOr[PointerEventHandler[String]] = js.native
+    var onPointerCancel: js.UndefOr[PointerEventHandler[String]] = js.undefined
     
-    var onPointerDown: js.UndefOr[PointerEventHandler[String]] = js.native
+    var onPointerDown: js.UndefOr[PointerEventHandler[String]] = js.undefined
     
-    var onPointerEnter: js.UndefOr[PointerEventHandler[String]] = js.native
+    var onPointerEnter: js.UndefOr[PointerEventHandler[String]] = js.undefined
     
-    var onPointerLeave: js.UndefOr[PointerEventHandler[String]] = js.native
+    var onPointerLeave: js.UndefOr[PointerEventHandler[String]] = js.undefined
     
-    var onPointerMove: js.UndefOr[PointerEventHandler[String]] = js.native
+    var onPointerMove: js.UndefOr[PointerEventHandler[String]] = js.undefined
     
-    var onPointerOut: js.UndefOr[PointerEventHandler[String]] = js.native
+    var onPointerOut: js.UndefOr[PointerEventHandler[String]] = js.undefined
     
-    var onPointerOver: js.UndefOr[PointerEventHandler[String]] = js.native
+    var onPointerOver: js.UndefOr[PointerEventHandler[String]] = js.undefined
     
-    var onPointerUp: js.UndefOr[PointerEventHandler[String]] = js.native
+    var onPointerUp: js.UndefOr[PointerEventHandler[String]] = js.undefined
     
-    var onProgress: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onProgress: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onRateChange: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onRateChange: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onReset: js.UndefOr[FormEventHandler[String]] = js.native
+    var onReset: js.UndefOr[FormEventHandler[String]] = js.undefined
     
-    var onScroll: js.UndefOr[UIEventHandler[String]] = js.native
+    var onScroll: js.UndefOr[UIEventHandler[String]] = js.undefined
     
-    var onSeeked: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onSeeked: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onSeeking: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onSeeking: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onSelect: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onSelect: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onStalled: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onStalled: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onSubmit: js.UndefOr[FormEventHandler[String]] = js.native
+    var onSubmit: js.UndefOr[FormEventHandler[String]] = js.undefined
     
-    var onSuspend: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onSuspend: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onTimeUpdate: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onTimeUpdate: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onTouchCancel: js.UndefOr[TouchEventHandler[String]] = js.native
+    var onTouchCancel: js.UndefOr[TouchEventHandler[String]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[TouchEventHandler[String]] = js.native
+    var onTouchEnd: js.UndefOr[TouchEventHandler[String]] = js.undefined
     
-    var onTouchMove: js.UndefOr[TouchEventHandler[String]] = js.native
+    var onTouchMove: js.UndefOr[TouchEventHandler[String]] = js.undefined
     
-    var onTouchStart: js.UndefOr[TouchEventHandler[String]] = js.native
+    var onTouchStart: js.UndefOr[TouchEventHandler[String]] = js.undefined
     
-    var onTransitionEnd: js.UndefOr[TransitionEventHandler[String]] = js.native
+    var onTransitionEnd: js.UndefOr[TransitionEventHandler[String]] = js.undefined
     
-    var onVolumeChange: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onVolumeChange: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onWaiting: js.UndefOr[ReactEventHandler[String]] = js.native
+    var onWaiting: js.UndefOr[ReactEventHandler[String]] = js.undefined
     
-    var onWheel: js.UndefOr[WheelEventHandler[String]] = js.native
+    var onWheel: js.UndefOr[WheelEventHandler[String]] = js.undefined
     
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
     
-    var radioGroup: js.UndefOr[String] = js.native
+    var radioGroup: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
     
-    var results: js.UndefOr[Double] = js.native
+    var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var security: js.UndefOr[String] = js.native
+    var security: js.UndefOr[String] = js.undefined
     
-    var showCountrySelect: js.UndefOr[Boolean] = js.native
+    var showCountrySelect: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var slot: js.UndefOr[String] = js.native
+    var slot: js.UndefOr[String] = js.undefined
     
     /**
       * By default, the caret position is being "intelligently" managed
@@ -786,31 +778,31 @@ object mod {
       * This is just an "escape hatch" for any possible caret position issues.
       * @default true
       */
-    var smartCaret: js.UndefOr[Boolean] = js.native
+    var smartCaret: js.UndefOr[Boolean] = js.undefined
     
-    var spellCheck: js.UndefOr[Booleanish] = js.native
+    var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
-    var step: js.UndefOr[Double | String] = js.native
+    var step: js.UndefOr[Double | String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
-    var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+    var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.native
+    var translate: js.UndefOr[yes | no] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var typeof: js.UndefOr[String] = js.native
+    var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.native
+    var unselectable: js.UndefOr[on | off] = js.undefined
     
     /**
       * When `defaultCountry` is defined and the initial `value` corresponds to `defaultCountry`,
@@ -818,17 +810,17 @@ object mod {
       * To format the initial `value` of `defaultCountry` as an international number instead
       * set `useNationalFormatForDefaultCountryValue` property to `true`.
       */
-    var useNationalFormatForDefaultCountryValue: js.UndefOr[Boolean] = js.native
+    var useNationalFormatForDefaultCountryValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The phone number (in E.164 format).
       * Examples: `undefined`, `"+12"`, `"+12133734253"`.
       */
-    var value: String = js.native
+    var value: String
     
-    var vocab: js.UndefOr[String] = js.native
+    var vocab: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object PhoneInputProps {
     
@@ -1429,7 +1421,7 @@ object mod {
       def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
       
       @scala.inline
-      def setInputComponent(value: ForwardRefExoticComponent[InputHTMLAttributes[HTMLInputElement] with RefAttributes[_]]): Self = StObject.set(x, "inputComponent", value.asInstanceOf[js.Any])
+      def setInputComponent(value: ForwardRefExoticComponent[InputHTMLAttributes[HTMLInputElement] & RefAttributes[js.Any]]): Self = StObject.set(x, "inputComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInputComponentUndefined: Self = StObject.set(x, "inputComponent", js.undefined)
@@ -2222,20 +2214,19 @@ object mod {
     }
   }
   
-  @js.native
   trait PhoneNumber extends StObject {
     
-    var carrierCode: js.UndefOr[String] = js.native
+    var carrierCode: js.UndefOr[String] = js.undefined
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var countryCallingCode: String = js.native
+    var countryCallingCode: String
     
-    var ext: js.UndefOr[String] = js.native
+    var ext: js.UndefOr[String] = js.undefined
     
-    var nationalNumber: String = js.native
+    var nationalNumber: String
     
-    var number: String = js.native
+    var number: String
   }
   object PhoneNumber {
     

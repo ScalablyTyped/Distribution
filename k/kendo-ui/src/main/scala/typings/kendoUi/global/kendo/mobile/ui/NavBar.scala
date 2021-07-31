@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.mobile.ui.NavBarOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.mobile.ui.NavBar")
 @js.native
 class NavBar protected ()
-  extends typings.kendoUi.kendo.mobile.ui.NavBar {
+  extends StObject
+     with typings.kendoUi.kendo.mobile.ui.NavBar {
   def this(element: Element) = this()
   def this(element: Element, options: NavBarOptions) = this()
 }
@@ -21,9 +21,8 @@ object NavBar {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.mobile.ui.NavBar.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.NavBar = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.NavBar = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.mobile.ui.NavBar]
   
   /* static member */
   @JSGlobal("kendo.mobile.ui.NavBar.fn")

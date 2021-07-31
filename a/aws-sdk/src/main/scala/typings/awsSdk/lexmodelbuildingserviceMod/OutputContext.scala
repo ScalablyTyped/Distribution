@@ -2,26 +2,24 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputContext extends StObject {
   
   /**
     * The name of the context.
     */
-  var name: OutputContextName = js.native
+  var name: OutputContextName
   
   /**
     * The number of seconds that the context should be active after it is first sent in a PostContent or PostText response. You can set the value between 5 and 86,400 seconds (24 hours).
     */
-  var timeToLiveInSeconds: ContextTimeToLiveInSeconds = js.native
+  var timeToLiveInSeconds: ContextTimeToLiveInSeconds
   
   /**
     * The number of conversation turns that the context should be active. A conversation turn is one PostContent or PostText request and the corresponding response from Amazon Lex.
     */
-  var turnsToLive: ContextTurnsToLive = js.native
+  var turnsToLive: ContextTurnsToLive
 }
 object OutputContext {
   

@@ -2,36 +2,34 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionQueryCondition extends StObject {
   
   /**
     * Filter conditions that matching subscriptions must have. Typically only the filter's type and event type are used for matching.
     */
-  var filter: ISubscriptionFilter = js.native
+  var filter: ISubscriptionFilter
   
   /**
     * Flags to specify the the type subscriptions to query for.
     */
-  var flags: SubscriptionFlags = js.native
+  var flags: SubscriptionFlags
   
   /**
     * Scope that matching subscriptions must have.
     */
-  var scope: String = js.native
+  var scope: String
   
   /**
     * ID of the subscriber (user or group) that matching subscriptions must be subscribed to.
     */
-  var subscriberId: String = js.native
+  var subscriberId: String
   
   /**
     * ID of the subscription to query for.
     */
-  var subscriptionId: String = js.native
+  var subscriptionId: String
 }
 object SubscriptionQueryCondition {
   

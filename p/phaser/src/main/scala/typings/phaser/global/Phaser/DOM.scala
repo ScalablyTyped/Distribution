@@ -3,13 +3,17 @@ package typings.phaser.global.Phaser
 import typings.phaser.ContentLoadedCallback
 import typings.std.ActiveXObject
 import typings.std.DOMParser
+import typings.std.FrameRequestCallback
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DOM {
+  
+  @JSGlobal("Phaser.DOM")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Adds the given element to the DOM. If a parent is provided the element is added as a child of the parent, providing it was able to access it.
@@ -17,15 +21,12 @@ object DOM {
     * @param element The element to be added to the DOM. Usually a Canvas object.
     * @param parent The parent in which to add the element. Can be a string which is passed to `getElementById` or an actual DOM object.
     */
-  @JSGlobal("Phaser.DOM.AddToDOM")
-  @js.native
-  def AddToDOM(element: HTMLElement): HTMLElement = js.native
-  @JSGlobal("Phaser.DOM.AddToDOM")
-  @js.native
-  def AddToDOM(element: HTMLElement, parent: String): HTMLElement = js.native
-  @JSGlobal("Phaser.DOM.AddToDOM")
-  @js.native
-  def AddToDOM(element: HTMLElement, parent: HTMLElement): HTMLElement = js.native
+  @scala.inline
+  def AddToDOM(element: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("AddToDOM")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def AddToDOM(element: HTMLElement, parent: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToDOM")(element.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def AddToDOM(element: HTMLElement, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToDOM")(element.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   /**
     * Inspects the readyState of the document. If the document is already complete then it invokes the given callback.
@@ -33,27 +34,24 @@ object DOM {
     * Called automatically by the Phaser.Game instance. Should not usually be accessed directly.
     * @param callback The callback to be invoked when the device is ready and the DOM content is loaded.
     */
-  @JSGlobal("Phaser.DOM.DOMContentLoaded")
-  @js.native
-  def DOMContentLoaded(callback: ContentLoadedCallback): Unit = js.native
+  @scala.inline
+  def DOMContentLoaded(callback: ContentLoadedCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DOMContentLoaded")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Attempts to determine the document inner height across iOS and standard devices.
     * Based on code by @tylerjpeterson
     * @param iOS Is this running on iOS?
     */
-  @JSGlobal("Phaser.DOM.GetInnerHeight")
-  @js.native
-  def GetInnerHeight(iOS: Boolean): Double = js.native
+  @scala.inline
+  def GetInnerHeight(iOS: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetInnerHeight")(iOS.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Attempts to determine the screen orientation using the Orientation API.
     * @param width The width of the viewport.
     * @param height The height of the viewport.
     */
-  @JSGlobal("Phaser.DOM.GetScreenOrientation")
-  @js.native
-  def GetScreenOrientation(width: Double, height: Double): String = js.native
+  @scala.inline
+  def GetScreenOrientation(width: Double, height: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetScreenOrientation")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Attempts to get the target DOM element based on the given value, which can be either
@@ -61,9 +59,8 @@ object DOM {
     * can be found it will return a reference to the document.body.
     * @param element The DOM element to look-up.
     */
-  @JSGlobal("Phaser.DOM.GetTarget")
-  @js.native
-  def GetTarget(element: HTMLElement): Unit = js.native
+  @scala.inline
+  def GetTarget(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTarget")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Takes the given data string and parses it as XML.
@@ -71,17 +68,15 @@ object DOM {
     * The parsed XML object is returned, or `null` if there was an error while parsing the data.
     * @param data The XML source stored in a string.
     */
-  @JSGlobal("Phaser.DOM.ParseXML")
-  @js.native
-  def ParseXML(data: String): DOMParser | ActiveXObject = js.native
+  @scala.inline
+  def ParseXML(data: String): DOMParser | ActiveXObject = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseXML")(data.asInstanceOf[js.Any]).asInstanceOf[DOMParser | ActiveXObject]
   
   /**
     * Attempts to remove the element from its parentNode in the DOM.
     * @param element The DOM element to remove from its parent node.
     */
-  @JSGlobal("Phaser.DOM.RemoveFromDOM")
-  @js.native
-  def RemoveFromDOM(element: HTMLElement): Unit = js.native
+  @scala.inline
+  def RemoveFromDOM(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RemoveFromDOM")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Abstracts away the use of RAF or setTimeOut for the core game update loop.
@@ -90,5 +85,99 @@ object DOM {
   @JSGlobal("Phaser.DOM.RequestAnimationFrame")
   @js.native
   class RequestAnimationFrame ()
-    extends typings.phaser.Phaser.DOM.RequestAnimationFrame
+    extends StObject
+       with typings.phaser.Phaser.DOM.RequestAnimationFrame {
+    
+    /**
+      * The callback to be invoked each step.
+      */
+    /* CompleteClass */
+    override def callback(time: Double): Unit = js.native
+    /**
+      * The callback to be invoked each step.
+      */
+    /* CompleteClass */
+    @JSName("callback")
+    var callback_Original: FrameRequestCallback = js.native
+    
+    /**
+      * Stops the step from running and clears the callback reference.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
+      * True if RequestAnimationFrame is running, otherwise false.
+      */
+    /* CompleteClass */
+    var isRunning: Boolean = js.native
+    
+    /**
+      * True if the step is using setTimeout instead of RAF.
+      */
+    /* CompleteClass */
+    var isSetTimeOut: Boolean = js.native
+    
+    /**
+      * The previous time the step was called.
+      */
+    /* CompleteClass */
+    var lastTime: Double = js.native
+    
+    /**
+      * Starts the requestAnimationFrame or setTimeout process running.
+      * @param callback The callback to invoke each step.
+      * @param forceSetTimeOut Should it use SetTimeout, even if RAF is available?
+      * @param targetFPS The target fps rate (in ms). Only used when setTimeout is used.
+      */
+    /* CompleteClass */
+    override def start(callback: FrameRequestCallback, forceSetTimeOut: Boolean, targetFPS: Double): Unit = js.native
+    
+    /**
+      * The RAF step function.
+      * Updates the local tick value, invokes the callback and schedules another call to requestAnimationFrame.
+      */
+    /* CompleteClass */
+    override def step(time: Double): Unit = js.native
+    
+    /**
+      * The SetTimeout step function.
+      * Updates the local tick value, invokes the callback and schedules another call to setTimeout.
+      */
+    /* CompleteClass */
+    var stepTimeout: js.Function = js.native
+    
+    /**
+      * The RAF step function.
+      * Updates the local tick value, invokes the callback and schedules another call to requestAnimationFrame.
+      */
+    /* CompleteClass */
+    @JSName("step")
+    var step_Original: FrameRequestCallback = js.native
+    
+    /**
+      * Stops the requestAnimationFrame or setTimeout from running.
+      */
+    /* CompleteClass */
+    override def stop(): Unit = js.native
+    
+    /**
+      * The target FPS rate in ms.
+      * Only used when setTimeout is used instead of RAF.
+      */
+    /* CompleteClass */
+    var target: Double = js.native
+    
+    /**
+      * The most recent timestamp. Either a DOMHighResTimeStamp under RAF or `Date.now` under SetTimeout.
+      */
+    /* CompleteClass */
+    var tick: Double = js.native
+    
+    /**
+      * The setTimeout or RAF callback ID used when canceling them.
+      */
+    /* CompleteClass */
+    var timeOutID: Double = js.native
+  }
 }

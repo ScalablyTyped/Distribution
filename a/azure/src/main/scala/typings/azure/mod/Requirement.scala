@@ -2,15 +2,13 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Requirement extends StObject {
   
-  var SettingName: String = js.native
+  var SettingName: String
   
-  var SettingPredicate: js.Function = js.native
+  var SettingPredicate: js.Function
 }
 object Requirement {
   

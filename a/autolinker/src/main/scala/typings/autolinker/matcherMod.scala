@@ -6,7 +6,6 @@ import typings.autolinker.mentionMatcherMod.MentionMatcherConfig
 import typings.autolinker.urlMatcherMod.UrlMatcherConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matcherMod {

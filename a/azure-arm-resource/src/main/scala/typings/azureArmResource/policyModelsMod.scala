@@ -4,7 +4,6 @@ import typings.msRestAzure.mod.CloudErrorParameters
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object policyModelsMod {
@@ -21,23 +20,22 @@ object policyModelsMod {
     def this(parameters: CloudErrorParameters) = this()
   }
   
-  @js.native
   trait ErrorResponse extends StObject {
     
     /**
       * Error code.
       */
-    var errorCode: js.UndefOr[String] = js.native
+    var errorCode: js.UndefOr[String] = js.undefined
     
     /**
       * Error message indicating why the operation failed.
       */
-    var errorMessage: js.UndefOr[String] = js.native
+    var errorMessage: js.UndefOr[String] = js.undefined
     
     /**
       * Http status code.
       */
-    var httpStatus: js.UndefOr[String] = js.native
+    var httpStatus: js.UndefOr[String] = js.undefined
   }
   object ErrorResponse {
     
@@ -70,23 +68,22 @@ object policyModelsMod {
     }
   }
   
-  @js.native
   trait Identity extends StObject {
     
     /**
       * The principal ID of the resource identity.
       */
-    val principalId: js.UndefOr[String] = js.native
+    val principalId: js.UndefOr[String] = js.undefined
     
     /**
       * The tenant ID of the resource identity.
       */
-    val tenantId: js.UndefOr[String] = js.native
+    val tenantId: js.UndefOr[String] = js.undefined
     
     /**
       * The identity type. Possible values include: 'SystemAssigned', 'None'
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Identity {
     
@@ -190,7 +187,9 @@ object policyModelsMod {
   }
   
   @js.native
-  trait PolicyAssignmentListResult extends Array[PolicyAssignment] {
+  trait PolicyAssignmentListResult
+    extends StObject
+       with Array[PolicyAssignment] {
     
     /**
       * The URL to use for getting the next set of results.
@@ -256,7 +255,9 @@ object policyModelsMod {
   }
   
   @js.native
-  trait PolicyDefinitionListResult extends Array[PolicyDefinition] {
+  trait PolicyDefinitionListResult
+    extends StObject
+       with Array[PolicyDefinition] {
     
     /**
       * The URL to use for getting the next set of results.
@@ -264,18 +265,17 @@ object policyModelsMod {
     var nextLink: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait PolicyDefinitionReference extends StObject {
     
     /**
       * Required if a parameter is used in policy rule.
       */
-    var parameters: js.UndefOr[js.Any] = js.native
+    var parameters: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The ID of the policy definition or policy set definition.
       */
-    var policyDefinitionId: js.UndefOr[String] = js.native
+    var policyDefinitionId: js.UndefOr[String] = js.undefined
   }
   object PolicyDefinitionReference {
     
@@ -354,7 +354,9 @@ object policyModelsMod {
   }
   
   @js.native
-  trait PolicySetDefinitionListResult extends Array[PolicySetDefinition] {
+  trait PolicySetDefinitionListResult
+    extends StObject
+       with Array[PolicySetDefinition] {
     
     /**
       * The URL to use for getting the next set of results.
@@ -362,18 +364,17 @@ object policyModelsMod {
     var nextLink: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait PolicySku extends StObject {
     
     /**
       * The name of the policy sku. Possible values are A0 and A1.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The policy sku tier. Possible values are Free and Standard.
       */
-    var tier: js.UndefOr[String] = js.native
+    var tier: js.UndefOr[String] = js.undefined
   }
   object PolicySku {
     

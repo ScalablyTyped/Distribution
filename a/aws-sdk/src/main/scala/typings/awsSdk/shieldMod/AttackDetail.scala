@@ -2,51 +2,49 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttackDetail extends StObject {
   
   /**
     * List of counters that describe the attack for the specified time period.
     */
-  var AttackCounters: js.UndefOr[SummarizedCounterList] = js.native
+  var AttackCounters: js.UndefOr[SummarizedCounterList] = js.undefined
   
   /**
     * The unique identifier (ID) of the attack.
     */
-  var AttackId: js.UndefOr[typings.awsSdk.shieldMod.AttackId] = js.native
+  var AttackId: js.UndefOr[typings.awsSdk.shieldMod.AttackId] = js.undefined
   
   /**
     * The array of AttackProperty objects.
     */
-  var AttackProperties: js.UndefOr[typings.awsSdk.shieldMod.AttackProperties] = js.native
+  var AttackProperties: js.UndefOr[typings.awsSdk.shieldMod.AttackProperties] = js.undefined
   
   /**
     * The time the attack ended, in Unix time in seconds. For more information see timestamp.
     */
-  var EndTime: js.UndefOr[AttackTimestamp] = js.native
+  var EndTime: js.UndefOr[AttackTimestamp] = js.undefined
   
   /**
     * List of mitigation actions taken for the attack.
     */
-  var Mitigations: js.UndefOr[MitigationList] = js.native
+  var Mitigations: js.UndefOr[MitigationList] = js.undefined
   
   /**
     * The ARN (Amazon Resource Name) of the resource that was attacked.
     */
-  var ResourceArn: js.UndefOr[typings.awsSdk.shieldMod.ResourceArn] = js.native
+  var ResourceArn: js.UndefOr[typings.awsSdk.shieldMod.ResourceArn] = js.undefined
   
   /**
     * The time the attack started, in Unix time in seconds. For more information see timestamp.
     */
-  var StartTime: js.UndefOr[AttackTimestamp] = js.native
+  var StartTime: js.UndefOr[AttackTimestamp] = js.undefined
   
   /**
     * If applicable, additional detail about the resource being attacked, for example, IP address or URL.
     */
-  var SubResources: js.UndefOr[SubResourceSummaryList] = js.native
+  var SubResources: js.UndefOr[SubResourceSummaryList] = js.undefined
 }
 object AttackDetail {
   

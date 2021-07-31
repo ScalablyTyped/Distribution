@@ -2,14 +2,12 @@ package typings.webpagetest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyOptions extends StObject {
   
   /** API key (if assigned). Contact the WebPageTest server administrator for a key if required */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
 }
 object KeyOptions {
   

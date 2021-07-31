@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiskImageVolumeDescription extends StObject {
   
   /**
     * The volume identifier.
     */
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the volume, in GiB.
     */
-  var Size: js.UndefOr[Long] = js.native
+  var Size: js.UndefOr[Long] = js.undefined
 }
 object DiskImageVolumeDescription {
   

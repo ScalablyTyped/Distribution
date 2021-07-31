@@ -2,31 +2,31 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Diagnostic extends Location {
+trait Diagnostic
+  extends StObject
+     with Location {
   
-  var _additionalLocations: js.Any = js.native
+  var _additionalLocations: js.Any
   
-  var _arguments: js.Any = js.native
+  var _arguments: js.Any
   
-  var _diagnosticKey: js.Any = js.native
+  var _diagnosticKey: js.Any
   
-  def additionalLocations(): js.Array[Location] = js.native
+  def additionalLocations(): js.Array[Location]
   
-  def arguments(): js.Array[_] = js.native
+  def arguments(): js.Array[js.Any]
   
-  def diagnosticKey(): String = js.native
+  def diagnosticKey(): String
   
-  def info(): DiagnosticInfo = js.native
+  def info(): DiagnosticInfo
   
-  def message(): String = js.native
+  def message(): String
   
-  def text(): String = js.native
+  def text(): String
   
-  def toJSON(key: js.Any): js.Any = js.native
+  def toJSON(key: js.Any): js.Any
 }
 object Diagnostic {
   
@@ -40,7 +40,7 @@ object Diagnostic {
     _lineMap: js.Any,
     _start: js.Any,
     additionalLocations: () => js.Array[Location],
-    arguments: () => js.Array[_],
+    arguments: () => js.Array[js.Any],
     character: () => Double,
     diagnosticKey: () => String,
     fileName: () => String,
@@ -64,7 +64,7 @@ object Diagnostic {
     def setAdditionalLocations(value: () => js.Array[Location]): Self = StObject.set(x, "additionalLocations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setArguments(value: () => js.Array[_]): Self = StObject.set(x, "arguments", js.Any.fromFunction0(value))
+    def setArguments(value: () => js.Array[js.Any]): Self = StObject.set(x, "arguments", js.Any.fromFunction0(value))
     
     @scala.inline
     def setDiagnosticKey(value: () => String): Self = StObject.set(x, "diagnosticKey", js.Any.fromFunction0(value))

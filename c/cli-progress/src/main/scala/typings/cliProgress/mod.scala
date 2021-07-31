@@ -7,7 +7,6 @@ import typings.node.NodeJS.WritableStream
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -87,9 +86,9 @@ object mod {
     /** Increases the current progress value by a specified amount (default +1). Update payload optionally */
     def increment(): Unit = js.native
     def increment(payload: js.Object): Unit = js.native
-    def increment(step: js.UndefOr[scala.Nothing], payload: js.Object): Unit = js.native
     def increment(step: Double): Unit = js.native
     def increment(step: Double, payload: js.Object): Unit = js.native
+    def increment(step: Unit, payload: js.Object): Unit = js.native
     
     def render(): Unit = js.native
     
@@ -114,51 +113,50 @@ object mod {
     def updateETA(): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**  position of the progress bar - 'left' (default), 'right' or 'center  */
-    var align: js.UndefOr[left | right | center] = js.native
+    var align: js.UndefOr[left | right | center] = js.undefined
     
     /** add padding chars to formatted time and percentage to force fixed width (default: false) */
-    var autopadding: js.UndefOr[Boolean] = js.native
+    var autopadding: js.UndefOr[Boolean] = js.undefined
     
     /** the character sequence used for autopadding (default: " ") */
-    var autopaddingChar: js.UndefOr[String] = js.native
+    var autopaddingChar: js.UndefOr[String] = js.undefined
     
     /** character to use as "complete" indicator in the bar (default: "=") */
-    var barCompleteChar: js.UndefOr[String] = js.native
+    var barCompleteChar: js.UndefOr[String] = js.undefined
     
     /** character to use as "complete" indicator in the bar (default: "=") */
-    var barCompleteString: js.UndefOr[String] = js.native
+    var barCompleteString: js.UndefOr[String] = js.undefined
     
     /** character to use as "incomplete" indicator in the bar (default: "-") */
-    var barIncompleteChar: js.UndefOr[String] = js.native
+    var barIncompleteChar: js.UndefOr[String] = js.undefined
     
     /** character to use as "incomplete" indicator in the bar (default: "-") */
-    var barIncompleteString: js.UndefOr[String] = js.native
+    var barIncompleteString: js.UndefOr[String] = js.undefined
     
     /** the length of the progress bar in chars (default: 40) */
-    var barsize: js.UndefOr[Double] = js.native
+    var barsize: js.UndefOr[Double] = js.undefined
     
     /** clear the progress bar on complete / stop() call (default: false) */
-    var clearOnComplete: js.UndefOr[Boolean] = js.native
+    var clearOnComplete: js.UndefOr[Boolean] = js.undefined
     
     /** display progress bars with 'total' of zero(0) as empty, not full (default: false) */
-    var emptyOnZero: js.UndefOr[Boolean] = js.native
+    var emptyOnZero: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  trigger an eta calculation update during asynchronous rendering trigger using the current value
       * - should only be used for long running processes in conjunction with lof `fps` values and large `etaBuffer`
       * @default false
       */
-    var etaAsynchronousUpdate: js.UndefOr[Boolean] = js.native
+    var etaAsynchronousUpdate: js.UndefOr[Boolean] = js.undefined
     
     /** number of updates with which to calculate the eta; higher numbers give a more stable eta (default: 10) */
-    var etaBuffer: js.UndefOr[Double] = js.native
+    var etaBuffer: js.UndefOr[Double] = js.undefined
     
     /** trigger redraw on every frame even if progress remains the same; can be useful if progress bar gets overwritten by other concurrent writes to the terminal (default: false) */
-    var forceRedraw: js.UndefOr[Boolean] = js.native
+    var forceRedraw: js.UndefOr[Boolean] = js.undefined
     
     /**
       * progress bar output format.
@@ -179,45 +177,45 @@ object mod {
       */
     var format: js.UndefOr[
         String | (js.Function3[/* options */ this.type, /* params */ Params, /* payload */ js.Any, String])
-      ] = js.native
+      ] = js.undefined
     
     /** a custom bar formatter function which renders the bar-element (default: format-bar.js) */
-    var formatBar: js.UndefOr[js.Function2[/* progress */ Double, /* options */ this.type, String]] = js.native
+    var formatBar: js.UndefOr[js.Function2[/* progress */ Double, /* options */ this.type, String]] = js.undefined
     
     /** a custom timer formatter function which renders the formatted time elements like eta_formatted and duration-formatted (default: format-time.js) */
     var formatTime: js.UndefOr[
         js.Function3[/* t */ Double, /* options */ this.type, /* roundToMultipleOf */ Double, String]
-      ] = js.native
+      ] = js.undefined
     
     /** a custom value formatter function which renders all other values (default: format-value.js) */
-    var formatValue: js.UndefOr[js.Function3[/* v */ Double, /* options */ this.type, /* type */ String, String]] = js.native
+    var formatValue: js.UndefOr[js.Function3[/* v */ Double, /* options */ this.type, /* type */ String, String]] = js.undefined
     
     /** the maximum update rate (default: 10) */
-    var fps: js.UndefOr[Double] = js.native
+    var fps: js.UndefOr[Double] = js.undefined
     
     /**
       * hide the cursor during progress operation; restored on complete (default: false)
       * - pass `null` to keep terminal settings
       */
-    var hideCursor: js.UndefOr[Boolean | Null] = js.native
+    var hideCursor: js.UndefOr[Boolean | Null] = js.undefined
     
     /** disable line wrapping (default: false) - pass null to keep terminal settings; pass true to trim the output to terminal width */
-    var linewrap: js.UndefOr[Boolean | Null] = js.native
+    var linewrap: js.UndefOr[Boolean | Null] = js.undefined
     
     /** enable scheduled output to notty streams - e.g. redirect to files (default: false) */
-    var noTTYOutput: js.UndefOr[Boolean] = js.native
+    var noTTYOutput: js.UndefOr[Boolean] = js.undefined
     
     /** set the output schedule/interval for notty output in ms (default: 2000ms) */
-    var notTTYSchedule: js.UndefOr[Double] = js.native
+    var notTTYSchedule: js.UndefOr[Double] = js.undefined
     
     /**  automatically call stop() when the value reaches the total (default: false) */
-    var stopOnComplete: js.UndefOr[Boolean] = js.native
+    var stopOnComplete: js.UndefOr[Boolean] = js.undefined
     
     /** output stream to use (default: process.stderr) */
-    var stream: js.UndefOr[WritableStream] = js.native
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
     /** trigger redraw during update() in case threshold time x2 is exceeded (default: true) - limited to single bar usage */
-    var synchronousUpdate: js.UndefOr[Boolean] = js.native
+    var synchronousUpdate: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -391,20 +389,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Params extends StObject {
     
-    var eta: Double = js.native
+    var eta: Double
     
-    var maxWidth: Double = js.native
+    var maxWidth: Double
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var startTime: Date = js.native
+    var startTime: Date
     
-    var total: Double = js.native
+    var total: Double
     
-    var value: Double = js.native
+    var value: Double
   }
   object Params {
     
@@ -437,12 +434,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Preset extends StObject {
     
-    var barCompleteChar: String = js.native
+    var barCompleteChar: String
     
-    var barIncompleteChar: String = js.native
+    var barIncompleteChar: String
     
     /**
       *   Example: 'progress [{bar}] {percentage}% | ETA: {eta}s | {value}/{total}'
@@ -464,7 +460,7 @@ object mod {
       * {duration_formatted} - elapsed time formatted into appropriate units
       *
       */
-    var format: String = js.native
+    var format: String
   }
   object Preset {
     

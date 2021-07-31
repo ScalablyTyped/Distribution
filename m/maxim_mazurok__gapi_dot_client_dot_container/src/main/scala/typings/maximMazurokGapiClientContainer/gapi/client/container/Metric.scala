@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metric extends StObject {
   
   /** For metrics with floating point value. */
-  var doubleValue: js.UndefOr[Double] = js.native
+  var doubleValue: js.UndefOr[Double] = js.undefined
   
   /** For metrics with integer value. */
-  var intValue: js.UndefOr[String] = js.native
+  var intValue: js.UndefOr[String] = js.undefined
   
   /** Required. Metric name, e.g., "nodes total", "percent done". */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** For metrics with custom values (ratios, visual progress, etc.). */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object Metric {
   

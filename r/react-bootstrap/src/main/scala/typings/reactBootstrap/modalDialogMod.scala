@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.reactBootstrap.mod.Sizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalDialogMod {
@@ -19,27 +18,28 @@ object modalDialogMod {
   trait ModalDialog
     extends Component[ModalDialogProps, js.Object, js.Any]
   
-  @js.native
-  trait ModalDialogProps extends HTMLProps[ModalDialog] {
+  trait ModalDialogProps
+    extends StObject
+       with HTMLProps[ModalDialog] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var bsSize: js.UndefOr[Sizes] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var onEnter: js.UndefOr[js.Function] = js.native
+    var onEnter: js.UndefOr[js.Function] = js.undefined
     
-    var onEntered: js.UndefOr[js.Function] = js.native
+    var onEntered: js.UndefOr[js.Function] = js.undefined
     
-    var onEntering: js.UndefOr[js.Function] = js.native
+    var onEntering: js.UndefOr[js.Function] = js.undefined
     
-    var onExit: js.UndefOr[js.Function] = js.native
+    var onExit: js.UndefOr[js.Function] = js.undefined
     
-    var onExited: js.UndefOr[js.Function] = js.native
+    var onExited: js.UndefOr[js.Function] = js.undefined
     
-    var onExiting: js.UndefOr[js.Function] = js.native
+    var onExiting: js.UndefOr[js.Function] = js.undefined
     
     // TODO: these props are not correct https://github.com/react-bootstrap/react-bootstrap/blob/v0.31.1/src/ModalDialog.js#L9
-    var onHide: js.UndefOr[js.Function] = js.native
+    var onHide: js.UndefOr[js.Function] = js.undefined
   }
   object ModalDialogProps {
     

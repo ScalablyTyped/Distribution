@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Large extends StObject {
   
-  var large: scala.Double = js.native
+  var large: scala.Double
   
-  var medium: scala.Double = js.native
+  var medium: scala.Double
   
-  var small: scala.Double = js.native
+  var small: scala.Double
 }
 object Large {
   

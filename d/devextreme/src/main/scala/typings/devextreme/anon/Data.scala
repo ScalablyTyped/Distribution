@@ -2,23 +2,21 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var xhrFields: js.UndefOr[js.Any] = js.native
+  var xhrFields: js.UndefOr[js.Any] = js.undefined
 }
 object Data {
   

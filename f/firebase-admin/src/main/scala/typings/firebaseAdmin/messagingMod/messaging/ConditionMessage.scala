@@ -2,15 +2,14 @@ package typings.firebaseAdmin.messagingMod.messaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionMessage
-  extends BaseMessage
+  extends StObject
+     with BaseMessage
      with Message {
   
-  var condition: String = js.native
+  var condition: String
 }
 object ConditionMessage {
   

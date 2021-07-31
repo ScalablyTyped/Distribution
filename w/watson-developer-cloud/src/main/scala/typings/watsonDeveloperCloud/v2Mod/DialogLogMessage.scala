@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Dialog log message details. */
-@js.native
 trait DialogLogMessage extends StObject {
   
   /** The severity of the log message. */
-  var level: String = js.native
+  var level: String
   
   /** The text of the log message. */
-  var message: String = js.native
+  var message: String
 }
 object DialogLogMessage {
   

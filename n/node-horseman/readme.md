@@ -11,8 +11,8 @@ Run PhantomJS from Node
 | Full name          | node-horseman |
 | Keywords           | phantomjs, horseman, headless, browser |
 | # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 74466 |
+| # dependents       | 38 |
+| # downloads        | 85621 |
 | # stars            | 17 |
 
 ## Links

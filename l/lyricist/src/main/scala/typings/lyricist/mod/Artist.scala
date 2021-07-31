@@ -3,54 +3,52 @@ package typings.lyricist.mod
 import typings.lyricist.anon.Permissions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Artist =========================================================================================
-@js.native
 trait Artist extends StObject {
   
-  var alternate_names: js.Array[_] = js.native
+  var alternate_names: js.Array[js.Any]
   
-  var api_path: String = js.native
+  var api_path: String
   
-  var current_user_metadata: Permissions = js.native
+  var current_user_metadata: Permissions
   
-  var description: Description = js.native
+  var description: Description
   
-  var description_annotation: DescriptionAnnotation = js.native
+  var description_annotation: DescriptionAnnotation
   
-  var facebook_name: String = js.native
+  var facebook_name: String
   
-  var followers_count: Double = js.native
+  var followers_count: Double
   
-  var header_image_url: String = js.native
+  var header_image_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var image_url: String = js.native
+  var image_url: String
   
-  var instagram_name: String = js.native
+  var instagram_name: String
   
-  var is_meme_verified: Boolean = js.native
+  var is_meme_verified: Boolean
   
-  var is_verified: Boolean = js.native
+  var is_verified: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var translation_artist: Boolean = js.native
+  var translation_artist: Boolean
   
-  var twitter_name: String = js.native
+  var twitter_name: String
   
-  var url: String = js.native
+  var url: String
   
-  var user: js.UndefOr[js.Any] = js.native
+  var user: js.UndefOr[js.Any] = js.undefined
 }
 object Artist {
   
   @scala.inline
   def apply(
-    alternate_names: js.Array[_],
+    alternate_names: js.Array[js.Any],
     api_path: String,
     current_user_metadata: Permissions,
     description: Description,
@@ -76,7 +74,7 @@ object Artist {
   implicit class ArtistMutableBuilder[Self <: Artist] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAlternate_names(value: js.Array[_]): Self = StObject.set(x, "alternate_names", value.asInstanceOf[js.Any])
+    def setAlternate_names(value: js.Array[js.Any]): Self = StObject.set(x, "alternate_names", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAlternate_namesVarargs(value: js.Any*): Self = StObject.set(x, "alternate_names", js.Array(value :_*))

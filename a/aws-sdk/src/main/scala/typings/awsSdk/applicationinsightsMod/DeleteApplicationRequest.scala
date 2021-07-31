@@ -2,16 +2,14 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApplicationRequest extends StObject {
   
   /**
     * The name of the resource group.
     */
-  var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName = js.native
+  var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName
 }
 object DeleteApplicationRequest {
   

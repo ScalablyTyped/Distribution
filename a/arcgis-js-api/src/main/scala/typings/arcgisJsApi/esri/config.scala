@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html)
   */
-@js.native
 trait config extends StObject {
   
   /**
@@ -18,56 +16,56 @@ trait config extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#fontsUrl)
     */
-  var fontsUrl: String = js.native
+  var fontsUrl: String
   
   /**
     * The URL for the utility service used by [GeoRSSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html) to convert GeoRSS documents.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#geoRSSServiceUrl)
     */
-  var geoRSSServiceUrl: String = js.native
+  var geoRSSServiceUrl: String
   
   /**
     * The default [GeometryService](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html) used by widgets and other operations, such as on-the-fly projections.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#geometryServiceUrl)
     */
-  var geometryServiceUrl: String = js.native
+  var geometryServiceUrl: String
   
   /**
     * The URL for the utility service used by [KMLLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KMLLayer.html) to convert KML documents.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#kmlServiceUrl)
     */
-  var kmlServiceUrl: String = js.native
+  var kmlServiceUrl: String
   
   /**
     * An object with properties that control various aspects of log messages.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#log)
     */
-  var log: configLog = js.native
+  var log: configLog
   
   /**
     * The default URL of new portal instances.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#portalUrl)
     */
-  var portalUrl: String = js.native
+  var portalUrl: String
   
   /**
     * An object with properties that control various aspects of communication between the library and web servers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
     */
-  var request: configRequest = js.native
+  var request: configRequest
   
   /**
     * The AMD loader's configuration object, which is loaded with each worker.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#workers)
     */
-  var workers: configWorkers = js.native
+  var workers: configWorkers
 }
 object config {
   

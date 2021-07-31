@@ -2,7 +2,6 @@ package typings.servicenow.servicenow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,8 +21,8 @@ trait GlideElement extends StObject {
   
   def getAttribute(attributeName: String): String = js.native
   
-  def getChoices(): js.Array[_] = js.native
-  def getChoices(name: String): js.Array[_] = js.native
+  def getChoices(): js.Array[js.Any] = js.native
+  def getChoices(name: String): js.Array[js.Any] = js.native
   
   def getDecryptedValue(): String = js.native
   

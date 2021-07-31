@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkInterfaceMod {
@@ -94,6 +93,10 @@ object networkInterfaceMod {
   /* static members */
   object NetworkInterface {
     
+    @JSImport("@pulumi/aws/ec2/networkInterface", "NetworkInterface")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NetworkInterface resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -103,29 +106,23 @@ object networkInterfaceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/networkInterface", "NetworkInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID]): NetworkInterface = js.native
-    @JSImport("@pulumi/aws/ec2/networkInterface", "NetworkInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NetworkInterface = js.native
-    @JSImport("@pulumi/aws/ec2/networkInterface", "NetworkInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NetworkInterfaceState): NetworkInterface = js.native
-    @JSImport("@pulumi/aws/ec2/networkInterface", "NetworkInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NetworkInterfaceState, opts: CustomResourceOptions): NetworkInterface = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): NetworkInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NetworkInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NetworkInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NetworkInterfaceState): NetworkInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NetworkInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NetworkInterfaceState, opts: CustomResourceOptions): NetworkInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkInterface]
     
     /**
       * Returns true if the given object is an instance of NetworkInterface.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/networkInterface", "NetworkInterface.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkInterface.NetworkInterface */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkInterface.NetworkInterface */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/networkInterface.NetworkInterface */ Boolean]
   }
   
-  @js.native
   trait NetworkInterfaceArgs extends StObject {
     
     /**
@@ -133,54 +130,54 @@ object networkInterfaceMod {
       */
     val attachments: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkInterfaceAttachment]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A description for the network interface.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of IPv6 addresses to assign to a network interface. You can't use this option if specifying specific `ipv6Addresses`. If your subnet has the AssignIpv6AddressOnCreation attribute set to `true`, you can specify `0` to override this setting.
       */
-    val ipv6AddressCount: js.UndefOr[Input[Double]] = js.native
+    val ipv6AddressCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet. You can't use this option if you're specifying `ipv6AddressCount`.
       */
-    val ipv6Addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val ipv6Addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
-    val privateIp: js.UndefOr[Input[String]] = js.native
+    val privateIp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of private IPs to assign to the ENI.
       */
-    val privateIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val privateIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Number of secondary private IPs to assign to the ENI. The total number of private IPs will be 1 + private_ips_count, as a primary private IP will be assiged to an ENI by default.
       */
-    val privateIpsCount: js.UndefOr[Input[Double]] = js.native
+    val privateIpsCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * List of security group IDs to assign to the ENI.
       */
-    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Whether to enable source destination checking for the ENI. Default true.
       */
-    val sourceDestCheck: js.UndefOr[Input[Boolean]] = js.native
+    val sourceDestCheck: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Subnet ID to create the ENI in.
       */
-    val subnetId: Input[String] = js.native
+    val subnetId: Input[String]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object NetworkInterfaceArgs {
     
@@ -270,7 +267,6 @@ object networkInterfaceMod {
     }
   }
   
-  @js.native
   trait NetworkInterfaceState extends StObject {
     
     /**
@@ -278,66 +274,66 @@ object networkInterfaceMod {
       */
     val attachments: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkInterfaceAttachment]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A description for the network interface.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of IPv6 addresses to assign to a network interface. You can't use this option if specifying specific `ipv6Addresses`. If your subnet has the AssignIpv6AddressOnCreation attribute set to `true`, you can specify `0` to override this setting.
       */
-    val ipv6AddressCount: js.UndefOr[Input[Double]] = js.native
+    val ipv6AddressCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet. You can't use this option if you're specifying `ipv6AddressCount`.
       */
-    val ipv6Addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val ipv6Addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The MAC address of the network interface.
       */
-    val macAddress: js.UndefOr[Input[String]] = js.native
+    val macAddress: js.UndefOr[Input[String]] = js.undefined
     
-    val outpostArn: js.UndefOr[Input[String]] = js.native
+    val outpostArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The private DNS name of the network interface (IPv4).
       */
-    val privateDnsName: js.UndefOr[Input[String]] = js.native
+    val privateDnsName: js.UndefOr[Input[String]] = js.undefined
     
-    val privateIp: js.UndefOr[Input[String]] = js.native
+    val privateIp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of private IPs to assign to the ENI.
       */
-    val privateIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val privateIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Number of secondary private IPs to assign to the ENI. The total number of private IPs will be 1 + private_ips_count, as a primary private IP will be assiged to an ENI by default.
       */
-    val privateIpsCount: js.UndefOr[Input[Double]] = js.native
+    val privateIpsCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * List of security group IDs to assign to the ENI.
       */
-    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Whether to enable source destination checking for the ENI. Default true.
       */
-    val sourceDestCheck: js.UndefOr[Input[Boolean]] = js.native
+    val sourceDestCheck: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Subnet ID to create the ENI in.
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object NetworkInterfaceState {
     

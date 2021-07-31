@@ -3,21 +3,21 @@ package typings.grpcGrpcJs.loadBalancingConfigMod
 import typings.grpcGrpcJs.grpcGrpcJsStrings.eds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EdsLoadBalancingConfig extends LoadBalancingConfig {
+trait EdsLoadBalancingConfig
+  extends StObject
+     with LoadBalancingConfig {
   
-  var eds: EdsLbConfig = js.native
+  var eds: EdsLbConfig
   
-  var name: eds = js.native
+  var name: eds
 }
 object EdsLoadBalancingConfig {
   
   @scala.inline
-  def apply(eds: EdsLbConfig, name: eds): EdsLoadBalancingConfig = {
-    val __obj = js.Dynamic.literal(eds = eds.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(eds: EdsLbConfig): EdsLoadBalancingConfig = {
+    val __obj = js.Dynamic.literal(eds = eds.asInstanceOf[js.Any], name = "eds")
     __obj.asInstanceOf[EdsLoadBalancingConfig]
   }
   

@@ -2,16 +2,14 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachObjectResponse extends StObject {
   
   /**
     * The attached ObjectIdentifier, which is the child ObjectIdentifier.
     */
-  var AttachedObjectIdentifier: js.UndefOr[ObjectIdentifier] = js.native
+  var AttachedObjectIdentifier: js.UndefOr[ObjectIdentifier] = js.undefined
 }
 object AttachObjectResponse {
   

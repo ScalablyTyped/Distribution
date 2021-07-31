@@ -2,15 +2,13 @@ package typings.instagramPrivateApi.timelineFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineFeedResponsePaginationInfo extends StObject {
   
-  var group_id: Null = js.native
+  var group_id: Null
   
-  var source: Null = js.native
+  var source: Null
 }
 object TimelineFeedResponsePaginationInfo {
   

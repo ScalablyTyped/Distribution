@@ -2,10 +2,8 @@ package typings.amapJsSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Coords extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait Coords extends StObject {
     * - rect: coords格式为 [x1, y1, x2, y2]，x1，y1为矩形左上角像素坐标，x2，y2为矩形右下角像素坐标
     * Markshape的像素坐标是指相对于marker的左上角的像素坐标偏移量
     */
-  var coords: js.UndefOr[js.Array[Double]] = js.native
+  var coords: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * 可点击区域类型，可选值：
@@ -24,7 +22,7 @@ trait Coords extends StObject {
     * - poly:多边形
     * - rect:矩形
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Coords {
   

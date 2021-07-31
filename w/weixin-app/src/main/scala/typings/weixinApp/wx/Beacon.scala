@@ -2,29 +2,27 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Beacon extends StObject {
   
   /** iBeacon 设备的距离 */
-  var accuracy: Double = js.native
+  var accuracy: Double
   
   /** iBeacon 设备的主 id */
-  var major: String = js.native
+  var major: String
   
   /** iBeacon 设备的次 id */
-  var minor: String = js.native
+  var minor: String
   
   /** 表示设备距离的枚举值 */
-  var proximity: Double = js.native
+  var proximity: Double
   
   /** 表示设备的信号强度 */
-  var rssi: Double = js.native
+  var rssi: Double
   
   /** iBeacon 设备广播的 uuid */
-  var uuid: String = js.native
+  var uuid: String
 }
 object Beacon {
   

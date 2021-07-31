@@ -4,7 +4,6 @@ import typings.moment.mod.Moment
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,7 +15,9 @@ object mod {
     * Cron objects each represent a cron schedule.
     * @param options The options to use.
     */
-  class ^ () extends Cron {
+  class ^ ()
+    extends StObject
+       with Cron {
     def this(options: Options) = this()
   }
   
@@ -78,32 +79,31 @@ object mod {
   
   type CronArray = js.Tuple5[js.Array[Double], js.Array[Double], js.Array[Double], js.Array[Double], js.Array[Double]]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Changes the * to H on the `toString()`.
       * Default: `false`.
       */
-    var outputHashes: js.UndefOr[Boolean] = js.native
+    var outputHashes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Changes the numbers to 3 letter month names on the `toString()`.
       * Default: `false`.
       */
-    var outputMonthNames: js.UndefOr[Boolean] = js.native
+    var outputMonthNames: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Changes the numbers to 3 letter weekday names on the `toString()`.
       * Default: `false`.
       */
-    var outputWeekdayNames: js.UndefOr[Boolean] = js.native
+    var outputWeekdayNames: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines a timezone to the cron instance.
       * Default: `Local timezone`.
       */
-    var timezone: js.UndefOr[String] = js.native
+    var timezone: js.UndefOr[String] = js.undefined
   }
   object Options {
     

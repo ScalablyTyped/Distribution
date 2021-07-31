@@ -2,21 +2,19 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNodesOutput extends StObject {
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * An array of NodeSummary objects that contain configuration properties for each node.
     */
-  var Nodes: js.UndefOr[NodeSummaryList] = js.native
+  var Nodes: js.UndefOr[NodeSummaryList] = js.undefined
 }
 object ListNodesOutput {
   

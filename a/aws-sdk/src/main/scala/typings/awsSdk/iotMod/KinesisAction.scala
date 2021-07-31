@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KinesisAction extends StObject {
   
   /**
     * The partition key.
     */
-  var partitionKey: js.UndefOr[PartitionKey] = js.native
+  var partitionKey: js.UndefOr[PartitionKey] = js.undefined
   
   /**
     * The ARN of the IAM role that grants access to the Amazon Kinesis stream.
     */
-  var roleArn: AwsArn = js.native
+  var roleArn: AwsArn
   
   /**
     * The name of the Amazon Kinesis stream.
     */
-  var streamName: StreamName = js.native
+  var streamName: StreamName
 }
 object KinesisAction {
   

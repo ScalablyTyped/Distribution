@@ -2,13 +2,11 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration of how speech should be synthesized.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig extends StObject {
     * that are applied on (post synthesized) text to speech. Effects are
     * applied on top of each other in the order they are given.
     */
-  var effectsProfileId: js.UndefOr[js.Array[String]] = js.native
+  var effectsProfileId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. Speaking pitch, in the range [-20.0, 20.0]. 20 means increase
     * 20 semitones from the original pitch. -20 means decrease 20 semitones
     * from the original pitch.
     */
-  var pitch: js.UndefOr[Double] = js.native
+  var pitch: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. Speaking rate/speed, in the range [0.25, 4.0]. 1.0 is the
@@ -31,12 +29,12 @@ trait SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig extends StObject {
     * fast, and 0.5 is half as fast. If unset(0.0), defaults to the native 1.0
     * speed. Any other values &lt; 0.25 or &gt; 4.0 will return an error.
     */
-  var speakingRate: js.UndefOr[Double] = js.native
+  var speakingRate: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. The desired voice of the synthesized audio.
     */
-  var voice: js.UndefOr[SchemaGoogleCloudDialogflowV2VoiceSelectionParams] = js.native
+  var voice: js.UndefOr[SchemaGoogleCloudDialogflowV2VoiceSelectionParams] = js.undefined
   
   /**
     * Optional. Volume gain (in dB) of the normal native volume supported by
@@ -48,7 +46,7 @@ trait SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig extends StObject {
     * recommend not to exceed +10 (dB) as there&#39;s usually no effective
     * increase in loudness for any value greater than that.
     */
-  var volumeGainDb: js.UndefOr[Double] = js.native
+  var volumeGainDb: js.UndefOr[Double] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig {
   

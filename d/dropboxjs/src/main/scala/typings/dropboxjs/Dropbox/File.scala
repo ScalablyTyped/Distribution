@@ -3,19 +3,17 @@ package typings.dropboxjs.Dropbox
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object File {
   
-  @js.native
   trait CopyReference extends StObject {
     
-    var expiresAt: Date = js.native
+    var expiresAt: Date
     
-    var tag: String = js.native
+    var tag: String
     
-    def toJSON(): js.Object = js.native
+    def toJSON(): js.Object
   }
   object CopyReference {
     
@@ -39,18 +37,17 @@ object File {
     }
   }
   
-  @js.native
   trait ShareUrl extends StObject {
     
-    var expiresAt: Date = js.native
+    var expiresAt: Date
     
-    var isDirect: Boolean = js.native
+    var isDirect: Boolean
     
-    var isPreview: Boolean = js.native
+    var isPreview: Boolean
     
-    def toJSON(): js.Object = js.native
+    def toJSON(): js.Object
     
-    var url: String = js.native
+    var url: String
   }
   object ShareUrl {
     
@@ -80,40 +77,39 @@ object File {
     }
   }
   
-  @js.native
   trait Stat extends StObject {
     
-    var clientModifiedAt: Date = js.native
+    var clientModifiedAt: Date
     
-    var contentHash: String = js.native
+    var contentHash: String
     
-    var hasThumbnail: Boolean = js.native
+    var hasThumbnail: Boolean
     
-    var humanSize: String = js.native
+    var humanSize: String
     
-    var inAppFolder: Boolean = js.native
+    var inAppFolder: Boolean
     
-    var isFile: Boolean = js.native
+    var isFile: Boolean
     
-    var isFolder: Boolean = js.native
+    var isFolder: Boolean
     
-    var isRemoved: Boolean = js.native
+    var isRemoved: Boolean
     
-    var mimeType: String = js.native
+    var mimeType: String
     
-    var modifiedAt: Date = js.native
+    var modifiedAt: Date
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
     
-    var size: Double = js.native
+    var size: Double
     
-    def toJSON(): js.Object = js.native
+    def toJSON(): js.Object
     
-    var typeIcon: String = js.native
+    var typeIcon: String
     
-    var versionTag: String = js.native
+    var versionTag: String
   }
   object Stat {
     
@@ -193,26 +189,25 @@ object File {
     }
   }
   
-  @js.native
   trait StatOptions extends StObject {
     
-    var contentHash: String = js.native
+    var contentHash: String
     
-    var deleted: Boolean = js.native
+    var deleted: Boolean
     
-    var hash: String = js.native
+    var hash: String
     
-    var httpCache: Boolean = js.native
+    var httpCache: Boolean
     
-    var readDir: Boolean = js.native
+    var readDir: Boolean
     
-    var removed: Boolean = js.native
+    var removed: Boolean
     
-    var rev: String = js.native
+    var rev: String
     
-    var version: Double = js.native
+    var version: Double
     
-    var versionTag: String = js.native
+    var versionTag: String
   }
   object StatOptions {
     

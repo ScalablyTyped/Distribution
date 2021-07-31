@@ -2,26 +2,24 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterRanges extends StObject {
   
   /**
     * Specifies the tunable range for each categorical hyperparameter.
     */
-  var CategoricalParameterRanges: js.UndefOr[typings.awsSdk.forecastserviceMod.CategoricalParameterRanges] = js.native
+  var CategoricalParameterRanges: js.UndefOr[typings.awsSdk.forecastserviceMod.CategoricalParameterRanges] = js.undefined
   
   /**
     * Specifies the tunable range for each continuous hyperparameter.
     */
-  var ContinuousParameterRanges: js.UndefOr[typings.awsSdk.forecastserviceMod.ContinuousParameterRanges] = js.native
+  var ContinuousParameterRanges: js.UndefOr[typings.awsSdk.forecastserviceMod.ContinuousParameterRanges] = js.undefined
   
   /**
     * Specifies the tunable range for each integer hyperparameter.
     */
-  var IntegerParameterRanges: js.UndefOr[typings.awsSdk.forecastserviceMod.IntegerParameterRanges] = js.native
+  var IntegerParameterRanges: js.UndefOr[typings.awsSdk.forecastserviceMod.IntegerParameterRanges] = js.undefined
 }
 object ParameterRanges {
   

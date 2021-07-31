@@ -2,16 +2,14 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPolicyResponse extends StObject {
   
   /**
     * The policy attached to the private CA as a JSON document.
     */
-  var Policy: js.UndefOr[AWSPolicy] = js.native
+  var Policy: js.UndefOr[AWSPolicy] = js.undefined
 }
 object GetPolicyResponse {
   

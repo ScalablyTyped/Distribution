@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The party(s) that are responsible for covering the payment of this account, and what order should they be applied to the account
   */
-@js.native
-trait AccountCoverage extends BackboneElement {
+trait AccountCoverage
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'priority'.
     */
-  var _priority: js.UndefOr[Element] = js.native
+  var _priority: js.UndefOr[Element] = js.undefined
   
   /**
     * The party(s) that are responsible for covering the payment of this account
     */
-  var coverage: Reference = js.native
+  var coverage: Reference
   
   /**
     * The priority of the coverage in the context of this account
     */
-  var priority: js.UndefOr[positiveInt] = js.native
+  var priority: js.UndefOr[positiveInt] = js.undefined
 }
 object AccountCoverage {
   

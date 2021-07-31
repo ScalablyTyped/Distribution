@@ -2,13 +2,11 @@ package typings.dbJs.DbJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescableQuery[T] extends StObject {
   
-  def desc(): DescQuery[T] = js.native
+  def desc(): DescQuery[T]
 }
 object DescableQuery {
   
@@ -19,7 +17,7 @@ object DescableQuery {
   }
   
   @scala.inline
-  implicit class DescableQueryMutableBuilder[Self <: DescableQuery[_], T] (val x: Self with DescableQuery[T]) extends AnyVal {
+  implicit class DescableQueryMutableBuilder[Self <: DescableQuery[?], T] (val x: Self & DescableQuery[T]) extends AnyVal {
     
     @scala.inline
     def setDesc(value: () => DescQuery[T]): Self = StObject.set(x, "desc", js.Any.fromFunction0(value))

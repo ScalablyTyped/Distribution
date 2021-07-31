@@ -9,13 +9,15 @@ import typings.stylableCore.stylableProcessorMod.StylableMeta
 import typings.stylableCore.typesMod.ModuleResolver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createInfraStructureMod {
   
-  @JSImport("@stylable/core/cjs/create-infra-structure", "createInfrastructure")
+  @JSImport("@stylable/core/cjs/create-infra-structure", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def createInfrastructure(
     projectRoot: String,
     fileSystem: MinimalFS,
@@ -26,14 +28,14 @@ object createInfraStructureMod {
     resolveModule: js.UndefOr[ModuleResolver],
     cssParser: js.UndefOr[CssParser],
     createDiagnostics: js.UndefOr[js.Function1[/* from */ String, Diagnostics]]
-  ): StylableInfrastructure = js.native
+  ): StylableInfrastructure = (^.asInstanceOf[js.Dynamic].applyDynamic("createInfrastructure")(projectRoot.asInstanceOf[js.Any], fileSystem.asInstanceOf[js.Any], onProcess.asInstanceOf[js.Any], resolveOptions.asInstanceOf[js.Any], resolveNamespace.asInstanceOf[js.Any], timedCacheOptions.asInstanceOf[js.Any], resolveModule.asInstanceOf[js.Any], cssParser.asInstanceOf[js.Any], createDiagnostics.asInstanceOf[js.Any])).asInstanceOf[StylableInfrastructure]
   
   @js.native
   trait StylableInfrastructure extends StObject {
     
     var fileProcessor: FileProcessor[StylableMeta] = js.native
     
-    def resolvePath(context: js.UndefOr[scala.Nothing], path: String): String = js.native
     def resolvePath(context: String, path: String): String = js.native
+    def resolvePath(context: Unit, path: String): String = js.native
   }
 }

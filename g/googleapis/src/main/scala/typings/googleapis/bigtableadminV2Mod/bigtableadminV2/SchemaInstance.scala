@@ -3,14 +3,12 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of Bigtable Tables and the resources that serve them. All
   * tables in an instance are served from all Clusters in the instance.
   */
-@js.native
 trait SchemaInstance extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaInstance extends StObject {
     * changed at any time, but should be kept globally unique to avoid
     * confusion.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Labels are a flexible and lightweight mechanism for organizing cloud
@@ -31,23 +29,23 @@ trait SchemaInstance extends StObject {
     * labels can be associated with a given resource. * Keys and values must
     * both be under 128 bytes.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * (`OutputOnly`) The unique name of the instance. Values are of the form
     * `projects/&lt;project&gt;/instances/a-z+[a-z0-9]`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * (`OutputOnly`) The current state of the instance.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the instance. Defaults to `PRODUCTION`.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaInstance {
   

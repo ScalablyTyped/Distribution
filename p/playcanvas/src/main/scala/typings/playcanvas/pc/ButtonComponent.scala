@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,7 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param entity - The Entity that this Component is attached to.
   */
 @js.native
-trait ButtonComponent extends Component {
+trait ButtonComponent
+  extends StObject
+     with Component {
   
   /**
     * If set to false, the button will be visible but will not respond to hover or touch interactions.

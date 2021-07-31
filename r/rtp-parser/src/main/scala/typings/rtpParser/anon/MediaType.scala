@@ -5,23 +5,21 @@ import typings.rtpParser.rtpParserStrings.AV
 import typings.rtpParser.rtpParserStrings.MP2T
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaType extends StObject {
   
-  var clockRate: `90000` = js.native
+  var clockRate: `90000`
   
-  var mediaType: AV = js.native
+  var mediaType: AV
   
-  var name: MP2T = js.native
+  var name: MP2T
 }
 object MediaType {
   
   @scala.inline
-  def apply(clockRate: `90000`, mediaType: AV, name: MP2T): MediaType = {
-    val __obj = js.Dynamic.literal(clockRate = clockRate.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(): MediaType = {
+    val __obj = js.Dynamic.literal(clockRate = 90000, mediaType = "AV", name = "MP2T")
     __obj.asInstanceOf[MediaType]
   }
   

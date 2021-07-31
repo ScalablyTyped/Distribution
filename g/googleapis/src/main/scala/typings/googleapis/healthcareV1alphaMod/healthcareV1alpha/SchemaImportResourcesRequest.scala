@@ -2,7 +2,6 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * client supplied IDs. The import operation is not transactional. The server
   * will not roll back any committed changes upon partial failures.
   */
-@js.native
 trait SchemaImportResourcesRequest extends StObject {
   
   /**
     * The content structure in the source location. The default is BUNDLE.
     */
-  var contentStructure: js.UndefOr[String] = js.native
+  var contentStructure: js.UndefOr[String] = js.undefined
   
   /**
     * The Cloud Storage bucket/folder path to write files that contain error
     * details.
     */
-  var gcsErrorLocation: js.UndefOr[SchemaGcsDataLocation] = js.native
+  var gcsErrorLocation: js.UndefOr[SchemaGcsDataLocation] = js.undefined
   
   /**
     * Cloud Storage source data locations. Each Cloud Storage object should be
     * a text file that contains newline delimited JSON structures conforming to
     * FHIR standard.
     */
-  var gcsSourceLocation: js.UndefOr[SchemaGcsDataLocation] = js.native
+  var gcsSourceLocation: js.UndefOr[SchemaGcsDataLocation] = js.undefined
 }
 object SchemaImportResourcesRequest {
   

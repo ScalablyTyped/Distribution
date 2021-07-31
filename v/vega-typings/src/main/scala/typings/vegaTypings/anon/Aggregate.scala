@@ -3,19 +3,19 @@ package typings.vegaTypings.anon
 import typings.vegaTypings.markMod.Facet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Aggregate extends Facet {
+trait Aggregate
+  extends StObject
+     with Facet {
   
-  var aggregate: js.UndefOr[As] = js.native
+  var aggregate: js.UndefOr[As] = js.undefined
   
-  var data: String = js.native
+  var data: String
   
-  var groupby: String | js.Array[String] = js.native
+  var groupby: String | js.Array[String]
   
-  var name: String = js.native
+  var name: String
 }
 object Aggregate {
   

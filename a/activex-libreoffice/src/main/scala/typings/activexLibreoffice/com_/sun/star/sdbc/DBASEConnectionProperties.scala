@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,11 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbc.XDriverManager
   * @see com.sun.star.sdbc.FILEConnectionProperties
   */
-@js.native
-trait DBASEConnectionProperties extends FILEConnectionProperties {
+trait DBASEConnectionProperties
+  extends StObject
+     with FILEConnectionProperties {
   
   /** `TRUE` when deleted rows should be shown, otherwise `FALSE` */
-  var ShowDeleted: Boolean = js.native
+  var ShowDeleted: Boolean
 }
 object DBASEConnectionProperties {
   

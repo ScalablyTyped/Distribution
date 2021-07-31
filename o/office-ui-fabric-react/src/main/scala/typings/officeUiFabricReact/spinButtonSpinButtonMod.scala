@@ -7,7 +7,6 @@ import typings.officeUiFabricReact.spinButtonTypesMod.ISpinButtonProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spinButtonSpinButtonMod {
@@ -19,19 +18,25 @@ object spinButtonSpinButtonMod {
   object KeyboardSpinDirection extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[KeyboardSpinDirection with Double] = js.native
+    def apply(value: Double): js.UndefOr[KeyboardSpinDirection & Double] = js.native
     
     @js.native
-    sealed trait down extends KeyboardSpinDirection
-    /* -1 */ val down: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.down with Double = js.native
+    sealed trait down
+      extends StObject
+         with KeyboardSpinDirection
+    /* -1 */ val down: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.down & Double = js.native
     
     @js.native
-    sealed trait notSpinning extends KeyboardSpinDirection
-    /* 0 */ val notSpinning: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.notSpinning with Double = js.native
+    sealed trait notSpinning
+      extends StObject
+         with KeyboardSpinDirection
+    /* 0 */ val notSpinning: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.notSpinning & Double = js.native
     
     @js.native
-    sealed trait up extends KeyboardSpinDirection
-    /* 1 */ val up: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.up with Double = js.native
+    sealed trait up
+      extends StObject
+         with KeyboardSpinDirection
+    /* 1 */ val up: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.up & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/components/SpinButton/SpinButton", "SpinButton")
@@ -146,6 +151,12 @@ object spinButtonSpinButtonMod {
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MSpinButton(): Unit = js.native
+    
+    /**
+      * Sets focus to the control.
+      */
+    /* CompleteClass */
+    override def focus(): Unit = js.native
   }
   /* static members */
   object SpinButton {
@@ -162,24 +173,23 @@ object spinButtonSpinButtonMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/SpinButton/SpinButton.types.ISpinButtonProps, 'step' | 'min' | 'max' | 'disabled' | 'labelPosition' | 'label' | 'incrementButtonIcon' | 'decrementButtonIcon'>> */
-  @js.native
   trait DefaultProps extends StObject {
     
-    var decrementButtonIcon: IIconProps = js.native
+    var decrementButtonIcon: IIconProps
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var incrementButtonIcon: IIconProps = js.native
+    var incrementButtonIcon: IIconProps
     
-    var label: String = js.native
+    var label: String
     
-    var labelPosition: Position = js.native
+    var labelPosition: Position
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var step: Double = js.native
+    var step: Double
   }
   object DefaultProps {
     
@@ -227,24 +237,23 @@ object spinButtonSpinButtonMod {
     }
   }
   
-  @js.native
   trait ISpinButtonState extends StObject {
     
     /**
       * Is true when the control has focus.
       */
-    var isFocused: Boolean = js.native
+    var isFocused: Boolean
     
     /**
       * keyboard spin direction, used to style the up or down button
       * as active when up/down arrow is pressed
       */
-    var keyboardSpinDirection: KeyboardSpinDirection = js.native
+    var keyboardSpinDirection: KeyboardSpinDirection
     
     /**
       * the value of the spin button
       */
-    var value: String = js.native
+    var value: String
   }
   object ISpinButtonState {
     

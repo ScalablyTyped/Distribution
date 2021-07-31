@@ -3,7 +3,6 @@ package typings.winjs.global.WinJS
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,24 +22,20 @@ object Navigation {
     * @param listener The listener to invoke when the event gets raised.
     * @param capture If true, specifies that capture should be initiated, otherwise false.
     **/
-  @JSGlobal("WinJS.Navigation.addEventListener")
-  @js.native
-  def addEventListener(eventType: String, listener: js.Function): Unit = js.native
-  @JSGlobal("WinJS.Navigation.addEventListener")
-  @js.native
-  def addEventListener(eventType: String, listener: js.Function, capture: Boolean): Unit = js.native
+  @scala.inline
+  def addEventListener(eventType: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addEventListener(eventType: String, listener: js.Function, capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Navigates backwards.
     * @param distance The number of entries to go back into the history.
     * @returns A promise that is completed with a value that indicates whether or not the navigation was successful.
     **/
-  @JSGlobal("WinJS.Navigation.back")
-  @js.native
-  def back(): typings.winjs.WinJS.Promise[Boolean] = js.native
-  @JSGlobal("WinJS.Navigation.back")
-  @js.native
-  def back(distance: Double): typings.winjs.WinJS.Promise[Boolean] = js.native
+  @scala.inline
+  def back(): typings.winjs.WinJS.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("back")().asInstanceOf[typings.winjs.WinJS.Promise[Boolean]]
+  @scala.inline
+  def back(distance: Double): typings.winjs.WinJS.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("back")(distance.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[Boolean]]
   
   //#region Properties
   /**
@@ -66,12 +61,10 @@ object Navigation {
     * @param distance The number of entries to go forward.
     * @returns A promise that is completed with a value that indicates whether or not the navigation was successful.
     **/
-  @JSGlobal("WinJS.Navigation.forward")
-  @js.native
-  def forward(): typings.winjs.WinJS.Promise[Boolean] = js.native
-  @JSGlobal("WinJS.Navigation.forward")
-  @js.native
-  def forward(distance: Double): typings.winjs.WinJS.Promise[Boolean] = js.native
+  @scala.inline
+  def forward(): typings.winjs.WinJS.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("forward")().asInstanceOf[typings.winjs.WinJS.Promise[Boolean]]
+  @scala.inline
+  def forward(distance: Double): typings.winjs.WinJS.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("forward")(distance.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[Boolean]]
   
   /**
     * Gets or sets the navigation history.
@@ -97,12 +90,10 @@ object Navigation {
     * @param initialState A user-defined object that represents the navigation state that may be accessed through state.
     * @returns A promise that is completed with a value that indicates whether or not the navigation was successful (true if successful, otherwise false).
     **/
-  @JSGlobal("WinJS.Navigation.navigate")
-  @js.native
-  def navigate(location: js.Any): typings.winjs.WinJS.Promise[Boolean] = js.native
-  @JSGlobal("WinJS.Navigation.navigate")
-  @js.native
-  def navigate(location: js.Any, initialState: js.Any): typings.winjs.WinJS.Promise[Boolean] = js.native
+  @scala.inline
+  def navigate(location: js.Any): typings.winjs.WinJS.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(location.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[Boolean]]
+  @scala.inline
+  def navigate(location: js.Any, initialState: js.Any): typings.winjs.WinJS.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(location.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Boolean]]
   
   //#endregion Functions
   //#region Events
@@ -110,25 +101,22 @@ object Navigation {
     * Occurs before navigation.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: location, state.
     **/
-  @JSGlobal("WinJS.Navigation.onbeforenavigate")
-  @js.native
-  def onbeforenavigate(eventInfo: CustomEvent[_]): Unit = js.native
+  @scala.inline
+  def onbeforenavigate(eventInfo: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onbeforenavigate")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Occurs after navigation has taken place.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: location, state.
     **/
-  @JSGlobal("WinJS.Navigation.onnavigated")
-  @js.native
-  def onnavigated(eventInfo: CustomEvent[_]): Unit = js.native
+  @scala.inline
+  def onnavigated(eventInfo: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onnavigated")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Occurs when navigation is taking place.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: location, state.
     **/
-  @JSGlobal("WinJS.Navigation.onnavigating")
-  @js.native
-  def onnavigating(eventInfo: CustomEvent[_]): Unit = js.native
+  @scala.inline
+  def onnavigating(eventInfo: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onnavigating")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Removes an event listener from the control.
@@ -136,12 +124,10 @@ object Navigation {
     * @param listener The listener to remove.
     * @param useCapture Specifies whether or not to initiate capture.
     **/
-  @JSGlobal("WinJS.Navigation.removeEventListener")
-  @js.native
-  def removeEventListener(eventType: String, listener: js.Function): Unit = js.native
-  @JSGlobal("WinJS.Navigation.removeEventListener")
-  @js.native
-  def removeEventListener(eventType: String, listener: js.Function, useCapture: Boolean): Unit = js.native
+  @scala.inline
+  def removeEventListener(eventType: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeEventListener(eventType: String, listener: js.Function, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Gets or sets a user-defined object that represents the state associated with the current location.

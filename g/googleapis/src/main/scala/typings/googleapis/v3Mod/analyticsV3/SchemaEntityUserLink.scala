@@ -4,46 +4,44 @@ import typings.googleapis.anon.AccountRef
 import typings.googleapis.anon.Local
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for an Analytics Entity-User Link. Returns permissions that a
   * user has for an entity.
   */
-@js.native
 trait SchemaEntityUserLink extends StObject {
   
   /**
     * Entity for this link. It can be an account, a web property, or a view
     * (profile).
     */
-  var entity: js.UndefOr[AccountRef] = js.native
+  var entity: js.UndefOr[AccountRef] = js.undefined
   
   /**
     * Entity user link ID
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Resource type for entity user link.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Permissions the user has for this entity.
     */
-  var permissions: js.UndefOr[Local] = js.native
+  var permissions: js.UndefOr[Local] = js.undefined
   
   /**
     * Self link for this resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * User reference.
     */
-  var userRef: js.UndefOr[SchemaUserRef] = js.native
+  var userRef: js.UndefOr[SchemaUserRef] = js.undefined
 }
 object SchemaEntityUserLink {
   

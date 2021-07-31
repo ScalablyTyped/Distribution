@@ -2,41 +2,39 @@ package typings.pulumiAws.outputMod.iot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleErrorActionCloudwatchMetric extends StObject {
   
   /**
     * The CloudWatch metric name.
     */
-  var metricName: String = js.native
+  var metricName: String
   
   /**
     * The CloudWatch metric namespace name.
     */
-  var metricNamespace: String = js.native
+  var metricNamespace: String
   
   /**
     * An optional Unix timestamp (http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#about_timestamp).
     */
-  var metricTimestamp: js.UndefOr[String] = js.native
+  var metricTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * The metric unit (supported units can be found here: http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit)
     */
-  var metricUnit: String = js.native
+  var metricUnit: String
   
   /**
     * The CloudWatch metric value.
     */
-  var metricValue: String = js.native
+  var metricValue: String
   
   /**
     * The IAM role ARN that allows access to the CloudWatch metric.
     */
-  var roleArn: String = js.native
+  var roleArn: String
 }
 object TopicRuleErrorActionCloudwatchMetric {
   

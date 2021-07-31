@@ -3,21 +3,19 @@ package typings.cesium.anon
 import typings.cesium.mod.VertexFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BottomRadius extends StObject {
   
-  var bottomRadius: Double = js.native
+  var bottomRadius: Double
   
-  var length: Double = js.native
+  var length: Double
   
-  var slices: js.UndefOr[Double] = js.native
+  var slices: js.UndefOr[Double] = js.undefined
   
-  var topRadius: Double = js.native
+  var topRadius: Double
   
-  var vertexFormat: js.UndefOr[VertexFormat] = js.native
+  var vertexFormat: js.UndefOr[VertexFormat] = js.undefined
 }
 object BottomRadius {
   

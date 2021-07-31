@@ -2,17 +2,15 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hasnextpage extends StObject {
   
-  var end_cursor: js.UndefOr[String] = js.native
+  var end_cursor: js.UndefOr[String] = js.undefined
   
-  var has_next_page: Boolean = js.native
+  var has_next_page: Boolean
   
-  var start_cursor: js.UndefOr[String] = js.native
+  var start_cursor: js.UndefOr[String] = js.undefined
 }
 object Hasnextpage {
   

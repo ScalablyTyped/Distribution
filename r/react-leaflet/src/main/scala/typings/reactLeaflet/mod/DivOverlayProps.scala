@@ -4,24 +4,24 @@ import typings.leaflet.mod.PointExpression
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.leaflet.mod.DivOverlayOptions because var conflicts: pane. Inlined zoomAnimation, className, offset */ @js.native
-trait DivOverlayProps extends MapComponentProps {
+- typings.leaflet.mod.DivOverlayOptions because var conflicts: pane. Inlined zoomAnimation, className, offset */ trait DivOverlayProps
+  extends StObject
+     with MapComponentProps {
   
-  var children: Children = js.native
+  var children: Children
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[PointExpression] = js.native
+  var offset: js.UndefOr[PointExpression] = js.undefined
   
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+  var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var zoomAnimation: js.UndefOr[Boolean] = js.native
+  var zoomAnimation: js.UndefOr[Boolean] = js.undefined
 }
 object DivOverlayProps {
   

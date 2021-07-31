@@ -12,7 +12,7 @@ JsonML parse/stringify function.
 | Keywords           | jsonml, html, xml |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1334 |
+| # downloads        | 1865 |
 | # stars            | 0 |
 
 ## Links

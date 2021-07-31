@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableRadiusRequest extends StObject {
   
   /**
     * The identifier of the directory for which to enable MFA.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * A RadiusSettings object that contains information about the RADIUS server.
     */
-  var RadiusSettings: typings.awsSdk.directoryserviceMod.RadiusSettings = js.native
+  var RadiusSettings: typings.awsSdk.directoryserviceMod.RadiusSettings
 }
 object EnableRadiusRequest {
   

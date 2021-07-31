@@ -3,21 +3,19 @@ package typings.grommet.anon
 import typings.grommet.utilsMod.BorderType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Panel extends StObject {
   
-  var border: js.UndefOr[BorderType] = js.native
+  var border: js.UndefOr[BorderType] = js.undefined
   
-  var heading: js.UndefOr[Level] = js.native
+  var heading: js.UndefOr[Level] = js.undefined
   
-  var hover: js.UndefOr[Heading] = js.native
+  var hover: js.UndefOr[Heading] = js.undefined
   
-  var icons: js.UndefOr[Collapse] = js.native
+  var icons: js.UndefOr[Collapse] = js.undefined
   
-  var panel: js.UndefOr[`4`] = js.native
+  var panel: js.UndefOr[`4`] = js.undefined
 }
 object Panel {
   

@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComboBoxBase extends ComboBoxTextField {
+trait ComboBoxBase
+  extends StObject
+     with ComboBoxTextField {
   
   /**
     * Adds an item to the aggregation named <code>items</code>.

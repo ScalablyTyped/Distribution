@@ -11,21 +11,21 @@ import typings.figma.figmaStrings.SLIDE_OUT
 import typings.figma.figmaStrings.TOP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectionalTransition extends Transition {
+trait DirectionalTransition
+  extends StObject
+     with Transition {
   
-  val direction: LEFT | RIGHT | TOP | BOTTOM = js.native
+  val direction: LEFT | RIGHT | TOP | BOTTOM
   
-  val duration: Double = js.native
+  val duration: Double
   
-  val easing: Easing = js.native
+  val easing: Easing
   
-  val matchLayers: Boolean = js.native
+  val matchLayers: Boolean
   
-  val `type`: MOVE_IN | MOVE_OUT | PUSH | SLIDE_IN | SLIDE_OUT = js.native
+  val `type`: MOVE_IN | MOVE_OUT | PUSH | SLIDE_IN | SLIDE_OUT
 }
 object DirectionalTransition {
   

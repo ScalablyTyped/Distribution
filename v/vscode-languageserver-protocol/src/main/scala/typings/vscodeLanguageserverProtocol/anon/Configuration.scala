@@ -2,16 +2,14 @@ package typings.vscodeLanguageserverProtocol.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configuration extends StObject {
   
   /**
     * The client supports `workspace/configuration` requests.
     */
-  var configuration: js.UndefOr[Boolean] = js.native
+  var configuration: js.UndefOr[Boolean] = js.undefined
 }
 object Configuration {
   

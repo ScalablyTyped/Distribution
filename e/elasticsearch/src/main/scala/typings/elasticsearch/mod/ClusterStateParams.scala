@@ -2,27 +2,27 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClusterStateParams extends GenericParams {
+trait ClusterStateParams
+  extends StObject
+     with GenericParams {
   
-  var allowNoIndices: js.UndefOr[Boolean] = js.native
+  var allowNoIndices: js.UndefOr[Boolean] = js.undefined
   
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
   
-  var flatSettings: js.UndefOr[Boolean] = js.native
+  var flatSettings: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[NameList] = js.native
+  var index: js.UndefOr[NameList] = js.undefined
   
-  var local: js.UndefOr[Boolean] = js.native
+  var local: js.UndefOr[Boolean] = js.undefined
   
-  var masterTimeout: js.UndefOr[TimeSpan] = js.native
+  var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var metric: js.UndefOr[NameList] = js.native
+  var metric: js.UndefOr[NameList] = js.undefined
 }
 object ClusterStateParams {
   

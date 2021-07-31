@@ -10,9 +10,9 @@ Catch insensitive, inconsiderate writing
 | ------------------ | :-------------: |
 | Full name          | alex |
 | Keywords           | cli-app, cli, bin, alex, equal, race, religion, sex, orientation, identity, gender, sensitive, insensitive, neutral, writing, language, english |
-| # releases         | 8 |
-| # dependents       | 17 |
-| # downloads        | 689889 |
+| # releases         | 9 |
+| # dependents       | 18 |
+| # downloads        | 771416 |
 | # stars            | 5 |
 
 ## Links

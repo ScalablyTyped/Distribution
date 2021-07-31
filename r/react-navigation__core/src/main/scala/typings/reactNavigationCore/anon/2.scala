@@ -3,19 +3,17 @@ package typings.reactNavigationCore.anon
 import typings.reactNavigationCore.reactNavigationCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
-  var canPreventDefault: `true` = js.native
+  var canPreventDefault: `true`
 }
 object `2` {
   
   @scala.inline
-  def apply(canPreventDefault: `true`): `2` = {
-    val __obj = js.Dynamic.literal(canPreventDefault = canPreventDefault.asInstanceOf[js.Any])
+  def apply(): `2` = {
+    val __obj = js.Dynamic.literal(canPreventDefault = true)
     __obj.asInstanceOf[`2`]
   }
   

@@ -3,20 +3,18 @@ package typings.contentfulManagement.anon
 import typings.contentfulManagement.contentfulManagementStrings.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var `type`: Array = js.native
+  var `type`: Array
 }
 object Type {
   
   @scala.inline
-  def apply(`type`: Array): Type = {
+  def apply(): Type = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Array")
     __obj.asInstanceOf[Type]
   }
   

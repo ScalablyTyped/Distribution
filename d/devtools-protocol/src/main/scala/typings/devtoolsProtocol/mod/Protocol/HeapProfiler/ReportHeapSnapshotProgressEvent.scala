@@ -3,17 +3,15 @@ package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportHeapSnapshotProgressEvent extends StObject {
   
-  var done: integer = js.native
+  var done: integer
   
-  var finished: js.UndefOr[Boolean] = js.native
+  var finished: js.UndefOr[Boolean] = js.undefined
   
-  var total: integer = js.native
+  var total: integer
 }
 object ReportHeapSnapshotProgressEvent {
   

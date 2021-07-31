@@ -2,24 +2,22 @@ package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to check entries against lists.
   */
-@js.native
 trait SchemaFindThreatMatchesRequest extends StObject {
   
   /**
     * The client metadata.
     */
-  var client: js.UndefOr[SchemaClientInfo] = js.native
+  var client: js.UndefOr[SchemaClientInfo] = js.undefined
   
   /**
     * The lists and entries to be checked for matches.
     */
-  var threatInfo: js.UndefOr[SchemaThreatInfo] = js.native
+  var threatInfo: js.UndefOr[SchemaThreatInfo] = js.undefined
 }
 object SchemaFindThreatMatchesRequest {
   

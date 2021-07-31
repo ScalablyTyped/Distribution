@@ -2,15 +2,13 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangePasswordOptions extends StObject {
   
-  var connection: String = js.native
+  var connection: String
   
-  var email: String = js.native
+  var email: String
 }
 object ChangePasswordOptions {
   

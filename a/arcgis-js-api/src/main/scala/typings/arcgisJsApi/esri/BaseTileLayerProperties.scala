@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseTileLayerProperties
-  extends LayerProperties
+  extends StObject
+     with LayerProperties
      with ScaleRangeLayerProperties
      with RefreshableLayerProperties
      with BlendLayerProperties {
@@ -17,14 +16,14 @@ trait BaseTileLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html#spatialReference)
     */
-  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * The tiling scheme information for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html#tileInfo)
     */
-  var tileInfo: js.UndefOr[TileInfoProperties] = js.native
+  var tileInfo: js.UndefOr[TileInfoProperties] = js.undefined
 }
 object BaseTileLayerProperties {
   

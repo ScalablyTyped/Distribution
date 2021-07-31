@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * BNFDef...
   */
-@js.native
 trait IBNFDef extends StObject {
   
   /**
@@ -16,28 +14,28 @@ trait IBNFDef extends StObject {
     * >> This parameter is optional.
     * >> The default value is false.
     */
-  var qAggrFunc: js.UndefOr[Boolean] = js.native
+  var qAggrFunc: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Array of token references that all together build up the definition of the current token.
     * If the array is not empty, it means that the definition is a BNF rule (qIsBnfRule is set to true).
     * There are a few exceptions where some BNF rules have an empty array (qBnf is empty).
     */
-  var qBnf: js.Array[Double] = js.native
+  var qBnf: js.Array[Double]
   
   /**
     * If set to true, it means that the definition specifies a literal token.
     * >> This parameter is optional.
     * >> The default value is false.
     */
-  var qBnfLiteral: js.UndefOr[Boolean] = js.native
+  var qBnfLiteral: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, it means that the definition specifies a control statement.
     * >> This parameter is optional.
     * >> The default value is false.
     */
-  var qControlStatement: js.UndefOr[Boolean] = js.native
+  var qControlStatement: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if a script statement, a chart or a script function is deprecated (not recommended to use).
@@ -45,38 +43,38 @@ trait IBNFDef extends StObject {
     * >> This parameter is optional.
     * >> The default value is false.
     */
-  var qDepr: js.UndefOr[Boolean] = js.native
+  var qDepr: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Group of the function.
     */
-  var qFG: FunctionGroupType = js.native
+  var qFG: FunctionGroupType
   
   /**
     * If set to true, it means that the definition is related to a field.
     * >> This parameter is optional.
     * >> The default value is false.
     */
-  var qFieldFlag: js.UndefOr[Boolean] = js.native
+  var qFieldFlag: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Reference identifier to a function described in the documentation.
     * The identifier is stored in the definition of the token containing the function name.
     * Is not used in Qlik Sense.
     */
-  var qHelpId: Double = js.native
+  var qHelpId: Double
   
   /**
     * If set to true, it means that a list of related rule tokens is assigned to qBnf.
     * >> This parameter is optional.
     * >> The default value is false.
     */
-  var qIsBnfRule: js.UndefOr[Boolean] = js.native
+  var qIsBnfRule: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Type of the data.
     */
-  var qMT: MTType = js.native
+  var qMT: MTType
   
   /**
     * Token name.
@@ -85,17 +83,17 @@ trait IBNFDef extends StObject {
     *               an identifier
     *               a literal value
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Number of the current token definition.
     */
-  var qNbr: Double = js.native
+  var qNbr: Double
   
   /**
     * Number of the parent rule definition.    Integer
     */
-  var qPNbr: Double = js.native
+  var qPNbr: Double
   
   /**
     * If set to true, it means that the definition is related to a Qlik Sense function.
@@ -103,20 +101,20 @@ trait IBNFDef extends StObject {
     * >> This parameter is optional.
     * >> The default value is false.
     */
-  var qQvFunc: js.UndefOr[Boolean] = js.native
+  var qQvFunc: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, it means that the definition specifies a script statement.
     * >> This parameter is optional.
     * >> The default value is false.
     */
-  var qScriptStatement: js.UndefOr[Boolean] = js.native
+  var qScriptStatement: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Literal string of the token.
     * Examples: 'Round' and '('.
     */
-  var qStr: String = js.native
+  var qStr: String
 }
 object IBNFDef {
   

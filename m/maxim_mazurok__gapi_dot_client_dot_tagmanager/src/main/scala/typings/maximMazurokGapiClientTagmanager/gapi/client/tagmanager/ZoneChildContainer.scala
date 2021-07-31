@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoneChildContainer extends StObject {
   
   /** The zone's nickname for the child container. */
-  var nickname: js.UndefOr[String] = js.native
+  var nickname: js.UndefOr[String] = js.undefined
   
   /** The child container's public id. */
-  var publicId: js.UndefOr[String] = js.native
+  var publicId: js.UndefOr[String] = js.undefined
 }
 object ZoneChildContainer {
   

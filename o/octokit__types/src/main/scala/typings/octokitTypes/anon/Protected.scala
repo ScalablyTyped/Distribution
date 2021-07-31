@@ -2,21 +2,19 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Protected extends StObject {
   
-  var commit: ShaUrl = js.native
+  var commit: ShaUrl
   
-  var name: String = js.native
+  var name: String
   
-  var `protected`: Boolean = js.native
+  var `protected`: Boolean
   
-  var protection: Enabled = js.native
+  var protection: Enabled
   
-  var protection_url: String = js.native
+  var protection_url: String
 }
 object Protected {
   

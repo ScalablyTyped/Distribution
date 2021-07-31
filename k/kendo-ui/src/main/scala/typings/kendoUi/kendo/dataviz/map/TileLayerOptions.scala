@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.dataviz.map
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileLayerOptions extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var subdomains: js.UndefOr[js.Any] = js.native
+  var subdomains: js.UndefOr[js.Any] = js.undefined
   
-  var tileSize: js.UndefOr[Double] = js.native
+  var tileSize: js.UndefOr[Double] = js.undefined
   
-  var urlTemplate: js.UndefOr[String] = js.native
+  var urlTemplate: js.UndefOr[String] = js.undefined
 }
 object TileLayerOptions {
   

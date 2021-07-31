@@ -4,17 +4,15 @@ import typings.typeorm.anon.Cnt
 import typings.typeorm.relationCountRelationCountAttributeMod.RelationCountAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relationCountRelationCountLoadResultMod {
   
-  @js.native
   trait RelationCountLoadResult extends StObject {
     
-    var relationCountAttribute: RelationCountAttribute = js.native
+    var relationCountAttribute: RelationCountAttribute
     
-    var results: js.Array[Cnt] = js.native
+    var results: js.Array[Cnt]
   }
   object RelationCountLoadResult {
     

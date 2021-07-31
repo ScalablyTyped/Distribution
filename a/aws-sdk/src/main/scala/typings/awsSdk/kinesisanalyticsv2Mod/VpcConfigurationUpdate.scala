@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcConfigurationUpdate extends StObject {
   
   /**
     * Describes updates to the array of SecurityGroup IDs used by the VPC configuration.
     */
-  var SecurityGroupIdUpdates: js.UndefOr[SecurityGroupIds] = js.native
+  var SecurityGroupIdUpdates: js.UndefOr[SecurityGroupIds] = js.undefined
   
   /**
     * Describes updates to the array of Subnet IDs used by the VPC configuration.
     */
-  var SubnetIdUpdates: js.UndefOr[SubnetIds] = js.native
+  var SubnetIdUpdates: js.UndefOr[SubnetIds] = js.undefined
   
   /**
     * Describes an update to the ID of the VPC configuration.
     */
-  var VpcConfigurationId: Id = js.native
+  var VpcConfigurationId: Id
 }
 object VpcConfigurationUpdate {
   

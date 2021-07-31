@@ -2,26 +2,24 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FacetResult extends StObject {
   
   /**
     * The key for the facet values. This is the same as the DocumentAttributeKey provided in the query.
     */
-  var DocumentAttributeKey: js.UndefOr[typings.awsSdk.kendraMod.DocumentAttributeKey] = js.native
+  var DocumentAttributeKey: js.UndefOr[typings.awsSdk.kendraMod.DocumentAttributeKey] = js.undefined
   
   /**
     * An array of key/value pairs, where the key is the value of the attribute and the count is the number of documents that share the key value.
     */
-  var DocumentAttributeValueCountPairs: js.UndefOr[DocumentAttributeValueCountPairList] = js.native
+  var DocumentAttributeValueCountPairs: js.UndefOr[DocumentAttributeValueCountPairList] = js.undefined
   
   /**
     * The data type of the facet value. This is the same as the type defined for the index field when it was created.
     */
-  var DocumentAttributeValueType: js.UndefOr[typings.awsSdk.kendraMod.DocumentAttributeValueType] = js.native
+  var DocumentAttributeValueType: js.UndefOr[typings.awsSdk.kendraMod.DocumentAttributeValueType] = js.undefined
 }
 object FacetResult {
   

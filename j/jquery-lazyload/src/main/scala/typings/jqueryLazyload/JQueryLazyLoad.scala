@@ -2,35 +2,33 @@ package typings.jqueryLazyload
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryLazyLoad {
   
-  @js.native
   trait Options extends StObject {
     
-    var appear: js.UndefOr[(js.Function2[/* elementsLeft */ Double, /* options */ this.type, Unit]) | Null] = js.native
+    var appear: js.UndefOr[(js.Function2[/* elementsLeft */ Double, /* options */ this.type, Unit]) | Null] = js.undefined
     
-    var container: js.UndefOr[JQuery] = js.native
+    var container: js.UndefOr[JQuery] = js.undefined
     
-    var data_attribute: js.UndefOr[String] = js.native
+    var data_attribute: js.UndefOr[String] = js.undefined
     
-    var effect: js.UndefOr[String] = js.native
+    var effect: js.UndefOr[String] = js.undefined
     
-    var event: js.UndefOr[String] = js.native
+    var event: js.UndefOr[String] = js.undefined
     
-    var failure_limit: js.UndefOr[Double] = js.native
+    var failure_limit: js.UndefOr[Double] = js.undefined
     
     var load: js.UndefOr[
         js.Function2[/* elementsLeft */ js.UndefOr[Double], /* options */ js.UndefOr[this.type], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var skip_invisible: js.UndefOr[Boolean] = js.native
+    var skip_invisible: js.UndefOr[Boolean] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

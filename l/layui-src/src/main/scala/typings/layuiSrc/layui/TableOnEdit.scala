@@ -4,23 +4,21 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableOnEdit extends StObject {
   
-  var data: js.Object = js.native
+  var data: js.Object
   
-  def del(): Unit = js.native
+  def del(): Unit
   
-  var field: String = js.native
+  var field: String
   
-  var tr: JQuery[HTMLElement] = js.native
+  var tr: JQuery[HTMLElement]
   
-  def update(fields: js.Object): Unit = js.native
+  def update(fields: js.Object): Unit
   
-  var value: String = js.native
+  var value: String
 }
 object TableOnEdit {
   

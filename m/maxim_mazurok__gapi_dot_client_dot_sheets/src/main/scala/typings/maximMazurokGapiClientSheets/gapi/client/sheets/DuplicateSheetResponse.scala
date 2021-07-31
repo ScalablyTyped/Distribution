@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DuplicateSheetResponse extends StObject {
   
   /** The properties of the duplicate sheet. */
-  var properties: js.UndefOr[SheetProperties] = js.native
+  var properties: js.UndefOr[SheetProperties] = js.undefined
 }
 object DuplicateSheetResponse {
   

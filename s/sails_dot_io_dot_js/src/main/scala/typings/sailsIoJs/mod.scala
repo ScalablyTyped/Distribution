@@ -16,21 +16,22 @@ import typings.socketIoClient.SocketIOClientStatic
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(client: SocketIOClientStatic): Client = ^.asInstanceOf[js.Dynamic].apply(client.asInstanceOf[js.Any]).asInstanceOf[Client]
+  
   @JSImport("sails.io.js", JSImport.Namespace)
   @js.native
-  def apply(client: SocketIOClientStatic): Client = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Client extends StObject {
     
-    var sails: ClientSails = js.native
+    var sails: ClientSails
     
-    var socket: Socket = js.native
+    var socket: Socket
   }
   object Client {
     
@@ -57,9 +58,9 @@ object mod {
     var autoConnect: js.UndefOr[Boolean] = js.native
     
     def connect(): Socket = js.native
-    def connect(url: js.UndefOr[scala.Nothing], config: ConnectConfig): Socket = js.native
     def connect(url: String): Socket = js.native
     def connect(url: String, config: ConnectConfig): Socket = js.native
+    def connect(url: Unit, config: ConnectConfig): Socket = js.native
     
     // All logs are disabled when `io.sails.environment = 'production'`
     var environment: js.UndefOr[production | String] = js.native
@@ -93,10 +94,9 @@ object mod {
     var useCORSRouteToGetCookie: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
   trait ConnectConfig extends StObject {
     
-    var initialConnectionHeaders: js.UndefOr[InitialConnectionHeaders] = js.native
+    var initialConnectionHeaders: js.UndefOr[InitialConnectionHeaders] = js.undefined
   }
   object ConnectConfig {
     
@@ -121,10 +121,9 @@ object mod {
   
   type Headers = StringDictionary[String]
   
-  @js.native
   trait InitialConnectionHeaders extends StObject {
     
-    var nosession: js.UndefOr[Boolean] = js.native
+    var nosession: js.UndefOr[Boolean] = js.undefined
   }
   object InitialConnectionHeaders {
     
@@ -145,20 +144,19 @@ object mod {
     }
   }
   
-  @js.native
   trait JWR extends StObject {
     
-    var body: js.Any = js.native
+    var body: js.Any
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    def pipe(): Error = js.native
+    def pipe(): Error
     
-    var statusCode: Double = js.native
+    var statusCode: Double
     
-    def toPOJO(): Body = js.native
+    def toPOJO(): Body
   }
   object JWR {
     
@@ -196,18 +194,17 @@ object mod {
   
   type RequestCallback = js.Function2[/* body */ js.Any, /* jwr */ JWR, js.Any]
   
-  @js.native
   trait RequestOptions extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object RequestOptions {
     
@@ -249,16 +246,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SDKInfo extends StObject {
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var platform: js.UndefOr[browser | node] = js.native
+    var platform: js.UndefOr[browser | node] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
-    var versionString: js.UndefOr[String] = js.native
+    var versionString: js.UndefOr[String] = js.undefined
   }
   object SDKInfo {
     
@@ -316,19 +312,19 @@ object mod {
     
     def mightBeAboutToAutoConnect(): Boolean = js.native
     
-    def off(event: String, cb: js.Function0[_]): Socket = js.native
+    def off(event: String, cb: js.Function0[js.Any]): Socket = js.native
     
-    def on(event: String, cb: js.Function1[/* repeated */ js.Any, _]): Socket = js.native
+    def on(event: String, cb: js.Function1[/* repeated */ js.Any, js.Any]): Socket = js.native
     @JSName("on")
-    def on_connect(event: connect, cb: js.Function0[_]): Socket = js.native
+    def on_connect(event: connect, cb: js.Function0[js.Any]): Socket = js.native
     @JSName("on")
-    def on_disconnect(event: disconnect, cb: js.Function0[_]): Socket = js.native
+    def on_disconnect(event: disconnect, cb: js.Function0[js.Any]): Socket = js.native
     @JSName("on")
-    def on_error(event: error, cb: js.Function1[/* err */ js.Any, _]): Socket = js.native
+    def on_error(event: error, cb: js.Function1[/* err */ js.Any, js.Any]): Socket = js.native
     @JSName("on")
-    def on_reconnect(event: reconnect, cb: js.Function2[/* transport */ String, /* numAttempts */ Double, _]): Socket = js.native
+    def on_reconnect(event: reconnect, cb: js.Function2[/* transport */ String, /* numAttempts */ Double, js.Any]): Socket = js.native
     @JSName("on")
-    def on_reconnecting(event: reconnecting, cb: js.Function1[/* numAttempts */ Double, _]): Socket = js.native
+    def on_reconnecting(event: reconnecting, cb: js.Function1[/* numAttempts */ Double, js.Any]): Socket = js.native
     
     def post(url: String): Unit = js.native
     def post(url: String, cb: RequestCallback): Unit = js.native

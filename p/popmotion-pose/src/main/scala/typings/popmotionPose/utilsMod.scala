@@ -5,16 +5,17 @@ import typings.std.DOMRect
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("popmotion-pose/lib/dom/utils", "measureWithoutTransform")
+  @JSImport("popmotion-pose/lib/dom/utils", JSImport.Namespace)
   @js.native
-  def measureWithoutTransform(element: HTMLElement): DOMRect = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("popmotion-pose/lib/dom/utils", "resolveProp")
-  @js.native
-  def resolveProp(target: js.Any, props: StringDictionary[js.Any]): js.Any = js.native
+  @scala.inline
+  def measureWithoutTransform(element: HTMLElement): DOMRect = ^.asInstanceOf[js.Dynamic].applyDynamic("measureWithoutTransform")(element.asInstanceOf[js.Any]).asInstanceOf[DOMRect]
+  
+  @scala.inline
+  def resolveProp(target: js.Any, props: StringDictionary[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProp")(target.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

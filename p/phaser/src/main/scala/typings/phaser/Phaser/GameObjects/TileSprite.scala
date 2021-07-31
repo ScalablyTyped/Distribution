@@ -23,7 +23,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -50,7 +49,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait TileSprite
-  extends GameObject
+  extends StObject
+     with GameObject
      with Alpha
      with BlendMode
      with ComputedSize
@@ -150,9 +150,9 @@ trait TileSprite
     * @param y The y position of this sprite's tiling texture.
     */
   def setTilePosition(): this.type = js.native
-  def setTilePosition(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setTilePosition(x: Double): this.type = js.native
   def setTilePosition(x: Double, y: Double): this.type = js.native
+  def setTilePosition(x: Unit, y: Double): this.type = js.native
   
   /**
     * Sets {@link Phaser.GameObjects.TileSprite#tileScaleX} and {@link Phaser.GameObjects.TileSprite#tileScaleY}.
@@ -160,9 +160,9 @@ trait TileSprite
     * @param y The vertical scale of the tiling texture. If not given it will use the `x` value. Default x.
     */
   def setTileScale(): this.type = js.native
-  def setTileScale(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setTileScale(x: Double): this.type = js.native
   def setTileScale(x: Double, y: Double): this.type = js.native
+  def setTileScale(x: Unit, y: Double): this.type = js.native
   
   /**
     * The horizontal scroll position of the Tile Sprite.

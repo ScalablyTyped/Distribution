@@ -2,14 +2,12 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteableMetadata extends StObject {
   
   /** Number value of the EXIF Orientation header, if present */
-  var orientation: js.UndefOr[Double] = js.native
+  var orientation: js.UndefOr[Double] = js.undefined
 }
 object WriteableMetadata {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A method that will handle the splitter's client events concerning manipulations with a pane.
   */
-@js.native
-trait ASPxClientSplitterPaneEventArgs extends ASPxClientEventArgs {
+trait ASPxClientSplitterPaneEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the pane object related to the event.
     */
-  var pane: ASPxClientSplitterPane = js.native
+  var pane: ASPxClientSplitterPane
 }
 object ASPxClientSplitterPaneEventArgs {
   

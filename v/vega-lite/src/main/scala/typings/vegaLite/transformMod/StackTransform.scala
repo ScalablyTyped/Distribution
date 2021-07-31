@@ -7,22 +7,22 @@ import typings.vegaLite.vegaLiteStrings.normalize
 import typings.vegaLite.vegaLiteStrings.zero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StackTransform extends Transform {
+trait StackTransform
+  extends StObject
+     with Transform {
   
   /**
     * Output field names. This can be either a string or an array of strings with two elements denoting the name for the fields for stack start and stack end respectively.
     * If a single string(e.g., `"val"`) is provided, the end field will be `"val_end"`.
     */
-  var as: FieldName | (js.Tuple2[FieldName, FieldName]) = js.native
+  var as: FieldName | (js.Tuple2[FieldName, FieldName])
   
   /**
     * The data fields to group by.
     */
-  var groupby: js.Array[FieldName] = js.native
+  var groupby: js.Array[FieldName]
   
   /**
     * Mode for stacking marks. One of `"zero"` (default), `"center"`, or `"normalize"`.
@@ -30,17 +30,17 @@ trait StackTransform extends Transform {
     *
     * __Default value:__ `"zero"`
     */
-  var offset: js.UndefOr[zero | center | normalize] = js.native
+  var offset: js.UndefOr[zero | center | normalize] = js.undefined
   
   /**
     * Field that determines the order of leaves in the stacked charts.
     */
-  var sort: js.UndefOr[js.Array[SortField]] = js.native
+  var sort: js.UndefOr[js.Array[SortField]] = js.undefined
   
   /**
     * The field which is stacked.
     */
-  var stack: FieldName = js.native
+  var stack: FieldName
 }
 object StackTransform {
   

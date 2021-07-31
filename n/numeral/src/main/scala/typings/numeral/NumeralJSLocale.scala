@@ -5,19 +5,17 @@ import typings.numeral.anon.Decimal
 import typings.numeral.anon.Symbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumeralJSLocale extends StObject {
   
-  var abbreviations: Billion = js.native
+  var abbreviations: Billion
   
-  var currency: Symbol = js.native
+  var currency: Symbol
   
-  var delimiters: Decimal = js.native
+  var delimiters: Decimal
   
-  def ordinal(num: Double): String = js.native
+  def ordinal(num: Double): String
 }
 object NumeralJSLocale {
   

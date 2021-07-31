@@ -10,9 +10,9 @@ A Snapshot testing library designed for Mocha and Chai users
 | ------------------ | :-------------: |
 | Full name          | chai-snapshot-matcher |
 | Keywords           | chai, mocha, snapshot, test, regression, matcher |
-| # releases         | 10 |
+| # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 7983 |
+| # downloads        | 17949 |
 | # stars            | 0 |
 
 ## Links

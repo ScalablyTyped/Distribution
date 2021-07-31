@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientPoly.gapi.client.poly
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsersResource extends StObject {
   
-  var assets: AssetsResource = js.native
+  var assets: AssetsResource
   
-  var likedassets: LikedassetsResource = js.native
+  var likedassets: LikedassetsResource
 }
 object UsersResource {
   

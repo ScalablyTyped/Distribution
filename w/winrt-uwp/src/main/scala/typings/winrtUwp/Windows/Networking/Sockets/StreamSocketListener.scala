@@ -9,14 +9,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.connectionreceived
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports listening for an incoming network connection using a TCP stream socket or Bluetooth RFCOMM. */
 @js.native
 trait StreamSocketListener extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_connectionreceived(
     `type`: connectionreceived,
@@ -81,12 +80,12 @@ trait StreamSocketListener extends StObject {
   var information: StreamSocketListenerInformation = js.native
   
   /** An event that indicates that a connection was received on the StreamSocketListener object. */
-  def onconnectionreceived(ev: StreamSocketListenerConnectionReceivedEventArgs with WinRTEvent[StreamSocketListener]): Unit = js.native
+  def onconnectionreceived(ev: StreamSocketListenerConnectionReceivedEventArgs & WinRTEvent[StreamSocketListener]): Unit = js.native
   /** An event that indicates that a connection was received on the StreamSocketListener object. */
   @JSName("onconnectionreceived")
   var onconnectionreceived_Original: TypedEventHandler[StreamSocketListener, StreamSocketListenerConnectionReceivedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_connectionreceived(
     `type`: connectionreceived,

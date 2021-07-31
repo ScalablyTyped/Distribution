@@ -5,7 +5,6 @@ import typings.reactSwf.mod.rswf.ReactSWF
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* static members */
@@ -15,28 +14,28 @@ object mod {
   @JSImport("react-swf", JSImport.Namespace)
   @js.native
   class ^ () extends ReactSWF
+  @JSImport("react-swf", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Returns installed Flash Player version. Result is cached.
     * Must not be called in a non-browser environment.
     * @return {?string} 'X.Y.Z'-version or null.
     */
-  @JSImport("react-swf", "getFPVersion")
-  @js.native
-  def getFPVersion(): String = js.native
+  @scala.inline
+  def getFPVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFPVersion")().asInstanceOf[String]
   
   /**
     * Returns if installed Flash Player meets version requirement.
     * Must not be called in a non-browser environment.
     * @return {boolean} true if supported
     */
-  @JSImport("react-swf", "isFPVersionSupported")
-  @js.native
-  def isFPVersionSupported(versionString: String): Boolean = js.native
+  @scala.inline
+  def isFPVersionSupported(versionString: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFPVersionSupported")(versionString.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   object rswf {
     
-    @js.native
     trait Props extends StObject {
       
       /**
@@ -44,22 +43,22 @@ object mod {
         * Default centers the movie in the browser window and crops edges if the browser window is smaller than the movie.
         * l (left), r (right), and t (top) align the movie along the corresponding edge of the browser window and crop the remaining three sides as needed.
         */
-      var align: js.UndefOr[String] = js.native
+      var align: js.UndefOr[String] = js.undefined
       
       /**
         * Setting this value to true allows the SWF file to enter full screen mode via ActionScript. For more information, see Exploring full screen mode in Flash Player. If this attribute is omitted, the default value is false.
         */
-      var allowFullScreen: js.UndefOr[Boolean] = js.native
+      var allowFullScreen: js.UndefOr[Boolean] = js.undefined
       
       /**
         * [base directory] or [URL]. Specifies the base directory or URL used to resolve all relative path statements in the SWF file. This attribute is helpful when your SWF file is kept in a different directory from your other files.
         */
-      var base: js.UndefOr[String] = js.native
+      var base: js.UndefOr[String] = js.undefined
       
       /**
         * [hexadecimal RGB value] in the format #RRGGBB. Specifies the background color of the SWF content. Use this attribute to override the background color (Stage color) setting specified in the SWF file. (This attribute does not affect the background color of the HTML page.)
         */
-      var bgcolor: js.UndefOr[String] = js.native
+      var bgcolor: js.UndefOr[String] = js.undefined
       
       /**
         * Variables, defined as a string of key=value pairs, that are passed to the SWF file.
@@ -67,44 +66,44 @@ object mod {
         * Browsers support string sizes of up to 64 KB (65535 bytes) in length.
         * For more information on using flashvars, see Using FlashVars to pass variables to a SWF (tn_16417).
         */
-      var flashVars: js.UndefOr[js.Object | String] = js.native
+      var flashVars: js.UndefOr[js.Object | String] = js.undefined
       
       /**
         *  Possible values: portrait or landscape. Used to control how full screen SWF content appears on mobile devices that support automatic screen rotation, such as phones and tablets. If this attribute is specified, Flash Player uses the specified screen orientation (portrait or landscape) when the SWF is viewed in full screen mode. It doesn't matter how the device is oriented. If this attribute is not specified, orientation of content in full screen mode follows the screen orientation used by the browser.
         */
-      var fullScreenAspectRatio: js.UndefOr[String] = js.native
+      var fullScreenAspectRatio: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies the height of the SWF content in either pixels or percentage of browser window.
         */
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
       /**
         * (attribute for OBJECT tag) and name (attribute for EMBED tag) - SWF file identifier. Identifies the SWF file to the web browser, allowing browser scripting languages (for example, JavaScript) to reference the SWF content. For cross-browser compatibility, make sure that the id and name are set to the same value.
         */
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies whether a timeline-based SWF file repeats indefinitely or stops when it reaches the last frame. If this attribute is omitted, the default value is true.
         */
-      var loop: js.UndefOr[Boolean] = js.native
+      var loop: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Specifies if movie playback controls are available in the Flash Player context menu.
         * true displays a full menu that provides expanded movie playback controls (for example, Zoom, Quality, Play, Loop, Rewind, Forward, Back).
         * false displays a menu that hides movie playback controls (for example, Zoom, Quality, Play, Loop, Rewind, Forward, Back). This attribute is useful for SWF content that does not rely on the Timeline, such as content controlled entirely by ActionScript. The short menu includes "Settings" and "About Flash Player" menu items.
         */
-      var menu: js.UndefOr[Boolean] = js.native
+      var menu: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Specifies whether a timeline-based SWF file begins playing immediately on loading in the browser. If this attribute is omitted, the default value is true.
         */
-      var play: js.UndefOr[Boolean] = js.native
+      var play: js.UndefOr[Boolean] = js.undefined
       
       /**
         *  Identifies the location of the Flash Player plug-in so that the user can download it if it is not already installed.
         */
-      var pluginspage: js.UndefOr[String] = js.native
+      var pluginspage: js.UndefOr[String] = js.undefined
       
       /**
         * Possible values: low, autolow, autohigh, medium, high, best. Specifies the display list Stage rendering quality. Setting the Stage.quality property via ActionScript overrides this value.
@@ -115,14 +114,14 @@ object mod {
         * high favors appearance over playback speed and always applies anti-aliasing. If the movie does not contain animation, bitmaps are smoothed; if the movie has animation, bitmaps are not smoothed.
         * best provides the best display quality and does not consider playback speed. All output is anti-aliased and all bitmaps are smoothed.
         */
-      var quality: js.UndefOr[String] = js.native
+      var quality: js.UndefOr[String] = js.undefined
       
       /**
         * Possible values: l, t, r, tl, tr.
         * l, r, and t align the movie along the left, right, or top edge of the browser window and crop the remaining sides as needed.
         * tl and tr align the movie to the upper-left and top upper-corner of the browser window and crop the bottom and remaining side as necessary.
         */
-      var salign: js.UndefOr[String] = js.native
+      var salign: js.UndefOr[String] = js.undefined
       
       /**
         *  Possible values: showall, noborder, exactfit, noscale. Specifies how Flash Player scales SWF content to fit the pixel area specified by the OBJECT or EMBED tag.
@@ -131,17 +130,17 @@ object mod {
         *  exactfit makes the entire SWF file visible in the specified area without trying to preserve the original aspect ratio. Distortion can occur.
         *  noscale prevents the SWF file from scaling to fit the area of the OBJECT or EMBED tag. Cropping can occur.
         */
-      var scale: js.UndefOr[String] = js.native
+      var scale: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies the source location (URL) of the SWF file to load.
         */
-      var src: String = js.native
+      var src: String
       
       /**
         * Specifies the width of the SWF content in either pixels or percentage of browser window.
         */
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
       
       /**
         * Possible values: window, direct, opaque, transparent, gpu. Sets the Window Mode property of the SWF file for transparency, layering, positioning, and rendering in the browser. If this attribute is omitted, the default value is "window". For more information, see Using Window Mode (wmode) values below.
@@ -151,7 +150,7 @@ object mod {
         * transparent - The SWF content is layered together with other HTML elements on the page. The SWF file background color (Stage color) is transparent. HTML elements beneath the SWF file are visible through any transparent areas of the SWF, with alpha blending. This option reduces playback performance compared to wmode=window or wmode=direct.
         * gpu - Use additional hardware acceleration on some Internet-connected TVs and mobile devices. In contrast to other wmode values, pixel fidelity for display list graphics is not guaranteed. Otherwise, this value is similar to wmode=direct.
         */
-      var wmode: js.UndefOr[String] = js.native
+      var wmode: js.UndefOr[String] = js.undefined
     }
     object Props {
       
@@ -283,7 +282,6 @@ object mod {
       def getFPDOMNode(): Node = js.native
     }
     
-    @js.native
     trait State extends StObject
   }
   

@@ -10,9 +10,9 @@ fast-csv parsing package
 | ------------------ | :-------------: |
 | Full name          | @fast-csv/parse |
 | Keywords           | csv, parse, fast-csv, parser |
-| # releases         | 15 |
-| # dependents       | 4 |
-| # downloads        | 1466354 |
+| # releases         | 19 |
+| # dependents       | 6 |
+| # downloads        | 4665831 |
 | # stars            | 0 |
 
 ## Links

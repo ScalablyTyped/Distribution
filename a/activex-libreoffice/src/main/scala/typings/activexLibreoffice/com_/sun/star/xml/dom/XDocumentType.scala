@@ -3,47 +3,47 @@ package typings.activexLibreoffice.com_.sun.star.xml.dom
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XDocumentType extends XNode {
+trait XDocumentType
+  extends StObject
+     with XNode {
   
   /** A NamedNodeMap containing the general entities, both external and internal, declared in the DTD. */
-  val Entities: XNamedNodeMap = js.native
+  val Entities: XNamedNodeMap
   
   /** The internal subset as a string, or null if there is none. */
-  val InternalSubset: String = js.native
+  val InternalSubset: String
   
   /** The name of DTD; i.e., the name immediately following the DOCTYPE keyword. */
-  val Name: String = js.native
+  val Name: String
   
   /** A NamedNodeMap containing the notations declared in the DTD. */
-  val Notations: XNamedNodeMap = js.native
+  val Notations: XNamedNodeMap
   
   /** The public identifier of the external subset. */
-  val PublicId: String = js.native
+  val PublicId: String
   
   /** The system identifier of the external subset. */
-  val SystemId: String = js.native
+  val SystemId: String
   
   /** A NamedNodeMap containing the general entities, both external and internal, declared in the DTD. */
-  def getEntities(): XNamedNodeMap = js.native
+  def getEntities(): XNamedNodeMap
   
   /** The internal subset as a string, or null if there is none. */
-  def getInternalSubset(): String = js.native
+  def getInternalSubset(): String
   
   /** The name of DTD; i.e., the name immediately following the DOCTYPE keyword. */
-  def getName(): String = js.native
+  def getName(): String
   
   /** A NamedNodeMap containing the notations declared in the DTD. */
-  def getNotations(): XNamedNodeMap = js.native
+  def getNotations(): XNamedNodeMap
   
   /** The public identifier of the external subset. */
-  def getPublicId(): String = js.native
+  def getPublicId(): String
   
   /** The system identifier of the external subset. */
-  def getSystemId(): String = js.native
+  def getSystemId(): String
 }
 object XDocumentType {
   

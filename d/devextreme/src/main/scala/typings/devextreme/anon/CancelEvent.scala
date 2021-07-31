@@ -6,27 +6,25 @@ import typings.devextreme.mod.DevExpress.ui.dxDraggable
 import typings.devextreme.mod.DevExpress.ui.dxSortable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelEvent extends StObject {
   
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var fromComponent: js.UndefOr[dxSortable | dxDraggable] = js.native
+  var fromComponent: js.UndefOr[dxSortable | dxDraggable] = js.undefined
   
-  var fromData: js.UndefOr[js.Any] = js.native
+  var fromData: js.UndefOr[js.Any] = js.undefined
   
-  var itemData: js.UndefOr[js.Any] = js.native
+  var itemData: js.UndefOr[js.Any] = js.undefined
   
-  var itemElement: js.UndefOr[dxElement] = js.native
+  var itemElement: js.UndefOr[dxElement] = js.undefined
   
-  var toComponent: js.UndefOr[dxSortable | dxDraggable] = js.native
+  var toComponent: js.UndefOr[dxSortable | dxDraggable] = js.undefined
   
-  var toData: js.UndefOr[js.Any] = js.native
+  var toData: js.UndefOr[js.Any] = js.undefined
 }
 object CancelEvent {
   

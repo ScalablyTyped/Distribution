@@ -7,17 +7,17 @@ import typings.openfin.openfinStrings.disconnected
 import typings.openfin.openfinStrings.externalapplication
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object externalApplicationMod {
   
-  @js.native
-  trait ExternalApplicationEvents extends BaseEventMap {
+  trait ExternalApplicationEvents
+    extends StObject
+       with BaseEventMap {
     
-    var connected: RuntimeEvent[externalapplication, typings.openfin.openfinStrings.connected] = js.native
+    var connected: RuntimeEvent[externalapplication, typings.openfin.openfinStrings.connected]
     
-    var disconnected: RuntimeEvent[externalapplication, typings.openfin.openfinStrings.disconnected] = js.native
+    var disconnected: RuntimeEvent[externalapplication, typings.openfin.openfinStrings.disconnected]
   }
   object ExternalApplicationEvents {
     

@@ -2,25 +2,23 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PresentLocalNotificationDetails extends StObject {
   
-  var alertAction: String = js.native
+  var alertAction: String
   
-  var alertBody: String = js.native
+  var alertBody: String
   
-  var alertTitle: js.UndefOr[String] = js.native
+  var alertTitle: js.UndefOr[String] = js.undefined
   
-  var applicationIconBadgeNumber: js.UndefOr[Double] = js.native
+  var applicationIconBadgeNumber: js.UndefOr[Double] = js.undefined
   
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
-  var soundName: js.UndefOr[String] = js.native
+  var soundName: js.UndefOr[String] = js.undefined
   
-  var userInfo: js.UndefOr[js.Object] = js.native
+  var userInfo: js.UndefOr[js.Object] = js.undefined
 }
 object PresentLocalNotificationDetails {
   

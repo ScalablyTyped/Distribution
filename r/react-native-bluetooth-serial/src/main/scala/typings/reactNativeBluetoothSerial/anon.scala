@@ -2,17 +2,15 @@ package typings.reactNativeBluetoothSerial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
   }
   object Id {
     

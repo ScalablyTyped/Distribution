@@ -2,31 +2,29 @@ package typings.awsSdk.iotsecuretunnelingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenTunnelRequest extends StObject {
   
   /**
     * A short text description of the tunnel. 
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The destination configuration for the OpenTunnel request.
     */
-  var destinationConfig: js.UndefOr[DestinationConfig] = js.native
+  var destinationConfig: js.UndefOr[DestinationConfig] = js.undefined
   
   /**
     * A collection of tag metadata.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * Timeout configuration for a tunnel.
     */
-  var timeoutConfig: js.UndefOr[TimeoutConfig] = js.native
+  var timeoutConfig: js.UndefOr[TimeoutConfig] = js.undefined
 }
 object OpenTunnelRequest {
   

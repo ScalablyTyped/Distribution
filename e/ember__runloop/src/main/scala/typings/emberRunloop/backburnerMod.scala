@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backburnerMod {
@@ -28,16 +27,15 @@ object backburnerMod {
     def scheduleOnce(args: js.Any*): Unit = js.native
   }
   
-  @js.native
   trait DebugInfo extends StObject {
     
-    var autorun: js.UndefOr[Error | Null] = js.native
+    var autorun: js.UndefOr[Error | Null] = js.undefined
     
-    var counters: js.Object = js.native
+    var counters: js.Object
     
-    var instanceStack: js.Array[DeferredActionQueues] = js.native
+    var instanceStack: js.Array[DeferredActionQueues]
     
-    var timers: js.Array[QueueItem] = js.native
+    var timers: js.Array[QueueItem]
   }
   object DebugInfo {
     
@@ -76,15 +74,15 @@ object backburnerMod {
     }
   }
   
-  @js.native
   trait DeferredActionQueues
-    extends /* index */ StringDictionary[js.Any] {
+    extends StObject
+       with /* index */ StringDictionary[js.Any] {
     
-    def flush(fromAutorun: Boolean): js.Any = js.native
+    def flush(fromAutorun: Boolean): js.Any
     
-    var queues: js.Object = js.native
+    var queues: js.Object
     
-    def schedule(queueName: String, target: js.Any, method: js.Any, args: js.Any, onceFlag: Boolean, stack: js.Any): js.Any = js.native
+    def schedule(queueName: String, target: js.Any, method: js.Any, args: js.Any, onceFlag: Boolean, stack: js.Any): js.Any
   }
   object DeferredActionQueues {
     
@@ -112,16 +110,15 @@ object backburnerMod {
     }
   }
   
-  @js.native
   trait QueueItem extends StObject {
     
-    var args: js.Array[js.Object] = js.native
+    var args: js.Array[js.Object]
     
-    var method: String = js.native
+    var method: String
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
     
-    var target: js.Object = js.native
+    var target: js.Object
   }
   object QueueItem {
     

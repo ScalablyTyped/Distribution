@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserProfile extends StObject {
   
   /** The account ID to which this profile belongs. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** The account name this profile belongs to. */
-  var accountName: js.UndefOr[String] = js.native
+  var accountName: js.UndefOr[String] = js.undefined
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#userProfile". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The unique ID of the user profile. */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /** The sub account ID this profile belongs to if applicable. */
-  var subAccountId: js.UndefOr[String] = js.native
+  var subAccountId: js.UndefOr[String] = js.undefined
   
   /** The sub account name this profile belongs to if applicable. */
-  var subAccountName: js.UndefOr[String] = js.native
+  var subAccountName: js.UndefOr[String] = js.undefined
   
   /** The user name. */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
 }
 object UserProfile {
   

@@ -2,13 +2,11 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a list of leaderboard entry resources.
   */
-@js.native
 trait SchemaPlayerScoreResponse extends StObject {
   
   /**
@@ -17,29 +15,29 @@ trait SchemaPlayerScoreResponse extends StObject {
     * The score is an all-time score.  - &quot;WEEKLY&quot; - The score is a
     * weekly score.  - &quot;DAILY&quot; - The score is a daily score.
     */
-  var beatenScoreTimeSpans: js.UndefOr[js.Array[String]] = js.native
+  var beatenScoreTimeSpans: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The formatted value of the submitted score.
     */
-  var formattedScore: js.UndefOr[String] = js.native
+  var formattedScore: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#playerScoreResponse.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The leaderboard ID that this score was submitted to.
     */
-  var leaderboardId: js.UndefOr[String] = js.native
+  var leaderboardId: js.UndefOr[String] = js.undefined
   
   /**
     * Additional information about this score. Values will contain no more than
     * 64 URI-safe characters as defined by section 2.3 of RFC 3986.
     */
-  var scoreTag: js.UndefOr[String] = js.native
+  var scoreTag: js.UndefOr[String] = js.undefined
   
   /**
     * The scores in time spans that have not been beaten. As an example, the
@@ -47,7 +45,7 @@ trait SchemaPlayerScoreResponse extends StObject {
     * better than the player&#39;s scores for the WEEKLY or ALL_TIME time
     * spans.
     */
-  var unbeatenScores: js.UndefOr[js.Array[SchemaPlayerScore]] = js.native
+  var unbeatenScores: js.UndefOr[js.Array[SchemaPlayerScore]] = js.undefined
 }
 object SchemaPlayerScoreResponse {
   

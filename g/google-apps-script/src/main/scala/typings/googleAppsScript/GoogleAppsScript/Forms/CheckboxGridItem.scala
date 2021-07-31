@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,42 +17,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setRows(['New York', 'San Francisco', 'London'])
   *       .setColumns(['2014', '2015', '2016', '2017']);
   */
-@js.native
 trait CheckboxGridItem extends StObject {
   
-  def clearValidation(): CheckboxGridItem = js.native
+  def clearValidation(): CheckboxGridItem
   
-  def createResponse(responses: js.Array[js.Array[String]]): ItemResponse = js.native
+  def createResponse(responses: js.Array[js.Array[String]]): ItemResponse
   
-  def duplicate(): CheckboxGridItem = js.native
+  def duplicate(): CheckboxGridItem
   
-  def getColumns(): js.Array[String] = js.native
+  def getColumns(): js.Array[String]
   
-  def getHelpText(): String = js.native
+  def getHelpText(): String
   
-  def getId(): Integer = js.native
+  def getId(): Integer
   
-  def getIndex(): Integer = js.native
+  def getIndex(): Integer
   
-  def getRows(): js.Array[String] = js.native
+  def getRows(): js.Array[String]
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def getType(): ItemType = js.native
+  def getType(): ItemType
   
-  def isRequired(): Boolean = js.native
+  def isRequired(): Boolean
   
-  def setColumns(columns: js.Array[String]): CheckboxGridItem = js.native
+  def setColumns(columns: js.Array[String]): CheckboxGridItem
   
-  def setHelpText(text: String): CheckboxGridItem = js.native
+  def setHelpText(text: String): CheckboxGridItem
   
-  def setRequired(enabled: Boolean): CheckboxGridItem = js.native
+  def setRequired(enabled: Boolean): CheckboxGridItem
   
-  def setRows(rows: js.Array[String]): CheckboxGridItem = js.native
+  def setRows(rows: js.Array[String]): CheckboxGridItem
   
-  def setTitle(title: String): CheckboxGridItem = js.native
+  def setTitle(title: String): CheckboxGridItem
   
-  def setValidation(validation: CheckboxGridValidation): CheckboxGridItem = js.native
+  def setValidation(validation: CheckboxGridValidation): CheckboxGridItem
 }
 object CheckboxGridItem {
   

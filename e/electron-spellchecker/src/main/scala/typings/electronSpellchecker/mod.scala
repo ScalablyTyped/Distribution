@@ -8,7 +8,6 @@ import typings.electron.Electron.WebviewTag
 import typings.electronSpellchecker.anon.Word
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,86 +16,64 @@ object mod {
   @js.native
   class ContextMenuBuilder () extends StObject {
     def this(spellCheckHandler: SpellCheckHandler) = this()
-    def this(spellCheckHandler: js.UndefOr[scala.Nothing], target: BrowserWindow) = this()
-    def this(spellCheckHandler: js.UndefOr[scala.Nothing], target: WebviewTag) = this()
+    def this(spellCheckHandler: Unit, target: BrowserWindow) = this()
+    def this(spellCheckHandler: Unit, target: WebviewTag) = this()
     def this(spellCheckHandler: SpellCheckHandler, target: BrowserWindow) = this()
     def this(spellCheckHandler: SpellCheckHandler, target: WebviewTag) = this()
-    def this(
-      spellCheckHandler: js.UndefOr[scala.Nothing],
-      target: js.UndefOr[scala.Nothing],
-      debugMode: Boolean
-    ) = this()
-    def this(spellCheckHandler: js.UndefOr[scala.Nothing], target: Null, debugMode: Boolean) = this()
-    def this(spellCheckHandler: js.UndefOr[scala.Nothing], target: BrowserWindow, debugMode: Boolean) = this()
-    def this(spellCheckHandler: js.UndefOr[scala.Nothing], target: WebviewTag, debugMode: Boolean) = this()
-    def this(spellCheckHandler: SpellCheckHandler, target: js.UndefOr[scala.Nothing], debugMode: Boolean) = this()
+    def this(spellCheckHandler: Unit, target: Null, debugMode: Boolean) = this()
+    def this(spellCheckHandler: Unit, target: Unit, debugMode: Boolean) = this()
+    def this(spellCheckHandler: Unit, target: BrowserWindow, debugMode: Boolean) = this()
+    def this(spellCheckHandler: Unit, target: WebviewTag, debugMode: Boolean) = this()
     def this(spellCheckHandler: SpellCheckHandler, target: Null, debugMode: Boolean) = this()
+    def this(spellCheckHandler: SpellCheckHandler, target: Unit, debugMode: Boolean) = this()
     def this(spellCheckHandler: SpellCheckHandler, target: BrowserWindow, debugMode: Boolean) = this()
     def this(spellCheckHandler: SpellCheckHandler, target: WebviewTag, debugMode: Boolean) = this()
     def this(
-      spellCheckHandler: js.UndefOr[scala.Nothing],
-      target: js.UndefOr[scala.Nothing],
-      debugMode: js.UndefOr[scala.Nothing],
-      processMenu: js.Function1[/* menu */ Menu, Menu]
-    ) = this()
-    def this(
-      spellCheckHandler: js.UndefOr[scala.Nothing],
-      target: js.UndefOr[scala.Nothing],
-      debugMode: Boolean,
-      processMenu: js.Function1[/* menu */ Menu, Menu]
-    ) = this()
-    def this(
-      spellCheckHandler: js.UndefOr[scala.Nothing],
-      target: Null,
-      debugMode: js.UndefOr[scala.Nothing],
-      processMenu: js.Function1[/* menu */ Menu, Menu]
-    ) = this()
-    def this(
-      spellCheckHandler: js.UndefOr[scala.Nothing],
+      spellCheckHandler: Unit,
       target: Null,
       debugMode: Boolean,
       processMenu: js.Function1[/* menu */ Menu, Menu]
     ) = this()
     def this(
-      spellCheckHandler: js.UndefOr[scala.Nothing],
-      target: BrowserWindow,
-      debugMode: js.UndefOr[scala.Nothing],
+      spellCheckHandler: Unit,
+      target: Null,
+      debugMode: Unit,
       processMenu: js.Function1[/* menu */ Menu, Menu]
     ) = this()
     def this(
-      spellCheckHandler: js.UndefOr[scala.Nothing],
+      spellCheckHandler: Unit,
+      target: Unit,
+      debugMode: Boolean,
+      processMenu: js.Function1[/* menu */ Menu, Menu]
+    ) = this()
+    def this(
+      spellCheckHandler: Unit,
+      target: Unit,
+      debugMode: Unit,
+      processMenu: js.Function1[/* menu */ Menu, Menu]
+    ) = this()
+    def this(
+      spellCheckHandler: Unit,
       target: BrowserWindow,
       debugMode: Boolean,
       processMenu: js.Function1[/* menu */ Menu, Menu]
     ) = this()
     def this(
-      spellCheckHandler: js.UndefOr[scala.Nothing],
-      target: WebviewTag,
-      debugMode: js.UndefOr[scala.Nothing],
+      spellCheckHandler: Unit,
+      target: BrowserWindow,
+      debugMode: Unit,
       processMenu: js.Function1[/* menu */ Menu, Menu]
     ) = this()
     def this(
-      spellCheckHandler: js.UndefOr[scala.Nothing],
+      spellCheckHandler: Unit,
       target: WebviewTag,
       debugMode: Boolean,
       processMenu: js.Function1[/* menu */ Menu, Menu]
     ) = this()
     def this(
-      spellCheckHandler: SpellCheckHandler,
-      target: js.UndefOr[scala.Nothing],
-      debugMode: js.UndefOr[scala.Nothing],
-      processMenu: js.Function1[/* menu */ Menu, Menu]
-    ) = this()
-    def this(
-      spellCheckHandler: SpellCheckHandler,
-      target: js.UndefOr[scala.Nothing],
-      debugMode: Boolean,
-      processMenu: js.Function1[/* menu */ Menu, Menu]
-    ) = this()
-    def this(
-      spellCheckHandler: SpellCheckHandler,
-      target: Null,
-      debugMode: js.UndefOr[scala.Nothing],
+      spellCheckHandler: Unit,
+      target: WebviewTag,
+      debugMode: Unit,
       processMenu: js.Function1[/* menu */ Menu, Menu]
     ) = this()
     def this(
@@ -107,8 +84,20 @@ object mod {
     ) = this()
     def this(
       spellCheckHandler: SpellCheckHandler,
-      target: BrowserWindow,
-      debugMode: js.UndefOr[scala.Nothing],
+      target: Null,
+      debugMode: Unit,
+      processMenu: js.Function1[/* menu */ Menu, Menu]
+    ) = this()
+    def this(
+      spellCheckHandler: SpellCheckHandler,
+      target: Unit,
+      debugMode: Boolean,
+      processMenu: js.Function1[/* menu */ Menu, Menu]
+    ) = this()
+    def this(
+      spellCheckHandler: SpellCheckHandler,
+      target: Unit,
+      debugMode: Unit,
       processMenu: js.Function1[/* menu */ Menu, Menu]
     ) = this()
     def this(
@@ -119,14 +108,20 @@ object mod {
     ) = this()
     def this(
       spellCheckHandler: SpellCheckHandler,
-      target: WebviewTag,
-      debugMode: js.UndefOr[scala.Nothing],
+      target: BrowserWindow,
+      debugMode: Unit,
       processMenu: js.Function1[/* menu */ Menu, Menu]
     ) = this()
     def this(
       spellCheckHandler: SpellCheckHandler,
       target: WebviewTag,
       debugMode: Boolean,
+      processMenu: js.Function1[/* menu */ Menu, Menu]
+    ) = this()
+    def this(
+      spellCheckHandler: SpellCheckHandler,
+      target: WebviewTag,
+      debugMode: Unit,
       processMenu: js.Function1[/* menu */ Menu, Menu]
     ) = this()
     

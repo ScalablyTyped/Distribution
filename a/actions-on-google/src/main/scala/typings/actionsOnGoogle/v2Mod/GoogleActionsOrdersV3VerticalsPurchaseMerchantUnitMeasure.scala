@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure extends StObject {
   
   /**
     * Value: Example 1.2.
     */
-  var measure: js.UndefOr[Double] = js.native
+  var measure: js.UndefOr[Double] = js.undefined
   
   /**
     * Unit: Example POUND, GRAM.
     */
-  var unit: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasureUnit] = js.native
+  var unit: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasureUnit] = js.undefined
 }
 object GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure {
   

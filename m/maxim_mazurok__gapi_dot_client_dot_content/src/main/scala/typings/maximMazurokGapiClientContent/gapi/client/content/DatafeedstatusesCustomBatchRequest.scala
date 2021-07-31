@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatafeedstatusesCustomBatchRequest extends StObject {
   
   /** The request entries to be processed in the batch. */
-  var entries: js.UndefOr[js.Array[DatafeedstatusesCustomBatchRequestEntry]] = js.native
+  var entries: js.UndefOr[js.Array[DatafeedstatusesCustomBatchRequestEntry]] = js.undefined
 }
 object DatafeedstatusesCustomBatchRequest {
   

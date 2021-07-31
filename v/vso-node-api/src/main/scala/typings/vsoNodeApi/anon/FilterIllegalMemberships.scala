@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterIllegalMemberships extends StObject {
   
-  var filterIllegalMemberships: scala.Double = js.native
+  var filterIllegalMemberships: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
 }
 object FilterIllegalMemberships {
   

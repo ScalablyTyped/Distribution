@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateInstanceProfileResult extends StObject {
   
   /**
     * An object that contains information about your instance profile.
     */
-  var instanceProfile: js.UndefOr[InstanceProfile] = js.native
+  var instanceProfile: js.UndefOr[InstanceProfile] = js.undefined
 }
 object UpdateInstanceProfileResult {
   

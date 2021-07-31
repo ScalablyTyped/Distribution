@@ -2,25 +2,23 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFileSystemRequest extends StObject {
   
   /**
     * A string of up to 64 ASCII characters that Amazon FSx uses to ensure idempotent deletion. This is automatically filled on your behalf when using the AWS CLI or SDK.
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.fsxMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.fsxMod.ClientRequestToken] = js.undefined
   
   /**
     * The ID of the file system you want to delete.
     */
-  var FileSystemId: typings.awsSdk.fsxMod.FileSystemId = js.native
+  var FileSystemId: typings.awsSdk.fsxMod.FileSystemId
   
-  var LustreConfiguration: js.UndefOr[DeleteFileSystemLustreConfiguration] = js.native
+  var LustreConfiguration: js.UndefOr[DeleteFileSystemLustreConfiguration] = js.undefined
   
-  var WindowsConfiguration: js.UndefOr[DeleteFileSystemWindowsConfiguration] = js.native
+  var WindowsConfiguration: js.UndefOr[DeleteFileSystemWindowsConfiguration] = js.undefined
 }
 object DeleteFileSystemRequest {
   

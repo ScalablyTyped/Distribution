@@ -2,11 +2,11 @@ package typings.canvasjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChartAxisYOptions extends ChartAxisXOptions {
+trait ChartAxisYOptions
+  extends StObject
+     with ChartAxisXOptions {
   
   /**
     * When includeZero is set to true, axisY sets the range in such a way that Zero is a part of it. It is set to true by default.
@@ -15,7 +15,7 @@ trait ChartAxisYOptions extends ChartAxisXOptions {
     * Default: true
     * Example: true, false
     */
-  var includeZero: js.UndefOr[Boolean] = js.native
+  var includeZero: js.UndefOr[Boolean] = js.undefined
 }
 object ChartAxisYOptions {
   

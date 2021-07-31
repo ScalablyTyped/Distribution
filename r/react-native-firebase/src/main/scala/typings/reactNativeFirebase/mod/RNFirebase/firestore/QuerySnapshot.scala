@@ -5,25 +5,23 @@ import typings.reactNativeFirebase.mod.RNFirebase.firestore.Types.NativeDocument
 import typings.reactNativeFirebase.mod.RNFirebase.firestore.Types.SnapshotMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuerySnapshot extends StObject {
   
-  val docChanges: js.Array[DocumentChange] = js.native
+  val docChanges: js.Array[DocumentChange]
   
-  val docs: js.Array[DocumentSnapshot] = js.native
+  val docs: js.Array[DocumentSnapshot]
   
-  val empty: Boolean = js.native
+  val empty: Boolean
   
-  def forEach(callback: js.Function1[/* snapshot */ DocumentSnapshot, _]): Unit = js.native
+  def forEach(callback: js.Function1[/* snapshot */ DocumentSnapshot, js.Any]): Unit
   
-  val metadata: SnapshotMetadata = js.native
+  val metadata: SnapshotMetadata
   
-  val query: Query = js.native
+  val query: Query
   
-  val size: Double = js.native
+  val size: Double
 }
 object QuerySnapshot {
   
@@ -32,7 +30,7 @@ object QuerySnapshot {
     docChanges: js.Array[DocumentChange],
     docs: js.Array[DocumentSnapshot],
     empty: Boolean,
-    forEach: js.Function1[/* snapshot */ DocumentSnapshot, _] => Unit,
+    forEach: js.Function1[/* snapshot */ DocumentSnapshot, js.Any] => Unit,
     metadata: SnapshotMetadata,
     query: Query,
     size: Double
@@ -41,14 +39,13 @@ object QuerySnapshot {
     __obj.asInstanceOf[QuerySnapshot]
   }
   
-  @js.native
   trait NativeData extends StObject {
     
-    var changes: js.Array[NativeDocumentChange] = js.native
+    var changes: js.Array[NativeDocumentChange]
     
-    var documents: js.Array[NativeDocumentSnapshot] = js.native
+    var documents: js.Array[NativeDocumentSnapshot]
     
-    var metadata: SnapshotMetadata = js.native
+    var metadata: SnapshotMetadata
   }
   object NativeData {
     
@@ -101,7 +98,7 @@ object QuerySnapshot {
     def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForEach(value: js.Function1[/* snapshot */ DocumentSnapshot, _] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+    def setForEach(value: js.Function1[/* snapshot */ DocumentSnapshot, js.Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     
     @scala.inline
     def setMetadata(value: SnapshotMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])

@@ -2,18 +2,16 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultValueOptionsMod {
   
-  @js.native
   trait DefaultValueOptions[T] extends StObject {
     
     /**
       * The default value of the control.
       */
-    var value: js.UndefOr[T] = js.native
+    var value: js.UndefOr[T] = js.undefined
   }
   object DefaultValueOptions {
     
@@ -24,7 +22,7 @@ object defaultValueOptionsMod {
     }
     
     @scala.inline
-    implicit class DefaultValueOptionsMutableBuilder[Self <: DefaultValueOptions[_], T] (val x: Self with DefaultValueOptions[T]) extends AnyVal {
+    implicit class DefaultValueOptionsMutableBuilder[Self <: DefaultValueOptions[?], T] (val x: Self & DefaultValueOptions[T]) extends AnyVal {
       
       @scala.inline
       def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])

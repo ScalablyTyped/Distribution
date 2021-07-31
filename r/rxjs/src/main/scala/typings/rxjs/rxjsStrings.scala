@@ -3,18 +3,21 @@ package typings.rxjs
 import typings.rxjs.ajaxObservableMod.AjaxErrorNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rxjsStrings {
   
   @js.native
-  sealed trait AjaxError extends AjaxErrorNames
+  sealed trait AjaxError
+    extends StObject
+       with AjaxErrorNames
   @scala.inline
   def AjaxError: AjaxError = "AjaxError".asInstanceOf[AjaxError]
   
   @js.native
-  sealed trait AjaxTimeoutError extends AjaxErrorNames
+  sealed trait AjaxTimeoutError
+    extends StObject
+       with AjaxErrorNames
   @scala.inline
   def AjaxTimeoutError: AjaxTimeoutError = "AjaxTimeoutError".asInstanceOf[AjaxTimeoutError]
   

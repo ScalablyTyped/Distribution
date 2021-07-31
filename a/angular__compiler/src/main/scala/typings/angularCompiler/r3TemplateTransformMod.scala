@@ -5,27 +5,28 @@ import typings.angularCompiler.mlParserAstMod.Node
 import typings.angularCompiler.srcParseUtilMod.ParseError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object r3TemplateTransformMod {
   
-  @JSImport("@angular/compiler/src/render3/r3_template_transform", "htmlAstToRender3Ast")
+  @JSImport("@angular/compiler/src/render3/r3_template_transform", JSImport.Namespace)
   @js.native
-  def htmlAstToRender3Ast(htmlNodes: js.Array[Node], bindingParser: BindingParser): Render3ParseResult = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def htmlAstToRender3Ast(htmlNodes: js.Array[Node], bindingParser: BindingParser): Render3ParseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlAstToRender3Ast")(htmlNodes.asInstanceOf[js.Any], bindingParser.asInstanceOf[js.Any])).asInstanceOf[Render3ParseResult]
+  
   trait Render3ParseResult extends StObject {
     
-    var errors: js.Array[ParseError] = js.native
+    var errors: js.Array[ParseError]
     
-    var ngContentSelectors: js.Array[String] = js.native
+    var ngContentSelectors: js.Array[String]
     
-    var nodes: js.Array[typings.angularCompiler.r3AstMod.Node] = js.native
+    var nodes: js.Array[typings.angularCompiler.r3AstMod.Node]
     
-    var styleUrls: js.Array[String] = js.native
+    var styleUrls: js.Array[String]
     
-    var styles: js.Array[String] = js.native
+    var styles: js.Array[String]
   }
   object Render3ParseResult {
     

@@ -2,16 +2,16 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericHyperCubeLayout width extend GenericObjectLayout
   */
-@js.native
-trait IGenericHyperCubeLayout extends IGenericObjectLayout {
+trait IGenericHyperCubeLayout
+  extends StObject
+     with IGenericObjectLayout {
   
-  var qHyperCube: IHyperCube = js.native
+  var qHyperCube: IHyperCube
 }
 object IGenericHyperCubeLayout {
   

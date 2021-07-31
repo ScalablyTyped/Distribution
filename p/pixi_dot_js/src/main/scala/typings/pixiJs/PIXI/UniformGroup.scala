@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait UniformGroup extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait UniformGroup extends StObject {
     * @protected
     * @member {number} PIXI.UniformGroup#dirtyId
     */
-  var dirtyId: Double = js.native
+  var dirtyId: Double
   
   /**
     * Its a group and not a single uniforms
@@ -27,27 +25,27 @@ trait UniformGroup extends StObject {
     * @readonly
     * @default true
     */
-  val group: Boolean = js.native
+  val group: Boolean
   
   /**
     * unique id
     * @protected
     * @member {number} PIXI.UniformGroup#id
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Uniforms wont be changed after creation
     * @member {boolean} PIXI.UniformGroup#static
     */
-  var static: Boolean = js.native
+  var static: Boolean
   
   /**
     * uniform values
     * @member {object} PIXI.UniformGroup#uniforms
     * @readonly
     */
-  val uniforms: js.Any = js.native
+  val uniforms: js.Any
 }
 object UniformGroup {
   

@@ -4,18 +4,16 @@ import typings.opentelemetryApi.loggerMod.Logger
 import typings.opentelemetryResources.typesMod.Detector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
   
-  @js.native
   trait ResourceDetectionConfig extends StObject {
     
-    var detectors: js.UndefOr[js.Array[Detector]] = js.native
+    var detectors: js.UndefOr[js.Array[Detector]] = js.undefined
     
     /** Optional Logger. */
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
   }
   object ResourceDetectionConfig {
     
@@ -45,12 +43,13 @@ object configMod {
     }
   }
   
-  @js.native
-  trait ResourceDetectionConfigWithLogger extends ResourceDetectionConfig {
+  trait ResourceDetectionConfigWithLogger
+    extends StObject
+       with ResourceDetectionConfig {
     
     /** Required Logger */
     @JSName("logger")
-    var logger_ResourceDetectionConfigWithLogger: Logger = js.native
+    var logger_ResourceDetectionConfigWithLogger: Logger
   }
   object ResourceDetectionConfigWithLogger {
     

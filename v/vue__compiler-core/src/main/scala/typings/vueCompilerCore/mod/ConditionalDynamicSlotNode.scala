@@ -1,19 +1,18 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`19`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConditionalDynamicSlotNode extends ConditionalExpression {
+trait ConditionalDynamicSlotNode
+  extends StObject
+     with ConditionalExpression {
   
   @JSName("alternate")
-  var alternate_ConditionalDynamicSlotNode: DynamicSlotNode | SimpleExpressionNode = js.native
+  var alternate_ConditionalDynamicSlotNode: DynamicSlotNode | SimpleExpressionNode
   
   @JSName("consequent")
-  var consequent_ConditionalDynamicSlotNode: DynamicSlotNode = js.native
+  var consequent_ConditionalDynamicSlotNode: DynamicSlotNode
 }
 object ConditionalDynamicSlotNode {
   
@@ -23,11 +22,10 @@ object ConditionalDynamicSlotNode {
     consequent: DynamicSlotNode,
     loc: SourceLocation,
     newline: Boolean,
-    test: JSChildNode,
-    `type`: `19`
+    test: JSChildNode
   ): ConditionalDynamicSlotNode = {
     val __obj = js.Dynamic.literal(alternate = alternate.asInstanceOf[js.Any], consequent = consequent.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], newline = newline.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(19)
     __obj.asInstanceOf[ConditionalDynamicSlotNode]
   }
   

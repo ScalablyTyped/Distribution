@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonetaryAmount extends StObject {
   
   /**
     * The numerical amount of an offering or transaction.
     */
-  var amount: js.UndefOr[Double] = js.native
+  var amount: js.UndefOr[Double] = js.undefined
   
   /**
     * The currency code of a monetary amount. For example, USD means U.S. dollars.
     */
-  var currencyCode: js.UndefOr[CurrencyCode] = js.native
+  var currencyCode: js.UndefOr[CurrencyCode] = js.undefined
 }
 object MonetaryAmount {
   

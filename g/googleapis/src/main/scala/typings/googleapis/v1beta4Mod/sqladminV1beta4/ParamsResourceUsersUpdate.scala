@@ -6,41 +6,41 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUsersUpdate extends StandardParameters {
+trait ParamsResourceUsersUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Host of the user in the instance.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * Database instance ID. This does not include the project ID.
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the user in the instance.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Project ID of the project that contains the instance.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaUser] = js.native
+  var requestBody: js.UndefOr[SchemaUser] = js.undefined
 }
 object ParamsResourceUsersUpdate {
   

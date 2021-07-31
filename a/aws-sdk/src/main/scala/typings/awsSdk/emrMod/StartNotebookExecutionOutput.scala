@@ -2,16 +2,14 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartNotebookExecutionOutput extends StObject {
   
   /**
     * The unique identifier of the notebook execution.
     */
-  var NotebookExecutionId: js.UndefOr[XmlStringMaxLen256] = js.native
+  var NotebookExecutionId: js.UndefOr[XmlStringMaxLen256] = js.undefined
 }
 object StartNotebookExecutionOutput {
   

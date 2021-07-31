@@ -3,7 +3,6 @@ package typings.rcEasyui.mod
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-easyui", "LayoutPanel")
@@ -46,9 +45,12 @@ object LayoutPanel {
     
     object locale {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.contextTypes.locale")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.contextTypes.locale
       @JSImport("rc-easyui", "LayoutPanel.contextTypes.locale.isRequired")
@@ -58,9 +60,12 @@ object LayoutPanel {
     
     object t {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.contextTypes.t")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.contextTypes.t
       @JSImport("rc-easyui", "LayoutPanel.contextTypes.t.isRequired")
@@ -70,6 +75,10 @@ object LayoutPanel {
   }
   
   object defaultProps {
+    
+    @JSImport("rc-easyui", "LayoutPanel.defaultProps")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("rc-easyui", "LayoutPanel.defaultProps.animate")
     @js.native
@@ -115,13 +124,11 @@ object LayoutPanel {
     @js.native
     val expander: Boolean = js.native
     
-    @JSImport("rc-easyui", "LayoutPanel.defaultProps.onCollapse")
-    @js.native
-    def onCollapse(): Unit = js.native
+    @scala.inline
+    def onCollapse(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCollapse")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "LayoutPanel.defaultProps.onExpand")
-    @js.native
-    def onExpand(): Unit = js.native
+    @scala.inline
+    def onExpand(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onExpand")().asInstanceOf[Unit]
     
     @JSImport("rc-easyui", "LayoutPanel.defaultProps.region")
     @js.native
@@ -144,9 +151,12 @@ object LayoutPanel {
     
     object animate {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.animate")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.animate
       @JSImport("rc-easyui", "LayoutPanel.propTypes.animate.isRequired")
@@ -156,9 +166,12 @@ object LayoutPanel {
     
     object bodyCls {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.bodyCls")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.bodyCls
       @JSImport("rc-easyui", "LayoutPanel.propTypes.bodyCls.isRequired")
@@ -168,9 +181,12 @@ object LayoutPanel {
     
     object bodyStyle {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.bodyStyle")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.bodyStyle
       @JSImport("rc-easyui", "LayoutPanel.propTypes.bodyStyle.isRequired")
@@ -180,9 +196,12 @@ object LayoutPanel {
     
     object border {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.border")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.border
       @JSImport("rc-easyui", "LayoutPanel.propTypes.border.isRequired")
@@ -192,9 +211,12 @@ object LayoutPanel {
     
     object closable {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.closable")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.closable
       @JSImport("rc-easyui", "LayoutPanel.propTypes.closable.isRequired")
@@ -204,9 +226,12 @@ object LayoutPanel {
     
     object closeIconCls {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.closeIconCls")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.closeIconCls
       @JSImport("rc-easyui", "LayoutPanel.propTypes.closeIconCls.isRequired")
@@ -216,9 +241,12 @@ object LayoutPanel {
     
     object closed {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.closed")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.closed
       @JSImport("rc-easyui", "LayoutPanel.propTypes.closed.isRequired")
@@ -228,9 +256,12 @@ object LayoutPanel {
     
     object collapseIconCls {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.collapseIconCls")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.collapseIconCls
       @JSImport("rc-easyui", "LayoutPanel.propTypes.collapseIconCls.isRequired")
@@ -240,9 +271,12 @@ object LayoutPanel {
     
     object collapsed {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.collapsed")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.collapsed
       @JSImport("rc-easyui", "LayoutPanel.propTypes.collapsed.isRequired")
@@ -252,9 +286,12 @@ object LayoutPanel {
     
     object collapsedSize {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.collapsedSize")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.collapsedSize
       @JSImport("rc-easyui", "LayoutPanel.propTypes.collapsedSize.isRequired")
@@ -264,9 +301,12 @@ object LayoutPanel {
     
     object collapsible {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.collapsible")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.collapsible
       @JSImport("rc-easyui", "LayoutPanel.propTypes.collapsible.isRequired")
@@ -276,9 +316,12 @@ object LayoutPanel {
     
     object expandIconCls {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.expandIconCls")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.expandIconCls
       @JSImport("rc-easyui", "LayoutPanel.propTypes.expandIconCls.isRequired")
@@ -288,9 +331,12 @@ object LayoutPanel {
     
     object expander {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.expander")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.expander
       @JSImport("rc-easyui", "LayoutPanel.propTypes.expander.isRequired")
@@ -300,9 +346,12 @@ object LayoutPanel {
     
     object footer {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.footer")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.footer
       @JSImport("rc-easyui", "LayoutPanel.propTypes.footer.isRequired")
@@ -312,9 +361,12 @@ object LayoutPanel {
     
     object footerCls {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.footerCls")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.footerCls
       @JSImport("rc-easyui", "LayoutPanel.propTypes.footerCls.isRequired")
@@ -324,9 +376,12 @@ object LayoutPanel {
     
     object footerStyle {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.footerStyle")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.footerStyle
       @JSImport("rc-easyui", "LayoutPanel.propTypes.footerStyle.isRequired")
@@ -336,9 +391,12 @@ object LayoutPanel {
     
     object header {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.header")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.header
       @JSImport("rc-easyui", "LayoutPanel.propTypes.header.isRequired")
@@ -348,9 +406,12 @@ object LayoutPanel {
     
     object headerCls {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.headerCls")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.headerCls
       @JSImport("rc-easyui", "LayoutPanel.propTypes.headerCls.isRequired")
@@ -360,9 +421,12 @@ object LayoutPanel {
     
     object headerStyle {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.headerStyle")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.headerStyle
       @JSImport("rc-easyui", "LayoutPanel.propTypes.headerStyle.isRequired")
@@ -372,9 +436,12 @@ object LayoutPanel {
     
     object iconCls {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.iconCls")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.iconCls
       @JSImport("rc-easyui", "LayoutPanel.propTypes.iconCls.isRequired")
@@ -384,9 +451,12 @@ object LayoutPanel {
     
     object onCollapse {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.onCollapse")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.onCollapse
       @JSImport("rc-easyui", "LayoutPanel.propTypes.onCollapse.isRequired")
@@ -396,9 +466,12 @@ object LayoutPanel {
     
     object onExpand {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.onExpand")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.onExpand
       @JSImport("rc-easyui", "LayoutPanel.propTypes.onExpand.isRequired")
@@ -408,9 +481,12 @@ object LayoutPanel {
     
     object region {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.region")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.region
       @JSImport("rc-easyui", "LayoutPanel.propTypes.region.isRequired")
@@ -420,9 +496,12 @@ object LayoutPanel {
     
     object showFooter {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.showFooter")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.showFooter
       @JSImport("rc-easyui", "LayoutPanel.propTypes.showFooter.isRequired")
@@ -432,9 +511,12 @@ object LayoutPanel {
     
     object showHeader {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.showHeader")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.showHeader
       @JSImport("rc-easyui", "LayoutPanel.propTypes.showHeader.isRequired")
@@ -444,9 +526,12 @@ object LayoutPanel {
     
     object split {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.split")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.split
       @JSImport("rc-easyui", "LayoutPanel.propTypes.split.isRequired")
@@ -456,9 +541,12 @@ object LayoutPanel {
     
     object title {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LayoutPanel.propTypes.title")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LayoutPanel.propTypes.title
       @JSImport("rc-easyui", "LayoutPanel.propTypes.title.isRequired")

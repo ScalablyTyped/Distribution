@@ -2,7 +2,6 @@ package typings.countryData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -75,17 +74,18 @@ object mod {
   
   object lookup {
     
-    @JSImport("country-data", "lookup.countries")
+    @JSImport("country-data", "lookup")
     @js.native
-    def countries(query: js.Any): js.Array[Country] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("country-data", "lookup.currencies")
-    @js.native
-    def currencies(query: js.Any): js.Array[Currency] = js.native
+    @scala.inline
+    def countries(query: js.Any): js.Array[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("countries")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Country]]
     
-    @JSImport("country-data", "lookup.languages")
-    @js.native
-    def languages(query: js.Any): js.Array[Language] = js.native
+    @scala.inline
+    def currencies(query: js.Any): js.Array[Currency] = ^.asInstanceOf[js.Dynamic].applyDynamic("currencies")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Currency]]
+    
+    @scala.inline
+    def languages(query: js.Any): js.Array[Language] = ^.asInstanceOf[js.Dynamic].applyDynamic("languages")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Language]]
   }
   
   object regions {
@@ -183,14 +183,13 @@ object mod {
     val westernEurope: Region = js.native
   }
   
-  @js.native
   trait Continent extends StObject {
     
-    val countries: js.Array[Country] = js.native
+    val countries: js.Array[Country]
     
-    val name: String = js.native
+    val name: String
     
-    val regions: js.Array[String] = js.native
+    val regions: js.Array[String]
   }
   object Continent {
     
@@ -220,26 +219,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Country extends StObject {
     
-    val alpha2: String = js.native
+    val alpha2: String
     
-    val alpha3: String = js.native
+    val alpha3: String
     
-    val countryCallingCodes: js.Array[String] = js.native
+    val countryCallingCodes: js.Array[String]
     
-    val currencies: js.Array[String] = js.native
+    val currencies: js.Array[String]
     
-    val emoji: String = js.native
+    val emoji: String
     
-    val ioc: String = js.native
+    val ioc: String
     
-    val languages: js.Array[String] = js.native
+    val languages: js.Array[String]
     
-    val name: String = js.native
+    val name: String
     
-    val status: String = js.native
+    val status: String
   }
   object Country {
     
@@ -300,18 +298,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Currency extends StObject {
     
-    val code: String = js.native
+    val code: String
     
-    val decimals: Double = js.native
+    val decimals: Double
     
-    val name: String = js.native
+    val name: String
     
-    val number: Double = js.native
+    val number: Double
     
-    val symbol: String = js.native
+    val symbol: String
   }
   object Currency {
     
@@ -341,16 +338,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Language extends StObject {
     
-    val alpha2: String = js.native
+    val alpha2: String
     
-    val alpha3: String = js.native
+    val alpha3: String
     
-    val bibliographic: String = js.native
+    val bibliographic: String
     
-    val name: String = js.native
+    val name: String
   }
   object Language {
     
@@ -377,12 +373,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Region extends StObject {
     
-    val countries: js.Array[String] = js.native
+    val countries: js.Array[String]
     
-    val name: String = js.native
+    val name: String
   }
   object Region {
     

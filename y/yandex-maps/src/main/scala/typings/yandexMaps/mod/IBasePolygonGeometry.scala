@@ -2,45 +2,45 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.yandexMaps.mod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze
-- typings.yandexMaps.mod.IPolygonGeometryAccess because var conflicts: events. Inlined contains, get, getChildGeometry, getClosest, getCoordinates, getFillRule, getLength, insert, remove, set, setCoordinates, setFillRule, splice */ @js.native
-trait IBasePolygonGeometry extends IBaseGeometry {
+- typings.yandexMaps.mod.IPolygonGeometryAccess because var conflicts: events. Inlined contains, get, getChildGeometry, getClosest, getCoordinates, getFillRule, getLength, insert, remove, set, setCoordinates, setFillRule, splice */ trait IBasePolygonGeometry
+  extends StObject
+     with IBaseGeometry {
   
-  def contains(position: js.Array[Double]): Boolean = js.native
+  def contains(position: js.Array[Double]): Boolean
   
-  def freeze(): IFreezable = js.native
+  def freeze(): IFreezable
   
-  def get(index: Double): js.Array[js.Array[Double]] = js.native
+  def get(index: Double): js.Array[js.Array[Double]]
   
-  def getChildGeometry(index: Double): ILinearRingGeometryAccess = js.native
+  def getChildGeometry(index: Double): ILinearRingGeometryAccess
   
-  def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
+  def getClosest(anchorPosition: js.Array[Double]): js.Object
   
-  def getCoordinates(): js.Array[js.Array[js.Array[Double]]] = js.native
+  def getCoordinates(): js.Array[js.Array[js.Array[Double]]]
   
-  def getFillRule(): String = js.native
+  def getFillRule(): String
   
-  def getLength(): Double = js.native
+  def getLength(): Double
   
-  def insert(index: Double, path: js.Array[js.Array[Double]]): IPolygonGeometryAccess = js.native
+  def insert(index: Double, path: js.Array[js.Array[Double]]): IPolygonGeometryAccess
   
-  def isFrozen(): Boolean = js.native
+  def isFrozen(): Boolean
   
-  def remove(index: Double): ILinearRingGeometryAccess = js.native
+  def remove(index: Double): ILinearRingGeometryAccess
   
-  def set(index: Double, path: js.Array[js.Array[Double]]): IPolygonGeometryAccess = js.native
+  def set(index: Double, path: js.Array[js.Array[Double]]): IPolygonGeometryAccess
   
-  def setCoordinates(coordinates: js.Array[js.Array[js.Array[Double]]]): IPolygonGeometryAccess = js.native
+  def setCoordinates(coordinates: js.Array[js.Array[js.Array[Double]]]): IPolygonGeometryAccess
   
-  def setFillRule(fillRule: String): IPolygonGeometryAccess = js.native
+  def setFillRule(fillRule: String): IPolygonGeometryAccess
   
-  def splice(index: Double, number: Double): js.Array[ILinearRingGeometryAccess] = js.native
+  def splice(index: Double, number: Double): js.Array[ILinearRingGeometryAccess]
   
-  def unfreeze(): IFreezable = js.native
+  def unfreeze(): IFreezable
 }
 object IBasePolygonGeometry {
   

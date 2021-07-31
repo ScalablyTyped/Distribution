@@ -4,35 +4,33 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Frame extends StObject {
   
-  var dHeight: Double = js.native
+  var dHeight: Double
   
-  var dWidth: Double = js.native
+  var dWidth: Double
   
-  var dx: Double = js.native
+  var dx: Double
   
-  var dy: Double = js.native
+  var dy: Double
   
-  var element: HTMLCanvasElement = js.native
+  var element: HTMLCanvasElement
   
-  var image: HTMLImageElement = js.native
+  var image: HTMLImageElement
   
-  def initialize(): Frame = js.native
+  def initialize(): Frame
   
-  def recycle(): Unit = js.native
+  def recycle(): Unit
   
-  var sHeight: Double = js.native
+  var sHeight: Double
   
-  var sWidth: Double = js.native
+  var sWidth: Double
   
-  var sx: Double = js.native
+  var sx: Double
   
-  var sy: Double = js.native
+  var sy: Double
 }
 object Frame {
   

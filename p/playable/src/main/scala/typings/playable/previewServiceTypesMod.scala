@@ -2,17 +2,15 @@ package typings.playable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewServiceTypesMod {
   
-  @js.native
   trait IFramePositionInSprite extends StObject {
     
-    var horz: Double = js.native
+    var horz: Double
     
-    var vert: Double = js.native
+    var vert: Double
   }
   object IFramePositionInSprite {
     
@@ -33,12 +31,11 @@ object previewServiceTypesMod {
     }
   }
   
-  @js.native
   trait IFrameSize extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object IFrameSize {
     
@@ -59,12 +56,11 @@ object previewServiceTypesMod {
     }
   }
   
-  @js.native
   trait IFramesData extends StObject {
     
-    var framesCount: Double = js.native
+    var framesCount: Double
     
-    var qualities: js.Array[IFramesQuality] = js.native
+    var qualities: js.Array[IFramesQuality]
   }
   object IFramesData {
     
@@ -88,14 +84,13 @@ object previewServiceTypesMod {
     }
   }
   
-  @js.native
   trait IFramesQuality extends StObject {
     
-    var frameSize: IFrameSize = js.native
+    var frameSize: IFrameSize
     
-    var framesInSprite: IMaxFramesInSprite = js.native
+    var framesInSprite: IMaxFramesInSprite
     
-    var spriteUrlMask: String = js.native
+    var spriteUrlMask: String
   }
   object IFramesQuality {
     
@@ -119,12 +114,11 @@ object previewServiceTypesMod {
     }
   }
   
-  @js.native
   trait IMaxFramesInSprite extends StObject {
     
-    var horz: Double = js.native
+    var horz: Double
     
-    var vert: Double = js.native
+    var vert: Double
   }
   object IMaxFramesInSprite {
     
@@ -145,16 +139,15 @@ object previewServiceTypesMod {
     }
   }
   
-  @js.native
   trait INormalizedFramesQuality extends StObject {
     
-    var framePositionInSprite: IFramePositionInSprite = js.native
+    var framePositionInSprite: IFramePositionInSprite
     
-    var frameSize: IFrameSize = js.native
+    var frameSize: IFrameSize
     
-    var framesInSprite: ITotalFramesInSprite = js.native
+    var framesInSprite: ITotalFramesInSprite
     
-    var spriteUrl: String = js.native
+    var spriteUrl: String
   }
   object INormalizedFramesQuality {
     
@@ -186,10 +179,9 @@ object previewServiceTypesMod {
     }
   }
   
-  @js.native
   trait IPreviewAPI extends StObject {
     
-    var setFramesMap: js.UndefOr[js.Function1[/* map */ IFramesData, Unit]] = js.native
+    var setFramesMap: js.UndefOr[js.Function1[/* map */ IFramesData, Unit]] = js.undefined
   }
   object IPreviewAPI {
     
@@ -210,14 +202,13 @@ object previewServiceTypesMod {
     }
   }
   
-  @js.native
   trait IPreviewService extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getAt(second: Double): js.Array[INormalizedFramesQuality] = js.native
+    def getAt(second: Double): js.Array[INormalizedFramesQuality]
     
-    def setFramesMap(map: IFramesData): Unit = js.native
+    def setFramesMap(map: IFramesData): Unit
   }
   object IPreviewService {
     
@@ -245,12 +236,11 @@ object previewServiceTypesMod {
     }
   }
   
-  @js.native
   trait ITotalFramesInSprite extends StObject {
     
-    var horz: Double = js.native
+    var horz: Double
     
-    var vert: Double = js.native
+    var vert: Double
   }
   object ITotalFramesInSprite {
     

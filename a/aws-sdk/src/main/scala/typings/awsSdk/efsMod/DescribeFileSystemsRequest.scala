@@ -2,31 +2,29 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFileSystemsRequest extends StObject {
   
   /**
     * (Optional) Restricts the list to the file system with this creation token (String). You specify a creation token when you create an Amazon EFS file system.
     */
-  var CreationToken: js.UndefOr[typings.awsSdk.efsMod.CreationToken] = js.native
+  var CreationToken: js.UndefOr[typings.awsSdk.efsMod.CreationToken] = js.undefined
   
   /**
     * (Optional) ID of the file system whose description you want to retrieve (String).
     */
-  var FileSystemId: js.UndefOr[typings.awsSdk.efsMod.FileSystemId] = js.native
+  var FileSystemId: js.UndefOr[typings.awsSdk.efsMod.FileSystemId] = js.undefined
   
   /**
     * (Optional) Opaque pagination token returned from a previous DescribeFileSystems operation (String). If present, specifies to continue the list from where the returning call had left off. 
     */
-  var Marker: js.UndefOr[typings.awsSdk.efsMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.efsMod.Marker] = js.undefined
   
   /**
     * (Optional) Specifies the maximum number of file systems to return in the response (integer). This number is automatically set to 100. The response is paginated at 100 per page if you have more than 100 file systems. 
     */
-  var MaxItems: js.UndefOr[typings.awsSdk.efsMod.MaxItems] = js.native
+  var MaxItems: js.UndefOr[typings.awsSdk.efsMod.MaxItems] = js.undefined
 }
 object DescribeFileSystemsRequest {
   

@@ -6,25 +6,20 @@ import typings.reactVirtualized.esCollectionMod.CollectionCellGroupRendererParam
 import typings.reactVirtualized.reactVirtualizedStrings.grid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellGroupRenderer extends StObject {
   
-  var `aria-label`: grid = js.native
+  var `aria-label`: grid
   
-  var cellGroupRenderer: CollectionCellGroupRenderer = js.native
+  var cellGroupRenderer: CollectionCellGroupRenderer
 }
 object CellGroupRenderer {
   
   @scala.inline
-  def apply(
-    `aria-label`: grid,
-    cellGroupRenderer: /* params */ CollectionCellGroupRendererParams => js.Array[ReactNode]
-  ): CellGroupRenderer = {
+  def apply(cellGroupRenderer: /* params */ CollectionCellGroupRendererParams => js.Array[ReactNode]): CellGroupRenderer = {
     val __obj = js.Dynamic.literal(cellGroupRenderer = js.Any.fromFunction1(cellGroupRenderer))
-    __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-label")("grid")
     __obj.asInstanceOf[CellGroupRenderer]
   }
   

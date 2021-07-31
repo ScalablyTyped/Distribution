@@ -8,7 +8,6 @@ import typings.std.AsyncGenerator
 import typings.std.AsyncIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -40,15 +39,15 @@ object mod {
   @js.native
   trait Decoder extends StObject {
     
-    def apply(): AsyncGenerator[^ | Buffer, ^, _] = js.native
-    def apply(options: PartialDecoderOptions): AsyncGenerator[^ | Buffer, ^, _] = js.native
+    def apply(): AsyncGenerator[^ | Buffer, ^, js.Any] = js.native
+    def apply(options: PartialDecoderOptions): AsyncGenerator[^ | Buffer, ^, js.Any] = js.native
     
     var MAX_DATA_LENGTH: Double = js.native
     
     var MAX_LENGTH_LENGTH: Double = js.native
     
-    def fromReader(reader: AsyncIterator[Buffer, _, js.UndefOr[scala.Nothing]]): AsyncGenerator[^ | Buffer, ^, _] = js.native
-    def fromReader(reader: AsyncIterator[Buffer, _, js.UndefOr[scala.Nothing]], options: PartialDecoderOptions): AsyncGenerator[^ | Buffer, ^, _] = js.native
+    def fromReader(reader: AsyncIterator[Buffer, js.Any, Unit]): AsyncGenerator[^ | Buffer, ^, js.Any] = js.native
+    def fromReader(reader: AsyncIterator[Buffer, js.Any, Unit], options: PartialDecoderOptions): AsyncGenerator[^ | Buffer, ^, js.Any] = js.native
   }
   
   @js.native
@@ -70,8 +69,8 @@ object mod {
   @js.native
   trait Encoder extends StObject {
     
-    def apply(): AsyncGenerator[^ | Buffer, ^, _] = js.native
-    def apply(options: PartiallengthEncoderLengt): AsyncGenerator[^ | Buffer, ^, _] = js.native
+    def apply(): AsyncGenerator[^ | Buffer, ^, js.Any] = js.native
+    def apply(options: PartiallengthEncoderLengt): AsyncGenerator[^ | Buffer, ^, js.Any] = js.native
     
     var DEFAULT_POOL_SIZE: Double = js.native
     

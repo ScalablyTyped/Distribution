@@ -3,44 +3,42 @@ package typings.node.inspectorMod.Profiler
 import typings.node.inspectorMod.Runtime.CallFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Profile node. Holds callsite information, execution statistics and child nodes.
   */
-@js.native
 trait ProfileNode extends StObject {
   
   /**
     * Function location.
     */
-  var callFrame: CallFrame = js.native
+  var callFrame: CallFrame
   
   /**
     * Child node ids.
     */
-  var children: js.UndefOr[js.Array[Double]] = js.native
+  var children: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The reason of being not optimized. The function may be deoptimized or marked as don't optimize.
     */
-  var deoptReason: js.UndefOr[String] = js.native
+  var deoptReason: js.UndefOr[String] = js.undefined
   
   /**
     * Number of samples where this node was on top of the call stack.
     */
-  var hitCount: js.UndefOr[Double] = js.native
+  var hitCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Unique id of the node.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * An array of source position ticks.
     */
-  var positionTicks: js.UndefOr[js.Array[PositionTickInfo]] = js.native
+  var positionTicks: js.UndefOr[js.Array[PositionTickInfo]] = js.undefined
 }
 object ProfileNode {
   

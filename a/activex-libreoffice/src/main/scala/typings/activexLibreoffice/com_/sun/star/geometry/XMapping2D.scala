@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,18 +15,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * there must be another pair that is mapped upon them.
   * @since OOo 2.0
   */
-@js.native
-trait XMapping2D extends XInterface {
+trait XMapping2D
+  extends StObject
+     with XInterface {
   
   /** Forward 2D mapping function */
-  def map(aPoint: RealPoint2D): RealPoint2D = js.native
+  def map(aPoint: RealPoint2D): RealPoint2D
   
   /**
     * Inverse 2D mapping function.
     *
     * The following invariant must hold: `map(mapInverse(p))=p` . This effectively rules out non-bijective mappings.
     */
-  def mapInverse(aPoint: RealPoint2D): RealPoint2D = js.native
+  def mapInverse(aPoint: RealPoint2D): RealPoint2D
 }
 object XMapping2D {
   

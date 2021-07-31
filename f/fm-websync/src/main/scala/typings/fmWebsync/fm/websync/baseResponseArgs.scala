@@ -3,31 +3,31 @@ package typings.fmWebsync.fm.websync
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait baseResponseArgs extends baseArgs {
+trait baseResponseArgs
+  extends StObject
+     with baseArgs {
   
   /**
     * The singleton client.
     */
-  var client: typings.fmWebsync.fm.websync.client = js.native
+  var client: typings.fmWebsync.fm.websync.client
   
   /**
     * The ID of the singleton client.
     */
-  var clientId: String = js.native
+  var clientId: String
   
   /**
     * Extra meta data associated with the request/response.
     */
-  var meta: js.Any = js.native
+  var meta: js.Any
   
   /**
     * The date/time the message was processed on the server.
     */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object baseResponseArgs {
   

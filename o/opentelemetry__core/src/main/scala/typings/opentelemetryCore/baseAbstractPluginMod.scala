@@ -8,14 +8,15 @@ import typings.opentelemetryApi.pluginMod.PluginInternalFiles
 import typings.opentelemetryApi.tracerMod.Tracer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseAbstractPluginMod {
   
   @JSImport("@opentelemetry/core/build/src/platform/BaseAbstractPlugin", "BaseAbstractPlugin")
   @js.native
-  abstract class BaseAbstractPlugin[T] protected () extends Plugin[T] {
+  abstract class BaseAbstractPlugin[T] protected ()
+    extends StObject
+       with Plugin[T] {
     def this(_tracerName: String) = this()
     def this(_tracerName: String, _tracerVersion: String) = this()
     

@@ -16,54 +16,52 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[_] */, CustomGroup /* <: TimelineGroupBase */] extends StObject {
+trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[js.Any] */, CustomGroup /* <: TimelineGroupBase */] extends StObject {
   
-  var canChangeGroup: js.UndefOr[Boolean] = js.native
+  var canChangeGroup: js.UndefOr[Boolean] = js.undefined
   
-  var canMove: js.UndefOr[Boolean] = js.native
+  var canMove: js.UndefOr[Boolean] = js.undefined
   
-  var canResize: js.UndefOr[`false` | `true` | left | right | both] = js.native
+  var canResize: js.UndefOr[`false` | `true` | left | right | both] = js.undefined
   
-  var clickTolerance: js.UndefOr[Double] = js.native
+  var clickTolerance: js.UndefOr[Double] = js.undefined
   
-  var defaultTimeEnd: js.UndefOr[Date | Moment] = js.native
+  var defaultTimeEnd: js.UndefOr[Date | Moment] = js.undefined
   
-  var defaultTimeStart: js.UndefOr[Date | Moment] = js.native
+  var defaultTimeStart: js.UndefOr[Date | Moment] = js.undefined
   
-  var dragSnap: js.UndefOr[Double] = js.native
+  var dragSnap: js.UndefOr[Double] = js.undefined
   
   var groupRenderer: js.UndefOr[
     js.Function1[/* props */ ReactCalendarGroupRendererProps[CustomGroup], ReactNode]
-  ] = js.native
+  ] = js.undefined
   
-  var groups: js.Array[CustomGroup] = js.native
+  var groups: js.Array[CustomGroup]
   
   // Fields that are in propTypes but not documented
-  var headerRef: js.UndefOr[Ref[_]] = js.native
+  var headerRef: js.UndefOr[Ref[js.Any]] = js.undefined
   
-  var horizontalLineClassNamesForGroup: js.UndefOr[js.Function1[/* group */ CustomGroup, js.Array[String]]] = js.native
+  var horizontalLineClassNamesForGroup: js.UndefOr[js.Function1[/* group */ CustomGroup, js.Array[String]]] = js.undefined
   
-  var itemHeightRatio: js.UndefOr[Double] = js.native
+  var itemHeightRatio: js.UndefOr[Double] = js.undefined
   
-  var itemRenderer: js.UndefOr[js.Function1[/* props */ ReactCalendarItemRendererProps[CustomItem], ReactNode]] = js.native
+  var itemRenderer: js.UndefOr[js.Function1[/* props */ ReactCalendarItemRendererProps[CustomItem], ReactNode]] = js.undefined
   
-  var itemTouchSendsClick: js.UndefOr[Boolean] = js.native
+  var itemTouchSendsClick: js.UndefOr[Boolean] = js.undefined
   
-  var items: js.Array[CustomItem] = js.native
+  var items: js.Array[CustomItem]
   
-  var keys: js.UndefOr[TimelineKeys] = js.native
+  var keys: js.UndefOr[TimelineKeys] = js.undefined
   
-  var lineHeight: js.UndefOr[Double] = js.native
+  var lineHeight: js.UndefOr[Double] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minResizeWidth: js.UndefOr[Double] = js.native
+  var minResizeWidth: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
   var moveResizeValidator: js.UndefOr[
     js.Function4[
@@ -73,9 +71,9 @@ trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[_] */, Custom
       /* resizeEdge */ left | right, 
       Double
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onBoundsChange: js.UndefOr[js.Function2[/* canvasTimeStart */ Double, /* canvasTimeEnd */ Double, _]] = js.native
+  var onBoundsChange: js.UndefOr[js.Function2[/* canvasTimeStart */ Double, /* canvasTimeEnd */ Double, js.Any]] = js.undefined
   
   var onCanvasClick: js.UndefOr[
     js.Function3[
@@ -84,7 +82,7 @@ trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[_] */, Custom
       /* e */ SyntheticEvent[Element, Event], 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onCanvasContextMenu: js.UndefOr[
     js.Function3[
@@ -93,7 +91,7 @@ trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[_] */, Custom
       /* e */ SyntheticEvent[Element, Event], 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onCanvasDoubleClick: js.UndefOr[
     js.Function3[
@@ -102,85 +100,85 @@ trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[_] */, Custom
       /* e */ SyntheticEvent[Element, Event], 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onItemClick: js.UndefOr[
     js.Function3[/* itemId */ Id, /* e */ SyntheticEvent[Element, Event], /* time */ Double, scala.Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onItemContextMenu: js.UndefOr[
     js.Function3[/* itemId */ Id, /* e */ SyntheticEvent[Element, Event], /* time */ Double, scala.Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onItemDeselect: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], scala.Unit]] = js.native
+  var onItemDeselect: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], scala.Unit]] = js.undefined
   
   var onItemDoubleClick: js.UndefOr[
     js.Function3[/* itemId */ Id, /* e */ SyntheticEvent[Element, Event], /* time */ Double, scala.Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onItemDrag: js.UndefOr[
     js.Function1[/* itemDragObject */ OnItemDragObjectMove | OnItemDragObjectResize, scala.Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onItemMove: js.UndefOr[
     js.Function3[/* itemId */ Id, /* dragTime */ Double, /* newGroupOrder */ Double, scala.Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onItemResize: js.UndefOr[
     js.Function3[/* itemId */ Id, /* endTimeOrStartTime */ Double, /* edge */ left | right, scala.Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onItemSelect: js.UndefOr[js.Function3[/* itemId */ Id, /* e */ js.Any, /* time */ Double, scala.Unit]] = js.native
+  var onItemSelect: js.UndefOr[js.Function3[/* itemId */ Id, /* e */ js.Any, /* time */ Double, scala.Unit]] = js.undefined
   
   var onTimeChange: js.UndefOr[
     js.Function3[
       /* visibleTimeStart */ Double, 
       /* visibleTimeEnd */ Double, 
       /* updateScrollCanvas */ js.Function2[/* start */ Double, /* end */ Double, scala.Unit], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onZoom: js.UndefOr[js.Function1[/* timelineContext */ TimelineContext, scala.Unit]] = js.native
+  var onZoom: js.UndefOr[js.Function1[/* timelineContext */ TimelineContext, scala.Unit]] = js.undefined
   
-  var resizeDetector: js.UndefOr[js.Function1[/* containerResizeDetector */ js.Any, scala.Unit]] = js.native
+  var resizeDetector: js.UndefOr[js.Function1[/* containerResizeDetector */ js.Any, scala.Unit]] = js.undefined
   
-  var rightSidebarContent: js.UndefOr[ReactNode] = js.native
+  var rightSidebarContent: js.UndefOr[ReactNode] = js.undefined
   
-  var rightSidebarWidth: js.UndefOr[Double] = js.native
+  var rightSidebarWidth: js.UndefOr[Double] = js.undefined
   
-  var scrollRef: js.UndefOr[Ref[_]] = js.native
+  var scrollRef: js.UndefOr[Ref[js.Any]] = js.undefined
   
-  var selected: js.UndefOr[js.Array[Double]] = js.native
+  var selected: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var sidebarContent: js.UndefOr[ReactNode] = js.native
+  var sidebarContent: js.UndefOr[ReactNode] = js.undefined
   
-  var sidebarWidth: js.UndefOr[Double] = js.native
+  var sidebarWidth: js.UndefOr[Double] = js.undefined
   
-  var stackItems: js.UndefOr[Boolean] = js.native
+  var stackItems: js.UndefOr[Boolean] = js.undefined
   
-  var timeSteps: js.UndefOr[TimelineTimeSteps] = js.native
+  var timeSteps: js.UndefOr[TimelineTimeSteps] = js.undefined
   
-  var traditionalZoom: js.UndefOr[Boolean] = js.native
+  var traditionalZoom: js.UndefOr[Boolean] = js.undefined
   
-  var useResizeHandle: js.UndefOr[Boolean] = js.native
+  var useResizeHandle: js.UndefOr[Boolean] = js.undefined
   
-  var verticalLineClassNamesForTime: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, js.UndefOr[js.Array[String]]]] = js.native
+  var verticalLineClassNamesForTime: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, js.UndefOr[js.Array[String]]]] = js.undefined
   
-  var visibleTimeEnd: js.UndefOr[Date | Moment | Double] = js.native
+  var visibleTimeEnd: js.UndefOr[Date | Moment | Double] = js.undefined
   
-  var visibleTimeStart: js.UndefOr[Date | Moment | Double] = js.native
+  var visibleTimeStart: js.UndefOr[Date | Moment | Double] = js.undefined
 }
 object ReactCalendarTimelineProps {
   
   @scala.inline
-  def apply[CustomItem /* <: TimelineItemBase[_] */, CustomGroup /* <: TimelineGroupBase */](groups: js.Array[CustomGroup], items: js.Array[CustomItem]): ReactCalendarTimelineProps[CustomItem, CustomGroup] = {
+  def apply[CustomItem /* <: TimelineItemBase[js.Any] */, CustomGroup /* <: TimelineGroupBase */](groups: js.Array[CustomGroup], items: js.Array[CustomItem]): ReactCalendarTimelineProps[CustomItem, CustomGroup] = {
     val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactCalendarTimelineProps[CustomItem, CustomGroup]]
   }
   
   @scala.inline
-  implicit class ReactCalendarTimelinePropsMutableBuilder[Self <: ReactCalendarTimelineProps[_, _], CustomItem /* <: TimelineItemBase[_] */, CustomGroup /* <: TimelineGroupBase */] (val x: Self with (ReactCalendarTimelineProps[CustomItem, CustomGroup])) extends AnyVal {
+  implicit class ReactCalendarTimelinePropsMutableBuilder[Self <: ReactCalendarTimelineProps[?, ?], CustomItem /* <: TimelineItemBase[js.Any] */, CustomGroup /* <: TimelineGroupBase */] (val x: Self & (ReactCalendarTimelineProps[CustomItem, CustomGroup])) extends AnyVal {
     
     @scala.inline
     def setCanChangeGroup(value: Boolean): Self = StObject.set(x, "canChangeGroup", value.asInstanceOf[js.Any])
@@ -237,10 +235,10 @@ object ReactCalendarTimelineProps {
     def setGroupsVarargs(value: CustomGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setHeaderRef(value: Ref[_]): Self = StObject.set(x, "headerRef", value.asInstanceOf[js.Any])
+    def setHeaderRef(value: Ref[js.Any]): Self = StObject.set(x, "headerRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRefFunction1(value: /* instance */ _ | Null => scala.Unit): Self = StObject.set(x, "headerRef", js.Any.fromFunction1(value))
+    def setHeaderRefFunction1(value: /* instance */ js.Any | Null => scala.Unit): Self = StObject.set(x, "headerRef", js.Any.fromFunction1(value))
     
     @scala.inline
     def setHeaderRefNull: Self = StObject.set(x, "headerRef", null)
@@ -317,7 +315,7 @@ object ReactCalendarTimelineProps {
     def setMoveResizeValidatorUndefined: Self = StObject.set(x, "moveResizeValidator", js.undefined)
     
     @scala.inline
-    def setOnBoundsChange(value: (/* canvasTimeStart */ Double, /* canvasTimeEnd */ Double) => _): Self = StObject.set(x, "onBoundsChange", js.Any.fromFunction2(value))
+    def setOnBoundsChange(value: (/* canvasTimeStart */ Double, /* canvasTimeEnd */ Double) => js.Any): Self = StObject.set(x, "onBoundsChange", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnBoundsChangeUndefined: Self = StObject.set(x, "onBoundsChange", js.undefined)
@@ -390,7 +388,7 @@ object ReactCalendarTimelineProps {
     
     @scala.inline
     def setOnTimeChange(
-      value: (/* visibleTimeStart */ Double, /* visibleTimeEnd */ Double, /* updateScrollCanvas */ js.Function2[/* start */ Double, /* end */ Double, scala.Unit]) => _
+      value: (/* visibleTimeStart */ Double, /* visibleTimeEnd */ Double, /* updateScrollCanvas */ js.Function2[/* start */ Double, /* end */ Double, scala.Unit]) => js.Any
     ): Self = StObject.set(x, "onTimeChange", js.Any.fromFunction3(value))
     
     @scala.inline
@@ -421,10 +419,10 @@ object ReactCalendarTimelineProps {
     def setRightSidebarWidthUndefined: Self = StObject.set(x, "rightSidebarWidth", js.undefined)
     
     @scala.inline
-    def setScrollRef(value: Ref[_]): Self = StObject.set(x, "scrollRef", value.asInstanceOf[js.Any])
+    def setScrollRef(value: Ref[js.Any]): Self = StObject.set(x, "scrollRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollRefFunction1(value: /* instance */ _ | Null => scala.Unit): Self = StObject.set(x, "scrollRef", js.Any.fromFunction1(value))
+    def setScrollRefFunction1(value: /* instance */ js.Any | Null => scala.Unit): Self = StObject.set(x, "scrollRef", js.Any.fromFunction1(value))
     
     @scala.inline
     def setScrollRefNull: Self = StObject.set(x, "scrollRef", null)

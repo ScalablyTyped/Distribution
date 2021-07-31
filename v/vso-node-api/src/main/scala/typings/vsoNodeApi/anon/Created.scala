@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Created extends StObject {
   
-  var created: scala.Double = js.native
+  var created: scala.Double
   
-  var pendingUpload: scala.Double = js.native
+  var pendingUpload: scala.Double
 }
 object Created {
   

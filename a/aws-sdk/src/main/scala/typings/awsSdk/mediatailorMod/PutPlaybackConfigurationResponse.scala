@@ -2,96 +2,94 @@ package typings.awsSdk.mediatailorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutPlaybackConfigurationResponse extends StObject {
   
   /**
     * The URL for the ad decision server (ADS). This includes the specification of static parameters and placeholders for dynamic parameters. AWS Elemental MediaTailor substitutes player-specific and session-specific parameters as needed when calling the ADS. Alternately, for testing, you can provide a static VAST URL. The maximum length is 25,000 characters.
     */
-  var AdDecisionServerUrl: js.UndefOr[string] = js.native
+  var AdDecisionServerUrl: js.UndefOr[string] = js.undefined
   
   /**
     * The configuration for Avail Suppression. Ad suppression can be used to turn off ad personalization in a long manifest, or if a viewer joins mid-break.
     */
-  var AvailSuppression: js.UndefOr[typings.awsSdk.mediatailorMod.AvailSuppression] = js.native
+  var AvailSuppression: js.UndefOr[typings.awsSdk.mediatailorMod.AvailSuppression] = js.undefined
   
   /**
     * The configuration for bumpers. Bumpers are short audio or video clips that play at the start or before the end of an ad break. 
     */
-  var Bumper: js.UndefOr[typings.awsSdk.mediatailorMod.Bumper] = js.native
+  var Bumper: js.UndefOr[typings.awsSdk.mediatailorMod.Bumper] = js.undefined
   
   /**
     * The configuration for using a content delivery network (CDN), like Amazon CloudFront, for content and ad segment management. 
     */
-  var CdnConfiguration: js.UndefOr[typings.awsSdk.mediatailorMod.CdnConfiguration] = js.native
+  var CdnConfiguration: js.UndefOr[typings.awsSdk.mediatailorMod.CdnConfiguration] = js.undefined
   
   /**
     * The configuration for DASH content. 
     */
-  var DashConfiguration: js.UndefOr[typings.awsSdk.mediatailorMod.DashConfiguration] = js.native
+  var DashConfiguration: js.UndefOr[typings.awsSdk.mediatailorMod.DashConfiguration] = js.undefined
   
   /**
     * The configuration for HLS content. 
     */
-  var HlsConfiguration: js.UndefOr[typings.awsSdk.mediatailorMod.HlsConfiguration] = js.native
+  var HlsConfiguration: js.UndefOr[typings.awsSdk.mediatailorMod.HlsConfiguration] = js.undefined
   
   /**
     * The configuration for pre-roll ad insertion.
     */
-  var LivePreRollConfiguration: js.UndefOr[typings.awsSdk.mediatailorMod.LivePreRollConfiguration] = js.native
+  var LivePreRollConfiguration: js.UndefOr[typings.awsSdk.mediatailorMod.LivePreRollConfiguration] = js.undefined
   
   /**
     * The configuration for manifest processing rules. Manifest processing rules enable customization of the personalized manifests created by MediaTailor.
     */
-  var ManifestProcessingRules: js.UndefOr[typings.awsSdk.mediatailorMod.ManifestProcessingRules] = js.native
+  var ManifestProcessingRules: js.UndefOr[typings.awsSdk.mediatailorMod.ManifestProcessingRules] = js.undefined
   
   /**
     * The identifier for the playback configuration.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * The maximum duration of underfilled ad time (in seconds) allowed in an ad break.
     */
-  var PersonalizationThresholdSeconds: js.UndefOr[integerMin1] = js.native
+  var PersonalizationThresholdSeconds: js.UndefOr[integerMin1] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the playback configuration. 
     */
-  var PlaybackConfigurationArn: js.UndefOr[string] = js.native
+  var PlaybackConfigurationArn: js.UndefOr[string] = js.undefined
   
   /**
     * The URL that the player accesses to get a manifest from AWS Elemental MediaTailor. This session will use server-side reporting. 
     */
-  var PlaybackEndpointPrefix: js.UndefOr[string] = js.native
+  var PlaybackEndpointPrefix: js.UndefOr[string] = js.undefined
   
   /**
     * The URL that the player uses to initialize a session that uses client-side reporting. 
     */
-  var SessionInitializationEndpointPrefix: js.UndefOr[string] = js.native
+  var SessionInitializationEndpointPrefix: js.UndefOr[string] = js.undefined
   
   /**
     * The URL for a high-quality video asset to transcode and use to fill in time that's not used by ads. AWS Elemental MediaTailor shows the slate to fill in gaps in media content. Configuring the slate is optional for non-VPAID playback configurations. For VPAID, the slate is required because MediaTailor provides it in the slots designated for dynamic ad content. The slate must be a high-quality asset that contains both audio and video. 
     */
-  var SlateAdUrl: js.UndefOr[string] = js.native
+  var SlateAdUrl: js.UndefOr[string] = js.undefined
   
   /**
     * The tags assigned to the playback configuration. 
     */
-  var Tags: js.UndefOr[mapOfString] = js.native
+  var Tags: js.UndefOr[mapOfString] = js.undefined
   
   /**
     * The name that is used to associate this playback configuration with a custom transcode profile. This overrides the dynamic transcoding defaults of MediaTailor. Use this only if you have already set up custom profiles with the help of AWS Support.
     */
-  var TranscodeProfileName: js.UndefOr[string] = js.native
+  var TranscodeProfileName: js.UndefOr[string] = js.undefined
   
   /**
     * The URL prefix for the master playlist for the stream, minus the asset ID. The maximum length is 512 characters.
     */
-  var VideoContentSourceUrl: js.UndefOr[string] = js.native
+  var VideoContentSourceUrl: js.UndefOr[string] = js.undefined
 }
 object PutPlaybackConfigurationResponse {
   

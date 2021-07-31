@@ -4,16 +4,14 @@ import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.`best fi
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.lookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Pick<@formatjs/intl-displaynames.@formatjs/intl-displaynames/lib.DisplayNamesOptions, 'localeMatcher'> */
-  @js.native
   trait PickDisplayNamesOptionslo extends StObject {
     
-    var localeMatcher: js.UndefOr[lookup | (`best fit`)] = js.native
+    var localeMatcher: js.UndefOr[lookup | (`best fit`)] = js.undefined
   }
   object PickDisplayNamesOptionslo {
     

@@ -3,23 +3,24 @@ package typings.stylableCore
 import typings.stylableCore.anon.Cache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timedCacheMod {
   
-  @JSImport("@stylable/core/cjs/timed-cache", "timedCache")
+  @JSImport("@stylable/core/cjs/timed-cache", JSImport.Namespace)
   @js.native
-  def timedCache[T /* <: js.Function1[/* repeated */ String, String] */](fn: T, hasTimeoutUseTimerCreateKey: TimedCacheOptions): Cache[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def timedCache[T /* <: js.Function1[/* repeated */ String, String] */](fn: T, hasTimeoutUseTimerCreateKey: TimedCacheOptions): Cache[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("timedCache")(fn.asInstanceOf[js.Any], hasTimeoutUseTimerCreateKey.asInstanceOf[js.Any])).asInstanceOf[Cache[T]]
+  
   trait TimedCacheOptions extends StObject {
     
-    def createKey(args: js.Array[String]): String = js.native
+    def createKey(args: js.Array[String]): String
     
-    var timeout: Double = js.native
+    var timeout: Double
     
-    var useTimer: Boolean = js.native
+    var useTimer: Boolean
   }
   object TimedCacheOptions {
     

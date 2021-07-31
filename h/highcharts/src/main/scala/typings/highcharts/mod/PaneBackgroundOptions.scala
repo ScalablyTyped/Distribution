@@ -2,50 +2,48 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaneBackgroundOptions extends StObject {
   
   /**
     * (Highcharts) The background color or gradient for the pane.
     */
-  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts) The pane background border color.
     */
-  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts) The pixel border width of the pane background.
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The class name for this background.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) The inner radius of the pane background. Can be either
     * numeric (pixels) or a percentage string.
     */
-  var innerRadius: js.UndefOr[Double | String] = js.native
+  var innerRadius: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts) The outer radius of the circular pane background. Can be
     * either numeric (pixels) or a percentage string.
     */
-  var outerRadius: js.UndefOr[Double | String] = js.native
+  var outerRadius: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts) The shape of the pane background. When `solid`, the
     * background is circular. When `arc`, the background extends only from the
     * min to the max of the value axis.
     */
-  var shape: js.UndefOr[PaneBackgroundShapeValue] = js.native
+  var shape: js.UndefOr[PaneBackgroundShapeValue] = js.undefined
 }
 object PaneBackgroundOptions {
   

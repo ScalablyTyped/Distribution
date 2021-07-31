@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scte35DescriptorSettings extends StObject {
   
   /**
     * SCTE-35 Segmentation Descriptor.
     */
-  var SegmentationDescriptorScte35DescriptorSettings: Scte35SegmentationDescriptor = js.native
+  var SegmentationDescriptorScte35DescriptorSettings: Scte35SegmentationDescriptor
 }
 object Scte35DescriptorSettings {
   

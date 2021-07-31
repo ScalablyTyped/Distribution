@@ -4,7 +4,6 @@ import typings.carbonComponents.checkboxMod.default
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("carbon-components/globals/js/components", "Checkbox")
@@ -32,15 +31,15 @@ object Checkbox {
     @js.native
     val ^ : js.Any = js.native
     
+    @JSImport("carbon-components/globals/js/components", "Checkbox.stateChangeTypes.false")
+    @js.native
+    val `false`: String = js.native
+    
     @JSImport("carbon-components/globals/js/components", "Checkbox.stateChangeTypes.mixed")
     @js.native
     def mixed: String = js.native
     @scala.inline
     def mixed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mixed")(x.asInstanceOf[js.Any])
-    
-    @JSImport("carbon-components/globals/js/components", "Checkbox.stateChangeTypes.false")
-    @js.native
-    val `false`: String = js.native
     
     @JSImport("carbon-components/globals/js/components", "Checkbox.stateChangeTypes.true")
     @js.native

@@ -10,9 +10,9 @@ Provides functions for detecting if the host environment supports the WebCrypto 
 | ------------------ | :-------------: |
 | Full name          | @aws-crypto/supports-web-crypto |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 5 |
 | # dependents       | 3 |
-| # downloads        | 3216329 |
+| # downloads        | 5323396 |
 | # stars            | 0 |
 
 ## Links

@@ -4,17 +4,15 @@ import typings.ioredis.ioredisBooleans.`false`
 import typings.ioredis.mod.ValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Host extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var port: Double = js.native
+    var port: Double
   }
   object Host {
     
@@ -35,14 +33,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Ip extends StObject {
     
-    var ip: String = js.native
+    var ip: String
     
-    var port: String = js.native
+    var port: String
     
-    var prio: js.UndefOr[Double] = js.native
+    var prio: js.UndefOr[Double] = js.undefined
   }
   object Ip {
     
@@ -69,12 +66,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Lua extends StObject {
     
-    var lua: js.UndefOr[String] = js.native
+    var lua: js.UndefOr[String] = js.undefined
     
-    var numberOfKeys: js.UndefOr[Double] = js.native
+    var numberOfKeys: js.UndefOr[Double] = js.undefined
   }
   object Lua {
     
@@ -101,16 +97,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Pipeline extends StObject {
     
-    var pipeline: `false` = js.native
+    var pipeline: `false`
   }
   object Pipeline {
     
     @scala.inline
-    def apply(pipeline: `false`): Pipeline = {
-      val __obj = js.Dynamic.literal(pipeline = pipeline.asInstanceOf[js.Any])
+    def apply(): Pipeline = {
+      val __obj = js.Dynamic.literal(pipeline = false)
       __obj.asInstanceOf[Pipeline]
     }
     
@@ -122,21 +117,20 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofCommand extends StObject {
     
     /* static member */
-    def setArgumentTransformer(name: String, fn: js.Function1[/* args */ js.Array[ValueType], js.Array[ValueType]]): Unit = js.native
+    def setArgumentTransformer(name: String, fn: js.Function1[/* args */ js.Array[ValueType], js.Array[ValueType]]): Unit
     
     /* static member */
-    def setReplyTransformer(name: String, fn: js.Function1[/* result */ js.Any, _]): Unit = js.native
+    def setReplyTransformer(name: String, fn: js.Function1[/* result */ js.Any, js.Any]): Unit
   }
   object TypeofCommand {
     
     @scala.inline
     def apply(
       setArgumentTransformer: (String, js.Function1[/* args */ js.Array[ValueType], js.Array[ValueType]]) => Unit,
-      setReplyTransformer: (String, js.Function1[/* result */ js.Any, _]) => Unit
+      setReplyTransformer: (String, js.Function1[/* result */ js.Any, js.Any]) => Unit
     ): TypeofCommand = {
       val __obj = js.Dynamic.literal(setArgumentTransformer = js.Any.fromFunction2(setArgumentTransformer), setReplyTransformer = js.Any.fromFunction2(setReplyTransformer))
       __obj.asInstanceOf[TypeofCommand]
@@ -149,7 +143,7 @@ object anon {
       def setSetArgumentTransformer(value: (String, js.Function1[/* args */ js.Array[ValueType], js.Array[ValueType]]) => Unit): Self = StObject.set(x, "setArgumentTransformer", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setSetReplyTransformer(value: (String, js.Function1[/* result */ js.Any, _]) => Unit): Self = StObject.set(x, "setReplyTransformer", js.Any.fromFunction2(value))
+      def setSetReplyTransformer(value: (String, js.Function1[/* result */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "setReplyTransformer", js.Any.fromFunction2(value))
     }
   }
 }

@@ -2,56 +2,54 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IExpandedMonarchLanguageAction extends StObject {
   
   /**
     * @open or @close
     */
-  var bracket: js.UndefOr[String] = js.native
+  var bracket: js.UndefOr[String] = js.undefined
   
   /**
     * map from string to ILanguageAction
     */
-  var cases: js.UndefOr[js.Object] = js.native
+  var cases: js.UndefOr[js.Object] = js.undefined
   
   /**
     * go back n characters in the stream
     */
-  var goBack: js.UndefOr[Double] = js.native
+  var goBack: js.UndefOr[Double] = js.undefined
   
   /**
     * array of actions for each parenthesized match group
     */
-  var group: js.UndefOr[js.Array[IMonarchLanguageAction]] = js.native
+  var group: js.UndefOr[js.Array[IMonarchLanguageAction]] = js.undefined
   
   /**
     * log a message to the browser console window
     */
-  var log: js.UndefOr[String] = js.native
+  var log: js.UndefOr[String] = js.undefined
   
   /**
     * the next state to push, or "@push", "@pop", "@popall"
     */
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
   
   /**
     * switch to embedded language (using the mimetype) or get out using "@pop"
     */
-  var nextEmbedded: js.UndefOr[String] = js.native
+  var nextEmbedded: js.UndefOr[String] = js.undefined
   
   /**
     * switch to this state
     */
-  var switchTo: js.UndefOr[String] = js.native
+  var switchTo: js.UndefOr[String] = js.undefined
   
   /**
     * token class (ie. css class) (or "@brackets" or "@rematch")
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object IExpandedMonarchLanguageAction {
   

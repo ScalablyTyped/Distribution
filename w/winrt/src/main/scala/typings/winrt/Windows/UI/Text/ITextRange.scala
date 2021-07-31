@@ -5,61 +5,59 @@ import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
 import typings.winrt.anon.Hit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITextRange extends StObject {
   
-  def canPaste(format: Double): Boolean = js.native
+  def canPaste(format: Double): Boolean
   
-  def changeCase(value: LetterCase): Unit = js.native
+  def changeCase(value: LetterCase): Unit
   
-  var character: String = js.native
+  var character: String
   
-  var characterFormat: ITextCharacterFormat = js.native
+  var characterFormat: ITextCharacterFormat
   
-  def collapse(value: Boolean): Unit = js.native
+  def collapse(value: Boolean): Unit
   
-  def copy(): Unit = js.native
+  def copy(): Unit
   
-  def cut(): Unit = js.native
+  def cut(): Unit
   
-  def delete_(unit: TextRangeUnit, count: Double): Double = js.native
+  def delete_(unit: TextRangeUnit, count: Double): Double
   
-  def endOf(unit: TextRangeUnit, extend: Boolean): Double = js.native
+  def endOf(unit: TextRangeUnit, extend: Boolean): Double
   
-  var endPosition: Double = js.native
+  var endPosition: Double
   
-  def expand(unit: TextRangeUnit): Double = js.native
+  def expand(unit: TextRangeUnit): Double
   
-  def findText(value: String, scanLength: Double, options: FindOptions): Double = js.native
+  def findText(value: String, scanLength: Double, options: FindOptions): Double
   
-  var formattedText: ITextRange = js.native
+  var formattedText: ITextRange
   
-  def getCharacterUtf32(offset: Double): Double = js.native
+  def getCharacterUtf32(offset: Double): Double
   
-  def getClone(): ITextRange = js.native
+  def getClone(): ITextRange
   
-  def getIndex(unit: TextRangeUnit): Double = js.native
+  def getIndex(unit: TextRangeUnit): Double
   
   def getPoint(
     horizontalAlign: HorizontalCharacterAlignment,
     verticalAlign: VerticalCharacterAlignment,
     options: PointOptions
-  ): Point = js.native
+  ): Point
   
-  def getRect(options: PointOptions): Hit = js.native
+  def getRect(options: PointOptions): Hit
   
-  def getText(options: TextGetOptions): String = js.native
+  def getText(options: TextGetOptions): String
   
-  def getTextViaStream(options: TextGetOptions, value: IRandomAccessStream): Unit = js.native
+  def getTextViaStream(options: TextGetOptions, value: IRandomAccessStream): Unit
   
-  var gravity: RangeGravity = js.native
+  var gravity: RangeGravity
   
-  def inRange(range: ITextRange): Boolean = js.native
+  def inRange(range: ITextRange): Boolean
   
-  def inStory(range: ITextRange): Boolean = js.native
+  def inStory(range: ITextRange): Boolean
   
   def insertImage(
     width: Double,
@@ -68,45 +66,45 @@ trait ITextRange extends StObject {
     verticalAlign: VerticalCharacterAlignment,
     alternateText: String,
     value: IRandomAccessStream
-  ): Unit = js.native
+  ): Unit
   
-  def isEqual(range: ITextRange): Boolean = js.native
+  def isEqual(range: ITextRange): Boolean
   
-  var length: Double = js.native
+  var length: Double
   
-  var link: String = js.native
+  var link: String
   
-  def matchSelection(): Unit = js.native
+  def matchSelection(): Unit
   
-  def move(unit: TextRangeUnit, count: Double): Double = js.native
+  def move(unit: TextRangeUnit, count: Double): Double
   
-  def moveEnd(unit: TextRangeUnit, count: Double): Double = js.native
+  def moveEnd(unit: TextRangeUnit, count: Double): Double
   
-  def moveStart(unit: TextRangeUnit, count: Double): Double = js.native
+  def moveStart(unit: TextRangeUnit, count: Double): Double
   
-  var paragraphFormat: ITextParagraphFormat = js.native
+  var paragraphFormat: ITextParagraphFormat
   
-  def paste(format: Double): Unit = js.native
+  def paste(format: Double): Unit
   
-  def scrollIntoView(value: PointOptions): Unit = js.native
+  def scrollIntoView(value: PointOptions): Unit
   
-  def setIndex(unit: TextRangeUnit, index: Double, extend: Boolean): Unit = js.native
+  def setIndex(unit: TextRangeUnit, index: Double, extend: Boolean): Unit
   
-  def setPoint(point: Point, options: PointOptions, extend: Boolean): Unit = js.native
+  def setPoint(point: Point, options: PointOptions, extend: Boolean): Unit
   
-  def setRange(startPosition: Double, endPosition: Double): Unit = js.native
+  def setRange(startPosition: Double, endPosition: Double): Unit
   
-  def setText(options: TextSetOptions, value: String): Unit = js.native
+  def setText(options: TextSetOptions, value: String): Unit
   
-  def setTextViaStream(options: TextSetOptions, value: IRandomAccessStream): Unit = js.native
+  def setTextViaStream(options: TextSetOptions, value: IRandomAccessStream): Unit
   
-  def startOf(unit: TextRangeUnit, extend: Boolean): Double = js.native
+  def startOf(unit: TextRangeUnit, extend: Boolean): Double
   
-  var startPosition: Double = js.native
+  var startPosition: Double
   
-  var storyLength: Double = js.native
+  var storyLength: Double
   
-  var text: String = js.native
+  var text: String
 }
 object ITextRange {
   

@@ -8,7 +8,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formListMod extends Shortcut {
@@ -17,14 +16,13 @@ object formListMod extends Shortcut {
   @js.native
   val default: FC[FormListProps] = js.native
   
-  @js.native
   trait FormListFieldData extends StObject {
     
-    var fieldKey: Double = js.native
+    var fieldKey: Double
     
-    var key: Double = js.native
+    var key: Double
     
-    var name: Double = js.native
+    var name: Double
   }
   object FormListFieldData {
     
@@ -52,7 +50,7 @@ object formListMod extends Shortcut {
   trait FormListOperation extends StObject {
     
     def add(): Unit = js.native
-    def add(defaultValue: js.UndefOr[scala.Nothing], insertIndex: Double): Unit = js.native
+    def add(defaultValue: Unit, insertIndex: Double): Unit = js.native
     def add(defaultValue: StoreValue): Unit = js.native
     def add(defaultValue: StoreValue, insertIndex: Double): Unit = js.native
     
@@ -62,16 +60,15 @@ object formListMod extends Shortcut {
     def remove(index: Double): Unit = js.native
   }
   
-  @js.native
   trait FormListProps extends StObject {
     
-    def children(fields: js.Array[FormListFieldData], operation: FormListOperation, meta: Errors): ReactNode = js.native
+    def children(fields: js.Array[FormListFieldData], operation: FormListOperation, meta: Errors): ReactNode
     
-    var name: String | Double | (js.Array[String | Double]) = js.native
+    var name: String | Double | (js.Array[String | Double])
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var rules: js.UndefOr[js.Array[ValidatorRule]] = js.native
+    var rules: js.UndefOr[js.Array[ValidatorRule]] = js.undefined
   }
   object FormListProps {
     

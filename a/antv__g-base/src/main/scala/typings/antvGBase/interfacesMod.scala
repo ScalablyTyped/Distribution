@@ -19,13 +19,14 @@ import typings.antvGBase.typesMod.ShapeCfg
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
   @js.native
-  trait IBase extends IObservable {
+  trait IBase
+    extends StObject
+       with IObservable {
     
     var cfg: LooseObject = js.native
     
@@ -56,7 +57,9 @@ object interfacesMod {
   }
   
   @js.native
-  trait ICanvas extends IContainer {
+  trait ICanvas
+    extends StObject
+       with IContainer {
     
     /**
       * 改变画布大小
@@ -120,7 +123,9 @@ object interfacesMod {
   }
   
   @js.native
-  trait IContainer extends IElement {
+  trait IContainer
+    extends StObject
+       with IElement {
     
     /**
       * 添加图形元素，已经在外面构造好的类
@@ -272,10 +277,13 @@ object interfacesMod {
   
   @js.native
   trait ICtor[T]
-    extends Instantiable1[/* cfg */ js.Any, T]
+    extends StObject
+       with Instantiable1[/* cfg */ js.Any, T]
   
   @js.native
-  trait IElement extends IBase {
+  trait IElement
+    extends StObject
+       with IBase {
     
     /**
       * 执行动画
@@ -286,31 +294,13 @@ object interfacesMod {
       * @param {number}   delay    动画延迟时间
       */
     def animate(onFrame: OnFrame, duration: Double): js.Any = js.native
-    def animate(
-      onFrame: OnFrame,
-      duration: Double,
-      easing: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      delay: Double
-    ): js.Any = js.native
-    def animate(onFrame: OnFrame, duration: Double, easing: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
-    def animate(
-      onFrame: OnFrame,
-      duration: Double,
-      easing: js.UndefOr[scala.Nothing],
-      callback: js.Function,
-      delay: Double
-    ): js.Any = js.native
     def animate(onFrame: OnFrame, duration: Double, easing: String): js.Any = js.native
-    def animate(
-      onFrame: OnFrame,
-      duration: Double,
-      easing: String,
-      callback: js.UndefOr[scala.Nothing],
-      delay: Double
-    ): js.Any = js.native
     def animate(onFrame: OnFrame, duration: Double, easing: String, callback: js.Function): js.Any = js.native
     def animate(onFrame: OnFrame, duration: Double, easing: String, callback: js.Function, delay: Double): js.Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: String, callback: Unit, delay: Double): js.Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: Unit, callback: js.Function): js.Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: Unit, callback: js.Function, delay: Double): js.Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: Unit, callback: Unit, delay: Double): js.Any = js.native
     /**
       * 执行动画
       * @param {ElementAttrs} toAttrs 动画最终状态
@@ -326,31 +316,13 @@ object interfacesMod {
       * @param {number}       delay 动画延迟时间
       */
     def animate(toAttrs: ElementAttrs, duration: Double): js.Any = js.native
-    def animate(
-      toAttrs: ElementAttrs,
-      duration: Double,
-      easing: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      delay: Double
-    ): js.Any = js.native
-    def animate(toAttrs: ElementAttrs, duration: Double, easing: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
-    def animate(
-      toAttrs: ElementAttrs,
-      duration: Double,
-      easing: js.UndefOr[scala.Nothing],
-      callback: js.Function,
-      delay: Double
-    ): js.Any = js.native
     def animate(toAttrs: ElementAttrs, duration: Double, easing: String): js.Any = js.native
-    def animate(
-      toAttrs: ElementAttrs,
-      duration: Double,
-      easing: String,
-      callback: js.UndefOr[scala.Nothing],
-      delay: Double
-    ): js.Any = js.native
     def animate(toAttrs: ElementAttrs, duration: Double, easing: String, callback: js.Function): js.Any = js.native
     def animate(toAttrs: ElementAttrs, duration: Double, easing: String, callback: js.Function, delay: Double): js.Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: String, callback: Unit, delay: Double): js.Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: Unit, callback: js.Function): js.Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: Unit, callback: js.Function, delay: Double): js.Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: Unit, callback: Unit, delay: Double): js.Any = js.native
     
     /**
       * 将向量应用设置的矩阵
@@ -596,7 +568,9 @@ object interfacesMod {
   }
   
   @js.native
-  trait IGroup extends IContainer {
+  trait IGroup
+    extends StObject
+       with IContainer {
     
     /**
       * 是否是实体分组，即对应实际的渲染元素
@@ -642,7 +616,9 @@ object interfacesMod {
   }
   
   @js.native
-  trait IShape extends IElement {
+  trait IShape
+    extends StObject
+       with IElement {
     
     /**
       * 是否用于 clip, 默认为 false

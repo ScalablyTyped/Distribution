@@ -1,0 +1,39 @@
+package typings.wixUiCore
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object wixUiCorePaletteMod {
+  
+  object palette {
+    
+    @JSImport("wix-ui-core/src/palette", "palette")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("wix-ui-core/src/palette", "palette.black")
+    @js.native
+    def black: String = js.native
+    @scala.inline
+    def black_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("black")(x.asInstanceOf[js.Any])
+    
+    @JSImport("wix-ui-core/src/palette", "palette.grey")
+    @js.native
+    def grey: String = js.native
+    @scala.inline
+    def grey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grey")(x.asInstanceOf[js.Any])
+    
+    @JSImport("wix-ui-core/src/palette", "palette.transparent")
+    @js.native
+    def transparent: String = js.native
+    @scala.inline
+    def transparent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transparent")(x.asInstanceOf[js.Any])
+    
+    @JSImport("wix-ui-core/src/palette", "palette.white")
+    @js.native
+    def white: String = js.native
+    @scala.inline
+    def white_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("white")(x.asInstanceOf[js.Any])
+  }
+}

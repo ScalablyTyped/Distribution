@@ -12,7 +12,7 @@ Lint an npm or yarn lockfile to analyze and detect issues
 | Keywords           | lockfile, lock, file, lint, linter, parse, npm, yarn |
 | # releases         | 32 |
 | # dependents       | 1 |
-| # downloads        | 1140582 |
+| # downloads        | 1704782 |
 | # stars            | 0 |
 
 ## Links

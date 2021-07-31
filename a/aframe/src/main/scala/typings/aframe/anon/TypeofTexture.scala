@@ -13,12 +13,12 @@ import typings.three.constantsMod.Wrapping
 import typings.three.mod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofTexture
-  extends Instantiable10[
+  extends StObject
+     with Instantiable10[
       /* image */ js.UndefOr[HTMLImageElement | HTMLCanvasElement | HTMLVideoElement], 
       /* mapping */ js.UndefOr[Mapping], 
       /* wrapS */ js.UndefOr[Wrapping], 

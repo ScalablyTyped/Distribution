@@ -4,11 +4,12 @@ import typings.officeUiFabricReact.listTypesMod.IList
 import typings.officeUiFabricReact.listTypesMod.ScrollToMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDetailsList extends IList {
+trait IDetailsList
+  extends StObject
+     with IList {
   
   /**
     * Scroll to and focus the item at the given index. focusIndex will call scrollToIndex on the specified index.
@@ -21,33 +22,10 @@ trait IDetailsList extends IList {
     * when focused.
     */
   def focusIndex(index: Double): Unit = js.native
-  def focusIndex(
-    index: Double,
-    forceIntoFirstElement: js.UndefOr[scala.Nothing],
-    measureItem: js.UndefOr[scala.Nothing],
-    scrollToMode: ScrollToMode
-  ): Unit = js.native
-  def focusIndex(
-    index: Double,
-    forceIntoFirstElement: js.UndefOr[scala.Nothing],
-    measureItem: js.Function1[/* itemIndex */ Double, Double]
-  ): Unit = js.native
-  def focusIndex(
-    index: Double,
-    forceIntoFirstElement: js.UndefOr[scala.Nothing],
-    measureItem: js.Function1[/* itemIndex */ Double, Double],
-    scrollToMode: ScrollToMode
-  ): Unit = js.native
   def focusIndex(index: Double, forceIntoFirstElement: Boolean): Unit = js.native
   def focusIndex(
     index: Double,
     forceIntoFirstElement: Boolean,
-    measureItem: js.UndefOr[scala.Nothing],
-    scrollToMode: ScrollToMode
-  ): Unit = js.native
-  def focusIndex(
-    index: Double,
-    forceIntoFirstElement: Boolean,
     measureItem: js.Function1[/* itemIndex */ Double, Double]
   ): Unit = js.native
   def focusIndex(
@@ -56,4 +34,17 @@ trait IDetailsList extends IList {
     measureItem: js.Function1[/* itemIndex */ Double, Double],
     scrollToMode: ScrollToMode
   ): Unit = js.native
+  def focusIndex(index: Double, forceIntoFirstElement: Boolean, measureItem: Unit, scrollToMode: ScrollToMode): Unit = js.native
+  def focusIndex(
+    index: Double,
+    forceIntoFirstElement: Unit,
+    measureItem: js.Function1[/* itemIndex */ Double, Double]
+  ): Unit = js.native
+  def focusIndex(
+    index: Double,
+    forceIntoFirstElement: Unit,
+    measureItem: js.Function1[/* itemIndex */ Double, Double],
+    scrollToMode: ScrollToMode
+  ): Unit = js.native
+  def focusIndex(index: Double, forceIntoFirstElement: Unit, measureItem: Unit, scrollToMode: ScrollToMode): Unit = js.native
 }

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientEventarc.gapi.client.eventarc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transport extends StObject {
   
   /** The Pub/Sub topic and subscription that maybe created by Eventarc as delivery intermediary. */
-  var pubsub: js.UndefOr[Pubsub] = js.native
+  var pubsub: js.UndefOr[Pubsub] = js.undefined
 }
 object Transport {
   

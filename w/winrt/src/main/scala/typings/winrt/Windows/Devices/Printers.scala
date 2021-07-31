@@ -3,17 +3,15 @@ package typings.winrt.Windows.Devices
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Printers {
   
   object Extensions {
     
-    @js.native
     trait IPrintExtensionContextStatic extends StObject {
       
-      def fromDeviceId(deviceId: String): js.Any = js.native
+      def fromDeviceId(deviceId: String): js.Any
     }
     object IPrintExtensionContextStatic {
       
@@ -31,12 +29,11 @@ object Printers {
       }
     }
     
-    @js.native
     trait IPrintNotificationEventDetails extends StObject {
       
-      var eventData: String = js.native
+      var eventData: String
       
-      var printerName: String = js.native
+      var printerName: String
     }
     object IPrintNotificationEventDetails {
       
@@ -57,12 +54,11 @@ object Printers {
       }
     }
     
-    @js.native
     trait IPrintTaskConfiguration extends StObject {
       
-      var onsaverequested: js.Any = js.native
+      var onsaverequested: js.Any
       
-      var printerExtensionContext: js.Any = js.native
+      var printerExtensionContext: js.Any
     }
     object IPrintTaskConfiguration {
       
@@ -83,16 +79,15 @@ object Printers {
       }
     }
     
-    @js.native
     trait IPrintTaskConfigurationSaveRequest extends StObject {
       
-      def cancel(): Unit = js.native
+      def cancel(): Unit
       
-      var deadline: Date = js.native
+      var deadline: Date
       
-      def getDeferral(): PrintTaskConfigurationSaveRequestedDeferral = js.native
+      def getDeferral(): PrintTaskConfigurationSaveRequestedDeferral
       
-      def save(printerExtensionContext: js.Any): Unit = js.native
+      def save(printerExtensionContext: js.Any): Unit
     }
     object IPrintTaskConfigurationSaveRequest {
       
@@ -124,10 +119,9 @@ object Printers {
       }
     }
     
-    @js.native
     trait IPrintTaskConfigurationSaveRequestedDeferral extends StObject {
       
-      def complete(): Unit = js.native
+      def complete(): Unit
     }
     object IPrintTaskConfigurationSaveRequestedDeferral {
       
@@ -145,10 +139,9 @@ object Printers {
       }
     }
     
-    @js.native
     trait IPrintTaskConfigurationSaveRequestedEventArgs extends StObject {
       
-      var request: PrintTaskConfigurationSaveRequest = js.native
+      var request: PrintTaskConfigurationSaveRequest
     }
     object IPrintTaskConfigurationSaveRequestedEventArgs {
       
@@ -166,11 +159,11 @@ object Printers {
       }
     }
     
-    @js.native
     trait PrintExtensionContext extends StObject
     
-    @js.native
-    trait PrintNotificationEventDetails extends IPrintNotificationEventDetails
+    trait PrintNotificationEventDetails
+      extends StObject
+         with IPrintNotificationEventDetails
     object PrintNotificationEventDetails {
       
       @scala.inline
@@ -180,8 +173,9 @@ object Printers {
       }
     }
     
-    @js.native
-    trait PrintTaskConfiguration extends IPrintTaskConfiguration
+    trait PrintTaskConfiguration
+      extends StObject
+         with IPrintTaskConfiguration
     object PrintTaskConfiguration {
       
       @scala.inline
@@ -191,8 +185,9 @@ object Printers {
       }
     }
     
-    @js.native
-    trait PrintTaskConfigurationSaveRequest extends IPrintTaskConfigurationSaveRequest
+    trait PrintTaskConfigurationSaveRequest
+      extends StObject
+         with IPrintTaskConfigurationSaveRequest
     object PrintTaskConfigurationSaveRequest {
       
       @scala.inline
@@ -207,8 +202,9 @@ object Printers {
       }
     }
     
-    @js.native
-    trait PrintTaskConfigurationSaveRequestedDeferral extends IPrintTaskConfigurationSaveRequestedDeferral
+    trait PrintTaskConfigurationSaveRequestedDeferral
+      extends StObject
+         with IPrintTaskConfigurationSaveRequestedDeferral
     object PrintTaskConfigurationSaveRequestedDeferral {
       
       @scala.inline
@@ -218,8 +214,9 @@ object Printers {
       }
     }
     
-    @js.native
-    trait PrintTaskConfigurationSaveRequestedEventArgs extends IPrintTaskConfigurationSaveRequestedEventArgs
+    trait PrintTaskConfigurationSaveRequestedEventArgs
+      extends StObject
+         with IPrintTaskConfigurationSaveRequestedEventArgs
     object PrintTaskConfigurationSaveRequestedEventArgs {
       
       @scala.inline

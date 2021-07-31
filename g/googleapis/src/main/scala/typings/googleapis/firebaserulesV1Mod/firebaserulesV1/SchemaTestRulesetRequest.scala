@@ -2,25 +2,23 @@ package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for FirebaseRulesService.TestRuleset.
   */
-@js.native
 trait SchemaTestRulesetRequest extends StObject {
   
   /**
     * Optional `Source` to be checked for correctness.  This field must not be
     * set when the resource name refers to a `Ruleset`.
     */
-  var source: js.UndefOr[SchemaSource] = js.native
+  var source: js.UndefOr[SchemaSource] = js.undefined
   
   /**
     * Inline `TestSuite` to run.
     */
-  var testSuite: js.UndefOr[SchemaTestSuite] = js.native
+  var testSuite: js.UndefOr[SchemaTestSuite] = js.undefined
 }
 object SchemaTestRulesetRequest {
   

@@ -2,13 +2,11 @@ package typings.postmanCollection.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Src extends StObject {
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
 }
 object Src {
   

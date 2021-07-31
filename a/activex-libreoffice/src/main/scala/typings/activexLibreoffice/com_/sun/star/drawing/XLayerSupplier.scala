@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gives access to a {@link LayerManager} .
   * @see LayerManager
   */
-@js.native
-trait XLayerSupplier extends XInterface {
+trait XLayerSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the {@link LayerManager} . */
-  val LayerManager: XNameAccess = js.native
+  val LayerManager: XNameAccess
   
   /** @returns the {@link LayerManager} . */
-  def getLayerManager(): XNameAccess = js.native
+  def getLayerManager(): XNameAccess
 }
 object XLayerSupplier {
   

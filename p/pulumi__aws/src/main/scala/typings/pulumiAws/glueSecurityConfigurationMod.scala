@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object glueSecurityConfigurationMod {
@@ -39,6 +38,10 @@ object glueSecurityConfigurationMod {
   /* static members */
   object SecurityConfiguration {
     
+    @JSImport("@pulumi/aws/glue/securityConfiguration", "SecurityConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SecurityConfiguration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -48,40 +51,34 @@ object glueSecurityConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glue/securityConfiguration", "SecurityConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SecurityConfiguration = js.native
-    @JSImport("@pulumi/aws/glue/securityConfiguration", "SecurityConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SecurityConfiguration = js.native
-    @JSImport("@pulumi/aws/glue/securityConfiguration", "SecurityConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecurityConfigurationState): SecurityConfiguration = js.native
-    @JSImport("@pulumi/aws/glue/securityConfiguration", "SecurityConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecurityConfigurationState, opts: CustomResourceOptions): SecurityConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SecurityConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SecurityConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SecurityConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecurityConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecurityConfigurationState): SecurityConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SecurityConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecurityConfigurationState, opts: CustomResourceOptions): SecurityConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecurityConfiguration]
     
     /**
       * Returns true if the given object is an instance of SecurityConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glue/securityConfiguration", "SecurityConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/securityConfiguration.SecurityConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/securityConfiguration.SecurityConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/securityConfiguration.SecurityConfiguration */ Boolean]
   }
   
-  @js.native
   trait SecurityConfigurationArgs extends StObject {
     
     /**
       * Configuration block containing encryption configuration. Detailed below.
       */
-    val encryptionConfiguration: Input[typings.pulumiAws.inputMod.glue.SecurityConfigurationEncryptionConfiguration] = js.native
+    val encryptionConfiguration: Input[typings.pulumiAws.inputMod.glue.SecurityConfigurationEncryptionConfiguration]
     
     /**
       * Name of the security configuration.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object SecurityConfigurationArgs {
     
@@ -107,7 +104,6 @@ object glueSecurityConfigurationMod {
     }
   }
   
-  @js.native
   trait SecurityConfigurationState extends StObject {
     
     /**
@@ -115,12 +111,12 @@ object glueSecurityConfigurationMod {
       */
     val encryptionConfiguration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.glue.SecurityConfigurationEncryptionConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Name of the security configuration.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object SecurityConfigurationState {
     

@@ -32,31 +32,29 @@ import typings.std.Element
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Fetch extends StObject {
     
-    var fetch: js.UndefOr[String | ServerUrl | FetchServerConfigFunction | Null] = js.native
+    var fetch: js.UndefOr[String | ServerUrl | FetchServerConfigFunction | Null] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.native
+    var headers: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.undefined
     
-    var load: js.UndefOr[String | ServerUrl | LoadServerConfigFunction | Null] = js.native
+    var load: js.UndefOr[String | ServerUrl | LoadServerConfigFunction | Null] = js.undefined
     
-    var process: js.UndefOr[String | ServerUrl | ProcessServerConfigFunction | Null] = js.native
+    var process: js.UndefOr[String | ServerUrl | ProcessServerConfigFunction | Null] = js.undefined
     
-    var remove: js.UndefOr[RemoveServerConfigFunction | Null] = js.native
+    var remove: js.UndefOr[RemoveServerConfigFunction | Null] = js.undefined
     
-    var restore: js.UndefOr[String | ServerUrl | RestoreServerConfigFunction | Null] = js.native
+    var restore: js.UndefOr[String | ServerUrl | RestoreServerConfigFunction | Null] = js.undefined
     
-    var revert: js.UndefOr[String | ServerUrl | RevertServerConfigFunction | Null] = js.native
+    var revert: js.UndefOr[String | ServerUrl | RevertServerConfigFunction | Null] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Fetch {
     
@@ -170,17 +168,16 @@ object anon {
     }
   }
   
-  @js.native
   trait File extends StObject {
     
     /** Mock file information. */
-    var file: js.UndefOr[Name] = js.native
+    var file: js.UndefOr[Name] = js.undefined
     
     /** File initial metadata. */
-    var metadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /** Origin of file being added. */
-    var `type`: input | limbo | local = js.native
+    var `type`: input | limbo | local
   }
   object File {
     
@@ -223,15 +220,15 @@ object anon {
     def addEventListener(event: FilePondEventPrefixed, fn: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
     
     def addFile(source: String): js.Promise[FilePondFile] = js.native
-    def addFile(source: String, options: Index with Partial[File]): js.Promise[FilePondFile] = js.native
+    def addFile(source: String, options: Index & Partial[File]): js.Promise[FilePondFile] = js.native
     /**
       * Adds a file.
       * @param options.index The index that the file should be added at.
       */
     def addFile(source: ActualFileObject): js.Promise[FilePondFile] = js.native
-    def addFile(source: ActualFileObject, options: Index with Partial[File]): js.Promise[FilePondFile] = js.native
+    def addFile(source: ActualFileObject, options: Index & Partial[File]): js.Promise[FilePondFile] = js.native
     def addFile(source: Blob): js.Promise[FilePondFile] = js.native
-    def addFile(source: Blob, options: Index with Partial[File]): js.Promise[FilePondFile] = js.native
+    def addFile(source: Blob, options: Index & Partial[File]): js.Promise[FilePondFile] = js.native
     
     /**
       * Adds multiple files.
@@ -469,7 +466,7 @@ object anon {
     var onaddfilestart_Original: js.Function1[/* file */ FilePondFile, Unit] = js.native
     
     def onerror(error: FilePondErrorDescription): Unit = js.native
-    def onerror(error: FilePondErrorDescription, file: js.UndefOr[scala.Nothing], status: js.Any): Unit = js.native
+    def onerror(error: FilePondErrorDescription, file: Unit, status: js.Any): Unit = js.native
     def onerror(error: FilePondErrorDescription, file: FilePondFile): Unit = js.native
     def onerror(error: FilePondErrorDescription, file: FilePondFile, status: js.Any): Unit = js.native
     @JSName("onerror")
@@ -527,7 +524,7 @@ object anon {
     var onupdatefiles_Original: js.Function1[/* files */ js.Array[FilePondFile], Unit] = js.native
     
     def onwarning(error: js.Any): Unit = js.native
-    def onwarning(error: js.Any, file: js.UndefOr[scala.Nothing], status: js.Any): Unit = js.native
+    def onwarning(error: js.Any, file: Unit, status: js.Any): Unit = js.native
     def onwarning(error: js.Any, file: FilePondFile): Unit = js.native
     def onwarning(error: js.Any, file: FilePondFile, status: js.Any): Unit = js.native
     @JSName("onwarning")
@@ -581,11 +578,11 @@ object anon {
       * @param options Options for removal
       */
     def removeFile(options: RemoveFileOptions): Unit = js.native
-    def removeFile(query: js.UndefOr[scala.Nothing], options: RemoveFileOptions): Unit = js.native
     def removeFile(query: String): Unit = js.native
     def removeFile(query: String, options: RemoveFileOptions): Unit = js.native
     def removeFile(query: Double): Unit = js.native
     def removeFile(query: Double, options: RemoveFileOptions): Unit = js.native
+    def removeFile(query: Unit, options: RemoveFileOptions): Unit = js.native
     def removeFile(query: FilePondFile): Unit = js.native
     def removeFile(query: FilePondFile, options: RemoveFileOptions): Unit = js.native
     
@@ -600,9 +597,9 @@ object anon {
       * @param options Options for removal
       */
     def removeFiles(options: RemoveFileOptions): Unit = js.native
-    def removeFiles(query: js.UndefOr[scala.Nothing], options: RemoveFileOptions): Unit = js.native
     def removeFiles(query: js.Array[FilePondFile | String | Double]): Unit = js.native
     def removeFiles(query: js.Array[FilePondFile | String | Double], options: RemoveFileOptions): Unit = js.native
+    def removeFiles(query: Unit, options: RemoveFileOptions): Unit = js.native
     
     /** Replaces the supplied element with FilePond. */
     def replaceElement(element: Element): Unit = js.native
@@ -646,10 +643,9 @@ object anon {
     var styleProgressIndicatorPosition: String = js.native
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
   }
   object Index {
     
@@ -670,10 +666,9 @@ object anon {
     }
   }
   
-  @js.native
   trait IndexNumber extends StObject {
     
-    var index: Double = js.native
+    var index: Double
   }
   object IndexNumber {
     
@@ -691,14 +686,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Name {
     
@@ -731,12 +725,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Output extends StObject {
     
-    var file: FilePondFile = js.native
+    var file: FilePondFile
     
-    var output: js.Any = js.native
+    var output: js.Any
   }
   object Output {
     

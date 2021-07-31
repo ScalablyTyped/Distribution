@@ -14,23 +14,21 @@ import typings.jimpPng.jimpPngStrings.imageSlashpng
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
     @JSName("image/png")
-    var imageSlashpng: `true` = js.native
+    var imageSlashpng: `true`
   }
   object `0` {
     
     @scala.inline
-    def apply(imageSlashpng: `true`): `0` = {
+    def apply(): `0` = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("image/png")(imageSlashpng.asInstanceOf[js.Any])
+      __obj.updateDynamic("image/png")(true)
       __obj.asInstanceOf[`0`]
     }
     
@@ -42,11 +40,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Imagepng extends StObject {
     
     @JSName("image/png")
-    var imageSlashpng: js.Array[String] = js.native
+    var imageSlashpng: js.Array[String]
   }
   object Imagepng {
     
@@ -68,55 +65,76 @@ object anon {
     }
   }
   
-  @js.native
   trait ImagepngDecoderFn extends StObject {
     
     @JSName("image/png")
-    def imageSlashpng(data: Buffer): Bitmap = js.native
+    def imageSlashpng(data: Buffer): Bitmap
     @JSName("image/png")
-    var imageSlashpng_Original: DecoderFn = js.native
+    var imageSlashpng_Original: DecoderFn
+  }
+  object ImagepngDecoderFn {
+    
+    @scala.inline
+    def apply(imageSlashpng: /* data */ Buffer => Bitmap): ImagepngDecoderFn = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("image/png")(js.Any.fromFunction1(imageSlashpng))
+      __obj.asInstanceOf[ImagepngDecoderFn]
+    }
+    
+    @scala.inline
+    implicit class ImagepngDecoderFnMutableBuilder[Self <: ImagepngDecoderFn] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setImageSlashpng(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/png", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait ImagepngEncoderFn extends StObject {
     
     @JSName("image/png")
-    def imageSlashpng(image: Image): Buffer = js.native
+    def imageSlashpng(image: Image): Buffer
     @JSName("image/png")
-    var imageSlashpng_Original: EncoderFn[Image] = js.native
+    var imageSlashpng_Original: EncoderFn[Image]
+  }
+  object ImagepngEncoderFn {
+    
+    @scala.inline
+    def apply(imageSlashpng: Image => Buffer): ImagepngEncoderFn = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("image/png")(js.Any.fromFunction1(imageSlashpng))
+      __obj.asInstanceOf[ImagepngEncoderFn]
+    }
+    
+    @scala.inline
+    implicit class ImagepngEncoderFnMutableBuilder[Self <: ImagepngEncoderFn] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setImageSlashpng(value: Image => Buffer): Self = StObject.set(x, "image/png", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait MIMEPNG extends StObject {
     
-    var MIME_PNG: imageSlashpng = js.native
+    var MIME_PNG: imageSlashpng
     
     // PNG filter types
-    var PNG_FILTER_AUTO: `-1` = js.native
+    var PNG_FILTER_AUTO: `-1`
     
-    var PNG_FILTER_AVERAGE: `3` = js.native
+    var PNG_FILTER_AVERAGE: `3`
     
-    var PNG_FILTER_NONE: typings.jimpPng.jimpPngNumbers.`0` = js.native
+    var PNG_FILTER_NONE: typings.jimpPng.jimpPngNumbers.`0`
     
-    var PNG_FILTER_PATH: `4` = js.native
+    var PNG_FILTER_PATH: `4`
     
-    var PNG_FILTER_SUB: `1` = js.native
+    var PNG_FILTER_SUB: `1`
     
-    var PNG_FILTER_UP: `2` = js.native
+    var PNG_FILTER_UP: `2`
   }
   object MIMEPNG {
     
     @scala.inline
-    def apply(
-      MIME_PNG: imageSlashpng,
-      PNG_FILTER_AUTO: `-1`,
-      PNG_FILTER_AVERAGE: `3`,
-      PNG_FILTER_NONE: typings.jimpPng.jimpPngNumbers.`0`,
-      PNG_FILTER_PATH: `4`,
-      PNG_FILTER_SUB: `1`,
-      PNG_FILTER_UP: `2`
-    ): MIMEPNG = {
-      val __obj = js.Dynamic.literal(MIME_PNG = MIME_PNG.asInstanceOf[js.Any], PNG_FILTER_AUTO = PNG_FILTER_AUTO.asInstanceOf[js.Any], PNG_FILTER_AVERAGE = PNG_FILTER_AVERAGE.asInstanceOf[js.Any], PNG_FILTER_NONE = PNG_FILTER_NONE.asInstanceOf[js.Any], PNG_FILTER_PATH = PNG_FILTER_PATH.asInstanceOf[js.Any], PNG_FILTER_SUB = PNG_FILTER_SUB.asInstanceOf[js.Any], PNG_FILTER_UP = PNG_FILTER_UP.asInstanceOf[js.Any])
+    def apply(): MIMEPNG = {
+      val __obj = js.Dynamic.literal(MIME_PNG = "image/png", PNG_FILTER_AUTO = -1, PNG_FILTER_AVERAGE = 3, PNG_FILTER_NONE = 0, PNG_FILTER_PATH = 4, PNG_FILTER_SUB = 1, PNG_FILTER_UP = 2)
       __obj.asInstanceOf[MIMEPNG]
     }
     

@@ -10,9 +10,9 @@ Get the current time in microseconds
 | ------------------ | :-------------: |
 | Full name          | microtime |
 | Keywords           | microtime, microseconds, gettimeofday |
-| # releases         | 5 |
-| # dependents       | 177 |
-| # downloads        | 1661641 |
+| # releases         | 0 |
+| # dependents       | 179 |
+| # downloads        | 1468496 |
 | # stars            | 11 |
 
 ## Links

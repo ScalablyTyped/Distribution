@@ -2,17 +2,15 @@ package typings.jqueryAjaxfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutComputedContext extends StObject {
   
-  def getDependenciesCount(): Double = js.native
+  def getDependenciesCount(): Double
   
-  def isInitial(): Boolean = js.native
+  def isInitial(): Boolean
   
-  var isSleeping: Boolean = js.native
+  var isSleeping: Boolean
 }
 object KnockoutComputedContext {
   

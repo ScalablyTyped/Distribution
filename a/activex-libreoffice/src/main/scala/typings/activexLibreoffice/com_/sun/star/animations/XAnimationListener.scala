@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to register listeners, which are called whenever an animation event occurs.
   * @since OOo 3.0
   */
-@js.native
-trait XAnimationListener extends XEventListener {
+trait XAnimationListener
+  extends StObject
+     with XEventListener {
   
   /**
     * This event is raised when the element local timeline begins to play.
@@ -24,7 +24,7 @@ trait XAnimationListener extends XEventListener {
     * interface method.
     * @param Node The node that begins to play.
     */
-  def beginEvent(Node: XAnimationNode): Unit = js.native
+  def beginEvent(Node: XAnimationNode): Unit
   
   /**
     * This event is raised at the active end of the element.
@@ -35,7 +35,7 @@ trait XAnimationListener extends XEventListener {
     * with a DOM method.
     * @param Node The node that stops playing.
     */
-  def endEvent(Node: XAnimationNode): Unit = js.native
+  def endEvent(Node: XAnimationNode): Unit
   
   /**
     * This event is raised when the element local timeline repeats.
@@ -46,7 +46,7 @@ trait XAnimationListener extends XEventListener {
     * @param Node The node that repeats.
     * @param Repeat The value is a 0-based integer, but the repeat event is not raised for the first iteration and so the observed values will be >= 1.
     */
-  def repeat(Node: XAnimationNode, Repeat: Double): Unit = js.native
+  def repeat(Node: XAnimationNode, Repeat: Double): Unit
 }
 object XAnimationListener {
   

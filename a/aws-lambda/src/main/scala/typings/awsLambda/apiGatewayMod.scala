@@ -3,7 +3,6 @@ package typings.awsLambda
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiGatewayMod {
@@ -12,42 +11,41 @@ object apiGatewayMod {
   
   type APIGatewayEventDefaultAuthorizerContext = js.UndefOr[Null | StringDictionary[js.Any]]
   
-  @js.native
   trait APIGatewayEventIdentity extends StObject {
     
-    var accessKey: String | Null = js.native
+    var accessKey: String | Null
     
-    var accountId: String | Null = js.native
+    var accountId: String | Null
     
-    var apiKey: String | Null = js.native
+    var apiKey: String | Null
     
-    var apiKeyId: String | Null = js.native
+    var apiKeyId: String | Null
     
-    var caller: String | Null = js.native
+    var caller: String | Null
     
-    var cognitoAuthenticationProvider: String | Null = js.native
+    var cognitoAuthenticationProvider: String | Null
     
-    var cognitoAuthenticationType: String | Null = js.native
+    var cognitoAuthenticationType: String | Null
     
-    var cognitoIdentityId: String | Null = js.native
+    var cognitoIdentityId: String | Null
     
-    var cognitoIdentityPoolId: String | Null = js.native
+    var cognitoIdentityPoolId: String | Null
     
-    var principalOrgId: String | Null = js.native
+    var principalOrgId: String | Null
     
-    var sourceIp: String = js.native
+    var sourceIp: String
     
-    var user: String | Null = js.native
+    var user: String | Null
     
-    var userAgent: String | Null = js.native
+    var userAgent: String | Null
     
-    var userArn: String | Null = js.native
+    var userArn: String | Null
   }
   object APIGatewayEventIdentity {
     
     @scala.inline
     def apply(sourceIp: String): APIGatewayEventIdentity = {
-      val __obj = js.Dynamic.literal(sourceIp = sourceIp.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(sourceIp = sourceIp.asInstanceOf[js.Any], accessKey = null, accountId = null, apiKey = null, apiKeyId = null, caller = null, cognitoAuthenticationProvider = null, cognitoAuthenticationType = null, cognitoIdentityId = null, cognitoIdentityPoolId = null, principalOrgId = null, user = null, userAgent = null, userArn = null)
       __obj.asInstanceOf[APIGatewayEventIdentity]
     }
     
@@ -139,57 +137,56 @@ object apiGatewayMod {
   
   type APIGatewayEventRequestContext = APIGatewayEventRequestContextWithAuthorizer[APIGatewayEventDefaultAuthorizerContext]
   
-  @js.native
   trait APIGatewayEventRequestContextWithAuthorizer[TAuthorizerContext] extends StObject {
     
-    var accountId: String = js.native
+    var accountId: String
     
-    var apiId: String = js.native
+    var apiId: String
     
     // This one is a bit confusing: it is not actually present in authorizer calls
     // and proxy calls without an authorizer. We model this by allowing undefined in the type,
     // since it ends up the same and avoids breaking users that are testing the property.
     // This lets us allow parameterizing the authorizer for proxy events that know what authorizer
     // context values they have.
-    var authorizer: TAuthorizerContext = js.native
+    var authorizer: TAuthorizerContext
     
-    var connectedAt: js.UndefOr[Double] = js.native
+    var connectedAt: js.UndefOr[Double] = js.undefined
     
-    var connectionId: js.UndefOr[String] = js.native
+    var connectionId: js.UndefOr[String] = js.undefined
     
-    var domainName: js.UndefOr[String] = js.native
+    var domainName: js.UndefOr[String] = js.undefined
     
-    var domainPrefix: js.UndefOr[String] = js.native
+    var domainPrefix: js.UndefOr[String] = js.undefined
     
-    var eventType: js.UndefOr[String] = js.native
+    var eventType: js.UndefOr[String] = js.undefined
     
-    var extendedRequestId: js.UndefOr[String] = js.native
+    var extendedRequestId: js.UndefOr[String] = js.undefined
     
-    var httpMethod: String = js.native
+    var httpMethod: String
     
-    var identity: APIGatewayEventIdentity = js.native
+    var identity: APIGatewayEventIdentity
     
-    var messageDirection: js.UndefOr[String] = js.native
+    var messageDirection: js.UndefOr[String] = js.undefined
     
-    var messageId: js.UndefOr[String | Null] = js.native
+    var messageId: js.UndefOr[String | Null] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var requestId: String = js.native
+    var requestId: String
     
-    var requestTime: js.UndefOr[String] = js.native
+    var requestTime: js.UndefOr[String] = js.undefined
     
-    var requestTimeEpoch: Double = js.native
+    var requestTimeEpoch: Double
     
-    var resourceId: String = js.native
+    var resourceId: String
     
-    var resourcePath: String = js.native
+    var resourcePath: String
     
-    var routeKey: js.UndefOr[String] = js.native
+    var routeKey: js.UndefOr[String] = js.undefined
     
-    var stage: String = js.native
+    var stage: String
   }
   object APIGatewayEventRequestContextWithAuthorizer {
     
@@ -213,7 +210,7 @@ object apiGatewayMod {
     }
     
     @scala.inline
-    implicit class APIGatewayEventRequestContextWithAuthorizerMutableBuilder[Self <: APIGatewayEventRequestContextWithAuthorizer[_], TAuthorizerContext] (val x: Self with APIGatewayEventRequestContextWithAuthorizer[TAuthorizerContext]) extends AnyVal {
+    implicit class APIGatewayEventRequestContextWithAuthorizerMutableBuilder[Self <: APIGatewayEventRequestContextWithAuthorizer[?], TAuthorizerContext] (val x: Self & APIGatewayEventRequestContextWithAuthorizer[TAuthorizerContext]) extends AnyVal {
       
       @scala.inline
       def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])

@@ -4,24 +4,23 @@ import typings.mdast.mdastStrings.footnoteReference
 import typings.unist.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FootnoteReference
-  extends StaticPhrasingContent
+  extends StObject
      with Node
-     with Association {
+     with Association
+     with StaticPhrasingContent {
   
   @JSName("type")
-  var type_FootnoteReference: footnoteReference = js.native
+  var type_FootnoteReference: footnoteReference
 }
 object FootnoteReference {
   
   @scala.inline
-  def apply(identifier: String, `type`: footnoteReference): FootnoteReference = {
+  def apply(identifier: String): FootnoteReference = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("footnoteReference")
     __obj.asInstanceOf[FootnoteReference]
   }
   

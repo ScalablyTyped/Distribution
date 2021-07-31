@@ -2,18 +2,16 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  globalFilter :(rows : std.Array<react-table.react-table.Row<D>>, columnIds : std.Array<react-table.react-table.IdType<D>>, filterValue : any): std.Array<react-table.react-table.Row<D>> | string,   manualGlobalFilter :boolean,   filterTypes :react-table.react-table.FilterTypes<D>,   autoResetGlobalFilter :boolean | undefined,   disableGlobalFilter :boolean | undefined}> */
-@js.native
 trait UseGlobalFiltersOptions[D /* <: js.Object */] extends StObject {
   
-  var autoResetGlobalFilter: js.UndefOr[Boolean] = js.native
+  var autoResetGlobalFilter: js.UndefOr[Boolean] = js.undefined
   
-  var disableGlobalFilter: js.UndefOr[Boolean] = js.native
+  var disableGlobalFilter: js.UndefOr[Boolean] = js.undefined
   
-  var filterTypes: js.UndefOr[FilterTypes[D]] = js.native
+  var filterTypes: js.UndefOr[FilterTypes[D]] = js.undefined
   
   var globalFilter: js.UndefOr[
     (js.Function3[
@@ -22,9 +20,9 @@ trait UseGlobalFiltersOptions[D /* <: js.Object */] extends StObject {
       /* filterValue */ js.Any, 
       js.Array[Row[D]]
     ]) | String
-  ] = js.native
+  ] = js.undefined
   
-  var manualGlobalFilter: js.UndefOr[Boolean] = js.native
+  var manualGlobalFilter: js.UndefOr[Boolean] = js.undefined
 }
 object UseGlobalFiltersOptions {
   
@@ -35,7 +33,7 @@ object UseGlobalFiltersOptions {
   }
   
   @scala.inline
-  implicit class UseGlobalFiltersOptionsMutableBuilder[Self <: UseGlobalFiltersOptions[_], D /* <: js.Object */] (val x: Self with UseGlobalFiltersOptions[D]) extends AnyVal {
+  implicit class UseGlobalFiltersOptionsMutableBuilder[Self <: UseGlobalFiltersOptions[?], D /* <: js.Object */] (val x: Self & UseGlobalFiltersOptions[D]) extends AnyVal {
     
     @scala.inline
     def setAutoResetGlobalFilter(value: Boolean): Self = StObject.set(x, "autoResetGlobalFilter", value.asInstanceOf[js.Any])

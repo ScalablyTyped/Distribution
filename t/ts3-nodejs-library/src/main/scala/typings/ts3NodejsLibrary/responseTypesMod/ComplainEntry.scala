@@ -3,23 +3,23 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ComplainEntry extends ResponseEntry {
+trait ComplainEntry
+  extends StObject
+     with ResponseEntry {
   
-  var fcldbid: String = js.native
+  var fcldbid: String
   
-  var fname: String = js.native
+  var fname: String
   
-  var message: String = js.native
+  var message: String
   
-  var tcldbid: String = js.native
+  var tcldbid: String
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var tname: String = js.native
+  var tname: String
 }
 object ComplainEntry {
   

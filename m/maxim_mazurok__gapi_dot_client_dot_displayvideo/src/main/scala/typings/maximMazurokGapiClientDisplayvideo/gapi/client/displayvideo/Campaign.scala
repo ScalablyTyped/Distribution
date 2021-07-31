@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Campaign extends StObject {
   
   /** Output only. The unique ID of the advertiser the campaign belongs to. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Required. The planned spend and duration of the campaign. */
-  var campaignFlight: js.UndefOr[CampaignFlight] = js.native
+  var campaignFlight: js.UndefOr[CampaignFlight] = js.undefined
   
   /** Required. The goal of the campaign. */
-  var campaignGoal: js.UndefOr[CampaignGoal] = js.native
+  var campaignGoal: js.UndefOr[CampaignGoal] = js.undefined
   
   /** Output only. The unique ID of the campaign. Assigned by the system. */
-  var campaignId: js.UndefOr[String] = js.native
+  var campaignId: js.UndefOr[String] = js.undefined
   
   /** Required. The display name of the campaign. Must be UTF-8 encoded with a maximum size of 240 bytes. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Controls whether or not the insertion orders under this campaign can spend their budgets and bid on inventory. * Accepted values are `ENTITY_STATUS_ACTIVE`,
     * `ENTITY_STATUS_ARCHIVED`, and `ENTITY_STATUS_PAUSED`. * For CreateCampaign method, `ENTITY_STATUS_ARCHIVED` is not allowed.
     */
-  var entityStatus: js.UndefOr[String] = js.native
+  var entityStatus: js.UndefOr[String] = js.undefined
   
   /** Required. The frequency cap setting of the campaign. */
-  var frequencyCap: js.UndefOr[FrequencyCap] = js.native
+  var frequencyCap: js.UndefOr[FrequencyCap] = js.undefined
   
   /** Output only. The resource name of the campaign. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The timestamp when the campaign was last updated. Assigned by the system. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Campaign {
   

@@ -3,17 +3,17 @@ package typings.jupyterlabNbformat.mod
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait INotebookMetadata extends PartialJSONObject {
+trait INotebookMetadata
+  extends StObject
+     with PartialJSONObject {
   
-  var kernelspec: js.UndefOr[IKernelspecMetadata] = js.native
+  var kernelspec: js.UndefOr[IKernelspecMetadata] = js.undefined
   
-  var language_info: js.UndefOr[ILanguageInfoMetadata] = js.native
+  var language_info: js.UndefOr[ILanguageInfoMetadata] = js.undefined
   
-  var orig_nbformat: Double = js.native
+  var orig_nbformat: Double
 }
 object INotebookMetadata {
   

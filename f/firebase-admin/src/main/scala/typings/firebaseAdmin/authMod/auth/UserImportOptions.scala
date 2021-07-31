@@ -3,7 +3,6 @@ package typings.firebaseAdmin.authMod.auth
 import typings.firebaseAdmin.anon.Algorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link auth.Auth.importUsers `importUsers()`} method. This is used to
   * provide the password hashing algorithm information.
   */
-@js.native
 trait UserImportOptions extends StObject {
   
   /**
     * The password hashing information.
     */
-  var hash: Algorithm = js.native
+  var hash: Algorithm
 }
 object UserImportOptions {
   

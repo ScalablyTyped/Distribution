@@ -2,33 +2,31 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FieldValue...
   */
-@js.native
 trait IFieldValue extends StObject {
   
   /**
     * Is set to true if the value is a numeric.
     * This parameter is optional. Default is false.
     */
-  var qIsNumeric: js.UndefOr[Boolean] = js.native
+  var qIsNumeric: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Numeric value of the field.
     * This parameter is displayed if qIsNumeric is set to true.
     * This parameter is optional.
     */
-  var qNumber: js.UndefOr[Double] = js.native
+  var qNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * Text related to the field value
     * This parameter is optional.
     */
-  var qText: js.UndefOr[String] = js.native
+  var qText: js.UndefOr[String] = js.undefined
 }
 object IFieldValue {
   

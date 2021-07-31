@@ -3,10 +3,13 @@ package typings.firebaseStorage
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringMod {
+  
+  @JSImport("@firebase/storage/dist/src/implementation/string", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/storage/dist/src/implementation/string", "StringData")
   @js.native
@@ -52,27 +55,21 @@ object stringMod {
   }
   type StringFormat = String
   
-  @JSImport("@firebase/storage/dist/src/implementation/string", "base64Bytes_")
-  @js.native
-  def base64Bytes(format: StringFormat, value: String): Uint8Array = js.native
+  @scala.inline
+  def base64Bytes(format: StringFormat, value: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("base64Bytes_")(format.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("@firebase/storage/dist/src/implementation/string", "dataFromString")
-  @js.native
-  def dataFromString(format: StringFormat, stringData: String): StringData = js.native
+  @scala.inline
+  def dataFromString(format: StringFormat, stringData: String): StringData = (^.asInstanceOf[js.Dynamic].applyDynamic("dataFromString")(format.asInstanceOf[js.Any], stringData.asInstanceOf[js.Any])).asInstanceOf[StringData]
   
-  @JSImport("@firebase/storage/dist/src/implementation/string", "dataURLBytes_")
-  @js.native
-  def dataURLBytes(dataUrl: String): Uint8Array = js.native
+  @scala.inline
+  def dataURLBytes(dataUrl: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("dataURLBytes_")(dataUrl.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("@firebase/storage/dist/src/implementation/string", "dataURLContentType_")
-  @js.native
-  def dataURLContentType(dataUrl: String): String | Null = js.native
+  @scala.inline
+  def dataURLContentType(dataUrl: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("dataURLContentType_")(dataUrl.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("@firebase/storage/dist/src/implementation/string", "percentEncodedBytes_")
-  @js.native
-  def percentEncodedBytes(value: String): Uint8Array = js.native
+  @scala.inline
+  def percentEncodedBytes(value: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("percentEncodedBytes_")(value.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("@firebase/storage/dist/src/implementation/string", "utf8Bytes_")
-  @js.native
-  def utf8Bytes(value: String): Uint8Array = js.native
+  @scala.inline
+  def utf8Bytes(value: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8Bytes_")(value.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
 }

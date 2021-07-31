@@ -3,19 +3,17 @@ package typings.formatjsEcma402Abstract.anon
 import typings.formatjsEcma402Abstract.dateTimeMod.Formats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Full extends StObject {
   
-  var full: Formats = js.native
+  var full: Formats
   
-  var long: Formats = js.native
+  var long: Formats
   
-  var medium: Formats = js.native
+  var medium: Formats
   
-  var short: Formats = js.native
+  var short: Formats
 }
 object Full {
   

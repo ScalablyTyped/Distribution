@@ -2,24 +2,22 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldSchema extends StObject {
   
   /** Specifies if the field can be edited while list view is in the Grid mode */
-  var AllowGridEditing: Boolean = js.native
+  var AllowGridEditing: Boolean
   
   /** String representation of the field type, e.g. "Lookup". Same as SPField.TypeAsString */
-  var FieldType: String = js.native
+  var FieldType: String
   
   /** Internal name of the field */
-  var Name: String = js.native
+  var Name: String
   
   /** For OOTB fields, returns the type of field. For "UserMulti" returns "User", for "LookupMulti" returns "Lookup".
     For custom field types, returns base type of the field. */
-  var Type: String = js.native
+  var Type: String
 }
 object FieldSchema {
   

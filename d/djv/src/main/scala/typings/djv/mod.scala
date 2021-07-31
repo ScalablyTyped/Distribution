@@ -6,31 +6,30 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("djv", JSImport.Namespace)
   @js.native
-  val ^ : DjvStatic = js.native
+  val ^ : js.Object & DjvStatic = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("djv", JSImport.Namespace)
   @js.native
   class Class ()
-    extends typings.djv.mod.djv {
+    extends StObject
+       with typings.djv.mod.djv {
     def this(options: DjvConfig) = this()
   }
   
-  @js.native
   trait DjvConfig extends StObject {
     
     /** a handler to use for generating custom error messages */
-    var errorHandler: js.UndefOr[js.Function0[Unit]] = js.native
+    var errorHandler: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** an object containing list of formatters to add for environment */
-    var formats: js.UndefOr[Record[String, js.Function1[/* repeated */ String, String]]] = js.native
+    var formats: js.UndefOr[Record[String, js.Function1[/* repeated */ String, String]]] = js.undefined
     
     /**
       * generating object should be considered as inner
@@ -38,13 +37,13 @@ object mod extends Shortcut {
       * Default value is `false`/`undefined`. If `true`, then it avoid creating variables in a
       * generated function body, however without proper wrapper function approach will not work.
       */
-    var inner: js.UndefOr[Boolean] = js.native
+    var inner: js.UndefOr[Boolean] = js.undefined
     
     /** defines which version of json-schema draft to use, draft-04 by default */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
     /** handler to apply for environment version */
-    var versionConfigure: js.UndefOr[js.Function1[/* object */ js.Object, Unit]] = js.native
+    var versionConfigure: js.UndefOr[js.Function1[/* object */ js.Object, Unit]] = js.undefined
   }
   object DjvConfig {
     
@@ -91,7 +90,8 @@ object mod extends Shortcut {
   
   @js.native
   trait DjvStatic
-    extends Instantiable0[typings.djv.mod.djv]
+    extends StObject
+       with Instantiable0[typings.djv.mod.djv]
        with Instantiable1[/* options */ DjvConfig, typings.djv.mod.djv] {
     
     def apply(): typings.djv.mod.djv = js.native
@@ -100,12 +100,11 @@ object mod extends Shortcut {
     def expression(strings: js.Array[String], keys: String*): js.Function1[/* repeated */ String, String] = js.native
   }
   
-  @js.native
   trait Resolved extends StObject {
     
-    def fn(args: js.Any*): js.Any = js.native
+    def fn(args: js.Any*): js.Any
     
-    var schema: js.Object = js.native
+    var schema: js.Object
   }
   object Resolved {
     
@@ -126,10 +125,10 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = DjvStatic
+  type _To = js.Object & DjvStatic
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: DjvStatic = ^
+  override def _to: js.Object & DjvStatic = ^
   
   @js.native
   trait djv extends StObject {
@@ -142,8 +141,8 @@ object mod extends Shortcut {
     def addSchema(nameOrSchema: js.Object): Resolved = js.native
     def addSchema(nameOrSchema: js.Object, schema: js.Object): Resolved = js.native
     
-    def export(): String = js.native
-    def export(name: String): String = js.native
+    def `export`(): String = js.native
+    def `export`(name: String): String = js.native
     
     def `import`(config: js.Object): Unit = js.native
     

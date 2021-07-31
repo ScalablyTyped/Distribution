@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the cash drawer capabilities. */
-@js.native
 trait CashDrawerCapabilities extends StObject {
   
   /** Indicated whether cash drawer open sensor is available. */
-  var isDrawerOpenSensorAvailable: Boolean = js.native
+  var isDrawerOpenSensorAvailable: Boolean
   
   /** Whether statistics reporting is supported by the cash drawer. */
-  var isStatisticsReportingSupported: Boolean = js.native
+  var isStatisticsReportingSupported: Boolean
   
   /** Whether statistics updating is supported by the cash drawer. */
-  var isStatisticsUpdatingSupported: Boolean = js.native
+  var isStatisticsUpdatingSupported: Boolean
   
   /** Whether the status from multiple drawers is supported. */
-  var isStatusMultiDrawerDetectSupported: Boolean = js.native
+  var isStatusMultiDrawerDetectSupported: Boolean
   
   /** Whether status reporting is supported by the cash drawer. */
-  var isStatusReportingSupported: Boolean = js.native
+  var isStatusReportingSupported: Boolean
   
   /** Whether the cash drawer has standard or advanced power reporting. */
-  var powerReportingType: UnifiedPosPowerReportingType = js.native
+  var powerReportingType: UnifiedPosPowerReportingType
 }
 object CashDrawerCapabilities {
   

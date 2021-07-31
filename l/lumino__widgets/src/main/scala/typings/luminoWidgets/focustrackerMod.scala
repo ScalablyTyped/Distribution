@@ -7,7 +7,6 @@ import typings.luminoWidgets.widgetMod.Widget
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focustrackerMod {
@@ -17,7 +16,9 @@ object focustrackerMod {
   /**
     * Construct a new focus tracker.
     */
-  class FocusTracker[T /* <: Widget */] () extends IDisposable {
+  class FocusTracker[T /* <: Widget */] ()
+    extends StObject
+       with IDisposable {
     
     var _activeChanged: js.Any = js.native
     
@@ -108,6 +109,20 @@ object focustrackerMod {
     val currentWidget: T | Null = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
       * Get the focus number for a particular widget in the tracker.
       *
       * @param widget - The widget of interest.
@@ -150,6 +165,15 @@ object focustrackerMod {
     def has(widget: T): Boolean = js.native
     
     /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
+    
+    /**
       * Remove a widget from the focus tracker.
       *
       * #### Notes
@@ -173,29 +197,28 @@ object focustrackerMod {
     /**
       * An arguments object for the changed signals.
       */
-    @js.native
     trait IChangedArgs[T /* <: Widget */] extends StObject {
       
       /**
         * The new value for the widget.
         */
-      var newValue: T | Null = js.native
+      var newValue: T | Null
       
       /**
         * The old value for the widget.
         */
-      var oldValue: T | Null = js.native
+      var oldValue: T | Null
     }
     object IChangedArgs {
       
       @scala.inline
       def apply[T /* <: Widget */](): IChangedArgs[T] = {
-        val __obj = js.Dynamic.literal()
+        val __obj = js.Dynamic.literal(newValue = null, oldValue = null)
         __obj.asInstanceOf[IChangedArgs[T]]
       }
       
       @scala.inline
-      implicit class IChangedArgsMutableBuilder[Self <: IChangedArgs[_], T /* <: Widget */] (val x: Self with IChangedArgs[T]) extends AnyVal {
+      implicit class IChangedArgsMutableBuilder[Self <: IChangedArgs[?], T /* <: Widget */] (val x: Self & IChangedArgs[T]) extends AnyVal {
         
         @scala.inline
         def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])

@@ -2,53 +2,53 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the menu's BootstrapMenuItem object.
   */
-@js.native
-trait BootstrapClientMenuItem extends ASPxClientMenuItem {
+trait BootstrapClientMenuItem
+  extends StObject
+     with ASPxClientMenuItem {
   
   /**
     * Gets the CSS class of the icon displayed within the menu item badge.
     */
-  def GetBadgeIconCssClass(): String = js.native
+  def GetBadgeIconCssClass(): String
   
   /**
     * Gets the text displayed within the menu item badge.
     */
-  def GetBadgeText(): String = js.native
+  def GetBadgeText(): String
   
   /**
     * Gets the CSS class of the icon displayed by the menu item.
     */
-  def GetIconCssClass(): String = js.native
+  def GetIconCssClass(): String
   
   /**
     * Sets the CSS class of the icon displayed within the menu item badge.
     * @param cssClass A string containing the name of a CSS class.
     */
-  def SetBadgeIconCssClass(cssClass: String): Unit = js.native
+  def SetBadgeIconCssClass(cssClass: String): Unit
   
   /**
     * Sets the text displayed within the menu item badge.
     * @param text A String specifying the badge text.
     */
-  def SetBadgeText(text: String): Unit = js.native
+  def SetBadgeText(text: String): Unit
   
   /**
     * Sets the CSS class of the icon displayed by the menu item.
     * @param cssClass A string containing the name of a CSS class.
     */
-  def SetIconCssClass(cssClass: String): Unit = js.native
+  def SetIconCssClass(cssClass: String): Unit
   
   /**
     * Gets the immediate parent item to which the current item belongs.
     */
   @JSName("parent")
-  var parent_BootstrapClientMenuItem: BootstrapClientMenuItem = js.native
+  var parent_BootstrapClientMenuItem: BootstrapClientMenuItem
 }
 object BootstrapClientMenuItem {
   

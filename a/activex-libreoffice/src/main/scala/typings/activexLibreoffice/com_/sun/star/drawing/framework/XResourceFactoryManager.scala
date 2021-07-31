@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XConfigurationController
   * @see XResourceFactory
   */
-@js.native
 trait XResourceFactoryManager extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait XResourceFactoryManager extends StObject {
     * @param sResourceURL The URL of the resource that the factory can create.
     * @param xResourceFactory The resource factory object.
     */
-  def addResourceFactory(sResourceURL: String, xResourceFactory: XResourceFactory): Unit = js.native
+  def addResourceFactory(sResourceURL: String, xResourceFactory: XResourceFactory): Unit
   
   /**
     * Return the resource factory that was previously registered for the given resource type. This method is typically called by one of the resource
@@ -29,21 +27,21 @@ trait XResourceFactoryManager extends StObject {
     * @param sResourceURL The URL of the resource type for which to return the resource factory.
     * @returns When no resource factory was registered for the given resource type then an empty reference is returned.
     */
-  def getResourceFactory(sResourceURL: String): XResourceFactory = js.native
+  def getResourceFactory(sResourceURL: String): XResourceFactory
   
   /**
     * Remove a resource factory for all resource types it has been registered for. Use {@link removeResourceFactoryForURL()} to remove a factory just for
     * one resource type and to leave it registered for others.
     * @param xResourceFactory The resource factory object to remove.
     */
-  def removeResourceFactoryForReference(xResourceFactory: XResourceFactory): Unit = js.native
+  def removeResourceFactoryForReference(xResourceFactory: XResourceFactory): Unit
   
   /**
     * Remove a resource factory for one type of resource. When the factory has been registered for other URLs as well then it remains registered for them.
     * Use the {@link removeResourceFactoryForReference()} to remove a factory completely.
     * @param sResourceURL The URL for which to remove the resource factory.
     */
-  def removeResourceFactoryForURL(sResourceURL: String): Unit = js.native
+  def removeResourceFactoryForURL(sResourceURL: String): Unit
 }
 object XResourceFactoryManager {
   

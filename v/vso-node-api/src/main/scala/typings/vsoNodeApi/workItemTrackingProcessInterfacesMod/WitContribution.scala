@@ -3,31 +3,29 @@ package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WitContribution extends StObject {
   
   /**
     * The id for the contribution.
     */
-  var contributionId: String = js.native
+  var contributionId: String
   
   /**
     * The height for the contribution.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * A dictionary holding key value pairs for contribution inputs.
     */
-  var inputs: StringDictionary[js.Any] = js.native
+  var inputs: StringDictionary[js.Any]
   
   /**
     * A value indicating if the contribution should be show on deleted workItem.
     */
-  var showOnDeletedWorkItem: Boolean = js.native
+  var showOnDeletedWorkItem: Boolean
 }
 object WitContribution {
   

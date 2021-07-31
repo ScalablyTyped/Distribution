@@ -7,17 +7,15 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIntervalProps extends StObject {
   
-  var interval: js.UndefOr[Interval] = js.native
+  var interval: js.UndefOr[Interval] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[Element]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[Element]] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object GetIntervalProps {
   

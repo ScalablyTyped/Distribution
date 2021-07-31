@@ -3,68 +3,67 @@ package typings.angularFormly.AngularFormly
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * see http://docs.angular-formly.com/docs/ngmodelattrstemplatemanipulator
   */
-@js.native
 trait ITemplateOptions
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   // both attribute or regular attribute
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var groupProp: js.UndefOr[String] = js.native
+  var groupProp: js.UndefOr[String] = js.undefined
   
   //Bootstrap types
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   // default: value
-  var labelProp: js.UndefOr[String] = js.native
+  var labelProp: js.UndefOr[String] = js.undefined
   
   //attribute only
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var maxlength: js.UndefOr[Double] = js.native
+  var maxlength: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var minlength: js.UndefOr[Double] = js.native
+  var minlength: js.UndefOr[Double] = js.undefined
   
   //expression types
-  var onBlur: js.UndefOr[String | IExpressionFunction] = js.native
+  var onBlur: js.UndefOr[String | IExpressionFunction] = js.undefined
   
-  var onChange: js.UndefOr[String | IExpressionFunction] = js.native
+  var onChange: js.UndefOr[String | IExpressionFunction] = js.undefined
   
-  var onClick: js.UndefOr[String | IExpressionFunction] = js.native
+  var onClick: js.UndefOr[String | IExpressionFunction] = js.undefined
   
-  var onFocus: js.UndefOr[String | IExpressionFunction] = js.native
+  var onFocus: js.UndefOr[String | IExpressionFunction] = js.undefined
   
-  var onKeydown: js.UndefOr[String | IExpressionFunction] = js.native
+  var onKeydown: js.UndefOr[String | IExpressionFunction] = js.undefined
   
-  var onKeypress: js.UndefOr[String | IExpressionFunction] = js.native
+  var onKeypress: js.UndefOr[String | IExpressionFunction] = js.undefined
   
-  var onKeyup: js.UndefOr[String | IExpressionFunction] = js.native
+  var onKeyup: js.UndefOr[String | IExpressionFunction] = js.undefined
   
   // types for select/radio fields
-  var options: js.UndefOr[js.Array[ISelectOption]] = js.native
+  var options: js.UndefOr[js.Array[ISelectOption]] = js.undefined
   
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String] = js.undefined
   
-  var placeholder: js.UndefOr[Double | String] = js.native
+  var placeholder: js.UndefOr[Double | String] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var tabindex: js.UndefOr[Double] = js.native
+  var tabindex: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   // default: group
-  var valueProp: js.UndefOr[String] = js.native
+  var valueProp: js.UndefOr[String] = js.undefined
 }
 object ITemplateOptions {
   

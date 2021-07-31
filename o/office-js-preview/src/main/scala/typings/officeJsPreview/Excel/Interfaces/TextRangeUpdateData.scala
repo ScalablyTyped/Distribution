@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`. */
-@js.native
 trait TextRangeUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TextRangeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var font: js.UndefOr[ShapeFontUpdateData] = js.native
+  var font: js.UndefOr[ShapeFontUpdateData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait TextRangeUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object TextRangeUpdateData {
   

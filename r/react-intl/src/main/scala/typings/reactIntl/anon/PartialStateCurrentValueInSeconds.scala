@@ -3,18 +3,16 @@ package typings.reactIntl.anon
 import typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-intl.react-intl/src/components/relative.State> */
-@js.native
 trait PartialStateCurrentValueInSeconds extends StObject {
   
-  var currentValueInSeconds: js.UndefOr[Double] = js.native
+  var currentValueInSeconds: js.UndefOr[Double] = js.undefined
   
-  var prevUnit: js.UndefOr[RelativeTimeUnit] = js.native
+  var prevUnit: js.UndefOr[RelativeTimeUnit] = js.undefined
   
-  var prevValue: js.UndefOr[Double] = js.native
+  var prevValue: js.UndefOr[Double] = js.undefined
 }
 object PartialStateCurrentValueInSeconds {
   

@@ -9,7 +9,6 @@ import typings.semanticUiReact.semanticUiReactStrings.left
 import typings.semanticUiReact.semanticUiReactStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownMenuMod extends Shortcut {
@@ -18,9 +17,9 @@ object dropdownMenuMod extends Shortcut {
   @js.native
   val default: StatelessComponent[DropdownMenuProps] = js.native
   
-  @js.native
   trait DropdownMenuProps
-    extends StrictDropdownMenuProps
+    extends StObject
+       with StrictDropdownMenuProps
        with /* key */ StringDictionary[js.Any]
   object DropdownMenuProps {
     
@@ -31,29 +30,28 @@ object dropdownMenuMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictDropdownMenuProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A dropdown menu can open to the left or to the right. */
-    var direction: js.UndefOr[left | right] = js.native
+    var direction: js.UndefOr[left | right] = js.undefined
     
     /** Whether or not the dropdown menu is displayed. */
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
     /** A dropdown menu can scroll. */
-    var scrolling: js.UndefOr[Boolean] = js.native
+    var scrolling: js.UndefOr[Boolean] = js.undefined
   }
   object StrictDropdownMenuProps {
     

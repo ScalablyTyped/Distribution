@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAssetRequest extends StObject {
   
   /** Required. The filename of the asset, including the file extension. The filename must be UTF-8 encoded with a maximum size of 240 bytes. */
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
 }
 object CreateAssetRequest {
   

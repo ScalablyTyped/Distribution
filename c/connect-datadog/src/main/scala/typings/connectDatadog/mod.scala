@@ -6,36 +6,36 @@ import typings.expressServeStaticCore.mod.Query
 import typings.hotShots.mod.StatsD
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("connect-datadog", JSImport.Namespace)
-  @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("connect-datadog", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
+  @JSImport("connect-datadog", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var base_url: js.UndefOr[Boolean] = js.native
+    var base_url: js.UndefOr[Boolean] = js.undefined
     
-    var dogstatsd: js.UndefOr[StatsD] = js.native
+    var dogstatsd: js.UndefOr[StatsD] = js.undefined
     
-    var method: js.UndefOr[Boolean] = js.native
+    var method: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[Boolean] = js.native
+    var path: js.UndefOr[Boolean] = js.undefined
     
-    var protocol: js.UndefOr[Boolean] = js.native
+    var protocol: js.UndefOr[Boolean] = js.undefined
     
-    var response_code: js.UndefOr[Boolean] = js.native
+    var response_code: js.UndefOr[Boolean] = js.undefined
     
-    var stat: js.UndefOr[String] = js.native
+    var stat: js.UndefOr[String] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

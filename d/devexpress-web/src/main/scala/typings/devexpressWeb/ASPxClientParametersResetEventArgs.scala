@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientWebDocumentViewer.ParametersReset and ASPxClientReportDesigner.PreviewParametersReset events.
   */
-@js.native
-trait ASPxClientParametersResetEventArgs extends ASPxClientEventArgs {
+trait ASPxClientParametersResetEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Provides access to report parameters whose values have been reset.
     */
-  var Parameters: js.Array[ASPxClientWebDocumentViewerParameter] = js.native
+  var Parameters: js.Array[ASPxClientWebDocumentViewerParameter]
   
   /**
     * Provides access to a View Model for report parameters.
     */
-  var ParametersViewModel: js.Any = js.native
+  var ParametersViewModel: js.Any
 }
 object ASPxClientParametersResetEventArgs {
   

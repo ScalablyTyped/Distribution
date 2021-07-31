@@ -3,14 +3,12 @@ package typings.reactIntl.anon
 import typings.reactIntl.srcTypesMod.IntlShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-intl.react-intl/src/components/injectIntl.WrappedComponentProps<'intl'> */
-@js.native
 trait WrappedComponentPropsintlIntl extends StObject {
   
-  var intl: IntlShape = js.native
+  var intl: IntlShape
 }
 object WrappedComponentPropsintlIntl {
   

@@ -2,13 +2,13 @@ package typings.spotifyWebApiNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AfterOptions extends LimitOptions {
+trait AfterOptions
+  extends StObject
+     with LimitOptions {
   
-  var after: js.UndefOr[Double] = js.native
+  var after: js.UndefOr[Double] = js.undefined
 }
 object AfterOptions {
   

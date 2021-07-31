@@ -2,7 +2,6 @@ package typings.jqueryCountto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,24 +29,23 @@ object mod {
   }
   
   /* Inlined std.Partial<{  from :number,   to :number,   speed :number,   refreshInterval :number,   decimals :number, formatter (value : number, options : jquery-countto.jquery-countto.Options): string, onUpdate (value : number): void, onComplete (value : number): void}> */
-  @js.native
   trait Options extends StObject {
     
-    var decimals: js.UndefOr[Double] = js.native
+    var decimals: js.UndefOr[Double] = js.undefined
     
-    var formatter: js.UndefOr[js.Function2[/* value */ Double, /* options */ this.type, String]] = js.native
+    var formatter: js.UndefOr[js.Function2[/* value */ Double, /* options */ this.type, String]] = js.undefined
     
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
-    var onComplete: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var onUpdate: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onUpdate: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var refreshInterval: js.UndefOr[Double] = js.native
+    var refreshInterval: js.UndefOr[Double] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

@@ -2,41 +2,39 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SipMediaApplication extends StObject {
   
   /**
     * The AWS Region in which the SIP media application is created.
     */
-  var AwsRegion: js.UndefOr[String] = js.native
+  var AwsRegion: js.UndefOr[String] = js.undefined
   
   /**
     * The SIP media application creation timestamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * List of endpoints for SIP media application. Currently, only one endpoint per SIP media application is permitted.
     */
-  var Endpoints: js.UndefOr[SipMediaApplicationEndpointList] = js.native
+  var Endpoints: js.UndefOr[SipMediaApplicationEndpointList] = js.undefined
   
   /**
     * The name of the SIP media application.
     */
-  var Name: js.UndefOr[SipMediaApplicationName] = js.native
+  var Name: js.UndefOr[SipMediaApplicationName] = js.undefined
   
   /**
     * The SIP media application ID.
     */
-  var SipMediaApplicationId: js.UndefOr[NonEmptyString] = js.native
+  var SipMediaApplicationId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The SIP media application updated timestamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
 }
 object SipMediaApplication {
   

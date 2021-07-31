@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpotPrice extends StObject {
   
   /**
     * The Availability Zone.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The instance type.
     */
-  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.native
+  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
   /**
     * A general description of the AMI.
     */
-  var ProductDescription: js.UndefOr[RIProductDescription] = js.native
+  var ProductDescription: js.UndefOr[RIProductDescription] = js.undefined
   
   /**
     * The maximum price per hour that you are willing to pay for a Spot Instance.
     */
-  var SpotPrice: js.UndefOr[String] = js.native
+  var SpotPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the request was created, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var Timestamp: js.UndefOr[DateTime] = js.native
+  var Timestamp: js.UndefOr[DateTime] = js.undefined
 }
 object SpotPrice {
   

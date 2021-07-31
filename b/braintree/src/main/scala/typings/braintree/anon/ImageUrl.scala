@@ -2,21 +2,19 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageUrl extends StObject {
   
-  var imageUrl: String = js.native
+  var imageUrl: String
   
-  var sourceDescription: String = js.native
+  var sourceDescription: String
   
-  var token: String = js.native
+  var token: String
   
-  var username: String = js.native
+  var username: String
   
-  var venmoUserId: String = js.native
+  var venmoUserId: String
 }
 object ImageUrl {
   

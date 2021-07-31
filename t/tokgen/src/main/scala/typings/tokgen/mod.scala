@@ -2,14 +2,15 @@ package typings.tokgen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("tokgen", JSImport.Namespace)
   @js.native
-  class ^ () extends TokenGenerator {
+  class ^ ()
+    extends StObject
+       with TokenGenerator {
     def this(options: Options) = this()
   }
   
@@ -17,12 +18,11 @@ object mod {
   
   type Options = Double | String | OptionsObject
   
-  @js.native
   trait OptionsObject extends StObject {
     
-    var chars: js.UndefOr[String] = js.native
+    var chars: js.UndefOr[String] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
   }
   object OptionsObject {
     

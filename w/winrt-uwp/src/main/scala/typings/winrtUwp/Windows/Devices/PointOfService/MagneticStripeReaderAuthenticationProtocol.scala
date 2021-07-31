@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object MagneticStripeReaderAuthenticationProtocol extends StObject {
   
   /** The device supports challenge response protocol. */
   @js.native
-  sealed trait challengeResponse extends MagneticStripeReaderAuthenticationProtocol
+  sealed trait challengeResponse
+    extends StObject
+       with MagneticStripeReaderAuthenticationProtocol
   
   /** The device does not support device authentication. */
   @js.native
-  sealed trait none extends MagneticStripeReaderAuthenticationProtocol
+  sealed trait none
+    extends StObject
+       with MagneticStripeReaderAuthenticationProtocol
 }

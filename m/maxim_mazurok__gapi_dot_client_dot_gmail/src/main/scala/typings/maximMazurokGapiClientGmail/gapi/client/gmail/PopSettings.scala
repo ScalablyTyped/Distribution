@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopSettings extends StObject {
   
   /** The range of messages which are accessible via POP. */
-  var accessWindow: js.UndefOr[String] = js.native
+  var accessWindow: js.UndefOr[String] = js.undefined
   
   /** The action that will be executed on a message after it has been fetched via POP. */
-  var disposition: js.UndefOr[String] = js.native
+  var disposition: js.UndefOr[String] = js.undefined
 }
 object PopSettings {
   

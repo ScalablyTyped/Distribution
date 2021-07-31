@@ -3,31 +3,30 @@ package typings.recharts.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PieLabelRenderProps
-  extends PieProps
+  extends StObject
+     with PieProps
      with /* key */ StringDictionary[js.Any] {
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var percent: js.UndefOr[Double] = js.native
+  var percent: js.UndefOr[Double] = js.undefined
   
   @JSName("stroke")
-  var stroke_PieLabelRenderProps: String = js.native
+  var stroke_PieLabelRenderProps: String
   
   @JSName("textAnchor")
-  var textAnchor_PieLabelRenderProps: String = js.native
+  var textAnchor_PieLabelRenderProps: String
   
   @JSName("x")
-  var x_PieLabelRenderProps: Double = js.native
+  var x_PieLabelRenderProps: Double
   
   @JSName("y")
-  var y_PieLabelRenderProps: Double = js.native
+  var y_PieLabelRenderProps: Double
 }
 object PieLabelRenderProps {
   

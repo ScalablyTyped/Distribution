@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Globe")
@@ -38,7 +37,7 @@ class Globe () extends StObject {
   
   var imageryLayers: ImageryLayerCollection = js.native
   
-  val imageryLayersUpdatedEvent: Event[js.Array[_]] = js.native
+  val imageryLayersUpdatedEvent: Event[js.Array[js.Any]] = js.native
   
   def isDestroyed(): Boolean = js.native
   

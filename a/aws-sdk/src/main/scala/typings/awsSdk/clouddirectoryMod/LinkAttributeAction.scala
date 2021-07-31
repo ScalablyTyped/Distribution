@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkAttributeAction extends StObject {
   
   /**
     * A type that can be either UPDATE_OR_CREATE or DELETE.
     */
-  var AttributeActionType: js.UndefOr[UpdateActionType] = js.native
+  var AttributeActionType: js.UndefOr[UpdateActionType] = js.undefined
   
   /**
     * The value that you want to update to.
     */
-  var AttributeUpdateValue: js.UndefOr[TypedAttributeValue] = js.native
+  var AttributeUpdateValue: js.UndefOr[TypedAttributeValue] = js.undefined
 }
 object LinkAttributeAction {
   

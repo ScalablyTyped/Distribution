@@ -2,21 +2,19 @@ package typings.googleapis.webmastersV3Mod.webmastersV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A time series of the number of URL crawl errors per error category and
   * platform.
   */
-@js.native
 trait SchemaUrlCrawlErrorsCountsQueryResponse extends StObject {
   
   /**
     * The time series of the number of URL crawl errors per error category and
     * platform.
     */
-  var countPerTypes: js.UndefOr[js.Array[SchemaUrlCrawlErrorCountsPerType]] = js.native
+  var countPerTypes: js.UndefOr[js.Array[SchemaUrlCrawlErrorCountsPerType]] = js.undefined
 }
 object SchemaUrlCrawlErrorsCountsQueryResponse {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemovePrefixListEntry extends StObject {
   
   /**
     * The CIDR block.
     */
-  var Cidr: String = js.native
+  var Cidr: String
 }
 object RemovePrefixListEntry {
   

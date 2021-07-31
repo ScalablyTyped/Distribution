@@ -3,10 +3,8 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebviewViewProvider extends StObject {
   
   /**
@@ -22,13 +20,13 @@ trait WebviewViewProvider extends StObject {
     *
     * @return Optional thenable indicating that the view has been fully resolved.
     */
-  def resolveWebviewView(webviewView: WebviewView, context: WebviewViewResolveContext[_], token: CancellationToken): Thenable[Unit] | Unit = js.native
+  def resolveWebviewView(webviewView: WebviewView, context: WebviewViewResolveContext[js.Any], token: CancellationToken): Thenable[Unit] | Unit
 }
 object WebviewViewProvider {
   
   @scala.inline
   def apply(
-    resolveWebviewView: (WebviewView, WebviewViewResolveContext[_], CancellationToken) => Thenable[Unit] | Unit
+    resolveWebviewView: (WebviewView, WebviewViewResolveContext[js.Any], CancellationToken) => Thenable[Unit] | Unit
   ): WebviewViewProvider = {
     val __obj = js.Dynamic.literal(resolveWebviewView = js.Any.fromFunction3(resolveWebviewView))
     __obj.asInstanceOf[WebviewViewProvider]
@@ -38,6 +36,8 @@ object WebviewViewProvider {
   implicit class WebviewViewProviderMutableBuilder[Self <: WebviewViewProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setResolveWebviewView(value: (WebviewView, WebviewViewResolveContext[_], CancellationToken) => Thenable[Unit] | Unit): Self = StObject.set(x, "resolveWebviewView", js.Any.fromFunction3(value))
+    def setResolveWebviewView(
+      value: (WebviewView, WebviewViewResolveContext[js.Any], CancellationToken) => Thenable[Unit] | Unit
+    ): Self = StObject.set(x, "resolveWebviewView", js.Any.fromFunction3(value))
   }
 }

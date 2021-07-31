@@ -3,23 +3,21 @@ package typings.apolloProtobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IField extends StObject {
   
   /** Field id */
-  var id: Double = js.native
+  var id: Double
   
   /** Field options */
-  var options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = js.native
+  var options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = js.undefined
   
   /** Field rule */
-  var rule: js.UndefOr[String] = js.native
+  var rule: js.UndefOr[String] = js.undefined
   
   /** Field type */
-  var `type`: String = js.native
+  var `type`: String
 }
 object IField {
   

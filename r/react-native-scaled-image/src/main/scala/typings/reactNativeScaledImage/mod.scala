@@ -7,7 +7,6 @@ import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,16 +18,15 @@ object mod {
   
   type ScaledImage = Component[ScaledImageProps, js.Object, js.Any]
   
-  @js.native
   trait ScaledImageProps extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var source: ImageSourcePropType = js.native
+    var source: ImageSourcePropType
     
-    var style: js.UndefOr[StyleProp[ImageStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScaledImageProps {
     

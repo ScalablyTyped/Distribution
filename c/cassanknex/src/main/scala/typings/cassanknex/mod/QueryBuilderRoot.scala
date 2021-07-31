@@ -3,7 +3,6 @@ package typings.cassanknex.mod
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,7 +18,7 @@ trait QueryBuilderRoot extends StObject {
   
   def createIndex[T](columnFamily: String, indexName: String, column: /* keyof T */ String): QueryBuilder = js.native
   
-  def createIndexCustom[T](columnFamily: String, indexName: String, column: /* keyof T */ String): QueryBuilder with CreateableIndexBuilder = js.native
+  def createIndexCustom[T](columnFamily: String, indexName: String, column: /* keyof T */ String): QueryBuilder & CreateableIndexBuilder = js.native
   
   def createKeyspace(keyspace: String): KeyspaceQueryBuilder = js.native
   

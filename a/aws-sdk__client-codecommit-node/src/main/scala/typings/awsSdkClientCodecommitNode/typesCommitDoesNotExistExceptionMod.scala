@@ -11,15 +11,14 @@ import typings.awsSdkClientCodecommitNode.postCommentForComparedCommitExceptions
 import typings.awsSdkClientCodecommitNode.postCommentForPullRequestExceptionsUnionMod.PostCommentForPullRequestExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCommitDoesNotExistExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_CommitDoesNotExistExceptionDetails> * / any */ @js.native
-  trait CommitDoesNotExistException
-    extends CreateBranchExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_CommitDoesNotExistExceptionDetails> * / any */ trait CommitDoesNotExistException
+    extends StObject
+       with CreateBranchExceptionsUnion
        with GetCommentsForComparedCommitExceptionsUnion
        with GetCommentsForPullRequestExceptionsUnion
        with GetDifferencesExceptionsUnion
@@ -29,15 +28,13 @@ object typesCommitDoesNotExistExceptionMod {
        with PostCommentForComparedCommitExceptionsUnion
        with PostCommentForPullRequestExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommitDoesNotExistException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommitDoesNotExistException
   }
   object CommitDoesNotExistException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommitDoesNotExistException
-    ): CommitDoesNotExistException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): CommitDoesNotExistException = {
+      val __obj = js.Dynamic.literal(name = "CommitDoesNotExistException")
       __obj.asInstanceOf[CommitDoesNotExistException]
     }
     
@@ -51,6 +48,5 @@ object typesCommitDoesNotExistExceptionMod {
     }
   }
   
-  @js.native
   trait CommitDoesNotExistExceptionDetails extends StObject
 }

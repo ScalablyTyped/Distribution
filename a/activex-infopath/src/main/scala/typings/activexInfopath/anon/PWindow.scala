@@ -4,15 +4,13 @@ import typings.activexInfopath.InfoPath.Window
 import typings.activexInfopath.InfoPath._XDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PWindow extends StObject {
   
-  val pDocument: _XDocument = js.native
+  val pDocument: _XDocument
   
-  val pWindow: Window = js.native
+  val pWindow: Window
 }
 object PWindow {
   

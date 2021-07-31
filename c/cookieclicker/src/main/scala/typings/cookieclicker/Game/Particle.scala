@@ -3,37 +3,35 @@ package typings.cookieclicker.Game
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Particle extends StObject {
   
-  var dur: Double = js.native
+  var dur: Double
   
-  var l: js.UndefOr[HTMLElement] = js.native
+  var l: js.UndefOr[HTMLElement] = js.undefined
   
-  var life: Double = js.native
+  var life: Double
   
-  var pic: String = js.native
+  var pic: String
   
-  var picId: Double = js.native
+  var picId: Double
   
-  var picPos: js.Tuple2[Double, Double] = js.native
+  var picPos: js.Tuple2[Double, Double]
   
-  var size: Double = js.native
+  var size: Double
   
-  var text: String | Double = js.native
+  var text: String | Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var xd: Double = js.native
+  var xd: Double
   
-  var y: Double = js.native
+  var y: Double
   
-  var yd: Double = js.native
+  var yd: Double
   
-  var z: Double = js.native
+  var z: Double
 }
 object Particle {
   

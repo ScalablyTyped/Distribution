@@ -2,13 +2,11 @@ package typings.sigmajs.SigmaJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapeLibrary extends StObject {
   
-  def enumerate(): js.Any = js.native
+  def enumerate(): js.Any
 }
 object ShapeLibrary {
   

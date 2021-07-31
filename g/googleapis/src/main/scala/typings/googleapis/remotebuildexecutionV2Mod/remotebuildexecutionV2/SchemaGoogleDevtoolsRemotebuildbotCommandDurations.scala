@@ -2,52 +2,50 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CommandDuration contains the various duration metrics tracked when a bot
   * performs a command.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemotebuildbotCommandDurations extends StObject {
   
   /**
     * The time spent preparing the command to be run in a Docker container
     * (includes pulling the Docker image, if necessary).
     */
-  var dockerPrep: js.UndefOr[String] = js.native
+  var dockerPrep: js.UndefOr[String] = js.undefined
   
   /**
     * The time spent downloading the input files and constructing the working
     * directory.
     */
-  var download: js.UndefOr[String] = js.native
+  var download: js.UndefOr[String] = js.undefined
   
   /**
     * The time spent executing the command (i.e., doing useful work).
     */
-  var execution: js.UndefOr[String] = js.native
+  var execution: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp when preparation is done and bot starts downloading files.
     */
-  var isoPrepDone: js.UndefOr[String] = js.native
+  var isoPrepDone: js.UndefOr[String] = js.undefined
   
   /**
     * The time spent completing the command, in total.
     */
-  var overall: js.UndefOr[String] = js.native
+  var overall: js.UndefOr[String] = js.undefined
   
   /**
     * The time spent uploading the stdout logs.
     */
-  var stdout: js.UndefOr[String] = js.native
+  var stdout: js.UndefOr[String] = js.undefined
   
   /**
     * The time spent uploading the output files.
     */
-  var upload: js.UndefOr[String] = js.native
+  var upload: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemotebuildbotCommandDurations {
   

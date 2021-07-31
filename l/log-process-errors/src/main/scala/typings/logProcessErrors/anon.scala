@@ -6,13 +6,11 @@ import typings.logProcessErrors.mod.LogLevel
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<std.Record<log-process-errors.log-process-errors.ExceptionType, log-process-errors.log-process-errors.LogLevel>> & {  default :(error : std.Error): 'silent' | 'default' | undefined} */
-  @js.native
   trait PartialRecordExceptionTyp extends StObject {
     
     var default: js.UndefOr[
@@ -20,17 +18,17 @@ object anon {
           /* error */ Error, 
           silent | typings.logProcessErrors.logProcessErrorsStrings.default
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var multipleResolves: js.UndefOr[LogLevel] = js.native
+    var multipleResolves: js.UndefOr[LogLevel] = js.undefined
     
-    var rejectionHandled: js.UndefOr[LogLevel] = js.native
+    var rejectionHandled: js.UndefOr[LogLevel] = js.undefined
     
-    var uncaughtException: js.UndefOr[LogLevel] = js.native
+    var uncaughtException: js.UndefOr[LogLevel] = js.undefined
     
-    var unhandledRejection: js.UndefOr[LogLevel] = js.native
+    var unhandledRejection: js.UndefOr[LogLevel] = js.undefined
     
-    var warning: js.UndefOr[LogLevel] = js.native
+    var warning: js.UndefOr[LogLevel] = js.undefined
   }
   object PartialRecordExceptionTyp {
     

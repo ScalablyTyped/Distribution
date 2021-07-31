@@ -2,46 +2,44 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProjectRequest extends StObject {
   
   /**
     * A user- or system-generated token that identifies the entity that requested project creation. This token can be used to repeat the request.
     */
-  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * The description of the project, if any.
     */
-  var description: js.UndefOr[ProjectDescription] = js.native
+  var description: js.UndefOr[ProjectDescription] = js.undefined
   
   /**
     * The ID of the project to be created in AWS CodeStar.
     */
-  var id: ProjectId = js.native
+  var id: ProjectId
   
   /**
     * The display name for the project to be created in AWS CodeStar.
     */
-  var name: ProjectName = js.native
+  var name: ProjectName
   
   /**
     * A list of the Code objects submitted with the project request. If this parameter is specified, the request must also include the toolchain parameter.
     */
-  var sourceCode: js.UndefOr[SourceCode] = js.native
+  var sourceCode: js.UndefOr[SourceCode] = js.undefined
   
   /**
     * The tags created for the project.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
   
   /**
     * The name of the toolchain template file submitted with the project request. If this parameter is specified, the request must also include the sourceCode parameter.
     */
-  var toolchain: js.UndefOr[Toolchain] = js.native
+  var toolchain: js.UndefOr[Toolchain] = js.undefined
 }
 object CreateProjectRequest {
   

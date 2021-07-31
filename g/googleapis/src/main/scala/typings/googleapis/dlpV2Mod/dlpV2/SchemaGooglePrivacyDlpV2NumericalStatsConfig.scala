@@ -2,21 +2,19 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Compute numerical stats over an individual column, including min, max, and
   * quantiles.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2NumericalStatsConfig extends StObject {
   
   /**
     * Field to compute numerical stats on. Supported types are integer, float,
     * date, datetime, timestamp, time.
     */
-  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2NumericalStatsConfig {
   

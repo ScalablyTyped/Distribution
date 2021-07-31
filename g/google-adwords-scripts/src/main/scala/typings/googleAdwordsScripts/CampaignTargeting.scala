@@ -2,31 +2,31 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience] extends AdWordsTargeting[AdWordsEntity, AdWordsEntity] {
+trait CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience]
+  extends StObject
+     with AdWordsTargeting[AdWordsEntity, AdWordsEntity] {
   
-  def adSchedules(): AdWordsSelector[AdSchedule] = js.native
+  def adSchedules(): AdWordsSelector[AdSchedule]
   
-  def excludedContentLabels(): AdWordsSelector[ExcludedContentLabel] = js.native
+  def excludedContentLabels(): AdWordsSelector[ExcludedContentLabel]
   
-  def excludedLocations(): AdWordsSelector[ExcludedLocation] = js.native
+  def excludedLocations(): AdWordsSelector[ExcludedLocation]
   
-  def getTargetingSetting(criterionTypeGroup: CriterionTypeGroup): TargetingSetting = js.native
+  def getTargetingSetting(criterionTypeGroup: CriterionTypeGroup): TargetingSetting
   
-  def languages(): AdWordsSelector[Language] = js.native
+  def languages(): AdWordsSelector[Language]
   
-  def newUserListBuilder(): SearchCampaignAudienceBuilder[SearchCampaignAudience] = js.native
+  def newUserListBuilder(): SearchCampaignAudienceBuilder[SearchCampaignAudience]
   
-  def platforms(): AdWordsSelector[Platform] = js.native
+  def platforms(): AdWordsSelector[Platform]
   
-  def setTargetingSetting(criterionTypeGroup: CriterionTypeGroup, targetingSetting: TargetingSetting): Unit = js.native
+  def setTargetingSetting(criterionTypeGroup: CriterionTypeGroup, targetingSetting: TargetingSetting): Unit
   
-  def targetedLocations(): AdWordsSelector[TargetedLocation] = js.native
+  def targetedLocations(): AdWordsSelector[TargetedLocation]
   
-  def targetedProximities(): AdWordsSelector[TargetedProximity] = js.native
+  def targetedProximities(): AdWordsSelector[TargetedProximity]
 }
 object CampaignTargeting {
   
@@ -50,7 +50,7 @@ object CampaignTargeting {
   }
   
   @scala.inline
-  implicit class CampaignTargetingMutableBuilder[Self <: CampaignTargeting[_, _], SearchCampaignAudience, SearchCampaignExcludedAudience] (val x: Self with (CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience])) extends AnyVal {
+  implicit class CampaignTargetingMutableBuilder[Self <: CampaignTargeting[?, ?], SearchCampaignAudience, SearchCampaignExcludedAudience] (val x: Self & (CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience])) extends AnyVal {
     
     @scala.inline
     def setAdSchedules(value: () => AdWordsSelector[AdSchedule]): Self = StObject.set(x, "adSchedules", js.Any.fromFunction0(value))

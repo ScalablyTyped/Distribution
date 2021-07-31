@@ -2,7 +2,6 @@ package typings.winjs.mod.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object HeaderPosition extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.winjs.WinJS.UI.HeaderPosition with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.winjs.WinJS.UI.HeaderPosition & Double] = js.native
   
-  /* 0 */ val left: typings.winjs.WinJS.UI.HeaderPosition.left with Double = js.native
+  /* 0 */ val left: typings.winjs.WinJS.UI.HeaderPosition.left & Double = js.native
   
-  /* 1 */ val top: typings.winjs.WinJS.UI.HeaderPosition.top with Double = js.native
+  /* 1 */ val top: typings.winjs.WinJS.UI.HeaderPosition.top & Double = js.native
 }

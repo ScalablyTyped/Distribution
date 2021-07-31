@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.glue
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption extends StObject {
   
   /**
     * Encryption mode to use for job bookmarks data. Valid values: `CSE-KMS`, `DISABLED`. Default value: `DISABLED`.
     */
-  var jobBookmarksEncryptionMode: js.UndefOr[Input[String]] = js.native
+  var jobBookmarksEncryptionMode: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.
     */
-  var kmsKeyArn: js.UndefOr[Input[String]] = js.native
+  var kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
 }
 object SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption {
   

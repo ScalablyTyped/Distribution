@@ -4,19 +4,17 @@ import typings.axeCore.mod.AxeResults
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   type AnalyzeCB = js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[AxeResults], Unit]
   
-  @js.native
   trait IPageOptions extends StObject {
     
-    var opts: js.UndefOr[js.Any] = js.native
+    var opts: js.UndefOr[js.Any] = js.undefined
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
   }
   object IPageOptions {
     

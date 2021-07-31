@@ -3,7 +3,6 @@ package typings.oracledb.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -52,7 +51,7 @@ trait SodaOperation extends StObject {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sodaqbesearches
     * @since 3.0
     */
-  def filter(filterSpec: Record[String, _]): SodaOperation = js.native
+  def filter(filterSpec: Record[String, js.Any]): SodaOperation = js.native
   
   /**
     * Returns a SodaDocumentCursor for documents that match the SodaOperation query criteria.
@@ -173,9 +172,9 @@ trait SodaOperation extends StObject {
     *
     * @since 3.0
     */
-  def replaceOne(newDocumentContent: Record[String, _]): js.Promise[SodaReplaceOneResult] = js.native
+  def replaceOne(newDocumentContent: Record[String, js.Any]): js.Promise[SodaReplaceOneResult] = js.native
   def replaceOne(
-    newDocumentContent: Record[String, _],
+    newDocumentContent: Record[String, js.Any],
     callback: js.Function2[/* error */ DBError, /* result */ SodaReplaceOneResult, Unit]
   ): Unit = js.native
   /**
@@ -219,9 +218,9 @@ trait SodaOperation extends StObject {
     *
     * @since 3.0
     */
-  def replaceOneAndGet(newDocumentContent: Record[String, _]): js.Promise[SodaDocument] = js.native
+  def replaceOneAndGet(newDocumentContent: Record[String, js.Any]): js.Promise[SodaDocument] = js.native
   def replaceOneAndGet(
-    newDocumentContent: Record[String, _],
+    newDocumentContent: Record[String, js.Any],
     callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]
   ): Unit = js.native
   /**

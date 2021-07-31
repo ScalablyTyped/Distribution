@@ -4,66 +4,66 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IBatch extends IObservable {
+trait IBatch
+  extends StObject
+     with IObservable {
   
   /** [Method] Adds a new operation to this batch at the end of the operations array
     * @param operation Object The Operation object
     * @returns Ext.data.Batch this
     */
-  var add: js.UndefOr[js.Function1[/* operation */ js.UndefOr[js.Any], this.type]] = js.native
+  var add: js.UndefOr[js.Function1[/* operation */ js.UndefOr[js.Any], this.type]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var autoStart: js.UndefOr[Boolean] = js.native
+  var autoStart: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Number) */
-  var current: js.UndefOr[Double] = js.native
+  var current: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Ext.data.Operation[]) */
-  var exceptions: js.UndefOr[Array] = js.native
+  var exceptions: js.UndefOr[Array] = js.undefined
   
   /** [Property] (Boolean) */
-  var hasException: js.UndefOr[Boolean] = js.native
+  var hasException: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var isComplete: js.UndefOr[Boolean] = js.native
+  var isComplete: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var isRunning: js.UndefOr[Boolean] = js.native
+  var isRunning: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Ext.data.Operation[]) */
-  var operations: js.UndefOr[Array] = js.native
+  var operations: js.UndefOr[Array] = js.undefined
   
   /** [Method] Pauses execution of the batch but does not cancel the current operation
     * @returns Ext.data.Batch this
     */
-  var pause: js.UndefOr[js.Function0[this.type]] = js.native
+  var pause: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var pauseOnException: js.UndefOr[Boolean] = js.native
+  var pauseOnException: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Kicks off execution of the batch continuing from the current operation
     * @returns Ext.data.Batch this
     */
-  var retry: js.UndefOr[js.Function0[this.type]] = js.native
+  var retry: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Method] Executes an operation by its numeric index in the operations array
     * @param index Number The operation index to run
     * @returns Ext.data.Batch this
     */
-  var runOperation: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], this.type]] = js.native
+  var runOperation: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], this.type]] = js.undefined
   
   /** [Method] Kicks off execution of the batch continuing from the next operation if the previous operation encountered an excepti
     * @param index Object
     * @returns Ext.data.Batch this
     */
-  var start: js.UndefOr[js.Function1[/* index */ js.UndefOr[js.Any], this.type]] = js.native
+  var start: js.UndefOr[js.Function1[/* index */ js.UndefOr[js.Any], this.type]] = js.undefined
   
   /** [Property] (Number) */
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object IBatch {
   

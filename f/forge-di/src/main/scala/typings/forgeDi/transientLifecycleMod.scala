@@ -4,17 +4,27 @@ import typings.forgeDi.argumentsMod.Arguments
 import typings.forgeDi.lifecycleMod.Lifecycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transientLifecycleMod {
   
   @JSImport("forge-di/dist/lifecycles/TransientLifecycle", JSImport.Default)
   @js.native
-  class default () extends TransientLifecycle
+  class default ()
+    extends StObject
+       with TransientLifecycle {
+    
+    /* CompleteClass */
+    override def resolve(
+      resolver: typings.forgeDi.resolverMod.default,
+      context: typings.forgeDi.contextMod.default,
+      args: Arguments
+    ): js.Any = js.native
+  }
   
-  @js.native
-  trait TransientLifecycle extends Lifecycle
+  trait TransientLifecycle
+    extends StObject
+       with Lifecycle
   object TransientLifecycle {
     
     @scala.inline

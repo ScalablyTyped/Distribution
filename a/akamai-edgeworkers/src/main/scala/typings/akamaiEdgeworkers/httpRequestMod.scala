@@ -5,10 +5,13 @@ import typings.akamaiEdgeworkers.anon.Headers
 import typings.akamaiEdgeworkers.streamsMod.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpRequestMod {
+  
+  @JSImport("http-request", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Performs a subrequest, fetching the requested resource asynchronously.
@@ -23,50 +26,49 @@ object httpRequestMod {
     *  - `body` The request payload.
     *  - `timeout` The request timeout, in milliseconds.
     */
-  @JSImport("http-request", "httpRequest")
-  @js.native
-  def httpRequest(url: String): js.Promise[HttpResponse] = js.native
-  @JSImport("http-request", "httpRequest")
-  @js.native
-  def httpRequest(url: String, options: Headers): js.Promise[HttpResponse] = js.native
+  @scala.inline
+  def httpRequest(url: String): js.Promise[HttpResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HttpResponse]]
+  @scala.inline
+  def httpRequest(url: String, options: Headers): js.Promise[HttpResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpResponse]]
   
   /**
     * Describes the result of a `httpRequest()`.
     */
-  @js.native
-  trait HttpResponse extends ReadsHeaders {
+  trait HttpResponse
+    extends StObject
+       with ReadsHeaders {
     
-    var body: ReadableStream[_] = js.native
+    var body: ReadableStream[js.Any]
     
     /**
       * Parses the body of the response as JSON. The response is buffered
       * and `JSON.parse()` is run on the text.
       */
-    def json(): js.Promise[_] = js.native
+    def json(): js.Promise[js.Any]
     
     /**
       * A boolean which is true for 2XX responses
       */
-    val ok: Boolean = js.native
+    val ok: Boolean
     
     /**
       * The HTTP status code
       */
-    val status: Double = js.native
+    val status: Double
     
     /**
       * Returns a Promise that resolves to a string containing the
       * response body. Note that the body is buffered in memory.
       */
-    def text(): js.Promise[String] = js.native
+    def text(): js.Promise[String]
   }
   object HttpResponse {
     
     @scala.inline
     def apply(
-      body: ReadableStream[_],
+      body: ReadableStream[js.Any],
       getHeader: String => js.Array[String] | Null,
-      json: () => js.Promise[_],
+      json: () => js.Promise[js.Any],
       ok: Boolean,
       status: Double,
       text: () => js.Promise[String]
@@ -79,10 +81,10 @@ object httpRequestMod {
     implicit class HttpResponseMutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBody(value: ReadableStream[_]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      def setBody(value: ReadableStream[js.Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setJson(value: () => js.Promise[_]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])

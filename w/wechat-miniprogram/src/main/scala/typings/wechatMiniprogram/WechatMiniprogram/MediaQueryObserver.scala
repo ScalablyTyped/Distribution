@@ -2,16 +2,14 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaQueryObserver extends StObject {
   
   /** [MediaQueryObserver.disconnect()](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/MediaQueryObserver.disconnect.html)
     *
     * 停止监听。回调函数将不再触发 */
-  def disconnect(): Unit = js.native
+  def disconnect(): Unit
   
   /** [MediaQueryObserver.observe(Object descriptor, function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/MediaQueryObserver.observe.html)
     *
@@ -21,7 +19,7 @@ trait MediaQueryObserver extends StObject {
   descriptor: ObserveDescriptor,
     /** 监听 media query 状态变化的回调函数 */
   callback: MediaQueryObserverObserveCallback
-  ): Unit = js.native
+  ): Unit
 }
 object MediaQueryObserver {
   

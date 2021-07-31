@@ -2,16 +2,16 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScheduledReleaseTrigger extends ReleaseTriggerBase {
+trait ScheduledReleaseTrigger
+  extends StObject
+     with ReleaseTriggerBase {
   
   /**
     * Release schedule for Scheduled Release trigger type
     */
-  var schedule: ReleaseSchedule = js.native
+  var schedule: ReleaseSchedule
 }
 object ScheduledReleaseTrigger {
   

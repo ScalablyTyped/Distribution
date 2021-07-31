@@ -5,21 +5,19 @@ import typings.azdata.azdataStrings.error
 import typings.azdata.azdataStrings.ok
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IExecuteReply extends StObject {
   
-  var execution_count: Double | Null = js.native
+  var execution_count: Double | Null
   
-  var status: ok | error | abort = js.native
+  var status: ok | error | abort
 }
 object IExecuteReply {
   
   @scala.inline
   def apply(status: ok | error | abort): IExecuteReply = {
-    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], execution_count = null)
     __obj.asInstanceOf[IExecuteReply]
   }
   

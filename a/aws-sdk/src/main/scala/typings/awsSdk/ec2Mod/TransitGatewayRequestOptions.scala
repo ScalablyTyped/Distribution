@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayRequestOptions extends StObject {
   
   /**
     * A private Autonomous System Number (ASN) for the Amazon side of a BGP session. The range is 64512 to 65534 for 16-bit ASNs and 4200000000 to 4294967294 for 32-bit ASNs. The default is 64512.
     */
-  var AmazonSideAsn: js.UndefOr[Long] = js.native
+  var AmazonSideAsn: js.UndefOr[Long] = js.undefined
   
   /**
     * Enable or disable automatic acceptance of attachment requests. Disabled by default.
     */
-  var AutoAcceptSharedAttachments: js.UndefOr[AutoAcceptSharedAttachmentsValue] = js.native
+  var AutoAcceptSharedAttachments: js.UndefOr[AutoAcceptSharedAttachmentsValue] = js.undefined
   
   /**
     * Enable or disable automatic association with the default association route table. Enabled by default.
     */
-  var DefaultRouteTableAssociation: js.UndefOr[DefaultRouteTableAssociationValue] = js.native
+  var DefaultRouteTableAssociation: js.UndefOr[DefaultRouteTableAssociationValue] = js.undefined
   
   /**
     * Enable or disable automatic propagation of routes to the default propagation route table. Enabled by default.
     */
-  var DefaultRouteTablePropagation: js.UndefOr[DefaultRouteTablePropagationValue] = js.native
+  var DefaultRouteTablePropagation: js.UndefOr[DefaultRouteTablePropagationValue] = js.undefined
   
   /**
     * Enable or disable DNS support. Enabled by default.
     */
-  var DnsSupport: js.UndefOr[DnsSupportValue] = js.native
+  var DnsSupport: js.UndefOr[DnsSupportValue] = js.undefined
   
   /**
     * Indicates whether multicast is enabled on the transit gateway
     */
-  var MulticastSupport: js.UndefOr[MulticastSupportValue] = js.native
+  var MulticastSupport: js.UndefOr[MulticastSupportValue] = js.undefined
   
   /**
     * Enable or disable Equal Cost Multipath Protocol support. Enabled by default.
     */
-  var VpnEcmpSupport: js.UndefOr[VpnEcmpSupportValue] = js.native
+  var VpnEcmpSupport: js.UndefOr[VpnEcmpSupportValue] = js.undefined
 }
 object TransitGatewayRequestOptions {
   

@@ -2,34 +2,32 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CustomConnector...
   */
-@js.native
 trait ICustomConnector extends StObject {
   
   /**
     * Name of the custom connector as displayed in the Qlik interface.
     */
-  var qDisplayName: String = js.native
+  var qDisplayName: String
   
   /**
     * Mode of the machine (64 or 32 bits).
     */
-  var qMachineMode: MachineModeType = js.native
+  var qMachineMode: MachineModeType
   
   /**
     * Name of the parent folder that contains the custom connector file.
     */
-  var qParent: String = js.native
+  var qParent: String
   
   /**
     * Name of the custom connector file.
     */
-  var qProvider: String = js.native
+  var qProvider: String
 }
 object ICustomConnector {
   

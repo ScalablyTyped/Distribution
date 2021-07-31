@@ -3,40 +3,38 @@ package typings.blueprintjsTable
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragTypesMod {
   
   type IClientCoordinates = js.Tuple2[Double, Double]
   
-  @js.native
   trait ICoordinateData extends StObject {
     
     /**
       * The client coordinates where the interaction was activated.
       */
-    var activation: IClientCoordinates = js.native
+    var activation: IClientCoordinates
     
     /**
       * The client coordinates of the current mouse event.
       */
-    var current: IClientCoordinates = js.native
+    var current: IClientCoordinates
     
     /**
       * The difference between current and last client coordinates.
       */
-    var delta: IClientCoordinates = js.native
+    var delta: IClientCoordinates
     
     /**
       * The client coordinates of the previous mouse event.
       */
-    var last: IClientCoordinates = js.native
+    var last: IClientCoordinates
     
     /**
       * The difference between current and activation client coordinates.
       */
-    var offset: IClientCoordinates = js.native
+    var offset: IClientCoordinates
   }
   object ICoordinateData {
     
@@ -72,14 +70,13 @@ object dragTypesMod {
     }
   }
   
-  @js.native
   trait IDragHandler extends StObject {
     
     /**
       * Called when the mouse is pressed down. Drag and click operations may
       * be cancelled at this point by returning false from this method.
       */
-    var onActivate: js.UndefOr[js.Function1[/* event */ MouseEvent, Boolean]] = js.native
+    var onActivate: js.UndefOr[js.Function1[/* event */ MouseEvent, Boolean]] = js.undefined
     
     /**
       * Called when the mouse is released iff the mouse was NOT dragged after
@@ -88,7 +85,7 @@ object dragTypesMod {
       * This will be called asynchronously if `onDoubleClick` is defined. See
       * that callback for more details.
       */
-    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
     /**
       * Called iff there are two click events within the timeout
@@ -100,33 +97,33 @@ object dragTypesMod {
       * the `onClick` callback will be invoked synchronously with the mouseup
       * event.
       */
-    var onDoubleClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onDoubleClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
     /**
       * Called when the mouse is released iff the mouse was dragged after
       * activation.
       */
-    var onDragEnd: js.UndefOr[js.Function2[/* event */ MouseEvent, /* coords */ ICoordinateData, Unit]] = js.native
+    var onDragEnd: js.UndefOr[js.Function2[/* event */ MouseEvent, /* coords */ ICoordinateData, Unit]] = js.undefined
     
     /**
       * Called every time the mouse is moved after activation and before the
       * mouse is released. This method is also called on the last even when the
       * mouse is released.
       */
-    var onDragMove: js.UndefOr[js.Function2[/* event */ MouseEvent, /* coords */ ICoordinateData, Unit]] = js.native
+    var onDragMove: js.UndefOr[js.Function2[/* event */ MouseEvent, /* coords */ ICoordinateData, Unit]] = js.undefined
     
     /**
       * This prevents mouse events from performing their default operation such
       * as text selection.
       * @default true
       */
-    var preventDefault: js.UndefOr[Boolean] = js.native
+    var preventDefault: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This prevents the event from propagating up to parent elements.
       * @default false
       */
-    var stopPropagation: js.UndefOr[Boolean] = js.native
+    var stopPropagation: js.UndefOr[Boolean] = js.undefined
   }
   object IDragHandler {
     

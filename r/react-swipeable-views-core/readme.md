@@ -12,7 +12,7 @@ react-swipeable-views core modules
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 21 |
-| # downloads        | 8536279 |
+| # downloads        | 10203455 |
 | # stars            | 0 |
 
 ## Links

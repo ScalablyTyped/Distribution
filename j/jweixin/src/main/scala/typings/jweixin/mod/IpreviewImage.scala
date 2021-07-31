@@ -2,16 +2,16 @@ package typings.jweixin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IpreviewImage extends BaseParams {
+trait IpreviewImage
+  extends StObject
+     with BaseParams {
   
-  var current: String = js.native
+  var current: String
   
   // 当前显示图片的http链接
-  var urls: js.Array[String] = js.native
+  var urls: js.Array[String]
 }
 object IpreviewImage {
   

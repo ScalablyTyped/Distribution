@@ -9,48 +9,48 @@ import typings.node.Buffer
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("ethereumjs-wallet", JSImport.Default)
   @js.native
-  class default () extends Wallet {
+  class default ()
+    extends StObject
+       with Wallet {
     def this(privateKey: Buffer) = this()
-    def this(privateKey: js.UndefOr[scala.Nothing], publicKey: Buffer) = this()
+    def this(privateKey: Unit, publicKey: Buffer) = this()
     def this(privateKey: Buffer, publicKey: Buffer) = this()
   }
   /* static members */
   object default {
     
-    @JSImport("ethereumjs-wallet", "default.fromEthSale")
+    @JSImport("ethereumjs-wallet", JSImport.Default)
     @js.native
-    def fromEthSale(input: String, password: String): Wallet = js.native
-    @JSImport("ethereumjs-wallet", "default.fromEthSale")
-    @js.native
-    def fromEthSale(input: EthSaleKeystore, password: String): Wallet = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromEthSale(input: String, password: String): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEthSale")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Wallet]
+    @scala.inline
+    def fromEthSale(input: EthSaleKeystore, password: String): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEthSale")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Wallet]
     
     /**
       * Create an instance based on a BIP32 extended private key (xprv)
       */
-    @JSImport("ethereumjs-wallet", "default.fromExtendedPrivateKey")
-    @js.native
-    def fromExtendedPrivateKey(extendedPrivateKey: String): Wallet = js.native
+    @scala.inline
+    def fromExtendedPrivateKey(extendedPrivateKey: String): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedPrivateKey")(extendedPrivateKey.asInstanceOf[js.Any]).asInstanceOf[Wallet]
     
     /**
       * Create an instance based on a BIP32 extended public key (xpub)
       */
-    @JSImport("ethereumjs-wallet", "default.fromExtendedPublicKey")
-    @js.native
-    def fromExtendedPublicKey(extendedPublicKey: String): Wallet = js.native
+    @scala.inline
+    def fromExtendedPublicKey(extendedPublicKey: String): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedPublicKey")(extendedPublicKey.asInstanceOf[js.Any]).asInstanceOf[Wallet]
     
     /**
       * Create an instance based on a raw private key
       */
-    @JSImport("ethereumjs-wallet", "default.fromPrivateKey")
-    @js.native
-    def fromPrivateKey(privateKey: Buffer): Wallet = js.native
+    @scala.inline
+    def fromPrivateKey(privateKey: Buffer): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Wallet]
     
     /**
       * Create an instance based on a public key (certain methods will not be available)
@@ -58,12 +58,10 @@ object mod {
       * This method only accepts uncompressed Ethereum-style public keys, unless
       * the `nonStrict` flag is set to true.
       */
-    @JSImport("ethereumjs-wallet", "default.fromPublicKey")
-    @js.native
-    def fromPublicKey(publicKey: Buffer): Wallet = js.native
-    @JSImport("ethereumjs-wallet", "default.fromPublicKey")
-    @js.native
-    def fromPublicKey(publicKey: Buffer, nonStrict: Boolean): Wallet = js.native
+    @scala.inline
+    def fromPublicKey(publicKey: Buffer): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(publicKey.asInstanceOf[js.Any]).asInstanceOf[Wallet]
+    @scala.inline
+    def fromPublicKey(publicKey: Buffer, nonStrict: Boolean): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(publicKey.asInstanceOf[js.Any], nonStrict.asInstanceOf[js.Any])).asInstanceOf[Wallet]
     
     /**
       * Import a wallet (Version 1 of the Ethereum wallet format).
@@ -71,12 +69,10 @@ object mod {
       * @param input A JSON serialized string, or an object representing V1 Keystore.
       * @param password The keystore password.
       */
-    @JSImport("ethereumjs-wallet", "default.fromV1")
-    @js.native
-    def fromV1(input: String, password: String): js.Promise[Wallet] = js.native
-    @JSImport("ethereumjs-wallet", "default.fromV1")
-    @js.native
-    def fromV1(input: V1Keystore, password: String): js.Promise[Wallet] = js.native
+    @scala.inline
+    def fromV1(input: String, password: String): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromV1")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
+    @scala.inline
+    def fromV1(input: V1Keystore, password: String): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromV1")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
     
     /**
       * Import a wallet (Version 3 of the Ethereum wallet format). Set `nonStrict` true to accept files with mixed-caps.
@@ -84,40 +80,32 @@ object mod {
       * @param input A JSON serialized string, or an object representing V3 Keystore.
       * @param password The keystore password.
       */
-    @JSImport("ethereumjs-wallet", "default.fromV3")
-    @js.native
-    def fromV3(input: String, password: String): js.Promise[Wallet] = js.native
-    @JSImport("ethereumjs-wallet", "default.fromV3")
-    @js.native
-    def fromV3(input: String, password: String, nonStrict: Boolean): js.Promise[Wallet] = js.native
-    @JSImport("ethereumjs-wallet", "default.fromV3")
-    @js.native
-    def fromV3(input: V3Keystore, password: String): js.Promise[Wallet] = js.native
-    @JSImport("ethereumjs-wallet", "default.fromV3")
-    @js.native
-    def fromV3(input: V3Keystore, password: String, nonStrict: Boolean): js.Promise[Wallet] = js.native
+    @scala.inline
+    def fromV3(input: String, password: String): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromV3")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
+    @scala.inline
+    def fromV3(input: String, password: String, nonStrict: Boolean): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromV3")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any], nonStrict.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
+    @scala.inline
+    def fromV3(input: V3Keystore, password: String): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromV3")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
+    @scala.inline
+    def fromV3(input: V3Keystore, password: String, nonStrict: Boolean): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromV3")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any], nonStrict.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
     
     /**
       * Create an instance based on a new random key.
       *
       * @param icapDirect setting this to `true` will generate an address suitable for the `ICAP Direct mode`
       */
-    @JSImport("ethereumjs-wallet", "default.generate")
-    @js.native
-    def generate(): Wallet = js.native
-    @JSImport("ethereumjs-wallet", "default.generate")
-    @js.native
-    def generate(icapDirect: Boolean): Wallet = js.native
+    @scala.inline
+    def generate(): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[Wallet]
+    @scala.inline
+    def generate(icapDirect: Boolean): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(icapDirect.asInstanceOf[js.Any]).asInstanceOf[Wallet]
     
-    @JSImport("ethereumjs-wallet", "default.generateVanityAddress")
-    @js.native
-    def generateVanityAddress(pattern: String): Wallet = js.native
+    @scala.inline
+    def generateVanityAddress(pattern: String): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("generateVanityAddress")(pattern.asInstanceOf[js.Any]).asInstanceOf[Wallet]
     /**
       * Create an instance where the address is valid against the supplied pattern (**this will be very slow**)
       */
-    @JSImport("ethereumjs-wallet", "default.generateVanityAddress")
-    @js.native
-    def generateVanityAddress(pattern: RegExp): Wallet = js.native
+    @scala.inline
+    def generateVanityAddress(pattern: RegExp): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("generateVanityAddress")(pattern.asInstanceOf[js.Any]).asInstanceOf[Wallet]
   }
   
   @JSImport("ethereumjs-wallet", "hdkey")
@@ -129,12 +117,15 @@ object mod {
   /* static members */
   object hdkey {
     
+    @JSImport("ethereumjs-wallet", "hdkey")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create an instance based on a BIP32 extended private or public key.
       */
-    @JSImport("ethereumjs-wallet", "hdkey.fromExtendedKey")
-    @js.native
-    def fromExtendedKey(base58Key: String): EthereumHDKey = js.native
+    @scala.inline
+    def fromExtendedKey(base58Key: String): EthereumHDKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedKey")(base58Key.asInstanceOf[js.Any]).asInstanceOf[EthereumHDKey]
     
     /**
       * Creates an instance based on a seed.
@@ -142,9 +133,8 @@ object mod {
       * For the seed we suggest to use [bip39](https://npmjs.org/package/bip39) to
       * create one from a BIP39 mnemonic.
       */
-    @JSImport("ethereumjs-wallet", "hdkey.fromMasterSeed")
-    @js.native
-    def fromMasterSeed(seedBuffer: Buffer): EthereumHDKey = js.native
+    @scala.inline
+    def fromMasterSeed(seedBuffer: Buffer): EthereumHDKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seedBuffer.asInstanceOf[js.Any]).asInstanceOf[EthereumHDKey]
   }
   
   object thirdparty {
@@ -156,53 +146,47 @@ object mod {
     @JSImport("ethereumjs-wallet", "thirdparty.fromEtherCamp")
     @js.native
     def fromEtherCamp: js.Function1[/* passphrase */ String, default] = js.native
-    @JSImport("ethereumjs-wallet", "thirdparty.fromEtherCamp")
-    @js.native
-    def fromEtherCamp(passphrase: String): default = js.native
+    @scala.inline
+    def fromEtherCamp(passphrase: String): default = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherCamp")(passphrase.asInstanceOf[js.Any]).asInstanceOf[default]
     @scala.inline
     def fromEtherCamp_=(x: js.Function1[/* passphrase */ String, default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromEtherCamp")(x.asInstanceOf[js.Any])
     
     @JSImport("ethereumjs-wallet", "thirdparty.fromEtherWallet")
     @js.native
     def fromEtherWallet: js.Function2[/* input */ String | EtherWalletOptions, /* password */ String, default] = js.native
-    @JSImport("ethereumjs-wallet", "thirdparty.fromEtherWallet")
-    @js.native
-    def fromEtherWallet(input: String, password: String): default = js.native
-    @JSImport("ethereumjs-wallet", "thirdparty.fromEtherWallet")
-    @js.native
-    def fromEtherWallet(input: EtherWalletOptions, password: String): default = js.native
+    @scala.inline
+    def fromEtherWallet(input: String, password: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherWallet")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[default]
+    @scala.inline
+    def fromEtherWallet(input: EtherWalletOptions, password: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherWallet")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[default]
     @scala.inline
     def fromEtherWallet_=(x: js.Function2[/* input */ String | EtherWalletOptions, /* password */ String, default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromEtherWallet")(x.asInstanceOf[js.Any])
     
     @JSImport("ethereumjs-wallet", "thirdparty.fromKryptoKit")
     @js.native
     def fromKryptoKit: js.Function2[/* entropy */ String, /* password */ String, js.Promise[default]] = js.native
-    @JSImport("ethereumjs-wallet", "thirdparty.fromKryptoKit")
-    @js.native
-    def fromKryptoKit(entropy: String, password: String): js.Promise[default] = js.native
+    @scala.inline
+    def fromKryptoKit(entropy: String, password: String): js.Promise[default] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromKryptoKit")(entropy.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default]]
     @scala.inline
     def fromKryptoKit_=(x: js.Function2[/* entropy */ String, /* password */ String, js.Promise[default]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromKryptoKit")(x.asInstanceOf[js.Any])
     
     @JSImport("ethereumjs-wallet", "thirdparty.fromQuorumWallet")
     @js.native
     def fromQuorumWallet: js.Function2[/* passphrase */ String, /* userid */ String, default] = js.native
-    @JSImport("ethereumjs-wallet", "thirdparty.fromQuorumWallet")
-    @js.native
-    def fromQuorumWallet(passphrase: String, userid: String): default = js.native
+    @scala.inline
+    def fromQuorumWallet(passphrase: String, userid: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromQuorumWallet")(passphrase.asInstanceOf[js.Any], userid.asInstanceOf[js.Any])).asInstanceOf[default]
     @scala.inline
     def fromQuorumWallet_=(x: js.Function2[/* passphrase */ String, /* userid */ String, default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromQuorumWallet")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait EthSaleKeystore extends StObject {
     
-    var btcaddr: String = js.native
+    var btcaddr: String
     
-    var email: String = js.native
+    var email: String
     
-    var encseed: String = js.native
+    var encseed: String
     
-    var ethaddr: String = js.native
+    var ethaddr: String
   }
   object EthSaleKeystore {
     
@@ -249,16 +233,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait PBKDFParamsOut extends KDFParamsOut {
+  trait PBKDFParamsOut
+    extends StObject
+       with KDFParamsOut {
     
-    var c: Double = js.native
+    var c: Double
     
-    var dklen: Double = js.native
+    var dklen: Double
     
-    var prf: String = js.native
+    var prf: String
     
-    var salt: String = js.native
+    var salt: String
   }
   object PBKDFParamsOut {
     
@@ -285,18 +270,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait ScryptKDFParamsOut extends KDFParamsOut {
+  trait ScryptKDFParamsOut
+    extends StObject
+       with KDFParamsOut {
     
-    var dklen: Double = js.native
+    var dklen: Double
     
-    var n: Double = js.native
+    var n: Double
     
-    var p: Double = js.native
+    var p: Double
     
-    var r: Double = js.native
+    var r: Double
     
-    var salt: String = js.native
+    var salt: String
   }
   object ScryptKDFParamsOut {
     
@@ -326,16 +312,15 @@ object mod {
     }
   }
   
-  @js.native
   trait V1Keystore extends StObject {
     
-    var Address: String = js.native
+    var Address: String
     
-    var Crypto: CipherText = js.native
+    var Crypto: CipherText
     
-    var Id: String = js.native
+    var Id: String
     
-    var Version: String = js.native
+    var Version: String
   }
   object V1Keystore {
     
@@ -362,14 +347,13 @@ object mod {
     }
   }
   
-  @js.native
   trait V3Keystore extends StObject {
     
-    var crypto: Cipher = js.native
+    var crypto: Cipher
     
-    var id: String = js.native
+    var id: String
     
-    var version: Double = js.native
+    var version: Double
   }
   object V3Keystore {
     
@@ -393,28 +377,27 @@ object mod {
     }
   }
   
-  @js.native
   trait V3Params extends StObject {
     
-    var c: Double = js.native
+    var c: Double
     
-    var cipher: String = js.native
+    var cipher: String
     
-    var dklen: Double = js.native
+    var dklen: Double
     
-    var iv: String | Buffer = js.native
+    var iv: String | Buffer
     
-    var kdf: String = js.native
+    var kdf: String
     
-    var n: Double = js.native
+    var n: Double
     
-    var p: Double = js.native
+    var p: Double
     
-    var r: Double = js.native
+    var r: Double
     
-    var salt: String | Buffer = js.native
+    var salt: String | Buffer
     
-    var uuid: String | Buffer = js.native
+    var uuid: String | Buffer
   }
   object V3Params {
     

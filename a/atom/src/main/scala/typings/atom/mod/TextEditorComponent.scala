@@ -3,20 +3,18 @@ package typings.atom.mod
 import typings.atom.anon.ClientX
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEditorComponent extends StObject {
   
-  def pixelPositionForMouseEvent(event: ClientX): PixelPosition = js.native
+  def pixelPositionForMouseEvent(event: ClientX): PixelPosition
   
   /** Does not clip screenPosition, unlike similar method on TextEditorElement */
-  def pixelPositionForScreenPosition(screenPosition: PointLike): PixelPosition = js.native
+  def pixelPositionForScreenPosition(screenPosition: PointLike): PixelPosition
   
-  def screenPositionForMouseEvent(event: ClientX): Point = js.native
+  def screenPositionForMouseEvent(event: ClientX): Point
   
-  def screenPositionForPixelPosition(pos: PixelPosition): Point = js.native
+  def screenPositionForPixelPosition(pos: PixelPosition): Point
 }
 object TextEditorComponent {
   

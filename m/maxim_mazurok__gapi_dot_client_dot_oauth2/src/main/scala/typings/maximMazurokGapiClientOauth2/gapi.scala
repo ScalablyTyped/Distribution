@@ -4,7 +4,6 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientOauth2.anon.Alt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -20,29 +19,28 @@ object gapi {
         def get(request: Alt): Request[Userinfo] = js.native
       }
       
-      @js.native
       trait Tokeninfo extends StObject {
         
         /** Who is the intended audience for this token. In general the same as issued_to. */
-        var audience: js.UndefOr[String] = js.native
+        var audience: js.UndefOr[String] = js.undefined
         
         /** The email address of the user. Present only if the email scope is present in the request. */
-        var email: js.UndefOr[String] = js.native
+        var email: js.UndefOr[String] = js.undefined
         
         /** The expiry time of the token, as number of seconds left until expiry. */
-        var expires_in: js.UndefOr[Double] = js.native
+        var expires_in: js.UndefOr[Double] = js.undefined
         
         /** To whom was the token issued to. In general the same as audience. */
-        var issued_to: js.UndefOr[String] = js.native
+        var issued_to: js.UndefOr[String] = js.undefined
         
         /** The space separated list of scopes granted to this token. */
-        var scope: js.UndefOr[String] = js.native
+        var scope: js.UndefOr[String] = js.undefined
         
         /** The obfuscated user id. */
-        var user_id: js.UndefOr[String] = js.native
+        var user_id: js.UndefOr[String] = js.undefined
         
         /** Boolean flag which is true if the email address is verified. Present only if the email scope is present in the request. */
-        var verified_email: js.UndefOr[Boolean] = js.native
+        var verified_email: js.UndefOr[Boolean] = js.undefined
       }
       object Tokeninfo {
         
@@ -99,41 +97,40 @@ object gapi {
         }
       }
       
-      @js.native
       trait Userinfo extends StObject {
         
         /** The user's email address. */
-        var email: js.UndefOr[String] = js.native
+        var email: js.UndefOr[String] = js.undefined
         
         /** The user's last name. */
-        var family_name: js.UndefOr[String] = js.native
+        var family_name: js.UndefOr[String] = js.undefined
         
         /** The user's gender. */
-        var gender: js.UndefOr[String] = js.native
+        var gender: js.UndefOr[String] = js.undefined
         
         /** The user's first name. */
-        var given_name: js.UndefOr[String] = js.native
+        var given_name: js.UndefOr[String] = js.undefined
         
         /** The hosted domain e.g. example.com if the user is Google apps user. */
-        var hd: js.UndefOr[String] = js.native
+        var hd: js.UndefOr[String] = js.undefined
         
         /** The obfuscated ID of the user. */
-        var id: js.UndefOr[String] = js.native
+        var id: js.UndefOr[String] = js.undefined
         
         /** URL of the profile page. */
-        var link: js.UndefOr[String] = js.native
+        var link: js.UndefOr[String] = js.undefined
         
         /** The user's preferred locale. */
-        var locale: js.UndefOr[String] = js.native
+        var locale: js.UndefOr[String] = js.undefined
         
         /** The user's full name. */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** URL of the user's picture image. */
-        var picture: js.UndefOr[String] = js.native
+        var picture: js.UndefOr[String] = js.undefined
         
         /** Boolean flag which is true if the email address is verified. Always verified because we only return the user's primary email address. */
-        var verified_email: js.UndefOr[Boolean] = js.native
+        var verified_email: js.UndefOr[Boolean] = js.undefined
       }
       object Userinfo {
         
@@ -223,10 +220,9 @@ object gapi {
         var v2: V2Resource = js.native
       }
       
-      @js.native
       trait V2Resource extends StObject {
         
-        var me: MeResource = js.native
+        var me: MeResource
       }
       object V2Resource {
         

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsSetDefaultNetworkTierRequest extends StObject {
   
   /** Default network tier to be set. */
-  var networkTier: js.UndefOr[String] = js.native
+  var networkTier: js.UndefOr[String] = js.undefined
 }
 object ProjectsSetDefaultNetworkTierRequest {
   

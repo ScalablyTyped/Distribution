@@ -2,31 +2,29 @@ package typings.vsoNodeApi.vssinterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsonPatchOperation extends StObject {
   
   /**
     * The path to copy from for the Move/Copy operation.
     */
-  var from: String = js.native
+  var from: String
   
   /**
     * The patch operation
     */
-  var op: Operation = js.native
+  var op: Operation
   
   /**
     * The path for the operation
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * The value for the operation. This is either a primitive or a JToken.
     */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object JsonPatchOperation {
   

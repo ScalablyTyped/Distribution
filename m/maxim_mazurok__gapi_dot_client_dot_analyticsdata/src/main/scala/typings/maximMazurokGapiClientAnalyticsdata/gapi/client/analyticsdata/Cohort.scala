@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cohort extends StObject {
   
   /**
@@ -14,16 +12,16 @@ trait Cohort extends StObject {
     * date range can be aligned to any day. If CohortsRange uses weekly granularity, the date range should be aligned to the week boundary, starting at Sunday and ending Saturday. If
     * CohortsRange uses monthly granularity, the date range should be aligned to the month, starting at the first and ending on the last day of the month.
     */
-  var dateRange: js.UndefOr[DateRange] = js.native
+  var dateRange: js.UndefOr[DateRange] = js.undefined
   
   /** The dimension used by cohort. Only supports `firstTouchDate` for retention report. */
-  var dimension: js.UndefOr[String] = js.native
+  var dimension: js.UndefOr[String] = js.undefined
   
   /**
     * Assigns a name to this cohort. The dimension `cohort` is valued to this name in a report response. If set, cannot begin with `cohort_` or `RESERVED_`. If not set, cohorts are named
     * by their zero based index `cohort_0`, `cohort_1`, etc.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Cohort {
   

@@ -2,17 +2,15 @@ package typings.wordpressBlockEditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AjaxUrl extends StObject {
   
-  var ajaxUrl: String = js.native
+  var ajaxUrl: String
   
-  var nonce: String = js.native
+  var nonce: String
   
-  var unlockNonce: String = js.native
+  var unlockNonce: String
 }
 object AjaxUrl {
   

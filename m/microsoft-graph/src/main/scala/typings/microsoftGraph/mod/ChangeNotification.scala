@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeNotification extends StObject {
   
   /**
     * Indicates the type of change that will raise the change notification. The supported values are: created, updated,
     * deleted. Required.
     */
-  var changeType: js.UndefOr[ChangeType] = js.native
+  var changeType: js.UndefOr[ChangeType] = js.undefined
   
   /**
     * Value of the clientState property sent in the subscription request (if any). The maximum length is 255 characters. The
@@ -20,37 +18,37 @@ trait ChangeNotification extends StObject {
     * property. The value of the clientState property sent with the subscription is compared with the value of the
     * clientState property received with each change notification. Optional.
     */
-  var clientState: js.UndefOr[NullableOption[String]] = js.native
+  var clientState: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * (Preview) Encrypted content attached with the change notification. Only provided if encryptionCertificate and
     * includeResourceData were defined during the subscription request and if the resource supports it. Optional.
     */
-  var encryptedContent: js.UndefOr[NullableOption[ChangeNotificationEncryptedContent]] = js.native
+  var encryptedContent: js.UndefOr[NullableOption[ChangeNotificationEncryptedContent]] = js.undefined
   
   // Unique ID for the notification. Optional.
-  var id: js.UndefOr[NullableOption[String]] = js.native
+  var id: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The type of lifecycle notification if the current notification is a lifecycle notification. Optional. Supported values
     * are missed, removed, reauthorizationRequired.
     */
-  var lifecycleEvent: js.UndefOr[NullableOption[LifecycleEventType]] = js.native
+  var lifecycleEvent: js.UndefOr[NullableOption[LifecycleEventType]] = js.undefined
   
   // The URI of the resource that emitted the change notification relative to https://graph.microsoft.com. Required.
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
   // The content of this property depends on the type of resource being subscribed to. Required.
-  var resourceData: js.UndefOr[NullableOption[ResourceData]] = js.native
+  var resourceData: js.UndefOr[NullableOption[ResourceData]] = js.undefined
   
   // The expiration time for the subscription. Required.
-  var subscriptionExpirationDateTime: js.UndefOr[String] = js.native
+  var subscriptionExpirationDateTime: js.UndefOr[String] = js.undefined
   
   // The unique identifier of the subscription that generated the notification.
-  var subscriptionId: js.UndefOr[String] = js.native
+  var subscriptionId: js.UndefOr[String] = js.undefined
   
   // The unique identifier of the tenant from which the change notification originated.
-  var tenantId: js.UndefOr[String] = js.native
+  var tenantId: js.UndefOr[String] = js.undefined
 }
 object ChangeNotification {
   

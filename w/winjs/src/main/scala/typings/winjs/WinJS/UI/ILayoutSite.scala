@@ -3,50 +3,48 @@ package typings.winjs.WinJS.UI
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This API is no longer supported. Starting with the Windows Library for JavaScript 2.0 Preview, use the ILayoutSite2 interface. Represents a rendering site for an ILayout.
   **/
-@js.native
 trait ILayoutSite extends StObject {
   
   //#region Properties
   /**
     * This API is no longer supported. Starting with the Windows Library for JavaScript 2.0 Preview, use a the ILayoutSite2 interface.
     **/
-  var animationsDisabled: Boolean = js.native
+  var animationsDisabled: Boolean
   
   /**
     * This API is no longer supported. Starting with the Windows Library for JavaScript 2.0 Preview, use a the ILayoutSite2 interface.
     **/
-  var itemSurface: HTMLElement = js.native
+  var itemSurface: HTMLElement
   
   /**
     * This API is no longer supported. Starting with the Windows Library for JavaScript 2.0 Preview, use a the ILayoutSite2 interface.
     **/
-  var rtl: Boolean = js.native
+  var rtl: Boolean
   
   /**
     * This API is no longer supported. Starting with the Windows Library for JavaScript 2.0 Preview, use a the ILayoutSite2 interface.
     **/
-  var scrollbarPos: Double = js.native
+  var scrollbarPos: Double
   
   /**
     * This API is no longer supported. Starting with the Windows Library for JavaScript 2.0 Preview, use a the ILayoutSite2 interface.
     **/
-  var surface: HTMLElement = js.native
+  var surface: HTMLElement
   
   /**
     * This API is no longer supported. Starting with the Windows Library for JavaScript 2.0 Preview, use a the ILayoutSite2 interface.
     **/
-  var viewport: HTMLElement = js.native
+  var viewport: HTMLElement
   
   /**
     * This API is no longer supported. Starting with the Windows Library for JavaScript 2.0 Preview, use a the ILayoutSite2 interface.
     **/
-  var viewportSize: js.Any = js.native
+  var viewportSize: js.Any
 }
 object ILayoutSite {
   

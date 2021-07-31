@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -31,11 +30,17 @@ sealed trait VerticalAlignment extends StObject
 object VerticalAlignment extends StObject {
   
   @js.native
-  sealed trait BOTTOM extends VerticalAlignment
+  sealed trait BOTTOM
+    extends StObject
+       with VerticalAlignment
   
   @js.native
-  sealed trait CENTER extends VerticalAlignment
+  sealed trait CENTER
+    extends StObject
+       with VerticalAlignment
   
   @js.native
-  sealed trait TOP extends VerticalAlignment
+  sealed trait TOP
+    extends StObject
+       with VerticalAlignment
 }

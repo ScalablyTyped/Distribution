@@ -5,15 +5,13 @@ import typings.stripe.stripeStrings.pending
 import typings.stripe.stripeStrings.succeeded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attemptsremaining extends StObject {
   
-  var attempts_remaining: Double = js.native
+  var attempts_remaining: Double
   
-  var status: pending | succeeded | failed = js.native
+  var status: pending | succeeded | failed
 }
 object Attemptsremaining {
   

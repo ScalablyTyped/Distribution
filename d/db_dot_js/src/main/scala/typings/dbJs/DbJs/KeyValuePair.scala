@@ -2,15 +2,13 @@ package typings.dbJs.DbJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyValuePair[TKey, TValue] extends StObject {
   
-  var item: TValue = js.native
+  var item: TValue
   
-  var key: TKey = js.native
+  var key: TKey
 }
 object KeyValuePair {
   
@@ -21,7 +19,7 @@ object KeyValuePair {
   }
   
   @scala.inline
-  implicit class KeyValuePairMutableBuilder[Self <: KeyValuePair[_, _], TKey, TValue] (val x: Self with (KeyValuePair[TKey, TValue])) extends AnyVal {
+  implicit class KeyValuePairMutableBuilder[Self <: KeyValuePair[?, ?], TKey, TValue] (val x: Self & (KeyValuePair[TKey, TValue])) extends AnyVal {
     
     @scala.inline
     def setItem(value: TValue): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])

@@ -8,41 +8,39 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppBarProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var iconClassNameLeft: js.UndefOr[String] = js.native
+  var iconClassNameLeft: js.UndefOr[String] = js.undefined
   
-  var iconClassNameRight: js.UndefOr[String] = js.native
+  var iconClassNameRight: js.UndefOr[String] = js.undefined
   
-  var iconElementLeft: js.UndefOr[ReactElement] = js.native
+  var iconElementLeft: js.UndefOr[ReactElement] = js.undefined
   
-  var iconElementRight: js.UndefOr[ReactElement] = js.native
+  var iconElementRight: js.UndefOr[ReactElement] = js.undefined
   
-  var iconStyleLeft: js.UndefOr[CSSProperties] = js.native
+  var iconStyleLeft: js.UndefOr[CSSProperties] = js.undefined
   
-  var iconStyleRight: js.UndefOr[CSSProperties] = js.native
+  var iconStyleRight: js.UndefOr[CSSProperties] = js.undefined
   
-  var onLeftIconButtonClick: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onLeftIconButtonClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
-  var onRightIconButtonClick: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onRightIconButtonClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
-  var onTitleClick: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onTitleClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
-  var showMenuIconButton: js.UndefOr[Boolean] = js.native
+  var showMenuIconButton: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var title: js.UndefOr[ReactNode] = js.native
+  var title: js.UndefOr[ReactNode] = js.undefined
   
-  var titleStyle: js.UndefOr[CSSProperties] = js.native
+  var titleStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var zDepth: js.UndefOr[Double] = js.native
+  var zDepth: js.UndefOr[Double] = js.undefined
 }
 object AppBarProps {
   

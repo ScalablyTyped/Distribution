@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelExportTaskRequest extends StObject {
   
   /**
     * The ID of the export task.
     */
-  var taskId: ExportTaskId = js.native
+  var taskId: ExportTaskId
 }
 object CancelExportTaskRequest {
   

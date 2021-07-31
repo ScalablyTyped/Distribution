@@ -6,17 +6,15 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.TypeParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SigningCertificateV2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignaturePolicyIdentifier extends StObject {
   
-  var SignaturePolicyIdentifier: Oid = js.native
+  var SignaturePolicyIdentifier: Oid
   
-  var SigningCertificateV2: ArrayParam[String] | Array | typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SigningCertificateV2 = js.native
+  var SigningCertificateV2: ArrayParam[String] | Array | typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SigningCertificateV2
   
-  var SigningTime: TypeParam | StringParam = js.native
+  var SigningTime: TypeParam | StringParam
 }
 object SignaturePolicyIdentifier {
   

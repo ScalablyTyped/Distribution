@@ -30,7 +30,6 @@ import typings.devtoolsProtocol.mod.Protocol.WebAudio.NodesConnectedEvent
 import typings.devtoolsProtocol.mod.Protocol.WebAudio.NodesDisconnectedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

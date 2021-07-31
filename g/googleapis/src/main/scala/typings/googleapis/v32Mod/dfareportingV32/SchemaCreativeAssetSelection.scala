@@ -2,14 +2,12 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Encapsulates the list of rules for asset selection and a default asset in
   * case none of the rules match. Applicable to INSTREAM_VIDEO creatives.
   */
-@js.native
 trait SchemaCreativeAssetSelection extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SchemaCreativeAssetSelection extends StObject {
     * this creative, and will be served if none of the rules match. This is a
     * required field.
     */
-  var defaultAssetId: js.UndefOr[String] = js.native
+  var defaultAssetId: js.UndefOr[String] = js.undefined
   
   /**
     * Rules determine which asset will be served to a viewer. Rules will be
     * evaluated in the order in which they are stored in this list. This list
     * must contain at least one rule. Applicable to INSTREAM_VIDEO creatives.
     */
-  var rules: js.UndefOr[js.Array[SchemaRule]] = js.native
+  var rules: js.UndefOr[js.Array[SchemaRule]] = js.undefined
 }
 object SchemaCreativeAssetSelection {
   

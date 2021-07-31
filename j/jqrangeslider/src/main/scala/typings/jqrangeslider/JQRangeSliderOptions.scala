@@ -2,43 +2,41 @@ package typings.jqrangeslider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQRangeSliderOptions extends StObject {
   
   // speed of the wheel scrolling
-  var arrows: js.UndefOr[Boolean] = js.native
+  var arrows: js.UndefOr[Boolean] = js.undefined
   
   // fade out length when displaying value labels (only when valueLabels = "change")
-  var delayOut: js.UndefOr[Double] = js.native
+  var delayOut: js.UndefOr[Double] = js.undefined
   
   // when to show value labels: "show" (always), "hide" (never) and "change" (only if slider changed)
-  var durationIn: js.UndefOr[Double] = js.native
+  var durationIn: js.UndefOr[Double] = js.undefined
   
   // fade in length when displaying value labels (only when valueLabels = "change")
-  var durationOut: js.UndefOr[Double] = js.native
+  var durationOut: js.UndefOr[Double] = js.undefined
   
   // show handles and make them clearly select the range. Warning: must be used with 'minimum' and must not be used with 'scale'
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   // duration labels are shown after the user changed its values (only when valueLabels = "change")
-  var range: js.UndefOr[Boolean | JQRangeSliderRangeLength] = js.native
+  var range: js.UndefOr[Boolean | JQRangeSliderRangeLength] = js.undefined
   
   // configure a read-only slider
-  var scales: js.UndefOr[js.Array[jQRangeSliderScale]] = js.native
+  var scales: js.UndefOr[js.Array[jQRangeSliderScale]] = js.undefined
   
   // lets you specify minimum and/or maximum range length
-  var symmetricPositionning: js.UndefOr[Boolean] = js.native
+  var symmetricPositionning: js.UndefOr[Boolean] = js.undefined
   
   // hide the arrows or not
-  var valueLabels: js.UndefOr[String] = js.native
+  var valueLabels: js.UndefOr[String] = js.undefined
   
-  var wheelMode: js.UndefOr[String] = js.native
+  var wheelMode: js.UndefOr[String] = js.undefined
   
   // function of the wheel, "zoom", "scroll" or null
-  var wheelSpeed: js.UndefOr[Double] = js.native
+  var wheelSpeed: js.UndefOr[Double] = js.undefined
 }
 object JQRangeSliderOptions {
   

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,50 +24,82 @@ sealed trait ItemType extends StObject
 object ItemType extends StObject {
   
   @js.native
-  sealed trait CHECKBOX extends ItemType
+  sealed trait CHECKBOX
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait CHECKBOX_GRID extends ItemType
+  sealed trait CHECKBOX_GRID
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait DATE extends ItemType
+  sealed trait DATE
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait DATETIME extends ItemType
+  sealed trait DATETIME
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait DURATION extends ItemType
+  sealed trait DURATION
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait GRID extends ItemType
+  sealed trait GRID
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait IMAGE extends ItemType
+  sealed trait IMAGE
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait LIST extends ItemType
+  sealed trait LIST
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait MULTIPLE_CHOICE extends ItemType
+  sealed trait MULTIPLE_CHOICE
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait PAGE_BREAK extends ItemType
+  sealed trait PAGE_BREAK
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait PARAGRAPH_TEXT extends ItemType
+  sealed trait PARAGRAPH_TEXT
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait SCALE extends ItemType
+  sealed trait SCALE
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait SECTION_HEADER extends ItemType
+  sealed trait SECTION_HEADER
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait TEXT extends ItemType
+  sealed trait TEXT
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait TIME extends ItemType
+  sealed trait TIME
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait VIDEO extends ItemType
+  sealed trait VIDEO
+    extends StObject
+       with ItemType
 }

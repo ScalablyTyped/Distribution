@@ -3,32 +3,32 @@ package typings.quillDelta
 import typings.quillDelta.mod.AttributeMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object opMod {
   
   object default {
     
-    @JSImport("quill-delta/dist/Op", "default.iterator")
+    @JSImport("quill-delta/dist/Op", JSImport.Default)
     @js.native
-    def iterator(ops: js.Array[Op]): typings.quillDelta.iteratorMod.default = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("quill-delta/dist/Op", "default.length")
-    @js.native
-    def length(op: Op): Double = js.native
+    @scala.inline
+    def iterator(ops: js.Array[Op]): typings.quillDelta.iteratorMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(ops.asInstanceOf[js.Any]).asInstanceOf[typings.quillDelta.iteratorMod.default]
+    
+    @scala.inline
+    def length(op: Op): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("length")(op.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
-  @js.native
   trait Op extends StObject {
     
-    var attributes: js.UndefOr[AttributeMap] = js.native
+    var attributes: js.UndefOr[AttributeMap] = js.undefined
     
-    var delete: js.UndefOr[Double] = js.native
+    var delete: js.UndefOr[Double] = js.undefined
     
-    var insert: js.UndefOr[String | js.Object] = js.native
+    var insert: js.UndefOr[String | js.Object] = js.undefined
     
-    var retain: js.UndefOr[Double] = js.native
+    var retain: js.UndefOr[Double] = js.undefined
   }
   object Op {
     

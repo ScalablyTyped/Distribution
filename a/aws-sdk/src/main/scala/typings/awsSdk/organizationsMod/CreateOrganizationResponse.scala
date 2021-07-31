@@ -2,16 +2,14 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateOrganizationResponse extends StObject {
   
   /**
     * A structure that contains details about the newly created organization.
     */
-  var Organization: js.UndefOr[typings.awsSdk.organizationsMod.Organization] = js.native
+  var Organization: js.UndefOr[typings.awsSdk.organizationsMod.Organization] = js.undefined
 }
 object CreateOrganizationResponse {
   

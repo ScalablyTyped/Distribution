@@ -6,28 +6,26 @@ import typings.qiniuJs.qiniuJsStrings.jpeg
 import typings.qiniuJs.qiniuJsStrings.png
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageInfo_ extends StObject {
   
   // 图片高度，单位：像素(px) 。
-  var colorModel: String = js.native
+  var colorModel: String
   
   // 文件大小，单位：Bytes
-  var format: png | jpeg | gif | bmp = js.native
+  var format: png | jpeg | gif | bmp
   
   // 彩色空间，如palette16、ycbcr等。
-  var frameNumber: Double = js.native
+  var frameNumber: Double
   
   // 图片宽度，单位：像素(px) 。
-  var height: Double = js.native
+  var height: Double
   
-  var size: Double = js.native
+  var size: Double
   
   // 图片类型，如png、jpeg、gif、bmp等。
-  var width: Double = js.native
+  var width: Double
 }
 object ImageInfo_ {
   

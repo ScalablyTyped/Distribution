@@ -2,13 +2,11 @@ package typings.elasticApmNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpanOptions extends StObject {
   
-  var childOf: js.UndefOr[Transaction | Span | String] = js.native
+  var childOf: js.UndefOr[Transaction | Span | String] = js.undefined
 }
 object SpanOptions {
   

@@ -7,11 +7,12 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.popUp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapMenu extends Control {
+trait BootstrapMenu
+  extends StObject
+     with Control {
   
   def getItem(index: Double): BootstrapMenuItem | Null = js.native
   
@@ -26,7 +27,7 @@ trait BootstrapMenu extends Control {
   def getSelectedItem(): BootstrapMenuItem | Null = js.native
   
   def off(
-    eventName: js.UndefOr[scala.Nothing],
+    eventName: Unit,
     callback: js.ThisFunction1[
       /* this */ this.type, 
       js.UndefOr[EventArgs | MenuItemClickEventArgs | MenuItemEventArgs | MenuItemMouseEventArgs], 

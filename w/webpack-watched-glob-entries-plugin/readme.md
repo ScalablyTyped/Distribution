@@ -11,8 +11,8 @@ Webpack plugin to glob directories for entry files and also watch them for chang
 | Full name          | webpack-watched-glob-entries-plugin |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 39427 |
+| # dependents       | 5 |
+| # downloads        | 53162 |
 | # stars            | 0 |
 
 ## Links

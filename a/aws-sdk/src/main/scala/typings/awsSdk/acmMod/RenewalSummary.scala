@@ -2,31 +2,29 @@ package typings.awsSdk.acmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenewalSummary extends StObject {
   
   /**
     * Contains information about the validation of each domain name in the certificate, as it pertains to ACM's managed renewal. This is different from the initial validation that occurs as a result of the RequestCertificate request. This field exists only when the certificate type is AMAZON_ISSUED.
     */
-  var DomainValidationOptions: DomainValidationList = js.native
+  var DomainValidationOptions: DomainValidationList
   
   /**
     * The status of ACM's managed renewal of the certificate.
     */
-  var RenewalStatus: typings.awsSdk.acmMod.RenewalStatus = js.native
+  var RenewalStatus: typings.awsSdk.acmMod.RenewalStatus
   
   /**
     * The reason that a renewal request was unsuccessful.
     */
-  var RenewalStatusReason: js.UndefOr[FailureReason] = js.native
+  var RenewalStatusReason: js.UndefOr[FailureReason] = js.undefined
   
   /**
     * The time at which the renewal summary was last updated.
     */
-  var UpdatedAt: TStamp = js.native
+  var UpdatedAt: TStamp
 }
 object RenewalSummary {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p1beta1WebDetectionWebImage extends StObject {
   
   /** (Deprecated) Overall relevancy score for the image. */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
   
   /** The result image URL. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVisionV1p1beta1WebDetectionWebImage {
   

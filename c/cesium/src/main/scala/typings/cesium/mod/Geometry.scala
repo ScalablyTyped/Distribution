@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.Attributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Geometry")
@@ -15,14 +14,17 @@ class Geometry protected () extends StObject {
   
   var boundingSphere: BoundingSphere = js.native
   
-  var indices: js.Array[_] = js.native
+  var indices: js.Array[js.Any] = js.native
   
   var primitiveType: PrimitiveType = js.native
 }
 object Geometry {
   
-  /* static member */
-  @JSImport("cesium", "Geometry.computeNumberOfVertices")
+  @JSImport("cesium", "Geometry")
   @js.native
-  def computeNumberOfVertices(geometry: Cartesian3): Double = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def computeNumberOfVertices(geometry: Cartesian3): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeNumberOfVertices")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

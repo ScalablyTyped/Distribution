@@ -2,21 +2,19 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLunaClientsResponse extends StObject {
   
   /**
     * The list of clients.
     */
-  var ClientList: typings.awsSdk.cloudhsmMod.ClientList = js.native
+  var ClientList: typings.awsSdk.cloudhsmMod.ClientList
   
   /**
     * If not null, more results are available. Pass this to ListLunaClients to retrieve the next set of items.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListLunaClientsResponse {
   

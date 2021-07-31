@@ -2,25 +2,23 @@ package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response that contains the requested diagnostics.
   */
-@js.native
 trait SchemaListDiagnosticsResponse extends StObject {
   
   /**
     * The diagnostics matching the given request.
     */
-  var diagnostics: js.UndefOr[js.Array[SchemaDiagnostics]] = js.native
+  var diagnostics: js.UndefOr[js.Array[SchemaDiagnostics]] = js.undefined
   
   /**
     * Token that can be used for pagination. Returned only if the request
     * matches more beacons than can be returned in this response.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListDiagnosticsResponse {
   

@@ -2,26 +2,24 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint extends StObject {
   
   /**
     * Used for pagination: the number of results to return.
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     * The slug version of the enterprise name. You can also substitute this value with the enterprise id.
     */
-  var enterprise: String = js.native
+  var enterprise: String
   
   /**
     * Used for pagination: the index of the first result to return.
     */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
 }
 object EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint {
   

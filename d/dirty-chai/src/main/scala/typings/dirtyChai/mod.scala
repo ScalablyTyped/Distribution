@@ -6,7 +6,6 @@ import typings.chaiAsPromised.Chai.Eventually
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -36,18 +35,33 @@ object mod extends Shortcut {
         var ensure_Original: Assertion = js.native
       }
       
-      @js.native
       trait LanguageChains extends StObject {
         
-        def always(): Assertion = js.native
-        def always(message: String): Assertion = js.native
+        def always(): Assertion
+        def always(message: String): Assertion
         @JSName("always")
-        var always_Original: Assertion = js.native
+        var always_Original: Assertion
+      }
+      object LanguageChains {
+        
+        @scala.inline
+        def apply(always: Assertion): LanguageChains = {
+          val __obj = js.Dynamic.literal(always = always.asInstanceOf[js.Any])
+          __obj.asInstanceOf[LanguageChains]
+        }
+        
+        @scala.inline
+        implicit class LanguageChainsMutableBuilder[Self <: LanguageChains] (val x: Self) extends AnyVal {
+          
+          @scala.inline
+          def setAlways(value: Assertion): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
+        }
       }
       
       @js.native
       trait PromisedAssertion
-        extends Eventually
+        extends StObject
+           with Eventually
            with PromiseLike[js.Any] {
         
         def apply(): PromisedAssertion = js.native

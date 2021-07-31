@@ -2,13 +2,11 @@ package typings.googleapis.cloudbillingV1Mod.cloudbillingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for `ListProjectBillingInfoResponse`.
   */
-@js.native
 trait SchemaListProjectBillingInfoResponse extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait SchemaListProjectBillingInfoResponse extends StObject {
     * call `ListProjectBillingInfo` again with the `page_token` field set to
     * this value. This field is empty if there are no more results to retrieve.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A list of `ProjectBillingInfo` resources representing the projects
     * associated with the billing account.
     */
-  var projectBillingInfo: js.UndefOr[js.Array[SchemaProjectBillingInfo]] = js.native
+  var projectBillingInfo: js.UndefOr[js.Array[SchemaProjectBillingInfo]] = js.undefined
 }
 object SchemaListProjectBillingInfoResponse {
   

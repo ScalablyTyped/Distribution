@@ -10,7 +10,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object badgeMod {
@@ -22,18 +21,17 @@ object badgeMod {
   
   type Badge = Component[BadgeProps, js.Object, js.Any]
   
-  @js.native
   trait BadgeProps extends StObject {
     
-    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
     
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
-    var number: js.UndefOr[Double] = js.native
+    var number: js.UndefOr[Double] = js.undefined
     
-    var skin: js.UndefOr[primary | secondary | success | error | neutral] = js.native
+    var skin: js.UndefOr[primary | secondary | success | error | neutral] = js.undefined
     
-    var theme: js.UndefOr[Components] = js.native
+    var theme: js.UndefOr[Components] = js.undefined
   }
   object BadgeProps {
     

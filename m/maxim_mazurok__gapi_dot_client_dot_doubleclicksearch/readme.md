@@ -10,9 +10,9 @@ TypeScript typings for Search Ads 360 API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.doubleclicksearch |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 48 |
+| # downloads        | 1009 |
 | # stars            | 0 |
 
 ## Links

@@ -2,15 +2,13 @@ package typings.memfs.volumeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMkdirOptions extends StObject {
   
-  var mode: js.UndefOr[TMode] = js.native
+  var mode: js.UndefOr[TMode] = js.undefined
   
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
 }
 object IMkdirOptions {
   

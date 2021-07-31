@@ -2,38 +2,36 @@ package typings.winrtUwp.Windows.UI.Input.Spatial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpatialInteractionManager extends StObject {
   
   /* unmapped type */
-  var addEventListener: js.Any = js.native
+  var addEventListener: js.Any
   
   /* unmapped type */
-  var getDetectedSourcesAtTimestamp: js.Any = js.native
+  var getDetectedSourcesAtTimestamp: js.Any
   
   /* unmapped type */
-  var oninteractiondetected: js.Any = js.native
+  var oninteractiondetected: js.Any
   
   /* unmapped type */
-  var onsourcedetected: js.Any = js.native
+  var onsourcedetected: js.Any
   
   /* unmapped type */
-  var onsourcelost: js.Any = js.native
+  var onsourcelost: js.Any
   
   /* unmapped type */
-  var onsourcepressed: js.Any = js.native
+  var onsourcepressed: js.Any
   
   /* unmapped type */
-  var onsourcereleased: js.Any = js.native
+  var onsourcereleased: js.Any
   
   /* unmapped type */
-  var onsourceupdated: js.Any = js.native
+  var onsourceupdated: js.Any
   
   /* unmapped type */
-  var removeEventListener: js.Any = js.native
+  var removeEventListener: js.Any
 }
 object SpatialInteractionManager {
   

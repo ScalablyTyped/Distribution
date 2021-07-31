@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseChannel extends StObject {
   
   /** channel specifies which release channel the cluster is subscribed to. */
-  var channel: js.UndefOr[String] = js.native
+  var channel: js.UndefOr[String] = js.undefined
 }
 object ReleaseChannel {
   

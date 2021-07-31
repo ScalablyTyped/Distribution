@@ -2,16 +2,14 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopTaskResponse extends StObject {
   
   /**
     * The task that was stopped.
     */
-  var task: js.UndefOr[Task] = js.native
+  var task: js.UndefOr[Task] = js.undefined
 }
 object StopTaskResponse {
   

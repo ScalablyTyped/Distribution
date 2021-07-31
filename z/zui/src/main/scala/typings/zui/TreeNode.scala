@@ -2,26 +2,24 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * treeview
   */
-@js.native
 trait TreeNode extends StObject {
   
-  var children: js.UndefOr[js.Array[TreeNode]] = js.native
+  var children: js.UndefOr[js.Array[TreeNode]] = js.undefined
   
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object TreeNode {
   

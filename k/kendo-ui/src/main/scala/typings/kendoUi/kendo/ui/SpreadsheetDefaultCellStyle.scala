@@ -2,27 +2,25 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpreadsheetDefaultCellStyle extends StObject {
   
-  var Italic: js.UndefOr[Boolean] = js.native
+  var Italic: js.UndefOr[Boolean] = js.undefined
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
-  var underline: js.UndefOr[Boolean] = js.native
+  var underline: js.UndefOr[Boolean] = js.undefined
   
-  var wrap: js.UndefOr[Boolean] = js.native
+  var wrap: js.UndefOr[Boolean] = js.undefined
 }
 object SpreadsheetDefaultCellStyle {
   

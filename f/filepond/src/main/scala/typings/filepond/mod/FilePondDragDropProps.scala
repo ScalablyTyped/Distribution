@@ -2,37 +2,35 @@ package typings.filepond.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilePondDragDropProps extends StObject {
   
   /**
     * Require drop on the FilePond element itself to catch the file.
     * @default true
     */
-  var dropOnElement: js.UndefOr[Boolean] = js.native
+  var dropOnElement: js.UndefOr[Boolean] = js.undefined
   
   /**
     * FilePond will catch all files dropped on the webpage.
     * @default false
     */
-  var dropOnPage: js.UndefOr[Boolean] = js.native
+  var dropOnPage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When enabled, files are validated before they are dropped.
     * A file is not added when it’s invalid.
     * @default false
     */
-  var dropValidation: js.UndefOr[Boolean] = js.native
+  var dropValidation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ignored file names when handling dropped directories.
     * Dropping directories is not supported on all browsers.
     * @default ['.ds_store', 'thumbs.db', 'desktop.ini']
     */
-  var ignoredFiles: js.UndefOr[js.Array[String]] = js.native
+  var ignoredFiles: js.UndefOr[js.Array[String]] = js.undefined
 }
 object FilePondDragDropProps {
   

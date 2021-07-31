@@ -2,10 +2,8 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWindowOptions extends StObject {
   
   /**
@@ -14,70 +12,70 @@ trait IWindowOptions extends StObject {
     * Ps=10 ; 2  Toggle full-screen.
     * No default implementation.
     */
-  var fullscreenWin: js.UndefOr[Boolean] = js.native
+  var fullscreenWin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=16  Report xterm character cell size in pixels. Result is "CSI 6 ; height ; width t".
     * Has a default implementation.
     */
-  var getCellSizePixels: js.UndefOr[Boolean] = js.native
+  var getCellSizePixels: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=20  Report xterm window's icon label. Result is "OSC L label ST".
     * No default implementation.
     */
-  var getIconTitle: js.UndefOr[Boolean] = js.native
+  var getIconTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=19  Report the size of the screen in characters. Result is "CSI 9 ; height ; width t".
     * No default implementation.
     */
-  var getScreenSizeChars: js.UndefOr[Boolean] = js.native
+  var getScreenSizeChars: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=15    Report size of the screen in pixels. Result is "CSI 5 ; height ; width t".
     * No default implementation.
     */
-  var getScreenSizePixels: js.UndefOr[Boolean] = js.native
+  var getScreenSizePixels: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=13      Report xterm window position. Result is "CSI 3 ; x ; y t".
     * Ps=13 ; 2  Report xterm text-area position. Result is "CSI 3 ; x ; y t".
     * No default implementation.
     */
-  var getWinPosition: js.UndefOr[Boolean] = js.native
+  var getWinPosition: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=18  Report the size of the text area in characters. Result is "CSI 8 ; height ; width t".
     * Has a default implementation.
     */
-  var getWinSizeChars: js.UndefOr[Boolean] = js.native
+  var getWinSizeChars: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=14      Report xterm text area size in pixels. Result is "CSI 4 ; height ; width t".
     * Ps=14 ; 2  Report xterm window size in pixels. Result is "CSI  4 ; height ; width t".
     * Has a default implementation.
     */
-  var getWinSizePixels: js.UndefOr[Boolean] = js.native
+  var getWinSizePixels: js.UndefOr[Boolean] = js.undefined
   
   /** Ps=11   Report xterm window state.
     * If the xterm window is non-iconified, it returns "CSI 1 t".
     * If the xterm window is iconified, it returns "CSI 2 t".
     * No default implementation.
     */
-  var getWinState: js.UndefOr[Boolean] = js.native
+  var getWinState: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=21  Report xterm window's title. Result is "OSC l label ST".
     * No default implementation.
     */
-  var getWinTitle: js.UndefOr[Boolean] = js.native
+  var getWinTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=6    Lower the xterm window to the bottom of the stacking order.
     * No default implementation.
     */
-  var lowerWin: js.UndefOr[Boolean] = js.native
+  var lowerWin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=9 ; 0   Restore maximized window.
@@ -86,13 +84,13 @@ trait IWindowOptions extends StObject {
     * Ps=9 ; 3   Maximize window horizontally.
     * No default implementation.
     */
-  var maximizeWin: js.UndefOr[Boolean] = js.native
+  var maximizeWin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=2    Iconify window.
     * No default implementation.
     */
-  var minimizeWin: js.UndefOr[Boolean] = js.native
+  var minimizeWin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=23 ; 0  Restore xterm icon and window title from stack.
@@ -100,7 +98,7 @@ trait IWindowOptions extends StObject {
     * Ps=23 ; 2  Restore xterm window title from stack.
     * All variants have a default implementation.
     */
-  var popTitle: js.UndefOr[Boolean] = js.native
+  var popTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=22 ; 0  Save xterm icon and window title on stack.
@@ -108,36 +106,36 @@ trait IWindowOptions extends StObject {
     * Ps=22 ; 2  Save xterm window title on stack.
     * All variants have a default implementation.
     */
-  var pushTitle: js.UndefOr[Boolean] = js.native
+  var pushTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=5    Raise the window to the front of the stacking order.
     * No default implementation.
     */
-  var raiseWin: js.UndefOr[Boolean] = js.native
+  var raiseWin: js.UndefOr[Boolean] = js.undefined
   
   /** Ps=7    Refresh the window. */
-  var refreshWin: js.UndefOr[Boolean] = js.native
+  var refreshWin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=1    De-iconify window.
     * No default implementation.
     */
-  var restoreWin: js.UndefOr[Boolean] = js.native
+  var restoreWin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps>=24  Resize to Ps lines (DECSLPP).
     * DECSLPP is not implemented. This settings is also used to
     * enable / disable DECCOLM (earlier variant of DECSLPP).
     */
-  var setWinLines: js.UndefOr[Boolean] = js.native
+  var setWinLines: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps=3 ; x ; y
     * Move window to [x, y].
     * No default implementation.
     */
-  var setWinPosition: js.UndefOr[Boolean] = js.native
+  var setWinPosition: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps = 8 ; height ; width
@@ -146,7 +144,7 @@ trait IWindowOptions extends StObject {
     * Zero parameters use the display's height or width.
     * No default implementation.
     */
-  var setWinSizeChars: js.UndefOr[Boolean] = js.native
+  var setWinSizeChars: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ps = 4 ; height ; width
@@ -155,7 +153,7 @@ trait IWindowOptions extends StObject {
     * Zero parameters should use the display's height or width.
     * No default implementation.
     */
-  var setWinSizePixels: js.UndefOr[Boolean] = js.native
+  var setWinSizePixels: js.UndefOr[Boolean] = js.undefined
 }
 object IWindowOptions {
   

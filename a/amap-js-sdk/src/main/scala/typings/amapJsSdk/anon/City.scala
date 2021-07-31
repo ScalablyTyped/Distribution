@@ -2,19 +2,17 @@ package typings.amapJsSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait City extends StObject {
   
-  var city: String = js.native
+  var city: String
   
-  var citycode: String = js.native
+  var citycode: String
   
-  var district: String = js.native
+  var district: String
   
-  var provice: String = js.native
+  var provice: String
 }
 object City {
   

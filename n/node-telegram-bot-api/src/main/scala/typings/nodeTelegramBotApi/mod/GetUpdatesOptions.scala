@@ -2,19 +2,17 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUpdatesOptions extends StObject {
   
-  var allowed_updates: js.UndefOr[js.Array[String]] = js.native
+  var allowed_updates: js.UndefOr[js.Array[String]] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object GetUpdatesOptions {
   

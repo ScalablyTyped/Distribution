@@ -2,15 +2,13 @@ package typings.tsEssentials
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TYPE[K] extends StObject {
     
-    var __TYPE__ : K = js.native
+    var __TYPE__ : K
   }
   object TYPE {
     
@@ -21,7 +19,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class TYPEMutableBuilder[Self <: TYPE[_], K] (val x: Self with TYPE[K]) extends AnyVal {
+    implicit class TYPEMutableBuilder[Self <: TYPE[?], K] (val x: Self & TYPE[K]) extends AnyVal {
       
       @scala.inline
       def set__TYPE__(value: K): Self = StObject.set(x, "__TYPE__", value.asInstanceOf[js.Any])

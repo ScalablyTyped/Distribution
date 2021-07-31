@@ -3,61 +3,59 @@ package typings.devtoolsProtocol.mod.Protocol.Animation
 import typings.devtoolsProtocol.mod.Protocol.DOM.BackendNodeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationEffect extends StObject {
   
   /**
     * `AnimationEffect`'s target node.
     */
-  var backendNodeId: js.UndefOr[BackendNodeId] = js.native
+  var backendNodeId: js.UndefOr[BackendNodeId] = js.undefined
   
   /**
     * `AnimationEffect`'s delay.
     */
-  var delay: Double = js.native
+  var delay: Double
   
   /**
     * `AnimationEffect`'s playback direction.
     */
-  var direction: String = js.native
+  var direction: String
   
   /**
     * `AnimationEffect`'s iteration duration.
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * `AnimationEffect`'s timing function.
     */
-  var easing: String = js.native
+  var easing: String
   
   /**
     * `AnimationEffect`'s end delay.
     */
-  var endDelay: Double = js.native
+  var endDelay: Double
   
   /**
     * `AnimationEffect`'s fill mode.
     */
-  var fill: String = js.native
+  var fill: String
   
   /**
     * `AnimationEffect`'s iteration start.
     */
-  var iterationStart: Double = js.native
+  var iterationStart: Double
   
   /**
     * `AnimationEffect`'s iterations.
     */
-  var iterations: Double = js.native
+  var iterations: Double
   
   /**
     * `AnimationEffect`'s keyframes.
     */
-  var keyframesRule: js.UndefOr[KeyframesRule] = js.native
+  var keyframesRule: js.UndefOr[KeyframesRule] = js.undefined
 }
 object AnimationEffect {
   

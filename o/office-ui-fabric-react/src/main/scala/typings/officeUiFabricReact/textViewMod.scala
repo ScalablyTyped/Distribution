@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.textTypesMod.ITextProps
 import typings.uifabricFoundation.libIcomponentMod.IViewComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textViewMod {

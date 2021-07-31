@@ -3,19 +3,17 @@ package typings.monacoEditor.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMarkdownString extends StObject {
   
-  val isTrusted: js.UndefOr[Boolean] = js.native
+  val isTrusted: js.UndefOr[Boolean] = js.undefined
   
-  val supportThemeIcons: js.UndefOr[Boolean] = js.native
+  val supportThemeIcons: js.UndefOr[Boolean] = js.undefined
   
-  var uris: js.UndefOr[StringDictionary[UriComponents]] = js.native
+  var uris: js.UndefOr[StringDictionary[UriComponents]] = js.undefined
   
-  val value: String = js.native
+  val value: String
 }
 object IMarkdownString {
   

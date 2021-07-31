@@ -2,13 +2,11 @@ package typings.reactNative.mod.Animated
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegacyRef[C] extends StObject {
   
-  def getNode(): C = js.native
+  def getNode(): C
 }
 object LegacyRef {
   
@@ -19,7 +17,7 @@ object LegacyRef {
   }
   
   @scala.inline
-  implicit class LegacyRefMutableBuilder[Self <: LegacyRef[_], C] (val x: Self with LegacyRef[C]) extends AnyVal {
+  implicit class LegacyRefMutableBuilder[Self <: LegacyRef[?], C] (val x: Self & LegacyRef[C]) extends AnyVal {
     
     @scala.inline
     def setGetNode(value: () => C): Self = StObject.set(x, "getNode", js.Any.fromFunction0(value))

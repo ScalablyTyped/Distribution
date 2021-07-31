@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentController extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait CommentController extends StObject {
     *
     * If not provided, users can leave comments in any document opened in the editor.
     */
-  var commentingRangeProvider: js.UndefOr[CommentingRangeProvider] = js.native
+  var commentingRangeProvider: js.UndefOr[CommentingRangeProvider] = js.undefined
   
   /**
     * Create a [comment thread](#CommentThread). The comment thread will be displayed in visible text editors (if the resource matches)
@@ -23,7 +21,7 @@ trait CommentController extends StObject {
     * @param range The range the comment thread is located within the document.
     * @param comments The ordered comments of the thread.
     */
-  def createCommentThread(uri: Uri, range: Range, comments: js.Array[Comment]): CommentThread = js.native
+  def createCommentThread(uri: Uri, range: Range, comments: js.Array[Comment]): CommentThread
   
   /**
     * Dispose this comment controller.
@@ -31,29 +29,29 @@ trait CommentController extends StObject {
     * Once disposed, all [comment threads](#CommentThread) created by this comment controller will also be removed from the editor
     * and Comments Panel.
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * The id of this comment controller.
     */
-  val id: String = js.native
+  val id: String
   
   /**
     * The human-readable label of this comment controller.
     */
-  val label: String = js.native
+  val label: String
   
   /**
     * Comment controller options
     */
-  var options: js.UndefOr[CommentOptions] = js.native
+  var options: js.UndefOr[CommentOptions] = js.undefined
   
   /**
     * Optional reaction handler for creating and deleting reactions on a [comment](#Comment).
     */
   var reactionHandler: js.UndefOr[
     js.Function2[/* comment */ Comment, /* reaction */ CommentReaction, js.Promise[Unit]]
-  ] = js.native
+  ] = js.undefined
 }
 object CommentController {
   

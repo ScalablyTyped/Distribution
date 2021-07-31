@@ -3,7 +3,6 @@ package typings.primereact
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollableViewMod {
@@ -20,30 +19,29 @@ object scrollableViewMod {
     def this(props: ScrollableViewProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ScrollableViewProps extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var footer: js.UndefOr[js.Any] = js.native
+    var footer: js.UndefOr[js.Any] = js.undefined
     
-    var frozen: js.UndefOr[Boolean] = js.native
+    var frozen: js.UndefOr[Boolean] = js.undefined
     
-    var frozenBody: js.UndefOr[js.Any] = js.native
+    var frozenBody: js.UndefOr[js.Any] = js.undefined
     
-    var frozenWidth: js.UndefOr[String] = js.native
+    var frozenWidth: js.UndefOr[String] = js.undefined
     
-    var header: js.UndefOr[js.Any] = js.native
+    var header: js.UndefOr[js.Any] = js.undefined
     
-    var onVirtualScroll: js.UndefOr[js.Function1[/* page */ Double, Unit]] = js.native
+    var onVirtualScroll: js.UndefOr[js.Function1[/* page */ Double, Unit]] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var totalRcords: js.UndefOr[Double] = js.native
+    var totalRcords: js.UndefOr[Double] = js.undefined
     
-    var unfrozenWidth: js.UndefOr[String] = js.native
+    var unfrozenWidth: js.UndefOr[String] = js.undefined
     
-    var virtualScroll: js.UndefOr[Boolean] = js.native
+    var virtualScroll: js.UndefOr[Boolean] = js.undefined
   }
   object ScrollableViewProps {
     

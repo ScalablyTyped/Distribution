@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object PhotoImportPowerSource extends StObject {
   
   /** The current power source is a battery. */
   @js.native
-  sealed trait battery extends PhotoImportPowerSource
+  sealed trait battery
+    extends StObject
+       with PhotoImportPowerSource
   
   /** The current power source is external. */
   @js.native
-  sealed trait external extends PhotoImportPowerSource
+  sealed trait external
+    extends StObject
+       with PhotoImportPowerSource
   
   /** The current power source is unknown. */
   @js.native
-  sealed trait unknown extends PhotoImportPowerSource
+  sealed trait unknown
+    extends StObject
+       with PhotoImportPowerSource
 }

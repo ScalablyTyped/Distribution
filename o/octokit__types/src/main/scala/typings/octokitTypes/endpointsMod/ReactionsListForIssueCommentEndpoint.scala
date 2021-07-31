@@ -1,8 +1,9 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`9`
+import typings.octokitTypes.anon.`0`
 import typings.octokitTypes.octokitTypesStrings.Plussign1
 import typings.octokitTypes.octokitTypesStrings.`-1`
+import typings.octokitTypes.octokitTypesStrings.`squirrel-girl`
 import typings.octokitTypes.octokitTypesStrings.confused
 import typings.octokitTypes.octokitTypesStrings.eyes
 import typings.octokitTypes.octokitTypesStrings.heart
@@ -11,40 +12,37 @@ import typings.octokitTypes.octokitTypesStrings.laugh
 import typings.octokitTypes.octokitTypesStrings.rocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  owner :string,   repo :string,   comment_id :number,   content :'+1' | '-1' | 'laugh' | 'confused' | 'heart' | 'hooray' | 'rocket' | 'eyes' | undefined,   per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'squirrel-girl'> */
-@js.native
-trait ReactionsListForIssueCommentEndpoint extends StObject {
+trait ReactionsListForIssueCommentEndpoint
+  extends StObject
+     with RequiredPreview[`squirrel-girl`] {
   
-  var comment_id: Double = js.native
+  var comment_id: Double
   
   /**
     * Returns a single [reaction type](https://developer.github.com/v3/reactions/#reaction-types). Omit this parameter to list all reactions to an issue comment.
     */
-  var content: js.UndefOr[Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes] = js.native
+  var content: js.UndefOr[Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes] = js.undefined
   
-  var mediaType: `9` = js.native
-  
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
 }
 object ReactionsListForIssueCommentEndpoint {
   
   @scala.inline
-  def apply(comment_id: Double, mediaType: `9`, owner: String, repo: String): ReactionsListForIssueCommentEndpoint = {
+  def apply(comment_id: Double, mediaType: `0`[`squirrel-girl`], owner: String, repo: String): ReactionsListForIssueCommentEndpoint = {
     val __obj = js.Dynamic.literal(comment_id = comment_id.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactionsListForIssueCommentEndpoint]
   }
@@ -60,9 +58,6 @@ object ReactionsListForIssueCommentEndpoint {
     
     @scala.inline
     def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
-    
-    @scala.inline
-    def setMediaType(value: `9`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])

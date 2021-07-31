@@ -2,47 +2,45 @@ package typings.gapiCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventsListParameters extends StObject {
   
-  var alwaysIncludeEmail: js.UndefOr[Boolean] = js.native
+  var alwaysIncludeEmail: js.UndefOr[Boolean] = js.undefined
   
-  var calendarId: String = js.native
+  var calendarId: String
   
-  var iCalUID: js.UndefOr[String] = js.native
+  var iCalUID: js.UndefOr[String] = js.undefined
   
-  var maxAttendees: js.UndefOr[integer] = js.native
+  var maxAttendees: js.UndefOr[integer] = js.undefined
   
-  var maxResults: js.UndefOr[integer] = js.native
+  var maxResults: js.UndefOr[integer] = js.undefined
   
-  var orderBy: js.UndefOr[EventsOrder] = js.native
+  var orderBy: js.UndefOr[EventsOrder] = js.undefined
   
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
-  var privateExtendedProperty: js.UndefOr[String] = js.native
+  var privateExtendedProperty: js.UndefOr[String] = js.undefined
   
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var sharedExtendedProperty: js.UndefOr[String] = js.native
+  var sharedExtendedProperty: js.UndefOr[String] = js.undefined
   
-  var showDeleted: js.UndefOr[Boolean] = js.native
+  var showDeleted: js.UndefOr[Boolean] = js.undefined
   
-  var showHiddenInvitations: js.UndefOr[Boolean] = js.native
+  var showHiddenInvitations: js.UndefOr[Boolean] = js.undefined
   
-  var singleEvents: js.UndefOr[Boolean] = js.native
+  var singleEvents: js.UndefOr[Boolean] = js.undefined
   
-  var syncToken: js.UndefOr[SyncToken] = js.native
+  var syncToken: js.UndefOr[SyncToken] = js.undefined
   
-  var timeMax: js.UndefOr[datetime] = js.native
+  var timeMax: js.UndefOr[datetime] = js.undefined
   
-  var timeMin: js.UndefOr[datetime] = js.native
+  var timeMin: js.UndefOr[datetime] = js.undefined
   
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
   
-  var updatedMin: js.UndefOr[datetime] = js.native
+  var updatedMin: js.UndefOr[datetime] = js.undefined
 }
 object EventsListParameters {
   

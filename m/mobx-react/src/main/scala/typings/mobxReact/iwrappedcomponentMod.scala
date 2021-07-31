@@ -3,15 +3,13 @@ package typings.mobxReact
 import typings.mobxReact.ireactcomponentMod.IReactComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iwrappedcomponentMod {
   
-  @js.native
   trait IWrappedComponent[P] extends StObject {
     
-    var wrappedComponent: IReactComponent[P] = js.native
+    var wrappedComponent: IReactComponent[P]
   }
   object IWrappedComponent {
     
@@ -22,7 +20,7 @@ object iwrappedcomponentMod {
     }
     
     @scala.inline
-    implicit class IWrappedComponentMutableBuilder[Self <: IWrappedComponent[_], P] (val x: Self with IWrappedComponent[P]) extends AnyVal {
+    implicit class IWrappedComponentMutableBuilder[Self <: IWrappedComponent[?], P] (val x: Self & IWrappedComponent[P]) extends AnyVal {
       
       @scala.inline
       def setWrappedComponent(value: IReactComponent[P]): Self = StObject.set(x, "wrappedComponent", value.asInstanceOf[js.Any])

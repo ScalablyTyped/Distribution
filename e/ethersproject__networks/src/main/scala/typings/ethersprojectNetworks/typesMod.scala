@@ -2,21 +2,19 @@ package typings.ethersprojectNetworks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Network extends StObject {
     
-    var _defaultProvider: js.UndefOr[js.Function2[/* providers */ js.Any, /* options */ js.UndefOr[js.Any], _]] = js.native
+    var _defaultProvider: js.UndefOr[js.Function2[/* providers */ js.Any, /* options */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
-    var chainId: Double = js.native
+    var chainId: Double
     
-    var ensAddress: js.UndefOr[String] = js.native
+    var ensAddress: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object Network {
     
@@ -42,7 +40,7 @@ object typesMod {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def set_defaultProvider(value: (/* providers */ js.Any, /* options */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "_defaultProvider", js.Any.fromFunction2(value))
+      def set_defaultProvider(value: (/* providers */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "_defaultProvider", js.Any.fromFunction2(value))
       
       @scala.inline
       def set_defaultProviderUndefined: Self = StObject.set(x, "_defaultProvider", js.undefined)

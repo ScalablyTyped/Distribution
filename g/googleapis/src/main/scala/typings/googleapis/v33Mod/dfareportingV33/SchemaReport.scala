@@ -9,50 +9,48 @@ import typings.googleapis.anon.ReachByFrequencyMetricNames
 import typings.googleapis.anon.ReportProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Report resource.
   */
-@js.native
 trait SchemaReport extends StObject {
   
   /**
     * The account ID to which this report belongs.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The report criteria for a report of type &quot;STANDARD&quot;.
     */
-  var criteria: js.UndefOr[MetricNames] = js.native
+  var criteria: js.UndefOr[MetricNames] = js.undefined
   
   /**
     * The report criteria for a report of type
     * &quot;CROSS_DIMENSION_REACH&quot;.
     */
-  var crossDimensionReachCriteria: js.UndefOr[OverlapMetricNames] = js.native
+  var crossDimensionReachCriteria: js.UndefOr[OverlapMetricNames] = js.undefined
   
   /**
     * The report&#39;s email delivery settings.
     */
-  var delivery: js.UndefOr[Message] = js.native
+  var delivery: js.UndefOr[Message] = js.undefined
   
   /**
     * The eTag of this response for caching purposes.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The filename used when generating report files for this report.
     */
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
   /**
     * The report criteria for a report of type &quot;FLOODLIGHT&quot;.
     */
-  var floodlightCriteria: js.UndefOr[ReportProperties] = js.native
+  var floodlightCriteria: js.UndefOr[ReportProperties] = js.undefined
   
   /**
     * The output format of the report. If not specified, default format is
@@ -61,60 +59,60 @@ trait SchemaReport extends StObject {
     * format&#39;s capabilities. &quot;CSV&quot; will then be the fallback
     * format.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID identifying this report resource.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of resource this is, in this case dfareporting#report.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp (in milliseconds since epoch) of when this report was last
     * modified.
     */
-  var lastModifiedTime: js.UndefOr[String] = js.native
+  var lastModifiedTime: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the report.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The user profile id of the owner of this report.
     */
-  var ownerProfileId: js.UndefOr[String] = js.native
+  var ownerProfileId: js.UndefOr[String] = js.undefined
   
   /**
     * The report criteria for a report of type &quot;PATH_TO_CONVERSION&quot;.
     */
-  var pathToConversionCriteria: js.UndefOr[CustomFloodlightVariables] = js.native
+  var pathToConversionCriteria: js.UndefOr[CustomFloodlightVariables] = js.undefined
   
   /**
     * The report criteria for a report of type &quot;REACH&quot;.
     */
-  var reachCriteria: js.UndefOr[ReachByFrequencyMetricNames] = js.native
+  var reachCriteria: js.UndefOr[ReachByFrequencyMetricNames] = js.undefined
   
   /**
     * The report&#39;s schedule. Can only be set if the report&#39;s
     * &#39;dateRange&#39; is a relative date range and the relative date range
     * is not &quot;TODAY&quot;.
     */
-  var schedule: js.UndefOr[Active] = js.native
+  var schedule: js.UndefOr[Active] = js.undefined
   
   /**
     * The subaccount ID to which this report belongs if applicable.
     */
-  var subAccountId: js.UndefOr[String] = js.native
+  var subAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the report.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaReport {
   

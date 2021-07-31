@@ -8,7 +8,6 @@ import typings.react.mod.Component
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputNumberMod {
@@ -81,9 +80,8 @@ object inputNumberMod {
       @scala.inline
       def onPressEnter_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPressEnter")(x.asInstanceOf[js.Any])
       
-      @JSImport("rc-input-number/es/InputNumber", "default.defaultProps.parser")
-      @js.native
-      def parser(input: String): String = js.native
+      @scala.inline
+      def parser(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parser")(input.asInstanceOf[js.Any]).asInstanceOf[String]
       
       @JSImport("rc-input-number/es/InputNumber", "default.defaultProps.prefixCls")
       @js.native
@@ -165,9 +163,9 @@ object inputNumberMod {
     def getRatio(e: js.Any): Double = js.native
     
     def getValidValue(value: js.Any): js.Any = js.native
-    def getValidValue(value: js.Any, min: js.UndefOr[scala.Nothing], max: Double): js.Any = js.native
     def getValidValue(value: js.Any, min: Double): js.Any = js.native
     def getValidValue(value: js.Any, min: Double, max: Double): js.Any = js.native
+    def getValidValue(value: js.Any, min: Unit, max: Double): js.Any = js.native
     
     def getValueFromEvent(e: js.Any): js.Any = js.native
     

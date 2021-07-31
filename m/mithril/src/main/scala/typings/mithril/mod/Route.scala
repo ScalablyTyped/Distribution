@@ -3,7 +3,6 @@ package typings.mithril.mod
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,7 +27,7 @@ trait Route extends StObject {
   
   /** Redirects to a matching route or to the default route if no matching routes can be found. */
   def set(route: String): Unit = js.native
-  def set(route: String, data: js.UndefOr[scala.Nothing], options: RouteOptions): Unit = js.native
   def set(route: String, data: js.Any): Unit = js.native
   def set(route: String, data: js.Any, options: RouteOptions): Unit = js.native
+  def set(route: String, data: Unit, options: RouteOptions): Unit = js.native
 }

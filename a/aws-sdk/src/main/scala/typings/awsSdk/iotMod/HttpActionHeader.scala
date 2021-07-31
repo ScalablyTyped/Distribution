@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpActionHeader extends StObject {
   
   /**
     * The HTTP header key.
     */
-  var key: HeaderKey = js.native
+  var key: HeaderKey
   
   /**
     * The HTTP header value. Substitution templates are supported.
     */
-  var value: HeaderValue = js.native
+  var value: HeaderValue
 }
 object HttpActionHeader {
   

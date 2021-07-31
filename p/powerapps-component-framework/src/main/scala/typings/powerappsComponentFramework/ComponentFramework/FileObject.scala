@@ -2,34 +2,32 @@ package typings.powerappsComponentFramework.ComponentFramework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface of one file object
   */
-@js.native
 trait FileObject extends StObject {
   
   /**
     * Contents of the file.
     */
-  var fileContent: String = js.native
+  var fileContent: String
   
   /**
     * Name of the file.
     */
-  var fileName: String = js.native
+  var fileName: String
   
   /**
     * Size of the file in KB.
     */
-  var fileSize: Double = js.native
+  var fileSize: Double
   
   /**
     * File MIME type.
     */
-  var mimeType: String = js.native
+  var mimeType: String
 }
 object FileObject {
   

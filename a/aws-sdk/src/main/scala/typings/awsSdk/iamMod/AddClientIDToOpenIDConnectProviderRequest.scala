@@ -2,21 +2,19 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddClientIDToOpenIDConnectProviderRequest extends StObject {
   
   /**
     * The client ID (also known as audience) to add to the IAM OpenID Connect provider resource.
     */
-  var ClientID: clientIDType = js.native
+  var ClientID: clientIDType
   
   /**
     * The Amazon Resource Name (ARN) of the IAM OpenID Connect (OIDC) provider resource to add the client ID to. You can get a list of OIDC provider ARNs by using the ListOpenIDConnectProviders operation.
     */
-  var OpenIDConnectProviderArn: arnType = js.native
+  var OpenIDConnectProviderArn: arnType
 }
 object AddClientIDToOpenIDConnectProviderRequest {
   

@@ -3,19 +3,19 @@ package typings.recurlyRecurlyJs
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorMod {
   
-  @js.native
-  trait RecurlyError extends Error {
+  trait RecurlyError
+    extends StObject
+       with Error {
     
-    var classification: String = js.native
+    var classification: String
     
-    var code: String = js.native
+    var code: String
     
-    var help: js.UndefOr[String] = js.native
+    var help: js.UndefOr[String] = js.undefined
   }
   object RecurlyError {
     

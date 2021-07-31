@@ -4,33 +4,31 @@ import typings.csstype.mod.BackgroundColorProperty
 import typings.csstype.mod.BorderProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MjmlImageProps extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[BorderProperty[String | Double]] = js.native
+  var border: js.UndefOr[BorderProperty[String | Double]] = js.undefined
   
-  var borderRadius: js.UndefOr[String | Double] = js.native
+  var borderRadius: js.UndefOr[String | Double] = js.undefined
   
-  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.native
+  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
   
-  var fluidOnMobile: js.UndefOr[String] = js.native
+  var fluidOnMobile: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var srcset: js.UndefOr[String] = js.native
+  var srcset: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object MjmlImageProps {
   

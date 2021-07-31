@@ -2,13 +2,11 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteJobResult extends StObject {
   
-  var jobSummary: JobSummary = js.native
+  var jobSummary: JobSummary
 }
 object DeleteJobResult {
   

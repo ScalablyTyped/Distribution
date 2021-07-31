@@ -4,14 +4,15 @@ import typings.bmpJs.anon.Blue
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("bmp-js", "BmpDecoder")
   @js.native
-  class BmpDecoder protected () extends ImageData {
+  class BmpDecoder protected ()
+    extends StObject
+       with ImageData {
     def this(buffer: Buffer) = this()
     def this(buffer: Buffer, is_with_alpha: Boolean) = this()
     
@@ -37,6 +38,9 @@ object mod {
     
     var compress: Double = js.native
     
+    /* CompleteClass */
+    override val data: Buffer = js.native
+    
     var fileSize: Double = js.native
     
     /**
@@ -45,6 +49,9 @@ object mod {
     def getData(): Buffer = js.native
     
     var headerSize: Double = js.native
+    
+    /* CompleteClass */
+    override val height: Double = js.native
     
     var hr: Double = js.native
     
@@ -67,6 +74,9 @@ object mod {
     var reserved: Double = js.native
     
     var vr: Double = js.native
+    
+    /* CompleteClass */
+    override val width: Double = js.native
   }
   
   @JSImport("bmp-js", "decode")
@@ -81,14 +91,13 @@ object mod {
   
   type Encode_ = js.Function2[/* imgData */ ImageData, /* quality */ js.UndefOr[Double], ImageData]
   
-  @js.native
   trait ImageData extends StObject {
     
-    val data: Buffer = js.native
+    val data: Buffer
     
-    val height: Double = js.native
+    val height: Double
     
-    val width: Double = js.native
+    val width: Double
   }
   object ImageData {
     

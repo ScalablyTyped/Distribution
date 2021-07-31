@@ -2,14 +2,12 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Generics
-@js.native
 trait AdWordsEntity extends StObject {
   
-  var getEntityType: js.UndefOr[js.Function0[String]] = js.native
+  var getEntityType: js.UndefOr[js.Function0[String]] = js.undefined
 }
 object AdWordsEntity {
   

@@ -2,17 +2,15 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Round extends StObject {
   
-  def ceil(n: Double): Double = js.native
+  def ceil(n: Double): Double
   
-  def floor(n: Double): Double = js.native
+  def floor(n: Double): Double
   
-  def round(n: Double): Double = js.native
+  def round(n: Double): Double
 }
 object Round {
   

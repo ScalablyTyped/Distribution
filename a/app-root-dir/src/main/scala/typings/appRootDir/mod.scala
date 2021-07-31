@@ -3,7 +3,6 @@ package typings.appRootDir
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,11 +11,10 @@ object mod extends Shortcut {
   @js.native
   val ^ : AppRootDir = js.native
   
-  @js.native
   trait AppRootDir extends StObject {
     
     // Get the application's root directory
-    def get(): String = js.native
+    def get(): String
     
     /**
       * Set the application's root directory
@@ -24,7 +22,7 @@ object mod extends Shortcut {
       *    how many instances of app-root-dir module are installed,
       *    they will all return the same directory
       */
-    def set(dirname: String): Unit = js.native
+    def set(dirname: String): Unit
   }
   object AppRootDir {
     

@@ -3,11 +3,12 @@ package typings.googlemaps.google.maps
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KmlLayer extends MVCObject {
+trait KmlLayer
+  extends StObject
+     with MVCObject {
   
   def getDefaultViewport(): LatLngBounds = js.native
   

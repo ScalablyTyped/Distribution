@@ -2,36 +2,34 @@ package typings.quixote
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Viewport positions and sizes are available on QFrame.viewport()
-@js.native
 trait ViewportDescriptor extends StObject {
   
   // The lowest visible part of the page.
-  var bottom: PositionDescriptor = js.native
+  var bottom: PositionDescriptor
   
   // Horizontal center: midway between right and left
-  var center: PositionDescriptor = js.native
+  var center: PositionDescriptor
   
   // Height of the viewport.
-  var height: SizeDescriptor = js.native
+  var height: SizeDescriptor
   
   // The leftmost visible part of the page.
-  var left: PositionDescriptor = js.native
+  var left: PositionDescriptor
   
   // Vertical middle: midway between top and bottom.
-  var middle: PositionDescriptor = js.native
+  var middle: PositionDescriptor
   
   // The rightmost visible part of the page.
-  var right: PositionDescriptor = js.native
+  var right: PositionDescriptor
   
   // The highest visible part of the page.
-  var top: PositionDescriptor = js.native
+  var top: PositionDescriptor
   
   // Width of the viewport.
-  var width: SizeDescriptor = js.native
+  var width: SizeDescriptor
 }
 object ViewportDescriptor {
   

@@ -3,19 +3,17 @@ package typings.jqueryui.JQueryUI
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResizableEvents extends StObject {
   
-  var create: js.UndefOr[ResizableEvent] = js.native
+  var create: js.UndefOr[ResizableEvent] = js.undefined
   
-  var resize: js.UndefOr[ResizableEvent] = js.native
+  var resize: js.UndefOr[ResizableEvent] = js.undefined
   
-  var start: js.UndefOr[ResizableEvent] = js.native
+  var start: js.UndefOr[ResizableEvent] = js.undefined
   
-  var stop: js.UndefOr[ResizableEvent] = js.native
+  var stop: js.UndefOr[ResizableEvent] = js.undefined
 }
 object ResizableEvents {
   

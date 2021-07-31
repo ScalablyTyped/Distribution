@@ -3,16 +3,14 @@ package typings.maximMazurokGapiClientBooks.gapi.client.books
 import typings.maximMazurokGapiClientBooks.anon.BannerImageUrl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Series extends StObject {
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var series: js.UndefOr[js.Array[BannerImageUrl]] = js.native
+  var series: js.UndefOr[js.Array[BannerImageUrl]] = js.undefined
 }
 object Series {
   

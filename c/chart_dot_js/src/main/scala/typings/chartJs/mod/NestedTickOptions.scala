@@ -5,23 +5,21 @@ import typings.chartJs.chartJsStrings.data
 import typings.chartJs.chartJsStrings.labels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NestedTickOptions extends StObject {
   
-  var autoSkip: js.UndefOr[Boolean] = js.native
+  var autoSkip: js.UndefOr[Boolean] = js.undefined
   
-  var autoSkipPadding: js.UndefOr[Double] = js.native
+  var autoSkipPadding: js.UndefOr[Double] = js.undefined
   
-  var backdropColor: js.UndefOr[ChartColor] = js.native
+  var backdropColor: js.UndefOr[ChartColor] = js.undefined
   
-  var backdropPaddingX: js.UndefOr[Double] = js.native
+  var backdropPaddingX: js.UndefOr[Double] = js.undefined
   
-  var backdropPaddingY: js.UndefOr[Double] = js.native
+  var backdropPaddingY: js.UndefOr[Double] = js.undefined
   
-  var beginAtZero: js.UndefOr[Boolean] = js.native
+  var beginAtZero: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If the callback returns null or undefined the associated grid line will be hidden.
@@ -33,37 +31,37 @@ trait NestedTickOptions extends StObject {
       /* values */ js.Array[Double | String], 
       js.UndefOr[String | Double | Null]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var display: js.UndefOr[Boolean] = js.native
+  var display: js.UndefOr[Boolean] = js.undefined
   
-  var fontColor: js.UndefOr[ChartColor] = js.native
+  var fontColor: js.UndefOr[ChartColor] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
-  var labelOffset: js.UndefOr[Double] = js.native
+  var labelOffset: js.UndefOr[Double] = js.undefined
   
-  var lineHeight: js.UndefOr[Double] = js.native
+  var lineHeight: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[js.Any] = js.native
+  var max: js.UndefOr[js.Any] = js.undefined
   
-  var maxRotation: js.UndefOr[Double] = js.native
+  var maxRotation: js.UndefOr[Double] = js.undefined
   
-  var maxTicksLimit: js.UndefOr[Double] = js.native
+  var maxTicksLimit: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[js.Any] = js.native
+  var min: js.UndefOr[js.Any] = js.undefined
   
-  var minRotation: js.UndefOr[Double] = js.native
+  var minRotation: js.UndefOr[Double] = js.undefined
   
-  var mirror: js.UndefOr[Boolean] = js.native
+  var mirror: js.UndefOr[Boolean] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of ticks to examine when deciding how many labels will fit.
@@ -71,17 +69,17 @@ trait NestedTickOptions extends StObject {
     * when there is large variability in label length.
     * Deault: `ticks.length`
     */
-  var sampleSize: js.UndefOr[Double] = js.native
+  var sampleSize: js.UndefOr[Double] = js.undefined
   
-  var showLabelBackdrop: js.UndefOr[Boolean] = js.native
+  var showLabelBackdrop: js.UndefOr[Boolean] = js.undefined
   
-  var source: js.UndefOr[auto | data | labels] = js.native
+  var source: js.UndefOr[auto | data | labels] = js.undefined
   
-  var stepSize: js.UndefOr[Double] = js.native
+  var stepSize: js.UndefOr[Double] = js.undefined
   
-  var suggestedMax: js.UndefOr[Double] = js.native
+  var suggestedMax: js.UndefOr[Double] = js.undefined
   
-  var suggestedMin: js.UndefOr[Double] = js.native
+  var suggestedMin: js.UndefOr[Double] = js.undefined
 }
 object NestedTickOptions {
   

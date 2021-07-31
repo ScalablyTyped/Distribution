@@ -3,7 +3,6 @@ package typings.config
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,14 +11,13 @@ object mod extends Shortcut {
   @js.native
   val ^ : IConfig = js.native
   
-  @js.native
   trait IConfig extends StObject {
     
-    def get[T](setting: String): T = js.native
+    def get[T](setting: String): T
     
-    def has(setting: String): Boolean = js.native
+    def has(setting: String): Boolean
     
-    var util: IUtil = js.native
+    var util: IUtil
   }
   object IConfig {
     
@@ -43,14 +41,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait IConfigSource extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var original: js.UndefOr[String] = js.native
+    var original: js.UndefOr[String] = js.undefined
     
-    var parsed: js.Any = js.native
+    var parsed: js.Any
   }
   object IConfigSource {
     
@@ -112,9 +109,9 @@ object mod extends Shortcut {
     
     // Make a javascript object property immutable (assuring it cannot be changed from the current value).
     def makeImmutable(`object`: js.Any): js.Any = js.native
-    def makeImmutable(`object`: js.Any, propertyName: js.UndefOr[scala.Nothing], propertyValue: String): js.Any = js.native
     def makeImmutable(`object`: js.Any, propertyName: String): js.Any = js.native
     def makeImmutable(`object`: js.Any, propertyName: String, propertyValue: String): js.Any = js.native
+    def makeImmutable(`object`: js.Any, propertyName: Unit, propertyValue: String): js.Any = js.native
     
     /**
       * This allows module developers to attach their configurations onto

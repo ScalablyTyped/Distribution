@@ -2,29 +2,27 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HTML content for a creative.
   */
-@js.native
 trait SchemaHtmlContent extends StObject {
   
   /**
     * The height of the HTML snippet in pixels.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The HTML snippet that displays the ad when inserted in the web page.
     */
-  var snippet: js.UndefOr[String] = js.native
+  var snippet: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the HTML snippet in pixels.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SchemaHtmlContent {
   

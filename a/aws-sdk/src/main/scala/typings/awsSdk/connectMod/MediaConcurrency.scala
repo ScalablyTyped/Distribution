@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaConcurrency extends StObject {
   
   /**
     * The channels that agents can handle in the Contact Control Panel (CCP).
     */
-  var Channel: typings.awsSdk.connectMod.Channel = js.native
+  var Channel: typings.awsSdk.connectMod.Channel
   
   /**
     * The number of contacts an agent can have on a channel simultaneously.
     */
-  var Concurrency: typings.awsSdk.connectMod.Concurrency = js.native
+  var Concurrency: typings.awsSdk.connectMod.Concurrency
 }
 object MediaConcurrency {
   

@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentLineItem extends StObject {
   
   /**
@@ -15,13 +13,13 @@ trait PaymentLineItem extends StObject {
     *
     *
     */
-  var amountReference: js.UndefOr[String] = js.native
+  var amountReference: js.UndefOr[String] = js.undefined
   
   /**
     * A sender-defined description of the line item.
     *
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * This is the sender-defined
@@ -29,7 +27,7 @@ trait PaymentLineItem extends StObject {
     * for the line item.
     *
     */
-  var itemCode: js.UndefOr[String] = js.native
+  var itemCode: js.UndefOr[String] = js.undefined
   
   /**
     * This is a sender-defined
@@ -37,7 +35,7 @@ trait PaymentLineItem extends StObject {
     * or other designation for the line item.
     *
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object PaymentLineItem {
   

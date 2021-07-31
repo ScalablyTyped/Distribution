@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationSummary extends StObject {
   
   /**
     * ARN of the application.
     */
-  var ApplicationARN: ResourceARN = js.native
+  var ApplicationARN: ResourceARN
   
   /**
     * Name of the application.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsMod.ApplicationName
   
   /**
     * Status of the application.
     */
-  var ApplicationStatus: typings.awsSdk.kinesisanalyticsMod.ApplicationStatus = js.native
+  var ApplicationStatus: typings.awsSdk.kinesisanalyticsMod.ApplicationStatus
 }
 object ApplicationSummary {
   

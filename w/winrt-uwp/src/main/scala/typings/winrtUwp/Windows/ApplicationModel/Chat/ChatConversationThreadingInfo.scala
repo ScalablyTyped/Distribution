@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides threading info for a ChatConversation . */
-@js.native
 trait ChatConversationThreadingInfo extends StObject {
   
   /** Gets or sets the Contact.Id for the remote participant. */
-  var contactId: String = js.native
+  var contactId: String
   
   /** Gets or sets the ID of the ChatConversation . */
-  var conversationId: String = js.native
+  var conversationId: String
   
   /** Gets or sets a string where you can store your own custom threading info. */
-  var custom: String = js.native
+  var custom: String
   
   /** Gets or sets a value that indicates the type of threading info, such as participant, contact ID, conversation ID, and so on. */
-  var kind: ChatConversationThreadingKind = js.native
+  var kind: ChatConversationThreadingKind
   
   /** Gets the list of participants in the ChatConversation . */
-  var participants: IVector[String] = js.native
+  var participants: IVector[String]
 }
 object ChatConversationThreadingInfo {
   

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformApplicationMod {
@@ -88,6 +87,10 @@ object platformApplicationMod {
   /* static members */
   object PlatformApplication {
     
+    @JSImport("@pulumi/aws/sns/platformApplication", "PlatformApplication")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PlatformApplication resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -97,85 +100,79 @@ object platformApplicationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/sns/platformApplication", "PlatformApplication.get")
-    @js.native
-    def get(name: String, id: Input[ID]): PlatformApplication = js.native
-    @JSImport("@pulumi/aws/sns/platformApplication", "PlatformApplication.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): PlatformApplication = js.native
-    @JSImport("@pulumi/aws/sns/platformApplication", "PlatformApplication.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PlatformApplicationState): PlatformApplication = js.native
-    @JSImport("@pulumi/aws/sns/platformApplication", "PlatformApplication.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PlatformApplicationState, opts: CustomResourceOptions): PlatformApplication = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): PlatformApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PlatformApplication]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PlatformApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PlatformApplication]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PlatformApplicationState): PlatformApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PlatformApplication]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PlatformApplicationState, opts: CustomResourceOptions): PlatformApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PlatformApplication]
     
     /**
       * Returns true if the given object is an instance of PlatformApplication.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/sns/platformApplication", "PlatformApplication.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/platformApplication.PlatformApplication */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/platformApplication.PlatformApplication */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sns/platformApplication.PlatformApplication */ Boolean]
   }
   
-  @js.native
   trait PlatformApplicationArgs extends StObject {
     
     /**
       * SNS Topic triggered when a delivery to any of the platform endpoints associated with your platform application encounters a permanent failure.
       */
-    val eventDeliveryFailureTopicArn: js.UndefOr[Input[String]] = js.native
+    val eventDeliveryFailureTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * SNS Topic triggered when a new platform endpoint is added to your platform application.
       */
-    val eventEndpointCreatedTopicArn: js.UndefOr[Input[String]] = js.native
+    val eventEndpointCreatedTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * SNS Topic triggered when an existing platform endpoint is deleted from your platform application.
       */
-    val eventEndpointDeletedTopicArn: js.UndefOr[Input[String]] = js.native
+    val eventEndpointDeletedTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * SNS Topic triggered when an existing platform endpoint is changed from your platform application.
       */
-    val eventEndpointUpdatedTopicArn: js.UndefOr[Input[String]] = js.native
+    val eventEndpointUpdatedTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role permitted to receive failure feedback for this application.
       */
-    val failureFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val failureFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The friendly name for the SNS platform application
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The platform that the app is registered with. See [Platform](http://docs.aws.amazon.com/sns/latest/dg/mobile-push-send-register.html) for supported platforms.
       */
-    val platform: Input[String] = js.native
+    val platform: Input[String]
     
     /**
       * Application Platform credential. See [Credential](http://docs.aws.amazon.com/sns/latest/dg/mobile-push-send-register.html) for type of credential required for platform. The value of this attribute when stored into the state is only a hash of the real value, so therefore it is not practical to use this as an attribute for other resources.
       */
-    val platformCredential: Input[String] = js.native
+    val platformCredential: Input[String]
     
     /**
       * Application Platform principal. See [Principal](http://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformApplication.html) for type of principal required for platform. The value of this attribute when stored into the state is only a hash of the real value, so therefore it is not practical to use this as an attribute for other resources.
       */
-    val platformPrincipal: js.UndefOr[Input[String]] = js.native
+    val platformPrincipal: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role permitted to receive success feedback for this application.
       */
-    val successFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val successFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The percentage of success to sample (0-100)
       */
-    val successFeedbackSampleRate: js.UndefOr[Input[String]] = js.native
+    val successFeedbackSampleRate: js.UndefOr[Input[String]] = js.undefined
   }
   object PlatformApplicationArgs {
     
@@ -250,68 +247,67 @@ object platformApplicationMod {
     }
   }
   
-  @js.native
   trait PlatformApplicationState extends StObject {
     
     /**
       * The ARN of the SNS platform application
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * SNS Topic triggered when a delivery to any of the platform endpoints associated with your platform application encounters a permanent failure.
       */
-    val eventDeliveryFailureTopicArn: js.UndefOr[Input[String]] = js.native
+    val eventDeliveryFailureTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * SNS Topic triggered when a new platform endpoint is added to your platform application.
       */
-    val eventEndpointCreatedTopicArn: js.UndefOr[Input[String]] = js.native
+    val eventEndpointCreatedTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * SNS Topic triggered when an existing platform endpoint is deleted from your platform application.
       */
-    val eventEndpointDeletedTopicArn: js.UndefOr[Input[String]] = js.native
+    val eventEndpointDeletedTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * SNS Topic triggered when an existing platform endpoint is changed from your platform application.
       */
-    val eventEndpointUpdatedTopicArn: js.UndefOr[Input[String]] = js.native
+    val eventEndpointUpdatedTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role permitted to receive failure feedback for this application.
       */
-    val failureFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val failureFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The friendly name for the SNS platform application
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The platform that the app is registered with. See [Platform](http://docs.aws.amazon.com/sns/latest/dg/mobile-push-send-register.html) for supported platforms.
       */
-    val platform: js.UndefOr[Input[String]] = js.native
+    val platform: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Application Platform credential. See [Credential](http://docs.aws.amazon.com/sns/latest/dg/mobile-push-send-register.html) for type of credential required for platform. The value of this attribute when stored into the state is only a hash of the real value, so therefore it is not practical to use this as an attribute for other resources.
       */
-    val platformCredential: js.UndefOr[Input[String]] = js.native
+    val platformCredential: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Application Platform principal. See [Principal](http://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformApplication.html) for type of principal required for platform. The value of this attribute when stored into the state is only a hash of the real value, so therefore it is not practical to use this as an attribute for other resources.
       */
-    val platformPrincipal: js.UndefOr[Input[String]] = js.native
+    val platformPrincipal: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role permitted to receive success feedback for this application.
       */
-    val successFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val successFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The percentage of success to sample (0-100)
       */
-    val successFeedbackSampleRate: js.UndefOr[Input[String]] = js.native
+    val successFeedbackSampleRate: js.UndefOr[Input[String]] = js.undefined
   }
   object PlatformApplicationState {
     

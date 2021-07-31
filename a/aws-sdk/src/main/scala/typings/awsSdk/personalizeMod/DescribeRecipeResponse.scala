@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRecipeResponse extends StObject {
   
   /**
     * An object that describes the recipe.
     */
-  var recipe: js.UndefOr[Recipe] = js.native
+  var recipe: js.UndefOr[Recipe] = js.undefined
 }
 object DescribeRecipeResponse {
   

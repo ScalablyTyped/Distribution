@@ -6,7 +6,6 @@ import typings.chai.Chai.NumericComparison
 import typings.chai.Chai.TypeComparison
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Chai {
@@ -28,7 +27,8 @@ object Chai {
   // For BDD APIs
   @js.native
   trait Assertion
-    extends LanguageChains
+    extends StObject
+       with LanguageChains
        with NumericComparison
        with TypeComparison {
     

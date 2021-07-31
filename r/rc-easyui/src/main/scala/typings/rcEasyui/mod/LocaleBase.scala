@@ -2,7 +2,6 @@ package typings.rcEasyui.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-easyui", "LocaleBase")
@@ -18,9 +17,12 @@ object LocaleBase {
     
     object locale {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LocaleBase.contextTypes.locale")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LocaleBase.contextTypes.locale
       @JSImport("rc-easyui", "LocaleBase.contextTypes.locale.isRequired")
@@ -30,9 +32,12 @@ object LocaleBase {
     
     object t {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LocaleBase.contextTypes.t")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LocaleBase.contextTypes.t
       @JSImport("rc-easyui", "LocaleBase.contextTypes.t.isRequired")
@@ -45,9 +50,12 @@ object LocaleBase {
     
     object className {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LocaleBase.propTypes.className")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LocaleBase.propTypes.className
       @JSImport("rc-easyui", "LocaleBase.propTypes.className.isRequired")
@@ -57,9 +65,12 @@ object LocaleBase {
     
     object style {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "LocaleBase.propTypes.style")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.LocaleBase.propTypes.style
       @JSImport("rc-easyui", "LocaleBase.propTypes.style.isRequired")

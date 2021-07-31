@@ -2,17 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportingCsvOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for annotations in the
     * export-data table.
     */
-  var annotations: js.UndefOr[ExportingCsvAnnotationsOptions] = js.native
+  var annotations: js.UndefOr[ExportingCsvAnnotationsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Formatter callback for the
@@ -38,20 +36,20 @@ trait ExportingCsvOptions extends StObject {
     *
     * Return `false` to use Highcharts' proposed header.
     */
-  var columnHeaderFormatter: js.UndefOr[js.Function | Null] = js.native
+  var columnHeaderFormatter: js.UndefOr[js.Function | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Which date format to use for
     * exported dates on a datetime X axis. See `Highcharts.dateFormat`.
     */
-  var dateFormat: js.UndefOr[String] = js.native
+  var dateFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Which decimal point to use for
     * exported CSV. Defaults to the same as the browser locale, typically `.`
     * (English) or `,` (German, French etc).
     */
-  var decimalPoint: js.UndefOr[String | Null] = js.native
+  var decimalPoint: js.UndefOr[String | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The item delimiter in the
@@ -60,13 +58,13 @@ trait ExportingCsvOptions extends StObject {
     * the `itemDelimiter` defaults to `;`, otherwise the `itemDelimiter`
     * defaults to `,`.
     */
-  var itemDelimiter: js.UndefOr[String | Null] = js.native
+  var itemDelimiter: js.UndefOr[String | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The line delimiter in the
     * exported data, defaults to a newline.
     */
-  var lineDelimiter: js.UndefOr[String] = js.native
+  var lineDelimiter: js.UndefOr[String] = js.undefined
 }
 object ExportingCsvOptions {
   

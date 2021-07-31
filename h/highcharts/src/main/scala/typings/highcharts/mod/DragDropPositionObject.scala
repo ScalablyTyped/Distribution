@@ -2,41 +2,39 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragDropPositionObject extends StObject {
   
   /**
     * Chart x position
     */
-  var chartX: Double = js.native
+  var chartX: Double
   
   /**
     * Chart y position
     */
-  var chartY: Double = js.native
+  var chartY: Double
   
   /**
     * Drag and drop guide box.
     */
-  var guideBox: js.UndefOr[BBoxObject] = js.native
+  var guideBox: js.UndefOr[BBoxObject] = js.undefined
   
   /**
     * Updated point data.
     */
-  var points: Dictionary[Dictionary[Double]] = js.native
+  var points: Dictionary[Dictionary[Double]]
   
   /**
     * Delta of previous x position.
     */
-  var prevdX: js.UndefOr[Double] = js.native
+  var prevdX: js.UndefOr[Double] = js.undefined
   
   /**
     * Delta of previous y position.
     */
-  var prevdY: js.UndefOr[Double] = js.native
+  var prevdY: js.UndefOr[Double] = js.undefined
 }
 object DragDropPositionObject {
   

@@ -38,17 +38,18 @@ import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import typings.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codeConverterMod {
   
-  @JSImport("vscode-languageclient/lib/codeConverter", "createConverter")
+  @JSImport("vscode-languageclient/lib/codeConverter", JSImport.Namespace)
   @js.native
-  def createConverter(): Converter = js.native
-  @JSImport("vscode-languageclient/lib/codeConverter", "createConverter")
-  @js.native
-  def createConverter(uriConverter: URIConverter): Converter = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createConverter(): Converter = ^.asInstanceOf[js.Dynamic].applyDynamic("createConverter")().asInstanceOf[Converter]
+  @scala.inline
+  def createConverter(uriConverter: URIConverter): Converter = ^.asInstanceOf[js.Dynamic].applyDynamic("createConverter")(uriConverter.asInstanceOf[js.Any]).asInstanceOf[Converter]
   
   @js.native
   trait Converter extends StObject {
@@ -87,8 +88,8 @@ object codeConverterMod {
     def asFormattingOptions(item: FormattingOptions): typings.vscodeLanguageserverTypes.mod.FormattingOptions = js.native
     
     def asLocation(): js.UndefOr[Location | Null] = js.native
-    def asLocation(value: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
     def asLocation(value: Null): Null = js.native
+    def asLocation(value: Unit): Unit = js.native
     def asLocation(value: typings.vscode.mod.Location): js.UndefOr[Location | Null] = js.native
     @JSName("asLocation")
     def asLocation_Location(value: typings.vscode.mod.Location): Location = js.native
@@ -96,8 +97,8 @@ object codeConverterMod {
     def asOpenTextDocumentParams(textDocument: TextDocument): DidOpenTextDocumentParams = js.native
     
     def asPosition(): js.UndefOr[typings.vscodeLanguageserverTypes.mod.Position | Null] = js.native
-    def asPosition(value: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
     def asPosition(value: Null): Null = js.native
+    def asPosition(value: Unit): Unit = js.native
     def asPosition(value: Position): js.UndefOr[typings.vscodeLanguageserverTypes.mod.Position | Null] = js.native
     @JSName("asPosition")
     def asPosition_Position(value: Position): typings.vscodeLanguageserverTypes.mod.Position = js.native
@@ -105,8 +106,8 @@ object codeConverterMod {
     def asPositions(value: js.Array[Position]): js.Array[typings.vscodeLanguageserverTypes.mod.Position] = js.native
     
     def asRange(): js.UndefOr[Range | Null] = js.native
-    def asRange(value: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
     def asRange(value: Null): Null = js.native
+    def asRange(value: Unit): Unit = js.native
     def asRange(value: typings.vscode.mod.Range): js.UndefOr[Range | Null] = js.native
     @JSName("asRange")
     def asRange_Range(value: typings.vscode.mod.Range): Range = js.native

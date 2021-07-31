@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,11 +22,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Content
   * @version 1.0
   */
-@js.native
-trait UnsupportedNameClashException extends Exception {
+trait UnsupportedNameClashException
+  extends StObject
+     with Exception {
   
   /** contains the {@link NameClash} that is not supported. */
-  var NameClash: Double = js.native
+  var NameClash: Double
 }
 object UnsupportedNameClashException {
   

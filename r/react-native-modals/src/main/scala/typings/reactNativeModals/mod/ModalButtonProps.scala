@@ -5,27 +5,25 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalButtonProps extends StObject {
   
-  var activeOpacity: js.UndefOr[Double] = js.native
+  var activeOpacity: js.UndefOr[Double] = js.undefined
   
-  var align: js.UndefOr[AlignTypes] = js.native
+  var align: js.UndefOr[AlignTypes] = js.undefined
   
-  var bordered: js.UndefOr[Boolean] = js.native
+  var bordered: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  def onPress(): Unit = js.native
+  def onPress(): Unit
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 object ModalButtonProps {
   

@@ -1,6 +1,5 @@
 package typings.styledComponents
 
-import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
 import typings.react.mod.Consumer
@@ -24,10 +23,13 @@ import typings.styledComponents.styledComponentsMod.ThemedStyledProps
 import typings.styledComponents.styledComponentsMod.WithThemeFnInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object macroMod extends Shortcut {
+object macroMod {
+  
+  @JSImport("styled-components/macro", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("styled-components/macro", JSImport.Default)
   @js.native
@@ -77,44 +79,32 @@ object macroMod extends Shortcut {
   @js.native
   val ThemeProvider: ThemeProviderComponent[AnyIfEmpty[DefaultTheme], AnyIfEmpty[DefaultTheme]] = js.native
   
-  @JSImport("styled-components/macro", "createGlobalStyle")
-  @js.native
-  def createGlobalStyle[P /* <: js.Object */](first: TemplateStringsArray, interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*): GlobalStyleComponent[P, DefaultTheme] = js.native
-  @JSImport("styled-components/macro", "createGlobalStyle")
-  @js.native
-  def createGlobalStyle[P /* <: js.Object */](first: CSSObject, interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*): GlobalStyleComponent[P, DefaultTheme] = js.native
-  @JSImport("styled-components/macro", "createGlobalStyle")
-  @js.native
+  @scala.inline
+  def createGlobalStyle[P /* <: js.Object */](first: TemplateStringsArray, interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*): GlobalStyleComponent[P, DefaultTheme] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGlobalStyle")(first.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[GlobalStyleComponent[P, DefaultTheme]]
+  @scala.inline
+  def createGlobalStyle[P /* <: js.Object */](first: CSSObject, interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*): GlobalStyleComponent[P, DefaultTheme] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGlobalStyle")(first.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[GlobalStyleComponent[P, DefaultTheme]]
+  @scala.inline
   def createGlobalStyle[P /* <: js.Object */](
     first: InterpolationFunction[ThemedStyledProps[P, DefaultTheme]],
     interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*
-  ): GlobalStyleComponent[P, DefaultTheme] = js.native
+  ): GlobalStyleComponent[P, DefaultTheme] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGlobalStyle")(first.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[GlobalStyleComponent[P, DefaultTheme]]
   
   @JSImport("styled-components/macro", "css")
   @js.native
   val css: ThemedCssFunction[DefaultTheme] = js.native
   
-  @JSImport("styled-components/macro", "isStyledComponent")
-  @js.native
-  def isStyledComponent(target: js.Any): /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean = js.native
+  @scala.inline
+  def isStyledComponent(target: js.Any): /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStyledComponent")(target.asInstanceOf[js.Any]).asInstanceOf[/* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean]
   
-  @JSImport("styled-components/macro", "keyframes")
-  @js.native
-  def keyframes(strings: TemplateStringsArray, interpolations: SimpleInterpolation*): Keyframes_ = js.native
-  @JSImport("styled-components/macro", "keyframes")
-  @js.native
-  def keyframes(strings: CSSKeyframes, interpolations: SimpleInterpolation*): Keyframes_ = js.native
+  @scala.inline
+  def keyframes(strings: TemplateStringsArray, interpolations: SimpleInterpolation*): Keyframes_ = (^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(strings.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[Keyframes_]
+  @scala.inline
+  def keyframes(strings: CSSKeyframes, interpolations: SimpleInterpolation*): Keyframes_ = (^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(strings.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[Keyframes_]
   
-  @JSImport("styled-components/macro", "useTheme")
-  @js.native
-  def useTheme(): DefaultTheme = js.native
+  @scala.inline
+  def useTheme(): DefaultTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[DefaultTheme]
   
   @JSImport("styled-components/macro", "withTheme")
   @js.native
   val withTheme: WithThemeFnInterface[DefaultTheme] = js.native
-  
-  type _To = StyledInterface
-  
-  /* This means you don't have to write `default`, but can instead just say `macroMod.foo` */
-  override def _to: StyledInterface = default
 }

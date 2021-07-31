@@ -2,21 +2,19 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInsightSummariesResult extends StObject {
   
   /**
     * The summary of each insight within the group matching the provided filters. The summary contains the InsightID, start and end time, the root cause service, the root cause and client impact statistics, the top anomalous services, and the status of the insight.
     */
-  var InsightSummaries: js.UndefOr[InsightSummaryList] = js.native
+  var InsightSummaries: js.UndefOr[InsightSummaryList] = js.undefined
   
   /**
     * Pagination token.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object GetInsightSummariesResult {
   

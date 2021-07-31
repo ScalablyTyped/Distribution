@@ -2,32 +2,30 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationRelationship extends StObject {
   
   /**
     * A description of the location relationship.
     */
-  var description: js.UndefOr[Message] = js.native
+  var description: js.UndefOr[Message] = js.undefined
   
   /**
     * A set of distinct strings that categorize the relationship. Well-known kinds include 'includes', 'isIncludedBy'
     * and 'relevant'.
     */
-  var kinds: js.UndefOr[js.Array[String]] = js.native
+  var kinds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the location relationship.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * A reference to the related location.
     */
-  var target: Double = js.native
+  var target: Double
 }
 object LocationRelationship {
   

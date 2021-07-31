@@ -2,41 +2,39 @@ package typings.swaggerizeExpress.mod.Swagger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiDefinition extends StObject {
   
-  var basePath: js.UndefOr[String] = js.native
+  var basePath: js.UndefOr[String] = js.undefined
   
-  var consumes: js.UndefOr[MimeTypes] = js.native
+  var consumes: js.UndefOr[MimeTypes] = js.undefined
   
-  var definitions: js.UndefOr[DefinitionsObject] = js.native
+  var definitions: js.UndefOr[DefinitionsObject] = js.undefined
   
-  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.native
+  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var info: InfoObject = js.native
+  var info: InfoObject
   
-  var parameters: js.UndefOr[ParametersDefinitionsObject] = js.native
+  var parameters: js.UndefOr[ParametersDefinitionsObject] = js.undefined
   
-  var paths: PathsObject = js.native
+  var paths: PathsObject
   
-  var produces: js.UndefOr[MimeTypes] = js.native
+  var produces: js.UndefOr[MimeTypes] = js.undefined
   
-  var responses: js.UndefOr[ResponsesDefinitionsObject] = js.native
+  var responses: js.UndefOr[ResponsesDefinitionsObject] = js.undefined
   
-  var schemes: js.UndefOr[js.Array[String]] = js.native
+  var schemes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var security: js.UndefOr[js.Array[SecurityRequirementObject]] = js.native
+  var security: js.UndefOr[js.Array[SecurityRequirementObject]] = js.undefined
   
-  var securityDefinitions: js.UndefOr[SecurityDefinitionsObject] = js.native
+  var securityDefinitions: js.UndefOr[SecurityDefinitionsObject] = js.undefined
   
-  var swagger: String = js.native
+  var swagger: String
   
-  var tags: js.UndefOr[js.Array[TagObject]] = js.native
+  var tags: js.UndefOr[js.Array[TagObject]] = js.undefined
 }
 object ApiDefinition {
   

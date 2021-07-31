@@ -3,14 +3,12 @@ package typings.semanticUiProgress.anon
 import typings.semanticUiProgress.SemanticUI.Progress.RandomSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-progress.SemanticUI.ProgressSettings._Impl, 'random'> */
-@js.native
 trait PickImplrandom extends StObject {
   
-  var random: RandomSettings = js.native
+  var random: RandomSettings
 }
 object PickImplrandom {
   

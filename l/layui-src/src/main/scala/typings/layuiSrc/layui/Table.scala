@@ -3,7 +3,6 @@ package typings.layuiSrc.layui
 import typings.layuiSrc.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -33,7 +32,7 @@ trait Table extends StObject {
     * @param event
     * @param callback
     */
-  def on(event: String, callback: js.ThisFunction1[/* this */ js.Any, /* obj */ js.Any, _]): Unit = js.native
+  def on(event: String, callback: js.ThisFunction1[/* this */ js.Any, /* obj */ js.Any, js.Any]): Unit = js.native
   
   def reload(id: String, option: TableOption): Unit = js.native
   def reload(option: TableOption): Unit = js.native

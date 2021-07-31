@@ -3,15 +3,13 @@ package typings.routie
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routie {
   
-  @js.native
   trait RouteOptions extends StObject {
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object RouteOptions {
     
@@ -33,7 +31,9 @@ object routie {
   }
   
   @js.native
-  trait Routie extends RoutieStatic {
+  trait Routie
+    extends StObject
+       with RoutieStatic {
     
     def apply(path: String): Unit = js.native
     def apply(path: String, fn: js.Function): Unit = js.native

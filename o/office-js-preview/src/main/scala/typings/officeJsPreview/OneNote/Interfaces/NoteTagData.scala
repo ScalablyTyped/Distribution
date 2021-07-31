@@ -22,11 +22,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import typings.officeJsPreview.officeJsPreviewStrings.Website
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "noteTag.toJSON()". */
-@js.native
 trait NoteTagData extends StObject {
   
   /**
@@ -35,7 +33,7 @@ trait NoteTagData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -45,7 +43,7 @@ trait NoteTagData extends StObject {
     */
   var status: js.UndefOr[
     NoteTagStatus | Unknown_ | Normal | Completed | Disabled | OutlookTask | TaskNotSyncedYet | TaskRemoved
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait NoteTagData extends StObject {
     */
   var `type`: js.UndefOr[
     NoteTagType | Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2
-  ] = js.native
+  ] = js.undefined
 }
 object NoteTagData {
   

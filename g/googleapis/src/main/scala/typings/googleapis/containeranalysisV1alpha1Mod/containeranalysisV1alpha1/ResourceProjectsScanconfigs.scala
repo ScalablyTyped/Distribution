@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/containeranalysis/v1alpha1", "containeranalysis_v1alpha1.Resource$Projects$Scanconfigs")
@@ -30,7 +29,7 @@ class ResourceProjectsScanconfigs protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaScanConfig] = js.native
   def get(callback: BodyResponseCallback[SchemaScanConfig]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScanConfig] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaScanConfig] = js.native
   def get(params: ParamsResourceProjectsScanconfigsGet): GaxiosPromise[SchemaScanConfig] = js.native
   def get(params: ParamsResourceProjectsScanconfigsGet, callback: BodyResponseCallback[SchemaScanConfig]): Unit = js.native
   def get(
@@ -62,7 +61,7 @@ class ResourceProjectsScanconfigs protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListScanConfigsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListScanConfigsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListScanConfigsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListScanConfigsResponse] = js.native
   def list(params: ParamsResourceProjectsScanconfigsList): GaxiosPromise[SchemaListScanConfigsResponse] = js.native
   def list(
     params: ParamsResourceProjectsScanconfigsList,
@@ -96,7 +95,7 @@ class ResourceProjectsScanconfigs protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaScanConfig] = js.native
   def patch(callback: BodyResponseCallback[SchemaScanConfig]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScanConfig] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaScanConfig] = js.native
   def patch(params: ParamsResourceProjectsScanconfigsPatch): GaxiosPromise[SchemaScanConfig] = js.native
   def patch(params: ParamsResourceProjectsScanconfigsPatch, callback: BodyResponseCallback[SchemaScanConfig]): Unit = js.native
   def patch(

@@ -3,11 +3,9 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an agent that provisions connectivity and subscription information with a network provider. */
-@js.native
 trait ProvisioningAgent extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait ProvisioningAgent extends StObject {
     * @param profileName The name of the profile that the cost will be applied to.
     * @return The profile.
     */
-  def getProvisionedProfile(mediaType: ProfileMediaType, profileName: String): ProvisionedProfile = js.native
+  def getProvisionedProfile(mediaType: ProfileMediaType, profileName: String): ProvisionedProfile
   
   /**
     * Provisions a device for network connectivity asynchronously, based on the supplied XML document.
     * @param provisioningXmlDocument An instance of CarrierControlSchema that contains the network connectivity provisioning information.
     * @return An asynchronous handler to start the provisioning attempt and track its completion.
     */
-  def provisionFromXmlDocumentAsync(provisioningXmlDocument: String): IPromiseWithIAsyncOperation[ProvisionFromXmlDocumentResults] = js.native
+  def provisionFromXmlDocumentAsync(provisioningXmlDocument: String): IPromiseWithIAsyncOperation[ProvisionFromXmlDocumentResults]
 }
 object ProvisioningAgent {
   

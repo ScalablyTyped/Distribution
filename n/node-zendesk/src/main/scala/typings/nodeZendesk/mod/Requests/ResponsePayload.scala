@@ -2,13 +2,11 @@ package typings.nodeZendesk.mod.Requests
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponsePayload extends StObject {
   
-  val request: ResponseModel = js.native
+  val request: ResponseModel
 }
 object ResponsePayload {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListContainerVersionsResponse extends StObject {
   
   /** All container version headers of a GTM Container. */
-  var containerVersionHeader: js.UndefOr[js.Array[ContainerVersionHeader]] = js.native
+  var containerVersionHeader: js.UndefOr[js.Array[ContainerVersionHeader]] = js.undefined
   
   /** Continuation token for fetching the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListContainerVersionsResponse {
   

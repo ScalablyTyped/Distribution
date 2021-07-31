@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVirtualNodeOutput extends StObject {
   
   /**
     * The full description of your virtual node.
     */
-  var virtualNode: VirtualNodeData = js.native
+  var virtualNode: VirtualNodeData
 }
 object DescribeVirtualNodeOutput {
   

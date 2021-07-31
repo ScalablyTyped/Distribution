@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceHardware extends StObject {
   
   /**
     * The number of vCPUs the instance has.
     */
-  var cpuCount: js.UndefOr[integer] = js.native
+  var cpuCount: js.UndefOr[integer] = js.undefined
   
   /**
     * The disks attached to the instance.
     */
-  var disks: js.UndefOr[DiskList] = js.native
+  var disks: js.UndefOr[DiskList] = js.undefined
   
   /**
     * The amount of RAM in GB on the instance (e.g., 1.0).
     */
-  var ramSizeInGb: js.UndefOr[float] = js.native
+  var ramSizeInGb: js.UndefOr[float] = js.undefined
 }
 object InstanceHardware {
   

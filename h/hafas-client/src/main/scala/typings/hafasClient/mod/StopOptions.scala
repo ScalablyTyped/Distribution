@@ -2,41 +2,39 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopOptions extends StObject {
   
   /**
     * parse & expose entrances of stops/stations?
     * @default true
     */
-  var entrances: js.UndefOr[Boolean] = js.native
+  var entrances: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Language of the results
     * @default en
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * parse & expose lines at the stop/station?
     * @default false
     */
-  var linesOfStops: js.UndefOr[Boolean] = js.native
+  var linesOfStops: js.UndefOr[Boolean] = js.undefined
   
   /**
     * parse & expose hints & warnings?
     * @default true
     */
-  var remarks: js.UndefOr[Boolean] = js.native
+  var remarks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * parse & expose sub-stops of stations?
     * @default true
     */
-  var subStops: js.UndefOr[Boolean] = js.native
+  var subStops: js.UndefOr[Boolean] = js.undefined
 }
 object StopOptions {
   

@@ -8,19 +8,17 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.ObjectIdentifierParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mi extends StObject {
   
-  var certreq: Boolean = js.native
+  var certreq: Boolean
   
-  var mi: MessageImprint = js.native
+  var mi: MessageImprint
   
-  var nonce: IntegerParam | BigIntegerParam | HexParam | Double = js.native
+  var nonce: IntegerParam | BigIntegerParam | HexParam | Double
   
-  var policy: ObjectIdentifierParam | HexParam | NameParam = js.native
+  var policy: ObjectIdentifierParam | HexParam | NameParam
 }
 object Mi {
   

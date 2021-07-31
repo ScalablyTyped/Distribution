@@ -5,14 +5,15 @@ import typings.typeorm.queryResultCacheMod.QueryResultCache
 import typings.typeorm.queryRunnerMod.QueryRunner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dbQueryResultCacheMod {
   
   @JSImport("typeorm/browser/cache/DbQueryResultCache", "DbQueryResultCache")
   @js.native
-  class DbQueryResultCache protected () extends QueryResultCache {
+  class DbQueryResultCache protected ()
+    extends StObject
+       with QueryResultCache {
     def this(connection: Connection) = this()
     
     var connection: Connection = js.native

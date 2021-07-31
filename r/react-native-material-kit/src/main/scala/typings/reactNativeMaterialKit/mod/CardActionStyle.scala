@@ -5,19 +5,17 @@ import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.dotted
 import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CardActionStyle extends StObject {
   
-  var borderStyle: js.UndefOr[solid | dotted | dashed] = js.native
+  var borderStyle: js.UndefOr[solid | dotted | dashed] = js.undefined
   
-  var borderTopColor: js.UndefOr[String] = js.native
+  var borderTopColor: js.UndefOr[String] = js.undefined
   
-  var borderTopWidth: js.UndefOr[Double] = js.native
+  var borderTopWidth: js.UndefOr[Double] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
 }
 object CardActionStyle {
   

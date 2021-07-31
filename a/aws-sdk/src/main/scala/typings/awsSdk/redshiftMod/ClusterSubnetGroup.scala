@@ -2,41 +2,39 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterSubnetGroup extends StObject {
   
   /**
     * The name of the cluster subnet group.
     */
-  var ClusterSubnetGroupName: js.UndefOr[String] = js.native
+  var ClusterSubnetGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the cluster subnet group.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the cluster subnet group. Possible values are Complete, Incomplete and Invalid. 
     */
-  var SubnetGroupStatus: js.UndefOr[String] = js.native
+  var SubnetGroupStatus: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the VPC Subnet elements. 
     */
-  var Subnets: js.UndefOr[SubnetList] = js.native
+  var Subnets: js.UndefOr[SubnetList] = js.undefined
   
   /**
     * The list of tags for the cluster subnet group.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The VPC ID of the cluster subnet group.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object ClusterSubnetGroup {
   

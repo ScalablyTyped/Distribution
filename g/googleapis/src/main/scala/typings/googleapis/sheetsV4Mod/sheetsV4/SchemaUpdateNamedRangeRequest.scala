@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Updates properties of the named range with the specified namedRangeId.
   */
-@js.native
 trait SchemaUpdateNamedRangeRequest extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaUpdateNamedRangeRequest extends StObject {
     * The root `namedRange` is implied and should not be specified. A single
     * `&quot;*&quot;` can be used as short-hand for listing every field.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * The named range to update with the new properties.
     */
-  var namedRange: js.UndefOr[SchemaNamedRange] = js.native
+  var namedRange: js.UndefOr[SchemaNamedRange] = js.undefined
 }
 object SchemaUpdateNamedRangeRequest {
   

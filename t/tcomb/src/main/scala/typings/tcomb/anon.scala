@@ -5,23 +5,21 @@ import typings.tcomb.mod.StructProps
 import typings.tcomb.mod.TypeGuardPredicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Codomain[T] extends StObject {
     
-    var codomain: T = js.native
+    var codomain: T
     
-    var domain: Constructor[String] = js.native
+    var domain: Constructor[String]
     
-    var identity: Boolean = js.native
+    var identity: Boolean
     
-    var kind: String = js.native
+    var kind: String
     
-    var name: String = js.native
+    var name: String
   }
   object Codomain {
     
@@ -32,7 +30,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class CodomainMutableBuilder[Self <: Codomain[_], T] (val x: Self with Codomain[T]) extends AnyVal {
+    implicit class CodomainMutableBuilder[Self <: Codomain[?], T] (val x: Self & Codomain[T]) extends AnyVal {
       
       @scala.inline
       def setCodomain(value: T): Self = StObject.set(x, "codomain", value.asInstanceOf[js.Any])
@@ -51,20 +49,19 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultProps extends StObject {
     
-    var defaultProps: js.Object = js.native
+    var defaultProps: js.Object
     
-    var identity: Boolean = js.native
+    var identity: Boolean
     
-    var kind: String = js.native
+    var kind: String
     
-    var name: String = js.native
+    var name: String
     
-    var props: StructProps = js.native
+    var props: StructProps
     
-    var strict: Boolean = js.native
+    var strict: Boolean
   }
   object DefaultProps {
     
@@ -104,12 +101,11 @@ object anon {
     }
   }
   
-  @js.native
   trait From extends StObject {
     
-    var from: Double = js.native
+    var from: Double
     
-    var to: Double = js.native
+    var to: Double
   }
   object From {
     
@@ -130,14 +126,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Identity extends StObject {
     
-    var identity: Boolean = js.native
+    var identity: Boolean
     
-    var kind: String = js.native
+    var kind: String
     
-    var name: String = js.native
+    var name: String
   }
   object Identity {
     
@@ -161,16 +156,15 @@ object anon {
     }
   }
   
-  @js.native
   trait IdentityKind[T] extends StObject {
     
-    var identity: Boolean = js.native
+    var identity: Boolean
     
-    var kind: String = js.native
+    var kind: String
     
-    var name: String = js.native
+    var name: String
     
-    var types: js.Array[Constructor[T]] = js.native
+    var types: js.Array[Constructor[T]]
   }
   object IdentityKind {
     
@@ -181,7 +175,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class IdentityKindMutableBuilder[Self <: IdentityKind[_], T] (val x: Self with IdentityKind[T]) extends AnyVal {
+    implicit class IdentityKindMutableBuilder[Self <: IdentityKind[?], T] (val x: Self & IdentityKind[T]) extends AnyVal {
       
       @scala.inline
       def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
@@ -200,30 +194,52 @@ object anon {
     }
   }
   
-  @js.native
   trait Kind[T] extends StObject {
     
-    var identity: Boolean = js.native
+    var identity: Boolean
     
-    var kind: String = js.native
+    var kind: String
     
-    var name: String = js.native
+    var name: String
     
-    def predicate(x: js.Any): /* is T */ Boolean = js.native
+    def predicate(x: js.Any): /* is T */ Boolean
     @JSName("predicate")
-    var predicate_Original: TypeGuardPredicate[T] = js.native
+    var predicate_Original: TypeGuardPredicate[T]
+  }
+  object Kind {
+    
+    @scala.inline
+    def apply[T](identity: Boolean, kind: String, name: String, predicate: /* x */ js.Any => /* is T */ Boolean): Kind[T] = {
+      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], predicate = js.Any.fromFunction1(predicate))
+      __obj.asInstanceOf[Kind[T]]
+    }
+    
+    @scala.inline
+    implicit class KindMutableBuilder[Self <: Kind[?], T] (val x: Self & Kind[T]) extends AnyVal {
+      
+      @scala.inline
+      def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPredicate(value: /* x */ js.Any => /* is T */ Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait Map extends StObject {
     
-    var identity: Boolean = js.native
+    var identity: Boolean
     
-    var kind: String = js.native
+    var kind: String
     
-    var map: js.Object = js.native
+    var map: js.Object
     
-    var name: String = js.native
+    var name: String
   }
   object Map {
     
@@ -250,34 +266,66 @@ object anon {
     }
   }
   
-  @js.native
   trait Name[T] extends StObject {
     
-    var identity: Boolean = js.native
+    var identity: Boolean
     
-    var kind: String = js.native
+    var kind: String
     
-    var name: String = js.native
+    var name: String
     
-    def predicate(x: js.Any): /* is T */ Boolean = js.native
+    def predicate(x: js.Any): /* is T */ Boolean
     @JSName("predicate")
-    var predicate_Original: TypeGuardPredicate[T] = js.native
+    var predicate_Original: TypeGuardPredicate[T]
     
-    var `type`: Constructor[T] = js.native
+    var `type`: Constructor[T]
+  }
+  object Name {
+    
+    @scala.inline
+    def apply[T](
+      identity: Boolean,
+      kind: String,
+      name: String,
+      predicate: /* x */ js.Any => /* is T */ Boolean,
+      `type`: Constructor[T]
+    ): Name[T] = {
+      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], predicate = js.Any.fromFunction1(predicate))
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Name[T]]
+    }
+    
+    @scala.inline
+    implicit class NameMutableBuilder[Self <: Name[?], T] (val x: Self & Name[T]) extends AnyVal {
+      
+      @scala.inline
+      def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPredicate(value: /* x */ js.Any => /* is T */ Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setType(value: Constructor[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var identity: Boolean = js.native
+    var identity: Boolean
     
-    var kind: String = js.native
+    var kind: String
     
-    var name: String = js.native
+    var name: String
     
-    var props: StructProps = js.native
+    var props: StructProps
     
-    var strict: Boolean = js.native
+    var strict: Boolean
   }
   object Props {
     
@@ -307,16 +355,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Type[T] extends StObject {
     
-    var identity: Boolean = js.native
+    var identity: Boolean
     
-    var kind: String = js.native
+    var kind: String
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: Constructor[T] = js.native
+    var `type`: Constructor[T]
   }
   object Type {
     
@@ -328,7 +375,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type[_], T] (val x: Self with Type[T]) extends AnyVal {
+    implicit class TypeMutableBuilder[Self <: Type[?], T] (val x: Self & Type[T]) extends AnyVal {
       
       @scala.inline
       def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
@@ -344,21 +391,20 @@ object anon {
     }
   }
   
-  @js.native
   trait Types extends StObject {
     
-    var identity: Boolean = js.native
+    var identity: Boolean
     
-    var kind: String = js.native
+    var kind: String
     
-    var name: String = js.native
+    var name: String
     
-    var types: js.Array[Constructor[_]] = js.native
+    var types: js.Array[Constructor[js.Any]]
   }
   object Types {
     
     @scala.inline
-    def apply(identity: Boolean, kind: String, name: String, types: js.Array[Constructor[_]]): Types = {
+    def apply(identity: Boolean, kind: String, name: String, types: js.Array[Constructor[js.Any]]): Types = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
       __obj.asInstanceOf[Types]
     }
@@ -376,7 +422,7 @@ object anon {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTypes(value: js.Array[Constructor[_]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      def setTypes(value: js.Array[Constructor[js.Any]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTypesVarargs(value: Constructor[js.Any]*): Self = StObject.set(x, "types", js.Array(value :_*))

@@ -2,19 +2,17 @@ package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateProcessModel extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var isDefault: Boolean = js.native
+  var isDefault: Boolean
   
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
-  var name: String = js.native
+  var name: String
 }
 object UpdateProcessModel {
   

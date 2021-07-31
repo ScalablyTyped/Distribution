@@ -2,26 +2,26 @@ package typings.vscodeJsonrpc.messagesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RequestMessage extends Message {
+trait RequestMessage
+  extends StObject
+     with Message {
   
   /**
     * The request id.
     */
-  var id: Double | String = js.native
+  var id: Double | String
   
   /**
     * The method to be invoked.
     */
-  var method: String = js.native
+  var method: String
   
   /**
     * The method's params.
     */
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
 }
 object RequestMessage {
   

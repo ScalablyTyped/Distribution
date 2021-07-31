@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive ScriptEvents. */
-@js.native
-trait XScriptListener extends XEventListener {
+trait XScriptListener
+  extends StObject
+     with XEventListener {
   
   /** gets called when a "vetoable event" occurs at the object. */
-  def approveFiring(aEvent: ScriptEvent): js.Any = js.native
+  def approveFiring(aEvent: ScriptEvent): js.Any
   
   /**
     * gets called when an event takes place. For that a {@link ScriptEventDescriptor} is registered at and attached to an object by an {@link
     * XEventAttacherManager} .
     */
-  def firing(aEvent: ScriptEvent): Unit = js.native
+  def firing(aEvent: ScriptEvent): Unit
 }
 object XScriptListener {
   

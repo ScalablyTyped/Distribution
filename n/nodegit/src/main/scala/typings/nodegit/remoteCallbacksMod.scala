@@ -2,7 +2,6 @@ package typings.nodegit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remoteCallbacksMod {
@@ -15,7 +14,7 @@ object remoteCallbacksMod {
     
     var credentials: js.UndefOr[js.Function] = js.native
     
-    var payload: js.UndefOr[scala.Nothing] = js.native
+    var payload: Unit = js.native
     
     var transferProgress: js.UndefOr[js.Function] = js.native
     

@@ -8,7 +8,6 @@ import typings.reactOverlays.useWaitForDOMRefMod.DOMContainer
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalMod {
@@ -18,9 +17,9 @@ object portalMod {
     */
   object default {
     
-    @JSImport("react-overlays/cjs/Portal", JSImport.Default)
-    @js.native
-    def apply(hasContainerChildrenOnRendered: PortalProps): Element | Null = js.native
+    @scala.inline
+    def apply(hasContainerChildrenOnRendered: PortalProps): Element | Null = ^.asInstanceOf[js.Dynamic].apply(hasContainerChildrenOnRendered.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+    
     @JSImport("react-overlays/cjs/Portal", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -38,20 +37,19 @@ object portalMod {
     def propTypes_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait PortalProps extends StObject {
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    var container: DOMContainer[HTMLElement] = js.native
+    var container: DOMContainer[HTMLElement]
     
-    var onRendered: js.UndefOr[js.Function1[/* element */ js.Any, Unit]] = js.native
+    var onRendered: js.UndefOr[js.Function1[/* element */ js.Any, Unit]] = js.undefined
   }
   object PortalProps {
     
     @scala.inline
     def apply(children: ReactElement): PortalProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], container = null)
       __obj.asInstanceOf[PortalProps]
     }
     

@@ -2,23 +2,21 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllPermissions extends StObject {
   
-  var allPermissions: scala.Double = js.native
+  var allPermissions: scala.Double
   
-  var delete: scala.Double = js.native
+  var delete: scala.Double
   
-  var edit: scala.Double = js.native
+  var edit: scala.Double
   
-  var manage: scala.Double = js.native
+  var manage: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var view: scala.Double = js.native
+  var view: scala.Double
 }
 object AllPermissions {
   

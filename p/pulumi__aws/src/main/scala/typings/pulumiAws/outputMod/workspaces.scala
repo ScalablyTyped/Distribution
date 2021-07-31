@@ -2,38 +2,36 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workspaces {
   
-  @js.native
   trait DirectorySelfServicePermissions extends StObject {
     
     /**
       * Whether WorkSpaces directory users can change the compute type (bundle) for their workspace. Default `false`.
       */
-    var changeComputeType: js.UndefOr[Boolean] = js.native
+    var changeComputeType: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether WorkSpaces directory users can increase the volume size of the drives on their workspace. Default `false`.
       */
-    var increaseVolumeSize: js.UndefOr[Boolean] = js.native
+    var increaseVolumeSize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether WorkSpaces directory users can rebuild the operating system of a workspace to its original state. Default `false`.
       */
-    var rebuildWorkspace: js.UndefOr[Boolean] = js.native
+    var rebuildWorkspace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether WorkSpaces directory users can restart their workspace. Default `true`.
       */
-    var restartWorkspace: js.UndefOr[Boolean] = js.native
+    var restartWorkspace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether WorkSpaces directory users can switch the running mode of their workspace. Default `false`.
       */
-    var switchRunningMode: js.UndefOr[Boolean] = js.native
+    var switchRunningMode: js.UndefOr[Boolean] = js.undefined
   }
   object DirectorySelfServicePermissions {
     
@@ -78,33 +76,32 @@ object workspaces {
     }
   }
   
-  @js.native
   trait DirectoryWorkspaceCreationProperties extends StObject {
     
     /**
       * The identifier of your custom security group. Should relate to the same VPC, where workspaces reside in.
       */
-    var customSecurityGroupId: js.UndefOr[String] = js.native
+    var customSecurityGroupId: js.UndefOr[String] = js.undefined
     
     /**
       * The default organizational unit (OU) for your WorkSpace directories. Should conform `"OU=<value>,DC=<value>,...,DC=<value>"` pattern.
       */
-    var defaultOu: js.UndefOr[String] = js.native
+    var defaultOu: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates whether internet access is enabled for your WorkSpaces.
       */
-    var enableInternetAccess: js.UndefOr[Boolean] = js.native
+    var enableInternetAccess: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates whether maintenance mode is enabled for your WorkSpaces. For more information, see [WorkSpace Maintenance](https://docs.aws.amazon.com/workspaces/latest/adminguide/workspace-maintenance.html)..
       */
-    var enableMaintenanceMode: js.UndefOr[Boolean] = js.native
+    var enableMaintenanceMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates whether users are local administrators of their WorkSpaces.
       */
-    var userEnabledAsLocalAdministrator: js.UndefOr[Boolean] = js.native
+    var userEnabledAsLocalAdministrator: js.UndefOr[Boolean] = js.undefined
   }
   object DirectoryWorkspaceCreationProperties {
     
@@ -149,13 +146,12 @@ object workspaces {
     }
   }
   
-  @js.native
   trait GetBundleComputeType extends StObject {
     
     /**
       * The name of the bundle. You cannot combine this parameter with `bundleId`.
       */
-    var name: String = js.native
+    var name: String
   }
   object GetBundleComputeType {
     
@@ -173,13 +169,12 @@ object workspaces {
     }
   }
   
-  @js.native
   trait GetBundleRootStorage extends StObject {
     
     /**
       * The size of the user storage.
       */
-    var capacity: String = js.native
+    var capacity: String
   }
   object GetBundleRootStorage {
     
@@ -197,13 +192,12 @@ object workspaces {
     }
   }
   
-  @js.native
   trait GetBundleUserStorage extends StObject {
     
     /**
       * The size of the user storage.
       */
-    var capacity: String = js.native
+    var capacity: String
   }
   object GetBundleUserStorage {
     
@@ -221,33 +215,32 @@ object workspaces {
     }
   }
   
-  @js.native
   trait GetDirectorySelfServicePermission extends StObject {
     
     /**
       * Whether WorkSpaces directory users can change the compute type (bundle) for their workspace.
       */
-    var changeComputeType: Boolean = js.native
+    var changeComputeType: Boolean
     
     /**
       * Whether WorkSpaces directory users can increase the volume size of the drives on their workspace.
       */
-    var increaseVolumeSize: Boolean = js.native
+    var increaseVolumeSize: Boolean
     
     /**
       * Whether WorkSpaces directory users can rebuild the operating system of a workspace to its original state.
       */
-    var rebuildWorkspace: Boolean = js.native
+    var rebuildWorkspace: Boolean
     
     /**
       * Whether WorkSpaces directory users can restart their workspace.
       */
-    var restartWorkspace: Boolean = js.native
+    var restartWorkspace: Boolean
     
     /**
       * Whether WorkSpaces directory users can switch the running mode of their workspace.
       */
-    var switchRunningMode: Boolean = js.native
+    var switchRunningMode: Boolean
   }
   object GetDirectorySelfServicePermission {
     
@@ -283,33 +276,32 @@ object workspaces {
     }
   }
   
-  @js.native
   trait GetDirectoryWorkspaceCreationProperties extends StObject {
     
     /**
       * The identifier of your custom security group. Should relate to the same VPC, where workspaces reside in.
       */
-    var customSecurityGroupId: String = js.native
+    var customSecurityGroupId: String
     
     /**
       * The default organizational unit (OU) for your WorkSpace directories.
       */
-    var defaultOu: js.UndefOr[String] = js.native
+    var defaultOu: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates whether internet access is enabled for your WorkSpaces.
       */
-    var enableInternetAccess: js.UndefOr[Boolean] = js.native
+    var enableInternetAccess: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates whether maintenance mode is enabled for your WorkSpaces. For more information, see [WorkSpace Maintenance](https://docs.aws.amazon.com/workspaces/latest/adminguide/workspace-maintenance.html).
       */
-    var enableMaintenanceMode: js.UndefOr[Boolean] = js.native
+    var enableMaintenanceMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates whether users are local administrators of their WorkSpaces.
       */
-    var userEnabledAsLocalAdministrator: js.UndefOr[Boolean] = js.native
+    var userEnabledAsLocalAdministrator: js.UndefOr[Boolean] = js.undefined
   }
   object GetDirectoryWorkspaceCreationProperties {
     
@@ -351,33 +343,32 @@ object workspaces {
     }
   }
   
-  @js.native
   trait GetWorkspaceWorkspaceProperty extends StObject {
     
     /**
       * The compute type. For more information, see [Amazon WorkSpaces Bundles](http://aws.amazon.com/workspaces/details/#Amazon_WorkSpaces_Bundles). Valid values are `VALUE`, `STANDARD`, `PERFORMANCE`, `POWER`, `GRAPHICS`, `POWERPRO` and `GRAPHICSPRO`.
       */
-    var computeTypeName: String = js.native
+    var computeTypeName: String
     
     /**
       * The size of the root volume.
       */
-    var rootVolumeSizeGib: Double = js.native
+    var rootVolumeSizeGib: Double
     
     /**
       * The running mode. For more information, see [Manage the WorkSpace Running Mode](https://docs.aws.amazon.com/workspaces/latest/adminguide/running-mode.html). Valid values are `AUTO_STOP` and `ALWAYS_ON`.
       */
-    var runningMode: String = js.native
+    var runningMode: String
     
     /**
       * The time after a user logs off when WorkSpaces are automatically stopped. Configured in 60-minute intervals.
       */
-    var runningModeAutoStopTimeoutInMinutes: Double = js.native
+    var runningModeAutoStopTimeoutInMinutes: Double
     
     /**
       * The size of the user storage.
       */
-    var userVolumeSizeGib: Double = js.native
+    var userVolumeSizeGib: Double
   }
   object GetWorkspaceWorkspaceProperty {
     
@@ -413,18 +404,17 @@ object workspaces {
     }
   }
   
-  @js.native
   trait IpGroupRule extends StObject {
     
     /**
       * The description.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * The IP address range, in CIDR notation, e.g. `10.0.0.0/16`
       */
-    var source: String = js.native
+    var source: String
   }
   object IpGroupRule {
     
@@ -448,33 +438,32 @@ object workspaces {
     }
   }
   
-  @js.native
   trait WorkspaceWorkspaceProperties extends StObject {
     
     /**
       * The compute type. For more information, see [Amazon WorkSpaces Bundles](http://aws.amazon.com/workspaces/details/#Amazon_WorkSpaces_Bundles). Valid values are `VALUE`, `STANDARD`, `PERFORMANCE`, `POWER`, `GRAPHICS`, `POWERPRO` and `GRAPHICSPRO`.
       */
-    var computeTypeName: js.UndefOr[String] = js.native
+    var computeTypeName: js.UndefOr[String] = js.undefined
     
     /**
       * The size of the root volume.
       */
-    var rootVolumeSizeGib: js.UndefOr[Double] = js.native
+    var rootVolumeSizeGib: js.UndefOr[Double] = js.undefined
     
     /**
       * The running mode. For more information, see [Manage the WorkSpace Running Mode](https://docs.aws.amazon.com/workspaces/latest/adminguide/running-mode.html). Valid values are `AUTO_STOP` and `ALWAYS_ON`.
       */
-    var runningMode: js.UndefOr[String] = js.native
+    var runningMode: js.UndefOr[String] = js.undefined
     
     /**
       * The time after a user logs off when WorkSpaces are automatically stopped. Configured in 60-minute intervals.
       */
-    var runningModeAutoStopTimeoutInMinutes: Double = js.native
+    var runningModeAutoStopTimeoutInMinutes: Double
     
     /**
       * The size of the user storage.
       */
-    var userVolumeSizeGib: js.UndefOr[Double] = js.native
+    var userVolumeSizeGib: js.UndefOr[Double] = js.undefined
   }
   object WorkspaceWorkspaceProperties {
     

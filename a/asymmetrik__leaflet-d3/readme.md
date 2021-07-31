@@ -10,9 +10,9 @@ Custom d3 layers for leaflet
 | ------------------ | :-------------: |
 | Full name          | @asymmetrik/leaflet-d3 |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 6293 |
+| # downloads        | 6339 |
 | # stars            | 0 |
 
 ## Links

@@ -3,36 +3,36 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChannelUserevent extends Event {
+trait ChannelUserevent
+  extends StObject
+     with Event {
   
   /**
     * A bridge that is signaled with the user event.
     */
-  var bridge: js.UndefOr[Bridge] = js.native
+  var bridge: js.UndefOr[Bridge] = js.undefined
   
   /**
     * A channel that is signaled with the user event.
     */
-  var channel: js.UndefOr[Channel] = js.native
+  var channel: js.UndefOr[Channel] = js.undefined
   
   /**
     * A endpoint that is signaled with the user event.
     */
-  var endpoint: js.UndefOr[Endpoint] = js.native
+  var endpoint: js.UndefOr[Endpoint] = js.undefined
   
   /**
     * The name of the user event.
     */
-  var eventname: String = js.native
+  var eventname: String
   
   /**
     * Custom Userevent data.
     */
-  var userevent: IndexableObject = js.native
+  var userevent: IndexableObject
 }
 object ChannelUserevent {
   

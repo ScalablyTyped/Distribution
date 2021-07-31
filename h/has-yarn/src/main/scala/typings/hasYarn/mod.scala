@@ -3,7 +3,6 @@ package typings.hasYarn
 import typings.hasYarn.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,12 +13,10 @@ object mod {
   	 * @param cwd - Current working directory. Default: `process.cwd()`.
   	 * @returns Whether the project uses Yarn.
   	 */
-  @JSImport("has-yarn", JSImport.Namespace)
-  @js.native
-  def apply(): Boolean = js.native
-  @JSImport("has-yarn", JSImport.Namespace)
-  @js.native
-  def apply(cwd: String): Boolean = js.native
+  @scala.inline
+  def apply(): Boolean = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Boolean]
+  @scala.inline
+  def apply(cwd: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("has-yarn", JSImport.Namespace)
   @js.native
@@ -34,12 +31,10 @@ object mod {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function hasYarn(cwd?: string): boolean;
   // export = hasYarn;
-  @JSImport("has-yarn", "default")
-  @js.native
-  def default(): Boolean = js.native
-  @JSImport("has-yarn", "default")
-  @js.native
-  def default(cwd: String): Boolean = js.native
+  @scala.inline
+  def default(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Boolean]
+  @scala.inline
+  def default(cwd: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cwd.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function hasYarn(cwd?: string): boolean;
   // export = hasYarn;

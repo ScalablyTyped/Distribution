@@ -2,29 +2,29 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Layer extends EventBindable {
+trait Layer
+  extends StObject
+     with EventBindable {
   
-  def getTiles(): js.Array[String] = js.native
+  def getTiles(): js.Array[String]
   
-  def getZooms(): js.Array[Double] = js.native
+  def getZooms(): js.Array[Double]
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def reload(): Unit = js.native
+  def reload(): Unit
   
-  def setMap(map: Map): Unit = js.native
+  def setMap(map: Map): Unit
   
-  def setOpacity(alpha: Double): Unit = js.native
+  def setOpacity(alpha: Double): Unit
   
-  def setTileUrl(): Unit = js.native
+  def setTileUrl(): Unit
   
-  def setzIndex(index: Double): Unit = js.native
+  def setzIndex(index: Double): Unit
   
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object Layer {
   

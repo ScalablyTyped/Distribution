@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.TreeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTreeList extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): TreeList = js.native
+  def extend(proto: js.Object): TreeList
   
   /* static member */
-  var fn: TreeList = js.native
+  var fn: TreeList
 }
 object TypeofTreeList {
   

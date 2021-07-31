@@ -2,24 +2,22 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Event tag override information.
   */
-@js.native
 trait SchemaEventTagOverride extends StObject {
   
   /**
     * Whether this override is enabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ID of this event tag override. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object SchemaEventTagOverride {
   

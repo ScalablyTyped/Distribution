@@ -10,9 +10,9 @@ CryptoPro Browser plug-in
 | ------------------ | :-------------: |
 | Full name          | cadesplugin |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2087 |
+| # downloads        | 3692 |
 | # stars            | 0 |
 
 ## Links

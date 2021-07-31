@@ -2,24 +2,22 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Styles for a waterfall chart column.
   */
-@js.native
 trait SchemaWaterfallChartColumnStyle extends StObject {
   
   /**
     * The color of the column.
     */
-  var color: js.UndefOr[SchemaColor] = js.native
+  var color: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * The label of the column&#39;s legend.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
 }
 object SchemaWaterfallChartColumnStyle {
   

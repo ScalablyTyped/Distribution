@@ -2,7 +2,6 @@ package typings.jqgrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,7 +12,7 @@ trait JQuery extends StObject {
     * @param data 
     * @returns {} 
     */
-  def addJSONData(data: js.Array[_]): Unit = js.native
+  def addJSONData(data: js.Array[js.Any]): Unit = js.native
   
   /**
     * Edits the row specified by rowid.
@@ -52,21 +51,7 @@ trait JQuery extends StObject {
     * @returns {} 
     */
   def saveRow(rowid: String): Unit = js.native
-  def saveRow(
-    rowid: String,
-    successfunc: js.UndefOr[scala.Nothing],
-    url: js.UndefOr[scala.Nothing],
-    extraparam: js.Any
-  ): Unit = js.native
-  def saveRow(rowid: String, successfunc: js.UndefOr[scala.Nothing], url: String): Unit = js.native
-  def saveRow(rowid: String, successfunc: js.UndefOr[scala.Nothing], url: String, extraparam: js.Any): Unit = js.native
   def saveRow(rowid: String, successfunc: js.Function1[/* response */ js.Any, Boolean]): Unit = js.native
-  def saveRow(
-    rowid: String,
-    successfunc: js.Function1[/* response */ js.Any, Boolean],
-    url: js.UndefOr[scala.Nothing],
-    extraparam: js.Any
-  ): Unit = js.native
   def saveRow(rowid: String, successfunc: js.Function1[/* response */ js.Any, Boolean], url: String): Unit = js.native
   def saveRow(
     rowid: String,
@@ -74,10 +59,19 @@ trait JQuery extends StObject {
     url: String,
     extraparam: js.Any
   ): Unit = js.native
+  def saveRow(
+    rowid: String,
+    successfunc: js.Function1[/* response */ js.Any, Boolean],
+    url: Unit,
+    extraparam: js.Any
+  ): Unit = js.native
   def saveRow(rowid: String, successfunc: Boolean): Unit = js.native
-  def saveRow(rowid: String, successfunc: Boolean, url: js.UndefOr[scala.Nothing], extraparam: js.Any): Unit = js.native
   def saveRow(rowid: String, successfunc: Boolean, url: String): Unit = js.native
   def saveRow(rowid: String, successfunc: Boolean, url: String, extraparam: js.Any): Unit = js.native
+  def saveRow(rowid: String, successfunc: Boolean, url: Unit, extraparam: js.Any): Unit = js.native
+  def saveRow(rowid: String, successfunc: Unit, url: String): Unit = js.native
+  def saveRow(rowid: String, successfunc: Unit, url: String, extraparam: js.Any): Unit = js.native
+  def saveRow(rowid: String, successfunc: Unit, url: Unit, extraparam: js.Any): Unit = js.native
   
   /**
     * Sets a particular parameter.

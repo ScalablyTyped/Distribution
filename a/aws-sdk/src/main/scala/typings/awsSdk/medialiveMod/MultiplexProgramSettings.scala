@@ -2,31 +2,29 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiplexProgramSettings extends StObject {
   
   /**
     * Indicates which pipeline is preferred by the multiplex for program ingest.
     */
-  var PreferredChannelPipeline: js.UndefOr[typings.awsSdk.medialiveMod.PreferredChannelPipeline] = js.native
+  var PreferredChannelPipeline: js.UndefOr[typings.awsSdk.medialiveMod.PreferredChannelPipeline] = js.undefined
   
   /**
     * Unique program number.
     */
-  var ProgramNumber: integerMin0Max65535 = js.native
+  var ProgramNumber: integerMin0Max65535
   
   /**
     * Transport stream service descriptor configuration for the Multiplex program.
     */
-  var ServiceDescriptor: js.UndefOr[MultiplexProgramServiceDescriptor] = js.native
+  var ServiceDescriptor: js.UndefOr[MultiplexProgramServiceDescriptor] = js.undefined
   
   /**
     * Program video settings configuration.
     */
-  var VideoSettings: js.UndefOr[MultiplexVideoSettings] = js.native
+  var VideoSettings: js.UndefOr[MultiplexVideoSettings] = js.undefined
 }
 object MultiplexProgramSettings {
   

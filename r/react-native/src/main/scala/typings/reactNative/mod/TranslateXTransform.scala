@@ -2,13 +2,11 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranslateXTransform extends StObject {
   
-  var translateX: Double = js.native
+  var translateX: Double
 }
 object TranslateXTransform {
   

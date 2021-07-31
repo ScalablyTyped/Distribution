@@ -2,15 +2,13 @@ package typings.ckeditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplyToAll extends StObject {
   
-  var applyToAll: js.UndefOr[Boolean] = js.native
+  var applyToAll: js.UndefOr[Boolean] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
 }
 object ApplyToAll {
   

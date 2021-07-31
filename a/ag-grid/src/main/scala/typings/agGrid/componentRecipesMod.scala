@@ -21,7 +21,6 @@ import typings.agGrid.overlayWrapperComponentMod.IOverlayWrapperComp
 import typings.agGrid.utilsMod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentRecipesMod {
@@ -52,7 +51,7 @@ object componentRecipesMod {
     
     /* private */ def newEmptyFloatingFilterWrapperComponent(column: js.Any): js.Any = js.native
     
-    def newFloatingFilterWrapperComponent[M, P /* <: IFloatingFilterParams[M, _] */](column: Column, params: IFloatingFilterParams[M, _]): IFloatingFilterWrapperComp[M, _, _, _] = js.native
+    def newFloatingFilterWrapperComponent[M, P /* <: IFloatingFilterParams[M, js.Any] */](column: Column, params: IFloatingFilterParams[M, js.Any]): IFloatingFilterWrapperComp[M, js.Any, js.Any, js.Any] = js.native
     
     def newFullRowGroupRenderer(params: ICellRendererParams): Promise[ICellRendererComp] = js.native
     

@@ -9,116 +9,117 @@ import typings.node.httpMod.Agent
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createCmaHttpClientMod {
   
-  @JSImport("contentful-management/dist/typings/create-cma-http-client", "createCMAHttpClient")
+  @JSImport("contentful-management/dist/typings/create-cma-http-client", JSImport.Namespace)
   @js.native
-  def createCMAHttpClient(params: ClientParams): AxiosInstance = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createCMAHttpClient(params: ClientParams): AxiosInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("createCMAHttpClient")(params.asInstanceOf[js.Any]).asInstanceOf[AxiosInstance]
+  
   trait ClientParams extends StObject {
     
     /**
       * Contentful CMA Access Token
       */
-    var accessToken: String = js.native
+    var accessToken: String
     
     /**
       * Application name and version e.g myApp/version
       */
-    var application: js.UndefOr[String] = js.native
+    var application: js.UndefOr[String] = js.undefined
     
-    var feature: js.UndefOr[String] = js.native
+    var feature: js.UndefOr[String] = js.undefined
     
     /**
       * Optional additional headers
       */
-    var headers: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * API host
       * @default api.contentful.com
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * direct file upload host
       * @default upload.contentful.com
       */
-    var hostUpload: js.UndefOr[String] = js.native
+    var hostUpload: js.UndefOr[String] = js.undefined
     
     /**
       * Optional Node.js HTTP agent for proxying
       * @see <a href="https://nodejs.org/api/http.html#http_class_http_agent">Node.js docs</a> and <a href="https://www.npmjs.com/package/https-proxy-agent">https-proxy-agent</a>
       */
-    var httpAgent: js.UndefOr[Agent] = js.native
+    var httpAgent: js.UndefOr[Agent] = js.undefined
     
     /**
       * Optional Node.js HTTP agent for proxying
       * @see <a href="https://nodejs.org/api/http.html#http_class_http_agent">Node.js docs</a> and <a href="https://www.npmjs.com/package/https-proxy-agent">https-proxy-agent</a>
       */
-    var httpsAgent: js.UndefOr[typings.node.httpsMod.Agent] = js.native
+    var httpsAgent: js.UndefOr[typings.node.httpsMod.Agent] = js.undefined
     
     /**
       * Requests will be made over http instead of the default https
       * @default false
       */
-    var insecure: js.UndefOr[Boolean] = js.native
+    var insecure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Integration name and version e.g react/version
       */
-    var integration: js.UndefOr[String] = js.native
+    var integration: js.UndefOr[String] = js.undefined
     
     /**
       * A log handler function to process given log messages & errors.
       * Receives the log level (error, warning & info) and the actual log data (Error object or string).
       * @see The default can be found at: https://github.com/contentful/contentful-sdk-core/blob/master/lib/create-http-client.js
       */
-    var logHandler: js.UndefOr[js.Function2[/* level */ String, /* data */ Error | String, Unit]] = js.native
+    var logHandler: js.UndefOr[js.Function2[/* level */ String, /* data */ Error | String, Unit]] = js.undefined
     
     /**
       * Optional maximum content length in bytes
       * @default 1073741824 i.e 1GB
       */
-    var maxContentLength: js.UndefOr[Double] = js.native
+    var maxContentLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional Axios proxy
       * @see <a href="https://github.com/mzabriskie/axios#request-config"> axios docs </a>
       */
-    var proxy: js.UndefOr[AxiosProxyConfig] = js.native
+    var proxy: js.UndefOr[AxiosProxyConfig] = js.undefined
     
     /**
       * Gets called on every request triggered by the SDK
       */
-    var requestLogger: js.UndefOr[js.Function1[/* config */ AxiosRequestConfig, Unit]] = js.native
+    var requestLogger: js.UndefOr[js.Function1[/* config */ AxiosRequestConfig, Unit]] = js.undefined
     
     /**
       * Gets called on every response
       */
-    var responseLogger: js.UndefOr[js.Function1[/* response */ AxiosResponse[_], Unit]] = js.native
+    var responseLogger: js.UndefOr[js.Function1[/* response */ AxiosResponse[js.Any], Unit]] = js.undefined
     
     /**
       * Optional number of retries before failure
       * @default 5
       */
-    var retryLimit: js.UndefOr[Double] = js.native
+    var retryLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * If we should retry on errors and 429 rate limit exceptions
       * @default true
       */
-    var retryOnError: js.UndefOr[Boolean] = js.native
+    var retryOnError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional number of milliseconds before the request times out.
       * @default 30000
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ClientParams {
     
@@ -213,7 +214,7 @@ object createCmaHttpClientMod {
       def setRequestLoggerUndefined: Self = StObject.set(x, "requestLogger", js.undefined)
       
       @scala.inline
-      def setResponseLogger(value: /* response */ AxiosResponse[_] => Unit): Self = StObject.set(x, "responseLogger", js.Any.fromFunction1(value))
+      def setResponseLogger(value: /* response */ AxiosResponse[js.Any] => Unit): Self = StObject.set(x, "responseLogger", js.Any.fromFunction1(value))
       
       @scala.inline
       def setResponseLoggerUndefined: Self = StObject.set(x, "responseLogger", js.undefined)

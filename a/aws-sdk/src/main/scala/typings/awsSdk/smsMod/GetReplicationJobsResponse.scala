@@ -2,21 +2,19 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetReplicationJobsResponse extends StObject {
   
   /**
     * The token required to retrieve the next set of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * Information about the replication jobs.
     */
-  var replicationJobList: js.UndefOr[ReplicationJobList] = js.native
+  var replicationJobList: js.UndefOr[ReplicationJobList] = js.undefined
 }
 object GetReplicationJobsResponse {
   

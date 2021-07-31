@@ -2,16 +2,14 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3ActionActionMetadata extends StObject {
   
   /**
     * Time when this action will expire.
     */
-  var expireTime: js.UndefOr[String] = js.native
+  var expireTime: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsOrdersV3ActionActionMetadata {
   

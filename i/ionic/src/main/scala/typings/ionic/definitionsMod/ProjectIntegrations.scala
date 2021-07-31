@@ -2,17 +2,15 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectIntegrations extends StObject {
   
-  var capacitor: js.UndefOr[ProjectIntegration] = js.native
+  var capacitor: js.UndefOr[ProjectIntegration] = js.undefined
   
-  var cordova: js.UndefOr[ProjectIntegration] = js.native
+  var cordova: js.UndefOr[ProjectIntegration] = js.undefined
   
-  var enterprise: js.UndefOr[EnterpriseProjectIntegration] = js.native
+  var enterprise: js.UndefOr[EnterpriseProjectIntegration] = js.undefined
 }
 object ProjectIntegrations {
   

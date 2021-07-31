@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides functions to set and remove a merged menu bar for inplace editing.
   * @since OOo 2.0
   */
-@js.native
-trait XMenuBarMergingAcceptor extends XInterface {
+trait XMenuBarMergingAcceptor
+  extends StObject
+     with XInterface {
   
   /** removes a previously set merged menu bar and sets a previously created menu bar back. */
-  def removeMergedMenuBar(): Unit = js.native
+  def removeMergedMenuBar(): Unit
   
   /**
     * allows to set a merged menu bar.
@@ -25,7 +25,7 @@ trait XMenuBarMergingAcceptor extends XInterface {
     * @see com.sun.star.frame.XDispatchProvider
     * @see com.sun.star.frame.XLayoutManager
     */
-  def setMergedMenuBar(xMergedMenuBar: XIndexAccess): Boolean = js.native
+  def setMergedMenuBar(xMergedMenuBar: XIndexAccess): Boolean
 }
 object XMenuBarMergingAcceptor {
   

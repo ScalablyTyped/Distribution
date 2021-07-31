@@ -3,40 +3,38 @@ package typings.officeUiFabricReact.personaTypesMod
 import typings.fluentuiTheme.ithemeMod.ITheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPersonaStyleProps extends StObject {
   
   /**
     * Custom class name.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * Optional custom persona coin size in pixel.
     */
-  var coinSize: js.UndefOr[Double] = js.native
+  var coinSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Presence of the person to display - will not display presence if undefined.
     * @defaultvalue PersonaPresence.none
     */
-  var presence: js.UndefOr[PersonaPresence] = js.native
+  var presence: js.UndefOr[PersonaPresence] = js.undefined
   
-  var showSecondaryText: js.UndefOr[Boolean] = js.native
+  var showSecondaryText: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Decides the size of the control.
     * @defaultvalue PersonaSize.size48
     */
-  var size: js.UndefOr[PersonaSize] = js.native
+  var size: js.UndefOr[PersonaSize] = js.undefined
   
   /**
     * Theme provided by High-Order Component.
     */
-  var theme: ITheme = js.native
+  var theme: ITheme
 }
 object IPersonaStyleProps {
   

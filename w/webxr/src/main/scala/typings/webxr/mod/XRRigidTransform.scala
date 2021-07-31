@@ -5,14 +5,13 @@ import typings.std.DOMPointReadOnly
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webxr", "XRRigidTransform")
 @js.native
 class XRRigidTransform () extends StObject {
   def this(position: DOMPointInit) = this()
-  def this(position: js.UndefOr[scala.Nothing], direction: DOMPointInit) = this()
+  def this(position: Unit, direction: DOMPointInit) = this()
   def this(position: DOMPointInit, direction: DOMPointInit) = this()
   
   var inverse: XRRigidTransform = js.native

@@ -2,20 +2,18 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnBackgroundFetchDataCallbackResult extends StObject {
   
   /** 缓存数据类别 (periodic) */
-  var fetchType: String = js.native
+  var fetchType: String
   
   /** 缓存数据 */
-  var fetchedData: String = js.native
+  var fetchedData: String
   
   /** 客户端拿到缓存数据的时间戳 */
-  var timeStamp: Double = js.native
+  var timeStamp: Double
 }
 object OnBackgroundFetchDataCallbackResult {
   

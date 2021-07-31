@@ -3,23 +3,21 @@ package typings.jqueryui.JQueryUI
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectMenuEvents extends StObject {
   
-  var change: js.UndefOr[SelectMenuEvent] = js.native
+  var change: js.UndefOr[SelectMenuEvent] = js.undefined
   
-  var close: js.UndefOr[SelectMenuEvent] = js.native
+  var close: js.UndefOr[SelectMenuEvent] = js.undefined
   
-  var create: js.UndefOr[SelectMenuEvent] = js.native
+  var create: js.UndefOr[SelectMenuEvent] = js.undefined
   
-  var focus: js.UndefOr[SelectMenuEvent] = js.native
+  var focus: js.UndefOr[SelectMenuEvent] = js.undefined
   
-  var open: js.UndefOr[SelectMenuEvent] = js.native
+  var open: js.UndefOr[SelectMenuEvent] = js.undefined
   
-  var select: js.UndefOr[SelectMenuEvent] = js.native
+  var select: js.UndefOr[SelectMenuEvent] = js.undefined
 }
 object SelectMenuEvents {
   

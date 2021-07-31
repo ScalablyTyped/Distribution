@@ -6,35 +6,33 @@ import typings.monacoEditor.mod.MarkerTag
 import typings.monacoEditor.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMarker extends StObject {
   
-  var code: js.UndefOr[String | Target] = js.native
+  var code: js.UndefOr[String | Target] = js.undefined
   
-  var endColumn: Double = js.native
+  var endColumn: Double
   
-  var endLineNumber: Double = js.native
+  var endLineNumber: Double
   
-  var message: String = js.native
+  var message: String
   
-  var owner: String = js.native
+  var owner: String
   
-  var relatedInformation: js.UndefOr[js.Array[IRelatedInformation]] = js.native
+  var relatedInformation: js.UndefOr[js.Array[IRelatedInformation]] = js.undefined
   
-  var resource: Uri = js.native
+  var resource: Uri
   
-  var severity: MarkerSeverity = js.native
+  var severity: MarkerSeverity
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var startColumn: Double = js.native
+  var startColumn: Double
   
-  var startLineNumber: Double = js.native
+  var startLineNumber: Double
   
-  var tags: js.UndefOr[js.Array[MarkerTag]] = js.native
+  var tags: js.UndefOr[js.Array[MarkerTag]] = js.undefined
 }
 object IMarker {
   

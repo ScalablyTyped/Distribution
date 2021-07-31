@@ -2,16 +2,14 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScimListProvisionedIdentitiesEndpoint extends StObject {
   
   /**
     * Used for pagination: the number of results to return.
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     * Filters results using the equals query parameter operator (`eq`). You can filter results that are equal to `id`, `userName`, `emails`, and `external_id`. For example, to search for an identity with the `userName` Octocat, you would use this query:
@@ -22,15 +20,15 @@ trait ScimListProvisionedIdentitiesEndpoint extends StObject {
     *
     * `?filter=emails%20eq%20\"octocat@github.com\"`.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * Used for pagination: the index of the first result to return.
     */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
 }
 object ScimListProvisionedIdentitiesEndpoint {
   

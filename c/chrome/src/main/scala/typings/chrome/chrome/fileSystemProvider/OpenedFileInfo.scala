@@ -2,20 +2,18 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenedFileInfo extends StObject {
   
   /** The path of the opened file. */
-  var filePath: String = js.native
+  var filePath: String
   
   /** Whether the file was opened for reading or writing. */
-  var mode: String = js.native
+  var mode: String
   
   /** A request ID to be be used by consecutive read/write and close requests. */
-  var openRequestId: Double = js.native
+  var openRequestId: Double
 }
 object OpenedFileInfo {
   

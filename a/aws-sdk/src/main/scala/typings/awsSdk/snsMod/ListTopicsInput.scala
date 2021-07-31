@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTopicsInput extends StObject {
   
   /**
     * Token returned by the previous ListTopics request.
     */
-  var NextToken: js.UndefOr[nextToken] = js.native
+  var NextToken: js.UndefOr[nextToken] = js.undefined
 }
 object ListTopicsInput {
   

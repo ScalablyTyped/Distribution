@@ -4,60 +4,60 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureLayerCapabilities extends Object {
+trait FeatureLayerCapabilities
+  extends StObject
+     with Object {
   
   /**
     * Describes what attachment capabilities are enabled on the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var attachment: FeatureLayerCapabilitiesAttachment = js.native
+  var attachment: FeatureLayerCapabilitiesAttachment
   
   /**
     * Describes characteristics of the data in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var data: FeatureLayerCapabilitiesData = js.native
+  var data: FeatureLayerCapabilitiesData
   
   /**
     * Describes editing capabilities that can be performed on the features in the layer via [applyEdits()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var editing: FeatureLayerCapabilitiesEditing = js.native
+  var editing: FeatureLayerCapabilitiesEditing
   
   /**
     * Describes the metadata contained on features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var metadata: FeatureLayerCapabilitiesMetadata = js.native
+  var metadata: FeatureLayerCapabilitiesMetadata
   
   /**
     * Describes operations that can be performed on features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var operations: FeatureLayerCapabilitiesOperations = js.native
+  var operations: FeatureLayerCapabilitiesOperations
   
   /**
     * Describes [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) operations that can be performed on features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var query: FeatureLayerCapabilitiesQuery = js.native
+  var query: FeatureLayerCapabilitiesQuery
   
   /**
     * Indicates if the layer's query operation supports querying features or records related to features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var queryRelated: FeatureLayerCapabilitiesQueryRelated = js.native
+  var queryRelated: FeatureLayerCapabilitiesQueryRelated
 }
 object FeatureLayerCapabilities {
   

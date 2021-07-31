@@ -1,8 +1,8 @@
 package typings.parse.mod.global.Parse
 
+import typings.parse.mod.global.Parse.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * uniqueness.</p>
   */
 @js.native
-trait User[T /* <: Attributes */] extends Object[T] {
+trait User[T /* <: Attributes */]
+  extends StObject
+     with Object[T] {
   
   def _isLinked(provider: String): Boolean = js.native
   def _isLinked(provider: AuthProvider): Boolean = js.native
@@ -52,7 +54,12 @@ trait User[T /* <: Attributes */] extends Object[T] {
   def setUsername(username: String, options: SuccessFailureOptions): Boolean = js.native
   
   def signUp(): js.Promise[this.type] = js.native
-  def signUp(attrs: js.UndefOr[scala.Nothing], options: SignUpOptions): js.Promise[this.type] = js.native
   def signUp(attrs: js.Any): js.Promise[this.type] = js.native
   def signUp(attrs: js.Any, options: SignUpOptions): js.Promise[this.type] = js.native
+  def signUp(attrs: Unit, options: SignUpOptions): js.Promise[this.type] = js.native
+}
+object User {
+  
+  @scala.inline
+  def apply: UserConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("User").asInstanceOf[UserConstructor]
 }

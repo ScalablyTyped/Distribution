@@ -2,17 +2,15 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTime extends StObject {
   
-  var createTime: Double = js.native
+  var createTime: Double
   
-  var filePath: String = js.native
+  var filePath: String
   
-  var size: Double = js.native
+  var size: Double
 }
 object CreateTime {
   

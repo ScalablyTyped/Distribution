@@ -5,22 +5,22 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Executing interface for executable components run by the uno executable loader. This is an application to run components passing the command line
   * arguments.
   */
-@js.native
-trait XMain extends XInterface {
+trait XMain
+  extends StObject
+     with XInterface {
   
   /**
     * This method is called to run the component.
     * @param aArguments arguments passed to the component, i.e. the command line arguments
     * @returns return value passed to be returned by main()
     */
-  def run(aArguments: SeqEquiv[String]): Double = js.native
+  def run(aArguments: SeqEquiv[String]): Double
 }
 object XMain {
   

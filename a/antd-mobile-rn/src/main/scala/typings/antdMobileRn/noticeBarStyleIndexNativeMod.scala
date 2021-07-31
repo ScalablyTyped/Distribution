@@ -11,7 +11,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noticeBarStyleIndexNativeMod {
@@ -71,24 +70,23 @@ object noticeBarStyleIndexNativeMod {
     def notice_=(x: AlignItemsBackgroundColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notice")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait INoticeBarStyle extends StObject {
     
-    var actionWrap: ViewStyle = js.native
+    var actionWrap: ViewStyle
     
-    var close: TextStyle = js.native
+    var close: TextStyle
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var content: TextStyle = js.native
+    var content: TextStyle
     
-    var left15: ViewStyle = js.native
+    var left15: ViewStyle
     
-    var left6: ViewStyle = js.native
+    var left6: ViewStyle
     
-    var link: TextStyle = js.native
+    var link: TextStyle
     
-    var notice: ViewStyle = js.native
+    var notice: ViewStyle
   }
   object INoticeBarStyle {
     

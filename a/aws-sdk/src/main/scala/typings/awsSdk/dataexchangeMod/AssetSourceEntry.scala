@@ -2,21 +2,19 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetSourceEntry extends StObject {
   
   /**
     * The S3 bucket that's part of the source of the asset.
     */
-  var Bucket: string = js.native
+  var Bucket: string
   
   /**
     * The name of the object in Amazon S3 for the asset.
     */
-  var Key: string = js.native
+  var Key: string
 }
 object AssetSourceEntry {
   

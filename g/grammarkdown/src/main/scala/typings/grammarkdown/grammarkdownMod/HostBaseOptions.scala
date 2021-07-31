@@ -3,17 +3,15 @@ package typings.grammarkdown.grammarkdownMod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostBaseOptions extends StObject {
   
-  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
-  var knownGrammars: js.UndefOr[Record[String, String]] = js.native
+  var knownGrammars: js.UndefOr[Record[String, String]] = js.undefined
   
-  var useBuiltinGrammars: js.UndefOr[Boolean] = js.native
+  var useBuiltinGrammars: js.UndefOr[Boolean] = js.undefined
 }
 object HostBaseOptions {
   

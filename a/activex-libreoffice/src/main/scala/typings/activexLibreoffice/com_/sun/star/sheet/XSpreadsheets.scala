@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to access the spreadsheets by name and to insert, copy, remove and rearrange spreadsheets.
   * @see com.sun.star.sheet.Spreadsheets
   */
-@js.native
-trait XSpreadsheets extends XNameContainer {
+trait XSpreadsheets
+  extends StObject
+     with XNameContainer {
   
   /**
     * copies a sheet within the collection.
@@ -21,21 +21,21 @@ trait XSpreadsheets extends XNameContainer {
     * @param aCopy the name of the copy of the spreadsheet.
     * @param nDestination the index of the copy in the collection.
     */
-  def copyByName(aName: String, aCopy: String, nDestination: Double): Unit = js.native
+  def copyByName(aName: String, aCopy: String, nDestination: Double): Unit
   
   /**
     * inserts a new sheet into the collection.
     * @param aName the name of the new spreadsheet.
     * @param nPosition the index of the new spreadsheet in the collection.
     */
-  def insertNewByName(aName: String, nPosition: Double): Unit = js.native
+  def insertNewByName(aName: String, nPosition: Double): Unit
   
   /**
     * moves a sheet within the collection.
     * @param aName the name of the spreadsheet to move.
     * @param nDestination the new index of the spreadsheet in the collection.
     */
-  def moveByName(aName: String, nDestination: Double): Unit = js.native
+  def moveByName(aName: String, nDestination: Double): Unit
 }
 object XSpreadsheets {
   

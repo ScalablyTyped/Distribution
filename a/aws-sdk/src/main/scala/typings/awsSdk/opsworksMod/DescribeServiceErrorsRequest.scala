@@ -2,26 +2,24 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeServiceErrorsRequest extends StObject {
   
   /**
     * The instance ID. If you use this parameter, DescribeServiceErrors returns descriptions of the errors associated with the specified instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * An array of service error IDs. If you use this parameter, DescribeServiceErrors returns descriptions of the specified errors. Otherwise, it returns a description of every error.
     */
-  var ServiceErrorIds: js.UndefOr[Strings] = js.native
+  var ServiceErrorIds: js.UndefOr[Strings] = js.undefined
   
   /**
     * The stack ID. If you use this parameter, DescribeServiceErrors returns descriptions of the errors associated with the specified stack.
     */
-  var StackId: js.UndefOr[String] = js.native
+  var StackId: js.UndefOr[String] = js.undefined
 }
 object DescribeServiceErrorsRequest {
   

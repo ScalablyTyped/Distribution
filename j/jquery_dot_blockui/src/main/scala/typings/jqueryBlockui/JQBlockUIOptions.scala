@@ -2,75 +2,73 @@ package typings.jqueryBlockui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQBlockUIOptions extends StObject {
   
   /** 
     * allow body element to be stetched in ie6; this makes blocking look better
     * on "short" pages.  disable if you wish to prevent changes to the body height 
     */
-  var allowBodyStretch: js.UndefOr[Boolean] = js.native
+  var allowBodyStretch: js.UndefOr[Boolean] = js.undefined
   
   /** z-index for the blocking overlay */
-  var baseZ: js.UndefOr[Double] = js.native
+  var baseZ: js.UndefOr[Double] = js.undefined
   
   /** enable if you want key and mouse events to be disabled for content that is blocked */
-  var bindEvents: js.UndefOr[Boolean] = js.native
+  var bindEvents: js.UndefOr[Boolean] = js.undefined
   
   /** class name of the message block */
-  var blockMsgClass: js.UndefOr[String] = js.native
+  var blockMsgClass: js.UndefOr[String] = js.undefined
   
   /** set true to have the message automatically centered for X */
-  var centerX: js.UndefOr[Boolean] = js.native
+  var centerX: js.UndefOr[Boolean] = js.undefined
   
   /** set true to have the message automatically centered for Y */
-  var centerY: js.UndefOr[Boolean] = js.native
+  var centerY: js.UndefOr[Boolean] = js.undefined
   
   /** be default blockUI will supress tab navigation from leaving blocking content(if bindEvents is true) */
-  var constrainTabKey: js.UndefOr[Boolean] = js.native
+  var constrainTabKey: js.UndefOr[Boolean] = js.undefined
   
   /** 
     * styles for the message when blocking; if you wish to disable 
     * these and use an external stylesheet then do this in your code: 
     * $.blockUI.defaults.css = {}; 
     */
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
   /** style to replace wait cursor before unblocking to correct issue of lingering wait cursor */
-  var cursorReset: js.UndefOr[String] = js.native
+  var cursorReset: js.UndefOr[String] = js.undefined
   
   /** only used when theme == true (requires jquery-ui.js to be loaded) */
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
   /** fadeIn time in millis; set to 0 to disable fadeIn on block  */
-  var fadeIn: js.UndefOr[Double] = js.native
+  var fadeIn: js.UndefOr[Double] = js.undefined
   
   /** fadeOut time in millis; set to 0 to disable fadeOut on unblock */
-  var fadeOut: js.UndefOr[Double] = js.native
+  var fadeOut: js.UndefOr[Double] = js.undefined
   
   /** if true, focus will be placed in the first available input field when page blocking */
-  var focusInput: js.UndefOr[Boolean] = js.native
+  var focusInput: js.UndefOr[Boolean] = js.undefined
   
   /** force usage of iframe in non-IE browsers (handy for blocking applets) */
-  var forceIframe: js.UndefOr[Boolean] = js.native
+  var forceIframe: js.UndefOr[Boolean] = js.undefined
   
   /** styles applied when using $.growlUI */
-  var growlCSS: js.UndefOr[js.Any] = js.native
+  var growlCSS: js.UndefOr[js.Any] = js.undefined
   
   /** ifreamSrc for IE */
-  var iframeSrc: js.UndefOr[String] = js.native
+  var iframeSrc: js.UndefOr[String] = js.undefined
   
   /** if it is already blocked, then ignore it (don't unblock and reblock) */
-  var ignoreIfBlocked: js.UndefOr[Boolean] = js.native
+  var ignoreIfBlocked: js.UndefOr[Boolean] = js.undefined
   
   /** message displayed when blocking (use null for no message) */
-  var message: js.UndefOr[js.Any] = js.native
+  var message: js.UndefOr[js.Any] = js.undefined
   
   /** callback method invoked when fadeIn has completed and blocking message is visible */
-  var onBlock: js.UndefOr[js.Function0[Unit]] = js.native
+  var onBlock: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** 
     * callback method invoked when unblocking has completed; the callback is 
@@ -78,29 +76,29 @@ trait JQBlockUIOptions extends StObject {
     * blocks) and the options that were passed to the unblock call: 
     * onUnblock(element, options) 
     */
-  var onUnblock: js.UndefOr[js.Function2[/* element */ js.Any, /* options */ js.Any, Unit]] = js.native
+  var onUnblock: js.UndefOr[js.Function2[/* element */ js.Any, /* options */ js.Any, Unit]] = js.undefined
   
   /** styles for the overlay */
-  var overlayCSS: js.UndefOr[js.Any] = js.native
+  var overlayCSS: js.UndefOr[js.Any] = js.undefined
   
   // don't ask; if you really must know: http://groups.google.com/group/jquery-en/browse_thread/thread/36640a8730503595/2f6a79a77a78e493#2f6a79a77a78e493 
   /** quirksmodeOffsetHack */
-  var quirksmodeOffsetHack: js.UndefOr[Double] = js.native
+  var quirksmodeOffsetHack: js.UndefOr[Double] = js.undefined
   
   /** disable if you don't want to show the overlay */
-  var showOverlay: js.UndefOr[Boolean] = js.native
+  var showOverlay: js.UndefOr[Boolean] = js.undefined
   
   /** set to true to use with jQuery UI themes */
-  var theme: js.UndefOr[Boolean] = js.native
+  var theme: js.UndefOr[Boolean] = js.undefined
   
   /** minimal style set used when themes are used  */
-  var themedCSS: js.UndefOr[js.Any] = js.native
+  var themedCSS: js.UndefOr[js.Any] = js.undefined
   
   /** time in millis to wait before auto-unblocking; set to 0 to disable auto-unblock */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /** title string; only used when theme == true  */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object JQBlockUIOptions {
   

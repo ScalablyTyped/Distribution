@@ -3,12 +3,14 @@ package typings.storybookAddonNotes
 import typings.storybookAddons.typesMod.types
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registerMod {
   
-  @JSImport("@storybook/addon-notes/dist/register", JSImport.Default)
+  @JSImport("@storybook/addon-notes/dist/register", JSImport.Namespace)
   @js.native
-  def default(`type`: types): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(`type`: types): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

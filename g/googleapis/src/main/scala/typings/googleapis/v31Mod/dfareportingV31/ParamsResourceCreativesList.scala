@@ -6,73 +6,73 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCreativesList extends StandardParameters {
+trait ParamsResourceCreativesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Select only active creatives. Leave blank to select active and inactive
     * creatives.
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only creatives with this advertiser ID.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * Select only archived creatives. Leave blank to select archived and
     * unarchived creatives.
     */
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only creatives with this campaign ID.
     */
-  var campaignId: js.UndefOr[String] = js.native
+  var campaignId: js.UndefOr[String] = js.undefined
   
   /**
     * Select only in-stream video creatives with these companion IDs.
     */
-  var companionCreativeIds: js.UndefOr[js.Array[String]] = js.native
+  var companionCreativeIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only creatives with these creative field IDs.
     */
-  var creativeFieldIds: js.UndefOr[js.Array[String]] = js.native
+  var creativeFieldIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only creatives with these IDs.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Maximum number of results to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Value of the nextPageToken from the previous result page.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * User profile ID associated with this request.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Select only creatives with these rendering IDs.
     */
-  var renderingIds: js.UndefOr[js.Array[String]] = js.native
+  var renderingIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Allows searching for objects by name or ID. Wildcards (*) are allowed.
@@ -83,32 +83,32 @@ trait ParamsResourceCreativesList extends StandardParameters {
     * match objects with name "my creative", "creative 2015", or simply
     * "creative".
     */
-  var searchString: js.UndefOr[String] = js.native
+  var searchString: js.UndefOr[String] = js.undefined
   
   /**
     * Select only creatives with these size IDs.
     */
-  var sizeIds: js.UndefOr[js.Array[String]] = js.native
+  var sizeIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Field by which to sort the list.
     */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /**
     * Order of sorted results.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
     * Select only creatives corresponding to this Studio creative ID.
     */
-  var studioCreativeId: js.UndefOr[String] = js.native
+  var studioCreativeId: js.UndefOr[String] = js.undefined
   
   /**
     * Select only creatives with these creative types.
     */
-  var types: js.UndefOr[js.Array[String]] = js.native
+  var types: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParamsResourceCreativesList {
   

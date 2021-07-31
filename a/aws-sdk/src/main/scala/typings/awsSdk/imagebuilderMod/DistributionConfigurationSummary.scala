@@ -2,41 +2,39 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionConfigurationSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the distribution configuration.
     */
-  var arn: js.UndefOr[ImageBuilderArn] = js.native
+  var arn: js.UndefOr[ImageBuilderArn] = js.undefined
   
   /**
     * The date on which the distribution configuration was created.
     */
-  var dateCreated: js.UndefOr[DateTime] = js.native
+  var dateCreated: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The date on which the distribution configuration was updated.
     */
-  var dateUpdated: js.UndefOr[DateTime] = js.native
+  var dateUpdated: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The description of the distribution configuration.
     */
-  var description: js.UndefOr[NonEmptyString] = js.native
+  var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the distribution configuration.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The tags associated with the distribution configuration.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object DistributionConfigurationSummary {
   

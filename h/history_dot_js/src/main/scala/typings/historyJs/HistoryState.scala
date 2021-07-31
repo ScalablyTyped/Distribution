@@ -2,21 +2,19 @@ package typings.historyJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryState extends StObject {
   
-  var cleanUrl: js.UndefOr[String] = js.native
+  var cleanUrl: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var hashedUrl: js.UndefOr[String] = js.native
+  var hashedUrl: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object HistoryState {
   

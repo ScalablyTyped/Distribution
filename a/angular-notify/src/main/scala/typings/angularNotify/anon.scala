@@ -3,55 +3,53 @@ package typings.angularNotify
 import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Classes extends StObject {
     
     /**
       * Optional. A valid Angular scope object. The scope of the template will be created by calling $new() on this scope.
       */
     @JSName("$scope")
-    var $scope: js.UndefOr[IScope] = js.native
+    var $scope: js.UndefOr[IScope] = js.undefined
     
     /**
       * Optional. A list of custom CSS classes to apply to the message element.
       */
-    var classes: js.UndefOr[String] = js.native
+    var classes: js.UndefOr[String] = js.undefined
     
     /**
       * Optional. Element that contains each notification. Defaults to document.body.
       */
-    var container: js.UndefOr[js.Any] = js.native
+    var container: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Optional. The duration (in milliseconds) of the message. A duration of 0 will prevent the message from closing automatically.
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * Required. The message to show.
       */
-    var message: String = js.native
+    var message: String
     
     /**
       * Optional. A string containing any valid Angular HTML which will be shown instead of the regular message text.
       * The string must contain one root element like all valid Angular HTML templates (so wrap everything in a <span>).
       */
-    var messageTemplate: js.UndefOr[String] = js.native
+    var messageTemplate: js.UndefOr[String] = js.undefined
     
     /**
       * Optional. Currently center and right are the only acceptable values.
       */
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
     /**
       * Optional. A custom template for the UI of the message.
       */
-    var templateUrl: js.UndefOr[String] = js.native
+    var templateUrl: js.UndefOr[String] = js.undefined
   }
   object Classes {
     
@@ -111,43 +109,42 @@ object anon {
     }
   }
   
-  @js.native
   trait Container extends StObject {
     
     /**
       * The default element that contains each notification. Defaults to document.body.
       */
-    var container: js.UndefOr[js.Any] = js.native
+    var container: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The default duration (in milliseconds) of each message. A duration of 0 will prevent messages from closing automatically.
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of total notifications that can be visible at one time. Older notifications will be closed when the maximum is reached.
       */
-    var maximumOpen: js.UndefOr[Double] = js.native
+    var maximumOpen: js.UndefOr[Double] = js.undefined
     
     /**
       * The default position of each message. Currently only center and right are the supported values.
       */
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
     /**
       * The Y pixel value where messages will be shown.
       */
-    var startTop: js.UndefOr[Double] = js.native
+    var startTop: js.UndefOr[Double] = js.undefined
     
     /**
       * The default message template.
       */
-    var templateUrl: js.UndefOr[String] = js.native
+    var templateUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The number of pixels that should be reserved between messages vertically.
       */
-    var verticalSpacing: js.UndefOr[Double] = js.native
+    var verticalSpacing: js.UndefOr[Double] = js.undefined
   }
   object Container {
     

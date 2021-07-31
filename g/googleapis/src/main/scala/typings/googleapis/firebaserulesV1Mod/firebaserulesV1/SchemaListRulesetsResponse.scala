@@ -2,25 +2,23 @@ package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for FirebaseRulesService.ListRulesets.
   */
-@js.native
 trait SchemaListRulesetsResponse extends StObject {
   
   /**
     * The pagination token to retrieve the next page of results. If the value
     * is empty, no further results remain.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * List of `Ruleset` instances.
     */
-  var rulesets: js.UndefOr[js.Array[SchemaRuleset]] = js.native
+  var rulesets: js.UndefOr[js.Array[SchemaRuleset]] = js.undefined
 }
 object SchemaListRulesetsResponse {
   

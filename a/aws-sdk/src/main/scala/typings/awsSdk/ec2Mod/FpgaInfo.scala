@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FpgaInfo extends StObject {
   
   /**
     * Describes the FPGAs for the instance type.
     */
-  var Fpgas: js.UndefOr[FpgaDeviceInfoList] = js.native
+  var Fpgas: js.UndefOr[FpgaDeviceInfoList] = js.undefined
   
   /**
     * The total memory of all FPGA accelerators for the instance type.
     */
-  var TotalFpgaMemoryInMiB: js.UndefOr[totalFpgaMemory] = js.native
+  var TotalFpgaMemoryInMiB: js.UndefOr[totalFpgaMemory] = js.undefined
 }
 object FpgaInfo {
   

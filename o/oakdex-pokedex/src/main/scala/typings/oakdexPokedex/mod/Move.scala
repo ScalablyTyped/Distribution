@@ -4,53 +4,51 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.oakdexPokedex.anon.Increasedcriticalhitratio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Move extends StObject {
   
-  var accuracy: Double = js.native
+  var accuracy: Double
   
-  var affected_by_kings_rock: Boolean = js.native
+  var affected_by_kings_rock: Boolean
   
-  var affected_by_magic_coat: Boolean = js.native
+  var affected_by_magic_coat: Boolean
   
-  var affected_by_mirror_move: Boolean = js.native
+  var affected_by_mirror_move: Boolean
   
-  var affected_by_protect: Boolean = js.native
+  var affected_by_protect: Boolean
   
-  var affected_by_snatch: Boolean = js.native
+  var affected_by_snatch: Boolean
   
-  var category: String = js.native
+  var category: String
   
-  var contests: js.Array[MoveContest] = js.native
+  var contests: js.Array[MoveContest]
   
-  var critical_hit: Double = js.native
+  var critical_hit: Double
   
-  var in_battle_properties: js.UndefOr[Increasedcriticalhitratio] = js.native
+  var in_battle_properties: js.UndefOr[Increasedcriticalhitratio] = js.undefined
   
-  var index_number: Double = js.native
+  var index_number: Double
   
-  var makes_contact: Boolean = js.native
+  var makes_contact: Boolean
   
-  var max_pp: Double = js.native
+  var max_pp: Double
   
-  var names: Translations = js.native
+  var names: Translations
   
-  var pokedex_entries: StringDictionary[Translations] = js.native
+  var pokedex_entries: StringDictionary[Translations]
   
-  var power: Double = js.native
+  var power: Double
   
-  var pp: Double = js.native
+  var pp: Double
   
-  var priority: Double = js.native
+  var priority: Double
   
-  var stat_modifiers: js.UndefOr[js.Array[MoveStatModifier]] = js.native
+  var stat_modifiers: js.UndefOr[js.Array[MoveStatModifier]] = js.undefined
   
-  var target: String = js.native
+  var target: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Move {
   

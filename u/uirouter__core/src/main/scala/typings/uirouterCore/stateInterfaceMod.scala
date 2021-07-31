@@ -13,37 +13,35 @@ import typings.uirouterCore.transitionTransitionMod.Transition
 import typings.uirouterCore.viewInterfaceMod.ViewContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateInterfaceMod {
   
-  @js.native
   trait HrefOptions extends StObject {
     
     /**
       * If true will generate an absolute url, e.g. `http://www.example.com/fullurl`.
       */
-    var absolute: js.UndefOr[Boolean] = js.native
+    var absolute: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` will inherit parameters from the current parameter values.
       */
-    var inherit: js.UndefOr[Boolean] = js.native
+    var inherit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, and if there is no url associated with the state provided in the
       *    first parameter, then the constructed href url will be built from the first
       *    ancestor which has a url.
       */
-    var lossy: js.UndefOr[Boolean] = js.native
+    var lossy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines what state to be "relative from"
       *
       * When a relative path is found (e.g `^` or `.bar`), defines which state to be relative from.
       */
-    var relative: js.UndefOr[StateOrName] = js.native
+    var relative: js.UndefOr[StateOrName] = js.undefined
   }
   object HrefOptions {
     
@@ -82,10 +80,9 @@ object stateInterfaceMod {
     }
   }
   
-  @js.native
   trait LazyLoadResult extends StObject {
     
-    var states: js.UndefOr[js.Array[StateDeclaration]] = js.native
+    var states: js.UndefOr[js.Array[StateDeclaration]] = js.undefined
   }
   object LazyLoadResult {
     
@@ -124,9 +121,9 @@ object stateInterfaceMod {
   */
   trait ResolveTypes extends StObject
   
-  @js.native
   trait StateDeclaration
-    extends _StateDeclaration
+    extends StObject
+       with _StateDeclaration
        with _StateOrName {
     
     /**
@@ -138,7 +135,7 @@ object stateInterfaceMod {
       * @internal
       */
     @JSName("$$state")
-    var DollarDollarstate: js.UndefOr[js.Function0[StateObject]] = js.native
+    var DollarDollarstate: js.UndefOr[js.Function0[StateObject]] = js.undefined
     
     /**
       * Abstract state indicator
@@ -146,7 +143,7 @@ object stateInterfaceMod {
       * An abstract state can never be directly activated.
       * Use an abstract state to provide inherited properties (url, resolve, data, etc) to children states.
       */
-    var `abstract`: js.UndefOr[Boolean] = js.native
+    var `abstract`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An inherited property to store state data
@@ -160,7 +157,7 @@ object stateInterfaceMod {
       * Care should be taken if you are using `hasOwnProperty` on the `data` object.
       * Properties from parent objects will return false for `hasOwnProperty`.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Marks all the state's parameters as `dynamic`.
@@ -170,7 +167,7 @@ object stateInterfaceMod {
       *
       * Note: this value overrides the `dynamic` value on a custom parameter type ([[ParamTypeDefinition.dynamic]]).
       */
-    var dynamic: js.UndefOr[Boolean] = js.native
+    var dynamic: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function used to lazy load code
@@ -296,7 +293,7 @@ object stateInterfaceMod {
       */
     var lazyLoad: js.UndefOr[
         js.Function2[/* transition */ Transition, /* state */ this.type, js.Promise[LazyLoadResult]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The state name (required)
@@ -307,7 +304,7 @@ object stateInterfaceMod {
       * Note: [State] objects require unique names.
       * The name is used like an id.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * A Transition Hook called with the state is being entered.  See: [[IHookRegistry.onEnter]]
@@ -330,7 +327,7 @@ object stateInterfaceMod {
       * });
       * ```
       */
-    var onEnter: js.UndefOr[TransitionStateHookFn] = js.native
+    var onEnter: js.UndefOr[TransitionStateHookFn] = js.undefined
     
     /**
       * A Transition Hook called with the state is being exited. See: [[IHookRegistry.onExit]]
@@ -353,7 +350,7 @@ object stateInterfaceMod {
       * });
       * ```
       */
-    var onExit: js.UndefOr[TransitionStateHookFn] = js.native
+    var onExit: js.UndefOr[TransitionStateHookFn] = js.undefined
     
     /**
       * A [[TransitionStateHookFn]] called with the state is being retained/kept. See: [[IHookRegistry.onRetain]]
@@ -376,7 +373,7 @@ object stateInterfaceMod {
       * });
       * ```
       */
-    var onRetain: js.UndefOr[TransitionStateHookFn] = js.native
+    var onRetain: js.UndefOr[TransitionStateHookFn] = js.undefined
     
     /**
       * Params configuration
@@ -398,7 +395,7 @@ object stateInterfaceMod {
       * }
       * ```
       */
-    var params: js.UndefOr[StringDictionary[ParamDeclaration | js.Any]] = js.native
+    var params: js.UndefOr[StringDictionary[ParamDeclaration | js.Any]] = js.undefined
     
     /**
       * The parent state
@@ -424,7 +421,7 @@ object stateInterfaceMod {
       * }
       * ```
       */
-    var parent: js.UndefOr[String | StateDeclaration] = js.native
+    var parent: js.UndefOr[String | StateDeclaration] = js.undefined
     
     /**
       * Synchronously or asynchronously redirects Transitions to a different state/params
@@ -493,14 +490,14 @@ object stateInterfaceMod {
       */
     var redirectTo: js.UndefOr[
         RedirectToResult | (js.Function1[/* transition */ Transition, js.Promise[RedirectToResult] | RedirectToResult])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Marks all query parameters as [[ParamDeclaration.dynamic]]
       *
       * @deprecated use either [[dynamic]] or [[ParamDeclaration.dynamic]]
       */
-    var reloadOnSearch: js.UndefOr[Boolean] = js.native
+    var reloadOnSearch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Resolve - a mechanism to asynchronously fetch data, participating in the Transition lifecycle
@@ -622,7 +619,7 @@ object stateInterfaceMod {
       * }
       * ```
       */
-    var resolve: js.UndefOr[js.Array[ResolveTypes] | StringDictionary[IInjectable]] = js.native
+    var resolve: js.UndefOr[js.Array[ResolveTypes] | StringDictionary[IInjectable]] = js.undefined
     
     /**
       * Sets the resolve policy defaults for all resolves on this state
@@ -636,7 +633,7 @@ object stateInterfaceMod {
       *
       * See [[ResolvePolicy]] for more details.
       */
-    var resolvePolicy: js.UndefOr[ResolvePolicy] = js.native
+    var resolvePolicy: js.UndefOr[ResolvePolicy] = js.undefined
     
     /**
       * The url fragment for the state
@@ -666,7 +663,7 @@ object stateInterfaceMod {
       * url: "/messages/:mailboxid?{before:date}&{after:date}"
       * ```
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /**
       * Named views
@@ -713,7 +710,7 @@ object stateInterfaceMod {
       * }
       * ```
       */
-    var views: js.UndefOr[StringDictionary[ViewDeclaration]] = js.native
+    var views: js.UndefOr[StringDictionary[ViewDeclaration]] = js.undefined
   }
   object StateDeclaration {
     
@@ -845,14 +842,13 @@ object stateInterfaceMod {
   */
   type StateOrName = _StateOrName | String
   
-  @js.native
   trait TargetStateDef extends StObject {
     
-    var options: js.UndefOr[TransitionOptions] = js.native
+    var options: js.UndefOr[TransitionOptions] = js.undefined
     
-    var params: js.UndefOr[RawParams] = js.native
+    var params: js.UndefOr[RawParams] = js.undefined
     
-    var state: StateOrName = js.native
+    var state: StateOrName
   }
   object TargetStateDef {
     
@@ -889,20 +885,19 @@ object stateInterfaceMod {
     var transition: Transition = js.native
   }
   
-  @js.native
   trait ViewDeclaration extends StObject {
     
     /**
       * The context that this view is declared within.
       */
     @JSName("$context")
-    var $context: js.UndefOr[ViewContext] = js.native
+    var $context: js.UndefOr[ViewContext] = js.undefined
     
     /**
       * The raw name for the view declaration, i.e., the [[StateDeclaration.views]] property name.
       */
     @JSName("$name")
-    var $name: js.UndefOr[String] = js.native
+    var $name: js.UndefOr[String] = js.undefined
     
     /**
       * A type identifier for the View
@@ -911,7 +906,7 @@ object stateInterfaceMod {
       * may load differently (e.g., templateProvider+controllerProvider vs component class)
       */
     @JSName("$type")
-    var $type: js.UndefOr[String] = js.native
+    var $type: js.UndefOr[String] = js.undefined
     
     /**
       * The normalized context anchor (state name) for the `uiViewName`
@@ -919,7 +914,7 @@ object stateInterfaceMod {
       * When targeting a `ui-view`, the `uiViewName` address is anchored to a context name (state name).
       */
     @JSName("$uiViewContextAnchor")
-    var $uiViewContextAnchor: js.UndefOr[String] = js.native
+    var $uiViewContextAnchor: js.UndefOr[String] = js.undefined
     
     /**
       * The normalized address for the `ui-view` which this ViewConfig targets.
@@ -932,7 +927,7 @@ object stateInterfaceMod {
       * @example `foo.bar` or `foo.$default.bar`
       */
     @JSName("$uiViewName")
-    var $uiViewName: js.UndefOr[String] = js.native
+    var $uiViewName: js.UndefOr[String] = js.undefined
   }
   object ViewDeclaration {
     

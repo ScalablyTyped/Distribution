@@ -3,38 +3,36 @@ package typings.activexOffice.Office
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedWorkspaceLink extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val CreatedBy: String = js.native
+  val CreatedBy: String
   
-  val CreatedDate: VarDate = js.native
+  val CreatedDate: VarDate
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Description: String = js.native
+  var Description: String
   
-  val ModifiedBy: String = js.native
+  val ModifiedBy: String
   
-  val ModifiedDate: VarDate = js.native
+  val ModifiedDate: VarDate
   
-  var Notes: String = js.native
+  var Notes: String
   
   @JSName("Office.SharedWorkspaceLink_typekey")
-  var OfficeDotSharedWorkspaceLink_typekey: SharedWorkspaceLink = js.native
+  var OfficeDotSharedWorkspaceLink_typekey: SharedWorkspaceLink
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Save(): Unit = js.native
+  def Save(): Unit
   
-  var URL: String = js.native
+  var URL: String
 }
 object SharedWorkspaceLink {
   

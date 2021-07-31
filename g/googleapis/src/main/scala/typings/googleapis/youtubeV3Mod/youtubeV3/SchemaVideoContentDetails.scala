@@ -2,43 +2,41 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details about the content of a YouTube Video.
   */
-@js.native
 trait SchemaVideoContentDetails extends StObject {
   
   /**
     * The value of captions indicates whether the video has captions or not.
     */
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the ratings that the video received under various rating
     * schemes.
     */
-  var contentRating: js.UndefOr[SchemaContentRating] = js.native
+  var contentRating: js.UndefOr[SchemaContentRating] = js.undefined
   
   /**
     * The countryRestriction object contains information about the countries
     * where a video is (or is not) viewable.
     */
-  var countryRestriction: js.UndefOr[SchemaAccessPolicy] = js.native
+  var countryRestriction: js.UndefOr[SchemaAccessPolicy] = js.undefined
   
   /**
     * The value of definition indicates whether the video is available in high
     * definition or only in standard definition.
     */
-  var definition: js.UndefOr[String] = js.native
+  var definition: js.UndefOr[String] = js.undefined
   
   /**
     * The value of dimension indicates whether the video is available in 3D or
     * in 2D.
     */
-  var dimension: js.UndefOr[String] = js.native
+  var dimension: js.UndefOr[String] = js.undefined
   
   /**
     * The length of the video. The tag value is an ISO 8601 duration in the
@@ -49,24 +47,24 @@ trait SchemaVideoContentDetails extends StObject {
     * video. For example, a value of PT15M51S indicates that the video is 15
     * minutes and 51 seconds long.
     */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the video uploader has provided a custom thumbnail
     * image for the video. This property is only visible to the video uploader.
     */
-  var hasCustomThumbnail: js.UndefOr[Boolean] = js.native
+  var hasCustomThumbnail: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value of is_license_content indicates whether the video is licensed
     * content.
     */
-  var licensedContent: js.UndefOr[Boolean] = js.native
+  var licensedContent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the projection format of the video.
     */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
   /**
     * The regionRestriction object contains information about the countries
@@ -74,7 +72,7 @@ trait SchemaVideoContentDetails extends StObject {
     * contentDetails.regionRestriction.allowed property or the
     * contentDetails.regionRestriction.blocked property.
     */
-  var regionRestriction: js.UndefOr[SchemaVideoContentDetailsRegionRestriction] = js.native
+  var regionRestriction: js.UndefOr[SchemaVideoContentDetailsRegionRestriction] = js.undefined
 }
 object SchemaVideoContentDetails {
   

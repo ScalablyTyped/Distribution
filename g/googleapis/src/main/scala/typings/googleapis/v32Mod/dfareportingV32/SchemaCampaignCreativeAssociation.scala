@@ -2,26 +2,24 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Identifies a creative which has been associated with a given campaign.
   */
-@js.native
 trait SchemaCampaignCreativeAssociation extends StObject {
   
   /**
     * ID of the creative associated with the campaign. This is a required
     * field.
     */
-  var creativeId: js.UndefOr[String] = js.native
+  var creativeId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#campaignCreativeAssociation&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaCampaignCreativeAssociation {
   

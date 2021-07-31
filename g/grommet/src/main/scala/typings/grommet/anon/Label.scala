@@ -7,25 +7,23 @@ import typings.grommet.utilsMod.ColorType
 import typings.grommet.utilsMod.ThicknessType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Label extends StObject {
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var onHover: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var onHover: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var opacity: js.UndefOr[weak | medium | strong | Boolean | Double] = js.native
+  var opacity: js.UndefOr[weak | medium | strong | Boolean | Double] = js.undefined
   
-  var thickness: js.UndefOr[ThicknessType] = js.native
+  var thickness: js.UndefOr[ThicknessType] = js.undefined
   
-  var value: Double | js.Array[Double] = js.native
+  var value: Double | js.Array[Double]
 }
 object Label {
   
@@ -51,13 +49,13 @@ object Label {
     def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setOnClick(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def setOnHover(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
+    def setOnHover(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)

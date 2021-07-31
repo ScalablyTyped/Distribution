@@ -10,9 +10,9 @@ CSV parsing implementing the Node.js `stream.Transform` API
 | ------------------ | :-------------: |
 | Full name          | csv-parse |
 | Keywords           | csv, parse, parser, convert, tsv, stream |
-| # releases         | 44 |
-| # dependents       | 736 |
-| # downloads        | 47500848 |
+| # releases         | 40 |
+| # dependents       | 773 |
+| # downloads        | 55567957 |
 | # stars            | 32 |
 
 ## Links

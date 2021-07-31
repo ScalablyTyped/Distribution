@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1KnowledgeAnswers extends StObject {
   
   /** A list of answers from Knowledge Connector. */
-  var answers: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer]] = js.native
+  var answers: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer]] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1KnowledgeAnswers {
   

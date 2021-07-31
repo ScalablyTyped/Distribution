@@ -2,22 +2,20 @@ package typings.namedRoutes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<named-routes.named-routes.RouteOptions> */
-  @js.native
   trait PartialRouteOptions extends StObject {
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var recursiveWildcard: js.UndefOr[Boolean] = js.native
+    var recursiveWildcard: js.UndefOr[Boolean] = js.undefined
     
-    var wildcardInPairs: js.UndefOr[Boolean] = js.native
+    var wildcardInPairs: js.UndefOr[Boolean] = js.undefined
   }
   object PartialRouteOptions {
     
@@ -57,10 +55,9 @@ object anon {
   }
   
   /* Inlined std.Partial<named-routes.named-routes.RouterOptions> */
-  @js.native
   trait PartialRouterOptions extends StObject {
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
   }
   object PartialRouterOptions {
     

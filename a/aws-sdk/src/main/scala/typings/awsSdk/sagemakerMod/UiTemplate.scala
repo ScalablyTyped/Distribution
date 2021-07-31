@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UiTemplate extends StObject {
   
   /**
     * The content of the Liquid template for the worker user interface.
     */
-  var Content: TemplateContent = js.native
+  var Content: TemplateContent
 }
 object UiTemplate {
   

@@ -13,7 +13,6 @@ import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -74,10 +73,10 @@ object mod {
     
     def end(chunk: js.Any): Unit = js.native
     def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
-    def end(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: js.Any, encoding: String): Unit = js.native
     def end(chunk: js.Any, encoding: String, cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: js.Any, encoding: Null, cb: js.Function0[Unit]): Unit = js.native
+    def end(chunk: js.Any, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
     
     val flowing: Boolean = js.native
     
@@ -185,18 +184,17 @@ object mod {
     
     def write(chunk: js.Any): Boolean = js.native
     def write(chunk: js.Any, cb: js.Function0[Unit]): Boolean = js.native
-    def write(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Boolean = js.native
     def write(chunk: js.Any, encoding: String): Boolean = js.native
     def write(chunk: js.Any, encoding: String, cb: js.Function0[Unit]): Boolean = js.native
     def write(chunk: js.Any, encoding: Null, cb: js.Function0[Unit]): Boolean = js.native
+    def write(chunk: js.Any, encoding: Unit, cb: js.Function0[Unit]): Boolean = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -2,51 +2,49 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestCase extends StObject {
   
   /**
     *  The number of nanoseconds it took to run this test case. 
     */
-  var durationInNanoSeconds: js.UndefOr[WrapperLong] = js.native
+  var durationInNanoSeconds: js.UndefOr[WrapperLong] = js.undefined
   
   /**
     *  The date and time a test case expires. A test case expires 30 days after it is created. An expired test case is not available to view in CodeBuild. 
     */
-  var expired: js.UndefOr[Timestamp] = js.native
+  var expired: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  A message associated with a test case. For example, an error message or stack trace. 
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     *  The name of the test case. 
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *  A string that is applied to a series of related test cases. CodeBuild generates the prefix. The prefix depends on the framework used to generate the tests. 
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /**
     *  The ARN of the report to which the test case belongs. 
     */
-  var reportArn: js.UndefOr[NonEmptyString] = js.native
+  var reportArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     *  The status returned by the test case after it was run. Valid statuses are SUCCEEDED, FAILED, ERROR, SKIPPED, and UNKNOWN. 
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     *  The path to the raw data file that contains the test result. 
     */
-  var testRawDataPath: js.UndefOr[String] = js.native
+  var testRawDataPath: js.UndefOr[String] = js.undefined
 }
 object TestCase {
   

@@ -3,35 +3,33 @@ package typings.sketchapp
 import typings.sketchapp.anon.App
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSMeta extends StObject {
   
-  var app: String = js.native
+  var app: String
   
-  var appVersion: String = js.native
+  var appVersion: String
   
-  var autosaved: Double = js.native
+  var autosaved: Double
   
-  var build: Double = js.native
+  var build: Double
   
-  var commit: String = js.native
+  var commit: String
   
-  var compatibilityVersion: Double = js.native
+  var compatibilityVersion: Double
   
-  var created: App = js.native
+  var created: App
   
-  var fonts: js.Array[String] = js.native
+  var fonts: js.Array[String]
   
-  var pagesAndArtboards: SketchMSPagesAndArtboards = js.native
+  var pagesAndArtboards: SketchMSPagesAndArtboards
   
-  var saveHistory: js.Array[String] = js.native
+  var saveHistory: js.Array[String]
   
-  var variant: String = js.native
+  var variant: String
   
-  var version: Double = js.native
+  var version: Double
 }
 object SketchMSMeta {
   

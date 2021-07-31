@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityTypeInfos extends StObject {
   
   /**
     * If a NextPageToken was returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextPageToken. Keep all other arguments unchanged. The configured maximumPageSize determines how many results can be returned in a single call.
     */
-  var nextPageToken: js.UndefOr[PageToken] = js.native
+  var nextPageToken: js.UndefOr[PageToken] = js.undefined
   
   /**
     * List of activity type information.
     */
-  var typeInfos: ActivityTypeInfoList = js.native
+  var typeInfos: ActivityTypeInfoList
 }
 object ActivityTypeInfos {
   

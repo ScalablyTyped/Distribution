@@ -2,21 +2,19 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirewallPolicyMetadata extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the firewall policy.
     */
-  var Arn: js.UndefOr[ResourceArn] = js.native
+  var Arn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * The descriptive name of the firewall policy. You can't change the name of a firewall policy after you create it.
     */
-  var Name: js.UndefOr[ResourceName] = js.native
+  var Name: js.UndefOr[ResourceName] = js.undefined
 }
 object FirewallPolicyMetadata {
   

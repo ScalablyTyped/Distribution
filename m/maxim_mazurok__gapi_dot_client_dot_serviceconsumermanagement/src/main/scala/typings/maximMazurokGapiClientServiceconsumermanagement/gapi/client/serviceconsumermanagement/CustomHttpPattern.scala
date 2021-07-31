@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomHttpPattern extends StObject {
   
   /** The name of this custom HTTP verb. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The path matched by this custom verb. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object CustomHttpPattern {
   

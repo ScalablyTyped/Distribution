@@ -7,10 +7,8 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteOptionsValidate extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait RouteOptionsValidate extends StObject {
     * An optional object with error fields copied into every validation error response.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsvalidateerrorfields)
     */
-  var errorFields: js.UndefOr[js.Object] = js.native
+  var errorFields: js.UndefOr[js.Object] = js.undefined
   
   /**
     * @default 'error' (return a Bad Request (400) error response).
     * A failAction value which determines how to handle failed validations. When set to a function, the err argument includes the type of validation error under err.output.payload.validation.source.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsvalidatefailaction)
     */
-  var failAction: js.UndefOr[FailAction] = js.native
+  var failAction: js.UndefOr[FailAction] = js.undefined
   
   /**
     * Validation rules for incoming request headers:
@@ -34,7 +32,7 @@ trait RouteOptionsValidate extends StObject {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsvalidateheaders)
     * @default true
     */
-  var headers: js.UndefOr[RouteOptionsResponseSchema] = js.native
+  var headers: js.UndefOr[RouteOptionsResponseSchema] = js.undefined
   
   /**
     * An options object passed to the joi rules or the custom validation methods. Used for setting global options such as stripUnknown or abortEarly (the complete list is available here).
@@ -47,7 +45,7 @@ trait RouteOptionsValidate extends StObject {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsvalidateparams)
     * @default true
     */
-  var options: js.UndefOr[ValidationOptions | js.Object] = js.native
+  var options: js.UndefOr[ValidationOptions | js.Object] = js.undefined
   
   /**
     * Validation rules for incoming request path parameters, after matching the path against the route, extracting any parameters, and storing them in request.params, where:
@@ -61,7 +59,7 @@ trait RouteOptionsValidate extends StObject {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsvalidateparams)
     * @default true
     */
-  var params: js.UndefOr[RouteOptionsResponseSchema] = js.native
+  var params: js.UndefOr[RouteOptionsResponseSchema] = js.undefined
   
   /**
     * Validation rules for incoming request payload (request body), where:
@@ -71,7 +69,7 @@ trait RouteOptionsValidate extends StObject {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsvalidatepayload)
     * @default true
     */
-  var payload: js.UndefOr[RouteOptionsResponseSchema] = js.native
+  var payload: js.UndefOr[RouteOptionsResponseSchema] = js.undefined
   
   /**
     * Validation rules for incoming request URI query component (the key-value part of the URI between '?' and '#'). The query is parsed into its individual key-value pairs, decoded, and stored in
@@ -82,14 +80,14 @@ trait RouteOptionsValidate extends StObject {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsvalidatequery)
     * @default true
     */
-  var query: js.UndefOr[RouteOptionsResponseSchema] = js.native
+  var query: js.UndefOr[RouteOptionsResponseSchema] = js.undefined
   
   /**
     * Validation rules for incoming cookies.
     * The cookie header is parsed and decoded into the request.state prior to validation.
     * @default true
     */
-  var state: js.UndefOr[RouteOptionsResponseSchema] = js.native
+  var state: js.UndefOr[RouteOptionsResponseSchema] = js.undefined
 }
 object RouteOptionsValidate {
   

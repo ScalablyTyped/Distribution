@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha2", "healthcare_v1alpha2.Resource$Projects$Locations$Datasets$Annotationstores")
@@ -34,7 +33,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends StO
     */
   def create(): GaxiosPromise[SchemaAnnotationStore] = js.native
   def create(callback: BodyResponseCallback[SchemaAnnotationStore]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnotationStore] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnotationStore] = js.native
   def create(params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresCreate): GaxiosPromise[SchemaAnnotationStore] = js.native
   def create(
     params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresCreate,
@@ -67,7 +66,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends StO
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresDelete,
@@ -100,7 +99,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends StO
     */
   def get(): GaxiosPromise[SchemaAnnotationStore] = js.native
   def get(callback: BodyResponseCallback[SchemaAnnotationStore]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnotationStore] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnotationStore] = js.native
   def get(params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresGet): GaxiosPromise[SchemaAnnotationStore] = js.native
   def get(
     params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresGet,
@@ -138,7 +137,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends StO
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresGetiampolicy,
@@ -177,7 +176,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends StO
     */
   def list(): GaxiosPromise[SchemaListAnnotationStoresResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAnnotationStoresResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAnnotationStoresResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListAnnotationStoresResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresList): GaxiosPromise[SchemaListAnnotationStoresResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresList,
@@ -211,7 +210,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends StO
     */
   def patch(): GaxiosPromise[SchemaAnnotationStore] = js.native
   def patch(callback: BodyResponseCallback[SchemaAnnotationStore]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnotationStore] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnotationStore] = js.native
   def patch(params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresPatch): GaxiosPromise[SchemaAnnotationStore] = js.native
   def patch(
     params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresPatch,
@@ -247,7 +246,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends StO
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresSetiampolicy,
@@ -287,7 +286,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstores protected () extends StO
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresTestiampermissions,

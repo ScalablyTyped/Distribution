@@ -2,23 +2,21 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGpscoordinatesMod {
   
-  @js.native
   trait GPSCoordinates extends StObject {
     
     /**
       * Latitude
       */
-    var Latitude: js.UndefOr[Double] = js.native
+    var Latitude: js.UndefOr[Double] = js.undefined
     
     /**
       * Longitude
       */
-    var Longitude: js.UndefOr[Double] = js.native
+    var Longitude: js.UndefOr[Double] = js.undefined
   }
   object GPSCoordinates {
     

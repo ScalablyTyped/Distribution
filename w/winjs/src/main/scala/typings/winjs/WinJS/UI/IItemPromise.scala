@@ -3,14 +3,15 @@ package typings.winjs.WinJS.UI
 import typings.winjs.WinJS.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a mechanism for retrieving IItem objects asynchronously.
   **/
 @js.native
-trait IItemPromise[T] extends IPromise[T] {
+trait IItemPromise[T]
+  extends StObject
+     with IPromise[T] {
   
   //#endregion Methods
   //#region Properties

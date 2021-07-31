@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,71 +22,117 @@ sealed trait ElementType extends StObject
 object ElementType extends StObject {
   
   @js.native
-  sealed trait BODY_SECTION extends ElementType
+  sealed trait BODY_SECTION
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait COMMENT_SECTION extends ElementType
+  sealed trait COMMENT_SECTION
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait DOCUMENT extends ElementType
+  sealed trait DOCUMENT
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait EQUATION extends ElementType
+  sealed trait EQUATION
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait EQUATION_FUNCTION extends ElementType
+  sealed trait EQUATION_FUNCTION
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait EQUATION_FUNCTION_ARGUMENT_SEPARATOR extends ElementType
+  sealed trait EQUATION_FUNCTION_ARGUMENT_SEPARATOR
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait EQUATION_SYMBOL extends ElementType
+  sealed trait EQUATION_SYMBOL
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait FOOTER_SECTION extends ElementType
+  sealed trait FOOTER_SECTION
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait FOOTNOTE extends ElementType
+  sealed trait FOOTNOTE
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait FOOTNOTE_SECTION extends ElementType
+  sealed trait FOOTNOTE_SECTION
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait HEADER_SECTION extends ElementType
+  sealed trait HEADER_SECTION
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait HORIZONTAL_RULE extends ElementType
+  sealed trait HORIZONTAL_RULE
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait INLINE_DRAWING extends ElementType
+  sealed trait INLINE_DRAWING
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait INLINE_IMAGE extends ElementType
+  sealed trait INLINE_IMAGE
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait LIST_ITEM extends ElementType
+  sealed trait LIST_ITEM
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait PAGE_BREAK extends ElementType
+  sealed trait PAGE_BREAK
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait PARAGRAPH extends ElementType
+  sealed trait PARAGRAPH
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait TABLE extends ElementType
+  sealed trait TABLE
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait TABLE_CELL extends ElementType
+  sealed trait TABLE_CELL
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait TABLE_OF_CONTENTS extends ElementType
+  sealed trait TABLE_OF_CONTENTS
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait TABLE_ROW extends ElementType
+  sealed trait TABLE_ROW
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait TEXT extends ElementType
+  sealed trait TEXT
+    extends StObject
+       with ElementType
   
   @js.native
-  sealed trait UNSUPPORTED extends ElementType
+  sealed trait UNSUPPORTED
+    extends StObject
+       with ElementType
 }

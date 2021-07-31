@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Networking.Proximity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains properties that are passed to an application with the ConnectionRequested event. */
-@js.native
 trait ConnectionRequestedEventArgs extends StObject {
   
   /** Gets the information for a peer that's requesting a connection. */
-  var peerInformation: PeerInformation = js.native
+  var peerInformation: PeerInformation
 }
 object ConnectionRequestedEventArgs {
   

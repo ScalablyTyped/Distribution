@@ -2,34 +2,32 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A link in a chain, with direction of flow.
   */
-@js.native
 trait IChainLink extends StObject {
   
   /**
     * The endpoints of the path, in absolute coords.
     */
-  var endPoints: js.Array[IPoint] = js.native
+  var endPoints: js.Array[IPoint]
   
   /**
     * Length of the path.
     */
-  var pathLength: Double = js.native
+  var pathLength: Double
   
   /**
     * Path flows forwards or reverse.
     */
-  var reversed: Boolean = js.native
+  var reversed: Boolean
   
   /**
     * Reference to the path.
     */
-  var walkedPath: IWalkPath = js.native
+  var walkedPath: IWalkPath
 }
 object IChainLink {
   

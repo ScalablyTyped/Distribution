@@ -4,7 +4,6 @@ import typings.antdMobile.anon.Corner
 import typings.antdMobile.badgeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile", "Badge")

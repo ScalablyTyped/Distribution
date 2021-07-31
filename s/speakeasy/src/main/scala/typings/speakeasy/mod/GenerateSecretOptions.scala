@@ -2,10 +2,8 @@ package typings.speakeasy.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateSecretOptions extends StObject {
   
   /**
@@ -14,29 +12,29 @@ trait GenerateSecretOptions extends StObject {
     * @deprecated use your own QR code implementation to prevent
     *   leaking of secret to a third party.
     */
-  var google_auth_qr: js.UndefOr[Boolean] = js.native
+  var google_auth_qr: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The provider or service with which the
     * secret key is associated, defaults to ''
     */
-  var issuer: js.UndefOr[String] = js.native
+  var issuer: js.UndefOr[String] = js.undefined
   
   /**
     * Length of the secret, defaults to 32
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * The name to use with Google Authenticator, deaults to 'SecretKey'
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to output a Google Authenticator-compatible otpauth:// URL
     * (only returns otpauth:// URL, no QR code), defaults to false
     */
-  var otpauth_url: js.UndefOr[Boolean] = js.native
+  var otpauth_url: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output QR code URLs for the token.
@@ -44,12 +42,12 @@ trait GenerateSecretOptions extends StObject {
     * @deprecated use your own QR code implementation to prevent
     *   leaking of secret to a third party.
     */
-  var qr_codes: js.UndefOr[Boolean] = js.native
+  var qr_codes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to include symbols, defaults to false
     */
-  var symbols: js.UndefOr[Boolean] = js.native
+  var symbols: js.UndefOr[Boolean] = js.undefined
 }
 object GenerateSecretOptions {
   

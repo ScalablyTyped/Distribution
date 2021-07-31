@@ -4,10 +4,13 @@ import typings.awsSdkPropertyProvider.memoizeMod.MemoizeOverload
 import typings.awsSdkTypes.utilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@aws-sdk/property-provider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/property-provider", "ProviderError")
   @js.native
@@ -17,13 +20,11 @@ object mod {
     def this(message: String, tryNextLink: Boolean) = this()
   }
   
-  @JSImport("@aws-sdk/property-provider", "chain")
-  @js.native
-  def chain[T](providers: Provider[T]*): Provider[T] = js.native
+  @scala.inline
+  def chain[T](providers: Provider[T]*): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(providers.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
   
-  @JSImport("@aws-sdk/property-provider", "fromStatic")
-  @js.native
-  def fromStatic[T](staticValue: T): Provider[T] = js.native
+  @scala.inline
+  def fromStatic[T](staticValue: T): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStatic")(staticValue.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
   
   @JSImport("@aws-sdk/property-provider", "memoize")
   @js.native

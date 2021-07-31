@@ -6,27 +6,25 @@ import typings.rascal.rascalStrings.nack
 import typings.rascal.rascalStrings.republish
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Recovery extends StObject {
   
-  var attempts: js.UndefOr[Double] = js.native
+  var attempts: js.UndefOr[Double] = js.undefined
   
-  var defer: js.UndefOr[Double] = js.native
+  var defer: js.UndefOr[Double] = js.undefined
   
-  var immediateNack: js.UndefOr[Boolean] = js.native
+  var immediateNack: js.UndefOr[Boolean] = js.undefined
   
-  var options: js.UndefOr[PublicationConfig] = js.native
+  var options: js.UndefOr[PublicationConfig] = js.undefined
   
-  var publication: js.UndefOr[String] = js.native
+  var publication: js.UndefOr[String] = js.undefined
   
-  var requeue: js.UndefOr[Boolean] = js.native
+  var requeue: js.UndefOr[Boolean] = js.undefined
   
-  var strategy: ack | nack | republish | forward = js.native
+  var strategy: ack | nack | republish | forward
   
-  var xDeathFix: js.UndefOr[Boolean] = js.native
+  var xDeathFix: js.UndefOr[Boolean] = js.undefined
 }
 object Recovery {
   

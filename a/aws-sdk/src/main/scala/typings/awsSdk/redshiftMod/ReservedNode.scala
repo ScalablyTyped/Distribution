@@ -2,76 +2,74 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservedNode extends StObject {
   
   /**
     * The currency code for the reserved cluster.
     */
-  var CurrencyCode: js.UndefOr[String] = js.native
+  var CurrencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * The duration of the node reservation in seconds.
     */
-  var Duration: js.UndefOr[Integer] = js.native
+  var Duration: js.UndefOr[Integer] = js.undefined
   
   /**
     * The fixed cost Amazon Redshift charges you for this reserved node.
     */
-  var FixedPrice: js.UndefOr[Double] = js.native
+  var FixedPrice: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of reserved compute nodes.
     */
-  var NodeCount: js.UndefOr[Integer] = js.native
+  var NodeCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The node type of the reserved node.
     */
-  var NodeType: js.UndefOr[String] = js.native
+  var NodeType: js.UndefOr[String] = js.undefined
   
   /**
     * The anticipated utilization of the reserved node, as defined in the reserved node offering.
     */
-  var OfferingType: js.UndefOr[String] = js.native
+  var OfferingType: js.UndefOr[String] = js.undefined
   
   /**
     * The recurring charges for the reserved node.
     */
-  var RecurringCharges: js.UndefOr[RecurringChargeList] = js.native
+  var RecurringCharges: js.UndefOr[RecurringChargeList] = js.undefined
   
   /**
     * The unique identifier for the reservation.
     */
-  var ReservedNodeId: js.UndefOr[String] = js.native
+  var ReservedNodeId: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the reserved node offering.
     */
-  var ReservedNodeOfferingId: js.UndefOr[String] = js.native
+  var ReservedNodeOfferingId: js.UndefOr[String] = js.undefined
   
   /**
     * 
     */
-  var ReservedNodeOfferingType: js.UndefOr[typings.awsSdk.redshiftMod.ReservedNodeOfferingType] = js.native
+  var ReservedNodeOfferingType: js.UndefOr[typings.awsSdk.redshiftMod.ReservedNodeOfferingType] = js.undefined
   
   /**
     * The time the reservation started. You purchase a reserved node offering for a duration. This is the start time of that duration.
     */
-  var StartTime: js.UndefOr[TStamp] = js.native
+  var StartTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The state of the reserved compute node. Possible Values:   pending-payment-This reserved node has recently been purchased, and the sale has been approved, but payment has not yet been confirmed.   active-This reserved node is owned by the caller and is available for use.   payment-failed-Payment failed for the purchase attempt.   retired-The reserved node is no longer available.    exchanging-The owner is exchanging the reserved node for another reserved node.  
     */
-  var State: js.UndefOr[String] = js.native
+  var State: js.UndefOr[String] = js.undefined
   
   /**
     * The hourly rate Amazon Redshift charges you for this reserved node.
     */
-  var UsagePrice: js.UndefOr[Double] = js.native
+  var UsagePrice: js.UndefOr[Double] = js.undefined
 }
 object ReservedNode {
   

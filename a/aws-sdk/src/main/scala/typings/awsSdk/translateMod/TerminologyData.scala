@@ -2,21 +2,19 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminologyData extends StObject {
   
   /**
     * The file containing the custom terminology data. Your version of the AWS SDK performs a Base64-encoding on this field before sending a request to the AWS service. Users of the SDK should not perform Base64-encoding themselves.
     */
-  var File: TerminologyFile = js.native
+  var File: TerminologyFile
   
   /**
     * The data format of the custom terminology. Either CSV or TMX.
     */
-  var Format: TerminologyDataFormat = js.native
+  var Format: TerminologyDataFormat
 }
 object TerminologyData {
   

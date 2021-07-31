@@ -10,9 +10,9 @@ Allows you to build compile-time libraries
 | ------------------ | :-------------: |
 | Full name          | babel-plugin-macros |
 | Keywords           | babel-plugin, macros, macro, babel-macro, babel-plugin-macro, babel-macros, babel-plugin-macros |
-| # releases         | 14 |
-| # dependents       | 532 |
-| # downloads        | 215172466 |
+| # releases         | 12 |
+| # dependents       | 589 |
+| # downloads        | 251426552 |
 | # stars            | 4 |
 
 ## Links

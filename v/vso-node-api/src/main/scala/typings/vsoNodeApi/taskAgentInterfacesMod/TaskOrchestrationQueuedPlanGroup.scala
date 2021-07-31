@@ -2,23 +2,21 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskOrchestrationQueuedPlanGroup extends StObject {
   
-  var definition: TaskOrchestrationOwner = js.native
+  var definition: TaskOrchestrationOwner
   
-  var owner: TaskOrchestrationOwner = js.native
+  var owner: TaskOrchestrationOwner
   
-  var planGroup: String = js.native
+  var planGroup: String
   
-  var plans: js.Array[TaskOrchestrationQueuedPlan] = js.native
+  var plans: js.Array[TaskOrchestrationQueuedPlan]
   
-  var project: ProjectReference = js.native
+  var project: ProjectReference
   
-  var queuePosition: Double = js.native
+  var queuePosition: Double
 }
 object TaskOrchestrationQueuedPlanGroup {
   

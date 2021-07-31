@@ -2,21 +2,19 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaProductUnitPricingBaseMeasure extends StObject {
   
   /**
     * The unit of the denominator.
     */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
   /**
     * The denominator of the unit price.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaProductUnitPricingBaseMeasure {
   

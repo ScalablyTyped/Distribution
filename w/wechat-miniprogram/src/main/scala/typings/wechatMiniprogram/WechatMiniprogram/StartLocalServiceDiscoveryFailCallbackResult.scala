@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartLocalServiceDiscoveryFailCallbackResult extends StObject {
   
   /** 错误信息
@@ -13,7 +11,7 @@ trait StartLocalServiceDiscoveryFailCallbackResult extends StObject {
     * 可选值：
     * - 'invalid param': serviceType 为空;
     * - 'scan task already exist': 在当前 startLocalServiceDiscovery 发起的搜索未停止的情况下，再次调用 startLocalServiceDiscovery; */
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object StartLocalServiceDiscoveryFailCallbackResult {
   

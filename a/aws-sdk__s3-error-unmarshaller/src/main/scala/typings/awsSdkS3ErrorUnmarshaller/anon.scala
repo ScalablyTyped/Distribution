@@ -2,15 +2,13 @@ package typings.awsSdkS3ErrorUnmarshaller
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait RequestId extends StObject {
     
-    var requestId: String = js.native
+    var requestId: String
   }
   object RequestId {
     

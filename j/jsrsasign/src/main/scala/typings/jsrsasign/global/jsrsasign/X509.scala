@@ -5,14 +5,18 @@ import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typings.jsrsasign.jsrsasign.PublicKeyInfoPropOfCertPEMResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("jsrsasign.X509")
 @js.native
 class X509 ()
-  extends typings.jsrsasign.jsrsasign.X509
+  extends StObject
+     with typings.jsrsasign.jsrsasign.X509
 object X509 {
+  
+  @JSGlobal("jsrsasign.X509")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * get RSA/DSA/ECDSA public key object from X.509 certificate hexadecimal string
@@ -20,9 +24,8 @@ object X509 {
     * @return returns RSAKey/KJUR.crypto.{ECDSA,DSA} object of public key
     */
   /* static member */
-  @JSGlobal("jsrsasign.X509.getPublicKeyFromCertHex")
-  @js.native
-  def getPublicKeyFromCertHex(h: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  @scala.inline
+  def getPublicKeyFromCertHex(h: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFromCertHex")(h.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
   
   /**
     * get RSA/DSA/ECDSA public key object from PEM certificate string
@@ -32,9 +35,8 @@ object X509 {
     * NOTE: DSA is also supported since x509 1.1.2.
     */
   /* static member */
-  @JSGlobal("jsrsasign.X509.getPublicKeyFromCertPEM")
-  @js.native
-  def getPublicKeyFromCertPEM(sCertPEM: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
+  @scala.inline
+  def getPublicKeyFromCertPEM(sCertPEM: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFromCertPEM")(sCertPEM.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
   
   /**
     * get public key information from PEM certificate
@@ -50,9 +52,8 @@ object X509 {
     * NOTE: X509v1 certificate is also supported since x509.js 1.1.9.
     */
   /* static member */
-  @JSGlobal("jsrsasign.X509.getPublicKeyInfoPropOfCertPEM")
-  @js.native
-  def getPublicKeyInfoPropOfCertPEM(sCertPEM: String): PublicKeyInfoPropOfCertPEMResult = js.native
+  @scala.inline
+  def getPublicKeyInfoPropOfCertPEM(sCertPEM: String): PublicKeyInfoPropOfCertPEMResult = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyInfoPropOfCertPEM")(sCertPEM.asInstanceOf[js.Any]).asInstanceOf[PublicKeyInfoPropOfCertPEMResult]
   
   /**
     * get string from hexadecimal string of ASN.1 DER AttributeTypeAndValue
@@ -68,9 +69,8 @@ object X509 {
     * X509.hex2attrTypeValue("...3008060355040a0c0161...", 128) → O=a
     */
   /* static member */
-  @JSGlobal("jsrsasign.X509.hex2attrTypeValue")
-  @js.native
-  def hex2attrTypeValue(hex: String, idx: Double): String = js.native
+  @scala.inline
+  def hex2attrTypeValue(hex: String, idx: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hex2attrTypeValue")(hex.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * get distinguished name string in OpenSSL online format from hexadecimal string of ASN.1 DER X.500 name
@@ -85,9 +85,8 @@ object X509 {
     * X509.hex2dn("3031310b3...") → /C=US/O=a/CN=b2+OU=b1
     */
   /* static member */
-  @JSGlobal("jsrsasign.X509.hex2dn")
-  @js.native
-  def hex2dn(hex: String, idx: Double): String = js.native
+  @scala.inline
+  def hex2dn(hex: String, idx: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hex2dn")(hex.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * get relative distinguished name string in OpenSSL online format from hexadecimal string of ASN.1 DER RDN
@@ -104,9 +103,8 @@ object X509 {
     * X509.hex2rdn("31143008060355040a0c01613008060355040a0c0162") → O=a+O=b
     */
   /* static member */
-  @JSGlobal("jsrsasign.X509.hex2rdn")
-  @js.native
-  def hex2rdn(hex: String, idx: Double): String = js.native
+  @scala.inline
+  def hex2rdn(hex: String, idx: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hex2rdn")(hex.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
   @JSGlobal("jsrsasign.X509.version")

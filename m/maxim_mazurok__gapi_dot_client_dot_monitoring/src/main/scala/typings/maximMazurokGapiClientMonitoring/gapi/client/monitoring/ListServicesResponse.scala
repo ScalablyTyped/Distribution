@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListServicesResponse extends StObject {
   
   /**
     * If there are more results than have been returned, then this field is set to a non-empty value. To see the additional results, use that value as page_token in the next call to this
     * method.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The Services matching the specified filter. */
-  var services: js.UndefOr[js.Array[Service]] = js.native
+  var services: js.UndefOr[js.Array[Service]] = js.undefined
 }
 object ListServicesResponse {
   

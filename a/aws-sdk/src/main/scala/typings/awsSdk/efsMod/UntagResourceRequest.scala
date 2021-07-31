@@ -2,21 +2,19 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * Specifies the EFS resource that you want to remove tags from.
     */
-  var ResourceId: typings.awsSdk.efsMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.efsMod.ResourceId
   
   /**
     * The keys of the key:value tag pairs that you want to remove from the specified EFS resource.
     */
-  var TagKeys: typings.awsSdk.efsMod.TagKeys = js.native
+  var TagKeys: typings.awsSdk.efsMod.TagKeys
 }
 object UntagResourceRequest {
   

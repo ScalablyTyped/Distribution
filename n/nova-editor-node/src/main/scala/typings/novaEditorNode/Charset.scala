@@ -2,16 +2,14 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/charset/
-@js.native
 trait Charset extends StObject {
   
-  def concat(charsets: Charset*): Charset = js.native
+  def concat(charsets: Charset*): Charset
   
-  def intersect(charsets: Charset*): Charset = js.native
+  def intersect(charsets: Charset*): Charset
 }
 object Charset {
   

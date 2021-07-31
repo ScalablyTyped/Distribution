@@ -2,90 +2,88 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndOffset extends StObject {
   
   /** V1 error format. */
   @JSName("$.xgafv")
-  var $Dotxgafv: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
   
   /** OAuth access token. */
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** JSONP */
-  var callback: js.UndefOr[String] = js.native
+  var callback: js.UndefOr[String] = js.undefined
   
   /** The content version for the requested volume. */
-  var contentVersion: String = js.native
+  var contentVersion: String
   
   /** The end offset to end retrieving data from. */
-  var endOffset: js.UndefOr[String] = js.native
+  var endOffset: js.UndefOr[String] = js.undefined
   
   /** The end position to end retrieving data from. */
-  var endPosition: js.UndefOr[String] = js.native
+  var endPosition: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** The ID for the layer to get the annotations. */
-  var layerId: String = js.native
+  var layerId: String
   
   /** The locale information for the data. ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'. */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /** Maximum number of results to return */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /** The value of the nextToken from the previous page. */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Set to true to return deleted annotations. updatedMin must be in the request to use this. Defaults to false. */
-  var showDeleted: js.UndefOr[Boolean] = js.native
+  var showDeleted: js.UndefOr[Boolean] = js.undefined
   
   /** String to identify the originator of this request. */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /** The start offset to start retrieving data from. */
-  var startOffset: js.UndefOr[String] = js.native
+  var startOffset: js.UndefOr[String] = js.undefined
   
   /** The start position to start retrieving data from. */
-  var startPosition: js.UndefOr[String] = js.native
+  var startPosition: js.UndefOr[String] = js.undefined
   
   /** RFC 3339 timestamp to restrict to items updated prior to this timestamp (exclusive). */
-  var updatedMax: js.UndefOr[String] = js.native
+  var updatedMax: js.UndefOr[String] = js.undefined
   
   /** RFC 3339 timestamp to restrict to items updated since this timestamp (inclusive). */
-  var updatedMin: js.UndefOr[String] = js.native
+  var updatedMin: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-  var uploadType: js.UndefOr[String] = js.native
+  var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
-  var upload_protocol: js.UndefOr[String] = js.native
+  var upload_protocol: js.UndefOr[String] = js.undefined
   
   /** The version of the volume annotations that you are requesting. */
-  var volumeAnnotationsVersion: js.UndefOr[String] = js.native
+  var volumeAnnotationsVersion: js.UndefOr[String] = js.undefined
   
   /** The volume to retrieve annotations for. */
-  var volumeId: String = js.native
+  var volumeId: String
 }
 object EndOffset {
   

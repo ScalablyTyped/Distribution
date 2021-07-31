@@ -2,10 +2,8 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cube extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Cube extends StObject {
     *
     * @param value
     */
-  def caption(value: js.Object): String = js.native
+  def caption(value: js.Object): String
   
   /**
     * Returns the type of the cube which is a value from the $.ig.CubeType enumeration.
@@ -24,42 +22,42 @@ trait Cube extends StObject {
     *
     * @param value
     */
-  def cubeType(value: js.Object): Double = js.native
+  def cubeType(value: js.Object): Double
   
   /**
     * Returns a user-friendly description of the cube.
     *
     * @param value
     */
-  def description(value: js.Object): String = js.native
+  def description(value: js.Object): String
   
   /**
     * Returns the date and time on which the cube was last processed.
     *
     * @param value
     */
-  def lastProcessed(value: js.Object): js.Object = js.native
+  def lastProcessed(value: js.Object): js.Object
   
   /**
     * Returns the date and time on which the cube was last updated.
     *
     * @param value
     */
-  def lastUpdated(value: js.Object): js.Object = js.native
+  def lastUpdated(value: js.Object): js.Object
   
   /**
     * Returns the name of the cube.
     *
     * @param value
     */
-  def name(value: js.Object): String = js.native
+  def name(value: js.Object): String
   
   /**
     * Returns the unique name of the cube.
     *
     * @param value
     */
-  def uniqueName(value: js.Object): String = js.native
+  def uniqueName(value: js.Object): String
 }
 object Cube {
   

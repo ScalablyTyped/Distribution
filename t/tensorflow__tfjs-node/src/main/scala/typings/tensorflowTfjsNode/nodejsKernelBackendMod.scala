@@ -27,10 +27,13 @@ import typings.tensorflowTfjsNode.tfjsBindingMod.TFEOpAttr
 import typings.tensorflowTfjsNode.tfjsBindingMod.TFJSBinding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodejsKernelBackendMod {
+  
+  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "NodeJSKernelBackend")
   @js.native
@@ -47,40 +50,35 @@ object nodejsKernelBackendMod {
     def createReductionOpAttrs(tensor: TensorInfo, keepDims: Boolean): js.Array[TFEOpAttr] = js.native
     
     def createSummaryFileWriter(resourceHandle: Tensor[Rank], logdir: String): Unit = js.native
-    def createSummaryFileWriter(
-      resourceHandle: Tensor[Rank],
-      logdir: String,
-      maxQueue: js.UndefOr[scala.Nothing],
-      flushMillis: js.UndefOr[scala.Nothing],
-      filenameSuffix: String
-    ): Unit = js.native
-    def createSummaryFileWriter(
-      resourceHandle: Tensor[Rank],
-      logdir: String,
-      maxQueue: js.UndefOr[scala.Nothing],
-      flushMillis: Double
-    ): Unit = js.native
-    def createSummaryFileWriter(
-      resourceHandle: Tensor[Rank],
-      logdir: String,
-      maxQueue: js.UndefOr[scala.Nothing],
-      flushMillis: Double,
-      filenameSuffix: String
-    ): Unit = js.native
     def createSummaryFileWriter(resourceHandle: Tensor[Rank], logdir: String, maxQueue: Double): Unit = js.native
-    def createSummaryFileWriter(
-      resourceHandle: Tensor[Rank],
-      logdir: String,
-      maxQueue: Double,
-      flushMillis: js.UndefOr[scala.Nothing],
-      filenameSuffix: String
-    ): Unit = js.native
     def createSummaryFileWriter(resourceHandle: Tensor[Rank], logdir: String, maxQueue: Double, flushMillis: Double): Unit = js.native
     def createSummaryFileWriter(
       resourceHandle: Tensor[Rank],
       logdir: String,
       maxQueue: Double,
       flushMillis: Double,
+      filenameSuffix: String
+    ): Unit = js.native
+    def createSummaryFileWriter(
+      resourceHandle: Tensor[Rank],
+      logdir: String,
+      maxQueue: Double,
+      flushMillis: Unit,
+      filenameSuffix: String
+    ): Unit = js.native
+    def createSummaryFileWriter(resourceHandle: Tensor[Rank], logdir: String, maxQueue: Unit, flushMillis: Double): Unit = js.native
+    def createSummaryFileWriter(
+      resourceHandle: Tensor[Rank],
+      logdir: String,
+      maxQueue: Unit,
+      flushMillis: Double,
+      filenameSuffix: String
+    ): Unit = js.native
+    def createSummaryFileWriter(
+      resourceHandle: Tensor[Rank],
+      logdir: String,
+      maxQueue: Unit,
+      flushMillis: Unit,
       filenameSuffix: String
     ): Unit = js.native
     
@@ -259,7 +257,7 @@ object nodejsKernelBackendMod {
       boxes: Tensor2D,
       scores: Tensor1D,
       maxOutputSize: Double,
-      iouThreshold: js.UndefOr[scala.Nothing],
+      iouThreshold: Unit,
       scoreThreshold: Double
     ): Tensor1D = js.native
     
@@ -279,8 +277,8 @@ object nodejsKernelBackendMod {
     def topKValues[T /* <: Tensor[Rank] */](x: T, k: Double): Tensor1D = js.native
     
     def topk[T /* <: Tensor[Rank] */](x: T): js.Tuple2[T, T] = js.native
-    def topk[T /* <: Tensor[Rank] */](x: T, k: js.UndefOr[scala.Nothing], sorted: Boolean): js.Tuple2[T, T] = js.native
     def topk[T /* <: Tensor[Rank] */](x: T, k: Double): js.Tuple2[T, T] = js.native
+    def topk[T /* <: Tensor[Rank] */](x: T, k: Unit, sorted: Boolean): js.Tuple2[T, T] = js.native
     
     var typeAttributeFromTensor: js.Any = js.native
     
@@ -288,35 +286,26 @@ object nodejsKernelBackendMod {
     def writeScalarSummary(resourceHandle: Tensor[Rank], step: Double, name: String, value: Scalar): Unit = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "createOpAttr")
-  @js.native
-  def createOpAttr(attrName: String, tensorsOrDtype: js.Array[Tensor[Rank]], value: ScalarLike): TFEOpAttr = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "createOpAttr")
-  @js.native
-  def createOpAttr(attrName: String, tensorsOrDtype: Tensor[Rank], value: ScalarLike): TFEOpAttr = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "createOpAttr")
-  @js.native
-  def createOpAttr(attrName: String, tensorsOrDtype: DataType, value: ScalarLike): TFEOpAttr = js.native
+  @scala.inline
+  def createOpAttr(attrName: String, tensorsOrDtype: js.Array[Tensor[Rank]], value: ScalarLike): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
+  @scala.inline
+  def createOpAttr(attrName: String, tensorsOrDtype: Tensor[Rank], value: ScalarLike): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
+  @scala.inline
+  def createOpAttr(attrName: String, tensorsOrDtype: DataType, value: ScalarLike): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
   
-  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "createTensorsTypeOpAttr")
-  @js.native
-  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: js.Array[Tensor[Rank]]): TFEOpAttr = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "createTensorsTypeOpAttr")
-  @js.native
-  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: Tensor[Rank]): TFEOpAttr = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "createTensorsTypeOpAttr")
-  @js.native
-  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: DataType): TFEOpAttr = js.native
+  @scala.inline
+  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: js.Array[Tensor[Rank]]): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createTensorsTypeOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
+  @scala.inline
+  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: Tensor[Rank]): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createTensorsTypeOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
+  @scala.inline
+  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: DataType): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createTensorsTypeOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
   
-  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "ensureTensorflowBackend")
-  @js.native
-  def ensureTensorflowBackend(): Unit = js.native
+  @scala.inline
+  def ensureTensorflowBackend(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureTensorflowBackend")().asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "getTFDType")
-  @js.native
-  def getTFDType(dataType: DataType): Double = js.native
+  @scala.inline
+  def getTFDType(dataType: DataType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTFDType")(dataType.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "nodeBackend")
-  @js.native
-  def nodeBackend(): NodeJSKernelBackend = js.native
+  @scala.inline
+  def nodeBackend(): NodeJSKernelBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeBackend")().asInstanceOf[NodeJSKernelBackend]
 }

@@ -3,19 +3,19 @@ package typings.pkcs11js.Pkcs11Js
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RsaOAEP extends IParams {
+trait RsaOAEP
+  extends StObject
+     with IParams {
   
-  var hashAlg: Double = js.native
+  var hashAlg: Double
   
-  var mgf: Double = js.native
+  var mgf: Double
   
-  var source: Double = js.native
+  var source: Double
   
-  var sourceData: js.UndefOr[Buffer] = js.native
+  var sourceData: js.UndefOr[Buffer] = js.undefined
 }
 object RsaOAEP {
   

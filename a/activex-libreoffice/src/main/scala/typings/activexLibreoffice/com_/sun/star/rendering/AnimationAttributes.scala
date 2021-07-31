@@ -3,17 +3,15 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 import typings.activexLibreoffice.com_.sun.star.geometry.RealSize2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This structure contains attributes needed to run an animation.
   * @since OOo 2.0
   */
-@js.native
 trait AnimationAttributes extends StObject {
   
-  var Duration: Double = js.native
+  var Duration: Double
   
   /**
     * Repeat mode of the animation sequence.
@@ -22,7 +20,7 @@ trait AnimationAttributes extends StObject {
     * .
     * @see AnimationRepeat.
     */
-  var RepeatMode: Double = js.native
+  var RepeatMode: Double
   
   /**
     * Size of the untransformed animation sequence.
@@ -30,7 +28,7 @@ trait AnimationAttributes extends StObject {
     * This value specifies the size of the animation when rendered with the identity view transform. This permits e.g. {@link XSprite} implementations to
     * cache rendered animation content in finite-sized bitmaps.
     */
-  var UntransformedSize: RealSize2D = js.native
+  var UntransformedSize: RealSize2D
 }
 object AnimationAttributes {
   

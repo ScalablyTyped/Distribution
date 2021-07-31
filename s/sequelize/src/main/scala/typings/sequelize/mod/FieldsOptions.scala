@@ -2,21 +2,19 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldsOptions extends StObject {
   
   /**
     * The fields to insert / update. Defaults to all fields
     */
-  var fields: js.UndefOr[js.Array[String]] = js.native
+  var fields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Run validations before the row is inserted
     */
-  var validate: js.UndefOr[Boolean] = js.native
+  var validate: js.UndefOr[Boolean] = js.undefined
 }
 object FieldsOptions {
   

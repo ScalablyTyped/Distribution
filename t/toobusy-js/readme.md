@@ -12,7 +12,7 @@ Don't fall over when your Node.JS server is too busy. Now without native depende
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 54 |
-| # downloads        | 873840 |
+| # downloads        | 944146 |
 | # stars            | 17 |
 
 ## Links

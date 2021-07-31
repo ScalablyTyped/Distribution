@@ -4,17 +4,15 @@ import typings.react.mod.Validator
 import typings.storybookAddonKnobs.knobStoreMod.KnobStoreKnob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnFieldClick extends StObject {
   
-  var knobs: Validator[js.Array[KnobStoreKnob]] = js.native
+  var knobs: Validator[js.Array[KnobStoreKnob]]
   
-  var onFieldChange: Validator[js.Function1[/* changedKnob */ KnobStoreKnob, Unit]] = js.native
+  var onFieldChange: Validator[js.Function1[/* changedKnob */ KnobStoreKnob, Unit]]
   
-  var onFieldClick: Validator[js.Function1[/* knob */ KnobStoreKnob, Unit]] = js.native
+  var onFieldClick: Validator[js.Function1[/* knob */ KnobStoreKnob, Unit]]
 }
 object OnFieldClick {
   

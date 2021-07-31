@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttendeeAvailability extends StObject {
   
   /**
     * The email address and type of attendee - whether it's a person or a resource, and whether required or optional if it's
     * a person.
     */
-  var attendee: js.UndefOr[NullableOption[AttendeeBase]] = js.native
+  var attendee: js.UndefOr[NullableOption[AttendeeBase]] = js.undefined
   
   /**
     * The availability status of the attendee. The possible values are: free, tentative, busy, oof, workingElsewhere,
     * unknown.
     */
-  var availability: js.UndefOr[NullableOption[FreeBusyStatus]] = js.native
+  var availability: js.UndefOr[NullableOption[FreeBusyStatus]] = js.undefined
 }
 object AttendeeAvailability {
   

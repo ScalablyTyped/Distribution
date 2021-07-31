@@ -7,7 +7,6 @@ import typings.plottable.interfacesMod.IRangeProjector
 import typings.plottable.xyPlotMod.XYPlot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rectanglePlotMod {

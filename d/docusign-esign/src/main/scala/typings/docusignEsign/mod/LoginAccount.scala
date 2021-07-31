@@ -2,37 +2,35 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoginAccount extends StObject {
   
   /**
     * The account ID associated with the envelope.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The GUID associated with the account ID.
     */
-  var accountIdGuid: js.UndefOr[String] = js.native
+  var accountIdGuid: js.UndefOr[String] = js.undefined
   
   /**
     * The URL that should be used for successive calls to this account. It includes the protocal (https), the DocuSign server where the account is located,
     * and the account number. Use this Url to make API calls against this account. Many of the API calls provide Uri's that are relative to this baseUrl.
     */
-  var baseUrl: js.UndefOr[String] = js.native
+  var baseUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The email address for the user.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * This value is true if this is the default account for the user, otherwise false is returned.
     */
-  var isDefault: js.UndefOr[String] = js.native
+  var isDefault: js.UndefOr[String] = js.undefined
   
   /**
     * A list of settings on the acccount that indicate what features are available.
@@ -41,7 +39,7 @@ trait LoginAccount extends StObject {
     js.Array[
       /* A name-value pair that describes an item and provides a value for the item. */ NameValue
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A list of user-level settings that indicate what user-specific features are available.
@@ -50,29 +48,29 @@ trait LoginAccount extends StObject {
     js.Array[
       /* A name-value pair that describes an item and provides a value for the item. */ NameValue
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The name associated with the account.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * An optional descirption of the site that hosts the account.
     */
-  var siteDescription: js.UndefOr[String] = js.native
+  var siteDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the user to access. Generally this is the ID of the current authenticated user, but if the authenticated user is an Administrator on the account,
     * `userId` can represent another user whom the Administrator is accessing.
     *
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of this user as defined by the account.
     */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
 }
 object LoginAccount {
   

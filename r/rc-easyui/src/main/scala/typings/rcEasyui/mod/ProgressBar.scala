@@ -4,7 +4,6 @@ import typings.rcEasyui.anon.ShowValue
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-easyui", "ProgressBar")
@@ -28,9 +27,12 @@ object ProgressBar {
     
     object locale {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "ProgressBar.contextTypes.locale")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.ProgressBar.contextTypes.locale
       @JSImport("rc-easyui", "ProgressBar.contextTypes.locale.isRequired")
@@ -40,9 +42,12 @@ object ProgressBar {
     
     object t {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "ProgressBar.contextTypes.t")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.ProgressBar.contextTypes.t
       @JSImport("rc-easyui", "ProgressBar.contextTypes.t.isRequired")
@@ -61,9 +66,12 @@ object ProgressBar {
     
     object barCls {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "ProgressBar.propTypes.barCls")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.ProgressBar.propTypes.barCls
       @JSImport("rc-easyui", "ProgressBar.propTypes.barCls.isRequired")
@@ -73,9 +81,12 @@ object ProgressBar {
     
     object barStyle {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "ProgressBar.propTypes.barStyle")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.ProgressBar.propTypes.barStyle
       @JSImport("rc-easyui", "ProgressBar.propTypes.barStyle.isRequired")
@@ -85,9 +96,12 @@ object ProgressBar {
     
     object className {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "ProgressBar.propTypes.className")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.ProgressBar.propTypes.className
       @JSImport("rc-easyui", "ProgressBar.propTypes.className.isRequired")
@@ -97,9 +111,12 @@ object ProgressBar {
     
     object showValue {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "ProgressBar.propTypes.showValue")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.ProgressBar.propTypes.showValue
       @JSImport("rc-easyui", "ProgressBar.propTypes.showValue.isRequired")
@@ -109,9 +126,12 @@ object ProgressBar {
     
     object style {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "ProgressBar.propTypes.style")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.ProgressBar.propTypes.style
       @JSImport("rc-easyui", "ProgressBar.propTypes.style.isRequired")
@@ -121,9 +141,12 @@ object ProgressBar {
     
     object value {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "ProgressBar.propTypes.value")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.ProgressBar.propTypes.value
       @JSImport("rc-easyui", "ProgressBar.propTypes.value.isRequired")

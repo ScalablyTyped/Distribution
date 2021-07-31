@@ -2,20 +2,18 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Where Complex nested query
   */
-@js.native
 trait WhereNested extends StObject {
   
   @JSName("$and")
-  var $and: js.Array[AnyWhereOptions | WhereLogic] = js.native
+  var $and: js.Array[AnyWhereOptions | WhereLogic]
   
   @JSName("$or")
-  var $or: js.Array[AnyWhereOptions | WhereLogic] = js.native
+  var $or: js.Array[AnyWhereOptions | WhereLogic]
 }
 object WhereNested {
   

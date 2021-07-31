@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait LineHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exten
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
     */
-  var lineHeight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var lineHeight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object LineHeightProps {
   
@@ -27,7 +25,7 @@ object LineHeightProps {
   }
   
   @scala.inline
-  implicit class LineHeightPropsMutableBuilder[Self <: LineHeightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (LineHeightProps[ThemeType, TVal])) extends AnyVal {
+  implicit class LineHeightPropsMutableBuilder[Self <: LineHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (LineHeightProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setLineHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])

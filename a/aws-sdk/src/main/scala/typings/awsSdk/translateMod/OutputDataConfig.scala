@@ -2,16 +2,14 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputDataConfig extends StObject {
   
   /**
     * The URI of the S3 folder that contains a translation job's output file. The folder must be in the same Region as the API endpoint that you are calling.
     */
-  var S3Uri: typings.awsSdk.translateMod.S3Uri = js.native
+  var S3Uri: typings.awsSdk.translateMod.S3Uri
 }
 object OutputDataConfig {
   

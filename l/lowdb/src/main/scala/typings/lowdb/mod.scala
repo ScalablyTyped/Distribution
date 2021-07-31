@@ -14,7 +14,6 @@ import typings.lowdb.lowdbStrings.`@@reference`
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -24,19 +23,20 @@ object mod extends Shortcut {
   val ^ : typings.lowdb.mod.lowdb = js.native
   
   @js.native
-  trait AdapterAsync[SchemaT] extends BaseAdapter[SchemaT] {
+  trait AdapterAsync[SchemaT]
+    extends StObject
+       with BaseAdapter[SchemaT] {
     
     def write(state: js.Object): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait AdapterOptions[SchemaT] extends StObject {
     
-    var defaultValue: js.UndefOr[SchemaT] = js.native
+    var defaultValue: js.UndefOr[SchemaT] = js.undefined
     
-    var deserialize: js.UndefOr[js.Function1[/* serializedData */ String, SchemaT]] = js.native
+    var deserialize: js.UndefOr[js.Function1[/* serializedData */ String, SchemaT]] = js.undefined
     
-    var serialize: js.UndefOr[js.Function1[/* data */ SchemaT, String]] = js.native
+    var serialize: js.UndefOr[js.Function1[/* data */ SchemaT, String]] = js.undefined
   }
   object AdapterOptions {
     
@@ -47,7 +47,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class AdapterOptionsMutableBuilder[Self <: AdapterOptions[_], SchemaT] (val x: Self with AdapterOptions[SchemaT]) extends AnyVal {
+    implicit class AdapterOptionsMutableBuilder[Self <: AdapterOptions[?], SchemaT] (val x: Self & AdapterOptions[SchemaT]) extends AnyVal {
       
       @scala.inline
       def setDefaultValue(value: SchemaT): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
@@ -70,14 +70,17 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait AdapterSync[SchemaT] extends BaseAdapter[SchemaT] {
+  trait AdapterSync[SchemaT]
+    extends StObject
+       with BaseAdapter[SchemaT] {
     
     def write(state: js.Object): Unit = js.native
   }
   
   @js.native
   trait BaseAdapter[SchemaT]
-    extends AdapterOptions[SchemaT]
+    extends StObject
+       with AdapterOptions[SchemaT]
        with Instantiable1[/* source */ String, BaseAdapter[js.Object]]
        with Instantiable2[/* source */ String, /* options */ AdapterOptions[js.Object], BaseAdapter[js.Object]] {
     
@@ -87,7 +90,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait FpReturnAsync[PathT] extends FpReturnBase[PathT] {
+  trait FpReturnAsync[PathT]
+    extends StObject
+       with FpReturnBase[PathT] {
     
     /**
       * @description Writes the change to the database, based on the callback's return value.
@@ -102,7 +107,7 @@ object mod extends Shortcut {
   @js.native
   trait FpReturnBase[PathT] extends StObject {
     
-    def apply(funcs: js.Array[js.Function1[/* a */ _, _]]): js.Any = js.native
+    def apply(funcs: js.Array[js.Function1[/* a */ js.Any, js.Any]]): js.Any = js.native
     /**
       * Execute a series of functions on the data at a given path.
       * Result of previous function is the input of the next one.
@@ -159,7 +164,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait FpReturnSync[PathT] extends FpReturnBase[PathT] {
+  trait FpReturnSync[PathT]
+    extends StObject
+       with FpReturnBase[PathT] {
     
     /**
       * @description Writes the change to the database, based on the callback's return value.
@@ -173,15 +180,16 @@ object mod extends Shortcut {
   
   @js.native
   trait LowdbAsync[SchemaT]
-    extends ObjectChain[SchemaT]
-       with LowdbBase[SchemaT] {
+    extends StObject
+       with LowdbBase[SchemaT]
+       with ObjectChain[SchemaT] {
     
     @JSName("_")
     def _underscore(): typings.lodash.mod.String = js.native
     @JSName("_")
     def _underscore(value: String): typings.lodash.mod.String = js.native
     @JSName("_")
-    def _underscore[T /* <: js.Object */](value: T): Object[T] = js.native
+    def _underscore[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T] = js.native
     @JSName("_")
     def _underscore[T](value: List[T]): Collection[T] = js.native
     @JSName("_")
@@ -189,9 +197,9 @@ object mod extends Shortcut {
     @JSName("_")
     def _underscore_T_Collection[T](): Collection[T] = js.native
     @JSName("_")
-    def _underscore_T_Function1AnyWildcard_Function[T /* <: js.Function1[/* args */ js.Any, _] */](value: T): Function[T] = js.native
-    @JSName("_")
     def _underscore_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+    @JSName("_")
+    def _underscore_T_Object_Object[T /* <: js.Object */](value: T): Object[T] = js.native
     @JSName("_")
     def _underscore_T_Primitive[T](value: T): Primitive[T] = js.native
     @JSName("_")
@@ -265,23 +273,22 @@ object mod extends Shortcut {
       * upperFirst, value, and words.
       **/
     @JSName("_")
-    def _underscore_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[_] with Function[_] with Object[_] with Primitive[_] with typings.lodash.mod.String = js.native
+    def _underscore_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[js.Any] & Function[js.Any] & Object[js.Any] & Primitive[js.Any] & typings.lodash.mod.String = js.native
     
     def read(): js.Promise[this.type] = js.native
     
     /**
       * @description Be careful: This function overwrites the whole database.
       */
-    def write[T](): T with js.Promise[T] = js.native
-    def write[T](returnValue: T): T with js.Promise[T] = js.native
+    def write[T](): T & js.Promise[T] = js.native
+    def write[T](returnValue: T): T & js.Promise[T] = js.native
   }
   
-  @js.native
   trait LowdbBase[SchemaT] extends StObject {
     
-    def getState(): SchemaT = js.native
+    def getState(): SchemaT
     
-    def setState(state: SchemaT): this.type = js.native
+    def setState(state: SchemaT): this.type
   }
   object LowdbBase {
     
@@ -292,7 +299,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class LowdbBaseMutableBuilder[Self <: LowdbBase[_], SchemaT] (val x: Self with LowdbBase[SchemaT]) extends AnyVal {
+    implicit class LowdbBaseMutableBuilder[Self <: LowdbBase[?], SchemaT] (val x: Self & LowdbBase[SchemaT]) extends AnyVal {
       
       @scala.inline
       def setGetState(value: () => SchemaT): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
@@ -303,7 +310,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait LowdbFpAsync[SchemaT] extends LowdbBase[SchemaT] {
+  trait LowdbFpAsync[SchemaT]
+    extends StObject
+       with LowdbBase[SchemaT] {
     
     /**
       * @description Returns a function that allows you to access/modify the database at a given path.
@@ -378,7 +387,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait LowdbFpSync[SchemaT] extends LowdbBase[SchemaT] {
+  trait LowdbFpSync[SchemaT]
+    extends StObject
+       with LowdbBase[SchemaT] {
     
     /**
       * @description Returns a function that allows you to access/modify the database at a given path.
@@ -454,15 +465,16 @@ object mod extends Shortcut {
   
   @js.native
   trait LowdbSync[SchemaT]
-    extends ObjectChain[SchemaT]
-       with LowdbBase[SchemaT] {
+    extends StObject
+       with LowdbBase[SchemaT]
+       with ObjectChain[SchemaT] {
     
     @JSName("_")
     def _underscore(): typings.lodash.mod.String = js.native
     @JSName("_")
     def _underscore(value: String): typings.lodash.mod.String = js.native
     @JSName("_")
-    def _underscore[T /* <: js.Object */](value: T): Object[T] = js.native
+    def _underscore[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T] = js.native
     @JSName("_")
     def _underscore[T](value: List[T]): Collection[T] = js.native
     @JSName("_")
@@ -470,9 +482,9 @@ object mod extends Shortcut {
     @JSName("_")
     def _underscore_T_Collection[T](): Collection[T] = js.native
     @JSName("_")
-    def _underscore_T_Function1AnyWildcard_Function[T /* <: js.Function1[/* args */ js.Any, _] */](value: T): Function[T] = js.native
-    @JSName("_")
     def _underscore_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+    @JSName("_")
+    def _underscore_T_Object_Object[T /* <: js.Object */](value: T): Object[T] = js.native
     @JSName("_")
     def _underscore_T_Primitive[T](value: T): Primitive[T] = js.native
     @JSName("_")
@@ -546,15 +558,15 @@ object mod extends Shortcut {
       * upperFirst, value, and words.
       **/
     @JSName("_")
-    def _underscore_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[_] with Function[_] with Object[_] with Primitive[_] with typings.lodash.mod.String = js.native
+    def _underscore_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[js.Any] & Function[js.Any] & Object[js.Any] & Primitive[js.Any] & typings.lodash.mod.String = js.native
     
     def read(): this.type = js.native
     
     /**
       * @description Be careful: This function overwrites the whole database.
       */
-    def write[T](): T with js.Promise[T] = js.native
-    def write[T](returnValue: T): T with js.Promise[T] = js.native
+    def write[T](): T & js.Promise[T] = js.native
+    def write[T](returnValue: T): T & js.Promise[T] = js.native
   }
   
   type ReferenceProperty = `@@reference`
@@ -567,102 +579,97 @@ object mod extends Shortcut {
   /* augmented module */
   object lodashAugmentingMod {
     
-    @js.native
     trait CollectionChain[T] extends StObject {
       
-      def write(): ArrayLike[T] with js.Promise[ArrayLike[T]] = js.native
+      def write(): ArrayLike[T] & js.Promise[ArrayLike[T]]
     }
     object CollectionChain {
       
       @scala.inline
-      def apply[T](write: () => ArrayLike[T] with js.Promise[ArrayLike[T]]): CollectionChain[T] = {
+      def apply[T](write: () => ArrayLike[T] & js.Promise[ArrayLike[T]]): CollectionChain[T] = {
         val __obj = js.Dynamic.literal(write = js.Any.fromFunction0(write))
         __obj.asInstanceOf[CollectionChain[T]]
       }
       
       @scala.inline
-      implicit class CollectionChainMutableBuilder[Self <: CollectionChain[_], T] (val x: Self with CollectionChain[T]) extends AnyVal {
+      implicit class CollectionChainMutableBuilder[Self <: CollectionChain[?], T] (val x: Self & CollectionChain[T]) extends AnyVal {
         
         @scala.inline
-        def setWrite(value: () => ArrayLike[T] with js.Promise[ArrayLike[T]]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
+        def setWrite(value: () => ArrayLike[T] & js.Promise[ArrayLike[T]]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
       }
     }
     
-    @js.native
     trait FunctionChain[T] extends StObject {
       
-      def write(): T with js.Promise[T] = js.native
+      def write(): T & js.Promise[T]
     }
     object FunctionChain {
       
       @scala.inline
-      def apply[T](write: () => T with js.Promise[T]): FunctionChain[T] = {
+      def apply[T](write: () => T & js.Promise[T]): FunctionChain[T] = {
         val __obj = js.Dynamic.literal(write = js.Any.fromFunction0(write))
         __obj.asInstanceOf[FunctionChain[T]]
       }
       
       @scala.inline
-      implicit class FunctionChainMutableBuilder[Self <: FunctionChain[_], T] (val x: Self with FunctionChain[T]) extends AnyVal {
+      implicit class FunctionChainMutableBuilder[Self <: FunctionChain[?], T] (val x: Self & FunctionChain[T]) extends AnyVal {
         
         @scala.inline
-        def setWrite(value: () => T with js.Promise[T]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
+        def setWrite(value: () => T & js.Promise[T]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
       }
     }
     
-    @js.native
     trait ObjectChain[T] extends StObject {
       
       /**
         * @description Be careful: This function overwrites the whole database.
         */
-      def write(): T with js.Promise[T] = js.native
+      def write(): T & js.Promise[T]
     }
     object ObjectChain {
       
       @scala.inline
-      def apply[T](write: () => T with js.Promise[T]): typings.lowdb.mod.lodashAugmentingMod.ObjectChain[T] = {
+      def apply[T](write: () => T & js.Promise[T]): typings.lowdb.mod.lodashAugmentingMod.ObjectChain[T] = {
         val __obj = js.Dynamic.literal(write = js.Any.fromFunction0(write))
         __obj.asInstanceOf[typings.lowdb.mod.lodashAugmentingMod.ObjectChain[T]]
       }
       
       @scala.inline
-      implicit class ObjectChainMutableBuilder[Self <: typings.lowdb.mod.lodashAugmentingMod.ObjectChain[_], T] (val x: Self with typings.lowdb.mod.lodashAugmentingMod.ObjectChain[T]) extends AnyVal {
+      implicit class ObjectChainMutableBuilder[Self <: typings.lowdb.mod.lodashAugmentingMod.ObjectChain[?], T] (val x: Self & typings.lowdb.mod.lodashAugmentingMod.ObjectChain[T]) extends AnyVal {
         
         @scala.inline
-        def setWrite(value: () => T with js.Promise[T]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
+        def setWrite(value: () => T & js.Promise[T]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
       }
     }
     
-    @js.native
     trait PrimitiveChain[T] extends StObject {
       
-      def write(): T with js.Promise[T] = js.native
+      def write(): T & js.Promise[T]
     }
     object PrimitiveChain {
       
       @scala.inline
-      def apply[T](write: () => T with js.Promise[T]): PrimitiveChain[T] = {
+      def apply[T](write: () => T & js.Promise[T]): PrimitiveChain[T] = {
         val __obj = js.Dynamic.literal(write = js.Any.fromFunction0(write))
         __obj.asInstanceOf[PrimitiveChain[T]]
       }
       
       @scala.inline
-      implicit class PrimitiveChainMutableBuilder[Self <: PrimitiveChain[_], T] (val x: Self with PrimitiveChain[T]) extends AnyVal {
+      implicit class PrimitiveChainMutableBuilder[Self <: PrimitiveChain[?], T] (val x: Self & PrimitiveChain[T]) extends AnyVal {
         
         @scala.inline
-        def setWrite(value: () => T with js.Promise[T]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
+        def setWrite(value: () => T & js.Promise[T]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
       }
     }
     
-    @js.native
     trait StringChain extends StObject {
       
-      def write(): String with js.Promise[String] = js.native
+      def write(): String & js.Promise[String]
     }
     object StringChain {
       
       @scala.inline
-      def apply(write: () => String with js.Promise[String]): StringChain = {
+      def apply(write: () => String & js.Promise[String]): StringChain = {
         val __obj = js.Dynamic.literal(write = js.Any.fromFunction0(write))
         __obj.asInstanceOf[StringChain]
       }
@@ -671,7 +678,7 @@ object mod extends Shortcut {
       implicit class StringChainMutableBuilder[Self <: StringChain] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setWrite(value: () => String with js.Promise[String]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
+        def setWrite(value: () => String & js.Promise[String]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
       }
     }
   }
@@ -679,7 +686,7 @@ object mod extends Shortcut {
   @js.native
   trait lowdb extends StObject {
     
-    def apply[AdapterT /* <: AdapterSync[_] */](adapter: AdapterT): LowdbSync[
+    def apply[AdapterT /* <: AdapterSync[js.Any] */](adapter: AdapterT): LowdbSync[
         /* import warning: importer.ImportType#apply Failed type conversion: AdapterT[lowdb.lowdb.ReferenceProperty] */ js.Any
       ] = js.native
   }
@@ -687,8 +694,10 @@ object mod extends Shortcut {
   @js.native
   trait lowdbFp extends StObject {
     
-    def apply[AdapterT /* <: AdapterSync[_] */](adapter: AdapterT): LowdbFpSync[
-        /* import warning: importer.ImportType#apply Failed type conversion: AdapterT[lowdb.lowdb.ReferenceProperty] */ js.Any
+    def apply[AdapterT /* <: AdapterAsync[js.Any] */](adapter: AdapterT): js.Promise[
+        LowdbFpAsync[
+          /* import warning: importer.ImportType#apply Failed type conversion: AdapterT[lowdb.lowdb.ReferenceProperty] */ js.Any
+        ]
       ] = js.native
   }
 }

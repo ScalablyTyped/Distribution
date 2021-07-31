@@ -48,37 +48,43 @@ import typings.vegaTypings.transformMod.AggregateOp
 import typings.vegaUtil.mod.LoggerInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logMod {
   
+  @JSImport("vega-lite/build/src/log", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("vega-lite/build/src/log", "LocalLogger")
   @js.native
-  class LocalLogger () extends LoggerInterface {
+  class LocalLogger ()
+    extends StObject
+       with LoggerInterface {
     
-    var debugs: js.Array[_] = js.native
+    var debugs: js.Array[js.Any] = js.native
     
-    var infos: js.Array[_] = js.native
+    var infos: js.Array[js.Any] = js.native
     
     var `private`: js.Any = js.native
     
-    var warns: js.Array[_] = js.native
+    var warns: js.Array[js.Any] = js.native
   }
   
-  @JSImport("vega-lite/build/src/log", "debug")
-  @js.native
-  def debug(args: js.Any*): Unit = js.native
+  @scala.inline
+  def debug(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("vega-lite/build/src/log", "error")
-  @js.native
-  def error(args: js.Any*): Unit = js.native
+  @scala.inline
+  def error(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("vega-lite/build/src/log", "info")
-  @js.native
-  def info(args: js.Any*): Unit = js.native
+  @scala.inline
+  def info(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object message {
+    
+    @JSImport("vega-lite/build/src/log", "message")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("vega-lite/build/src/log", "message.ADD_SAME_CHILD_TWICE")
     @js.native
@@ -148,338 +154,259 @@ object logMod {
     @js.native
     val SCALE_BINDINGS_CONTINUOUS: /* "Scale bindings are currently only supported for scales with unbinned, continuous domains." */ String = js.native
     
-    @JSImport("vega-lite/build/src/log", "message.cannotApplySizeToNonOrientedMark")
-    @js.native
-    def cannotApplySizeToNonOrientedMark(mark: Mark): String = js.native
+    @scala.inline
+    def cannotApplySizeToNonOrientedMark(mark: Mark): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotApplySizeToNonOrientedMark")(mark.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.cannotProjectAggregate")
-    @js.native
-    def cannotProjectAggregate(channel: Channel, aggregate: Aggregate): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.cannotProjectAggregate")
-    @js.native
-    def cannotProjectAggregate(channel: Channel, aggregate: HiddenCompositeAggregate): String = js.native
+    @scala.inline
+    def cannotProjectAggregate(channel: Channel, aggregate: Aggregate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cannotProjectAggregate")(channel.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def cannotProjectAggregate(channel: Channel, aggregate: HiddenCompositeAggregate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cannotProjectAggregate")(channel.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.cannotProjectOnChannelWithoutField")
-    @js.native
-    def cannotProjectOnChannelWithoutField(channel: Channel): String = js.native
+    @scala.inline
+    def cannotProjectOnChannelWithoutField(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotProjectOnChannelWithoutField")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.cannotStackNonLinearScale")
-    @js.native
-    def cannotStackNonLinearScale(scaleType: ScaleType): String = js.native
+    @scala.inline
+    def cannotStackNonLinearScale(scaleType: ScaleType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotStackNonLinearScale")(scaleType.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.cannotStackRangedMark")
-    @js.native
-    def cannotStackRangedMark(channel: Channel): String = js.native
+    @scala.inline
+    def cannotStackRangedMark(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotStackRangedMark")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.cannotUseScalePropertyWithNonColor")
-    @js.native
-    def cannotUseScalePropertyWithNonColor(prop: String): String = js.native
+    @scala.inline
+    def cannotUseScalePropertyWithNonColor(prop: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotUseScalePropertyWithNonColor")(prop.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.channelRequiredForBinned")
-    @js.native
-    def channelRequiredForBinned(channel: Channel): String = js.native
+    @scala.inline
+    def channelRequiredForBinned(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("channelRequiredForBinned")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.channelShouldNotBeUsedForBinned")
-    @js.native
-    def channelShouldNotBeUsedForBinned(channel: ExtendedChannel): String = js.native
+    @scala.inline
+    def channelShouldNotBeUsedForBinned(channel: ExtendedChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("channelShouldNotBeUsedForBinned")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.columnsNotSupportByRowCol")
-    @js.native
-    def columnsNotSupportByRowCol_facet(`type`: facet): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.columnsNotSupportByRowCol")
-    @js.native
-    def columnsNotSupportByRowCol_repeat(`type`: repeat): String = js.native
+    @scala.inline
+    def columnsNotSupportByRowCol_facet(`type`: facet): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnsNotSupportByRowCol")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.containerSizeNonSingle")
-    @js.native
-    def containerSizeNonSingle_height(name: height): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.containerSizeNonSingle")
-    @js.native
-    def containerSizeNonSingle_width(name: width): String = js.native
+    @scala.inline
+    def columnsNotSupportByRowCol_repeat(`type`: repeat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnsNotSupportByRowCol")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.containerSizeNotCompatibleWithAutosize")
-    @js.native
-    def containerSizeNotCompatibleWithAutosize_height(name: height): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.containerSizeNotCompatibleWithAutosize")
-    @js.native
-    def containerSizeNotCompatibleWithAutosize_width(name: width): String = js.native
+    @scala.inline
+    def containerSizeNonSingle_height(name: height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNonSingle")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.customFormatTypeNotAllowed")
-    @js.native
-    def customFormatTypeNotAllowed(channel: ExtendedChannel): String = js.native
+    @scala.inline
+    def containerSizeNonSingle_width(name: width): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNonSingle")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.differentParse")
-    @js.native
-    def differentParse(field: String, local: String, ancestor: String): String = js.native
+    @scala.inline
+    def containerSizeNotCompatibleWithAutosize_height(name: height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNotCompatibleWithAutosize")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.discreteChannelCannotEncode")
-    @js.native
-    def discreteChannelCannotEncode(channel: Channel, `type`: Type): String = js.native
+    @scala.inline
+    def containerSizeNotCompatibleWithAutosize_width(name: width): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNotCompatibleWithAutosize")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.domainRequiredForThresholdScale")
-    @js.native
-    def domainRequiredForThresholdScale(channel: ScaleChannel): String = js.native
+    @scala.inline
+    def customFormatTypeNotAllowed(channel: ExtendedChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("customFormatTypeNotAllowed")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.domainSortDropped")
-    @js.native
-    def domainSortDropped(sort: SortField): String = js.native
+    @scala.inline
+    def differentParse(field: String, local: String, ancestor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("differentParse")(field.asInstanceOf[js.Any], local.asInstanceOf[js.Any], ancestor.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.droppedDay")
-    @js.native
-    def droppedDay(d: DateTime): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.droppedDay")
-    @js.native
-    def droppedDay(d: DateTimeExpr): String = js.native
+    @scala.inline
+    def discreteChannelCannotEncode(channel: Channel, `type`: Type): String = (^.asInstanceOf[js.Dynamic].applyDynamic("discreteChannelCannotEncode")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.droppingColor")
-    @js.native
-    def droppingColor_encoding(`type`: encoding, opt: Fill): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.droppingColor")
-    @js.native
-    def droppingColor_property(`type`: property, opt: Fill): String = js.native
+    @scala.inline
+    def domainRequiredForThresholdScale(channel: ScaleChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("domainRequiredForThresholdScale")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.droppingFit")
-    @js.native
-    def droppingFit(): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.droppingFit")
-    @js.native
-    def droppingFit(channel: PositionScaleChannel): String = js.native
+    @scala.inline
+    def domainSortDropped(sort: SortField): String = ^.asInstanceOf[js.Dynamic].applyDynamic("domainSortDropped")(sort.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.emptyFieldDef")
-    @js.native
-    def emptyFieldDef(fieldDef: js.Any, channel: ExtendedChannel): String = js.native
+    @scala.inline
+    def droppedDay(d: DateTime): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppedDay")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def droppedDay(d: DateTimeExpr): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppedDay")(d.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.errorBand1DNotSupport")
-    @js.native
-    def errorBand1DNotSupport_interpolate(property: interpolate): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.errorBand1DNotSupport")
-    @js.native
-    def errorBand1DNotSupport_tension(property: tension): String = js.native
+    @scala.inline
+    def droppingColor_encoding(`type`: encoding, opt: Fill): String = (^.asInstanceOf[js.Dynamic].applyDynamic("droppingColor")(`type`.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.errorBarCenterAndExtentAreNotNeeded")
-    @js.native
-    def errorBarCenterAndExtentAreNotNeeded(center: ErrorBarCenter, extent: ErrorBarExtent): String = js.native
+    @scala.inline
+    def droppingColor_property(`type`: property, opt: Fill): String = (^.asInstanceOf[js.Dynamic].applyDynamic("droppingColor")(`type`.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.errorBarCenterIsUsedWithWrongExtent")
-    @js.native
-    def errorBarCenterIsUsedWithWrongExtent_errorband(center: ErrorBarCenter, extent: ErrorBarExtent, mark: errorband): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.errorBarCenterIsUsedWithWrongExtent")
-    @js.native
-    def errorBarCenterIsUsedWithWrongExtent_errorbar(center: ErrorBarCenter, extent: ErrorBarExtent, mark: errorbar): String = js.native
+    @scala.inline
+    def droppingFit(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppingFit")().asInstanceOf[String]
+    @scala.inline
+    def droppingFit(channel: PositionScaleChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppingFit")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.errorBarContinuousAxisHasCustomizedAggregate")
-    @js.native
-    def errorBarContinuousAxisHasCustomizedAggregate(aggregate: String, compositeMark: CompositeMark): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.errorBarContinuousAxisHasCustomizedAggregate")
-    @js.native
-    def errorBarContinuousAxisHasCustomizedAggregate(aggregate: Aggregate, compositeMark: CompositeMark): String = js.native
+    @scala.inline
+    def emptyFieldDef(fieldDef: js.Any, channel: ExtendedChannel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyFieldDef")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.facetChannelDropped")
-    @js.native
-    def facetChannelDropped(channels: js.Array[FacetChannel]): String = js.native
+    @scala.inline
+    def errorBand1DNotSupport_interpolate(property: interpolate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("errorBand1DNotSupport")(property.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.facetChannelShouldBeDiscrete")
-    @js.native
-    def facetChannelShouldBeDiscrete(channel: FacetChannel): String = js.native
+    @scala.inline
+    def errorBand1DNotSupport_tension(property: tension): String = ^.asInstanceOf[js.Dynamic].applyDynamic("errorBand1DNotSupport")(property.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.incompatibleChannel")
-    @js.native
-    def incompatibleChannel(channel: ExtendedChannel, markOrFacet: CompositeMark): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.incompatibleChannel")
-    @js.native
-    def incompatibleChannel(channel: ExtendedChannel, markOrFacet: CompositeMark, when: String): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.incompatibleChannel")
-    @js.native
-    def incompatibleChannel(channel: ExtendedChannel, markOrFacet: Mark): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.incompatibleChannel")
-    @js.native
-    def incompatibleChannel(channel: ExtendedChannel, markOrFacet: Mark, when: String): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.incompatibleChannel")
-    @js.native
-    def incompatibleChannel_facet(channel: ExtendedChannel, markOrFacet: facet): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.incompatibleChannel")
-    @js.native
-    def incompatibleChannel_facet(channel: ExtendedChannel, markOrFacet: facet, when: String): String = js.native
+    @scala.inline
+    def errorBarCenterAndExtentAreNotNeeded(center: ErrorBarCenter, extent: ErrorBarExtent): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarCenterAndExtentAreNotNeeded")(center.asInstanceOf[js.Any], extent.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.independentScaleMeansIndependentGuide")
-    @js.native
-    def independentScaleMeansIndependentGuide(channel: Channel): String = js.native
+    @scala.inline
+    def errorBarCenterIsUsedWithWrongExtent_errorband(center: ErrorBarCenter, extent: ErrorBarExtent, mark: errorband): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarCenterIsUsedWithWrongExtent")(center.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.invalidAggregate")
-    @js.native
-    def invalidAggregate(aggregate: String): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.invalidAggregate")
-    @js.native
-    def invalidAggregate(aggregate: AggregateOp): String = js.native
+    @scala.inline
+    def errorBarCenterIsUsedWithWrongExtent_errorbar(center: ErrorBarCenter, extent: ErrorBarExtent, mark: errorbar): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarCenterIsUsedWithWrongExtent")(center.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.invalidEncodingChannel")
-    @js.native
-    def invalidEncodingChannel(channel: ExtendedChannel): String = js.native
+    @scala.inline
+    def errorBarContinuousAxisHasCustomizedAggregate(aggregate: String, compositeMark: CompositeMark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarContinuousAxisHasCustomizedAggregate")(aggregate.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def errorBarContinuousAxisHasCustomizedAggregate(aggregate: Aggregate, compositeMark: CompositeMark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarContinuousAxisHasCustomizedAggregate")(aggregate.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.invalidFieldType")
-    @js.native
-    def invalidFieldType(`type`: Type): String = js.native
+    @scala.inline
+    def facetChannelDropped(channels: js.Array[FacetChannel]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("facetChannelDropped")(channels.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.invalidFieldTypeForCountAggregate")
-    @js.native
-    def invalidFieldTypeForCountAggregate(`type`: Type, aggregate: String): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.invalidFieldTypeForCountAggregate")
-    @js.native
-    def invalidFieldTypeForCountAggregate(`type`: Type, aggregate: Aggregate): String = js.native
+    @scala.inline
+    def facetChannelShouldBeDiscrete(channel: FacetChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("facetChannelShouldBeDiscrete")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.invalidSpec")
-    @js.native
-    def invalidSpec(spec: GenericSpec[_, _, _, _]): String = js.native
+    @scala.inline
+    def incompatibleChannel(channel: ExtendedChannel, markOrFacet: CompositeMark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def incompatibleChannel(channel: ExtendedChannel, markOrFacet: CompositeMark, when: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any], when.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def incompatibleChannel(channel: ExtendedChannel, markOrFacet: Mark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def incompatibleChannel(channel: ExtendedChannel, markOrFacet: Mark, when: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any], when.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.invalidTimeUnit")
-    @js.native
-    def invalidTimeUnit(unitName: String, value: String): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.invalidTimeUnit")
-    @js.native
-    def invalidTimeUnit(unitName: String, value: Double): String = js.native
+    @scala.inline
+    def incompatibleChannel_facet(channel: ExtendedChannel, markOrFacet: facet): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def incompatibleChannel_facet(channel: ExtendedChannel, markOrFacet: facet, when: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any], when.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.invalidTransformIgnored")
-    @js.native
-    def invalidTransformIgnored(transform: js.Any): String = js.native
+    @scala.inline
+    def independentScaleMeansIndependentGuide(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("independentScaleMeansIndependentGuide")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.latLongDeprecated")
-    @js.native
-    def latLongDeprecated(channel: Channel, `type`: Type, newChannel: GeoPositionChannel): String = js.native
+    @scala.inline
+    def invalidAggregate(aggregate: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidAggregate")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def invalidAggregate(aggregate: AggregateOp): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidAggregate")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.lineWithRange")
-    @js.native
-    def lineWithRange(hasX2: Boolean, hasY2: Boolean): String = js.native
+    @scala.inline
+    def invalidEncodingChannel(channel: ExtendedChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidEncodingChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.mergeConflictingDomainProperty")
-    @js.native
-    def mergeConflictingDomainProperty_domains[T](property: domains, propertyOf: SplitParentProperty, v1: T, v2: T): String = js.native
+    @scala.inline
+    def invalidFieldType(`type`: Type): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidFieldType")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.mergeConflictingProperty")
-    @js.native
-    def mergeConflictingProperty[T](property: String, propertyOf: SplitParentProperty, v1: T, v2: T): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.mergeConflictingProperty")
-    @js.native
-    def mergeConflictingProperty[T](property: js.Symbol, propertyOf: SplitParentProperty, v1: T, v2: T): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.mergeConflictingProperty")
-    @js.native
-    def mergeConflictingProperty[T](property: Double, propertyOf: SplitParentProperty, v1: T, v2: T): String = js.native
+    @scala.inline
+    def invalidFieldTypeForCountAggregate(`type`: Type, aggregate: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidFieldTypeForCountAggregate")(`type`.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def invalidFieldTypeForCountAggregate(`type`: Type, aggregate: Aggregate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidFieldTypeForCountAggregate")(`type`.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.missingFieldType")
-    @js.native
-    def missingFieldType(channel: Channel, newType: Type): String = js.native
+    @scala.inline
+    def invalidSpec(spec: GenericSpec[js.Any, js.Any, js.Any, js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.nearestNotSupportForContinuous")
-    @js.native
-    def nearestNotSupportForContinuous(mark: String): String = js.native
+    @scala.inline
+    def invalidTimeUnit(unitName: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidTimeUnit")(unitName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def invalidTimeUnit(unitName: String, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidTimeUnit")(unitName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.noSameUnitLookup")
-    @js.native
-    def noSameUnitLookup(name: String): String = js.native
+    @scala.inline
+    def invalidTransformIgnored(transform: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidTransformIgnored")(transform.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.noSuchRepeatedValue")
-    @js.native
-    def noSuchRepeatedValue(field: String): String = js.native
+    @scala.inline
+    def latLongDeprecated(channel: Channel, `type`: Type, newChannel: GeoPositionChannel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("latLongDeprecated")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], newChannel.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.orientOverridden")
-    @js.native
-    def orientOverridden(original: String, actual: String): String = js.native
+    @scala.inline
+    def lineWithRange(hasX2: Boolean, hasY2: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lineWithRange")(hasX2.asInstanceOf[js.Any], hasY2.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.primitiveChannelDef")
-    @js.native
-    def primitiveChannelDef_boolean(channel: ExtendedChannel, `type`: boolean, value: Exclude[Value[ExprRef | SignalRef], Null]): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.primitiveChannelDef")
-    @js.native
-    def primitiveChannelDef_number(channel: ExtendedChannel, `type`: number, value: Exclude[Value[ExprRef | SignalRef], Null]): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.primitiveChannelDef")
-    @js.native
-    def primitiveChannelDef_string(channel: ExtendedChannel, `type`: string, value: Exclude[Value[ExprRef | SignalRef], Null]): String = js.native
+    @scala.inline
+    def mergeConflictingDomainProperty_domains[T](property: domains, propertyOf: SplitParentProperty, v1: T, v2: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeConflictingDomainProperty")(property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.projectionOverridden")
-    @js.native
-    def projectionOverridden(opt: ParentProjection): String = js.native
+    @scala.inline
+    def mergeConflictingProperty[T](property: String, propertyOf: SplitParentProperty, v1: T, v2: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeConflictingProperty")(property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def mergeConflictingProperty[T](property: js.Symbol, propertyOf: SplitParentProperty, v1: T, v2: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeConflictingProperty")(property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def mergeConflictingProperty[T](property: Double, propertyOf: SplitParentProperty, v1: T, v2: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeConflictingProperty")(property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.rangeMarkAlignmentCannotBeExpression")
-    @js.native
-    def rangeMarkAlignmentCannotBeExpression_align(align: align): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.rangeMarkAlignmentCannotBeExpression")
-    @js.native
-    def rangeMarkAlignmentCannotBeExpression_baseline(align: baseline): String = js.native
+    @scala.inline
+    def missingFieldType(channel: Channel, newType: Type): String = (^.asInstanceOf[js.Dynamic].applyDynamic("missingFieldType")(channel.asInstanceOf[js.Any], newType.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.scalePropertyNotWorkWithScaleType")
-    @js.native
-    def scalePropertyNotWorkWithScaleType(scaleType: ScaleType, propName: String, channel: Channel): String = js.native
+    @scala.inline
+    def nearestNotSupportForContinuous(mark: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nearestNotSupportForContinuous")(mark.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.scaleTypeNotWorkWithChannel")
-    @js.native
-    def scaleTypeNotWorkWithChannel(channel: Channel, scaleType: ScaleType, defaultScaleType: ScaleType): String = js.native
+    @scala.inline
+    def noSameUnitLookup(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("noSameUnitLookup")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.scaleTypeNotWorkWithFieldDef")
-    @js.native
-    def scaleTypeNotWorkWithFieldDef(scaleType: ScaleType, defaultScaleType: ScaleType): String = js.native
+    @scala.inline
+    def noSuchRepeatedValue(field: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("noSuchRepeatedValue")(field.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.scaleTypeNotWorkWithMark")
-    @js.native
-    def scaleTypeNotWorkWithMark(mark: Mark, scaleType: ScaleType): String = js.native
+    @scala.inline
+    def orientOverridden(original: String, actual: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("orientOverridden")(original.asInstanceOf[js.Any], actual.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.selectionNotFound")
-    @js.native
-    def selectionNotFound(name: String): String = js.native
+    @scala.inline
+    def primitiveChannelDef_boolean(channel: ExtendedChannel, `type`: boolean, value: Exclude[Value[ExprRef | SignalRef], Null]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("primitiveChannelDef")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.selectionNotSupported")
-    @js.native
-    def selectionNotSupported(mark: CompositeMark): String = js.native
+    @scala.inline
+    def primitiveChannelDef_number(channel: ExtendedChannel, `type`: number, value: Exclude[Value[ExprRef | SignalRef], Null]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("primitiveChannelDef")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.stackNonSummativeAggregate")
-    @js.native
-    def stackNonSummativeAggregate(aggregate: String): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.stackNonSummativeAggregate")
-    @js.native
-    def stackNonSummativeAggregate(aggregate: Aggregate): String = js.native
+    @scala.inline
+    def primitiveChannelDef_string(channel: ExtendedChannel, `type`: string, value: Exclude[Value[ExprRef | SignalRef], Null]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("primitiveChannelDef")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.stepDropped")
-    @js.native
-    def stepDropped_height(channel: height): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.stepDropped")
-    @js.native
-    def stepDropped_width(channel: width): String = js.native
+    @scala.inline
+    def projectionOverridden(opt: ParentProjection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("projectionOverridden")(opt.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.unaggregateDomainHasNoEffectForRawField")
-    @js.native
-    def unaggregateDomainHasNoEffectForRawField_binned(fieldDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null]): String = js.native
+    @scala.inline
+    def rangeMarkAlignmentCannotBeExpression_align(align: align): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeMarkAlignmentCannotBeExpression")(align.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.unaggregateDomainWithNonSharedDomainOp")
-    @js.native
-    def unaggregateDomainWithNonSharedDomainOp(aggregate: String): String = js.native
-    @JSImport("vega-lite/build/src/log", "message.unaggregateDomainWithNonSharedDomainOp")
-    @js.native
-    def unaggregateDomainWithNonSharedDomainOp(aggregate: Aggregate): String = js.native
+    @scala.inline
+    def rangeMarkAlignmentCannotBeExpression_baseline(align: baseline): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeMarkAlignmentCannotBeExpression")(align.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.unaggregatedDomainWithLogScale")
-    @js.native
-    def unaggregatedDomainWithLogScale_binned(fieldDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null]): String = js.native
+    @scala.inline
+    def scalePropertyNotWorkWithScaleType(scaleType: ScaleType, propName: String, channel: Channel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePropertyNotWorkWithScaleType")(scaleType.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.unknownField")
-    @js.native
-    def unknownField(channel: Channel): String = js.native
+    @scala.inline
+    def scaleTypeNotWorkWithChannel(channel: Channel, scaleType: ScaleType, defaultScaleType: ScaleType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypeNotWorkWithChannel")(channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], defaultScaleType.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-lite/build/src/log", "message.unrecognizedParse")
-    @js.native
-    def unrecognizedParse(p: String): String = js.native
+    @scala.inline
+    def scaleTypeNotWorkWithFieldDef(scaleType: ScaleType, defaultScaleType: ScaleType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypeNotWorkWithFieldDef")(scaleType.asInstanceOf[js.Any], defaultScaleType.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def scaleTypeNotWorkWithMark(mark: Mark, scaleType: ScaleType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypeNotWorkWithMark")(mark.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def selectionNotFound(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("selectionNotFound")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def selectionNotSupported(mark: CompositeMark): String = ^.asInstanceOf[js.Dynamic].applyDynamic("selectionNotSupported")(mark.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def stackNonSummativeAggregate(aggregate: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stackNonSummativeAggregate")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def stackNonSummativeAggregate(aggregate: Aggregate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stackNonSummativeAggregate")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def stepDropped_height(channel: height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stepDropped")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def stepDropped_width(channel: width): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stepDropped")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def unaggregateDomainHasNoEffectForRawField_binned(fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregateDomainHasNoEffectForRawField")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def unaggregateDomainWithNonSharedDomainOp(aggregate: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregateDomainWithNonSharedDomainOp")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def unaggregateDomainWithNonSharedDomainOp(aggregate: Aggregate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregateDomainWithNonSharedDomainOp")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def unaggregatedDomainWithLogScale_binned(fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregatedDomainWithLogScale")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def unknownField(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unknownField")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def unrecognizedParse(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unrecognizedParse")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @JSImport("vega-lite/build/src/log", "reset")
-  @js.native
-  def reset(): LoggerInterface = js.native
+  @scala.inline
+  def reset(): LoggerInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[LoggerInterface]
   
-  @JSImport("vega-lite/build/src/log", "set")
-  @js.native
-  def set(newLogger: LoggerInterface): LoggerInterface = js.native
+  @scala.inline
+  def set(newLogger: LoggerInterface): LoggerInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(newLogger.asInstanceOf[js.Any]).asInstanceOf[LoggerInterface]
   
-  @JSImport("vega-lite/build/src/log", "warn")
-  @js.native
-  def warn(args: js.Any*): Unit = js.native
+  @scala.inline
+  def warn(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("vega-lite/build/src/log", "wrap")
-  @js.native
-  def wrap(f: js.Function1[/* logger */ LocalLogger, Unit]): js.Function0[Unit] = js.native
+  @scala.inline
+  def wrap(f: js.Function1[/* logger */ LocalLogger, Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
 }

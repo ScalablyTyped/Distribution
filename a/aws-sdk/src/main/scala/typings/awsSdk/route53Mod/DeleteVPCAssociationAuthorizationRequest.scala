@@ -2,21 +2,19 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteVPCAssociationAuthorizationRequest extends StObject {
   
   /**
     * When removing authorization to associate a VPC that was created by one AWS account with a hosted zone that was created with a different AWS account, the ID of the hosted zone.
     */
-  var HostedZoneId: ResourceId = js.native
+  var HostedZoneId: ResourceId
   
   /**
     * When removing authorization to associate a VPC that was created by one AWS account with a hosted zone that was created with a different AWS account, a complex type that includes the ID and region of the VPC.
     */
-  var VPC: typings.awsSdk.route53Mod.VPC = js.native
+  var VPC: typings.awsSdk.route53Mod.VPC
 }
 object DeleteVPCAssociationAuthorizationRequest {
   

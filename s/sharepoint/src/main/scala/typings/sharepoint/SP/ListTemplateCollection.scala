@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTemplateCollection extends ClientObjectCollection[ListTemplate] {
+trait ListTemplateCollection
+  extends StObject
+     with ClientObjectCollection[ListTemplate] {
   
   def getByName(name: String): ListTemplate = js.native
   

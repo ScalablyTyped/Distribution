@@ -1,21 +1,25 @@
 package typings.sharepoint.global
 
 import typings.sharepoint.SP.ClientContext
+import typings.sharepoint.SPClientForms.ClientValidation.ValidatorSet
 import typings.sharepoint.SPClientTemplates.ChoiceFormatType
 import typings.sharepoint.SPClientTemplates.ClientControlMode
 import typings.sharepoint.SPClientTemplates.ClientLookupValue
 import typings.sharepoint.SPClientTemplates.ClientUrlValue
 import typings.sharepoint.SPClientTemplates.ClientUserValue
+import typings.sharepoint.SPClientTemplates.FieldSchemaInForm
 import typings.sharepoint.SPClientTemplates.FileSystemObjectType
 import typings.sharepoint.SPClientTemplates.RenderContext
 import typings.sharepoint.SPClientTemplates.RenderContextForm
 import typings.sharepoint.SPClientTemplates.RichTextMode
 import typings.sharepoint.SPClientTemplates.TemplateOverridesOptions
 import typings.sharepoint.SPClientTemplates.Templates
+import typings.sharepoint.anon.AllowScriptableWebParts
+import typings.sharepoint.anon.BaseType
+import typings.sharepoint.anon.ExternalListItem
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SPClientTemplates {
@@ -25,11 +29,11 @@ object SPClientTemplates {
   object ChoiceFormatType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.ChoiceFormatType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.ChoiceFormatType & Double] = js.native
     
-    /* 0 */ val Dropdown: typings.sharepoint.SPClientTemplates.ChoiceFormatType.Dropdown with Double = js.native
+    /* 0 */ val Dropdown: typings.sharepoint.SPClientTemplates.ChoiceFormatType.Dropdown & Double = js.native
     
-    /* 1 */ val Radio: typings.sharepoint.SPClientTemplates.ChoiceFormatType.Radio with Double = js.native
+    /* 1 */ val Radio: typings.sharepoint.SPClientTemplates.ChoiceFormatType.Radio & Double = js.native
   }
   
   @JSGlobal("SPClientTemplates.ClientControlMode")
@@ -37,62 +41,106 @@ object SPClientTemplates {
   object ClientControlMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.ClientControlMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.ClientControlMode & Double] = js.native
     
-    /* 1 */ val DisplayForm: typings.sharepoint.SPClientTemplates.ClientControlMode.DisplayForm with Double = js.native
+    /* 1 */ val DisplayForm: typings.sharepoint.SPClientTemplates.ClientControlMode.DisplayForm & Double = js.native
     
-    /* 2 */ val EditForm: typings.sharepoint.SPClientTemplates.ClientControlMode.EditForm with Double = js.native
+    /* 2 */ val EditForm: typings.sharepoint.SPClientTemplates.ClientControlMode.EditForm & Double = js.native
     
-    /* 0 */ val Invalid: typings.sharepoint.SPClientTemplates.ClientControlMode.Invalid with Double = js.native
+    /* 0 */ val Invalid: typings.sharepoint.SPClientTemplates.ClientControlMode.Invalid & Double = js.native
     
-    /* 3 */ val NewForm: typings.sharepoint.SPClientTemplates.ClientControlMode.NewForm with Double = js.native
+    /* 3 */ val NewForm: typings.sharepoint.SPClientTemplates.ClientControlMode.NewForm & Double = js.native
     
-    /* 4 */ val View: typings.sharepoint.SPClientTemplates.ClientControlMode.View with Double = js.native
+    /* 4 */ val View: typings.sharepoint.SPClientTemplates.ClientControlMode.View & Double = js.native
   }
   
   @JSGlobal("SPClientTemplates.ClientFormContext")
   @js.native
   class ClientFormContext ()
-    extends typings.sharepoint.SPClientTemplates.ClientFormContext
+    extends StObject
+       with typings.sharepoint.SPClientTemplates.ClientFormContext {
+    
+    /* CompleteClass */
+    var controlMode: Double = js.native
+    
+    /* CompleteClass */
+    var fieldName: String = js.native
+    
+    /* CompleteClass */
+    var fieldSchema: FieldSchemaInForm = js.native
+    
+    /* CompleteClass */
+    var fieldValue: js.Any = js.native
+    
+    /* CompleteClass */
+    var itemAttributes: ExternalListItem = js.native
+    
+    /* CompleteClass */
+    var listAttributes: BaseType = js.native
+    
+    /* CompleteClass */
+    override def registerClientValidator(fieldname: String, validator: ValidatorSet): Unit = js.native
+    
+    /* CompleteClass */
+    override def registerFocusCallback(fieldname: String, callback: js.Function0[Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def registerGetValueCallback(fieldname: String, callback: js.Function0[js.Any]): Unit = js.native
+    
+    /* CompleteClass */
+    override def registerHasValueChangedCallback(fieldname: String, callback: js.Function1[/* eventArg */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def registerInitCallback(fieldname: String, callback: js.Function0[Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def registerValidationErrorCallback(fieldname: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def updateControlValue(fieldname: String, value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var webAttributes: AllowScriptableWebParts = js.native
+  }
   
   @JSGlobal("SPClientTemplates.DateTimeCalendarType")
   @js.native
   object DateTimeCalendarType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.DateTimeCalendarType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.DateTimeCalendarType & Double] = js.native
     
-    /* 13 */ val ChineseLunar: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.ChineseLunar with Double = js.native
+    /* 13 */ val ChineseLunar: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.ChineseLunar & Double = js.native
     
-    /* 1 */ val Gregorian: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Gregorian with Double = js.native
+    /* 1 */ val Gregorian: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Gregorian & Double = js.native
     
-    /* 9 */ val GregorianArabic: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianArabic with Double = js.native
+    /* 9 */ val GregorianArabic: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianArabic & Double = js.native
     
-    /* 8 */ val GregorianMEFrench: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianMEFrench with Double = js.native
+    /* 8 */ val GregorianMEFrench: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianMEFrench & Double = js.native
     
-    /* 10 */ val GregorianXLITEnglish: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianXLITEnglish with Double = js.native
+    /* 10 */ val GregorianXLITEnglish: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianXLITEnglish & Double = js.native
     
-    /* 11 */ val GregorianXLITFrench: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianXLITFrench with Double = js.native
+    /* 11 */ val GregorianXLITFrench: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianXLITFrench & Double = js.native
     
-    /* 7 */ val Hebrew: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Hebrew with Double = js.native
+    /* 7 */ val Hebrew: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Hebrew & Double = js.native
     
-    /* 5 */ val Hijri: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Hijri with Double = js.native
+    /* 5 */ val Hijri: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Hijri & Double = js.native
     
-    /* 2 */ val Japan: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Japan with Double = js.native
+    /* 2 */ val Japan: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Japan & Double = js.native
     
-    /* 4 */ val Korea: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Korea with Double = js.native
+    /* 4 */ val Korea: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Korea & Double = js.native
     
-    /* 12 */ val KoreaJapanLunar: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.KoreaJapanLunar with Double = js.native
+    /* 12 */ val KoreaJapanLunar: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.KoreaJapanLunar & Double = js.native
     
-    /* 0 */ val None: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.None with Double = js.native
+    /* 0 */ val None: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.None & Double = js.native
     
-    /* 14 */ val SakaEra: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.SakaEra with Double = js.native
+    /* 14 */ val SakaEra: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.SakaEra & Double = js.native
     
-    /* 3 */ val Taiwan: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Taiwan with Double = js.native
+    /* 3 */ val Taiwan: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Taiwan & Double = js.native
     
-    /* 6 */ val Thai: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Thai with Double = js.native
+    /* 6 */ val Thai: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Thai & Double = js.native
     
-    /* 15 */ val UmAlQura: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.UmAlQura with Double = js.native
+    /* 15 */ val UmAlQura: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.UmAlQura & Double = js.native
   }
   
   @JSGlobal("SPClientTemplates.DateTimeDisplayFormat")
@@ -100,13 +148,13 @@ object SPClientTemplates {
   object DateTimeDisplayFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.DateTimeDisplayFormat with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.DateTimeDisplayFormat & Double] = js.native
     
-    /* 0 */ val DateOnly: typings.sharepoint.SPClientTemplates.DateTimeDisplayFormat.DateOnly with Double = js.native
+    /* 0 */ val DateOnly: typings.sharepoint.SPClientTemplates.DateTimeDisplayFormat.DateOnly & Double = js.native
     
-    /* 1 */ val DateTime: typings.sharepoint.SPClientTemplates.DateTimeDisplayFormat.DateTime with Double = js.native
+    /* 1 */ val DateTime: typings.sharepoint.SPClientTemplates.DateTimeDisplayFormat.DateTime & Double = js.native
     
-    /* 2 */ val TimeOnly: typings.sharepoint.SPClientTemplates.DateTimeDisplayFormat.TimeOnly with Double = js.native
+    /* 2 */ val TimeOnly: typings.sharepoint.SPClientTemplates.DateTimeDisplayFormat.TimeOnly & Double = js.native
   }
   
   @JSGlobal("SPClientTemplates.FileSystemObjectType")
@@ -114,15 +162,15 @@ object SPClientTemplates {
   object FileSystemObjectType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.FileSystemObjectType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.FileSystemObjectType & Double] = js.native
     
-    /* 1 */ val File: typings.sharepoint.SPClientTemplates.FileSystemObjectType.File with Double = js.native
+    /* 1 */ val File: typings.sharepoint.SPClientTemplates.FileSystemObjectType.File & Double = js.native
     
-    /* 2 */ val Folder: typings.sharepoint.SPClientTemplates.FileSystemObjectType.Folder with Double = js.native
+    /* 2 */ val Folder: typings.sharepoint.SPClientTemplates.FileSystemObjectType.Folder & Double = js.native
     
-    /* 0 */ val Invalid: typings.sharepoint.SPClientTemplates.FileSystemObjectType.Invalid with Double = js.native
+    /* 0 */ val Invalid: typings.sharepoint.SPClientTemplates.FileSystemObjectType.Invalid & Double = js.native
     
-    /* 3 */ val Web: typings.sharepoint.SPClientTemplates.FileSystemObjectType.Web with Double = js.native
+    /* 3 */ val Web: typings.sharepoint.SPClientTemplates.FileSystemObjectType.Web & Double = js.native
   }
   
   @JSGlobal("SPClientTemplates.RichTextMode")
@@ -130,32 +178,35 @@ object SPClientTemplates {
   object RichTextMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.RichTextMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.RichTextMode & Double] = js.native
     
-    /* 0 */ val Compatible: typings.sharepoint.SPClientTemplates.RichTextMode.Compatible with Double = js.native
+    /* 0 */ val Compatible: typings.sharepoint.SPClientTemplates.RichTextMode.Compatible & Double = js.native
     
-    /* 1 */ val FullHtml: typings.sharepoint.SPClientTemplates.RichTextMode.FullHtml with Double = js.native
+    /* 1 */ val FullHtml: typings.sharepoint.SPClientTemplates.RichTextMode.FullHtml & Double = js.native
     
-    /* 2 */ val HtmlAsXml: typings.sharepoint.SPClientTemplates.RichTextMode.HtmlAsXml with Double = js.native
+    /* 2 */ val HtmlAsXml: typings.sharepoint.SPClientTemplates.RichTextMode.HtmlAsXml & Double = js.native
     
-    /* 3 */ val ThemeHtml: typings.sharepoint.SPClientTemplates.RichTextMode.ThemeHtml with Double = js.native
+    /* 3 */ val ThemeHtml: typings.sharepoint.SPClientTemplates.RichTextMode.ThemeHtml & Double = js.native
   }
   
   @JSGlobal("SPClientTemplates.TemplateManager")
   @js.native
   class TemplateManager ()
-    extends typings.sharepoint.SPClientTemplates.TemplateManager
+    extends StObject
+       with typings.sharepoint.SPClientTemplates.TemplateManager
   object TemplateManager {
     
-    /* static member */
-    @JSGlobal("SPClientTemplates.TemplateManager.GetTemplates")
+    @JSGlobal("SPClientTemplates.TemplateManager")
     @js.native
-    def GetTemplates(renderCtx: RenderContext): Templates = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("SPClientTemplates.TemplateManager.RegisterTemplateOverrides")
-    @js.native
-    def RegisterTemplateOverrides(renderCtx: TemplateOverridesOptions): Unit = js.native
+    @scala.inline
+    def GetTemplates(renderCtx: RenderContext): Templates = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTemplates")(renderCtx.asInstanceOf[js.Any]).asInstanceOf[Templates]
+    
+    /* static member */
+    @scala.inline
+    def RegisterTemplateOverrides(renderCtx: TemplateOverridesOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterTemplateOverrides")(renderCtx.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSGlobal("SPClientTemplates.UrlFormatType")
@@ -163,11 +214,11 @@ object SPClientTemplates {
   object UrlFormatType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.UrlFormatType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.UrlFormatType & Double] = js.native
     
-    /* 0 */ val Hyperlink: typings.sharepoint.SPClientTemplates.UrlFormatType.Hyperlink with Double = js.native
+    /* 0 */ val Hyperlink: typings.sharepoint.SPClientTemplates.UrlFormatType.Hyperlink & Double = js.native
     
-    /* 1 */ val Image: typings.sharepoint.SPClientTemplates.UrlFormatType.Image with Double = js.native
+    /* 1 */ val Image: typings.sharepoint.SPClientTemplates.UrlFormatType.Image & Double = js.native
   }
   
   @JSGlobal("SPClientTemplates.UserSelectionMode")
@@ -175,17 +226,18 @@ object SPClientTemplates {
   object UserSelectionMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.UserSelectionMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sharepoint.SPClientTemplates.UserSelectionMode & Double] = js.native
     
-    /* 1 */ val PeopleAndGroups: typings.sharepoint.SPClientTemplates.UserSelectionMode.PeopleAndGroups with Double = js.native
+    /* 1 */ val PeopleAndGroups: typings.sharepoint.SPClientTemplates.UserSelectionMode.PeopleAndGroups & Double = js.native
     
-    /* 0 */ val PeopleOnly: typings.sharepoint.SPClientTemplates.UserSelectionMode.PeopleOnly with Double = js.native
+    /* 0 */ val PeopleOnly: typings.sharepoint.SPClientTemplates.UserSelectionMode.PeopleOnly & Double = js.native
   }
   
   @JSGlobal("SPClientTemplates.Utility")
   @js.native
   class Utility ()
-    extends typings.sharepoint.SPClientTemplates.Utility
+    extends StObject
+       with typings.sharepoint.SPClientTemplates.Utility
   object Utility {
     
     @JSGlobal("SPClientTemplates.Utility")
@@ -194,98 +246,80 @@ object SPClientTemplates {
     
     /** Represents lookup values array in some strange format */
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.BuildLookupValuesAsString")
-    @js.native
-    def BuildLookupValuesAsString(choiceArray: js.Array[ClientLookupValue], isMultiLookup: Boolean, setGroupDesc: Boolean): String = js.native
+    @scala.inline
+    def BuildLookupValuesAsString(choiceArray: js.Array[ClientLookupValue], isMultiLookup: Boolean, setGroupDesc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildLookupValuesAsString")(choiceArray.asInstanceOf[js.Any], isMultiLookup.asInstanceOf[js.Any], setGroupDesc.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.ChoiceFormatTypeToString")
-    @js.native
-    def ChoiceFormatTypeToString(fileSystemObjectType: ChoiceFormatType): String = js.native
+    @scala.inline
+    def ChoiceFormatTypeToString(fileSystemObjectType: ChoiceFormatType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ChoiceFormatTypeToString")(fileSystemObjectType.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.ComputeRegisterTypeInfo")
-    @js.native
-    def ComputeRegisterTypeInfo(renderCtx: TemplateOverridesOptions): js.Any = js.native
+    @scala.inline
+    def ComputeRegisterTypeInfo(renderCtx: TemplateOverridesOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ComputeRegisterTypeInfo")(renderCtx.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.ControlModeToString")
-    @js.native
-    def ControlModeToString(mode: ClientControlMode): String = js.native
+    @scala.inline
+    def ControlModeToString(mode: ClientControlMode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ControlModeToString")(mode.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.FileSystemObjectTypeToString")
-    @js.native
-    def FileSystemObjectTypeToString(fileSystemObjectType: FileSystemObjectType): String = js.native
+    @scala.inline
+    def FileSystemObjectTypeToString(fileSystemObjectType: FileSystemObjectType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FileSystemObjectTypeToString")(fileSystemObjectType.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.GetControlOptions")
-    @js.native
-    def GetControlOptions(control: HTMLElement): js.Any = js.native
+    @scala.inline
+    def GetControlOptions(control: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetControlOptions")(control.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.GetFormContextForCurrentField")
-    @js.native
-    def GetFormContextForCurrentField(context: RenderContextForm): typings.sharepoint.SPClientTemplates.ClientFormContext = js.native
+    @scala.inline
+    def GetFormContextForCurrentField(context: RenderContextForm): typings.sharepoint.SPClientTemplates.ClientFormContext = ^.asInstanceOf[js.Dynamic].applyDynamic("GetFormContextForCurrentField")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SPClientTemplates.ClientFormContext]
     
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.GetPropertiesFromPageContextInfo")
-    @js.native
-    def GetPropertiesFromPageContextInfo(context: RenderContext): Unit = js.native
+    @scala.inline
+    def GetPropertiesFromPageContextInfo(context: RenderContext): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GetPropertiesFromPageContextInfo")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Creates SP.ClientContext based on the specified Web URL. If the SP.Runtime.js script is not loaded, returns null */
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.InitContext")
-    @js.native
-    def InitContext(webUrl: String): ClientContext = js.native
+    @scala.inline
+    def InitContext(webUrl: String): ClientContext = ^.asInstanceOf[js.Dynamic].applyDynamic("InitContext")(webUrl.asInstanceOf[js.Any]).asInstanceOf[ClientContext]
     
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.IsValidControlMode")
-    @js.native
-    def IsValidControlMode(mode: Double): Boolean = js.native
+    @scala.inline
+    def IsValidControlMode(mode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsValidControlMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.ParseLookupValue")
-    @js.native
-    def ParseLookupValue(valueStr: String): ClientLookupValue = js.native
+    @scala.inline
+    def ParseLookupValue(valueStr: String): ClientLookupValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseLookupValue")(valueStr.asInstanceOf[js.Any]).asInstanceOf[ClientLookupValue]
     
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.ParseMultiLookupValues")
-    @js.native
-    def ParseMultiLookupValues(valueStr: String): js.Array[ClientLookupValue] = js.native
+    @scala.inline
+    def ParseMultiLookupValues(valueStr: String): js.Array[ClientLookupValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseMultiLookupValues")(valueStr.asInstanceOf[js.Any]).asInstanceOf[js.Array[ClientLookupValue]]
     
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.ParseURLValue")
-    @js.native
-    def ParseURLValue(value: String): ClientUrlValue = js.native
+    @scala.inline
+    def ParseURLValue(value: String): ClientUrlValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseURLValue")(value.asInstanceOf[js.Any]).asInstanceOf[ClientUrlValue]
     
     /** Replaces tokens "~site/", "~sitecollection/", "~sitecollectionmasterpagegallery", "{lcid}", "{locale}" and "{siteclienttag}" with appropriate context values */
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.ReplaceUrlTokens")
-    @js.native
-    def ReplaceUrlTokens(tokenUrl: String): String = js.native
+    @scala.inline
+    def ReplaceUrlTokens(tokenUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ReplaceUrlTokens")(tokenUrl.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.RichTextModeToString")
-    @js.native
-    def RichTextModeToString(fileSystemObjectType: RichTextMode): String = js.native
+    @scala.inline
+    def RichTextModeToString(fileSystemObjectType: RichTextMode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("RichTextModeToString")(fileSystemObjectType.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Removes leading and trailing spaces */
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.Trim")
-    @js.native
-    def Trim(str: String): String = js.native
+    @scala.inline
+    def Trim(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Trim")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.TryParseInitialUserValue")
-    @js.native
-    def TryParseInitialUserValue(userStr: String): js.Array[ClientUserValue] = js.native
+    @scala.inline
+    def TryParseInitialUserValue(userStr: String): js.Array[ClientUserValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("TryParseInitialUserValue")(userStr.asInstanceOf[js.Any]).asInstanceOf[js.Array[ClientUserValue]]
     
     /** Tries to resolve user names from string. Pushes either ClientUserValue (if resolved successfully) or original string (if not) to the resulting array. */
     /* static member */
-    @JSGlobal("SPClientTemplates.Utility.TryParseUserControlValue")
-    @js.native
-    def TryParseUserControlValue(userStr: String, separator: String): js.Array[_] = js.native
+    @scala.inline
+    def TryParseUserControlValue(userStr: String, separator: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("TryParseUserControlValue")(userStr.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     /** Returns ";#" */
     /* static member */

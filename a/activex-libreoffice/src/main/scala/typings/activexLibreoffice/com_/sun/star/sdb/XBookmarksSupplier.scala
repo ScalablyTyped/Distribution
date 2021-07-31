@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to the collection of all bookmarks associated with a data source. */
-@js.native
-trait XBookmarksSupplier extends XInterface {
+trait XBookmarksSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the collection of all bookmarks associated with a data source A bookmark is simply a string specifying the location of the bookmarked document. */
-  val Bookmarks: XNameAccess = js.native
+  val Bookmarks: XNameAccess
   
   /** @returns the collection of all bookmarks associated with a data source A bookmark is simply a string specifying the location of the bookmarked document. */
-  def getBookmarks(): XNameAccess = js.native
+  def getBookmarks(): XNameAccess
 }
 object XBookmarksSupplier {
   

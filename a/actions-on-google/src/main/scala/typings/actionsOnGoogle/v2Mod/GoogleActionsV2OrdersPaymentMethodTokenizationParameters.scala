@@ -3,10 +3,8 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersPaymentMethodTokenizationParameters extends StObject {
   
   /**
@@ -44,12 +42,12 @@ trait GoogleActionsV2OrdersPaymentMethodTokenizationParameters extends StObject 
     *   \"publicKey\": \"base64encoded...\"
     * }
     */
-  var parameters: js.UndefOr[ApiClientObjectMap[String]] = js.native
+  var parameters: js.UndefOr[ApiClientObjectMap[String]] = js.undefined
   
   /**
     * Required.
     */
-  var tokenizationType: js.UndefOr[GoogleActionsV2OrdersPaymentMethodTokenizationParametersTokenizationType] = js.native
+  var tokenizationType: js.UndefOr[GoogleActionsV2OrdersPaymentMethodTokenizationParametersTokenizationType] = js.undefined
 }
 object GoogleActionsV2OrdersPaymentMethodTokenizationParameters {
   

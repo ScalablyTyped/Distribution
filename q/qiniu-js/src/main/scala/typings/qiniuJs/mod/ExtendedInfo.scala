@@ -4,15 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.qiniuJs.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtendedInfo extends /* key */ StringDictionary[Type | Double | String] {
+trait ExtendedInfo
+  extends StObject
+     with /* key */ StringDictionary[Type | Double | String] {
   
-  var code: Double = js.native
+  var code: Double
   
-  var error: String = js.native
+  var error: String
 }
 object ExtendedInfo {
   

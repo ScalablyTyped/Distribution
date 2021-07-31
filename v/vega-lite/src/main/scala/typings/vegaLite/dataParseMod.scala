@@ -8,20 +8,20 @@ import typings.vegaLite.sourceMod.SourceNode
 import typings.vegaLite.srcDataMod.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataParseMod {
   
-  @JSImport("vega-lite/build/src/compile/data/parse", "findSource")
+  @JSImport("vega-lite/build/src/compile/data/parse", JSImport.Namespace)
   @js.native
-  def findSource(data: Data, sources: js.Array[SourceNode]): SourceNode = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/data/parse", "parseData")
-  @js.native
-  def parseData(model: Model): DataComponent = js.native
+  @scala.inline
+  def findSource(data: Data, sources: js.Array[SourceNode]): SourceNode = (^.asInstanceOf[js.Dynamic].applyDynamic("findSource")(data.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[SourceNode]
   
-  @JSImport("vega-lite/build/src/compile/data/parse", "parseTransformArray")
-  @js.native
-  def parseTransformArray(head: DataFlowNode, model: Model, ancestorParse: AncestorParse): DataFlowNode = js.native
+  @scala.inline
+  def parseData(model: Model): DataComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("parseData")(model.asInstanceOf[js.Any]).asInstanceOf[DataComponent]
+  
+  @scala.inline
+  def parseTransformArray(head: DataFlowNode, model: Model, ancestorParse: AncestorParse): DataFlowNode = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformArray")(head.asInstanceOf[js.Any], model.asInstanceOf[js.Any], ancestorParse.asInstanceOf[js.Any])).asInstanceOf[DataFlowNode]
 }

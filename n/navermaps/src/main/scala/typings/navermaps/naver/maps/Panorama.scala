@@ -2,11 +2,12 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Panorama extends KVO {
+trait Panorama
+  extends StObject
+     with KVO {
   
   def getLocation(): PanoramaLocation = js.native
   

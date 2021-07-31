@@ -2,19 +2,17 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PassiveDto extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var image: ImageDto = js.native
+  var image: ImageDto
   
-  var name: String = js.native
+  var name: String
   
-  var sanitizedDescription: String = js.native
+  var sanitizedDescription: String
 }
 object PassiveDto {
   

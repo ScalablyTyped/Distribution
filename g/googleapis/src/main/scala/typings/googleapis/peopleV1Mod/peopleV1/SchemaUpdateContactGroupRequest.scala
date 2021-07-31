@@ -2,20 +2,18 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request to update an existing user contact group. All updated fields will
   * be replaced.
   */
-@js.native
 trait SchemaUpdateContactGroupRequest extends StObject {
   
   /**
     * The contact group to update.
     */
-  var contactGroup: js.UndefOr[SchemaContactGroup] = js.native
+  var contactGroup: js.UndefOr[SchemaContactGroup] = js.undefined
 }
 object SchemaUpdateContactGroupRequest {
   

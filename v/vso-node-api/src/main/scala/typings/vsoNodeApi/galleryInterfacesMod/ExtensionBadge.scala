@@ -2,17 +2,15 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionBadge extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var imgUri: String = js.native
+  var imgUri: String
   
-  var link: String = js.native
+  var link: String
 }
 object ExtensionBadge {
   

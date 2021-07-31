@@ -2,26 +2,24 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeOrganizationConfigurationResponse extends StObject {
   
   /**
     * Indicates whether GuardDuty is automatically enabled for accounts added to the organization.
     */
-  var AutoEnable: Boolean = js.native
+  var AutoEnable: Boolean
   
   /**
     * An object that describes which data sources are enabled automatically for member accounts.
     */
-  var DataSources: js.UndefOr[OrganizationDataSourceConfigurationsResult] = js.native
+  var DataSources: js.UndefOr[OrganizationDataSourceConfigurationsResult] = js.undefined
   
   /**
     * Indicates whether the maximum number of allowed member accounts are already associated with the delegated administrator master account.
     */
-  var MemberAccountLimitReached: Boolean = js.native
+  var MemberAccountLimitReached: Boolean
 }
 object DescribeOrganizationConfigurationResponse {
   

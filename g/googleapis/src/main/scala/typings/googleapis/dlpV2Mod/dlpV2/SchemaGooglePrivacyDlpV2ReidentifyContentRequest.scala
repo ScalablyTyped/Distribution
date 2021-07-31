@@ -2,19 +2,17 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to re-identify an item.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2ReidentifyContentRequest extends StObject {
   
   /**
     * Configuration for the inspector.
     */
-  var inspectConfig: js.UndefOr[SchemaGooglePrivacyDlpV2InspectConfig] = js.native
+  var inspectConfig: js.UndefOr[SchemaGooglePrivacyDlpV2InspectConfig] = js.undefined
   
   /**
     * Optional template to use. Any configuration directly specified in
@@ -23,12 +21,12 @@ trait SchemaGooglePrivacyDlpV2ReidentifyContentRequest extends StObject {
     * the template. Repeated fields are appended. Singular sub-messages and
     * groups are recursively merged.
     */
-  var inspectTemplateName: js.UndefOr[String] = js.native
+  var inspectTemplateName: js.UndefOr[String] = js.undefined
   
   /**
     * The item to re-identify. Will be treated as text.
     */
-  var item: js.UndefOr[SchemaGooglePrivacyDlpV2ContentItem] = js.native
+  var item: js.UndefOr[SchemaGooglePrivacyDlpV2ContentItem] = js.undefined
   
   /**
     * Configuration for the re-identification of the content item. This field
@@ -39,7 +37,7 @@ trait SchemaGooglePrivacyDlpV2ReidentifyContentRequest extends StObject {
     * This requires that only reversible transformations be provided here. The
     * reversible transformations are:   - `CryptoReplaceFfxFpeConfig`
     */
-  var reidentifyConfig: js.UndefOr[SchemaGooglePrivacyDlpV2DeidentifyConfig] = js.native
+  var reidentifyConfig: js.UndefOr[SchemaGooglePrivacyDlpV2DeidentifyConfig] = js.undefined
   
   /**
     * Optional template to use. References an instance of `DeidentifyTemplate`.
@@ -49,7 +47,7 @@ trait SchemaGooglePrivacyDlpV2ReidentifyContentRequest extends StObject {
     * the template. Repeated fields are appended. Singular sub-messages and
     * groups are recursively merged.
     */
-  var reidentifyTemplateName: js.UndefOr[String] = js.native
+  var reidentifyTemplateName: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ReidentifyContentRequest {
   

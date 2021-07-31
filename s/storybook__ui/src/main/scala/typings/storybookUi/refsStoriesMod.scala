@@ -10,10 +10,13 @@ import typings.storybookUi.anon.Layout
 import typings.storybookUi.refsMod.RefProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refsStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/components/sidebar/Refs.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -23,9 +26,9 @@ object refsStoriesMod {
     
     @JSImport("@storybook/ui/dist/components/sidebar/Refs.stories", "default.component")
     @js.native
-    def component: FunctionComponent[ComposedRef with RefProps] = js.native
+    def component: FunctionComponent[ComposedRef & RefProps] = js.native
     @scala.inline
-    def component_=(x: FunctionComponent[ComposedRef with RefProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
+    def component_=(x: FunctionComponent[ComposedRef & RefProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/sidebar/Refs.stories", "default.decorators")
     @js.native
@@ -52,45 +55,35 @@ object refsStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Refs.stories", "Auth")
-  @js.native
-  def Auth(): Element = js.native
+  @scala.inline
+  def Auth(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Auth")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Refs.stories", "Errored")
-  @js.native
-  def Errored(): Element = js.native
+  @scala.inline
+  def Errored(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Errored")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Refs.stories", "IsEmpty")
-  @js.native
-  def IsEmpty(): Element = js.native
+  @scala.inline
+  def IsEmpty(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEmpty")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Refs.stories", "Long")
-  @js.native
-  def Long(): Element = js.native
+  @scala.inline
+  def Long(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Long")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Refs.stories", "Optimized")
-  @js.native
-  def Optimized(): Element = js.native
+  @scala.inline
+  def Optimized(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Optimized")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Refs.stories", "StartInjectedLoading")
-  @js.native
-  def StartInjectedLoading(): Element = js.native
+  @scala.inline
+  def StartInjectedLoading(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StartInjectedLoading")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Refs.stories", "StartInjectedReady")
-  @js.native
-  def StartInjectedReady(): Element = js.native
+  @scala.inline
+  def StartInjectedReady(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StartInjectedReady")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Refs.stories", "StartInjectedUnknown")
-  @js.native
-  def StartInjectedUnknown(): Element = js.native
+  @scala.inline
+  def StartInjectedUnknown(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StartInjectedUnknown")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Refs.stories", "Versions")
-  @js.native
-  def Versions(): Element = js.native
+  @scala.inline
+  def Versions(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Versions")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Refs.stories", "VersionsMissingCurrent")
-  @js.native
-  def VersionsMissingCurrent(): Element = js.native
+  @scala.inline
+  def VersionsMissingCurrent(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("VersionsMissingCurrent")().asInstanceOf[Element]
   
   object loadingData {
     

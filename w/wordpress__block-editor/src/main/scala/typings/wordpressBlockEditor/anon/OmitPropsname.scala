@@ -4,18 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<@wordpress/components.@wordpress/components.Slot.Props, 'name'> */
-@js.native
 trait OmitPropsname extends StObject {
   
-  var bubblesVirtually: js.UndefOr[Boolean] = js.native
+  var bubblesVirtually: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[js.Function1[/* fills */ js.Array[js.Array[Element]], Element | Null]] = js.native
+  var children: js.UndefOr[js.Function1[/* fills */ js.Array[js.Array[Element]], Element | Null]] = js.undefined
   
-  var fillProps: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var fillProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object OmitPropsname {
   

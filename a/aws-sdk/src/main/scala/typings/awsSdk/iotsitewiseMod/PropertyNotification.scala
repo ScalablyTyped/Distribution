@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyNotification extends StObject {
   
   /**
     * The current notification state.
     */
-  var state: PropertyNotificationState = js.native
+  var state: PropertyNotificationState
   
   /**
     * The MQTT topic to which AWS IoT SiteWise publishes property value update notifications.
     */
-  var topic: PropertyNotificationTopic = js.native
+  var topic: PropertyNotificationTopic
 }
 object PropertyNotification {
   

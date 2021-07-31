@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androiddeviceprovisioning/v1", "androiddeviceprovisioning_v1.Resource$Partners$Customers")
@@ -35,7 +34,7 @@ class ResourcePartnersCustomers protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaCompany] = js.native
   def create(callback: BodyResponseCallback[SchemaCompany]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCompany] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCompany] = js.native
   def create(params: ParamsResourcePartnersCustomersCreate): GaxiosPromise[SchemaCompany] = js.native
   def create(params: ParamsResourcePartnersCustomersCreate, callback: BodyResponseCallback[SchemaCompany]): Unit = js.native
   def create(
@@ -68,7 +67,7 @@ class ResourcePartnersCustomers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListCustomersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCustomersResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCustomersResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListCustomersResponse] = js.native
   def list(params: ParamsResourcePartnersCustomersList): GaxiosPromise[SchemaListCustomersResponse] = js.native
   def list(
     params: ParamsResourcePartnersCustomersList,

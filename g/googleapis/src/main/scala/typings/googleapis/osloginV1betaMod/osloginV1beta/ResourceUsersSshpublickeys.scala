@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/oslogin/v1beta", "oslogin_v1beta.Resource$Users$Sshpublickeys")
@@ -30,7 +29,7 @@ class ResourceUsersSshpublickeys protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceUsersSshpublickeysDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceUsersSshpublickeysDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -59,7 +58,7 @@ class ResourceUsersSshpublickeys protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSshPublicKey] = js.native
   def get(callback: BodyResponseCallback[SchemaSshPublicKey]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSshPublicKey] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSshPublicKey] = js.native
   def get(params: ParamsResourceUsersSshpublickeysGet): GaxiosPromise[SchemaSshPublicKey] = js.native
   def get(params: ParamsResourceUsersSshpublickeysGet, callback: BodyResponseCallback[SchemaSshPublicKey]): Unit = js.native
   def get(
@@ -91,7 +90,7 @@ class ResourceUsersSshpublickeys protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaSshPublicKey] = js.native
   def patch(callback: BodyResponseCallback[SchemaSshPublicKey]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSshPublicKey] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSshPublicKey] = js.native
   def patch(params: ParamsResourceUsersSshpublickeysPatch): GaxiosPromise[SchemaSshPublicKey] = js.native
   def patch(params: ParamsResourceUsersSshpublickeysPatch, callback: BodyResponseCallback[SchemaSshPublicKey]): Unit = js.native
   def patch(

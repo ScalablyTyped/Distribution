@@ -2,21 +2,19 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Favorites extends StObject {
   
-  var favorites: js.UndefOr[String] = js.native
+  var favorites: js.UndefOr[String] = js.undefined
   
-  var likes: js.UndefOr[String] = js.native
+  var likes: js.UndefOr[String] = js.undefined
   
-  var uploads: js.UndefOr[String] = js.native
+  var uploads: js.UndefOr[String] = js.undefined
   
-  var watchHistory: js.UndefOr[String] = js.native
+  var watchHistory: js.UndefOr[String] = js.undefined
   
-  var watchLater: js.UndefOr[String] = js.native
+  var watchLater: js.UndefOr[String] = js.undefined
 }
 object Favorites {
   

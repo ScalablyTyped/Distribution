@@ -2,38 +2,36 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWebWorkerOptions extends StObject {
   
   /**
     * The data to send over when calling create on the module.
     */
-  var createData: js.UndefOr[js.Any] = js.native
+  var createData: js.UndefOr[js.Any] = js.undefined
   
   /**
     * An object that can be used by the web worker to make calls back to the main thread.
     */
-  var host: js.UndefOr[js.Any] = js.native
+  var host: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Keep idle models.
     * Defaults to false, which means that idle models will stop syncing after a while.
     */
-  var keepIdleModels: js.UndefOr[Boolean] = js.native
+  var keepIdleModels: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A label to be used to identify the web worker for debugging purposes.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The AMD moduleId to load.
     * It should export a function `create` that should return the exported proxy.
     */
-  var moduleId: String = js.native
+  var moduleId: String
 }
 object IWebWorkerOptions {
   

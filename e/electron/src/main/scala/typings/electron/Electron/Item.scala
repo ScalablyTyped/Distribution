@@ -2,21 +2,19 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Item extends StObject {
   
   /**
     * The path(s) to the file(s) being dragged.
     */
-  var file: js.Array[String] | String = js.native
+  var file: js.Array[String] | String
   
   /**
     * The image must be non-empty on macOS.
     */
-  var icon: NativeImage_ | String = js.native
+  var icon: NativeImage_ | String
 }
 object Item {
   

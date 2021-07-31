@@ -2,13 +2,11 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionConnectingEvent extends StObject {
   
-  var request: IncomingRequest | OutgoingRequest = js.native
+  var request: IncomingRequest | OutgoingRequest
 }
 object SessionConnectingEvent {
   

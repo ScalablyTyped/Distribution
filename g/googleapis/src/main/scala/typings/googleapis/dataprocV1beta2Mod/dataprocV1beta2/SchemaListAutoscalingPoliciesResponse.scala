@@ -2,25 +2,23 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response to a request to list autoscaling policies in a project.
   */
-@js.native
 trait SchemaListAutoscalingPoliciesResponse extends StObject {
   
   /**
     * Output only. This token is included in the response if there are more
     * results to fetch.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Autoscaling policies list.
     */
-  var policies: js.UndefOr[js.Array[SchemaAutoscalingPolicy]] = js.native
+  var policies: js.UndefOr[js.Array[SchemaAutoscalingPolicy]] = js.undefined
 }
 object SchemaListAutoscalingPoliciesResponse {
   

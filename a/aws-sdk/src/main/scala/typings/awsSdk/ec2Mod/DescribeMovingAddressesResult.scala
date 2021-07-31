@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMovingAddressesResult extends StObject {
   
   /**
     * The status for each Elastic IP address.
     */
-  var MovingAddressStatuses: js.UndefOr[MovingAddressStatusSet] = js.native
+  var MovingAddressStatuses: js.UndefOr[MovingAddressStatusSet] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeMovingAddressesResult {
   

@@ -10,7 +10,6 @@ import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object issuesMod {
@@ -31,7 +30,7 @@ object issuesMod {
     def addTimeEstimate(projectId: Double, issueId: Double, duration: String, options: Sudo): js.Promise[js.Object] = js.native
     
     def all(): js.Promise[GetResponse] = js.native
-    def all(hasProjectIdGroupIdOptions: (ProjectId | GroupId | js.Object) with PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    def all(hasProjectIdGroupIdOptions: (ProjectId | GroupId | js.Object) & PaginatedRequestOptions): js.Promise[GetResponse] = js.native
     
     def create(projectId: String): js.Promise[js.Object] = js.native
     def create(projectId: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native

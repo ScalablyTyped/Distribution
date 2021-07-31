@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ec2RouteMod {
@@ -96,6 +95,10 @@ object ec2RouteMod {
   /* static members */
   object Route {
     
+    @JSImport("@pulumi/aws/ec2/route", "Route")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Route resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -105,90 +108,84 @@ object ec2RouteMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Route = js.native
-    @JSImport("@pulumi/aws/ec2/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Route = js.native
-    @JSImport("@pulumi/aws/ec2/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteState): Route = js.native
-    @JSImport("@pulumi/aws/ec2/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): Route = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteState): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Route]
     
     /**
       * Returns true if the given object is an instance of Route.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/route", "Route.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/route.Route */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/route.Route */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/route.Route */ Boolean]
   }
   
-  @js.native
   trait RouteArgs extends StObject {
     
     /**
       * The destination CIDR block.
       */
-    val destinationCidrBlock: js.UndefOr[Input[String]] = js.native
+    val destinationCidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The destination IPv6 CIDR block.
       */
-    val destinationIpv6CidrBlock: js.UndefOr[Input[String]] = js.native
+    val destinationIpv6CidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of a VPC Egress Only Internet Gateway.
       */
-    val egressOnlyGatewayId: js.UndefOr[Input[String]] = js.native
+    val egressOnlyGatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of a VPC internet gateway or a virtual private gateway.
       */
-    val gatewayId: js.UndefOr[Input[String]] = js.native
+    val gatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of an EC2 instance.
       */
-    val instanceId: js.UndefOr[Input[String]] = js.native
+    val instanceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of a Outpost local gateway.
       */
-    val localGatewayId: js.UndefOr[Input[String]] = js.native
+    val localGatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of a VPC NAT gateway.
       */
-    val natGatewayId: js.UndefOr[Input[String]] = js.native
+    val natGatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of an EC2 network interface.
       */
-    val networkInterfaceId: js.UndefOr[Input[String]] = js.native
+    val networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the routing table.
       */
-    val routeTableId: Input[String] = js.native
+    val routeTableId: Input[String]
     
     /**
       * Identifier of an EC2 Transit Gateway.
       */
-    val transitGatewayId: js.UndefOr[Input[String]] = js.native
+    val transitGatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of a VPC Endpoint.
       */
-    val vpcEndpointId: js.UndefOr[Input[String]] = js.native
+    val vpcEndpointId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of a VPC peering connection.
       */
-    val vpcPeeringConnectionId: js.UndefOr[Input[String]] = js.native
+    val vpcPeeringConnectionId: js.UndefOr[Input[String]] = js.undefined
   }
   object RouteArgs {
     
@@ -272,76 +269,75 @@ object ec2RouteMod {
     }
   }
   
-  @js.native
   trait RouteState extends StObject {
     
     /**
       * The destination CIDR block.
       */
-    val destinationCidrBlock: js.UndefOr[Input[String]] = js.native
+    val destinationCidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The destination IPv6 CIDR block.
       */
-    val destinationIpv6CidrBlock: js.UndefOr[Input[String]] = js.native
+    val destinationIpv6CidrBlock: js.UndefOr[Input[String]] = js.undefined
     
-    val destinationPrefixListId: js.UndefOr[Input[String]] = js.native
+    val destinationPrefixListId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of a VPC Egress Only Internet Gateway.
       */
-    val egressOnlyGatewayId: js.UndefOr[Input[String]] = js.native
+    val egressOnlyGatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of a VPC internet gateway or a virtual private gateway.
       */
-    val gatewayId: js.UndefOr[Input[String]] = js.native
+    val gatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of an EC2 instance.
       */
-    val instanceId: js.UndefOr[Input[String]] = js.native
+    val instanceId: js.UndefOr[Input[String]] = js.undefined
     
-    val instanceOwnerId: js.UndefOr[Input[String]] = js.native
+    val instanceOwnerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of a Outpost local gateway.
       */
-    val localGatewayId: js.UndefOr[Input[String]] = js.native
+    val localGatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of a VPC NAT gateway.
       */
-    val natGatewayId: js.UndefOr[Input[String]] = js.native
+    val natGatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of an EC2 network interface.
       */
-    val networkInterfaceId: js.UndefOr[Input[String]] = js.native
+    val networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
     
-    val origin: js.UndefOr[Input[String]] = js.native
+    val origin: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the routing table.
       */
-    val routeTableId: js.UndefOr[Input[String]] = js.native
+    val routeTableId: js.UndefOr[Input[String]] = js.undefined
     
-    val state: js.UndefOr[Input[String]] = js.native
+    val state: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of an EC2 Transit Gateway.
       */
-    val transitGatewayId: js.UndefOr[Input[String]] = js.native
+    val transitGatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of a VPC Endpoint.
       */
-    val vpcEndpointId: js.UndefOr[Input[String]] = js.native
+    val vpcEndpointId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of a VPC peering connection.
       */
-    val vpcPeeringConnectionId: js.UndefOr[Input[String]] = js.native
+    val vpcPeeringConnectionId: js.UndefOr[Input[String]] = js.undefined
   }
   object RouteState {
     

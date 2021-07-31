@@ -5,7 +5,6 @@ import typings.node.NodeModule
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,24 +16,22 @@ object mod {
     * @param options object with options for require-directory call
     * @returns hash of modules in specified directory
     */
+  @scala.inline
+  def apply[T, U](m: NodeModule): RequireDirectoryResult[U] = ^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any]).asInstanceOf[RequireDirectoryResult[U]]
+  @scala.inline
+  def apply[T, U](m: NodeModule, path: String): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  @scala.inline
+  def apply[T, U](m: NodeModule, path: String, options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  @scala.inline
+  def apply[T, U](m: NodeModule, path: Unit, options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  @scala.inline
+  def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  @scala.inline
+  def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U], options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  
   @JSImport("require-directory", JSImport.Namespace)
   @js.native
-  def apply[T, U](m: NodeModule): RequireDirectoryResult[U] = js.native
-  @JSImport("require-directory", JSImport.Namespace)
-  @js.native
-  def apply[T, U](m: NodeModule, path: js.UndefOr[scala.Nothing], options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = js.native
-  @JSImport("require-directory", JSImport.Namespace)
-  @js.native
-  def apply[T, U](m: NodeModule, path: String): RequireDirectoryResult[U] = js.native
-  @JSImport("require-directory", JSImport.Namespace)
-  @js.native
-  def apply[T, U](m: NodeModule, path: String, options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = js.native
-  @JSImport("require-directory", JSImport.Namespace)
-  @js.native
-  def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = js.native
-  @JSImport("require-directory", JSImport.Namespace)
-  @js.native
-  def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U], options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * @description default options that is used for "require-directory" module
@@ -50,32 +47,31 @@ object mod {
     */
   type CheckPathFn = js.Function1[/* path */ String, Boolean]
   
-  @js.native
   trait RequireDirectoryOptions[T, U] extends StObject {
     
     /**
       * @description RegExp or function for blacklisting modules
       * @default undefined
       */
-    var exclude: js.UndefOr[RegExp | CheckPathFn] = js.native
+    var exclude: js.UndefOr[RegExp | CheckPathFn] = js.undefined
     
     /**
       * @description array of file extensions that will be included in resulting hash as modules
       * @default "['js', 'json', 'coffee']"
       */
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * @description RegExp or function for whitelisting modules
       * @default undefined
       */
-    var include: js.UndefOr[RegExp | CheckPathFn] = js.native
+    var include: js.UndefOr[RegExp | CheckPathFn] = js.undefined
     
     /**
       * @description option to include subdirectories
       * @default true
       */
-    var recurse: js.UndefOr[Boolean] = js.native
+    var recurse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @description function for renaming modules in resulting hash
@@ -83,7 +79,7 @@ object mod {
       * @returns transformed name of module
       * @default "change nothing"
       */
-    var rename: js.UndefOr[js.Function1[/* name */ String, String]] = js.native
+    var rename: js.UndefOr[js.Function1[/* name */ String, String]] = js.undefined
     
     /**
       * @description function that will be called for each required module
@@ -91,7 +87,7 @@ object mod {
       * @returns transformed module OR nothing (in second case module itself will be added to hash)
       * @default "change nothing"
       */
-    var visit: js.UndefOr[js.Function1[/* obj */ T, U | Unit]] = js.native
+    var visit: js.UndefOr[js.Function1[/* obj */ T, U | Unit]] = js.undefined
   }
   object RequireDirectoryOptions {
     
@@ -102,7 +98,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RequireDirectoryOptionsMutableBuilder[Self <: RequireDirectoryOptions[_, _], T, U] (val x: Self with (RequireDirectoryOptions[T, U])) extends AnyVal {
+    implicit class RequireDirectoryOptionsMutableBuilder[Self <: RequireDirectoryOptions[?, ?], T, U] (val x: Self & (RequireDirectoryOptions[T, U])) extends AnyVal {
       
       @scala.inline
       def setExclude(value: RegExp | CheckPathFn): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
@@ -151,8 +147,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait RequireDirectoryResult[T] extends /**
+  trait RequireDirectoryResult[T]
+    extends StObject
+       with /**
     * @description module itself or hash of modules in subdirectory with name of this directory
     */
   /* index */ StringDictionary[RequireDirectoryResult[T] | T]

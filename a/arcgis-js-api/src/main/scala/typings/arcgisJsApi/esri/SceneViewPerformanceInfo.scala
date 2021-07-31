@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-SceneViewPerformanceInfo.html)
   */
-@js.native
 trait SceneViewPerformanceInfo extends StObject {
   
   /**
@@ -18,42 +16,42 @@ trait SceneViewPerformanceInfo extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-SceneViewPerformanceInfo.html#edgesMemory)
     */
-  var edgesMemory: Double = js.native
+  var edgesMemory: Double
   
   /**
     * An array representing detailed information about memory usage of most layers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-SceneViewPerformanceInfo.html#layerPerformanceInfos)
     */
-  var layerPerformanceInfos: js.Array[LayerPerformanceInfo] = js.native
+  var layerPerformanceInfos: js.Array[LayerPerformanceInfo]
   
   /**
     * Quality level as a number between 0 and 1.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-SceneViewPerformanceInfo.html#quality)
     */
-  var quality: Double = js.native
+  var quality: Double
   
   /**
     * An estimate of the memory currently in use by [ElevationLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html) and [tiled layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html), in bytes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-SceneViewPerformanceInfo.html#terrainMemory)
     */
-  var terrainMemory: Double = js.native
+  var terrainMemory: Double
   
   /**
     * The total memory available to the SceneView, in bytes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-SceneViewPerformanceInfo.html#totalMemory)
     */
-  var totalMemory: Double = js.native
+  var totalMemory: Double
   
   /**
     * An estimate of the memory that is in use by the SceneView, in bytes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-SceneViewPerformanceInfo.html#usedMemory)
     */
-  var usedMemory: Double = js.native
+  var usedMemory: Double
 }
 object SceneViewPerformanceInfo {
   

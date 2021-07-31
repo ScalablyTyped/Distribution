@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2BatchUpdateIntentsRequest extends StObject {
   
   /** The collection of intents to update or create. */
-  var intentBatchInline: js.UndefOr[GoogleCloudDialogflowV2IntentBatch] = js.native
+  var intentBatchInline: js.UndefOr[GoogleCloudDialogflowV2IntentBatch] = js.undefined
   
   /**
     * The URI to a Google Cloud Storage file containing intents to update or create. The file format can either be a serialized proto (of IntentBatch type) or JSON object. Note: The URI
     * must start with "gs://".
     */
-  var intentBatchUri: js.UndefOr[String] = js.native
+  var intentBatchUri: js.UndefOr[String] = js.undefined
   
   /** Optional. The resource view to apply to the returned intent. */
-  var intentView: js.UndefOr[String] = js.native
+  var intentView: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity
     * data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /** Optional. The mask to control which fields get updated. */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2BatchUpdateIntentsRequest {
   

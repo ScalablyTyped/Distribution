@@ -2,15 +2,13 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinuationToken extends StObject {
   
-  var nextMarker: String = js.native
+  var nextMarker: String
   
-  var targetLocation: String = js.native
+  var targetLocation: String
 }
 object ContinuationToken {
   

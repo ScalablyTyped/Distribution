@@ -2,15 +2,13 @@ package typings.asana.mod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OauthAuthenticatorOptions extends StObject {
   
-  var credentials: js.UndefOr[Credentials | String] = js.native
+  var credentials: js.UndefOr[Credentials | String] = js.undefined
   
-  var flowType: js.UndefOr[FlowType] = js.native
+  var flowType: js.UndefOr[FlowType] = js.undefined
 }
 object OauthAuthenticatorOptions {
   

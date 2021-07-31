@@ -2,16 +2,14 @@ package typings.coinbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetExchangeRateOpts extends StObject {
   
   /**
     * Base currency, default USD
     */
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
 }
 object GetExchangeRateOpts {
   

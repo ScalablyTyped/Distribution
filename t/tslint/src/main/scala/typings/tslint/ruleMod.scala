@@ -10,10 +10,13 @@ import typings.typescript.mod.Program
 import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ruleMod {
+  
+  @JSImport("tslint/lib/language/rule/rule", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("tslint/lib/language/rule/rule", "Replacement")
   @js.native
@@ -36,36 +39,32 @@ object ruleMod {
   /* static members */
   object Replacement {
     
-    @JSImport("tslint/lib/language/rule/rule", "Replacement.appendText")
+    @JSImport("tslint/lib/language/rule/rule", "Replacement")
     @js.native
-    def appendText(start: Double, text: String): Replacement = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/language/rule/rule", "Replacement.applyAll")
-    @js.native
-    def applyAll(content: String, replacements: js.Array[Replacement]): String = js.native
+    @scala.inline
+    def appendText(start: Double, text: String): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("appendText")(start.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Replacement]
     
-    @JSImport("tslint/lib/language/rule/rule", "Replacement.applyFixes")
-    @js.native
-    def applyFixes(content: String, fixes: js.Array[Fix]): String = js.native
+    @scala.inline
+    def applyAll(content: String, replacements: js.Array[Replacement]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAll")(content.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("tslint/lib/language/rule/rule", "Replacement.deleteFromTo")
-    @js.native
-    def deleteFromTo(start: Double, end: Double): Replacement = js.native
+    @scala.inline
+    def applyFixes(content: String, fixes: js.Array[Fix]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFixes")(content.asInstanceOf[js.Any], fixes.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("tslint/lib/language/rule/rule", "Replacement.deleteText")
-    @js.native
-    def deleteText(start: Double, length: Double): Replacement = js.native
+    @scala.inline
+    def deleteFromTo(start: Double, end: Double): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteFromTo")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Replacement]
     
-    @JSImport("tslint/lib/language/rule/rule", "Replacement.replaceFromTo")
-    @js.native
-    def replaceFromTo(start: Double, end: Double, text: String): Replacement = js.native
+    @scala.inline
+    def deleteText(start: Double, length: Double): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteText")(start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Replacement]
     
-    @JSImport("tslint/lib/language/rule/rule", "Replacement.replaceNode")
-    @js.native
-    def replaceNode(node: Node, text: String): Replacement = js.native
-    @JSImport("tslint/lib/language/rule/rule", "Replacement.replaceNode")
-    @js.native
-    def replaceNode(node: Node, text: String, sourceFile: SourceFile): Replacement = js.native
+    @scala.inline
+    def replaceFromTo(start: Double, end: Double, text: String): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceFromTo")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Replacement]
+    
+    @scala.inline
+    def replaceNode(node: Node, text: String): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceNode")(node.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Replacement]
+    @scala.inline
+    def replaceNode(node: Node, text: String, sourceFile: SourceFile): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceNode")(node.asInstanceOf[js.Any], text.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[Replacement]
   }
   
   @JSImport("tslint/lib/language/rule/rule", "RuleFailure")
@@ -136,9 +135,12 @@ object ruleMod {
   /* static members */
   object RuleFailure {
     
-    @JSImport("tslint/lib/language/rule/rule", "RuleFailure.compare")
+    @JSImport("tslint/lib/language/rule/rule", "RuleFailure")
     @js.native
-    def compare(a: RuleFailure, b: RuleFailure): Double = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def compare(a: RuleFailure, b: RuleFailure): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSImport("tslint/lib/language/rule/rule", "RuleFailurePosition")
@@ -159,24 +161,22 @@ object ruleMod {
     def toJson(): IRuleFailurePositionJson = js.native
   }
   
-  @JSImport("tslint/lib/language/rule/rule", "isTypedRule")
-  @js.native
-  def isTypedRule(rule: IRule): /* is tslint.tslint/lib/language/rule/rule.ITypedRule */ Boolean = js.native
+  @scala.inline
+  def isTypedRule(rule: IRule): /* is tslint.tslint/lib/language/rule/rule.ITypedRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypedRule")(rule.asInstanceOf[js.Any]).asInstanceOf[/* is tslint.tslint/lib/language/rule/rule.ITypedRule */ Boolean]
   
   type Fix = Replacement | js.Array[Replacement]
   
   type FixJson = ReplacementJson | js.Array[ReplacementJson]
   
-  @js.native
   trait ICodeExample extends StObject {
     
-    var config: String = js.native
+    var config: String
     
-    var description: String = js.native
+    var description: String
     
-    var fail: js.UndefOr[String] = js.native
+    var fail: js.UndefOr[String] = js.undefined
     
-    var pass: String = js.native
+    var pass: String
   }
   object ICodeExample {
     
@@ -206,12 +206,11 @@ object ruleMod {
     }
   }
   
-  @js.native
   trait IDisabledInterval extends StObject {
     
-    var endPosition: Double = js.native
+    var endPosition: Double
     
-    var startPosition: Double = js.native
+    var startPosition: Double
   }
   object IDisabledInterval {
     
@@ -232,7 +231,6 @@ object ruleMod {
     }
   }
   
-  @js.native
   trait IOptions extends StObject {
     
     /**
@@ -240,20 +238,20 @@ object ruleMod {
       * Tslint now handles disables itself.
       * This will be empty.
       */
-    var disabledIntervals: js.Array[IDisabledInterval] = js.native
+    var disabledIntervals: js.Array[IDisabledInterval]
     
-    var ruleArguments: js.Array[_] = js.native
+    var ruleArguments: js.Array[js.Any]
     
-    var ruleName: String = js.native
+    var ruleName: String
     
-    var ruleSeverity: RuleSeverity = js.native
+    var ruleSeverity: RuleSeverity
   }
   object IOptions {
     
     @scala.inline
     def apply(
       disabledIntervals: js.Array[IDisabledInterval],
-      ruleArguments: js.Array[_],
+      ruleArguments: js.Array[js.Any],
       ruleName: String,
       ruleSeverity: RuleSeverity
     ): IOptions = {
@@ -271,7 +269,7 @@ object ruleMod {
       def setDisabledIntervalsVarargs(value: IDisabledInterval*): Self = StObject.set(x, "disabledIntervals", js.Array(value :_*))
       
       @scala.inline
-      def setRuleArguments(value: js.Array[_]): Self = StObject.set(x, "ruleArguments", value.asInstanceOf[js.Any])
+      def setRuleArguments(value: js.Array[js.Any]): Self = StObject.set(x, "ruleArguments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRuleArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "ruleArguments", js.Array(value :_*))
@@ -284,17 +282,16 @@ object ruleMod {
     }
   }
   
-  @js.native
   trait IRule extends StObject {
     
     @JSName("apply")
-    def apply(sourceFile: SourceFile): js.Array[RuleFailure] = js.native
+    def apply(sourceFile: SourceFile): js.Array[RuleFailure]
     
-    def applyWithWalker(walker: IWalker): js.Array[RuleFailure] = js.native
+    def applyWithWalker(walker: IWalker): js.Array[RuleFailure]
     
-    def getOptions(): IOptions = js.native
+    def getOptions(): IOptions
     
-    def isEnabled(): Boolean = js.native
+    def isEnabled(): Boolean
   }
   object IRule {
     
@@ -326,22 +323,21 @@ object ruleMod {
     }
   }
   
-  @js.native
   trait IRuleFailureJson extends StObject {
     
-    var endPosition: IRuleFailurePositionJson = js.native
+    var endPosition: IRuleFailurePositionJson
     
-    var failure: String = js.native
+    var failure: String
     
-    var fix: js.UndefOr[FixJson] = js.native
+    var fix: js.UndefOr[FixJson] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var ruleName: String = js.native
+    var ruleName: String
     
-    var ruleSeverity: String = js.native
+    var ruleSeverity: String
     
-    var startPosition: IRuleFailurePositionJson = js.native
+    var startPosition: IRuleFailurePositionJson
   }
   object IRuleFailureJson {
     
@@ -390,14 +386,13 @@ object ruleMod {
     }
   }
   
-  @js.native
   trait IRuleFailurePositionJson extends StObject {
     
-    var character: Double = js.native
+    var character: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var position: Double = js.native
+    var position: Double
   }
   object IRuleFailurePositionJson {
     
@@ -421,39 +416,38 @@ object ruleMod {
     }
   }
   
-  @js.native
   trait IRuleMetadata extends StObject {
     
     /**
       * Examples demonstrating what the lint rule will pass and fail
       */
-    var codeExamples: js.UndefOr[js.Array[ICodeExample]] = js.native
+    var codeExamples: js.UndefOr[js.Array[ICodeExample]] = js.undefined
     
     /**
       * A rule deprecation message, if applicable.
       */
-    var deprecationMessage: js.UndefOr[String] = js.native
+    var deprecationMessage: js.UndefOr[String] = js.undefined
     
     /**
       * A short, one line description of what the rule does.
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * More elaborate details about the rule.
       */
-    var descriptionDetails: js.UndefOr[String] = js.native
+    var descriptionDetails: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not the rule will provide fix suggestions.
       */
-    var hasFix: js.UndefOr[Boolean] = js.native
+    var hasFix: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Examples of what a standard config for the rule might look like.
       * Using a string[] here is deprecated. Write the options as a JSON object instead.
       */
-    var optionExamples: js.UndefOr[js.Array[`true` | js.Array[_] | OptionsAny | String]] = js.native
+    var optionExamples: js.UndefOr[js.Array[`true` | js.Array[js.Any] | OptionsAny | String]] = js.undefined
     
     /**
       * Schema of the options the rule accepts.
@@ -461,37 +455,37 @@ object ruleMod {
       * This field describes the options after that boolean.
       * If null, this rule has no options and is not configurable.
       */
-    var options: js.Any = js.native
+    var options: js.Any
     
     /**
       * An explanation of the available options for the rule.
       */
-    var optionsDescription: String = js.native
+    var optionsDescription: String
     
     /**
       * An explanation of why the rule is useful.
       */
-    var rationale: js.UndefOr[String] = js.native
+    var rationale: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not the rule requires type info to run.
       */
-    var requiresTypeInfo: js.UndefOr[Boolean] = js.native
+    var requiresTypeInfo: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The kebab-case name of the rule.
       */
-    var ruleName: String = js.native
+    var ruleName: String
     
     /**
       * The type of the rule - its overall purpose
       */
-    var `type`: RuleType = js.native
+    var `type`: RuleType
     
     /**
       * Whether or not the rule use for TypeScript only. If `false`, this rule may be used with .js files.
       */
-    var typescriptOnly: Boolean = js.native
+    var typescriptOnly: Boolean
   }
   object IRuleMetadata {
     
@@ -543,7 +537,7 @@ object ruleMod {
       def setHasFixUndefined: Self = StObject.set(x, "hasFix", js.undefined)
       
       @scala.inline
-      def setOptionExamples(value: js.Array[`true` | js.Array[_] | OptionsAny | String]): Self = StObject.set(x, "optionExamples", value.asInstanceOf[js.Any])
+      def setOptionExamples(value: js.Array[`true` | js.Array[js.Any] | OptionsAny | String]): Self = StObject.set(x, "optionExamples", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOptionExamplesUndefined: Self = StObject.set(x, "optionExamples", js.undefined)
@@ -580,10 +574,11 @@ object ruleMod {
     }
   }
   
-  @js.native
-  trait ITypedRule extends IRule {
+  trait ITypedRule
+    extends StObject
+       with IRule {
     
-    def applyWithProgram(sourceFile: SourceFile, program: Program): js.Array[RuleFailure] = js.native
+    def applyWithProgram(sourceFile: SourceFile, program: Program): js.Array[RuleFailure]
   }
   object ITypedRule {
     
@@ -607,14 +602,13 @@ object ruleMod {
     }
   }
   
-  @js.native
   trait ReplacementJson extends StObject {
     
-    var innerLength: Double = js.native
+    var innerLength: Double
     
-    var innerStart: Double = js.native
+    var innerStart: Double
     
-    var innerText: String = js.native
+    var innerText: String
   }
   object ReplacementJson {
     
@@ -639,7 +633,9 @@ object ruleMod {
   }
   
   @js.native
-  trait RuleConstructor extends Instantiable1[/* options */ IOptions, IRule] {
+  trait RuleConstructor
+    extends StObject
+       with Instantiable1[/* options */ IOptions, IRule] {
     
     var metadata: IRuleMetadata = js.native
   }

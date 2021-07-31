@@ -2,13 +2,11 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiViewCalendarMessages extends StObject {
   
-  var weekColumnHeader: js.UndefOr[String] = js.native
+  var weekColumnHeader: js.UndefOr[String] = js.undefined
 }
 object MultiViewCalendarMessages {
   

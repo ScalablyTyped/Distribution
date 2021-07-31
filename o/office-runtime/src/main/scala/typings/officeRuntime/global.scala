@@ -7,12 +7,15 @@ import typings.officeRuntime.OfficeRuntime.DisplayWebDialogOptions
 import typings.officeRuntime.OfficeRuntime.Storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object OfficeRuntime {
+    
+    @JSGlobal("OfficeRuntime")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Provides information about what Requirement Sets are supported in current environment.
@@ -36,12 +39,10 @@ object global {
       * @param url Must be a string.
       * @param options Optional parameter. Must be of type DisplayWebDialogOptions.
       */
-    @JSGlobal("OfficeRuntime.displayWebDialog")
-    @js.native
-    def displayWebDialog(url: String): js.Promise[Dialog] = js.native
-    @JSGlobal("OfficeRuntime.displayWebDialog")
-    @js.native
-    def displayWebDialog(url: String, options: DisplayWebDialogOptions): js.Promise[Dialog] = js.native
+    @scala.inline
+    def displayWebDialog(url: String): js.Promise[Dialog] = ^.asInstanceOf[js.Dynamic].applyDynamic("displayWebDialog")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Dialog]]
+    @scala.inline
+    def displayWebDialog(url: String, options: DisplayWebDialogOptions): js.Promise[Dialog] = (^.asInstanceOf[js.Dynamic].applyDynamic("displayWebDialog")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Dialog]]
     
     /**
       * Asynchronous, global, and persistent key-value storage.

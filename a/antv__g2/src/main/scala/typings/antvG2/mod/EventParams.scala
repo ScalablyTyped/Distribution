@@ -4,30 +4,28 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * base type
   */
-@js.native
 trait EventParams extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var geom: js.UndefOr[js.Any] = js.native
+  var geom: js.UndefOr[js.Any] = js.undefined
   
-  var shape: js.UndefOr[Shape] = js.native
+  var shape: js.UndefOr[Shape] = js.undefined
   
-  var target: js.UndefOr[HTMLCanvasElement] = js.native
+  var target: js.UndefOr[HTMLCanvasElement] = js.undefined
   
-  var toElement: js.UndefOr[HTMLElement] = js.native
+  var toElement: js.UndefOr[HTMLElement] = js.undefined
   
-  var views: js.UndefOr[js.Array[View]] = js.native
+  var views: js.UndefOr[js.Array[View]] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object EventParams {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregationConfig extends StObject {
   
   /**
     *  Specifies whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated. 
     */
-  var aggregationType: js.UndefOr[AggregationType] = js.native
+  var aggregationType: js.UndefOr[AggregationType] = js.undefined
 }
 object AggregationConfig {
   

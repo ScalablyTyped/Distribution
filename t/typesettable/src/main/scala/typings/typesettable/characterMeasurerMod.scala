@@ -6,7 +6,6 @@ import typings.typesettable.contextsMod.IRulerFactoryContext
 import typings.typesettable.measurerMod.Measurer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object characterMeasurerMod {

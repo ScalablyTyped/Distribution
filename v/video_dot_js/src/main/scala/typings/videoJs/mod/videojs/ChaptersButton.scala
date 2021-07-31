@@ -3,7 +3,6 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.EventTarget.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Cues are navigation vs. other tracks of alternative languages
   */
 @js.native
-trait ChaptersButton extends TextTrackButton {
+trait ChaptersButton
+  extends StObject
+     with TextTrackButton {
   
   /**
     * Find the track object that is currently in use by this ChaptersButton

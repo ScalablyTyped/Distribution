@@ -2,33 +2,31 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextureRotationAngle extends StObject {
   
-  var asynchronous: js.UndefOr[Boolean] = js.native
+  var asynchronous: js.UndefOr[Boolean] = js.undefined
   
-  var debugShowBoundingVolume: js.UndefOr[Boolean] = js.native
+  var debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var granularity: js.UndefOr[Double] = js.native
+  var granularity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[js.Any] = js.native
+  var id: js.UndefOr[js.Any] = js.undefined
   
-  var material: js.UndefOr[typings.cesium.mod.Material] = js.native
+  var material: js.UndefOr[typings.cesium.mod.Material] = js.undefined
   
-  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.native
+  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var textureRotationAngle: js.UndefOr[Double] = js.native
+  var textureRotationAngle: js.UndefOr[Double] = js.undefined
 }
 object TextureRotationAngle {
   

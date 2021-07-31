@@ -2,31 +2,29 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashBitmapItem extends StObject {
   
-  var allowSmoothing: Boolean = js.native
+  var allowSmoothing: Boolean
   
-  var compressionType: String = js.native
+  var compressionType: String
   
-  def exportToFile(fileURI: String): Boolean = js.native
+  def exportToFile(fileURI: String): Boolean
   
-  var fileLastModifiedDate: String = js.native
+  var fileLastModifiedDate: String
   
-  var originalCompressionType: String = js.native
+  var originalCompressionType: String
   
-  var sourceFileExists: Boolean = js.native
+  var sourceFileExists: Boolean
   
-  var sourceFileIsCurrent: Boolean = js.native
+  var sourceFileIsCurrent: Boolean
   
-  var sourceFilePath: String = js.native
+  var sourceFilePath: String
   
-  var useDeblocking: Boolean = js.native
+  var useDeblocking: Boolean
   
-  var useImportedJPEGQuality: Boolean = js.native
+  var useImportedJPEGQuality: Boolean
 }
 object FlashBitmapItem {
   

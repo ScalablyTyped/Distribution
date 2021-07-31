@@ -2,28 +2,26 @@ package typings.koaJson
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Param extends StObject {
     
     /**
       * optional query-string param for pretty responses [none]
       */
-    var param: js.UndefOr[String] = js.native
+    var param: js.UndefOr[String] = js.undefined
     
     /**
       * default to pretty response [true]
       */
-    var pretty: js.UndefOr[Boolean] = js.native
+    var pretty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * JSON spaces [2]
       */
-    var spaces: js.UndefOr[Double] = js.native
+    var spaces: js.UndefOr[Double] = js.undefined
   }
   object Param {
     

@@ -2,31 +2,30 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 画布 https://docs.alipay.com/mini/api/ui-canvas
-@js.native
 trait ToTempFilePathOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   // 输出的图片宽度，默认为 width
-  var destHeight: Double = js.native
+  var destHeight: Double
   
   // 画布高度，默认为 canvas 高度 - y
-  var destWidth: Double = js.native
+  var destWidth: Double
   
   // 画布宽度，默认为 canvas 宽度 - x
-  var height: Double = js.native
+  var height: Double
   
   // 画布 y 轴起点，默认为 0
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
   // 画布 x 轴起点，默认为 0
-  var y: Double = js.native
+  var y: Double
 }
 object ToTempFilePathOptions {
   

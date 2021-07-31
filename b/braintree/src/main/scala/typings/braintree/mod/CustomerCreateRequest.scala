@@ -2,37 +2,35 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerCreateRequest extends StObject {
   
-  var company: js.UndefOr[String] = js.native
+  var company: js.UndefOr[String] = js.undefined
   
-  var creditCard: js.UndefOr[CreditCardCreateRequest] = js.native
+  var creditCard: js.UndefOr[CreditCardCreateRequest] = js.undefined
   
-  var customFields: js.UndefOr[js.Any] = js.native
+  var customFields: js.UndefOr[js.Any] = js.undefined
   
-  var deviceData: js.UndefOr[String] = js.native
+  var deviceData: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var fax: js.UndefOr[String] = js.native
+  var fax: js.UndefOr[String] = js.undefined
   
-  var firstName: js.UndefOr[String] = js.native
+  var firstName: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var lastName: js.UndefOr[String] = js.native
+  var lastName: js.UndefOr[String] = js.undefined
   
-  var paymentMethodNonce: js.UndefOr[String] = js.native
+  var paymentMethodNonce: js.UndefOr[String] = js.undefined
   
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
-  var riskData: js.UndefOr[CustomerRiskData] = js.native
+  var riskData: js.UndefOr[CustomerRiskData] = js.undefined
   
-  var website: js.UndefOr[String] = js.native
+  var website: js.UndefOr[String] = js.undefined
 }
 object CustomerCreateRequest {
   

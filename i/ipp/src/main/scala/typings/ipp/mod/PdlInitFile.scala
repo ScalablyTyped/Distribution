@@ -2,17 +2,15 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PdlInitFile extends StObject {
   
-  var `pdl-init-file-entry`: js.UndefOr[String] = js.native
+  var `pdl-init-file-entry`: js.UndefOr[String] = js.undefined
   
-  var `pdl-init-file-location`: js.UndefOr[String] = js.native
+  var `pdl-init-file-location`: js.UndefOr[String] = js.undefined
   
-  var `pdl-init-file-name`: js.UndefOr[String] = js.native
+  var `pdl-init-file-name`: js.UndefOr[String] = js.undefined
 }
 object PdlInitFile {
   

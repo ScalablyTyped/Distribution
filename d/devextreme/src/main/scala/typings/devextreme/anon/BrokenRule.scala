@@ -14,35 +14,33 @@ import typings.devextreme.mod.DevExpress.ui.RequiredRule
 import typings.devextreme.mod.DevExpress.ui.StringLengthRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrokenRule extends StObject {
   
   var brokenRule: js.UndefOr[
     RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-  ] = js.native
+  ] = js.undefined
   
   var brokenRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var isValid: js.UndefOr[Boolean] = js.native
+  var isValid: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[valid | invalid | pending] = js.native
+  var status: js.UndefOr[valid | invalid | pending] = js.undefined
   
   var validationRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object BrokenRule {
   

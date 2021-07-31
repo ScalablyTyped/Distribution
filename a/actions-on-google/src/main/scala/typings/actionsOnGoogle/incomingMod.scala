@@ -8,7 +8,6 @@ import typings.actionsOnGoogle.v1Mod.DialogflowV1Fulfillment
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object incomingMod {

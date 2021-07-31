@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object MediaCaptureThermalStatus extends StObject {
   
   /** The thermal state is normal. */
   @js.native
-  sealed trait normal extends MediaCaptureThermalStatus
+  sealed trait normal
+    extends StObject
+       with MediaCaptureThermalStatus
   
   /** The capture device is overheated. You should stop the current capture session and save any captured media. */
   @js.native
-  sealed trait overheated extends MediaCaptureThermalStatus
+  sealed trait overheated
+    extends StObject
+       with MediaCaptureThermalStatus
 }

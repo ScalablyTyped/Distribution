@@ -2,28 +2,26 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalaccelerator {
   
-  @js.native
   trait AcceleratorAttributes extends StObject {
     
     /**
       * Indicates whether flow logs are enabled.
       */
-    var flowLogsEnabled: js.UndefOr[Boolean] = js.native
+    var flowLogsEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The name of the Amazon S3 bucket for the flow logs.
       */
-    var flowLogsS3Bucket: js.UndefOr[String] = js.native
+    var flowLogsS3Bucket: js.UndefOr[String] = js.undefined
     
     /**
       * The prefix for the location in the Amazon S3 bucket for the flow logs.
       */
-    var flowLogsS3Prefix: js.UndefOr[String] = js.native
+    var flowLogsS3Prefix: js.UndefOr[String] = js.undefined
   }
   object AcceleratorAttributes {
     
@@ -56,18 +54,17 @@ object globalaccelerator {
     }
   }
   
-  @js.native
   trait AcceleratorIpSet extends StObject {
     
     /**
       * A list of IP addresses in the IP address set.
       */
-    var ipAddresses: js.Array[String] = js.native
+    var ipAddresses: js.Array[String]
     
     /**
       * The types of IP addresses included in this IP set.
       */
-    var ipFamily: String = js.native
+    var ipFamily: String
   }
   object AcceleratorIpSet {
     
@@ -91,20 +88,19 @@ object globalaccelerator {
     }
   }
   
-  @js.native
   trait EndpointGroupEndpointConfiguration extends StObject {
     
-    var clientIpPreservationEnabled: Boolean = js.native
+    var clientIpPreservationEnabled: Boolean
     
     /**
       * An ID for the endpoint. If the endpoint is a Network Load Balancer or Application Load Balancer, this is the Amazon Resource Name (ARN) of the resource. If the endpoint is an Elastic IP address, this is the Elastic IP address allocation ID.
       */
-    var endpointId: js.UndefOr[String] = js.native
+    var endpointId: js.UndefOr[String] = js.undefined
     
     /**
       * The weight associated with the endpoint. When you add weights to endpoints, you configure AWS Global Accelerator to route traffic based on proportions that you specify.
       */
-    var weight: js.UndefOr[Double] = js.native
+    var weight: js.UndefOr[Double] = js.undefined
   }
   object EndpointGroupEndpointConfiguration {
     
@@ -134,18 +130,17 @@ object globalaccelerator {
     }
   }
   
-  @js.native
   trait EndpointGroupPortOverride extends StObject {
     
     /**
       * The endpoint port that you want a listener port to be mapped to. This is the port on the endpoint, such as the Application Load Balancer or Amazon EC2 instance.
       */
-    var endpointPort: Double = js.native
+    var endpointPort: Double
     
     /**
       * The listener port that you want to map to a specific endpoint port. This is the port that user traffic arrives to the Global Accelerator on.
       */
-    var listenerPort: Double = js.native
+    var listenerPort: Double
   }
   object EndpointGroupPortOverride {
     
@@ -166,18 +161,17 @@ object globalaccelerator {
     }
   }
   
-  @js.native
   trait ListenerPortRange extends StObject {
     
     /**
       * The first port in the range of ports, inclusive.
       */
-    var fromPort: js.UndefOr[Double] = js.native
+    var fromPort: js.UndefOr[Double] = js.undefined
     
     /**
       * The last port in the range of ports, inclusive.
       */
-    var toPort: js.UndefOr[Double] = js.native
+    var toPort: js.UndefOr[Double] = js.undefined
   }
   object ListenerPortRange {
     

@@ -3,29 +3,27 @@ package typings.bingmaps.Microsoft.Maps
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInfoboxEventArgs extends StObject {
   
   /** The event that occurred. **/
-  var eventName: String = js.native
+  var eventName: String
   
   /** Original mouse event from the browser. */
-  var originalEvent: js.UndefOr[MouseEvent] = js.native
+  var originalEvent: js.UndefOr[MouseEvent] = js.undefined
   
   /** The x-value of the pixel coordinate on the page of the mouse cursor. **/
-  var pageX: Double = js.native
+  var pageX: Double
   
   /** The y-value of the pixel coordinate on the page of the mouse cursor. **/
-  var pageY: Double = js.native
+  var pageY: Double
   
   /** The infobox object that fired the event. **/
-  var target: Infobox = js.native
+  var target: Infobox
   
   /** The type of the object that fired the event.This will always be 'infobox'. **/
-  var targetType: String = js.native
+  var targetType: String
 }
 object IInfoboxEventArgs {
   

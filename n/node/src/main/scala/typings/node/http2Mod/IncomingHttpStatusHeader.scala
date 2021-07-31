@@ -2,14 +2,12 @@ package typings.node.http2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncomingHttpStatusHeader extends StObject {
   
   @JSName(":status")
-  var Colonstatus: js.UndefOr[Double] = js.native
+  var Colonstatus: js.UndefOr[Double] = js.undefined
 }
 object IncomingHttpStatusHeader {
   

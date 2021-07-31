@@ -3,84 +3,82 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provenance of a build. Contains all information needed to verify the full
   * details about the build from source to completion.
   */
-@js.native
 trait SchemaBuildProvenance extends StObject {
   
   /**
     * Special options applied to this build. This is a catch-all field where
     * build providers can enter any desired additional details.
     */
-  var buildOptions: js.UndefOr[StringDictionary[String]] = js.native
+  var buildOptions: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Version string of the builder at the time this build was executed.
     */
-  var builderVersion: js.UndefOr[String] = js.native
+  var builderVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Output of the build.
     */
-  var builtArtifacts: js.UndefOr[js.Array[SchemaArtifact]] = js.native
+  var builtArtifacts: js.UndefOr[js.Array[SchemaArtifact]] = js.undefined
   
   /**
     * Commands requested by the build.
     */
-  var commands: js.UndefOr[js.Array[SchemaCommand]] = js.native
+  var commands: js.UndefOr[js.Array[SchemaCommand]] = js.undefined
   
   /**
     * Time at which the build was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * E-mail address of the user who initiated this build. Note that this was
     * the user&#39;s e-mail address at the time the build was initiated; this
     * address may not represent the same end-user for all time.
     */
-  var creator: js.UndefOr[String] = js.native
+  var creator: js.UndefOr[String] = js.undefined
   
   /**
     * Time at which execution of the build was finished.
     */
-  var finishTime: js.UndefOr[String] = js.native
+  var finishTime: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier of the build.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Google Cloud Storage bucket where logs were written.
     */
-  var logsBucket: js.UndefOr[String] = js.native
+  var logsBucket: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the project.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Details of the Source input to the build.
     */
-  var sourceProvenance: js.UndefOr[SchemaSource] = js.native
+  var sourceProvenance: js.UndefOr[SchemaSource] = js.undefined
   
   /**
     * Time at which execution of the build was started.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Trigger identifier if the build was triggered automatically; empty if
     * not.
     */
-  var triggerId: js.UndefOr[String] = js.native
+  var triggerId: js.UndefOr[String] = js.undefined
 }
 object SchemaBuildProvenance {
   

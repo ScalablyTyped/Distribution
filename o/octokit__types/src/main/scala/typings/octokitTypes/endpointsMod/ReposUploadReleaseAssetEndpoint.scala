@@ -4,53 +4,51 @@ import typings.node.Buffer
 import typings.octokitTypes.anon.ContenttypeString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposUploadReleaseAssetEndpoint extends StObject {
   
   /**
     * For https://api.github.com, set `baseUrl` to `https://uploads.github.com`. For GitHub Enterprise Server, set it to `<your hostname>/api/uploads`
     */
-  var baseUrl: String = js.native
+  var baseUrl: String
   
   /**
     * The raw file data
     */
-  var data: String | Buffer = js.native
+  var data: String | Buffer
   
-  var headers: ContenttypeString = js.native
+  var headers: ContenttypeString
   
   /**
     * label parameter
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * name parameter
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The URL origin (protocol + host name + port) is included in `upload_url` returned in the response of the "Create a release" endpoint
     */
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
   /**
     * owner parameter
     */
-  var owner: String = js.native
+  var owner: String
   
   /**
     * release_id parameter
     */
-  var release_id: Double = js.native
+  var release_id: Double
   
   /**
     * repo parameter
     */
-  var repo: String = js.native
+  var repo: String
 }
 object ReposUploadReleaseAssetEndpoint {
   

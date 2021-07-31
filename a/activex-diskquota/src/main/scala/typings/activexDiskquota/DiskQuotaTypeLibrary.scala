@@ -8,7 +8,6 @@ import typings.activexDiskquota.activexDiskquotaNumbers.`4`
 import typings.activexDiskquota.activexDiskquotaNumbers.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DiskQuotaTypeLibrary {
@@ -45,47 +44,46 @@ object DiskQuotaTypeLibrary {
   }
   
   /** Automation interface for DiskQuotaUser */
-  @js.native
   trait DIDiskQuotaUser extends StObject {
     
     /** Name of user's account container */
-    val AccountContainerName: String = js.native
+    val AccountContainerName: String
     
     /** Status of user's account */
-    val AccountStatus: AccountStatusConstants = js.native
+    val AccountStatus: AccountStatusConstants
     
     @JSName("DiskQuotaTypeLibrary.DIDiskQuotaUser_typekey")
-    var DiskQuotaTypeLibraryDotDIDiskQuotaUser_typekey: DIDiskQuotaUser = js.native
+    var DiskQuotaTypeLibraryDotDIDiskQuotaUser_typekey: DIDiskQuotaUser
     
     /** User's display name */
-    val DisplayName: String = js.native
+    val DisplayName: String
     
     /** Unique ID number */
-    val ID: Double = js.native
+    val ID: Double
     
     /** Invalidate data cached in user object */
-    def Invalidate(): Unit = js.native
+    def Invalidate(): Unit
     
     /** User's logon account name */
-    val LogonName: String = js.native
+    val LogonName: String
     
     /** User's quota limit (bytes) */
-    var QuotaLimit: Double = js.native
+    var QuotaLimit: Double
     
     /** User's quota limit (text) */
-    val QuotaLimitText: String = js.native
+    val QuotaLimitText: String
     
     /** User's quota warning threshold (bytes) */
-    var QuotaThreshold: Double = js.native
+    var QuotaThreshold: Double
     
     /** User's quota warning threshold (text) */
-    val QuotaThresholdText: String = js.native
+    val QuotaThresholdText: String
     
     /** Quota charged to user (bytes) */
-    val QuotaUsed: Double = js.native
+    val QuotaUsed: Double
     
     /** Quota charged to user (text) */
-    val QuotaUsedText: String = js.native
+    val QuotaUsedText: String
   }
   object DIDiskQuotaUser {
     
@@ -155,65 +153,64 @@ object DiskQuotaTypeLibrary {
   }
   
   /** Microsoft Disk Quota */
-  @js.native
   trait DiskQuotaControl extends StObject {
     
     /** Add a user quota entry by Name */
-    def AddUser(LogonName: String): DIDiskQuotaUser = js.native
+    def AddUser(LogonName: String): DIDiskQuotaUser
     
     /** Default quota limit applied to new volume users (byte value) */
-    var DefaultQuotaLimit: Double = js.native
+    var DefaultQuotaLimit: Double
     
     /** Default quota limit applied to new volume users (text string) */
-    val DefaultQuotaLimitText: String = js.native
+    val DefaultQuotaLimitText: String
     
     /** Default warning threshold applied to new volume users (byte value) */
-    var DefaultQuotaThreshold: Double = js.native
+    var DefaultQuotaThreshold: Double
     
     /** Default warning threshold applied to new volume users (text string) */
-    val DefaultQuotaThresholdText: String = js.native
+    val DefaultQuotaThresholdText: String
     
     /** Delete a user quota entry */
-    def DeleteUser(pUser: DIDiskQuotaUser): Unit = js.native
+    def DeleteUser(pUser: DIDiskQuotaUser): Unit
     
     @JSName("DiskQuotaTypeLibrary.DiskQuotaControl_typekey")
-    var DiskQuotaTypeLibraryDotDiskQuotaControl_typekey: DiskQuotaControl = js.native
+    var DiskQuotaTypeLibraryDotDiskQuotaControl_typekey: DiskQuotaControl
     
     /** Find a user quota entry by Name */
-    def FindUser(LogonName: String): DIDiskQuotaUser = js.native
+    def FindUser(LogonName: String): DIDiskQuotaUser
     
     /** Promote a user quota entry to the head of the name resolution queue */
-    def GiveUserNameResolutionPriority(pUser: DIDiskQuotaUser): Unit = js.native
+    def GiveUserNameResolutionPriority(pUser: DIDiskQuotaUser): Unit
     
     /** Initialize the quota control object for a specified volume */
-    def Initialize(path: String, bReadWrite: Boolean): Unit = js.native
+    def Initialize(path: String, bReadWrite: Boolean): Unit
     
     /** Invalidate the cache of user name information */
-    def InvalidateSidNameCache(): Unit = js.native
+    def InvalidateSidNameCache(): Unit
     
     /** Write event log entry when user exceeds quota limit */
-    var LogQuotaLimit: Boolean = js.native
+    var LogQuotaLimit: Boolean
     
     /** Write event log entry when user exceeds quota warning threshold */
-    var LogQuotaThreshold: Boolean = js.native
+    var LogQuotaThreshold: Boolean
     
     /** Indicates if quota information is out of date */
-    val QuotaFileIncomplete: Boolean = js.native
+    val QuotaFileIncomplete: Boolean
     
     /** Indicates if quota information is being rebuilt */
-    val QuotaFileRebuilding: Boolean = js.native
+    val QuotaFileRebuilding: Boolean
     
     /** State of the volume's disk quota system */
-    var QuotaState: QuotaStateConstants = js.native
+    var QuotaState: QuotaStateConstants
     
     /** Terminate the user name resolution thread */
-    def ShutdownNameResolution(): Unit = js.native
+    def ShutdownNameResolution(): Unit
     
     /** Translates a user logon name to a security ID */
-    def TranslateLogonNameToSID(LogonName: String): String = js.native
+    def TranslateLogonNameToSID(LogonName: String): String
     
     /** Control the resolution of user Security IDs to user Names */
-    var UserNameResolution: UserNameResolutionConstants = js.native
+    var UserNameResolution: UserNameResolutionConstants
   }
   object DiskQuotaControl {
     

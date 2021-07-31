@@ -2,29 +2,27 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings to define a table border.
   */
-@js.native
 trait TableBorderSettings extends StObject {
   
   /**
     * Gets or sets the border color.
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * Gets or sets the border line style.
     */
-  var style: BorderLineStyle = js.native
+  var style: BorderLineStyle
   
   /**
     * Gets or sets the border line width in twips.
     */
-  var width: Double = js.native
+  var width: Double
 }
 object TableBorderSettings {
   

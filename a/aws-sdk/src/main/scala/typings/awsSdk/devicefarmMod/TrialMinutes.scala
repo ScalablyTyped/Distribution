@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrialMinutes extends StObject {
   
   /**
     * The number of free trial minutes remaining in the account.
     */
-  var remaining: js.UndefOr[Double] = js.native
+  var remaining: js.UndefOr[Double] = js.undefined
   
   /**
     * The total number of free trial minutes that the account started with.
     */
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object TrialMinutes {
   

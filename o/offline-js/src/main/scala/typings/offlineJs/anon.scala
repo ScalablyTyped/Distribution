@@ -2,17 +2,15 @@ package typings.offlineJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Delay extends StObject {
     
-    var delay: Double = js.native
+    var delay: Double
     
-    var initialDelay: Double = js.native
+    var initialDelay: Double
   }
   object Delay {
     

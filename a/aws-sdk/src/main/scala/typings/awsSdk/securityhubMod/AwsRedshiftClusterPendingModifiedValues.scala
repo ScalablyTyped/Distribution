@@ -2,66 +2,64 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRedshiftClusterPendingModifiedValues extends StObject {
   
   /**
     * The pending or in-progress change to the automated snapshot retention period.
     */
-  var AutomatedSnapshotRetentionPeriod: js.UndefOr[Integer] = js.native
+  var AutomatedSnapshotRetentionPeriod: js.UndefOr[Integer] = js.undefined
   
   /**
     * The pending or in-progress change to the identifier for the cluster.
     */
-  var ClusterIdentifier: js.UndefOr[NonEmptyString] = js.native
+  var ClusterIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The pending or in-progress change to the cluster type.
     */
-  var ClusterType: js.UndefOr[NonEmptyString] = js.native
+  var ClusterType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The pending or in-progress change to the service version.
     */
-  var ClusterVersion: js.UndefOr[NonEmptyString] = js.native
+  var ClusterVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The encryption type for a cluster.
     */
-  var EncryptionType: js.UndefOr[NonEmptyString] = js.native
+  var EncryptionType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates whether to create the cluster with enhanced VPC routing enabled.
     */
-  var EnhancedVpcRouting: js.UndefOr[Boolean] = js.native
+  var EnhancedVpcRouting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the maintenance track that the cluster changes to during the next maintenance window.
     */
-  var MaintenanceTrackName: js.UndefOr[NonEmptyString] = js.native
+  var MaintenanceTrackName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The pending or in-progress change to the master user password for the cluster.
     */
-  var MasterUserPassword: js.UndefOr[NonEmptyString] = js.native
+  var MasterUserPassword: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The pending or in-progress change to the cluster's node type.
     */
-  var NodeType: js.UndefOr[NonEmptyString] = js.native
+  var NodeType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The pending or in-progress change to the number of nodes in the cluster.
     */
-  var NumberOfNodes: js.UndefOr[Integer] = js.native
+  var NumberOfNodes: js.UndefOr[Integer] = js.undefined
   
   /**
     * The pending or in-progress change to whether the cluster can be connected to from the public network.
     */
-  var PubliclyAccessible: js.UndefOr[Boolean] = js.native
+  var PubliclyAccessible: js.UndefOr[Boolean] = js.undefined
 }
 object AwsRedshiftClusterPendingModifiedValues {
   

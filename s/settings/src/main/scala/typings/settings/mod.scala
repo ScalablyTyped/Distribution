@@ -4,26 +4,26 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.settings.anon.DictenvName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("settings", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Settings {
+  class ^ protected ()
+    extends StObject
+       with Settings {
     def this(pathOrModule: PathOrModule) = this()
     def this(pathOrModule: PathOrModule, options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var defaults: js.UndefOr[js.Any] = js.native
+    var defaults: js.UndefOr[js.Any] = js.undefined
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
   }
   object Options {
     

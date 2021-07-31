@@ -3,33 +3,31 @@ package typings.aceBuilds.mod.Ace
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchOptions extends StObject {
   
-  var backwards: Boolean = js.native
+  var backwards: Boolean
   
-  var caseSensitive: Boolean = js.native
+  var caseSensitive: Boolean
   
-  var needle: String | RegExp = js.native
+  var needle: String | RegExp
   
-  var preserveCase: Boolean = js.native
+  var preserveCase: Boolean
   
-  var preventScroll: Boolean = js.native
+  var preventScroll: Boolean
   
-  var range: Range = js.native
+  var range: Range
   
-  var regExp: RegExp = js.native
+  var regExp: RegExp
   
-  var skipCurrent: Boolean = js.native
+  var skipCurrent: Boolean
   
-  var start: Range = js.native
+  var start: Range
   
-  var wholeWord: String = js.native
+  var wholeWord: String
   
-  var wrap: Boolean = js.native
+  var wrap: Boolean
 }
 object SearchOptions {
   

@@ -3,17 +3,15 @@ package typings.antDesignPro.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollapseText extends StObject {
   
-  var collapseText: js.UndefOr[ReactNode] = js.native
+  var collapseText: js.UndefOr[ReactNode] = js.undefined
   
-  var expandText: js.UndefOr[ReactNode] = js.native
+  var expandText: js.UndefOr[ReactNode] = js.undefined
   
-  var selectAllText: js.UndefOr[ReactNode] = js.native
+  var selectAllText: js.UndefOr[ReactNode] = js.undefined
 }
 object CollapseText {
   

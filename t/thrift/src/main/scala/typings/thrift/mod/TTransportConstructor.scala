@@ -6,11 +6,15 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TTransportConstructor
-  extends Instantiable0[TTransport]
+  extends StObject
+     with Instantiable0[TTransport]
      with Instantiable1[/* buffer */ Buffer, TTransport]
-     with Instantiable2[js.UndefOr[/* buffer */ Buffer], /* callback */ TTransportCallback, TTransport]
+     with Instantiable2[
+      (/* buffer */ Buffer) | (/* buffer */ Unit), 
+      /* callback */ TTransportCallback, 
+      TTransport
+    ]

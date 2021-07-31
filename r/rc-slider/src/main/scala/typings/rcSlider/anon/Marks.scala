@@ -2,19 +2,17 @@ package typings.rcSlider.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Marks extends StObject {
   
-  var marks: js.Any = js.native
+  var marks: js.Any
   
-  var max: js.Any = js.native
+  var max: js.Any
   
-  var min: js.Any = js.native
+  var min: js.Any
   
-  var step: js.Any = js.native
+  var step: js.Any
 }
 object Marks {
   

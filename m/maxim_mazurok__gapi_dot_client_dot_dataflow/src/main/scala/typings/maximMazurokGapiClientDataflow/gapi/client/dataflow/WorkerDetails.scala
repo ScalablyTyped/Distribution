@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkerDetails extends StObject {
   
   /** Work items processed by this worker, sorted by time. */
-  var workItems: js.UndefOr[js.Array[WorkItemDetails]] = js.native
+  var workItems: js.UndefOr[js.Array[WorkItemDetails]] = js.undefined
   
   /** Name of this worker */
-  var workerName: js.UndefOr[String] = js.native
+  var workerName: js.UndefOr[String] = js.undefined
 }
 object WorkerDetails {
   

@@ -5,15 +5,13 @@ import typings.devexpressUtils.mutableMod.MutableInterval
 import typings.std.HTMLScriptElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait HtmlScriptElement extends StObject {
     
-    var htmlScriptElement: HTMLScriptElement = js.native
+    var htmlScriptElement: HTMLScriptElement
   }
   object HtmlScriptElement {
     
@@ -31,10 +29,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Interval[T /* <: MutableInterval */] extends StObject {
     
-    var interval: T = js.native
+    var interval: T
   }
   object Interval {
     
@@ -45,17 +42,16 @@ object anon {
     }
     
     @scala.inline
-    implicit class IntervalMutableBuilder[Self <: Interval[_], T /* <: MutableInterval */] (val x: Self with Interval[T]) extends AnyVal {
+    implicit class IntervalMutableBuilder[Self <: Interval[?], T /* <: MutableInterval */] (val x: Self & Interval[T]) extends AnyVal {
       
       @scala.inline
       def setInterval(value: T): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait IntervalConstInterval extends StObject {
     
-    var interval: ConstInterval = js.native
+    var interval: ConstInterval
   }
   object IntervalConstInterval {
     
@@ -73,12 +69,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Result[TOptions] extends StObject {
     
-    var result: TOptions = js.native
+    var result: TOptions
     
-    var set: js.Any = js.native
+    var set: js.Any
   }
   object Result {
     
@@ -89,7 +84,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result[_], TOptions] (val x: Self with Result[TOptions]) extends AnyVal {
+    implicit class ResultMutableBuilder[Self <: Result[?], TOptions] (val x: Self & Result[TOptions]) extends AnyVal {
       
       @scala.inline
       def setResult(value: TOptions): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
@@ -99,15 +94,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Set[TOptions] extends StObject {
     
-    var result: TOptions = js.native
+    var result: TOptions
     
     def set[TProperty /* <: /* keyof TOptions */ String */](
       property: TProperty,
       value: /* import warning: importer.ImportType#apply Failed type conversion: TOptions[TProperty] */ js.Any
-    ): Result[TOptions] = js.native
+    ): Result[TOptions]
   }
   object Set {
     
@@ -121,7 +115,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class SetMutableBuilder[Self <: Set[_], TOptions] (val x: Self with Set[TOptions]) extends AnyVal {
+    implicit class SetMutableBuilder[Self <: Set[?], TOptions] (val x: Self & Set[TOptions]) extends AnyVal {
       
       @scala.inline
       def setResult(value: TOptions): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
@@ -133,10 +127,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TwoDigitYearMax extends StObject {
     
-    var twoDigitYearMax: Double = js.native
+    var twoDigitYearMax: Double
   }
   object TwoDigitYearMax {
     

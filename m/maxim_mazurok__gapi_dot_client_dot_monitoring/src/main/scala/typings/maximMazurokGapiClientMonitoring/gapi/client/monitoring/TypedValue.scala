@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypedValue extends StObject {
   
   /** A Boolean value: true or false. */
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
   /** A distribution value. */
-  var distributionValue: js.UndefOr[Distribution] = js.native
+  var distributionValue: js.UndefOr[Distribution] = js.undefined
   
   /** A 64-bit double-precision floating-point number. Its magnitude is approximately ±10±300 and it has 16 significant digits of precision. */
-  var doubleValue: js.UndefOr[Double] = js.native
+  var doubleValue: js.UndefOr[Double] = js.undefined
   
   /** A 64-bit integer. Its range is approximately ±9.2x1018. */
-  var int64Value: js.UndefOr[String] = js.native
+  var int64Value: js.UndefOr[String] = js.undefined
   
   /** A variable-length string value. */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object TypedValue {
   

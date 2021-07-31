@@ -2,26 +2,24 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailedResource extends StObject {
   
   /**
     * The error code associated with the failure.
     */
-  var ErrorCode: js.UndefOr[typings.awsSdk.resourcegroupsMod.ErrorCode] = js.native
+  var ErrorCode: js.UndefOr[typings.awsSdk.resourcegroupsMod.ErrorCode] = js.undefined
   
   /**
     * The error message text associated with the failure.
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.resourcegroupsMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.resourcegroupsMod.ErrorMessage] = js.undefined
   
   /**
     * The ARN of the resource that failed to be added or removed.
     */
-  var ResourceArn: js.UndefOr[typings.awsSdk.resourcegroupsMod.ResourceArn] = js.native
+  var ResourceArn: js.UndefOr[typings.awsSdk.resourcegroupsMod.ResourceArn] = js.undefined
 }
 object FailedResource {
   

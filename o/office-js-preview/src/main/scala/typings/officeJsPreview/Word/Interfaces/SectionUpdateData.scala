@@ -2,11 +2,9 @@ package typings.officeJsPreview.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Section object, for use in `section.set({ ... })`. */
-@js.native
 trait SectionUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SectionUpdateData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var body: js.UndefOr[BodyUpdateData] = js.native
+  var body: js.UndefOr[BodyUpdateData] = js.undefined
 }
 object SectionUpdateData {
   

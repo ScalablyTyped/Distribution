@@ -3,18 +3,19 @@ package typings.azureSb
 import typings.azureSb.topicresultMod.Azure.ServiceBus.Results.TopicProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topicresultMod {
   
-  @JSImport("azure-sb/lib/models/topicresult", "parse")
+  @JSImport("azure-sb/lib/models/topicresult", JSImport.Namespace)
   @js.native
-  def parse(xml: js.Object): js.Object | js.Array[js.Object] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("azure-sb/lib/models/topicresult", "serialize")
-  @js.native
-  def serialize(resource: TopicProperties): String = js.native
+  @scala.inline
+  def parse(xml: js.Object): js.Object | js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any]).asInstanceOf[js.Object | js.Array[js.Object]]
+  
+  @scala.inline
+  def serialize(resource: TopicProperties): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(resource.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object Azure {
     
@@ -22,24 +23,23 @@ object topicresultMod {
       
       object Results {
         
-        @js.native
         trait TopicProperties extends StObject {
           
-          var DefaultMessageTimeToLive: String = js.native
+          var DefaultMessageTimeToLive: String
           
-          var DuplicateDetectionHistoryTimeWindow: String = js.native
+          var DuplicateDetectionHistoryTimeWindow: String
           
-          var EnableBatchedOperations: Boolean = js.native
+          var EnableBatchedOperations: Boolean
           
-          var EnablePartitioning: Boolean = js.native
+          var EnablePartitioning: Boolean
           
-          var MaxSizeInMegabytes: Double = js.native
+          var MaxSizeInMegabytes: Double
           
-          var RequiresDuplicateDetection: Boolean = js.native
+          var RequiresDuplicateDetection: Boolean
           
-          var SizeInBytes: Double = js.native
+          var SizeInBytes: Double
           
-          var SupportOrdering: Boolean = js.native
+          var SupportOrdering: Boolean
         }
         object TopicProperties {
           

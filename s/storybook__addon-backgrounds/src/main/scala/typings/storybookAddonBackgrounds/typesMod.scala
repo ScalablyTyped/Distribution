@@ -3,17 +3,15 @@ package typings.storybookAddonBackgrounds
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Background extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object Background {
     
@@ -34,20 +32,19 @@ object typesMod {
     }
   }
   
-  @js.native
   trait BackgroundSelectorItem extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    def onClick(): Unit = js.native
+    def onClick(): Unit
     
-    var right: js.UndefOr[ReactElement] = js.native
+    var right: js.UndefOr[ReactElement] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var value: String = js.native
+    var value: String
   }
   object BackgroundSelectorItem {
     
@@ -83,22 +80,21 @@ object typesMod {
     }
   }
   
-  @js.native
   trait BackgroundsConfig extends StObject {
     
-    var backgrounds: js.Array[Background] | Null = js.native
+    var backgrounds: js.Array[Background] | Null
     
-    var defaultBackgroundName: String | Null = js.native
+    var defaultBackgroundName: String | Null
     
-    var disable: Boolean = js.native
+    var disable: Boolean
     
-    var selectedBackgroundName: String | Null = js.native
+    var selectedBackgroundName: String | Null
   }
   object BackgroundsConfig {
     
     @scala.inline
     def apply(disable: Boolean): BackgroundsConfig = {
-      val __obj = js.Dynamic.literal(disable = disable.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(disable = disable.asInstanceOf[js.Any], backgrounds = null, defaultBackgroundName = null, selectedBackgroundName = null)
       __obj.asInstanceOf[BackgroundsConfig]
     }
     
@@ -131,14 +127,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait BackgroundsParameter extends StObject {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
-    var disable: js.UndefOr[Boolean] = js.native
+    var disable: js.UndefOr[Boolean] = js.undefined
     
-    var values: js.Array[Background] = js.native
+    var values: js.Array[Background]
   }
   object BackgroundsParameter {
     
@@ -171,12 +166,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait GlobalState extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var selected: js.UndefOr[String] = js.native
+    var selected: js.UndefOr[String] = js.undefined
   }
   object GlobalState {
     

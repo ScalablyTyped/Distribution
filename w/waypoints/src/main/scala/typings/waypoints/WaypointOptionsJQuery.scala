@@ -3,15 +3,15 @@ package typings.waypoints
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WaypointOptionsJQuery extends WaypointOptionsBase {
+trait WaypointOptionsJQuery
+  extends StObject
+     with WaypointOptionsBase {
   
-  var context: js.UndefOr[HTMLElement | String] = js.native
+  var context: js.UndefOr[HTMLElement | String] = js.undefined
   
-  var handler: js.UndefOr[js.ThisFunction1[/* this */ Waypoint, /* direction */ js.UndefOr[String], Unit]] = js.native
+  var handler: js.UndefOr[js.ThisFunction1[/* this */ Waypoint, /* direction */ js.UndefOr[String], Unit]] = js.undefined
 }
 object WaypointOptionsJQuery {
   

@@ -3,40 +3,39 @@ package typings.initPackageJson
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("init-package-json", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, input: String, cb: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit = js.native
-  @JSImport("init-package-json", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(dir: String, input: String, cb: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     dir: String,
     input: String,
     config: js.Object,
     cb: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]
-  ): Unit = js.native
-  @JSImport("init-package-json", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     dir: String,
     input: String,
     config: Config,
     cb: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("init-package-json", "yes")
+  @JSImport("init-package-json", JSImport.Namespace)
   @js.native
-  def yes(conf: Config): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def yes(conf: Config): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("yes")(conf.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait Config
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    def get(k: String): js.Any = js.native
+    def get(k: String): js.Any
   }
   object Config {
     

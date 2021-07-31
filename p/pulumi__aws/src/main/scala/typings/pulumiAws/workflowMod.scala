@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workflowMod {
@@ -25,7 +24,7 @@ object workflowMod {
       */
     def this(name: String) = this()
     def this(name: String, args: WorkflowArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: WorkflowArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -36,7 +35,7 @@ object workflowMod {
     /**
       * A map of default run properties for this workflow. These properties are passed to all jobs associated to the workflow.
       */
-    val defaultRunProperties: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+    val defaultRunProperties: Output_[js.UndefOr[StringDictionary[js.Any]]] = js.native
     
     /**
       * Description of the workflow.
@@ -61,6 +60,10 @@ object workflowMod {
   /* static members */
   object Workflow {
     
+    @JSImport("@pulumi/aws/glue/workflow", "Workflow")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Workflow resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -70,55 +73,49 @@ object workflowMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glue/workflow", "Workflow.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Workflow = js.native
-    @JSImport("@pulumi/aws/glue/workflow", "Workflow.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Workflow = js.native
-    @JSImport("@pulumi/aws/glue/workflow", "Workflow.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WorkflowState): Workflow = js.native
-    @JSImport("@pulumi/aws/glue/workflow", "Workflow.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WorkflowState, opts: CustomResourceOptions): Workflow = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Workflow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Workflow]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Workflow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Workflow]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WorkflowState): Workflow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Workflow]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WorkflowState, opts: CustomResourceOptions): Workflow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Workflow]
     
     /**
       * Returns true if the given object is an instance of Workflow.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glue/workflow", "Workflow.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/workflow.Workflow */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/workflow.Workflow */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/workflow.Workflow */ Boolean]
   }
   
-  @js.native
   trait WorkflowArgs extends StObject {
     
     /**
       * A map of default run properties for this workflow. These properties are passed to all jobs associated to the workflow.
       */
-    val defaultRunProperties: js.UndefOr[Input[StringDictionary[_]]] = js.native
+    val defaultRunProperties: js.UndefOr[Input[StringDictionary[js.Any]]] = js.undefined
     
     /**
       * Description of the workflow.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Prevents exceeding the maximum number of concurrent runs of any of the component jobs. If you leave this parameter blank, there is no limit to the number of concurrent workflow runs.
       */
-    val maxConcurrentRuns: js.UndefOr[Input[Double]] = js.native
+    val maxConcurrentRuns: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name you assign to this workflow.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object WorkflowArgs {
     
@@ -132,7 +129,7 @@ object workflowMod {
     implicit class WorkflowArgsMutableBuilder[Self <: WorkflowArgs] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDefaultRunProperties(value: Input[StringDictionary[_]]): Self = StObject.set(x, "defaultRunProperties", value.asInstanceOf[js.Any])
+      def setDefaultRunProperties(value: Input[StringDictionary[js.Any]]): Self = StObject.set(x, "defaultRunProperties", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultRunPropertiesUndefined: Self = StObject.set(x, "defaultRunProperties", js.undefined)
@@ -163,38 +160,37 @@ object workflowMod {
     }
   }
   
-  @js.native
   trait WorkflowState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of Glue Workflow
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of default run properties for this workflow. These properties are passed to all jobs associated to the workflow.
       */
-    val defaultRunProperties: js.UndefOr[Input[StringDictionary[_]]] = js.native
+    val defaultRunProperties: js.UndefOr[Input[StringDictionary[js.Any]]] = js.undefined
     
     /**
       * Description of the workflow.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Prevents exceeding the maximum number of concurrent runs of any of the component jobs. If you leave this parameter blank, there is no limit to the number of concurrent workflow runs.
       */
-    val maxConcurrentRuns: js.UndefOr[Input[Double]] = js.native
+    val maxConcurrentRuns: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name you assign to this workflow.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object WorkflowState {
     
@@ -214,7 +210,7 @@ object workflowMod {
       def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
       @scala.inline
-      def setDefaultRunProperties(value: Input[StringDictionary[_]]): Self = StObject.set(x, "defaultRunProperties", value.asInstanceOf[js.Any])
+      def setDefaultRunProperties(value: Input[StringDictionary[js.Any]]): Self = StObject.set(x, "defaultRunProperties", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultRunPropertiesUndefined: Self = StObject.set(x, "defaultRunProperties", js.undefined)

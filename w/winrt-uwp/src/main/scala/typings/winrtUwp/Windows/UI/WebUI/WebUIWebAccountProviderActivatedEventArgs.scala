@@ -6,27 +6,25 @@ import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrtUwp.Windows.Security.Authentication.Web.Provider.IWebAccountProviderOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the arguments involved in activated a web account provider. */
-@js.native
 trait WebUIWebAccountProviderActivatedEventArgs extends StObject {
   
   /** Gets the activated operation. */
-  var activatedOperation: ActivatedOperation = js.native
+  var activatedOperation: ActivatedOperation
   
   /** Gets the kind of activation. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
   /** Gets the web account provider operation. */
-  var operation: IWebAccountProviderOperation = js.native
+  var operation: IWebAccountProviderOperation
   
   /** Gets the previous execution state of the app. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
   /** Gets the splash screen. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
 }
 object WebUIWebAccountProviderActivatedEventArgs {
   

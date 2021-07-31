@@ -2,15 +2,13 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchExternal extends StObject {
   
-  var launchExternal: js.UndefOr[Boolean] = js.native
+  var launchExternal: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object LaunchExternal {
   

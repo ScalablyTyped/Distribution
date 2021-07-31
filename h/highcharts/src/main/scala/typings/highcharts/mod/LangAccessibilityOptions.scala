@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangAccessibilityOptions extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait LangAccessibilityOptions extends StObject {
     * there are multiple charts on the page. For all other new data events, the
     * `newDataAnnounce` string will be used.
     */
-  var announceNewData: js.UndefOr[LangAccessibilityAnnounceNewDataOptions] = js.native
+  var announceNewData: js.UndefOr[LangAccessibilityAnnounceNewDataOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Axis description format strings.
     */
-  var axis: js.UndefOr[LangAccessibilityAxisOptions] = js.native
+  var axis: js.UndefOr[LangAccessibilityAxisOptions] = js.undefined
   
-  var chartContainerLabel: js.UndefOr[String] = js.native
+  var chartContainerLabel: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Chart type description strings.
@@ -35,65 +33,65 @@ trait LangAccessibilityOptions extends StObject {
     * format string for cases where there is only a single series in the chart,
     * and one for multiple series of the same type.
     */
-  var chartTypes: js.UndefOr[LangAccessibilityChartTypesOptions] = js.native
+  var chartTypes: js.UndefOr[LangAccessibilityChartTypesOptions] = js.undefined
   
-  var credits: js.UndefOr[String] = js.native
+  var credits: js.UndefOr[String] = js.undefined
   
-  var defaultChartTitle: js.UndefOr[String] = js.native
+  var defaultChartTitle: js.UndefOr[String] = js.undefined
   
-  var drillUpButton: js.UndefOr[String] = js.native
+  var drillUpButton: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Exporting menu format strings
     * for accessibility module.
     */
-  var exporting: js.UndefOr[LangAccessibilityExportingOptions] = js.native
+  var exporting: js.UndefOr[LangAccessibilityExportingOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Set a label on the container
     * wrapping the SVG.
     */
-  var graphicContainerLabel: js.UndefOr[String] = js.native
+  var graphicContainerLabel: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Language options for
     * accessibility of the legend.
     */
-  var legend: js.UndefOr[LangAccessibilityLegendOptions] = js.native
+  var legend: js.UndefOr[LangAccessibilityLegendOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Range selector language options
     * for accessibility.
     */
-  var rangeSelector: js.UndefOr[LangAccessibilityRangeSelectorOptions] = js.native
+  var rangeSelector: js.UndefOr[LangAccessibilityRangeSelectorOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Language options for the screen
     * reader information sections added before and after the charts.
     */
-  var screenReaderSection: js.UndefOr[LangAccessibilityScreenReaderSectionOptions] = js.native
+  var screenReaderSection: js.UndefOr[LangAccessibilityScreenReaderSectionOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Lang configuration for different
     * series types. For more dynamic control over the series element
     * descriptions, see accessibility.seriesDescriptionFormatter.
     */
-  var series: js.UndefOr[LangAccessibilitySeriesOptions] = js.native
+  var series: js.UndefOr[LangAccessibilitySeriesOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Descriptions of lesser known
     * series types. The relevant description is added to the screen reader
     * information region when these series types are used.
     */
-  var seriesTypeDescriptions: js.UndefOr[LangAccessibilitySeriesTypeDescriptionsOptions] = js.native
+  var seriesTypeDescriptions: js.UndefOr[LangAccessibilitySeriesTypeDescriptionsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Language options for
     * sonification.
     */
-  var sonification: js.UndefOr[LangAccessibilitySonificationOptions] = js.native
+  var sonification: js.UndefOr[LangAccessibilitySonificationOptions] = js.undefined
   
-  var svgContainerLabel: js.UndefOr[String] = js.native
+  var svgContainerLabel: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Title element text for the chart
@@ -101,13 +99,13 @@ trait LangAccessibilityOptions extends StObject {
     * Browsers will display this content when hovering over elements in the
     * chart. Assistive technology may use this element to label the chart.
     */
-  var svgContainerTitle: js.UndefOr[String] = js.native
+  var svgContainerTitle: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Accessibility language options
     * for the data table.
     */
-  var table: js.UndefOr[LangAccessibilityTableOptions] = js.native
+  var table: js.UndefOr[LangAccessibilityTableOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Thousands separator to use when
@@ -117,13 +115,13 @@ trait LangAccessibilityOptions extends StObject {
     *
     * Set to `null` to use the separator defined in lang.thousandsSep.
     */
-  var thousandsSep: js.UndefOr[String] = js.native
+  var thousandsSep: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Chart and map zoom accessibility
     * language options.
     */
-  var zoom: js.UndefOr[LangAccessibilityZoomOptions] = js.native
+  var zoom: js.UndefOr[LangAccessibilityZoomOptions] = js.undefined
 }
 object LangAccessibilityOptions {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateThreatIntelSetResponse extends StObject {
   
   /**
     * The ID of the ThreatIntelSet resource.
     */
-  var ThreatIntelSetId: String = js.native
+  var ThreatIntelSetId: String
 }
 object CreateThreatIntelSetResponse {
   

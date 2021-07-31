@@ -3,14 +3,15 @@ package typings.tensorflowTfjsBackendWebgl
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object batchnormPackedGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/batchnorm_packed_gpu", "BatchNormPackedProgram")
   @js.native
-  class BatchNormPackedProgram protected () extends GPGPUProgram {
+  class BatchNormPackedProgram protected ()
+    extends StObject
+       with GPGPUProgram {
     def this(
       xShape: js.Array[Double],
       meanShape: js.Array[Double],
@@ -43,11 +44,20 @@ object batchnormPackedGpuMod {
       scaleShape: Null,
       varianceEpsilon: Double
     ) = this()
+    
+    /* CompleteClass */
+    var outputShape: js.Array[Double] = js.native
     
     @JSName("packedInputs")
     var packedInputs_BatchNormPackedProgram: Boolean = js.native
     
     @JSName("packedOutput")
     var packedOutput_BatchNormPackedProgram: Boolean = js.native
+    
+    /* CompleteClass */
+    var userCode: String = js.native
+    
+    /* CompleteClass */
+    var variableNames: js.Array[String] = js.native
   }
 }

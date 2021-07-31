@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONInput extends StObject {
   
   /**
     * The type of JSON. Valid values: Document, Lines.
     */
-  var Type: js.UndefOr[JSONType] = js.native
+  var Type: js.UndefOr[JSONType] = js.undefined
 }
 object JSONInput {
   

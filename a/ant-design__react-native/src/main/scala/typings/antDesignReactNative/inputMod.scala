@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactNative.mod.TextInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputMod {
@@ -35,11 +34,11 @@ object inputMod {
     var inputRef: TextInput | Null = js.native
   }
   
-  @js.native
   trait TextInputProps
-    extends typings.reactNative.mod.TextInputProps {
+    extends StObject
+       with typings.reactNative.mod.TextInputProps {
     
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
   }
   object TextInputProps {
     

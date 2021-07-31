@@ -3,23 +3,21 @@ package typings.reactHotkeys.mod
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyCombination extends StObject {
   
   /**
     * Id of combination that could be used to define a keymap
     */
-  var id: MouseTrapKeySequence = js.native
+  var id: MouseTrapKeySequence
   
   /**
     * Dictionary of keys involved in the combination
     */
   var keys: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in react-hotkeys.react-hotkeys.KeyName ]: true}
-    */ typings.reactHotkeys.reactHotkeysStrings.KeyCombination with TopLevel[js.Any] = js.native
+    */ typings.reactHotkeys.reactHotkeysStrings.KeyCombination & TopLevel[js.Any]
 }
 object KeyCombination {
   
@@ -28,7 +26,7 @@ object KeyCombination {
     id: MouseTrapKeySequence,
     keys: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in react-hotkeys.react-hotkeys.KeyName ]: true}
-    */ typings.reactHotkeys.reactHotkeysStrings.KeyCombination with TopLevel[js.Any]
+    */ typings.reactHotkeys.reactHotkeysStrings.KeyCombination & TopLevel[js.Any]
   ): KeyCombination = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyCombination]
@@ -47,7 +45,7 @@ object KeyCombination {
     def setKeys(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in react-hotkeys.react-hotkeys.KeyName ]: true}
-      */ typings.reactHotkeys.reactHotkeysStrings.KeyCombination with TopLevel[js.Any]
+      */ typings.reactHotkeys.reactHotkeysStrings.KeyCombination & TopLevel[js.Any]
     ): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
   }
 }

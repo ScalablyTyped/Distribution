@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSecurityConfigurationResponse extends StObject {
   
   /**
     * The requested security configuration.
     */
-  var SecurityConfiguration: js.UndefOr[typings.awsSdk.glueMod.SecurityConfiguration] = js.native
+  var SecurityConfiguration: js.UndefOr[typings.awsSdk.glueMod.SecurityConfiguration] = js.undefined
 }
 object GetSecurityConfigurationResponse {
   

@@ -2,40 +2,38 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait License extends StObject {
   
   /** [Output Only] Deprecated. This field no longer reflects whether a license charges a usage fee. */
-  var chargesUseFee: js.UndefOr[Boolean] = js.native
+  var chargesUseFee: js.UndefOr[Boolean] = js.undefined
   
   /** [Output Only] Creation timestamp in RFC3339 text format. */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /** An optional textual description of the resource; provided by the client when the resource is created. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Type of resource. Always compute#license for licenses. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The unique code used to attach this license to images, snapshots, and disks. */
-  var licenseCode: js.UndefOr[String] = js.native
+  var licenseCode: js.UndefOr[String] = js.undefined
   
   /** Name of the resource. The name must be 1-63 characters long and comply with RFC1035. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var resourceRequirements: js.UndefOr[LicenseResourceRequirements] = js.native
+  var resourceRequirements: js.UndefOr[LicenseResourceRequirements] = js.undefined
   
   /** [Output Only] Server-defined URL for the resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** If false, licenses will not be copied from the source resource when creating an image from a disk, disk from snapshot, or snapshot from disk. */
-  var transferable: js.UndefOr[Boolean] = js.native
+  var transferable: js.UndefOr[Boolean] = js.undefined
 }
 object License {
   

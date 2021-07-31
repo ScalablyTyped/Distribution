@@ -2,61 +2,59 @@ package typings.maximMazurokGapiClientYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Chart extends StObject {
   
   /** V1 error format. */
   @JSName("$.xgafv")
-  var $Dotxgafv: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
   
   /** OAuth access token. */
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** JSONP */
-  var callback: js.UndefOr[String] = js.native
+  var callback: js.UndefOr[String] = js.undefined
   
   /** Return the videos that are in the specified chart. */
-  var chart: js.UndefOr[String] = js.native
+  var chart: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * Stands for "host language". Specifies the localization language of the metadata to be filled into snippet.localized. The field is filled with the default metadata if there is no
     * localization in the specified language. The parameter value must be a language code included in the list returned by the i18nLanguages.list method (e.g. en_US, es_MX).
     */
-  var hl: js.UndefOr[String] = js.native
+  var hl: js.UndefOr[String] = js.undefined
   
   /** Return videos with the given ids. */
-  var id: js.UndefOr[String | js.Array[String]] = js.native
+  var id: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * The *maxResults* parameter specifies the maximum number of items that should be returned in the result set. *Note:* This parameter is supported for use in conjunction with the
     * myRating and chart parameters, but it is not supported for use in conjunction with the id parameter.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /** Return the player with maximum height specified in */
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
   /** Return videos liked/disliked by the authenticated user. Does not support RateType.RATED_TYPE_NONE. */
-  var myRating: js.UndefOr[String] = js.native
+  var myRating: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
     * *Note:* This parameter is intended exclusively for YouTube content partners. The *onBehalfOfContentOwner* parameter indicates that the request's authorization credentials
@@ -64,39 +62,39 @@ trait Chart extends StObject {
     * manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide
     * authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * The *pageToken* parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other
     * pages that could be retrieved. *Note:* This parameter is supported for use in conjunction with the myRating and chart parameters, but it is not supported for use in conjunction
     * with the id parameter.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The *part* parameter specifies a comma-separated list of one or more video resource properties that the API response will include. If the parameter identifies a property that
     * contains child properties, the child properties will be included in the response. For example, in a video resource, the snippet property contains the channelId, title,
     * description, tags, and categoryId properties. As such, if you set *part=snippet*, the API response will contain all of those properties.
     */
-  var part: String | js.Array[String] = js.native
+  var part: String | js.Array[String]
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Use a chart that is specific to the specified region */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-  var uploadType: js.UndefOr[String] = js.native
+  var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
-  var upload_protocol: js.UndefOr[String] = js.native
+  var upload_protocol: js.UndefOr[String] = js.undefined
   
   /** Use chart that is specific to the specified video category */
-  var videoCategoryId: js.UndefOr[String] = js.native
+  var videoCategoryId: js.UndefOr[String] = js.undefined
 }
 object Chart {
   

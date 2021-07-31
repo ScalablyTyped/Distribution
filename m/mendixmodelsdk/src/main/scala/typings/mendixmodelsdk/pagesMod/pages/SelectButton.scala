@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,9 +38,8 @@ object SelectButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SelectButton.create")
-  @js.native
-  def create(model: IModel): SelectButton = js.native
+  @scala.inline
+  def create(model: IModel): SelectButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SelectButton]
   
   /**
     * Creates and returns a new SelectButton instance in the SDK and on the server.
@@ -49,9 +47,8 @@ object SelectButton {
     * of the parent ControlBar element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SelectButton.createIn")
-  @js.native
-  def createIn(container: ControlBar): SelectButton = js.native
+  @scala.inline
+  def createIn(container: ControlBar): SelectButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[SelectButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SelectButton.structureTypeName")

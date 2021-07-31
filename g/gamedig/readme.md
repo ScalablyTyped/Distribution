@@ -10,9 +10,9 @@ Query for the status of any game server in Node.JS
 | ------------------ | :-------------: |
 | Full name          | gamedig |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 6 |
-| # downloads        | 81384 |
+| # releases         | 13 |
+| # dependents       | 9 |
+| # downloads        | 100286 |
 | # stars            | 4 |
 
 ## Links

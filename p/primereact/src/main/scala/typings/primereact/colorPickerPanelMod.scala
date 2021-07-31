@@ -3,7 +3,6 @@ package typings.primereact
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorPickerPanelMod {
@@ -20,16 +19,15 @@ object colorPickerPanelMod {
     def this(props: ColorPickerPanelProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ColorPickerPanelProps extends StObject {
     
-    var appendTo: js.UndefOr[js.Any] = js.native
+    var appendTo: js.UndefOr[js.Any] = js.undefined
     
-    var disabled: js.UndefOr[String] = js.native
+    var disabled: js.UndefOr[String] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ColorPickerPanelProps {
     

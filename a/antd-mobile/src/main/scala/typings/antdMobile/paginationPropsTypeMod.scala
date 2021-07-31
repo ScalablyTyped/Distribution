@@ -5,31 +5,29 @@ import typings.antdMobile.antdMobileStrings.number
 import typings.antdMobile.antdMobileStrings.pointer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationPropsTypeMod {
   
-  @js.native
   trait PaginationPropsType extends StObject {
     
-    var current: Double = js.native
+    var current: Double
     
-    var mode: js.UndefOr[button | number | pointer] = js.native
+    var mode: js.UndefOr[button | number | pointer] = js.undefined
     
-    var nextText: js.UndefOr[String] = js.native
+    var nextText: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* current */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* current */ Double, Unit]] = js.undefined
     
-    var onNext: js.UndefOr[js.Function0[Unit]] = js.native
+    var onNext: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPrev: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPrev: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var prevText: js.UndefOr[String] = js.native
+    var prevText: js.UndefOr[String] = js.undefined
     
-    var simple: js.UndefOr[Boolean] = js.native
+    var simple: js.UndefOr[Boolean] = js.undefined
     
-    var total: Double = js.native
+    var total: Double
   }
   object PaginationPropsType {
     
@@ -92,10 +90,9 @@ object paginationPropsTypeMod {
     }
   }
   
-  @js.native
   trait PaginationState extends StObject {
     
-    var current: Double = js.native
+    var current: Double
   }
   object PaginationState {
     

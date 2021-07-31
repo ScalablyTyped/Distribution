@@ -9,32 +9,32 @@ import typings.pulumiAws.outputMod.lambda.GetFunctionVpcConfig
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getFunctionMod {
   
-  @JSImport("@pulumi/aws/lambda/getFunction", "getFunction")
+  @JSImport("@pulumi/aws/lambda/getFunction", JSImport.Namespace)
   @js.native
-  def getFunction(args: GetFunctionArgs): js.Promise[GetFunctionResult] = js.native
-  @JSImport("@pulumi/aws/lambda/getFunction", "getFunction")
-  @js.native
-  def getFunction(args: GetFunctionArgs, opts: InvokeOptions): js.Promise[GetFunctionResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getFunction(args: GetFunctionArgs): js.Promise[GetFunctionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunction")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetFunctionResult]]
+  @scala.inline
+  def getFunction(args: GetFunctionArgs, opts: InvokeOptions): js.Promise[GetFunctionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFunction")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetFunctionResult]]
+  
   trait GetFunctionArgs extends StObject {
     
     /**
       * Name of the lambda function.
       */
-    val functionName: String = js.native
+    val functionName: String
     
     /**
       * Alias name or version number of the lambda function. e.g. `$LATEST`, `my-alias`, or `1`
       */
-    val qualifier: js.UndefOr[String] = js.native
+    val qualifier: js.UndefOr[String] = js.undefined
     
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetFunctionArgs {
     
@@ -64,124 +64,123 @@ object getFunctionMod {
     }
   }
   
-  @js.native
   trait GetFunctionResult extends StObject {
     
     /**
       * Unqualified (no `:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `qualifiedArn`.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Configure the function's *dead letter queue*.
       */
-    val deadLetterConfig: GetFunctionDeadLetterConfig = js.native
+    val deadLetterConfig: GetFunctionDeadLetterConfig
     
     /**
       * Description of what your Lambda Function does.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The Lambda environment's configuration settings.
       */
-    val environment: GetFunctionEnvironment = js.native
+    val environment: GetFunctionEnvironment
     
     /**
       * The connection settings for an Amazon EFS file system.
       */
-    val fileSystemConfigs: js.Array[GetFunctionFileSystemConfig] = js.native
+    val fileSystemConfigs: js.Array[GetFunctionFileSystemConfig]
     
-    val functionName: String = js.native
+    val functionName: String
     
     /**
       * The function entrypoint in your code.
       */
-    val handler: String = js.native
+    val handler: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The ARN to be used for invoking Lambda Function from API Gateway.
       */
-    val invokeArn: String = js.native
+    val invokeArn: String
     
     /**
       * The ARN for the KMS encryption key.
       */
-    val kmsKeyArn: String = js.native
+    val kmsKeyArn: String
     
     /**
       * The date this resource was last modified.
       */
-    val lastModified: String = js.native
+    val lastModified: String
     
     /**
       * A list of Lambda Layer ARNs attached to your Lambda Function.
       */
-    val layers: js.Array[String] = js.native
+    val layers: js.Array[String]
     
     /**
       * Amount of memory in MB your Lambda Function can use at runtime.
       */
-    val memorySize: Double = js.native
+    val memorySize: Double
     
     /**
       * Qualified (`:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `arn`.
       */
-    val qualifiedArn: String = js.native
+    val qualifiedArn: String
     
-    val qualifier: js.UndefOr[String] = js.native
+    val qualifier: js.UndefOr[String] = js.undefined
     
     /**
       * The amount of reserved concurrent executions for this lambda function or `-1` if unreserved.
       */
-    val reservedConcurrentExecutions: Double = js.native
+    val reservedConcurrentExecutions: Double
     
     /**
       * IAM role attached to the Lambda Function.
       */
-    val role: String = js.native
+    val role: String
     
     /**
       * The runtime environment for the Lambda function..
       */
-    val runtime: String = js.native
+    val runtime: String
     
     /**
       * Base64-encoded representation of raw SHA-256 sum of the zip file.
       */
-    val sourceCodeHash: String = js.native
+    val sourceCodeHash: String
     
     /**
       * The size in bytes of the function .zip file.
       */
-    val sourceCodeSize: Double = js.native
+    val sourceCodeSize: Double
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The function execution time at which Lambda should terminate the function.
       */
-    val timeout: Double = js.native
+    val timeout: Double
     
     /**
       * Tracing settings of the function.
       */
-    val tracingConfig: GetFunctionTracingConfig = js.native
+    val tracingConfig: GetFunctionTracingConfig
     
     /**
       * The version of the Lambda function.
       */
-    val version: String = js.native
+    val version: String
     
     /**
       * VPC configuration associated with your Lambda function.
       */
-    val vpcConfig: GetFunctionVpcConfig = js.native
+    val vpcConfig: GetFunctionVpcConfig
   }
   object GetFunctionResult {
     

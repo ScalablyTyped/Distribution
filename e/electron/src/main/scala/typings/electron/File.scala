@@ -2,16 +2,14 @@ package typings.electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
   /**
     * The real path to the file on the users filesystem
     */
-  var path: String = js.native
+  var path: String
 }
 object File {
   

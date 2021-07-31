@@ -2,29 +2,27 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectSearchResults extends StObject {
   
-  def Clone(): IObjectSearchResults = js.native
+  def Clone(): IObjectSearchResults
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def GetAsObjectVersions(): IObjectVersions = js.native
+  def GetAsObjectVersions(): IObjectVersions
   
-  def GetScoreOfObject(ObjVer: IObjVer): Double = js.native
+  def GetScoreOfObject(ObjVer: IObjVer): Double
   
-  def Item(Index: Double): IObjectVersion = js.native
+  def Item(Index: Double): IObjectVersion
   
-  val MoreResults: Boolean = js.native
+  val MoreResults: Boolean
   
-  def ScoreAt(Index: Double): Double = js.native
+  def ScoreAt(Index: Double): Double
   
-  def Sort(ObjectComparer: IObjectComparer): Unit = js.native
+  def Sort(ObjectComparer: IObjectComparer): Unit
   
-  def SortByScore(Ascending: Boolean): Unit = js.native
+  def SortByScore(Ascending: Boolean): Unit
 }
 object IObjectSearchResults {
   

@@ -4,7 +4,6 @@ import typings.twilioVideo.twilioVideoNumbers.`53107`
 import typings.twilioVideo.twilioVideoStrings.`MaxParticipants is out of range`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio-video", "RoomMaxParticipantsOutOfRangeError")

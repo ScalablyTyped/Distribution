@@ -2,14 +2,16 @@ package typings.fabric.fabricImplMod
 
 import typings.std.CanvasPattern
 import typings.std.CanvasRenderingContext2D
+import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "Pattern")
 @js.native
-class Pattern () extends IPatternOptions {
+class Pattern ()
+  extends StObject
+     with IPatternOptions {
   def this(options: IPatternOptions) = this()
   
   /**
@@ -18,6 +20,12 @@ class Pattern () extends IPatternOptions {
   var id: Double = js.native
   
   def setOptions(options: IPatternOptions): Unit = js.native
+  
+  /**
+    * The source for the pattern
+    */
+  /* CompleteClass */
+  var source: String | HTMLImageElement = js.native
   
   /**
     * Returns an instance of CanvasPattern

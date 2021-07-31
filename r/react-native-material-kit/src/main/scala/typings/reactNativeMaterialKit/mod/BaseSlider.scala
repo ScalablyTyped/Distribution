@@ -3,29 +3,29 @@ package typings.reactNativeMaterialKit.mod
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseSlider extends ViewProps {
+trait BaseSlider
+  extends StObject
+     with ViewProps {
   
-  var lowerTrackColor: js.UndefOr[String] = js.native
+  var lowerTrackColor: js.UndefOr[String] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var thumbPadding: js.UndefOr[Double] = js.native
+  var thumbPadding: js.UndefOr[Double] = js.undefined
   
-  var thumbRadius: js.UndefOr[Double] = js.native
+  var thumbRadius: js.UndefOr[Double] = js.undefined
   
-  var trackSize: js.UndefOr[Double] = js.native
+  var trackSize: js.UndefOr[Double] = js.undefined
   
-  var upperTrackColor: js.UndefOr[String] = js.native
+  var upperTrackColor: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object BaseSlider {
   

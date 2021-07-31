@@ -5,17 +5,15 @@ import typings.jsts.jsts.geom.IntersectionMatrix
 import typings.jsts.jsts.geom.PrecisionModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operation {
   
-  @js.native
   trait GeometryGraphOperation extends StObject {
     
-    def getArgGeometry(i: Double): Geometry = js.native
+    def getArgGeometry(i: Double): Geometry
     
-    def setComputationPrecision(pm: PrecisionModel): Unit = js.native
+    def setComputationPrecision(pm: PrecisionModel): Unit
   }
   object GeometryGraphOperation {
     
@@ -38,20 +36,19 @@ object operation {
   
   object buffer {
     
-    @js.native
     trait BufferOp extends StObject {
       
       /**
         * @param {PrecisionModel}
         *          fixedPM
         */
-      def bufferFixedPrecision(fixedPM: PrecisionModel): Unit = js.native
+      def bufferFixedPrecision(fixedPM: PrecisionModel): Unit
       
       /**
         * @param {int}
         *          precisionDigits
         */
-      def bufferReducedPrecision2(precisionDigits: Double): Unit = js.native
+      def bufferReducedPrecision2(precisionDigits: Double): Unit
       
       /**
         * Returns the buffer computed for a geometry for a given buffer distance.
@@ -60,7 +57,7 @@ object operation {
         *          dist the buffer distance.
         * @return {Geometry} the buffer of the input geometry.
         */
-      def getResultGeometry(dist: Double): Geometry = js.native
+      def getResultGeometry(dist: Double): Geometry
       
       /**
         * Specifies the end cap style of the generated buffer. The styles supported are
@@ -70,7 +67,7 @@ object operation {
         * @param {int}
         *          endCapStyle the end cap style to specify.
         */
-      def setEndCapStyle(endCapStyle: Double): Unit = js.native
+      def setEndCapStyle(endCapStyle: Double): Unit
       
       /**
         * Sets the number of segments used to approximate a angle fillet
@@ -78,7 +75,7 @@ object operation {
         * @param {int}
         *          quadrantSegments the number of segments in a fillet for a quadrant.
         */
-      def setQuadrantSegments(quadrantSegments: Double): Unit = js.native
+      def setQuadrantSegments(quadrantSegments: Double): Unit
     }
     object BufferOp {
       
@@ -114,7 +111,6 @@ object operation {
       }
     }
     
-    @js.native
     trait BufferParameters extends StObject {
       
       /**
@@ -125,42 +121,42 @@ object operation {
         *          the number of segments used to approximate a quarter-circle.
         * @return the error of approximation.
         */
-      def bufferDistanceError(quadSegs: Double): Double = js.native
+      def bufferDistanceError(quadSegs: Double): Double
       
       /**
         * Gets the end cap style.
         *
         * @return the end cap style.
         */
-      def getEndCapStyle(): Double = js.native
+      def getEndCapStyle(): Double
       
       /**
         * Gets the join style
         *
         * @return the join style code.
         */
-      def getJoinStyle(): Double = js.native
+      def getJoinStyle(): Double
       
       /**
         * Gets the mitre ratio limit.
         *
         * @return the limit value.
         */
-      def getMitreLimit(): Double = js.native
+      def getMitreLimit(): Double
       
       /**
         * Gets the number of quadrant segments which will be used
         *
         * @return the number of quadrant segments.
         */
-      def getQuadrantSegments(): Double = js.native
+      def getQuadrantSegments(): Double
       
       /**
         * Tests whether the buffer is to be generated on a single side only.
         *
         * @return true if the generated buffer is to be single-sided.
         */
-      def isSingleSided(): Boolean = js.native
+      def isSingleSided(): Boolean
       
       /**
         * Specifies the end cap style of the generated buffer. The styles supported are
@@ -170,7 +166,7 @@ object operation {
         * @param {int}
         *          endCapStyle the end cap style to specify.
         */
-      def setEndCapStyle(endCapStyle: Double): Unit = js.native
+      def setEndCapStyle(endCapStyle: Double): Unit
       
       /**
         * Sets the join style for outside (reflex) corners between line segments.
@@ -180,7 +176,7 @@ object operation {
         * @param joinStyle
         *          the code for the join style.
         */
-      def setJoinStyle(joinStyle: Double): Unit = js.native
+      def setJoinStyle(joinStyle: Double): Unit
       
       /**
         * Sets the limit on the mitre ratio used for very sharp corners. The mitre
@@ -194,7 +190,7 @@ object operation {
         * @param mitreLimit
         *          the mitre ratio limit.
         */
-      def setMitreLimit(mitreLimit: Double): Unit = js.native
+      def setMitreLimit(mitreLimit: Double): Unit
       
       /**
         * Sets the number of segments used to approximate a angle fillet
@@ -202,7 +198,7 @@ object operation {
         * @param {int}
         *          quadrantSegments the number of segments in a fillet for a quadrant.
         */
-      def setQuadrantSegments(quadrantSegments: Double): Unit = js.native
+      def setQuadrantSegments(quadrantSegments: Double): Unit
       
       /**
         * Sets whether the computed buffer should be single-sided. A single-sided
@@ -222,7 +218,7 @@ object operation {
         * @param isSingleSided
         *          true if a single-sided buffer should be constructed.
         */
-      def setSingleSided(isSingleSided: Boolean): Unit = js.native
+      def setSingleSided(isSingleSided: Boolean): Unit
     }
     object BufferParameters {
       
@@ -285,10 +281,11 @@ object operation {
   
   object relate {
     
-    @js.native
-    trait RelateOp extends GeometryGraphOperation {
+    trait RelateOp
+      extends StObject
+         with GeometryGraphOperation {
       
-      def getIntersectionMatrix(): IntersectionMatrix = js.native
+      def getIntersectionMatrix(): IntersectionMatrix
     }
     object RelateOp {
       

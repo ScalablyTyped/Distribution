@@ -5,7 +5,6 @@ import typings.dashjs.mod.TrackSelectionMode
 import typings.dashjs.mod.TrackSwitchMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dashjsStrings {
@@ -16,7 +15,9 @@ object dashjsStrings {
   def InitializationSegment: InitializationSegment = "InitializationSegment".asInstanceOf[InitializationSegment]
   
   @js.native
-  sealed trait ManifestUpdate extends MetricType
+  sealed trait ManifestUpdate
+    extends StObject
+       with MetricType
   @scala.inline
   def ManifestUpdate: ManifestUpdate = "ManifestUpdate".asInstanceOf[ManifestUpdate]
   
@@ -26,7 +27,9 @@ object dashjsStrings {
   def MediaSegment: MediaSegment = "MediaSegment".asInstanceOf[MediaSegment]
   
   @js.native
-  sealed trait RequestsQueue extends MetricType
+  sealed trait RequestsQueue
+    extends StObject
+       with MetricType
   @scala.inline
   def RequestsQueue: RequestsQueue = "RequestsQueue".asInstanceOf[RequestsQueue]
   
@@ -36,7 +39,9 @@ object dashjsStrings {
   def allTextTracksAdded: allTextTracksAdded = "allTextTracksAdded".asInstanceOf[allTextTracksAdded]
   
   @js.native
-  sealed trait alwaysReplace extends TrackSwitchMode
+  sealed trait alwaysReplace
+    extends StObject
+       with TrackSwitchMode
   @scala.inline
   def alwaysReplace: alwaysReplace = "alwaysReplace".asInstanceOf[alwaysReplace]
   
@@ -126,7 +131,9 @@ object dashjsStrings {
   def fragmentedText: fragmentedText = "fragmentedText".asInstanceOf[fragmentedText]
   
   @js.native
-  sealed trait highestBitrate extends TrackSelectionMode
+  sealed trait highestBitrate
+    extends StObject
+       with TrackSelectionMode
   @scala.inline
   def highestBitrate: highestBitrate = "highestBitrate".asInstanceOf[highestBitrate]
   
@@ -186,7 +193,9 @@ object dashjsStrings {
   def metricsChanged: metricsChanged = "metricsChanged".asInstanceOf[metricsChanged]
   
   @js.native
-  sealed trait neverReplace extends TrackSwitchMode
+  sealed trait neverReplace
+    extends StObject
+       with TrackSwitchMode
   @scala.inline
   def neverReplace: neverReplace = "neverReplace".asInstanceOf[neverReplace]
   
@@ -376,7 +385,9 @@ object dashjsStrings {
   def video: video = "video".asInstanceOf[video]
   
   @js.native
-  sealed trait widestRange extends TrackSelectionMode
+  sealed trait widestRange
+    extends StObject
+       with TrackSelectionMode
   @scala.inline
   def widestRange: widestRange = "widestRange".asInstanceOf[widestRange]
 }

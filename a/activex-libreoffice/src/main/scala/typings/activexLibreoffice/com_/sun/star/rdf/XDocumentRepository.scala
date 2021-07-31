@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,8 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDocumentMetadataAccess
   * @since OOo 3.2
   */
-@js.native
-trait XDocumentRepository extends XRepository {
+trait XDocumentRepository
+  extends StObject
+     with XRepository {
   
   /**
     * find the RDFa statement(s) associated with an ODF element.
@@ -31,7 +31,7 @@ trait XDocumentRepository extends XRepository {
     * @throws com::sun::star::lang::IllegalArgumentException if the given Element is `NULL` , or of a type that can not have RDFa metadata attached.
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def getStatementRDFa(Element: XMetadatable): Pair[SafeArray[Statement], Boolean] = js.native
+  def getStatementRDFa(Element: XMetadatable): Pair[SafeArray[Statement], Boolean]
   
   /**
     * gets matching RDFa statements from the repository.
@@ -49,7 +49,7 @@ trait XDocumentRepository extends XRepository {
     * @see XNamedGraph.getStatements
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def getStatementsRDFa(Subject: XResource, Predicate: XURI, Object: XNode): XEnumeration = js.native
+  def getStatementsRDFa(Subject: XResource, Predicate: XURI, Object: XNode): XEnumeration
   
   /**
     * remove the RDFa statement(s) that correspond to an ODF element from the repository.
@@ -59,7 +59,7 @@ trait XDocumentRepository extends XRepository {
     * @throws com::sun::star::lang::IllegalArgumentException if the given Element is `NULL` , or of a type that can not have RDFa metadata attached.
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def removeStatementRDFa(Element: XMetadatable): Unit = js.native
+  def removeStatementRDFa(Element: XMetadatable): Unit
   
   /**
     * update the RDFa statement(s) that correspond to an ODF element in the repository.
@@ -87,7 +87,7 @@ trait XDocumentRepository extends XRepository {
     Object: XMetadatable,
     RDFaContent: String,
     RDFaDatatype: XURI
-  ): Unit = js.native
+  ): Unit
 }
 object XDocumentRepository {
   

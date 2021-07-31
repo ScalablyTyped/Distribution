@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogappregistryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateAttributeGroupResponse extends StObject {
   
   /**
     * The Amazon resource name (ARN) of the application that was augmented with attributes.
     */
-  var applicationArn: js.UndefOr[ApplicationArn] = js.native
+  var applicationArn: js.UndefOr[ApplicationArn] = js.undefined
   
   /**
     * The Amazon resource name (ARN) of the attribute group that contains the application's new attributes.
     */
-  var attributeGroupArn: js.UndefOr[AttributeGroupArn] = js.native
+  var attributeGroupArn: js.UndefOr[AttributeGroupArn] = js.undefined
 }
 object AssociateAttributeGroupResponse {
   

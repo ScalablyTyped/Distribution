@@ -6,7 +6,6 @@ import typings.grpcGrpcJs.filterMod.BaseFilter
 import typings.grpcGrpcJs.filterMod.FilterFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object callCredentialsFilterMod {
@@ -25,9 +24,14 @@ object callCredentialsFilterMod {
   
   @JSImport("@grpc/grpc-js/build/src/call-credentials-filter", "CallCredentialsFilterFactory")
   @js.native
-  class CallCredentialsFilterFactory protected () extends FilterFactory[CallCredentialsFilter] {
+  class CallCredentialsFilterFactory protected ()
+    extends StObject
+       with FilterFactory[CallCredentialsFilter] {
     def this(channel: Channel) = this()
     
     val channel: js.Any = js.native
+    
+    /* CompleteClass */
+    override def createFilter(callStream: Call): CallCredentialsFilter = js.native
   }
 }

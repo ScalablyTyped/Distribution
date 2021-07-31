@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accountAliasMod {
@@ -33,6 +32,10 @@ object accountAliasMod {
   /* static members */
   object AccountAlias {
     
+    @JSImport("@pulumi/aws/iam/accountAlias", "AccountAlias")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AccountAlias resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -42,35 +45,29 @@ object accountAliasMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/accountAlias", "AccountAlias.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AccountAlias = js.native
-    @JSImport("@pulumi/aws/iam/accountAlias", "AccountAlias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AccountAlias = js.native
-    @JSImport("@pulumi/aws/iam/accountAlias", "AccountAlias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccountAliasState): AccountAlias = js.native
-    @JSImport("@pulumi/aws/iam/accountAlias", "AccountAlias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccountAliasState, opts: CustomResourceOptions): AccountAlias = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AccountAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AccountAlias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AccountAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccountAlias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccountAliasState): AccountAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AccountAlias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccountAliasState, opts: CustomResourceOptions): AccountAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccountAlias]
     
     /**
       * Returns true if the given object is an instance of AccountAlias.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/accountAlias", "AccountAlias.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accountAlias.AccountAlias */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accountAlias.AccountAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/accountAlias.AccountAlias */ Boolean]
   }
   
-  @js.native
   trait AccountAliasArgs extends StObject {
     
     /**
       * The account alias
       */
-    val accountAlias: Input[String] = js.native
+    val accountAlias: Input[String]
   }
   object AccountAliasArgs {
     
@@ -88,13 +85,12 @@ object accountAliasMod {
     }
   }
   
-  @js.native
   trait AccountAliasState extends StObject {
     
     /**
       * The account alias
       */
-    val accountAlias: js.UndefOr[Input[String]] = js.native
+    val accountAlias: js.UndefOr[Input[String]] = js.undefined
   }
   object AccountAliasState {
     

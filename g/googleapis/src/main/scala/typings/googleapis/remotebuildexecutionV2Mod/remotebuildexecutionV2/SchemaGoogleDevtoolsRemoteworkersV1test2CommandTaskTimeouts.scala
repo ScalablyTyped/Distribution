@@ -2,13 +2,11 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the timeouts associated with this task.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts extends StObje
     * required to download inputs or upload outputs. That is, the worker will
     * terminate the task if it runs longer than this.
     */
-  var execution: js.UndefOr[String] = js.native
+  var execution: js.UndefOr[String] = js.undefined
   
   /**
     * This specifies the maximum amount of time the task can be idle - that is,
@@ -24,7 +22,7 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts extends StObje
     * process is silent for more than the specified time, the worker will
     * terminate the task.
     */
-  var idle: js.UndefOr[String] = js.native
+  var idle: js.UndefOr[String] = js.undefined
   
   /**
     * If the execution or IO timeouts are exceeded, the worker will try to
@@ -34,7 +32,7 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts extends StObje
     * gracefully (e.g. via SIGTERM) before we bring down the hammer (e.g.
     * SIGKILL on *nix, CTRL_BREAK_EVENT on Windows).
     */
-  var shutdown: js.UndefOr[String] = js.native
+  var shutdown: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts {
   

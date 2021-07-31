@@ -4,22 +4,22 @@ import typings.std.ArrayBuffer
 import typings.std.AudioBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("audiobuffer-to-wav", JSImport.Namespace)
-  @js.native
-  def apply(buffer: AudioBuffer): ArrayBuffer = js.native
-  @JSImport("audiobuffer-to-wav", JSImport.Namespace)
-  @js.native
-  def apply(buffer: AudioBuffer, options: Options): ArrayBuffer = js.native
+  @scala.inline
+  def apply(buffer: AudioBuffer): ArrayBuffer = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  @scala.inline
+  def apply(buffer: AudioBuffer, options: Options): ArrayBuffer = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
   
+  @JSImport("audiobuffer-to-wav", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var float32: js.UndefOr[Boolean] = js.native
+    var float32: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

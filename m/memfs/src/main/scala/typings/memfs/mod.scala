@@ -12,10 +12,13 @@ import typings.memfs.volumeMod.IWriteStream
 import typings.memfs.volumeMod.NestedDirectoryJSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("memfs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("memfs", "Volume")
@@ -43,24 +46,19 @@ object mod {
     @scala.inline
     def fd_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fd")(x.asInstanceOf[js.Any])
     
-    @JSImport("memfs", "Volume.fromJSON")
-    @js.native
-    def fromJSON(json: DirectoryJSON): typings.memfs.volumeMod.Volume = js.native
-    @JSImport("memfs", "Volume.fromJSON")
-    @js.native
-    def fromJSON(json: DirectoryJSON, cwd: String): typings.memfs.volumeMod.Volume = js.native
+    @scala.inline
+    def fromJSON(json: DirectoryJSON): typings.memfs.volumeMod.Volume = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.memfs.volumeMod.Volume]
+    @scala.inline
+    def fromJSON(json: DirectoryJSON, cwd: String): typings.memfs.volumeMod.Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[typings.memfs.volumeMod.Volume]
     
-    @JSImport("memfs", "Volume.fromNestedJSON")
-    @js.native
-    def fromNestedJSON(json: NestedDirectoryJSON): typings.memfs.volumeMod.Volume = js.native
-    @JSImport("memfs", "Volume.fromNestedJSON")
-    @js.native
-    def fromNestedJSON(json: NestedDirectoryJSON, cwd: String): typings.memfs.volumeMod.Volume = js.native
+    @scala.inline
+    def fromNestedJSON(json: NestedDirectoryJSON): typings.memfs.volumeMod.Volume = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNestedJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.memfs.volumeMod.Volume]
+    @scala.inline
+    def fromNestedJSON(json: NestedDirectoryJSON, cwd: String): typings.memfs.volumeMod.Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNestedJSON")(json.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[typings.memfs.volumeMod.Volume]
   }
   
-  @JSImport("memfs", "createFsFromVolume")
-  @js.native
-  def createFsFromVolume(vol: typings.memfs.volumeMod.Volume): IFs = js.native
+  @scala.inline
+  def createFsFromVolume(vol: typings.memfs.volumeMod.Volume): IFs = ^.asInstanceOf[js.Dynamic].applyDynamic("createFsFromVolume")(vol.asInstanceOf[js.Any]).asInstanceOf[IFs]
   
   object fs extends Shortcut {
     

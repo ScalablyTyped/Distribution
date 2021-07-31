@@ -7,7 +7,6 @@ import typings.tslint.tslintStrings.`null`
 import typings.tslint.tslintStrings.undefined
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object strictTypePredicatesRuleMod {
@@ -24,16 +23,14 @@ object strictTypePredicatesRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/strictTypePredicatesRule", "Rule.FAILURE_STRICT_PREFER_STRICT_EQUALS")
-    @js.native
-    def FAILURE_STRICT_PREFER_STRICT_EQUALS_null(value: `null`, isPositive: Boolean): String = js.native
-    @JSImport("tslint/lib/rules/strictTypePredicatesRule", "Rule.FAILURE_STRICT_PREFER_STRICT_EQUALS")
-    @js.native
-    def FAILURE_STRICT_PREFER_STRICT_EQUALS_undefined(value: undefined, isPositive: Boolean): String = js.native
+    @scala.inline
+    def FAILURE_STRICT_PREFER_STRICT_EQUALS_null(value: `null`, isPositive: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRICT_PREFER_STRICT_EQUALS")(value.asInstanceOf[js.Any], isPositive.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("tslint/lib/rules/strictTypePredicatesRule", "Rule.FAILURE_STRING")
-    @js.native
-    def FAILURE_STRING(value: Boolean): String = js.native
+    @scala.inline
+    def FAILURE_STRICT_PREFER_STRICT_EQUALS_undefined(value: undefined, isPositive: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRICT_PREFER_STRICT_EQUALS")(value.asInstanceOf[js.Any], isPositive.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def FAILURE_STRING(value: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/strictTypePredicatesRule", "Rule.FAILURE_STRING_BAD_TYPEOF")
     @js.native

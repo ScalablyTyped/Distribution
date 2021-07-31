@@ -2,37 +2,37 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HighlightProps extends AbstractSeriesProps[LineMarkSeriesPoint] {
+trait HighlightProps
+  extends StObject
+     with AbstractSeriesProps[LineMarkSeriesPoint] {
   
-  var drag: js.UndefOr[Boolean] = js.native
+  var drag: js.UndefOr[Boolean] = js.undefined
   
-  var enableX: js.UndefOr[Boolean] = js.native
+  var enableX: js.UndefOr[Boolean] = js.undefined
   
-  var enableY: js.UndefOr[Boolean] = js.native
+  var enableY: js.UndefOr[Boolean] = js.undefined
   
-  var highlightHeight: js.UndefOr[Double] = js.native
+  var highlightHeight: js.UndefOr[Double] = js.undefined
   
-  var highlightWidth: js.UndefOr[Double] = js.native
+  var highlightWidth: js.UndefOr[Double] = js.undefined
   
-  var highlightX: js.UndefOr[String | Double] = js.native
+  var highlightX: js.UndefOr[String | Double] = js.undefined
   
-  var highlightY: js.UndefOr[String | Double] = js.native
+  var highlightY: js.UndefOr[String | Double] = js.undefined
   
-  var onBrush: js.UndefOr[js.Function1[/* area */ HighlightArea | Null, Unit]] = js.native
+  var onBrush: js.UndefOr[js.Function1[/* area */ HighlightArea | Null, Unit]] = js.undefined
   
-  var onBrushEnd: js.UndefOr[js.Function1[/* area */ HighlightArea | Null, Unit]] = js.native
+  var onBrushEnd: js.UndefOr[js.Function1[/* area */ HighlightArea | Null, Unit]] = js.undefined
   
-  var onBrushStart: js.UndefOr[js.Function1[/* area */ HighlightArea | Null, Unit]] = js.native
+  var onBrushStart: js.UndefOr[js.Function1[/* area */ HighlightArea | Null, Unit]] = js.undefined
   
-  var onDrag: js.UndefOr[js.Function1[/* area */ HighlightArea | Null, Unit]] = js.native
+  var onDrag: js.UndefOr[js.Function1[/* area */ HighlightArea | Null, Unit]] = js.undefined
   
-  var onDragEnd: js.UndefOr[js.Function1[/* area */ HighlightArea | Null, Unit]] = js.native
+  var onDragEnd: js.UndefOr[js.Function1[/* area */ HighlightArea | Null, Unit]] = js.undefined
   
-  var onDragStart: js.UndefOr[js.Function1[/* area */ HighlightArea | Null, Unit]] = js.native
+  var onDragStart: js.UndefOr[js.Function1[/* area */ HighlightArea | Null, Unit]] = js.undefined
 }
 object HighlightProps {
   

@@ -5,7 +5,6 @@ import typings.sequelize.anon.Exclude
 import typings.sequelize.anon.Level
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A hash of options to describe the scope of the search
   */
-@js.native
 trait FindOptions[T]
-  extends LoggingOptions
+  extends StObject
+     with LoggingOptions
      with SearchPathOptions {
   
   /**
@@ -24,23 +23,23 @@ trait FindOptions[T]
     * `Sequelize.literal`, `Sequelize.fn` and so on), and the second is the name you want the attribute to
     * have in the returned instance
     */
-  var attributes: js.UndefOr[FindOptionsAttributesArray | Exclude] = js.native
+  var attributes: js.UndefOr[FindOptionsAttributesArray | Exclude] = js.undefined
   
   /**
     * Apply DISTINCT(col) for FindAndCount(all)
     */
-  var distinct: js.UndefOr[Boolean] = js.native
+  var distinct: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Group by. It is not mentioned in sequelize's JSDoc, but mentioned in docs.
     * https://github.com/sequelize/sequelize/blob/master/docs/docs/models-usage.md#user-content-manipulating-the-dataset-with-limit-offset-order-and-group
     */
-  var group: js.UndefOr[String | js.Array[String] | js.Object] = js.native
+  var group: js.UndefOr[String | js.Array[String] | js.Object] = js.undefined
   
   /**
     * having ?!?
     */
-  var having: js.UndefOr[AnyWhereOptions] = js.native
+  var having: js.UndefOr[AnyWhereOptions] = js.undefined
   
   /**
     * A list of associations to eagerly load using a left join. Supported is either
@@ -48,24 +47,24 @@ trait FindOptions[T]
     * If your association are set up with an `as` (eg. `X.hasMany(Y, { as: 'Z }`, you need to specify Z in
     * the as attribute when eager loading Y).
     */
-  var include: js.UndefOr[js.Array[(Model[_, _, _]) | IncludeOptions]] = js.native
+  var include: js.UndefOr[js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]] = js.undefined
   
   /**
     * Limit the results
     */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /**
     * Lock the selected rows. Possible options are transaction.LOCK.UPDATE and transaction.LOCK.SHARE.
     * Postgres also supports transaction.LOCK.KEY_SHARE, transaction.LOCK.NO_KEY_UPDATE and specific model
     * locks with joins. See [transaction.LOCK for an example](transaction#lock)
     */
-  var lock: js.UndefOr[TransactionLockLevel | Level] = js.native
+  var lock: js.UndefOr[TransactionLockLevel | Level] = js.undefined
   
   /**
     * Skip the results;
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies an ordering. If a string is provided, it will be escaped. Using an array, you can provide
@@ -75,42 +74,42 @@ trait FindOptions[T]
     */
   var order: js.UndefOr[
     String | col | literal | FindOptionsOrderArray | fn | (js.Array[String | col | literal | FindOptionsOrderArray | fn])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * If true, only non-deleted records will be returned. If false, both deleted and non-deleted records will
     * be returned. Only applies if `options.paranoid` is true for the model.
     */
-  var paranoid: js.UndefOr[Boolean] = js.native
+  var paranoid: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Return raw result. See sequelize.query for more information.
     */
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Throw EmptyResultError if a record is not found
     */
-  var rejectOnEmpty: js.UndefOr[Boolean] = js.native
+  var rejectOnEmpty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Prevents a subquery on the main table when using include
     */
-  var subQuery: js.UndefOr[Boolean] = js.native
+  var subQuery: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Force the query to use the write pool
     *
     * Defaults to false
     */
-  var useMaster: js.UndefOr[Boolean] = js.native
+  var useMaster: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A hash of attributes to describe your search. See above for examples.
     */
   var where: js.UndefOr[
     WhereOptions[T] | typings.sequelize.mod.where | fn | (js.Array[col | and | or | String])
-  ] = js.native
+  ] = js.undefined
 }
 object FindOptions {
   
@@ -121,7 +120,7 @@ object FindOptions {
   }
   
   @scala.inline
-  implicit class FindOptionsMutableBuilder[Self <: FindOptions[_], T] (val x: Self with FindOptions[T]) extends AnyVal {
+  implicit class FindOptionsMutableBuilder[Self <: FindOptions[?], T] (val x: Self & FindOptions[T]) extends AnyVal {
     
     @scala.inline
     def setAttributes(value: FindOptionsAttributesArray | Exclude): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
@@ -154,7 +153,7 @@ object FindOptions {
     def setHavingUndefined: Self = StObject.set(x, "having", js.undefined)
     
     @scala.inline
-    def setInclude(value: js.Array[(Model[_, _, _]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    def setInclude(value: js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)

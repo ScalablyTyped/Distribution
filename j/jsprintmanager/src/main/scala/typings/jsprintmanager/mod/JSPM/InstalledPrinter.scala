@@ -2,36 +2,24 @@ package typings.jsprintmanager.mod.JSPM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsprintmanager", "JSPM.InstalledPrinter")
 @js.native
-class InstalledPrinter protected () extends IClientPrinter {
+class InstalledPrinter protected ()
+  extends StObject
+     with IClientPrinter {
   def this(printerName: String) = this()
   def this(printerName: String, printToDefaultIfNotFound: Boolean) = this()
-  def this(printerName: String, printToDefaultIfNotFound: js.UndefOr[scala.Nothing], trayName: String) = this()
   def this(printerName: String, printToDefaultIfNotFound: Boolean, trayName: String) = this()
-  def this(
-    printerName: String,
-    printToDefaultIfNotFound: js.UndefOr[scala.Nothing],
-    trayName: js.UndefOr[scala.Nothing],
-    paperName: String
-  ) = this()
-  def this(
-    printerName: String,
-    printToDefaultIfNotFound: js.UndefOr[scala.Nothing],
-    trayName: String,
-    paperName: String
-  ) = this()
-  def this(
-    printerName: String,
-    printToDefaultIfNotFound: Boolean,
-    trayName: js.UndefOr[scala.Nothing],
-    paperName: String
-  ) = this()
+  def this(printerName: String, printToDefaultIfNotFound: Unit, trayName: String) = this()
   def this(printerName: String, printToDefaultIfNotFound: Boolean, trayName: String, paperName: String) = this()
+  def this(printerName: String, printToDefaultIfNotFound: Boolean, trayName: Unit, paperName: String) = this()
+  def this(printerName: String, printToDefaultIfNotFound: Unit, trayName: String, paperName: String) = this()
+  def this(printerName: String, printToDefaultIfNotFound: Unit, trayName: Unit, paperName: String) = this()
   
+  /* CompleteClass */
+  var Id: js.Any = js.native
   @JSName("Id")
   var Id_InstalledPrinter: String = js.native
   
@@ -50,6 +38,9 @@ class InstalledPrinter protected () extends IClientPrinter {
   var printToDefaultIfNotFound: Boolean = js.native
   
   var printerName: String = js.native
+  
+  /* CompleteClass */
+  override def serialize(): js.Any = js.native
   
   var trayName: String = js.native
 }

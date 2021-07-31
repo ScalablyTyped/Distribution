@@ -4,17 +4,15 @@ import typings.hashJs.hashJsStrings.big
 import typings.hashJs.hashJsStrings.little
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockHash[T] extends StObject {
   
-  var endian: big | little = js.native
+  var endian: big | little
   
-  var hmacStrength: Double = js.native
+  var hmacStrength: Double
   
-  var padLength: Double = js.native
+  var padLength: Double
 }
 object BlockHash {
   
@@ -25,7 +23,7 @@ object BlockHash {
   }
   
   @scala.inline
-  implicit class BlockHashMutableBuilder[Self <: BlockHash[_], T] (val x: Self with BlockHash[T]) extends AnyVal {
+  implicit class BlockHashMutableBuilder[Self <: BlockHash[?], T] (val x: Self & BlockHash[T]) extends AnyVal {
     
     @scala.inline
     def setEndian(value: big | little): Self = StObject.set(x, "endian", value.asInstanceOf[js.Any])

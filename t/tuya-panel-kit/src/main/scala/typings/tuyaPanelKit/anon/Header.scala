@@ -3,31 +3,29 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.stackTypesMod.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Header extends StObject {
   
   /**
     * Layout of the header
     */
-  var header: Layout = js.native
+  var header: Layout
   
   /**
     * Layout of the back button label.
     */
-  var leftLabel: js.UndefOr[Layout] = js.native
+  var leftLabel: js.UndefOr[Layout] = js.undefined
   
   /**
     * Layout of the whole screen.
     */
-  var screen: Layout = js.native
+  var screen: Layout
   
   /**
     * Layout of the title element.
     */
-  var title: js.UndefOr[Layout] = js.native
+  var title: js.UndefOr[Layout] = js.undefined
 }
 object Header {
   

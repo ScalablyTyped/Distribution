@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base class for parameters related to inserting or changing media elements in the ASPxHtmlEditor.
   */
-@js.native
-trait ASPxClientHtmlEditorChangeMediaElementCommandArguments extends ASPxClientHtmlEditorCommandArguments {
+trait ASPxClientHtmlEditorChangeMediaElementCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorCommandArguments {
   
   /**
     * Returns the name of the client-side command corresponding to the parameter.
     */
-  def GetCommandName(): String = js.native
+  def GetCommandName(): String
   
   /**
     * Determines the position of the target media element.
     */
-  var align: String = js.native
+  var align: String
   
   /**
     * Defines the <a href="http://www.w3schools.com/tags/att_global_id.asp">HTML "id"</a> attribute of the target media element.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Defines the source of the target media element.
     */
-  var src: String = js.native
+  var src: String
   
   /**
     * Contains the style settings defining the appearance of the target media element.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
 }
 object ASPxClientHtmlEditorChangeMediaElementCommandArguments {
   

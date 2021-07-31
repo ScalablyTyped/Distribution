@@ -3,33 +3,25 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`12`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionalHint extends StObject {
   
-  var beakWidth: Double = js.native
+  var beakWidth: Double
   
-  var directionalHint: `12` = js.native
+  var directionalHint: `12`
   
-  var doNotLayer: Boolean = js.native
+  var doNotLayer: Boolean
   
-  var gapSpace: Double = js.native
+  var gapSpace: Double
   
-  var setInitialFocus: Boolean = js.native
+  var setInitialFocus: Boolean
 }
 object DirectionalHint {
   
   @scala.inline
-  def apply(
-    beakWidth: Double,
-    directionalHint: `12`,
-    doNotLayer: Boolean,
-    gapSpace: Double,
-    setInitialFocus: Boolean
-  ): DirectionalHint = {
-    val __obj = js.Dynamic.literal(beakWidth = beakWidth.asInstanceOf[js.Any], directionalHint = directionalHint.asInstanceOf[js.Any], doNotLayer = doNotLayer.asInstanceOf[js.Any], gapSpace = gapSpace.asInstanceOf[js.Any], setInitialFocus = setInitialFocus.asInstanceOf[js.Any])
+  def apply(beakWidth: Double, doNotLayer: Boolean, gapSpace: Double, setInitialFocus: Boolean): DirectionalHint = {
+    val __obj = js.Dynamic.literal(beakWidth = beakWidth.asInstanceOf[js.Any], directionalHint = 12, doNotLayer = doNotLayer.asInstanceOf[js.Any], gapSpace = gapSpace.asInstanceOf[js.Any], setInitialFocus = setInitialFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionalHint]
   }
   

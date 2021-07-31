@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserRoutingProfileRequest extends StObject {
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
     * The identifier of the routing profile for the user.
     */
-  var RoutingProfileId: typings.awsSdk.connectMod.RoutingProfileId = js.native
+  var RoutingProfileId: typings.awsSdk.connectMod.RoutingProfileId
   
   /**
     * The identifier of the user account.
     */
-  var UserId: typings.awsSdk.connectMod.UserId = js.native
+  var UserId: typings.awsSdk.connectMod.UserId
 }
 object UpdateUserRoutingProfileRequest {
   

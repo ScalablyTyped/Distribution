@@ -2,46 +2,44 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpAddressResponse extends StObject {
   
   /**
     * The date and time that the IP address was created, in Unix time format and Coordinated Universal Time (UTC).
     */
-  var CreationTime: js.UndefOr[Rfc3339TimeString] = js.native
+  var CreationTime: js.UndefOr[Rfc3339TimeString] = js.undefined
   
   /**
     * One IP address that the Resolver endpoint uses for DNS queries.
     */
-  var Ip: js.UndefOr[typings.awsSdk.route53resolverMod.Ip] = js.native
+  var Ip: js.UndefOr[typings.awsSdk.route53resolverMod.Ip] = js.undefined
   
   /**
     * The ID of one IP address.
     */
-  var IpId: js.UndefOr[ResourceId] = js.native
+  var IpId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The date and time that the IP address was last modified, in Unix time format and Coordinated Universal Time (UTC).
     */
-  var ModificationTime: js.UndefOr[Rfc3339TimeString] = js.native
+  var ModificationTime: js.UndefOr[Rfc3339TimeString] = js.undefined
   
   /**
     * A status code that gives the current status of the request.
     */
-  var Status: js.UndefOr[IpAddressStatus] = js.native
+  var Status: js.UndefOr[IpAddressStatus] = js.undefined
   
   /**
     * A message that provides additional information about the status of the request.
     */
-  var StatusMessage: js.UndefOr[typings.awsSdk.route53resolverMod.StatusMessage] = js.native
+  var StatusMessage: js.UndefOr[typings.awsSdk.route53resolverMod.StatusMessage] = js.undefined
   
   /**
     * The ID of one subnet.
     */
-  var SubnetId: js.UndefOr[typings.awsSdk.route53resolverMod.SubnetId] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.route53resolverMod.SubnetId] = js.undefined
 }
 object IpAddressResponse {
   

@@ -2,35 +2,33 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON response template for List Chrome OS Devices operation in Directory
   * API.
   */
-@js.native
 trait SchemaChromeOsDevices extends StObject {
   
   /**
     * List of Chrome OS Device objects.
     */
-  var chromeosdevices: js.UndefOr[js.Array[SchemaChromeOsDevice]] = js.native
+  var chromeosdevices: js.UndefOr[js.Array[SchemaChromeOsDevice]] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token used to access next page of this result.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaChromeOsDevices {
   

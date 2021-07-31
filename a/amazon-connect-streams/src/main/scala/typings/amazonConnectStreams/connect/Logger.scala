@@ -2,7 +2,6 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You can even add your own logs to this logger if you prefer.
   * Logs are written to the console log per normal and also kept in memory.
   */
-@js.native
 trait Logger extends StObject {
   
   /**
@@ -18,31 +16,31 @@ trait Logger extends StObject {
     * @param template The `printf`-style template.
     * @param args The arguments to the template.
     */
-  def debug(template: String, args: js.Any*): LogEntry = js.native
+  def debug(template: String, args: js.Any*): LogEntry
   
   /** Downloads the logs on the agent's machine in JSON form. */
-  def download(): Unit = js.native
+  def download(): Unit
   
   /**
     * Adds a log entry with error level.
     * @param template The `printf`-style template.
     * @param args The arguments to the template.
     */
-  def error(template: String, args: js.Any*): LogEntry = js.native
+  def error(template: String, args: js.Any*): LogEntry
   
   /**
     * Adds a log entry with info level.
     * @param template The `printf`-style template.
     * @param args The arguments to the template.
     */
-  def info(template: String, args: js.Any*): LogEntry = js.native
+  def info(template: String, args: js.Any*): LogEntry
   
   /**
     * Adds a log entry with warn level.
     * @param template The `printf`-style template.
     * @param args The arguments to the template.
     */
-  def warn(template: String, args: js.Any*): LogEntry = js.native
+  def warn(template: String, args: js.Any*): LogEntry
 }
 object Logger {
   

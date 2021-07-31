@@ -2,23 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileReaderEventMap extends StObject {
   
-  var abort: ProgressEvent[FileReader] = js.native
+  var abort: ProgressEvent[FileReader]
   
-  var error: ProgressEvent[FileReader] = js.native
+  var error: ProgressEvent[FileReader]
   
-  var load: ProgressEvent[FileReader] = js.native
+  var load: ProgressEvent[FileReader]
   
-  var loadend: ProgressEvent[FileReader] = js.native
+  var loadend: ProgressEvent[FileReader]
   
-  var loadstart: ProgressEvent[FileReader] = js.native
+  var loadstart: ProgressEvent[FileReader]
   
-  var progress: ProgressEvent[FileReader] = js.native
+  var progress: ProgressEvent[FileReader]
 }
 object FileReaderEventMap {
   

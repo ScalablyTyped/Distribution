@@ -2,176 +2,174 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Snapshot extends StObject {
   
   /**
     * A list of the AWS customer accounts authorized to restore the snapshot. Returns null if no accounts are authorized. Visible only to the snapshot owner. 
     */
-  var AccountsWithRestoreAccess: js.UndefOr[AccountsWithRestoreAccessList] = js.native
+  var AccountsWithRestoreAccess: js.UndefOr[AccountsWithRestoreAccessList] = js.undefined
   
   /**
     * The size of the incremental backup.
     */
-  var ActualIncrementalBackupSizeInMegaBytes: js.UndefOr[Double] = js.native
+  var ActualIncrementalBackupSizeInMegaBytes: js.UndefOr[Double] = js.undefined
   
   /**
     * The Availability Zone in which the cluster was created.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The number of megabytes that have been transferred to the snapshot backup.
     */
-  var BackupProgressInMegaBytes: js.UndefOr[Double] = js.native
+  var BackupProgressInMegaBytes: js.UndefOr[Double] = js.undefined
   
   /**
     * The time (UTC) when the cluster was originally created.
     */
-  var ClusterCreateTime: js.UndefOr[TStamp] = js.native
+  var ClusterCreateTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The identifier of the cluster for which the snapshot was taken.
     */
-  var ClusterIdentifier: js.UndefOr[String] = js.native
+  var ClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The version ID of the Amazon Redshift engine that is running on the cluster.
     */
-  var ClusterVersion: js.UndefOr[String] = js.native
+  var ClusterVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The number of megabytes per second being transferred to the snapshot backup. Returns 0 for a completed backup. 
     */
-  var CurrentBackupRateInMegaBytesPerSecond: js.UndefOr[Double] = js.native
+  var CurrentBackupRateInMegaBytesPerSecond: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the database that was created when the cluster was created.
     */
-  var DBName: js.UndefOr[String] = js.native
+  var DBName: js.UndefOr[String] = js.undefined
   
   /**
     * The amount of time an in-progress snapshot backup has been running, or the amount of time it took a completed backup to finish.
     */
-  var ElapsedTimeInSeconds: js.UndefOr[Long] = js.native
+  var ElapsedTimeInSeconds: js.UndefOr[Long] = js.undefined
   
   /**
     * If true, the data in the snapshot is encrypted at rest.
     */
-  var Encrypted: js.UndefOr[Boolean] = js.native
+  var Encrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A boolean that indicates whether the snapshot data is encrypted using the HSM keys of the source cluster. true indicates that the data is encrypted using HSM keys.
     */
-  var EncryptedWithHSM: js.UndefOr[Boolean] = js.native
+  var EncryptedWithHSM: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An option that specifies whether to create the cluster with enhanced VPC routing enabled. To create a cluster that uses enhanced VPC routing, the cluster must be in a VPC. For more information, see Enhanced VPC Routing in the Amazon Redshift Cluster Management Guide. If this option is true, enhanced VPC routing is enabled.  Default: false
     */
-  var EnhancedVpcRouting: js.UndefOr[Boolean] = js.native
+  var EnhancedVpcRouting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The estimate of the time remaining before the snapshot backup will complete. Returns 0 for a completed backup. 
     */
-  var EstimatedSecondsToCompletion: js.UndefOr[Long] = js.native
+  var EstimatedSecondsToCompletion: js.UndefOr[Long] = js.undefined
   
   /**
     * The AWS Key Management Service (KMS) key ID of the encryption key that was used to encrypt data in the cluster from which the snapshot was taken.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the maintenance track for the snapshot.
     */
-  var MaintenanceTrackName: js.UndefOr[String] = js.native
+  var MaintenanceTrackName: js.UndefOr[String] = js.undefined
   
   /**
     * The number of days until a manual snapshot will pass its retention period.
     */
-  var ManualSnapshotRemainingDays: js.UndefOr[IntegerOptional] = js.native
+  var ManualSnapshotRemainingDays: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The number of days that a manual snapshot is retained. If the value is -1, the manual snapshot is retained indefinitely.  The value must be either -1 or an integer between 1 and 3,653.
     */
-  var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.native
+  var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The master user name for the cluster.
     */
-  var MasterUsername: js.UndefOr[String] = js.native
+  var MasterUsername: js.UndefOr[String] = js.undefined
   
   /**
     * The node type of the nodes in the cluster.
     */
-  var NodeType: js.UndefOr[String] = js.native
+  var NodeType: js.UndefOr[String] = js.undefined
   
   /**
     * The number of nodes in the cluster.
     */
-  var NumberOfNodes: js.UndefOr[Integer] = js.native
+  var NumberOfNodes: js.UndefOr[Integer] = js.undefined
   
   /**
     * For manual snapshots, the AWS customer account used to create or copy the snapshot. For automatic snapshots, the owner of the cluster. The owner can perform all snapshot actions, such as sharing a manual snapshot.
     */
-  var OwnerAccount: js.UndefOr[String] = js.native
+  var OwnerAccount: js.UndefOr[String] = js.undefined
   
   /**
     * The port that the cluster is listening on.
     */
-  var Port: js.UndefOr[Integer] = js.native
+  var Port: js.UndefOr[Integer] = js.undefined
   
   /**
     * The list of node types that this cluster snapshot is able to restore into.
     */
-  var RestorableNodeTypes: js.UndefOr[RestorableNodeTypeList] = js.native
+  var RestorableNodeTypes: js.UndefOr[RestorableNodeTypeList] = js.undefined
   
   /**
     * The time (in UTC format) when Amazon Redshift began the snapshot. A snapshot contains a copy of the cluster data as of this exact time.
     */
-  var SnapshotCreateTime: js.UndefOr[TStamp] = js.native
+  var SnapshotCreateTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The snapshot identifier that is provided in the request.
     */
-  var SnapshotIdentifier: js.UndefOr[String] = js.native
+  var SnapshotIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * A timestamp representing the start of the retention period for the snapshot.
     */
-  var SnapshotRetentionStartTime: js.UndefOr[TStamp] = js.native
+  var SnapshotRetentionStartTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The snapshot type. Snapshots created using CreateClusterSnapshot and CopyClusterSnapshot are of type "manual". 
     */
-  var SnapshotType: js.UndefOr[String] = js.native
+  var SnapshotType: js.UndefOr[String] = js.undefined
   
   /**
     * The source region from which the snapshot was copied.
     */
-  var SourceRegion: js.UndefOr[String] = js.native
+  var SourceRegion: js.UndefOr[String] = js.undefined
   
   /**
     * The snapshot status. The value of the status depends on the API operation used:     CreateClusterSnapshot and CopyClusterSnapshot returns status as "creating".     DescribeClusterSnapshots returns status as "creating", "available", "final snapshot", or "failed".    DeleteClusterSnapshot returns status as "deleted".  
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The list of tags for the cluster snapshot.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The size of the complete set of backup data that would be used to restore the cluster.
     */
-  var TotalBackupSizeInMegaBytes: js.UndefOr[Double] = js.native
+  var TotalBackupSizeInMegaBytes: js.UndefOr[Double] = js.undefined
   
   /**
     * The VPC identifier of the cluster if the snapshot is from a cluster in a VPC. Otherwise, this field is not in the output.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object Snapshot {
   

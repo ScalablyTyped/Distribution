@@ -2,56 +2,54 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreatmentResource extends StObject {
   
   /**
     * The delivery configuration settings for sending the treatment through a custom channel. This object is required if the MessageConfiguration object for the treatment specifies a CustomMessage object.
     */
-  var CustomDeliveryConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.CustomDeliveryConfiguration] = js.native
+  var CustomDeliveryConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.CustomDeliveryConfiguration] = js.undefined
   
   /**
     * The unique identifier for the treatment.
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * The message configuration settings for the treatment.
     */
-  var MessageConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.MessageConfiguration] = js.native
+  var MessageConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.MessageConfiguration] = js.undefined
   
   /**
     * The schedule settings for the treatment.
     */
-  var Schedule: js.UndefOr[typings.awsSdk.pinpointMod.Schedule] = js.native
+  var Schedule: js.UndefOr[typings.awsSdk.pinpointMod.Schedule] = js.undefined
   
   /**
     * The allocated percentage of users (segment members) that the treatment is sent to.
     */
-  var SizePercent: integer = js.native
+  var SizePercent: integer
   
   /**
     * The current status of the treatment.
     */
-  var State: js.UndefOr[CampaignState] = js.native
+  var State: js.UndefOr[CampaignState] = js.undefined
   
   /**
     * The message template to use for the treatment.
     */
-  var TemplateConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.TemplateConfiguration] = js.native
+  var TemplateConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.TemplateConfiguration] = js.undefined
   
   /**
     * The custom description of the treatment.
     */
-  var TreatmentDescription: js.UndefOr[string] = js.native
+  var TreatmentDescription: js.UndefOr[string] = js.undefined
   
   /**
     * The custom name of the treatment.
     */
-  var TreatmentName: js.UndefOr[string] = js.native
+  var TreatmentName: js.UndefOr[string] = js.undefined
 }
 object TreatmentResource {
   

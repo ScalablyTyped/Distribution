@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Devices.AllJoyn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Exposes unique name and transport information for an advertising app. */
-@js.native
 trait AllJoynServiceInfo extends StObject {
   
   /** The path to the service object. This path is used to match communications with service objects connected to the session. */
-  var objectPath: String = js.native
+  var objectPath: String
   
   /** The port used to connect to the session. */
-  var sessionPort: Double = js.native
+  var sessionPort: Double
   
   /** The unique bus name associated with the advertising app. */
-  var uniqueName: String = js.native
+  var uniqueName: String
 }
 object AllJoynServiceInfo {
   

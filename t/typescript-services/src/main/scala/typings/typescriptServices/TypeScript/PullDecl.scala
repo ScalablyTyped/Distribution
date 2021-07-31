@@ -2,101 +2,99 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullDecl extends StObject {
   
-  def _getEnclosingDeclFromParentDecl(): PullDecl = js.native
+  def _getEnclosingDeclFromParentDecl(): PullDecl
   
-  def addChildDecl(childDecl: PullDecl): Unit = js.native
+  def addChildDecl(childDecl: PullDecl): Unit
   
-  def addVariableDeclToGroup(decl: PullDecl): Unit = js.native
+  def addVariableDeclToGroup(decl: PullDecl): Unit
   
-  def ast(): AST = js.native
+  def ast(): AST
   
-  var childDeclNamespaceCache: IIndexable[js.Array[PullDecl]] = js.native
+  var childDeclNamespaceCache: IIndexable[js.Array[PullDecl]]
   
-  var childDeclTypeCache: IIndexable[js.Array[PullDecl]] = js.native
+  var childDeclTypeCache: IIndexable[js.Array[PullDecl]]
   
-  var childDeclTypeParameterCache: IIndexable[js.Array[PullDecl]] = js.native
+  var childDeclTypeParameterCache: IIndexable[js.Array[PullDecl]]
   
-  var childDeclValueCache: IIndexable[js.Array[PullDecl]] = js.native
+  var childDeclValueCache: IIndexable[js.Array[PullDecl]]
   
-  var childDecls: js.Any = js.native
+  var childDecls: js.Any
   
-  var containerDecl: js.Any = js.native
+  var containerDecl: js.Any
   
-  var declDisplayName: js.Any = js.native
+  var declDisplayName: js.Any
   
-  var declGroups: js.Any = js.native
+  var declGroups: js.Any
   
-  var declID: Double = js.native
+  var declID: Double
   
-  def ensureSymbolIsBound(): Unit = js.native
+  def ensureSymbolIsBound(): Unit
   
-  def fileName(): String = js.native
+  def fileName(): String
   
-  var flags: PullElementFlags = js.native
+  var flags: PullElementFlags
   
-  /* private */ def getChildDeclCache(declKind: js.Any): js.Any = js.native
+  /* private */ def getChildDeclCache(declKind: js.Any): js.Any
   
-  def getChildDecls(): js.Array[PullDecl] = js.native
+  def getChildDecls(): js.Array[PullDecl]
   
-  def getContainerDecl(): PullDecl = js.native
+  def getContainerDecl(): PullDecl
   
-  def getDisplayName(): String = js.native
+  def getDisplayName(): String
   
-  def getEnclosingDecl(): PullDecl = js.native
+  def getEnclosingDecl(): PullDecl
   
-  def getParentDecl(): PullDecl = js.native
+  def getParentDecl(): PullDecl
   
-  def getParentPath(): js.Array[PullDecl] = js.native
+  def getParentPath(): js.Array[PullDecl]
   
-  def getSignatureSymbol(): PullSignatureSymbol = js.native
+  def getSignatureSymbol(): PullSignatureSymbol
   
-  def getSymbol(): PullSymbol = js.native
+  def getSymbol(): PullSymbol
   
-  def getTypeParameters(): js.Array[PullDecl] = js.native
+  def getTypeParameters(): js.Array[PullDecl]
   
-  def getValueDecl(): PullDecl = js.native
+  def getValueDecl(): PullDecl
   
-  def getVariableDeclGroups(): js.Array[js.Array[PullDecl]] = js.native
+  def getVariableDeclGroups(): js.Array[js.Array[PullDecl]]
   
-  def hasBeenBound(): Boolean = js.native
+  def hasBeenBound(): Boolean
   
-  def hasSignatureSymbol(): Boolean = js.native
+  def hasSignatureSymbol(): Boolean
   
-  def hasSymbol(): Boolean = js.native
+  def hasSymbol(): Boolean
   
-  def isExternalModule(): Boolean = js.native
+  def isExternalModule(): Boolean
   
-  def isRootDecl(): Unit = js.native
+  def isRootDecl(): Unit
   
-  def isSynthesized(): Boolean = js.native
+  def isSynthesized(): Boolean
   
-  var kind: PullElementKind = js.native
+  var kind: PullElementKind
   
-  var name: String = js.native
+  var name: String
   
-  def searchChildDecls(declName: String, searchKind: PullElementKind): js.Array[PullDecl] = js.native
+  def searchChildDecls(declName: String, searchKind: PullElementKind): js.Array[PullDecl]
   
-  var semanticInfoChain: SemanticInfoChain = js.native
+  var semanticInfoChain: SemanticInfoChain
   
-  def setFlag(flags: PullElementFlags): Unit = js.native
+  def setFlag(flags: PullElementFlags): Unit
   
-  def setFlags(flags: PullElementFlags): Unit = js.native
+  def setFlags(flags: PullElementFlags): Unit
   
-  def setSignatureSymbol(signatureSymbol: PullSignatureSymbol): Unit = js.native
+  def setSignatureSymbol(signatureSymbol: PullSignatureSymbol): Unit
   
-  def setSymbol(symbol: PullSymbol): Unit = js.native
+  def setSymbol(symbol: PullSymbol): Unit
   
-  def setValueDecl(valDecl: PullDecl): Unit = js.native
+  def setValueDecl(valDecl: PullDecl): Unit
   
-  var synthesizedValDecl: js.Any = js.native
+  var synthesizedValDecl: js.Any
   
-  var typeParameters: js.Any = js.native
+  var typeParameters: js.Any
 }
 object PullDecl {
   

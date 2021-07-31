@@ -4,23 +4,21 @@ import typings.reactNativeMaterialUi.mod.TextStyle
 import typings.reactNativeMaterialUi.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Item extends StObject {
   
-  var container: js.UndefOr[ViewStyle] = js.native
+  var container: js.UndefOr[ViewStyle] = js.undefined
   
-  var icon: js.UndefOr[ViewStyle] = js.native
+  var icon: js.UndefOr[ViewStyle] = js.undefined
   
-  var item: js.UndefOr[ViewStyle] = js.native
+  var item: js.UndefOr[ViewStyle] = js.undefined
   
-  var label: js.UndefOr[TextStyle] = js.native
+  var label: js.UndefOr[TextStyle] = js.undefined
   
-  var subheader: js.UndefOr[TextStyle] = js.native
+  var subheader: js.UndefOr[TextStyle] = js.undefined
   
-  var value: js.UndefOr[TextStyle] = js.native
+  var value: js.UndefOr[TextStyle] = js.undefined
 }
 object Item {
   

@@ -2,19 +2,17 @@ package typings.slackMock.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlashCommandOptions[T] extends StObject {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var headers: js.UndefOr[SlashCommandHttpHeaders] = js.native
+  var headers: js.UndefOr[SlashCommandHttpHeaders] = js.undefined
   
-  var statusCode: js.UndefOr[Double] = js.native
+  var statusCode: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[SlashCommandUrl] = js.native
+  var url: js.UndefOr[SlashCommandUrl] = js.undefined
 }
 object SlashCommandOptions {
   
@@ -25,7 +23,7 @@ object SlashCommandOptions {
   }
   
   @scala.inline
-  implicit class SlashCommandOptionsMutableBuilder[Self <: SlashCommandOptions[_], T] (val x: Self with SlashCommandOptions[T]) extends AnyVal {
+  implicit class SlashCommandOptionsMutableBuilder[Self <: SlashCommandOptions[?], T] (val x: Self & SlashCommandOptions[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

@@ -11,7 +11,7 @@ Logging library that allows for hierarchical loggers, multiple log levels, and f
 | Keywords           | log, logging, logger, hierarchical, handler, watcher |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 1294 |
+| # downloads        | 1472 |
 | # stars            | 2 |
 
 ## Links

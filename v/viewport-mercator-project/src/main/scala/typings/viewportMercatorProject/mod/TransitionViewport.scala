@@ -2,17 +2,15 @@ package typings.viewportMercatorProject.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitionViewport extends StObject {
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object TransitionViewport {
   

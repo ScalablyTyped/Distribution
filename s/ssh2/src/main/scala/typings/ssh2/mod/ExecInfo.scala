@@ -2,14 +2,12 @@ package typings.ssh2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecInfo extends StObject {
   
   /** The command line to be executed. */
-  var command: String = js.native
+  var command: String
 }
 object ExecInfo {
   

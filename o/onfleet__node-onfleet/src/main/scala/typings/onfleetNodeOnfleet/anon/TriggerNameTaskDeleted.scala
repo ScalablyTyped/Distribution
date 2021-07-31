@@ -5,21 +5,21 @@ import typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskDeleted
 import typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TriggerNameTaskDeleted extends WebhookTriggerType {
+trait TriggerNameTaskDeleted
+  extends StObject
+     with WebhookTriggerType {
   
-  var triggerId: `8` = js.native
+  var triggerId: `8`
   
-  var triggerName: TaskDeleted = js.native
+  var triggerName: TaskDeleted
 }
 object TriggerNameTaskDeleted {
   
   @scala.inline
-  def apply(triggerId: `8`, triggerName: TaskDeleted): TriggerNameTaskDeleted = {
-    val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+  def apply(triggerName: TaskDeleted): TriggerNameTaskDeleted = {
+    val __obj = js.Dynamic.literal(triggerId = 8, triggerName = triggerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerNameTaskDeleted]
   }
   

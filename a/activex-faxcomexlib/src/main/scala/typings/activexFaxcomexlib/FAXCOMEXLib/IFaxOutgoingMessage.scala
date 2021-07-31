@@ -3,69 +3,67 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IFaxOutgoingMessage interface */
-@js.native
 trait IFaxOutgoingMessage extends StObject {
   
   /** Called Station ID */
-  val CSID: String = js.native
+  val CSID: String
   
   /** Copy Tiff image to the local file */
-  def CopyTiff(bstrTiffPath: String): Unit = js.native
+  def CopyTiff(bstrTiffPath: String): Unit
   
   /** Delete the message from the archive */
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
   /** Name of the device transmitting the message */
-  val DeviceName: String = js.native
+  val DeviceName: String
   
   /** Document's friendly name */
-  val DocumentName: String = js.native
+  val DocumentName: String
   
   /** Unique message ID */
-  val Id: String = js.native
+  val Id: String
   
   /** Time the job was originally scheduled to be transmitted */
-  val OriginalScheduledTime: VarDate = js.native
+  val OriginalScheduledTime: VarDate
   
   /** Total number of pages */
-  val Pages: Double = js.native
+  val Pages: Double
   
   /** Priority of the fax */
-  val Priority: FAX_PRIORITY_TYPE_ENUM = js.native
+  val Priority: FAX_PRIORITY_TYPE_ENUM
   
   /** Recipient information object */
-  val Recipient: FaxRecipient = js.native
+  val Recipient: FaxRecipient
   
   /** Number of failed routing retries */
-  val Retries: Double = js.native
+  val Retries: Double
   
   /** Sender information object */
-  val Sender: FaxSender = js.native
+  val Sender: FaxSender
   
   /** Size in bytes of TIFF file */
-  val Size: Double = js.native
+  val Size: Double
   
   /** Cover page's subject field */
-  val Subject: String = js.native
+  val Subject: String
   
   /** Unique ID the submission process created for the job */
-  val SubmissionId: String = js.native
+  val SubmissionId: String
   
   /** Time the job was submitted */
-  val SubmissionTime: VarDate = js.native
+  val SubmissionTime: VarDate
   
   /** Transmitting Station ID */
-  val TSID: String = js.native
+  val TSID: String
   
   /** Transmission end time */
-  val TransmissionEnd: VarDate = js.native
+  val TransmissionEnd: VarDate
   
   /** Transmission start time */
-  val TransmissionStart: VarDate = js.native
+  val TransmissionStart: VarDate
 }
 object IFaxOutgoingMessage {
   

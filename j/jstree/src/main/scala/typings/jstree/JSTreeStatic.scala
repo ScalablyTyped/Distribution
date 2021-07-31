@@ -3,7 +3,6 @@ package typings.jstree
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -51,7 +50,7 @@ trait JSTreeStatic extends StObject {
     * stores all loaded jstree plugins (used internally)
     * @name $.jstree.plugins
     */
-  var plugins: js.Array[_] = js.native
+  var plugins: js.Array[js.Any] = js.native
   
   def reference(needle: String): JSTree = js.native
   def reference(needle: JQuery): JSTree = js.native

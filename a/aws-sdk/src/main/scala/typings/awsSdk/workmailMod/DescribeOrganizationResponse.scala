@@ -2,56 +2,54 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeOrganizationResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the organization.
     */
-  var ARN: js.UndefOr[AmazonResourceName] = js.native
+  var ARN: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * The alias for an organization.
     */
-  var Alias: js.UndefOr[OrganizationName] = js.native
+  var Alias: js.UndefOr[OrganizationName] = js.undefined
   
   /**
     * The date at which the organization became usable in the WorkMail context, in UNIX epoch time format.
     */
-  var CompletedDate: js.UndefOr[Timestamp] = js.native
+  var CompletedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The default mail domain associated with the organization.
     */
-  var DefaultMailDomain: js.UndefOr[String] = js.native
+  var DefaultMailDomain: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the directory associated with an Amazon WorkMail organization.
     */
-  var DirectoryId: js.UndefOr[String] = js.native
+  var DirectoryId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of directory associated with the WorkMail organization.
     */
-  var DirectoryType: js.UndefOr[String] = js.native
+  var DirectoryType: js.UndefOr[String] = js.undefined
   
   /**
     * (Optional) The error message indicating if unexpected behavior was encountered with regards to the organization.
     */
-  var ErrorMessage: js.UndefOr[String] = js.native
+  var ErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of an organization.
     */
-  var OrganizationId: js.UndefOr[typings.awsSdk.workmailMod.OrganizationId] = js.native
+  var OrganizationId: js.UndefOr[typings.awsSdk.workmailMod.OrganizationId] = js.undefined
   
   /**
     * The state of an organization.
     */
-  var State: js.UndefOr[String] = js.native
+  var State: js.UndefOr[String] = js.undefined
 }
 object DescribeOrganizationResponse {
   

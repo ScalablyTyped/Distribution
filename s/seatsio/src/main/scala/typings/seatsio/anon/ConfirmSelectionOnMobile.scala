@@ -2,27 +2,25 @@ package typings.seatsio.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmSelectionOnMobile extends StObject {
   
-  var confirmSelectionOnMobile: js.UndefOr[String] = js.native
+  var confirmSelectionOnMobile: js.UndefOr[String] = js.undefined
   
-  var showActionHint: js.UndefOr[Boolean] = js.native
+  var showActionHint: js.UndefOr[Boolean] = js.undefined
   
-  var showAvailability: js.UndefOr[Boolean] = js.native
+  var showAvailability: js.UndefOr[Boolean] = js.undefined
   
-  var showCategory: js.UndefOr[Boolean] = js.native
+  var showCategory: js.UndefOr[Boolean] = js.undefined
   
-  var showLabel: js.UndefOr[Boolean] = js.native
+  var showLabel: js.UndefOr[Boolean] = js.undefined
   
-  var showPricing: js.UndefOr[Boolean] = js.native
+  var showPricing: js.UndefOr[Boolean] = js.undefined
   
-  var showUnavailableNotice: js.UndefOr[Boolean] = js.native
+  var showUnavailableNotice: js.UndefOr[Boolean] = js.undefined
   
-  var stylizedLabel: js.UndefOr[Boolean] = js.native
+  var stylizedLabel: js.UndefOr[Boolean] = js.undefined
 }
 object ConfirmSelectionOnMobile {
   

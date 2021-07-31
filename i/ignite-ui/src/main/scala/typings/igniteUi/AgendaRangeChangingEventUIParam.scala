@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgendaRangeChangingEventUIParam extends StObject {
   
   /**
     * Gets a reference to the current AgendaView start date.
     */
-  var currentAgendaRangeStartDate: js.UndefOr[js.Any] = js.native
+  var currentAgendaRangeStartDate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the days to be shown in AgendaView mode.
     */
-  var dateRangeInterval: js.UndefOr[Double] = js.native
+  var dateRangeInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets a reference to the newly AgendaView start date.
     */
-  var newAgendaRangeStartDate: js.UndefOr[js.Any] = js.native
+  var newAgendaRangeStartDate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the scheduler.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object AgendaRangeChangingEventUIParam {
   

@@ -2,51 +2,49 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Locale specific data, for example, separators, quotation marks.
   * @see XLocaleData for links to DTD of XML locale data files.
   */
-@js.native
 trait LocaleDataItem extends StObject {
   
-  var LongDateDayOfWeekSeparator: String = js.native
+  var LongDateDayOfWeekSeparator: String
   
-  var LongDateDaySeparator: String = js.native
+  var LongDateDaySeparator: String
   
-  var LongDateMonthSeparator: String = js.native
+  var LongDateMonthSeparator: String
   
-  var LongDateYearSeparator: String = js.native
+  var LongDateYearSeparator: String
   
-  var dateSeparator: String = js.native
+  var dateSeparator: String
   
-  var decimalSeparator: String = js.native
+  var decimalSeparator: String
   
-  var doubleQuotationEnd: String = js.native
+  var doubleQuotationEnd: String
   
-  var doubleQuotationStart: String = js.native
+  var doubleQuotationStart: String
   
-  var listSeparator: String = js.native
+  var listSeparator: String
   
-  var measurementSystem: String = js.native
+  var measurementSystem: String
   
-  var quotationEnd: String = js.native
+  var quotationEnd: String
   
-  var quotationStart: String = js.native
+  var quotationStart: String
   
-  var thousandSeparator: String = js.native
+  var thousandSeparator: String
   
-  var time100SecSeparator: String = js.native
+  var time100SecSeparator: String
   
-  var timeAM: String = js.native
+  var timeAM: String
   
-  var timePM: String = js.native
+  var timePM: String
   
-  var timeSeparator: String = js.native
+  var timeSeparator: String
   
-  var unoID: String = js.native
+  var unoID: String
 }
 object LocaleDataItem {
   

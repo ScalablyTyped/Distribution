@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,7 +14,9 @@ object mod {
   /**
     * @param fileNameOrRawData If provided, reads an existing archive. Otherwise creates a new, empty archive.
     */
-  class ^ () extends AdmZip {
+  class ^ ()
+    extends StObject
+       with AdmZip {
     def this(fileNameOrRawData: String) = this()
     def this(fileNameOrRawData: Buffer) = this()
   }
@@ -34,9 +35,9 @@ object mod {
       * @param attr Attribute to add to the entry.
       */
     def addFile(entryName: String, data: Buffer): Unit = js.native
-    def addFile(entryName: String, data: Buffer, comment: js.UndefOr[scala.Nothing], attr: Double): Unit = js.native
     def addFile(entryName: String, data: Buffer, comment: String): Unit = js.native
     def addFile(entryName: String, data: Buffer, comment: String, attr: Double): Unit = js.native
+    def addFile(entryName: String, data: Buffer, comment: Unit, attr: Double): Unit = js.native
     
     /**
       * Adds a file from the disk to the archive.
@@ -46,9 +47,9 @@ object mod {
       * @param zipName Name for the file.
       */
     def addLocalFile(localPath: String): Unit = js.native
-    def addLocalFile(localPath: String, zipPath: js.UndefOr[scala.Nothing], zipName: String): Unit = js.native
     def addLocalFile(localPath: String, zipPath: String): Unit = js.native
     def addLocalFile(localPath: String, zipPath: String, zipName: String): Unit = js.native
+    def addLocalFile(localPath: String, zipPath: Unit, zipName: String): Unit = js.native
     
     /**
       * Adds a local directory and all its nested files and directories to the
@@ -58,15 +59,11 @@ object mod {
       * @param filter RegExp or Function if files match will be included.
       */
     def addLocalFolder(localPath: String): Unit = js.native
-    def addLocalFolder(
-      localPath: String,
-      zipPath: js.UndefOr[scala.Nothing],
-      filter: js.Function1[/* filename */ String, Boolean]
-    ): Unit = js.native
-    def addLocalFolder(localPath: String, zipPath: js.UndefOr[scala.Nothing], filter: RegExp): Unit = js.native
     def addLocalFolder(localPath: String, zipPath: String): Unit = js.native
     def addLocalFolder(localPath: String, zipPath: String, filter: js.Function1[/* filename */ String, Boolean]): Unit = js.native
     def addLocalFolder(localPath: String, zipPath: String, filter: RegExp): Unit = js.native
+    def addLocalFolder(localPath: String, zipPath: Unit, filter: js.Function1[/* filename */ String, Boolean]): Unit = js.native
+    def addLocalFolder(localPath: String, zipPath: Unit, filter: RegExp): Unit = js.native
     
     /**
       * Adds a comment to the zip. The zip must be rewritten after
@@ -110,13 +107,9 @@ object mod {
       * @param callback The callback function will be called after extraction.
       */
     def extractAllToAsync(targetPath: String): Unit = js.native
-    def extractAllToAsync(
-      targetPath: String,
-      overwrite: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* error */ Error, Unit]
-    ): Unit = js.native
     def extractAllToAsync(targetPath: String, overwrite: Boolean): Unit = js.native
     def extractAllToAsync(targetPath: String, overwrite: Boolean, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def extractAllToAsync(targetPath: String, overwrite: Unit, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
     
     /**
       * Extracts the given entry to the given `targetPath`.
@@ -131,23 +124,13 @@ object mod {
       *   will be overwriten if this is `true`. Default: `false`.
       */
     def extractEntryTo(entryPath: String, targetPath: String): Boolean = js.native
-    def extractEntryTo(
-      entryPath: String,
-      targetPath: String,
-      maintainEntryPath: js.UndefOr[scala.Nothing],
-      overwrite: Boolean
-    ): Boolean = js.native
     def extractEntryTo(entryPath: String, targetPath: String, maintainEntryPath: Boolean): Boolean = js.native
     def extractEntryTo(entryPath: String, targetPath: String, maintainEntryPath: Boolean, overwrite: Boolean): Boolean = js.native
+    def extractEntryTo(entryPath: String, targetPath: String, maintainEntryPath: Unit, overwrite: Boolean): Boolean = js.native
     def extractEntryTo(entryPath: IZipEntry, targetPath: String): Boolean = js.native
-    def extractEntryTo(
-      entryPath: IZipEntry,
-      targetPath: String,
-      maintainEntryPath: js.UndefOr[scala.Nothing],
-      overwrite: Boolean
-    ): Boolean = js.native
     def extractEntryTo(entryPath: IZipEntry, targetPath: String, maintainEntryPath: Boolean): Boolean = js.native
     def extractEntryTo(entryPath: IZipEntry, targetPath: String, maintainEntryPath: Boolean, overwrite: Boolean): Boolean = js.native
+    def extractEntryTo(entryPath: IZipEntry, targetPath: String, maintainEntryPath: Unit, overwrite: Boolean): Boolean = js.native
     
     /**
       * Returns an array of `IZipEntry` objects representing the files and folders
@@ -192,10 +175,10 @@ object mod {
       * @param callback Called with the resulting string.
       * @param encoding If no encoding is specified `"utf8"` is used.
       */
-    def readAsTextAsync(fileName: String, callback: js.Function1[/* data */ String, _]): Unit = js.native
-    def readAsTextAsync(fileName: String, callback: js.Function1[/* data */ String, _], encoding: String): Unit = js.native
-    def readAsTextAsync(fileName: IZipEntry, callback: js.Function1[/* data */ String, _]): Unit = js.native
-    def readAsTextAsync(fileName: IZipEntry, callback: js.Function1[/* data */ String, _], encoding: String): Unit = js.native
+    def readAsTextAsync(fileName: String, callback: js.Function1[/* data */ String, js.Any]): Unit = js.native
+    def readAsTextAsync(fileName: String, callback: js.Function1[/* data */ String, js.Any], encoding: String): Unit = js.native
+    def readAsTextAsync(fileName: IZipEntry, callback: js.Function1[/* data */ String, js.Any]): Unit = js.native
+    def readAsTextAsync(fileName: IZipEntry, callback: js.Function1[/* data */ String, js.Any], encoding: String): Unit = js.native
     
     /**
       * Extracts the given entry from the archive and returns the content.
@@ -210,8 +193,8 @@ object mod {
       * @param entry The full path of the entry or a `IZipEntry` object.
       * @param callback Called with a `Buffer` or `null` in case of error.
       */
-    def readFileAsync(entry: String, callback: js.Function2[/* data */ Buffer | Null, /* err */ String, _]): Unit = js.native
-    def readFileAsync(entry: IZipEntry, callback: js.Function2[/* data */ Buffer | Null, /* err */ String, _]): Unit = js.native
+    def readFileAsync(entry: String, callback: js.Function2[/* data */ Buffer | Null, /* err */ String, js.Any]): Unit = js.native
+    def readFileAsync(entry: IZipEntry, callback: js.Function2[/* data */ Buffer | Null, /* err */ String, js.Any]): Unit = js.native
     
     /**
       * Returns the content of the entire zip file.
@@ -227,40 +210,40 @@ object mod {
     def toBuffer(onSuccess: js.Function1[/* buffer */ Buffer, Unit]): Unit = js.native
     def toBuffer(
       onSuccess: js.Function1[/* buffer */ Buffer, Unit],
-      onFail: js.UndefOr[scala.Nothing],
-      onItemStart: js.UndefOr[scala.Nothing],
-      onItemEnd: js.Function1[/* name */ String, Unit]
-    ): Unit = js.native
-    def toBuffer(
-      onSuccess: js.Function1[/* buffer */ Buffer, Unit],
-      onFail: js.UndefOr[scala.Nothing],
-      onItemStart: js.Function1[/* name */ String, Unit]
-    ): Unit = js.native
-    def toBuffer(
-      onSuccess: js.Function1[/* buffer */ Buffer, Unit],
-      onFail: js.UndefOr[scala.Nothing],
-      onItemStart: js.Function1[/* name */ String, Unit],
-      onItemEnd: js.Function1[/* name */ String, Unit]
-    ): Unit = js.native
-    def toBuffer(
-      onSuccess: js.Function1[/* buffer */ Buffer, Unit],
       onFail: js.Function1[/* repeated */ js.Any, Unit]
     ): Unit = js.native
     def toBuffer(
       onSuccess: js.Function1[/* buffer */ Buffer, Unit],
       onFail: js.Function1[/* repeated */ js.Any, Unit],
-      onItemStart: js.UndefOr[scala.Nothing],
-      onItemEnd: js.Function1[/* name */ String, Unit]
-    ): Unit = js.native
-    def toBuffer(
-      onSuccess: js.Function1[/* buffer */ Buffer, Unit],
-      onFail: js.Function1[/* repeated */ js.Any, Unit],
       onItemStart: js.Function1[/* name */ String, Unit]
     ): Unit = js.native
     def toBuffer(
       onSuccess: js.Function1[/* buffer */ Buffer, Unit],
       onFail: js.Function1[/* repeated */ js.Any, Unit],
       onItemStart: js.Function1[/* name */ String, Unit],
+      onItemEnd: js.Function1[/* name */ String, Unit]
+    ): Unit = js.native
+    def toBuffer(
+      onSuccess: js.Function1[/* buffer */ Buffer, Unit],
+      onFail: js.Function1[/* repeated */ js.Any, Unit],
+      onItemStart: Unit,
+      onItemEnd: js.Function1[/* name */ String, Unit]
+    ): Unit = js.native
+    def toBuffer(
+      onSuccess: js.Function1[/* buffer */ Buffer, Unit],
+      onFail: Unit,
+      onItemStart: js.Function1[/* name */ String, Unit]
+    ): Unit = js.native
+    def toBuffer(
+      onSuccess: js.Function1[/* buffer */ Buffer, Unit],
+      onFail: Unit,
+      onItemStart: js.Function1[/* name */ String, Unit],
+      onItemEnd: js.Function1[/* name */ String, Unit]
+    ): Unit = js.native
+    def toBuffer(
+      onSuccess: js.Function1[/* buffer */ Buffer, Unit],
+      onFail: Unit,
+      onItemStart: Unit,
       onItemEnd: js.Function1[/* name */ String, Unit]
     ): Unit = js.native
     
@@ -279,9 +262,9 @@ object mod {
       * overwrite the opened zip.
       */
     def writeZip(): Unit = js.native
-    def writeZip(targetFileName: js.UndefOr[scala.Nothing], callback: js.Function1[/* error */ Error | Null, Unit]): Unit = js.native
     def writeZip(targetFileName: String): Unit = js.native
     def writeZip(targetFileName: String, callback: js.Function1[/* error */ Error | Null, Unit]): Unit = js.native
+    def writeZip(targetFileName: Unit, callback: js.Function1[/* error */ Error | Null, Unit]): Unit = js.native
   }
   
   /**

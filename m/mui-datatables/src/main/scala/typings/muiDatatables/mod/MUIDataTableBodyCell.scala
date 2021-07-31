@@ -2,29 +2,27 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableBodyCell extends StObject {
   
-  var children: js.UndefOr[js.Any] = js.native
+  var children: js.UndefOr[js.Any] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var classes: js.UndefOr[js.Object] = js.native
+  var classes: js.UndefOr[js.Object] = js.undefined
   
-  var colIndex: js.UndefOr[Double] = js.native
+  var colIndex: js.UndefOr[Double] = js.undefined
   
-  var columnHeader: js.UndefOr[js.Any] = js.native
+  var columnHeader: js.UndefOr[js.Any] = js.undefined
   
-  var dataIndex: js.UndefOr[Double] = js.native
+  var dataIndex: js.UndefOr[Double] = js.undefined
   
-  var options: js.UndefOr[MUIDataTableOptions] = js.native
+  var options: js.UndefOr[MUIDataTableOptions] = js.undefined
   
-  var otherProps: js.UndefOr[js.Any] = js.native
+  var otherProps: js.UndefOr[js.Any] = js.undefined
   
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
 }
 object MUIDataTableBodyCell {
   

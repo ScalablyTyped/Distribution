@@ -2,38 +2,36 @@ package typings.reactNativeZssRichTextEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RichTextEditorProps extends StObject {
   
-  var contentInset: ContentInset = js.native
+  var contentInset: ContentInset
   
   // Text that will be used as a placeholder when no text is present in the content section.
-  var contentPlaceholder: String = js.native
+  var contentPlaceholder: String
   
   // Any custom CSS styles that you want to inject to the editor.
-  var customCSS: RichTextStyles = js.native
+  var customCSS: RichTextStyles
   
   // A function that will be called when the editor has been initialized.
-  var editorInitializedCallback: FunctionWithZeroArgs = js.native
+  var editorInitializedCallback: FunctionWithZeroArgs
   
-  var enableOnChange: Boolean = js.native
+  var enableOnChange: Boolean
   
-  var footerHeight: Double = js.native
+  var footerHeight: Double
   
   // Hide title
-  var hiddenTitle: Boolean = js.native
+  var hiddenTitle: Boolean
   
   // HTML that will be rendered in the content section on load.
-  var initialContentHTML: String = js.native
+  var initialContentHTML: String
   
   // HTML that will be rendered in the title section as soon as the component loads.
-  var initialTitleHTML: String = js.native
+  var initialTitleHTML: String
   
   // Text that will be used as a placeholder when no text is present in the title section.
-  var titlePlaceholder: String = js.native
+  var titlePlaceholder: String
 }
 object RichTextEditorProps {
   

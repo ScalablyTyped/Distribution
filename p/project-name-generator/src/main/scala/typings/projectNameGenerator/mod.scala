@@ -2,39 +2,39 @@ package typings.projectNameGenerator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("project-name-generator", JSImport.Namespace)
-  @js.native
-  def apply(): Project = js.native
-  @JSImport("project-name-generator", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Project = js.native
+  @scala.inline
+  def apply(): Project = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Project]
+  @scala.inline
+  def apply(options: Options): Project = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Project]
   
+  @JSImport("project-name-generator", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * Whether to output words beginning with the same letter or not
       * @default false
       */
-    var alliterative: js.UndefOr[Boolean] = js.native
+    var alliterative: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether a numeric suffix is generated or not. The number is between 1 - 9999, both inclusive.
       * @default false
       */
-    var number: js.UndefOr[Boolean] = js.native
+    var number: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Number of words generated (excluding number).
       * All words will be adjectives, except the last one which will be a noun
       * @default 2
       */
-    var words: js.UndefOr[Double] = js.native
+    var words: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -67,14 +67,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Project extends StObject {
     
-    var dashed: String = js.native
+    var dashed: String
     
-    var raw: js.Array[String | Double] = js.native
+    var raw: js.Array[String | Double]
     
-    var spaced: String = js.native
+    var spaced: String
   }
   object Project {
     

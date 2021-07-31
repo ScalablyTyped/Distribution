@@ -2,105 +2,103 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalePolicy extends StObject {
   
-  var addressFormat: js.UndefOr[String] = js.native
+  var addressFormat: js.UndefOr[String] = js.undefined
   
   var addressFormatMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var allowRegion: js.UndefOr[String] = js.native
+  var allowRegion: js.UndefOr[String] = js.undefined
   
-  var calendarType: js.UndefOr[String] = js.native
+  var calendarType: js.UndefOr[String] = js.undefined
   
   var calendarTypeMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var cultureName: js.UndefOr[String] = js.native
+  var cultureName: js.UndefOr[String] = js.undefined
   
   var cultureNameMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The currency code for the account, based on the [ISO 4217 currency code](https://www.iso.org/iso-4217-currency-codes.html).
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `currencyCode` property is editable.
     */
   var currencyCodeMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var currencyNegativeFormat: js.UndefOr[String] = js.native
+  var currencyNegativeFormat: js.UndefOr[String] = js.undefined
   
   var currencyNegativeFormatMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var currencyPositiveFormat: js.UndefOr[String] = js.native
+  var currencyPositiveFormat: js.UndefOr[String] = js.undefined
   
   var currencyPositiveFormatMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var customDateFormat: js.UndefOr[String] = js.native
+  var customDateFormat: js.UndefOr[String] = js.undefined
   
-  var customSignDateFormat: js.UndefOr[String] = js.native
+  var customSignDateFormat: js.UndefOr[String] = js.undefined
   
-  var customSignTimeFormat: js.UndefOr[String] = js.native
+  var customSignTimeFormat: js.UndefOr[String] = js.undefined
   
-  var customTimeFormat: js.UndefOr[String] = js.native
+  var customTimeFormat: js.UndefOr[String] = js.undefined
   
-  var dateFormat: js.UndefOr[String] = js.native
+  var dateFormat: js.UndefOr[String] = js.undefined
   
   var dateFormatMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var effectiveAddressFormat: js.UndefOr[String] = js.native
+  var effectiveAddressFormat: js.UndefOr[String] = js.undefined
   
-  var effectiveCalendarType: js.UndefOr[String] = js.native
+  var effectiveCalendarType: js.UndefOr[String] = js.undefined
   
-  var effectiveCurrencyCode: js.UndefOr[String] = js.native
+  var effectiveCurrencyCode: js.UndefOr[String] = js.undefined
   
-  var effectiveCurrencyNegativeFormat: js.UndefOr[String] = js.native
+  var effectiveCurrencyNegativeFormat: js.UndefOr[String] = js.undefined
   
-  var effectiveCurrencyPositiveFormat: js.UndefOr[String] = js.native
+  var effectiveCurrencyPositiveFormat: js.UndefOr[String] = js.undefined
   
-  var effectiveCustomDateFormat: js.UndefOr[String] = js.native
+  var effectiveCustomDateFormat: js.UndefOr[String] = js.undefined
   
-  var effectiveCustomTimeFormat: js.UndefOr[String] = js.native
+  var effectiveCustomTimeFormat: js.UndefOr[String] = js.undefined
   
-  var effectiveDateFormat: js.UndefOr[String] = js.native
+  var effectiveDateFormat: js.UndefOr[String] = js.undefined
   
-  var effectiveInitialFormat: js.UndefOr[String] = js.native
+  var effectiveInitialFormat: js.UndefOr[String] = js.undefined
   
-  var effectiveNameFormat: js.UndefOr[String] = js.native
+  var effectiveNameFormat: js.UndefOr[String] = js.undefined
   
-  var effectiveTimeFormat: js.UndefOr[String] = js.native
+  var effectiveTimeFormat: js.UndefOr[String] = js.undefined
   
-  var effectiveTimeZone: js.UndefOr[String] = js.native
+  var effectiveTimeZone: js.UndefOr[String] = js.undefined
   
-  var initialFormat: js.UndefOr[String] = js.native
+  var initialFormat: js.UndefOr[String] = js.undefined
   
   var initialFormatMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var nameFormat: js.UndefOr[String] = js.native
+  var nameFormat: js.UndefOr[String] = js.undefined
   
   var nameFormatMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The format for the signature date. Valid values are:
@@ -127,7 +125,7 @@ trait LocalePolicy extends StObject {
     * **Note**: Only Admin users can change this setting.
     *
     */
-  var signDateFormat: js.UndefOr[String] = js.native
+  var signDateFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `signDateFormat` property is editable.
@@ -135,7 +133,7 @@ trait LocalePolicy extends StObject {
     */
   var signDateFormatMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The format for the signature time. Valid values are:
@@ -147,7 +145,7 @@ trait LocalePolicy extends StObject {
     * - `h:mm:ss`
     *
     */
-  var signTimeFormat: js.UndefOr[String] = js.native
+  var signTimeFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `signTimeFormat` property is editable.
@@ -155,19 +153,19 @@ trait LocalePolicy extends StObject {
     */
   var signTimeFormatMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var timeFormat: js.UndefOr[String] = js.native
+  var timeFormat: js.UndefOr[String] = js.undefined
   
   var timeFormatMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
   
   var timeZoneMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
 }
 object LocalePolicy {
   

@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigatorOptions extends StObject {
   
   /**
@@ -16,59 +14,59 @@ trait NavigatorOptions extends StObject {
     * the navigator is set only once. On navigating, only the main chart
     * content is updated.
     */
-  var adaptToUpdatedData: js.UndefOr[Boolean] = js.native
+  var adaptToUpdatedData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) Enable or disable the navigator.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) Options for the handles for dragging the zoomed area.
     */
-  var handles: js.UndefOr[NavigatorHandlesOptions] = js.native
+  var handles: js.UndefOr[NavigatorHandlesOptions] = js.undefined
   
   /**
     * (Highstock, Gantt) The height of the navigator.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The distance from the nearest element, the X axis or X
     * axis labels.
     */
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The color of the mask covering the areas of the
     * navigator series that are currently not visible in the main series. The
     * default color is bluish with an opacity of 0.3 to see the series below.
     */
-  var maskFill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var maskFill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock, Gantt) Whether the mask should be inside the range marking
     * the zoomed range, or outside. In Highstock 1.x it was always `false`.
     */
-  var maskInside: js.UndefOr[Boolean] = js.native
+  var maskInside: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) When the chart is inverted, whether to draw the
     * navigator on the opposite side.
     */
-  var opposite: js.UndefOr[Boolean] = js.native
+  var opposite: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) The color of the line marking the currently zoomed
     * area in the navigator.
     */
-  var outlineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var outlineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock, Gantt) The width of the line marking the currently zoomed
     * area in the navigator.
     */
-  var outlineWidth: js.UndefOr[Double] = js.native
+  var outlineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) Options for the navigator series. Available options
@@ -82,21 +80,21 @@ trait NavigatorOptions extends StObject {
     */
   var series: js.UndefOr[
     NavigatorSeriesOptions | SeriesOptionsType | (js.Array[NavigatorSeriesOptions | SeriesOptionsType])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * (Highstock, Gantt) Options for the navigator X axis. Default series
     * options for the navigator xAxis are: (see online documentation for
     * example)
     */
-  var xAxis: js.UndefOr[NavigatorXAxisOptions | js.Array[NavigatorXAxisOptions]] = js.native
+  var xAxis: js.UndefOr[NavigatorXAxisOptions | js.Array[NavigatorXAxisOptions]] = js.undefined
   
   /**
     * (Highstock, Gantt) Options for the navigator Y axis. Default series
     * options for the navigator yAxis are: (see online documentation for
     * example)
     */
-  var yAxis: js.UndefOr[NavigatorYAxisOptions | js.Array[NavigatorYAxisOptions]] = js.native
+  var yAxis: js.UndefOr[NavigatorYAxisOptions | js.Array[NavigatorYAxisOptions]] = js.undefined
 }
 object NavigatorOptions {
   

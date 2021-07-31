@@ -2,36 +2,34 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangesReaderOptions extends StObject {
   
   // number of changes per API call
-  var batchSize: js.UndefOr[Double] = js.native
+  var batchSize: js.UndefOr[Double] = js.undefined
   
   // whether to get a faster changes feed by supplying 'seq_interval'  
-  var fastChanges: js.UndefOr[Boolean] = js.native
+  var fastChanges: js.UndefOr[Boolean] = js.undefined
   
   // whether to return document bodies too
-  var includeDocs: js.UndefOr[Boolean] = js.native
+  var includeDocs: js.UndefOr[Boolean] = js.undefined
   
   // additional query string parameters
-  var qs: js.UndefOr[js.Object] = js.native
+  var qs: js.UndefOr[js.Object] = js.undefined
   
   // a MangoSelector defining the slice of the changes feed to return
-  var selector: js.UndefOr[MangoSelector] = js.native
+  var selector: js.UndefOr[MangoSelector] = js.undefined
   
   // where to begin the changes feed: 0, now or a sequence token
-  var since: js.UndefOr[String] = js.native
+  var since: js.UndefOr[String] = js.undefined
   
   // number of milliseconds when the longpoll request will timeout
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   // whether to require a callback before performing the next request (get/start only)
   @JSName("wait")
-  var wait_FChangesReaderOptions: js.UndefOr[Boolean] = js.native
+  var wait_FChangesReaderOptions: js.UndefOr[Boolean] = js.undefined
 }
 object ChangesReaderOptions {
   

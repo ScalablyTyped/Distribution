@@ -2,13 +2,11 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCapacityProviderResponse extends StObject {
   
-  var capacityProvider: js.UndefOr[CapacityProvider] = js.native
+  var capacityProvider: js.UndefOr[CapacityProvider] = js.undefined
 }
 object DeleteCapacityProviderResponse {
   

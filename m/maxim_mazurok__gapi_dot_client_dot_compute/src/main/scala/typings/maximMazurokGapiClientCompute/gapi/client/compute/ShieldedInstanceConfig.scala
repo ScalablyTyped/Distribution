@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShieldedInstanceConfig extends StObject {
   
   /** Defines whether the instance has integrity monitoring enabled. Enabled by default. */
-  var enableIntegrityMonitoring: js.UndefOr[Boolean] = js.native
+  var enableIntegrityMonitoring: js.UndefOr[Boolean] = js.undefined
   
   /** Defines whether the instance has Secure Boot enabled. Disabled by default. */
-  var enableSecureBoot: js.UndefOr[Boolean] = js.native
+  var enableSecureBoot: js.UndefOr[Boolean] = js.undefined
   
   /** Defines whether the instance has the vTPM enabled. Enabled by default. */
-  var enableVtpm: js.UndefOr[Boolean] = js.native
+  var enableVtpm: js.UndefOr[Boolean] = js.undefined
 }
 object ShieldedInstanceConfig {
   

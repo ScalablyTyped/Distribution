@@ -3,14 +3,16 @@ package typings.jimpPluginDither
 import typings.jimpCore.etcMod.ImageCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/plugin-dither", JSImport.Default)
+  @JSImport("@jimp/plugin-dither", JSImport.Namespace)
   @js.native
-  def default(): Dither = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Dither = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Dither]
   
   @js.native
   trait Dither extends StObject {

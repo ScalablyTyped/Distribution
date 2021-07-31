@@ -2,15 +2,13 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TonalColorsOutput extends StObject {
   
-  var ambient: SkColor = js.native
+  var ambient: SkColor
   
-  var spot: SkColor = js.native
+  var spot: SkColor
 }
 object TonalColorsOutput {
   

@@ -11,7 +11,6 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -63,60 +62,21 @@ trait Mesh extends StObject {
     no value is provided, a size to fit the provided indices will be allocated.
     */
   def clear(): Unit = js.native
-  def clear(
-    verticesDynamic: js.UndefOr[scala.Nothing],
-    indicesDynamic: js.UndefOr[scala.Nothing],
-    maxVertices: js.UndefOr[scala.Nothing],
-    maxIndices: Double
-  ): Unit = js.native
-  def clear(
-    verticesDynamic: js.UndefOr[scala.Nothing],
-    indicesDynamic: js.UndefOr[scala.Nothing],
-    maxVertices: Double
-  ): Unit = js.native
-  def clear(
-    verticesDynamic: js.UndefOr[scala.Nothing],
-    indicesDynamic: js.UndefOr[scala.Nothing],
-    maxVertices: Double,
-    maxIndices: Double
-  ): Unit = js.native
-  def clear(verticesDynamic: js.UndefOr[scala.Nothing], indicesDynamic: Boolean): Unit = js.native
-  def clear(
-    verticesDynamic: js.UndefOr[scala.Nothing],
-    indicesDynamic: Boolean,
-    maxVertices: js.UndefOr[scala.Nothing],
-    maxIndices: Double
-  ): Unit = js.native
-  def clear(verticesDynamic: js.UndefOr[scala.Nothing], indicesDynamic: Boolean, maxVertices: Double): Unit = js.native
-  def clear(
-    verticesDynamic: js.UndefOr[scala.Nothing],
-    indicesDynamic: Boolean,
-    maxVertices: Double,
-    maxIndices: Double
-  ): Unit = js.native
   def clear(verticesDynamic: Boolean): Unit = js.native
-  def clear(
-    verticesDynamic: Boolean,
-    indicesDynamic: js.UndefOr[scala.Nothing],
-    maxVertices: js.UndefOr[scala.Nothing],
-    maxIndices: Double
-  ): Unit = js.native
-  def clear(verticesDynamic: Boolean, indicesDynamic: js.UndefOr[scala.Nothing], maxVertices: Double): Unit = js.native
-  def clear(
-    verticesDynamic: Boolean,
-    indicesDynamic: js.UndefOr[scala.Nothing],
-    maxVertices: Double,
-    maxIndices: Double
-  ): Unit = js.native
   def clear(verticesDynamic: Boolean, indicesDynamic: Boolean): Unit = js.native
-  def clear(
-    verticesDynamic: Boolean,
-    indicesDynamic: Boolean,
-    maxVertices: js.UndefOr[scala.Nothing],
-    maxIndices: Double
-  ): Unit = js.native
   def clear(verticesDynamic: Boolean, indicesDynamic: Boolean, maxVertices: Double): Unit = js.native
   def clear(verticesDynamic: Boolean, indicesDynamic: Boolean, maxVertices: Double, maxIndices: Double): Unit = js.native
+  def clear(verticesDynamic: Boolean, indicesDynamic: Boolean, maxVertices: Unit, maxIndices: Double): Unit = js.native
+  def clear(verticesDynamic: Boolean, indicesDynamic: Unit, maxVertices: Double): Unit = js.native
+  def clear(verticesDynamic: Boolean, indicesDynamic: Unit, maxVertices: Double, maxIndices: Double): Unit = js.native
+  def clear(verticesDynamic: Boolean, indicesDynamic: Unit, maxVertices: Unit, maxIndices: Double): Unit = js.native
+  def clear(verticesDynamic: Unit, indicesDynamic: Boolean): Unit = js.native
+  def clear(verticesDynamic: Unit, indicesDynamic: Boolean, maxVertices: Double): Unit = js.native
+  def clear(verticesDynamic: Unit, indicesDynamic: Boolean, maxVertices: Double, maxIndices: Double): Unit = js.native
+  def clear(verticesDynamic: Unit, indicesDynamic: Boolean, maxVertices: Unit, maxIndices: Double): Unit = js.native
+  def clear(verticesDynamic: Unit, indicesDynamic: Unit, maxVertices: Double): Unit = js.native
+  def clear(verticesDynamic: Unit, indicesDynamic: Unit, maxVertices: Double, maxIndices: Double): Unit = js.native
+  def clear(verticesDynamic: Unit, indicesDynamic: Unit, maxVertices: Unit, maxIndices: Double): Unit = js.native
   
   /**
     * Destroys {@link pc.VertexBuffer} and {@link pc.IndexBuffer} associate with the mesh.
@@ -243,41 +203,41 @@ trait Mesh extends StObject {
     * @param [numVertices] - The number of vertices to be used from data array. If not provided, the whole data array is used. This allows to use only part of the data array.
     */
   def setColors(colors: js.Array[Double]): Unit = js.native
-  def setColors(colors: js.Array[Double], componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setColors(colors: js.Array[Double], componentCount: Double): Unit = js.native
   def setColors(colors: js.Array[Double], componentCount: Double, numVertices: Double): Unit = js.native
+  def setColors(colors: js.Array[Double], componentCount: Unit, numVertices: Double): Unit = js.native
   def setColors(colors: Float32Array): Unit = js.native
-  def setColors(colors: Float32Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setColors(colors: Float32Array, componentCount: Double): Unit = js.native
   def setColors(colors: Float32Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setColors(colors: Float32Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setColors(colors: Int16Array): Unit = js.native
-  def setColors(colors: Int16Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setColors(colors: Int16Array, componentCount: Double): Unit = js.native
   def setColors(colors: Int16Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setColors(colors: Int16Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setColors(colors: Int32Array): Unit = js.native
-  def setColors(colors: Int32Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setColors(colors: Int32Array, componentCount: Double): Unit = js.native
   def setColors(colors: Int32Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setColors(colors: Int32Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setColors(colors: Int8Array): Unit = js.native
-  def setColors(colors: Int8Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setColors(colors: Int8Array, componentCount: Double): Unit = js.native
   def setColors(colors: Int8Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setColors(colors: Int8Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setColors(colors: Uint16Array): Unit = js.native
-  def setColors(colors: Uint16Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setColors(colors: Uint16Array, componentCount: Double): Unit = js.native
   def setColors(colors: Uint16Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setColors(colors: Uint16Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setColors(colors: Uint32Array): Unit = js.native
-  def setColors(colors: Uint32Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setColors(colors: Uint32Array, componentCount: Double): Unit = js.native
   def setColors(colors: Uint32Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setColors(colors: Uint32Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setColors(colors: Uint8Array): Unit = js.native
-  def setColors(colors: Uint8Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setColors(colors: Uint8Array, componentCount: Double): Unit = js.native
   def setColors(colors: Uint8Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setColors(colors: Uint8Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setColors(colors: Uint8ClampedArray): Unit = js.native
-  def setColors(colors: Uint8ClampedArray, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setColors(colors: Uint8ClampedArray, componentCount: Double): Unit = js.native
   def setColors(colors: Uint8ClampedArray, componentCount: Double, numVertices: Double): Unit = js.native
+  def setColors(colors: Uint8ClampedArray, componentCount: Unit, numVertices: Double): Unit = js.native
   
   /**
     * Sets the vertex color array. Colors are stored using pc.TYPE_UINT8 format, which is useful for LDR colors. Values in the array are expected in
@@ -326,41 +286,41 @@ trait Mesh extends StObject {
     * @param [numVertices] - The number of vertices to be used from data array. If not provided, the whole data array is used. This allows to use only part of the data array.
     */
   def setNormals(normals: js.Array[Double]): Unit = js.native
-  def setNormals(normals: js.Array[Double], componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setNormals(normals: js.Array[Double], componentCount: Double): Unit = js.native
   def setNormals(normals: js.Array[Double], componentCount: Double, numVertices: Double): Unit = js.native
+  def setNormals(normals: js.Array[Double], componentCount: Unit, numVertices: Double): Unit = js.native
   def setNormals(normals: Float32Array): Unit = js.native
-  def setNormals(normals: Float32Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setNormals(normals: Float32Array, componentCount: Double): Unit = js.native
   def setNormals(normals: Float32Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setNormals(normals: Float32Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setNormals(normals: Int16Array): Unit = js.native
-  def setNormals(normals: Int16Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setNormals(normals: Int16Array, componentCount: Double): Unit = js.native
   def setNormals(normals: Int16Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setNormals(normals: Int16Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setNormals(normals: Int32Array): Unit = js.native
-  def setNormals(normals: Int32Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setNormals(normals: Int32Array, componentCount: Double): Unit = js.native
   def setNormals(normals: Int32Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setNormals(normals: Int32Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setNormals(normals: Int8Array): Unit = js.native
-  def setNormals(normals: Int8Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setNormals(normals: Int8Array, componentCount: Double): Unit = js.native
   def setNormals(normals: Int8Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setNormals(normals: Int8Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setNormals(normals: Uint16Array): Unit = js.native
-  def setNormals(normals: Uint16Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setNormals(normals: Uint16Array, componentCount: Double): Unit = js.native
   def setNormals(normals: Uint16Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setNormals(normals: Uint16Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setNormals(normals: Uint32Array): Unit = js.native
-  def setNormals(normals: Uint32Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setNormals(normals: Uint32Array, componentCount: Double): Unit = js.native
   def setNormals(normals: Uint32Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setNormals(normals: Uint32Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setNormals(normals: Uint8Array): Unit = js.native
-  def setNormals(normals: Uint8Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setNormals(normals: Uint8Array, componentCount: Double): Unit = js.native
   def setNormals(normals: Uint8Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setNormals(normals: Uint8Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setNormals(normals: Uint8ClampedArray): Unit = js.native
-  def setNormals(normals: Uint8ClampedArray, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setNormals(normals: Uint8ClampedArray, componentCount: Double): Unit = js.native
   def setNormals(normals: Uint8ClampedArray, componentCount: Double, numVertices: Double): Unit = js.native
+  def setNormals(normals: Uint8ClampedArray, componentCount: Unit, numVertices: Double): Unit = js.native
   
   /**
     * Sets the vertex positions array. Vertices are stored using pc.TYPE_FLOAT32 format.
@@ -369,41 +329,41 @@ trait Mesh extends StObject {
     * @param [numVertices] - The number of vertices to be used from data array. If not provided, the whole data array is used. This allows to use only part of the data array.
     */
   def setPositions(positions: js.Array[Double]): Unit = js.native
-  def setPositions(positions: js.Array[Double], componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setPositions(positions: js.Array[Double], componentCount: Double): Unit = js.native
   def setPositions(positions: js.Array[Double], componentCount: Double, numVertices: Double): Unit = js.native
+  def setPositions(positions: js.Array[Double], componentCount: Unit, numVertices: Double): Unit = js.native
   def setPositions(positions: Float32Array): Unit = js.native
-  def setPositions(positions: Float32Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setPositions(positions: Float32Array, componentCount: Double): Unit = js.native
   def setPositions(positions: Float32Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setPositions(positions: Float32Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setPositions(positions: Int16Array): Unit = js.native
-  def setPositions(positions: Int16Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setPositions(positions: Int16Array, componentCount: Double): Unit = js.native
   def setPositions(positions: Int16Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setPositions(positions: Int16Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setPositions(positions: Int32Array): Unit = js.native
-  def setPositions(positions: Int32Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setPositions(positions: Int32Array, componentCount: Double): Unit = js.native
   def setPositions(positions: Int32Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setPositions(positions: Int32Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setPositions(positions: Int8Array): Unit = js.native
-  def setPositions(positions: Int8Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setPositions(positions: Int8Array, componentCount: Double): Unit = js.native
   def setPositions(positions: Int8Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setPositions(positions: Int8Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setPositions(positions: Uint16Array): Unit = js.native
-  def setPositions(positions: Uint16Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setPositions(positions: Uint16Array, componentCount: Double): Unit = js.native
   def setPositions(positions: Uint16Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setPositions(positions: Uint16Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setPositions(positions: Uint32Array): Unit = js.native
-  def setPositions(positions: Uint32Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setPositions(positions: Uint32Array, componentCount: Double): Unit = js.native
   def setPositions(positions: Uint32Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setPositions(positions: Uint32Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setPositions(positions: Uint8Array): Unit = js.native
-  def setPositions(positions: Uint8Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setPositions(positions: Uint8Array, componentCount: Double): Unit = js.native
   def setPositions(positions: Uint8Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setPositions(positions: Uint8Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setPositions(positions: Uint8ClampedArray): Unit = js.native
-  def setPositions(positions: Uint8ClampedArray, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setPositions(positions: Uint8ClampedArray, componentCount: Double): Unit = js.native
   def setPositions(positions: Uint8ClampedArray, componentCount: Double, numVertices: Double): Unit = js.native
+  def setPositions(positions: Uint8ClampedArray, componentCount: Unit, numVertices: Double): Unit = js.native
   
   /**
     * Sets the vertex uv array. Uvs are stored using pc.TYPE_FLOAT32 format.
@@ -413,51 +373,41 @@ trait Mesh extends StObject {
     * @param [numVertices] - The number of vertices to be used from data array. If not provided, the whole data array is used. This allows to use only part of the data array.
     */
   def setUvs(channel: Double, uvs: js.Array[Double]): Unit = js.native
-  def setUvs(
-    channel: Double,
-    uvs: js.Array[Double],
-    componentCount: js.UndefOr[scala.Nothing],
-    numVertices: Double
-  ): Unit = js.native
   def setUvs(channel: Double, uvs: js.Array[Double], componentCount: Double): Unit = js.native
   def setUvs(channel: Double, uvs: js.Array[Double], componentCount: Double, numVertices: Double): Unit = js.native
+  def setUvs(channel: Double, uvs: js.Array[Double], componentCount: Unit, numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Float32Array): Unit = js.native
-  def setUvs(channel: Double, uvs: Float32Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Float32Array, componentCount: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Float32Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setUvs(channel: Double, uvs: Float32Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Int16Array): Unit = js.native
-  def setUvs(channel: Double, uvs: Int16Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Int16Array, componentCount: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Int16Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setUvs(channel: Double, uvs: Int16Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Int32Array): Unit = js.native
-  def setUvs(channel: Double, uvs: Int32Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Int32Array, componentCount: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Int32Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setUvs(channel: Double, uvs: Int32Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Int8Array): Unit = js.native
-  def setUvs(channel: Double, uvs: Int8Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Int8Array, componentCount: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Int8Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setUvs(channel: Double, uvs: Int8Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Uint16Array): Unit = js.native
-  def setUvs(channel: Double, uvs: Uint16Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Uint16Array, componentCount: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Uint16Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setUvs(channel: Double, uvs: Uint16Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Uint32Array): Unit = js.native
-  def setUvs(channel: Double, uvs: Uint32Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Uint32Array, componentCount: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Uint32Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setUvs(channel: Double, uvs: Uint32Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Uint8Array): Unit = js.native
-  def setUvs(channel: Double, uvs: Uint8Array, componentCount: js.UndefOr[scala.Nothing], numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Uint8Array, componentCount: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Uint8Array, componentCount: Double, numVertices: Double): Unit = js.native
+  def setUvs(channel: Double, uvs: Uint8Array, componentCount: Unit, numVertices: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Uint8ClampedArray): Unit = js.native
-  def setUvs(
-    channel: Double,
-    uvs: Uint8ClampedArray,
-    componentCount: js.UndefOr[scala.Nothing],
-    numVertices: Double
-  ): Unit = js.native
   def setUvs(channel: Double, uvs: Uint8ClampedArray, componentCount: Double): Unit = js.native
   def setUvs(channel: Double, uvs: Uint8ClampedArray, componentCount: Double, numVertices: Double): Unit = js.native
+  def setUvs(channel: Double, uvs: Uint8ClampedArray, componentCount: Unit, numVertices: Double): Unit = js.native
   
   /**
     * Sets the vertex data for any supported semantic.
@@ -494,9 +444,9 @@ trait Mesh extends StObject {
     Set this to false to avoid update of the bounding box and use aabb property to set it instead.
     */
   def update(): Unit = js.native
-  def update(primitiveType: js.UndefOr[scala.Nothing], updateBoundingBox: Boolean): Unit = js.native
   def update(primitiveType: Double): Unit = js.native
   def update(primitiveType: Double, updateBoundingBox: Boolean): Unit = js.native
+  def update(primitiveType: Unit, updateBoundingBox: Boolean): Unit = js.native
   
   /**
     * The vertex buffer holding the vertex data of the mesh.

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p1beta1Property extends StObject {
   
   /** Name of the property. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Value of numeric properties. */
-  var uint64Value: js.UndefOr[String] = js.native
+  var uint64Value: js.UndefOr[String] = js.undefined
   
   /** Value of the property. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVisionV1p1beta1Property {
   

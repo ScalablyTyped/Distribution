@@ -2,31 +2,29 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSavingsPlansUtilizationDetailsRequest extends StObject {
   
   /**
     * Filters Savings Plans utilization coverage data for active Savings Plans dimensions. You can filter data with the following dimensions:    LINKED_ACCOUNT     SAVINGS_PLAN_ARN     REGION     PAYMENT_OPTION     INSTANCE_TYPE_FAMILY     GetSavingsPlansUtilizationDetails uses the same Expression object as the other operations, but only AND is supported among each dimension.
     */
-  var Filter: js.UndefOr[Expression] = js.native
+  var Filter: js.UndefOr[Expression] = js.undefined
   
   /**
     * The number of items to be returned in a response. The default is 20, with a minimum value of 1.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.costexplorerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.costexplorerMod.MaxResults] = js.undefined
   
   /**
     * The token to retrieve the next set of results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size.
     */
-  var NextToken: js.UndefOr[NextPageToken] = js.native
+  var NextToken: js.UndefOr[NextPageToken] = js.undefined
   
   /**
     * The time period that you want the usage and costs for. The Start date must be within 13 months. The End date must be after the Start date, and before the current date. Future dates can't be used as an End date.
     */
-  var TimePeriod: DateInterval = js.native
+  var TimePeriod: DateInterval
 }
 object GetSavingsPlansUtilizationDetailsRequest {
   

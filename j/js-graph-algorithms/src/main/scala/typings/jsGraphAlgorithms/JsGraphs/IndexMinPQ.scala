@@ -2,41 +2,39 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexMinPQ[T] extends StObject {
   
-  var N: js.Any = js.native
+  var N: js.Any
   
-  var compare: js.Any = js.native
+  var compare: js.Any
   
-  def containsIndex(index: Double): Boolean = js.native
+  def containsIndex(index: Double): Boolean
   
-  def decreaseKey(index: Double, key: T): Unit = js.native
+  def decreaseKey(index: Double, key: T): Unit
   
-  def delMin(): Double = js.native
+  def delMin(): Double
   
-  def insert(index: Double, key: T): Unit = js.native
+  def insert(index: Double, key: T): Unit
   
-  def isEmpty(): Boolean = js.native
+  def isEmpty(): Boolean
   
-  var keys: js.Any = js.native
+  var keys: js.Any
   
-  def min(): Double = js.native
+  def min(): Double
   
-  def minKey(): T | Null = js.native
+  def minKey(): T | Null
   
-  var pq: js.Any = js.native
+  var pq: js.Any
   
-  var qp: js.Any = js.native
+  var qp: js.Any
   
-  def sink(k: Double): Unit = js.native
+  def sink(k: Double): Unit
   
-  def size(): Double = js.native
+  def size(): Double
   
-  def swim(k: Double): Unit = js.native
+  def swim(k: Double): Unit
 }
 object IndexMinPQ {
   
@@ -63,7 +61,7 @@ object IndexMinPQ {
   }
   
   @scala.inline
-  implicit class IndexMinPQMutableBuilder[Self <: IndexMinPQ[_], T] (val x: Self with IndexMinPQ[T]) extends AnyVal {
+  implicit class IndexMinPQMutableBuilder[Self <: IndexMinPQ[?], T] (val x: Self & IndexMinPQ[T]) extends AnyVal {
     
     @scala.inline
     def setCompare(value: js.Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])

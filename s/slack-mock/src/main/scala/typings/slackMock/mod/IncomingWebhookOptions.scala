@@ -3,19 +3,17 @@ package typings.slackMock.mod
 import typings.nock.mod.ReplyHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncomingWebhookOptions[T] extends StObject {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var headers: js.UndefOr[IncomingWebhookHttpHeaders] = js.native
+  var headers: js.UndefOr[IncomingWebhookHttpHeaders] = js.undefined
   
-  var statusCode: js.UndefOr[Double] = js.native
+  var statusCode: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[IncomingWebhookUrl] = js.native
+  var url: js.UndefOr[IncomingWebhookUrl] = js.undefined
 }
 object IncomingWebhookOptions {
   
@@ -26,7 +24,7 @@ object IncomingWebhookOptions {
   }
   
   @scala.inline
-  implicit class IncomingWebhookOptionsMutableBuilder[Self <: IncomingWebhookOptions[_], T] (val x: Self with IncomingWebhookOptions[T]) extends AnyVal {
+  implicit class IncomingWebhookOptionsMutableBuilder[Self <: IncomingWebhookOptions[?], T] (val x: Self & IncomingWebhookOptions[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

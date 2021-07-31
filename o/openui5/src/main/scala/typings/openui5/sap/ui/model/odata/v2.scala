@@ -11,13 +11,14 @@ import typings.openui5.sap.ui.model.Model
 import typings.openui5.sap.ui.model.TreeBinding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v2 {
   
   @js.native
-  trait ODataAnnotations extends EventProvider {
+  trait ODataAnnotations
+    extends StObject
+       with EventProvider {
     
     /**
       * This event exists for compatibility with the old Annotation loaderAttaches the given callback to the
@@ -198,7 +199,7 @@ object v2 {
       * successfully(loaded,) parsed and merged
       * @returns The Promise that resolves/rejects after the last added sources have been processed
       */
-    def loaded(): JQueryPromise[_] = js.native
+    def loaded(): JQueryPromise[js.Any] = js.native
     
     /**
       * Set custom headers which are provided in a key/value map. These headers are used for all
@@ -212,21 +213,24 @@ object v2 {
   }
   object ODataAnnotations {
     
-    @js.native
     trait constructor extends StObject
   }
   
   @js.native
-  trait ODataContextBinding extends ContextBinding {
+  trait ODataContextBinding
+    extends StObject
+       with ContextBinding {
     
     def refresh(bForceUpdate: Boolean, sGroupId: String): Unit = js.native
   }
   
   @js.native
-  trait ODataListBinding extends ListBinding {
+  trait ODataListBinding
+    extends StObject
+       with ListBinding {
     
-    def getContexts(iStartIndex: Double, iLength: js.UndefOr[scala.Nothing], iThreshold: Double): js.Array[Context] = js.native
     def getContexts(iStartIndex: Double, iLength: Double, iThreshold: Double): js.Array[Context] = js.native
+    def getContexts(iStartIndex: Double, iLength: Unit, iThreshold: Double): js.Array[Context] = js.native
     
     /**
       * Get a download URL with the specified format considering thesort/filter/custom parameters.
@@ -240,7 +244,9 @@ object v2 {
   }
   
   @js.native
-  trait ODataModel extends Model {
+  trait ODataModel
+    extends StObject
+       with Model {
     
     /**
       * Adds (a) new URL(s) to the be parsed for OData annotations, which are then merged into the
@@ -255,8 +261,8 @@ object v2 {
       * metadata object reached by the getServiceMetadata() method.                                 For non $metadata requests the
       * array will be empty.
       */
-    def addAnnotationUrl(vUrl: String): JQueryPromise[_] = js.native
-    def addAnnotationUrl(vUrl: js.Array[String]): JQueryPromise[_] = js.native
+    def addAnnotationUrl(vUrl: String): JQueryPromise[js.Any] = js.native
+    def addAnnotationUrl(vUrl: js.Array[String]): JQueryPromise[js.Any] = js.native
     
     /**
       * Adds new xml content to be parsed for OData annotations, which are then merged into the annotations
@@ -266,8 +272,8 @@ object v2 {
       * @returns The Promise to parse the given XML-String, resolved if parsed without errors, rejected if
       * errors occur
       */
-    def addAnnotationXML(sXMLContent: String): JQueryPromise[_] = js.native
-    def addAnnotationXML(sXMLContent: String, bSuppressEvents: Boolean): JQueryPromise[_] = js.native
+    def addAnnotationXML(sXMLContent: String): JQueryPromise[js.Any] = js.native
+    def addAnnotationXML(sXMLContent: String, bSuppressEvents: Boolean): JQueryPromise[js.Any] = js.native
     
     /**
       * Attach event-handler <code>fnFunction</code> to the 'annotationsFailed' event of this
@@ -569,9 +575,9 @@ object v2 {
       * @returns oData Object containing the requested data if the path is valid.
       */
     def getData(sPath: String): js.Any = js.native
-    def getData(sPath: String, oContext: js.UndefOr[scala.Nothing], bIncludeExpandEntries: Boolean): js.Any = js.native
     def getData(sPath: String, oContext: js.Any): js.Any = js.native
     def getData(sPath: String, oContext: js.Any, bIncludeExpandEntries: Boolean): js.Any = js.native
+    def getData(sPath: String, oContext: Unit, bIncludeExpandEntries: Boolean): js.Any = js.native
     
     /**
       * Returns the default count mode for retrieving the count of collections
@@ -584,13 +590,13 @@ object v2 {
       * Returns the array of batchGroupIds that are set as deferred
       * @returns aGroupIds The array of deferred batchGroupIds
       */
-    def getDeferredBatchGroups(): js.Array[_] = js.native
+    def getDeferredBatchGroups(): js.Array[js.Any] = js.native
     
     /**
       * Returns the array of GroupIds that are set as deferred
       * @returns aGroupIds The array of deferred GroupIds
       */
-    def getDeferredGroups(): js.Array[_] = js.native
+    def getDeferredGroups(): js.Array[js.Any] = js.native
     
     /**
       * Returns the ETag for a given binding path/context or data object
@@ -600,7 +606,7 @@ object v2 {
       * @returns The found ETag (or null if none could be found)
       */
     def getETag(sPath: String): String = js.native
-    def getETag(sPath: String, oContext: js.UndefOr[scala.Nothing], oEntity: js.Any): String = js.native
+    def getETag(sPath: String, oContext: Unit, oEntity: js.Any): String = js.native
     def getETag(sPath: String, oContext: Context): String = js.native
     def getETag(sPath: String, oContext: Context, oEntity: js.Any): String = js.native
     
@@ -619,8 +625,8 @@ object v2 {
     def getKey(vValue: js.Any): String = js.native
     def getKey(vValue: Context): String = js.native
     
-    def getProperty(sPath: String, oContext: js.UndefOr[scala.Nothing], bIncludeExpandEntries: Boolean): js.Any = js.native
     def getProperty(sPath: String, oContext: js.Any, bIncludeExpandEntries: Boolean): js.Any = js.native
+    def getProperty(sPath: String, oContext: Unit, bIncludeExpandEntries: Boolean): js.Any = js.native
     
     /**
       * Returns the current security token. If the token has not been requested from the server it will be
@@ -675,7 +681,7 @@ object v2 {
       * @since 1.30
       * @returns returns a promise on metadata loaded state
       */
-    def metadataLoaded(): JQueryPromise[_] = js.native
+    def metadataLoaded(): JQueryPromise[js.Any] = js.native
     
     /**
       * Trigger a GET request to the odata service that was specified in the model constructor.The data will
@@ -688,9 +694,9 @@ object v2 {
     def read(sPath: String): js.Any = js.native
     def read(sPath: String, mParameters: js.Any): js.Any = js.native
     
-    def refresh(bForceUpdate: Boolean, bRemoveData: js.UndefOr[scala.Nothing], sGroupId: String): Unit = js.native
     def refresh(bForceUpdate: Boolean, bRemoveData: Boolean): Unit = js.native
     def refresh(bForceUpdate: Boolean, bRemoveData: Boolean, sGroupId: String): Unit = js.native
+    def refresh(bForceUpdate: Boolean, bRemoveData: Unit, sGroupId: String): Unit = js.native
     
     /**
       * Refreshes the metadata for model, e.g. in case the request for metadata has failed.Returns a new
@@ -698,7 +704,7 @@ object v2 {
       * @returns returns a promise on metadata loaded state or null if metadata is not initialized or
       * currently refreshed.
       */
-    def refreshMetadata(): JQueryPromise[_] = js.native
+    def refreshMetadata(): JQueryPromise[js.Any] = js.native
     
     /**
       * refresh XSRF token by performing a GET request against the service root URL.
@@ -726,13 +732,13 @@ object v2 {
       * @param aPath Array of paths that should be resetted.                            If no array is passed all changes will be
       * resetted.
       */
-    def resetChanges(aPath: js.Array[_]): Unit = js.native
+    def resetChanges(aPath: js.Array[js.Any]): Unit = js.native
     
     /**
       * Returns a promise, which will resolve with the security token as soon as it is available
       * @returns the CSRF security token
       */
-    def securityTokenAvailable(): JQueryPromise[_] = js.native
+    def securityTokenAvailable(): JQueryPromise[js.Any] = js.native
     
     /**
       * Definition of batchGroups per EntityType for "TwoWay" changes
@@ -768,14 +774,14 @@ object v2 {
       * manuallyvia a submitChanges call.
       * @param aGroupIds Array of batchGroupIds that should be set as deferred
       */
-    def setDeferredBatchGroups(aGroupIds: js.Array[_]): Unit = js.native
+    def setDeferredBatchGroups(aGroupIds: js.Array[js.Any]): Unit = js.native
     
     /**
       * Setting request groups as deferred. Requests that belongs to a deferred group will be sent
       * manuallyvia a submitChanges call.
       * @param aGroupIds Array of GroupIds that should be set as deferred
       */
-    def setDeferredGroups(aGroupIds: js.Array[_]): Unit = js.native
+    def setDeferredGroups(aGroupIds: js.Array[js.Any]): Unit = js.native
     
     /**
       * Set custom headers which are provided in a key/value map. These headers are used for requests
@@ -800,9 +806,9 @@ object v2 {
       * found or another entry was already updated.
       */
     def setProperty(sPath: String, oValue: js.Any): Boolean = js.native
-    def setProperty(sPath: String, oValue: js.Any, oContext: js.UndefOr[scala.Nothing], bAsyncUpdate: Boolean): Boolean = js.native
     def setProperty(sPath: String, oValue: js.Any, oContext: js.Any): Boolean = js.native
     def setProperty(sPath: String, oValue: js.Any, oContext: js.Any, bAsyncUpdate: Boolean): Boolean = js.native
+    def setProperty(sPath: String, oValue: js.Any, oContext: Unit, bAsyncUpdate: Boolean): Boolean = js.native
     
     /**
       * Enable/Disable automatic updates of all Bindings after change operations
@@ -859,7 +865,9 @@ object v2 {
   }
   
   @js.native
-  trait ODataTreeBinding extends TreeBinding {
+  trait ODataTreeBinding
+    extends StObject
+       with TreeBinding {
     
     def filter(aFilters: typings.openui5.sap.ui.model.Filter, sFilterType: TypeofFilterType): ODataTreeBinding = js.native
     
@@ -885,8 +893,8 @@ object v2 {
       * than requested                                  if the backend does not have enough data.
       */
     def getRootContexts(iStartIndex: Double): js.Array[Context] = js.native
-    def getRootContexts(iStartIndex: Double, iLength: js.UndefOr[scala.Nothing], iThreshold: Double): js.Array[Context] = js.native
     def getRootContexts(iStartIndex: Double, iLength: Double, iThreshold: Double): js.Array[Context] = js.native
+    def getRootContexts(iStartIndex: Double, iLength: Unit, iThreshold: Double): js.Array[Context] = js.native
     
     /**
       * Returns the rootLevel

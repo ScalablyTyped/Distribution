@@ -4,19 +4,17 @@ import typings.c3.anon.Front
 import typings.c3.anon.Show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridOptions extends StObject {
   
-  var focus: js.UndefOr[Show] = js.native
+  var focus: js.UndefOr[Show] = js.undefined
   
-  var lines: js.UndefOr[Front] = js.native
+  var lines: js.UndefOr[Front] = js.undefined
   
-  var x: js.UndefOr[AxisGridOptions] = js.native
+  var x: js.UndefOr[AxisGridOptions] = js.undefined
   
-  var y: js.UndefOr[AxisGridOptions] = js.native
+  var y: js.UndefOr[AxisGridOptions] = js.undefined
 }
 object GridOptions {
   

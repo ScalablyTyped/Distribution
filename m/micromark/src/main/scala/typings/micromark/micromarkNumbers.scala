@@ -3,7 +3,6 @@ package typings.micromark
 import typings.micromark.constantConstantsMod.Constant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object micromarkNumbers {
@@ -40,14 +39,16 @@ object micromarkNumbers {
   
   @js.native
   sealed trait `1`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
   sealed trait `10`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `10`: `10` = 10.asInstanceOf[`10`]
@@ -59,7 +60,8 @@ object micromarkNumbers {
   
   @js.native
   sealed trait `10000`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `10000`: `10000` = 10000.asInstanceOf[`10000`]
@@ -226,7 +228,8 @@ object micromarkNumbers {
   
   @js.native
   sealed trait `16`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `16`: `16` = 16.asInstanceOf[`16`]
@@ -248,7 +251,8 @@ object micromarkNumbers {
   
   @js.native
   sealed trait `2`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
@@ -305,7 +309,8 @@ object micromarkNumbers {
   
   @js.native
   sealed trait `3`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `3`: `3` = 3.asInstanceOf[`3`]
@@ -317,14 +322,16 @@ object micromarkNumbers {
   
   @js.native
   sealed trait `31`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `31`: `31` = 31.asInstanceOf[`31`]
   
   @js.native
   sealed trait `32`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `32`: `32` = 32.asInstanceOf[`32`]
@@ -366,7 +373,8 @@ object micromarkNumbers {
   
   @js.native
   sealed trait `4`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
@@ -423,7 +431,8 @@ object micromarkNumbers {
   
   @js.native
   sealed trait `5`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `5`: `5` = 5.asInstanceOf[`5`]
@@ -480,7 +489,8 @@ object micromarkNumbers {
   
   @js.native
   sealed trait `6`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `6`: `6` = 6.asInstanceOf[`6`]
@@ -502,7 +512,8 @@ object micromarkNumbers {
   
   @js.native
   sealed trait `63`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `63`: `63` = 63.asInstanceOf[`63`]
@@ -549,7 +560,8 @@ object micromarkNumbers {
   
   @js.native
   sealed trait `7`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `7`: `7` = 7.asInstanceOf[`7`]
@@ -716,7 +728,8 @@ object micromarkNumbers {
   
   @js.native
   sealed trait `999`
-    extends Constant
+    extends StObject
+       with Constant
        with typings.micromark.constantsMod.Constant
   @scala.inline
   def `999`: `999` = 999.asInstanceOf[`999`]

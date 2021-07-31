@@ -3,24 +3,22 @@ package typings.awsSdkClientDynamodbBrowser
 import typings.awsSdkClientDynamodbBrowser.restoreTableToPointInTimeExceptionsUnionMod.RestoreTableToPointInTimeExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPointInTimeRecoveryUnavailableExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PointInTimeRecoveryUnavailableExceptionDetails> * / any */ @js.native
-  trait PointInTimeRecoveryUnavailableException extends RestoreTableToPointInTimeExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PointInTimeRecoveryUnavailableExceptionDetails> * / any */ trait PointInTimeRecoveryUnavailableException
+    extends StObject
+       with RestoreTableToPointInTimeExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.PointInTimeRecoveryUnavailableException = js.native
+    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.PointInTimeRecoveryUnavailableException
   }
   object PointInTimeRecoveryUnavailableException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.PointInTimeRecoveryUnavailableException
-    ): PointInTimeRecoveryUnavailableException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): PointInTimeRecoveryUnavailableException = {
+      val __obj = js.Dynamic.literal(name = "PointInTimeRecoveryUnavailableException")
       __obj.asInstanceOf[PointInTimeRecoveryUnavailableException]
     }
     
@@ -34,13 +32,12 @@ object typesPointInTimeRecoveryUnavailableExceptionMod {
     }
   }
   
-  @js.native
   trait PointInTimeRecoveryUnavailableExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object PointInTimeRecoveryUnavailableExceptionDetails {
     

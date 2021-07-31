@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudioSegment extends StObject {
   
   /** Output only. Whether the playback of this segment can be interrupted by the end user's speech and the client should then start the next Dialogflow request. */
-  var allowPlaybackInterruption: js.UndefOr[Boolean] = js.native
+  var allowPlaybackInterruption: js.UndefOr[Boolean] = js.undefined
   
   /** Raw audio synthesized from the Dialogflow agent's response using the output config specified in the request. */
-  var audio: js.UndefOr[String] = js.native
+  var audio: js.UndefOr[String] = js.undefined
   
   /** Client-specific URI that points to an audio clip accessible to the client. Dialogflow does not impose any validation on it. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudioSegment {
   

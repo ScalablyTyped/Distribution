@@ -8,19 +8,22 @@ import typings.playable.playbackEngineTypesMod.IVideoOutput
 import typings.playable.playbackEngineTypesMod.PreloadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chromecastOutputMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/output/chromecast/chromecast-output", JSImport.Default)
   @js.native
-  class default protected () extends ChromecastOutput {
+  class default protected ()
+    extends StObject
+       with ChromecastOutput {
     def this(eventEmitter: IEventEmitter) = this()
   }
   
   @js.native
-  trait ChromecastOutput extends IVideoOutput {
+  trait ChromecastOutput
+    extends StObject
+       with IVideoOutput {
     
     var _eventEmitter: js.Any = js.native
     

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCollectdTimeSeriesResponse extends StObject {
   
   /**
     * Records the error status for points that were not written due to an error in the request.Failed requests for which nothing is written will return an error response instead. Requests
     * where data points were rejected by the backend will set summary instead.
     */
-  var payloadErrors: js.UndefOr[js.Array[CollectdPayloadError]] = js.native
+  var payloadErrors: js.UndefOr[js.Array[CollectdPayloadError]] = js.undefined
   
   /**
     * Aggregate statistics from writing the payloads. This field is omitted if all points were successfully written, so that the response is empty. This is for backwards compatibility
     * with clients that log errors on any non-empty response.
     */
-  var summary: js.UndefOr[CreateTimeSeriesSummary] = js.native
+  var summary: js.UndefOr[CreateTimeSeriesSummary] = js.undefined
 }
 object CreateCollectdTimeSeriesResponse {
   

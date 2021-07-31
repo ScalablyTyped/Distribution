@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p4beta1ProductSearchResultsObjectAnnotation extends StObject {
   
   /** The BCP-47 language code, such as "en-US" or "sr-Latn". For more information, see http://www.unicode.org/reports/tr35/#Unicode_locale_identifier. */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /** Object ID that should align with EntityAnnotation mid. */
-  var mid: js.UndefOr[String] = js.native
+  var mid: js.UndefOr[String] = js.undefined
   
   /** Object name, expressed in its `language_code` language. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Score of the result. Range [0, 1]. */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudVisionV1p4beta1ProductSearchResultsObjectAnnotation {
   

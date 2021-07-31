@@ -2,84 +2,84 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameter that controlled the expansion process
   */
-@js.native
-trait ValueSetExpansionParameter extends BackboneElement {
+trait ValueSetExpansionParameter
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueBoolean'.
     */
-  var _valueBoolean: js.UndefOr[Element] = js.native
+  var _valueBoolean: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueCode'.
     */
-  var _valueCode: js.UndefOr[Element] = js.native
+  var _valueCode: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueDecimal'.
     */
-  var _valueDecimal: js.UndefOr[Element] = js.native
+  var _valueDecimal: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueInteger'.
     */
-  var _valueInteger: js.UndefOr[Element] = js.native
+  var _valueInteger: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueString'.
     */
-  var _valueString: js.UndefOr[Element] = js.native
+  var _valueString: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueUri'.
     */
-  var _valueUri: js.UndefOr[Element] = js.native
+  var _valueUri: js.UndefOr[Element] = js.undefined
   
   /**
     * Name as assigned by the server
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Value of the named parameter
     */
-  var valueBoolean: js.UndefOr[Boolean] = js.native
+  var valueBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Value of the named parameter
     */
-  var valueCode: js.UndefOr[code] = js.native
+  var valueCode: js.UndefOr[code] = js.undefined
   
   /**
     * Value of the named parameter
     */
-  var valueDecimal: js.UndefOr[decimal] = js.native
+  var valueDecimal: js.UndefOr[decimal] = js.undefined
   
   /**
     * Value of the named parameter
     */
-  var valueInteger: js.UndefOr[integer] = js.native
+  var valueInteger: js.UndefOr[integer] = js.undefined
   
   /**
     * Value of the named parameter
     */
-  var valueString: js.UndefOr[String] = js.native
+  var valueString: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the named parameter
     */
-  var valueUri: js.UndefOr[uri] = js.native
+  var valueUri: js.UndefOr[uri] = js.undefined
 }
 object ValueSetExpansionParameter {
   

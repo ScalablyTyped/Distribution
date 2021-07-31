@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides for access to a container of tables, typically used for a database definition object. */
-@js.native
-trait XTablesSupplier extends XInterface {
+trait XTablesSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the container of tables.
     * @returns the tables
     */
-  val Tables: XNameAccess = js.native
+  val Tables: XNameAccess
   
   /**
     * returns the container of tables.
     * @returns the tables
     */
-  def getTables(): XNameAccess = js.native
+  def getTables(): XNameAccess
 }
 object XTablesSupplier {
   

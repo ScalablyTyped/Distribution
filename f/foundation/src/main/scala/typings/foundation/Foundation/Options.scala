@@ -2,43 +2,41 @@ package typings.foundation.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var abide: js.UndefOr[AbideOptions] = js.native
+  var abide: js.UndefOr[AbideOptions] = js.undefined
   
-  var accordion: js.UndefOr[AccordionOptions] = js.native
+  var accordion: js.UndefOr[AccordionOptions] = js.undefined
   
-  var alert: js.UndefOr[AlertOptions] = js.native
+  var alert: js.UndefOr[AlertOptions] = js.undefined
   
-  var clearing: js.UndefOr[ClearingOptions] = js.native
+  var clearing: js.UndefOr[ClearingOptions] = js.undefined
   
-  var dropdown: js.UndefOr[DropdownOptions] = js.native
+  var dropdown: js.UndefOr[DropdownOptions] = js.undefined
   
-  var equalizer: js.UndefOr[EqualizerOptions] = js.native
+  var equalizer: js.UndefOr[EqualizerOptions] = js.undefined
   
-  var interchange: js.UndefOr[InterchangeOptions] = js.native
+  var interchange: js.UndefOr[InterchangeOptions] = js.undefined
   
-  var joyride: js.UndefOr[JoyrideOptions] = js.native
+  var joyride: js.UndefOr[JoyrideOptions] = js.undefined
   
-  var magellan: js.UndefOr[MagellanOptions] = js.native
+  var magellan: js.UndefOr[MagellanOptions] = js.undefined
   
-  var offcanvas: js.UndefOr[OffCanvasOptions] = js.native
+  var offcanvas: js.UndefOr[OffCanvasOptions] = js.undefined
   
-  var orbit: js.UndefOr[OrbitOptions] = js.native
+  var orbit: js.UndefOr[OrbitOptions] = js.undefined
   
-  var reveal: js.UndefOr[RevealOptions] = js.native
+  var reveal: js.UndefOr[RevealOptions] = js.undefined
   
-  var slider: js.UndefOr[SliderOptions] = js.native
+  var slider: js.UndefOr[SliderOptions] = js.undefined
   
-  var tab: js.UndefOr[TabOptions] = js.native
+  var tab: js.UndefOr[TabOptions] = js.undefined
   
-  var tooltip: js.UndefOr[TooltipOptions] = js.native
+  var tooltip: js.UndefOr[TooltipOptions] = js.undefined
   
-  var topbar: js.UndefOr[TopbarOptions] = js.native
+  var topbar: js.UndefOr[TopbarOptions] = js.undefined
 }
 object Options {
   

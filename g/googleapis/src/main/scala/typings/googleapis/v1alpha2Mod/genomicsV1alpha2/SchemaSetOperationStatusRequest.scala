@@ -2,25 +2,23 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to set operation status. Should only be used by VMs created by the
   * Pipelines Service and not by end users.
   */
-@js.native
 trait SchemaSetOperationStatusRequest extends StObject {
   
-  var errorCode: js.UndefOr[String] = js.native
+  var errorCode: js.UndefOr[String] = js.undefined
   
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
-  var timestampEvents: js.UndefOr[js.Array[SchemaTimestampEvent]] = js.native
+  var timestampEvents: js.UndefOr[js.Array[SchemaTimestampEvent]] = js.undefined
   
-  var validationToken: js.UndefOr[String] = js.native
+  var validationToken: js.UndefOr[String] = js.undefined
 }
 object SchemaSetOperationStatusRequest {
   

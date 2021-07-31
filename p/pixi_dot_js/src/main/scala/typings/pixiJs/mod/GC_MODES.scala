@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,9 +28,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object GC_MODES extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.GC_MODES with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.GC_MODES & Double] = js.native
   
-  /* 0 */ val AUTO: typings.pixiJs.PIXI.GC_MODES.AUTO with Double = js.native
+  /* 0 */ val AUTO: typings.pixiJs.PIXI.GC_MODES.AUTO & Double = js.native
   
-  /* 1 */ val MANUAL: typings.pixiJs.PIXI.GC_MODES.MANUAL with Double = js.native
+  /* 1 */ val MANUAL: typings.pixiJs.PIXI.GC_MODES.MANUAL & Double = js.native
 }

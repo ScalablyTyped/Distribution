@@ -11,8 +11,8 @@ The code in this package has moved. We recommend you to use `CSSTransitionGroup`
 | Full name          | react-addons-css-transition-group |
 | Keywords           | react, react-addon |
 | # releases         | 0 |
-| # dependents       | 638 |
-| # downloads        | 9936186 |
+| # dependents       | 651 |
+| # downloads        | 9671539 |
 | # stars            | 19 |
 
 ## Links

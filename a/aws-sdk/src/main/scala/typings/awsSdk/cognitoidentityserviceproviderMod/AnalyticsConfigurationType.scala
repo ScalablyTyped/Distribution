@@ -2,36 +2,34 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsConfigurationType extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an Amazon Pinpoint project. You can use the Amazon Pinpoint project for Pinpoint integration with the chosen User Pool Client. Amazon Cognito publishes events to the pinpoint project declared by the app ARN.
     */
-  var ApplicationArn: js.UndefOr[ArnType] = js.native
+  var ApplicationArn: js.UndefOr[ArnType] = js.undefined
   
   /**
     * The application ID for an Amazon Pinpoint application.
     */
-  var ApplicationId: js.UndefOr[HexStringType] = js.native
+  var ApplicationId: js.UndefOr[HexStringType] = js.undefined
   
   /**
     * The external ID.
     */
-  var ExternalId: js.UndefOr[StringType] = js.native
+  var ExternalId: js.UndefOr[StringType] = js.undefined
   
   /**
     * The ARN of an IAM role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics.
     */
-  var RoleArn: js.UndefOr[ArnType] = js.native
+  var RoleArn: js.UndefOr[ArnType] = js.undefined
   
   /**
     * If UserDataShared is true, Amazon Cognito will include user data in the events it publishes to Amazon Pinpoint analytics.
     */
-  var UserDataShared: js.UndefOr[BooleanType] = js.native
+  var UserDataShared: js.UndefOr[BooleanType] = js.undefined
 }
 object AnalyticsConfigurationType {
   

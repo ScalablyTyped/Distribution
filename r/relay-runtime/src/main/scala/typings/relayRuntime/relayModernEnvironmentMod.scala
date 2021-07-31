@@ -16,45 +16,45 @@ import typings.relayRuntime.relayStoreTypesMod.RequiredFieldLogger
 import typings.relayRuntime.relayStoreTypesMod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayModernEnvironmentMod {
   
   @JSImport("relay-runtime/lib/store/RelayModernEnvironment", JSImport.Default)
   @js.native
-  class default protected () extends RelayModernEnvironment {
+  class default protected ()
+    extends StObject
+       with RelayModernEnvironment {
     def this(config: EnvironmentConfig) = this()
   }
   
-  @js.native
   trait EnvironmentConfig extends StObject {
     
-    val configName: js.UndefOr[String] = js.native
+    val configName: js.UndefOr[String] = js.undefined
     
-    val handlerProvider: js.UndefOr[HandlerProvider | Null] = js.native
+    val handlerProvider: js.UndefOr[HandlerProvider | Null] = js.undefined
     
-    val isServer: js.UndefOr[Boolean] = js.native
+    val isServer: js.UndefOr[Boolean] = js.undefined
     
-    val log: js.UndefOr[LogFunction | Null] = js.native
+    val log: js.UndefOr[LogFunction | Null] = js.undefined
     
-    val missingFieldHandlers: js.UndefOr[js.Array[MissingFieldHandler] | Null] = js.native
+    val missingFieldHandlers: js.UndefOr[js.Array[MissingFieldHandler] | Null] = js.undefined
     
-    val network: Network = js.native
+    val network: Network
     
-    val operationLoader: js.UndefOr[OperationLoader | Null] = js.native
+    val operationLoader: js.UndefOr[OperationLoader | Null] = js.undefined
     
-    val operationTracker: js.UndefOr[OperationTracker | Null] = js.native
+    val operationTracker: js.UndefOr[OperationTracker | Null] = js.undefined
     
-    val options: js.UndefOr[js.Any] = js.native
+    val options: js.UndefOr[js.Any] = js.undefined
     
-    val requiredFieldLogger: js.UndefOr[RequiredFieldLogger | Null] = js.native
+    val requiredFieldLogger: js.UndefOr[RequiredFieldLogger | Null] = js.undefined
     
-    val scheduler: js.UndefOr[TaskScheduler | Null] = js.native
+    val scheduler: js.UndefOr[TaskScheduler | Null] = js.undefined
     
-    val store: Store = js.native
+    val store: Store
     
-    val treatMissingFieldsAsNull: js.UndefOr[Boolean] = js.native
+    val treatMissingFieldsAsNull: js.UndefOr[Boolean] = js.undefined
   }
   object EnvironmentConfig {
     
@@ -166,7 +166,9 @@ object relayModernEnvironmentMod {
   }
   
   @js.native
-  trait RelayModernEnvironment extends Environment {
+  trait RelayModernEnvironment
+    extends StObject
+       with Environment {
     
     var configName: js.UndefOr[String | Null] = js.native
     

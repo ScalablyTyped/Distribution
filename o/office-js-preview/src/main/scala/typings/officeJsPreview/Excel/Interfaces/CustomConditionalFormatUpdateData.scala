@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the CustomConditionalFormat object, for use in `customConditionalFormat.set({ ... })`. */
-@js.native
 trait CustomConditionalFormatUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait CustomConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var format: js.UndefOr[ConditionalRangeFormatUpdateData] = js.native
+  var format: js.UndefOr[ConditionalRangeFormatUpdateData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait CustomConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var rule: js.UndefOr[ConditionalFormatRuleUpdateData] = js.native
+  var rule: js.UndefOr[ConditionalFormatRuleUpdateData] = js.undefined
 }
 object CustomConditionalFormatUpdateData {
   

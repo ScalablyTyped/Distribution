@@ -3,11 +3,12 @@ package typings.sharepoint.SP
 import typings.sharepoint.SP.Workflow.WorkflowAssociationCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentType extends ClientObject {
+trait ContentType
+  extends StObject
+     with ClientObject {
   
   def deleteObject(): Unit = js.native
   

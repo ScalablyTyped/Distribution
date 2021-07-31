@@ -2,25 +2,23 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvInfo extends StObject {
   
-  var appKey: String = js.native
+  var appKey: String
   
   // 智能小程序 App Key    2.0.28
-  var appName: String = js.native
+  var appName: String
   
   // 智能小程序名称
-  var lastAppURL: String = js.native
+  var lastAppURL: String
   
   // 基础库版本
-  var scheme: String = js.native
+  var scheme: String
   
   // 智能小程序最近一次打开的调起协议
-  var sdkVersion: String = js.native
+  var sdkVersion: String
 }
 object EnvInfo {
   

@@ -2,26 +2,24 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Handle used to interact with the autocomplete dialog box.*/
-@js.native
 trait Handle extends StObject {
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var length: Double = js.native
+  var length: Double
   
-  def menuSize(): Double = js.native
+  def menuSize(): Double
   
-  def moveFocus(n: Double, avoidWrap: Boolean): Unit = js.native
+  def moveFocus(n: Double, avoidWrap: Boolean): Unit
   
-  def pick(): Unit = js.native
+  def pick(): Unit
   
-  def setFocus(n: Double): Unit = js.native
+  def setFocus(n: Double): Unit
 }
 object Handle {
   

@@ -2,7 +2,6 @@ package typings.deezerSdk.DeezerSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -113,89 +112,8 @@ trait Player extends StObject {
     * See: {@link https://developers.deezer.com/sdk/javascript/loadtracks | Load tracks to a player}
     */
   def playAlbum(albumId: Double): Unit = js.native
-  def playAlbum(
-    albumId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playAlbum(
-    albumId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def playAlbum(
-    albumId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playAlbum(
-    albumId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playAlbum(albumId: Double, autoplay: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
-  def playAlbum(
-    albumId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playAlbum(albumId: Double, autoplay: js.UndefOr[scala.Nothing], index: Double, offset: Double): Unit = js.native
-  def playAlbum(
-    albumId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playAlbum(
-    albumId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playAlbum(
-    albumId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playAlbum(albumId: Double, autoplay: Boolean): Unit = js.native
-  def playAlbum(
-    albumId: Double,
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playAlbum(albumId: Double, autoplay: Boolean, index: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
-  def playAlbum(
-    albumId: Double,
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playAlbum(
-    albumId: Double,
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playAlbum(albumId: Double, autoplay: Boolean, index: Double): Unit = js.native
-  def playAlbum(
-    albumId: Double,
-    autoplay: Boolean,
-    index: Double,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playAlbum(albumId: Double, autoplay: Boolean, index: Double, offset: Double): Unit = js.native
   def playAlbum(
     albumId: Double,
@@ -208,9 +126,81 @@ trait Player extends StObject {
     albumId: Double,
     autoplay: Boolean,
     index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Boolean,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(albumId: Double, autoplay: Boolean, index: Unit, offset: Double): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Boolean,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Boolean,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Boolean,
+    index: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playAlbum(albumId: Double, autoplay: Boolean, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  def playAlbum(albumId: Double, autoplay: Unit, index: Double): Unit = js.native
+  def playAlbum(albumId: Double, autoplay: Unit, index: Double, offset: Double): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Unit,
+    index: Double,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Unit,
+    index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Unit,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(albumId: Double, autoplay: Unit, index: Unit, offset: Double): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Unit,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Unit,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Unit,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(albumId: Double, autoplay: Unit, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
   def playAlbum(albumId: Double, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
   
   /**
@@ -224,89 +214,8 @@ trait Player extends StObject {
     * See: {@link https://developers.deezer.com/sdk/javascript/loadtracks | Load tracks to a player}
     */
   def playEpisodes(episodeIds: js.Array[String]): Unit = js.native
-  def playEpisodes(
-    episodeIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playEpisodes(
-    episodeIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def playEpisodes(
-    episodeIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playEpisodes(
-    episodeIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playEpisodes(episodeIds: js.Array[String], autoplay: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
-  def playEpisodes(
-    episodeIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playEpisodes(episodeIds: js.Array[String], autoplay: js.UndefOr[scala.Nothing], index: Double, offset: Double): Unit = js.native
-  def playEpisodes(
-    episodeIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playEpisodes(
-    episodeIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playEpisodes(
-    episodeIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playEpisodes(episodeIds: js.Array[String], autoplay: Boolean): Unit = js.native
-  def playEpisodes(
-    episodeIds: js.Array[String],
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playEpisodes(episodeIds: js.Array[String], autoplay: Boolean, index: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
-  def playEpisodes(
-    episodeIds: js.Array[String],
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playEpisodes(
-    episodeIds: js.Array[String],
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playEpisodes(episodeIds: js.Array[String], autoplay: Boolean, index: Double): Unit = js.native
-  def playEpisodes(
-    episodeIds: js.Array[String],
-    autoplay: Boolean,
-    index: Double,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playEpisodes(episodeIds: js.Array[String], autoplay: Boolean, index: Double, offset: Double): Unit = js.native
   def playEpisodes(
     episodeIds: js.Array[String],
@@ -319,11 +228,87 @@ trait Player extends StObject {
     episodeIds: js.Array[String],
     autoplay: Boolean,
     index: Double,
+    offset: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playEpisodes(
     episodeIds: js.Array[String],
     autoplay: Boolean,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(episodeIds: js.Array[String], autoplay: Boolean, index: Unit, offset: Double): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Boolean,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Boolean,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Boolean,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Boolean,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(episodeIds: js.Array[String], autoplay: Unit, index: Double): Unit = js.native
+  def playEpisodes(episodeIds: js.Array[String], autoplay: Unit, index: Double, offset: Double): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Unit,
+    index: Double,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Unit,
+    index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Unit,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(episodeIds: js.Array[String], autoplay: Unit, index: Unit, offset: Double): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Unit,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Unit,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Unit,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playEpisodes(episodeIds: js.Array[String], onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
@@ -339,99 +324,8 @@ trait Player extends StObject {
     * See: {@link https://developers.deezer.com/sdk/javascript/loadtracks | Load tracks to a player}
     */
   def playExternalTracks(mp3Sources: js.Array[Mp3Source]): Unit = js.native
-  def playExternalTracks(
-    mp3Sources: js.Array[Mp3Source],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playExternalTracks(
-    mp3Sources: js.Array[Mp3Source],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def playExternalTracks(
-    mp3Sources: js.Array[Mp3Source],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playExternalTracks(
-    mp3Sources: js.Array[Mp3Source],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playExternalTracks(mp3Sources: js.Array[Mp3Source], autoplay: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
-  def playExternalTracks(
-    mp3Sources: js.Array[Mp3Source],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playExternalTracks(
-    mp3Sources: js.Array[Mp3Source],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    offset: Double
-  ): Unit = js.native
-  def playExternalTracks(
-    mp3Sources: js.Array[Mp3Source],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playExternalTracks(
-    mp3Sources: js.Array[Mp3Source],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playExternalTracks(
-    mp3Sources: js.Array[Mp3Source],
-    autoplay: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playExternalTracks(mp3Sources: js.Array[Mp3Source], autoplay: Boolean): Unit = js.native
-  def playExternalTracks(
-    mp3Sources: js.Array[Mp3Source],
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playExternalTracks(
-    mp3Sources: js.Array[Mp3Source],
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def playExternalTracks(
-    mp3Sources: js.Array[Mp3Source],
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playExternalTracks(
-    mp3Sources: js.Array[Mp3Source],
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playExternalTracks(mp3Sources: js.Array[Mp3Source], autoplay: Boolean, index: Double): Unit = js.native
-  def playExternalTracks(
-    mp3Sources: js.Array[Mp3Source],
-    autoplay: Boolean,
-    index: Double,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playExternalTracks(mp3Sources: js.Array[Mp3Source], autoplay: Boolean, index: Double, offset: Double): Unit = js.native
   def playExternalTracks(
     mp3Sources: js.Array[Mp3Source],
@@ -444,11 +338,87 @@ trait Player extends StObject {
     mp3Sources: js.Array[Mp3Source],
     autoplay: Boolean,
     index: Double,
+    offset: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playExternalTracks(
     mp3Sources: js.Array[Mp3Source],
     autoplay: Boolean,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(mp3Sources: js.Array[Mp3Source], autoplay: Boolean, index: Unit, offset: Double): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Boolean,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Boolean,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Boolean,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Boolean,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(mp3Sources: js.Array[Mp3Source], autoplay: Unit, index: Double): Unit = js.native
+  def playExternalTracks(mp3Sources: js.Array[Mp3Source], autoplay: Unit, index: Double, offset: Double): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Unit,
+    index: Double,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Unit,
+    index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Unit,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(mp3Sources: js.Array[Mp3Source], autoplay: Unit, index: Unit, offset: Double): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Unit,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Unit,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Unit,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playExternalTracks(mp3Sources: js.Array[Mp3Source], onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
@@ -464,89 +434,8 @@ trait Player extends StObject {
     * See: {@link https://developers.deezer.com/sdk/javascript/loadtracks | Load tracks to a player}
     */
   def playPlaylist(playlistId: Double): Unit = js.native
-  def playPlaylist(
-    playlistId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPlaylist(
-    playlistId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def playPlaylist(
-    playlistId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPlaylist(
-    playlistId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPlaylist(playlistId: Double, autoplay: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
-  def playPlaylist(
-    playlistId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPlaylist(playlistId: Double, autoplay: js.UndefOr[scala.Nothing], index: Double, offset: Double): Unit = js.native
-  def playPlaylist(
-    playlistId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPlaylist(
-    playlistId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPlaylist(
-    playlistId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playPlaylist(playlistId: Double, autoplay: Boolean): Unit = js.native
-  def playPlaylist(
-    playlistId: Double,
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPlaylist(playlistId: Double, autoplay: Boolean, index: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
-  def playPlaylist(
-    playlistId: Double,
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPlaylist(
-    playlistId: Double,
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playPlaylist(playlistId: Double, autoplay: Boolean, index: Double): Unit = js.native
-  def playPlaylist(
-    playlistId: Double,
-    autoplay: Boolean,
-    index: Double,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playPlaylist(playlistId: Double, autoplay: Boolean, index: Double, offset: Double): Unit = js.native
   def playPlaylist(
     playlistId: Double,
@@ -559,6 +448,34 @@ trait Player extends StObject {
     playlistId: Double,
     autoplay: Boolean,
     index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Boolean,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(playlistId: Double, autoplay: Boolean, index: Unit, offset: Double): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Boolean,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Boolean,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Boolean,
+    index: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playPlaylist(
@@ -566,6 +483,50 @@ trait Player extends StObject {
     autoplay: Boolean,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
+  def playPlaylist(playlistId: Double, autoplay: Unit, index: Double): Unit = js.native
+  def playPlaylist(playlistId: Double, autoplay: Unit, index: Double, offset: Double): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Unit,
+    index: Double,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Unit,
+    index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Unit,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(playlistId: Double, autoplay: Unit, index: Unit, offset: Double): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Unit,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Unit,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Unit,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(playlistId: Double, autoplay: Unit, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
   def playPlaylist(playlistId: Double, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
   
   /**
@@ -579,89 +540,8 @@ trait Player extends StObject {
     * See: {@link https://developers.deezer.com/sdk/javascript/loadtracks | Load tracks to a player}
     */
   def playPodcast(podcastId: Double): Unit = js.native
-  def playPodcast(
-    podcastId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPodcast(
-    podcastId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def playPodcast(
-    podcastId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPodcast(
-    podcastId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPodcast(podcastId: Double, autoplay: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
-  def playPodcast(
-    podcastId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPodcast(podcastId: Double, autoplay: js.UndefOr[scala.Nothing], index: Double, offset: Double): Unit = js.native
-  def playPodcast(
-    podcastId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPodcast(
-    podcastId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPodcast(
-    podcastId: Double,
-    autoplay: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playPodcast(podcastId: Double, autoplay: Boolean): Unit = js.native
-  def playPodcast(
-    podcastId: Double,
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPodcast(podcastId: Double, autoplay: Boolean, index: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
-  def playPodcast(
-    podcastId: Double,
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playPodcast(
-    podcastId: Double,
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playPodcast(podcastId: Double, autoplay: Boolean, index: Double): Unit = js.native
-  def playPodcast(
-    podcastId: Double,
-    autoplay: Boolean,
-    index: Double,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playPodcast(podcastId: Double, autoplay: Boolean, index: Double, offset: Double): Unit = js.native
   def playPodcast(
     podcastId: Double,
@@ -674,6 +554,34 @@ trait Player extends StObject {
     podcastId: Double,
     autoplay: Boolean,
     index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Boolean,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(podcastId: Double, autoplay: Boolean, index: Unit, offset: Double): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Boolean,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Boolean,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Boolean,
+    index: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playPodcast(
@@ -681,6 +589,50 @@ trait Player extends StObject {
     autoplay: Boolean,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
+  def playPodcast(podcastId: Double, autoplay: Unit, index: Double): Unit = js.native
+  def playPodcast(podcastId: Double, autoplay: Unit, index: Double, offset: Double): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Unit,
+    index: Double,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Unit,
+    index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Unit,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(podcastId: Double, autoplay: Unit, index: Unit, offset: Double): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Unit,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Unit,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Unit,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(podcastId: Double, autoplay: Unit, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
   def playPodcast(podcastId: Double, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
   
   /**
@@ -693,89 +645,52 @@ trait Player extends StObject {
     * See: {@link https://developers.deezer.com/sdk/javascript/loadtracks | Load tracks to a player}
     */
   def playRadio(id: Double): Unit = js.native
+  def playRadio(id: Double, radioType: Unit, autoplay: Boolean): Unit = js.native
+  def playRadio(id: Double, radioType: Unit, autoplay: Boolean, offset: Double): Unit = js.native
   def playRadio(
     id: Double,
-    radioType: js.UndefOr[scala.Nothing],
-    autoplay: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playRadio(
-    id: Double,
-    radioType: js.UndefOr[scala.Nothing],
-    autoplay: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def playRadio(
-    id: Double,
-    radioType: js.UndefOr[scala.Nothing],
-    autoplay: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playRadio(
-    id: Double,
-    radioType: js.UndefOr[scala.Nothing],
-    autoplay: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playRadio(id: Double, radioType: js.UndefOr[scala.Nothing], autoplay: Boolean): Unit = js.native
-  def playRadio(
-    id: Double,
-    radioType: js.UndefOr[scala.Nothing],
-    autoplay: Boolean,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playRadio(id: Double, radioType: js.UndefOr[scala.Nothing], autoplay: Boolean, offset: Double): Unit = js.native
-  def playRadio(
-    id: Double,
-    radioType: js.UndefOr[scala.Nothing],
+    radioType: Unit,
     autoplay: Boolean,
     offset: Double,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playRadio(
     id: Double,
-    radioType: js.UndefOr[scala.Nothing],
+    radioType: Unit,
     autoplay: Boolean,
+    offset: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playRadio(
     id: Double,
-    radioType: js.UndefOr[scala.Nothing],
+    radioType: Unit,
+    autoplay: Boolean,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
+  def playRadio(id: Double, radioType: Unit, autoplay: Unit, offset: Double): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(id: Double, radioType: Unit, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
   def playRadio(id: Double, radioType: RadioType): Unit = js.native
-  def playRadio(
-    id: Double,
-    radioType: RadioType,
-    autoplay: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playRadio(id: Double, radioType: RadioType, autoplay: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
-  def playRadio(
-    id: Double,
-    radioType: RadioType,
-    autoplay: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playRadio(
-    id: Double,
-    radioType: RadioType,
-    autoplay: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playRadio(id: Double, radioType: RadioType, autoplay: Boolean): Unit = js.native
-  def playRadio(
-    id: Double,
-    radioType: RadioType,
-    autoplay: Boolean,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playRadio(id: Double, radioType: RadioType, autoplay: Boolean, offset: Double): Unit = js.native
   def playRadio(
     id: Double,
@@ -788,6 +703,34 @@ trait Player extends StObject {
     id: Double,
     radioType: RadioType,
     autoplay: Boolean,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Boolean,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(id: Double, radioType: RadioType, autoplay: Unit, offset: Double): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playRadio(id: Double, radioType: RadioType, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
@@ -805,89 +748,52 @@ trait Player extends StObject {
     * See: {@link https://developers.deezer.com/sdk/javascript/loadtracks | Load tracks to a player}
     */
   def playSmartRadio(id: Double): Unit = js.native
+  def playSmartRadio(id: Double, radioType: Unit, autoplay: Boolean): Unit = js.native
+  def playSmartRadio(id: Double, radioType: Unit, autoplay: Boolean, offset: Double): Unit = js.native
   def playSmartRadio(
     id: Double,
-    radioType: js.UndefOr[scala.Nothing],
-    autoplay: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playSmartRadio(
-    id: Double,
-    radioType: js.UndefOr[scala.Nothing],
-    autoplay: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def playSmartRadio(
-    id: Double,
-    radioType: js.UndefOr[scala.Nothing],
-    autoplay: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playSmartRadio(
-    id: Double,
-    radioType: js.UndefOr[scala.Nothing],
-    autoplay: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playSmartRadio(id: Double, radioType: js.UndefOr[scala.Nothing], autoplay: Boolean): Unit = js.native
-  def playSmartRadio(
-    id: Double,
-    radioType: js.UndefOr[scala.Nothing],
-    autoplay: Boolean,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playSmartRadio(id: Double, radioType: js.UndefOr[scala.Nothing], autoplay: Boolean, offset: Double): Unit = js.native
-  def playSmartRadio(
-    id: Double,
-    radioType: js.UndefOr[scala.Nothing],
+    radioType: Unit,
     autoplay: Boolean,
     offset: Double,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playSmartRadio(
     id: Double,
-    radioType: js.UndefOr[scala.Nothing],
+    radioType: Unit,
     autoplay: Boolean,
+    offset: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playSmartRadio(
     id: Double,
-    radioType: js.UndefOr[scala.Nothing],
+    radioType: Unit,
+    autoplay: Boolean,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
+  def playSmartRadio(id: Double, radioType: Unit, autoplay: Unit, offset: Double): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(id: Double, radioType: Unit, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
   def playSmartRadio(id: Double, radioType: RadioType): Unit = js.native
-  def playSmartRadio(
-    id: Double,
-    radioType: RadioType,
-    autoplay: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playSmartRadio(id: Double, radioType: RadioType, autoplay: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
-  def playSmartRadio(
-    id: Double,
-    radioType: RadioType,
-    autoplay: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playSmartRadio(
-    id: Double,
-    radioType: RadioType,
-    autoplay: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playSmartRadio(id: Double, radioType: RadioType, autoplay: Boolean): Unit = js.native
-  def playSmartRadio(
-    id: Double,
-    radioType: RadioType,
-    autoplay: Boolean,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playSmartRadio(id: Double, radioType: RadioType, autoplay: Boolean, offset: Double): Unit = js.native
   def playSmartRadio(
     id: Double,
@@ -900,6 +806,34 @@ trait Player extends StObject {
     id: Double,
     radioType: RadioType,
     autoplay: Boolean,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Boolean,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(id: Double, radioType: RadioType, autoplay: Unit, offset: Double): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playSmartRadio(id: Double, radioType: RadioType, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
@@ -918,89 +852,8 @@ trait Player extends StObject {
     * See: {@link https://developers.deezer.com/sdk/javascript/loadtracks | Load tracks to a player}
     */
   def playTracks(trackIds: js.Array[String]): Unit = js.native
-  def playTracks(
-    trackIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playTracks(
-    trackIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: Double
-  ): Unit = js.native
-  def playTracks(
-    trackIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playTracks(
-    trackIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playTracks(trackIds: js.Array[String], autoplay: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
-  def playTracks(
-    trackIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playTracks(trackIds: js.Array[String], autoplay: js.UndefOr[scala.Nothing], index: Double, offset: Double): Unit = js.native
-  def playTracks(
-    trackIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playTracks(
-    trackIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    index: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playTracks(
-    trackIds: js.Array[String],
-    autoplay: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playTracks(trackIds: js.Array[String], autoplay: Boolean): Unit = js.native
-  def playTracks(
-    trackIds: js.Array[String],
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playTracks(trackIds: js.Array[String], autoplay: Boolean, index: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
-  def playTracks(
-    trackIds: js.Array[String],
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    offset: Double,
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
-  def playTracks(
-    trackIds: js.Array[String],
-    autoplay: Boolean,
-    index: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playTracks(trackIds: js.Array[String], autoplay: Boolean, index: Double): Unit = js.native
-  def playTracks(
-    trackIds: js.Array[String],
-    autoplay: Boolean,
-    index: Double,
-    offset: js.UndefOr[scala.Nothing],
-    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
-  ): Unit = js.native
   def playTracks(trackIds: js.Array[String], autoplay: Boolean, index: Double, offset: Double): Unit = js.native
   def playTracks(
     trackIds: js.Array[String],
@@ -1013,11 +866,87 @@ trait Player extends StObject {
     trackIds: js.Array[String],
     autoplay: Boolean,
     index: Double,
+    offset: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playTracks(
     trackIds: js.Array[String],
     autoplay: Boolean,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(trackIds: js.Array[String], autoplay: Boolean, index: Unit, offset: Double): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Boolean,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Boolean,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Boolean,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Boolean,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(trackIds: js.Array[String], autoplay: Unit, index: Double): Unit = js.native
+  def playTracks(trackIds: js.Array[String], autoplay: Unit, index: Double, offset: Double): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Unit,
+    index: Double,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Unit,
+    index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Unit,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(trackIds: js.Array[String], autoplay: Unit, index: Unit, offset: Double): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Unit,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Unit,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Unit,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playTracks(trackIds: js.Array[String], onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native

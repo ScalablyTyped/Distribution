@@ -3,10 +3,8 @@ package typings.twineSugarcube.anon
 import typings.twineSugarcube.extensionsMod.global.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Clear extends StObject {
   
   /**
@@ -21,14 +19,14 @@ trait Clear extends StObject {
     * // Set up a group ":ui" with the tracks: "ui_beep", "ui_boop", and "ui_swish"
     * SimpleAudio.groups.add(":ui", "ui_beep", "ui_boop", "ui_swish");
     */
-  def add(groupId: String, trackIds: String*): Unit = js.native
+  def add(groupId: String, trackIds: String*): Unit
   
   /**
     * Deletes all audio groups.
     * NOTE: Only deletes the groups themselves, does not affect their component tracks.
     * @since 2.28.0
     */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * Deletes the audio group with the given group ID.
@@ -38,7 +36,7 @@ trait Clear extends StObject {
     * @example
     * SimpleAudio.groups.delete(":ui");
     */
-  def delete(groupId: String): Unit = js.native
+  def delete(groupId: String): Unit
   
   /**
     * Returns the array of track IDs with the given group ID, or null on failure.
@@ -48,14 +46,14 @@ trait Clear extends StObject {
     * @example
     * SimpleAudio.groups.get(":ui")  → Returns the array of track IDs matching ":ui"
     */
-  def get(groupId: String): Array[String] = js.native
+  def get(groupId: String): Array[String]
   
   /**
     * Returns whether an audio group with the given group ID exists.
     * @param groupId The ID of the group.
     * @since 2.28.0
     */
-  def has(groupId: String): Boolean = js.native
+  def has(groupId: String): Boolean
 }
 object Clear {
   

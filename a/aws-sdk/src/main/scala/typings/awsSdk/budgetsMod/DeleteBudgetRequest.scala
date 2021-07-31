@@ -2,21 +2,19 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBudgetRequest extends StObject {
   
   /**
     * The accountId that is associated with the budget that you want to delete.
     */
-  var AccountId: typings.awsSdk.budgetsMod.AccountId = js.native
+  var AccountId: typings.awsSdk.budgetsMod.AccountId
   
   /**
     * The name of the budget that you want to delete.
     */
-  var BudgetName: typings.awsSdk.budgetsMod.BudgetName = js.native
+  var BudgetName: typings.awsSdk.budgetsMod.BudgetName
 }
 object DeleteBudgetRequest {
   

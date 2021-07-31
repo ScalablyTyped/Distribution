@@ -12,7 +12,7 @@ Mock HTTP calls in your protractor specs.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 174172 |
+| # downloads        | 188172 |
 | # stars            | 0 |
 
 ## Links

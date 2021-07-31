@@ -2,15 +2,13 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Xamzid2 extends StObject {
   
-  var `x-amz-id-2`: String = js.native
+  var `x-amz-id-2`: String
   
-  var `x-amz-request-id`: String = js.native
+  var `x-amz-request-id`: String
 }
 object Xamzid2 {
   

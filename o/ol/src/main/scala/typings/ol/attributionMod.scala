@@ -3,7 +3,6 @@ package typings.ol
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object attributionMod {
@@ -42,24 +41,23 @@ object attributionMod {
     def setCollapsible(collapsible: Boolean): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var collapseLabel: js.UndefOr[String | HTMLElement] = js.native
+    var collapseLabel: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
-    var collapsible: js.UndefOr[Boolean] = js.native
+    var collapsible: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String | HTMLElement] = js.native
+    var label: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapEventMod.default, Unit]] = js.native
+    var render: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapEventMod.default, Unit]] = js.undefined
     
-    var target: js.UndefOr[HTMLElement | String] = js.native
+    var target: js.UndefOr[HTMLElement | String] = js.undefined
     
-    var tipLabel: js.UndefOr[String] = js.native
+    var tipLabel: js.UndefOr[String] = js.undefined
   }
   object Options {
     

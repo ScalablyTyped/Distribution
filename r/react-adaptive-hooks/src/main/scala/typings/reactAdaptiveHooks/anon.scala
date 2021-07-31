@@ -10,15 +10,13 @@ import typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.record
 import typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.transmission
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Audio extends StObject {
     
-    var audio: AudioMediaConfiguration = js.native
+    var audio: AudioMediaConfiguration
   }
   object Audio {
     
@@ -36,18 +34,17 @@ object anon {
     }
   }
   
-  @js.native
   trait EffectiveConnectionType extends StObject {
     
-    var effectiveConnectionType: typings.reactAdaptiveHooks.networkMod.EffectiveConnectionType | Null = js.native
+    var effectiveConnectionType: typings.reactAdaptiveHooks.networkMod.EffectiveConnectionType | Null
     
-    var unsupported: Boolean = js.native
+    var unsupported: Boolean
   }
   object EffectiveConnectionType {
     
     @scala.inline
     def apply(unsupported: Boolean): EffectiveConnectionType = {
-      val __obj = js.Dynamic.literal(unsupported = unsupported.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(unsupported = unsupported.asInstanceOf[js.Any], effectiveConnectionType = null)
       __obj.asInstanceOf[EffectiveConnectionType]
     }
     
@@ -65,12 +62,11 @@ object anon {
     }
   }
   
-  @js.native
   trait HasMediaConfig extends StObject {
     
-    var hasMediaConfig: Boolean = js.native
+    var hasMediaConfig: Boolean
     
-    var supported: Boolean = js.native
+    var supported: Boolean
   }
   object HasMediaConfig {
     
@@ -91,33 +87,31 @@ object anon {
     }
   }
   
-  @js.native
   trait MediaCapabilities[T] extends StObject {
     
-    var mediaCapabilities: (HasMediaConfig with T) | hasMediaConfigundefinedMe = js.native
+    var mediaCapabilities: (HasMediaConfig & T) | hasMediaConfigundefinedMe
   }
   object MediaCapabilities {
     
     @scala.inline
-    def apply[T](mediaCapabilities: (HasMediaConfig with T) | hasMediaConfigundefinedMe): MediaCapabilities[T] = {
+    def apply[T](mediaCapabilities: (HasMediaConfig & T) | hasMediaConfigundefinedMe): MediaCapabilities[T] = {
       val __obj = js.Dynamic.literal(mediaCapabilities = mediaCapabilities.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaCapabilities[T]]
     }
     
     @scala.inline
-    implicit class MediaCapabilitiesMutableBuilder[Self <: MediaCapabilities[_], T] (val x: Self with MediaCapabilities[T]) extends AnyVal {
+    implicit class MediaCapabilitiesMutableBuilder[Self <: MediaCapabilities[?], T] (val x: Self & MediaCapabilities[T]) extends AnyVal {
       
       @scala.inline
-      def setMediaCapabilities(value: (HasMediaConfig with T) | hasMediaConfigundefinedMe): Self = StObject.set(x, "mediaCapabilities", value.asInstanceOf[js.Any])
+      def setMediaCapabilities(value: (HasMediaConfig & T) | hasMediaConfigundefinedMe): Self = StObject.set(x, "mediaCapabilities", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait NumberOfLogicalProcessors extends StObject {
     
-    var numberOfLogicalProcessors: js.UndefOr[Double] = js.native
+    var numberOfLogicalProcessors: js.UndefOr[Double] = js.undefined
     
-    var unsupported: Boolean = js.native
+    var unsupported: Boolean
   }
   object NumberOfLogicalProcessors {
     
@@ -142,14 +136,13 @@ object anon {
   }
   
   /* Inlined std.Partial<react-adaptive-hooks.react-adaptive-hooks/media-capabilities.MediaConfigurationInfo> */
-  @js.native
   trait PartialMediaConfiguration extends StObject {
     
-    var powerEfficient: js.UndefOr[Boolean] = js.native
+    var powerEfficient: js.UndefOr[Boolean] = js.undefined
     
-    var smooth: js.UndefOr[Boolean] = js.native
+    var smooth: js.UndefOr[Boolean] = js.undefined
     
-    var supported: js.UndefOr[Boolean] = js.native
+    var supported: js.UndefOr[Boolean] = js.undefined
   }
   object PartialMediaConfiguration {
     
@@ -183,16 +176,15 @@ object anon {
   }
   
   /* Inlined std.Partial<react-adaptive-hooks.react-adaptive-hooks/memory.MemoryStatus> */
-  @js.native
   trait PartialMemoryStatus extends StObject {
     
-    var deviceMemory: js.UndefOr[Double] = js.native
+    var deviceMemory: js.UndefOr[Double] = js.undefined
     
-    var jsHeapSizeLimit: js.UndefOr[Double | Null] = js.native
+    var jsHeapSizeLimit: js.UndefOr[Double | Null] = js.undefined
     
-    var totalJSHeapSize: js.UndefOr[Double | Null] = js.native
+    var totalJSHeapSize: js.UndefOr[Double | Null] = js.undefined
     
-    var usedJSHeapSize: js.UndefOr[Double | Null] = js.native
+    var usedJSHeapSize: js.UndefOr[Double | Null] = js.undefined
   }
   object PartialMemoryStatus {
     
@@ -240,18 +232,17 @@ object anon {
     }
   }
   
-  @js.native
   trait SaveData extends StObject {
     
-    var saveData: Boolean | Null = js.native
+    var saveData: Boolean | Null
     
-    var unsupported: Boolean = js.native
+    var unsupported: Boolean
   }
   object SaveData {
     
     @scala.inline
     def apply(unsupported: Boolean): SaveData = {
-      val __obj = js.Dynamic.literal(unsupported = unsupported.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(unsupported = unsupported.asInstanceOf[js.Any], saveData = null)
       __obj.asInstanceOf[SaveData]
     }
     
@@ -269,10 +260,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: file | record | transmission | `media-source` = js.native
+    var `type`: file | record | transmission | `media-source`
   }
   object Type {
     
@@ -291,16 +281,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Unsupported extends StObject {
     
-    var unsupported: `true` = js.native
+    var unsupported: `true`
   }
   object Unsupported {
     
     @scala.inline
-    def apply(unsupported: `true`): Unsupported = {
-      val __obj = js.Dynamic.literal(unsupported = unsupported.asInstanceOf[js.Any])
+    def apply(): Unsupported = {
+      val __obj = js.Dynamic.literal(unsupported = true)
       __obj.asInstanceOf[Unsupported]
     }
     
@@ -312,10 +301,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Video extends StObject {
     
-    var video: VideoMediaConfiguration = js.native
+    var video: VideoMediaConfiguration
   }
   object Video {
     
@@ -334,27 +322,29 @@ object anon {
   }
   
   /* Inlined {  hasMediaConfig :undefined} & react-adaptive-hooks.react-adaptive-hooks/media-capabilities.MediaConfigurationInfo */
-  @js.native
   trait hasMediaConfigundefinedMe extends StObject {
     
-    var hasMediaConfig: js.UndefOr[scala.Nothing] = js.native
+    var hasMediaConfig: Unit
     
-    var powerEfficient: Boolean = js.native
+    var powerEfficient: Boolean
     
-    var smooth: Boolean = js.native
+    var smooth: Boolean
     
-    var supported: Boolean = js.native
+    var supported: Boolean
   }
   object hasMediaConfigundefinedMe {
     
     @scala.inline
-    def apply(powerEfficient: Boolean, smooth: Boolean, supported: Boolean): hasMediaConfigundefinedMe = {
-      val __obj = js.Dynamic.literal(powerEfficient = powerEfficient.asInstanceOf[js.Any], smooth = smooth.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any])
+    def apply(hasMediaConfig: Unit, powerEfficient: Boolean, smooth: Boolean, supported: Boolean): hasMediaConfigundefinedMe = {
+      val __obj = js.Dynamic.literal(hasMediaConfig = hasMediaConfig.asInstanceOf[js.Any], powerEfficient = powerEfficient.asInstanceOf[js.Any], smooth = smooth.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any])
       __obj.asInstanceOf[hasMediaConfigundefinedMe]
     }
     
     @scala.inline
     implicit class hasMediaConfigundefinedMeMutableBuilder[Self <: hasMediaConfigundefinedMe] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setHasMediaConfig(value: Unit): Self = StObject.set(x, "hasMediaConfig", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPowerEfficient(value: Boolean): Self = StObject.set(x, "powerEfficient", value.asInstanceOf[js.Any])
@@ -368,24 +358,23 @@ object anon {
   }
   
   /* Inlined {  unsupported :false} & react-adaptive-hooks.react-adaptive-hooks/memory.MemoryStatus */
-  @js.native
   trait unsupportedfalseMemorySta extends StObject {
     
-    var deviceMemory: Double = js.native
+    var deviceMemory: Double
     
-    var jsHeapSizeLimit: Double | Null = js.native
+    var jsHeapSizeLimit: Double | Null
     
-    var totalJSHeapSize: Double | Null = js.native
+    var totalJSHeapSize: Double | Null
     
-    var unsupported: `false` = js.native
+    var unsupported: `false`
     
-    var usedJSHeapSize: Double | Null = js.native
+    var usedJSHeapSize: Double | Null
   }
   object unsupportedfalseMemorySta {
     
     @scala.inline
-    def apply(deviceMemory: Double, unsupported: `false`): unsupportedfalseMemorySta = {
-      val __obj = js.Dynamic.literal(deviceMemory = deviceMemory.asInstanceOf[js.Any], unsupported = unsupported.asInstanceOf[js.Any])
+    def apply(deviceMemory: Double): unsupportedfalseMemorySta = {
+      val __obj = js.Dynamic.literal(deviceMemory = deviceMemory.asInstanceOf[js.Any], unsupported = false, jsHeapSizeLimit = null, totalJSHeapSize = null, usedJSHeapSize = null)
       __obj.asInstanceOf[unsupportedfalseMemorySta]
     }
     

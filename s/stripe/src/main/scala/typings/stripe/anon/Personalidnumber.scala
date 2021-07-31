@@ -2,16 +2,14 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Personalidnumber extends StObject {
   
   /**
     * The personal_id_number for PII in string form.
     */
-  var personal_id_number: String = js.native
+  var personal_id_number: String
 }
 object Personalidnumber {
   

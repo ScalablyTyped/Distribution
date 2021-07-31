@@ -5,12 +5,13 @@ import typings.sharepoint.SP.WebParts.PersonalizationScope
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a file in a SharePoint Web site that can be a Web Part Page, an item in a document library, or a file in a folder. */
 @js.native
-trait File extends ClientObject {
+trait File
+  extends StObject
+     with ClientObject {
   
   /** Approves the file submitted for content approval with the specified comment.  */
   def approve(comment: String): Unit = js.native

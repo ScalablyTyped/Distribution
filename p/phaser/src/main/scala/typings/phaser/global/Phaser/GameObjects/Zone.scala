@@ -1,9 +1,9 @@
 package typings.phaser.global.Phaser.GameObjects
 
 import typings.phaser.Phaser.Scene
+import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +21,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Phaser.GameObjects.Zone")
 @js.native
 class Zone protected ()
-  extends typings.phaser.Phaser.GameObjects.Zone {
+  extends StObject
+     with typings.phaser.Phaser.GameObjects.Zone {
   /**
     * 
     * @param scene The Scene to which this Game Object belongs.
@@ -32,6 +33,52 @@ class Zone protected ()
     */
   def this(scene: Scene, x: Double, y: Double) = this()
   def this(scene: Scene, x: Double, y: Double, width: Double) = this()
-  def this(scene: Scene, x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
   def this(scene: Scene, x: Double, y: Double, width: Double, height: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, width: Unit, height: Double) = this()
+  
+  /**
+    * The depth of this Game Object within the Scene.
+    * 
+    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
+    * of Game Objects, without actually moving their position in the display list.
+    * 
+    * The default depth is zero. A Game Object with a higher depth
+    * value will always render in front of one with a lower value.
+    * 
+    * Setting the depth will queue a depth sort event within the Scene.
+    */
+  /* CompleteClass */
+  var depth: Double = js.native
+  
+  /**
+    * The depth of this Game Object within the Scene.
+    * 
+    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
+    * of Game Objects, without actually moving their position in the display list.
+    * 
+    * The default depth is zero. A Game Object with a higher depth
+    * value will always render in front of one with a lower value.
+    * 
+    * Setting the depth will queue a depth sort event within the Scene.
+    * @param value The depth of this Game Object.
+    */
+  /* CompleteClass */
+  override def setDepth(value: integer): this.type = js.native
+  
+  /**
+    * Sets the visibility of this Game Object.
+    * 
+    * An invisible Game Object will skip rendering, but will still process update logic.
+    * @param value The visible state of the Game Object.
+    */
+  /* CompleteClass */
+  override def setVisible(value: Boolean): this.type = js.native
+  
+  /**
+    * The visible state of the Game Object.
+    * 
+    * An invisible Game Object will skip rendering, but will still process update logic.
+    */
+  /* CompleteClass */
+  var visible: Boolean = js.native
 }

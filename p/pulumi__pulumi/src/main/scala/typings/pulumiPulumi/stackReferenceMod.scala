@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResource
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackReferenceMod {
@@ -26,7 +25,7 @@ object stackReferenceMod {
       */
     def this(name: String) = this()
     def this(name: String, args: StackReferenceArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: StackReferenceArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -34,7 +33,7 @@ object stackReferenceMod {
       *
       * @param name The name of the stack output to fetch.
       */
-    def getOutput(name: Input[String]): Output_[_] = js.native
+    def getOutput(name: Input[String]): Output_[js.Any] = js.native
     
     /**
       * Fetches the value promptly of the named stack output. May return undefined if the value is
@@ -44,7 +43,7 @@ object stackReferenceMod {
       *
       * @param name The name of the stack output to fetch.
       */
-    def getOutputValue(name: String): js.Promise[_] = js.native
+    def getOutputValue(name: String): js.Promise[js.Any] = js.native
     
     /**
       * The name of the referenced stack.
@@ -54,7 +53,7 @@ object stackReferenceMod {
     /**
       * The outputs of the referenced stack.
       */
-    val outputs: Output_[StringDictionary[_]] = js.native
+    val outputs: Output_[StringDictionary[js.Any]] = js.native
     
     var readOutputValue: js.Any = js.native
     
@@ -63,7 +62,7 @@ object stackReferenceMod {
       *
       * @param name The name of the stack output to fetch.
       */
-    def requireOutput(name: Input[String]): Output_[_] = js.native
+    def requireOutput(name: Input[String]): Output_[js.Any] = js.native
     
     /**
       * Fetches the value promptly of the named stack output. Throws an error if the stack output is
@@ -73,7 +72,7 @@ object stackReferenceMod {
       *
       * @param name The name of the stack output to fetch.
       */
-    def requireOutputValue(name: String): js.Promise[_] = js.native
+    def requireOutputValue(name: String): js.Promise[js.Any] = js.native
     
     /**
       * The names of any stack outputs which contain secrets.
@@ -81,13 +80,12 @@ object stackReferenceMod {
     val secretOutputNames: Output_[js.Array[String]] = js.native
   }
   
-  @js.native
   trait StackReferenceArgs extends StObject {
     
     /**
       * The name of the stack to reference.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object StackReferenceArgs {
     

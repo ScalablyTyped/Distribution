@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZIndexProps extends StObject {
   
   val zIndex: js.UndefOr[
     ResponsiveValue[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _) | AliasKey
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | AliasKey
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ZIndexProps {
   
@@ -28,7 +26,7 @@ object ZIndexProps {
     @scala.inline
     def setZIndex(
       value: ResponsiveValue[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _) | AliasKey
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | AliasKey
         ]
     ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object ZIndexProps {
     def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
     @scala.inline
-    def setZIndexVarargs(value: (js.Any | AliasKey)*): Self = StObject.set(x, "zIndex", js.Array(value :_*))
+    def setZIndexVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | AliasKey)*
+    ): Self = StObject.set(x, "zIndex", js.Array(value :_*))
   }
 }

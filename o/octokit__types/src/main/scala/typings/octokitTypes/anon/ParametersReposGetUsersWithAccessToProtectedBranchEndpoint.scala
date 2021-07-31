@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetUsersWithAccessToProtectedBranc
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetUsersWithAccessToProtectedBranchEndpoint extends StObject {
   
-  var parameters: ReposGetUsersWithAccessToProtectedBranchEndpoint = js.native
+  var parameters: ReposGetUsersWithAccessToProtectedBranchEndpoint
   
-  var request: ReposGetUsersWithAccessToProtectedBranchRequestOptions = js.native
+  var request: ReposGetUsersWithAccessToProtectedBranchRequestOptions
   
-  var response: OctokitResponse[ReposGetUsersWithAccessToProtectedBranchResponseData] = js.native
+  var response: OctokitResponse[ReposGetUsersWithAccessToProtectedBranchResponseData]
 }
 object ParametersReposGetUsersWithAccessToProtectedBranchEndpoint {
   

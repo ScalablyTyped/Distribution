@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playableloca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleMapsPlayablelocationsV3SampleFilter extends StObject {
   
   /** Restricts the set of playable locations to just the [types](/maps/documentation/gaming/tt/types) that you want. */
-  var includedTypes: js.UndefOr[js.Array[String]] = js.native
+  var includedTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies the maximum number of playable locations to return. This value must not be greater than 1000. The default value is 100. Only the top-ranking playable locations are
     * returned.
     */
-  var maxLocationCount: js.UndefOr[Double] = js.native
+  var maxLocationCount: js.UndefOr[Double] = js.undefined
   
   /** A set of options that control the spacing between playable locations. By default the minimum distance between locations is 200m. */
-  var spacing: js.UndefOr[GoogleMapsPlayablelocationsV3SampleSpacingOptions] = js.native
+  var spacing: js.UndefOr[GoogleMapsPlayablelocationsV3SampleSpacingOptions] = js.undefined
 }
 object GoogleMapsPlayablelocationsV3SampleFilter {
   

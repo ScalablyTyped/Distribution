@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMathBreak extends StObject {
   
-  var AlignAt: Double = js.native
+  var AlignAt: Double
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
   @JSName("Word.OMathBreak_typekey")
-  var WordDotOMathBreak_typekey: OMathBreak = js.native
+  var WordDotOMathBreak_typekey: OMathBreak
 }
 object OMathBreak {
   

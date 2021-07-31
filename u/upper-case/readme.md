@@ -10,9 +10,9 @@ Transforms the string to upper case
 | ------------------ | :-------------: |
 | Full name          | upper-case |
 | Keywords           | upper, case, upcase, locale, convert, transform |
-| # releases         | 3 |
-| # dependents       | 61 |
-| # downloads        | 257733983 |
+| # releases         | 4 |
+| # dependents       | 74 |
+| # downloads        | 280420892 |
 | # stars            | 1 |
 
 ## Links

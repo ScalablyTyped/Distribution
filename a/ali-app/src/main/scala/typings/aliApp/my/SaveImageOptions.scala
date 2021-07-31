@@ -3,20 +3,19 @@ package typings.aliApp.my
 import typings.aliApp.anon.ErrMsg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveImageOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   @JSName("success")
-  var success_SaveImageOptions: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.native
+  var success_SaveImageOptions: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.undefined
   
   /**
     * 要保存的图片链接
     */
-  var url: String = js.native
+  var url: String
 }
 object SaveImageOptions {
   

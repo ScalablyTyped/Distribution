@@ -8,38 +8,36 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.script_
 import typings.devtoolsProtocol.mod.Protocol.Runtime.StackTrace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Initiator extends StObject {
   
   /**
     * Initiator column number, set for Parser type or for Script type (when script is importing
     * module) (0-based).
     */
-  var columnNumber: js.UndefOr[Double] = js.native
+  var columnNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * Initiator line number, set for Parser type or for Script type (when script is importing
     * module) (0-based).
     */
-  var lineNumber: js.UndefOr[Double] = js.native
+  var lineNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * Initiator JavaScript stack trace, set for Script only.
     */
-  var stack: js.UndefOr[StackTrace] = js.native
+  var stack: js.UndefOr[StackTrace] = js.undefined
   
   /**
     * Type of this initiator. (InitiatorType enum)
     */
-  var `type`: parser | script_ | preload | SignedExchange | other_ = js.native
+  var `type`: parser | script_ | preload | SignedExchange | other_
   
   /**
     * Initiator URL, set for Parser type or for Script type (when script is importing module) or for SignedExchange type.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Initiator {
   

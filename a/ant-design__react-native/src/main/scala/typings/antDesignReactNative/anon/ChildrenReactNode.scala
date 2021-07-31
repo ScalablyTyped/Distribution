@@ -3,15 +3,13 @@ package typings.antDesignReactNative.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildrenReactNode extends StObject {
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var key: Double = js.native
+  var key: Double
 }
 object ChildrenReactNode {
   

@@ -2,7 +2,6 @@ package typings.globalDirs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,26 +36,25 @@ object mod {
   @js.native
   val yarn: GlobalDirectories = js.native
   
-  @js.native
   trait GlobalDirectories extends StObject {
     
     /**
     		Directory with globally installed binaries.
     		Equivalent to `npm bin --global`.
     		*/
-    val binaries: String = js.native
+    val binaries: String
     
     /**
     		Directory with globally installed packages.
     		Equivalent to `npm root --global`.
     		*/
-    val packages: String = js.native
+    val packages: String
     
     /**
     		Directory with directories for packages and binaries. You probably want either of the above.
     		Equivalent to `npm prefix --global`.
     		*/
-    val prefix: String = js.native
+    val prefix: String
   }
   object GlobalDirectories {
     

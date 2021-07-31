@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * includes the list of routers associated with the network, and a flag
   * indicating the type of routing behavior to enforce network-wide.
   */
-@js.native
 trait SchemaNetworkRoutingConfig extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaNetworkRoutingConfig extends StObject {
     * network&#39;s cloud routers will advertise routes with all subnets of
     * this network, across regions.
     */
-  var routingMode: js.UndefOr[String] = js.native
+  var routingMode: js.UndefOr[String] = js.undefined
 }
 object SchemaNetworkRoutingConfig {
   

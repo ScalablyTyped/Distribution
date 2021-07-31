@@ -7,19 +7,20 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object script {
     
+    @scala.inline
+    def apply(): Script = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Script]
+    @scala.inline
+    def apply(options: Options): Script = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Script]
+    
     @JSImport("@hapi/lab", "script")
     @js.native
-    def apply(): Script = js.native
-    @JSImport("@hapi/lab", "script")
-    @js.native
-    def apply(options: Options): Script = js.native
+    val ^ : js.Any = js.native
     
     @js.native
     trait Action extends StObject {
@@ -27,265 +28,264 @@ object mod {
       def apply(flags: Flags): Unit = js.native
     }
     
-    @js.native
     trait Cli extends StObject {
       
       /**
         * Specifies an assertion library module path to require and make available under Lab.assertions as well as use for enhanced reporting.
         */
-      val assert: js.UndefOr[String] = js.native
+      val assert: js.UndefOr[String] = js.undefined
       
       /**
         * Forces the process to exist with a non zero exit code on the first test failure.
         * 
         * @default false
         */
-      val bail: js.UndefOr[Boolean] = js.native
+      val bail: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Enables color output.
         * 
         * @default terminal capabilities.
         */
-      val colors: js.UndefOr[Boolean] = js.native
+      val colors: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Sets a timeout value for before, after, beforeEach, afterEach in milliseconds.
         * 
         * @default 0
         */
-      val `context-timeout`: js.UndefOr[Double] = js.native
+      val `context-timeout`: js.UndefOr[Double] = js.undefined
       
       /**
         * Enable code coverage analysis
         * 
         * @default false
         */
-      val coverage: js.UndefOr[Boolean] = js.native
+      val coverage: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Includes all files in coveragePath in report.
         * 
         * @default false
         */
-      val `coverage-all`: js.UndefOr[Boolean] = js.native
+      val `coverage-all`: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Set code coverage excludes (an array of path strings).
         */
-      val `coverage-exclude`: js.UndefOr[js.Array[String]] = js.native
+      val `coverage-exclude`: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Prevents recursive inclusion of all files in coveragePath in report.
         * 
         * @default false
         */
-      val `coverage-flat`: js.UndefOr[Boolean] = js.native
+      val `coverage-flat`: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Enables coverage on external modules.
         */
-      val `coverage-module`: js.UndefOr[js.Array[String]] = js.native
+      val `coverage-module`: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Sets code coverage path.
         */
-      val `coverage-path`: js.UndefOr[String] = js.native
+      val `coverage-path`: js.UndefOr[String] = js.undefined
       
       /**
         * File pattern to use for locating files for coverage.
         */
-      val coveragePattern: js.UndefOr[RegExp] = js.native
+      val coveragePattern: js.UndefOr[RegExp] = js.undefined
       
       /**
         * Minimum plan threshold to apply to all tests that don't define any plan.
         */
-      val `default-plan-threshold`: js.UndefOr[Double] = js.native
+      val `default-plan-threshold`: js.UndefOr[Double] = js.undefined
       
       /**
         * Skip all tests (dry run).
         * 
         * @default: false
         */
-      val dry: js.UndefOr[Boolean] = js.native
+      val dry: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Value to set NODE_ENV before tests.
         * 
         * @default: 'test'
         */
-      val environment: js.UndefOr[String] = js.native
+      val environment: js.UndefOr[String] = js.undefined
       
       /**
         * Prevent recursive collection of tests within the provided path.
         * 
         * @default false
         */
-      val flat: js.UndefOr[Boolean] = js.native
+      val flat: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Sets a list of globals to ignore for the leak detection (comma separated).
         */
-      val globals: js.UndefOr[js.Array[String]] = js.native
+      val globals: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Only run tests matching the given pattern which is internally compiled to a RegExp.
         */
-      val grep: js.UndefOr[String] = js.native
+      val grep: js.UndefOr[String] = js.undefined
       
       /**
         * Range of test ids to execute.
         */
-      val id: js.UndefOr[js.Array[Double]] = js.native
+      val id: js.UndefOr[js.Array[Double]] = js.undefined
       
       /**
         * Sets lab to start with the node.js native debugger.
         * 
         * @default false
         */
-      val inspect: js.UndefOr[Boolean] = js.native
+      val inspect: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Sets global variable leaks detection.
         * 
         * @default true
         */
-      val leaks: js.UndefOr[Boolean] = js.native
+      val leaks: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Enables code lint.
         * 
         * @default false
         */
-      val lint: js.UndefOr[Boolean] = js.native
+      val lint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Linter errors threshold in absolute value.
         * 
         * @default 0
         */
-      val `lint-errors-threshold`: Double = js.native
+      val `lint-errors-threshold`: Double
       
       /**
         * Apply any fixes from the linter.
         * 
         * @default false
         */
-      val `lint-fix`: js.UndefOr[Boolean] = js.native
+      val `lint-fix`: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Options to pass to linting program. It must be a string that is JSON.parse(able).
         */
-      val `lint-options`: js.UndefOr[String] = js.native
+      val `lint-options`: js.UndefOr[String] = js.undefined
       
       /**
         * Linter warnings threshold in absolute value.
         * 
         * @default 0
         */
-      val `lint-warnings-threshold`: Double = js.native
+      val `lint-warnings-threshold`: Double
       
       /**
         * Linter path.
         * 
         * @default 'eslint'
         */
-      val linter: js.UndefOr[String] = js.native
+      val linter: js.UndefOr[String] = js.undefined
       
       /**
         * File path to write test results. When set to an array, the array size must match the reporter option array.
         * 
         * @default stdout
         */
-      val output: js.UndefOr[String | js.Array[String]] = js.native
+      val output: js.UndefOr[String | js.Array[String]] = js.undefined
       
       /**
         * File paths to load tests from.
         * 
         * @default ['test']
         */
-      val path: js.UndefOr[js.Array[String]] = js.native
+      val path: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * File pattern to use for locating tests (must include file extensions).
         */
-      val pattern: js.UndefOr[RegExp] = js.native
+      val pattern: js.UndefOr[RegExp] = js.undefined
       
       /**
         * Sets output verbosity (0: none, 1: normal, 2: verbose).
         *
         * @default 1
         */
-      val progress: js.UndefOr[Double] = js.native
+      val progress: js.UndefOr[Double] = js.undefined
       
       /**
         * Reporter type. One of: 'console', 'html', 'json', 'tap', 'lcov', 'clover', 'junit'.
         * 
         * @default 'console'
         */
-      val reporter: js.UndefOr[String | js.Array[String]] = js.native
+      val reporter: js.UndefOr[String | js.Array[String]] = js.undefined
       
       /**
         * Number of times to retry failing tests (marked explicitly for retry).
         * 
         * @default 5
         */
-      val retries: js.UndefOr[Double] = js.native
+      val retries: js.UndefOr[Double] = js.undefined
       
       /**
         * Random number seed when shuffle is enabled.
         */
-      val seed: js.UndefOr[String] = js.native
+      val seed: js.UndefOr[String] = js.undefined
       
       /**
         * Shuffle script execution order.
         * 
         * @default false
         */
-      val shuffle: Boolean = js.native
+      val shuffle: Boolean
       
       /**
         * Silence skipped tests.
         *
         * @default false
         */
-      val `silent-skips`: js.UndefOr[Boolean] = js.native
+      val `silent-skips`: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Enable support for sourcemaps.
         *
         * @default false
         */
-      val sourcemaps: js.UndefOr[Boolean] = js.native
+      val sourcemaps: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Code coverage threshold percentage.
         */
-      val threshold: js.UndefOr[Double] = js.native
+      val threshold: js.UndefOr[Double] = js.undefined
       
       /**
         * Timeout for each test in milliseconds.
         * 
         * @default 2000
         */
-      val timeout: js.UndefOr[Double] = js.native
+      val timeout: js.UndefOr[Double] = js.undefined
       
       /**
         * Transformers for non-js file types.
         */
-      val transform: js.UndefOr[js.Array[Transformer]] = js.native
+      val transform: js.UndefOr[js.Array[Transformer]] = js.undefined
       
       /**
         * Test types definitions.
         *
         * @default false
         */
-      val types: js.UndefOr[Boolean] = js.native
+      val types: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Location of types definitions test file.
         */
-      val `types-test`: js.UndefOr[String] = js.native
+      val `types-test`: js.UndefOr[String] = js.undefined
     }
     object Cli {
       
@@ -578,13 +578,12 @@ object mod {
       def skip(title: String, options: OmitTestOptionsplan, content: js.Function0[Unit]): Unit = js.native
     }
     
-    @js.native
     trait Flags extends StObject {
       
       /**
         * An object that is passed to `before` and `after` functions in addition to tests themselves.
         */
-      val context: Record[String, _] = js.native
+      val context: Record[String, js.Any]
       
       /**
         * Sets a requirement that a function must be called a certain number of times.
@@ -594,34 +593,34 @@ object mod {
         * 
         * @returns a wrapped function.
         */
-      def mustCall[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, count: Double): T = js.native
+      def mustCall[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, count: Double): T
       
       /**
         * Adds notes to the test log.
         * 
         * @param note - a string to be included in the console reporter at the end of the output.
         */
-      def note(note: String): Unit = js.native
+      def note(note: String): Unit
       
       /**
         * A property that can be assigned a cleanup function registered at runtime to be executed after the test completes.
         */
-      var onCleanup: js.UndefOr[Action] = js.native
+      var onCleanup: js.UndefOr[Action] = js.undefined
       
       /**
         * A property that can be assigned an override for global exception handling.
         */
-      var onUncaughtException: js.UndefOr[ErrorHandler] = js.native
+      var onUncaughtException: js.UndefOr[ErrorHandler] = js.undefined
       
       /**
         * A property that can be assigned an override function for global rejection handling.
         */
-      var onUnhandledRejection: js.UndefOr[ErrorHandler] = js.native
+      var onUnhandledRejection: js.UndefOr[ErrorHandler] = js.undefined
     }
     object Flags {
       
       @scala.inline
-      def apply(context: Record[String, _], mustCall: (js.Any, Double) => js.Any, note: String => Unit): Flags = {
+      def apply(context: Record[String, js.Any], mustCall: (js.Any, Double) => js.Any, note: String => Unit): Flags = {
         val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], mustCall = js.Any.fromFunction2(mustCall), note = js.Any.fromFunction1(note))
         __obj.asInstanceOf[Flags]
       }
@@ -630,7 +629,7 @@ object mod {
       implicit class FlagsMutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setContext(value: Record[String, _]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+        def setContext(value: Record[String, js.Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setMustCall(value: (js.Any, Double) => js.Any): Self = StObject.set(x, "mustCall", js.Any.fromFunction2(value))
@@ -658,20 +657,19 @@ object mod {
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * 
         */
-      var cli: js.UndefOr[Cli] = js.native
+      var cli: js.UndefOr[Cli] = js.undefined
       
       /**
         * Determines if execution of tests should be delayed until the CLI runs them explicitly.
         * 
         * @default true
         */
-      var schedule: js.UndefOr[Boolean] = js.native
+      var schedule: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -698,55 +696,103 @@ object mod {
       }
     }
     
-    @js.native
     trait Script extends StObject {
       
-      def after(action: Action): Unit = js.native
-      def after(options: TestOptions, action: Action): Unit = js.native
+      def after(action: Action): Unit
+      def after(options: TestOptions, action: Action): Unit
       
-      def afterEach(action: Action): Unit = js.native
-      def afterEach(options: TestOptions, action: Action): Unit = js.native
+      def afterEach(action: Action): Unit
+      def afterEach(options: TestOptions, action: Action): Unit
       @JSName("afterEach")
-      var afterEach_Original: Setup = js.native
+      var afterEach_Original: Setup
       
       @JSName("after")
-      var after_Original: Setup = js.native
+      var after_Original: Setup
       
-      def before(action: Action): Unit = js.native
-      def before(options: TestOptions, action: Action): Unit = js.native
+      def before(action: Action): Unit
+      def before(options: TestOptions, action: Action): Unit
       
-      def beforeEach(action: Action): Unit = js.native
-      def beforeEach(options: TestOptions, action: Action): Unit = js.native
+      def beforeEach(action: Action): Unit
+      def beforeEach(options: TestOptions, action: Action): Unit
       @JSName("beforeEach")
-      var beforeEach_Original: Setup = js.native
+      var beforeEach_Original: Setup
       
       @JSName("before")
-      var before_Original: Setup = js.native
+      var before_Original: Setup
       
-      def describe(title: String, content: js.Function0[Unit]): Unit = js.native
-      def describe(title: String, options: OmitTestOptionsplan, content: js.Function0[Unit]): Unit = js.native
+      def describe(title: String, content: js.Function0[Unit]): Unit
+      def describe(title: String, options: OmitTestOptionsplan, content: js.Function0[Unit]): Unit
       @JSName("describe")
-      var describe_Original: Experiment = js.native
+      var describe_Original: Experiment
       
-      def experiment(title: String, content: js.Function0[Unit]): Unit = js.native
-      def experiment(title: String, options: OmitTestOptionsplan, content: js.Function0[Unit]): Unit = js.native
+      def experiment(title: String, content: js.Function0[Unit]): Unit
+      def experiment(title: String, options: OmitTestOptionsplan, content: js.Function0[Unit]): Unit
       @JSName("experiment")
-      var experiment_Original: Experiment = js.native
+      var experiment_Original: Experiment
       
-      def it(title: String, options: TestOptions, test: Action): Unit = js.native
-      def it(title: String, test: Action): Unit = js.native
+      def it(title: String, options: TestOptions, test: Action): Unit
+      def it(title: String, test: Action): Unit
       @JSName("it")
-      var it_Original: Test = js.native
+      var it_Original: Test
       
-      def suite(title: String, content: js.Function0[Unit]): Unit = js.native
-      def suite(title: String, options: OmitTestOptionsplan, content: js.Function0[Unit]): Unit = js.native
+      def suite(title: String, content: js.Function0[Unit]): Unit
+      def suite(title: String, options: OmitTestOptionsplan, content: js.Function0[Unit]): Unit
       @JSName("suite")
-      var suite_Original: Experiment = js.native
+      var suite_Original: Experiment
       
-      def test(title: String, options: TestOptions, test: Action): Unit = js.native
-      def test(title: String, test: Action): Unit = js.native
+      def test(title: String, options: TestOptions, test: Action): Unit
+      def test(title: String, test: Action): Unit
       @JSName("test")
-      var test_Original: Test = js.native
+      var test_Original: Test
+    }
+    object Script {
+      
+      @scala.inline
+      def apply(
+        after: Setup,
+        afterEach: Setup,
+        before: Setup,
+        beforeEach: Setup,
+        describe: Experiment,
+        experiment: Experiment,
+        it: Test,
+        suite: Experiment,
+        test: Test
+      ): Script = {
+        val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], afterEach = afterEach.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], beforeEach = beforeEach.asInstanceOf[js.Any], describe = describe.asInstanceOf[js.Any], experiment = experiment.asInstanceOf[js.Any], it = it.asInstanceOf[js.Any], suite = suite.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Script]
+      }
+      
+      @scala.inline
+      implicit class ScriptMutableBuilder[Self <: Script] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setAfter(value: Setup): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setAfterEach(value: Setup): Self = StObject.set(x, "afterEach", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setBefore(value: Setup): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setBeforeEach(value: Setup): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setDescribe(value: Experiment): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setExperiment(value: Experiment): Self = StObject.set(x, "experiment", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setIt(value: Test): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setSuite(value: Experiment): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setTest(value: Test): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      }
     }
     
     @js.native
@@ -769,7 +815,6 @@ object mod {
       def skip(title: String, test: Action): Unit = js.native
     }
     
-    @js.native
     trait TestOptions extends StObject {
       
       /**
@@ -777,33 +822,33 @@ object mod {
         * 
         * @default false
         */
-      val only: js.UndefOr[Boolean] = js.native
+      val only: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The expected number of assertions the test must execute.
         */
-      val plan: js.UndefOr[Double] = js.native
+      val plan: js.UndefOr[Double] = js.undefined
       
       /**
         * Set the test to be retried a few times when it fails. Can be set to true to used the default number of retries or an exact number of maximum retries.
         *
         * @default false
         */
-      val retry: js.UndefOr[Double | Boolean] = js.native
+      val retry: js.UndefOr[Double | Boolean] = js.undefined
       
       /**
         * Sets the entire experiment content to be skipped during execution.
         * 
         * @default false
         */
-      val skip: js.UndefOr[Boolean] = js.native
+      val skip: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Overrides the default test timeout for tests and other timed operations in milliseconds.
         * 
         * @default 2000
         */
-      val timeout: js.UndefOr[Double] = js.native
+      val timeout: js.UndefOr[Double] = js.undefined
     }
     object TestOptions {
       
@@ -848,12 +893,11 @@ object mod {
       }
     }
     
-    @js.native
     trait Transformer extends StObject {
       
-      val ext: String = js.native
+      val ext: String
       
-      def transform(content: String, filename: String): String = js.native
+      def transform(content: String, filename: String): String
     }
     object Transformer {
       
@@ -881,7 +925,6 @@ object mod {
     @js.native
     val ^ : Types = js.native
     
-    @js.native
     trait Expect extends StObject {
       
       /**
@@ -889,14 +932,14 @@ object mod {
         * 
         * @param value - the value being asserted.
         */
-      def error[T](value: T): Unit = js.native
+      def error[T](value: T): Unit
       
       /**
         * Assert the type of the value expected
         * 
         * @param value - the value being asserted.
         */
-      def `type`[T](value: T): Unit = js.native
+      def `type`[T](value: T): Unit
     }
     object Expect {
       
@@ -918,10 +961,9 @@ object mod {
       }
     }
     
-    @js.native
     trait Types extends StObject {
       
-      var expect: Expect = js.native
+      var expect: Expect
     }
     object Types {
       

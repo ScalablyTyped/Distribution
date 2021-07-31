@@ -2,15 +2,13 @@ package typings.facebookJsSdk.facebook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogResponse extends StObject {
   
-  var error_code: js.UndefOr[Double] = js.native
+  var error_code: js.UndefOr[Double] = js.undefined
   
-  var error_message: js.UndefOr[String] = js.native
+  var error_message: js.UndefOr[String] = js.undefined
 }
 object DialogResponse {
   

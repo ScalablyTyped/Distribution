@@ -4,17 +4,15 @@ import typings.enhancedResolve.commonTypesMod.LoggingCallbackWrapper
 import typings.enhancedResolve.commonTypesMod.ResolveContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Encoding extends StObject {
     
-    var encoding: String = js.native
+    var encoding: String
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
   }
   object Encoding {
     
@@ -38,10 +36,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Flag extends StObject {
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
   }
   object Flag {
     
@@ -76,12 +73,11 @@ object anon {
     def apply(path: String, request: String, callback: LoggingCallbackWrapper): Unit = js.native
   }
   
-  @js.native
   trait ForceRelative extends StObject {
     
-    var forceRelative: Boolean = js.native
+    var forceRelative: Boolean
     
-    var name: String = js.native
+    var name: String
   }
   object ForceRelative {
     
@@ -102,12 +98,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Paths extends StObject {
     
-    var paths: js.Array[String] = js.native
+    var paths: js.Array[String]
     
-    var seqments: js.Array[String] = js.native
+    var seqments: js.Array[String]
   }
   object Paths {
     
@@ -134,10 +129,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Push extends StObject {
     
-    def push(item: String): Unit = js.native
+    def push(item: String): Unit
   }
   object Push {
     

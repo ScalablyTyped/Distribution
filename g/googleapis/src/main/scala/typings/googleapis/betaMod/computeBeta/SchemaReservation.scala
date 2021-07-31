@@ -2,43 +2,41 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Reservation resource
   */
-@js.native
 trait SchemaReservation extends StObject {
   
   /**
     * [OutputOnly] Full or partial url for parent commitment for reservations
     * which are tied to a commitment.
     */
-  var commitment: js.UndefOr[String] = js.native
+  var commitment: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#reservations for
     * reservations.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the resource, provided by the client when initially creating
@@ -49,17 +47,17 @@ trait SchemaReservation extends StObject {
     * must be a dash, lowercase letter, or digit, except the last character,
     * which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined fully-qualified URL for this resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Reservation for instances with specific machine shapes.
     */
-  var specificReservation: js.UndefOr[SchemaAllocationSpecificSKUReservation] = js.native
+  var specificReservation: js.UndefOr[SchemaAllocationSpecificSKUReservation] = js.undefined
   
   /**
     * Indicates whether the reservation can be consumed by VMs with &quot;any
@@ -67,13 +65,13 @@ trait SchemaReservation extends StObject {
     * the reservation by name using --reservation-affinity can consume this
     * reservation.
     */
-  var specificReservationRequired: js.UndefOr[Boolean] = js.native
+  var specificReservationRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Zone in which the reservation resides, must be provided if reservation is
     * created with commitment creation.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaReservation {
   

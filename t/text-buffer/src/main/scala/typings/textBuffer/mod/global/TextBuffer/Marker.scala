@@ -6,7 +6,6 @@ import typings.textBuffer.mod.global.TextBuffer.Events.MarkerChanged
 import typings.textBuffer.mod.global.TextBuffer.Options.CopyMarker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

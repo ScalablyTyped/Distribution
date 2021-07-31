@@ -3,23 +3,21 @@ package typings.instagramPrivateApi.mediaConfigureStoryOptionsMod
 import typings.instagramPrivateApi.instagramPrivateApiNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoryPollTallie extends StObject {
   
-  var count: `0` = js.native
+  var count: `0`
   
-  var font_size: Double = js.native
+  var font_size: Double
   
-  var text: String = js.native
+  var text: String
 }
 object StoryPollTallie {
   
   @scala.inline
-  def apply(count: `0`, font_size: Double, text: String): StoryPollTallie = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], font_size = font_size.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  def apply(font_size: Double, text: String): StoryPollTallie = {
+    val __obj = js.Dynamic.literal(count = 0, font_size = font_size.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoryPollTallie]
   }
   

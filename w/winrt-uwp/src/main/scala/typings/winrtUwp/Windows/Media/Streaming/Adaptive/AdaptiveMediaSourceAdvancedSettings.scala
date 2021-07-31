@@ -2,19 +2,17 @@ package typings.winrtUwp.Windows.Media.Streaming.Adaptive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdaptiveMediaSourceAdvancedSettings extends StObject {
   
-  var allSegmentsIndependent: js.Any = js.native
+  var allSegmentsIndependent: js.Any
   
   /* unmapped type */
-  var bitrateDowngradeTriggerRatio: js.Any = js.native
+  var bitrateDowngradeTriggerRatio: js.Any
   
   /* unmapped type */
-  var desiredBitrateHeadroomRatio: js.Any = js.native
+  var desiredBitrateHeadroomRatio: js.Any
 }
 object AdaptiveMediaSourceAdvancedSettings {
   

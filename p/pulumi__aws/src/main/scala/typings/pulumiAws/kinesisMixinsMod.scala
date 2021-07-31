@@ -15,7 +15,6 @@ import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kinesisMixinsMod {
@@ -37,10 +36,9 @@ object kinesisMixinsMod {
     val stream: Stream = js.native
   }
   
-  @js.native
   trait StreamEvent extends StObject {
     
-    var Records: js.Array[StreamEventRecord] = js.native
+    var Records: js.Array[StreamEventRecord]
   }
   object StreamEvent {
     
@@ -63,24 +61,23 @@ object kinesisMixinsMod {
   
   type StreamEventHandler = EventHandler[StreamEvent, Unit]
   
-  @js.native
   trait StreamEventRecord extends StObject {
     
-    var awsRegion: String = js.native
+    var awsRegion: String
     
-    var eventID: String = js.native
+    var eventID: String
     
-    var eventName: awsColonkinesisColonrecord = js.native
+    var eventName: awsColonkinesisColonrecord
     
-    var eventSource: awsColonkinesis = js.native
+    var eventSource: awsColonkinesis
     
-    var eventSourceARN: String = js.native
+    var eventSourceARN: String
     
-    var eventVersion: String = js.native
+    var eventVersion: String
     
-    var invokeIdentityArn: String = js.native
+    var invokeIdentityArn: String
     
-    var kinesis: KinesisSchemaVersion = js.native
+    var kinesis: KinesisSchemaVersion
   }
   object StreamEventRecord {
     
@@ -88,14 +85,12 @@ object kinesisMixinsMod {
     def apply(
       awsRegion: String,
       eventID: String,
-      eventName: awsColonkinesisColonrecord,
-      eventSource: awsColonkinesis,
       eventSourceARN: String,
       eventVersion: String,
       invokeIdentityArn: String,
       kinesis: KinesisSchemaVersion
     ): StreamEventRecord = {
-      val __obj = js.Dynamic.literal(awsRegion = awsRegion.asInstanceOf[js.Any], eventID = eventID.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], eventSource = eventSource.asInstanceOf[js.Any], eventSourceARN = eventSourceARN.asInstanceOf[js.Any], eventVersion = eventVersion.asInstanceOf[js.Any], invokeIdentityArn = invokeIdentityArn.asInstanceOf[js.Any], kinesis = kinesis.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(awsRegion = awsRegion.asInstanceOf[js.Any], eventID = eventID.asInstanceOf[js.Any], eventName = "aws:kinesis:record", eventSource = "aws:kinesis", eventSourceARN = eventSourceARN.asInstanceOf[js.Any], eventVersion = eventVersion.asInstanceOf[js.Any], invokeIdentityArn = invokeIdentityArn.asInstanceOf[js.Any], kinesis = kinesis.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamEventRecord]
     }
     
@@ -128,53 +123,52 @@ object kinesisMixinsMod {
     }
   }
   
-  @js.native
   trait StreamEventSubscriptionArgs extends StObject {
     
     /**
       * The largest number of records that Lambda will retrieve from your event source at the time of
       * invocation. Defaults to `100` for Kinesis.
       */
-    val batchSize: js.UndefOr[Double] = js.native
+    val batchSize: js.UndefOr[Double] = js.undefined
     
     /**
       * If the function returns an error, split the batch in two and retry. Defaults to `false`.
       */
-    val bisectBatchOnFunctionError: js.UndefOr[Boolean] = js.native
+    val bisectBatchOnFunctionError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An Amazon SQS queue or Amazon SNS topic destination for failed records.
       */
-    val destinationConfig: js.UndefOr[Input[EventSourceMappingDestinationConfig]] = js.native
+    val destinationConfig: js.UndefOr[Input[EventSourceMappingDestinationConfig]] = js.undefined
     
     /**
       * The maximum amount of time to gather records before invoking the function, in seconds. Records will continue to buffer
       * until either maximum_batching_window_in_seconds expires or batch_size has been met. Defaults to as soon as records
       * are available in the stream. If the batch it reads from the stream only has one record in it, Lambda only sends one record to the function.
       */
-    val maximumBatchingWindowInSeconds: js.UndefOr[Double] = js.native
+    val maximumBatchingWindowInSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum age of a record that Lambda sends to a function for processing. Minimum of `60`, maximum and default of `604800`
       */
-    val maximumRecordAgeInSeconds: js.UndefOr[Double] = js.native
+    val maximumRecordAgeInSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of times to retry when the function returns an error. Minimum of `0`, maximum and default of `10000`.
       */
-    val maximumRetryAttempts: js.UndefOr[Double] = js.native
+    val maximumRetryAttempts: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of batches to process from each shard concurrently. Minimum and default of `1`, maximum of `10`
       */
-    val parallelizationFactor: js.UndefOr[Double] = js.native
+    val parallelizationFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * The position in the stream where AWS Lambda should start reading. Must be one of either
       * `TRIM_HORIZON`, `LATEST` or `AT_TIMESTAMP`.  If `AT_TIMESTAMP` is provided,
       * [startingPositionTimestamp] must be provided as well.
       */
-    val startingPosition: TRIM_HORIZON | LATEST | AT_TIMESTAMP = js.native
+    val startingPosition: TRIM_HORIZON | LATEST | AT_TIMESTAMP
     
     /**
       * A timestamp in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8) of the
@@ -183,7 +177,7 @@ object kinesisMixinsMod {
       * If the timestamp is older than the current trim horizon, the oldest available record is
       * chosen.
       */
-    val startingPositionTimestamp: js.UndefOr[String] = js.native
+    val startingPositionTimestamp: js.UndefOr[String] = js.undefined
   }
   object StreamEventSubscriptionArgs {
     

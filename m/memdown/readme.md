@@ -11,8 +11,8 @@ An drop-in replacement for LevelDOWN that works in memory only
 | Full name          | memdown |
 | Keywords           | level, leveldb, leveldown, levelup, memory |
 | # releases         | 5 |
-| # dependents       | 171 |
-| # downloads        | 5331057 |
+| # dependents       | 185 |
+| # downloads        | 6025914 |
 | # stars            | 4 |
 
 ## Links

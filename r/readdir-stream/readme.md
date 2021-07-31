@@ -12,7 +12,7 @@ Recursively read a directory and stream stats objects.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 423 |
+| # downloads        | 621 |
 | # stars            | 2 |
 
 ## Links

@@ -5,57 +5,55 @@ import typings.auth0Js.auth0JsStrings.fragment
 import typings.auth0Js.auth0JsStrings.query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizeUrlOptions extends StObject {
   
   /**
     * identifier of the resource server who will consume the access token issued after Auth
     */
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
   /**
     * your Auth0 client identifier obtained when creating the client in the Auth0 Dashboard
     */
-  var clientID: js.UndefOr[String] = js.native
+  var clientID: js.UndefOr[String] = js.undefined
   
   /**
     * value used to mitigate replay attacks when using Implicit Grant.
     * {@link https://auth0.com/docs/api-auth/tutorials/nonce}
     */
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
   /**
     * url that the Auth0 will redirect after Auth with the Authorization Response
     */
-  var redirectUri: String = js.native
+  var redirectUri: String
   
   /**
     * how the Auth response is encoded and redirected back to the client.
     * Supported values are `query`, `fragment` and `form_post`
     * {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#ResponseModes}
     */
-  var responseMode: js.UndefOr[query | fragment | form_post] = js.native
+  var responseMode: js.UndefOr[query | fragment | form_post] = js.undefined
   
   /**
     * type of the response used by OAuth 2.0 flow. It can be any space separated
     * list of the values `code`, `token`, `id_token`.
     * {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0}
     */
-  var responseType: String = js.native
+  var responseType: String
   
   /**
     * scopes to be requested during Auth. e.g. `openid email`
     */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
   /**
     * value used to mitigate XSRF attacks.
     * {@link https://auth0.com/docs/protocols/oauth2/oauth-state}
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object AuthorizeUrlOptions {
   

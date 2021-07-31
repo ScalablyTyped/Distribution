@@ -12,10 +12,13 @@ import typings.unimodulesReactNativeAdapter.eventEmitterMod.NativeModule
 import typings.unimodulesReactNativeAdapter.platformMod.PlatformSelect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@unimodules/core", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@unimodules/core", "CodedError")
   @js.native
@@ -101,14 +104,11 @@ object mod {
     def this(moduleName: String, propertyName: String) = this()
   }
   
-  @JSImport("@unimodules/core", "deprecate")
-  @js.native
-  def deprecate(library: String, deprecatedAPI: String): Unit = js.native
-  @JSImport("@unimodules/core", "deprecate")
-  @js.native
-  def deprecate(library: String, deprecatedAPI: String, options: CurrentVersion): Unit = js.native
+  @scala.inline
+  def deprecate(library: String, deprecatedAPI: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecate")(library.asInstanceOf[js.Any], deprecatedAPI.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def deprecate(library: String, deprecatedAPI: String, options: CurrentVersion): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecate")(library.asInstanceOf[js.Any], deprecatedAPI.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@unimodules/core", "requireNativeViewManager")
-  @js.native
-  def requireNativeViewManager[P](viewName: String): ComponentType[P] = js.native
+  @scala.inline
+  def requireNativeViewManager[P](viewName: String): ComponentType[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("requireNativeViewManager")(viewName.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
 }

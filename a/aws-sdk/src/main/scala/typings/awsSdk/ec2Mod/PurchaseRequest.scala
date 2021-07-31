@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchaseRequest extends StObject {
   
   /**
     * The number of instances.
     */
-  var InstanceCount: Integer = js.native
+  var InstanceCount: Integer
   
   /**
     * The purchase token.
     */
-  var PurchaseToken: String = js.native
+  var PurchaseToken: String
 }
 object PurchaseRequest {
   

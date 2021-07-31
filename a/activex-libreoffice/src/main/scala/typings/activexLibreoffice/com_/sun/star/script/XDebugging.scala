@@ -5,27 +5,27 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to set breakpoints in an interpreter.
   * @deprecated Deprecated
   */
-@js.native
-trait XDebugging extends XInterface {
+trait XDebugging
+  extends StObject
+     with XInterface {
   
   /** Returns the engine's stack trace of the current execute position. Line break is the delimiter. */
-  val StackTrace: SafeArray[String] = js.native
+  val StackTrace: SafeArray[String]
   
   /** clears all breakpoints in the module set by "setBreakPoint". */
-  def clearAllBreakPoints(aModuleName: String): Unit = js.native
+  def clearAllBreakPoints(aModuleName: String): Unit
   
   /** continues the program execution. */
-  def doContinue(): Unit = js.native
+  def doContinue(): Unit
   
   /** returns the value of the variable at the given stack position. */
-  def dumpVariable(aVariableName: String, nCallStackPos: Double): String = js.native
+  def dumpVariable(aVariableName: String, nCallStackPos: Double): String
   
   /**
     * Evaluates an expression.
@@ -33,19 +33,19 @@ trait XDebugging extends XInterface {
     * @param nCallStackPos Position in the call stack for which the expression should be evaluated. 0 is the top/actual position in the call in the call stack
     * @returns the value of the expression as string.
     */
-  def eval(aSourceCode: String, nCallStackPos: Double): String = js.native
+  def eval(aSourceCode: String, nCallStackPos: Double): String
   
   /**
     * returns more detailed information about a specified stack frame.
     * @param nCallStackPos specifies the position in the call stack for the variables that should be delivered.
     */
-  def getContextInformation(nCallStackPos: Double): ContextInformation = js.native
+  def getContextInformation(nCallStackPos: Double): ContextInformation
   
   /** Returns the engine's stack trace of the current execute position. Line break is the delimiter. */
-  def getStackTrace(): SafeArray[String] = js.native
+  def getStackTrace(): SafeArray[String]
   
   /** returns whether the given variable exists within the specified stack frame. */
-  def isVariable(aVariableName: String, nCallStackPos: Double): Boolean = js.native
+  def isVariable(aVariableName: String, nCallStackPos: Double): Boolean
   
   /**
     * returns the source code line where the breakpoint was set. <p>The value can differ from the parameter
@@ -56,34 +56,34 @@ trait XDebugging extends XInterface {
     *
     *     this position.
     */
-  def setBreakPoint(aModuleName: String, nSourceCodeLine: Double, bOn: Boolean): Double = js.native
+  def setBreakPoint(aModuleName: String, nSourceCodeLine: Double, bOn: Boolean): Double
   
   /** sets the value of the specified variable within the specified stack frame. */
-  def setVariable(aVariableName: String, aValue: String, nCallStackPos: Double): Unit = js.native
+  def setVariable(aVariableName: String, aValue: String, nCallStackPos: Double): Unit
   
   /**
     * executes the next and only the next statement.
     *
     * If the next statement is a function call, only the function entered.
     */
-  def stepIn(): Unit = js.native
+  def stepIn(): Unit
   
   /** executes the program until the next return from this stack frame. */
-  def stepOut(): Unit = js.native
+  def stepOut(): Unit
   
   /**
     * executes the next and only the next statement.
     *
     * If the next statement is a function call, the function is executed completely.
     */
-  def stepOver(): Unit = js.native
+  def stepOver(): Unit
   
   /**
     * stops the execution of the interpreter.
     *
     * To continue with the execution, call {@link XDebugging.doContinue()} .
     */
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object XDebugging {
   

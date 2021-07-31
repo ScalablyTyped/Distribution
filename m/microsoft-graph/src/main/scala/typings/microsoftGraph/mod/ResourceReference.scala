@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceReference extends StObject {
   
   // The item's unique identifier.
-  var id: js.UndefOr[NullableOption[String]] = js.native
+  var id: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A string value that can be used to classify the item, such as 'microsoft.graph.driveItem'
-  var `type`: js.UndefOr[NullableOption[String]] = js.native
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A URL leading to the referenced item.
-  var webUrl: js.UndefOr[NullableOption[String]] = js.native
+  var webUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ResourceReference {
   

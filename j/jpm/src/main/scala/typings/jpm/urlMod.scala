@@ -3,7 +3,6 @@ package typings.jpm
 import typings.jpm.FFAddonSDK.SDKURL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,16 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object urlMod {
   
+  @JSImport("sdk/url", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait DataURL extends StObject {
     
-    var base64: String = js.native
+    var base64: String
     
-    var data: String = js.native
+    var data: String
     
-    var mimeType: String = js.native
+    var mimeType: String
     
-    var parameters: js.Object = js.native
+    var parameters: js.Object
   }
   object DataURL {
     
@@ -45,26 +47,20 @@ object urlMod {
     }
   }
   
-  @JSImport("sdk/url", "URL")
-  @js.native
-  def URL(source: String): SDKURL = js.native
-  @JSImport("sdk/url", "URL")
-  @js.native
-  def URL(source: String, base: String): SDKURL = js.native
+  @scala.inline
+  def URL(source: String): SDKURL = ^.asInstanceOf[js.Dynamic].applyDynamic("URL")(source.asInstanceOf[js.Any]).asInstanceOf[SDKURL]
+  @scala.inline
+  def URL(source: String, base: String): SDKURL = (^.asInstanceOf[js.Dynamic].applyDynamic("URL")(source.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[SDKURL]
   
-  @JSImport("sdk/url", "getTLD")
-  @js.native
-  def getTLD(url: String): String = js.native
+  @scala.inline
+  def getTLD(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTLD")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("sdk/url", "isValidURI")
-  @js.native
-  def isValidURI(uri: String): Boolean = js.native
+  @scala.inline
+  def isValidURI(uri: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidURI")(uri.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("sdk/url", "toFileName")
-  @js.native
-  def toFileName_(url: String): String = js.native
+  @scala.inline
+  def toFileName_(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toFileName")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("sdk/url", "toFilename")
-  @js.native
-  def toFilename(url: SDKURL): String = js.native
+  @scala.inline
+  def toFilename(url: SDKURL): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toFilename")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -3,43 +3,41 @@ package typings.clearbladejsClient.CbClient
 import typings.pahoMqtt.mod.global.Paho.MQTT.Client
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Messaging extends StObject {
   
-  var URI: String = js.native
+  var URI: String
   
-  var callTimeout: Double = js.native
+  var callTimeout: Double
   
-  var client: Client = js.native
+  var client: Client
   
-  def currentTopics(callback: CbCallback): Unit = js.native
+  def currentTopics(callback: CbCallback): Unit
   
-  def disconnect(): Unit = js.native
+  def disconnect(): Unit
   
-  var endpoint: String = js.native
+  var endpoint: String
   
-  def getAndDeleteMessageHistory(topic: String, count: Double, last: Double, start: Double, stop: Double, callback: CbCallback): Unit = js.native
+  def getAndDeleteMessageHistory(topic: String, count: Double, last: Double, start: Double, stop: Double, callback: CbCallback): Unit
   
-  def getMessageHistory(topic: String, last: Double, count: Double, callback: CbCallback): Unit = js.native
+  def getMessageHistory(topic: String, last: Double, count: Double, callback: CbCallback): Unit
   
-  def getMessageHistoryWithTimeFrame(topic: String, count: Double, last: Double, start: Double, stop: Double, callback: CbCallback): Unit = js.native
+  def getMessageHistoryWithTimeFrame(topic: String, count: Double, last: Double, start: Double, stop: Double, callback: CbCallback): Unit
   
-  def publish(topic: String, payload: js.Object): Unit = js.native
+  def publish(topic: String, payload: js.Object): Unit
   
-  def publishREST(topic: String, payload: js.Object, callback: CbCallback): Unit = js.native
+  def publishREST(topic: String, payload: js.Object, callback: CbCallback): Unit
   
-  def subscribe(topic: String, options: MessagingSubscribeOptions, messageCallback: MessageCallback): Unit = js.native
+  def subscribe(topic: String, options: MessagingSubscribeOptions, messageCallback: MessageCallback): Unit
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var systemSecret: String = js.native
+  var systemSecret: String
   
-  def unsubscribe(topic: String, options: MessagingSubscribeOptions): Unit = js.native
+  def unsubscribe(topic: String, options: MessagingSubscribeOptions): Unit
   
-  var user: APIUser = js.native
+  var user: APIUser
 }
 object Messaging {
   

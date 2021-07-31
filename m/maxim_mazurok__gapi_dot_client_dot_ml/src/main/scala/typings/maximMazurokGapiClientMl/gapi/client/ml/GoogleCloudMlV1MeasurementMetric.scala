@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1MeasurementMetric extends StObject {
   
   /** Required. Metric name. */
-  var metric: js.UndefOr[String] = js.native
+  var metric: js.UndefOr[String] = js.undefined
   
   /** Required. The value for this metric. */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudMlV1MeasurementMetric {
   

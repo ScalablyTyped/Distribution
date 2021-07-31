@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGlobalEvents.EndCallback event.
   */
-@js.native
-trait ASPxClientGlobalEndCallbackEventArgs extends ASPxClientEndCallbackEventArgs {
+trait ASPxClientGlobalEndCallbackEventArgs
+  extends StObject
+     with ASPxClientEndCallbackEventArgs {
   
   /**
     * Gets an object that initiated a callback.
     */
-  var control: ASPxClientControl = js.native
+  var control: ASPxClientControl
 }
 object ASPxClientGlobalEndCallbackEventArgs {
   

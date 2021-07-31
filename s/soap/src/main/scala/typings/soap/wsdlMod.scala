@@ -7,10 +7,13 @@ import typings.soap.typesMod.IOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wsdlMod {
+  
+  @JSImport("soap/lib/wsdl", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("soap/lib/wsdl", "WSDL")
   @js.native
@@ -77,9 +80,9 @@ object wsdlMod {
       * @param {String} type
       */
     def objectToDocumentXML(name: String, params: js.Any, nsPrefix: String): js.Any = js.native
-    def objectToDocumentXML(name: String, params: js.Any, nsPrefix: String, nsURI: js.UndefOr[scala.Nothing], `type`: String): js.Any = js.native
     def objectToDocumentXML(name: String, params: js.Any, nsPrefix: String, nsURI: String): js.Any = js.native
     def objectToDocumentXML(name: String, params: js.Any, nsPrefix: String, nsURI: String, `type`: String): js.Any = js.native
+    def objectToDocumentXML(name: String, params: js.Any, nsPrefix: String, nsURI: Unit, `type`: String): js.Any = js.native
     
     /**
       * Create RPC style xml string from the parameters
@@ -106,102 +109,7 @@ object wsdlMod {
       * @param {NamespaceContext} nsContext Namespace context
       */
     def objectToXML(obj: js.Any, name: String, nsPrefix: js.Any, nsURI: String): js.Any = js.native
-    def objectToXML(
-      obj: js.Any,
-      name: String,
-      nsPrefix: js.Any,
-      nsURI: String,
-      isFirst: js.UndefOr[scala.Nothing],
-      xmlnsAttr: js.UndefOr[scala.Nothing],
-      schemaObject: js.UndefOr[scala.Nothing],
-      nsContext: NamespaceContext
-    ): js.Any = js.native
-    def objectToXML(
-      obj: js.Any,
-      name: String,
-      nsPrefix: js.Any,
-      nsURI: String,
-      isFirst: js.UndefOr[scala.Nothing],
-      xmlnsAttr: js.UndefOr[scala.Nothing],
-      schemaObject: js.Any
-    ): js.Any = js.native
-    def objectToXML(
-      obj: js.Any,
-      name: String,
-      nsPrefix: js.Any,
-      nsURI: String,
-      isFirst: js.UndefOr[scala.Nothing],
-      xmlnsAttr: js.UndefOr[scala.Nothing],
-      schemaObject: js.Any,
-      nsContext: NamespaceContext
-    ): js.Any = js.native
-    def objectToXML(
-      obj: js.Any,
-      name: String,
-      nsPrefix: js.Any,
-      nsURI: String,
-      isFirst: js.UndefOr[scala.Nothing],
-      xmlnsAttr: js.Any
-    ): js.Any = js.native
-    def objectToXML(
-      obj: js.Any,
-      name: String,
-      nsPrefix: js.Any,
-      nsURI: String,
-      isFirst: js.UndefOr[scala.Nothing],
-      xmlnsAttr: js.Any,
-      schemaObject: js.UndefOr[scala.Nothing],
-      nsContext: NamespaceContext
-    ): js.Any = js.native
-    def objectToXML(
-      obj: js.Any,
-      name: String,
-      nsPrefix: js.Any,
-      nsURI: String,
-      isFirst: js.UndefOr[scala.Nothing],
-      xmlnsAttr: js.Any,
-      schemaObject: js.Any
-    ): js.Any = js.native
-    def objectToXML(
-      obj: js.Any,
-      name: String,
-      nsPrefix: js.Any,
-      nsURI: String,
-      isFirst: js.UndefOr[scala.Nothing],
-      xmlnsAttr: js.Any,
-      schemaObject: js.Any,
-      nsContext: NamespaceContext
-    ): js.Any = js.native
     def objectToXML(obj: js.Any, name: String, nsPrefix: js.Any, nsURI: String, isFirst: Boolean): js.Any = js.native
-    def objectToXML(
-      obj: js.Any,
-      name: String,
-      nsPrefix: js.Any,
-      nsURI: String,
-      isFirst: Boolean,
-      xmlnsAttr: js.UndefOr[scala.Nothing],
-      schemaObject: js.UndefOr[scala.Nothing],
-      nsContext: NamespaceContext
-    ): js.Any = js.native
-    def objectToXML(
-      obj: js.Any,
-      name: String,
-      nsPrefix: js.Any,
-      nsURI: String,
-      isFirst: Boolean,
-      xmlnsAttr: js.UndefOr[scala.Nothing],
-      schemaObject: js.Any
-    ): js.Any = js.native
-    def objectToXML(
-      obj: js.Any,
-      name: String,
-      nsPrefix: js.Any,
-      nsURI: String,
-      isFirst: Boolean,
-      xmlnsAttr: js.UndefOr[scala.Nothing],
-      schemaObject: js.Any,
-      nsContext: NamespaceContext
-    ): js.Any = js.native
     def objectToXML(obj: js.Any, name: String, nsPrefix: js.Any, nsURI: String, isFirst: Boolean, xmlnsAttr: js.Any): js.Any = js.native
     def objectToXML(
       obj: js.Any,
@@ -210,16 +118,6 @@ object wsdlMod {
       nsURI: String,
       isFirst: Boolean,
       xmlnsAttr: js.Any,
-      schemaObject: js.UndefOr[scala.Nothing],
-      nsContext: NamespaceContext
-    ): js.Any = js.native
-    def objectToXML(
-      obj: js.Any,
-      name: String,
-      nsPrefix: js.Any,
-      nsURI: String,
-      isFirst: Boolean,
-      xmlnsAttr: js.Any,
       schemaObject: js.Any
     ): js.Any = js.native
     def objectToXML(
@@ -230,6 +128,104 @@ object wsdlMod {
       isFirst: Boolean,
       xmlnsAttr: js.Any,
       schemaObject: js.Any,
+      nsContext: NamespaceContext
+    ): js.Any = js.native
+    def objectToXML(
+      obj: js.Any,
+      name: String,
+      nsPrefix: js.Any,
+      nsURI: String,
+      isFirst: Boolean,
+      xmlnsAttr: js.Any,
+      schemaObject: Unit,
+      nsContext: NamespaceContext
+    ): js.Any = js.native
+    def objectToXML(
+      obj: js.Any,
+      name: String,
+      nsPrefix: js.Any,
+      nsURI: String,
+      isFirst: Boolean,
+      xmlnsAttr: Unit,
+      schemaObject: js.Any
+    ): js.Any = js.native
+    def objectToXML(
+      obj: js.Any,
+      name: String,
+      nsPrefix: js.Any,
+      nsURI: String,
+      isFirst: Boolean,
+      xmlnsAttr: Unit,
+      schemaObject: js.Any,
+      nsContext: NamespaceContext
+    ): js.Any = js.native
+    def objectToXML(
+      obj: js.Any,
+      name: String,
+      nsPrefix: js.Any,
+      nsURI: String,
+      isFirst: Boolean,
+      xmlnsAttr: Unit,
+      schemaObject: Unit,
+      nsContext: NamespaceContext
+    ): js.Any = js.native
+    def objectToXML(obj: js.Any, name: String, nsPrefix: js.Any, nsURI: String, isFirst: Unit, xmlnsAttr: js.Any): js.Any = js.native
+    def objectToXML(
+      obj: js.Any,
+      name: String,
+      nsPrefix: js.Any,
+      nsURI: String,
+      isFirst: Unit,
+      xmlnsAttr: js.Any,
+      schemaObject: js.Any
+    ): js.Any = js.native
+    def objectToXML(
+      obj: js.Any,
+      name: String,
+      nsPrefix: js.Any,
+      nsURI: String,
+      isFirst: Unit,
+      xmlnsAttr: js.Any,
+      schemaObject: js.Any,
+      nsContext: NamespaceContext
+    ): js.Any = js.native
+    def objectToXML(
+      obj: js.Any,
+      name: String,
+      nsPrefix: js.Any,
+      nsURI: String,
+      isFirst: Unit,
+      xmlnsAttr: js.Any,
+      schemaObject: Unit,
+      nsContext: NamespaceContext
+    ): js.Any = js.native
+    def objectToXML(
+      obj: js.Any,
+      name: String,
+      nsPrefix: js.Any,
+      nsURI: String,
+      isFirst: Unit,
+      xmlnsAttr: Unit,
+      schemaObject: js.Any
+    ): js.Any = js.native
+    def objectToXML(
+      obj: js.Any,
+      name: String,
+      nsPrefix: js.Any,
+      nsURI: String,
+      isFirst: Unit,
+      xmlnsAttr: Unit,
+      schemaObject: js.Any,
+      nsContext: NamespaceContext
+    ): js.Any = js.native
+    def objectToXML(
+      obj: js.Any,
+      name: String,
+      nsPrefix: js.Any,
+      nsURI: String,
+      isFirst: Unit,
+      xmlnsAttr: Unit,
+      schemaObject: Unit,
       nsContext: NamespaceContext
     ): js.Any = js.native
     
@@ -261,18 +257,17 @@ object wsdlMod {
     var xmlnsInHeader: String = js.native
   }
   
-  @JSImport("soap/lib/wsdl", "open_wsdl")
-  @js.native
-  def openWsdl(uri: js.Any, callback: WSDLCallback): js.Any = js.native
-  @JSImport("soap/lib/wsdl", "open_wsdl")
-  @js.native
-  def openWsdl(uri: js.Any, options: IOptions, callback: WSDLCallback): js.Any = js.native
+  @scala.inline
+  def openWsdl(uri: js.Any, callback: WSDLCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open_wsdl")(uri.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def openWsdl(uri: js.Any, options: IOptions, callback: WSDLCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open_wsdl")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
-  trait IInitializedOptions extends IOptions {
+  trait IInitializedOptions
+    extends StObject
+       with IOptions {
     
     @JSName("ignoredNamespaces")
-    var ignoredNamespaces_IInitializedOptions: js.UndefOr[js.Array[String]] = js.native
+    var ignoredNamespaces_IInitializedOptions: js.UndefOr[js.Array[String]] = js.undefined
   }
   object IInitializedOptions {
     

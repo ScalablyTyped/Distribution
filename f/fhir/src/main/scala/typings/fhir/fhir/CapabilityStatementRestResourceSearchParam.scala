@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Search parameters supported by implementation
   */
-@js.native
-trait CapabilityStatementRestResourceSearchParam extends BackboneElement {
+trait CapabilityStatementRestResourceSearchParam
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'definition'.
     */
-  var _definition: js.UndefOr[Element] = js.native
+  var _definition: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'documentation'.
     */
-  var _documentation: js.UndefOr[Element] = js.native
+  var _documentation: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Source of definition for parameter
     */
-  var definition: js.UndefOr[uri] = js.native
+  var definition: js.UndefOr[uri] = js.undefined
   
   /**
     * Server-specific usage
     */
-  var documentation: js.UndefOr[String] = js.native
+  var documentation: js.UndefOr[String] = js.undefined
   
   /**
     * Name of search parameter
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * number | date | string | token | reference | composite | quantity | uri
     */
-  var `type`: code = js.native
+  var `type`: code
 }
 object CapabilityStatementRestResourceSearchParam {
   

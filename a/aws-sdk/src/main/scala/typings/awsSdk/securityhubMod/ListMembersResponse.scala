@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMembersResponse extends StObject {
   
   /**
     * Member details returned by the operation.
     */
-  var Members: js.UndefOr[MemberList] = js.native
+  var Members: js.UndefOr[MemberList] = js.undefined
   
   /**
     * The pagination token to use to request the next page of results.
     */
-  var NextToken: js.UndefOr[NonEmptyString] = js.native
+  var NextToken: js.UndefOr[NonEmptyString] = js.undefined
 }
 object ListMembersResponse {
   

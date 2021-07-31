@@ -11,10 +11,8 @@ import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1007`
 import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1008`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RewardedVideoAdOnErrorCallbackResult extends StObject {
   
   /** 错误码
@@ -31,10 +29,10 @@ trait RewardedVideoAdOnErrorCallbackResult extends StObject {
     * - 1008: 广告单元已关闭;
     *
     * 最低基础库： `2.2.2` */
-  var errCode: `1000` | `1001` | `1002` | `1003` | `1004` | `1005` | `1006` | `1007` | `1008` = js.native
+  var errCode: `1000` | `1001` | `1002` | `1003` | `1004` | `1005` | `1006` | `1007` | `1008`
   
   /** 错误信息 */
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object RewardedVideoAdOnErrorCallbackResult {
   

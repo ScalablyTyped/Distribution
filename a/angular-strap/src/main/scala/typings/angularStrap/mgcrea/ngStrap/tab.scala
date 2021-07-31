@@ -2,7 +2,6 @@ package typings.angularStrap.mgcrea.ngStrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -11,16 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ///////////////////////////////////////////////////////////////////////////
 object tab {
   
-  @js.native
   trait ITabOptions extends StObject {
     
-    var activeClass: js.UndefOr[String] = js.native
+    var activeClass: js.UndefOr[String] = js.undefined
     
-    var animation: js.UndefOr[String] = js.native
+    var animation: js.UndefOr[String] = js.undefined
     
-    var navClass: js.UndefOr[String] = js.native
+    var navClass: js.UndefOr[String] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
   }
   object ITabOptions {
     
@@ -59,10 +57,9 @@ object tab {
     }
   }
   
-  @js.native
   trait ITabProvider extends StObject {
     
-    var defaults: ITabOptions = js.native
+    var defaults: ITabOptions
   }
   object ITabProvider {
     
@@ -80,12 +77,11 @@ object tab {
     }
   }
   
-  @js.native
   trait ITabService extends StObject {
     
-    var controller: js.Any = js.native
+    var controller: js.Any
     
-    var defaults: ITabOptions = js.native
+    var defaults: ITabOptions
   }
   object ITabService {
     

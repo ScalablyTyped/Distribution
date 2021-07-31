@@ -5,17 +5,15 @@ import typings.framesync.anon.keyinStepIdprocessProcess
 import typings.framesync.anon.keyinStepIdprocessProcessPostRender
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait FrameData extends StObject {
     
-    var delta: Double = js.native
+    var delta: Double
     
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object FrameData {
     
@@ -46,9 +44,9 @@ object typesMod {
     def process(frame: FrameData): Unit = js.native
     
     def schedule(process: Process): Unit = js.native
-    def schedule(process: Process, keepAlive: js.UndefOr[scala.Nothing], immediate: Boolean): Unit = js.native
     def schedule(process: Process, keepAlive: Boolean): Unit = js.native
     def schedule(process: Process, keepAlive: Boolean, immediate: Boolean): Unit = js.native
+    def schedule(process: Process, keepAlive: Unit, immediate: Boolean): Unit = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -77,14 +75,13 @@ object typesMod {
     def update: typings.framesync.framesyncStrings.update = "update".asInstanceOf[typings.framesync.framesyncStrings.update]
   }
   
-  @js.native
   trait SyncApi extends StObject {
     
-    var cancelSync: keyinStepIdprocessProcessPostRender = js.native
+    var cancelSync: keyinStepIdprocessProcessPostRender
     
-    var steps: keyinStepIdStep = js.native
+    var steps: keyinStepIdStep
     
-    var sync: keyinStepIdprocessProcess = js.native
+    var sync: keyinStepIdprocessProcess
   }
   object SyncApi {
     

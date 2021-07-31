@@ -2,19 +2,19 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Schema Options provided for applying a schema to a model
   */
-@js.native
-trait SchemaOptions extends LoggingOptions {
+trait SchemaOptions
+  extends StObject
+     with LoggingOptions {
   
   /**
     * The character(s) that separates the schema name from the table name
     */
-  var schemaDelimeter: js.UndefOr[String] = js.native
+  var schemaDelimeter: js.UndefOr[String] = js.undefined
 }
 object SchemaOptions {
   

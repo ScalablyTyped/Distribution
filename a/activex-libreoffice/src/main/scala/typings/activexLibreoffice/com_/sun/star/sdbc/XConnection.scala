@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbc.XStatement
   * @see com.sun.star.sdbc.XDatabaseMetaData
   */
-@js.native
-trait XConnection extends XCloseable {
+trait XConnection
+  extends StObject
+     with XCloseable {
   
   /**
     * gets the current auto-commit state.
@@ -26,14 +26,14 @@ trait XConnection extends XCloseable {
     * @see setAutoCommit
     * @throws SQLException if a database access error occurs.
     */
-  var AutoCommit: Boolean = js.native
+  var AutoCommit: Boolean
   
   /**
     * returns the {@link Connection} 's current catalog name.
     * @returns the current catalog name or an empty string.
     * @throws SQLException if a database access error occurs.
     */
-  var Catalog: String = js.native
+  var Catalog: String
   
   /**
     * gets the metadata regarding this connection's database.
@@ -43,14 +43,14 @@ trait XConnection extends XCloseable {
     * @returns a DatabaseMetaData object for this {@link Connection} .
     * @throws SQLException if a database access error occurs.
     */
-  val MetaData: XDatabaseMetaData = js.native
+  val MetaData: XDatabaseMetaData
   
   /**
     * gets this {@link Connection} 's current transaction isolation level.
     * @returns the current {@link TransactionIsolation} mode value.
     * @throws SQLException if a database access error occurs.
     */
-  var TransactionIsolation: Double = js.native
+  var TransactionIsolation: Double
   
   /**
     * gets the type map object associated with this connection. Only drivers which implement the custom type mapping facility will return an object
@@ -60,7 +60,7 @@ trait XConnection extends XCloseable {
     * @returns the XNameAccess object associated with this {@link Connection} object.
     * @throws SQLException if a database access error occurs.
     */
-  var TypeMap: XNameAccess = js.native
+  var TypeMap: XNameAccess
   
   /**
     * makes all changes made since the previous commit/rollback permanent and releases any database locks currently held by the {@link Connection} . This
@@ -68,7 +68,7 @@ trait XConnection extends XCloseable {
     * @see setAutoCommit
     * @throws SQLException if a database access error occurs.
     */
-  def commit(): Unit = js.native
+  def commit(): Unit
   
   /**
     * creates a new {@link com.sun.star.sdbc.Statement} object for sending SQL statements to the database.
@@ -82,7 +82,7 @@ trait XConnection extends XCloseable {
     * @returns a new {@link Statement} object
     * @throws SQLException if a database access error occurs.
     */
-  def createStatement(): XStatement = js.native
+  def createStatement(): XStatement
   
   /**
     * gets the current auto-commit state.
@@ -90,14 +90,14 @@ trait XConnection extends XCloseable {
     * @see setAutoCommit
     * @throws SQLException if a database access error occurs.
     */
-  def getAutoCommit(): Boolean = js.native
+  def getAutoCommit(): Boolean
   
   /**
     * returns the {@link Connection} 's current catalog name.
     * @returns the current catalog name or an empty string.
     * @throws SQLException if a database access error occurs.
     */
-  def getCatalog(): String = js.native
+  def getCatalog(): String
   
   /**
     * gets the metadata regarding this connection's database.
@@ -107,14 +107,14 @@ trait XConnection extends XCloseable {
     * @returns a DatabaseMetaData object for this {@link Connection} .
     * @throws SQLException if a database access error occurs.
     */
-  def getMetaData(): XDatabaseMetaData = js.native
+  def getMetaData(): XDatabaseMetaData
   
   /**
     * gets this {@link Connection} 's current transaction isolation level.
     * @returns the current {@link TransactionIsolation} mode value.
     * @throws SQLException if a database access error occurs.
     */
-  def getTransactionIsolation(): Double = js.native
+  def getTransactionIsolation(): Double
   
   /**
     * gets the type map object associated with this connection. Only drivers which implement the custom type mapping facility will return an object
@@ -124,7 +124,7 @@ trait XConnection extends XCloseable {
     * @returns the XNameAccess object associated with this {@link Connection} object.
     * @throws SQLException if a database access error occurs.
     */
-  def getTypeMap(): XNameAccess = js.native
+  def getTypeMap(): XNameAccess
   
   /**
     * tests to see if a connection is closed.
@@ -134,14 +134,14 @@ trait XConnection extends XCloseable {
     * @returns `TRUE` if the connection is closed; `FALSE` if it's still open.
     * @throws SQLException if a database access error occurs.
     */
-  def isClosed(): Boolean = js.native
+  def isClosed(): Boolean
   
   /**
     * tests to see if the connection is in read-only mode.
     * @returns `TRUE` if connection is read-only and `FALSE` otherwise.
     * @throws SQLException if a database access error occurs.
     */
-  def isReadOnly(): Boolean = js.native
+  def isReadOnly(): Boolean
   
   /**
     * converts the given SQL statement into the system's native SQL grammar. A driver may convert the JDBC SQL grammar into its system's native SQL grammar
@@ -150,7 +150,7 @@ trait XConnection extends XCloseable {
     * @returns the native form of this statement
     * @throws SQLException if a database access error occurs.
     */
-  def nativeSQL(sql: String): String = js.native
+  def nativeSQL(sql: String): String
   
   /**
     * creates a {@link com.sun.star.sdbc.CallableStatement} object for calling database stored procedures.
@@ -165,7 +165,7 @@ trait XConnection extends XCloseable {
     * @returns a new {@link PreparedStatement} object containing the pre-compiled statement
     * @throws SQLException if a database access error occurs.
     */
-  def prepareCall(sql: String): XPreparedStatement = js.native
+  def prepareCall(sql: String): XPreparedStatement
   
   /**
     * creates a {@link com.sun.star.sdbc.PreparedStatement} object for sending parameterized SQL statements to the database.
@@ -185,7 +185,7 @@ trait XConnection extends XCloseable {
     * @returns a new {@link PreparedStatement} object containing the pre-compiled statement
     * @throws SQLException if a database access error occurs.
     */
-  def prepareStatement(sql: String): XPreparedStatement = js.native
+  def prepareStatement(sql: String): XPreparedStatement
   
   /**
     * drops all changes made since the previous commit/rollback and releases any database locks currently held by this {@link Connection} . This method
@@ -193,7 +193,7 @@ trait XConnection extends XCloseable {
     * @see setAutoCommit
     * @throws SQLException if a database access error occurs.
     */
-  def rollback(): Unit = js.native
+  def rollback(): Unit
   
   /**
     * sets this connection's auto-commit mode.
@@ -209,7 +209,7 @@ trait XConnection extends XCloseable {
     * @param autoCommit `TRUE` enables auto-commit; `FALSE` disables auto-commit.
     * @throws SQLException if a database access error occurs.
     */
-  def setAutoCommit(autoCommit: Boolean): Unit = js.native
+  def setAutoCommit(autoCommit: Boolean): Unit
   
   /**
     * sets a catalog name in order to select a subspace of this {@link Connection} 's database in which to work. If the driver does not support catalogs, it
@@ -217,7 +217,7 @@ trait XConnection extends XCloseable {
     * @param catalog the name of the catalog.
     * @throws SQLException if a database access error occurs.
     */
-  def setCatalog(catalog: String): Unit = js.native
+  def setCatalog(catalog: String): Unit
   
   /**
     * puts this connection in read-only mode as a hint to enable database optimizations.
@@ -227,7 +227,7 @@ trait XConnection extends XCloseable {
     * @param readOnly `TRUE` enables read-only mode; `FALSE` disables read-only mode.
     * @throws SQLException if a database access error occurs.
     */
-  def setReadOnly(readOnly: Boolean): Unit = js.native
+  def setReadOnly(readOnly: Boolean): Unit
   
   /**
     * attempts to change the transaction isolation level to the one given.
@@ -239,7 +239,7 @@ trait XConnection extends XCloseable {
     * @see com.sun.star.sdbc.XDatabaseMetaData.supportsTransactionIsolationLevel()
     * @throws SQLException if a database access error occurs.
     */
-  def setTransactionIsolation(level: Double): Unit = js.native
+  def setTransactionIsolation(level: Double): Unit
   
   /**
     * installs the given type map as the type map for this connection. The type map will be used for the custom mapping of SQL structured types and distinct
@@ -249,7 +249,7 @@ trait XConnection extends XCloseable {
     * @param typeMap set the XNameAccess object associated with this {@link Connection} object.
     * @throws SQLException if a database access error occurs.
     */
-  def setTypeMap(typeMap: XNameAccess): Unit = js.native
+  def setTypeMap(typeMap: XNameAccess): Unit
 }
 object XConnection {
   

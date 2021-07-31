@@ -2,36 +2,34 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionDataCollection extends StObject {
   
   /**
     * The name of the collection
     */
-  var collectionName: String = js.native
+  var collectionName: String
   
   /**
     * A list of documents belonging to the collection
     */
-  var documents: js.Array[_] = js.native
+  var documents: js.Array[js.Any]
   
   /**
     * The type of the collection's scope, such as Default or User
     */
-  var scopeType: String = js.native
+  var scopeType: String
   
   /**
     * The value of the collection's scope, such as Current or Me
     */
-  var scopeValue: String = js.native
+  var scopeValue: String
 }
 object ExtensionDataCollection {
   
   @scala.inline
-  def apply(collectionName: String, documents: js.Array[_], scopeType: String, scopeValue: String): ExtensionDataCollection = {
+  def apply(collectionName: String, documents: js.Array[js.Any], scopeType: String, scopeValue: String): ExtensionDataCollection = {
     val __obj = js.Dynamic.literal(collectionName = collectionName.asInstanceOf[js.Any], documents = documents.asInstanceOf[js.Any], scopeType = scopeType.asInstanceOf[js.Any], scopeValue = scopeValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionDataCollection]
   }
@@ -43,7 +41,7 @@ object ExtensionDataCollection {
     def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocuments(value: js.Array[_]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
+    def setDocuments(value: js.Array[js.Any]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDocumentsVarargs(value: js.Any*): Self = StObject.set(x, "documents", js.Array(value :_*))

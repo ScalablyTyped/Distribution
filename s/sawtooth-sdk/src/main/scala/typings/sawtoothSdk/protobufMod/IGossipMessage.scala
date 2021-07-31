@@ -4,20 +4,18 @@ import typings.sawtoothSdk.protobufMod.GossipMessage.ContentType
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGossipMessage extends StObject {
   
   /** GossipMessage content */
-  var content: js.UndefOr[Uint8Array | Null] = js.native
+  var content: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** GossipMessage contentType */
-  var contentType: js.UndefOr[ContentType | Null] = js.native
+  var contentType: js.UndefOr[ContentType | Null] = js.undefined
   
   /** GossipMessage timeToLive */
-  var timeToLive: js.UndefOr[Double | Null] = js.native
+  var timeToLive: js.UndefOr[Double | Null] = js.undefined
 }
 object IGossipMessage {
   

@@ -2,22 +2,20 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListMembershipsResponse extends StObject {
   
   /**
     * List of memberships in the requested (or first) page.
     */
-  var memberships: js.UndefOr[js.Array[SchemaMembership]] = js.native
+  var memberships: js.UndefOr[js.Array[SchemaMembership]] = js.undefined
   
   /**
     * Continuation token to retrieve the next page of results. It will be empty
     * for the last page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListMembershipsResponse {
   

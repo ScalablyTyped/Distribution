@@ -4,17 +4,15 @@ import typings.firebase.mod.firebase.firestore.DocumentSnapshot
 import typings.firebase.mod.firebase.firestore.FirestoreError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error[T] extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.undefined
   
-  var next: js.UndefOr[js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]] = js.native
+  var next: js.UndefOr[js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]] = js.undefined
 }
 object Error {
   
@@ -25,7 +23,7 @@ object Error {
   }
   
   @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error[_], T] (val x: Self with Error[T]) extends AnyVal {
+  implicit class ErrorMutableBuilder[Self <: Error[?], T] (val x: Self & Error[T]) extends AnyVal {
     
     @scala.inline
     def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))

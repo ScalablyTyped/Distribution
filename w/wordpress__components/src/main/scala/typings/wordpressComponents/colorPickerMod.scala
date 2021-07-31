@@ -7,7 +7,6 @@ import typings.wordpressComponents.colorPickerMod.ColorPicker.Props
 import typings.wordpressComponents.wordpressComponentsStrings.rgb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorPickerMod {
@@ -26,28 +25,27 @@ object colorPickerMod {
   
   object ColorPicker {
     
-    @js.native
     trait OnChangeCompleteValue extends StObject {
       
-      var color: Instance = js.native
+      var color: Instance
       
-      var draftHex: String = js.native
+      var draftHex: String
       
-      var draftHsl: String = js.native
+      var draftHsl: String
       
-      var draftRgb: String = js.native
+      var draftRgb: String
       
-      var hex: String = js.native
+      var hex: String
       
-      var hsl: String = js.native
+      var hsl: String
       
-      var hsv: String = js.native
+      var hsv: String
       
-      var oldHue: String = js.native
+      var oldHue: String
       
-      var rgb: String = js.native
+      var rgb: String
       
-      var source: js.UndefOr[rgb] = js.native
+      var source: js.UndefOr[rgb] = js.undefined
     }
     object OnChangeCompleteValue {
       
@@ -105,19 +103,18 @@ object colorPickerMod {
       }
     }
     
-    @js.native
     trait Props extends StObject {
       
       /**
         * Machine-readable color value.
         * @defaultValue "0071a1"
         */
-      var color: js.UndefOr[String] = js.native
+      var color: js.UndefOr[String] = js.undefined
       
       /**
         * Should alpha be disabled?
         */
-      var disableAlpha: js.UndefOr[Boolean] = js.native
+      var disableAlpha: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A reference to the hue of the previous color, otherwise
@@ -126,12 +123,12 @@ object colorPickerMod {
         *
         * @see https://github.com/casesandberg/react-color/issues/29#issuecomment-132686909.
         */
-      var oldHue: js.UndefOr[Double] = js.native
+      var oldHue: js.UndefOr[Double] = js.undefined
       
       /**
         * Function to be called when color value changes.
         */
-      def onChangeComplete(value: OnChangeCompleteValue): Unit = js.native
+      def onChangeComplete(value: OnChangeCompleteValue): Unit
     }
     object Props {
       

@@ -2,26 +2,24 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartSoterAuthenticationSuccessCallbackResult extends StObject {
   
   /** 生物认证方式 */
-  var authMode: String = js.native
+  var authMode: String
   
   /** 错误码 */
-  var errCode: Double = js.native
+  var errCode: Double
   
   /** 错误信息 */
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 在设备安全区域（TEE）内获得的本机安全信息（如TEE名称版本号等以及防重放参数）以及本次认证信息（仅Android支持，本次认证的指纹ID）。具体说明见下文 */
-  var resultJSON: String = js.native
+  var resultJSON: String
   
   /** 用SOTER安全密钥对 `resultJSON` 的签名(SHA256 with RSA/PSS, saltlen=20) */
-  var resultJSONSignature: String = js.native
+  var resultJSONSignature: String
 }
 object StartSoterAuthenticationSuccessCallbackResult {
   

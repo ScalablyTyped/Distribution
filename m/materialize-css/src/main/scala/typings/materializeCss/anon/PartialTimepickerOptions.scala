@@ -5,44 +5,42 @@ import typings.std.Element
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.TimepickerOptions> */
-@js.native
 trait PartialTimepickerOptions extends StObject {
   
-  var autoClose: js.UndefOr[Boolean] = js.native
+  var autoClose: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var defaultTime: js.UndefOr[String] = js.native
+  var defaultTime: js.UndefOr[String] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var fromNow: js.UndefOr[Double] = js.native
+  var fromNow: js.UndefOr[Double] = js.undefined
   
   var i18n: js.UndefOr[
     Partial[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onCloseEnd: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.native
+  var onCloseEnd: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.undefined
   
-  var onCloseStart: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.native
+  var onCloseStart: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.undefined
   
-  var onOpenEnd: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.native
+  var onOpenEnd: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.undefined
   
-  var onOpenStart: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.native
+  var onOpenStart: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.undefined
   
-  var onSelect: js.UndefOr[js.ThisFunction2[/* this */ Modal, /* hour */ Double, /* minute */ Double, Unit]] = js.native
+  var onSelect: js.UndefOr[js.ThisFunction2[/* this */ Modal, /* hour */ Double, /* minute */ Double, Unit]] = js.undefined
   
-  var showClearBtn: js.UndefOr[Boolean] = js.native
+  var showClearBtn: js.UndefOr[Boolean] = js.undefined
   
-  var twelveHour: js.UndefOr[Boolean] = js.native
+  var twelveHour: js.UndefOr[Boolean] = js.undefined
   
-  var vibrate: js.UndefOr[Boolean] = js.native
+  var vibrate: js.UndefOr[Boolean] = js.undefined
 }
 object PartialTimepickerOptions {
   
@@ -88,7 +86,7 @@ object PartialTimepickerOptions {
     @scala.inline
     def setI18n(
       value: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
         ]
     ): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     

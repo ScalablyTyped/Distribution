@@ -2,14 +2,12 @@ package typings.semanticUiDropdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.LabelSettings._Impl, 'transition'> */
-@js.native
 trait PickImpltransitionTransition extends StObject {
   
-  var transition: String = js.native
+  var transition: String
 }
 object PickImpltransitionTransition {
   

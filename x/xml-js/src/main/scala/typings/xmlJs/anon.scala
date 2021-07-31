@@ -3,15 +3,13 @@ package typings.xmlJs
 import typings.xmlJs.mod.DeclarationAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var attributes: js.UndefOr[DeclarationAttributes] = js.native
+    var attributes: js.UndefOr[DeclarationAttributes] = js.undefined
   }
   object `0` {
     
@@ -32,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Attributes extends StObject {
     
-    var _attributes: js.UndefOr[DeclarationAttributes] = js.native
+    var _attributes: js.UndefOr[DeclarationAttributes] = js.undefined
   }
   object Attributes {
     

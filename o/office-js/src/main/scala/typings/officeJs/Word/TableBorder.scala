@@ -32,7 +32,6 @@ import typings.officeJs.officeJsStrings.Triple
 import typings.officeJs.officeJsStrings.Wave
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,7 +41,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.3]
   */
 @js.native
-trait TableBorder extends ClientObject {
+trait TableBorder
+  extends StObject
+     with ClientObject {
   
   /**
     *

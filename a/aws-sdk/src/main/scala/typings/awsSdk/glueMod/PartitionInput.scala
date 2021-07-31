@@ -2,36 +2,34 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionInput extends StObject {
   
   /**
     * The last time at which the partition was accessed.
     */
-  var LastAccessTime: js.UndefOr[Timestamp] = js.native
+  var LastAccessTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The last time at which column statistics were computed for this partition.
     */
-  var LastAnalyzedTime: js.UndefOr[Timestamp] = js.native
+  var LastAnalyzedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * These key-value pairs define partition parameters.
     */
-  var Parameters: js.UndefOr[ParametersMap] = js.native
+  var Parameters: js.UndefOr[ParametersMap] = js.undefined
   
   /**
     * Provides information about the physical location where the partition is stored.
     */
-  var StorageDescriptor: js.UndefOr[typings.awsSdk.glueMod.StorageDescriptor] = js.native
+  var StorageDescriptor: js.UndefOr[typings.awsSdk.glueMod.StorageDescriptor] = js.undefined
   
   /**
     * The values of the partition. Although this parameter is not required by the SDK, you must specify this parameter for a valid input. The values for the keys for the new partition must be passed as an array of String objects that must be ordered in the same order as the partition keys appearing in the Amazon S3 prefix. Otherwise AWS Glue will add the values to the wrong keys.
     */
-  var Values: js.UndefOr[ValueStringList] = js.native
+  var Values: js.UndefOr[ValueStringList] = js.undefined
 }
 object PartitionInput {
   

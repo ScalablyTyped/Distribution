@@ -2,7 +2,6 @@ package typings.smartFoxServer.SFS2X.Entities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -10,26 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // http://docs2x.smartfoxserver.com/api-docs/jsdoc/symbols/SFS2X.Entities.Invitation.html
 object Invitation {
   
-  @js.native
   trait InvitationReply extends StObject
   
-  @js.native
   trait SFSInvitation extends StObject {
     
     /** @type {number} Indicates the id of the invitation. */
-    var id: Double = js.native
+    var id: Double
     
     /** @type {SFSUser} Returns the SFSUser object corresponding to the user who received the invitation. */
-    var invitee: SFSUser = js.native
+    var invitee: SFSUser
     
     /** @type {SFSUser} Returns the SFSUser object corresponding to the user who sent the invitation. */
-    var inviter: SFSUser = js.native
+    var inviter: SFSUser
     
     /** @type {Object} Returns an object containing a custom set of parameters. */
-    var params: js.Object = js.native
+    var params: js.Object
     
     /** @type {number} Returns the number of seconds available to the invitee to reply to the invitation, after which the invitation expires. */
-    var secondsForAnswer: Double = js.native
+    var secondsForAnswer: Double
   }
   object SFSInvitation {
     

@@ -2,13 +2,11 @@ package typings.nodeZendesk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersistableModel extends StObject {
   
-  val id: ZendeskID = js.native
+  val id: ZendeskID
 }
 object PersistableModel {
   

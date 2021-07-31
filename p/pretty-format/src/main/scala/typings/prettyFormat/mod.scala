@@ -3,7 +3,6 @@ package typings.prettyFormat
 import typings.prettyFormat.typesMod.Plugins
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,12 +12,14 @@ object mod {
     * @param val any potential JavaScript object
     * @param options Custom settings
     */
+  @scala.inline
+  def apply(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(`val`: js.Any, options: typings.prettyFormat.typesMod.OptionsReceived): String = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("pretty-format", JSImport.Namespace)
   @js.native
-  def apply(`val`: js.Any): String = js.native
-  @JSImport("pretty-format", JSImport.Namespace)
-  @js.native
-  def apply(`val`: js.Any, options: typings.prettyFormat.typesMod.OptionsReceived): String = js.native
+  val ^ : js.Any = js.native
   
   object plugins {
     

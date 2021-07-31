@@ -2,7 +2,6 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * times in the set (for example if two ranges, two keys, or a key and a range
   * overlap), Cloud Spanner behaves as if the key were only specified once.
   */
-@js.native
 trait SchemaKeySet extends StObject {
   
   /**
@@ -20,20 +18,20 @@ trait SchemaKeySet extends StObject {
     * matches all keys in the table or index. Note that any keys specified in
     * `keys` or `ranges` are only yielded once.
     */
-  var all: js.UndefOr[Boolean] = js.native
+  var all: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of specific keys. Entries in `keys` should have exactly as many
     * elements as there are columns in the primary or index key with which this
     * `KeySet` is used.  Individual key values are encoded as described here.
     */
-  var keys: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var keys: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     * A list of key ranges. See KeyRange for more information about key range
     * specifications.
     */
-  var ranges: js.UndefOr[js.Array[SchemaKeyRange]] = js.native
+  var ranges: js.UndefOr[js.Array[SchemaKeyRange]] = js.undefined
 }
 object SchemaKeySet {
   
@@ -53,7 +51,7 @@ object SchemaKeySet {
     def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def setKeys(value: js.Array[js.Array[_]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    def setKeys(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)

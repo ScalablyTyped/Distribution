@@ -14,7 +14,6 @@ import typings.std.MouseEvent
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeMod {
@@ -126,7 +125,7 @@ object rangeMod {
     
     def onMouseMove(e: MouseEvent): Unit = js.native
     
-    def onMouseOrTouchStart(e: MouseEvent with TouchEvent): Unit = js.native
+    def onMouseOrTouchStart(e: MouseEvent & TouchEvent): Unit = js.native
     
     def onMove(clientX: Double, clientY: Double): js.UndefOr[Null] = js.native
     

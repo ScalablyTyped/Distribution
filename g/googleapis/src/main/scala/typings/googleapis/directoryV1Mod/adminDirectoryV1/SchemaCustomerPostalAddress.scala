@@ -2,65 +2,63 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for postal address of a customer.
   */
-@js.native
 trait SchemaCustomerPostalAddress extends StObject {
   
   /**
     * A customer&#39;s physical address. The address can be composed of one to
     * three lines.
     */
-  var addressLine1: js.UndefOr[String] = js.native
+  var addressLine1: js.UndefOr[String] = js.undefined
   
   /**
     * Address line 2 of the address.
     */
-  var addressLine2: js.UndefOr[String] = js.native
+  var addressLine2: js.UndefOr[String] = js.undefined
   
   /**
     * Address line 3 of the address.
     */
-  var addressLine3: js.UndefOr[String] = js.native
+  var addressLine3: js.UndefOr[String] = js.undefined
   
   /**
     * The customer contact&#39;s name.
     */
-  var contactName: js.UndefOr[String] = js.native
+  var contactName: js.UndefOr[String] = js.undefined
   
   /**
     * This is a required property. For countryCode information see the ISO 3166
     * country code elements.
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the locality. An example of a locality value is the city of San
     * Francisco.
     */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /**
     * The company or company division name.
     */
-  var organizationName: js.UndefOr[String] = js.native
+  var organizationName: js.UndefOr[String] = js.undefined
   
   /**
     * The postal code. A postalCode example is a postal zip code such as 10009.
     * This is in accordance with -
     * http://portablecontacts.net/draft-spec.html#address_element.
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the region. An example of a region value is NY for the state of
     * New York.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
 }
 object SchemaCustomerPostalAddress {
   

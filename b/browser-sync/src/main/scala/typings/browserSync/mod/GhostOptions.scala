@@ -2,17 +2,15 @@ package typings.browserSync.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GhostOptions extends StObject {
   
-  var clicks: js.UndefOr[Boolean] = js.native
+  var clicks: js.UndefOr[Boolean] = js.undefined
   
-  var forms: js.UndefOr[FormsOptions | Boolean] = js.native
+  var forms: js.UndefOr[FormsOptions | Boolean] = js.undefined
   
-  var scroll: js.UndefOr[Boolean] = js.native
+  var scroll: js.UndefOr[Boolean] = js.undefined
 }
 object GhostOptions {
   

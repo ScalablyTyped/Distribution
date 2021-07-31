@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSpec extends StObject {
   
   /** A BigQueryDataSourceSpec. */
-  var bigQuery: js.UndefOr[BigQueryDataSourceSpec] = js.native
+  var bigQuery: js.UndefOr[BigQueryDataSourceSpec] = js.undefined
   
   /** The parameters of the data source, used when querying the data source. */
-  var parameters: js.UndefOr[js.Array[DataSourceParameter]] = js.native
+  var parameters: js.UndefOr[js.Array[DataSourceParameter]] = js.undefined
 }
 object DataSourceSpec {
   

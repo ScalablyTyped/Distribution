@@ -3,7 +3,6 @@ package typings.reactGoogleRecaptcha
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -80,80 +79,79 @@ object mod {
     def `inline`: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.`inline` = "inline".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.`inline`]
   }
   
-  @js.native
   trait ReCAPTCHAProps extends StObject {
     
     /**
       * The badge location for g-recaptcha with size of "invisible".
       * @default "bottomright"
       */
-    var badge: js.UndefOr[Badge] = js.native
+    var badge: js.UndefOr[Badge] = js.undefined
     
     /**
       *  If you are using the barebone component you need to provide access to the
       *  google grecaptcha object.
       */
-    var grecaptcha: js.UndefOr[js.Object] = js.native
+    var grecaptcha: js.UndefOr[js.Object] = js.undefined
     
     /**
       *  Forces the widget to render in a specific language.
       *  Auto-detects the user's language if unspecified.
       */
-    var hl: js.UndefOr[String] = js.native
+    var hl: js.UndefOr[String] = js.undefined
     
     /**
       * The function to be called when the user successfully completes the normal
       * or the compact captcha. It will also be called with null, when captcha expires.
       * @param token string or null
       */
-    var onChange: js.UndefOr[js.Function1[/* token */ String | Null, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* token */ String | Null, Unit]] = js.undefined
     
     /**
       *  Optional callback, called when reCAPTCHA encounters an error (usually network connectivity)
       *  and cannot continue until connectivity is restored. If you specify a function here, you are
       *  responsible for informing the user that they should retry.
       */
-    var onErrored: js.UndefOr[js.Function0[Unit]] = js.native
+    var onErrored: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback called when a challenge expires and has to be redone by the user.
       */
-    var onExpired: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExpired: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * The API client key
       */
-    var sitekey: String = js.native
+    var sitekey: String
     
     /**
       * This allows you to change the size or do an invisible captcha.
       * @default "normal"
       */
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
     
     /**
       * Set the stoken parameter, which allows the captcha to be used from different domains.
       * @see reCAPTCHA secure-token
       */
-    var stoken: js.UndefOr[String] = js.native
+    var stoken: js.UndefOr[String] = js.undefined
     
     /**
       * The tabindex of the element.
       * @default 0
       */
-    var tabindex: js.UndefOr[Double] = js.native
+    var tabindex: js.UndefOr[Double] = js.undefined
     
     /**
       * The theme of the widget.
       * @default "light"
       */
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
     
     /**
       * The type of initial captcha.
       * @default "image"
       */
-    var `type`: js.UndefOr[Type] = js.native
+    var `type`: js.UndefOr[Type] = js.undefined
   }
   object ReCAPTCHAProps {
     

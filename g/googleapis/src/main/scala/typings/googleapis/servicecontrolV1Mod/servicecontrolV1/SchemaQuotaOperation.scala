@@ -3,13 +3,11 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents information regarding a quota operation.
   */
-@js.native
 trait SchemaQuotaOperation extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaQuotaOperation extends StObject {
     * project:&lt;project_id&gt;,   project_number:&lt;project_number&gt;,
     * api_key:&lt;api_key&gt;.
     */
-  var consumerId: js.UndefOr[String] = js.native
+  var consumerId: js.UndefOr[String] = js.undefined
   
   /**
     * Labels describing the operation.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Fully qualified name of the API method for which this quota operation is
@@ -34,7 +32,7 @@ trait SchemaQuotaOperation extends StObject {
     * caller is doing quota override.  Example of an RPC method name:
     * google.example.library.v1.LibraryService.CreateShelf
     */
-  var methodName: js.UndefOr[String] = js.native
+  var methodName: js.UndefOr[String] = js.undefined
   
   /**
     * Identity of the operation. This is expected to be unique within the scope
@@ -44,7 +42,7 @@ trait SchemaQuotaOperation extends StObject {
     * an idempotent id is desirable for deduplication purpose, UUID version 5
     * is recommended. See RFC 4122 for details.
     */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
   /**
     * Represents information about this operation. Each MetricValueSet
@@ -57,12 +55,12 @@ trait SchemaQuotaOperation extends StObject {
     * invalid argument error.  This field is mutually exclusive with
     * method_name.
     */
-  var quotaMetrics: js.UndefOr[js.Array[SchemaMetricValueSet]] = js.native
+  var quotaMetrics: js.UndefOr[js.Array[SchemaMetricValueSet]] = js.undefined
   
   /**
     * Quota mode for this operation.
     */
-  var quotaMode: js.UndefOr[String] = js.native
+  var quotaMode: js.UndefOr[String] = js.undefined
 }
 object SchemaQuotaOperation {
   

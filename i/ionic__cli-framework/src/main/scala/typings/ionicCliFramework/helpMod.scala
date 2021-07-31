@@ -17,10 +17,13 @@ import typings.ionicCliFramework.ionicCliFrameworkStrings.link
 import typings.ionicCliFramework.ionicCliFrameworkStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpMod {
+  
+  @JSImport("@ionic/cli-framework/lib/help", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/cli-framework/lib/help", "CommandHelpFormatter")
   @js.native
@@ -254,32 +257,28 @@ object helpMod {
     def getListOfNamespaceDetails(commands: js.Array[HydratedCommandMetadata[C, N, M, I, O]]): js.Promise[js.Array[String]] = js.native
   }
   
-  @JSImport("@ionic/cli-framework/lib/help", "createCommandMetadataFromSchema")
-  @js.native
-  def createCommandMetadataFromSchema(schema: CommandHelpSchema): RequiredCommandMetadataCo = js.native
+  @scala.inline
+  def createCommandMetadataFromSchema(schema: CommandHelpSchema): RequiredCommandMetadataCo = ^.asInstanceOf[js.Dynamic].applyDynamic("createCommandMetadataFromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[RequiredCommandMetadataCo]
   
-  @JSImport("@ionic/cli-framework/lib/help", "isCommandVisible")
-  @js.native
-  def isCommandVisible[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](cmd: HydratedCommandMetadata[C, N, M, I, O]): js.Promise[Boolean] = js.native
+  @scala.inline
+  def isCommandVisible[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](cmd: HydratedCommandMetadata[C, N, M, I, O]): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandVisible")(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("@ionic/cli-framework/lib/help", "isOptionVisible")
-  @js.native
-  def isOptionVisible[O /* <: CommandMetadataOption */](opt: O): js.Promise[Boolean] = js.native
+  @scala.inline
+  def isOptionVisible[O /* <: CommandMetadataOption */](opt: O): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptionVisible")(opt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @js.native
   trait CommandHelpFormatterDeps[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends StObject {
     
-    val colors: js.UndefOr[typings.ionicCliFramework.colorsMod.Colors] = js.native
+    val colors: js.UndefOr[typings.ionicCliFramework.colorsMod.Colors] = js.undefined
     
-    val command: C = js.native
+    val command: C
     
-    val location: NamespaceLocateResult[C, N, M, I, O] = js.native
+    val location: NamespaceLocateResult[C, N, M, I, O]
     
     /**
       * Provide extra context with hydrated command metadata. If not provided,
       * `command.getMetadata()` is called.
       */
-    val metadata: js.UndefOr[HydratedCommandMetadata[C, N, M, I, O]] = js.native
+    val metadata: js.UndefOr[HydratedCommandMetadata[C, N, M, I, O]] = js.undefined
   }
   object CommandHelpFormatterDeps {
     
@@ -290,7 +289,7 @@ object helpMod {
     }
     
     @scala.inline
-    implicit class CommandHelpFormatterDepsMutableBuilder[Self <: CommandHelpFormatterDeps[_, _, _, _, _], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self with (CommandHelpFormatterDeps[C, N, M, I, O])) extends AnyVal {
+    implicit class CommandHelpFormatterDepsMutableBuilder[Self <: CommandHelpFormatterDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (CommandHelpFormatterDeps[C, N, M, I, O])) extends AnyVal {
       
       @scala.inline
       def setColors(value: typings.ionicCliFramework.colorsMod.Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
@@ -312,28 +311,27 @@ object helpMod {
     }
   }
   
-  @js.native
   trait CommandHelpSchema extends StObject {
     
-    val aliases: js.Array[String] = js.native
+    val aliases: js.Array[String]
     
-    val description: String = js.native
+    val description: String
     
-    val exampleCommands: js.Array[String] = js.native
+    val exampleCommands: js.Array[String]
     
-    val footnotes: js.Array[CommandHelpSchemaFootnote] = js.native
+    val footnotes: js.Array[CommandHelpSchemaFootnote]
     
-    val groups: js.Array[String] = js.native
+    val groups: js.Array[String]
     
-    val inputs: js.Array[CommandHelpSchemaInput] = js.native
+    val inputs: js.Array[CommandHelpSchemaInput]
     
-    val name: String = js.native
+    val name: String
     
-    val namespace: js.Array[String] = js.native
+    val namespace: js.Array[String]
     
-    val options: js.Array[CommandHelpSchemaOption] = js.native
+    val options: js.Array[CommandHelpSchemaOption]
     
-    val summary: String = js.native
+    val summary: String
   }
   object CommandHelpSchema {
     
@@ -418,37 +416,38 @@ object helpMod {
   object CommandHelpSchemaFootnote {
     
     @scala.inline
-    def CommandHelpSchemaFootnoteLink(id: String | Double, `type`: link, url: String): typings.ionicCliFramework.helpMod.CommandHelpSchemaFootnoteLink = {
+    def CommandHelpSchemaFootnoteLink(id: String | Double, url: String): typings.ionicCliFramework.helpMod.CommandHelpSchemaFootnoteLink = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("link")
       __obj.asInstanceOf[typings.ionicCliFramework.helpMod.CommandHelpSchemaFootnoteLink]
     }
     
     @scala.inline
-    def CommandHelpSchemaFootnoteText(id: String | Double, text: String, `type`: text): typings.ionicCliFramework.helpMod.CommandHelpSchemaFootnoteText = {
+    def CommandHelpSchemaFootnoteText(id: String | Double, text: String): typings.ionicCliFramework.helpMod.CommandHelpSchemaFootnoteText = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[typings.ionicCliFramework.helpMod.CommandHelpSchemaFootnoteText]
     }
   }
   
-  @js.native
-  trait CommandHelpSchemaFootnoteLink extends CommandHelpSchemaFootnote {
+  trait CommandHelpSchemaFootnoteLink
+    extends StObject
+       with CommandHelpSchemaFootnote {
     
-    val id: String | Double = js.native
+    val id: String | Double
     
-    val shortUrl: js.UndefOr[String] = js.native
+    val shortUrl: js.UndefOr[String] = js.undefined
     
-    val `type`: link = js.native
+    val `type`: link
     
-    val url: String = js.native
+    val url: String
   }
   object CommandHelpSchemaFootnoteLink {
     
     @scala.inline
-    def apply(id: String | Double, `type`: link, url: String): CommandHelpSchemaFootnoteLink = {
+    def apply(id: String | Double, url: String): CommandHelpSchemaFootnoteLink = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("link")
       __obj.asInstanceOf[CommandHelpSchemaFootnoteLink]
     }
     
@@ -472,21 +471,22 @@ object helpMod {
     }
   }
   
-  @js.native
-  trait CommandHelpSchemaFootnoteText extends CommandHelpSchemaFootnote {
+  trait CommandHelpSchemaFootnoteText
+    extends StObject
+       with CommandHelpSchemaFootnote {
     
-    val id: String | Double = js.native
+    val id: String | Double
     
-    val text: String = js.native
+    val text: String
     
-    val `type`: typings.ionicCliFramework.ionicCliFrameworkStrings.text = js.native
+    val `type`: typings.ionicCliFramework.ionicCliFrameworkStrings.text
   }
   object CommandHelpSchemaFootnoteText {
     
     @scala.inline
-    def apply(id: String | Double, text: String, `type`: text): CommandHelpSchemaFootnoteText = {
+    def apply(id: String | Double, text: String): CommandHelpSchemaFootnoteText = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[CommandHelpSchemaFootnoteText]
     }
     
@@ -504,14 +504,13 @@ object helpMod {
     }
   }
   
-  @js.native
   trait CommandHelpSchemaInput extends StObject {
     
-    val name: String = js.native
+    val name: String
     
-    val required: Boolean = js.native
+    val required: Boolean
     
-    val summary: String = js.native
+    val summary: String
   }
   object CommandHelpSchemaInput {
     
@@ -535,22 +534,21 @@ object helpMod {
     }
   }
   
-  @js.native
   trait CommandHelpSchemaOption extends StObject {
     
-    val default: js.UndefOr[String | Boolean] = js.native
+    val default: js.UndefOr[String | Boolean] = js.undefined
     
-    val aliases: js.Array[String] = js.native
+    val aliases: js.Array[String]
     
-    val groups: js.Array[String] = js.native
+    val groups: js.Array[String]
     
-    val name: String = js.native
+    val name: String
     
-    val spec: ValueString = js.native
+    val spec: ValueString
     
-    val summary: String = js.native
+    val summary: String
     
-    val `type`: String = js.native
+    val `type`: String
   }
   object CommandHelpSchemaOption {
     
@@ -603,14 +601,13 @@ object helpMod {
     }
   }
   
-  @js.native
   trait NamespaceHelpFormatterDeps[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends StObject {
     
-    val colors: js.UndefOr[typings.ionicCliFramework.colorsMod.Colors] = js.native
+    val colors: js.UndefOr[typings.ionicCliFramework.colorsMod.Colors] = js.undefined
     
-    val location: NamespaceLocateResult[C, N, M, I, O] = js.native
+    val location: NamespaceLocateResult[C, N, M, I, O]
     
-    val namespace: N = js.native
+    val namespace: N
   }
   object NamespaceHelpFormatterDeps {
     
@@ -621,7 +618,7 @@ object helpMod {
     }
     
     @scala.inline
-    implicit class NamespaceHelpFormatterDepsMutableBuilder[Self <: NamespaceHelpFormatterDeps[_, _, _, _, _], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self with (NamespaceHelpFormatterDeps[C, N, M, I, O])) extends AnyVal {
+    implicit class NamespaceHelpFormatterDepsMutableBuilder[Self <: NamespaceHelpFormatterDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (NamespaceHelpFormatterDeps[C, N, M, I, O])) extends AnyVal {
       
       @scala.inline
       def setColors(value: typings.ionicCliFramework.colorsMod.Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
@@ -637,20 +634,19 @@ object helpMod {
     }
   }
   
-  @js.native
   trait NamespaceHelpSchema extends StObject {
     
-    val aliases: js.Array[String] = js.native
+    val aliases: js.Array[String]
     
-    val commands: js.Array[CommandHelpSchema] = js.native
+    val commands: js.Array[CommandHelpSchema]
     
-    val description: String = js.native
+    val description: String
     
-    val groups: js.Array[String] = js.native
+    val groups: js.Array[String]
     
-    val name: String = js.native
+    val name: String
     
-    val summary: String = js.native
+    val summary: String
   }
   object NamespaceHelpSchema {
     

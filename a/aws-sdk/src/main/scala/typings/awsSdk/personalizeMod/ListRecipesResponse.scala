@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRecipesResponse extends StObject {
   
   /**
     * A token for getting the next set of recipes.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The list of available recipes.
     */
-  var recipes: js.UndefOr[Recipes] = js.native
+  var recipes: js.UndefOr[Recipes] = js.undefined
 }
 object ListRecipesResponse {
   

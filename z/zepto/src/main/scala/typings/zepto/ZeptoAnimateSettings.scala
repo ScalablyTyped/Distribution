@@ -2,17 +2,15 @@ package typings.zepto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZeptoAnimateSettings extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
 }
 object ZeptoAnimateSettings {
   

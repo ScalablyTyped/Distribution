@@ -8,7 +8,6 @@ import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.segmentSegmentMod.SegmentSizeProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentGroupMod extends Shortcut {
@@ -17,9 +16,9 @@ object segmentGroupMod extends Shortcut {
   @js.native
   val default: StatelessComponent[SegmentGroupProps] = js.native
   
-  @js.native
   trait SegmentGroupProps
-    extends StrictSegmentGroupProps
+    extends StObject
+       with StrictSegmentGroupProps
        with /* key */ StringDictionary[js.Any]
   object SegmentGroupProps {
     
@@ -30,38 +29,37 @@ object segmentGroupMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictSegmentGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** A segment may take up only as much space as is necessary. */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Formats content to be aligned horizontally. */
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /** Formatted to look like a pile of pages. */
-    var piled: js.UndefOr[Boolean] = js.native
+    var piled: js.UndefOr[Boolean] = js.undefined
     
     /** A segment group may be formatted to raise above the page. */
-    var raised: js.UndefOr[Boolean] = js.native
+    var raised: js.UndefOr[Boolean] = js.undefined
     
     /** A segment group can have different sizes. */
-    var size: js.UndefOr[SegmentSizeProp] = js.native
+    var size: js.UndefOr[SegmentSizeProp] = js.undefined
     
     /** Formatted to show it contains multiple pages. */
-    var stacked: js.UndefOr[Boolean] = js.native
+    var stacked: js.UndefOr[Boolean] = js.undefined
   }
   object StrictSegmentGroupProps {
     

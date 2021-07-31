@@ -3,57 +3,60 @@ package typings.mapObj
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.mapObj.mapObjBooleans.`true`
-import typings.mapObj.mapObjStrings.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("map-obj", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[SourceObjectType /* <: StringDictionary[js.Any] */, MappedObjectKeyType /* <: String */, MappedObjectValueType](
     source: SourceObjectType,
     mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType]
   ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in MappedObjectKeyType ]: MappedObjectValueType}
-    */ ^ with TopLevel[js.Any] = js.native
-  @JSImport("map-obj", JSImport.Namespace)
-  @js.native
+    */ typings.mapObj.mapObjStrings.^ & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in MappedObjectKeyType ]: MappedObjectValueType}
+    */ typings.mapObj.mapObjStrings.^ & TopLevel[js.Any]]
+  @scala.inline
   def apply[SourceObjectType /* <: js.Object */, MappedObjectKeyType /* <: String */, MappedObjectValueType](
     source: SourceObjectType,
     mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType],
     options: DeepOptions
-  ): StringDictionary[js.Any] = js.native
-  @JSImport("map-obj", JSImport.Namespace)
-  @js.native
+  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
   def apply[SourceObjectType /* <: StringDictionary[js.Any] */, MappedObjectKeyType /* <: String */, MappedObjectValueType](
     source: SourceObjectType,
     mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType],
     options: Options
   ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in MappedObjectKeyType ]: MappedObjectValueType}
-    */ ^ with TopLevel[js.Any] = js.native
-  @JSImport("map-obj", JSImport.Namespace)
-  @js.native
+    */ typings.mapObj.mapObjStrings.^ & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in MappedObjectKeyType ]: MappedObjectValueType}
+    */ typings.mapObj.mapObjStrings.^ & TopLevel[js.Any]]
+  @scala.inline
   def apply[SourceObjectType /* <: StringDictionary[js.Any] */, TargetObjectType /* <: StringDictionary[js.Any] */, MappedObjectKeyType /* <: String */, MappedObjectValueType](
     source: SourceObjectType,
     mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType],
     options: TargetOptions[TargetObjectType]
-  ): TargetObjectType with ^ with TopLevel[js.Any] = js.native
+  ): TargetObjectType & typings.mapObj.mapObjStrings.^ & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TargetObjectType & typings.mapObj.mapObjStrings.^ & TopLevel[js.Any]]
   
+  @JSImport("map-obj", JSImport.Namespace)
   @js.native
-  trait DeepOptions extends Options {
+  val ^ : js.Any = js.native
+  
+  trait DeepOptions
+    extends StObject
+       with Options {
     
     @JSName("deep")
-    var deep_DeepOptions: `true` = js.native
+    var deep_DeepOptions: `true`
   }
   object DeepOptions {
     
     @scala.inline
-    def apply(deep: `true`): DeepOptions = {
-      val __obj = js.Dynamic.literal(deep = deep.asInstanceOf[js.Any])
+    def apply(): DeepOptions = {
+      val __obj = js.Dynamic.literal(deep = true)
       __obj.asInstanceOf[DeepOptions]
     }
     
@@ -72,20 +75,19 @@ object mod {
     js.Tuple2[MappedObjectKeyType, MappedObjectValueType]
   ]
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Recurse nested objects and objects in arrays.
     		@default false
     		*/
-    var deep: js.UndefOr[Boolean] = js.native
+    var deep: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Target object to map properties on to.
     		@default {}
     		*/
-    var target: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var target: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object Options {
     
@@ -112,11 +114,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait TargetOptions[TargetObjectType /* <: StringDictionary[js.Any] */] extends Options {
+  trait TargetOptions[TargetObjectType /* <: StringDictionary[js.Any] */]
+    extends StObject
+       with Options {
     
     @JSName("target")
-    var target_TargetOptions: TargetObjectType = js.native
+    var target_TargetOptions: TargetObjectType
   }
   object TargetOptions {
     
@@ -127,7 +130,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TargetOptionsMutableBuilder[Self <: TargetOptions[_], TargetObjectType /* <: StringDictionary[js.Any] */] (val x: Self with TargetOptions[TargetObjectType]) extends AnyVal {
+    implicit class TargetOptionsMutableBuilder[Self <: TargetOptions[?], TargetObjectType /* <: StringDictionary[js.Any] */] (val x: Self & TargetOptions[TargetObjectType]) extends AnyVal {
       
       @scala.inline
       def setTarget(value: TargetObjectType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])

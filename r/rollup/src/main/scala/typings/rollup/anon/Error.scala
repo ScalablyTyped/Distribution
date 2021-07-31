@@ -5,21 +5,21 @@ import typings.rollup.mod.RollupWatcherEvent
 import typings.rollup.rollupStrings.ERROR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Error extends RollupWatcherEvent {
+trait Error
+  extends StObject
+     with RollupWatcherEvent {
   
-  var code: ERROR = js.native
+  var code: ERROR
   
-  var error: RollupError = js.native
+  var error: RollupError
 }
 object Error {
   
   @scala.inline
-  def apply(code: ERROR, error: RollupError): Error = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
+  def apply(error: RollupError): Error = {
+    val __obj = js.Dynamic.literal(code = "ERROR", error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
   

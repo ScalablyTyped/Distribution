@@ -5,7 +5,6 @@ import typings.react.mod.SFC
 import typings.wixUiIconsCommon.moveLargeMod.MoveLargeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object systemMoveLargeMod extends Shortcut {

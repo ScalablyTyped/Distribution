@@ -3,19 +3,19 @@ package typings.kendoUi.kendo.data
 import typings.kendoUi.JQueryXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataSourceErrorEvent extends DataSourceEvent {
+trait DataSourceErrorEvent
+  extends StObject
+     with DataSourceEvent {
   
-  var errorThrown: js.Any = js.native
+  var errorThrown: js.Any
   
-  var errors: js.UndefOr[js.Any] = js.native
+  var errors: js.UndefOr[js.Any] = js.undefined
   
-  var status: String = js.native
+  var status: String
   
-  var xhr: JQueryXHR = js.native
+  var xhr: JQueryXHR
 }
 object DataSourceErrorEvent {
   

@@ -6,23 +6,21 @@ import typings.pdfmake.interfacesMod.Size
 import typings.pdfmake.interfacesMod.UnorderedListType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Border extends StObject {
     
-    var border: js.UndefOr[js.Tuple4[Boolean, Boolean, Boolean, Boolean]] = js.native
+    var border: js.UndefOr[js.Tuple4[Boolean, Boolean, Boolean, Boolean]] = js.undefined
     
-    var borderColor: js.UndefOr[js.Tuple4[String, String, String, String]] = js.native
+    var borderColor: js.UndefOr[js.Tuple4[String, String, String, String]] = js.undefined
     
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
-    var rowSpan: js.UndefOr[Double] = js.native
+    var rowSpan: js.UndefOr[Double] = js.undefined
   }
   object Border {
     
@@ -67,12 +65,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Counter extends StObject {
     
-    var counter: js.UndefOr[Double] = js.native
+    var counter: js.UndefOr[Double] = js.undefined
     
-    var listType: js.UndefOr[OrderedListType] = js.native
+    var listType: js.UndefOr[OrderedListType] = js.undefined
   }
   object Counter {
     
@@ -99,24 +96,23 @@ object anon {
     }
   }
   
-  @js.native
   trait HorizontalRatio extends StObject {
     
-    var horizontalRatio: Double = js.native
+    var horizontalRatio: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var pageInnerHeight: Double = js.native
+    var pageInnerHeight: Double
     
-    var pageInnerWidth: Double = js.native
+    var pageInnerWidth: Double
     
-    var pageNumber: Double = js.native
+    var pageNumber: Double
     
-    var pageOrientation: PageOrientation = js.native
+    var pageOrientation: PageOrientation
     
-    var top: Double = js.native
+    var top: Double
     
-    var verticalRatio: Double = js.native
+    var verticalRatio: Double
   }
   object HorizontalRatio {
     
@@ -164,12 +160,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Length extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var space: js.UndefOr[Double] = js.native
+    var space: js.UndefOr[Double] = js.undefined
   }
   object Length {
     
@@ -193,10 +188,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ListType extends StObject {
     
-    var listType: js.UndefOr[UnorderedListType] = js.native
+    var listType: js.UndefOr[UnorderedListType] = js.undefined
   }
   object ListType {
     
@@ -217,10 +211,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Width extends StObject {
     
-    var width: js.UndefOr[Size] = js.native
+    var width: js.UndefOr[Size] = js.undefined
   }
   object Width {
     
@@ -241,12 +234,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

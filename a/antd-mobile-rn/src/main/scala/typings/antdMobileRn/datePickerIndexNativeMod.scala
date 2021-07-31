@@ -7,7 +7,6 @@ import typings.antdMobileRn.pickerStyleIndexNativeMod.IPickerStyle
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerIndexNativeMod {
@@ -39,12 +38,13 @@ object datePickerIndexNativeMod {
   trait DatePicker
     extends Component[DatePickerNativeProps, js.Any, js.Any]
   
-  @js.native
-  trait DatePickerNativeProps extends DatePickerPropsType {
+  trait DatePickerNativeProps
+    extends StObject
+       with DatePickerPropsType {
     
-    var styles: js.UndefOr[IPickerStyle] = js.native
+    var styles: js.UndefOr[IPickerStyle] = js.undefined
     
-    var triggerTypes: js.UndefOr[String] = js.native
+    var triggerTypes: js.UndefOr[String] = js.undefined
   }
   object DatePickerNativeProps {
     

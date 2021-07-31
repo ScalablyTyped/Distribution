@@ -3,18 +3,16 @@ package typings.fundamentalReact.anon
 import typings.react.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/List/List.ListItemProps> */
-@js.native
 trait WeakValidationMapListItem extends StObject {
   
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var onClick: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]]] = js.native
+  var onClick: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* repeated */ js.Any, js.Any]) | Null]]] = js.undefined
   
-  var selected: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var selected: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
 }
 object WeakValidationMapListItem {
   
@@ -34,7 +32,7 @@ object WeakValidationMapListItem {
     def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setOnClick(value: Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    def setOnClick(value: Validator[js.UndefOr[(js.Function1[/* repeated */ js.Any, js.Any]) | Null]]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

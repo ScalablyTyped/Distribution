@@ -1,9 +1,9 @@
 package typings.wonderFrp.mod
 
 import typings.wonderFrp.idisposableMod.IDisposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder-frp/dist/commonjs", "GroupDisposable")
 @js.native
@@ -11,12 +11,15 @@ class GroupDisposable ()
   extends typings.wonderFrp.groupDisposableMod.GroupDisposable {
   def this(disposable: IDisposable) = this()
 }
-
 /* static members */
-@JSImport("wonder-frp/dist/commonjs", "GroupDisposable")
-@js.native
-object GroupDisposable extends js.Object {
-  def create(): typings.wonderFrp.groupDisposableMod.GroupDisposable = js.native
-  def create(disposable: IDisposable): typings.wonderFrp.groupDisposableMod.GroupDisposable = js.native
+object GroupDisposable {
+  
+  @JSImport("wonder-frp/dist/commonjs", "GroupDisposable")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(): typings.wonderFrp.groupDisposableMod.GroupDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderFrp.groupDisposableMod.GroupDisposable]
+  @scala.inline
+  def create(disposable: IDisposable): typings.wonderFrp.groupDisposableMod.GroupDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(disposable.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.groupDisposableMod.GroupDisposable]
 }
-

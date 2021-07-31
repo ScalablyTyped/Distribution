@@ -12,7 +12,6 @@ import typings.std.Event
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -131,112 +130,111 @@ object mod {
     def max: typings.nukaCarousel.nukaCarouselStrings.max = "max".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.max]
   }
   
-  @js.native
   trait CarouselProps extends StObject {
     
     /**
       * Hook to be called after a slide is changed
       * @param index Index of the current slide
       */
-    var afterSlide: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var afterSlide: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
     /**
       * Adds a zoom effect on the currently visible slide.
       */
-    var animation: js.UndefOr[zoom] = js.native
+    var animation: js.UndefOr[zoom] = js.undefined
     
     /**
       * Will generate a style tag to help ensure images are displayed properly
       * @default true
       */
-    var autoGenerateStyleTag: js.UndefOr[Boolean] = js.native
+    var autoGenerateStyleTag: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Autoplay mode active
       * @default false
       */
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Interval for autoplay iteration (ms)
       * @default 3000
       */
-    var autoplayInterval: js.UndefOr[Double] = js.native
+    var autoplayInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * Autoplay cycles through slide indexes in reverse
       * @default false
       */
-    var autoplayReverse: js.UndefOr[Boolean] = js.native
+    var autoplayReverse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Hook to be called before a slide is changed
       * @param currentSlide Index of the current slide
       * @param endSlide Index of the last slide
       */
-    var beforeSlide: js.UndefOr[js.Function2[/* currentSlide */ Double, /* endSlide */ Double, Unit]] = js.native
+    var beforeSlide: js.UndefOr[js.Function2[/* currentSlide */ Double, /* endSlide */ Double, Unit]] = js.undefined
     
     /**
       * When displaying more than one slide,
       * sets which position to anchor the current slide to
       */
-    var cellAlign: js.UndefOr[CarouselCellAlignProp] = js.native
+    var cellAlign: js.UndefOr[CarouselCellAlignProp] = js.undefined
     
     /**
       * Space between slides, as an integer, but reflected as px
       */
-    var cellSpacing: js.UndefOr[Double] = js.native
+    var cellSpacing: js.UndefOr[Double] = js.undefined
     
     /**
       * Additional className
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * This prop lets you apply custom classes and styles to the default Next, Previous, and Paging Dots controls
       */
-    var defaultControlsConfig: js.UndefOr[ContainerClassName] = js.native
+    var defaultControlsConfig: js.UndefOr[ContainerClassName] = js.undefined
     
     /**
       * Disable slides animation
       * @default false
       */
-    var disableAnimation: js.UndefOr[Boolean] = js.native
+    var disableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable swipe before first slide and after last slide
       * @default false
       */
-    var disableEdgeSwiping: js.UndefOr[Boolean] = js.native
+    var disableEdgeSwiping: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable mouse swipe/dragging
       */
-    var dragging: js.UndefOr[Boolean] = js.native
+    var dragging: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Animation easing function
       * @see https://github.com/d3/d3-ease
       */
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
     /**
       * Animation easing function when swipe exceeds edge
       * @see https://github.com/d3/d3-ease
       */
-    var edgeEasing: js.UndefOr[String] = js.native
+    var edgeEasing: js.UndefOr[String] = js.undefined
     
     /**
       * When set to true, disable keyboard controls
       * @default false
       */
-    var enableKeyboardControls: js.UndefOr[Boolean] = js.native
+    var enableKeyboardControls: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Used to set overflow style property on slider frame
       * @default 'hidden'
       */
-    var frameOverflow: js.UndefOr[String] = js.native
+    var frameOverflow: js.UndefOr[String] = js.undefined
     
     /**
       * Used to set the margin of the slider frame.
@@ -244,205 +242,205 @@ object mod {
       * @example '0px 20px'
       * @example '500px'
       */
-    var framePadding: js.UndefOr[String] = js.native
+    var framePadding: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to apply styles to the container of a control.
       */
-    var getControlsContainerStyles: js.UndefOr[js.Function1[/* key */ CarouselControlContainerProp, CSSProperties]] = js.native
+    var getControlsContainerStyles: js.UndefOr[js.Function1[/* key */ CarouselControlContainerProp, CSSProperties]] = js.undefined
     
     /**
       * Used to hardcode the slider height
       * @example '80%'
       * @example '500px'
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /**
       * Change the height of the slides based either on the first slide,
       * the current slide, or the maximum height of all slides.
       */
-    var heightMode: js.UndefOr[CarouselHeightModeProp] = js.native
+    var heightMode: js.UndefOr[CarouselHeightModeProp] = js.undefined
     
     /**
       * Initial height of the slides (px)
       */
-    var initialSlideHeight: js.UndefOr[Double] = js.native
+    var initialSlideHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Initial width of the slides (px)
       */
-    var initialSlideWidth: js.UndefOr[Double] = js.native
+    var initialSlideWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Ref to pass to carousel element
       */
-    var innerRef: js.UndefOr[RefObject[HTMLInputElement]] = js.native
+    var innerRef: js.UndefOr[RefObject[HTMLInputElement]] = js.undefined
     
     /**
       * When enableKeyboardControls is enabled, Configure keyCodes for corresponding slide actions as array of keyCodes
       */
-    var keyCodeConfig: js.UndefOr[slideActioninCarouselSlid] = js.native
+    var keyCodeConfig: js.UndefOr[slideActioninCarouselSlid] = js.undefined
     
     /**
       * optional callback function
       */
-    var onDragStart: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.native
+    var onDragStart: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.undefined
     
     /**
       * Window onResize callback
       */
-    var onResize: js.UndefOr[js.Function0[Unit]] = js.native
+    var onResize: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Adds a number value to set the scale of the opacity for the 'scroll3d' transition mode.
       * @default 0.65
       */
-    var opacityScale: js.UndefOr[Double] = js.native
+    var opacityScale: js.UndefOr[Double] = js.undefined
     
     /**
       * Pause autoPlay when mouse is over carousel
       * @default true
       */
-    var pauseOnHover: js.UndefOr[Boolean] = js.native
+    var pauseOnHover: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Function for rendering aria-live announcement messages
       */
     var renderAnnounceSlideMessage: js.UndefOr[
         js.Function1[/* hasCurrentSlideSlideCount */ CarouselSlideRenderControlProps, String]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Function for rendering bottom center control
       */
-    var renderBottomCenterControls: js.UndefOr[CarouselRenderControl | Null] = js.native
+    var renderBottomCenterControls: js.UndefOr[CarouselRenderControl | Null] = js.undefined
     
     /**
       * Function for rendering bottom left control
       */
-    var renderBottomLeftControls: js.UndefOr[CarouselRenderControl | Null] = js.native
+    var renderBottomLeftControls: js.UndefOr[CarouselRenderControl | Null] = js.undefined
     
     /**
       * Function for rendering bottom right control
       */
-    var renderBottomRightControls: js.UndefOr[CarouselRenderControl | Null] = js.native
+    var renderBottomRightControls: js.UndefOr[CarouselRenderControl | Null] = js.undefined
     
     /**
       * Function for rendering center center control
       */
-    var renderCenterCenterControls: js.UndefOr[CarouselRenderControl | Null] = js.native
+    var renderCenterCenterControls: js.UndefOr[CarouselRenderControl | Null] = js.undefined
     
     /**
       * Function for rendering center left control
       */
-    var renderCenterLeftControls: js.UndefOr[CarouselRenderControl | Null] = js.native
+    var renderCenterLeftControls: js.UndefOr[CarouselRenderControl | Null] = js.undefined
     
     /**
       * Function for rendering center right control
       */
-    var renderCenterRightControls: js.UndefOr[CarouselRenderControl | Null] = js.native
+    var renderCenterRightControls: js.UndefOr[CarouselRenderControl | Null] = js.undefined
     
     /**
       * Function for rendering top center control
       */
-    var renderTopCenterControls: js.UndefOr[CarouselRenderControl | Null] = js.native
+    var renderTopCenterControls: js.UndefOr[CarouselRenderControl | Null] = js.undefined
     
     /**
       * Function for rendering top left control
       */
-    var renderTopLeftControls: js.UndefOr[CarouselRenderControl | Null] = js.native
+    var renderTopLeftControls: js.UndefOr[CarouselRenderControl | Null] = js.undefined
     
     /**
       * Function for rendering top right control
       */
-    var renderTopRightControls: js.UndefOr[CarouselRenderControl | Null] = js.native
+    var renderTopRightControls: js.UndefOr[CarouselRenderControl | Null] = js.undefined
     
     /**
       * Supports 'page' and 'remainder' scroll modes.
       * Defaults to 'remainder'.
       */
-    var scrollMode: js.UndefOr[CarouselScrollModeProp] = js.native
+    var scrollMode: js.UndefOr[CarouselScrollModeProp] = js.undefined
     
     /**
       * Manually set the index of the slide to be shown
       */
-    var slideIndex: js.UndefOr[Double] = js.native
+    var slideIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * While using prop animation = "zoom", you can
       * configure space around current slide with slideOffset.
       */
-    var slideOffset: js.UndefOr[Double] = js.native
+    var slideOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * Manually set slideWidth
       * @example '20px'
       * @example 0.8
       */
-    var slideWidth: js.UndefOr[CarouselSlideWidthProp] = js.native
+    var slideWidth: js.UndefOr[CarouselSlideWidthProp] = js.undefined
     
     /**
       * Slides to scroll at once. Set to "auto"
       * to always scroll the current number of visible slides
       */
-    var slidesToScroll: js.UndefOr[CarouselSlidesToScrollProp] = js.native
+    var slidesToScroll: js.UndefOr[CarouselSlidesToScrollProp] = js.undefined
     
     /**
       * Slides to show at once
       */
-    var slidesToShow: js.UndefOr[Double] = js.native
+    var slidesToShow: js.UndefOr[Double] = js.undefined
     
     /**
       * Animation duration
       */
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
     /**
       * style object
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Enable touch swipe/dragging
       */
-    var swiping: js.UndefOr[Boolean] = js.native
+    var swiping: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the way slides transition from one to the next
       */
-    var transitionMode: js.UndefOr[CarouselTransitionModeProp] = js.native
+    var transitionMode: js.UndefOr[CarouselTransitionModeProp] = js.undefined
     
     /**
       * Enable the slides to transition vertically
       */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Used to hardcode the slider width
       * @example '80%'
       * @example '500px'
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
     
     /**
       * Used to remove all controls at once. Overwrites the render[Top, Right, Bottom, Left]CenterControls()
       * @default false
       */
-    var withoutControls: js.UndefOr[Boolean] = js.native
+    var withoutControls: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets infinite wrapAround mode
       * @default false
       */
-    var wrapAround: js.UndefOr[Boolean] = js.native
+    var wrapAround: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Adds a number value to set the scale of zoom when animation === "zoom".
       * The number value should be set in a range of (0,1).
       * @default 0.85
       */
-    var zoomScale: js.UndefOr[Double] = js.native
+    var zoomScale: js.UndefOr[Double] = js.undefined
   }
   object CarouselProps {
     
@@ -856,69 +854,68 @@ object mod {
     def previousSlide: typings.nukaCarousel.nukaCarouselStrings.previousSlide = "previousSlide".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.previousSlide]
   }
   
-  @js.native
   trait CarouselSlideRenderControlProps extends StObject {
     
     /**
       * When displaying more than one slide, sets which position to anchor the current slide to.
       */
-    var cellAlign: CarouselCellAlignProp = js.native
+    var cellAlign: CarouselCellAlignProp
     
     /**
       * Space between slides, as an integer, but reflected as px
       */
-    var cellSpacing: Double = js.native
+    var cellSpacing: Double
     
     /**
       * Current slide index
       */
-    var currentSlide: Double = js.native
+    var currentSlide: Double
     
     /**
       * Current frame width (px)
       */
-    var frameWidth: Double = js.native
+    var frameWidth: Double
     
     /**
       * Go to X slide method
       * @param index Slide's index to go
       */
-    def goToSlide(index: Double): Unit = js.native
+    def goToSlide(index: Double): Unit
     
     /**
       * Go to the next slide method
       */
-    def nextSlide(): Unit = js.native
+    def nextSlide(): Unit
     
     /**
       * Go to the previous slide method
       */
-    def previousSlide(): Unit = js.native
+    def previousSlide(): Unit
     
     /**
       * Total amount of slides
       */
-    var slideCount: Double = js.native
+    var slideCount: Double
     
     /**
       * Current slide width (px)
       */
-    var slideWidth: Double = js.native
+    var slideWidth: Double
     
     /**
       * Slides to scroll at once
       */
-    var slidesToScroll: CarouselSlidesToScrollProp = js.native
+    var slidesToScroll: CarouselSlidesToScrollProp
     
     /**
       * Slides to show at once
       */
-    var slidesToShow: Double = js.native
+    var slidesToShow: Double
     
     /**
       * Infinite mode enabled
       */
-    var wrapAround: Boolean = js.native
+    var wrapAround: Boolean
   }
   object CarouselSlideRenderControlProps {
     
@@ -986,64 +983,63 @@ object mod {
   
   type CarouselSlidesToScrollProp = Double | auto
   
-  @js.native
   trait CarouselState extends StObject {
     
     /**
       * Current slide index
       */
-    var currentSlide: Double = js.native
+    var currentSlide: Double
     
     /**
       * Is dragging enabled
       */
-    var dragging: Boolean = js.native
+    var dragging: Boolean
     
     /**
       * Easing function name
       */
-    var easing: String = js.native
+    var easing: String
     
     /**
       * Current frame width
       */
-    var frameWidth: Double = js.native
+    var frameWidth: Double
     
-    var isWrappingAround: Boolean = js.native
+    var isWrappingAround: Boolean
     
     /**
       * Current left value
       */
-    var left: Double = js.native
+    var left: Double
     
-    var pauseOnHover: Boolean = js.native
+    var pauseOnHover: Boolean
     
-    var resetWrapAroundPosition: Boolean = js.native
+    var resetWrapAroundPosition: Boolean
     
     /**
       * Total amount of slides
       */
-    var slideCount: Double = js.native
+    var slideCount: Double
     
     /**
       * Current slide width
       */
-    var slideWidth: CarouselSlideWidthProp = js.native
+    var slideWidth: CarouselSlideWidthProp
     
     /**
       * Slides to scroll at once
       */
-    var slidesToScroll: CarouselSlidesToScrollProp = js.native
+    var slidesToScroll: CarouselSlidesToScrollProp
     
     /**
       * Current top value
       */
-    var top: Double = js.native
+    var top: Double
     
     /**
       * Is infinite mode enabled
       */
-    var wrapToIndex: Boolean = js.native
+    var wrapToIndex: Boolean
   }
   object CarouselState {
     

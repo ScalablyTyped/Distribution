@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecAction extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ExecAction extends StObject {
     * is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you
     * need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
     */
-  var command: js.UndefOr[js.Array[String]] = js.native
+  var command: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ExecAction {
   

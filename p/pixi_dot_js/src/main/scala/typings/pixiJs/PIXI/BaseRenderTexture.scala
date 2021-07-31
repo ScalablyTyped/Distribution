@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,14 +45,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait BaseRenderTexture extends BaseTexture {
+trait BaseRenderTexture
+  extends StObject
+     with BaseTexture {
   
   /**
     * The data structure for the filters.
     *
     * @member {Object[]} PIXI.BaseRenderTexture#filterStack
     */
-  var filterStack: js.Array[_] = js.native
+  var filterStack: js.Array[js.Any] = js.native
   
   /**
     * The data structure for the stencil masks.

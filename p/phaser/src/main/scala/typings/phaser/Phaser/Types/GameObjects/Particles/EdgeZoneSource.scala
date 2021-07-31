@@ -3,20 +3,33 @@ package typings.phaser.Phaser.Types.GameObjects.Particles
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EdgeZoneSource extends StObject {
   
   /**
     * A function placing points on the sources edge or edges.
     */
-  def getPoints(quantity: integer): Unit = js.native
-  def getPoints(quantity: integer, stepRate: Double): Unit = js.native
+  def getPoints(quantity: integer): Unit
+  def getPoints(quantity: integer, stepRate: Double): Unit
   /**
     * A function placing points on the sources edge or edges.
     */
   @JSName("getPoints")
-  var getPoints_Original: EdgeZoneSourceCallback = js.native
+  var getPoints_Original: EdgeZoneSourceCallback
+}
+object EdgeZoneSource {
+  
+  @scala.inline
+  def apply(getPoints: (/* quantity */ integer, /* stepRate */ js.UndefOr[Double]) => Unit): EdgeZoneSource = {
+    val __obj = js.Dynamic.literal(getPoints = js.Any.fromFunction2(getPoints))
+    __obj.asInstanceOf[EdgeZoneSource]
+  }
+  
+  @scala.inline
+  implicit class EdgeZoneSourceMutableBuilder[Self <: EdgeZoneSource] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setGetPoints(value: (/* quantity */ integer, /* stepRate */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "getPoints", js.Any.fromFunction2(value))
+  }
 }

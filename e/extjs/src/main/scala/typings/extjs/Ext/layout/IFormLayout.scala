@@ -3,11 +3,11 @@ package typings.extjs.Ext.layout
 import typings.extjs.Ext.layout.container.IContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFormLayout extends IContainer {
+trait IFormLayout
+  extends StObject
+     with IContainer {
   
   /** [Method] Handles overflow processing for a container
     * @param ownerContext Ext.layout.ContextItem
@@ -21,19 +21,19 @@ trait IFormLayout extends IContainer {
       /* dimensions */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Called to perform the calculations for this layout
     * @param ownerContext Object
     */
   @JSName("calculate")
-  var calculate_IFormLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var calculate_IFormLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] This method if implemented is called at the end of the cycle in which this layout completes by not setting done to
     * @param ownerContext Object
     */
   @JSName("completeLayout")
-  var completeLayout_IFormLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var completeLayout_IFormLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Creates an element that makes bottom right body padding consistent across browsers
     * @param out Object
@@ -41,7 +41,7 @@ trait IFormLayout extends IContainer {
     */
   var doRenderPadder: js.UndefOr[
     js.Function2[/* out */ js.UndefOr[js.Any], /* renderData */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns the container size that of the target
     * @param ownerContext Ext.layout.ContextItem The owner's context item.
@@ -55,31 +55,31 @@ trait IFormLayout extends IContainer {
       /* ownerContext */ js.UndefOr[IContextItem], 
       /* inDom */ js.UndefOr[Boolean], 
       /* ignoreOverflow */ js.UndefOr[Boolean], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns an object describing how this layout manages the size of the given component
     * @param item Object
     * @returns Ext.layout.SizePolicy An object describing the sizing done by the layout for this item.
     */
   @JSName("getItemSizePolicy")
-  var getItemSizePolicy_IFormLayout: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], ISizePolicy]] = js.native
+  var getItemSizePolicy_IFormLayout: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], ISizePolicy]] = js.undefined
   
   /** [Method] returns the overflow x style of the render target
     * @param ownerContext Ext.layout.ContextItem
     * @returns String
     */
-  var getOverflowXStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], String]] = js.native
+  var getOverflowXStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], String]] = js.undefined
   
   /** [Method] returns the overflow y style of the render target
     * @param ownerContext Ext.layout.ContextItem
     * @returns String
     */
-  var getOverflowYStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], String]] = js.native
+  var getOverflowYStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], String]] = js.undefined
   
   /** [Property] (Object) */
-  var getScrollRangeFlags: js.UndefOr[js.Any] = js.native
+  var getScrollRangeFlags: js.UndefOr[js.Any] = js.undefined
 }
 object IFormLayout {
   
@@ -120,7 +120,7 @@ object IFormLayout {
     
     @scala.inline
     def setGetContainerSize(
-      value: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean], /* ignoreOverflow */ js.UndefOr[Boolean]) => _
+      value: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean], /* ignoreOverflow */ js.UndefOr[Boolean]) => js.Any
     ): Self = StObject.set(x, "getContainerSize", js.Any.fromFunction3(value))
     
     @scala.inline

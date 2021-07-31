@@ -2,26 +2,24 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFailuresForLicenseConfigurationOperationsRequest extends StObject {
   
   /**
     * Amazon Resource Name of the license configuration.
     */
-  var LicenseConfigurationArn: String = js.native
+  var LicenseConfigurationArn: String
   
   /**
     * Maximum number of results to return in a single call.
     */
-  var MaxResults: js.UndefOr[BoxInteger] = js.native
+  var MaxResults: js.UndefOr[BoxInteger] = js.undefined
   
   /**
     * Token for the next set of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListFailuresForLicenseConfigurationOperationsRequest {
   

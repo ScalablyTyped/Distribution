@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformEncryption extends StObject {
   
   /**
     * An MLUserDataEncryption object containing the encryption mode and customer-provided KMS key ID.
     */
-  var MlUserDataEncryption: js.UndefOr[MLUserDataEncryption] = js.native
+  var MlUserDataEncryption: js.UndefOr[MLUserDataEncryption] = js.undefined
   
   /**
     * The name of the security configuration.
     */
-  var TaskRunSecurityConfigurationName: js.UndefOr[NameString] = js.native
+  var TaskRunSecurityConfigurationName: js.UndefOr[NameString] = js.undefined
 }
 object TransformEncryption {
   

@@ -2,10 +2,8 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchableWithoutFeedbackPropsAndroid extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait TouchableWithoutFeedbackPropsAndroid extends StObject {
     *
     * @platform android
     */
-  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.native
+  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
 }
 object TouchableWithoutFeedbackPropsAndroid {
   

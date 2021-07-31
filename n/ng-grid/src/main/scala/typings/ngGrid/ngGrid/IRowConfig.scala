@@ -2,29 +2,27 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRowConfig extends StObject {
   
-  def afterSelectionChangeCallback(): Unit = js.native
+  def afterSelectionChangeCallback(): Unit
   
-  def beforeSelectionChangeCallback(): Unit = js.native
+  def beforeSelectionChangeCallback(): Unit
   
-  var enableCellSelection: Boolean = js.native
+  var enableCellSelection: Boolean
   
-  var enableRowSelection: Boolean = js.native
+  var enableRowSelection: Boolean
   
-  var jqueryUITheme: Boolean = js.native
+  var jqueryUITheme: Boolean
   
-  var rowClasses: js.Array[String] = js.native
+  var rowClasses: js.Array[String]
   
-  var rowHeight: Double = js.native
+  var rowHeight: Double
   
-  var selectWithCheckboxOnly: Boolean = js.native
+  var selectWithCheckboxOnly: Boolean
   
-  var selectedItems: js.Array[_] = js.native
+  var selectedItems: js.Array[js.Any]
 }
 object IRowConfig {
   
@@ -38,7 +36,7 @@ object IRowConfig {
     rowClasses: js.Array[String],
     rowHeight: Double,
     selectWithCheckboxOnly: Boolean,
-    selectedItems: js.Array[_]
+    selectedItems: js.Array[js.Any]
   ): IRowConfig = {
     val __obj = js.Dynamic.literal(afterSelectionChangeCallback = js.Any.fromFunction0(afterSelectionChangeCallback), beforeSelectionChangeCallback = js.Any.fromFunction0(beforeSelectionChangeCallback), enableCellSelection = enableCellSelection.asInstanceOf[js.Any], enableRowSelection = enableRowSelection.asInstanceOf[js.Any], jqueryUITheme = jqueryUITheme.asInstanceOf[js.Any], rowClasses = rowClasses.asInstanceOf[js.Any], rowHeight = rowHeight.asInstanceOf[js.Any], selectWithCheckboxOnly = selectWithCheckboxOnly.asInstanceOf[js.Any], selectedItems = selectedItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRowConfig]
@@ -75,7 +73,7 @@ object IRowConfig {
     def setSelectWithCheckboxOnly(value: Boolean): Self = StObject.set(x, "selectWithCheckboxOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedItems(value: js.Array[_]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    def setSelectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))

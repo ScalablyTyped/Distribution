@@ -2,23 +2,23 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Menu //////////////////////////////////////////////////
-@js.native
-trait MenuOptions extends MenuEvents {
+trait MenuOptions
+  extends StObject
+     with MenuEvents {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var icons: js.UndefOr[js.Any] = js.native
+  var icons: js.UndefOr[js.Any] = js.undefined
   
-  var menus: js.UndefOr[String] = js.native
+  var menus: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[js.Any] = js.native
+  var position: js.UndefOr[js.Any] = js.undefined
   
   // TODO
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object MenuOptions {
   

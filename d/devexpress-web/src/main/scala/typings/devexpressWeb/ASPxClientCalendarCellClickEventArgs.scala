@@ -3,19 +3,19 @@ package typings.devexpressWeb
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDateEdit.CalendarCellClick event.
   */
-@js.native
-trait ASPxClientCalendarCellClickEventArgs extends ASPxClientEventArgs {
+trait ASPxClientCalendarCellClickEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the date that relates to the processed calendar's cell click.
     */
-  var date: Date = js.native
+  var date: Date
 }
 object ASPxClientCalendarCellClickEventArgs {
   

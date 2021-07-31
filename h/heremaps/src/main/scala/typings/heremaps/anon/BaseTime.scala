@@ -2,23 +2,21 @@ package typings.heremaps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseTime extends StObject {
   
-  var baseTime: Double = js.native
+  var baseTime: Double
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var flags: js.Array[String] = js.native
+  var flags: js.Array[String]
   
-  var text: String = js.native
+  var text: String
   
-  var trafficTime: Double = js.native
+  var trafficTime: Double
   
-  var travelTime: Double = js.native
+  var travelTime: Double
 }
 object BaseTime {
   

@@ -3,14 +3,13 @@ package typings.jointjs.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Direction
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var direction: js.UndefOr[typings.jointjs.mod.dia.Direction] = js.native
+  var direction: js.UndefOr[typings.jointjs.mod.dia.Direction] = js.undefined
 }
 object Direction {
   

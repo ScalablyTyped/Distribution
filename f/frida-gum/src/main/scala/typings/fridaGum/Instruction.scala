@@ -2,41 +2,39 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instruction extends StObject {
   
   /**
     * Address (EIP) of this instruction.
     */
-  var address: NativePointer = js.native
+  var address: NativePointer
   
   /**
     * Group names that this instruction belongs to.
     */
-  var groups: js.Array[String] = js.native
+  var groups: js.Array[String]
   
   /**
     * Instruction mnemonic.
     */
-  var mnemonic: String = js.native
+  var mnemonic: String
   
   /**
     * Pointer to the next instruction, so you can `parse()` it.
     */
-  var next: NativePointer = js.native
+  var next: NativePointer
   
   /**
     * String representation of instruction operands.
     */
-  var opStr: String = js.native
+  var opStr: String
   
   /**
     * Size of this instruction.
     */
-  var size: Double = js.native
+  var size: Double
 }
 object Instruction {
   

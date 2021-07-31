@@ -11,8 +11,8 @@ A very polite lock file utility, which endeavors to not litter, and to wait pati
 | Full name          | lockfile |
 | Keywords           | lockfile, lock, file, fs, O_EXCL |
 | # releases         | 0 |
-| # dependents       | 226 |
-| # downloads        | 46001644 |
+| # dependents       | 237 |
+| # downloads        | 55993032 |
 | # stars            | 13 |
 
 ## Links

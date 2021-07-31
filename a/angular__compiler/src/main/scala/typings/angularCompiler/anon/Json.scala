@@ -2,15 +2,13 @@ package typings.angularCompiler.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Json extends StObject {
   
-  var exportAs: js.Array[ExportAs] = js.native
+  var exportAs: js.Array[ExportAs]
   
-  var json: String = js.native
+  var json: String
 }
 object Json {
   

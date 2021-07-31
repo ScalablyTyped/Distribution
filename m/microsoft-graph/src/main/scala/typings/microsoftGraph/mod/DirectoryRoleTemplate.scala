@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectoryRoleTemplate extends DirectoryObject {
+trait DirectoryRoleTemplate
+  extends StObject
+     with DirectoryObject {
   
   // The description to set for the directory role. Read-only.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The display name to set for the directory role. Read-only.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DirectoryRoleTemplate {
   

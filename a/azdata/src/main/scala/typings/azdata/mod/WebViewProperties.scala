@@ -3,25 +3,25 @@ package typings.azdata.mod
 import typings.vscode.mod.WebviewOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebViewProperties extends ComponentProperties {
+trait WebViewProperties
+  extends StObject
+     with ComponentProperties {
   
   /**
     * Contents of the webview.
     *
     * Should be a complete html document.
     */
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[js.Any] = js.native
+  var message: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Content settings for the webview.
     */
-  var options: js.UndefOr[WebviewOptions] = js.native
+  var options: js.UndefOr[WebviewOptions] = js.undefined
 }
 object WebViewProperties {
   

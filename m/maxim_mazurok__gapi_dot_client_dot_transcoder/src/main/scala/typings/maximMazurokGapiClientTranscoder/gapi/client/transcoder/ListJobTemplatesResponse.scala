@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobTemplatesResponse extends StObject {
   
   /** List of job templates in the specified region. */
-  var jobTemplates: js.UndefOr[js.Array[JobTemplate]] = js.native
+  var jobTemplates: js.UndefOr[js.Array[JobTemplate]] = js.undefined
   
   /** The pagination token. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListJobTemplatesResponse {
   

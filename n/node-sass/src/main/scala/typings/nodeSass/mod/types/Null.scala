@@ -3,12 +3,11 @@ package typings.nodeSass.mod.types
 import typings.nodeSass.mod._ImporterReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Null
-  extends Value
+  extends StObject
+     with Value
      with _ImporterReturnType {
   
   /**
@@ -17,7 +16,7 @@ trait Null
     * allow things that aren't types.Null to match it in case statements and
     * assignments.
     */
-  val ___NULL___ : js.Symbol = js.native
+  val ___NULL___ : js.Symbol
 }
 object Null {
   

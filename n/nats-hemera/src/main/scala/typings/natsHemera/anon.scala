@@ -2,21 +2,19 @@ package typings.natsHemera
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ExpectedMessages extends StObject {
     
-    var expectedMessages: Double = js.native
+    var expectedMessages: Double
     
-    var maxMessages: Double = js.native
+    var maxMessages: Double
     
-    var pubsub: Boolean = js.native
+    var pubsub: Boolean
     
-    var topic: String = js.native
+    var topic: String
   }
   object ExpectedMessages {
     
@@ -43,16 +41,15 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxMessages extends StObject {
     
-    var maxMessages: Double = js.native
+    var maxMessages: Double
     
-    var pubsub: Boolean = js.native
+    var pubsub: Boolean
     
-    var queue: String = js.native
+    var queue: String
     
-    var topic: String = js.native
+    var topic: String
   }
   object MaxMessages {
     

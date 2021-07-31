@@ -2,19 +2,17 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IReadyobject extends StObject {
   
-  var context: js.UndefOr[js.Object] = js.native
+  var context: js.UndefOr[js.Object] = js.undefined
   
-  var errorCallback: js.UndefOr[js.Function0[Unit]] = js.native
+  var errorCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var require: js.UndefOr[js.Array[String]] = js.native
+  var require: js.UndefOr[js.Array[String]] = js.undefined
   
-  var successCallback: js.UndefOr[js.Function0[Unit]] = js.native
+  var successCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IReadyobject {
   

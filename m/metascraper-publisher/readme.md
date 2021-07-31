@@ -10,9 +10,9 @@ Get publisher property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-publisher |
 | Keywords           | metascraper, publisher |
-| # releases         | 82 |
-| # dependents       | 15 |
-| # downloads        | 480202 |
+| # releases         | 102 |
+| # dependents       | 16 |
+| # downloads        | 705474 |
 | # stars            | 0 |
 
 ## Links

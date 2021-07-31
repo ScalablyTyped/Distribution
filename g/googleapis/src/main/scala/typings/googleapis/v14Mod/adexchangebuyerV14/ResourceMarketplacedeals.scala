@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.4", "adexchangebuyer_v1_4.Resource$Marketplacedeals")
@@ -31,7 +30,7 @@ class ResourceMarketplacedeals protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaDeleteOrderDealsResponse] = js.native
   def delete(callback: BodyResponseCallback[SchemaDeleteOrderDealsResponse]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDeleteOrderDealsResponse] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDeleteOrderDealsResponse] = js.native
   def delete(params: ParamsResourceMarketplacedealsDelete): GaxiosPromise[SchemaDeleteOrderDealsResponse] = js.native
   def delete(
     params: ParamsResourceMarketplacedealsDelete,
@@ -64,7 +63,7 @@ class ResourceMarketplacedeals protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaAddOrderDealsResponse] = js.native
   def insert(callback: BodyResponseCallback[SchemaAddOrderDealsResponse]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAddOrderDealsResponse] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAddOrderDealsResponse] = js.native
   def insert(params: ParamsResourceMarketplacedealsInsert): GaxiosPromise[SchemaAddOrderDealsResponse] = js.native
   def insert(
     params: ParamsResourceMarketplacedealsInsert,
@@ -97,7 +96,7 @@ class ResourceMarketplacedeals protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGetOrderDealsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGetOrderDealsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetOrderDealsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetOrderDealsResponse] = js.native
   def list(params: ParamsResourceMarketplacedealsList): GaxiosPromise[SchemaGetOrderDealsResponse] = js.native
   def list(
     params: ParamsResourceMarketplacedealsList,
@@ -130,7 +129,7 @@ class ResourceMarketplacedeals protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaEditAllOrderDealsResponse] = js.native
   def update(callback: BodyResponseCallback[SchemaEditAllOrderDealsResponse]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEditAllOrderDealsResponse] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEditAllOrderDealsResponse] = js.native
   def update(params: ParamsResourceMarketplacedealsUpdate): GaxiosPromise[SchemaEditAllOrderDealsResponse] = js.native
   def update(
     params: ParamsResourceMarketplacedealsUpdate,

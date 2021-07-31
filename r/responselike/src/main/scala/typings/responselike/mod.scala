@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,9 @@ object mod {
     */
   @JSImport("responselike", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ResponseLike {
+  class ^ protected ()
+    extends StObject
+       with ResponseLike {
     /**
       * @param statusCode HTTP response status code.
       * @param headers HTTP headers object. Keys will be automatically lowercased.
@@ -27,22 +28,33 @@ object mod {
       body: Buffer,
       url: String
     ) = this()
+    
+    /* CompleteClass */
+    var body: Buffer = js.native
+    
+    /* CompleteClass */
+    var headers: StringDictionary[js.UndefOr[String | js.Array[String]]] = js.native
+    
+    /* CompleteClass */
+    var statusCode: Double = js.native
+    
+    /* CompleteClass */
+    var url: String = js.native
   }
   
   /**
     * Returns a streamable response object similar to a [Node.js HTTP response stream](https://nodejs.org/api/http.html#http_class_http_incomingmessage).
     */
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stream.Readable * / any */ @js.native
-  trait ResponseLike extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stream.Readable * / any */ trait ResponseLike extends StObject {
     
-    var body: Buffer = js.native
+    var body: Buffer
     
-    var headers: StringDictionary[js.UndefOr[String | js.Array[String]]] = js.native
+    var headers: StringDictionary[js.UndefOr[String | js.Array[String]]]
     
-    var statusCode: Double = js.native
+    var statusCode: Double
     
-    var url: String = js.native
+    var url: String
   }
   object ResponseLike {
     

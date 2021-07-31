@@ -4,25 +4,23 @@ import typings.cesium.mod.Cartesian3
 import typings.cesium.mod.Matrix4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugShowBoundingVolume extends StObject {
   
-  var center: js.UndefOr[Cartesian3] = js.native
+  var center: js.UndefOr[Cartesian3] = js.undefined
   
-  var debugShowBoundingVolume: js.UndefOr[Boolean] = js.native
+  var debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[js.Any] = js.native
+  var id: js.UndefOr[js.Any] = js.undefined
   
-  var material: js.UndefOr[typings.cesium.mod.Material] = js.native
+  var material: js.UndefOr[typings.cesium.mod.Material] = js.undefined
   
-  var modelMatrix: js.UndefOr[Matrix4] = js.native
+  var modelMatrix: js.UndefOr[Matrix4] = js.undefined
   
-  var radii: js.UndefOr[Cartesian3] = js.native
+  var radii: js.UndefOr[Cartesian3] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object DebugShowBoundingVolume {
   

@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetResource extends StObject {
   
   // Indicates the visible name defined for the resource. Typically specified when the resource is created.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // When type is set to Group, this indicates the group type.
-  var groupType: js.UndefOr[NullableOption[GroupType]] = js.native
+  var groupType: js.UndefOr[NullableOption[GroupType]] = js.undefined
   
   // Indicates the unique ID of the resource.
-  var id: js.UndefOr[NullableOption[String]] = js.native
+  var id: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates name, old value and new value of each attribute that changed. Property values depend on the operation type.
-  var modifiedProperties: js.UndefOr[NullableOption[js.Array[ModifiedProperty]]] = js.native
+  var modifiedProperties: js.UndefOr[NullableOption[js.Array[ModifiedProperty]]] = js.undefined
   
   // Describes the resource type. Example values include Application, Group, ServicePrincipal, and User.
-  var `type`: js.UndefOr[NullableOption[String]] = js.native
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
   
   // When type is set to User, this includes the user name that initiated the action; null for other types.
-  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object TargetResource {
   

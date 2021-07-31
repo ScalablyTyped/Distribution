@@ -3,15 +3,15 @@ package typings.activexLibreoffice.com_.sun.star.configuration.backend
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to versioned configuration component schemas.
   * @since OOo 2.0
   */
-@js.native
-trait XVersionedSchemaSupplier extends XSchemaSupplier {
+trait XVersionedSchemaSupplier
+  extends StObject
+     with XSchemaSupplier {
   
   /**
     * Returns the schema version for a particular component.
@@ -20,7 +20,7 @@ trait XVersionedSchemaSupplier extends XSchemaSupplier {
     * @throws com::sun::star::lang::IllegalArgumentException if the component identifier is invalid.
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the version data.
     */
-  def getSchemaVersion(aComponent: String): String = js.native
+  def getSchemaVersion(aComponent: String): String
 }
 object XVersionedSchemaSupplier {
   

@@ -4,32 +4,30 @@ import typings.materializeCss.M.Carousel
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.CarouselOptions> */
-@js.native
 trait PartialCarouselOptions extends StObject {
   
-  var dist: js.UndefOr[Double] = js.native
+  var dist: js.UndefOr[Double] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var fullWidth: js.UndefOr[Boolean] = js.native
+  var fullWidth: js.UndefOr[Boolean] = js.undefined
   
-  var indicators: js.UndefOr[Boolean] = js.native
+  var indicators: js.UndefOr[Boolean] = js.undefined
   
-  var noWrap: js.UndefOr[Boolean] = js.native
+  var noWrap: js.UndefOr[Boolean] = js.undefined
   
-  var numVisible: js.UndefOr[Double] = js.native
+  var numVisible: js.UndefOr[Double] = js.undefined
   
   var onCycleTo: js.UndefOr[
     js.ThisFunction2[/* this */ Carousel, /* current */ Element, /* dragged */ Boolean, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var shift: js.UndefOr[Double] = js.native
+  var shift: js.UndefOr[Double] = js.undefined
 }
 object PartialCarouselOptions {
   

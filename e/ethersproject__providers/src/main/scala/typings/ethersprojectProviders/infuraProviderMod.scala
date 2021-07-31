@@ -5,10 +5,10 @@ import typings.ethersprojectNetworks.typesMod.Networkish
 import typings.ethersprojectProviders.formatterMod.CommunityResourcable
 import typings.ethersprojectProviders.urlJsonRpcProviderMod.UrlJsonRpcProvider
 import typings.ethersprojectProviders.websocketProviderMod.WebSocketProvider
+import typings.ethersprojectWeb.ethersprojectWebStrings.block
 import typings.ethersprojectWeb.mod.ConnectionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object infuraProviderMod {
@@ -17,7 +17,8 @@ object infuraProviderMod {
   @js.native
   class InfuraProvider () extends UrlJsonRpcProvider {
     def this(network: Networkish) = this()
-    def this(network: js.UndefOr[Networkish], apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: js.Any) = this()
+    def this(network: Networkish, apiKey: js.Any) = this()
     
     val projectId: String = js.native
     
@@ -26,23 +27,24 @@ object infuraProviderMod {
   /* static members */
   object InfuraProvider {
     
-    @JSImport("@ethersproject/providers/lib/infura-provider", "InfuraProvider.getApiKey")
+    @JSImport("@ethersproject/providers/lib/infura-provider", "InfuraProvider")
     @js.native
-    def getApiKey(apiKey: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/providers/lib/infura-provider", "InfuraProvider.getUrl")
-    @js.native
-    def getUrl(network: Network, apiKey: js.Any): ConnectionInfo = js.native
+    @scala.inline
+    def getApiKey(apiKey: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@ethersproject/providers/lib/infura-provider", "InfuraProvider.getWebSocketProvider")
-    @js.native
-    def getWebSocketProvider(): InfuraWebSocketProvider = js.native
-    @JSImport("@ethersproject/providers/lib/infura-provider", "InfuraProvider.getWebSocketProvider")
-    @js.native
-    def getWebSocketProvider(network: js.UndefOr[Networkish], apiKey: js.Any): InfuraWebSocketProvider = js.native
-    @JSImport("@ethersproject/providers/lib/infura-provider", "InfuraProvider.getWebSocketProvider")
-    @js.native
-    def getWebSocketProvider(network: Networkish): InfuraWebSocketProvider = js.native
+    @scala.inline
+    def getUrl(network: Network, apiKey: js.Any): ConnectionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[ConnectionInfo]
+    
+    @scala.inline
+    def getWebSocketProvider(): InfuraWebSocketProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")().asInstanceOf[InfuraWebSocketProvider]
+    @scala.inline
+    def getWebSocketProvider(network: Unit, apiKey: js.Any): InfuraWebSocketProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[InfuraWebSocketProvider]
+    @scala.inline
+    def getWebSocketProvider(network: Networkish): InfuraWebSocketProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any]).asInstanceOf[InfuraWebSocketProvider]
+    @scala.inline
+    def getWebSocketProvider(network: Networkish, apiKey: js.Any): InfuraWebSocketProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[InfuraWebSocketProvider]
   }
   
   @JSImport("@ethersproject/providers/lib/infura-provider", "InfuraWebSocketProvider")
@@ -51,12 +53,20 @@ object infuraProviderMod {
     extends WebSocketProvider
        with CommunityResourcable {
     def this(network: Networkish) = this()
-    def this(network: js.UndefOr[Networkish], apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: js.Any) = this()
+    def this(network: Networkish, apiKey: js.Any) = this()
     
     val apiKey: String = js.native
     
+    /* CompleteClass */
+    override def isCommunityResource(): Boolean = js.native
+    
     /* InferMemberOverrides */
     override def lookupAddress(address: String): js.Promise[String] = js.native
+    
+    /* InferMemberOverrides */
+    @JSName("once")
+    override def once_block(eventName: block, handler: js.Function0[Unit]): Unit = js.native
     
     val projectId: String = js.native
     

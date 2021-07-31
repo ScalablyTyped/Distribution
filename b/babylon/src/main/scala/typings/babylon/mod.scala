@@ -6,56 +6,54 @@ import typings.babylon.babylonStrings.module
 import typings.babylon.babylonStrings.script
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("babylon", "parse")
+  @JSImport("babylon", JSImport.Namespace)
   @js.native
-  def parse(code: String): File_ = js.native
-  @JSImport("babylon", "parse")
-  @js.native
-  def parse(code: String, opts: BabylonOptions): File_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("babylon", "parseExpression")
-  @js.native
-  def parseExpression(input: String): Expression = js.native
-  @JSImport("babylon", "parseExpression")
-  @js.native
-  def parseExpression(input: String, options: BabylonOptions): Expression = js.native
+  @scala.inline
+  def parse(code: String): File_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any]).asInstanceOf[File_]
+  @scala.inline
+  def parse(code: String, opts: BabylonOptions): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[File_]
   
-  @js.native
+  @scala.inline
+  def parseExpression(input: String): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  @scala.inline
+  def parseExpression(input: String, options: BabylonOptions): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Expression]
+  
   trait BabylonOptions extends StObject {
     
     /**
       * By default, import and export declarations can only appear at a program's top level.
       * Setting this option to true allows them anywhere where a statement is allowed.
       */
-    var allowImportExportEverywhere: js.UndefOr[Boolean] = js.native
+    var allowImportExportEverywhere: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, a return statement at the top level raises an error. Set this to true to accept such code.
       */
-    var allowReturnOutsideFunction: js.UndefOr[Boolean] = js.native
+    var allowReturnOutsideFunction: js.UndefOr[Boolean] = js.undefined
     
-    var allowSuperOutsideMethod: js.UndefOr[Boolean] = js.native
+    var allowSuperOutsideMethod: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Array containing the plugins that you want to enable.
       */
-    var plugins: js.UndefOr[js.Array[PluginName]] = js.native
+    var plugins: js.UndefOr[js.Array[PluginName]] = js.undefined
     
     /**
       * Correlate output AST nodes with their source filename. Useful when
       * generating code and source maps from the ASTs of multiple input files.
       */
-    var sourceFilename: js.UndefOr[String] = js.native
+    var sourceFilename: js.UndefOr[String] = js.undefined
     
     /**
       * Indicate the mode the code should be parsed in. Can be either "script" or "module".
       */
-    var sourceType: js.UndefOr[script | module] = js.native
+    var sourceType: js.UndefOr[script | module] = js.undefined
   }
   object BabylonOptions {
     

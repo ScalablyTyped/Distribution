@@ -2,21 +2,19 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagProjectRequest extends StObject {
   
   /**
     * The ID of the project to remove tags from.
     */
-  var id: ProjectId = js.native
+  var id: ProjectId
   
   /**
     * The tags to remove from the project.
     */
-  var tags: TagKeys = js.native
+  var tags: TagKeys
 }
 object UntagProjectRequest {
   

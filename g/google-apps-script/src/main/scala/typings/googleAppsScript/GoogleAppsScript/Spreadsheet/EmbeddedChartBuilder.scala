@@ -6,7 +6,6 @@ import typings.googleAppsScript.GoogleAppsScript.Charts.ChartType
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,54 +23,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .build();
   *     sheet.updateChart(chart);
   */
-@js.native
 trait EmbeddedChartBuilder extends StObject {
   
-  def addRange(range: Range): EmbeddedChartBuilder = js.native
+  def addRange(range: Range): EmbeddedChartBuilder
   
-  def asAreaChart(): EmbeddedAreaChartBuilder = js.native
+  def asAreaChart(): EmbeddedAreaChartBuilder
   
-  def asBarChart(): EmbeddedBarChartBuilder = js.native
+  def asBarChart(): EmbeddedBarChartBuilder
   
-  def asColumnChart(): EmbeddedColumnChartBuilder = js.native
+  def asColumnChart(): EmbeddedColumnChartBuilder
   
-  def asComboChart(): EmbeddedComboChartBuilder = js.native
+  def asComboChart(): EmbeddedComboChartBuilder
   
-  def asHistogramChart(): EmbeddedHistogramChartBuilder = js.native
+  def asHistogramChart(): EmbeddedHistogramChartBuilder
   
-  def asLineChart(): EmbeddedLineChartBuilder = js.native
+  def asLineChart(): EmbeddedLineChartBuilder
   
-  def asPieChart(): EmbeddedPieChartBuilder = js.native
+  def asPieChart(): EmbeddedPieChartBuilder
   
-  def asScatterChart(): EmbeddedScatterChartBuilder = js.native
+  def asScatterChart(): EmbeddedScatterChartBuilder
   
-  def asTableChart(): EmbeddedTableChartBuilder = js.native
+  def asTableChart(): EmbeddedTableChartBuilder
   
-  def build(): EmbeddedChart = js.native
+  def build(): EmbeddedChart
   
-  def clearRanges(): EmbeddedChartBuilder = js.native
+  def clearRanges(): EmbeddedChartBuilder
   
-  def getChartType(): ChartType = js.native
+  def getChartType(): ChartType
   
-  def getContainer(): ContainerInfo = js.native
+  def getContainer(): ContainerInfo
   
-  def getRanges(): js.Array[Range] = js.native
+  def getRanges(): js.Array[Range]
   
-  def removeRange(range: Range): EmbeddedChartBuilder = js.native
+  def removeRange(range: Range): EmbeddedChartBuilder
   
-  def setChartType(`type`: ChartType): EmbeddedChartBuilder = js.native
+  def setChartType(`type`: ChartType): EmbeddedChartBuilder
   
-  def setHiddenDimensionStrategy(strategy: ChartHiddenDimensionStrategy): EmbeddedChartBuilder = js.native
+  def setHiddenDimensionStrategy(strategy: ChartHiddenDimensionStrategy): EmbeddedChartBuilder
   
-  def setMergeStrategy(mergeStrategy: ChartMergeStrategy): EmbeddedChartBuilder = js.native
+  def setMergeStrategy(mergeStrategy: ChartMergeStrategy): EmbeddedChartBuilder
   
-  def setNumHeaders(headers: Integer): EmbeddedChartBuilder = js.native
+  def setNumHeaders(headers: Integer): EmbeddedChartBuilder
   
-  def setOption(option: String, value: js.Any): EmbeddedChartBuilder = js.native
+  def setOption(option: String, value: js.Any): EmbeddedChartBuilder
   
-  def setPosition(anchorRowPos: Integer, anchorColPos: Integer, offsetX: Integer, offsetY: Integer): EmbeddedChartBuilder = js.native
+  def setPosition(anchorRowPos: Integer, anchorColPos: Integer, offsetX: Integer, offsetY: Integer): EmbeddedChartBuilder
   
-  def setTransposeRowsAndColumns(transpose: Boolean): EmbeddedChartBuilder = js.native
+  def setTransposeRowsAndColumns(transpose: Boolean): EmbeddedChartBuilder
 }
 object EmbeddedChartBuilder {
   

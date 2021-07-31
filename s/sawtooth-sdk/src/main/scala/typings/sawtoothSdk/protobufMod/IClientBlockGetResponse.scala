@@ -3,17 +3,15 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.ClientBlockGetResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientBlockGetResponse extends StObject {
   
   /** ClientBlockGetResponse block */
-  var block: js.UndefOr[IBlock | Null] = js.native
+  var block: js.UndefOr[IBlock | Null] = js.undefined
   
   /** ClientBlockGetResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object IClientBlockGetResponse {
   

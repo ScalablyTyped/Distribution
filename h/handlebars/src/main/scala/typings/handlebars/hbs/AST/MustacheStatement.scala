@@ -2,24 +2,24 @@ package typings.handlebars.hbs.AST
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MustacheStatement extends Node {
+trait MustacheStatement
+  extends StObject
+     with Node {
   
-  var escaped: Boolean = js.native
+  var escaped: Boolean
   
-  var hash: Hash = js.native
+  var hash: Hash
   
-  var params: js.Array[Expression] = js.native
+  var params: js.Array[Expression]
   
-  var path: PathExpression | Literal = js.native
+  var path: PathExpression | Literal
   
-  var strip: StripFlags = js.native
+  var strip: StripFlags
   
   @JSName("type")
-  var type_MustacheStatement: typings.handlebars.handlebarsStrings.MustacheStatement = js.native
+  var type_MustacheStatement: typings.handlebars.handlebarsStrings.MustacheStatement
 }
 object MustacheStatement {
   
@@ -30,11 +30,10 @@ object MustacheStatement {
     loc: SourceLocation,
     params: js.Array[Expression],
     path: PathExpression | Literal,
-    strip: StripFlags,
-    `type`: typings.handlebars.handlebarsStrings.MustacheStatement
+    strip: StripFlags
   ): MustacheStatement = {
     val __obj = js.Dynamic.literal(escaped = escaped.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], strip = strip.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MustacheStatement")
     __obj.asInstanceOf[MustacheStatement]
   }
   

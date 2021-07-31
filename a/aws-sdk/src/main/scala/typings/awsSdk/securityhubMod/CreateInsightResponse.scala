@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInsightResponse extends StObject {
   
   /**
     * The ARN of the insight created.
     */
-  var InsightArn: NonEmptyString = js.native
+  var InsightArn: NonEmptyString
 }
 object CreateInsightResponse {
   

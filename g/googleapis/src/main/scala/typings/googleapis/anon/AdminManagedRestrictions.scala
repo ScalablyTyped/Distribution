@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminManagedRestrictions extends StObject {
   
-  var adminManagedRestrictions: js.UndefOr[Boolean] = js.native
+  var adminManagedRestrictions: js.UndefOr[Boolean] = js.undefined
   
-  var copyRequiresWriterPermission: js.UndefOr[Boolean] = js.native
+  var copyRequiresWriterPermission: js.UndefOr[Boolean] = js.undefined
   
-  var domainUsersOnly: js.UndefOr[Boolean] = js.native
+  var domainUsersOnly: js.UndefOr[Boolean] = js.undefined
   
-  var teamMembersOnly: js.UndefOr[Boolean] = js.native
+  var teamMembersOnly: js.UndefOr[Boolean] = js.undefined
 }
 object AdminManagedRestrictions {
   

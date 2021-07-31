@@ -10,19 +10,19 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useContextMenuMod {
   
-  @JSImport("@react-md/menu/types/useContextMenu", "useContextMenu")
+  @JSImport("@react-md/menu/types/useContextMenu", JSImport.Namespace)
   @js.native
-  def useContextMenu[CE /* <: HTMLElement */](): ReturnValue[CE] = js.native
-  @JSImport("@react-md/menu/types/useContextMenu", "useContextMenu")
-  @js.native
-  def useContextMenu[CE /* <: HTMLElement */](hasIdRefAnchorClassNamesDisableDeselect: Options): ReturnValue[CE] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useContextMenu[CE /* <: HTMLElement */](): ReturnValue[CE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")().asInstanceOf[ReturnValue[CE]]
+  @scala.inline
+  def useContextMenu[CE /* <: HTMLElement */](hasIdPropRefAnchorClassNamesDisableDeselect: Options): ReturnValue[CE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")(hasIdPropRefAnchorClassNamesDisableDeselect.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[CE]]
+  
   trait Options extends StObject {
     
     /**
@@ -30,14 +30,14 @@ object useContextMenuMod {
       *
       * Defaults to `inner-left` and `top` to mimic native context menus.
       */
-    var anchor: js.UndefOr[PositionAnchor] = js.native
+    var anchor: js.UndefOr[PositionAnchor] = js.undefined
     
     /**
       * The CSS classNames to use for the context menu animation. This defaults to
       * a vertical scaling transition instead of the default "from-point-scaling"
       * transition.
       */
-    var classNames: js.UndefOr[CSSTransitionClassNames] = js.native
+    var classNames: js.UndefOr[CSSTransitionClassNames] = js.undefined
     
     /**
       * When a context menu becomes visible, the native functionality is to also
@@ -46,18 +46,18 @@ object useContextMenuMod {
       * automatically deselect this text. If the text selection behavior is
       * desired, this property can be enabled to keep text selected.
       */
-    var disableDeselect: js.UndefOr[Boolean] = js.native
+    var disableDeselect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The id to use for the context menu. This defaults to `context-menu` since
       * there can usually only be one context menu visible at a time.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * An optional ref that should be merged with the returned ref.
       */
-    var ref: js.UndefOr[Ref[HTMLDivElement]] = js.native
+    var ref: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
   }
   object Options {
     

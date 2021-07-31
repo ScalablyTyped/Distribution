@@ -2,27 +2,25 @@ package typings.std.Intl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolvedPluralRulesOptions extends StObject {
   
-  var locale: String = js.native
+  var locale: String
   
-  var maximumFractionDigits: Double = js.native
+  var maximumFractionDigits: Double
   
-  var maximumSignificantDigits: js.UndefOr[Double] = js.native
+  var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
   
-  var minimumFractionDigits: Double = js.native
+  var minimumFractionDigits: Double
   
-  var minimumIntegerDigits: Double = js.native
+  var minimumIntegerDigits: Double
   
-  var minimumSignificantDigits: js.UndefOr[Double] = js.native
+  var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
   
-  var pluralCategories: js.Array[LDMLPluralRule] = js.native
+  var pluralCategories: js.Array[LDMLPluralRule]
   
-  var `type`: PluralRuleType = js.native
+  var `type`: PluralRuleType
 }
 object ResolvedPluralRulesOptions {
   

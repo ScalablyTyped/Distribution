@@ -4,25 +4,25 @@ import typings.lokijs.DeserializeOptions
 import typings.lokijs.lokijsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Delimited extends DeserializeOptions {
+trait Delimited
+  extends StObject
+     with DeserializeOptions {
   
-  var delimited: `false` = js.native
+  var delimited: `false`
   
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
-  var partition: js.UndefOr[Double] = js.native
+  var partition: js.UndefOr[Double] = js.undefined
   
-  var partitioned: js.UndefOr[Boolean] = js.native
+  var partitioned: js.UndefOr[Boolean] = js.undefined
 }
 object Delimited {
   
   @scala.inline
-  def apply(delimited: `false`): Delimited = {
-    val __obj = js.Dynamic.literal(delimited = delimited.asInstanceOf[js.Any])
+  def apply(): Delimited = {
+    val __obj = js.Dynamic.literal(delimited = false)
     __obj.asInstanceOf[Delimited]
   }
   

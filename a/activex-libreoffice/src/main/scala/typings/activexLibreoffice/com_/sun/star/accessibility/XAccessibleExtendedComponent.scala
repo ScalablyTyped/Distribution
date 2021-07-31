@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.XFont
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,14 +19,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * from the Java interfaces `javax.accessibility.AccessibleComponent` and `javax.accessibility.AccessibleExtendedComponent` .
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleExtendedComponent extends XAccessibleComponent {
+trait XAccessibleExtendedComponent
+  extends StObject
+     with XAccessibleComponent {
   
   /**
     * Returns the font of this object.
     * @returns The returned reference to a font object is empty if a font is not supported by this object.
     */
-  val Font: XFont = js.native
+  val Font: XFont
   
   /**
     * Returns the titled border text.
@@ -35,7 +35,7 @@ trait XAccessibleExtendedComponent extends XAccessibleComponent {
     * This method stems from the Java interface `AccessibleExtendedComponent` .
     * @returns The returned value is the titled border text of the object or empty if that is not supported.
     */
-  val TitledBorderText: String = js.native
+  val TitledBorderText: String
   
   /**
     * Returns the tool tip text of this object.
@@ -43,13 +43,13 @@ trait XAccessibleExtendedComponent extends XAccessibleComponent {
     * This method stems from the Java interface `AccessibleExtendedComponent` .
     * @returns Returns the localized tool tip text of the object. If tool tips are not supported and empty string is returned.
     */
-  val ToolTipText: String = js.native
+  val ToolTipText: String
   
   /**
     * Returns the font of this object.
     * @returns The returned reference to a font object is empty if a font is not supported by this object.
     */
-  def getFont(): XFont = js.native
+  def getFont(): XFont
   
   /**
     * Returns the titled border text.
@@ -57,7 +57,7 @@ trait XAccessibleExtendedComponent extends XAccessibleComponent {
     * This method stems from the Java interface `AccessibleExtendedComponent` .
     * @returns The returned value is the titled border text of the object or empty if that is not supported.
     */
-  def getTitledBorderText(): String = js.native
+  def getTitledBorderText(): String
   
   /**
     * Returns the tool tip text of this object.
@@ -65,7 +65,7 @@ trait XAccessibleExtendedComponent extends XAccessibleComponent {
     * This method stems from the Java interface `AccessibleExtendedComponent` .
     * @returns Returns the localized tool tip text of the object. If tool tips are not supported and empty string is returned.
     */
-  def getToolTipText(): String = js.native
+  def getToolTipText(): String
 }
 object XAccessibleExtendedComponent {
   

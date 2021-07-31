@@ -3,7 +3,6 @@ package typings.matrixAppserviceBridge.mod
 import typings.matrixAppserviceBridge.roomBridgeStoreMod.RoomStoreEntryDoc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matrix-appservice-bridge", "RoomBridgeStoreEntry")
@@ -15,7 +14,10 @@ class RoomBridgeStoreEntry ()
 /* static members */
 object RoomBridgeStoreEntry {
   
-  @JSImport("matrix-appservice-bridge", "RoomBridgeStoreEntry.serializeEntry")
+  @JSImport("matrix-appservice-bridge", "RoomBridgeStoreEntry")
   @js.native
-  def serializeEntry(entry: typings.matrixAppserviceBridge.roomBridgeStoreMod.RoomBridgeStoreEntry): RoomStoreEntryDoc = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def serializeEntry(entry: typings.matrixAppserviceBridge.roomBridgeStoreMod.RoomBridgeStoreEntry): RoomStoreEntryDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[RoomStoreEntryDoc]
 }

@@ -2,11 +2,11 @@ package typings.workerbApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetAttributeQueryOptions extends QueryOptions {
+trait GetAttributeQueryOptions
+  extends StObject
+     with QueryOptions {
   
   /**
     * Allows to select an element with different methods:
@@ -18,7 +18,7 @@ trait GetAttributeQueryOptions extends QueryOptions {
     * * by_query_selector - finds the target element using a query selector
     * * by_query_selector_all - finds all the elements using a query selector
     */
-  var method: js.UndefOr[getAttributeQueryMethods] = js.native
+  var method: js.UndefOr[getAttributeQueryMethods] = js.undefined
 }
 object GetAttributeQueryOptions {
   

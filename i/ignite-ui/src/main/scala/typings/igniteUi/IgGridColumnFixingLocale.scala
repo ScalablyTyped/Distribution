@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridColumnFixingLocale
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,25 +16,25 @@ trait IgGridColumnFixingLocale
     * Text of the feature chooser button for fixing a currently unfixed column.
     *
     */
-  var featureChooserTextFixedColumn: js.UndefOr[String] = js.native
+  var featureChooserTextFixedColumn: js.UndefOr[String] = js.undefined
   
   /**
     * Text of the feature chooser button for unfixing a currently fixed column.
     *
     */
-  var featureChooserTextUnfixedColumn: js.UndefOr[String] = js.native
+  var featureChooserTextUnfixedColumn: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the tooltip text on the column fixing header icon when column is not fixed.
     *
     */
-  var headerFixButtonText: js.UndefOr[String] = js.native
+  var headerFixButtonText: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the tooltip text on the column fixing header icon when column is not fixed.
     *
     */
-  var headerUnfixButtonText: js.UndefOr[String] = js.native
+  var headerUnfixButtonText: js.UndefOr[String] = js.undefined
 }
 object IgGridColumnFixingLocale {
   

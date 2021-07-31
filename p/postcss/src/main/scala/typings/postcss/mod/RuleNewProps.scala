@@ -2,26 +2,26 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RuleNewProps extends ContainerNewProps {
+trait RuleNewProps
+  extends StObject
+     with ContainerNewProps {
   
   @JSName("raws")
-  var raws_RuleNewProps: js.UndefOr[RuleRaws] = js.native
+  var raws_RuleNewProps: js.UndefOr[RuleRaws] = js.undefined
   
   /**
     * The rule's full selector. If there are multiple comma-separated selectors,
     * the entire group will be included.
     */
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
   
   /**
     * An array containing the rule's individual selectors. Groups of selectors
     * are split at commas.
     */
-  var selectors: js.UndefOr[js.Array[String]] = js.native
+  var selectors: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RuleNewProps {
   

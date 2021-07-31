@@ -10,17 +10,18 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): GTmetrix = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[GTmetrix]
+  @scala.inline
+  def apply(opts: Options): GTmetrix = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[GTmetrix]
+  
   @JSImport("gtmetrix", JSImport.Namespace)
   @js.native
-  def apply(): GTmetrix = js.native
-  @JSImport("gtmetrix", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): GTmetrix = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait AccountApi extends StObject {
@@ -34,12 +35,11 @@ object mod {
     def status_Promise(): js.Promise[ReadonlyAccountStatus] = js.native
   }
   
-  @js.native
   trait AccountStatus extends StObject {
     
-    var api_credits: Double = js.native
+    var api_credits: Double
     
-    var api_refill: Double = js.native
+    var api_refill: Double
   }
   object AccountStatus {
     
@@ -63,14 +63,14 @@ object mod {
   /**
     * API returned an error
     */
-  @js.native
   trait ApiError
-    extends Error
+    extends StObject
+       with Error
        with _MetricsError {
     
-    val contentType: String = js.native
+    val contentType: String
     
-    val statusCode: Double = js.native
+    val statusCode: Double
   }
   object ApiError {
     
@@ -124,20 +124,19 @@ object mod {
     def video: typings.gtmetrix.gtmetrixStrings.video = "video".asInstanceOf[typings.gtmetrix.gtmetrixStrings.video]
   }
   
-  @js.native
   trait BrowserFeatures extends StObject {
     
-    var browser: String = js.native
+    var browser: String
     
-    var device: js.UndefOr[String] = js.native
+    var device: js.UndefOr[String] = js.undefined
     
-    var features: StringDictionary[Boolean] = js.native
+    var features: StringDictionary[Boolean]
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
     
-    var platform: String = js.native
+    var platform: String
   }
   object BrowserFeatures {
     
@@ -195,16 +194,15 @@ object mod {
   /**
     * {@link https://github.com/fvdm/nodejs-gtmetrix#methods}
     */
-  @js.native
   trait GTmetrix extends StObject {
     
-    var account: AccountApi = js.native
+    var account: AccountApi
     
-    var browsers: BrowsersApi = js.native
+    var browsers: BrowsersApi
     
-    var locations: LocationsApi = js.native
+    var locations: LocationsApi
     
-    var test: TestApi = js.native
+    var test: TestApi
   }
   object GTmetrix {
     
@@ -234,14 +232,14 @@ object mod {
   /**
     * Can't process response
     */
-  @js.native
   trait InvalidResponseError
-    extends Error
+    extends StObject
+       with Error
        with _MetricsError {
     
-    val contentType: String = js.native
+    val contentType: String
     
-    val statusCode: Double = js.native
+    val statusCode: Double
   }
   object InvalidResponseError {
     
@@ -262,16 +260,15 @@ object mod {
     }
   }
   
-  @js.native
   trait LocationInfo extends StObject {
     
-    var default: Boolean = js.native
+    var default: Boolean
     
-    var browsers: js.Array[Double] = js.native
+    var browsers: js.Array[Double]
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
   }
   object LocationInfo {
     
@@ -342,26 +339,25 @@ object mod {
   /**
     * {@link https://github.com/fvdm/nodejs-gtmetrix#configuration}
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * API key
       * @default null
       */
-    var apikey: js.UndefOr[String] = js.native
+    var apikey: js.UndefOr[String] = js.undefined
     
     /**
       * API email
       * @default null
       */
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**
       * Request timeout in ms
       * @default 5000
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -444,14 +440,13 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait TestBasicInfo extends StObject {
     
-    var credits_left: Double = js.native
+    var credits_left: Double
     
-    var poll_state_url: String = js.native
+    var poll_state_url: String
     
-    var test_id: String = js.native
+    var test_id: String
   }
   object TestBasicInfo {
     
@@ -475,16 +470,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TestDetails extends StObject {
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var resources: StringDictionary[String] = js.native
+    var resources: StringDictionary[String]
     
-    var results: StringDictionary[js.Any] = js.native
+    var results: StringDictionary[js.Any]
     
-    var state: String = js.native
+    var state: String
   }
   object TestDetails {
     

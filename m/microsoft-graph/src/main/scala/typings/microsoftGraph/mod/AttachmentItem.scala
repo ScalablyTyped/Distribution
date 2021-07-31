@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachmentItem extends StObject {
   
   // The type of attachment. Possible values are: file, item, reference. Required.
-  var attachmentType: js.UndefOr[NullableOption[AttachmentType]] = js.native
+  var attachmentType: js.UndefOr[NullableOption[AttachmentType]] = js.undefined
   
   // The nature of the data in the attachment. Optional.
-  var contentType: js.UndefOr[NullableOption[String]] = js.native
+  var contentType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // true if the attachment is an inline attachment; otherwise, false. Optional.
-  var isInline: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isInline: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * The display name of the attachment. This can be a descriptive string and does not have to be the actual file name.
     * Required.
     */
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The length of the attachment in bytes. Required.
-  var size: js.UndefOr[NullableOption[Double]] = js.native
+  var size: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object AttachmentItem {
   

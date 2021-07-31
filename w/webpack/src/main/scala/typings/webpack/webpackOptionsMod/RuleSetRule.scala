@@ -10,113 +10,111 @@ import typings.webpack.webpackStrings.pre
 import typings.webpack.webpackStrings.webassemblySlashexperimental
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleSetRule extends StObject {
   
   /**
   	 * Match the child compiler name
   	 */
-  var compiler: js.UndefOr[RuleSetConditionOrConditions] = js.native
+  var compiler: js.UndefOr[RuleSetConditionOrConditions] = js.undefined
   
   /**
   	 * Enforce this rule as pre or post step
   	 */
-  var enforce: js.UndefOr[pre | post] = js.native
+  var enforce: js.UndefOr[pre | post] = js.undefined
   
   /**
   	 * Shortcut for resource.exclude
   	 */
-  var exclude: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.native
+  var exclude: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.undefined
   
   /**
   	 * Shortcut for resource.include
   	 */
-  var include: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.native
+  var include: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.undefined
   
   /**
   	 * Match the issuer of the module (The module pointing to this module)
   	 */
-  var issuer: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.native
+  var issuer: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.undefined
   
   /**
   	 * Shortcut for use.loader
   	 */
-  var loader: js.UndefOr[RuleSetLoader | RuleSetUse] = js.native
+  var loader: js.UndefOr[RuleSetLoader | RuleSetUse] = js.undefined
   
   /**
   	 * Shortcut for use.loader
   	 */
-  var loaders: js.UndefOr[RuleSetUse] = js.native
+  var loaders: js.UndefOr[RuleSetUse] = js.undefined
   
   /**
   	 * Only execute the first matching rule in this array
   	 */
-  var oneOf: js.UndefOr[RuleSetRules] = js.native
+  var oneOf: js.UndefOr[RuleSetRules] = js.undefined
   
   /**
   	 * Shortcut for use.options
   	 */
-  var options: js.UndefOr[RuleSetQuery] = js.native
+  var options: js.UndefOr[RuleSetQuery] = js.undefined
   
   /**
   	 * Options for parsing
   	 */
-  var parser: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var parser: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
   	 * Shortcut for use.query
   	 */
-  var query: js.UndefOr[RuleSetQuery] = js.native
+  var query: js.UndefOr[RuleSetQuery] = js.undefined
   
   /**
   	 * Match rules with custom resource name
   	 */
-  var realResource: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.native
+  var realResource: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.undefined
   
   /**
   	 * Options for the resolver
   	 */
-  var resolve: js.UndefOr[ResolveOptions] = js.native
+  var resolve: js.UndefOr[ResolveOptions] = js.undefined
   
   /**
   	 * Match the resource path of the module
   	 */
-  var resource: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.native
+  var resource: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.undefined
   
   /**
   	 * Match the resource query of the module
   	 */
-  var resourceQuery: js.UndefOr[RuleSetConditionOrConditions] = js.native
+  var resourceQuery: js.UndefOr[RuleSetConditionOrConditions] = js.undefined
   
   /**
   	 * Match and execute these rules when this rule is matched
   	 */
-  var rules: js.UndefOr[RuleSetRules] = js.native
+  var rules: js.UndefOr[RuleSetRules] = js.undefined
   
   /**
   	 * Flags a module as with or without side effects
   	 */
-  var sideEffects: js.UndefOr[Boolean] = js.native
+  var sideEffects: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Shortcut for resource.test
   	 */
-  var test: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.native
+  var test: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.undefined
   
   /**
   	 * Module type to use for the module
   	 */
   var `type`: js.UndefOr[
     javascriptSlashauto | javascriptSlashdynamic | javascriptSlashesm | json | webassemblySlashexperimental
-  ] = js.native
+  ] = js.undefined
   
   /**
   	 * Modifiers applied to the module when rule is matched
   	 */
-  var use: js.UndefOr[RuleSetUse] = js.native
+  var use: js.UndefOr[RuleSetUse] = js.undefined
 }
 object RuleSetRule {
   

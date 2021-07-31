@@ -3,45 +3,43 @@ package typings.ngGrid.ngGrid
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object service {
   
-  @js.native
   trait IDomUtilityService extends StObject {
     
     def AssignGridContainers(
       $scope: IGridScope,
       rootel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
       grid: IGridInstance
-    ): Unit = js.native
+    ): Unit
     
-    def BuildStyles($scope: IGridScope, grid: IGridInstance, digest: Boolean): Unit = js.native
+    def BuildStyles($scope: IGridScope, grid: IGridInstance, digest: Boolean): Unit
     
-    var LetterW: Double = js.native
+    var LetterW: Double
     
-    def RebuildGrid($scope: IGridScope, grid: IGridInstance): Unit = js.native
+    def RebuildGrid($scope: IGridScope, grid: IGridInstance): Unit
     
-    var ScrollH: Double = js.native
+    var ScrollH: Double
     
-    var ScrollW: Double = js.native
+    var ScrollW: Double
     
-    def UpdateGridLayout($scope: IGridScope, grid: IGridInstance): Unit = js.native
+    def UpdateGridLayout($scope: IGridScope, grid: IGridInstance): Unit
     
-    def digest($scope: IGridScope): Unit = js.native
+    def digest($scope: IGridScope): Unit
     
-    var eventStorage: js.Any = js.native
+    var eventStorage: js.Any
     
-    def getRealWidth(obj: IDimension): Double = js.native
+    def getRealWidth(obj: IDimension): Double
     
-    var immediate: Double = js.native
+    var immediate: Double
     
-    var numberOfGrids: Double = js.native
+    var numberOfGrids: Double
     
-    def setColLeft(col: IColumn, colLeft: Double, grid: IGridInstance): Unit = js.native
+    def setColLeft(col: IColumn, colLeft: Double, grid: IGridInstance): Unit
     
-    def setStyleText(grid: IGridInstance, css: String): Unit = js.native
+    def setStyleText(grid: IGridInstance, css: String): Unit
   }
   object IDomUtilityService {
     
@@ -115,10 +113,9 @@ object service {
     }
   }
   
-  @js.native
   trait ISortInfo extends StObject {
     
-    var fields: js.Array[String] = js.native
+    var fields: js.Array[String]
   }
   object ISortInfo {
     
@@ -139,34 +136,33 @@ object service {
     }
   }
   
-  @js.native
   trait ISortService extends StObject {
     
-    def Sort(sortInfo: ISortInfo, data: js.Any): Unit = js.native
+    def Sort(sortInfo: ISortInfo, data: js.Any): Unit
     
-    def basicSort(a: js.Any, b: js.Any): Double = js.native
+    def basicSort(a: js.Any, b: js.Any): Double
     
-    var colSortFnCache: js.Any = js.native
+    var colSortFnCache: js.Any
     
-    def getSortFn(col: IColumn, data: js.Any): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
+    def getSortFn(col: IColumn, data: js.Any): js.Function2[/* a */ js.Any, /* b */ js.Any, Double]
     
-    def guessSortFn(item: js.Any): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
+    def guessSortFn(item: js.Any): js.Function2[/* a */ js.Any, /* b */ js.Any, Double]
     
-    var isCustomSort: Boolean = js.native
+    var isCustomSort: Boolean
     
-    var isSorting: Boolean = js.native
+    var isSorting: Boolean
     
-    def sortAlpha(a: String, b: String): Double = js.native
+    def sortAlpha(a: String, b: String): Double
     
-    def sortBool(a: Boolean, b: Boolean): Double = js.native
+    def sortBool(a: Boolean, b: Boolean): Double
     
-    def sortData(sortInfo: ISortInfo, data: js.Any): Unit = js.native
+    def sortData(sortInfo: ISortInfo, data: js.Any): Unit
     
-    def sortDate(a: Date, b: Date): Double = js.native
+    def sortDate(a: Date, b: Date): Double
     
-    def sortNumber(a: Double, b: Double): Double = js.native
+    def sortNumber(a: Double, b: Double): Double
     
-    def sortNumberStr(a: String, b: String): Double = js.native
+    def sortNumberStr(a: String, b: String): Double
   }
   object ISortService {
     
@@ -234,26 +230,25 @@ object service {
     }
   }
   
-  @js.native
   trait IUtilityService extends StObject {
     
-    def endsWith(str: String, suffix: String): Boolean = js.native
+    def endsWith(str: String, suffix: String): Boolean
     
-    def evalProperty(entity: js.Any, path: String): js.Any = js.native
+    def evalProperty(entity: js.Any, path: String): js.Any
     
-    def forIn(obj: js.Any, action: js.Function2[/* value */ js.Any, /* property */ String, js.Object]): Unit = js.native
+    def forIn(obj: js.Any, action: js.Function2[/* value */ js.Any, /* property */ String, js.Object]): Unit
     
-    def getElementsByClassName(cl: String): js.Array[_] = js.native
+    def getElementsByClassName(cl: String): js.Array[js.Any]
     
-    def getInstanceType(o: js.Any): String = js.native
+    def getInstanceType(o: js.Any): String
     
-    def isNullOrUndefined(obj: js.Any): Boolean = js.native
+    def isNullOrUndefined(obj: js.Any): Boolean
     
-    def newId(): String = js.native
+    def newId(): String
     
-    def seti18n($scope: IGridScope, language: String): Unit = js.native
+    def seti18n($scope: IGridScope, language: String): Unit
     
-    def visualLength(node: js.Any): Double = js.native
+    def visualLength(node: js.Any): Double
   }
   object IUtilityService {
     
@@ -262,7 +257,7 @@ object service {
       endsWith: (String, String) => Boolean,
       evalProperty: (js.Any, String) => js.Any,
       forIn: (js.Any, js.Function2[/* value */ js.Any, /* property */ String, js.Object]) => Unit,
-      getElementsByClassName: String => js.Array[_],
+      getElementsByClassName: String => js.Array[js.Any],
       getInstanceType: js.Any => String,
       isNullOrUndefined: js.Any => Boolean,
       newId: () => String,
@@ -286,7 +281,7 @@ object service {
       def setForIn(value: (js.Any, js.Function2[/* value */ js.Any, /* property */ String, js.Object]) => Unit): Self = StObject.set(x, "forIn", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setGetElementsByClassName(value: String => js.Array[_]): Self = StObject.set(x, "getElementsByClassName", js.Any.fromFunction1(value))
+      def setGetElementsByClassName(value: String => js.Array[js.Any]): Self = StObject.set(x, "getElementsByClassName", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetInstanceType(value: js.Any => String): Self = StObject.set(x, "getInstanceType", js.Any.fromFunction1(value))

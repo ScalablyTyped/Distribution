@@ -11,7 +11,7 @@ A CoffeeScript documentation generator.
 | Keywords           | coffeescript, doc, api |
 | # releases         | 1 |
 | # dependents       | 3 |
-| # downloads        | 18047 |
+| # downloads        | 22878 |
 | # stars            | 0 |
 
 ## Links

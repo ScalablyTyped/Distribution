@@ -13,7 +13,6 @@ import typings.juiGrid.juiGridStrings.show
 import typings.juiGrid.juiGridStrings.sum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,7 +20,7 @@ object mod {
   @js.native
   trait GridBase extends StObject {
     
-    def appendColumn(tplType: String, dataList: js.Array[_]): Unit = js.native
+    def appendColumn(tplType: String, dataList: js.Array[js.Any]): Unit = js.native
     
     def appendRow(index: String): GridRow = js.native
     def appendRow(index: String, data: js.Object): GridRow = js.native
@@ -97,7 +96,7 @@ object mod {
     def apply(index: Double): this.type = js.native
     
     /** Data from all rows belonging for a specified column */
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any] = js.native
     
     /**
       * TH element of a specified column
@@ -111,7 +110,7 @@ object mod {
     var index: Double = js.native
     
     /** TD element of all rows belonging to a specified column */
-    var list: js.Array[_] = js.native
+    var list: js.Array[js.Any] = js.native
     
     /**
       * Column name
@@ -146,10 +145,10 @@ object mod {
     def appendChild(row: GridRow): Unit = js.native
     
     /** List of child rows. */
-    var children: js.Array[_] = js.native
+    var children: js.Array[js.Any] = js.native
     
     /** Data of a specified row. */
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any] = js.native
     
     /**
       * The depth of the current row in the case of a tree structure.
@@ -179,7 +178,7 @@ object mod {
     def lastChildLeaf(lastRow: GridRow): GridRow | js.Any = js.native
     
     /** List of TD elements of a specified row. */
-    var list: js.Array[_] = js.native
+    var list: js.Array[js.Any] = js.native
     
     def open(): Unit = js.native
     
@@ -215,7 +214,9 @@ object mod {
   }
   
   @js.native
-  trait GridTable extends UIEvent {
+  trait GridTable
+    extends StObject
+       with UIEvent {
     
     def apply(selector: js.Any): this.type = js.native
     def apply(selector: js.Any, options: Colshow): this.type = js.native
@@ -231,11 +232,11 @@ object mod {
       * Add a row or a child row to at a specified index.
       */
     def append(): Unit = js.native
-    def append(rowOrIndex: js.UndefOr[scala.Nothing], row: js.Any): Unit = js.native
     def append(rowOrIndex: js.Any): Unit = js.native
     def append(rowOrIndex: js.Any, row: js.Any): Unit = js.native
     def append(rowOrIndex: Double): Unit = js.native
     def append(rowOrIndex: Double, row: js.Any): Unit = js.native
+    def append(rowOrIndex: Unit, row: js.Any): Unit = js.native
     
     /**
       * Add a checked class to a row at a specified index.
@@ -375,7 +376,7 @@ object mod {
       *
       * @return datas
       */
-    def listData(): js.Array[_] = js.native
+    def listData(): js.Array[js.Any] = js.native
     
     /**
       * Moves a row iat a specified index to the target index.
@@ -443,9 +444,9 @@ object mod {
       * Shows the extended row area of a specified index.
       */
     def showExpand(index: Double): Unit = js.native
-    def showExpand(index: Double, obj: js.UndefOr[scala.Nothing], e: js.Any): Unit = js.native
     def showExpand(index: Double, obj: js.Any): Unit = js.native
     def showExpand(index: Double, obj: js.Any, e: js.Any): Unit = js.native
+    def showExpand(index: Double, obj: Unit, e: js.Any): Unit = js.native
     
     /**
       * Gets the size of all the rows of a table.
@@ -485,18 +486,20 @@ object mod {
       * Updates the list of rows or modifies the row at a specified index.
       */
     def update(): Unit = js.native
-    def update(indexOrRows: js.UndefOr[scala.Nothing], rows: js.Any): Unit = js.native
     def update(indexOrRows: js.Any): Unit = js.native
     def update(indexOrRows: js.Any, rows: js.Any): Unit = js.native
+    def update(indexOrRows: Unit, rows: js.Any): Unit = js.native
     
     /**
       * It is possible to configure a tree table using an object array with the index and data properties.
       */
-    def updateTree(rows: js.Array[_]): Unit = js.native
+    def updateTree(rows: js.Array[js.Any]): Unit = js.native
   }
   
   @js.native
-  trait GridXTable extends UIEvent {
+  trait GridXTable
+    extends StObject
+       with UIEvent {
     
     def apply(selector: js.Any): this.type = js.native
     def apply(selector: js.Any, options: js.Object): this.type = js.native
@@ -644,7 +647,7 @@ object mod {
       *
       * @return datas
       */
-    def listData(): js.Array[_] = js.native
+    def listData(): js.Array[js.Any] = js.native
     
     def next(): Unit = js.native
     
@@ -745,19 +748,19 @@ object mod {
     @JSName("sort")
     def sort_asc(index: Double, order: asc): Unit = js.native
     @JSName("sort")
-    def sort_asc(index: Double, order: asc, e: js.UndefOr[scala.Nothing], isNotLoading: js.Any): Unit = js.native
-    @JSName("sort")
     def sort_asc(index: Double, order: asc, e: js.Any): Unit = js.native
     @JSName("sort")
     def sort_asc(index: Double, order: asc, e: js.Any, isNotLoading: js.Any): Unit = js.native
     @JSName("sort")
-    def sort_desc(index: Double, order: desc): Unit = js.native
+    def sort_asc(index: Double, order: asc, e: Unit, isNotLoading: js.Any): Unit = js.native
     @JSName("sort")
-    def sort_desc(index: Double, order: desc, e: js.UndefOr[scala.Nothing], isNotLoading: js.Any): Unit = js.native
+    def sort_desc(index: Double, order: desc): Unit = js.native
     @JSName("sort")
     def sort_desc(index: Double, order: desc, e: js.Any): Unit = js.native
     @JSName("sort")
     def sort_desc(index: Double, order: desc, e: js.Any, isNotLoading: js.Any): Unit = js.native
+    @JSName("sort")
+    def sort_desc(index: Double, order: desc, e: Unit, isNotLoading: js.Any): Unit = js.native
     
     /**
       * Shows or hides the Show/Hide Column menu.
@@ -774,11 +777,11 @@ object mod {
     /**
       * Updates the list of rows or modifies the row at a specified index.
       */
-    def update(dataList: js.Array[_]): Unit = js.native
+    def update(dataList: js.Array[js.Any]): Unit = js.native
     
     /**
       * It is possible to configure a tree table using an object array with the index and data properties.
       */
-    def updateTree(tree: js.Array[_]): Unit = js.native
+    def updateTree(tree: js.Array[js.Any]): Unit = js.native
   }
 }

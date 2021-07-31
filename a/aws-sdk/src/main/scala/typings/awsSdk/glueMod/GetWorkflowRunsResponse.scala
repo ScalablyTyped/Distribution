@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWorkflowRunsResponse extends StObject {
   
   /**
     * A continuation token, if not all requested workflow runs have been returned.
     */
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
   
   /**
     * A list of workflow run metadata objects.
     */
-  var Runs: js.UndefOr[WorkflowRuns] = js.native
+  var Runs: js.UndefOr[WorkflowRuns] = js.undefined
 }
 object GetWorkflowRunsResponse {
   

@@ -2,29 +2,27 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mb extends StObject {
   
-  var bl: Boolean = js.native
+  var bl: Boolean
   
-  var br: Boolean = js.native
+  var br: Boolean
   
-  var mb: Boolean = js.native
+  var mb: Boolean
   
-  var ml: Boolean = js.native
+  var ml: Boolean
   
-  var mr: Boolean = js.native
+  var mr: Boolean
   
-  var mt: Boolean = js.native
+  var mt: Boolean
   
-  var mtr: Boolean = js.native
+  var mtr: Boolean
   
-  var tl: Boolean = js.native
+  var tl: Boolean
   
-  var tr: Boolean = js.native
+  var tr: Boolean
 }
 object Mb {
   

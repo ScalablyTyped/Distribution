@@ -2,44 +2,44 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the ASPxGridLookup control.
   */
-@js.native
-trait ASPxClientGridLookup extends ASPxClientDropDownEditBase {
+trait ASPxClientGridLookup
+  extends StObject
+     with ASPxClientDropDownEditBase {
   
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
-  var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientGridLookup]] = js.native
+  var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientGridLookup]]
   
   /**
     * Confirms the current selection made by an end-user within the editor's dropdown grid.
     */
-  def ConfirmCurrentSelection(): Unit = js.native
+  def ConfirmCurrentSelection(): Unit
   
   /**
     * Occurs on the client side after a callback's server-side processing has been completed.
     */
-  var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientGridLookup]] = js.native
+  var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientGridLookup]]
   
   /**
     * Returns a client object representing the built-in dropdown grid.
     */
-  def GetGridView(): ASPxClientGridView = js.native
+  def GetGridView(): ASPxClientGridView
   
   /**
     * Cancels the current selection made by an end-user within the editor's dropdown grid and rolls back to the last confirmed selection. The selection can be confirmed by either pressing the Enter key or calling the ASPxClientGridLookup.ConfirmCurrentSelection method.
     */
-  def RollbackToLastConfirmedSelection(): Unit = js.native
+  def RollbackToLastConfirmedSelection(): Unit
   
   /**
     * Fires on the client when a data row is clicked within the built-in dropdown grid.
     */
-  var RowClick: ASPxClientEvent[ASPxClientGridViewRowClickEventHandler[ASPxClientGridLookup]] = js.native
+  var RowClick: ASPxClientEvent[ASPxClientGridViewRowClickEventHandler[ASPxClientGridLookup]]
 }
 object ASPxClientGridLookup {
   

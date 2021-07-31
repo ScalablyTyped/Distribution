@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Security
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetIgnoreCertificateErrorsRequest extends StObject {
   
   /**
     * If true, all certificate errors will be ignored.
     */
-  var ignore: Boolean = js.native
+  var ignore: Boolean
 }
 object SetIgnoreCertificateErrorsRequest {
   

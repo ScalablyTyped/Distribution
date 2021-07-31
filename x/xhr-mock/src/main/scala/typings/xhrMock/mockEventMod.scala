@@ -6,20 +6,23 @@ import typings.std.EventInit
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mockEventMod {
   
   @JSImport("xhr-mock/lib/MockEvent", JSImport.Default)
   @js.native
-  class default protected () extends MockEvent {
+  class default protected ()
+    extends StObject
+       with MockEvent {
     def this(`type`: String) = this()
     def this(`type`: String, eventInitDict: EventInit) = this()
   }
   
   @js.native
-  trait MockEvent extends Event {
+  trait MockEvent
+    extends StObject
+       with Event {
     
     @JSName("currentTarget")
     val currentTarget_MockEvent: EventTarget = js.native

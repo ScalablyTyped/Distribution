@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoScalingPolicyStatus extends StObject {
   
   /**
     * Indicates the status of the automatic scaling policy.
     */
-  var State: js.UndefOr[AutoScalingPolicyState] = js.native
+  var State: js.UndefOr[AutoScalingPolicyState] = js.undefined
   
   /**
     * The reason for a change in status.
     */
-  var StateChangeReason: js.UndefOr[AutoScalingPolicyStateChangeReason] = js.native
+  var StateChangeReason: js.UndefOr[AutoScalingPolicyStateChangeReason] = js.undefined
 }
 object AutoScalingPolicyStatus {
   

@@ -6,30 +6,30 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used to define a new view for a database.
   * @see com.sun.star.sdbcx.View
   */
-@js.native
-trait ViewDescriptor extends Descriptor {
+trait ViewDescriptor
+  extends StObject
+     with Descriptor {
   
   /** is the name of the views catalog, may be empty. */
-  var CatalogName: String = js.native
+  var CatalogName: String
   
   /**
     * indicates if a check option should be used for the view.
     * @see com.sun.star.sdbcx.CheckOption
     */
-  var CheckOption: Double = js.native
+  var CheckOption: Double
   
   /** is the command for creating the view. After appending a view to its container, the command may be empty. This is typically a SQL Select-Statement. */
-  var Command: String = js.native
+  var Command: String
   
   /** is the name of the views schema, may be empty. */
-  var SchemaName: String = js.native
+  var SchemaName: String
 }
 object ViewDescriptor {
   

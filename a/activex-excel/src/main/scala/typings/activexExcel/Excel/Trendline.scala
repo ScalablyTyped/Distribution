@@ -2,60 +2,58 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Trendline extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var Backward: Double = js.native
+  var Backward: Double
   
-  var Backward2: Double = js.native
+  var Backward2: Double
   
-  val Border: typings.activexExcel.Excel.Border = js.native
+  val Border: typings.activexExcel.Excel.Border
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): js.Any
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  val DataLabel: typings.activexExcel.Excel.DataLabel = js.native
+  val DataLabel: typings.activexExcel.Excel.DataLabel
   
-  def Delete(): js.Any = js.native
+  def Delete(): js.Any
   
-  var DisplayEquation: Boolean = js.native
+  var DisplayEquation: Boolean
   
-  var DisplayRSquared: Boolean = js.native
+  var DisplayRSquared: Boolean
   
   @JSName("Excel.Trendline_typekey")
-  var ExcelDotTrendline_typekey: Trendline = js.native
+  var ExcelDotTrendline_typekey: Trendline
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  var Forward: Double = js.native
+  var Forward: Double
   
-  var Forward2: Double = js.native
+  var Forward2: Double
   
-  val Index: Double = js.native
+  val Index: Double
   
-  var Intercept: Double = js.native
+  var Intercept: Double
   
-  var InterceptIsAuto: Boolean = js.native
+  var InterceptIsAuto: Boolean
   
-  var Name: String = js.native
+  var Name: String
   
-  var NameIsAuto: Boolean = js.native
+  var NameIsAuto: Boolean
   
-  var Order: Double = js.native
+  var Order: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Period: Double = js.native
+  var Period: Double
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
   
-  var Type: XlTrendlineType = js.native
+  var Type: XlTrendlineType
 }
 object Trendline {
   

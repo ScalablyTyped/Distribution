@@ -2,24 +2,22 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a group.
   */
-@js.native
 trait SchemaGroup extends StObject {
   
   /**
     * The email address of the group.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the group.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaGroup {
   

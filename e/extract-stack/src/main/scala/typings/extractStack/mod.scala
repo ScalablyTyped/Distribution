@@ -3,7 +3,6 @@ package typings.extractStack
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,15 +29,16 @@ object mod {
   	// 	at startup (node.js:139:18)
   	```
   	 */
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
+  def apply(error: String): String = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(error: Error): String = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("extract-stack", JSImport.Namespace)
   @js.native
-  def apply(): String = js.native
-  @JSImport("extract-stack", JSImport.Namespace)
-  @js.native
-  def apply(error: String): String = js.native
-  @JSImport("extract-stack", JSImport.Namespace)
-  @js.native
-  def apply(error: Error): String = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Extract the actual stack of an error as an array of lines.
@@ -63,13 +63,10 @@ object mod {
   	// ]
   	```
   	 */
-  @JSImport("extract-stack", "lines")
-  @js.native
-  def lines(): js.Array[String] = js.native
-  @JSImport("extract-stack", "lines")
-  @js.native
-  def lines(error: String): js.Array[String] = js.native
-  @JSImport("extract-stack", "lines")
-  @js.native
-  def lines(error: Error): js.Array[String] = js.native
+  @scala.inline
+  def lines(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lines")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def lines(error: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lines")(error.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def lines(error: Error): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lines")(error.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

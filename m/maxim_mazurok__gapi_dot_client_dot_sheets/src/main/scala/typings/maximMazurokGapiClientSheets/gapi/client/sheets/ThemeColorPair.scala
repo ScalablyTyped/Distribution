@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeColorPair extends StObject {
   
   /** The concrete color corresponding to the theme color type. */
-  var color: js.UndefOr[ColorStyle] = js.native
+  var color: js.UndefOr[ColorStyle] = js.undefined
   
   /** The type of the spreadsheet theme color. */
-  var colorType: js.UndefOr[String] = js.native
+  var colorType: js.UndefOr[String] = js.undefined
 }
 object ThemeColorPair {
   

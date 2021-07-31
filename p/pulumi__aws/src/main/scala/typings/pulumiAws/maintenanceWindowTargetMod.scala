@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object maintenanceWindowTargetMod {
@@ -60,6 +59,10 @@ object maintenanceWindowTargetMod {
   /* static members */
   object MaintenanceWindowTarget {
     
+    @JSImport("@pulumi/aws/ssm/maintenanceWindowTarget", "MaintenanceWindowTarget")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing MaintenanceWindowTarget resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -69,61 +72,55 @@ object maintenanceWindowTargetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ssm/maintenanceWindowTarget", "MaintenanceWindowTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID]): MaintenanceWindowTarget = js.native
-    @JSImport("@pulumi/aws/ssm/maintenanceWindowTarget", "MaintenanceWindowTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MaintenanceWindowTarget = js.native
-    @JSImport("@pulumi/aws/ssm/maintenanceWindowTarget", "MaintenanceWindowTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MaintenanceWindowTargetState): MaintenanceWindowTarget = js.native
-    @JSImport("@pulumi/aws/ssm/maintenanceWindowTarget", "MaintenanceWindowTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MaintenanceWindowTargetState, opts: CustomResourceOptions): MaintenanceWindowTarget = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): MaintenanceWindowTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MaintenanceWindowTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MaintenanceWindowTargetState): MaintenanceWindowTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MaintenanceWindowTargetState, opts: CustomResourceOptions): MaintenanceWindowTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTarget]
     
     /**
       * Returns true if the given object is an instance of MaintenanceWindowTarget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ssm/maintenanceWindowTarget", "MaintenanceWindowTarget.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTarget.MaintenanceWindowTarget */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTarget.MaintenanceWindowTarget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTarget.MaintenanceWindowTarget */ Boolean]
   }
   
-  @js.native
   trait MaintenanceWindowTargetArgs extends StObject {
     
     /**
       * The description of the maintenance window target.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the maintenance window target.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * User-provided value that will be included in any CloudWatch events raised while running tasks for these targets in this Maintenance Window.
       */
-    val ownerInformation: js.UndefOr[Input[String]] = js.native
+    val ownerInformation: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of target being registered with the Maintenance Window. Possible values are `INSTANCE` and `RESOURCE_GROUP`.
       */
-    val resourceType: Input[String] = js.native
+    val resourceType: Input[String]
     
     /**
       * The targets to register with the maintenance window. In other words, the instances to run commands on when the maintenance window runs. You can specify targets using instance IDs, resource group names, or tags that have been applied to instances. For more information about these examples formats see
       * (https://docs.aws.amazon.com/systems-manager/latest/userguide/mw-cli-tutorial-targets-examples.html)
       */
-    val targets: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTargetTarget]]] = js.native
+    val targets: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTargetTarget]]]
     
     /**
       * The Id of the maintenance window to register the target with.
       */
-    val windowId: Input[String] = js.native
+    val windowId: Input[String]
   }
   object MaintenanceWindowTargetArgs {
     
@@ -172,28 +169,27 @@ object maintenanceWindowTargetMod {
     }
   }
   
-  @js.native
   trait MaintenanceWindowTargetState extends StObject {
     
     /**
       * The description of the maintenance window target.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the maintenance window target.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * User-provided value that will be included in any CloudWatch events raised while running tasks for these targets in this Maintenance Window.
       */
-    val ownerInformation: js.UndefOr[Input[String]] = js.native
+    val ownerInformation: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of target being registered with the Maintenance Window. Possible values are `INSTANCE` and `RESOURCE_GROUP`.
       */
-    val resourceType: js.UndefOr[Input[String]] = js.native
+    val resourceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The targets to register with the maintenance window. In other words, the instances to run commands on when the maintenance window runs. You can specify targets using instance IDs, resource group names, or tags that have been applied to instances. For more information about these examples formats see
@@ -201,12 +197,12 @@ object maintenanceWindowTargetMod {
       */
     val targets: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTargetTarget]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The Id of the maintenance window to register the target with.
       */
-    val windowId: js.UndefOr[Input[String]] = js.native
+    val windowId: js.UndefOr[Input[String]] = js.undefined
   }
   object MaintenanceWindowTargetState {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdateObjectAttributes extends StObject {
   
   /**
     * Attributes update structure.
     */
-  var AttributeUpdates: ObjectAttributeUpdateList = js.native
+  var AttributeUpdates: ObjectAttributeUpdateList
   
   /**
     * Reference that identifies the object.
     */
-  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference = js.native
+  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference
 }
 object BatchUpdateObjectAttributes {
   

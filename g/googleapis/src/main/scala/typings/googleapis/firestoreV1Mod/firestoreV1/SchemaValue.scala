@@ -2,75 +2,73 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A message that can hold any of the supported value types.
   */
-@js.native
 trait SchemaValue extends StObject {
   
   /**
     * An array value.  Cannot directly contain another array value, though can
     * contain an map which contains another array.
     */
-  var arrayValue: js.UndefOr[SchemaArrayValue] = js.native
+  var arrayValue: js.UndefOr[SchemaArrayValue] = js.undefined
   
   /**
     * A boolean value.
     */
-  var booleanValue: js.UndefOr[Boolean] = js.native
+  var booleanValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A bytes value.  Must not exceed 1 MiB - 89 bytes. Only the first 1,500
     * bytes are considered by queries.
     */
-  var bytesValue: js.UndefOr[String] = js.native
+  var bytesValue: js.UndefOr[String] = js.undefined
   
   /**
     * A double value.
     */
-  var doubleValue: js.UndefOr[Double] = js.native
+  var doubleValue: js.UndefOr[Double] = js.undefined
   
   /**
     * A geo point value representing a point on the surface of Earth.
     */
-  var geoPointValue: js.UndefOr[SchemaLatLng] = js.native
+  var geoPointValue: js.UndefOr[SchemaLatLng] = js.undefined
   
   /**
     * An integer value.
     */
-  var integerValue: js.UndefOr[String] = js.native
+  var integerValue: js.UndefOr[String] = js.undefined
   
   /**
     * A map value.
     */
-  var mapValue: js.UndefOr[SchemaMapValue] = js.native
+  var mapValue: js.UndefOr[SchemaMapValue] = js.undefined
   
   /**
     * A null value.
     */
-  var nullValue: js.UndefOr[String] = js.native
+  var nullValue: js.UndefOr[String] = js.undefined
   
   /**
     * A reference to a document. For example:
     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
     */
-  var referenceValue: js.UndefOr[String] = js.native
+  var referenceValue: js.UndefOr[String] = js.undefined
   
   /**
     * A string value.  The string, represented as UTF-8, must not exceed 1 MiB
     * - 89 bytes. Only the first 1,500 bytes of the UTF-8 representation are
     * considered by queries.
     */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
   
   /**
     * A timestamp value.  Precise only to microseconds. When stored, any
     * additional precision is rounded down.
     */
-  var timestampValue: js.UndefOr[String] = js.native
+  var timestampValue: js.UndefOr[String] = js.undefined
 }
 object SchemaValue {
   

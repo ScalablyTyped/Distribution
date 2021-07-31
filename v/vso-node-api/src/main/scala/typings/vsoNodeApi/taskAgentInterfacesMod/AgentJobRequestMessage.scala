@@ -3,19 +3,19 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AgentJobRequestMessage extends JobRequestMessage {
+trait AgentJobRequestMessage
+  extends StObject
+     with JobRequestMessage {
   
-  var lockToken: String = js.native
+  var lockToken: String
   
-  var lockedUntil: Date = js.native
+  var lockedUntil: Date
   
-  var requestId: Double = js.native
+  var requestId: Double
   
-  var tasks: js.Array[TaskInstance] = js.native
+  var tasks: js.Array[TaskInstance]
 }
 object AgentJobRequestMessage {
   

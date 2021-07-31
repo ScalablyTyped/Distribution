@@ -2,26 +2,24 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientSignatureInformation extends StObject {
   
   /**
     * Specifies the font style for the user's signature.
     */
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the user's signature in initials format.
     */
-  var signatureInitials: js.UndefOr[String] = js.native
+  var signatureInitials: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the user's signature name.
     */
-  var signatureName: js.UndefOr[String] = js.native
+  var signatureName: js.UndefOr[String] = js.undefined
 }
 object RecipientSignatureInformation {
   

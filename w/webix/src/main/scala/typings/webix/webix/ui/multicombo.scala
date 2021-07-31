@@ -5,11 +5,12 @@ import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait multicombo extends baseview {
+trait multicombo
+  extends StObject
+     with baseview {
   
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
@@ -68,7 +69,7 @@ trait multicombo extends baseview {
   
   def blur(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   @JSName("config")
   var config_multicombo: multicomboConfig = js.native
@@ -85,8 +86,8 @@ trait multicombo extends baseview {
   
   def getText(): String = js.native
   
-  def getValue(): String | js.Array[_] = js.native
-  def getValue(config: js.Any): String | js.Array[_] = js.native
+  def getValue(): String | js.Array[js.Any] = js.native
+  def getValue(config: js.Any): String | js.Array[js.Any] = js.native
   
   def hasEvent(name: String): Boolean = js.native
   

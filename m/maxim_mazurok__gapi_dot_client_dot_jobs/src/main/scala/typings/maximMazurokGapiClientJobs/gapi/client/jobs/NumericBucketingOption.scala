@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumericBucketingOption extends StObject {
   
   /**
     * Required. Two adjacent values form a histogram bucket. Values should be in ascending order. For example, if [5, 10, 15] are provided, four buckets are created: (-inf, 5), 5, 10),
     * [10, 15), [15, inf). At most 20 [buckets_bound is supported.
     */
-  var bucketBounds: js.UndefOr[js.Array[Double]] = js.native
+  var bucketBounds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Optional. If set to true, the histogram result includes minimum/maximum value of the numeric field. */
-  var requiresMinMax: js.UndefOr[Boolean] = js.native
+  var requiresMinMax: js.UndefOr[Boolean] = js.undefined
 }
 object NumericBucketingOption {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Form extends StObject {
   
   /** ! The URI where to send the form when it's submitted. */
-  var actionUri: js.UndefOr[String] = js.native
+  var actionUri: js.UndefOr[String] = js.undefined
   
   /** ! The names of form fields related to the vulnerability. */
-  var fields: js.UndefOr[js.Array[String]] = js.native
+  var fields: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Form {
   

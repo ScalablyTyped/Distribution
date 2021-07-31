@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNetworkProfileRequest extends StObject {
   
   /**
     * The ARN of the network profile to return information about.
     */
-  var arn: AmazonResourceName = js.native
+  var arn: AmazonResourceName
 }
 object GetNetworkProfileRequest {
   

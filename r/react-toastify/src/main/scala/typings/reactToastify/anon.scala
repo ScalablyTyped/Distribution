@@ -15,25 +15,23 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BOTTOMCENTER extends StObject {
     
-    var BOTTOM_CENTER: ToastPosition = js.native
+    var BOTTOM_CENTER: ToastPosition
     
-    var BOTTOM_LEFT: ToastPosition = js.native
+    var BOTTOM_LEFT: ToastPosition
     
-    var BOTTOM_RIGHT: ToastPosition = js.native
+    var BOTTOM_RIGHT: ToastPosition
     
-    var TOP_CENTER: ToastPosition = js.native
+    var TOP_CENTER: ToastPosition
     
-    var TOP_LEFT: ToastPosition = js.native
+    var TOP_LEFT: ToastPosition
     
-    var TOP_RIGHT: ToastPosition = js.native
+    var TOP_RIGHT: ToastPosition
   }
   object BOTTOMCENTER {
     
@@ -73,16 +71,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Collection extends StObject {
     
-    var collection: Record[Id, Toast] = js.native
+    var collection: Record[Id, Toast]
     
-    var containerRef: MutableRefObject[Null] = js.native
+    var containerRef: MutableRefObject[Null]
     
-    def getToastToRender[T](cb: js.Function2[/* position */ ToastPosition, /* toastList */ js.Array[Toast], T]): js.Array[T] = js.native
+    def getToastToRender[T](cb: js.Function2[/* position */ ToastPosition, /* toastList */ js.Array[Toast], T]): js.Array[T]
     
-    def isToastActive(id: Id): Boolean = js.native
+    def isToastActive(id: Id): Boolean
   }
   object Collection {
     
@@ -116,20 +113,19 @@ object anon {
     }
   }
   
-  @js.native
   trait DARK extends StObject {
     
-    var DARK: TypeOptions = js.native
+    var DARK: TypeOptions
     
-    var DEFAULT: TypeOptions = js.native
+    var DEFAULT: TypeOptions
     
-    var ERROR: TypeOptions = js.native
+    var ERROR: TypeOptions
     
-    var INFO: TypeOptions = js.native
+    var INFO: TypeOptions
     
-    var SUCCESS: TypeOptions = js.native
+    var SUCCESS: TypeOptions
     
-    var WARNING: TypeOptions = js.native
+    var WARNING: TypeOptions
   }
   object DARK {
     
@@ -169,14 +165,13 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultClassName extends StObject {
     
-    var defaultClassName: js.UndefOr[String] = js.native
+    var defaultClassName: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[ToastPosition] = js.native
+    var position: js.UndefOr[ToastPosition] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
   }
   object DefaultClassName {
     
@@ -209,20 +204,19 @@ object anon {
     }
   }
   
-  @js.native
   trait EventHandlers extends StObject {
     
-    var eventHandlers: DOMAttributes[HTMLElement] = js.native
+    var eventHandlers: DOMAttributes[HTMLElement]
     
-    var isRunning: Boolean = js.native
+    var isRunning: Boolean
     
-    def pauseToast(): Unit = js.native
+    def pauseToast(): Unit
     
-    def playToast(): Unit = js.native
+    def playToast(): Unit
     
-    var preventExitTransition: Boolean = js.native
+    var preventExitTransition: Boolean
     
-    var toastRef: RefObject[HTMLDivElement] = js.native
+    var toastRef: RefObject[HTMLDivElement]
   }
   object EventHandlers {
     
@@ -262,16 +256,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var defaultClassName: js.UndefOr[String] = js.native
+    var defaultClassName: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[ToastPosition] = js.native
+    var position: js.UndefOr[ToastPosition] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.UndefOr[TypeOptions] = js.native
+    var `type`: js.UndefOr[TypeOptions] = js.undefined
   }
   object Position {
     
@@ -310,21 +303,22 @@ object anon {
     }
   }
   
-  @js.native
-  trait StaleId extends Action {
+  trait StaleId
+    extends StObject
+       with Action {
     
-    var staleId: js.UndefOr[Id] = js.native
+    var staleId: js.UndefOr[Id] = js.undefined
     
-    var toastId: Id = js.native
+    var toastId: Id
     
-    var `type`: ADD = js.native
+    var `type`: ADD
   }
   object StaleId {
     
     @scala.inline
-    def apply(toastId: Id, `type`: ADD): StaleId = {
+    def apply(toastId: Id): StaleId = {
       val __obj = js.Dynamic.literal(toastId = toastId.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("ADD")
       __obj.asInstanceOf[StaleId]
     }
     
@@ -345,19 +339,20 @@ object anon {
     }
   }
   
-  @js.native
-  trait ToastId extends Action {
+  trait ToastId
+    extends StObject
+       with Action {
     
-    var toastId: js.UndefOr[Id] = js.native
+    var toastId: js.UndefOr[Id] = js.undefined
     
-    var `type`: REMOVE = js.native
+    var `type`: REMOVE
   }
   object ToastId {
     
     @scala.inline
-    def apply(`type`: REMOVE): ToastId = {
+    def apply(): ToastId = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("REMOVE")
       __obj.asInstanceOf[ToastId]
     }
     

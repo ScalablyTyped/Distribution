@@ -2,15 +2,13 @@ package typings.seleniumWebdriver.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISpeed extends StObject {
   
-  var xspeed: Double = js.native
+  var xspeed: Double
   
-  var yspeed: Double = js.native
+  var yspeed: Double
 }
 object ISpeed {
   

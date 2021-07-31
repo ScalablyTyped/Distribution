@@ -5,35 +5,30 @@ import typings.rlp.typesMod.Decoded
 import typings.rlp.typesMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rlp", "decode")
+  @JSImport("rlp", JSImport.Namespace)
   @js.native
-  def decode(input: js.Array[Buffer]): js.Array[Buffer] = js.native
-  @JSImport("rlp", "decode")
-  @js.native
-  def decode(input: js.Array[Buffer], stream: Boolean): js.Array[Buffer] = js.native
-  @JSImport("rlp", "decode")
-  @js.native
-  def decode(input: Buffer): Buffer = js.native
-  @JSImport("rlp", "decode")
-  @js.native
-  def decode(input: Buffer, stream: Boolean): Buffer = js.native
-  @JSImport("rlp", "decode")
-  @js.native
-  def decode(input: Input): js.Array[Buffer] | Buffer | Decoded = js.native
-  @JSImport("rlp", "decode")
-  @js.native
-  def decode(input: Input, stream: Boolean): js.Array[Buffer] | Buffer | Decoded = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rlp", "encode")
-  @js.native
-  def encode(input: Input): Buffer = js.native
+  @scala.inline
+  def decode(input: js.Array[Buffer]): js.Array[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Buffer]]
+  @scala.inline
+  def decode(input: js.Array[Buffer], stream: Boolean): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
+  @scala.inline
+  def decode(input: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def decode(input: Buffer, stream: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def decode(input: Input): js.Array[Buffer] | Buffer | Decoded = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Buffer] | Buffer | Decoded]
+  @scala.inline
+  def decode(input: Input, stream: Boolean): js.Array[Buffer] | Buffer | Decoded = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer] | Buffer | Decoded]
   
-  @JSImport("rlp", "getLength")
-  @js.native
-  def getLength(input: Input): Buffer | Double = js.native
+  @scala.inline
+  def encode(input: Input): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def getLength(input: Input): Buffer | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer | Double]
 }

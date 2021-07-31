@@ -2,24 +2,22 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A button. Can be a text button or an image button.
   */
-@js.native
 trait SchemaButton extends StObject {
   
   /**
     * A button with image and onclick action.
     */
-  var imageButton: js.UndefOr[SchemaImageButton] = js.native
+  var imageButton: js.UndefOr[SchemaImageButton] = js.undefined
   
   /**
     * A button with text and onclick action.
     */
-  var textButton: js.UndefOr[SchemaTextButton] = js.native
+  var textButton: js.UndefOr[SchemaTextButton] = js.undefined
 }
 object SchemaButton {
   

@@ -6,26 +6,26 @@ import typings.keepNetworkTbtcJs.commonTypesMod.RedemptionDetails
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object redemptionMod {
   
   @JSImport("@keep-network/tbtc.js/src/Redemption", JSImport.Default)
   @js.native
-  class default protected () extends Redemption {
+  class default protected ()
+    extends StObject
+       with Redemption {
     def this(deposit: DepositBaseClass) = this()
     def this(deposit: DepositBaseClass, redemptionDetails: RedemptionDetails) = this()
   }
   
-  @js.native
   trait AutoSubmitState extends StObject {
     
-    var broadcastTransactionID: js.Promise[String] = js.native
+    var broadcastTransactionID: js.Promise[String]
     
-    var confirmations: js.Promise[RequiredConfirmationsTransactionID] = js.native
+    var confirmations: js.Promise[RequiredConfirmationsTransactionID]
     
-    var proofTransaction: js.Promise[Unit] = js.native
+    var proofTransaction: js.Promise[Unit]
   }
   object AutoSubmitState {
     
@@ -86,12 +86,11 @@ object redemptionMod {
     var withdrawnEmitter: EventEmitter = js.native
   }
   
-  @js.native
   trait UnsignedTransactionDetails extends StObject {
     
-    var digest: String = js.native
+    var digest: String
     
-    var hex: String = js.native
+    var hex: String
   }
   object UnsignedTransactionDetails {
     

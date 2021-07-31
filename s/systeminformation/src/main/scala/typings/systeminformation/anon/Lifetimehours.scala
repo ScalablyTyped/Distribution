@@ -2,17 +2,15 @@ package typings.systeminformation.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lifetimehours extends StObject {
   
-  var lifetime_hours: Double = js.native
+  var lifetime_hours: Double
   
-  var status: Value = js.native
+  var status: Value
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Lifetimehours {
   

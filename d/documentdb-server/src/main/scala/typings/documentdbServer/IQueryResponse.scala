@@ -2,7 +2,6 @@ package typings.documentdbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If the query is part of a chained call, then this object can be used to chain further queries until the final terminating value call.
   */
 @js.native
-trait IQueryResponse extends IQueryAPI {
+trait IQueryResponse
+  extends StObject
+     with IQueryAPI {
   
   /** True if the query has been queued, false if it is not queued because of a pending timeout. */
   var isAccepted: Boolean = js.native

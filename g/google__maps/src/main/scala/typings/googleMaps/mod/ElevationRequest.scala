@@ -2,10 +2,8 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElevationRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ElevationRequest extends StObject {
     * This parameter takes either a single location as a comma-separated {latitude,longitude} pair (e.g. "40.714728,-73.998672")
     * or multiple latitude/longitude pairs passed as an array or as an encoded polyline.
     */
-  var locations: js.Array[LatLng] = js.native
+  var locations: js.Array[LatLng]
 }
 object ElevationRequest {
   

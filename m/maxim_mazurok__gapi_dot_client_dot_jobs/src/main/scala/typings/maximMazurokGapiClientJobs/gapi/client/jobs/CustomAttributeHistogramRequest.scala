@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomAttributeHistogramRequest extends StObject {
   
   /**
     * Required. Specifies the custom field key to perform a histogram on. If specified without `long_value_histogram_bucketing_option`, histogram on string values of the given `key` is
     * triggered, otherwise histogram is performed on long values.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Optional. Specifies buckets used to perform a range histogram on Job's filterable long custom field values, or min/max value requirements. */
-  var longValueHistogramBucketingOption: js.UndefOr[NumericBucketingOption] = js.native
+  var longValueHistogramBucketingOption: js.UndefOr[NumericBucketingOption] = js.undefined
   
   /** Optional. If set to true, the response includes the histogram value for each key as a string. */
-  var stringValueHistogram: js.UndefOr[Boolean] = js.native
+  var stringValueHistogram: js.UndefOr[Boolean] = js.undefined
 }
 object CustomAttributeHistogramRequest {
   

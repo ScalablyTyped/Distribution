@@ -2,15 +2,13 @@ package typings.reduxFirstRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuerySerializer extends StObject {
   
-  def parse(queryString: String): js.Object = js.native
+  def parse(queryString: String): js.Object
   
-  def stringify(params: Params): String = js.native
+  def stringify(params: Params): String
 }
 object QuerySerializer {
   

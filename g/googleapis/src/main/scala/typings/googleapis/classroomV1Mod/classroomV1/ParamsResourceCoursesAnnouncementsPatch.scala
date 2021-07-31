@@ -6,32 +6,32 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCoursesAnnouncementsPatch extends StandardParameters {
+trait ParamsResourceCoursesAnnouncementsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Identifier of the course. This identifier can be either the
     * Classroom-assigned identifier or an alias.
     */
-  var courseId: js.UndefOr[String] = js.native
+  var courseId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the announcement.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaAnnouncement] = js.native
+  var requestBody: js.UndefOr[SchemaAnnouncement] = js.undefined
   
   /**
     * Mask that identifies which fields on the announcement to update. This
@@ -43,7 +43,7 @@ trait ParamsResourceCoursesAnnouncementsPatch extends StandardParameters {
     * be returned.  The following fields may be specified by teachers:  *
     * `text` * `state` * `scheduled_time`
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCoursesAnnouncementsPatch {
   

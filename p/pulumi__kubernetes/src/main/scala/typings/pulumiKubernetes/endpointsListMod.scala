@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object endpointsListMod {
@@ -27,7 +26,7 @@ object endpointsListMod {
       */
     def this(name: String) = this()
     def this(name: String, args: EndpointsListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: EndpointsListArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -53,6 +52,10 @@ object endpointsListMod {
   /* static members */
   object EndpointsList {
     
+    @JSImport("@pulumi/kubernetes/core/v1/endpointsList", "EndpointsList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EndpointsList resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,44 +64,40 @@ object endpointsListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/core/v1/endpointsList", "EndpointsList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EndpointsList = js.native
-    @JSImport("@pulumi/kubernetes/core/v1/endpointsList", "EndpointsList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): EndpointsList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EndpointsList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EndpointsList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): EndpointsList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointsList]
     
     /**
       * Returns true if the given object is an instance of EndpointsList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/core/v1/endpointsList", "EndpointsList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/endpointsList.EndpointsList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/endpointsList.EndpointsList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/endpointsList.EndpointsList */ Boolean]
   }
   
-  @js.native
   trait EndpointsListArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[v1]] = js.native
+    val apiVersion: js.UndefOr[Input[v1]] = js.undefined
     
     /**
       * List of endpoints.
       */
-    val items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.Endpoints]]] = js.native
+    val items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.Endpoints]]]
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.EndpointsList]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.EndpointsList]] = js.undefined
     
     /**
       * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.undefined
   }
   object EndpointsListArgs {
     

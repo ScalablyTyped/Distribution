@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutApprovalResultOutput extends StObject {
   
   /**
     * The timestamp showing when the approval or rejection was submitted.
     */
-  var approvedAt: js.UndefOr[Timestamp] = js.native
+  var approvedAt: js.UndefOr[Timestamp] = js.undefined
 }
 object PutApprovalResultOutput {
   

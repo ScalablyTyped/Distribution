@@ -3,78 +3,76 @@ package typings.googleapis.driveV2Mod.driveV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A revision of a file.
   */
-@js.native
 trait SchemaRevision extends StObject {
   
   /**
     * Short term download URL for the file. This will only be populated on
     * files with content stored in Drive.
     */
-  var downloadUrl: js.UndefOr[String] = js.native
+  var downloadUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The ETag of the revision.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Links for exporting Google Docs to specific formats.
     */
-  var exportLinks: js.UndefOr[StringDictionary[String]] = js.native
+  var exportLinks: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The size of the revision in bytes. This will only be populated on files
     * with content stored in Drive.
     */
-  var fileSize: js.UndefOr[String] = js.native
+  var fileSize: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the revision.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * This is always drive#revision.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The last user to modify this revision.
     */
-  var lastModifyingUser: js.UndefOr[SchemaUser] = js.native
+  var lastModifyingUser: js.UndefOr[SchemaUser] = js.undefined
   
   /**
     * Name of the last user to modify this revision.
     */
-  var lastModifyingUserName: js.UndefOr[String] = js.native
+  var lastModifyingUserName: js.UndefOr[String] = js.undefined
   
   /**
     * An MD5 checksum for the content of this revision. This will only be
     * populated on files with content stored in Drive.
     */
-  var md5Checksum: js.UndefOr[String] = js.native
+  var md5Checksum: js.UndefOr[String] = js.undefined
   
   /**
     * The MIME type of the revision.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * Last time this revision was modified (formatted RFC 3339 timestamp).
     */
-  var modifiedDate: js.UndefOr[String] = js.native
+  var modifiedDate: js.UndefOr[String] = js.undefined
   
   /**
     * The original filename when this revision was created. This will only be
     * populated on files with content stored in Drive.
     */
-  var originalFilename: js.UndefOr[String] = js.native
+  var originalFilename: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this revision is pinned to prevent automatic purging. This will
@@ -83,35 +81,35 @@ trait SchemaRevision extends StObject {
     * they are created through the drive.files.insert/update/copy by using the
     * pinned query parameter.
     */
-  var pinned: js.UndefOr[Boolean] = js.native
+  var pinned: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether subsequent revisions will be automatically republished. This is
     * only populated and can only be modified for Google Docs.
     */
-  var publishAuto: js.UndefOr[Boolean] = js.native
+  var publishAuto: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this revision is published. This is only populated and can only
     * be modified for Google Docs.
     */
-  var published: js.UndefOr[Boolean] = js.native
+  var published: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A link to the published revision.
     */
-  var publishedLink: js.UndefOr[String] = js.native
+  var publishedLink: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this revision is published outside the domain. This is only
     * populated and can only be modified for Google Docs.
     */
-  var publishedOutsideDomain: js.UndefOr[Boolean] = js.native
+  var publishedOutsideDomain: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A link back to this revision.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaRevision {
   

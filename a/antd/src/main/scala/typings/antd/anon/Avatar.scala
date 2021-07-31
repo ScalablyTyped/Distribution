@@ -2,17 +2,15 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Avatar extends StObject {
   
-  var avatar: Boolean = js.native
+  var avatar: Boolean
   
-  var paragraph: Boolean = js.native
+  var paragraph: Boolean
   
-  var title: Boolean = js.native
+  var title: Boolean
 }
 object Avatar {
   

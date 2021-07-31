@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Container events are provided **only** for notification purposes. The VCL will automatically handle add and remove operations internally.
   * @deprecated Deprecated
   */
-@js.native
-trait XVclContainerListener extends XEventListener {
+trait XVclContainerListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when a window has been added to the VCL container window. */
-  def windowAdded(e: VclContainerEvent): Unit = js.native
+  def windowAdded(e: VclContainerEvent): Unit
   
   /** is invoked when a window has been removed from the VCL container window. */
-  def windowRemoved(e: VclContainerEvent): Unit = js.native
+  def windowRemoved(e: VclContainerEvent): Unit
 }
 object XVclContainerListener {
   

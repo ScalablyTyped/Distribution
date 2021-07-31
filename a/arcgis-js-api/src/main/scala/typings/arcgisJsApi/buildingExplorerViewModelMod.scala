@@ -6,24 +6,25 @@ import typings.arcgisJsApi.esri.BuildingExplorerViewModelConstructor
 import typings.arcgisJsApi.esri.BuildingExplorerViewModelProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buildingExplorerViewModelMod extends Shortcut {
   
   @JSImport("esri/widgets/BuildingExplorer/BuildingExplorerViewModel", JSImport.Namespace)
   @js.native
-  val ^ : BuildingExplorerViewModelConstructor = js.native
+  val ^ : js.Object & BuildingExplorerViewModelConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/BuildingExplorer/BuildingExplorerViewModel", JSImport.Namespace)
   @js.native
-  class Class () extends BuildingExplorerViewModel {
+  class Class ()
+    extends StObject
+       with BuildingExplorerViewModel {
     def this(properties: BuildingExplorerViewModelProperties) = this()
   }
   
-  type _To = BuildingExplorerViewModelConstructor
+  type _To = js.Object & BuildingExplorerViewModelConstructor
   
   /* This means you don't have to write `^`, but can instead just say `buildingExplorerViewModelMod.foo` */
-  override def _to: BuildingExplorerViewModelConstructor = ^
+  override def _to: js.Object & BuildingExplorerViewModelConstructor = ^
 }

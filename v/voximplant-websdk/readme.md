@@ -10,9 +10,9 @@ VoxImplant Web SDK for embedding voice and video communication into web applicat
 | ------------------ | :-------------: |
 | Full name          | voximplant-websdk |
 | Keywords           | npm, module, voximplant, websdk |
-| # releases         | 60 |
+| # releases         | 62 |
 | # dependents       | 1 |
-| # downloads        | 40220 |
+| # downloads        | 43959 |
 | # stars            | 0 |
 
 ## Links

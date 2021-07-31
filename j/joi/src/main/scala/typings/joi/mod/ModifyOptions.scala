@@ -2,19 +2,17 @@ package typings.joi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyOptions extends StObject {
   
-  var each: js.UndefOr[Boolean] = js.native
+  var each: js.UndefOr[Boolean] = js.undefined
   
-  var once: js.UndefOr[Boolean] = js.native
+  var once: js.UndefOr[Boolean] = js.undefined
   
-  var ref: js.UndefOr[Boolean] = js.native
+  var ref: js.UndefOr[Boolean] = js.undefined
   
-  var schema: js.UndefOr[Boolean] = js.native
+  var schema: js.UndefOr[Boolean] = js.undefined
 }
 object ModifyOptions {
   

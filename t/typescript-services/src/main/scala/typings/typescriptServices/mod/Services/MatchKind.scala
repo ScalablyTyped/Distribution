@@ -2,13 +2,13 @@ package typings.typescriptServices.mod.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "Services.MatchKind")
 @js.native
 class MatchKind ()
-  extends typings.typescriptServices.TypeScript.Services.MatchKind
+  extends StObject
+     with typings.typescriptServices.TypeScript.Services.MatchKind
 object MatchKind {
   
   @JSImport("typescript-services", "Services.MatchKind")

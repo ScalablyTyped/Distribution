@@ -2,17 +2,15 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inactive extends StObject {
   
-  var active: NameStyle = js.native
+  var active: NameStyle
   
-  var inactive: MarkerStyleNameStyle = js.native
+  var inactive: MarkerStyleNameStyle
   
-  var unchecked: MarkerStyle = js.native
+  var unchecked: MarkerStyle
 }
 object Inactive {
   

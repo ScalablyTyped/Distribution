@@ -3,15 +3,13 @@ package typings.smartFoxServer.SFS2X
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOBJECT_MESSAGE extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var sender: SFSUser = js.native
+  var sender: SFSUser
 }
 object IOBJECT_MESSAGE {
   

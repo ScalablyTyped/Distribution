@@ -2,46 +2,44 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SkillsStoreSkill extends StObject {
   
   /**
     * The URL where the skill icon resides.
     */
-  var IconUrl: js.UndefOr[typings.awsSdk.alexaforbusinessMod.IconUrl] = js.native
+  var IconUrl: js.UndefOr[typings.awsSdk.alexaforbusinessMod.IconUrl] = js.undefined
   
   /**
     * Sample utterances that interact with the skill.
     */
-  var SampleUtterances: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SampleUtterances] = js.native
+  var SampleUtterances: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SampleUtterances] = js.undefined
   
   /**
     * Short description about the skill.
     */
-  var ShortDescription: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ShortDescription] = js.native
+  var ShortDescription: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ShortDescription] = js.undefined
   
   /**
     * Information about the skill.
     */
-  var SkillDetails: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillDetails] = js.native
+  var SkillDetails: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillDetails] = js.undefined
   
   /**
     * The ARN of the skill.
     */
-  var SkillId: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillId] = js.native
+  var SkillId: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillId] = js.undefined
   
   /**
     * The name of the skill.
     */
-  var SkillName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillName] = js.native
+  var SkillName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillName] = js.undefined
   
   /**
     * Linking support for a skill.
     */
-  var SupportsLinking: js.UndefOr[scala.Boolean] = js.native
+  var SupportsLinking: js.UndefOr[scala.Boolean] = js.undefined
 }
 object SkillsStoreSkill {
   

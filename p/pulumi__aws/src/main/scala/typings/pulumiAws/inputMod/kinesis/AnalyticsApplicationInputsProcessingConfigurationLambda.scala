@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.kinesis
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationInputsProcessingConfigurationLambda extends StObject {
   
   /**
     * The ARN of the Lambda function.
     */
-  var resourceArn: Input[String] = js.native
+  var resourceArn: Input[String]
   
   /**
     * The ARN of the IAM Role used to access the Lambda function.
     */
-  var roleArn: Input[String] = js.native
+  var roleArn: Input[String]
 }
 object AnalyticsApplicationInputsProcessingConfigurationLambda {
   

@@ -3,13 +3,11 @@ package typings.iobroker.anon
 import typings.iobroker.mod.global.ioBroker.GetObjectListItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowsArray extends StObject {
   
-  var rows: js.Array[GetObjectListItem] = js.native
+  var rows: js.Array[GetObjectListItem]
 }
 object RowsArray {
   

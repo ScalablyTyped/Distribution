@@ -2,31 +2,29 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Pricing Information
   */
-@js.native
 trait SchemaPricing extends StObject {
   
   /**
     * Cap cost type of this inventory item.
     */
-  var capCostType: js.UndefOr[String] = js.native
+  var capCostType: js.UndefOr[String] = js.undefined
   
   /**
     * End date of this inventory item.
     */
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /**
     * Flights of this inventory item. A flight (a.k.a. pricing period)
     * represents the inventory item pricing information for a specific period
     * of time.
     */
-  var flights: js.UndefOr[js.Array[SchemaFlight]] = js.native
+  var flights: js.UndefOr[js.Array[SchemaFlight]] = js.undefined
   
   /**
     * Group type of this inventory item if it represents a placement group. Is
@@ -38,17 +36,17 @@ trait SchemaPricing extends StObject {
     * the tags in it will be served at the same time. A roadblock requires one
     * of its assigned inventory items to be marked as primary.
     */
-  var groupType: js.UndefOr[String] = js.native
+  var groupType: js.UndefOr[String] = js.undefined
   
   /**
     * Pricing type of this inventory item.
     */
-  var pricingType: js.UndefOr[String] = js.native
+  var pricingType: js.UndefOr[String] = js.undefined
   
   /**
     * Start date of this inventory item.
     */
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
 }
 object SchemaPricing {
   

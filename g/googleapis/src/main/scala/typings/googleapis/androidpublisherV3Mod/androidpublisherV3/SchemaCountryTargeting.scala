@@ -2,15 +2,13 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCountryTargeting extends StObject {
   
-  var countries: js.UndefOr[js.Array[String]] = js.native
+  var countries: js.UndefOr[js.Array[String]] = js.undefined
   
-  var includeRestOfWorld: js.UndefOr[Boolean] = js.native
+  var includeRestOfWorld: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaCountryTargeting {
   

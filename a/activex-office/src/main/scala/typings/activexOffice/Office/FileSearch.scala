@@ -2,7 +2,6 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,11 +17,11 @@ trait FileSearch extends StObject {
     * @param AlwaysAccurate [AlwaysAccurate=true]
     */
   def Execute(): Double = js.native
-  def Execute(SortBy: js.UndefOr[scala.Nothing], SortOrder: js.UndefOr[scala.Nothing], AlwaysAccurate: Boolean): Double = js.native
-  def Execute(SortBy: js.UndefOr[scala.Nothing], SortOrder: MsoSortOrder): Double = js.native
-  def Execute(SortBy: js.UndefOr[scala.Nothing], SortOrder: MsoSortOrder, AlwaysAccurate: Boolean): Double = js.native
+  def Execute(SortBy: Unit, SortOrder: Unit, AlwaysAccurate: Boolean): Double = js.native
+  def Execute(SortBy: Unit, SortOrder: MsoSortOrder): Double = js.native
+  def Execute(SortBy: Unit, SortOrder: MsoSortOrder, AlwaysAccurate: Boolean): Double = js.native
   def Execute(SortBy: MsoSortBy): Double = js.native
-  def Execute(SortBy: MsoSortBy, SortOrder: js.UndefOr[scala.Nothing], AlwaysAccurate: Boolean): Double = js.native
+  def Execute(SortBy: MsoSortBy, SortOrder: Unit, AlwaysAccurate: Boolean): Double = js.native
   def Execute(SortBy: MsoSortBy, SortOrder: MsoSortOrder): Double = js.native
   def Execute(SortBy: MsoSortBy, SortOrder: MsoSortOrder, AlwaysAccurate: Boolean): Double = js.native
   

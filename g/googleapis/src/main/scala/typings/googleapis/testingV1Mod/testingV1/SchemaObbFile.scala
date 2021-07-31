@@ -2,19 +2,17 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An opaque binary blob file to install on the device before the test starts.
   */
-@js.native
 trait SchemaObbFile extends StObject {
   
   /**
     * Required. Opaque Binary Blob (OBB) file(s) to install on the device.
     */
-  var obb: js.UndefOr[SchemaFileReference] = js.native
+  var obb: js.UndefOr[SchemaFileReference] = js.undefined
   
   /**
     * Required. OBB file name which must conform to the format as specified by
@@ -23,7 +21,7 @@ trait SchemaObbFile extends StObject {
     * \&lt;shared-storage\&gt;/Android/obb/\&lt;package-name\&gt;/ on the
     * device.
     */
-  var obbFileName: js.UndefOr[String] = js.native
+  var obbFileName: js.UndefOr[String] = js.undefined
 }
 object SchemaObbFile {
   

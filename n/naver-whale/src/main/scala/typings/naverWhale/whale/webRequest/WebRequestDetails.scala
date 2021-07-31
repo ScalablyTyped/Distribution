@@ -2,15 +2,14 @@ package typings.naverWhale.whale.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebRequestDetails
-  extends typings.chrome.chrome.webRequest.ResourceRequest {
+  extends StObject
+     with typings.chrome.chrome.webRequest.ResourceRequest {
   
   /** Standard HTTP method. */
-  var method: String = js.native
+  var method: String
 }
 object WebRequestDetails {
   

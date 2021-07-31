@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPartitionRequest extends StObject {
   
   /**
     * The ID of the Data Catalog where the partition in question resides. If none is provided, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The name of the catalog database where the partition resides.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * The values that define the partition.
     */
-  var PartitionValues: ValueStringList = js.native
+  var PartitionValues: ValueStringList
   
   /**
     * The name of the partition's table.
     */
-  var TableName: NameString = js.native
+  var TableName: NameString
 }
 object GetPartitionRequest {
   

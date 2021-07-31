@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1FeatureMapFloatList extends StObject {
   
   /** Float feature value. */
-  var value: js.UndefOr[js.Array[Double]] = js.native
+  var value: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1FeatureMapFloatList {
   

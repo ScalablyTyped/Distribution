@@ -3,26 +3,24 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Endpoint config for this cluster
   */
-@js.native
 trait SchemaEndpointConfig extends StObject {
   
   /**
     * Optional. If true, enable http access to specific ports on the cluster
     * from external sources. Defaults to false.
     */
-  var enableHttpPortAccess: js.UndefOr[Boolean] = js.native
+  var enableHttpPortAccess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output only. The map of port descriptions to URLs. Will only be populated
     * if enable_http_port_access is true.
     */
-  var httpPorts: js.UndefOr[StringDictionary[String]] = js.native
+  var httpPorts: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaEndpointConfig {
   

@@ -4,44 +4,39 @@ import typings.std.RegExp
 import typings.superstruct.structMod.Struct
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object structsRefinementsMod {
   
-  @JSImport("superstruct/lib/structs/refinements", "empty")
+  @JSImport("superstruct/lib/structs/refinements", JSImport.Namespace)
   @js.native
-  def empty[T /* <: String | js.Array[_] */](struct: Struct[T, _]): Struct[T, _] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("superstruct/lib/structs/refinements", "length")
-  @js.native
-  def length[T /* <: String | js.Array[_] */](struct: Struct[T, _], min: Double, max: Double): Struct[T, _] = js.native
+  @scala.inline
+  def empty[T /* <: String | js.Array[js.Any] */](struct: Struct[T, js.Any]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(struct.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
   
-  @JSImport("superstruct/lib/structs/refinements", "negative")
-  @js.native
-  def negative[T /* <: Double */](struct: Struct[T, _]): Struct[T, _] = js.native
+  @scala.inline
+  def length[T /* <: String | js.Array[js.Any] */](struct: Struct[T, js.Any], min: Double, max: Double): Struct[T, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("length")(struct.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Struct[T, js.Any]]
   
-  @JSImport("superstruct/lib/structs/refinements", "nonnegative")
-  @js.native
-  def nonnegative[T /* <: Double */](struct: Struct[T, _]): Struct[T, _] = js.native
+  @scala.inline
+  def negative[T /* <: Double */](struct: Struct[T, js.Any]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("negative")(struct.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
   
-  @JSImport("superstruct/lib/structs/refinements", "nonpositive")
-  @js.native
-  def nonpositive[T /* <: Double */](struct: Struct[T, _]): Struct[T, _] = js.native
+  @scala.inline
+  def nonnegative[T /* <: Double */](struct: Struct[T, js.Any]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("nonnegative")(struct.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
   
-  @JSImport("superstruct/lib/structs/refinements", "pattern")
-  @js.native
-  def pattern[T /* <: String */](struct: Struct[T, _], regexp: RegExp): Struct[T, _] = js.native
+  @scala.inline
+  def nonpositive[T /* <: Double */](struct: Struct[T, js.Any]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("nonpositive")(struct.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
   
-  @JSImport("superstruct/lib/structs/refinements", "positive")
-  @js.native
-  def positive[T /* <: Double */](struct: Struct[T, _]): Struct[T, _] = js.native
+  @scala.inline
+  def pattern[T /* <: String */](struct: Struct[T, js.Any], regexp: RegExp): Struct[T, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pattern")(struct.asInstanceOf[js.Any], regexp.asInstanceOf[js.Any])).asInstanceOf[Struct[T, js.Any]]
   
-  @JSImport("superstruct/lib/structs/refinements", "refinement")
-  @js.native
+  @scala.inline
+  def positive[T /* <: Double */](struct: Struct[T, js.Any]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("positive")(struct.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
+  
+  @scala.inline
   def refinement[T, S](
     name: String,
     struct: Struct[T, S],
     refiner: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Refiner<T, S> */ js.Any
-  ): Struct[T, S] = js.native
+  ): Struct[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(name.asInstanceOf[js.Any], struct.asInstanceOf[js.Any], refiner.asInstanceOf[js.Any])).asInstanceOf[Struct[T, S]]
 }

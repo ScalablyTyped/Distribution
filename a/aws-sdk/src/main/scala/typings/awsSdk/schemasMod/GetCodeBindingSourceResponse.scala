@@ -2,13 +2,11 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCodeBindingSourceResponse extends StObject {
   
-  var Body: js.UndefOr[typings.awsSdk.schemasMod.Body] = js.native
+  var Body: js.UndefOr[typings.awsSdk.schemasMod.Body] = js.undefined
 }
 object GetCodeBindingSourceResponse {
   

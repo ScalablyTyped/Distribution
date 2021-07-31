@@ -3,21 +3,19 @@ package typings.typescriptServices.TypeScript
 import typings.typescriptServices.anon.AllowAutomaticSemicolonInsertion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParseOptions extends StObject {
   
-  var _allowAutomaticSemicolonInsertion: js.Any = js.native
+  var _allowAutomaticSemicolonInsertion: js.Any
   
-  var _languageVersion: js.Any = js.native
+  var _languageVersion: js.Any
   
-  def allowAutomaticSemicolonInsertion(): Boolean = js.native
+  def allowAutomaticSemicolonInsertion(): Boolean
   
-  def languageVersion(): LanguageVersion = js.native
+  def languageVersion(): LanguageVersion
   
-  def toJSON(key: js.Any): AllowAutomaticSemicolonInsertion = js.native
+  def toJSON(key: js.Any): AllowAutomaticSemicolonInsertion
 }
 object ParseOptions {
   

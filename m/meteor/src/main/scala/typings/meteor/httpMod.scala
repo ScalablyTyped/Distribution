@@ -5,104 +5,84 @@ import typings.meteor.Meteor.Error
 import typings.meteor.anon.Auth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpMod {
   
   object HTTP {
     
-    @JSImport("meteor/http", "HTTP.call")
+    @JSImport("meteor/http", "HTTP")
     @js.native
-    def call(method: String, url: String): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.call")
-    @js.native
-    def call(method: String, url: String, options: js.UndefOr[scala.Nothing], asyncCallback: AsyncCallback): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.call")
-    @js.native
-    def call(method: String, url: String, options: Auth): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.call")
-    @js.native
-    def call(method: String, url: String, options: Auth, asyncCallback: AsyncCallback): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.call")
-    @js.native
-    def call(method: String, url: String, options: HTTPRequest): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.call")
-    @js.native
-    def call(method: String, url: String, options: HTTPRequest, asyncCallback: AsyncCallback): HTTPResponse = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("meteor/http", "HTTP.del")
-    @js.native
-    def del(url: String): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.del")
-    @js.native
-    def del(url: String, callOptions: js.UndefOr[scala.Nothing], asyncCallback: AsyncCallback): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.del")
-    @js.native
-    def del(url: String, callOptions: HTTPRequest): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.del")
-    @js.native
-    def del(url: String, callOptions: HTTPRequest, asyncCallback: AsyncCallback): HTTPResponse = js.native
+    @scala.inline
+    def call(method: String, url: String): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def call(method: String, url: String, options: Unit, asyncCallback: AsyncCallback): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def call(method: String, url: String, options: Auth): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def call(method: String, url: String, options: Auth, asyncCallback: AsyncCallback): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def call(method: String, url: String, options: HTTPRequest): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def call(method: String, url: String, options: HTTPRequest, asyncCallback: AsyncCallback): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
     
-    @JSImport("meteor/http", "HTTP.get")
-    @js.native
-    def get(url: String): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.get")
-    @js.native
-    def get(url: String, callOptions: js.UndefOr[scala.Nothing], asyncCallback: AsyncCallback): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.get")
-    @js.native
-    def get(url: String, callOptions: HTTPRequest): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.get")
-    @js.native
-    def get(url: String, callOptions: HTTPRequest, asyncCallback: AsyncCallback): HTTPResponse = js.native
+    @scala.inline
+    def del(url: String): HTTPResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any]).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def del(url: String, callOptions: Unit, asyncCallback: AsyncCallback): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def del(url: String, callOptions: HTTPRequest): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def del(url: String, callOptions: HTTPRequest, asyncCallback: AsyncCallback): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
     
-    @JSImport("meteor/http", "HTTP.post")
-    @js.native
-    def post(url: String): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.post")
-    @js.native
-    def post(url: String, callOptions: js.UndefOr[scala.Nothing], asyncCallback: AsyncCallback): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.post")
-    @js.native
-    def post(url: String, callOptions: HTTPRequest): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.post")
-    @js.native
-    def post(url: String, callOptions: HTTPRequest, asyncCallback: AsyncCallback): HTTPResponse = js.native
+    @scala.inline
+    def get(url: String): HTTPResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def get(url: String, callOptions: Unit, asyncCallback: AsyncCallback): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def get(url: String, callOptions: HTTPRequest): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def get(url: String, callOptions: HTTPRequest, asyncCallback: AsyncCallback): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
     
-    @JSImport("meteor/http", "HTTP.put")
-    @js.native
-    def put(url: String): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.put")
-    @js.native
-    def put(url: String, callOptions: js.UndefOr[scala.Nothing], asyncCallback: AsyncCallback): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.put")
-    @js.native
-    def put(url: String, callOptions: HTTPRequest): HTTPResponse = js.native
-    @JSImport("meteor/http", "HTTP.put")
-    @js.native
-    def put(url: String, callOptions: HTTPRequest, asyncCallback: AsyncCallback): HTTPResponse = js.native
+    @scala.inline
+    def post(url: String): HTTPResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def post(url: String, callOptions: Unit, asyncCallback: AsyncCallback): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def post(url: String, callOptions: HTTPRequest): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def post(url: String, callOptions: HTTPRequest, asyncCallback: AsyncCallback): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
+    
+    @scala.inline
+    def put(url: String): HTTPResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def put(url: String, callOptions: Unit, asyncCallback: AsyncCallback): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def put(url: String, callOptions: HTTPRequest): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
+    @scala.inline
+    def put(url: String, callOptions: HTTPRequest, asyncCallback: AsyncCallback): HTTPResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[HTTPResponse]
     
     type AsyncCallback = js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[HTTPResponse], Unit]
     
-    @js.native
     trait HTTPRequest extends StObject {
       
-      var auth: js.UndefOr[String] = js.native
+      var auth: js.UndefOr[String] = js.undefined
       
-      var content: js.UndefOr[String] = js.native
+      var content: js.UndefOr[String] = js.undefined
       
-      var data: js.UndefOr[js.Any] = js.native
+      var data: js.UndefOr[js.Any] = js.undefined
       
-      var followRedirects: js.UndefOr[Boolean] = js.native
+      var followRedirects: js.UndefOr[Boolean] = js.undefined
       
-      var headers: js.UndefOr[StringDictionary[String]] = js.native
+      var headers: js.UndefOr[StringDictionary[String]] = js.undefined
       
-      var params: js.UndefOr[StringDictionary[String]] = js.native
+      var params: js.UndefOr[StringDictionary[String]] = js.undefined
       
-      var query: js.UndefOr[String] = js.native
+      var query: js.UndefOr[String] = js.undefined
       
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
     }
     object HTTPRequest {
       
@@ -165,16 +145,15 @@ object httpMod {
       }
     }
     
-    @js.native
     trait HTTPResponse extends StObject {
       
-      var content: js.UndefOr[String] = js.native
+      var content: js.UndefOr[String] = js.undefined
       
-      var data: js.UndefOr[js.Any] = js.native
+      var data: js.UndefOr[js.Any] = js.undefined
       
-      var headers: js.UndefOr[StringDictionary[String]] = js.native
+      var headers: js.UndefOr[StringDictionary[String]] = js.undefined
       
-      var statusCode: js.UndefOr[Double] = js.native
+      var statusCode: js.UndefOr[Double] = js.undefined
     }
     object HTTPResponse {
       

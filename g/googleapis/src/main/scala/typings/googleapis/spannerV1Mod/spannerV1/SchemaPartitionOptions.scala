@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for a PartitionQueryRequest and PartitionReadRequest.
   */
-@js.native
 trait SchemaPartitionOptions extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaPartitionOptions extends StObject {
     * currently 200,000.  This is only a hint.  The actual number of partitions
     * returned may be smaller or larger than this maximum count request.
     */
-  var maxPartitions: js.UndefOr[String] = js.native
+  var maxPartitions: js.UndefOr[String] = js.undefined
   
   /**
     * **Note:** This hint is currently ignored by PartitionQuery and
@@ -28,7 +26,7 @@ trait SchemaPartitionOptions extends StObject {
     * a hint. The actual size of each partition may be smaller or larger than
     * this size request.
     */
-  var partitionSizeBytes: js.UndefOr[String] = js.native
+  var partitionSizeBytes: js.UndefOr[String] = js.undefined
 }
 object SchemaPartitionOptions {
   

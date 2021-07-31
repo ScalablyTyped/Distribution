@@ -3,61 +3,59 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.HierarchicalDataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeViewOptions extends StObject {
   
-  var animation: js.UndefOr[Boolean | TreeViewAnimation] = js.native
+  var animation: js.UndefOr[Boolean | TreeViewAnimation] = js.undefined
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var autoScroll: js.UndefOr[Boolean] = js.native
+  var autoScroll: js.UndefOr[Boolean] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ TreeViewEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ TreeViewEvent, Unit]] = js.undefined
   
-  var check: js.UndefOr[js.Function1[/* e */ TreeViewCheckEvent, Unit]] = js.native
+  var check: js.UndefOr[js.Function1[/* e */ TreeViewCheckEvent, Unit]] = js.undefined
   
-  var checkboxes: js.UndefOr[Boolean | TreeViewCheckboxes] = js.native
+  var checkboxes: js.UndefOr[Boolean | TreeViewCheckboxes] = js.undefined
   
-  var collapse: js.UndefOr[js.Function1[/* e */ TreeViewCollapseEvent, Unit]] = js.native
+  var collapse: js.UndefOr[js.Function1[/* e */ TreeViewCollapseEvent, Unit]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ TreeViewDataBoundEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ TreeViewDataBoundEvent, Unit]] = js.undefined
   
-  var dataImageUrlField: js.UndefOr[String] = js.native
+  var dataImageUrlField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.undefined
   
-  var dataSpriteCssClassField: js.UndefOr[String] = js.native
+  var dataSpriteCssClassField: js.UndefOr[String] = js.undefined
   
-  var dataTextField: js.UndefOr[String | js.Any] = js.native
+  var dataTextField: js.UndefOr[String | js.Any] = js.undefined
   
-  var dataUrlField: js.UndefOr[String] = js.native
+  var dataUrlField: js.UndefOr[String] = js.undefined
   
-  var drag: js.UndefOr[js.Function1[/* e */ TreeViewDragEvent, Unit]] = js.native
+  var drag: js.UndefOr[js.Function1[/* e */ TreeViewDragEvent, Unit]] = js.undefined
   
-  var dragAndDrop: js.UndefOr[Boolean] = js.native
+  var dragAndDrop: js.UndefOr[Boolean] = js.undefined
   
-  var dragend: js.UndefOr[js.Function1[/* e */ TreeViewDragendEvent, Unit]] = js.native
+  var dragend: js.UndefOr[js.Function1[/* e */ TreeViewDragendEvent, Unit]] = js.undefined
   
-  var dragstart: js.UndefOr[js.Function1[/* e */ TreeViewDragstartEvent, Unit]] = js.native
+  var dragstart: js.UndefOr[js.Function1[/* e */ TreeViewDragstartEvent, Unit]] = js.undefined
   
-  var drop: js.UndefOr[js.Function1[/* e */ TreeViewDropEvent, Unit]] = js.native
+  var drop: js.UndefOr[js.Function1[/* e */ TreeViewDropEvent, Unit]] = js.undefined
   
-  var expand: js.UndefOr[js.Function1[/* e */ TreeViewExpandEvent, Unit]] = js.native
+  var expand: js.UndefOr[js.Function1[/* e */ TreeViewExpandEvent, Unit]] = js.undefined
   
-  var loadOnDemand: js.UndefOr[Boolean] = js.native
+  var loadOnDemand: js.UndefOr[Boolean] = js.undefined
   
-  var messages: js.UndefOr[TreeViewMessages] = js.native
+  var messages: js.UndefOr[TreeViewMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var navigate: js.UndefOr[js.Function1[/* e */ TreeViewNavigateEvent, Unit]] = js.native
+  var navigate: js.UndefOr[js.Function1[/* e */ TreeViewNavigateEvent, Unit]] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ TreeViewSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ TreeViewSelectEvent, Unit]] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
 }
 object TreeViewOptions {
   

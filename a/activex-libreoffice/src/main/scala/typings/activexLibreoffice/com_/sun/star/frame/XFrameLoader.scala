@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * office supports both ones - but preferred the synchronous interface.
   * @see XFrame
   */
-@js.native
-trait XFrameLoader extends XInterface {
+trait XFrameLoader
+  extends StObject
+     with XInterface {
   
   /**
     * cancels the loading process.
@@ -26,7 +26,7 @@ trait XFrameLoader extends XInterface {
     * only the owner of this process who called load method before can cancel this process. And they don't need any notification about that. On the other
     * hand - nobody then this owner themselves can be registered as an {@link XLoadEventListener} here.
     */
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   /**
     * starts the loading of the specified resource into the specified {@link Frame} .
@@ -36,7 +36,7 @@ trait XFrameLoader extends XInterface {
     * @param Listener this listener will be informed about success
     * @see XLoadEventListener
     */
-  def load(Frame: XFrame, URL: String, Arguments: SeqEquiv[PropertyValue], Listener: XLoadEventListener): Unit = js.native
+  def load(Frame: XFrame, URL: String, Arguments: SeqEquiv[PropertyValue], Listener: XLoadEventListener): Unit
 }
 object XFrameLoader {
   

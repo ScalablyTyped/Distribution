@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.kinesis
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv extends StObject {
   
   /**
     * The Column Delimiter.
     */
-  var recordColumnDelimiter: Input[String] = js.native
+  var recordColumnDelimiter: Input[String]
   
   /**
     * The Row Delimiter.
     */
-  var recordRowDelimiter: Input[String] = js.native
+  var recordRowDelimiter: Input[String]
 }
 object AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv {
   

@@ -2,18 +2,17 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreviewImageOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 当前显示图片的链接，不填则默认为 urls 的第一张 */
-  var current: js.UndefOr[String] = js.native
+  var current: js.UndefOr[String] = js.undefined
   
   /** 需要预览的图片链接列表 */
-  var urls: js.Array[String] = js.native
+  var urls: js.Array[String]
 }
 object PreviewImageOptions {
   

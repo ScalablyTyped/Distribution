@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDrive.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InheritedFrom extends StObject {
   
   /** Deprecated - use permissionDetails/inherited instead. */
-  var inherited: js.UndefOr[Boolean] = js.native
+  var inherited: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated - use permissionDetails/inheritedFrom instead. */
-  var inheritedFrom: js.UndefOr[String] = js.native
+  var inheritedFrom: js.UndefOr[String] = js.undefined
   
   /** Deprecated - use permissionDetails/role instead. */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
   /** Deprecated - use permissionDetails/permissionType instead. */
-  var teamDrivePermissionType: js.UndefOr[String] = js.native
+  var teamDrivePermissionType: js.UndefOr[String] = js.undefined
 }
 object InheritedFrom {
   

@@ -5,33 +5,31 @@ import typings.spectacle.mod.TemplateFn
 import typings.spectacle.mod.TransitionEffect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColor extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var backgroundImage: js.UndefOr[String] = js.native
+  var backgroundImage: js.UndefOr[String] = js.undefined
   
-  var backgroundOpacity: js.UndefOr[Double] = js.native
+  var backgroundOpacity: js.UndefOr[Double] = js.undefined
   
-  var backgroundPosition: js.UndefOr[String] = js.native
+  var backgroundPosition: js.UndefOr[String] = js.undefined
   
-  var backgroundRepeat: js.UndefOr[String] = js.native
+  var backgroundRepeat: js.UndefOr[String] = js.undefined
   
-  var backgroundSize: js.UndefOr[String] = js.native
+  var backgroundSize: js.UndefOr[String] = js.undefined
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var scaleRatio: js.UndefOr[Double] = js.native
+  var scaleRatio: js.UndefOr[Double] = js.undefined
   
-  var template: js.UndefOr[TemplateFn] = js.native
+  var template: js.UndefOr[TemplateFn] = js.undefined
   
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
   
-  var transitionEffect: js.UndefOr[TransitionEffect] = js.native
+  var transitionEffect: js.UndefOr[TransitionEffect] = js.undefined
 }
 object BackgroundColor {
   

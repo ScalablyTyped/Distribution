@@ -6,7 +6,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2DateTime
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2DateTimeValueSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datetimeMod {
@@ -23,14 +22,13 @@ object datetimeMod {
   
   type DateTimeArgument = GoogleActionsV2DateTime
   
-  @js.native
   trait DateTimeOptions extends StObject {
     
     /**
       * Prompts for the user
       * @public
       */
-    var prompts: js.UndefOr[DateTimeOptionsPrompts] = js.native
+    var prompts: js.UndefOr[DateTimeOptionsPrompts] = js.undefined
   }
   object DateTimeOptions {
     
@@ -51,7 +49,6 @@ object datetimeMod {
     }
   }
   
-  @js.native
   trait DateTimeOptionsPrompts extends StObject {
     
     /**
@@ -59,21 +56,21 @@ object datetimeMod {
       * If not provided, Google will use a generic prompt.
       * @public
       */
-    var date: js.UndefOr[String] = js.native
+    var date: js.UndefOr[String] = js.undefined
     
     /**
       * The initial prompt used to ask for a date and time.
       * If not provided, Google will use a generic prompt.
       * @public
       */
-    var initial: js.UndefOr[String] = js.native
+    var initial: js.UndefOr[String] = js.undefined
     
     /**
       * The prompt used to specifically ask for the time if not provided by user.
       * If not provided, Google will use a generic prompt.
       * @public
       */
-    var time: js.UndefOr[String] = js.native
+    var time: js.UndefOr[String] = js.undefined
   }
   object DateTimeOptionsPrompts {
     

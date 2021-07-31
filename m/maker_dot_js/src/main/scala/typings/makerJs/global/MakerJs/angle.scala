@@ -5,10 +5,13 @@ import typings.makerJs.MakerJs.IPathLine
 import typings.makerJs.MakerJs.IPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angle {
+  
+  @JSGlobal("MakerJs.angle")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Mirror an angle on either or both x and y axes.
@@ -18,9 +21,8 @@ object angle {
     * @param mirrorY Boolean to mirror on the y axis.
     * @returns Mirrored angle.
     */
-  @JSGlobal("MakerJs.angle.mirror")
-  @js.native
-  def mirror(angleInDegrees: Double, mirrorX: Boolean, mirrorY: Boolean): Double = js.native
+  @scala.inline
+  def mirror(angleInDegrees: Double, mirrorX: Boolean, mirrorY: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mirror")(angleInDegrees.asInstanceOf[js.Any], mirrorX.asInstanceOf[js.Any], mirrorY.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Ensures an angle is not greater than 360
@@ -28,9 +30,8 @@ object angle {
     * @param angleInDegrees Angle in degrees.
     * @retiurns Same polar angle but not greater than 360 degrees.
     */
-  @JSGlobal("MakerJs.angle.noRevolutions")
-  @js.native
-  def noRevolutions(angleInDegrees: Double): Double = js.native
+  @scala.inline
+  def noRevolutions(angleInDegrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("noRevolutions")(angleInDegrees.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Get an arc's end angle, ensured to be greater than its start angle.
@@ -38,9 +39,8 @@ object angle {
     * @param arc An arc path object.
     * @returns End angle of arc.
     */
-  @JSGlobal("MakerJs.angle.ofArcEnd")
-  @js.native
-  def ofArcEnd(arc: IPathArc): Double = js.native
+  @scala.inline
+  def ofArcEnd(arc: IPathArc): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ofArcEnd")(arc.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Get the angle in the middle of an arc's start and end angles.
@@ -49,12 +49,10 @@ object angle {
     * @param ratio Optional number between 0 and 1 specifying percentage between start and end angles. Default is .5
     * @returns Middle angle of arc.
     */
-  @JSGlobal("MakerJs.angle.ofArcMiddle")
-  @js.native
-  def ofArcMiddle(arc: IPathArc): Double = js.native
-  @JSGlobal("MakerJs.angle.ofArcMiddle")
-  @js.native
-  def ofArcMiddle(arc: IPathArc, ratio: Double): Double = js.native
+  @scala.inline
+  def ofArcMiddle(arc: IPathArc): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ofArcMiddle")(arc.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def ofArcMiddle(arc: IPathArc, ratio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ofArcMiddle")(arc.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Total angle of an arc between its start and end angles.
@@ -62,9 +60,8 @@ object angle {
     * @param arc The arc to measure.
     * @returns Angle of arc.
     */
-  @JSGlobal("MakerJs.angle.ofArcSpan")
-  @js.native
-  def ofArcSpan(arc: IPathArc): Double = js.native
+  @scala.inline
+  def ofArcSpan(arc: IPathArc): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ofArcSpan")(arc.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Angle of a line path.
@@ -72,9 +69,8 @@ object angle {
     * @param line The line path to find the angle of.
     * @returns Angle of the line path, in degrees.
     */
-  @JSGlobal("MakerJs.angle.ofLineInDegrees")
-  @js.native
-  def ofLineInDegrees(line: IPathLine): Double = js.native
+  @scala.inline
+  def ofLineInDegrees(line: IPathLine): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ofLineInDegrees")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Angle of a line through a point, in degrees.
@@ -83,9 +79,8 @@ object angle {
     * @param origin Point of origin of the angle.
     * @returns Angle of the line throught the point, in degrees.
     */
-  @JSGlobal("MakerJs.angle.ofPointInDegrees")
-  @js.native
-  def ofPointInDegrees(origin: IPoint, pointToFindAngle: IPoint): Double = js.native
+  @scala.inline
+  def ofPointInDegrees(origin: IPoint, pointToFindAngle: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ofPointInDegrees")(origin.asInstanceOf[js.Any], pointToFindAngle.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Angle of a line through a point, in radians.
@@ -94,9 +89,8 @@ object angle {
     * @param origin Point of origin of the angle.
     * @returns Angle of the line throught the point, in radians.
     */
-  @JSGlobal("MakerJs.angle.ofPointInRadians")
-  @js.native
-  def ofPointInRadians(origin: IPoint, pointToFindAngle: IPoint): Double = js.native
+  @scala.inline
+  def ofPointInRadians(origin: IPoint, pointToFindAngle: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ofPointInRadians")(origin.asInstanceOf[js.Any], pointToFindAngle.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Convert an angle from radians to degrees.
@@ -104,9 +98,8 @@ object angle {
     * @param angleInRadians Angle in radians.
     * @returns Angle in degrees.
     */
-  @JSGlobal("MakerJs.angle.toDegrees")
-  @js.native
-  def toDegrees(angleInRadians: Double): Double = js.native
+  @scala.inline
+  def toDegrees(angleInRadians: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDegrees")(angleInRadians.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Convert an angle from degrees to radians.
@@ -114,7 +107,6 @@ object angle {
     * @param angleInDegrees Angle in degrees.
     * @returns Angle in radians.
     */
-  @JSGlobal("MakerJs.angle.toRadians")
-  @js.native
-  def toRadians(angleInDegrees: Double): Double = js.native
+  @scala.inline
+  def toRadians(angleInDegrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toRadians")(angleInDegrees.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

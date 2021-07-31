@@ -2,17 +2,17 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StrokeCapEnumValues extends EmbindEnum {
+trait StrokeCapEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Butt: StrokeCap = js.native
+  var Butt: StrokeCap
   
-  var Round: StrokeCap = js.native
+  var Round: StrokeCap
   
-  var Square: StrokeCap = js.native
+  var Square: StrokeCap
 }
 object StrokeCapEnumValues {
   

@@ -2,15 +2,15 @@ package typings.memfs.volumeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IWatchOptions extends IOptions {
+trait IWatchOptions
+  extends StObject
+     with IOptions {
   
-  var persistent: js.UndefOr[Boolean] = js.native
+  var persistent: js.UndefOr[Boolean] = js.undefined
   
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
 }
 object IWatchOptions {
   

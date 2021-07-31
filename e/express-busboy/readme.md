@@ -10,9 +10,9 @@ Busboy for express, mimics the old bodyParser
 | ------------------ | :-------------: |
 | Full name          | express-busboy |
 | Keywords           | busboy, express, body-parser |
-| # releases         | 3 |
-| # dependents       | 17 |
-| # downloads        | 85398 |
+| # releases         | 2 |
+| # dependents       | 18 |
+| # downloads        | 96933 |
 | # stars            | 5 |
 
 ## Links

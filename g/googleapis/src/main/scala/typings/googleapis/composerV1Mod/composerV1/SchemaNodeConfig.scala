@@ -2,21 +2,19 @@ package typings.googleapis.composerV1Mod.composerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The configuration information for the Kubernetes Engine nodes running the
   * Apache Airflow software.
   */
-@js.native
 trait SchemaNodeConfig extends StObject {
   
   /**
     * Optional. The disk size in GB used for node VMs. Minimum size is 20GB. If
     * unspecified, defaults to 100GB. Cannot be updated.
     */
-  var diskSizeGb: js.UndefOr[Double] = js.native
+  var diskSizeGb: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. The Compute Engine [zone](/compute/docs/regions-zones) in which
@@ -33,7 +31,7 @@ trait SchemaNodeConfig extends StObject {
     * `nodeConfig.machineType`) is specified, the location information from the
     * specified field will be propagated to the unspecified field.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The Compute Engine [machine type](/compute/docs/machine-types)
@@ -50,7 +48,7 @@ trait SchemaNodeConfig extends StObject {
     * propagated to the unspecified field.  If this field is unspecified, the
     * `machineTypeId` defaults to &quot;n1-standard-1&quot;.
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The Compute Engine network to be used for machine
@@ -63,7 +61,7 @@ trait SchemaNodeConfig extends StObject {
     * If a [Custom Subnet Network](/vpc/docs/vpc#vpc_networks_and_subnets) is
     * provided, `nodeConfig.subnetwork` must also be provided.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The set of Google API scopes to be made available on all node
@@ -71,14 +69,14 @@ trait SchemaNodeConfig extends StObject {
     * [&quot;https://www.googleapis.com/auth/cloud-platform&quot;]. Cannot be
     * updated.
     */
-  var oauthScopes: js.UndefOr[js.Array[String]] = js.native
+  var oauthScopes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The Google Cloud Platform Service Account to be used by the
     * node VMs. If a service account is not specified, the &quot;default&quot;
     * Compute Engine service account is used. Cannot be updated.
     */
-  var serviceAccount: js.UndefOr[String] = js.native
+  var serviceAccount: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The Compute Engine subnetwork to be used for machine
@@ -89,7 +87,7 @@ trait SchemaNodeConfig extends StObject {
     * and the subnetwork must belong to the enclosing environment&#39;s project
     * and location.
     */
-  var subnetwork: js.UndefOr[String] = js.native
+  var subnetwork: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The list of instance tags applied to all node VMs. Tags are
@@ -97,7 +95,7 @@ trait SchemaNodeConfig extends StObject {
     * within the list must comply with
     * [RFC1035](https://www.ietf.org/rfc/rfc1035.txt). Cannot be updated.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaNodeConfig {
   

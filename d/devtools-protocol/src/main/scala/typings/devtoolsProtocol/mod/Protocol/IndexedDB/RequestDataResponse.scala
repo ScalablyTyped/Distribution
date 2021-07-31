@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestDataResponse extends StObject {
   
   /**
     * If true, there are more entries to fetch in the given range.
     */
-  var hasMore: Boolean = js.native
+  var hasMore: Boolean
   
   /**
     * Array of object store data entries.
     */
-  var objectStoreDataEntries: js.Array[DataEntry] = js.native
+  var objectStoreDataEntries: js.Array[DataEntry]
 }
 object RequestDataResponse {
   

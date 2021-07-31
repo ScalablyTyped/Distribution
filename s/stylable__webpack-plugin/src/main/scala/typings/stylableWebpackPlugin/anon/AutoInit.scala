@@ -2,17 +2,15 @@ package typings.stylableWebpackPlugin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoInit extends StObject {
   
-  var autoInit: Boolean = js.native
+  var autoInit: Boolean
   
-  var getAutoInitModule: js.UndefOr[js.Any] = js.native
+  var getAutoInitModule: js.UndefOr[js.Any] = js.undefined
   
-  var globalInjection: js.UndefOr[js.Function1[/* p */ String, String]] = js.native
+  var globalInjection: js.UndefOr[js.Function1[/* p */ String, String]] = js.undefined
 }
 object AutoInit {
   

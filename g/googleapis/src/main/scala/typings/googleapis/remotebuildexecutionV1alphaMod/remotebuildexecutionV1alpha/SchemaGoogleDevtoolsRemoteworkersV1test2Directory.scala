@@ -2,25 +2,23 @@ package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The contents of a directory. Similar to the equivalent message in the
   * Remote Execution API.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteworkersV1test2Directory extends StObject {
   
   /**
     * Any subdirectories
     */
-  var directories: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2DirectoryMetadata]] = js.native
+  var directories: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2DirectoryMetadata]] = js.undefined
   
   /**
     * The files in this directory
     */
-  var files: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2FileMetadata]] = js.native
+  var files: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2FileMetadata]] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2Directory {
   

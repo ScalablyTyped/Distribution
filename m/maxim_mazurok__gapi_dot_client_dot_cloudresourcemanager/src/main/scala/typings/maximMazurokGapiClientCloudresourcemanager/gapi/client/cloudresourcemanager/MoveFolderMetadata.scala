@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudresourcemanager.gapi.client.cloudreso
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveFolderMetadata extends StObject {
   
   /** The resource name of the folder or organization to move the folder to. */
-  var destinationParent: js.UndefOr[String] = js.native
+  var destinationParent: js.UndefOr[String] = js.undefined
   
   /** The display name of the folder. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The resource name of the folder's parent. */
-  var sourceParent: js.UndefOr[String] = js.native
+  var sourceParent: js.UndefOr[String] = js.undefined
 }
 object MoveFolderMetadata {
   

@@ -8,26 +8,27 @@ import typings.reduxDuck.anon.Type
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("redux-duck", "createDuck")
+  @JSImport("redux-duck", JSImport.Namespace)
   @js.native
-  def createDuck(a: DuckName): DuckBuilder[AnyAction] = js.native
-  @JSImport("redux-duck", "createDuck")
-  @js.native
-  def createDuck(a: DuckName, b: AppName): DuckBuilder[AnyAction] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createDuck(a: DuckName): DuckBuilder[AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDuck")(a.asInstanceOf[js.Any]).asInstanceOf[DuckBuilder[AnyAction]]
+  @scala.inline
+  def createDuck(a: DuckName, b: AppName): DuckBuilder[AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDuck")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[DuckBuilder[AnyAction]]
   
   type ActionCreator[A /* <: FSAHack */] = js.Function0[A] | (js.Function1[
     /* import warning: importer.ImportType#apply Failed type conversion: A['payload'] */ /* a */ js.Any, 
     A
   ])
   
-  type ActionHandlers[S, A /* <: Action[_] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type ActionHandlers[S, A /* <: Action[js.Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ T in A['type'] ]:? (x : S, y : std.Extract<A, {  type :T}>): S}
-    */ typings.reduxDuck.reduxDuckStrings.ActionHandlers with TopLevel[js.Any]
+    */ typings.reduxDuck.reduxDuckStrings.ActionHandlers & TopLevel[js.Any]
   
   type ActionName = String
   
@@ -35,19 +36,18 @@ object mod {
   
   type AppName = String
   
-  @js.native
-  trait DuckBuilder[AppAction /* <: Action[_] */] extends StObject {
+  trait DuckBuilder[AppAction /* <: Action[js.Any] */] extends StObject {
     
-    def createAction[T /* <: String with (/* import warning: importer.ImportType#apply Failed type conversion: AppAction['type'] */ js.Any) */](a: T): ActionCreator[Extract[AppAction, Type[T, AppAction]]] = js.native
+    def createAction[T /* <: String & (/* import warning: importer.ImportType#apply Failed type conversion: AppAction['type'] */ js.Any) */](a: T): ActionCreator[Extract[AppAction, Type[T, AppAction]]]
     
-    def createReducer[S](a: ActionHandlers[S, AppAction], b: S): Reducer[S, AppAction] = js.native
+    def createReducer[S](a: ActionHandlers[S, AppAction], b: S): Reducer[S, AppAction]
     
-    def defineType(a: ActionName): ActionType = js.native
+    def defineType(a: ActionName): ActionType
   }
   object DuckBuilder {
     
     @scala.inline
-    def apply[AppAction /* <: Action[_] */](
+    def apply[AppAction /* <: Action[js.Any] */](
       createAction: js.Any => ActionCreator[Extract[AppAction, Type[js.Any, AppAction]]],
       createReducer: (ActionHandlers[js.Any, AppAction], js.Any) => Reducer[js.Any, AppAction],
       defineType: ActionName => ActionType
@@ -57,7 +57,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DuckBuilderMutableBuilder[Self <: DuckBuilder[_], AppAction /* <: Action[_] */] (val x: Self with DuckBuilder[AppAction]) extends AnyVal {
+    implicit class DuckBuilderMutableBuilder[Self <: DuckBuilder[?], AppAction /* <: Action[js.Any] */] (val x: Self & DuckBuilder[AppAction]) extends AnyVal {
       
       @scala.inline
       def setCreateAction(value: js.Any => ActionCreator[Extract[AppAction, Type[js.Any, AppAction]]]): Self = StObject.set(x, "createAction", js.Any.fromFunction1(value))
@@ -72,13 +72,11 @@ object mod {
   
   type DuckName = String
   
-  /* Inlined redux.redux.Action<string> & {  payload :any | undefined} */
-  @js.native
-  trait FSAHack extends StObject {
+  trait FSAHack
+    extends StObject
+       with Action[String] {
     
-    var payload: js.UndefOr[js.Any] = js.native
-    
-    var `type`: String = js.native
+    var payload: js.UndefOr[js.Any] = js.undefined
   }
   object FSAHack {
     
@@ -97,9 +95,6 @@ object mod {
       
       @scala.inline
       def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
-      
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

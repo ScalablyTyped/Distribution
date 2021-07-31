@@ -4,14 +4,15 @@ import typings.filewriter.FileWriterSync
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface represents a file on a file system.
   */
 @js.native
-trait FileEntrySync extends EntrySync {
+trait FileEntrySync
+  extends StObject
+     with EntrySync {
   
   /**
     * Creates a new FileWriterSync associated with the file that this FileEntrySync represents.

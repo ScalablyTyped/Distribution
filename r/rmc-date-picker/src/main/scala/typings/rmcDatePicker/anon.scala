@@ -2,27 +2,25 @@ package typings.rmcDatePicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Am extends StObject {
     
-    var am: String = js.native
+    var am: String
     
-    var day: String = js.native
+    var day: String
     
-    var hour: String = js.native
+    var hour: String
     
-    var minute: String = js.native
+    var minute: String
     
-    var month: String = js.native
+    var month: String
     
-    var pm: String = js.native
+    var pm: String
     
-    var year: String = js.native
+    var year: String
   }
   object Am {
     
@@ -58,15 +56,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
-    var children: js.Array[_] = js.native
+    var children: js.Array[js.Any]
   }
   object Children {
     
     @scala.inline
-    def apply(children: js.Array[_]): Children = {
+    def apply(children: js.Array[js.Any]): Children = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[Children]
     }
@@ -75,19 +72,18 @@ object anon {
     implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setChildren(value: js.Array[_]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait Cols extends StObject {
     
-    var cols: js.Array[Key] = js.native
+    var cols: js.Array[Key]
     
-    var selMinute: js.Any = js.native
+    var selMinute: js.Any
   }
   object Cols {
     
@@ -111,10 +107,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Date extends StObject {
     
-    var date: js.Any = js.native
+    var date: js.Any
   }
   object Date {
     
@@ -132,12 +127,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var props: Children = js.native
+    var props: Children
   }
   object Key {
     
@@ -158,17 +152,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var cols: js.Array[_] = js.native
+    var cols: js.Array[js.Any]
     
-    var value: js.Array[_] = js.native
+    var value: js.Array[js.Any]
   }
   object Value {
     
     @scala.inline
-    def apply(cols: js.Array[_], value: js.Array[_]): Value = {
+    def apply(cols: js.Array[js.Any], value: js.Array[js.Any]): Value = {
       val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
@@ -177,13 +170,13 @@ object anon {
     implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCols(value: js.Array[_]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      def setCols(value: js.Array[js.Any]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColsVarargs(value: js.Any*): Self = StObject.set(x, "cols", js.Array(value :_*))
       
       @scala.inline
-      def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))

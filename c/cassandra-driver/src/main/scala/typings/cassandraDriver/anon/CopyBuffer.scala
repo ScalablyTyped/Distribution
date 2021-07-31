@@ -2,23 +2,21 @@ package typings.cassandraDriver.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyBuffer extends StObject {
   
-  var copyBuffer: js.UndefOr[Boolean] = js.native
+  var copyBuffer: js.UndefOr[Boolean] = js.undefined
   
-  var map: js.UndefOr[js.Function] = js.native
+  var map: js.UndefOr[js.Function] = js.undefined
   
-  var set: js.UndefOr[js.Function] = js.native
+  var set: js.UndefOr[js.Function] = js.undefined
   
-  var useBigIntAsLong: js.UndefOr[Boolean] = js.native
+  var useBigIntAsLong: js.UndefOr[Boolean] = js.undefined
   
-  var useBigIntAsVarint: js.UndefOr[Boolean] = js.native
+  var useBigIntAsVarint: js.UndefOr[Boolean] = js.undefined
   
-  var useUndefinedAsUnset: js.UndefOr[Boolean] = js.native
+  var useUndefinedAsUnset: js.UndefOr[Boolean] = js.undefined
 }
 object CopyBuffer {
   

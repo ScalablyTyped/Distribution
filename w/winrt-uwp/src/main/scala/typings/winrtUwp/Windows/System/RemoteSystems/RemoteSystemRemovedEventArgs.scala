@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Gets information about a RemoteSystemRemoved event, namely the RemoteSystem that was removed. */
-@js.native
 trait RemoteSystemRemovedEventArgs extends StObject {
   
   /** The RemoteSystem object representing the device that was removed from the set of discoverable devices, causing the containing RemoteSystemRemoved event to be raised. */
-  var remoteSystemId: String = js.native
+  var remoteSystemId: String
 }
 object RemoteSystemRemovedEventArgs {
   

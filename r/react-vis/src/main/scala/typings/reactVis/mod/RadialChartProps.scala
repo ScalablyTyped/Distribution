@@ -12,53 +12,51 @@ import typings.reactVis.reactVisStrings.radius0
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadialChartProps extends StObject {
   
-  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.native
+  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   // default: ''
-  var colorType: js.UndefOr[String] = js.native
+  var colorType: js.UndefOr[String] = js.undefined
   
   // default: 'category'
-  var data: js.Array[Angle] = js.native
+  var data: js.Array[Angle]
   
-  var getAngle: js.UndefOr[RVGet[RadialChartPoint, angle]] = js.native
+  var getAngle: js.UndefOr[RVGet[RadialChartPoint, angle]] = js.undefined
   
-  var getAngle0: js.UndefOr[RVGet[RadialChartPoint, angle0]] = js.native
+  var getAngle0: js.UndefOr[RVGet[RadialChartPoint, angle0]] = js.undefined
   
-  var getLabel: js.UndefOr[RVGet[RadialChartPoint, label]] = js.native
+  var getLabel: js.UndefOr[RVGet[RadialChartPoint, label]] = js.undefined
   
-  var getRadius: js.UndefOr[RVGet[RadialChartPoint, radius]] = js.native
+  var getRadius: js.UndefOr[RVGet[RadialChartPoint, radius]] = js.undefined
   
-  var getRadius0: js.UndefOr[RVGet[RadialChartPoint, radius0]] = js.native
+  var getRadius0: js.UndefOr[RVGet[RadialChartPoint, radius0]] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var labelsAboveChildren: js.UndefOr[Boolean] = js.native
+  var labelsAboveChildren: js.UndefOr[Boolean] = js.undefined
   
-  var labelsStyle: js.UndefOr[CSSProperties] = js.native
+  var labelsStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var margin: js.UndefOr[Margin | Double] = js.native
+  var margin: js.UndefOr[Margin | Double] = js.undefined
   
-  var onValueClick: js.UndefOr[RVValueEventHandler[RadialChartPoint]] = js.native
+  var onValueClick: js.UndefOr[RVValueEventHandler[RadialChartPoint]] = js.undefined
   
-  var onValueMouseOut: js.UndefOr[RVValueEventHandler[RadialChartPoint]] = js.native
+  var onValueMouseOut: js.UndefOr[RVValueEventHandler[RadialChartPoint]] = js.undefined
   
-  var onValueMouseOver: js.UndefOr[RVValueEventHandler[RadialChartPoint]] = js.native
+  var onValueMouseOver: js.UndefOr[RVValueEventHandler[RadialChartPoint]] = js.undefined
   
-  var showLabels: js.UndefOr[Boolean] = js.native
+  var showLabels: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var subLabel: js.UndefOr[js.Function1[/* row */ js.Any, String]] = js.native
+  var subLabel: js.UndefOr[js.Function1[/* row */ js.Any, String]] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object RadialChartProps {
   

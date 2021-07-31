@@ -21,171 +21,171 @@ import typings.openfin.webOptionsMod.WebOptions
 import typings.openfin.webRequestHeaderMod.WebRequestHeaderConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object windowOptionsMod {
   
-  @js.native
-  trait WindowOptions extends WebOptions {
+  trait WindowOptions
+    extends StObject
+       with WebOptions {
     
-    var _type: js.UndefOr[ERROR_BOX_TYPES] = js.native
+    var _type: js.UndefOr[ERROR_BOX_TYPES] = js.undefined
     
-    var accelerator: js.UndefOr[Devtools] = js.native
+    var accelerator: js.UndefOr[Devtools] = js.undefined
     
-    var alphaMask: js.UndefOr[Blue] = js.native
+    var alphaMask: js.UndefOr[Blue] = js.undefined
     
-    var alwaysOnBottom: js.UndefOr[Boolean] = js.native
+    var alwaysOnBottom: js.UndefOr[Boolean] = js.undefined
     
-    var alwaysOnTop: js.UndefOr[Boolean] = js.native
+    var alwaysOnTop: js.UndefOr[Boolean] = js.undefined
     
-    var api: js.UndefOr[js.Any] = js.native
+    var api: js.UndefOr[js.Any] = js.undefined
     
-    var appLogFlushInterval: js.UndefOr[Double] = js.native
+    var appLogFlushInterval: js.UndefOr[Double] = js.undefined
     
-    var applicationIcon: js.UndefOr[String] = js.native
+    var applicationIcon: js.UndefOr[String] = js.undefined
     
-    var aspectRatio: js.UndefOr[Double] = js.native
+    var aspectRatio: js.UndefOr[Double] = js.undefined
     
-    var autoShow: js.UndefOr[Boolean] = js.native
+    var autoShow: js.UndefOr[Boolean] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var backgroundThrottling: js.UndefOr[Boolean] = js.native
+    var backgroundThrottling: js.UndefOr[Boolean] = js.undefined
     
-    var center: js.UndefOr[Boolean] = js.native
+    var center: js.UndefOr[Boolean] = js.undefined
     
-    var contentNavigation: js.UndefOr[Null | Blacklist] = js.native
+    var contentNavigation: js.UndefOr[Null | Blacklist] = js.undefined
     
-    var contextMenu: js.UndefOr[Boolean] = js.native
+    var contextMenu: js.UndefOr[Boolean] = js.undefined
     
-    var contextMenuSettings: js.UndefOr[Enable] = js.native
+    var contextMenuSettings: js.UndefOr[Enable] = js.undefined
     
-    var cornerRounding: js.UndefOr[Width] = js.native
+    var cornerRounding: js.UndefOr[Width] = js.undefined
     
-    var customData: js.UndefOr[String] = js.native
+    var customData: js.UndefOr[String] = js.undefined
     
-    var customRequestHeaders: js.UndefOr[js.Array[WebRequestHeaderConfig]] = js.native
+    var customRequestHeaders: js.UndefOr[js.Array[WebRequestHeaderConfig]] = js.undefined
     
-    var defaultCentered: js.UndefOr[Boolean] = js.native
+    var defaultCentered: js.UndefOr[Boolean] = js.undefined
     
-    var defaultHeight: js.UndefOr[Double] = js.native
+    var defaultHeight: js.UndefOr[Double] = js.undefined
     
-    var defaultLeft: js.UndefOr[Double] = js.native
+    var defaultLeft: js.UndefOr[Double] = js.undefined
     
-    var defaultTop: js.UndefOr[Double] = js.native
+    var defaultTop: js.UndefOr[Double] = js.undefined
     
-    var defaultWidth: js.UndefOr[Double] = js.native
+    var defaultWidth: js.UndefOr[Double] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var disableIabSecureLogging: js.UndefOr[Boolean] = js.native
+    var disableIabSecureLogging: js.UndefOr[Boolean] = js.undefined
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var `enable-plugins`: js.UndefOr[Boolean] = js.native
+    var `enable-plugins`: js.UndefOr[Boolean] = js.undefined
     
-    var enableAppLogging: js.UndefOr[Boolean] = js.native
+    var enableAppLogging: js.UndefOr[Boolean] = js.undefined
     
-    var enableLargerThanScreen: js.UndefOr[Boolean] = js.native
+    var enableLargerThanScreen: js.UndefOr[Boolean] = js.undefined
     
-    var exitOnClose: js.UndefOr[Boolean] = js.native
+    var exitOnClose: js.UndefOr[Boolean] = js.undefined
     
-    var fdc3Api: js.UndefOr[Boolean] = js.native
+    var fdc3Api: js.UndefOr[Boolean] = js.undefined
     
-    var fdc3Manifest: js.UndefOr[String] = js.native
+    var fdc3Manifest: js.UndefOr[String] = js.undefined
     
-    var frame: js.UndefOr[Boolean] = js.native
+    var frame: js.UndefOr[Boolean] = js.undefined
     
-    var frameConnect: js.UndefOr[all | last | `main-window`] = js.native
+    var frameConnect: js.UndefOr[all | last | `main-window`] = js.undefined
     
-    var hasLoaded: js.UndefOr[Boolean] = js.native
+    var hasLoaded: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var hideOnBlur: js.UndefOr[Boolean] = js.native
+    var hideOnBlur: js.UndefOr[Boolean] = js.undefined
     
-    var hideOnClose: js.UndefOr[Boolean] = js.native
+    var hideOnClose: js.UndefOr[Boolean] = js.undefined
     
-    var hideWhileChildrenVisible: js.UndefOr[Boolean] = js.native
+    var hideWhileChildrenVisible: js.UndefOr[Boolean] = js.undefined
     
-    var hotkeys: js.UndefOr[js.Array[Hotkey]] = js.native
+    var hotkeys: js.UndefOr[js.Array[Hotkey]] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var isRawWindowOpen: js.UndefOr[Boolean] = js.native
+    var isRawWindowOpen: js.UndefOr[Boolean] = js.undefined
     
-    var launchExternal: js.UndefOr[String] = js.native
+    var launchExternal: js.UndefOr[String] = js.undefined
     
-    var layout: js.UndefOr[Layout] = js.native
+    var layout: js.UndefOr[Layout] = js.undefined
     
-    var loadErrorMessage: js.UndefOr[String] = js.native
+    var loadErrorMessage: js.UndefOr[String] = js.undefined
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var maximizable: js.UndefOr[Boolean] = js.native
+    var maximizable: js.UndefOr[Boolean] = js.undefined
     
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var minimizable: js.UndefOr[Boolean] = js.native
+    var minimizable: js.UndefOr[Boolean] = js.undefined
     
-    var nonPersistant: js.UndefOr[Boolean] = js.native
+    var nonPersistant: js.UndefOr[Boolean] = js.undefined
     
-    var nonPersistent: js.UndefOr[Boolean] = js.native
+    var nonPersistent: js.UndefOr[Boolean] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var plugins: js.UndefOr[Boolean] = js.native
+    var plugins: js.UndefOr[Boolean] = js.undefined
     
-    var preload: js.UndefOr[String | js.Array[PreloadScript]] = js.native
+    var preload: js.UndefOr[String | js.Array[PreloadScript]] = js.undefined
     
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
-    var resize: js.UndefOr[Boolean] = js.native
+    var resize: js.UndefOr[Boolean] = js.undefined
     
-    var resizeRegion: js.UndefOr[BottomRightCorner] = js.native
+    var resizeRegion: js.UndefOr[BottomRightCorner] = js.undefined
     
-    var saveWindowState: js.UndefOr[Boolean] = js.native
+    var saveWindowState: js.UndefOr[Boolean] = js.undefined
     
-    var shadow: js.UndefOr[Boolean] = js.native
+    var shadow: js.UndefOr[Boolean] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var showBackgroundImages: js.UndefOr[Boolean] = js.native
+    var showBackgroundImages: js.UndefOr[Boolean] = js.undefined
     
-    var showTaskbarIcon: js.UndefOr[Boolean] = js.native
+    var showTaskbarIcon: js.UndefOr[Boolean] = js.undefined
     
-    var skipTaskbar: js.UndefOr[Boolean] = js.native
+    var skipTaskbar: js.UndefOr[Boolean] = js.undefined
     
-    var smallWindow: js.UndefOr[Boolean] = js.native
+    var smallWindow: js.UndefOr[Boolean] = js.undefined
     
-    var state: js.UndefOr[maximized | minimized | normal] = js.native
+    var state: js.UndefOr[maximized | minimized | normal] = js.undefined
     
-    var taskbarIcon: js.UndefOr[String] = js.native
+    var taskbarIcon: js.UndefOr[String] = js.undefined
     
-    var taskbarIconGroup: js.UndefOr[String] = js.native
+    var taskbarIconGroup: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var toShowOnRun: js.UndefOr[Boolean] = js.native
+    var toShowOnRun: js.UndefOr[Boolean] = js.undefined
     
-    var transparent: js.UndefOr[Boolean] = js.native
+    var transparent: js.UndefOr[Boolean] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var waitForPageLoad: js.UndefOr[Boolean] = js.native
+    var waitForPageLoad: js.UndefOr[Boolean] = js.undefined
     
-    var webPreferences: js.UndefOr[NodeIntegration] = js.native
+    var webPreferences: js.UndefOr[NodeIntegration] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object WindowOptions {
     

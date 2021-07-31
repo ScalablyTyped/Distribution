@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowsDetail extends StObject {
   
   /** Required. The CPE URI in [cpe format](https://cpe.mitre.org/specification/) in which the vulnerability manifests. Examples include distro or storage location for vulnerable jar. */
-  var cpeUri: js.UndefOr[String] = js.native
+  var cpeUri: js.UndefOr[String] = js.undefined
   
   /** The description of the vulnerability. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The names of the KBs which have hotfixes to mitigate this vulnerability. Note that there may be multiple hotfixes (and thus multiple KBs) that mitigate a given
     * vulnerability. Currently any listed kb's presence is considered a fix.
     */
-  var fixingKbs: js.UndefOr[js.Array[KnowledgeBase]] = js.native
+  var fixingKbs: js.UndefOr[js.Array[KnowledgeBase]] = js.undefined
   
   /** Required. The name of the vulnerability. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object WindowsDetail {
   

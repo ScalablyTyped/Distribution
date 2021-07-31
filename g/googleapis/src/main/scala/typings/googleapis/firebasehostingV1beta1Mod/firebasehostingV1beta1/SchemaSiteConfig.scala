@@ -2,14 +2,12 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `SiteConfig` contains metadata associated with a specific site that
   * controls Firebase Hosting serving behavior
   */
-@js.native
 trait SchemaSiteConfig extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaSiteConfig extends StObject {
     * be billed for storage usage. Oldest versions will be deleted first; sites
     * are created with an unlimited number of max_versions by default.
     */
-  var maxVersions: js.UndefOr[String] = js.native
+  var maxVersions: js.UndefOr[String] = js.undefined
 }
 object SchemaSiteConfig {
   

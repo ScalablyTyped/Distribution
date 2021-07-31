@@ -3,7 +3,6 @@ package typings.loopback.mod
 import typings.loopback.anon.From
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -43,6 +42,10 @@ class Email protected () extends Model {
 }
 object Email {
   
+  @JSImport("loopback", "Email")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Send an email with the given `options`
     * Example Options
@@ -66,7 +69,6 @@ object Email {
     * @param {() => void} callback Called after the e-mail is sent or the sending faile
     */
   /* static member */
-  @JSImport("loopback", "Email.send")
-  @js.native
-  def send(callback: js.Function0[Unit], options: From): Unit = js.native
+  @scala.inline
+  def send(callback: js.Function0[Unit], options: From): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

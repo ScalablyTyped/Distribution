@@ -2,26 +2,24 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An answer from Knowledge Connector.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer extends StObject {
   
   /**
     * The piece of text from the `source` knowledge base document that answers
     * this conversational query.
     */
-  var answer: js.UndefOr[String] = js.native
+  var answer: js.UndefOr[String] = js.undefined
   
   /**
     * The corresponding FAQ question if the answer was extracted from a FAQ
     * Document, empty otherwise.
     */
-  var faqQuestion: js.UndefOr[String] = js.native
+  var faqQuestion: js.UndefOr[String] = js.undefined
   
   /**
     * The system&#39;s confidence score that this Knowledge answer is a good
@@ -32,7 +30,7 @@ trait SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer extends StObject 
     * the future. We recommend using `match_confidence_level` which should be
     * generally more stable.
     */
-  var matchConfidence: js.UndefOr[Double] = js.native
+  var matchConfidence: js.UndefOr[Double] = js.undefined
   
   /**
     * The system&#39;s confidence level that this knowledge answer is a good
@@ -42,14 +40,14 @@ trait SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer extends StObject 
     * change less frequently than the confidence score below, and should be
     * preferred for referencing the quality of an answer.
     */
-  var matchConfidenceLevel: js.UndefOr[String] = js.native
+  var matchConfidenceLevel: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates which Knowledge Document this answer was extracted from.
     * Format: `projects/&lt;Project ID&gt;/knowledgeBases/&lt;Knowledge Base
     * ID&gt;/documents/&lt;Document ID&gt;`.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer {
   

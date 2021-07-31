@@ -2,16 +2,16 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SkData extends EmbindObject[SkData] {
+trait SkData
+  extends StObject
+     with EmbindObject[SkData] {
   
   /**
     * Return the number of bytes in this container.
     */
-  def size(): Double = js.native
+  def size(): Double
 }
 object SkData {
   

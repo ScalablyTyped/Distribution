@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiLevelCondition extends StObject {
   
   /** The minimum desired Android Framework API level. If the device doesn't meet the minimum requirement, this condition is satisfied. Must be greater than zero. */
-  var minApiLevel: js.UndefOr[Double] = js.native
+  var minApiLevel: js.UndefOr[Double] = js.undefined
 }
 object ApiLevelCondition {
   

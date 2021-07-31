@@ -3,7 +3,6 @@ package typings.html5plus
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
-@js.native
 trait PlusNativeUIPickTimeOption extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusNativeUIPickTimeOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var is24Hour: js.UndefOr[Boolean] = js.native
+  var is24Hour: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 日期选择对话框弹出指示区域
@@ -29,7 +27,7 @@ trait PlusNativeUIPickTimeOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var popover: js.UndefOr[js.Any] = js.native
+  var popover: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 时间选择对话框默认显示的时间
@@ -37,7 +35,7 @@ trait PlusNativeUIPickTimeOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var time: js.UndefOr[Date] = js.native
+  var time: js.UndefOr[Date] = js.undefined
   
   /**
     * 时间选择对话框显示的标题
@@ -45,7 +43,7 @@ trait PlusNativeUIPickTimeOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PlusNativeUIPickTimeOption {
   

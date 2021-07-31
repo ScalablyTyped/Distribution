@@ -2,15 +2,13 @@ package typings.fastify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
   
-  @js.native
   trait FastifyContext[ContextConfig] extends StObject {
     
-    var config: ContextConfig = js.native
+    var config: ContextConfig
   }
   object FastifyContext {
     
@@ -21,7 +19,7 @@ object contextMod {
     }
     
     @scala.inline
-    implicit class FastifyContextMutableBuilder[Self <: FastifyContext[_], ContextConfig] (val x: Self with FastifyContext[ContextConfig]) extends AnyVal {
+    implicit class FastifyContextMutableBuilder[Self <: FastifyContext[?], ContextConfig] (val x: Self & FastifyContext[ContextConfig]) extends AnyVal {
       
       @scala.inline
       def setConfig(value: ContextConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])

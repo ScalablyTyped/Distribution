@@ -2,23 +2,21 @@ package typings.sourceMap.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MappingItem extends StObject {
   
-  var generatedColumn: Double = js.native
+  var generatedColumn: Double
   
-  var generatedLine: Double = js.native
+  var generatedLine: Double
   
-  var name: String = js.native
+  var name: String
   
-  var originalColumn: Double = js.native
+  var originalColumn: Double
   
-  var originalLine: Double = js.native
+  var originalLine: Double
   
-  var source: String = js.native
+  var source: String
 }
 object MappingItem {
   

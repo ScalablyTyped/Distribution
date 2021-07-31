@@ -6,15 +6,13 @@ import typings.pendoIoBrowser.pendoIoBrowserStrings.mobile
 import typings.pendoIoBrowser.pendoIoBrowserStrings.reload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ArrowSize extends StObject {
     
-    var arrowSize: js.UndefOr[Double] = js.native
+    var arrowSize: js.UndefOr[Double] = js.undefined
   }
   object ArrowSize {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Auto extends StObject {
     
-    var auto: js.Array[Guide] = js.native
+    var auto: js.Array[Guide]
     
-    var `override`: js.Array[Guide] = js.native
+    var `override`: js.Array[Guide]
   }
   object Auto {
     
@@ -68,20 +65,19 @@ object anon {
     }
   }
   
-  @js.native
   trait AutoHeight extends StObject {
     
-    var autoHeight: Boolean = js.native
+    var autoHeight: Boolean
     
-    var css: String = js.native
+    var css: String
     
-    var height: Double = js.native
+    var height: Double
     
-    var position: String = js.native
+    var position: String
     
-    var variables: js.Any = js.native
+    var variables: js.Any
     
-    var width: Double = js.native
+    var width: Double
   }
   object AutoHeight {
     
@@ -121,19 +117,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Badge extends StObject {
     
-    var badge: js.Any = js.native
+    var badge: js.Any
     
-    var device: Desktop = js.native
+    var device: Desktop
     
-    var launcher: Keywords = js.native
+    var launcher: Keywords
     
     // TODO
-    var priority: Double = js.native
+    var priority: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Badge {
     
@@ -164,16 +159,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Delay extends StObject {
     
-    var delay: js.UndefOr[Boolean] = js.native
+    var delay: js.UndefOr[Boolean] = js.undefined
     
-    var disable: js.UndefOr[Boolean] = js.native
+    var disable: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var tooltip: js.UndefOr[ArrowSize] = js.native
+    var tooltip: js.UndefOr[ArrowSize] = js.undefined
   }
   object Delay {
     
@@ -212,14 +206,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Desktop extends StObject {
     
-    var desktop: Boolean = js.native
+    var desktop: Boolean
     
-    var mobile: Boolean = js.native
+    var mobile: Boolean
     
-    var `type`: desktop | mobile = js.native
+    var `type`: desktop | mobile
   }
   object Desktop {
     
@@ -244,15 +237,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Filters extends StObject {
     
-    var filters: js.Array[_] = js.native
+    var filters: js.Array[js.Any]
   }
   object Filters {
     
     @scala.inline
-    def apply(filters: js.Array[_]): Filters = {
+    def apply(filters: js.Array[js.Any]): Filters = {
       val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
       __obj.asInstanceOf[Filters]
     }
@@ -261,17 +253,16 @@ object anon {
     implicit class FiltersMutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFilters(value: js.Array[_]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      def setFilters(value: js.Array[js.Any]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFiltersVarargs(value: js.Any*): Self = StObject.set(x, "filters", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait Keywords extends StObject {
     
-    var keywords: js.Array[String] = js.native
+    var keywords: js.Array[String]
   }
   object Keywords {
     
@@ -292,10 +283,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Steps extends StObject {
     
-    var steps: Double = js.native
+    var steps: Double
   }
   object Steps {
     
@@ -313,16 +303,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Until extends StObject {
     
-    var until: reload = js.native
+    var until: reload
   }
   object Until {
     
     @scala.inline
-    def apply(until: reload): Until = {
-      val __obj = js.Dynamic.literal(until = until.asInstanceOf[js.Any])
+    def apply(): Until = {
+      val __obj = js.Dynamic.literal(until = "reload")
       __obj.asInstanceOf[Until]
     }
     

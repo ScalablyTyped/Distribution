@@ -2,17 +2,17 @@ package typings.diff.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PatchOptions extends LinesOptions {
+trait PatchOptions
+  extends StObject
+     with LinesOptions {
   
   /**
     * Describes how many lines of context should be included.
     * @default 4
     */
-  var context: js.UndefOr[Double] = js.native
+  var context: js.UndefOr[Double] = js.undefined
 }
 object PatchOptions {
   

@@ -2,15 +2,13 @@ package typings.jsoneditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerializableNode extends StObject {
   
-  var path: JSONPath = js.native
+  var path: JSONPath
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object SerializableNode {
   

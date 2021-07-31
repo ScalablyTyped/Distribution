@@ -2,7 +2,6 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gdal", "Feature")
@@ -26,9 +25,9 @@ class Feature protected () extends StObject {
   def getGeometry(): Geometry = js.native
   
   def setFrom(feature: Feature): Unit = js.native
-  def setFrom(feature: Feature, index_map: js.UndefOr[scala.Nothing], forgiving: Boolean): Unit = js.native
   def setFrom(feature: Feature, index_map: js.Array[Double]): Unit = js.native
   def setFrom(feature: Feature, index_map: js.Array[Double], forgiving: Boolean): Unit = js.native
+  def setFrom(feature: Feature, index_map: Unit, forgiving: Boolean): Unit = js.native
   
   def setGeometry(geometry: Geometry): Unit = js.native
 }

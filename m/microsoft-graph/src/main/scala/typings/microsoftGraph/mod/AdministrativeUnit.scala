@@ -2,38 +2,38 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AdministrativeUnit extends DirectoryObject {
+trait AdministrativeUnit
+  extends StObject
+     with DirectoryObject {
   
   // An optional description for the administrative unit.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Display name for the administrative unit.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.native
+  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.undefined
   
   /**
     * Users and groups that are members of this Adminsitrative Unit. HTTP Methods: GET (list members), POST (add members),
     * DELETE (remove members).
     */
-  var members: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var members: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
     * Scoped-role members of this Administrative Unit. HTTP Methods: GET (list scopedRoleMemberships), POST (add
     * scopedRoleMembership), DELETE (remove scopedRoleMembership).
     */
-  var scopedRoleMembers: js.UndefOr[NullableOption[js.Array[ScopedRoleMembership]]] = js.native
+  var scopedRoleMembers: js.UndefOr[NullableOption[js.Array[ScopedRoleMembership]]] = js.undefined
   
   /**
     * Controls whether the administrative unit and its members are hidden or public. Can be set to HiddenMembership or
     * Public. If not set, default behavior is Public. When set to HiddenMembership, only members of the administrative unit
     * can list other members of the adminstrative unit.
     */
-  var visibility: js.UndefOr[NullableOption[String]] = js.native
+  var visibility: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AdministrativeUnit {
   

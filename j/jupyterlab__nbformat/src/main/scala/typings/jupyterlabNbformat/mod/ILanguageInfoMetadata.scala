@@ -3,21 +3,21 @@ package typings.jupyterlabNbformat.mod
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILanguageInfoMetadata extends PartialJSONObject {
+trait ILanguageInfoMetadata
+  extends StObject
+     with PartialJSONObject {
   
-  var codemirror_mode: js.UndefOr[String | PartialJSONObject] = js.native
+  var codemirror_mode: js.UndefOr[String | PartialJSONObject] = js.undefined
   
-  var file_extension: js.UndefOr[String] = js.native
+  var file_extension: js.UndefOr[String] = js.undefined
   
-  var mimetype: js.UndefOr[String] = js.native
+  var mimetype: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var pygments_lexer: js.UndefOr[String] = js.native
+  var pygments_lexer: js.UndefOr[String] = js.undefined
 }
 object ILanguageInfoMetadata {
   

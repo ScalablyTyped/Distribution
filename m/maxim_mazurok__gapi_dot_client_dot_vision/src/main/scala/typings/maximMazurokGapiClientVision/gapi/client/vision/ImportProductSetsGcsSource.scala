@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportProductSetsGcsSource extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait ImportProductSetsGcsSource extends StObject {
     * for absolute bounding polygons, and float values in [0, 1] for normalized bounding polygons. The system will resize the image if the image resolution is too large to process (larger
     * than 20MP).
     */
-  var csvFileUri: js.UndefOr[String] = js.native
+  var csvFileUri: js.UndefOr[String] = js.undefined
 }
 object ImportProductSetsGcsSource {
   

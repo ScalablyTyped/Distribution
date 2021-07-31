@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPv4Range extends IpRange {
+trait IPv4Range
+  extends StObject
+     with IpRange {
   
   // Lower address.
-  var lowerAddress: js.UndefOr[String] = js.native
+  var lowerAddress: js.UndefOr[String] = js.undefined
   
   // Upper address.
-  var upperAddress: js.UndefOr[String] = js.native
+  var upperAddress: js.UndefOr[String] = js.undefined
 }
 object IPv4Range {
   

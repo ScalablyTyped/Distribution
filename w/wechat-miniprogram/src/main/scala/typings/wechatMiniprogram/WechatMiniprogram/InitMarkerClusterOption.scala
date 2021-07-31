@@ -2,29 +2,27 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitMarkerClusterOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[InitMarkerClusterCompleteCallback] = js.native
+  var complete: js.UndefOr[InitMarkerClusterCompleteCallback] = js.undefined
   
   /** 启用默认的聚合样式 */
-  var enableDefaultStyle: js.UndefOr[Boolean] = js.native
+  var enableDefaultStyle: js.UndefOr[Boolean] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[InitMarkerClusterFailCallback] = js.native
+  var fail: js.UndefOr[InitMarkerClusterFailCallback] = js.undefined
   
   /** 聚合算法的可聚合距离，即距离小于该值的点会聚合至一起，以像素为单位 */
-  var gridSize: js.UndefOr[Boolean] = js.native
+  var gridSize: js.UndefOr[Boolean] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[InitMarkerClusterSuccessCallback] = js.native
+  var success: js.UndefOr[InitMarkerClusterSuccessCallback] = js.undefined
   
   /** 点击已经聚合的标记点时是否实现聚合分离 */
-  var zoomOnClick: js.UndefOr[Boolean] = js.native
+  var zoomOnClick: js.UndefOr[Boolean] = js.undefined
 }
 object InitMarkerClusterOption {
   

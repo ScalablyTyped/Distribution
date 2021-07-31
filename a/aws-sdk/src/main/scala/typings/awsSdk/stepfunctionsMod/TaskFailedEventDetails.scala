@@ -2,31 +2,29 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskFailedEventDetails extends StObject {
   
   /**
     * A more detailed explanation of the cause of the failure.
     */
-  var cause: js.UndefOr[SensitiveCause] = js.native
+  var cause: js.UndefOr[SensitiveCause] = js.undefined
   
   /**
     * The error code of the failure.
     */
-  var error: js.UndefOr[SensitiveError] = js.native
+  var error: js.UndefOr[SensitiveError] = js.undefined
   
   /**
     * The service name of the resource in a task state.
     */
-  var resource: Name = js.native
+  var resource: Name
   
   /**
     * The action of the resource called by a task state.
     */
-  var resourceType: Name = js.native
+  var resourceType: Name
 }
 object TaskFailedEventDetails {
   

@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRepositoryMod {
   
-  @JSImport("@pulumi/aws/codecommit/getRepository", "getRepository")
+  @JSImport("@pulumi/aws/codecommit/getRepository", JSImport.Namespace)
   @js.native
-  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = js.native
-  @JSImport("@pulumi/aws/codecommit/getRepository", "getRepository")
-  @js.native
-  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepository")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRepositoryResult]]
+  @scala.inline
+  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepository")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRepositoryResult]]
+  
   trait GetRepositoryArgs extends StObject {
     
     /**
       * The name for the repository. This needs to be less than 100 characters.
       */
-    val repositoryName: String = js.native
+    val repositoryName: String
   }
   object GetRepositoryArgs {
     
@@ -39,35 +39,34 @@ object getRepositoryMod {
     }
   }
   
-  @js.native
   trait GetRepositoryResult extends StObject {
     
     /**
       * The ARN of the repository
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The URL to use for cloning the repository over HTTPS.
       */
-    val cloneUrlHttp: String = js.native
+    val cloneUrlHttp: String
     
     /**
       * The URL to use for cloning the repository over SSH.
       */
-    val cloneUrlSsh: String = js.native
+    val cloneUrlSsh: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The ID of the repository
       */
-    val repositoryId: String = js.native
+    val repositoryId: String
     
-    val repositoryName: String = js.native
+    val repositoryName: String
   }
   object GetRepositoryResult {
     

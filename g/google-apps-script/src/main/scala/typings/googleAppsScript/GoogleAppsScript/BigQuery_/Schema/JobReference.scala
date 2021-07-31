@@ -2,17 +2,15 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobReference extends StObject {
   
-  var jobId: js.UndefOr[String] = js.native
+  var jobId: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object JobReference {
   

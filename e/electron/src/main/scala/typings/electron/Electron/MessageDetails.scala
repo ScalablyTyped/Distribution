@@ -16,44 +16,42 @@ import typings.electron.electronStrings.worker
 import typings.electron.electronStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageDetails extends StObject {
   
   /**
     * The log level, from 0 to 3. In order it matches `verbose`, `info`, `warning` and
     * `error`.
     */
-  var level: Double = js.native
+  var level: Double
   
   /**
     * The line number of the source that triggered this console message
     */
-  var lineNumber: Double = js.native
+  var lineNumber: Double
   
   /**
     * The actual console message
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * The type of source for this message.  Can be `javascript`, `xml`, `network`,
     * `console-api`, `storage`, `app-cache`, `rendering`, `security`, `deprecation`,
     * `worker`, `violation`, `intervention`, `recommendation` or `other`.
     */
-  var source: javascript | xml | network | `console-api` | storage | `app-cache` | rendering | security | deprecation | worker | violation | intervention | recommendation | other = js.native
+  var source: javascript | xml | network | `console-api` | storage | `app-cache` | rendering | security | deprecation | worker | violation | intervention | recommendation | other
   
   /**
     * The URL the message came from
     */
-  var sourceUrl: String = js.native
+  var sourceUrl: String
   
   /**
     * The version ID of the service worker that sent the log message
     */
-  var versionId: Double = js.native
+  var versionId: Double
 }
 object MessageDetails {
   

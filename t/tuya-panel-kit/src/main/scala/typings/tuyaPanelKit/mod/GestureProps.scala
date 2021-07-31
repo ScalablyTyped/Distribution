@@ -8,18 +8,18 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.auto
 import typings.tuyaPanelKit.tuyaPanelKitStrings.none_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GestureProps extends ViewProps {
+trait GestureProps
+  extends StObject
+     with ViewProps {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   @JSName("pointerEvents")
-  var pointerEvents_GestureProps: js.UndefOr[`box-none` | none_ | `box-only` | auto] = js.native
+  var pointerEvents_GestureProps: js.UndefOr[`box-none` | none_ | `box-only` | auto] = js.undefined
 }
 object GestureProps {
   

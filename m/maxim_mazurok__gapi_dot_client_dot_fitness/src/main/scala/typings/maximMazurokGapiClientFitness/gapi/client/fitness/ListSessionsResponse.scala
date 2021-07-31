@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientFitness.gapi.client.fitness
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSessionsResponse extends StObject {
   
   /** If includeDeleted is set to true in the request, and startTime and endTime are omitted, this will include sessions which were deleted since the last sync. */
-  var deletedSession: js.UndefOr[js.Array[Session]] = js.native
+  var deletedSession: js.UndefOr[js.Array[Session]] = js.undefined
   
   /** Flag to indicate server has more data to transfer. DO NOT USE THIS FIELD. It is never populated in responses from the server. */
-  var hasMoreData: js.UndefOr[Boolean] = js.native
+  var hasMoreData: js.UndefOr[Boolean] = js.undefined
   
   /** The sync token which is used to sync further changes. This will only be provided if both startTime and endTime are omitted from the request. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Sessions with an end time that is between startTime and endTime of the request. */
-  var session: js.UndefOr[js.Array[Session]] = js.native
+  var session: js.UndefOr[js.Array[Session]] = js.undefined
 }
 object ListSessionsResponse {
   

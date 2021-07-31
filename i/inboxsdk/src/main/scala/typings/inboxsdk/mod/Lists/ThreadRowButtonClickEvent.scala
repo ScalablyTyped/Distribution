@@ -3,15 +3,13 @@ package typings.inboxsdk.mod.Lists
 import typings.inboxsdk.mod.Common.DropdownView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThreadRowButtonClickEvent extends StObject {
   
-  var dropdown: js.UndefOr[DropdownView] = js.native
+  var dropdown: js.UndefOr[DropdownView] = js.undefined
   
-  var threadRowView: ThreadRowView = js.native
+  var threadRowView: ThreadRowView
 }
 object ThreadRowButtonClickEvent {
   

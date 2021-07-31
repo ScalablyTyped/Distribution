@@ -5,11 +5,12 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IImageProperties extends IStorageItemExtraProperties {
+trait IImageProperties
+  extends StObject
+     with IStorageItemExtraProperties {
   
   var cameraManufacturer: String = js.native
   

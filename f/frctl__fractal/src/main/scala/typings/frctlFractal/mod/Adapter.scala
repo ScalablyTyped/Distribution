@@ -5,22 +5,21 @@ import typings.frctlFractal.mod.fractal.core.entities.EntitySource
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@frctl/fractal", "Adapter")
 @js.native
 abstract class Adapter[TEngine] protected () extends EventEmitter {
-  def this(engine: TEngine, source: EntitySource[_, _]) = this()
+  def this(engine: TEngine, source: EntitySource[js.Any, js.Any]) = this()
   
   /* protected */ def _resolve[T](value: T): js.Promise[T] = js.native
   /* protected */ def _resolve[T](value: js.Thenable[T]): js.Promise[T] = js.native
   
-  var _source: EntitySource[_, _] = js.native
+  var _source: EntitySource[js.Any, js.Any] = js.native
   
   val engine: TEngine = js.native
   
-  def getReferencesForView(handle: String): js.Array[_] = js.native
+  def getReferencesForView(handle: String): js.Array[js.Any] = js.native
   
   def getView(handle: String): js.Any = js.native
   

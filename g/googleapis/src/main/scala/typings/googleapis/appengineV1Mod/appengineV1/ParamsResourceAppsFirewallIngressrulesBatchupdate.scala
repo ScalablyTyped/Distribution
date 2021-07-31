@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAppsFirewallIngressrulesBatchupdate extends StandardParameters {
+trait ParamsResourceAppsFirewallIngressrulesBatchupdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Part of `name`. Name of the Firewall collection to set. Example:
     * apps/myapp/firewall/ingressRules.
     */
-  var appsId: js.UndefOr[String] = js.native
+  var appsId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaBatchUpdateIngressRulesRequest] = js.native
+  var requestBody: js.UndefOr[SchemaBatchUpdateIngressRulesRequest] = js.undefined
 }
 object ParamsResourceAppsFirewallIngressrulesBatchupdate {
   

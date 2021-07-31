@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,62 +14,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * If used for an {@link XYDiagram} , the row number 0 represents the **x** -values.
   */
-@js.native
-trait XChartDataArray extends XChartData {
+trait XChartDataArray
+  extends StObject
+     with XChartData {
   
   /**
     * retrieves the description texts for all columns.
     * @returns a sequence of strings, each representing the description of a column.
     */
-  var ColumnDescriptions: SafeArray[String] = js.native
+  var ColumnDescriptions: SafeArray[String]
   
   /**
     * retrieves the numerical data as a nested sequence of values.
     * @returns the values as a sequence of sequences. The inner sequence represents rows.
     */
-  var Data: SafeArray[SafeArray[Double]] = js.native
+  var Data: SafeArray[SafeArray[Double]]
   
   /**
     * retrieves the description texts for all rows.
     * @returns a sequence of strings, each representing the description of a row.
     */
-  var RowDescriptions: SafeArray[String] = js.native
+  var RowDescriptions: SafeArray[String]
   
   /**
     * retrieves the description texts for all columns.
     * @returns a sequence of strings, each representing the description of a column.
     */
-  def getColumnDescriptions(): SafeArray[String] = js.native
+  def getColumnDescriptions(): SafeArray[String]
   
   /**
     * retrieves the numerical data as a nested sequence of values.
     * @returns the values as a sequence of sequences. The inner sequence represents rows.
     */
-  def getData(): SafeArray[SafeArray[Double]] = js.native
+  def getData(): SafeArray[SafeArray[Double]]
   
   /**
     * retrieves the description texts for all rows.
     * @returns a sequence of strings, each representing the description of a row.
     */
-  def getRowDescriptions(): SafeArray[String] = js.native
+  def getRowDescriptions(): SafeArray[String]
   
   /**
     * sets the description texts for all columns.
     * @param aColumnDescriptions a sequence of strings which represent a description for each column.
     */
-  def setColumnDescriptions(aColumnDescriptions: SeqEquiv[String]): Unit = js.native
+  def setColumnDescriptions(aColumnDescriptions: SeqEquiv[String]): Unit
   
   /**
     * sets the chart data as an array of numbers.
     * @param aData the values as a sequence of sequences. The inner sequence represents rows.
     */
-  def setData(aData: SeqEquiv[SeqEquiv[Double]]): Unit = js.native
+  def setData(aData: SeqEquiv[SeqEquiv[Double]]): Unit
   
   /**
     * sets the description texts for all rows.
     * @param aRowDescriptions a sequence of strings which represent a description for each row.
     */
-  def setRowDescriptions(aRowDescriptions: SeqEquiv[String]): Unit = js.native
+  def setRowDescriptions(aRowDescriptions: SeqEquiv[String]): Unit
 }
 object XChartDataArray {
   

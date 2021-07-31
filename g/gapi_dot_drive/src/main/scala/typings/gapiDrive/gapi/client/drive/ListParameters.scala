@@ -2,33 +2,31 @@ package typings.gapiDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListParameters extends StObject {
   
-  var corpora: js.UndefOr[String] = js.native
+  var corpora: js.UndefOr[String] = js.undefined
   
-  var corpus: js.UndefOr[String] = js.native
+  var corpus: js.UndefOr[String] = js.undefined
   
-  var includeTeamDriveItems: js.UndefOr[Boolean] = js.native
+  var includeTeamDriveItems: js.UndefOr[Boolean] = js.undefined
   
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var spaces: js.UndefOr[String] = js.native
+  var spaces: js.UndefOr[String] = js.undefined
   
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
-  var teamDriveId: js.UndefOr[String] = js.native
+  var teamDriveId: js.UndefOr[String] = js.undefined
 }
 object ListParameters {
   

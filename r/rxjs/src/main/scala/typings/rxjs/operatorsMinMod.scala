@@ -2,15 +2,16 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorsMinMod {
   
-  @JSImport("rxjs/operators/min", "min")
+  @JSImport("rxjs/operators/min", JSImport.Namespace)
   @js.native
-  def min[T](): js.Any = js.native
-  @JSImport("rxjs/operators/min", "min")
-  @js.native
-  def min[T](comparer: js.Function2[/* x */ T, /* y */ T, Double]): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def min[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("min")().asInstanceOf[js.Any]
+  @scala.inline
+  def min[T](comparer: js.Function2[/* x */ T, /* y */ T, Double]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(comparer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

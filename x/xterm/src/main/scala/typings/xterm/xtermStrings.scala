@@ -5,53 +5,70 @@ import typings.xterm.mod.RendererType
 import typings.xterm.mod._FontWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xtermStrings {
   
   @js.native
-  sealed trait `100` extends _FontWeight
+  sealed trait `100`
+    extends StObject
+       with _FontWeight
   @scala.inline
   def `100`: `100` = "100".asInstanceOf[`100`]
   
   @js.native
-  sealed trait `200` extends _FontWeight
+  sealed trait `200`
+    extends StObject
+       with _FontWeight
   @scala.inline
   def `200`: `200` = "200".asInstanceOf[`200`]
   
   @js.native
-  sealed trait `300` extends _FontWeight
+  sealed trait `300`
+    extends StObject
+       with _FontWeight
   @scala.inline
   def `300`: `300` = "300".asInstanceOf[`300`]
   
   @js.native
-  sealed trait `400` extends _FontWeight
+  sealed trait `400`
+    extends StObject
+       with _FontWeight
   @scala.inline
   def `400`: `400` = "400".asInstanceOf[`400`]
   
   @js.native
-  sealed trait `500` extends _FontWeight
+  sealed trait `500`
+    extends StObject
+       with _FontWeight
   @scala.inline
   def `500`: `500` = "500".asInstanceOf[`500`]
   
   @js.native
-  sealed trait `600` extends _FontWeight
+  sealed trait `600`
+    extends StObject
+       with _FontWeight
   @scala.inline
   def `600`: `600` = "600".asInstanceOf[`600`]
   
   @js.native
-  sealed trait `700` extends _FontWeight
+  sealed trait `700`
+    extends StObject
+       with _FontWeight
   @scala.inline
   def `700`: `700` = "700".asInstanceOf[`700`]
   
   @js.native
-  sealed trait `800` extends _FontWeight
+  sealed trait `800`
+    extends StObject
+       with _FontWeight
   @scala.inline
   def `800`: `800` = "800".asInstanceOf[`800`]
   
   @js.native
-  sealed trait `900` extends _FontWeight
+  sealed trait `900`
+    extends StObject
+       with _FontWeight
   @scala.inline
   def `900`: `900` = "900".asInstanceOf[`900`]
   
@@ -91,7 +108,9 @@ object xtermStrings {
   def block: block = "block".asInstanceOf[block]
   
   @js.native
-  sealed trait bold extends _FontWeight
+  sealed trait bold
+    extends StObject
+       with _FontWeight
   @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   
@@ -106,7 +125,9 @@ object xtermStrings {
   def cancelEvents: cancelEvents = "cancelEvents".asInstanceOf[cancelEvents]
   
   @js.native
-  sealed trait canvas extends RendererType
+  sealed trait canvas
+    extends StObject
+       with RendererType
   @scala.inline
   def canvas: canvas = "canvas".asInstanceOf[canvas]
   
@@ -136,7 +157,9 @@ object xtermStrings {
   def cursorStyle: cursorStyle = "cursorStyle".asInstanceOf[cursorStyle]
   
   @js.native
-  sealed trait debug extends LogLevel
+  sealed trait debug
+    extends StObject
+       with LogLevel
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   
@@ -146,12 +169,16 @@ object xtermStrings {
   def disableStdin: disableStdin = "disableStdin".asInstanceOf[disableStdin]
   
   @js.native
-  sealed trait dom extends RendererType
+  sealed trait dom
+    extends StObject
+       with RendererType
   @scala.inline
   def dom: dom = "dom".asInstanceOf[dom]
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait error
+    extends StObject
+       with LogLevel
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -176,7 +203,9 @@ object xtermStrings {
   def fontWeightBold: fontWeightBold = "fontWeightBold".asInstanceOf[fontWeightBold]
   
   @js.native
-  sealed trait info extends LogLevel
+  sealed trait info
+    extends StObject
+       with LogLevel
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
@@ -206,12 +235,16 @@ object xtermStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait normal extends _FontWeight
+  sealed trait normal
+    extends StObject
+       with _FontWeight
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait off extends LogLevel
+  sealed trait off
+    extends StObject
+       with LogLevel
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   
@@ -281,7 +314,9 @@ object xtermStrings {
   def visualBell: visualBell = "visualBell".asInstanceOf[visualBell]
   
   @js.native
-  sealed trait warn extends LogLevel
+  sealed trait warn
+    extends StObject
+       with LogLevel
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
   

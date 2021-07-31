@@ -5,23 +5,21 @@ import typings.baseui.baseuiStrings.Plussign994
 import typings.baseui.baseuiStrings.`Azerbaijan LeftparenthesisAzərbaycanRightparenthesis`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `8` extends StObject {
   
-  var dialCode: Plussign994 = js.native
+  var dialCode: Plussign994
   
-  var id: AZ = js.native
+  var id: AZ
   
-  var label: `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis` = js.native
+  var label: `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis`
 }
 object `8` {
   
   @scala.inline
-  def apply(dialCode: Plussign994, id: AZ, label: `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis`): `8` = {
-    val __obj = js.Dynamic.literal(dialCode = dialCode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+  def apply(): `8` = {
+    val __obj = js.Dynamic.literal(dialCode = "+994", id = "AZ", label = "Azerbaijan (Az\u0259rbaycan)")
     __obj.asInstanceOf[`8`]
   }
   

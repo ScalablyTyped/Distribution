@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LicenseUnitsDetail extends StObject {
   
   // The number of units that are enabled.
-  var enabled: js.UndefOr[NullableOption[Double]] = js.native
+  var enabled: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The number of units that are suspended.
-  var suspended: js.UndefOr[NullableOption[Double]] = js.native
+  var suspended: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The number of units that are in warning status.
-  var warning: js.UndefOr[NullableOption[Double]] = js.native
+  var warning: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object LicenseUnitsDetail {
   

@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.TeamsCheckPermissionsForProjectInOrgRes
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersTeamsCheckPermissionsForProjectInOrgEndpoint extends StObject {
   
-  var parameters: TeamsCheckPermissionsForProjectInOrgEndpoint = js.native
+  var parameters: TeamsCheckPermissionsForProjectInOrgEndpoint
   
-  var request: TeamsCheckPermissionsForProjectInOrgRequestOptions = js.native
+  var request: TeamsCheckPermissionsForProjectInOrgRequestOptions
   
-  var response: OctokitResponse[TeamsCheckPermissionsForProjectInOrgResponseData] = js.native
+  var response: OctokitResponse[TeamsCheckPermissionsForProjectInOrgResponseData]
 }
 object ParametersTeamsCheckPermissionsForProjectInOrgEndpoint {
   

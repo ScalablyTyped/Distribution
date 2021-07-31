@@ -2,46 +2,44 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
   /**
     * A map of the attributes requested in  ReceiveMessage  to their respective values. Supported attributes:    ApproximateReceiveCount     ApproximateFirstReceiveTimestamp     MessageDeduplicationId     MessageGroupId     SenderId     SentTimestamp     SequenceNumber     ApproximateFirstReceiveTimestamp and SentTimestamp are each returned as an integer representing the epoch time in milliseconds.
     */
-  var Attributes: js.UndefOr[MessageSystemAttributeMap] = js.native
+  var Attributes: js.UndefOr[MessageSystemAttributeMap] = js.undefined
   
   /**
     * The message's contents (not URL-encoded).
     */
-  var Body: js.UndefOr[String] = js.native
+  var Body: js.UndefOr[String] = js.undefined
   
   /**
     * An MD5 digest of the non-URL-encoded message body string.
     */
-  var MD5OfBody: js.UndefOr[String] = js.native
+  var MD5OfBody: js.UndefOr[String] = js.undefined
   
   /**
     * An MD5 digest of the non-URL-encoded message attribute string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest. For information about MD5, see RFC1321.
     */
-  var MD5OfMessageAttributes: js.UndefOr[String] = js.native
+  var MD5OfMessageAttributes: js.UndefOr[String] = js.undefined
   
   /**
     * Each message attribute consists of a Name, Type, and Value. For more information, see Amazon SQS Message Attributes in the Amazon Simple Queue Service Developer Guide.
     */
-  var MessageAttributes: js.UndefOr[MessageBodyAttributeMap] = js.native
+  var MessageAttributes: js.UndefOr[MessageBodyAttributeMap] = js.undefined
   
   /**
     * A unique identifier for the message. A MessageIdis considered unique across all AWS accounts for an extended period of time.
     */
-  var MessageId: js.UndefOr[String] = js.native
+  var MessageId: js.UndefOr[String] = js.undefined
   
   /**
     * An identifier associated with the act of receiving the message. A new receipt handle is returned every time you receive a message. When deleting a message, you provide the last received receipt handle to delete the message.
     */
-  var ReceiptHandle: js.UndefOr[String] = js.native
+  var ReceiptHandle: js.UndefOr[String] = js.undefined
 }
 object Message {
   

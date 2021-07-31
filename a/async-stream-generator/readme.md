@@ -12,7 +12,7 @@ Pipe ES6 Async Generators through Node.js Streams
 | Keywords           | streams, async, generators, async, iterators, pipe |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 8418 |
+| # downloads        | 12730 |
 | # stars            | 0 |
 
 ## Links

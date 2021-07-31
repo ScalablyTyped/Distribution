@@ -2,17 +2,15 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataErrorObject extends StObject {
   
-  var dataHeight: Double = js.native
+  var dataHeight: Double
   
-  var dataWidth: Double = js.native
+  var dataWidth: Double
   
-  var errorMessage: String = js.native
+  var errorMessage: String
 }
 object GetDataErrorObject {
   

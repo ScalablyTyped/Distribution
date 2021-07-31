@@ -2,19 +2,17 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationQueryCondition extends StObject {
   
-  var eventInitiator: String = js.native
+  var eventInitiator: String
   
-  var eventType: String = js.native
+  var eventType: String
   
-  var subscriber: String = js.native
+  var subscriber: String
   
-  var subscriptionId: String = js.native
+  var subscriptionId: String
 }
 object NotificationQueryCondition {
   

@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.OrgsListResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersOrgsListEndpoint extends StObject {
   
-  var parameters: OrgsListEndpoint = js.native
+  var parameters: OrgsListEndpoint
   
-  var request: OrgsListRequestOptions = js.native
+  var request: OrgsListRequestOptions
   
-  var response: OctokitResponse[OrgsListResponseData] = js.native
+  var response: OctokitResponse[OrgsListResponseData]
 }
 object ParametersOrgsListEndpoint {
   

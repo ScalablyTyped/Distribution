@@ -3,29 +3,27 @@ package typings.arangodb.ArangoDB
 import typings.arangodb.anon.Increment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionProperties extends StObject {
   
-  var indexBuckets: Double = js.native
+  var indexBuckets: Double
   
-  var isSystem: Boolean = js.native
+  var isSystem: Boolean
   
-  var isVolatile: Boolean = js.native
+  var isVolatile: Boolean
   
-  var journalSize: Double = js.native
+  var journalSize: Double
   
-  var keyOptions: js.UndefOr[Increment] = js.native
+  var keyOptions: js.UndefOr[Increment] = js.undefined
   
-  var numberOfShards: js.UndefOr[Double] = js.native
+  var numberOfShards: js.UndefOr[Double] = js.undefined
   
-  var replicationFactor: js.UndefOr[Double] = js.native
+  var replicationFactor: js.UndefOr[Double] = js.undefined
   
-  var shardKeys: js.UndefOr[js.Array[String]] = js.native
+  var shardKeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var waitForSync: Boolean = js.native
+  var waitForSync: Boolean
 }
 object CollectionProperties {
   

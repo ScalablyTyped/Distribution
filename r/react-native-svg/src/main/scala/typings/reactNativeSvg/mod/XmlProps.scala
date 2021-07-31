@@ -2,21 +2,21 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XmlProps extends SvgProps {
+trait XmlProps
+  extends StObject
+     with SvgProps {
   
-  var `override`: js.UndefOr[SvgProps] = js.native
+  var `override`: js.UndefOr[SvgProps] = js.undefined
   
-  var xml: String | Null = js.native
+  var xml: String | Null
 }
 object XmlProps {
   
   @scala.inline
   def apply(): XmlProps = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(xml = null)
     __obj.asInstanceOf[XmlProps]
   }
   

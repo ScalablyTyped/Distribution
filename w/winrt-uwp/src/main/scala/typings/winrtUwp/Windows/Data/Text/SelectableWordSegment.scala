@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Data.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a segment from your provided text that includes a word and any trailing whitespace and/or punctuation after this word. */
-@js.native
 trait SelectableWordSegment extends StObject {
   
   /** Gets the TextSegment that identifies the source text's sub-string that is the selected word. */
-  var sourceTextSegment: TextSegment = js.native
+  var sourceTextSegment: TextSegment
   
   /** Gets the text of the selected word identified by this SelectableWordSegment object. */
-  var text: String = js.native
+  var text: String
 }
 object SelectableWordSegment {
   

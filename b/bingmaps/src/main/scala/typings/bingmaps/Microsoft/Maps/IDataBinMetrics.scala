@@ -2,26 +2,24 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDataBinMetrics extends StObject {
   
   /* The average value of the aggregation property of the pushpins in a data bin. */
-  var average: js.UndefOr[Double] = js.native
+  var average: js.UndefOr[Double] = js.undefined
   
   /* The number of pushpins in a data bin. */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /* The number of pushpins in the data bin who's aggregation property has a value. */
-  var countNotBlank: js.UndefOr[Double] = js.native
+  var countNotBlank: js.UndefOr[Double] = js.undefined
   
   /* The number of pushpins in the data bin who's aggregation property is a valid number. */
-  var countNumbers: js.UndefOr[Double] = js.native
+  var countNumbers: js.UndefOr[Double] = js.undefined
   
   /* The sum of the aggregation property of the pushpins in a data bin.  */
-  var sum: js.UndefOr[Double] = js.native
+  var sum: js.UndefOr[Double] = js.undefined
 }
 object IDataBinMetrics {
   

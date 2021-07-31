@@ -2,15 +2,13 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableDraggableColumns extends StObject {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var transitionTime: js.UndefOr[Double] = js.native
+  var transitionTime: js.UndefOr[Double] = js.undefined
 }
 object MUIDataTableDraggableColumns {
   

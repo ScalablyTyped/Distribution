@@ -3,33 +3,31 @@ package typings.athenajs.mod
 import typings.athenajs.anon.Instantiable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawableOptions extends StObject {
   
-  var behavior: js.UndefOr[Instantiable] = js.native
+  var behavior: js.UndefOr[Instantiable] = js.undefined
   
-  var canCollide: js.UndefOr[Boolean] = js.native
+  var canCollide: js.UndefOr[Boolean] = js.undefined
   
-  var canCollideFriendBullet: js.UndefOr[Boolean] = js.native
+  var canCollideFriendBullet: js.UndefOr[Boolean] = js.undefined
   
-  var collideGroup: js.UndefOr[Double] = js.native
+  var collideGroup: js.UndefOr[Double] = js.undefined
   
-  var layer: js.UndefOr[Double] = js.native
+  var layer: js.UndefOr[Double] = js.undefined
   
-  var map: js.UndefOr[Map] = js.native
+  var map: js.UndefOr[Map] = js.undefined
   
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
-  var pool: js.UndefOr[Double] = js.native
+  var pool: js.UndefOr[Double] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object DrawableOptions {
   

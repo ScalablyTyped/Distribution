@@ -3,19 +3,17 @@ package typings.arangodb.Foxx
 import typings.arangodb.anon.Charset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaType extends StObject {
   
-  var parameters: Charset = js.native
+  var parameters: Charset
   
-  var subtype: String = js.native
+  var subtype: String
   
-  var suffix: js.UndefOr[String] = js.native
+  var suffix: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object MediaType {
   

@@ -2,10 +2,8 @@ package typings.zdog.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnchorOptions extends StObject {
   
   /**
@@ -14,26 +12,26 @@ trait AnchorOptions extends StObject {
     * A child shape is positioned relative to its parent.
     * @see {@link https://zzz.dog/api#anchor-addto Zdog API}
     */
-  val addTo: js.UndefOr[Anchor] = js.native
+  val addTo: js.UndefOr[Anchor] = js.undefined
   
   /**
     * Rotates the item.
     * Set to rotate the item around the corresponding axis.
     * @see {@link https://zzz.dog/api#anchor-rotate Zdog API}
     */
-  val rotate: js.UndefOr[VectorOptions] = js.native
+  val rotate: js.UndefOr[VectorOptions] = js.undefined
   
   /**
     * Enlarges or shrinks item geometry. `scale` does not scale `stroke`.
     * @see {@link https://zzz.dog/api#anchor-scale Zdog API}
     */
-  val scale: js.UndefOr[VectorOptions | Double] = js.native
+  val scale: js.UndefOr[VectorOptions | Double] = js.undefined
   
   /**
     * Positions the item.
     * @see {@link https://zzz.dog/api#anchor-translate Zdog API}
     */
-  val translate: js.UndefOr[VectorOptions] = js.native
+  val translate: js.UndefOr[VectorOptions] = js.undefined
 }
 object AnchorOptions {
   

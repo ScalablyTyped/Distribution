@@ -2,31 +2,29 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message to list vendors of the partner.
   */
-@js.native
 trait SchemaListVendorsResponse extends StObject {
   
   /**
     * A token to retrieve the next page of results. Omitted if no further
     * results are available.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The total count of items in the list irrespective of pagination.
     */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
   
   /**
     * List of vendors of the reseller partner. Fields `name`, `companyId` and
     * `companyName` are populated to the Company object.
     */
-  var vendors: js.UndefOr[js.Array[SchemaCompany]] = js.native
+  var vendors: js.UndefOr[js.Array[SchemaCompany]] = js.undefined
 }
 object SchemaListVendorsResponse {
   

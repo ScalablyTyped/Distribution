@@ -2,21 +2,19 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Forks extends StObject {
   
   /**
     * Indicates whether a build should use secrets when building forks of the selected repository.
     */
-  var allowSecrets: Boolean = js.native
+  var allowSecrets: Boolean
   
   /**
     * Indicates whether the trigger should queue builds for forks of the selected repository.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
 }
 object Forks {
   

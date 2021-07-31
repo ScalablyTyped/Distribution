@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAppsScriptTypeWebAppEntryPoint extends StObject {
   
   /** The entry point's configuration. */
-  var entryPointConfig: js.UndefOr[GoogleAppsScriptTypeWebAppConfig] = js.native
+  var entryPointConfig: js.UndefOr[GoogleAppsScriptTypeWebAppConfig] = js.undefined
   
   /** The URL for the web application. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object GoogleAppsScriptTypeWebAppEntryPoint {
   

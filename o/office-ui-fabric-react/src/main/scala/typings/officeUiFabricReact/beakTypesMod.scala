@@ -4,60 +4,59 @@ import typings.officeUiFabricReact.positioningTypesMod.RectangleEdge
 import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object beakTypesMod {
   
-  @js.native
   trait IBeak extends StObject
   
-  @js.native
-  trait IBeakProps extends IBaseProps[IBeak] {
+  trait IBeakProps
+    extends StObject
+       with IBaseProps[IBeak] {
     
     /**
       * Bottom position of the beak
       */
-    var bottom: js.UndefOr[String] = js.native
+    var bottom: js.UndefOr[String] = js.undefined
     
     /**
       * Color of the beak
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Direction of beak
       */
-    var direction: js.UndefOr[RectangleEdge] = js.native
+    var direction: js.UndefOr[RectangleEdge] = js.undefined
     
     /**
       * Beak height.
       * @defaultvalue 18
       * @deprecated Do not use.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Left position of the beak
       */
-    var left: js.UndefOr[String] = js.native
+    var left: js.UndefOr[String] = js.undefined
     
     /**
       * Right position of the beak
       */
-    var right: js.UndefOr[String] = js.native
+    var right: js.UndefOr[String] = js.undefined
     
     /**
       * Top position of the beak
       */
-    var top: js.UndefOr[String] = js.native
+    var top: js.UndefOr[String] = js.undefined
     
     /**
       * Beak width.
       * @defaultvalue 18
       * @deprecated Do not use.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IBeakProps {
     
@@ -120,24 +119,23 @@ object beakTypesMod {
     }
   }
   
-  @js.native
   trait IBeakStylesProps extends StObject {
     
-    var bottom: js.UndefOr[String] = js.native
+    var bottom: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var left: js.UndefOr[String] = js.native
+    var left: js.UndefOr[String] = js.undefined
     
-    var right: js.UndefOr[String] = js.native
+    var right: js.UndefOr[String] = js.undefined
     
-    var top: js.UndefOr[String] = js.native
+    var top: js.UndefOr[String] = js.undefined
     
-    var transform: js.UndefOr[String] = js.native
+    var transform: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object IBeakStylesProps {
     

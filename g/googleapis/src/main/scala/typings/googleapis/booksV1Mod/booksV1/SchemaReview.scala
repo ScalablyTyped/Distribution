@@ -4,64 +4,62 @@ import typings.googleapis.anon.ExtraDescription
 import typings.googleapis.anon.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaReview extends StObject {
   
   /**
     * Author of this review.
     */
-  var author: js.UndefOr[`2`] = js.native
+  var author: js.UndefOr[`2`] = js.undefined
   
   /**
     * Review text.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * Date of this review.
     */
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
   /**
     * URL for the full review text, for reviews gathered from the web.
     */
-  var fullTextUrl: js.UndefOr[String] = js.native
+  var fullTextUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Resource type for a review.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Star rating for this review. Possible values are ONE, TWO, THREE, FOUR,
     * FIVE or NOT_RATED.
     */
-  var rating: js.UndefOr[String] = js.native
+  var rating: js.UndefOr[String] = js.undefined
   
   /**
     * Information regarding the source of this review, when the review is not
     * from a Google Books user.
     */
-  var source: js.UndefOr[ExtraDescription] = js.native
+  var source: js.UndefOr[ExtraDescription] = js.undefined
   
   /**
     * Title for this review.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Source type for this review. Possible values are EDITORIAL, WEB_USER or
     * GOOGLE_USER.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Volume that this review is for.
     */
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
 }
 object SchemaReview {
   

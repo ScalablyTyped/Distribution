@@ -4,15 +4,16 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nanoidRandomMod {
   
+  @scala.inline
+  def apply(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].apply(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def apply(size: Double, callback: js.Function2[/* err */ Error | Null, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("nanoid/random", JSImport.Namespace)
   @js.native
-  def apply(size: Double): Buffer = js.native
-  @JSImport("nanoid/random", JSImport.Namespace)
-  @js.native
-  def apply(size: Double, callback: js.Function2[/* err */ Error | Null, /* buf */ Buffer, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
 }

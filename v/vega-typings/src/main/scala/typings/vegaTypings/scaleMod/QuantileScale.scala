@@ -4,20 +4,19 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.quantile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuantileScale
-  extends BaseScale
+  extends StObject
+     with BaseScale
      with Scale {
   
-  var interpolate: js.UndefOr[ScaleInterpolate] = js.native
+  var interpolate: js.UndefOr[ScaleInterpolate] = js.undefined
   
-  var range: js.UndefOr[RangeScheme] = js.native
+  var range: js.UndefOr[RangeScheme] = js.undefined
   
   @JSName("type")
-  var type_QuantileScale: js.UndefOr[quantile] = js.native
+  var type_QuantileScale: js.UndefOr[quantile] = js.undefined
 }
 object QuantileScale {
   

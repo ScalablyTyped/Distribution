@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalResource extends StObject {
   
-  var connectivityTests: ConnectivityTestsResource = js.native
+  var connectivityTests: ConnectivityTestsResource
   
-  var operations: OperationsResource = js.native
+  var operations: OperationsResource
 }
 object GlobalResource {
   

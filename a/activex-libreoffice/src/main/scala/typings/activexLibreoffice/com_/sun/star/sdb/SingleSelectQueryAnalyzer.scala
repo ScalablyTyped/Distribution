@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.sdbcx.XTablesSupplier
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * group by, having and order criteria, as well as the corresponding select columns and tables. If supported, it even gives access to the parameters.
   * @see com.sun.star.sdb.SingleSelectQueryComposer
   */
-@js.native
 trait SingleSelectQueryAnalyzer
-  extends XSingleSelectQueryAnalyzer
+  extends StObject
+     with XSingleSelectQueryAnalyzer
      with XTablesSupplier
      with XColumnsSupplier
      with XParametersSupplier

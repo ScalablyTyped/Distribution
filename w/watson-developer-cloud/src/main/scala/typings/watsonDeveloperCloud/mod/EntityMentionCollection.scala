@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** EntityMentionCollection. */
-@js.native
 trait EntityMentionCollection extends StObject {
   
   /** An array of objects describing the entity mentions defined for an entity. */
-  var examples: js.Array[EntityMention] = js.native
+  var examples: js.Array[EntityMention]
   
   /** The pagination data for the returned objects. */
-  var pagination: Pagination = js.native
+  var pagination: Pagination
 }
 object EntityMentionCollection {
   

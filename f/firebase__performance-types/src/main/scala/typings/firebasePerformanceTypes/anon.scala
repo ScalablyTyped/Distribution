@@ -3,17 +3,15 @@ package typings.firebasePerformanceTypes
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attributes extends StObject {
     
-    var attributes: js.UndefOr[StringDictionary[String]] = js.native
+    var attributes: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var metrics: js.UndefOr[StringDictionary[Double]] = js.native
+    var metrics: js.UndefOr[StringDictionary[Double]] = js.undefined
   }
   object Attributes {
     

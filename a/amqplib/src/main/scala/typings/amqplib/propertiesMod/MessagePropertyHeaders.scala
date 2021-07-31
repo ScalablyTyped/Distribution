@@ -3,20 +3,19 @@ package typings.amqplib.propertiesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagePropertyHeaders
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var `x-death`: js.UndefOr[js.Array[XDeath]] = js.native
+  var `x-death`: js.UndefOr[js.Array[XDeath]] = js.undefined
   
-  var `x-first-death-exchange`: js.UndefOr[String] = js.native
+  var `x-first-death-exchange`: js.UndefOr[String] = js.undefined
   
-  var `x-first-death-queue`: js.UndefOr[String] = js.native
+  var `x-first-death-queue`: js.UndefOr[String] = js.undefined
   
-  var `x-first-death-reason`: js.UndefOr[String] = js.native
+  var `x-first-death-reason`: js.UndefOr[String] = js.undefined
 }
 object MessagePropertyHeaders {
   

@@ -2,17 +2,15 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableRequest extends StObject {
   
   /**
     * The maximum size in bytes of collected scripts (not referenced by other heap objects)
     * the debugger can hold. Puts no limit if paramter is omitted.
     */
-  var maxScriptsCacheSize: js.UndefOr[Double] = js.native
+  var maxScriptsCacheSize: js.UndefOr[Double] = js.undefined
 }
 object EnableRequest {
   

@@ -2,59 +2,57 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains properties of a site.
   */
-@js.native
 trait SchemaSite extends StObject {
   
   /**
     * Account ID of this site. This is a read-only field that can be left
     * blank.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this site is approved.
     */
-  var approved: js.UndefOr[Boolean] = js.native
+  var approved: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Directory site associated with this site. This is a required field that
     * is read-only after insertion.
     */
-  var directorySiteId: js.UndefOr[String] = js.native
+  var directorySiteId: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of the directory site. This is a read-only,
     * auto-generated field.
     */
-  var directorySiteIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var directorySiteIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * ID of this site. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of this site. This is a read-only,
     * auto-generated field.
     */
-  var idDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var idDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Key name of this site. This is a read-only, auto-generated field.
     */
-  var keyName: js.UndefOr[String] = js.native
+  var keyName: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#site&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this site.This is a required field. Must be less than 128
@@ -63,23 +61,23 @@ trait SchemaSite extends StObject {
     * top-level site, and the name must be unique among top-level sites of the
     * same account.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Site contacts.
     */
-  var siteContacts: js.UndefOr[js.Array[SchemaSiteContact]] = js.native
+  var siteContacts: js.UndefOr[js.Array[SchemaSiteContact]] = js.undefined
   
   /**
     * Site-wide settings.
     */
-  var siteSettings: js.UndefOr[SchemaSiteSettings] = js.native
+  var siteSettings: js.UndefOr[SchemaSiteSettings] = js.undefined
   
   /**
     * Subaccount ID of this site. This is a read-only field that can be left
     * blank.
     */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
 }
 object SchemaSite {
   

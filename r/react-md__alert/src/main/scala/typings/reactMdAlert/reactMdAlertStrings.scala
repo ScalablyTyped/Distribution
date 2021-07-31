@@ -5,7 +5,6 @@ import typings.reactMdAlert.messageQueueContextMod.MessagePriority
 import typings.reactMdAlert.snackbarMod.SnackbarPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdAlertStrings {
@@ -31,7 +30,9 @@ object reactMdAlertStrings {
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait allow extends DuplicateBehavior
+  sealed trait allow
+    extends StObject
+       with DuplicateBehavior
   @scala.inline
   def allow: allow = "allow".asInstanceOf[allow]
   
@@ -51,7 +52,9 @@ object reactMdAlertStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottom extends SnackbarPosition
+  sealed trait bottom
+    extends StObject
+       with SnackbarPosition
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -106,7 +109,9 @@ object reactMdAlertStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait immediate extends MessagePriority
+  sealed trait immediate
+    extends StObject
+       with MessagePriority
   @scala.inline
   def immediate: immediate = "immediate".asInstanceOf[immediate]
   
@@ -156,7 +161,9 @@ object reactMdAlertStrings {
   def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait next extends MessagePriority
+  sealed trait next
+    extends StObject
+       with MessagePriority
   @scala.inline
   def next: next = "next".asInstanceOf[next]
   
@@ -171,7 +178,9 @@ object reactMdAlertStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait normal extends MessagePriority
+  sealed trait normal
+    extends StObject
+       with MessagePriority
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
@@ -211,7 +220,9 @@ object reactMdAlertStrings {
   def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
-  sealed trait prevent extends DuplicateBehavior
+  sealed trait prevent
+    extends StObject
+       with DuplicateBehavior
   @scala.inline
   def prevent: prevent = "prevent".asInstanceOf[prevent]
   
@@ -231,12 +242,16 @@ object reactMdAlertStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait replace extends MessagePriority
+  sealed trait replace
+    extends StObject
+       with MessagePriority
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
-  sealed trait restart extends DuplicateBehavior
+  sealed trait restart
+    extends StObject
+       with DuplicateBehavior
   @scala.inline
   def restart: restart = "restart".asInstanceOf[restart]
   
@@ -281,7 +296,9 @@ object reactMdAlertStrings {
   def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait top extends SnackbarPosition
+  sealed trait top
+    extends StObject
+       with SnackbarPosition
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   

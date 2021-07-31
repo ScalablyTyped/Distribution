@@ -10,9 +10,9 @@ Sentry hub which handles global state managment.
 | ------------------ | :-------------: |
 | Full name          | @sentry/hub |
 | Keywords           | - |
-| # releases         | 117 |
-| # dependents       | 12 |
-| # downloads        | 84823219 |
+| # releases         | 120 |
+| # dependents       | 11 |
+| # downloads        | 115053780 |
 | # stars            | 0 |
 
 ## Links

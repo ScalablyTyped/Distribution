@@ -10,9 +10,9 @@ TypeScript typings for Firebase Cloud Messaging API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.fcm |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 78 |
+| # downloads        | 1218 |
 | # stars            | 0 |
 
 ## Links

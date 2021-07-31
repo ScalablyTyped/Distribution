@@ -2,21 +2,19 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAcceleratorsRequest extends StObject {
   
   /**
     * The number of Global Accelerator objects that you want to return with this call. The default value is 10.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.globalacceleratorMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.globalacceleratorMod.MaxResults] = js.undefined
   
   /**
     * The token for the next set of results. You receive this token from a previous call.
     */
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
 }
 object ListAcceleratorsRequest {
   

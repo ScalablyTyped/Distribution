@@ -2,13 +2,11 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableState[D /* <: js.Object */] extends StObject {
   
-  var hiddenColumns: js.UndefOr[js.Array[IdType[D]]] = js.native
+  var hiddenColumns: js.UndefOr[js.Array[IdType[D]]] = js.undefined
 }
 object TableState {
   
@@ -19,7 +17,7 @@ object TableState {
   }
   
   @scala.inline
-  implicit class TableStateMutableBuilder[Self <: TableState[_], D /* <: js.Object */] (val x: Self with TableState[D]) extends AnyVal {
+  implicit class TableStateMutableBuilder[Self <: TableState[?], D /* <: js.Object */] (val x: Self & TableState[D]) extends AnyVal {
     
     @scala.inline
     def setHiddenColumns(value: js.Array[IdType[D]]): Self = StObject.set(x, "hiddenColumns", value.asInstanceOf[js.Any])

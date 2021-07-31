@@ -2,13 +2,13 @@ package typings.playerframework.global.PlayerFramework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PlayerFramework.TextTrackMode")
 @js.native
 class TextTrackMode ()
-  extends typings.playerframework.PlayerFramework.TextTrackMode
+  extends StObject
+     with typings.playerframework.PlayerFramework.TextTrackMode
 object TextTrackMode {
   
   @JSGlobal("PlayerFramework.TextTrackMode")

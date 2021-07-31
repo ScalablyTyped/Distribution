@@ -5,23 +5,21 @@ import typings.chromeApps.chromeAppsStrings.asynchronous_
 import typings.chromeApps.chromeAppsStrings.synchronous_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ADAPTIVE extends StObject {
   
-  var ADAPTIVE: adaptive_ = js.native
+  var ADAPTIVE: adaptive_
   
-  var ASYNCHRONOUS: asynchronous_ = js.native
+  var ASYNCHRONOUS: asynchronous_
   
-  var SYNCHRONOUS: synchronous_ = js.native
+  var SYNCHRONOUS: synchronous_
 }
 object ADAPTIVE {
   
   @scala.inline
-  def apply(ADAPTIVE: adaptive_, ASYNCHRONOUS: asynchronous_, SYNCHRONOUS: synchronous_): ADAPTIVE = {
-    val __obj = js.Dynamic.literal(ADAPTIVE = ADAPTIVE.asInstanceOf[js.Any], ASYNCHRONOUS = ASYNCHRONOUS.asInstanceOf[js.Any], SYNCHRONOUS = SYNCHRONOUS.asInstanceOf[js.Any])
+  def apply(): ADAPTIVE = {
+    val __obj = js.Dynamic.literal(ADAPTIVE = "adaptive", ASYNCHRONOUS = "asynchronous", SYNCHRONOUS = "synchronous")
     __obj.asInstanceOf[ADAPTIVE]
   }
   

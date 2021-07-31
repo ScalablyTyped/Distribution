@@ -6,111 +6,111 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the items of a list box and makes it possible to register item and action event listeners. */
-@js.native
-trait XListBox extends XInterface {
+trait XListBox
+  extends StObject
+     with XInterface {
   
   /** returns the number of visible lines in drop down mode. */
-  var DropDownLineCount: Double = js.native
+  var DropDownLineCount: Double
   
   /** returns the number of items in the listbox. */
-  val ItemCount: Double = js.native
+  val ItemCount: Double
   
   /** returns all items of the list box. */
-  val Items: SafeArray[String] = js.native
+  val Items: SafeArray[String]
   
   /**
     * returns the currently selected item. When multiple items are selected, the first one is returned. When nothing is selected, an empty string is
     * returned.
     */
-  val SelectedItem: String = js.native
+  val SelectedItem: String
   
   /**
     * returns the position of the currently selected item. When multiple items are selected, the position of the first one is returned. When nothing is
     * selected, -1 is returned.
     */
-  val SelectedItemPos: Double = js.native
+  val SelectedItemPos: Double
   
   /** returns all currently selected items. */
-  val SelectedItems: SafeArray[String] = js.native
+  val SelectedItems: SafeArray[String]
   
   /** returns the positions of all currently selected items. */
-  val SelectedItemsPos: SafeArray[Double] = js.native
+  val SelectedItemsPos: SafeArray[Double]
   
   /** registers a listener for action events. */
-  def addActionListener(l: XActionListener): Unit = js.native
+  def addActionListener(l: XActionListener): Unit
   
   /** adds an item at the specified position. */
-  def addItem(aItem: String, nPos: Double): Unit = js.native
+  def addItem(aItem: String, nPos: Double): Unit
   
   /** registers a listener for item events. */
-  def addItemListener(l: XItemListener): Unit = js.native
+  def addItemListener(l: XItemListener): Unit
   
   /** adds multiple items at the specified position. */
-  def addItems(aItems: SeqEquiv[String], nPos: Double): Unit = js.native
+  def addItems(aItems: SeqEquiv[String], nPos: Double): Unit
   
   /** returns the number of visible lines in drop down mode. */
-  def getDropDownLineCount(): Double = js.native
+  def getDropDownLineCount(): Double
   
   /** returns the item at the specified position. */
-  def getItem(nPos: Double): String = js.native
+  def getItem(nPos: Double): String
   
   /** returns the number of items in the listbox. */
-  def getItemCount(): Double = js.native
+  def getItemCount(): Double
   
   /** returns all items of the list box. */
-  def getItems(): SafeArray[String] = js.native
+  def getItems(): SafeArray[String]
   
   /**
     * returns the currently selected item. When multiple items are selected, the first one is returned. When nothing is selected, an empty string is
     * returned.
     */
-  def getSelectedItem(): String = js.native
+  def getSelectedItem(): String
   
   /**
     * returns the position of the currently selected item. When multiple items are selected, the position of the first one is returned. When nothing is
     * selected, -1 is returned.
     */
-  def getSelectedItemPos(): Double = js.native
+  def getSelectedItemPos(): Double
   
   /** returns all currently selected items. */
-  def getSelectedItems(): SafeArray[String] = js.native
+  def getSelectedItems(): SafeArray[String]
   
   /** returns the positions of all currently selected items. */
-  def getSelectedItemsPos(): SafeArray[Double] = js.native
+  def getSelectedItemsPos(): SafeArray[Double]
   
   /** returns `TRUE` if multiple items can be selected, `FALSE` if only one item can be selected. */
-  def isMutipleMode(): Boolean = js.native
+  def isMutipleMode(): Boolean
   
   /** makes the item at the specified position visible by scrolling. */
-  def makeVisible(nEntry: Double): Unit = js.native
+  def makeVisible(nEntry: Double): Unit
   
   /** unregisters a listener for action events. */
-  def removeActionListener(l: XActionListener): Unit = js.native
+  def removeActionListener(l: XActionListener): Unit
   
   /** unregisters a listener for item events. */
-  def removeItemListener(l: XItemListener): Unit = js.native
+  def removeItemListener(l: XItemListener): Unit
   
   /** removes a number of items at the specified position. */
-  def removeItems(nPos: Double, nCount: Double): Unit = js.native
+  def removeItems(nPos: Double, nCount: Double): Unit
   
   /** selects/deselects the specified item. */
-  def selectItem(aItem: String, bSelect: Boolean): Unit = js.native
+  def selectItem(aItem: String, bSelect: Boolean): Unit
   
   /** selects/deselects the item at the specified position. */
-  def selectItemPos(nPos: Double, bSelect: Boolean): Unit = js.native
+  def selectItemPos(nPos: Double, bSelect: Boolean): Unit
   
   /** selects/deselects multiple items at the specified positions. */
-  def selectItemsPos(aPositions: SeqEquiv[Double], bSelect: Boolean): Unit = js.native
+  def selectItemsPos(aPositions: SeqEquiv[Double], bSelect: Boolean): Unit
   
   /** sets the number of visible lines for drop down mode. */
-  def setDropDownLineCount(nLines: Double): Unit = js.native
+  def setDropDownLineCount(nLines: Double): Unit
   
   /** determines if only a single item or multiple items can be selected. */
-  def setMultipleMode(bMulti: Boolean): Unit = js.native
+  def setMultipleMode(bMulti: Boolean): Unit
 }
 object XListBox {
   

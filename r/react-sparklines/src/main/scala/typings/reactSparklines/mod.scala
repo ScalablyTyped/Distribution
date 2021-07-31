@@ -17,7 +17,6 @@ import typings.reactSparklines.reactSparklinesStrings.median
 import typings.reactSparklines.reactSparklinesStrings.min
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -118,12 +117,11 @@ object mod {
     def this(props: SparklinesTextProps, context: js.Any) = this()
   }
   
-  @js.native
   trait Point extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     
@@ -144,22 +142,21 @@ object mod {
     }
   }
   
-  @js.native
   trait SparklinesBarsProps extends StObject {
     
-    var barWidth: js.UndefOr[Double] = js.native
+    var barWidth: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
     var onMouseMove: js.UndefOr[
         js.Function2[/* p */ Point, /* event */ MouseEvent[ReactSVGElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var points: js.UndefOr[js.Array[Point]] = js.native
+    var points: js.UndefOr[js.Array[Point]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SparklinesBarsProps {
     
@@ -213,12 +210,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SparklinesCurveProps extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SparklinesCurveProps {
     
@@ -245,16 +241,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SparklinesLineProps extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     var onMouseMove: js.UndefOr[
         js.Function3[/* event */ enter | click, /* value */ Double, /* point */ Point, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SparklinesLineProps {
     
@@ -287,10 +282,9 @@ object mod {
     }
   }
   
-  @js.native
   trait SparklinesNormalBandProps extends StObject {
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SparklinesNormalBandProps {
     
@@ -311,30 +305,29 @@ object mod {
     }
   }
   
-  @js.native
   trait SparklinesProps extends StObject {
     
-    var data: js.UndefOr[js.Array[Double]] = js.native
+    var data: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var preserveAspectRatio: js.UndefOr[String] = js.native
+    var preserveAspectRatio: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var svgHeight: js.UndefOr[Double | String] = js.native
+    var svgHeight: js.UndefOr[Double | String] = js.undefined
     
-    var svgWidth: js.UndefOr[Double | String] = js.native
+    var svgWidth: js.UndefOr[Double | String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SparklinesProps {
     
@@ -418,14 +411,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SparklinesReferenceLineProps extends StObject {
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: js.UndefOr[max | min | mean | avg | median | custom] = js.native
+    var `type`: js.UndefOr[max | min | mean | avg | median | custom] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object SparklinesReferenceLineProps {
     
@@ -458,14 +450,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SparklinesSpotsProps extends StObject {
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var spotColors: js.UndefOr[StringDictionary[String]] = js.native
+    var spotColors: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SparklinesSpotsProps {
     
@@ -498,16 +489,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SparklinesTextProps extends StObject {
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var point: js.UndefOr[Point] = js.native
+    var point: js.UndefOr[Point] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object SparklinesTextProps {
     

@@ -3,15 +3,13 @@ package typings.reactIntl.anon
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var children: js.UndefOr[js.Function1[/* val */ String, ReactElement | Null]] = js.native
+  var children: js.UndefOr[js.Function1[/* val */ String, ReactElement | Null]] = js.undefined
   
-  var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallValueOpts>[0] */ js.Any = js.native
+  var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallValueOpts>[0] */ js.Any
 }
 object `1` {
   

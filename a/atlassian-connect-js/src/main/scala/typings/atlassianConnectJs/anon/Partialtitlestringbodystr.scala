@@ -9,22 +9,20 @@ import typings.atlassianConnectJs.atlassianConnectJsStrings.success
 import typings.atlassianConnectJs.atlassianConnectJsStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  title :string,   body :string,   type :'info' | 'success' | 'warning' | 'error',   close :'manual' | 'auto',   actions :{[key: string] : string}}> */
-@js.native
 trait Partialtitlestringbodystr extends StObject {
   
-  var actions: js.UndefOr[StringDictionary[String]] = js.native
+  var actions: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
-  var close: js.UndefOr[manual | auto] = js.native
+  var close: js.UndefOr[manual | auto] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[info | success | warning | error] = js.native
+  var `type`: js.UndefOr[info | success | warning | error] = js.undefined
 }
 object Partialtitlestringbodystr {
   

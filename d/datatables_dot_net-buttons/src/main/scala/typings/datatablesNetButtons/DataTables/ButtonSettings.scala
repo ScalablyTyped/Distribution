@@ -4,7 +4,6 @@ import typings.datatablesNet.JQuery
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "Button Defaults"
@@ -12,123 +11,124 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Buttons extension options
   */
-@js.native
-trait ButtonSettings extends ButtomSettingsCommon {
+trait ButtonSettings
+  extends StObject
+     with ButtomSettingsCommon {
   
   /**
     * PRINT: Show print dialoge on click
     */
-  var autoPrint: js.UndefOr[Boolean] = js.native
+  var autoPrint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * CSV: UTF-8 boom
     */
-  var bom: js.UndefOr[Boolean] = js.native
+  var bom: js.UndefOr[Boolean] = js.undefined
   
   /**
     * CSV: charset
     */
-  var charset: js.UndefOr[String | Boolean] = js.native
+  var charset: js.UndefOr[String | Boolean] = js.undefined
   
   /**
     * COLVIS:
     */
-  var columnText: js.UndefOr[FunctionButtonColvisColumnText] = js.native
+  var columnText: js.UndefOr[FunctionButtonColvisColumnText] = js.undefined
   
   //#endregion Export and Print
   //#region ColVis
   /**
     * COLVIS: Column selector
     */
-  var columns: js.UndefOr[js.Any] = js.native
+  var columns: js.UndefOr[js.Any] = js.undefined
   
   /**
     * COPY / CSV / EXCEL / PDF / PRINT: show header
     */
-  var customize: js.UndefOr[FunctionButtonCustomize] = js.native
+  var customize: js.UndefOr[FunctionButtonCustomize] = js.undefined
   
   /**
     * EXCEL
     */
-  var customizeData: js.UndefOr[FunctionButtonCustomizeData] = js.native
+  var customizeData: js.UndefOr[FunctionButtonCustomizeData] = js.undefined
   
   /**
     * CSV: escape char
     */
-  var escapeChar: js.UndefOr[String] = js.native
+  var escapeChar: js.UndefOr[String] = js.undefined
   
   //#endregion (HTML-)File-Export
   //#region Export and Print
   /**
     * COPY / CSV / EXCEL / PDF / PRINT: show header
     */
-  var exportOptions: js.UndefOr[ButtonExportOptions | js.Object] = js.native
+  var exportOptions: js.UndefOr[ButtonExportOptions | js.Object] = js.undefined
   
   /**
     * CSV / EXCEL / PDF: file extension
     */
-  var extension: js.UndefOr[String] = js.native
+  var `extension`: js.UndefOr[String] = js.undefined
   
   /**
     * COPY / CSV: field boundary
     */
-  var fieldBoundary: js.UndefOr[String] = js.native
+  var fieldBoundary: js.UndefOr[String] = js.undefined
   
   /**
     * COPY / CSV: field separator
     */
-  var fieldSeparator: js.UndefOr[String] = js.native
+  var fieldSeparator: js.UndefOr[String] = js.undefined
   
   //#region (HTML-)File-Export
   /**
     * CSV / EXCEL: Define what the exported filename should be
     */
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
   /**
     * COPY / CSV / EXCEL / PDF / PRINT: show footer
     */
-  var footer: js.UndefOr[Boolean] = js.native
+  var footer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * COPY / CSV / EXCEL / PDF / PRINT: show header
     */
-  var header: js.UndefOr[Boolean] = js.native
+  var header: js.UndefOr[Boolean] = js.undefined
   
   /**
     * PDF / PRINT: Extra message
     */
-  var message: js.UndefOr[String | Api | JQuery | js.Object] = js.native
+  var message: js.UndefOr[String | Api | JQuery | js.Object] = js.undefined
   
   /**
     * COPY / EXCEL / PDF / PRINT: field separator
     */
-  var messageBottom: js.UndefOr[String] = js.native
+  var messageBottom: js.UndefOr[String] = js.undefined
   
   /**
     * COPY / EXCEL / PDF / PRINT: field separator
     */
-  var messageTop: js.UndefOr[String] = js.native
+  var messageTop: js.UndefOr[String] = js.undefined
   
   /**
     * COPY / CSV: field separator
     */
-  var newLine: js.UndefOr[String] = js.native
+  var newLine: js.UndefOr[String] = js.undefined
   
   /**
     * PDF: portrait / landscape
     */
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
   /**
     * PDF: A3 / A4 / A5 / LEGAL / LETTER / TABLOID
     */
-  var pageSize: js.UndefOr[String] = js.native
+  var pageSize: js.UndefOr[String] = js.undefined
   
   /**
     * COPY / PRINT: title
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ButtonSettings {
   

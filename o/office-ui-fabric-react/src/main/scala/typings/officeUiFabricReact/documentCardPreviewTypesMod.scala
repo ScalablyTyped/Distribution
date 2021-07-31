@@ -11,15 +11,12 @@ import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardPreviewTypesMod {
   
-  @js.native
   trait IDocumentCardPreview extends StObject
   
-  @js.native
   trait IDocumentCardPreviewImage extends StObject {
     
     /**
@@ -28,73 +25,73 @@ object documentCardPreviewTypesMod {
       * Deprecated at v4.17.1, to be removed at \>= v5.0.0.
       * @deprecated To be removed at v5.0.0.
       */
-    var accentColor: js.UndefOr[String] = js.native
+    var accentColor: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[js.Object]] = js.native
+    var componentRef: js.UndefOr[IRefObject[js.Object]] = js.undefined
     
     /**
       * Deprecated at v1.3.6, to be removed at \>= v2.0.0.
       * @deprecated To be removed at v2.0.0.
       */
-    var errorImageSrc: js.UndefOr[String] = js.native
+    var errorImageSrc: js.UndefOr[String] = js.undefined
     
     /**
       * If provided, forces the preview image to be this height.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Path to the icon associated with this document type.
       *
       */
-    var iconSrc: js.UndefOr[String] = js.native
+    var iconSrc: js.UndefOr[String] = js.undefined
     
     /**
       * Used to determine how to size the image to fit the dimensions of the component.
       * If both dimensions are provided, then the image is fit using ImageFit.scale, otherwise ImageFit.none is used.
       */
-    var imageFit: js.UndefOr[ImageFit] = js.native
+    var imageFit: js.UndefOr[ImageFit] = js.undefined
     
     /**
       * Props to pass to Link component
       */
-    var linkProps: js.UndefOr[ILinkProps] = js.native
+    var linkProps: js.UndefOr[ILinkProps] = js.undefined
     
     /**
       * File name for the document this preview represents.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The props for the preview icon container classname.
       * If provided, icon container classname will be used..
       */
-    var previewIconContainerClass: js.UndefOr[String] = js.native
+    var previewIconContainerClass: js.UndefOr[String] = js.undefined
     
     /**
       * The props for the preview icon.
       * If provided, icon will be rendered instead of image.
       */
-    var previewIconProps: js.UndefOr[IIconProps] = js.native
+    var previewIconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * Path to the preview image.
       */
-    var previewImageSrc: js.UndefOr[String] = js.native
+    var previewImageSrc: js.UndefOr[String] = js.undefined
     
     /**
       * URL to view the file.
       * @deprecated Use `href` inside of `linkProps` instead.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /**
       * If provided, forces the preview image to be this width.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IDocumentCardPreviewImage {
     
@@ -190,43 +187,43 @@ object documentCardPreviewTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardPreviewProps
-    extends IBaseProps[js.Object] {
+    extends StObject
+       with IBaseProps[js.Object] {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
     @JSName("componentRef")
-    var componentRef_IDocumentCardPreviewProps: js.UndefOr[IRefObject[IDocumentCardPreview]] = js.native
+    var componentRef_IDocumentCardPreviewProps: js.UndefOr[IRefObject[IDocumentCardPreview]] = js.undefined
     
     /**
       * The function return string that will describe the number of overflow documents.
       * such as  (overflowCount: number) =\> `+${ overflowCount } more`,
       */
-    var getOverflowDocumentCountText: js.UndefOr[js.Function1[/* overflowCount */ Double, String]] = js.native
+    var getOverflowDocumentCountText: js.UndefOr[js.Function1[/* overflowCount */ Double, String]] = js.undefined
     
     /**
       * One or more preview images to display.
       */
-    var previewImages: js.Array[IDocumentCardPreviewImage] = js.native
+    var previewImages: js.Array[IDocumentCardPreviewImage]
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
     var styles: js.UndefOr[
         IStyleFunctionOrObject[IDocumentCardPreviewStyleProps, IDocumentCardPreviewStyles]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IDocumentCardPreviewProps {
     
@@ -283,23 +280,22 @@ object documentCardPreviewTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardPreviewStyleProps extends StObject {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Is it a list of files rather than a preview image?
       */
-    var isFileList: js.UndefOr[Boolean] = js.native
+    var isFileList: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDocumentCardPreviewStyleProps {
     
@@ -329,22 +325,21 @@ object documentCardPreviewTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardPreviewStyles extends StObject {
     
-    var fileList: IStyle = js.native
+    var fileList: IStyle
     
-    var fileListIcon: IStyle = js.native
+    var fileListIcon: IStyle
     
-    var fileListLink: IStyle = js.native
+    var fileListLink: IStyle
     
-    var fileListOverflowText: IStyle = js.native
+    var fileListOverflowText: IStyle
     
-    var icon: IStyle = js.native
+    var icon: IStyle
     
-    var previewIcon: IStyle = js.native
+    var previewIcon: IStyle
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IDocumentCardPreviewStyles {
     

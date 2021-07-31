@@ -3,11 +3,12 @@ package typings.ejWebAll.ej
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListView extends Widget_ {
+trait ListView
+  extends StObject
+     with Widget_ {
   
   /** To add item in the given index. If you have enabled grouping in ListView then you need to pass the corresponding group list title to add item in it. Depending on the data bound to
     * ListView, we need to pass either an HTML element or JSON objects in this method.
@@ -68,12 +69,12 @@ trait ListView extends Widget_ {
   /** To get all the checked items.
     * @returns {any[]}
     */
-  def getCheckedItems(): js.Array[_] = js.native
+  def getCheckedItems(): js.Array[js.Any] = js.native
   
   /** To get the text of all the checked items.
     * @returns {any[]}
     */
-  def getCheckedItemsText(): js.Array[_] = js.native
+  def getCheckedItemsText(): js.Array[js.Any] = js.native
   
   /** To get the text of the item in the given index.
     * @param {string|number} Specifies the index value to get the text value.
@@ -166,24 +167,23 @@ trait ListView extends Widget_ {
 }
 object ListView {
   
-  @js.native
   trait AjaxBeforeLoadEventArgs extends StObject {
     
     /** returns the AJAX settings.
       */
-    var ajaxData: js.UndefOr[js.Any] = js.native
+    var ajaxData: js.UndefOr[js.Any] = js.undefined
     
     /** returns true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the model value of the control.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AjaxBeforeLoadEventArgs {
     
@@ -222,20 +222,19 @@ object ListView {
     }
   }
   
-  @js.native
   trait AjaxCompleteEventArgs extends StObject {
     
     /** returns true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the model value of the control.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AjaxCompleteEventArgs {
     
@@ -268,40 +267,39 @@ object ListView {
     }
   }
   
-  @js.native
   trait AjaxErrorEventArgs extends StObject {
     
     /** returns true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the error thrown in the AJAX post.
       */
-    var errorThrown: js.UndefOr[js.Any] = js.native
+    var errorThrown: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current item index.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the current list item.
       */
-    var item: js.UndefOr[js.Any] = js.native
+    var item: js.UndefOr[js.Any] = js.undefined
     
     /** returns the model value of the control.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the current item text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the status.
       */
-    var textStatus: js.UndefOr[js.Any] = js.native
+    var textStatus: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AjaxErrorEventArgs {
     
@@ -364,32 +362,31 @@ object ListView {
     }
   }
   
-  @js.native
   trait AjaxSettings extends StObject {
     
     /** It specifies, whether to enable or disable asynchronous request.
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /** It specifies the page will be cached in the web browser.
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /** It specifies the type of data is send in the query string.
       */
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
     /** It specifies the data as an object, will be passed in the query string.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** It specifies the type of data that you're expecting back from the response.
       */
-    var dataType: js.UndefOr[String] = js.native
+    var dataType: js.UndefOr[String] = js.undefined
     
     /** It specifies the HTTP request type.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AjaxSettings {
     
@@ -440,40 +437,39 @@ object ListView {
     }
   }
   
-  @js.native
   trait AjaxSuccessEventArgs extends StObject {
     
     /** returns the current URL of the AJAX post.
       */
-    var URL: js.UndefOr[String] = js.native
+    var URL: js.UndefOr[String] = js.undefined
     
     /** returns true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the AJAX current content.
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /** returns the current item index.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the current list item.
       */
-    var item: js.UndefOr[js.Any] = js.native
+    var item: js.UndefOr[js.Any] = js.undefined
     
     /** returns the model value of the control.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the current item text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AjaxSuccessEventArgs {
     
@@ -536,60 +532,59 @@ object ListView {
     }
   }
   
-  @js.native
   trait FieldSettings extends StObject {
     
     /** Defines the HTML attributes such as id, class, styles for the specific list item.
       */
-    var attributes: js.UndefOr[js.Any] = js.native
+    var attributes: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the specific field name which contains Boolean values to specify whether the list items to be checked by default or not.
       */
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the specific field name which contains id values for the list items.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Defines the class name for image in that specific list items.
       */
-    var imageClass: js.UndefOr[String] = js.native
+    var imageClass: js.UndefOr[String] = js.undefined
     
     /** Defines the URL for the image to be displayed in the list item.
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** To trigger the mousedown event for specific list items.
       */
-    var mouseDown: js.UndefOr[String] = js.native
+    var mouseDown: js.UndefOr[String] = js.undefined
     
     /** To trigger the mouseup event for specific list items.
       */
-    var mouseUP: js.UndefOr[String] = js.native
+    var mouseUP: js.UndefOr[String] = js.undefined
     
     /** Defines the URL to be navigated while clicking the list item.
       */
-    var navigateUrl: js.UndefOr[String] = js.native
+    var navigateUrl: js.UndefOr[String] = js.undefined
     
     /** To define the child level of list items inside the parent items.
       */
-    var parentPrimaryKey: js.UndefOr[String] = js.native
+    var parentPrimaryKey: js.UndefOr[String] = js.undefined
     
     /** Specifies whether to retain the selection of the list item.
       */
-    var persistSelection: js.UndefOr[Boolean] = js.native
+    var persistSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to prevent the selection of the list item.
       */
-    var preventSelection: js.UndefOr[Boolean] = js.native
+    var preventSelection: js.UndefOr[Boolean] = js.undefined
     
     /** To define the first level of list items.
       */
-    var primaryKey: js.UndefOr[String] = js.native
+    var primaryKey: js.UndefOr[String] = js.undefined
     
     /** Defines the specific field name in the data source to load the list with data.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object FieldSettings {
     
@@ -682,20 +677,19 @@ object ListView {
     }
   }
   
-  @js.native
   trait LoadCompleteEventArgs extends StObject {
     
     /** returns true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the model value of the control.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadCompleteEventArgs {
     
@@ -728,20 +722,19 @@ object ListView {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** returns true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the model value of the control.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadEventArgs {
     
@@ -774,184 +767,183 @@ object ListView {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Event triggers before the AJAX request happens.
       */
-    var ajaxBeforeLoad: js.UndefOr[js.Function1[/* e */ AjaxBeforeLoadEventArgs, Unit]] = js.native
+    var ajaxBeforeLoad: js.UndefOr[js.Function1[/* e */ AjaxBeforeLoadEventArgs, Unit]] = js.undefined
     
     /** Event triggers after the AJAX content loaded completely.
       */
-    var ajaxComplete: js.UndefOr[js.Function1[/* e */ AjaxCompleteEventArgs, Unit]] = js.native
+    var ajaxComplete: js.UndefOr[js.Function1[/* e */ AjaxCompleteEventArgs, Unit]] = js.undefined
     
     /** Event triggers when the AJAX request failed.
       */
-    var ajaxError: js.UndefOr[js.Function1[/* e */ AjaxErrorEventArgs, Unit]] = js.native
+    var ajaxError: js.UndefOr[js.Function1[/* e */ AjaxErrorEventArgs, Unit]] = js.undefined
     
     /** Specifies the ajaxSettings option to load the items to the ListView control.
       * @Default {null}
       */
-    var ajaxSettings: js.UndefOr[typings.ejWebAll.ej.ListView.AjaxSettings] = js.native
+    var ajaxSettings: js.UndefOr[typings.ejWebAll.ej.ListView.AjaxSettings] = js.undefined
     
     /** Event triggers after the AJAX content loaded successfully.
       */
-    var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.native
+    var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.undefined
     
     /** Loads the list data on demand via scrolling behavior to improve the applicationâ€™s performance. There are two ways to load data which can be defined using virtualScrollMode
       * property.
       * @Default {false}
       */
-    var allowVirtualScrolling: js.UndefOr[Boolean] = js.native
+    var allowVirtualScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** Set the index values to be selected on initial loading. This works only when enableCheckMark is set true.
       * @Default {[]}
       */
-    var checkedIndices: js.UndefOr[js.Array[_]] = js.native
+    var checkedIndices: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Sets the root class for ListView theme. This cssClass API helps to use custom skinning option for ListView control. By defining the root class using this API, we need to include
       * this root class in CSS.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Contains the list of data for generating the ListView items.
       * @Default {[]}
       */
-    var dataSource: js.UndefOr[js.Array[_]] = js.native
+    var dataSource: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies whether to load AJAX content while selecting item.
       * @Default {false}
       */
-    var enableAjax: js.UndefOr[Boolean] = js.native
+    var enableAjax: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to enable caching the content.
       * @Default {false}
       */
-    var enableCache: js.UndefOr[Boolean] = js.native
+    var enableCache: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to enable check mark for the item.
       * @Default {false}
       */
-    var enableCheckMark: js.UndefOr[Boolean] = js.native
+    var enableCheckMark: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to enable the filtering feature to filter the item.
       * @Default {false}
       */
-    var enableFiltering: js.UndefOr[Boolean] = js.native
+    var enableFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to group the list item.
       * @Default {false}
       */
-    var enableGroupList: js.UndefOr[Boolean] = js.native
+    var enableGroupList: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies to maintain the current model value to browser cookies for state maintenance. While refresh the page, the model value will get apply to the control from browser cookies.
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the field settings to map the datasource.
       */
-    var fieldSettings: js.UndefOr[FieldSettings] = js.native
+    var fieldSettings: js.UndefOr[FieldSettings] = js.undefined
     
     /** Specifies the text of the back button in the header.
       * @Default {null}
       */
-    var headerBackButtonText: js.UndefOr[String] = js.native
+    var headerBackButtonText: js.UndefOr[String] = js.undefined
     
     /** Specifies the title of the header.
       * @Default {Title}
       */
-    var headerTitle: js.UndefOr[String] = js.native
+    var headerTitle: js.UndefOr[String] = js.undefined
     
     /** Specifies the height.
       * @Default {null}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the number of items to be fetched on each scroll. Note: This property works only with Virtual scrolling.
       * @Default {5}
       */
-    var itemRequestCount: js.UndefOr[Double] = js.native
+    var itemRequestCount: js.UndefOr[Double] = js.undefined
     
     /** Contains the array of items to be added in ListView.
       * @Default {[]}
       */
-    var items: js.UndefOr[js.Array[_]] = js.native
+    var items: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Event triggers before the items loaded.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Event triggers after the items loaded.
       */
-    var loadComplete: js.UndefOr[js.Function1[/* e */ LoadCompleteEventArgs, Unit]] = js.native
+    var loadComplete: js.UndefOr[js.Function1[/* e */ LoadCompleteEventArgs, Unit]] = js.undefined
     
     /** Set the localization culture for ListView Widget.
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Event triggers when mouse down happens on the item.
       */
-    var mouseDown: js.UndefOr[js.Function1[/* e */ MouseDownEventArgs, Unit]] = js.native
+    var mouseDown: js.UndefOr[js.Function1[/* e */ MouseDownEventArgs, Unit]] = js.undefined
     
     /** Event triggers when mouse up happens on the item.
       */
-    var mouseUp: js.UndefOr[js.Function1[/* e */ MouseUpEventArgs, Unit]] = js.native
+    var mouseUp: js.UndefOr[js.Function1[/* e */ MouseUpEventArgs, Unit]] = js.undefined
     
     /** Specifies whether to retain the selection of the item.
       * @Default {false}
       */
-    var persistSelection: js.UndefOr[Boolean] = js.native
+    var persistSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to prevent the selection of the item.
       * @Default {false}
       */
-    var preventSelection: js.UndefOr[Boolean] = js.native
+    var preventSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the query to execute with the datasource.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies whether need to render the control with the template contents.
       * @Default {false}
       */
-    var renderTemplate: js.UndefOr[Boolean] = js.native
+    var renderTemplate: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the index of item which need to be in selected state initially while loading.
       * @Default {0}
       */
-    var selectedItemIndex: js.UndefOr[Double] = js.native
+    var selectedItemIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies whether to show the header.
       * @Default {true}
       */
-    var showHeader: js.UndefOr[Boolean] = js.native
+    var showHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to show the back button header.
       * @Default {false}
       */
-    var showHeaderBackButton: js.UndefOr[Boolean] = js.native
+    var showHeaderBackButton: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies ID of the element contains template contents.
       * @Default {null}
       */
-    var templateId: js.UndefOr[String] = js.native
+    var templateId: js.UndefOr[String] = js.undefined
     
     /** Specifies the maximum number of items to be fetched. Note: This will work only with Virtual scrolling
       * @Default {5}
       */
-    var totalItemsCount: js.UndefOr[Double] = js.native
+    var totalItemsCount: js.UndefOr[Double] = js.undefined
     
     /** Specifies the virtual scroll mode to load the list data on demand via scrolling behavior. There are two types of mode.
       * @Default {ej.VirtualScrollMode.Normal}
       */
-    var virtualScrollMode: js.UndefOr[VirtualScrollMode | String] = js.native
+    var virtualScrollMode: js.UndefOr[VirtualScrollMode | String] = js.undefined
     
     /** Specifies the width.
       * @Default {null}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -1001,7 +993,7 @@ object ListView {
       def setAllowVirtualScrollingUndefined: Self = StObject.set(x, "allowVirtualScrolling", js.undefined)
       
       @scala.inline
-      def setCheckedIndices(value: js.Array[_]): Self = StObject.set(x, "checkedIndices", value.asInstanceOf[js.Any])
+      def setCheckedIndices(value: js.Array[js.Any]): Self = StObject.set(x, "checkedIndices", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCheckedIndicesUndefined: Self = StObject.set(x, "checkedIndices", js.undefined)
@@ -1016,7 +1008,7 @@ object ListView {
       def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Array[_]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -1091,7 +1083,7 @@ object ListView {
       def setItemRequestCountUndefined: Self = StObject.set(x, "itemRequestCount", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -1197,48 +1189,47 @@ object ListView {
     }
   }
   
-  @js.native
   trait MouseDownEventArgs extends StObject {
     
     /** returns true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the list of checked items.
       */
-    var checkedItems: js.UndefOr[Double] = js.native
+    var checkedItems: js.UndefOr[Double] = js.undefined
     
     /** returns the current checked item text.
       */
-    var checkedItemsText: js.UndefOr[String] = js.native
+    var checkedItemsText: js.UndefOr[String] = js.undefined
     
     /** If the child element exist return true; otherwise, false.
       */
-    var hasChild: js.UndefOr[Boolean] = js.native
+    var hasChild: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current Index of the item.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** If checked return true; otherwise, false.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current list item.
       */
-    var item: js.UndefOr[String] = js.native
+    var item: js.UndefOr[String] = js.undefined
     
     /** returns the model value of the control.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the current text of item.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MouseDownEventArgs {
     
@@ -1313,48 +1304,47 @@ object ListView {
     }
   }
   
-  @js.native
   trait MouseUpEventArgs extends StObject {
     
     /** returns true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the list of checked items.
       */
-    var checkedItems: js.UndefOr[Double] = js.native
+    var checkedItems: js.UndefOr[Double] = js.undefined
     
     /** returns the current checked item text.
       */
-    var checkedItemsText: js.UndefOr[String] = js.native
+    var checkedItemsText: js.UndefOr[String] = js.undefined
     
     /** If the child element exist return true; otherwise, false.
       */
-    var hasChild: js.UndefOr[Boolean] = js.native
+    var hasChild: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current Index of the item.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** If checked return true; otherwise, false.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current list item.
       */
-    var item: js.UndefOr[String] = js.native
+    var item: js.UndefOr[String] = js.undefined
     
     /** returns the model value of the control.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the current text of item.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MouseUpEventArgs {
     

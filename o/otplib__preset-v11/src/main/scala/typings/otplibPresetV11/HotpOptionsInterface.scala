@@ -3,17 +3,17 @@ package typings.otplibPresetV11
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HotpOptionsInterface extends HmacOptions {
+trait HotpOptionsInterface
+  extends StObject
+     with HmacOptions {
   
-  var createHmacSecret: js.UndefOr[typings.otplibPresetV11.createHmacSecret] = js.native
+  var createHmacSecret: js.UndefOr[typings.otplibPresetV11.createHmacSecret] = js.undefined
   
-  var crypto: js.UndefOr[js.Any] = js.native
+  var crypto: js.UndefOr[js.Any] = js.undefined
   
-  var digits: js.UndefOr[Double] = js.native
+  var digits: js.UndefOr[Double] = js.undefined
 }
 object HotpOptionsInterface {
   

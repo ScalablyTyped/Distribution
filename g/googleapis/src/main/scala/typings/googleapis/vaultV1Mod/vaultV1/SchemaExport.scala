@@ -2,64 +2,62 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An export
   */
-@js.native
 trait SchemaExport extends StObject {
   
   /**
     * Output only. Export sink for cloud storage files.
     */
-  var cloudStorageSink: js.UndefOr[SchemaCloudStorageSink] = js.native
+  var cloudStorageSink: js.UndefOr[SchemaCloudStorageSink] = js.undefined
   
   /**
     * Output only. The time when the export was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Advanced options of the export.
     */
-  var exportOptions: js.UndefOr[SchemaExportOptions] = js.native
+  var exportOptions: js.UndefOr[SchemaExportOptions] = js.undefined
   
   /**
     * Output only. The generated export ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The matter ID.
     */
-  var matterId: js.UndefOr[String] = js.native
+  var matterId: js.UndefOr[String] = js.undefined
   
   /**
     * The export name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The search query being exported.
     */
-  var query: js.UndefOr[SchemaQuery] = js.native
+  var query: js.UndefOr[SchemaQuery] = js.undefined
   
   /**
     * Output only. The requester of the export.
     */
-  var requester: js.UndefOr[SchemaUserInfo] = js.native
+  var requester: js.UndefOr[SchemaUserInfo] = js.undefined
   
   /**
     * Output only. Export statistics.
     */
-  var stats: js.UndefOr[SchemaExportStats] = js.native
+  var stats: js.UndefOr[SchemaExportStats] = js.undefined
   
   /**
     * Output only. The export status.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaExport {
   

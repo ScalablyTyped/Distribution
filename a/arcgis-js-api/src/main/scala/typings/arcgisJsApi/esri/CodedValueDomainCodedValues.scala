@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CodedValueDomainCodedValues extends Object {
+trait CodedValueDomainCodedValues
+  extends StObject
+     with Object {
   
   /**
     * The value of the code.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html#codedValues)
     */
-  var code: String | Double = js.native
+  var code: String | Double
   
   /**
     * The name of the coded value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html#codedValues)
     */
-  var name: String = js.native
+  var name: String
 }
 object CodedValueDomainCodedValues {
   

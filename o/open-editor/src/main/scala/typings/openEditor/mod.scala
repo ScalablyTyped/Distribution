@@ -3,7 +3,6 @@ package typings.openEditor
 import typings.lineColumnPath.mod.PathLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,12 +23,14 @@ object mod {
   	]);
   	```
   	*/
+  @scala.inline
+  def apply(files: js.Array[PathLike]): Unit = ^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(files: js.Array[PathLike], options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("open-editor", JSImport.Namespace)
   @js.native
-  def apply(files: js.Array[PathLike]): Unit = js.native
-  @JSImport("open-editor", JSImport.Namespace)
-  @js.native
-  def apply(files: js.Array[PathLike], options: Options): Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Same as `openEditor()`, but returns an object with the binary name, arguments, and a flag indicating whether the editor runs in the terminal.
@@ -39,30 +40,27 @@ object mod {
   	{binary: 'subl', arguments: ['foo.js:1:5'], isTerminalEditor: false}
   	```
   	*/
-  @JSImport("open-editor", "make")
-  @js.native
-  def make(files: js.Array[PathLike]): EditorRunConfig = js.native
-  @JSImport("open-editor", "make")
-  @js.native
-  def make(files: js.Array[PathLike], options: Options): EditorRunConfig = js.native
+  @scala.inline
+  def make(files: js.Array[PathLike]): EditorRunConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(files.asInstanceOf[js.Any]).asInstanceOf[EditorRunConfig]
+  @scala.inline
+  def make(files: js.Array[PathLike], options: Options): EditorRunConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EditorRunConfig]
   
-  @js.native
   trait EditorRunConfig extends StObject {
     
     /**
     		Arguments provided to the editor binary.
     		*/
-    var arguments: js.Array[String] = js.native
+    var arguments: js.Array[String]
     
     /**
     		Editor binary name.
     		*/
-    var binary: String = js.native
+    var binary: String
     
     /**
     		A flag indicating whether the editor runs in the terminal.
     		*/
-    var isTerminalEditor: Boolean = js.native
+    var isTerminalEditor: Boolean
   }
   object EditorRunConfig {
     
@@ -89,7 +87,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -97,7 +94,7 @@ object mod {
     		Default: [Auto-detected](https://github.com/sindresorhus/env-editor).
     		__Only use this option if you really have to.__ Can be useful if you want to force a specific editor or implement your own auto-detection.
     		*/
-    val editor: js.UndefOr[String] = js.native
+    val editor: js.UndefOr[String] = js.undefined
   }
   object Options {
     

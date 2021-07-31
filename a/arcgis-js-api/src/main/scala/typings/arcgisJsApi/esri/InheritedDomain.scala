@@ -3,11 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.inherited
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InheritedDomain extends Domain {
+trait InheritedDomain
+  extends StObject
+     with Domain {
   
   /**
     * The domain type.

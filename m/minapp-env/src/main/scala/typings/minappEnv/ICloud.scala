@@ -2,21 +2,21 @@ package typings.minappEnv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ICloud {
   
   type CallFunctionData = AnyObject
   
-  @js.native
-  trait CallFunctionParam extends ICloudAPIParam[CallFunctionResult] {
+  trait CallFunctionParam
+    extends StObject
+       with ICloudAPIParam[CallFunctionResult] {
     
-    var data: js.UndefOr[CallFunctionData] = js.native
+    var data: js.UndefOr[CallFunctionData] = js.undefined
     
-    var name: java.lang.String = js.native
+    var name: java.lang.String
     
-    var slow: js.UndefOr[scala.Boolean] = js.native
+    var slow: js.UndefOr[scala.Boolean] = js.undefined
   }
   object CallFunctionParam {
     
@@ -46,10 +46,11 @@ object ICloud {
     }
   }
   
-  @js.native
-  trait CallFunctionResult extends IAPISuccessParam {
+  trait CallFunctionResult
+    extends StObject
+       with IAPISuccessParam {
     
-    var result: js.UndefOr[AnyObject | java.lang.String] = js.native
+    var result: js.UndefOr[AnyObject | java.lang.String] = js.undefined
   }
   object CallFunctionResult {
     
@@ -70,10 +71,11 @@ object ICloud {
     }
   }
   
-  @js.native
-  trait DeleteFileParam extends ICloudAPIParam[DeleteFileResult] {
+  trait DeleteFileParam
+    extends StObject
+       with ICloudAPIParam[DeleteFileResult] {
     
-    var fileList: Array[java.lang.String] = js.native
+    var fileList: Array[java.lang.String]
   }
   object DeleteFileParam {
     
@@ -93,10 +95,11 @@ object ICloud {
   
   // === end ===
   // === API: deleteFile ===
-  @js.native
-  trait DeleteFileResult extends IAPISuccessParam {
+  trait DeleteFileResult
+    extends StObject
+       with IAPISuccessParam {
     
-    var fileList: Array[DeleteFileResultItem] = js.native
+    var fileList: Array[DeleteFileResultItem]
   }
   object DeleteFileResult {
     
@@ -114,14 +117,13 @@ object ICloud {
     }
   }
   
-  @js.native
   trait DeleteFileResultItem extends StObject {
     
-    var errMsg: java.lang.String = js.native
+    var errMsg: java.lang.String
     
-    var fileID: java.lang.String = js.native
+    var fileID: java.lang.String
     
-    var status: Double = js.native
+    var status: Double
   }
   object DeleteFileResultItem {
     
@@ -145,12 +147,13 @@ object ICloud {
     }
   }
   
-  @js.native
-  trait DownloadFileParam extends ICloudAPIParam[DownloadFileResult] {
+  trait DownloadFileParam
+    extends StObject
+       with ICloudAPIParam[DownloadFileResult] {
     
-    var cloudPath: js.UndefOr[java.lang.String] = js.native
+    var cloudPath: js.UndefOr[java.lang.String] = js.undefined
     
-    var fileID: java.lang.String = js.native
+    var fileID: java.lang.String
   }
   object DownloadFileParam {
     
@@ -174,12 +177,13 @@ object ICloud {
     }
   }
   
-  @js.native
-  trait DownloadFileResult extends IAPISuccessParam {
+  trait DownloadFileResult
+    extends StObject
+       with IAPISuccessParam {
     
-    var statusCode: Double = js.native
+    var statusCode: Double
     
-    var tempFilePath: java.lang.String = js.native
+    var tempFilePath: java.lang.String
   }
   object DownloadFileResult {
     
@@ -200,10 +204,11 @@ object ICloud {
     }
   }
   
-  @js.native
-  trait GetTempFileURLParam extends ICloudAPIParam[GetTempFileURLResult] {
+  trait GetTempFileURLParam
+    extends StObject
+       with ICloudAPIParam[GetTempFileURLResult] {
     
-    var fileList: Array[java.lang.String] = js.native
+    var fileList: Array[java.lang.String]
   }
   object GetTempFileURLParam {
     
@@ -221,10 +226,11 @@ object ICloud {
     }
   }
   
-  @js.native
-  trait GetTempFileURLResult extends IAPISuccessParam {
+  trait GetTempFileURLResult
+    extends StObject
+       with IAPISuccessParam {
     
-    var fileList: Array[GetTempFileURLResultItem] = js.native
+    var fileList: Array[GetTempFileURLResultItem]
   }
   object GetTempFileURLResult {
     
@@ -242,18 +248,17 @@ object ICloud {
     }
   }
   
-  @js.native
   trait GetTempFileURLResultItem extends StObject {
     
-    var errMsg: java.lang.String = js.native
+    var errMsg: java.lang.String
     
-    var fileID: java.lang.String = js.native
+    var fileID: java.lang.String
     
-    var maxAge: Double = js.native
+    var maxAge: Double
     
-    var status: Double = js.native
+    var status: Double
     
-    var tempFileURL: java.lang.String = js.native
+    var tempFileURL: java.lang.String
   }
   object GetTempFileURLResultItem {
     
@@ -289,8 +294,9 @@ object ICloud {
     }
   }
   
-  @js.native
-  trait ICloudAPIParam[T] extends IAPIParam[T]
+  trait ICloudAPIParam[T]
+    extends StObject
+       with IAPIParam[T]
   object ICloudAPIParam {
     
     @scala.inline
@@ -300,14 +306,15 @@ object ICloud {
     }
   }
   
-  @js.native
-  trait UploadFileParam extends ICloudAPIParam[UploadFileResult] {
+  trait UploadFileParam
+    extends StObject
+       with ICloudAPIParam[UploadFileResult] {
     
-    var cloudPath: java.lang.String = js.native
+    var cloudPath: java.lang.String
     
-    var filePath: java.lang.String = js.native
+    var filePath: java.lang.String
     
-    var header: js.UndefOr[AnyObject] = js.native
+    var header: js.UndefOr[AnyObject] = js.undefined
   }
   object UploadFileParam {
     
@@ -334,12 +341,13 @@ object ICloud {
     }
   }
   
-  @js.native
-  trait UploadFileResult extends IAPISuccessParam {
+  trait UploadFileResult
+    extends StObject
+       with IAPISuccessParam {
     
-    var fileID: java.lang.String = js.native
+    var fileID: java.lang.String
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object UploadFileResult {
     

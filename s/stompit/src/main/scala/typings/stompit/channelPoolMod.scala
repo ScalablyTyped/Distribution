@@ -4,24 +4,30 @@ import typings.std.Error
 import typings.stompit.channelMod.ChannelOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object channelPoolMod {
   
   @JSImport("stompit/lib/ChannelPool", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ChannelPool {
+  class ^ protected ()
+    extends StObject
+       with ChannelPool {
     def this(connectFailover: typings.stompit.connectFailoverMod.^) = this()
     def this(connectFailover: typings.stompit.connectFailoverMod.^, options: ChannelPoolOptions) = this()
+    
+    /* CompleteClass */
+    override def channel(callback: js.Function2[/* err */ Error | Null, /* channel */ typings.stompit.channelMod.^, Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def close(): Unit = js.native
   }
   
-  @js.native
   trait ChannelPool extends StObject {
     
-    def channel(callback: js.Function2[/* err */ Error | Null, /* channel */ typings.stompit.channelMod.^, Unit]): Unit = js.native
+    def channel(callback: js.Function2[/* err */ Error | Null, /* channel */ typings.stompit.channelMod.^, Unit]): Unit
     
-    def close(): Unit = js.native
+    def close(): Unit
   }
   object ChannelPool {
     
@@ -47,20 +53,19 @@ object channelPoolMod {
     }
   }
   
-  @js.native
   trait ChannelPoolOptions extends StObject {
     
-    var channelOptions: js.UndefOr[ChannelOptions] = js.native
+    var channelOptions: js.UndefOr[ChannelOptions] = js.undefined
     
-    var freeExcessTimeout: js.UndefOr[Double] = js.native
+    var freeExcessTimeout: js.UndefOr[Double] = js.undefined
     
-    var maxChannels: js.UndefOr[Double] = js.native
+    var maxChannels: js.UndefOr[Double] = js.undefined
     
-    var minChannels: js.UndefOr[Double] = js.native
+    var minChannels: js.UndefOr[Double] = js.undefined
     
-    var minFreeChannels: js.UndefOr[Double] = js.native
+    var minFreeChannels: js.UndefOr[Double] = js.undefined
     
-    var requestChannelTimeout: js.UndefOr[Double] = js.native
+    var requestChannelTimeout: js.UndefOr[Double] = js.undefined
   }
   object ChannelPoolOptions {
     

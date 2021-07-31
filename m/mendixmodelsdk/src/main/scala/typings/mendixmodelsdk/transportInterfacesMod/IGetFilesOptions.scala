@@ -4,17 +4,15 @@ import typings.mendixmodelsdk.mendixmodelsdkStrings.json
 import typings.mendixmodelsdk.mendixmodelsdkStrings.zip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGetFilesOptions extends StObject {
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[json | zip] = js.native
+  var format: js.UndefOr[json | zip] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object IGetFilesOptions {
   

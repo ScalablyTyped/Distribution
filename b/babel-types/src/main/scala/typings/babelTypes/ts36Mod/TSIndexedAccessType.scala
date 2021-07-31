@@ -2,20 +2,19 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSIndexedAccessType
-  extends Node
+  extends StObject
+     with Node
      with TSType {
   
-  var indexType: TSType = js.native
+  var indexType: TSType
   
-  var objectType: TSType = js.native
+  var objectType: TSType
   
   @JSName("type")
-  var type_TSIndexedAccessType: typings.babelTypes.babelTypesStrings.TSIndexedAccessType = js.native
+  var type_TSIndexedAccessType: typings.babelTypes.babelTypesStrings.TSIndexedAccessType
 }
 object TSIndexedAccessType {
   

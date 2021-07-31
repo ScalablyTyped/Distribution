@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataFilteringEventUIParam extends StObject {
   
   /**
     * Gets the column index. Applicable only when filtering mode is "simple".
     */
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the column key. Applicable only when filtering mode is "simple".
     */
-  var columnKey: js.UndefOr[String] = js.native
+  var columnKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the filtering expressions. Filtering expressions could be changed in this event handler and after that data binding is applied. In this way the user could control filtering more easily before applying data-binding.
     */
-  var newExpressions: js.UndefOr[js.Array[_]] = js.native
+  var newExpressions: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets reference to GridFiltering.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object DataFilteringEventUIParam {
   
@@ -52,7 +50,7 @@ object DataFilteringEventUIParam {
     def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
     @scala.inline
-    def setNewExpressions(value: js.Array[_]): Self = StObject.set(x, "newExpressions", value.asInstanceOf[js.Any])
+    def setNewExpressions(value: js.Array[js.Any]): Self = StObject.set(x, "newExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNewExpressionsUndefined: Self = StObject.set(x, "newExpressions", js.undefined)

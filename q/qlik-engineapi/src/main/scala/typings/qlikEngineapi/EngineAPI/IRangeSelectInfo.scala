@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RangeSelectInfo...
   */
-@js.native
 trait IRangeSelectInfo extends StObject {
   
   /* ToCheck!
@@ -19,7 +17,7 @@ trait IRangeSelectInfo extends StObject {
   /**
     * Range of values.
     */
-  var qRange: IRange = js.native
+  var qRange: IRange
 }
 object IRangeSelectInfo {
   

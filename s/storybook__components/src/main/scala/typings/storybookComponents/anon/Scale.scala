@@ -2,13 +2,11 @@ package typings.storybookComponents.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scale extends StObject {
   
-  var scale: Double = js.native
+  var scale: Double
 }
 object Scale {
   

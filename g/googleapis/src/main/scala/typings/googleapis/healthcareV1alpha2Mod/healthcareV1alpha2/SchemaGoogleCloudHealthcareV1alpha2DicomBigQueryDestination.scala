@@ -2,13 +2,11 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The BigQuery table where the output should be written.
   */
-@js.native
 trait SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestination extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestination extends StObje
     * is not set and the destination table already exists, the export call
     * returns an error.
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * BigQuery URI to a table, up to 2000 characters long, in the format
     * `bq://projectId.bqDatasetId.tableId`
     */
-  var tableUri: js.UndefOr[String] = js.native
+  var tableUri: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestination {
   

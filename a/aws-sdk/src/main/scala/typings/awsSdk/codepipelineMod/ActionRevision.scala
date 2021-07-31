@@ -2,26 +2,24 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionRevision extends StObject {
   
   /**
     * The date and time when the most recent version of the action was created, in timestamp format.
     */
-  var created: Timestamp = js.native
+  var created: Timestamp
   
   /**
     * The unique identifier of the change that set the state to this revision (for example, a deployment ID or timestamp).
     */
-  var revisionChangeId: RevisionChangeIdentifier = js.native
+  var revisionChangeId: RevisionChangeIdentifier
   
   /**
     * The system-generated unique ID that identifies the revision number of the action.
     */
-  var revisionId: Revision = js.native
+  var revisionId: Revision
 }
 object ActionRevision {
   

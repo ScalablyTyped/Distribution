@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Api extends StObject {
   
   /**
     * The API operation name. For gRPC requests, it is the fully qualified API method name, such as "google.pubsub.v1.Publisher.Publish". For OpenAPI requests, it is the `operationId`,
     * such as "getPet".
     */
-  var operation: js.UndefOr[String] = js.native
+  var operation: js.UndefOr[String] = js.undefined
   
   /** The API protocol used for sending the request, such as "http", "https", "grpc", or "internal". */
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
   /**
     * The API service name. It is a logical identifier for a networked API, such as "pubsub.googleapis.com". The naming syntax depends on the API management system being used for handling
     * the request.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /** The API version associated with the API operation above, such as "v1" or "v1alpha1". */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object Api {
   

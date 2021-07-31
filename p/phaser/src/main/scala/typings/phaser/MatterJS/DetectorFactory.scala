@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectorFactory extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait DetectorFactory extends StObject {
     * @param {} filterB
     * @return {bool} `true` if collision can occur
     */
-  def canCollide(filterA: ICollisionFilter, filterB: ICollisionFilter): Boolean = js.native
+  def canCollide(filterA: ICollisionFilter, filterB: ICollisionFilter): Boolean
   
   /**
     * Finds all collisions given a list of pairs.
@@ -25,7 +23,7 @@ trait DetectorFactory extends StObject {
     * @param {engine} engine
     * @return {ICollisionData[]} collisions
     */
-  def collisions(broadphasePairs: js.Array[IPair], engine: Engine): js.Array[ICollisionData] = js.native
+  def collisions(broadphasePairs: js.Array[IPair], engine: Engine): js.Array[ICollisionData]
 }
 object DetectorFactory {
   

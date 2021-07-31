@@ -11,16 +11,14 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusContainerMod {
   
   @JSImport("@react-md/utils/types/wia-aria/FocusContainer", "FocusContainer")
   @js.native
-  val FocusContainer: ForwardRefExoticComponent[FocusContainerProps with RefAttributes[HTMLDivElement]] = js.native
+  val FocusContainer: ForwardRefExoticComponent[FocusContainerProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
   trait FocusContainerOptionsProps extends StObject {
     
     /**
@@ -28,7 +26,7 @@ object focusContainerMod {
       * mounted.  This can either be the first or last focusable item or a query
       * selector string that is run against this component to focus.
       */
-    var defaultFocus: js.UndefOr[first | last | String] = js.native
+    var defaultFocus: js.UndefOr[first | last | String] = js.undefined
     
     /**
       * By default, the focus container will try to maintain a cache of the
@@ -43,14 +41,14 @@ object focusContainerMod {
       * this list.  So if your children aren't changing the first and last
       * elements, there's no need to disable the cache.
       */
-    var disableFocusCache: js.UndefOr[Boolean] = js.native
+    var disableFocusCache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The default behavior for the focus container is to focus an element once it
       * is mounted and the `disabled` prop is not enabled. This behavior can be
       * disabled if this is not wanted for some reason.
       */
-    var disableFocusOnMount: js.UndefOr[Boolean] = js.native
+    var disableFocusOnMount: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the element that gets focused on mount should try to not scroll
@@ -58,7 +56,7 @@ object focusContainerMod {
       * normally remain `false`, but it is useful to set to `true` if the
       * `FocusContainer` is within a transition that appears offscreen.
       */
-    var disableFocusOnMountScroll: js.UndefOr[Boolean] = js.native
+    var disableFocusOnMountScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The default behavior for the focus container is to attempt to focus the
@@ -66,14 +64,14 @@ object focusContainerMod {
       * generally used for temporary material. If there are cases where this
       * behavior is not wanted, you can enable this prop.
       */
-    var disableFocusOnUnmount: js.UndefOr[Boolean] = js.native
+    var disableFocusOnUnmount: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the focus behavior should be disabled. This should really be
       * used if you are using nested focus containers for temporary material (such
       * as dialogs or menus).
       */
-    var disableTabFocusWrap: js.UndefOr[Boolean] = js.native
+    var disableTabFocusWrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When the focus container unmounts, it will attempt to re-focus the element
@@ -88,7 +86,7 @@ object focusContainerMod {
       * This can either be a query selector string, a specific HTMLElement, or a
       * function that finds a specific HTMLElement to focus.
       */
-    var unmountFocusFallback: js.UndefOr[FocusFallback] = js.native
+    var unmountFocusFallback: js.UndefOr[FocusFallback] = js.undefined
   }
   object FocusContainerOptionsProps {
     
@@ -151,10 +149,10 @@ object focusContainerMod {
     }
   }
   
-  @js.native
   trait FocusContainerProps
-    extends HTMLAttributes[HTMLElement]
-       with FocusContainerOptionsProps {
+    extends StObject
+       with FocusContainerOptionsProps
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * The component to render the focus container as. This should really not be
@@ -162,7 +160,7 @@ object focusContainerMod {
       * prop is that it must either be a element string (`"div"`, `"span"`, etc) or
       * a custom component that has forwarded the ref to the DOM node.
       */
-    var component: js.UndefOr[ElementType[_]] = js.native
+    var component: js.UndefOr[ElementType[js.Any]] = js.undefined
   }
   object FocusContainerProps {
     
@@ -176,7 +174,7 @@ object focusContainerMod {
     implicit class FocusContainerPropsMutableBuilder[Self <: FocusContainerProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComponent(value: ElementType[_]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)

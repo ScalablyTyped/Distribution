@@ -5,7 +5,6 @@ import typings.powerappsComponentFramework.ComponentFramework.WebApi.Entity
 import typings.powerappsComponentFramework.ComponentFramework.WebApi.RetrieveMultipleResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,9 +38,9 @@ trait WebApi extends StObject {
     * @returns The deferred object for the result of the operation. An object with interface RetrieveMultipleResponse will be resolved if successful.
     */
   def retrieveMultipleRecords(entityType: String): js.Promise[RetrieveMultipleResponse] = js.native
-  def retrieveMultipleRecords(entityType: String, options: js.UndefOr[scala.Nothing], maxPageSize: Double): js.Promise[RetrieveMultipleResponse] = js.native
   def retrieveMultipleRecords(entityType: String, options: String): js.Promise[RetrieveMultipleResponse] = js.native
   def retrieveMultipleRecords(entityType: String, options: String, maxPageSize: Double): js.Promise[RetrieveMultipleResponse] = js.native
+  def retrieveMultipleRecords(entityType: String, options: Unit, maxPageSize: Double): js.Promise[RetrieveMultipleResponse] = js.native
   
   /**
     * Retrieves an entity record.
@@ -73,18 +72,17 @@ object WebApi {
     */
   type Entity = StringDictionary[js.Any]
   
-  @js.native
   trait RetrieveMultipleResponse extends StObject {
     
     /**
       * An array of JSON objects, where each object represents the retrieved entity record containing attributes and their values
       */
-    var entities: js.Array[Entity] = js.native
+    var entities: js.Array[Entity]
     
     /**
       * If the number of records being retrieved is more than the value specified in the 'maxPageSize' parameter in the request, this attribute returns the URL to return next set of records.
       */
-    var nextLink: String = js.native
+    var nextLink: String
   }
   object RetrieveMultipleResponse {
     

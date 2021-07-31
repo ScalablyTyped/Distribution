@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Media.Effects
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The interface defining a custom video compositor definition. */
-@js.native
 trait IVideoCompositorDefinition extends StObject {
   
   /** Gets the activatable class ID of the video compositor. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
   
   /** Gets the set of properties for configuring the video compositor object. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
 }
 object IVideoCompositorDefinition {
   

@@ -2,20 +2,18 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLDOMAttribute extends StObject {
   
   @JSName("MSHTML.IHTMLDOMAttribute_typekey")
-  var MSHTMLDotIHTMLDOMAttribute_typekey: IHTMLDOMAttribute = js.native
+  var MSHTMLDotIHTMLDOMAttribute_typekey: IHTMLDOMAttribute
   
-  val nodeName: String = js.native
+  val nodeName: String
   
-  var nodeValue: js.Any = js.native
+  var nodeValue: js.Any
   
-  val specified: Boolean = js.native
+  val specified: Boolean
 }
 object IHTMLDOMAttribute {
   

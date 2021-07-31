@@ -4,31 +4,29 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionAuditLogEntry extends StObject {
   
   /**
     * Change that was made to extension
     */
-  var auditAction: String = js.native
+  var auditAction: String
   
   /**
     * Date at which the change was made
     */
-  var auditDate: Date = js.native
+  var auditDate: Date
   
   /**
     * Extra information about the change
     */
-  var comment: String = js.native
+  var comment: String
   
   /**
     * Represents the user who made the change
     */
-  var updatedBy: IdentityRef = js.native
+  var updatedBy: IdentityRef
 }
 object ExtensionAuditLogEntry {
   

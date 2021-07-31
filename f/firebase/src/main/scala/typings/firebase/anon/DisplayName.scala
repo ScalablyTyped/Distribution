@@ -2,15 +2,13 @@ package typings.firebase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayName extends StObject {
   
-  var displayName: js.UndefOr[String | Null] = js.native
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
-  var photoURL: js.UndefOr[String | Null] = js.native
+  var photoURL: js.UndefOr[String | Null] = js.undefined
 }
 object DisplayName {
   

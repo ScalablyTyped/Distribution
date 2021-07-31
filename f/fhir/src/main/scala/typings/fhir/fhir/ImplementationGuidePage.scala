@@ -2,75 +2,75 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Page/Section in the Guide
   */
-@js.native
-trait ImplementationGuidePage extends BackboneElement {
+trait ImplementationGuidePage
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'format'.
     */
-  var _format: js.UndefOr[Element] = js.native
+  var _format: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'kind'.
     */
-  var _kind: js.UndefOr[Element] = js.native
+  var _kind: js.UndefOr[Element] = js.undefined
   
   /**
     * Name of package to include
     */
   @JSName("package")
-  var _package: js.UndefOr[js.Array[Element | String]] = js.native
+  var _package: js.UndefOr[js.Array[Element | String]] = js.undefined
   
   /**
     * Contains extended information for property 'source'.
     */
-  var _source: js.UndefOr[Element] = js.native
+  var _source: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'title'.
     */
-  var _title: js.UndefOr[Element] = js.native
+  var _title: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[js.Array[Element]] = js.native
+  var _type: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Format of the page (e.g. html, markdown, etc.)
     */
-  var format: js.UndefOr[code] = js.native
+  var format: js.UndefOr[code] = js.undefined
   
   /**
     * page | example | list | include | directory | dictionary | toc | resource
     */
-  var kind: code = js.native
+  var kind: code
   
   /**
     * Nested Pages / Sections
     */
-  var page: js.UndefOr[js.Array[ImplementationGuidePage]] = js.native
+  var page: js.UndefOr[js.Array[ImplementationGuidePage]] = js.undefined
   
   /**
     * Where to find that page
     */
-  var source: uri = js.native
+  var source: uri
   
   /**
     * Short title shown for navigational assistance
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * Kind of resource to include in the list
     */
-  var `type`: js.UndefOr[js.Array[code]] = js.native
+  var `type`: js.UndefOr[js.Array[code]] = js.undefined
 }
 object ImplementationGuidePage {
   

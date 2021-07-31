@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Courses$Announcements")
@@ -37,7 +36,7 @@ class ResourceCoursesAnnouncements protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaAnnouncement] = js.native
   def create(callback: BodyResponseCallback[SchemaAnnouncement]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnouncement] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnouncement] = js.native
   def create(params: ParamsResourceCoursesAnnouncementsCreate): GaxiosPromise[SchemaAnnouncement] = js.native
   def create(
     params: ParamsResourceCoursesAnnouncementsCreate,
@@ -78,7 +77,7 @@ class ResourceCoursesAnnouncements protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceCoursesAnnouncementsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceCoursesAnnouncementsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -112,7 +111,7 @@ class ResourceCoursesAnnouncements protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAnnouncement] = js.native
   def get(callback: BodyResponseCallback[SchemaAnnouncement]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnouncement] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnouncement] = js.native
   def get(params: ParamsResourceCoursesAnnouncementsGet): GaxiosPromise[SchemaAnnouncement] = js.native
   def get(params: ParamsResourceCoursesAnnouncementsGet, callback: BodyResponseCallback[SchemaAnnouncement]): Unit = js.native
   def get(
@@ -151,7 +150,7 @@ class ResourceCoursesAnnouncements protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListAnnouncementsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAnnouncementsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAnnouncementsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListAnnouncementsResponse] = js.native
   def list(params: ParamsResourceCoursesAnnouncementsList): GaxiosPromise[SchemaListAnnouncementsResponse] = js.native
   def list(
     params: ParamsResourceCoursesAnnouncementsList,
@@ -191,7 +190,7 @@ class ResourceCoursesAnnouncements protected () extends StObject {
     */
   def modifyAssignees(): GaxiosPromise[SchemaAnnouncement] = js.native
   def modifyAssignees(callback: BodyResponseCallback[SchemaAnnouncement]): Unit = js.native
-  def modifyAssignees(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnouncement] = js.native
+  def modifyAssignees(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnouncement] = js.native
   def modifyAssignees(params: ParamsResourceCoursesAnnouncementsModifyassignees): GaxiosPromise[SchemaAnnouncement] = js.native
   def modifyAssignees(
     params: ParamsResourceCoursesAnnouncementsModifyassignees,
@@ -232,7 +231,7 @@ class ResourceCoursesAnnouncements protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaAnnouncement] = js.native
   def patch(callback: BodyResponseCallback[SchemaAnnouncement]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnouncement] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnouncement] = js.native
   def patch(params: ParamsResourceCoursesAnnouncementsPatch): GaxiosPromise[SchemaAnnouncement] = js.native
   def patch(
     params: ParamsResourceCoursesAnnouncementsPatch,

@@ -2,26 +2,24 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggableDimension extends StObject {
   
   // relative to the viewport when the drag started
-  var client: BoxModel = js.native
+  var client: BoxModel
   
-  var descriptor: DraggableDescriptor = js.native
+  var descriptor: DraggableDescriptor
   
   // how much displacement the draggable causes
   // this is the size of the marginBox
-  var displaceBy: Position = js.native
+  var displaceBy: Position
   
   // relative to the whole page
-  var page: BoxModel = js.native
+  var page: BoxModel
   
   // the placeholder for the draggable
-  var placeholder: Placeholder = js.native
+  var placeholder: Placeholder
 }
 object DraggableDimension {
   

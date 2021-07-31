@@ -2,24 +2,24 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ObjectExplorerContext extends ConnectedContext {
+trait ObjectExplorerContext
+  extends StObject
+     with ConnectedContext {
   
   /**
     * Defines whether this is a Connection-level object.
     * If not, the object is expected to be a child object underneath
     * one of the connections.
     */
-  var isConnectionNode: Boolean = js.native
+  var isConnectionNode: Boolean
   
   /**
     * Node info for objects below a specific connection. This
     * may be null for a Connection-level object
     */
-  var nodeInfo: NodeInfo = js.native
+  var nodeInfo: NodeInfo
 }
 object ObjectExplorerContext {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutSigningProfileResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the signing profile created.
     */
-  var arn: js.UndefOr[java.lang.String] = js.native
+  var arn: js.UndefOr[java.lang.String] = js.undefined
 }
 object PutSigningProfileResponse {
   

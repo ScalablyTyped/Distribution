@@ -56,216 +56,214 @@ import typings.reactNativeElements.reactNativeElementsStrings.yes
 import typings.reactNativeVectorIcons.iconMod.IconProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.IconProps> & std.Partial<react-native-elements.react-native-elements.ImageProps> */
-@js.native
 trait PartialIconPropsPartialIm extends StObject {
   
-  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
-  var ImageComponent: js.UndefOr[ComponentType[_]] = js.native
+  var ImageComponent: js.UndefOr[ComponentType[js.Any]] = js.undefined
   
-  var PlaceholderContent: js.UndefOr[ReactElement] = js.native
+  var PlaceholderContent: js.UndefOr[ReactElement] = js.undefined
   
-  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.native
+  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
   
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
-  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
-  var accessibilityHint: js.UndefOr[String] = js.native
+  var accessibilityHint: js.UndefOr[String] = js.undefined
   
-  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
   
-  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
-  var accessibilityState: js.UndefOr[AccessibilityState] = js.native
+  var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
   
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
-  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.native
+  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
-  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.native
+  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
   
-  var accessible: js.UndefOr[Boolean] = js.native
+  var accessible: js.UndefOr[Boolean] = js.undefined
   
-  var activeOpacity: js.UndefOr[Double] = js.native
+  var activeOpacity: js.UndefOr[Double] = js.undefined
   
-  var adjustsFontSizeToFit: js.UndefOr[Boolean] = js.native
+  var adjustsFontSizeToFit: js.UndefOr[Boolean] = js.undefined
   
-  var allowFontScaling: js.UndefOr[Boolean] = js.native
+  var allowFontScaling: js.UndefOr[Boolean] = js.undefined
   
-  var background: js.UndefOr[BackgroundPropType] = js.native
+  var background: js.UndefOr[BackgroundPropType] = js.undefined
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var blurRadius: js.UndefOr[Double] = js.native
+  var blurRadius: js.UndefOr[Double] = js.undefined
   
-  var borderBottomLeftRadius: js.UndefOr[Double] = js.native
+  var borderBottomLeftRadius: js.UndefOr[Double] = js.undefined
   
-  var borderBottomRightRadius: js.UndefOr[Double] = js.native
+  var borderBottomRightRadius: js.UndefOr[Double] = js.undefined
   
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
-  var borderTopLeftRadius: js.UndefOr[Double] = js.native
+  var borderTopLeftRadius: js.UndefOr[Double] = js.undefined
   
-  var borderTopRightRadius: js.UndefOr[Double] = js.native
+  var borderTopRightRadius: js.UndefOr[Double] = js.undefined
   
-  var brand: js.UndefOr[Boolean] = js.native
+  var brand: js.UndefOr[Boolean] = js.undefined
   
-  var capInsets: js.UndefOr[Insets] = js.native
+  var capInsets: js.UndefOr[Insets] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all] = js.native
+  var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all] = js.undefined
   
-  var defaultSource: js.UndefOr[ImageURISource | Double] = js.native
+  var defaultSource: js.UndefOr[ImageURISource | Double] = js.undefined
   
-  var delayLongPress: js.UndefOr[Double] = js.native
+  var delayLongPress: js.UndefOr[Double] = js.undefined
   
-  var delayPressIn: js.UndefOr[Double] = js.native
+  var delayPressIn: js.UndefOr[Double] = js.undefined
   
-  var delayPressOut: js.UndefOr[Double] = js.native
+  var delayPressOut: js.UndefOr[Double] = js.undefined
   
-  var disabled: js.UndefOr[Boolean | Null] = js.native
+  var disabled: js.UndefOr[Boolean | Null] = js.undefined
   
-  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.native
+  var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
   
-  var fadeDuration: js.UndefOr[Double] = js.native
+  var fadeDuration: js.UndefOr[Double] = js.undefined
   
-  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
+  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hitSlop: js.UndefOr[Insets] = js.native
+  var hitSlop: js.UndefOr[Insets] = js.undefined
   
-  var iconProps: js.UndefOr[IconProps] = js.native
+  var iconProps: js.UndefOr[IconProps] = js.undefined
   
-  var iconStyle: js.UndefOr[TextStyle] = js.native
+  var iconStyle: js.UndefOr[TextStyle] = js.undefined
   
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
   
-  var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.native
+  var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.undefined
   
-  var loadingIndicatorSource: js.UndefOr[ImageURISource] = js.native
+  var loadingIndicatorSource: js.UndefOr[ImageURISource] = js.undefined
   
-  var maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.native
+  var maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.undefined
   
-  var minimumFontScale: js.UndefOr[Double] = js.native
+  var minimumFontScale: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var nativeID: js.UndefOr[String] = js.native
+  var nativeID: js.UndefOr[String] = js.undefined
   
-  var numberOfLines: js.UndefOr[Double] = js.native
+  var numberOfLines: js.UndefOr[Double] = js.undefined
   
-  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.native
+  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
   
-  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ NativeSyntheticEvent[ImageErrorEventData], Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ NativeSyntheticEvent[ImageErrorEventData], Unit]] = js.undefined
   
-  var onFocus: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.undefined
   
-  var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
-  var onLoad: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[ImageLoadEventData], Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[ImageLoadEventData], Unit]] = js.undefined
   
-  var onLoadEnd: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLoadEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onLoadStart: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLoadStart: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onLongPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) with js.UndefOr[js.Function0[Unit]] = js.native
+  var onLongPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]]
   
-  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPartialLoad: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPartialLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) with js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]]
   
-  var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onProgress: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[ImageProgressEventDataIOS], Unit]] = js.native
+  var onProgress: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[ImageProgressEventDataIOS], Unit]] = js.undefined
   
-  var onShowUnderlay: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShowUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onTextLayout: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[TextLayoutEventData], Unit]] = js.native
+  var onTextLayout: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[TextLayoutEventData], Unit]] = js.undefined
   
-  var placeholderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var placeholderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var pressRetentionOffset: js.UndefOr[Insets] = js.native
+  var pressRetentionOffset: js.UndefOr[Insets] = js.undefined
   
-  var progressiveRenderingEnabled: js.UndefOr[Boolean] = js.native
+  var progressiveRenderingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var raised: js.UndefOr[Boolean] = js.native
+  var raised: js.UndefOr[Boolean] = js.undefined
   
-  var resizeMethod: js.UndefOr[auto | resize | scale] = js.native
+  var resizeMethod: js.UndefOr[auto | resize | scale] = js.undefined
   
-  var resizeMode: js.UndefOr[ImageResizeMode] = js.native
+  var resizeMode: js.UndefOr[ImageResizeMode] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var reverseColor: js.UndefOr[String] = js.native
+  var reverseColor: js.UndefOr[String] = js.undefined
   
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
-  var selectionColor: js.UndefOr[ColorValue] = js.native
+  var selectionColor: js.UndefOr[ColorValue] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var solid: js.UndefOr[Boolean] = js.native
+  var solid: js.UndefOr[Boolean] = js.undefined
   
-  var source: js.UndefOr[ImageSourcePropType] = js.native
+  var source: js.UndefOr[ImageSourcePropType] = js.undefined
   
-  var style: (js.UndefOr[ViewStyle | TextStyle]) with js.UndefOr[StyleProp[ImageStyle]] = js.native
+  var style: (js.UndefOr[ViewStyle | TextStyle]) & js.UndefOr[StyleProp[ImageStyle]]
   
-  var suppressHighlighting: js.UndefOr[Boolean] = js.native
+  var suppressHighlighting: js.UndefOr[Boolean] = js.undefined
   
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
   
-  var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.native
+  var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
   
-  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.native
+  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
   
-  var transition: js.UndefOr[Boolean] = js.native
+  var transition: js.UndefOr[Boolean] = js.undefined
   
-  var transitionDuration: js.UndefOr[Double] = js.native
+  var transitionDuration: js.UndefOr[Double] = js.undefined
   
-  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.native
+  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
   
-  var `type`: js.UndefOr[IconType] = js.native
+  var `type`: js.UndefOr[IconType] = js.undefined
   
-  var underlayColor: js.UndefOr[ColorValue] = js.native
+  var underlayColor: js.UndefOr[ColorValue] = js.undefined
   
-  var useForeground: js.UndefOr[Boolean] = js.native
+  var useForeground: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PartialIconPropsPartialIm {
   
   @scala.inline
   def apply(
-    onLongPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) with js.UndefOr[js.Function0[Unit]],
-    onPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) with js.UndefOr[js.Function0[Unit]],
-    style: (js.UndefOr[ViewStyle | TextStyle]) with js.UndefOr[StyleProp[ImageStyle]]
+    onLongPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]],
+    onPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]],
+    style: (js.UndefOr[ViewStyle | TextStyle]) & js.UndefOr[StyleProp[ImageStyle]]
   ): PartialIconPropsPartialIm = {
     val __obj = js.Dynamic.literal(onLongPress = onLongPress.asInstanceOf[js.Any], onPress = onPress.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialIconPropsPartialIm]
@@ -551,7 +549,7 @@ object PartialIconPropsPartialIm {
     def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
     
     @scala.inline
-    def setImageComponent(value: ComponentType[_]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
+    def setImageComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setImageComponentUndefined: Self = StObject.set(x, "ImageComponent", js.undefined)
@@ -675,7 +673,7 @@ object PartialIconPropsPartialIm {
     
     @scala.inline
     def setOnLongPress(
-      value: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) with js.UndefOr[js.Function0[Unit]]
+      value: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]]
     ): Self = StObject.set(x, "onLongPress", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -692,7 +690,7 @@ object PartialIconPropsPartialIm {
     
     @scala.inline
     def setOnPress(
-      value: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) with js.UndefOr[js.Function0[Unit]]
+      value: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]]
     ): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -816,7 +814,7 @@ object PartialIconPropsPartialIm {
     def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value :_*))
     
     @scala.inline
-    def setStyle(value: (js.UndefOr[ViewStyle | TextStyle]) with js.UndefOr[StyleProp[ImageStyle]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    def setStyle(value: (js.UndefOr[ViewStyle | TextStyle]) & js.UndefOr[StyleProp[ImageStyle]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSuppressHighlighting(value: Boolean): Self = StObject.set(x, "suppressHighlighting", value.asInstanceOf[js.Any])

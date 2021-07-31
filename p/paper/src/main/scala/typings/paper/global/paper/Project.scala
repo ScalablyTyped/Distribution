@@ -3,7 +3,6 @@ package typings.paper.global.paper
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -27,7 +26,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("paper.Project")
 @js.native
 class Project protected ()
-  extends typings.paper.paper.Project {
+  extends StObject
+     with typings.paper.paper.Project {
   def this(element: String) = this()
   def this(element: typings.paper.paper.Size) = this()
   /** 

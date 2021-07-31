@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CapacityReservationSpecification extends StObject {
   
   /**
     * Indicates the instance's Capacity Reservation preferences. Possible preferences include:    open - The instance can run in any open Capacity Reservation that has matching attributes (instance type, platform, Availability Zone).    none - The instance avoids running in a Capacity Reservation even if one is available. The instance runs as an On-Demand Instance.  
     */
-  var CapacityReservationPreference: js.UndefOr[typings.awsSdk.ec2Mod.CapacityReservationPreference] = js.native
+  var CapacityReservationPreference: js.UndefOr[typings.awsSdk.ec2Mod.CapacityReservationPreference] = js.undefined
   
   /**
     * Information about the target Capacity Reservation or Capacity Reservation group.
     */
-  var CapacityReservationTarget: js.UndefOr[typings.awsSdk.ec2Mod.CapacityReservationTarget] = js.native
+  var CapacityReservationTarget: js.UndefOr[typings.awsSdk.ec2Mod.CapacityReservationTarget] = js.undefined
 }
 object CapacityReservationSpecification {
   

@@ -9,47 +9,42 @@ import typings.konva.stageMod.Stage
 import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointerEventsMod {
   
-  @JSImport("konva/types/PointerEvents", "createEvent")
+  @JSImport("konva/types/PointerEvents", JSImport.Namespace)
   @js.native
-  def createEvent(evt: PointerEvent): KonvaPointerEvent = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("konva/types/PointerEvents", "getCapturedShape")
-  @js.native
-  def getCapturedShape(pointerId: Double): Stage | Shape[ShapeConfig] = js.native
+  @scala.inline
+  def createEvent(evt: PointerEvent): KonvaPointerEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[KonvaPointerEvent]
   
-  @JSImport("konva/types/PointerEvents", "hasPointerCapture")
-  @js.native
-  def hasPointerCapture(pointerId: Double, shape: Shape[ShapeConfig]): Boolean = js.native
-  @JSImport("konva/types/PointerEvents", "hasPointerCapture")
-  @js.native
-  def hasPointerCapture(pointerId: Double, shape: Stage): Boolean = js.native
+  @scala.inline
+  def getCapturedShape(pointerId: Double): Stage | Shape[ShapeConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCapturedShape")(pointerId.asInstanceOf[js.Any]).asInstanceOf[Stage | Shape[ShapeConfig]]
   
-  @JSImport("konva/types/PointerEvents", "releaseCapture")
-  @js.native
-  def releaseCapture(pointerId: Double): Unit = js.native
-  @JSImport("konva/types/PointerEvents", "releaseCapture")
-  @js.native
-  def releaseCapture(pointerId: Double, target: Shape[ShapeConfig]): Unit = js.native
-  @JSImport("konva/types/PointerEvents", "releaseCapture")
-  @js.native
-  def releaseCapture(pointerId: Double, target: Stage): Unit = js.native
+  @scala.inline
+  def hasPointerCapture(pointerId: Double, shape: Shape[ShapeConfig]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasPointerCapture")(pointerId.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasPointerCapture(pointerId: Double, shape: Stage): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasPointerCapture")(pointerId.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("konva/types/PointerEvents", "setPointerCapture")
-  @js.native
-  def setPointerCapture(pointerId: Double, shape: Shape[ShapeConfig]): Unit = js.native
-  @JSImport("konva/types/PointerEvents", "setPointerCapture")
-  @js.native
-  def setPointerCapture(pointerId: Double, shape: Stage): Unit = js.native
+  @scala.inline
+  def releaseCapture(pointerId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("releaseCapture")(pointerId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def releaseCapture(pointerId: Double, target: Shape[ShapeConfig]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("releaseCapture")(pointerId.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def releaseCapture(pointerId: Double, target: Stage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("releaseCapture")(pointerId.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
-  trait KonvaPointerEvent extends KonvaEventObject[PointerEvent] {
+  @scala.inline
+  def setPointerCapture(pointerId: Double, shape: Shape[ShapeConfig]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPointerCapture")(pointerId.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setPointerCapture(pointerId: Double, shape: Stage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPointerCapture")(pointerId.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  trait KonvaPointerEvent
+    extends StObject
+       with KonvaEventObject[PointerEvent] {
     
-    var pointerId: Double = js.native
+    var pointerId: Double
   }
   object KonvaPointerEvent {
     

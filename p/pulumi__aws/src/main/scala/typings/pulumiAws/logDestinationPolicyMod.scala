@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logDestinationPolicyMod {
@@ -38,6 +37,10 @@ object logDestinationPolicyMod {
   /* static members */
   object LogDestinationPolicy {
     
+    @JSImport("@pulumi/aws/cloudwatch/logDestinationPolicy", "LogDestinationPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LogDestinationPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object logDestinationPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudwatch/logDestinationPolicy", "LogDestinationPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LogDestinationPolicy = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logDestinationPolicy", "LogDestinationPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LogDestinationPolicy = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logDestinationPolicy", "LogDestinationPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LogDestinationPolicyState): LogDestinationPolicy = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logDestinationPolicy", "LogDestinationPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LogDestinationPolicyState, opts: CustomResourceOptions): LogDestinationPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LogDestinationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogDestinationPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogDestinationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogDestinationPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LogDestinationPolicyState): LogDestinationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogDestinationPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LogDestinationPolicyState, opts: CustomResourceOptions): LogDestinationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogDestinationPolicy]
     
     /**
       * Returns true if the given object is an instance of LogDestinationPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudwatch/logDestinationPolicy", "LogDestinationPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logDestinationPolicy.LogDestinationPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logDestinationPolicy.LogDestinationPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/logDestinationPolicy.LogDestinationPolicy */ Boolean]
   }
   
-  @js.native
   trait LogDestinationPolicyArgs extends StObject {
     
     /**
       * The policy document. This is a JSON formatted string.
       */
-    val accessPolicy: Input[String] = js.native
+    val accessPolicy: Input[String]
     
     /**
       * A name for the subscription filter
       */
-    val destinationName: Input[String] = js.native
+    val destinationName: Input[String]
   }
   object LogDestinationPolicyArgs {
     
@@ -101,18 +98,17 @@ object logDestinationPolicyMod {
     }
   }
   
-  @js.native
   trait LogDestinationPolicyState extends StObject {
     
     /**
       * The policy document. This is a JSON formatted string.
       */
-    val accessPolicy: js.UndefOr[Input[String]] = js.native
+    val accessPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A name for the subscription filter
       */
-    val destinationName: js.UndefOr[Input[String]] = js.native
+    val destinationName: js.UndefOr[Input[String]] = js.undefined
   }
   object LogDestinationPolicyState {
     

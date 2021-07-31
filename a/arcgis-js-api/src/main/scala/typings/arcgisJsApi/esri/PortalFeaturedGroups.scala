@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PortalFeaturedGroups extends Object {
+trait PortalFeaturedGroups
+  extends StObject
+     with Object {
   
   /**
     * Name of the group owner.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#featuredGroups)
     */
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Group title.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#featuredGroups)
     */
-  var title: String = js.native
+  var title: String
 }
 object PortalFeaturedGroups {
   

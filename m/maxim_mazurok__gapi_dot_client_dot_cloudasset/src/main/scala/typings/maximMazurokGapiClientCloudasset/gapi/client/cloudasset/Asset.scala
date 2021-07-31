@@ -2,27 +2,25 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Asset extends StObject {
   
   /** Please also refer to the [access level user guide](https://cloud.google.com/access-context-manager/docs/overview#access-levels). */
-  var accessLevel: js.UndefOr[GoogleIdentityAccesscontextmanagerV1AccessLevel] = js.native
+  var accessLevel: js.UndefOr[GoogleIdentityAccesscontextmanagerV1AccessLevel] = js.undefined
   
   /** Please also refer to the [access policy user guide](https://cloud.google.com/access-context-manager/docs/overview#access-policies). */
-  var accessPolicy: js.UndefOr[GoogleIdentityAccesscontextmanagerV1AccessPolicy] = js.native
+  var accessPolicy: js.UndefOr[GoogleIdentityAccesscontextmanagerV1AccessPolicy] = js.undefined
   
   /**
     * The ancestry path of an asset in Google Cloud [resource hierarchy](https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy), represented as a list of
     * relative resource names. An ancestry path starts with the closest ancestor in the hierarchy and ends at root. If the asset is a project, folder, or organization, the ancestry path
     * starts from the asset itself. Example: `["projects/123456789", "folders/5432", "organizations/1234"]`
     */
-  var ancestors: js.UndefOr[js.Array[String]] = js.native
+  var ancestors: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The type of the asset. Example: `compute.googleapis.com/Disk` See [Supported asset types](https://cloud.google.com/asset-inventory/docs/supported-asset-types) for more information. */
-  var assetType: js.UndefOr[String] = js.native
+  var assetType: js.UndefOr[String] = js.undefined
   
   /**
     * A representation of the Cloud IAM policy set on a Google Cloud resource. There can be a maximum of one Cloud IAM policy set on any given resource. In addition, Cloud IAM policies
@@ -30,31 +28,31 @@ trait Asset extends StObject {
     * resource and each policy set on all of the resource's ancestry resource levels in the hierarchy. See [this topic](https://cloud.google.com/iam/docs/policies#inheritance) for more
     * information.
     */
-  var iamPolicy: js.UndefOr[Policy] = js.native
+  var iamPolicy: js.UndefOr[Policy] = js.undefined
   
   /**
     * The full name of the asset. Example: `//compute.googleapis.com/projects/my_project_123/zones/zone1/instances/instance1` See [Resource
     * names](https://cloud.google.com/apis/design/resource_names#full_resource_name) for more information.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A representation of an [organization policy](https://cloud.google.com/resource-manager/docs/organization-policy/overview#organization_policy). There can be more than one
     * organization policy with different constraints set on a given resource.
     */
-  var orgPolicy: js.UndefOr[js.Array[GoogleCloudOrgpolicyV1Policy]] = js.native
+  var orgPolicy: js.UndefOr[js.Array[GoogleCloudOrgpolicyV1Policy]] = js.undefined
   
   /** A representation of runtime OS Inventory information. See [this topic](https://cloud.google.com/compute/docs/instances/os-inventory-management) for more information. */
-  var osInventory: js.UndefOr[Inventory] = js.native
+  var osInventory: js.UndefOr[Inventory] = js.undefined
   
   /** A representation of the resource. */
-  var resource: js.UndefOr[Resource] = js.native
+  var resource: js.UndefOr[Resource] = js.undefined
   
   /** Please also refer to the [service perimeter user guide](https://cloud.google.com/vpc-service-controls/docs/overview). */
-  var servicePerimeter: js.UndefOr[GoogleIdentityAccesscontextmanagerV1ServicePerimeter] = js.native
+  var servicePerimeter: js.UndefOr[GoogleIdentityAccesscontextmanagerV1ServicePerimeter] = js.undefined
   
   /** The last update timestamp of an asset. update_time is updated when create/update/delete operation is performed. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Asset {
   

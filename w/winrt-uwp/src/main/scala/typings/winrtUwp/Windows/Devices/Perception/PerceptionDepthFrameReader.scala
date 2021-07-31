@@ -6,14 +6,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.framearrived
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reads depth frames from a depth frame source. */
 @js.native
 trait PerceptionDepthFrameReader extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_framearrived(
     `type`: framearrived,
@@ -27,12 +26,12 @@ trait PerceptionDepthFrameReader extends StObject {
   var isPaused: Boolean = js.native
   
   /** Subscribes to the FrameArrived event. This event is fired whenever a new frame arrives from the depth frame source. */
-  def onframearrived(ev: PerceptionDepthFrameArrivedEventArgs with WinRTEvent[PerceptionDepthFrameReader]): Unit = js.native
+  def onframearrived(ev: PerceptionDepthFrameArrivedEventArgs & WinRTEvent[PerceptionDepthFrameReader]): Unit = js.native
   /** Subscribes to the FrameArrived event. This event is fired whenever a new frame arrives from the depth frame source. */
   @JSName("onframearrived")
   var onframearrived_Original: TypedEventHandler[PerceptionDepthFrameReader, PerceptionDepthFrameArrivedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_framearrived(
     `type`: framearrived,

@@ -3,7 +3,6 @@ package typings.webprogbaseConsoleView
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,7 +29,7 @@ object mod {
   @js.native
   class Request protected () extends StObject {
     
-    var data: BasicObject[_] | Null = js.native
+    var data: BasicObject[js.Any] | Null = js.native
     
     var state: String = js.native
   }
@@ -40,7 +39,7 @@ object mod {
   class Response protected () extends StObject {
     
     def redirect(toState: String): Unit = js.native
-    def redirect(toState: String, data: BasicObject[_]): Unit = js.native
+    def redirect(toState: String, data: BasicObject[js.Any]): Unit = js.native
     
     def send(text: String): Unit = js.native
     def send(text: String, statesOrForm: InputForm): Unit = js.native
@@ -67,14 +66,13 @@ object mod {
   
   type BasicObject[T] = StringDictionary[T]
   
-  @js.native
   trait FormFieldDescriptor extends StObject {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
-    var auto: js.UndefOr[String] = js.native
+    var auto: js.UndefOr[String] = js.undefined
     
-    var description: String = js.native
+    var description: String
   }
   object FormFieldDescriptor {
     
@@ -108,17 +106,16 @@ object mod {
   
   type ServerAppHandler = js.Function2[/* req */ Request, /* res */ Response, Unit]
   
-  @js.native
   trait StateLinkDescriptor extends StObject {
     
-    var data: BasicObject[_] = js.native
+    var data: BasicObject[js.Any]
     
-    var description: String = js.native
+    var description: String
   }
   object StateLinkDescriptor {
     
     @scala.inline
-    def apply(data: BasicObject[_], description: String): StateLinkDescriptor = {
+    def apply(data: BasicObject[js.Any], description: String): StateLinkDescriptor = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateLinkDescriptor]
     }
@@ -127,7 +124,7 @@ object mod {
     implicit class StateLinkDescriptorMutableBuilder[Self <: StateLinkDescriptor] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: BasicObject[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: BasicObject[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])

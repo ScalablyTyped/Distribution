@@ -2,24 +2,22 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Replaces all instances of text matching a criteria with replace text.
   */
-@js.native
 trait SchemaReplaceAllTextRequest extends StObject {
   
   /**
     * Finds text in the document matching this substring.
     */
-  var containsText: js.UndefOr[SchemaSubstringMatchCriteria] = js.native
+  var containsText: js.UndefOr[SchemaSubstringMatchCriteria] = js.undefined
   
   /**
     * The text that will replace the matched text.
     */
-  var replaceText: js.UndefOr[String] = js.native
+  var replaceText: js.UndefOr[String] = js.undefined
 }
 object SchemaReplaceAllTextRequest {
   

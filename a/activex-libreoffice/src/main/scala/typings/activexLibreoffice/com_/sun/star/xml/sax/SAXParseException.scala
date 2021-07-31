@@ -3,27 +3,27 @@ package typings.activexLibreoffice.com_.sun.star.xml.sax
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * stores information for locating the error in the original XML document.
   * @see XLocator
   */
-@js.native
-trait SAXParseException extends SAXException {
+trait SAXParseException
+  extends StObject
+     with SAXException {
   
   /** contains the column number in the document. */
-  var ColumnNumber: Double = js.native
+  var ColumnNumber: Double
   
   /** contains the line number in the document. */
-  var LineNumber: Double = js.native
+  var LineNumber: Double
   
   /** contains the public identifier of the document where the exception has occurred. */
-  var PublicId: String = js.native
+  var PublicId: String
   
   /** contains the system identifier of the document. */
-  var SystemId: String = js.native
+  var SystemId: String
 }
 object SAXParseException {
   

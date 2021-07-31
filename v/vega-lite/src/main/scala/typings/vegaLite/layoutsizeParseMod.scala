@@ -5,28 +5,27 @@ import typings.vegaLite.modelMod.Model
 import typings.vegaLite.unitMod.UnitModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutsizeParseMod {
   
-  @JSImport("vega-lite/build/src/compile/layoutsize/parse", "parseChildrenLayoutSize")
+  @JSImport("vega-lite/build/src/compile/layoutsize/parse", JSImport.Namespace)
   @js.native
-  def parseChildrenLayoutSize(model: Model): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/layoutsize/parse", "parseConcatLayoutSize")
-  @js.native
-  def parseConcatLayoutSize(model: ConcatModel): Unit = js.native
+  @scala.inline
+  def parseChildrenLayoutSize(model: Model): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseChildrenLayoutSize")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("vega-lite/build/src/compile/layoutsize/parse", "parseLayerLayoutSize")
-  @js.native
-  def parseLayerLayoutSize(model: Model): Unit = js.native
+  @scala.inline
+  def parseConcatLayoutSize(model: ConcatModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseConcatLayoutSize")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def parseLayerLayoutSize(model: Model): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLayerLayoutSize")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("vega-lite/build/src/compile/layoutsize/parse", "parseRepeatLayoutSize")
   @js.native
   val parseRepeatLayoutSize: js.Function1[/* model */ ConcatModel, Unit] = js.native
   
-  @JSImport("vega-lite/build/src/compile/layoutsize/parse", "parseUnitLayoutSize")
-  @js.native
-  def parseUnitLayoutSize(model: UnitModel): Unit = js.native
+  @scala.inline
+  def parseUnitLayoutSize(model: UnitModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUnitLayoutSize")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

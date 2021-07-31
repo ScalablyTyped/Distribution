@@ -2,24 +2,22 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ali-app.my.AlertOptions> */
-@js.native
 trait PartialAlertOptions extends StObject {
   
-  var buttonText: js.UndefOr[String] = js.native
+  var buttonText: js.UndefOr[String] = js.undefined
   
-  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PartialAlertOptions {
   

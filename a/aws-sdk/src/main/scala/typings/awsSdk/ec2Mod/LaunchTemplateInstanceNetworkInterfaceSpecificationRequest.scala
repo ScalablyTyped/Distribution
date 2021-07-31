@@ -2,86 +2,84 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateInstanceNetworkInterfaceSpecificationRequest extends StObject {
   
   /**
     * Associates a Carrier IP address with eth0 for a new network interface. Use this option when you launch an instance in a Wavelength Zone and want to associate a Carrier IP address with the network interface. For more information about Carrier IP addresses, see Carrier IP addresses in the AWS Wavelength Developer Guide.
     */
-  var AssociateCarrierIpAddress: js.UndefOr[Boolean] = js.native
+  var AssociateCarrierIpAddress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Associates a public IPv4 address with eth0 for a new network interface.
     */
-  var AssociatePublicIpAddress: js.UndefOr[Boolean] = js.native
+  var AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the network interface is deleted when the instance is terminated.
     */
-  var DeleteOnTermination: js.UndefOr[Boolean] = js.native
+  var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A description for the network interface.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The device index for the network interface attachment.
     */
-  var DeviceIndex: js.UndefOr[Integer] = js.native
+  var DeviceIndex: js.UndefOr[Integer] = js.undefined
   
   /**
     * The IDs of one or more security groups.
     */
-  var Groups: js.UndefOr[SecurityGroupIdStringList] = js.native
+  var Groups: js.UndefOr[SecurityGroupIdStringList] = js.undefined
   
   /**
     * The type of network interface. To create an Elastic Fabric Adapter (EFA), specify efa. For more information, see Elastic Fabric Adapter in the Amazon Elastic Compute Cloud User Guide. If you are not creating an EFA, specify interface or omit this parameter. Valid values: interface | efa 
     */
-  var InterfaceType: js.UndefOr[String] = js.native
+  var InterfaceType: js.UndefOr[String] = js.undefined
   
   /**
     * The number of IPv6 addresses to assign to a network interface. Amazon EC2 automatically selects the IPv6 addresses from the subnet range. You can't use this option if specifying specific IPv6 addresses.
     */
-  var Ipv6AddressCount: js.UndefOr[Integer] = js.native
+  var Ipv6AddressCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet. You can't use this option if you're specifying a number of IPv6 addresses.
     */
-  var Ipv6Addresses: js.UndefOr[InstanceIpv6AddressListRequest] = js.native
+  var Ipv6Addresses: js.UndefOr[InstanceIpv6AddressListRequest] = js.undefined
   
   /**
     * The index of the network card. Some instance types support multiple network cards. The primary network interface must be assigned to network card index 0. The default is network card index 0.
     */
-  var NetworkCardIndex: js.UndefOr[Integer] = js.native
+  var NetworkCardIndex: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: js.UndefOr[typings.awsSdk.ec2Mod.NetworkInterfaceId] = js.native
+  var NetworkInterfaceId: js.UndefOr[typings.awsSdk.ec2Mod.NetworkInterfaceId] = js.undefined
   
   /**
     * The primary private IPv4 address of the network interface.
     */
-  var PrivateIpAddress: js.UndefOr[String] = js.native
+  var PrivateIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * One or more private IPv4 addresses.
     */
-  var PrivateIpAddresses: js.UndefOr[PrivateIpAddressSpecificationList] = js.native
+  var PrivateIpAddresses: js.UndefOr[PrivateIpAddressSpecificationList] = js.undefined
   
   /**
     * The number of secondary private IPv4 addresses to assign to a network interface.
     */
-  var SecondaryPrivateIpAddressCount: js.UndefOr[Integer] = js.native
+  var SecondaryPrivateIpAddressCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the subnet for the network interface.
     */
-  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.undefined
 }
 object LaunchTemplateInstanceNetworkInterfaceSpecificationRequest {
   

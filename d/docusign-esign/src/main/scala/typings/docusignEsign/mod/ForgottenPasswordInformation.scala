@@ -2,51 +2,49 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForgottenPasswordInformation extends StObject {
   
   /**
     * The answer to the first forgotten password challenge question.
     */
-  var forgottenPasswordAnswer1: js.UndefOr[String] = js.native
+  var forgottenPasswordAnswer1: js.UndefOr[String] = js.undefined
   
   /**
     * The answer to the second forgotten password challenge question.
     */
-  var forgottenPasswordAnswer2: js.UndefOr[String] = js.native
+  var forgottenPasswordAnswer2: js.UndefOr[String] = js.undefined
   
   /**
     * The answer to the third forgotten password challenge question.
     */
-  var forgottenPasswordAnswer3: js.UndefOr[String] = js.native
+  var forgottenPasswordAnswer3: js.UndefOr[String] = js.undefined
   
   /**
     * The answer to the fourth forgotten password challenge question.
     */
-  var forgottenPasswordAnswer4: js.UndefOr[String] = js.native
+  var forgottenPasswordAnswer4: js.UndefOr[String] = js.undefined
   
   /**
     * The first challenge question presented to a user who has forgotten their password.
     */
-  var forgottenPasswordQuestion1: js.UndefOr[String] = js.native
+  var forgottenPasswordQuestion1: js.UndefOr[String] = js.undefined
   
   /**
     * The second challenge question presented to a user who has forgotten their password.
     */
-  var forgottenPasswordQuestion2: js.UndefOr[String] = js.native
+  var forgottenPasswordQuestion2: js.UndefOr[String] = js.undefined
   
   /**
     * The third challenge question presented to a user who has forgotten their password.
     */
-  var forgottenPasswordQuestion3: js.UndefOr[String] = js.native
+  var forgottenPasswordQuestion3: js.UndefOr[String] = js.undefined
   
   /**
     * The fourth challenge question presented to a user who has forgotten their password.
     */
-  var forgottenPasswordQuestion4: js.UndefOr[String] = js.native
+  var forgottenPasswordQuestion4: js.UndefOr[String] = js.undefined
 }
 object ForgottenPasswordInformation {
   

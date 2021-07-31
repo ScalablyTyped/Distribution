@@ -2,7 +2,6 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Server XML HTTP Request 6.0  */
@@ -29,31 +28,13 @@ trait ServerXMLHTTP60 extends StObject {
   
   /** Open HTTP connection */
   def open(bstrMethod: String, bstrUrl: String): Unit = js.native
-  def open(
-    bstrMethod: String,
-    bstrUrl: String,
-    varAsync: js.UndefOr[scala.Nothing],
-    bstrUser: js.UndefOr[scala.Nothing],
-    bstrPassword: js.Any
-  ): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: js.UndefOr[scala.Nothing], bstrUser: js.Any): Unit = js.native
-  def open(
-    bstrMethod: String,
-    bstrUrl: String,
-    varAsync: js.UndefOr[scala.Nothing],
-    bstrUser: js.Any,
-    bstrPassword: js.Any
-  ): Unit = js.native
   def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any): Unit = js.native
-  def open(
-    bstrMethod: String,
-    bstrUrl: String,
-    varAsync: js.Any,
-    bstrUser: js.UndefOr[scala.Nothing],
-    bstrPassword: js.Any
-  ): Unit = js.native
   def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: js.Any): Unit = js.native
   def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: js.Any, bstrPassword: js.Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: Unit, bstrPassword: js.Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: js.Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: js.Any, bstrPassword: js.Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: Unit, bstrPassword: js.Any): Unit = js.native
   
   /** Get ready state */
   val readyState: Double = js.native
@@ -79,9 +60,9 @@ trait ServerXMLHTTP60 extends StObject {
   
   /** Specify proxy configuration */
   def setProxy(proxySetting: SXH_PROXY_SETTING): Unit = js.native
-  def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: js.UndefOr[scala.Nothing], varBypassList: js.Any): Unit = js.native
   def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: js.Any): Unit = js.native
   def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: js.Any, varBypassList: js.Any): Unit = js.native
+  def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: Unit, varBypassList: js.Any): Unit = js.native
   
   /** Specify proxy authentication credentials */
   def setProxyCredentials(bstrUserName: String, bstrPassword: String): Unit = js.native

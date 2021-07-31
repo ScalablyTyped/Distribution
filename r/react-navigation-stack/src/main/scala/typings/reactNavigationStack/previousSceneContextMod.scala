@@ -7,7 +7,6 @@ import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigationStack.vendorTypesMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previousSceneContextMod extends Shortcut {

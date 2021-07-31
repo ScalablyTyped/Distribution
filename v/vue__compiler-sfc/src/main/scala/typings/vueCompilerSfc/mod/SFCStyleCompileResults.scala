@@ -8,23 +8,21 @@ import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SFCStyleCompileResults extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var dependencies: Set[String] = js.native
+  var dependencies: Set[String]
   
-  var errors: js.Array[Error] = js.native
+  var errors: js.Array[Error]
   
-  var map: js.UndefOr[RawSourceMap] = js.native
+  var map: js.UndefOr[RawSourceMap] = js.undefined
   
-  var modules: js.UndefOr[Record[String, String]] = js.native
+  var modules: js.UndefOr[Record[String, String]] = js.undefined
   
-  var rawResult: js.UndefOr[LazyResult | Result] = js.native
+  var rawResult: js.UndefOr[LazyResult | Result] = js.undefined
 }
 object SFCStyleCompileResults {
   

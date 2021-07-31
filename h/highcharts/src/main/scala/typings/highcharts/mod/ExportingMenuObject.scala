@@ -2,31 +2,29 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportingMenuObject extends StObject {
   
   /**
     * The click handler for the menu item.
     */
-  var onclick: js.UndefOr[EventCallbackFunction[Chart_]] = js.native
+  var onclick: js.UndefOr[EventCallbackFunction[Chart_]] = js.undefined
   
   /**
     * Indicates a separator line instead of an item.
     */
-  var separator: js.UndefOr[Boolean] = js.native
+  var separator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The text for the menu item.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * If internationalization is required, the key to a language string.
     */
-  var textKey: js.UndefOr[String] = js.native
+  var textKey: js.UndefOr[String] = js.undefined
 }
 object ExportingMenuObject {
   

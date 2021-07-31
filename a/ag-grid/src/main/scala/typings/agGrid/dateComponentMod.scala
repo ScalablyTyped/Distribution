@@ -6,19 +6,17 @@ import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateComponentMod {
   
-  @js.native
   trait IDate extends StObject {
     
     /** Returns the current date represented by this editor */
-    def getDate(): Date = js.native
+    def getDate(): Date
     
     /** Sets the date represented by this component */
-    def setDate(date: Date): Unit = js.native
+    def setDate(date: Date): Unit
   }
   object IDate {
     
@@ -39,9 +37,9 @@ object dateComponentMod {
     }
   }
   
-  @js.native
   trait IDateComp
-    extends IComponent[IDateParams]
+    extends StObject
+       with IComponent[IDateParams]
        with IDate
   object IDateComp {
     
@@ -52,13 +50,12 @@ object dateComponentMod {
     }
   }
   
-  @js.native
   trait IDateParams extends StObject {
     
-    var filterParams: IDateFilterParams = js.native
+    var filterParams: IDateFilterParams
     
     /** Method for component to tell ag-Grid that the date has changed. */
-    def onDateChanged(): Unit = js.native
+    def onDateChanged(): Unit
   }
   object IDateParams {
     

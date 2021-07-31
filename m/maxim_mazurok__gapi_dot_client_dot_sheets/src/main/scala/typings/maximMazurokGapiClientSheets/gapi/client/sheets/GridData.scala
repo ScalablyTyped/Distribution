@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridData extends StObject {
   
   /** Metadata about the requested columns in the grid, starting with the column in start_column. */
-  var columnMetadata: js.UndefOr[js.Array[DimensionProperties]] = js.native
+  var columnMetadata: js.UndefOr[js.Array[DimensionProperties]] = js.undefined
   
   /** The data in the grid, one entry per row, starting with the row in startRow. The values in RowData will correspond to columns starting at start_column. */
-  var rowData: js.UndefOr[js.Array[RowData]] = js.native
+  var rowData: js.UndefOr[js.Array[RowData]] = js.undefined
   
   /** Metadata about the requested rows in the grid, starting with the row in start_row. */
-  var rowMetadata: js.UndefOr[js.Array[DimensionProperties]] = js.native
+  var rowMetadata: js.UndefOr[js.Array[DimensionProperties]] = js.undefined
   
   /** The first column this GridData refers to, zero-based. */
-  var startColumn: js.UndefOr[Double] = js.native
+  var startColumn: js.UndefOr[Double] = js.undefined
   
   /** The first row this GridData refers to, zero-based. */
-  var startRow: js.UndefOr[Double] = js.native
+  var startRow: js.UndefOr[Double] = js.undefined
 }
 object GridData {
   

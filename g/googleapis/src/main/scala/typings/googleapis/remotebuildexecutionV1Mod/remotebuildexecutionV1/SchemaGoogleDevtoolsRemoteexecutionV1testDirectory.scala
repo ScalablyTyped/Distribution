@@ -2,7 +2,6 @@ package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,18 +29,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * &quot;baz&quot;,       digest: {         hash: &quot;b2c941073e...&quot;,
   * size: 1294,       },       is_executable: true     }   ] } ```
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteexecutionV1testDirectory extends StObject {
   
   /**
     * The subdirectories in the directory.
     */
-  var directories: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testDirectoryNode]] = js.native
+  var directories: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testDirectoryNode]] = js.undefined
   
   /**
     * The files in the directory.
     */
-  var files: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testFileNode]] = js.native
+  var files: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testFileNode]] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testDirectory {
   

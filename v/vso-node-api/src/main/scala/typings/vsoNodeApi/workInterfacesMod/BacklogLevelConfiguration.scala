@@ -4,56 +4,54 @@ import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemFieldReference
 import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemTypeReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BacklogLevelConfiguration extends StObject {
   
   /**
     * List of fields to include in Add Panel
     */
-  var addPanelFields: js.Array[WorkItemFieldReference] = js.native
+  var addPanelFields: js.Array[WorkItemFieldReference]
   
   /**
     * Color for the backlog level
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * Default list of columns for the backlog
     */
-  var columnFields: js.Array[BacklogColumn] = js.native
+  var columnFields: js.Array[BacklogColumn]
   
   /**
     * Defaulst Work Item Type for the backlog
     */
-  var defaultWorkItemType: WorkItemTypeReference = js.native
+  var defaultWorkItemType: WorkItemTypeReference
   
   /**
     * Backlog Id (for Legacy Backlog Level from process config it can be categoryref name)
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Backlog Name
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Backlog Rank (Taskbacklog is 0)
     */
-  var rank: Double = js.native
+  var rank: Double
   
   /**
     * Max number of work items to show in the given backlog
     */
-  var workItemCountLimit: Double = js.native
+  var workItemCountLimit: Double
   
   /**
     * Work Item types participating in this backlog as known by the project/Process, can be overridden by team settings for bugs
     */
-  var workItemTypes: js.Array[WorkItemTypeReference] = js.native
+  var workItemTypes: js.Array[WorkItemTypeReference]
 }
 object BacklogLevelConfiguration {
   

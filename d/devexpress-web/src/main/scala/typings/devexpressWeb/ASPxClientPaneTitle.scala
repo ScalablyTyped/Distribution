@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The pane title.
   */
-@js.native
-trait ASPxClientPaneTitle extends ASPxClientWebChartElement {
+trait ASPxClientPaneTitle
+  extends StObject
+     with ASPxClientWebChartElement {
   
   /**
     * Returns the value that defines how to align the pane title.
     */
-  var alignment: String = js.native
+  var alignment: String
   
   /**
     * Returns the pane title's text.
     */
-  var text: String = js.native
+  var text: String
 }
 object ASPxClientPaneTitle {
   

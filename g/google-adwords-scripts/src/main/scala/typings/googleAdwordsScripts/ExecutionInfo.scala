@@ -2,19 +2,17 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionInfo extends StObject {
   
-  def getRemainingCreateQuota(): Double = js.native
+  def getRemainingCreateQuota(): Double
   
-  def getRemainingGetQuota(): Double = js.native
+  def getRemainingGetQuota(): Double
   
-  def getRemainingTime(): Double = js.native
+  def getRemainingTime(): Double
   
-  def isPreview(): Boolean = js.native
+  def isPreview(): Boolean
 }
 object ExecutionInfo {
   

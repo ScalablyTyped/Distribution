@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Data.Xml.Dom.IXmlNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsIXmlNode extends StObject {
   
-  /** The items in the vector view that start at startIndex. */ var items: IXmlNode = js.native
+  /** The items in the vector view that start at startIndex. */ var items: IXmlNode
   
-  /** The number of items returned. */ var returnValue: Double = js.native
+  /** The number of items returned. */ var returnValue: Double
 }
 object ItemsIXmlNode {
   

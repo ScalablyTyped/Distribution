@@ -2,16 +2,14 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceUtilization extends StObject {
   
   /**
     * Utilization of current Amazon EC2 instance. 
     */
-  var EC2ResourceUtilization: js.UndefOr[typings.awsSdk.costexplorerMod.EC2ResourceUtilization] = js.native
+  var EC2ResourceUtilization: js.UndefOr[typings.awsSdk.costexplorerMod.EC2ResourceUtilization] = js.undefined
 }
 object ResourceUtilization {
   

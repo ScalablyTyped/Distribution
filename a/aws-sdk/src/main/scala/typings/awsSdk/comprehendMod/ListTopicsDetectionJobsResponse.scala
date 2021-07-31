@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTopicsDetectionJobsResponse extends StObject {
   
   /**
     * Identifies the next page of results to return.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * A list containing the properties of each job that is returned.
     */
-  var TopicsDetectionJobPropertiesList: js.UndefOr[typings.awsSdk.comprehendMod.TopicsDetectionJobPropertiesList] = js.native
+  var TopicsDetectionJobPropertiesList: js.UndefOr[typings.awsSdk.comprehendMod.TopicsDetectionJobPropertiesList] = js.undefined
 }
 object ListTopicsDetectionJobsResponse {
   

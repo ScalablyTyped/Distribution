@@ -2,17 +2,16 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyFileOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   // 源文件路径，只可以是普通文件
-  var destPath: String = js.native
+  var destPath: String
   
-  var srcPath: String = js.native
+  var srcPath: String
 }
 object CopyFileOptions {
   

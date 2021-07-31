@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbcx.PrivilegeObject
   * @see com.sun.star.sdbcx.Privilege
   */
-@js.native
-trait XAuthorizable extends XInterface {
+trait XAuthorizable
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves the permissions for a specific object, which could be granted to other users and groups.
@@ -22,7 +22,7 @@ trait XAuthorizable extends XInterface {
     * @returns the grant privileges
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getGrantablePrivileges(objName: String, objType: Double): Double = js.native
+  def getGrantablePrivileges(objName: String, objType: Double): Double
   
   /**
     * retrieves the permissions for a specific object.
@@ -31,7 +31,7 @@ trait XAuthorizable extends XInterface {
     * @returns the privileges
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getPrivileges(objName: String, objType: Double): Double = js.native
+  def getPrivileges(objName: String, objType: Double): Double
   
   /**
     * adds additional permissions for a specific object.
@@ -40,7 +40,7 @@ trait XAuthorizable extends XInterface {
     * @param objPrivileges a value from the {@link com.sun.star.sdbcx.Privilege} constants group
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def grantPrivileges(objName: String, objType: Double, objPrivileges: Double): Unit = js.native
+  def grantPrivileges(objName: String, objType: Double, objPrivileges: Double): Unit
   
   /**
     * removes permissions for a specific object from a group or user.
@@ -49,7 +49,7 @@ trait XAuthorizable extends XInterface {
     * @param objPrivileges a value from the {@link com.sun.star.sdbcx.Privilege} constants group
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def revokePrivileges(objName: String, objType: Double, objPrivileges: Double): Unit = js.native
+  def revokePrivileges(objName: String, objType: Double, objPrivileges: Double): Unit
 }
 object XAuthorizable {
   

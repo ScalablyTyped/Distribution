@@ -2,36 +2,34 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Favorites extends StObject {
   
   /**
     * The ID of the playlist that contains the channels favorite videos.
     */
-  var favorites: String = js.native
+  var favorites: String
   
   /**
     * The ID of the playlist that contains the channels liked videos.
     */
-  var likes: String = js.native
+  var likes: String
   
   /**
     * The ID of the playlist that contains the channels uploaded videos.
     */
-  var uploads: String = js.native
+  var uploads: String
   
   /**
     * The ID of the playlist that contains the channels watch history.
     */
-  var watchHistory: String = js.native
+  var watchHistory: String
   
   /**
     * The ID of the channels watch later playlist.
     */
-  var watchLater: String = js.native
+  var watchLater: String
 }
 object Favorites {
   

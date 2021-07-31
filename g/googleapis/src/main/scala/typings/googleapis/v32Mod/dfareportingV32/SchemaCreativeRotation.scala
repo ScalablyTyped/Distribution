@@ -2,19 +2,17 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creative Rotation.
   */
-@js.native
 trait SchemaCreativeRotation extends StObject {
   
   /**
     * Creative assignments in this creative rotation.
     */
-  var creativeAssignments: js.UndefOr[js.Array[SchemaCreativeAssignment]] = js.native
+  var creativeAssignments: js.UndefOr[js.Array[SchemaCreativeAssignment]] = js.undefined
   
   /**
     * Creative optimization configuration that is used by this ad. It should
@@ -22,19 +20,19 @@ trait SchemaCreativeRotation extends StObject {
     * campaign. If it is unset or set to 0, then the campaign&#39;s default
     * optimization configuration will be used for this ad.
     */
-  var creativeOptimizationConfigurationId: js.UndefOr[String] = js.native
+  var creativeOptimizationConfigurationId: js.UndefOr[String] = js.undefined
   
   /**
     * Type of creative rotation. Can be used to specify whether to use
     * sequential or random rotation.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Strategy for calculating weights. Used with
     * CREATIVE_ROTATION_TYPE_RANDOM.
     */
-  var weightCalculationStrategy: js.UndefOr[String] = js.native
+  var weightCalculationStrategy: js.UndefOr[String] = js.undefined
 }
 object SchemaCreativeRotation {
   

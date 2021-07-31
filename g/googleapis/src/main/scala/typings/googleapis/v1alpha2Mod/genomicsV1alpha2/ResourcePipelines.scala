@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/genomics/v1alpha2", "genomics_v1alpha2.Resource$Pipelines")
@@ -87,7 +86,7 @@ class ResourcePipelines protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaPipeline] = js.native
   def create(callback: BodyResponseCallback[SchemaPipeline]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPipeline] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPipeline] = js.native
   def create(params: ParamsResourcePipelinesCreate): GaxiosPromise[SchemaPipeline] = js.native
   def create(params: ParamsResourcePipelinesCreate, callback: BodyResponseCallback[SchemaPipeline]): Unit = js.native
   def create(
@@ -169,7 +168,7 @@ class ResourcePipelines protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourcePipelinesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourcePipelinesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -253,7 +252,7 @@ class ResourcePipelines protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaPipeline] = js.native
   def get(callback: BodyResponseCallback[SchemaPipeline]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPipeline] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPipeline] = js.native
   def get(params: ParamsResourcePipelinesGet): GaxiosPromise[SchemaPipeline] = js.native
   def get(params: ParamsResourcePipelinesGet, callback: BodyResponseCallback[SchemaPipeline]): Unit = js.native
   def get(
@@ -332,7 +331,7 @@ class ResourcePipelines protected () extends StObject {
     */
   def getControllerConfig(): GaxiosPromise[SchemaControllerConfig] = js.native
   def getControllerConfig(callback: BodyResponseCallback[SchemaControllerConfig]): Unit = js.native
-  def getControllerConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaControllerConfig] = js.native
+  def getControllerConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaControllerConfig] = js.native
   def getControllerConfig(params: ParamsResourcePipelinesGetcontrollerconfig): GaxiosPromise[SchemaControllerConfig] = js.native
   def getControllerConfig(
     params: ParamsResourcePipelinesGetcontrollerconfig,
@@ -430,7 +429,7 @@ class ResourcePipelines protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListPipelinesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListPipelinesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListPipelinesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListPipelinesResponse] = js.native
   def list(params: ParamsResourcePipelinesList): GaxiosPromise[SchemaListPipelinesResponse] = js.native
   def list(params: ParamsResourcePipelinesList, callback: BodyResponseCallback[SchemaListPipelinesResponse]): Unit = js.native
   def list(
@@ -519,7 +518,7 @@ class ResourcePipelines protected () extends StObject {
     */
   def run(): GaxiosPromise[SchemaOperation] = js.native
   def run(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def run(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def run(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def run(params: ParamsResourcePipelinesRun): GaxiosPromise[SchemaOperation] = js.native
   def run(params: ParamsResourcePipelinesRun, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def run(
@@ -603,7 +602,7 @@ class ResourcePipelines protected () extends StObject {
     */
   def setOperationStatus(): GaxiosPromise[SchemaEmpty] = js.native
   def setOperationStatus(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def setOperationStatus(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def setOperationStatus(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def setOperationStatus(params: ParamsResourcePipelinesSetoperationstatus): GaxiosPromise[SchemaEmpty] = js.native
   def setOperationStatus(params: ParamsResourcePipelinesSetoperationstatus, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def setOperationStatus(

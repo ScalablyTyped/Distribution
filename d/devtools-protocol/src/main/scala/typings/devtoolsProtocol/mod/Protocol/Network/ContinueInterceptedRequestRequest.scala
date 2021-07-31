@@ -2,54 +2,52 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinueInterceptedRequestRequest extends StObject {
   
   /**
     * Response to a requestIntercepted with an authChallenge. Must not be set otherwise.
     */
-  var authChallengeResponse: js.UndefOr[AuthChallengeResponse] = js.native
+  var authChallengeResponse: js.UndefOr[AuthChallengeResponse] = js.undefined
   
   /**
     * If set this causes the request to fail with the given reason. Passing `Aborted` for requests
     * marked with `isNavigationRequest` also cancels the navigation. Must not be set in response
     * to an authChallenge.
     */
-  var errorReason: js.UndefOr[ErrorReason] = js.native
+  var errorReason: js.UndefOr[ErrorReason] = js.undefined
   
   /**
     * If set this allows the request headers to be changed. Must not be set in response to an
     * authChallenge.
     */
-  var headers: js.UndefOr[Headers] = js.native
+  var headers: js.UndefOr[Headers] = js.undefined
   
-  var interceptionId: InterceptionId = js.native
+  var interceptionId: InterceptionId
   
   /**
     * If set this allows the request method to be overridden. Must not be set in response to an
     * authChallenge.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * If set this allows postData to be set. Must not be set in response to an authChallenge.
     */
-  var postData: js.UndefOr[String] = js.native
+  var postData: js.UndefOr[String] = js.undefined
   
   /**
     * If set the requests completes using with the provided base64 encoded raw response, including
     * HTTP status line and headers etc... Must not be set in response to an authChallenge.
     */
-  var rawResponse: js.UndefOr[String] = js.native
+  var rawResponse: js.UndefOr[String] = js.undefined
   
   /**
     * If set the request url will be modified in a way that's not observable by page. Must not be
     * set in response to an authChallenge.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ContinueInterceptedRequestRequest {
   

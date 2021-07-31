@@ -2,10 +2,8 @@ package typings.fridaGum.ObjC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProxyEventCallbacks[D, T, S] extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ProxyEventCallbacks[D, T, S] extends StObject {
     *
     * This is where you might clean up any associated state.
     */
-  var dealloc: js.UndefOr[js.ThisFunction0[/* this */ UserMethodInvocation[D, T, S], Unit]] = js.native
+  var dealloc: js.UndefOr[js.ThisFunction0[/* this */ UserMethodInvocation[D, T, S], Unit]] = js.undefined
   
   /**
     * Gets notified about the method name that we’re about to forward
@@ -27,7 +25,7 @@ trait ProxyEventCallbacks[D, T, S] extends StObject {
     */
   var forward: js.UndefOr[
     js.ThisFunction1[/* this */ UserMethodInvocation[D, T, S], /* name */ String, Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object ProxyEventCallbacks {
   
@@ -38,7 +36,7 @@ object ProxyEventCallbacks {
   }
   
   @scala.inline
-  implicit class ProxyEventCallbacksMutableBuilder[Self <: ProxyEventCallbacks[_, _, _], D, T, S] (val x: Self with (ProxyEventCallbacks[D, T, S])) extends AnyVal {
+  implicit class ProxyEventCallbacksMutableBuilder[Self <: ProxyEventCallbacks[?, ?, ?], D, T, S] (val x: Self & (ProxyEventCallbacks[D, T, S])) extends AnyVal {
     
     @scala.inline
     def setDealloc(value: js.ThisFunction0[/* this */ UserMethodInvocation[D, T, S], Unit]): Self = StObject.set(x, "dealloc", value.asInstanceOf[js.Any])

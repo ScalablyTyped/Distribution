@@ -2,38 +2,36 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindInPageOptions extends StObject {
   
   /**
     * Whether the operation is first request or a follow up, defaults to `false`.
     */
-  var findNext: js.UndefOr[Boolean] = js.native
+  var findNext: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to search forward or backward, defaults to `true`.
     */
-  var forward: js.UndefOr[Boolean] = js.native
+  var forward: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether search should be case-sensitive, defaults to `false`.
     */
-  var matchCase: js.UndefOr[Boolean] = js.native
+  var matchCase: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When combined with `wordStart`, accepts a match in the middle of a word if the
     * match begins with an uppercase letter followed by a lowercase or non-letter.
     * Accepts several other intra-word matches, defaults to `false`.
     */
-  var medialCapitalAsWordStart: js.UndefOr[Boolean] = js.native
+  var medialCapitalAsWordStart: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to look only at the start of words. defaults to `false`.
     */
-  var wordStart: js.UndefOr[Boolean] = js.native
+  var wordStart: js.UndefOr[Boolean] = js.undefined
 }
 object FindInPageOptions {
   

@@ -6,7 +6,6 @@ import typings.chrome.chrome.sessions.Session
 import typings.chrome.chrome.sessions.SessionChangedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,7 +22,7 @@ trait Typeofsessions extends StObject {
   var onChanged: SessionChangedEvent = js.native
   
   def restore(): Unit = js.native
-  def restore(sessionId: js.UndefOr[scala.Nothing], callback: js.Function1[/* restoredSession */ Session, Unit]): Unit = js.native
   def restore(sessionId: String): Unit = js.native
   def restore(sessionId: String, callback: js.Function1[/* restoredSession */ Session, Unit]): Unit = js.native
+  def restore(sessionId: Unit, callback: js.Function1[/* restoredSession */ Session, Unit]): Unit = js.native
 }

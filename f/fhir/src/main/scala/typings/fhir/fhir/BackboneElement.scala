@@ -2,19 +2,19 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base for elements defined inside a resource
   */
-@js.native
-trait BackboneElement extends Element {
+trait BackboneElement
+  extends StObject
+     with Element {
   
   /**
     * Extensions that cannot be ignored
     */
-  var modifierExtension: js.UndefOr[js.Array[Extension]] = js.native
+  var modifierExtension: js.UndefOr[js.Array[Extension]] = js.undefined
 }
 object BackboneElement {
   

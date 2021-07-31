@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Endpoint extends StObject {
   
   /**
     * URL of endpoint
     */
-  var Url: js.UndefOr[string] = js.native
+  var Url: js.UndefOr[string] = js.undefined
 }
 object Endpoint {
   

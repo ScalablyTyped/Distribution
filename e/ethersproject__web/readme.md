@@ -10,9 +10,9 @@ Utility fucntions for managing web requests for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/web |
 | Keywords           | Ethereum, ethers |
-| # releases         | 37 |
-| # dependents       | 14 |
-| # downloads        | 684063 |
+| # releases         | 40 |
+| # dependents       | 17 |
+| # downloads        | 1622968 |
 | # stars            | 0 |
 
 ## Links

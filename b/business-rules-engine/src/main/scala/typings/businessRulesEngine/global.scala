@@ -2,7 +2,6 @@ package typings.businessRulesEngine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -12,25 +11,33 @@ object global {
     @JSGlobal("Utils.NumberFce")
     @js.native
     class NumberFce ()
-      extends typings.businessRulesEngine.Utils.NumberFce
+      extends StObject
+         with typings.businessRulesEngine.Utils.NumberFce
     object NumberFce {
       
-      /* static member */
-      @JSGlobal("Utils.NumberFce.GetNegDigits")
+      @JSGlobal("Utils.NumberFce")
       @js.native
-      def GetNegDigits(value: String): Double = js.native
+      val ^ : js.Any = js.native
+      
+      /* static member */
+      @scala.inline
+      def GetNegDigits(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetNegDigits")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
     
     @JSGlobal("Utils.StringFce")
     @js.native
     class StringFce ()
-      extends typings.businessRulesEngine.Utils.StringFce
+      extends StObject
+         with typings.businessRulesEngine.Utils.StringFce
     object StringFce {
       
-      /* static member */
-      @JSGlobal("Utils.StringFce.format")
+      @JSGlobal("Utils.StringFce")
       @js.native
-      def format(s: String, args: js.Any): String = js.native
+      val ^ : js.Any = js.native
+      
+      /* static member */
+      @scala.inline
+      def format(s: String, args: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(s.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
     }
   }
 }

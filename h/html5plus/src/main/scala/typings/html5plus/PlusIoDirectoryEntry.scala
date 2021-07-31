@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,75 +24,53 @@ trait PlusIoDirectoryEntry extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def copyTo(): Unit = js.native
+  def copyTo(parent: Unit, newName: String): Unit = js.native
+  def copyTo(parent: Unit, newName: String, succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
   def copyTo(
-    parent: js.UndefOr[scala.Nothing],
-    newName: js.UndefOr[scala.Nothing],
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def copyTo(
-    parent: js.UndefOr[scala.Nothing],
-    newName: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ this.type, Unit]
-  ): Unit = js.native
-  def copyTo(
-    parent: js.UndefOr[scala.Nothing],
-    newName: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ this.type, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def copyTo(parent: js.UndefOr[scala.Nothing], newName: String): Unit = js.native
-  def copyTo(
-    parent: js.UndefOr[scala.Nothing],
-    newName: String,
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def copyTo(
-    parent: js.UndefOr[scala.Nothing],
-    newName: String,
-    succesCB: js.Function1[/* result */ this.type, Unit]
-  ): Unit = js.native
-  def copyTo(
-    parent: js.UndefOr[scala.Nothing],
+    parent: Unit,
     newName: String,
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def copyTo(parent: Unit, newName: String, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def copyTo(parent: Unit, newName: Unit, succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
+  def copyTo(
+    parent: Unit,
+    newName: Unit,
+    succesCB: js.Function1[/* result */ this.type, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def copyTo(parent: Unit, newName: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def copyTo(parent: PlusIoDirectoryEntry): Unit = js.native
-  def copyTo(
-    parent: PlusIoDirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def copyTo(
-    parent: PlusIoDirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ this.type, Unit]
-  ): Unit = js.native
-  def copyTo(
-    parent: PlusIoDirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ this.type, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def copyTo(parent: PlusIoDirectoryEntry, newName: String): Unit = js.native
   def copyTo(
     parent: PlusIoDirectoryEntry,
     newName: String,
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def copyTo(
-    parent: PlusIoDirectoryEntry,
-    newName: String,
     succesCB: js.Function1[/* result */ this.type, Unit]
   ): Unit = js.native
   def copyTo(
     parent: PlusIoDirectoryEntry,
     newName: String,
     succesCB: js.Function1[/* result */ this.type, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def copyTo(
+    parent: PlusIoDirectoryEntry,
+    newName: String,
+    succesCB: Unit,
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def copyTo(parent: PlusIoDirectoryEntry, newName: Unit, succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
+  def copyTo(
+    parent: PlusIoDirectoryEntry,
+    newName: Unit,
+    succesCB: js.Function1[/* result */ this.type, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def copyTo(
+    parent: PlusIoDirectoryEntry,
+    newName: Unit,
+    succesCB: Unit,
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   
@@ -127,66 +104,16 @@ trait PlusIoDirectoryEntry extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def getDirectory(): Unit = js.native
-  def getDirectory(
-    path: js.UndefOr[scala.Nothing],
-    flag: js.UndefOr[scala.Nothing],
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getDirectory(
-    path: js.UndefOr[scala.Nothing],
-    flag: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ this.type, Unit]
-  ): Unit = js.native
-  def getDirectory(
-    path: js.UndefOr[scala.Nothing],
-    flag: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ this.type, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getDirectory(path: js.UndefOr[scala.Nothing], flag: PlusIoFlags): Unit = js.native
-  def getDirectory(
-    path: js.UndefOr[scala.Nothing],
-    flag: PlusIoFlags,
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getDirectory(
-    path: js.UndefOr[scala.Nothing],
-    flag: PlusIoFlags,
-    succesCB: js.Function1[/* result */ this.type, Unit]
-  ): Unit = js.native
-  def getDirectory(
-    path: js.UndefOr[scala.Nothing],
-    flag: PlusIoFlags,
-    succesCB: js.Function1[/* result */ this.type, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getDirectory(path: String): Unit = js.native
+  def getDirectory(path: String, flag: Unit, succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
   def getDirectory(
     path: String,
-    flag: js.UndefOr[scala.Nothing],
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getDirectory(
-    path: String,
-    flag: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ this.type, Unit]
-  ): Unit = js.native
-  def getDirectory(
-    path: String,
-    flag: js.UndefOr[scala.Nothing],
+    flag: Unit,
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getDirectory(path: String, flag: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getDirectory(path: String, flag: PlusIoFlags): Unit = js.native
-  def getDirectory(
-    path: String,
-    flag: PlusIoFlags,
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getDirectory(path: String, flag: PlusIoFlags, succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
   def getDirectory(
     path: String,
@@ -194,6 +121,24 @@ trait PlusIoDirectoryEntry extends StObject {
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getDirectory(path: String, flag: PlusIoFlags, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getDirectory(path: Unit, flag: Unit, succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
+  def getDirectory(
+    path: Unit,
+    flag: Unit,
+    succesCB: js.Function1[/* result */ this.type, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getDirectory(path: Unit, flag: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getDirectory(path: Unit, flag: PlusIoFlags): Unit = js.native
+  def getDirectory(path: Unit, flag: PlusIoFlags, succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
+  def getDirectory(
+    path: Unit,
+    flag: PlusIoFlags,
+    succesCB: js.Function1[/* result */ this.type, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getDirectory(path: Unit, flag: PlusIoFlags, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 创建或打开文件
@@ -203,66 +148,16 @@ trait PlusIoDirectoryEntry extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def getFile(): Unit = js.native
-  def getFile(
-    path: js.UndefOr[scala.Nothing],
-    flag: js.UndefOr[scala.Nothing],
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getFile(
-    path: js.UndefOr[scala.Nothing],
-    flag: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ this.type, Unit]
-  ): Unit = js.native
-  def getFile(
-    path: js.UndefOr[scala.Nothing],
-    flag: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ this.type, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getFile(path: js.UndefOr[scala.Nothing], flag: PlusIoFlags): Unit = js.native
-  def getFile(
-    path: js.UndefOr[scala.Nothing],
-    flag: PlusIoFlags,
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getFile(
-    path: js.UndefOr[scala.Nothing],
-    flag: PlusIoFlags,
-    succesCB: js.Function1[/* result */ this.type, Unit]
-  ): Unit = js.native
-  def getFile(
-    path: js.UndefOr[scala.Nothing],
-    flag: PlusIoFlags,
-    succesCB: js.Function1[/* result */ this.type, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getFile(path: String): Unit = js.native
+  def getFile(path: String, flag: Unit, succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
   def getFile(
     path: String,
-    flag: js.UndefOr[scala.Nothing],
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getFile(
-    path: String,
-    flag: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ this.type, Unit]
-  ): Unit = js.native
-  def getFile(
-    path: String,
-    flag: js.UndefOr[scala.Nothing],
+    flag: Unit,
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getFile(path: String, flag: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getFile(path: String, flag: PlusIoFlags): Unit = js.native
-  def getFile(
-    path: String,
-    flag: PlusIoFlags,
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getFile(path: String, flag: PlusIoFlags, succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
   def getFile(
     path: String,
@@ -270,6 +165,24 @@ trait PlusIoDirectoryEntry extends StObject {
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getFile(path: String, flag: PlusIoFlags, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getFile(path: Unit, flag: Unit, succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
+  def getFile(
+    path: Unit,
+    flag: Unit,
+    succesCB: js.Function1[/* result */ this.type, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getFile(path: Unit, flag: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getFile(path: Unit, flag: PlusIoFlags): Unit = js.native
+  def getFile(path: Unit, flag: PlusIoFlags, succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
+  def getFile(
+    path: Unit,
+    flag: PlusIoFlags,
+    succesCB: js.Function1[/* result */ this.type, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getFile(path: Unit, flag: PlusIoFlags, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 获取目录的属性
@@ -279,19 +192,7 @@ trait PlusIoDirectoryEntry extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def getMetadata(): Unit = js.native
-  def getMetadata(succesCB: js.UndefOr[scala.Nothing], errorCB: js.UndefOr[scala.Nothing], recursive: Boolean): Unit = js.native
-  def getMetadata(succesCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def getMetadata(
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit],
-    recursive: Boolean
-  ): Unit = js.native
   def getMetadata(succesCB: js.Function1[/* result */ PlusIoMetadata, Unit]): Unit = js.native
-  def getMetadata(
-    succesCB: js.Function1[/* result */ PlusIoMetadata, Unit],
-    errorCB: js.UndefOr[scala.Nothing],
-    recursive: Boolean
-  ): Unit = js.native
   def getMetadata(
     succesCB: js.Function1[/* result */ PlusIoMetadata, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
@@ -301,6 +202,10 @@ trait PlusIoDirectoryEntry extends StObject {
     errorCB: js.Function1[/* result */ js.Any, Unit],
     recursive: Boolean
   ): Unit = js.native
+  def getMetadata(succesCB: js.Function1[/* result */ PlusIoMetadata, Unit], errorCB: Unit, recursive: Boolean): Unit = js.native
+  def getMetadata(succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getMetadata(succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit], recursive: Boolean): Unit = js.native
+  def getMetadata(succesCB: Unit, errorCB: Unit, recursive: Boolean): Unit = js.native
   
   /**
     * 获取目录所属的父目录
@@ -309,12 +214,12 @@ trait PlusIoDirectoryEntry extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def getParent(): Unit = js.native
-  def getParent(succesCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getParent(succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
   def getParent(
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getParent(succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 操作对象是否为目录，DirectoryEntry对象固定其值为true
@@ -342,75 +247,53 @@ trait PlusIoDirectoryEntry extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def moveTo(): Unit = js.native
+  def moveTo(parent: Unit, newName: String): Unit = js.native
+  def moveTo(parent: Unit, newName: String, succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
   def moveTo(
-    parent: js.UndefOr[scala.Nothing],
-    newName: js.UndefOr[scala.Nothing],
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def moveTo(
-    parent: js.UndefOr[scala.Nothing],
-    newName: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ this.type, Unit]
-  ): Unit = js.native
-  def moveTo(
-    parent: js.UndefOr[scala.Nothing],
-    newName: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ this.type, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def moveTo(parent: js.UndefOr[scala.Nothing], newName: String): Unit = js.native
-  def moveTo(
-    parent: js.UndefOr[scala.Nothing],
-    newName: String,
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def moveTo(
-    parent: js.UndefOr[scala.Nothing],
-    newName: String,
-    succesCB: js.Function1[/* result */ this.type, Unit]
-  ): Unit = js.native
-  def moveTo(
-    parent: js.UndefOr[scala.Nothing],
+    parent: Unit,
     newName: String,
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def moveTo(parent: Unit, newName: String, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def moveTo(parent: Unit, newName: Unit, succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
+  def moveTo(
+    parent: Unit,
+    newName: Unit,
+    succesCB: js.Function1[/* result */ this.type, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def moveTo(parent: Unit, newName: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def moveTo(parent: PlusIoDirectoryEntry): Unit = js.native
-  def moveTo(
-    parent: PlusIoDirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def moveTo(
-    parent: PlusIoDirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ this.type, Unit]
-  ): Unit = js.native
-  def moveTo(
-    parent: PlusIoDirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    succesCB: js.Function1[/* result */ this.type, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def moveTo(parent: PlusIoDirectoryEntry, newName: String): Unit = js.native
   def moveTo(
     parent: PlusIoDirectoryEntry,
     newName: String,
-    succesCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def moveTo(
-    parent: PlusIoDirectoryEntry,
-    newName: String,
     succesCB: js.Function1[/* result */ this.type, Unit]
   ): Unit = js.native
   def moveTo(
     parent: PlusIoDirectoryEntry,
     newName: String,
     succesCB: js.Function1[/* result */ this.type, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def moveTo(
+    parent: PlusIoDirectoryEntry,
+    newName: String,
+    succesCB: Unit,
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def moveTo(parent: PlusIoDirectoryEntry, newName: Unit, succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
+  def moveTo(
+    parent: PlusIoDirectoryEntry,
+    newName: Unit,
+    succesCB: js.Function1[/* result */ this.type, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def moveTo(
+    parent: PlusIoDirectoryEntry,
+    newName: Unit,
+    succesCB: Unit,
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   
@@ -431,12 +314,12 @@ trait PlusIoDirectoryEntry extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def remove(): Unit = js.native
-  def remove(succesCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def remove(succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
   def remove(
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def remove(succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 递归删除目录
@@ -447,12 +330,12 @@ trait PlusIoDirectoryEntry extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def removeRecursively(): Unit = js.native
-  def removeRecursively(succesCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def removeRecursively(succesCB: js.Function1[/* result */ this.type, Unit]): Unit = js.native
   def removeRecursively(
     succesCB: js.Function1[/* result */ this.type, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def removeRecursively(succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 获取目录路径转换为本地路径URL地址

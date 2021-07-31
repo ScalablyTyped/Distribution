@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This is the basic interface to control a sprite object on a {@link XSpriteCanvas} . Sprites are moving, back-buffered objects.
   */
-@js.native
-trait XSprite extends XInterface {
+trait XSprite
+  extends StObject
+     with XInterface {
   
   /**
     * Apply a clipping to the shape output.
@@ -35,14 +35,14 @@ trait XSprite extends XInterface {
     * empty sub-polygons, denotes the NULL clip. That means, nothing from the sprite will be visible.
     * @param aClip The clip poly-polygon to apply.
     */
-  def clip(aClip: XPolyPolygon2D): Unit = js.native
+  def clip(aClip: XPolyPolygon2D): Unit
   
   /**
     * Make the sprite invisible.
     *
     * This method makes the sprite invisible.
     */
-  def hide(): Unit = js.native
+  def hide(): Unit
   
   /**
     * Move sprite to the specified position.
@@ -57,7 +57,7 @@ trait XSprite extends XInterface {
     * @param aRenderState The render state to be used when interpreting aNewPos.
     * @throws com::sun::star::lang::IllegalArgumentException if one of the view and render state parameters are outside the specified range.
     */
-  def move(aNewPos: RealPoint2D, aViewState: ViewState, aRenderState: RenderState): Unit = js.native
+  def move(aNewPos: RealPoint2D, aViewState: ViewState, aRenderState: RenderState): Unit
   
   /**
     * Set overall transparency of the sprite.
@@ -69,7 +69,7 @@ trait XSprite extends XInterface {
     * @param nAlpha New global alpha value to composite this sprite with the background. Valid range is [0,1].
     * @throws com::sun::star::lang::IllegalArgumentException if nAlpha is not within the permissible range.
     */
-  def setAlpha(nAlpha: Double): Unit = js.native
+  def setAlpha(nAlpha: Double): Unit
   
   /**
     * Set sprite priority.
@@ -78,14 +78,14 @@ trait XSprite extends XInterface {
     * the sprite be rendered, or, in other words, the closer to the screen surface the sprite is shown.
     * @param nPriority New sprite priority value to serve as the sort key when determining sprite rendering order. Avoid NaNs and other irregular floating poi
     */
-  def setPriority(nPriority: Double): Unit = js.native
+  def setPriority(nPriority: Double): Unit
   
   /**
     * Make the sprite visible.
     *
     * This method makes the sprite visible on the canvas it was created on.
     */
-  def show(): Unit = js.native
+  def show(): Unit
   
   /**
     * Apply a local transformation to the sprite.
@@ -101,7 +101,7 @@ trait XSprite extends XInterface {
     * @param aTransformation The transformation to apply to the sprite shape.
     * @throws com::sun::star::lang::IllegalArgumentException if the given transformation matrix is singular.
     */
-  def transform(aTransformation: AffineMatrix2D): Unit = js.native
+  def transform(aTransformation: AffineMatrix2D): Unit
 }
 object XSprite {
   

@@ -3,13 +3,11 @@ package typings.antd.anon
 import typings.antd.configProviderSizeContextMod.SizeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Size extends StObject {
   
-  var size: js.UndefOr[SizeType | Double] = js.native
+  var size: js.UndefOr[SizeType | Double] = js.undefined
 }
 object Size {
   

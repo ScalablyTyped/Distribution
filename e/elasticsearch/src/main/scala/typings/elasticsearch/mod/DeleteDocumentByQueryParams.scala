@@ -4,81 +4,81 @@ import typings.elasticsearch.elasticsearchStrings.dfs_query_then_fetch
 import typings.elasticsearch.elasticsearchStrings.query_then_fetch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeleteDocumentByQueryParams extends GenericParams {
+trait DeleteDocumentByQueryParams
+  extends StObject
+     with GenericParams {
   
-  var _source: js.UndefOr[NameList] = js.native
+  var _source: js.UndefOr[NameList] = js.undefined
   
-  var _sourceExclude: js.UndefOr[NameList] = js.native
+  var _sourceExclude: js.UndefOr[NameList] = js.undefined
   
-  var _sourceInclude: js.UndefOr[NameList] = js.native
+  var _sourceInclude: js.UndefOr[NameList] = js.undefined
   
-  var allowNoIndices: js.UndefOr[Boolean] = js.native
+  var allowNoIndices: js.UndefOr[Boolean] = js.undefined
   
-  var analyzeWildcard: js.UndefOr[Boolean] = js.native
+  var analyzeWildcard: js.UndefOr[Boolean] = js.undefined
   
-  var analyzer: js.UndefOr[String] = js.native
+  var analyzer: js.UndefOr[String] = js.undefined
   
-  var conflicts: js.UndefOr[Conflicts] = js.native
+  var conflicts: js.UndefOr[Conflicts] = js.undefined
   
-  var defaultOperator: js.UndefOr[DefaultOperator] = js.native
+  var defaultOperator: js.UndefOr[DefaultOperator] = js.undefined
   
-  var df: js.UndefOr[String] = js.native
+  var df: js.UndefOr[String] = js.undefined
   
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
   
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
-  var lenient: js.UndefOr[Boolean] = js.native
+  var lenient: js.UndefOr[Boolean] = js.undefined
   
-  var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.native
+  var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.undefined
   
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var refresh: js.UndefOr[Refresh] = js.native
+  var refresh: js.UndefOr[Refresh] = js.undefined
   
-  var requestCache: js.UndefOr[Boolean] = js.native
+  var requestCache: js.UndefOr[Boolean] = js.undefined
   
-  var requestsPerSecond: js.UndefOr[Double] = js.native
+  var requestsPerSecond: js.UndefOr[Double] = js.undefined
   
-  var routing: js.UndefOr[String | js.Array[String] | Boolean] = js.native
+  var routing: js.UndefOr[String | js.Array[String] | Boolean] = js.undefined
   
-  var scroll: js.UndefOr[String] = js.native
+  var scroll: js.UndefOr[String] = js.undefined
   
-  var scrollSize: js.UndefOr[Double] = js.native
+  var scrollSize: js.UndefOr[Double] = js.undefined
   
-  var searchTimeout: js.UndefOr[TimeSpan] = js.native
+  var searchTimeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var searchType: js.UndefOr[query_then_fetch | dfs_query_then_fetch] = js.native
+  var searchType: js.UndefOr[query_then_fetch | dfs_query_then_fetch] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var slices: js.UndefOr[Double] = js.native
+  var slices: js.UndefOr[Double] = js.undefined
   
-  var sort: js.UndefOr[NameList] = js.native
+  var sort: js.UndefOr[NameList] = js.undefined
   
-  var stats: js.UndefOr[String | js.Array[String] | Boolean] = js.native
+  var stats: js.UndefOr[String | js.Array[String] | Boolean] = js.undefined
   
-  var terminateAfter: js.UndefOr[Double] = js.native
+  var terminateAfter: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
-  var waitForActiveShards: js.UndefOr[String] = js.native
+  var waitForActiveShards: js.UndefOr[String] = js.undefined
   
-  var waitForCompletion: js.UndefOr[Boolean] = js.native
+  var waitForCompletion: js.UndefOr[Boolean] = js.undefined
 }
 object DeleteDocumentByQueryParams {
   

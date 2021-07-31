@@ -2,25 +2,30 @@ package typings.next
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mittMod {
   
-  @JSImport("next/dist/next-server/lib/mitt", JSImport.Default)
+  @JSImport("next/dist/next-server/lib/mitt", JSImport.Namespace)
   @js.native
-  def default(): MittEmitter = js.native
+  val ^ : js.Any = js.native
   
-  type Handler = js.Function1[/* repeated */ js.Any, Unit]
+  @scala.inline
+  def default(): MittEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[MittEmitter]
   
   @js.native
+  trait Handler extends StObject {
+    
+    def apply(evts: js.Any*): Unit = js.native
+  }
+  
   trait MittEmitter extends StObject {
     
-    def emit(`type`: String, evts: js.Any*): Unit = js.native
+    def emit(`type`: String, evts: js.Any*): Unit
     
-    def off(`type`: String, handler: Handler): Unit = js.native
+    def off(`type`: String, handler: Handler): Unit
     
-    def on(`type`: String, handler: Handler): Unit = js.native
+    def on(`type`: String, handler: Handler): Unit
   }
   object MittEmitter {
     

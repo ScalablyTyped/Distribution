@@ -4,20 +4,20 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helperMod {
   
-  @JSImport("pvtsutils/build/types/helper", "assign")
+  @JSImport("pvtsutils/build/types/helper", JSImport.Namespace)
   @js.native
-  def assign(target: js.Any, sources: js.Any*): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("pvtsutils/build/types/helper", "combine")
-  @js.native
-  def combine(buf: ArrayBuffer*): ArrayBufferLike = js.native
+  @scala.inline
+  def assign(target: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("pvtsutils/build/types/helper", "isEqual")
-  @js.native
-  def isEqual(bytes1: ArrayBuffer, bytes2: ArrayBuffer): Boolean = js.native
+  @scala.inline
+  def combine(buf: ArrayBuffer*): ArrayBufferLike = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(buf.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferLike]
+  
+  @scala.inline
+  def isEqual(bytes1: ArrayBuffer, bytes2: ArrayBuffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(bytes1.asInstanceOf[js.Any], bytes2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ipGroupMod {
@@ -26,7 +25,7 @@ object ipGroupMod {
       */
     def this(name: String) = this()
     def this(name: String, args: IpGroupArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: IpGroupArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -49,6 +48,10 @@ object ipGroupMod {
   /* static members */
   object IpGroup {
     
+    @JSImport("@pulumi/aws/workspaces/ipGroup", "IpGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing IpGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,47 +61,41 @@ object ipGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/workspaces/ipGroup", "IpGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): IpGroup = js.native
-    @JSImport("@pulumi/aws/workspaces/ipGroup", "IpGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IpGroup = js.native
-    @JSImport("@pulumi/aws/workspaces/ipGroup", "IpGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IpGroupState): IpGroup = js.native
-    @JSImport("@pulumi/aws/workspaces/ipGroup", "IpGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IpGroupState, opts: CustomResourceOptions): IpGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): IpGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IpGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IpGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IpGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IpGroupState): IpGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IpGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IpGroupState, opts: CustomResourceOptions): IpGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IpGroup]
     
     /**
       * Returns true if the given object is an instance of IpGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/workspaces/ipGroup", "IpGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/workspaces/ipGroup.IpGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/workspaces/ipGroup.IpGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/workspaces/ipGroup.IpGroup */ Boolean]
   }
   
-  @js.native
   trait IpGroupArgs extends StObject {
     
     /**
       * The description.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the IP group.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more pairs specifying the IP group rule (in CIDR format) from which web requests originate.
       */
-    val rules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.workspaces.IpGroupRule]]]] = js.native
+    val rules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.workspaces.IpGroupRule]]]] = js.undefined
     
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object IpGroupArgs {
     
@@ -140,25 +137,24 @@ object ipGroupMod {
     }
   }
   
-  @js.native
   trait IpGroupState extends StObject {
     
     /**
       * The description.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the IP group.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more pairs specifying the IP group rule (in CIDR format) from which web requests originate.
       */
-    val rules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.workspaces.IpGroupRule]]]] = js.native
+    val rules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.workspaces.IpGroupRule]]]] = js.undefined
     
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object IpGroupState {
     

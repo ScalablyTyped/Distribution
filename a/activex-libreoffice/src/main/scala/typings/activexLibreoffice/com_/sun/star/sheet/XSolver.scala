@@ -6,31 +6,31 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to call a solver for a model that is defined by spreadsheet cells. */
-@js.native
-trait XSolver extends XInterface {
+trait XSolver
+  extends StObject
+     with XInterface {
   
-  var Constraints: SafeArray[SolverConstraint] = js.native
+  var Constraints: SafeArray[SolverConstraint]
   
-  var Document: XSpreadsheetDocument = js.native
+  var Document: XSpreadsheetDocument
   
-  var Maximize: Boolean = js.native
+  var Maximize: Boolean
   
-  var Objective: CellAddress = js.native
+  var Objective: CellAddress
   
-  var ResultValue: Double = js.native
+  var ResultValue: Double
   
   /** contains the solution's value for each of the variables, if a solution was found. */
-  var Solution: SafeArray[Double] = js.native
+  var Solution: SafeArray[Double]
   
-  var Success: Boolean = js.native
+  var Success: Boolean
   
-  var Variables: SafeArray[CellAddress] = js.native
+  var Variables: SafeArray[CellAddress]
   
-  def solve(): Unit = js.native
+  def solve(): Unit
 }
 object XSolver {
   

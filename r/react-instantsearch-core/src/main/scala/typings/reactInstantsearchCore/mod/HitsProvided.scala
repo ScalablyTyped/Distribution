@@ -2,14 +2,12 @@ package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HitsProvided[THit] extends StObject {
   
   /** the records that matched the search state */
-  var hits: js.Array[Hit[THit]] = js.native
+  var hits: js.Array[Hit[THit]]
 }
 object HitsProvided {
   
@@ -20,7 +18,7 @@ object HitsProvided {
   }
   
   @scala.inline
-  implicit class HitsProvidedMutableBuilder[Self <: HitsProvided[_], THit] (val x: Self with HitsProvided[THit]) extends AnyVal {
+  implicit class HitsProvidedMutableBuilder[Self <: HitsProvided[?], THit] (val x: Self & HitsProvided[THit]) extends AnyVal {
     
     @scala.inline
     def setHits(value: js.Array[Hit[THit]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])

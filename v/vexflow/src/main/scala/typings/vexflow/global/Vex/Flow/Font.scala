@@ -5,7 +5,6 @@ import typings.vexflow.anon.Ha
 import typings.vexflow.anon.XMax_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // from vexflow_font.js / gonville_original.js / gonville_all.js

@@ -2,13 +2,11 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchaseReservedNodeOfferingResult extends StObject {
   
-  var ReservedNode: js.UndefOr[typings.awsSdk.redshiftMod.ReservedNode] = js.native
+  var ReservedNode: js.UndefOr[typings.awsSdk.redshiftMod.ReservedNode] = js.undefined
 }
 object PurchaseReservedNodeOfferingResult {
   

@@ -2,22 +2,20 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Unregistration extends StObject {
   
   /**
     * The id used to unregister the request or notification. Usually an id
     * provided during the register request.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The method to unregister for.
     */
-  var method: String = js.native
+  var method: String
 }
 object Unregistration {
   

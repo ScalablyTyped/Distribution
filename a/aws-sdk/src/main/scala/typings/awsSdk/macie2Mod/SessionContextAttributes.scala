@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionContextAttributes extends StObject {
   
   /**
     * The date and time, in UTC and ISO 8601 format, when the credentials were issued.
     */
-  var creationDate: js.UndefOr[timestampIso8601] = js.native
+  var creationDate: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * Specifies whether the credentials were authenticated with a multi-factor authentication (MFA) device.
     */
-  var mfaAuthenticated: js.UndefOr[boolean] = js.native
+  var mfaAuthenticated: js.UndefOr[boolean] = js.undefined
 }
 object SessionContextAttributes {
   

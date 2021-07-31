@@ -6,16 +6,14 @@ import typings.std.HTMLButtonElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/Tile/Tile.TileProps> */
-@js.native
 trait WeakValidationMapTileProp extends StObject {
   
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var isDouble: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var isDouble: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
   var onClick: js.UndefOr[
     Validator[
@@ -23,9 +21,9 @@ trait WeakValidationMapTileProp extends StObject {
         (js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]) | Null
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var size: js.UndefOr[Validator[js.UndefOr[s | Null]]] = js.native
+  var size: js.UndefOr[Validator[js.UndefOr[s | Null]]] = js.undefined
 }
 object WeakValidationMapTileProp {
   

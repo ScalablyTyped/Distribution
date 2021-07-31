@@ -3,49 +3,49 @@ package typings.senchaTouch.Ext.data
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IWriter extends IBase {
+trait IWriter
+  extends StObject
+     with IBase {
   
   /** [Method] Returns the value of nameProperty
     * @returns String
     */
-  var getNameProperty: js.UndefOr[js.Function0[String]] = js.native
+  var getNameProperty: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Formats the data for each record before sending it to the server
     * @param record Object The record that we are writing to the server.
     * @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
     */
-  var getRecordData: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], _]] = js.native
+  var getRecordData: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Returns the value of writeAllFields
     * @returns Boolean
     */
-  var getWriteAllFields: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getWriteAllFields: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (String) */
-  var nameProperty: js.UndefOr[String] = js.native
+  var nameProperty: js.UndefOr[String] = js.undefined
   
   /** [Method] Sets the value of nameProperty
     * @param nameProperty String The new value.
     */
-  var setNameProperty: js.UndefOr[js.Function1[/* nameProperty */ js.UndefOr[String], Unit]] = js.native
+  var setNameProperty: js.UndefOr[js.Function1[/* nameProperty */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of writeAllFields
     * @param writeAllFields Boolean The new value.
     */
-  var setWriteAllFields: js.UndefOr[js.Function1[/* writeAllFields */ js.UndefOr[Boolean], Unit]] = js.native
+  var setWriteAllFields: js.UndefOr[js.Function1[/* writeAllFields */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Prepares a Proxy s Ext data Request object
     * @param request Ext.data.Request The request object.
     * @returns Ext.data.Request The modified request object.
     */
-  var write: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], IRequest]] = js.native
+  var write: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], IRequest]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var writeAllFields: js.UndefOr[Boolean] = js.native
+  var writeAllFields: js.UndefOr[Boolean] = js.undefined
 }
 object IWriter {
   
@@ -65,7 +65,7 @@ object IWriter {
     def setGetNamePropertyUndefined: Self = StObject.set(x, "getNameProperty", js.undefined)
     
     @scala.inline
-    def setGetRecordData(value: /* record */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getRecordData", js.Any.fromFunction1(value))
+    def setGetRecordData(value: /* record */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetRecordDataUndefined: Self = StObject.set(x, "getRecordData", js.undefined)

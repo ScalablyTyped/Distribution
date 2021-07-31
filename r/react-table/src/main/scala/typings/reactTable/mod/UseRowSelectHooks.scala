@@ -4,23 +4,21 @@ import typings.reactTable.anon.PartialTableToggleAllRows
 import typings.reactTable.anon.PartialTableToggleRowsSel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseRowSelectHooks[D /* <: js.Object */] extends StObject {
   
   var getToggleAllPageRowsSelectedProps: js.Array[
     PropGetter[D, TableToggleAllRowsSelectedProps, scala.Nothing, PartialTableToggleAllRows]
-  ] = js.native
+  ]
   
   var getToggleAllRowsSelectedProps: js.Array[
     PropGetter[D, TableToggleAllRowsSelectedProps, scala.Nothing, PartialTableToggleAllRows]
-  ] = js.native
+  ]
   
   var getToggleRowSelectedProps: js.Array[
     PropGetter[D, TableToggleRowsSelectedProps, scala.Nothing, PartialTableToggleRowsSel]
-  ] = js.native
+  ]
 }
 object UseRowSelectHooks {
   
@@ -41,7 +39,7 @@ object UseRowSelectHooks {
   }
   
   @scala.inline
-  implicit class UseRowSelectHooksMutableBuilder[Self <: UseRowSelectHooks[_], D /* <: js.Object */] (val x: Self with UseRowSelectHooks[D]) extends AnyVal {
+  implicit class UseRowSelectHooksMutableBuilder[Self <: UseRowSelectHooks[?], D /* <: js.Object */] (val x: Self & UseRowSelectHooks[D]) extends AnyVal {
     
     @scala.inline
     def setGetToggleAllPageRowsSelectedProps(

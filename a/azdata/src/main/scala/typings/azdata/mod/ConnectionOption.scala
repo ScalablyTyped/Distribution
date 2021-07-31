@@ -2,31 +2,29 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionOption extends StObject {
   
-  var categoryValues: js.Array[CategoryValue] = js.native
+  var categoryValues: js.Array[CategoryValue]
   
-  var defaultValue: String = js.native
+  var defaultValue: String
   
-  var description: String = js.native
+  var description: String
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var groupName: String = js.native
+  var groupName: String
   
-  var isIdentity: Boolean = js.native
+  var isIdentity: Boolean
   
-  var isRequired: Boolean = js.native
+  var isRequired: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var specialValueType: ConnectionOptionSpecialType = js.native
+  var specialValueType: ConnectionOptionSpecialType
   
-  var valueType: ServiceOptionType = js.native
+  var valueType: ServiceOptionType
 }
 object ConnectionOption {
   

@@ -2,37 +2,35 @@ package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunOptions extends StObject {
   
-  var absolutePaths: js.UndefOr[Boolean] = js.native
+  var absolutePaths: js.UndefOr[Boolean] = js.undefined
   
-  var ancestry: js.UndefOr[Boolean] = js.native
+  var ancestry: js.UndefOr[Boolean] = js.undefined
   
-  var elementRef: js.UndefOr[Boolean] = js.native
+  var elementRef: js.UndefOr[Boolean] = js.undefined
   
-  var frameWaitTime: js.UndefOr[Double] = js.native
+  var frameWaitTime: js.UndefOr[Double] = js.undefined
   
-  var iframes: js.UndefOr[Boolean] = js.native
+  var iframes: js.UndefOr[Boolean] = js.undefined
   
-  var performanceTimer: js.UndefOr[Boolean] = js.native
+  var performanceTimer: js.UndefOr[Boolean] = js.undefined
   
-  var preload: js.UndefOr[Boolean] = js.native
+  var preload: js.UndefOr[Boolean] = js.undefined
   
-  var reporter: js.UndefOr[ReporterVersion] = js.native
+  var reporter: js.UndefOr[ReporterVersion] = js.undefined
   
-  var resultTypes: js.UndefOr[js.Array[resultGroups]] = js.native
+  var resultTypes: js.UndefOr[js.Array[resultGroups]] = js.undefined
   
-  var rules: js.UndefOr[RuleObject] = js.native
+  var rules: js.UndefOr[RuleObject] = js.undefined
   
-  var runOnly: js.UndefOr[RunOnly | (js.Array[String | TagValue])] = js.native
+  var runOnly: js.UndefOr[RunOnly | (js.Array[String | TagValue])] = js.undefined
   
-  var selectors: js.UndefOr[Boolean] = js.native
+  var selectors: js.UndefOr[Boolean] = js.undefined
   
-  var xpath: js.UndefOr[Boolean] = js.native
+  var xpath: js.UndefOr[Boolean] = js.undefined
 }
 object RunOptions {
   

@@ -3,19 +3,20 @@ package typings.nodemailerPickupTransport
 import typings.nodemailer.mod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): Transport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  
   @JSImport("nodemailer-pickup-transport", JSImport.Namespace)
   @js.native
-  def apply(options: Options): Transport = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var directory: String = js.native
+    var directory: String
   }
   object Options {
     

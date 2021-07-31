@@ -16,7 +16,6 @@ import typings.uirouterCore.urlServiceMod.UrlService
 import typings.uirouterCore.viewViewMod.ViewService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routerMod {
@@ -32,7 +31,7 @@ object routerMod {
     */
   class UIRouter () extends StObject {
     def this(locationService: LocationServices) = this()
-    def this(locationService: js.UndefOr[scala.Nothing], locationConfig: LocationConfig) = this()
+    def this(locationService: Unit, locationConfig: LocationConfig) = this()
     def this(locationService: LocationServices, locationConfig: LocationConfig) = this()
     
     /** @internal */ @JSName("$id")

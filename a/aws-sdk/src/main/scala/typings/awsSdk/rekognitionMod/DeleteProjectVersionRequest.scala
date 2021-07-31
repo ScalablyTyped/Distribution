@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteProjectVersionRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the model version that you want to delete.
     */
-  var ProjectVersionArn: typings.awsSdk.rekognitionMod.ProjectVersionArn = js.native
+  var ProjectVersionArn: typings.awsSdk.rekognitionMod.ProjectVersionArn
 }
 object DeleteProjectVersionRequest {
   

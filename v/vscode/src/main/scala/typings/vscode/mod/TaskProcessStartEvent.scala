@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskProcessStartEvent extends StObject {
   
   /**
     * The task execution for which the process got started.
     */
-  val execution: TaskExecution = js.native
+  val execution: TaskExecution
   
   /**
     * The underlying process id.
     */
-  val processId: Double = js.native
+  val processId: Double
 }
 object TaskProcessStartEvent {
   

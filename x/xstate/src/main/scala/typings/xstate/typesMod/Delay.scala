@@ -2,18 +2,16 @@ package typings.xstate.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delay extends StObject {
   
   /**
     * The time to delay the event, in milliseconds.
     */
-  var delay: Double = js.native
+  var delay: Double
   
-  var id: String = js.native
+  var id: String
 }
 object Delay {
   

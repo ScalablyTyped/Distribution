@@ -2,25 +2,25 @@ package typings.ddTrace.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This plugin automatically instruments the
   * [grpc](https://github.com/grpc/grpc-node) module.
   */
-@js.native
-trait grpc extends Grpc_ {
+trait grpc
+  extends StObject
+     with Grpc_ {
   
   /**
     * Configuration for gRPC clients.
     */
-  var client: js.UndefOr[Grpc_] = js.native
+  var client: js.UndefOr[Grpc_] = js.undefined
   
   /**
     * Configuration for gRPC servers.
     */
-  var server: js.UndefOr[Grpc_] = js.native
+  var server: js.UndefOr[Grpc_] = js.undefined
 }
 object grpc {
   

@@ -2,10 +2,8 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationOptions extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait NavigationOptions extends StObject {
     *
     * @default 'swiper-button-disabled'
     */
-  var disabledClass: js.UndefOr[String] = js.native
+  var disabledClass: js.UndefOr[String] = js.undefined
   
   /**
     * CSS class name added to navigation button when it becomes hidden
     *
     * @default 'swiper-button-hidden'
     */
-  var hiddenClass: js.UndefOr[String] = js.native
+  var hiddenClass: js.UndefOr[String] = js.undefined
   
   /**
     * buttons visibility after click on Slider's container
     *
     * @default false Toggle navigation
     */
-  var hideOnClick: js.UndefOr[Boolean] = js.native
+  var hideOnClick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * String with CSS selector or HTML element of the element that will work
@@ -35,7 +33,7 @@ trait NavigationOptions extends StObject {
     *
     * @default null
     */
-  var nextEl: js.UndefOr[SelectableElement] = js.native
+  var nextEl: js.UndefOr[SelectableElement] = js.undefined
   
   /**
     * String with CSS selector or HTML element of the element that will work
@@ -43,7 +41,7 @@ trait NavigationOptions extends StObject {
     *
     * @default null
     */
-  var prevEl: js.UndefOr[SelectableElement] = js.native
+  var prevEl: js.UndefOr[SelectableElement] = js.undefined
 }
 object NavigationOptions {
   

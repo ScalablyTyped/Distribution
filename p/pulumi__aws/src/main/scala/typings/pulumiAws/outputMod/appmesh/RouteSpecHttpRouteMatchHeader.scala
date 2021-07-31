@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecHttpRouteMatchHeader extends StObject {
   
   /**
     * If `true`, the match is on the opposite of the `match` method and value. Default is `false`.
     */
-  var invert: js.UndefOr[Boolean] = js.native
+  var invert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The method and value to match the header value sent with a request. Specify one match method.
     */
-  var `match`: js.UndefOr[RouteSpecHttpRouteMatchHeaderMatch] = js.native
+  var `match`: js.UndefOr[RouteSpecHttpRouteMatchHeaderMatch] = js.undefined
   
   /**
     * A name for the HTTP header in the client request that will be matched on.
     */
-  var name: String = js.native
+  var name: String
 }
 object RouteSpecHttpRouteMatchHeader {
   

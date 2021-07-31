@@ -4,33 +4,31 @@ import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientMl.maximMazurokGapiClientMlStrings.GoogleCloudMlV1__Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1Version extends StObject {
   
   /**
     * Optional. Accelerator config for using GPUs for online prediction (beta). Only specify this field if you have specified a Compute Engine (N1) machine type in the `machineType`
     * field. Learn more about [using GPUs for online prediction](/ml-engine/docs/machine-types-online-prediction#gpus).
     */
-  var acceleratorConfig: js.UndefOr[GoogleCloudMlV1AcceleratorConfig] = js.native
+  var acceleratorConfig: js.UndefOr[GoogleCloudMlV1AcceleratorConfig] = js.undefined
   
   /**
     * Automatically scale the number of nodes used to serve the model in response to increases and decreases in traffic. Care should be taken to ramp up traffic according to the model's
     * ability to scale or you will start seeing increases in latency and 429 response codes. Note that you cannot use AutoScaling if your version uses
     * [GPUs](#Version.FIELDS.accelerator_config). Instead, you must use specify `manual_scaling`.
     */
-  var autoScaling: js.UndefOr[GoogleCloudMlV1AutoScaling] = js.native
+  var autoScaling: js.UndefOr[GoogleCloudMlV1AutoScaling] = js.undefined
   
   /**
     * Optional. Specifies a custom container to use for serving predictions. If you specify this field, then `machineType` is required. If you specify this field, then `deploymentUri` is
     * optional. If you specify this field, then you must not specify `runtimeVersion`, `packageUris`, `framework`, `pythonVersion`, or `predictionClass`.
     */
-  var container: js.UndefOr[GoogleCloudMlV1ContainerSpec] = js.native
+  var container: js.UndefOr[GoogleCloudMlV1ContainerSpec] = js.undefined
   
   /** Output only. The time the version was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The Cloud Storage URI of a directory containing trained model artifacts to be used to create the model version. See the [guide to deploying
@@ -39,23 +37,23 @@ trait GoogleCloudMlV1Version extends StObject {
     * these copies of the model artifacts to serve predictions, not the original files in Cloud Storage, so this location is useful only as a historical record. If you specify container,
     * then this field is optional. Otherwise, it is required. Learn [how to use this field with a custom container](/ai-platform/prediction/docs/custom-container-requirements#artifacts).
     */
-  var deploymentUri: js.UndefOr[String] = js.native
+  var deploymentUri: js.UndefOr[String] = js.undefined
   
   /** Optional. The description specified for the version when it was created. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Output only. The details of a failure or a cancellation. */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * `etag` is used for optimistic concurrency control as a way to help prevent simultaneous updates of a model from overwriting each other. It is strongly suggested that systems make
     * use of the `etag` in the read-modify-write cycle to perform model updates in order to avoid race conditions: An `etag` is returned in the response to `GetVersion`, and systems are
     * expected to put that etag in the request to `UpdateVersion` to ensure that their change will be applied to the model as intended.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Optional. Configures explainability features on the model's version. Some explanation features require additional metadata to be loaded as part of the model payload. */
-  var explanationConfig: js.UndefOr[GoogleCloudMlV1ExplanationConfig] = js.native
+  var explanationConfig: js.UndefOr[GoogleCloudMlV1ExplanationConfig] = js.undefined
   
   /**
     * Optional. The machine learning framework AI Platform uses to train this version of the model. Valid values are `TENSORFLOW`, `SCIKIT_LEARN`, `XGBOOST`. If you do not specify a
@@ -63,13 +61,13 @@ trait GoogleCloudMlV1Version extends StObject {
     * model to 1.4 or greater. Do **not** specify a framework if you're deploying a [custom prediction routine](/ai-platform/prediction/docs/custom-prediction-routines) or if you're using
     * a [custom container](/ai-platform/prediction/docs/use-custom-container).
     */
-  var framework: js.UndefOr[String] = js.native
+  var framework: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. If true, this version will be used to handle prediction requests that do not specify a version. You can change the default version by calling
     * projects.methods.versions.setDefault.
     */
-  var isDefault: js.UndefOr[Boolean] = js.native
+  var isDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. One or more labels that you can add, to organize your model versions. Each label is a key-value pair, where both the key and the value are arbitrary strings that you
@@ -78,11 +76,11 @@ trait GoogleCloudMlV1Version extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ GoogleCloudMlV1__Version with TopLevel[js.Any]
-  ] = js.native
+    */ GoogleCloudMlV1__Version & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. The time the version was last used for prediction. */
-  var lastUseTime: js.UndefOr[String] = js.native
+  var lastUseTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The type of machine on which to serve the model. Currently only applies to online prediction service. If this field is not specified, it defaults to `mls1-c1-m2`. Online
@@ -90,17 +88,17 @@ trait GoogleCloudMlV1Version extends StObject {
     * `n1-highmem-2` * `n1-highmem-4` * `n1-highmem-8` * `n1-highmem-16` * `n1-highmem-32` * `n1-highcpu-2` * `n1-highcpu-4` * `n1-highcpu-8` * `n1-highcpu-16` * `n1-highcpu-32`
     * `mls1-c4-m2` is in beta. All other machine types are generally available. Learn more about the [differences between machine types](/ml-engine/docs/machine-types-online-prediction).
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * Manually select the number of nodes to use for serving the model. You should generally use `auto_scaling` with an appropriate `min_nodes` instead, but this option is available if
     * you want more predictable billing. Beware that latency and error rates will increase if the traffic exceeds that capability of the system to serve it based on the selected number of
     * nodes.
     */
-  var manualScaling: js.UndefOr[GoogleCloudMlV1ManualScaling] = js.native
+  var manualScaling: js.UndefOr[GoogleCloudMlV1ManualScaling] = js.undefined
   
   /** Required. The name specified for the version when it was created. The version name must be unique within the model it is created in. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Cloud Storage paths (`gs://…`) of packages for [custom prediction routines](/ml-engine/docs/tensorflow/custom-prediction-routines) or [scikit-learn pipelines with custom
@@ -109,7 +107,7 @@ trait GoogleCloudMlV1Version extends StObject {
     * your selected [runtime version](/ml-engine/docs/tensorflow/runtime-version-list). If you specify this field, you must also set [`runtimeVersion`](#Version.FIELDS.runtime_version) to
     * 1.4 or greater.
     */
-  var packageUris: js.UndefOr[js.Array[String]] = js.native
+  var packageUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The fully qualified name (module_name.class_name) of a class that implements the Predictor interface described in this reference field. The module containing this class
@@ -123,42 +121,42 @@ trait GoogleCloudMlV1Version extends StObject {
     * that contains the exported model file along with any additional files uploaded when creating the version resource. Returns: An instance implementing this Predictor class. """ raise
     * NotImplementedError() Learn more about [the Predictor interface and custom prediction routines](/ml-engine/docs/tensorflow/custom-prediction-routines).
     */
-  var predictionClass: js.UndefOr[String] = js.native
+  var predictionClass: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The version of Python used in prediction. The following Python versions are available: * Python '3.7' is available when `runtime_version` is set to '1.15' or later. *
     * Python '3.5' is available when `runtime_version` is set to a version from '1.4' to '1.14'. * Python '2.7' is available when `runtime_version` is set to '1.15' or earlier. Read more
     * about the Python versions available for [each runtime version](/ml-engine/docs/runtime-version-list).
     */
-  var pythonVersion: js.UndefOr[String] = js.native
+  var pythonVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. *Only* specify this field in a projects.models.versions.patch request. Specifying it in a projects.models.versions.create request has no effect. Configures the
     * request-response pair logging on predictions from this Version.
     */
-  var requestLoggingConfig: js.UndefOr[GoogleCloudMlV1RequestLoggingConfig] = js.native
+  var requestLoggingConfig: js.UndefOr[GoogleCloudMlV1RequestLoggingConfig] = js.undefined
   
   /**
     * Optional. Specifies paths on a custom container's HTTP server where AI Platform Prediction sends certain requests. If you specify this field, then you must also specify the
     * `container` field. If you specify the `container` field and do not specify this field, it defaults to the following: ```json { "predict":
     * "/v1/models/MODEL/versions/VERSION:predict", "health": "/v1/models/MODEL/versions/VERSION" } ``` See RouteMap for more details about these default values.
     */
-  var routes: js.UndefOr[GoogleCloudMlV1RouteMap] = js.native
+  var routes: js.UndefOr[GoogleCloudMlV1RouteMap] = js.undefined
   
   /**
     * Required. The AI Platform runtime version to use for this deployment. For more information, see the [runtime version list](/ml-engine/docs/runtime-version-list) and [how to manage
     * runtime versions](/ml-engine/docs/versioning).
     */
-  var runtimeVersion: js.UndefOr[String] = js.native
+  var runtimeVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Specifies the service account for resource access control. If you specify this field, then you must also specify either the `containerSpec` or the `predictionClass` field.
     * Learn more about [using a custom service account](/ai-platform/prediction/docs/custom-service-account).
     */
-  var serviceAccount: js.UndefOr[String] = js.native
+  var serviceAccount: js.UndefOr[String] = js.undefined
   
   /** Output only. The state of a version. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1Version {
   
@@ -241,7 +239,7 @@ object GoogleCloudMlV1Version {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ GoogleCloudMlV1__Version with TopLevel[js.Any]
+      */ GoogleCloudMlV1__Version & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

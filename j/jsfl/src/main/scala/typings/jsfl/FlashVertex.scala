@@ -2,19 +2,17 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashVertex extends StObject {
   
-  def getHalfEdge(): FlashHalfEdge = js.native
+  def getHalfEdge(): FlashHalfEdge
   
-  def setLocation(x: Double, y: Double): js.Any = js.native
+  def setLocation(x: Double, y: Double): js.Any
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object FlashVertex {
   

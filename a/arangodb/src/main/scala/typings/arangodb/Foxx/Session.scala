@@ -2,23 +2,21 @@ package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Session extends StObject {
   
-  var created: Double = js.native
+  var created: Double
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var uid: String | Null = js.native
+  var uid: String | Null
 }
 object Session {
   
   @scala.inline
   def apply(created: Double, data: js.Any): Session = {
-    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], uid = null)
     __obj.asInstanceOf[Session]
   }
   

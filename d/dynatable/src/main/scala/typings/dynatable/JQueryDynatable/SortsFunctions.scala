@@ -2,10 +2,8 @@ package typings.dynatable.JQueryDynatable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortsFunctions extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SortsFunctions extends StObject {
     * @param direction The number describingthe order: ASC (+1), DESC (-1) or none (0)
     * @return The number (-1, 0 or +1) representing the comparison
     */
-  def number(a: js.Any, b: js.Any, attr: String, direction: Double): Double = js.native
+  def number(a: js.Any, b: js.Any, attr: String, direction: Double): Double
   
   /**
     * Restores the original order we had...
@@ -26,7 +24,7 @@ trait SortsFunctions extends StObject {
     * @param b The second record
     * @return The number (-1, 0 or +1) representing the comparison
     */
-  def originalPlacement(a: js.Any, b: js.Any): Double = js.native
+  def originalPlacement(a: js.Any, b: js.Any): Double
   
   /**
     * Sorting between 2 strings
@@ -37,7 +35,7 @@ trait SortsFunctions extends StObject {
     * @param direction The number describingthe order: ASC (+1), DESC (-1) or none (0)
     * @return The number (-1, 0 or +1) representing the comparison
     */
-  def string(a: js.Any, b: js.Any, attr: String, direction: Double): Double = js.native
+  def string(a: js.Any, b: js.Any, attr: String, direction: Double): Double
 }
 object SortsFunctions {
   

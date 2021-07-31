@@ -7,7 +7,6 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -243,9 +242,9 @@ trait TextStyle extends StObject {
     * @param y The vertical shadow offset. Default 0.
     */
   def setShadowOffset(): Text = js.native
-  def setShadowOffset(x: js.UndefOr[scala.Nothing], y: Double): Text = js.native
   def setShadowOffset(x: Double): Text = js.native
   def setShadowOffset(x: Double, y: Double): Text = js.native
+  def setShadowOffset(x: Unit, y: Double): Text = js.native
   
   /**
     * Enable or disable shadow stroke.
@@ -267,15 +266,15 @@ trait TextStyle extends StObject {
     * @param setDefaults Use the default values is not set, or the local values. Default false.
     */
   def setStyle(style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle): Text = js.native
-  def setStyle(
-    style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle,
-    updateText: js.UndefOr[scala.Nothing],
-    setDefaults: Boolean
-  ): Text = js.native
   def setStyle(style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle, updateText: Boolean): Text = js.native
   def setStyle(
     style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle,
     updateText: Boolean,
+    setDefaults: Boolean
+  ): Text = js.native
+  def setStyle(
+    style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle,
+    updateText: Unit,
     setDefaults: Boolean
   ): Text = js.native
   

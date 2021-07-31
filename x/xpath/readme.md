@@ -10,9 +10,9 @@ DOM 3 XPath implemention and helper for node.js.
 | ------------------ | :-------------: |
 | Full name          | xpath |
 | Keywords           | xpath, xml |
-| # releases         | 0 |
-| # dependents       | 409 |
-| # downloads        | 24285390 |
+| # releases         | 6 |
+| # dependents       | 429 |
+| # downloads        | 30260403 |
 | # stars            | 29 |
 
 ## Links

@@ -2,35 +2,33 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttPointOptionsObject extends StObject {
   
   /**
     * (Gantt) Accessibility options for a data point.
     */
-  var accessibility: js.UndefOr[PointAccessibilityOptionsObject] = js.native
+  var accessibility: js.UndefOr[PointAccessibilityOptionsObject] = js.undefined
   
   /**
     * (Gantt) Whether the grid node belonging to this point should start as
     * collapsed. Used in axes of type treegrid.
     */
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) Progress indicator, how much of the task completed. If it is a
     * number, the `fill` will be applied automatically.
     */
-  var completed: js.UndefOr[Double | XrangePointPartialFillOptionsObject] = js.native
+  var completed: js.UndefOr[Double | XrangePointPartialFillOptionsObject] = js.undefined
   
   /**
     * (Gantt) A reserved subspace to store options and values for customized
     * functionality. Here you can add additional data for your own event
     * callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[_]] = js.native
+  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
   
   /**
     * (Gantt) The ID of the point (task) that this point depends on in Gantt
@@ -40,78 +38,78 @@ trait GanttPointOptionsObject extends StObject {
     */
   var dependency: js.UndefOr[
     String | XrangePointConnectorsOptionsObject | (js.Array[String | XrangePointConnectorsOptionsObject])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * (Gantt) A description of the point to add to the screen reader
     * information about the point.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * (Gantt) Point specific options for the draggable-points module. Overrides
     * options on `series.dragDrop`.
     */
-  var dragDrop: js.UndefOr[SeriesLineDataDragDropOptions] = js.native
+  var dragDrop: js.UndefOr[SeriesLineDataDragDropOptions] = js.undefined
   
   /**
     * (Highcharts) The `id` of a series in the drilldown.series array to use
     * for a drilldown for this point.
     */
-  var drilldown: js.UndefOr[String] = js.native
+  var drilldown: js.UndefOr[String] = js.undefined
   
   /**
     * (Gantt) The end time of a task.
     */
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) An id for the point. This can be used
     * after render time to get a pointer to the point object through
     * `chart.get()`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Gantt) The rank for this point's data label in case of collision. If two
     * data labels are about to overlap, only the one with the highest
     * `labelrank` will be drawn.
     */
-  var labelrank: js.UndefOr[Double] = js.native
+  var labelrank: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) Options for the point markers of line-like
     * series.
     */
-  var marker: js.UndefOr[PointMarkerOptionsObject] = js.native
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
     * (Gantt) Whether this point is a milestone. If so, only the `start` option
     * is handled, while `end` is ignored.
     */
-  var milestone: js.UndefOr[Boolean] = js.native
+  var milestone: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) The name of a task. If a `treegrid` y-axis is used (default in
     * Gantt charts), this will be picked up automatically, and used to
     * calculate the y-value.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * (Gantt) The ID of the parent point (task) of this point in Gantt charts.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * (Gantt) The start time of a task.
     */
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) The Y value of a task.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object GanttPointOptionsObject {
   
@@ -143,7 +141,7 @@ object GanttPointOptionsObject {
     def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
     
     @scala.inline
-    def setCustom(value: Dictionary[_]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)

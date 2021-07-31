@@ -3,57 +3,49 @@ package typings.season
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("season", "isObjectPath")
+  @JSImport("season", JSImport.Namespace)
   @js.native
-  def isObjectPath(objectPath: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("season", "readFile")
-  @js.native
-  def readFile(objectPath: String, callback: js.Function2[/* err */ Error | Null, /* object */ js.Any, Unit]): Unit = js.native
-  @JSImport("season", "readFile")
-  @js.native
+  @scala.inline
+  def isObjectPath(objectPath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObjectPath")(objectPath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def readFile(objectPath: String, callback: js.Function2[/* err */ Error | Null, /* object */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(objectPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def readFile(
     objectPath: String,
     options: ParseOptions,
     callback: js.Function2[/* err */ Error | Null, /* object */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(objectPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("season", "readFileSync")
-  @js.native
-  def readFileSync(objectPath: String): js.Any = js.native
-  @JSImport("season", "readFileSync")
-  @js.native
-  def readFileSync(objectPath: String, options: ParseOptions): js.Any = js.native
+  @scala.inline
+  def readFileSync(objectPath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(objectPath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def readFileSync(objectPath: String, options: ParseOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(objectPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("season", "resolve")
-  @js.native
-  def resolve(objectPath: String): String | Null = js.native
+  @scala.inline
+  def resolve(objectPath: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(objectPath.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("season", "setCacheDir")
-  @js.native
-  def setCacheDir(cacheDirectory: String): Unit = js.native
+  @scala.inline
+  def setCacheDir(cacheDirectory: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCacheDir")(cacheDirectory.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("season", "stringify")
-  @js.native
-  def stringify(`object`: js.Any): String = js.native
+  @scala.inline
+  def stringify(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("season", "writeFile")
-  @js.native
-  def writeFile(objectPath: String, `object`: js.Any, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @scala.inline
+  def writeFile(objectPath: String, `object`: js.Any, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(objectPath.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("season", "writeFileSync")
-  @js.native
-  def writeFileSync(objectPath: String, `object`: js.Any): Unit = js.native
+  @scala.inline
+  def writeFileSync(objectPath: String, `object`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(objectPath.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait ParseOptions extends StObject {
     
-    var allowDuplicateKeys: js.UndefOr[Boolean] = js.native
+    var allowDuplicateKeys: js.UndefOr[Boolean] = js.undefined
   }
   object ParseOptions {
     

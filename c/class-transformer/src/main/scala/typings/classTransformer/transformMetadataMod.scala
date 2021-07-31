@@ -4,7 +4,6 @@ import typings.classTransformer.exposeExcludeOptionsMod.TransformOptions
 import typings.classTransformer.transformationTypeEnumMod.TransformationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformMetadataMod {
@@ -15,7 +14,12 @@ object transformMetadataMod {
     def this(
       target: js.Function,
       propertyName: String,
-      transformFn: js.Function3[/* value */ js.Any, /* obj */ js.Any, /* transformationType */ TransformationType, _],
+      transformFn: js.Function3[
+            /* value */ js.Any, 
+            /* obj */ js.Any, 
+            /* transformationType */ TransformationType, 
+            js.Any
+          ],
       options: TransformOptions
     ) = this()
     

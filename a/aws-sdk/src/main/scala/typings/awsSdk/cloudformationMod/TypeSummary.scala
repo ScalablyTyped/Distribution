@@ -2,41 +2,39 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeSummary extends StObject {
   
   /**
     * The ID of the default version of the type. The default version is used when the type version is not specified. To set the default version of a type, use  SetTypeDefaultVersion . 
     */
-  var DefaultVersionId: js.UndefOr[TypeVersionId] = js.native
+  var DefaultVersionId: js.UndefOr[TypeVersionId] = js.undefined
   
   /**
     * The description of the type.
     */
-  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
     * When the current default version of the type was registered.
     */
-  var LastUpdated: js.UndefOr[Timestamp] = js.native
+  var LastUpdated: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The kind of type.
     */
-  var Type: js.UndefOr[RegistryType] = js.native
+  var Type: js.UndefOr[RegistryType] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the type.
     */
-  var TypeArn: js.UndefOr[typings.awsSdk.cloudformationMod.TypeArn] = js.native
+  var TypeArn: js.UndefOr[typings.awsSdk.cloudformationMod.TypeArn] = js.undefined
   
   /**
     * The name of the type.
     */
-  var TypeName: js.UndefOr[typings.awsSdk.cloudformationMod.TypeName] = js.native
+  var TypeName: js.UndefOr[typings.awsSdk.cloudformationMod.TypeName] = js.undefined
 }
 object TypeSummary {
   

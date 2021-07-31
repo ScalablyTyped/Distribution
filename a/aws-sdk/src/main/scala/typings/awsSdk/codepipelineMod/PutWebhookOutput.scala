@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutWebhookOutput extends StObject {
   
   /**
     * The detail returned from creating the webhook, such as the webhook name, webhook URL, and webhook ARN.
     */
-  var webhook: js.UndefOr[ListWebhookItem] = js.native
+  var webhook: js.UndefOr[ListWebhookItem] = js.undefined
 }
 object PutWebhookOutput {
   

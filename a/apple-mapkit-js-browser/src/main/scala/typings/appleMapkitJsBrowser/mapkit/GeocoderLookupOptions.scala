@@ -2,35 +2,33 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options that constrain geocoder lookup results to a specific area or set a
   * language for results.
   */
-@js.native
 trait GeocoderLookupOptions extends StObject {
   
   /**
     * Coordinates used to constrain the lookup results.
     */
-  var coordinate: js.UndefOr[Coordinate] = js.native
+  var coordinate: js.UndefOr[Coordinate] = js.undefined
   
   /**
     * The language in which to display the lookup results.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * A list of countries in which to constrain the lookup results.
     */
-  var limitToCountries: js.UndefOr[String] = js.native
+  var limitToCountries: js.UndefOr[String] = js.undefined
   
   /**
     * A region in which to constrain lookup results.
     */
-  var region: js.UndefOr[CoordinateRegion] = js.native
+  var region: js.UndefOr[CoordinateRegion] = js.undefined
 }
 object GeocoderLookupOptions {
   

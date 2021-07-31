@@ -2,21 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FocusNavigationEventInit extends EventInit {
+trait FocusNavigationEventInit
+  extends StObject
+     with EventInit {
   
-  var navigationReason: js.UndefOr[java.lang.String | Null] = js.native
+  var navigationReason: js.UndefOr[java.lang.String | Null] = js.undefined
   
-  var originHeight: js.UndefOr[Double] = js.native
+  var originHeight: js.UndefOr[Double] = js.undefined
   
-  var originLeft: js.UndefOr[Double] = js.native
+  var originLeft: js.UndefOr[Double] = js.undefined
   
-  var originTop: js.UndefOr[Double] = js.native
+  var originTop: js.UndefOr[Double] = js.undefined
   
-  var originWidth: js.UndefOr[Double] = js.native
+  var originWidth: js.UndefOr[Double] = js.undefined
 }
 object FocusNavigationEventInit {
   

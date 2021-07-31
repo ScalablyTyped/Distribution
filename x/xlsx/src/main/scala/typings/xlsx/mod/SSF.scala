@@ -4,49 +4,41 @@ import typings.ssf.mod.SSFDate
 import typings.ssf.mod.SSFTable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SSF {
   
-  @JSImport("xlsx", "SSF.format")
+  @JSImport("xlsx", "SSF")
   @js.native
-  def format(fmt: String, `val`: js.Any): String = js.native
-  @JSImport("xlsx", "SSF.format")
-  @js.native
-  def format(fmt: String, `val`: js.Any, opts: js.Any): String = js.native
-  @JSImport("xlsx", "SSF.format")
-  @js.native
-  def format(fmt: Double, `val`: js.Any): String = js.native
-  @JSImport("xlsx", "SSF.format")
-  @js.native
-  def format(fmt: Double, `val`: js.Any, opts: js.Any): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("xlsx", "SSF.get_table")
-  @js.native
-  def getTable(): SSFTable = js.native
+  @scala.inline
+  def format(fmt: String, `val`: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(fmt: String, `val`: js.Any, opts: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(fmt: Double, `val`: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(fmt: Double, `val`: js.Any, opts: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("xlsx", "SSF.is_date")
-  @js.native
-  def isDate(fmt: String): Boolean = js.native
+  @scala.inline
+  def getTable(): SSFTable = ^.asInstanceOf[js.Dynamic].applyDynamic("get_table")().asInstanceOf[SSFTable]
   
-  @JSImport("xlsx", "SSF.load")
-  @js.native
-  def load(fmt: String): Double = js.native
-  @JSImport("xlsx", "SSF.load")
-  @js.native
-  def load(fmt: String, idx: Double): Double = js.native
+  @scala.inline
+  def isDate(fmt: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is_date")(fmt.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("xlsx", "SSF.load_table")
-  @js.native
-  def loadTable(tbl: SSFTable): Unit = js.native
+  @scala.inline
+  def load(fmt: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(fmt.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def load(fmt: String, idx: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(fmt.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("xlsx", "SSF.parse_date_code")
-  @js.native
-  def parseDateCode(v: Double): SSFDate = js.native
-  @JSImport("xlsx", "SSF.parse_date_code")
-  @js.native
-  def parseDateCode(v: Double, opts: js.Any): SSFDate = js.native
+  @scala.inline
+  def loadTable(tbl: SSFTable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load_table")(tbl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def parseDateCode(v: Double): SSFDate = ^.asInstanceOf[js.Dynamic].applyDynamic("parse_date_code")(v.asInstanceOf[js.Any]).asInstanceOf[SSFDate]
+  @scala.inline
+  def parseDateCode(v: Double, opts: js.Any): SSFDate = (^.asInstanceOf[js.Dynamic].applyDynamic("parse_date_code")(v.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SSFDate]
   
   @JSImport("xlsx", "SSF.version")
   @js.native

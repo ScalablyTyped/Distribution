@@ -2,24 +2,22 @@ package typings.leafletRotatedmarker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait Marker extends StObject {
     
     /*
       * Sets the rotation angle value.
       */
-    def setRotationAngle(newAngle: Double): this.type = js.native
+    def setRotationAngle(newAngle: Double): this.type
     
     /**
       * Sets the rotation origin value.
       */
-    def setRotationOrigin(newOrigin: String): this.type = js.native
+    def setRotationOrigin(newOrigin: String): this.type
   }
   object Marker {
     
@@ -40,13 +38,12 @@ object mod {
     }
   }
   
-  @js.native
   trait MarkerOptions extends StObject {
     
-    var rotationAngle: js.UndefOr[Double] = js.native
+    var rotationAngle: js.UndefOr[Double] = js.undefined
     
     // Rotation angle, in degrees, clockwise. (Default = 0)
-    var rotationOrigin: js.UndefOr[String] = js.native
+    var rotationOrigin: js.UndefOr[String] = js.undefined
   }
   object MarkerOptions {
     

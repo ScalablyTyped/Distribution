@@ -2,17 +2,17 @@ package typings.jointjs.mod.attributes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGCircleAttributes extends SVGAttributes {
+trait SVGCircleAttributes
+  extends StObject
+     with SVGAttributes {
   
-  var cx: js.UndefOr[String | Double] = js.native
+  var cx: js.UndefOr[String | Double] = js.undefined
   
-  var cy: js.UndefOr[String | Double] = js.native
+  var cy: js.UndefOr[String | Double] = js.undefined
   
-  var r: js.UndefOr[String | Double] = js.native
+  var r: js.UndefOr[String | Double] = js.undefined
 }
 object SVGCircleAttributes {
   

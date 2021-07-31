@@ -2,15 +2,14 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonPathProps
-  extends TransformProps
+  extends StObject
      with FillProps
      with StrokeProps
      with ClipProps
+     with TransformProps
      with VectorEffectProps
      with ResponderProps
      with TouchableProps

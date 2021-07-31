@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgHierarchicalGridLocale
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,13 +16,13 @@ trait IgHierarchicalGridLocale
     * Specifies the default tooltip applied to an expand column cell, that is currently expanded.
     *
     */
-  var collapseTooltip: js.UndefOr[String] = js.native
+  var collapseTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the default tooltip applied to an expand column cell, that is currently collapsed.
     *
     */
-  var expandTooltip: js.UndefOr[String] = js.native
+  var expandTooltip: js.UndefOr[String] = js.undefined
 }
 object IgHierarchicalGridLocale {
   

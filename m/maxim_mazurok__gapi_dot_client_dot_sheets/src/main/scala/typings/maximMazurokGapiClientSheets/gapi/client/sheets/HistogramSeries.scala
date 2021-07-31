@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistogramSeries extends StObject {
   
   /** The color of the column representing this series in each bucket. This field is optional. */
-  var barColor: js.UndefOr[Color] = js.native
+  var barColor: js.UndefOr[Color] = js.undefined
   
   /** The color of the column representing this series in each bucket. This field is optional. If bar_color is also set, this field takes precedence. */
-  var barColorStyle: js.UndefOr[ColorStyle] = js.native
+  var barColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** The data for this histogram series. */
-  var data: js.UndefOr[ChartData] = js.native
+  var data: js.UndefOr[ChartData] = js.undefined
 }
 object HistogramSeries {
   

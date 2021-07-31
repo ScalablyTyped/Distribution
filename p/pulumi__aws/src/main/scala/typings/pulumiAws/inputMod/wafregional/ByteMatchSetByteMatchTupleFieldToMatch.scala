@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.wafregional
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ByteMatchSetByteMatchTupleFieldToMatch extends StObject {
   
   /**
     * When the value of Type is HEADER, enter the name of the header that you want AWS WAF to search, for example, User-Agent or Referer. If the value of Type is any other value, omit Data.
     */
-  var data: js.UndefOr[Input[String]] = js.native
+  var data: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The part of the web request that you want AWS WAF to search for a specified string.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object ByteMatchSetByteMatchTupleFieldToMatch {
   

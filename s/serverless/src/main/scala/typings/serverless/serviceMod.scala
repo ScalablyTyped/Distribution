@@ -6,47 +6,86 @@ import typings.serverless.mod.Event
 import typings.serverless.mod.FunctionDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceMod {
   
   @JSImport("serverless/classes/Service", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Service {
+  class ^ protected ()
+    extends StObject
+       with Service {
     def this(serverless: typings.serverless.mod.^, data: js.Object) = this()
+    
+    /* CompleteClass */
+    var custom: Custom = js.native
+    
+    /* CompleteClass */
+    override def getAllEventsInFunction(functionName: String): js.Array[Event] = js.native
+    
+    /* CompleteClass */
+    override def getAllFunctions(): js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def getAllFunctionsNames(): js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def getEventInFunction(eventName: String, functionName: String): Event = js.native
+    
+    /* CompleteClass */
+    override def getFunction(functionName: String): FunctionDefinition = js.native
+    
+    /* CompleteClass */
+    override def getServiceName(): String = js.native
+    
+    /* CompleteClass */
+    override def load(rawOptions: js.Object): js.Promise[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def mergeResourceArrays(): Unit = js.native
+    
+    /* CompleteClass */
+    var provider: CompiledCloudFormationTemplate = js.native
+    
+    /* CompleteClass */
+    override def setFunctionNames(rawOptions: js.Object): Unit = js.native
+    
+    /* CompleteClass */
+    override def update(data: js.Object): js.Object = js.native
+    
+    /* CompleteClass */
+    override def validate(): Service = js.native
   }
   
   type Custom = StringDictionary[js.Any]
   
-  @js.native
   trait Service extends StObject {
     
-    var custom: Custom = js.native
+    var custom: Custom
     
-    def getAllEventsInFunction(functionName: String): js.Array[Event] = js.native
+    def getAllEventsInFunction(functionName: String): js.Array[Event]
     
-    def getAllFunctions(): js.Array[String] = js.native
+    def getAllFunctions(): js.Array[String]
     
-    def getAllFunctionsNames(): js.Array[String] = js.native
+    def getAllFunctionsNames(): js.Array[String]
     
-    def getEventInFunction(eventName: String, functionName: String): Event = js.native
+    def getEventInFunction(eventName: String, functionName: String): Event
     
-    def getFunction(functionName: String): FunctionDefinition = js.native
+    def getFunction(functionName: String): FunctionDefinition
     
-    def getServiceName(): String = js.native
+    def getServiceName(): String
     
-    def load(rawOptions: js.Object): js.Promise[_] = js.native
+    def load(rawOptions: js.Object): js.Promise[js.Any]
     
-    def mergeResourceArrays(): Unit = js.native
+    def mergeResourceArrays(): Unit
     
-    var provider: CompiledCloudFormationTemplate = js.native
+    var provider: CompiledCloudFormationTemplate
     
-    def setFunctionNames(rawOptions: js.Object): Unit = js.native
+    def setFunctionNames(rawOptions: js.Object): Unit
     
-    def update(data: js.Object): js.Object = js.native
+    def update(data: js.Object): js.Object
     
-    def validate(): Service = js.native
+    def validate(): Service
   }
   object Service {
     
@@ -59,7 +98,7 @@ object serviceMod {
       getEventInFunction: (String, String) => Event,
       getFunction: String => FunctionDefinition,
       getServiceName: () => String,
-      load: js.Object => js.Promise[_],
+      load: js.Object => js.Promise[js.Any],
       mergeResourceArrays: () => Unit,
       provider: CompiledCloudFormationTemplate,
       setFunctionNames: js.Object => Unit,
@@ -95,7 +134,7 @@ object serviceMod {
       def setGetServiceName(value: () => String): Self = StObject.set(x, "getServiceName", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setLoad(value: js.Object => js.Promise[_]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      def setLoad(value: js.Object => js.Promise[js.Any]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMergeResourceArrays(value: () => Unit): Self = StObject.set(x, "mergeResourceArrays", js.Any.fromFunction0(value))

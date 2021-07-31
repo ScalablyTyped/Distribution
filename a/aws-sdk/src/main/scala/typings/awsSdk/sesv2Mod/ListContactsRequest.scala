@@ -2,31 +2,29 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListContactsRequest extends StObject {
   
   /**
     * The name of the contact list.
     */
-  var ContactListName: typings.awsSdk.sesv2Mod.ContactListName = js.native
+  var ContactListName: typings.awsSdk.sesv2Mod.ContactListName
   
   /**
     * A filter that can be applied to a list of contacts.
     */
-  var Filter: js.UndefOr[ListContactsFilter] = js.native
+  var Filter: js.UndefOr[ListContactsFilter] = js.undefined
   
   /**
     * A string token indicating that there might be additional contacts available to be listed. Use the token provided in the Response to use in the subsequent call to ListContacts with the same parameters to retrieve the next page of contacts.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.undefined
   
   /**
     * The number of contacts that may be returned at once, which is dependent on if there are more or less contacts than the value of the PageSize. Use this parameter to paginate results. If additional contacts exist beyond the specified limit, the NextToken element is sent in the response. Use the NextToken value in subsequent requests to retrieve additional contacts.
     */
-  var PageSize: js.UndefOr[MaxItems] = js.native
+  var PageSize: js.UndefOr[MaxItems] = js.undefined
 }
 object ListContactsRequest {
   

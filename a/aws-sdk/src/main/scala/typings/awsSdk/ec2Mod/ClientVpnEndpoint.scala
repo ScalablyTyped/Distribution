@@ -2,116 +2,114 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientVpnEndpoint extends StObject {
   
   /**
     * Information about the associated target networks. A target network is a subnet in a VPC.
     */
-  var AssociatedTargetNetworks: js.UndefOr[AssociatedTargetNetworkSet] = js.native
+  var AssociatedTargetNetworks: js.UndefOr[AssociatedTargetNetworkSet] = js.undefined
   
   /**
     * Information about the authentication method used by the Client VPN endpoint.
     */
-  var AuthenticationOptions: js.UndefOr[ClientVpnAuthenticationList] = js.native
+  var AuthenticationOptions: js.UndefOr[ClientVpnAuthenticationList] = js.undefined
   
   /**
     * The IPv4 address range, in CIDR notation, from which client IP addresses are assigned.
     */
-  var ClientCidrBlock: js.UndefOr[String] = js.native
+  var ClientCidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * The options for managing connection authorization for new client connections.
     */
-  var ClientConnectOptions: js.UndefOr[ClientConnectResponseOptions] = js.native
+  var ClientConnectOptions: js.UndefOr[ClientConnectResponseOptions] = js.undefined
   
   /**
     * The ID of the Client VPN endpoint.
     */
-  var ClientVpnEndpointId: js.UndefOr[String] = js.native
+  var ClientVpnEndpointId: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the client connection logging options for the Client VPN endpoint.
     */
-  var ConnectionLogOptions: js.UndefOr[ConnectionLogResponseOptions] = js.native
+  var ConnectionLogOptions: js.UndefOr[ConnectionLogResponseOptions] = js.undefined
   
   /**
     * The date and time the Client VPN endpoint was created.
     */
-  var CreationTime: js.UndefOr[String] = js.native
+  var CreationTime: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the Client VPN endpoint was deleted, if applicable.
     */
-  var DeletionTime: js.UndefOr[String] = js.native
+  var DeletionTime: js.UndefOr[String] = js.undefined
   
   /**
     * A brief description of the endpoint.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The DNS name to be used by clients when connecting to the Client VPN endpoint.
     */
-  var DnsName: js.UndefOr[String] = js.native
+  var DnsName: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the DNS servers to be used for DNS resolution. 
     */
-  var DnsServers: js.UndefOr[ValueStringList] = js.native
+  var DnsServers: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The IDs of the security groups for the target network.
     */
-  var SecurityGroupIds: js.UndefOr[ClientVpnSecurityGroupIdSet] = js.native
+  var SecurityGroupIds: js.UndefOr[ClientVpnSecurityGroupIdSet] = js.undefined
   
   /**
     * The URL of the self-service portal.
     */
-  var SelfServicePortalUrl: js.UndefOr[String] = js.native
+  var SelfServicePortalUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the server certificate.
     */
-  var ServerCertificateArn: js.UndefOr[String] = js.native
+  var ServerCertificateArn: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether split-tunnel is enabled in the AWS Client VPN endpoint. For information about split-tunnel VPN endpoints, see Split-Tunnel AWS Client VPN Endpoint in the AWS Client VPN Administrator Guide.
     */
-  var SplitTunnel: js.UndefOr[Boolean] = js.native
+  var SplitTunnel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The current state of the Client VPN endpoint.
     */
-  var Status: js.UndefOr[ClientVpnEndpointStatus] = js.native
+  var Status: js.UndefOr[ClientVpnEndpointStatus] = js.undefined
   
   /**
     * Any tags assigned to the Client VPN endpoint.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The transport protocol used by the Client VPN endpoint.
     */
-  var TransportProtocol: js.UndefOr[typings.awsSdk.ec2Mod.TransportProtocol] = js.native
+  var TransportProtocol: js.UndefOr[typings.awsSdk.ec2Mod.TransportProtocol] = js.undefined
   
   /**
     * The ID of the VPC.
     */
-  var VpcId: js.UndefOr[typings.awsSdk.ec2Mod.VpcId] = js.native
+  var VpcId: js.UndefOr[typings.awsSdk.ec2Mod.VpcId] = js.undefined
   
   /**
     * The port number for the Client VPN endpoint.
     */
-  var VpnPort: js.UndefOr[Integer] = js.native
+  var VpnPort: js.UndefOr[Integer] = js.undefined
   
   /**
     * The protocol used by the VPN session.
     */
-  var VpnProtocol: js.UndefOr[typings.awsSdk.ec2Mod.VpnProtocol] = js.native
+  var VpnProtocol: js.UndefOr[typings.awsSdk.ec2Mod.VpnProtocol] = js.undefined
 }
 object ClientVpnEndpoint {
   

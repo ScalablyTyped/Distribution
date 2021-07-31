@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "TaskProcessor")
@@ -15,6 +14,6 @@ class TaskProcessor protected () extends StObject {
   
   def isDestroyed(): Boolean = js.native
   
-  def scheduleTask(parameters: js.Any): js.Promise[_] = js.native
-  def scheduleTask(parameters: js.Any, transferableObjects: js.Array[_]): js.Promise[_] = js.native
+  def scheduleTask(parameters: js.Any): js.Promise[js.Any] = js.native
+  def scheduleTask(parameters: js.Any, transferableObjects: js.Array[js.Any]): js.Promise[js.Any] = js.native
 }

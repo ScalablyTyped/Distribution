@@ -2,17 +2,15 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Callbacks extends StObject {
   
   /** Invoked on every step of animation */
-  var onChange: js.UndefOr[js.Function] = js.native
+  var onChange: js.UndefOr[js.Function] = js.undefined
   
   /** Invoked on completion */
-  var onComplete: js.UndefOr[js.Function] = js.native
+  var onComplete: js.UndefOr[js.Function] = js.undefined
 }
 object Callbacks {
   

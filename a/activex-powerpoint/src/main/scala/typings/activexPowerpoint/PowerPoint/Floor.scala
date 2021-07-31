@@ -2,40 +2,38 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Floor extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Border: ChartBorder = js.native
+  val Border: ChartBorder
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Fill: ChartFillFormat = js.native
+  val Fill: ChartFillFormat
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  val Interior: typings.activexPowerpoint.PowerPoint.Interior = js.native
+  val Interior: typings.activexPowerpoint.PowerPoint.Interior
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Paste(): Unit = js.native
+  def Paste(): Unit
   
-  var PictureType: js.Any = js.native
+  var PictureType: js.Any
   
   @JSName("PowerPoint.Floor_typekey")
-  var PowerPointDotFloor_typekey: Floor = js.native
+  var PowerPointDotFloor_typekey: Floor
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
   
-  var Thickness: Double = js.native
+  var Thickness: Double
 }
 object Floor {
   

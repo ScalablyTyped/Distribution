@@ -2,7 +2,6 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This assumes that any module id will have the same resolution for sibling files located in the same folder.
   */
 @js.native
-trait ModuleResolutionCache extends NonRelativeModuleNameResolutionCache {
+trait ModuleResolutionCache
+  extends StObject
+     with NonRelativeModuleNameResolutionCache {
   
   def getOrCreateCacheForDirectory(directoryName: java.lang.String): Map[ResolvedModuleWithFailedLookupLocations] = js.native
   def getOrCreateCacheForDirectory(directoryName: java.lang.String, redirectedReference: ResolvedProjectReference): Map[ResolvedModuleWithFailedLookupLocations] = js.native

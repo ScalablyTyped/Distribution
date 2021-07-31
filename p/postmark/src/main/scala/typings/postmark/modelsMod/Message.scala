@@ -3,7 +3,6 @@ package typings.postmark.modelsMod
 import typings.postmark.supportingTypesMod.Hash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark/dist/client/models", "Message")

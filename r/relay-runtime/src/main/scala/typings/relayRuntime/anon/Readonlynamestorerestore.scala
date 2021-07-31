@@ -4,20 +4,20 @@ import typings.relayRuntime.relayRuntimeStrings.storeDotrestore
 import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  name :'store.restore'}> */
-@js.native
-trait Readonlynamestorerestore extends LogEvent {
+trait Readonlynamestorerestore
+  extends StObject
+     with LogEvent {
   
-  val name: storeDotrestore = js.native
+  val name: storeDotrestore
 }
 object Readonlynamestorerestore {
   
   @scala.inline
-  def apply(name: storeDotrestore): Readonlynamestorerestore = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): Readonlynamestorerestore = {
+    val __obj = js.Dynamic.literal(name = "store.restore")
     __obj.asInstanceOf[Readonlynamestorerestore]
   }
   

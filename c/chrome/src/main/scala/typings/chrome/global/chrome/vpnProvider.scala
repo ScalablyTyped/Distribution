@@ -9,7 +9,6 @@ import typings.chrome.chrome.vpnProvider.VpnUiEvent
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -27,23 +26,18 @@ object vpnProvider {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.vpnProvider.createConfig")
-  @js.native
-  def createConfig(name: String, callback: js.Function1[/* id */ String, Unit]): Unit = js.native
+  @scala.inline
+  def createConfig(name: String, callback: js.Function1[/* id */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfig")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.vpnProvider.destroyConfig")
-  @js.native
-  def destroyConfig(id: String): Unit = js.native
-  @JSGlobal("chrome.vpnProvider.destroyConfig")
-  @js.native
-  def destroyConfig(id: String, callback: js.Function): Unit = js.native
+  @scala.inline
+  def destroyConfig(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyConfig")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def destroyConfig(id: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyConfig")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.vpnProvider.notifyConnectionStateChanged")
-  @js.native
-  def notifyConnectionStateChanged(state: String): Unit = js.native
-  @JSGlobal("chrome.vpnProvider.notifyConnectionStateChanged")
-  @js.native
-  def notifyConnectionStateChanged(state: String, callback: js.Function): Unit = js.native
+  @scala.inline
+  def notifyConnectionStateChanged(state: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyConnectionStateChanged")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def notifyConnectionStateChanged(state: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notifyConnectionStateChanged")(state.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("chrome.vpnProvider.onConfigCreated")
   @js.native
@@ -75,14 +69,11 @@ object vpnProvider {
   @scala.inline
   def onUIEvent_=(x: VpnUiEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onUIEvent")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.vpnProvider.sendPacket")
-  @js.native
-  def sendPacket(data: ArrayBuffer): Unit = js.native
-  @JSGlobal("chrome.vpnProvider.sendPacket")
-  @js.native
-  def sendPacket(data: ArrayBuffer, callback: js.Function): Unit = js.native
+  @scala.inline
+  def sendPacket(data: ArrayBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def sendPacket(data: ArrayBuffer, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.vpnProvider.setParameters")
-  @js.native
-  def setParameters(parameters: VpnSessionParameters, callback: js.Function): Unit = js.native
+  @scala.inline
+  def setParameters(parameters: VpnSessionParameters, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setParameters")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

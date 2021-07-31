@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsCreateRegistrationTokenForOrgRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: POST = js.native
+  var method: POST
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: `SlashorgsSlashColonorgSlashactionsSlashrunnersSlashregistration-token` = js.native
+  var url: `SlashorgsSlashColonorgSlashactionsSlashrunnersSlashregistration-token`
 }
 object ActionsCreateRegistrationTokenForOrgRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: POST,
-    request: RequestRequestOptions,
-    url: `SlashorgsSlashColonorgSlashactionsSlashrunnersSlashregistration-token`
-  ): ActionsCreateRegistrationTokenForOrgRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsCreateRegistrationTokenForOrgRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/orgs/:org/actions/runners/registration-token")
     __obj.asInstanceOf[ActionsCreateRegistrationTokenForOrgRequestOptions]
   }
   

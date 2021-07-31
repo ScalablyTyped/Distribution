@@ -2,16 +2,14 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `17`[Params /* <: js.UndefOr[js.Object] */] extends StObject {
   
   /**
     * Params for this route
     */
-  var params: js.UndefOr[Params] = js.native
+  var params: js.UndefOr[Params] = js.undefined
 }
 object `17` {
   
@@ -22,7 +20,7 @@ object `17` {
   }
   
   @scala.inline
-  implicit class `17MutableBuilder`[Self <: `17`[_], Params /* <: js.UndefOr[js.Object] */] (val x: Self with `17`[Params]) extends AnyVal {
+  implicit class `17MutableBuilder`[Self <: `17`[?], Params /* <: js.UndefOr[js.Object] */] (val x: Self & `17`[Params]) extends AnyVal {
     
     @scala.inline
     def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])

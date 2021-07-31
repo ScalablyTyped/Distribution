@@ -4,17 +4,17 @@ import typings.chromeApps.chrome.fileSystemProvider.internal.RequestedEventOptio
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreateDirectoryRequestedEventOptions extends RequestedEventOptions {
+trait CreateDirectoryRequestedEventOptions
+  extends StObject
+     with RequestedEventOptions {
   
   /** The path of the directory which is to be operated on. */
-  var directoryPath: String = js.native
+  var directoryPath: String
   
   /** Whether the operation is recursive (for directories only). */
-  var recursive: Boolean = js.native
+  var recursive: Boolean
 }
 object CreateDirectoryRequestedEventOptions {
   

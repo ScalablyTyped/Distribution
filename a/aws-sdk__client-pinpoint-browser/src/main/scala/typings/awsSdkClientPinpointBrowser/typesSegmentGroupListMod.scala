@@ -8,23 +8,21 @@ import typings.awsSdkClientPinpointBrowser.typesSegmentGroupMod.UnmarshalledSegm
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSegmentGroupListMod {
   
-  @js.native
   trait SegmentGroupList extends StObject {
     
     /**
       * A set of segment criteria to evaluate.
       */
-    var Groups: js.UndefOr[js.Array[SegmentGroup] | Iterable[SegmentGroup]] = js.native
+    var Groups: js.UndefOr[js.Array[SegmentGroup] | Iterable[SegmentGroup]] = js.undefined
     
     /**
       * Specify how to handle multiple segment groups. For example, if the segment includes three segment groups, should the resulting segment include endpoints that are matched by all, any, or none of the segment groups you created. Acceptable values: ALL, ANY, or NONE.
       */
-    var Include: js.UndefOr[ALL | ANY | NONE | String] = js.native
+    var Include: js.UndefOr[ALL | ANY | NONE | String] = js.undefined
   }
   object SegmentGroupList {
     
@@ -54,14 +52,15 @@ object typesSegmentGroupListMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSegmentGroupList extends SegmentGroupList {
+  trait UnmarshalledSegmentGroupList
+    extends StObject
+       with SegmentGroupList {
     
     /**
       * A set of segment criteria to evaluate.
       */
     @JSName("Groups")
-    var Groups_UnmarshalledSegmentGroupList: js.UndefOr[js.Array[UnmarshalledSegmentGroup]] = js.native
+    var Groups_UnmarshalledSegmentGroupList: js.UndefOr[js.Array[UnmarshalledSegmentGroup]] = js.undefined
   }
   object UnmarshalledSegmentGroupList {
     

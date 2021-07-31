@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This structure collects all necessary information to describe the memory layout of a bitmap having integer color channels
   * @since OOo 2.0
   */
-@js.native
 trait IntegerBitmapLayout extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait IntegerBitmapLayout extends StObject {
     * entries.
     * @see XBitmapPalette
     */
-  var ColorSpace: XIntegerBitmapColorSpace = js.native
+  var ColorSpace: XIntegerBitmapColorSpace
   
   /**
     * This member determines the bit order (only relevant if a pixel uses less than 8 bits, of course).
@@ -33,7 +31,7 @@ trait IntegerBitmapLayout extends StObject {
     * Example: for a 1bpp bitmap, each pixel is represented by exactly one bit. If this member is `TRUE` , the first pixel is the MSB of the first byte, and
     * the eighth pixel is the LSB of the first byte. If this member is `FALSE` , it's just the opposite.
     */
-  var IsMsbFirst: Boolean = js.native
+  var IsMsbFirst: Boolean
   
   /**
     * This member determines whether the bitmap data are actually indices into a color map.
@@ -42,7 +40,7 @@ trait IntegerBitmapLayout extends StObject {
     * If this member references a valid palette, one of the pixel components as returned by the color space referenced from the {@link ColorSpace} is
     * required to be of type {@link ColorComponentTag.INDEX} . That component is then used to index the palette.
     */
-  var Palette: XBitmapPalette = js.native
+  var Palette: XBitmapPalette
   
   /**
     * Byte offset between the start of two consecutive planes.
@@ -52,28 +50,28 @@ trait IntegerBitmapLayout extends StObject {
     * pixel lies consecutively in memory. For a planar layout, the first channel of all pixel is stored consecutive, followed by the second channel, and so
     * forth.
     */
-  var PlaneStride: Double = js.native
+  var PlaneStride: Double
   
   /**
     * Number of data bytes per scanline.
     *
     * This value must not be negative
     */
-  var ScanLineBytes: Double = js.native
+  var ScanLineBytes: Double
   
   /**
     * Byte offset between the start of two consecutive scanlines.
     *
     * This value is permitted to be negative, denoting a bitmap whose content is flipped at the x axis.
     */
-  var ScanLineStride: Double = js.native
+  var ScanLineStride: Double
   
   /**
     * Number of scanlines for this bitmap.
     *
     * This value must not be negative
     */
-  var ScanLines: Double = js.native
+  var ScanLines: Double
 }
 object IntegerBitmapLayout {
   

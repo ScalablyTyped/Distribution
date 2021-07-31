@@ -5,28 +5,28 @@ import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import typings.tensorflowTfjsCore.scatterNdUtilMod.ScatterShapeInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scatterUtil {
   
-  @JSImport("@tensorflow/tfjs-core/dist/base", "scatter_util.calculateShapes")
+  @JSImport("@tensorflow/tfjs-core/dist/base", "scatter_util")
   @js.native
-  def calculateShapes(updates: TensorInfo, indices: TensorInfo, shape: js.Array[Double]): ScatterShapeInfo = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/base", "scatter_util.validateInput")
-  @js.native
+  @scala.inline
+  def calculateShapes(updates: TensorInfo, indices: TensorInfo, shape: js.Array[Double]): ScatterShapeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateShapes")(updates.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[ScatterShapeInfo]
+  
+  @scala.inline
   def validateInput(
     updates: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     shape: js.Array[Double]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateInput")(updates.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-core/dist/base", "scatter_util.validateUpdateShape")
-  @js.native
+  @scala.inline
   def validateUpdateShape(
     shape: js.Array[Double],
     indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     updates: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateUpdateShape")(shape.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

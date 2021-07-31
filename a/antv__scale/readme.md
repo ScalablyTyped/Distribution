@@ -10,9 +10,9 @@ The scale module for G2
 | ------------------ | :-------------: |
 | Full name          | @antv/scale |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 14 |
-| # downloads        | 2458923 |
+| # releases         | 27 |
+| # dependents       | 18 |
+| # downloads        | 2870570 |
 | # stars            | 0 |
 
 ## Links

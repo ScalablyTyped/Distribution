@@ -2,24 +2,22 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGalleries extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: WdListGalleryType): ListGallery = js.native
+  def Item(Index: WdListGalleryType): ListGallery
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.ListGalleries_typekey")
-  var WordDotListGalleries_typekey: ListGalleries = js.native
+  var WordDotListGalleries_typekey: ListGalleries
 }
 object ListGalleries {
   

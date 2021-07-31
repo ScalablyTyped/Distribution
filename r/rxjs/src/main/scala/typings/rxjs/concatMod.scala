@@ -6,51 +6,41 @@ import typings.rxjs.typesMod.ObservedValueOf
 import typings.rxjs.typesMod.SchedulerLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object concatMod {
   
-  @JSImport("rxjs/internal/observable/concat", "concat")
+  @JSImport("rxjs/internal/observable/concat", JSImport.Namespace)
   @js.native
-  def concat[O /* <: ObservableInput[_] */](observables: (O | SchedulerLike)*): Observable[ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/observable/concat", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */](v1: O1): Observable[ObservedValueOf[O1]] = js.native
-  @JSImport("rxjs/internal/observable/concat", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */](v1: O1, scheduler: SchedulerLike): Observable[ObservedValueOf[O1]] = js.native
-  @JSImport("rxjs/internal/observable/concat", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */](v1: O1, v2: O2): Observable[ObservedValueOf[O1 | O2]] = js.native
-  @JSImport("rxjs/internal/observable/concat", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */](v1: O1, v2: O2, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2]] = js.native
-  @JSImport("rxjs/internal/observable/concat", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3): Observable[ObservedValueOf[O1 | O2 | O3]] = js.native
-  @JSImport("rxjs/internal/observable/concat", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3]] = js.native
-  @JSImport("rxjs/internal/observable/concat", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4): Observable[ObservedValueOf[O1 | O2 | O3 | O4]] = js.native
-  @JSImport("rxjs/internal/observable/concat", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3 | O4]] = js.native
-  @JSImport("rxjs/internal/observable/concat", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5]] = js.native
-  @JSImport("rxjs/internal/observable/concat", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5]] = js.native
-  @JSImport("rxjs/internal/observable/concat", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5 | O6]] = js.native
-  @JSImport("rxjs/internal/observable/concat", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5 | O6]] = js.native
-  @JSImport("rxjs/internal/observable/concat", "concat")
-  @js.native
-  def concat_R[R](observables: (ObservableInput[_] | SchedulerLike)*): Observable[R] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def concat[R](observables: (ObservableInput[js.Any] | SchedulerLike)*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */](v1: O1): Observable[ObservedValueOf[O1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any]).asInstanceOf[Observable[ObservedValueOf[O1]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */](v1: O1, scheduler: SchedulerLike): Observable[ObservedValueOf[O1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2): Observable[ObservedValueOf[O1 | O2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3): Observable[ObservedValueOf[O1 | O2 | O3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4): Observable[ObservedValueOf[O1 | O2 | O3 | O4]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3 | O4]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3 | O4]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3 | O4]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5 | O6]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5 | O6]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5 | O6]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5 | O6]]]
+  
+  @scala.inline
+  def concat_O_ObservableInputAny[O /* <: ObservableInput[js.Any] */](observables: (O | SchedulerLike)*): Observable[ObservedValueOf[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[ObservedValueOf[O]]]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCacheClusterMessage extends StObject {
   
   /**
     * The cluster identifier for the cluster to be deleted. This parameter is not case sensitive.
     */
-  var CacheClusterId: String = js.native
+  var CacheClusterId: String
   
   /**
     * The user-supplied name of a final cluster snapshot. This is the unique name that identifies the snapshot. ElastiCache creates the snapshot, and then deletes the cluster immediately afterward.
     */
-  var FinalSnapshotIdentifier: js.UndefOr[String] = js.native
+  var FinalSnapshotIdentifier: js.UndefOr[String] = js.undefined
 }
 object DeleteCacheClusterMessage {
   

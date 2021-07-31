@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnPolicySeasonalOverride extends StObject {
   
   /** Required. Last day on which the override applies. In ISO 8601 format. */
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /** Required. The name of the seasonal override as shown in Merchant Center. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. The policy which is in effect during that time. */
-  var policy: js.UndefOr[ReturnPolicyPolicy] = js.native
+  var policy: js.UndefOr[ReturnPolicyPolicy] = js.undefined
   
   /** Required. First day on which the override applies. In ISO 8601 format. */
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
 }
 object ReturnPolicySeasonalOverride {
   

@@ -33,7 +33,6 @@ import typings.reactPlaidLink.reactPlaidLinkStrings.tartan
 import typings.reactPlaidLink.reactPlaidLinkStrings.transactions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -45,24 +44,23 @@ object mod {
   
   type PlaidLink = Component[PlaidLinkProps, js.Object, js.Any]
   
-  @js.native
   trait PlaidLinkProps extends StObject {
     
     // ApiVersion flag to use new version of Plaid API
-    var apiVersion: js.UndefOr[String] = js.native
+    var apiVersion: js.UndefOr[String] = js.undefined
     
     // Button Class names as a String
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     // Displayed once a user has successfully linked their account
-    var clientName: String = js.native
+    var clientName: String
     
     // The Plaid API environment on which to create user accounts.
     // For development and testing, use tartan. For production, use production
-    var env: tartan | sandbox | development | production = js.native
+    var env: tartan | sandbox | development | production
     
     // Open link to a specific institution, for a more custom solution
-    var institution: js.UndefOr[String] = js.native
+    var institution: js.UndefOr[String] = js.undefined
     
     // A function that is called during a user's flow in Link.
     // See
@@ -72,52 +70,52 @@ object mod {
           /* metadata */ Errorcode, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     // A function that is called when a user has specifically exited Link flow
     var onExit: js.UndefOr[
         js.Function2[/* error */ Displaymessage | Null, /* metadata */ Institution, Unit]
-      ] = js.native
+      ] = js.undefined
     
     // A function that is called when the Link module has finished loading.
     // Calls to plaidLinkHandler.open() prior to the onLoad callback will be
     // delayed until the module is fully loaded.
-    var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     // A function that is called when a user has successfully onboarded their
     // account. The function should expect two arguments, the public_key and a
     // metadata object
-    def onSuccess(publicToken: String, metadata: Accounts): Unit = js.native
+    def onSuccess(publicToken: String, metadata: Accounts): Unit
     
     // The Plaid products you wish to use, an array containing some of connect,
     // auth, identity, income, transactions, assets, liabilities
     var product: js.Array[
         connect | info | auth | identity | income | transactions | assets | liabilities | investments | payment_initiation
-      ] = js.native
+      ]
     
     // The public_key associated with your account; available from
     // the Plaid dashboard (https://dashboard.plaid.com)
-    var publicKey: String = js.native
+    var publicKey: String
     
     // Set to true to launch Link with the 'Select Account' pane enabled.
     // Allows users to select an individual account once they've authenticated
-    var selectAccount: js.UndefOr[Boolean] = js.native
+    var selectAccount: js.UndefOr[Boolean] = js.undefined
     
     // Button Styles as an Object
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     // Specify an existing user's public token to launch Link in update mode.
     // This will cause Link to open directly to the authentication step for
     // that user's institution.
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
     // Specify a user object to enable all Auth features. Reach out to your
     // account manager or integrations@plaid.com to get enabled. See the Auth
     // [https://plaid.com/docs#auth] docs for integration details.
-    var user: js.UndefOr[EmailAddress] = js.native
+    var user: js.UndefOr[EmailAddress] = js.undefined
     
     // Specify a webhook to associate with a user.
-    var webhook: js.UndefOr[String] = js.native
+    var webhook: js.UndefOr[String] = js.undefined
   }
   object PlaidLinkProps {
     

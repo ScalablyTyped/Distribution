@@ -2,12 +2,13 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("documentdb", "HashPartitionResolver")
 @js.native
-class HashPartitionResolver protected () extends PartitionResolver {
+class HashPartitionResolver protected ()
+  extends StObject
+     with PartitionResolver {
   /**
     * DEPRECATED
     *
@@ -21,21 +22,41 @@ class HashPartitionResolver protected () extends PartitionResolver {
     * @param options               - Options forr the ConsistentHashRing (MurmurHash)
     */
   def this(partitionKeyExtractor: String, collectionLinks: js.Array[String]) = this()
-  def this(partitionKeyExtractor: js.Function1[/* obj */ js.Any, _], collectionLinks: js.Array[String]) = this()
+  def this(partitionKeyExtractor: js.Function1[/* obj */ js.Any, js.Any], collectionLinks: js.Array[String]) = this()
   def this(
     partitionKeyExtractor: String,
     collectionLinks: js.Array[String],
     options: ConsistentHashRingOptions
   ) = this()
   def this(
-    partitionKeyExtractor: js.Function1[/* obj */ js.Any, _],
+    partitionKeyExtractor: js.Function1[/* obj */ js.Any, js.Any],
     collectionLinks: js.Array[String],
     options: ConsistentHashRingOptions
   ) = this()
+  
+  /**
+    * Extracts the partition key from the specified document using the partitionKeyExtractor
+    * @param document - The document from which to extract the partition key.
+    */
+  /* CompleteClass */
+  override def getPartitionKey(document: js.Any): String = js.native
+  
+  /**
+    * Given a partition key, returns the correct collection link for creating a document.
+    * @param partitionKey - The partition key used to determine the target collection for create
+    */
+  /* CompleteClass */
+  override def resolveForCreate(partitionKey: String): String = js.native
   
   /**
     * Given a partition key, returns a list of collection links to read from.
     * @param partitionKey - The partition key used to determine the target collection for query
     */
   def resolveForRead(partitionKey: String): js.Array[String] = js.native
+  /**
+    * Given a partition key, returns a list of collection links to read from.
+    * @param partitionKey - The partition key used to determine the target collection for query
+    */
+  /* CompleteClass */
+  override def resolveForRead(partitionKey: js.Any): js.Array[String] = js.native
 }

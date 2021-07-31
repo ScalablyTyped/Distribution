@@ -6,17 +6,15 @@ import typings.weappApi.weappApiStrings.easeOut
 import typings.weappApi.weappApiStrings.linear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationBarColorAnimationOptions extends StObject {
   
   //  动画变化时间，单位 ms，默认0
-  var animation: js.UndefOr[Double] = js.native
+  var animation: js.UndefOr[Double] = js.undefined
   
   //  动画变化方式.动画从头到尾的速度是相同的,动画以低速开始,动画以低速结束,动画以低速开始和结束
-  var timingFunc: js.UndefOr[linear | easeIn | easeOut | easeInOut] = js.native
+  var timingFunc: js.UndefOr[linear | easeIn | easeOut | easeInOut] = js.undefined
 }
 object NavigationBarColorAnimationOptions {
   

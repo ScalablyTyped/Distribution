@@ -3,27 +3,26 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.BooleanLiteralTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait BooleanLiteralTypeAnnotation_
-  extends Flow
+- typings.babelTypes.mod._Node because Already inherited */ trait BooleanLiteralTypeAnnotation_
+  extends StObject
      with BaseNode
+     with Flow
      with FlowType {
   
   @JSName("type")
-  var type_BooleanLiteralTypeAnnotation_ : BooleanLiteralTypeAnnotation = js.native
+  var type_BooleanLiteralTypeAnnotation_ : BooleanLiteralTypeAnnotation
   
-  var value: Boolean = js.native
+  var value: Boolean
 }
 object BooleanLiteralTypeAnnotation_ {
   
   @scala.inline
-  def apply(`type`: BooleanLiteralTypeAnnotation, value: Boolean): BooleanLiteralTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(value: Boolean): BooleanLiteralTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("BooleanLiteralTypeAnnotation")
     __obj.asInstanceOf[BooleanLiteralTypeAnnotation_]
   }
   

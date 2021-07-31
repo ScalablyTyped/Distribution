@@ -3,18 +3,17 @@ package typings.xrm.Xrm.Controls
 import typings.xrm.Xrm.DisplayState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessControl
-  extends UiCanGetVisibleElement
+  extends StObject
+     with UiCanGetVisibleElement
      with UiCanSetVisibleElement {
   
   /**
     * Gets the display state of the process flow control.
     */
-  def getDisplayState(): DisplayState = js.native
+  def getDisplayState(): DisplayState
   
   /**
     * Reflow the UI of the process control
@@ -22,13 +21,13 @@ trait ProcessControl
     * @param parentStage ID of the parent stage.
     * @param nextStage ID of the next stage.
     */
-  def reflow(updateUI: Boolean, parentStage: String, nextStage: String): Unit = js.native
+  def reflow(updateUI: Boolean, parentStage: String, nextStage: String): Unit
   
   /**
     * Sets display state of the process flow control.
     * @param displayState Display state of the process flow control, as either "expanded" or "collapsed"
     */
-  def setDisplayState(displayState: DisplayState): Unit = js.native
+  def setDisplayState(displayState: DisplayState): Unit
 }
 object ProcessControl {
   

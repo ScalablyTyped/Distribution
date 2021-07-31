@@ -7,33 +7,25 @@ import typings.cadesplugin.cadespluginNumbers.`2`
 import typings.cadesplugin.cadespluginNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CADESCOMInstallResponseRestrictionFlags extends StObject {
   
-  val CADESCOM_AllowNoOutstandingRequest: `1` = js.native
+  val CADESCOM_AllowNoOutstandingRequest: `1`
   
-  val CADESCOM_AllowNone: `0` = js.native
+  val CADESCOM_AllowNone: `0`
   
-  val CADESCOM_AllowUntrustedCertificate: `2` = js.native
+  val CADESCOM_AllowUntrustedCertificate: `2`
   
-  val CADESCOM_AllowUntrustedRoot: `4` = js.native
+  val CADESCOM_AllowUntrustedRoot: `4`
   
-  val CADESCOM_SkipInstallToStore: `0x10000000` = js.native
+  val CADESCOM_SkipInstallToStore: `0x10000000`
 }
 object CADESCOMInstallResponseRestrictionFlags {
   
   @scala.inline
-  def apply(
-    CADESCOM_AllowNoOutstandingRequest: `1`,
-    CADESCOM_AllowNone: `0`,
-    CADESCOM_AllowUntrustedCertificate: `2`,
-    CADESCOM_AllowUntrustedRoot: `4`,
-    CADESCOM_SkipInstallToStore: `0x10000000`
-  ): CADESCOMInstallResponseRestrictionFlags = {
-    val __obj = js.Dynamic.literal(CADESCOM_AllowNoOutstandingRequest = CADESCOM_AllowNoOutstandingRequest.asInstanceOf[js.Any], CADESCOM_AllowNone = CADESCOM_AllowNone.asInstanceOf[js.Any], CADESCOM_AllowUntrustedCertificate = CADESCOM_AllowUntrustedCertificate.asInstanceOf[js.Any], CADESCOM_AllowUntrustedRoot = CADESCOM_AllowUntrustedRoot.asInstanceOf[js.Any], CADESCOM_SkipInstallToStore = CADESCOM_SkipInstallToStore.asInstanceOf[js.Any])
+  def apply(): CADESCOMInstallResponseRestrictionFlags = {
+    val __obj = js.Dynamic.literal(CADESCOM_AllowNoOutstandingRequest = 1, CADESCOM_AllowNone = 0, CADESCOM_AllowUntrustedCertificate = 2, CADESCOM_AllowUntrustedRoot = 4, CADESCOM_SkipInstallToStore = 0x10000000)
     __obj.asInstanceOf[CADESCOMInstallResponseRestrictionFlags]
   }
   

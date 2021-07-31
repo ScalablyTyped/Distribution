@@ -3,59 +3,59 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.IEvented
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connection {
   
-  @js.native
-  trait IAbstract extends IEvented {
+  trait IAbstract
+    extends StObject
+       with IEvented {
     
     /** [Property] (String) */
-    var CELL_2G: js.UndefOr[String] = js.native
+    var CELL_2G: js.UndefOr[String] = js.undefined
     
     /** [Property] (String) */
-    var CELL_3G: js.UndefOr[String] = js.native
+    var CELL_3G: js.UndefOr[String] = js.undefined
     
     /** [Property] (String) */
-    var CELL_4G: js.UndefOr[String] = js.native
+    var CELL_4G: js.UndefOr[String] = js.undefined
     
     /** [Property] (String) */
-    var ETHERNET: js.UndefOr[String] = js.native
+    var ETHERNET: js.UndefOr[String] = js.undefined
     
     /** [Property] (String) */
-    var NONE: js.UndefOr[String] = js.native
+    var NONE: js.UndefOr[String] = js.undefined
     
     /** [Property] (String) */
-    var UNKNOWN: js.UndefOr[String] = js.native
+    var UNKNOWN: js.UndefOr[String] = js.undefined
     
     /** [Property] (String) */
-    var WIFI: js.UndefOr[String] = js.native
+    var WIFI: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of online
       * @returns Boolean
       */
-    var getOnline: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getOnline: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the current connection type
       * @returns String type
       */
-    var getType: js.UndefOr[js.Function0[String]] = js.native
+    var getType: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] True if the device is currently online
       * @returns Boolean online
       */
-    var isOnline: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isOnline: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Sets the value of online
       * @param online Boolean The new value.
       */
-    var setOnline: js.UndefOr[js.Function1[/* online */ js.UndefOr[Boolean], Unit]] = js.native
+    var setOnline: js.UndefOr[js.Function1[/* online */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of type
       * @param type Object The new value.
       */
-    var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[js.Any], Unit]] = js.native
+    var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -142,8 +142,9 @@ object connection {
     }
   }
   
-  @js.native
-  trait ICordova extends IAbstract
+  trait ICordova
+    extends StObject
+       with IAbstract
   object ICordova {
     
     @scala.inline
@@ -153,8 +154,9 @@ object connection {
     }
   }
   
-  @js.native
-  trait IPhoneGap extends IAbstract
+  trait IPhoneGap
+    extends StObject
+       with IAbstract
   object IPhoneGap {
     
     @scala.inline
@@ -166,8 +168,9 @@ object connection {
   
   type ISencha = IAbstract
   
-  @js.native
-  trait ISimulator extends IAbstract
+  trait ISimulator
+    extends StObject
+       with IAbstract
   object ISimulator {
     
     @scala.inline

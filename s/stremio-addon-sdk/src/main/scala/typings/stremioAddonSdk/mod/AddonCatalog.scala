@@ -2,29 +2,27 @@ package typings.stremioAddonSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used as a response for defineResourceHandler.
   */
-@js.native
 trait AddonCatalog extends StObject {
   
   /**
     * Object representing the addon's Manifest Object.
     */
-  var manifest: Manifest = js.native
+  var manifest: Manifest
   
   /**
     * only http is currently officially supported.
     */
-  var transportName: String = js.native
+  var transportName: String
   
   /**
     * The URL of the addon's manifest.json file.
     */
-  var transportUrl: String = js.native
+  var transportUrl: String
 }
 object AddonCatalog {
   

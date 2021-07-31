@@ -2,21 +2,19 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTagsToResourceMessage extends StObject {
   
   /**
     * The Amazon DocumentDB resource that the tags are added to. This value is an Amazon Resource Name .
     */
-  var ResourceName: String = js.native
+  var ResourceName: String
   
   /**
     * The tags to be assigned to the Amazon DocumentDB resource.
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object AddTagsToResourceMessage {
   

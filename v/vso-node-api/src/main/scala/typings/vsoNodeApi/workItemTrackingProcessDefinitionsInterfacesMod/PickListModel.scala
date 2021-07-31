@@ -2,16 +2,16 @@ package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PickListModel extends PickListMetadataModel {
+trait PickListModel
+  extends StObject
+     with PickListMetadataModel {
   
   /**
     * A list of PicklistItemModel
     */
-  var items: js.Array[PickListItemModel] = js.native
+  var items: js.Array[PickListItemModel]
 }
 object PickListModel {
   

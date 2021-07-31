@@ -2,31 +2,29 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A static content file that is part of a version.
   */
-@js.native
 trait SchemaVersionFile extends StObject {
   
   /**
     * The SHA256 content hash of the file.
     */
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
   /**
     * The URI at which the file&#39;s content should display.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The current status of a particular file in the specified
     * version. &lt;br&gt;The value will be either `pending upload` or
     * `uploaded`.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaVersionFile {
   

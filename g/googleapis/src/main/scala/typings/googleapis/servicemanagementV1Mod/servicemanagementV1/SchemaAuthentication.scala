@@ -2,7 +2,6 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,20 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://securetoken.google.com       rules:       - selector: &quot;*&quot;
   * requirements:           provider_id: google_calendar_auth
   */
-@js.native
 trait SchemaAuthentication extends StObject {
   
   /**
     * Defines a set of authentication providers that a service supports.
     */
-  var providers: js.UndefOr[js.Array[SchemaAuthProvider]] = js.native
+  var providers: js.UndefOr[js.Array[SchemaAuthProvider]] = js.undefined
   
   /**
     * A list of authentication rules that apply to individual API methods.
     * **NOTE:** All service configuration rules follow &quot;last one
     * wins&quot; order.
     */
-  var rules: js.UndefOr[js.Array[SchemaAuthenticationRule]] = js.native
+  var rules: js.UndefOr[js.Array[SchemaAuthenticationRule]] = js.undefined
 }
 object SchemaAuthentication {
   

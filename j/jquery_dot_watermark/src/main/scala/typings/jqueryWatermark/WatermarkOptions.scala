@@ -2,19 +2,17 @@ package typings.jqueryWatermark
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WatermarkOptions extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   // If true, plugin will detect and use native browser support for watermarks, if available. (e.g., WebKit's placeholder attribute.)
-  var hideBeforeUnload: js.UndefOr[Boolean] = js.native
+  var hideBeforeUnload: js.UndefOr[Boolean] = js.undefined
   
   // Default class name for all watermarks
-  var useNative: js.UndefOr[Boolean] = js.native
+  var useNative: js.UndefOr[Boolean] = js.undefined
 }
 object WatermarkOptions {
   

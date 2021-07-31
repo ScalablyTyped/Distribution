@@ -11,8 +11,8 @@ Generates a base64 id
 | Full name          | base64id |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 55 |
-| # downloads        | 155884172 |
+| # dependents       | 59 |
+| # downloads        | 172823266 |
 | # stars            | 3 |
 
 ## Links

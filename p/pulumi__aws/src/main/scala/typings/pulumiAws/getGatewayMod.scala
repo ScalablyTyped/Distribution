@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getGatewayMod {
   
-  @JSImport("@pulumi/aws/directconnect/getGateway", "getGateway")
+  @JSImport("@pulumi/aws/directconnect/getGateway", JSImport.Namespace)
   @js.native
-  def getGateway(args: GetGatewayArgs): js.Promise[GetGatewayResult] = js.native
-  @JSImport("@pulumi/aws/directconnect/getGateway", "getGateway")
-  @js.native
-  def getGateway(args: GetGatewayArgs, opts: InvokeOptions): js.Promise[GetGatewayResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getGateway(args: GetGatewayArgs): js.Promise[GetGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetGatewayResult]]
+  @scala.inline
+  def getGateway(args: GetGatewayArgs, opts: InvokeOptions): js.Promise[GetGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetGatewayResult]]
+  
   trait GetGatewayArgs extends StObject {
     
     /**
       * The name of the gateway to retrieve.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetGatewayArgs {
     
@@ -39,25 +39,24 @@ object getGatewayMod {
     }
   }
   
-  @js.native
   trait GetGatewayResult extends StObject {
     
     /**
       * The ASN on the Amazon side of the connection.
       */
-    val amazonSideAsn: String = js.native
+    val amazonSideAsn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * AWS Account ID of the gateway.
       */
-    val ownerAccountId: String = js.native
+    val ownerAccountId: String
   }
   object GetGatewayResult {
     

@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.EnumSymbolBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `193` extends StObject {
   
-  var `type`: EnumSymbolBody = js.native
+  var `type`: EnumSymbolBody
 }
 object `193` {
   
   @scala.inline
-  def apply(`type`: EnumSymbolBody): `193` = {
+  def apply(): `193` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EnumSymbolBody")
     __obj.asInstanceOf[`193`]
   }
   

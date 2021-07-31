@@ -3,38 +3,36 @@ package typings.consola
 import typings.consola.mod.ConsolaLogObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined {[ type in consola.consola.logType ]: consola.consola.ConsolaLogObject} */
-  @js.native
   trait typeinlogTypeConsolaLogOb extends StObject {
     
-    var debug: ConsolaLogObject = js.native
+    var debug: ConsolaLogObject
     
-    var error: ConsolaLogObject = js.native
+    var error: ConsolaLogObject
     
-    var fatal: ConsolaLogObject = js.native
+    var fatal: ConsolaLogObject
     
-    var info: ConsolaLogObject = js.native
+    var info: ConsolaLogObject
     
-    var log: ConsolaLogObject = js.native
+    var log: ConsolaLogObject
     
-    var ready: ConsolaLogObject = js.native
+    var ready: ConsolaLogObject
     
-    var silent: ConsolaLogObject = js.native
+    var silent: ConsolaLogObject
     
-    var start: ConsolaLogObject = js.native
+    var start: ConsolaLogObject
     
-    var success: ConsolaLogObject = js.native
+    var success: ConsolaLogObject
     
-    var trace: ConsolaLogObject = js.native
+    var trace: ConsolaLogObject
     
-    var verbose: ConsolaLogObject = js.native
+    var verbose: ConsolaLogObject
     
-    var warn: ConsolaLogObject = js.native
+    var warn: ConsolaLogObject
   }
   object typeinlogTypeConsolaLogOb {
     

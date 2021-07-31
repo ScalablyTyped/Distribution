@@ -2,7 +2,6 @@ package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * deleting or altering it stops data collection and makes the metric
   * type&#39;s existing data unusable.
   */
-@js.native
 trait SchemaMetricDescriptor extends StObject {
   
   /**
     * A detailed description of the metric, which can be used in documentation.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A concise name for the metric, which can be displayed in user interfaces.
@@ -24,7 +22,7 @@ trait SchemaMetricDescriptor extends StObject {
     * count&quot;. This field is optional but it is recommended to be set for
     * any metrics associated with user-visible concepts, such as Quota.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The set of labels that can be used to describe a specific instance of
@@ -33,24 +31,24 @@ trait SchemaMetricDescriptor extends StObject {
     * a label for the HTTP response code, `response_code`, so you can look at
     * latencies for successful responses or just for responses that failed.
     */
-  var labels: js.UndefOr[js.Array[SchemaLabelDescriptor]] = js.native
+  var labels: js.UndefOr[js.Array[SchemaLabelDescriptor]] = js.undefined
   
   /**
     * Optional. Metadata which can be used to guide usage of the metric.
     */
-  var metadata: js.UndefOr[SchemaMetricDescriptorMetadata] = js.native
+  var metadata: js.UndefOr[SchemaMetricDescriptorMetadata] = js.undefined
   
   /**
     * Whether the metric records instantaneous values, changes to a value, etc.
     * Some combinations of `metric_kind` and `value_type` might not be
     * supported.
     */
-  var metricKind: js.UndefOr[String] = js.native
+  var metricKind: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the metric descriptor.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The metric type, including its DNS name prefix. The type is not
@@ -61,7 +59,7 @@ trait SchemaMetricDescriptor extends StObject {
     * &quot;external.googleapis.com/prometheus/up&quot;
     * &quot;appengine.googleapis.com/http/server/response_latencies&quot;
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The unit in which the metric value is reported. It is only applicable if
@@ -91,13 +89,13 @@ trait SchemaMetricDescriptor extends StObject {
     * value 1, such as in `1/s`. * `%` represents dimensionless value 1/100,
     * and annotates values giving    a percentage.
     */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the measurement is an integer, a floating-point number, etc. Some
     * combinations of `metric_kind` and `value_type` might not be supported.
     */
-  var valueType: js.UndefOr[String] = js.native
+  var valueType: js.UndefOr[String] = js.undefined
 }
 object SchemaMetricDescriptor {
   

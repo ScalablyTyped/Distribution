@@ -2,30 +2,28 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for performing Google Cloud Vision API tasks over a user-provided
   * image, with user-requested features, and with context information.
   */
-@js.native
 trait SchemaAnnotateImageRequest extends StObject {
   
   /**
     * Requested features.
     */
-  var features: js.UndefOr[js.Array[SchemaFeature]] = js.native
+  var features: js.UndefOr[js.Array[SchemaFeature]] = js.undefined
   
   /**
     * The image to be processed.
     */
-  var image: js.UndefOr[SchemaImage] = js.native
+  var image: js.UndefOr[SchemaImage] = js.undefined
   
   /**
     * Additional context that may accompany the image.
     */
-  var imageContext: js.UndefOr[SchemaImageContext] = js.native
+  var imageContext: js.UndefOr[SchemaImageContext] = js.undefined
 }
 object SchemaAnnotateImageRequest {
   

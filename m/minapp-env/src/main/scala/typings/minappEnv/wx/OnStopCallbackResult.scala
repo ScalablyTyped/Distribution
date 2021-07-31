@@ -2,14 +2,12 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnStopCallbackResult extends StObject {
   
   /** 录音文件的临时路径 */
-  var tempFilePath: String = js.native
+  var tempFilePath: String
 }
 object OnStopCallbackResult {
   

@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait Settings extends StObject {
     *
     * @platform win32
     */
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * `true` will change the startup approved registry key and `enable / disable` the
@@ -22,7 +20,7 @@ trait Settings extends StObject {
     *
     * @platform win32
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * value name to write into registry. Defaults to the app's AppUserModelId(). Set
@@ -30,7 +28,7 @@ trait Settings extends StObject {
     *
     * @platform win32
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * `true` to open the app as hidden. Defaults to `false`. The user can edit this
@@ -40,20 +38,20 @@ trait Settings extends StObject {
     *
     * @platform darwin
     */
-  var openAsHidden: js.UndefOr[Boolean] = js.native
+  var openAsHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * `true` to open the app at login, `false` to remove the app as a login item.
     * Defaults to `false`.
     */
-  var openAtLogin: js.UndefOr[Boolean] = js.native
+  var openAtLogin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The executable to launch at login. Defaults to `process.execPath`.
     *
     * @platform win32
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object Settings {
   

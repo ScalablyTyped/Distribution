@@ -2,106 +2,104 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportDescription extends StObject {
   
   /**
     * The billable size of the table export.
     */
-  var BilledSizeBytes: js.UndefOr[typings.awsSdk.dynamodbMod.BilledSizeBytes] = js.native
+  var BilledSizeBytes: js.UndefOr[typings.awsSdk.dynamodbMod.BilledSizeBytes] = js.undefined
   
   /**
     * The client token that was provided for the export task. A client token makes calls to ExportTableToPointInTimeInput idempotent, meaning that multiple identical calls have the same effect as one single call.
     */
-  var ClientToken: js.UndefOr[typings.awsSdk.dynamodbMod.ClientToken] = js.native
+  var ClientToken: js.UndefOr[typings.awsSdk.dynamodbMod.ClientToken] = js.undefined
   
   /**
     * The time at which the export task completed.
     */
-  var EndTime: js.UndefOr[ExportEndTime] = js.native
+  var EndTime: js.UndefOr[ExportEndTime] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the table export.
     */
-  var ExportArn: js.UndefOr[typings.awsSdk.dynamodbMod.ExportArn] = js.native
+  var ExportArn: js.UndefOr[typings.awsSdk.dynamodbMod.ExportArn] = js.undefined
   
   /**
     * The format of the exported data. Valid values for ExportFormat are DYNAMODB_JSON or ION.
     */
-  var ExportFormat: js.UndefOr[typings.awsSdk.dynamodbMod.ExportFormat] = js.native
+  var ExportFormat: js.UndefOr[typings.awsSdk.dynamodbMod.ExportFormat] = js.undefined
   
   /**
     * The name of the manifest file for the export task.
     */
-  var ExportManifest: js.UndefOr[typings.awsSdk.dynamodbMod.ExportManifest] = js.native
+  var ExportManifest: js.UndefOr[typings.awsSdk.dynamodbMod.ExportManifest] = js.undefined
   
   /**
     * Export can be in one of the following states: IN_PROGRESS, COMPLETED, or FAILED.
     */
-  var ExportStatus: js.UndefOr[typings.awsSdk.dynamodbMod.ExportStatus] = js.native
+  var ExportStatus: js.UndefOr[typings.awsSdk.dynamodbMod.ExportStatus] = js.undefined
   
   /**
     * Point in time from which table data was exported.
     */
-  var ExportTime: js.UndefOr[typings.awsSdk.dynamodbMod.ExportTime] = js.native
+  var ExportTime: js.UndefOr[typings.awsSdk.dynamodbMod.ExportTime] = js.undefined
   
   /**
     * Status code for the result of the failed export.
     */
-  var FailureCode: js.UndefOr[typings.awsSdk.dynamodbMod.FailureCode] = js.native
+  var FailureCode: js.UndefOr[typings.awsSdk.dynamodbMod.FailureCode] = js.undefined
   
   /**
     * Export failure reason description.
     */
-  var FailureMessage: js.UndefOr[typings.awsSdk.dynamodbMod.FailureMessage] = js.native
+  var FailureMessage: js.UndefOr[typings.awsSdk.dynamodbMod.FailureMessage] = js.undefined
   
   /**
     * The number of items exported.
     */
-  var ItemCount: js.UndefOr[typings.awsSdk.dynamodbMod.ItemCount] = js.native
+  var ItemCount: js.UndefOr[typings.awsSdk.dynamodbMod.ItemCount] = js.undefined
   
   /**
     * The name of the Amazon S3 bucket containing the export.
     */
-  var S3Bucket: js.UndefOr[typings.awsSdk.dynamodbMod.S3Bucket] = js.native
+  var S3Bucket: js.UndefOr[typings.awsSdk.dynamodbMod.S3Bucket] = js.undefined
   
   /**
     * The ID of the AWS account that owns the bucket containing the export.
     */
-  var S3BucketOwner: js.UndefOr[typings.awsSdk.dynamodbMod.S3BucketOwner] = js.native
+  var S3BucketOwner: js.UndefOr[typings.awsSdk.dynamodbMod.S3BucketOwner] = js.undefined
   
   /**
     * The Amazon S3 bucket prefix used as the file name and path of the exported snapshot.
     */
-  var S3Prefix: js.UndefOr[typings.awsSdk.dynamodbMod.S3Prefix] = js.native
+  var S3Prefix: js.UndefOr[typings.awsSdk.dynamodbMod.S3Prefix] = js.undefined
   
   /**
     * Type of encryption used on the bucket where export data is stored. Valid values for S3SseAlgorithm are:    AES256 - server-side encryption with Amazon S3 managed keys    KMS - server-side encryption with AWS KMS managed keys  
     */
-  var S3SseAlgorithm: js.UndefOr[typings.awsSdk.dynamodbMod.S3SseAlgorithm] = js.native
+  var S3SseAlgorithm: js.UndefOr[typings.awsSdk.dynamodbMod.S3SseAlgorithm] = js.undefined
   
   /**
     * The ID of the AWS KMS managed key used to encrypt the S3 bucket where export data is stored (if applicable).
     */
-  var S3SseKmsKeyId: js.UndefOr[typings.awsSdk.dynamodbMod.S3SseKmsKeyId] = js.native
+  var S3SseKmsKeyId: js.UndefOr[typings.awsSdk.dynamodbMod.S3SseKmsKeyId] = js.undefined
   
   /**
     * The time at which the export task began.
     */
-  var StartTime: js.UndefOr[ExportStartTime] = js.native
+  var StartTime: js.UndefOr[ExportStartTime] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the table that was exported.
     */
-  var TableArn: js.UndefOr[typings.awsSdk.dynamodbMod.TableArn] = js.native
+  var TableArn: js.UndefOr[typings.awsSdk.dynamodbMod.TableArn] = js.undefined
   
   /**
     * Unique ID of the table that was exported.
     */
-  var TableId: js.UndefOr[typings.awsSdk.dynamodbMod.TableId] = js.native
+  var TableId: js.UndefOr[typings.awsSdk.dynamodbMod.TableId] = js.undefined
 }
 object ExportDescription {
   

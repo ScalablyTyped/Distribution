@@ -10,7 +10,6 @@ import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`6`
 import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -18,8 +17,8 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(receiver: ReadonlyArray[_]): Array[_] = js.native
-    def apply(receiver: ReadonlyArray[_], depth: Double): Array[_] = js.native
+    def apply(receiver: ReadonlyArray[js.Any]): Array[js.Any] = js.native
+    def apply(receiver: ReadonlyArray[js.Any], depth: Double): Array[js.Any] = js.native
     def apply[U](receiver: Array[Array[Array[Array[Array[Array[U]]]]]], depth: `5`): Array[U] = js.native
     def apply[U](receiver: Array[Array[Array[Array[Array[Array[Array[U]]]]]]], depth: `6`): Array[U] = js.native
     def apply[U](receiver: Array[Array[Array[Array[Array[Array[Array[Array[U]]]]]]]], depth: `7`): Array[U] = js.native

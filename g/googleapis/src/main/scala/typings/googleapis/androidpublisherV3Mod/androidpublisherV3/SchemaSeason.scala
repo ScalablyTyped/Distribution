@@ -2,16 +2,14 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSeason extends StObject {
   
   /**
     * Inclusive end date of the recurrence period.
     */
-  var end: js.UndefOr[SchemaMonthDay] = js.native
+  var end: js.UndefOr[SchemaMonthDay] = js.undefined
   
   /**
     * Optionally present list of prorations for the season. Each proration is a
@@ -19,12 +17,12 @@ trait SchemaSeason extends StObject {
     * first date on which the discount is available and the new pricing
     * information.
     */
-  var prorations: js.UndefOr[js.Array[SchemaProrate]] = js.native
+  var prorations: js.UndefOr[js.Array[SchemaProrate]] = js.undefined
   
   /**
     * Inclusive start date of the recurrence period.
     */
-  var start: js.UndefOr[SchemaMonthDay] = js.native
+  var start: js.UndefOr[SchemaMonthDay] = js.undefined
 }
 object SchemaSeason {
   

@@ -12,7 +12,7 @@ Authorize easily
 | Keywords           | acl, authorization |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 24729 |
+| # downloads        | 28687 |
 | # stars            | 5 |
 
 ## Links

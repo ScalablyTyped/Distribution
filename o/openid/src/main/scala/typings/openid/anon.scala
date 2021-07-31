@@ -2,17 +2,15 @@ package typings.openid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Authenticated extends StObject {
     
-    var authenticated: Boolean = js.native
+    var authenticated: Boolean
     
-    var claimedIdentifier: js.UndefOr[String] = js.native
+    var claimedIdentifier: js.UndefOr[String] = js.undefined
   }
   object Authenticated {
     

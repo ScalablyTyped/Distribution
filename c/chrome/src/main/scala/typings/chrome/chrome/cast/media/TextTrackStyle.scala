@@ -2,35 +2,33 @@ package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextTrackStyle extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var customData: js.Object = js.native
+  var customData: js.Object
   
-  var edgeColor: String = js.native
+  var edgeColor: String
   
-  var edgeType: TextTrackEdgeType = js.native
+  var edgeType: TextTrackEdgeType
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontGenericFamily: TextTrackFontGenericFamily = js.native
+  var fontGenericFamily: TextTrackFontGenericFamily
   
-  var fontScale: Double = js.native
+  var fontScale: Double
   
-  var fontStyle: TextTrackFontStyle = js.native
+  var fontStyle: TextTrackFontStyle
   
-  var foregroundColor: String = js.native
+  var foregroundColor: String
   
-  var windowColor: String = js.native
+  var windowColor: String
   
-  var windowRoundedCornerRadius: Double = js.native
+  var windowRoundedCornerRadius: Double
   
-  var windowType: TextTrackWindowType = js.native
+  var windowType: TextTrackWindowType
 }
 object TextTrackStyle {
   

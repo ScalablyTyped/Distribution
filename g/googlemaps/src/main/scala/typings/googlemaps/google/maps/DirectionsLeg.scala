@@ -2,33 +2,31 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionsLeg extends StObject {
   
-  var arrival_time: Time = js.native
+  var arrival_time: Time
   
-  var departure_time: Time = js.native
+  var departure_time: Time
   
-  var distance: Distance = js.native
+  var distance: Distance
   
-  var duration: Duration = js.native
+  var duration: Duration
   
-  var duration_in_traffic: Duration = js.native
+  var duration_in_traffic: Duration
   
-  var end_address: String = js.native
+  var end_address: String
   
-  var end_location: LatLng = js.native
+  var end_location: LatLng
   
-  var start_address: String = js.native
+  var start_address: String
   
-  var start_location: LatLng = js.native
+  var start_location: LatLng
   
-  var steps: js.Array[DirectionsStep] = js.native
+  var steps: js.Array[DirectionsStep]
   
-  var via_waypoints: js.Array[LatLng] = js.native
+  var via_waypoints: js.Array[LatLng]
 }
 object DirectionsLeg {
   

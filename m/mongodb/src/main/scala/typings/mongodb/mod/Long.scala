@@ -2,7 +2,6 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "Long")
@@ -11,6 +10,10 @@ class Long ()
   extends typings.bson.mod.Long
 /* static members */
 object Long {
+  
+  @JSImport("mongodb", "Long")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mongodb", "Long.MAX_VALUE")
   @js.native
@@ -37,28 +40,23 @@ object Long {
     * @param lowBits The low 32-bits.
     * @param highBits The high 32-bits.
     */
-  @JSImport("mongodb", "Long.fromBits")
-  @js.native
-  def fromBits(lowBits: scala.Double, highBits: scala.Double): typings.bson.mod.Long = js.native
+  @scala.inline
+  def fromBits(lowBits: scala.Double, highBits: scala.Double): typings.bson.mod.Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Long]
   
   /** Returns a Long representing the given (32-bit) integer value. */
-  @JSImport("mongodb", "Long.fromInt")
-  @js.native
-  def fromInt(i: scala.Double): typings.bson.mod.Long = js.native
+  @scala.inline
+  def fromInt(i: scala.Double): typings.bson.mod.Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(i.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Long]
   
   /** Returns a Long representing the given value, provided that it is a finite number. Otherwise, zero is returned. */
-  @JSImport("mongodb", "Long.fromNumber")
-  @js.native
-  def fromNumber(n: scala.Double): typings.bson.mod.Long = js.native
+  @scala.inline
+  def fromNumber(n: scala.Double): typings.bson.mod.Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Long]
   
   /**
     * Returns a Long representation of the given string
     * @param opt_radix The radix in which the text is written. {default:10}
     */
-  @JSImport("mongodb", "Long.fromString")
-  @js.native
-  def fromString(s: String): typings.bson.mod.Long = js.native
-  @JSImport("mongodb", "Long.fromString")
-  @js.native
-  def fromString(s: String, opt_radix: scala.Double): typings.bson.mod.Long = js.native
+  @scala.inline
+  def fromString(s: String): typings.bson.mod.Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Long]
+  @scala.inline
+  def fromString(s: String, opt_radix: scala.Double): typings.bson.mod.Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Long]
 }

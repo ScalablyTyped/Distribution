@@ -2,7 +2,6 @@ package typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,19 +16,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * there is only 2 paths that start with `/foo`. Cardinality conditions are
   * recursive; all subtrees under the specific path prefix are counted.
   */
-@js.native
 trait SchemaCardinality extends StObject {
   
   /**
     * The number variables under the `path` that must exist to meet this
     * condition. Defaults to 1 if not specified.
     */
-  var number: js.UndefOr[Double] = js.native
+  var number: js.UndefOr[Double] = js.undefined
   
   /**
     * The root of the variable subtree to monitor. For example, `/foo`.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object SchemaCardinality {
   

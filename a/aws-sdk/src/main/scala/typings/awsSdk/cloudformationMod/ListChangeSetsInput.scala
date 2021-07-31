@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChangeSetsInput extends StObject {
   
   /**
     * A string (provided by the ListChangeSets response output) that identifies the next page of change sets that you want to retrieve.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
   
   /**
     * The name or the Amazon Resource Name (ARN) of the stack for which you want to list change sets.
     */
-  var StackName: StackNameOrId = js.native
+  var StackName: StackNameOrId
 }
 object ListChangeSetsInput {
   

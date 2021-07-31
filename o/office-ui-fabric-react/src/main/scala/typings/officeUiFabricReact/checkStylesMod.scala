@@ -4,10 +4,13 @@ import typings.officeUiFabricReact.checkTypesMod.ICheckStyleProps
 import typings.officeUiFabricReact.checkTypesMod.ICheckStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkStylesMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/Check/Check.styles", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object CheckGlobalClassNames {
     
@@ -42,7 +45,6 @@ object checkStylesMod {
     def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("office-ui-fabric-react/lib/components/Check/Check.styles", "getStyles")
-  @js.native
-  def getStyles(props: ICheckStyleProps): ICheckStyles = js.native
+  @scala.inline
+  def getStyles(props: ICheckStyleProps): ICheckStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ICheckStyles]
 }

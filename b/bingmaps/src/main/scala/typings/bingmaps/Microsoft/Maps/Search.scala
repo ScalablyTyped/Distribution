@@ -2,7 +2,6 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,23 +18,33 @@ object Search {
     
     /** The match was ambiguous. Multiple results were returned. */
     @js.native
-    sealed trait ambiguous extends MatchCode
+    sealed trait ambiguous
+      extends StObject
+         with MatchCode
     
     /** The match was good. */
     @js.native
-    sealed trait good extends MatchCode
+    sealed trait good
+      extends StObject
+         with MatchCode
     
     /** The match was found, but possibly using a modified query. */
     @js.native
-    sealed trait modified extends MatchCode
+    sealed trait modified
+      extends StObject
+         with MatchCode
     
     /** No match was found. */
     @js.native
-    sealed trait none extends MatchCode
+    sealed trait none
+      extends StObject
+         with MatchCode
     
     /** The match was found by a broader search. */
     @js.native
-    sealed trait upHierarchy extends MatchCode
+    sealed trait upHierarchy
+      extends StObject
+         with MatchCode
   }
   
   @js.native
@@ -46,38 +55,45 @@ object Search {
     
     /** The confidence of the match is high. */
     @js.native
-    sealed trait high extends MatchConfidence
+    sealed trait high
+      extends StObject
+         with MatchConfidence
     
     /** The confidence of the match is low. */
     @js.native
-    sealed trait low extends MatchConfidence
+    sealed trait low
+      extends StObject
+         with MatchConfidence
     
     /** The confidence of the match is medium. */
     @js.native
-    sealed trait medium extends MatchConfidence
+    sealed trait medium
+      extends StObject
+         with MatchConfidence
     
     /** The confidence of the match is unknown. */
     @js.native
-    sealed trait unknown extends MatchConfidence
+    sealed trait unknown
+      extends StObject
+         with MatchConfidence
   }
   
-  @js.native
   trait IGeocodeLocation extends StObject {
     
     /** The latitude of the location. */
-    var latitude: Double = js.native
+    var latitude: Double
     
     /** The longitude of the location. */
-    var longitude: Double = js.native
+    var longitude: Double
     
     /** The name of this geocode location match. */
-    var name: String = js.native
+    var name: String
     
     /** 
     		 * The precision of this geocode location match. 
     		 * Possible Values: Interpolated, InterpolatedOffset, Rooftop, Parcel
     		 */
-    var precision: String = js.native
+    var precision: String
   }
   object IGeocodeLocation {
     
@@ -104,7 +120,6 @@ object Search {
     }
   }
   
-  @js.native
   trait IGeocodeRequestOptions extends StObject {
     
     /** 
@@ -112,38 +127,38 @@ object Search {
       * location results. The default is the bounds of the map view associated with this 
       * instance of the SearchManager, which is usually the current map view.
       */
-    var bounds: js.UndefOr[LocationRect] = js.native
+    var bounds: js.UndefOr[LocationRect] = js.undefined
     
     /**
       * The name of the function to call when a successful result is returned from the 
       * geocode request. The callback function must accept two parameters: result, which is 
       * a GeocodeResult type, and a userData object.
       */
-    def callback(geocodeResult: IGeocodeResult, userData: js.Any): Unit = js.native
+    def callback(geocodeResult: IGeocodeResult, userData: js.Any): Unit
     
     /** The maximum number of results to return. Required. The maximum number than can be returned is 20. */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /**
       * The name of the function to call when the request is returned with an error. The 
       * error callback function must accept an IGeocodeRequestOptions object.
       */
-    var errorCallback: js.UndefOr[js.Function1[/* geocodeRequestOptions */ this.type, Unit]] = js.native
+    var errorCallback: js.UndefOr[js.Function1[/* geocodeRequestOptions */ this.type, Unit]] = js.undefined
     
     /** Specifies to include the two-letter ISO country code. */
-    var includeCountryIso2: js.UndefOr[Boolean] = js.native
+    var includeCountryIso2: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies to include the neighborhood in the response when it is available. */
-    var includeNeighborhood: js.UndefOr[Boolean] = js.native
+    var includeNeighborhood: js.UndefOr[Boolean] = js.undefined
     
     /** A number indicating how long to wait, in seconds, for the geocode request to return. The default value is 5 seconds. */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /** An object containing any data that needs to be passed to the callback when the request is completed. */
-    var userData: js.UndefOr[js.Any] = js.native
+    var userData: js.UndefOr[js.Any] = js.undefined
     
     /** A string containing the address or place to be matched to a location on the map.  */
-    var where: String = js.native
+    var where: String
   }
   object IGeocodeRequestOptions {
     
@@ -206,11 +221,10 @@ object Search {
     }
   }
   
-  @js.native
   trait IGeocodeResult extends StObject {
     
     /** An array of geocode results. */
-    var results: js.Array[IPlaceResult] = js.native
+    var results: js.Array[IPlaceResult]
   }
   object IGeocodeResult {
     
@@ -231,32 +245,31 @@ object Search {
     }
   }
   
-  @js.native
   trait IPlaceResult extends StObject {
     
     /** The geocoded address of the place result. */
-    var address: IAddress = js.native
+    var address: IAddress
     
     /** The location rectangle that defines the boundaries of the best map view of the place result. */
-    var bestView: LocationRect = js.native
+    var bestView: LocationRect
     
     /** The classification of the geographic entity returned, such as PopulatedPlace. */
-    var entityType: String = js.native
+    var entityType: String
     
     /** The geocoded location of the best result. */
-    var location: Location = js.native
+    var location: Location
     
     /** The geocoded locations. */
-    var locations: js.Array[IGeocodeLocation] = js.native
+    var locations: js.Array[IGeocodeLocation]
     
     /** The match code of the best result. */
-    var matchCode: String | MatchCode = js.native
+    var matchCode: String | MatchCode
     
     /** The match confidence of the best result. */
-    var matchConfidence: String | MatchConfidence = js.native
+    var matchConfidence: String | MatchConfidence
     
     /** The name of the place result, if one exists. */
-    var name: String = js.native
+    var name: String
   }
   object IPlaceResult {
     
@@ -307,23 +320,22 @@ object Search {
     }
   }
   
-  @js.native
   trait ReverseGeocodeRequestOptions extends StObject {
     
     /**
       * A reference to a function to call when a successful result is returned from the geocode request. The callback function
       * will receive a PlaceResult object as an argument.
       */
-    def callback(placeResult: IPlaceResult, userData: js.Any): Unit = js.native
+    def callback(placeResult: IPlaceResult, userData: js.Any): Unit
     
     /**
       * A reference to a function to call when the request is returned with an error. The error callback function will receive
       * an object containing the geocode request options used in the request.
       */
-    var errorCallback: js.UndefOr[js.Function1[/* reverseGeocodeRequestOptions */ this.type, Unit]] = js.native
+    var errorCallback: js.UndefOr[js.Function1[/* reverseGeocodeRequestOptions */ this.type, Unit]] = js.undefined
     
     /** Specifies to include the two-letter ISO country code. Default: false */
-    var includeCountryIso2: js.UndefOr[Boolean] = js.native
+    var includeCountryIso2: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  An array of entity types selected from the following options.
@@ -339,22 +351,22 @@ object Search {
       * returned in the response. One exception to this rule is when both PopulatedPlace and Neighborhood entity types are specified and information is found for both. In this case,
       * the information for both entity types is returned. Also, more than one Neighborhood may be returned because the area covered by two different neighborhoods can overlap.
       */
-    var includeEntityTypes: js.UndefOr[js.Array[String]] = js.native
+    var includeEntityTypes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Specifies to include the neighborhood in the response when it is available. Note: This feature isn’t
       * available in all locations.
       */
-    var includeNeighborhood: js.UndefOr[Boolean] = js.native
+    var includeNeighborhood: js.UndefOr[Boolean] = js.undefined
     
     /** The location to use to match to geographic entities and addresses. */
-    var location: Location = js.native
+    var location: Location
     
     /** A number indicating how long to wait, in seconds, for the reverse geocode request to  return. The default value is 5 seconds. */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /** An object containing any data that needs to be passed to the callback when the request is completed. */
-    var userData: js.UndefOr[js.Any] = js.native
+    var userData: js.UndefOr[js.Any] = js.undefined
   }
   object ReverseGeocodeRequestOptions {
     
@@ -414,7 +426,6 @@ object Search {
     }
   }
   
-  @js.native
   trait SearchManager extends StObject {
     
     /**
@@ -423,14 +434,14 @@ object Search {
       * options callback function.
       * @param request Options for sending geocode request
       */
-    def geocode(request: IGeocodeRequestOptions): Unit = js.native
+    def geocode(request: IGeocodeRequestOptions): Unit
     
     /**
       * Matches the specified location to an address and returns the 
       * address results to the specified request options callback function.
       * @param request Options for sending reverse geocode request
       */
-    def reverseGeocode(request: ReverseGeocodeRequestOptions): Unit = js.native
+    def reverseGeocode(request: ReverseGeocodeRequestOptions): Unit
   }
   object SearchManager {
     

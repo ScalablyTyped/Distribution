@@ -30,15 +30,14 @@ import typings.awsSdkClientCodecommitNode.updateRepositoryDescriptionExceptionsU
 import typings.awsSdkClientCodecommitNode.updateRepositoryNameExceptionsUnionMod.UpdateRepositoryNameExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRepositoryNameRequiredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RepositoryNameRequiredExceptionDetails> * / any */ @js.native
-  trait RepositoryNameRequiredException
-    extends CreateBranchExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RepositoryNameRequiredExceptionDetails> * / any */ trait RepositoryNameRequiredException
+    extends StObject
+       with CreateBranchExceptionsUnion
        with CreatePullRequestExceptionsUnion
        with CreateRepositoryExceptionsUnion
        with DeleteBranchExceptionsUnion
@@ -67,15 +66,13 @@ object typesRepositoryNameRequiredExceptionMod {
        with UpdateRepositoryDescriptionExceptionsUnion
        with UpdateRepositoryNameExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryNameRequiredException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryNameRequiredException
   }
   object RepositoryNameRequiredException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryNameRequiredException
-    ): RepositoryNameRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): RepositoryNameRequiredException = {
+      val __obj = js.Dynamic.literal(name = "RepositoryNameRequiredException")
       __obj.asInstanceOf[RepositoryNameRequiredException]
     }
     
@@ -89,6 +86,5 @@ object typesRepositoryNameRequiredExceptionMod {
     }
   }
   
-  @js.native
   trait RepositoryNameRequiredExceptionDetails extends StObject
 }

@@ -3,73 +3,71 @@ package typings.winrt.Windows.UI.Text
 import typings.winrt.anon.Align
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITextParagraphFormat extends StObject {
   
-  def addTab(position: Double, align: TabAlignment, leader: TabLeader): Unit = js.native
+  def addTab(position: Double, align: TabAlignment, leader: TabLeader): Unit
   
-  var alignment: ParagraphAlignment = js.native
+  var alignment: ParagraphAlignment
   
-  def clearAllTabs(): Unit = js.native
+  def clearAllTabs(): Unit
   
-  def deleteTab(position: Double): Unit = js.native
+  def deleteTab(position: Double): Unit
   
-  var firstLineIndent: Double = js.native
+  var firstLineIndent: Double
   
-  def getClone(): ITextParagraphFormat = js.native
+  def getClone(): ITextParagraphFormat
   
-  def getTab(index: Double): Align = js.native
+  def getTab(index: Double): Align
   
-  def isEqual(format: ITextParagraphFormat): Boolean = js.native
+  def isEqual(format: ITextParagraphFormat): Boolean
   
-  var keepTogether: FormatEffect = js.native
+  var keepTogether: FormatEffect
   
-  var keepWithNext: FormatEffect = js.native
+  var keepWithNext: FormatEffect
   
-  var leftIndent: Double = js.native
+  var leftIndent: Double
   
-  var lineSpacing: Double = js.native
+  var lineSpacing: Double
   
-  var lineSpacingRule: LineSpacingRule = js.native
+  var lineSpacingRule: LineSpacingRule
   
-  var listAlignment: MarkerAlignment = js.native
+  var listAlignment: MarkerAlignment
   
-  var listLevelIndex: Double = js.native
+  var listLevelIndex: Double
   
-  var listStart: Double = js.native
+  var listStart: Double
   
-  var listStyle: MarkerStyle = js.native
+  var listStyle: MarkerStyle
   
-  var listTab: Double = js.native
+  var listTab: Double
   
-  var listType: MarkerType = js.native
+  var listType: MarkerType
   
-  var noLineNumber: FormatEffect = js.native
+  var noLineNumber: FormatEffect
   
-  var pageBreakBefore: FormatEffect = js.native
+  var pageBreakBefore: FormatEffect
   
-  var rightIndent: Double = js.native
+  var rightIndent: Double
   
-  var rightToLeft: FormatEffect = js.native
+  var rightToLeft: FormatEffect
   
-  def setClone(format: ITextParagraphFormat): Unit = js.native
+  def setClone(format: ITextParagraphFormat): Unit
   
-  def setIndents(start: Double, left: Double, right: Double): Unit = js.native
+  def setIndents(start: Double, left: Double, right: Double): Unit
   
-  def setLineSpacing(rule: LineSpacingRule, spacing: Double): Unit = js.native
+  def setLineSpacing(rule: LineSpacingRule, spacing: Double): Unit
   
-  var spaceAfter: Double = js.native
+  var spaceAfter: Double
   
-  var spaceBefore: Double = js.native
+  var spaceBefore: Double
   
-  var style: ParagraphStyle = js.native
+  var style: ParagraphStyle
   
-  var tabCount: Double = js.native
+  var tabCount: Double
   
-  var widowControl: FormatEffect = js.native
+  var widowControl: FormatEffect
 }
 object ITextParagraphFormat {
   

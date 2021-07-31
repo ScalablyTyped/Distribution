@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectKeyPhrasesResponse extends StObject {
   
   /**
     * A collection of key phrases that Amazon Comprehend identified in the input text. For each key phrase, the response provides the text of the key phrase, where the key phrase begins and ends, and the level of confidence that Amazon Comprehend has in the accuracy of the detection. 
     */
-  var KeyPhrases: js.UndefOr[ListOfKeyPhrases] = js.native
+  var KeyPhrases: js.UndefOr[ListOfKeyPhrases] = js.undefined
 }
 object DetectKeyPhrasesResponse {
   

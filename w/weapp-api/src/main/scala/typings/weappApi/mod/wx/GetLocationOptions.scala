@@ -4,23 +4,21 @@ import typings.weappApi.weappApiStrings.gcj02
 import typings.weappApi.weappApiStrings.wgs84
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLocationOptions extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ResponseCallback] = js.native
+  var complete: js.UndefOr[ResponseCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ResponseCallback] = js.native
+  var fail: js.UndefOr[ResponseCallback] = js.undefined
   
   /** 接口调用成功的回调函数，返回内容详见返回参数说明。 */
-  def success(res: LocationData): Unit = js.native
+  def success(res: LocationData): Unit
   
   /** 默认为 wgs84 返回 gps 坐标，gcj02 返回可用于wx.openLocation的坐标 */
-  var `type`: js.UndefOr[wgs84 | gcj02] = js.native
+  var `type`: js.UndefOr[wgs84 | gcj02] = js.undefined
 }
 object GetLocationOptions {
   

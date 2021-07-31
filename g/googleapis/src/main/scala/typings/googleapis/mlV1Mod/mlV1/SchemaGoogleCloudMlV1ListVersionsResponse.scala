@@ -2,25 +2,23 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for the ListVersions method.
   */
-@js.native
 trait SchemaGoogleCloudMlV1ListVersionsResponse extends StObject {
   
   /**
     * Optional. Pass this token as the `page_token` field of the request for a
     * subsequent call.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of versions.
     */
-  var versions: js.UndefOr[js.Array[SchemaGoogleCloudMlV1Version]] = js.native
+  var versions: js.UndefOr[js.Array[SchemaGoogleCloudMlV1Version]] = js.undefined
 }
 object SchemaGoogleCloudMlV1ListVersionsResponse {
   

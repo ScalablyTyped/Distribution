@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A test in this script
   */
-@js.native
-trait TestScriptTest extends BackboneElement {
+trait TestScriptTest
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * A test operation or assert to perform
     */
-  var action: js.Array[TestScriptTestAction] = js.native
+  var action: js.Array[TestScriptTestAction]
   
   /**
     * Tracking/reporting short description of the test
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Tracking/logging name of this test
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object TestScriptTest {
   

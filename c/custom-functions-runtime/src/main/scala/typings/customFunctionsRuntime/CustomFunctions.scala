@@ -2,7 +2,6 @@ package typings.customFunctionsRuntime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CustomFunctions {
@@ -26,7 +25,9 @@ object CustomFunctions {
       * [Api set: CustomFunctionsRuntime 1.3]
       */
     @js.native
-    sealed trait divisionByZero extends ErrorCode
+    sealed trait divisionByZero
+      extends StObject
+         with ErrorCode
     
     /**
       *
@@ -36,7 +37,9 @@ object CustomFunctions {
       * [Api set: CustomFunctionsRuntime 1.3]
       */
     @js.native
-    sealed trait invalidName extends ErrorCode
+    sealed trait invalidName
+      extends StObject
+         with ErrorCode
     
     /**
       *
@@ -45,7 +48,9 @@ object CustomFunctions {
       * [Api set: CustomFunctionsRuntime 1.3]
       */
     @js.native
-    sealed trait invalidNumber extends ErrorCode
+    sealed trait invalidNumber
+      extends StObject
+         with ErrorCode
     
     /**
       *
@@ -55,7 +60,9 @@ object CustomFunctions {
       * [Api set: CustomFunctionsRuntime 1.3]
       */
     @js.native
-    sealed trait invalidReference extends ErrorCode
+    sealed trait invalidReference
+      extends StObject
+         with ErrorCode
     
     /**
       *
@@ -64,7 +71,9 @@ object CustomFunctions {
       * [Api set: CustomFunctionsRuntime 1.3]
       */
     @js.native
-    sealed trait invalidValue extends ErrorCode
+    sealed trait invalidValue
+      extends StObject
+         with ErrorCode
     
     /**
       *
@@ -73,7 +82,9 @@ object CustomFunctions {
       * [Api set: CustomFunctionsRuntime 1.3]
       */
     @js.native
-    sealed trait notAvailable extends ErrorCode
+    sealed trait notAvailable
+      extends StObject
+         with ErrorCode
     
     /**
       *
@@ -82,7 +93,9 @@ object CustomFunctions {
       * [Api set: CustomFunctionsRuntime 1.3]
       */
     @js.native
-    sealed trait nullReference extends ErrorCode
+    sealed trait nullReference
+      extends StObject
+         with ErrorCode
   }
   
   /**
@@ -94,14 +107,15 @@ object CustomFunctions {
     *
     * If the metadata JSON file is being generated from JSDoc comments, include the tag `@cancelable`.
     */
-  @js.native
-  trait CancelableInvocation extends Invocation {
+  trait CancelableInvocation
+    extends StObject
+       with Invocation {
     
     /**
       * Event handler called when the custom function is canceled.
       * [Api set: CustomFunctionsRuntime 1.1]
       */
-    def onCanceled(): Unit = js.native
+    def onCanceled(): Unit
   }
   object CancelableInvocation {
     
@@ -123,20 +137,19 @@ object CustomFunctions {
     * Use this class to handle errors and write custom error messages.
     * [Api set: CustomFunctionsRuntime 1.2]
     */
-  @js.native
   trait Error extends StObject {
     
     /**
       * The error code returned by your custom function.
       * [Api set: CustomFunctionsRuntime 1.2]
       */
-    var code: ErrorCode = js.native
+    var code: ErrorCode
     
     /**
       * Your custom error message, such as "This stock price is unavailable". Custom messages are only available with certain error codes.
       * [Api set: CustomFunctionsRuntime 1.2]
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object Error {
     
@@ -163,7 +176,6 @@ object CustomFunctions {
   /**
     * Provides information about the invocation of a custom function.
     */
-  @js.native
   trait Invocation extends StObject {
     
     /**
@@ -175,7 +187,7 @@ object CustomFunctions {
       * If the metadata JSON file is being generated from JSDoc comments, include the tag `@requiresAddress`.
       * [Api set: CustomFunctionsRuntime 1.1]
       */
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
     /**
       * The range addresses where the function parameters are located, if requested, otherwise undefined.
@@ -186,7 +198,7 @@ object CustomFunctions {
       * If the metadata JSON file is being generated from JSDoc comments, include the tag `@requiresParameterAddresses`.
       * [Api set: CustomFunctionsRuntime 1.3]
       */
-    var parameterAddresses: js.UndefOr[js.Array[String]] = js.native
+    var parameterAddresses: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Invocation {
     
@@ -224,7 +236,9 @@ object CustomFunctions {
     * a result from the function.
     */
   @js.native
-  trait StreamingInvocation[ResultType] extends CancelableInvocation {
+  trait StreamingInvocation[ResultType]
+    extends StObject
+       with CancelableInvocation {
     
     /**
       * Set the result for the custom function. May be called more than once.

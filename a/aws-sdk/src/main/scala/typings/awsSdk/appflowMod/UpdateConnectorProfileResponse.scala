@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConnectorProfileResponse extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the connector profile. 
     */
-  var connectorProfileArn: js.UndefOr[ConnectorProfileArn] = js.native
+  var connectorProfileArn: js.UndefOr[ConnectorProfileArn] = js.undefined
 }
 object UpdateConnectorProfileResponse {
   

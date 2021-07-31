@@ -17,33 +17,31 @@ import typings.maximMazurokGapiClientDoubleclicksearch.anon.PrettyPrint
 import typings.maximMazurokGapiClientDoubleclicksearch.anon.SortOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object client {
   
   object doubleclicksearch {
     
-    @js.native
     trait Availability extends StObject {
       
       /** DS advertiser ID. */
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
       /** DS agency ID. */
-      var agencyId: js.UndefOr[String] = js.native
+      var agencyId: js.UndefOr[String] = js.undefined
       
       /** The time by which all conversions have been uploaded, in epoch millis UTC. */
-      var availabilityTimestamp: js.UndefOr[String] = js.native
+      var availabilityTimestamp: js.UndefOr[String] = js.undefined
       
       /** The numeric segmentation identifier (for example, DoubleClick Search Floodlight activity ID). */
-      var segmentationId: js.UndefOr[String] = js.native
+      var segmentationId: js.UndefOr[String] = js.undefined
       
       /** The friendly segmentation identifier (for example, DoubleClick Search Floodlight activity name). */
-      var segmentationName: js.UndefOr[String] = js.native
+      var segmentationName: js.UndefOr[String] = js.undefined
       
       /** The segmentation type that this availability is for (its default value is `FLOODLIGHT`). */
-      var segmentationType: js.UndefOr[String] = js.native
+      var segmentationType: js.UndefOr[String] = js.undefined
     }
     object Availability {
       
@@ -94,117 +92,116 @@ object client {
       }
     }
     
-    @js.native
     trait Conversion extends StObject {
       
       /** DS ad group ID. */
-      var adGroupId: js.UndefOr[String] = js.native
+      var adGroupId: js.UndefOr[String] = js.undefined
       
       /** DS ad ID. */
-      var adId: js.UndefOr[String] = js.native
+      var adId: js.UndefOr[String] = js.undefined
       
       /** DS advertiser ID. */
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
       /** DS agency ID. */
-      var agencyId: js.UndefOr[String] = js.native
+      var agencyId: js.UndefOr[String] = js.undefined
       
       /** Available to advertisers only after contacting DoubleClick Search customer support. */
-      var attributionModel: js.UndefOr[String] = js.native
+      var attributionModel: js.UndefOr[String] = js.undefined
       
       /** DS campaign ID. */
-      var campaignId: js.UndefOr[String] = js.native
+      var campaignId: js.UndefOr[String] = js.undefined
       
       /** Sales channel for the product. Acceptable values are: - "`local`": a physical store - "`online`": an online store */
-      var channel: js.UndefOr[String] = js.native
+      var channel: js.UndefOr[String] = js.undefined
       
       /** DS click ID for the conversion. */
-      var clickId: js.UndefOr[String] = js.native
+      var clickId: js.UndefOr[String] = js.undefined
       
       /**
         * For offline conversions, advertisers provide this ID. Advertisers can specify any ID that is meaningful to them. Each conversion in a request must specify a unique ID, and the
         * combination of ID and timestamp must be unique amongst all conversions within the advertiser. For online conversions, DS copies the `dsConversionId` or `floodlightOrderId` into this
         * property depending on the advertiser's Floodlight instructions.
         */
-      var conversionId: js.UndefOr[String] = js.native
+      var conversionId: js.UndefOr[String] = js.undefined
       
       /** The time at which the conversion was last modified, in epoch millis UTC. */
-      var conversionModifiedTimestamp: js.UndefOr[String] = js.native
+      var conversionModifiedTimestamp: js.UndefOr[String] = js.undefined
       
       /** The time at which the conversion took place, in epoch millis UTC. */
-      var conversionTimestamp: js.UndefOr[String] = js.native
+      var conversionTimestamp: js.UndefOr[String] = js.undefined
       
       /** Available to advertisers only after contacting DoubleClick Search customer support. */
-      var countMillis: js.UndefOr[String] = js.native
+      var countMillis: js.UndefOr[String] = js.undefined
       
       /** DS criterion (keyword) ID. */
-      var criterionId: js.UndefOr[String] = js.native
+      var criterionId: js.UndefOr[String] = js.undefined
       
       /** The currency code for the conversion's revenue. Should be in ISO 4217 alphabetic (3-char) format. */
-      var currencyCode: js.UndefOr[String] = js.native
+      var currencyCode: js.UndefOr[String] = js.undefined
       
       /** Custom dimensions for the conversion, which can be used to filter data in a report. */
-      var customDimension: js.UndefOr[js.Array[CustomDimension]] = js.native
+      var customDimension: js.UndefOr[js.Array[CustomDimension]] = js.undefined
       
       /** Custom metrics for the conversion. */
-      var customMetric: js.UndefOr[js.Array[CustomMetric]] = js.native
+      var customMetric: js.UndefOr[js.Array[CustomMetric]] = js.undefined
       
       /** The type of device on which the conversion occurred. */
-      var deviceType: js.UndefOr[String] = js.native
+      var deviceType: js.UndefOr[String] = js.undefined
       
       /** ID that DoubleClick Search generates for each conversion. */
-      var dsConversionId: js.UndefOr[String] = js.native
+      var dsConversionId: js.UndefOr[String] = js.undefined
       
       /** DS engine account ID. */
-      var engineAccountId: js.UndefOr[String] = js.native
+      var engineAccountId: js.UndefOr[String] = js.undefined
       
       /** The Floodlight order ID provided by the advertiser for the conversion. */
-      var floodlightOrderId: js.UndefOr[String] = js.native
+      var floodlightOrderId: js.UndefOr[String] = js.undefined
       
       /** ID that DS generates and uses to uniquely identify the inventory account that contains the product. */
-      var inventoryAccountId: js.UndefOr[String] = js.native
+      var inventoryAccountId: js.UndefOr[String] = js.undefined
       
       /** The country registered for the Merchant Center feed that contains the product. Use an ISO 3166 code to specify a country. */
-      var productCountry: js.UndefOr[String] = js.native
+      var productCountry: js.UndefOr[String] = js.undefined
       
       /** DS product group ID. */
-      var productGroupId: js.UndefOr[String] = js.native
+      var productGroupId: js.UndefOr[String] = js.undefined
       
       /** The product ID (SKU). */
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
       /** The language registered for the Merchant Center feed that contains the product. Use an ISO 639 code to specify a language. */
-      var productLanguage: js.UndefOr[String] = js.native
+      var productLanguage: js.UndefOr[String] = js.undefined
       
       /** The quantity of this conversion, in millis. */
-      var quantityMillis: js.UndefOr[String] = js.native
+      var quantityMillis: js.UndefOr[String] = js.undefined
       
       /**
         * The revenue amount of this `TRANSACTION` conversion, in micros (value multiplied by 1000000, no decimal). For example, to specify a revenue value of "10" enter "10000000" (10
         * million) in your request.
         */
-      var revenueMicros: js.UndefOr[String] = js.native
+      var revenueMicros: js.UndefOr[String] = js.undefined
       
       /** The numeric segmentation identifier (for example, DoubleClick Search Floodlight activity ID). */
-      var segmentationId: js.UndefOr[String] = js.native
+      var segmentationId: js.UndefOr[String] = js.undefined
       
       /** The friendly segmentation identifier (for example, DoubleClick Search Floodlight activity name). */
-      var segmentationName: js.UndefOr[String] = js.native
+      var segmentationName: js.UndefOr[String] = js.undefined
       
       /** The segmentation type of this conversion (for example, `FLOODLIGHT`). */
-      var segmentationType: js.UndefOr[String] = js.native
+      var segmentationType: js.UndefOr[String] = js.undefined
       
       /** The state of the conversion, that is, either `ACTIVE` or `REMOVED`. Note: state DELETED is deprecated. */
-      var state: js.UndefOr[String] = js.native
+      var state: js.UndefOr[String] = js.undefined
       
       /** The ID of the local store for which the product was advertised. Applicable only when the channel is "`local`". */
-      var storeId: js.UndefOr[String] = js.native
+      var storeId: js.UndefOr[String] = js.undefined
       
       /**
         * The type of the conversion, that is, either `ACTION` or `TRANSACTION`. An `ACTION` conversion is an action by the user that has no monetarily quantifiable value, while a
         * `TRANSACTION` conversion is an action that does have a monetarily quantifiable value. Examples are email list signups (`ACTION`) versus ecommerce purchases (`TRANSACTION`).
         */
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Conversion {
       
@@ -423,14 +420,13 @@ object client {
       }
     }
     
-    @js.native
     trait ConversionList extends StObject {
       
       /** The conversions being requested. */
-      var conversion: js.UndefOr[js.Array[Conversion]] = js.native
+      var conversion: js.UndefOr[js.Array[Conversion]] = js.undefined
       
       /** Identifies this as a ConversionList resource. Value: the fixed string doubleclicksearch#conversionList. */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object ConversionList {
       
@@ -480,14 +476,13 @@ object client {
       def updateAvailability(request: Fields): Request[UpdateAvailabilityResponse] = js.native
     }
     
-    @js.native
     trait CustomDimension extends StObject {
       
       /** Custom dimension name. */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /** Custom dimension value. */
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object CustomDimension {
       
@@ -514,14 +509,13 @@ object client {
       }
     }
     
-    @js.native
     trait CustomMetric extends StObject {
       
       /** Custom metric name. */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /** Custom metric numeric value. */
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
     }
     object CustomMetric {
       
@@ -548,38 +542,37 @@ object client {
       }
     }
     
-    @js.native
     trait Report extends StObject {
       
       /** Asynchronous report only. Contains a list of generated report files once the report has successfully completed. */
-      var files: js.UndefOr[js.Array[ByteCount]] = js.native
+      var files: js.UndefOr[js.Array[ByteCount]] = js.undefined
       
       /** Asynchronous report only. Id of the report. */
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
       /** Asynchronous report only. True if and only if the report has completed successfully and the report files are ready to be downloaded. */
-      var isReportReady: js.UndefOr[Boolean] = js.native
+      var isReportReady: js.UndefOr[Boolean] = js.undefined
       
       /** Identifies this as a Report resource. Value: the fixed string `doubleclicksearch#report`. */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /** The request that created the report. Optional fields not specified in the original request are filled with default values. */
-      var request: js.UndefOr[ReportRequest] = js.native
+      var request: js.UndefOr[ReportRequest] = js.undefined
       
       /** The number of report rows generated by the report, not including headers. */
-      var rowCount: js.UndefOr[Double] = js.native
+      var rowCount: js.UndefOr[Double] = js.undefined
       
       /** Synchronous report only. Generated report rows. */
-      var rows: js.UndefOr[js.Array[ReportRow]] = js.native
+      var rows: js.UndefOr[js.Array[ReportRow]] = js.undefined
       
       /**
         * The currency code of all monetary values produced in the report, including values that are set by users (e.g., keyword bid settings) and metrics (e.g., cost and revenue). The
         * currency code of a report is determined by the `statisticsCurrency` field of the report request.
         */
-      var statisticsCurrencyCode: js.UndefOr[String] = js.native
+      var statisticsCurrencyCode: js.UndefOr[String] = js.undefined
       
       /** If all statistics of the report are sourced from the same time zone, this would be it. Otherwise the field is unset. */
-      var statisticsTimeZone: js.UndefOr[String] = js.native
+      var statisticsTimeZone: js.UndefOr[String] = js.undefined
     }
     object Report {
       
@@ -654,51 +647,50 @@ object client {
       }
     }
     
-    @js.native
     trait ReportApiColumnSpec extends StObject {
       
       /** Name of a DoubleClick Search column to include in the report. */
-      var columnName: js.UndefOr[String] = js.native
+      var columnName: js.UndefOr[String] = js.undefined
       
       /**
         * Segments a report by a custom dimension. The report must be scoped to an advertiser or lower, and the custom dimension must already be set up in DoubleClick Search. The custom
         * dimension name, which appears in DoubleClick Search, is case sensitive.\ If used in a conversion report, returns the value of the specified custom dimension for the given
         * conversion, if set. This column does not segment the conversion report.
         */
-      var customDimensionName: js.UndefOr[String] = js.native
+      var customDimensionName: js.UndefOr[String] = js.undefined
       
       /**
         * Name of a custom metric to include in the report. The report must be scoped to an advertiser or lower, and the custom metric must already be set up in DoubleClick Search. The custom
         * metric name, which appears in DoubleClick Search, is case sensitive.
         */
-      var customMetricName: js.UndefOr[String] = js.native
+      var customMetricName: js.UndefOr[String] = js.undefined
       
       /** Inclusive day in YYYY-MM-DD format. When provided, this overrides the overall time range of the report for this column only. Must be provided together with `startDate`. */
-      var endDate: js.UndefOr[String] = js.native
+      var endDate: js.UndefOr[String] = js.undefined
       
       /** Synchronous report only. Set to `true` to group by this column. Defaults to `false`. */
-      var groupByColumn: js.UndefOr[Boolean] = js.native
+      var groupByColumn: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Text used to identify this column in the report output; defaults to `columnName` or `savedColumnName` when not specified. This can be used to prevent collisions between DoubleClick
         * Search columns and saved columns with the same name.
         */
-      var headerText: js.UndefOr[String] = js.native
+      var headerText: js.UndefOr[String] = js.undefined
       
       /** The platform that is used to provide data for the custom dimension. Acceptable values are "floodlight". */
-      var platformSource: js.UndefOr[String] = js.native
+      var platformSource: js.UndefOr[String] = js.undefined
       
       /**
         * Returns metrics only for a specific type of product activity. Accepted values are: - "`sold`": returns metrics only for products that were sold - "`advertised`": returns metrics
         * only for products that were advertised in a Shopping campaign, and that might or might not have been sold
         */
-      var productReportPerspective: js.UndefOr[String] = js.native
+      var productReportPerspective: js.UndefOr[String] = js.undefined
       
       /** Name of a saved column to include in the report. The report must be scoped at advertiser or lower, and this saved column must already be created in the DoubleClick Search UI. */
-      var savedColumnName: js.UndefOr[String] = js.native
+      var savedColumnName: js.UndefOr[String] = js.undefined
       
       /** Inclusive date in YYYY-MM-DD format. When provided, this overrides the overall time range of the report for this column only. Must be provided together with `endDate`. */
-      var startDate: js.UndefOr[String] = js.native
+      var startDate: js.UndefOr[String] = js.undefined
     }
     object ReportApiColumnSpec {
       
@@ -773,7 +765,6 @@ object client {
       }
     }
     
-    @js.native
     trait ReportRequest extends StObject {
       
       /**
@@ -781,58 +772,58 @@ object client {
         * For saved columns only the `savedColumnName` parameter is required. Both `columnName` and `savedColumnName` cannot be set in the same stanza.\ The maximum number of columns per
         * request is 300.
         */
-      var columns: js.UndefOr[js.Array[ReportApiColumnSpec]] = js.native
+      var columns: js.UndefOr[js.Array[ReportApiColumnSpec]] = js.undefined
       
       /** Format that the report should be returned in. Currently `csv` or `tsv` is supported. */
-      var downloadFormat: js.UndefOr[String] = js.native
+      var downloadFormat: js.UndefOr[String] = js.undefined
       
       /** A list of filters to be applied to the report.\ The maximum number of filters per request is 300. */
-      var filters: js.UndefOr[js.Array[Column]] = js.native
+      var filters: js.UndefOr[js.Array[Column]] = js.undefined
       
       /** Determines if removed entities should be included in the report. Defaults to `false`. Deprecated, please use `includeRemovedEntities` instead. */
-      var includeDeletedEntities: js.UndefOr[Boolean] = js.native
+      var includeDeletedEntities: js.UndefOr[Boolean] = js.undefined
       
       /** Determines if removed entities should be included in the report. Defaults to `false`. */
-      var includeRemovedEntities: js.UndefOr[Boolean] = js.native
+      var includeRemovedEntities: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Asynchronous report only. The maximum number of rows per report file. A large report is split into many files based on this field. Acceptable values are `1000000` to `100000000`,
         * inclusive.
         */
-      var maxRowsPerFile: js.UndefOr[Double] = js.native
+      var maxRowsPerFile: js.UndefOr[Double] = js.undefined
       
       /** Synchronous report only. A list of columns and directions defining sorting to be performed on the report rows.\ The maximum number of orderings per request is 300. */
-      var orderBy: js.UndefOr[js.Array[SortOrder]] = js.native
+      var orderBy: js.UndefOr[js.Array[SortOrder]] = js.undefined
       
       /**
         * The reportScope is a set of IDs that are used to determine which subset of entities will be returned in the report. The full lineage of IDs from the lowest scoped level desired up
         * through agency is required.
         */
-      var reportScope: js.UndefOr[AdGroupId] = js.native
+      var reportScope: js.UndefOr[AdGroupId] = js.undefined
       
       /**
         * Determines the type of rows that are returned in the report. For example, if you specify `reportType: keyword`, each row in the report will contain data about a keyword. See the
         * [Types of Reports](/search-ads/v2/report-types/) reference for the columns that are available for each type.
         */
-      var reportType: js.UndefOr[String] = js.native
+      var reportType: js.UndefOr[String] = js.undefined
       
       /** Synchronous report only. The maximum number of rows to return; additional rows are dropped. Acceptable values are `0` to `10000`, inclusive. Defaults to `10000`. */
-      var rowCount: js.UndefOr[Double] = js.native
+      var rowCount: js.UndefOr[Double] = js.undefined
       
       /** Synchronous report only. Zero-based index of the first row to return. Acceptable values are `0` to `50000`, inclusive. Defaults to `0`. */
-      var startRow: js.UndefOr[Double] = js.native
+      var startRow: js.UndefOr[Double] = js.undefined
       
       /**
         * Specifies the currency in which monetary will be returned. Possible values are: `usd`, `agency` (valid if the report is scoped to agency or lower), `advertiser` (valid if the report
         * is scoped to * advertiser or lower), or `account` (valid if the report is scoped to engine account or lower).
         */
-      var statisticsCurrency: js.UndefOr[String] = js.native
+      var statisticsCurrency: js.UndefOr[String] = js.undefined
       
       /** If metrics are requested in a report, this argument will be used to restrict the metrics to a specific time range. */
-      var timeRange: js.UndefOr[ChangedAttributesSinceTimestamp] = js.native
+      var timeRange: js.UndefOr[ChangedAttributesSinceTimestamp] = js.undefined
       
       /** If `true`, the report would only be created if all the requested stat data are sourced from a single timezone. Defaults to `false`. */
-      var verifySingleTimeZone: js.UndefOr[Boolean] = js.native
+      var verifySingleTimeZone: js.UndefOr[Boolean] = js.undefined
     }
     object ReportRequest {
       
@@ -962,17 +953,16 @@ object client {
       def request(request: Key): Request[Report] = js.native
     }
     
-    @js.native
     trait SavedColumn extends StObject {
       
       /** Identifies this as a SavedColumn resource. Value: the fixed string doubleclicksearch#savedColumn. */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /** The name of the saved column. */
-      var savedColumnName: js.UndefOr[String] = js.native
+      var savedColumnName: js.UndefOr[String] = js.undefined
       
       /** The type of data this saved column will produce. */
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object SavedColumn {
       
@@ -1005,14 +995,13 @@ object client {
       }
     }
     
-    @js.native
     trait SavedColumnList extends StObject {
       
       /** The saved columns being requested. */
-      var items: js.UndefOr[js.Array[SavedColumn]] = js.native
+      var items: js.UndefOr[js.Array[SavedColumn]] = js.undefined
       
       /** Identifies this as a SavedColumnList resource. Value: the fixed string doubleclicksearch#savedColumnList. */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object SavedColumnList {
       
@@ -1050,11 +1039,10 @@ object client {
       def list(request: AdvertiserId): Request[SavedColumnList] = js.native
     }
     
-    @js.native
     trait UpdateAvailabilityRequest extends StObject {
       
       /** The availabilities being requested. */
-      var availabilities: js.UndefOr[js.Array[Availability]] = js.native
+      var availabilities: js.UndefOr[js.Array[Availability]] = js.undefined
     }
     object UpdateAvailabilityRequest {
       
@@ -1078,11 +1066,10 @@ object client {
       }
     }
     
-    @js.native
     trait UpdateAvailabilityResponse extends StObject {
       
       /** The availabilities being returned. */
-      var availabilities: js.UndefOr[js.Array[Availability]] = js.native
+      var availabilities: js.UndefOr[js.Array[Availability]] = js.undefined
     }
     object UpdateAvailabilityResponse {
       

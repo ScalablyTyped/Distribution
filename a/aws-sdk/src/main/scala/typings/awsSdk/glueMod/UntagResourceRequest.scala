@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource from which to remove the tags.
     */
-  var ResourceArn: GlueResourceArn = js.native
+  var ResourceArn: GlueResourceArn
   
   /**
     * Tags to remove from this resource.
     */
-  var TagsToRemove: TagKeysList = js.native
+  var TagsToRemove: TagKeysList
 }
 object UntagResourceRequest {
   

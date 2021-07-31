@@ -2,15 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WizardResetEvent extends WizardEvent {
+trait WizardResetEvent
+  extends StObject
+     with WizardEvent {
   
-  var button: js.UndefOr[Button] = js.native
+  var button: js.UndefOr[Button] = js.undefined
   
-  var originalEvent: js.UndefOr[js.Any] = js.native
+  var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 object WizardResetEvent {
   

@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SplitButton extends Widget_ {
+trait SplitButton
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -35,20 +36,19 @@ trait SplitButton extends Widget_ {
 }
 object SplitButton {
   
-  @js.native
   trait BeforeOpenEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the split button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeOpenEventArgs {
     
@@ -81,28 +81,27 @@ object SplitButton {
     }
   }
   
-  @js.native
   trait ClickEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the split button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** return the button state
       */
-    var status: js.UndefOr[Boolean] = js.native
+    var status: js.UndefOr[Boolean] = js.undefined
     
     /** returns the target of the current object.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ClickEventArgs {
     
@@ -147,20 +146,19 @@ object SplitButton {
     }
   }
   
-  @js.native
   trait CloseEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the split button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CloseEventArgs {
     
@@ -193,20 +191,19 @@ object SplitButton {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the split button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -239,20 +236,19 @@ object SplitButton {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the split button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -285,32 +281,31 @@ object SplitButton {
     }
   }
   
-  @js.native
   trait ItemMouseOutEventArgs extends StObject {
     
     /** return the menu item id
       */
-    var ID: js.UndefOr[String] = js.native
+    var ID: js.UndefOr[String] = js.undefined
     
     /** return the clicked menu item text
       */
-    var Text: js.UndefOr[String] = js.native
+    var Text: js.UndefOr[String] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the clicked menu item element
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the split button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ItemMouseOutEventArgs {
     
@@ -361,32 +356,31 @@ object SplitButton {
     }
   }
   
-  @js.native
   trait ItemMouseOverEventArgs extends StObject {
     
     /** return the menu item id
       */
-    var ID: js.UndefOr[String] = js.native
+    var ID: js.UndefOr[String] = js.undefined
     
     /** return the clicked menu item text
       */
-    var Text: js.UndefOr[String] = js.native
+    var Text: js.UndefOr[String] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the clicked menu item element
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the split button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ItemMouseOverEventArgs {
     
@@ -437,36 +431,35 @@ object SplitButton {
     }
   }
   
-  @js.native
   trait ItemSelectedEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the clicked menu item element
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** return the menu id
       */
-    var menuId: js.UndefOr[String] = js.native
+    var menuId: js.UndefOr[String] = js.undefined
     
     /** return the clicked menu item text
       */
-    var menuText: js.UndefOr[String] = js.native
+    var menuText: js.UndefOr[String] = js.undefined
     
     /** returns the split button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the selected item
       */
-    var selectedItem: js.UndefOr[js.Any] = js.native
+    var selectedItem: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ItemSelectedEventArgs {
     
@@ -523,123 +516,122 @@ object SplitButton {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Specifies the arrowPosition of the Split or Dropdown Button.See arrowPosition
       * @Default {ej.ArrowPosition.Right}
       */
-    var arrowPosition: js.UndefOr[String | ArrowPosition] = js.native
+    var arrowPosition: js.UndefOr[String | ArrowPosition] = js.undefined
     
     /** Fires before menu of the split button control is opened.
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.native
+    var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.undefined
     
     /** Specifies the buttonMode like Split or Dropdown Button.See ButtonMode
       * @Default {ej.ButtonMode.Split}
       */
-    var buttonMode: js.UndefOr[String | ButtonMode] = js.native
+    var buttonMode: js.UndefOr[String | ButtonMode] = js.undefined
     
     /** Fires when Button control is clicked successfully
       */
-    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
+    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Fires before the list content of Button control is closed
       */
-    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.native
+    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
     
     /** Specifies the contentType of the Split Button.See ContentType
       * @Default {ej.ContentType.TextOnly}
       */
-    var contentType: js.UndefOr[String | ContentType] = js.native
+    var contentType: js.UndefOr[String | ContentType] = js.undefined
     
     /** Fires after Split Button control is created.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Set the root class for Split Button control theme
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Fires when the Split Button is destroyed successfully
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the enableRTL property for Split Button while initialization.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the disabling of Split Button if enabled is set to false.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the height of the Split Button.
       * @Default {â€œâ€}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the HTML Attributes of the Split Button.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the imagePosition of the Split Button.See imagePositions
       * @Default {ej.ImagePosition.ImageRight}
       */
-    var imagePosition: js.UndefOr[String | ImagePosition] = js.native
+    var imagePosition: js.UndefOr[String | ImagePosition] = js.undefined
     
     /** Fires when a menu item is Hovered out successfully
       */
-    var itemMouseOut: js.UndefOr[js.Function1[/* e */ ItemMouseOutEventArgs, Unit]] = js.native
+    var itemMouseOut: js.UndefOr[js.Function1[/* e */ ItemMouseOutEventArgs, Unit]] = js.undefined
     
     /** Fires when a menu item is Hovered in successfully
       */
-    var itemMouseOver: js.UndefOr[js.Function1[/* e */ ItemMouseOverEventArgs, Unit]] = js.native
+    var itemMouseOver: js.UndefOr[js.Function1[/* e */ ItemMouseOverEventArgs, Unit]] = js.undefined
     
     /** Fires when a menu item is clicked successfully
       */
-    var itemSelected: js.UndefOr[js.Function1[/* e */ ItemSelectedEventArgs, Unit]] = js.native
+    var itemSelected: js.UndefOr[js.Function1[/* e */ ItemSelectedEventArgs, Unit]] = js.undefined
     
     /** Fires before the list content of Button control is opened
       */
-    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.native
+    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Specifies the image content for Split Button while initialization.
       */
-    var prefixIcon: js.UndefOr[String] = js.native
+    var prefixIcon: js.UndefOr[String] = js.undefined
     
     /** Specifies the showRoundedCorner property for Split Button while initialization.
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the size of the Button. See ButtonSize
       * @Default {ej.ButtonSize.Normal}
       */
-    var size: js.UndefOr[String | ButtonSize] = js.native
+    var size: js.UndefOr[String | ButtonSize] = js.undefined
     
     /** Specifies the image content for Split Button while initialization.
       */
-    var suffixIcon: js.UndefOr[String] = js.native
+    var suffixIcon: js.UndefOr[String] = js.undefined
     
     /** Specifies the target of splitbutton menu while initialization with ID or class as a selector.
       */
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
     /** Specifies the list content for Split Button while initialization
       */
-    var targetID: js.UndefOr[String] = js.native
+    var targetID: js.UndefOr[String] = js.undefined
     
     /** Specifies the text content for Split Button while initialization.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the Split Button.
       * @Default {â€œâ€}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -810,20 +802,19 @@ object SplitButton {
     }
   }
   
-  @js.native
   trait OpenEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the split button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OpenEventArgs {
     

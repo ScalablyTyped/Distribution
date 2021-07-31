@@ -2,40 +2,38 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An annotation record.
   */
-@js.native
 trait SchemaAnnotation extends StObject {
   
   /**
     * Details of the source.
     */
-  var annotationSource: js.UndefOr[SchemaAnnotationSource] = js.native
+  var annotationSource: js.UndefOr[SchemaAnnotationSource] = js.undefined
   
   /**
     * Annnotations for images, e.g., bounding polygons.
     */
-  var imageAnnotation: js.UndefOr[SchemaImageAnnotation] = js.native
+  var imageAnnotation: js.UndefOr[SchemaImageAnnotation] = js.undefined
   
   /**
     * Output only. Resource name of the Annotation, of the form
     * `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/annotationStores/{annotation_store_id}/annotations/{annotation_id}`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Annotations for resource, e.g., classification tags.
     */
-  var resourceAnnotation: js.UndefOr[SchemaResourceAnnotation] = js.native
+  var resourceAnnotation: js.UndefOr[SchemaResourceAnnotation] = js.undefined
   
   /**
     * Annotations for sentitive texts, e.g., range of such texts.
     */
-  var textAnnotation: js.UndefOr[SchemaSensitiveTextAnnotation] = js.native
+  var textAnnotation: js.UndefOr[SchemaSensitiveTextAnnotation] = js.undefined
 }
 object SchemaAnnotation {
   

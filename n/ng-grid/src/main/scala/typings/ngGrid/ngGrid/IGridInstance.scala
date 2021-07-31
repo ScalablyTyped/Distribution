@@ -2,108 +2,106 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGridInstance extends StObject {
   
   @JSName("$canvas")
-  var $canvas: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any = js.native
+  var $canvas: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   
   @JSName("$footerPanel")
-  var $footerPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any = js.native
+  var $footerPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   
   @JSName("$groupPanel")
-  var $groupPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any = js.native
+  var $groupPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   
   @JSName("$headerContainer")
-  var $headerContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any = js.native
+  var $headerContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   
   @JSName("$headerScroller")
-  var $headerScroller: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any = js.native
+  var $headerScroller: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   
   @JSName("$headers")
-  var $headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any = js.native
+  var $headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   
   @JSName("$root")
-  var $root: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any = js.native
+  var $root: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   
   @JSName("$topPanel")
-  var $topPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any = js.native
+  var $topPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   
   @JSName("$viewport")
-  var $viewport: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any = js.native
+  var $viewport: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   
-  def buildColumnDefsFromData(): Unit = js.native
+  def buildColumnDefsFromData(): Unit
   
-  def buildColumns(): Unit = js.native
+  def buildColumns(): Unit
   
-  def calcMaxCanvasHeight(): Unit = js.native
+  def calcMaxCanvasHeight(): Unit
   
-  def clearSortingData(): Unit = js.native
+  def clearSortingData(): Unit
   
-  var config: IGridOptions = js.native
+  var config: IGridOptions
   
-  def configureColumnWidths(): Unit = js.native
+  def configureColumnWidths(): Unit
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var elementDims: IElementDimension = js.native
+  var elementDims: IElementDimension
   
-  var eventProvider: IEventProvider = js.native
+  var eventProvider: IEventProvider
   
-  var filteredRows: js.Array[IRow] = js.native
+  var filteredRows: js.Array[IRow]
   
-  def fixColumnIndexes(): Unit = js.native
+  def fixColumnIndexes(): Unit
   
-  def fixGroupIndexes(): Unit = js.native
+  def fixGroupIndexes(): Unit
   
-  var footerController: js.Any = js.native
+  var footerController: js.Any
   
-  def getTemplate(key: String): js.Any = js.native
+  def getTemplate(key: String): js.Any
   
-  var gridId: String = js.native
+  var gridId: String
   
-  def init(): js.Any = js.native
+  def init(): js.Any
   
-  def initTemplates(): js.Any = js.native
+  def initTemplates(): js.Any
   
-  var lastSortedColumns: js.Array[IColumn] = js.native
+  var lastSortedColumns: js.Array[IColumn]
   
-  var lateBindColumns: Boolean = js.native
+  var lateBindColumns: Boolean
   
-  var maxCanvasHt: Double = js.native
+  var maxCanvasHt: Double
   
-  def minRowsToRender(): Unit = js.native
+  def minRowsToRender(): Unit
   
-  var prevScrollIndex: Double = js.native
+  var prevScrollIndex: Double
   
-  var prevScrollTop: Double = js.native
+  var prevScrollTop: Double
   
-  def refreshDomSizes(): Unit = js.native
+  def refreshDomSizes(): Unit
   
-  def resizeOnData(col: IColumn): Unit = js.native
+  def resizeOnData(col: IColumn): Unit
   
-  var rootDim: IDimension = js.native
+  var rootDim: IDimension
   
-  var rowCache: js.Array[IRow] = js.native
+  var rowCache: js.Array[IRow]
   
-  var rowFactory: IRowFactory = js.native
+  var rowFactory: IRowFactory
   
-  var rowMap: js.Array[IRow] = js.native
+  var rowMap: js.Array[IRow]
   
-  var searchProvider: ISearchProvider = js.native
+  var searchProvider: ISearchProvider
   
-  def setRenderedRows(newRows: js.Array[IRow]): Unit = js.native
+  def setRenderedRows(newRows: js.Array[IRow]): Unit
   
-  def sortActual(): Unit = js.native
+  def sortActual(): Unit
   
-  def sortColumnsInit(): Unit = js.native
+  def sortColumnsInit(): Unit
   
-  def sortData(col: IColumn, event: js.Any): Unit = js.native
+  def sortData(col: IColumn, event: js.Any): Unit
   
-  var styleProvider: IStyleProvider = js.native
+  var styleProvider: IStyleProvider
 }
 object IGridInstance {
   

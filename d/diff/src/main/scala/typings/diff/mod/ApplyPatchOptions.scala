@@ -4,10 +4,8 @@ import typings.diff.diffStrings.Space
 import typings.diff.diffStrings.`-_`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplyPatchOptions extends StObject {
   
   /**
@@ -24,13 +22,13 @@ trait ApplyPatchOptions extends StObject {
       /* patchContent */ String, 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Number of lines that are allowed to differ before rejecting a patch.
     * @default 0
     */
-  var fuzzFactor: js.UndefOr[Double] = js.native
+  var fuzzFactor: js.UndefOr[Double] = js.undefined
 }
 object ApplyPatchOptions {
   

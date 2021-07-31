@@ -2,41 +2,39 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxLibraryMeasureDef...
   */
-@js.native
 trait INxLibraryMeasureDef extends StObject {
   
   /**
     * Index to the active expression in a measure.
     */
-  var qActiveExpression: Double = js.native
+  var qActiveExpression: Double
   
   /**
     * Definition of the measure.
     */
-  var qDef: String = js.native
+  var qDef: String
   
   /**
     * Array of expressions.
     */
-  var qExpressions: js.Array[String] = js.native
+  var qExpressions: js.Array[String]
   
   /**
     * Used to define a cyclic group or drill-down group.
     * This parameter is optional.
     * Default value is no grouping.
     */
-  var qGrouping: js.UndefOr[NxGrpType] = js.native
+  var qGrouping: js.UndefOr[NxGrpType] = js.undefined
   
   /**
     * Label of the measure.
     */
-  var qLabel: String = js.native
+  var qLabel: String
 }
 object INxLibraryMeasureDef {
   

@@ -6,26 +6,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceTasksGet extends StandardParameters {
+trait ParamsResourceTasksGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Task identifier.
     */
-  var task: js.UndefOr[String] = js.native
+  var task: js.UndefOr[String] = js.undefined
   
   /**
     * Task list identifier.
     */
-  var tasklist: js.UndefOr[String] = js.native
+  var tasklist: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceTasksGet {
   

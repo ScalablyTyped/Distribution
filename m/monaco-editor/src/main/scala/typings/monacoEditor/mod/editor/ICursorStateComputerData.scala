@@ -3,23 +3,21 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.Selection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICursorStateComputerData extends StObject {
   
   /**
     * Get the inverse edit operations of the added edit operations.
     */
-  def getInverseEditOperations(): js.Array[IValidEditOperation] = js.native
+  def getInverseEditOperations(): js.Array[IValidEditOperation]
   
   /**
     * Get a previously tracked selection.
     * @param id The unique identifier returned by `trackSelection`.
     * @return The selection.
     */
-  def getTrackedSelection(id: String): Selection = js.native
+  def getTrackedSelection(id: String): Selection
 }
 object ICursorStateComputerData {
   

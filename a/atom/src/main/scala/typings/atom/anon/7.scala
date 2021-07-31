@@ -5,15 +5,13 @@ import typings.atom.atomStrings.hard
 import typings.atom.atomStrings.soft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `7` extends StObject {
   
-  var newValue: auto | soft | hard = js.native
+  var newValue: auto | soft | hard
   
-  var oldValue: js.UndefOr[auto | soft | hard] = js.native
+  var oldValue: js.UndefOr[auto | soft | hard] = js.undefined
 }
 object `7` {
   

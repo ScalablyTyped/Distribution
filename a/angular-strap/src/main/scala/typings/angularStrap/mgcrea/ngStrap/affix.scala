@@ -3,7 +3,6 @@ package typings.angularStrap.mgcrea.ngStrap
 import typings.angular.mod.IAugmentedJQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -12,16 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ///////////////////////////////////////////////////////////////////////////
 object affix {
   
-  @js.native
   trait IAffix extends StObject {
     
-    def checkPosition(): Unit = js.native
+    def checkPosition(): Unit
     
-    def checkPositionWithEventLoop(): Unit = js.native
+    def checkPositionWithEventLoop(): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def init(): Unit = js.native
+    def init(): Unit
   }
   object IAffix {
     
@@ -53,16 +51,15 @@ object affix {
     }
   }
   
-  @js.native
   trait IAffixOptions extends StObject {
     
-    var offsetBottom: js.UndefOr[Double] = js.native
+    var offsetBottom: js.UndefOr[Double] = js.undefined
     
-    var offsetParent: js.UndefOr[Double] = js.native
+    var offsetParent: js.UndefOr[Double] = js.undefined
     
-    var offsetTop: js.UndefOr[Double] = js.native
+    var offsetTop: js.UndefOr[Double] = js.undefined
     
-    var offsetUnpin: js.UndefOr[Double] = js.native
+    var offsetUnpin: js.UndefOr[Double] = js.undefined
   }
   object IAffixOptions {
     
@@ -101,10 +98,9 @@ object affix {
     }
   }
   
-  @js.native
   trait IAffixProvider extends StObject {
     
-    var defaults: IAffixOptions = js.native
+    var defaults: IAffixOptions
   }
   object IAffixProvider {
     

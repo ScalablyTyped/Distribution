@@ -2,13 +2,11 @@ package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to delete multiple Photos.
   */
-@js.native
 trait SchemaBatchDeletePhotosRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaBatchDeletePhotosRequest extends StObject {
     * syntax for the URL query parameter:
     * `photoIds=&lt;id1&gt;&amp;photoIds=&lt;id2&gt;&amp;...`.
     */
-  var photoIds: js.UndefOr[js.Array[String]] = js.native
+  var photoIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaBatchDeletePhotosRequest {
   

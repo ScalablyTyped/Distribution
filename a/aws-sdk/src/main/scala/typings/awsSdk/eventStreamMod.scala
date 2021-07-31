@@ -4,7 +4,6 @@ import typings.awsSdk.awsSdkStrings.data_
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventStreamMod {
@@ -12,7 +11,9 @@ object eventStreamMod {
   type EventStream[Events] = StreamingEventStream[Events] | js.Array[Events]
   
   @js.native
-  trait StreamingEventStream[Events] extends ReadableStream {
+  trait StreamingEventStream[Events]
+    extends StObject
+       with ReadableStream {
     
     def on(event: String, listener: js.Function): this.type = js.native
     @JSName("on")

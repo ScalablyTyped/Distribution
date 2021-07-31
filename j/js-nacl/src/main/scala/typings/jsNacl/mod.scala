@@ -4,24 +4,24 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("js-nacl", "instantiate")
+  @JSImport("js-nacl", JSImport.Namespace)
   @js.native
-  def instantiate(cb: NaclCallback): Unit = js.native
-  @JSImport("js-nacl", "instantiate")
-  @js.native
-  def instantiate(cb: NaclCallback, opts: NaclOpts): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def instantiate(cb: NaclCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def instantiate(cb: NaclCallback, opts: NaclOpts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(cb.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait BoxKeyPair extends StObject {
     
-    var boxPk: BoxPublicKey = js.native
+    var boxPk: BoxPublicKey
     
-    var boxSk: BoxSecretKey = js.native
+    var boxSk: BoxSecretKey
   }
   object BoxKeyPair {
     
@@ -46,10 +46,9 @@ object mod {
   
   type BoxSecretKey = Uint8Array
   
-  @js.native
   trait BoxSharedSecret extends StObject {
     
-    var boxK: Uint8Array = js.native
+    var boxK: Uint8Array
   }
   object BoxSharedSecret {
     
@@ -73,69 +72,68 @@ object mod {
   
   type MessageWithSignature = Uint8Array
   
-  @js.native
   trait Nacl extends StObject {
     
-    def crypto_box(msg: Message, nonce: Nonce, rcpt: BoxPublicKey, sender: BoxSecretKey): CipherText = js.native
+    def crypto_box(msg: Message, nonce: Nonce, rcpt: BoxPublicKey, sender: BoxSecretKey): CipherText
     
     // crypto_box
-    def crypto_box_keypair(): BoxKeyPair = js.native
+    def crypto_box_keypair(): BoxKeyPair
     
-    def crypto_box_keypair_from_raw_sk(seed: Uint8Array): BoxKeyPair = js.native
+    def crypto_box_keypair_from_raw_sk(seed: Uint8Array): BoxKeyPair
     
-    def crypto_box_open(cipher: CipherText, nonce: Nonce, sender: BoxPublicKey, rcpt: BoxSecretKey): Message = js.native
+    def crypto_box_open(cipher: CipherText, nonce: Nonce, sender: BoxPublicKey, rcpt: BoxSecretKey): Message
     
-    def crypto_box_open_precomputed(cipher: CipherText, nonce: Nonce, shared: BoxSharedSecret): Message = js.native
+    def crypto_box_open_precomputed(cipher: CipherText, nonce: Nonce, shared: BoxSharedSecret): Message
     
-    def crypto_box_precompute(sender: BoxPublicKey, rcpt: BoxSecretKey): BoxSharedSecret = js.native
+    def crypto_box_precompute(sender: BoxPublicKey, rcpt: BoxSecretKey): BoxSharedSecret
     
-    def crypto_box_precomputed(msg: Message, nonce: Nonce, shared: BoxSharedSecret): CipherText = js.native
+    def crypto_box_precomputed(msg: Message, nonce: Nonce, shared: BoxSharedSecret): CipherText
     
-    def crypto_box_random_nonce(): Nonce = js.native
+    def crypto_box_random_nonce(): Nonce
     
-    def crypto_box_seed_keypair(seed: Uint8Array): BoxKeyPair = js.native
+    def crypto_box_seed_keypair(seed: Uint8Array): BoxKeyPair
     
     // hash
-    def crypto_hash(raw: Uint8Array): Uint8Array = js.native
+    def crypto_hash(raw: Uint8Array): Uint8Array
     
-    def crypto_hash_sha256(raw: Uint8Array): Uint8Array = js.native
+    def crypto_hash_sha256(raw: Uint8Array): Uint8Array
     
-    def crypto_secretbox(msg: Message, nonce: Nonce, key: BoxSecretKey): CipherText = js.native
+    def crypto_secretbox(msg: Message, nonce: Nonce, key: BoxSecretKey): CipherText
     
-    def crypto_secretbox_open(cipher: CipherText, nonce: Nonce, key: BoxSecretKey): Message = js.native
+    def crypto_secretbox_open(cipher: CipherText, nonce: Nonce, key: BoxSecretKey): Message
     
     // crypto_secretbox
-    def crypto_secretbox_random_nonce(): Nonce = js.native
+    def crypto_secretbox_random_nonce(): Nonce
     
-    def crypto_sign(msg: Message, sk: SignerSecretKey): MessageWithSignature = js.native
+    def crypto_sign(msg: Message, sk: SignerSecretKey): MessageWithSignature
     
-    def crypto_sign_detached(msg: Message, sk: SignerSecretKey): Signature = js.native
+    def crypto_sign_detached(msg: Message, sk: SignerSecretKey): Signature
     
     // crypto_sign
-    def crypto_sign_keypair(): SignKeyPair = js.native
+    def crypto_sign_keypair(): SignKeyPair
     
-    def crypto_sign_open(packet: MessageWithSignature, pk: SignerPublicKey): Message | Null = js.native
+    def crypto_sign_open(packet: MessageWithSignature, pk: SignerPublicKey): Message | Null
     
     // derived keys
-    def crypto_sign_seed_keypair(seed: Uint8Array): SignKeyPair = js.native
+    def crypto_sign_seed_keypair(seed: Uint8Array): SignKeyPair
     
-    def crypto_sign_verify_detached(sig: Signature, msg: Message, pk: SignerPublicKey): Boolean = js.native
+    def crypto_sign_verify_detached(sig: Signature, msg: Message, pk: SignerPublicKey): Boolean
     
-    def decode_latin1(arr: Uint8Array): String = js.native
+    def decode_latin1(arr: Uint8Array): String
     
-    def decode_utf8(arr: Uint8Array): String = js.native
+    def decode_utf8(arr: Uint8Array): String
     
-    def encode_latin1(latin1: String): Uint8Array = js.native
+    def encode_latin1(latin1: String): Uint8Array
     
-    def encode_utf8(utf8: String): Uint8Array = js.native
+    def encode_utf8(utf8: String): Uint8Array
     
-    def from_hex(hex: String): Uint8Array = js.native
+    def from_hex(hex: String): Uint8Array
     
     // random
-    def random_bytes(length: Double): Uint8Array = js.native
+    def random_bytes(length: Double): Uint8Array
     
     // strings vs. binary
-    def to_hex(arr: Uint8Array): String = js.native
+    def to_hex(arr: Uint8Array): String
   }
   object Nacl {
     
@@ -265,12 +263,11 @@ object mod {
   
   type Nonce = Uint8Array
   
-  @js.native
   trait SignKeyPair extends StObject {
     
-    var signPk: SignerPublicKey = js.native
+    var signPk: SignerPublicKey
     
-    var signSk: SignerSecretKey = js.native
+    var signSk: SignerSecretKey
   }
   object SignKeyPair {
     

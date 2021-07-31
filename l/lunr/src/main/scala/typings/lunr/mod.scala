@@ -15,7 +15,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -47,9 +46,12 @@ object mod {
     *   });
     * ```
     */
+  @scala.inline
+  def apply(config: ConfigFunction): Index = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Index]
+  
   @JSImport("lunr", JSImport.Namespace)
   @js.native
-  def apply(config: ConfigFunction): Index = js.native
+  val ^ : js.Any = js.native
   
   /**
     * lunr.Builder performs indexing on a set of documents and
@@ -236,7 +238,11 @@ object mod {
       * arguments can also be passed when calling use. The function will be called
       * with the index builder as its context.
       */
-    type Plugin = js.ThisFunction1[/* this */ Builder, /* repeated */ js.Any, Unit]
+    @js.native
+    trait Plugin extends StObject {
+      
+      def apply(args: js.Any*): Unit = js.native
+    }
   }
   
   /**
@@ -296,43 +302,45 @@ object mod {
   }
   object Index {
     
+    @JSImport("lunr", "Index")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Loads a previously serialized lunr.Index
       *
       * @param serializedIndex - A previously serialized lunr.Index
       */
     /* static member */
-    @JSImport("lunr", "Index.load")
-    @js.native
-    def load(serializedIndex: js.Object): Index = js.native
+    @scala.inline
+    def load(serializedIndex: js.Object): Index = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serializedIndex.asInstanceOf[js.Any]).asInstanceOf[Index]
     
-    @js.native
     trait Attributes extends StObject {
       
       /**
         * Document vectors keyed by document reference.
         */
-      var documentVectors: StringDictionary[Vector] = js.native
+      var documentVectors: StringDictionary[Vector]
       
       /**
         * The names of indexed document fields.
         */
-      var fields: js.Array[String] = js.native
+      var fields: js.Array[String]
       
       /**
         * An index of term/field to document reference.
         */
-      var invertedIndex: js.Object = js.native
+      var invertedIndex: js.Object
       
       /**
         * The pipeline to use for search terms.
         */
-      var pipeline: Pipeline = js.native
+      var pipeline: Pipeline
       
       /**
         * An set of all corpus tokens.
         */
-      var tokenSet: TokenSet = js.native
+      var tokenSet: TokenSet
     }
     object Attributes {
       
@@ -424,23 +432,22 @@ object mod {
     /**
       * A result contains details of a document matching a search query.
       */
-    @js.native
     trait Result extends StObject {
       
       /**
         * Contains metadata about this match including which term(s) caused the match.
         */
-      var matchData: MatchData = js.native
+      var matchData: MatchData
       
       /**
         * The reference of the document this result represents.
         */
-      var ref: String = js.native
+      var ref: String
       
       /**
         * A number between 0 and 1 representing how similar this document is to the query.
         */
-      var score: Double = js.native
+      var score: Double
     }
     object Result {
       
@@ -599,6 +606,10 @@ object mod {
   }
   object Pipeline {
     
+    @JSImport("lunr", "Pipeline")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Loads a previously serialised pipeline.
       *
@@ -609,9 +620,8 @@ object mod {
       * @param serialised - The serialised pipeline to load.
       */
     /* static member */
-    @JSImport("lunr", "Pipeline.load")
-    @js.native
-    def load(serialised: js.Object): Pipeline = js.native
+    @scala.inline
+    def load(serialised: js.Object): Pipeline = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialised.asInstanceOf[js.Any]).asInstanceOf[Pipeline]
     
     /**
       * Register a function with the pipeline.
@@ -626,9 +636,8 @@ object mod {
       * @param label - The label to register this function with
       */
     /* static member */
-    @JSImport("lunr", "Pipeline.registerFunction")
-    @js.native
-    def registerFunction(fn: PipelineFunction, label: String): Unit = js.native
+    @scala.inline
+    def registerFunction(fn: PipelineFunction, label: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunction")(fn.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -706,28 +715,34 @@ object mod {
     object presence extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[presence with Double] = js.native
+      def apply(value: Double): js.UndefOr[presence & Double] = js.native
       
       /**
         * Term's presence in a document is optional, this is the default value.
         */
       @js.native
-      sealed trait OPTIONAL extends presence
-      /* 1 */ val OPTIONAL: typings.lunr.mod.Query.presence.OPTIONAL with Double = js.native
+      sealed trait OPTIONAL
+        extends StObject
+           with presence
+      /* 1 */ val OPTIONAL: typings.lunr.mod.Query.presence.OPTIONAL & Double = js.native
       
       /**
         * Term's presence in a document is prohibited, documents that do contain this term will not be returned.
         */
       @js.native
-      sealed trait PROHIBITED extends presence
-      /* 3 */ val PROHIBITED: typings.lunr.mod.Query.presence.PROHIBITED with Double = js.native
+      sealed trait PROHIBITED
+        extends StObject
+           with presence
+      /* 3 */ val PROHIBITED: typings.lunr.mod.Query.presence.PROHIBITED & Double = js.native
       
       /**
         * Term's presence in a document is required, documents that do not contain this term will not be returned.
         */
       @js.native
-      sealed trait REQUIRED extends presence
-      /* 2 */ val REQUIRED: typings.lunr.mod.Query.presence.REQUIRED with Double = js.native
+      sealed trait REQUIRED
+        extends StObject
+           with presence
+      /* 2 */ val REQUIRED: typings.lunr.mod.Query.presence.REQUIRED & Double = js.native
     }
     
     @js.native
@@ -737,44 +752,49 @@ object mod {
     object wildcard extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[wildcard with Double] = js.native
+      def apply(value: Double): js.UndefOr[wildcard & Double] = js.native
       
       @js.native
-      sealed trait LEADING extends wildcard
-      /* 1 << 0 */ val LEADING: typings.lunr.mod.Query.wildcard.LEADING with Double = js.native
+      sealed trait LEADING
+        extends StObject
+           with wildcard
+      /* 1 << 0 */ val LEADING: typings.lunr.mod.Query.wildcard.LEADING & Double = js.native
       
       @js.native
-      sealed trait NONE extends wildcard
-      /* 0 */ val NONE: typings.lunr.mod.Query.wildcard.NONE with Double = js.native
+      sealed trait NONE
+        extends StObject
+           with wildcard
+      /* 0 */ val NONE: typings.lunr.mod.Query.wildcard.NONE & Double = js.native
       
       @js.native
-      sealed trait TRAILING extends wildcard
-      /* 1 << 1 */ val TRAILING: typings.lunr.mod.Query.wildcard.TRAILING with Double = js.native
+      sealed trait TRAILING
+        extends StObject
+           with wildcard
+      /* 1 << 1 */ val TRAILING: typings.lunr.mod.Query.wildcard.TRAILING & Double = js.native
     }
     
     /**
       * A single clause in a {@link lunr.Query} contains a term and details on how to
       * match that term against a {@link lunr.Index}.
       */
-    @js.native
     trait Clause extends StObject {
       
       /** Any boost that should be applied when matching this clause. */
-      var boost: Double = js.native
+      var boost: Double
       
       /** Whether the term should have fuzzy matching applied, and how fuzzy the match should be. */
-      var editDistance: Double = js.native
+      var editDistance: Double
       
       /** The fields in an index this clause should be matched against. */
-      var fields: js.Array[String] = js.native
+      var fields: js.Array[String]
       
-      var term: String = js.native
+      var term: String
       
       /** Whether the term should be passed through the search pipeline. */
-      var usePipeline: Boolean = js.native
+      var usePipeline: Boolean
       
       /** Whether the term should have wildcards appended or prepended. */
-      var wildcard: Double = js.native
+      var wildcard: Double
     }
     object Clause {
       
@@ -820,11 +840,18 @@ object mod {
   
   @JSImport("lunr", "QueryParseError")
   @js.native
-  class QueryParseError protected () extends Error {
+  class QueryParseError protected ()
+    extends StObject
+       with Error {
     def this(message: String, start: String, end: String) = this()
     
     var end: Double = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     @JSName("name")
     var name_QueryParseError: typings.lunr.lunrStrings.QueryParseError = js.native
     
@@ -1050,9 +1077,8 @@ object mod {
     * @see lunr.Pipeline
     * @see lunr.stopWordFilter
     */
-  @JSImport("lunr", "generateStopWordFilter")
-  @js.native
-  def generateStopWordFilter(stopWords: js.Array[String]): PipelineFunction = js.native
+  @scala.inline
+  def generateStopWordFilter(stopWords: js.Array[String]): PipelineFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStopWordFilter")(stopWords.asInstanceOf[js.Any]).asInstanceOf[PipelineFunction]
   
   /**
     * lunr.stemmer is an english language stemmer, this is a JavaScript
@@ -1063,9 +1089,8 @@ object mod {
     * @param token - The string to stem
     * @see {@link lunr.Pipeline}
     */
-  @JSImport("lunr", "stemmer")
-  @js.native
-  def stemmer(token: Token): Token = js.native
+  @scala.inline
+  def stemmer(token: Token): Token = ^.asInstanceOf[js.Dynamic].applyDynamic("stemmer")(token.asInstanceOf[js.Any]).asInstanceOf[Token]
   
   /**
     * lunr.stopWordFilter is an English language stop word list filter, any words
@@ -1079,9 +1104,8 @@ object mod {
     * @param token - A token to check for being a stop word.
     * @see {@link lunr.Pipeline}
     */
-  @JSImport("lunr", "stopWordFilter")
-  @js.native
-  def stopWordFilter(token: Token): Token = js.native
+  @scala.inline
+  def stopWordFilter(token: Token): Token = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWordFilter")(token.asInstanceOf[js.Any]).asInstanceOf[Token]
   
   object tokenizer {
     
@@ -1096,18 +1120,15 @@ object mod {
       *
       * @param obj - The object to convert into tokens
       */
-    @JSImport("lunr", "tokenizer")
-    @js.native
-    def apply(): js.Array[Token] = js.native
-    @JSImport("lunr", "tokenizer")
-    @js.native
-    def apply(obj: String): js.Array[Token] = js.native
-    @JSImport("lunr", "tokenizer")
-    @js.native
-    def apply(obj: js.Array[js.Object]): js.Array[Token] = js.native
-    @JSImport("lunr", "tokenizer")
-    @js.native
-    def apply(obj: js.Object): js.Array[Token] = js.native
+    @scala.inline
+    def apply(): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[Token]]
+    @scala.inline
+    def apply(obj: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+    @scala.inline
+    def apply(obj: js.Array[js.Object]): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+    @scala.inline
+    def apply(obj: js.Object): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+    
     @JSImport("lunr", "tokenizer")
     @js.native
     val ^ : js.Any = js.native
@@ -1139,14 +1160,17 @@ object mod {
     * @param token The token to pass through the filter
     * @see lunr.Pipeline
     */
-  @JSImport("lunr", "trimmer")
-  @js.native
-  def trimmer(token: Token): Token = js.native
+  @scala.inline
+  def trimmer(token: Token): Token = ^.asInstanceOf[js.Dynamic].applyDynamic("trimmer")(token.asInstanceOf[js.Any]).asInstanceOf[Token]
   
   /**
     * A namespace containing utils for the rest of the lunr library
     */
   object utils {
+    
+    @JSImport("lunr", "utils")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Convert an object to a string.
@@ -1158,18 +1182,16 @@ object mod {
       * @param obj The object to convert to a string.
       * @return string representation of the passed object.
       */
-    @JSImport("lunr", "utils.asString")
-    @js.native
-    def asString(obj: js.Any): String = js.native
+    @scala.inline
+    def asString(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asString")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Print a warning message to the console.
       *
       * @param message The message to be printed.
       */
-    @JSImport("lunr", "utils.warn")
-    @js.native
-    def warn(message: String): Unit = js.native
+    @scala.inline
+    def warn(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("lunr", "version")

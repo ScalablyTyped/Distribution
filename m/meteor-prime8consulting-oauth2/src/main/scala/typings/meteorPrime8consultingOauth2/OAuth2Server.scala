@@ -6,21 +6,19 @@ import typings.meteor.Mongo.Collection
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object OAuth2Server {
   
-  @js.native
   trait AccessToken extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var expires: Date = js.native
+    var expires: Date
     
-    var userId: String = js.native
+    var userId: String
   }
   object AccessToken {
     
@@ -47,16 +45,15 @@ object OAuth2Server {
     }
   }
   
-  @js.native
   trait AuthCode extends StObject {
     
-    var authCode: String = js.native
+    var authCode: String
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var expires: Date = js.native
+    var expires: Date
     
-    var userId: String = js.native
+    var userId: String
   }
   object AuthCode {
     
@@ -83,16 +80,15 @@ object OAuth2Server {
     }
   }
   
-  @js.native
   trait AuthCodeGrantResult extends StObject {
     
-    var authorizationCode: String = js.native
+    var authorizationCode: String
     
-    var error: js.Any = js.native
+    var error: js.Any
     
-    var redirectToUri: String = js.native
+    var redirectToUri: String
     
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object AuthCodeGrantResult {
     
@@ -119,7 +115,6 @@ object OAuth2Server {
     }
   }
   
-  @js.native
   trait CallMethod extends StObject {
     
     /**
@@ -132,7 +127,7 @@ object OAuth2Server {
       scope: js.Array[String],
       state: String,
       callback: js.Function2[/* err */ Error, /* authCodeGrantResult */ AuthCodeGrantResult, Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object CallMethod {
     
@@ -154,16 +149,15 @@ object OAuth2Server {
     }
   }
   
-  @js.native
   trait Client extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var redirectUri: String = js.native
+    var redirectUri: String
   }
   object Client {
     
@@ -190,28 +184,27 @@ object OAuth2Server {
     }
   }
   
-  @js.native
   trait Collections extends StObject {
     
     /**
       * (server only) Collection of the access tokens.
       */
-    var accessToken: Collection[AccessToken, AccessToken] = js.native
+    var accessToken: Collection[AccessToken, AccessToken]
     
     /**
       * Collection of the authorization codes.
       */
-    var authCode: Collection[AuthCode, AuthCode] = js.native
+    var authCode: Collection[AuthCode, AuthCode]
     
     /**
       * (server only) Collection of the clients authorized to use the oauth2 service.
       */
-    var client: Collection[Client, Client] = js.native
+    var client: Collection[Client, Client]
     
     /**
       * Collection of the refresh tokens.
       */
-    var refreshToken: Collection[RefreshToken, RefreshToken] = js.native
+    var refreshToken: Collection[RefreshToken, RefreshToken]
   }
   object Collections {
     
@@ -243,13 +236,12 @@ object OAuth2Server {
     }
   }
   
-  @js.native
   trait MethodNames extends StObject {
     
     /**
       * Constant string representing th authCodeGran meteor method.
       */
-    var authCodeGrant: String = js.native
+    var authCodeGrant: String
   }
   object MethodNames {
     
@@ -267,20 +259,19 @@ object OAuth2Server {
     }
   }
   
-  @js.native
   trait OAuth2Server extends StObject {
     
-    var callMethod: CallMethod = js.native
+    var callMethod: CallMethod
     
-    var collections: Collections = js.native
+    var collections: Collections
     
-    var methodNames: MethodNames = js.native
+    var methodNames: MethodNames
     
-    var oauthserver: js.Any = js.native
+    var oauthserver: js.Any
     
-    var pubSubNames: PubSubNames = js.native
+    var pubSubNames: PubSubNames
     
-    var subscribeTo: SubscribeTo = js.native
+    var subscribeTo: SubscribeTo
   }
   object OAuth2Server {
     
@@ -320,18 +311,17 @@ object OAuth2Server {
     }
   }
   
-  @js.native
   trait PubSubNames extends StObject {
     
     /**
       * Constant string representing the auth codes pub/sub.
       */
-    var authCodes: String = js.native
+    var authCodes: String
     
     /**
       * Constant string representing the refresh token pub/sub.
       */
-    var refreshTokens: String = js.native
+    var refreshTokens: String
   }
   object PubSubNames {
     
@@ -352,16 +342,15 @@ object OAuth2Server {
     }
   }
   
-  @js.native
   trait RefreshToken extends StObject {
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var expires: Date = js.native
+    var expires: Date
     
-    var refreshToken: String = js.native
+    var refreshToken: String
     
-    var userId: String = js.native
+    var userId: String
   }
   object RefreshToken {
     
@@ -388,13 +377,12 @@ object OAuth2Server {
     }
   }
   
-  @js.native
   trait SubscribeTo extends StObject {
     
     /**
       * Wrapper function to subscribe to the auth code subscription. Returns a standard subscription handle.
       */
-    def authCode(): SubscriptionHandle = js.native
+    def authCode(): SubscriptionHandle
   }
   object SubscribeTo {
     

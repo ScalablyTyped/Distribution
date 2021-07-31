@@ -2,33 +2,31 @@ package typings.googleAppsScript.GoogleAppsScript.JDBC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** JdbcAdvancedParameters */
-@js.native
 trait ConnectionAdvancedParameters extends StObject {
   
   /** the client's SSL certificate */
-  var _clientSslCertificate: js.UndefOr[String] = js.native
+  var _clientSslCertificate: js.UndefOr[String] = js.undefined
   
   /** the client's SSL key */
-  var _clientSslKey: js.UndefOr[String] = js.native
+  var _clientSslKey: js.UndefOr[String] = js.undefined
   
   /** the server's SSL certificate */
-  var _serverSslCertificate: js.UndefOr[String] = js.native
+  var _serverSslCertificate: js.UndefOr[String] = js.undefined
   
   /** the database to connect to */
-  var databaseName: js.UndefOr[String] = js.native
+  var databaseName: js.UndefOr[String] = js.undefined
   
   /** the user's password */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /** whether or not the connection should comply with JDBC rules when converting time zones. The default is false. */
-  var useJDBCCompliantTimeZoneShift: js.UndefOr[Boolean] = js.native
+  var useJDBCCompliantTimeZoneShift: js.UndefOr[Boolean] = js.undefined
   
   /** the username to pass to the database */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object ConnectionAdvancedParameters {
   

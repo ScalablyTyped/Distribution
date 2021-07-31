@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApprovalUrlInfo extends StObject {
   
   /** A URL that displays a product's permissions and that can also be used to approve the product with the Products.approve call. */
-  var approvalUrl: js.UndefOr[String] = js.native
+  var approvalUrl: js.UndefOr[String] = js.undefined
 }
 object ApprovalUrlInfo {
   

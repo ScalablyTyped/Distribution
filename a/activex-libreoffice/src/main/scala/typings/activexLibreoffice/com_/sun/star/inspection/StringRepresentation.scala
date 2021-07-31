@@ -5,15 +5,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.script.XTypeConverter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StringRepresentation extends XStringRepresentation {
+trait StringRepresentation
+  extends StObject
+     with XStringRepresentation {
   
-  def create(TypeConverter: XTypeConverter): Unit = js.native
+  def create(TypeConverter: XTypeConverter): Unit
   
-  def createConstant(TypeConverter: XTypeConverter, Constant: String, Values: SeqEquiv[String]): Unit = js.native
+  def createConstant(TypeConverter: XTypeConverter, Constant: String, Values: SeqEquiv[String]): Unit
 }
 object StringRepresentation {
   

@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartXAxisItemLabelsRotation extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var angle: js.UndefOr[Double | String] = js.native
+  var angle: js.UndefOr[Double | String] = js.undefined
 }
 object ChartXAxisItemLabelsRotation {
   

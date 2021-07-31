@@ -3,12 +3,13 @@ package typings.std
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** NodeList objects are collections of nodes, usually returned by properties such as Node.childNodes and methods such as document.querySelectorAll(). */
 @js.native
-trait NodeList extends /* index */ NumberDictionary[Node] {
+trait NodeList
+  extends StObject
+     with /* index */ NumberDictionary[Node] {
   
   /**
     * Returns an array of key, value pairs for every entry in the list.

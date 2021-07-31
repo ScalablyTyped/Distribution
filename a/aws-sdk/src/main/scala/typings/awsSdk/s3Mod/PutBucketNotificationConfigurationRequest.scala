@@ -2,23 +2,21 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutBucketNotificationConfigurationRequest extends StObject {
   
   /**
     * The name of the bucket.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
-  var NotificationConfiguration: typings.awsSdk.s3Mod.NotificationConfiguration = js.native
+  var NotificationConfiguration: typings.awsSdk.s3Mod.NotificationConfiguration
 }
 object PutBucketNotificationConfigurationRequest {
   

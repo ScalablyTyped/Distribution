@@ -3,10 +3,8 @@ package typings.firebaseAdmin.messagingMod.messaging
 import typings.firebaseAdmin.firebaseNamespaceApiMod.FirebaseError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagingDeviceResult extends StObject {
   
   /**
@@ -14,17 +12,17 @@ trait MessagingDeviceResult extends StObject {
     * processed and sent to. You should use this value as the registration token
     * for future requests. Otherwise, future messages might be rejected.
     */
-  var canonicalRegistrationToken: js.UndefOr[String] = js.native
+  var canonicalRegistrationToken: js.UndefOr[String] = js.undefined
   
   /**
     * The error that occurred when processing the message for the recipient.
     */
-  var error: js.UndefOr[FirebaseError] = js.native
+  var error: js.UndefOr[FirebaseError] = js.undefined
   
   /**
     * A unique ID for the successfully processed message.
     */
-  var messageId: js.UndefOr[String] = js.native
+  var messageId: js.UndefOr[String] = js.undefined
 }
 object MessagingDeviceResult {
   

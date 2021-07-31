@@ -2,41 +2,39 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Room extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: js.UndefOr[NonEmptyString] = js.native
+  var AccountId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the room creator.
     */
-  var CreatedBy: js.UndefOr[NonEmptyString] = js.native
+  var CreatedBy: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The room creation timestamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * The room name.
     */
-  var Name: js.UndefOr[SensitiveString] = js.native
+  var Name: js.UndefOr[SensitiveString] = js.undefined
   
   /**
     * The room ID.
     */
-  var RoomId: js.UndefOr[NonEmptyString] = js.native
+  var RoomId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The room update timestamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
 }
 object Room {
   

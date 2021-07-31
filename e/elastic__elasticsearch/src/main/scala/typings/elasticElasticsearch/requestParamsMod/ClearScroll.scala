@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClearScroll[T] extends Generic {
+trait ClearScroll[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var scroll_id: js.UndefOr[String | js.Array[String]] = js.native
+  var scroll_id: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object ClearScroll {
   
@@ -21,7 +21,7 @@ object ClearScroll {
   }
   
   @scala.inline
-  implicit class ClearScrollMutableBuilder[Self <: ClearScroll[_], T] (val x: Self with ClearScroll[T]) extends AnyVal {
+  implicit class ClearScrollMutableBuilder[Self <: ClearScroll[?], T] (val x: Self & ClearScroll[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

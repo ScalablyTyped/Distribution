@@ -3,26 +3,24 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteCharacteristicValueObject extends StObject {
   
   /** 可选，处理回包时使用 */
-  var callbackId: js.UndefOr[Double] = js.native
+  var callbackId: js.UndefOr[Double] = js.undefined
   
   /** characteristic对应的uuid */
-  var characteristicId: String = js.native
+  var characteristicId: String
   
   /** 是否需要通知主机value已更新 */
-  var needNotify: Boolean = js.native
+  var needNotify: Boolean
   
   /** service 的 uuid */
-  var serviceId: String = js.native
+  var serviceId: String
   
   /** 特征值对应的二进制值 */
-  var value: ArrayBuffer = js.native
+  var value: ArrayBuffer
 }
 object WriteCharacteristicValueObject {
   

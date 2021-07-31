@@ -4,24 +4,21 @@ import typings.webgme.Global_.GmeLogger
 import typings.webgme.GmeConfig.LogOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GmePanel {
   
-  @js.native
   trait Container extends StObject
   
-  @js.native
   trait IActivePanel extends StObject {
     
-    def getNodeID(): String = js.native
+    def getNodeID(): String
     
-    def onActivate(): Unit = js.native
+    def onActivate(): Unit
     
-    def onDeactivate(): Unit = js.native
+    def onDeactivate(): Unit
     
-    def setActive(isActive: Boolean): Unit = js.native
+    def setActive(isActive: Boolean): Unit
   }
   object IActivePanel {
     
@@ -53,31 +50,29 @@ object GmePanel {
     }
   }
   
-  @js.native
   trait Layout extends StObject
   
   type LayoutCallback = js.Function1[/* self */ LayoutManager, Unit]
   
-  @js.native
   trait LayoutManager extends StObject {
     
-    var _currentLayout: Layout = js.native
+    var _currentLayout: Layout
     
-    var _currentLayoutName: String = js.native
+    var _currentLayoutName: String
     
-    var _logger: GmeLogger = js.native
+    var _logger: GmeLogger
     
-    var _panels: js.Array[PanelBase] = js.native
+    var _panels: js.Array[PanelBase]
     
-    def addPanel(name: String, panel: PanelBase, container: Container): Unit = js.native
+    def addPanel(name: String, panel: PanelBase, container: Container): Unit
     
-    def loadLayout(layout: Layout, callback: LayoutCallback): Unit = js.native
+    def loadLayout(layout: Layout, callback: LayoutCallback): Unit
     
-    def loadPanel(params: Params, callback: LayoutCallback): Unit = js.native
+    def loadPanel(params: Params, callback: LayoutCallback): Unit
     
-    def removePanel(name: String): Unit = js.native
+    def removePanel(name: String): Unit
     
-    def setPanelReadOnly(readOnly: Boolean): Unit = js.native
+    def setPanelReadOnly(readOnly: Boolean): Unit
   }
   object LayoutManager {
     
@@ -132,12 +127,11 @@ object GmePanel {
     }
   }
   
-  @js.native
   trait Logger extends StObject {
     
-    def createLogger(name: String, options: LogOptions): Logger = js.native
+    def createLogger(name: String, options: LogOptions): Logger
     
-    def createWithGmeConfig(name: String, gmeConfig: typings.webgme.GmeConfig.GmeConfig): Logger = js.native
+    def createWithGmeConfig(name: String, gmeConfig: typings.webgme.GmeConfig.GmeConfig): Logger
   }
   object Logger {
     
@@ -161,10 +155,9 @@ object GmePanel {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var LOGGER_INSTANCE_NAME: String = js.native
+    var LOGGER_INSTANCE_NAME: String
   }
   object Options {
     
@@ -182,14 +175,15 @@ object GmePanel {
     }
   }
   
-  @js.native
-  trait OptionsWithHeader extends Options {
+  trait OptionsWithHeader
+    extends StObject
+       with Options {
     
-    var FLOATING_TITLE: String = js.native
+    var FLOATING_TITLE: String
     
-    var HEADER_TITLE: String = js.native
+    var HEADER_TITLE: String
     
-    var NO_SCROLLING: String = js.native
+    var NO_SCROLLING: String
   }
   object OptionsWithHeader {
     
@@ -213,32 +207,31 @@ object GmePanel {
     }
   }
   
-  @js.native
   trait PanelBase extends StObject {
     
-    var OPTIONS: Options = js.native
+    var OPTIONS: Options
     
-    def afterAppend(): Unit = js.native
+    def afterAppend(): Unit
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    var control: js.Any = js.native
+    var control: js.Any
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def isReadOnly(): Boolean = js.native
+    def isReadOnly(): Boolean
     
-    var logger: GmeLogger = js.native
+    var logger: GmeLogger
     
-    def onReadOnlyChanged(isReadOnly: Boolean): Unit = js.native
+    def onReadOnlyChanged(isReadOnly: Boolean): Unit
     
-    def onResize(width: Double, height: Double): Unit = js.native
+    def onResize(width: Double, height: Double): Unit
     
-    def setContainerUpdateFn(currentLayout: Layout, sizeUpdateFn: js.Function1[/* layout */ Layout, Double]): Unit = js.native
+    def setContainerUpdateFn(currentLayout: Layout, sizeUpdateFn: js.Function1[/* layout */ Layout, Double]): Unit
     
-    def setReadOnly(isReadOnly: Boolean): Unit = js.native
+    def setReadOnly(isReadOnly: Boolean): Unit
     
-    def setSize(width: Double, height: Double): Unit = js.native
+    def setSize(width: Double, height: Double): Unit
   }
   object PanelBase {
     
@@ -302,19 +295,20 @@ object GmePanel {
     }
   }
   
-  @js.native
-  trait PanelBaseWithHeader extends PanelBase {
+  trait PanelBaseWithHeader
+    extends StObject
+       with PanelBase {
     
     @JSName("OPTIONS")
-    var OPTIONS_PanelBaseWithHeader: OptionsWithHeader = js.native
+    var OPTIONS_PanelBaseWithHeader: OptionsWithHeader
     
-    def getNodeID(): String = js.native
+    def getNodeID(): String
     
-    def initUI(options: OptionsWithHeader): Unit = js.native
+    def initUI(options: OptionsWithHeader): Unit
     
-    def setActive(isActive: Boolean): Unit = js.native
+    def setActive(isActive: Boolean): Unit
     
-    def setTitle(text: String): Unit = js.native
+    def setTitle(text: String): Unit
   }
   object PanelBaseWithHeader {
     
@@ -361,12 +355,11 @@ object GmePanel {
     }
   }
   
-  @js.native
   trait PanelManager extends StObject {
     
-    def getActivePanel(): PanelBase = js.native
+    def getActivePanel(): PanelBase
     
-    def setActivePanel(panel: PanelBase): Unit = js.native
+    def setActivePanel(panel: PanelBase): Unit
   }
   object PanelManager {
     
@@ -387,10 +380,9 @@ object GmePanel {
     }
   }
   
-  @js.native
   trait Params extends StObject {
     
-    var client: js.Any = js.native
+    var client: js.Any
   }
   object Params {
     

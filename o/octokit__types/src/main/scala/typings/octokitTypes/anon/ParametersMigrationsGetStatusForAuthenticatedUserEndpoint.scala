@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.MigrationsGetStatusForAuthenticatedUser
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersMigrationsGetStatusForAuthenticatedUserEndpoint extends StObject {
   
-  var parameters: MigrationsGetStatusForAuthenticatedUserEndpoint = js.native
+  var parameters: MigrationsGetStatusForAuthenticatedUserEndpoint
   
-  var request: MigrationsGetStatusForAuthenticatedUserRequestOptions = js.native
+  var request: MigrationsGetStatusForAuthenticatedUserRequestOptions
   
-  var response: OctokitResponse[MigrationsGetStatusForAuthenticatedUserResponseData] = js.native
+  var response: OctokitResponse[MigrationsGetStatusForAuthenticatedUserResponseData]
 }
 object ParametersMigrationsGetStatusForAuthenticatedUserEndpoint {
   

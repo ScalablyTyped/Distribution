@@ -4,15 +4,13 @@ import typings.reactNativeMaps.mod.LatLng
 import typings.reactNativeMaps.mod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Coordinate extends StObject {
   
-  var coordinate: LatLng = js.native
+  var coordinate: LatLng
   
-  var position: Point = js.native
+  var position: Point
 }
 object Coordinate {
   

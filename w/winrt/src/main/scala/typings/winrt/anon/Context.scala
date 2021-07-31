@@ -3,15 +3,13 @@ package typings.winrt.anon
 import typings.winrt.Windows.Networking.NetworkOperators.HotspotAuthenticationContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Context extends StObject {
   
-  var context: HotspotAuthenticationContext = js.native
+  var context: HotspotAuthenticationContext
   
-  var isValid: Boolean = js.native
+  var isValid: Boolean
 }
 object Context {
   

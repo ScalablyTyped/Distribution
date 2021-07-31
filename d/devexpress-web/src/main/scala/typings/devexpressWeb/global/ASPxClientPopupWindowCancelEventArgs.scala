@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientPopupWindowCancelEventArgs")
 @js.native
 class ASPxClientPopupWindowCancelEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientPopupWindowCancelEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientPopupWindowCancelEventArgs {
   /**
     * Initializes a new instance of the ASPxClientPopupWindowCancelEventArgs class with the specified settings.
     * @param window An ASPxClientPopupWindow object that is a popup window related to the generated event.
@@ -21,4 +21,22 @@ class ASPxClientPopupWindowCancelEventArgs protected ()
     window: typings.devexpressWeb.ASPxClientPopupWindow,
     closeReason: typings.devexpressWeb.ASPxClientPopupControlCloseReason
   ) = this()
+  
+  /**
+    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    */
+  /* CompleteClass */
+  var cancel: Boolean = js.native
+  
+  /**
+    * Gets the value that identifies the reason the popup window is about to close.
+    */
+  /* CompleteClass */
+  var closeReason: typings.devexpressWeb.ASPxClientPopupControlCloseReason = js.native
+  
+  /**
+    * Gets the popup window object related to the event.
+    */
+  /* CompleteClass */
+  var window: typings.devexpressWeb.ASPxClientPopupWindow = js.native
 }

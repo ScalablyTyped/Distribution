@@ -2,16 +2,14 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCheckAccessResponse extends StObject {
   
   /**
     * Returns true if principal has access.  Returns false otherwise.
     */
-  var hasAccess: js.UndefOr[Boolean] = js.native
+  var hasAccess: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaCheckAccessResponse {
   

@@ -2,13 +2,13 @@ package typings.mysql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldInfo extends UntypedFieldInfo {
+trait FieldInfo
+  extends StObject
+     with UntypedFieldInfo {
   
-  var `type`: Types = js.native
+  var `type`: Types
 }
 object FieldInfo {
   

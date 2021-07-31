@@ -10,9 +10,9 @@ Advanced html to plain text converter
 | ------------------ | :-------------: |
 | Full name          | html-to-text |
 | Keywords           | html, node, text, mail, plain, converter |
-| # releases         | 5 |
-| # dependents       | 354 |
-| # downloads        | 13022637 |
+| # releases         | 4 |
+| # dependents       | 371 |
+| # downloads        | 14795914 |
 | # stars            | 36 |
 
 ## Links

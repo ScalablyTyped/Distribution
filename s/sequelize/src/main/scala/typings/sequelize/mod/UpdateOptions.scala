@@ -2,15 +2,14 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options used for Model.update
   */
-@js.native
 trait UpdateOptions
-  extends FieldsOptions
+  extends StObject
+     with FieldsOptions
      with LoggingOptions
      with ReturningOptions {
   
@@ -19,7 +18,7 @@ trait UpdateOptions
     *
     * Defaults to true
     */
-  var hooks: js.UndefOr[Boolean] = js.native
+  var hooks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Run before / after update hooks?. If true, this will execute a SELECT followed by individual UPDATEs.
@@ -27,34 +26,34 @@ trait UpdateOptions
     *
     * Defaults to false
     */
-  var individualHooks: js.UndefOr[Boolean] = js.native
+  var individualHooks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * How many rows to update (only for mysql and mariadb)
     */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether or not to update the side effects of any virtual setters.
     *
     * Defaults to true
     */
-  var sideEffects: js.UndefOr[Boolean] = js.native
+  var sideEffects: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, the updatedAt timestamp will not be updated.
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Transaction to run query under
     */
-  var transaction: js.UndefOr[Transaction] = js.native
+  var transaction: js.UndefOr[Transaction] = js.undefined
   
   /**
     * Options to describe the scope of the search.
     */
-  var where: AnyWhereOptions = js.native
+  var where: AnyWhereOptions
 }
 object UpdateOptions {
   

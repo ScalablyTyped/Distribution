@@ -5,23 +5,21 @@ import typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.N
 import typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.S
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAttributeDefinitionMod {
   
-  @js.native
   trait AttributeDefinition extends StObject {
     
     /**
       * <p>A name for the attribute.</p>
       */
-    var AttributeName: String = js.native
+    var AttributeName: String
     
     /**
       * <p>The data type for the attribute, where:</p> <ul> <li> <p> <code>S</code> - the attribute is of type String</p> </li> <li> <p> <code>N</code> - the attribute is of type Number</p> </li> <li> <p> <code>B</code> - the attribute is of type Binary</p> </li> </ul>
       */
-    var AttributeType: S | N | B | String = js.native
+    var AttributeType: S | N | B | String
   }
   object AttributeDefinition {
     

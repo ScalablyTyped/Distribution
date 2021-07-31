@@ -3,12 +3,10 @@ package typings.nwJs
 import typings.nwJs.mod.global.NWJSHelpers.CookiesOnChangedCallbackChangeInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AddListener extends StObject {
     
     /**
@@ -17,7 +15,7 @@ object anon {
       * @param callback {function(changeInfo?)} The callback when cookie has been changed.
       * - (Optional) changeInfo {Objet} Contains details about the cookie that's been changed.
       */
-    def addListener(callback: js.Function1[/* changeInfo */ CookiesOnChangedCallbackChangeInfo, Unit]): Unit = js.native
+    def addListener(callback: js.Function1[/* changeInfo */ CookiesOnChangedCallbackChangeInfo, Unit]): Unit
   }
   object AddListener {
     
@@ -35,16 +33,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Height {
     

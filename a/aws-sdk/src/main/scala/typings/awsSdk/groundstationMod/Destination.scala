@@ -2,31 +2,29 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Destination extends StObject {
   
   /**
     * Additional details for a Config, if type is dataflow endpoint or antenna demod decode.
     */
-  var configDetails: js.UndefOr[ConfigDetails] = js.native
+  var configDetails: js.UndefOr[ConfigDetails] = js.undefined
   
   /**
     * UUID of a Config.
     */
-  var configId: js.UndefOr[String] = js.native
+  var configId: js.UndefOr[String] = js.undefined
   
   /**
     * Type of a Config.
     */
-  var configType: js.UndefOr[ConfigCapabilityType] = js.native
+  var configType: js.UndefOr[ConfigCapabilityType] = js.undefined
   
   /**
     * Region of a dataflow destination.
     */
-  var dataflowDestinationRegion: js.UndefOr[String] = js.native
+  var dataflowDestinationRegion: js.UndefOr[String] = js.undefined
 }
 object Destination {
   

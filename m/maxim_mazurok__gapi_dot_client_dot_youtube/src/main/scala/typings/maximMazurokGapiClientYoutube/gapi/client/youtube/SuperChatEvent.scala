@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuperChatEvent extends StObject {
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The ID that YouTube assigns to uniquely identify the Super Chat event. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string `"youtube#superChatEvent"`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The `snippet` object contains basic details about the Super Chat event. */
-  var snippet: js.UndefOr[SuperChatEventSnippet] = js.native
+  var snippet: js.UndefOr[SuperChatEventSnippet] = js.undefined
 }
 object SuperChatEvent {
   

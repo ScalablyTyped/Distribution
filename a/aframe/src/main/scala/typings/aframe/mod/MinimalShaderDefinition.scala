@@ -2,15 +2,13 @@ package typings.aframe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinimalShaderDefinition extends StObject {
   
   var schema: Schema_[
     /* import warning: importer.ImportType#apply Failed type conversion: this['data'] */ js.Any
-  ] = js.native
+  ]
 }
 object MinimalShaderDefinition {
   

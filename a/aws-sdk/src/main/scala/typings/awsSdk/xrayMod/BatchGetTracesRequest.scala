@@ -2,21 +2,19 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetTracesRequest extends StObject {
   
   /**
     * Pagination token.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the trace IDs of requests for which to retrieve segments.
     */
-  var TraceIds: TraceIdList = js.native
+  var TraceIds: TraceIdList
 }
 object BatchGetTracesRequest {
   

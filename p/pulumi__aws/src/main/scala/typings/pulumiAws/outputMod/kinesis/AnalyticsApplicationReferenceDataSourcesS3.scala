@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationReferenceDataSourcesS3 extends StObject {
   
   /**
     * The S3 Bucket ARN.
     */
-  var bucketArn: String = js.native
+  var bucketArn: String
   
   /**
     * The File Key name containing reference data.
     */
-  var fileKey: String = js.native
+  var fileKey: String
   
   /**
     * The ARN of the IAM Role used to send application messages.
     */
-  var roleArn: String = js.native
+  var roleArn: String
 }
 object AnalyticsApplicationReferenceDataSourcesS3 {
   

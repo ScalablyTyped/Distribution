@@ -2,21 +2,19 @@ package typings.aureliaTemplating.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewCreateInstruction extends StObject {
   
   /**
     * Indicates that the view is being created by enhancing existing DOM.
     */
-  var enhance: js.UndefOr[Boolean] = js.native
+  var enhance: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies a key/value lookup of part replacements for the view being created.
     */
-  var partReplacements: js.UndefOr[js.Object] = js.native
+  var partReplacements: js.UndefOr[js.Object] = js.undefined
 }
 object ViewCreateInstruction {
   

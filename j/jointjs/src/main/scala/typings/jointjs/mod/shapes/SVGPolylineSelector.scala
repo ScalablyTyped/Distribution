@@ -4,13 +4,13 @@ import typings.jointjs.mod.attributes.SVGPolylineAttributes
 import typings.jointjs.mod.dia.Cell.Selectors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGPolylineSelector extends Selectors {
+trait SVGPolylineSelector
+  extends StObject
+     with Selectors {
   
-  var polyline: js.UndefOr[SVGPolylineAttributes] = js.native
+  var polyline: js.UndefOr[SVGPolylineAttributes] = js.undefined
 }
 object SVGPolylineSelector {
   

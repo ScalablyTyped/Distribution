@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Diagnostic extends StObject {
   
   /** The kind of diagnostic information provided. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** File name and line number of the error or warning. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** Message describing the error or warning. */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object Diagnostic {
   

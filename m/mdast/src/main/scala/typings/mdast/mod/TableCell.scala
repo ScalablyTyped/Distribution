@@ -3,24 +3,24 @@ package typings.mdast.mod
 import typings.mdast.mdastStrings.tableCell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TableCell extends Parent {
+trait TableCell
+  extends StObject
+     with Parent {
   
   @JSName("children")
-  var children_TableCell: js.Array[PhrasingContent] = js.native
+  var children_TableCell: js.Array[PhrasingContent]
   
   @JSName("type")
-  var type_TableCell: tableCell = js.native
+  var type_TableCell: tableCell
 }
 object TableCell {
   
   @scala.inline
-  def apply(children: js.Array[PhrasingContent], `type`: tableCell): TableCell = {
+  def apply(children: js.Array[PhrasingContent]): TableCell = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("tableCell")
     __obj.asInstanceOf[TableCell]
   }
   

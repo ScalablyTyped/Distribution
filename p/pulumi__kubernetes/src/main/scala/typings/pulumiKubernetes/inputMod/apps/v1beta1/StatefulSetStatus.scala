@@ -3,59 +3,57 @@ package typings.pulumiKubernetes.inputMod.apps.v1beta1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * StatefulSetStatus represents the current state of a StatefulSet.
   */
-@js.native
 trait StatefulSetStatus extends StObject {
   
   /**
     * collisionCount is the count of hash collisions for the StatefulSet. The StatefulSet controller uses this field as a collision avoidance mechanism when it needs to create the name for the newest ControllerRevision.
     */
-  var collisionCount: js.UndefOr[Input[Double]] = js.native
+  var collisionCount: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Represents the latest available observations of a statefulset's current state.
     */
-  var conditions: js.UndefOr[Input[js.Array[Input[StatefulSetCondition]]]] = js.native
+  var conditions: js.UndefOr[Input[js.Array[Input[StatefulSetCondition]]]] = js.undefined
   
   /**
     * currentReplicas is the number of Pods created by the StatefulSet controller from the StatefulSet version indicated by currentRevision.
     */
-  var currentReplicas: js.UndefOr[Input[Double]] = js.native
+  var currentReplicas: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * currentRevision, if not empty, indicates the version of the StatefulSet used to generate Pods in the sequence [0,currentReplicas).
     */
-  var currentRevision: js.UndefOr[Input[String]] = js.native
+  var currentRevision: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * observedGeneration is the most recent generation observed for this StatefulSet. It corresponds to the StatefulSet's generation, which is updated on mutation by the API Server.
     */
-  var observedGeneration: js.UndefOr[Input[Double]] = js.native
+  var observedGeneration: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * readyReplicas is the number of Pods created by the StatefulSet controller that have a Ready Condition.
     */
-  var readyReplicas: js.UndefOr[Input[Double]] = js.native
+  var readyReplicas: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * replicas is the number of Pods created by the StatefulSet controller.
     */
-  var replicas: Input[Double] = js.native
+  var replicas: Input[Double]
   
   /**
     * updateRevision, if not empty, indicates the version of the StatefulSet used to generate Pods in the sequence [replicas-updatedReplicas,replicas)
     */
-  var updateRevision: js.UndefOr[Input[String]] = js.native
+  var updateRevision: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * updatedReplicas is the number of Pods created by the StatefulSet controller from the StatefulSet version indicated by updateRevision.
     */
-  var updatedReplicas: js.UndefOr[Input[Double]] = js.native
+  var updatedReplicas: js.UndefOr[Input[Double]] = js.undefined
 }
 object StatefulSetStatus {
   

@@ -2,7 +2,6 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * significant. The year may be 0 to represent a month and day independent of
   * year; for example, anniversary date.
   */
-@js.native
 trait SchemaDate extends StObject {
   
   /**
@@ -22,19 +20,19 @@ trait SchemaDate extends StObject {
     * if specifying a year by itself or a year and month where the day is not
     * significant.
     */
-  var day: js.UndefOr[Double] = js.native
+  var day: js.UndefOr[Double] = js.undefined
   
   /**
     * Month of year. Must be from 1 to 12, or 0 if specifying a year without a
     * month and day.
     */
-  var month: js.UndefOr[Double] = js.native
+  var month: js.UndefOr[Double] = js.undefined
   
   /**
     * Year of date. Must be from 1 to 9999, or 0 if specifying a date without a
     * year.
     */
-  var year: js.UndefOr[Double] = js.native
+  var year: js.UndefOr[Double] = js.undefined
 }
 object SchemaDate {
   

@@ -4,7 +4,6 @@ import typings.tizenCommonWeb.tizenMod.ErrorCallback
 import typings.tizenCommonWeb.tizenMod.SuccessCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object websettingMod {
@@ -24,7 +23,7 @@ object websettingMod {
       * @since 2.2
       */
     def removeAllCookies(): Unit = js.native
-    def removeAllCookies(successCallback: js.UndefOr[scala.Nothing], errorCallback: ErrorCallback): Unit = js.native
+    def removeAllCookies(successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
     def removeAllCookies(successCallback: SuccessCallback): Unit = js.native
     def removeAllCookies(successCallback: SuccessCallback, errorCallback: ErrorCallback): Unit = js.native
     
@@ -41,7 +40,7 @@ object websettingMod {
       * @since 2.2
       */
     def setUserAgentString(userAgent: String): Unit = js.native
-    def setUserAgentString(userAgent: String, successCallback: js.UndefOr[scala.Nothing], errorCallback: ErrorCallback): Unit = js.native
+    def setUserAgentString(userAgent: String, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
     def setUserAgentString(userAgent: String, successCallback: SuccessCallback): Unit = js.native
     def setUserAgentString(userAgent: String, successCallback: SuccessCallback, errorCallback: ErrorCallback): Unit = js.native
   }

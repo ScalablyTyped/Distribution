@@ -3,7 +3,6 @@ package typings.dockSpawn
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dockspawn {
@@ -15,30 +14,37 @@ object dockspawn {
   object TabStripDirection extends StObject {
     
     @js.native
-    sealed trait DIRECTION_BOTTOM extends TabStripDirection
+    sealed trait DIRECTION_BOTTOM
+      extends StObject
+         with TabStripDirection
     
     @js.native
-    sealed trait DIRECTION_LEFT extends TabStripDirection
+    sealed trait DIRECTION_LEFT
+      extends StObject
+         with TabStripDirection
     
     @js.native
-    sealed trait DIRECTION_RIGHT extends TabStripDirection
+    sealed trait DIRECTION_RIGHT
+      extends StObject
+         with TabStripDirection
     
     @js.native
-    sealed trait DIRECTION_TOP extends TabStripDirection
+    sealed trait DIRECTION_TOP
+      extends StObject
+         with TabStripDirection
   }
   
-  @js.native
   trait Dialog extends StObject {
     
-    def bringToFront(): Unit = js.native
+    def bringToFront(): Unit
     
-    def resize(width: Double, height: Double): Unit = js.native
+    def resize(width: Double, height: Double): Unit
     
-    def setPosition(x: Double, y: Double): Unit = js.native
+    def setPosition(x: Double, y: Double): Unit
     
-    def setTitle(title: String): Unit = js.native
+    def setTitle(title: String): Unit
     
-    def setTitleIcon(iconName: String): Unit = js.native
+    def setTitleIcon(iconName: String): Unit
   }
   object Dialog {
     
@@ -79,63 +85,62 @@ object dockspawn {
     * It owns an HTMLDivElement inside which all panels are docked.
     * Initially the document manager takes up the central space and acts as the root node.
     */
-  @js.native
   trait DockManager extends StObject {
     
-    var context: DockManagerContext = js.native
+    var context: DockManagerContext
     
     /** Dock the [dialog] below the [referenceNode] node */
-    def dockDialogDown(referenceNode: DockNode, dialog: Dialog): DockNode = js.native
+    def dockDialogDown(referenceNode: DockNode, dialog: Dialog): DockNode
     
     /** Dock the [dialog] as a tab inside the [referenceNode] node */
-    def dockDialogFill(referenceNode: DockNode, container: PanelContainer): DockNode = js.native
+    def dockDialogFill(referenceNode: DockNode, container: PanelContainer): DockNode
     
     /** Dock the [dialog] to the left of the [referenceNode] node */
-    def dockDialogLeft(referenceNode: DockNode, dialog: Dialog): DockNode = js.native
+    def dockDialogLeft(referenceNode: DockNode, dialog: Dialog): DockNode
     
     /** Dock the [dialog] to the right of the [referenceNode] node */
-    def dockDialogRight(referenceNode: DockNode, dialog: Dialog): DockNode = js.native
+    def dockDialogRight(referenceNode: DockNode, dialog: Dialog): DockNode
     
     /** Dock the [dialog] above the [referenceNode] node */
-    def dockDialogUp(referenceNode: DockNode, dialog: Dialog): DockNode = js.native
+    def dockDialogUp(referenceNode: DockNode, dialog: Dialog): DockNode
     
     /** Dock the [container] below the [referenceNode] node */
-    def dockDown(referenceNode: DockNode, container: PanelContainer, ratio: Double): DockNode = js.native
+    def dockDown(referenceNode: DockNode, container: PanelContainer, ratio: Double): DockNode
     
     /** Dock the [container] as a tab inside the [referenceNode] node */
-    def dockFill(referenceNode: DockNode, container: PanelContainer): DockNode = js.native
+    def dockFill(referenceNode: DockNode, container: PanelContainer): DockNode
     
     /** Dock the [container] to the left of the [referenceNode] node */
-    def dockLeft(referenceNode: DockNode, container: PanelContainer, ratio: Double): DockNode = js.native
+    def dockLeft(referenceNode: DockNode, container: PanelContainer, ratio: Double): DockNode
     
     /** Dock the [container] to the right of the [referenceNode] node */
-    def dockRight(referenceNode: DockNode, container: PanelContainer, ratio: Double): DockNode = js.native
+    def dockRight(referenceNode: DockNode, container: PanelContainer, ratio: Double): DockNode
     
     /** Dock the [container] above the [referenceNode] node */
-    def dockUp(referenceNode: DockNode, container: PanelContainer, ratio: Double): DockNode = js.native
+    def dockUp(referenceNode: DockNode, container: PanelContainer, ratio: Double): DockNode
     
-    def initialize(): Unit = js.native
+    def initialize(): Unit
     
-    def invalidate(): Unit = js.native
+    def invalidate(): Unit
     
-    def loadState(state: String): Unit = js.native
+    def loadState(state: String): Unit
     
-    def rebuildLayout(node: DockNode): Unit = js.native
+    def rebuildLayout(node: DockNode): Unit
     
-    def resize(width: Double, height: Double): Unit = js.native
+    def resize(width: Double, height: Double): Unit
     
-    def resumeLayout(): Unit = js.native
+    def resumeLayout(): Unit
     
-    def saveState(): String = js.native
+    def saveState(): String
     
     /**
       * Reset the dock model. This happens when state is loaded from JSON.
       */
-    def setModel(model: DockModel): Unit = js.native
+    def setModel(model: DockModel): Unit
     
-    def setRootNode(node: DockNode): Unit = js.native
+    def setRootNode(node: DockNode): Unit
     
-    def suspendLayout(): Unit = js.native
+    def suspendLayout(): Unit
   }
   object DockManager {
     
@@ -235,14 +240,13 @@ object dockspawn {
     }
   }
   
-  @js.native
   trait DockManagerContext extends StObject {
     
-    var dockManager: DockManager = js.native
+    var dockManager: DockManager
     
-    var documentManagerView: DocumentManagerContainer = js.native
+    var documentManagerView: DocumentManagerContainer
     
-    var model: DockModel = js.native
+    var model: DockModel
   }
   object DockManagerContext {
     
@@ -266,12 +270,11 @@ object dockspawn {
     }
   }
   
-  @js.native
   trait DockModel extends StObject {
     
-    var documentManagerNode: DockNode = js.native
+    var documentManagerNode: DockNode
     
-    var rootNode: DockNode = js.native
+    var rootNode: DockNode
   }
   object DockModel {
     
@@ -292,10 +295,9 @@ object dockspawn {
     }
   }
   
-  @js.native
   trait DockNode extends StObject {
     
-    def detachFromParent(): Unit = js.native
+    def detachFromParent(): Unit
   }
   object DockNode {
     
@@ -318,12 +320,13 @@ object dockspawn {
     * This is where more important panels are placed (e.g. the text editor in an IDE,
     * 3D view in a modelling package etc
     */
-  @js.native
-  trait DocumentManagerContainer extends FillDockContainer {
+  trait DocumentManagerContainer
+    extends StObject
+       with FillDockContainer {
     
-    def saveState(state: String): Unit = js.native
+    def saveState(state: String): Unit
     
-    var selectedTab: TabPage = js.native
+    var selectedTab: TabPage
   }
   object DocumentManagerContainer {
     
@@ -354,22 +357,21 @@ object dockspawn {
     }
   }
   
-  @js.native
   trait FillDockContainer extends StObject {
     
-    var containerType: String = js.native
+    var containerType: String
     
-    var dockManager: DockManager = js.native
+    var dockManager: DockManager
     
-    var element: HTMLDivElement = js.native
+    var element: HTMLDivElement
     
-    var minimumAllowedChildNodes: Double = js.native
+    var minimumAllowedChildNodes: Double
     
-    var name: String = js.native
+    var name: String
     
-    var tabHost: TabHost = js.native
+    var tabHost: TabHost
     
-    var tabOrientation: TabStripDirection = js.native
+    var tabOrientation: TabStripDirection
   }
   object FillDockContainer {
     
@@ -413,16 +415,15 @@ object dockspawn {
     }
   }
   
-  @js.native
   trait PanelContainer extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    def setTitle(title: String): Unit = js.native
+    def setTitle(title: String): Unit
     
-    def setTitleIcon(iconName: String): Unit = js.native
+    def setTitleIcon(iconName: String): Unit
     
-    var width: Double = js.native
+    var width: Double
   }
   object PanelContainer {
     
@@ -453,29 +454,28 @@ object dockspawn {
     * Tab Host control contains tabs known as TabPages.
     * The tab strip can be aligned in different orientations
     */
-  @js.native
   trait TabHost extends StObject {
     
-    var contentElement: HTMLDivElement = js.native
+    var contentElement: HTMLDivElement
     
-    var displayCloseButton: Boolean = js.native
+    var displayCloseButton: Boolean
     
-    var hostElement: HTMLDivElement = js.native
+    var hostElement: HTMLDivElement
     
     /** Set the selected TabPage. */
-    def onTabPageSelected(page: TabPage): Unit = js.native
+    def onTabPageSelected(page: TabPage): Unit
     
-    var pages: js.Array[TabPage] = js.native
+    var pages: js.Array[TabPage]
     
-    def resize(width: Double, height: Double): Unit = js.native
+    def resize(width: Double, height: Double): Unit
     
-    var separatorElement: HTMLDivElement = js.native
+    var separatorElement: HTMLDivElement
     
-    def setActiveTab(container: PanelContainer): Unit = js.native
+    def setActiveTab(container: PanelContainer): Unit
     
-    var tabListElement: HTMLDivElement = js.native
+    var tabListElement: HTMLDivElement
     
-    var tabStripDirection: TabStripDirection = js.native
+    var tabStripDirection: TabStripDirection
   }
   object TabHost {
     
@@ -534,6 +534,5 @@ object dockspawn {
     }
   }
   
-  @js.native
   trait TabPage extends StObject
 }

@@ -3,15 +3,13 @@ package typings.relayRuntime.anon
 import typings.relayRuntime.connectionHandlerMod.ConnectionMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionRefetch extends StObject {
   
-  val connection: js.Array[ConnectionMetadata] = js.native
+  val connection: js.Array[ConnectionMetadata]
   
-  val refetch: ReaderRefetchMetadataconn = js.native
+  val refetch: ReaderRefetchMetadataconn
 }
 object ConnectionRefetch {
   

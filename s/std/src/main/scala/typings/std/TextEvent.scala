@@ -2,11 +2,12 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextEvent extends UIEvent {
+trait TextEvent
+  extends StObject
+     with UIEvent {
   
   val DOM_INPUT_METHOD_DROP: Double = js.native
   

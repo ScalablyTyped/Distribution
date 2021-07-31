@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.rendering.XCanvas
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,11 +16,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Slides are referenced via their index in an XIndexAccess container in order to allow multiple references to a single slide (custom presentations).
   */
-@js.native
 trait XSlidePreviewCache extends StObject {
   
   /** Register a listener that is called when a preview has been created asynchronously. */
-  def addPreviewCreationNotifyListener(xListener: XSlidePreviewCacheListener): Unit = js.native
+  def addPreviewCreationNotifyListener(xListener: XSlidePreviewCacheListener): Unit
   
   /**
     * Return a preview for the given slide index. The returned bitmap may be the requested preview, a preview of the preview, i.e. a scaled up or down
@@ -30,32 +28,32 @@ trait XSlidePreviewCache extends StObject {
     * This call may lead to the asynchronous creation of the requested preview. In that case all registered listeners are notified when the preview has been
     * created.
     */
-  def getSlidePreview(nSlideIndex: Double, xCanvas: XCanvas): XBitmap = js.native
+  def getSlidePreview(nSlideIndex: Double, xCanvas: XCanvas): XBitmap
   
   /** Stop the asynchronous creation of previews temporarily. Call {@link resume()} to restart it. */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /** Remove a previously registered listener for preview creations. */
-  def removePreviewCreationNotifyListener(xListener: XSlidePreviewCacheListener): Unit = js.native
+  def removePreviewCreationNotifyListener(xListener: XSlidePreviewCacheListener): Unit
   
   /** Resume the asynchronous creation of slide previews. */
-  def resume(): Unit = js.native
+  def resume(): Unit
   
   /**
     * Set the set of slides for which the cache will provide the previews. All slides in the given XIndexAccess are required to come from the given model.
     * @param xSlides The set of slides for which the called cache will provide the previews. This container defines the indices that are used to look up slides.
     * @param xDocument The model that contains the slides reference by the xSlides argument.
     */
-  def setDocumentSlides(xSlides: XIndexAccess, xDocument: XInterface): Unit = js.native
+  def setDocumentSlides(xSlides: XIndexAccess, xDocument: XInterface): Unit
   
   /** Define the size of the previews that are managed by the called cache. */
-  def setPreviewSize(aSize: IntegerSize2D): Unit = js.native
+  def setPreviewSize(aSize: IntegerSize2D): Unit
   
   /**
     * Define which slides are currently visible on the screen and which are not. This information is used for give preview creation for visible slides a
     * higher priority than for those slides that are not visible.
     */
-  def setVisibleRange(nFirstVisibleSlideIndex: Double, nLastVisibleSlideIndex: Double): Unit = js.native
+  def setVisibleRange(nFirstVisibleSlideIndex: Double, nLastVisibleSlideIndex: Double): Unit
 }
 object XSlidePreviewCache {
   

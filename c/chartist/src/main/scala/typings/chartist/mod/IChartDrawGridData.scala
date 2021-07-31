@@ -3,29 +3,29 @@ package typings.chartist.mod
 import typings.chartist.chartistStrings.grid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IChartDrawGridData extends ChartDrawData {
+trait IChartDrawGridData
+  extends StObject
+     with ChartDrawData {
   
-  var axis: IChartAxis = js.native
+  var axis: IChartAxis
   
-  var element: IChartistSvg = js.native
+  var element: IChartistSvg
   
-  var group: IChartistSvg = js.native
+  var group: IChartistSvg
   
-  var index: Double = js.native
+  var index: Double
   
-  var `type`: grid = js.native
+  var `type`: grid
   
-  var x1: Double = js.native
+  var x1: Double
   
-  var x2: Double = js.native
+  var x2: Double
   
-  var y1: Double = js.native
+  var y1: Double
   
-  var y2: Double = js.native
+  var y2: Double
 }
 object IChartDrawGridData {
   
@@ -35,14 +35,13 @@ object IChartDrawGridData {
     element: IChartistSvg,
     group: IChartistSvg,
     index: Double,
-    `type`: grid,
     x1: Double,
     x2: Double,
     y1: Double,
     y2: Double
   ): IChartDrawGridData = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("grid")
     __obj.asInstanceOf[IChartDrawGridData]
   }
   

@@ -1,8 +1,8 @@
 package typings.wonderJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder.js/dist/es2015", "CustomEvent")
 @js.native
@@ -11,12 +11,15 @@ class CustomEvent protected ()
   def this(eventName: String) = this()
   def this(eventName: String, userData: js.Any) = this()
 }
-
 /* static members */
-@JSImport("wonder.js/dist/es2015", "CustomEvent")
-@js.native
-object CustomEvent extends js.Object {
-  def create(eventName: String): js.Any = js.native
-  def create(eventName: String, userData: js.Any): js.Any = js.native
+object CustomEvent {
+  
+  @JSImport("wonder.js/dist/es2015", "CustomEvent")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(eventName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def create(eventName: String, userData: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(eventName.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }
-

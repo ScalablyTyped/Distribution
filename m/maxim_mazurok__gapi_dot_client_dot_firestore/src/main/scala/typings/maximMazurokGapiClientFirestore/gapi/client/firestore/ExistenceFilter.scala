@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExistenceFilter extends StObject {
   
   /**
     * The total count of documents that match target_id. If different from the count of documents in the client that match, the client must manually determine which documents no longer
     * match the target.
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /** The target ID to which this filter applies. */
-  var targetId: js.UndefOr[Double] = js.native
+  var targetId: js.UndefOr[Double] = js.undefined
 }
 object ExistenceFilter {
   

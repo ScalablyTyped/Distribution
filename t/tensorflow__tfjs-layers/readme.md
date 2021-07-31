@@ -11,8 +11,8 @@ TensorFlow layers API in JavaScript
 | Full name          | @tensorflow/tfjs-layers |
 | Keywords           | - |
 | # releases         | 56 |
-| # dependents       | 5 |
-| # downloads        | 816963 |
+| # dependents       | 7 |
+| # downloads        | 1108197 |
 | # stars            | 0 |
 
 ## Links

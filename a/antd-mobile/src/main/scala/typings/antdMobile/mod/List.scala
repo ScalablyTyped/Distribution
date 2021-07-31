@@ -7,7 +7,6 @@ import typings.antdMobile.listItemMod.ListItemProps
 import typings.antdMobile.listMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile", "List")
@@ -22,11 +21,9 @@ object List {
   
   @JSImport("antd-mobile", "List.Item")
   @js.native
-  def Item: (Instantiable1[/* props */ ListItemProps, typings.antdMobile.listItemMod.default]) with TypeofItem = js.native
+  def Item: (Instantiable1[/* props */ ListItemProps, typings.antdMobile.listItemMod.default]) & TypeofItem = js.native
   @scala.inline
-  def Item_=(
-    x: (Instantiable1[/* props */ ListItemProps, typings.antdMobile.listItemMod.default]) with TypeofItem
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  def Item_=(x: (Instantiable1[/* props */ ListItemProps, typings.antdMobile.listItemMod.default]) & TypeofItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
   @JSImport("antd-mobile", "List.defaultProps")
   @js.native

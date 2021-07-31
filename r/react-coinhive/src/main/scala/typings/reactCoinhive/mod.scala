@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactCoinhive.anon.Authedmine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,9 +18,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("react-coinhive", "default.getMinerData")
-    @js.native
-    def getMinerData(miner: js.Any): js.Any = js.native
+    @scala.inline
+    def getMinerData(miner: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMinerData")(miner.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     @JSImport("react-coinhive", "default.src")
     @js.native
@@ -41,28 +39,27 @@ object mod {
     def onStop(miner: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait CoinHiveProps extends StObject {
     
-    var autoThreads: js.UndefOr[Boolean] = js.native
+    var autoThreads: js.UndefOr[Boolean] = js.undefined
     
-    var onInit: js.UndefOr[js.Function1[/* callback */ js.Any, Unit]] = js.native
+    var onInit: js.UndefOr[js.Function1[/* callback */ js.Any, Unit]] = js.undefined
     
-    var onStart: js.UndefOr[js.Function1[/* callback */ js.Any, Unit]] = js.native
+    var onStart: js.UndefOr[js.Function1[/* callback */ js.Any, Unit]] = js.undefined
     
-    var onStop: js.UndefOr[js.Function1[/* callback */ js.Any, Unit]] = js.native
+    var onStop: js.UndefOr[js.Function1[/* callback */ js.Any, Unit]] = js.undefined
     
-    var run: js.UndefOr[Boolean] = js.native
+    var run: js.UndefOr[Boolean] = js.undefined
     
-    var siteKey: String = js.native
+    var siteKey: String
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
-    var threads: js.UndefOr[Double] = js.native
+    var threads: js.UndefOr[Double] = js.undefined
     
-    var throttle: js.UndefOr[Double] = js.native
+    var throttle: js.UndefOr[Double] = js.undefined
     
-    var userName: js.UndefOr[String] = js.native
+    var userName: js.UndefOr[String] = js.undefined
   }
   object CoinHiveProps {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConnectorEntityRequest extends StObject {
   
   /**
     *  The entity name for that connector. 
     */
-  var connectorEntityName: Name = js.native
+  var connectorEntityName: Name
   
   /**
     *  The name of the connector profile. The name is unique for each ConnectorProfile in the AWS account. 
     */
-  var connectorProfileName: js.UndefOr[ConnectorProfileName] = js.native
+  var connectorProfileName: js.UndefOr[ConnectorProfileName] = js.undefined
   
   /**
     *  The type of connector application, such as Salesforce, Amplitude, and so on. 
     */
-  var connectorType: js.UndefOr[ConnectorType] = js.native
+  var connectorType: js.UndefOr[ConnectorType] = js.undefined
 }
 object DescribeConnectorEntityRequest {
   

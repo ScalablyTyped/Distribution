@@ -2,16 +2,14 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNotificationSubscriptionResponse extends StObject {
   
   /**
     * The subscription.
     */
-  var Subscription: js.UndefOr[typings.awsSdk.workdocsMod.Subscription] = js.native
+  var Subscription: js.UndefOr[typings.awsSdk.workdocsMod.Subscription] = js.undefined
 }
 object CreateNotificationSubscriptionResponse {
   

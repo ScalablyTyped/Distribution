@@ -9,11 +9,12 @@ import typings.seleniumWebdriver.mod.Session
 import typings.seleniumWebdriver.remoteMod.DriverService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofDriverInstantiable extends Instantiable2[/* session */ Session, /* executor */ Executor, Driver] {
+trait TypeofDriverInstantiable
+  extends StObject
+     with Instantiable2[/* session */ Session, /* executor */ Executor, Driver] {
   
   /**
     * Creates a new session with the ChromeDriver.
@@ -27,8 +28,8 @@ trait TypeofDriverInstantiable extends Instantiable2[/* session */ Session, /* e
     * @return {!Driver} A new driver instance.
     */
   def createSession(): Driver = js.native
-  def createSession(opt_config: js.UndefOr[scala.Nothing], opt_service: Executor): Driver = js.native
-  def createSession(opt_config: js.UndefOr[scala.Nothing], opt_service: DriverService): Driver = js.native
+  def createSession(opt_config: Unit, opt_service: Executor): Driver = js.native
+  def createSession(opt_config: Unit, opt_service: DriverService): Driver = js.native
   def createSession(opt_config: Options): Driver = js.native
   def createSession(opt_config: Options, opt_service: Executor): Driver = js.native
   def createSession(opt_config: Options, opt_service: DriverService): Driver = js.native

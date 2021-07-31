@@ -3,7 +3,6 @@ package typings.ethersprojectWordlists
 import typings.ethersprojectLogger.mod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wordlistMod {
@@ -26,16 +25,17 @@ object wordlistMod {
   /* static members */
   object Wordlist {
     
-    @JSImport("@ethersproject/wordlists/lib/wordlist", "Wordlist.check")
+    @JSImport("@ethersproject/wordlists/lib/wordlist", "Wordlist")
     @js.native
-    def check(wordlist: Wordlist): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/wordlists/lib/wordlist", "Wordlist.register")
-    @js.native
-    def register(lang: Wordlist): Unit = js.native
-    @JSImport("@ethersproject/wordlists/lib/wordlist", "Wordlist.register")
-    @js.native
-    def register(lang: Wordlist, name: String): Unit = js.native
+    @scala.inline
+    def check(wordlist: Wordlist): String = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(wordlist.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def register(lang: Wordlist): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(lang.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def register(lang: Wordlist, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(lang.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("@ethersproject/wordlists/lib/wordlist", "logger")

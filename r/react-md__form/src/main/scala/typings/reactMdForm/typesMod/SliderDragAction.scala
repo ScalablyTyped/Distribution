@@ -9,17 +9,16 @@ import typings.reactMdForm.reactMdFormStrings.touchmove
 import typings.reactMdForm.reactMdFormStrings.touchstart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderDragAction
-  extends SliderDragValues
+  extends StObject
+     with SliderDragValues
      with SliderAction {
   
-  var eventType: mousedown | mousemove | mouseup | touchstart | touchmove | touchend = js.native
+  var eventType: mousedown | mousemove | mouseup | touchstart | touchmove | touchend
   
-  var `type`: drag = js.native
+  var `type`: drag
 }
 object SliderDragAction {
   
@@ -35,12 +34,11 @@ object SliderDragAction {
     reversed: Boolean,
     step: Double,
     top: Double,
-    `type`: drag,
     vertical: Boolean,
     width: Double
   ): SliderDragAction = {
     val __obj = js.Dynamic.literal(clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], reversed = reversed.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("drag")
     __obj.asInstanceOf[SliderDragAction]
   }
   

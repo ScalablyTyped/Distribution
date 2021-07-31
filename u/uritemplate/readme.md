@@ -12,7 +12,7 @@ An UriTemplate implementation of rfc 6570
 | Keywords           | util, uri, template, rfc6570 |
 | # releases         | 0 |
 | # dependents       | 33 |
-| # downloads        | 1115449 |
+| # downloads        | 1276655 |
 | # stars            | 1 |
 
 ## Links

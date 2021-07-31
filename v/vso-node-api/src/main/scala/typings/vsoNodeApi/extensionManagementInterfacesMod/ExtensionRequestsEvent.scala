@@ -3,48 +3,47 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 import typings.vsoNodeApi.galleryInterfacesMod.PublishedExtension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionRequestsEvent extends StObject {
   
   /**
     * The extension which has been requested
     */
-  var extension: PublishedExtension = js.native
+  var `extension`: PublishedExtension
   
   /**
     * Information about the host for which this extension is requested
     */
-  var host: ExtensionHost = js.native
+  var host: ExtensionHost
   
   /**
     * Gallery host url
     */
-  var links: ExtensionRequestUrls = js.native
+  var links: ExtensionRequestUrls
   
   /**
     * The extension request object
     */
-  var requests: js.Array[ExtensionRequest] = js.native
+  var requests: js.Array[ExtensionRequest]
   
   /**
     * The type of update that was made
     */
-  var updateType: ExtensionRequestUpdateType = js.native
+  var updateType: ExtensionRequestUpdateType
 }
 object ExtensionRequestsEvent {
   
   @scala.inline
   def apply(
-    extension: PublishedExtension,
+    `extension`: PublishedExtension,
     host: ExtensionHost,
     links: ExtensionRequestUrls,
     requests: js.Array[ExtensionRequest],
     updateType: ExtensionRequestUpdateType
   ): ExtensionRequestsEvent = {
-    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], requests = requests.asInstanceOf[js.Any], updateType = updateType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], requests = requests.asInstanceOf[js.Any], updateType = updateType.asInstanceOf[js.Any])
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionRequestsEvent]
   }
   

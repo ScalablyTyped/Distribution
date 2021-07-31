@@ -6,93 +6,91 @@ import typings.serverless.serverlessStrings.edge
 import typings.serverless.serverlessStrings.regional
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Provider extends StObject {
   
-  var alb: js.UndefOr[Alb] = js.native
+  var alb: js.UndefOr[Alb] = js.undefined
   
-  var apiGateway: js.UndefOr[ApiGateway] = js.native
+  var apiGateway: js.UndefOr[ApiGateway] = js.undefined
   
-  var apiKeys: js.UndefOr[js.Array[String]] = js.native
+  var apiKeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var apiName: js.UndefOr[String] = js.native
+  var apiName: js.UndefOr[String] = js.undefined
   
-  var cfnRole: js.UndefOr[String] = js.native
+  var cfnRole: js.UndefOr[String] = js.undefined
   
-  var deploymentBucket: js.UndefOr[DeploymentBucket] = js.native
+  var deploymentBucket: js.UndefOr[DeploymentBucket] = js.undefined
   
-  var deploymentPrefix: js.UndefOr[String] = js.native
+  var deploymentPrefix: js.UndefOr[String] = js.undefined
   
-  var endpointType: js.UndefOr[regional | edge | `private`] = js.native
+  var endpointType: js.UndefOr[regional | edge | `private`] = js.undefined
   
-  var environment: js.UndefOr[Environment | String] = js.native
+  var environment: js.UndefOr[Environment | String] = js.undefined
   
-  var httpApi: js.UndefOr[HttpApi] = js.native
+  var httpApi: js.UndefOr[HttpApi] = js.undefined
   
-  var iamManagedPolicies: js.UndefOr[js.Array[String]] = js.native
+  var iamManagedPolicies: js.UndefOr[js.Array[String]] = js.undefined
   
-  var iamRoleStatements: js.UndefOr[js.Array[IamRoleStatement]] = js.native
+  var iamRoleStatements: js.UndefOr[js.Array[IamRoleStatement]] = js.undefined
   
-  var logRetentionInDays: js.UndefOr[Double | String] = js.native
+  var logRetentionInDays: js.UndefOr[Double | String] = js.undefined
   
-  var logs: js.UndefOr[Logs] = js.native
+  var logs: js.UndefOr[Logs] = js.undefined
   
-  var memorySize: js.UndefOr[Double | String] = js.native
+  var memorySize: js.UndefOr[Double | String] = js.undefined
   
-  var name: aws = js.native
+  var name: aws
   
-  var notificationArns: js.UndefOr[js.Array[String]] = js.native
+  var notificationArns: js.UndefOr[js.Array[String]] = js.undefined
   
-  var profile: js.UndefOr[String] = js.native
+  var profile: js.UndefOr[String] = js.undefined
   
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
-  var reservedConcurrency: js.UndefOr[Double | String] = js.native
+  var reservedConcurrency: js.UndefOr[Double | String] = js.undefined
   
-  var resourcePolicy: js.UndefOr[js.Array[ResourcePolicy]] = js.native
+  var resourcePolicy: js.UndefOr[js.Array[ResourcePolicy]] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var rolePermissionsBoundary: js.UndefOr[String] = js.native
+  var rolePermissionsBoundary: js.UndefOr[String] = js.undefined
   
-  var rollbackConfiguration: js.UndefOr[RollbackConfiguration] = js.native
+  var rollbackConfiguration: js.UndefOr[RollbackConfiguration] = js.undefined
   
-  var runtime: js.UndefOr[String] = js.native
+  var runtime: js.UndefOr[String] = js.undefined
   
-  var stackName: js.UndefOr[String] = js.native
+  var stackName: js.UndefOr[String] = js.undefined
   
-  var stackParameters: js.UndefOr[js.Array[StackParameters]] = js.native
+  var stackParameters: js.UndefOr[js.Array[StackParameters]] = js.undefined
   
-  var stackPolicy: js.UndefOr[js.Array[ResourcePolicy]] = js.native
+  var stackPolicy: js.UndefOr[js.Array[ResourcePolicy]] = js.undefined
   
-  var stackTags: js.UndefOr[Tags] = js.native
+  var stackTags: js.UndefOr[Tags] = js.undefined
   
-  var stage: js.UndefOr[String] = js.native
+  var stage: js.UndefOr[String] = js.undefined
   
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
   
-  var timeout: js.UndefOr[Double | String] = js.native
+  var timeout: js.UndefOr[Double | String] = js.undefined
   
-  var tracing: js.UndefOr[Tracing] = js.native
+  var tracing: js.UndefOr[Tracing] = js.undefined
   
-  var usagePlan: js.UndefOr[UsagePlan] = js.native
+  var usagePlan: js.UndefOr[UsagePlan] = js.undefined
   
-  var versionFunctions: js.UndefOr[Boolean] = js.native
+  var versionFunctions: js.UndefOr[Boolean] = js.undefined
   
-  var vpc: js.UndefOr[Vpc] = js.native
+  var vpc: js.UndefOr[Vpc] = js.undefined
   
-  var websocketsApiName: js.UndefOr[String] = js.native
+  var websocketsApiName: js.UndefOr[String] = js.undefined
   
-  var websocketsApiRouteSelectionExpression: js.UndefOr[String] = js.native
+  var websocketsApiRouteSelectionExpression: js.UndefOr[String] = js.undefined
 }
 object Provider {
   
   @scala.inline
-  def apply(name: aws): Provider = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): Provider = {
+    val __obj = js.Dynamic.literal(name = "aws")
     __obj.asInstanceOf[Provider]
   }
   

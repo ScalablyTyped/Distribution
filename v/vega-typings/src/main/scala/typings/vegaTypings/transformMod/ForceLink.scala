@@ -5,29 +5,29 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ForceLink extends Force {
+trait ForceLink
+  extends StObject
+     with Force {
   
-  var distance: js.UndefOr[Double | SignalRef | ExprRef] = js.native
+  var distance: js.UndefOr[Double | SignalRef | ExprRef] = js.undefined
   
-  var force: link = js.native
+  var force: link
   
-  var id: js.UndefOr[FieldRef] = js.native
+  var id: js.UndefOr[FieldRef] = js.undefined
   
-  var iterations: js.UndefOr[Double | SignalRef] = js.native
+  var iterations: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var links: js.UndefOr[DataName] = js.native
+  var links: js.UndefOr[DataName] = js.undefined
   
-  var strength: js.UndefOr[Double | SignalRef | ExprRef] = js.native
+  var strength: js.UndefOr[Double | SignalRef | ExprRef] = js.undefined
 }
 object ForceLink {
   
   @scala.inline
-  def apply(force: link): ForceLink = {
-    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
+  def apply(): ForceLink = {
+    val __obj = js.Dynamic.literal(force = "link")
     __obj.asInstanceOf[ForceLink]
   }
   

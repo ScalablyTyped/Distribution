@@ -6,86 +6,84 @@ import typings.std.PointerEvent
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HammerInput extends StObject {
   
   /** Angle moved. */
-  var angle: Double = js.native
+  var angle: Double
   
   /** Center position for multi-touch, or just the single pointer. */
-  var center: HammerPoint = js.native
+  var center: HammerPoint
   
   /** Array with all new/moved/lost pointers. */
-  var changedPointers: js.Array[_] = js.native
+  var changedPointers: js.Array[js.Any]
   
   /** Total time in ms since the first input. */
-  var deltaTime: Double = js.native
+  var deltaTime: Double
   
   /** Movement of the X axis. */
-  var deltaX: Double = js.native
+  var deltaX: Double
   
   /** Movement of the Y axis. */
-  var deltaY: Double = js.native
+  var deltaY: Double
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /** Direction moved. Matches the DIRECTION constants. */
-  var direction: Double = js.native
+  var direction: Double
   
   /** Distance moved. */
-  var distance: Double = js.native
+  var distance: Double
   
   /** Event type, matches the INPUT constants. */
-  var eventType: Double = js.native
+  var eventType: Double
   
-  def handler(): Unit = js.native
+  def handler(): Unit
   
-  def init(): Unit = js.native
+  def init(): Unit
   
   /** true when the final (last) input. */
-  var isFinal: Boolean = js.native
+  var isFinal: Boolean
   
   /** true when the first input. */
-  var isFirst: Boolean = js.native
+  var isFirst: Boolean
   
   /** Direction moved from it's starting point. Matches the DIRECTION constants. */
-  var offsetDirection: Double = js.native
+  var offsetDirection: Double
   
   /** Primary pointer type, could be touch, mouse, pen or kinect. */
-  var pointerType: String = js.native
+  var pointerType: String
   
   /** Array with all pointers, including the ended pointers (touchend, mouseup). */
-  var pointers: js.Array[_] = js.native
+  var pointers: js.Array[js.Any]
   
   /** Reference to the srcEvent.preventDefault() method. Only for experts! */
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
   /** Rotation that has been done when multi-touch. 0 on a single touch. */
-  var rotation: Double = js.native
+  var rotation: Double
   
   /** Scaling that has been done when multi-touch. 1 on a single touch. */
-  var scale: Double = js.native
+  var scale: Double
   
   /** Source event object, type TouchEvent, MouseEvent or PointerEvent. */
-  var srcEvent: TouchEvent | MouseEvent | PointerEvent = js.native
+  var srcEvent: TouchEvent | MouseEvent | PointerEvent
   
   /** Target that received the event. */
-  var target: HTMLElement = js.native
+  var target: HTMLElement
   
   /** Name of the event. Like panstart. */
-  var `type`: String = js.native
+  var `type`: String
   
   /** Highest velocityX/Y value. */
-  var velocity: Double = js.native
+  var velocity: Double
   
   /** Velocity on the X axis, in px/ms. */
-  var velocityX: Double = js.native
+  var velocityX: Double
   
   /** Velocity on the Y axis, in px/ms */
-  var velocityY: Double = js.native
+  var velocityY: Double
 }
 object HammerInput {
   
@@ -93,7 +91,7 @@ object HammerInput {
   def apply(
     angle: Double,
     center: HammerPoint,
-    changedPointers: js.Array[_],
+    changedPointers: js.Array[js.Any],
     deltaTime: Double,
     deltaX: Double,
     deltaY: Double,
@@ -107,7 +105,7 @@ object HammerInput {
     isFirst: Boolean,
     offsetDirection: Double,
     pointerType: String,
-    pointers: js.Array[_],
+    pointers: js.Array[js.Any],
     preventDefault: js.Function,
     rotation: Double,
     scale: Double,
@@ -133,7 +131,7 @@ object HammerInput {
     def setCenter(value: HammerPoint): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedPointers(value: js.Array[_]): Self = StObject.set(x, "changedPointers", value.asInstanceOf[js.Any])
+    def setChangedPointers(value: js.Array[js.Any]): Self = StObject.set(x, "changedPointers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setChangedPointersVarargs(value: js.Any*): Self = StObject.set(x, "changedPointers", js.Array(value :_*))
@@ -178,7 +176,7 @@ object HammerInput {
     def setPointerType(value: String): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointers(value: js.Array[_]): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
+    def setPointers(value: js.Array[js.Any]): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPointersVarargs(value: js.Any*): Self = StObject.set(x, "pointers", js.Array(value :_*))

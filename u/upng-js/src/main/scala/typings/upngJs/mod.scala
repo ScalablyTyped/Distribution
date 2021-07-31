@@ -5,27 +5,25 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("upng-js", "decode")
+  @JSImport("upng-js", JSImport.Namespace)
   @js.native
-  def decode(buffer: ArrayBuffer): Image = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("upng-js", "encode")
-  @js.native
-  def encode(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cnum: Double): ArrayBuffer = js.native
-  @JSImport("upng-js", "encode")
-  @js.native
-  def encode(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cnum: Double, dels: js.Array[Double]): ArrayBuffer = js.native
+  @scala.inline
+  def decode(buffer: ArrayBuffer): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[Image]
   
-  @JSImport("upng-js", "encodeLL")
-  @js.native
-  def encodeLL(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cc: Double, ac: Double, depth: Double): ArrayBuffer = js.native
-  @JSImport("upng-js", "encodeLL")
-  @js.native
+  @scala.inline
+  def encode(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cnum: Double): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cnum.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  @scala.inline
+  def encode(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cnum: Double, dels: js.Array[Double]): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cnum.asInstanceOf[js.Any], dels.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  
+  @scala.inline
+  def encodeLL(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cc: Double, ac: Double, depth: Double): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeLL")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], ac.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  @scala.inline
   def encodeLL(
     imgs: js.Array[ArrayBuffer],
     w: Double,
@@ -34,32 +32,29 @@ object mod {
     ac: Double,
     depth: Double,
     dels: js.Array[Double]
-  ): ArrayBuffer = js.native
+  ): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeLL")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], ac.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], dels.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
   
-  @JSImport("upng-js", "quantize")
-  @js.native
-  def quantize(data: ArrayBuffer, psize: Double): QuantizeResult = js.native
+  @scala.inline
+  def quantize(data: ArrayBuffer, psize: Double): QuantizeResult = (^.asInstanceOf[js.Dynamic].applyDynamic("quantize")(data.asInstanceOf[js.Any], psize.asInstanceOf[js.Any])).asInstanceOf[QuantizeResult]
   
-  @JSImport("upng-js", "toRGBA8")
-  @js.native
-  def toRGBA8(out: Image): js.Array[ArrayBuffer] = js.native
+  @scala.inline
+  def toRGBA8(out: Image): js.Array[ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRGBA8")(out.asInstanceOf[js.Any]).asInstanceOf[js.Array[ArrayBuffer]]
   
-  @js.native
   trait Image extends StObject {
     
-    var ctype: Double = js.native
+    var ctype: Double
     
-    var data: ArrayBuffer = js.native
+    var data: ArrayBuffer
     
-    var depth: Double = js.native
+    var depth: Double
     
-    var frames: js.Array[ImageFrame] = js.native
+    var frames: js.Array[ImageFrame]
     
-    var height: Double = js.native
+    var height: Double
     
-    var tabs: ImageTabs = js.native
+    var tabs: ImageTabs
     
-    var width: Double = js.native
+    var width: Double
   }
   object Image {
     
@@ -106,16 +101,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ImageFrame extends StObject {
     
-    var blend: Double = js.native
+    var blend: Double
     
-    var delay: Double = js.native
+    var delay: Double
     
-    var dispose: Double = js.native
+    var dispose: Double
     
-    var rect: ImageFrameRect = js.native
+    var rect: ImageFrameRect
   }
   object ImageFrame {
     
@@ -142,16 +136,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ImageFrameRect extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object ImageFrameRect {
     
@@ -178,12 +171,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ImageTabACTL extends StObject {
     
-    var num_frames: Double = js.native
+    var num_frames: Double
     
-    var num_plays: Double = js.native
+    var num_plays: Double
   }
   object ImageTabACTL {
     
@@ -206,31 +198,30 @@ object mod {
   
   type ImageTabText = StringDictionary[String]
   
-  @js.native
   trait ImageTabs extends StObject {
     
-    var PLTE: js.UndefOr[js.Array[Double]] = js.native
+    var PLTE: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var acTL: js.UndefOr[ImageTabACTL] = js.native
+    var acTL: js.UndefOr[ImageTabACTL] = js.undefined
     
-    var bKGD: js.UndefOr[Double | js.Array[Double]] = js.native
+    var bKGD: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var cHRM: js.UndefOr[js.Array[Double]] = js.native
+    var cHRM: js.UndefOr[js.Array[Double]] = js.undefined
     
     // Depends on ctype
-    var gAMA: js.UndefOr[Double] = js.native
+    var gAMA: js.UndefOr[Double] = js.undefined
     
-    var hIST: js.UndefOr[js.Array[Double]] = js.native
+    var hIST: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var iTXt: js.UndefOr[ImageTabText] = js.native
+    var iTXt: js.UndefOr[ImageTabText] = js.undefined
     
-    var pHYs: js.UndefOr[js.Array[Double]] = js.native
+    var pHYs: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var sRGB: js.UndefOr[Double] = js.native
+    var sRGB: js.UndefOr[Double] = js.undefined
     
-    var tEXt: js.UndefOr[ImageTabText] = js.native
+    var tEXt: js.UndefOr[ImageTabText] = js.undefined
     
-    var tRNS: js.UndefOr[Double | js.Array[Double]] = js.native
+    var tRNS: js.UndefOr[Double | js.Array[Double]] = js.undefined
   }
   object ImageTabs {
     
@@ -329,20 +320,19 @@ object mod {
     }
   }
   
-  @js.native
   trait QuantizeResult extends StObject {
     
-    var abuf: ArrayBuffer = js.native
+    var abuf: ArrayBuffer
     
-    var inds: Uint8Array = js.native
+    var inds: Uint8Array
     
     // Type is complicated and I am too lazy to work it out right now, sorry!
-    var plte: js.Array[_] = js.native
+    var plte: js.Array[js.Any]
   }
   object QuantizeResult {
     
     @scala.inline
-    def apply(abuf: ArrayBuffer, inds: Uint8Array, plte: js.Array[_]): QuantizeResult = {
+    def apply(abuf: ArrayBuffer, inds: Uint8Array, plte: js.Array[js.Any]): QuantizeResult = {
       val __obj = js.Dynamic.literal(abuf = abuf.asInstanceOf[js.Any], inds = inds.asInstanceOf[js.Any], plte = plte.asInstanceOf[js.Any])
       __obj.asInstanceOf[QuantizeResult]
     }
@@ -357,7 +347,7 @@ object mod {
       def setInds(value: Uint8Array): Self = StObject.set(x, "inds", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPlte(value: js.Array[_]): Self = StObject.set(x, "plte", value.asInstanceOf[js.Any])
+      def setPlte(value: js.Array[js.Any]): Self = StObject.set(x, "plte", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPlteVarargs(value: js.Any*): Self = StObject.set(x, "plte", js.Array(value :_*))

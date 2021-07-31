@@ -2,16 +2,16 @@ package typings.fridaGum.ObjC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProxyData extends InstanceData {
+trait ProxyData
+  extends StObject
+     with InstanceData {
   
   /**
     * This proxy's target object.
     */
-  var target: Object = js.native
+  var target: Object
 }
 object ProxyData {
   

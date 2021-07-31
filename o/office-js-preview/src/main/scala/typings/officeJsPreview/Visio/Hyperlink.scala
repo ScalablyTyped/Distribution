@@ -6,7 +6,6 @@ import typings.officeJsPreview.Visio.Interfaces.HyperlinkLoadOptions
 import typings.officeJsPreview.anon.Expand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set:  1.1]
   */
 @js.native
-trait Hyperlink extends ClientObject {
+trait Hyperlink
+  extends StObject
+     with ClientObject {
   
   /**
     *

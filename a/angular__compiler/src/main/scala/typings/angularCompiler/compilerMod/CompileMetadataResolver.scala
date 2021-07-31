@@ -4,7 +4,6 @@ import typings.angularCompiler.metadataResolverMod.ErrorCollector
 import typings.angularCompiler.srcUtilMod.Console
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "CompileMetadataResolver")
@@ -17,7 +16,7 @@ class CompileMetadataResolver protected ()
     _ngModuleResolver: typings.angularCompiler.ngModuleResolverMod.NgModuleResolver,
     _directiveResolver: typings.angularCompiler.directiveResolverMod.DirectiveResolver,
     _pipeResolver: typings.angularCompiler.pipeResolverMod.PipeResolver,
-    _summaryResolver: typings.angularCompiler.srcSummaryResolverMod.SummaryResolver[_],
+    _summaryResolver: typings.angularCompiler.srcSummaryResolverMod.SummaryResolver[js.Any],
     _schemaRegistry: typings.angularCompiler.elementSchemaRegistryMod.ElementSchemaRegistry,
     _directiveNormalizer: typings.angularCompiler.directiveNormalizerMod.DirectiveNormalizer,
     _console: Console,
@@ -30,7 +29,7 @@ class CompileMetadataResolver protected ()
     _ngModuleResolver: typings.angularCompiler.ngModuleResolverMod.NgModuleResolver,
     _directiveResolver: typings.angularCompiler.directiveResolverMod.DirectiveResolver,
     _pipeResolver: typings.angularCompiler.pipeResolverMod.PipeResolver,
-    _summaryResolver: typings.angularCompiler.srcSummaryResolverMod.SummaryResolver[_],
+    _summaryResolver: typings.angularCompiler.srcSummaryResolverMod.SummaryResolver[js.Any],
     _schemaRegistry: typings.angularCompiler.elementSchemaRegistryMod.ElementSchemaRegistry,
     _directiveNormalizer: typings.angularCompiler.directiveNormalizerMod.DirectiveNormalizer,
     _console: Console,

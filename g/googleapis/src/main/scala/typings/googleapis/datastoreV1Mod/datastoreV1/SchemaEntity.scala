@@ -3,7 +3,6 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * That _roughly_ corresponds to a limit of 1 megabyte for the serialized form
   * of this message.
   */
-@js.native
 trait SchemaEntity extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaEntity extends StObject {
     * key). An entity&#39;s kind is its key path&#39;s last element&#39;s kind,
     * or null if it has no key.
     */
-  var key: js.UndefOr[SchemaKey] = js.native
+  var key: js.UndefOr[SchemaKey] = js.undefined
   
   /**
     * The entity&#39;s properties. The map&#39;s keys are property names. A
@@ -28,7 +26,7 @@ trait SchemaEntity extends StObject {
     * name is forbidden in certain documented contexts. The name must not
     * contain more than 500 characters. The name cannot be `&quot;&quot;`.
     */
-  var properties: js.UndefOr[StringDictionary[SchemaValue]] = js.native
+  var properties: js.UndefOr[StringDictionary[SchemaValue]] = js.undefined
 }
 object SchemaEntity {
   

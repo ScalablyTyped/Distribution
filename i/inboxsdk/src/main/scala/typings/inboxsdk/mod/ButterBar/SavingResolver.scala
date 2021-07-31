@@ -2,15 +2,13 @@ package typings.inboxsdk.mod.ButterBar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingResolver extends StObject {
   
-  def reject(): Unit = js.native
+  def reject(): Unit
   
-  def resolve(): Unit = js.native
+  def resolve(): Unit
 }
 object SavingResolver {
   

@@ -3,47 +3,45 @@ package typings.reactVis.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CircularGridLinesProps extends StObject {
   
-  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.native
+  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.undefined
   
-  var centerX: js.UndefOr[Double] = js.native
-  
-  // default: 0
-  var centerY: js.UndefOr[Double] = js.native
-  
-  var height: js.UndefOr[Double] = js.native
-  
-  var innerHeight: js.UndefOr[Double] = js.native
-  
-  var innerWidth: js.UndefOr[Double] = js.native
-  
-  var left: js.UndefOr[Double] = js.native
-  
-  var marginBottom: js.UndefOr[Double] = js.native
-  
-  var marginLeft: js.UndefOr[Double] = js.native
-  
-  var marginRight: js.UndefOr[Double] = js.native
-  
-  var marginTop: js.UndefOr[Double] = js.native
-  
-  var rRange: js.UndefOr[js.Array[Double]] = js.native
-  
-  var style: js.UndefOr[CSSProperties] = js.native
-  
-  var tickTotal: js.UndefOr[Double] = js.native
-  
-  var tickValues: js.UndefOr[js.Array[Double]] = js.native
-  
-  var top: js.UndefOr[Double] = js.native
+  var centerX: js.UndefOr[Double] = js.undefined
   
   // default: 0
-  var width: js.UndefOr[Double] = js.native
+  var centerY: js.UndefOr[Double] = js.undefined
+  
+  var height: js.UndefOr[Double] = js.undefined
+  
+  var innerHeight: js.UndefOr[Double] = js.undefined
+  
+  var innerWidth: js.UndefOr[Double] = js.undefined
+  
+  var left: js.UndefOr[Double] = js.undefined
+  
+  var marginBottom: js.UndefOr[Double] = js.undefined
+  
+  var marginLeft: js.UndefOr[Double] = js.undefined
+  
+  var marginRight: js.UndefOr[Double] = js.undefined
+  
+  var marginTop: js.UndefOr[Double] = js.undefined
+  
+  var rRange: js.UndefOr[js.Array[Double]] = js.undefined
+  
+  var style: js.UndefOr[CSSProperties] = js.undefined
+  
+  var tickTotal: js.UndefOr[Double] = js.undefined
+  
+  var tickValues: js.UndefOr[js.Array[Double]] = js.undefined
+  
+  var top: js.UndefOr[Double] = js.undefined
+  
+  // default: 0
+  var width: js.UndefOr[Double] = js.undefined
 }
 object CircularGridLinesProps {
   

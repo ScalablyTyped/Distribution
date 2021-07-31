@@ -5,11 +5,12 @@ import typings.d3Selection.mod.Selection_
 import typings.d3Transition.mod.Transition_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParallelCoordinatesChart extends Chart {
+trait ParallelCoordinatesChart
+  extends StObject
+     with Chart {
   
   /*Colors to use for the different data. If an array is given, it is converted to a function automatically.*/
   def color(func: js.Function2[/* d */ js.Any, /* i */ Double, String]): this.type = js.native
@@ -51,19 +52,19 @@ trait ParallelCoordinatesChart extends Chart {
   
   def legend(
     selection: Selection_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native
   def legend(
     transition: Transition_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native
@@ -87,19 +88,19 @@ trait ParallelCoordinatesChart extends Chart {
   
   def parallelCoordinates(
     selection: Selection_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native
   def parallelCoordinates(
     transition: Transition_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native

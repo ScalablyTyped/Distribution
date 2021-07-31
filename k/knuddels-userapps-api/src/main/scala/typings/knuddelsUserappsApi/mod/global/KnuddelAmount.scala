@@ -2,7 +2,6 @@ package typings.knuddelsUserappsApi.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -38,19 +37,21 @@ class KnuddelAmount protected () extends StObject {
 }
 object KnuddelAmount {
   
+  @JSGlobal("KnuddelAmount")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelAmount.html#method_fromCents
   		 */
   /* static member */
-  @JSGlobal("KnuddelAmount.fromCents")
-  @js.native
-  def fromCents(knuddel: Double): KnuddelAmount = js.native
+  @scala.inline
+  def fromCents(knuddel: Double): KnuddelAmount = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCents")(knuddel.asInstanceOf[js.Any]).asInstanceOf[KnuddelAmount]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelAmount.html#method_fromKnuddel
   		 */
   /* static member */
-  @JSGlobal("KnuddelAmount.fromKnuddel")
-  @js.native
-  def fromKnuddel(knuddel: Double): KnuddelAmount = js.native
+  @scala.inline
+  def fromKnuddel(knuddel: Double): KnuddelAmount = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKnuddel")(knuddel.asInstanceOf[js.Any]).asInstanceOf[KnuddelAmount]
 }

@@ -10,7 +10,6 @@ import typings.cordovaPluginGlobalization.anon.ValueNumber
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This plugin obtains information and performs operations specific to the user's locale and timezone. */

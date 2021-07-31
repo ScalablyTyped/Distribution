@@ -2,16 +2,14 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StructValue extends StObject {
   
   /**
     * The attributes returned in the record.
     */
-  var attributes: js.UndefOr[ArrayValueList] = js.native
+  var attributes: js.UndefOr[ArrayValueList] = js.undefined
 }
 object StructValue {
   

@@ -2,17 +2,15 @@ package typings.wampy.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WampyOpStatus extends StObject {
   
-  var code: Double = js.native
+  var code: Double
   
-  var description: String = js.native
+  var description: String
   
-  var reqId: js.UndefOr[Double] = js.native
+  var reqId: js.UndefOr[Double] = js.undefined
 }
 object WampyOpStatus {
   

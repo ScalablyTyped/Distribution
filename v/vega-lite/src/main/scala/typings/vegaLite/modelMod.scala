@@ -44,10 +44,13 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.titleMod.Title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelMod {
+  
+  @JSImport("vega-lite/build/src/compile/model", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/compile/model", "Model")
   @js.native
@@ -256,14 +259,14 @@ object modelMod {
     
     def channelHasField(channel: Channel): Boolean = js.native
     
-    def fieldDef(channel: SingleDefChannel): FieldDef[_, _] = js.native
+    def fieldDef(channel: SingleDefChannel): FieldDef[js.Any, js.Any] = js.native
     
-    def forEachFieldDef(f: js.Function2[/* fd */ FieldDef[String, _], /* c */ ExtendedChannel, Unit]): Unit = js.native
-    def forEachFieldDef(f: js.Function2[/* fd */ FieldDef[String, _], /* c */ ExtendedChannel, Unit], t: js.Any): Unit = js.native
+    def forEachFieldDef(f: js.Function2[/* fd */ FieldDef[String, js.Any], /* c */ ExtendedChannel, Unit]): Unit = js.native
+    def forEachFieldDef(f: js.Function2[/* fd */ FieldDef[String, js.Any], /* c */ ExtendedChannel, Unit], t: js.Any): Unit = js.native
     
     /* protected */ def getMapping(): PartialRecordExtendedChan = js.native
     
-    def reduceFieldDef[T, U](f: js.Function3[/* acc */ U, /* fd */ FieldDef[String, _], /* c */ Channel, U], init: T): T = js.native
+    def reduceFieldDef[T, U](f: js.Function3[/* acc */ U, /* fd */ FieldDef[String, js.Any], /* c */ Channel, U], init: T): T = js.native
     
     /** Get "field" reference for Vega */
     def vgField(channel: SingleDefChannel): String = js.native
@@ -272,51 +275,57 @@ object modelMod {
   
   @JSImport("vega-lite/build/src/compile/model", "NameMap")
   @js.native
-  class NameMap () extends NameMapInterface {
+  class NameMap ()
+    extends StObject
+       with NameMapInterface {
+    
+    /* CompleteClass */
+    override def get(name: String): String = js.native
+    
+    /* CompleteClass */
+    override def has(name: String): Boolean = js.native
     
     var nameMap: js.Any = js.native
+    
+    /* CompleteClass */
+    override def rename(oldname: String, newName: String): Unit = js.native
   }
   
-  @JSImport("vega-lite/build/src/compile/model", "isConcatModel")
-  @js.native
-  def isConcatModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/concat.ConcatModel */ Boolean = js.native
+  @scala.inline
+  def isConcatModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/concat.ConcatModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConcatModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/compile/concat.ConcatModel */ Boolean]
   
-  @JSImport("vega-lite/build/src/compile/model", "isFacetModel")
-  @js.native
-  def isFacetModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/facet.FacetModel */ Boolean = js.native
+  @scala.inline
+  def isFacetModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/facet.FacetModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/compile/facet.FacetModel */ Boolean]
   
-  @JSImport("vega-lite/build/src/compile/model", "isLayerModel")
-  @js.native
-  def isLayerModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/layer.LayerModel */ Boolean = js.native
+  @scala.inline
+  def isLayerModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/layer.LayerModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayerModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/compile/layer.LayerModel */ Boolean]
   
-  @JSImport("vega-lite/build/src/compile/model", "isUnitModel")
-  @js.native
-  def isUnitModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/unit.UnitModel */ Boolean = js.native
+  @scala.inline
+  def isUnitModel(model: Model): /* is vega-lite.vega-lite/build/src/compile/unit.UnitModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnitModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/compile/unit.UnitModel */ Boolean]
   
-  @js.native
   trait Component extends StObject {
     
     /** Dictionary mapping channel to VgAxis definition */
-    var axes: AxisComponentIndex = js.native
+    var axes: AxisComponentIndex
     
-    var data: DataComponent = js.native
+    var data: DataComponent
     
-    var layoutHeaders: Column = js.native
+    var layoutHeaders: Column
     
-    var layoutSize: LayoutSizeComponent = js.native
+    var layoutSize: LayoutSizeComponent
     
     /** Dictionary mapping channel to VgLegend definition */
-    var legends: LegendComponentIndex = js.native
+    var legends: LegendComponentIndex
     
-    var mark: js.Array[VgMarkGroup] = js.native
+    var mark: js.Array[VgMarkGroup]
     
-    var projection: ProjectionComponent = js.native
+    var projection: ProjectionComponent
     
-    var resolve: Resolve = js.native
+    var resolve: Resolve
     
-    var scales: ScaleComponentIndex = js.native
+    var scales: ScaleComponentIndex
     
-    var selection: Dict[SelectionComponent[SelectionType]] = js.native
+    var selection: Dict[SelectionComponent[SelectionType]]
   }
   object Component {
     
@@ -375,14 +384,13 @@ object modelMod {
     }
   }
   
-  @js.native
   trait NameMapInterface extends StObject {
     
-    def get(name: String): String = js.native
+    def get(name: String): String
     
-    def has(name: String): Boolean = js.native
+    def has(name: String): Boolean
     
-    def rename(oldname: String, newName: String): Unit = js.native
+    def rename(oldname: String, newName: String): Unit
   }
   object NameMapInterface {
     

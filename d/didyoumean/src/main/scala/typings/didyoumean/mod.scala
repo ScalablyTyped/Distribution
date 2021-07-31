@@ -2,17 +2,14 @@ package typings.didyoumean
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("didyoumean", JSImport.Namespace)
-  @js.native
-  def apply(str: String, list: js.Array[String]): String | js.Array[String] = js.native
-  @JSImport("didyoumean", JSImport.Namespace)
-  @js.native
-  def apply(str: String, list: js.Array[String], key: String): String | js.Array[String] = js.native
+  @scala.inline
+  def apply(str: String, list: js.Array[String]): String | js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String]]
+  @scala.inline
+  def apply(str: String, list: js.Array[String], key: String): String | js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], list.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String]]
   
   @JSImport("didyoumean", JSImport.Namespace)
   @js.native

@@ -3,32 +3,32 @@ package typings.hammerjs
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HammerDefaults extends HammerOptions {
+trait HammerDefaults
+  extends StObject
+     with HammerOptions {
   
   @JSName("cssProps")
-  var cssProps_HammerDefaults: CssProps = js.native
+  var cssProps_HammerDefaults: CssProps
   
   @JSName("domEvents")
-  var domEvents_HammerDefaults: Boolean = js.native
+  var domEvents_HammerDefaults: Boolean
   
   @JSName("enable")
-  var enable_HammerDefaults: Boolean = js.native
+  var enable_HammerDefaults: Boolean
   
   @JSName("inputClass")
-  var inputClass_HammerDefaults: HammerInput = js.native
+  var inputClass_HammerDefaults: HammerInput
   
   @JSName("inputTarget")
-  var inputTarget_HammerDefaults: EventTarget = js.native
+  var inputTarget_HammerDefaults: EventTarget
   
   @JSName("preset")
-  var preset_HammerDefaults: js.Array[RecognizerTuple] = js.native
+  var preset_HammerDefaults: js.Array[RecognizerTuple]
   
   @JSName("touchAction")
-  var touchAction_HammerDefaults: String = js.native
+  var touchAction_HammerDefaults: String
 }
 object HammerDefaults {
   

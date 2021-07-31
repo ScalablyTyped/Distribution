@@ -2,22 +2,20 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filterPlaceholdersMod {
   
   /* Inlined {[ name in tablesorter.tablesorter/Filtering/FilterBox.FilterBox ]:? string} */
-  @js.native
   trait FilterPlaceholders extends StObject {
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var search: js.UndefOr[String] = js.native
+    var search: js.UndefOr[String] = js.undefined
     
-    var select: js.UndefOr[String] = js.native
+    var select: js.UndefOr[String] = js.undefined
     
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
   }
   object FilterPlaceholders {
     

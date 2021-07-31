@@ -3,55 +3,53 @@ package typings.rcFieldForm.interfaceMod
 import typings.rcFieldForm.rcFieldFormBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<rc-field-form.rc-field-form/es/interface.FormInstance<any>, 'validateFields'> & {  validateFields :rc-field-form.rc-field-form/es/interface.InternalValidateFields,   prefixName :rc-field-form.rc-field-form/es/interface.InternalNamePath | undefined,   validateTrigger :string | std.Array<string> | false | undefined, getInternalHooks (secret : string): rc-field-form.rc-field-form/es/interface.InternalHooks | null} */
-@js.native
 trait InternalFormInstance extends StObject {
   
-  var getFieldError: js.Function1[/* name */ NamePath, js.Array[String]] = js.native
+  var getFieldError: js.Function1[/* name */ NamePath, js.Array[String]]
   
-  var getFieldValue: js.Function1[/* name */ NamePath, StoreValue] = js.native
+  var getFieldValue: js.Function1[/* name */ NamePath, StoreValue]
   
-  var getFieldsError: js.Function1[/* nameList */ js.UndefOr[js.Array[NamePath]], js.Array[FieldError]] = js.native
+  var getFieldsError: js.Function1[/* nameList */ js.UndefOr[js.Array[NamePath]], js.Array[FieldError]]
   
-  var getFieldsValue: js.Function0[_] = js.native
+  var getFieldsValue: js.Function0[js.Any]
   
   /**
     * Form component should register some content into store.
     * We pass the `HOOK_MARK` as key to avoid user call the function.
     */
-  def getInternalHooks(secret: String): InternalHooks | Null = js.native
+  def getInternalHooks(secret: String): InternalHooks | Null
   
-  var isFieldTouched: js.Function1[/* name */ NamePath, Boolean] = js.native
+  var isFieldTouched: js.Function1[/* name */ NamePath, Boolean]
   
-  var isFieldValidating: js.Function1[/* name */ NamePath, Boolean] = js.native
+  var isFieldValidating: js.Function1[/* name */ NamePath, Boolean]
   
   var isFieldsTouched: js.Function2[
     /* nameList */ js.UndefOr[js.Array[NamePath]], 
     /* allFieldsTouched */ js.UndefOr[Boolean], 
     Boolean
-  ] = js.native
+  ]
   
-  var isFieldsValidating: js.Function1[/* nameList */ js.Array[NamePath], Boolean] = js.native
+  var isFieldsValidating: js.Function1[/* nameList */ js.Array[NamePath], Boolean]
   
   /**
     * Passed by field context props
     */
-  var prefixName: js.UndefOr[InternalNamePath] = js.native
+  var prefixName: js.UndefOr[InternalNamePath] = js.undefined
   
-  var resetFields: js.Function1[/* fields */ js.UndefOr[js.Array[NamePath]], Unit] = js.native
+  var resetFields: js.Function1[/* fields */ js.UndefOr[js.Array[NamePath]], Unit]
   
-  var setFields: js.Function1[/* fields */ js.Array[FieldData], Unit] = js.native
+  var setFields: js.Function1[/* fields */ js.Array[FieldData], Unit]
   
-  var setFieldsValue: js.Function1[/* value */ RecursivePartial[_], Unit] = js.native
+  var setFieldsValue: js.Function1[/* value */ RecursivePartial[js.Any], Unit]
   
-  var submit: js.Function0[Unit] = js.native
+  var submit: js.Function0[Unit]
   
-  var validateFields: InternalValidateFields = js.native
+  var validateFields: InternalValidateFields
   
-  var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.native
+  var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
 }
 object InternalFormInstance {
   
@@ -60,7 +58,7 @@ object InternalFormInstance {
     getFieldError: /* name */ NamePath => js.Array[String],
     getFieldValue: /* name */ NamePath => StoreValue,
     getFieldsError: /* nameList */ js.UndefOr[js.Array[NamePath]] => js.Array[FieldError],
-    getFieldsValue: () => _,
+    getFieldsValue: () => js.Any,
     getInternalHooks: String => InternalHooks | Null,
     isFieldTouched: /* name */ NamePath => Boolean,
     isFieldValidating: /* name */ NamePath => Boolean,
@@ -68,7 +66,7 @@ object InternalFormInstance {
     isFieldsValidating: /* nameList */ js.Array[NamePath] => Boolean,
     resetFields: /* fields */ js.UndefOr[js.Array[NamePath]] => Unit,
     setFields: /* fields */ js.Array[FieldData] => Unit,
-    setFieldsValue: /* value */ RecursivePartial[_] => Unit,
+    setFieldsValue: /* value */ RecursivePartial[js.Any] => Unit,
     submit: () => Unit,
     validateFields: (/* nameList */ js.UndefOr[js.Array[NamePath]], /* options */ js.UndefOr[ValidateOptions]) => js.Promise[Store]
   ): InternalFormInstance = {
@@ -89,7 +87,7 @@ object InternalFormInstance {
     def setGetFieldsError(value: /* nameList */ js.UndefOr[js.Array[NamePath]] => js.Array[FieldError]): Self = StObject.set(x, "getFieldsError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFieldsValue(value: () => _): Self = StObject.set(x, "getFieldsValue", js.Any.fromFunction0(value))
+    def setGetFieldsValue(value: () => js.Any): Self = StObject.set(x, "getFieldsValue", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetInternalHooks(value: String => InternalHooks | Null): Self = StObject.set(x, "getInternalHooks", js.Any.fromFunction1(value))
@@ -124,7 +122,7 @@ object InternalFormInstance {
     def setSetFields(value: /* fields */ js.Array[FieldData] => Unit): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFieldsValue(value: /* value */ RecursivePartial[_] => Unit): Self = StObject.set(x, "setFieldsValue", js.Any.fromFunction1(value))
+    def setSetFieldsValue(value: /* value */ RecursivePartial[js.Any] => Unit): Self = StObject.set(x, "setFieldsValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSubmit(value: () => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))

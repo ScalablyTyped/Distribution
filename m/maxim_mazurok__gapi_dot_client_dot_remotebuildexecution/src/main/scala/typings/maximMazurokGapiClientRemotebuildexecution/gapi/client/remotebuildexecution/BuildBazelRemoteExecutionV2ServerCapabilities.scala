@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2ServerCapabilities extends StObject {
   
   /** Capabilities of the remote cache system. */
-  var cacheCapabilities: js.UndefOr[BuildBazelRemoteExecutionV2CacheCapabilities] = js.native
+  var cacheCapabilities: js.UndefOr[BuildBazelRemoteExecutionV2CacheCapabilities] = js.undefined
   
   /** Earliest RE API version supported, including deprecated versions. */
-  var deprecatedApiVersion: js.UndefOr[BuildBazelSemverSemVer] = js.native
+  var deprecatedApiVersion: js.UndefOr[BuildBazelSemverSemVer] = js.undefined
   
   /** Capabilities of the remote execution system. */
-  var executionCapabilities: js.UndefOr[BuildBazelRemoteExecutionV2ExecutionCapabilities] = js.native
+  var executionCapabilities: js.UndefOr[BuildBazelRemoteExecutionV2ExecutionCapabilities] = js.undefined
   
   /** Latest RE API version supported. */
-  var highApiVersion: js.UndefOr[BuildBazelSemverSemVer] = js.native
+  var highApiVersion: js.UndefOr[BuildBazelSemverSemVer] = js.undefined
   
   /** Earliest non-deprecated RE API version supported. */
-  var lowApiVersion: js.UndefOr[BuildBazelSemverSemVer] = js.native
+  var lowApiVersion: js.UndefOr[BuildBazelSemverSemVer] = js.undefined
 }
 object BuildBazelRemoteExecutionV2ServerCapabilities {
   

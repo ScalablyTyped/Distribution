@@ -3,13 +3,13 @@ package typings.sharepoint.CUI
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RibbonComponent extends Component {
+trait RibbonComponent
+  extends StObject
+     with Component {
   
-  def get_ribbon(): Ribbon = js.native
+  def get_ribbon(): Ribbon
 }
 object RibbonComponent {
   

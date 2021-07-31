@@ -2,20 +2,18 @@ package typings.plotlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  visible :boolean,   width :number,   fillcolor :plotly.js.plotly.js.Color,   line :std.Partial<{  color :plotly.js.plotly.js.Color,   width :number}>}> */
-@js.native
 trait Partialvisiblebooleanwidt extends StObject {
   
-  var fillcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var fillcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var line: js.UndefOr[PartialcolorColorwidthnumColor] = js.native
+  var line: js.UndefOr[PartialcolorColorwidthnumColor] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Partialvisiblebooleanwidt {
   

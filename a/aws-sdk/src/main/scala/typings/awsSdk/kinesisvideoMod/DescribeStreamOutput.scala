@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStreamOutput extends StObject {
   
   /**
     * An object that describes the stream.
     */
-  var StreamInfo: js.UndefOr[typings.awsSdk.kinesisvideoMod.StreamInfo] = js.native
+  var StreamInfo: js.UndefOr[typings.awsSdk.kinesisvideoMod.StreamInfo] = js.undefined
 }
 object DescribeStreamOutput {
   

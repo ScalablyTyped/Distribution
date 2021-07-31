@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownItemMod {
@@ -22,16 +21,15 @@ object dropdownItemMod {
     def this(props: DropdownItemProps, context: js.Any) = this()
   }
   
-  @js.native
   trait DropdownItemProps extends StObject {
     
-    var onClick: js.UndefOr[js.Function1[/* e */ Option, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ Option, Unit]] = js.undefined
     
-    var option: js.UndefOr[js.Object] = js.native
+    var option: js.UndefOr[js.Object] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var template: js.UndefOr[js.Function1[/* option */ js.Any, js.UndefOr[Element]]] = js.native
+    var template: js.UndefOr[js.Function1[/* option */ js.Any, js.UndefOr[Element]]] = js.undefined
   }
   object DropdownItemProps {
     

@@ -8,7 +8,6 @@ import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,20 +20,19 @@ object mod extends Shortcut {
   @js.native
   val VueTelInput: VueTelInputConstructor = js.native
   
-  @js.native
   trait VueTelInputComputed extends StObject {
     
-    def filteredCountries(): js.Array[String] = js.native
+    def filteredCountries(): js.Array[String]
     
-    def formattedResult(): String = js.native
+    def formattedResult(): String
     
-    def mode(): String = js.native
+    def mode(): String
     
-    def response(): VueTelInputResponse = js.native
+    def response(): VueTelInputResponse
     
-    def sortedCountries(): js.Array[String] = js.native
+    def sortedCountries(): js.Array[String]
     
-    def state(): Boolean = js.native
+    def state(): Boolean
   }
   object VueTelInputComputed {
     
@@ -75,7 +73,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait VueTelInputConstructor extends VueConstructor[Vue] {
+  trait VueTelInputConstructor
+    extends StObject
+       with VueConstructor[Vue] {
     
     var computed: VueTelInputComputed = js.native
     
@@ -95,10 +95,9 @@ object mod extends Shortcut {
     var watch: VueTelInputWatch = js.native
   }
   
-  @js.native
   trait VueTelInputCountryOption extends StObject {
     
-    var iso2: String = js.native
+    var iso2: String
   }
   object VueTelInputCountryOption {
     
@@ -116,20 +115,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait VueTelInputData extends StObject {
     
-    var activeCountry: VueTelInputCountryOption = js.native
+    var activeCountry: VueTelInputCountryOption
     
-    var open: Boolean = js.native
+    var open: Boolean
     
-    var phone: String = js.native
+    var phone: String
     
-    var selectedIndex: js.Any = js.native
+    var selectedIndex: js.Any
     
-    var typeToFindInput: String = js.native
+    var typeToFindInput: String
     
-    var typeToFindTimer: js.Any = js.native
+    var typeToFindTimer: js.Any
   }
   object VueTelInputData {
     
@@ -169,10 +167,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait VueTelInputDirective extends StObject {
     
-    var `click-outside`: DirectiveOptions = js.native
+    var `click-outside`: DirectiveOptions
   }
   object VueTelInputDirective {
     
@@ -191,10 +188,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait VueTelInputDowndownOption extends StObject {
     
-    var disabledDialCode: Boolean = js.native
+    var disabledDialCode: Boolean
   }
   object VueTelInputDowndownOption {
     
@@ -212,10 +208,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait VueTelInputInputOption extends StObject {
     
-    var showDialCode: Boolean = js.native
+    var showDialCode: Boolean
   }
   object VueTelInputInputOption {
     
@@ -233,30 +228,29 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait VueTelInputMethods extends StObject {
     
-    def choose(country: js.Any): Unit = js.native
+    def choose(country: js.Any): Unit
     
-    def clickedOutside(): Unit = js.native
+    def clickedOutside(): Unit
     
-    def findCountry(iso: String): js.Array[_] = js.native
+    def findCountry(iso: String): js.Array[js.Any]
     
-    def getCountries(list: js.Array[_]): js.Array[_] = js.native
+    def getCountries(list: js.Array[js.Any]): js.Array[js.Any]
     
-    def getItemClass(index: Double, iso2: String): js.Any = js.native
+    def getItemClass(index: Double, iso2: String): js.Any
     
-    def initializeCountry(): Unit = js.native
+    def initializeCountry(): Unit
     
-    def keyboardNav(e: Event): Unit = js.native
+    def keyboardNav(e: Event): Unit
     
-    def onBlur(): Unit = js.native
+    def onBlur(): Unit
     
-    def onInput(): Unit = js.native
+    def onInput(): Unit
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def toggleDropdown(): Unit = js.native
+    def toggleDropdown(): Unit
   }
   object VueTelInputMethods {
     
@@ -264,8 +258,8 @@ object mod extends Shortcut {
     def apply(
       choose: js.Any => Unit,
       clickedOutside: () => Unit,
-      findCountry: String => js.Array[_],
-      getCountries: js.Array[_] => js.Array[_],
+      findCountry: String => js.Array[js.Any],
+      getCountries: js.Array[js.Any] => js.Array[js.Any],
       getItemClass: (Double, String) => js.Any,
       initializeCountry: () => Unit,
       keyboardNav: Event => Unit,
@@ -288,10 +282,10 @@ object mod extends Shortcut {
       def setClickedOutside(value: () => Unit): Self = StObject.set(x, "clickedOutside", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setFindCountry(value: String => js.Array[_]): Self = StObject.set(x, "findCountry", js.Any.fromFunction1(value))
+      def setFindCountry(value: String => js.Array[js.Any]): Self = StObject.set(x, "findCountry", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setGetCountries(value: js.Array[_] => js.Array[_]): Self = StObject.set(x, "getCountries", js.Any.fromFunction1(value))
+      def setGetCountries(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "getCountries", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetItemClass(value: (Double, String) => js.Any): Self = StObject.set(x, "getItemClass", js.Any.fromFunction2(value))
@@ -316,48 +310,47 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait VueTelInputProps extends StObject {
     
-    var autocomplete: String = js.native
+    var autocomplete: String
     
-    var defaultCountry: String = js.native
+    var defaultCountry: String
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var disabledFetchingCountry: Boolean = js.native
+    var disabledFetchingCountry: Boolean
     
-    var disabledFormatting: Boolean = js.native
+    var disabledFormatting: Boolean
     
-    var dropdownOptions: VueTelInputDowndownOption = js.native
+    var dropdownOptions: VueTelInputDowndownOption
     
-    var enabledCountryCode: Boolean = js.native
+    var enabledCountryCode: Boolean
     
-    var enabledFlags: Boolean = js.native
+    var enabledFlags: Boolean
     
-    var ignoredCountries: js.Array[_] = js.native
+    var ignoredCountries: js.Array[js.Any]
     
-    var inputClasses: String = js.native
+    var inputClasses: String
     
-    var inputOptions: VueTelInputInputOption = js.native
+    var inputOptions: VueTelInputInputOption
     
-    var invalidMsg: String = js.native
+    var invalidMsg: String
     
-    var maxLen: Double = js.native
+    var maxLen: Double
     
-    var name: String = js.native
+    var name: String
     
-    var onlyCountries: js.Array[_] = js.native
+    var onlyCountries: js.Array[js.Any]
     
-    var placeholder: String = js.native
+    var placeholder: String
     
-    var preferredCountries: Boolean = js.native
+    var preferredCountries: Boolean
     
-    var required: Boolean = js.native
+    var required: Boolean
     
-    var value: String = js.native
+    var value: String
     
-    var wrapperClasses: String = js.native
+    var wrapperClasses: String
   }
   object VueTelInputProps {
     
@@ -371,13 +364,13 @@ object mod extends Shortcut {
       dropdownOptions: VueTelInputDowndownOption,
       enabledCountryCode: Boolean,
       enabledFlags: Boolean,
-      ignoredCountries: js.Array[_],
+      ignoredCountries: js.Array[js.Any],
       inputClasses: String,
       inputOptions: VueTelInputInputOption,
       invalidMsg: String,
       maxLen: Double,
       name: String,
-      onlyCountries: js.Array[_],
+      onlyCountries: js.Array[js.Any],
       placeholder: String,
       preferredCountries: Boolean,
       required: Boolean,
@@ -416,7 +409,7 @@ object mod extends Shortcut {
       def setEnabledFlags(value: Boolean): Self = StObject.set(x, "enabledFlags", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setIgnoredCountries(value: js.Array[_]): Self = StObject.set(x, "ignoredCountries", value.asInstanceOf[js.Any])
+      def setIgnoredCountries(value: js.Array[js.Any]): Self = StObject.set(x, "ignoredCountries", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIgnoredCountriesVarargs(value: js.Any*): Self = StObject.set(x, "ignoredCountries", js.Array(value :_*))
@@ -437,7 +430,7 @@ object mod extends Shortcut {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnlyCountries(value: js.Array[_]): Self = StObject.set(x, "onlyCountries", value.asInstanceOf[js.Any])
+      def setOnlyCountries(value: js.Array[js.Any]): Self = StObject.set(x, "onlyCountries", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnlyCountriesVarargs(value: js.Any*): Self = StObject.set(x, "onlyCountries", js.Array(value :_*))
@@ -459,14 +452,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait VueTelInputResponse extends StObject {
     
-    var country: VueTelInputCountryOption = js.native
+    var country: VueTelInputCountryOption
     
-    var isValid: Boolean = js.native
+    var isValid: Boolean
     
-    var number: String = js.native
+    var number: String
   }
   object VueTelInputResponse {
     
@@ -490,12 +482,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait VueTelInputWatch extends StObject {
     
-    def state(value: js.Any): Unit = js.native
+    def state(value: js.Any): Unit
     
-    def value(): Unit = js.native
+    def value(): Unit
   }
   object VueTelInputWatch {
     

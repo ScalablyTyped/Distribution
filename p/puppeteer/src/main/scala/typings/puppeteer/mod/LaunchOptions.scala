@@ -3,12 +3,11 @@ package typings.puppeteer.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchOptions
-  extends ChromeArgOptions
+  extends StObject
+     with ChromeArgOptions
      with BrowserOptions
      with Timeoutable {
   
@@ -17,57 +16,57 @@ trait LaunchOptions
     * process.stderr.
     * @default false
     */
-  var dumpio: js.UndefOr[Boolean] = js.native
+  var dumpio: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify environment variables that will be visible to Chromium.
     * @default `process.env`.
     */
-  var env: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.native
+  var env: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.undefined
   
   /**
     * Path to a Chromium executable to run instead of bundled Chromium. If
     * executablePath is a relative path, then it is resolved relative to current
     * working directory.
     */
-  var executablePath: js.UndefOr[String] = js.native
+  var executablePath: js.UndefOr[String] = js.undefined
   
   /**
     * Close chrome process on SIGHUP.
     * @default true
     */
-  var handleSIGHUP: js.UndefOr[Boolean] = js.native
+  var handleSIGHUP: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Close chrome process on Ctrl-C.
     * @default true
     */
-  var handleSIGINT: js.UndefOr[Boolean] = js.native
+  var handleSIGINT: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Close chrome process on SIGTERM.
     * @default true
     */
-  var handleSIGTERM: js.UndefOr[Boolean] = js.native
+  var handleSIGTERM: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Do not use `puppeteer.defaultArgs()` for launching Chromium.
     * @default false
     */
-  var ignoreDefaultArgs: js.UndefOr[Boolean | js.Array[String]] = js.native
+  var ignoreDefaultArgs: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   
   /**
     * Connects to the browser over a pipe instead of a WebSocket.
     * @default false
     */
-  var pipe: js.UndefOr[Boolean] = js.native
+  var pipe: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Which browser to launch.
     * At this time, this is either `chrome` or `firefox`. See also `PUPPETEER_PRODUCT`.
     * @default 'chrome'
     */
-  var product: js.UndefOr[Product_] = js.native
+  var product: js.UndefOr[Product_] = js.undefined
 }
 object LaunchOptions {
   

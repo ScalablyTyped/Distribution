@@ -2,65 +2,63 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewportHyphenFallback[TLength] extends StObject {
   
-  var `-ms-height`: js.UndefOr[ViewportHeightProperty[TLength] | js.Array[ViewportHeightProperty[TLength]]] = js.native
+  var `-ms-height`: js.UndefOr[ViewportHeightProperty[TLength] | js.Array[ViewportHeightProperty[TLength]]] = js.undefined
   
   var `-ms-max-height`: js.UndefOr[
     ViewportMaxHeightProperty[TLength] | js.Array[ViewportMaxHeightProperty[TLength]]
-  ] = js.native
+  ] = js.undefined
   
-  var `-ms-max-width`: js.UndefOr[ViewportMaxWidthProperty[TLength] | js.Array[ViewportMaxWidthProperty[TLength]]] = js.native
+  var `-ms-max-width`: js.UndefOr[ViewportMaxWidthProperty[TLength] | js.Array[ViewportMaxWidthProperty[TLength]]] = js.undefined
   
-  var `-ms-max-zoom`: js.UndefOr[ViewportMaxZoomProperty | js.Array[ViewportMaxZoomProperty]] = js.native
+  var `-ms-max-zoom`: js.UndefOr[ViewportMaxZoomProperty | js.Array[ViewportMaxZoomProperty]] = js.undefined
   
   var `-ms-min-height`: js.UndefOr[
     ViewportMinHeightProperty[TLength] | js.Array[ViewportMinHeightProperty[TLength]]
-  ] = js.native
+  ] = js.undefined
   
-  var `-ms-min-width`: js.UndefOr[ViewportMinWidthProperty[TLength] | js.Array[ViewportMinWidthProperty[TLength]]] = js.native
+  var `-ms-min-width`: js.UndefOr[ViewportMinWidthProperty[TLength] | js.Array[ViewportMinWidthProperty[TLength]]] = js.undefined
   
-  var `-ms-min-zoom`: js.UndefOr[ViewportMinZoomProperty | js.Array[ViewportMinZoomProperty]] = js.native
+  var `-ms-min-zoom`: js.UndefOr[ViewportMinZoomProperty | js.Array[ViewportMinZoomProperty]] = js.undefined
   
-  var `-ms-orientation`: js.UndefOr[ViewportOrientationProperty | js.Array[ViewportOrientationProperty]] = js.native
+  var `-ms-orientation`: js.UndefOr[ViewportOrientationProperty | js.Array[ViewportOrientationProperty]] = js.undefined
   
-  var `-ms-user-zoom`: js.UndefOr[ViewportUserZoomProperty | js.Array[ViewportUserZoomProperty]] = js.native
+  var `-ms-user-zoom`: js.UndefOr[ViewportUserZoomProperty | js.Array[ViewportUserZoomProperty]] = js.undefined
   
-  var `-ms-width`: js.UndefOr[ViewportWidthProperty[TLength] | js.Array[ViewportWidthProperty[TLength]]] = js.native
+  var `-ms-width`: js.UndefOr[ViewportWidthProperty[TLength] | js.Array[ViewportWidthProperty[TLength]]] = js.undefined
   
-  var `-ms-zoom`: js.UndefOr[ViewportZoomProperty | js.Array[ViewportZoomProperty]] = js.native
+  var `-ms-zoom`: js.UndefOr[ViewportZoomProperty | js.Array[ViewportZoomProperty]] = js.undefined
   
-  var `-o-orientation`: js.UndefOr[ViewportOrientationProperty | js.Array[ViewportOrientationProperty]] = js.native
+  var `-o-orientation`: js.UndefOr[ViewportOrientationProperty | js.Array[ViewportOrientationProperty]] = js.undefined
   
-  var height: js.UndefOr[ViewportHeightProperty[TLength] | js.Array[ViewportHeightProperty[TLength]]] = js.native
+  var height: js.UndefOr[ViewportHeightProperty[TLength] | js.Array[ViewportHeightProperty[TLength]]] = js.undefined
   
   var `max-height`: js.UndefOr[
     ViewportMaxHeightProperty[TLength] | js.Array[ViewportMaxHeightProperty[TLength]]
-  ] = js.native
+  ] = js.undefined
   
-  var `max-width`: js.UndefOr[ViewportMaxWidthProperty[TLength] | js.Array[ViewportMaxWidthProperty[TLength]]] = js.native
+  var `max-width`: js.UndefOr[ViewportMaxWidthProperty[TLength] | js.Array[ViewportMaxWidthProperty[TLength]]] = js.undefined
   
-  var `max-zoom`: js.UndefOr[ViewportMaxZoomProperty | js.Array[ViewportMaxZoomProperty]] = js.native
+  var `max-zoom`: js.UndefOr[ViewportMaxZoomProperty | js.Array[ViewportMaxZoomProperty]] = js.undefined
   
   var `min-height`: js.UndefOr[
     ViewportMinHeightProperty[TLength] | js.Array[ViewportMinHeightProperty[TLength]]
-  ] = js.native
+  ] = js.undefined
   
-  var `min-width`: js.UndefOr[ViewportMinWidthProperty[TLength] | js.Array[ViewportMinWidthProperty[TLength]]] = js.native
+  var `min-width`: js.UndefOr[ViewportMinWidthProperty[TLength] | js.Array[ViewportMinWidthProperty[TLength]]] = js.undefined
   
-  var `min-zoom`: js.UndefOr[ViewportMinZoomProperty | js.Array[ViewportMinZoomProperty]] = js.native
+  var `min-zoom`: js.UndefOr[ViewportMinZoomProperty | js.Array[ViewportMinZoomProperty]] = js.undefined
   
-  var orientation: js.UndefOr[ViewportOrientationProperty | js.Array[ViewportOrientationProperty]] = js.native
+  var orientation: js.UndefOr[ViewportOrientationProperty | js.Array[ViewportOrientationProperty]] = js.undefined
   
-  var `user-zoom`: js.UndefOr[ViewportUserZoomProperty | js.Array[ViewportUserZoomProperty]] = js.native
+  var `user-zoom`: js.UndefOr[ViewportUserZoomProperty | js.Array[ViewportUserZoomProperty]] = js.undefined
   
-  var width: js.UndefOr[ViewportWidthProperty[TLength] | js.Array[ViewportWidthProperty[TLength]]] = js.native
+  var width: js.UndefOr[ViewportWidthProperty[TLength] | js.Array[ViewportWidthProperty[TLength]]] = js.undefined
   
-  var zoom: js.UndefOr[ViewportZoomProperty | js.Array[ViewportZoomProperty]] = js.native
+  var zoom: js.UndefOr[ViewportZoomProperty | js.Array[ViewportZoomProperty]] = js.undefined
 }
 object ViewportHyphenFallback {
   
@@ -71,7 +69,7 @@ object ViewportHyphenFallback {
   }
   
   @scala.inline
-  implicit class ViewportHyphenFallbackMutableBuilder[Self <: ViewportHyphenFallback[_], TLength] (val x: Self with ViewportHyphenFallback[TLength]) extends AnyVal {
+  implicit class ViewportHyphenFallbackMutableBuilder[Self <: ViewportHyphenFallback[?], TLength] (val x: Self & ViewportHyphenFallback[TLength]) extends AnyVal {
     
     @scala.inline
     def `set-ms-height`(value: ViewportHeightProperty[TLength] | js.Array[ViewportHeightProperty[TLength]]): Self = StObject.set(x, "-ms-height", value.asInstanceOf[js.Any])

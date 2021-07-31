@@ -3,17 +3,15 @@ package typings.dynogels.mod
 import typings.dynogels.mod.AWS.DynamoDB
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelConfig extends StObject {
   
-  var docClient: js.UndefOr[js.Any] = js.native
+  var docClient: js.UndefOr[js.Any] = js.undefined
   
-  var dynamodb: js.UndefOr[DynamoDB] = js.native
+  var dynamodb: js.UndefOr[DynamoDB] = js.undefined
   
-  var tableName: js.UndefOr[String] = js.native
+  var tableName: js.UndefOr[String] = js.undefined
 }
 object ModelConfig {
   

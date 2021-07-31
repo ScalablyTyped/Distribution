@@ -2,15 +2,15 @@ package typings.baseui.inputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MaskedInputProps extends InputProps {
+trait MaskedInputProps
+  extends StObject
+     with InputProps {
   
-  var mask: js.UndefOr[String] = js.native
+  var mask: js.UndefOr[String] = js.undefined
   
-  var maskChar: js.UndefOr[String] = js.native
+  var maskChar: js.UndefOr[String] = js.undefined
 }
 object MaskedInputProps {
   

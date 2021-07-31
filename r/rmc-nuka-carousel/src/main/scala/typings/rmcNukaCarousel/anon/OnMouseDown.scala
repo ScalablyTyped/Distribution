@@ -2,23 +2,21 @@ package typings.rmcNukaCarousel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnMouseDown extends StObject {
   
-  def onMouseDown(e: js.Any): Unit = js.native
+  def onMouseDown(e: js.Any): Unit
   
-  def onMouseLeave(e: js.Any): Unit = js.native
+  def onMouseLeave(e: js.Any): Unit
   
-  def onMouseMove(e: js.Any): Unit = js.native
+  def onMouseMove(e: js.Any): Unit
   
-  def onMouseOut(): Unit = js.native
+  def onMouseOut(): Unit
   
-  def onMouseOver(): Unit = js.native
+  def onMouseOver(): Unit
   
-  def onMouseUp(e: js.Any): Unit = js.native
+  def onMouseUp(e: js.Any): Unit
 }
 object OnMouseDown {
   

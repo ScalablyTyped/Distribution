@@ -2,15 +2,15 @@ package typings.memfs.volumeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFileOptions extends IOptions {
+trait IFileOptions
+  extends StObject
+     with IOptions {
   
-  var flag: js.UndefOr[TFlags] = js.native
+  var flag: js.UndefOr[TFlags] = js.undefined
   
-  var mode: js.UndefOr[TMode] = js.native
+  var mode: js.UndefOr[TMode] = js.undefined
 }
 object IFileOptions {
   

@@ -2,7 +2,6 @@ package typings.konva
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -14,83 +13,121 @@ object typesMod {
   object KonvaNodeEvent extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[KonvaNodeEvent with String] = js.native
+    def apply(value: String): js.UndefOr[KonvaNodeEvent & String] = js.native
     
     @js.native
-    sealed trait click extends KonvaNodeEvent
-    /* "click" */ val click: typings.konva.typesMod.KonvaNodeEvent.click with String = js.native
+    sealed trait click
+      extends StObject
+         with KonvaNodeEvent
+    /* "click" */ val click: typings.konva.typesMod.KonvaNodeEvent.click & String = js.native
     
     @js.native
-    sealed trait contextmenu extends KonvaNodeEvent
-    /* "contextmenu" */ val contextmenu: typings.konva.typesMod.KonvaNodeEvent.contextmenu with String = js.native
+    sealed trait contextmenu
+      extends StObject
+         with KonvaNodeEvent
+    /* "contextmenu" */ val contextmenu: typings.konva.typesMod.KonvaNodeEvent.contextmenu & String = js.native
     
     @js.native
-    sealed trait dblclick extends KonvaNodeEvent
-    /* "dblclick" */ val dblclick: typings.konva.typesMod.KonvaNodeEvent.dblclick with String = js.native
+    sealed trait dblclick
+      extends StObject
+         with KonvaNodeEvent
+    /* "dblclick" */ val dblclick: typings.konva.typesMod.KonvaNodeEvent.dblclick & String = js.native
     
     @js.native
-    sealed trait dbltap extends KonvaNodeEvent
-    /* "dbltap" */ val dbltap: typings.konva.typesMod.KonvaNodeEvent.dbltap with String = js.native
+    sealed trait dbltap
+      extends StObject
+         with KonvaNodeEvent
+    /* "dbltap" */ val dbltap: typings.konva.typesMod.KonvaNodeEvent.dbltap & String = js.native
     
     @js.native
-    sealed trait dragend extends KonvaNodeEvent
-    /* "dragend" */ val dragend: typings.konva.typesMod.KonvaNodeEvent.dragend with String = js.native
+    sealed trait dragend
+      extends StObject
+         with KonvaNodeEvent
+    /* "dragend" */ val dragend: typings.konva.typesMod.KonvaNodeEvent.dragend & String = js.native
     
     @js.native
-    sealed trait dragmove extends KonvaNodeEvent
-    /* "dragmove" */ val dragmove: typings.konva.typesMod.KonvaNodeEvent.dragmove with String = js.native
+    sealed trait dragmove
+      extends StObject
+         with KonvaNodeEvent
+    /* "dragmove" */ val dragmove: typings.konva.typesMod.KonvaNodeEvent.dragmove & String = js.native
     
     @js.native
-    sealed trait dragstart extends KonvaNodeEvent
-    /* "dragstart" */ val dragstart: typings.konva.typesMod.KonvaNodeEvent.dragstart with String = js.native
+    sealed trait dragstart
+      extends StObject
+         with KonvaNodeEvent
+    /* "dragstart" */ val dragstart: typings.konva.typesMod.KonvaNodeEvent.dragstart & String = js.native
     
     @js.native
-    sealed trait mousedown extends KonvaNodeEvent
-    /* "mousedown" */ val mousedown: typings.konva.typesMod.KonvaNodeEvent.mousedown with String = js.native
+    sealed trait mousedown
+      extends StObject
+         with KonvaNodeEvent
+    /* "mousedown" */ val mousedown: typings.konva.typesMod.KonvaNodeEvent.mousedown & String = js.native
     
     @js.native
-    sealed trait mouseenter extends KonvaNodeEvent
-    /* "mouseenter" */ val mouseenter: typings.konva.typesMod.KonvaNodeEvent.mouseenter with String = js.native
+    sealed trait mouseenter
+      extends StObject
+         with KonvaNodeEvent
+    /* "mouseenter" */ val mouseenter: typings.konva.typesMod.KonvaNodeEvent.mouseenter & String = js.native
     
     @js.native
-    sealed trait mouseleave extends KonvaNodeEvent
-    /* "mouseleave" */ val mouseleave: typings.konva.typesMod.KonvaNodeEvent.mouseleave with String = js.native
+    sealed trait mouseleave
+      extends StObject
+         with KonvaNodeEvent
+    /* "mouseleave" */ val mouseleave: typings.konva.typesMod.KonvaNodeEvent.mouseleave & String = js.native
     
     @js.native
-    sealed trait mousemove extends KonvaNodeEvent
-    /* "mousemove" */ val mousemove: typings.konva.typesMod.KonvaNodeEvent.mousemove with String = js.native
+    sealed trait mousemove
+      extends StObject
+         with KonvaNodeEvent
+    /* "mousemove" */ val mousemove: typings.konva.typesMod.KonvaNodeEvent.mousemove & String = js.native
     
     @js.native
-    sealed trait mouseout extends KonvaNodeEvent
-    /* "mouseout" */ val mouseout: typings.konva.typesMod.KonvaNodeEvent.mouseout with String = js.native
+    sealed trait mouseout
+      extends StObject
+         with KonvaNodeEvent
+    /* "mouseout" */ val mouseout: typings.konva.typesMod.KonvaNodeEvent.mouseout & String = js.native
     
     @js.native
-    sealed trait mouseover extends KonvaNodeEvent
-    /* "mouseover" */ val mouseover: typings.konva.typesMod.KonvaNodeEvent.mouseover with String = js.native
+    sealed trait mouseover
+      extends StObject
+         with KonvaNodeEvent
+    /* "mouseover" */ val mouseover: typings.konva.typesMod.KonvaNodeEvent.mouseover & String = js.native
     
     @js.native
-    sealed trait mouseup extends KonvaNodeEvent
-    /* "mouseup" */ val mouseup: typings.konva.typesMod.KonvaNodeEvent.mouseup with String = js.native
+    sealed trait mouseup
+      extends StObject
+         with KonvaNodeEvent
+    /* "mouseup" */ val mouseup: typings.konva.typesMod.KonvaNodeEvent.mouseup & String = js.native
     
     @js.native
-    sealed trait tap extends KonvaNodeEvent
-    /* "tap" */ val tap: typings.konva.typesMod.KonvaNodeEvent.tap with String = js.native
+    sealed trait tap
+      extends StObject
+         with KonvaNodeEvent
+    /* "tap" */ val tap: typings.konva.typesMod.KonvaNodeEvent.tap & String = js.native
     
     @js.native
-    sealed trait touchend extends KonvaNodeEvent
-    /* "touchend" */ val touchend: typings.konva.typesMod.KonvaNodeEvent.touchend with String = js.native
+    sealed trait touchend
+      extends StObject
+         with KonvaNodeEvent
+    /* "touchend" */ val touchend: typings.konva.typesMod.KonvaNodeEvent.touchend & String = js.native
     
     @js.native
-    sealed trait touchmove extends KonvaNodeEvent
-    /* "touchmove" */ val touchmove: typings.konva.typesMod.KonvaNodeEvent.touchmove with String = js.native
+    sealed trait touchmove
+      extends StObject
+         with KonvaNodeEvent
+    /* "touchmove" */ val touchmove: typings.konva.typesMod.KonvaNodeEvent.touchmove & String = js.native
     
     @js.native
-    sealed trait touchstart extends KonvaNodeEvent
-    /* "touchstart" */ val touchstart: typings.konva.typesMod.KonvaNodeEvent.touchstart with String = js.native
+    sealed trait touchstart
+      extends StObject
+         with KonvaNodeEvent
+    /* "touchstart" */ val touchstart: typings.konva.typesMod.KonvaNodeEvent.touchstart & String = js.native
     
     @js.native
-    sealed trait wheel extends KonvaNodeEvent
-    /* "wheel" */ val wheel: typings.konva.typesMod.KonvaNodeEvent.wheel with String = js.native
+    sealed trait wheel
+      extends StObject
+         with KonvaNodeEvent
+    /* "wheel" */ val wheel: typings.konva.typesMod.KonvaNodeEvent.wheel & String = js.native
   }
   
   type AnimationFn = js.Function1[/* frame */ js.UndefOr[IFrame], Boolean | Unit]
@@ -102,16 +139,15 @@ object typesMod {
     def apply(v: Type): This = js.native
   }
   
-  @js.native
   trait IFrame extends StObject {
     
-    var frameRate: Double = js.native
+    var frameRate: Double
     
-    var lastTime: Double = js.native
+    var lastTime: Double
     
-    var time: Double = js.native
+    var time: Double
     
-    var timeDiff: Double = js.native
+    var timeDiff: Double
   }
   object IFrame {
     
@@ -138,16 +174,15 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IRect extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object IRect {
     
@@ -174,14 +209,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait RGB extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object RGB {
     
@@ -205,10 +239,11 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait RGBA extends RGB {
+  trait RGBA
+    extends StObject
+       with RGB {
     
-    var a: Double = js.native
+    var a: Double
   }
   object RGBA {
     
@@ -226,12 +261,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Vector2d extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Vector2d {
     

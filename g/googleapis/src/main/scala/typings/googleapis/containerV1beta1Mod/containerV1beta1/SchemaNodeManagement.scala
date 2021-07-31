@@ -2,30 +2,28 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NodeManagement defines the set of node management services turned on for
   * the node pool.
   */
-@js.native
 trait SchemaNodeManagement extends StObject {
   
   /**
     * Whether the nodes will be automatically repaired.
     */
-  var autoRepair: js.UndefOr[Boolean] = js.native
+  var autoRepair: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the nodes will be automatically upgraded.
     */
-  var autoUpgrade: js.UndefOr[Boolean] = js.native
+  var autoUpgrade: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the Auto Upgrade knobs for the node pool.
     */
-  var upgradeOptions: js.UndefOr[SchemaAutoUpgradeOptions] = js.native
+  var upgradeOptions: js.UndefOr[SchemaAutoUpgradeOptions] = js.undefined
 }
 object SchemaNodeManagement {
   

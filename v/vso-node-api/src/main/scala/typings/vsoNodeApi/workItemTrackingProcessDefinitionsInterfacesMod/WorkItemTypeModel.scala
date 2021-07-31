@@ -2,71 +2,69 @@ package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemTypeModel extends StObject {
   
   /**
     * Behaviors of the work item type
     */
-  var behaviors: js.Array[WorkItemTypeBehavior] = js.native
+  var behaviors: js.Array[WorkItemTypeBehavior]
   
   /**
     * Class of the work item type
     */
-  var `class`: WorkItemTypeClass = js.native
+  var `class`: WorkItemTypeClass
   
   /**
     * Color of the work item type
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * Description of the work item type
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Icon of the work item type
     */
-  var icon: String = js.native
+  var icon: String
   
   /**
     * The ID of the work item type
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Parent WIT Id/Internal ReferenceName that it inherits from
     */
-  var inherits: String = js.native
+  var inherits: String
   
   /**
     * Is work item type disabled
     */
-  var isDisabled: Boolean = js.native
+  var isDisabled: Boolean
   
   /**
     * Layout of the work item type
     */
-  var layout: FormLayout = js.native
+  var layout: FormLayout
   
   /**
     * Name of the work item type
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * States of the work item type
     */
-  var states: js.Array[WorkItemStateResultModel] = js.native
+  var states: js.Array[WorkItemStateResultModel]
   
   /**
     * Url of the work item type
     */
-  var url: String = js.native
+  var url: String
 }
 object WorkItemTypeModel {
   

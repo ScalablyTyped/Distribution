@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortalRatingProperties extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait PortalRatingProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalRating.html#created)
     */
-  var created: js.UndefOr[DateProperties] = js.native
+  var created: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * A rating between 1.0 and 5.0 for the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalRating.html#rating)
     */
-  var rating: js.UndefOr[Double] = js.native
+  var rating: js.UndefOr[Double] = js.undefined
 }
 object PortalRatingProperties {
   

@@ -5,29 +5,29 @@ import typings.awsSdkTypes.responseMod.ResponseMetadata
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDecryptOutputMod {
   
-  @js.native
-  trait DecryptOutput extends OutputTypesUnion {
+  trait DecryptOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>ARN of the key used to perform the decryption. This value is returned if no errors are encountered during the operation.</p>
       */
-    var KeyId: js.UndefOr[String] = js.native
+    var KeyId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Decrypted plaintext data. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not encoded.</p>
       */
-    var Plaintext: js.UndefOr[Uint8Array] = js.native
+    var Plaintext: js.UndefOr[Uint8Array] = js.undefined
   }
   object DecryptOutput {
     

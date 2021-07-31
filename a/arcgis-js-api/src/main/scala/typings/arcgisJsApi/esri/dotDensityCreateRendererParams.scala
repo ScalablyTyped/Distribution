@@ -5,81 +5,81 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait dotDensityCreateRendererParams extends Object {
+trait dotDensityCreateRendererParams
+  extends StObject
+     with Object {
   
   /**
     * A set of complementary numeric fields/expressions used as the basis of the dot density visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
-  var attributes: js.Array[dotDensityCreateRendererParamsAttributes] = js.native
+  var attributes: js.Array[dotDensityCreateRendererParamsAttributes]
   
   /**
     * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
-  var basemap: js.UndefOr[String | Basemap] = js.native
+  var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
     * Indicates whether to enable color blending of different colored dots rendered at the same pixel.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
-  var dotBlendingEnabled: js.UndefOr[Boolean] = js.native
+  var dotBlendingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * In authoring apps, the user may select a pre-defined dot density scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
-  var dotDensityScheme: js.UndefOr[DotDensityScheme] = js.native
+  var dotDensityScheme: js.UndefOr[DotDensityScheme] = js.undefined
   
   /**
     * Indicates whether to vary the value of each dot by the view's scale.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
-  var dotValueOptimizationEnabled: js.UndefOr[Boolean] = js.native
+  var dotValueOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The **polygon** layer for which the visualization is generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
-  var layer: FeatureLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | GeoJSONLayer
   
   /**
     * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
-  var legendOptions: js.UndefOr[dotDensityCreateRendererParamsLegendOptions] = js.native
+  var legendOptions: js.UndefOr[dotDensityCreateRendererParamsLegendOptions] = js.undefined
   
   /**
     * Indicates whether the polygon outline width should vary based on view scale.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
-  var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.native
+  var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows for cancelable requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * The MapView instance in which the visualization will be rendered.
     *
     * [Read more...](global.html)
     */
-  var view: MapView = js.native
+  var view: MapView
 }
 object dotDensityCreateRendererParams {
   

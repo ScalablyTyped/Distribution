@@ -2,21 +2,19 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectTypeTargetsForBrowsing extends StObject {
   
-  def Add(Index: Double, ObjectTypeTargetForBrowsing: IObjectTypeTargetForBrowsing): Unit = js.native
+  def Add(Index: Double, ObjectTypeTargetForBrowsing: IObjectTypeTargetForBrowsing): Unit
   
-  def Clone(): IObjectTypeTargetsForBrowsing = js.native
+  def Clone(): IObjectTypeTargetsForBrowsing
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): IObjectTypeTargetForBrowsing = js.native
+  def Item(Index: Double): IObjectTypeTargetForBrowsing
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
 }
 object IObjectTypeTargetsForBrowsing {
   

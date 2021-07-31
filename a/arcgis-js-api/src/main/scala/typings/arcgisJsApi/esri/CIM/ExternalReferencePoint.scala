@@ -2,21 +2,21 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExternalReferencePoint extends ExternalReferenceGeometry {
+trait ExternalReferencePoint
+  extends StObject
+     with ExternalReferenceGeometry {
   
-  var m: js.UndefOr[Double] = js.native
+  var m: js.UndefOr[Double] = js.undefined
   
-  var spatialReference: js.UndefOr[ExternalReferenceSpatialReference] = js.native
+  var spatialReference: js.UndefOr[ExternalReferenceSpatialReference] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
-  var z: js.UndefOr[Double] = js.native
+  var z: js.UndefOr[Double] = js.undefined
 }
 object ExternalReferencePoint {
   

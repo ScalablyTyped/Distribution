@@ -2,15 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposRequestPagesBuildResponseData extends StObject {
   
-  var status: String = js.native
+  var status: String
   
-  var url: String = js.native
+  var url: String
 }
 object ReposRequestPagesBuildResponseData {
   

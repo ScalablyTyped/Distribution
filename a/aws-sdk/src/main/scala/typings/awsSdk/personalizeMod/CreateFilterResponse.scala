@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFilterResponse extends StObject {
   
   /**
     * The ARN of the new filter.
     */
-  var filterArn: js.UndefOr[Arn] = js.native
+  var filterArn: js.UndefOr[Arn] = js.undefined
 }
 object CreateFilterResponse {
   

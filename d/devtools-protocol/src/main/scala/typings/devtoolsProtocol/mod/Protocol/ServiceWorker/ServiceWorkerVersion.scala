@@ -3,36 +3,34 @@ package typings.devtoolsProtocol.mod.Protocol.ServiceWorker
 import typings.devtoolsProtocol.mod.Protocol.Target.TargetID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceWorkerVersion extends StObject {
   
-  var controlledClients: js.UndefOr[js.Array[TargetID]] = js.native
+  var controlledClients: js.UndefOr[js.Array[TargetID]] = js.undefined
   
-  var registrationId: RegistrationID = js.native
+  var registrationId: RegistrationID
   
-  var runningStatus: ServiceWorkerVersionRunningStatus = js.native
+  var runningStatus: ServiceWorkerVersionRunningStatus
   
   /**
     * The Last-Modified header value of the main script.
     */
-  var scriptLastModified: js.UndefOr[Double] = js.native
+  var scriptLastModified: js.UndefOr[Double] = js.undefined
   
   /**
     * The time at which the response headers of the main script were received from the server.
     * For cached script it is the last time the cache entry was validated.
     */
-  var scriptResponseTime: js.UndefOr[Double] = js.native
+  var scriptResponseTime: js.UndefOr[Double] = js.undefined
   
-  var scriptURL: String = js.native
+  var scriptURL: String
   
-  var status: ServiceWorkerVersionStatus = js.native
+  var status: ServiceWorkerVersionStatus
   
-  var targetId: js.UndefOr[TargetID] = js.native
+  var targetId: js.UndefOr[TargetID] = js.undefined
   
-  var versionId: String = js.native
+  var versionId: String
 }
 object ServiceWorkerVersion {
   

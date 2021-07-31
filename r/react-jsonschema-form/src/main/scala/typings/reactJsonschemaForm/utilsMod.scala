@@ -16,319 +16,243 @@ import typings.reactJsonschemaForm.mod.Widget
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
+  
+  @JSImport("react-jsonschema-form/lib/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-jsonschema-form/lib/utils", "ADDITIONAL_PROPERTY_FLAG")
   @js.native
   val ADDITIONAL_PROPERTY_FLAG: String = js.native
   
-  @JSImport("react-jsonschema-form/lib/utils", "allowAdditionalItems")
-  @js.native
-  def allowAdditionalItems(schema: JSONSchema6): Boolean = js.native
+  @scala.inline
+  def allowAdditionalItems(schema: JSONSchema6): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowAdditionalItems")(schema.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-jsonschema-form/lib/utils", "asNumber")
-  @js.native
-  def asNumber(): js.UndefOr[Double | String | Null] = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "asNumber")
-  @js.native
-  def asNumber(value: String): js.UndefOr[Double | String | Null] = js.native
+  @scala.inline
+  def asNumber(): js.UndefOr[Double | String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("asNumber")().asInstanceOf[js.UndefOr[Double | String | Null]]
+  @scala.inline
+  def asNumber(value: String): js.UndefOr[Double | String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("asNumber")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double | String | Null]]
   
-  @JSImport("react-jsonschema-form/lib/utils", "computeDefaults")
-  @js.native
+  @scala.inline
   def computeDefaults[T](
     schema: JSONSchema6,
     parentDefaults: js.Array[js.UndefOr[JSONSchema6Type]],
     definitions: StringDictionary[js.Any]
-  ): js.Array[js.UndefOr[JSONSchema6Type]] = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "computeDefaults")
-  @js.native
+  ): js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaults")(schema.asInstanceOf[js.Any], parentDefaults.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.UndefOr[JSONSchema6Type]]]
+  @scala.inline
   def computeDefaults[T](
     schema: JSONSchema6,
     parentDefaults: js.Array[js.UndefOr[JSONSchema6Type]],
     definitions: StringDictionary[js.Any],
     rawFormData: T
-  ): js.Array[js.UndefOr[JSONSchema6Type]] = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "computeDefaults")
-  @js.native
+  ): js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaults")(schema.asInstanceOf[js.Any], parentDefaults.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], rawFormData.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.UndefOr[JSONSchema6Type]]]
+  @scala.inline
   def computeDefaults[T](
     schema: JSONSchema6,
     parentDefaults: js.Array[js.UndefOr[JSONSchema6Type]],
     definitions: StringDictionary[js.Any],
     rawFormData: T,
     includeUndefinedValues: Boolean
-  ): js.Array[js.UndefOr[JSONSchema6Type]] = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "computeDefaults")
-  @js.native
+  ): js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaults")(schema.asInstanceOf[js.Any], parentDefaults.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], rawFormData.asInstanceOf[js.Any], includeUndefinedValues.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.UndefOr[JSONSchema6Type]]]
+  @scala.inline
   def computeDefaults[T](
     schema: JSONSchema6,
     parentDefaults: js.Array[js.UndefOr[JSONSchema6Type]],
     definitions: StringDictionary[js.Any],
-    rawFormData: js.UndefOr[scala.Nothing],
+    rawFormData: Unit,
     includeUndefinedValues: Boolean
-  ): js.Array[js.UndefOr[JSONSchema6Type]] = js.native
+  ): js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaults")(schema.asInstanceOf[js.Any], parentDefaults.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], rawFormData.asInstanceOf[js.Any], includeUndefinedValues.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.UndefOr[JSONSchema6Type]]]
   
-  @JSImport("react-jsonschema-form/lib/utils", "dataURItoBlob")
-  @js.native
-  def dataURItoBlob(dataURI: String): Blob = js.native
+  @scala.inline
+  def dataURItoBlob(dataURI: String): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("dataURItoBlob")(dataURI.asInstanceOf[js.Any]).asInstanceOf[Blob]
   
-  @JSImport("react-jsonschema-form/lib/utils", "deepEquals")
-  @js.native
-  def deepEquals[T](a: T, b: T): Boolean = js.native
+  @scala.inline
+  def deepEquals[T](a: T, b: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("react-jsonschema-form/lib/utils", "getDefaultFormState")
-  @js.native
-  def getDefaultFormState[T](schema: JSONSchema6, formData: T): T | js.Array[js.UndefOr[JSONSchema6Type]] = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "getDefaultFormState")
-  @js.native
-  def getDefaultFormState[T](
-    schema: JSONSchema6,
-    formData: T,
-    definitions: js.UndefOr[scala.Nothing],
-    includeUndefinedValues: Boolean
-  ): T | js.Array[js.UndefOr[JSONSchema6Type]] = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "getDefaultFormState")
-  @js.native
-  def getDefaultFormState[T](schema: JSONSchema6, formData: T, definitions: StringDictionary[js.Any]): T | js.Array[js.UndefOr[JSONSchema6Type]] = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "getDefaultFormState")
-  @js.native
+  @scala.inline
+  def getDefaultFormState[T](schema: JSONSchema6, formData: T): T | js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormState")(schema.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[T | js.Array[js.UndefOr[JSONSchema6Type]]]
+  @scala.inline
+  def getDefaultFormState[T](schema: JSONSchema6, formData: T, definitions: StringDictionary[js.Any]): T | js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormState")(schema.asInstanceOf[js.Any], formData.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[T | js.Array[js.UndefOr[JSONSchema6Type]]]
+  @scala.inline
   def getDefaultFormState[T](
     schema: JSONSchema6,
     formData: T,
     definitions: StringDictionary[js.Any],
     includeUndefinedValues: Boolean
-  ): T | js.Array[js.UndefOr[JSONSchema6Type]] = js.native
+  ): T | js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormState")(schema.asInstanceOf[js.Any], formData.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], includeUndefinedValues.asInstanceOf[js.Any])).asInstanceOf[T | js.Array[js.UndefOr[JSONSchema6Type]]]
+  @scala.inline
+  def getDefaultFormState[T](schema: JSONSchema6, formData: T, definitions: Unit, includeUndefinedValues: Boolean): T | js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormState")(schema.asInstanceOf[js.Any], formData.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], includeUndefinedValues.asInstanceOf[js.Any])).asInstanceOf[T | js.Array[js.UndefOr[JSONSchema6Type]]]
   
-  @JSImport("react-jsonschema-form/lib/utils", "getDefaultRegistry")
-  @js.native
-  def getDefaultRegistry(): Definitions = js.native
+  @scala.inline
+  def getDefaultRegistry(): Definitions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultRegistry")().asInstanceOf[Definitions]
   
-  @JSImport("react-jsonschema-form/lib/utils", "getMatchingOption")
-  @js.native
-  def getMatchingOption(formData: js.Any, options: js.Array[JSONSchema6], definitions: StringDictionary[js.Any]): Double = js.native
+  @scala.inline
+  def getMatchingOption(formData: js.Any, options: js.Array[JSONSchema6], definitions: StringDictionary[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatchingOption")(formData.asInstanceOf[js.Any], options.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-jsonschema-form/lib/utils", "getSchemaType")
-  @js.native
-  def getSchemaType(schema: JSONSchema6): String = js.native
+  @scala.inline
+  def getSchemaType(schema: JSONSchema6): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemaType")(schema.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("react-jsonschema-form/lib/utils", "getUiOptions")
-  @js.native
-  def getUiOptions(uiSchema: UiSchema): js.UndefOr[StringDictionary[Boolean | Double | String | js.Object | js.Array[_] | Null]] = js.native
+  @scala.inline
+  def getUiOptions(uiSchema: UiSchema): js.UndefOr[
+    StringDictionary[Boolean | Double | String | js.Object | js.Array[js.Any] | Null]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUiOptions")(uiSchema.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
+    StringDictionary[Boolean | Double | String | js.Object | js.Array[js.Any] | Null]
+  ]]
   
-  @JSImport("react-jsonschema-form/lib/utils", "getWidget")
-  @js.native
-  def getWidget(schema: JSONSchema6, widget: String): Widget = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "getWidget")
-  @js.native
-  def getWidget(schema: JSONSchema6, widget: String, registeredWidgets: StringDictionary[Widget]): Widget = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "getWidget")
-  @js.native
-  def getWidget(schema: JSONSchema6, widget: Widget): Widget = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "getWidget")
-  @js.native
-  def getWidget(schema: JSONSchema6, widget: Widget, registeredWidgets: StringDictionary[Widget]): Widget = js.native
+  @scala.inline
+  def getWidget(schema: JSONSchema6, widget: String): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("getWidget")(schema.asInstanceOf[js.Any], widget.asInstanceOf[js.Any])).asInstanceOf[Widget]
+  @scala.inline
+  def getWidget(schema: JSONSchema6, widget: String, registeredWidgets: StringDictionary[Widget]): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("getWidget")(schema.asInstanceOf[js.Any], widget.asInstanceOf[js.Any], registeredWidgets.asInstanceOf[js.Any])).asInstanceOf[Widget]
+  @scala.inline
+  def getWidget(schema: JSONSchema6, widget: Widget): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("getWidget")(schema.asInstanceOf[js.Any], widget.asInstanceOf[js.Any])).asInstanceOf[Widget]
+  @scala.inline
+  def getWidget(schema: JSONSchema6, widget: Widget, registeredWidgets: StringDictionary[Widget]): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("getWidget")(schema.asInstanceOf[js.Any], widget.asInstanceOf[js.Any], registeredWidgets.asInstanceOf[js.Any])).asInstanceOf[Widget]
   
-  @JSImport("react-jsonschema-form/lib/utils", "guessType")
-  @js.native
-  def guessType(value: js.Any): JSONSchema6TypeName = js.native
+  @scala.inline
+  def guessType(value: js.Any): JSONSchema6TypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("guessType")(value.asInstanceOf[js.Any]).asInstanceOf[JSONSchema6TypeName]
   
-  @JSImport("react-jsonschema-form/lib/utils", "hasWidget")
-  @js.native
-  def hasWidget(schema: JSONSchema6, widget: String): Boolean = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "hasWidget")
-  @js.native
-  def hasWidget(schema: JSONSchema6, widget: String, registeredWidgets: StringDictionary[Widget]): Boolean = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "hasWidget")
-  @js.native
-  def hasWidget(schema: JSONSchema6, widget: Widget): Boolean = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "hasWidget")
-  @js.native
-  def hasWidget(schema: JSONSchema6, widget: Widget, registeredWidgets: StringDictionary[Widget]): Boolean = js.native
+  @scala.inline
+  def hasWidget(schema: JSONSchema6, widget: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasWidget")(schema.asInstanceOf[js.Any], widget.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasWidget(schema: JSONSchema6, widget: String, registeredWidgets: StringDictionary[Widget]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasWidget")(schema.asInstanceOf[js.Any], widget.asInstanceOf[js.Any], registeredWidgets.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasWidget(schema: JSONSchema6, widget: Widget): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasWidget")(schema.asInstanceOf[js.Any], widget.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasWidget(schema: JSONSchema6, widget: Widget, registeredWidgets: StringDictionary[Widget]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasWidget")(schema.asInstanceOf[js.Any], widget.asInstanceOf[js.Any], registeredWidgets.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("react-jsonschema-form/lib/utils", "isConstant")
-  @js.native
-  def isConstant(schema: JSONSchema6): Boolean = js.native
+  @scala.inline
+  def isConstant(schema: JSONSchema6): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConstant")(schema.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-jsonschema-form/lib/utils", "isFilesArray")
-  @js.native
-  def isFilesArray(schema: JSONSchema6, uiSchema: UiSchema): Boolean = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "isFilesArray")
-  @js.native
-  def isFilesArray(schema: JSONSchema6, uiSchema: UiSchema, definitions: StringDictionary[js.Any]): Boolean = js.native
+  @scala.inline
+  def isFilesArray(schema: JSONSchema6, uiSchema: UiSchema): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFilesArray")(schema.asInstanceOf[js.Any], uiSchema.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isFilesArray(schema: JSONSchema6, uiSchema: UiSchema, definitions: StringDictionary[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFilesArray")(schema.asInstanceOf[js.Any], uiSchema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("react-jsonschema-form/lib/utils", "isFixedItems")
-  @js.native
-  def isFixedItems(schema: JSONSchema6): Boolean = js.native
+  @scala.inline
+  def isFixedItems(schema: JSONSchema6): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFixedItems")(schema.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-jsonschema-form/lib/utils", "isMultiSelect")
-  @js.native
-  def isMultiSelect(schema: JSONSchema6): Boolean = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "isMultiSelect")
-  @js.native
-  def isMultiSelect(schema: JSONSchema6, definitions: StringDictionary[js.Any]): Boolean = js.native
+  @scala.inline
+  def isMultiSelect(schema: JSONSchema6): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultiSelect")(schema.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isMultiSelect(schema: JSONSchema6, definitions: StringDictionary[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMultiSelect")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("react-jsonschema-form/lib/utils", "isObject")
-  @js.native
-  def isObject(thing: js.Any): Boolean = js.native
+  @scala.inline
+  def isObject(thing: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(thing.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-jsonschema-form/lib/utils", "isSelect")
-  @js.native
-  def isSelect(_schema: JSONSchema6): Boolean = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "isSelect")
-  @js.native
-  def isSelect(_schema: JSONSchema6, definitions: StringDictionary[js.Any]): Boolean = js.native
+  @scala.inline
+  def isSelect(_schema: JSONSchema6): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelect")(_schema.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isSelect(_schema: JSONSchema6, definitions: StringDictionary[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSelect")(_schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("react-jsonschema-form/lib/utils", "mergeObjects")
-  @js.native
-  def mergeObjects(obj1: js.Object, obj2: js.Object): js.Object = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "mergeObjects")
-  @js.native
-  def mergeObjects(obj1: js.Object, obj2: js.Object, concatArrays: Boolean): js.Object = js.native
+  @scala.inline
+  def mergeObjects(obj1: js.Object, obj2: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeObjects")(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def mergeObjects(obj1: js.Object, obj2: js.Object, concatArrays: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeObjects")(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any], concatArrays.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("react-jsonschema-form/lib/utils", "optionsList")
-  @js.native
-  def optionsList(schema: JSONSchema6): js.Array[Label] = js.native
+  @scala.inline
+  def optionsList(schema: JSONSchema6): js.Array[Label] = ^.asInstanceOf[js.Dynamic].applyDynamic("optionsList")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[Label]]
   
-  @JSImport("react-jsonschema-form/lib/utils", "orderProperties")
-  @js.native
-  def orderProperties(properties: js.Array[js.Any], order: js.Array[js.Any]): js.Array[js.Any] = js.native
+  @scala.inline
+  def orderProperties(properties: js.Array[js.Any], order: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderProperties")(properties.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("react-jsonschema-form/lib/utils", "pad")
-  @js.native
-  def pad(num: Double, size: Double): String = js.native
+  @scala.inline
+  def pad(num: Double, size: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(num.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("react-jsonschema-form/lib/utils", "parseDateString")
-  @js.native
-  def parseDateString(dateString: String): DateObject = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "parseDateString")
-  @js.native
-  def parseDateString(dateString: String, includeTime: Boolean): DateObject = js.native
+  @scala.inline
+  def parseDateString(dateString: String): DateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDateString")(dateString.asInstanceOf[js.Any]).asInstanceOf[DateObject]
+  @scala.inline
+  def parseDateString(dateString: String, includeTime: Boolean): DateObject = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDateString")(dateString.asInstanceOf[js.Any], includeTime.asInstanceOf[js.Any])).asInstanceOf[DateObject]
   
-  @JSImport("react-jsonschema-form/lib/utils", "rangeSpec")
-  @js.native
-  def rangeSpec(schema: JSONSchema6): IRangeSpec = js.native
+  @scala.inline
+  def rangeSpec(schema: JSONSchema6): IRangeSpec = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeSpec")(schema.asInstanceOf[js.Any]).asInstanceOf[IRangeSpec]
   
-  @JSImport("react-jsonschema-form/lib/utils", "resolveSchema")
-  @js.native
-  def resolveSchema[T](schema: JSONSchema6Definition): JSONSchema6 = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "resolveSchema")
-  @js.native
-  def resolveSchema[T](schema: JSONSchema6Definition, definitions: js.UndefOr[scala.Nothing], formData: T): JSONSchema6 = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "resolveSchema")
-  @js.native
-  def resolveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[js.Any]): JSONSchema6 = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "resolveSchema")
-  @js.native
-  def resolveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[js.Any], formData: T): JSONSchema6 = js.native
+  @scala.inline
+  def resolveSchema[T](schema: JSONSchema6Definition): JSONSchema6 = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[JSONSchema6]
+  @scala.inline
+  def resolveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[js.Any]): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
+  @scala.inline
+  def resolveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[js.Any], formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
+  @scala.inline
+  def resolveSchema[T](schema: JSONSchema6Definition, definitions: Unit, formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
   
-  @JSImport("react-jsonschema-form/lib/utils", "retrieveSchema")
-  @js.native
-  def retrieveSchema[T](schema: JSONSchema6Definition): JSONSchema6 = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "retrieveSchema")
-  @js.native
-  def retrieveSchema[T](schema: JSONSchema6Definition, definitions: js.UndefOr[scala.Nothing], formData: T): JSONSchema6 = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "retrieveSchema")
-  @js.native
-  def retrieveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[js.Any]): JSONSchema6 = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "retrieveSchema")
-  @js.native
-  def retrieveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[js.Any], formData: T): JSONSchema6 = js.native
+  @scala.inline
+  def retrieveSchema[T](schema: JSONSchema6Definition): JSONSchema6 = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieveSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[JSONSchema6]
+  @scala.inline
+  def retrieveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[js.Any]): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
+  @scala.inline
+  def retrieveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[js.Any], formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
+  @scala.inline
+  def retrieveSchema[T](schema: JSONSchema6Definition, definitions: Unit, formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
   
-  @JSImport("react-jsonschema-form/lib/utils", "setState")
-  @js.native
-  def setState(instance: Component[js.Object, js.Object, _], state: js.Any, callback: js.Function): Unit = js.native
+  @scala.inline
+  def setState(instance: Component[js.Object, js.Object, js.Any], state: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setState")(instance.asInstanceOf[js.Any], state.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-jsonschema-form/lib/utils", "shouldRender")
-  @js.native
-  def shouldRender(comp: Component[js.Object, js.Object, _], nextProps: js.Any, nextState: js.Any): Boolean = js.native
+  @scala.inline
+  def shouldRender(comp: Component[js.Object, js.Object, js.Any], nextProps: js.Any, nextState: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldRender")(comp.asInstanceOf[js.Any], nextProps.asInstanceOf[js.Any], nextState.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("react-jsonschema-form/lib/utils", "stubExistingAdditionalProperties")
-  @js.native
-  def stubExistingAdditionalProperties[T](schema: JSONSchema6): JSONSchema6 = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "stubExistingAdditionalProperties")
-  @js.native
-  def stubExistingAdditionalProperties[T](schema: JSONSchema6, definitions: js.UndefOr[scala.Nothing], formData: T): JSONSchema6 = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "stubExistingAdditionalProperties")
-  @js.native
-  def stubExistingAdditionalProperties[T](schema: JSONSchema6, definitions: StringDictionary[js.Any]): JSONSchema6 = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "stubExistingAdditionalProperties")
-  @js.native
-  def stubExistingAdditionalProperties[T](schema: JSONSchema6, definitions: StringDictionary[js.Any], formData: T): JSONSchema6 = js.native
+  @scala.inline
+  def stubExistingAdditionalProperties[T](schema: JSONSchema6): JSONSchema6 = ^.asInstanceOf[js.Dynamic].applyDynamic("stubExistingAdditionalProperties")(schema.asInstanceOf[js.Any]).asInstanceOf[JSONSchema6]
+  @scala.inline
+  def stubExistingAdditionalProperties[T](schema: JSONSchema6, definitions: StringDictionary[js.Any]): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("stubExistingAdditionalProperties")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
+  @scala.inline
+  def stubExistingAdditionalProperties[T](schema: JSONSchema6, definitions: StringDictionary[js.Any], formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("stubExistingAdditionalProperties")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
+  @scala.inline
+  def stubExistingAdditionalProperties[T](schema: JSONSchema6, definitions: Unit, formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("stubExistingAdditionalProperties")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
   
-  @JSImport("react-jsonschema-form/lib/utils", "toConstant")
-  @js.native
-  def toConstant(schema: JSONSchema6): js.UndefOr[JSONSchema6Type | Error] = js.native
+  @scala.inline
+  def toConstant(schema: JSONSchema6): js.UndefOr[JSONSchema6Type | Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("toConstant")(schema.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[JSONSchema6Type | Error]]
   
-  @JSImport("react-jsonschema-form/lib/utils", "toDateString")
-  @js.native
-  def toDateString(dateObject: DateObject): String = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "toDateString")
-  @js.native
-  def toDateString(dateObject: DateObject, time: Boolean): String = js.native
+  @scala.inline
+  def toDateString(dateObject: DateObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateString")(dateObject.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toDateString(dateObject: DateObject, time: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDateString")(dateObject.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("react-jsonschema-form/lib/utils", "toIdSchema")
-  @js.native
-  def toIdSchema[T](schema: JSONSchema6Definition, id: String, definitions: StringDictionary[js.Any]): IdSchema[_] | js.Array[IdSchema[_]] = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "toIdSchema")
-  @js.native
-  def toIdSchema[T](schema: JSONSchema6Definition, id: String, definitions: StringDictionary[js.Any], formData: T): IdSchema[_] | js.Array[IdSchema[_]] = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "toIdSchema")
-  @js.native
+  @scala.inline
+  def toIdSchema[T](schema: JSONSchema6Definition, id: String, definitions: StringDictionary[js.Any]): IdSchema[js.Any] | js.Array[IdSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIdSchema")(schema.asInstanceOf[js.Any], id.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[IdSchema[js.Any] | js.Array[IdSchema[js.Any]]]
+  @scala.inline
+  def toIdSchema[T](schema: JSONSchema6Definition, id: String, definitions: StringDictionary[js.Any], formData: T): IdSchema[js.Any] | js.Array[IdSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIdSchema")(schema.asInstanceOf[js.Any], id.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[IdSchema[js.Any] | js.Array[IdSchema[js.Any]]]
+  @scala.inline
   def toIdSchema[T](
     schema: JSONSchema6Definition,
     id: String,
     definitions: StringDictionary[js.Any],
     formData: T,
     idPredix: String
-  ): IdSchema[_] | js.Array[IdSchema[_]] = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "toIdSchema")
-  @js.native
+  ): IdSchema[js.Any] | js.Array[IdSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIdSchema")(schema.asInstanceOf[js.Any], id.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any], idPredix.asInstanceOf[js.Any])).asInstanceOf[IdSchema[js.Any] | js.Array[IdSchema[js.Any]]]
+  @scala.inline
   def toIdSchema[T](
     schema: JSONSchema6Definition,
     id: String,
     definitions: StringDictionary[js.Any],
-    formData: js.UndefOr[scala.Nothing],
+    formData: Unit,
     idPredix: String
-  ): IdSchema[_] | js.Array[IdSchema[_]] = js.native
+  ): IdSchema[js.Any] | js.Array[IdSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIdSchema")(schema.asInstanceOf[js.Any], id.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any], idPredix.asInstanceOf[js.Any])).asInstanceOf[IdSchema[js.Any] | js.Array[IdSchema[js.Any]]]
   
-  @JSImport("react-jsonschema-form/lib/utils", "toPathSchema")
-  @js.native
-  def toPathSchema[T](
-    schema: JSONSchema6Definition,
-    name: js.UndefOr[scala.Nothing],
-    definitions: StringDictionary[js.Any]
-  ): PathSchema[_] | js.Array[PathSchema[_]] = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "toPathSchema")
-  @js.native
-  def toPathSchema[T](
-    schema: JSONSchema6Definition,
-    name: js.UndefOr[scala.Nothing],
-    definitions: StringDictionary[js.Any],
-    formData: T
-  ): PathSchema[_] | js.Array[PathSchema[_]] = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "toPathSchema")
-  @js.native
-  def toPathSchema[T](schema: JSONSchema6Definition, name: String, definitions: StringDictionary[js.Any]): PathSchema[_] | js.Array[PathSchema[_]] = js.native
-  @JSImport("react-jsonschema-form/lib/utils", "toPathSchema")
-  @js.native
-  def toPathSchema[T](schema: JSONSchema6Definition, name: String, definitions: StringDictionary[js.Any], formData: T): PathSchema[_] | js.Array[PathSchema[_]] = js.native
+  @scala.inline
+  def toPathSchema[T](schema: JSONSchema6Definition, name: String, definitions: StringDictionary[js.Any]): PathSchema[js.Any] | js.Array[PathSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPathSchema")(schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[PathSchema[js.Any] | js.Array[PathSchema[js.Any]]]
+  @scala.inline
+  def toPathSchema[T](schema: JSONSchema6Definition, name: String, definitions: StringDictionary[js.Any], formData: T): PathSchema[js.Any] | js.Array[PathSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPathSchema")(schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[PathSchema[js.Any] | js.Array[PathSchema[js.Any]]]
+  @scala.inline
+  def toPathSchema[T](schema: JSONSchema6Definition, name: Unit, definitions: StringDictionary[js.Any]): PathSchema[js.Any] | js.Array[PathSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPathSchema")(schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[PathSchema[js.Any] | js.Array[PathSchema[js.Any]]]
+  @scala.inline
+  def toPathSchema[T](schema: JSONSchema6Definition, name: Unit, definitions: StringDictionary[js.Any], formData: T): PathSchema[js.Any] | js.Array[PathSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPathSchema")(schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[PathSchema[js.Any] | js.Array[PathSchema[js.Any]]]
   
-  @js.native
   trait DateObject extends StObject {
     
-    var day: Double = js.native
+    var day: Double
     
-    var hour: Double = js.native
+    var hour: Double
     
-    var minute: Double = js.native
+    var minute: Double
     
-    var month: Double = js.native
+    var month: Double
     
-    var second: Double = js.native
+    var second: Double
     
-    var year: Double = js.native
+    var year: Double
   }
   object DateObject {
     
@@ -361,14 +285,13 @@ object utilsMod {
     }
   }
   
-  @js.native
   trait IRangeSpec extends StObject {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object IRangeSpec {
     

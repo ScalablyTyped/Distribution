@@ -2,7 +2,6 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,26 +9,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Site
   * interfaces
   */
-@js.native
 trait SiteTapp extends StObject {
   
-  var customUrl: String = js.native
+  var customUrl: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var internalName: String = js.native
+  var internalName: String
   
-  var isExclusiveView: Boolean = js.native
+  var isExclusiveView: Boolean
   
-  var isKioskMode: Boolean = js.native
+  var isKioskMode: Boolean
   
-  var isSubTapp: Boolean = js.native
+  var isSubTapp: Boolean
   
-  var showName: String = js.native
+  var showName: String
   
-  var sortId: Double = js.native
+  var sortId: Double
   
-  var userGroupIds: js.Array[Double] = js.native
+  var userGroupIds: js.Array[Double]
 }
 object SiteTapp {
   

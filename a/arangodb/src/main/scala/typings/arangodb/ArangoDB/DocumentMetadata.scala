@@ -2,17 +2,15 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentMetadata extends StObject {
   
-  var _id: String = js.native
+  var _id: String
   
-  var _key: String = js.native
+  var _key: String
   
-  var _rev: String = js.native
+  var _rev: String
 }
 object DocumentMetadata {
   

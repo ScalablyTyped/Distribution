@@ -3,15 +3,13 @@ package typings.jsrsasign.anon
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Uri extends StObject {
   
-  var array: js.UndefOr[js.Array[ASN1Object]] = js.native
+  var array: js.UndefOr[js.Array[ASN1Object]] = js.undefined
   
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object Uri {
   

@@ -2,7 +2,6 @@ package typings.xrm.Xrm.Controls
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait QuickFormControl
-  extends Control
+  extends StObject
+     with Control
      with UiFocusable
      with UiCanGetDisabledElement
      with UiCanSetDisabledElement

@@ -2,19 +2,17 @@ package typings.yup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestMessageParams extends StObject {
   
-  var label: String = js.native
+  var label: String
   
-  var originalValue: js.Any = js.native
+  var originalValue: js.Any
   
-  var path: String = js.native
+  var path: String
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object TestMessageParams {
   

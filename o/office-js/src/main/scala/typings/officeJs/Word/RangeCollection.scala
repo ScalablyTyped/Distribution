@@ -7,7 +7,6 @@ import typings.officeJs.Word.Interfaces.RangeCollectionData
 import typings.officeJs.Word.Interfaces.RangeCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.1]
   */
 @js.native
-trait RangeCollection extends ClientObject {
+trait RangeCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -46,7 +47,7 @@ trait RangeCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): RangeCollection = js.native
-  def load(options: RangeCollectionLoadOptions with CollectionLoadOptions): RangeCollection = js.native
+  def load(options: RangeCollectionLoadOptions & CollectionLoadOptions): RangeCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): RangeCollection = js.native
   def load(propertyNames: String): RangeCollection = js.native
   def load(propertyNames: js.Array[String]): RangeCollection = js.native

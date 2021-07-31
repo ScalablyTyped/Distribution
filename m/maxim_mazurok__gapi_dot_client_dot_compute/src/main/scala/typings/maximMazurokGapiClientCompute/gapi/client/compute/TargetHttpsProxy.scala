@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetHttpsProxy extends StObject {
   
   /**
@@ -15,26 +13,26 @@ trait TargetHttpsProxy extends StObject {
     * authorizationPolicy only applies to a global TargetHttpsProxy attached to globalForwardingRules with the loadBalancingScheme set to INTERNAL_SELF_MANAGED.
     * Note: This field currently has no impact.
     */
-  var authorizationPolicy: js.UndefOr[String] = js.native
+  var authorizationPolicy: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Creation timestamp in RFC3339 text format. */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /** An optional description of this resource. Provide this property when you create the resource. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Type of resource. Always compute#targetHttpsProxy for target HTTPS proxies. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63
     * characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a
     * dash, lowercase letter, or digit, except the last character, which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * This field only applies when the forwarding rule that references this target proxy has a loadBalancingScheme set to INTERNAL_SELF_MANAGED.
@@ -45,7 +43,7 @@ trait TargetHttpsProxy extends StObject {
     *
     * The default is false.
     */
-  var proxyBind: js.UndefOr[Boolean] = js.native
+  var proxyBind: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the QUIC override policy for this TargetHttpsProxy resource. This setting determines whether the load balancer attempts to negotiate QUIC with clients. You can specify
@@ -56,13 +54,13 @@ trait TargetHttpsProxy extends StObject {
     * - If the quic-override flag is not specified, NONE is implied.
     * -
     */
-  var quicOverride: js.UndefOr[String] = js.native
+  var quicOverride: js.UndefOr[String] = js.undefined
   
   /** [Output Only] URL of the region where the regional TargetHttpsProxy resides. This field is not applicable to global TargetHttpsProxies. */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Server-defined URL for the resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A URL referring to a networksecurity.ServerTlsPolicy resource that describes how the proxy should authenticate inbound traffic.
@@ -70,16 +68,16 @@ trait TargetHttpsProxy extends StObject {
     * If left blank, communications are not encrypted.
     * Note: This field currently has no impact.
     */
-  var serverTlsPolicy: js.UndefOr[String] = js.native
+  var serverTlsPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * URLs to SslCertificate resources that are used to authenticate connections between users and the load balancer. At least one SSL certificate must be specified. Currently, you may
     * specify up to 15 SSL certificates.
     */
-  var sslCertificates: js.UndefOr[js.Array[String]] = js.native
+  var sslCertificates: js.UndefOr[js.Array[String]] = js.undefined
   
   /** URL of SslPolicy resource that will be associated with the TargetHttpsProxy resource. If not set, the TargetHttpsProxy resource has no SSL policy configured. */
-  var sslPolicy: js.UndefOr[String] = js.native
+  var sslPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * A fully-qualified or valid partial URL to the UrlMap resource that defines the mapping from URL to the BackendService. For example, the following are all valid URLs for specifying a
@@ -88,7 +86,7 @@ trait TargetHttpsProxy extends StObject {
     * - projects/project/global/urlMaps/url-map
     * - global/urlMaps/url-map
     */
-  var urlMap: js.UndefOr[String] = js.native
+  var urlMap: js.UndefOr[String] = js.undefined
 }
 object TargetHttpsProxy {
   

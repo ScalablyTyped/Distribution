@@ -5,19 +5,19 @@ import typings.logkitty.typesMod.Entry
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formattersMod {
   
-  @JSImport("logkitty/build/formatters", "formatEntry")
+  @JSImport("logkitty/build/formatters", JSImport.Namespace)
   @js.native
-  def formatEntry(entry: Entry): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("logkitty/build/formatters", "formatError")
-  @js.native
-  def formatError(error: CodeError): String = js.native
-  @JSImport("logkitty/build/formatters", "formatError")
-  @js.native
-  def formatError(error: Error): String = js.native
+  @scala.inline
+  def formatEntry(entry: Entry): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def formatError(error: CodeError): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(error.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatError(error: Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(error.asInstanceOf[js.Any]).asInstanceOf[String]
 }

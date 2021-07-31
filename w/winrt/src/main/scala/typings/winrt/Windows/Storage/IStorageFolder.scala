@@ -4,11 +4,12 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStorageFolder extends IStorageItem {
+trait IStorageFolder
+  extends StObject
+     with IStorageItem {
   
   def createFileAsync(desiredName: String): IAsyncOperation[StorageFile] = js.native
   def createFileAsync(desiredName: String, options: CreationCollisionOption): IAsyncOperation[StorageFile] = js.native

@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntersectionObserverInit extends StObject {
   
-  var root: js.UndefOr[Element | Null] = js.native
+  var root: js.UndefOr[Element | Null] = js.undefined
   
-  var rootMargin: js.UndefOr[java.lang.String] = js.native
+  var rootMargin: js.UndefOr[java.lang.String] = js.undefined
   
-  var threshold: js.UndefOr[Double | js.Array[Double]] = js.native
+  var threshold: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
 object IntersectionObserverInit {
   

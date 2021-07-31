@@ -2,21 +2,21 @@ package typings.gitUrlParse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(url: String): GitUrl = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[GitUrl]
+  
   @JSImport("git-url-parse", JSImport.Namespace)
   @js.native
-  def apply(url: String): GitUrl = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("git-url-parse", "stringify")
-  @js.native
-  def stringify(url: GitUrl): String = js.native
-  @JSImport("git-url-parse", "stringify")
-  @js.native
-  def stringify(url: GitUrl, `type`: String): String = js.native
+  @scala.inline
+  def stringify(url: GitUrl): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(url: GitUrl, `type`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(url.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @js.native
   trait GitUrl extends StObject {

@@ -4,7 +4,6 @@ import typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil.MatchType
 import typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil.ValidationResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,9 +25,9 @@ trait PhoneNumberUtil extends StObject {
   def getLengthOfGeographicalAreaCode(number: PhoneNumber): Double = js.native
   
   def getNddPrefixForRegion(): js.UndefOr[String] = js.native
-  def getNddPrefixForRegion(regionCode: js.UndefOr[scala.Nothing], stripNonDigits: Boolean): js.UndefOr[String] = js.native
   def getNddPrefixForRegion(regionCode: String): js.UndefOr[String] = js.native
   def getNddPrefixForRegion(regionCode: String, stripNonDigits: Boolean): js.UndefOr[String] = js.native
+  def getNddPrefixForRegion(regionCode: Unit, stripNonDigits: Boolean): js.UndefOr[String] = js.native
   
   def getNumberType(phoneNumber: PhoneNumber): PhoneNumberType = js.native
   
@@ -66,9 +65,9 @@ trait PhoneNumberUtil extends StObject {
   def isValidNumberForRegion(phoneNumber: PhoneNumber, region: String): Boolean = js.native
   
   def parse(): PhoneNumber = js.native
-  def parse(number: js.UndefOr[scala.Nothing], region: String): PhoneNumber = js.native
   def parse(number: String): PhoneNumber = js.native
   def parse(number: String, region: String): PhoneNumber = js.native
+  def parse(number: Unit, region: String): PhoneNumber = js.native
   
   def parseAndKeepRawInput(number: String): PhoneNumber = js.native
   def parseAndKeepRawInput(number: String, regionCode: String): PhoneNumber = js.native
@@ -84,19 +83,29 @@ object PhoneNumberUtil {
   object MatchType extends StObject {
     
     @js.native
-    sealed trait EXACT_MATCH extends MatchType
+    sealed trait EXACT_MATCH
+      extends StObject
+         with MatchType
     
     @js.native
-    sealed trait NOT_A_NUMBER extends MatchType
+    sealed trait NOT_A_NUMBER
+      extends StObject
+         with MatchType
     
     @js.native
-    sealed trait NO_MATCH extends MatchType
+    sealed trait NO_MATCH
+      extends StObject
+         with MatchType
     
     @js.native
-    sealed trait NSN_MATCH extends MatchType
+    sealed trait NSN_MATCH
+      extends StObject
+         with MatchType
     
     @js.native
-    sealed trait SHORT_NSN_MATCH extends MatchType
+    sealed trait SHORT_NSN_MATCH
+      extends StObject
+         with MatchType
   }
   
   @js.native
@@ -106,15 +115,23 @@ object PhoneNumberUtil {
   object ValidationResult extends StObject {
     
     @js.native
-    sealed trait INVALID_COUNTRY_CODE extends ValidationResult
+    sealed trait INVALID_COUNTRY_CODE
+      extends StObject
+         with ValidationResult
     
     @js.native
-    sealed trait IS_POSSIBLE extends ValidationResult
+    sealed trait IS_POSSIBLE
+      extends StObject
+         with ValidationResult
     
     @js.native
-    sealed trait TOO_LONG extends ValidationResult
+    sealed trait TOO_LONG
+      extends StObject
+         with ValidationResult
     
     @js.native
-    sealed trait TOO_SHORT extends ValidationResult
+    sealed trait TOO_SHORT
+      extends StObject
+         with ValidationResult
   }
 }

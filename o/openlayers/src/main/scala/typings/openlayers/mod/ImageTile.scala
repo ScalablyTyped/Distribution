@@ -6,7 +6,6 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "ImageTile")
@@ -25,14 +24,14 @@ class ImageTile protected () extends Tile {
     tileCoord: TileCoord,
     state: State,
     src: String,
-    crossOrigin: js.UndefOr[scala.Nothing],
+    crossOrigin: String,
     tileLoadFunction: TileLoadFunctionType
   ) = this()
   def this(
     tileCoord: TileCoord,
     state: State,
     src: String,
-    crossOrigin: String,
+    crossOrigin: Unit,
     tileLoadFunction: TileLoadFunctionType
   ) = this()
   

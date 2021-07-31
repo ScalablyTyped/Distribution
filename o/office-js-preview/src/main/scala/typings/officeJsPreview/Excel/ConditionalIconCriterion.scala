@@ -9,7 +9,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Percent
 import typings.officeJsPreview.officeJsPreviewStrings.Percentile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.6]
   */
-@js.native
 trait ConditionalIconCriterion extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait ConditionalIconCriterion extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var customIcon: js.UndefOr[Icon] = js.native
+  var customIcon: js.UndefOr[Icon] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait ConditionalIconCriterion extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var formula: String = js.native
+  var formula: String
   
   /**
     *
@@ -43,7 +41,7 @@ trait ConditionalIconCriterion extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var operator: ConditionalIconCriterionOperator | Invalid | GreaterThan | GreaterThanOrEqual = js.native
+  var operator: ConditionalIconCriterionOperator | Invalid | GreaterThan | GreaterThanOrEqual
   
   /**
     *
@@ -51,7 +49,7 @@ trait ConditionalIconCriterion extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var `type`: ConditionalFormatIconRuleType | Invalid | Number | Percent | Formula | Percentile = js.native
+  var `type`: ConditionalFormatIconRuleType | Invalid | Number | Percent | Formula | Percentile
 }
 object ConditionalIconCriterion {
   

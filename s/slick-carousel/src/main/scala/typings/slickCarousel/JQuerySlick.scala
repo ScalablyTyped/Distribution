@@ -30,126 +30,126 @@ import typings.slickCarousel.slickCarouselStrings.webkitvisibilitychange
 import typings.slickCarousel.slickCarouselStrings.window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JQuerySlick extends JQuerySlickInitials {
+trait JQuerySlick
+  extends StObject
+     with JQuerySlickInitials {
   
   /**
     * Default: $(element)
     */
   @JSName("$slider")
-  var $slider: JQuery = js.native
+  var $slider: JQuery
   
   /**
     * Default: null
     */
   @JSName("$slidesCache")
-  var $slidesCache: JQuery | Null = js.native
+  var $slidesCache: JQuery | Null
   
   /**
     * Default: null
     */
-  var activeBreakpoint: Double | Null = js.native
+  var activeBreakpoint: Double | Null
   
   /**
     * Default: null
     */
-  var animProp: Null = js.native
+  var animProp: Null
   
   /**
     * Default: null
     */
-  var animType: OTransform | MozTransform | webkitTransform | msTransform | transform | `false` | Null = js.native
+  var animType: OTransform | MozTransform | webkitTransform | msTransform | transform | `false` | Null
   
   /**
     * Default: {}
     */
-  var breakpointSettings: NumberDictionary[JQuerySlickOptions] = js.native
+  var breakpointSettings: NumberDictionary[JQuerySlickOptions]
   
   /**
     * Default: []
     */
-  var breakpoints: js.Array[Double] = js.native
+  var breakpoints: js.Array[Double]
   
   /**
     * Default: false
     */
-  var cssTransitions: Boolean = js.native
+  var cssTransitions: Boolean
   
-  var defaults: JQuerySlickOptions = js.native
+  var defaults: JQuerySlickOptions
   
   /**
     * Default: false
     */
-  var focussed: Boolean = js.native
+  var focussed: Boolean
   
   /**
     * Default: 'hidden'
     */
-  var hidden: mozHidden | webkitHidden | typings.slickCarousel.slickCarouselStrings.hidden = js.native
+  var hidden: mozHidden | webkitHidden | typings.slickCarousel.slickCarouselStrings.hidden
   
-  var initials: JQuerySlickInitials = js.native
+  var initials: JQuerySlickInitials
   
   /**
     * Default: false
     */
-  var interrupted: Boolean = js.native
+  var interrupted: Boolean
   
-  var options: JQuerySlickOptions = js.native
+  var options: JQuerySlickOptions
   
-  var originalSettings: JQuerySlickOptions = js.native
+  var originalSettings: JQuerySlickOptions
   
   /**
     * Default: true
     */
-  var paused: Boolean = js.native
+  var paused: Boolean
   
   /**
     * Default: null
     */
-  var positionProp: top | left | Null = js.native
+  var positionProp: top | left | Null
   
   /**
     * Default: null
     */
-  var respondTo: window | slider | min | Null = js.native
+  var respondTo: window | slider | min | Null
   
   /**
     * Default: 1
     */
-  var rowCount: Double = js.native
+  var rowCount: Double
   
   /**
     * Default: true
     */
-  var shouldClick: Boolean = js.native
+  var shouldClick: Boolean
   
   /**
     * Default: null
     */
-  var transformType: `-o-transform` | `-moz-transform` | `-webkit-transform` | `-ms-transform` | transition | Null = js.native
+  var transformType: `-o-transform` | `-moz-transform` | `-webkit-transform` | `-ms-transform` | transition | Null
   
   /**
     * Default: null
     */
-  var transitionType: OTransition | MozTransition | webkitTransition | msTransition | transition | Null = js.native
+  var transitionType: OTransition | MozTransition | webkitTransition | msTransition | transition | Null
   
   /**
     * Default: 'visibilitychange'
     */
-  var visibilityChange: visibilitychange | mozvisibilitychange | webkitvisibilitychange = js.native
+  var visibilityChange: visibilitychange | mozvisibilitychange | webkitvisibilitychange
   
   /**
     * Default: null
     */
-  var windowTimer: Double | Null = js.native
+  var windowTimer: Double | Null
   
   /**
     * Default: 0
     */
-  var windowWidth: Double = js.native
+  var windowWidth: Double
 }
 object JQuerySlick {
   
@@ -187,7 +187,7 @@ object JQuerySlick {
     visibilityChange: visibilitychange | mozvisibilitychange | webkitvisibilitychange,
     windowWidth: Double
   ): JQuerySlick = {
-    val __obj = js.Dynamic.literal($list = $list.asInstanceOf[js.Any], $slider = $slider.asInstanceOf[js.Any], animProp = animProp.asInstanceOf[js.Any], animating = animating.asInstanceOf[js.Any], breakpointSettings = breakpointSettings.asInstanceOf[js.Any], breakpoints = breakpoints.asInstanceOf[js.Any], cssTransitions = cssTransitions.asInstanceOf[js.Any], currentDirection = currentDirection.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], dragging = dragging.asInstanceOf[js.Any], focussed = focussed.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], initials = initials.asInstanceOf[js.Any], interrupted = interrupted.asInstanceOf[js.Any], loadIndex = loadIndex.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], originalSettings = originalSettings.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], scrolling = scrolling.asInstanceOf[js.Any], shouldClick = shouldClick.asInstanceOf[js.Any], slideOffset = slideOffset.asInstanceOf[js.Any], sliding = sliding.asInstanceOf[js.Any], swiping = swiping.asInstanceOf[js.Any], touchObject = touchObject.asInstanceOf[js.Any], transformsEnabled = transformsEnabled.asInstanceOf[js.Any], unslicked = unslicked.asInstanceOf[js.Any], visibilityChange = visibilityChange.asInstanceOf[js.Any], windowWidth = windowWidth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal($list = $list.asInstanceOf[js.Any], $slider = $slider.asInstanceOf[js.Any], animProp = animProp.asInstanceOf[js.Any], animating = animating.asInstanceOf[js.Any], breakpointSettings = breakpointSettings.asInstanceOf[js.Any], breakpoints = breakpoints.asInstanceOf[js.Any], cssTransitions = cssTransitions.asInstanceOf[js.Any], currentDirection = currentDirection.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], dragging = dragging.asInstanceOf[js.Any], focussed = focussed.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], initials = initials.asInstanceOf[js.Any], interrupted = interrupted.asInstanceOf[js.Any], loadIndex = loadIndex.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], originalSettings = originalSettings.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], scrolling = scrolling.asInstanceOf[js.Any], shouldClick = shouldClick.asInstanceOf[js.Any], slideOffset = slideOffset.asInstanceOf[js.Any], sliding = sliding.asInstanceOf[js.Any], swiping = swiping.asInstanceOf[js.Any], touchObject = touchObject.asInstanceOf[js.Any], transformsEnabled = transformsEnabled.asInstanceOf[js.Any], unslicked = unslicked.asInstanceOf[js.Any], visibilityChange = visibilityChange.asInstanceOf[js.Any], windowWidth = windowWidth.asInstanceOf[js.Any], $dots = null, $nextArrow = null, $prevArrow = null, $slideTrack = null, $slides = null, $slidesCache = null, activeBreakpoint = null, animType = null, autoPlayTimer = null, currentLeft = null, listHeight = null, listWidth = null, positionProp = null, respondTo = null, slideCount = null, slideWidth = null, swipeLeft = null, transformType = null, transitionType = null, windowTimer = null)
     __obj.asInstanceOf[JQuerySlick]
   }
   

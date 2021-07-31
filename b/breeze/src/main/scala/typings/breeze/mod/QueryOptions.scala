@@ -3,13 +3,13 @@ package typings.breeze.mod
 import typings.breeze.breeze.QueryOptionsConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("breeze", "QueryOptions")
 @js.native
 class QueryOptions ()
-  extends typings.breeze.breeze.QueryOptions {
+  extends StObject
+     with typings.breeze.breeze.QueryOptions {
   def this(config: QueryOptionsConfiguration) = this()
 }
 /* static members */

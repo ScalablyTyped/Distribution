@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.Radius
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "SphereGeometry")
@@ -13,22 +12,21 @@ class SphereGeometry () extends Packable {
 }
 object SphereGeometry {
   
-  /* static member */
-  @JSImport("cesium", "SphereGeometry.createGeometry")
+  @JSImport("cesium", "SphereGeometry")
   @js.native
-  def createGeometry(sphereGeometry: SphereGeometry): Geometry = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "SphereGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double]): SphereGeometry = js.native
-  @JSImport("cesium", "SphereGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: SphereGeometry): SphereGeometry = js.native
-  @JSImport("cesium", "SphereGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): SphereGeometry = js.native
-  @JSImport("cesium", "SphereGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: SphereGeometry): SphereGeometry = js.native
+  @scala.inline
+  def createGeometry(sphereGeometry: SphereGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(sphereGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  
+  /* static member */
+  @scala.inline
+  def unpack(array: js.Array[Double]): SphereGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[SphereGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double): SphereGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[SphereGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double, result: SphereGeometry): SphereGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[SphereGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Unit, result: SphereGeometry): SphereGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[SphereGeometry]
 }

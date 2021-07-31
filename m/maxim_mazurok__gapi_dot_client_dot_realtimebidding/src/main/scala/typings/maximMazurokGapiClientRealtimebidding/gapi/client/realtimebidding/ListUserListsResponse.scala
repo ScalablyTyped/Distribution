@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUserListsResponse extends StObject {
   
   /**
     * The continuation page token to send back to the server in a subsequent request. Due to a currently known issue, it is recommended that the caller keep invoking the list method till
     * the time a next page token is not returned (even if the result set is empty).
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** List of user lists from the search. */
-  var userLists: js.UndefOr[js.Array[UserList]] = js.native
+  var userLists: js.UndefOr[js.Array[UserList]] = js.undefined
 }
 object ListUserListsResponse {
   

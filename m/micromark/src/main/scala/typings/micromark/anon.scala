@@ -5,15 +5,15 @@ import typings.micromark.typesMod.Type
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Enter extends HtmlExtension {
+  trait Enter
+    extends StObject
+       with HtmlExtension {
     
-    var enter: Record[Type, js.Function0[Unit]] = js.native
+    var enter: Record[Type, js.Function0[Unit]]
   }
   object Enter {
     
@@ -31,11 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait EnterRecord
-    extends typings.micromark.libSharedTypesMod.HtmlExtension {
+    extends StObject
+       with typings.micromark.libSharedTypesMod.HtmlExtension {
     
-    var enter: Record[typings.micromark.constantTypesMod.Type, js.Function0[Unit]] = js.native
+    var enter: Record[typings.micromark.constantTypesMod.Type, js.Function0[Unit]]
   }
   object EnterRecord {
     
@@ -53,10 +53,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Exit extends HtmlExtension {
+  trait Exit
+    extends StObject
+       with HtmlExtension {
     
-    var exit: Record[Type, js.Function0[Unit]] = js.native
+    var exit: Record[Type, js.Function0[Unit]]
   }
   object Exit {
     
@@ -74,11 +75,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ExitRecord
-    extends typings.micromark.libSharedTypesMod.HtmlExtension {
+    extends StObject
+       with typings.micromark.libSharedTypesMod.HtmlExtension {
     
-    var exit: Record[typings.micromark.constantTypesMod.Type, js.Function0[Unit]] = js.native
+    var exit: Record[typings.micromark.constantTypesMod.Type, js.Function0[Unit]]
   }
   object ExitRecord {
     

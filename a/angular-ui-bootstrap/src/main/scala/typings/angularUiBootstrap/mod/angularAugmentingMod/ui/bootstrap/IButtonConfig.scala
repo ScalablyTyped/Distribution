@@ -2,21 +2,19 @@ package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IButtonConfig extends StObject {
   
   /**
     * @default: 'active'
     */
-  var activeClass: js.UndefOr[String] = js.native
+  var activeClass: js.UndefOr[String] = js.undefined
   
   /**
     * @default: 'Click'
     */
-  var toggleEvent: js.UndefOr[String] = js.native
+  var toggleEvent: js.UndefOr[String] = js.undefined
 }
 object IButtonConfig {
   

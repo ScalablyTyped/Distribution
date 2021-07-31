@@ -3,12 +3,19 @@ package typings.reduxPersist
 import typings.reduxPersist.typesMod.PersistConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autoMergeLevel1Mod {
   
-  @JSImport("redux-persist/es/stateReconciler/autoMergeLevel1", JSImport.Default)
+  @JSImport("redux-persist/es/stateReconciler/autoMergeLevel1", JSImport.Namespace)
   @js.native
-  def default[S](inboundState: S, originalState: S, reducedState: S, config: PersistConfig[S, _, _, _]): S = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[S](
+    inboundState: S,
+    originalState: S,
+    reducedState: S,
+    config: PersistConfig[S, js.Any, js.Any, js.Any]
+  ): S = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(inboundState.asInstanceOf[js.Any], originalState.asInstanceOf[js.Any], reducedState.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[S]
 }

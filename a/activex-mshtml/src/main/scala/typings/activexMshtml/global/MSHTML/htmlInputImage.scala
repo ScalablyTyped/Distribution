@@ -2,10 +2,10 @@ package typings.activexMshtml.global.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MSHTML.htmlInputImage")
 @js.native
 class htmlInputImage protected ()
-  extends typings.activexMshtml.MSHTML.htmlInputImage
+  extends StObject
+     with typings.activexMshtml.MSHTML.htmlInputImage

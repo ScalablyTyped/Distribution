@@ -11,7 +11,6 @@ import typings.std.HTMLSpanElement
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconMod extends Shortcut {
@@ -20,20 +19,19 @@ object iconMod extends Shortcut {
   @js.native
   val default: ForwardRefExoticComponent[PickIconComponentPropsari] = js.native
   
-  @js.native
   trait CustomIconComponentProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var fill: String = js.native
+    var fill: String
     
-    var height: String | Double = js.native
+    var height: String | Double
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var viewBox: js.UndefOr[String] = js.native
+    var viewBox: js.UndefOr[String] = js.undefined
     
-    var width: String | Double = js.native
+    var width: String | Double
   }
   object CustomIconComponentProps {
     
@@ -75,12 +73,13 @@ object iconMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait IconBaseProps extends HTMLProps[HTMLSpanElement] {
+  trait IconBaseProps
+    extends StObject
+       with HTMLProps[HTMLSpanElement] {
     
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
     
-    var spin: js.UndefOr[Boolean] = js.native
+    var spin: js.UndefOr[Boolean] = js.undefined
   }
   object IconBaseProps {
     
@@ -107,14 +106,15 @@ object iconMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait IconComponentProps extends IconBaseProps {
+  trait IconComponentProps
+    extends StObject
+       with IconBaseProps {
     
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]]] = js.native
+    var component: js.UndefOr[ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]]] = js.undefined
     
-    var viewBox: js.UndefOr[String] = js.native
+    var viewBox: js.UndefOr[String] = js.undefined
   }
   object IconComponentProps {
     

@@ -2,10 +2,8 @@ package typings.reactInstantsearchCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightResult[TDoc] extends StObject {
   
   /**
@@ -14,9 +12,9 @@ trait HighlightResult[TDoc] extends StObject {
     * any searchable attributes, this object will only contain those keys and others
     * will not exist.
     */
-  var _highlightResult: typings.reactInstantsearchCore.mod.HighlightResult[TDoc] = js.native
+  var _highlightResult: typings.reactInstantsearchCore.mod.HighlightResult[TDoc]
   
-  var objectID: String = js.native
+  var objectID: String
 }
 object HighlightResult {
   
@@ -27,7 +25,7 @@ object HighlightResult {
   }
   
   @scala.inline
-  implicit class HighlightResultMutableBuilder[Self <: HighlightResult[_], TDoc] (val x: Self with HighlightResult[TDoc]) extends AnyVal {
+  implicit class HighlightResultMutableBuilder[Self <: HighlightResult[?], TDoc] (val x: Self & HighlightResult[TDoc]) extends AnyVal {
     
     @scala.inline
     def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])

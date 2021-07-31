@@ -3,7 +3,6 @@ package typings.storybookComponents
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesetMod {
@@ -12,16 +11,15 @@ object typesetMod {
   @js.native
   val Typeset: FunctionComponent[TypesetProps] = js.native
   
-  @js.native
   trait TypesetProps extends StObject {
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSizes: js.Array[String] = js.native
+    var fontSizes: js.Array[String]
     
-    var fontWeight: js.UndefOr[Double] = js.native
+    var fontWeight: js.UndefOr[Double] = js.undefined
     
-    var sampleText: js.UndefOr[String] = js.native
+    var sampleText: js.UndefOr[String] = js.undefined
   }
   object TypesetProps {
     

@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectArrow
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
@@ -15,22 +14,22 @@ trait CIMGeometricEffectArrow
     */
   var geometricEffectArrowType: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectArrowType * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectArrow: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectArrow = js.native
+  var type_CIMGeometricEffectArrow: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectArrow
   
   /**
     * The distance between the lines that construct the body of the arrow.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object CIMGeometricEffectArrow {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectArrow): CIMGeometricEffectArrow = {
+  def apply(): CIMGeometricEffectArrow = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectArrow")
     __obj.asInstanceOf[CIMGeometricEffectArrow]
   }
   

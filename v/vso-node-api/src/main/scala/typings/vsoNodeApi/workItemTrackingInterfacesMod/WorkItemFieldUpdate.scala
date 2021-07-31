@@ -2,21 +2,19 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemFieldUpdate extends StObject {
   
   /**
     * The new value of the field.
     */
-  var newValue: js.Any = js.native
+  var newValue: js.Any
   
   /**
     * The old value of the field.
     */
-  var oldValue: js.Any = js.native
+  var oldValue: js.Any
 }
 object WorkItemFieldUpdate {
   

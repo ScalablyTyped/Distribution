@@ -3,29 +3,27 @@ package typings.reactBootstrapTypeahead.mod
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeaheadContext[T /* <: TypeaheadModel */] extends StObject {
   
-  var activeIndex: js.UndefOr[Double] = js.native
+  var activeIndex: js.UndefOr[Double] = js.undefined
   
-  var hintText: js.UndefOr[String] = js.native
+  var hintText: js.UndefOr[String] = js.undefined
   
-  var initialItem: js.UndefOr[T] = js.native
+  var initialItem: js.UndefOr[T] = js.undefined
   
-  var isOnlyResult: js.UndefOr[Boolean] = js.native
+  var isOnlyResult: js.UndefOr[Boolean] = js.undefined
   
-  var onActiveItemChange: js.UndefOr[js.Function1[/* options */ T, Unit]] = js.native
+  var onActiveItemChange: js.UndefOr[js.Function1[/* options */ T, Unit]] = js.undefined
   
-  var onAdd: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.native
+  var onAdd: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.undefined
   
-  var onInitialItemChange: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.native
+  var onInitialItemChange: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.undefined
   
-  var onMenuItemClick: js.UndefOr[js.Function2[/* option */ T, /* e */ Event, Unit]] = js.native
+  var onMenuItemClick: js.UndefOr[js.Function2[/* option */ T, /* e */ Event, Unit]] = js.undefined
   
-  var selectHintOnEnter: js.UndefOr[Boolean] = js.native
+  var selectHintOnEnter: js.UndefOr[Boolean] = js.undefined
 }
 object TypeaheadContext {
   
@@ -36,7 +34,7 @@ object TypeaheadContext {
   }
   
   @scala.inline
-  implicit class TypeaheadContextMutableBuilder[Self <: TypeaheadContext[_], T /* <: TypeaheadModel */] (val x: Self with TypeaheadContext[T]) extends AnyVal {
+  implicit class TypeaheadContextMutableBuilder[Self <: TypeaheadContext[?], T /* <: TypeaheadModel */] (val x: Self & TypeaheadContext[T]) extends AnyVal {
     
     @scala.inline
     def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])

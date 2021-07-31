@@ -75,22 +75,20 @@ import typings.antvDataSet.viewMod.ViewOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Edges extends StObject {
     
-    var edges: js.Array[_] = js.native
+    var edges: js.Array[js.Any]
     
-    var nodes: js.Array[_] = js.native
+    var nodes: js.Array[js.Any]
   }
   object Edges {
     
     @scala.inline
-    def apply(edges: js.Array[_], nodes: js.Array[_]): Edges = {
+    def apply(edges: js.Array[js.Any], nodes: js.Array[js.Any]): Edges = {
       val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Edges]
     }
@@ -99,35 +97,34 @@ object anon {
     implicit class EdgesMutableBuilder[Self <: Edges] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEdges(value: js.Array[_]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+      def setEdges(value: js.Array[js.Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEdgesVarargs(value: js.Any*): Self = StObject.set(x, "edges", js.Array(value :_*))
       
       @scala.inline
-      def setNodes(value: js.Array[_]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      def setNodes(value: js.Array[js.Any]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNodesVarargs(value: js.Any*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait GEO extends StObject {
     
-    var GEO: String = js.native
+    var GEO: String
     
-    var GEO_GRATICULE: String = js.native
+    var GEO_GRATICULE: String
     
-    var GRAPH: String = js.native
+    var GRAPH: String
     
-    var HEX: String = js.native
+    var HEX: String
     
-    var HIERARCHY: String = js.native
+    var HIERARCHY: String
     
-    var STATISTICS_METHODS: js.Array[String] = js.native
+    var STATISTICS_METHODS: js.Array[String]
     
-    var TABLE: String = js.native
+    var TABLE: String
   }
   object GEO {
     
@@ -174,13 +171,11 @@ object anon {
     }
   }
   
-  @js.native
   trait SankeyCenter extends StObject
   
-  @js.native
   trait Type[T /* <: filter | map | pick | rename | `rename-fields` | reverse | default | sort | sortBy | `sort-by` | subset | partition | group | groups | fold | `fill-rows` | fillRows | impute | aggregate | summary | percent | proportion | regression | kernelDotdensity | `kernel-smoothDotdensity` | kernelDotregression | `kernel-smoothDotregression` | binDothistogram | binDotdot | binDothexagon | binDothex | hexbin | binDotquantile | binDotrectangle | binDotrect | treemap | hierarchyDottreemap | adjacency | hierarchyDotpartition | voronoi | diagramDotvoronoi | diagramDotsankey | sankey | diagramDotarc | arc | geoDotregion | geoDotprojection | geoDotcentroid | `tag-cloud` | `word-cloud` */] extends StObject {
     
-    var `type`: T = js.native
+    var `type`: T
   }
   object Type {
     
@@ -192,17 +187,16 @@ object anon {
     }
     
     @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type[_], T /* <: filter | map | pick | rename | `rename-fields` | reverse | default | sort | sortBy | `sort-by` | subset | partition | group | groups | fold | `fill-rows` | fillRows | impute | aggregate | summary | percent | proportion | regression | kernelDotdensity | `kernel-smoothDotdensity` | kernelDotregression | `kernel-smoothDotregression` | binDothistogram | binDotdot | binDothexagon | binDothex | hexbin | binDotquantile | binDotrectangle | binDotrect | treemap | hierarchyDottreemap | adjacency | hierarchyDotpartition | voronoi | diagramDotvoronoi | diagramDotsankey | sankey | diagramDotarc | arc | geoDotregion | geoDotprojection | geoDotcentroid | `tag-cloud` | `word-cloud` */] (val x: Self with Type[T]) extends AnyVal {
+    implicit class TypeMutableBuilder[Self <: Type[?], T /* <: filter | map | pick | rename | `rename-fields` | reverse | default | sort | sortBy | `sort-by` | subset | partition | group | groups | fold | `fill-rows` | fillRows | impute | aggregate | summary | percent | proportion | regression | kernelDotdensity | `kernel-smoothDotdensity` | kernelDotregression | `kernel-smoothDotregression` | binDothistogram | binDotdot | binDothexagon | binDothex | hexbin | binDotquantile | binDotrectangle | binDotrect | treemap | hierarchyDottreemap | adjacency | hierarchyDotpartition | voronoi | diagramDotvoronoi | diagramDotsankey | sankey | diagramDotarc | arc | geoDotregion | geoDotprojection | geoDotcentroid | `tag-cloud` | `word-cloud` */] (val x: Self & Type[T]) extends AnyVal {
       
       @scala.inline
       def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait TypeT[T /* <: csv | tsv | dsv | graph | diagram | hex | hexjson_ | `hex-json` | HexJSON | geo | geojson_ | GeoJSON | hierarchy | tree | topojson_ | TopoJSON */] extends StObject {
     
-    var `type`: T = js.native
+    var `type`: T
   }
   object TypeT {
     
@@ -214,7 +208,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class TypeTMutableBuilder[Self <: TypeT[_], T /* <: csv | tsv | dsv | graph | diagram | hex | hexjson_ | `hex-json` | HexJSON | geo | geojson_ | GeoJSON | hierarchy | tree | topojson_ | TopoJSON */] (val x: Self with TypeT[T]) extends AnyVal {
+    implicit class TypeTMutableBuilder[Self <: TypeT[?], T /* <: csv | tsv | dsv | graph | diagram | hex | hexjson_ | `hex-json` | HexJSON | geo | geojson_ | GeoJSON | hierarchy | tree | topojson_ | TopoJSON */] (val x: Self & TypeT[T]) extends AnyVal {
       
       @scala.inline
       def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -223,7 +217,8 @@ object anon {
   
   @js.native
   trait TypeofDataSet
-    extends Instantiable0[DataSet]
+    extends StObject
+       with Instantiable0[DataSet]
        with Instantiable1[/* initialProps */ DataSetOptions, DataSet] {
     
     /**
@@ -234,49 +229,7 @@ object anon {
     /**
       * 注册的 Connector（key-value 对）
       */
-    var connectors: Record[String, _] = js.native
-    
-    def getConnector(name: String): js.Function = js.native
-    
-    def getTransform(): js.Function = js.native
-    def getTransform(name: String): js.Function = js.native
-    
-    /**
-      * 注册一个数据连接函数，注册后所有数据视图都可以使用 name 来引用这个数据连接函数，从而接入某种数据源。
-      * @param name - 类型
-      * @param connector - 解析逻辑
-      */
-    def registerConnector(name: String, connector: js.Function3[/* data */ js.Any, /* options */ js.Any, /* view */ View, _]): Unit = js.native
-    
-    /**
-      * 注册一个数据处理函数，注册后所有数据视图都可以使用 name 来引用这个数据处理函数，从而进行某种数据处理
-      * @param name - transform 类型
-      * @param transform - transform逻辑
-      */
-    def registerTransform(name: String, transform: js.Any): Unit = js.native
-    
-    /**
-      * 已注册的 Transform（key-value 对）
-      */
-    var transforms: Record[String, _] = js.native
-    
-    var version: String = js.native
-  }
-  
-  @js.native
-  trait TypeofDataSetInstantiable
-    extends Instantiable0[DataSet]
-       with Instantiable1[/* initialProps */ DataSetOptions, DataSet] {
-    
-    /**
-      * 常量，譬如 DataSet.CONSTANTS.HIERARCHY 是树形结构的名称
-      */
-    var CONSTANTS: GEO = js.native
-    
-    /**
-      * 注册的 Connector（key-value 对）
-      */
-    var connectors: Record[String, _] = js.native
+    var connectors: Record[String, js.Any] = js.native
     
     def getConnector(name: String): js.Function = js.native
     
@@ -290,7 +243,7 @@ object anon {
       */
     def registerConnector(
       name: String,
-      connector: js.Function3[/* data */ js.Any, /* options */ js.Any, /* view */ this.type, _]
+      connector: js.Function3[/* data */ js.Any, /* options */ js.Any, /* view */ View, js.Any]
     ): Unit = js.native
     
     /**
@@ -303,13 +256,60 @@ object anon {
     /**
       * 已注册的 Transform（key-value 对）
       */
-    var transforms: Record[String, _] = js.native
+    var transforms: Record[String, js.Any] = js.native
+    
+    var version: String = js.native
+  }
+  
+  @js.native
+  trait TypeofDataSetInstantiable
+    extends StObject
+       with Instantiable0[DataSet]
+       with Instantiable1[/* initialProps */ DataSetOptions, DataSet] {
+    
+    /**
+      * 常量，譬如 DataSet.CONSTANTS.HIERARCHY 是树形结构的名称
+      */
+    var CONSTANTS: GEO = js.native
+    
+    /**
+      * 注册的 Connector（key-value 对）
+      */
+    var connectors: Record[String, js.Any] = js.native
+    
+    def getConnector(name: String): js.Function = js.native
+    
+    def getTransform(): js.Function = js.native
+    def getTransform(name: String): js.Function = js.native
+    
+    /**
+      * 注册一个数据连接函数，注册后所有数据视图都可以使用 name 来引用这个数据连接函数，从而接入某种数据源。
+      * @param name - 类型
+      * @param connector - 解析逻辑
+      */
+    def registerConnector(
+      name: String,
+      connector: js.Function3[/* data */ js.Any, /* options */ js.Any, /* view */ this.type, js.Any]
+    ): Unit = js.native
+    
+    /**
+      * 注册一个数据处理函数，注册后所有数据视图都可以使用 name 来引用这个数据处理函数，从而进行某种数据处理
+      * @param name - transform 类型
+      * @param transform - transform逻辑
+      */
+    def registerTransform(name: String, transform: js.Any): Unit = js.native
+    
+    /**
+      * 已注册的 Transform（key-value 对）
+      */
+    var transforms: Record[String, js.Any] = js.native
     
     var version: String = js.native
   }
   
   @js.native
   trait TypeofView
-    extends Instantiable0[View]
+    extends StObject
+       with Instantiable0[View]
        with Instantiable1[/* options */ ViewOptions, View]
 }

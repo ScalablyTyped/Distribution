@@ -2,26 +2,24 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComplianceViolator extends StObject {
   
   /**
     * The resource ID.
     */
-  var ResourceId: js.UndefOr[typings.awsSdk.fmsMod.ResourceId] = js.native
+  var ResourceId: js.UndefOr[typings.awsSdk.fmsMod.ResourceId] = js.undefined
   
   /**
     * The resource type. This is in the format shown in the AWS Resource Types Reference. For example: AWS::ElasticLoadBalancingV2::LoadBalancer, AWS::CloudFront::Distribution, or AWS::NetworkFirewall::FirewallPolicy.
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.fmsMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.fmsMod.ResourceType] = js.undefined
   
   /**
     * The reason that the resource is not protected by the policy.
     */
-  var ViolationReason: js.UndefOr[typings.awsSdk.fmsMod.ViolationReason] = js.native
+  var ViolationReason: js.UndefOr[typings.awsSdk.fmsMod.ViolationReason] = js.undefined
 }
 object ComplianceViolator {
   

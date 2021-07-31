@@ -4,63 +4,84 @@ import typings.imageminWebp.mod.Metadata
 import typings.imageminWebp.mod.Preset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageminWebpStrings {
   
   @js.native
-  sealed trait default extends Preset
+  sealed trait default
+    extends StObject
+       with Preset
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait all extends Metadata
+  sealed trait all
+    extends StObject
+       with Metadata
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait drawing extends Preset
+  sealed trait drawing
+    extends StObject
+       with Preset
   @scala.inline
   def drawing: drawing = "drawing".asInstanceOf[drawing]
   
   @js.native
-  sealed trait exif extends Metadata
+  sealed trait exif
+    extends StObject
+       with Metadata
   @scala.inline
   def exif: exif = "exif".asInstanceOf[exif]
   
   @js.native
-  sealed trait icc extends Metadata
+  sealed trait icc
+    extends StObject
+       with Metadata
   @scala.inline
   def icc: icc = "icc".asInstanceOf[icc]
   
   @js.native
-  sealed trait icon extends Preset
+  sealed trait icon
+    extends StObject
+       with Preset
   @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
   
   @js.native
-  sealed trait none extends Metadata
+  sealed trait none
+    extends StObject
+       with Metadata
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait photo extends Preset
+  sealed trait photo
+    extends StObject
+       with Preset
   @scala.inline
   def photo: photo = "photo".asInstanceOf[photo]
   
   @js.native
-  sealed trait picture extends Preset
+  sealed trait picture
+    extends StObject
+       with Preset
   @scala.inline
   def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
-  sealed trait text extends Preset
+  sealed trait text
+    extends StObject
+       with Preset
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait xmp extends Metadata
+  sealed trait xmp
+    extends StObject
+       with Metadata
   @scala.inline
   def xmp: xmp = "xmp".asInstanceOf[xmp]
 }

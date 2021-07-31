@@ -2,36 +2,34 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BounceAction extends StObject {
   
   /**
     * Human-readable text to include in the bounce message.
     */
-  var Message: BounceMessage = js.native
+  var Message: BounceMessage
   
   /**
     * The email address of the sender of the bounced email. This is the address from which the bounce message will be sent.
     */
-  var Sender: Address = js.native
+  var Sender: Address
   
   /**
     * The SMTP reply code, as defined by RFC 5321.
     */
-  var SmtpReplyCode: BounceSmtpReplyCode = js.native
+  var SmtpReplyCode: BounceSmtpReplyCode
   
   /**
     * The SMTP enhanced status code, as defined by RFC 3463.
     */
-  var StatusCode: js.UndefOr[BounceStatusCode] = js.native
+  var StatusCode: js.UndefOr[BounceStatusCode] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon SNS topic to notify when the bounce action is taken. An example of an Amazon SNS topic ARN is arn:aws:sns:us-west-2:123456789012:MyTopic. For more information about Amazon SNS topics, see the Amazon SNS Developer Guide.
     */
-  var TopicArn: js.UndefOr[AmazonResourceName] = js.native
+  var TopicArn: js.UndefOr[AmazonResourceName] = js.undefined
 }
 object BounceAction {
   

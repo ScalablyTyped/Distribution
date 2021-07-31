@@ -10,9 +10,9 @@ A react renderer for blessed.
 | ------------------ | :-------------: |
 | Full name          | react-blessed |
 | Keywords           | blessed, react, renderer, cli, interface |
-| # releases         | 7 |
-| # dependents       | 50 |
-| # downloads        | 12022 |
+| # releases         | 3 |
+| # dependents       | 56 |
+| # downloads        | 12143 |
 | # stars            | 17 |
 
 ## Links

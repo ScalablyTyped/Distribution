@@ -2,40 +2,38 @@ package typings.googleapis.plusDomainsV1Mod.plusDomainsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAudiencesFeed extends StObject {
   
   /**
     * ETag of this response for caching purposes.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The audiences in this result.
     */
-  var items: js.UndefOr[js.Array[SchemaAudience]] = js.native
+  var items: js.UndefOr[js.Array[SchemaAudience]] = js.undefined
   
   /**
     * Identifies this resource as a collection of audiences. Value:
     * &quot;plus#audienceFeed&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The continuation token, which is used to page through large result sets.
     * Provide this value in a subsequent request to return the next page of
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of ACL entries. The number of entries in this response
     * may be smaller due to paging.
     */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object SchemaAudiencesFeed {
   

@@ -2,20 +2,18 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TensorShape {
   
   /** Properties of a Dim. */
-  @js.native
   trait IDim extends StObject {
     
     /** Dim name */
-    var name: js.UndefOr[String | Null] = js.native
+    var name: js.UndefOr[String | Null] = js.undefined
     
     /** Dim size */
-    var size: js.UndefOr[Double | String | Null] = js.native
+    var size: js.UndefOr[Double | String | Null] = js.undefined
   }
   object IDim {
     

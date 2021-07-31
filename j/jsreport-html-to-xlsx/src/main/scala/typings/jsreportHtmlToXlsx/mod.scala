@@ -6,23 +6,24 @@ import typings.jsreportHtmlToXlsx.anon.PartialOptions
 import typings.jsreportHtmlToXlsx.jsreportHtmlToXlsxStrings.`html-to-xlsx`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jsreport-html-to-xlsx", JSImport.Namespace)
-  @js.native
-  def apply(): ExtensionDefinition = js.native
-  @JSImport("jsreport-html-to-xlsx", JSImport.Namespace)
-  @js.native
-  def apply(options: PartialOptions): ExtensionDefinition = js.native
+  @scala.inline
+  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  @scala.inline
+  def apply(options: PartialOptions): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
   
+  @JSImport("jsreport-html-to-xlsx", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options
-    extends typings.jsreportXlsx.mod.Options {
+    extends StObject
+       with typings.jsreportXlsx.mod.Options {
     
-    var strategy: String = js.native
+    var strategy: String
   }
   object Options {
     
@@ -43,12 +44,11 @@ object mod {
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    @js.native
     trait Template extends StObject {
       
-      var htmlToXlsx: HtmlEngine = js.native
+      var htmlToXlsx: HtmlEngine
       
-      var recipe: `html-to-xlsx` | String = js.native
+      var recipe: `html-to-xlsx` | String
     }
     object Template {
       

@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRecipeRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the recipe to describe.
     */
-  var recipeArn: Arn = js.native
+  var recipeArn: Arn
 }
 object DescribeRecipeRequest {
   

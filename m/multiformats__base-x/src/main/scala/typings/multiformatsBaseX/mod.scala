@@ -3,14 +3,16 @@ package typings.multiformatsBaseX
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(ALPHABET: String): BaseConverter = ^.asInstanceOf[js.Dynamic].apply(ALPHABET.asInstanceOf[js.Any]).asInstanceOf[BaseConverter]
+  
   @JSImport("@multiformats/base-x", JSImport.Namespace)
   @js.native
-  def apply(ALPHABET: String): BaseConverter = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait BaseConverter extends StObject {

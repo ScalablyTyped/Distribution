@@ -2,19 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Lists the dimensions. Is the layout for DimensionListDef.
   */
-@js.native
 trait IDimensionList extends StObject {
   
   /**
     * Information about the list of dimensions
     */
-  var qItems: js.Array[IDimensionItemLayout] = js.native
+  var qItems: js.Array[IDimensionItemLayout]
 }
 object IDimensionList {
   

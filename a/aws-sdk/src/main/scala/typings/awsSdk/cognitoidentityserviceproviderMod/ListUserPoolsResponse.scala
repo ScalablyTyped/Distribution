@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUserPoolsResponse extends StObject {
   
   /**
     * An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
     */
-  var NextToken: js.UndefOr[PaginationKeyType] = js.native
+  var NextToken: js.UndefOr[PaginationKeyType] = js.undefined
   
   /**
     * The user pools from the response to list users.
     */
-  var UserPools: js.UndefOr[UserPoolListType] = js.native
+  var UserPools: js.UndefOr[UserPoolListType] = js.undefined
 }
 object ListUserPoolsResponse {
   

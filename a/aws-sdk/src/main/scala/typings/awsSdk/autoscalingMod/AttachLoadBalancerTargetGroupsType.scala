@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachLoadBalancerTargetGroupsType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName = js.native
+  var AutoScalingGroupName: ResourceName
   
   /**
     * The Amazon Resource Names (ARN) of the target groups. You can specify up to 10 target groups.
     */
-  var TargetGroupARNs: typings.awsSdk.autoscalingMod.TargetGroupARNs = js.native
+  var TargetGroupARNs: typings.awsSdk.autoscalingMod.TargetGroupARNs
 }
 object AttachLoadBalancerTargetGroupsType {
   

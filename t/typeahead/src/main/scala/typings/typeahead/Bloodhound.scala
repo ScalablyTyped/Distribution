@@ -4,7 +4,6 @@ import typings.jquery.JQueryAjaxSettings
 import typings.jquery.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -98,7 +97,6 @@ trait Bloodhound[T] extends StObject {
 }
 object Bloodhound {
   
-  @js.native
   trait BloodhoundOptions[T] extends StObject {
     
     /**
@@ -107,7 +105,7 @@ object Bloodhound {
       * @param datum Suggestion.
       * @returns An array of string tokens.
       */
-    def datumTokenizer(datum: T): js.Array[String] = js.native
+    def datumTokenizer(datum: T): js.Array[String]
     
     /**
       * Given a datum, returns a unique id for it.
@@ -117,25 +115,25 @@ object Bloodhound {
       * @param datum Suggestion.
       * @returns Unique id for the suggestion.
       */
-    var identify: js.UndefOr[js.Function1[/* datum */ T, Double]] = js.native
+    var identify: js.UndefOr[js.Function1[/* datum */ T, Double]] = js.undefined
     
     /**
       * If set to false, the Bloodhound instance will not be implicitly
       * initialized by the constructor function. Defaults to true.
       */
-    var initialize: js.UndefOr[Boolean] = js.native
+    var initialize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An array of data or a function that returns an array of data.
       * The data will be added to the internal search index when #initialize is called.
       */
-    var local: js.UndefOr[js.Array[T] | js.Function0[js.Array[T]]] = js.native
+    var local: js.UndefOr[js.Array[T] | js.Function0[js.Array[T]]] = js.undefined
     
     /**
       * Can be a URL to a JSON file containing an array of data or,
       * if more configurability is needed, a prefetch options hash.
       */
-    var prefetch: js.UndefOr[String | PrefetchOptions[T]] = js.native
+    var prefetch: js.UndefOr[String | PrefetchOptions[T]] = js.undefined
     
     /**
       * Transforms a query into an array of string tokens.
@@ -143,14 +141,14 @@ object Bloodhound {
       * @param quiery Query.
       * @returns An array of string tokens.
       */
-    def queryTokenizer(query: String): js.Array[String] = js.native
+    def queryTokenizer(query: String): js.Array[String]
     
     /**
       * Can be a URL to fetch data from when the data provided by the internal
       * search index is insufficient or, if more configurability is needed,
       * a remote options hash.
       */
-    var remote: js.UndefOr[String | RemoteOptions[T]] = js.native
+    var remote: js.UndefOr[String | RemoteOptions[T]] = js.undefined
     
     /**
       * A compare function used to sort data returned from the internal search index.
@@ -159,14 +157,14 @@ object Bloodhound {
       * @param b Second suggestion.
       * @returns Comparison result.
       */
-    var sorter: js.UndefOr[js.Function2[/* a */ T, /* b */ T, Double]] = js.native
+    var sorter: js.UndefOr[js.Function2[/* a */ T, /* b */ T, Double]] = js.undefined
     
     /**
       * If the number of datums provided from the internal search index is
       * less than sufficient, remote will be used to backfill search
       * requests triggered by calling #search. Defaults to 5.
       */
-    var sufficient: js.UndefOr[Double] = js.native
+    var sufficient: js.UndefOr[Double] = js.undefined
   }
   object BloodhoundOptions {
     
@@ -177,7 +175,7 @@ object Bloodhound {
     }
     
     @scala.inline
-    implicit class BloodhoundOptionsMutableBuilder[Self <: BloodhoundOptions[_], T] (val x: Self with BloodhoundOptions[T]) extends AnyVal {
+    implicit class BloodhoundOptionsMutableBuilder[Self <: BloodhoundOptions[?], T] (val x: Self & BloodhoundOptions[T]) extends AnyVal {
       
       @scala.inline
       def setDatumTokenizer(value: T => js.Array[String]): Self = StObject.set(x, "datumTokenizer", js.Any.fromFunction1(value))
@@ -263,20 +261,19 @@ object Bloodhound {
     * act as a first-level cache. Ignoring this warning means you'll run the risk
     * of hitting local storage limits.
     */
-  @js.native
   trait PrefetchOptions[T] extends StObject {
     
     /**
       * If false, will not attempt to read or write to local storage and
       * will always load prefetch data from url on initialization. Defaults to true.
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The key that data will be stored in local storage under.
       * Defaults to value of url.
       */
-    var cacheKey: js.UndefOr[String] = js.native
+    var cacheKey: js.UndefOr[String] = js.undefined
     
     /**
       * A function that provides a hook to allow you to prepare the settings
@@ -286,13 +283,13 @@ object Bloodhound {
       * @param settings The default settings object created internally by the Bloodhound instance.
       * @returns A settings object.
       */
-    var prepare: js.UndefOr[js.Function1[/* settings */ JQueryAjaxSettings, JQueryAjaxSettings]] = js.native
+    var prepare: js.UndefOr[js.Function1[/* settings */ JQueryAjaxSettings, JQueryAjaxSettings]] = js.undefined
     
     /**
       * A string used for thumbprinting prefetched data. If this doesn't
       * match what's stored in local storage, the data will be refetched.
       */
-    var thumbprint: js.UndefOr[String] = js.native
+    var thumbprint: js.UndefOr[String] = js.undefined
     
     /**
       * A function with the signature transform(response) that allows you to
@@ -302,18 +299,18 @@ object Bloodhound {
       * @param response Prefetch response.
       * @returns Transform response.
       */
-    var transform: js.UndefOr[js.Function1[/* response */ T, T]] = js.native
+    var transform: js.UndefOr[js.Function1[/* response */ T, T]] = js.undefined
     
     /**
       * The time (in milliseconds) the prefetched data should be cached in
       * local storage. Defaults to 86400000 (1 day).
       */
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
     
     /**
       * The URL prefetch data should be loaded from.
       */
-    var url: String = js.native
+    var url: String
   }
   object PrefetchOptions {
     
@@ -324,7 +321,7 @@ object Bloodhound {
     }
     
     @scala.inline
-    implicit class PrefetchOptionsMutableBuilder[Self <: PrefetchOptions[_], T] (val x: Self with PrefetchOptions[T]) extends AnyVal {
+    implicit class PrefetchOptionsMutableBuilder[Self <: PrefetchOptions[?], T] (val x: Self & PrefetchOptions[T]) extends AnyVal {
       
       @scala.inline
       def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
@@ -372,13 +369,12 @@ object Bloodhound {
     * provide a sufficient number of results. In order to prevent an obscene
     * number of requests being made to the remote endpoint, requests are rate-limited.
     */
-  @js.native
   trait RemoteOptions[T] extends StObject {
     
     /**
       * DEPRECATED: transform the remote response before the Bloodhound instance operates on it.
       * */
-    var filter: js.UndefOr[js.Function1[/* response */ T, T]] = js.native
+    var filter: js.UndefOr[js.Function1[/* response */ T, T]] = js.undefined
     
     /**
       * A function that provides a hook to allow you to prepare the settings
@@ -394,19 +390,19 @@ object Bloodhound {
       */
     var prepare: js.UndefOr[
         js.Function2[/* query */ String, /* settings */ JQueryAjaxSettings, JQueryAjaxSettings]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The time interval in milliseconds that will be used by rateLimitBy.
       * Defaults to 300.
       */
-    var rateLimitWait: js.UndefOr[Double] = js.native
+    var rateLimitWait: js.UndefOr[Double] = js.undefined
     
     /**
       * The method used to rate-limit network requests.
       * Can be either debounce or throttle. Defaults to debounce.
       */
-    var rateLimitby: js.UndefOr[String] = js.native
+    var rateLimitby: js.UndefOr[String] = js.undefined
     
     /**
       * A function with the signature transform(response) that allows you to
@@ -416,18 +412,18 @@ object Bloodhound {
       * @param response Prefetch response.
       * @returns Transform response.
       */
-    var transform: js.UndefOr[js.Function1[/* response */ T, T]] = js.native
+    var transform: js.UndefOr[js.Function1[/* response */ T, T]] = js.undefined
     
     /**
       * The URL remote data should be loaded from.
       */
-    var url: String = js.native
+    var url: String
     
     /**
       * A convenience option for prepare. If set, prepare will be a function
       * that replaces the value of this option in url with the URI encoded query.
       */
-    var wildcard: js.UndefOr[String] = js.native
+    var wildcard: js.UndefOr[String] = js.undefined
   }
   object RemoteOptions {
     
@@ -438,7 +434,7 @@ object Bloodhound {
     }
     
     @scala.inline
-    implicit class RemoteOptionsMutableBuilder[Self <: RemoteOptions[_], T] (val x: Self with RemoteOptions[T]) extends AnyVal {
+    implicit class RemoteOptionsMutableBuilder[Self <: RemoteOptions[?], T] (val x: Self & RemoteOptions[T]) extends AnyVal {
       
       @scala.inline
       def setFilter(value: /* response */ T => T): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
@@ -484,23 +480,22 @@ object Bloodhound {
   /**
     * Build-in tokenization methods.
     */
-  @js.native
   trait Tokenizers extends StObject {
     
     /**
       * Split a given string on non-word characters.
       */
-    def nonword(str: String): js.Array[String] = js.native
+    def nonword(str: String): js.Array[String]
     
     /**
       * Instances of the build-in tokenization methods.
       */
-    var obj: ObjTokenizer = js.native
+    var obj: ObjTokenizer
     
     /**
       * Split a given string on whitespace characters.
       */
-    def whitespace(str: String): js.Array[String] = js.native
+    def whitespace(str: String): js.Array[String]
   }
   object Tokenizers {
     

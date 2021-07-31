@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDomainRequest extends StObject {
   
   /**
     * The domain ID.
     */
-  var DomainId: typings.awsSdk.sagemakerMod.DomainId = js.native
+  var DomainId: typings.awsSdk.sagemakerMod.DomainId
   
   /**
     * The retention policy for this domain, which specifies whether resources will be retained after the Domain is deleted. By default, all resources are retained (not automatically deleted). 
     */
-  var RetentionPolicy: js.UndefOr[typings.awsSdk.sagemakerMod.RetentionPolicy] = js.native
+  var RetentionPolicy: js.UndefOr[typings.awsSdk.sagemakerMod.RetentionPolicy] = js.undefined
 }
 object DeleteDomainRequest {
   

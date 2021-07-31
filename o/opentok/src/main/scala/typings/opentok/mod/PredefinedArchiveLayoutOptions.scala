@@ -6,13 +6,13 @@ import typings.opentok.opentokStrings.pip
 import typings.opentok.opentokStrings.verticalPresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PredefinedArchiveLayoutOptions extends ArchiveLayoutOptions {
+trait PredefinedArchiveLayoutOptions
+  extends StObject
+     with ArchiveLayoutOptions {
   
-  var `type`: bestFit | pip | verticalPresentation | horizontalPresentation = js.native
+  var `type`: bestFit | pip | verticalPresentation | horizontalPresentation
 }
 object PredefinedArchiveLayoutOptions {
   

@@ -5,7 +5,6 @@ import typings.std.TextStreamWriter
 import typings.std.anon.Length
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WScript {
@@ -32,36 +31,31 @@ object WScript {
   /**
     * Connects a COM object's event sources to functions named with a given prefix, in the form prefix_event.
     */
-  @JSGlobal("WScript.ConnectObject")
-  @js.native
-  def ConnectObject(objEventSource: js.Any, strPrefix: java.lang.String): Unit = js.native
+  @scala.inline
+  def ConnectObject(objEventSource: js.Any, strPrefix: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ConnectObject")(objEventSource.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a COM object.
     * @param strProgiID
     * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
     */
-  @JSGlobal("WScript.CreateObject")
-  @js.native
-  def CreateObject(strProgID: java.lang.String): js.Any = js.native
-  @JSGlobal("WScript.CreateObject")
-  @js.native
-  def CreateObject(strProgID: java.lang.String, strPrefix: java.lang.String): js.Any = js.native
+  @scala.inline
+  def CreateObject(strProgID: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateObject")(strProgID.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def CreateObject(strProgID: java.lang.String, strPrefix: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateObject")(strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Disconnects a COM object from its event sources.
     */
-  @JSGlobal("WScript.DisconnectObject")
-  @js.native
-  def DisconnectObject(obj: js.Any): Unit = js.native
+  @scala.inline
+  def DisconnectObject(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DisconnectObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Outputs text to either a message box (under WScript.exe) or the command console window followed by
     * a newline (under CScript.exe).
     */
-  @JSGlobal("WScript.Echo")
-  @js.native
-  def Echo(s: js.Any): Unit = js.native
+  @scala.inline
+  def Echo(s: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Echo")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Fully qualified path of the host executable.
@@ -79,18 +73,14 @@ object WScript {
     * @param strProgID
     * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
     */
-  @JSGlobal("WScript.GetObject")
-  @js.native
-  def GetObject(strPathname: java.lang.String): js.Any = js.native
-  @JSGlobal("WScript.GetObject")
-  @js.native
-  def GetObject(strPathname: java.lang.String, strProgID: js.UndefOr[scala.Nothing], strPrefix: java.lang.String): js.Any = js.native
-  @JSGlobal("WScript.GetObject")
-  @js.native
-  def GetObject(strPathname: java.lang.String, strProgID: java.lang.String): js.Any = js.native
-  @JSGlobal("WScript.GetObject")
-  @js.native
-  def GetObject(strPathname: java.lang.String, strProgID: java.lang.String, strPrefix: java.lang.String): js.Any = js.native
+  @scala.inline
+  def GetObject(strPathname: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def GetObject(strPathname: java.lang.String, strProgID: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def GetObject(strPathname: java.lang.String, strProgID: java.lang.String, strPrefix: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def GetObject(strPathname: java.lang.String, strProgID: Unit, strPrefix: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Gets/sets the script mode - interactive(true) or batch(false).
@@ -122,12 +112,10 @@ object WScript {
   /**
     * Forces the script to stop immediately, with an optional exit code.
     */
-  @JSGlobal("WScript.Quit")
-  @js.native
-  def Quit(): Double = js.native
-  @JSGlobal("WScript.Quit")
-  @js.native
-  def Quit(exitCode: Double): Double = js.native
+  @scala.inline
+  def Quit(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Quit")().asInstanceOf[Double]
+  @scala.inline
+  def Quit(exitCode: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Quit")(exitCode.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     *  The full path of the currently running script.
@@ -151,9 +139,8 @@ object WScript {
     * Suspends script execution for a specified length of time, then continues execution.
     * @param intTime Interval (in milliseconds) to suspend script execution.
     */
-  @JSGlobal("WScript.Sleep")
-  @js.native
-  def Sleep(intTime: Double): Unit = js.native
+  @scala.inline
+  def Sleep(intTime: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Sleep")(intTime.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Exposes the write-only error output stream for the current script.

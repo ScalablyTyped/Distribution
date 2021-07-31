@@ -2,21 +2,19 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutMetadataRequest extends StObject {
   
   /**
     * ARN of the channel into which metadata is inserted. This channel must have an active stream.
     */
-  var channelArn: ChannelArn = js.native
+  var channelArn: ChannelArn
   
   /**
     * Metadata to insert into the stream. Maximum: 1 KB per request.
     */
-  var metadata: StreamMetadata = js.native
+  var metadata: StreamMetadata
 }
 object PutMetadataRequest {
   

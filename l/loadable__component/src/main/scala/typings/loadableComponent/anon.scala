@@ -7,19 +7,17 @@ import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Children[Module] extends StObject {
     
-    var children: js.UndefOr[js.Function1[/* module */ Module, ReactNode]] = js.native
+    var children: js.UndefOr[js.Function1[/* module */ Module, ReactNode]] = js.undefined
     
-    var fallback: js.UndefOr[Element] = js.native
+    var fallback: js.UndefOr[Element] = js.undefined
     
-    var ref: js.UndefOr[Ref[Module]] = js.native
+    var ref: js.UndefOr[Ref[Module]] = js.undefined
   }
   object Children {
     
@@ -30,7 +28,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children[_], Module] (val x: Self with Children[Module]) extends AnyVal {
+    implicit class ChildrenMutableBuilder[Self <: Children[?], Module] (val x: Self & Children[Module]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: /* module */ Module => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
@@ -58,10 +56,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Fallback extends StObject {
     
-    var fallback: js.UndefOr[Element] = js.native
+    var fallback: js.UndefOr[Element] = js.undefined
   }
   object Fallback {
     

@@ -8,7 +8,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxCheckboxMod {
@@ -48,12 +47,12 @@ object checkboxCheckboxMod {
     def handleClick(): Unit = js.native
   }
   
-  @js.native
   trait CheckboxProps
-    extends CheckboxPropsType
+    extends StObject
+       with CheckboxPropsType
        with WithThemeStyles[CheckboxStyle] {
     
-    var style: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   }
   object CheckboxProps {
     

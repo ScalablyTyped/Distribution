@@ -23,11 +23,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.update
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sketch extends Widget_ {
+trait Sketch
+  extends StObject
+     with Widget_ {
   
   /**
     * When creating new graphics (for example after [create()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create) has been called), this property reflects the create tool being used.

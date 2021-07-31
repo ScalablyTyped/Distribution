@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopTransformJobRequest extends StObject {
   
   /**
     * The name of the transform job to stop.
     */
-  var TransformJobName: typings.awsSdk.sagemakerMod.TransformJobName = js.native
+  var TransformJobName: typings.awsSdk.sagemakerMod.TransformJobName
 }
 object StopTransformJobRequest {
   

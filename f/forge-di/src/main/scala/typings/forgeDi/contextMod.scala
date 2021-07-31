@@ -2,14 +2,15 @@ package typings.forgeDi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
   
   @JSImport("forge-di/dist/framework/Context", JSImport.Default)
   @js.native
-  class default () extends Context
+  class default ()
+    extends StObject
+       with Context
   
   @js.native
   trait Context extends StObject {

@@ -2,21 +2,19 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAttacksResponse extends StObject {
   
   /**
     * The attack information for the specified time range.
     */
-  var AttackSummaries: js.UndefOr[typings.awsSdk.shieldMod.AttackSummaries] = js.native
+  var AttackSummaries: js.UndefOr[typings.awsSdk.shieldMod.AttackSummaries] = js.undefined
   
   /**
     * The token returned by a previous call to indicate that there is more data available. If not null, more results are available. Pass this value for the NextMarker parameter in a subsequent call to ListAttacks to retrieve the next set of items. Shield Advanced might return the list of AttackSummary objects in batches smaller than the number specified by MaxResults. If there are more attack summary objects to return, Shield Advanced will always also return a NextToken.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object ListAttacksResponse {
   

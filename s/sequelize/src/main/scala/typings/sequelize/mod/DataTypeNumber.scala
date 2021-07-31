@@ -2,11 +2,11 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataTypeNumber extends DataTypeAbstractNumber[DataTypeNumber]
+trait DataTypeNumber
+  extends StObject
+     with DataTypeAbstractNumber[DataTypeNumber]
 object DataTypeNumber {
   
   @scala.inline

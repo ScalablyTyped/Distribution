@@ -4,7 +4,6 @@ import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables formatting of dates and times. */
@@ -19,11 +18,15 @@ object DateTimeFormatting {
     
     /** Display the day in the most natural way. This will depend on the context, such as the language or calendar (for example, for the Hebrew calendar and Hebrew language, use the Hebrew numbering system). */
     @js.native
-    sealed trait default extends DayFormat
+    sealed trait default
+      extends StObject
+         with DayFormat
     
     /** Do not display the day. */
     @js.native
-    sealed trait none extends DayFormat
+    sealed trait none
+      extends StObject
+         with DayFormat
   }
   
   @js.native
@@ -35,19 +38,27 @@ object DateTimeFormatting {
     
     /** Display the day of the week in the most natural way. It may be abbreviated or full depending on the context, such as the language or calendar that is being used. */
     @js.native
-    sealed trait default extends DayOfWeekFormat
+    sealed trait default
+      extends StObject
+         with DayOfWeekFormat
     
     /** Display an abbreviated version of the day of the week (for example, "Thur" for Thursday). */
     @js.native
-    sealed trait abbreviated extends DayOfWeekFormat
+    sealed trait abbreviated
+      extends StObject
+         with DayOfWeekFormat
     
     /** Display the day of the week in its entirety (for example, "Thursday"). */
     @js.native
-    sealed trait full extends DayOfWeekFormat
+    sealed trait full
+      extends StObject
+         with DayOfWeekFormat
     
     /** Do not display the day of the week. */
     @js.native
-    sealed trait none extends DayOfWeekFormat
+    sealed trait none
+      extends StObject
+         with DayOfWeekFormat
   }
   
   @js.native
@@ -59,11 +70,15 @@ object DateTimeFormatting {
     
     /** Display the hour in the most natural way. This will depend on the context, such as the language or clock that is being used. */
     @js.native
-    sealed trait default extends HourFormat
+    sealed trait default
+      extends StObject
+         with HourFormat
     
     /** Do not display the hour. */
     @js.native
-    sealed trait none extends HourFormat
+    sealed trait none
+      extends StObject
+         with HourFormat
   }
   
   @js.native
@@ -75,11 +90,15 @@ object DateTimeFormatting {
     
     /** Display the minute in the most natural way. This will depend on the context, such as the language or clock that is being used. */
     @js.native
-    sealed trait default extends MinuteFormat
+    sealed trait default
+      extends StObject
+         with MinuteFormat
     
     /** Do not display the minute. */
     @js.native
-    sealed trait none extends MinuteFormat
+    sealed trait none
+      extends StObject
+         with MinuteFormat
   }
   
   @js.native
@@ -91,23 +110,33 @@ object DateTimeFormatting {
     
     /** Display the month in the most natural way. It may be abbreviated, full, or numeric depending on the context, such as the language or calendar that is being used. */
     @js.native
-    sealed trait default extends MonthFormat
+    sealed trait default
+      extends StObject
+         with MonthFormat
     
     /** Display an abbreviated version of the month (for example, "Sep" for September). */
     @js.native
-    sealed trait abbreviated extends MonthFormat
+    sealed trait abbreviated
+      extends StObject
+         with MonthFormat
     
     /** Display the month in its entirety (for example, "September"). */
     @js.native
-    sealed trait full extends MonthFormat
+    sealed trait full
+      extends StObject
+         with MonthFormat
     
     /** Do not display the month. */
     @js.native
-    sealed trait none extends MonthFormat
+    sealed trait none
+      extends StObject
+         with MonthFormat
     
     /** Display the month as a number (for example, "9" for September). */
     @js.native
-    sealed trait numeric extends MonthFormat
+    sealed trait numeric
+      extends StObject
+         with MonthFormat
   }
   
   @js.native
@@ -119,11 +148,15 @@ object DateTimeFormatting {
     
     /** Display the second in the most natural way. This will depend on the context, such as the language or clock that is being used. */
     @js.native
-    sealed trait default extends SecondFormat
+    sealed trait default
+      extends StObject
+         with SecondFormat
     
     /** Do not display the second. */
     @js.native
-    sealed trait none extends SecondFormat
+    sealed trait none
+      extends StObject
+         with SecondFormat
   }
   
   @js.native
@@ -135,19 +168,27 @@ object DateTimeFormatting {
     
     /** Display the year in the most natural way. It may be abbreviated or full depending on the context, such as the language or calendar that is being used. */
     @js.native
-    sealed trait default extends YearFormat
+    sealed trait default
+      extends StObject
+         with YearFormat
     
     /** Display an abbreviated version of the year (for example, "11" for Gregorian 2011). */
     @js.native
-    sealed trait abbreviated extends YearFormat
+    sealed trait abbreviated
+      extends StObject
+         with YearFormat
     
     /** Display the year in its entirety (for example, "2011" for Gregorian 2011). */
     @js.native
-    sealed trait full extends YearFormat
+    sealed trait full
+      extends StObject
+         with YearFormat
     
     /** Do not display the year. */
     @js.native
-    sealed trait none extends YearFormat
+    sealed trait none
+      extends StObject
+         with YearFormat
   }
   
   /** Formats dates and times. */

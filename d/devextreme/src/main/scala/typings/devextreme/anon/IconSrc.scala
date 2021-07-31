@@ -2,19 +2,17 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconSrc extends StObject {
   
-  var iconSrc: js.UndefOr[String] = js.native
+  var iconSrc: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[js.Any | String | js.Array[Double]] = js.native
+  var location: js.UndefOr[js.Any | String | js.Array[Double]] = js.undefined
   
-  var onClick: js.UndefOr[js.Function] = js.native
+  var onClick: js.UndefOr[js.Function] = js.undefined
   
-  var tooltip: js.UndefOr[String | IsShown] = js.native
+  var tooltip: js.UndefOr[String | IsShown] = js.undefined
 }
 object IconSrc {
   

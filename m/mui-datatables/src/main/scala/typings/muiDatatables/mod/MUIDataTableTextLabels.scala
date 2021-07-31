@@ -8,23 +8,21 @@ import typings.muiDatatables.anon.PartialMUIDataTableTextLaDownloadCsv
 import typings.muiDatatables.anon.PartialMUIDataTableTextLaTitle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableTextLabels extends StObject {
   
-  var body: PartialMUIDataTableTextLa = js.native
+  var body: PartialMUIDataTableTextLa
   
-  var filter: PartialMUIDataTableTextLaAll = js.native
+  var filter: PartialMUIDataTableTextLaAll
   
-  var pagination: PartialMUIDataTableTextLaDisplayRows = js.native
+  var pagination: PartialMUIDataTableTextLaDisplayRows
   
-  var selectedRows: PartialMUIDataTableTextLaDelete = js.native
+  var selectedRows: PartialMUIDataTableTextLaDelete
   
-  var toolbar: PartialMUIDataTableTextLaDownloadCsv = js.native
+  var toolbar: PartialMUIDataTableTextLaDownloadCsv
   
-  var viewColumns: PartialMUIDataTableTextLaTitle = js.native
+  var viewColumns: PartialMUIDataTableTextLaTitle
 }
 object MUIDataTableTextLabels {
   

@@ -3,17 +3,15 @@ package typings.relayRuntime.relayStoreTypesMod
 import typings.relayRuntime.relayNetworkTypesMod.PayloadData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptimisticResponseConfig extends StObject {
   
-  val operation: OperationDescriptor = js.native
+  val operation: OperationDescriptor
   
-  val response: js.UndefOr[PayloadData | Null] = js.native
+  val response: js.UndefOr[PayloadData | Null] = js.undefined
   
-  val updater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.native
+  val updater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.undefined
 }
 object OptimisticResponseConfig {
   

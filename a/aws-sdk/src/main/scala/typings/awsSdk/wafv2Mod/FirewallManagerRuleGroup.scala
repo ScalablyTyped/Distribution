@@ -2,30 +2,28 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirewallManagerRuleGroup extends StObject {
   
   /**
     * The processing guidance for an AWS Firewall Manager rule. This is like a regular rule Statement, but it can only contain a rule group reference.
     */
-  var FirewallManagerStatement: typings.awsSdk.wafv2Mod.FirewallManagerStatement = js.native
+  var FirewallManagerStatement: typings.awsSdk.wafv2Mod.FirewallManagerStatement
   
   /**
     * The name of the rule group. You cannot change the name of a rule group after you create it.
     */
-  var Name: EntityName = js.native
+  var Name: EntityName
   
-  var OverrideAction: typings.awsSdk.wafv2Mod.OverrideAction = js.native
+  var OverrideAction: typings.awsSdk.wafv2Mod.OverrideAction
   
   /**
     * If you define more than one rule group in the first or last Firewall Manager rule groups, AWS WAF evaluates each request against the rule groups in order, starting from the lowest priority setting. The priorities don't need to be consecutive, but they must all be different.
     */
-  var Priority: RulePriority = js.native
+  var Priority: RulePriority
   
-  var VisibilityConfig: typings.awsSdk.wafv2Mod.VisibilityConfig = js.native
+  var VisibilityConfig: typings.awsSdk.wafv2Mod.VisibilityConfig
 }
 object FirewallManagerRuleGroup {
   

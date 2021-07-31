@@ -3,23 +3,21 @@ package typings.nodeTelegramBotApi.mod
 import typings.request.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstructorOptions extends StObject {
   
-  var baseApiUrl: js.UndefOr[String] = js.native
+  var baseApiUrl: js.UndefOr[String] = js.undefined
   
-  var filepath: js.UndefOr[Boolean] = js.native
+  var filepath: js.UndefOr[Boolean] = js.undefined
   
-  var onlyFirstMatch: js.UndefOr[Boolean] = js.native
+  var onlyFirstMatch: js.UndefOr[Boolean] = js.undefined
   
-  var polling: js.UndefOr[Boolean | PollingOptions] = js.native
+  var polling: js.UndefOr[Boolean | PollingOptions] = js.undefined
   
-  var request: js.UndefOr[Options] = js.native
+  var request: js.UndefOr[Options] = js.undefined
   
-  var webHook: js.UndefOr[Boolean | WebHookOptions] = js.native
+  var webHook: js.UndefOr[Boolean | WebHookOptions] = js.undefined
 }
 object ConstructorOptions {
   

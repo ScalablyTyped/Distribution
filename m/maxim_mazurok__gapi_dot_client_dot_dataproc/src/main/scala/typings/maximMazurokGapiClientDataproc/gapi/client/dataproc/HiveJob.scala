@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HiveJob extends StObject {
   
   /** Optional. Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries. */
-  var continueOnFailure: js.UndefOr[Boolean] = js.native
+  var continueOnFailure: js.UndefOr[Boolean] = js.undefined
   
   /** Optional. HCFS URIs of jar files to add to the CLASSPATH of the Hive server and Hadoop MapReduce (MR) tasks. Can contain Hive SerDes and UDFs. */
-  var jarFileUris: js.UndefOr[js.Array[String]] = js.native
+  var jarFileUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. A mapping of property names and values, used to configure Hive. Properties that conflict with values set by the Dataproc API may be overwritten. Can include properties set
@@ -22,21 +20,21 @@ trait HiveJob extends StObject {
   var properties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.HiveJob with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.HiveJob & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The HCFS URI of the script that contains Hive queries. */
-  var queryFileUri: js.UndefOr[String] = js.native
+  var queryFileUri: js.UndefOr[String] = js.undefined
   
   /** A list of queries. */
-  var queryList: js.UndefOr[QueryList] = js.native
+  var queryList: js.UndefOr[QueryList] = js.undefined
   
   /** Optional. Mapping of query variable names to values (equivalent to the Hive command: SET name="value";). */
   var scriptVariables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.HiveJob with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.HiveJob & TopLevel[js.Any]
+  ] = js.undefined
 }
 object HiveJob {
   
@@ -68,7 +66,7 @@ object HiveJob {
     def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.HiveJob with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.HiveJob & TopLevel[js.Any]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -90,7 +88,7 @@ object HiveJob {
     def setScriptVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.HiveJob with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.HiveJob & TopLevel[js.Any]
     ): Self = StObject.set(x, "scriptVariables", value.asInstanceOf[js.Any])
     
     @scala.inline

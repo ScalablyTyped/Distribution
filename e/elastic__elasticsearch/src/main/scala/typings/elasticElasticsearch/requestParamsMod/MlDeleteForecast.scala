@@ -2,19 +2,19 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlDeleteForecast extends Generic {
+trait MlDeleteForecast
+  extends StObject
+     with Generic {
   
-  var allow_no_forecasts: js.UndefOr[Boolean] = js.native
+  var allow_no_forecasts: js.UndefOr[Boolean] = js.undefined
   
-  var forecast_id: js.UndefOr[String] = js.native
+  var forecast_id: js.UndefOr[String] = js.undefined
   
-  var job_id: String = js.native
+  var job_id: String
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object MlDeleteForecast {
   

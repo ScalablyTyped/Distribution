@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalFormatRule extends StObject {
   
   /** The formatting is either "on" or "off" according to the rule. */
-  var booleanRule: js.UndefOr[BooleanRule] = js.native
+  var booleanRule: js.UndefOr[BooleanRule] = js.undefined
   
   /** The formatting will vary based on the gradients in the rule. */
-  var gradientRule: js.UndefOr[GradientRule] = js.native
+  var gradientRule: js.UndefOr[GradientRule] = js.undefined
   
   /** The ranges that are formatted if the condition is true. All the ranges must be on the same grid. */
-  var ranges: js.UndefOr[js.Array[GridRange]] = js.native
+  var ranges: js.UndefOr[js.Array[GridRange]] = js.undefined
 }
 object ConditionalFormatRule {
   

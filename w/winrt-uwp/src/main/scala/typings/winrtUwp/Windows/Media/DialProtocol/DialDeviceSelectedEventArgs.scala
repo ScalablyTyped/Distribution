@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.DialProtocol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the event arguments for the DialDeviceSelected event on the DialDevicePicker object. */
-@js.native
 trait DialDeviceSelectedEventArgs extends StObject {
   
   /** Gets the DialDevice object that represents the remote device that has been selected by the user in a DialDevicePicker . */
-  var selectedDialDevice: DialDevice = js.native
+  var selectedDialDevice: DialDevice
 }
 object DialDeviceSelectedEventArgs {
   

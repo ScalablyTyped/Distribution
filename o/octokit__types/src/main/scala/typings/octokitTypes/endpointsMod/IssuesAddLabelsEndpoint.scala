@@ -2,22 +2,20 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IssuesAddLabelsEndpoint extends StObject {
   
-  var issue_number: Double = js.native
+  var issue_number: Double
   
   /**
     * The name of the label to add to the issue. Must contain at least one label. **Note:** Alternatively, you can pass a single label as a `string` or an `array` of labels directly, but GitHub recommends passing an object with the `labels` key.
     */
-  var labels: js.Array[String] = js.native
+  var labels: js.Array[String]
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
 }
 object IssuesAddLabelsEndpoint {
   

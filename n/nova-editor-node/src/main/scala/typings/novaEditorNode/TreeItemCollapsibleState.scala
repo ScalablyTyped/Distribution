@@ -2,7 +2,6 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait TreeItemCollapsibleState extends StObject
 object TreeItemCollapsibleState extends StObject {
   
   @js.native
-  sealed trait Collapsed extends TreeItemCollapsibleState
+  sealed trait Collapsed
+    extends StObject
+       with TreeItemCollapsibleState
   
   @js.native
-  sealed trait Expanded extends TreeItemCollapsibleState
+  sealed trait Expanded
+    extends StObject
+       with TreeItemCollapsibleState
   
   @js.native
-  sealed trait None extends TreeItemCollapsibleState
+  sealed trait None
+    extends StObject
+       with TreeItemCollapsibleState
 }

@@ -6,7 +6,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes", "core.v1.ServiceAccountList")
@@ -22,11 +21,15 @@ class ServiceAccountList protected ()
     */
   def this(name: String) = this()
   def this(name: String, args: ServiceAccountListArgs) = this()
-  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+  def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
   def this(name: String, args: ServiceAccountListArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
 object ServiceAccountList {
+  
+  @JSImport("@pulumi/kubernetes", "core.v1.ServiceAccountList")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Get an existing ServiceAccountList resource's state with the given name, ID, and optional extra
@@ -36,18 +39,15 @@ object ServiceAccountList {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  @JSImport("@pulumi/kubernetes", "core.v1.ServiceAccountList.get")
-  @js.native
-  def get(name: String, id: Input[ID]): typings.pulumiKubernetes.serviceAccountListMod.ServiceAccountList = js.native
-  @JSImport("@pulumi/kubernetes", "core.v1.ServiceAccountList.get")
-  @js.native
-  def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.serviceAccountListMod.ServiceAccountList = js.native
+  @scala.inline
+  def get(name: String, id: Input[ID]): typings.pulumiKubernetes.serviceAccountListMod.ServiceAccountList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.serviceAccountListMod.ServiceAccountList]
+  @scala.inline
+  def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.serviceAccountListMod.ServiceAccountList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.serviceAccountListMod.ServiceAccountList]
   
   /**
     * Returns true if the given object is an instance of ServiceAccountList.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  @JSImport("@pulumi/kubernetes", "core.v1.ServiceAccountList.isInstance")
-  @js.native
-  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/serviceAccountList.ServiceAccountList */ Boolean = js.native
+  @scala.inline
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/serviceAccountList.ServiceAccountList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/serviceAccountList.ServiceAccountList */ Boolean]
 }

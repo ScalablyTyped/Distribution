@@ -8,7 +8,6 @@ import typings.auth0Js.mod.AuthOptions
 import typings.auth0Js.mod.Authentication
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,7 +19,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("auth0.widget", "Auth0Widget")
   @js.native
-  class Auth0Widget protected () extends Auth0WidgetStatic {
+  class Auth0Widget protected ()
+    extends StObject
+       with Auth0WidgetStatic {
     def this(params: Auth0Constructor) = this()
   }
   @JSImport("auth0.widget", "Auth0Widget")
@@ -29,14 +30,15 @@ object mod {
   @scala.inline
   def Auth0Widget_=(x: Auth0WidgetStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Auth0Widget")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait Auth0Constructor extends AuthOptions {
+  trait Auth0Constructor
+    extends StObject
+       with AuthOptions {
     
-    var assetsUrl: js.UndefOr[String] = js.native
+    var assetsUrl: js.UndefOr[String] = js.undefined
     
-    var cdn: js.UndefOr[String] = js.native
+    var cdn: js.UndefOr[String] = js.undefined
     
-    var dict: js.UndefOr[js.Any] = js.native
+    var dict: js.UndefOr[js.Any] = js.undefined
   }
   object Auth0Constructor {
     
@@ -69,38 +71,37 @@ object mod {
     }
   }
   
-  @js.native
   trait Auth0Options extends StObject {
     
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
-    var connections: js.UndefOr[js.Array[String]] = js.native
+    var connections: js.UndefOr[js.Array[String]] = js.undefined
     
-    var container: js.UndefOr[String] = js.native
+    var container: js.UndefOr[String] = js.undefined
     
-    var enableReturnUserExperience: js.UndefOr[Boolean] = js.native
+    var enableReturnUserExperience: js.UndefOr[Boolean] = js.undefined
     
-    var extraParameters: js.UndefOr[js.Any] = js.native
+    var extraParameters: js.UndefOr[js.Any] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var request_id: js.UndefOr[String] = js.native
+    var request_id: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
-    var showForgot: js.UndefOr[Boolean] = js.native
+    var showForgot: js.UndefOr[Boolean] = js.undefined
     
-    var showIcon: js.UndefOr[Boolean] = js.native
+    var showIcon: js.UndefOr[Boolean] = js.undefined
     
-    var showSignup: js.UndefOr[Boolean] = js.native
+    var showSignup: js.UndefOr[Boolean] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
     
-    var userPwdConnectionName: js.UndefOr[String] = js.native
+    var userPwdConnectionName: js.UndefOr[String] = js.undefined
     
-    var username_style: js.UndefOr[String] = js.native
+    var username_style: js.UndefOr[String] = js.undefined
   }
   object Auth0Options {
     
@@ -209,7 +210,9 @@ object mod {
   }
   
   @js.native
-  trait Auth0WidgetStatic extends Instantiable1[/* params */ Auth0Constructor, Auth0WidgetStatic] {
+  trait Auth0WidgetStatic
+    extends StObject
+       with Instantiable1[/* params */ Auth0Constructor, Auth0WidgetStatic] {
     
     def getClient(): Authentication = js.native
     
@@ -221,9 +224,9 @@ object mod {
     def reset(options: Auth0Options, callback: js.Function): Auth0WidgetStatic = js.native
     
     def signin(options: Auth0Options): Auth0WidgetStatic = js.native
-    def signin(options: Auth0Options, widgetLoadedCallback: js.UndefOr[scala.Nothing], popupCallback: js.Function): Auth0WidgetStatic = js.native
     def signin(options: Auth0Options, widgetLoadedCallback: js.Function): Auth0WidgetStatic = js.native
     def signin(options: Auth0Options, widgetLoadedCallback: js.Function, popupCallback: js.Function): Auth0WidgetStatic = js.native
+    def signin(options: Auth0Options, widgetLoadedCallback: Unit, popupCallback: js.Function): Auth0WidgetStatic = js.native
     
     def signup(
       options: Auth0Options,
@@ -233,7 +236,7 @@ object mod {
           /* id_token */ js.UndefOr[String], 
           /* access_token */ js.UndefOr[String], 
           /* state */ js.UndefOr[String], 
-          _
+          js.Any
         ]
     ): Auth0WidgetStatic = js.native
   }

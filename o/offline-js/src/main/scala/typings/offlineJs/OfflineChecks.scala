@@ -2,19 +2,17 @@ package typings.offlineJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OfflineChecks extends StObject {
   
-  var active: js.UndefOr[String] = js.native
+  var active: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[OfflineCheck] = js.native
+  var image: js.UndefOr[OfflineCheck] = js.undefined
   
   // TODO "xhr" and "image" probably have different options.
   // However, this is not stated in the project documentation.
-  var xhr: js.UndefOr[OfflineCheck] = js.native
+  var xhr: js.UndefOr[OfflineCheck] = js.undefined
 }
 object OfflineChecks {
   

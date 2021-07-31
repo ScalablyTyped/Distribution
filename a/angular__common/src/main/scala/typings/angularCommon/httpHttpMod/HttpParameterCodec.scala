@@ -2,19 +2,17 @@ package typings.angularCommon.httpHttpMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpParameterCodec extends StObject {
   
-  def decodeKey(key: String): String = js.native
+  def decodeKey(key: String): String
   
-  def decodeValue(value: String): String = js.native
+  def decodeValue(value: String): String
   
-  def encodeKey(key: String): String = js.native
+  def encodeKey(key: String): String
   
-  def encodeValue(value: String): String = js.native
+  def encodeValue(value: String): String
 }
 object HttpParameterCodec {
   

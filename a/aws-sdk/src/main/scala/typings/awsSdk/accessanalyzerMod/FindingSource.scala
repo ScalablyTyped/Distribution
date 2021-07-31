@@ -2,21 +2,19 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindingSource extends StObject {
   
   /**
     * Includes details about how the access that generated the finding is granted. This is populated for Amazon S3 bucket findings.
     */
-  var detail: js.UndefOr[FindingSourceDetail] = js.native
+  var detail: js.UndefOr[FindingSourceDetail] = js.undefined
   
   /**
     * Indicates the type of access that generated the finding.
     */
-  var `type`: FindingSourceType = js.native
+  var `type`: FindingSourceType
 }
 object FindingSource {
   

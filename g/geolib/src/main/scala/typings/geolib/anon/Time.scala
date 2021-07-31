@@ -3,13 +3,11 @@ package typings.geolib.anon
 import typings.geolib.typesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Time extends StObject {
   
-  var time: Timestamp = js.native
+  var time: Timestamp
 }
 object Time {
   

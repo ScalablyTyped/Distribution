@@ -2,15 +2,13 @@ package typings.postmark.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Date extends StObject {
   
-  var Date: String = js.native
+  var Date: String
   
-  var Sent: Double = js.native
+  var Sent: Double
 }
 object Date {
   

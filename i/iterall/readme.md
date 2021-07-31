@@ -11,8 +11,8 @@ Minimal zero-dependency utilities for using JavaScript Iterables in all environm
 | Full name          | iterall |
 | Keywords           | es6, iterator, iterable, polyfill, for-of |
 | # releases         | 2 |
-| # dependents       | 170 |
-| # downloads        | 119040746 |
+| # dependents       | 200 |
+| # downloads        | 143890788 |
 | # stars            | 2 |
 
 ## Links

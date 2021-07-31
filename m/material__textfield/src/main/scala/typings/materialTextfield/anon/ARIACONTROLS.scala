@@ -2,31 +2,29 @@ package typings.materialTextfield.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ARIACONTROLS extends StObject {
   
-  var ARIA_CONTROLS: String = js.native
+  var ARIA_CONTROLS: String
   
-  var ARIA_DESCRIBEDBY: String = js.native
+  var ARIA_DESCRIBEDBY: String
   
-  var INPUT_SELECTOR: String = js.native
+  var INPUT_SELECTOR: String
   
-  var LABEL_SELECTOR: String = js.native
+  var LABEL_SELECTOR: String
   
-  var LEADING_ICON_SELECTOR: String = js.native
+  var LEADING_ICON_SELECTOR: String
   
-  var LINE_RIPPLE_SELECTOR: String = js.native
+  var LINE_RIPPLE_SELECTOR: String
   
-  var OUTLINE_SELECTOR: String = js.native
+  var OUTLINE_SELECTOR: String
   
-  var PREFIX_SELECTOR: String = js.native
+  var PREFIX_SELECTOR: String
   
-  var SUFFIX_SELECTOR: String = js.native
+  var SUFFIX_SELECTOR: String
   
-  var TRAILING_ICON_SELECTOR: String = js.native
+  var TRAILING_ICON_SELECTOR: String
 }
 object ARIACONTROLS {
   

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,18 +19,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       Logger.log('The cell does not have a data validation rule.')
   *     }
   */
-@js.native
 trait DataValidation extends StObject {
   
-  def copy(): DataValidationBuilder = js.native
+  def copy(): DataValidationBuilder
   
-  def getAllowInvalid(): Boolean = js.native
+  def getAllowInvalid(): Boolean
   
-  def getCriteriaType(): DataValidationCriteria = js.native
+  def getCriteriaType(): DataValidationCriteria
   
-  def getCriteriaValues(): js.Array[_] = js.native
+  def getCriteriaValues(): js.Array[js.Any]
   
-  def getHelpText(): String = js.native
+  def getHelpText(): String
 }
 object DataValidation {
   
@@ -40,7 +38,7 @@ object DataValidation {
     copy: () => DataValidationBuilder,
     getAllowInvalid: () => Boolean,
     getCriteriaType: () => DataValidationCriteria,
-    getCriteriaValues: () => js.Array[_],
+    getCriteriaValues: () => js.Array[js.Any],
     getHelpText: () => String
   ): DataValidation = {
     val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getAllowInvalid = js.Any.fromFunction0(getAllowInvalid), getCriteriaType = js.Any.fromFunction0(getCriteriaType), getCriteriaValues = js.Any.fromFunction0(getCriteriaValues), getHelpText = js.Any.fromFunction0(getHelpText))
@@ -60,7 +58,7 @@ object DataValidation {
     def setGetCriteriaType(value: () => DataValidationCriteria): Self = StObject.set(x, "getCriteriaType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCriteriaValues(value: () => js.Array[_]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
+    def setGetCriteriaValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))

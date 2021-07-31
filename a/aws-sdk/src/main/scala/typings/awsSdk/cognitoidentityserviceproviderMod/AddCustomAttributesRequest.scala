@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddCustomAttributesRequest extends StObject {
   
   /**
     * An array of custom attributes, such as Mutable and Name.
     */
-  var CustomAttributes: CustomAttributesListType = js.native
+  var CustomAttributes: CustomAttributesListType
   
   /**
     * The user pool ID for the user pool where you want to add custom attributes.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object AddCustomAttributesRequest {
   

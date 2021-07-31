@@ -8,21 +8,19 @@ import typings.mysql2.mysql2Strings.ResultSetHeader
 import typings.mysql2.mysql2Strings.RowDataPacket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var name: FieldPacket = js.native
+    var name: FieldPacket
   }
   object `0` {
     
     @scala.inline
-    def apply(name: FieldPacket): `0` = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(name = "FieldPacket")
       __obj.asInstanceOf[`0`]
     }
     
@@ -34,16 +32,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
-    var name: OkPacket = js.native
+    var name: OkPacket
   }
   object `1` {
     
     @scala.inline
-    def apply(name: OkPacket): `1` = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): `1` = {
+      val __obj = js.Dynamic.literal(name = "OkPacket")
       __obj.asInstanceOf[`1`]
     }
     
@@ -55,16 +52,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `2` extends StObject {
     
-    var name: ResultSetHeader = js.native
+    var name: ResultSetHeader
   }
   object `2` {
     
     @scala.inline
-    def apply(name: ResultSetHeader): `2` = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): `2` = {
+      val __obj = js.Dynamic.literal(name = "ResultSetHeader")
       __obj.asInstanceOf[`2`]
     }
     
@@ -76,16 +72,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `3` extends StObject {
     
-    var name: RowDataPacket = js.native
+    var name: RowDataPacket
   }
   object `3` {
     
     @scala.inline
-    def apply(name: RowDataPacket): `3` = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): `3` = {
+      val __obj = js.Dynamic.literal(name = "RowDataPacket")
       __obj.asInstanceOf[`3`]
     }
     
@@ -97,12 +92,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Command extends StObject {
     
-    var command: String = js.native
+    var command: String
     
-    var connection: Connection = js.native
+    var connection: Connection
   }
   object Command {
     
@@ -123,16 +117,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: Field = js.native
+    var name: Field
   }
   object Name {
     
     @scala.inline
-    def apply(name: Field): Name = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): Name = {
+      val __obj = js.Dynamic.literal(name = "Field")
       __obj.asInstanceOf[Name]
     }
     

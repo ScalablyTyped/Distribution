@@ -2,26 +2,24 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConnectorProfileRequest extends StObject {
   
   /**
     *  Indicates the connection mode and if it is public or private. 
     */
-  var connectionMode: ConnectionMode = js.native
+  var connectionMode: ConnectionMode
   
   /**
     *  Defines the connector-specific profile configuration and credentials. 
     */
-  var connectorProfileConfig: ConnectorProfileConfig = js.native
+  var connectorProfileConfig: ConnectorProfileConfig
   
   /**
     *  The name of the connector profile and is unique for each ConnectorProfile in the AWS Account. 
     */
-  var connectorProfileName: ConnectorProfileName = js.native
+  var connectorProfileName: ConnectorProfileName
 }
 object UpdateConnectorProfileRequest {
   

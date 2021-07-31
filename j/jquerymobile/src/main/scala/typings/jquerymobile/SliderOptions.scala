@@ -2,23 +2,21 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderOptions extends StObject {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var highlight: js.UndefOr[Boolean] = js.native
+  var highlight: js.UndefOr[Boolean] = js.undefined
   
-  var initSelector: js.UndefOr[String] = js.native
+  var initSelector: js.UndefOr[String] = js.undefined
   
-  var mini: js.UndefOr[Boolean] = js.native
+  var mini: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var trackTheme: js.UndefOr[String] = js.native
+  var trackTheme: js.UndefOr[String] = js.undefined
 }
 object SliderOptions {
   

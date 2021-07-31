@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * One part of a key-value pair that makes up a tag. A key is a general label that acts like a category for more specific tag values.
     */
-  var Key: TagKey = js.native
+  var Key: TagKey
   
   /**
     * The optional part of a key-value pair that makes up a tag. A value acts as a descriptor in a tag category (key).
     */
-  var Value: TagValue = js.native
+  var Value: TagValue
 }
 object Tag {
   

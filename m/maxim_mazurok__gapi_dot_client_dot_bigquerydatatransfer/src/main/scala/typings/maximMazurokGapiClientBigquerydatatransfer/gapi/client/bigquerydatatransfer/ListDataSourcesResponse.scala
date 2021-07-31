@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigqueryd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDataSourcesResponse extends StObject {
   
   /** List of supported data sources and their transfer settings. */
-  var dataSources: js.UndefOr[js.Array[DataSource]] = js.native
+  var dataSources: js.UndefOr[js.Array[DataSource]] = js.undefined
   
   /** Output only. The next-pagination token. For multiple-page list results, this token can be used as the `ListDataSourcesRequest.page_token` to request the next page of list results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListDataSourcesResponse {
   

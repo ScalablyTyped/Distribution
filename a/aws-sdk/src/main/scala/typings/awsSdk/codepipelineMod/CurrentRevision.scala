@@ -2,31 +2,29 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentRevision extends StObject {
   
   /**
     * The change identifier for the current revision.
     */
-  var changeIdentifier: RevisionChangeIdentifier = js.native
+  var changeIdentifier: RevisionChangeIdentifier
   
   /**
     * The date and time when the most recent revision of the artifact was created, in timestamp format.
     */
-  var created: js.UndefOr[Time] = js.native
+  var created: js.UndefOr[Time] = js.undefined
   
   /**
     * The revision ID of the current version of an artifact.
     */
-  var revision: Revision = js.native
+  var revision: Revision
   
   /**
     * The summary of the most recent revision of the artifact.
     */
-  var revisionSummary: js.UndefOr[RevisionSummary] = js.native
+  var revisionSummary: js.UndefOr[RevisionSummary] = js.undefined
 }
 object CurrentRevision {
   

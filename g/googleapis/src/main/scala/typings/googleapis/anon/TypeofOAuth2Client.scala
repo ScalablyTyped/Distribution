@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.googleAuthLibrary.mod.OAuth2Client
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofOAuth2Client extends Instantiable0[OAuth2Client] {
+trait TypeofOAuth2Client
+  extends StObject
+     with Instantiable0[OAuth2Client] {
   
   /**
     * Clock skew - five minutes in seconds

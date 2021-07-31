@@ -9,17 +9,15 @@ import typings.react.mod.Ref
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClassName[Theme] extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
   }
   object ClassName {
     
@@ -30,7 +28,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ClassNameMutableBuilder[Self <: ClassName[_], Theme] (val x: Self with ClassName[Theme]) extends AnyVal {
+    implicit class ClassNameMutableBuilder[Self <: ClassName[?], Theme] (val x: Self & ClassName[Theme]) extends AnyVal {
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
@@ -46,32 +44,31 @@ object anon {
     }
   }
   
-  @js.native
-  trait Classes[StylesType /* <: ClassKeyInferable[_, _] */] extends StObject {
+  trait Classes[StylesType /* <: ClassKeyInferable[js.Any, js.Any] */] extends StObject {
     
-    var classes: ClassNameMap[ClassKeyOfStyles[StylesType]] = js.native
+    var classes: ClassNameMap[ClassKeyOfStyles[StylesType]]
     
-    var innerRef: js.UndefOr[Ref[_]] = js.native
+    var innerRef: js.UndefOr[Ref[js.Any]] = js.undefined
   }
   object Classes {
     
     @scala.inline
-    def apply[StylesType /* <: ClassKeyInferable[_, _] */](classes: ClassNameMap[ClassKeyOfStyles[StylesType]]): Classes[StylesType] = {
+    def apply[StylesType /* <: ClassKeyInferable[js.Any, js.Any] */](classes: ClassNameMap[ClassKeyOfStyles[StylesType]]): Classes[StylesType] = {
       val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Classes[StylesType]]
     }
     
     @scala.inline
-    implicit class ClassesMutableBuilder[Self <: Classes[_], StylesType /* <: ClassKeyInferable[_, _] */] (val x: Self with Classes[StylesType]) extends AnyVal {
+    implicit class ClassesMutableBuilder[Self <: Classes[?], StylesType /* <: ClassKeyInferable[js.Any, js.Any] */] (val x: Self & Classes[StylesType]) extends AnyVal {
       
       @scala.inline
       def setClasses(value: ClassNameMap[ClassKeyOfStyles[StylesType]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRef(value: Ref[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
@@ -81,25 +78,24 @@ object anon {
     }
   }
   
-  @js.native
-  trait NameProps[Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWithProps[_] */] extends StObject {
+  trait NameProps[Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWithProps[js.Any] */] extends StObject {
     
-    var name: Name = js.native
+    var name: Name
     
-    var props: Props = js.native
+    var props: Props
     
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
   }
   object NameProps {
     
     @scala.inline
-    def apply[Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWithProps[_] */](name: Name, props: Props): NameProps[Props, Name, Theme] = {
+    def apply[Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWithProps[js.Any] */](name: Name, props: Props): NameProps[Props, Name, Theme] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[NameProps[Props, Name, Theme]]
     }
     
     @scala.inline
-    implicit class NamePropsMutableBuilder[Self <: NameProps[_, _, _], Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWithProps[_] */] (val x: Self with (NameProps[Props, Name, Theme])) extends AnyVal {
+    implicit class NamePropsMutableBuilder[Self <: NameProps[?, ?, ?], Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWithProps[js.Any] */] (val x: Self & (NameProps[Props, Name, Theme])) extends AnyVal {
       
       @scala.inline
       def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -115,13 +111,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Props[Name /* <: /* keyof any */ String */] extends StObject {
     
     var props: Record[
         Name, 
         /* import warning: importer.ImportType#apply Failed type conversion: infer Props */ js.Any
-      ] = js.native
+      ]
   }
   object Props {
     
@@ -137,7 +132,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[_], Name /* <: /* keyof any */ String */] (val x: Self with Props[Name]) extends AnyVal {
+    implicit class PropsMutableBuilder[Self <: Props[?], Name /* <: /* keyof any */ String */] (val x: Self & Props[Name]) extends AnyVal {
       
       @scala.inline
       def setProps(
@@ -149,31 +144,29 @@ object anon {
     }
   }
   
-  @js.native
-  trait Theme[StylesType /* <: ClassKeyInferable[_, _] */] extends StObject {
+  trait Theme[StylesType /* <: ClassKeyInferable[js.Any, js.Any] */] extends StObject {
     
-    var theme: ThemeOfStyles[StylesType] = js.native
+    var theme: ThemeOfStyles[StylesType]
   }
   object Theme {
     
     @scala.inline
-    def apply[StylesType /* <: ClassKeyInferable[_, _] */](theme: ThemeOfStyles[StylesType]): Theme[StylesType] = {
+    def apply[StylesType /* <: ClassKeyInferable[js.Any, js.Any] */](theme: ThemeOfStyles[StylesType]): Theme[StylesType] = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[Theme[StylesType]]
     }
     
     @scala.inline
-    implicit class ThemeMutableBuilder[Self <: Theme[_], StylesType /* <: ClassKeyInferable[_, _] */] (val x: Self with Theme[StylesType]) extends AnyVal {
+    implicit class ThemeMutableBuilder[Self <: Theme[?], StylesType /* <: ClassKeyInferable[js.Any, js.Any] */] (val x: Self & Theme[StylesType]) extends AnyVal {
       
       @scala.inline
       def setTheme(value: ThemeOfStyles[StylesType]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ThemeTheme[Theme] extends StObject {
     
-    var theme: Theme = js.native
+    var theme: Theme
   }
   object ThemeTheme {
     
@@ -184,7 +177,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ThemeThemeMutableBuilder[Self <: ThemeTheme[_], Theme] (val x: Self with ThemeTheme[Theme]) extends AnyVal {
+    implicit class ThemeThemeMutableBuilder[Self <: ThemeTheme[?], Theme] (val x: Self & ThemeTheme[Theme]) extends AnyVal {
       
       @scala.inline
       def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])

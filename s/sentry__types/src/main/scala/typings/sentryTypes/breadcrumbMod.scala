@@ -4,27 +4,25 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sentryTypes.severityMod.Severity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbMod {
   
-  @js.native
   trait Breadcrumb extends StObject {
     
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var event_id: js.UndefOr[String] = js.native
+    var event_id: js.UndefOr[String] = js.undefined
     
-    var level: js.UndefOr[Severity] = js.native
+    var level: js.UndefOr[Severity] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Breadcrumb {
     

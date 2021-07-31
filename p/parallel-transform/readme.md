@@ -11,8 +11,8 @@ Transform stream that allows you to run your transforms in parallel without chan
 | Full name          | parallel-transform |
 | Keywords           | transform, stream, parallel, preserve, order |
 | # releases         | 2 |
-| # dependents       | 77 |
-| # downloads        | 386981658 |
+| # dependents       | 87 |
+| # downloads        | 465796813 |
 | # stars            | 3 |
 
 ## Links

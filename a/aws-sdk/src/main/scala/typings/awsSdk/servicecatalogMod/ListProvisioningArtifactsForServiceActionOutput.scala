@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProvisioningArtifactsForServiceActionOutput extends StObject {
   
   /**
     * The page token to use to retrieve the next set of results. If there are no additional results, this value is null.
     */
-  var NextPageToken: js.UndefOr[PageToken] = js.native
+  var NextPageToken: js.UndefOr[PageToken] = js.undefined
   
   /**
     * An array of objects with information about product views and provisioning artifacts.
     */
-  var ProvisioningArtifactViews: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactViews] = js.native
+  var ProvisioningArtifactViews: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactViews] = js.undefined
 }
 object ListProvisioningArtifactsForServiceActionOutput {
   

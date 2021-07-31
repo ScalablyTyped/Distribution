@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryArgProfiles extends StObject {
   
   /**
     * Number of items for query argument-profile mapping for field-level encryption.
     */
-  var Items: js.UndefOr[QueryArgProfileList] = js.native
+  var Items: js.UndefOr[QueryArgProfileList] = js.undefined
   
   /**
     * Number of profiles for query argument-profile mapping for field-level encryption.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object QueryArgProfiles {
   

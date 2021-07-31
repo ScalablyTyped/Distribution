@@ -2,27 +2,25 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains fields to add or remove students from a course work or
   * announcement where the `assigneeMode` is set to `INDIVIDUAL_STUDENTS`.
   */
-@js.native
 trait SchemaModifyIndividualStudentsOptions extends StObject {
   
   /**
     * Ids of students to be added as having access to this
     * coursework/announcement.
     */
-  var addStudentIds: js.UndefOr[js.Array[String]] = js.native
+  var addStudentIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Ids of students to be removed from having access to this
     * coursework/announcement.
     */
-  var removeStudentIds: js.UndefOr[js.Array[String]] = js.native
+  var removeStudentIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaModifyIndividualStudentsOptions {
   

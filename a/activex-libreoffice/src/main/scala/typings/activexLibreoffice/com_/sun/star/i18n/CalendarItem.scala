@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,15 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A sequence of CalendarItems is contained in {@link Calendar.Days} , {@link Calendar.Months} , {@link Calendar.Eras}
   */
-@js.native
 trait CalendarItem extends StObject {
   
-  var AbbrevName: String = js.native
+  var AbbrevName: String
   
-  var FullName: String = js.native
+  var FullName: String
   
   /** A unique ID for an entry of this type, usually the lower case abbreviated English name, for example, **"sun"** for Sunday. */
-  var ID: String = js.native
+  var ID: String
 }
 object CalendarItem {
   

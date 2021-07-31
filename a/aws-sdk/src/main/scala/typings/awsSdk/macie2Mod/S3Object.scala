@@ -2,71 +2,69 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Object extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the bucket that contains the object.
     */
-  var bucketArn: js.UndefOr[string] = js.native
+  var bucketArn: js.UndefOr[string] = js.undefined
   
   /**
     * The entity tag (ETag) that identifies the affected version of the object. If the object was overwritten or changed after Amazon Macie produced the finding, this value might be different from the current ETag for the object.
     */
-  var eTag: js.UndefOr[string] = js.native
+  var eTag: js.UndefOr[string] = js.undefined
   
   /**
     * The file name extension of the object. If the object doesn't have a file name extension, this value is "".
     */
-  var extension: js.UndefOr[string] = js.native
+  var `extension`: js.UndefOr[string] = js.undefined
   
   /**
     * The full key (name) that's assigned to the object.
     */
-  var key: js.UndefOr[string] = js.native
+  var key: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the object was last modified.
     */
-  var lastModified: js.UndefOr[timestampIso8601] = js.native
+  var lastModified: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The path to the object, including the full key (name).
     */
-  var path: js.UndefOr[string] = js.native
+  var path: js.UndefOr[string] = js.undefined
   
   /**
     * Specifies whether the object is publicly accessible due to the combination of permissions settings that apply to the object.
     */
-  var publicAccess: js.UndefOr[boolean] = js.native
+  var publicAccess: js.UndefOr[boolean] = js.undefined
   
   /**
     * The type of server-side encryption that's used for the object.
     */
-  var serverSideEncryption: js.UndefOr[ServerSideEncryption] = js.native
+  var serverSideEncryption: js.UndefOr[ServerSideEncryption] = js.undefined
   
   /**
     * The total storage size, in bytes, of the object.
     */
-  var size: js.UndefOr[long] = js.native
+  var size: js.UndefOr[long] = js.undefined
   
   /**
     * The storage class of the object.
     */
-  var storageClass: js.UndefOr[StorageClass] = js.native
+  var storageClass: js.UndefOr[StorageClass] = js.undefined
   
   /**
     * The tags that are associated with the object.
     */
-  var tags: js.UndefOr[KeyValuePairList] = js.native
+  var tags: js.UndefOr[KeyValuePairList] = js.undefined
   
   /**
     * The identifier for the affected version of the object.
     */
-  var versionId: js.UndefOr[string] = js.native
+  var versionId: js.UndefOr[string] = js.undefined
 }
 object S3Object {
   

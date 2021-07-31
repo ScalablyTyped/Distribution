@@ -2,40 +2,38 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RepoSource describes the location of the source in a Google Cloud Source
   * Repository.
   */
-@js.native
 trait SchemaRepoSource extends StObject {
   
   /**
     * Name of the branch to build.
     */
-  var branchName: js.UndefOr[String] = js.native
+  var branchName: js.UndefOr[String] = js.undefined
   
   /**
     * Explicit commit SHA to build.
     */
-  var commitSha: js.UndefOr[String] = js.native
+  var commitSha: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the project that owns the repo.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the repo.
     */
-  var repoName: js.UndefOr[String] = js.native
+  var repoName: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the tag to build.
     */
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
 }
 object SchemaRepoSource {
   

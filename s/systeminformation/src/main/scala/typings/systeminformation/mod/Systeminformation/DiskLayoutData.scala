@@ -2,45 +2,43 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiskLayoutData extends StObject {
   
-  var bytesPerSector: Double = js.native
+  var bytesPerSector: Double
   
-  var device: String = js.native
+  var device: String
   
-  var firmwareRevision: String = js.native
+  var firmwareRevision: String
   
-  var interfaceType: String = js.native
+  var interfaceType: String
   
-  var name: String = js.native
+  var name: String
   
-  var sectorsPerTrack: Double = js.native
+  var sectorsPerTrack: Double
   
-  var serialNum: String = js.native
+  var serialNum: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var smartData: js.UndefOr[SmartData] = js.native
+  var smartData: js.UndefOr[SmartData] = js.undefined
   
-  var smartStatus: String = js.native
+  var smartStatus: String
   
-  var totalCylinders: Double = js.native
+  var totalCylinders: Double
   
-  var totalHeads: Double = js.native
+  var totalHeads: Double
   
-  var totalSectors: Double = js.native
+  var totalSectors: Double
   
-  var totalTracks: Double = js.native
+  var totalTracks: Double
   
-  var tracksPerCylinder: Double = js.native
+  var tracksPerCylinder: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var vendor: String = js.native
+  var vendor: String
 }
 object DiskLayoutData {
   

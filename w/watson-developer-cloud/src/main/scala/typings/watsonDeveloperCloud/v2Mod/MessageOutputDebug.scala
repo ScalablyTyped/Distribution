@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Additional detailed information about a message response and how it was generated. */
-@js.native
 trait MessageOutputDebug extends StObject {
   
   /** Assistant sets this to true when this message response concludes or interrupts a dialog. */
-  var branch_exited: js.UndefOr[Boolean] = js.native
+  var branch_exited: js.UndefOr[Boolean] = js.undefined
   
   /** When `branch_exited` is set to `true` by the Assistant, the `branch_exited_reason` specifies whether the dialog completed by itself or got interrupted. */
-  var branch_exited_reason: js.UndefOr[String] = js.native
+  var branch_exited_reason: js.UndefOr[String] = js.undefined
   
   /** An array of up to 50 messages logged with the request. */
-  var log_messages: js.UndefOr[js.Array[DialogLogMessage]] = js.native
+  var log_messages: js.UndefOr[js.Array[DialogLogMessage]] = js.undefined
   
   /** An array of objects containing detailed diagnostic information about the nodes that were triggered during processing of the input message. */
-  var nodes_visited: js.UndefOr[js.Array[DialogNodesVisited]] = js.native
+  var nodes_visited: js.UndefOr[js.Array[DialogNodesVisited]] = js.undefined
 }
 object MessageOutputDebug {
   

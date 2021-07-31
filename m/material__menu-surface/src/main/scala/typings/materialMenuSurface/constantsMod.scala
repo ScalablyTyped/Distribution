@@ -2,7 +2,6 @@ package typings.materialMenuSurface
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
@@ -21,39 +20,55 @@ object constantsMod {
   object Corner extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Corner with Double] = js.native
+    def apply(value: Double): js.UndefOr[Corner & Double] = js.native
     
     @js.native
-    sealed trait BOTTOM_END extends Corner
-    /* 13 */ val BOTTOM_END: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_END with Double = js.native
+    sealed trait BOTTOM_END
+      extends StObject
+         with Corner
+    /* 13 */ val BOTTOM_END: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_END & Double = js.native
     
     @js.native
-    sealed trait BOTTOM_LEFT extends Corner
-    /* 1 */ val BOTTOM_LEFT: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_LEFT with Double = js.native
+    sealed trait BOTTOM_LEFT
+      extends StObject
+         with Corner
+    /* 1 */ val BOTTOM_LEFT: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_LEFT & Double = js.native
     
     @js.native
-    sealed trait BOTTOM_RIGHT extends Corner
-    /* 5 */ val BOTTOM_RIGHT: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_RIGHT with Double = js.native
+    sealed trait BOTTOM_RIGHT
+      extends StObject
+         with Corner
+    /* 5 */ val BOTTOM_RIGHT: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_RIGHT & Double = js.native
     
     @js.native
-    sealed trait BOTTOM_START extends Corner
-    /* 9 */ val BOTTOM_START: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_START with Double = js.native
+    sealed trait BOTTOM_START
+      extends StObject
+         with Corner
+    /* 9 */ val BOTTOM_START: typings.materialMenuSurface.constantsMod.Corner.BOTTOM_START & Double = js.native
     
     @js.native
-    sealed trait TOP_END extends Corner
-    /* 12 */ val TOP_END: typings.materialMenuSurface.constantsMod.Corner.TOP_END with Double = js.native
+    sealed trait TOP_END
+      extends StObject
+         with Corner
+    /* 12 */ val TOP_END: typings.materialMenuSurface.constantsMod.Corner.TOP_END & Double = js.native
     
     @js.native
-    sealed trait TOP_LEFT extends Corner
-    /* 0 */ val TOP_LEFT: typings.materialMenuSurface.constantsMod.Corner.TOP_LEFT with Double = js.native
+    sealed trait TOP_LEFT
+      extends StObject
+         with Corner
+    /* 0 */ val TOP_LEFT: typings.materialMenuSurface.constantsMod.Corner.TOP_LEFT & Double = js.native
     
     @js.native
-    sealed trait TOP_RIGHT extends Corner
-    /* 4 */ val TOP_RIGHT: typings.materialMenuSurface.constantsMod.Corner.TOP_RIGHT with Double = js.native
+    sealed trait TOP_RIGHT
+      extends StObject
+         with Corner
+    /* 4 */ val TOP_RIGHT: typings.materialMenuSurface.constantsMod.Corner.TOP_RIGHT & Double = js.native
     
     @js.native
-    sealed trait TOP_START extends Corner
-    /* 8 */ val TOP_START: typings.materialMenuSurface.constantsMod.Corner.TOP_START with Double = js.native
+    sealed trait TOP_START
+      extends StObject
+         with Corner
+    /* 8 */ val TOP_START: typings.materialMenuSurface.constantsMod.Corner.TOP_START & Double = js.native
   }
   
   @js.native
@@ -66,23 +81,31 @@ object constantsMod {
   object CornerBit extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[CornerBit with Double] = js.native
+    def apply(value: Double): js.UndefOr[CornerBit & Double] = js.native
     
     @js.native
-    sealed trait BOTTOM extends CornerBit
-    /* 1 */ val BOTTOM: typings.materialMenuSurface.constantsMod.CornerBit.BOTTOM with Double = js.native
+    sealed trait BOTTOM
+      extends StObject
+         with CornerBit
+    /* 1 */ val BOTTOM: typings.materialMenuSurface.constantsMod.CornerBit.BOTTOM & Double = js.native
     
     @js.native
-    sealed trait CENTER extends CornerBit
-    /* 2 */ val CENTER: typings.materialMenuSurface.constantsMod.CornerBit.CENTER with Double = js.native
+    sealed trait CENTER
+      extends StObject
+         with CornerBit
+    /* 2 */ val CENTER: typings.materialMenuSurface.constantsMod.CornerBit.CENTER & Double = js.native
     
     @js.native
-    sealed trait FLIP_RTL extends CornerBit
-    /* 8 */ val FLIP_RTL: typings.materialMenuSurface.constantsMod.CornerBit.FLIP_RTL with Double = js.native
+    sealed trait FLIP_RTL
+      extends StObject
+         with CornerBit
+    /* 8 */ val FLIP_RTL: typings.materialMenuSurface.constantsMod.CornerBit.FLIP_RTL & Double = js.native
     
     @js.native
-    sealed trait RIGHT extends CornerBit
-    /* 4 */ val RIGHT: typings.materialMenuSurface.constantsMod.CornerBit.RIGHT with Double = js.native
+    sealed trait RIGHT
+      extends StObject
+         with CornerBit
+    /* 4 */ val RIGHT: typings.materialMenuSurface.constantsMod.CornerBit.RIGHT & Double = js.native
   }
   
   /**

@@ -4,26 +4,24 @@ import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParticleEmitterFrameConfig extends StObject {
   
   /**
     * Whether texture frames will be assigned consecutively (true) or at random (false).
     */
-  var cycle: js.UndefOr[Boolean] = js.native
+  var cycle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * One or more texture frames.
     */
-  var frames: js.UndefOr[Double | (js.Array[Double | Frame | String]) | String | Frame] = js.native
+  var frames: js.UndefOr[Double | (js.Array[Double | Frame | String]) | String | Frame] = js.undefined
   
   /**
     * The number of consecutive particles receiving each texture frame, when `cycle` is true.
     */
-  var quantity: js.UndefOr[integer] = js.native
+  var quantity: js.UndefOr[integer] = js.undefined
 }
 object ParticleEmitterFrameConfig {
   

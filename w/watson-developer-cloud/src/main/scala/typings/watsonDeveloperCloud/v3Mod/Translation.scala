@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Translation. */
-@js.native
 trait Translation extends StObject {
   
   /** Translation output in UTF-8. */
-  var translation_output: String = js.native
+  var translation_output: String
 }
 object Translation {
   

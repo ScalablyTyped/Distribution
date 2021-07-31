@@ -5,87 +5,85 @@ import typings.pulumiAws.inputMod.ec2.GetVpcPeeringConnectionFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getVpcPeeringConnectionMod {
   
-  @JSImport("@pulumi/aws/ec2/getVpcPeeringConnection", "getVpcPeeringConnection")
+  @JSImport("@pulumi/aws/ec2/getVpcPeeringConnection", JSImport.Namespace)
   @js.native
-  def getVpcPeeringConnection(): js.Promise[GetVpcPeeringConnectionResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcPeeringConnection", "getVpcPeeringConnection")
-  @js.native
-  def getVpcPeeringConnection(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVpcPeeringConnectionResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcPeeringConnection", "getVpcPeeringConnection")
-  @js.native
-  def getVpcPeeringConnection(args: GetVpcPeeringConnectionArgs): js.Promise[GetVpcPeeringConnectionResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcPeeringConnection", "getVpcPeeringConnection")
-  @js.native
-  def getVpcPeeringConnection(args: GetVpcPeeringConnectionArgs, opts: InvokeOptions): js.Promise[GetVpcPeeringConnectionResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getVpcPeeringConnection(): js.Promise[GetVpcPeeringConnectionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnection")().asInstanceOf[js.Promise[GetVpcPeeringConnectionResult]]
+  @scala.inline
+  def getVpcPeeringConnection(args: Unit, opts: InvokeOptions): js.Promise[GetVpcPeeringConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnection")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcPeeringConnectionResult]]
+  @scala.inline
+  def getVpcPeeringConnection(args: GetVpcPeeringConnectionArgs): js.Promise[GetVpcPeeringConnectionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnection")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcPeeringConnectionResult]]
+  @scala.inline
+  def getVpcPeeringConnection(args: GetVpcPeeringConnectionArgs, opts: InvokeOptions): js.Promise[GetVpcPeeringConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnection")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcPeeringConnectionResult]]
+  
   trait GetVpcPeeringConnectionArgs extends StObject {
     
     /**
       * The CIDR block of the requester VPC of the specific VPC Peering Connection to retrieve.
       */
-    val cidrBlock: js.UndefOr[String] = js.native
+    val cidrBlock: js.UndefOr[String] = js.undefined
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetVpcPeeringConnectionFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetVpcPeeringConnectionFilter]] = js.undefined
     
     /**
       * The ID of the specific VPC Peering Connection to retrieve.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * The AWS account ID of the owner of the requester VPC of the specific VPC Peering Connection to retrieve.
       */
-    val ownerId: js.UndefOr[String] = js.native
+    val ownerId: js.UndefOr[String] = js.undefined
     
     /**
       * The CIDR block of the accepter VPC of the specific VPC Peering Connection to retrieve.
       */
-    val peerCidrBlock: js.UndefOr[String] = js.native
+    val peerCidrBlock: js.UndefOr[String] = js.undefined
     
     /**
       * The AWS account ID of the owner of the accepter VPC of the specific VPC Peering Connection to retrieve.
       */
-    val peerOwnerId: js.UndefOr[String] = js.native
+    val peerOwnerId: js.UndefOr[String] = js.undefined
     
     /**
       * The region of the accepter VPC of the specific VPC Peering Connection to retrieve.
       */
-    val peerRegion: js.UndefOr[String] = js.native
+    val peerRegion: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the accepter VPC of the specific VPC Peering Connection to retrieve.
       */
-    val peerVpcId: js.UndefOr[String] = js.native
+    val peerVpcId: js.UndefOr[String] = js.undefined
     
     /**
       * The region of the requester VPC of the specific VPC Peering Connection to retrieve.
       */
-    val region: js.UndefOr[String] = js.native
+    val region: js.UndefOr[String] = js.undefined
     
     /**
       * The status of the specific VPC Peering Connection to retrieve.
       */
-    val status: js.UndefOr[String] = js.native
+    val status: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match
       * a pair on the desired VPC Peering Connection.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The ID of the requester VPC of the specific VPC Peering Connection to retrieve.
       */
-    val vpcId: js.UndefOr[String] = js.native
+    val vpcId: js.UndefOr[String] = js.undefined
   }
   object GetVpcPeeringConnectionArgs {
     
@@ -175,44 +173,43 @@ object getVpcPeeringConnectionMod {
     }
   }
   
-  @js.native
   trait GetVpcPeeringConnectionResult extends StObject {
     
     /**
       * A configuration block that describes [VPC Peering Connection]
       * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the accepter VPC.
       */
-    val accepter: StringDictionary[Boolean] = js.native
+    val accepter: StringDictionary[Boolean]
     
-    val cidrBlock: String = js.native
+    val cidrBlock: String
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetVpcPeeringConnectionFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetVpcPeeringConnectionFilter]] = js.undefined
     
-    val id: String = js.native
+    val id: String
     
-    val ownerId: String = js.native
+    val ownerId: String
     
-    val peerCidrBlock: String = js.native
+    val peerCidrBlock: String
     
-    val peerOwnerId: String = js.native
+    val peerOwnerId: String
     
-    val peerRegion: String = js.native
+    val peerRegion: String
     
-    val peerVpcId: String = js.native
+    val peerVpcId: String
     
-    val region: String = js.native
+    val region: String
     
     /**
       * A configuration block that describes [VPC Peering Connection]
       * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the requester VPC.
       */
-    val requester: StringDictionary[Boolean] = js.native
+    val requester: StringDictionary[Boolean]
     
-    val status: String = js.native
+    val status: String
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val vpcId: String = js.native
+    val vpcId: String
   }
   object GetVpcPeeringConnectionResult {
     

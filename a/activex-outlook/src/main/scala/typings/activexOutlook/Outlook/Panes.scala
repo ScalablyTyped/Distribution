@@ -2,26 +2,24 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Panes extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: js.Any): js.Any = js.native
+  def Item(Index: js.Any): js.Any
   
   @JSName("Outlook.Panes_typekey")
-  var OutlookDotPanes_typekey: Panes = js.native
+  var OutlookDotPanes_typekey: Panes
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object Panes {
   

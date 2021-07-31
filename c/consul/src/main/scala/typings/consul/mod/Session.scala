@@ -9,7 +9,6 @@ import typings.consul.mod.Session.NodeOptions
 import typings.consul.mod.Session.RenewOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -120,20 +119,21 @@ trait Session extends StObject {
 }
 object Session {
   
-  @js.native
-  trait CreateOptions extends CommonOptions {
+  trait CreateOptions
+    extends StObject
+       with CommonOptions {
     
-    var behavior: js.UndefOr[String] = js.native
+    var behavior: js.UndefOr[String] = js.undefined
     
-    var checks: js.UndefOr[js.Array[String]] = js.native
+    var checks: js.UndefOr[js.Array[String]] = js.undefined
     
-    var lockdelay: js.UndefOr[String] = js.native
+    var lockdelay: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var node: js.UndefOr[String] = js.native
+    var node: js.UndefOr[String] = js.undefined
     
-    var ttl: js.UndefOr[String] = js.native
+    var ttl: js.UndefOr[String] = js.undefined
   }
   object CreateOptions {
     
@@ -187,10 +187,11 @@ object Session {
     }
   }
   
-  @js.native
-  trait DestroyOptions extends CommonOptions {
+  trait DestroyOptions
+    extends StObject
+       with CommonOptions {
     
-    var id: String = js.native
+    var id: String
   }
   object DestroyOptions {
     
@@ -210,10 +211,11 @@ object Session {
   
   type GetOptions = InfoOptions
   
-  @js.native
-  trait InfoOptions extends CommonOptions {
+  trait InfoOptions
+    extends StObject
+       with CommonOptions {
     
-    var id: String = js.native
+    var id: String
   }
   object InfoOptions {
     
@@ -231,8 +233,9 @@ object Session {
     }
   }
   
-  @js.native
-  trait ListOptions extends CommonOptions
+  trait ListOptions
+    extends StObject
+       with CommonOptions
   object ListOptions {
     
     @scala.inline
@@ -242,10 +245,11 @@ object Session {
     }
   }
   
-  @js.native
-  trait NodeOptions extends CommonOptions {
+  trait NodeOptions
+    extends StObject
+       with CommonOptions {
     
-    var node: String = js.native
+    var node: String
   }
   object NodeOptions {
     
@@ -263,10 +267,11 @@ object Session {
     }
   }
   
-  @js.native
-  trait RenewOptions extends CommonOptions {
+  trait RenewOptions
+    extends StObject
+       with CommonOptions {
     
-    var id: String = js.native
+    var id: String
   }
   object RenewOptions {
     

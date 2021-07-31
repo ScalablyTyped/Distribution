@@ -6,46 +6,44 @@ import typings.mangopay2NodejsSdk.mod.address.AddressType
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.UserLegalData, mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.RequiredUserLegalData | 'CompanyNumber' | 'LegalRepresentativeEmail' | 'LegalRepresentativeAddress' | 'HeadquartersAddress' | 'Tag'> */
-@js.native
 trait BaseUserLegalData extends StObject {
   
-  var CompanyNumber: js.UndefOr[String] = js.native
+  var CompanyNumber: js.UndefOr[String] = js.undefined
   
-  var Email: js.UndefOr[String] = js.native
+  var Email: js.UndefOr[String] = js.undefined
   
-  var HeadquartersAddress: js.UndefOr[AddressType] = js.native
+  var HeadquartersAddress: js.UndefOr[AddressType] = js.undefined
   
-  var LegalPersonType: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.LegalPersonType] = js.native
+  var LegalPersonType: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.LegalPersonType] = js.undefined
   
-  var LegalRepresentativeAddress: js.UndefOr[AddressType] = js.native
+  var LegalRepresentativeAddress: js.UndefOr[AddressType] = js.undefined
   
-  var LegalRepresentativeBirthday: js.UndefOr[Timestamp] = js.native
+  var LegalRepresentativeBirthday: js.UndefOr[Timestamp] = js.undefined
   
-  var LegalRepresentativeCountryOfResidence: js.UndefOr[CountryISO] = js.native
+  var LegalRepresentativeCountryOfResidence: js.UndefOr[CountryISO] = js.undefined
   
-  var LegalRepresentativeEmail: js.UndefOr[String] = js.native
+  var LegalRepresentativeEmail: js.UndefOr[String] = js.undefined
   
-  var LegalRepresentativeFirstName: js.UndefOr[String] = js.native
+  var LegalRepresentativeFirstName: js.UndefOr[String] = js.undefined
   
-  var LegalRepresentativeLastName: js.UndefOr[String] = js.native
+  var LegalRepresentativeLastName: js.UndefOr[String] = js.undefined
   
-  var LegalRepresentativeNationality: js.UndefOr[CountryISO] = js.native
+  var LegalRepresentativeNationality: js.UndefOr[CountryISO] = js.undefined
   
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
-  var PersonType: LEGAL = js.native
+  var PersonType: LEGAL
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
 }
 object BaseUserLegalData {
   
   @scala.inline
-  def apply(PersonType: LEGAL): BaseUserLegalData = {
-    val __obj = js.Dynamic.literal(PersonType = PersonType.asInstanceOf[js.Any])
+  def apply(): BaseUserLegalData = {
+    val __obj = js.Dynamic.literal(PersonType = "LEGAL")
     __obj.asInstanceOf[BaseUserLegalData]
   }
   

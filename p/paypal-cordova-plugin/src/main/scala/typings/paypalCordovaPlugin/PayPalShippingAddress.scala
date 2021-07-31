@@ -2,46 +2,44 @@ package typings.paypalCordovaPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PayPalShippingAddress extends StObject {
   
   /**
     * City name. 50 characters max.
     */
-  var city: String = js.native
+  var city: String
   
   /**
     * 2-letter country code. 2 characters max.
     */
-  var countryCode: String = js.native
+  var countryCode: String
   
   /**
     * Line 1 of the address (e.g., Number, street, etc). 100 characters max.
     */
-  var line1: String = js.native
+  var line1: String
   
   /**
     * Line 2 of the address (e.g., Suite, apt #, etc). 100 characters max. Optional.
     */
-  var line2: String = js.native
+  var line2: String
   
   /**
     * ZIP code or equivalent is usually required for countries that have them. 20 characters max. Required in certain countries.
     */
-  var postalCode: String = js.native
+  var postalCode: String
   
   /**
     * Name of the recipient at this address. 50 characters max.
     */
-  var recipientName: String = js.native
+  var recipientName: String
   
   /**
     * 2-letter code for US states, and the equivalent for other countries. 100 characters max. Required in certain countries.
     */
-  var state: String = js.native
+  var state: String
 }
 object PayPalShippingAddress {
   

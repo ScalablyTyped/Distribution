@@ -2,15 +2,13 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgValidatorValueRule extends StObject {
   
-  def getMessageType(): Unit = js.native
+  def getMessageType(): Unit
   
-  def isValid(options: js.Object, value: js.Object): Unit = js.native
+  def isValid(options: js.Object, value: js.Object): Unit
 }
 object IgValidatorValueRule {
   

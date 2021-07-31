@@ -2,13 +2,11 @@ package typings.yup.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Less extends StObject {
   
-  var less: Double = js.native
+  var less: Double
 }
 object Less {
   

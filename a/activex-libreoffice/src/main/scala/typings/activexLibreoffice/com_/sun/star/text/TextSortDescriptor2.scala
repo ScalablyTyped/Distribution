@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.table.TableSortField
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes sort criteria for sorting paragraphs or table contents in a text document.
   * @since OOo 1.1.2
   */
-@js.native
-trait TextSortDescriptor2 extends TableSortDescriptor2 {
+trait TextSortDescriptor2
+  extends StObject
+     with TableSortDescriptor2 {
   
   /** contains the character that marks the column separator when a selection of paragraphs is to be sorted. */
-  var Delimiter: String = js.native
+  var Delimiter: String
   
   /** determines if the content of a table or a selection of paragraphs is to be sorted. */
-  var IsSortInTable: Boolean = js.native
+  var IsSortInTable: Boolean
 }
 object TextSortDescriptor2 {
   

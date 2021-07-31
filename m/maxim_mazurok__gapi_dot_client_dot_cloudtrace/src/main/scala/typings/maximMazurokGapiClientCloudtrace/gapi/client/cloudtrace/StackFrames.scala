@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackFrames extends StObject {
   
   /** The number of stack frames that were dropped because there were too many stack frames. If this value is 0, then no stack frames were dropped. */
-  var droppedFramesCount: js.UndefOr[Double] = js.native
+  var droppedFramesCount: js.UndefOr[Double] = js.undefined
   
   /** Stack frames in this call stack. */
-  var frame: js.UndefOr[js.Array[StackFrame]] = js.native
+  var frame: js.UndefOr[js.Array[StackFrame]] = js.undefined
 }
 object StackFrames {
   

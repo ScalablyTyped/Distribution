@@ -3,25 +3,23 @@ package typings.nodeSql2.mod
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableDefinition[Name /* <: String */, Row] extends StObject {
   
   var columns: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
-    */ typings.nodeSql2.nodeSql2Strings.TableDefinition with TopLevel[Row] = js.native
+    */ typings.nodeSql2.nodeSql2Strings.TableDefinition & TopLevel[Row]
   
-  var dialect: js.UndefOr[SQLDialects] = js.native
+  var dialect: js.UndefOr[SQLDialects] = js.undefined
   
-  var foreignKeys: js.UndefOr[typings.nodeSql2.anon.Columns[Row]] = js.native
+  var foreignKeys: js.UndefOr[typings.nodeSql2.anon.Columns[Row]] = js.undefined
   
-  var isTemporary: js.UndefOr[Boolean] = js.native
+  var isTemporary: js.UndefOr[Boolean] = js.undefined
   
-  var name: Name = js.native
+  var name: Name
   
-  var schema: String = js.native
+  var schema: String
 }
 object TableDefinition {
   
@@ -29,7 +27,7 @@ object TableDefinition {
   def apply[Name /* <: String */, Row](
     columns: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
-    */ typings.nodeSql2.nodeSql2Strings.TableDefinition with TopLevel[Row],
+    */ typings.nodeSql2.nodeSql2Strings.TableDefinition & TopLevel[Row],
     name: Name,
     schema: String
   ): TableDefinition[Name, Row] = {
@@ -38,13 +36,13 @@ object TableDefinition {
   }
   
   @scala.inline
-  implicit class TableDefinitionMutableBuilder[Self <: TableDefinition[_, _], Name /* <: String */, Row] (val x: Self with (TableDefinition[Name, Row])) extends AnyVal {
+  implicit class TableDefinitionMutableBuilder[Self <: TableDefinition[?, ?], Name /* <: String */, Row] (val x: Self & (TableDefinition[Name, Row])) extends AnyVal {
     
     @scala.inline
     def setColumns(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
-      */ typings.nodeSql2.nodeSql2Strings.TableDefinition with TopLevel[Row]
+      */ typings.nodeSql2.nodeSql2Strings.TableDefinition & TopLevel[Row]
     ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline

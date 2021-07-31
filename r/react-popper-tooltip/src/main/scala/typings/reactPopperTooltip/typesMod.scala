@@ -14,7 +14,6 @@ import typings.std.HTMLElement
 import typings.std.MutationObserverInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -28,11 +27,11 @@ object typesMod {
     var triggerRef: Ref = js.native
   }
   
-  @js.native
   trait GetArrowPropsArg
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object GetArrowPropsArg {
     
@@ -53,15 +52,15 @@ object typesMod {
     }
   }
   
-  @js.native
   trait GetTooltipPropsArg
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var onMouseEnter: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onMouseEnter: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onMouseLeave: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object GetTooltipPropsArg {
     
@@ -94,25 +93,25 @@ object typesMod {
     }
   }
   
-  @js.native
   trait GetTriggerPropsArg
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var onBlur: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onContextMenu: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onContextMenu: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onMouseEnter: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onMouseLeave: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onMouseMove: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onMouseMove: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onTouchEnd: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
   }
   object GetTriggerPropsArg {
     
@@ -193,32 +192,31 @@ object typesMod {
     var tooltipRef: Ref = js.native
   }
   
-  @js.native
   trait TooltipProps extends StObject {
     
-    var arrowProps: PopperArrowProps = js.native
+    var arrowProps: PopperArrowProps
     
-    def clearScheduled(): Unit = js.native
+    def clearScheduled(): Unit
     
-    var closeOnReferenceHidden: Boolean = js.native
+    var closeOnReferenceHidden: Boolean
     
-    def hideTooltip(): Unit = js.native
+    def hideTooltip(): Unit
     
-    var innerRef: Ref = js.native
+    var innerRef: Ref
     
-    var isReferenceHidden: js.UndefOr[Boolean] = js.native
+    var isReferenceHidden: js.UndefOr[Boolean] = js.undefined
     
-    var mutationObserverOptions: MutationObserverInit = js.native
+    var mutationObserverOptions: MutationObserverInit
     
-    var placement: Placement = js.native
+    var placement: Placement
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
     
-    def tooltip(arg: TooltipArg): ReactNode = js.native
+    def tooltip(arg: TooltipArg): ReactNode
     
-    var trigger: Trigger = js.native
+    var trigger: Trigger
     
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object TooltipProps {
     
@@ -235,7 +233,7 @@ object typesMod {
       trigger: Trigger,
       update: () => Unit
     ): TooltipProps = {
-      val __obj = js.Dynamic.literal(arrowProps = arrowProps.asInstanceOf[js.Any], clearScheduled = js.Any.fromFunction0(clearScheduled), closeOnReferenceHidden = closeOnReferenceHidden.asInstanceOf[js.Any], hideTooltip = js.Any.fromFunction0(hideTooltip), mutationObserverOptions = mutationObserverOptions.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], tooltip = js.Any.fromFunction1(tooltip), trigger = trigger.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
+      val __obj = js.Dynamic.literal(arrowProps = arrowProps.asInstanceOf[js.Any], clearScheduled = js.Any.fromFunction0(clearScheduled), closeOnReferenceHidden = closeOnReferenceHidden.asInstanceOf[js.Any], hideTooltip = js.Any.fromFunction0(hideTooltip), mutationObserverOptions = mutationObserverOptions.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], tooltip = js.Any.fromFunction1(tooltip), trigger = trigger.asInstanceOf[js.Any], update = js.Any.fromFunction0(update), innerRef = null)
       __obj.asInstanceOf[TooltipProps]
     }
     
@@ -292,53 +290,52 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TooltipTriggerProps extends StObject {
     
     /**
       * Trigger
       */
-    def children(arg: ChildrenArg): ReactNode = js.native
+    def children(arg: ChildrenArg): ReactNode
     
     /**
       * Whether to close the tooltip when its trigger is out of boundary
       * @default true
       */
-    var closeOnReferenceHidden: Boolean = js.native
+    var closeOnReferenceHidden: Boolean
     
     /**
       * Whether tooltip is shown by default
       * @default false
       */
-    var defaultTooltipShown: Boolean = js.native
+    var defaultTooltipShown: Boolean
     
     /**
       * Delay in hiding the tooltip
       * @default 0
       */
-    var delayHide: Double = js.native
+    var delayHide: Double
     
     /**
       * Delay in showing the tooltip
       * @default 0
       */
-    var delayShow: Double = js.native
+    var delayShow: Double
     
     /**
       * Whether to make the tooltip spawn at cursor position
       * @default false
       */
-    var followCursor: Boolean = js.native
+    var followCursor: Boolean
     
     /**
       * Function that can be used to obtain a tooltip element reference
       */
-    var getTooltipRef: js.UndefOr[Ref] = js.native
+    var getTooltipRef: js.UndefOr[Ref] = js.undefined
     
     /**
       * Function that can be used to obtain a trigger element reference
       */
-    var getTriggerRef: js.UndefOr[Ref] = js.native
+    var getTriggerRef: js.UndefOr[Ref] = js.undefined
     
     /**
       * Modifiers passed directly to the underlying popper.js instance
@@ -346,54 +343,54 @@ object typesMod {
       * @link https://popper.js.org/docs/v2/modifiers
       * @default []
       */
-    var modifiers: js.Array[Modifier[_, js.Object]] = js.native
+    var modifiers: js.Array[Modifier[js.Any, js.Object]]
     
     /**
       * Options to MutationObserver, used internally for updating
       * tooltip position based on its DOM changes
       * @default  { childList: true, subtree: true }
       */
-    var mutationObserverOptions: MutationObserverInit = js.native
+    var mutationObserverOptions: MutationObserverInit
     
     /**
       * Called when the visibility of the tooltip changes
       * @default no-op
       */
-    def onVisibilityChange(tooltipShown: Boolean): Unit = js.native
+    def onVisibilityChange(tooltipShown: Boolean): Unit
     
     /**
       * Tooltip placement w.r.t. trigger
       *  @default right
       */
-    var placement: Placement = js.native
+    var placement: Placement
     
     /**
       * Element to be used as portal container
       * @default document.body
       */
-    var portalContainer: HTMLElement = js.native
+    var portalContainer: HTMLElement
     
     /**
       * Tooltip
       */
-    def tooltip(arg: TooltipArg): ReactNode = js.native
+    def tooltip(arg: TooltipArg): ReactNode
     
     /**
       * Used to create controlled tooltip
       */
-    var tooltipShown: js.UndefOr[Boolean] = js.native
+    var tooltipShown: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Event that triggers the tooltip
       * @default hover
       */
-    var trigger: Trigger = js.native
+    var trigger: Trigger
     
     /**
       * Whether to use React.createPortal for creating tooltip
       * @default true // for browser environments
       */
-    var usePortal: Boolean = js.native
+    var usePortal: Boolean
   }
   object TooltipTriggerProps {
     
@@ -405,7 +402,7 @@ object typesMod {
       delayHide: Double,
       delayShow: Double,
       followCursor: Boolean,
-      modifiers: js.Array[Modifier[_, js.Object]],
+      modifiers: js.Array[Modifier[js.Any, js.Object]],
       mutationObserverOptions: MutationObserverInit,
       onVisibilityChange: Boolean => Unit,
       placement: Placement,
@@ -464,7 +461,7 @@ object typesMod {
       def setGetTriggerRefUndefined: Self = StObject.set(x, "getTriggerRef", js.undefined)
       
       @scala.inline
-      def setModifiers(value: js.Array[Modifier[_, js.Object]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      def setModifiers(value: js.Array[Modifier[js.Any, js.Object]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setModifiersVarargs(value: (Modifier[js.Any, js.Object])*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
@@ -501,14 +498,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TooltipTriggerState extends StObject {
     
-    var pageX: js.UndefOr[Double] = js.native
+    var pageX: js.UndefOr[Double] = js.undefined
     
-    var pageY: js.UndefOr[Double] = js.native
+    var pageY: js.UndefOr[Double] = js.undefined
     
-    var tooltipShown: Boolean = js.native
+    var tooltipShown: Boolean
   }
   object TooltipTriggerState {
     

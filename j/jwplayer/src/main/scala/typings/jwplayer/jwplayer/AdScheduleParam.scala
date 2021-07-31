@@ -2,17 +2,15 @@ package typings.jwplayer.jwplayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdScheduleParam extends StObject {
   
-  var adbreaks: js.Array[js.Object] = js.native
+  var adbreaks: js.Array[js.Object]
   
-  var client: String = js.native
+  var client: String
   
-  var tag: String = js.native
+  var tag: String
 }
 object AdScheduleParam {
   

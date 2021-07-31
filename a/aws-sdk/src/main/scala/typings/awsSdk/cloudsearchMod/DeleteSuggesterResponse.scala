@@ -2,16 +2,14 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSuggesterResponse extends StObject {
   
   /**
     * The status of the suggester being deleted.
     */
-  var Suggester: SuggesterStatus = js.native
+  var Suggester: SuggesterStatus
 }
 object DeleteSuggesterResponse {
   

@@ -8,7 +8,6 @@ import typings.pulumiAws.topicSubscriptionMod.TopicSubscription
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snsMixinsMod {
@@ -18,13 +17,7 @@ object snsMixinsMod {
   class TopicEventSubscription protected () extends EventSubscription {
     def this(name: String, topic: Topic, handler: TopicEventHandler) = this()
     def this(name: String, topic: Topic, handler: TopicEventHandler, args: TopicEventSubscriptionArgs) = this()
-    def this(
-      name: String,
-      topic: Topic,
-      handler: TopicEventHandler,
-      args: js.UndefOr[scala.Nothing],
-      opts: ComponentResourceOptions
-    ) = this()
+    def this(name: String, topic: Topic, handler: TopicEventHandler, args: Unit, opts: ComponentResourceOptions) = this()
     def this(
       name: String,
       topic: Topic,
@@ -41,30 +34,29 @@ object snsMixinsMod {
     val topic: Topic = js.native
   }
   
-  @js.native
   trait SNSItem extends StObject {
     
-    var Message: String = js.native
+    var Message: String
     
-    var MessageAttributes: StringDictionary[SNSMessageAttribute] = js.native
+    var MessageAttributes: StringDictionary[SNSMessageAttribute]
     
-    var MessageId: String = js.native
+    var MessageId: String
     
-    var Signature: String = js.native
+    var Signature: String
     
-    var SignatureVersion: String = js.native
+    var SignatureVersion: String
     
-    var SigningCertUrl: String = js.native
+    var SigningCertUrl: String
     
-    var Subject: String = js.native
+    var Subject: String
     
-    var Timestamp: String = js.native
+    var Timestamp: String
     
-    var TopicArn: String = js.native
+    var TopicArn: String
     
-    var Type: String = js.native
+    var Type: String
     
-    var UnsubscribeUrl: String = js.native
+    var UnsubscribeUrl: String
   }
   object SNSItem {
     
@@ -124,12 +116,11 @@ object snsMixinsMod {
     }
   }
   
-  @js.native
   trait SNSMessageAttribute extends StObject {
     
-    var Type: String = js.native
+    var Type: String
     
-    var Value: String = js.native
+    var Value: String
   }
   object SNSMessageAttribute {
     
@@ -150,10 +141,9 @@ object snsMixinsMod {
     }
   }
   
-  @js.native
   trait TopicEvent extends StObject {
     
-    var Records: js.Array[TopicRecord] = js.native
+    var Records: js.Array[TopicRecord]
   }
   object TopicEvent {
     
@@ -178,16 +168,15 @@ object snsMixinsMod {
   
   type TopicEventSubscriptionArgs = js.Object
   
-  @js.native
   trait TopicRecord extends StObject {
     
-    var EventSource: String = js.native
+    var EventSource: String
     
-    var EventSubscriptionArn: String = js.native
+    var EventSubscriptionArn: String
     
-    var EventVersion: String = js.native
+    var EventVersion: String
     
-    var Sns: SNSItem = js.native
+    var Sns: SNSItem
   }
   object TopicRecord {
     
@@ -225,12 +214,7 @@ object snsMixinsMod {
         * with options to control the behavior of the subscription.
         */
       def onEvent(name: String, handler: TopicEventHandler): TopicEventSubscription = js.native
-      def onEvent(
-        name: String,
-        handler: TopicEventHandler,
-        args: js.UndefOr[scala.Nothing],
-        opts: ComponentResourceOptions
-      ): TopicEventSubscription = js.native
+      def onEvent(name: String, handler: TopicEventHandler, args: Unit, opts: ComponentResourceOptions): TopicEventSubscription = js.native
       def onEvent(name: String, handler: TopicEventHandler, args: TopicEventSubscriptionArgs): TopicEventSubscription = js.native
       def onEvent(
         name: String,

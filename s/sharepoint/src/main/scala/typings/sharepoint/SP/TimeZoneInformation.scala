@@ -2,17 +2,17 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeZoneInformation extends ClientValueObject {
+trait TimeZoneInformation
+  extends StObject
+     with ClientValueObject {
   
-  def get_bias(): Double = js.native
+  def get_bias(): Double
   
-  def get_daylightBias(): Double = js.native
+  def get_daylightBias(): Double
   
-  def get_standardBias(): Double = js.native
+  def get_standardBias(): Double
 }
 object TimeZoneInformation {
   

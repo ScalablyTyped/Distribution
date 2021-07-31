@@ -6,7 +6,6 @@ import typings.vsoNodeApi.anon.EnumValuesCreated
 import typings.vsoNodeApi.anon.EnumValuesNone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileContainerInterfacesMod {
@@ -18,21 +17,25 @@ object fileContainerInterfacesMod {
   object ContainerItemStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ContainerItemStatus with Double] = js.native
+    def apply(value: Double): js.UndefOr[ContainerItemStatus & Double] = js.native
     
     /**
       * Item is created.
       */
     @js.native
-    sealed trait Created extends ContainerItemStatus
-    /* 1 */ val Created: typings.vsoNodeApi.fileContainerInterfacesMod.ContainerItemStatus.Created with Double = js.native
+    sealed trait Created
+      extends StObject
+         with ContainerItemStatus
+    /* 1 */ val Created: typings.vsoNodeApi.fileContainerInterfacesMod.ContainerItemStatus.Created & Double = js.native
     
     /**
       * Item is a file pending for upload.
       */
     @js.native
-    sealed trait PendingUpload extends ContainerItemStatus
-    /* 2 */ val PendingUpload: typings.vsoNodeApi.fileContainerInterfacesMod.ContainerItemStatus.PendingUpload with Double = js.native
+    sealed trait PendingUpload
+      extends StObject
+         with ContainerItemStatus
+    /* 2 */ val PendingUpload: typings.vsoNodeApi.fileContainerInterfacesMod.ContainerItemStatus.PendingUpload & Double = js.native
   }
   
   @js.native
@@ -42,28 +45,34 @@ object fileContainerInterfacesMod {
   object ContainerItemType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ContainerItemType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ContainerItemType & Double] = js.native
     
     /**
       * Any item type.
       */
     @js.native
-    sealed trait Any extends ContainerItemType
-    /* 0 */ val Any: typings.vsoNodeApi.fileContainerInterfacesMod.ContainerItemType.Any with Double = js.native
+    sealed trait Any
+      extends StObject
+         with ContainerItemType
+    /* 0 */ val Any: typings.vsoNodeApi.fileContainerInterfacesMod.ContainerItemType.Any & Double = js.native
     
     /**
       * Item is a file which is stored in the file service.
       */
     @js.native
-    sealed trait File extends ContainerItemType
-    /* 2 */ val File: typings.vsoNodeApi.fileContainerInterfacesMod.ContainerItemType.File with Double = js.native
+    sealed trait File
+      extends StObject
+         with ContainerItemType
+    /* 2 */ val File: typings.vsoNodeApi.fileContainerInterfacesMod.ContainerItemType.File & Double = js.native
     
     /**
       * Item is a folder which can have child items.
       */
     @js.native
-    sealed trait Folder extends ContainerItemType
-    /* 1 */ val Folder: typings.vsoNodeApi.fileContainerInterfacesMod.ContainerItemType.Folder with Double = js.native
+    sealed trait Folder
+      extends StObject
+         with ContainerItemType
+    /* 1 */ val Folder: typings.vsoNodeApi.fileContainerInterfacesMod.ContainerItemType.Folder & Double = js.native
   }
   
   @js.native
@@ -73,14 +82,16 @@ object fileContainerInterfacesMod {
   object ContainerOptions extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ContainerOptions with Double] = js.native
+    def apply(value: Double): js.UndefOr[ContainerOptions & Double] = js.native
     
     /**
       * No option.
       */
     @js.native
-    sealed trait None extends ContainerOptions
-    /* 0 */ val None: typings.vsoNodeApi.fileContainerInterfacesMod.ContainerOptions.None with Double = js.native
+    sealed trait None
+      extends StObject
+         with ContainerOptions
+    /* 0 */ val None: typings.vsoNodeApi.fileContainerInterfacesMod.ContainerOptions.None & Double = js.native
   }
   
   object TypeInfo {
@@ -121,78 +132,77 @@ object fileContainerInterfacesMod {
     def FileContainer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileContainer")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait FileContainer extends StObject {
     
     /**
       * Uri of the artifact associated with the container.
       */
-    var artifactUri: String = js.native
+    var artifactUri: String
     
     /**
       * Download Url for the content of this item.
       */
-    var contentLocation: String = js.native
+    var contentLocation: String
     
     /**
       * Owner.
       */
-    var createdBy: String = js.native
+    var createdBy: String
     
     /**
       * Creation date.
       */
-    var dateCreated: Date = js.native
+    var dateCreated: Date
     
     /**
       * Description.
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * Id.
       */
-    var id: Double = js.native
+    var id: Double
     
     /**
       * Location of the item resource.
       */
-    var itemLocation: String = js.native
+    var itemLocation: String
     
     /**
       * ItemStore Locator for this container.
       */
-    var locatorPath: String = js.native
+    var locatorPath: String
     
     /**
       * Name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Options the container can have.
       */
-    var options: ContainerOptions = js.native
+    var options: ContainerOptions
     
     /**
       * Project Id.
       */
-    var scopeIdentifier: String = js.native
+    var scopeIdentifier: String
     
     /**
       * Security token of the artifact associated with the container.
       */
-    var securityToken: String = js.native
+    var securityToken: String
     
     /**
       * Identifier of the optional encryption key.
       */
-    var signingKeyId: String = js.native
+    var signingKeyId: String
     
     /**
       * Total size of the files in bytes.
       */
-    var size: Double = js.native
+    var size: Double
   }
   object FileContainer {
     
@@ -264,92 +274,91 @@ object fileContainerInterfacesMod {
     }
   }
   
-  @js.native
   trait FileContainerItem extends StObject {
     
     /**
       * Container Id.
       */
-    var containerId: Double = js.native
+    var containerId: Double
     
-    var contentId: js.Array[Double] = js.native
+    var contentId: js.Array[Double]
     
     /**
       * Download Url for the content of this item.
       */
-    var contentLocation: String = js.native
+    var contentLocation: String
     
     /**
       * Creator.
       */
-    var createdBy: String = js.native
+    var createdBy: String
     
     /**
       * Creation date.
       */
-    var dateCreated: Date = js.native
+    var dateCreated: Date
     
     /**
       * Last modified date.
       */
-    var dateLastModified: Date = js.native
+    var dateLastModified: Date
     
     /**
       * Encoding of the file. Zero if not a file.
       */
-    var fileEncoding: Double = js.native
+    var fileEncoding: Double
     
     /**
       * Hash value of the file. Null if not a file.
       */
-    var fileHash: js.Array[Double] = js.native
+    var fileHash: js.Array[Double]
     
     /**
       * Id of the file content.
       */
-    var fileId: Double = js.native
+    var fileId: Double
     
     /**
       * Length of the file. Zero if not of a file.
       */
-    var fileLength: Double = js.native
+    var fileLength: Double
     
     /**
       * Type of the file. Zero if not a file.
       */
-    var fileType: Double = js.native
+    var fileType: Double
     
     /**
       * Location of the item resource.
       */
-    var itemLocation: String = js.native
+    var itemLocation: String
     
     /**
       * Type of the item: Folder, File or String.
       */
-    var itemType: ContainerItemType = js.native
+    var itemType: ContainerItemType
     
     /**
       * Modifier.
       */
-    var lastModifiedBy: String = js.native
+    var lastModifiedBy: String
     
     /**
       * Unique path that identifies the item.
       */
-    var path: String = js.native
+    var path: String
     
     /**
       * Project Id.
       */
-    var scopeIdentifier: String = js.native
+    var scopeIdentifier: String
     
     /**
       * Status of the item: Created or Pending Upload.
       */
-    var status: ContainerItemStatus = js.native
+    var status: ContainerItemStatus
     
-    var ticket: String = js.native
+    var ticket: String
   }
   object FileContainerItem {
     

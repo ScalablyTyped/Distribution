@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStreamRequest extends StObject {
   
   /**
     * A description of the stream.
     */
-  var description: js.UndefOr[StreamDescription] = js.native
+  var description: js.UndefOr[StreamDescription] = js.undefined
   
   /**
     * The files to stream.
     */
-  var files: StreamFiles = js.native
+  var files: StreamFiles
   
   /**
     * An IAM role that allows the IoT service principal assumes to access your S3 files.
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
   
   /**
     * The stream ID.
     */
-  var streamId: StreamId = js.native
+  var streamId: StreamId
   
   /**
     * Metadata which can be used to manage streams.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateStreamRequest {
   

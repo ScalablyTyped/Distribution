@@ -2,45 +2,38 @@ package typings.umd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(name: String, src: String): String = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(name: String, src: String, options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(name: String, src: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("umd", JSImport.Namespace)
   @js.native
-  def apply(name: String, src: String): String = js.native
-  @JSImport("umd", JSImport.Namespace)
-  @js.native
-  def apply(name: String, src: String, options: Boolean): String = js.native
-  @JSImport("umd", JSImport.Namespace)
-  @js.native
-  def apply(name: String, src: String, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("umd", "postlude")
-  @js.native
-  def postlude(moduleName: String): String = js.native
-  @JSImport("umd", "postlude")
-  @js.native
-  def postlude(moduleName: String, options: Boolean): String = js.native
-  @JSImport("umd", "postlude")
-  @js.native
-  def postlude(moduleName: String, options: Options): String = js.native
+  @scala.inline
+  def postlude(moduleName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("postlude")(moduleName.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def postlude(moduleName: String, options: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("postlude")(moduleName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def postlude(moduleName: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("postlude")(moduleName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("umd", "prelude")
-  @js.native
-  def prelude(moduleName: String): String = js.native
-  @JSImport("umd", "prelude")
-  @js.native
-  def prelude(moduleName: String, options: Boolean): String = js.native
-  @JSImport("umd", "prelude")
-  @js.native
-  def prelude(moduleName: String, options: Options): String = js.native
+  @scala.inline
+  def prelude(moduleName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prelude")(moduleName.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def prelude(moduleName: String, options: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prelude")(moduleName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def prelude(moduleName: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prelude")(moduleName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait Options extends StObject {
     
-    var commonJS: js.UndefOr[Boolean] = js.native
+    var commonJS: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

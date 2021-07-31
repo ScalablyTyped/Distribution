@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteUserPoolDomainRequest extends StObject {
   
   /**
     * The domain string.
     */
-  var Domain: DomainType = js.native
+  var Domain: DomainType
   
   /**
     * The user pool ID.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object DeleteUserPoolDomainRequest {
   

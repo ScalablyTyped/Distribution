@@ -3,17 +3,15 @@ package typings.parse.mod.global.Parse
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseAttributes extends StObject {
   
-  var createdAt: Date = js.native
+  var createdAt: Date
   
-  var objectId: String = js.native
+  var objectId: String
   
-  var updatedAt: Date = js.native
+  var updatedAt: Date
 }
 object BaseAttributes {
   

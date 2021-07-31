@@ -2,21 +2,19 @@ package typings.reactVirtualized.esGridMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridState extends StObject {
   
-  var isScrolling: Boolean = js.native
+  var isScrolling: Boolean
   
-  var scrollDirectionHorizontal: ScrollDirection = js.native
+  var scrollDirectionHorizontal: ScrollDirection
   
-  var scrollDirectionVertical: ScrollDirection = js.native
+  var scrollDirectionVertical: ScrollDirection
   
-  var scrollLeft: Double = js.native
+  var scrollLeft: Double
   
-  var scrollTop: Double = js.native
+  var scrollTop: Double
 }
 object GridState {
   

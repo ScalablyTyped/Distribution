@@ -2,36 +2,34 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMLTaskRunsRequest extends StObject {
   
   /**
     * The filter criteria, in the TaskRunFilterCriteria structure, for the task run.
     */
-  var Filter: js.UndefOr[TaskRunFilterCriteria] = js.native
+  var Filter: js.UndefOr[TaskRunFilterCriteria] = js.undefined
   
   /**
     * The maximum number of results to return. 
     */
-  var MaxResults: js.UndefOr[PageSize] = js.native
+  var MaxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     * A token for pagination of the results. The default is empty.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The sorting criteria, in the TaskRunSortCriteria structure, for the task run.
     */
-  var Sort: js.UndefOr[TaskRunSortCriteria] = js.native
+  var Sort: js.UndefOr[TaskRunSortCriteria] = js.undefined
   
   /**
     * The unique identifier of the machine learning transform.
     */
-  var TransformId: HashString = js.native
+  var TransformId: HashString
 }
 object GetMLTaskRunsRequest {
   

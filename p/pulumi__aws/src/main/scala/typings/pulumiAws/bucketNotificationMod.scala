@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bucketNotificationMod {
@@ -51,6 +50,10 @@ object bucketNotificationMod {
   /* static members */
   object BucketNotification {
     
+    @JSImport("@pulumi/aws/s3/bucketNotification", "BucketNotification")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing BucketNotification resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -60,52 +63,46 @@ object bucketNotificationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/s3/bucketNotification", "BucketNotification.get")
-    @js.native
-    def get(name: String, id: Input[ID]): BucketNotification = js.native
-    @JSImport("@pulumi/aws/s3/bucketNotification", "BucketNotification.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): BucketNotification = js.native
-    @JSImport("@pulumi/aws/s3/bucketNotification", "BucketNotification.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketNotificationState): BucketNotification = js.native
-    @JSImport("@pulumi/aws/s3/bucketNotification", "BucketNotification.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketNotificationState, opts: CustomResourceOptions): BucketNotification = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BucketNotification]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketNotification]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketNotificationState): BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BucketNotification]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketNotificationState, opts: CustomResourceOptions): BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketNotification]
     
     /**
       * Returns true if the given object is an instance of BucketNotification.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/s3/bucketNotification", "BucketNotification.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketNotification.BucketNotification */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketNotification.BucketNotification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketNotification.BucketNotification */ Boolean]
   }
   
-  @js.native
   trait BucketNotificationArgs extends StObject {
     
     /**
       * The name of the bucket to put notification configuration.
       */
-    val bucket: Input[String] = js.native
+    val bucket: Input[String]
     
     /**
       * Used to configure notifications to a Lambda Function (documented below).
       */
     val lambdaFunctions: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationLambdaFunction]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The notification configuration to SQS Queue (documented below).
       */
-    val queues: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationQueue]]]] = js.native
+    val queues: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationQueue]]]] = js.undefined
     
     /**
       * The notification configuration to SNS Topic (documented below).
       */
-    val topics: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationTopic]]]] = js.native
+    val topics: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationTopic]]]] = js.undefined
   }
   object BucketNotificationArgs {
     
@@ -150,30 +147,29 @@ object bucketNotificationMod {
     }
   }
   
-  @js.native
   trait BucketNotificationState extends StObject {
     
     /**
       * The name of the bucket to put notification configuration.
       */
-    val bucket: js.UndefOr[Input[String]] = js.native
+    val bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Used to configure notifications to a Lambda Function (documented below).
       */
     val lambdaFunctions: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationLambdaFunction]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The notification configuration to SQS Queue (documented below).
       */
-    val queues: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationQueue]]]] = js.native
+    val queues: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationQueue]]]] = js.undefined
     
     /**
       * The notification configuration to SNS Topic (documented below).
       */
-    val topics: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationTopic]]]] = js.native
+    val topics: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationTopic]]]] = js.undefined
   }
   object BucketNotificationState {
     

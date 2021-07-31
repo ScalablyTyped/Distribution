@@ -4,49 +4,41 @@ import typings.ethereumCryptography.anon.Recovery
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shimsHdkeySecp256k1v3Mod {
   
-  @JSImport("ethereum-cryptography/shims/hdkey-secp256k1v3", "privateKeyTweakAdd")
+  @JSImport("ethereum-cryptography/shims/hdkey-secp256k1v3", JSImport.Namespace)
   @js.native
-  def privateKeyTweakAdd(publicKey: Buffer, tweak: Buffer): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ethereum-cryptography/shims/hdkey-secp256k1v3", "privateKeyVerify")
-  @js.native
-  def privateKeyVerify(privateKey: Buffer): Boolean = js.native
+  @scala.inline
+  def privateKeyTweakAdd(publicKey: Buffer, tweak: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyTweakAdd")(publicKey.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereum-cryptography/shims/hdkey-secp256k1v3", "publicKeyConvert")
-  @js.native
-  def publicKeyConvert(publicKey: Buffer): Buffer = js.native
-  @JSImport("ethereum-cryptography/shims/hdkey-secp256k1v3", "publicKeyConvert")
-  @js.native
-  def publicKeyConvert(publicKey: Buffer, compressed: Boolean): Buffer = js.native
+  @scala.inline
+  def privateKeyVerify(privateKey: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyVerify")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ethereum-cryptography/shims/hdkey-secp256k1v3", "publicKeyCreate")
-  @js.native
-  def publicKeyCreate(privateKey: Buffer): Buffer = js.native
-  @JSImport("ethereum-cryptography/shims/hdkey-secp256k1v3", "publicKeyCreate")
-  @js.native
-  def publicKeyCreate(privateKey: Buffer, compressed: Boolean): Buffer = js.native
+  @scala.inline
+  def publicKeyConvert(publicKey: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyConvert")(publicKey.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def publicKeyConvert(publicKey: Buffer, compressed: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyConvert")(publicKey.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereum-cryptography/shims/hdkey-secp256k1v3", "publicKeyTweakAdd")
-  @js.native
-  def publicKeyTweakAdd(publicKey: Buffer, tweak: Buffer): Buffer = js.native
-  @JSImport("ethereum-cryptography/shims/hdkey-secp256k1v3", "publicKeyTweakAdd")
-  @js.native
-  def publicKeyTweakAdd(publicKey: Buffer, tweak: Buffer, compressed: Boolean): Buffer = js.native
+  @scala.inline
+  def publicKeyCreate(privateKey: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyCreate")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def publicKeyCreate(privateKey: Buffer, compressed: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyCreate")(privateKey.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereum-cryptography/shims/hdkey-secp256k1v3", "publicKeyVerify")
-  @js.native
-  def publicKeyVerify(publicKey: Buffer): Boolean = js.native
+  @scala.inline
+  def publicKeyTweakAdd(publicKey: Buffer, tweak: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyTweakAdd")(publicKey.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def publicKeyTweakAdd(publicKey: Buffer, tweak: Buffer, compressed: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyTweakAdd")(publicKey.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereum-cryptography/shims/hdkey-secp256k1v3", "sign")
-  @js.native
-  def sign(message: Buffer, privateKey: Buffer): Recovery = js.native
+  @scala.inline
+  def publicKeyVerify(publicKey: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyVerify")(publicKey.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ethereum-cryptography/shims/hdkey-secp256k1v3", "verify")
-  @js.native
-  def verify(message: Buffer, signature: Buffer, publicKey: Buffer): Boolean = js.native
+  @scala.inline
+  def sign(message: Buffer, privateKey: Buffer): Recovery = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Recovery]
+  
+  @scala.inline
+  def verify(message: Buffer, signature: Buffer, publicKey: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

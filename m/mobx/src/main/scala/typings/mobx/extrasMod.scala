@@ -2,31 +2,29 @@ package typings.mobx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extrasMod {
   
-  @JSImport("mobx/lib/api/extras", "getDependencyTree")
+  @JSImport("mobx/lib/api/extras", JSImport.Namespace)
   @js.native
-  def getDependencyTree(thing: js.Any): IDependencyTree = js.native
-  @JSImport("mobx/lib/api/extras", "getDependencyTree")
-  @js.native
-  def getDependencyTree(thing: js.Any, property: String): IDependencyTree = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx/lib/api/extras", "getObserverTree")
-  @js.native
-  def getObserverTree(thing: js.Any): IObserverTree = js.native
-  @JSImport("mobx/lib/api/extras", "getObserverTree")
-  @js.native
-  def getObserverTree(thing: js.Any, property: String): IObserverTree = js.native
+  @scala.inline
+  def getDependencyTree(thing: js.Any): IDependencyTree = ^.asInstanceOf[js.Dynamic].applyDynamic("getDependencyTree")(thing.asInstanceOf[js.Any]).asInstanceOf[IDependencyTree]
+  @scala.inline
+  def getDependencyTree(thing: js.Any, property: String): IDependencyTree = (^.asInstanceOf[js.Dynamic].applyDynamic("getDependencyTree")(thing.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[IDependencyTree]
   
-  @js.native
+  @scala.inline
+  def getObserverTree(thing: js.Any): IObserverTree = ^.asInstanceOf[js.Dynamic].applyDynamic("getObserverTree")(thing.asInstanceOf[js.Any]).asInstanceOf[IObserverTree]
+  @scala.inline
+  def getObserverTree(thing: js.Any, property: String): IObserverTree = (^.asInstanceOf[js.Dynamic].applyDynamic("getObserverTree")(thing.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[IObserverTree]
+  
   trait IDependencyTree extends StObject {
     
-    var dependencies: js.UndefOr[js.Array[IDependencyTree]] = js.native
+    var dependencies: js.UndefOr[js.Array[IDependencyTree]] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object IDependencyTree {
     
@@ -53,12 +51,11 @@ object extrasMod {
     }
   }
   
-  @js.native
   trait IObserverTree extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var observers: js.UndefOr[js.Array[IObserverTree]] = js.native
+    var observers: js.UndefOr[js.Array[IObserverTree]] = js.undefined
   }
   object IObserverTree {
     

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebased
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynamicLinkStats extends StObject {
   
   /** Dynamic Link event stats. */
-  var linkEventStats: js.UndefOr[js.Array[DynamicLinkEventStat]] = js.native
+  var linkEventStats: js.UndefOr[js.Array[DynamicLinkEventStat]] = js.undefined
 }
 object DynamicLinkStats {
   

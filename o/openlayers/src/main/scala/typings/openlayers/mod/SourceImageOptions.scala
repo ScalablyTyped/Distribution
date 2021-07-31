@@ -4,23 +4,21 @@ import typings.openlayers.mod.olx.LogoOptions
 import typings.openlayers.mod.source.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceImageOptions extends StObject {
   
-  var attributions: js.UndefOr[AttributionLike] = js.native
+  var attributions: js.UndefOr[AttributionLike] = js.undefined
   
-  var extent: js.UndefOr[Extent_] = js.native
+  var extent: js.UndefOr[Extent_] = js.undefined
   
-  var logo: js.UndefOr[String | LogoOptions] = js.native
+  var logo: js.UndefOr[String | LogoOptions] = js.undefined
   
-  var projection: ProjectionLike = js.native
+  var projection: ProjectionLike
   
-  var resolutions: js.UndefOr[js.Array[Double]] = js.native
+  var resolutions: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var state: js.UndefOr[State] = js.native
+  var state: js.UndefOr[State] = js.undefined
 }
 object SourceImageOptions {
   

@@ -7,33 +7,33 @@ import typings.mochaccino.mochaccinoStrings.window
 import typings.sinon.mod.SinonStub
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("mochaccino", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mochaccino", "dom")
   @js.native
   val dom: Dom_ = js.native
   
-  @JSImport("mochaccino", "expect")
-  @js.native
-  def expect(value: js.Any): Expect_ = js.native
+  @scala.inline
+  def expect(value: js.Any): Expect_ = ^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any]).asInstanceOf[Expect_]
   
-  @JSImport("mochaccino", "spy")
-  @js.native
-  def spy(config: js.Any*): js.Function1[/* repeated */ js.Any, SpyProxy] = js.native
+  @scala.inline
+  def spy(config: js.Any*): js.Function1[/* repeated */ js.Any, SpyProxy] = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, SpyProxy]]
   
-  @js.native
   trait Dom_ extends StObject {
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def create(): Unit = js.native
+    def create(): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    var exposedProperties: js.Tuple3[window, navigator, document] = js.native
+    var exposedProperties: js.Tuple3[window, navigator, document]
   }
   object Dom_ {
     
@@ -65,42 +65,41 @@ object mod {
     }
   }
   
-  @js.native
   trait Expect_ extends StObject {
     
-    var not: Expect_ = js.native
+    var not: Expect_
     
-    def toBe(arg: js.Any): Unit = js.native
+    def toBe(arg: js.Any): Unit
     
-    def toBeDefined(): Unit = js.native
+    def toBeDefined(): Unit
     
-    def toBeFalsy(): Unit = js.native
+    def toBeFalsy(): Unit
     
-    def toBeGreaterThan(other: Double): Unit = js.native
+    def toBeGreaterThan(other: Double): Unit
     
-    def toBeLessThan(other: Double): Unit = js.native
+    def toBeLessThan(other: Double): Unit
     
-    def toBeNull(): Unit = js.native
+    def toBeNull(): Unit
     
-    def toBeTruthy(): Unit = js.native
+    def toBeTruthy(): Unit
     
-    def toBeUndefined(): Unit = js.native
+    def toBeUndefined(): Unit
     
-    def toContain(arg: js.Any): Unit = js.native
+    def toContain(arg: js.Any): Unit
     
-    def toEqual(arg: js.Any): Unit = js.native
+    def toEqual(arg: js.Any): Unit
     
-    def toHaveBeenCalled(): Unit = js.native
+    def toHaveBeenCalled(): Unit
     
-    def toHaveBeenCalledTimes(callCount: Double): Unit = js.native
+    def toHaveBeenCalledTimes(callCount: Double): Unit
     
-    def toHaveBeenCalledWith(arg: js.Any*): Unit = js.native
+    def toHaveBeenCalledWith(arg: js.Any*): Unit
     
-    def toMatch(matchExpression: js.Any): Unit = js.native
+    def toMatch(matchExpression: js.Any): Unit
     
-    def toThrow(): Unit = js.native
+    def toThrow(): Unit
     
-    def toThrowError(errType: js.Any): Unit = js.native
+    def toThrowError(errType: js.Any): Unit
   }
   object Expect_ {
     
@@ -184,33 +183,31 @@ object mod {
     }
   }
   
-  @js.native
   trait SpyProxy extends StObject {
     
-    var and: SpyProxy = js.native
+    var and: SpyProxy
     
-    def callFake(fake: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+    def callFake(fake: js.Function1[/* repeated */ js.Any, js.Any]): Unit
     
-    def callThrough(): Unit = js.native
+    def callThrough(): Unit
     
-    def getSubject(): SinonStub[js.Array[_], _] = js.native
+    def getSubject(): SinonStub[js.Array[js.Any], js.Any]
     
-    def returnValue(obj: js.Any): Unit = js.native
+    def returnValue(obj: js.Any): Unit
     
-    var spyProxy: `true` = js.native
+    var spyProxy: `true`
   }
   object SpyProxy {
     
     @scala.inline
     def apply(
       and: SpyProxy,
-      callFake: js.Function1[/* repeated */ js.Any, _] => Unit,
+      callFake: js.Function1[/* repeated */ js.Any, js.Any] => Unit,
       callThrough: () => Unit,
-      getSubject: () => SinonStub[js.Array[_], _],
-      returnValue: js.Any => Unit,
-      spyProxy: `true`
+      getSubject: () => SinonStub[js.Array[js.Any], js.Any],
+      returnValue: js.Any => Unit
     ): SpyProxy = {
-      val __obj = js.Dynamic.literal(and = and.asInstanceOf[js.Any], callFake = js.Any.fromFunction1(callFake), callThrough = js.Any.fromFunction0(callThrough), getSubject = js.Any.fromFunction0(getSubject), returnValue = js.Any.fromFunction1(returnValue), spyProxy = spyProxy.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(and = and.asInstanceOf[js.Any], callFake = js.Any.fromFunction1(callFake), callThrough = js.Any.fromFunction0(callThrough), getSubject = js.Any.fromFunction0(getSubject), returnValue = js.Any.fromFunction1(returnValue), spyProxy = true)
       __obj.asInstanceOf[SpyProxy]
     }
     
@@ -221,13 +218,13 @@ object mod {
       def setAnd(value: SpyProxy): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCallFake(value: js.Function1[/* repeated */ js.Any, _] => Unit): Self = StObject.set(x, "callFake", js.Any.fromFunction1(value))
+      def setCallFake(value: js.Function1[/* repeated */ js.Any, js.Any] => Unit): Self = StObject.set(x, "callFake", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCallThrough(value: () => Unit): Self = StObject.set(x, "callThrough", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setGetSubject(value: () => SinonStub[js.Array[_], _]): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
+      def setGetSubject(value: () => SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
       
       @scala.inline
       def setReturnValue(value: js.Any => Unit): Self = StObject.set(x, "returnValue", js.Any.fromFunction1(value))

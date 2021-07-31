@@ -2,20 +2,18 @@ package typings.ibmMobilefirst.WL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TabBar {
   
-  @js.native
   trait ItemOptions extends StObject {
     
-    var badge: js.UndefOr[String] = js.native
+    var badge: js.UndefOr[String] = js.undefined
     
-    var image: String = js.native
+    var image: String
     
     // for iOS
-    var imageSelected: js.UndefOr[String] = js.native
+    var imageSelected: js.UndefOr[String] = js.undefined
   }
   object ItemOptions {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPDialIn extends StObject {
   
   /**
     * The protocol, including SIP, SIPS, and H323.
     */
-  var CommsProtocol: typings.awsSdk.alexaforbusinessMod.CommsProtocol = js.native
+  var CommsProtocol: typings.awsSdk.alexaforbusinessMod.CommsProtocol
   
   /**
     * The IP address.
     */
-  var Endpoint: typings.awsSdk.alexaforbusinessMod.Endpoint = js.native
+  var Endpoint: typings.awsSdk.alexaforbusinessMod.Endpoint
 }
 object IPDialIn {
   

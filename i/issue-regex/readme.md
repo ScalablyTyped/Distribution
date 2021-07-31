@@ -11,8 +11,8 @@ Regular expression for matching issue references
 | Full name          | issue-regex |
 | Keywords           | issue, issues, pr, pull, request, reference, references, ref, regex, regexp, regular, expression, github, gh, link |
 | # releases         | 3 |
-| # dependents       | 15 |
-| # downloads        | 1348986 |
+| # dependents       | 16 |
+| # downloads        | 1883577 |
 | # stars            | 0 |
 
 ## Links

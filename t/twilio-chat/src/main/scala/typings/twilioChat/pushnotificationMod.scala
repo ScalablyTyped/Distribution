@@ -4,7 +4,6 @@ import typings.twilioChat.pushnotificationMod.PushNotification.Descriptor
 import typings.twilioChat.pushnotificationMod.PushNotification.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pushnotificationMod {
@@ -55,22 +54,21 @@ object pushnotificationMod {
   }
   object PushNotification {
     
-    @js.native
     trait Descriptor extends StObject {
       
-      var action: String = js.native
+      var action: String
       
-      var badge: Double = js.native
+      var badge: Double
       
-      var body: String = js.native
+      var body: String
       
-      var data: js.Object = js.native
+      var data: js.Object
       
-      var sound: String = js.native
+      var sound: String
       
-      var title: String = js.native
+      var title: String
       
-      var `type`: Type = js.native
+      var `type`: Type
     }
     object Descriptor {
       

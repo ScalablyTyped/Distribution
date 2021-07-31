@@ -1,14 +1,11 @@
 package typings.nodePgMigrate
 
-import typings.nodePgMigrate.anon.Reverse
-import typings.nodePgMigrate.anon.ReverseRenameDomainFn
 import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.generalTypesMod.Name
 import typings.nodePgMigrate.generalTypesMod.Type
 import typings.nodePgMigrate.generalTypesMod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domainsTypesMod {
@@ -19,25 +16,31 @@ object domainsTypesMod {
     String | js.Array[String]
   ]
   
-  type CreateDomain = CreateDomainFn with Reverse
+  @js.native
+  trait CreateDomain extends CreateDomainFn {
+    
+    def reverse(domainName: Name, `type`: Type): String | js.Array[String] = js.native
+    def reverse(domainName: Name, `type`: Type, domainOptions: DomainOptionsCreate & DropOptions): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreateDomainFn = js.native
+  }
   
   type CreateDomainFn = js.Function3[
     /* domainName */ Name, 
     /* type */ Type, 
-    /* domainOptions */ js.UndefOr[DomainOptionsCreate with DropOptions], 
+    /* domainOptions */ js.UndefOr[DomainOptionsCreate & DropOptions], 
     String | js.Array[String]
   ]
   
-  @js.native
   trait DomainOptions extends StObject {
     
-    var default: js.UndefOr[Value] = js.native
+    var default: js.UndefOr[Value] = js.undefined
     
-    var check: js.UndefOr[String] = js.native
+    var check: js.UndefOr[String] = js.undefined
     
-    var constraintName: js.UndefOr[String] = js.native
+    var constraintName: js.UndefOr[String] = js.undefined
     
-    var notNull: js.UndefOr[Boolean] = js.native
+    var notNull: js.UndefOr[Boolean] = js.undefined
   }
   object DomainOptions {
     
@@ -84,10 +87,11 @@ object domainsTypesMod {
     }
   }
   
-  @js.native
-  trait DomainOptionsAlter extends DomainOptions {
+  trait DomainOptionsAlter
+    extends StObject
+       with DomainOptions {
     
-    var allowNull: js.UndefOr[Boolean] = js.native
+    var allowNull: js.UndefOr[Boolean] = js.undefined
   }
   object DomainOptionsAlter {
     
@@ -108,10 +112,11 @@ object domainsTypesMod {
     }
   }
   
-  @js.native
-  trait DomainOptionsCreate extends DomainOptions {
+  trait DomainOptionsCreate
+    extends StObject
+       with DomainOptions {
     
-    var collation: js.UndefOr[String] = js.native
+    var collation: js.UndefOr[String] = js.undefined
   }
   object DomainOptionsCreate {
     
@@ -138,7 +143,13 @@ object domainsTypesMod {
     String | js.Array[String]
   ]
   
-  type RenameDomain = RenameDomainFn with ReverseRenameDomainFn
+  @js.native
+  trait RenameDomain extends RenameDomainFn {
+    
+    def reverse(oldDomainName: Name, newDomainName: Name): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameDomainFn = js.native
+  }
   
   type RenameDomainFn = js.Function2[/* oldDomainName */ Name, /* newDomainName */ Name, String | js.Array[String]]
 }

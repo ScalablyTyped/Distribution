@@ -3,14 +3,15 @@ package typings.urlPattern
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("url-pattern", JSImport.Namespace)
   @js.native
-  class ^ protected () extends UrlPattern {
+  class ^ protected ()
+    extends StObject
+       with UrlPattern {
     def this(pattern: String) = this()
     def this(pattern: RegExp) = this()
     def this(pattern: String, options: UrlPatternOptions) = this()
@@ -26,22 +27,21 @@ object mod {
     def stringify(values: js.Any): String = js.native
   }
   
-  @js.native
   trait UrlPatternOptions extends StObject {
     
-    var escapeChar: js.UndefOr[String] = js.native
+    var escapeChar: js.UndefOr[String] = js.undefined
     
-    var optionalSegmentEndChar: js.UndefOr[String] = js.native
+    var optionalSegmentEndChar: js.UndefOr[String] = js.undefined
     
-    var optionalSegmentStartChar: js.UndefOr[String] = js.native
+    var optionalSegmentStartChar: js.UndefOr[String] = js.undefined
     
-    var segmentNameCharset: js.UndefOr[String] = js.native
+    var segmentNameCharset: js.UndefOr[String] = js.undefined
     
-    var segmentNameStartChar: js.UndefOr[String] = js.native
+    var segmentNameStartChar: js.UndefOr[String] = js.undefined
     
-    var segmentValueCharset: js.UndefOr[String] = js.native
+    var segmentValueCharset: js.UndefOr[String] = js.undefined
     
-    var wildcardChar: js.UndefOr[String] = js.native
+    var wildcardChar: js.UndefOr[String] = js.undefined
   }
   object UrlPatternOptions {
     

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait V1Beta1GenerateServiceIdentityResponse extends StObject {
   
   /** ServiceIdentity that was created or retrieved. */
-  var identity: js.UndefOr[V1Beta1ServiceIdentity] = js.native
+  var identity: js.UndefOr[V1Beta1ServiceIdentity] = js.undefined
 }
 object V1Beta1GenerateServiceIdentityResponse {
   

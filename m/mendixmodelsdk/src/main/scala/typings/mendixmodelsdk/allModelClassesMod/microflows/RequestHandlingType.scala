@@ -3,7 +3,6 @@ package typings.mendixmodelsdk.allModelClassesMod.microflows
 import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.RequestHandlingType")

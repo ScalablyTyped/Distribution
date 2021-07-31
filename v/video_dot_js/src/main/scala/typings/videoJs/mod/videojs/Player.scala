@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.videoJs.mod.videojs.Tech.SourceObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Player {
@@ -13,9 +12,9 @@ object Player {
     * An object that describes a single piece of media.
     * Properties that are not part of this type description will be retained; so, this can be viewed as a generic metadata storage mechanism as well.
     */
-  @js.native
   trait MediaObject
-    extends /**
+    extends StObject
+       with /**
     * Properties that are not part of this type description will be retained; so, this can be viewed as a generic metadata storage mechanism as well.
     */
   /* key */ StringDictionary[js.Any] {
@@ -23,39 +22,39 @@ object Player {
     /**
       * Unused, except if this object is passed to the MediaSession API.
       */
-    var album: js.UndefOr[String] = js.native
+    var album: js.UndefOr[String] = js.undefined
     
     /**
       * Unused, except if this object is passed to the MediaSession API.
       */
-    var artist: js.UndefOr[String] = js.native
+    var artist: js.UndefOr[String] = js.undefined
     
     /**
       * Unused, except if this object is passed to the MediaSession API. If not specified, will be populated via the poster, if available.
       */
-    var artwork: js.UndefOr[js.Array[_]] = js.native
+    var artwork: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * URL to an image that will display before playback.
       */
-    var poster: js.UndefOr[String] = js.native
+    var poster: js.UndefOr[String] = js.undefined
     
     /**
       * A single source object, an array of source objects, or a string referencing a URL to a media source.
       * It is highly recommended that an object or array of objects is used here, so that source selection algorithms can take the type into account.
       */
-    var src: js.UndefOr[String | SourceObject | js.Array[SourceObject]] = js.native
+    var src: js.UndefOr[String | SourceObject | js.Array[SourceObject]] = js.undefined
     
     /**
       *  An array of objects to be used to create text tracks, following the native track element format.
       *  For ease of removal, these will be created as "remote" text tracks and set to automatically clean up on source changes.
       */
-    var textTracks: js.UndefOr[js.Array[_]] = js.native
+    var textTracks: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Unused, except if this object is passed to the MediaSession API.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object MediaObject {
     
@@ -81,7 +80,7 @@ object Player {
       def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
       
       @scala.inline
-      def setArtwork(value: js.Array[_]): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
+      def setArtwork(value: js.Array[js.Any]): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArtworkUndefined: Self = StObject.set(x, "artwork", js.undefined)
@@ -105,7 +104,7 @@ object Player {
       def setSrcVarargs(value: SourceObject*): Self = StObject.set(x, "src", js.Array(value :_*))
       
       @scala.inline
-      def setTextTracks(value: js.Array[_]): Self = StObject.set(x, "textTracks", value.asInstanceOf[js.Any])
+      def setTextTracks(value: js.Array[js.Any]): Self = StObject.set(x, "textTracks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTextTracksUndefined: Self = StObject.set(x, "textTracks", js.undefined)

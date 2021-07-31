@@ -2,140 +2,140 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of images produced in single study (one or more series of references images)
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait ImagingStudy extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait ImagingStudy
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'availability'.
     */
-  var _availability: js.UndefOr[Element] = js.native
+  var _availability: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'numberOfInstances'.
     */
-  var _numberOfInstances: js.UndefOr[Element] = js.native
+  var _numberOfInstances: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'numberOfSeries'.
     */
-  var _numberOfSeries: js.UndefOr[Element] = js.native
+  var _numberOfSeries: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'started'.
     */
-  var _started: js.UndefOr[Element] = js.native
+  var _started: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'uid'.
     */
-  var _uid: js.UndefOr[Element] = js.native
+  var _uid: js.UndefOr[Element] = js.undefined
   
   /**
     * Related workflow identifier ("Accession Number")
     */
-  var accession: js.UndefOr[Identifier] = js.native
+  var accession: js.UndefOr[Identifier] = js.undefined
   
   /**
     * ONLINE | OFFLINE | NEARLINE | UNAVAILABLE
     */
-  var availability: js.UndefOr[code] = js.native
+  var availability: js.UndefOr[code] = js.undefined
   
   /**
     * Request fulfilled
     */
-  var basedOn: js.UndefOr[js.Array[Reference]] = js.native
+  var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Originating context
     */
-  var context: js.UndefOr[Reference] = js.native
+  var context: js.UndefOr[Reference] = js.undefined
   
   /**
     * Institution-generated description
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Study access endpoint
     */
-  var endpoint: js.UndefOr[js.Array[Reference]] = js.native
+  var endpoint: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Other identifiers for the study
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Who interpreted images
     */
-  var interpreter: js.UndefOr[js.Array[Reference]] = js.native
+  var interpreter: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * All series modality if actual acquisition modalities
     */
-  var modalityList: js.UndefOr[js.Array[Coding]] = js.native
+  var modalityList: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
     * Number of Study Related Instances
     */
-  var numberOfInstances: js.UndefOr[unsignedInt] = js.native
+  var numberOfInstances: js.UndefOr[unsignedInt] = js.undefined
   
   /**
     * Number of Study Related Series
     */
-  var numberOfSeries: js.UndefOr[unsignedInt] = js.native
+  var numberOfSeries: js.UndefOr[unsignedInt] = js.undefined
   
   /**
     * Who the images are of
     */
-  var patient: Reference = js.native
+  var patient: Reference
   
   /**
     * The performed procedure code
     */
-  var procedureCode: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var procedureCode: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * The performed Procedure reference
     */
-  var procedureReference: js.UndefOr[js.Array[Reference]] = js.native
+  var procedureReference: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Why the study was requested
     */
-  var reason: js.UndefOr[CodeableConcept] = js.native
+  var reason: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Referring physician
     */
-  var referrer: js.UndefOr[Reference] = js.native
+  var referrer: js.UndefOr[Reference] = js.undefined
   
   /**
     * Each study has one or more series of instances
     */
-  var series: js.UndefOr[js.Array[ImagingStudySeries]] = js.native
+  var series: js.UndefOr[js.Array[ImagingStudySeries]] = js.undefined
   
   /**
     * When the study was started
     */
-  var started: js.UndefOr[dateTime] = js.native
+  var started: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Formal DICOM identifier for the study
     */
-  var uid: oid = js.native
+  var uid: oid
 }
 object ImagingStudy {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDetachObject extends StObject {
   
   /**
     * The batch reference name. See Transaction Support for more information.
     */
-  var BatchReferenceName: js.UndefOr[typings.awsSdk.clouddirectoryMod.BatchReferenceName] = js.native
+  var BatchReferenceName: js.UndefOr[typings.awsSdk.clouddirectoryMod.BatchReferenceName] = js.undefined
   
   /**
     * The name of the link.
     */
-  var LinkName: typings.awsSdk.clouddirectoryMod.LinkName = js.native
+  var LinkName: typings.awsSdk.clouddirectoryMod.LinkName
   
   /**
     * Parent reference from which the object with the specified link name is detached.
     */
-  var ParentReference: ObjectReference = js.native
+  var ParentReference: ObjectReference
 }
 object BatchDetachObject {
   

@@ -2,144 +2,144 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Windows10EndpointProtectionConfiguration extends DeviceConfiguration {
+trait Windows10EndpointProtectionConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   /**
     * Enables the Admin to choose what types of app to allow on devices. Possible values are: notConfigured,
     * enforceComponentsAndStoreApps, auditComponentsAndStoreApps, enforceComponentsStoreAppsAndSmartlocker,
     * auditComponentsStoreAppsAndSmartlocker.
     */
-  var appLockerApplicationControl: js.UndefOr[AppLockerApplicationControlType] = js.native
+  var appLockerApplicationControl: js.UndefOr[AppLockerApplicationControlType] = js.undefined
   
   // Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)
-  var applicationGuardAllowPersistence: js.UndefOr[Boolean] = js.native
+  var applicationGuardAllowPersistence: js.UndefOr[Boolean] = js.undefined
   
   // Allow printing to Local Printers from Container
-  var applicationGuardAllowPrintToLocalPrinters: js.UndefOr[Boolean] = js.native
+  var applicationGuardAllowPrintToLocalPrinters: js.UndefOr[Boolean] = js.undefined
   
   // Allow printing to Network Printers from Container
-  var applicationGuardAllowPrintToNetworkPrinters: js.UndefOr[Boolean] = js.native
+  var applicationGuardAllowPrintToNetworkPrinters: js.UndefOr[Boolean] = js.undefined
   
   // Allow printing to PDF from Container
-  var applicationGuardAllowPrintToPDF: js.UndefOr[Boolean] = js.native
+  var applicationGuardAllowPrintToPDF: js.UndefOr[Boolean] = js.undefined
   
   // Allow printing to XPS from Container
-  var applicationGuardAllowPrintToXPS: js.UndefOr[Boolean] = js.native
+  var applicationGuardAllowPrintToXPS: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Block clipboard to share data from Host to Container, or from Container to Host, or both ways, or neither ways.
     * Possible values are: notConfigured, blockBoth, blockHostToContainer, blockContainerToHost, blockNone.
     */
-  var applicationGuardBlockClipboardSharing: js.UndefOr[ApplicationGuardBlockClipboardSharingType] = js.native
+  var applicationGuardBlockClipboardSharing: js.UndefOr[ApplicationGuardBlockClipboardSharingType] = js.undefined
   
   /**
     * Block clipboard to transfer image file, text file or neither of them. Possible values are: notConfigured,
     * blockImageAndTextFile, blockImageFile, blockNone, blockTextFile.
     */
-  var applicationGuardBlockFileTransfer: js.UndefOr[ApplicationGuardBlockFileTransferType] = js.native
+  var applicationGuardBlockFileTransfer: js.UndefOr[ApplicationGuardBlockFileTransferType] = js.undefined
   
   // Block enterprise sites to load non-enterprise content, such as third party plug-ins
-  var applicationGuardBlockNonEnterpriseContent: js.UndefOr[Boolean] = js.native
+  var applicationGuardBlockNonEnterpriseContent: js.UndefOr[Boolean] = js.undefined
   
   // Enable Windows Defender Application Guard
-  var applicationGuardEnabled: js.UndefOr[Boolean] = js.native
+  var applicationGuardEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Force auditing will persist Windows logs and events to meet security/compliance criteria (sample events are user
     * login-logoff, use of privilege rights, software installation, system changes, etc.)
     */
-  var applicationGuardForceAuditing: js.UndefOr[Boolean] = js.native
+  var applicationGuardForceAuditing: js.UndefOr[Boolean] = js.undefined
   
   // Allows the Admin to disable the warning prompt for other disk encryption on the user machines.
-  var bitLockerDisableWarningForOtherDiskEncryption: js.UndefOr[Boolean] = js.native
+  var bitLockerDisableWarningForOtherDiskEncryption: js.UndefOr[Boolean] = js.undefined
   
   // Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.
-  var bitLockerEnableStorageCardEncryptionOnMobile: js.UndefOr[Boolean] = js.native
+  var bitLockerEnableStorageCardEncryptionOnMobile: js.UndefOr[Boolean] = js.undefined
   
   // Allows the admin to require encryption to be turned on using BitLocker.
-  var bitLockerEncryptDevice: js.UndefOr[Boolean] = js.native
+  var bitLockerEncryptDevice: js.UndefOr[Boolean] = js.undefined
   
   // BitLocker Removable Drive Policy.
-  var bitLockerRemovableDrivePolicy: js.UndefOr[NullableOption[BitLockerRemovableDrivePolicy]] = js.native
+  var bitLockerRemovableDrivePolicy: js.UndefOr[NullableOption[BitLockerRemovableDrivePolicy]] = js.undefined
   
   // List of folder paths to be added to the list of protected folders
-  var defenderAdditionalGuardedFolders: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var defenderAdditionalGuardedFolders: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // List of exe files and folders to be excluded from attack surface reduction rules
-  var defenderAttackSurfaceReductionExcludedPaths: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var defenderAttackSurfaceReductionExcludedPaths: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Xml content containing information regarding exploit protection details.
-  var defenderExploitProtectionXml: js.UndefOr[NullableOption[Double]] = js.native
+  var defenderExploitProtectionXml: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Name of the file from which DefenderExploitProtectionXml was obtained.
-  var defenderExploitProtectionXmlFileName: js.UndefOr[NullableOption[String]] = js.native
+  var defenderExploitProtectionXmlFileName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // List of paths to exe that are allowed to access protected folders
-  var defenderGuardedFoldersAllowedAppPaths: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var defenderGuardedFoldersAllowedAppPaths: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Indicates whether or not to block user from overriding Exploit Protection settings.
-  var defenderSecurityCenterBlockExploitProtectionOverride: js.UndefOr[Boolean] = js.native
+  var defenderSecurityCenterBlockExploitProtectionOverride: js.UndefOr[Boolean] = js.undefined
   
   // Blocks stateful FTP connections to the device
-  var firewallBlockStatefulFTP: js.UndefOr[NullableOption[Boolean]] = js.native
+  var firewallBlockStatefulFTP: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Specify how the certificate revocation list is to be enforced. Possible values are: deviceDefault, none, attempt,
     * require.
     */
-  var firewallCertificateRevocationListCheckMethod: js.UndefOr[FirewallCertificateRevocationListCheckMethodType] = js.native
+  var firewallCertificateRevocationListCheckMethod: js.UndefOr[FirewallCertificateRevocationListCheckMethodType] = js.undefined
   
   // Configures IPSec exemptions to allow both IPv4 and IPv6 DHCP traffic
-  var firewallIPSecExemptionsAllowDHCP: js.UndefOr[Boolean] = js.native
+  var firewallIPSecExemptionsAllowDHCP: js.UndefOr[Boolean] = js.undefined
   
   // Configures IPSec exemptions to allow ICMP
-  var firewallIPSecExemptionsAllowICMP: js.UndefOr[Boolean] = js.native
+  var firewallIPSecExemptionsAllowICMP: js.UndefOr[Boolean] = js.undefined
   
   // Configures IPSec exemptions to allow neighbor discovery IPv6 ICMP type-codes
-  var firewallIPSecExemptionsAllowNeighborDiscovery: js.UndefOr[Boolean] = js.native
+  var firewallIPSecExemptionsAllowNeighborDiscovery: js.UndefOr[Boolean] = js.undefined
   
   // Configures IPSec exemptions to allow router discovery IPv6 ICMP type-codes
-  var firewallIPSecExemptionsAllowRouterDiscovery: js.UndefOr[Boolean] = js.native
+  var firewallIPSecExemptionsAllowRouterDiscovery: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after
     * which security associations will expire and be deleted. Valid values 300 to 3600
     */
-  var firewallIdleTimeoutForSecurityAssociationInSeconds: js.UndefOr[NullableOption[Double]] = js.native
+  var firewallIdleTimeoutForSecurityAssociationInSeconds: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * If an authentication set is not fully supported by a keying module, direct the module to ignore only unsupported
     * authentication suites rather than the entire set
     */
-  var firewallMergeKeyingModuleSettings: js.UndefOr[NullableOption[Boolean]] = js.native
+  var firewallMergeKeyingModuleSettings: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Configures how packet queueing should be applied in the tunnel gateway scenario. Possible values are: deviceDefault,
     * disabled, queueInbound, queueOutbound, queueBoth.
     */
-  var firewallPacketQueueingMethod: js.UndefOr[FirewallPacketQueueingMethodType] = js.native
+  var firewallPacketQueueingMethod: js.UndefOr[FirewallPacketQueueingMethodType] = js.undefined
   
   // Select the preshared key encoding to be used. Possible values are: deviceDefault, none, utF8.
-  var firewallPreSharedKeyEncodingMethod: js.UndefOr[FirewallPreSharedKeyEncodingMethodType] = js.native
+  var firewallPreSharedKeyEncodingMethod: js.UndefOr[FirewallPreSharedKeyEncodingMethodType] = js.undefined
   
   // Configures the firewall profile settings for domain networks
-  var firewallProfileDomain: js.UndefOr[NullableOption[WindowsFirewallNetworkProfile]] = js.native
+  var firewallProfileDomain: js.UndefOr[NullableOption[WindowsFirewallNetworkProfile]] = js.undefined
   
   // Configures the firewall profile settings for private networks
-  var firewallProfilePrivate: js.UndefOr[NullableOption[WindowsFirewallNetworkProfile]] = js.native
+  var firewallProfilePrivate: js.UndefOr[NullableOption[WindowsFirewallNetworkProfile]] = js.undefined
   
   // Configures the firewall profile settings for public networks
-  var firewallProfilePublic: js.UndefOr[NullableOption[WindowsFirewallNetworkProfile]] = js.native
+  var firewallProfilePublic: js.UndefOr[NullableOption[WindowsFirewallNetworkProfile]] = js.undefined
   
   // Allows IT Admins to control whether users can ignore SmartScreen warnings and run malicious files.
-  var smartScreenBlockOverrideForFiles: js.UndefOr[Boolean] = js.native
+  var smartScreenBlockOverrideForFiles: js.UndefOr[Boolean] = js.undefined
   
   // Allows IT Admins to configure SmartScreen for Windows.
-  var smartScreenEnableInShell: js.UndefOr[Boolean] = js.native
+  var smartScreenEnableInShell: js.UndefOr[Boolean] = js.undefined
 }
 object Windows10EndpointProtectionConfiguration {
   

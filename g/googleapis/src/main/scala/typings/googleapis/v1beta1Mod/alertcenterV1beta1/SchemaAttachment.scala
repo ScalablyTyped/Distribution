@@ -2,19 +2,17 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Attachment with application-specific information about an alert.
   */
-@js.native
 trait SchemaAttachment extends StObject {
   
   /**
     * A CSV file attachment.
     */
-  var csv: js.UndefOr[SchemaCsv] = js.native
+  var csv: js.UndefOr[SchemaCsv] = js.undefined
 }
 object SchemaAttachment {
   

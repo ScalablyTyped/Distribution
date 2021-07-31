@@ -2,14 +2,12 @@ package typings.chrome.chrome.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageSendOptions extends StObject {
   
   /** Optional. Send a message to a specific frame identified by frameId instead of all frames in the tab. */
-  var frameId: js.UndefOr[Double] = js.native
+  var frameId: js.UndefOr[Double] = js.undefined
 }
 object MessageSendOptions {
   

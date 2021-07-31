@@ -2,24 +2,22 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDatafeedsListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#datafeedsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The token for the retrieval of the next page of datafeeds.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
-  var resources: js.UndefOr[js.Array[SchemaDatafeed]] = js.native
+  var resources: js.UndefOr[js.Array[SchemaDatafeed]] = js.undefined
 }
 object SchemaDatafeedsListResponse {
   

@@ -4,7 +4,6 @@ import typings.twilioVideo.twilioVideoNumbers.`20104`
 import typings.twilioVideo.twilioVideoStrings.`Access Token expired or expiration date invalid`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio-video", "AccessTokenExpiredError")

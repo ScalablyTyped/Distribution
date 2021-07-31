@@ -2,21 +2,19 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyClusterRequest extends StObject {
   
   /**
     * A policy that defines how the service retains backups.
     */
-  var BackupRetentionPolicy: typings.awsSdk.cloudhsmv2Mod.BackupRetentionPolicy = js.native
+  var BackupRetentionPolicy: typings.awsSdk.cloudhsmv2Mod.BackupRetentionPolicy
   
   /**
     * The identifier (ID) of the cluster that you want to modify. To find the cluster ID, use DescribeClusters.
     */
-  var ClusterId: typings.awsSdk.cloudhsmv2Mod.ClusterId = js.native
+  var ClusterId: typings.awsSdk.cloudhsmv2Mod.ClusterId
 }
 object ModifyClusterRequest {
   

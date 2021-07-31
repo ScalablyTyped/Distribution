@@ -2,13 +2,11 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an item to be pushed to the indexing queue.
   */
-@js.native
 trait SchemaPushItem extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaPushItem extends StObject {
     * field and the type field results in argument error. The maximum length is
     * 2048 characters.
     */
-  var contentHash: js.UndefOr[String] = js.native
+  var contentHash: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata hash of the item according to the repository. If specified, this
@@ -25,28 +23,28 @@ trait SchemaPushItem extends StObject {
     * field and the type field results in argument error. The maximum length is
     * 2048 characters.
     */
-  var metadataHash: js.UndefOr[String] = js.native
+  var metadataHash: js.UndefOr[String] = js.undefined
   
   /**
     * Provides additional document state information for the connector, such as
     * an alternate repository ID and other metadata. The maximum length is 8192
     * bytes.
     */
-  var payload: js.UndefOr[String] = js.native
+  var payload: js.UndefOr[String] = js.undefined
   
   /**
     * Queue to which this item belongs to.  The
     * &lt;code&gt;default&lt;/code&gt; queue is chosen if this field is not
     * specified. The maximum length is 512 characters.
     */
-  var queue: js.UndefOr[String] = js.native
+  var queue: js.UndefOr[String] = js.undefined
   
   /**
     * Populate this field to store Connector or repository error details. This
     * information is displayed in the Admin Console. This field may only be
     * populated when the Type is REPOSITORY_ERROR.
     */
-  var repositoryError: js.UndefOr[SchemaRepositoryError] = js.native
+  var repositoryError: js.UndefOr[SchemaRepositoryError] = js.undefined
   
   /**
     * Structured data hash of the item according to the repository. If
@@ -54,12 +52,12 @@ trait SchemaPushItem extends StObject {
     * status. Setting this field and the type field results in argument error.
     * The maximum length is 2048 characters.
     */
-  var structuredDataHash: js.UndefOr[String] = js.native
+  var structuredDataHash: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the push operation that defines the push behavior.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaPushItem {
   

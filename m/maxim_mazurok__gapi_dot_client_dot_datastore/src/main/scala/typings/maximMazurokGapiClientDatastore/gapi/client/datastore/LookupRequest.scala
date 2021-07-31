@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LookupRequest extends StObject {
   
   /** Required. Keys of entities to look up. */
-  var keys: js.UndefOr[js.Array[Key]] = js.native
+  var keys: js.UndefOr[js.Array[Key]] = js.undefined
   
   /** The options for this lookup request. */
-  var readOptions: js.UndefOr[ReadOptions] = js.native
+  var readOptions: js.UndefOr[ReadOptions] = js.undefined
 }
 object LookupRequest {
   

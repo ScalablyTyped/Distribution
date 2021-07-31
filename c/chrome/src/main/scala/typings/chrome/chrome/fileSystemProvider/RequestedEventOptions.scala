@@ -2,17 +2,15 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestedEventOptions extends StObject {
   
   /** The identifier of the file system related to this operation. */
-  var fileSystemId: String = js.native
+  var fileSystemId: String
   
   /** The unique identifier of this request. */
-  var requestId: Double = js.native
+  var requestId: Double
 }
 object RequestedEventOptions {
   

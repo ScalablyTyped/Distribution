@@ -2,20 +2,18 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompositionParameterSegment extends StObject {
   
   /** Index of the character to end this segment after. */
-  var end: Double = js.native
+  var end: Double
   
   /** Index of the character to start this segment at */
-  var start: Double = js.native
+  var start: Double
   
   /** The type of the underline to modify this segment. */
-  var style: String = js.native
+  var style: String
 }
 object CompositionParameterSegment {
   

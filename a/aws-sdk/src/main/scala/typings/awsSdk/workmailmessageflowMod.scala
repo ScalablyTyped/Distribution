@@ -10,7 +10,6 @@ import typings.node.streamMod.Readable
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workmailmessageflowMod {
@@ -24,16 +23,14 @@ object workmailmessageflowMod {
     def this(options: ClientConfiguration) = this()
   }
   
-  @js.native
   trait Blob extends StObject
   
-  @js.native
   trait ClientApiVersions extends StObject {
     
     /**
       * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
       */
-    var apiVersion: js.UndefOr[typings.awsSdk.workmailmessageflowMod.apiVersion] = js.native
+    var apiVersion: js.UndefOr[typings.awsSdk.workmailmessageflowMod.apiVersion] = js.undefined
   }
   object ClientApiVersions {
     
@@ -54,15 +51,17 @@ object workmailmessageflowMod {
     }
   }
   
-  type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
-  
   @js.native
+  trait ClientConfiguration
+    extends ServiceConfigurationOptions
+       with ClientApiVersions
+  
   trait GetRawMessageContentRequest extends StObject {
     
     /**
       * The identifier of the email message to retrieve.
       */
-    var messageId: messageIdType = js.native
+    var messageId: messageIdType
   }
   object GetRawMessageContentRequest {
     
@@ -80,13 +79,12 @@ object workmailmessageflowMod {
     }
   }
   
-  @js.native
   trait GetRawMessageContentResponse extends StObject {
     
     /**
       * The raw content of the email message, in MIME format.
       */
-    var messageContent: messageContentBlob = js.native
+    var messageContent: messageContentBlob
   }
   object GetRawMessageContentResponse {
     
@@ -108,7 +106,7 @@ object workmailmessageflowMod {
   trait WorkMailMessageFlow extends Service {
     
     @JSName("config")
-    var config_WorkMailMessageFlow: ConfigBase with ClientConfiguration = js.native
+    var config_WorkMailMessageFlow: ConfigBase & ClientConfiguration = js.native
     
     /**
       * Retrieves the raw content of an in-transit email message, in MIME format. 

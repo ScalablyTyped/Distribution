@@ -2,16 +2,14 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentsMetadataConfiguration extends StObject {
   
   /**
     * A prefix used to filter metadata configuration files in the AWS S3 bucket. The S3 bucket might contain multiple metadata files. Use S3Prefix to include only the desired metadata files.
     */
-  var S3Prefix: js.UndefOr[S3ObjectKey] = js.native
+  var S3Prefix: js.UndefOr[S3ObjectKey] = js.undefined
 }
 object DocumentsMetadataConfiguration {
   

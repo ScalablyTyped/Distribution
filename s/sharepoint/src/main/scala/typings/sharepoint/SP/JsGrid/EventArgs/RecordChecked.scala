@@ -4,15 +4,15 @@ import typings.sharepoint.SP.JsGrid.IEventArgs
 import typings.sharepoint.SP.Utilities.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RecordChecked extends IEventArgs {
+trait RecordChecked
+  extends StObject
+     with IEventArgs {
   
-  var bChecked: Boolean = js.native
+  var bChecked: Boolean
   
-  var recordKeySet: Set = js.native
+  var recordKeySet: Set
 }
 object RecordChecked {
   

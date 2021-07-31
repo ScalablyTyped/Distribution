@@ -2,13 +2,11 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceLimits extends StObject {
   
-  var InstanceCountLimits: js.UndefOr[typings.awsSdk.esMod.InstanceCountLimits] = js.native
+  var InstanceCountLimits: js.UndefOr[typings.awsSdk.esMod.InstanceCountLimits] = js.undefined
 }
 object InstanceLimits {
   

@@ -12,7 +12,7 @@ findAndReplaceDOMText: DOM find/replace utility
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 55796 |
+| # downloads        | 71644 |
 | # stars            | 0 |
 
 ## Links

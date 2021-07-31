@@ -2,15 +2,13 @@ package typings.jqueryDynatree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynaTreeStringsOptions extends StObject {
   
-  var loadError: js.UndefOr[String] = js.native
+  var loadError: js.UndefOr[String] = js.undefined
   
-  var loading: js.UndefOr[String] = js.native
+  var loading: js.UndefOr[String] = js.undefined
 }
 object DynaTreeStringsOptions {
   

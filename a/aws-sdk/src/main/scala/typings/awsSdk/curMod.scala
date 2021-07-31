@@ -8,7 +8,6 @@ import typings.awsSdk.serviceMod.Service
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object curMod {
@@ -60,14 +59,13 @@ object curMod {
   
   type AdditionalArtifactList = js.Array[AdditionalArtifact]
   
-  @js.native
   trait Blob extends StObject
   
   @js.native
   trait CUR extends Service {
     
     @JSName("config")
-    var config_CUR: ConfigBase with ClientConfiguration = js.native
+    var config_CUR: ConfigBase & ClientConfiguration = js.native
     
     /**
       * Deletes the specified report.
@@ -126,13 +124,12 @@ object curMod {
     ): Request[PutReportDefinitionResponse, AWSError] = js.native
   }
   
-  @js.native
   trait ClientApiVersions extends StObject {
     
     /**
       * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
       */
-    var apiVersion: js.UndefOr[typings.awsSdk.curMod.apiVersion] = js.native
+    var apiVersion: js.UndefOr[typings.awsSdk.curMod.apiVersion] = js.undefined
   }
   object ClientApiVersions {
     
@@ -153,7 +150,10 @@ object curMod {
     }
   }
   
-  type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  @js.native
+  trait ClientConfiguration
+    extends ServiceConfigurationOptions
+       with ClientApiVersions
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ZIP
@@ -163,13 +163,12 @@ object curMod {
   */
   type CompressionFormat = _CompressionFormat | String
   
-  @js.native
   trait DeleteReportDefinitionRequest extends StObject {
     
     /**
       * The name of the report that you want to delete. The name must be unique, is case sensitive, and can't include spaces.
       */
-    var ReportName: js.UndefOr[typings.awsSdk.curMod.ReportName] = js.native
+    var ReportName: js.UndefOr[typings.awsSdk.curMod.ReportName] = js.undefined
   }
   object DeleteReportDefinitionRequest {
     
@@ -190,10 +189,9 @@ object curMod {
     }
   }
   
-  @js.native
   trait DeleteReportDefinitionResponse extends StObject {
     
-    var ResponseMessage: js.UndefOr[DeleteResponseMessage] = js.native
+    var ResponseMessage: js.UndefOr[DeleteResponseMessage] = js.undefined
   }
   object DeleteReportDefinitionResponse {
     
@@ -216,12 +214,11 @@ object curMod {
   
   type DeleteResponseMessage = String
   
-  @js.native
   trait DescribeReportDefinitionsRequest extends StObject {
     
-    var MaxResults: js.UndefOr[typings.awsSdk.curMod.MaxResults] = js.native
+    var MaxResults: js.UndefOr[typings.awsSdk.curMod.MaxResults] = js.undefined
     
-    var NextToken: js.UndefOr[GenericString] = js.native
+    var NextToken: js.UndefOr[GenericString] = js.undefined
   }
   object DescribeReportDefinitionsRequest {
     
@@ -248,15 +245,14 @@ object curMod {
     }
   }
   
-  @js.native
   trait DescribeReportDefinitionsResponse extends StObject {
     
-    var NextToken: js.UndefOr[GenericString] = js.native
+    var NextToken: js.UndefOr[GenericString] = js.undefined
     
     /**
       * A list of AWS Cost and Usage reports owned by the account.
       */
-    var ReportDefinitions: js.UndefOr[ReportDefinitionList] = js.native
+    var ReportDefinitions: js.UndefOr[ReportDefinitionList] = js.undefined
   }
   object DescribeReportDefinitionsResponse {
     
@@ -290,12 +286,11 @@ object curMod {
   
   type MaxResults = Double
   
-  @js.native
   trait ModifyReportDefinitionRequest extends StObject {
     
-    var ReportDefinition: typings.awsSdk.curMod.ReportDefinition = js.native
+    var ReportDefinition: typings.awsSdk.curMod.ReportDefinition
     
-    var ReportName: typings.awsSdk.curMod.ReportName = js.native
+    var ReportName: typings.awsSdk.curMod.ReportName
   }
   object ModifyReportDefinitionRequest {
     
@@ -316,16 +311,14 @@ object curMod {
     }
   }
   
-  @js.native
   trait ModifyReportDefinitionResponse extends StObject
   
-  @js.native
   trait PutReportDefinitionRequest extends StObject {
     
     /**
       * Represents the output of the PutReportDefinition operation. The content consists of the detailed metadata and data file information. 
       */
-    var ReportDefinition: typings.awsSdk.curMod.ReportDefinition = js.native
+    var ReportDefinition: typings.awsSdk.curMod.ReportDefinition
   }
   object PutReportDefinitionRequest {
     
@@ -343,47 +336,45 @@ object curMod {
     }
   }
   
-  @js.native
   trait PutReportDefinitionResponse extends StObject
   
   type RefreshClosedReports = Boolean
   
-  @js.native
   trait ReportDefinition extends StObject {
     
     /**
       * A list of manifests that you want Amazon Web Services to create for this report.
       */
-    var AdditionalArtifacts: js.UndefOr[AdditionalArtifactList] = js.native
+    var AdditionalArtifacts: js.UndefOr[AdditionalArtifactList] = js.undefined
     
     /**
       * A list of strings that indicate additional content that Amazon Web Services includes in the report, such as individual resource IDs. 
       */
-    var AdditionalSchemaElements: SchemaElementList = js.native
+    var AdditionalSchemaElements: SchemaElementList
     
-    var Compression: CompressionFormat = js.native
+    var Compression: CompressionFormat
     
-    var Format: ReportFormat = js.native
+    var Format: ReportFormat
     
     /**
       * Whether you want Amazon Web Services to update your reports after they have been finalized if Amazon Web Services detects charges related to previous months. These charges can include refunds, credits, or support fees.
       */
-    var RefreshClosedReports: js.UndefOr[typings.awsSdk.curMod.RefreshClosedReports] = js.native
+    var RefreshClosedReports: js.UndefOr[typings.awsSdk.curMod.RefreshClosedReports] = js.undefined
     
-    var ReportName: typings.awsSdk.curMod.ReportName = js.native
+    var ReportName: typings.awsSdk.curMod.ReportName
     
     /**
       * Whether you want Amazon Web Services to overwrite the previous version of each report or to deliver the report in addition to the previous versions.
       */
-    var ReportVersioning: js.UndefOr[typings.awsSdk.curMod.ReportVersioning] = js.native
+    var ReportVersioning: js.UndefOr[typings.awsSdk.curMod.ReportVersioning] = js.undefined
     
-    var S3Bucket: typings.awsSdk.curMod.S3Bucket = js.native
+    var S3Bucket: typings.awsSdk.curMod.S3Bucket
     
-    var S3Prefix: typings.awsSdk.curMod.S3Prefix = js.native
+    var S3Prefix: typings.awsSdk.curMod.S3Prefix
     
-    var S3Region: AWSRegion = js.native
+    var S3Region: AWSRegion
     
-    var TimeUnit: typings.awsSdk.curMod.TimeUnit = js.native
+    var TimeUnit: typings.awsSdk.curMod.TimeUnit
   }
   object ReportDefinition {
     

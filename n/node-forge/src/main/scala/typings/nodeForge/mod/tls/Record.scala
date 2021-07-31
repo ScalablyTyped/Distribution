@@ -3,21 +3,19 @@ package typings.nodeForge.mod.tls
 import typings.nodeForge.mod.util.ByteBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Record extends StObject {
   
-  var fragment: ByteBuffer = js.native
+  var fragment: ByteBuffer
   
-  var length: Double = js.native
+  var length: Double
   
-  var ready: js.UndefOr[Boolean] = js.native
+  var ready: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: ContentType = js.native
+  var `type`: ContentType
   
-  var version: ProtocolVersion = js.native
+  var version: ProtocolVersion
 }
 object Record {
   

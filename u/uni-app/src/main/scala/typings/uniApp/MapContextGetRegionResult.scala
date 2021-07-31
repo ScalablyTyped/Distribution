@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapContextGetRegionResult extends StObject {
   
   /**
     * 东北角的经纬度
     */
-  var northeast: js.UndefOr[LocationObject] = js.native
+  var northeast: js.UndefOr[LocationObject] = js.undefined
   
   /**
     * 西南角的经纬度
     */
-  var southwest: js.UndefOr[LocationObject] = js.native
+  var southwest: js.UndefOr[LocationObject] = js.undefined
 }
 object MapContextGetRegionResult {
   

@@ -2,21 +2,19 @@ package typings.rcFieldForm.interfaceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateOptions extends StObject {
   
   /**
     * Recursive validate. It will validate all the name path that contains the provided one.
     * e.g. ['a'] will validate ['a'] , ['a', 'b'] and ['a', 1].
     */
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
   
-  var triggerName: js.UndefOr[String] = js.native
+  var triggerName: js.UndefOr[String] = js.undefined
   
-  var validateMessages: js.UndefOr[ValidateMessages] = js.native
+  var validateMessages: js.UndefOr[ValidateMessages] = js.undefined
 }
 object ValidateOptions {
   

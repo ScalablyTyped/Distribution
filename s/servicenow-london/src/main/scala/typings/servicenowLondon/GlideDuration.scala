@@ -2,10 +2,8 @@ package typings.servicenowLondon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlideDuration extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait GlideDuration extends StObject {
     * var answer = duration.add(duration2);
     * gs.info(answer.getDisplayValue());
     */
-  def add(value: GlideDuration): GlideDuration = js.native
+  def add(value: GlideDuration): GlideDuration
   
   /**
     * Gets the duration in the specified format.
@@ -32,7 +30,7 @@ trait GlideDuration extends StObject {
     * var dur = new GlideDuration('3 22:00:00');
     * gs.info(dur.getByFormat('HH:mm'));
     */
-  def getByFormat(format: String): String = js.native
+  def getByFormat(format: String): String
   
   /**
     * Gets the number of days.
@@ -43,7 +41,7 @@ trait GlideDuration extends StObject {
     * var dur = new GlideDuration('3 12:00:00');
     * gs.info(dur.getDayPart());
     */
-  def getDayPart(): Double = js.native
+  def getDayPart(): Double
   
   /**
     * Gets the display value of the duration in number of days, hours, and
@@ -55,7 +53,7 @@ trait GlideDuration extends StObject {
     * var dur = new GlideDuration('3 12:00:00');
     * gs.info(dur.getDisplayValue());
     */
-  def getDisplayValue(): String = js.native
+  def getDisplayValue(): String
   
   /**
     * Gets the duration value in "d HH:mm:ss" format.
@@ -66,7 +64,7 @@ trait GlideDuration extends StObject {
     * var dur = new GlideDuration('3 12:00:00');
     * gs.info(dur.getDurationValue());
     */
-  def getDurationValue(): String = js.native
+  def getDurationValue(): String
   
   /**
     * Gets the rounded number of days. If the time part is more than 12 hours, the return value is
@@ -78,7 +76,7 @@ trait GlideDuration extends StObject {
     * var dur = new GlideDuration('3 11:00:00');
     * gs.info(dur.getRoundedDayPart());
     */
-  def getRoundedDayPart(): Double = js.native
+  def getRoundedDayPart(): Double
   
   /**
     * Gets the internal value of the GlideDuration object.
@@ -90,7 +88,7 @@ trait GlideDuration extends StObject {
     * var dur = new GlideDuration('3 12:00:00');
     * gs.info(dur.getValue());
     */
-  def getValue(): String = js.native
+  def getValue(): String
   
   /**
     * Sets the display value.
@@ -103,7 +101,7 @@ trait GlideDuration extends StObject {
     * dur.setDisplayValue('3 08:00:00');
     * gs.info(dur.getDisplayValue());
     */
-  def setDisplayValue(asDisplayed: String): Unit = js.native
+  def setDisplayValue(asDisplayed: String): Unit
   
   /**
     * Sets the internal value of the GlideDuration object.
@@ -117,7 +115,7 @@ trait GlideDuration extends StObject {
     * dur.setValue('1970-01-05 08:00:00');
     * gs.info(dur.getDisplayValue());
     */
-  def setValue(value: String): Unit = js.native
+  def setValue(value: String): Unit
   
   /**
     * Subtracts the specified duration from the current duration.
@@ -131,7 +129,7 @@ trait GlideDuration extends StObject {
     * var answer = duration.subtract(duration2);
     * gs.info(answer.getDisplayValue());
     */
-  def subtract(value: GlideDuration): GlideDuration = js.native
+  def subtract(value: GlideDuration): GlideDuration
 }
 object GlideDuration {
   

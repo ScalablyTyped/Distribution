@@ -2,19 +2,17 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentAuthorizationInfo extends StObject {
   
-  var authorizationHeaderFor: AuthorizationHeaderFor = js.native
+  var authorizationHeaderFor: AuthorizationHeaderFor
   
-  var resources: js.Array[String] = js.native
+  var resources: js.Array[String]
   
-  var tenantId: String = js.native
+  var tenantId: String
   
-  var vstsAccessTokenKey: String = js.native
+  var vstsAccessTokenKey: String
 }
 object DeploymentAuthorizationInfo {
   

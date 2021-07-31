@@ -3,7 +3,6 @@ package typings.cathoQuantum
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationMod {
@@ -15,34 +14,33 @@ object paginationMod {
   
   type Pagination = Component[PaginationProps, js.Object, js.Any]
   
-  @js.native
   trait PaginationProps extends StObject {
     
-    var activePage: js.UndefOr[Double] = js.native
+    var activePage: js.UndefOr[Double] = js.undefined
     
-    var activePageAriaLabel: js.UndefOr[String] = js.native
+    var activePageAriaLabel: js.UndefOr[String] = js.undefined
     
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
-    var followOnlyFirstPage: js.UndefOr[Boolean] = js.native
+    var followOnlyFirstPage: js.UndefOr[Boolean] = js.undefined
     
     var infoFormatter: js.UndefOr[
         js.Function2[/* activePage */ js.UndefOr[Double], /* lastPage */ js.UndefOr[Double], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var nextButtonText: js.UndefOr[String] = js.native
+    var nextButtonText: js.UndefOr[String] = js.undefined
     
-    var onPageClick: js.UndefOr[js.Function1[/* page */ js.UndefOr[Double], Unit]] = js.native
+    var onPageClick: js.UndefOr[js.Function1[/* page */ js.UndefOr[Double], Unit]] = js.undefined
     
-    var pageAriaLabel: js.UndefOr[String] = js.native
+    var pageAriaLabel: js.UndefOr[String] = js.undefined
     
-    var pageHref: js.UndefOr[js.Function1[/* page */ js.UndefOr[Double], Unit]] = js.native
+    var pageHref: js.UndefOr[js.Function1[/* page */ js.UndefOr[Double], Unit]] = js.undefined
     
-    var prevButtonText: js.UndefOr[String] = js.native
+    var prevButtonText: js.UndefOr[String] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var totalPages: Double = js.native
+    var totalPages: Double
   }
   object PaginationProps {
     

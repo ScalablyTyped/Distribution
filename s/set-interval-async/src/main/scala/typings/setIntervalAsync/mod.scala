@@ -3,20 +3,35 @@ package typings.setIntervalAsync
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("set-interval-async", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("set-interval-async", "SetIntervalAsyncError")
   @js.native
-  class SetIntervalAsyncError () extends Error
+  class SetIntervalAsyncError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
-  @JSImport("set-interval-async", "clearIntervalAsync")
-  @js.native
-  def clearIntervalAsync(timer: SetIntervalAsyncTimer): js.Promise[Unit] = js.native
+  @scala.inline
+  def clearIntervalAsync(timer: SetIntervalAsyncTimer): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearIntervalAsync")(timer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   object dynamic {
+    
+    @JSImport("set-interval-async", "dynamic")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Attempts to execute the given handler at regular intervals, while preventing
@@ -29,12 +44,15 @@ object mod {
       * @param interval - Interval in milliseconds. Must be at least 10 ms.
       * @param args - Any number of arguments to pass on to the handler.
       */
-    @JSImport("set-interval-async", "dynamic.setIntervalAsync")
-    @js.native
-    def setIntervalAsync(handler: js.Function1[/* repeated */ js.Any, _], interval: Double, args: js.Any*): SetIntervalAsyncTimer = js.native
+    @scala.inline
+    def setIntervalAsync(handler: js.Function1[/* repeated */ js.Any, js.Any], interval: Double, args: js.Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SetIntervalAsyncTimer]
   }
   
   object fixed {
+    
+    @JSImport("set-interval-async", "fixed")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Executes the given handler at fixed intervals, while preventing
@@ -47,12 +65,15 @@ object mod {
       * @param interval - Interval in milliseconds. Must be at least 10 ms.
       * @param args - Any number of arguments to pass on to the handler.
       */
-    @JSImport("set-interval-async", "fixed.setIntervalAsync")
-    @js.native
-    def setIntervalAsync(handler: js.Function1[/* repeated */ js.Any, _], interval: Double, args: js.Any*): SetIntervalAsyncTimer = js.native
+    @scala.inline
+    def setIntervalAsync(handler: js.Function1[/* repeated */ js.Any, js.Any], interval: Double, args: js.Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SetIntervalAsyncTimer]
   }
   
   object legacy {
+    
+    @JSImport("set-interval-async", "legacy")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Executes the given handler at fixed intervals; ie. the start time
@@ -67,15 +88,13 @@ object mod {
       * @param interval - Interval in milliseconds. Must be at least 10 ms.
       * @param args - Any number of arguments to pass on to the handler.
       */
-    @JSImport("set-interval-async", "legacy.setIntervalAsync")
-    @js.native
-    def setIntervalAsync(handler: js.Function1[/* repeated */ js.Any, _], interval: Double, args: js.Any*): SetIntervalAsyncTimer = js.native
+    @scala.inline
+    def setIntervalAsync(handler: js.Function1[/* repeated */ js.Any, js.Any], interval: Double, args: js.Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SetIntervalAsyncTimer]
   }
   
-  @js.native
   trait SetIntervalAsyncTimer extends StObject {
     
-    var id: Double = js.native
+    var id: Double
   }
   object SetIntervalAsyncTimer {
     

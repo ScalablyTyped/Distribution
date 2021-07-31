@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCollectionRequest extends StObject {
   
   /**
     * ID of the collection to delete.
     */
-  var CollectionId: typings.awsSdk.rekognitionMod.CollectionId = js.native
+  var CollectionId: typings.awsSdk.rekognitionMod.CollectionId
 }
 object DeleteCollectionRequest {
   

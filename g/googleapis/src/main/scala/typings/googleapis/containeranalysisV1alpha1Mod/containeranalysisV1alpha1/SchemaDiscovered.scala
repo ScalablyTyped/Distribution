@@ -2,37 +2,35 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides information about the scan status of a discovered resource.
   */
-@js.native
 trait SchemaDiscovered extends StObject {
   
   /**
     * The status of discovery for the resource.
     */
-  var analysisStatus: js.UndefOr[String] = js.native
+  var analysisStatus: js.UndefOr[String] = js.undefined
   
   /**
     * When an error is encountered this will contain a LocalizedMessage under
     * details to show to the user. The LocalizedMessage output only and
     * populated by the API.
     */
-  var analysisStatusError: js.UndefOr[SchemaStatus] = js.native
+  var analysisStatusError: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * Whether the resource is continuously analyzed.
     */
-  var continuousAnalysis: js.UndefOr[String] = js.native
+  var continuousAnalysis: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. An operation that indicates the status of the current scan.
     * This field is deprecated, do not use.
     */
-  var operation: js.UndefOr[SchemaOperation] = js.native
+  var operation: js.UndefOr[SchemaOperation] = js.undefined
 }
 object SchemaDiscovered {
   

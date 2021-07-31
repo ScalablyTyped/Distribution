@@ -2,21 +2,19 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProfilerEvent extends StObject {
   
   /**
     * Event class name
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Event timestamp
     */
-  var timestamp: String = js.native
+  var timestamp: String
 }
 object ProfilerEvent {
   

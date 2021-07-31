@@ -8,7 +8,6 @@ import typings.typedoc.reflectionsSignatureMod.SignatureReflection
 import typings.typedoc.reflectionsTypeParameterMod.TypeParameterReflection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reflectionsDeclarationMod {
@@ -56,14 +55,13 @@ object reflectionsDeclarationMod {
     var typeParameters: js.UndefOr[js.Array[TypeParameterReflection]] = js.native
   }
   
-  @js.native
   trait DeclarationHierarchy extends StObject {
     
-    var isTarget: js.UndefOr[Boolean] = js.native
+    var isTarget: js.UndefOr[Boolean] = js.undefined
     
-    var next: js.UndefOr[DeclarationHierarchy] = js.native
+    var next: js.UndefOr[DeclarationHierarchy] = js.undefined
     
-    var types: js.Array[Type] = js.native
+    var types: js.Array[Type]
   }
   object DeclarationHierarchy {
     

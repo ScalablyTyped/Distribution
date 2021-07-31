@@ -5,15 +5,15 @@ import typings.winrt.Windows.Foundation.IClosable
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IStorageStreamTransaction extends IClosable {
+trait IStorageStreamTransaction
+  extends StObject
+     with IClosable {
   
-  def commitAsync(): IAsyncAction = js.native
+  def commitAsync(): IAsyncAction
   
-  var stream: IRandomAccessStream = js.native
+  var stream: IRandomAccessStream
 }
 object IStorageStreamTransaction {
   

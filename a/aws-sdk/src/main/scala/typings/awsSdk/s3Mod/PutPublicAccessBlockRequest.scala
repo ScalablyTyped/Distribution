@@ -2,31 +2,29 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutPublicAccessBlockRequest extends StObject {
   
   /**
     * The name of the Amazon S3 bucket whose PublicAccessBlock configuration you want to set.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The MD5 hash of the PutPublicAccessBlock request body.  For requests made using the AWS Command Line Interface (CLI) or AWS SDKs, this field is calculated automatically.
     */
-  var ContentMD5: js.UndefOr[typings.awsSdk.s3Mod.ContentMD5] = js.native
+  var ContentMD5: js.UndefOr[typings.awsSdk.s3Mod.ContentMD5] = js.undefined
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The PublicAccessBlock configuration that you want to apply to this Amazon S3 bucket. You can enable the configuration options in any combination. For more information about when Amazon S3 considers a bucket or object public, see The Meaning of "Public" in the Amazon Simple Storage Service Developer Guide.
     */
-  var PublicAccessBlockConfiguration: typings.awsSdk.s3Mod.PublicAccessBlockConfiguration = js.native
+  var PublicAccessBlockConfiguration: typings.awsSdk.s3Mod.PublicAccessBlockConfiguration
 }
 object PutPublicAccessBlockRequest {
   

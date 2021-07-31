@@ -7,14 +7,15 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleImageMod {
   
   @JSImport("ol/style/Image", JSImport.Default)
   @js.native
-  abstract class default protected () extends ImageStyle {
+  abstract class default protected ()
+    extends StObject
+       with ImageStyle {
     def this(options: Options) = this()
   }
   
@@ -111,18 +112,17 @@ object styleImageMod {
     def unlistenImageChange(listener: js.Function1[/* p0 */ typings.ol.eventMod.default, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var displacement: js.Array[Double] = js.native
+    var displacement: js.Array[Double]
     
-    var opacity: Double = js.native
+    var opacity: Double
     
-    var rotateWithView: Boolean = js.native
+    var rotateWithView: Boolean
     
-    var rotation: Double = js.native
+    var rotation: Double
     
-    var scale: Double | Size = js.native
+    var scale: Double | Size
   }
   object Options {
     

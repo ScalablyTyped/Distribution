@@ -10,9 +10,9 @@ React Native via Expo implementation of gl-react, an universal React library to 
 | ------------------ | :-------------: |
 | Full name          | gl-react-expo |
 | Keywords           | gl-react, gl, opengl, react, react-native, expo, react-component |
-| # releases         | 11 |
+| # releases         | 15 |
 | # dependents       | 2 |
-| # downloads        | 29820 |
+| # downloads        | 51742 |
 | # stars            | 0 |
 
 ## Links

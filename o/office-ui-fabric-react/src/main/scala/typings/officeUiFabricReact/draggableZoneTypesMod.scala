@@ -8,17 +8,15 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object draggableZoneTypesMod {
   
-  @js.native
   trait ICoordinates extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object ICoordinates {
     
@@ -39,14 +37,13 @@ object draggableZoneTypesMod {
     }
   }
   
-  @js.native
   trait IDragData extends StObject {
     
-    var delta: ICoordinates = js.native
+    var delta: ICoordinates
     
-    var lastPosition: js.UndefOr[ICoordinates] = js.native
+    var lastPosition: js.UndefOr[ICoordinates] = js.undefined
     
-    var position: ICoordinates = js.native
+    var position: ICoordinates
   }
   object IDragData {
     
@@ -73,51 +70,52 @@ object draggableZoneTypesMod {
     }
   }
   
-  @js.native
-  trait IDraggableZoneProps extends HTMLAttributes[HTMLDivElement] {
+  trait IDraggableZoneProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Specifies a selector to be used as the handle that initiates drag
       */
-    var handleSelector: js.UndefOr[String] = js.native
+    var handleSelector: js.UndefOr[String] = js.undefined
     
     /**
       * Callback for when the drag changes, while dragging
       */
     var onDragChange: js.UndefOr[
         js.Function2[
-          /* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) with TouchEvent[HTMLElement], 
+          /* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) & TouchEvent[HTMLElement], 
           /* dragData */ IDragData, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for when dragging starts
       */
     var onStart: js.UndefOr[
         js.Function2[
-          /* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) with TouchEvent[HTMLElement], 
+          /* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) & TouchEvent[HTMLElement], 
           /* dragData */ IDragData, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for when dragging stops
       */
     var onStop: js.UndefOr[
         js.Function2[
-          /* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) with TouchEvent[HTMLElement], 
+          /* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) & TouchEvent[HTMLElement], 
           /* dragData */ IDragData, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * the X and Y coordinates to use as an offest to position the draggable content
       */
-    var position: js.UndefOr[ICoordinates] = js.native
+    var position: js.UndefOr[ICoordinates] = js.undefined
     
     /**
       * Specifies a selector to be used to prevent drag initialization.
@@ -125,7 +123,7 @@ object draggableZoneTypesMod {
       * to have the cursor change to move or to allow users to select from buttons,
       * you could pass button here (the close button in the header of a dialog is a concrete example)
       */
-    var preventDragSelector: js.UndefOr[String] = js.native
+    var preventDragSelector: js.UndefOr[String] = js.undefined
   }
   object IDraggableZoneProps {
     
@@ -146,7 +144,7 @@ object draggableZoneTypesMod {
       
       @scala.inline
       def setOnDragChange(
-        value: (/* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) with TouchEvent[HTMLElement], /* dragData */ IDragData) => Unit
+        value: (/* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) & TouchEvent[HTMLElement], /* dragData */ IDragData) => Unit
       ): Self = StObject.set(x, "onDragChange", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -154,7 +152,7 @@ object draggableZoneTypesMod {
       
       @scala.inline
       def setOnStart(
-        value: (/* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) with TouchEvent[HTMLElement], /* dragData */ IDragData) => Unit
+        value: (/* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) & TouchEvent[HTMLElement], /* dragData */ IDragData) => Unit
       ): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -162,7 +160,7 @@ object draggableZoneTypesMod {
       
       @scala.inline
       def setOnStop(
-        value: (/* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) with TouchEvent[HTMLElement], /* dragData */ IDragData) => Unit
+        value: (/* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) & TouchEvent[HTMLElement], /* dragData */ IDragData) => Unit
       ): Self = StObject.set(x, "onStop", js.Any.fromFunction2(value))
       
       @scala.inline

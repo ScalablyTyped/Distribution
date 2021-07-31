@@ -34,17 +34,19 @@ import typings.std.Record
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("hijackresponse", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[ResBody](
     res: Response_[ResBody],
     callback: js.Function2[/* err */ Null, /* res */ HijackedResponse[ResBody], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(res.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("hijackresponse", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined parent express.express.Response<ResBody> */
   /* Inlined parent std.Omit<node.stream.Readable, keyof express.express.Response<any>> */
@@ -106,9 +108,9 @@ object mod {
       * Express instance itself is a request handler, which could be invoked without
       * third argument.
       */
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_, Double]): js.Any = js.native
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
-    def app(req: IncomingMessage, res: Response[_, Double]): js.Any = js.native
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any = js.native
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any = js.native
+    def app(req: IncomingMessage, res: Response[js.Any, Double]): js.Any = js.native
     def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
     @JSName("app")
     var app_Original: Application = js.native
@@ -238,7 +240,7 @@ object mod {
     def end(data: String, cb: js.Function0[Unit]): Unit = js.native
     def end(data: Uint8Array): Unit = js.native
     def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
-    def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+    def end(str: String, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
     def end(str: String, encoding: BufferEncoding): Unit = js.native
     def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     
@@ -398,7 +400,7 @@ object mod {
     def listeners(event: String): js.Array[js.Function] = js.native
     def listeners(event: js.Symbol): js.Array[js.Function] = js.native
     
-    var locals: Record[String, _] = js.native
+    var locals: Record[String, js.Any] = js.native
     
     /**
       * Set the location header to `url`.
@@ -507,7 +509,7 @@ object mod {
     
     def read(): js.Any = js.native
     @JSName("read")
-    var read_Original: js.Function0[_] = js.native
+    var read_Original: js.Function0[js.Any] = js.native
     
     var readable: Boolean = js.native
     
@@ -576,19 +578,15 @@ object mod {
       */
     def render(view: String): Unit = js.native
     def render(view: String, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
-    def render(
-      view: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* html */ String, Unit]
-    ): Unit = js.native
     def render(view: String, options: js.Object): Unit = js.native
     def render(view: String, options: js.Object, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
+    def render(view: String, options: Unit, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
     
     /**
       * After middleware.init executed, Response will contain req property
       * See: express/lib/middleware/init.js
       */
-    var req: js.UndefOr[Request[ParamsDictionary, _, _, ParsedQs]] = js.native
+    var req: js.UndefOr[Request[ParamsDictionary, js.Any, js.Any, ParsedQs]] = js.native
     
     def resume(): this.type = js.native
     @JSName("resume")
@@ -758,7 +756,7 @@ object mod {
     
     def uncork(): Unit = js.native
     
-    def unhijack(): Response_[_] = js.native
+    def unhijack(): Response_[js.Any] = js.native
     
     def unpipe(): this.type = js.native
     @JSName("unpipe")
@@ -811,11 +809,7 @@ object mod {
       encoding: BufferEncoding,
       cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Boolean = js.native
-    def write(
-      str: String,
-      encoding: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
-    ): Boolean = js.native
+    def write(str: String, encoding: Unit, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(str: String, encoding: BufferEncoding): Boolean = js.native
     def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     
@@ -827,11 +821,11 @@ object mod {
     def writeHead(statusCode: Double): this.type = js.native
     def writeHead(statusCode: Double, headers: js.Array[OutgoingHttpHeader]): this.type = js.native
     def writeHead(statusCode: Double, headers: OutgoingHttpHeaders): this.type = js.native
-    def writeHead(statusCode: Double, reasonPhrase: js.UndefOr[scala.Nothing], headers: js.Array[OutgoingHttpHeader]): this.type = js.native
-    def writeHead(statusCode: Double, reasonPhrase: js.UndefOr[scala.Nothing], headers: OutgoingHttpHeaders): this.type = js.native
     def writeHead(statusCode: Double, reasonPhrase: String): this.type = js.native
     def writeHead(statusCode: Double, reasonPhrase: String, headers: js.Array[OutgoingHttpHeader]): this.type = js.native
     def writeHead(statusCode: Double, reasonPhrase: String, headers: OutgoingHttpHeaders): this.type = js.native
+    def writeHead(statusCode: Double, reasonPhrase: Unit, headers: js.Array[OutgoingHttpHeader]): this.type = js.native
+    def writeHead(statusCode: Double, reasonPhrase: Unit, headers: OutgoingHttpHeaders): this.type = js.native
     
     def writeProcessing(): Unit = js.native
   }

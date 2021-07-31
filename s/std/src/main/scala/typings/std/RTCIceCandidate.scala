@@ -2,46 +2,45 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The RTCIceCandidate interface—part of the WebRTC API—represents a candidate Internet Connectivity Establishment (ICE) configuration which may be used to establish an RTCPeerConnection. */
-@js.native
 trait RTCIceCandidate extends StObject {
   
-  val candidate: java.lang.String = js.native
+  val candidate: java.lang.String
   
-  val component: RTCIceComponent | Null = js.native
+  val component: RTCIceComponent | Null
   
-  val foundation: java.lang.String | Null = js.native
+  val foundation: java.lang.String | Null
   
-  val port: Double | Null = js.native
+  val port: Double | Null
   
-  val priority: Double | Null = js.native
+  val priority: Double | Null
   
-  val protocol: RTCIceProtocol | Null = js.native
+  val protocol: RTCIceProtocol | Null
   
-  val relatedAddress: java.lang.String | Null = js.native
+  val relatedAddress: java.lang.String | Null
   
-  val relatedPort: Double | Null = js.native
+  val relatedPort: Double | Null
   
-  val sdpMLineIndex: Double | Null = js.native
+  val sdpMLineIndex: Double | Null
   
-  val sdpMid: java.lang.String | Null = js.native
+  val sdpMid: java.lang.String | Null
   
-  val tcpType: RTCIceTcpCandidateType | Null = js.native
+  val tcpType: RTCIceTcpCandidateType | Null
   
-  def toJSON(): RTCIceCandidateInit = js.native
+  def toJSON(): RTCIceCandidateInit
   
-  val `type`: RTCIceCandidateType | Null = js.native
+  val `type`: RTCIceCandidateType | Null
   
-  val usernameFragment: java.lang.String | Null = js.native
+  val usernameFragment: java.lang.String | Null
 }
 object RTCIceCandidate {
   
   @scala.inline
   def apply(candidate: java.lang.String, toJSON: () => RTCIceCandidateInit): RTCIceCandidate = {
-    val __obj = js.Dynamic.literal(candidate = candidate.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+    val __obj = js.Dynamic.literal(candidate = candidate.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), component = null, foundation = null, port = null, priority = null, protocol = null, relatedAddress = null, relatedPort = null, sdpMLineIndex = null, sdpMid = null, tcpType = null, usernameFragment = null)
+    __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[RTCIceCandidate]
   }
   

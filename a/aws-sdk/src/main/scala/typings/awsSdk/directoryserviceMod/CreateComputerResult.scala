@@ -2,16 +2,14 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateComputerResult extends StObject {
   
   /**
     * A Computer object that represents the computer account.
     */
-  var Computer: js.UndefOr[typings.awsSdk.directoryserviceMod.Computer] = js.native
+  var Computer: js.UndefOr[typings.awsSdk.directoryserviceMod.Computer] = js.undefined
 }
 object CreateComputerResult {
   

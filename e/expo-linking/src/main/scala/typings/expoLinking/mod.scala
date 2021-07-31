@@ -7,64 +7,52 @@ import typings.expoLinking.linkingTypesMod.QueryParams
 import typings.expoLinking.linkingTypesMod.URLListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("expo-linking", "addEventListener")
+  @JSImport("expo-linking", JSImport.Namespace)
   @js.native
-  def addEventListener(`type`: String, handler: URLListener): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("expo-linking", "canOpenURL")
-  @js.native
-  def canOpenURL(url: String): js.Promise[Boolean] = js.native
+  @scala.inline
+  def addEventListener(`type`: String, handler: URLListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("expo-linking", "getInitialURL")
-  @js.native
-  def getInitialURL(): js.Promise[String | Null] = js.native
+  @scala.inline
+  def canOpenURL(url: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("canOpenURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("expo-linking", "makeUrl")
-  @js.native
-  def makeUrl(): String = js.native
-  @JSImport("expo-linking", "makeUrl")
-  @js.native
-  def makeUrl(path: js.UndefOr[scala.Nothing], queryParams: QueryParams): String = js.native
-  @JSImport("expo-linking", "makeUrl")
-  @js.native
-  def makeUrl(path: String): String = js.native
-  @JSImport("expo-linking", "makeUrl")
-  @js.native
-  def makeUrl(path: String, queryParams: QueryParams): String = js.native
+  @scala.inline
+  def getInitialURL(): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialURL")().asInstanceOf[js.Promise[String | Null]]
   
-  @JSImport("expo-linking", "openSettings")
-  @js.native
-  def openSettings(): js.Promise[Unit] = js.native
+  @scala.inline
+  def makeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeUrl")().asInstanceOf[String]
+  @scala.inline
+  def makeUrl(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeUrl")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def makeUrl(path: String, queryParams: QueryParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeUrl")(path.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def makeUrl(path: Unit, queryParams: QueryParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeUrl")(path.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("expo-linking", "openURL")
-  @js.native
-  def openURL(url: String): js.Promise[`true`] = js.native
+  @scala.inline
+  def openSettings(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSettings")().asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("expo-linking", "parse")
-  @js.native
-  def parse(url: String): ParsedURL = js.native
+  @scala.inline
+  def openURL(url: String): js.Promise[`true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("openURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true`]]
   
-  @JSImport("expo-linking", "parseInitialURLAsync")
-  @js.native
-  def parseInitialURLAsync(): js.Promise[ParsedURL] = js.native
+  @scala.inline
+  def parse(url: String): ParsedURL = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[ParsedURL]
   
-  @JSImport("expo-linking", "removeEventListener")
-  @js.native
-  def removeEventListener(`type`: String, handler: URLListener): Unit = js.native
+  @scala.inline
+  def parseInitialURLAsync(): js.Promise[ParsedURL] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseInitialURLAsync")().asInstanceOf[js.Promise[ParsedURL]]
   
-  @JSImport("expo-linking", "sendIntent")
-  @js.native
-  def sendIntent(action: String): js.Promise[Unit] = js.native
-  @JSImport("expo-linking", "sendIntent")
-  @js.native
-  def sendIntent(action: String, extras: js.Array[Key]): js.Promise[Unit] = js.native
+  @scala.inline
+  def removeEventListener(`type`: String, handler: URLListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("expo-linking", "useUrl")
-  @js.native
-  def useUrl(): String | Null = js.native
+  @scala.inline
+  def sendIntent(action: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendIntent")(action.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def sendIntent(action: String, extras: js.Array[Key]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendIntent")(action.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def useUrl(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useUrl")().asInstanceOf[String | Null]
 }

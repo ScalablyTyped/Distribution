@@ -2,19 +2,17 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SensorOption extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var freq: js.UndefOr[Boolean] = js.native
+  var freq: js.UndefOr[Boolean] = js.undefined
   
-  var pin: Double | String = js.native
+  var pin: Double | String
   
-  var threshold: js.UndefOr[Double] = js.native
+  var threshold: js.UndefOr[Double] = js.undefined
 }
 object SensorOption {
   

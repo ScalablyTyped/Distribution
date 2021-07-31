@@ -6,22 +6,20 @@ import typings.materializeCss.materializeCssStrings.`pin-top`
 import typings.materializeCss.materializeCssStrings.pinned
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.PushpinOptions> */
-@js.native
 trait PartialPushpinOptions extends StObject {
   
-  var bottom: js.UndefOr[Double] = js.native
+  var bottom: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   var onPositionChange: js.UndefOr[
     js.ThisFunction1[/* this */ Pushpin, /* position */ pinned | `pin-top` | `pin-bottom`, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object PartialPushpinOptions {
   

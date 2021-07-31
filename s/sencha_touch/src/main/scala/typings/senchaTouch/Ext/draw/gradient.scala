@@ -4,16 +4,16 @@ import typings.senchaTouch.Ext.draw.engine.ISvgContext
 import typings.senchaTouch.Ext.mixin.IIdentifiable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gradient {
   
-  @js.native
-  trait IGradient extends IIdentifiable {
+  trait IGradient
+    extends StObject
+       with IIdentifiable {
     
     /** [Config Option] (Array/Object) */
-    var Defines: js.UndefOr[js.Any] = js.native
+    var Defines: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Generates the gradient for the given context
       * @param ctx Ext.draw.engine.SvgContext The context.
@@ -21,14 +21,14 @@ object gradient {
       * @returns Object
       */
     var generateGradient: js.UndefOr[
-        js.Function2[/* ctx */ js.UndefOr[ISvgContext], /* bbox */ js.UndefOr[js.Any], _]
-      ] = js.native
+        js.Function2[/* ctx */ js.UndefOr[ISvgContext], /* bbox */ js.UndefOr[js.Any], js.Any]
+      ] = js.undefined
     
     /** [Method] Retrieves the id of this component
       * @returns String id
       */
     @JSName("getId")
-    var getId_IGradient: js.UndefOr[js.Function0[String]] = js.native
+    var getId_IGradient: js.UndefOr[js.Function0[String]] = js.undefined
   }
   object IGradient {
     
@@ -48,7 +48,7 @@ object gradient {
       def setDefinesUndefined: Self = StObject.set(x, "Defines", js.undefined)
       
       @scala.inline
-      def setGenerateGradient(value: (/* ctx */ js.UndefOr[ISvgContext], /* bbox */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "generateGradient", js.Any.fromFunction2(value))
+      def setGenerateGradient(value: (/* ctx */ js.UndefOr[ISvgContext], /* bbox */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "generateGradient", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGenerateGradientUndefined: Self = StObject.set(x, "generateGradient", js.undefined)
@@ -61,11 +61,12 @@ object gradient {
     }
   }
   
-  @js.native
-  trait ILinear extends IGradient {
+  trait ILinear
+    extends StObject
+       with IGradient {
     
     /** [Config Option] (Number) */
-    var The: js.UndefOr[Double] = js.native
+    var The: js.UndefOr[Double] = js.undefined
   }
   object ILinear {
     
@@ -86,34 +87,35 @@ object gradient {
     }
   }
   
-  @js.native
-  trait IRadial extends IGradient {
+  trait IRadial
+    extends StObject
+       with IGradient {
     
     /** [Config Option] (Object) */
-    var end: js.UndefOr[js.Any] = js.native
+    var end: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the value of end
       * @returns Object
       */
-    var getEnd: js.UndefOr[js.Function0[_]] = js.native
+    var getEnd: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of start
       * @returns Object
       */
-    var getStart: js.UndefOr[js.Function0[_]] = js.native
+    var getStart: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of end
       * @param end Object The new value.
       */
-    var setEnd: js.UndefOr[js.Function1[/* end */ js.UndefOr[js.Any], Unit]] = js.native
+    var setEnd: js.UndefOr[js.Function1[/* end */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of start
       * @param start Object The new value.
       */
-    var setStart: js.UndefOr[js.Function1[/* start */ js.UndefOr[js.Any], Unit]] = js.native
+    var setStart: js.UndefOr[js.Function1[/* start */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var start: js.UndefOr[js.Any] = js.native
+    var start: js.UndefOr[js.Any] = js.undefined
   }
   object IRadial {
     
@@ -133,13 +135,13 @@ object gradient {
       def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
       @scala.inline
-      def setGetEnd(value: () => _): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
+      def setGetEnd(value: () => js.Any): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetEndUndefined: Self = StObject.set(x, "getEnd", js.undefined)
       
       @scala.inline
-      def setGetStart(value: () => _): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
+      def setGetStart(value: () => js.Any): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetStartUndefined: Self = StObject.set(x, "getStart", js.undefined)

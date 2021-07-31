@@ -5,7 +5,6 @@ import typings.vueCompilerCore.vueCompilerCoreStrings.function
 import typings.vueCompilerCore.vueCompilerCoreStrings.module
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<std.Required<@vue/compiler-core.@vue/compiler-core.CodegenOptions>, 'bindingMetadata'> */

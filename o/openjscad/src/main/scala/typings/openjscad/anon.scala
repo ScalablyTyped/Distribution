@@ -9,19 +9,17 @@ import typings.three.materialMod.Material
 import typings.three.mod.Mesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Back extends StObject {
     
-    var back: js.Any = js.native
+    var back: js.Any
     
-    var front: js.Any = js.native
+    var front: js.Any
     
-    var `type`: js.Any = js.native
+    var `type`: js.Any
   }
   object Back {
     
@@ -46,14 +44,13 @@ object anon {
     }
   }
   
-  @js.native
   trait BoundLen extends StObject {
     
-    var boundLen: Double = js.native
+    var boundLen: Double
     
-    var colorMesh: Mesh[Geometry | BufferGeometry, Material | js.Array[Material]] = js.native
+    var colorMesh: Mesh[Geometry | BufferGeometry, Material | js.Array[Material]]
     
-    var wireframe: Mesh[Geometry | BufferGeometry, Material | js.Array[Material]] = js.native
+    var wireframe: Mesh[Geometry | BufferGeometry, Material | js.Array[Material]]
   }
   object BoundLen {
     
@@ -81,26 +78,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Class extends StObject {
     
-    var `class`: String = js.native
+    var `class`: String
     
-    var numPolygons: Double = js.native
+    var numPolygons: Double
     
-    var numVerticesPerPolygon: Uint32Array = js.native
+    var numVerticesPerPolygon: Uint32Array
     
-    var planeData: Float64Array = js.native
+    var planeData: Float64Array
     
-    var polygonPlaneIndexes: Uint32Array = js.native
+    var polygonPlaneIndexes: Uint32Array
     
-    var polygonSharedIndexes: Uint32Array = js.native
+    var polygonSharedIndexes: Uint32Array
     
-    var polygonVertices: Uint32Array = js.native
+    var polygonVertices: Uint32Array
     
-    var shared: js.Array[Shared] = js.native
+    var shared: js.Array[Shared]
     
-    var vertexData: Float64Array = js.native
+    var vertexData: Float64Array
   }
   object Class {
     
@@ -156,14 +152,13 @@ object anon {
     }
   }
   
-  @js.native
   trait SideVertexIndices extends StObject {
     
-    var `class`: String = js.native
+    var `class`: String
     
-    var sideVertexIndices: Uint32Array = js.native
+    var sideVertexIndices: Uint32Array
     
-    var vertexData: Float64Array = js.native
+    var vertexData: Float64Array
   }
   object SideVertexIndices {
     

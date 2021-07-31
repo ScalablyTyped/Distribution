@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotSortingEntity extends StObject {
   
   /**
     * The category for sorting the snapshots.
     */
-  var Attribute: SnapshotAttributeToSortBy = js.native
+  var Attribute: SnapshotAttributeToSortBy
   
   /**
     * The order for listing the attributes.
     */
-  var SortOrder: js.UndefOr[SortByOrder] = js.native
+  var SortOrder: js.UndefOr[SortByOrder] = js.undefined
 }
 object SnapshotSortingEntity {
   

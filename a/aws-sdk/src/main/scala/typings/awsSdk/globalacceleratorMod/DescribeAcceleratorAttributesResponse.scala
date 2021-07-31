@@ -2,16 +2,14 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAcceleratorAttributesResponse extends StObject {
   
   /**
     * The attributes of the accelerator.
     */
-  var AcceleratorAttributes: js.UndefOr[typings.awsSdk.globalacceleratorMod.AcceleratorAttributes] = js.native
+  var AcceleratorAttributes: js.UndefOr[typings.awsSdk.globalacceleratorMod.AcceleratorAttributes] = js.undefined
 }
 object DescribeAcceleratorAttributesResponse {
   

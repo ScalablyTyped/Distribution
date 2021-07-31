@@ -7,7 +7,6 @@ import typings.awsSdk.serviceMod.Service
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ssoMod {
@@ -27,23 +26,22 @@ object ssoMod {
   
   type AccountIdType = String
   
-  @js.native
   trait AccountInfo extends StObject {
     
     /**
       * The identifier of the AWS account that is assigned to the user.
       */
-    var accountId: js.UndefOr[AccountIdType] = js.native
+    var accountId: js.UndefOr[AccountIdType] = js.undefined
     
     /**
       * The display name of the AWS account that is assigned to the user.
       */
-    var accountName: js.UndefOr[AccountNameType] = js.native
+    var accountName: js.UndefOr[AccountNameType] = js.undefined
     
     /**
       * The email address of the AWS account that is assigned to the user.
       */
-    var emailAddress: js.UndefOr[EmailAddressType] = js.native
+    var emailAddress: js.UndefOr[EmailAddressType] = js.undefined
   }
   object AccountInfo {
     
@@ -80,16 +78,14 @@ object ssoMod {
   
   type AccountNameType = String
   
-  @js.native
   trait Blob extends StObject
   
-  @js.native
   trait ClientApiVersions extends StObject {
     
     /**
       * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
       */
-    var apiVersion: js.UndefOr[typings.awsSdk.ssoMod.apiVersion] = js.native
+    var apiVersion: js.UndefOr[typings.awsSdk.ssoMod.apiVersion] = js.undefined
   }
   object ClientApiVersions {
     
@@ -110,29 +106,31 @@ object ssoMod {
     }
   }
   
-  type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  @js.native
+  trait ClientConfiguration
+    extends ServiceConfigurationOptions
+       with ClientApiVersions
   
   type EmailAddressType = String
   
   type ExpirationTimestampType = Double
   
-  @js.native
   trait GetRoleCredentialsRequest extends StObject {
     
     /**
       * The token issued by the CreateToken API call. For more information, see CreateToken in the AWS SSO OIDC API Reference Guide.
       */
-    var accessToken: AccessTokenType = js.native
+    var accessToken: AccessTokenType
     
     /**
       * The identifier for the AWS account that is assigned to the user.
       */
-    var accountId: AccountIdType = js.native
+    var accountId: AccountIdType
     
     /**
       * The friendly name of the role that is assigned to the user.
       */
-    var roleName: RoleNameType = js.native
+    var roleName: RoleNameType
   }
   object GetRoleCredentialsRequest {
     
@@ -156,13 +154,12 @@ object ssoMod {
     }
   }
   
-  @js.native
   trait GetRoleCredentialsResponse extends StObject {
     
     /**
       * The credentials for the role that is assigned to the user.
       */
-    var roleCredentials: js.UndefOr[RoleCredentials] = js.native
+    var roleCredentials: js.UndefOr[RoleCredentials] = js.undefined
   }
   object GetRoleCredentialsResponse {
     
@@ -183,28 +180,27 @@ object ssoMod {
     }
   }
   
-  @js.native
   trait ListAccountRolesRequest extends StObject {
     
     /**
       * The token issued by the CreateToken API call. For more information, see CreateToken in the AWS SSO OIDC API Reference Guide.
       */
-    var accessToken: AccessTokenType = js.native
+    var accessToken: AccessTokenType
     
     /**
       * The identifier for the AWS account that is assigned to the user.
       */
-    var accountId: AccountIdType = js.native
+    var accountId: AccountIdType
     
     /**
       * The number of items that clients can request per page.
       */
-    var maxResults: js.UndefOr[MaxResultType] = js.native
+    var maxResults: js.UndefOr[MaxResultType] = js.undefined
     
     /**
       * The page token from the previous response output when you request subsequent pages.
       */
-    var nextToken: js.UndefOr[NextTokenType] = js.native
+    var nextToken: js.UndefOr[NextTokenType] = js.undefined
   }
   object ListAccountRolesRequest {
     
@@ -237,18 +233,17 @@ object ssoMod {
     }
   }
   
-  @js.native
   trait ListAccountRolesResponse extends StObject {
     
     /**
       * The page token client that is used to retrieve the list of accounts.
       */
-    var nextToken: js.UndefOr[NextTokenType] = js.native
+    var nextToken: js.UndefOr[NextTokenType] = js.undefined
     
     /**
       * A paginated response with the list of roles and the next token if more results are available.
       */
-    var roleList: js.UndefOr[RoleListType] = js.native
+    var roleList: js.UndefOr[RoleListType] = js.undefined
   }
   object ListAccountRolesResponse {
     
@@ -278,23 +273,22 @@ object ssoMod {
     }
   }
   
-  @js.native
   trait ListAccountsRequest extends StObject {
     
     /**
       * The token issued by the CreateToken API call. For more information, see CreateToken in the AWS SSO OIDC API Reference Guide.
       */
-    var accessToken: AccessTokenType = js.native
+    var accessToken: AccessTokenType
     
     /**
       * This is the number of items clients can request per page.
       */
-    var maxResults: js.UndefOr[MaxResultType] = js.native
+    var maxResults: js.UndefOr[MaxResultType] = js.undefined
     
     /**
       * (Optional) When requesting subsequent pages, this is the page token from the previous response output.
       */
-    var nextToken: js.UndefOr[NextTokenType] = js.native
+    var nextToken: js.UndefOr[NextTokenType] = js.undefined
   }
   object ListAccountsRequest {
     
@@ -324,18 +318,17 @@ object ssoMod {
     }
   }
   
-  @js.native
   trait ListAccountsResponse extends StObject {
     
     /**
       * A paginated response with the list of account information and the next token if more results are available.
       */
-    var accountList: js.UndefOr[AccountListType] = js.native
+    var accountList: js.UndefOr[AccountListType] = js.undefined
     
     /**
       * The page token client that is used to retrieve the list of accounts.
       */
-    var nextToken: js.UndefOr[NextTokenType] = js.native
+    var nextToken: js.UndefOr[NextTokenType] = js.undefined
   }
   object ListAccountsResponse {
     
@@ -365,13 +358,12 @@ object ssoMod {
     }
   }
   
-  @js.native
   trait LogoutRequest extends StObject {
     
     /**
       * The token issued by the CreateToken API call. For more information, see CreateToken in the AWS SSO OIDC API Reference Guide.
       */
-    var accessToken: AccessTokenType = js.native
+    var accessToken: AccessTokenType
   }
   object LogoutRequest {
     
@@ -393,28 +385,27 @@ object ssoMod {
   
   type NextTokenType = String
   
-  @js.native
   trait RoleCredentials extends StObject {
     
     /**
       * The identifier used for the temporary security credentials. For more information, see Using Temporary Security Credentials to Request Access to AWS Resources in the AWS IAM User Guide.
       */
-    var accessKeyId: js.UndefOr[AccessKeyType] = js.native
+    var accessKeyId: js.UndefOr[AccessKeyType] = js.undefined
     
     /**
       * The date on which temporary security credentials expire.
       */
-    var expiration: js.UndefOr[ExpirationTimestampType] = js.native
+    var expiration: js.UndefOr[ExpirationTimestampType] = js.undefined
     
     /**
       * The key that is used to sign the request. For more information, see Using Temporary Security Credentials to Request Access to AWS Resources in the AWS IAM User Guide.
       */
-    var secretAccessKey: js.UndefOr[SecretAccessKeyType] = js.native
+    var secretAccessKey: js.UndefOr[SecretAccessKeyType] = js.undefined
     
     /**
       * The token used for temporary credentials. For more information, see Using Temporary Security Credentials to Request Access to AWS Resources in the AWS IAM User Guide.
       */
-    var sessionToken: js.UndefOr[SessionTokenType] = js.native
+    var sessionToken: js.UndefOr[SessionTokenType] = js.undefined
   }
   object RoleCredentials {
     
@@ -453,18 +444,17 @@ object ssoMod {
     }
   }
   
-  @js.native
   trait RoleInfo extends StObject {
     
     /**
       * The identifier of the AWS account assigned to the user.
       */
-    var accountId: js.UndefOr[AccountIdType] = js.native
+    var accountId: js.UndefOr[AccountIdType] = js.undefined
     
     /**
       * The friendly name of the role that is assigned to the user.
       */
-    var roleName: js.UndefOr[RoleNameType] = js.native
+    var roleName: js.UndefOr[RoleNameType] = js.undefined
   }
   object RoleInfo {
     
@@ -499,7 +489,7 @@ object ssoMod {
   trait SSO extends Service {
     
     @JSName("config")
-    var config_SSO: ConfigBase with ClientConfiguration = js.native
+    var config_SSO: ConfigBase & ClientConfiguration = js.native
     
     /**
       * Returns the STS short-term credentials for a given role name that is assigned to the user.

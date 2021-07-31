@@ -16,7 +16,6 @@ import typings.node.fsMod.ReadStream
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object intentMod {
@@ -100,8 +99,8 @@ object intentMod {
       * @param reason Optional. The reason for the ban.
       * @return Resolved when banned, else rejected with an error.
       */
-    def ban(roomId: String, target: String): js.Promise[_] = js.native
-    def ban(roomId: String, target: String, reason: String): js.Promise[_] = js.native
+    def ban(roomId: String, target: String): js.Promise[js.Any] = js.native
+    def ban(roomId: String, target: String, reason: String): js.Promise[js.Any] = js.native
     
     val botClient: js.Any = js.native
     
@@ -112,7 +111,7 @@ object intentMod {
       * @param alias The room alias to create
       * @param roomId The room ID the alias should point at.
       */
-    def createAlias(alias: String, roomId: String): js.Promise[_] = js.native
+    def createAlias(alias: String, roomId: String): js.Promise[js.Any] = js.native
     
     /**
       * Create a room with a set of options.
@@ -126,8 +125,8 @@ object intentMod {
     
     val encryption: js.Any = js.native
     
-    def ensureRegistered(): js.Promise[_] = js.native
-    def ensureRegistered(forceRegister: Boolean): js.Promise[_] = js.native
+    def ensureRegistered(): js.Promise[js.Any] = js.native
+    def ensureRegistered(forceRegister: Boolean): js.Promise[js.Any] = js.native
     
     /**
       * Return the client this Intent is acting on behalf of.
@@ -144,8 +143,8 @@ object intentMod {
       * @param useCache Should the request attempt to lookup from the cache.
       * @return Resolves with the content of the event, or rejects if not found.
       */
-    def getEvent(roomId: String, eventId: String): js.Promise[_] = js.native
-    def getEvent(roomId: String, eventId: String, useCache: Boolean): js.Promise[_] = js.native
+    def getEvent(roomId: String, eventId: String): js.Promise[js.Any] = js.native
+    def getEvent(roomId: String, eventId: String, useCache: Boolean): js.Promise[js.Any] = js.native
     
     /**
       * <p>Get a user's profile information</p>
@@ -157,9 +156,10 @@ object intentMod {
       * @return A Promise that resolves with the requested user's profile
       * information
       */
-    def getProfileInfo(userId: String): js.Promise[_] = js.native
-    def getProfileInfo(userId: String, info: js.UndefOr[UserProfileKeys], useCache: Boolean): js.Promise[_] = js.native
-    def getProfileInfo(userId: String, info: UserProfileKeys): js.Promise[_] = js.native
+    def getProfileInfo(userId: String): js.Promise[js.Any] = js.native
+    def getProfileInfo(userId: String, info: Unit, useCache: Boolean): js.Promise[js.Any] = js.native
+    def getProfileInfo(userId: String, info: UserProfileKeys): js.Promise[js.Any] = js.native
+    def getProfileInfo(userId: String, info: UserProfileKeys, useCache: Boolean): js.Promise[js.Any] = js.native
     
     /**
       * Get a state event in a room.
@@ -169,8 +169,8 @@ object intentMod {
       * @param eventType The event type to fetch.
       * @param [stateKey=""] The state key of the event to fetch.
       */
-    def getStateEvent(roomId: String, eventType: String): js.Promise[_] = js.native
-    def getStateEvent(roomId: String, eventType: String, stateKey: String): js.Promise[_] = js.native
+    def getStateEvent(roomId: String, eventType: String): js.Promise[js.Any] = js.native
+    def getStateEvent(roomId: String, eventType: String, stateKey: String): js.Promise[js.Any] = js.native
     
     /**
       * <p>Invite a user to a room.</p>
@@ -180,7 +180,7 @@ object intentMod {
       * @param target The user ID to invite.
       * @return Resolved when invited, else rejected with an error.
       */
-    def invite(roomId: String, target: String): js.Promise[_] = js.native
+    def invite(roomId: String, target: String): js.Promise[js.Any] = js.native
     
     /**
       * <p>Join a room</p>
@@ -202,8 +202,8 @@ object intentMod {
       * @param reason Optional. The reason for the kick.
       * @return Resolved when kickked, else rejected with an error.
       */
-    def kick(roomId: String, target: String): js.Promise[_] = js.native
-    def kick(roomId: String, target: String, reason: String): js.Promise[_] = js.native
+    def kick(roomId: String, target: String): js.Promise[js.Any] = js.native
+    def kick(roomId: String, target: String, reason: String): js.Promise[js.Any] = js.native
     
     /**
       * <p>Leave a room</p>
@@ -211,8 +211,8 @@ object intentMod {
       * @param roomId The room to leave.
       * @param reason An optional string to explain why the user left the room.
       */
-    def leave(roomId: String): js.Promise[_] = js.native
-    def leave(roomId: String, reason: String): js.Promise[_] = js.native
+    def leave(roomId: String): js.Promise[js.Any] = js.native
+    def leave(roomId: String, reason: String): js.Promise[js.Any] = js.native
     
     var loginForEncryptedClient: js.Any = js.native
     
@@ -237,8 +237,8 @@ object intentMod {
       * @param useCache Should the request attempt to lookup
       * state from the cache.
       */
-    def roomState(roomId: String): js.Promise[_] = js.native
-    def roomState(roomId: String, useCache: Boolean): js.Promise[_] = js.native
+    def roomState(roomId: String): js.Promise[js.Any] = js.native
+    def roomState(roomId: String, useCache: Boolean): js.Promise[js.Any] = js.native
     
     /**
       * <p>Send a message event to a room.</p>
@@ -249,7 +249,7 @@ object intentMod {
       * @param type The event type
       * @param content The event content
       */
-    def sendEvent(roomId: String, `type`: String, content: Record[String, _]): js.Promise[Eventid] = js.native
+    def sendEvent(roomId: String, `type`: String, content: Record[String, js.Any]): js.Promise[Eventid] = js.native
     
     /**
       * <p>Send an <code>m.room.message</code> event to a room.</p>
@@ -259,7 +259,7 @@ object intentMod {
       * @param roomId The room to send to.
       * @param content The event content
       */
-    def sendMessage(roomId: String, content: Record[String, _]): js.Promise[Eventid] = js.native
+    def sendMessage(roomId: String, content: Record[String, js.Any]): js.Promise[Eventid] = js.native
     
     /**
       * <p>Send a read receipt to a room.</p>
@@ -268,7 +268,7 @@ object intentMod {
       * @param roomId The room to send to.
       * @param eventId The event ID to set the receipt mark to.
       */
-    def sendReadReceipt(roomId: String, eventId: String): js.Promise[_] = js.native
+    def sendReadReceipt(roomId: String, eventId: String): js.Promise[js.Any] = js.native
     
     /**
       * <p>Send a state event to a room.</p>
@@ -280,7 +280,7 @@ object intentMod {
       * @param skey The state key
       * @param content The event content
       */
-    def sendStateEvent(roomId: String, `type`: String, skey: String, content: Record[String, _]): js.Promise[Eventid] = js.native
+    def sendStateEvent(roomId: String, `type`: String, skey: String, content: Record[String, js.Any]): js.Promise[Eventid] = js.native
     
     /**
       * <p>Send a plaintext message to a room.</p>
@@ -299,19 +299,19 @@ object intentMod {
       * @param roomId The room to send to.
       * @param isTyping True if typing
       */
-    def sendTyping(roomId: String, isTyping: Boolean): js.Promise[_] = js.native
+    def sendTyping(roomId: String, isTyping: Boolean): js.Promise[js.Any] = js.native
     
     /**
       * <p>Set the user's avatar URL</p>
       * @param url The new avatar URL
       */
-    def setAvatarUrl(url: String): js.Promise[_] = js.native
+    def setAvatarUrl(url: String): js.Promise[js.Any] = js.native
     
     /**
       * <p>Set the user's display name</p>
       * @param name The new display name
       */
-    def setDisplayName(name: String): js.Promise[_] = js.native
+    def setDisplayName(name: String): js.Promise[js.Any] = js.native
     
     /**
       * Set the power level of the given target.
@@ -319,8 +319,8 @@ object intentMod {
       * @param target The target user ID
       * @param level The desired level. Undefined will remove the users custom power level.
       */
-    def setPowerLevel(roomId: String, target: String): js.Promise[_] = js.native
-    def setPowerLevel(roomId: String, target: String, level: Double): js.Promise[_] = js.native
+    def setPowerLevel(roomId: String, target: String): js.Promise[js.Any] = js.native
+    def setPowerLevel(roomId: String, target: String, level: Double): js.Promise[js.Any] = js.native
     
     /**
       * Set the presence of this user.
@@ -328,8 +328,8 @@ object intentMod {
       * @param status_msg The status message to attach.
       * @return Resolves if the presence was set or no-oped, rejects otherwise.
       */
-    def setPresence(presence: String): js.Promise[_] = js.native
-    def setPresence(presence: String, status_msg: String): js.Promise[_] = js.native
+    def setPresence(presence: String): js.Promise[js.Any] = js.native
+    def setPresence(presence: String, status_msg: String): js.Promise[js.Any] = js.native
     
     /**
       * <p>Set the avatar of a room.</p>
@@ -344,7 +344,7 @@ object intentMod {
     def setRoomAvatar(roomId: String, avatar: String, info: String): js.Promise[Eventid] = js.native
     
     @JSName("setRoomDirectoryVisibilityAppService")
-    def setRoomDirectoryVisibilityAppService_private(roomId: String, networkId: String, visibility: `private`): js.Promise[_] = js.native
+    def setRoomDirectoryVisibilityAppService_private(roomId: String, networkId: String, visibility: `private`): js.Promise[js.Any] = js.native
     /**
       * Set the visibility of a room in the appservice's room directory.
       * This only works if you have defined the `protocol` in the registration file.
@@ -353,17 +353,17 @@ object intentMod {
       * @param visibility Should the room be visible
       */
     @JSName("setRoomDirectoryVisibilityAppService")
-    def setRoomDirectoryVisibilityAppService_public(roomId: String, networkId: String, visibility: public): js.Promise[_] = js.native
+    def setRoomDirectoryVisibilityAppService_public(roomId: String, networkId: String, visibility: public): js.Promise[js.Any] = js.native
     
     @JSName("setRoomDirectoryVisibility")
-    def setRoomDirectoryVisibility_private(roomId: String, visibility: `private`): js.Promise[_] = js.native
+    def setRoomDirectoryVisibility_private(roomId: String, visibility: `private`): js.Promise[js.Any] = js.native
     /**
       * Set the visibility of a room in the homeserver's room directory.
       * @param roomId The room
       * @param visibility Should the room be visible
       */
     @JSName("setRoomDirectoryVisibility")
-    def setRoomDirectoryVisibility_public(roomId: String, visibility: public): js.Promise[_] = js.native
+    def setRoomDirectoryVisibility_public(roomId: String, visibility: public): js.Promise[js.Any] = js.native
     
     /**
       * <p>Set the name of a room.</p>
@@ -395,15 +395,8 @@ object intentMod {
       * @param target The target of the unban operation.
       * @return Resolved when unbanned, else rejected with an error.
       */
-    def unban(roomId: String, target: String): js.Promise[_] = js.native
+    def unban(roomId: String, target: String): js.Promise[js.Any] = js.native
     
-    def unstableSignalBridgeError(
-      roomID: String,
-      eventID: String,
-      networkName: js.UndefOr[scala.Nothing],
-      reason: BridgeErrorReason,
-      affectedUsers: js.Array[String]
-    ): js.Promise[Eventid] = js.native
     /**
       * Signals that an error occured while handling an event by the bridge.
       *
@@ -420,6 +413,13 @@ object intentMod {
       roomID: String,
       eventID: String,
       networkName: String,
+      reason: BridgeErrorReason,
+      affectedUsers: js.Array[String]
+    ): js.Promise[Eventid] = js.native
+    def unstableSignalBridgeError(
+      roomID: String,
+      eventID: String,
+      networkName: Unit,
       reason: BridgeErrorReason,
       affectedUsers: js.Array[String]
     ): js.Promise[Eventid] = js.native
@@ -440,14 +440,13 @@ object intentMod {
     def userId: String = js.native
   }
   
-  @js.native
   trait FileUploadOpts extends StObject {
     
-    var includeFilename: js.UndefOr[Boolean] = js.native
+    var includeFilename: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object FileUploadOpts {
     
@@ -480,18 +479,17 @@ object intentMod {
     }
   }
   
-  @js.native
   trait IntentBackingStore extends StObject {
     
-    def getMemberProfile(roomId: String, userid: String): UserProfile = js.native
+    def getMemberProfile(roomId: String, userid: String): UserProfile
     
-    def getMembership(roomId: String, userId: String): UserMembership = js.native
+    def getMembership(roomId: String, userId: String): UserMembership
     
-    def getPowerLevelContent(roomId: String): js.UndefOr[Record[String, _]] = js.native
+    def getPowerLevelContent(roomId: String): js.UndefOr[Record[String, js.Any]]
     
-    def setMembership(roomId: String, userId: String, membership: UserMembership, profile: UserProfile): Unit = js.native
+    def setMembership(roomId: String, userId: String, membership: UserMembership, profile: UserProfile): Unit
     
-    def setPowerLevelContent(roomId: String, content: Record[String, _]): Unit = js.native
+    def setPowerLevelContent(roomId: String, content: Record[String, js.Any]): Unit
   }
   object IntentBackingStore {
     
@@ -499,9 +497,9 @@ object intentMod {
     def apply(
       getMemberProfile: (String, String) => UserProfile,
       getMembership: (String, String) => UserMembership,
-      getPowerLevelContent: String => js.UndefOr[Record[String, _]],
+      getPowerLevelContent: String => js.UndefOr[Record[String, js.Any]],
       setMembership: (String, String, UserMembership, UserProfile) => Unit,
-      setPowerLevelContent: (String, Record[String, _]) => Unit
+      setPowerLevelContent: (String, Record[String, js.Any]) => Unit
     ): IntentBackingStore = {
       val __obj = js.Dynamic.literal(getMemberProfile = js.Any.fromFunction2(getMemberProfile), getMembership = js.Any.fromFunction2(getMembership), getPowerLevelContent = js.Any.fromFunction1(getPowerLevelContent), setMembership = js.Any.fromFunction4(setMembership), setPowerLevelContent = js.Any.fromFunction2(setPowerLevelContent))
       __obj.asInstanceOf[IntentBackingStore]
@@ -517,32 +515,31 @@ object intentMod {
       def setGetMembership(value: (String, String) => UserMembership): Self = StObject.set(x, "getMembership", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setGetPowerLevelContent(value: String => js.UndefOr[Record[String, _]]): Self = StObject.set(x, "getPowerLevelContent", js.Any.fromFunction1(value))
+      def setGetPowerLevelContent(value: String => js.UndefOr[Record[String, js.Any]]): Self = StObject.set(x, "getPowerLevelContent", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSetMembership(value: (String, String, UserMembership, UserProfile) => Unit): Self = StObject.set(x, "setMembership", js.Any.fromFunction4(value))
       
       @scala.inline
-      def setSetPowerLevelContent(value: (String, Record[String, _]) => Unit): Self = StObject.set(x, "setPowerLevelContent", js.Any.fromFunction2(value))
+      def setSetPowerLevelContent(value: (String, Record[String, js.Any]) => Unit): Self = StObject.set(x, "setPowerLevelContent", js.Any.fromFunction2(value))
     }
   }
   
-  @js.native
   trait IntentOpts extends StObject {
     
-    var backingStore: js.UndefOr[IntentBackingStore] = js.native
+    var backingStore: js.UndefOr[IntentBackingStore] = js.undefined
     
-    var caching: js.UndefOr[Size] = js.native
+    var caching: js.UndefOr[Size] = js.undefined
     
-    var dontCheckPowerLevel: js.UndefOr[Boolean] = js.native
+    var dontCheckPowerLevel: js.UndefOr[Boolean] = js.undefined
     
-    var dontJoin: js.UndefOr[Boolean] = js.native
+    var dontJoin: js.UndefOr[Boolean] = js.undefined
     
-    var enablePresence: js.UndefOr[Boolean] = js.native
+    var enablePresence: js.UndefOr[Boolean] = js.undefined
     
-    var encryption: js.UndefOr[EnsureClientSyncingCallback] = js.native
+    var encryption: js.UndefOr[EnsureClientSyncingCallback] = js.undefined
     
-    var registered: js.UndefOr[Boolean] = js.native
+    var registered: js.UndefOr[Boolean] = js.undefined
   }
   object IntentOpts {
     
@@ -599,18 +596,17 @@ object intentMod {
     }
   }
   
-  @js.native
   trait PowerLevelContent extends StObject {
     
-    var events: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var events: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var events_default: js.UndefOr[js.Any] = js.native
+    var events_default: js.UndefOr[js.Any] = js.undefined
     
-    var state_default: js.UndefOr[js.Any] = js.native
+    var state_default: js.UndefOr[js.Any] = js.undefined
     
-    var users: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var users: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var users_default: js.UndefOr[js.Any] = js.native
+    var users_default: js.UndefOr[js.Any] = js.undefined
   }
   object PowerLevelContent {
     
@@ -655,17 +651,16 @@ object intentMod {
     }
   }
   
-  @js.native
   trait RoomCreationOpts extends StObject {
     
-    var createAsClient: js.UndefOr[Boolean] = js.native
+    var createAsClient: js.UndefOr[Boolean] = js.undefined
     
-    var options: Record[String, _] = js.native
+    var options: Record[String, js.Any]
   }
   object RoomCreationOpts {
     
     @scala.inline
-    def apply(options: Record[String, _]): RoomCreationOpts = {
+    def apply(options: Record[String, js.Any]): RoomCreationOpts = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoomCreationOpts]
     }
@@ -680,7 +675,7 @@ object intentMod {
       def setCreateAsClientUndefined: Self = StObject.set(x, "createAsClient", js.undefined)
       
       @scala.inline
-      def setOptions(value: Record[String, _]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      def setOptions(value: Record[String, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   

@@ -2,7 +2,6 @@ package typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * corresponding text, confidence value, and frame level information for each
   * detection.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1p3beta1TextAnnotation extends StObject {
   
   /**
     * All video segments where OCR detected text appears.
     */
-  var segments: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1TextSegment]] = js.native
+  var segments: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1TextSegment]] = js.undefined
   
   /**
     * The detected text.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p3beta1TextAnnotation {
   

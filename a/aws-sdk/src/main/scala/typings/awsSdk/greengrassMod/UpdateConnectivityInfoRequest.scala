@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConnectivityInfoRequest extends StObject {
   
   /**
     * A list of connectivity info.
     */
-  var ConnectivityInfo: js.UndefOr[listOfConnectivityInfo] = js.native
+  var ConnectivityInfo: js.UndefOr[listOfConnectivityInfo] = js.undefined
   
   /**
     * The thing name.
     */
-  var ThingName: string = js.native
+  var ThingName: string
 }
 object UpdateConnectivityInfoRequest {
   

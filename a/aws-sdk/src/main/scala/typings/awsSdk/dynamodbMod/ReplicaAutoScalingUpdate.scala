@@ -2,23 +2,21 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicaAutoScalingUpdate extends StObject {
   
   /**
     * The Region where the replica exists.
     */
-  var RegionName: typings.awsSdk.dynamodbMod.RegionName = js.native
+  var RegionName: typings.awsSdk.dynamodbMod.RegionName
   
   /**
     * Represents the auto scaling settings of global secondary indexes that will be modified.
     */
-  var ReplicaGlobalSecondaryIndexUpdates: js.UndefOr[ReplicaGlobalSecondaryIndexAutoScalingUpdateList] = js.native
+  var ReplicaGlobalSecondaryIndexUpdates: js.UndefOr[ReplicaGlobalSecondaryIndexAutoScalingUpdateList] = js.undefined
   
-  var ReplicaProvisionedReadCapacityAutoScalingUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.native
+  var ReplicaProvisionedReadCapacityAutoScalingUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.undefined
 }
 object ReplicaAutoScalingUpdate {
   

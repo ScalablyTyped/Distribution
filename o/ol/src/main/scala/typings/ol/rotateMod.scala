@@ -3,7 +3,6 @@ package typings.ol
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rotateMod {
@@ -14,24 +13,23 @@ object rotateMod {
     def this(opt_options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var autoHide: js.UndefOr[Boolean] = js.native
+    var autoHide: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var label: js.UndefOr[String | HTMLElement] = js.native
+    var label: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapEventMod.default, Unit]] = js.native
+    var render: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapEventMod.default, Unit]] = js.undefined
     
-    var resetNorth: js.UndefOr[js.Function0[Unit]] = js.native
+    var resetNorth: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var target: js.UndefOr[HTMLElement | String] = js.native
+    var target: js.UndefOr[HTMLElement | String] = js.undefined
     
-    var tipLabel: js.UndefOr[String] = js.native
+    var tipLabel: js.UndefOr[String] = js.undefined
   }
   object Options {
     

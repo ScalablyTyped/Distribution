@@ -6,14 +6,15 @@ import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activitymonitorMod {
   
   @JSImport("@jupyterlab/coreutils/lib/activitymonitor", "ActivityMonitor")
   @js.native
-  class ActivityMonitor[Sender, Args] protected () extends IDisposable {
+  class ActivityMonitor[Sender, Args] protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Construct a new activity monitor.
       */
@@ -42,6 +43,28 @@ object activitymonitorMod {
     def activityStopped: ISignal[this.type, IArguments[Sender, Args]] = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
+    /**
       * Test whether the monitor has been disposed.
       *
       * #### Notes
@@ -62,18 +85,17 @@ object activitymonitorMod {
       * The argument object for an activity timeout.
       *
       */
-    @js.native
     trait IArguments[Sender, Args] extends StObject {
       
       /**
         * The most recent argument object.
         */
-      var args: Args = js.native
+      var args: Args
       
       /**
         * The most recent sender object.
         */
-      var sender: Sender = js.native
+      var sender: Sender
     }
     object IArguments {
       
@@ -84,7 +106,7 @@ object activitymonitorMod {
       }
       
       @scala.inline
-      implicit class IArgumentsMutableBuilder[Self <: IArguments[_, _], Sender, Args] (val x: Self with (IArguments[Sender, Args])) extends AnyVal {
+      implicit class IArgumentsMutableBuilder[Self <: IArguments[?, ?], Sender, Args] (val x: Self & (IArguments[Sender, Args])) extends AnyVal {
         
         @scala.inline
         def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
@@ -97,20 +119,19 @@ object activitymonitorMod {
     /**
       * The options used to construct a new `ActivityMonitor`.
       */
-    @js.native
     trait IOptions[Sender, Args] extends StObject {
       
       /**
         * The signal to monitor.
         */
-      var signal: ISignal[Sender, Args] = js.native
+      var signal: ISignal[Sender, Args]
       
       /**
         * The activity timeout in milliseconds.
         *
         * The default is 1 second.
         */
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
     }
     object IOptions {
       
@@ -121,7 +142,7 @@ object activitymonitorMod {
       }
       
       @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[_, _], Sender, Args] (val x: Self with (IOptions[Sender, Args])) extends AnyVal {
+      implicit class IOptionsMutableBuilder[Self <: IOptions[?, ?], Sender, Args] (val x: Self & (IOptions[Sender, Args])) extends AnyVal {
         
         @scala.inline
         def setSignal(value: ISignal[Sender, Args]): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])

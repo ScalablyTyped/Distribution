@@ -2,17 +2,15 @@ package typings.shapefile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Done[RecordType] extends StObject {
     
-    var done: Boolean = js.native
+    var done: Boolean
     
-    var value: RecordType = js.native
+    var value: RecordType
   }
   object Done {
     
@@ -23,7 +21,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DoneMutableBuilder[Self <: Done[_], RecordType] (val x: Self with Done[RecordType]) extends AnyVal {
+    implicit class DoneMutableBuilder[Self <: Done[?], RecordType] (val x: Self & Done[RecordType]) extends AnyVal {
       
       @scala.inline
       def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])

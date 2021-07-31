@@ -2,45 +2,43 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents fields that are compatible to be selected for a report of type
   * &quot;PATH_TO_CONVERSION&quot;.
   */
-@js.native
 trait SchemaPathToConversionReportCompatibleFields extends StObject {
   
   /**
     * Conversion dimensions which are compatible to be selected in the
     * &quot;conversionDimensions&quot; section of the report.
     */
-  var conversionDimensions: js.UndefOr[js.Array[SchemaDimension]] = js.native
+  var conversionDimensions: js.UndefOr[js.Array[SchemaDimension]] = js.undefined
   
   /**
     * Custom floodlight variables which are compatible to be selected in the
     * &quot;customFloodlightVariables&quot; section of the report.
     */
-  var customFloodlightVariables: js.UndefOr[js.Array[SchemaDimension]] = js.native
+  var customFloodlightVariables: js.UndefOr[js.Array[SchemaDimension]] = js.undefined
   
   /**
     * The kind of resource this is, in this case
     * dfareporting#pathToConversionReportCompatibleFields.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Metrics which are compatible to be selected in the
     * &quot;metricNames&quot; section of the report.
     */
-  var metrics: js.UndefOr[js.Array[SchemaMetric]] = js.native
+  var metrics: js.UndefOr[js.Array[SchemaMetric]] = js.undefined
   
   /**
     * Per-interaction dimensions which are compatible to be selected in the
     * &quot;perInteractionDimensions&quot; section of the report.
     */
-  var perInteractionDimensions: js.UndefOr[js.Array[SchemaDimension]] = js.native
+  var perInteractionDimensions: js.UndefOr[js.Array[SchemaDimension]] = js.undefined
 }
 object SchemaPathToConversionReportCompatibleFields {
   

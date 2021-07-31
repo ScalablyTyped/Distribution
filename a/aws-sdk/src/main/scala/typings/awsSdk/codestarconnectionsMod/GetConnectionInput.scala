@@ -2,16 +2,14 @@ package typings.awsSdk.codestarconnectionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConnectionInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of a connection.
     */
-  var ConnectionArn: typings.awsSdk.codestarconnectionsMod.ConnectionArn = js.native
+  var ConnectionArn: typings.awsSdk.codestarconnectionsMod.ConnectionArn
 }
 object GetConnectionInput {
   

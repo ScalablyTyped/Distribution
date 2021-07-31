@@ -9,7 +9,6 @@ import typings.wordpressComponents.shortcutMod.Shortcut.ShortcutType
 import typings.wordpressComponents.tooltipMod.Tooltip.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipMod {
@@ -28,23 +27,22 @@ object tooltipMod {
   
   object Tooltip {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: Element = js.native
+      var children: Element
       
       /**
         * The direction in which the tooltip should open relative to its
         * parent node.
         */
-      var position: js.UndefOr[Position] = js.native
+      var position: js.UndefOr[Position] = js.undefined
       
-      var shortcut: js.UndefOr[ShortcutType] = js.native
+      var shortcut: js.UndefOr[ShortcutType] = js.undefined
       
       /**
         * The tooltip content to show on focus or hover.
         */
-      var text: js.UndefOr[ReactNode] = js.native
+      var text: js.UndefOr[ReactNode] = js.undefined
     }
     object Props {
       

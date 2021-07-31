@@ -3,14 +3,16 @@ package typings.branca
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(key: String): Branca = ^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any]).asInstanceOf[Branca]
+  
   @JSImport("branca", JSImport.Namespace)
   @js.native
-  def apply(key: String): Branca = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Branca extends StObject {

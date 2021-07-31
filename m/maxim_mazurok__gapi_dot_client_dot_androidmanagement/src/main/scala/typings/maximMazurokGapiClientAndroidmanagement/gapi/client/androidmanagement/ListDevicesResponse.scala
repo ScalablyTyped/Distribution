@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDevicesResponse extends StObject {
   
   /** The list of devices. */
-  var devices: js.UndefOr[js.Array[Device]] = js.native
+  var devices: js.UndefOr[js.Array[Device]] = js.undefined
   
   /** If there are more results, a token to retrieve next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListDevicesResponse {
   

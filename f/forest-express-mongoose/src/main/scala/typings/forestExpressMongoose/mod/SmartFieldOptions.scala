@@ -2,31 +2,29 @@ package typings.forestExpressMongoose.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartFieldOptions extends StObject {
   
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var enums: js.UndefOr[js.Array[String]] = js.native
+  var enums: js.UndefOr[js.Array[String]] = js.undefined
   
-  var field: String = js.native
+  var field: String
   
-  var get: js.UndefOr[SmartFieldValueGetter] = js.native
+  var get: js.UndefOr[SmartFieldValueGetter] = js.undefined
   
-  var isReadOnly: js.UndefOr[Boolean] = js.native
+  var isReadOnly: js.UndefOr[Boolean] = js.undefined
   
-  var reference: js.UndefOr[String] = js.native
+  var reference: js.UndefOr[String] = js.undefined
   
-  var search: js.UndefOr[SmartFieldSearcher] = js.native
+  var search: js.UndefOr[SmartFieldSearcher] = js.undefined
   
-  var set: js.UndefOr[SmartFieldValueSetter] = js.native
+  var set: js.UndefOr[SmartFieldValueSetter] = js.undefined
   
-  var `type`: String | js.Array[String] = js.native
+  var `type`: String | js.Array[String]
 }
 object SmartFieldOptions {
   

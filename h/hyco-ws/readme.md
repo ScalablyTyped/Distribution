@@ -12,7 +12,7 @@ This Node package for Azure Relay Hybrid Connections is built on and extends the
 | Keywords           | Hixie, HyBi, Push, RFC-6455, WebSocket, WebSockets, real-time |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1020 |
+| # downloads        | 1472 |
 | # stars            | 1 |
 
 ## Links

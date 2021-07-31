@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricDefinition extends StObject {
   
   /**
     * The name of the metric.
     */
-  var Name: MetricName = js.native
+  var Name: MetricName
   
   /**
     * A regular expression that searches the output of a training job and gets the value of the metric. For more information about using regular expressions to define metrics, see Defining Objective Metrics.
     */
-  var Regex: MetricRegex = js.native
+  var Regex: MetricRegex
 }
 object MetricDefinition {
   

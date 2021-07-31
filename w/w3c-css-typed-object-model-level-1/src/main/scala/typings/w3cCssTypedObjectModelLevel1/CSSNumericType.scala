@@ -2,27 +2,25 @@ package typings.w3cCssTypedObjectModelLevel1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSSNumericType extends StObject {
   
-  var angle: Double = js.native
+  var angle: Double
   
-  var flex: Double = js.native
+  var flex: Double
   
-  var frequency: Double = js.native
+  var frequency: Double
   
-  var length: Double = js.native
+  var length: Double
   
-  var percent: Double = js.native
+  var percent: Double
   
-  var percentHint: CSSNumericBaseType = js.native
+  var percentHint: CSSNumericBaseType
   
-  var resolution: Double = js.native
+  var resolution: Double
   
-  var time: Double = js.native
+  var time: Double
 }
 object CSSNumericType {
   

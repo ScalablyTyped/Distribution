@@ -13,7 +13,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v24Mod {
@@ -78,7 +77,7 @@ object v24Mod {
         */
       def get(): GaxiosPromise[Unit] = js.native
       def get(callback: BodyResponseCallback[Unit]): Unit = js.native
-      def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+      def get(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
       def get(params: ParamsResourceDataGet): GaxiosPromise[Unit] = js.native
       def get(params: ParamsResourceDataGet, callback: BodyResponseCallback[Unit]): Unit = js.native
       def get(
@@ -130,7 +129,7 @@ object v24Mod {
         */
       def list(): GaxiosPromise[Unit] = js.native
       def list(callback: BodyResponseCallback[Unit]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
       def list(params: ParamsResourceManagementAccountsList): GaxiosPromise[Unit] = js.native
       def list(params: ParamsResourceManagementAccountsList, callback: BodyResponseCallback[Unit]): Unit = js.native
       def list(
@@ -171,7 +170,7 @@ object v24Mod {
         */
       def list(): GaxiosPromise[Unit] = js.native
       def list(callback: BodyResponseCallback[Unit]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
       def list(params: ParamsResourceManagementGoalsList): GaxiosPromise[Unit] = js.native
       def list(params: ParamsResourceManagementGoalsList, callback: BodyResponseCallback[Unit]): Unit = js.native
       def list(
@@ -211,7 +210,7 @@ object v24Mod {
         */
       def list(): GaxiosPromise[Unit] = js.native
       def list(callback: BodyResponseCallback[Unit]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
       def list(params: ParamsResourceManagementProfilesList): GaxiosPromise[Unit] = js.native
       def list(params: ParamsResourceManagementProfilesList, callback: BodyResponseCallback[Unit]): Unit = js.native
       def list(
@@ -249,7 +248,7 @@ object v24Mod {
         */
       def list(): GaxiosPromise[Unit] = js.native
       def list(callback: BodyResponseCallback[Unit]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
       def list(params: ParamsResourceManagementSegmentsList): GaxiosPromise[Unit] = js.native
       def list(params: ParamsResourceManagementSegmentsList, callback: BodyResponseCallback[Unit]): Unit = js.native
       def list(
@@ -288,7 +287,7 @@ object v24Mod {
         */
       def list(): GaxiosPromise[Unit] = js.native
       def list(callback: BodyResponseCallback[Unit]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
       def list(params: ParamsResourceManagementWebpropertiesList): GaxiosPromise[Unit] = js.native
       def list(params: ParamsResourceManagementWebpropertiesList, callback: BodyResponseCallback[Unit]): Unit = js.native
       def list(
@@ -304,16 +303,17 @@ object v24Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v2_4 = js.native
+      var version: v2_4
     }
     object Options {
       
       @scala.inline
-      def apply(version: v2_4): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v2_4")
         __obj.asInstanceOf[Options]
       }
       
@@ -325,72 +325,73 @@ object v24Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceDataGet extends StandardParameters {
+    trait ParamsResourceDataGet
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * A comma-separated list of Analytics dimensions. E.g.,
         * 'ga:browser,ga:city'.
         */
-      var dimensions: js.UndefOr[String] = js.native
+      var dimensions: js.UndefOr[String] = js.undefined
       
       /**
         * End date for fetching report data. All requests should specify an end
         * date formatted as YYYY-MM-DD.
         */
-      var `end-date`: js.UndefOr[String] = js.native
+      var `end-date`: js.UndefOr[String] = js.undefined
       
       /**
         * A comma-separated list of dimension or metric filters to be applied to
         * the report data.
         */
-      var filters: js.UndefOr[String] = js.native
+      var filters: js.UndefOr[String] = js.undefined
       
       /**
         * Unique table ID for retrieving report data. Table ID is of the form
         * ga:XXXX, where XXXX is the Analytics view (profile) ID.
         */
-      var ids: js.UndefOr[String] = js.native
+      var ids: js.UndefOr[String] = js.undefined
       
       /**
         * The maximum number of entries to include in this feed.
         */
-      var `max-results`: js.UndefOr[Double] = js.native
+      var `max-results`: js.UndefOr[Double] = js.undefined
       
       /**
         * A comma-separated list of Analytics metrics. E.g.,
         * 'ga:sessions,ga:pageviews'. At least one metric must be specified to
         * retrieve a valid Analytics report.
         */
-      var metrics: js.UndefOr[String] = js.native
+      var metrics: js.UndefOr[String] = js.undefined
       
       /**
         * An Analytics advanced segment to be applied to the report data.
         */
-      var segment: js.UndefOr[String] = js.native
+      var segment: js.UndefOr[String] = js.undefined
       
       /**
         * A comma-separated list of dimensions or metrics that determine the sort
         * order for the report data.
         */
-      var sort: js.UndefOr[String] = js.native
+      var sort: js.UndefOr[String] = js.undefined
       
       /**
         * Start date for fetching report data. All requests should specify a start
         * date formatted as YYYY-MM-DD.
         */
-      var `start-date`: js.UndefOr[String] = js.native
+      var `start-date`: js.UndefOr[String] = js.undefined
       
       /**
         * An index of the first entity to retrieve. Use this parameter as a
         * pagination mechanism along with the max-results parameter.
         */
-      var `start-index`: js.UndefOr[Double] = js.native
+      var `start-index`: js.UndefOr[Double] = js.undefined
     }
     object ParamsResourceDataGet {
       
@@ -471,24 +472,25 @@ object v24Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceManagementAccountsList extends StandardParameters {
+    trait ParamsResourceManagementAccountsList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The maximum number of accounts to include in this response.
         */
-      var `max-results`: js.UndefOr[Double] = js.native
+      var `max-results`: js.UndefOr[Double] = js.undefined
       
       /**
         * An index of the first account to retrieve. Use this parameter as a
         * pagination mechanism along with the max-results parameter.
         */
-      var `start-index`: js.UndefOr[Double] = js.native
+      var `start-index`: js.UndefOr[Double] = js.undefined
     }
     object ParamsResourceManagementAccountsList {
       
@@ -521,44 +523,45 @@ object v24Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceManagementGoalsList extends StandardParameters {
+    trait ParamsResourceManagementGoalsList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Account ID to retrieve goals for. Can either be a specific account ID or
         * '~all', which refers to all the accounts that user has access to.
         */
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The maximum number of goals to include in this response.
         */
-      var `max-results`: js.UndefOr[Double] = js.native
+      var `max-results`: js.UndefOr[Double] = js.undefined
       
       /**
         * View (Profile) ID to retrieve goals for. Can either be a specific view
         * (profile) ID or '~all', which refers to all the views (profiles) that
         * user has access to.
         */
-      var profileId: js.UndefOr[String] = js.native
+      var profileId: js.UndefOr[String] = js.undefined
       
       /**
         * An index of the first goal to retrieve. Use this parameter as a
         * pagination mechanism along with the max-results parameter.
         */
-      var `start-index`: js.UndefOr[Double] = js.native
+      var `start-index`: js.UndefOr[Double] = js.undefined
       
       /**
         * Web property ID to retrieve goals for. Can either be a specific web
         * property ID or '~all', which refers to all the web properties that user
         * has access to.
         */
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceManagementGoalsList {
       
@@ -609,38 +612,39 @@ object v24Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceManagementProfilesList extends StandardParameters {
+    trait ParamsResourceManagementProfilesList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Account ID for the views (profiles) to retrieve. Can either be a specific
         * account ID or '~all', which refers to all the accounts to which the user
         * has access.
         */
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The maximum number of views (profiles) to include in this response.
         */
-      var `max-results`: js.UndefOr[Double] = js.native
+      var `max-results`: js.UndefOr[Double] = js.undefined
       
       /**
         * An index of the first entity to retrieve. Use this parameter as a
         * pagination mechanism along with the max-results parameter.
         */
-      var `start-index`: js.UndefOr[Double] = js.native
+      var `start-index`: js.UndefOr[Double] = js.undefined
       
       /**
         * Web property ID for the views (profiles) to retrieve. Can either be a
         * specific web property ID or '~all', which refers to all the web
         * properties to which the user has access.
         */
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceManagementProfilesList {
       
@@ -685,24 +689,25 @@ object v24Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceManagementSegmentsList extends StandardParameters {
+    trait ParamsResourceManagementSegmentsList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The maximum number of advanced segments to include in this response.
         */
-      var `max-results`: js.UndefOr[Double] = js.native
+      var `max-results`: js.UndefOr[Double] = js.undefined
       
       /**
         * An index of the first advanced segment to retrieve. Use this parameter as
         * a pagination mechanism along with the max-results parameter.
         */
-      var `start-index`: js.UndefOr[Double] = js.native
+      var `start-index`: js.UndefOr[Double] = js.undefined
     }
     object ParamsResourceManagementSegmentsList {
       
@@ -735,31 +740,32 @@ object v24Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceManagementWebpropertiesList extends StandardParameters {
+    trait ParamsResourceManagementWebpropertiesList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Account ID to retrieve web properties for. Can either be a specific
         * account ID or '~all', which refers to all the accounts that user has
         * access to.
         */
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The maximum number of web properties to include in this response.
         */
-      var `max-results`: js.UndefOr[Double] = js.native
+      var `max-results`: js.UndefOr[Double] = js.undefined
       
       /**
         * An index of the first entity to retrieve. Use this parameter as a
         * pagination mechanism along with the max-results parameter.
         */
-      var `start-index`: js.UndefOr[Double] = js.native
+      var `start-index`: js.UndefOr[Double] = js.undefined
     }
     object ParamsResourceManagementWebpropertiesList {
       
@@ -798,46 +804,45 @@ object v24Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * Data format for the response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An opaque string that represents a user for quota purposes. Must not
         * exceed 40 characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Deprecated. Please use quotaUser instead.
         */
-      var userIp: js.UndefOr[String] = js.native
+      var userIp: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

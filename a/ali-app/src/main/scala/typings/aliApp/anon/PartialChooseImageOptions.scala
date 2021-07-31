@@ -3,22 +3,20 @@ package typings.aliApp.anon
 import typings.aliApp.my.ImageSourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ali-app.my.ChooseImageOptions> */
-@js.native
 trait PartialChooseImageOptions extends StObject {
   
-  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var sourceType: js.UndefOr[js.Array[ImageSourceType]] = js.native
+  var sourceType: js.UndefOr[js.Array[ImageSourceType]] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ ApFilePaths, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ ApFilePaths, Unit]] = js.undefined
 }
 object PartialChooseImageOptions {
   

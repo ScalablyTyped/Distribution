@@ -3,24 +3,22 @@ package typings.googleGax.iamServiceMod.google.iam.v1
 import typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an AuditConfigDelta. */
-@js.native
 trait IAuditConfigDelta extends StObject {
   
   /** AuditConfigDelta action */
-  var action: js.UndefOr[Action | Null] = js.native
+  var action: js.UndefOr[Action | Null] = js.undefined
   
   /** AuditConfigDelta exemptedMember */
-  var exemptedMember: js.UndefOr[String | Null] = js.native
+  var exemptedMember: js.UndefOr[String | Null] = js.undefined
   
   /** AuditConfigDelta logType */
-  var logType: js.UndefOr[String | Null] = js.native
+  var logType: js.UndefOr[String | Null] = js.undefined
   
   /** AuditConfigDelta service */
-  var service: js.UndefOr[String | Null] = js.native
+  var service: js.UndefOr[String | Null] = js.undefined
 }
 object IAuditConfigDelta {
   

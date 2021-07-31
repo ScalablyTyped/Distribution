@@ -7,23 +7,21 @@ import typings.devextreme.devextremeStrings.numeric
 import typings.devextreme.devextremeStrings.string_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inverted extends StObject {
   
-  var inverted: js.UndefOr[Boolean] = js.native
+  var inverted: js.UndefOr[Boolean] = js.undefined
   
-  var logarithmBase: js.UndefOr[Double] = js.native
+  var logarithmBase: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[continuous | logarithmic] = js.native
+  var `type`: js.UndefOr[continuous | logarithmic] = js.undefined
   
-  var valueType: js.UndefOr[datetime | numeric | string_] = js.native
+  var valueType: js.UndefOr[datetime | numeric | string_] = js.undefined
 }
 object Inverted {
   

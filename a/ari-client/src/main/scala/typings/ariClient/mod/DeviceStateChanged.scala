@@ -3,16 +3,16 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceStateChanged extends Event {
+trait DeviceStateChanged
+  extends StObject
+     with Event {
   
   /**
     * Device state object.
     */
-  var device_state: DeviceState = js.native
+  var device_state: DeviceState
 }
 object DeviceStateChanged {
   

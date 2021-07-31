@@ -2,31 +2,29 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAliasInput extends StObject {
   
   /**
     * A unique identifier for the alias that you want to update. You can use either the alias ID or ARN value.
     */
-  var AliasId: AliasIdOrArn = js.native
+  var AliasId: AliasIdOrArn
   
   /**
     * A human-readable description of the alias.
     */
-  var Description: js.UndefOr[NonZeroAndMaxString] = js.native
+  var Description: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * A descriptive label that is associated with an alias. Alias names do not need to be unique.
     */
-  var Name: js.UndefOr[NonBlankAndLengthConstraintString] = js.native
+  var Name: js.UndefOr[NonBlankAndLengthConstraintString] = js.undefined
   
   /**
     * The routing configuration, including routing type and fleet target, for the alias.
     */
-  var RoutingStrategy: js.UndefOr[typings.awsSdk.gameliftMod.RoutingStrategy] = js.native
+  var RoutingStrategy: js.UndefOr[typings.awsSdk.gameliftMod.RoutingStrategy] = js.undefined
 }
 object UpdateAliasInput {
   

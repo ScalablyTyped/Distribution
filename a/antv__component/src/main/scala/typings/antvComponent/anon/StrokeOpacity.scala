@@ -2,15 +2,13 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StrokeOpacity extends StObject {
   
-  var stroke: String = js.native
+  var stroke: String
   
-  var strokeOpacity: Double = js.native
+  var strokeOpacity: Double
 }
 object StrokeOpacity {
   

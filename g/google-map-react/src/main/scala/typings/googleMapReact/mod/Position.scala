@@ -2,17 +2,15 @@ package typings.googleMapReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
-  var lat: Double = js.native
+  var lat: Double
   
-  var lng: Double = js.native
+  var lng: Double
   
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object Position {
   

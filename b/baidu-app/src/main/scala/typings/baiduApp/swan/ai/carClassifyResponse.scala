@@ -4,18 +4,16 @@ import typings.baiduApp.anon.Height
 import typings.baiduApp.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait carClassifyResponse extends StObject {
   
-  var location_result: Height = js.native
+  var location_result: Height
   
-  var log_id: Double = js.native
+  var log_id: Double
   
   //     唯一的log id，用于问题定位。
-  var result: js.Array[Name] = js.native
+  var result: js.Array[Name]
 }
 object carClassifyResponse {
   

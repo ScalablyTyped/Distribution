@@ -2,27 +2,25 @@ package typings.systeminformation.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Flags extends StObject {
   
-  var flags: Autokeep = js.native
+  var flags: Autokeep
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: java.lang.String = js.native
+  var name: java.lang.String
   
-  var raw: String = js.native
+  var raw: String
   
-  var thresh: Double = js.native
+  var thresh: Double
   
-  var value: Double = js.native
+  var value: Double
   
-  var when_failed: java.lang.String = js.native
+  var when_failed: java.lang.String
   
-  var worst: Double = js.native
+  var worst: Double
 }
 object Flags {
   

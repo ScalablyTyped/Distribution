@@ -2,7 +2,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) failed
   * to respond to a request for data.
   */
-@js.native
 trait SchemaFailedLocation extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaFailedLocation extends StObject {
     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
     * failed to respond.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaFailedLocation {
   

@@ -2,106 +2,104 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsDynamoDbTableDetails extends StObject {
   
   /**
     * A list of attribute definitions for the table.
     */
-  var AttributeDefinitions: js.UndefOr[AwsDynamoDbTableAttributeDefinitionList] = js.native
+  var AttributeDefinitions: js.UndefOr[AwsDynamoDbTableAttributeDefinitionList] = js.undefined
   
   /**
     * Information about the billing for read/write capacity on the table.
     */
-  var BillingModeSummary: js.UndefOr[AwsDynamoDbTableBillingModeSummary] = js.native
+  var BillingModeSummary: js.UndefOr[AwsDynamoDbTableBillingModeSummary] = js.undefined
   
   /**
     * Indicates when the table was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreationDateTime: js.UndefOr[NonEmptyString] = js.native
+  var CreationDateTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * List of global secondary indexes for the table.
     */
-  var GlobalSecondaryIndexes: js.UndefOr[AwsDynamoDbTableGlobalSecondaryIndexList] = js.native
+  var GlobalSecondaryIndexes: js.UndefOr[AwsDynamoDbTableGlobalSecondaryIndexList] = js.undefined
   
   /**
     * The version of global tables being used.
     */
-  var GlobalTableVersion: js.UndefOr[NonEmptyString] = js.native
+  var GlobalTableVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The number of items in the table.
     */
-  var ItemCount: js.UndefOr[Integer] = js.native
+  var ItemCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The primary key structure for the table.
     */
-  var KeySchema: js.UndefOr[AwsDynamoDbTableKeySchemaList] = js.native
+  var KeySchema: js.UndefOr[AwsDynamoDbTableKeySchemaList] = js.undefined
   
   /**
     * The ARN of the latest stream for the table.
     */
-  var LatestStreamArn: js.UndefOr[NonEmptyString] = js.native
+  var LatestStreamArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The label of the latest stream. The label is not a unique identifier.
     */
-  var LatestStreamLabel: js.UndefOr[NonEmptyString] = js.native
+  var LatestStreamLabel: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The list of local secondary indexes for the table.
     */
-  var LocalSecondaryIndexes: js.UndefOr[AwsDynamoDbTableLocalSecondaryIndexList] = js.native
+  var LocalSecondaryIndexes: js.UndefOr[AwsDynamoDbTableLocalSecondaryIndexList] = js.undefined
   
   /**
     * Information about the provisioned throughput for the table.
     */
-  var ProvisionedThroughput: js.UndefOr[AwsDynamoDbTableProvisionedThroughput] = js.native
+  var ProvisionedThroughput: js.UndefOr[AwsDynamoDbTableProvisionedThroughput] = js.undefined
   
   /**
     * The list of replicas of this table.
     */
-  var Replicas: js.UndefOr[AwsDynamoDbTableReplicaList] = js.native
+  var Replicas: js.UndefOr[AwsDynamoDbTableReplicaList] = js.undefined
   
   /**
     * Information about the restore for the table.
     */
-  var RestoreSummary: js.UndefOr[AwsDynamoDbTableRestoreSummary] = js.native
+  var RestoreSummary: js.UndefOr[AwsDynamoDbTableRestoreSummary] = js.undefined
   
   /**
     * Information about the server-side encryption for the table.
     */
-  var SseDescription: js.UndefOr[AwsDynamoDbTableSseDescription] = js.native
+  var SseDescription: js.UndefOr[AwsDynamoDbTableSseDescription] = js.undefined
   
   /**
     * The current DynamoDB Streams configuration for the table.
     */
-  var StreamSpecification: js.UndefOr[AwsDynamoDbTableStreamSpecification] = js.native
+  var StreamSpecification: js.UndefOr[AwsDynamoDbTableStreamSpecification] = js.undefined
   
   /**
     * The identifier of the table.
     */
-  var TableId: js.UndefOr[NonEmptyString] = js.native
+  var TableId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the table.
     */
-  var TableName: js.UndefOr[NonEmptyString] = js.native
+  var TableName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The total size of the table in bytes.
     */
-  var TableSizeBytes: js.UndefOr[SizeBytes] = js.native
+  var TableSizeBytes: js.UndefOr[SizeBytes] = js.undefined
   
   /**
     * The current status of the table.
     */
-  var TableStatus: js.UndefOr[NonEmptyString] = js.native
+  var TableStatus: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsDynamoDbTableDetails {
   

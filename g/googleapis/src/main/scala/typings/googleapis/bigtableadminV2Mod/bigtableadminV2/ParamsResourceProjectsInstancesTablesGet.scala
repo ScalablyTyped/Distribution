@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsInstancesTablesGet extends StandardParameters {
+trait ParamsResourceProjectsInstancesTablesGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The unique name of the requested table. Values are of the form
     * `projects/<project>/instances/<instance>/tables/<table>`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The view to be applied to the returned table's fields. Defaults to
     * `SCHEMA_VIEW` if unspecified.
     */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsInstancesTablesGet {
   

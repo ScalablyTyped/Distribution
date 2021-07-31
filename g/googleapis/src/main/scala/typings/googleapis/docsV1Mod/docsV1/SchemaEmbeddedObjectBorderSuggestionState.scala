@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,28 +9,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * have been changed in this suggestion. For any field set to true, there is a
   * new suggested value.
   */
-@js.native
 trait SchemaEmbeddedObjectBorderSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to color.
     */
-  var colorSuggested: js.UndefOr[Boolean] = js.native
+  var colorSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to dash_style.
     */
-  var dashStyleSuggested: js.UndefOr[Boolean] = js.native
+  var dashStyleSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to property_state.
     */
-  var propertyStateSuggested: js.UndefOr[Boolean] = js.native
+  var propertyStateSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to width.
     */
-  var widthSuggested: js.UndefOr[Boolean] = js.native
+  var widthSuggested: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaEmbeddedObjectBorderSuggestionState {
   

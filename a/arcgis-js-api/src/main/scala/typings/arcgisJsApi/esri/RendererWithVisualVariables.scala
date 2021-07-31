@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -12,5 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arcgisJsApi.esri.DotDensityRenderer
 */
 trait RendererWithVisualVariables
-  extends typings.arcgisJsApi.esri.renderers.Renderer
+  extends StObject
+     with typings.arcgisJsApi.esri.renderers.Renderer
      with renderersRenderer

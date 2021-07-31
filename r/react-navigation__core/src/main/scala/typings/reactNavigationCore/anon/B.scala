@@ -4,17 +4,15 @@ import typings.reactNavigationCore.typesMod.EventMapBase
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait B[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, EventMap /* <: EventMapBase */] extends StObject {
   
-  var a: ParamList = js.native
+  var a: ParamList
   
-  var b: RouteName = js.native
+  var b: RouteName
   
-  var c: EventMap = js.native
+  var c: EventMap
 }
 object B {
   
@@ -25,7 +23,7 @@ object B {
   }
   
   @scala.inline
-  implicit class BMutableBuilder[Self <: B[_, _, _], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, EventMap /* <: EventMapBase */] (val x: Self with (B[ParamList, RouteName, EventMap])) extends AnyVal {
+  implicit class BMutableBuilder[Self <: B[?, ?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, EventMap /* <: EventMapBase */] (val x: Self & (B[ParamList, RouteName, EventMap])) extends AnyVal {
     
     @scala.inline
     def setA(value: ParamList): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])

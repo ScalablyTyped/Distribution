@@ -2,16 +2,14 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeprovisionByoipCidrRequest extends StObject {
   
   /**
     * The address range, in CIDR notation. The prefix must be the same prefix that you specified when you provisioned the address range.
     */
-  var Cidr: GenericString = js.native
+  var Cidr: GenericString
 }
 object DeprovisionByoipCidrRequest {
   

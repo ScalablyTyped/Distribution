@@ -2,17 +2,15 @@ package typings.historyJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryAdapter extends StObject {
   
-  def bind(element: js.Any, event: String, callback: js.Function0[Unit]): Unit = js.native
+  def bind(element: js.Any, event: String, callback: js.Function0[Unit]): Unit
   
-  def onDomLoad(callback: js.Function0[Unit]): Unit = js.native
+  def onDomLoad(callback: js.Function0[Unit]): Unit
   
-  def trigger(element: js.Any, event: String): Unit = js.native
+  def trigger(element: js.Any, event: String): Unit
 }
 object HistoryAdapter {
   

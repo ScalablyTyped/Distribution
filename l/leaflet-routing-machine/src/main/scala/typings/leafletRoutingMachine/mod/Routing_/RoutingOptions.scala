@@ -2,22 +2,20 @@ package typings.leafletRoutingMachine.mod.Routing_
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Interfaces
-@js.native
 trait RoutingOptions extends StObject {
   
-  var allowUTurns: Boolean = js.native
+  var allowUTurns: Boolean
   
-  var fileFormat: String = js.native
+  var fileFormat: String
   
-  var geometryOnly: Boolean = js.native
+  var geometryOnly: Boolean
   
-  var simplifyGeometry: Boolean = js.native
+  var simplifyGeometry: Boolean
   
-  var z: Double = js.native
+  var z: Double
 }
 object RoutingOptions {
   

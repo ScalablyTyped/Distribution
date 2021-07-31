@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemBody extends StObject {
   
   // The content of the item.
-  var content: js.UndefOr[NullableOption[String]] = js.native
+  var content: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The type of the content. Possible values are text and html.
-  var contentType: js.UndefOr[NullableOption[BodyType]] = js.native
+  var contentType: js.UndefOr[NullableOption[BodyType]] = js.undefined
 }
 object ItemBody {
   

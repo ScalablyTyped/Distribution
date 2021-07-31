@@ -7,7 +7,6 @@ import typings.std.Record
 import typings.wordpressCustomizeBrowser.classMod.Class
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object valuesMod {
@@ -20,11 +19,11 @@ object valuesMod {
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     
     def apply(arg: String): T = js.native
-    def apply(args: (String | (js.Function1[/* repeated */ T, Unit]))*): Promise[_, _, _] = js.native
+    def apply(args: (String | (js.Function1[/* repeated */ T, Unit]))*): Promise[js.Any, js.Any, js.Any] = js.native
     
     def _change(): Unit = js.native
     
-    var _deferreds: Record[String, Deferred[_, _, _]] = js.native
+    var _deferreds: Record[String, Deferred[js.Any, js.Any, js.Any]] = js.native
     
     var _value: Record[String, T] = js.native
     
@@ -48,7 +47,7 @@ object valuesMod {
     def initialize(options: js.Object): Unit = js.native
     
     def instance(arg: String): T = js.native
-    def instance(args: (String | (js.Function1[/* repeated */ T, Unit]))*): Promise[_, _, _] = js.native
+    def instance(args: (String | (js.Function1[/* repeated */ T, Unit]))*): Promise[js.Any, js.Any, js.Any] = js.native
     
     def remove(id: String): Unit = js.native
     
@@ -61,6 +60,6 @@ object valuesMod {
     
     def value(id: String): T = js.native
     
-    def when(args: (String | (js.Function1[/* repeated */ T, Unit]))*): Promise[_, _, _] = js.native
+    def when(args: (String | (js.Function1[/* repeated */ T, Unit]))*): Promise[js.Any, js.Any, js.Any] = js.native
   }
 }

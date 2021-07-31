@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Approval extends StObject {
   
   /**
     * The state of the approval, APPROVE or REVOKE. REVOKE states are not stored.
     */
-  var approvalState: js.UndefOr[ApprovalState] = js.native
+  var approvalState: js.UndefOr[ApprovalState] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the user.
     */
-  var userArn: js.UndefOr[Arn] = js.native
+  var userArn: js.UndefOr[Arn] = js.undefined
 }
 object Approval {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowType extends StObject {
   
   /**
     *  The name of the workflow type.  The combination of workflow type name and version must be unique with in a domain. 
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     *  The version of the workflow type.  The combination of workflow type name and version must be unique with in a domain. 
     */
-  var version: Version = js.native
+  var version: Version
 }
 object WorkflowType {
   

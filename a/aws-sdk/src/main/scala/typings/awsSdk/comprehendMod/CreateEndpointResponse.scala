@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateEndpointResponse extends StObject {
   
   /**
     * The Amazon Resource Number (ARN) of the endpoint being created.
     */
-  var EndpointArn: js.UndefOr[ComprehendEndpointArn] = js.native
+  var EndpointArn: js.UndefOr[ComprehendEndpointArn] = js.undefined
 }
 object CreateEndpointResponse {
   

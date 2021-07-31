@@ -2,17 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProgressEventInit extends EventInit {
+trait ProgressEventInit
+  extends StObject
+     with EventInit {
   
-  var lengthComputable: js.UndefOr[scala.Boolean] = js.native
+  var lengthComputable: js.UndefOr[scala.Boolean] = js.undefined
   
-  var loaded: js.UndefOr[Double] = js.native
+  var loaded: js.UndefOr[Double] = js.undefined
   
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object ProgressEventInit {
   

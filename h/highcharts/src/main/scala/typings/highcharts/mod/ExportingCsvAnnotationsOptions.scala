@@ -2,23 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportingCsvAnnotationsOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The way to mark the separator
     * for annotations combined in one export-data table cell.
     */
-  var itemDelimiter: js.UndefOr[String] = js.native
+  var itemDelimiter: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) When several labels are assigned
     * to a specific point, they will be displayed in one field in the table.
     */
-  var join: js.UndefOr[Boolean] = js.native
+  var join: js.UndefOr[Boolean] = js.undefined
 }
 object ExportingCsvAnnotationsOptions {
   

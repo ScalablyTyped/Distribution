@@ -2,56 +2,54 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRecipeJobRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an encryption key that is used to protect the job.
     */
-  var EncryptionKeyArn: js.UndefOr[typings.awsSdk.databrewMod.EncryptionKeyArn] = js.native
+  var EncryptionKeyArn: js.UndefOr[typings.awsSdk.databrewMod.EncryptionKeyArn] = js.undefined
   
   /**
     * The encryption mode for the job, which can be one of the following:    SSE-KMS - Server-side encryption with AWS KMS-managed keys.    SSE-S3 - Server-side encryption with keys managed by Amazon S3.  
     */
-  var EncryptionMode: js.UndefOr[typings.awsSdk.databrewMod.EncryptionMode] = js.native
+  var EncryptionMode: js.UndefOr[typings.awsSdk.databrewMod.EncryptionMode] = js.undefined
   
   /**
     * A value that enables or disables Amazon CloudWatch logging for the current AWS account. If logging is enabled, CloudWatch writes one log stream for each job run.
     */
-  var LogSubscription: js.UndefOr[typings.awsSdk.databrewMod.LogSubscription] = js.native
+  var LogSubscription: js.UndefOr[typings.awsSdk.databrewMod.LogSubscription] = js.undefined
   
   /**
     * The maximum number of nodes that DataBrew can consume when the job processes data.
     */
-  var MaxCapacity: js.UndefOr[typings.awsSdk.databrewMod.MaxCapacity] = js.native
+  var MaxCapacity: js.UndefOr[typings.awsSdk.databrewMod.MaxCapacity] = js.undefined
   
   /**
     * The maximum number of times to retry the job after a job run fails.
     */
-  var MaxRetries: js.UndefOr[typings.awsSdk.databrewMod.MaxRetries] = js.native
+  var MaxRetries: js.UndefOr[typings.awsSdk.databrewMod.MaxRetries] = js.undefined
   
   /**
     * The name of the job to update.
     */
-  var Name: JobName = js.native
+  var Name: JobName
   
   /**
     * One or more artifacts that represent the output from running the job. 
     */
-  var Outputs: OutputList = js.native
+  var Outputs: OutputList
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role to be assumed for this request.
     */
-  var RoleArn: Arn = js.native
+  var RoleArn: Arn
   
   /**
     * The job's timeout in minutes. A job that attempts to run longer than this timeout period ends with a status of TIMEOUT.
     */
-  var Timeout: js.UndefOr[typings.awsSdk.databrewMod.Timeout] = js.native
+  var Timeout: js.UndefOr[typings.awsSdk.databrewMod.Timeout] = js.undefined
 }
 object UpdateRecipeJobRequest {
   

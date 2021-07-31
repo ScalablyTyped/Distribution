@@ -2,14 +2,14 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigateBackMiniProgramOptions extends CommonCallbackOptions {
+trait NavigateBackMiniProgramOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   //  需要返回给上一个小程序的数据，上一个小程序可在 App.onShow 中获取到这份数据。
-  var extraData: js.Object = js.native
+  var extraData: js.Object
 }
 object NavigateBackMiniProgramOptions {
   

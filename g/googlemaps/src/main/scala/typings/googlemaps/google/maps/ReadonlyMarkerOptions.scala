@@ -3,63 +3,61 @@ package typings.googlemaps.google.maps
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @see {@link MarkerOptions} */
-@js.native
 trait ReadonlyMarkerOptions extends StObject {
   
   /** @see {@link MarkerOptions#anchorPoint} */
-  val anchorPoint: js.UndefOr[Point] = js.native
+  val anchorPoint: js.UndefOr[Point] = js.undefined
   
   /** @see {@link MarkerOptions#animation} */
-  val animation: js.UndefOr[Animation] = js.native
+  val animation: js.UndefOr[Animation] = js.undefined
   
   /** @see {@link MarkerOptions#clickable} */
-  val clickable: js.UndefOr[Boolean] = js.native
+  val clickable: js.UndefOr[Boolean] = js.undefined
   
   /** @see {@link MarkerOptions#crossOnDrag} */
-  val crossOnDrag: js.UndefOr[Boolean] = js.native
+  val crossOnDrag: js.UndefOr[Boolean] = js.undefined
   
   /** @see {@link MarkerOptions#cursor} */
-  val cursor: js.UndefOr[String] = js.native
+  val cursor: js.UndefOr[String] = js.undefined
   
   /** @see {@link MarkerOptions#draggable} */
-  val draggable: js.UndefOr[Boolean] = js.native
+  val draggable: js.UndefOr[Boolean] = js.undefined
   
   /** @see {@link MarkerOptions#icon} */
-  val icon: js.UndefOr[String | ReadonlyIcon | ReadonlySymbol] = js.native
+  val icon: js.UndefOr[String | ReadonlyIcon | ReadonlySymbol] = js.undefined
   
   /** @see {@link MarkerOptions#label} */
-  val label: js.UndefOr[String | ReadonlyMarkerLabel] = js.native
+  val label: js.UndefOr[String | ReadonlyMarkerLabel] = js.undefined
   
   /** @see {@link MarkerOptions#map} */
-  val map: js.UndefOr[Map[Element] | StreetViewPanorama] = js.native
+  val map: js.UndefOr[Map[Element] | StreetViewPanorama] = js.undefined
   
   /** @see {@link MarkerOptions#opacity} */
-  val opacity: js.UndefOr[Double] = js.native
+  val opacity: js.UndefOr[Double] = js.undefined
   
   /** @see {@link MarkerOptions#optimized} */
-  val optimized: js.UndefOr[Boolean] = js.native
+  val optimized: js.UndefOr[Boolean] = js.undefined
   
   /** @see {@link MarkerOptions#place} */
-  val place: js.UndefOr[Place] = js.native
+  val place: js.UndefOr[Place] = js.undefined
   
   /** @see {@link MarkerOptions#position} */
-  val position: js.UndefOr[LatLng | ReadonlyLatLngLiteral] = js.native
+  val position: js.UndefOr[LatLng | ReadonlyLatLngLiteral] = js.undefined
   
   /** @see {@link MarkerOptions#shape} */
-  val shape: js.UndefOr[MarkerShape] = js.native
+  val shape: js.UndefOr[MarkerShape] = js.undefined
   
   /** @see {@link MarkerOptions#title} */
-  val title: js.UndefOr[String] = js.native
+  val title: js.UndefOr[String] = js.undefined
   
   /** @see {@link MarkerOptions#visible} */
-  val visible: js.UndefOr[Boolean] = js.native
+  val visible: js.UndefOr[Boolean] = js.undefined
   
   /** @see {@link MarkerOptions#zIndex} */
-  val zIndex: js.UndefOr[Double] = js.native
+  val zIndex: js.UndefOr[Double] = js.undefined
 }
 object ReadonlyMarkerOptions {
   

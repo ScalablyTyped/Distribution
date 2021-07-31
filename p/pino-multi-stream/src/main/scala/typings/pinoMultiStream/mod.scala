@@ -18,28 +18,26 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: LoggerOptions): Logger = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  
   @JSImport("pino-multi-stream", JSImport.Namespace)
   @js.native
-  def apply(options: LoggerOptions): Logger = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("pino-multi-stream", "multistream")
-  @js.native
-  def multistream(streams: Streams): Writable = js.native
-  @JSImport("pino-multi-stream", "multistream")
-  @js.native
-  def multistream(streams: Streams, opts: MultiStreamOptions): Writable = js.native
+  @scala.inline
+  def multistream(streams: Streams): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("multistream")(streams.asInstanceOf[js.Any]).asInstanceOf[Writable]
+  @scala.inline
+  def multistream(streams: Streams, opts: MultiStreamOptions): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("multistream")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Writable]
   
-  @JSImport("pino-multi-stream", "prettyStream")
-  @js.native
-  def prettyStream(): DestinationStream = js.native
-  @JSImport("pino-multi-stream", "prettyStream")
-  @js.native
-  def prettyStream(opts: PrettyStreamOptions): DestinationStream = js.native
+  @scala.inline
+  def prettyStream(): DestinationStream = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyStream")().asInstanceOf[DestinationStream]
+  @scala.inline
+  def prettyStream(opts: PrettyStreamOptions): DestinationStream = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyStream")(opts.asInstanceOf[js.Any]).asInstanceOf[DestinationStream]
   
   object stdSerializers {
     
@@ -56,9 +54,8 @@ object mod {
     /**
       * Serializes an Error object.
       */
-    @JSImport("pino-multi-stream", "stdSerializers.err")
-    @js.native
-    def err(err: Error): SerializedError = js.native
+    @scala.inline
+    def err(err: Error): SerializedError = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(err.asInstanceOf[js.Any]).asInstanceOf[SerializedError]
     @scala.inline
     def err_=(x: js.Function1[/* err */ Error, SerializedError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("err")(x.asInstanceOf[js.Any])
     
@@ -87,9 +84,8 @@ object mod {
       * @param req The request to serialize
       * @return An object
       */
-    @JSImport("pino-multi-stream", "stdSerializers.mapHttpRequest")
-    @js.native
-    def mapHttpRequest(req: IncomingMessage): Req = js.native
+    @scala.inline
+    def mapHttpRequest(req: IncomingMessage): Req = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpRequest")(req.asInstanceOf[js.Any]).asInstanceOf[Req]
     @scala.inline
     def mapHttpRequest_=(x: js.Function1[/* req */ IncomingMessage, Req]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapHttpRequest")(x.asInstanceOf[js.Any])
     
@@ -118,9 +114,8 @@ object mod {
       * @param res The response to serialize.
       * @return An object.
       */
-    @JSImport("pino-multi-stream", "stdSerializers.mapHttpResponse")
-    @js.native
-    def mapHttpResponse(res: ServerResponse): Res = js.native
+    @scala.inline
+    def mapHttpResponse(res: ServerResponse): Res = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpResponse")(res.asInstanceOf[js.Any]).asInstanceOf[Res]
     @scala.inline
     def mapHttpResponse_=(x: js.Function1[/* res */ ServerResponse, Res]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapHttpResponse")(x.asInstanceOf[js.Any])
     
@@ -133,9 +128,8 @@ object mod {
     /**
       * Generates a JSONifiable object from the HTTP `request` object passed to the `createServer` callback of Node's HTTP server.
       */
-    @JSImport("pino-multi-stream", "stdSerializers.req")
-    @js.native
-    def req(req: IncomingMessage): SerializedRequest = js.native
+    @scala.inline
+    def req(req: IncomingMessage): SerializedRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("req")(req.asInstanceOf[js.Any]).asInstanceOf[SerializedRequest]
     @scala.inline
     def req_=(x: js.Function1[/* req */ IncomingMessage, SerializedRequest]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("req")(x.asInstanceOf[js.Any])
     
@@ -148,9 +142,8 @@ object mod {
     /**
       * Generates a JSONifiable object from the HTTP `response` object passed to the `createServer` callback of Node's HTTP server.
       */
-    @JSImport("pino-multi-stream", "stdSerializers.res")
-    @js.native
-    def res(res: ServerResponse): SerializedResponse = js.native
+    @scala.inline
+    def res(res: ServerResponse): SerializedResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("res")(res.asInstanceOf[js.Any]).asInstanceOf[SerializedResponse]
     @scala.inline
     def res_=(x: js.Function1[/* res */ ServerResponse, SerializedResponse]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("res")(x.asInstanceOf[js.Any])
     
@@ -174,9 +167,8 @@ object mod {
       * error object. Returns the new (or updated) error object.
       * @return A new error serializer.
       */
-    @JSImport("pino-multi-stream", "stdSerializers.wrapErrorSerializer")
-    @js.native
-    def wrapErrorSerializer(customSerializer: CustomErrorSerializer): js.Function1[/* err */ Error, Record[String, _]] = js.native
+    @scala.inline
+    def wrapErrorSerializer(customSerializer: CustomErrorSerializer): js.Function1[/* err */ Error, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapErrorSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* err */ Error, Record[String, js.Any]]]
     @scala.inline
     def wrapErrorSerializer_=(
       x: js.Function1[
@@ -205,9 +197,8 @@ object mod {
       * request object. Returns the new (or updated) request object.
       * @return A new error serializer.
       */
-    @JSImport("pino-multi-stream", "stdSerializers.wrapRequestSerializer")
-    @js.native
-    def wrapRequestSerializer(customSerializer: CustomRequestSerializer): js.Function1[/* req */ IncomingMessage, Record[String, _]] = js.native
+    @scala.inline
+    def wrapRequestSerializer(customSerializer: CustomRequestSerializer): js.Function1[/* req */ IncomingMessage, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRequestSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* req */ IncomingMessage, Record[String, js.Any]]]
     @scala.inline
     def wrapRequestSerializer_=(
       x: js.Function1[
@@ -236,9 +227,8 @@ object mod {
       * response object. Returns the new (or updated) response object.
       * @return A new error serializer.
       */
-    @JSImport("pino-multi-stream", "stdSerializers.wrapResponseSerializer")
-    @js.native
-    def wrapResponseSerializer(customSerializer: CustomResponseSerializer): js.Function1[/* res */ ServerResponse, Record[String, _]] = js.native
+    @scala.inline
+    def wrapResponseSerializer(customSerializer: CustomResponseSerializer): js.Function1[/* res */ ServerResponse, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapResponseSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* res */ ServerResponse, Record[String, js.Any]]]
     @scala.inline
     def wrapResponseSerializer_=(
       x: js.Function1[
@@ -252,11 +242,11 @@ object mod {
   
   type Logger = typings.pino.mod.Logger
   
-  @js.native
   trait LoggerOptions
-    extends typings.pino.mod.LoggerOptions {
+    extends StObject
+       with typings.pino.mod.LoggerOptions {
     
-    var streams: js.UndefOr[Streams] = js.native
+    var streams: js.UndefOr[Streams] = js.undefined
   }
   object LoggerOptions {
     
@@ -280,10 +270,9 @@ object mod {
     }
   }
   
-  @js.native
   trait MultiStreamOptions extends StObject {
     
-    var dedupe: js.UndefOr[Boolean] = js.native
+    var dedupe: js.UndefOr[Boolean] = js.undefined
   }
   object MultiStreamOptions {
     
@@ -305,18 +294,17 @@ object mod {
   }
   
   /* Inlined parent std.Pick<pino.pino.LoggerOptions, 'prettyPrint'> */
-  @js.native
   trait PrettyStreamOptions extends StObject {
     
-    var dest: js.UndefOr[DestinationStream | WritableStream] = js.native
+    var dest: js.UndefOr[DestinationStream | WritableStream] = js.undefined
     
     /**
       * Allows to optionally define which prettifier module to use
       */
     // TODO: use type definitions from 'pino-pretty' when available.
-    var prettifier: js.UndefOr[js.Any] = js.native
+    var prettifier: js.UndefOr[js.Any] = js.undefined
     
-    var prettyPrint: js.UndefOr[Boolean | PrettyOptions] = js.native
+    var prettyPrint: js.UndefOr[Boolean | PrettyOptions] = js.undefined
   }
   object PrettyStreamOptions {
     

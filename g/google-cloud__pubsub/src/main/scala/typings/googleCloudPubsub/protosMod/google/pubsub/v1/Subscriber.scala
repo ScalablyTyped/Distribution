@@ -22,7 +22,6 @@ import typings.protobufjs.mod.RPCImpl
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Subscriber */
@@ -37,8 +36,8 @@ class Subscriber protected () extends Service {
     */
   def this(rpcImpl: RPCImpl) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
-  def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+  def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
   
   /**
     * Calls Acknowledge.
@@ -250,6 +249,10 @@ class Subscriber protected () extends Service {
 }
 object Subscriber {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscriber")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates new Subscriber service using the specified rpc implementation.
     * @param rpcImpl RPC implementation
@@ -258,18 +261,14 @@ object Subscriber {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscriber.create")
-  @js.native
-  def create(rpcImpl: RPCImpl): Subscriber = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscriber.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): Subscriber = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscriber.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Subscriber = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscriber.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Subscriber = js.native
+  @scala.inline
+  def create(rpcImpl: RPCImpl): Subscriber = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[Subscriber]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Subscriber = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[Subscriber]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Subscriber = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Subscriber]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Subscriber = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Subscriber]
   
   /**
     * Callback as used by {@link google.pubsub.v1.Subscriber#acknowledge}.

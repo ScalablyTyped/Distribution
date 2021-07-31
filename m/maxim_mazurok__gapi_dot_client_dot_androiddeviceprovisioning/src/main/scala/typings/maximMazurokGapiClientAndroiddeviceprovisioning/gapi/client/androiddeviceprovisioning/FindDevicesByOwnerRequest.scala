@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindDevicesByOwnerRequest extends StObject {
   
   /** Required. The list of customer IDs to search for. */
-  var customerId: js.UndefOr[js.Array[String]] = js.native
+  var customerId: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. The maximum number of devices to show in a page of results. Must be between 1 and 100 inclusive. */
-  var limit: js.UndefOr[String] = js.native
+  var limit: js.UndefOr[String] = js.undefined
   
   /** A token specifying which result page to return. */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /** Required. The section type of the device's provisioning record. */
-  var sectionType: js.UndefOr[String] = js.native
+  var sectionType: js.UndefOr[String] = js.undefined
 }
 object FindDevicesByOwnerRequest {
   

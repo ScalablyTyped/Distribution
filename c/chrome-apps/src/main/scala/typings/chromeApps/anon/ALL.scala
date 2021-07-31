@@ -14,54 +14,39 @@ import typings.chromeApps.chromeAppsStrings.selection_
 import typings.chromeApps.chromeAppsStrings.video_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ALL extends StObject {
   
-  var ALL: all__ = js.native
+  var ALL: all__
   
-  var AUDIO: audio_ = js.native
+  var AUDIO: audio_
   
-  var BROWSER_ACTION: browser_action_ = js.native
+  var BROWSER_ACTION: browser_action_
   
-  var EDITABLE: editable_ = js.native
+  var EDITABLE: editable_
   
-  var FRAME: frame_ = js.native
+  var FRAME: frame_
   
-  var IMAGE: image_ = js.native
+  var IMAGE: image_
   
-  var LAUNCHER: launcher_ = js.native
+  var LAUNCHER: launcher_
   
-  var LINK: link_ = js.native
+  var LINK: link_
   
-  var PAGE: page_ = js.native
+  var PAGE: page_
   
-  var PAGE_ACTION: page_action_ = js.native
+  var PAGE_ACTION: page_action_
   
-  var SELECTION: selection_ = js.native
+  var SELECTION: selection_
   
-  var VIDEO: video_ = js.native
+  var VIDEO: video_
 }
 object ALL {
   
   @scala.inline
-  def apply(
-    ALL: all__,
-    AUDIO: audio_,
-    BROWSER_ACTION: browser_action_,
-    EDITABLE: editable_,
-    FRAME: frame_,
-    IMAGE: image_,
-    LAUNCHER: launcher_,
-    LINK: link_,
-    PAGE: page_,
-    PAGE_ACTION: page_action_,
-    SELECTION: selection_,
-    VIDEO: video_
-  ): ALL = {
-    val __obj = js.Dynamic.literal(ALL = ALL.asInstanceOf[js.Any], AUDIO = AUDIO.asInstanceOf[js.Any], BROWSER_ACTION = BROWSER_ACTION.asInstanceOf[js.Any], EDITABLE = EDITABLE.asInstanceOf[js.Any], FRAME = FRAME.asInstanceOf[js.Any], IMAGE = IMAGE.asInstanceOf[js.Any], LAUNCHER = LAUNCHER.asInstanceOf[js.Any], LINK = LINK.asInstanceOf[js.Any], PAGE = PAGE.asInstanceOf[js.Any], PAGE_ACTION = PAGE_ACTION.asInstanceOf[js.Any], SELECTION = SELECTION.asInstanceOf[js.Any], VIDEO = VIDEO.asInstanceOf[js.Any])
+  def apply(): ALL = {
+    val __obj = js.Dynamic.literal(ALL = "all", AUDIO = "audio", BROWSER_ACTION = "browser_action", EDITABLE = "editable", FRAME = "frame", IMAGE = "image", LAUNCHER = "launcher", LINK = "link", PAGE = "page", PAGE_ACTION = "page_action", SELECTION = "selection", VIDEO = "video")
     __obj.asInstanceOf[ALL]
   }
   

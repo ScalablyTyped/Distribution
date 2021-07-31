@@ -3,28 +3,28 @@ package typings.ssh2Streams.mod
 import typings.ssh2Streams.ssh2StreamsStrings.`direct-tcpip`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectTcpipChannelInfo extends ChannelOpenInfo {
+trait DirectTcpipChannelInfo
+  extends StObject
+     with ChannelOpenInfo {
   
-  var data: TcpipChannelData = js.native
+  var data: TcpipChannelData
   
-  var packetSize: Double = js.native
+  var packetSize: Double
   
-  var sender: Double = js.native
+  var sender: Double
   
-  var `type`: `direct-tcpip` = js.native
+  var `type`: `direct-tcpip`
   
-  var window: Double = js.native
+  var window: Double
 }
 object DirectTcpipChannelInfo {
   
   @scala.inline
-  def apply(data: TcpipChannelData, packetSize: Double, sender: Double, `type`: `direct-tcpip`, window: Double): DirectTcpipChannelInfo = {
+  def apply(data: TcpipChannelData, packetSize: Double, sender: Double, window: Double): DirectTcpipChannelInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("direct-tcpip")
     __obj.asInstanceOf[DirectTcpipChannelInfo]
   }
   

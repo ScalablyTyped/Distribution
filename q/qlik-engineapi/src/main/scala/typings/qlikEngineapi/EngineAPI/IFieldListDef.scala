@@ -2,49 +2,47 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the fields to show.
   */
-@js.native
 trait IFieldListDef extends StObject {
   
   /**
     * Shows the fields defined on the fly if set to true.
     */
-  var qShowDefinitionOnly: js.UndefOr[Boolean] = js.native
+  var qShowDefinitionOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shows the fields and derived fields if set to true.
     */
-  var qShowDerivedFields: js.UndefOr[Boolean] = js.native
+  var qShowDerivedFields: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shows the hidden fields if set to true.
     */
-  var qShowHidden: js.UndefOr[Boolean] = js.native
+  var qShowHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shows the Direct Discovery measure fields if set to true.
     */
-  var qShowImplicit: js.UndefOr[Boolean] = js.native
+  var qShowImplicit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show the semantic fields if set to true.
     */
-  var qShowSemantic: js.UndefOr[Boolean] = js.native
+  var qShowSemantic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shows the tables and fields present in the data model viewer if set to true.
     */
-  var qShowSrcTables: js.UndefOr[Boolean] = js.native
+  var qShowSrcTables: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shows the system tables if set to true.
     */
-  var qShowSystem: js.UndefOr[Boolean] = js.native
+  var qShowSystem: js.UndefOr[Boolean] = js.undefined
 }
 object IFieldListDef {
   

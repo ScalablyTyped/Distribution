@@ -2,13 +2,11 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Isauto extends StObject {
   
-  var is_auto: Boolean = js.native
+  var is_auto: Boolean
 }
 object Isauto {
   

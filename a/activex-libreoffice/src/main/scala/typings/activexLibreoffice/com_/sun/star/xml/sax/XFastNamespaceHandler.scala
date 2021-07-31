@@ -4,16 +4,16 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 5.3 */
-@js.native
-trait XFastNamespaceHandler extends XInterface {
+trait XFastNamespaceHandler
+  extends StObject
+     with XInterface {
   
-  def getNamespaceURI(NamespacePrefix: String): String = js.native
+  def getNamespaceURI(NamespacePrefix: String): String
   
-  def registerNamespace(NamespacePrefix: String, NamespaceURI: String): Unit = js.native
+  def registerNamespace(NamespacePrefix: String, NamespaceURI: String): Unit
 }
 object XFastNamespaceHandler {
   

@@ -5,20 +5,18 @@ import typings.minappEnv.minappEnvStrings.none
 import typings.minappEnv.minappEnvStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowToastOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ShowToastCompleteCallback] = js.native
+  var complete: js.UndefOr[ShowToastCompleteCallback] = js.undefined
   
   /** 提示的延迟时间 */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ShowToastFailCallback] = js.native
+  var fail: js.UndefOr[ShowToastFailCallback] = js.undefined
   
   /** 图标
     *
@@ -26,21 +24,21 @@ trait ShowToastOption extends StObject {
     * - 'success': 显示成功图标，此时 title 文本最多显示 7 个汉字长度;
     * - 'loading': 显示加载图标，此时 title 文本最多显示 7 个汉字长度;
     * - 'none': 不显示图标，此时 title 文本最多可显示两行，{% version('1.9.0') %}及以上版本支持; */
-  var icon: js.UndefOr[success | loading | none] = js.native
+  var icon: js.UndefOr[success | loading | none] = js.undefined
   
   /** 自定义图标的本地路径，image 的优先级高于 icon
     *
     * 最低基础库： `1.1.0` */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /** 是否显示透明蒙层，防止触摸穿透 */
-  var mask: js.UndefOr[Boolean] = js.native
+  var mask: js.UndefOr[Boolean] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[ShowToastSuccessCallback] = js.native
+  var success: js.UndefOr[ShowToastSuccessCallback] = js.undefined
   
   /** 提示的内容 */
-  var title: String = js.native
+  var title: String
 }
 object ShowToastOption {
   

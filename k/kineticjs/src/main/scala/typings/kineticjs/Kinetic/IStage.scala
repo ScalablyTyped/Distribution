@@ -4,11 +4,12 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStage extends IContainer {
+trait IStage
+  extends StObject
+     with IContainer {
   
   def add(layer: ILayer): js.Any = js.native
   
@@ -37,7 +38,7 @@ trait IStage extends IContainer {
   
   def reset(): js.Any = js.native
   
-  def toImage(config: js.Any, callback: js.Function0[_]): js.Any = js.native
+  def toImage(config: js.Any, callback: js.Function0[js.Any]): js.Any = js.native
   
   def toJSON(): js.Any = js.native
 }

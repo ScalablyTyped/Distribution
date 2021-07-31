@@ -2,15 +2,13 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertySelector extends StObject {
   
-  var properties: js.Array[String] = js.native
+  var properties: js.Array[String]
   
-  var selectorType: PropertySelectorType = js.native
+  var selectorType: PropertySelectorType
 }
 object PropertySelector {
   

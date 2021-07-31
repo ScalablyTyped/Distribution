@@ -2,23 +2,21 @@ package typings.sendcloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailListUpdateOptions extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var api_key: String = js.native
+  var api_key: String
   
-  var api_user: String = js.native
+  var api_user: String
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var toAddress: js.UndefOr[String] = js.native
+  var toAddress: js.UndefOr[String] = js.undefined
 }
 object EmailListUpdateOptions {
   

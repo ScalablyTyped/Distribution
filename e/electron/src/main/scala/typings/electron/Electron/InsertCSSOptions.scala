@@ -2,17 +2,15 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertCSSOptions extends StObject {
   
   /**
     * Can be either 'user' or 'author'; Specifying 'user' enables you to prevent
     * websites from overriding the CSS you insert. Default is 'author'.
     */
-  var cssOrigin: js.UndefOr[String] = js.native
+  var cssOrigin: js.UndefOr[String] = js.undefined
 }
 object InsertCSSOptions {
   

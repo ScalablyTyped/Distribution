@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,32 +17,78 @@ object mod extends Shortcut {
   
   type CallbackAsync = js.Function1[/* obj */ CallbackAsyncValue, js.Promise[Unit]]
   
-  @js.native
   trait CallbackAsyncValue extends StObject {
     
-    var before: String = js.native
+    var before: String
     
-    var fragment: Double = js.native
+    var fragment: Double
     
-    var line: String = js.native
+    var line: String
     
-    def reply(value: js.Promise[Choices]): Unit = js.native
+    def reply(value: js.Promise[Choices]): Unit
     @JSName("reply")
-    var reply_Original: ReplyFn[js.Promise[Choices]] = js.native
+    var reply_Original: ReplyFn[js.Promise[Choices]]
+  }
+  object CallbackAsyncValue {
+    
+    @scala.inline
+    def apply(before: String, fragment: Double, line: String, reply: js.Promise[Choices] => Unit): CallbackAsyncValue = {
+      val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], reply = js.Any.fromFunction1(reply))
+      __obj.asInstanceOf[CallbackAsyncValue]
+    }
+    
+    @scala.inline
+    implicit class CallbackAsyncValueMutableBuilder[Self <: CallbackAsyncValue] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFragment(value: Double): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReply(value: js.Promise[Choices] => Unit): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait CallbackValue extends StObject {
     
-    var before: String = js.native
+    var before: String
     
-    var fragment: Double = js.native
+    var fragment: Double
     
-    var line: String = js.native
+    var line: String
     
-    def reply(value: Choices): Unit = js.native
+    def reply(value: Choices): Unit
     @JSName("reply")
-    var reply_Original: ReplyFn[Choices] = js.native
+    var reply_Original: ReplyFn[Choices]
+  }
+  object CallbackValue {
+    
+    @scala.inline
+    def apply(before: String, fragment: Double, line: String, reply: Choices => Unit): CallbackValue = {
+      val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], reply = js.Any.fromFunction1(reply))
+      __obj.asInstanceOf[CallbackValue]
+    }
+    
+    @scala.inline
+    implicit class CallbackValueMutableBuilder[Self <: CallbackValue] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFragment(value: Double): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReply(value: Choices => Unit): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
+    }
   }
   
   type Choices = js.Array[String]

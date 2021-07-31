@@ -2,21 +2,21 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FunctionDeclaration extends AST {
+trait FunctionDeclaration
+  extends StObject
+     with AST {
   
-  var block: Block = js.native
+  var block: Block
   
-  var callSignature: CallSignature = js.native
+  var callSignature: CallSignature
   
-  var identifier: Identifier = js.native
+  var identifier: Identifier
   
-  var modifiers: js.Array[PullElementFlags] = js.native
+  var modifiers: js.Array[PullElementFlags]
   
-  def structuralEquals(ast: FunctionDeclaration, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: FunctionDeclaration, includingPosition: Boolean): Boolean
 }
 object FunctionDeclaration {
   

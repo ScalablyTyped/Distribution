@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains details of a PIN lock state change notification. */
-@js.native
 trait MobileBroadbandPinLockStateChange extends StObject {
   
   /** Gets the device identifier associated with a PIN lock state change. */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** Gets a value representing the new PIN lock state after a PIN lock state change. */
-  var pinLockState: MobileBroadbandPinLockState = js.native
+  var pinLockState: MobileBroadbandPinLockState
   
   /** Gets a value representing the type of PIN involved in a PIN lock state change. */
-  var pinType: MobileBroadbandPinType = js.native
+  var pinType: MobileBroadbandPinType
 }
 object MobileBroadbandPinLockStateChange {
   

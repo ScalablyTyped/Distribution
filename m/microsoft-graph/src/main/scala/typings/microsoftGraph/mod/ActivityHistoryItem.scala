@@ -2,47 +2,47 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ActivityHistoryItem extends Entity {
+trait ActivityHistoryItem
+  extends StObject
+     with Entity {
   
   /**
     * Optional. The duration of active user engagement. if not supplied, this is calculated from the startedDateTime and
     * lastActiveDateTime.
     */
-  var activeDurationSeconds: js.UndefOr[NullableOption[Double]] = js.native
+  var activeDurationSeconds: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Optional. NavigationProperty/Containment; navigation property to the associated activity.
-  var activity: js.UndefOr[UserActivity] = js.native
+  var activity: js.UndefOr[UserActivity] = js.undefined
   
   // Set by the server. DateTime in UTC when the object was created on the server.
-  var createdDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Optional. UTC DateTime when the historyItem will undergo hard-delete. Can be set by the client.
-  var expirationDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var expirationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Optional. UTC DateTime when the historyItem (activity session) was last understood as active or finished - if null,
     * historyItem status should be Ongoing.
     */
-  var lastActiveDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastActiveDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Set by the server. DateTime in UTC when the object was modified on the server.
-  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Required. UTC DateTime when the historyItem (activity session) was started. Required for timeline history.
-  var startedDateTime: js.UndefOr[String] = js.native
+  var startedDateTime: js.UndefOr[String] = js.undefined
   
   // Set by the server. A status code used to identify valid objects. Values: active, updated, deleted, ignored.
-  var status: js.UndefOr[NullableOption[Status]] = js.native
+  var status: js.UndefOr[NullableOption[Status]] = js.undefined
   
   /**
     * Optional. The timezone in which the user's device used to generate the activity was located at activity creation time.
     * Values supplied as Olson IDs in order to support cross-platform representation.
     */
-  var userTimezone: js.UndefOr[NullableOption[String]] = js.native
+  var userTimezone: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ActivityHistoryItem {
   

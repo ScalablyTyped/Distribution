@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClassedColorSliderViewModelBreaks extends Object {
+trait ClassedColorSliderViewModelBreaks
+  extends StObject
+     with Object {
   
   /**
     * Features with values within the provided `min` and `max` will be rendered with this color.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider-ClassedColorSliderViewModel.html#breaks)
     */
-  var color: Color_ = js.native
+  var color: Color_
   
   /**
     * The max value of the break.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider-ClassedColorSliderViewModel.html#breaks)
     */
-  var max: Double = js.native
+  var max: Double
   
   /**
     * The min value of the break.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider-ClassedColorSliderViewModel.html#breaks)
     */
-  var min: Double = js.native
+  var min: Double
 }
 object ClassedColorSliderViewModelBreaks {
   

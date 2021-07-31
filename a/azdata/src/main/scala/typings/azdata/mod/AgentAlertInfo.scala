@@ -2,57 +2,55 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentAlertInfo extends StObject {
   
-  var alertType: AlertType = js.native
+  var alertType: AlertType
   
-  var categoryName: String = js.native
+  var categoryName: String
   
-  var countResetDate: String = js.native
+  var countResetDate: String
   
-  var databaseName: String = js.native
+  var databaseName: String
   
-  var delayBetweenResponses: Double = js.native
+  var delayBetweenResponses: Double
   
-  var eventDescriptionKeyword: String = js.native
+  var eventDescriptionKeyword: String
   
-  var eventSource: String = js.native
+  var eventSource: String
   
-  var hasNotification: Double = js.native
+  var hasNotification: Double
   
-  var id: Double = js.native
+  var id: Double
   
-  var includeEventDescription: NotifyMethods = js.native
+  var includeEventDescription: NotifyMethods
   
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
-  var jobId: String = js.native
+  var jobId: String
   
-  var jobName: String = js.native
+  var jobName: String
   
-  var lastOccurrenceDate: String = js.native
+  var lastOccurrenceDate: String
   
-  var lastResponseDate: String = js.native
+  var lastResponseDate: String
   
-  var messageId: Double = js.native
+  var messageId: Double
   
-  var name: String = js.native
+  var name: String
   
-  var notificationMessage: String = js.native
+  var notificationMessage: String
   
-  var occurrenceCount: Double = js.native
+  var occurrenceCount: Double
   
-  var performanceCondition: String = js.native
+  var performanceCondition: String
   
-  var severity: Double = js.native
+  var severity: Double
   
-  var wmiEventNamespace: String = js.native
+  var wmiEventNamespace: String
   
-  var wmiEventQuery: String = js.native
+  var wmiEventQuery: String
 }
 object AgentAlertInfo {
   

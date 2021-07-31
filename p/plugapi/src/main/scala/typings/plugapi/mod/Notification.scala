@@ -2,19 +2,17 @@ package typings.plugapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notification extends StObject {
   
-  var action: String = js.native
+  var action: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var value: String = js.native
+  var value: String
 }
 object Notification {
   

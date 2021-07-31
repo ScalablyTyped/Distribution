@@ -4,15 +4,13 @@ import typings.node.fsMod.Stats
 import typings.node.httpMod.OutgoingHttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerStreamFileResponseOptions extends StObject {
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   var statCheck: js.UndefOr[
     js.Function3[
@@ -21,9 +19,9 @@ trait ServerStreamFileResponseOptions extends StObject {
       /* statOptions */ StatOptions, 
       Unit | Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var waitForTrailers: js.UndefOr[Boolean] = js.native
+  var waitForTrailers: js.UndefOr[Boolean] = js.undefined
 }
 object ServerStreamFileResponseOptions {
   

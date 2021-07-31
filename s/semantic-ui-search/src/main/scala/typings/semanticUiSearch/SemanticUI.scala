@@ -145,7 +145,6 @@ import typings.semanticUiSearch.semanticUiSearchStrings.verbose
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -243,83 +242,91 @@ object SemanticUI {
       */
     def apply(behavior: query): JQuery = js.native
     def apply(behavior: query, callback: js.Function0[Unit]): JQuery = js.native
-    def apply(behavior: setting, name: `type`, value: js.UndefOr[scala.Nothing]): String = js.native
     def apply(behavior: setting, name: `type`, value: String): JQuery = js.native
+    def apply(behavior: setting, name: `type`, value: Unit): String = js.native
+    def apply(behavior: setting, name: apiSettings, value: Unit): ApiSettings = js.native
     def apply(behavior: setting, name: apiSettings, value: ApiSettings): JQuery = js.native
-    def apply(behavior: setting, name: cache, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: cache, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: cache, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
     def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: easing, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: duration, value: Unit): Double = js.native
     def apply(behavior: setting, name: easing, value: String): JQuery = js.native
+    def apply(behavior: setting, name: easing, value: Unit): String = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
     def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: fields, value: js.UndefOr[scala.Nothing]): FieldsSettings = js.native
-    def apply(behavior: setting, name: hideDelay, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: fields, value: Unit): FieldsSettings = js.native
+    def apply(behavior: setting, name: fields, value: FieldsSettings): JQuery = js.native
     def apply(behavior: setting, name: hideDelay, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: maxResults, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: hideDelay, value: Unit): Double = js.native
     def apply(behavior: setting, name: maxResults, value: Double): JQuery = js.native
+    def apply(behavior: setting, name: maxResults, value: Unit): Double = js.native
+    def apply(behavior: setting, name: metadata, value: Unit): MetadataSettings = js.native
     def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-    def apply(behavior: setting, name: minCharacters, value: js.UndefOr[scala.Nothing]): Double = js.native
     def apply(behavior: setting, name: minCharacters, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: minCharacters, value: Unit): Double = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: onResultsAdd, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit] = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(
       behavior: setting,
       name: onResultsAdd,
       value: js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onResultsClose, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onResultsAdd, value: Unit): js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit] = js.native
     def apply(behavior: setting, name: onResultsClose, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onResultsOpen, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onResultsClose, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onResultsOpen, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onResults, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* response */ js.Any, Unit] = js.native
+    def apply(behavior: setting, name: onResultsOpen, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(
       behavior: setting,
       name: onResults,
       value: js.ThisFunction1[/* this */ JQuery, /* response */ js.Any, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onSearchQuery, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit] = js.native
+    def apply(behavior: setting, name: onResults, value: Unit): js.ThisFunction1[/* this */ JQuery, /* response */ js.Any, Unit] = js.native
     def apply(
       behavior: setting,
       name: onSearchQuery,
       value: js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onSelect, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[/* this */ JQuery, /* result */ js.Any, /* response */ js.Any, `false` | Unit] = js.native
+    def apply(behavior: setting, name: onSearchQuery, value: Unit): js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit] = js.native
     def apply(
       behavior: setting,
       name: onSelect,
       value: js.ThisFunction2[/* this */ JQuery, /* result */ js.Any, /* response */ js.Any, `false` | Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: onSelect, value: Unit): js.ThisFunction2[/* this */ JQuery, /* result */ js.Any, /* response */ js.Any, `false` | Unit] = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: regExp, value: js.UndefOr[scala.Nothing]): RegExpSettings = js.native
-    def apply(behavior: setting, name: searchDelay, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: regExp, value: Unit): RegExpSettings = js.native
+    def apply(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
     def apply(behavior: setting, name: searchDelay, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: searchFields, value: js.UndefOr[scala.Nothing]): js.Array[String] = js.native
+    def apply(behavior: setting, name: searchDelay, value: Unit): Double = js.native
     def apply(behavior: setting, name: searchFields, value: js.Array[String]): JQuery = js.native
-    def apply(behavior: setting, name: searchFullText, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: searchFields, value: Unit): js.Array[String] = js.native
     def apply(behavior: setting, name: searchFullText, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: selectFirstResult, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: searchFullText, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: selectFirstResult, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-    def apply(behavior: setting, name: showNoResults, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: selectFirstResult, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
+    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
     def apply(behavior: setting, name: showNoResults, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: showNoResults, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: source, value: js.UndefOr[scala.Nothing]): `false` | js.Any = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: source, value: js.Any): JQuery = js.native
+    def apply(behavior: setting, name: source, value: Unit): `false` | js.Any = js.native
     def apply(behavior: setting, name: source, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: templates, value: js.UndefOr[scala.Nothing]): TemplatesSettings = js.native
-    def apply(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: templates, value: Unit): TemplatesSettings = js.native
+    def apply(behavior: setting, name: templates, value: TemplatesSettings): JQuery = js.native
     def apply(behavior: setting, name: transition, value: String): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: transition, value: Unit): String = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: SearchSettings): JQuery = js.native
     def apply(settings: SearchSettings): JQuery = js.native
     
@@ -329,33 +336,32 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'active'
           */
-        var active: String = js.native
+        var active: String
         
         /**
           * @default 'empty'
           */
-        var empty: String = js.native
+        var empty: String
         
         /**
           * @default 'focus'
           */
-        var focus: String = js.native
+        var focus: String
         
         /**
           * @default 'loading'
           */
-        var loading: String = js.native
+        var loading: String
         
         /**
           * @default 'down'
           */
-        var pressed: String = js.native
+        var pressed: String
       }
       object Impl {
         
@@ -385,49 +391,48 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplactive | PickImplempty | PickImplfocus | PickImplloading | PickImplpressed) with PartialPickImplkeyofImplActive
+      type Param = (PickImplactive | PickImplempty | PickImplfocus | PickImplloading | PickImplpressed) & PartialPickImplkeyofImplActive
     }
     type ClassNameSettings = Param
     
     object ErrorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'Error in debug logging, exiting.'
           */
-        var logging: String = js.native
+        var logging: String
         
         /**
           * @default 'Results must be an array to use maxResults setting'
           */
-        var maxResults: String = js.native
+        var maxResults: String
         
         /**
           * @default 'The method you called is not defined.'
           */
-        var method: String = js.native
+        var method: String
         
         /**
           * @default 'Your search returned no results'
           */
-        var noResults: String = js.native
+        var noResults: String
         
         /**
           * @default 'A valid template name was not specified.'
           */
-        var noTemplate: String = js.native
+        var noTemplate: String
         
         /**
           * @default 'There was an issue with querying the server.'
           */
-        var serverError: String = js.native
+        var serverError: String
         
         /**
           * @default 'Cannot search. No source used, and Semantic API module was not included'
           */
-        var source: String = js.native
+        var source: String
       }
       object Impl {
         
@@ -471,13 +476,12 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplsourceSource | PickImplnoResults | PickImpllogging | PickImplnoTemplate | PickImplserverError | PickImplmaxResultsMaxResults | PickImplmethod) with PartialPickImplkeyofImplLogging
+      type Param = (PickImplsourceSource | PickImplnoResults | PickImpllogging | PickImplnoTemplate | PickImplserverError | PickImplmaxResultsMaxResults | PickImplmethod) & PartialPickImplkeyofImplLogging
     }
     type ErrorSettings = typings.semanticUiSearch.SemanticUI.Search.ErrorSettings.Param
     
     object FieldsSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
@@ -485,77 +489,77 @@ object SemanticUI {
           *
           * @default 'action'
           */
-        var action: String = js.native
+        var action: String
         
         /**
           * "view more" text
           *
           * @default 'text'
           */
-        var actionText: String = js.native
+        var actionText: String
         
         /**
           * "view more" url
           *
           * @default 'url'
           */
-        var actionURL: String = js.native
+        var actionURL: String
         
         /**
           * array of categories (category view)
           *
           * @default 'results'
           */
-        var categories: String = js.native
+        var categories: String
         
         /**
           * name of category (category view)
           *
           * @default 'name'
           */
-        var categoryName: String = js.native
+        var categoryName: String
         
         /**
           * array of results (category view)
           *
           * @default 'results'
           */
-        var categoryResults: String = js.native
+        var categoryResults: String
         
         /**
           * result description
           *
           * @default 'description'
           */
-        var description: String = js.native
+        var description: String
         
         /**
           * result image
           *
           * @default 'image'
           */
-        var image: String = js.native
+        var image: String
         
         /**
           * result price
           *
           * @default 'price'
           */
-        var price: String = js.native
+        var price: String
         
         /**
           * array of results (standard)
           *
           * @default 'results'
           */
-        var results: String = js.native
+        var results: String
         
         /**
           * result title
           *
           * @default 'title'
           */
-        var title: String = js.native
+        var title: String
       }
       object Impl {
         
@@ -615,24 +619,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplcategories | PickImplcategoryName | PickImplcategoryResults | PickImpldescription | PickImplimage | PickImplprice | PickImplresults | PickImpltitle | PickImplaction | PickImplactionText | PickImplactionURL) with PartialPickImplkeyofImplAction
+      type Param = (PickImplcategories | PickImplcategoryName | PickImplcategoryResults | PickImpldescription | PickImplimage | PickImplprice | PickImplresults | PickImpltitle | PickImplaction | PickImplactionText | PickImplactionURL) & PartialPickImplkeyofImplAction
     }
     type FieldsSettings = typings.semanticUiSearch.SemanticUI.Search.FieldsSettings.Param
     
     object MetadataSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'cache'
           */
-        var cache: String = js.native
+        var cache: String
         
         /**
           * @default 'results'
           */
-        var results: String = js.native
+        var results: String
       }
       object Impl {
         
@@ -653,24 +656,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplcacheCache | PickImplresults) with PartialPickImplkeyofImplCache
+      type Param = (PickImplcacheCache | PickImplresults) & PartialPickImplkeyofImplCache
     }
     type MetadataSettings = typings.semanticUiSearch.SemanticUI.Search.MetadataSettings.Param
     
     object RegExpSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default '(?:\s|^)'
           */
-        var beginsWith: String = js.native
+        var beginsWith: String
         
         /**
           * @default /[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g
           */
-        var escape: RegExp = js.native
+        var escape: RegExp
       }
       object Impl {
         
@@ -691,39 +693,38 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplescapeEscape | PickImplbeginsWith) with PartialPickImplkeyofImplBeginsWith
+      type Param = (PickImplescapeEscape | PickImplbeginsWith) & PartialPickImplkeyofImplBeginsWith
     }
     type RegExpSettings = typings.semanticUiSearch.SemanticUI.Search.RegExpSettings.Param
     
     object SelectorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default '.category'
           */
-        var category: String = js.native
+        var category: String
         
         /**
           * @default '.prompt'
           */
-        var prompt: String = js.native
+        var prompt: String
         
         /**
           * @default '.result'
           */
-        var result: String = js.native
+        var result: String
         
         /**
           * @default '.results'
           */
-        var results: String = js.native
+        var results: String
         
         /**
           * @default '.search.button'
           */
-        var searchButton: String = js.native
+        var searchButton: String
       }
       object Impl {
         
@@ -753,22 +754,21 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplprompt | PickImplsearchButton | PickImplresults | PickImplcategoryCategory | PickImplresult) with PartialPickImplkeyofImplPrompt
+      type Param = (PickImplprompt | PickImplsearchButton | PickImplresults | PickImplcategoryCategory | PickImplresult) & PartialPickImplkeyofImplPrompt
     }
     type SelectorSettings = typings.semanticUiSearch.SemanticUI.Search.SelectorSettings.Param
     
     object TemplatesSettings {
       
-      @js.native
       trait Impl extends StObject {
         
-        def category(response: js.Any): String = js.native
+        def category(response: js.Any): String
         
-        def escape(string: String): String = js.native
+        def escape(string: String): String
         
-        def message(message: String, `type`: String): String = js.native
+        def message(message: String, `type`: String): String
         
-        def standard(response: js.Any): String = js.native
+        def standard(response: js.Any): String
       }
       object Impl {
         
@@ -800,14 +800,13 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplescape | PickImplmessage | PickImplcategory | PickImplstandard) with PartialPickImplkeyofImplCategory
+      type Param = (PickImplescape | PickImplmessage | PickImplcategory | PickImplstandard) & PartialPickImplkeyofImplCategory
     }
     type TemplatesSettings = typings.semanticUiSearch.SemanticUI.Search.TemplatesSettings.Param
   }
   
   object SearchSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       // region Behavior
@@ -816,80 +815,80 @@ object SemanticUI {
         *
         * @see {@link http://semantic-ui.com/behaviors/api.html#/usage}
         */
-      var apiSettings: ApiSettings = js.native
+      var apiSettings: ApiSettings
       
       /**
         * Caches results locally to avoid requerying server
         *
         * @default true
         */
-      var cache: Boolean = js.native
+      var cache: Boolean
       
       /**
         * Class names used to determine element state
         */
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       /**
         * Duration of animation events
         *
         * @default 300
         */
-      var duration: Double = js.native
+      var duration: Double
       
       /**
         * Easing equation when using fallback Javascript animation
         *
         * @default 'easeOutExpo'
         */
-      var easing: String = js.native
+      var easing: String
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * List mapping display content to JSON property, either with API or source.
         */
-      var fields: FieldsSettings = js.native
+      var fields: FieldsSettings
       
       /**
         * Delay before hiding results after search blur
         *
         * @default 0
         */
-      var hideDelay: Double = js.native
+      var hideDelay: Double
       
       /**
         * Maximum results to display when using local and simple search, maximum category count for category search
         *
         * @default 7
         */
-      var maxResults: Double = js.native
+      var maxResults: Double
       
       /**
         * HTML5 metadata attributes used internally
         */
-      var metadata: MetadataSettings = js.native
+      var metadata: MetadataSettings
       
       /**
         * Minimum characters to query for results
         *
         * @default 1
         */
-      var minCharacters: Double = js.native
+      var minCharacters: Double
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -897,32 +896,32 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       /**
         * Callback on server response
         */
-      def onResults(response: js.Any): Unit = js.native
+      def onResults(response: js.Any): Unit
       
       /**
         * Callback after processing element template to add HTML to results. Function should return false to prevent default actions.
         */
-      def onResultsAdd(html: String): `false` | Unit = js.native
+      def onResultsAdd(html: String): `false` | Unit
       
       /**
         * Callback when results are closed
         */
-      def onResultsClose(): Unit = js.native
+      def onResultsClose(): Unit
       
       /**
         * Callback when results are opened
         */
-      def onResultsOpen(): Unit = js.native
+      def onResultsOpen(): Unit
       
       /**
         * Callback on search query
         */
-      def onSearchQuery(query: String): Unit = js.native
+      def onSearchQuery(query: String): Unit
       
       // endregion
       // region Callbacks
@@ -931,73 +930,73 @@ object SemanticUI {
         * The first parameter includes the filtered response results for that element.
         * The function should return false to prevent default action (closing search results and selecting value).
         */
-      def onSelect(result: js.Any, response: js.Any): `false` | Unit = js.native
+      def onSelect(result: js.Any, response: js.Any): `false` | Unit
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       // endregion
       // region DOM Settings
       /**
         * Regular expressions used for matching
         */
-      var regExp: RegExpSettings = js.native
+      var regExp: RegExpSettings
       
       /**
         * Delay before querying results on inputchange
         *
         * @default 100
         */
-      var searchDelay: Double = js.native
+      var searchDelay: Double
       
       /**
         * Specify object properties inside local source object which will be searched
         */
-      var searchFields: js.Array[String] = js.native
+      var searchFields: js.Array[String]
       
       /**
         * Return local results that match anywhere inside your content
         *
         * @default true
         */
-      var searchFullText: Boolean = js.native
+      var searchFullText: Boolean
       
       /**
         * Whether the search should automatically select the first search result after searching
         *
         * @default false
         */
-      var selectFirstResult: Boolean = js.native
+      var selectFirstResult: Boolean
       
       /**
         * Selectors used to find parts of a module
         */
-      var selector: SelectorSettings = js.native
+      var selector: SelectorSettings
       
       /**
         * Whether a "no results" message should be shown if no results are found. (These messages can be modified using the template object specified below)
         *
         * @default false
         */
-      var showNoResults: Boolean = js.native
+      var showNoResults: Boolean
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       /**
         * Specify a Javascript object which will be searched locally
         *
         * @default false
         */
-      var source: `false` | js.Any = js.native
+      var source: `false` | js.Any
       
       // endregion
       // region Templates
-      var templates: TemplatesSettings = js.native
+      var templates: TemplatesSettings
       
       /**
         * Named transition to use when animating menu in and out. Fade and slide down are available without including ui transitions
@@ -1005,14 +1004,14 @@ object SemanticUI {
         * @default 'fade'
         * @see {@link http://semantic-ui.com/modules/transition.html}
         */
-      var transition: String = js.native
+      var transition: String
       
-      var `type`: String = js.native
+      var `type`: String
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -1168,7 +1167,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplapiSettings | PickImpltype | PickImplminCharacters | PickImpltransition | PickImplduration | PickImplmaxResults | PickImplcache | PickImplsource | PickImplselectFirstResult | PickImplshowNoResults | PickImplsearchFullText | PickImplfields | PickImplsearchFields | PickImplhideDelay | PickImplsearchDelay | PickImpleasing | PickImplonSelect | PickImplonResultsAdd | PickImplonSearchQuery | PickImplonResults | PickImplonResultsOpen | PickImplonResultsClose | PickImpltemplates | PickImplregExp | PickImplselector | PickImplmetadata | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplapiSettings | PickImpltype | PickImplminCharacters | PickImpltransition | PickImplduration | PickImplmaxResults | PickImplcache | PickImplsource | PickImplselectFirstResult | PickImplshowNoResults | PickImplsearchFullText | PickImplfields | PickImplsearchFields | PickImplhideDelay | PickImplsearchDelay | PickImpleasing | PickImplonSelect | PickImplonResultsAdd | PickImplonSearchQuery | PickImplonResults | PickImplonResultsOpen | PickImplonResultsClose | PickImpltemplates | PickImplregExp | PickImplselector | PickImplmetadata | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/search.html#/settings}

@@ -2,21 +2,19 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSchemaCreationStatusResponse extends StObject {
   
   /**
     * Detailed information about the status of the schema creation operation.
     */
-  var details: js.UndefOr[String] = js.native
+  var details: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the schema (PROCESSING, FAILED, SUCCESS, or NOT_APPLICABLE). When the schema is in the ACTIVE state, you can add data.
     */
-  var status: js.UndefOr[SchemaStatus] = js.native
+  var status: js.UndefOr[SchemaStatus] = js.undefined
 }
 object GetSchemaCreationStatusResponse {
   

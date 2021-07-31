@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutLifecycleEventHookExecutionStatusOutput extends StObject {
   
   /**
     * The execution ID of the lifecycle event hook. A hook is specified in the hooks section of the deployment's AppSpec file.
     */
-  var lifecycleEventHookExecutionId: js.UndefOr[LifecycleEventHookExecutionId] = js.native
+  var lifecycleEventHookExecutionId: js.UndefOr[LifecycleEventHookExecutionId] = js.undefined
 }
 object PutLifecycleEventHookExecutionStatusOutput {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetTaskStatusInput extends StObject {
   
   /**
     * If an error occurred during the task, this value specifies the error code. This value is set on the physical attempt object. It is used to display error information to the user. It should not start with string "Service_" which is reserved by the system.
     */
-  var errorId: js.UndefOr[String] = js.native
+  var errorId: js.UndefOr[String] = js.undefined
   
   /**
     * If an error occurred during the task, this value specifies a text description of the error. This value is set on the physical attempt object. It is used to display error information to the user. The web service does not parse this value.
     */
-  var errorMessage: js.UndefOr[typings.awsSdk.datapipelineMod.errorMessage] = js.native
+  var errorMessage: js.UndefOr[typings.awsSdk.datapipelineMod.errorMessage] = js.undefined
   
   /**
     * If an error occurred during the task, this value specifies the stack trace associated with the error. This value is set on the physical attempt object. It is used to display error information to the user. The web service does not parse this value.
     */
-  var errorStackTrace: js.UndefOr[String] = js.native
+  var errorStackTrace: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the task assigned to the task runner. This value is provided in the response for PollForTask.
     */
-  var taskId: typings.awsSdk.datapipelineMod.taskId = js.native
+  var taskId: typings.awsSdk.datapipelineMod.taskId
   
   /**
     * If FINISHED, the task successfully completed. If FAILED, the task ended unsuccessfully. Preconditions use false.
     */
-  var taskStatus: TaskStatus = js.native
+  var taskStatus: TaskStatus
 }
 object SetTaskStatusInput {
   

@@ -3,21 +3,19 @@ package typings.depcheck
 import typings.depcheck.mod.PackageDependencies
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dependencies extends StObject {
     
-    var dependencies: js.UndefOr[PackageDependencies] = js.native
+    var dependencies: js.UndefOr[PackageDependencies] = js.undefined
     
-    var devDependencies: js.UndefOr[PackageDependencies] = js.native
+    var devDependencies: js.UndefOr[PackageDependencies] = js.undefined
     
-    var optionalDependencies: js.UndefOr[PackageDependencies] = js.native
+    var optionalDependencies: js.UndefOr[PackageDependencies] = js.undefined
     
-    var peerDependencies: js.UndefOr[PackageDependencies] = js.native
+    var peerDependencies: js.UndefOr[PackageDependencies] = js.undefined
   }
   object Dependencies {
     

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsAccessKey extends StObject {
   
   /** Required. AWS access key ID. */
-  var accessKeyId: js.UndefOr[String] = js.native
+  var accessKeyId: js.UndefOr[String] = js.undefined
   
   /** Required. AWS secret access key. This field is not returned in RPC responses. */
-  var secretAccessKey: js.UndefOr[String] = js.native
+  var secretAccessKey: js.UndefOr[String] = js.undefined
 }
 object AwsAccessKey {
   

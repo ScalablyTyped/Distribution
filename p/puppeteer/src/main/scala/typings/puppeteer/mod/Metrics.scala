@@ -2,50 +2,48 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metrics extends StObject {
   
   /** Number of documents in the page. */
-  var Documents: Double = js.native
+  var Documents: Double
   
   /** Number of frames in the page. */
-  var Frames: Double = js.native
+  var Frames: Double
   
   /** Number of events in the page. */
-  var JSEventListeners: Double = js.native
+  var JSEventListeners: Double
   
   /** Total JavaScript heap size. */
-  var JSHeapTotalSize: Double = js.native
+  var JSHeapTotalSize: Double
   
   /** Used JavaScript heap size. */
-  var JSHeapUsedSize: Double = js.native
+  var JSHeapUsedSize: Double
   
   /** Total number of full or partial page layout. */
-  var LayoutCount: Double = js.native
+  var LayoutCount: Double
   
   /** Combined durations of all page layouts. */
-  var LayoutDuration: Double = js.native
+  var LayoutDuration: Double
   
   /** Number of DOM nodes in the page. */
-  var Nodes: Double = js.native
+  var Nodes: Double
   
   /** Total number of page style recalculations. */
-  var RecalcStyleCount: Double = js.native
+  var RecalcStyleCount: Double
   
   /** Combined duration of all page style recalculations. */
-  var RecalcStyleDuration: Double = js.native
+  var RecalcStyleDuration: Double
   
   /** Combined duration of JavaScript execution. */
-  var ScriptDuration: Double = js.native
+  var ScriptDuration: Double
   
   /** Combined duration of all tasks performed by the browser. */
-  var TaskDuration: Double = js.native
+  var TaskDuration: Double
   
   /** The timestamp when the metrics sample was taken. */
-  var Timestamp: Double = js.native
+  var Timestamp: Double
 }
 object Metrics {
   

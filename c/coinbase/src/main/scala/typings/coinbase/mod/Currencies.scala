@@ -3,13 +3,11 @@ package typings.coinbase.mod
 import typings.coinbase.anon.Minsize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Currencies extends StObject {
   
-  var data: js.Array[Minsize] = js.native
+  var data: js.Array[Minsize]
 }
 object Currencies {
   

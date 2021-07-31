@@ -4,7 +4,6 @@ import typings.openseadragon.anon.Cutoff
 import typings.openseadragon.anon.MaxImageCacheCount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "TileCache")

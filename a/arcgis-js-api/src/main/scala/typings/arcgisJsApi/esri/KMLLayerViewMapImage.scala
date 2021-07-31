@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KMLLayerViewMapImage extends Object {
+trait KMLLayerViewMapImage
+  extends StObject
+     with Object {
   
   /**
     * The [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of the map image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#MapImage)
     */
-  var Extent: typings.arcgisJsApi.esri.Extent = js.native
+  var Extent: typings.arcgisJsApi.esri.Extent
   
   /**
     * URL to the map image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#MapImage)
     */
-  var href: String = js.native
+  var href: String
   
   /**
     * Map image id.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#MapImage)
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Rotation of the map image about its center, in degrees.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#MapImage)
     */
-  var rotation: Double = js.native
+  var rotation: Double
 }
 object KMLLayerViewMapImage {
   

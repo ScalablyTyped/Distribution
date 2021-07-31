@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -117,7 +116,7 @@ trait CodeCommit extends Service {
   ): Request[BatchGetRepositoriesOutput, AWSError] = js.native
   
   @JSName("config")
-  var config_CodeCommit: ConfigBase with ClientConfiguration = js.native
+  var config_CodeCommit: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a template for approval rules that can then be associated with one or more repositories in your AWS account. When you associate a template with a repository, AWS CodeCommit creates an approval rule that matches the conditions of the template for all pull requests that meet the conditions of the template. For more information, see AssociateApprovalRuleTemplateWithRepository.

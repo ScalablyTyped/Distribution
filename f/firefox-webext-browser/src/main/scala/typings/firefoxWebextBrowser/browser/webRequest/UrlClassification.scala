@@ -2,19 +2,17 @@ package typings.firefoxWebextBrowser.browser.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlClassification extends StObject {
   
   /** Classification flags if the request has been classified and it is first party. */
-  var firstParty: UrlClassificationParty = js.native
+  var firstParty: UrlClassificationParty
   
   /**
     * Classification flags if the request has been classified and it or its window hierarchy is third party.
     */
-  var thirdParty: UrlClassificationParty = js.native
+  var thirdParty: UrlClassificationParty
 }
 object UrlClassification {
   

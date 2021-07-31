@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * current stack context will be blocked till this job finish it's work.
   * @see XAsyncJob
   */
-@js.native
-trait XJob extends XInterface {
+trait XJob
+  extends StObject
+     with XInterface {
   
   /**
     * executes the job synchronously
@@ -26,7 +26,7 @@ trait XJob extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if some of given arguments doesn't fill out the service specification or was corrupt so the servic
     * @throws com::sun::star::uno::Exception to notify the executor about failed operation; otherwise the return value indicates a successful finishing.
     */
-  def execute(Arguments: SeqEquiv[NamedValue]): js.Any = js.native
+  def execute(Arguments: SeqEquiv[NamedValue]): js.Any
 }
 object XJob {
   

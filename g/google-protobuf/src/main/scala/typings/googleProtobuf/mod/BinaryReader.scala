@@ -5,24 +5,29 @@ import typings.googleProtobuf.mod.BinaryConstants.WireType
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf", "BinaryReader")
 @js.native
 class BinaryReader () extends StObject {
   def this(bytes: ByteSource) = this()
-  def this(bytes: js.UndefOr[ByteSource], start: Double) = this()
-  def this(bytes: js.UndefOr[ByteSource], start: js.UndefOr[scala.Nothing], length: Double) = this()
-  def this(bytes: js.UndefOr[ByteSource], start: Double, length: Double) = this()
+  def this(bytes: Unit, start: Double) = this()
+  def this(bytes: ByteSource, start: Double) = this()
+  def this(bytes: Unit, start: Double, length: Double) = this()
+  def this(bytes: Unit, start: Unit, length: Double) = this()
+  def this(bytes: ByteSource, start: Double, length: Double) = this()
+  def this(bytes: ByteSource, start: Unit, length: Double) = this()
   
   def advance(count: Double): Unit = js.native
   
   def alloc(): BinaryReader = js.native
-  def alloc(bytes: js.UndefOr[ByteSource], start: js.UndefOr[scala.Nothing], length: Double): BinaryReader = js.native
-  def alloc(bytes: js.UndefOr[ByteSource], start: Double): BinaryReader = js.native
-  def alloc(bytes: js.UndefOr[ByteSource], start: Double, length: Double): BinaryReader = js.native
+  def alloc(bytes: Unit, start: Double): BinaryReader = js.native
+  def alloc(bytes: Unit, start: Double, length: Double): BinaryReader = js.native
+  def alloc(bytes: Unit, start: Unit, length: Double): BinaryReader = js.native
   def alloc(bytes: ByteSource): BinaryReader = js.native
+  def alloc(bytes: ByteSource, start: Double): BinaryReader = js.native
+  def alloc(bytes: ByteSource, start: Double, length: Double): BinaryReader = js.native
+  def alloc(bytes: ByteSource, start: Unit, length: Double): BinaryReader = js.native
   
   def free(): Unit = js.native
   
@@ -150,17 +155,20 @@ class BinaryReader () extends StObject {
   
   def readVarintHash64(): String = js.native
   
-  def registerReadCallback(callbackName: String, callback: js.Function1[/* binaryReader */ this.type, _]): Unit = js.native
+  def registerReadCallback(callbackName: String, callback: js.Function1[/* binaryReader */ this.type, js.Any]): Unit = js.native
   
   def reset(): Unit = js.native
   
   def runReadCallback(callbackName: String): js.Any = js.native
   
   def setBlock(): Unit = js.native
-  def setBlock(bytes: js.UndefOr[ByteSource], start: js.UndefOr[scala.Nothing], length: Double): Unit = js.native
-  def setBlock(bytes: js.UndefOr[ByteSource], start: Double): Unit = js.native
-  def setBlock(bytes: js.UndefOr[ByteSource], start: Double, length: Double): Unit = js.native
+  def setBlock(bytes: Unit, start: Double): Unit = js.native
+  def setBlock(bytes: Unit, start: Double, length: Double): Unit = js.native
+  def setBlock(bytes: Unit, start: Unit, length: Double): Unit = js.native
   def setBlock(bytes: ByteSource): Unit = js.native
+  def setBlock(bytes: ByteSource, start: Double): Unit = js.native
+  def setBlock(bytes: ByteSource, start: Double, length: Double): Unit = js.native
+  def setBlock(bytes: ByteSource, start: Unit, length: Double): Unit = js.native
   
   def skipDelimitedField(): Unit = js.native
   
@@ -181,19 +189,24 @@ class BinaryReader () extends StObject {
 /* static members */
 object BinaryReader {
   
-  @JSImport("google-protobuf", "BinaryReader.alloc")
+  @JSImport("google-protobuf", "BinaryReader")
   @js.native
-  def alloc(): BinaryReader = js.native
-  @JSImport("google-protobuf", "BinaryReader.alloc")
-  @js.native
-  def alloc(bytes: js.UndefOr[ByteSource], start: js.UndefOr[scala.Nothing], length: Double): BinaryReader = js.native
-  @JSImport("google-protobuf", "BinaryReader.alloc")
-  @js.native
-  def alloc(bytes: js.UndefOr[ByteSource], start: Double): BinaryReader = js.native
-  @JSImport("google-protobuf", "BinaryReader.alloc")
-  @js.native
-  def alloc(bytes: js.UndefOr[ByteSource], start: Double, length: Double): BinaryReader = js.native
-  @JSImport("google-protobuf", "BinaryReader.alloc")
-  @js.native
-  def alloc(bytes: ByteSource): BinaryReader = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def alloc(): BinaryReader = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")().asInstanceOf[BinaryReader]
+  @scala.inline
+  def alloc(bytes: Unit, start: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
+  @scala.inline
+  def alloc(bytes: Unit, start: Double, length: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
+  @scala.inline
+  def alloc(bytes: Unit, start: Unit, length: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
+  @scala.inline
+  def alloc(bytes: ByteSource): BinaryReader = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any]).asInstanceOf[BinaryReader]
+  @scala.inline
+  def alloc(bytes: ByteSource, start: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
+  @scala.inline
+  def alloc(bytes: ByteSource, start: Double, length: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
+  @scala.inline
+  def alloc(bytes: ByteSource, start: Unit, length: Double): BinaryReader = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(bytes.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BinaryReader]
 }

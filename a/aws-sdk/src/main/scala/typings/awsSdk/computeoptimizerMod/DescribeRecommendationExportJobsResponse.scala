@@ -2,21 +2,19 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRecommendationExportJobsResponse extends StObject {
   
   /**
     * The token to use to advance to the next page of export jobs. This value is null when there are no more pages of export jobs to return.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * An array of objects that describe recommendation export jobs.
     */
-  var recommendationExportJobs: js.UndefOr[RecommendationExportJobs] = js.native
+  var recommendationExportJobs: js.UndefOr[RecommendationExportJobs] = js.undefined
 }
 object DescribeRecommendationExportJobsResponse {
   

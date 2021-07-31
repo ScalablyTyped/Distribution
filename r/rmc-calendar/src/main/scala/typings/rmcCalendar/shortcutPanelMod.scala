@@ -5,7 +5,6 @@ import typings.rmcCalendar.dataTypesMod.Models.Locale
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shortcutPanelMod {
@@ -20,7 +19,7 @@ object shortcutPanelMod {
     var locale: Locale = js.native
     
     def onSelect(): Unit = js.native
-    def onSelect(startDate: js.UndefOr[scala.Nothing], endDate: Date): Unit = js.native
+    def onSelect(startDate: Unit, endDate: Date): Unit = js.native
     def onSelect(startDate: Date): Unit = js.native
     def onSelect(startDate: Date, endDate: Date): Unit = js.native
   }

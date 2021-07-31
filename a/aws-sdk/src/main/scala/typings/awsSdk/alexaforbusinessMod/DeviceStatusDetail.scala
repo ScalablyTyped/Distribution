@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceStatusDetail extends StObject {
   
   /**
     * The device status detail code.
     */
-  var Code: js.UndefOr[DeviceStatusDetailCode] = js.native
+  var Code: js.UndefOr[DeviceStatusDetailCode] = js.undefined
   
   /**
     * The list of available features on the device.
     */
-  var Feature: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Feature] = js.native
+  var Feature: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Feature] = js.undefined
 }
 object DeviceStatusDetail {
   

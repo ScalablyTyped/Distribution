@@ -3,95 +3,93 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.IMarkdownString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IModelDecorationOptions extends StObject {
   
   /**
     * If set, the decoration will be rendered after the text with this CSS class name.
     */
-  var afterContentClassName: js.UndefOr[String | Null] = js.native
+  var afterContentClassName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * If set, the decoration will be rendered before the text with this CSS class name.
     */
-  var beforeContentClassName: js.UndefOr[String | Null] = js.native
+  var beforeContentClassName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * CSS class name describing the decoration.
     */
-  var className: js.UndefOr[String | Null] = js.native
+  var className: js.UndefOr[String | Null] = js.undefined
   
   /**
     * If set, the decoration will be rendered in the lines decorations with this CSS class name, but only for the first line in case of line wrapping.
     */
-  var firstLineDecorationClassName: js.UndefOr[String | Null] = js.native
+  var firstLineDecorationClassName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * If set, the decoration will be rendered in the glyph margin with this CSS class name.
     */
-  var glyphMarginClassName: js.UndefOr[String | Null] = js.native
+  var glyphMarginClassName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Message to be rendered when hovering over the glyph margin decoration.
     */
-  var glyphMarginHoverMessage: js.UndefOr[IMarkdownString | js.Array[IMarkdownString] | Null] = js.native
+  var glyphMarginHoverMessage: js.UndefOr[IMarkdownString | js.Array[IMarkdownString] | Null] = js.undefined
   
   /**
     * Array of MarkdownString to render as the decoration message.
     */
-  var hoverMessage: js.UndefOr[IMarkdownString | js.Array[IMarkdownString] | Null] = js.native
+  var hoverMessage: js.UndefOr[IMarkdownString | js.Array[IMarkdownString] | Null] = js.undefined
   
   /**
     * If set, the decoration will be rendered inline with the text with this CSS class name.
     * Please use this only for CSS rules that must impact the text. For example, use `className`
     * to have a background color decoration.
     */
-  var inlineClassName: js.UndefOr[String | Null] = js.native
+  var inlineClassName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * If there is an `inlineClassName` which affects letter spacing.
     */
-  var inlineClassNameAffectsLetterSpacing: js.UndefOr[Boolean] = js.native
+  var inlineClassNameAffectsLetterSpacing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Should the decoration expand to encompass a whole line.
     */
-  var isWholeLine: js.UndefOr[Boolean] = js.native
+  var isWholeLine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set, the decoration will be rendered in the lines decorations with this CSS class name.
     */
-  var linesDecorationsClassName: js.UndefOr[String | Null] = js.native
+  var linesDecorationsClassName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * If set, the decoration will be rendered in the margin (covering its full width) with this CSS class name.
     */
-  var marginClassName: js.UndefOr[String | Null] = js.native
+  var marginClassName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * If set, render this decoration in the minimap.
     */
-  var minimap: js.UndefOr[IModelDecorationMinimapOptions | Null] = js.native
+  var minimap: js.UndefOr[IModelDecorationMinimapOptions | Null] = js.undefined
   
   /**
     * If set, render this decoration in the overview ruler.
     */
-  var overviewRuler: js.UndefOr[IModelDecorationOverviewRulerOptions | Null] = js.native
+  var overviewRuler: js.UndefOr[IModelDecorationOverviewRulerOptions | Null] = js.undefined
   
   /**
     * Customize the growing behavior of the decoration when typing at the edges of the decoration.
     * Defaults to TrackedRangeStickiness.AlwaysGrowsWhenTypingAtEdges
     */
-  var stickiness: js.UndefOr[TrackedRangeStickiness] = js.native
+  var stickiness: js.UndefOr[TrackedRangeStickiness] = js.undefined
   
   /**
     * Specifies the stack order of a decoration.
     * A decoration with greater stack order is always in front of a decoration with a lower stack order.
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object IModelDecorationOptions {
   

@@ -9,31 +9,31 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.nanos
 import typings.elasticElasticsearch.elasticElasticsearchStrings.s
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CatTransforms extends Generic {
+trait CatTransforms
+  extends StObject
+     with Generic {
   
-  var allow_no_match: js.UndefOr[Boolean] = js.native
+  var allow_no_match: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
-  var h: js.UndefOr[String | js.Array[String]] = js.native
+  var h: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var help: js.UndefOr[Boolean] = js.native
+  var help: js.UndefOr[Boolean] = js.undefined
   
-  var s: js.UndefOr[String | js.Array[String]] = js.native
+  var s: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var time: js.UndefOr[d | h | m | s | ms | micros | nanos] = js.native
+  var time: js.UndefOr[d | h | m | s | ms | micros | nanos] = js.undefined
   
-  var transform_id: js.UndefOr[String] = js.native
+  var transform_id: js.UndefOr[String] = js.undefined
   
-  var v: js.UndefOr[Boolean] = js.native
+  var v: js.UndefOr[Boolean] = js.undefined
 }
 object CatTransforms {
   

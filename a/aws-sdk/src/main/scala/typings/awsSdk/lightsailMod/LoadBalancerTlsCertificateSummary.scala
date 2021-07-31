@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadBalancerTlsCertificateSummary extends StObject {
   
   /**
     * When true, the SSL/TLS certificate is attached to the Lightsail load balancer.
     */
-  var isAttached: js.UndefOr[Boolean] = js.native
+  var isAttached: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the SSL/TLS certificate.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
 }
 object LoadBalancerTlsCertificateSummary {
   

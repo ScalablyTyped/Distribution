@@ -6,29 +6,30 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/radio/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/radio/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): RadioStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): RadioStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[RadioStyle]
+  
   trait RadioStyle extends StObject {
     
-    var icon: ImageStyle = js.native
+    var icon: ImageStyle
     
-    var radioItem: ViewStyle = js.native
+    var radioItem: ViewStyle
     
-    var radioItemContent: TextStyle = js.native
+    var radioItemContent: TextStyle
     
-    var radioItemContentDisable: TextStyle = js.native
+    var radioItemContentDisable: TextStyle
     
-    var radioItemRadio: ViewStyle = js.native
+    var radioItemRadio: ViewStyle
     
-    var wrapper: ViewStyle = js.native
+    var wrapper: ViewStyle
   }
   object RadioStyle {
     

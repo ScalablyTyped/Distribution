@@ -2,33 +2,31 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/tree-item/
-@js.native
 trait TreeItem extends StObject {
   
-  var collapsibleState: TreeItemCollapsibleState = js.native
+  var collapsibleState: TreeItemCollapsibleState
   
   // https://dev.panic.com/panic/nova-issues/-/issues/909
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
-  var command: js.UndefOr[js.Any] = js.native
+  var command: js.UndefOr[js.Any] = js.undefined
   
-  var contextValue: js.UndefOr[String] = js.native
+  var contextValue: js.UndefOr[String] = js.undefined
   
-  var descriptiveText: js.UndefOr[String] = js.native
+  var descriptiveText: js.UndefOr[String] = js.undefined
   
-  var identifier: js.UndefOr[String] = js.native
+  var identifier: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object TreeItem {
   

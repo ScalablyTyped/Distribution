@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait XRHand
-  extends Iterable[XRJointSpace]
+  extends StObject
+     with Iterable[XRJointSpace]
      with /* index */ NumberDictionary[XRJointSpace] {
   
   val INDEX_METACARPAL: Double = js.native

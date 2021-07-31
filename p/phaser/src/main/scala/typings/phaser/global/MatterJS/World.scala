@@ -3,10 +3,10 @@ package typings.phaser.global.MatterJS
 import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.CompositeType
 import typings.phaser.MatterJS.ConstraintType
+import typings.phaser.MatterJS.Gravity
 import typings.phaser.MatterJS.IWorldDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,12 +24,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("MatterJS.World")
 @js.native
 class World ()
-  extends typings.phaser.MatterJS.World
+  extends StObject
+     with typings.phaser.MatterJS.World {
+  
+  /* CompleteClass */
+  var bounds: typings.phaser.MatterJS.Bounds = js.native
+  
+  /* CompleteClass */
+  var gravity: Gravity = js.native
+}
 object World {
   
-  @JSGlobal("MatterJS.World.add")
+  @JSGlobal("MatterJS.World")
   @js.native
-  def add(world: typings.phaser.MatterJS.World, body: js.Array[BodyType | CompositeType | ConstraintType]): typings.phaser.MatterJS.World = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def add(world: typings.phaser.MatterJS.World, body: js.Array[BodyType | CompositeType | ConstraintType]): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
   /**
     * Add objects or arrays of objects of types: Body, Constraint, Composite
     * @param world
@@ -37,18 +48,14 @@ object World {
     * @returns world
     */
   /* static member */
-  @JSGlobal("MatterJS.World.add")
-  @js.native
-  def add(world: typings.phaser.MatterJS.World, body: BodyType): typings.phaser.MatterJS.World = js.native
-  @JSGlobal("MatterJS.World.add")
-  @js.native
-  def add(world: typings.phaser.MatterJS.World, body: CompositeType): typings.phaser.MatterJS.World = js.native
-  @JSGlobal("MatterJS.World.add")
-  @js.native
-  def add(world: typings.phaser.MatterJS.World, body: ConstraintType): typings.phaser.MatterJS.World = js.native
-  @JSGlobal("MatterJS.World.add")
-  @js.native
-  def add(world: typings.phaser.MatterJS.World, body: typings.phaser.MatterJS.MouseConstraint): typings.phaser.MatterJS.World = js.native
+  @scala.inline
+  def add(world: typings.phaser.MatterJS.World, body: BodyType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
+  @scala.inline
+  def add(world: typings.phaser.MatterJS.World, body: CompositeType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
+  @scala.inline
+  def add(world: typings.phaser.MatterJS.World, body: ConstraintType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
+  @scala.inline
+  def add(world: typings.phaser.MatterJS.World, body: typings.phaser.MatterJS.MouseConstraint): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
   
   /**
     * An alias for Composite.addBody since World is also a Composite
@@ -58,9 +65,8 @@ object World {
     * @return {world} The original world with the body added
     */
   /* static member */
-  @JSGlobal("MatterJS.World.addBody")
-  @js.native
-  def addBody(world: typings.phaser.MatterJS.World, body: BodyType): typings.phaser.MatterJS.World = js.native
+  @scala.inline
+  def addBody(world: typings.phaser.MatterJS.World, body: BodyType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("addBody")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
   
   /**
     * An alias for Composite.add since World is also a Composite
@@ -70,9 +76,8 @@ object World {
     * @return {world} The original world with the objects from composite added
     */
   /* static member */
-  @JSGlobal("MatterJS.World.addComposite")
-  @js.native
-  def addComposite(world: typings.phaser.MatterJS.World, composite: CompositeType): typings.phaser.MatterJS.World = js.native
+  @scala.inline
+  def addComposite(world: typings.phaser.MatterJS.World, composite: CompositeType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("addComposite")(world.asInstanceOf[js.Any], composite.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
   
   /**
     * An alias for Composite.addConstraint since World is also a Composite
@@ -82,9 +87,8 @@ object World {
     * @return {world} The original world with the constraint added
     */
   /* static member */
-  @JSGlobal("MatterJS.World.addConstraint")
-  @js.native
-  def addConstraint(world: typings.phaser.MatterJS.World, constraint: ConstraintType): typings.phaser.MatterJS.World = js.native
+  @scala.inline
+  def addConstraint(world: typings.phaser.MatterJS.World, constraint: ConstraintType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("addConstraint")(world.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
   
   /**
     * An alias for Composite.clear since World is also a Composite
@@ -93,9 +97,8 @@ object World {
     * @param {boolean} keepStatic
     */
   /* static member */
-  @JSGlobal("MatterJS.World.clear")
-  @js.native
-  def clear(world: typings.phaser.MatterJS.World, keepStatic: Boolean): Unit = js.native
+  @scala.inline
+  def clear(world: typings.phaser.MatterJS.World, keepStatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(world.asInstanceOf[js.Any], keepStatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a new world composite. The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -106,7 +109,6 @@ object World {
     * @return {world} A new world
     */
   /* static member */
-  @JSGlobal("MatterJS.World.create")
-  @js.native
-  def create(options: IWorldDefinition): typings.phaser.MatterJS.World = js.native
+  @scala.inline
+  def create(options: IWorldDefinition): typings.phaser.MatterJS.World = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.World]
 }

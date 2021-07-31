@@ -5,7 +5,6 @@ import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** util *****/
@@ -14,32 +13,31 @@ object util {
   /**
     * A generic class to represent a handle for any kind of asynchronous processed requests
     */
-  @js.native
   trait Request extends StObject {
     
     /**
       * Returns the number of processingsteps which have been failed
       * @returns {number}
       */
-    def getFailed(): Double = js.native
+    def getFailed(): Double
     
     /**
       * Returns the number of steps which are already processed by this request
       * @returns {number}
       */
-    def getProcessed(): Double = js.native
+    def getProcessed(): Double
     
     /**
       * Returns the state of this request
       * @returns {H.util.Request.State}
       */
-    def getState(): State = js.native
+    def getState(): State
     
     /**
       * Returns the number of processing steps to complete this request
       * @returns {number}
       */
-    def getTotal(): Double = js.native
+    def getTotal(): Double
   }
   object Request {
     
@@ -59,19 +57,29 @@ object util {
     object State extends StObject {
       
       @js.native
-      sealed trait CANCELLED extends State
+      sealed trait CANCELLED
+        extends StObject
+           with State
       
       @js.native
-      sealed trait COMPLETE extends State
+      sealed trait COMPLETE
+        extends StObject
+           with State
       
       @js.native
-      sealed trait ERROR extends State
+      sealed trait ERROR
+        extends StObject
+           with State
       
       @js.native
-      sealed trait PENDING extends State
+      sealed trait PENDING
+        extends StObject
+           with State
       
       @js.native
-      sealed trait PROCESSING extends State
+      sealed trait PROCESSING
+        extends StObject
+           with State
     }
     
     @scala.inline
@@ -97,7 +105,9 @@ object util {
     * associated with an identifier that allow to retrieve them at a later stage and their content size.
     */
   @js.native
-  trait Cache extends ICache {
+  trait Cache
+    extends StObject
+       with ICache {
     
     def forEach(callback: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Unit], opt_ctx: js.Any): Unit = js.native
     def forEach(
@@ -133,8 +143,9 @@ object util {
     * @property type {string} - Name of the dispatched event
     * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
-  @js.native
-  trait ChangeEvent extends Event
+  trait ChangeEvent
+    extends StObject
+       with Event
   object ChangeEvent {
     
     @scala.inline
@@ -157,7 +168,9 @@ object util {
     * @property SEPARATOR {H.util.ContextItem} - Separator for the context items
     */
   @js.native
-  trait ContextItem extends EventTarget {
+  trait ContextItem
+    extends StObject
+       with EventTarget {
     
     def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native
     
@@ -195,14 +208,13 @@ object util {
       * @property disabled {boolean=} - flag indicatting whether context item is disabled or no, by default false
       * @property callback {function(H.util.Event)=} - Optional callback function to call once context item is selected
       */
-    @js.native
     trait Options extends StObject {
       
-      var callback: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+      var callback: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
       
-      var disabled: js.UndefOr[Boolean] = js.native
+      var disabled: js.UndefOr[Boolean] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
     }
     object Options {
       
@@ -258,26 +270,25 @@ object util {
     * @property type {string} - Name of the dispatched event
     * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
-  @js.native
   trait Event extends StObject {
     
-    var currentTarget: js.Any = js.native
+    var currentTarget: js.Any
     
-    var defaultPrevented: Boolean = js.native
+    var defaultPrevented: Boolean
     
     /**
       * Sets defaultPrevented to true. Which can be used to prevent some default behavior.
       */
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
     
     /**
       * Stops propagation for current event.
       */
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     
-    var target: js.Any = js.native
+    var target: js.Any
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Event {
     
@@ -333,12 +344,6 @@ object util {
       * @param opt_scope {Object=} - scope for the handler function
       */
     def addEventListener(`type`: String, handler: EventListenerOrEventListenerObject): Unit = js.native
-    def addEventListener(
-      `type`: String,
-      handler: EventListenerOrEventListenerObject,
-      opt_capture: js.UndefOr[scala.Nothing],
-      opt_scope: js.Any
-    ): Unit = js.native
     def addEventListener(`type`: String, handler: EventListenerOrEventListenerObject, opt_capture: Boolean): Unit = js.native
     def addEventListener(
       `type`: String,
@@ -346,6 +351,7 @@ object util {
       opt_capture: Boolean,
       opt_scope: js.Any
     ): Unit = js.native
+    def addEventListener(`type`: String, handler: EventListenerOrEventListenerObject, opt_capture: Unit, opt_scope: js.Any): Unit = js.native
     
     /**
       * This method adds callback which is triggered when the object is being disposed
@@ -375,12 +381,6 @@ object util {
       * @param opt_scope {Object=} - scope for the handler function
       */
     def removeEventListener(`type`: String, handler: EventListenerOrEventListenerObject): Unit = js.native
-    def removeEventListener(
-      `type`: String,
-      handler: EventListenerOrEventListenerObject,
-      opt_capture: js.UndefOr[scala.Nothing],
-      opt_scope: js.Any
-    ): Unit = js.native
     def removeEventListener(`type`: String, handler: EventListenerOrEventListenerObject, opt_capture: Boolean): Unit = js.native
     def removeEventListener(
       `type`: String,
@@ -388,6 +388,7 @@ object util {
       opt_capture: Boolean,
       opt_scope: js.Any
     ): Unit = js.native
+    def removeEventListener(`type`: String, handler: EventListenerOrEventListenerObject, opt_capture: Unit, opt_scope: js.Any): Unit = js.native
   }
   
   /**
@@ -420,15 +421,15 @@ object util {
       * @param opt_matcher {(function(string, ?, number): boolean)=} - an optional match predicate to customize on which entries the callback will be called
       */
     def forEach(callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit]): Unit = js.native
-    def forEach(
-      callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit],
-      opt_ctx: js.UndefOr[scala.Nothing],
-      opt_matcher: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Boolean]
-    ): Unit = js.native
     def forEach(callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit], opt_ctx: js.Object): Unit = js.native
     def forEach(
       callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit],
       opt_ctx: js.Object,
+      opt_matcher: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Boolean]
+    ): Unit = js.native
+    def forEach(
+      callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit],
+      opt_ctx: Unit,
       opt_matcher: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Boolean]
     ): Unit = js.native
     
@@ -460,13 +461,12 @@ object util {
   /**
     * An interface to cancelable requests and actions.
     */
-  @js.native
   trait ICancelable extends StObject {
     
     /**
       * This method is used to cancel current action
       */
-    def cancel(): Unit = js.native
+    def cancel(): Unit
   }
   object ICancelable {
     
@@ -523,7 +523,9 @@ object util {
     * @event move {H.util.OList.Event} - Fired when an entry was moved within the list.
     */
   @js.native
-  trait OList extends EventTarget {
+  trait OList
+    extends StObject
+       with EventTarget {
     
     /**
       * This method inserts an entry to the list. Optionally it can place new entry at provided index.
@@ -540,7 +542,7 @@ object util {
       * This method returns all list's entries as an array.
       * @returns {Array<*>} - The list as an array
       */
-    def asArray(): js.Array[_] = js.native
+    def asArray(): js.Array[js.Any] = js.native
     
     /**
       * This method removes all entries from the list.
@@ -598,9 +600,9 @@ object util {
       * @property type {string} - Name of the dispatched event
       * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
       */
-    @js.native
     trait Event
-      extends typings.heremaps.H.util.Event
+      extends StObject
+         with typings.heremaps.H.util.Event
     object Event {
       
       @scala.inline
@@ -624,7 +626,6 @@ object util {
     /**
       * This mamespace contains easing functions used for Animation class.
       */
-    @js.native
     trait ease extends StObject
   }
   
@@ -635,19 +636,18 @@ object util {
       * @property power {number} - Power multiplier. Multiplier is used to increase the speed of the kinetic move. By default map uses 1.
       * @property duration {number} - Defines duration of the kinetic move.
       */
-    @js.native
     trait IKinetics extends StObject {
       
-      var duration: Double = js.native
+      var duration: Double
       
       /**
         * Easing function modifies animation progress. In example it can modify the animation in a way it starts rapidly and then slows down at the end.
         * @param p {number} - current progress
         * @returns {number} - modified progress
         */
-      def ease(p: Double): Double = js.native
+      def ease(p: Double): Double
       
-      var power: Double = js.native
+      var power: Double
     }
     object IKinetics {
       

@@ -11,8 +11,8 @@ DEFLATE implemented in JavaScript (works in browser and Node)
 | Full name          | deflate-js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 871684 |
+| # dependents       | 16 |
+| # downloads        | 1054203 |
 | # stars            | 0 |
 
 ## Links

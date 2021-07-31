@@ -11,7 +11,6 @@ import typings.firebaseDatabase.queryMod.Query
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventRegistrationMod {
@@ -23,7 +22,9 @@ object eventRegistrationMod {
     * @param {?function(Error)} cancelCallback_
     * @param {Object=} context_
     */
-  class ChildEventRegistration () extends EventRegistration {
+  class ChildEventRegistration ()
+    extends StObject
+       with EventRegistration {
     def this(callbacks_ : StringDictionary[js.Function2[/* d */ DataSnapshot, /* s */ js.UndefOr[String | Null], Unit]]) = this()
     def this(
       callbacks_ : StringDictionary[js.Function2[/* d */ DataSnapshot, /* s */ js.UndefOr[String | Null], Unit]],
@@ -50,10 +51,60 @@ object eventRegistrationMod {
     var context_ : js.Any = js.native
     
     /**
+      * @param {!Error} error
+      * @param {!Path} path
+      * @return {?CancelEvent}
+      */
+    /* CompleteClass */
+    override def createCancelEvent(error: Error, path: Path): CancelEvent | Null = js.native
+    
+    /**
+      * @param {!Change} change
+      * @param {!Query} query
+      * @return {!Event}
+      */
+    /* CompleteClass */
+    override def createEvent(change: Change, query: Query): Event = js.native
+    
+    /**
       * @inheritDoc
       */
     def getEventRunner(eventData: CancelEvent): js.Function0[Unit] = js.native
     def getEventRunner(eventData: DataEvent): js.Function0[Unit] = js.native
+    /**
+      * Given event data, return a function to trigger the user's callback
+      * @param {!Event} eventData
+      * @return {function()}
+      */
+    /* CompleteClass */
+    override def getEventRunner(eventData: Event): js.Function0[Unit] = js.native
+    
+    /**
+      * False basically means this is a "dummy" callback container being used as a sentinel
+      * to remove all callback containers of a particular type.  (e.g. if the user does
+      * ref.off('value') without specifying a specific callback).
+      *
+      * (TODO: Rework this, since it's hacky)
+      *
+      * @return {boolean}
+      */
+    /* CompleteClass */
+    override def hasAnyCallback(): Boolean = js.native
+    
+    /**
+      * @param {!EventRegistration} other
+      * @return {boolean}
+      */
+    /* CompleteClass */
+    override def matches(other: EventRegistration): Boolean = js.native
+    
+    /**
+      * True if this container has a callback to trigger for this event type
+      * @param {!string} eventType
+      * @return {boolean}
+      */
+    /* CompleteClass */
+    override def respondsTo(eventType: String): Boolean = js.native
   }
   
   @JSImport("@firebase/database/dist/src/core/view/EventRegistration", "ValueEventRegistration")
@@ -63,7 +114,9 @@ object eventRegistrationMod {
     * @param {?function(Error)} cancelCallback_
     * @param {?Object} context_
     */
-  class ValueEventRegistration () extends EventRegistration {
+  class ValueEventRegistration ()
+    extends StObject
+       with EventRegistration {
     def this(callback_ : js.Function1[/* d */ DataSnapshot, Unit]) = this()
     def this(
       callback_ : js.Function1[/* d */ DataSnapshot, Unit],
@@ -86,35 +139,33 @@ object eventRegistrationMod {
     var context_ : js.Any = js.native
     
     /**
-      * @inheritDoc
-      */
-    def getEventRunner(eventData: CancelEvent): js.Function0[Unit] = js.native
-    def getEventRunner(eventData: DataEvent): js.Function0[Unit] = js.native
-  }
-  
-  @js.native
-  trait EventRegistration extends StObject {
-    
-    /**
       * @param {!Error} error
       * @param {!Path} path
       * @return {?CancelEvent}
       */
-    def createCancelEvent(error: Error, path: Path): CancelEvent | Null = js.native
+    /* CompleteClass */
+    override def createCancelEvent(error: Error, path: Path): CancelEvent | Null = js.native
     
     /**
       * @param {!Change} change
       * @param {!Query} query
       * @return {!Event}
       */
-    def createEvent(change: Change, query: Query): Event = js.native
+    /* CompleteClass */
+    override def createEvent(change: Change, query: Query): Event = js.native
     
+    /**
+      * @inheritDoc
+      */
+    def getEventRunner(eventData: CancelEvent): js.Function0[Unit] = js.native
+    def getEventRunner(eventData: DataEvent): js.Function0[Unit] = js.native
     /**
       * Given event data, return a function to trigger the user's callback
       * @param {!Event} eventData
       * @return {function()}
       */
-    def getEventRunner(eventData: Event): js.Function0[Unit] = js.native
+    /* CompleteClass */
+    override def getEventRunner(eventData: Event): js.Function0[Unit] = js.native
     
     /**
       * False basically means this is a "dummy" callback container being used as a sentinel
@@ -125,20 +176,71 @@ object eventRegistrationMod {
       *
       * @return {boolean}
       */
-    def hasAnyCallback(): Boolean = js.native
+    /* CompleteClass */
+    override def hasAnyCallback(): Boolean = js.native
     
     /**
       * @param {!EventRegistration} other
       * @return {boolean}
       */
-    def matches(other: EventRegistration): Boolean = js.native
+    /* CompleteClass */
+    override def matches(other: EventRegistration): Boolean = js.native
     
     /**
       * True if this container has a callback to trigger for this event type
       * @param {!string} eventType
       * @return {boolean}
       */
-    def respondsTo(eventType: String): Boolean = js.native
+    /* CompleteClass */
+    override def respondsTo(eventType: String): Boolean = js.native
+  }
+  
+  trait EventRegistration extends StObject {
+    
+    /**
+      * @param {!Error} error
+      * @param {!Path} path
+      * @return {?CancelEvent}
+      */
+    def createCancelEvent(error: Error, path: Path): CancelEvent | Null
+    
+    /**
+      * @param {!Change} change
+      * @param {!Query} query
+      * @return {!Event}
+      */
+    def createEvent(change: Change, query: Query): Event
+    
+    /**
+      * Given event data, return a function to trigger the user's callback
+      * @param {!Event} eventData
+      * @return {function()}
+      */
+    def getEventRunner(eventData: Event): js.Function0[Unit]
+    
+    /**
+      * False basically means this is a "dummy" callback container being used as a sentinel
+      * to remove all callback containers of a particular type.  (e.g. if the user does
+      * ref.off('value') without specifying a specific callback).
+      *
+      * (TODO: Rework this, since it's hacky)
+      *
+      * @return {boolean}
+      */
+    def hasAnyCallback(): Boolean
+    
+    /**
+      * @param {!EventRegistration} other
+      * @return {boolean}
+      */
+    def matches(other: EventRegistration): Boolean
+    
+    /**
+      * True if this container has a callback to trigger for this event type
+      * @param {!string} eventType
+      * @return {boolean}
+      */
+    def respondsTo(eventType: String): Boolean
   }
   object EventRegistration {
     

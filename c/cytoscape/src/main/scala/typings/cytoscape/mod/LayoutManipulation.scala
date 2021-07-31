@@ -2,7 +2,6 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,22 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * which allow for more complex behaviour than the primary run-one-layout-at-a-time usecase.
   * A new, developer accessible layout can be made via cy.makeLayout().
   */
-@js.native
 trait LayoutManipulation extends StObject {
   
   /**
     * Start running the layout
     * http://js.cytoscape.org/#layout.run
     */
-  def run(): this.type = js.native
+  def run(): this.type
   
-  def start(): this.type = js.native
+  def start(): this.type
   
   /**
     * Stop running the (asynchronous/discrete) layout
     * http://js.cytoscape.org/#layout.stop
     */
-  def stop(): this.type = js.native
+  def stop(): this.type
 }
 object LayoutManipulation {
   

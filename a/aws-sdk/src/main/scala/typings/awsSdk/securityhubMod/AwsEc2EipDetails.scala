@@ -2,61 +2,59 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsEc2EipDetails extends StObject {
   
   /**
     * The identifier that AWS assigns to represent the allocation of the Elastic IP address for use with Amazon VPC.
     */
-  var AllocationId: js.UndefOr[NonEmptyString] = js.native
+  var AllocationId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier that represents the association of the Elastic IP address with an EC2 instance.
     */
-  var AssociationId: js.UndefOr[NonEmptyString] = js.native
+  var AssociationId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The domain in which to allocate the address. If the address is for use with EC2 instances in a VPC, then Domain is vpc. Otherwise, Domain is standard. 
     */
-  var Domain: js.UndefOr[NonEmptyString] = js.native
+  var Domain: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the EC2 instance.
     */
-  var InstanceId: js.UndefOr[NonEmptyString] = js.native
+  var InstanceId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the location from which the Elastic IP address is advertised.
     */
-  var NetworkBorderGroup: js.UndefOr[NonEmptyString] = js.native
+  var NetworkBorderGroup: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the network interface.
     */
-  var NetworkInterfaceId: js.UndefOr[NonEmptyString] = js.native
+  var NetworkInterfaceId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The AWS account ID of the owner of the network interface.
     */
-  var NetworkInterfaceOwnerId: js.UndefOr[NonEmptyString] = js.native
+  var NetworkInterfaceOwnerId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The private IP address that is associated with the Elastic IP address.
     */
-  var PrivateIpAddress: js.UndefOr[NonEmptyString] = js.native
+  var PrivateIpAddress: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A public IP address that is associated with the EC2 instance.
     */
-  var PublicIp: js.UndefOr[NonEmptyString] = js.native
+  var PublicIp: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of an IP address pool. This parameter allows Amazon EC2 to select an IP address from the address pool.
     */
-  var PublicIpv4Pool: js.UndefOr[NonEmptyString] = js.native
+  var PublicIpv4Pool: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsEc2EipDetails {
   

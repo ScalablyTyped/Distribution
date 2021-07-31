@@ -2,21 +2,19 @@ package typings.awsSdk.savingsplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSavingsPlansOfferingRatesResponse extends StObject {
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * Information about the Savings Plans offering rates.
     */
-  var searchResults: js.UndefOr[SavingsPlanOfferingRatesList] = js.native
+  var searchResults: js.UndefOr[SavingsPlanOfferingRatesList] = js.undefined
 }
 object DescribeSavingsPlansOfferingRatesResponse {
   

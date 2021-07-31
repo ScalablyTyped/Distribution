@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object barMod {
@@ -18,22 +17,21 @@ object barMod {
   
   type Bar = Component[IBarProps, js.Any, js.Any]
   
-  @js.native
   trait IBarProps extends StObject {
     
-    var autoLabel: js.UndefOr[Boolean] = js.native
+    var autoLabel: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var data: js.Array[X] = js.native
+    var data: js.Array[X]
     
-    var height: Double = js.native
+    var height: Double
     
-    var padding: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.native
+    var padding: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: ReactNode = js.native
+    var title: ReactNode
   }
   object IBarProps {
     

@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResponseBodyForInterceptionRequest extends StObject {
   
   /**
     * Identifier for the intercepted request to get body for.
     */
-  var interceptionId: InterceptionId = js.native
+  var interceptionId: InterceptionId
 }
 object GetResponseBodyForInterceptionRequest {
   

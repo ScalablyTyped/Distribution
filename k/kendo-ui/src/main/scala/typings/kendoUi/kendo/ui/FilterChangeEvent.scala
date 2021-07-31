@@ -2,13 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FilterChangeEvent extends FilterEvent {
+trait FilterChangeEvent
+  extends StObject
+     with FilterEvent {
   
-  var expression: js.UndefOr[js.Any] = js.native
+  var expression: js.UndefOr[js.Any] = js.undefined
 }
 object FilterChangeEvent {
   

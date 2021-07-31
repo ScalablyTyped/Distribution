@@ -3,21 +3,19 @@ package typings.reactPopperTooltip
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Current extends StObject {
     
-    var current: HTMLElement | Null = js.native
+    var current: HTMLElement | Null
   }
   object Current {
     
     @scala.inline
     def apply(): Current = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(current = null)
       __obj.asInstanceOf[Current]
     }
     

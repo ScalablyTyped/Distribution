@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2BigQueryTable extends StObject {
   
   /** Dataset ID of the table. */
-  var datasetId: js.UndefOr[String] = js.native
+  var datasetId: js.UndefOr[String] = js.undefined
   
   /** The Google Cloud Platform project ID of the project containing the table. If omitted, project ID is inferred from the API call. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Name of the table. */
-  var tableId: js.UndefOr[String] = js.native
+  var tableId: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2BigQueryTable {
   

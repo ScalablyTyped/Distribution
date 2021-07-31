@@ -2,21 +2,22 @@ package typings.redactSecrets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(redacted: String): Redactor = ^.asInstanceOf[js.Dynamic].apply(redacted.asInstanceOf[js.Any]).asInstanceOf[Redactor]
+  
   @JSImport("redact-secrets", JSImport.Namespace)
   @js.native
-  def apply(redacted: String): Redactor = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Redactor extends StObject {
     
-    def forEach(obj: js.Any): Unit = js.native
+    def forEach(obj: js.Any): Unit
     
-    def map(obj: js.Any): js.Any = js.native
+    def map(obj: js.Any): js.Any
   }
   object Redactor {
     

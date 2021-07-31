@@ -2,19 +2,17 @@ package typings.jsClipper.ClipperLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalMinima extends StObject {
   
-  var Y: Double = js.native
+  var Y: Double
   
-  var leftBound: TEdge = js.native
+  var leftBound: TEdge
   
-  var next: TEdge = js.native
+  var next: TEdge
   
-  var rightBound: TEdge = js.native
+  var rightBound: TEdge
 }
 object LocalMinima {
   

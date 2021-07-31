@@ -2,19 +2,17 @@ package typings.sdp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SDPRtpCapabilities extends StObject {
   
-  var codecs: js.Array[SDPCodec] = js.native
+  var codecs: js.Array[SDPCodec]
   
-  var fecMechanisms: js.Array[String] = js.native
+  var fecMechanisms: js.Array[String]
   
-  var headerExtensions: js.Array[SDPHeaderExtension] = js.native
+  var headerExtensions: js.Array[SDPHeaderExtension]
   
-  var rtcp: js.UndefOr[js.Array[SDPRtcpParameters]] = js.native
+  var rtcp: js.UndefOr[js.Array[SDPRtcpParameters]] = js.undefined
 }
 object SDPRtpCapabilities {
   

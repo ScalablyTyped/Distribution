@@ -3,15 +3,13 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationSummary extends StObject {
   
-  var container: js.UndefOr[String | JQuery] = js.native
+  var container: js.UndefOr[String | JQuery] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
 }
 object ValidationSummary {
   

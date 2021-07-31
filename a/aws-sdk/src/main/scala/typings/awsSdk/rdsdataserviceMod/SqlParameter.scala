@@ -2,26 +2,24 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlParameter extends StObject {
   
   /**
     * The name of the parameter.
     */
-  var name: js.UndefOr[ParameterName] = js.native
+  var name: js.UndefOr[ParameterName] = js.undefined
   
   /**
     * A hint that specifies the correct object type for data type mapping.  Values:     DECIMAL - The corresponding String parameter value is sent as an object of DECIMAL type to the database.    TIMESTAMP - The corresponding String parameter value is sent as an object of TIMESTAMP type to the database. The accepted format is YYYY-MM-DD HH:MM:SS[.FFF].    TIME - The corresponding String parameter value is sent as an object of TIME type to the database. The accepted format is HH:MM:SS[.FFF].    DATE - The corresponding String parameter value is sent as an object of DATE type to the database. The accepted format is YYYY-MM-DD.  
     */
-  var typeHint: js.UndefOr[TypeHint] = js.native
+  var typeHint: js.UndefOr[TypeHint] = js.undefined
   
   /**
     * The value of the parameter.
     */
-  var value: js.UndefOr[Field] = js.native
+  var value: js.UndefOr[Field] = js.undefined
 }
 object SqlParameter {
   

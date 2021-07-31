@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthInfo extends StObject {
   
   /**
     * The type of action for which the principal is being authorized.
     */
-  var actionType: js.UndefOr[ActionType] = js.native
+  var actionType: js.UndefOr[ActionType] = js.undefined
   
   /**
     * The resources for which the principal is being authorized to perform the specified action.
     */
-  var resources: Resources = js.native
+  var resources: Resources
 }
 object AuthInfo {
   

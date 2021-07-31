@@ -2,31 +2,29 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHarvestJobsRequest extends StObject {
   
   /**
     * When specified, the request will return only HarvestJobs associated with the given Channel ID.
     */
-  var IncludeChannelId: js.UndefOr[string] = js.native
+  var IncludeChannelId: js.UndefOr[string] = js.undefined
   
   /**
     * When specified, the request will return only HarvestJobs in the given status.
     */
-  var IncludeStatus: js.UndefOr[string] = js.native
+  var IncludeStatus: js.UndefOr[string] = js.undefined
   
   /**
     * The upper bound on the number of records to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.mediapackageMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.mediapackageMod.MaxResults] = js.undefined
   
   /**
     * A token used to resume pagination from the end of a previous request.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListHarvestJobsRequest {
   

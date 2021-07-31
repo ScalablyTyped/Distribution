@@ -3,44 +3,42 @@ package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeContext extends StObject {
   
   /** Represents an API operation that is involved to a network activity. */
-  var api: js.UndefOr[Api] = js.native
+  var api: js.UndefOr[Api] = js.undefined
   
   /** The destination of a network activity, such as accepting a TCP connection. In a multi hop network activity, the destination represents the receiver of the last hop. */
-  var destination: js.UndefOr[Peer] = js.native
+  var destination: js.UndefOr[Peer] = js.undefined
   
   /** Supports extensions for advanced use cases, such as logs and metrics. */
   var extensions: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext with TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext & TopLevel[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The origin of a network activity. In a multi hop network activity, the origin represents the sender of the first hop. For the first hop, the `source` and the `origin` must have the
     * same content.
     */
-  var origin: js.UndefOr[Peer] = js.native
+  var origin: js.UndefOr[Peer] = js.undefined
   
   /** Represents a network request, such as an HTTP request. */
-  var request: js.UndefOr[Request] = js.native
+  var request: js.UndefOr[Request] = js.undefined
   
   /** Represents a target resource that is involved with a network activity. If multiple resources are involved with an activity, this must be the primary one. */
-  var resource: js.UndefOr[Resource] = js.native
+  var resource: js.UndefOr[Resource] = js.undefined
   
   /** Represents a network response, such as an HTTP response. */
-  var response: js.UndefOr[Response] = js.native
+  var response: js.UndefOr[Response] = js.undefined
   
   /** The source of a network activity, such as starting a TCP connection. In a multi hop network activity, the source represents the sender of the last hop. */
-  var source: js.UndefOr[Peer] = js.native
+  var source: js.UndefOr[Peer] = js.undefined
 }
 object AttributeContext {
   
@@ -70,7 +68,7 @@ object AttributeContext {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
@@ -81,7 +79,7 @@ object AttributeContext {
     def setExtensionsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext with TopLevel[js.Any])*
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext & TopLevel[js.Any])*
     ): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline

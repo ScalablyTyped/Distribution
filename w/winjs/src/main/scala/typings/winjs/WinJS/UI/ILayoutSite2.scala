@@ -3,40 +3,38 @@ package typings.winjs.WinJS.UI
 import typings.winjs.WinJS.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a rendering site for an ILayout2.
   **/
-@js.native
 trait ILayoutSite2 extends StObject {
   
   //#region Properties
   /**
     * Gets the number of groups in the site.
     **/
-  var groupCount: Double = js.native
+  var groupCount: Double
   
   /**
     * Gets the number of items in the site.
     **/
-  var itemCount: Promise[Double] = js.native
+  var itemCount: Promise[Double]
   
   /**
     * Gets the pixel range of the realization area.
     **/
-  var realizedRange: js.Any = js.native
+  var realizedRange: js.Any
   
   /**
     * Gets the tree for use by an object that implements the ILayout2 interface.
     **/
-  var tree: js.Any = js.native
+  var tree: js.Any
   
   /**
     * Gets the pixel range of visible items in the site.
     **/
-  var visibleRange: js.Any = js.native
+  var visibleRange: js.Any
 }
 object ILayoutSite2 {
   

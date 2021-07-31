@@ -2,36 +2,34 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Communication extends StObject {
   
   /**
     * Information about the attachments to the case communication.
     */
-  var attachmentSet: js.UndefOr[AttachmentSet] = js.native
+  var attachmentSet: js.UndefOr[AttachmentSet] = js.undefined
   
   /**
     * The text of the communication between the customer and AWS Support.
     */
-  var body: js.UndefOr[CommunicationBody] = js.native
+  var body: js.UndefOr[CommunicationBody] = js.undefined
   
   /**
     * The AWS Support case ID requested or returned in the call. The case ID is an alphanumeric string formatted as shown in this example: case-12345678910-2013-c4c1d2bf33c5cf47 
     */
-  var caseId: js.UndefOr[CaseId] = js.native
+  var caseId: js.UndefOr[CaseId] = js.undefined
   
   /**
     * The identity of the account that submitted, or responded to, the support case. Customer entries include the role or IAM user as well as the email address. For example, "AdminRole (Role) &lt;someone@example.com&gt;. Entries from the AWS Support team display "Amazon Web Services," and do not show an email address. 
     */
-  var submittedBy: js.UndefOr[SubmittedBy] = js.native
+  var submittedBy: js.UndefOr[SubmittedBy] = js.undefined
   
   /**
     * The time the communication was created.
     */
-  var timeCreated: js.UndefOr[TimeCreated] = js.native
+  var timeCreated: js.UndefOr[TimeCreated] = js.undefined
 }
 object Communication {
   

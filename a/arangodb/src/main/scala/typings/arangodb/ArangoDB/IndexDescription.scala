@@ -2,27 +2,25 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexDescription[T] extends StObject {
   
-  var deduplicate: js.UndefOr[Boolean] = js.native
+  var deduplicate: js.UndefOr[Boolean] = js.undefined
   
-  var expireAfter: js.UndefOr[Double] = js.native
+  var expireAfter: js.UndefOr[Double] = js.undefined
   
-  var fields: js.Array[/* keyof T */ String] = js.native
+  var fields: js.Array[/* keyof T */ String]
   
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var sparse: js.UndefOr[Boolean] = js.native
+  var sparse: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: IndexType = js.native
+  var `type`: IndexType
   
-  var unique: js.UndefOr[Boolean] = js.native
+  var unique: js.UndefOr[Boolean] = js.undefined
 }
 object IndexDescription {
   
@@ -34,7 +32,7 @@ object IndexDescription {
   }
   
   @scala.inline
-  implicit class IndexDescriptionMutableBuilder[Self <: IndexDescription[_], T] (val x: Self with IndexDescription[T]) extends AnyVal {
+  implicit class IndexDescriptionMutableBuilder[Self <: IndexDescription[?], T] (val x: Self & IndexDescription[T]) extends AnyVal {
     
     @scala.inline
     def setDeduplicate(value: Boolean): Self = StObject.set(x, "deduplicate", value.asInstanceOf[js.Any])

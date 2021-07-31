@@ -2,15 +2,13 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cancel extends StObject {
   
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
-  var text: String = js.native
+  var text: String
 }
 object Cancel {
   

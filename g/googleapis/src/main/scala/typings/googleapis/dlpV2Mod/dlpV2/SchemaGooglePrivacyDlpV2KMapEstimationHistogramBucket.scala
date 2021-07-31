@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,34 +12,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * max_anonymity = 1: the frequency field then corresponds to the number of
   * uniquely identifiable records.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket extends StObject {
   
   /**
     * Number of records within these anonymity bounds.
     */
-  var bucketSize: js.UndefOr[String] = js.native
+  var bucketSize: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of distinct quasi-identifier tuple values in this bucket.
     */
-  var bucketValueCount: js.UndefOr[String] = js.native
+  var bucketValueCount: js.UndefOr[String] = js.undefined
   
   /**
     * Sample of quasi-identifier tuple values in this bucket. The total number
     * of classes returned per bucket is capped at 20.
     */
-  var bucketValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2KMapEstimationQuasiIdValues]] = js.native
+  var bucketValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2KMapEstimationQuasiIdValues]] = js.undefined
   
   /**
     * Always greater than or equal to min_anonymity.
     */
-  var maxAnonymity: js.UndefOr[String] = js.native
+  var maxAnonymity: js.UndefOr[String] = js.undefined
   
   /**
     * Always positive.
     */
-  var minAnonymity: js.UndefOr[String] = js.native
+  var minAnonymity: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket {
   

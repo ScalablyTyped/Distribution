@@ -2,31 +2,29 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldLevelEncryptionConfig extends StObject {
   
   /**
     * A unique number that ensures the request can't be replayed.
     */
-  var CallerReference: String = js.native
+  var CallerReference: String
   
   /**
     * An optional comment about the configuration.
     */
-  var Comment: js.UndefOr[String] = js.native
+  var Comment: js.UndefOr[String] = js.undefined
   
   /**
     * A complex data type that specifies when to forward content if a content type isn't recognized and profiles to use as by default in a request if a query argument doesn't specify a profile to use.
     */
-  var ContentTypeProfileConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.ContentTypeProfileConfig] = js.native
+  var ContentTypeProfileConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.ContentTypeProfileConfig] = js.undefined
   
   /**
     * A complex data type that specifies when to forward content if a profile isn't found and the profile that can be provided as a query argument in a request.
     */
-  var QueryArgProfileConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.QueryArgProfileConfig] = js.native
+  var QueryArgProfileConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.QueryArgProfileConfig] = js.undefined
 }
 object FieldLevelEncryptionConfig {
   

@@ -2,13 +2,11 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the sorting options.
   */
-@js.native
 trait SchemaOrderBy extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait SchemaOrderBy extends StObject {
     * `ga:browser`. Note, that you can only specify one field for sort here.
     * For example, `ga:browser, ga:city` is not valid.
     */
-  var fieldName: js.UndefOr[String] = js.native
+  var fieldName: js.UndefOr[String] = js.undefined
   
   /**
     * The order type. The default orderType is `VALUE`.
     */
-  var orderType: js.UndefOr[String] = js.native
+  var orderType: js.UndefOr[String] = js.undefined
   
   /**
     * The sorting order for the field.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
 }
 object SchemaOrderBy {
   

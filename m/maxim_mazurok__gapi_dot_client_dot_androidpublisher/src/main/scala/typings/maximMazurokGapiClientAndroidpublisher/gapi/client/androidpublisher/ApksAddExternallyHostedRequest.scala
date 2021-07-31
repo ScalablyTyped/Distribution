@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApksAddExternallyHostedRequest extends StObject {
   
   /** The definition of the externally-hosted APK and where it is located. */
-  var externallyHostedApk: js.UndefOr[ExternallyHostedApk] = js.native
+  var externallyHostedApk: js.UndefOr[ExternallyHostedApk] = js.undefined
 }
 object ApksAddExternallyHostedRequest {
   

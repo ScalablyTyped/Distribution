@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,23 @@ object LineCapStyle extends StObject {
     * Stroke ends in butt caps.
     */
   @js.native
-  sealed trait Butt extends LineCapStyle
+  sealed trait Butt
+    extends StObject
+       with LineCapStyle
   
   /**
     * Stroke ends in round caps.
     */
   @js.native
-  sealed trait Round extends LineCapStyle
+  sealed trait Round
+    extends StObject
+       with LineCapStyle
   
   /**
     * Stroke ends in square caps.
     */
   @js.native
-  sealed trait Square extends LineCapStyle
+  sealed trait Square
+    extends StObject
+       with LineCapStyle
 }

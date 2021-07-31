@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveAnalyticsRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait RemoveAnalyticsRequest extends StObject {
     * the specified `FirebaseProject` is removed. - If set, and the specified `FirebaseProject` is currently associated with a *different* Google Analytics property, then the response is
     * a `412 Precondition Failed` error.
     */
-  var analyticsPropertyId: js.UndefOr[String] = js.native
+  var analyticsPropertyId: js.UndefOr[String] = js.undefined
 }
 object RemoveAnalyticsRequest {
   

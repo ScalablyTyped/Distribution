@@ -1,11 +1,12 @@
 package typings.ecol
 
 import typings.ecol.collectionEventMod.CollectionEvent
+import typings.ecol.collectionEventMod.CollectionEvent.Listener
+import typings.ecol.collectionEventMod.CollectionEvent.Type
 import typings.ecol.icollectionMod.ICollection
 import typings.ecol.treeMultiSetCollectionMod.TreeMultiSetCollection.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeMultiSetCollectionMod {
@@ -14,7 +15,8 @@ object treeMultiSetCollectionMod {
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeMultiSet<T> * / any */ @JSImport("ecol/lib/sets/TreeMultiSetCollection", "TreeMultiSetCollection")
   @js.native
   class TreeMultiSetCollection[T] ()
-    extends ICollection[
+    extends StObject
+       with ICollection[
           T, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet<T> */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.Iterator<T> */ js.Any, 
@@ -37,17 +39,37 @@ object treeMultiSetCollectionMod {
       last: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeMultiSet.Iterator<T> */ js.Any
     ): Unit = js.native
     
+    /* CompleteClass */
+    override def addEventListener(
+      `type`: Type,
+      listener: Listener[
+          T, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet<T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.Iterator<T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.ReverseIterator<T> */ js.Any
+        ]
+    ): Unit = js.native
+    
     def clear(): Unit = js.native
     
+    /* CompleteClass */
+    override def dispatchEvent(
+      event: CollectionEvent[
+          T, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet<T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.Iterator<T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.ReverseIterator<T> */ js.Any
+        ]
+    ): Unit = js.native
     /**
       * @inheritDoc
       */
     def dispatchEvent(
       event: Event[
           T, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ _, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ _, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any
         ]
     ): Unit = js.native
     
@@ -55,6 +77,20 @@ object treeMultiSetCollectionMod {
       * @hidden
       */
     var dispatcher_ : js.Any = js.native
+    
+    /* CompleteClass */
+    override def hasEventListener(`type`: Type): Boolean = js.native
+    
+    /* CompleteClass */
+    override def removeEventListener(
+      `type`: Type,
+      listener: Listener[
+          T, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet<T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.Iterator<T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.ReverseIterator<T> */ js.Any
+        ]
+    ): Unit = js.native
   }
   object TreeMultiSetCollection {
     

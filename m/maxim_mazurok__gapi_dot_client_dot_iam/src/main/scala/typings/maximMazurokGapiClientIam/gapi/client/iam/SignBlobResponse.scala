@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignBlobResponse extends StObject {
   
   /** Deprecated. [Migrate to Service Account Credentials API](https://cloud.google.com/iam/help/credentials/migrate-api). The id of the key used to sign the blob. */
-  var keyId: js.UndefOr[String] = js.native
+  var keyId: js.UndefOr[String] = js.undefined
   
   /** Deprecated. [Migrate to Service Account Credentials API](https://cloud.google.com/iam/help/credentials/migrate-api). The signed blob. */
-  var signature: js.UndefOr[String] = js.native
+  var signature: js.UndefOr[String] = js.undefined
 }
 object SignBlobResponse {
   

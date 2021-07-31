@@ -10,15 +10,13 @@ import typings.atom.atomStrings.surround
 import typings.atom.atomStrings.touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClipDirectionInvalidate extends StObject {
   
-  var clipDirection: js.UndefOr[backward | forward | closest] = js.native
+  var clipDirection: js.UndefOr[backward | forward | closest] = js.undefined
   
-  var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.native
+  var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.undefined
 }
 object ClipDirectionInvalidate {
   

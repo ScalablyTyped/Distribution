@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureCollection extends ClientObjectCollection[Feature] {
+trait FeatureCollection
+  extends StObject
+     with ClientObjectCollection[Feature] {
   
   def add(featureId: Guid, force: Boolean, featdefScope: FeatureDefinitionScope): Feature = js.native
   

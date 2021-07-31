@@ -2,13 +2,11 @@ package typings.playmusic.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MutateResponses extends StObject {
   
-  var mutate_response: js.UndefOr[js.Array[MutateResponse]] = js.native
+  var mutate_response: js.UndefOr[js.Array[MutateResponse]] = js.undefined
 }
 object MutateResponses {
   

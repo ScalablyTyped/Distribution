@@ -5,38 +5,37 @@ import typings.typeorm.connectionOptionsMod.ConnectionOptions
 import typings.typeorm.typeormStrings.cordova
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cordovaConnectionOptionsMod {
   
-  @js.native
   trait CordovaConnectionOptions
-    extends BaseConnectionOptions
+    extends StObject
+       with BaseConnectionOptions
        with ConnectionOptions {
     
     /**
       * Database name.
       */
-    val database: String = js.native
+    val database: String
     
     /**
       * Storage Location
       */
-    val location: String = js.native
+    val location: String
     
     /**
       * Database type.
       */
     @JSName("type")
-    val type_CordovaConnectionOptions: cordova = js.native
+    val type_CordovaConnectionOptions: cordova
   }
   object CordovaConnectionOptions {
     
     @scala.inline
-    def apply(database: String, location: String, `type`: cordova): CordovaConnectionOptions = {
+    def apply(database: String, location: String): CordovaConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("cordova")
       __obj.asInstanceOf[CordovaConnectionOptions]
     }
     

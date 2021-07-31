@@ -8,14 +8,16 @@ import typings.node.httpMod.ServerResponse
 import typings.node.netMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Mitm = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Mitm]
+  
   @JSImport("mitm", JSImport.Namespace)
   @js.native
-  def apply(): Mitm = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait BypassableSocket extends Socket {
@@ -63,20 +65,19 @@ object mod {
   
   type SocketConnectionCallback = js.Function2[/* socket */ Socket, /* opts */ SocketOptions, Unit]
   
-  @js.native
   trait SocketOptions extends StObject {
     
-    var allowHalfOpen: js.UndefOr[Boolean] = js.native
+    var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
     
-    var family: js.UndefOr[Double] = js.native
+    var family: js.UndefOr[Double] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
-    var localPort: js.UndefOr[String] = js.native
+    var localPort: js.UndefOr[String] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
   }
   object SocketOptions {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.connectparticipantMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateParticipantConnectionRequest extends StObject {
   
   /**
     * Participant Token as obtained from StartChatContact API response.
     */
-  var ParticipantToken: typings.awsSdk.connectparticipantMod.ParticipantToken = js.native
+  var ParticipantToken: typings.awsSdk.connectparticipantMod.ParticipantToken
   
   /**
     * Type of connection information required.
     */
-  var Type: ConnectionTypeList = js.native
+  var Type: ConnectionTypeList
 }
 object CreateParticipantConnectionRequest {
   

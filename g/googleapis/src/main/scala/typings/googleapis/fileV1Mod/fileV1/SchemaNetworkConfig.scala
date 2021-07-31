@@ -2,13 +2,11 @@ package typings.googleapis.fileV1Mod.fileV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Network configuration for the instance.
   */
-@js.native
 trait SchemaNetworkConfig extends StObject {
   
   /**
@@ -16,20 +14,20 @@ trait SchemaNetworkConfig extends StObject {
     * 3}.{octet 4} or IPv6 addresses in the format {block 1}:{block 2}:{block
     * 3}:{block 4}:{block 5}:{block 6}:{block 7}:{block 8}.
     */
-  var ipAddresses: js.UndefOr[js.Array[String]] = js.native
+  var ipAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Internet protocol versions for which the instance has IP addresses
     * assigned. For this version, only MODE_IPV4 is supported.
     */
-  var modes: js.UndefOr[js.Array[String]] = js.native
+  var modes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The name of the Google Compute Engine [VPC
     * network](/compute/docs/networks-and-firewalls#networks) to which the
     * instance is connected.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * A /29 CIDR block in one of the [internal IP address
@@ -39,7 +37,7 @@ trait SchemaNetworkConfig extends StObject {
     * overlap with either existing subnets or assigned IP address ranges for
     * other Cloud Filestore instances in the selected VPC network.
     */
-  var reservedIpRange: js.UndefOr[String] = js.native
+  var reservedIpRange: js.UndefOr[String] = js.undefined
 }
 object SchemaNetworkConfig {
   

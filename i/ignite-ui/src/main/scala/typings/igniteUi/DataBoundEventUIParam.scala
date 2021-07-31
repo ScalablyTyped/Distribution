@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataBoundEventUIParam extends StObject {
   
   /**
     * Used to obtain reference to array actual data which is displayed by chart.
     */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to obtain reference to instance of $.ig.DataSource.
     */
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to obtain reference to chart widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object DataBoundEventUIParam {
   

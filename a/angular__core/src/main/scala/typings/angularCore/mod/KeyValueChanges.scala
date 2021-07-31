@@ -2,38 +2,36 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyValueChanges[K, V] extends StObject {
   
   /**
     * Iterate over all added items.
     */
-  def forEachAddedItem(fn: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit]): Unit = js.native
+  def forEachAddedItem(fn: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit]): Unit
   
   /**
     * Iterate over all keys for which values have changed.
     */
-  def forEachChangedItem(fn: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit]): Unit = js.native
+  def forEachChangedItem(fn: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit]): Unit
   
   /**
     * Iterate over all changes. `KeyValueChangeRecord` will contain information about changes
     * to each item.
     */
-  def forEachItem(fn: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit]): Unit = js.native
+  def forEachItem(fn: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit]): Unit
   
   /**
     * Iterate over changes in the order of original Map showing where the original items
     * have moved.
     */
-  def forEachPreviousItem(fn: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit]): Unit = js.native
+  def forEachPreviousItem(fn: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit]): Unit
   
   /**
     * Iterate over all removed items.
     */
-  def forEachRemovedItem(fn: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit]): Unit = js.native
+  def forEachRemovedItem(fn: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit]): Unit
 }
 object KeyValueChanges {
   
@@ -50,7 +48,7 @@ object KeyValueChanges {
   }
   
   @scala.inline
-  implicit class KeyValueChangesMutableBuilder[Self <: KeyValueChanges[_, _], K, V] (val x: Self with (KeyValueChanges[K, V])) extends AnyVal {
+  implicit class KeyValueChangesMutableBuilder[Self <: KeyValueChanges[?, ?], K, V] (val x: Self & (KeyValueChanges[K, V])) extends AnyVal {
     
     @scala.inline
     def setForEachAddedItem(value: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit): Self = StObject.set(x, "forEachAddedItem", js.Any.fromFunction1(value))

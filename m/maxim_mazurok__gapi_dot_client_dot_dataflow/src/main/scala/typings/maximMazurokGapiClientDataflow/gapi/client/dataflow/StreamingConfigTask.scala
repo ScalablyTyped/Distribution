@@ -3,36 +3,34 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamingConfigTask extends StObject {
   
   /** Chunk size for commit streams from the harness to windmill. */
-  var commitStreamChunkSizeBytes: js.UndefOr[String] = js.native
+  var commitStreamChunkSizeBytes: js.UndefOr[String] = js.undefined
   
   /** Chunk size for get data streams from the harness to windmill. */
-  var getDataStreamChunkSizeBytes: js.UndefOr[String] = js.native
+  var getDataStreamChunkSizeBytes: js.UndefOr[String] = js.undefined
   
   /** Maximum size for work item commit supported windmill storage layer. */
-  var maxWorkItemCommitBytes: js.UndefOr[String] = js.native
+  var maxWorkItemCommitBytes: js.UndefOr[String] = js.undefined
   
   /** Set of computation configuration information. */
-  var streamingComputationConfigs: js.UndefOr[js.Array[StreamingComputationConfig]] = js.native
+  var streamingComputationConfigs: js.UndefOr[js.Array[StreamingComputationConfig]] = js.undefined
   
   /** Map from user step names to state families. */
   var userStepToStateFamilyNameMap: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingConfigTask with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingConfigTask & TopLevel[js.Any]
+  ] = js.undefined
   
   /** If present, the worker must use this endpoint to communicate with Windmill Service dispatchers, otherwise the worker must continue to use whatever endpoint it had been using. */
-  var windmillServiceEndpoint: js.UndefOr[String] = js.native
+  var windmillServiceEndpoint: js.UndefOr[String] = js.undefined
   
   /** If present, the worker must use this port to communicate with Windmill Service dispatchers. Only applicable when windmill_service_endpoint is specified. */
-  var windmillServicePort: js.UndefOr[String] = js.native
+  var windmillServicePort: js.UndefOr[String] = js.undefined
 }
 object StreamingConfigTask {
   
@@ -76,7 +74,7 @@ object StreamingConfigTask {
     def setUserStepToStateFamilyNameMap(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingConfigTask with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingConfigTask & TopLevel[js.Any]
     ): Self = StObject.set(x, "userStepToStateFamilyNameMap", value.asInstanceOf[js.Any])
     
     @scala.inline

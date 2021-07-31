@@ -2,21 +2,19 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleVariables extends StObject {
   
   /**
     * A list of IP addresses and address ranges, in CIDR notation. 
     */
-  var IPSets: js.UndefOr[typings.awsSdk.networkfirewallMod.IPSets] = js.native
+  var IPSets: js.UndefOr[typings.awsSdk.networkfirewallMod.IPSets] = js.undefined
   
   /**
     * A list of port ranges. 
     */
-  var PortSets: js.UndefOr[typings.awsSdk.networkfirewallMod.PortSets] = js.native
+  var PortSets: js.UndefOr[typings.awsSdk.networkfirewallMod.PortSets] = js.undefined
 }
 object RuleVariables {
   

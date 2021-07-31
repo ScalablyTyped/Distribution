@@ -6,7 +6,6 @@ import typings.react.mod.HTMLProps
 import typings.reactBootstrap.mod.Sizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputGroupMod {
@@ -47,12 +46,13 @@ object inputGroupMod {
   trait InputGroup
     extends Component[InputGroupProps, js.Object, js.Any]
   
-  @js.native
-  trait InputGroupProps extends HTMLProps[InputGroup] {
+  trait InputGroupProps
+    extends StObject
+       with HTMLProps[InputGroup] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var bsSize: js.UndefOr[Sizes] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
   }
   object InputGroupProps {
     

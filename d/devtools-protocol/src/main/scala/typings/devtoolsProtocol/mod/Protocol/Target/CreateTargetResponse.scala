@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTargetResponse extends StObject {
   
   /**
     * The id of the page opened.
     */
-  var targetId: TargetID = js.native
+  var targetId: TargetID
 }
 object CreateTargetResponse {
   

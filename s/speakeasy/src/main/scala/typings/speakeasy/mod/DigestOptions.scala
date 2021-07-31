@@ -2,20 +2,20 @@ package typings.speakeasy.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DigestOptions extends SharedOptions {
+trait DigestOptions
+  extends StObject
+     with SharedOptions {
   
-  var counter: Double = js.native
+  var counter: Double
   
   /**
     * @deprecated use secret
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var secret: String = js.native
+  var secret: String
 }
 object DigestOptions {
   

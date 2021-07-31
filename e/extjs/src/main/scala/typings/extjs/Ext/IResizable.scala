@@ -4,60 +4,60 @@ import typings.extjs.Ext.resizer.IResizeTracker
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IResizable extends IObservable {
+trait IResizable
+  extends StObject
+     with IObservable {
   
   /** [Config Option] (Ext.Element/Ext.util.Region) */
-  var constrainTo: js.UndefOr[js.Any] = js.native
+  var constrainTo: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var dynamic: js.UndefOr[Boolean] = js.native
+  var dynamic: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Ext.Element) */
-  var el: js.UndefOr[IElement] = js.native
+  var el: js.UndefOr[IElement] = js.undefined
   
   /** [Method] Returns the element that was configured with the el or target config property
     * @returns Ext.Element element
     */
-  var getEl: js.UndefOr[js.Function0[IElement]] = js.native
+  var getEl: js.UndefOr[js.Function0[IElement]] = js.undefined
   
   /** [Method] Returns the element or component that was configured with the target config property
     * @returns Ext.Element/Ext.Component
     */
-  var getTarget: js.UndefOr[js.Function0[_]] = js.native
+  var getTarget: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (String) */
-  var handles: js.UndefOr[java.lang.String] = js.native
+  var handles: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Number) */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var heightIncrement: js.UndefOr[Double] = js.native
+  var heightIncrement: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Ext.Element/Ext.Component) */
-  var originalTarget: js.UndefOr[js.Any] = js.native
+  var originalTarget: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var pinned: js.UndefOr[Boolean] = js.native
+  var pinned: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var preserveRatio: js.UndefOr[Boolean] = js.native
+  var preserveRatio: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Perform a manual resize and fires the resize event
     * @param width Number
@@ -65,22 +65,22 @@ trait IResizable extends IObservable {
     */
   var resizeTo: js.UndefOr[
     js.Function2[/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Property] (Ext.resizer.ResizeTracker) */
-  var resizeTracker: js.UndefOr[IResizeTracker] = js.native
+  var resizeTracker: js.UndefOr[IResizeTracker] = js.undefined
   
   /** [Config Option] (Ext.Element/Ext.Component) */
-  var target: js.UndefOr[js.Any] = js.native
+  var target: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var transparent: js.UndefOr[Boolean] = js.native
+  var transparent: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var widthIncrement: js.UndefOr[Double] = js.native
+  var widthIncrement: js.UndefOr[Double] = js.undefined
 }
 object IResizable {
   
@@ -118,7 +118,7 @@ object IResizable {
     def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
     
     @scala.inline
-    def setGetTarget(value: () => _): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+    def setGetTarget(value: () => js.Any): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)

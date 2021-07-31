@@ -2,17 +2,15 @@ package typings.inboxsdk.mod.Lists
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThreadRowDateDescriptor extends StObject {
   
-  var text: String = js.native
+  var text: String
   
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object ThreadRowDateDescriptor {
   

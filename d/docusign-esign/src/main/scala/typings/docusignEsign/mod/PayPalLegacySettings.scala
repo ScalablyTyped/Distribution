@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PayPalLegacySettings extends StObject {
   
   /**
@@ -25,21 +23,21 @@ trait PayPalLegacySettings extends StObject {
     * [ISO4217]:          https://en.wikipedia.org/wiki/ISO_4217
     *
     */
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var partner: js.UndefOr[String] = js.native
+  var partner: js.UndefOr[String] = js.undefined
   
   /**
     * The user's encrypted password hash.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the user.
     */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
   
-  var vendor: js.UndefOr[String] = js.native
+  var vendor: js.UndefOr[String] = js.undefined
 }
 object PayPalLegacySettings {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FSxWindowsFileServerVolumeConfiguration extends StObject {
   
   /**
     * The authorization configuration details for the Amazon FSx for Windows File Server file system.
     */
-  var authorizationConfig: FSxWindowsFileServerAuthorizationConfig = js.native
+  var authorizationConfig: FSxWindowsFileServerAuthorizationConfig
   
   /**
     * The Amazon FSx for Windows File Server file system ID to use.
     */
-  var fileSystemId: String = js.native
+  var fileSystemId: String
   
   /**
     * The directory within the Amazon FSx for Windows File Server file system to mount as the root directory inside the host.
     */
-  var rootDirectory: String = js.native
+  var rootDirectory: String
 }
 object FSxWindowsFileServerVolumeConfiguration {
   

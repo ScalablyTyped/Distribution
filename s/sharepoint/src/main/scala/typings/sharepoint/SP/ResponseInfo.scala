@@ -4,28 +4,26 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseInfo extends StObject {
   
-  var allResponseHeaders: js.UndefOr[String] = js.native
+  var allResponseHeaders: js.UndefOr[String] = js.undefined
   
   /** Can be string or bytearray depending on request.binaryStringResponseBody field */
-  var body: js.UndefOr[String | Uint8Array] = js.native
+  var body: js.UndefOr[String | Uint8Array] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var responseAvailable: Boolean = js.native
+  var responseAvailable: Boolean
   
-  var state: js.UndefOr[js.Any] = js.native
+  var state: js.UndefOr[js.Any] = js.undefined
   
-  var statusCode: js.UndefOr[Double] = js.native
+  var statusCode: js.UndefOr[Double] = js.undefined
   
-  var statusText: js.UndefOr[String] = js.native
+  var statusText: js.UndefOr[String] = js.undefined
 }
 object ResponseInfo {
   

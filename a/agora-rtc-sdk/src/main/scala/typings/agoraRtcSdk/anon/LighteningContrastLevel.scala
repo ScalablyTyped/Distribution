@@ -2,10 +2,8 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LighteningContrastLevel extends StObject {
   
   /** The contrast level, used with the `lighteningLevel` parameter.
@@ -14,25 +12,25 @@ trait LighteningContrastLevel extends StObject {
     * - 1: (Default) The original contrast level.
     * - 2: High contrast level.
     */
-  var lighteningContrastLevel: js.UndefOr[Double] = js.native
+  var lighteningContrastLevel: js.UndefOr[Double] = js.undefined
   
   /** The brightness level.
     *
     * The value ranges from 0.0 (original) to 1.0. The default value is 0.7.
     */
-  var lighteningLevel: js.UndefOr[Double] = js.native
+  var lighteningLevel: js.UndefOr[Double] = js.undefined
   
   /** The redness level.
     *
     * The value ranges from 0.0 (original) to 1.0. The default value is 0.1. This parameter adjusts the red saturation level.
     */
-  var rednessLevel: js.UndefOr[Double] = js.native
+  var rednessLevel: js.UndefOr[Double] = js.undefined
   
   /** The sharpness level.
     *
     * The value ranges from 0.0 (original) to 1.0. The default value is 0.5. This parameter is usually used to remove blemishes.
     */
-  var smoothnessLevel: js.UndefOr[Double] = js.native
+  var smoothnessLevel: js.UndefOr[Double] = js.undefined
 }
 object LighteningContrastLevel {
   

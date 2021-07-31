@@ -2,25 +2,23 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 特征值支持的操作 */
-@js.native
 trait CharacteristicProperties extends StObject {
   
   /** 回包 */
-  var indicate: js.UndefOr[Boolean] = js.native
+  var indicate: js.UndefOr[Boolean] = js.undefined
   
   /** 订阅 */
   @JSName("notify")
-  var notify_FCharacteristicProperties: js.UndefOr[Boolean] = js.native
+  var notify_FCharacteristicProperties: js.UndefOr[Boolean] = js.undefined
   
   /** 读 */
-  var read: js.UndefOr[Boolean] = js.native
+  var read: js.UndefOr[Boolean] = js.undefined
   
   /** 写 */
-  var write: js.UndefOr[Boolean] = js.native
+  var write: js.UndefOr[Boolean] = js.undefined
 }
 object CharacteristicProperties {
   

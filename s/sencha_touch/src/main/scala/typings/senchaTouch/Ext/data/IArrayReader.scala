@@ -3,23 +3,23 @@ package typings.senchaTouch.Ext.data
 import typings.senchaTouch.Ext.data.reader.IJson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IArrayReader extends IJson {
+trait IArrayReader
+  extends StObject
+     with IJson {
   
   /** [Method] Sets the value of successProperty
     * @param successProperty Object The new value.
     */
   @JSName("setSuccessProperty")
-  var setSuccessProperty_IArrayReader: js.UndefOr[js.Function1[/* successProperty */ js.UndefOr[js.Any], Unit]] = js.native
+  var setSuccessProperty_IArrayReader: js.UndefOr[js.Function1[/* successProperty */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of totalProperty
     * @param totalProperty Object The new value.
     */
   @JSName("setTotalProperty")
-  var setTotalProperty_IArrayReader: js.UndefOr[js.Function1[/* totalProperty */ js.UndefOr[js.Any], Unit]] = js.native
+  var setTotalProperty_IArrayReader: js.UndefOr[js.Function1[/* totalProperty */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object IArrayReader {
   

@@ -4,7 +4,6 @@ import typings.activexAdodb.activexAdodbNumbers.`-1`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -50,8 +49,8 @@ trait Connection extends StObject {
     * * If **CommandText** isn't intended to return results (e.g. an `UPDATE` statement), a closed empty **Recordset** will be returned.
     */
   def Execute(CommandText: String): Recordset | Null = js.native
-  def Execute(CommandText: String, RecordsAffected: js.UndefOr[scala.Nothing], Options: CommandTypeEnum): Recordset | Null = js.native
-  def Execute(CommandText: String, RecordsAffected: js.UndefOr[scala.Nothing], Options: ExecuteOptionEnum): Recordset | Null = js.native
+  def Execute(CommandText: String, RecordsAffected: Unit, Options: CommandTypeEnum): Recordset | Null = js.native
+  def Execute(CommandText: String, RecordsAffected: Unit, Options: ExecuteOptionEnum): Recordset | Null = js.native
   
   var IsolationLevel: IsolationLevelEnum = js.native
   
@@ -64,41 +63,21 @@ trait Connection extends StObject {
     * @param Options [Options=-1]
     */
   def Open(): Unit = js.native
-  def Open(
-    ConnectionString: js.UndefOr[scala.Nothing],
-    UserID: js.UndefOr[scala.Nothing],
-    Password: js.UndefOr[scala.Nothing],
-    Options: Double
-  ): Unit = js.native
-  def Open(ConnectionString: js.UndefOr[scala.Nothing], UserID: js.UndefOr[scala.Nothing], Password: String): Unit = js.native
-  def Open(
-    ConnectionString: js.UndefOr[scala.Nothing],
-    UserID: js.UndefOr[scala.Nothing],
-    Password: String,
-    Options: Double
-  ): Unit = js.native
-  def Open(ConnectionString: js.UndefOr[scala.Nothing], UserID: String): Unit = js.native
-  def Open(
-    ConnectionString: js.UndefOr[scala.Nothing],
-    UserID: String,
-    Password: js.UndefOr[scala.Nothing],
-    Options: Double
-  ): Unit = js.native
-  def Open(ConnectionString: js.UndefOr[scala.Nothing], UserID: String, Password: String): Unit = js.native
-  def Open(ConnectionString: js.UndefOr[scala.Nothing], UserID: String, Password: String, Options: Double): Unit = js.native
   def Open(ConnectionString: String): Unit = js.native
-  def Open(
-    ConnectionString: String,
-    UserID: js.UndefOr[scala.Nothing],
-    Password: js.UndefOr[scala.Nothing],
-    Options: Double
-  ): Unit = js.native
-  def Open(ConnectionString: String, UserID: js.UndefOr[scala.Nothing], Password: String): Unit = js.native
-  def Open(ConnectionString: String, UserID: js.UndefOr[scala.Nothing], Password: String, Options: Double): Unit = js.native
   def Open(ConnectionString: String, UserID: String): Unit = js.native
-  def Open(ConnectionString: String, UserID: String, Password: js.UndefOr[scala.Nothing], Options: Double): Unit = js.native
   def Open(ConnectionString: String, UserID: String, Password: String): Unit = js.native
   def Open(ConnectionString: String, UserID: String, Password: String, Options: Double): Unit = js.native
+  def Open(ConnectionString: String, UserID: String, Password: Unit, Options: Double): Unit = js.native
+  def Open(ConnectionString: String, UserID: Unit, Password: String): Unit = js.native
+  def Open(ConnectionString: String, UserID: Unit, Password: String, Options: Double): Unit = js.native
+  def Open(ConnectionString: String, UserID: Unit, Password: Unit, Options: Double): Unit = js.native
+  def Open(ConnectionString: Unit, UserID: String): Unit = js.native
+  def Open(ConnectionString: Unit, UserID: String, Password: String): Unit = js.native
+  def Open(ConnectionString: Unit, UserID: String, Password: String, Options: Double): Unit = js.native
+  def Open(ConnectionString: Unit, UserID: String, Password: Unit, Options: Double): Unit = js.native
+  def Open(ConnectionString: Unit, UserID: Unit, Password: String): Unit = js.native
+  def Open(ConnectionString: Unit, UserID: Unit, Password: String, Options: Double): Unit = js.native
+  def Open(ConnectionString: Unit, UserID: Unit, Password: Unit, Options: Double): Unit = js.native
   
   /**
     * Returns a Recordset object that contains schema information

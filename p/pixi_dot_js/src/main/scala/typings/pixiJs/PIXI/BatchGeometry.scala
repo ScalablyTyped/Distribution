@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait BatchGeometry extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait BatchGeometry extends StObject {
     * @member {PIXI.Buffer} PIXI.BatchGeometry#_buffer
     * @protected
     */
-  var _buffer: Buffer = js.native
+  var _buffer: Buffer
   
   /**
     * Index buffer data
@@ -28,7 +26,7 @@ trait BatchGeometry extends StObject {
     * @member {PIXI.Buffer} PIXI.BatchGeometry#_indexBuffer
     * @protected
     */
-  var _indexBuffer: Buffer = js.native
+  var _indexBuffer: Buffer
 }
 object BatchGeometry {
   

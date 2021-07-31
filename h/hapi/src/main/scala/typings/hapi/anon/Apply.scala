@@ -2,16 +2,14 @@ package typings.hapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Apply extends StObject {
   
   @JSName("apply")
-  var apply: js.UndefOr[Boolean] = js.native
+  var apply: js.UndefOr[Boolean] = js.undefined
   
-  var extend: js.UndefOr[Boolean] = js.native
+  var extend: js.UndefOr[Boolean] = js.undefined
 }
 object Apply {
   

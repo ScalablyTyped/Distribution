@@ -2,29 +2,28 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AtrulePlain
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNodePlain {
   
-  var block: BlockPlain | Null = js.native
+  var block: BlockPlain | Null
   
-  var name: String = js.native
+  var name: String
   
-  var prelude: AtrulePreludePlain | Raw | Null = js.native
+  var prelude: AtrulePreludePlain | Raw | Null
   
   @JSName("type")
-  var type_AtrulePlain: typings.cssTree.cssTreeStrings.Atrule = js.native
+  var type_AtrulePlain: typings.cssTree.cssTreeStrings.Atrule
 }
 object AtrulePlain {
   
   @scala.inline
-  def apply(name: String, `type`: typings.cssTree.cssTreeStrings.Atrule): AtrulePlain = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(name: String): AtrulePlain = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], block = null, prelude = null)
+    __obj.updateDynamic("type")("Atrule")
     __obj.asInstanceOf[AtrulePlain]
   }
   

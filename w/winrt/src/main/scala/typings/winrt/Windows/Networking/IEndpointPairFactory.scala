@@ -2,10 +2,8 @@ package typings.winrt.Windows.Networking
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEndpointPairFactory extends StObject {
   
   def createEndpointPair(
@@ -13,7 +11,7 @@ trait IEndpointPairFactory extends StObject {
     localServiceName: String,
     remoteHostName: HostName,
     remoteServiceName: String
-  ): EndpointPair = js.native
+  ): EndpointPair
 }
 object IEndpointPairFactory {
   

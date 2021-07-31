@@ -4,7 +4,6 @@ import typings.progress.mod.ProgressBarOptions
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,41 +13,44 @@ object mod {
     */
   @JSImport("progress-bar-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
-  @js.native
-  trait Options extends ProgressBarOptions {
+  trait Options
+    extends StObject
+       with ProgressBarOptions {
     
     /**
       * optional function to call when the progress bar completes
       */
     @JSName("callback")
-    var callback_Options: js.UndefOr[js.Function0[Unit]] = js.native
+    var callback_Options: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * function to display a custom summary
       * (passed build time)
       */
-    var customSummary: js.UndefOr[js.Function1[/* summary */ String, Unit]] = js.native
+    var customSummary: js.UndefOr[js.Function1[/* summary */ String, Unit]] = js.undefined
     
     /**
       * the format of the progress bar
       * @default ':bar'
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * option to show summary of time taken
       * @default true
       */
-    var summary: js.UndefOr[Boolean] = js.native
+    var summary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * custom summary message if summary option is false
       */
-    var summaryContent: js.UndefOr[Boolean] = js.native
+    var summaryContent: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

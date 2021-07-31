@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportRowDimensionValue extends StObject {
   
   /** The localized string representation of the value. If unspecified, the display label should be derived from the value. */
-  var displayLabel: js.UndefOr[String] = js.native
+  var displayLabel: js.UndefOr[String] = js.undefined
   
   /** Dimension value in the format specified in the report's spec Dimension enum. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object ReportRowDimensionValue {
   

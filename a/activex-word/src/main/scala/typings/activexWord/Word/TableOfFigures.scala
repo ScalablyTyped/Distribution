@@ -2,54 +2,52 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableOfFigures extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Caption: String = js.native
+  var Caption: String
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val HeadingStyles: typings.activexWord.Word.HeadingStyles = js.native
+  val HeadingStyles: typings.activexWord.Word.HeadingStyles
   
-  var HidePageNumbersInWeb: Boolean = js.native
+  var HidePageNumbersInWeb: Boolean
   
-  var IncludeLabel: Boolean = js.native
+  var IncludeLabel: Boolean
   
-  var IncludePageNumbers: Boolean = js.native
+  var IncludePageNumbers: Boolean
   
-  var LowerHeadingLevel: Double = js.native
+  var LowerHeadingLevel: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  var RightAlignPageNumbers: Boolean = js.native
+  var RightAlignPageNumbers: Boolean
   
-  var TabLeader: WdTabLeader = js.native
+  var TabLeader: WdTabLeader
   
-  var TableID: String = js.native
+  var TableID: String
   
-  def Update(): Unit = js.native
+  def Update(): Unit
   
-  def UpdatePageNumbers(): Unit = js.native
+  def UpdatePageNumbers(): Unit
   
-  var UpperHeadingLevel: Double = js.native
+  var UpperHeadingLevel: Double
   
-  var UseFields: Boolean = js.native
+  var UseFields: Boolean
   
-  var UseHeadingStyles: Boolean = js.native
+  var UseHeadingStyles: Boolean
   
-  var UseHyperlinks: Boolean = js.native
+  var UseHyperlinks: Boolean
   
   @JSName("Word.TableOfFigures_typekey")
-  var WordDotTableOfFigures_typekey: TableOfFigures = js.native
+  var WordDotTableOfFigures_typekey: TableOfFigures
 }
 object TableOfFigures {
   

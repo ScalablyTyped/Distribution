@@ -3,42 +3,40 @@ package typings.maximMazurokGapiClientStorage.gapi.client.storage
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notification extends StObject {
   
   /** An optional list of additional attributes to attach to each Cloud PubSub message published for this notification subscription. */
   var custom_attributes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Notification with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Notification & TopLevel[js.Any]
+  ] = js.undefined
   
   /** HTTP 1.1 Entity tag for this subscription notification. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** If present, only send notifications about listed event types. If empty, sent notifications for all event types. */
-  var event_types: js.UndefOr[js.Array[String]] = js.native
+  var event_types: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The ID of the notification. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The kind of item this is. For notifications, this is always storage#notification. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** If present, only apply this notification configuration to object names that begin with this prefix. */
-  var object_name_prefix: js.UndefOr[String] = js.native
+  var object_name_prefix: js.UndefOr[String] = js.undefined
   
   /** The desired content of the Payload. */
-  var payload_format: js.UndefOr[String] = js.native
+  var payload_format: js.UndefOr[String] = js.undefined
   
   /** The canonical URL of this notification. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** The Cloud PubSub topic to which this subscription publishes. Formatted as: '//pubsub.googleapis.com/projects/{project-identifier}/topics/{my-topic}' */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
 }
 object Notification {
   
@@ -55,7 +53,7 @@ object Notification {
     def setCustom_attributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Notification with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Notification & TopLevel[js.Any]
     ): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
     
     @scala.inline

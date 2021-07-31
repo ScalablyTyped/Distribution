@@ -3,25 +3,23 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseGates extends StObject {
   
-  var deploymentJobs: js.Array[DeploymentJob] = js.native
+  var deploymentJobs: js.Array[DeploymentJob]
   
-  var id: Double = js.native
+  var id: Double
   
-  var lastModifiedOn: Date = js.native
+  var lastModifiedOn: Date
   
-  var runPlanId: String = js.native
+  var runPlanId: String
   
-  var stabilizationCompletedOn: Date = js.native
+  var stabilizationCompletedOn: Date
   
-  var startedOn: Date = js.native
+  var startedOn: Date
   
-  var status: GateStatus = js.native
+  var status: GateStatus
 }
 object ReleaseGates {
   

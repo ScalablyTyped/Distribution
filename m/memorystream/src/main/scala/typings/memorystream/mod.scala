@@ -5,7 +5,6 @@ import typings.node.streamMod.Duplex
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,26 +14,26 @@ object mod {
   class ^ () extends Duplex {
     def this(data: js.Array[DataType]) = this()
     def this(data: DataType) = this()
-    def this(data: js.UndefOr[DataType], options: Options) = this()
     def this(data: js.Array[DataType], options: Options) = this()
+    def this(data: Unit, options: Options) = this()
+    def this(data: DataType, options: Options) = this()
   }
   
   type DataType = String | Buffer | Stream
   
   type MemoryStream = Duplex
   
-  @js.native
   trait Options extends StObject {
     
-    var bufoverflow: Double = js.native
+    var bufoverflow: Double
     
-    var frequence: Double = js.native
+    var frequence: Double
     
-    var maxbufsize: Double = js.native
+    var maxbufsize: Double
     
-    var readable: Boolean = js.native
+    var readable: Boolean
     
-    var writeable: Boolean = js.native
+    var writeable: Boolean
   }
   object Options {
     

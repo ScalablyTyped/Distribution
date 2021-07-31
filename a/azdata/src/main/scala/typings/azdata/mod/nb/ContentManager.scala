@@ -4,16 +4,14 @@ import typings.vscode.Thenable
 import typings.vscode.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentManager extends StObject {
   
   /* Reads contents from a Uri representing a local or remote notebook and returns a
     * JSON object containing the cells and metadata about the notebook
     */
-  def getNotebookContents(notebookUri: Uri): Thenable[INotebookContents] = js.native
+  def getNotebookContents(notebookUri: Uri): Thenable[INotebookContents]
   
   /**
     * Save a file.
@@ -25,7 +23,7 @@ trait ContentManager extends StObject {
     * @returns A thenable which resolves with the file content model when the
     *   file is saved.
     */
-  def save(notebookUri: Uri, notebook: INotebookContents): Thenable[INotebookContents] = js.native
+  def save(notebookUri: Uri, notebook: INotebookContents): Thenable[INotebookContents]
 }
 object ContentManager {
   

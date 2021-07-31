@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait V1GenerateServiceAccountResponse extends StObject {
   
   /** ServiceAccount that was created or retrieved. */
-  var account: js.UndefOr[V1ServiceAccount] = js.native
+  var account: js.UndefOr[V1ServiceAccount] = js.undefined
 }
 object V1GenerateServiceAccountResponse {
   

@@ -2,16 +2,14 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/colors/common.CommonColors> */
-@js.native
 trait PartialCommonColors extends StObject {
   
-  var black: js.UndefOr[String] = js.native
+  var black: js.UndefOr[String] = js.undefined
   
-  var white: js.UndefOr[String] = js.native
+  var white: js.UndefOr[String] = js.undefined
 }
 object PartialCommonColors {
   

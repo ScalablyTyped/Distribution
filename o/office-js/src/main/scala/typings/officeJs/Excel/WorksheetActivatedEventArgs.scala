@@ -3,7 +3,6 @@ package typings.officeJs.Excel
 import typings.officeJs.officeJsStrings.WorksheetActivated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.7]
   */
-@js.native
 trait WorksheetActivatedEventArgs extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait WorksheetActivatedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var `type`: WorksheetActivated = js.native
+  var `type`: WorksheetActivated
   
   /**
     *
@@ -29,14 +27,14 @@ trait WorksheetActivatedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object WorksheetActivatedEventArgs {
   
   @scala.inline
-  def apply(`type`: WorksheetActivated, worksheetId: String): WorksheetActivatedEventArgs = {
+  def apply(worksheetId: String): WorksheetActivatedEventArgs = {
     val __obj = js.Dynamic.literal(worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WorksheetActivated")
     __obj.asInstanceOf[WorksheetActivatedEventArgs]
   }
   

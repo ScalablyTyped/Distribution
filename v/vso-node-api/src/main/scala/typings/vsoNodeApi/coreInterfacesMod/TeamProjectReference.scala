@@ -2,51 +2,49 @@ package typings.vsoNodeApi.coreInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamProjectReference extends StObject {
   
   /**
     * Project abbreviation.
     */
-  var abbreviation: String = js.native
+  var abbreviation: String
   
   /**
     * The project's description (if any).
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Project identifier.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Project name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Project revision.
     */
-  var revision: Double = js.native
+  var revision: Double
   
   /**
     * Project state.
     */
-  var state: js.Any = js.native
+  var state: js.Any
   
   /**
     * Url to the full version of the object.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * Project visibility.
     */
-  var visibility: ProjectVisibility = js.native
+  var visibility: ProjectVisibility
 }
 object TeamProjectReference {
   

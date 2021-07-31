@@ -14,10 +14,13 @@ import typings.tensorflowTfjsLayers.trainingMod.LayersModel
 import typings.tensorflowTfjsLayers.typesMod.PyJsonDict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelsMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/models", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/models", "Sequential")
   @js.native
@@ -78,70 +81,48 @@ object modelsMod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
-    @JSImport("@tensorflow/tfjs-layers/dist/models", "Sequential.fromConfig")
-    @js.native
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
-    @JSImport("@tensorflow/tfjs-layers/dist/models", "Sequential.fromConfig")
-    @js.native
-    def fromConfig[T /* <: Serializable */](
-      cls: SerializableConstructor[T],
-      config: ConfigDict,
-      customObjects: js.UndefOr[scala.Nothing],
-      fastWeightInit: Boolean
-    ): T = js.native
-    @JSImport("@tensorflow/tfjs-layers/dist/models", "Sequential.fromConfig")
-    @js.native
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = js.native
-    @JSImport("@tensorflow/tfjs-layers/dist/models", "Sequential.fromConfig")
-    @js.native
+    @scala.inline
+    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: Unit, fastWeightInit: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], fastWeightInit.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
     def fromConfig[T /* <: Serializable */](
       cls: SerializableConstructor[T],
       config: ConfigDict,
       customObjects: ConfigDict,
       fastWeightInit: Boolean
-    ): T = js.native
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], fastWeightInit.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/models", "loadLayersModelFromIOHandler")
-  @js.native
-  def loadLayersModelFromIOHandler(handler: IOHandler): js.Promise[LayersModel] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/models", "loadLayersModelFromIOHandler")
-  @js.native
-  def loadLayersModelFromIOHandler(handler: IOHandler, customObjects: js.UndefOr[scala.Nothing], options: LoadOptions): js.Promise[LayersModel] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/models", "loadLayersModelFromIOHandler")
-  @js.native
-  def loadLayersModelFromIOHandler(handler: IOHandler, customObjects: ConfigDict): js.Promise[LayersModel] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/models", "loadLayersModelFromIOHandler")
-  @js.native
-  def loadLayersModelFromIOHandler(handler: IOHandler, customObjects: ConfigDict, options: LoadOptions): js.Promise[LayersModel] = js.native
+  @scala.inline
+  def loadLayersModelFromIOHandler(handler: IOHandler): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelFromIOHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
+  @scala.inline
+  def loadLayersModelFromIOHandler(handler: IOHandler, customObjects: Unit, options: LoadOptions): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelFromIOHandler")(handler.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
+  @scala.inline
+  def loadLayersModelFromIOHandler(handler: IOHandler, customObjects: ConfigDict): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelFromIOHandler")(handler.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
+  @scala.inline
+  def loadLayersModelFromIOHandler(handler: IOHandler, customObjects: ConfigDict, options: LoadOptions): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelFromIOHandler")(handler.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/models", "loadLayersModelInternal")
-  @js.native
-  def loadLayersModelInternal(pathOrIOHandler: String): js.Promise[LayersModel] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/models", "loadLayersModelInternal")
-  @js.native
-  def loadLayersModelInternal(pathOrIOHandler: String, options: LoadOptions): js.Promise[LayersModel] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/models", "loadLayersModelInternal")
-  @js.native
-  def loadLayersModelInternal(pathOrIOHandler: IOHandler): js.Promise[LayersModel] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/models", "loadLayersModelInternal")
-  @js.native
-  def loadLayersModelInternal(pathOrIOHandler: IOHandler, options: LoadOptions): js.Promise[LayersModel] = js.native
+  @scala.inline
+  def loadLayersModelInternal(pathOrIOHandler: String): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelInternal")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
+  @scala.inline
+  def loadLayersModelInternal(pathOrIOHandler: String, options: LoadOptions): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelInternal")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
+  @scala.inline
+  def loadLayersModelInternal(pathOrIOHandler: IOHandler): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelInternal")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
+  @scala.inline
+  def loadLayersModelInternal(pathOrIOHandler: IOHandler, options: LoadOptions): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelInternal")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/models", "modelFromJSON")
-  @js.native
-  def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig): js.Promise[LayersModel] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/models", "modelFromJSON")
-  @js.native
-  def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig, customObjects: ConfigDict): js.Promise[LayersModel] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/models", "modelFromJSON")
-  @js.native
-  def modelFromJSON(modelAndWeightsConfig: PyJsonDict): js.Promise[LayersModel] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/models", "modelFromJSON")
-  @js.native
-  def modelFromJSON(modelAndWeightsConfig: PyJsonDict, customObjects: ConfigDict): js.Promise[LayersModel] = js.native
+  @scala.inline
+  def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
+  @scala.inline
+  def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig, customObjects: ConfigDict): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
+  @scala.inline
+  def modelFromJSON(modelAndWeightsConfig: PyJsonDict): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
+  @scala.inline
+  def modelFromJSON(modelAndWeightsConfig: PyJsonDict, customObjects: ConfigDict): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
   
-  @js.native
   trait ModelAndWeightsConfig extends StObject {
     
     /**
@@ -154,19 +135,19 @@ object modelsMod {
       *     training options and state, i.e., a format consistent with the return
       *     value of `keras.models.save_model()`.
       */
-    var modelTopology: PyJsonDict = js.native
+    var modelTopology: PyJsonDict
     
     /**
       * Path to prepend to the paths in `weightManifest` before fetching.
       *
       * The path may optionally end in a slash ('/').
       */
-    var pathPrefix: js.UndefOr[String] = js.native
+    var pathPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * A weights manifest in TensorFlow.js format.
       */
-    var weightsManifest: js.UndefOr[WeightsManifestConfig] = js.native
+    var weightsManifest: js.UndefOr[WeightsManifestConfig] = js.undefined
   }
   object ModelAndWeightsConfig {
     
@@ -199,18 +180,17 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait ModelPredictArgs extends StObject {
     
     /**
       * Optional. Batch size (Integer). If unspecified, it will default to 32.
       */
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional. Verbosity mode. Defaults to false.
       */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object ModelPredictArgs {
     
@@ -237,14 +217,13 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait SequentialArgs extends StObject {
     
     /** Stack of layers for the model. */
-    var layers: js.UndefOr[js.Array[Layer]] = js.native
+    var layers: js.UndefOr[js.Array[Layer]] = js.undefined
     
     /** The name of this model. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object SequentialArgs {
     

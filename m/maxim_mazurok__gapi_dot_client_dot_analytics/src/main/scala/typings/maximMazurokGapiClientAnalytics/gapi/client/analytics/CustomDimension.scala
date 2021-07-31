@@ -3,47 +3,45 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 import typings.maximMazurokGapiClientAnalytics.anon.Href
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomDimension extends StObject {
   
   /** Account ID. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** Boolean indicating whether the custom dimension is active. */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /** Time the custom dimension was created. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** Custom dimension ID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Index of the custom dimension. */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /** Kind value for a custom dimension. Set to "analytics#customDimension". It is a read-only field. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Name of the custom dimension. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Parent link for the custom dimension. Points to the property to which the custom dimension belongs. */
-  var parentLink: js.UndefOr[Href] = js.native
+  var parentLink: js.UndefOr[Href] = js.undefined
   
   /** Scope of the custom dimension: HIT, SESSION, USER or PRODUCT. */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
   /** Link for the custom dimension */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** Time the custom dimension was last modified. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /** Property ID. */
-  var webPropertyId: js.UndefOr[String] = js.native
+  var webPropertyId: js.UndefOr[String] = js.undefined
 }
 object CustomDimension {
   

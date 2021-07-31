@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Supporting evidence
   */
-@js.native
-trait ConditionEvidence extends BackboneElement {
+trait ConditionEvidence
+  extends StObject
+     with BackboneElement {
   
   /**
     * Manifestation/symptom
     */
-  var code: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var code: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Supporting information found elsewhere
     */
-  var detail: js.UndefOr[js.Array[Reference]] = js.native
+  var detail: js.UndefOr[js.Array[Reference]] = js.undefined
 }
 object ConditionEvidence {
   

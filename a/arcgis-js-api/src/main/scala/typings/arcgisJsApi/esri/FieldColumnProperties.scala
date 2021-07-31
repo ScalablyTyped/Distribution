@@ -4,39 +4,39 @@ import typings.arcgisJsApi.arcgisJsApiStrings.asc_
 import typings.arcgisJsApi.arcgisJsApiStrings.desc_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldColumnProperties extends ColumnProperties {
+trait FieldColumnProperties
+  extends StObject
+     with ColumnProperties {
   
   /**
     * The field configuration for the column.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#config)
     */
-  var config: js.UndefOr[FieldColumnConfigProperties] = js.native
+  var config: js.UndefOr[FieldColumnConfigProperties] = js.undefined
   
   /**
     * Controls the sort order of the column.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#direction)
     */
-  var direction: js.UndefOr[asc_ | desc_ | js.Any] = js.native
+  var direction: js.UndefOr[asc_ | desc_ | js.Any] = js.undefined
   
   /**
     * The [Field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html) associated with this column.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#field)
     */
-  var field: js.UndefOr[FieldProperties] = js.native
+  var field: js.UndefOr[FieldProperties] = js.undefined
   
   /**
     * If applicable, the associated [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) tied to the column.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#layer)
     */
-  var layer: js.UndefOr[FeatureLayerProperties] = js.native
+  var layer: js.UndefOr[FeatureLayerProperties] = js.undefined
 }
 object FieldColumnProperties {
   

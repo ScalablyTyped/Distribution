@@ -4,7 +4,6 @@ import typings.html5plus.html5plusStrings.follow
 import typings.html5plus.html5plusStrings.silent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewDragOtherViewOptions extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait PlusWebviewWebviewDragOtherViewOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var moveMode: js.UndefOr[follow | silent] = js.native
+  var moveMode: js.UndefOr[follow | silent] = js.undefined
   
   /**
     * 手势关联对象
@@ -33,7 +31,7 @@ trait PlusWebviewWebviewDragOtherViewOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object PlusWebviewWebviewDragOtherViewOptions {
   

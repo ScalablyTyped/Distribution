@@ -5,20 +5,18 @@ import typings.deezerSdk.deezerSdkStrings.connected
 import typings.deezerSdk.deezerSdkStrings.not_authorized
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://developers.deezer.com/sdk/javascript/login | DZ.login}
   */
-@js.native
 trait LoginResponse extends StObject {
   
-  var authResponse: AccessToken_ = js.native
+  var authResponse: AccessToken_
   
-  var status: connected | not_authorized = js.native
+  var status: connected | not_authorized
   
-  var userID: String = js.native
+  var userID: String
 }
 object LoginResponse {
   

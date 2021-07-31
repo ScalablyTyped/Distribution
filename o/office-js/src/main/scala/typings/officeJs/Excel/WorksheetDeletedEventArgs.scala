@@ -5,7 +5,6 @@ import typings.officeJs.officeJsStrings.Remote
 import typings.officeJs.officeJsStrings.WorksheetDeleted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.7]
   */
-@js.native
 trait WorksheetDeletedEventArgs extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait WorksheetDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var source: EventSource | Local | Remote = js.native
+  var source: EventSource | Local | Remote
   
   /**
     *
@@ -31,7 +29,7 @@ trait WorksheetDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var `type`: WorksheetDeleted = js.native
+  var `type`: WorksheetDeleted
   
   /**
     *
@@ -39,14 +37,14 @@ trait WorksheetDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object WorksheetDeletedEventArgs {
   
   @scala.inline
-  def apply(source: EventSource | Local | Remote, `type`: WorksheetDeleted, worksheetId: String): WorksheetDeletedEventArgs = {
+  def apply(source: EventSource | Local | Remote, worksheetId: String): WorksheetDeletedEventArgs = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WorksheetDeleted")
     __obj.asInstanceOf[WorksheetDeletedEventArgs]
   }
   

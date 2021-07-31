@@ -4,7 +4,6 @@ import typings.jupyterlabSettingregistry.anon.Jupyterlabsettingdeprecated
 import typings.jupyterlabSettingregistry.anon.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginSchemaMod {
@@ -50,13 +49,13 @@ object pluginSchemaMod {
   @scala.inline
   def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   
+  @JSImport("@jupyterlab/settingregistry/lib/plugin-schema", "type")
+  @js.native
+  val `type`: String = js.native
+  
   @JSImport("@jupyterlab/settingregistry/lib/plugin-schema", "version")
   @js.native
   def version: String = js.native
   @scala.inline
   def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
-  
-  @JSImport("@jupyterlab/settingregistry/lib/plugin-schema", "type")
-  @js.native
-  val `type`: String = js.native
 }

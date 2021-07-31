@@ -12,7 +12,6 @@ import typings.xhrMock.typesMod.ErrorCallbackEvent
 import typings.xhrMock.typesMod.MockFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mockXMLHttpRequestMod {
@@ -50,13 +49,11 @@ object mockXMLHttpRequestMod {
     /**
       * Add a mock handler
       */
-    @JSImport("xhr-mock/lib/MockXMLHttpRequest", "default.addHandler")
-    @js.native
-    def addHandler(fn: MockFunction): Unit = js.native
+    @scala.inline
+    def addHandler(fn: MockFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addHandler")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("xhr-mock/lib/MockXMLHttpRequest", "default.errorCallback")
-    @js.native
-    def errorCallback(event: ErrorCallbackEvent): Unit = js.native
+    @scala.inline
+    def errorCallback(event: ErrorCallbackEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errorCallback")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("xhr-mock/lib/MockXMLHttpRequest", "default.handlers")
     @js.native
@@ -67,16 +64,14 @@ object mockXMLHttpRequestMod {
     /**
       * Remove all request handlers
       */
-    @JSImport("xhr-mock/lib/MockXMLHttpRequest", "default.removeAllHandlers")
-    @js.native
-    def removeAllHandlers(): Unit = js.native
+    @scala.inline
+    def removeAllHandlers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllHandlers")().asInstanceOf[Unit]
     
     /**
       * Remove a mock handler
       */
-    @JSImport("xhr-mock/lib/MockXMLHttpRequest", "default.removeHandler")
-    @js.native
-    def removeHandler(fn: MockFunction): Unit = js.native
+    @scala.inline
+    def removeHandler(fn: MockFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHandler")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @js.native
@@ -86,27 +81,37 @@ object mockXMLHttpRequestMod {
   object ReadyState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ReadyState with Double] = js.native
+    def apply(value: Double): js.UndefOr[ReadyState & Double] = js.native
     
     @js.native
-    sealed trait DONE extends ReadyState
-    /* 4 */ val DONE: typings.xhrMock.mockXMLHttpRequestMod.ReadyState.DONE with Double = js.native
+    sealed trait DONE
+      extends StObject
+         with ReadyState
+    /* 4 */ val DONE: typings.xhrMock.mockXMLHttpRequestMod.ReadyState.DONE & Double = js.native
     
     @js.native
-    sealed trait HEADERS_RECEIVED extends ReadyState
-    /* 2 */ val HEADERS_RECEIVED: typings.xhrMock.mockXMLHttpRequestMod.ReadyState.HEADERS_RECEIVED with Double = js.native
+    sealed trait HEADERS_RECEIVED
+      extends StObject
+         with ReadyState
+    /* 2 */ val HEADERS_RECEIVED: typings.xhrMock.mockXMLHttpRequestMod.ReadyState.HEADERS_RECEIVED & Double = js.native
     
     @js.native
-    sealed trait LOADING extends ReadyState
-    /* 3 */ val LOADING: typings.xhrMock.mockXMLHttpRequestMod.ReadyState.LOADING with Double = js.native
+    sealed trait LOADING
+      extends StObject
+         with ReadyState
+    /* 3 */ val LOADING: typings.xhrMock.mockXMLHttpRequestMod.ReadyState.LOADING & Double = js.native
     
     @js.native
-    sealed trait OPENED extends ReadyState
-    /* 1 */ val OPENED: typings.xhrMock.mockXMLHttpRequestMod.ReadyState.OPENED with Double = js.native
+    sealed trait OPENED
+      extends StObject
+         with ReadyState
+    /* 1 */ val OPENED: typings.xhrMock.mockXMLHttpRequestMod.ReadyState.OPENED & Double = js.native
     
     @js.native
-    sealed trait UNSENT extends ReadyState
-    /* 0 */ val UNSENT: typings.xhrMock.mockXMLHttpRequestMod.ReadyState.UNSENT with Double = js.native
+    sealed trait UNSENT
+      extends StObject
+         with ReadyState
+    /* 0 */ val UNSENT: typings.xhrMock.mockXMLHttpRequestMod.ReadyState.UNSENT & Double = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -136,17 +141,17 @@ object mockXMLHttpRequestMod {
     def abort(): Unit = js.native
     
     @JSName("addEventListener")
-    def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+    def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     
@@ -172,7 +177,7 @@ object mockXMLHttpRequestMod {
     
     def msCachingEnabled(): Boolean = js.native
     
-    var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+    var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
     def onreadystatechange(ev: Event): js.Any = js.native
     
     /**
@@ -185,21 +190,15 @@ object mockXMLHttpRequestMod {
       * Throws an "InvalidAccessError" DOMException if async is false, current global object is a Window object, and the timeout attribute is not zero or the responseType attribute is not the empty string.
       */
     def open(method: String, url: String): Unit = js.native
-    def open(
-      method: String,
-      url: String,
-      async: js.UndefOr[scala.Nothing],
-      username: js.UndefOr[scala.Nothing],
-      password: String
-    ): Unit = js.native
-    def open(method: String, url: String, async: js.UndefOr[scala.Nothing], username: String): Unit = js.native
-    def open(method: String, url: String, async: js.UndefOr[scala.Nothing], username: String, password: String): Unit = js.native
-    def open(method: String, url: String, async: js.UndefOr[scala.Nothing], username: Null, password: String): Unit = js.native
     def open(method: String, url: String, async: Boolean): Unit = js.native
-    def open(method: String, url: String, async: Boolean, username: js.UndefOr[scala.Nothing], password: String): Unit = js.native
     def open(method: String, url: String, async: Boolean, username: String): Unit = js.native
     def open(method: String, url: String, async: Boolean, username: String, password: String): Unit = js.native
     def open(method: String, url: String, async: Boolean, username: Null, password: String): Unit = js.native
+    def open(method: String, url: String, async: Boolean, username: Unit, password: String): Unit = js.native
+    def open(method: String, url: String, async: Unit, username: String): Unit = js.native
+    def open(method: String, url: String, async: Unit, username: String, password: String): Unit = js.native
+    def open(method: String, url: String, async: Unit, username: Null, password: String): Unit = js.native
+    def open(method: String, url: String, async: Unit, username: Unit, password: String): Unit = js.native
     
     /**
       * Acts as if the `Content-Type` header value for response is mime. (It does not actually change the header though.)
@@ -213,17 +212,17 @@ object mockXMLHttpRequestMod {
     /* private */ def receiveResponse(res: js.Any): js.Any = js.native
     
     @JSName("removeEventListener")
-    def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+    def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
       options: EventListenerOptions
     ): Unit = js.native
     

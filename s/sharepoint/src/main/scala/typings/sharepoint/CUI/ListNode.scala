@@ -2,17 +2,15 @@ package typings.sharepoint.CUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNode[T] extends StObject {
   
-  var data: T = js.native
+  var data: T
   
-  var next: ListNode[T] = js.native
+  var next: ListNode[T]
   
-  var previous: ListNode[T] = js.native
+  var previous: ListNode[T]
 }
 object ListNode {
   
@@ -23,7 +21,7 @@ object ListNode {
   }
   
   @scala.inline
-  implicit class ListNodeMutableBuilder[Self <: ListNode[_], T] (val x: Self with ListNode[T]) extends AnyVal {
+  implicit class ListNodeMutableBuilder[Self <: ListNode[?], T] (val x: Self & ListNode[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

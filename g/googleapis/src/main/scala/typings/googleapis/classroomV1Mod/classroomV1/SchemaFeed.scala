@@ -2,32 +2,30 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A class of notifications that an application can register to receive. For
   * example: &quot;all roster changes for a domain&quot;.
   */
-@js.native
 trait SchemaFeed extends StObject {
   
   /**
     * Information about a `Feed` with a `feed_type` of `COURSE_ROSTER_CHANGES`.
     * This field must be specified if `feed_type` is `COURSE_ROSTER_CHANGES`.
     */
-  var courseRosterChangesInfo: js.UndefOr[SchemaCourseRosterChangesInfo] = js.native
+  var courseRosterChangesInfo: js.UndefOr[SchemaCourseRosterChangesInfo] = js.undefined
   
   /**
     * Information about a `Feed` with a `feed_type` of `COURSE_WORK_CHANGES`.
     * This field must be specified if `feed_type` is `COURSE_WORK_CHANGES`.
     */
-  var courseWorkChangesInfo: js.UndefOr[SchemaCourseWorkChangesInfo] = js.native
+  var courseWorkChangesInfo: js.UndefOr[SchemaCourseWorkChangesInfo] = js.undefined
   
   /**
     * The type of feed.
     */
-  var feedType: js.UndefOr[String] = js.native
+  var feedType: js.UndefOr[String] = js.undefined
 }
 object SchemaFeed {
   

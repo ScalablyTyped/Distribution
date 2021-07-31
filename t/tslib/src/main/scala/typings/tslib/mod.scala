@@ -7,121 +7,94 @@ import typings.tslib.anon.Get
 import typings.tslib.anon.Has
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tslib", "__assign")
+  @JSImport("tslib", JSImport.Namespace)
   @js.native
-  def assign(t: js.Any, sources: js.Any*): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tslib", "__asyncDelegator")
-  @js.native
-  def asyncDelegator(o: js.Any): js.Any = js.native
+  @scala.inline
+  def assign(t: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__assign")(t.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("tslib", "__asyncGenerator")
-  @js.native
-  def asyncGenerator(thisArg: js.Any, _arguments: js.Any, generator: js.Function): js.Any = js.native
+  @scala.inline
+  def asyncDelegator(o: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("__asyncDelegator")(o.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("tslib", "__asyncValues")
-  @js.native
-  def asyncValues(o: js.Any): js.Any = js.native
+  @scala.inline
+  def asyncGenerator(thisArg: js.Any, _arguments: js.Any, generator: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__asyncGenerator")(thisArg.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("tslib", "__await")
-  @js.native
-  def await(v: js.Any): js.Any = js.native
+  @scala.inline
+  def asyncValues(o: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("__asyncValues")(o.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("tslib", "__awaiter")
-  @js.native
-  def awaiter(thisArg: js.Any, _arguments: js.Any, P: js.Function, generator: js.Function): js.Any = js.native
+  @scala.inline
+  def await(v: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("__await")(v.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("tslib", "__classPrivateFieldGet")
-  @js.native
-  def classPrivateFieldGet[T /* <: js.Object */, V](receiver: T, privateMap: Get[T, V]): V = js.native
+  @scala.inline
+  def awaiter(thisArg: js.Any, _arguments: js.Any, P: js.Function, generator: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__awaiter")(thisArg.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any], P.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("tslib", "__classPrivateFieldSet")
-  @js.native
-  def classPrivateFieldSet[T /* <: js.Object */, V](receiver: T, privateMap: Has[T, V], value: V): V = js.native
+  @scala.inline
+  def classPrivateFieldGet[T /* <: js.Object */, V](receiver: T, privateMap: Get[T, V]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldGet")(receiver.asInstanceOf[js.Any], privateMap.asInstanceOf[js.Any])).asInstanceOf[V]
   
-  @JSImport("tslib", "__createBinding")
-  @js.native
-  def createBinding(`object`: js.Object, target: js.Object, key: PropertyKey): Unit = js.native
-  @JSImport("tslib", "__createBinding")
-  @js.native
-  def createBinding(`object`: js.Object, target: js.Object, key: PropertyKey, objectKey: PropertyKey): Unit = js.native
+  @scala.inline
+  def classPrivateFieldSet[T /* <: js.Object */, V](receiver: T, privateMap: Has[T, V], value: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldSet")(receiver.asInstanceOf[js.Any], privateMap.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[V]
   
-  @JSImport("tslib", "__decorate")
-  @js.native
-  def decorate(decorators: js.Array[js.Function], target: js.Any): js.Any = js.native
-  @JSImport("tslib", "__decorate")
-  @js.native
-  def decorate(decorators: js.Array[js.Function], target: js.Any, key: js.UndefOr[scala.Nothing], desc: js.Any): js.Any = js.native
-  @JSImport("tslib", "__decorate")
-  @js.native
-  def decorate(decorators: js.Array[js.Function], target: js.Any, key: String): js.Any = js.native
-  @JSImport("tslib", "__decorate")
-  @js.native
-  def decorate(decorators: js.Array[js.Function], target: js.Any, key: String, desc: js.Any): js.Any = js.native
-  @JSImport("tslib", "__decorate")
-  @js.native
-  def decorate(decorators: js.Array[js.Function], target: js.Any, key: js.Symbol): js.Any = js.native
-  @JSImport("tslib", "__decorate")
-  @js.native
-  def decorate(decorators: js.Array[js.Function], target: js.Any, key: js.Symbol, desc: js.Any): js.Any = js.native
+  @scala.inline
+  def createBinding(`object`: js.Object, target: js.Object, key: PropertyKey): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__createBinding")(`object`.asInstanceOf[js.Any], target.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createBinding(`object`: js.Object, target: js.Object, key: PropertyKey, objectKey: PropertyKey): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__createBinding")(`object`.asInstanceOf[js.Any], target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], objectKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tslib", "__exportStar")
-  @js.native
-  def exportStar(m: js.Any, o: js.Any): Unit = js.native
+  @scala.inline
+  def decorate(decorators: js.Array[js.Function], target: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def decorate(decorators: js.Array[js.Function], target: js.Any, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def decorate(decorators: js.Array[js.Function], target: js.Any, key: String, desc: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def decorate(decorators: js.Array[js.Function], target: js.Any, key: js.Symbol): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def decorate(decorators: js.Array[js.Function], target: js.Any, key: js.Symbol, desc: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def decorate(decorators: js.Array[js.Function], target: js.Any, key: Unit, desc: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("tslib", "__generator")
-  @js.native
-  def generator(thisArg: js.Any, body: js.Function): js.Any = js.native
+  @scala.inline
+  def exportStar(m: js.Any, o: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__exportStar")(m.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tslib", "__importDefault")
-  @js.native
-  def importDefault[T](mod: T): T | Default[T] = js.native
+  @scala.inline
+  def `extends`(d: js.Function, b: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__extends")(d.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tslib", "__importStar")
-  @js.native
-  def importStar[T](mod: T): T = js.native
+  @scala.inline
+  def generator(thisArg: js.Any, body: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__generator")(thisArg.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("tslib", "__makeTemplateObject")
-  @js.native
-  def makeTemplateObject(cooked: js.Array[String], raw: js.Array[String]): TemplateStringsArray = js.native
+  @scala.inline
+  def importDefault[T](mod: T): T | Default[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("__importDefault")(mod.asInstanceOf[js.Any]).asInstanceOf[T | Default[T]]
   
-  @JSImport("tslib", "__metadata")
-  @js.native
-  def metadata(metadataKey: js.Any, metadataValue: js.Any): js.Function = js.native
+  @scala.inline
+  def importStar[T](mod: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("__importStar")(mod.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("tslib", "__param")
-  @js.native
-  def param(paramIndex: Double, decorator: js.Function): js.Function = js.native
+  @scala.inline
+  def makeTemplateObject(cooked: js.Array[String], raw: js.Array[String]): TemplateStringsArray = (^.asInstanceOf[js.Dynamic].applyDynamic("__makeTemplateObject")(cooked.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[TemplateStringsArray]
   
-  @JSImport("tslib", "__read")
-  @js.native
-  def read(o: js.Any): js.Array[_] = js.native
-  @JSImport("tslib", "__read")
-  @js.native
-  def read(o: js.Any, n: Double): js.Array[_] = js.native
+  @scala.inline
+  def metadata(metadataKey: js.Any, metadataValue: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("__metadata")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
-  @JSImport("tslib", "__rest")
-  @js.native
-  def rest(t: js.Any, propertyNames: js.Array[String | js.Symbol]): js.Any = js.native
+  @scala.inline
+  def param(paramIndex: Double, decorator: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("__param")(paramIndex.asInstanceOf[js.Any], decorator.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
-  @JSImport("tslib", "__spread")
-  @js.native
-  def spread(args: js.Array[_]*): js.Array[_] = js.native
+  @scala.inline
+  def read(o: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("__read")(o.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def read(o: js.Any, n: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("__read")(o.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("tslib", "__spreadArrays")
-  @js.native
-  def spreadArrays(args: js.Array[_]*): js.Array[_] = js.native
+  @scala.inline
+  def rest(t: js.Any, propertyNames: js.Array[String | js.Symbol]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__rest")(t.asInstanceOf[js.Any], propertyNames.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("tslib", "__values")
-  @js.native
-  def values(o: js.Any): js.Any = js.native
+  @scala.inline
+  def spread(args: js.Array[js.Any]*): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("__spread")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("tslib", "__extends")
-  @js.native
-  def `extends`(d: js.Function, b: js.Function): Unit = js.native
+  @scala.inline
+  def spreadArrays(args: js.Array[js.Any]*): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("__spreadArrays")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  
+  @scala.inline
+  def values(o: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("__values")(o.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

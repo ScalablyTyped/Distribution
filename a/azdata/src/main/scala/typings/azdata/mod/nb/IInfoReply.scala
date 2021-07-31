@@ -3,23 +3,21 @@ package typings.azdata.mod.nb
 import typings.azdata.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInfoReply extends StObject {
   
-  var banner: String = js.native
+  var banner: String
   
-  var help_links: js.Array[Text] = js.native
+  var help_links: js.Array[Text]
   
-  var implementation: String = js.native
+  var implementation: String
   
-  var implementation_version: String = js.native
+  var implementation_version: String
   
-  var language_info: ILanguageInfo = js.native
+  var language_info: ILanguageInfo
   
-  var protocol_version: String = js.native
+  var protocol_version: String
 }
 object IInfoReply {
   

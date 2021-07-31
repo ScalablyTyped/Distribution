@@ -2,29 +2,27 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayAppliancePdf extends StObject {
   
-  var attachmentInfo: js.UndefOr[DisplayApplianceSignerAttachment] = js.native
+  var attachmentInfo: js.UndefOr[DisplayApplianceSignerAttachment] = js.undefined
   
-  var docName: js.UndefOr[String] = js.native
+  var docName: js.UndefOr[String] = js.undefined
   
-  var documentId: js.UndefOr[String] = js.native
+  var documentId: js.UndefOr[String] = js.undefined
   
-  var latestPDFId: js.UndefOr[String] = js.native
+  var latestPDFId: js.UndefOr[String] = js.undefined
   
-  var latestPdf: js.UndefOr[String] = js.native
+  var latestPdf: js.UndefOr[String] = js.undefined
   
-  var originalPDFId: js.UndefOr[String] = js.native
+  var originalPDFId: js.UndefOr[String] = js.undefined
   
-  var originalPdf: js.UndefOr[String] = js.native
+  var originalPdf: js.UndefOr[String] = js.undefined
   
-  var pageCount: js.UndefOr[Double] = js.native
+  var pageCount: js.UndefOr[Double] = js.undefined
   
-  var pdfType: js.UndefOr[String] = js.native
+  var pdfType: js.UndefOr[String] = js.undefined
 }
 object DisplayAppliancePdf {
   

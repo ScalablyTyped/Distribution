@@ -3,25 +3,23 @@ package typings.winrt.Windows.UI.Input.Inking
 import typings.winrt.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInkStrokeRenderingSegment extends StObject {
   
-  var bezierControlPoint1: Point = js.native
+  var bezierControlPoint1: Point
   
-  var bezierControlPoint2: Point = js.native
+  var bezierControlPoint2: Point
   
-  var position: Point = js.native
+  var position: Point
   
-  var pressure: Double = js.native
+  var pressure: Double
   
-  var tiltX: Double = js.native
+  var tiltX: Double
   
-  var tiltY: Double = js.native
+  var tiltY: Double
   
-  var twist: Double = js.native
+  var twist: Double
 }
 object IInkStrokeRenderingSegment {
   

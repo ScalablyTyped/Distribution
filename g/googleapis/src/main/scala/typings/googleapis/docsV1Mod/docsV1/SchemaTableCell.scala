@@ -3,52 +3,50 @@ package typings.googleapis.docsV1Mod.docsV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The contents and style of a cell in a Table.
   */
-@js.native
 trait SchemaTableCell extends StObject {
   
   /**
     * The content of the cell.
     */
-  var content: js.UndefOr[js.Array[SchemaStructuralElement]] = js.native
+  var content: js.UndefOr[js.Array[SchemaStructuralElement]] = js.undefined
   
   /**
     * The zero-based end index of this cell, exclusive, in UTF-16 code units.
     */
-  var endIndex: js.UndefOr[Double] = js.native
+  var endIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The zero-based start index of this cell, in UTF-16 code units.
     */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The suggested deletion IDs. If empty, then there are no suggested
     * deletions of this content.
     */
-  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The suggested insertion IDs. A TableCell may have multiple insertion IDs
     * if it is a nested suggested change. If empty, then this is not a
     * suggested insertion.
     */
-  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The suggested changes to the table cell style, keyed by suggestion ID.
     */
-  var suggestedTableCellStyleChanges: js.UndefOr[StringDictionary[SchemaSuggestedTableCellStyle]] = js.native
+  var suggestedTableCellStyleChanges: js.UndefOr[StringDictionary[SchemaSuggestedTableCellStyle]] = js.undefined
   
   /**
     * The style of the cell.
     */
-  var tableCellStyle: js.UndefOr[SchemaTableCellStyle] = js.native
+  var tableCellStyle: js.UndefOr[SchemaTableCellStyle] = js.undefined
 }
 object SchemaTableCell {
   

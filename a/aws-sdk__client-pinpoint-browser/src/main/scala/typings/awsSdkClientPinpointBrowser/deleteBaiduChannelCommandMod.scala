@@ -7,16 +7,18 @@ import typings.awsSdkClientPinpointBrowser.typesDeleteBaiduChannelInputMod.Delet
 import typings.awsSdkClientPinpointBrowser.typesDeleteBaiduChannelOutputMod.DeleteBaiduChannelOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deleteBaiduChannelCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteBaiduChannelCommand", "DeleteBaiduChannelCommand")
   @js.native
-  class DeleteBaiduChannelCommand protected () extends Command[
+  class DeleteBaiduChannelCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           DeleteBaiduChannelInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object deleteBaiduChannelCommandMod {
         ] {
     def this(input: DeleteBaiduChannelInput) = this()
     
+    /* CompleteClass */
+    override val input: DeleteBaiduChannelInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[DeleteBaiduChannelInput, DeleteBaiduChannelOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: PinpointResolvedConfiguration
+    ): Handler[DeleteBaiduChannelInput, DeleteBaiduChannelOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: PinpointResolvedConfiguration,
+      options: js.Any
     ): Handler[DeleteBaiduChannelInput, DeleteBaiduChannelOutput] = js.native
   }
 }

@@ -4,111 +4,109 @@ import typings.appleMapkitJsBrowser.anon.Height
 import typings.std.DOMPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object that contains options for initializing annotation features.
   */
-@js.native
 trait AnnotationConstructorOptions extends StObject {
   
   /**
     * Accessibility text for the annotation.
     */
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
   /**
     * The offset in CSS pixels of the element from the bottom center.
     */
-  var anchorOffset: js.UndefOr[DOMPoint] = js.native
+  var anchorOffset: js.UndefOr[DOMPoint] = js.undefined
   
   /**
     * A Boolean value that determines if the annotation should be animated.
     */
-  var animates: js.UndefOr[Boolean] = js.native
+  var animates: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A CSS animation that runs when the annotation appears on the map.
     */
-  var appearanceAnimation: js.UndefOr[String] = js.native
+  var appearanceAnimation: js.UndefOr[String] = js.undefined
   
   /**
     * A delegate that enables you to customize the annotation's callout.
     */
-  var callout: js.UndefOr[AnnotationCalloutDelegate] = js.native
+  var callout: js.UndefOr[AnnotationCalloutDelegate] = js.undefined
   
   /**
     * A Boolean value that determines whether a callout should be shown.
     */
-  var calloutEnabled: js.UndefOr[Boolean] = js.native
+  var calloutEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The offset in CSS pixels of a callout from the top center of the element.
     */
-  var calloutOffset: js.UndefOr[DOMPoint] = js.native
+  var calloutOffset: js.UndefOr[DOMPoint] = js.undefined
   
   /**
     * An identifer used for grouping annotations into the same cluster.
     */
-  var clusteringIdentifier: js.UndefOr[String] = js.native
+  var clusteringIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * A mode that determines the shape of the collision frame.
     */
-  var collisionMode: js.UndefOr[String] = js.native
+  var collisionMode: js.UndefOr[String] = js.undefined
   
   /**
     * Data you define that is assigned to the annotation.
     */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A hint the map uses to prioritize displaying the annotation.
     */
-  var displayPriority: js.UndefOr[Double] = js.native
+  var displayPriority: js.UndefOr[Double] = js.undefined
   
   /**
     * A Boolean value that determines whether the user can drag the annotation.
     */
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A Boolean value that determines whether the annotation responds to user
     * interaction.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Spacing added around the annotation when showing items.
     */
-  var padding: js.UndefOr[Padding] = js.native
+  var padding: js.UndefOr[Padding] = js.undefined
   
   /**
     * A Boolean value that determines whether the annotation is selected.
     */
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The desired dimensions of the annotation, in CSS pixels.
     */
-  var size: js.UndefOr[Height] = js.native
+  var size: js.UndefOr[Height] = js.undefined
   
   /**
     * The text to display as a subtitle on the second line of an annotation's
     * callout.
     */
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
   /**
     * The text to display in the annotation's callout.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * A Boolean value that determines if the annotation is visible or hidden.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object AnnotationConstructorOptions {
   

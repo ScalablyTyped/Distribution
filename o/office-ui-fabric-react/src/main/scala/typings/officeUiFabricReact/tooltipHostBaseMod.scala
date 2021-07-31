@@ -6,7 +6,6 @@ import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipHostBaseMod {
@@ -50,6 +49,18 @@ object tooltipHostBaseMod {
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MTooltipHostBase(): Unit = js.native
+    
+    /**
+      * Dismisses the tooltip.
+      */
+    /* CompleteClass */
+    override def dismiss(): Unit = js.native
+    
+    /**
+      * Shows the tooltip.
+      */
+    /* CompleteClass */
+    override def show(): Unit = js.native
   }
   /* static members */
   object TooltipHostBase {
@@ -71,12 +82,11 @@ object tooltipHostBaseMod {
     def defaultProps_=(x: Delay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ITooltipHostState extends StObject {
     
-    var isAriaPlaceholderRendered: Boolean = js.native
+    var isAriaPlaceholderRendered: Boolean
     
-    var isTooltipVisible: Boolean = js.native
+    var isTooltipVisible: Boolean
   }
   object ITooltipHostState {
     

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderreturnsProcessRequest extends StObject {
   
   /** Option to charge the customer return shipping cost. */
-  var fullChargeReturnShippingCost: js.UndefOr[Boolean] = js.native
+  var fullChargeReturnShippingCost: js.UndefOr[Boolean] = js.undefined
   
   /** [required] The ID of the operation, unique across all operations for a given order return. */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
   /** Refunds for original shipping fee. */
-  var refundShippingFee: js.UndefOr[OrderreturnsRefundOperation] = js.native
+  var refundShippingFee: js.UndefOr[OrderreturnsRefundOperation] = js.undefined
   
   /** The list of items to return. */
-  var returnItems: js.UndefOr[js.Array[OrderreturnsReturnItem]] = js.native
+  var returnItems: js.UndefOr[js.Array[OrderreturnsReturnItem]] = js.undefined
 }
 object OrderreturnsProcessRequest {
   

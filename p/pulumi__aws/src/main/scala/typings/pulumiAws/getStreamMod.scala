@@ -4,30 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getStreamMod {
   
-  @JSImport("@pulumi/aws/kinesis/getStream", "getStream")
+  @JSImport("@pulumi/aws/kinesis/getStream", JSImport.Namespace)
   @js.native
-  def getStream(args: GetStreamArgs): js.Promise[GetStreamResult] = js.native
-  @JSImport("@pulumi/aws/kinesis/getStream", "getStream")
-  @js.native
-  def getStream(args: GetStreamArgs, opts: InvokeOptions): js.Promise[GetStreamResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getStream(args: GetStreamArgs): js.Promise[GetStreamResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetStreamResult]]
+  @scala.inline
+  def getStream(args: GetStreamArgs, opts: InvokeOptions): js.Promise[GetStreamResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetStreamResult]]
+  
   trait GetStreamArgs extends StObject {
     
     /**
       * The name of the Kinesis Stream.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * A map of tags to assigned to the stream.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetStreamArgs {
     
@@ -51,58 +51,57 @@ object getStreamMod {
     }
   }
   
-  @js.native
   trait GetStreamResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the Kinesis Stream (same as id).
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The list of shard ids in the CLOSED state. See [Shard State](https://docs.aws.amazon.com/streams/latest/dev/kinesis-using-sdk-java-after-resharding.html#kinesis-using-sdk-java-resharding-data-routing) for more.
       */
-    val closedShards: js.Array[String] = js.native
+    val closedShards: js.Array[String]
     
     /**
       * The approximate UNIX timestamp that the stream was created.
       */
-    val creationTimestamp: Double = js.native
+    val creationTimestamp: Double
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The name of the Kinesis Stream.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The list of shard ids in the OPEN state. See [Shard State](https://docs.aws.amazon.com/streams/latest/dev/kinesis-using-sdk-java-after-resharding.html#kinesis-using-sdk-java-resharding-data-routing) for more.
       */
-    val openShards: js.Array[String] = js.native
+    val openShards: js.Array[String]
     
     /**
       * Length of time (in hours) data records are accessible after they are added to the stream.
       */
-    val retentionPeriod: Double = js.native
+    val retentionPeriod: Double
     
     /**
       * A list of shard-level CloudWatch metrics which are enabled for the stream. See [Monitoring with CloudWatch](https://docs.aws.amazon.com/streams/latest/dev/monitoring-with-cloudwatch.html) for more.
       */
-    val shardLevelMetrics: js.Array[String] = js.native
+    val shardLevelMetrics: js.Array[String]
     
     /**
       * The current status of the stream. The stream status is one of CREATING, DELETING, ACTIVE, or UPDATING.
       */
-    val status: String = js.native
+    val status: String
     
     /**
       * A map of tags to assigned to the stream.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetStreamResult {
     

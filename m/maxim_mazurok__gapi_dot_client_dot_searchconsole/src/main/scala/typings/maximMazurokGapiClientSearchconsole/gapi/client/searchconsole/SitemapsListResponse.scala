@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SitemapsListResponse extends StObject {
   
   /** Contains detailed information about a specific URL submitted as a [sitemap](https://support.google.com/webmasters/answer/156184). */
-  var sitemap: js.UndefOr[js.Array[WmxSitemap]] = js.native
+  var sitemap: js.UndefOr[js.Array[WmxSitemap]] = js.undefined
 }
 object SitemapsListResponse {
   

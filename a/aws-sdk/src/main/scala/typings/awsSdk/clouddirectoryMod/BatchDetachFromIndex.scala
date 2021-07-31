@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDetachFromIndex extends StObject {
   
   /**
     * A reference to the index object.
     */
-  var IndexReference: ObjectReference = js.native
+  var IndexReference: ObjectReference
   
   /**
     * A reference to the object being detached from the index.
     */
-  var TargetReference: ObjectReference = js.native
+  var TargetReference: ObjectReference
 }
 object BatchDetachFromIndex {
   

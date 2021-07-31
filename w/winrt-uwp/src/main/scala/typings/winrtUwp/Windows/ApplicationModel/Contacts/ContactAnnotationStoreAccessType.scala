@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object ContactAnnotationStoreAccessType extends StObject {
   
   /** All contact annotations. */
   @js.native
-  sealed trait allAnnotationsReadWrite extends ContactAnnotationStoreAccessType
+  sealed trait allAnnotationsReadWrite
+    extends StObject
+       with ContactAnnotationStoreAccessType
   
   /** Only local app contact annotations. */
   @js.native
-  sealed trait appAnnotationsReadWrite extends ContactAnnotationStoreAccessType
+  sealed trait appAnnotationsReadWrite
+    extends StObject
+       with ContactAnnotationStoreAccessType
 }

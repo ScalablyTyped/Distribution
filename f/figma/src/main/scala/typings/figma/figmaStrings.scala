@@ -16,7 +16,6 @@ import typings.figma.mod.global.TextDecoration
 import typings.figma.mod.global.WindingRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object figmaStrings {
@@ -37,22 +36,30 @@ object figmaStrings {
   def AFTER_TIMEOUT: AFTER_TIMEOUT = "AFTER_TIMEOUT".asInstanceOf[AFTER_TIMEOUT]
   
   @js.native
-  sealed trait ANGLE extends HandleMirroring
+  sealed trait ANGLE
+    extends StObject
+       with HandleMirroring
   @scala.inline
   def ANGLE: ANGLE = "ANGLE".asInstanceOf[ANGLE]
   
   @js.native
-  sealed trait ANGLE_AND_LENGTH extends HandleMirroring
+  sealed trait ANGLE_AND_LENGTH
+    extends StObject
+       with HandleMirroring
   @scala.inline
   def ANGLE_AND_LENGTH: ANGLE_AND_LENGTH = "ANGLE_AND_LENGTH".asInstanceOf[ANGLE_AND_LENGTH]
   
   @js.native
-  sealed trait ARROW_EQUILATERAL extends StrokeCap
+  sealed trait ARROW_EQUILATERAL
+    extends StObject
+       with StrokeCap
   @scala.inline
   def ARROW_EQUILATERAL: ARROW_EQUILATERAL = "ARROW_EQUILATERAL".asInstanceOf[ARROW_EQUILATERAL]
   
   @js.native
-  sealed trait ARROW_LINES extends StrokeCap
+  sealed trait ARROW_LINES
+    extends StObject
+       with StrokeCap
   @scala.inline
   def ARROW_LINES: ARROW_LINES = "ARROW_LINES".asInstanceOf[ARROW_LINES]
   
@@ -77,17 +84,23 @@ object figmaStrings {
   def BEFORE: BEFORE = "BEFORE".asInstanceOf[BEFORE]
   
   @js.native
-  sealed trait BEVEL extends StrokeJoin
+  sealed trait BEVEL
+    extends StObject
+       with StrokeJoin
   @scala.inline
   def BEVEL: BEVEL = "BEVEL".asInstanceOf[BEVEL]
   
   @js.native
-  sealed trait BOOLEAN_OPERATION extends NodeType
+  sealed trait BOOLEAN_OPERATION
+    extends StObject
+       with NodeType
   @scala.inline
   def BOOLEAN_OPERATION: BOOLEAN_OPERATION = "BOOLEAN_OPERATION".asInstanceOf[BOOLEAN_OPERATION]
   
   @js.native
-  sealed trait BOTH extends OverflowDirection
+  sealed trait BOTH
+    extends StObject
+       with OverflowDirection
   @scala.inline
   def BOTH: BOTH = "BOTH".asInstanceOf[BOTH]
   
@@ -97,23 +110,30 @@ object figmaStrings {
   def BOTTOM: BOTTOM = "BOTTOM".asInstanceOf[BOTTOM]
   
   @js.native
-  sealed trait BOTTOM_CENTER extends OverlayPositionType
+  sealed trait BOTTOM_CENTER
+    extends StObject
+       with OverlayPositionType
   @scala.inline
   def BOTTOM_CENTER: BOTTOM_CENTER = "BOTTOM_CENTER".asInstanceOf[BOTTOM_CENTER]
   
   @js.native
-  sealed trait BOTTOM_LEFT extends OverlayPositionType
+  sealed trait BOTTOM_LEFT
+    extends StObject
+       with OverlayPositionType
   @scala.inline
   def BOTTOM_LEFT: BOTTOM_LEFT = "BOTTOM_LEFT".asInstanceOf[BOTTOM_LEFT]
   
   @js.native
-  sealed trait BOTTOM_RIGHT extends OverlayPositionType
+  sealed trait BOTTOM_RIGHT
+    extends StObject
+       with OverlayPositionType
   @scala.inline
   def BOTTOM_RIGHT: BOTTOM_RIGHT = "BOTTOM_RIGHT".asInstanceOf[BOTTOM_RIGHT]
   
   @js.native
   sealed trait CENTER
-    extends ConstraintType
+    extends StObject
+       with ConstraintType
        with OverlayPositionType
   @scala.inline
   def CENTER: CENTER = "CENTER".asInstanceOf[CENTER]
@@ -124,22 +144,30 @@ object figmaStrings {
   def CLOSE: CLOSE = "CLOSE".asInstanceOf[CLOSE]
   
   @js.native
-  sealed trait CLOSE_ON_CLICK_OUTSIDE extends OverlayBackgroundInteraction
+  sealed trait CLOSE_ON_CLICK_OUTSIDE
+    extends StObject
+       with OverlayBackgroundInteraction
   @scala.inline
   def CLOSE_ON_CLICK_OUTSIDE: CLOSE_ON_CLICK_OUTSIDE = "CLOSE_ON_CLICK_OUTSIDE".asInstanceOf[CLOSE_ON_CLICK_OUTSIDE]
   
   @js.native
-  sealed trait COLOR extends BlendMode
+  sealed trait COLOR
+    extends StObject
+       with BlendMode
   @scala.inline
   def COLOR: COLOR = "COLOR".asInstanceOf[COLOR]
   
   @js.native
-  sealed trait COLOR_BURN extends BlendMode
+  sealed trait COLOR_BURN
+    extends StObject
+       with BlendMode
   @scala.inline
   def COLOR_BURN: COLOR_BURN = "COLOR_BURN".asInstanceOf[COLOR_BURN]
   
   @js.native
-  sealed trait COLOR_DODGE extends BlendMode
+  sealed trait COLOR_DODGE
+    extends StObject
+       with BlendMode
   @scala.inline
   def COLOR_DODGE: COLOR_DODGE = "COLOR_DODGE".asInstanceOf[COLOR_DODGE]
   
@@ -149,7 +177,9 @@ object figmaStrings {
   def COLUMNS: COLUMNS = "COLUMNS".asInstanceOf[COLUMNS]
   
   @js.native
-  sealed trait COMPONENT extends NodeType
+  sealed trait COMPONENT
+    extends StObject
+       with NodeType
   @scala.inline
   def COMPONENT: COMPONENT = "COMPONENT".asInstanceOf[COMPONENT]
   
@@ -159,12 +189,16 @@ object figmaStrings {
   def CROP: CROP = "CROP".asInstanceOf[CROP]
   
   @js.native
-  sealed trait DARKEN extends BlendMode
+  sealed trait DARKEN
+    extends StObject
+       with BlendMode
   @scala.inline
   def DARKEN: DARKEN = "DARKEN".asInstanceOf[DARKEN]
   
   @js.native
-  sealed trait DIFFERENCE extends BlendMode
+  sealed trait DIFFERENCE
+    extends StObject
+       with BlendMode
   @scala.inline
   def DIFFERENCE: DIFFERENCE = "DIFFERENCE".asInstanceOf[DIFFERENCE]
   
@@ -174,7 +208,9 @@ object figmaStrings {
   def DISSOLVE: DISSOLVE = "DISSOLVE".asInstanceOf[DISSOLVE]
   
   @js.native
-  sealed trait DOCUMENT extends NodeType
+  sealed trait DOCUMENT
+    extends StObject
+       with NodeType
   @scala.inline
   def DOCUMENT: DOCUMENT = "DOCUMENT".asInstanceOf[DOCUMENT]
   
@@ -199,17 +235,23 @@ object figmaStrings {
   def EASE_OUT: EASE_OUT = "EASE_OUT".asInstanceOf[EASE_OUT]
   
   @js.native
-  sealed trait EFFECT extends StyleType
+  sealed trait EFFECT
+    extends StObject
+       with StyleType
   @scala.inline
   def EFFECT: EFFECT = "EFFECT".asInstanceOf[EFFECT]
   
   @js.native
-  sealed trait ELLIPSE extends NodeType
+  sealed trait ELLIPSE
+    extends StObject
+       with NodeType
   @scala.inline
   def ELLIPSE: ELLIPSE = "ELLIPSE".asInstanceOf[ELLIPSE]
   
   @js.native
-  sealed trait EVENODD extends WindingRule
+  sealed trait EVENODD
+    extends StObject
+       with WindingRule
   @scala.inline
   def EVENODD: EVENODD = "EVENODD".asInstanceOf[EVENODD]
   
@@ -219,7 +261,9 @@ object figmaStrings {
   def EXCLUDE: EXCLUDE = "EXCLUDE".asInstanceOf[EXCLUDE]
   
   @js.native
-  sealed trait EXCLUSION extends BlendMode
+  sealed trait EXCLUSION
+    extends StObject
+       with BlendMode
   @scala.inline
   def EXCLUSION: EXCLUSION = "EXCLUSION".asInstanceOf[EXCLUSION]
   
@@ -239,7 +283,9 @@ object figmaStrings {
   def FIXED: FIXED = "FIXED".asInstanceOf[FIXED]
   
   @js.native
-  sealed trait FRAME extends NodeType
+  sealed trait FRAME
+    extends StObject
+       with NodeType
   @scala.inline
   def FRAME: FRAME = "FRAME".asInstanceOf[FRAME]
   
@@ -264,17 +310,23 @@ object figmaStrings {
   def GRADIENT_RADIAL: GRADIENT_RADIAL = "GRADIENT_RADIAL".asInstanceOf[GRADIENT_RADIAL]
   
   @js.native
-  sealed trait GRID extends StyleType
+  sealed trait GRID
+    extends StObject
+       with StyleType
   @scala.inline
   def GRID: GRID = "GRID".asInstanceOf[GRID]
   
   @js.native
-  sealed trait GROUP extends NodeType
+  sealed trait GROUP
+    extends StObject
+       with NodeType
   @scala.inline
   def GROUP: GROUP = "GROUP".asInstanceOf[GROUP]
   
   @js.native
-  sealed trait HARD_LIGHT extends BlendMode
+  sealed trait HARD_LIGHT
+    extends StObject
+       with BlendMode
   @scala.inline
   def HARD_LIGHT: HARD_LIGHT = "HARD_LIGHT".asInstanceOf[HARD_LIGHT]
   
@@ -284,12 +336,16 @@ object figmaStrings {
   def HEIGHT: HEIGHT = "HEIGHT".asInstanceOf[HEIGHT]
   
   @js.native
-  sealed trait HORIZONTAL extends OverflowDirection
+  sealed trait HORIZONTAL
+    extends StObject
+       with OverflowDirection
   @scala.inline
   def HORIZONTAL: HORIZONTAL = "HORIZONTAL".asInstanceOf[HORIZONTAL]
   
   @js.native
-  sealed trait HUE extends BlendMode
+  sealed trait HUE
+    extends StObject
+       with BlendMode
   @scala.inline
   def HUE: HUE = "HUE".asInstanceOf[HUE]
   
@@ -309,7 +365,9 @@ object figmaStrings {
   def INSIDE: INSIDE = "INSIDE".asInstanceOf[INSIDE]
   
   @js.native
-  sealed trait INSTANCE extends NodeType
+  sealed trait INSTANCE
+    extends StObject
+       with NodeType
   @scala.inline
   def INSTANCE: INSTANCE = "INSTANCE".asInstanceOf[INSTANCE]
   
@@ -339,12 +397,16 @@ object figmaStrings {
   def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
   
   @js.native
-  sealed trait LIGHTEN extends BlendMode
+  sealed trait LIGHTEN
+    extends StObject
+       with BlendMode
   @scala.inline
   def LIGHTEN: LIGHTEN = "LIGHTEN".asInstanceOf[LIGHTEN]
   
   @js.native
-  sealed trait LINE extends NodeType
+  sealed trait LINE
+    extends StObject
+       with NodeType
   @scala.inline
   def LINE: LINE = "LINE".asInstanceOf[LINE]
   
@@ -354,42 +416,58 @@ object figmaStrings {
   def LINEAR: LINEAR = "LINEAR".asInstanceOf[LINEAR]
   
   @js.native
-  sealed trait LINEAR_BURN extends BlendMode
+  sealed trait LINEAR_BURN
+    extends StObject
+       with BlendMode
   @scala.inline
   def LINEAR_BURN: LINEAR_BURN = "LINEAR_BURN".asInstanceOf[LINEAR_BURN]
   
   @js.native
-  sealed trait LINEAR_DODGE extends BlendMode
+  sealed trait LINEAR_DODGE
+    extends StObject
+       with BlendMode
   @scala.inline
   def LINEAR_DODGE: LINEAR_DODGE = "LINEAR_DODGE".asInstanceOf[LINEAR_DODGE]
   
   @js.native
-  sealed trait LOWER extends TextCase
+  sealed trait LOWER
+    extends StObject
+       with TextCase
   @scala.inline
   def LOWER: LOWER = "LOWER".asInstanceOf[LOWER]
   
   @js.native
-  sealed trait LUMINOSITY extends BlendMode
+  sealed trait LUMINOSITY
+    extends StObject
+       with BlendMode
   @scala.inline
   def LUMINOSITY: LUMINOSITY = "LUMINOSITY".asInstanceOf[LUMINOSITY]
   
   @js.native
-  sealed trait MANUAL extends OverlayPositionType
+  sealed trait MANUAL
+    extends StObject
+       with OverlayPositionType
   @scala.inline
   def MANUAL: MANUAL = "MANUAL".asInstanceOf[MANUAL]
   
   @js.native
-  sealed trait MAX extends ConstraintType
+  sealed trait MAX
+    extends StObject
+       with ConstraintType
   @scala.inline
   def MAX: MAX = "MAX".asInstanceOf[MAX]
   
   @js.native
-  sealed trait MIN extends ConstraintType
+  sealed trait MIN
+    extends StObject
+       with ConstraintType
   @scala.inline
   def MIN: MIN = "MIN".asInstanceOf[MIN]
   
   @js.native
-  sealed trait MITER extends StrokeJoin
+  sealed trait MITER
+    extends StObject
+       with StrokeJoin
   @scala.inline
   def MITER: MITER = "MITER".asInstanceOf[MITER]
   
@@ -424,12 +502,16 @@ object figmaStrings {
   def MOVE_OUT: MOVE_OUT = "MOVE_OUT".asInstanceOf[MOVE_OUT]
   
   @js.native
-  sealed trait MULTIPLY extends BlendMode
+  sealed trait MULTIPLY
+    extends StObject
+       with BlendMode
   @scala.inline
   def MULTIPLY: MULTIPLY = "MULTIPLY".asInstanceOf[MULTIPLY]
   
   @js.native
-  sealed trait NAVIGATE extends Navigation
+  sealed trait NAVIGATE
+    extends StObject
+       with Navigation
   @scala.inline
   def NAVIGATE: NAVIGATE = "NAVIGATE".asInstanceOf[NAVIGATE]
   
@@ -440,7 +522,8 @@ object figmaStrings {
   
   @js.native
   sealed trait NONE
-    extends HandleMirroring
+    extends StObject
+       with HandleMirroring
        with OverflowDirection
        with OverlayBackgroundInteraction
        with StrokeCap
@@ -449,12 +532,16 @@ object figmaStrings {
   def NONE: NONE = "NONE".asInstanceOf[NONE]
   
   @js.native
-  sealed trait NONZERO extends WindingRule
+  sealed trait NONZERO
+    extends StObject
+       with WindingRule
   @scala.inline
   def NONZERO: NONZERO = "NONZERO".asInstanceOf[NONZERO]
   
   @js.native
-  sealed trait NORMAL extends BlendMode
+  sealed trait NORMAL
+    extends StObject
+       with BlendMode
   @scala.inline
   def NORMAL: NORMAL = "NORMAL".asInstanceOf[NORMAL]
   
@@ -479,7 +566,9 @@ object figmaStrings {
   def ON_PRESS: ON_PRESS = "ON_PRESS".asInstanceOf[ON_PRESS]
   
   @js.native
-  sealed trait ORIGINAL extends TextCase
+  sealed trait ORIGINAL
+    extends StObject
+       with TextCase
   @scala.inline
   def ORIGINAL: ORIGINAL = "ORIGINAL".asInstanceOf[ORIGINAL]
   
@@ -490,23 +579,30 @@ object figmaStrings {
   
   @js.native
   sealed trait OVERLAY
-    extends BlendMode
+    extends StObject
+       with BlendMode
        with Navigation
   @scala.inline
   def OVERLAY: OVERLAY = "OVERLAY".asInstanceOf[OVERLAY]
   
   @js.native
-  sealed trait PAGE extends NodeType
+  sealed trait PAGE
+    extends StObject
+       with NodeType
   @scala.inline
   def PAGE: PAGE = "PAGE".asInstanceOf[PAGE]
   
   @js.native
-  sealed trait PAINT extends StyleType
+  sealed trait PAINT
+    extends StObject
+       with StyleType
   @scala.inline
   def PAINT: PAINT = "PAINT".asInstanceOf[PAINT]
   
   @js.native
-  sealed trait PASS_THROUGH extends BlendMode
+  sealed trait PASS_THROUGH
+    extends StObject
+       with BlendMode
   @scala.inline
   def PASS_THROUGH: PASS_THROUGH = "PASS_THROUGH".asInstanceOf[PASS_THROUGH]
   
@@ -531,7 +627,9 @@ object figmaStrings {
   def PNG: PNG = "PNG".asInstanceOf[PNG]
   
   @js.native
-  sealed trait POLYGON extends NodeType
+  sealed trait POLYGON
+    extends StObject
+       with NodeType
   @scala.inline
   def POLYGON: POLYGON = "POLYGON".asInstanceOf[POLYGON]
   
@@ -541,7 +639,9 @@ object figmaStrings {
   def PUSH: PUSH = "PUSH".asInstanceOf[PUSH]
   
   @js.native
-  sealed trait RECTANGLE extends NodeType
+  sealed trait RECTANGLE
+    extends StObject
+       with NodeType
   @scala.inline
   def RECTANGLE: RECTANGLE = "RECTANGLE".asInstanceOf[RECTANGLE]
   
@@ -552,7 +652,8 @@ object figmaStrings {
   
   @js.native
   sealed trait ROUND
-    extends StrokeCap
+    extends StObject
+       with StrokeCap
        with StrokeJoin
   @scala.inline
   def ROUND: ROUND = "ROUND".asInstanceOf[ROUND]
@@ -563,22 +664,30 @@ object figmaStrings {
   def ROWS: ROWS = "ROWS".asInstanceOf[ROWS]
   
   @js.native
-  sealed trait SATURATION extends BlendMode
+  sealed trait SATURATION
+    extends StObject
+       with BlendMode
   @scala.inline
   def SATURATION: SATURATION = "SATURATION".asInstanceOf[SATURATION]
   
   @js.native
-  sealed trait SCALE extends ConstraintType
+  sealed trait SCALE
+    extends StObject
+       with ConstraintType
   @scala.inline
   def SCALE: SCALE = "SCALE".asInstanceOf[SCALE]
   
   @js.native
-  sealed trait SCREEN extends BlendMode
+  sealed trait SCREEN
+    extends StObject
+       with BlendMode
   @scala.inline
   def SCREEN: SCREEN = "SCREEN".asInstanceOf[SCREEN]
   
   @js.native
-  sealed trait SLICE extends NodeType
+  sealed trait SLICE
+    extends StObject
+       with NodeType
   @scala.inline
   def SLICE: SLICE = "SLICE".asInstanceOf[SLICE]
   
@@ -598,7 +707,9 @@ object figmaStrings {
   def SMART_ANIMATE: SMART_ANIMATE = "SMART_ANIMATE".asInstanceOf[SMART_ANIMATE]
   
   @js.native
-  sealed trait SOFT_LIGHT extends BlendMode
+  sealed trait SOFT_LIGHT
+    extends StObject
+       with BlendMode
   @scala.inline
   def SOFT_LIGHT: SOFT_LIGHT = "SOFT_LIGHT".asInstanceOf[SOFT_LIGHT]
   
@@ -613,22 +724,30 @@ object figmaStrings {
   def SOLID_COLOR: SOLID_COLOR = "SOLID_COLOR".asInstanceOf[SOLID_COLOR]
   
   @js.native
-  sealed trait SQUARE extends StrokeCap
+  sealed trait SQUARE
+    extends StObject
+       with StrokeCap
   @scala.inline
   def SQUARE: SQUARE = "SQUARE".asInstanceOf[SQUARE]
   
   @js.native
-  sealed trait STAR extends NodeType
+  sealed trait STAR
+    extends StObject
+       with NodeType
   @scala.inline
   def STAR: STAR = "STAR".asInstanceOf[STAR]
   
   @js.native
-  sealed trait STRETCH extends ConstraintType
+  sealed trait STRETCH
+    extends StObject
+       with ConstraintType
   @scala.inline
   def STRETCH: STRETCH = "STRETCH".asInstanceOf[STRETCH]
   
   @js.native
-  sealed trait STRIKETHROUGH extends TextDecoration
+  sealed trait STRIKETHROUGH
+    extends StObject
+       with TextDecoration
   @scala.inline
   def STRIKETHROUGH: STRIKETHROUGH = "STRIKETHROUGH".asInstanceOf[STRIKETHROUGH]
   
@@ -643,13 +762,16 @@ object figmaStrings {
   def SVG: SVG = "SVG".asInstanceOf[SVG]
   
   @js.native
-  sealed trait SWAP extends Navigation
+  sealed trait SWAP
+    extends StObject
+       with Navigation
   @scala.inline
   def SWAP: SWAP = "SWAP".asInstanceOf[SWAP]
   
   @js.native
   sealed trait TEXT
-    extends NodeType
+    extends StObject
+       with NodeType
        with StyleType
   @scala.inline
   def TEXT: TEXT = "TEXT".asInstanceOf[TEXT]
@@ -660,7 +782,9 @@ object figmaStrings {
   def TILE: TILE = "TILE".asInstanceOf[TILE]
   
   @js.native
-  sealed trait TITLE extends TextCase
+  sealed trait TITLE
+    extends StObject
+       with TextCase
   @scala.inline
   def TITLE: TITLE = "TITLE".asInstanceOf[TITLE]
   
@@ -670,22 +794,30 @@ object figmaStrings {
   def TOP: TOP = "TOP".asInstanceOf[TOP]
   
   @js.native
-  sealed trait TOP_CENTER extends OverlayPositionType
+  sealed trait TOP_CENTER
+    extends StObject
+       with OverlayPositionType
   @scala.inline
   def TOP_CENTER: TOP_CENTER = "TOP_CENTER".asInstanceOf[TOP_CENTER]
   
   @js.native
-  sealed trait TOP_LEFT extends OverlayPositionType
+  sealed trait TOP_LEFT
+    extends StObject
+       with OverlayPositionType
   @scala.inline
   def TOP_LEFT: TOP_LEFT = "TOP_LEFT".asInstanceOf[TOP_LEFT]
   
   @js.native
-  sealed trait TOP_RIGHT extends OverlayPositionType
+  sealed trait TOP_RIGHT
+    extends StObject
+       with OverlayPositionType
   @scala.inline
   def TOP_RIGHT: TOP_RIGHT = "TOP_RIGHT".asInstanceOf[TOP_RIGHT]
   
   @js.native
-  sealed trait UNDERLINE extends TextDecoration
+  sealed trait UNDERLINE
+    extends StObject
+       with TextDecoration
   @scala.inline
   def UNDERLINE: UNDERLINE = "UNDERLINE".asInstanceOf[UNDERLINE]
   
@@ -695,7 +827,9 @@ object figmaStrings {
   def UNION: UNION = "UNION".asInstanceOf[UNION]
   
   @js.native
-  sealed trait UPPER extends TextCase
+  sealed trait UPPER
+    extends StObject
+       with TextCase
   @scala.inline
   def UPPER: UPPER = "UPPER".asInstanceOf[UPPER]
   
@@ -705,12 +839,16 @@ object figmaStrings {
   def URL: URL = "URL".asInstanceOf[URL]
   
   @js.native
-  sealed trait VECTOR extends NodeType
+  sealed trait VECTOR
+    extends StObject
+       with NodeType
   @scala.inline
   def VECTOR: VECTOR = "VECTOR".asInstanceOf[VECTOR]
   
   @js.native
-  sealed trait VERTICAL extends OverflowDirection
+  sealed trait VERTICAL
+    extends StObject
+       with OverflowDirection
   @scala.inline
   def VERTICAL: VERTICAL = "VERTICAL".asInstanceOf[VERTICAL]
   

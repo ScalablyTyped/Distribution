@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStreamingDistributionRequest extends StObject {
   
   /**
     * The streaming distribution's configuration information.
     */
-  var StreamingDistributionConfig: typings.awsSdk.cloudfrontMod.StreamingDistributionConfig = js.native
+  var StreamingDistributionConfig: typings.awsSdk.cloudfrontMod.StreamingDistributionConfig
 }
 object CreateStreamingDistributionRequest {
   

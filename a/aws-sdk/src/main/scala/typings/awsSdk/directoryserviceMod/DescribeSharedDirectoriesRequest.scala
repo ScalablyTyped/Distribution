@@ -2,31 +2,29 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSharedDirectoriesRequest extends StObject {
   
   /**
     * The number of shared directories to return in the response object.
     */
-  var Limit: js.UndefOr[typings.awsSdk.directoryserviceMod.Limit] = js.native
+  var Limit: js.UndefOr[typings.awsSdk.directoryserviceMod.Limit] = js.undefined
   
   /**
     * The DescribeSharedDirectoriesResult.NextToken value from a previous call to DescribeSharedDirectories. Pass null if this is the first call. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.undefined
   
   /**
     * Returns the identifier of the directory in the directory owner account. 
     */
-  var OwnerDirectoryId: DirectoryId = js.native
+  var OwnerDirectoryId: DirectoryId
   
   /**
     * A list of identifiers of all shared directories in your account. 
     */
-  var SharedDirectoryIds: js.UndefOr[DirectoryIds] = js.native
+  var SharedDirectoryIds: js.UndefOr[DirectoryIds] = js.undefined
 }
 object DescribeSharedDirectoriesRequest {
   

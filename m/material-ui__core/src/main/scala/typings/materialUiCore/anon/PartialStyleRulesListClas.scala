@@ -3,20 +3,18 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/List.ListClassKey>> */
-@js.native
 trait PartialStyleRulesListClas extends StObject {
   
-  var dense: js.UndefOr[CSSProperties] = js.native
+  var dense: js.UndefOr[CSSProperties] = js.undefined
   
-  var padding: js.UndefOr[CSSProperties] = js.native
+  var padding: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
   
-  var subheader: js.UndefOr[CSSProperties] = js.native
+  var subheader: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesListClas {
   

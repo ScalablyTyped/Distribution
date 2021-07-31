@@ -2,23 +2,23 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationProperty extends IProperty {
+trait NavigationProperty
+  extends StObject
+     with IProperty {
   
-  var associationName: String = js.native
+  var associationName: String
   
-  var entityType: EntityType = js.native
+  var entityType: EntityType
   
-  var foreignKeyNames: js.Array[String] = js.native
+  var foreignKeyNames: js.Array[String]
   
-  var inverse: NavigationProperty = js.native
+  var inverse: NavigationProperty
   
-  var isScalar: Boolean = js.native
+  var isScalar: Boolean
   
-  var relatedDataProperties: js.Array[DataProperty] = js.native
+  var relatedDataProperties: js.Array[DataProperty]
 }
 object NavigationProperty {
   

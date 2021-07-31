@@ -5,25 +5,23 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
-  var container: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var container: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var content: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var content: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var contentCenter: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentCenter: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var contentLeft: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentLeft: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var contentRight: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentRight: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var subTitle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var subTitle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var title: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var title: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 object Content {
   

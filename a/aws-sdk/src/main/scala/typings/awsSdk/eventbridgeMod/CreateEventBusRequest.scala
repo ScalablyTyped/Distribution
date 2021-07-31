@@ -2,26 +2,24 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateEventBusRequest extends StObject {
   
   /**
     * If you are creating a partner event bus, this specifies the partner event source that the new event bus will be matched with.
     */
-  var EventSourceName: js.UndefOr[typings.awsSdk.eventbridgeMod.EventSourceName] = js.native
+  var EventSourceName: js.UndefOr[typings.awsSdk.eventbridgeMod.EventSourceName] = js.undefined
   
   /**
     * The name of the new event bus.  Event bus names cannot contain the / character. You can't use the name default for a custom event bus, as this name is already used for your account's default event bus. If this is a partner event bus, the name must exactly match the name of the partner event source that this event bus is matched to.
     */
-  var Name: EventBusName = js.native
+  var Name: EventBusName
   
   /**
     * Tags to associate with the event bus.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateEventBusRequest {
   

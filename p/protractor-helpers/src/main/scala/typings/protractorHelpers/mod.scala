@@ -6,43 +6,38 @@ import typings.seleniumWebdriver.mod.Locator
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("protractor-helpers", "clearAndSetValue")
+  @JSImport("protractor-helpers", JSImport.Namespace)
   @js.native
-  def clearAndSetValue(input: ElementFinder, value: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("protractor-helpers", "createMessage")
-  @js.native
-  def createMessage(actual: String, message: String, isNot: js.Any): String = js.native
-  @JSImport("protractor-helpers", "createMessage")
-  @js.native
-  def createMessage(actual: ElementArrayFinder, message: String, isNot: js.Any): String = js.native
-  @JSImport("protractor-helpers", "createMessage")
-  @js.native
-  def createMessage(actual: ElementFinder, message: String, isNot: js.Any): String = js.native
+  @scala.inline
+  def clearAndSetValue(input: ElementFinder, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clearAndSetValue")(input.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("protractor-helpers", "displayHover")
-  @js.native
-  def displayHover(element: ElementFinder): Unit = js.native
+  @scala.inline
+  def createMessage(actual: String, message: String, isNot: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def createMessage(actual: ElementArrayFinder, message: String, isNot: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def createMessage(actual: ElementFinder, message: String, isNot: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("protractor-helpers", "getFilteredConsoleErrors")
-  @js.native
-  def getFilteredConsoleErrors(): js.Any = js.native
+  @scala.inline
+  def displayHover(element: ElementFinder): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("displayHover")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def getFilteredConsoleErrors(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilteredConsoleErrors")().asInstanceOf[js.Any]
   
   object global {
     
-    @JSGlobal("$$data")
-    @js.native
-    def $data(hook: String): ElementArrayFinder = js.native
+    @scala.inline
+    def $data(hook: String): ElementArrayFinder = js.Dynamic.global.applyDynamic("$$data")(hook.asInstanceOf[js.Any]).asInstanceOf[ElementArrayFinder]
     
     // Globals
-    @JSGlobal("$data")
-    @js.native
-    def data(hook: String): ElementFinder = js.native
+    @scala.inline
+    def data(hook: String): ElementFinder = js.Dynamic.global.applyDynamic("$data")(hook.asInstanceOf[js.Any]).asInstanceOf[ElementFinder]
     
     // Matchers
     // TODO - Use `T` to improve types
@@ -101,13 +96,12 @@ object mod {
     //        Are they Locator s?
     object protractor {
       
-      @js.native
       trait ElementArrayFinder extends StObject {
         
         @JSName("$$data")
-        def DollarDollardata(hook: String): ElementArrayFinder = js.native
+        def DollarDollardata(hook: String): ElementArrayFinder
         
-        def getByText(text: String): ElementFinder = js.native
+        def getByText(text: String): ElementFinder
       }
       object ElementArrayFinder {
         
@@ -129,11 +123,10 @@ object mod {
         }
       }
       
-      @js.native
       trait ElementFinder extends StObject {
         
         @JSName("$data")
-        def $data(hook: String): ElementFinder = js.native
+        def $data(hook: String): ElementFinder
       }
       object ElementFinder {
         
@@ -155,116 +148,89 @@ object mod {
       trait IProtractorLocatorStrategy extends StObject {
         
         def dataHook(hook: String): Locator = js.native
-        def dataHook(hook: String, optParentElement: js.UndefOr[scala.Nothing], optRootSelector: String): Locator = js.native
+        def dataHook(hook: String, optParentElement: Unit, optRootSelector: String): Locator = js.native
         def dataHook(hook: String, optParentElement: ElementFinder): Locator = js.native
         def dataHook(hook: String, optParentElement: ElementFinder, optRootSelector: String): Locator = js.native
         
         def dataHookAll(hook: String): Locator = js.native
-        def dataHookAll(hook: String, optParentElement: js.UndefOr[scala.Nothing], optRootSelector: String): Locator = js.native
+        def dataHookAll(hook: String, optParentElement: Unit, optRootSelector: String): Locator = js.native
         def dataHookAll(hook: String, optParentElement: ElementFinder): Locator = js.native
         def dataHookAll(hook: String, optParentElement: ElementFinder, optRootSelector: String): Locator = js.native
       }
     }
   }
   
-  @JSImport("protractor-helpers", "hasClass")
-  @js.native
-  def hasClass(element: ElementFinder, className: String): js.Any = js.native
+  @scala.inline
+  def hasClass(element: ElementFinder, className: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("protractor-helpers", "hasLink")
-  @js.native
-  def hasLink(element: ElementFinder, url: String): js.Any = js.native
+  @scala.inline
+  def hasLink(element: ElementFinder, url: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasLink")(element.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("protractor-helpers", "hasValue")
-  @js.native
-  def hasValue(element: ElementFinder, expectedValue: String): js.Any = js.native
-  @JSImport("protractor-helpers", "hasValue")
-  @js.native
-  def hasValue(element: ElementFinder, expectedValue: Double): js.Any = js.native
+  @scala.inline
+  def hasValue(element: ElementFinder, expectedValue: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasValue")(element.asInstanceOf[js.Any], expectedValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def hasValue(element: ElementFinder, expectedValue: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasValue")(element.asInstanceOf[js.Any], expectedValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("protractor-helpers", "isChecked")
-  @js.native
-  def isChecked(element: ElementFinder): js.Any = js.native
+  @scala.inline
+  def isChecked(element: ElementFinder): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isChecked")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("protractor-helpers", "isDisabled")
-  @js.native
-  def isDisabled(element: ElementFinder): js.Any = js.native
+  @scala.inline
+  def isDisabled(element: ElementFinder): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("protractor-helpers", "isFirefox")
-  @js.native
-  def isFirefox(): Boolean = js.native
+  @scala.inline
+  def isFirefox(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirefox")().asInstanceOf[Boolean]
   
-  @JSImport("protractor-helpers", "isIE")
-  @js.native
-  def isIE(): Boolean = js.native
+  @scala.inline
+  def isIE(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIE")().asInstanceOf[Boolean]
   
-  @JSImport("protractor-helpers", "maximizeWindow")
-  @js.native
-  def maximizeWindow(): Unit = js.native
-  @JSImport("protractor-helpers", "maximizeWindow")
-  @js.native
-  def maximizeWindow(width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-  @JSImport("protractor-helpers", "maximizeWindow")
-  @js.native
-  def maximizeWindow(width: Double): Unit = js.native
-  @JSImport("protractor-helpers", "maximizeWindow")
-  @js.native
-  def maximizeWindow(width: Double, height: Double): Unit = js.native
+  @scala.inline
+  def maximizeWindow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("maximizeWindow")().asInstanceOf[Unit]
+  @scala.inline
+  def maximizeWindow(width: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("maximizeWindow")(width.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def maximizeWindow(width: Double, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("maximizeWindow")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def maximizeWindow(width: Unit, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("maximizeWindow")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("protractor-helpers", "moveToElement")
-  @js.native
-  def moveToElement(hook: String): Unit = js.native
+  @scala.inline
+  def moveToElement(hook: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("moveToElement")(hook.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("protractor-helpers", "not")
-  @js.native
+  @scala.inline
   def not(
     arg: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.promise.IThenable<any> */ js.Any
-  ): js.Any = js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("protractor-helpers", "resetPosition")
-  @js.native
-  def resetPosition(): Unit = js.native
+  @scala.inline
+  def resetPosition(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetPosition")().asInstanceOf[Unit]
   
-  @JSImport("protractor-helpers", "safeGet")
-  @js.native
-  def safeGet(url: String): Unit = js.native
+  @scala.inline
+  def safeGet(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("safeGet")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("protractor-helpers", "selectOption")
-  @js.native
-  def selectOption(option: ElementFinder): Unit = js.native
+  @scala.inline
+  def selectOption(option: ElementFinder): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("selectOption")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("protractor-helpers", "selectOptionByIndex")
-  @js.native
-  def selectOptionByIndex(select: ElementFinder, index: Double): Unit = js.native
+  @scala.inline
+  def selectOptionByIndex(select: ElementFinder, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptionByIndex")(select.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("protractor-helpers", "selectOptionByText")
-  @js.native
-  def selectOptionByText(select: ElementFinder, text: String): Unit = js.native
+  @scala.inline
+  def selectOptionByText(select: ElementFinder, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptionByText")(select.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("protractor-helpers", "translate")
-  @js.native
-  def translate(translationId: String): js.Any = js.native
-  @JSImport("protractor-helpers", "translate")
-  @js.native
-  def translate(translationId: String, interpolateParams: js.Any): js.Any = js.native
-  @JSImport("protractor-helpers", "translate")
-  @js.native
-  def translate(translationId: js.Array[String]): js.Any = js.native
-  @JSImport("protractor-helpers", "translate")
-  @js.native
-  def translate(translationId: js.Array[String], interpolateParams: js.Any): js.Any = js.native
+  @scala.inline
+  def translate(translationId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def translate(translationId: String, interpolateParams: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any], interpolateParams.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def translate(translationId: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def translate(translationId: js.Array[String], interpolateParams: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any], interpolateParams.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("protractor-helpers", "waitForElement")
-  @js.native
-  def waitForElement(element: ElementFinder): Unit = js.native
-  @JSImport("protractor-helpers", "waitForElement")
-  @js.native
-  def waitForElement(element: ElementFinder, timeout: Double): Unit = js.native
+  @scala.inline
+  def waitForElement(element: ElementFinder): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def waitForElement(element: ElementFinder, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(element.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("protractor-helpers", "waitForElementToDisappear")
-  @js.native
-  def waitForElementToDisappear(element: ElementFinder): Unit = js.native
-  @JSImport("protractor-helpers", "waitForElementToDisappear")
-  @js.native
-  def waitForElementToDisappear(element: ElementFinder, timeout: Double): Unit = js.native
+  @scala.inline
+  def waitForElementToDisappear(element: ElementFinder): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToDisappear")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def waitForElementToDisappear(element: ElementFinder, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToDisappear")(element.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

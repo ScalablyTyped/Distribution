@@ -2,18 +2,18 @@ package typings.winrtUwp.Windows.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a reference counted memory buffer. */
-@js.native
-trait IMemoryBuffer extends IClosable {
+trait IMemoryBuffer
+  extends StObject
+     with IClosable {
   
   /**
     * Returns a new managed object that implements the IMemoryBufferReference interface.
     * @return A new managed object that implements the IMemoryBufferReference interface.
     */
-  def createReference(): IMemoryBufferReference = js.native
+  def createReference(): IMemoryBufferReference
 }
 object IMemoryBuffer {
   

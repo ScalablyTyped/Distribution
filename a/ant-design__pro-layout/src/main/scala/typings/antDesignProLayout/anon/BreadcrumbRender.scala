@@ -11,37 +11,35 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BreadcrumbRender extends StObject {
   
   var breadcrumbRender: js.UndefOr[
     js.Function1[/* routers */ js.UndefOr[js.Array[Route]], js.UndefOr[js.Array[Route]]]
-  ] = js.native
+  ] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var contentStyle: js.UndefOr[CSSProperties] = js.native
+  var contentStyle: js.UndefOr[CSSProperties] = js.undefined
   
   /**
     * 兼用 content的 margin
     */
-  var disableContentMargin: js.UndefOr[Boolean] = js.native
+  var disableContentMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否禁用移动端模式，有的管理系统不需要移动端模式，此属性设置为true即可
     */
-  var disableMobile: js.UndefOr[Boolean] = js.native
+  var disableMobile: js.UndefOr[Boolean] = js.undefined
   
   var footerRender: js.UndefOr[
     WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
-  ] = js.native
+  ] = js.undefined
   
-  var formatMessage: js.UndefOr[js.Function1[/* message */ MessageDescriptor, String]] = js.native
+  var formatMessage: js.UndefOr[js.Function1[/* message */ MessageDescriptor, String]] = js.undefined
   
-  var isChildrenLayout: js.UndefOr[Boolean] = js.native
+  var isChildrenLayout: js.UndefOr[Boolean] = js.undefined
   
   var itemRender: js.UndefOr[
     js.Function4[
@@ -51,26 +49,26 @@ trait BreadcrumbRender extends StObject {
       /* paths */ js.Array[String], 
       ReactNode
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var loading: js.UndefOr[Boolean] = js.native
+  var loading: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[LocaleType] = js.native
+  var locale: js.UndefOr[LocaleType] = js.undefined
   
   /**
     *@name logo url
     */
-  var logo: js.UndefOr[ReactNode | WithFalse[js.Function0[ReactNode]]] = js.native
+  var logo: js.UndefOr[ReactNode | WithFalse[js.Function0[ReactNode]]] = js.undefined
   
-  var menuDataRender: js.UndefOr[js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]] = js.native
+  var menuDataRender: js.UndefOr[js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]] = js.undefined
   
   var menuItemRender: js.UndefOr[
     WithFalse[
       js.Function2[/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode, ReactNode]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.native
+  var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
   
   /**
     *@name 页面切换的时候触发
@@ -82,7 +80,7 @@ trait BreadcrumbRender extends StObject {
       ], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var pageTitleRender: js.UndefOr[
     WithFalse[
@@ -93,9 +91,9 @@ trait BreadcrumbRender extends StObject {
         String
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var pure: js.UndefOr[Boolean] = js.native
+  var pure: js.UndefOr[Boolean] = js.undefined
 }
 object BreadcrumbRender {
   

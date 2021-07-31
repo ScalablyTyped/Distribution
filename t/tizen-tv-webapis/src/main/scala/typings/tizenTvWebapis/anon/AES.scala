@@ -8,47 +8,45 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`5`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AES extends StObject {
   
   /**
     * AES encryption
     */
-  var AES: `3` = js.native
+  var AES: `3`
   
   /**
     * No encryption
     */
-  var NONE: `5` = js.native
+  var NONE: `5`
   
   /**
     * TKIP encryption
     */
-  var TKIP: `2` = js.native
+  var TKIP: `2`
   
   /**
     * TKIP_AES_MIXED encryption
     */
-  var TKIP_AES_MIXED: `4` = js.native
+  var TKIP_AES_MIXED: `4`
   
   /**
     * Encryption type unknown
     */
-  var UNKNOWN: `6` = js.native
+  var UNKNOWN: `6`
   
   /**
     * WEP encryption
     */
-  var WEP: `1` = js.native
+  var WEP: `1`
 }
 object AES {
   
   @scala.inline
-  def apply(AES: `3`, NONE: `5`, TKIP: `2`, TKIP_AES_MIXED: `4`, UNKNOWN: `6`, WEP: `1`): AES = {
-    val __obj = js.Dynamic.literal(AES = AES.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], TKIP = TKIP.asInstanceOf[js.Any], TKIP_AES_MIXED = TKIP_AES_MIXED.asInstanceOf[js.Any], UNKNOWN = UNKNOWN.asInstanceOf[js.Any], WEP = WEP.asInstanceOf[js.Any])
+  def apply(): AES = {
+    val __obj = js.Dynamic.literal(AES = 3, NONE = 5, TKIP = 2, TKIP_AES_MIXED = 4, UNKNOWN = 6, WEP = 1)
     __obj.asInstanceOf[AES]
   }
   

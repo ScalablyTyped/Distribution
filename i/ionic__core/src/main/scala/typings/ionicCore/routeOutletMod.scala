@@ -11,7 +11,6 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeOutletMod {
@@ -19,7 +18,8 @@ object routeOutletMod {
   @JSImport("@ionic/core/dist/types/components/router-outlet/route-outlet", "RouterOutlet")
   @js.native
   class RouterOutlet ()
-    extends ComponentInterface
+    extends StObject
+       with ComponentInterface
        with NavOutlet {
     
     var activeComponent: js.Any = js.native
@@ -43,7 +43,7 @@ object routeOutletMod {
     
     /** @internal */
     def commit(enteringEl: HTMLElement): js.Promise[Boolean] = js.native
-    def commit(enteringEl: HTMLElement, leavingEl: js.UndefOr[scala.Nothing], opts: RouterOutletOptions): js.Promise[Boolean] = js.native
+    def commit(enteringEl: HTMLElement, leavingEl: Unit, opts: RouterOutletOptions): js.Promise[Boolean] = js.native
     def commit(enteringEl: HTMLElement, leavingEl: HTMLElement): js.Promise[Boolean] = js.native
     def commit(enteringEl: HTMLElement, leavingEl: HTMLElement, opts: RouterOutletOptions): js.Promise[Boolean] = js.native
     

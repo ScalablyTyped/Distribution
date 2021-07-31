@@ -2,17 +2,15 @@ package typings.apolloReportingProtobuf.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITracesAndStats extends StObject {
   
   /** TracesAndStats statsWithContext */
-  var statsWithContext: js.UndefOr[js.Array[IContextualizedStats] | Null] = js.native
+  var statsWithContext: js.UndefOr[js.Array[IContextualizedStats] | Null] = js.undefined
   
   /** TracesAndStats trace */
-  var trace: js.UndefOr[js.Array[ITrace] | Null] = js.native
+  var trace: js.UndefOr[js.Array[ITrace] | Null] = js.undefined
 }
 object ITracesAndStats {
   

@@ -11,221 +11,196 @@ import typings.reactGa.reactGaStrings.xhr
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-ga", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-ga", "OutboundLink")
   @js.native
   class OutboundLink_ protected ()
-    extends Component[OutboundLinkProps with HTMLProps[HTMLAnchorElement], ComponentState, js.Any] {
-    def this(props: OutboundLinkProps with HTMLProps[HTMLAnchorElement]) = this()
-    def this(props: OutboundLinkProps with HTMLProps[HTMLAnchorElement], context: js.Any) = this()
+    extends Component[OutboundLinkProps & HTMLProps[HTMLAnchorElement], ComponentState, js.Any] {
+    def this(props: OutboundLinkProps & HTMLProps[HTMLAnchorElement]) = this()
+    def this(props: OutboundLinkProps & HTMLProps[HTMLAnchorElement], context: js.Any) = this()
   }
   
   @JSImport("react-ga", "OutboundLink")
   @js.native
-  val OutboundLink_ : ComponentClass[OutboundLinkProps with HTMLProps[HTMLAnchorElement], ComponentState] = js.native
+  val OutboundLink_ : ComponentClass[OutboundLinkProps & HTMLProps[HTMLAnchorElement], ComponentState] = js.native
   
-  @JSImport("react-ga", "addTrackers")
-  @js.native
-  def addTrackers(trackers: js.Array[Tracker]): Unit = js.native
-  @JSImport("react-ga", "addTrackers")
-  @js.native
-  def addTrackers(trackingCode: String): Unit = js.native
+  @scala.inline
+  def addTrackers(trackers: js.Array[Tracker]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTrackers")(trackers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def addTrackers(trackingCode: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTrackers")(trackingCode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-ga", "event")
-  @js.native
-  def event(args: EventArgs): Unit = js.native
-  @JSImport("react-ga", "event")
-  @js.native
-  def event(args: EventArgs, trackerNames: TrackerNames): Unit = js.native
+  @scala.inline
+  def event(args: EventArgs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("event")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def event(args: EventArgs, trackerNames: TrackerNames): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("event")(args.asInstanceOf[js.Any], trackerNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-ga", "exception")
-  @js.native
-  def exception(fieldsObject: FieldsObject): Unit = js.native
-  @JSImport("react-ga", "exception")
-  @js.native
-  def exception(fieldsObject: FieldsObject, trackerNames: TrackerNames): Unit = js.native
+  @scala.inline
+  def exception(fieldsObject: FieldsObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exception")(fieldsObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def exception(fieldsObject: FieldsObject, trackerNames: TrackerNames): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exception")(fieldsObject.asInstanceOf[js.Any], trackerNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-ga", "ga")
-  @js.native
-  def ga(): js.Function1[/* repeated */ js.Any, Unit] = js.native
-  @JSImport("react-ga", "ga")
-  @js.native
-  def ga(args: js.Any*): Unit = js.native
+  @scala.inline
+  def ga(): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ga")().asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  @scala.inline
+  def ga(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ga")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-ga", "initialize")
-  @js.native
-  def initialize(trackers: js.Array[Tracker]): Unit = js.native
-  @JSImport("react-ga", "initialize")
-  @js.native
-  def initialize(trackers: js.Array[Tracker], options: InitializeOptions): Unit = js.native
-  @JSImport("react-ga", "initialize")
-  @js.native
-  def initialize(trackingCode: String): Unit = js.native
-  @JSImport("react-ga", "initialize")
-  @js.native
-  def initialize(trackingCode: String, options: InitializeOptions): Unit = js.native
+  @scala.inline
+  def initialize(trackers: js.Array[Tracker]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(trackers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def initialize(trackers: js.Array[Tracker], options: InitializeOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(trackers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def initialize(trackingCode: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(trackingCode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def initialize(trackingCode: String, options: InitializeOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(trackingCode.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-ga", "modalview")
-  @js.native
-  def modalview(name: String): Unit = js.native
-  @JSImport("react-ga", "modalview")
-  @js.native
-  def modalview(name: String, trackerNames: TrackerNames): Unit = js.native
+  @scala.inline
+  def modalview(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("modalview")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def modalview(name: String, trackerNames: TrackerNames): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modalview")(name.asInstanceOf[js.Any], trackerNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-ga", "outboundLink")
-  @js.native
-  def outboundLink(args: OutboundLinkArgs, hitCallback: js.Function0[Unit]): Unit = js.native
-  @JSImport("react-ga", "outboundLink")
-  @js.native
-  def outboundLink(args: OutboundLinkArgs, hitCallback: js.Function0[Unit], trackerNames: TrackerNames): Unit = js.native
+  @scala.inline
+  def outboundLink(args: OutboundLinkArgs, hitCallback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outboundLink")(args.asInstanceOf[js.Any], hitCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def outboundLink(args: OutboundLinkArgs, hitCallback: js.Function0[Unit], trackerNames: TrackerNames): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outboundLink")(args.asInstanceOf[js.Any], hitCallback.asInstanceOf[js.Any], trackerNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-ga", "pageview")
-  @js.native
-  def pageview(path: String): Unit = js.native
-  @JSImport("react-ga", "pageview")
-  @js.native
-  def pageview(path: String, trackerNames: js.UndefOr[scala.Nothing], title: String): Unit = js.native
-  @JSImport("react-ga", "pageview")
-  @js.native
-  def pageview(path: String, trackerNames: TrackerNames): Unit = js.native
-  @JSImport("react-ga", "pageview")
-  @js.native
-  def pageview(path: String, trackerNames: TrackerNames, title: String): Unit = js.native
+  @scala.inline
+  def pageview(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pageview")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def pageview(path: String, trackerNames: Unit, title: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pageview")(path.asInstanceOf[js.Any], trackerNames.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def pageview(path: String, trackerNames: TrackerNames): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pageview")(path.asInstanceOf[js.Any], trackerNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def pageview(path: String, trackerNames: TrackerNames, title: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pageview")(path.asInstanceOf[js.Any], trackerNames.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("react-ga", "plugin")
   @js.native
   val plugin: Plugin_ = js.native
   
-  @JSImport("react-ga", "resetCalls")
-  @js.native
-  def resetCalls(): Unit = js.native
+  @scala.inline
+  def resetCalls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetCalls")().asInstanceOf[Unit]
   
-  @JSImport("react-ga", "send")
-  @js.native
-  def send(fieldsObject: FieldsObject): Unit = js.native
-  @JSImport("react-ga", "send")
-  @js.native
-  def send(fieldsObject: FieldsObject, trackerNames: TrackerNames): Unit = js.native
+  @scala.inline
+  def send(fieldsObject: FieldsObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(fieldsObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def send(fieldsObject: FieldsObject, trackerNames: TrackerNames): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(fieldsObject.asInstanceOf[js.Any], trackerNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-ga", "set")
-  @js.native
-  def set(fieldsObject: FieldsObject): Unit = js.native
-  @JSImport("react-ga", "set")
-  @js.native
-  def set(fieldsObject: FieldsObject, trackerNames: TrackerNames): Unit = js.native
+  @scala.inline
+  def set(fieldsObject: FieldsObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(fieldsObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def set(fieldsObject: FieldsObject, trackerNames: TrackerNames): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(fieldsObject.asInstanceOf[js.Any], trackerNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("react-ga", "testModeAPI")
   @js.native
   val testModeAPI: TestModeAPI_ = js.native
   
-  @JSImport("react-ga", "timing")
-  @js.native
-  def timing(args: TimingArgs): Unit = js.native
-  @JSImport("react-ga", "timing")
-  @js.native
-  def timing(args: TimingArgs, trackerNames: TrackerNames): Unit = js.native
+  @scala.inline
+  def timing(args: TimingArgs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("timing")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def timing(args: TimingArgs, trackerNames: TrackerNames): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(args.asInstanceOf[js.Any], trackerNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait EventArgs extends StObject {
     
     /** The type of interaction (e.g. 'play') */
-    var action: String = js.native
+    var action: String
     
     /** Typically the object that was interacted with (e.g. 'Video') */
-    var category: String = js.native
+    var category: String
     
     /** Custom dimensions */
-    var dimension1: js.UndefOr[String] = js.native
+    var dimension1: js.UndefOr[String] = js.undefined
     
-    var dimension10: js.UndefOr[String] = js.native
+    var dimension10: js.UndefOr[String] = js.undefined
     
-    var dimension11: js.UndefOr[String] = js.native
+    var dimension11: js.UndefOr[String] = js.undefined
     
-    var dimension12: js.UndefOr[String] = js.native
+    var dimension12: js.UndefOr[String] = js.undefined
     
-    var dimension13: js.UndefOr[String] = js.native
+    var dimension13: js.UndefOr[String] = js.undefined
     
-    var dimension14: js.UndefOr[String] = js.native
+    var dimension14: js.UndefOr[String] = js.undefined
     
-    var dimension15: js.UndefOr[String] = js.native
+    var dimension15: js.UndefOr[String] = js.undefined
     
-    var dimension16: js.UndefOr[String] = js.native
+    var dimension16: js.UndefOr[String] = js.undefined
     
-    var dimension17: js.UndefOr[String] = js.native
+    var dimension17: js.UndefOr[String] = js.undefined
     
-    var dimension18: js.UndefOr[String] = js.native
+    var dimension18: js.UndefOr[String] = js.undefined
     
-    var dimension19: js.UndefOr[String] = js.native
+    var dimension19: js.UndefOr[String] = js.undefined
     
-    var dimension2: js.UndefOr[String] = js.native
+    var dimension2: js.UndefOr[String] = js.undefined
     
-    var dimension20: js.UndefOr[String] = js.native
+    var dimension20: js.UndefOr[String] = js.undefined
     
-    var dimension3: js.UndefOr[String] = js.native
+    var dimension3: js.UndefOr[String] = js.undefined
     
-    var dimension4: js.UndefOr[String] = js.native
+    var dimension4: js.UndefOr[String] = js.undefined
     
-    var dimension5: js.UndefOr[String] = js.native
+    var dimension5: js.UndefOr[String] = js.undefined
     
-    var dimension6: js.UndefOr[String] = js.native
+    var dimension6: js.UndefOr[String] = js.undefined
     
-    var dimension7: js.UndefOr[String] = js.native
+    var dimension7: js.UndefOr[String] = js.undefined
     
-    var dimension8: js.UndefOr[String] = js.native
+    var dimension8: js.UndefOr[String] = js.undefined
     
-    var dimension9: js.UndefOr[String] = js.native
+    var dimension9: js.UndefOr[String] = js.undefined
     
     /** Useful for categorizing events (e.g. 'Fall Campaign') */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /** Custom metrics */
-    var metric1: js.UndefOr[Double] = js.native
+    var metric1: js.UndefOr[Double] = js.undefined
     
-    var metric10: js.UndefOr[Double] = js.native
+    var metric10: js.UndefOr[Double] = js.undefined
     
-    var metric11: js.UndefOr[Double] = js.native
+    var metric11: js.UndefOr[Double] = js.undefined
     
-    var metric12: js.UndefOr[Double] = js.native
+    var metric12: js.UndefOr[Double] = js.undefined
     
-    var metric13: js.UndefOr[Double] = js.native
+    var metric13: js.UndefOr[Double] = js.undefined
     
-    var metric14: js.UndefOr[Double] = js.native
+    var metric14: js.UndefOr[Double] = js.undefined
     
-    var metric15: js.UndefOr[Double] = js.native
+    var metric15: js.UndefOr[Double] = js.undefined
     
-    var metric16: js.UndefOr[Double] = js.native
+    var metric16: js.UndefOr[Double] = js.undefined
     
-    var metric17: js.UndefOr[Double] = js.native
+    var metric17: js.UndefOr[Double] = js.undefined
     
-    var metric18: js.UndefOr[Double] = js.native
+    var metric18: js.UndefOr[Double] = js.undefined
     
-    var metric19: js.UndefOr[Double] = js.native
+    var metric19: js.UndefOr[Double] = js.undefined
     
-    var metric2: js.UndefOr[Double] = js.native
+    var metric2: js.UndefOr[Double] = js.undefined
     
-    var metric20: js.UndefOr[Double] = js.native
+    var metric20: js.UndefOr[Double] = js.undefined
     
-    var metric3: js.UndefOr[Double] = js.native
+    var metric3: js.UndefOr[Double] = js.undefined
     
-    var metric4: js.UndefOr[Double] = js.native
+    var metric4: js.UndefOr[Double] = js.undefined
     
-    var metric5: js.UndefOr[Double] = js.native
+    var metric5: js.UndefOr[Double] = js.undefined
     
-    var metric6: js.UndefOr[Double] = js.native
+    var metric6: js.UndefOr[Double] = js.undefined
     
-    var metric7: js.UndefOr[Double] = js.native
+    var metric7: js.UndefOr[Double] = js.undefined
     
-    var metric8: js.UndefOr[Double] = js.native
+    var metric8: js.UndefOr[Double] = js.undefined
     
-    var metric9: js.UndefOr[Double] = js.native
+    var metric9: js.UndefOr[Double] = js.undefined
     
     /** Specifies that a hit be considered non-interactive. */
-    var nonInteraction: js.UndefOr[Boolean] = js.native
+    var nonInteraction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This specifies the transport mechanism with which hits will be sent.
@@ -235,10 +210,10 @@ object mod {
       * the `navigator.sendBeacon` method, it will fall back to 'image' or 'xhr'
       * depending on hit size.
       */
-    var transport: js.UndefOr[beacon | xhr | image] = js.native
+    var transport: js.UndefOr[beacon | xhr | image] = js.undefined
     
     /** A numeric value associated with the event (e.g. 42) */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object EventArgs {
     
@@ -525,42 +500,41 @@ object mod {
   
   type FieldsObject = StringDictionary[js.Any]
   
-  @js.native
   trait GaOptions extends StObject {
     
-    var allowAnchor: js.UndefOr[Boolean] = js.native
+    var allowAnchor: js.UndefOr[Boolean] = js.undefined
     
-    var allowLinker: js.UndefOr[Boolean] = js.native
+    var allowLinker: js.UndefOr[Boolean] = js.undefined
     
-    var alwaysSendReferrer: js.UndefOr[Boolean] = js.native
+    var alwaysSendReferrer: js.UndefOr[Boolean] = js.undefined
     
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
-    var cookieDomain: js.UndefOr[String] = js.native
+    var cookieDomain: js.UndefOr[String] = js.undefined
     
-    var cookieExpires: js.UndefOr[Double] = js.native
+    var cookieExpires: js.UndefOr[Double] = js.undefined
     
-    var cookieFlags: js.UndefOr[String] = js.native
+    var cookieFlags: js.UndefOr[String] = js.undefined
     
-    var cookieName: js.UndefOr[String] = js.native
+    var cookieName: js.UndefOr[String] = js.undefined
     
-    var cookieUpdate: js.UndefOr[Boolean] = js.native
+    var cookieUpdate: js.UndefOr[Boolean] = js.undefined
     
-    var legacyCookieDomain: js.UndefOr[String] = js.native
+    var legacyCookieDomain: js.UndefOr[String] = js.undefined
     
-    var legacyHistoryImport: js.UndefOr[Boolean] = js.native
+    var legacyHistoryImport: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var sampleRate: js.UndefOr[Double] = js.native
+    var sampleRate: js.UndefOr[Double] = js.undefined
     
-    var siteSpeedSampleRate: js.UndefOr[Double] = js.native
+    var siteSpeedSampleRate: js.UndefOr[Double] = js.undefined
     
-    var storage: js.UndefOr[String] = js.native
+    var storage: js.UndefOr[String] = js.undefined
     
-    var storeGac: js.UndefOr[Boolean] = js.native
+    var storeGac: js.UndefOr[Boolean] = js.undefined
     
-    var userId: js.UndefOr[String] = js.native
+    var userId: js.UndefOr[String] = js.undefined
   }
   object GaOptions {
     
@@ -677,27 +651,26 @@ object mod {
     }
   }
   
-  @js.native
   trait InitializeOptions extends StObject {
     
-    var alwaysSendToDefaultTracker: js.UndefOr[Boolean] = js.native
+    var alwaysSendToDefaultTracker: js.UndefOr[Boolean] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var gaAddress: js.UndefOr[String] = js.native
+    var gaAddress: js.UndefOr[String] = js.undefined
     
-    var gaOptions: js.UndefOr[GaOptions] = js.native
+    var gaOptions: js.UndefOr[GaOptions] = js.undefined
     
     /** Optional. Defaults to `true`. Enables redacting a email as the string that in "Event Category" and "Event Action". */
-    var redactEmail: js.UndefOr[Boolean] = js.native
+    var redactEmail: js.UndefOr[Boolean] = js.undefined
     
-    var standardImplementation: js.UndefOr[Boolean] = js.native
+    var standardImplementation: js.UndefOr[Boolean] = js.undefined
     
-    var testMode: js.UndefOr[Boolean] = js.native
+    var testMode: js.UndefOr[Boolean] = js.undefined
     
-    var titleCase: js.UndefOr[Boolean] = js.native
+    var titleCase: js.UndefOr[Boolean] = js.undefined
     
-    var useExistingGa: js.UndefOr[Boolean] = js.native
+    var useExistingGa: js.UndefOr[Boolean] = js.undefined
   }
   object InitializeOptions {
     
@@ -766,10 +739,9 @@ object mod {
     }
   }
   
-  @js.native
   trait OutboundLinkArgs extends StObject {
     
-    var label: String = js.native
+    var label: String
   }
   object OutboundLinkArgs {
     
@@ -787,18 +759,17 @@ object mod {
     }
   }
   
-  @js.native
   trait OutboundLinkProps extends StObject {
     
-    var eventLabel: String = js.native
+    var eventLabel: String
     
-    var onClick: js.UndefOr[js.Function] = js.native
+    var onClick: js.UndefOr[js.Function] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var to: String = js.native
+    var to: String
     
-    var trackerNames: js.UndefOr[TrackerNames] = js.native
+    var trackerNames: js.UndefOr[TrackerNames] = js.undefined
   }
   object OutboundLinkProps {
     
@@ -849,24 +820,23 @@ object mod {
     def execute(pluginName: String, action: String, actionTypeOrPayload: js.Any, payload: js.Any): Unit = js.native
     
     def require(name: String): Unit = js.native
-    def require(name: String, options: js.UndefOr[scala.Nothing], trackerName: String): Unit = js.native
     def require(name: String, options: js.Any): Unit = js.native
     def require(name: String, options: js.Any, trackerName: String): Unit = js.native
+    def require(name: String, options: Unit, trackerName: String): Unit = js.native
   }
   
-  @js.native
   trait TestModeAPI_ extends StObject {
     
-    var calls: js.Array[js.Array[_]] = js.native
+    var calls: js.Array[js.Array[js.Any]]
     
-    def ga(args: js.Any*): js.Any = js.native
+    def ga(args: js.Any*): js.Any
     
-    var resetCalls: js.Function = js.native
+    var resetCalls: js.Function
   }
   object TestModeAPI_ {
     
     @scala.inline
-    def apply(calls: js.Array[js.Array[_]], ga: /* repeated */ js.Any => js.Any, resetCalls: js.Function): TestModeAPI_ = {
+    def apply(calls: js.Array[js.Array[js.Any]], ga: /* repeated */ js.Any => js.Any, resetCalls: js.Function): TestModeAPI_ = {
       val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], ga = js.Any.fromFunction1(ga), resetCalls = resetCalls.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestModeAPI_]
     }
@@ -875,7 +845,7 @@ object mod {
     implicit class TestModeAPI_MutableBuilder[Self <: TestModeAPI_] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCalls(value: js.Array[js.Array[_]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+      def setCalls(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCallsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "calls", js.Array(value :_*))
@@ -888,16 +858,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TimingArgs extends StObject {
     
-    var category: String = js.native
+    var category: String
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var value: Double = js.native
+    var value: Double
     
-    var variable: String = js.native
+    var variable: String
   }
   object TimingArgs {
     
@@ -927,30 +896,11 @@ object mod {
     }
   }
   
-  /* Inlined {  trackingId :string} & react-ga.react-ga.InitializeOptions */
-  @js.native
-  trait Tracker extends StObject {
+  trait Tracker
+    extends StObject
+       with InitializeOptions {
     
-    var alwaysSendToDefaultTracker: js.UndefOr[Boolean] = js.native
-    
-    var debug: js.UndefOr[Boolean] = js.native
-    
-    var gaAddress: js.UndefOr[String] = js.native
-    
-    var gaOptions: js.UndefOr[GaOptions] = js.native
-    
-    /** Optional. Defaults to `true`. Enables redacting a email as the string that in "Event Category" and "Event Action". */
-    var redactEmail: js.UndefOr[Boolean] = js.native
-    
-    var standardImplementation: js.UndefOr[Boolean] = js.native
-    
-    var testMode: js.UndefOr[Boolean] = js.native
-    
-    var titleCase: js.UndefOr[Boolean] = js.native
-    
-    var trackingId: String = js.native
-    
-    var useExistingGa: js.UndefOr[Boolean] = js.native
+    var trackingId: String
   }
   object Tracker {
     
@@ -964,61 +914,7 @@ object mod {
     implicit class TrackerMutableBuilder[Self <: Tracker] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAlwaysSendToDefaultTracker(value: Boolean): Self = StObject.set(x, "alwaysSendToDefaultTracker", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAlwaysSendToDefaultTrackerUndefined: Self = StObject.set(x, "alwaysSendToDefaultTracker", js.undefined)
-      
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
-      
-      @scala.inline
-      def setGaAddress(value: String): Self = StObject.set(x, "gaAddress", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setGaAddressUndefined: Self = StObject.set(x, "gaAddress", js.undefined)
-      
-      @scala.inline
-      def setGaOptions(value: GaOptions): Self = StObject.set(x, "gaOptions", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setGaOptionsUndefined: Self = StObject.set(x, "gaOptions", js.undefined)
-      
-      @scala.inline
-      def setRedactEmail(value: Boolean): Self = StObject.set(x, "redactEmail", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRedactEmailUndefined: Self = StObject.set(x, "redactEmail", js.undefined)
-      
-      @scala.inline
-      def setStandardImplementation(value: Boolean): Self = StObject.set(x, "standardImplementation", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStandardImplementationUndefined: Self = StObject.set(x, "standardImplementation", js.undefined)
-      
-      @scala.inline
-      def setTestMode(value: Boolean): Self = StObject.set(x, "testMode", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTestModeUndefined: Self = StObject.set(x, "testMode", js.undefined)
-      
-      @scala.inline
-      def setTitleCase(value: Boolean): Self = StObject.set(x, "titleCase", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTitleCaseUndefined: Self = StObject.set(x, "titleCase", js.undefined)
-      
-      @scala.inline
       def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUseExistingGa(value: Boolean): Self = StObject.set(x, "useExistingGa", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUseExistingGaUndefined: Self = StObject.set(x, "useExistingGa", js.undefined)
     }
   }
   

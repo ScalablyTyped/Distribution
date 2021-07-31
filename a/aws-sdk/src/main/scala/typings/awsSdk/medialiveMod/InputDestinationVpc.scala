@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputDestinationVpc extends StObject {
   
   /**
     * The availability zone of the Input destination.
     */
-  var AvailabilityZone: js.UndefOr[string] = js.native
+  var AvailabilityZone: js.UndefOr[string] = js.undefined
   
   /**
     * The network interface ID of the Input destination in the VPC.
     */
-  var NetworkInterfaceId: js.UndefOr[string] = js.native
+  var NetworkInterfaceId: js.UndefOr[string] = js.undefined
 }
 object InputDestinationVpc {
   

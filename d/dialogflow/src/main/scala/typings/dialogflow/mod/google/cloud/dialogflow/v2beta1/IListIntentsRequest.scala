@@ -2,29 +2,27 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ListIntentsRequest. */
-@js.native
 trait IListIntentsRequest extends StObject {
   
   /** ListIntentsRequest intentView */
   var intentView: js.UndefOr[
     IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.IntentView * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** ListIntentsRequest languageCode */
-  var languageCode: js.UndefOr[String | Null] = js.native
+  var languageCode: js.UndefOr[String | Null] = js.undefined
   
   /** ListIntentsRequest pageSize */
-  var pageSize: js.UndefOr[Double | Null] = js.native
+  var pageSize: js.UndefOr[Double | Null] = js.undefined
   
   /** ListIntentsRequest pageToken */
-  var pageToken: js.UndefOr[String | Null] = js.native
+  var pageToken: js.UndefOr[String | Null] = js.undefined
   
   /** ListIntentsRequest parent */
-  var parent: js.UndefOr[String | Null] = js.native
+  var parent: js.UndefOr[String | Null] = js.undefined
 }
 object IListIntentsRequest {
   

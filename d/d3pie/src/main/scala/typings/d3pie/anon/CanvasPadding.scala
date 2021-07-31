@@ -2,21 +2,19 @@ package typings.d3pie.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasPadding extends StObject {
   
-  var canvasPadding: js.UndefOr[Bottom] = js.native
+  var canvasPadding: js.UndefOr[Bottom] = js.undefined
   
-  var colors: js.UndefOr[Background] = js.native
+  var colors: js.UndefOr[Background] = js.undefined
   
-  var cssPrefix: js.UndefOr[String] = js.native
+  var cssPrefix: js.UndefOr[String] = js.undefined
   
-  var gradient: js.UndefOr[ColorEnabled] = js.native
+  var gradient: js.UndefOr[ColorEnabled] = js.undefined
   
-  var pieCenterOffset: js.UndefOr[X] = js.native
+  var pieCenterOffset: js.UndefOr[X] = js.undefined
 }
 object CanvasPadding {
   

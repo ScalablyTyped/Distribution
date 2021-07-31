@@ -2,24 +2,22 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SoundFormat extends StObject {
   
-  def Export(FileName: String): PpSoundFormatType = js.native
+  def Export(FileName: String): PpSoundFormatType
   
-  def Import(FileName: String): Unit = js.native
+  def Import(FileName: String): Unit
   
-  def Play(): Unit = js.native
+  def Play(): Unit
   
   @JSName("PowerPoint.SoundFormat_typekey")
-  var PowerPointDotSoundFormat_typekey: SoundFormat = js.native
+  var PowerPointDotSoundFormat_typekey: SoundFormat
   
-  val SourceFullName: String = js.native
+  val SourceFullName: String
   
-  val Type: PpSoundFormatType = js.native
+  val Type: PpSoundFormatType
 }
 object SoundFormat {
   

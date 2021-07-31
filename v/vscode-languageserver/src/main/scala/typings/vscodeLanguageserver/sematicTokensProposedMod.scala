@@ -6,7 +6,6 @@ import typings.vscodeLanguageserver.mod._Languages
 import typings.vscodeLanguageserverProtocol.mod.Proposed.SemanticTokensEdits
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sematicTokensProposedMod {
@@ -46,10 +45,9 @@ object sematicTokensProposedMod {
   @js.native
   val SemanticTokensFeature: Feature[_Languages, SemanticTokens] = js.native
   
-  @js.native
   trait SemanticTokens extends StObject {
     
-    var semanticTokens: On = js.native
+    var semanticTokens: On
   }
   object SemanticTokens {
     

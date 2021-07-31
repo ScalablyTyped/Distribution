@@ -2,31 +2,29 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareDirectoryRequest extends StObject {
   
   /**
     * Identifier of the AWS Managed Microsoft AD directory that you want to share with other AWS accounts.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * The method used when sharing a directory to determine whether the directory should be shared within your AWS organization (ORGANIZATIONS) or with any AWS account by sending a directory sharing request (HANDSHAKE).
     */
-  var ShareMethod: typings.awsSdk.directoryserviceMod.ShareMethod = js.native
+  var ShareMethod: typings.awsSdk.directoryserviceMod.ShareMethod
   
   /**
     * A directory share request that is sent by the directory owner to the directory consumer. The request includes a typed message to help the directory consumer administrator determine whether to approve or reject the share invitation.
     */
-  var ShareNotes: js.UndefOr[Notes] = js.native
+  var ShareNotes: js.UndefOr[Notes] = js.undefined
   
   /**
     * Identifier for the directory consumer account with whom the directory is to be shared.
     */
-  var ShareTarget: typings.awsSdk.directoryserviceMod.ShareTarget = js.native
+  var ShareTarget: typings.awsSdk.directoryserviceMod.ShareTarget
 }
 object ShareDirectoryRequest {
   

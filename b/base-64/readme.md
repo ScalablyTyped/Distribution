@@ -10,13 +10,13 @@ A robust base64 encoder/decoder that is fully compatible with `atob()` and `btoa
 | ------------------ | :-------------: |
 | Full name          | base-64 |
 | Keywords           | codec, decoder, encoder, base64, atob, btoa |
-| # releases         | 0 |
-| # dependents       | 643 |
-| # downloads        | 16951474 |
+| # releases         | 2 |
+| # dependents       | 711 |
+| # downloads        | 21102038 |
 | # stars            | 19 |
 
 ## Links
-- [Homepage](http://mths.be/base64)
+- [Homepage](https://mths.be/base64)
 - [Bugs](https://github.com/mathiasbynens/base64/issues)
 - [Repository](https://github.com/mathiasbynens/base64)
 - [Npm](https://www.npmjs.com/package/base-64)

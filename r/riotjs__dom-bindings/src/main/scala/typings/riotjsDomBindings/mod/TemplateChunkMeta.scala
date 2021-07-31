@@ -4,17 +4,15 @@ import typings.std.DocumentFragment
 import typings.std.HTMLCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateChunkMeta extends StObject {
   
-  var avoidDOMInjection: Boolean = js.native
+  var avoidDOMInjection: Boolean
   
-  var children: HTMLCollection = js.native
+  var children: HTMLCollection
   
-  var fragment: DocumentFragment = js.native
+  var fragment: DocumentFragment
 }
 object TemplateChunkMeta {
   

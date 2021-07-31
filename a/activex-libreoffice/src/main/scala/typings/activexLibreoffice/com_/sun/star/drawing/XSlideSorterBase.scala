@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.drawing.framework.XResourceId
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,21 +14,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * It provides the interfaces and attributes that every object that implements the {@link SlideSorter} service.
   */
-@js.native
 trait XSlideSorterBase
-  extends XDrawView
-     with XResource {
+  extends StObject
+     with XResource
+     with XDrawView {
   
-  var BackgroundColor: Color = js.native
+  var BackgroundColor: Color
   
   /**
     * The set of slides that are displayed by the implementing object.
     *
     * The default value is the set of all slides of the document for which a slide sorter is created.
     */
-  var DocumentSlides: XIndexAccess = js.native
+  var DocumentSlides: XIndexAccess
   
-  var HighlightColor: Color = js.native
+  var HighlightColor: Color
   
   /**
     * When this flag has the value `TRUE` then every time the current slide is changed the visual area is shifted so that the new current slide is display
@@ -40,34 +39,34 @@ trait XSlideSorterBase
     *
     * The default value is `FALSE` .
     */
-  var IsCenterSelection: Boolean = js.native
+  var IsCenterSelection: Boolean
   
   /**
     * Set this flag to `TRUE` in order to have the current slide highlighted.
     *
     * The default value is `FALSE` .
     */
-  var IsHighlightCurrentSlide: Boolean = js.native
+  var IsHighlightCurrentSlide: Boolean
   
   /** The orientation of a slide sorter can be either vertical ( `TRUE` ) or horizontal ( `FALSE` ). */
-  var IsOrientationVertical: Boolean = js.native
+  var IsOrientationVertical: Boolean
   
   /**
     * Set this flag to `TRUE` to visualize to where the focus is by showing a dotted rectangle around the focused slide.
     *
     * The default value is `TRUE` .
     */
-  var IsShowFocus: Boolean = js.native
+  var IsShowFocus: Boolean
   
   /**
     * Set this flag to `TRUE` in order to visualize the selection of slides (typically a bold frame around the selected slides).
     *
     * The default value is `TRUE` .
     */
-  var IsShowSelection: Boolean = js.native
+  var IsShowSelection: Boolean
   
   /** This flag is a hint to make scrolling look smooth. */
-  var IsSmoothScrolling: Boolean = js.native
+  var IsSmoothScrolling: Boolean
   
   /**
     * This flag controls whether updates of previews are created during full screen presentations ( `FALSE` ) or not ( `TRUE` ). The suspension of preview
@@ -75,18 +74,18 @@ trait XSlideSorterBase
     *
     * The default value is `TRUE` .
     */
-  var IsSuspendPreviewUpdatesDuringFullScreenPresentation: Boolean = js.native
+  var IsSuspendPreviewUpdatesDuringFullScreenPresentation: Boolean
   
   /**
     * This flag controls whether the model can be modified by using keyboard or mouse.
     *
     * The default value is `TRUE` .
     */
-  var IsUIReadOnly: Boolean = js.native
+  var IsUIReadOnly: Boolean
   
-  var SelectionColor: Color = js.native
+  var SelectionColor: Color
   
-  var TextColor: Color = js.native
+  var TextColor: Color
 }
 object XSlideSorterBase {
   

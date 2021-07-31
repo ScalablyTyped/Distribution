@@ -3,43 +3,41 @@ package typings.leafletRoutingMachine
 import typings.leafletRoutingMachine.mod.Routing_.Waypoint_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait E extends StObject {
     
-    var E: String = js.native
+    var E: String
     
-    var Left: String = js.native
+    var Left: String
     
-    var N: String = js.native
+    var N: String
     
-    var NE: String = js.native
+    var NE: String
     
-    var NW: String = js.native
+    var NW: String
     
-    var Right: String = js.native
+    var Right: String
     
-    var S: String = js.native
+    var S: String
     
-    var SE: String = js.native
+    var SE: String
     
-    var SW: String = js.native
+    var SW: String
     
-    var SharpLeft: String = js.native
+    var SharpLeft: String
     
-    var SharpRight: String = js.native
+    var SharpRight: String
     
-    var SlightLeft: String = js.native
+    var SlightLeft: String
     
-    var SlightRight: String = js.native
+    var SlightRight: String
     
-    var Uturn: String = js.native
+    var Uturn: String
     
-    var W: String = js.native
+    var W: String
   }
   object E {
     
@@ -115,14 +113,13 @@ object anon {
     }
   }
   
-  @js.native
   trait EndPlaceholder extends StObject {
     
-    var endPlaceholder: String = js.native
+    var endPlaceholder: String
     
-    var startPlaceholder: String = js.native
+    var startPlaceholder: String
     
-    var viaPlaceholder: String = js.native
+    var viaPlaceholder: String
   }
   object EndPlaceholder {
     
@@ -146,22 +143,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Hours extends StObject {
     
-    var hours: String = js.native
+    var hours: String
     
-    var kilometers: String = js.native
+    var kilometers: String
     
-    var meters: String = js.native
+    var meters: String
     
-    var miles: String = js.native
+    var miles: String
     
-    var minutes: String = js.native
+    var minutes: String
     
-    var seconds: String = js.native
+    var seconds: String
     
-    var yards: String = js.native
+    var yards: String
   }
   object Hours {
     
@@ -205,14 +201,13 @@ object anon {
     }
   }
   
-  @js.native
   trait InputWaypoints extends StObject {
     
-    var inputWaypoints: Waypoint_ = js.native
+    var inputWaypoints: Waypoint_
     
-    var properties: js.UndefOr[js.Any] = js.native
+    var properties: js.UndefOr[js.Any] = js.undefined
     
-    var waypoints: Waypoint_ = js.native
+    var waypoints: Waypoint_
   }
   object InputWaypoints {
     
@@ -239,12 +234,11 @@ object anon {
     }
   }
   
-  @js.native
   trait LegCount extends StObject {
     
-    var legCount: Double = js.native
+    var legCount: Double
     
-    var legIndex: Double = js.native
+    var legIndex: Double
   }
   object LegCount {
     

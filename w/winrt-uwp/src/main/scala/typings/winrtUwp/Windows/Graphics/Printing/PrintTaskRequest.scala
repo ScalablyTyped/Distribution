@@ -3,11 +3,9 @@ package typings.winrtUwp.Windows.Graphics.Printing
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the request from the system to create a print task. This object is available from the PrintTaskRequestedEventArgs object passed to the PrintTaskRequested event. */
-@js.native
 trait PrintTaskRequest extends StObject {
   
   /**
@@ -16,16 +14,16 @@ trait PrintTaskRequest extends StObject {
     * @param handler Pointer to a PrintTaskSourceRequestedHandler delegate for the print task.
     * @return Pointer to the print task that was created.
     */
-  def createPrintTask(title: String, handler: PrintTaskSourceRequestedHandler): PrintTask = js.native
+  def createPrintTask(title: String, handler: PrintTaskSourceRequestedHandler): PrintTask
   
   /** Gets a DateTime value that indicates how long an app has to respond to the PrintTaskRequested event. If the system has not received a response from the PrintTaskRequested event handler by the time the deadline is reached, then the print task is ignored. */
-  var deadline: Date = js.native
+  var deadline: Date
   
   /**
     * Retrieves the deferral object associated with the PrintTaskRequest . The deferral object is used to handle asynchronous calls in the PrintTaskRequested event handler.
     * @return The PrintTaskRequestedDeferral for a print task.
     */
-  def getDeferral(): PrintTaskRequestedDeferral = js.native
+  def getDeferral(): PrintTaskRequestedDeferral
 }
 object PrintTaskRequest {
   

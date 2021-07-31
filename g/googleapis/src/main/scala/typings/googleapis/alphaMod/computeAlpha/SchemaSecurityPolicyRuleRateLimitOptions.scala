@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSecurityPolicyRuleRateLimitOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaSecurityPolicyRuleRateLimitOptions extends StObject {
     * seconds) the traffic will continue to be blocked by the rate limit after
     * the rate falls below the threshold. The default value is 0 seconds.
     */
-  var blockDuration: js.UndefOr[Double] = js.native
+  var blockDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Action to take when requests are under the given threshold. When requests
@@ -22,7 +20,7 @@ trait SchemaSecurityPolicyRuleRateLimitOptions extends StObject {
     * dropped. Valid options are &quot;allow&quot;, &quot;fairshare&quot;, and
     * &quot;drop_overload&quot;.
     */
-  var conformAction: js.UndefOr[String] = js.native
+  var conformAction: js.UndefOr[String] = js.undefined
   
   /**
     * Determines the key to enforce the threshold_rps limit on. If key is
@@ -30,19 +28,19 @@ trait SchemaSecurityPolicyRuleRateLimitOptions extends StObject {
     * &quot;ALL_IPs&quot; means a single limit is applied to all requests
     * matching this rule.
     */
-  var enforceOnKey: js.UndefOr[String] = js.native
+  var enforceOnKey: js.UndefOr[String] = js.undefined
   
   /**
     * When a request is denied, returns the HTTP response code specified. Valid
     * options are &quot;deny()&quot; where valid values for status are 403,
     * 404, 429, and 502.
     */
-  var exceedAction: js.UndefOr[String] = js.native
+  var exceedAction: js.UndefOr[String] = js.undefined
   
   /**
     * Rate in requests per second at which to begin ratelimiting.
     */
-  var thresholdRps: js.UndefOr[Double] = js.native
+  var thresholdRps: js.UndefOr[Double] = js.undefined
 }
 object SchemaSecurityPolicyRuleRateLimitOptions {
   

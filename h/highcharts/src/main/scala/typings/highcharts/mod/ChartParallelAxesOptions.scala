@@ -2,17 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartParallelAxesOptions extends StObject {
   
   /**
     * (Highcharts) Accessibility options for an axis. Requires the
     * accessibility module.
     */
-  var accessibility: js.UndefOr[AxisAccessibilityOptionsObject] = js.native
+  var accessibility: js.UndefOr[AxisAccessibilityOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) When using multiple axis, the ticks of two
@@ -28,14 +26,14 @@ trait ChartParallelAxesOptions extends StObject {
     *
     * Disabled for logarithmic axes.
     */
-  var alignTicks: js.UndefOr[Boolean] = js.native
+  var alignTicks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Whether to allow decimals in this axis' ticks. When counting
     * integers, like persons or hits on a web page, decimals should be avoided
     * in the labels.
     */
-  var allowDecimals: js.UndefOr[Boolean] = js.native
+  var allowDecimals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Gantt) If categories are present for the xAxis, names are
@@ -47,20 +45,20 @@ trait ChartParallelAxesOptions extends StObject {
     *
     * Example: `categories: ['Apples', 'Bananas', 'Oranges']`
     */
-  var categories: js.UndefOr[js.Array[String]] = js.native
+  var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The highest allowed value for
     * automatically computed axis extremes.
     */
-  var ceiling: js.UndefOr[Double] = js.native
+  var ceiling: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) A class name that opens for styling the axis by CSS,
     * especially in Highcharts styled mode. The class name is applied to group
     * elements for the grid, axis elements and labels.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Configure a crosshair that follows either the mouse pointer
@@ -69,7 +67,7 @@ trait ChartParallelAxesOptions extends StObject {
     * In styled mode, the crosshairs are styled in the `.highcharts-crosshair`,
     * `.highcharts-crosshair-thin` or `.highcharts-xaxis-category` classes.
     */
-  var crosshair: js.UndefOr[Boolean | AxisCrosshairOptions] = js.native
+  var crosshair: js.UndefOr[Boolean | AxisCrosshairOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) For a datetime axis, the scale will
@@ -83,7 +81,7 @@ trait ChartParallelAxesOptions extends StObject {
     *
     * Defaults to: (see online documentation for example)
     */
-  var dateTimeLabelFormats: js.UndefOr[AxisDateTimeLabelFormatsOptions] = js.native
+  var dateTimeLabelFormats: js.UndefOr[AxisDateTimeLabelFormatsOptions] = js.undefined
   
   /**
     * (Highcharts) Whether to force the axis to end on a tick. Use this option
@@ -91,28 +89,28 @@ trait ChartParallelAxesOptions extends StObject {
     *
     * This option is always disabled, when panning type is either `y` or `xy`.
     */
-  var endOnTick: js.UndefOr[Boolean] = js.native
+  var endOnTick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Event handlers for the axis.
     */
-  var events: js.UndefOr[ChartParallelAxesEventsOptions] = js.native
+  var events: js.UndefOr[ChartParallelAxesEventsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The lowest allowed value for automatically
     * computed axis extremes.
     */
-  var floor: js.UndefOr[Double] = js.native
+  var floor: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) Set grid options for the axis labels. Requires Highcharts Gantt.
     */
-  var grid: js.UndefOr[ChartParallelAxesGridOptions] = js.native
+  var grid: js.UndefOr[ChartParallelAxesGridOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The Z index of the grid lines.
     */
-  var gridZIndex: js.UndefOr[Double] = js.native
+  var gridZIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The height of the Y axis. If it's a number, it is
@@ -121,7 +119,7 @@ trait ChartParallelAxesOptions extends StObject {
     * Since Highcharts 2: If it's a percentage string, it is interpreted as
     * percentages of the total plot height.
     */
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts) The axis labels show the number or category for each tick.
@@ -129,7 +127,7 @@ trait ChartParallelAxesOptions extends StObject {
     * Since v8.0.0: Labels are animated in categorized x-axis with updating
     * data if `tickInterval` and `step` is set to 1.
     */
-  var labels: js.UndefOr[ChartParallelAxesLabelsOptions] = js.native
+  var labels: js.UndefOr[ChartParallelAxesLabelsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) The left position as the horizontal axis. If it's
@@ -138,7 +136,7 @@ trait ChartParallelAxesOptions extends StObject {
     * Since Highcharts v5.0.13: If it's a percentage string, it is interpreted
     * as percentages of the plot width, offset from plot area left.
     */
-  var left: js.UndefOr[Double | String] = js.native
+  var left: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts) The color of the line marking the axis itself.
@@ -146,7 +144,7 @@ trait ChartParallelAxesOptions extends StObject {
     * In styled mode, the line stroke is given in the `.highcharts-axis-line`
     * or `.highcharts-xaxis-line` class.
     */
-  var lineColor: js.UndefOr[ColorType] = js.native
+  var lineColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts) The width of the line marking the axis itself.
@@ -154,7 +152,7 @@ trait ChartParallelAxesOptions extends StObject {
     * In styled mode, the stroke width is given in the `.highcharts-axis-line`
     * or `.highcharts-xaxis-line` class.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Index of another axis that this axis is
@@ -163,14 +161,14 @@ trait ChartParallelAxesOptions extends StObject {
     * It can be used to show additional info, or to ease reading the chart by
     * duplicating the scales.
     */
-  var linkedTo: js.UndefOr[Double] = js.native
+  var linkedTo: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) If there are multiple axes on the same side of the chart,
     * the pixel margin between the axes. Defaults to 0 on vertical axes, 15 on
     * horizontal axes.
     */
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The maximum value of the axis. If `null`, the max value is
@@ -183,13 +181,13 @@ trait ChartParallelAxesOptions extends StObject {
     * with multiple axes, determined by chart. alignTicks, where a `tickAmount`
     * is applied internally.
     */
-  var max: js.UndefOr[Double | Null] = js.native
+  var max: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * (Highstock) Maximal size of a resizable axis. Could be set as a percent
     * of plot area or pixel size.
     */
-  var maxLength: js.UndefOr[Double | String] = js.native
+  var maxLength: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Padding of the max value relative to the
@@ -203,13 +201,13 @@ trait ChartParallelAxesOptions extends StObject {
     * the data is tangent to the threshold, `maxPadding` may not apply unless
     * `softThreshold` is set to false.
     */
-  var maxPadding: js.UndefOr[Double] = js.native
+  var maxPadding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) Maximum range which can be set using the navigator's
     * handles. Opposite of xAxis.minRange.
     */
-  var maxRange: js.UndefOr[Double] = js.native
+  var maxRange: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The minimum value of the axis. If `null` the min value is
@@ -222,13 +220,13 @@ trait ChartParallelAxesOptions extends StObject {
     * softMin, minPadding, minRange as well as series.threshold and
     * series.softThreshold.
     */
-  var min: js.UndefOr[Double | Null] = js.native
+  var min: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * (Highstock) Minimal size of a resizable axis. Could be set as a percent
     * of plot area or pixel size.
     */
-  var minLength: js.UndefOr[Double | String] = js.native
+  var minLength: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Padding of the min value relative to the
@@ -242,7 +240,7 @@ trait ChartParallelAxesOptions extends StObject {
     * the data is tangent to the threshold, `minPadding` may not apply unless
     * `softThreshold` is set to false.
     */
-  var minPadding: js.UndefOr[Double] = js.native
+  var minPadding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The minimum range to display on this axis. The entire axis
@@ -260,7 +258,7 @@ trait ChartParallelAxesOptions extends StObject {
     * **Note**: The `minPadding`, `maxPadding`, `startOnTick` and `endOnTick`
     * settings also affect how the extremes of the axis are computed.
     */
-  var minRange: js.UndefOr[Double] = js.native
+  var minRange: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The minimum tick interval allowed in axis values. For
@@ -268,12 +266,12 @@ trait ChartParallelAxesOptions extends StObject {
     * prevent the axis from showing hours. Defaults to the closest distance
     * between two points on the axis.
     */
-  var minTickInterval: js.UndefOr[Double] = js.native
+  var minTickInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Color for the minor tick marks.
     */
-  var minorTickColor: js.UndefOr[ColorType] = js.native
+  var minorTickColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts) Specific tick interval in axis units for the minor ticks. On
@@ -289,23 +287,23 @@ trait ChartParallelAxesOptions extends StObject {
     * If user settings dictate minor ticks to become too dense, they don't make
     * sense, and will be ignored to prevent performance problems.
     */
-  var minorTickInterval: js.UndefOr[Double | String | Null] = js.native
+  var minorTickInterval: js.UndefOr[Double | String | Null] = js.undefined
   
   /**
     * (Highcharts) The pixel length of the minor tick marks.
     */
-  var minorTickLength: js.UndefOr[Double] = js.native
+  var minorTickLength: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The position of the minor tick marks relative to the axis
     * line. Can be one of `inside` and `outside`.
     */
-  var minorTickPosition: js.UndefOr[OptionsMinorTickPositionValue] = js.native
+  var minorTickPosition: js.UndefOr[OptionsMinorTickPositionValue] = js.undefined
   
   /**
     * (Highcharts) The pixel width of the minor tick mark.
     */
-  var minorTickWidth: js.UndefOr[Double] = js.native
+  var minorTickWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Enable or disable minor ticks. Unless minorTickInterval is
@@ -317,7 +315,7 @@ trait ChartParallelAxesOptions extends StObject {
     * Prior to v6.0.0, ticks were unabled in auto layout by setting
     * `minorTickInterval` to `"auto"`.
     */
-  var minorTicks: js.UndefOr[Boolean] = js.native
+  var minorTicks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) The distance in pixels from the plot area to the axis line.
@@ -327,7 +325,7 @@ trait ChartParallelAxesOptions extends StObject {
     * dynamically adjusted to avoid collision, this can be overridden by
     * setting offset explicitly.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Highcharts, Gantt) Whether to display the axis on the
@@ -335,57 +333,57 @@ trait ChartParallelAxesOptions extends StObject {
     * axes and bottom for horizontal, so the opposite sides will be right and
     * top respectively. This is typically used with dual or multiple axes.
     */
-  var opposite: js.UndefOr[Boolean] = js.native
+  var opposite: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Refers to the index in the panes array. Used for circular
     * gauges and polar charts. When the option is not set then first pane will
     * be used.
     */
-  var pane: js.UndefOr[Double] = js.native
+  var pane: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The zoomed range to display when only defining one or none of
     * `min` or `max`. For example, to show the latest month, a range of one
     * month can be set.
     */
-  var range: js.UndefOr[Double] = js.native
+  var range: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Options for axis resizing. It adds a thick line between panes
     * which the user can drag in order to resize the panes.
     */
-  var resize: js.UndefOr[ChartParallelAxesResizeOptions] = js.native
+  var resize: js.UndefOr[ChartParallelAxesResizeOptions] = js.undefined
   
   /**
     * (Highcharts) Whether to reverse the axis so that the highest number is
     * closest to the origin.
     */
-  var reversed: js.UndefOr[Boolean] = js.native
+  var reversed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) If `true`, the first series in a stack will be
     * drawn on top in a positive, non-reversed Y axis. If `false`, the first
     * series is in the base of the stack.
     */
-  var reversedStacks: js.UndefOr[Boolean] = js.native
+  var reversedStacks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Whether to show the axis line and title when the axis has no
     * data.
     */
-  var showEmpty: js.UndefOr[Boolean] = js.native
+  var showEmpty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Whether to show the first tick label.
     */
-  var showFirstLabel: js.UndefOr[Boolean] = js.native
+  var showFirstLabel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to show the last tick label.
     * Defaults to `true` on cartesian charts, and `false` on polar charts.
     */
-  var showLastLabel: js.UndefOr[Boolean] = js.native
+  var showLastLabel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A soft maximum for the axis. If the series
@@ -396,7 +394,7 @@ trait ChartParallelAxesOptions extends StObject {
     * **Note**: The series.softThreshold option takes precedence over this
     * option.
     */
-  var softMax: js.UndefOr[Double] = js.native
+  var softMax: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A soft minimum for the axis. If the series
@@ -407,13 +405,13 @@ trait ChartParallelAxesOptions extends StObject {
     * **Note**: The series.softThreshold option takes precedence over this
     * option.
     */
-  var softMin: js.UndefOr[Double] = js.native
+  var softMin: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) For datetime axes, this decides where to
     * put the tick between weeks. 0 = Sunday, 1 = Monday.
     */
-  var startOfWeek: js.UndefOr[Double] = js.native
+  var startOfWeek: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to force the axis to start on a
@@ -422,7 +420,7 @@ trait ChartParallelAxesOptions extends StObject {
     *
     * This option is always disabled, when panning type is either `y` or `xy`.
     */
-  var startOnTick: js.UndefOr[Boolean] = js.native
+  var startOnTick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) For vertical axes only. Setting the static scale ensures that
@@ -431,7 +429,7 @@ trait ChartParallelAxesOptions extends StObject {
     * 24 pixels, and the height of the chart adjusts. Adding or removing items
     * will make the chart resize.
     */
-  var staticScale: js.UndefOr[Double] = js.native
+  var staticScale: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The amount of ticks to draw on the axis.
@@ -441,14 +439,14 @@ trait ChartParallelAxesOptions extends StObject {
     * This option only has an effect on linear axes. Datetime, logarithmic or
     * category axes are not affected.
     */
-  var tickAmount: js.UndefOr[Double] = js.native
+  var tickAmount: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Color for the main tick marks.
     *
     * In styled mode, the stroke is given in the `.highcharts-tick` class.
     */
-  var tickColor: js.UndefOr[ColorType] = js.native
+  var tickColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts) The interval of the tick marks in axis units. When
@@ -470,12 +468,12 @@ trait ChartParallelAxesOptions extends StObject {
     * If the chart has multiple axes, the alignTicks option may interfere with
     * the `tickInterval` setting.
     */
-  var tickInterval: js.UndefOr[Double] = js.native
+  var tickInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The pixel length of the main tick marks.
     */
-  var tickLength: js.UndefOr[Double] = js.native
+  var tickLength: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) If tickInterval is `null` this option sets the approximate
@@ -484,13 +482,13 @@ trait ChartParallelAxesOptions extends StObject {
     * The tick interval is also influenced by the minTickInterval option, that,
     * by default prevents ticks from being denser than the data points.
     */
-  var tickPixelInterval: js.UndefOr[Double] = js.native
+  var tickPixelInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The position of the major tick marks relative to the axis
     * line. Can be one of `inside` and `outside`.
     */
-  var tickPosition: js.UndefOr[OptionsTickPositionValue] = js.native
+  var tickPosition: js.UndefOr[OptionsTickPositionValue] = js.undefined
   
   /**
     * (Highcharts) A callback function returning array defining where the ticks
@@ -499,19 +497,19 @@ trait ChartParallelAxesOptions extends StObject {
     * accessible through `this.tickPositions` and can be modified by the
     * callback.
     */
-  var tickPositioner: js.UndefOr[AxisTickPositionerCallbackFunction] = js.native
+  var tickPositioner: js.UndefOr[AxisTickPositionerCallbackFunction] = js.undefined
   
   /**
     * (Highcharts) An array defining where the ticks are laid out on the axis.
     * This overrides the default behaviour of tickPixelInterval and
     * tickInterval.
     */
-  var tickPositions: js.UndefOr[js.Array[Double]] = js.native
+  var tickPositions: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The pixel width of the major tick marks.
     */
-  var tickWidth: js.UndefOr[Double] = js.native
+  var tickWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Gantt) For categorized axes only. If `on` the tick mark is
@@ -519,14 +517,14 @@ trait ChartParallelAxesOptions extends StObject {
     * placed between categories. The default is `between` if the `tickInterval`
     * is 1, else `on`.
     */
-  var tickmarkPlacement: js.UndefOr[OptionsTickmarkPlacementValue] = js.native
+  var tickmarkPlacement: js.UndefOr[OptionsTickmarkPlacementValue] = js.undefined
   
   /**
     * (Highcharts) Titles for yAxes are taken from xAxis.categories. All
     * options for `xAxis.labels` applies to parallel coordinates titles. For
     * example, to style categories, use xAxis.labels.style.
     */
-  var title: js.UndefOr[ChartParallelAxesTitleOptions] = js.native
+  var title: js.UndefOr[ChartParallelAxesTitleOptions] = js.undefined
   
   /**
     * (Highcharts) Parallel coordinates only. Format that will be used for
@@ -543,7 +541,7 @@ trait ChartParallelAxesOptions extends StObject {
     *
     * 4. If yAxis is linear/logarithmic type, then simple value will be used
     */
-  var tooltipValueFormat: js.UndefOr[String] = js.native
+  var tooltipValueFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock) The top position of the Y axis. If it's a number,
@@ -552,7 +550,7 @@ trait ChartParallelAxesOptions extends StObject {
     * Since Highcharts 2: If it's a percentage string, it is interpreted as
     * percentages of the plot height, offset from plot area top.
     */
-  var top: js.UndefOr[Double | String] = js.native
+  var top: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Gantt) The type of axis. Can be one of `linear`,
@@ -564,7 +562,7 @@ trait ChartParallelAxesOptions extends StObject {
     * or treegrid axis, the point names of the chart's series are used for
     * categories, if a categories array is not defined.
     */
-  var `type`: js.UndefOr[AxisTypeValue] = js.native
+  var `type`: js.UndefOr[AxisTypeValue] = js.undefined
   
   /**
     * (Highcharts, Gantt) Applies only when the axis `type` is `category`. When
@@ -575,7 +573,7 @@ trait ChartParallelAxesOptions extends StObject {
     * X positions regardless of their names, and the X axis category will take
     * the name of the last point in each position.
     */
-  var uniqueNames: js.UndefOr[Boolean] = js.native
+  var uniqueNames: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Datetime axis only. An array determining
@@ -585,13 +583,13 @@ trait ChartParallelAxesOptions extends StObject {
     *
     * Defaults to: (see online documentation for example)
     */
-  var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.native
+  var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether axis, including axis title, line,
     * ticks and labels, should be visible.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) The width as the horizontal axis. If it's a
@@ -600,13 +598,13 @@ trait ChartParallelAxesOptions extends StObject {
     * Since Highcharts v5.0.13: If it's a percentage string, it is interpreted
     * as percentages of the total plot width.
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts) Whether to zoom axis. If `chart.zoomType` is set, the option
     * allows to disable zooming on an individual axis.
     */
-  var zoomEnabled: js.UndefOr[Boolean] = js.native
+  var zoomEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object ChartParallelAxesOptions {
   

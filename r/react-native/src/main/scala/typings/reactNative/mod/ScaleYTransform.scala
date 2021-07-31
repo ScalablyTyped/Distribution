@@ -2,13 +2,11 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaleYTransform extends StObject {
   
-  var scaleY: Double = js.native
+  var scaleY: Double
 }
 object ScaleYTransform {
   

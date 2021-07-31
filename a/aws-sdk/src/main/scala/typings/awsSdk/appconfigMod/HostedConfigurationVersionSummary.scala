@@ -2,36 +2,34 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostedConfigurationVersionSummary extends StObject {
   
   /**
     * The application ID.
     */
-  var ApplicationId: js.UndefOr[Id] = js.native
+  var ApplicationId: js.UndefOr[Id] = js.undefined
   
   /**
     * The configuration profile ID.
     */
-  var ConfigurationProfileId: js.UndefOr[Id] = js.native
+  var ConfigurationProfileId: js.UndefOr[Id] = js.undefined
   
   /**
     * A standard MIME type describing the format of the configuration content. For more information, see Content-Type.
     */
-  var ContentType: js.UndefOr[StringWithLengthBetween1And255] = js.native
+  var ContentType: js.UndefOr[StringWithLengthBetween1And255] = js.undefined
   
   /**
     * A description of the configuration.
     */
-  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.undefined
   
   /**
     * The configuration version.
     */
-  var VersionNumber: js.UndefOr[Integer] = js.native
+  var VersionNumber: js.UndefOr[Integer] = js.undefined
 }
 object HostedConfigurationVersionSummary {
   

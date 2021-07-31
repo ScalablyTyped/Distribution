@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudHealthcareV1FhirBigQueryDestination extends StObject {
   
   /** BigQuery URI to an existing dataset, up to 2000 characters long, in the format `bq://projectId.bqDatasetId`. */
-  var datasetUri: js.UndefOr[String] = js.native
+  var datasetUri: js.UndefOr[String] = js.undefined
   
   /**
     * If this flag is `TRUE`, all tables are deleted from the dataset before the new exported tables are written. If the flag is not set and the destination dataset contains tables, the
     * export call returns an error.
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /** The configuration for the exported BigQuery schema. */
-  var schemaConfig: js.UndefOr[SchemaConfig] = js.native
+  var schemaConfig: js.UndefOr[SchemaConfig] = js.undefined
 }
 object GoogleCloudHealthcareV1FhirBigQueryDestination {
   

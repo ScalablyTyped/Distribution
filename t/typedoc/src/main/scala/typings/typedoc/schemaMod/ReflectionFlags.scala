@@ -2,38 +2,36 @@ package typings.typedoc.schemaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.ReflectionFlags, 'isPrivate' | 'isProtected' | 'isPublic' | 'isStatic' | 'isExported' | 'isExternal' | 'isOptional' | 'isRest' | 'hasExportAssignment' | 'isConstructorProperty' | 'isAbstract' | 'isConst' | 'isLet'>> */
-@js.native
 trait ReflectionFlags extends StObject {
   
-  var hasExportAssignment: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.native
+  var hasExportAssignment: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.undefined
   
-  var isAbstract: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.native
+  var isAbstract: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.undefined
   
-  var isConst: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.native
+  var isConst: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.undefined
   
-  var isConstructorProperty: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.native
+  var isConstructorProperty: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.undefined
   
-  var isExported: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.native
+  var isExported: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.undefined
   
-  var isExternal: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.native
+  var isExternal: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.undefined
   
-  var isLet: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.native
+  var isLet: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.undefined
   
-  var isOptional: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.native
+  var isOptional: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.undefined
   
-  var isPrivate: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.native
+  var isPrivate: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.undefined
   
-  var isProtected: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.native
+  var isProtected: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.undefined
   
-  var isPublic: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.native
+  var isPublic: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.undefined
   
-  var isRest: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.native
+  var isRest: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.undefined
   
-  var isStatic: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.native
+  var isStatic: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.undefined
 }
 object ReflectionFlags {
   

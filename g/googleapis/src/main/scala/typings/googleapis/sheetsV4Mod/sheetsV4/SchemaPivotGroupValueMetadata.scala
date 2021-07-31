@@ -2,25 +2,23 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata about a value in a pivot grouping.
   */
-@js.native
 trait SchemaPivotGroupValueMetadata extends StObject {
   
   /**
     * True if the data corresponding to the value is collapsed.
     */
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The calculated value the metadata corresponds to. (Note that formulaValue
     * is not valid,  because the values will be calculated.)
     */
-  var value: js.UndefOr[SchemaExtendedValue] = js.native
+  var value: js.UndefOr[SchemaExtendedValue] = js.undefined
 }
 object SchemaPivotGroupValueMetadata {
   

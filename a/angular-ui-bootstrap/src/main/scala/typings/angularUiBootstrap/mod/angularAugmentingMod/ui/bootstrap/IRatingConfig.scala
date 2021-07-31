@@ -2,10 +2,8 @@ package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRatingConfig extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait IRatingConfig extends StObject {
     *
     * @default: 5
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * A variable used in the template to specify the state for unselected icons.
     *
     * @default: null
     */
-  var stateOff: js.UndefOr[String] = js.native
+  var stateOff: js.UndefOr[String] = js.undefined
   
   /**
     * A variable used in the template to specify the state for selected icons.
     *
     * @default: null
     */
-  var stateOn: js.UndefOr[String] = js.native
+  var stateOn: js.UndefOr[String] = js.undefined
   
   /**
     * An array of strings defining titles for all icons.
     *
     * @default: ["one", "two", "three", "four", "five"]
     */
-  var titles: js.UndefOr[js.Array[String]] = js.native
+  var titles: js.UndefOr[js.Array[String]] = js.undefined
 }
 object IRatingConfig {
   

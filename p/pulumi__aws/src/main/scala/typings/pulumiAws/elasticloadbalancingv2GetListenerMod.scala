@@ -4,41 +4,39 @@ import typings.pulumiAws.outputMod.elasticloadbalancingv2.GetListenerDefaultActi
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticloadbalancingv2GetListenerMod {
   
-  @JSImport("@pulumi/aws/elasticloadbalancingv2/getListener", "getListener")
+  @JSImport("@pulumi/aws/elasticloadbalancingv2/getListener", JSImport.Namespace)
   @js.native
-  def getListener(): js.Promise[GetListenerResult] = js.native
-  @JSImport("@pulumi/aws/elasticloadbalancingv2/getListener", "getListener")
-  @js.native
-  def getListener(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetListenerResult] = js.native
-  @JSImport("@pulumi/aws/elasticloadbalancingv2/getListener", "getListener")
-  @js.native
-  def getListener(args: GetListenerArgs): js.Promise[GetListenerResult] = js.native
-  @JSImport("@pulumi/aws/elasticloadbalancingv2/getListener", "getListener")
-  @js.native
-  def getListener(args: GetListenerArgs, opts: InvokeOptions): js.Promise[GetListenerResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getListener(): js.Promise[GetListenerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getListener")().asInstanceOf[js.Promise[GetListenerResult]]
+  @scala.inline
+  def getListener(args: Unit, opts: InvokeOptions): js.Promise[GetListenerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getListener")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetListenerResult]]
+  @scala.inline
+  def getListener(args: GetListenerArgs): js.Promise[GetListenerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getListener")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetListenerResult]]
+  @scala.inline
+  def getListener(args: GetListenerArgs, opts: InvokeOptions): js.Promise[GetListenerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getListener")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetListenerResult]]
+  
   trait GetListenerArgs extends StObject {
     
     /**
       * The arn of the listener. Required if `loadBalancerArn` and `port` is not set.
       */
-    val arn: js.UndefOr[String] = js.native
+    val arn: js.UndefOr[String] = js.undefined
     
     /**
       * The arn of the load balancer. Required if `arn` is not set.
       */
-    val loadBalancerArn: js.UndefOr[String] = js.native
+    val loadBalancerArn: js.UndefOr[String] = js.undefined
     
     /**
       * The port of the listener. Required if `arn` is not set.
       */
-    val port: js.UndefOr[Double] = js.native
+    val port: js.UndefOr[Double] = js.undefined
   }
   object GetListenerArgs {
     
@@ -71,27 +69,26 @@ object elasticloadbalancingv2GetListenerMod {
     }
   }
   
-  @js.native
   trait GetListenerResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
-    val certificateArn: String = js.native
+    val certificateArn: String
     
-    val defaultActions: js.Array[GetListenerDefaultAction] = js.native
+    val defaultActions: js.Array[GetListenerDefaultAction]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val loadBalancerArn: String = js.native
+    val loadBalancerArn: String
     
-    val port: Double = js.native
+    val port: Double
     
-    val protocol: String = js.native
+    val protocol: String
     
-    val sslPolicy: String = js.native
+    val sslPolicy: String
   }
   object GetListenerResult {
     

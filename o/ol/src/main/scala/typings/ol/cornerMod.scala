@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cornerMod {
@@ -12,15 +11,15 @@ object cornerMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Corner with String] = js.native
+    def apply(value: String): js.UndefOr[Corner & String] = js.native
     
-    /* "bottom-left" */ val BOTTOM_LEFT: typings.ol.cornerMod.Corner.BOTTOM_LEFT with String = js.native
+    /* "bottom-left" */ val BOTTOM_LEFT: typings.ol.cornerMod.Corner.BOTTOM_LEFT & String = js.native
     
-    /* "bottom-right" */ val BOTTOM_RIGHT: typings.ol.cornerMod.Corner.BOTTOM_RIGHT with String = js.native
+    /* "bottom-right" */ val BOTTOM_RIGHT: typings.ol.cornerMod.Corner.BOTTOM_RIGHT & String = js.native
     
-    /* "top-left" */ val TOP_LEFT: typings.ol.cornerMod.Corner.TOP_LEFT with String = js.native
+    /* "top-left" */ val TOP_LEFT: typings.ol.cornerMod.Corner.TOP_LEFT & String = js.native
     
-    /* "top-right" */ val TOP_RIGHT: typings.ol.cornerMod.Corner.TOP_RIGHT with String = js.native
+    /* "top-right" */ val TOP_RIGHT: typings.ol.cornerMod.Corner.TOP_RIGHT & String = js.native
   }
   
   @js.native
@@ -30,15 +29,23 @@ object cornerMod {
   object Corner extends StObject {
     
     @js.native
-    sealed trait BOTTOM_LEFT extends Corner
+    sealed trait BOTTOM_LEFT
+      extends StObject
+         with Corner
     
     @js.native
-    sealed trait BOTTOM_RIGHT extends Corner
+    sealed trait BOTTOM_RIGHT
+      extends StObject
+         with Corner
     
     @js.native
-    sealed trait TOP_LEFT extends Corner
+    sealed trait TOP_LEFT
+      extends StObject
+         with Corner
     
     @js.native
-    sealed trait TOP_RIGHT extends Corner
+    sealed trait TOP_RIGHT
+      extends StObject
+         with Corner
   }
 }

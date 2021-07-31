@@ -6,7 +6,6 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents and email folder. */
@@ -33,7 +32,7 @@ trait EmailFolder extends StObject {
     * Asynchronously finds the child folders of this folder.
     * @return The list of child folders.
     */
-  def findChildFoldersAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findChildFoldersAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Gets an instance of the EmailConversationReader class.

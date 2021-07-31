@@ -6,11 +6,12 @@ import typings.awsSdk.requestMod.Request
 import typings.std.String
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IoTSecureTunneling extends String {
+trait IoTSecureTunneling
+  extends StObject
+     with String {
   
   /**
     * Closes a tunnel identified by the unique tunnel id. When a CloseTunnel request is received, we close the WebSocket connections between the client and proxy server so no data can be transmitted.
@@ -26,7 +27,7 @@ trait IoTSecureTunneling extends String {
     callback: js.Function2[/* err */ AWSError, /* data */ CloseTunnelResponse, Unit]
   ): Request[CloseTunnelResponse, AWSError] = js.native
   
-  var config: ConfigBase with ClientConfiguration = js.native
+  var config: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Gets information about a tunnel identified by the unique tunnel id.

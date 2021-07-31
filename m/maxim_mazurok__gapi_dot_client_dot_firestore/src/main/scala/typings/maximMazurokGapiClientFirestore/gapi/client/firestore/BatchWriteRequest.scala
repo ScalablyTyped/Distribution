@@ -3,24 +3,22 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchWriteRequest extends StObject {
   
   /** Labels associated with this batch write. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.BatchWriteRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.BatchWriteRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * The writes to apply. Method does not apply writes atomically and does not guarantee ordering. Each write succeeds or fails independently. You cannot write to the same document more
     * than once per request.
     */
-  var writes: js.UndefOr[js.Array[Write]] = js.native
+  var writes: js.UndefOr[js.Array[Write]] = js.undefined
 }
 object BatchWriteRequest {
   
@@ -37,7 +35,7 @@ object BatchWriteRequest {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.BatchWriteRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.BatchWriteRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

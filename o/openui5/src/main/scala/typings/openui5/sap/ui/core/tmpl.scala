@@ -4,13 +4,14 @@ import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.core.mvc.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tmpl {
   
   @js.native
-  trait DOMAttribute extends Element {
+  trait DOMAttribute
+    extends StObject
+       with Element {
     
     /**
       * Gets current value of property <code>name</code>.Name of the DOM attribute
@@ -42,7 +43,9 @@ object tmpl {
   }
   
   @js.native
-  trait DOMElement extends Control {
+  trait DOMElement
+    extends StObject
+       with Control {
     
     /**
       * Adds some attribute to the aggregation <code>attributes</code>.
@@ -205,10 +208,14 @@ object tmpl {
   }
   
   @js.native
-  trait HandlebarsTemplate extends Template
+  trait HandlebarsTemplate
+    extends StObject
+       with Template
   
   @js.native
-  trait Template extends ManagedObject {
+  trait Template
+    extends StObject
+       with ManagedObject {
     
     /**
       * Returns the registered template for the given id, if any.
@@ -274,7 +281,9 @@ object tmpl {
   }
   
   @js.native
-  trait TemplateControl extends Control {
+  trait TemplateControl
+    extends StObject
+       with Control {
     
     /**
       * Attaches event handler <code>fnFunction</code> to the <code>afterRendering</code> event of this
@@ -342,9 +351,9 @@ object tmpl {
       * @returns new DOM element instance
       */
     def createDOMElement(mSettings: js.Any): Control = js.native
-    def createDOMElement(mSettings: js.Any, sParentPath: js.UndefOr[scala.Nothing], bDoNotAdd: Boolean): Control = js.native
     def createDOMElement(mSettings: js.Any, sParentPath: String): Control = js.native
     def createDOMElement(mSettings: js.Any, sParentPath: String, bDoNotAdd: Boolean): Control = js.native
+    def createDOMElement(mSettings: js.Any, sParentPath: Unit, bDoNotAdd: Boolean): Control = js.native
     
     /**
       * Detaches event handler <code>fnFunction</code> from the <code>afterRendering</code> event of this

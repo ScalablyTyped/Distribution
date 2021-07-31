@@ -2,16 +2,14 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteChannelRequest extends StObject {
   
   /**
     * The name of the channel to delete.
     */
-  var channelName: ChannelName = js.native
+  var channelName: ChannelName
 }
 object DeleteChannelRequest {
   

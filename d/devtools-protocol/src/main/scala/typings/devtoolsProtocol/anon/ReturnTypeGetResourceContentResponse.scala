@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Page.GetResourceContentRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.GetResourceContentResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetResourceContentResponse extends StObject {
   
-  var paramsType: js.Array[GetResourceContentRequest] = js.native
+  var paramsType: js.Array[GetResourceContentRequest]
   
-  var returnType: GetResourceContentResponse = js.native
+  var returnType: GetResourceContentResponse
 }
 object ReturnTypeGetResourceContentResponse {
   

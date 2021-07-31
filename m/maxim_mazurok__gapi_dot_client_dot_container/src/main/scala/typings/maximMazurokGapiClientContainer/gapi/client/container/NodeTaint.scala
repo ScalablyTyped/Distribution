@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeTaint extends StObject {
   
   /** Effect for taint. */
-  var effect: js.UndefOr[String] = js.native
+  var effect: js.UndefOr[String] = js.undefined
   
   /** Key for taint. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Value for taint. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object NodeTaint {
   

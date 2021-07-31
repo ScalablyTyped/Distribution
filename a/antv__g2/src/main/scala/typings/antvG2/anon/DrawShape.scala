@@ -2,17 +2,15 @@ package typings.antvG2.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawShape extends StObject {
   
-  var drawShape: js.Any = js.native
+  var drawShape: js.Any
   
-  var getMarkerCfg: js.UndefOr[js.Any] = js.native
+  var getMarkerCfg: js.UndefOr[js.Any] = js.undefined
   
-  var getPoints: js.UndefOr[js.Any] = js.native
+  var getPoints: js.UndefOr[js.Any] = js.undefined
 }
 object DrawShape {
   

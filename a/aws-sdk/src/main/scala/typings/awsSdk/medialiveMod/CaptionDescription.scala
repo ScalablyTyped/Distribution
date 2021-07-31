@@ -2,36 +2,34 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptionDescription extends StObject {
   
   /**
     * Specifies which input caption selector to use as a caption source when generating output captions. This field should match a captionSelector name.
     */
-  var CaptionSelectorName: string = js.native
+  var CaptionSelectorName: string
   
   /**
     * Additional settings for captions destination that depend on the destination type.
     */
-  var DestinationSettings: js.UndefOr[CaptionDestinationSettings] = js.native
+  var DestinationSettings: js.UndefOr[CaptionDestinationSettings] = js.undefined
   
   /**
     * ISO 639-2 three-digit code: http://www.loc.gov/standards/iso639-2/
     */
-  var LanguageCode: js.UndefOr[string] = js.native
+  var LanguageCode: js.UndefOr[string] = js.undefined
   
   /**
     * Human readable information to indicate captions available for players (eg. English, or Spanish).
     */
-  var LanguageDescription: js.UndefOr[string] = js.native
+  var LanguageDescription: js.UndefOr[string] = js.undefined
   
   /**
     * Name of the caption description.  Used to associate a caption description with an output.  Names must be unique within an event.
     */
-  var Name: string = js.native
+  var Name: string
 }
 object CaptionDescription {
   

@@ -4,28 +4,28 @@ import typings.braintreeWebDropIn.anon.BillingAddress
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.PayPalAccount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait paypalPaymentMethodPayload extends PaymentMethodPayload {
+trait paypalPaymentMethodPayload
+  extends StObject
+     with PaymentMethodPayload {
   
-  var details: BillingAddress = js.native
+  var details: BillingAddress
   
-  var deviceData: js.UndefOr[String] = js.native
+  var deviceData: js.UndefOr[String] = js.undefined
   
-  var nonce: String = js.native
+  var nonce: String
   
-  var `type`: PayPalAccount = js.native
+  var `type`: PayPalAccount
   
-  var vaulted: js.UndefOr[Boolean] = js.native
+  var vaulted: js.UndefOr[Boolean] = js.undefined
 }
 object paypalPaymentMethodPayload {
   
   @scala.inline
-  def apply(details: BillingAddress, nonce: String, `type`: PayPalAccount): paypalPaymentMethodPayload = {
+  def apply(details: BillingAddress, nonce: String): paypalPaymentMethodPayload = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("PayPalAccount")
     __obj.asInstanceOf[paypalPaymentMethodPayload]
   }
   

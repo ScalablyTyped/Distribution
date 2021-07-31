@@ -5,11 +5,12 @@ import typings.sharepoint.SP.Guid
 import typings.sharepoint.SP.Site
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TermStore extends ClientObject {
+trait TermStore
+  extends StObject
+     with ClientObject {
   
   def addLanguage(lcid: Double): Unit = js.native
   

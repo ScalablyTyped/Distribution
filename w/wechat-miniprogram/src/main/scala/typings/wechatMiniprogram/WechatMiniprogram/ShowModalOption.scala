@@ -2,41 +2,39 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowModalOption extends StObject {
   
   /** 取消按钮的文字颜色，必须是 16 进制格式的颜色字符串 */
-  var cancelColor: js.UndefOr[String] = js.native
+  var cancelColor: js.UndefOr[String] = js.undefined
   
   /** 取消按钮的文字，最多 4 个字符 */
-  var cancelText: js.UndefOr[String] = js.native
+  var cancelText: js.UndefOr[String] = js.undefined
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ShowModalCompleteCallback] = js.native
+  var complete: js.UndefOr[ShowModalCompleteCallback] = js.undefined
   
   /** 确认按钮的文字颜色，必须是 16 进制格式的颜色字符串 */
-  var confirmColor: js.UndefOr[String] = js.native
+  var confirmColor: js.UndefOr[String] = js.undefined
   
   /** 确认按钮的文字，最多 4 个字符 */
-  var confirmText: js.UndefOr[String] = js.native
+  var confirmText: js.UndefOr[String] = js.undefined
   
   /** 提示的内容 */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ShowModalFailCallback] = js.native
+  var fail: js.UndefOr[ShowModalFailCallback] = js.undefined
   
   /** 是否显示取消按钮 */
-  var showCancel: js.UndefOr[Boolean] = js.native
+  var showCancel: js.UndefOr[Boolean] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[ShowModalSuccessCallback] = js.native
+  var success: js.UndefOr[ShowModalSuccessCallback] = js.undefined
   
   /** 提示的标题 */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ShowModalOption {
   

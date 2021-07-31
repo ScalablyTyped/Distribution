@@ -9,7 +9,6 @@ import typings.supercluster.superclusterBooleans.`true`
 import typings.supercluster.superclusterNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,7 +18,9 @@ object mod {
     */
   @JSImport("supercluster", JSImport.Namespace)
   @js.native
-  class ^[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] () extends Supercluster[P, C] {
+  class ^[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] ()
+    extends StObject
+       with Supercluster[P, C] {
     def this(options: Options[P, C]) = this()
   }
   
@@ -29,22 +30,21 @@ object mod {
     */
   type AnyProps = StringDictionary[js.Any]
   
-  type ClusterFeature[C] = PointFeature[ClusterProperties with C]
+  type ClusterFeature[C] = PointFeature[ClusterProperties & C]
   
-  @js.native
   trait ClusterProperties extends StObject {
     
     /**
       * Always `true` to indicate that the Feature is a Cluster and not
       * an individual point.
       */
-    var cluster: `true` = js.native
+    var cluster: `true`
     
     /** Cluster ID */
-    var cluster_id: Double = js.native
+    var cluster_id: Double
     
     /** Number of points in the cluster. */
-    var point_count: Double = js.native
+    var point_count: Double
     
     /**
       * Abbreviated number of points in the cluster as string if the number
@@ -52,13 +52,13 @@ object mod {
       *
       * For less than 1000 points it is the same value as `point_count`.
       */
-    var point_count_abbreviated: String | Double = js.native
+    var point_count_abbreviated: String | Double
   }
   object ClusterProperties {
     
     @scala.inline
-    def apply(cluster: `true`, cluster_id: Double, point_count: Double, point_count_abbreviated: String | Double): ClusterProperties = {
-      val __obj = js.Dynamic.literal(cluster = cluster.asInstanceOf[js.Any], cluster_id = cluster_id.asInstanceOf[js.Any], point_count = point_count.asInstanceOf[js.Any], point_count_abbreviated = point_count_abbreviated.asInstanceOf[js.Any])
+    def apply(cluster_id: Double, point_count: Double, point_count_abbreviated: String | Double): ClusterProperties = {
+      val __obj = js.Dynamic.literal(cluster = true, cluster_id = cluster_id.asInstanceOf[js.Any], point_count = point_count.asInstanceOf[js.Any], point_count_abbreviated = point_count_abbreviated.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterProperties]
     }
     
@@ -79,7 +79,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options[P, C] extends StObject {
     
     /**
@@ -87,14 +86,14 @@ object mod {
       *
       * @default 512
       */
-    var extent: js.UndefOr[Double] = js.native
+    var extent: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether timing info should be logged.
       *
       * @default false
       */
-    var log: js.UndefOr[Boolean] = js.native
+    var log: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function that returns cluster properties corresponding to a single point.
@@ -102,35 +101,35 @@ object mod {
       * @example
       * (props) => ({sum: props.myValue})
       */
-    var map: js.UndefOr[js.Function1[/* props */ P, C]] = js.native
+    var map: js.UndefOr[js.Function1[/* props */ P, C]] = js.undefined
     
     /**
       * Maximum zoom level at which clusters are generated.
       *
       * @default 16
       */
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum zoom level at which clusters are generated.
       *
       * @default 0
       */
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
     /**
       * Size of the KD-tree leaf node. Affects performance.
       *
       * @default 64
       */
-    var nodeSize: js.UndefOr[Double] = js.native
+    var nodeSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Cluster radius, in pixels.
       *
       * @default 40
       */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
     /**
       * A reduce function that merges properties of two clusters into one.
@@ -138,7 +137,7 @@ object mod {
       * @example
       * (accumulated, props) => { accumulated.sum += props.sum; }
       */
-    var reduce: js.UndefOr[js.Function2[/* accumulated */ C, /* props */ C, Unit]] = js.native
+    var reduce: js.UndefOr[js.Function2[/* accumulated */ C, /* props */ C, Unit]] = js.undefined
   }
   object Options {
     
@@ -149,7 +148,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_, _], P, C] (val x: Self with (Options[P, C])) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?, ?], P, C] (val x: Self & (Options[P, C])) extends AnyVal {
       
       @scala.inline
       def setExtent(value: Double): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
@@ -247,9 +246,9 @@ object mod {
       * @param offset The amount of points to skip (for pagination).
       */
     def getLeaves(clusterId: Double): js.Array[PointFeature[P]] = js.native
-    def getLeaves(clusterId: Double, limit: js.UndefOr[scala.Nothing], offset: Double): js.Array[PointFeature[P]] = js.native
     def getLeaves(clusterId: Double, limit: Double): js.Array[PointFeature[P]] = js.native
     def getLeaves(clusterId: Double, limit: Double, offset: Double): js.Array[PointFeature[P]] = js.native
+    def getLeaves(clusterId: Double, limit: Unit, offset: Double): js.Array[PointFeature[P]] = js.native
     
     /**
       * For a given zoom and x/y coordinates, returns a
@@ -267,10 +266,9 @@ object mod {
     def load(points: js.Array[PointFeature[P]]): Supercluster[P, C] = js.native
   }
   
-  @js.native
   trait Tile[C, P] extends StObject {
     
-    var features: js.Array[TileFeature[C, P]] = js.native
+    var features: js.Array[TileFeature[C, P]]
   }
   object Tile {
     
@@ -281,7 +279,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TileMutableBuilder[Self <: Tile[_, _], C, P] (val x: Self with (Tile[C, P])) extends AnyVal {
+    implicit class TileMutableBuilder[Self <: Tile[?, ?], C, P] (val x: Self & (Tile[C, P])) extends AnyVal {
       
       @scala.inline
       def setFeatures(value: js.Array[TileFeature[C, P]]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
@@ -291,26 +289,25 @@ object mod {
     }
   }
   
-  @js.native
   trait TileFeature[C, P] extends StObject {
     
-    var geometry: js.Array[js.Tuple2[Double, Double]] = js.native
+    var geometry: js.Array[js.Tuple2[Double, Double]]
     
-    var tags: (ClusterProperties with C) | P = js.native
+    var tags: (ClusterProperties & C) | P
     
-    var `type`: `1` = js.native
+    var `type`: `1`
   }
   object TileFeature {
     
     @scala.inline
-    def apply[C, P](geometry: js.Array[js.Tuple2[Double, Double]], tags: (ClusterProperties with C) | P, `type`: `1`): TileFeature[C, P] = {
+    def apply[C, P](geometry: js.Array[js.Tuple2[Double, Double]], tags: (ClusterProperties & C) | P): TileFeature[C, P] = {
       val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(1)
       __obj.asInstanceOf[TileFeature[C, P]]
     }
     
     @scala.inline
-    implicit class TileFeatureMutableBuilder[Self <: TileFeature[_, _], C, P] (val x: Self with (TileFeature[C, P])) extends AnyVal {
+    implicit class TileFeatureMutableBuilder[Self <: TileFeature[?, ?], C, P] (val x: Self & (TileFeature[C, P])) extends AnyVal {
       
       @scala.inline
       def setGeometry(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
@@ -319,7 +316,7 @@ object mod {
       def setGeometryVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "geometry", js.Array(value :_*))
       
       @scala.inline
-      def setTags(value: (ClusterProperties with C) | P): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      def setTags(value: (ClusterProperties & C) | P): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setType(value: `1`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

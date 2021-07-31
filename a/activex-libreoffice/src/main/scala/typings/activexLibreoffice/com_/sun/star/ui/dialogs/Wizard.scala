@@ -5,29 +5,29 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides a framework for implementing a wizard dialog.
   * @since OOo 3.3
   */
-@js.native
-trait Wizard extends XWizard {
+trait Wizard
+  extends StObject
+     with XWizard {
   
   /**
     * creates a wizard with a multiple possible execution paths
     * @param PageIds the IDs of the pages which constitute the execution paths. IDs in each path must be in ascending order.
     * @param Controller the wizard controller.
     */
-  def createMultiplePathsWizard(PageIds: SeqEquiv[SeqEquiv[Double]], Controller: XWizardController): Unit = js.native
+  def createMultiplePathsWizard(PageIds: SeqEquiv[SeqEquiv[Double]], Controller: XWizardController): Unit
   
   /**
     * creates a wizard with a single execution path
     * @param PageIds the IDs of the pages which constitute the execution path. IDs must be in ascending order.
     * @param Controller the wizard controller.
     */
-  def createSinglePathWizard(PageIds: SeqEquiv[Double], Controller: XWizardController): Unit = js.native
+  def createSinglePathWizard(PageIds: SeqEquiv[Double], Controller: XWizardController): Unit
 }
 object Wizard {
   

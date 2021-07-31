@@ -2,17 +2,15 @@ package typings.hapiBell
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ExtendedProfile extends StObject {
     
-    var extendedProfile: js.UndefOr[Boolean] = js.native
+    var extendedProfile: js.UndefOr[Boolean] = js.undefined
     
-    var getMethod: js.UndefOr[String] = js.native
+    var getMethod: js.UndefOr[String] = js.undefined
   }
   object ExtendedProfile {
     
@@ -39,10 +37,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Uri extends StObject {
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
   }
   object Uri {
     

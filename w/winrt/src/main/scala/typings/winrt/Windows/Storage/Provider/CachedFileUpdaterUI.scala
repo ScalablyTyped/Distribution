@@ -2,11 +2,11 @@ package typings.winrt.Windows.Storage.Provider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CachedFileUpdaterUI extends ICachedFileUpdaterUI
+trait CachedFileUpdaterUI
+  extends StObject
+     with ICachedFileUpdaterUI
 object CachedFileUpdaterUI {
   
   @scala.inline

@@ -12,7 +12,6 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowCompMod {
@@ -303,17 +302,13 @@ object rowCompMod {
     var slideRowIn: js.Any = js.native
     
     def startRowEditing(): Unit = js.native
-    def startRowEditing(
-      keyPress: js.UndefOr[scala.Nothing],
-      charPress: js.UndefOr[scala.Nothing],
-      sourceRenderedCell: CellComp
-    ): Unit = js.native
-    def startRowEditing(keyPress: js.UndefOr[scala.Nothing], charPress: String): Unit = js.native
-    def startRowEditing(keyPress: js.UndefOr[scala.Nothing], charPress: String, sourceRenderedCell: CellComp): Unit = js.native
     def startRowEditing(keyPress: Double): Unit = js.native
-    def startRowEditing(keyPress: Double, charPress: js.UndefOr[scala.Nothing], sourceRenderedCell: CellComp): Unit = js.native
     def startRowEditing(keyPress: Double, charPress: String): Unit = js.native
     def startRowEditing(keyPress: Double, charPress: String, sourceRenderedCell: CellComp): Unit = js.native
+    def startRowEditing(keyPress: Double, charPress: Unit, sourceRenderedCell: CellComp): Unit = js.native
+    def startRowEditing(keyPress: Unit, charPress: String): Unit = js.native
+    def startRowEditing(keyPress: Unit, charPress: String, sourceRenderedCell: CellComp): Unit = js.native
+    def startRowEditing(keyPress: Unit, charPress: Unit, sourceRenderedCell: CellComp): Unit = js.native
     
     def stopEditing(): Unit = js.native
     def stopEditing(cancel: Boolean): Unit = js.native

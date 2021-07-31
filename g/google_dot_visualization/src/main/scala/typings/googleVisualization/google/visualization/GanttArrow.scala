@@ -2,23 +2,21 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttArrow extends StObject {
   
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var spaceAfter: js.UndefOr[Double] = js.native
+  var spaceAfter: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object GanttArrow {
   

@@ -9,7 +9,6 @@ import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.sanitizationMod.IonicSafeString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,9 +40,9 @@ trait IonAlert extends StObject {
     * @param role The role of the element that is dismissing the alert. This can be useful in a button handler for determining which button was clicked to dismiss the alert. Some examples include: ``"cancel"`, `"destructive"`, "selected"`, and `"backdrop"`.
     */
   def dismiss(): js.Promise[Boolean] = js.native
-  def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
   def dismiss(data: js.Any): js.Promise[Boolean] = js.native
   def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
+  def dismiss(data: Unit, role: String): js.Promise[Boolean] = js.native
   
   /**
     * Animation to use when the alert is presented.

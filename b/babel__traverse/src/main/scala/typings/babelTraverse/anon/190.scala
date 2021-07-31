@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.JSXText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `190` extends StObject {
   
-  var `type`: JSXText = js.native
+  var `type`: JSXText
 }
 object `190` {
   
   @scala.inline
-  def apply(`type`: JSXText): `190` = {
+  def apply(): `190` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXText")
     __obj.asInstanceOf[`190`]
   }
   

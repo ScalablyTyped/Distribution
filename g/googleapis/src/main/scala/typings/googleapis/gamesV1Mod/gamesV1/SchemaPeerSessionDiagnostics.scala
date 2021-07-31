@@ -2,40 +2,38 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for peer session diagnostics.
   */
-@js.native
 trait SchemaPeerSessionDiagnostics extends StObject {
   
   /**
     * Connected time in milliseconds.
     */
-  var connectedTimestampMillis: js.UndefOr[String] = js.native
+  var connectedTimestampMillis: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#peerSessionDiagnostics.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The participant ID of the peer.
     */
-  var participantId: js.UndefOr[String] = js.native
+  var participantId: js.UndefOr[String] = js.undefined
   
   /**
     * Reliable channel diagnostics.
     */
-  var reliableChannel: js.UndefOr[SchemaPeerChannelDiagnostics] = js.native
+  var reliableChannel: js.UndefOr[SchemaPeerChannelDiagnostics] = js.undefined
   
   /**
     * Unreliable channel diagnostics.
     */
-  var unreliableChannel: js.UndefOr[SchemaPeerChannelDiagnostics] = js.native
+  var unreliableChannel: js.UndefOr[SchemaPeerChannelDiagnostics] = js.undefined
 }
 object SchemaPeerSessionDiagnostics {
   

@@ -2,23 +2,21 @@ package typings.backblazeB2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StandardApiResponse extends StObject {
   
-  var config: js.Any = js.native
+  var config: js.Any
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var headers: js.Any = js.native
+  var headers: js.Any
   
-  var request: js.Any = js.native
+  var request: js.Any
   
-  var status: String = js.native
+  var status: String
   
-  var statusText: String = js.native
+  var statusText: String
 }
 object StandardApiResponse {
   

@@ -2,19 +2,17 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NightwatchScreenshotOptions extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var on_error: js.UndefOr[Boolean] = js.native
+  var on_error: js.UndefOr[Boolean] = js.undefined
   
-  var on_failure: js.UndefOr[Boolean] = js.native
+  var on_failure: js.UndefOr[Boolean] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object NightwatchScreenshotOptions {
   

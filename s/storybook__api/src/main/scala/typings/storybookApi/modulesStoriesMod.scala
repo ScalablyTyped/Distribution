@@ -12,7 +12,6 @@ import typings.storybookApi.storiesMod.StoriesRaw
 import typings.storybookApi.storiesMod.Story
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modulesStoriesMod {
@@ -86,9 +85,9 @@ object modulesStoriesMod {
     def selectFirstStory(): Unit = js.native
     
     def selectStory(kindOrId: String): Unit = js.native
-    def selectStory(kindOrId: String, story: js.UndefOr[scala.Nothing], obj: typings.storybookApi.anon.ViewMode): Unit = js.native
     def selectStory(kindOrId: String, story: String): Unit = js.native
     def selectStory(kindOrId: String, story: String, obj: typings.storybookApi.anon.ViewMode): Unit = js.native
+    def selectStory(kindOrId: String, story: Unit, obj: typings.storybookApi.anon.ViewMode): Unit = js.native
     
     def setStories(stories: StoriesRaw): js.Promise[Unit] = js.native
     def setStories(stories: StoriesRaw, failed: Error): js.Promise[Unit] = js.native
@@ -98,18 +97,17 @@ object modulesStoriesMod {
     def updateStoryArgs(story: Story, newArgs: Args): Unit = js.native
   }
   
-  @js.native
   trait SubState extends StObject {
     
-    var storiesConfigured: Boolean = js.native
+    var storiesConfigured: Boolean
     
-    var storiesFailed: js.UndefOr[Error] = js.native
+    var storiesFailed: js.UndefOr[Error] = js.undefined
     
-    var storiesHash: StoriesHash = js.native
+    var storiesHash: StoriesHash
     
-    var storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any = js.native
+    var storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
     
-    var viewMode: ViewMode = js.native
+    var viewMode: ViewMode
   }
   object SubState {
     
@@ -156,7 +154,7 @@ object modulesStoriesMod {
     - typings.storybookApi.storybookApiStrings.info
     - typings.storybookApi.storybookApiStrings.settings
     - java.lang.String
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
   */
   type ViewMode = js.UndefOr[_ViewMode | String]
   

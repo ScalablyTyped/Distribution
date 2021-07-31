@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpgradeHistoryEntry extends StObject {
   
   /** The container image before this instance upgrade. */
-  var containerImage: js.UndefOr[String] = js.native
+  var containerImage: js.UndefOr[String] = js.undefined
   
   /** The time that this instance upgrade history entry is created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The framework of this notebook instance. */
-  var framework: js.UndefOr[String] = js.native
+  var framework: js.UndefOr[String] = js.undefined
   
   /** The snapshot of the boot disk of this notebook instance before upgrade. */
-  var snapshot: js.UndefOr[String] = js.native
+  var snapshot: js.UndefOr[String] = js.undefined
   
   /** The state of this instance upgrade history entry. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** The version of the notebook instance before this upgrade. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
   /** The VM image before this instance upgrade. */
-  var vmImage: js.UndefOr[String] = js.native
+  var vmImage: js.UndefOr[String] = js.undefined
 }
 object UpgradeHistoryEntry {
   

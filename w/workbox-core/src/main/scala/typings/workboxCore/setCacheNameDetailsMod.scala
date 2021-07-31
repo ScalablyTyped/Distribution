@@ -3,27 +3,28 @@ package typings.workboxCore
 import typings.workboxCore.anon.PartialCacheNameDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object setCacheNameDetailsMod {
   
-  @JSImport("workbox-core/setCacheNameDetails", "setCacheNameDetails")
+  @JSImport("workbox-core/setCacheNameDetails", JSImport.Namespace)
   @js.native
-  def setCacheNameDetails(details: PartialCacheNameDetails): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def setCacheNameDetails(details: PartialCacheNameDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCacheNameDetails")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait CacheNameDetails extends StObject {
     
-    var googleAnalytics: String = js.native
+    var googleAnalytics: String
     
-    var precache: String = js.native
+    var precache: String
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var runtime: String = js.native
+    var runtime: String
     
-    var suffix: String = js.native
+    var suffix: String
   }
   object CacheNameDetails {
     

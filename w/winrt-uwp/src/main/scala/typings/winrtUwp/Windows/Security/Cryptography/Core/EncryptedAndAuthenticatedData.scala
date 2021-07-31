@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Security.Cryptography.Core
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains data that can be retrieved from encrypted and authenticated data. Authenticated encryption algorithms are opened by using the SymmetricKeyAlgorithmProvider class. */
-@js.native
 trait EncryptedAndAuthenticatedData extends StObject {
   
   /** Gets the authentication tag. */
-  var authenticationTag: IBuffer = js.native
+  var authenticationTag: IBuffer
   
   /** Gets the encrypted data. */
-  var encryptedData: IBuffer = js.native
+  var encryptedData: IBuffer
 }
 object EncryptedAndAuthenticatedData {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminologyDataLocation extends StObject {
   
   /**
     * The location of the custom terminology data.
     */
-  var Location: String = js.native
+  var Location: String
   
   /**
     * The repository type for the custom terminology data.
     */
-  var RepositoryType: String = js.native
+  var RepositoryType: String
 }
 object TerminologyDataLocation {
   

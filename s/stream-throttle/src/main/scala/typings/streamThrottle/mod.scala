@@ -3,7 +3,6 @@ package typings.streamThrottle
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,12 +21,11 @@ object mod {
     def throttle(options: ThrottleOptions): Throttle = js.native
   }
   
-  @js.native
   trait ThrottleOptions extends StObject {
     
-    val chunksize: js.UndefOr[Double] = js.native
+    val chunksize: js.UndefOr[Double] = js.undefined
     
-    val rate: Double = js.native
+    val rate: Double
   }
   object ThrottleOptions {
     

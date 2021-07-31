@@ -2,7 +2,6 @@ package typings.agoraRtcSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The list of devices obtained by calling {@link AgoraRTC.getDevices} is an array of `MediaDeviceInfo` objects, one per media device.
   */
-@js.native
 trait MediaDeviceInfo extends StObject {
   
   /**
@@ -24,14 +22,14 @@ trait MediaDeviceInfo extends StObject {
     *
     * On Chrome 81 or later, the device ID is only available after the user has granted permission to use the media device.
     */
-  val deviceId: String = js.native
+  val deviceId: String
   
   /**
     * Device Type
     *
     * Returns an enumerated value that is "videoinput", "audioinput" or "audiooutput".
     */
-  val kind: String = js.native
+  val kind: String
   
   /**
     * Device Label
@@ -43,7 +41,7 @@ trait MediaDeviceInfo extends StObject {
     * For security reasons, the label field is always blank unless an active media stream exists or the user has granted persistent permission for media device access.
     *
     */
-  val label: String = js.native
+  val label: String
 }
 object MediaDeviceInfo {
   

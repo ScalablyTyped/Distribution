@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIElementTooDeep extends StObject {
   
   /** The depth of the screen element */
-  var depth: js.UndefOr[Double] = js.native
+  var depth: js.UndefOr[Double] = js.undefined
   
   /** The screen id of the element */
-  var screenId: js.UndefOr[String] = js.native
+  var screenId: js.UndefOr[String] = js.undefined
   
   /** The screen state id of the element */
-  var screenStateId: js.UndefOr[String] = js.native
+  var screenStateId: js.UndefOr[String] = js.undefined
 }
 object UIElementTooDeep {
   

@@ -2,32 +2,30 @@ package typings.yaml.parseCstMod.CST
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParseContext extends StObject {
   
   /** Node starts at beginning of line */
-  var atLineStart: Boolean = js.native
+  var atLineStart: Boolean
   
   /** true if currently in a collection context */
-  var inCollection: Boolean = js.native
+  var inCollection: Boolean
   
   /** true if currently in a flow context */
-  var inFlow: Boolean = js.native
+  var inFlow: Boolean
   
   /** Current level of indentation */
-  var indent: Double = js.native
+  var indent: Double
   
   /** Start of the current line */
-  var lineStart: Double = js.native
+  var lineStart: Double
   
   /** The parent of the node */
-  var parent: Node = js.native
+  var parent: Node
   
   /** Source of the YAML document */
-  var src: String = js.native
+  var src: String
 }
 object ParseContext {
   

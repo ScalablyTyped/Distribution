@@ -2,16 +2,14 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListSmimeInfoResponse extends StObject {
   
   /**
     * List of SmimeInfo.
     */
-  var smimeInfo: js.UndefOr[js.Array[SchemaSmimeInfo]] = js.native
+  var smimeInfo: js.UndefOr[js.Array[SchemaSmimeInfo]] = js.undefined
 }
 object SchemaListSmimeInfoResponse {
   

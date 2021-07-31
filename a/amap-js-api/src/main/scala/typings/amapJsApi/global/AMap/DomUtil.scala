@@ -196,19 +196,21 @@ import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DomUtil {
+  
+  @JSGlobal("AMap.DomUtil")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * 给DOM元素添加一个className
     * @param dom DOM元素
     * @param className 类名
     */
-  @JSGlobal("AMap.DomUtil.addClass")
-  @js.native
-  def addClass(dom: HTMLElement, className: String): Unit = js.native
+  @scala.inline
+  def addClass(dom: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(dom.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * 在parentNode内部创建一个className类名的tagName元素
@@ -216,1485 +218,1121 @@ object DomUtil {
     * @param parent 父节点
     * @param className 类名
     */
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_a(tagName: a): HTMLAnchorElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_a(tagName: a, parent: js.UndefOr[scala.Nothing], className: String): HTMLAnchorElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_a(tagName: a, parent: HTMLElement): HTMLAnchorElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_a(tagName: a, parent: HTMLElement, className: String): HTMLAnchorElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_abbr(tagName: abbr): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_abbr(tagName: abbr, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_abbr(tagName: abbr, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_abbr(tagName: abbr, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_address(tagName: address): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_address(tagName: address, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_address(tagName: address, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_address(tagName: address, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_applet(tagName: applet): HTMLAppletElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_applet(tagName: applet, parent: js.UndefOr[scala.Nothing], className: String): HTMLAppletElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_applet(tagName: applet, parent: HTMLElement): HTMLAppletElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_applet(tagName: applet, parent: HTMLElement, className: String): HTMLAppletElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_area(tagName: area): HTMLAreaElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_area(tagName: area, parent: js.UndefOr[scala.Nothing], className: String): HTMLAreaElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_area(tagName: area, parent: HTMLElement): HTMLAreaElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_area(tagName: area, parent: HTMLElement, className: String): HTMLAreaElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_article(tagName: article): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_article(tagName: article, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_article(tagName: article, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_article(tagName: article, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_aside(tagName: aside): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_aside(tagName: aside, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_aside(tagName: aside, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_aside(tagName: aside, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_audio(tagName: audio): HTMLAudioElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_audio(tagName: audio, parent: js.UndefOr[scala.Nothing], className: String): HTMLAudioElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_audio(tagName: audio, parent: HTMLElement): HTMLAudioElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_audio(tagName: audio, parent: HTMLElement, className: String): HTMLAudioElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_b(tagName: b): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_b(tagName: b, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_b(tagName: b, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_b(tagName: b, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_base(tagName: base): HTMLBaseElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_base(tagName: base, parent: js.UndefOr[scala.Nothing], className: String): HTMLBaseElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_base(tagName: base, parent: HTMLElement): HTMLBaseElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_base(tagName: base, parent: HTMLElement, className: String): HTMLBaseElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_basefont(tagName: basefont): HTMLBaseFontElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_basefont(tagName: basefont, parent: js.UndefOr[scala.Nothing], className: String): HTMLBaseFontElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_basefont(tagName: basefont, parent: HTMLElement): HTMLBaseFontElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_basefont(tagName: basefont, parent: HTMLElement, className: String): HTMLBaseFontElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_bdi(tagName: bdi): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_bdi(tagName: bdi, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_bdi(tagName: bdi, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_bdi(tagName: bdi, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_bdo(tagName: bdo): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_bdo(tagName: bdo, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_bdo(tagName: bdo, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_bdo(tagName: bdo, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_blockquote(tagName: blockquote): HTMLQuoteElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_blockquote(tagName: blockquote, parent: js.UndefOr[scala.Nothing], className: String): HTMLQuoteElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_blockquote(tagName: blockquote, parent: HTMLElement): HTMLQuoteElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_blockquote(tagName: blockquote, parent: HTMLElement, className: String): HTMLQuoteElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_body(tagName: body): HTMLBodyElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_body(tagName: body, parent: js.UndefOr[scala.Nothing], className: String): HTMLBodyElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_body(tagName: body, parent: HTMLElement): HTMLBodyElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_body(tagName: body, parent: HTMLElement, className: String): HTMLBodyElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_br(tagName: br): HTMLBRElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_br(tagName: br, parent: js.UndefOr[scala.Nothing], className: String): HTMLBRElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_br(tagName: br, parent: HTMLElement): HTMLBRElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_br(tagName: br, parent: HTMLElement, className: String): HTMLBRElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_button(tagName: button): HTMLButtonElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_button(tagName: button, parent: js.UndefOr[scala.Nothing], className: String): HTMLButtonElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_button(tagName: button, parent: HTMLElement): HTMLButtonElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_button(tagName: button, parent: HTMLElement, className: String): HTMLButtonElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_canvas(tagName: canvas): HTMLCanvasElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_canvas(tagName: canvas, parent: js.UndefOr[scala.Nothing], className: String): HTMLCanvasElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_canvas(tagName: canvas, parent: HTMLElement): HTMLCanvasElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_canvas(tagName: canvas, parent: HTMLElement, className: String): HTMLCanvasElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_caption(tagName: caption): HTMLTableCaptionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_caption(tagName: caption, parent: js.UndefOr[scala.Nothing], className: String): HTMLTableCaptionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_caption(tagName: caption, parent: HTMLElement): HTMLTableCaptionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_caption(tagName: caption, parent: HTMLElement, className: String): HTMLTableCaptionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_cite(tagName: cite): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_cite(tagName: cite, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_cite(tagName: cite, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_cite(tagName: cite, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_code(tagName: code): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_code(tagName: code, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_code(tagName: code, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_code(tagName: code, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_col(tagName: col): HTMLTableColElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_col(tagName: col, parent: js.UndefOr[scala.Nothing], className: String): HTMLTableColElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_col(tagName: col, parent: HTMLElement): HTMLTableColElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_col(tagName: col, parent: HTMLElement, className: String): HTMLTableColElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_colgroup(tagName: colgroup): HTMLTableColElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_colgroup(tagName: colgroup, parent: js.UndefOr[scala.Nothing], className: String): HTMLTableColElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_colgroup(tagName: colgroup, parent: HTMLElement): HTMLTableColElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_colgroup(tagName: colgroup, parent: HTMLElement, className: String): HTMLTableColElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_data(tagName: data): HTMLDataElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_data(tagName: data, parent: js.UndefOr[scala.Nothing], className: String): HTMLDataElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_data(tagName: data, parent: HTMLElement): HTMLDataElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_data(tagName: data, parent: HTMLElement, className: String): HTMLDataElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_datalist(tagName: datalist): HTMLDataListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_datalist(tagName: datalist, parent: js.UndefOr[scala.Nothing], className: String): HTMLDataListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_datalist(tagName: datalist, parent: HTMLElement): HTMLDataListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_datalist(tagName: datalist, parent: HTMLElement, className: String): HTMLDataListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dd(tagName: dd): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dd(tagName: dd, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dd(tagName: dd, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dd(tagName: dd, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_del(tagName: del): HTMLModElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_del(tagName: del, parent: js.UndefOr[scala.Nothing], className: String): HTMLModElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_del(tagName: del, parent: HTMLElement): HTMLModElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_del(tagName: del, parent: HTMLElement, className: String): HTMLModElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_details(tagName: details): HTMLDetailsElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_details(tagName: details, parent: js.UndefOr[scala.Nothing], className: String): HTMLDetailsElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_details(tagName: details, parent: HTMLElement): HTMLDetailsElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_details(tagName: details, parent: HTMLElement, className: String): HTMLDetailsElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dfn(tagName: dfn): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dfn(tagName: dfn, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dfn(tagName: dfn, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dfn(tagName: dfn, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dialog(tagName: dialog): HTMLDialogElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dialog(tagName: dialog, parent: js.UndefOr[scala.Nothing], className: String): HTMLDialogElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dialog(tagName: dialog, parent: HTMLElement): HTMLDialogElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dialog(tagName: dialog, parent: HTMLElement, className: String): HTMLDialogElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dir(tagName: dir): HTMLDirectoryElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dir(tagName: dir, parent: js.UndefOr[scala.Nothing], className: String): HTMLDirectoryElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dir(tagName: dir, parent: HTMLElement): HTMLDirectoryElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dir(tagName: dir, parent: HTMLElement, className: String): HTMLDirectoryElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_div(tagName: div): HTMLDivElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_div(tagName: div, parent: js.UndefOr[scala.Nothing], className: String): HTMLDivElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_div(tagName: div, parent: HTMLElement): HTMLDivElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_div(tagName: div, parent: HTMLElement, className: String): HTMLDivElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dl(tagName: dl): HTMLDListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dl(tagName: dl, parent: js.UndefOr[scala.Nothing], className: String): HTMLDListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dl(tagName: dl, parent: HTMLElement): HTMLDListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dl(tagName: dl, parent: HTMLElement, className: String): HTMLDListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dt(tagName: dt): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dt(tagName: dt, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dt(tagName: dt, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_dt(tagName: dt, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_em(tagName: em): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_em(tagName: em, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_em(tagName: em, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_em(tagName: em, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_embed(tagName: embed): HTMLEmbedElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_embed(tagName: embed, parent: js.UndefOr[scala.Nothing], className: String): HTMLEmbedElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_embed(tagName: embed, parent: HTMLElement): HTMLEmbedElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_embed(tagName: embed, parent: HTMLElement, className: String): HTMLEmbedElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_fieldset(tagName: fieldset): HTMLFieldSetElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_fieldset(tagName: fieldset, parent: js.UndefOr[scala.Nothing], className: String): HTMLFieldSetElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_fieldset(tagName: fieldset, parent: HTMLElement): HTMLFieldSetElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_fieldset(tagName: fieldset, parent: HTMLElement, className: String): HTMLFieldSetElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_figcaption(tagName: figcaption): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_figcaption(tagName: figcaption, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_figcaption(tagName: figcaption, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_figcaption(tagName: figcaption, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_figure(tagName: figure): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_figure(tagName: figure, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_figure(tagName: figure, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_figure(tagName: figure, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_font(tagName: font): HTMLFontElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_font(tagName: font, parent: js.UndefOr[scala.Nothing], className: String): HTMLFontElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_font(tagName: font, parent: HTMLElement): HTMLFontElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_font(tagName: font, parent: HTMLElement, className: String): HTMLFontElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_footer(tagName: footer): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_footer(tagName: footer, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_footer(tagName: footer, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_footer(tagName: footer, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_form(tagName: form): HTMLFormElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_form(tagName: form, parent: js.UndefOr[scala.Nothing], className: String): HTMLFormElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_form(tagName: form, parent: HTMLElement): HTMLFormElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_form(tagName: form, parent: HTMLElement, className: String): HTMLFormElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_frame(tagName: frame): HTMLFrameElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_frame(tagName: frame, parent: js.UndefOr[scala.Nothing], className: String): HTMLFrameElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_frame(tagName: frame, parent: HTMLElement): HTMLFrameElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_frame(tagName: frame, parent: HTMLElement, className: String): HTMLFrameElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_frameset(tagName: frameset): HTMLFrameSetElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_frameset(tagName: frameset, parent: js.UndefOr[scala.Nothing], className: String): HTMLFrameSetElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_frameset(tagName: frameset, parent: HTMLElement): HTMLFrameSetElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_frameset(tagName: frameset, parent: HTMLElement, className: String): HTMLFrameSetElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h1(tagName: h1): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h1(tagName: h1, parent: js.UndefOr[scala.Nothing], className: String): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h1(tagName: h1, parent: HTMLElement): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h1(tagName: h1, parent: HTMLElement, className: String): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h2(tagName: h2): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h2(tagName: h2, parent: js.UndefOr[scala.Nothing], className: String): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h2(tagName: h2, parent: HTMLElement): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h2(tagName: h2, parent: HTMLElement, className: String): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h3(tagName: h3): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h3(tagName: h3, parent: js.UndefOr[scala.Nothing], className: String): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h3(tagName: h3, parent: HTMLElement): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h3(tagName: h3, parent: HTMLElement, className: String): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h4(tagName: h4): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h4(tagName: h4, parent: js.UndefOr[scala.Nothing], className: String): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h4(tagName: h4, parent: HTMLElement): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h4(tagName: h4, parent: HTMLElement, className: String): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h5(tagName: h5): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h5(tagName: h5, parent: js.UndefOr[scala.Nothing], className: String): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h5(tagName: h5, parent: HTMLElement): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h5(tagName: h5, parent: HTMLElement, className: String): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h6(tagName: h6): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h6(tagName: h6, parent: js.UndefOr[scala.Nothing], className: String): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h6(tagName: h6, parent: HTMLElement): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_h6(tagName: h6, parent: HTMLElement, className: String): HTMLHeadingElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_head(tagName: head): HTMLHeadElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_head(tagName: head, parent: js.UndefOr[scala.Nothing], className: String): HTMLHeadElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_head(tagName: head, parent: HTMLElement): HTMLHeadElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_head(tagName: head, parent: HTMLElement, className: String): HTMLHeadElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_header(tagName: header): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_header(tagName: header, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_header(tagName: header, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_header(tagName: header, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_hgroup(tagName: hgroup): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_hgroup(tagName: hgroup, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_hgroup(tagName: hgroup, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_hgroup(tagName: hgroup, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_hr(tagName: hr): HTMLHRElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_hr(tagName: hr, parent: js.UndefOr[scala.Nothing], className: String): HTMLHRElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_hr(tagName: hr, parent: HTMLElement): HTMLHRElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_hr(tagName: hr, parent: HTMLElement, className: String): HTMLHRElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_html(tagName: html): HTMLHtmlElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_html(tagName: html, parent: js.UndefOr[scala.Nothing], className: String): HTMLHtmlElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_html(tagName: html, parent: HTMLElement): HTMLHtmlElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_html(tagName: html, parent: HTMLElement, className: String): HTMLHtmlElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_i(tagName: i): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_i(tagName: i, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_i(tagName: i, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_i(tagName: i, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_iframe(tagName: iframe): HTMLIFrameElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_iframe(tagName: iframe, parent: js.UndefOr[scala.Nothing], className: String): HTMLIFrameElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_iframe(tagName: iframe, parent: HTMLElement): HTMLIFrameElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_iframe(tagName: iframe, parent: HTMLElement, className: String): HTMLIFrameElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_img(tagName: img): HTMLImageElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_img(tagName: img, parent: js.UndefOr[scala.Nothing], className: String): HTMLImageElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_img(tagName: img, parent: HTMLElement): HTMLImageElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_img(tagName: img, parent: HTMLElement, className: String): HTMLImageElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_input(tagName: input): HTMLInputElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_input(tagName: input, parent: js.UndefOr[scala.Nothing], className: String): HTMLInputElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_input(tagName: input, parent: HTMLElement): HTMLInputElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_input(tagName: input, parent: HTMLElement, className: String): HTMLInputElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ins(tagName: ins): HTMLModElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ins(tagName: ins, parent: js.UndefOr[scala.Nothing], className: String): HTMLModElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ins(tagName: ins, parent: HTMLElement): HTMLModElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ins(tagName: ins, parent: HTMLElement, className: String): HTMLModElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_kbd(tagName: kbd): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_kbd(tagName: kbd, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_kbd(tagName: kbd, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_kbd(tagName: kbd, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_label(tagName: label): HTMLLabelElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_label(tagName: label, parent: js.UndefOr[scala.Nothing], className: String): HTMLLabelElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_label(tagName: label, parent: HTMLElement): HTMLLabelElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_label(tagName: label, parent: HTMLElement, className: String): HTMLLabelElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_legend(tagName: legend): HTMLLegendElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_legend(tagName: legend, parent: js.UndefOr[scala.Nothing], className: String): HTMLLegendElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_legend(tagName: legend, parent: HTMLElement): HTMLLegendElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_legend(tagName: legend, parent: HTMLElement, className: String): HTMLLegendElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_li(tagName: li): HTMLLIElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_li(tagName: li, parent: js.UndefOr[scala.Nothing], className: String): HTMLLIElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_li(tagName: li, parent: HTMLElement): HTMLLIElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_li(tagName: li, parent: HTMLElement, className: String): HTMLLIElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_link(tagName: link): HTMLLinkElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_link(tagName: link, parent: js.UndefOr[scala.Nothing], className: String): HTMLLinkElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_link(tagName: link, parent: HTMLElement): HTMLLinkElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_link(tagName: link, parent: HTMLElement, className: String): HTMLLinkElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_main(tagName: main): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_main(tagName: main, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_main(tagName: main, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_main(tagName: main, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_map(tagName: map): HTMLMapElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_map(tagName: map, parent: js.UndefOr[scala.Nothing], className: String): HTMLMapElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_map(tagName: map, parent: HTMLElement): HTMLMapElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_map(tagName: map, parent: HTMLElement, className: String): HTMLMapElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_mark(tagName: mark): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_mark(tagName: mark, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_mark(tagName: mark, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_mark(tagName: mark, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_marquee(tagName: marquee): HTMLMarqueeElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_marquee(tagName: marquee, parent: js.UndefOr[scala.Nothing], className: String): HTMLMarqueeElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_marquee(tagName: marquee, parent: HTMLElement): HTMLMarqueeElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_marquee(tagName: marquee, parent: HTMLElement, className: String): HTMLMarqueeElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_menu(tagName: menu): HTMLMenuElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_menu(tagName: menu, parent: js.UndefOr[scala.Nothing], className: String): HTMLMenuElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_menu(tagName: menu, parent: HTMLElement): HTMLMenuElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_menu(tagName: menu, parent: HTMLElement, className: String): HTMLMenuElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_meta(tagName: meta): HTMLMetaElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_meta(tagName: meta, parent: js.UndefOr[scala.Nothing], className: String): HTMLMetaElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_meta(tagName: meta, parent: HTMLElement): HTMLMetaElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_meta(tagName: meta, parent: HTMLElement, className: String): HTMLMetaElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_meter(tagName: meter): HTMLMeterElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_meter(tagName: meter, parent: js.UndefOr[scala.Nothing], className: String): HTMLMeterElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_meter(tagName: meter, parent: HTMLElement): HTMLMeterElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_meter(tagName: meter, parent: HTMLElement, className: String): HTMLMeterElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_nav(tagName: nav): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_nav(tagName: nav, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_nav(tagName: nav, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_nav(tagName: nav, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_noscript(tagName: noscript): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_noscript(tagName: noscript, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_noscript(tagName: noscript, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_noscript(tagName: noscript, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_object(tagName: `object`): HTMLObjectElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_object(tagName: `object`, parent: js.UndefOr[scala.Nothing], className: String): HTMLObjectElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_object(tagName: `object`, parent: HTMLElement): HTMLObjectElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_object(tagName: `object`, parent: HTMLElement, className: String): HTMLObjectElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ol(tagName: ol): HTMLOListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ol(tagName: ol, parent: js.UndefOr[scala.Nothing], className: String): HTMLOListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ol(tagName: ol, parent: HTMLElement): HTMLOListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ol(tagName: ol, parent: HTMLElement, className: String): HTMLOListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_optgroup(tagName: optgroup): HTMLOptGroupElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_optgroup(tagName: optgroup, parent: js.UndefOr[scala.Nothing], className: String): HTMLOptGroupElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_optgroup(tagName: optgroup, parent: HTMLElement): HTMLOptGroupElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_optgroup(tagName: optgroup, parent: HTMLElement, className: String): HTMLOptGroupElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_option(tagName: option): HTMLOptionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_option(tagName: option, parent: js.UndefOr[scala.Nothing], className: String): HTMLOptionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_option(tagName: option, parent: HTMLElement): HTMLOptionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_option(tagName: option, parent: HTMLElement, className: String): HTMLOptionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_output(tagName: output): HTMLOutputElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_output(tagName: output, parent: js.UndefOr[scala.Nothing], className: String): HTMLOutputElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_output(tagName: output, parent: HTMLElement): HTMLOutputElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_output(tagName: output, parent: HTMLElement, className: String): HTMLOutputElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_p(tagName: p): HTMLParagraphElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_p(tagName: p, parent: js.UndefOr[scala.Nothing], className: String): HTMLParagraphElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_p(tagName: p, parent: HTMLElement): HTMLParagraphElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_p(tagName: p, parent: HTMLElement, className: String): HTMLParagraphElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_param(tagName: param): HTMLParamElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_param(tagName: param, parent: js.UndefOr[scala.Nothing], className: String): HTMLParamElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_param(tagName: param, parent: HTMLElement): HTMLParamElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_param(tagName: param, parent: HTMLElement, className: String): HTMLParamElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_picture(tagName: picture): HTMLPictureElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_picture(tagName: picture, parent: js.UndefOr[scala.Nothing], className: String): HTMLPictureElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_picture(tagName: picture, parent: HTMLElement): HTMLPictureElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_picture(tagName: picture, parent: HTMLElement, className: String): HTMLPictureElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_pre(tagName: pre): HTMLPreElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_pre(tagName: pre, parent: js.UndefOr[scala.Nothing], className: String): HTMLPreElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_pre(tagName: pre, parent: HTMLElement): HTMLPreElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_pre(tagName: pre, parent: HTMLElement, className: String): HTMLPreElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_progress(tagName: progress): HTMLProgressElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_progress(tagName: progress, parent: js.UndefOr[scala.Nothing], className: String): HTMLProgressElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_progress(tagName: progress, parent: HTMLElement): HTMLProgressElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_progress(tagName: progress, parent: HTMLElement, className: String): HTMLProgressElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_q(tagName: q): HTMLQuoteElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_q(tagName: q, parent: js.UndefOr[scala.Nothing], className: String): HTMLQuoteElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_q(tagName: q, parent: HTMLElement): HTMLQuoteElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_q(tagName: q, parent: HTMLElement, className: String): HTMLQuoteElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_rp(tagName: rp): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_rp(tagName: rp, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_rp(tagName: rp, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_rp(tagName: rp, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_rt(tagName: rt): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_rt(tagName: rt, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_rt(tagName: rt, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_rt(tagName: rt, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ruby(tagName: ruby): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ruby(tagName: ruby, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ruby(tagName: ruby, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ruby(tagName: ruby, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_s(tagName: s): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_s(tagName: s, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_s(tagName: s, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_s(tagName: s, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_samp(tagName: samp): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_samp(tagName: samp, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_samp(tagName: samp, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_samp(tagName: samp, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_script(tagName: script): HTMLScriptElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_script(tagName: script, parent: js.UndefOr[scala.Nothing], className: String): HTMLScriptElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_script(tagName: script, parent: HTMLElement): HTMLScriptElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_script(tagName: script, parent: HTMLElement, className: String): HTMLScriptElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_section(tagName: section): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_section(tagName: section, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_section(tagName: section, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_section(tagName: section, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_select(tagName: select): HTMLSelectElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_select(tagName: select, parent: js.UndefOr[scala.Nothing], className: String): HTMLSelectElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_select(tagName: select, parent: HTMLElement): HTMLSelectElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_select(tagName: select, parent: HTMLElement, className: String): HTMLSelectElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_slot(tagName: slot): HTMLSlotElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_slot(tagName: slot, parent: js.UndefOr[scala.Nothing], className: String): HTMLSlotElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_slot(tagName: slot, parent: HTMLElement): HTMLSlotElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_slot(tagName: slot, parent: HTMLElement, className: String): HTMLSlotElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_small(tagName: small): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_small(tagName: small, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_small(tagName: small, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_small(tagName: small, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_source(tagName: source): HTMLSourceElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_source(tagName: source, parent: js.UndefOr[scala.Nothing], className: String): HTMLSourceElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_source(tagName: source, parent: HTMLElement): HTMLSourceElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_source(tagName: source, parent: HTMLElement, className: String): HTMLSourceElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_span(tagName: span): HTMLSpanElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_span(tagName: span, parent: js.UndefOr[scala.Nothing], className: String): HTMLSpanElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_span(tagName: span, parent: HTMLElement): HTMLSpanElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_span(tagName: span, parent: HTMLElement, className: String): HTMLSpanElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_strong(tagName: strong): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_strong(tagName: strong, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_strong(tagName: strong, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_strong(tagName: strong, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_style(tagName: style): HTMLStyleElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_style(tagName: style, parent: js.UndefOr[scala.Nothing], className: String): HTMLStyleElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_style(tagName: style, parent: HTMLElement): HTMLStyleElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_style(tagName: style, parent: HTMLElement, className: String): HTMLStyleElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_sub(tagName: sub): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_sub(tagName: sub, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_sub(tagName: sub, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_sub(tagName: sub, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_summary(tagName: summary): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_summary(tagName: summary, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_summary(tagName: summary, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_summary(tagName: summary, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_sup(tagName: sup): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_sup(tagName: sup, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_sup(tagName: sup, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_sup(tagName: sup, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_table(tagName: table): HTMLTableElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_table(tagName: table, parent: js.UndefOr[scala.Nothing], className: String): HTMLTableElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_table(tagName: table, parent: HTMLElement): HTMLTableElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_table(tagName: table, parent: HTMLElement, className: String): HTMLTableElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_tbody(tagName: tbody): HTMLTableSectionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_tbody(tagName: tbody, parent: js.UndefOr[scala.Nothing], className: String): HTMLTableSectionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_tbody(tagName: tbody, parent: HTMLElement): HTMLTableSectionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_tbody(tagName: tbody, parent: HTMLElement, className: String): HTMLTableSectionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_td(tagName: td): HTMLTableDataCellElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_td(tagName: td, parent: js.UndefOr[scala.Nothing], className: String): HTMLTableDataCellElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_td(tagName: td, parent: HTMLElement): HTMLTableDataCellElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_td(tagName: td, parent: HTMLElement, className: String): HTMLTableDataCellElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_template(tagName: template): HTMLTemplateElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_template(tagName: template, parent: js.UndefOr[scala.Nothing], className: String): HTMLTemplateElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_template(tagName: template, parent: HTMLElement): HTMLTemplateElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_template(tagName: template, parent: HTMLElement, className: String): HTMLTemplateElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_textarea(tagName: textarea): HTMLTextAreaElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_textarea(tagName: textarea, parent: js.UndefOr[scala.Nothing], className: String): HTMLTextAreaElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_textarea(tagName: textarea, parent: HTMLElement): HTMLTextAreaElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_textarea(tagName: textarea, parent: HTMLElement, className: String): HTMLTextAreaElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_tfoot(tagName: tfoot): HTMLTableSectionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_tfoot(tagName: tfoot, parent: js.UndefOr[scala.Nothing], className: String): HTMLTableSectionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_tfoot(tagName: tfoot, parent: HTMLElement): HTMLTableSectionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_tfoot(tagName: tfoot, parent: HTMLElement, className: String): HTMLTableSectionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_th(tagName: th): HTMLTableHeaderCellElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_th(tagName: th, parent: js.UndefOr[scala.Nothing], className: String): HTMLTableHeaderCellElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_th(tagName: th, parent: HTMLElement): HTMLTableHeaderCellElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_th(tagName: th, parent: HTMLElement, className: String): HTMLTableHeaderCellElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_thead(tagName: thead): HTMLTableSectionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_thead(tagName: thead, parent: js.UndefOr[scala.Nothing], className: String): HTMLTableSectionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_thead(tagName: thead, parent: HTMLElement): HTMLTableSectionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_thead(tagName: thead, parent: HTMLElement, className: String): HTMLTableSectionElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_time(tagName: time): HTMLTimeElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_time(tagName: time, parent: js.UndefOr[scala.Nothing], className: String): HTMLTimeElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_time(tagName: time, parent: HTMLElement): HTMLTimeElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_time(tagName: time, parent: HTMLElement, className: String): HTMLTimeElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_title(tagName: title): HTMLTitleElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_title(tagName: title, parent: js.UndefOr[scala.Nothing], className: String): HTMLTitleElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_title(tagName: title, parent: HTMLElement): HTMLTitleElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_title(tagName: title, parent: HTMLElement, className: String): HTMLTitleElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_tr(tagName: tr): HTMLTableRowElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_tr(tagName: tr, parent: js.UndefOr[scala.Nothing], className: String): HTMLTableRowElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_tr(tagName: tr, parent: HTMLElement): HTMLTableRowElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_tr(tagName: tr, parent: HTMLElement, className: String): HTMLTableRowElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_track(tagName: track): HTMLTrackElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_track(tagName: track, parent: js.UndefOr[scala.Nothing], className: String): HTMLTrackElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_track(tagName: track, parent: HTMLElement): HTMLTrackElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_track(tagName: track, parent: HTMLElement, className: String): HTMLTrackElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_u(tagName: u): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_u(tagName: u, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_u(tagName: u, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_u(tagName: u, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ul(tagName: ul): HTMLUListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ul(tagName: ul, parent: js.UndefOr[scala.Nothing], className: String): HTMLUListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ul(tagName: ul, parent: HTMLElement): HTMLUListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_ul(tagName: ul, parent: HTMLElement, className: String): HTMLUListElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_var(tagName: `var`): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_var(tagName: `var`, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_var(tagName: `var`, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_var(tagName: `var`, parent: HTMLElement, className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_video(tagName: video): HTMLVideoElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_video(tagName: video, parent: js.UndefOr[scala.Nothing], className: String): HTMLVideoElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_video(tagName: video, parent: HTMLElement): HTMLVideoElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_video(tagName: video, parent: HTMLElement, className: String): HTMLVideoElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_wbr(tagName: wbr): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_wbr(tagName: wbr, parent: js.UndefOr[scala.Nothing], className: String): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_wbr(tagName: wbr, parent: HTMLElement): HTMLElement = js.native
-  @JSGlobal("AMap.DomUtil.create")
-  @js.native
-  def create_wbr(tagName: wbr, parent: HTMLElement, className: String): HTMLElement = js.native
+  @scala.inline
+  def create_a(tagName: a): HTMLAnchorElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLAnchorElement]
+  @scala.inline
+  def create_a(tagName: a, parent: Unit, className: String): HTMLAnchorElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLAnchorElement]
+  @scala.inline
+  def create_a(tagName: a, parent: HTMLElement): HTMLAnchorElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLAnchorElement]
+  @scala.inline
+  def create_a(tagName: a, parent: HTMLElement, className: String): HTMLAnchorElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLAnchorElement]
+  
+  @scala.inline
+  def create_abbr(tagName: abbr): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_abbr(tagName: abbr, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_abbr(tagName: abbr, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_abbr(tagName: abbr, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_address(tagName: address): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_address(tagName: address, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_address(tagName: address, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_address(tagName: address, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_applet(tagName: applet): HTMLAppletElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLAppletElement]
+  @scala.inline
+  def create_applet(tagName: applet, parent: Unit, className: String): HTMLAppletElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLAppletElement]
+  @scala.inline
+  def create_applet(tagName: applet, parent: HTMLElement): HTMLAppletElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLAppletElement]
+  @scala.inline
+  def create_applet(tagName: applet, parent: HTMLElement, className: String): HTMLAppletElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLAppletElement]
+  
+  @scala.inline
+  def create_area(tagName: area): HTMLAreaElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLAreaElement]
+  @scala.inline
+  def create_area(tagName: area, parent: Unit, className: String): HTMLAreaElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLAreaElement]
+  @scala.inline
+  def create_area(tagName: area, parent: HTMLElement): HTMLAreaElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLAreaElement]
+  @scala.inline
+  def create_area(tagName: area, parent: HTMLElement, className: String): HTMLAreaElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLAreaElement]
+  
+  @scala.inline
+  def create_article(tagName: article): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_article(tagName: article, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_article(tagName: article, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_article(tagName: article, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_aside(tagName: aside): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_aside(tagName: aside, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_aside(tagName: aside, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_aside(tagName: aside, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_audio(tagName: audio): HTMLAudioElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLAudioElement]
+  @scala.inline
+  def create_audio(tagName: audio, parent: Unit, className: String): HTMLAudioElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLAudioElement]
+  @scala.inline
+  def create_audio(tagName: audio, parent: HTMLElement): HTMLAudioElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLAudioElement]
+  @scala.inline
+  def create_audio(tagName: audio, parent: HTMLElement, className: String): HTMLAudioElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLAudioElement]
+  
+  @scala.inline
+  def create_b(tagName: b): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_b(tagName: b, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_b(tagName: b, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_b(tagName: b, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_base(tagName: base): HTMLBaseElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLBaseElement]
+  @scala.inline
+  def create_base(tagName: base, parent: Unit, className: String): HTMLBaseElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLBaseElement]
+  @scala.inline
+  def create_base(tagName: base, parent: HTMLElement): HTMLBaseElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLBaseElement]
+  @scala.inline
+  def create_base(tagName: base, parent: HTMLElement, className: String): HTMLBaseElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLBaseElement]
+  
+  @scala.inline
+  def create_basefont(tagName: basefont): HTMLBaseFontElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLBaseFontElement]
+  @scala.inline
+  def create_basefont(tagName: basefont, parent: Unit, className: String): HTMLBaseFontElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLBaseFontElement]
+  @scala.inline
+  def create_basefont(tagName: basefont, parent: HTMLElement): HTMLBaseFontElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLBaseFontElement]
+  @scala.inline
+  def create_basefont(tagName: basefont, parent: HTMLElement, className: String): HTMLBaseFontElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLBaseFontElement]
+  
+  @scala.inline
+  def create_bdi(tagName: bdi): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_bdi(tagName: bdi, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_bdi(tagName: bdi, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_bdi(tagName: bdi, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_bdo(tagName: bdo): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_bdo(tagName: bdo, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_bdo(tagName: bdo, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_bdo(tagName: bdo, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_blockquote(tagName: blockquote): HTMLQuoteElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLQuoteElement]
+  @scala.inline
+  def create_blockquote(tagName: blockquote, parent: Unit, className: String): HTMLQuoteElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLQuoteElement]
+  @scala.inline
+  def create_blockquote(tagName: blockquote, parent: HTMLElement): HTMLQuoteElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLQuoteElement]
+  @scala.inline
+  def create_blockquote(tagName: blockquote, parent: HTMLElement, className: String): HTMLQuoteElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLQuoteElement]
+  
+  @scala.inline
+  def create_body(tagName: body): HTMLBodyElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLBodyElement]
+  @scala.inline
+  def create_body(tagName: body, parent: Unit, className: String): HTMLBodyElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLBodyElement]
+  @scala.inline
+  def create_body(tagName: body, parent: HTMLElement): HTMLBodyElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLBodyElement]
+  @scala.inline
+  def create_body(tagName: body, parent: HTMLElement, className: String): HTMLBodyElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLBodyElement]
+  
+  @scala.inline
+  def create_br(tagName: br): HTMLBRElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLBRElement]
+  @scala.inline
+  def create_br(tagName: br, parent: Unit, className: String): HTMLBRElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLBRElement]
+  @scala.inline
+  def create_br(tagName: br, parent: HTMLElement): HTMLBRElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLBRElement]
+  @scala.inline
+  def create_br(tagName: br, parent: HTMLElement, className: String): HTMLBRElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLBRElement]
+  
+  @scala.inline
+  def create_button(tagName: button): HTMLButtonElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLButtonElement]
+  @scala.inline
+  def create_button(tagName: button, parent: Unit, className: String): HTMLButtonElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLButtonElement]
+  @scala.inline
+  def create_button(tagName: button, parent: HTMLElement): HTMLButtonElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLButtonElement]
+  @scala.inline
+  def create_button(tagName: button, parent: HTMLElement, className: String): HTMLButtonElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLButtonElement]
+  
+  @scala.inline
+  def create_canvas(tagName: canvas): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
+  @scala.inline
+  def create_canvas(tagName: canvas, parent: Unit, className: String): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+  @scala.inline
+  def create_canvas(tagName: canvas, parent: HTMLElement): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+  @scala.inline
+  def create_canvas(tagName: canvas, parent: HTMLElement, className: String): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+  
+  @scala.inline
+  def create_caption(tagName: caption): HTMLTableCaptionElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableCaptionElement]
+  @scala.inline
+  def create_caption(tagName: caption, parent: Unit, className: String): HTMLTableCaptionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableCaptionElement]
+  @scala.inline
+  def create_caption(tagName: caption, parent: HTMLElement): HTMLTableCaptionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableCaptionElement]
+  @scala.inline
+  def create_caption(tagName: caption, parent: HTMLElement, className: String): HTMLTableCaptionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableCaptionElement]
+  
+  @scala.inline
+  def create_cite(tagName: cite): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_cite(tagName: cite, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_cite(tagName: cite, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_cite(tagName: cite, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_code(tagName: code): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_code(tagName: code, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_code(tagName: code, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_code(tagName: code, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_col(tagName: col): HTMLTableColElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableColElement]
+  @scala.inline
+  def create_col(tagName: col, parent: Unit, className: String): HTMLTableColElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableColElement]
+  @scala.inline
+  def create_col(tagName: col, parent: HTMLElement): HTMLTableColElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableColElement]
+  @scala.inline
+  def create_col(tagName: col, parent: HTMLElement, className: String): HTMLTableColElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableColElement]
+  
+  @scala.inline
+  def create_colgroup(tagName: colgroup): HTMLTableColElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableColElement]
+  @scala.inline
+  def create_colgroup(tagName: colgroup, parent: Unit, className: String): HTMLTableColElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableColElement]
+  @scala.inline
+  def create_colgroup(tagName: colgroup, parent: HTMLElement): HTMLTableColElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableColElement]
+  @scala.inline
+  def create_colgroup(tagName: colgroup, parent: HTMLElement, className: String): HTMLTableColElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableColElement]
+  
+  @scala.inline
+  def create_data(tagName: data): HTMLDataElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLDataElement]
+  @scala.inline
+  def create_data(tagName: data, parent: Unit, className: String): HTMLDataElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDataElement]
+  @scala.inline
+  def create_data(tagName: data, parent: HTMLElement): HTMLDataElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLDataElement]
+  @scala.inline
+  def create_data(tagName: data, parent: HTMLElement, className: String): HTMLDataElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDataElement]
+  
+  @scala.inline
+  def create_datalist(tagName: datalist): HTMLDataListElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLDataListElement]
+  @scala.inline
+  def create_datalist(tagName: datalist, parent: Unit, className: String): HTMLDataListElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDataListElement]
+  @scala.inline
+  def create_datalist(tagName: datalist, parent: HTMLElement): HTMLDataListElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLDataListElement]
+  @scala.inline
+  def create_datalist(tagName: datalist, parent: HTMLElement, className: String): HTMLDataListElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDataListElement]
+  
+  @scala.inline
+  def create_dd(tagName: dd): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_dd(tagName: dd, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_dd(tagName: dd, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_dd(tagName: dd, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_del(tagName: del): HTMLModElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLModElement]
+  @scala.inline
+  def create_del(tagName: del, parent: Unit, className: String): HTMLModElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLModElement]
+  @scala.inline
+  def create_del(tagName: del, parent: HTMLElement): HTMLModElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLModElement]
+  @scala.inline
+  def create_del(tagName: del, parent: HTMLElement, className: String): HTMLModElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLModElement]
+  
+  @scala.inline
+  def create_details(tagName: details): HTMLDetailsElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLDetailsElement]
+  @scala.inline
+  def create_details(tagName: details, parent: Unit, className: String): HTMLDetailsElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDetailsElement]
+  @scala.inline
+  def create_details(tagName: details, parent: HTMLElement): HTMLDetailsElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLDetailsElement]
+  @scala.inline
+  def create_details(tagName: details, parent: HTMLElement, className: String): HTMLDetailsElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDetailsElement]
+  
+  @scala.inline
+  def create_dfn(tagName: dfn): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_dfn(tagName: dfn, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_dfn(tagName: dfn, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_dfn(tagName: dfn, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_dialog(tagName: dialog): HTMLDialogElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLDialogElement]
+  @scala.inline
+  def create_dialog(tagName: dialog, parent: Unit, className: String): HTMLDialogElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDialogElement]
+  @scala.inline
+  def create_dialog(tagName: dialog, parent: HTMLElement): HTMLDialogElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLDialogElement]
+  @scala.inline
+  def create_dialog(tagName: dialog, parent: HTMLElement, className: String): HTMLDialogElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDialogElement]
+  
+  @scala.inline
+  def create_dir(tagName: dir): HTMLDirectoryElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLDirectoryElement]
+  @scala.inline
+  def create_dir(tagName: dir, parent: Unit, className: String): HTMLDirectoryElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDirectoryElement]
+  @scala.inline
+  def create_dir(tagName: dir, parent: HTMLElement): HTMLDirectoryElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLDirectoryElement]
+  @scala.inline
+  def create_dir(tagName: dir, parent: HTMLElement, className: String): HTMLDirectoryElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDirectoryElement]
+  
+  @scala.inline
+  def create_div(tagName: div): HTMLDivElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLDivElement]
+  @scala.inline
+  def create_div(tagName: div, parent: Unit, className: String): HTMLDivElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDivElement]
+  @scala.inline
+  def create_div(tagName: div, parent: HTMLElement): HTMLDivElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLDivElement]
+  @scala.inline
+  def create_div(tagName: div, parent: HTMLElement, className: String): HTMLDivElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDivElement]
+  
+  @scala.inline
+  def create_dl(tagName: dl): HTMLDListElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLDListElement]
+  @scala.inline
+  def create_dl(tagName: dl, parent: Unit, className: String): HTMLDListElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDListElement]
+  @scala.inline
+  def create_dl(tagName: dl, parent: HTMLElement): HTMLDListElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLDListElement]
+  @scala.inline
+  def create_dl(tagName: dl, parent: HTMLElement, className: String): HTMLDListElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDListElement]
+  
+  @scala.inline
+  def create_dt(tagName: dt): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_dt(tagName: dt, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_dt(tagName: dt, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_dt(tagName: dt, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_em(tagName: em): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_em(tagName: em, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_em(tagName: em, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_em(tagName: em, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_embed(tagName: embed): HTMLEmbedElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLEmbedElement]
+  @scala.inline
+  def create_embed(tagName: embed, parent: Unit, className: String): HTMLEmbedElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLEmbedElement]
+  @scala.inline
+  def create_embed(tagName: embed, parent: HTMLElement): HTMLEmbedElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLEmbedElement]
+  @scala.inline
+  def create_embed(tagName: embed, parent: HTMLElement, className: String): HTMLEmbedElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLEmbedElement]
+  
+  @scala.inline
+  def create_fieldset(tagName: fieldset): HTMLFieldSetElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLFieldSetElement]
+  @scala.inline
+  def create_fieldset(tagName: fieldset, parent: Unit, className: String): HTMLFieldSetElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFieldSetElement]
+  @scala.inline
+  def create_fieldset(tagName: fieldset, parent: HTMLElement): HTMLFieldSetElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLFieldSetElement]
+  @scala.inline
+  def create_fieldset(tagName: fieldset, parent: HTMLElement, className: String): HTMLFieldSetElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFieldSetElement]
+  
+  @scala.inline
+  def create_figcaption(tagName: figcaption): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_figcaption(tagName: figcaption, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_figcaption(tagName: figcaption, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_figcaption(tagName: figcaption, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_figure(tagName: figure): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_figure(tagName: figure, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_figure(tagName: figure, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_figure(tagName: figure, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_font(tagName: font): HTMLFontElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLFontElement]
+  @scala.inline
+  def create_font(tagName: font, parent: Unit, className: String): HTMLFontElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFontElement]
+  @scala.inline
+  def create_font(tagName: font, parent: HTMLElement): HTMLFontElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLFontElement]
+  @scala.inline
+  def create_font(tagName: font, parent: HTMLElement, className: String): HTMLFontElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFontElement]
+  
+  @scala.inline
+  def create_footer(tagName: footer): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_footer(tagName: footer, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_footer(tagName: footer, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_footer(tagName: footer, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_form(tagName: form): HTMLFormElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLFormElement]
+  @scala.inline
+  def create_form(tagName: form, parent: Unit, className: String): HTMLFormElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFormElement]
+  @scala.inline
+  def create_form(tagName: form, parent: HTMLElement): HTMLFormElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLFormElement]
+  @scala.inline
+  def create_form(tagName: form, parent: HTMLElement, className: String): HTMLFormElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFormElement]
+  
+  @scala.inline
+  def create_frame(tagName: frame): HTMLFrameElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLFrameElement]
+  @scala.inline
+  def create_frame(tagName: frame, parent: Unit, className: String): HTMLFrameElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFrameElement]
+  @scala.inline
+  def create_frame(tagName: frame, parent: HTMLElement): HTMLFrameElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLFrameElement]
+  @scala.inline
+  def create_frame(tagName: frame, parent: HTMLElement, className: String): HTMLFrameElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFrameElement]
+  
+  @scala.inline
+  def create_frameset(tagName: frameset): HTMLFrameSetElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLFrameSetElement]
+  @scala.inline
+  def create_frameset(tagName: frameset, parent: Unit, className: String): HTMLFrameSetElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFrameSetElement]
+  @scala.inline
+  def create_frameset(tagName: frameset, parent: HTMLElement): HTMLFrameSetElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLFrameSetElement]
+  @scala.inline
+  def create_frameset(tagName: frameset, parent: HTMLElement, className: String): HTMLFrameSetElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFrameSetElement]
+  
+  @scala.inline
+  def create_h1(tagName: h1): HTMLHeadingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h1(tagName: h1, parent: Unit, className: String): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h1(tagName: h1, parent: HTMLElement): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h1(tagName: h1, parent: HTMLElement, className: String): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  
+  @scala.inline
+  def create_h2(tagName: h2): HTMLHeadingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h2(tagName: h2, parent: Unit, className: String): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h2(tagName: h2, parent: HTMLElement): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h2(tagName: h2, parent: HTMLElement, className: String): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  
+  @scala.inline
+  def create_h3(tagName: h3): HTMLHeadingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h3(tagName: h3, parent: Unit, className: String): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h3(tagName: h3, parent: HTMLElement): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h3(tagName: h3, parent: HTMLElement, className: String): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  
+  @scala.inline
+  def create_h4(tagName: h4): HTMLHeadingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h4(tagName: h4, parent: Unit, className: String): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h4(tagName: h4, parent: HTMLElement): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h4(tagName: h4, parent: HTMLElement, className: String): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  
+  @scala.inline
+  def create_h5(tagName: h5): HTMLHeadingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h5(tagName: h5, parent: Unit, className: String): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h5(tagName: h5, parent: HTMLElement): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h5(tagName: h5, parent: HTMLElement, className: String): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  
+  @scala.inline
+  def create_h6(tagName: h6): HTMLHeadingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h6(tagName: h6, parent: Unit, className: String): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h6(tagName: h6, parent: HTMLElement): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  @scala.inline
+  def create_h6(tagName: h6, parent: HTMLElement, className: String): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
+  
+  @scala.inline
+  def create_head(tagName: head): HTMLHeadElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLHeadElement]
+  @scala.inline
+  def create_head(tagName: head, parent: Unit, className: String): HTMLHeadElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadElement]
+  @scala.inline
+  def create_head(tagName: head, parent: HTMLElement): HTMLHeadElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadElement]
+  @scala.inline
+  def create_head(tagName: head, parent: HTMLElement, className: String): HTMLHeadElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadElement]
+  
+  @scala.inline
+  def create_header(tagName: header): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_header(tagName: header, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_header(tagName: header, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_header(tagName: header, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_hgroup(tagName: hgroup): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_hgroup(tagName: hgroup, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_hgroup(tagName: hgroup, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_hgroup(tagName: hgroup, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_hr(tagName: hr): HTMLHRElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLHRElement]
+  @scala.inline
+  def create_hr(tagName: hr, parent: Unit, className: String): HTMLHRElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHRElement]
+  @scala.inline
+  def create_hr(tagName: hr, parent: HTMLElement): HTMLHRElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLHRElement]
+  @scala.inline
+  def create_hr(tagName: hr, parent: HTMLElement, className: String): HTMLHRElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHRElement]
+  
+  @scala.inline
+  def create_html(tagName: html): HTMLHtmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLHtmlElement]
+  @scala.inline
+  def create_html(tagName: html, parent: Unit, className: String): HTMLHtmlElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHtmlElement]
+  @scala.inline
+  def create_html(tagName: html, parent: HTMLElement): HTMLHtmlElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLHtmlElement]
+  @scala.inline
+  def create_html(tagName: html, parent: HTMLElement, className: String): HTMLHtmlElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHtmlElement]
+  
+  @scala.inline
+  def create_i(tagName: i): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_i(tagName: i, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_i(tagName: i, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_i(tagName: i, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_iframe(tagName: iframe): HTMLIFrameElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLIFrameElement]
+  @scala.inline
+  def create_iframe(tagName: iframe, parent: Unit, className: String): HTMLIFrameElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLIFrameElement]
+  @scala.inline
+  def create_iframe(tagName: iframe, parent: HTMLElement): HTMLIFrameElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLIFrameElement]
+  @scala.inline
+  def create_iframe(tagName: iframe, parent: HTMLElement, className: String): HTMLIFrameElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLIFrameElement]
+  
+  @scala.inline
+  def create_img(tagName: img): HTMLImageElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLImageElement]
+  @scala.inline
+  def create_img(tagName: img, parent: Unit, className: String): HTMLImageElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLImageElement]
+  @scala.inline
+  def create_img(tagName: img, parent: HTMLElement): HTMLImageElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLImageElement]
+  @scala.inline
+  def create_img(tagName: img, parent: HTMLElement, className: String): HTMLImageElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLImageElement]
+  
+  @scala.inline
+  def create_input(tagName: input): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
+  @scala.inline
+  def create_input(tagName: input, parent: Unit, className: String): HTMLInputElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLInputElement]
+  @scala.inline
+  def create_input(tagName: input, parent: HTMLElement): HTMLInputElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLInputElement]
+  @scala.inline
+  def create_input(tagName: input, parent: HTMLElement, className: String): HTMLInputElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLInputElement]
+  
+  @scala.inline
+  def create_ins(tagName: ins): HTMLModElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLModElement]
+  @scala.inline
+  def create_ins(tagName: ins, parent: Unit, className: String): HTMLModElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLModElement]
+  @scala.inline
+  def create_ins(tagName: ins, parent: HTMLElement): HTMLModElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLModElement]
+  @scala.inline
+  def create_ins(tagName: ins, parent: HTMLElement, className: String): HTMLModElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLModElement]
+  
+  @scala.inline
+  def create_kbd(tagName: kbd): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_kbd(tagName: kbd, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_kbd(tagName: kbd, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_kbd(tagName: kbd, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_label(tagName: label): HTMLLabelElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLLabelElement]
+  @scala.inline
+  def create_label(tagName: label, parent: Unit, className: String): HTMLLabelElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLLabelElement]
+  @scala.inline
+  def create_label(tagName: label, parent: HTMLElement): HTMLLabelElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLLabelElement]
+  @scala.inline
+  def create_label(tagName: label, parent: HTMLElement, className: String): HTMLLabelElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLLabelElement]
+  
+  @scala.inline
+  def create_legend(tagName: legend): HTMLLegendElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLLegendElement]
+  @scala.inline
+  def create_legend(tagName: legend, parent: Unit, className: String): HTMLLegendElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLLegendElement]
+  @scala.inline
+  def create_legend(tagName: legend, parent: HTMLElement): HTMLLegendElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLLegendElement]
+  @scala.inline
+  def create_legend(tagName: legend, parent: HTMLElement, className: String): HTMLLegendElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLLegendElement]
+  
+  @scala.inline
+  def create_li(tagName: li): HTMLLIElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLLIElement]
+  @scala.inline
+  def create_li(tagName: li, parent: Unit, className: String): HTMLLIElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLLIElement]
+  @scala.inline
+  def create_li(tagName: li, parent: HTMLElement): HTMLLIElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLLIElement]
+  @scala.inline
+  def create_li(tagName: li, parent: HTMLElement, className: String): HTMLLIElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLLIElement]
+  
+  @scala.inline
+  def create_link(tagName: link): HTMLLinkElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLLinkElement]
+  @scala.inline
+  def create_link(tagName: link, parent: Unit, className: String): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  @scala.inline
+  def create_link(tagName: link, parent: HTMLElement): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  @scala.inline
+  def create_link(tagName: link, parent: HTMLElement, className: String): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  
+  @scala.inline
+  def create_main(tagName: main): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_main(tagName: main, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_main(tagName: main, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_main(tagName: main, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_map(tagName: map): HTMLMapElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLMapElement]
+  @scala.inline
+  def create_map(tagName: map, parent: Unit, className: String): HTMLMapElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLMapElement]
+  @scala.inline
+  def create_map(tagName: map, parent: HTMLElement): HTMLMapElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLMapElement]
+  @scala.inline
+  def create_map(tagName: map, parent: HTMLElement, className: String): HTMLMapElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLMapElement]
+  
+  @scala.inline
+  def create_mark(tagName: mark): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_mark(tagName: mark, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_mark(tagName: mark, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_mark(tagName: mark, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_marquee(tagName: marquee): HTMLMarqueeElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLMarqueeElement]
+  @scala.inline
+  def create_marquee(tagName: marquee, parent: Unit, className: String): HTMLMarqueeElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLMarqueeElement]
+  @scala.inline
+  def create_marquee(tagName: marquee, parent: HTMLElement): HTMLMarqueeElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLMarqueeElement]
+  @scala.inline
+  def create_marquee(tagName: marquee, parent: HTMLElement, className: String): HTMLMarqueeElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLMarqueeElement]
+  
+  @scala.inline
+  def create_menu(tagName: menu): HTMLMenuElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLMenuElement]
+  @scala.inline
+  def create_menu(tagName: menu, parent: Unit, className: String): HTMLMenuElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLMenuElement]
+  @scala.inline
+  def create_menu(tagName: menu, parent: HTMLElement): HTMLMenuElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLMenuElement]
+  @scala.inline
+  def create_menu(tagName: menu, parent: HTMLElement, className: String): HTMLMenuElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLMenuElement]
+  
+  @scala.inline
+  def create_meta(tagName: meta): HTMLMetaElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLMetaElement]
+  @scala.inline
+  def create_meta(tagName: meta, parent: Unit, className: String): HTMLMetaElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLMetaElement]
+  @scala.inline
+  def create_meta(tagName: meta, parent: HTMLElement): HTMLMetaElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLMetaElement]
+  @scala.inline
+  def create_meta(tagName: meta, parent: HTMLElement, className: String): HTMLMetaElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLMetaElement]
+  
+  @scala.inline
+  def create_meter(tagName: meter): HTMLMeterElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLMeterElement]
+  @scala.inline
+  def create_meter(tagName: meter, parent: Unit, className: String): HTMLMeterElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLMeterElement]
+  @scala.inline
+  def create_meter(tagName: meter, parent: HTMLElement): HTMLMeterElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLMeterElement]
+  @scala.inline
+  def create_meter(tagName: meter, parent: HTMLElement, className: String): HTMLMeterElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLMeterElement]
+  
+  @scala.inline
+  def create_nav(tagName: nav): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_nav(tagName: nav, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_nav(tagName: nav, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_nav(tagName: nav, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_noscript(tagName: noscript): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_noscript(tagName: noscript, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_noscript(tagName: noscript, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_noscript(tagName: noscript, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_object(tagName: `object`): HTMLObjectElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLObjectElement]
+  @scala.inline
+  def create_object(tagName: `object`, parent: Unit, className: String): HTMLObjectElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLObjectElement]
+  @scala.inline
+  def create_object(tagName: `object`, parent: HTMLElement): HTMLObjectElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLObjectElement]
+  @scala.inline
+  def create_object(tagName: `object`, parent: HTMLElement, className: String): HTMLObjectElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLObjectElement]
+  
+  @scala.inline
+  def create_ol(tagName: ol): HTMLOListElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLOListElement]
+  @scala.inline
+  def create_ol(tagName: ol, parent: Unit, className: String): HTMLOListElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLOListElement]
+  @scala.inline
+  def create_ol(tagName: ol, parent: HTMLElement): HTMLOListElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLOListElement]
+  @scala.inline
+  def create_ol(tagName: ol, parent: HTMLElement, className: String): HTMLOListElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLOListElement]
+  
+  @scala.inline
+  def create_optgroup(tagName: optgroup): HTMLOptGroupElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLOptGroupElement]
+  @scala.inline
+  def create_optgroup(tagName: optgroup, parent: Unit, className: String): HTMLOptGroupElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLOptGroupElement]
+  @scala.inline
+  def create_optgroup(tagName: optgroup, parent: HTMLElement): HTMLOptGroupElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLOptGroupElement]
+  @scala.inline
+  def create_optgroup(tagName: optgroup, parent: HTMLElement, className: String): HTMLOptGroupElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLOptGroupElement]
+  
+  @scala.inline
+  def create_option(tagName: option): HTMLOptionElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLOptionElement]
+  @scala.inline
+  def create_option(tagName: option, parent: Unit, className: String): HTMLOptionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLOptionElement]
+  @scala.inline
+  def create_option(tagName: option, parent: HTMLElement): HTMLOptionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLOptionElement]
+  @scala.inline
+  def create_option(tagName: option, parent: HTMLElement, className: String): HTMLOptionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLOptionElement]
+  
+  @scala.inline
+  def create_output(tagName: output): HTMLOutputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLOutputElement]
+  @scala.inline
+  def create_output(tagName: output, parent: Unit, className: String): HTMLOutputElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLOutputElement]
+  @scala.inline
+  def create_output(tagName: output, parent: HTMLElement): HTMLOutputElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLOutputElement]
+  @scala.inline
+  def create_output(tagName: output, parent: HTMLElement, className: String): HTMLOutputElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLOutputElement]
+  
+  @scala.inline
+  def create_p(tagName: p): HTMLParagraphElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLParagraphElement]
+  @scala.inline
+  def create_p(tagName: p, parent: Unit, className: String): HTMLParagraphElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLParagraphElement]
+  @scala.inline
+  def create_p(tagName: p, parent: HTMLElement): HTMLParagraphElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLParagraphElement]
+  @scala.inline
+  def create_p(tagName: p, parent: HTMLElement, className: String): HTMLParagraphElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLParagraphElement]
+  
+  @scala.inline
+  def create_param(tagName: param): HTMLParamElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLParamElement]
+  @scala.inline
+  def create_param(tagName: param, parent: Unit, className: String): HTMLParamElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLParamElement]
+  @scala.inline
+  def create_param(tagName: param, parent: HTMLElement): HTMLParamElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLParamElement]
+  @scala.inline
+  def create_param(tagName: param, parent: HTMLElement, className: String): HTMLParamElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLParamElement]
+  
+  @scala.inline
+  def create_picture(tagName: picture): HTMLPictureElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLPictureElement]
+  @scala.inline
+  def create_picture(tagName: picture, parent: Unit, className: String): HTMLPictureElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLPictureElement]
+  @scala.inline
+  def create_picture(tagName: picture, parent: HTMLElement): HTMLPictureElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLPictureElement]
+  @scala.inline
+  def create_picture(tagName: picture, parent: HTMLElement, className: String): HTMLPictureElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLPictureElement]
+  
+  @scala.inline
+  def create_pre(tagName: pre): HTMLPreElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLPreElement]
+  @scala.inline
+  def create_pre(tagName: pre, parent: Unit, className: String): HTMLPreElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLPreElement]
+  @scala.inline
+  def create_pre(tagName: pre, parent: HTMLElement): HTMLPreElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLPreElement]
+  @scala.inline
+  def create_pre(tagName: pre, parent: HTMLElement, className: String): HTMLPreElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLPreElement]
+  
+  @scala.inline
+  def create_progress(tagName: progress): HTMLProgressElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLProgressElement]
+  @scala.inline
+  def create_progress(tagName: progress, parent: Unit, className: String): HTMLProgressElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLProgressElement]
+  @scala.inline
+  def create_progress(tagName: progress, parent: HTMLElement): HTMLProgressElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLProgressElement]
+  @scala.inline
+  def create_progress(tagName: progress, parent: HTMLElement, className: String): HTMLProgressElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLProgressElement]
+  
+  @scala.inline
+  def create_q(tagName: q): HTMLQuoteElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLQuoteElement]
+  @scala.inline
+  def create_q(tagName: q, parent: Unit, className: String): HTMLQuoteElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLQuoteElement]
+  @scala.inline
+  def create_q(tagName: q, parent: HTMLElement): HTMLQuoteElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLQuoteElement]
+  @scala.inline
+  def create_q(tagName: q, parent: HTMLElement, className: String): HTMLQuoteElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLQuoteElement]
+  
+  @scala.inline
+  def create_rp(tagName: rp): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_rp(tagName: rp, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_rp(tagName: rp, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_rp(tagName: rp, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_rt(tagName: rt): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_rt(tagName: rt, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_rt(tagName: rt, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_rt(tagName: rt, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_ruby(tagName: ruby): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_ruby(tagName: ruby, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_ruby(tagName: ruby, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_ruby(tagName: ruby, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_s(tagName: s): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_s(tagName: s, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_s(tagName: s, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_s(tagName: s, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_samp(tagName: samp): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_samp(tagName: samp, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_samp(tagName: samp, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_samp(tagName: samp, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_script(tagName: script): HTMLScriptElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLScriptElement]
+  @scala.inline
+  def create_script(tagName: script, parent: Unit, className: String): HTMLScriptElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLScriptElement]
+  @scala.inline
+  def create_script(tagName: script, parent: HTMLElement): HTMLScriptElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLScriptElement]
+  @scala.inline
+  def create_script(tagName: script, parent: HTMLElement, className: String): HTMLScriptElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLScriptElement]
+  
+  @scala.inline
+  def create_section(tagName: section): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_section(tagName: section, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_section(tagName: section, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_section(tagName: section, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_select(tagName: select): HTMLSelectElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLSelectElement]
+  @scala.inline
+  def create_select(tagName: select, parent: Unit, className: String): HTMLSelectElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLSelectElement]
+  @scala.inline
+  def create_select(tagName: select, parent: HTMLElement): HTMLSelectElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLSelectElement]
+  @scala.inline
+  def create_select(tagName: select, parent: HTMLElement, className: String): HTMLSelectElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLSelectElement]
+  
+  @scala.inline
+  def create_slot(tagName: slot): HTMLSlotElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLSlotElement]
+  @scala.inline
+  def create_slot(tagName: slot, parent: Unit, className: String): HTMLSlotElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLSlotElement]
+  @scala.inline
+  def create_slot(tagName: slot, parent: HTMLElement): HTMLSlotElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLSlotElement]
+  @scala.inline
+  def create_slot(tagName: slot, parent: HTMLElement, className: String): HTMLSlotElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLSlotElement]
+  
+  @scala.inline
+  def create_small(tagName: small): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_small(tagName: small, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_small(tagName: small, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_small(tagName: small, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_source(tagName: source): HTMLSourceElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLSourceElement]
+  @scala.inline
+  def create_source(tagName: source, parent: Unit, className: String): HTMLSourceElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLSourceElement]
+  @scala.inline
+  def create_source(tagName: source, parent: HTMLElement): HTMLSourceElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLSourceElement]
+  @scala.inline
+  def create_source(tagName: source, parent: HTMLElement, className: String): HTMLSourceElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLSourceElement]
+  
+  @scala.inline
+  def create_span(tagName: span): HTMLSpanElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLSpanElement]
+  @scala.inline
+  def create_span(tagName: span, parent: Unit, className: String): HTMLSpanElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLSpanElement]
+  @scala.inline
+  def create_span(tagName: span, parent: HTMLElement): HTMLSpanElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLSpanElement]
+  @scala.inline
+  def create_span(tagName: span, parent: HTMLElement, className: String): HTMLSpanElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLSpanElement]
+  
+  @scala.inline
+  def create_strong(tagName: strong): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_strong(tagName: strong, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_strong(tagName: strong, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_strong(tagName: strong, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_style(tagName: style): HTMLStyleElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLStyleElement]
+  @scala.inline
+  def create_style(tagName: style, parent: Unit, className: String): HTMLStyleElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLStyleElement]
+  @scala.inline
+  def create_style(tagName: style, parent: HTMLElement): HTMLStyleElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLStyleElement]
+  @scala.inline
+  def create_style(tagName: style, parent: HTMLElement, className: String): HTMLStyleElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLStyleElement]
+  
+  @scala.inline
+  def create_sub(tagName: sub): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_sub(tagName: sub, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_sub(tagName: sub, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_sub(tagName: sub, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_summary(tagName: summary): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_summary(tagName: summary, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_summary(tagName: summary, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_summary(tagName: summary, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_sup(tagName: sup): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_sup(tagName: sup, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_sup(tagName: sup, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_sup(tagName: sup, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_table(tagName: table): HTMLTableElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableElement]
+  @scala.inline
+  def create_table(tagName: table, parent: Unit, className: String): HTMLTableElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableElement]
+  @scala.inline
+  def create_table(tagName: table, parent: HTMLElement): HTMLTableElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableElement]
+  @scala.inline
+  def create_table(tagName: table, parent: HTMLElement, className: String): HTMLTableElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableElement]
+  
+  @scala.inline
+  def create_tbody(tagName: tbody): HTMLTableSectionElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableSectionElement]
+  @scala.inline
+  def create_tbody(tagName: tbody, parent: Unit, className: String): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
+  @scala.inline
+  def create_tbody(tagName: tbody, parent: HTMLElement): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
+  @scala.inline
+  def create_tbody(tagName: tbody, parent: HTMLElement, className: String): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
+  
+  @scala.inline
+  def create_td(tagName: td): HTMLTableDataCellElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableDataCellElement]
+  @scala.inline
+  def create_td(tagName: td, parent: Unit, className: String): HTMLTableDataCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableDataCellElement]
+  @scala.inline
+  def create_td(tagName: td, parent: HTMLElement): HTMLTableDataCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableDataCellElement]
+  @scala.inline
+  def create_td(tagName: td, parent: HTMLElement, className: String): HTMLTableDataCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableDataCellElement]
+  
+  @scala.inline
+  def create_template(tagName: template): HTMLTemplateElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTemplateElement]
+  @scala.inline
+  def create_template(tagName: template, parent: Unit, className: String): HTMLTemplateElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTemplateElement]
+  @scala.inline
+  def create_template(tagName: template, parent: HTMLElement): HTMLTemplateElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTemplateElement]
+  @scala.inline
+  def create_template(tagName: template, parent: HTMLElement, className: String): HTMLTemplateElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTemplateElement]
+  
+  @scala.inline
+  def create_textarea(tagName: textarea): HTMLTextAreaElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTextAreaElement]
+  @scala.inline
+  def create_textarea(tagName: textarea, parent: Unit, className: String): HTMLTextAreaElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTextAreaElement]
+  @scala.inline
+  def create_textarea(tagName: textarea, parent: HTMLElement): HTMLTextAreaElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTextAreaElement]
+  @scala.inline
+  def create_textarea(tagName: textarea, parent: HTMLElement, className: String): HTMLTextAreaElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTextAreaElement]
+  
+  @scala.inline
+  def create_tfoot(tagName: tfoot): HTMLTableSectionElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableSectionElement]
+  @scala.inline
+  def create_tfoot(tagName: tfoot, parent: Unit, className: String): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
+  @scala.inline
+  def create_tfoot(tagName: tfoot, parent: HTMLElement): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
+  @scala.inline
+  def create_tfoot(tagName: tfoot, parent: HTMLElement, className: String): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
+  
+  @scala.inline
+  def create_th(tagName: th): HTMLTableHeaderCellElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableHeaderCellElement]
+  @scala.inline
+  def create_th(tagName: th, parent: Unit, className: String): HTMLTableHeaderCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableHeaderCellElement]
+  @scala.inline
+  def create_th(tagName: th, parent: HTMLElement): HTMLTableHeaderCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableHeaderCellElement]
+  @scala.inline
+  def create_th(tagName: th, parent: HTMLElement, className: String): HTMLTableHeaderCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableHeaderCellElement]
+  
+  @scala.inline
+  def create_thead(tagName: thead): HTMLTableSectionElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableSectionElement]
+  @scala.inline
+  def create_thead(tagName: thead, parent: Unit, className: String): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
+  @scala.inline
+  def create_thead(tagName: thead, parent: HTMLElement): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
+  @scala.inline
+  def create_thead(tagName: thead, parent: HTMLElement, className: String): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
+  
+  @scala.inline
+  def create_time(tagName: time): HTMLTimeElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTimeElement]
+  @scala.inline
+  def create_time(tagName: time, parent: Unit, className: String): HTMLTimeElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTimeElement]
+  @scala.inline
+  def create_time(tagName: time, parent: HTMLElement): HTMLTimeElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTimeElement]
+  @scala.inline
+  def create_time(tagName: time, parent: HTMLElement, className: String): HTMLTimeElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTimeElement]
+  
+  @scala.inline
+  def create_title(tagName: title): HTMLTitleElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTitleElement]
+  @scala.inline
+  def create_title(tagName: title, parent: Unit, className: String): HTMLTitleElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTitleElement]
+  @scala.inline
+  def create_title(tagName: title, parent: HTMLElement): HTMLTitleElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTitleElement]
+  @scala.inline
+  def create_title(tagName: title, parent: HTMLElement, className: String): HTMLTitleElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTitleElement]
+  
+  @scala.inline
+  def create_tr(tagName: tr): HTMLTableRowElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableRowElement]
+  @scala.inline
+  def create_tr(tagName: tr, parent: Unit, className: String): HTMLTableRowElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableRowElement]
+  @scala.inline
+  def create_tr(tagName: tr, parent: HTMLElement): HTMLTableRowElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableRowElement]
+  @scala.inline
+  def create_tr(tagName: tr, parent: HTMLElement, className: String): HTMLTableRowElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableRowElement]
+  
+  @scala.inline
+  def create_track(tagName: track): HTMLTrackElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTrackElement]
+  @scala.inline
+  def create_track(tagName: track, parent: Unit, className: String): HTMLTrackElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTrackElement]
+  @scala.inline
+  def create_track(tagName: track, parent: HTMLElement): HTMLTrackElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTrackElement]
+  @scala.inline
+  def create_track(tagName: track, parent: HTMLElement, className: String): HTMLTrackElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTrackElement]
+  
+  @scala.inline
+  def create_u(tagName: u): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_u(tagName: u, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_u(tagName: u, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_u(tagName: u, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_ul(tagName: ul): HTMLUListElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLUListElement]
+  @scala.inline
+  def create_ul(tagName: ul, parent: Unit, className: String): HTMLUListElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLUListElement]
+  @scala.inline
+  def create_ul(tagName: ul, parent: HTMLElement): HTMLUListElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLUListElement]
+  @scala.inline
+  def create_ul(tagName: ul, parent: HTMLElement, className: String): HTMLUListElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLUListElement]
+  
+  @scala.inline
+  def create_var(tagName: `var`): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_var(tagName: `var`, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_var(tagName: `var`, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_var(tagName: `var`, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
+  @scala.inline
+  def create_video(tagName: video): HTMLVideoElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLVideoElement]
+  @scala.inline
+  def create_video(tagName: video, parent: Unit, className: String): HTMLVideoElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLVideoElement]
+  @scala.inline
+  def create_video(tagName: video, parent: HTMLElement): HTMLVideoElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLVideoElement]
+  @scala.inline
+  def create_video(tagName: video, parent: HTMLElement, className: String): HTMLVideoElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLVideoElement]
+  
+  @scala.inline
+  def create_wbr(tagName: wbr): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_wbr(tagName: wbr, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_wbr(tagName: wbr, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def create_wbr(tagName: wbr, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   // this
   /**
     * 清空DOM元素
     * @param dom DOM元素
     */
-  @JSGlobal("AMap.DomUtil.empty")
-  @js.native
-  def empty(dom: HTMLElement): Unit = js.native
+  @scala.inline
+  def empty(dom: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 获取DOM元素的大小
     * @param dom DOM元素
     */
-  @JSGlobal("AMap.DomUtil.getViewport")
-  @js.native
-  def getViewport(dom: HTMLElement): typings.amapJsApi.AMap.Size = js.native
+  @scala.inline
+  def getViewport(dom: HTMLElement): typings.amapJsApi.AMap.Size = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewport")(dom.asInstanceOf[js.Any]).asInstanceOf[typings.amapJsApi.AMap.Size]
   
   /**
     * 获取DOM元素距离窗口左上角的距离
     * @param dom DOM元素
     */
-  @JSGlobal("AMap.DomUtil.getViewportOffset")
-  @js.native
-  def getViewportOffset(dom: HTMLElement): typings.amapJsApi.AMap.Pixel = js.native
+  @scala.inline
+  def getViewportOffset(dom: HTMLElement): typings.amapJsApi.AMap.Pixel = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewportOffset")(dom.asInstanceOf[js.Any]).asInstanceOf[typings.amapJsApi.AMap.Pixel]
   
   /**
     * DOM元素是否包含className
     * @param dom DOM元素
     * @param className 类名
     */
-  @JSGlobal("AMap.DomUtil.hasClass")
-  @js.native
-  def hasClass(dom: HTMLElement, className: String): Boolean = js.native
+  @scala.inline
+  def hasClass(dom: HTMLElement, className: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(dom.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * 将DOM元素从父节点删除
     * @param dom DOM元素
     */
-  @JSGlobal("AMap.DomUtil.remove")
-  @js.native
-  def remove(dom: HTMLElement): Unit = js.native
+  @scala.inline
+  def remove(dom: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 给DOM元素删除一个className
     * @param dom DOM元素
     * @param className 类名
     */
-  @JSGlobal("AMap.DomUtil.removeClass")
-  @js.native
-  def removeClass(dom: HTMLElement, className: String): Unit = js.native
+  @scala.inline
+  def removeClass(dom: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(dom.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * 给DOM元素旋转一个角度，以center为中心，center以元素左上角为坐标原点
@@ -1702,43 +1340,36 @@ object DomUtil {
     * @param deg 旋转角度
     * @param origin 旋转中心
     */
-  @JSGlobal("AMap.DomUtil.rotate")
-  @js.native
-  def rotate(dom: HTMLElement, deg: Double): Unit = js.native
-  @JSGlobal("AMap.DomUtil.rotate")
-  @js.native
-  def rotate(dom: HTMLElement, deg: Double, origin: X): Unit = js.native
+  @scala.inline
+  def rotate(dom: HTMLElement, deg: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(dom.asInstanceOf[js.Any], deg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def rotate(dom: HTMLElement, deg: Double, origin: X): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(dom.asInstanceOf[js.Any], deg.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * 给DOM元素设置为className样式
     * @param dom DOM元素
     * @param className 类名
     */
-  @JSGlobal("AMap.DomUtil.setClass")
-  @js.native
-  def setClass(dom: HTMLElement): Unit = js.native
-  @JSGlobal("AMap.DomUtil.setClass")
-  @js.native
-  def setClass(dom: HTMLElement, className: String): Unit = js.native
+  @scala.inline
+  def setClass(dom: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setClass")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setClass(dom: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setClass")(dom.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("AMap.DomUtil.setCss")
-  @js.native
-  def setCss(dom: js.Array[HTMLElement], style: PartialCSSStyleDeclaratio): TypeofDomUtil = js.native
+  @scala.inline
+  def setCss(dom: js.Array[HTMLElement], style: PartialCSSStyleDeclaratio): TypeofDomUtil = (^.asInstanceOf[js.Dynamic].applyDynamic("setCss")(dom.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[TypeofDomUtil]
   /**
     * 给DOM元素删除一组样式，Object同样式表
     * @param dom DOM元素
     * @param style 样式
     */
-  @JSGlobal("AMap.DomUtil.setCss")
-  @js.native
-  def setCss(dom: HTMLElement, style: PartialCSSStyleDeclaratio): TypeofDomUtil = js.native
+  @scala.inline
+  def setCss(dom: HTMLElement, style: PartialCSSStyleDeclaratio): TypeofDomUtil = (^.asInstanceOf[js.Dynamic].applyDynamic("setCss")(dom.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[TypeofDomUtil]
   
   /**
     * 给DOM元素设定一个透明度
     * @param dom DOM元素
     * @param opacity 透明度(0-1)
     */
-  @JSGlobal("AMap.DomUtil.setOpacity")
-  @js.native
-  def setOpacity(dom: HTMLElement, opacity: Double): Unit = js.native
+  @scala.inline
+  def setOpacity(dom: HTMLElement, opacity: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOpacity")(dom.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

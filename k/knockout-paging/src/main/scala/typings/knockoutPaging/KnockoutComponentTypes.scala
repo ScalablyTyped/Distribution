@@ -5,7 +5,6 @@ import typings.std.DocumentFragment
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
@@ -15,10 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object KnockoutComponentTypes {
   
   // common AMD type
-  @js.native
   trait AMDModule extends StObject {
     
-    var require: String = js.native
+    var require: String
   }
   object AMDModule {
     
@@ -36,12 +34,11 @@ object KnockoutComponentTypes {
     }
   }
   
-  @js.native
   trait ComponentConfig extends StObject {
     
-    var createViewModel: js.UndefOr[js.Any] = js.native
+    var createViewModel: js.UndefOr[js.Any] = js.undefined
     
-    var template: js.Any = js.native
+    var template: js.Any
   }
   object ComponentConfig {
     
@@ -65,12 +62,11 @@ object KnockoutComponentTypes {
     }
   }
   
-  @js.native
   trait ComponentInfo extends StObject {
     
-    var element: Node = js.native
+    var element: Node
     
-    var templateNodes: js.Array[Node] = js.native
+    var templateNodes: js.Array[Node]
   }
   object ComponentInfo {
     
@@ -94,16 +90,15 @@ object KnockoutComponentTypes {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var synchronous: js.UndefOr[Boolean] = js.native
+    var synchronous: js.UndefOr[Boolean] = js.undefined
     
-    var template: String | js.Array[Node] | DocumentFragment | TemplateElement | AMDModule = js.native
+    var template: String | js.Array[Node] | DocumentFragment | TemplateElement | AMDModule
     
     var viewModel: js.UndefOr[
         ViewModelFunction | ViewModelSharedInstance | ViewModelFactoryFunction | AMDModule
-      ] = js.native
+      ] = js.undefined
   }
   object Config {
     
@@ -139,12 +134,11 @@ object KnockoutComponentTypes {
     }
   }
   
-  @js.native
   trait Definition extends StObject {
     
-    var createViewModel: js.UndefOr[js.Function2[/* params */ js.Any, /* options */ Element, _]] = js.native
+    var createViewModel: js.UndefOr[js.Function2[/* params */ js.Any, /* options */ Element, js.Any]] = js.undefined
     
-    var template: js.Array[Node] = js.native
+    var template: js.Array[Node]
   }
   object Definition {
     
@@ -158,7 +152,7 @@ object KnockoutComponentTypes {
     implicit class DefinitionMutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCreateViewModel(value: (/* params */ js.Any, /* options */ Element) => _): Self = StObject.set(x, "createViewModel", js.Any.fromFunction2(value))
+      def setCreateViewModel(value: (/* params */ js.Any, /* options */ Element) => js.Any): Self = StObject.set(x, "createViewModel", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCreateViewModelUndefined: Self = StObject.set(x, "createViewModel", js.undefined)
@@ -171,10 +165,8 @@ object KnockoutComponentTypes {
     }
   }
   
-  @js.native
   trait EmptyConfig extends StObject
   
-  @js.native
   trait Loader extends StObject {
     
     var getConfig: js.UndefOr[
@@ -183,7 +175,7 @@ object KnockoutComponentTypes {
           /* callback */ js.Function1[/* result */ ComponentConfig, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var loadComponent: js.UndefOr[
         js.Function3[
@@ -192,7 +184,7 @@ object KnockoutComponentTypes {
           /* callback */ js.Function1[/* result */ Definition, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var loadTemplate: js.UndefOr[
         js.Function3[
@@ -201,7 +193,7 @@ object KnockoutComponentTypes {
           /* callback */ js.Function1[/* result */ js.Array[Node], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var loadViewModel: js.UndefOr[
         js.Function3[
@@ -210,9 +202,9 @@ object KnockoutComponentTypes {
           /* callback */ js.Function1[/* result */ js.Any, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var suppressLoaderExceptions: js.UndefOr[Boolean] = js.native
+    var suppressLoaderExceptions: js.UndefOr[Boolean] = js.undefined
   }
   object Loader {
     
@@ -265,10 +257,9 @@ object KnockoutComponentTypes {
     }
   }
   
-  @js.native
   trait TemplateElement extends StObject {
     
-    var element: String | Node = js.native
+    var element: String | Node
   }
   object TemplateElement {
     
@@ -290,18 +281,17 @@ object KnockoutComponentTypes {
   trait ViewModelFactoryFunction extends StObject {
     
     def createViewModel(): js.Any = js.native
-    def createViewModel(params: js.UndefOr[scala.Nothing], componentInfo: ComponentInfo): js.Any = js.native
     def createViewModel(params: js.Any): js.Any = js.native
     def createViewModel(params: js.Any, componentInfo: ComponentInfo): js.Any = js.native
+    def createViewModel(params: Unit, componentInfo: ComponentInfo): js.Any = js.native
   }
   
   // viewmodel types
   type ViewModelFunction = js.Function1[/* params */ js.UndefOr[js.Any], js.Any]
   
-  @js.native
   trait ViewModelSharedInstance extends StObject {
     
-    var instance: js.Any = js.native
+    var instance: js.Any
   }
   object ViewModelSharedInstance {
     

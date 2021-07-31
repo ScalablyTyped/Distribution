@@ -3,24 +3,24 @@ package typings.reactHotkeys.mod
 import typings.react.mod.HTMLAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HotKeysOverrideProps extends HTMLAttributes[HotKeys] {
+trait HotKeysOverrideProps
+  extends StObject
+     with HTMLAttributes[HotKeys] {
   
   /**
     * The blacklist of keys that keyevents should be not ignored. i.e. if you place
     * a key in this list, all events related to it will be still be observed by react
     * hotkeys
     */
-  var except: js.UndefOr[ListOfKeys] = js.native
+  var except: js.UndefOr[ListOfKeys] = js.undefined
   
   /**
     * The whitelist of keys that keyevents should be ignored. i.e. if you place
     * a key in this list, all events related to it will be ignored by react hotkeys
     */
-  var only: js.UndefOr[ListOfKeys] = js.native
+  var only: js.UndefOr[ListOfKeys] = js.undefined
 }
 object HotKeysOverrideProps {
   

@@ -3,21 +3,21 @@ package typings.vsoNodeApi.workInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BoardChart extends BoardChartReference {
+trait BoardChart
+  extends StObject
+     with BoardChartReference {
   
   /**
     * The links for the resource
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * The settings for the resource
     */
-  var settings: StringDictionary[js.Any] = js.native
+  var settings: StringDictionary[js.Any]
 }
 object BoardChart {
   

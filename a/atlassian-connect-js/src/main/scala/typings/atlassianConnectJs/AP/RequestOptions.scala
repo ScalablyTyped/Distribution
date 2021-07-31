@@ -12,51 +12,49 @@ import typings.atlassianConnectJs.atlassianConnectJsStrings.PUT
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestOptions extends StObject {
   
   /**
     * If the request should be cached.
     */
-  var cache: Boolean = js.native
+  var cache: Boolean
   
   /**
     * The content-type string value of the entity body, above; required when data is supplied.
     */
-  var contentType: String = js.native
+  var contentType: String
   
   /**
     * The body of the request; required if type is 'POST' or 'PUT'. Optionally, for 'GET' this will append the object as key=value pairs to the end of the URL query string.
     */
-  var data: String | js.Object = js.native
+  var data: String | js.Object
   
   /**
     * An optional callback function executed when a HTTP status error code is returned.
     */
-  def error(xhr: XMLHttpRequest, statusText: String, errorThrown: js.Any): Unit = js.native
+  def error(xhr: XMLHttpRequest, statusText: String, errorThrown: js.Any): Unit
   
   /**
     * If this is set to true, the developer acknowledges that the API endpoint which is being called may be in beta state, and thus may also have a shorter deprecation cycle than stable APIs.
     */
-  var experimental: Boolean = js.native
+  var experimental: Boolean
   
   /**
     * An object containing headers to set; supported headers are: 'Accept', 'If-Match' and 'If-None-Match'.
     */
-  var headers: Accept = js.native
+  var headers: Accept
   
   /**
     * An optional callback function executed on a 200 success status code.
     */
-  def success(response: String): Unit = js.native
+  def success(response: String): Unit
   
   /**
     * The HTTP method name.
     */
-  var `type`: GET | HEAD | POST | PUT | DELETE | CONNECT | OPTIONS | PATCH = js.native
+  var `type`: GET | HEAD | POST | PUT | DELETE | CONNECT | OPTIONS | PATCH
 }
 object RequestOptions {
   

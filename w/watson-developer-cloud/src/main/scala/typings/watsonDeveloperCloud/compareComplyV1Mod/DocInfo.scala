@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about the parsed input document. */
-@js.native
 trait DocInfo extends StObject {
   
   /** The MD5 hash of the input document. */
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
   /** The full text of the parsed document in HTML format. */
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
   /** The title of the parsed document. If the service did not detect a title, the value of this element is `null`. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object DocInfo {
   

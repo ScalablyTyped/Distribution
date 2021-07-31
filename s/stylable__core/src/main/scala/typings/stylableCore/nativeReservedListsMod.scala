@@ -2,14 +2,16 @@ package typings.stylableCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nativeReservedListsMod {
   
-  @JSImport("@stylable/core/cjs/native-reserved-lists", "isCssNativeFunction")
+  @JSImport("@stylable/core/cjs/native-reserved-lists", JSImport.Namespace)
   @js.native
-  def isCssNativeFunction(name: String): /* is @stylable/core.@stylable/core/cjs/native-reserved-lists.nativeFunctions */ Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isCssNativeFunction(name: String): /* is @stylable/core.@stylable/core/cjs/native-reserved-lists.nativeFunctions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCssNativeFunction")(name.asInstanceOf[js.Any]).asInstanceOf[/* is @stylable/core.@stylable/core/cjs/native-reserved-lists.nativeFunctions */ Boolean]
   
   object nativeFunctionsDic {
     

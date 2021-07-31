@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -48,9 +47,8 @@ object LinkButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.create")
-  @js.native
-  def create(model: IModel): LinkButton = js.native
+  @scala.inline
+  def create(model: IModel): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -61,9 +59,8 @@ object LinkButton {
     *  6.7.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): LinkButton = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -74,9 +71,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): LinkButton = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -87,9 +83,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): LinkButton = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -100,9 +95,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): LinkButton = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -113,9 +107,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): LinkButton = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -126,9 +119,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): LinkButton = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -139,9 +131,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): LinkButton = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -152,9 +143,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): LinkButton = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -165,9 +155,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): LinkButton = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -178,9 +167,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): LinkButton = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -191,9 +179,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): LinkButton = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -204,9 +191,8 @@ object LinkButton {
     *  7.1.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): LinkButton = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -217,9 +203,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): LinkButton = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -230,9 +215,8 @@ object LinkButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): LinkButton = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -243,9 +227,8 @@ object LinkButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): LinkButton = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -256,9 +239,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): LinkButton = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -269,9 +251,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): LinkButton = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -282,9 +263,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): LinkButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -295,9 +275,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): LinkButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -308,9 +287,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): LinkButton = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -321,9 +299,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): LinkButton = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -334,9 +311,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): LinkButton = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -347,9 +323,8 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): LinkButton = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.structureTypeName")

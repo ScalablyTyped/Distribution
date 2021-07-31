@@ -4,28 +4,28 @@ import typings.sharepoint.anon.Bottom
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IEditControlCellContext extends IEditActorCellContext {
+trait IEditControlCellContext
+  extends StObject
+     with IEditActorCellContext {
   
-  def Hide(element: HTMLElement): Unit = js.native
+  def Hide(element: HTMLElement): Unit
   
-  def NotifyEditComplete(): Unit = js.native
+  def NotifyEditComplete(): Unit
   
-  def NotifyExpandControl(): Unit = js.native
+  def NotifyExpandControl(): Unit
   
-  def Show(element: HTMLElement): Unit = js.native
+  def Show(element: HTMLElement): Unit
   
-  var cellHeight: Double = js.native
+  var cellHeight: Double
   
   // TODO: Determine correct type
-  var cellRect: js.Any = js.native
+  var cellRect: js.Any
   
-  var cellStyle: js.Any = js.native
+  var cellStyle: js.Any
   
-  var cellWidth: Double = js.native
+  var cellWidth: Double
 }
 object IEditControlCellContext {
   

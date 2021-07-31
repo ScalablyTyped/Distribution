@@ -3,7 +3,6 @@ package typings.postcss.mod
 import typings.postcss.anon.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Root_
-  extends ContainerBase
+  extends StObject
+     with ContainerBase
      with Container
      with Node {
   

@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the XYDiagramPane class.
   */
-@js.native
-trait ASPxClientXYDiagramPane extends ASPxClientWebChartElementNamed {
+trait ASPxClientXYDiagramPane
+  extends StObject
+     with ASPxClientWebChartElementNamed {
   
   /**
     * Gets the diagram that owns the current pane object.
     */
-  var diagram: ASPxClientXYDiagram = js.native
+  var diagram: ASPxClientXYDiagram
   
   /**
     * Returns the pane title's settings.
     */
-  var title: ASPxClientPaneTitle = js.native
+  var title: ASPxClientPaneTitle
 }
 object ASPxClientXYDiagramPane {
   

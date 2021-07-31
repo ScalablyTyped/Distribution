@@ -3,15 +3,13 @@ package typings.bip174.interfacesMod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartialSig extends StObject {
   
-  var pubkey: Buffer = js.native
+  var pubkey: Buffer
   
-  var signature: Buffer = js.native
+  var signature: Buffer
 }
 object PartialSig {
   

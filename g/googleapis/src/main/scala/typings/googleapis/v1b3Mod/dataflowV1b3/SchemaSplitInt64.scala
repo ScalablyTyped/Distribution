@@ -2,25 +2,23 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A representation of an int64, n, that is immune to precision loss when
   * encoded in JSON.
   */
-@js.native
 trait SchemaSplitInt64 extends StObject {
   
   /**
     * The high order bits, including the sign: n &gt;&gt; 32.
     */
-  var highBits: js.UndefOr[Double] = js.native
+  var highBits: js.UndefOr[Double] = js.undefined
   
   /**
     * The low order bits: n &amp; 0xffffffff.
     */
-  var lowBits: js.UndefOr[Double] = js.native
+  var lowBits: js.UndefOr[Double] = js.undefined
 }
 object SchemaSplitInt64 {
   

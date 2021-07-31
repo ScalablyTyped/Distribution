@@ -20,7 +20,6 @@ import typings.foundationSites.anon.InstantiableTooltip
 import typings.foundationSites.anon.Throttle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -86,7 +85,7 @@ trait FoundationSitesStatic extends StObject {
   
   def plugin(plugin: js.Object, name: String): Unit = js.native
   
-  def reInit(plugins: js.Array[_]): Unit = js.native
+  def reInit(plugins: js.Array[js.Any]): Unit = js.native
   
   def reflow(elem: js.Object): Unit = js.native
   def reflow(elem: js.Object, plugins: String): Unit = js.native

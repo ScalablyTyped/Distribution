@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePatchGroupStateRequest extends StObject {
   
   /**
     * The name of the patch group whose patch snapshot should be retrieved.
     */
-  var PatchGroup: typings.awsSdk.ssmMod.PatchGroup = js.native
+  var PatchGroup: typings.awsSdk.ssmMod.PatchGroup
 }
 object DescribePatchGroupStateRequest {
   

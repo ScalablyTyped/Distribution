@@ -2,13 +2,11 @@ package typings.cordovaPluginQrscanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var QRScanner: typings.cordovaPluginQrscanner.QRScanner = js.native
+  var QRScanner: typings.cordovaPluginQrscanner.QRScanner
 }
 object Window {
   

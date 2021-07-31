@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRoleAliasRequest extends StObject {
   
   /**
     * The number of seconds the credential will be valid.
     */
-  var credentialDurationSeconds: js.UndefOr[CredentialDurationSeconds] = js.native
+  var credentialDurationSeconds: js.UndefOr[CredentialDurationSeconds] = js.undefined
   
   /**
     * The role alias to update.
     */
-  var roleAlias: RoleAlias = js.native
+  var roleAlias: RoleAlias
   
   /**
     * The role ARN.
     */
-  var roleArn: js.UndefOr[RoleArn] = js.native
+  var roleArn: js.UndefOr[RoleArn] = js.undefined
 }
 object UpdateRoleAliasRequest {
   

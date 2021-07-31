@@ -2,7 +2,6 @@ package typings.googleAppsScript.global.GoogleAppsScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CardService {
@@ -15,13 +14,11 @@ object CardService {
   object ComposedEmailType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.googleAppsScript.GoogleAppsScript.CardService.ComposedEmailType with Double
-      ] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.ComposedEmailType & Double] = js.native
     
-    /* 0 */ val REPLY_AS_DRAFT: typings.googleAppsScript.GoogleAppsScript.CardService.ComposedEmailType.REPLY_AS_DRAFT with Double = js.native
+    /* 0 */ val REPLY_AS_DRAFT: typings.googleAppsScript.GoogleAppsScript.CardService.ComposedEmailType.REPLY_AS_DRAFT & Double = js.native
     
-    /* 1 */ val STANDALONE_DRAFT: typings.googleAppsScript.GoogleAppsScript.CardService.ComposedEmailType.STANDALONE_DRAFT with Double = js.native
+    /* 1 */ val STANDALONE_DRAFT: typings.googleAppsScript.GoogleAppsScript.CardService.ComposedEmailType.STANDALONE_DRAFT & Double = js.native
   }
   
   /**
@@ -32,13 +29,13 @@ object CardService {
   object ContentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.ContentType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.ContentType & Double] = js.native
     
-    /* 2 */ val IMMUTABLE_HTML: typings.googleAppsScript.GoogleAppsScript.CardService.ContentType.IMMUTABLE_HTML with Double = js.native
+    /* 2 */ val IMMUTABLE_HTML: typings.googleAppsScript.GoogleAppsScript.CardService.ContentType.IMMUTABLE_HTML & Double = js.native
     
-    /* 1 */ val MUTABLE_HTML: typings.googleAppsScript.GoogleAppsScript.CardService.ContentType.MUTABLE_HTML with Double = js.native
+    /* 1 */ val MUTABLE_HTML: typings.googleAppsScript.GoogleAppsScript.CardService.ContentType.MUTABLE_HTML & Double = js.native
     
-    /* 0 */ val TEXT: typings.googleAppsScript.GoogleAppsScript.CardService.ContentType.TEXT with Double = js.native
+    /* 0 */ val TEXT: typings.googleAppsScript.GoogleAppsScript.CardService.ContentType.TEXT & Double = js.native
   }
   
   /**
@@ -49,69 +46,69 @@ object CardService {
   object Icon extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.Icon with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.Icon & Double] = js.native
     
-    /* 1 */ val AIRPLANE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.AIRPLANE with Double = js.native
+    /* 1 */ val AIRPLANE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.AIRPLANE & Double = js.native
     
-    /* 2 */ val BOOKMARK: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.BOOKMARK with Double = js.native
+    /* 2 */ val BOOKMARK: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.BOOKMARK & Double = js.native
     
-    /* 3 */ val BUS: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.BUS with Double = js.native
+    /* 3 */ val BUS: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.BUS & Double = js.native
     
-    /* 4 */ val CAR: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.CAR with Double = js.native
+    /* 4 */ val CAR: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.CAR & Double = js.native
     
-    /* 5 */ val CLOCK: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.CLOCK with Double = js.native
+    /* 5 */ val CLOCK: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.CLOCK & Double = js.native
     
-    /* 6 */ val CONFIRMATION_NUMBER_ICON: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.CONFIRMATION_NUMBER_ICON with Double = js.native
+    /* 6 */ val CONFIRMATION_NUMBER_ICON: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.CONFIRMATION_NUMBER_ICON & Double = js.native
     
-    /* 8 */ val DESCRIPTION: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.DESCRIPTION with Double = js.native
+    /* 8 */ val DESCRIPTION: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.DESCRIPTION & Double = js.native
     
-    /* 7 */ val DOLLAR: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.DOLLAR with Double = js.native
+    /* 7 */ val DOLLAR: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.DOLLAR & Double = js.native
     
-    /* 9 */ val EMAIL: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.EMAIL with Double = js.native
+    /* 9 */ val EMAIL: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.EMAIL & Double = js.native
     
-    /* 10 */ val EVENT_PERFORMER: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.EVENT_PERFORMER with Double = js.native
+    /* 10 */ val EVENT_PERFORMER: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.EVENT_PERFORMER & Double = js.native
     
-    /* 11 */ val EVENT_SEAT: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.EVENT_SEAT with Double = js.native
+    /* 11 */ val EVENT_SEAT: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.EVENT_SEAT & Double = js.native
     
-    /* 12 */ val FLIGHT_ARRIVAL: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.FLIGHT_ARRIVAL with Double = js.native
+    /* 12 */ val FLIGHT_ARRIVAL: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.FLIGHT_ARRIVAL & Double = js.native
     
-    /* 13 */ val FLIGHT_DEPARTURE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.FLIGHT_DEPARTURE with Double = js.native
+    /* 13 */ val FLIGHT_DEPARTURE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.FLIGHT_DEPARTURE & Double = js.native
     
-    /* 14 */ val HOTEL: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.HOTEL with Double = js.native
+    /* 14 */ val HOTEL: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.HOTEL & Double = js.native
     
-    /* 15 */ val HOTEL_ROOM_TYPE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.HOTEL_ROOM_TYPE with Double = js.native
+    /* 15 */ val HOTEL_ROOM_TYPE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.HOTEL_ROOM_TYPE & Double = js.native
     
-    /* 16 */ val INVITE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.INVITE with Double = js.native
+    /* 16 */ val INVITE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.INVITE & Double = js.native
     
-    /* 17 */ val MAP_PIN: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.MAP_PIN with Double = js.native
+    /* 17 */ val MAP_PIN: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.MAP_PIN & Double = js.native
     
-    /* 18 */ val MEMBERSHIP: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.MEMBERSHIP with Double = js.native
+    /* 18 */ val MEMBERSHIP: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.MEMBERSHIP & Double = js.native
     
-    /* 19 */ val MULTIPLE_PEOPLE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.MULTIPLE_PEOPLE with Double = js.native
+    /* 19 */ val MULTIPLE_PEOPLE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.MULTIPLE_PEOPLE & Double = js.native
     
-    /* 0 */ val NONE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.NONE with Double = js.native
+    /* 0 */ val NONE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.NONE & Double = js.native
     
-    /* 20 */ val OFFER: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.OFFER with Double = js.native
+    /* 20 */ val OFFER: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.OFFER & Double = js.native
     
-    /* 21 */ val PERSON: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.PERSON with Double = js.native
+    /* 21 */ val PERSON: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.PERSON & Double = js.native
     
-    /* 22 */ val PHONE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.PHONE with Double = js.native
+    /* 22 */ val PHONE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.PHONE & Double = js.native
     
-    /* 23 */ val RESTAURANT_ICON: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.RESTAURANT_ICON with Double = js.native
+    /* 23 */ val RESTAURANT_ICON: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.RESTAURANT_ICON & Double = js.native
     
-    /* 24 */ val SHOPPING_CART: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.SHOPPING_CART with Double = js.native
+    /* 24 */ val SHOPPING_CART: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.SHOPPING_CART & Double = js.native
     
-    /* 25 */ val STAR: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.STAR with Double = js.native
+    /* 25 */ val STAR: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.STAR & Double = js.native
     
-    /* 26 */ val STORE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.STORE with Double = js.native
+    /* 26 */ val STORE: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.STORE & Double = js.native
     
-    /* 27 */ val TICKET: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.TICKET with Double = js.native
+    /* 27 */ val TICKET: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.TICKET & Double = js.native
     
-    /* 28 */ val TRAIN: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.TRAIN with Double = js.native
+    /* 28 */ val TRAIN: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.TRAIN & Double = js.native
     
-    /* 29 */ val VIDEO_CAMERA: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.VIDEO_CAMERA with Double = js.native
+    /* 29 */ val VIDEO_CAMERA: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.VIDEO_CAMERA & Double = js.native
     
-    /* 30 */ val VIDEO_PLAY: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.VIDEO_PLAY with Double = js.native
+    /* 30 */ val VIDEO_PLAY: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.VIDEO_PLAY & Double = js.native
   }
   
   /**
@@ -122,11 +119,11 @@ object CardService {
   object ImageStyle extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.ImageStyle with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.ImageStyle & Double] = js.native
     
-    /* 1 */ val CIRCLE: typings.googleAppsScript.GoogleAppsScript.CardService.ImageStyle.CIRCLE with Double = js.native
+    /* 1 */ val CIRCLE: typings.googleAppsScript.GoogleAppsScript.CardService.ImageStyle.CIRCLE & Double = js.native
     
-    /* 0 */ val SQUARE: typings.googleAppsScript.GoogleAppsScript.CardService.ImageStyle.SQUARE with Double = js.native
+    /* 0 */ val SQUARE: typings.googleAppsScript.GoogleAppsScript.CardService.ImageStyle.SQUARE & Double = js.native
   }
   
   /**
@@ -137,11 +134,11 @@ object CardService {
   object LoadIndicator extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.LoadIndicator with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.LoadIndicator & Double] = js.native
     
-    /* 1 */ val NONE: typings.googleAppsScript.GoogleAppsScript.CardService.LoadIndicator.NONE with Double = js.native
+    /* 1 */ val NONE: typings.googleAppsScript.GoogleAppsScript.CardService.LoadIndicator.NONE & Double = js.native
     
-    /* 0 */ val SPINNER: typings.googleAppsScript.GoogleAppsScript.CardService.LoadIndicator.SPINNER with Double = js.native
+    /* 0 */ val SPINNER: typings.googleAppsScript.GoogleAppsScript.CardService.LoadIndicator.SPINNER & Double = js.native
   }
   
   /**
@@ -156,11 +153,11 @@ object CardService {
   object OnClose extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.OnClose with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.OnClose & Double] = js.native
     
-    /* 0 */ val NOTHING: typings.googleAppsScript.GoogleAppsScript.CardService.OnClose.NOTHING with Double = js.native
+    /* 0 */ val NOTHING: typings.googleAppsScript.GoogleAppsScript.CardService.OnClose.NOTHING & Double = js.native
     
-    /* 1 */ val RELOAD_ADD_ON: typings.googleAppsScript.GoogleAppsScript.CardService.OnClose.RELOAD_ADD_ON with Double = js.native
+    /* 1 */ val RELOAD_ADD_ON: typings.googleAppsScript.GoogleAppsScript.CardService.OnClose.RELOAD_ADD_ON & Double = js.native
   }
   
   /**
@@ -178,11 +175,11 @@ object CardService {
   object OpenAs extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.OpenAs with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.OpenAs & Double] = js.native
     
-    /* 0 */ val FULL_SIZE: typings.googleAppsScript.GoogleAppsScript.CardService.OpenAs.FULL_SIZE with Double = js.native
+    /* 0 */ val FULL_SIZE: typings.googleAppsScript.GoogleAppsScript.CardService.OpenAs.FULL_SIZE & Double = js.native
     
-    /* 1 */ val OVERLAY: typings.googleAppsScript.GoogleAppsScript.CardService.OpenAs.OVERLAY with Double = js.native
+    /* 1 */ val OVERLAY: typings.googleAppsScript.GoogleAppsScript.CardService.OpenAs.OVERLAY & Double = js.native
   }
   
   /**
@@ -194,14 +191,14 @@ object CardService {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.googleAppsScript.GoogleAppsScript.CardService.SelectionInputType with Double
+        typings.googleAppsScript.GoogleAppsScript.CardService.SelectionInputType & Double
       ] = js.native
     
-    /* 0 */ val CHECK_BOX: typings.googleAppsScript.GoogleAppsScript.CardService.SelectionInputType.CHECK_BOX with Double = js.native
+    /* 0 */ val CHECK_BOX: typings.googleAppsScript.GoogleAppsScript.CardService.SelectionInputType.CHECK_BOX & Double = js.native
     
-    /* 2 */ val DROPDOWN: typings.googleAppsScript.GoogleAppsScript.CardService.SelectionInputType.DROPDOWN with Double = js.native
+    /* 2 */ val DROPDOWN: typings.googleAppsScript.GoogleAppsScript.CardService.SelectionInputType.DROPDOWN & Double = js.native
     
-    /* 1 */ val RADIO_BUTTON: typings.googleAppsScript.GoogleAppsScript.CardService.SelectionInputType.RADIO_BUTTON with Double = js.native
+    /* 1 */ val RADIO_BUTTON: typings.googleAppsScript.GoogleAppsScript.CardService.SelectionInputType.RADIO_BUTTON & Double = js.native
   }
   
   /**
@@ -212,13 +209,11 @@ object CardService {
   object SwitchControlType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.googleAppsScript.GoogleAppsScript.CardService.SwitchControlType with Double
-      ] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.SwitchControlType & Double] = js.native
     
-    /* 1 */ val CHECK_BOX: typings.googleAppsScript.GoogleAppsScript.CardService.SwitchControlType.CHECK_BOX with Double = js.native
+    /* 1 */ val CHECK_BOX: typings.googleAppsScript.GoogleAppsScript.CardService.SwitchControlType.CHECK_BOX & Double = js.native
     
-    /* 0 */ val SWITCH: typings.googleAppsScript.GoogleAppsScript.CardService.SwitchControlType.SWITCH with Double = js.native
+    /* 0 */ val SWITCH: typings.googleAppsScript.GoogleAppsScript.CardService.SwitchControlType.SWITCH & Double = js.native
   }
   
   /**
@@ -233,13 +228,11 @@ object CardService {
   object TextButtonStyle extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.googleAppsScript.GoogleAppsScript.CardService.TextButtonStyle with Double
-      ] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.TextButtonStyle & Double] = js.native
     
-    /* 1 */ val FILLED: typings.googleAppsScript.GoogleAppsScript.CardService.TextButtonStyle.FILLED with Double = js.native
+    /* 1 */ val FILLED: typings.googleAppsScript.GoogleAppsScript.CardService.TextButtonStyle.FILLED & Double = js.native
     
-    /* 0 */ val TEXT: typings.googleAppsScript.GoogleAppsScript.CardService.TextButtonStyle.TEXT with Double = js.native
+    /* 0 */ val TEXT: typings.googleAppsScript.GoogleAppsScript.CardService.TextButtonStyle.TEXT & Double = js.native
   }
   
   /**
@@ -251,9 +244,9 @@ object CardService {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.googleAppsScript.GoogleAppsScript.CardService.UpdateDraftBodyType with Double
+        typings.googleAppsScript.GoogleAppsScript.CardService.UpdateDraftBodyType & Double
       ] = js.native
     
-    /* 0 */ val IN_PLACE_INSERT: typings.googleAppsScript.GoogleAppsScript.CardService.UpdateDraftBodyType.IN_PLACE_INSERT with Double = js.native
+    /* 0 */ val IN_PLACE_INSERT: typings.googleAppsScript.GoogleAppsScript.CardService.UpdateDraftBodyType.IN_PLACE_INSERT & Double = js.native
   }
 }

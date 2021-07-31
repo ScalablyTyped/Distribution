@@ -9,148 +9,114 @@ import typings.std.Window
 import typings.uifabricUtilities.irectangleMod.IRectangle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domMod {
+  
+  @JSImport("@uifabric/utilities/lib/dom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@uifabric/utilities/lib/dom", "DATA_PORTAL_ATTRIBUTE")
   @js.native
   val DATA_PORTAL_ATTRIBUTE: /* "data-portal-element" */ String = js.native
   
-  @JSImport("@uifabric/utilities/lib/dom", "elementContains")
-  @js.native
-  def elementContains(): Boolean = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "elementContains")
-  @js.native
-  def elementContains(parent: Null, child: Null, allowVirtualParents: Boolean): Boolean = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "elementContains")
-  @js.native
-  def elementContains(parent: Null, child: HTMLElement): Boolean = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "elementContains")
-  @js.native
-  def elementContains(parent: Null, child: HTMLElement, allowVirtualParents: Boolean): Boolean = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "elementContains")
-  @js.native
-  def elementContains(parent: HTMLElement): Boolean = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "elementContains")
-  @js.native
-  def elementContains(parent: HTMLElement, child: Null, allowVirtualParents: Boolean): Boolean = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "elementContains")
-  @js.native
-  def elementContains(parent: HTMLElement, child: HTMLElement): Boolean = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "elementContains")
-  @js.native
-  def elementContains(parent: HTMLElement, child: HTMLElement, allowVirtualParents: Boolean): Boolean = js.native
+  @scala.inline
+  def elementContains(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")().asInstanceOf[Boolean]
+  @scala.inline
+  def elementContains(parent: Null, child: Null, allowVirtualParents: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def elementContains(parent: Null, child: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def elementContains(parent: Null, child: HTMLElement, allowVirtualParents: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def elementContains(parent: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def elementContains(parent: HTMLElement, child: Null, allowVirtualParents: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def elementContains(parent: HTMLElement, child: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def elementContains(parent: HTMLElement, child: HTMLElement, allowVirtualParents: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@uifabric/utilities/lib/dom", "elementContainsAttribute")
-  @js.native
-  def elementContainsAttribute(element: HTMLElement, attribute: String): String | Null = js.native
+  @scala.inline
+  def elementContainsAttribute(element: HTMLElement, attribute: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("elementContainsAttribute")(element.asInstanceOf[js.Any], attribute.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("@uifabric/utilities/lib/dom", "findElementRecursive")
-  @js.native
-  def findElementRecursive(element: Null, matchFunction: js.Function1[/* element */ HTMLElement, Boolean]): HTMLElement | Null = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "findElementRecursive")
-  @js.native
-  def findElementRecursive(element: HTMLElement, matchFunction: js.Function1[/* element */ HTMLElement, Boolean]): HTMLElement | Null = js.native
+  @scala.inline
+  def findElementRecursive(element: Null, matchFunction: js.Function1[/* element */ HTMLElement, Boolean]): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findElementRecursive")(element.asInstanceOf[js.Any], matchFunction.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
+  @scala.inline
+  def findElementRecursive(element: HTMLElement, matchFunction: js.Function1[/* element */ HTMLElement, Boolean]): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findElementRecursive")(element.asInstanceOf[js.Any], matchFunction.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
   
-  @JSImport("@uifabric/utilities/lib/dom", "getChildren")
-  @js.native
-  def getChildren(parent: HTMLElement): js.Array[HTMLElement] = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "getChildren")
-  @js.native
-  def getChildren(parent: HTMLElement, allowVirtualChildren: Boolean): js.Array[HTMLElement] = js.native
+  @scala.inline
+  def getChildren(parent: HTMLElement): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(parent.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+  @scala.inline
+  def getChildren(parent: HTMLElement, allowVirtualChildren: Boolean): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(parent.asInstanceOf[js.Any], allowVirtualChildren.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
   
-  @JSImport("@uifabric/utilities/lib/dom", "getDocument")
-  @js.native
-  def getDocument(): js.UndefOr[Document] = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "getDocument")
-  @js.native
-  def getDocument(rootElement: HTMLElement): js.UndefOr[Document] = js.native
+  @scala.inline
+  def getDocument(): js.UndefOr[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")().asInstanceOf[js.UndefOr[Document]]
+  @scala.inline
+  def getDocument(rootElement: HTMLElement): js.UndefOr[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")(rootElement.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Document]]
   
-  @JSImport("@uifabric/utilities/lib/dom", "getParent")
-  @js.native
-  def getParent(child: HTMLElement): HTMLElement | Null = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "getParent")
-  @js.native
-  def getParent(child: HTMLElement, allowVirtualParents: Boolean): HTMLElement | Null = js.native
+  @scala.inline
+  def getParent(child: HTMLElement): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getParent")(child.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
+  @scala.inline
+  def getParent(child: HTMLElement, allowVirtualParents: Boolean): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getParent")(child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
   
-  @JSImport("@uifabric/utilities/lib/dom", "getRect")
-  @js.native
-  def getRect(): js.UndefOr[IRectangle] = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "getRect")
-  @js.native
-  def getRect(element: HTMLElement): js.UndefOr[IRectangle] = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "getRect")
-  @js.native
-  def getRect(element: Window): js.UndefOr[IRectangle] = js.native
+  @scala.inline
+  def getRect(): js.UndefOr[IRectangle] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRect")().asInstanceOf[js.UndefOr[IRectangle]]
+  @scala.inline
+  def getRect(element: HTMLElement): js.UndefOr[IRectangle] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRect")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[IRectangle]]
+  @scala.inline
+  def getRect(element: Window): js.UndefOr[IRectangle] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRect")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[IRectangle]]
   
-  @JSImport("@uifabric/utilities/lib/dom", "getVirtualParent")
-  @js.native
-  def getVirtualParent(child: HTMLElement): js.UndefOr[HTMLElement] = js.native
+  @scala.inline
+  def getVirtualParent(child: HTMLElement): js.UndefOr[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVirtualParent")(child.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[HTMLElement]]
   
-  @JSImport("@uifabric/utilities/lib/dom", "getWindow")
-  @js.native
-  def getWindow(): js.UndefOr[Window] = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "getWindow")
-  @js.native
-  def getWindow(rootElement: Element): js.UndefOr[Window] = js.native
+  @scala.inline
+  def getWindow(): js.UndefOr[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindow")().asInstanceOf[js.UndefOr[Window]]
+  @scala.inline
+  def getWindow(rootElement: Element): js.UndefOr[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindow")(rootElement.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Window]]
   
-  @JSImport("@uifabric/utilities/lib/dom", "isVirtualElement")
-  @js.native
-  def isVirtualElement(element: IVirtualElement): /* is @fluentui/dom-utilities.@fluentui/dom-utilities/lib/IVirtualElement.IVirtualElement */ Boolean = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "isVirtualElement")
-  @js.native
-  def isVirtualElement(element: HTMLElement): /* is @fluentui/dom-utilities.@fluentui/dom-utilities/lib/IVirtualElement.IVirtualElement */ Boolean = js.native
+  @scala.inline
+  def isVirtualElement(element: IVirtualElement): /* is @fluentui/dom-utilities.@fluentui/dom-utilities/lib/IVirtualElement.IVirtualElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVirtualElement")(element.asInstanceOf[js.Any]).asInstanceOf[/* is @fluentui/dom-utilities.@fluentui/dom-utilities/lib/IVirtualElement.IVirtualElement */ Boolean]
+  @scala.inline
+  def isVirtualElement(element: HTMLElement): /* is @fluentui/dom-utilities.@fluentui/dom-utilities/lib/IVirtualElement.IVirtualElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVirtualElement")(element.asInstanceOf[js.Any]).asInstanceOf[/* is @fluentui/dom-utilities.@fluentui/dom-utilities/lib/IVirtualElement.IVirtualElement */ Boolean]
   
-  @JSImport("@uifabric/utilities/lib/dom", "on")
-  @js.native
-  def on(element: Document, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): js.Function0[Unit] = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "on")
-  @js.native
+  @scala.inline
+  def on(element: Document, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
   def on(
     element: Document,
     eventName: String,
     callback: js.Function1[/* ev */ Event, Unit],
     options: Boolean
-  ): js.Function0[Unit] = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "on")
-  @js.native
-  def on(element: Element, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): js.Function0[Unit] = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "on")
-  @js.native
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def on(element: Element, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
   def on(
     element: Element,
     eventName: String,
     callback: js.Function1[/* ev */ Event, Unit],
     options: Boolean
-  ): js.Function0[Unit] = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "on")
-  @js.native
-  def on(element: Window, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): js.Function0[Unit] = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "on")
-  @js.native
-  def on(element: Window, eventName: String, callback: js.Function1[/* ev */ Event, Unit], options: Boolean): js.Function0[Unit] = js.native
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def on(element: Window, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def on(element: Window, eventName: String, callback: js.Function1[/* ev */ Event, Unit], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("@uifabric/utilities/lib/dom", "portalContainsElement")
-  @js.native
-  def portalContainsElement(target: HTMLElement): Boolean = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "portalContainsElement")
-  @js.native
-  def portalContainsElement(target: HTMLElement, parent: HTMLElement): Boolean = js.native
+  @scala.inline
+  def portalContainsElement(target: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("portalContainsElement")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def portalContainsElement(target: HTMLElement, parent: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("portalContainsElement")(target.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@uifabric/utilities/lib/dom", "raiseClick")
-  @js.native
-  def raiseClick(target: Element): Unit = js.native
+  @scala.inline
+  def raiseClick(target: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("raiseClick")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@uifabric/utilities/lib/dom", "setPortalAttribute")
-  @js.native
-  def setPortalAttribute(element: HTMLElement): Unit = js.native
+  @scala.inline
+  def setPortalAttribute(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPortalAttribute")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@uifabric/utilities/lib/dom", "setVirtualParent")
-  @js.native
-  def setVirtualParent(child: HTMLElement): Unit = js.native
-  @JSImport("@uifabric/utilities/lib/dom", "setVirtualParent")
-  @js.native
-  def setVirtualParent(child: HTMLElement, parent: HTMLElement): Unit = js.native
+  @scala.inline
+  def setVirtualParent(child: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVirtualParent")(child.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setVirtualParent(child: HTMLElement, parent: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVirtualParent")(child.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

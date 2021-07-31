@@ -2,7 +2,6 @@ package typings.firebaseDatabase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object packetReceiverMod {
@@ -28,12 +27,12 @@ object packetReceiverMod {
       * @param {number} requestNum
       * @param {Array} data
       */
-    def handleResponse(requestNum: Double, data: js.Array[_]): Unit = js.native
+    def handleResponse(requestNum: Double, data: js.Array[js.Any]): Unit = js.native
     
     var onClose: js.Function0[Unit] | Null = js.native
     
     var onMessage_ : js.Any = js.native
     
-    var pendingResponses: js.Array[_] = js.native
+    var pendingResponses: js.Array[js.Any] = js.native
   }
 }

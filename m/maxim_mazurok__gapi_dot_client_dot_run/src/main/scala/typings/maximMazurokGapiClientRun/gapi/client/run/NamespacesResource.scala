@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamespacesResource extends StObject {
   
-  var authorizeddomains: AuthorizeddomainsResource = js.native
+  var authorizeddomains: AuthorizeddomainsResource
   
-  var configurations: ConfigurationsResource = js.native
+  var configurations: ConfigurationsResource
   
-  var domainmappings: DomainmappingsResource = js.native
+  var domainmappings: DomainmappingsResource
   
-  var revisions: RevisionsResource = js.native
+  var revisions: RevisionsResource
   
-  var routes: RoutesResource = js.native
+  var routes: RoutesResource
   
-  var services: ServicesResource = js.native
+  var services: ServicesResource
 }
 object NamespacesResource {
   

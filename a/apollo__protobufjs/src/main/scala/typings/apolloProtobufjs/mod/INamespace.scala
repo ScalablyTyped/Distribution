@@ -3,17 +3,17 @@ package typings.apolloProtobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait INamespace extends AnyNestedObject {
+trait INamespace
+  extends StObject
+     with AnyNestedObject {
   
   /** Nested object descriptors */
-  var nested: js.UndefOr[StringDictionary[js.UndefOr[AnyNestedObject]]] = js.native
+  var nested: js.UndefOr[StringDictionary[js.UndefOr[AnyNestedObject]]] = js.undefined
   
   /** Namespace options */
-  var options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = js.native
+  var options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = js.undefined
 }
 object INamespace {
   

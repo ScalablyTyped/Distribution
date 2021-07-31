@@ -12,7 +12,6 @@ import typings.chrome.chrome.webNavigation.WebNavigationSourceEvent
 import typings.chrome.chrome.webNavigation.WebNavigationTransitionalEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -29,16 +28,14 @@ object webNavigation {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.webNavigation.getAllFrames")
-  @js.native
+  @scala.inline
   def getAllFrames(
     details: GetAllFrameDetails,
     callback: js.Function1[/* details */ js.Array[GetAllFrameResultDetails] | Null, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllFrames")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.webNavigation.getFrame")
-  @js.native
-  def getFrame(details: GetFrameDetails, callback: js.Function1[/* details */ GetFrameResultDetails | Null, Unit]): Unit = js.native
+  @scala.inline
+  def getFrame(details: GetFrameDetails, callback: js.Function1[/* details */ GetFrameResultDetails | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFrame")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("chrome.webNavigation.onBeforeNavigate")
   @js.native

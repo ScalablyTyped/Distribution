@@ -2,24 +2,22 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Evaluation metrics for binary classification models.
   */
-@js.native
 trait SchemaBinaryClassificationMetrics extends StObject {
   
   /**
     * Aggregate classification metrics.
     */
-  var aggregateClassificationMetrics: js.UndefOr[SchemaAggregateClassificationMetrics] = js.native
+  var aggregateClassificationMetrics: js.UndefOr[SchemaAggregateClassificationMetrics] = js.undefined
   
   /**
     * Binary confusion matrix at multiple thresholds.
     */
-  var binaryConfusionMatrixList: js.UndefOr[js.Array[SchemaBinaryConfusionMatrix]] = js.native
+  var binaryConfusionMatrixList: js.UndefOr[js.Array[SchemaBinaryConfusionMatrix]] = js.undefined
 }
 object SchemaBinaryClassificationMetrics {
   

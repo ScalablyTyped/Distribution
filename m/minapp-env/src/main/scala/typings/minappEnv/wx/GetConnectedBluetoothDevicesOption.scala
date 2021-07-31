@@ -3,23 +3,21 @@ package typings.minappEnv.wx
 import typings.minappEnv.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConnectedBluetoothDevicesOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[GetConnectedBluetoothDevicesCompleteCallback] = js.native
+  var complete: js.UndefOr[GetConnectedBluetoothDevicesCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[GetConnectedBluetoothDevicesFailCallback] = js.native
+  var fail: js.UndefOr[GetConnectedBluetoothDevicesFailCallback] = js.undefined
   
   /** 蓝牙设备主 service 的 uuid 列表 */
-  var services: Array[String] = js.native
+  var services: Array[String]
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[GetConnectedBluetoothDevicesSuccessCallback] = js.native
+  var success: js.UndefOr[GetConnectedBluetoothDevicesSuccessCallback] = js.undefined
 }
 object GetConnectedBluetoothDevicesOption {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Connector extends StObject {
   
   /**
     * The ARN of the connector.
     */
-  var ConnectorArn: string = js.native
+  var ConnectorArn: string
   
   /**
     * A descriptive or arbitrary ID for the connector. This value must be unique within the connector definition version. Max length is 128 characters with pattern [a-zA-Z0-9:_-]+.
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * The parameters or configuration that the connector uses.
     */
-  var Parameters: js.UndefOr[mapOfString] = js.native
+  var Parameters: js.UndefOr[mapOfString] = js.undefined
 }
 object Connector {
   

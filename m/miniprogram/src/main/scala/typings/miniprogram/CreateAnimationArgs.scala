@@ -2,33 +2,31 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAnimationArgs extends StObject {
   
   /**
     * Animation delay, in ms, 0 by default.
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /**
     * Animation duration, in ms, 400 by default.
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * Define animation effect, linear by default, effective
     *  values including linear, ease, ease-in, ease-in-out,
     * ease-out, step-start and step-end .
     */
-  var timeFunction: js.UndefOr[String] = js.native
+  var timeFunction: js.UndefOr[String] = js.undefined
   
   /**
     * Set transform-origin, 50% 50% 0 by default.
     */
-  var transformOrigin: js.UndefOr[String] = js.native
+  var transformOrigin: js.UndefOr[String] = js.undefined
 }
 object CreateAnimationArgs {
   

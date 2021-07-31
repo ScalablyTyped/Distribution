@@ -2,15 +2,13 @@ package typings.materialIconButton
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait MDCIconButtonToggleEventDetail extends StObject {
     
-    var isOn: Boolean = js.native
+    var isOn: Boolean
   }
   object MDCIconButtonToggleEventDetail {
     

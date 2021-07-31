@@ -2,41 +2,39 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListedFlow extends StObject {
   
   /**
     * The Availability Zone that the flow was created in.
     */
-  var AvailabilityZone: string = js.native
+  var AvailabilityZone: string
   
   /**
     * A description of the flow.
     */
-  var Description: string = js.native
+  var Description: string
   
   /**
     * The ARN of the flow.
     */
-  var FlowArn: string = js.native
+  var FlowArn: string
   
   /**
     * The name of the flow.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * The type of source. This value is either owned (originated somewhere other than an AWS Elemental MediaConnect flow owned by another AWS account) or entitled (originated at an AWS Elemental MediaConnect flow owned by another AWS account).
     */
-  var SourceType: typings.awsSdk.mediaconnectMod.SourceType = js.native
+  var SourceType: typings.awsSdk.mediaconnectMod.SourceType
   
   /**
     * The current status of the flow.
     */
-  var Status: typings.awsSdk.mediaconnectMod.Status = js.native
+  var Status: typings.awsSdk.mediaconnectMod.Status
 }
 object ListedFlow {
   

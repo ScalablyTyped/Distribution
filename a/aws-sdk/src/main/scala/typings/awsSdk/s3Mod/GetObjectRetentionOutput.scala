@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetObjectRetentionOutput extends StObject {
   
   /**
     * The container element for an object's retention settings.
     */
-  var Retention: js.UndefOr[ObjectLockRetention] = js.native
+  var Retention: js.UndefOr[ObjectLockRetention] = js.undefined
 }
 object GetObjectRetentionOutput {
   

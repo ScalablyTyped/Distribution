@@ -2,36 +2,34 @@ package typings.awsSdk.lexruntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenericAttachment extends StObject {
   
   /**
     * The URL of an attachment to the response card.
     */
-  var attachmentLinkUrl: js.UndefOr[StringUrlWithLength] = js.native
+  var attachmentLinkUrl: js.UndefOr[StringUrlWithLength] = js.undefined
   
   /**
     * The list of options to show to the user.
     */
-  var buttons: js.UndefOr[listOfButtons] = js.native
+  var buttons: js.UndefOr[listOfButtons] = js.undefined
   
   /**
     * The URL of an image that is displayed to the user.
     */
-  var imageUrl: js.UndefOr[StringUrlWithLength] = js.native
+  var imageUrl: js.UndefOr[StringUrlWithLength] = js.undefined
   
   /**
     * The subtitle shown below the title.
     */
-  var subTitle: js.UndefOr[StringWithLength] = js.native
+  var subTitle: js.UndefOr[StringWithLength] = js.undefined
   
   /**
     * The title of the option.
     */
-  var title: js.UndefOr[StringWithLength] = js.native
+  var title: js.UndefOr[StringWithLength] = js.undefined
 }
 object GenericAttachment {
   

@@ -2,34 +2,32 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderFooter extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Exists: Boolean = js.native
+  var Exists: Boolean
   
-  val Index: WdHeaderFooterIndex = js.native
+  val Index: WdHeaderFooterIndex
   
-  val IsHeader: Boolean = js.native
+  val IsHeader: Boolean
   
-  var LinkToPrevious: Boolean = js.native
+  var LinkToPrevious: Boolean
   
-  val PageNumbers: typings.activexWord.Word.PageNumbers = js.native
+  val PageNumbers: typings.activexWord.Word.PageNumbers
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  val Shapes: typings.activexWord.Word.Shapes = js.native
+  val Shapes: typings.activexWord.Word.Shapes
   
   @JSName("Word.HeaderFooter_typekey")
-  var WordDotHeaderFooter_typekey: HeaderFooter = js.native
+  var WordDotHeaderFooter_typekey: HeaderFooter
 }
 object HeaderFooter {
   

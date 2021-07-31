@@ -6,43 +6,41 @@ import typings.evernote.mod.Types.Timestamp
 import typings.evernote.mod.Types.UserID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Email extends StObject {
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var globalId: js.UndefOr[String] = js.native
+  var globalId: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
-  var notebookGuid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.native
+  var notebookGuid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.undefined
   
-  var notebookModifiable: js.UndefOr[Boolean] = js.native
+  var notebookModifiable: js.UndefOr[Boolean] = js.undefined
   
-  var privilege: js.UndefOr[SharedNotebookPrivilegeLevel] = js.native
+  var privilege: js.UndefOr[SharedNotebookPrivilegeLevel] = js.undefined
   
-  var recipientIdentityId: js.UndefOr[typings.evernote.mod.Types.IdentityID] = js.native
+  var recipientIdentityId: js.UndefOr[typings.evernote.mod.Types.IdentityID] = js.undefined
   
-  var recipientSettings: js.UndefOr[SharedNotebookRecipientSettings] = js.native
+  var recipientSettings: js.UndefOr[SharedNotebookRecipientSettings] = js.undefined
   
-  var recipientUserId: js.UndefOr[UserID] = js.native
+  var recipientUserId: js.UndefOr[UserID] = js.undefined
   
-  var recipientUsername: js.UndefOr[String] = js.native
+  var recipientUsername: js.UndefOr[String] = js.undefined
   
-  var serviceAssigned: js.UndefOr[Timestamp] = js.native
+  var serviceAssigned: js.UndefOr[Timestamp] = js.undefined
   
-  var serviceCreated: js.UndefOr[Timestamp] = js.native
+  var serviceCreated: js.UndefOr[Timestamp] = js.undefined
   
-  var serviceUpdated: js.UndefOr[Timestamp] = js.native
+  var serviceUpdated: js.UndefOr[Timestamp] = js.undefined
   
-  var sharerUserId: js.UndefOr[UserID] = js.native
+  var sharerUserId: js.UndefOr[UserID] = js.undefined
   
-  var userId: js.UndefOr[UserID] = js.native
+  var userId: js.UndefOr[UserID] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object Email {
   

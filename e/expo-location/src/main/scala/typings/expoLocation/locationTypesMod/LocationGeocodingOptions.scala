@@ -2,17 +2,15 @@ package typings.expoLocation.locationTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationGeocodingOptions extends StObject {
   
   /**
     * Whether to force using Google Maps API instead of the native implementation.
     * Used by default only on Web platform. Requires providing an API key by `setGoogleApiKey`.
     */
-  var useGoogleMaps: js.UndefOr[Boolean] = js.native
+  var useGoogleMaps: js.UndefOr[Boolean] = js.undefined
 }
 object LocationGeocodingOptions {
   

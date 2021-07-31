@@ -4,19 +4,17 @@ import typings.elasticMaki.mod.IconName
 import typings.elasticMaki.mod.SpriteSheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `1` extends StObject {
     
-    var `1`: SpriteSheet = js.native
+    var `1`: SpriteSheet
     
-    var `2`: SpriteSheet = js.native
+    var `2`: SpriteSheet
     
-    var `4`: SpriteSheet = js.native
+    var `4`: SpriteSheet
   }
   object `1` {
     
@@ -43,10 +41,9 @@ object anon {
     }
   }
   
-  @js.native
   trait All extends StObject {
     
-    var all: js.Array[IconName] = js.native
+    var all: js.Array[IconName]
   }
   object All {
     

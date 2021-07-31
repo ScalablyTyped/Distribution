@@ -3,26 +3,24 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Link extends StObject {
   
   /**
     * Collection of link attributes.
     */
-  var attributes: StringDictionary[js.Any] = js.native
+  var attributes: StringDictionary[js.Any]
   
   /**
     * Relation type.
     */
-  var rel: String = js.native
+  var rel: String
   
   /**
     * Link url.
     */
-  var url: String = js.native
+  var url: String
 }
 object Link {
   

@@ -4,58 +4,57 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.openidClient.anon.Idtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizationParameters
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var acr_values: js.UndefOr[String] = js.native
+  var acr_values: js.UndefOr[String] = js.undefined
   
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
-  var claims: js.UndefOr[String | Idtoken] = js.native
+  var claims: js.UndefOr[String | Idtoken] = js.undefined
   
-  var claims_locales: js.UndefOr[String] = js.native
+  var claims_locales: js.UndefOr[String] = js.undefined
   
-  var client_id: js.UndefOr[String] = js.native
+  var client_id: js.UndefOr[String] = js.undefined
   
-  var code_challenge: js.UndefOr[String] = js.native
+  var code_challenge: js.UndefOr[String] = js.undefined
   
-  var code_challenge_method: js.UndefOr[String] = js.native
+  var code_challenge_method: js.UndefOr[String] = js.undefined
   
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
-  var id_token_hint: js.UndefOr[String] = js.native
+  var id_token_hint: js.UndefOr[String] = js.undefined
   
-  var login_hint: js.UndefOr[String] = js.native
+  var login_hint: js.UndefOr[String] = js.undefined
   
-  var max_age: js.UndefOr[Double] = js.native
+  var max_age: js.UndefOr[Double] = js.undefined
   
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
-  var prompt: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.undefined
   
-  var redirect_uri: js.UndefOr[String] = js.native
+  var redirect_uri: js.UndefOr[String] = js.undefined
   
-  var registration: js.UndefOr[String] = js.native
+  var registration: js.UndefOr[String] = js.undefined
   
-  var request: js.UndefOr[String] = js.native
+  var request: js.UndefOr[String] = js.undefined
   
-  var request_uri: js.UndefOr[String] = js.native
+  var request_uri: js.UndefOr[String] = js.undefined
   
-  var resource: js.UndefOr[String | js.Array[String]] = js.native
+  var resource: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var response_mode: js.UndefOr[String] = js.native
+  var response_mode: js.UndefOr[String] = js.undefined
   
-  var response_type: js.UndefOr[String] = js.native
+  var response_type: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
-  var ui_locales: js.UndefOr[String] = js.native
+  var ui_locales: js.UndefOr[String] = js.undefined
 }
 object AuthorizationParameters {
   

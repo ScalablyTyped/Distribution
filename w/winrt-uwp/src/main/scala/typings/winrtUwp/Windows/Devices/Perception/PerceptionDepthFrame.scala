@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Devices.Perception
 import typings.winrtUwp.Windows.Media.VideoFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains a Windows.Media.VideoFrame with the depth frame data. */
-@js.native
 trait PerceptionDepthFrame extends StObject {
   
   /** Releases system resources that are exposed by a Windows Runtime object. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /** Gets a Windows.Media.VideoFrame with the depth frame data. */
-  var videoFrame: VideoFrame = js.native
+  var videoFrame: VideoFrame
 }
 object PerceptionDepthFrame {
   

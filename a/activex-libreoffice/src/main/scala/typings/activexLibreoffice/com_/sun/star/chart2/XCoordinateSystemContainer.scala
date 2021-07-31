@@ -6,29 +6,29 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XCoordinateSystemContainer extends XInterface {
+trait XCoordinateSystemContainer
+  extends StObject
+     with XInterface {
   
   /** retrieve all coordinate systems */
-  var CoordinateSystems: SafeArray[XCoordinateSystem] = js.native
+  var CoordinateSystems: SafeArray[XCoordinateSystem]
   
   /**
     * add an coordinate system to the coordinate system container
     * @throws IllegalArgumentException If the given coordinate system is already contained in the container.
     */
-  def addCoordinateSystem(aCoordSys: XCoordinateSystem): Unit = js.native
+  def addCoordinateSystem(aCoordSys: XCoordinateSystem): Unit
   
   /** retrieve all coordinate systems */
-  def getCoordinateSystems(): SafeArray[XCoordinateSystem] = js.native
+  def getCoordinateSystems(): SafeArray[XCoordinateSystem]
   
   /** removes one coordinate system from the coordinate system container. */
-  def removeCoordinateSystem(aCoordSys: XCoordinateSystem): Unit = js.native
+  def removeCoordinateSystem(aCoordSys: XCoordinateSystem): Unit
   
   /** set all coordinate systems */
-  def setCoordinateSystems(aCoordinateSystems: SeqEquiv[XCoordinateSystem]): Unit = js.native
+  def setCoordinateSystems(aCoordinateSystems: SeqEquiv[XCoordinateSystem]): Unit
 }
 object XCoordinateSystemContainer {
   

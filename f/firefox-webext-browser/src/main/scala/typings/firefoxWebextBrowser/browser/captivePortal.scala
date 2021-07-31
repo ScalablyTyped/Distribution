@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,11 +27,10 @@ object captivePortal {
     def clear: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.clear = "clear".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.clear]
   }
   
-  @js.native
   trait OnStateChangedDetails extends StObject {
     
     /** The current captive portal state. */
-    var state: OnStateChangedDetailsState = js.native
+    var state: OnStateChangedDetailsState
   }
   object OnStateChangedDetails {
     

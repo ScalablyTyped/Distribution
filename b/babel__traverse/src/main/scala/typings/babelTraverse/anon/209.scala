@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.IntersectionTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `209` extends StObject {
   
-  var `type`: IntersectionTypeAnnotation = js.native
+  var `type`: IntersectionTypeAnnotation
 }
 object `209` {
   
   @scala.inline
-  def apply(`type`: IntersectionTypeAnnotation): `209` = {
+  def apply(): `209` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IntersectionTypeAnnotation")
     __obj.asInstanceOf[`209`]
   }
   

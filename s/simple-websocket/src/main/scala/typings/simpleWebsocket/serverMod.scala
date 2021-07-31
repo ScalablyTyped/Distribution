@@ -13,7 +13,6 @@ import typings.std.Set
 import typings.ws.mod.ServerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverMod {
@@ -22,7 +21,7 @@ object serverMod {
   @js.native
   class ^ () extends SocketServer {
     def this(options: Options) = this()
-    def this(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]) = this()
+    def this(options: Unit, callback: js.Function0[Unit]) = this()
     def this(options: Options, callback: js.Function0[Unit]) = this()
   }
   

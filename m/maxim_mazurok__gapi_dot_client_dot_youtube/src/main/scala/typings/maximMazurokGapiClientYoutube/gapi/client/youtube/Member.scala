@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Member extends StObject {
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#member". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The snippet object contains basic details about the member. */
-  var snippet: js.UndefOr[MemberSnippet] = js.native
+  var snippet: js.UndefOr[MemberSnippet] = js.undefined
 }
 object Member {
   

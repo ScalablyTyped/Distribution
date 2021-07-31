@@ -1,30 +1,45 @@
 package typings.activexLibreoffice.com_.sun.star.form
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
-import typings.activexLibreoffice.com_.sun.star.awt.XItemList
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlButtonModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlCheckBoxModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlComboBoxModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlCurrencyFieldModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlDateFieldModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlEditModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlFileControlModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlFixedTextModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlFormattedFieldModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlGroupBoxModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlImageControlModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlListBoxModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlNumericFieldModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlPatternFieldModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlRadioButtonModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlScrollBarModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlSpinButtonModel
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControlTimeFieldModel
 import typings.activexLibreoffice.com_.sun.star.awt.XTabControllerModel
+import typings.activexLibreoffice.com_.sun.star.beans.XFastPropertySet
+import typings.activexLibreoffice.com_.sun.star.beans.XPropertyBag
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
+import typings.activexLibreoffice.com_.sun.star.beans.XPropertyState
+import typings.activexLibreoffice.com_.sun.star.container.XChild
 import typings.activexLibreoffice.com_.sun.star.container.XContentEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.form.submission.XSubmissionSupplier
-import typings.activexLibreoffice.com_.sun.star.graphic.XGraphic
 import typings.activexLibreoffice.com_.sun.star.sdb.RowSet
 import typings.activexLibreoffice.com_.sun.star.style.CharacterProperties
 import typings.activexLibreoffice.com_.sun.star.style.CharacterPropertiesAsian
 import typings.activexLibreoffice.com_.sun.star.style.CharacterPropertiesComplex
 import typings.activexLibreoffice.com_.sun.star.style.ParagraphProperties
 import typings.activexLibreoffice.com_.sun.star.style.ParagraphPropertiesAsian
-import typings.activexLibreoffice.com_.sun.star.style.VerticalAlignment
 import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.activexLibreoffice.com_.sun.star.util.Color
-import typings.activexLibreoffice.com_.sun.star.util.Date
-import typings.activexLibreoffice.com_.sun.star.util.Time
-import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object component {
@@ -36,28 +51,30 @@ object component {
     */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlCheckBoxModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined Align, BackgroundColor, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, Graphic, HelpText, HelpURL, ImagePosition, ImageURL, Label, MultiLine, Printable, State, Tabstop, TextColor, TextLineColor, TriState, VerticalAlign, VisualEffect, WritingMode */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait CheckBox
-    extends FormControlModel
-       with XReset {
+    extends StObject
+       with UnoControlCheckBoxModel
+       with XReset
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the horizontal alignment of the text in the control.
-      *
-      * `; 0: left; 1: center; 2: right; `
-      * @since OOo 2.0
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var Align: Double = js.native
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Double = js.native
+    var ClassId: Double = js.native
     
     /**
       * contains a default value for the control.
@@ -68,58 +85,12 @@ object component {
       */
     var DefaultState: Double = js.native
     
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
     /**
-      * specifies a graphic to be displayed besides the label of the control
-      *
-      * If this property is present, it interacts with the {@link ImageURL} in the following way: If {@link ImageURL} is set, {@link Graphic} will be reset to
-      * an object as loaded from the given image URL, or `NULL` if {@link ImageURL} does not point to a valid image file.If {@link Graphic} is set, {@link
-      * ImageURL} will be reset to an empty string.
-      * @since OOo 2.1
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var Graphic: XGraphic = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /**
-      * specifies the position of the image, if any, relative to the text, if any
-      *
-      * Valid values of this property are specified with {@link ImagePosition} .
-      */
-    var ImagePosition: Double = js.native
-    
-    /**
-      * specifies an URL to an image to display besides the label of the control
-      * @see Graphic
-      */
-    var ImageURL: String = js.native
-    
-    /** specifies the label of the control. */
-    var Label: String = js.native
-    
-    /**
-      * specifies that the text may be displayed on more than one line.
-      * @since OOo 2.0
-      */
-    var MultiLine: Boolean = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
     /**
       * contains a reference value which is used for submission in a HTML form
@@ -128,47 +99,8 @@ object component {
       */
     var RefValue: String = js.native
     
-    /**
-      * specifies the state of the control.
-      *
-      * `; 0: not checked; 1: checked; 2: don't know; `
-      */
-    var State: Double = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /** specifies that the control may have the state "don't know". */
-    var TriState: Boolean = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 2.0
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * specifies a visual effect to apply to the check box control
-      *
-      * Possible values for this property are {@link VisualEffect.FLAT} and {@link VisualEffect.LOOK3D} .
-      * @see com.sun.star.awt.VisualEffect
-      * @since OOo 2.0
-      */
-    var VisualEffect: Double = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
-      * @since OOo 3.1
-      */
-    var WritingMode: Double = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -176,51 +108,38 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /** specifies a component which allows the input of text or selection of text from a list of text values. */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlComboBoxModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined Align, Autocomplete, BackgroundColor, Border, BorderColor, Dropdown, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, HideInactiveSelection, LineCount, MaxTextLen, MouseWheelBehavior, Printable, ReadOnly, StringItemList, Tabstop, Text, TextColor, TextLineColor, WritingMode */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait ComboBox
-    extends FormControlModel
+    extends StObject
+       with UnoControlComboBoxModel
        with XReset
-       with XItemList {
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the horizontal alignment of the text in the control.
-      *
-      * `; 0: left; 1: center; 2: right; `
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var Align: Double = js.native
-    
-    /** specifies whether automatic completion of text is enabled. */
-    var Autocomplete: Boolean = js.native
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
-    
-    /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
-      */
-    var BorderColor: Double = js.native
+    var ClassId: Double = js.native
     
     /**
       * contains a default value for the control.
@@ -231,79 +150,15 @@ object component {
       */
     var DefaultText: String = js.native
     
-    /** specifies if the control has a drop down button. */
-    var Dropdown: Boolean = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
     /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var HideInactiveSelection: Boolean = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
-    /** specifies the maximum line count displayed in the drop down box. */
-    var LineCount: Double = js.native
-    
-    /**
-      * specifies the maximum character count.
-      *
-      * There's no limitation, if set to 0.
-      */
-    var MaxTextLen: Double = js.native
-    
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
-      *
-      * Usually, the mouse wheel scroll through the control's entry list. Using this property, and one of the {@link MouseWheelBehavior} constants, you can
-      * control under which circumstances this is possible.
-      */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /** specifies the list of items. */
-    var StringItemList: SafeArray[String] = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text displayed in the control. */
-    var Text: String = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
-      * @since OOo 3.1
-      */
-    var WritingMode: Double = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -311,6 +166,9 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /**
@@ -319,34 +177,34 @@ object component {
     */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlButtonModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined Align, BackgroundColor, DefaultButton, Enabled, FocusOnClick, FontDescriptor, FontEmphasisMark, FontRelief, Graphic, HelpText, HelpURL, ImageAlign, ImagePosition, ImageURL, Label, MultiLine, Printable, PushButtonType, Repeat, RepeatDelay, State, Tabstop, TextColor, TextLineColor, Toggle, VerticalAlign */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait CommandButton
-    extends FormControlModel
+    extends StObject
+       with UnoControlButtonModel
        with XImageProducerSupplier
-       with XReset {
-    
-    /**
-      * specifies the horizontal alignment of the text in the control.
-      *
-      * `; 0: left; 1: center; 2: right; `
-      */
-    var Align: Double = js.native
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
+       with XReset
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /** describes the action to be executed by the button when pressed. */
     var ButtonType: FormButtonType = js.native
     
-    /** specifies that the button is the default button on the document. */
-    var DefaultButton: Boolean = js.native
+    /**
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
+      */
+    var ClassId: Double = js.native
     
     /**
       * specifies the default toggle state for the button, used when it is reset.
@@ -359,108 +217,12 @@ object component {
       */
     var DefaultState: Boolean = js.native
     
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
     /**
-      * specifies whether the button control should grab the focus when clicked.
-      *
-      * If set to `TRUE` (which is the default), the button control automatically grabs the focus when the user clicks onto it with the mouse. ;  If set to
-      * `FALSE` , the focus is preserved when the user operates the button control with the mouse.
-      * @since OOo 2.0
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var FocusOnClick: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /**
-      * specifies a graphic to be displayed at the button
-      *
-      * If this property is present, it interacts with the {@link ImageURL} in the following way: If {@link ImageURL} is set, {@link Graphic} will be reset to
-      * an object as loaded from the given image URL, or `NULL` if {@link ImageURL} does not point to a valid image file.If {@link Graphic} is set, {@link
-      * ImageURL} will be reset to an empty string.
-      * @since OOo 2.1
-      */
-    var Graphic: XGraphic = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /** specifies the alignment of the image inside the button as {@link ImageAlign} value. */
-    var ImageAlign: Double = js.native
-    
-    /**
-      * specifies the position of the image, if any, relative to the text, if any
-      *
-      * Valid values of this property are specified with {@link ImagePosition} .
-      *
-      * If this property is present, it supersedes the {@link ImageAlign} property - setting one of both properties sets the other one to the best possible
-      * match.
-      */
-    var ImagePosition: Double = js.native
-    
-    /**
-      * specifies an URL to an image to use for the button.
-      * @see Graphic
-      */
-    var ImageURL: String = js.native
-    
-    /** specifies the label of the control. */
-    var Label: String = js.native
-    
-    /**
-      * specifies that the text may be displayed on more than one line.
-      * @since OOo 2.0
-      */
-    var MultiLine: Boolean = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies the default action of the button as PushButtonType value. */
-    var PushButtonType: Double = js.native
-    
-    /**
-      * specifies whether the control should show repeating behavior.
-      *
-      * Normally, when you click a button with the mouse, you need to release the mouse button, and press it again. With this property set to `TRUE` , the
-      * button is repeatedly pressed while you hold down the mouse button.
-      * @since OOo 2.0
-      */
-    var Repeat: Boolean = js.native
-    
-    /**
-      * specifies the mouse repeat delay, in milliseconds.
-      *
-      * When the user presses a mouse in a control area where this triggers an action (such as pressing the button), then usual control implementations allow
-      * to repeatedly trigger this action, without the need to release the mouse button and to press it again. The delay between two such triggers is
-      * specified with this property.
-      * @since OOo 2.0
-      */
-    var RepeatDelay: Double = js.native
-    
-    /**
-      * specifies the state of the control.
-      *
-      * If {@link Toggle} property is set to `TRUE` , the pressed state is enabled and its pressed state can be obtained with this property.
-      *
-      * `; 0: not pressed; 1: pressed; 2: don't know; `
-      * @see Toggle
-      */
-    var State: Double = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
     /**
       * describes the frame, where to open the document specified by the TargetURL.
@@ -479,28 +241,8 @@ object component {
       */
     var TargetURL: String = js.native
     
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /**
-      * specifies whether the button should toggle on a single operation.
-      *
-      * If this property is set to `TRUE` , a single operation of the button control (pressing space while it is focused, or clicking onto it) toggles it
-      * between a **pressed** and a **not pressed** state.
-      *
-      * The default for this property is `FALSE` , which means the button behaves like a usual push button.
-      * @since OOo 2.0
-      */
-    var Toggle: Boolean = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 2.0
-      */
-    var VerticalAlign: VerticalAlignment = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -508,46 +250,38 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /** This service specifies the ControlModel for an edit field which contains a currency value. */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlCurrencyFieldModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, CurrencySymbol, DecimalAccuracy, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, HideInactiveSelection, MouseWheelBehavior, PrependCurrencySymbol, Printable, ReadOnly, Repeat, RepeatDelay, ShowThousandsSeparator, Spin, StrictFormat, Tabstop, TextColor, TextLineColor, Value, ValueMax, ValueMin, ValueStep, VerticalAlign, WritingMode */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait CurrencyField
-    extends FormControlModel
-       with XReset {
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
+    extends StObject
+       with UnoControlCurrencyFieldModel
+       with XReset
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var BorderColor: Double = js.native
-    
-    /** specifies the currency symbol. */
-    var CurrencySymbol: String = js.native
-    
-    /** specifies the decimal accuracy. */
-    var DecimalAccuracy: Double = js.native
+    var ClassId: Double = js.native
     
     /**
       * contains a default value for the control.
@@ -556,106 +290,15 @@ object component {
       */
     var DefaultValue: Double = js.native
     
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
     /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var HideInactiveSelection: Boolean = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
-      *
-      * Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the {@link MouseWheelBehavior} constants,
-      * you can control under which circumstances this is possible.
-      */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies whether the currency symbol is to be prepended. */
-    var PrependCurrencySymbol: Boolean = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /**
-      * specifies whether the mouse should show repeating behavior, i.e. repeatedly trigger an action when keeping pressed.
-      * @since OOo 2.0
-      */
-    var Repeat: Boolean = js.native
-    
-    /**
-      * specifies the mouse repeat delay, in milliseconds.
-      *
-      * When the user presses a mouse in a control area where this triggers an action (such as spinning the value), then usual control implementations allow
-      * to repeatedly trigger this action, without the need to release the mouse button and to press it again. The delay between two such triggers is
-      * specified with this property.
-      * @since OOo 2.0
-      */
-    var RepeatDelay: Double = js.native
-    
-    /** specifies whether the thousands separator is to be displayed. */
-    var ShowThousandsSeparator: Boolean = js.native
-    
-    /** specifies that the control has a spin button. */
-    var Spin: Boolean = js.native
-    
-    /** specifies that the value is checked during the user input. */
-    var StrictFormat: Boolean = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /** specifies the value displayed in the control. */
-    var Value: Double = js.native
-    
-    /** specifies the maximum value that can be entered. */
-    var ValueMax: Double = js.native
-    
-    /** specifies the minimum value that can be entered. */
-    var ValueMin: Double = js.native
-    
-    /** specifies the value step when using the spin button. */
-    var ValueStep: Double = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 3.3
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
-      * @since OOo 3.1
-      */
-    var WritingMode: Double = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -663,6 +306,9 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /**
@@ -674,7 +320,8 @@ object component {
     */
   @js.native
   trait DataForm
-    extends RowSet
+    extends StObject
+       with RowSet
        with Form
        with XReset
        with XLoadable
@@ -765,131 +412,72 @@ object component {
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.XReset because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlCheckBoxModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined Align, BackgroundColor, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, Graphic, HelpText, HelpURL, ImagePosition, ImageURL, Label, MultiLine, Printable, State, Tabstop, TextColor, TextLineColor, TriState, VerticalAlign, VisualEffect, WritingMode
-  - typings.activexLibreoffice.com_.sun.star.form.component.CheckBox because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultState, RefValue */ @js.native
-  trait DatabaseCheckBox extends DataAwareControlModel {
+  - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined BoundField, DataField, InputRequired, LabelControl */ @js.native
+  trait DatabaseCheckBox
+    extends StObject
+       with CheckBox
+       with XBoundComponent
+       with XLoadListener {
     
     /**
-      * specifies the horizontal alignment of the text in the control.
+      * references to the cursor field to which the control is bound.
       *
-      * `; 0: left; 1: center; 2: right; `
-      * @since OOo 2.0
+      * Applies only if the form the control model belongs to is loaded and the control is valid bound. The referenced field supports the {@link
+      * com.sun.star.sdb.Column} service.
+      * @see DataAwareControlModel.DataField
       */
-    var Align: Double = js.native
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Double = js.native
+    var BoundField: XPropertySet = js.native
     
     /**
-      * contains a default value for the control.
+      * specifies the name of the bound database field.
       *
-      * This value is used when the control is initially displayed, and for resetting it.
-      * @see com.sun.star.awt.UnoControlCheckBoxModel.State
-      * @see com.sun.star.form.XReset
-      */
-    var DefaultState: Double = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /**
-      * specifies a graphic to be displayed besides the label of the control
+      * This property makes sense in the **context** of the control model only. Normally, a control model is a child of a {@link
+      * com.sun.star.form.component.DataForm} , which is bound to a higher level object such as a table or query - more general, a result set. ;  This member
+      * here describes the column of this result set which the control should act for.
       *
-      * If this property is present, it interacts with the {@link ImageURL} in the following way: If {@link ImageURL} is set, {@link Graphic} will be reset to
-      * an object as loaded from the given image URL, or `NULL` if {@link ImageURL} does not point to a valid image file.If {@link Graphic} is set, {@link
-      * ImageURL} will be reset to an empty string.
-      * @since OOo 2.1
+      * Not every control model can be bound to every database column. Usually, super services of the {@link DataAwareControlModel} restrict the column types
+      * they can be used with.
+      * @see DataAwareControlModel.BoundField
       */
-    var Graphic: XGraphic = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
+    var DataField: String = js.native
     
     /**
-      * specifies the position of the image, if any, relative to the text, if any
+      * determines whether or not input into this field is required, when it is actually bound to a database field.
       *
-      * Valid values of this property are specified with {@link ImagePosition} .
-      */
-    var ImagePosition: Double = js.native
-    
-    /**
-      * specifies an URL to an image to display besides the label of the control
-      * @see Graphic
-      */
-    var ImageURL: String = js.native
-    
-    /** specifies the label of the control. */
-    var Label: String = js.native
-    
-    /**
-      * specifies that the text may be displayed on more than one line.
-      * @since OOo 2.0
-      */
-    var MultiLine: Boolean = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /**
-      * contains a reference value which is used for submission in a HTML form
-      *
-      * When submitting a {@link HTMLForm} which contains a check box, which is checked, the RefValue is used for submission.
-      */
-    var RefValue: String = js.native
-    
-    /**
-      * specifies the state of the control.
-      *
-      * `; 0: not checked; 1: checked; 2: don't know; `
-      */
-    var State: Double = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /** specifies that the control may have the state "don't know". */
-    var TriState: Boolean = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 2.0
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * specifies a visual effect to apply to the check box control
-      *
-      * Possible values for this property are {@link VisualEffect.FLAT} and {@link VisualEffect.LOOK3D} .
-      * @see com.sun.star.awt.VisualEffect
-      * @since OOo 2.0
-      */
-    var VisualEffect: Double = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
+      * If this property is set to `FALSE` , then the form runtime will not check the control/model for `NULL` values before submitting data to the database.
+      * Usually, if a control model is bound to a database field which cannot be `NULL` , and the model itself does not have a value, then the database update
+      * is prevented, showing an error message to the user. To disable this behavior on a per-control basis, use the `InputRequired` property.
       * @since OOo 3.1
       */
-    var WritingMode: Double = js.native
+    var InputRequired: Boolean = js.native
+    
+    /**
+      * references to a control model within the same document which should be used as a label.
+      *
+      * Any user interface action which needs to refer to the control is assumed to use this property. ;  A very common design method for forms is to group a
+      * data aware control with a label control, with the latter describing the content of the former. For instance, you may have a {@link
+      * com.sun.star.form.component.TextField} , which is bound to the e-mail column of your data source. Then you will probably add a {@link
+      * com.sun.star.form.component.FixedText} whose label is "E-Mail", and associate it with the TextField by setting it as {@link LabelControl} . ;  Now if
+      * you imagine a component offering data search in a form, this component will examine the {@link LabelControl} property, find the {@link
+      * com.sun.star.form.component.FixedText} , examine it's label, and use this label to refer to the {@link com.sun.star.form.component.TextField} .
+      *
+      * When setting the property, a number of constraints apply: The object which is to be set has to support the following interfaces {@link
+      * com.sun.star.awt.XControlModel}{@link com.sun.star.lang.XServiceInfo}{@link com.sun.star.beans.XPropertySet}{@link com.sun.star.container.XChild}It
+      * has to be a part of the same document as the model who's property is to be modified.Additionally, the support of a special service, indicating that
+      * the model is of the right type, is required. Which kind of service is in the request depends on the type of the control model. ;
+      *
+      * For instance, text fields ( {@link com.sun.star.form.component.TextField} ) can be labeled by label controls only ( {@link
+      * com.sun.star.form.component.FixedText} ), and radio buttons ( {@link com.sun.star.form.component.RadioButton} ) can be labeled by group boxes ( {@link
+      * com.sun.star.form.component.GroupBox} ) only.
+      */
+    var LabelControl: XPropertySet = js.native
+    
+    /**
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+      */
+    /* InferMemberOverrides */
+    override def getPropertySetInfo(): XPropertySetInfo = js.native
   }
   
   /**
@@ -920,39 +508,21 @@ object component {
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.XReset because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlComboBoxModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined Align, Autocomplete, BackgroundColor, Border, BorderColor, Dropdown, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, HideInactiveSelection, LineCount, MaxTextLen, MouseWheelBehavior, Printable, ReadOnly, StringItemList, Tabstop, Text, TextColor, TextLineColor, WritingMode
-  - typings.activexLibreoffice.com_.sun.star.form.component.ComboBox because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultText */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined BoundField, DataField, InputRequired, LabelControl */ @js.native
   trait DatabaseComboBox
-    extends DataAwareControlModel
-       with XItemList {
+    extends StObject
+       with ComboBox
+       with XBoundComponent
+       with XLoadListener {
     
     /**
-      * specifies the horizontal alignment of the text in the control.
+      * references to the cursor field to which the control is bound.
       *
-      * `; 0: left; 1: center; 2: right; `
+      * Applies only if the form the control model belongs to is loaded and the control is valid bound. The referenced field supports the {@link
+      * com.sun.star.sdb.Column} service.
+      * @see DataAwareControlModel.DataField
       */
-    var Align: Double = js.native
-    
-    /** specifies whether automatic completion of text is enabled. */
-    var Autocomplete: Boolean = js.native
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
-    
-    /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
-      */
-    var BorderColor: Double = js.native
+    var BoundField: XPropertySet = js.native
     
     /**
       * determines if an empty text should be treated as a `NULL` value.
@@ -965,43 +535,48 @@ object component {
     var ConvertEmptyToNull: Boolean = js.native
     
     /**
-      * contains a default value for the control.
+      * specifies the name of the bound database field.
       *
-      * This value is used when the control is initially displayed, and for resetting it.
-      * @see com.sun.star.awt.UnoControlComboBoxModel.Text
-      * @see com.sun.star.form.XReset
+      * This property makes sense in the **context** of the control model only. Normally, a control model is a child of a {@link
+      * com.sun.star.form.component.DataForm} , which is bound to a higher level object such as a table or query - more general, a result set. ;  This member
+      * here describes the column of this result set which the control should act for.
+      *
+      * Not every control model can be bound to every database column. Usually, super services of the {@link DataAwareControlModel} restrict the column types
+      * they can be used with.
+      * @see DataAwareControlModel.BoundField
       */
-    var DefaultText: String = js.native
-    
-    /** specifies if the control has a drop down button. */
-    var Dropdown: Boolean = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
+    var DataField: String = js.native
     
     /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
+      * determines whether or not input into this field is required, when it is actually bound to a database field.
+      *
+      * If this property is set to `FALSE` , then the form runtime will not check the control/model for `NULL` values before submitting data to the database.
+      * Usually, if a control model is bound to a database field which cannot be `NULL` , and the model itself does not have a value, then the database update
+      * is prevented, showing an error message to the user. To disable this behavior on a per-control basis, use the `InputRequired` property.
+      * @since OOo 3.1
       */
-    var HideInactiveSelection: Boolean = js.native
+    var InputRequired: Boolean = js.native
     
-    /** specifies the maximum line count displayed in the drop down box. */
-    var LineCount: Double = js.native
+    /**
+      * references to a control model within the same document which should be used as a label.
+      *
+      * Any user interface action which needs to refer to the control is assumed to use this property. ;  A very common design method for forms is to group a
+      * data aware control with a label control, with the latter describing the content of the former. For instance, you may have a {@link
+      * com.sun.star.form.component.TextField} , which is bound to the e-mail column of your data source. Then you will probably add a {@link
+      * com.sun.star.form.component.FixedText} whose label is "E-Mail", and associate it with the TextField by setting it as {@link LabelControl} . ;  Now if
+      * you imagine a component offering data search in a form, this component will examine the {@link LabelControl} property, find the {@link
+      * com.sun.star.form.component.FixedText} , examine it's label, and use this label to refer to the {@link com.sun.star.form.component.TextField} .
+      *
+      * When setting the property, a number of constraints apply: The object which is to be set has to support the following interfaces {@link
+      * com.sun.star.awt.XControlModel}{@link com.sun.star.lang.XServiceInfo}{@link com.sun.star.beans.XPropertySet}{@link com.sun.star.container.XChild}It
+      * has to be a part of the same document as the model who's property is to be modified.Additionally, the support of a special service, indicating that
+      * the model is of the right type, is required. Which kind of service is in the request depends on the type of the control model. ;
+      *
+      * For instance, text fields ( {@link com.sun.star.form.component.TextField} ) can be labeled by label controls only ( {@link
+      * com.sun.star.form.component.FixedText} ), and radio buttons ( {@link com.sun.star.form.component.RadioButton} ) can be labeled by group boxes ( {@link
+      * com.sun.star.form.component.GroupBox} ) only.
+      */
+    var LabelControl: XPropertySet = js.native
     
     /**
       * describes the source of items in the combo box's list.
@@ -1017,50 +592,6 @@ object component {
       * usually ignore it and leave the list empty.
       */
     var ListSourceType: typings.activexLibreoffice.com_.sun.star.form.ListSourceType = js.native
-    
-    /**
-      * specifies the maximum character count.
-      *
-      * There's no limitation, if set to 0.
-      */
-    var MaxTextLen: Double = js.native
-    
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
-      *
-      * Usually, the mouse wheel scroll through the control's entry list. Using this property, and one of the {@link MouseWheelBehavior} constants, you can
-      * control under which circumstances this is possible.
-      */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /** specifies the list of items. */
-    var StringItemList: SafeArray[String] = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text displayed in the control. */
-    var Text: String = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
-      * @since OOo 3.1
-      */
-    var WritingMode: Double = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -1093,141 +624,72 @@ object component {
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.XReset because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlCurrencyFieldModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, CurrencySymbol, DecimalAccuracy, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, HideInactiveSelection, MouseWheelBehavior, PrependCurrencySymbol, Printable, ReadOnly, Repeat, RepeatDelay, ShowThousandsSeparator, Spin, StrictFormat, Tabstop, TextColor, TextLineColor, Value, ValueMax, ValueMin, ValueStep, VerticalAlign, WritingMode
-  - typings.activexLibreoffice.com_.sun.star.form.component.CurrencyField because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultValue */ @js.native
-  trait DatabaseCurrencyField extends DataAwareControlModel {
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
+  - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined BoundField, DataField, InputRequired, LabelControl */ @js.native
+  trait DatabaseCurrencyField
+    extends StObject
+       with CurrencyField
+       with XBoundComponent
+       with XLoadListener {
     
     /**
-      * specifies the border style of the control.
+      * references to the cursor field to which the control is bound.
       *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
+      * Applies only if the form the control model belongs to is loaded and the control is valid bound. The referenced field supports the {@link
+      * com.sun.star.sdb.Column} service.
+      * @see DataAwareControlModel.DataField
       */
-    var Border: Double = js.native
+    var BoundField: XPropertySet = js.native
     
     /**
-      * specifies the color of the border, if present
+      * specifies the name of the bound database field.
       *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
-      */
-    var BorderColor: Double = js.native
-    
-    /** specifies the currency symbol. */
-    var CurrencySymbol: String = js.native
-    
-    /** specifies the decimal accuracy. */
-    var DecimalAccuracy: Double = js.native
-    
-    /**
-      * contains a default value for the control.
-      * @see com.sun.star.awt.UnoControlCurrencyFieldModel.Value
-      * @see com.sun.star.form.XReset
-      */
-    var DefaultValue: Double = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
-      */
-    var HideInactiveSelection: Boolean = js.native
-    
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
+      * This property makes sense in the **context** of the control model only. Normally, a control model is a child of a {@link
+      * com.sun.star.form.component.DataForm} , which is bound to a higher level object such as a table or query - more general, a result set. ;  This member
+      * here describes the column of this result set which the control should act for.
       *
-      * Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the {@link MouseWheelBehavior} constants,
-      * you can control under which circumstances this is possible.
+      * Not every control model can be bound to every database column. Usually, super services of the {@link DataAwareControlModel} restrict the column types
+      * they can be used with.
+      * @see DataAwareControlModel.BoundField
       */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies whether the currency symbol is to be prepended. */
-    var PrependCurrencySymbol: Boolean = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
+    var DataField: String = js.native
     
     /**
-      * specifies whether the mouse should show repeating behavior, i.e. repeatedly trigger an action when keeping pressed.
-      * @since OOo 2.0
-      */
-    var Repeat: Boolean = js.native
-    
-    /**
-      * specifies the mouse repeat delay, in milliseconds.
+      * determines whether or not input into this field is required, when it is actually bound to a database field.
       *
-      * When the user presses a mouse in a control area where this triggers an action (such as spinning the value), then usual control implementations allow
-      * to repeatedly trigger this action, without the need to release the mouse button and to press it again. The delay between two such triggers is
-      * specified with this property.
-      * @since OOo 2.0
-      */
-    var RepeatDelay: Double = js.native
-    
-    /** specifies whether the thousands separator is to be displayed. */
-    var ShowThousandsSeparator: Boolean = js.native
-    
-    /** specifies that the control has a spin button. */
-    var Spin: Boolean = js.native
-    
-    /** specifies that the value is checked during the user input. */
-    var StrictFormat: Boolean = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /** specifies the value displayed in the control. */
-    var Value: Double = js.native
-    
-    /** specifies the maximum value that can be entered. */
-    var ValueMax: Double = js.native
-    
-    /** specifies the minimum value that can be entered. */
-    var ValueMin: Double = js.native
-    
-    /** specifies the value step when using the spin button. */
-    var ValueStep: Double = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 3.3
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
+      * If this property is set to `FALSE` , then the form runtime will not check the control/model for `NULL` values before submitting data to the database.
+      * Usually, if a control model is bound to a database field which cannot be `NULL` , and the model itself does not have a value, then the database update
+      * is prevented, showing an error message to the user. To disable this behavior on a per-control basis, use the `InputRequired` property.
       * @since OOo 3.1
       */
-    var WritingMode: Double = js.native
+    var InputRequired: Boolean = js.native
+    
+    /**
+      * references to a control model within the same document which should be used as a label.
+      *
+      * Any user interface action which needs to refer to the control is assumed to use this property. ;  A very common design method for forms is to group a
+      * data aware control with a label control, with the latter describing the content of the former. For instance, you may have a {@link
+      * com.sun.star.form.component.TextField} , which is bound to the e-mail column of your data source. Then you will probably add a {@link
+      * com.sun.star.form.component.FixedText} whose label is "E-Mail", and associate it with the TextField by setting it as {@link LabelControl} . ;  Now if
+      * you imagine a component offering data search in a form, this component will examine the {@link LabelControl} property, find the {@link
+      * com.sun.star.form.component.FixedText} , examine it's label, and use this label to refer to the {@link com.sun.star.form.component.TextField} .
+      *
+      * When setting the property, a number of constraints apply: The object which is to be set has to support the following interfaces {@link
+      * com.sun.star.awt.XControlModel}{@link com.sun.star.lang.XServiceInfo}{@link com.sun.star.beans.XPropertySet}{@link com.sun.star.container.XChild}It
+      * has to be a part of the same document as the model who's property is to be modified.Additionally, the support of a special service, indicating that
+      * the model is of the right type, is required. Which kind of service is in the request depends on the type of the control model. ;
+      *
+      * For instance, text fields ( {@link com.sun.star.form.component.TextField} ) can be labeled by label controls only ( {@link
+      * com.sun.star.form.component.FixedText} ), and radio buttons ( {@link com.sun.star.form.component.RadioButton} ) can be labeled by group boxes ( {@link
+      * com.sun.star.form.component.GroupBox} ) only.
+      */
+    var LabelControl: XPropertySet = js.native
+    
+    /**
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+      */
+    /* InferMemberOverrides */
+    override def getPropertySetInfo(): XPropertySetInfo = js.native
   }
   
   /** This service specifies a date field which is data-aware, and can be bound to a database field. */
@@ -1253,148 +715,72 @@ object component {
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.XReset because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDateFieldModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, Date, DateFormat, DateMax, DateMin, DateShowCentury, Dropdown, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, HideInactiveSelection, MouseWheelBehavior, Printable, ReadOnly, Repeat, RepeatDelay, Spin, StrictFormat, Tabstop, Text, TextColor, TextLineColor, VerticalAlign, WritingMode
-  - typings.activexLibreoffice.com_.sun.star.form.component.DateField because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultDate */ @js.native
-  trait DatabaseDateField extends DataAwareControlModel {
-    
-    /** specifies the background color(RGB) of the control. */
-    var BackgroundColor: Color = js.native
+  - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined BoundField, DataField, InputRequired, LabelControl */ @js.native
+  trait DatabaseDateField
+    extends StObject
+       with DateField
+       with XBoundComponent
+       with XLoadListener {
     
     /**
-      * specifies the border style of the control.
+      * references to the cursor field to which the control is bound.
       *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
+      * Applies only if the form the control model belongs to is loaded and the control is valid bound. The referenced field supports the {@link
+      * com.sun.star.sdb.Column} service.
+      * @see DataAwareControlModel.DataField
       */
-    var Border: Double = js.native
+    var BoundField: XPropertySet = js.native
     
     /**
-      * specifies the color of the border, if present
+      * specifies the name of the bound database field.
       *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
-      */
-    var BorderColor: Double = js.native
-    
-    /** specifies the date displayed in the control. */
-    var Date: typings.activexLibreoffice.com_.sun.star.util.Date = js.native
-    
-    /**
-      * specifies the format of the displayed date.
+      * This property makes sense in the **context** of the control model only. Normally, a control model is a child of a {@link
+      * com.sun.star.form.component.DataForm} , which is bound to a higher level object such as a table or query - more general, a result set. ;  This member
+      * here describes the column of this result set which the control should act for.
       *
-      * `; 0:   system short; 1:   system short YY; 2:   system short YYYY; 3:   system long; 4:   short DDMMYY; 5:   short MMDDYY; 6:   short YYMMDD; 7:
-      * short DDMMYYYY; 8:   short MMDDYYYY; 9:   short YYYYMMDD; 10:  short YYMMDD DIN5008; 11:  short YYYYMMDD DIN5008; `
+      * Not every control model can be bound to every database column. Usually, super services of the {@link DataAwareControlModel} restrict the column types
+      * they can be used with.
+      * @see DataAwareControlModel.BoundField
       */
-    var DateFormat: Double = js.native
-    
-    /** specifies the maximum date that can be entered. */
-    var DateMax: Date = js.native
-    
-    /** specifies the minimum date that can be entered. */
-    var DateMin: Date = js.native
-    
-    /** specifies, if the date century is displayed. */
-    var DateShowCentury: Boolean = js.native
+    var DataField: String = js.native
     
     /**
-      * contains a default value for the control.
+      * determines whether or not input into this field is required, when it is actually bound to a database field.
       *
-      * This value is used when the control is initially displayed, and for resetting it.
-      * @see com.sun.star.awt.UnoControlDateFieldModel.Date
-      * @see com.sun.star.form.XReset
-      */
-    var DefaultDate: Double = js.native
-    
-    /** specifies, if the control has a dropdown button. */
-    var Dropdown: Boolean = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
-      */
-    var HideInactiveSelection: Boolean = js.native
-    
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
-      *
-      * Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the {@link MouseWheelBehavior} constants,
-      * you can control under which circumstances this is possible.
-      */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /**
-      * specifies whether the mouse should show repeating behavior, i.e. repeatedly trigger an action when keeping pressed.
-      * @since OOo 2.0
-      */
-    var Repeat: Boolean = js.native
-    
-    /**
-      * specifies the mouse repeat delay, in milliseconds.
-      *
-      * When the user presses a mouse in a control area where this triggers an action (such as spinning the value), then usual control implementations allow
-      * to repeatedly trigger this action, without the need to release the mouse button and to press it again. The delay between two such triggers is
-      * specified with this property.
-      * @since OOo 2.0
-      */
-    var RepeatDelay: Double = js.native
-    
-    /** specifies that the control has a spin button. */
-    var Spin: Boolean = js.native
-    
-    /** specifies that the date is checked during the user input. */
-    var StrictFormat: Boolean = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /**
-      * specifies the text displayed in the control.
-      * @since OOo 2.0
-      */
-    var Text: String = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 3.3
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
+      * If this property is set to `FALSE` , then the form runtime will not check the control/model for `NULL` values before submitting data to the database.
+      * Usually, if a control model is bound to a database field which cannot be `NULL` , and the model itself does not have a value, then the database update
+      * is prevented, showing an error message to the user. To disable this behavior on a per-control basis, use the `InputRequired` property.
       * @since OOo 3.1
       */
-    var WritingMode: Double = js.native
+    var InputRequired: Boolean = js.native
+    
+    /**
+      * references to a control model within the same document which should be used as a label.
+      *
+      * Any user interface action which needs to refer to the control is assumed to use this property. ;  A very common design method for forms is to group a
+      * data aware control with a label control, with the latter describing the content of the former. For instance, you may have a {@link
+      * com.sun.star.form.component.TextField} , which is bound to the e-mail column of your data source. Then you will probably add a {@link
+      * com.sun.star.form.component.FixedText} whose label is "E-Mail", and associate it with the TextField by setting it as {@link LabelControl} . ;  Now if
+      * you imagine a component offering data search in a form, this component will examine the {@link LabelControl} property, find the {@link
+      * com.sun.star.form.component.FixedText} , examine it's label, and use this label to refer to the {@link com.sun.star.form.component.TextField} .
+      *
+      * When setting the property, a number of constraints apply: The object which is to be set has to support the following interfaces {@link
+      * com.sun.star.awt.XControlModel}{@link com.sun.star.lang.XServiceInfo}{@link com.sun.star.beans.XPropertySet}{@link com.sun.star.container.XChild}It
+      * has to be a part of the same document as the model who's property is to be modified.Additionally, the support of a special service, indicating that
+      * the model is of the right type, is required. Which kind of service is in the request depends on the type of the control model. ;
+      *
+      * For instance, text fields ( {@link com.sun.star.form.component.TextField} ) can be labeled by label controls only ( {@link
+      * com.sun.star.form.component.FixedText} ), and radio buttons ( {@link com.sun.star.form.component.RadioButton} ) can be labeled by group boxes ( {@link
+      * com.sun.star.form.component.GroupBox} ) only.
+      */
+    var LabelControl: XPropertySet = js.native
+    
+    /**
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+      */
+    /* InferMemberOverrides */
+    override def getPropertySetInfo(): XPropertySetInfo = js.native
   }
   
   /** This service specifies a formatted field model which is data-aware, and can be bound to a database field. */
@@ -1420,34 +806,21 @@ object component {
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.XReset because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlFormattedFieldModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined Align, BackgroundColor, Border, BorderColor, EffectiveDefault, EffectiveMax, EffectiveMin, EffectiveValue, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, FormatKey, FormatsSupplier, HelpText, HelpURL, HideInactiveSelection, MaxTextLen, MouseWheelBehavior, Printable, ReadOnly, Repeat, RepeatDelay, Spin, StrictFormat, Tabstop, Text, TextColor, TextLineColor, TreatAsNumber, VerticalAlign, WritingMode
-  - typings.activexLibreoffice.com_.sun.star.form.component.FormattedField because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
-  trait DatabaseFormattedField extends DataAwareControlModel {
+  - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined BoundField, DataField, InputRequired, LabelControl */ @js.native
+  trait DatabaseFormattedField
+    extends StObject
+       with FormattedField
+       with XBoundComponent
+       with XLoadListener {
     
     /**
-      * specifies the horizontal alignment of the text in the control.
+      * references to the cursor field to which the control is bound.
       *
-      * `; 0: left; 1: center; 2: right; `
+      * Applies only if the form the control model belongs to is loaded and the control is valid bound. The referenced field supports the {@link
+      * com.sun.star.sdb.Column} service.
+      * @see DataAwareControlModel.DataField
       */
-    var Align: Double = js.native
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
-    
-    /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
-      */
-    var BorderColor: Double = js.native
+    var BoundField: XPropertySet = js.native
     
     /**
       * determines if an empty text should be treated as a `NULL` value.
@@ -1460,143 +833,55 @@ object component {
     var ConvertEmptyToNull: Boolean = js.native
     
     /**
-      * specifies the default value of the formatted field.
+      * specifies the name of the bound database field.
       *
-      * This may be a numeric value (double) or a string, depending on the formatting of the field.
-      */
-    var EffectiveDefault: js.Any = js.native
-    
-    /**
-      * specifies the maximum value that can be entered.
+      * This property makes sense in the **context** of the control model only. Normally, a control model is a child of a {@link
+      * com.sun.star.form.component.DataForm} , which is bound to a higher level object such as a table or query - more general, a result set. ;  This member
+      * here describes the column of this result set which the control should act for.
       *
-      * This property is ignored if the format of the field is no numeric format.
+      * Not every control model can be bound to every database column. Usually, super services of the {@link DataAwareControlModel} restrict the column types
+      * they can be used with.
+      * @see DataAwareControlModel.BoundField
       */
-    var EffectiveMax: Double = js.native
+    var DataField: String = js.native
     
     /**
-      * specifies the minimum value that can be entered.
+      * determines whether or not input into this field is required, when it is actually bound to a database field.
       *
-      * This property is ignored if the format of the field is no numeric format.
-      */
-    var EffectiveMin: Double = js.native
-    
-    /**
-      * specifies the current value of the formatted field.
-      *
-      * This may be a numeric value (double) or a string, depending on the formatting of the field.
-      */
-    var EffectiveValue: Double = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /**
-      * specifies the format to be used when formatting the field input and output.
-      *
-      * This value is meaningful relative to the FormatsSupplier property only.
-      */
-    var FormatKey: Double = js.native
-    
-    /** supplies the formats the field should work with. */
-    var FormatsSupplier: XNumberFormatsSupplier = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
-      */
-    var HideInactiveSelection: Boolean = js.native
-    
-    /**
-      * specifies the maximum character count.
-      *
-      * There's no limitation, if set to 0.
-      */
-    var MaxTextLen: Double = js.native
-    
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
-      *
-      * Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the {@link MouseWheelBehavior} constants,
-      * you can control under which circumstances this is possible.
-      */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /**
-      * specifies whether the mouse should show repeating behavior, i.e. repeatedly trigger an action when keeping pressed.
-      * @since OOo 2.0
-      */
-    var Repeat: Boolean = js.native
-    
-    /**
-      * specifies the mouse repeat delay, in milliseconds.
-      *
-      * When the user presses a mouse in a control area where this triggers an action (such as spinning the value), then usual control implementations allow
-      * to repeatedly trigger this action, without the need to release the mouse button and to press it again. The delay between two such triggers is
-      * specified with this property.
-      * @since OOo 2.0
-      */
-    var RepeatDelay: Double = js.native
-    
-    /** specifies that the control has a spin button. */
-    var Spin: Boolean = js.native
-    
-    /**
-      * specifies that the text is checked during the user input.
-      *
-      * This property is optional - not every component implementing this service is required to provide it, as real-time input checking on a formatted field
-      * may be pretty expensive.
-      */
-    var StrictFormat: Boolean = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text displayed in the control. */
-    var Text: String = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /** specifies that the text is treated as a number. */
-    var TreatAsNumber: Boolean = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 3.3
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
+      * If this property is set to `FALSE` , then the form runtime will not check the control/model for `NULL` values before submitting data to the database.
+      * Usually, if a control model is bound to a database field which cannot be `NULL` , and the model itself does not have a value, then the database update
+      * is prevented, showing an error message to the user. To disable this behavior on a per-control basis, use the `InputRequired` property.
       * @since OOo 3.1
       */
-    var WritingMode: Double = js.native
+    var InputRequired: Boolean = js.native
+    
+    /**
+      * references to a control model within the same document which should be used as a label.
+      *
+      * Any user interface action which needs to refer to the control is assumed to use this property. ;  A very common design method for forms is to group a
+      * data aware control with a label control, with the latter describing the content of the former. For instance, you may have a {@link
+      * com.sun.star.form.component.TextField} , which is bound to the e-mail column of your data source. Then you will probably add a {@link
+      * com.sun.star.form.component.FixedText} whose label is "E-Mail", and associate it with the TextField by setting it as {@link LabelControl} . ;  Now if
+      * you imagine a component offering data search in a form, this component will examine the {@link LabelControl} property, find the {@link
+      * com.sun.star.form.component.FixedText} , examine it's label, and use this label to refer to the {@link com.sun.star.form.component.TextField} .
+      *
+      * When setting the property, a number of constraints apply: The object which is to be set has to support the following interfaces {@link
+      * com.sun.star.awt.XControlModel}{@link com.sun.star.lang.XServiceInfo}{@link com.sun.star.beans.XPropertySet}{@link com.sun.star.container.XChild}It
+      * has to be a part of the same document as the model who's property is to be modified.Additionally, the support of a special service, indicating that
+      * the model is of the right type, is required. Which kind of service is in the request depends on the type of the control model. ;
+      *
+      * For instance, text fields ( {@link com.sun.star.form.component.TextField} ) can be labeled by label controls only ( {@link
+      * com.sun.star.form.component.FixedText} ), and radio buttons ( {@link com.sun.star.form.component.RadioButton} ) can be labeled by group boxes ( {@link
+      * com.sun.star.form.component.GroupBox} ) only.
+      */
+    var LabelControl: XPropertySet = js.native
+    
+    /**
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+      */
+    /* InferMemberOverrides */
+    override def getPropertySetInfo(): XPropertySetInfo = js.native
   }
   
   /**
@@ -1632,85 +917,100 @@ object component {
     */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlImageControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, Enabled, Graphic, HelpText, HelpURL, ImageURL, Printable, ScaleImage, ScaleMode, Tabstop */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId
+  - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BoundField, DataField, InputRequired, LabelControl */ @js.native
   trait DatabaseImageControl
-    extends DataAwareControlModel
-       with XImageProducerSupplier {
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
+    extends StObject
+       with UnoControlImageControlModel
+       with XImageProducerSupplier
+       with XBoundComponent
+       with XLoadListener
+       with XReset
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the border style of the control.
+      * references to the cursor field to which the control is bound.
       *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
+      * Applies only if the form the control model belongs to is loaded and the control is valid bound. The referenced field supports the {@link
+      * com.sun.star.sdb.Column} service.
+      * @see DataAwareControlModel.DataField
       */
-    var Border: Double = js.native
+    var BoundField: XPropertySet = js.native
     
     /**
-      * specifies the color of the border, if present
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
+      */
+    var ClassId: Double = js.native
+    
+    /**
+      * specifies the name of the bound database field.
       *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
-      */
-    var BorderColor: Double = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /**
-      * specifies a graphic to be displayed on the control
+      * This property makes sense in the **context** of the control model only. Normally, a control model is a child of a {@link
+      * com.sun.star.form.component.DataForm} , which is bound to a higher level object such as a table or query - more general, a result set. ;  This member
+      * here describes the column of this result set which the control should act for.
       *
-      * If this property is present, it interacts with the {@link ImageURL} in the following way: If {@link ImageURL} is set, {@link Graphic} will be reset to
-      * an object as loaded from the given image URL, or `NULL` if {@link ImageURL} does not point to a valid image file.If {@link Graphic} is set, {@link
-      * ImageURL} will be reset to an empty string.
-      * @since OOo 2.1
+      * Not every control model can be bound to every database column. Usually, super services of the {@link DataAwareControlModel} restrict the column types
+      * they can be used with.
+      * @see DataAwareControlModel.BoundField
       */
-    var Graphic: XGraphic = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
+    var DataField: String = js.native
     
     /**
-      * specifies an URL to an image to use for the control.
-      * @see Graphic
+      * determines whether or not input into this field is required, when it is actually bound to a database field.
+      *
+      * If this property is set to `FALSE` , then the form runtime will not check the control/model for `NULL` values before submitting data to the database.
+      * Usually, if a control model is bound to a database field which cannot be `NULL` , and the model itself does not have a value, then the database update
+      * is prevented, showing an error message to the user. To disable this behavior on a per-control basis, use the `InputRequired` property.
+      * @since OOo 3.1
       */
-    var ImageURL: String = js.native
+    var InputRequired: Boolean = js.native
     
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
+    /**
+      * references to a control model within the same document which should be used as a label.
+      *
+      * Any user interface action which needs to refer to the control is assumed to use this property. ;  A very common design method for forms is to group a
+      * data aware control with a label control, with the latter describing the content of the former. For instance, you may have a {@link
+      * com.sun.star.form.component.TextField} , which is bound to the e-mail column of your data source. Then you will probably add a {@link
+      * com.sun.star.form.component.FixedText} whose label is "E-Mail", and associate it with the TextField by setting it as {@link LabelControl} . ;  Now if
+      * you imagine a component offering data search in a form, this component will examine the {@link LabelControl} property, find the {@link
+      * com.sun.star.form.component.FixedText} , examine it's label, and use this label to refer to the {@link com.sun.star.form.component.TextField} .
+      *
+      * When setting the property, a number of constraints apply: The object which is to be set has to support the following interfaces {@link
+      * com.sun.star.awt.XControlModel}{@link com.sun.star.lang.XServiceInfo}{@link com.sun.star.beans.XPropertySet}{@link com.sun.star.container.XChild}It
+      * has to be a part of the same document as the model who's property is to be modified.Additionally, the support of a special service, indicating that
+      * the model is of the right type, is required. Which kind of service is in the request depends on the type of the control model. ;
+      *
+      * For instance, text fields ( {@link com.sun.star.form.component.TextField} ) can be labeled by label controls only ( {@link
+      * com.sun.star.form.component.FixedText} ), and radio buttons ( {@link com.sun.star.form.component.RadioButton} ) can be labeled by group boxes ( {@link
+      * com.sun.star.form.component.GroupBox} ) only.
+      */
+    var LabelControl: XPropertySet = js.native
+    
+    /**
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+      */
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
     /** indicates if it is possible to change the image being displayed. */
     var ReadOnly: Boolean = js.native
     
-    /** specifies if the image is automatically scaled to the size of the control. */
-    var ScaleImage: Boolean = js.native
-    
-    /**
-      * defines how to scale the image
-      *
-      * If this property is present, it supersedes the {@link ScaleImage} property.
-      *
-      * The value of this property is one of the {@link ImageScaleMode} constants.
-      * @since OOo 3.1
-      */
-    var ScaleMode: Double = js.native
-    
-    /**
-      * specifies that the control can be reached with the TAB key.
-      * @since OOo 1.1.2
-      */
-    var Tabstop: Boolean = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -1718,6 +1018,9 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /**
@@ -1762,36 +1065,12 @@ object component {
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.XReset because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlListBoxModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined Align, BackgroundColor, Border, BorderColor, Dropdown, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, ItemSeparatorPos, LineCount, MouseWheelBehavior, MultiSelection, Printable, ReadOnly, SelectedItems, StringItemList, Tabstop, TextColor, TextLineColor, WritingMode
-  - typings.activexLibreoffice.com_.sun.star.form.component.ListBox because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultSelection, ListSource */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined BoundField, DataField, InputRequired, LabelControl */ @js.native
   trait DatabaseListBox
-    extends DataAwareControlModel
-       with XItemList {
-    
-    /**
-      * specifies the horizontal alignment of the text in the control.
-      *
-      * `; 0: left; 1: center; 2: right; `
-      */
-    var Align: Double = js.native
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
-    
-    /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
-      */
-    var BorderColor: Double = js.native
+    extends StObject
+       with ListBox
+       with XBoundComponent
+       with XLoadListener {
     
     /**
       * specifies which column of the list result set should be used for data exchange.
@@ -1815,48 +1094,57 @@ object component {
     var BoundColumn: Double = js.native
     
     /**
-      * contains the indexes of entries of the listbox, which should selected by default.
+      * references to the cursor field to which the control is bound.
       *
-      * This selection is used initially or for a reset.
-      * @see com.sun.star.awt.UnoControlListBoxModel.SelectedItems
-      * @see com.sun.star.form.XReset
+      * Applies only if the form the control model belongs to is loaded and the control is valid bound. The referenced field supports the {@link
+      * com.sun.star.sdb.Column} service.
+      * @see DataAwareControlModel.DataField
       */
-    var DefaultSelection: SafeArray[Double] = js.native
-    
-    /** specifies if the control has a drop down button. */
-    var Dropdown: Boolean = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
+    var BoundField: XPropertySet = js.native
     
     /**
-      * specifies where an item separator - a horizontal line - is drawn.
+      * specifies the name of the bound database field.
       *
-      * If this is not `NULL` , then a horizontal line will be drawn between the item at the given position, and the following item.
-      * @since OOo 3.3
+      * This property makes sense in the **context** of the control model only. Normally, a control model is a child of a {@link
+      * com.sun.star.form.component.DataForm} , which is bound to a higher level object such as a table or query - more general, a result set. ;  This member
+      * here describes the column of this result set which the control should act for.
+      *
+      * Not every control model can be bound to every database column. Usually, super services of the {@link DataAwareControlModel} restrict the column types
+      * they can be used with.
+      * @see DataAwareControlModel.BoundField
       */
-    var ItemSeparatorPos: Double = js.native
+    var DataField: String = js.native
     
-    /** specifies the maximum line count displayed in the drop down box. */
-    var LineCount: Double = js.native
+    /**
+      * determines whether or not input into this field is required, when it is actually bound to a database field.
+      *
+      * If this property is set to `FALSE` , then the form runtime will not check the control/model for `NULL` values before submitting data to the database.
+      * Usually, if a control model is bound to a database field which cannot be `NULL` , and the model itself does not have a value, then the database update
+      * is prevented, showing an error message to the user. To disable this behavior on a per-control basis, use the `InputRequired` property.
+      * @since OOo 3.1
+      */
+    var InputRequired: Boolean = js.native
     
-    /** contains the values associated to the strings to be displayed (which are specified by {@link com.sun.star.awt.UnoControlListBoxModel.StringItemList} ) */
-    var ListSource: SafeArray[String] = js.native
+    /**
+      * references to a control model within the same document which should be used as a label.
+      *
+      * Any user interface action which needs to refer to the control is assumed to use this property. ;  A very common design method for forms is to group a
+      * data aware control with a label control, with the latter describing the content of the former. For instance, you may have a {@link
+      * com.sun.star.form.component.TextField} , which is bound to the e-mail column of your data source. Then you will probably add a {@link
+      * com.sun.star.form.component.FixedText} whose label is "E-Mail", and associate it with the TextField by setting it as {@link LabelControl} . ;  Now if
+      * you imagine a component offering data search in a form, this component will examine the {@link LabelControl} property, find the {@link
+      * com.sun.star.form.component.FixedText} , examine it's label, and use this label to refer to the {@link com.sun.star.form.component.TextField} .
+      *
+      * When setting the property, a number of constraints apply: The object which is to be set has to support the following interfaces {@link
+      * com.sun.star.awt.XControlModel}{@link com.sun.star.lang.XServiceInfo}{@link com.sun.star.beans.XPropertySet}{@link com.sun.star.container.XChild}It
+      * has to be a part of the same document as the model who's property is to be modified.Additionally, the support of a special service, indicating that
+      * the model is of the right type, is required. Which kind of service is in the request depends on the type of the control model. ;
+      *
+      * For instance, text fields ( {@link com.sun.star.form.component.TextField} ) can be labeled by label controls only ( {@link
+      * com.sun.star.form.component.FixedText} ), and radio buttons ( {@link com.sun.star.form.component.RadioButton} ) can be labeled by group boxes ( {@link
+      * com.sun.star.form.component.GroupBox} ) only.
+      */
+    var LabelControl: XPropertySet = js.native
     
     /**
       * describes the kind of list source used.
@@ -1883,51 +1171,11 @@ object component {
       */
     var ListSourceType: typings.activexLibreoffice.com_.sun.star.form.ListSourceType = js.native
     
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
-      *
-      * Usually, the mouse wheel scroll through the control's entry list. Using this property, and one of the {@link MouseWheelBehavior} constants, you can
-      * control under which circumstances this is possible.
-      */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies if more than one entry can be selected. */
-    var MultiSelection: Boolean = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /** specifies the sequence of selected items, identified by the position. */
-    var SelectedItems: SafeArray[Double] = js.native
-    
     /** The selected value, if there is at most one. */
     var SelectedValue: js.Any = js.native
     
     /** The selected values. */
-    var SelectedValues: SafeArray[_] = js.native
-    
-    /** specifies the list of items. */
-    var StringItemList: SafeArray[String] = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
-      * @since OOo 3.1
-      */
-    var WritingMode: Double = js.native
+    var SelectedValues: SafeArray[js.Any] = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -1960,137 +1208,72 @@ object component {
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.XReset because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlNumericFieldModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, DecimalAccuracy, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, HideInactiveSelection, MouseWheelBehavior, Printable, ReadOnly, Repeat, RepeatDelay, ShowThousandsSeparator, Spin, StrictFormat, Tabstop, TextColor, TextLineColor, Value, ValueMax, ValueMin, ValueStep, VerticalAlign, WritingMode
-  - typings.activexLibreoffice.com_.sun.star.form.component.NumericField because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultValue */ @js.native
-  trait DatabaseNumericField extends DataAwareControlModel {
-    
-    /** specifies the background color(RGB) of the control. */
-    var BackgroundColor: Color = js.native
+  - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined BoundField, DataField, InputRequired, LabelControl */ @js.native
+  trait DatabaseNumericField
+    extends StObject
+       with NumericField
+       with XBoundComponent
+       with XLoadListener {
     
     /**
-      * specifies the border style of the control.
+      * references to the cursor field to which the control is bound.
       *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
+      * Applies only if the form the control model belongs to is loaded and the control is valid bound. The referenced field supports the {@link
+      * com.sun.star.sdb.Column} service.
+      * @see DataAwareControlModel.DataField
       */
-    var Border: Double = js.native
+    var BoundField: XPropertySet = js.native
     
     /**
-      * specifies the color of the border, if present
+      * specifies the name of the bound database field.
       *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
-      */
-    var BorderColor: Double = js.native
-    
-    /** specifies the decimal accuracy. */
-    var DecimalAccuracy: Double = js.native
-    
-    /**
-      * contains a default value for the control.
+      * This property makes sense in the **context** of the control model only. Normally, a control model is a child of a {@link
+      * com.sun.star.form.component.DataForm} , which is bound to a higher level object such as a table or query - more general, a result set. ;  This member
+      * here describes the column of this result set which the control should act for.
       *
-      * This value is used when the control is initially displayed, and for resetting it.
-      * @see com.sun.star.awt.UnoControlNumericFieldModel.Value
-      * @see com.sun.star.form.XReset
+      * Not every control model can be bound to every database column. Usually, super services of the {@link DataAwareControlModel} restrict the column types
+      * they can be used with.
+      * @see DataAwareControlModel.BoundField
       */
-    var DefaultValue: Double = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
+    var DataField: String = js.native
     
     /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
-      */
-    var HideInactiveSelection: Boolean = js.native
-    
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
+      * determines whether or not input into this field is required, when it is actually bound to a database field.
       *
-      * Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the {@link MouseWheelBehavior} constants,
-      * you can control under which circumstances this is possible.
-      */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /**
-      * specifies whether the mouse should show repeating behavior, i.e. repeatedly trigger an action when keeping pressed.
-      * @since OOo 2.0
-      */
-    var Repeat: Boolean = js.native
-    
-    /**
-      * specifies the mouse repeat delay, in milliseconds.
-      *
-      * When the user presses a mouse in a control area where this triggers an action (such as spinning the value), then usual control implementations allow
-      * to repeatedly trigger this action, without the need to release the mouse button and to press it again. The delay between two such triggers is
-      * specified with this property.
-      * @since OOo 2.0
-      */
-    var RepeatDelay: Double = js.native
-    
-    /** specifies whether the thousands separator is to be displayed. */
-    var ShowThousandsSeparator: Boolean = js.native
-    
-    /** specifies that the control has a spin button. */
-    var Spin: Boolean = js.native
-    
-    /** specifies that the value is checked during the user input. */
-    var StrictFormat: Boolean = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /** specifies the value displayed in the control. */
-    var Value: Double = js.native
-    
-    /** specifies the maximum value that can be entered. */
-    var ValueMax: Double = js.native
-    
-    /** specifies the minimum value that can be entered. */
-    var ValueMin: Double = js.native
-    
-    /** specifies the value step when using the spin button. */
-    var ValueStep: Double = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 3.3
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
+      * If this property is set to `FALSE` , then the form runtime will not check the control/model for `NULL` values before submitting data to the database.
+      * Usually, if a control model is bound to a database field which cannot be `NULL` , and the model itself does not have a value, then the database update
+      * is prevented, showing an error message to the user. To disable this behavior on a per-control basis, use the `InputRequired` property.
       * @since OOo 3.1
       */
-    var WritingMode: Double = js.native
+    var InputRequired: Boolean = js.native
+    
+    /**
+      * references to a control model within the same document which should be used as a label.
+      *
+      * Any user interface action which needs to refer to the control is assumed to use this property. ;  A very common design method for forms is to group a
+      * data aware control with a label control, with the latter describing the content of the former. For instance, you may have a {@link
+      * com.sun.star.form.component.TextField} , which is bound to the e-mail column of your data source. Then you will probably add a {@link
+      * com.sun.star.form.component.FixedText} whose label is "E-Mail", and associate it with the TextField by setting it as {@link LabelControl} . ;  Now if
+      * you imagine a component offering data search in a form, this component will examine the {@link LabelControl} property, find the {@link
+      * com.sun.star.form.component.FixedText} , examine it's label, and use this label to refer to the {@link com.sun.star.form.component.TextField} .
+      *
+      * When setting the property, a number of constraints apply: The object which is to be set has to support the following interfaces {@link
+      * com.sun.star.awt.XControlModel}{@link com.sun.star.lang.XServiceInfo}{@link com.sun.star.beans.XPropertySet}{@link com.sun.star.container.XChild}It
+      * has to be a part of the same document as the model who's property is to be modified.Additionally, the support of a special service, indicating that
+      * the model is of the right type, is required. Which kind of service is in the request depends on the type of the control model. ;
+      *
+      * For instance, text fields ( {@link com.sun.star.form.component.TextField} ) can be labeled by label controls only ( {@link
+      * com.sun.star.form.component.FixedText} ), and radio buttons ( {@link com.sun.star.form.component.RadioButton} ) can be labeled by group boxes ( {@link
+      * com.sun.star.form.component.GroupBox} ) only.
+      */
+    var LabelControl: XPropertySet = js.native
+    
+    /**
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+      */
+    /* InferMemberOverrides */
+    override def getPropertySetInfo(): XPropertySetInfo = js.native
   }
   
   /** This service specifies a data-aware control model for entering text which matches a specific pattern. */
@@ -2116,27 +1299,21 @@ object component {
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.XReset because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlPatternFieldModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, EditMask, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, HideInactiveSelection, LiteralMask, MaxTextLen, MouseWheelBehavior, Printable, ReadOnly, StrictFormat, Tabstop, Text, TextColor, TextLineColor, VerticalAlign, WritingMode
-  - typings.activexLibreoffice.com_.sun.star.form.component.PatternField because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultText */ @js.native
-  trait DatabasePatternField extends DataAwareControlModel {
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
+  - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined BoundField, DataField, InputRequired, LabelControl */ @js.native
+  trait DatabasePatternField
+    extends StObject
+       with PatternField
+       with XBoundComponent
+       with XLoadListener {
     
     /**
-      * specifies the color of the border, if present
+      * references to the cursor field to which the control is bound.
       *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
+      * Applies only if the form the control model belongs to is loaded and the control is valid bound. The referenced field supports the {@link
+      * com.sun.star.sdb.Column} service.
+      * @see DataAwareControlModel.DataField
       */
-    var BorderColor: Double = js.native
+    var BoundField: XPropertySet = js.native
     
     /**
       * determines if an empty text should be treated as a `NULL` value.
@@ -2149,89 +1326,55 @@ object component {
     var ConvertEmptyToNull: Boolean = js.native
     
     /**
-      * contains a default value for the control.
+      * specifies the name of the bound database field.
       *
-      * This value is used when the control is initially displayed, and for resetting it.
-      * @see com.sun.star.awt.UnoControlPatternFieldModel.Text
-      * @see com.sun.star.form.XReset
-      */
-    var DefaultText: String = js.native
-    
-    /** specifies the edit mask. */
-    var EditMask: String = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
-      */
-    var HideInactiveSelection: Boolean = js.native
-    
-    /** specifies the literal mask. */
-    var LiteralMask: String = js.native
-    
-    /** specifies the maximum character count. */
-    var MaxTextLen: Double = js.native
-    
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
+      * This property makes sense in the **context** of the control model only. Normally, a control model is a child of a {@link
+      * com.sun.star.form.component.DataForm} , which is bound to a higher level object such as a table or query - more general, a result set. ;  This member
+      * here describes the column of this result set which the control should act for.
       *
-      * Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the {@link MouseWheelBehavior} constants,
-      * you can control under which circumstances this is possible.
+      * Not every control model can be bound to every database column. Usually, super services of the {@link DataAwareControlModel} restrict the column types
+      * they can be used with.
+      * @see DataAwareControlModel.BoundField
       */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /** specifies that the text is checked during the user input. */
-    var StrictFormat: Boolean = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text displayed in the control. */
-    var Text: String = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
+    var DataField: String = js.native
     
     /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 3.3
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
+      * determines whether or not input into this field is required, when it is actually bound to a database field.
       *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
+      * If this property is set to `FALSE` , then the form runtime will not check the control/model for `NULL` values before submitting data to the database.
+      * Usually, if a control model is bound to a database field which cannot be `NULL` , and the model itself does not have a value, then the database update
+      * is prevented, showing an error message to the user. To disable this behavior on a per-control basis, use the `InputRequired` property.
       * @since OOo 3.1
       */
-    var WritingMode: Double = js.native
+    var InputRequired: Boolean = js.native
+    
+    /**
+      * references to a control model within the same document which should be used as a label.
+      *
+      * Any user interface action which needs to refer to the control is assumed to use this property. ;  A very common design method for forms is to group a
+      * data aware control with a label control, with the latter describing the content of the former. For instance, you may have a {@link
+      * com.sun.star.form.component.TextField} , which is bound to the e-mail column of your data source. Then you will probably add a {@link
+      * com.sun.star.form.component.FixedText} whose label is "E-Mail", and associate it with the TextField by setting it as {@link LabelControl} . ;  Now if
+      * you imagine a component offering data search in a form, this component will examine the {@link LabelControl} property, find the {@link
+      * com.sun.star.form.component.FixedText} , examine it's label, and use this label to refer to the {@link com.sun.star.form.component.TextField} .
+      *
+      * When setting the property, a number of constraints apply: The object which is to be set has to support the following interfaces {@link
+      * com.sun.star.awt.XControlModel}{@link com.sun.star.lang.XServiceInfo}{@link com.sun.star.beans.XPropertySet}{@link com.sun.star.container.XChild}It
+      * has to be a part of the same document as the model who's property is to be modified.Additionally, the support of a special service, indicating that
+      * the model is of the right type, is required. Which kind of service is in the request depends on the type of the control model. ;
+      *
+      * For instance, text fields ( {@link com.sun.star.form.component.TextField} ) can be labeled by label controls only ( {@link
+      * com.sun.star.form.component.FixedText} ), and radio buttons ( {@link com.sun.star.form.component.RadioButton} ) can be labeled by group boxes ( {@link
+      * com.sun.star.form.component.GroupBox} ) only.
+      */
+    var LabelControl: XPropertySet = js.native
+    
+    /**
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+      */
+    /* InferMemberOverrides */
+    override def getPropertySetInfo(): XPropertySetInfo = js.native
   }
   
   /** This service specifies a radio button which is data-aware, and can be bound to a database field. */
@@ -2257,139 +1400,72 @@ object component {
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.XReset because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlRadioButtonModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined Align, BackgroundColor, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, Graphic, HelpText, HelpURL, ImagePosition, ImageURL, Label, MultiLine, Printable, State, Tabstop, TextColor, TextLineColor, VerticalAlign, VisualEffect, WritingMode
-  - typings.activexLibreoffice.com_.sun.star.form.component.RadioButton because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultState, RefValue, UncheckedRefValue */ @js.native
-  trait DatabaseRadioButton extends DataAwareControlModel {
+  - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined BoundField, DataField, InputRequired, LabelControl */ @js.native
+  trait DatabaseRadioButton
+    extends StObject
+       with RadioButton
+       with XBoundComponent
+       with XLoadListener {
     
     /**
-      * specifies the horizontal alignment of the text in the control.
+      * references to the cursor field to which the control is bound.
       *
-      * `; 0: left; 1: center; 2: right; `
-      * @since OOo 2.0
+      * Applies only if the form the control model belongs to is loaded and the control is valid bound. The referenced field supports the {@link
+      * com.sun.star.sdb.Column} service.
+      * @see DataAwareControlModel.DataField
       */
-    var Align: Double = js.native
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Double = js.native
+    var BoundField: XPropertySet = js.native
     
     /**
-      * contains a default value for the control.
+      * specifies the name of the bound database field.
       *
-      * This value is used when the control is initially displayed, and for resetting it.
+      * This property makes sense in the **context** of the control model only. Normally, a control model is a child of a {@link
+      * com.sun.star.form.component.DataForm} , which is bound to a higher level object such as a table or query - more general, a result set. ;  This member
+      * here describes the column of this result set which the control should act for.
       *
-      * In a group of radio buttons only one button should be checked by default.
-      * @see com.sun.star.awt.UnoControlRadioButtonModel.State
-      * @see com.sun.star.form.XReset
+      * Not every control model can be bound to every database column. Usually, super services of the {@link DataAwareControlModel} restrict the column types
+      * they can be used with.
+      * @see DataAwareControlModel.BoundField
       */
-    var DefaultState: Double = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
+    var DataField: String = js.native
     
     /**
-      * specifies a graphic to be displayed besides the label of the control
+      * determines whether or not input into this field is required, when it is actually bound to a database field.
       *
-      * If this property is present, it interacts with the {@link ImageURL} in the following way: If {@link ImageURL} is set, {@link Graphic} will be reset to
-      * an object as loaded from the given image URL, or `NULL` if {@link ImageURL} does not point to a valid image file.If {@link Graphic} is set, {@link
-      * ImageURL} will be reset to an empty string.
-      * @since OOo 2.1
-      */
-    var Graphic: XGraphic = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /**
-      * specifies the position of the image, if any, relative to the text, if any
-      *
-      * Valid values of this property are specified with {@link ImagePosition} .
-      */
-    var ImagePosition: Double = js.native
-    
-    /**
-      * specifies an URL to an image to display besides the label of the control
-      * @see Graphic
-      */
-    var ImageURL: String = js.native
-    
-    /** specifies the label of the control. */
-    var Label: String = js.native
-    
-    /**
-      * specifies that the text may be displayed on more than one line.
-      * @since OOo 2.0
-      */
-    var MultiLine: Boolean = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /**
-      * contains a reference value which is used for submission in a HTML form.
-      *
-      * If the form the control belongs to is to be submitted (see {@link com.sun.star.form.XSubmit} ), and the control is checked, this reference value is
-      * used for submission.
-      */
-    var RefValue: String = js.native
-    
-    /**
-      * specifies the state of the control.
-      *
-      * `; 0: not checked; 1: checked; `
-      */
-    var State: Double = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /**
-      * specifies a value which is to be associated with the control when it's **not** selected.
-      *
-      * In various situations, the {@link RefValue} is associated with the control if and only if it is selected. ; {@link UncheckedRefValue} provides a
-      * extensions of this concept: If present, the value should be associated with the control when it is **not** selected.
-      */
-    var UncheckedRefValue: String = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 2.0
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * specifies a visual effect to apply to the radio button control.
-      *
-      * Possible values for this property are {@link VisualEffect.FLAT} and {@link VisualEffect.LOOK3D} .
-      * @see com.sun.star.awt.VisualEffect
-      * @since OOo 2.0
-      */
-    var VisualEffect: Double = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
+      * If this property is set to `FALSE` , then the form runtime will not check the control/model for `NULL` values before submitting data to the database.
+      * Usually, if a control model is bound to a database field which cannot be `NULL` , and the model itself does not have a value, then the database update
+      * is prevented, showing an error message to the user. To disable this behavior on a per-control basis, use the `InputRequired` property.
       * @since OOo 3.1
       */
-    var WritingMode: Double = js.native
+    var InputRequired: Boolean = js.native
+    
+    /**
+      * references to a control model within the same document which should be used as a label.
+      *
+      * Any user interface action which needs to refer to the control is assumed to use this property. ;  A very common design method for forms is to group a
+      * data aware control with a label control, with the latter describing the content of the former. For instance, you may have a {@link
+      * com.sun.star.form.component.TextField} , which is bound to the e-mail column of your data source. Then you will probably add a {@link
+      * com.sun.star.form.component.FixedText} whose label is "E-Mail", and associate it with the TextField by setting it as {@link LabelControl} . ;  Now if
+      * you imagine a component offering data search in a form, this component will examine the {@link LabelControl} property, find the {@link
+      * com.sun.star.form.component.FixedText} , examine it's label, and use this label to refer to the {@link com.sun.star.form.component.TextField} .
+      *
+      * When setting the property, a number of constraints apply: The object which is to be set has to support the following interfaces {@link
+      * com.sun.star.awt.XControlModel}{@link com.sun.star.lang.XServiceInfo}{@link com.sun.star.beans.XPropertySet}{@link com.sun.star.container.XChild}It
+      * has to be a part of the same document as the model who's property is to be modified.Additionally, the support of a special service, indicating that
+      * the model is of the right type, is required. Which kind of service is in the request depends on the type of the control model. ;
+      *
+      * For instance, text fields ( {@link com.sun.star.form.component.TextField} ) can be labeled by label controls only ( {@link
+      * com.sun.star.form.component.FixedText} ), and radio buttons ( {@link com.sun.star.form.component.RadioButton} ) can be labeled by group boxes ( {@link
+      * com.sun.star.form.component.GroupBox} ) only.
+      */
+    var LabelControl: XPropertySet = js.native
+    
+    /**
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+      */
+    /* InferMemberOverrides */
+    override def getPropertySetInfo(): XPropertySetInfo = js.native
   }
   
   /** This service specifies a text field which is data-aware, and can be bound to a database field. */
@@ -2417,7 +1493,8 @@ object component {
   - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined BoundField, DataField, InputRequired, LabelControl */ @js.native
   trait DatabaseTextField
-    extends TextField
+    extends StObject
+       with TextField
        with XBoundComponent
        with XLoadListener {
     
@@ -2515,195 +1592,101 @@ object component {
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.XReset because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlTimeFieldModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, HideInactiveSelection, MouseWheelBehavior, Printable, ReadOnly, Repeat, RepeatDelay, Spin, StrictFormat, Tabstop, Text, TextColor, TextLineColor, Time, TimeFormat, TimeMax, TimeMin, VerticalAlign, WritingMode
-  - typings.activexLibreoffice.com_.sun.star.form.component.TimeField because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultTime */ @js.native
-  trait DatabaseTimeField extends DataAwareControlModel {
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
+  - typings.activexLibreoffice.com_.sun.star.form.DataAwareControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined BoundField, DataField, InputRequired, LabelControl */ @js.native
+  trait DatabaseTimeField
+    extends StObject
+       with TimeField
+       with XBoundComponent
+       with XLoadListener {
     
     /**
-      * specifies the border style of the control.
+      * references to the cursor field to which the control is bound.
       *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
+      * Applies only if the form the control model belongs to is loaded and the control is valid bound. The referenced field supports the {@link
+      * com.sun.star.sdb.Column} service.
+      * @see DataAwareControlModel.DataField
       */
-    var Border: Double = js.native
+    var BoundField: XPropertySet = js.native
     
     /**
-      * specifies the color of the border, if present
+      * specifies the name of the bound database field.
       *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
-      */
-    var BorderColor: Double = js.native
-    
-    /**
-      * contains a default value for the control.
+      * This property makes sense in the **context** of the control model only. Normally, a control model is a child of a {@link
+      * com.sun.star.form.component.DataForm} , which is bound to a higher level object such as a table or query - more general, a result set. ;  This member
+      * here describes the column of this result set which the control should act for.
       *
-      * This value is used when the control is initially displayed, and for resetting it.
-      * @see com.sun.star.awt.UnoControlTimeFieldModel.Time
-      * @see com.sun.star.form.XReset
+      * Not every control model can be bound to every database column. Usually, super services of the {@link DataAwareControlModel} restrict the column types
+      * they can be used with.
+      * @see DataAwareControlModel.BoundField
       */
-    var DefaultTime: Double = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
+    var DataField: String = js.native
     
     /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
-      */
-    var HideInactiveSelection: Boolean = js.native
-    
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
+      * determines whether or not input into this field is required, when it is actually bound to a database field.
       *
-      * Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the {@link MouseWheelBehavior} constants,
-      * you can control under which circumstances this is possible.
-      */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /**
-      * specifies whether the mouse should show repeating behavior, i.e. repeatedly trigger an action when keeping pressed.
-      * @since OOo 2.0
-      */
-    var Repeat: Boolean = js.native
-    
-    /**
-      * specifies the mouse repeat delay, in milliseconds.
-      *
-      * When the user presses a mouse in a control area where this triggers an action (such as spinning the value), then usual control implementations allow
-      * to repeatedly trigger this action, without the need to release the mouse button and to press it again. The delay between two such triggers is
-      * specified with this property.
-      * @since OOo 2.0
-      */
-    var RepeatDelay: Double = js.native
-    
-    /** specifies that the control has a spin button. */
-    var Spin: Boolean = js.native
-    
-    /** specifies that the date is checked during the user input. */
-    var StrictFormat: Boolean = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /**
-      * specifies the text displayed in the control.
-      * @since OOo 2.0
-      */
-    var Text: String = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /** specifies the time displayed in the control. */
-    var Time: typings.activexLibreoffice.com_.sun.star.util.Time = js.native
-    
-    /**
-      * specifies the format of the displayed time.
-      *
-      * `; 0:  24h short; 1:  24h long; 2:  12h short; 3:  12h long; 4:  Duration short; 5:  Duration long; `
-      */
-    var TimeFormat: Double = js.native
-    
-    /** specifies the maximum time that can be entered. */
-    var TimeMax: Time = js.native
-    
-    /** specifies the minimum time that can be entered. */
-    var TimeMin: Time = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 3.3
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
+      * If this property is set to `FALSE` , then the form runtime will not check the control/model for `NULL` values before submitting data to the database.
+      * Usually, if a control model is bound to a database field which cannot be `NULL` , and the model itself does not have a value, then the database update
+      * is prevented, showing an error message to the user. To disable this behavior on a per-control basis, use the `InputRequired` property.
       * @since OOo 3.1
       */
-    var WritingMode: Double = js.native
+    var InputRequired: Boolean = js.native
+    
+    /**
+      * references to a control model within the same document which should be used as a label.
+      *
+      * Any user interface action which needs to refer to the control is assumed to use this property. ;  A very common design method for forms is to group a
+      * data aware control with a label control, with the latter describing the content of the former. For instance, you may have a {@link
+      * com.sun.star.form.component.TextField} , which is bound to the e-mail column of your data source. Then you will probably add a {@link
+      * com.sun.star.form.component.FixedText} whose label is "E-Mail", and associate it with the TextField by setting it as {@link LabelControl} . ;  Now if
+      * you imagine a component offering data search in a form, this component will examine the {@link LabelControl} property, find the {@link
+      * com.sun.star.form.component.FixedText} , examine it's label, and use this label to refer to the {@link com.sun.star.form.component.TextField} .
+      *
+      * When setting the property, a number of constraints apply: The object which is to be set has to support the following interfaces {@link
+      * com.sun.star.awt.XControlModel}{@link com.sun.star.lang.XServiceInfo}{@link com.sun.star.beans.XPropertySet}{@link com.sun.star.container.XChild}It
+      * has to be a part of the same document as the model who's property is to be modified.Additionally, the support of a special service, indicating that
+      * the model is of the right type, is required. Which kind of service is in the request depends on the type of the control model. ;
+      *
+      * For instance, text fields ( {@link com.sun.star.form.component.TextField} ) can be labeled by label controls only ( {@link
+      * com.sun.star.form.component.FixedText} ), and radio buttons ( {@link com.sun.star.form.component.RadioButton} ) can be labeled by group boxes ( {@link
+      * com.sun.star.form.component.GroupBox} ) only.
+      */
+    var LabelControl: XPropertySet = js.native
+    
+    /**
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+      */
+    /* InferMemberOverrides */
+    override def getPropertySetInfo(): XPropertySetInfo = js.native
   }
   
   /** specifies the model of a date field control, which is an edit field used to enter a date. */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDateFieldModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, Date, DateFormat, DateMax, DateMin, DateShowCentury, Dropdown, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, HideInactiveSelection, MouseWheelBehavior, Printable, ReadOnly, Repeat, RepeatDelay, Spin, StrictFormat, Tabstop, Text, TextColor, TextLineColor, VerticalAlign, WritingMode */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait DateField
-    extends FormControlModel
-       with XReset {
-    
-    /** specifies the background color(RGB) of the control. */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
+    extends StObject
+       with UnoControlDateFieldModel
+       with XReset
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var BorderColor: Double = js.native
-    
-    /** specifies the date displayed in the control. */
-    var Date: typings.activexLibreoffice.com_.sun.star.util.Date = js.native
-    
-    /**
-      * specifies the format of the displayed date.
-      *
-      * `; 0:   system short; 1:   system short YY; 2:   system short YYYY; 3:   system long; 4:   short DDMMYY; 5:   short MMDDYY; 6:   short YYMMDD; 7:
-      * short DDMMYYYY; 8:   short MMDDYYYY; 9:   short YYYYMMDD; 10:  short YYMMDD DIN5008; 11:  short YYYYMMDD DIN5008; `
-      */
-    var DateFormat: Double = js.native
-    
-    /** specifies the maximum date that can be entered. */
-    var DateMax: Date = js.native
-    
-    /** specifies the minimum date that can be entered. */
-    var DateMin: Date = js.native
-    
-    /** specifies, if the date century is displayed. */
-    var DateShowCentury: Boolean = js.native
+    var ClassId: Double = js.native
     
     /**
       * contains a default value for the control.
@@ -2714,97 +1697,15 @@ object component {
       */
     var DefaultDate: Double = js.native
     
-    /** specifies, if the control has a dropdown button. */
-    var Dropdown: Boolean = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
     /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var HideInactiveSelection: Boolean = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
-      *
-      * Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the {@link MouseWheelBehavior} constants,
-      * you can control under which circumstances this is possible.
-      */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /**
-      * specifies whether the mouse should show repeating behavior, i.e. repeatedly trigger an action when keeping pressed.
-      * @since OOo 2.0
-      */
-    var Repeat: Boolean = js.native
-    
-    /**
-      * specifies the mouse repeat delay, in milliseconds.
-      *
-      * When the user presses a mouse in a control area where this triggers an action (such as spinning the value), then usual control implementations allow
-      * to repeatedly trigger this action, without the need to release the mouse button and to press it again. The delay between two such triggers is
-      * specified with this property.
-      * @since OOo 2.0
-      */
-    var RepeatDelay: Double = js.native
-    
-    /** specifies that the control has a spin button. */
-    var Spin: Boolean = js.native
-    
-    /** specifies that the date is checked during the user input. */
-    var StrictFormat: Boolean = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /**
-      * specifies the text displayed in the control.
-      * @since OOo 2.0
-      */
-    var Text: String = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 3.3
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
-      * @since OOo 3.1
-      */
-    var WritingMode: Double = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -2812,40 +1713,38 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /** This service specifies the control model of an edit field for a file name. */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlFileControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, HideInactiveSelection, Printable, ReadOnly, Tabstop, Text, TextColor, TextLineColor, VerticalAlign */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait FileControl
-    extends FormControlModel
-       with XReset {
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
+    extends StObject
+       with UnoControlFileControlModel
+       with XReset
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var BorderColor: Double = js.native
+    var ClassId: Double = js.native
     
     /**
       * contains a default value for the control.
@@ -2856,56 +1755,15 @@ object component {
       */
     var DefaultText: String = js.native
     
-    /** determines whether a control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
     /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var HideInactiveSelection: Boolean = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /**
-      * specifies that the content of the control cannot be modified by the user.
-      * @since OOo 1.1.2
-      */
-    var ReadOnly: Boolean = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text displayed in the control. */
-    var Text: String = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 3.3
-      */
-    var VerticalAlign: VerticalAlignment = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -2913,6 +1771,9 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /**
@@ -2923,85 +1784,49 @@ object component {
     */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlFixedTextModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined Align, BackgroundColor, Border, BorderColor, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, Label, MultiLine, NoLabel, Printable, TextColor, TextLineColor, VerticalAlign */ @js.native
-  trait FixedText extends FormControlModel {
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
+  trait FixedText
+    extends StObject
+       with UnoControlFixedTextModel
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the horizontal alignment of the text in the control.
-      *
-      * `; 0: left; 1: center; 2: right; `
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var Align: Double = js.native
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
+    var ClassId: Double = js.native
     
     /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var Border: Double = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
+    
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var BorderColor: Double = js.native
+    /* InferMemberOverrides */
+    override def getPropertySetInfo(): XPropertySetInfo = js.native
     
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /** specifies the label of the control. */
-    var Label: String = js.native
-    
-    /** specifies that the text may be displayed on more than one line. */
-    var MultiLine: Boolean = js.native
-    
-    /**
-      * suppresses automatic accelerator assignment on this control.
-      * @since OOo 2.4
-      */
-    var NoLabel: Boolean = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 2.0
-      */
-    var VerticalAlign: VerticalAlignment = js.native
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /**
@@ -3016,11 +1841,12 @@ object component {
     */
   @js.native
   trait Form
-    extends FormComponents
+    extends StObject
        with FormComponent
+       with FormComponents
        with XTabControllerModel {
     
-    def getPropertyValues(aPropertyNames: SeqEquiv[String]): SafeArray[_] = js.native
+    def getPropertyValues(aPropertyNames: SeqEquiv[String]): SafeArray[js.Any] = js.native
   }
   
   /**
@@ -3029,181 +1855,40 @@ object component {
     */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlFormattedFieldModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined Align, BackgroundColor, Border, BorderColor, EffectiveDefault, EffectiveMax, EffectiveMin, EffectiveValue, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, FormatKey, FormatsSupplier, HelpText, HelpURL, HideInactiveSelection, MaxTextLen, MouseWheelBehavior, Printable, ReadOnly, Repeat, RepeatDelay, Spin, StrictFormat, Tabstop, Text, TextColor, TextLineColor, TreatAsNumber, VerticalAlign, WritingMode */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait FormattedField
-    extends FormControlModel
-       with XReset {
+    extends StObject
+       with UnoControlFormattedFieldModel
+       with XReset
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the horizontal alignment of the text in the control.
-      *
-      * `; 0: left; 1: center; 2: right; `
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var Align: Double = js.native
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
+    var ClassId: Double = js.native
     
     /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var Border: Double = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
-    /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
-      */
-    var BorderColor: Double = js.native
-    
-    /**
-      * specifies the default value of the formatted field.
-      *
-      * This may be a numeric value (double) or a string, depending on the formatting of the field.
-      */
-    var EffectiveDefault: js.Any = js.native
-    
-    /**
-      * specifies the maximum value that can be entered.
-      *
-      * This property is ignored if the format of the field is no numeric format.
-      */
-    var EffectiveMax: Double = js.native
-    
-    /**
-      * specifies the minimum value that can be entered.
-      *
-      * This property is ignored if the format of the field is no numeric format.
-      */
-    var EffectiveMin: Double = js.native
-    
-    /**
-      * specifies the current value of the formatted field.
-      *
-      * This may be a numeric value (double) or a string, depending on the formatting of the field.
-      */
-    var EffectiveValue: Double = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /**
-      * specifies the format to be used when formatting the field input and output.
-      *
-      * This value is meaningful relative to the FormatsSupplier property only.
-      */
-    var FormatKey: Double = js.native
-    
-    /** supplies the formats the field should work with. */
-    var FormatsSupplier: XNumberFormatsSupplier = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
-      */
-    var HideInactiveSelection: Boolean = js.native
-    
-    /**
-      * specifies the maximum character count.
-      *
-      * There's no limitation, if set to 0.
-      */
-    var MaxTextLen: Double = js.native
-    
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
-      *
-      * Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the {@link MouseWheelBehavior} constants,
-      * you can control under which circumstances this is possible.
-      */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /**
-      * specifies whether the mouse should show repeating behavior, i.e. repeatedly trigger an action when keeping pressed.
-      * @since OOo 2.0
-      */
-    var Repeat: Boolean = js.native
-    
-    /**
-      * specifies the mouse repeat delay, in milliseconds.
-      *
-      * When the user presses a mouse in a control area where this triggers an action (such as spinning the value), then usual control implementations allow
-      * to repeatedly trigger this action, without the need to release the mouse button and to press it again. The delay between two such triggers is
-      * specified with this property.
-      * @since OOo 2.0
-      */
-    var RepeatDelay: Double = js.native
-    
-    /** specifies that the control has a spin button. */
-    var Spin: Boolean = js.native
-    
-    /**
-      * specifies that the text is checked during the user input.
-      *
-      * This property is optional - not every component implementing this service is required to provide it, as real-time input checking on a formatted field
-      * may be pretty expensive.
-      */
-    var StrictFormat: Boolean = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text displayed in the control. */
-    var Text: String = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /** specifies that the text is treated as a number. */
-    var TreatAsNumber: Boolean = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 3.3
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
-      * @since OOo 3.1
-      */
-    var WritingMode: Double = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -3211,6 +1896,9 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /**
@@ -3228,7 +1916,8 @@ object component {
     */
   @js.native
   trait GridControl
-    extends FormControlModel
+    extends StObject
+       with FormControlModel
        with FormComponents
        with XGridColumnFactory
        with XSelectionSupplier
@@ -3280,53 +1969,49 @@ object component {
   /** This service specifies a model for a control which can be used to visually group controls. */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlGroupBoxModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, Label, Printable, TextColor, TextLineColor, WritingMode */ @js.native
-  trait GroupBox extends FormControlModel {
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /** specifies the label of the control. */
-    var Label: String = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
+  trait GroupBox
+    extends StObject
+       with UnoControlGroupBoxModel
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
-      * @since OOo 3.1
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var WritingMode: Double = js.native
+    var ClassId: Double = js.native
+    
+    /**
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+      */
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
+    
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
+    
+    /**
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+      */
+    /* InferMemberOverrides */
+    override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /**
@@ -3337,7 +2022,8 @@ object component {
     */
   @js.native
   trait HTMLForm
-    extends Form
+    extends StObject
+       with Form
        with XReset
        with XSubmit {
     
@@ -3363,12 +2049,14 @@ object component {
     * you can use them in your own forms for storing any data, for instance to evaluate it in some scripting macro.
     */
   @js.native
-  trait HiddenControl extends FormComponent {
+  trait HiddenControl
+    extends StObject
+       with FormComponent {
     
     /** specifies the value of the component. */
     var HiddenValue: String = js.native
     
-    def getPropertyValues(aPropertyNames: SeqEquiv[String]): SafeArray[_] = js.native
+    def getPropertyValues(aPropertyNames: SeqEquiv[String]): SafeArray[js.Any] = js.native
   }
   
   /**
@@ -3380,85 +2068,40 @@ object component {
     */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlImageControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, Enabled, Graphic, HelpText, HelpURL, ImageURL, Printable, ScaleImage, ScaleMode, Tabstop */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait ImageButton
-    extends FormControlModel
-       with XImageProducerSupplier {
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
-    
-    /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
-      */
-    var BorderColor: Double = js.native
+    extends StObject
+       with UnoControlImageControlModel
+       with XImageProducerSupplier
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /** describes the action to be executed by the button when pressed. */
     var ButtonType: FormButtonType = js.native
     
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
+    /**
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
+      */
+    var ClassId: Double = js.native
     
     /**
-      * specifies a graphic to be displayed on the control
-      *
-      * If this property is present, it interacts with the {@link ImageURL} in the following way: If {@link ImageURL} is set, {@link Graphic} will be reset to
-      * an object as loaded from the given image URL, or `NULL` if {@link ImageURL} does not point to a valid image file.If {@link Graphic} is set, {@link
-      * ImageURL} will be reset to an empty string.
-      * @since OOo 2.1
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var Graphic: XGraphic = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /**
-      * specifies an URL to an image to use for the control.
-      * @see Graphic
-      */
-    var ImageURL: String = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies if the image is automatically scaled to the size of the control. */
-    var ScaleImage: Boolean = js.native
-    
-    /**
-      * defines how to scale the image
-      *
-      * If this property is present, it supersedes the {@link ScaleImage} property.
-      *
-      * The value of this property is one of the {@link ImageScaleMode} constants.
-      * @since OOo 3.1
-      */
-    var ScaleMode: Double = js.native
-    
-    /**
-      * specifies that the control can be reached with the TAB key.
-      * @since OOo 1.1.2
-      */
-    var Tabstop: Boolean = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
     /**
       * describes the frame, where to open the document specified by the TargetURL.
@@ -3477,54 +2120,47 @@ object component {
       */
     var TargetURL: String = js.native
     
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
+    
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
       * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /** specifies a model for a control which allows to choose in a list of alternative values. */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlListBoxModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined Align, BackgroundColor, Border, BorderColor, Dropdown, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, ItemSeparatorPos, LineCount, MouseWheelBehavior, MultiSelection, Printable, ReadOnly, SelectedItems, StringItemList, Tabstop, TextColor, TextLineColor, WritingMode */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait ListBox
-    extends FormControlModel
+    extends StObject
+       with UnoControlListBoxModel
        with XReset
-       with XItemList {
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the horizontal alignment of the text in the control.
-      *
-      * `; 0: left; 1: center; 2: right; `
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var Align: Double = js.native
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
-    
-    /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
-      */
-    var BorderColor: Double = js.native
+    var ClassId: Double = js.native
     
     /**
       * contains the indexes of entries of the listbox, which should selected by default.
@@ -3535,80 +2171,18 @@ object component {
       */
     var DefaultSelection: SafeArray[Double] = js.native
     
-    /** specifies if the control has a drop down button. */
-    var Dropdown: Boolean = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /**
-      * specifies where an item separator - a horizontal line - is drawn.
-      *
-      * If this is not `NULL` , then a horizontal line will be drawn between the item at the given position, and the following item.
-      * @since OOo 3.3
-      */
-    var ItemSeparatorPos: Double = js.native
-    
-    /** specifies the maximum line count displayed in the drop down box. */
-    var LineCount: Double = js.native
-    
     /** contains the values associated to the strings to be displayed (which are specified by {@link com.sun.star.awt.UnoControlListBoxModel.StringItemList} ) */
     var ListSource: SafeArray[String] = js.native
     
     /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
-      *
-      * Usually, the mouse wheel scroll through the control's entry list. Using this property, and one of the {@link MouseWheelBehavior} constants, you can
-      * control under which circumstances this is possible.
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var MouseWheelBehavior: Double = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
-    /** specifies if more than one entry can be selected. */
-    var MultiSelection: Boolean = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /** specifies the sequence of selected items, identified by the position. */
-    var SelectedItems: SafeArray[Double] = js.native
-    
-    /** specifies the list of items. */
-    var StringItemList: SafeArray[String] = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
-      * @since OOo 3.1
-      */
-    var WritingMode: Double = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -3616,6 +2190,9 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /**
@@ -3623,7 +2200,9 @@ object component {
     * form.
     */
   @js.native
-  trait NavigationToolBar extends FormControlModel {
+  trait NavigationToolBar
+    extends StObject
+       with FormControlModel {
     
     /**
       * denotes the border style of the control.
@@ -3688,43 +2267,42 @@ object component {
       * This color is used if the {@link FontDescriptor} defines that the text in the control should be underlined or stroke out.
       */
     var TextLineColor: Double = js.native
+    
+    /**
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+      */
+    /* InferMemberOverrides */
+    override def getPropertySetInfo(): XPropertySetInfo = js.native
   }
   
   /** specifies a component which allows the input of a numeric value. */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlNumericFieldModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, DecimalAccuracy, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, HideInactiveSelection, MouseWheelBehavior, Printable, ReadOnly, Repeat, RepeatDelay, ShowThousandsSeparator, Spin, StrictFormat, Tabstop, TextColor, TextLineColor, Value, ValueMax, ValueMin, ValueStep, VerticalAlign, WritingMode */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait NumericField
-    extends FormControlModel
-       with XReset {
-    
-    /** specifies the background color(RGB) of the control. */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
+    extends StObject
+       with UnoControlNumericFieldModel
+       with XReset
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var BorderColor: Double = js.native
-    
-    /** specifies the decimal accuracy. */
-    var DecimalAccuracy: Double = js.native
+    var ClassId: Double = js.native
     
     /**
       * contains a default value for the control.
@@ -3735,103 +2313,15 @@ object component {
       */
     var DefaultValue: Double = js.native
     
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
     /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var HideInactiveSelection: Boolean = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
-      *
-      * Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the {@link MouseWheelBehavior} constants,
-      * you can control under which circumstances this is possible.
-      */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /**
-      * specifies whether the mouse should show repeating behavior, i.e. repeatedly trigger an action when keeping pressed.
-      * @since OOo 2.0
-      */
-    var Repeat: Boolean = js.native
-    
-    /**
-      * specifies the mouse repeat delay, in milliseconds.
-      *
-      * When the user presses a mouse in a control area where this triggers an action (such as spinning the value), then usual control implementations allow
-      * to repeatedly trigger this action, without the need to release the mouse button and to press it again. The delay between two such triggers is
-      * specified with this property.
-      * @since OOo 2.0
-      */
-    var RepeatDelay: Double = js.native
-    
-    /** specifies whether the thousands separator is to be displayed. */
-    var ShowThousandsSeparator: Boolean = js.native
-    
-    /** specifies that the control has a spin button. */
-    var Spin: Boolean = js.native
-    
-    /** specifies that the value is checked during the user input. */
-    var StrictFormat: Boolean = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /** specifies the value displayed in the control. */
-    var Value: Double = js.native
-    
-    /** specifies the maximum value that can be entered. */
-    var ValueMax: Double = js.native
-    
-    /** specifies the minimum value that can be entered. */
-    var ValueMin: Double = js.native
-    
-    /** specifies the value step when using the spin button. */
-    var ValueStep: Double = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 3.3
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
-      * @since OOo 3.1
-      */
-    var WritingMode: Double = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -3839,40 +2329,38 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /** specifies a component which allows the input of text which matches a specific pattern. */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlPatternFieldModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, EditMask, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, HideInactiveSelection, LiteralMask, MaxTextLen, MouseWheelBehavior, Printable, ReadOnly, StrictFormat, Tabstop, Text, TextColor, TextLineColor, VerticalAlign, WritingMode */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait PatternField
-    extends FormControlModel
-       with XReset {
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
+    extends StObject
+       with UnoControlPatternFieldModel
+       with XReset
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var BorderColor: Double = js.native
+    var ClassId: Double = js.native
     
     /**
       * contains a default value for the control.
@@ -3883,81 +2371,15 @@ object component {
       */
     var DefaultText: String = js.native
     
-    /** specifies the edit mask. */
-    var EditMask: String = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
     /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var HideInactiveSelection: Boolean = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
-    /** specifies the literal mask. */
-    var LiteralMask: String = js.native
-    
-    /** specifies the maximum character count. */
-    var MaxTextLen: Double = js.native
-    
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
-      *
-      * Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the {@link MouseWheelBehavior} constants,
-      * you can control under which circumstances this is possible.
-      */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /** specifies that the text is checked during the user input. */
-    var StrictFormat: Boolean = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text displayed in the control. */
-    var Text: String = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 3.3
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
-      * @since OOo 3.1
-      */
-    var WritingMode: Double = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -3965,6 +2387,9 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /**
@@ -3977,28 +2402,30 @@ object component {
     */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlRadioButtonModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined Align, BackgroundColor, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, Graphic, HelpText, HelpURL, ImagePosition, ImageURL, Label, MultiLine, Printable, State, Tabstop, TextColor, TextLineColor, VerticalAlign, VisualEffect, WritingMode */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait RadioButton
-    extends FormControlModel
-       with XReset {
+    extends StObject
+       with UnoControlRadioButtonModel
+       with XReset
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the horizontal alignment of the text in the control.
-      *
-      * `; 0: left; 1: center; 2: right; `
-      * @since OOo 2.0
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var Align: Double = js.native
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Double = js.native
+    var ClassId: Double = js.native
     
     /**
       * contains a default value for the control.
@@ -4011,58 +2438,12 @@ object component {
       */
     var DefaultState: Double = js.native
     
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
     /**
-      * specifies a graphic to be displayed besides the label of the control
-      *
-      * If this property is present, it interacts with the {@link ImageURL} in the following way: If {@link ImageURL} is set, {@link Graphic} will be reset to
-      * an object as loaded from the given image URL, or `NULL` if {@link ImageURL} does not point to a valid image file.If {@link Graphic} is set, {@link
-      * ImageURL} will be reset to an empty string.
-      * @since OOo 2.1
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var Graphic: XGraphic = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /**
-      * specifies the position of the image, if any, relative to the text, if any
-      *
-      * Valid values of this property are specified with {@link ImagePosition} .
-      */
-    var ImagePosition: Double = js.native
-    
-    /**
-      * specifies an URL to an image to display besides the label of the control
-      * @see Graphic
-      */
-    var ImageURL: String = js.native
-    
-    /** specifies the label of the control. */
-    var Label: String = js.native
-    
-    /**
-      * specifies that the text may be displayed on more than one line.
-      * @since OOo 2.0
-      */
-    var MultiLine: Boolean = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
     /**
       * contains a reference value which is used for submission in a HTML form.
@@ -4073,22 +2454,6 @@ object component {
     var RefValue: String = js.native
     
     /**
-      * specifies the state of the control.
-      *
-      * `; 0: not checked; 1: checked; `
-      */
-    var State: Double = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /**
       * specifies a value which is to be associated with the control when it's **not** selected.
       *
       * In various situations, the {@link RefValue} is associated with the control if and only if it is selected. ; {@link UncheckedRefValue} provides a
@@ -4096,28 +2461,8 @@ object component {
       */
     var UncheckedRefValue: String = js.native
     
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 2.0
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * specifies a visual effect to apply to the radio button control.
-      *
-      * Possible values for this property are {@link VisualEffect.FLAT} and {@link VisualEffect.LOOK3D} .
-      * @see com.sun.star.awt.VisualEffect
-      * @since OOo 2.0
-      */
-    var VisualEffect: Double = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
-      * @since OOo 3.1
-      */
-    var WritingMode: Double = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -4125,142 +2470,53 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /** specifies a component which extends the {@link com.sun.star.awt.UnoControlEditModel} with capabilities to display and input formatted text. */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
   - typings.activexLibreoffice.com_.sun.star.style.ParagraphPropertiesComplex because var conflicts: WritingMode. Inlined 
-  - typings.activexLibreoffice.com_.sun.star.beans.XPropertyState because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.text.TextRange because var conflicts: WritingMode. Inlined 
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlEditModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined Align, AutoHScroll, AutoVScroll, BackgroundColor, Border, BorderColor, EchoChar, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HardLineBreaks, HelpText, HelpURL, HideInactiveSelection, HScroll, LineEndFormat, MaxTextLen, MultiLine, PaintTransparent, Printable, ReadOnly, Tabstop, Text, TextColor, TextLineColor, VerticalAlign, VScroll, WritingMode */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait RichTextControl
-    extends FormControlModel
+    extends StObject
+       with UnoControlEditModel
+       with XFastPropertySet
+       with XPropertyState
        with XTextRange
        with XContentEnumerationAccess
        with CharacterProperties
        with CharacterPropertiesAsian
        with CharacterPropertiesComplex
        with ParagraphProperties
-       with ParagraphPropertiesAsian {
+       with ParagraphPropertiesAsian
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the horizontal alignment of the text in the control.
-      *
-      * `; 0: left; 1: center; 2: right; `
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var Align: Double = js.native
+    var ClassId: Double = js.native
     
     /**
-      * If set to true an horizontal scrollbar will be added automatically when needed.
-      * @since OOo 2.3
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var AutoHScroll: Boolean = js.native
-    
-    /**
-      * If set to true an vertical scrollbar will be added automatically when needed.
-      * @since OOo 2.3
-      */
-    var AutoVScroll: Boolean = js.native
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
-    
-    /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
-      */
-    var BorderColor: Double = js.native
-    
-    /** specifies the echo character for a password edit field. */
-    var EchoChar: Double = js.native
-    
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies if the content of the control can be scrolled in the horizontal direction. */
-    var HScroll: Boolean = js.native
-    
-    /**
-      * specifies whether text should be automatically wrapped to fit into the control.
-      *
-      * If set to `TRUE` , users need to manually press the enter key to insert a line break. If set to `FALSE` , text is automatically wrapped at the control
-      * border.
-      */
-    var HardLineBreaks: Boolean = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
-      */
-    var HideInactiveSelection: Boolean = js.native
-    
-    /**
-      * specifies which line end type should be used for multi line text
-      *
-      * Controls working with this model care for this setting when the user enters text. Every line break entered into the control will be treated according
-      * to this setting, so that the {@link Text} property always contains only line ends in the format specified.
-      *
-      * Possible values are all constants from the {@link LineEndFormat} group.
-      *
-      * Note that this setting is usually not relevant when you set new text via the API. No matter which line end format is used in this new text then, usual
-      * control implementations should recognize all line end formats and display them properly.
-      * @since OOo 2.0
-      */
-    var LineEndFormat: Double = js.native
-    
-    /**
-      * specifies the maximum character count.
-      *
-      * There's no limitation, if set to 0.
-      */
-    var MaxTextLen: Double = js.native
-    
-    /** specifies that the control may have more than one line. */
-    var MultiLine: Boolean = js.native
-    
-    /**
-      * specifies whether the control paints it background or not.
-      * @since OOo 2.3
-      */
-    var PaintTransparent: Boolean = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
     /**
       * specifies whether the control should display the text including all its formatting.
@@ -4273,34 +2529,8 @@ object component {
       */
     var RichText: Boolean = js.native
     
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the text displayed in the control. */
-    var Text: String = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /** specifies if the content of the control can be scrolled in the vertical direction. */
-    var VScroll: Boolean = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 3.3
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
-      * @since OOo 3.1
-      */
-    var WritingMode: Double = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -4308,46 +2538,38 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /** specifies the model of a scroll bar control. */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlScrollBarModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, BlockIncrement, Border, BorderColor, Enabled, HelpText, HelpURL, LineIncrement, LiveScroll, Orientation, Printable, RepeatDelay, ScrollValue, ScrollValueMax, ScrollValueMin, SymbolColor, Tabstop, VisibleSize */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait ScrollBar
-    extends FormControlModel
-       with XReset {
+    extends StObject
+       with UnoControlScrollBarModel
+       with XReset
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the RGB color to be used for the control.
-      * @since OOo 2.0
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var BackgroundColor: Color = js.native
-    
-    /** specifies the increment for a block move. */
-    var BlockIncrement: Double = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
-    
-    /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
-      */
-    var BorderColor: Double = js.native
+    var ClassId: Double = js.native
     
     /**
       * contains a default value for the control.
@@ -4358,70 +2580,15 @@ object component {
       */
     var DefaultScrollValue: Double = js.native
     
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
-    /** specifies the increment for a single line move. */
-    var LineIncrement: Double = js.native
-    
     /**
-      * specifies the scrolling behavior of the control.
-      *
-      * `TRUE` means, that when the user moves the slider in the scroll bar, the content of the window is updated immediately. `FALSE` means, that the window
-      * is only updated after the user has released the mouse button.
-      * @since OOo 2.0
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var LiveScroll: Boolean = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
-    /** specifies the {@link ScrollBarOrientation} of the control. */
-    var Orientation: Double = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /**
-      * specifies the mouse repeat delay, in milliseconds.
-      *
-      * When the user presses a mouse in a control area where this triggers an action (such as scrolling the scrollbar), then usual control implementations
-      * allow to repeatedly trigger this action, without the need to release the mouse button and to press it again. The delay between two such triggers is
-      * specified with this property.
-      * @since OOo 2.0
-      */
-    var RepeatDelay: Double = js.native
-    
-    /** specifies the scroll value of the control. */
-    var ScrollValue: Double = js.native
-    
-    /** specifies the maximum scroll value of the control. */
-    var ScrollValueMax: Double = js.native
-    
-    /**
-      * specifies the minimum scroll value of the control.
-      *
-      * If this optional property is not present, clients of the component should assume a minimal scroll value of 0.
-      */
-    var ScrollValueMin: Double = js.native
-    
-    /**
-      * specifies the RGB color to be used when painting symbols which are part of the control's appearance, such as the arrow buttons.
-      * @since OOo 2.0
-      */
-    var SymbolColor: Color = js.native
-    
-    /**
-      * specifies that the control can be reached with the TAB key.
-      * @since OOo 2.0
-      */
-    var Tabstop: Boolean = js.native
-    
-    /** specifies the visible size of the scroll bar. */
-    var VisibleSize: Double = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -4429,40 +2596,38 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /** specifies the model of a scroll bar control. */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlSpinButtonModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, Enabled, HelpText, HelpURL, MouseWheelBehavior, Orientation, Printable, Repeat, RepeatDelay, SpinIncrement, SpinValue, SpinValueMax, SpinValueMin, SymbolColor */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait SpinButton
-    extends FormControlModel
-       with XReset {
-    
-    /** specifies the RGB color to be used for the control */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
+    extends StObject
+       with UnoControlSpinButtonModel
+       with XReset
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var BorderColor: Double = js.native
+    var ClassId: Double = js.native
     
     /**
       * contains a default value for the control.
@@ -4473,55 +2638,15 @@ object component {
       */
     var DefaultSpinValue: Double = js.native
     
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
     /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
-      *
-      * Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the {@link MouseWheelBehavior} constants,
-      * you can control under which circumstances this is possible.
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var MouseWheelBehavior: Double = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
-    /** specifies the {@link ScrollBarOrientation} of the control. */
-    var Orientation: Double = js.native
-    
-    /** specifies whether the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies whether the mouse should show repeating behavior, i.e. repeatedly trigger an action when keeping pressed. */
-    var Repeat: Boolean = js.native
-    
-    /**
-      * specifies the mouse repeat delay, in milliseconds.
-      *
-      * When the user presses a mouse in a control area where this triggers an action (such as spinning the value), then usual control implementations allow
-      * to repeatedly trigger this action, without the need to release the mouse button and to press it again. The delay between two such triggers is
-      * specified with this property.
-      */
-    var RepeatDelay: Double = js.native
-    
-    /** specifies the increment by which the value is changed when using operating the spin button. */
-    var SpinIncrement: Double = js.native
-    
-    /** specifies the current value of the control. */
-    var SpinValue: Double = js.native
-    
-    /** specifies the maximum value of the control. */
-    var SpinValueMax: Double = js.native
-    
-    /** specifies the minimum value of the control. */
-    var SpinValueMin: Double = js.native
-    
-    /** specifies the RGB color to be used when painting symbols which are part of the control's appearance, such as the arrow buttons. */
-    var SymbolColor: Color = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -4529,6 +2654,9 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
   
   /**
@@ -4537,7 +2665,8 @@ object component {
     */
   @js.native
   trait SubmitButton
-    extends FormControlModel
+    extends StObject
+       with FormControlModel
        with XSubmissionSupplier {
     
     /**
@@ -4551,7 +2680,8 @@ object component {
   /** specifies a component which allows the input of text, either single- or multi-line. */
   @js.native
   trait TextField
-    extends RichTextControl
+    extends StObject
+       with RichTextControl
        with XReset {
     
     /**
@@ -4574,35 +2704,30 @@ object component {
   /** specifies the control model for a field which can be used to input time values. */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.container.XNamed because var conflicts: Name. Inlined getName, setName
   - typings.activexLibreoffice.com_.sun.star.util.XCloneable because Already inherited
   - typings.activexLibreoffice.com_.sun.star.io.XPersistObject because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
   - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlDialogElement because Already inherited
+  - typings.activexLibreoffice.com_.sun.star.form.FormComponent because var conflicts: Name. Inlined 
   - typings.activexLibreoffice.com_.sun.star.awt.UnoControlModel because Already inherited
-  - typings.activexLibreoffice.com_.sun.star.awt.UnoControlTimeFieldModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined BackgroundColor, Border, BorderColor, Enabled, FontDescriptor, FontEmphasisMark, FontRelief, HelpText, HelpURL, HideInactiveSelection, MouseWheelBehavior, Printable, ReadOnly, Repeat, RepeatDelay, Spin, StrictFormat, Tabstop, Text, TextColor, TextLineColor, Time, TimeFormat, TimeMax, TimeMin, VerticalAlign, WritingMode */ @js.native
+  - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because var conflicts: DefaultControl, Height, Name, PositionX, PositionY, Step, TabIndex, Tag, Width. Inlined ClassId */ @js.native
   trait TimeField
-    extends FormControlModel
-       with XReset {
-    
-    /** specifies the background color (RGB) of the control. */
-    var BackgroundColor: Color = js.native
-    
-    /**
-      * specifies the border style of the control.
-      *
-      * `; 0: No border; 1: 3D border; 2: simple border; `
-      */
-    var Border: Double = js.native
+    extends StObject
+       with UnoControlTimeFieldModel
+       with XReset
+       with XFastPropertySet
+       with XPropertyState
+       with XChild
+       with XPropertyBag {
     
     /**
-      * specifies the color of the border, if present
-      *
-      * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
-      * @since OOo 2.0
+      * specifies the ID for classification of the component.
+      * @see FormComponentType
       */
-    var BorderColor: Double = js.native
+    var ClassId: Double = js.native
     
     /**
       * contains a default value for the control.
@@ -4613,110 +2738,15 @@ object component {
       */
     var DefaultTime: Double = js.native
     
-    /** determines whether the control is enabled or disabled. */
-    var Enabled: Boolean = js.native
-    
-    /** specifies the font attributes of the text in the control. */
-    var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-    var FontEmphasisMark: Double = js.native
-    
-    /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-    var FontRelief: Double = js.native
-    
-    /** specifies the help text of the control. */
-    var HelpText: String = js.native
-    
-    /** specifies the help URL of the control. */
-    var HelpURL: String = js.native
-    
     /**
-      * specifies whether the selection in the control should be hidden when the control is not active (focused).
-      * @since OOo 2.0
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
       */
-    var HideInactiveSelection: Boolean = js.native
+    /* InferMemberOverrides */
+    override val PropertySetInfo: XPropertySetInfo = js.native
     
-    /**
-      * defines how the mouse wheel can be used to scroll through the control's content.
-      *
-      * Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the {@link MouseWheelBehavior} constants,
-      * you can control under which circumstances this is possible.
-      */
-    var MouseWheelBehavior: Double = js.native
-    
-    /** specifies that the control will be printed with the document. */
-    var Printable: Boolean = js.native
-    
-    /** specifies that the content of the control cannot be modified by the user. */
-    var ReadOnly: Boolean = js.native
-    
-    /**
-      * specifies whether the mouse should show repeating behavior, i.e. repeatedly trigger an action when keeping pressed.
-      * @since OOo 2.0
-      */
-    var Repeat: Boolean = js.native
-    
-    /**
-      * specifies the mouse repeat delay, in milliseconds.
-      *
-      * When the user presses a mouse in a control area where this triggers an action (such as spinning the value), then usual control implementations allow
-      * to repeatedly trigger this action, without the need to release the mouse button and to press it again. The delay between two such triggers is
-      * specified with this property.
-      * @since OOo 2.0
-      */
-    var RepeatDelay: Double = js.native
-    
-    /** specifies that the control has a spin button. */
-    var Spin: Boolean = js.native
-    
-    /** specifies that the date is checked during the user input. */
-    var StrictFormat: Boolean = js.native
-    
-    /** specifies that the control can be reached with the TAB key. */
-    var Tabstop: Boolean = js.native
-    
-    /**
-      * specifies the text displayed in the control.
-      * @since OOo 2.0
-      */
-    var Text: String = js.native
-    
-    /** specifies the text color (RGB) of the control. */
-    var TextColor: Color = js.native
-    
-    /** specifies the text line color (RGB) of the control. */
-    var TextLineColor: Color = js.native
-    
-    /** specifies the time displayed in the control. */
-    var Time: typings.activexLibreoffice.com_.sun.star.util.Time = js.native
-    
-    /**
-      * specifies the format of the displayed time.
-      *
-      * `; 0:  24h short; 1:  24h long; 2:  12h short; 3:  12h long; 4:  Duration short; 5:  Duration long; `
-      */
-    var TimeFormat: Double = js.native
-    
-    /** specifies the maximum time that can be entered. */
-    var TimeMax: Time = js.native
-    
-    /** specifies the minimum time that can be entered. */
-    var TimeMin: Time = js.native
-    
-    /**
-      * specifies the vertical alignment of the text in the control.
-      * @since OOo 3.3
-      */
-    var VerticalAlign: VerticalAlignment = js.native
-    
-    /**
-      * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
-      *
-      * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
-      * @since OOo 3.1
-      */
-    var WritingMode: Double = js.native
+    /** @returns the programmatic name of the object. */
+    def getName(): String = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -4724,5 +2754,8 @@ object component {
       */
     /* InferMemberOverrides */
     override def getPropertySetInfo(): XPropertySetInfo = js.native
+    
+    /** sets the programmatic name of the object. */
+    def setName(aName: String): Unit = js.native
   }
 }

@@ -15,21 +15,19 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popconfirmMod extends Shortcut {
   
   @JSImport("antd/lib/popconfirm", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[PopconfirmProps with RefAttributes[_]] = js.native
+  val default: ForwardRefExoticComponent[PopconfirmProps & RefAttributes[js.Any]] = js.native
   
-  @js.native
   trait PopconfirmLocale extends StObject {
     
-    var cancelText: String = js.native
+    var cancelText: String
     
-    var okText: String = js.native
+    var okText: String
   }
   object PopconfirmLocale {
     
@@ -50,30 +48,31 @@ object popconfirmMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait PopconfirmProps extends AbstractTooltipProps {
+  trait PopconfirmProps
+    extends StObject
+       with AbstractTooltipProps {
     
-    var cancelButtonProps: js.UndefOr[NativeButtonProps] = js.native
+    var cancelButtonProps: js.UndefOr[NativeButtonProps] = js.undefined
     
-    var cancelText: js.UndefOr[ReactNode] = js.native
+    var cancelText: js.UndefOr[ReactNode] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var okButtonProps: js.UndefOr[NativeButtonProps] = js.native
+    var okButtonProps: js.UndefOr[NativeButtonProps] = js.undefined
     
-    var okText: js.UndefOr[ReactNode] = js.native
+    var okText: js.UndefOr[ReactNode] = js.undefined
     
-    var okType: js.UndefOr[LegacyButtonType] = js.native
+    var okType: js.UndefOr[LegacyButtonType] = js.undefined
     
     var onCancel: js.UndefOr[
         js.Function1[/* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onConfirm: js.UndefOr[
         js.Function1[/* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], Unit]
-      ] = js.native
+      ] = js.undefined
     
     @JSName("onVisibleChange")
     var onVisibleChange_PopconfirmProps: js.UndefOr[
@@ -82,9 +81,9 @@ object popconfirmMod extends Shortcut {
           /* e */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLDivElement]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var title: ReactNode | RenderFunction = js.native
+    var title: ReactNode | RenderFunction
   }
   object PopconfirmProps {
     
@@ -170,10 +169,9 @@ object popconfirmMod extends Shortcut {
     }
   }
   
-  @js.native
   trait PopconfirmState extends StObject {
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object PopconfirmState {
     
@@ -194,8 +192,8 @@ object popconfirmMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[PopconfirmProps with RefAttributes[_]]
+  type _To = ForwardRefExoticComponent[PopconfirmProps & RefAttributes[js.Any]]
   
   /* This means you don't have to write `default`, but can instead just say `popconfirmMod.foo` */
-  override def _to: ForwardRefExoticComponent[PopconfirmProps with RefAttributes[_]] = default
+  override def _to: ForwardRefExoticComponent[PopconfirmProps & RefAttributes[js.Any]] = default
 }

@@ -2,29 +2,27 @@ package typings.heremaps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Label extends StObject {
   
-  var label: String = js.native
+  var label: String
   
-  var linkId: String = js.native
+  var linkId: String
   
-  var mappedPosition: Latitude = js.native
+  var mappedPosition: Latitude
   
-  var mappedRoadName: String = js.native
+  var mappedRoadName: String
   
-  var originalPosition: Latitude = js.native
+  var originalPosition: Latitude
   
-  var shapeIndex: Double = js.native
+  var shapeIndex: Double
   
-  var sideOfStreet: String = js.native
+  var sideOfStreet: String
   
-  var spot: Double = js.native
+  var spot: Double
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Label {
   

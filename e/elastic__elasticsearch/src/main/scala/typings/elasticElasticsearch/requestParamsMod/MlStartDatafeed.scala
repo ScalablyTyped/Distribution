@@ -2,21 +2,21 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlStartDatafeed[T] extends Generic {
+trait MlStartDatafeed[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var datafeed_id: String = js.native
+  var datafeed_id: String
   
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object MlStartDatafeed {
   
@@ -27,7 +27,7 @@ object MlStartDatafeed {
   }
   
   @scala.inline
-  implicit class MlStartDatafeedMutableBuilder[Self <: MlStartDatafeed[_], T] (val x: Self with MlStartDatafeed[T]) extends AnyVal {
+  implicit class MlStartDatafeedMutableBuilder[Self <: MlStartDatafeed[?], T] (val x: Self & MlStartDatafeed[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

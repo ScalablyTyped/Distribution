@@ -11,8 +11,8 @@ Twitter API client for node (REST & Streaming)
 | Full name          | twit |
 | Keywords           | twitter, api, rest, stream, streaming, oauth |
 | # releases         | 0 |
-| # dependents       | 294 |
-| # downloads        | 1032835 |
+| # dependents       | 310 |
+| # downloads        | 1304535 |
 | # stars            | 99 |
 
 ## Links

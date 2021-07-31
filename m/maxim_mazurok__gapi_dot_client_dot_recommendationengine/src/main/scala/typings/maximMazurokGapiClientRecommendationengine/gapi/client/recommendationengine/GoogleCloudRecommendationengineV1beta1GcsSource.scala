@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1GcsSource extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GoogleCloudRecommendationengineV1beta1GcsSource extends StObject {
     * pattern matching one or more files, such as gs://bucket/directory/ *.json. A request can contain at most 100 files, and each file can be up to 2 GB. See [Importing catalog
     * information](/recommendations-ai/docs/upload-catalog) for the expected file format and setup instructions.
     */
-  var inputUris: js.UndefOr[js.Array[String]] = js.native
+  var inputUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The schema to use when parsing the data from the source. Supported values for catalog imports: 1: "catalog_recommendations_ai" using
@@ -22,7 +20,7 @@ trait GoogleCloudRecommendationengineV1beta1GcsSource extends StObject {
     * https://cloud.google.com/recommendations-ai/docs/manage-user-events#import (Default for userEvents.import) 2. "user_events_ga360" using
     * https://support.google.com/analytics/answer/3437719?hl=en
     */
-  var jsonSchema: js.UndefOr[String] = js.native
+  var jsonSchema: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1GcsSource {
   

@@ -4,50 +4,50 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.chart.series.ISeries
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPieChart extends ISeries {
+trait IPieChart
+  extends StObject
+     with ISeries {
   
   /** [Config Option] (String) */
-  var angleField: js.UndefOr[String] = js.native
+  var angleField: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Array) */
-  var colorSet: js.UndefOr[Array] = js.native
+  var colorSet: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (Boolean/Number) */
-  var donut: js.UndefOr[js.Any] = js.native
+  var donut: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Draws the series for the current chart  */
-  var drawSeries: js.UndefOr[js.Function0[Unit]] = js.native
+  var drawSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var highlightDuration: js.UndefOr[Double] = js.native
+  var highlightDuration: js.UndefOr[Double] = js.undefined
   
   /** [Method] Highlight the specified item
     * @param item Object {Object} Info about the item; same format as returned by getItemForPoint
     */
   @JSName("highlightItem")
-  var highlightItem_IPieChart: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
+  var highlightItem_IPieChart: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var lengthField: js.UndefOr[String] = js.native
+  var lengthField: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object) */
-  var style: js.UndefOr[js.Any] = js.native
+  var style: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Un highlights the specified item
     * @param item Object {Object} Info about the item; same format as returned by getItemForPoint
     */
   @JSName("unHighlightItem")
-  var unHighlightItem_IPieChart: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
+  var unHighlightItem_IPieChart: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var xField: js.UndefOr[String] = js.native
+  var xField: js.UndefOr[String] = js.undefined
 }
 object IPieChart {
   

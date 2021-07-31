@@ -2,27 +2,25 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuyLink extends StObject {
   
-  var buyLink: js.UndefOr[String] = js.native
+  var buyLink: js.UndefOr[String] = js.undefined
   
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
-  var isEbook: js.UndefOr[Boolean] = js.native
+  var isEbook: js.UndefOr[Boolean] = js.undefined
   
-  var listPrice: js.UndefOr[Amount] = js.native
+  var listPrice: js.UndefOr[Amount] = js.undefined
   
-  var offers: js.UndefOr[js.Array[FinskyOfferType]] = js.native
+  var offers: js.UndefOr[js.Array[FinskyOfferType]] = js.undefined
   
-  var onSaleDate: js.UndefOr[String] = js.native
+  var onSaleDate: js.UndefOr[String] = js.undefined
   
-  var retailPrice: js.UndefOr[Amount] = js.native
+  var retailPrice: js.UndefOr[Amount] = js.undefined
   
-  var saleability: js.UndefOr[String] = js.native
+  var saleability: js.UndefOr[String] = js.undefined
 }
 object BuyLink {
   

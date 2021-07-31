@@ -2,19 +2,17 @@ package typings.yandexMaps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
-  var adjustMapMargin: js.UndefOr[Boolean] = js.native
+  var adjustMapMargin: js.UndefOr[Boolean] = js.undefined
   
-  var position: js.UndefOr[Bottom] = js.native
+  var position: js.UndefOr[Bottom] = js.undefined
   
-  var scaleLine: js.UndefOr[Boolean] = js.native
+  var scaleLine: js.UndefOr[Boolean] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Position {
   

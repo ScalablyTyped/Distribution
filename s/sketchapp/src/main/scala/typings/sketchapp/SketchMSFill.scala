@@ -3,35 +3,32 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.fill
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSFill extends StObject {
   
-  var _class: fill = js.native
+  var _class: fill
   
-  var color: js.UndefOr[SketchMSColor] = js.native
+  var color: js.UndefOr[SketchMSColor] = js.undefined
   
-  var fillType: SketchMSFillTypeEnum = js.native
+  var fillType: SketchMSFillTypeEnum
   
-  var image: js.UndefOr[SketchMSImageDataReference] = js.native
+  var image: js.UndefOr[SketchMSImageDataReference] = js.undefined
   
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
-  var noiseIndex: Double = js.native
+  var noiseIndex: Double
   
-  var noiseIntensity: Double = js.native
+  var noiseIntensity: Double
   
-  var patternFillType: SketchMSPatternFillTypeEnum = js.native
+  var patternFillType: SketchMSPatternFillTypeEnum
   
-  var patternTileScale: Double = js.native
+  var patternTileScale: Double
 }
 object SketchMSFill {
   
   @scala.inline
   def apply(
-    _class: fill,
     fillType: SketchMSFillTypeEnum,
     isEnabled: Boolean,
     noiseIndex: Double,
@@ -39,7 +36,7 @@ object SketchMSFill {
     patternFillType: SketchMSPatternFillTypeEnum,
     patternTileScale: Double
   ): SketchMSFill = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], fillType = fillType.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], noiseIndex = noiseIndex.asInstanceOf[js.Any], noiseIntensity = noiseIntensity.asInstanceOf[js.Any], patternFillType = patternFillType.asInstanceOf[js.Any], patternTileScale = patternTileScale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_class = "fill", fillType = fillType.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], noiseIndex = noiseIndex.asInstanceOf[js.Any], noiseIntensity = noiseIntensity.asInstanceOf[js.Any], patternFillType = patternFillType.asInstanceOf[js.Any], patternTileScale = patternTileScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSFill]
   }
   

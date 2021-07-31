@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to multiple properties which form a hierarchy.
   * @see XHierarchicalPropertySet
   */
-@js.native
-trait XMultiHierarchicalPropertySet extends XInterface {
+trait XMultiHierarchicalPropertySet
+  extends StObject
+     with XInterface {
   
   /**
     * retrieve information about the hierarchy of properties
@@ -22,7 +22,7 @@ trait XMultiHierarchicalPropertySet extends XInterface {
     * @returns `NULL` if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XHierarchicalPropertySet
     * @see XHierarchicalPropertySet.getHierarchicalPropertySetInfo
     */
-  val HierarchicalPropertySetInfo: XHierarchicalPropertySetInfo = js.native
+  val HierarchicalPropertySetInfo: XHierarchicalPropertySetInfo
   
   /**
     * retrieve information about the hierarchy of properties
@@ -30,7 +30,7 @@ trait XMultiHierarchicalPropertySet extends XInterface {
     * @returns `NULL` if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XHierarchicalPropertySet
     * @see XHierarchicalPropertySet.getHierarchicalPropertySetInfo
     */
-  def getHierarchicalPropertySetInfo(): XHierarchicalPropertySetInfo = js.native
+  def getHierarchicalPropertySetInfo(): XHierarchicalPropertySetInfo
   
   /**
     * @returns a sequence of all values of the properties which are specified by their nested names.  The order of the values in the returned sequence will be t
@@ -39,7 +39,7 @@ trait XMultiHierarchicalPropertySet extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if one of the names is not a well-formed nested name for this hierarchy. An implementation is not
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def getHierarchicalPropertyValues(aPropertyNames: SeqEquiv[String]): SafeArray[_] = js.native
+  def getHierarchicalPropertyValues(aPropertyNames: SeqEquiv[String]): SafeArray[js.Any]
   
   /**
     * sets the values of the properties with the specified nested names.
@@ -56,7 +56,7 @@ trait XMultiHierarchicalPropertySet extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if one of the values is not a legal value for the corresponding property or if one of the names is
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def setHierarchicalPropertyValues(aHierarchicalPropertyNames: SeqEquiv[String], Values: SeqEquiv[_]): Unit = js.native
+  def setHierarchicalPropertyValues(aHierarchicalPropertyNames: SeqEquiv[String], Values: SeqEquiv[js.Any]): Unit
 }
 object XMultiHierarchicalPropertySet {
   
@@ -65,10 +65,10 @@ object XMultiHierarchicalPropertySet {
     HierarchicalPropertySetInfo: XHierarchicalPropertySetInfo,
     acquire: () => Unit,
     getHierarchicalPropertySetInfo: () => XHierarchicalPropertySetInfo,
-    getHierarchicalPropertyValues: SeqEquiv[String] => SafeArray[_],
+    getHierarchicalPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
     queryInterface: `type` => js.Any,
     release: () => Unit,
-    setHierarchicalPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit
+    setHierarchicalPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit
   ): XMultiHierarchicalPropertySet = {
     val __obj = js.Dynamic.literal(HierarchicalPropertySetInfo = HierarchicalPropertySetInfo.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getHierarchicalPropertySetInfo = js.Any.fromFunction0(getHierarchicalPropertySetInfo), getHierarchicalPropertyValues = js.Any.fromFunction1(getHierarchicalPropertyValues), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setHierarchicalPropertyValues = js.Any.fromFunction2(setHierarchicalPropertyValues))
     __obj.asInstanceOf[XMultiHierarchicalPropertySet]
@@ -81,12 +81,12 @@ object XMultiHierarchicalPropertySet {
     def setGetHierarchicalPropertySetInfo(value: () => XHierarchicalPropertySetInfo): Self = StObject.set(x, "getHierarchicalPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHierarchicalPropertyValues(value: SeqEquiv[String] => SafeArray[_]): Self = StObject.set(x, "getHierarchicalPropertyValues", js.Any.fromFunction1(value))
+    def setGetHierarchicalPropertyValues(value: SeqEquiv[String] => SafeArray[js.Any]): Self = StObject.set(x, "getHierarchicalPropertyValues", js.Any.fromFunction1(value))
     
     @scala.inline
     def setHierarchicalPropertySetInfo(value: XHierarchicalPropertySetInfo): Self = StObject.set(x, "HierarchicalPropertySetInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetHierarchicalPropertyValues(value: (SeqEquiv[String], SeqEquiv[_]) => Unit): Self = StObject.set(x, "setHierarchicalPropertyValues", js.Any.fromFunction2(value))
+    def setSetHierarchicalPropertyValues(value: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit): Self = StObject.set(x, "setHierarchicalPropertyValues", js.Any.fromFunction2(value))
   }
 }

@@ -2,19 +2,17 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The properties of the SheetsChart.
   */
-@js.native
 trait SchemaSheetsChartProperties extends StObject {
   
   /**
     * The properties of the embedded chart image.
     */
-  var chartImageProperties: js.UndefOr[SchemaImageProperties] = js.native
+  var chartImageProperties: js.UndefOr[SchemaImageProperties] = js.undefined
 }
 object SchemaSheetsChartProperties {
   

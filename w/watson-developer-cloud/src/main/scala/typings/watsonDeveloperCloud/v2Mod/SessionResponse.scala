@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SessionResponse. */
-@js.native
 trait SessionResponse extends StObject {
   
   /** The session ID. */
-  var session_id: String = js.native
+  var session_id: String
 }
 object SessionResponse {
   

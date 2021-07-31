@@ -2,39 +2,37 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxCurrentSelectionItem extends StObject {
   
-  var qField: String = js.native
+  var qField: String
   
-  var qIsNum: js.UndefOr[Boolean] = js.native
+  var qIsNum: js.UndefOr[Boolean] = js.undefined
   
-  var qLocked: js.UndefOr[Boolean] = js.native
+  var qLocked: js.UndefOr[Boolean] = js.undefined
   
-  var qNotSelectedFieldSelectionInfo: js.Array[NxFieldSelectionInfo] = js.native
+  var qNotSelectedFieldSelectionInfo: js.Array[NxFieldSelectionInfo]
   
-  var qOneAndOnlyOne: js.UndefOr[Boolean] = js.native
+  var qOneAndOnlyOne: js.UndefOr[Boolean] = js.undefined
   
-  var qRangeInfo: js.Array[RangeSelectInfo] = js.native
+  var qRangeInfo: js.Array[RangeSelectInfo]
   
-  var qSelected: String = js.native
+  var qSelected: String
   
-  var qSelectedCount: Double = js.native
+  var qSelectedCount: Double
   
-  var qSelectedFieldSelectionInfo: js.Array[NxFieldSelectionInfo] = js.native
+  var qSelectedFieldSelectionInfo: js.Array[NxFieldSelectionInfo]
   
-  var qSelectionThreshold: Double = js.native
+  var qSelectionThreshold: Double
   
-  var qSortIndex: Double = js.native
+  var qSortIndex: Double
   
-  var qStateCounts: NxStateCounts = js.native
+  var qStateCounts: NxStateCounts
   
-  var qTextSearch: js.UndefOr[String] = js.native
+  var qTextSearch: js.UndefOr[String] = js.undefined
   
-  var qTotal: Double = js.native
+  var qTotal: Double
 }
 object NxCurrentSelectionItem {
   

@@ -5,23 +5,21 @@ import typings.chromeApps.chromeAppsStrings.Connecting_
 import typings.chromeApps.chromeAppsStrings.Disconnected_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CONNECTED extends StObject {
   
-  var CONNECTED: Connected_ = js.native
+  var CONNECTED: Connected_
   
-  var CONNECTING: Connecting_ = js.native
+  var CONNECTING: Connecting_
   
-  var DISCONNECTED: Disconnected_ = js.native
+  var DISCONNECTED: Disconnected_
 }
 object CONNECTED {
   
   @scala.inline
-  def apply(CONNECTED: Connected_, CONNECTING: Connecting_, DISCONNECTED: Disconnected_): CONNECTED = {
-    val __obj = js.Dynamic.literal(CONNECTED = CONNECTED.asInstanceOf[js.Any], CONNECTING = CONNECTING.asInstanceOf[js.Any], DISCONNECTED = DISCONNECTED.asInstanceOf[js.Any])
+  def apply(): CONNECTED = {
+    val __obj = js.Dynamic.literal(CONNECTED = "Connected", CONNECTING = "Connecting", DISCONNECTED = "Disconnected")
     __obj.asInstanceOf[CONNECTED]
   }
   

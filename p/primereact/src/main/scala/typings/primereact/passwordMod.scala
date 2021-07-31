@@ -7,7 +7,6 @@ import typings.react.mod.HTMLProps
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object passwordMod {
@@ -24,28 +23,28 @@ object passwordMod {
     def this(props: PasswordProps, context: js.Any) = this()
   }
   
-  @js.native
   trait PasswordProps
-    extends HTMLProps[HTMLInputElement]
+    extends StObject
+       with HTMLProps[HTMLInputElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var feedback: js.UndefOr[Boolean] = js.native
+    var feedback: js.UndefOr[Boolean] = js.undefined
     
-    var mediumLabel: js.UndefOr[String] = js.native
+    var mediumLabel: js.UndefOr[String] = js.undefined
     
-    var panelClassName: js.UndefOr[String] = js.native
+    var panelClassName: js.UndefOr[String] = js.undefined
     
-    var panelStyle: js.UndefOr[js.Object] = js.native
+    var panelStyle: js.UndefOr[js.Object] = js.undefined
     
-    var promptLabel: js.UndefOr[String] = js.native
+    var promptLabel: js.UndefOr[String] = js.undefined
     
-    var strongLabel: js.UndefOr[String] = js.native
+    var strongLabel: js.UndefOr[String] = js.undefined
     
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
-    var tooltipOptions: js.UndefOr[TooltipOptions] = js.native
+    var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
-    var weakLabel: js.UndefOr[String] = js.native
+    var weakLabel: js.UndefOr[String] = js.undefined
   }
   object PasswordProps {
     

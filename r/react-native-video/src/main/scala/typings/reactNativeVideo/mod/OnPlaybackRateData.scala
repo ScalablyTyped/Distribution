@@ -2,13 +2,11 @@ package typings.reactNativeVideo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnPlaybackRateData extends StObject {
   
-  var playbackRate: Double = js.native
+  var playbackRate: Double
 }
 object OnPlaybackRateData {
   

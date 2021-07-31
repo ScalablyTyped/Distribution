@@ -3,14 +3,13 @@ package typings.awsLambda.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DictKey
-  extends /* Key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* Key */ StringDictionary[js.Any] {
   
-  var ServiceToken: String = js.native
+  var ServiceToken: String
 }
 object DictKey {
   

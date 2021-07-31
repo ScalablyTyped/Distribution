@@ -2,7 +2,6 @@ package typings.angularStrap.mgcrea.ngStrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -11,18 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ///////////////////////////////////////////////////////////////////////////
 object collapse {
   
-  @js.native
   trait ICollapseOptions extends StObject {
     
-    var activeClass: js.UndefOr[String] = js.native
+    var activeClass: js.UndefOr[String] = js.undefined
     
-    var allowMultiple: js.UndefOr[Boolean] = js.native
+    var allowMultiple: js.UndefOr[Boolean] = js.undefined
     
-    var animation: js.UndefOr[String] = js.native
+    var animation: js.UndefOr[String] = js.undefined
     
-    var disallowToggle: js.UndefOr[Boolean] = js.native
+    var disallowToggle: js.UndefOr[Boolean] = js.undefined
     
-    var startCollapsed: js.UndefOr[Boolean] = js.native
+    var startCollapsed: js.UndefOr[Boolean] = js.undefined
   }
   object ICollapseOptions {
     
@@ -67,10 +65,9 @@ object collapse {
     }
   }
   
-  @js.native
   trait ICollapseProvider extends StObject {
     
-    var defaults: ICollapseOptions = js.native
+    var defaults: ICollapseOptions
   }
   object ICollapseProvider {
     

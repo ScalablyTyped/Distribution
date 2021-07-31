@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,70 +14,71 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface represents a x509 certificate.
   */
-@js.native
-trait XCertificate extends XInterface {
+trait XCertificate
+  extends StObject
+     with XInterface {
   
   /**
     * get the certificate usage. The return value is a set of bits, as defined in RFC3280 for the {@link KeyUsage} BIT STRING. Note the bit and byte order
     * used in ASN.1, so for instance the bit dataEncipherment in {@link KeyUsage} , "bit 3", corresponds to CERT_DATA_ENCIPHERMENT_KEY_USAGE in Win32 and
     * KU_DATA_ENCIPHERMENT in NSS, both with value 0x10.
     */
-  val CertificateUsage: Double = js.native
+  val CertificateUsage: Double
   
   /** the DER encoded form of the certificate */
-  var Encoded: SafeArray[Double] = js.native
+  var Encoded: SafeArray[Double]
   
   /** all extensions of a certificate. */
-  var Extensions: SafeArray[XCertificateExtension] = js.native
+  var Extensions: SafeArray[XCertificateExtension]
   
   /** the issuer name attribute of the certificate. */
-  var IssuerName: String = js.native
+  var IssuerName: String
   
   /** the issuer unique ID attribute of the certificate. */
-  var IssuerUniqueID: SafeArray[Double] = js.native
+  var IssuerUniqueID: SafeArray[Double]
   
   /** the MD5 thumbprint */
-  var MD5Thumbprint: SafeArray[Double] = js.native
+  var MD5Thumbprint: SafeArray[Double]
   
   /** the validity NotAfter date attribute of the certificate. */
-  var NotValidAfter: DateTime = js.native
+  var NotValidAfter: DateTime
   
   /** the validity NotBefore date attribute of the certificate. */
-  var NotValidBefore: DateTime = js.native
+  var NotValidBefore: DateTime
   
   /** the SHA-1 thumbprint */
-  var SHA1Thumbprint: SafeArray[Double] = js.native
+  var SHA1Thumbprint: SafeArray[Double]
   
   /** the serial number attribute of the certificate. */
-  var SerialNumber: SafeArray[Double] = js.native
+  var SerialNumber: SafeArray[Double]
   
   /** the signature algorithm */
-  var SignatureAlgorithm: String = js.native
+  var SignatureAlgorithm: String
   
   /** the subject name attribute of the certificate. */
-  var SubjectName: String = js.native
+  var SubjectName: String
   
   /** the algorithm of the subject public key */
-  var SubjectPublicKeyAlgorithm: String = js.native
+  var SubjectPublicKeyAlgorithm: String
   
   /** the value of the subject public key */
-  var SubjectPublicKeyValue: SafeArray[Double] = js.native
+  var SubjectPublicKeyValue: SafeArray[Double]
   
   /** the subject unique ID attribute of the certificate. */
-  var SubjectUniqueID: SafeArray[Double] = js.native
+  var SubjectUniqueID: SafeArray[Double]
   
   /** the version number attribute of the certificate. */
-  var Version: Double = js.native
+  var Version: Double
   
   /** Find a extension with a object identifier. */
-  def findCertificateExtension(oid: SeqEquiv[Double]): XCertificateExtension = js.native
+  def findCertificateExtension(oid: SeqEquiv[Double]): XCertificateExtension
   
   /**
     * get the certificate usage. The return value is a set of bits, as defined in RFC3280 for the {@link KeyUsage} BIT STRING. Note the bit and byte order
     * used in ASN.1, so for instance the bit dataEncipherment in {@link KeyUsage} , "bit 3", corresponds to CERT_DATA_ENCIPHERMENT_KEY_USAGE in Win32 and
     * KU_DATA_ENCIPHERMENT in NSS, both with value 0x10.
     */
-  def getCertificateUsage(): Double = js.native
+  def getCertificateUsage(): Double
 }
 object XCertificate {
   

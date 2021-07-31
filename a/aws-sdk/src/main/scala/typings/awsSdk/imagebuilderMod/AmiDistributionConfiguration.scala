@@ -2,41 +2,39 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AmiDistributionConfiguration extends StObject {
   
   /**
     * The tags to apply to AMIs distributed to this Region. 
     */
-  var amiTags: js.UndefOr[TagMap] = js.native
+  var amiTags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The description of the distribution configuration. Minimum and maximum length are in characters.
     */
-  var description: js.UndefOr[NonEmptyString] = js.native
+  var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     *  The KMS key identifier used to encrypt the distributed image. 
     */
-  var kmsKeyId: js.UndefOr[NonEmptyString] = js.native
+  var kmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     *  Launch permissions can be used to configure which AWS accounts can use the AMI to launch instances. 
     */
-  var launchPermission: js.UndefOr[LaunchPermissionConfiguration] = js.native
+  var launchPermission: js.UndefOr[LaunchPermissionConfiguration] = js.undefined
   
   /**
     * The name of the distribution configuration. 
     */
-  var name: js.UndefOr[AmiNameString] = js.native
+  var name: js.UndefOr[AmiNameString] = js.undefined
   
   /**
     *  The ID of an account to which you want to distribute an image. 
     */
-  var targetAccountIds: js.UndefOr[AccountList] = js.native
+  var targetAccountIds: js.UndefOr[AccountList] = js.undefined
 }
 object AmiDistributionConfiguration {
   

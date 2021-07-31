@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpFaultInjection extends StObject {
   
   /** The specification for how client requests are aborted as part of fault injection. */
-  var abort: js.UndefOr[HttpFaultAbort] = js.native
+  var abort: js.UndefOr[HttpFaultAbort] = js.undefined
   
   /** The specification for how client requests are delayed as part of fault injection, before being sent to a backend service. */
-  var delay: js.UndefOr[HttpFaultDelay] = js.native
+  var delay: js.UndefOr[HttpFaultDelay] = js.undefined
 }
 object HttpFaultInjection {
   

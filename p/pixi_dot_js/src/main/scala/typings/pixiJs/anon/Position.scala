@@ -2,21 +2,19 @@ package typings.pixiJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
-  var position: js.UndefOr[Boolean] = js.native
+  var position: js.UndefOr[Boolean] = js.undefined
   
-  var rotation: js.UndefOr[Boolean] = js.native
+  var rotation: js.UndefOr[Boolean] = js.undefined
   
-  var tint: js.UndefOr[Boolean] = js.native
+  var tint: js.UndefOr[Boolean] = js.undefined
   
-  var uvs: js.UndefOr[Boolean] = js.native
+  var uvs: js.UndefOr[Boolean] = js.undefined
   
-  var vertices: js.UndefOr[Boolean] = js.native
+  var vertices: js.UndefOr[Boolean] = js.undefined
 }
 object Position {
   

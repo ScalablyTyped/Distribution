@@ -3,26 +3,26 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseElementNode extends Node2 {
+trait BaseElementNode
+  extends StObject
+     with Node2 {
   
-  var children: js.Array[TemplateChildNode] = js.native
+  var children: js.Array[TemplateChildNode]
   
-  var isSelfClosing: Boolean = js.native
+  var isSelfClosing: Boolean
   
-  var ns: Namespace = js.native
+  var ns: Namespace
   
-  var props: js.Array[AttributeNode | DirectiveNode] = js.native
+  var props: js.Array[AttributeNode | DirectiveNode]
   
-  var tag: String = js.native
+  var tag: String
   
-  var tagType: ElementTypes = js.native
+  var tagType: ElementTypes
   
   @JSName("type")
-  var type_BaseElementNode: `1` = js.native
+  var type_BaseElementNode: `1`
 }
 object BaseElementNode {
   
@@ -34,11 +34,10 @@ object BaseElementNode {
     ns: Namespace,
     props: js.Array[AttributeNode | DirectiveNode],
     tag: String,
-    tagType: ElementTypes,
-    `type`: `1`
+    tagType: ElementTypes
   ): BaseElementNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = tagType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(1)
     __obj.asInstanceOf[BaseElementNode]
   }
   

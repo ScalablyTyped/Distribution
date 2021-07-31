@@ -2,15 +2,13 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxGroupTail extends StObject {
   
-  var qDown: Double = js.native
+  var qDown: Double
   
-  var qUp: Double = js.native
+  var qUp: Double
 }
 object NxGroupTail {
   

@@ -2,43 +2,41 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmitOptions extends StObject {
   
-  var _commonDirectoryPath: js.Any = js.native
+  var _commonDirectoryPath: js.Any
   
-  var _diagnostic: js.Any = js.native
+  var _diagnostic: js.Any
   
-  var _outputDirectory: js.Any = js.native
+  var _outputDirectory: js.Any
   
-  var _settings: js.Any = js.native
+  var _settings: js.Any
   
-  var _sharedOutputFile: js.Any = js.native
+  var _sharedOutputFile: js.Any
   
-  var _sourceMapRootDirectory: js.Any = js.native
+  var _sourceMapRootDirectory: js.Any
   
-  var _sourceRootDirectory: js.Any = js.native
+  var _sourceRootDirectory: js.Any
   
-  def commonDirectoryPath(): String = js.native
+  def commonDirectoryPath(): String
   
-  def compilationSettings(): ImmutableCompilationSettings = js.native
+  def compilationSettings(): ImmutableCompilationSettings
   
-  /* private */ def determineCommonDirectoryPath(compiler: js.Any): js.Any = js.native
+  /* private */ def determineCommonDirectoryPath(compiler: js.Any): js.Any
   
-  def diagnostic(): Diagnostic = js.native
+  def diagnostic(): Diagnostic
   
-  def outputDirectory(): String = js.native
+  def outputDirectory(): String
   
-  def resolvePath(path: String): String = js.native
+  def resolvePath(path: String): String
   
-  def sharedOutputFile(): String = js.native
+  def sharedOutputFile(): String
   
-  def sourceMapRootDirectory(): String = js.native
+  def sourceMapRootDirectory(): String
   
-  def sourceRootDirectory(): String = js.native
+  def sourceRootDirectory(): String
 }
 object EmitOptions {
   

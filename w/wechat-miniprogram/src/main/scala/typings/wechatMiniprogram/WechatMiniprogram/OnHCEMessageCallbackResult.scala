@@ -5,24 +5,22 @@ import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1`
 import typings.wechatMiniprogram.wechatMiniprogramNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnHCEMessageCallbackResult extends StObject {
   
   /** `messageType=1` 时 ,客户端接收到 NFC 设备的指令 */
-  var data: ArrayBuffer = js.native
+  var data: ArrayBuffer
   
   /** 消息类型
     *
     * 可选值：
     * - 1: HCE APDU Command类型，小程序需对此指令进行处理，并调用 sendHCEMessage 接口返回处理指令;
     * - 2: 设备离场事件类型; */
-  var messageType: `1` | `2` = js.native
+  var messageType: `1` | `2`
   
   /** `messageType=2` 时，原因 */
-  var reason: Double = js.native
+  var reason: Double
 }
 object OnHCEMessageCallbackResult {
   

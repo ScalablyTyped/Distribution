@@ -3,7 +3,6 @@ package typings.batchStream
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,17 +16,16 @@ object mod {
   @js.native
   trait BatchStream extends Transform {
     
-    var batch: js.Array[_] = js.native
+    var batch: js.Array[js.Any] = js.native
     
     var size: Double = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

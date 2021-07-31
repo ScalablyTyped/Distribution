@@ -3,27 +3,26 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 import typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.slider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICustomSlider extends ICustomControl {
+trait ICustomSlider
+  extends StObject
+     with ICustomControl {
   
-  var component: slider = js.native
+  var component: slider
   
-  var defaultValue: Double = js.native
+  var defaultValue: Double
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
   
-  var step: Double = js.native
+  var step: Double
 }
 object ICustomSlider {
   
   @scala.inline
   def apply(
-    component: slider,
     defaultValue: Double,
     label: String,
     max: Double,
@@ -32,7 +31,7 @@ object ICustomSlider {
     step: Double,
     `type`: String
   ): ICustomSlider = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(component = "slider", defaultValue = defaultValue.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomSlider]
   }

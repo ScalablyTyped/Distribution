@@ -2,29 +2,27 @@ package typings.cannon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BOX extends StObject {
     
-    var BOX: Double = js.native
+    var BOX: Double
     
-    var COMPOUND: Double = js.native
+    var COMPOUND: Double
     
-    var CONVEXPOLYHEDRON: Double = js.native
+    var CONVEXPOLYHEDRON: Double
     
-    var CYLINDER: Double = js.native
+    var CYLINDER: Double
     
-    var HEIGHTFIELD: Double = js.native
+    var HEIGHTFIELD: Double
     
-    var PARTICLE: Double = js.native
+    var PARTICLE: Double
     
-    var PLANE: Double = js.native
+    var PLANE: Double
     
-    var SPHERE: Double = js.native
+    var SPHERE: Double
   }
   object BOX {
     
@@ -72,18 +70,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Broadphaser extends StObject {
     
-    var broadphaser: Double = js.native
+    var broadphaser: Double
     
-    var integrate: Double = js.native
+    var integrate: Double
     
-    var makeContactConstraints: Double = js.native
+    var makeContactConstraints: Double
     
-    var narrowphase: Double = js.native
+    var narrowphase: Double
     
-    var solve: Double = js.native
+    var solve: Double
   }
   object Broadphaser {
     
@@ -119,15 +116,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Keys extends StObject {
     
-    var keys: js.Array[_] = js.native
+    var keys: js.Array[js.Any]
   }
   object Keys {
     
     @scala.inline
-    def apply(keys: js.Array[_]): Keys = {
+    def apply(keys: js.Array[js.Any]): Keys = {
       val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
       __obj.asInstanceOf[Keys]
     }
@@ -136,7 +132,7 @@ object anon {
     implicit class KeysMutableBuilder[Self <: Keys] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setKeys(value: js.Array[_]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      def setKeys(value: js.Array[js.Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))

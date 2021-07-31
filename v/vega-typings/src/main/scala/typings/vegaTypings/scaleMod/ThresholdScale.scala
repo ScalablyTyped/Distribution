@@ -4,24 +4,23 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.threshold
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThresholdScale
-  extends BaseScale
+  extends StObject
+     with BaseScale
      with Scale {
   
-  var nice: js.UndefOr[Boolean | Double | SignalRef] = js.native
+  var nice: js.UndefOr[Boolean | Double | SignalRef] = js.undefined
   
-  var padding: js.UndefOr[Double | SignalRef] = js.native
+  var padding: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var range: js.UndefOr[RangeScheme] = js.native
+  var range: js.UndefOr[RangeScheme] = js.undefined
   
   @JSName("type")
-  var type_ThresholdScale: js.UndefOr[threshold] = js.native
+  var type_ThresholdScale: js.UndefOr[threshold] = js.undefined
   
-  var zero: js.UndefOr[Boolean | SignalRef] = js.native
+  var zero: js.UndefOr[Boolean | SignalRef] = js.undefined
 }
 object ThresholdScale {
   

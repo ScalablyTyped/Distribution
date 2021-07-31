@@ -2,41 +2,39 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContentModerationResponse extends StObject {
   
   /**
     * The current status of the unsafe content analysis job.
     */
-  var JobStatus: js.UndefOr[VideoJobStatus] = js.native
+  var JobStatus: js.UndefOr[VideoJobStatus] = js.undefined
   
   /**
     * The detected unsafe content labels and the time(s) they were detected.
     */
-  var ModerationLabels: js.UndefOr[ContentModerationDetections] = js.native
+  var ModerationLabels: js.UndefOr[ContentModerationDetections] = js.undefined
   
   /**
     * Version number of the moderation detection model that was used to detect unsafe content.
     */
-  var ModerationModelVersion: js.UndefOr[String] = js.native
+  var ModerationModelVersion: js.UndefOr[String] = js.undefined
   
   /**
     * If the response is truncated, Amazon Rekognition Video returns this token that you can use in the subsequent request to retrieve the next set of unsafe content labels. 
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * If the job fails, StatusMessage provides a descriptive error message.
     */
-  var StatusMessage: js.UndefOr[typings.awsSdk.rekognitionMod.StatusMessage] = js.native
+  var StatusMessage: js.UndefOr[typings.awsSdk.rekognitionMod.StatusMessage] = js.undefined
   
   /**
     * Information about a video that Amazon Rekognition analyzed. Videometadata is returned in every page of paginated responses from GetContentModeration. 
     */
-  var VideoMetadata: js.UndefOr[typings.awsSdk.rekognitionMod.VideoMetadata] = js.native
+  var VideoMetadata: js.UndefOr[typings.awsSdk.rekognitionMod.VideoMetadata] = js.undefined
 }
 object GetContentModerationResponse {
   

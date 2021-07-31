@@ -14,7 +14,6 @@ import typings.leafletRoutingMachine.leafletRoutingMachineStrings.depart
 import typings.leafletRoutingMachine.leafletRoutingMachineStrings.via
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "Routing.Formatter")

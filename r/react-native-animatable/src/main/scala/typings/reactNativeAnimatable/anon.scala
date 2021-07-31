@@ -2,15 +2,13 @@ package typings.reactNativeAnimatable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Finished extends StObject {
     
-    var finished: Boolean = js.native
+    var finished: Boolean
   }
   object Finished {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Style extends StObject {
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
   }
   object Style {
     

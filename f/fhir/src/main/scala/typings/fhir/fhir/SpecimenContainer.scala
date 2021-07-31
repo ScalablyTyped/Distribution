@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Direct container of specimen (tube/slide, etc.)
   */
-@js.native
-trait SpecimenContainer extends BackboneElement {
+trait SpecimenContainer
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Additive associated with container
     */
-  var additiveCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var additiveCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Additive associated with container
     */
-  var additiveReference: js.UndefOr[Reference] = js.native
+  var additiveReference: js.UndefOr[Reference] = js.undefined
   
   /**
     * Container volume or size
     */
-  var capacity: js.UndefOr[Quantity] = js.native
+  var capacity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Textual description of the container
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Id for the container
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Quantity of specimen within container
     */
-  var specimenQuantity: js.UndefOr[Quantity] = js.native
+  var specimenQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Kind of container directly associated with specimen
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.native
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }
 object SpecimenContainer {
   

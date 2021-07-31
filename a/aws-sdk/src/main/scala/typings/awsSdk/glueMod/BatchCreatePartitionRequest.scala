@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchCreatePartitionRequest extends StObject {
   
   /**
     * The ID of the catalog in which the partition is to be created. Currently, this should be the AWS account ID.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The name of the metadata database in which the partition is to be created.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * A list of PartitionInput structures that define the partitions to be created.
     */
-  var PartitionInputList: typings.awsSdk.glueMod.PartitionInputList = js.native
+  var PartitionInputList: typings.awsSdk.glueMod.PartitionInputList
   
   /**
     * The name of the metadata table in which the partition is to be created.
     */
-  var TableName: NameString = js.native
+  var TableName: NameString
 }
 object BatchCreatePartitionRequest {
   

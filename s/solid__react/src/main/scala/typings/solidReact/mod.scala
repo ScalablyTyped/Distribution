@@ -15,21 +15,24 @@ import typings.std.Error
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@solid/react", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@solid/react", "ActivityButton")
   @js.native
   class ActivityButton protected ()
-    extends Component[ActivityButtonProps with HTMLAttributes[HTMLButtonElement], js.Object, js.Any] {
-    def this(props: ActivityButtonProps with HTMLAttributes[HTMLButtonElement]) = this()
+    extends Component[ActivityButtonProps & HTMLAttributes[HTMLButtonElement], js.Object, js.Any] {
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActivityButtonProps with HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
   }
   
   @JSImport("@solid/react", "AuthButton")
@@ -47,45 +50,45 @@ object mod {
   @JSImport("@solid/react", "Dislike")
   @js.native
   class Dislike protected () extends ActivityButton {
-    def this(props: ActivityButtonProps with HTMLAttributes[HTMLButtonElement]) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActivityButtonProps with HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
   }
   
   @JSImport("@solid/react", "DislikeButton")
   @js.native
   class DislikeButton protected () extends Dislike {
-    def this(props: ActivityButtonProps with HTMLAttributes[HTMLButtonElement]) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActivityButtonProps with HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
   }
   
   @JSImport("@solid/react", "Follow")
   @js.native
   class Follow protected () extends ActivityButton {
-    def this(props: ActivityButtonProps with HTMLAttributes[HTMLButtonElement]) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActivityButtonProps with HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
   }
   
   @JSImport("@solid/react", "FollowButton")
   @js.native
   class FollowButton protected () extends Follow {
-    def this(props: ActivityButtonProps with HTMLAttributes[HTMLButtonElement]) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActivityButtonProps with HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
   }
   
   @JSImport("@solid/react", "Image")
@@ -115,23 +118,23 @@ object mod {
   @JSImport("@solid/react", "Like")
   @js.native
   class Like protected () extends ActivityButton {
-    def this(props: ActivityButtonProps with HTMLAttributes[HTMLButtonElement]) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActivityButtonProps with HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
   }
   
   @JSImport("@solid/react", "LikeButton")
   @js.native
   class LikeButton protected () extends Like {
-    def this(props: ActivityButtonProps with HTMLAttributes[HTMLButtonElement]) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActivityButtonProps with HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: js.Any) = this()
   }
   
   @JSImport("@solid/react", "Link")
@@ -242,51 +245,43 @@ object mod {
     def this(props: Src, context: js.Any) = this()
   }
   
-  @JSImport("@solid/react", "useLDflex")
-  @js.native
-  def useLDflex(expression: String): js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]] = js.native
+  @scala.inline
+  def useLDflex(expression: String): js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]]]
   
-  @JSImport("@solid/react", "useLDflexList")
-  @js.native
-  def useLDflexList(expression: String): js.Array[LDflexValue] = js.native
+  @scala.inline
+  def useLDflexList(expression: String): js.Array[LDflexValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLDflexList")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Array[LDflexValue]]
   
-  @JSImport("@solid/react", "useLDflexValue")
-  @js.native
-  def useLDflexValue(expression: String): js.UndefOr[LDflexValue] = js.native
+  @scala.inline
+  def useLDflexValue(expression: String): js.UndefOr[LDflexValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLDflexValue")(expression.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[LDflexValue]]
   
-  @JSImport("@solid/react", "useLDflex")
-  @js.native
-  def useLDflex_false(expression: String, listMode: `false`): js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]] = js.native
-  @JSImport("@solid/react", "useLDflex")
-  @js.native
-  def useLDflex_true(expression: String, listMode: `true`): js.Tuple3[js.Array[LDflexValue], Boolean, js.UndefOr[Error]] = js.native
+  @scala.inline
+  def useLDflex_false(expression: String, listMode: `false`): js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any], listMode.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]]]
   
-  @JSImport("@solid/react", "useLoggedIn")
-  @js.native
-  def useLoggedIn(): js.UndefOr[Boolean] = js.native
+  @scala.inline
+  def useLDflex_true(expression: String, listMode: `true`): js.Tuple3[js.Array[LDflexValue], Boolean, js.UndefOr[Error]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any], listMode.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[LDflexValue], Boolean, js.UndefOr[Error]]]
   
-  @JSImport("@solid/react", "useLoggedOut")
-  @js.native
-  def useLoggedOut(): js.UndefOr[Boolean] = js.native
+  @scala.inline
+  def useLoggedIn(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLoggedIn")().asInstanceOf[js.UndefOr[Boolean]]
   
-  @JSImport("@solid/react", "useWebId")
-  @js.native
-  def useWebId(): js.UndefOr[String | Null] = js.native
+  @scala.inline
+  def useLoggedOut(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLoggedOut")().asInstanceOf[js.UndefOr[Boolean]]
   
-  @js.native
+  @scala.inline
+  def useWebId(): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useWebId")().asInstanceOf[js.UndefOr[String | Null]]
+  
   trait ActivityButtonProps extends StObject {
     
-    var activateLabel: js.UndefOr[String | (js.Tuple3[String, String, ReactNode])] = js.native
+    var activateLabel: js.UndefOr[String | (js.Tuple3[String, String, ReactNode])] = js.undefined
     
-    var activateText: js.UndefOr[String] = js.native
+    var activateText: js.UndefOr[String] = js.undefined
     
-    var deactivateLabel: js.UndefOr[String | (js.Tuple3[String, String, ReactNode])] = js.native
+    var deactivateLabel: js.UndefOr[String | (js.Tuple3[String, String, ReactNode])] = js.undefined
     
-    var deactivateText: js.UndefOr[String] = js.native
+    var deactivateText: js.UndefOr[String] = js.undefined
     
-    var `object`: js.UndefOr[String] = js.native
+    var `object`: js.UndefOr[String] = js.undefined
     
-    var shortName: js.UndefOr[String] = js.native
+    var shortName: js.UndefOr[String] = js.undefined
   }
   object ActivityButtonProps {
     
@@ -337,12 +332,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait AuthButtonProps extends LoginButtonProps {
+  trait AuthButtonProps
+    extends StObject
+       with LoginButtonProps {
     
-    var login: String = js.native
+    var login: String
     
-    var logout: String = js.native
+    var logout: String
   }
   object AuthButtonProps {
     
@@ -363,15 +359,13 @@ object mod {
     }
   }
   
-  @js.native
   trait LDflexValue extends StObject
   
-  @js.native
   trait ListProps extends StObject {
     
-    var children: js.UndefOr[js.Function2[/* listItem */ LDflexValue, /* index */ Double, Element]] = js.native
+    var children: js.UndefOr[js.Function2[/* listItem */ LDflexValue, /* index */ Double, Element]] = js.undefined
     
-    var container: js.UndefOr[js.Function1[/* items */ Element, Element]] = js.native
+    var container: js.UndefOr[js.Function1[/* items */ Element, Element]] = js.undefined
     
     // dtslint does not appear to understand that `T` is used in the type guard.
     // See https://github.com/Microsoft/dtslint/issues/228
@@ -383,13 +377,13 @@ object mod {
           /* array */ js.Array[LDflexValue], 
           /* is @solid/react.@solid/react.LDflexValue */ Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var src: String = js.native
+    var src: String
   }
   object ListProps {
     
@@ -439,12 +433,11 @@ object mod {
     }
   }
   
-  @js.native
   trait LoginButtonProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var popup: String = js.native
+    var popup: String
   }
   object LoginButtonProps {
     

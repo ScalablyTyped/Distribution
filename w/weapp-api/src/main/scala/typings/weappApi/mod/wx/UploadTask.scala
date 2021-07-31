@@ -2,30 +2,28 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 上传
 /**
   * 一个可以监听上传进度变化事件，以及取消上传任务的对象
   */
-@js.native
 trait UploadTask extends StObject {
   
   //  中断上传任务
-  def abort(): Unit = js.native
+  def abort(): Unit
   
   //  取消监听 HTTP Response Header 事件
-  def offHeadersReceived(callback: DataResponseCallback): Unit = js.native
+  def offHeadersReceived(callback: DataResponseCallback): Unit
   
   //  取消监听上传进度变化事件
-  def offProgressUpdate(callback: js.Function1[/* res */ OnProgressCallbackOptions, js.Object]): Unit = js.native
+  def offProgressUpdate(callback: js.Function1[/* res */ OnProgressCallbackOptions, js.Object]): Unit
   
   //  监听 HTTP Response Header 事件。会比请求完成事件更早
-  def onHeadersReceived(callback: DataResponseCallback): Unit = js.native
+  def onHeadersReceived(callback: DataResponseCallback): Unit
   
   //  上传进度变化事件的回调函数
-  def onProgressUpdate(callback: js.Function1[/* res */ OnProgressCallbackOptions, js.Object]): Unit = js.native
+  def onProgressUpdate(callback: js.Function1[/* res */ OnProgressCallbackOptions, js.Object]): Unit
 }
 object UploadTask {
   

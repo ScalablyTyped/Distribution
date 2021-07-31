@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data to the RemoteParticipantComposingChanged event. */
-@js.native
 trait RemoteParticipantComposingChangedEventArgs extends StObject {
   
   /** Gets a Boolean value indicating if the remote participant is currently composing a message. */
-  var isComposing: Boolean = js.native
+  var isComposing: Boolean
   
   /** Gets the address of the remote chat participant. */
-  var participantAddress: String = js.native
+  var participantAddress: String
   
   /** Gets the ID for the message transport. */
-  var transportId: String = js.native
+  var transportId: String
 }
 object RemoteParticipantComposingChangedEventArgs {
   

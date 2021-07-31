@@ -2,16 +2,14 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteReplicationJobRequest extends StObject {
   
   /**
     * The ID of the replication job.
     */
-  var replicationJobId: ReplicationJobId = js.native
+  var replicationJobId: ReplicationJobId
 }
 object DeleteReplicationJobRequest {
   

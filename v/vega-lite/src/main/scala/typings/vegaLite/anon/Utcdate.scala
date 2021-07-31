@@ -2,51 +2,37 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Utcdate extends StObject {
   
-  val utcdate: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcdate: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcday: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcday: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcdayofyear: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcdayofyear: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utchours: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utchours: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcmilliseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcmilliseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcminutes: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcminutes: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcmonth: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcmonth: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcquarter: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcquarter: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcweek: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcweek: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcyear: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcyear: typings.vegaLite.vegaLiteNumbers.`1`
 }
 object Utcdate {
   
   @scala.inline
-  def apply(
-    utcdate: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcday: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcdayofyear: typings.vegaLite.vegaLiteNumbers.`1`,
-    utchours: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcmilliseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcminutes: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcmonth: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcquarter: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcweek: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcyear: typings.vegaLite.vegaLiteNumbers.`1`
-  ): Utcdate = {
-    val __obj = js.Dynamic.literal(utcdate = utcdate.asInstanceOf[js.Any], utcday = utcday.asInstanceOf[js.Any], utcdayofyear = utcdayofyear.asInstanceOf[js.Any], utchours = utchours.asInstanceOf[js.Any], utcmilliseconds = utcmilliseconds.asInstanceOf[js.Any], utcminutes = utcminutes.asInstanceOf[js.Any], utcmonth = utcmonth.asInstanceOf[js.Any], utcquarter = utcquarter.asInstanceOf[js.Any], utcseconds = utcseconds.asInstanceOf[js.Any], utcweek = utcweek.asInstanceOf[js.Any], utcyear = utcyear.asInstanceOf[js.Any])
+  def apply(): Utcdate = {
+    val __obj = js.Dynamic.literal(utcdate = 1, utcday = 1, utcdayofyear = 1, utchours = 1, utcmilliseconds = 1, utcminutes = 1, utcmonth = 1, utcquarter = 1, utcseconds = 1, utcweek = 1, utcyear = 1)
     __obj.asInstanceOf[Utcdate]
   }
   

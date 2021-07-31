@@ -2,26 +2,24 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint extends StObject {
   
   /**
     * The slug version of the enterprise name. You can also substitute this value with the enterprise id.
     */
-  var enterprise: String = js.native
+  var enterprise: String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
 }
 object EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint {
   

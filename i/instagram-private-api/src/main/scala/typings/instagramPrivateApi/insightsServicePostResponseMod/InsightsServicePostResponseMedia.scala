@@ -2,45 +2,43 @@ package typings.instagramPrivateApi.insightsServicePostResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightsServicePostResponseMedia extends StObject {
   
-  var ad_media: Null = js.native
+  var ad_media: Null
   
-  var comment_count: Double = js.native
+  var comment_count: Double
   
-  var creation_time: Double = js.native
+  var creation_time: Double
   
-  var display_url: String = js.native
+  var display_url: String
   
-  var has_product_tags: Boolean = js.native
+  var has_product_tags: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var image: InsightsServicePostResponseImage = js.native
+  var image: InsightsServicePostResponseImage
   
-  var inline_insights_node: InsightsServicePostResponseInlineInsightsNode = js.native
+  var inline_insights_node: InsightsServicePostResponseInlineInsightsNode
   
-  var instagram_actor: InsightsServicePostResponseInstagramActor = js.native
+  var instagram_actor: InsightsServicePostResponseInstagramActor
   
-  var instagram_media_id: String = js.native
+  var instagram_media_id: String
   
-  var instagram_media_owner_id: String = js.native
+  var instagram_media_owner_id: String
   
-  var instagram_media_type: String = js.native
+  var instagram_media_type: String
   
-  var like_count: Double = js.native
+  var like_count: Double
   
-  var organic_instagram_media_id: String = js.native
+  var organic_instagram_media_id: String
   
-  var save_count: Double = js.native
+  var save_count: Double
   
-  var shopping_outbound_click_count: Double = js.native
+  var shopping_outbound_click_count: Double
   
-  var shopping_product_click_count: Double = js.native
+  var shopping_product_click_count: Double
 }
 object InsightsServicePostResponseMedia {
   

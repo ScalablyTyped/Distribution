@@ -4,68 +4,66 @@ import typings.node.NodeRequire
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ExpressMinifyInterfaces {
   
-  @js.native
   trait ExpressMinifyOptions extends StObject {
     
     /**
       * The directory for cache storage (must be writeable). Pass false to cache in the memory (not recommended).
       */
-    var cache: js.UndefOr[String | Boolean] = js.native
+    var cache: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * Matches CoffeeScript content-type.
       */
-    var coffee_match: js.UndefOr[RegExp] = js.native
+    var coffee_match: js.UndefOr[RegExp] = js.undefined
     
     /**
       * Matches CSS content-type.
       */
-    var css_match: js.UndefOr[RegExp] = js.native
+    var css_match: js.UndefOr[RegExp] = js.undefined
     
     /**
       * Customize cssmin instance (require('cssmin')).
       */
-    var cssmin: js.UndefOr[NodeRequire] = js.native
+    var cssmin: js.UndefOr[NodeRequire] = js.undefined
     
     /**
       * Matches JavaScript content-type.
       */
-    var js_match: js.UndefOr[RegExp] = js.native
+    var js_match: js.UndefOr[RegExp] = js.undefined
     
     /**
       * Matches JSON content-type.
       */
-    var json_match: js.UndefOr[RegExp] = js.native
+    var json_match: js.UndefOr[RegExp] = js.undefined
     
     /**
       * Matches LESS content-type.
       */
-    var less_match: js.UndefOr[RegExp] = js.native
+    var less_match: js.UndefOr[RegExp] = js.undefined
     
     /**
       * Handle compiling errors or minifying errors. You can determine what to respond when facing such errors.
       */
-    var onerror: js.UndefOr[js.Function] = js.native
+    var onerror: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Matches SASS content-type.
       */
-    var sass_match: js.UndefOr[RegExp] = js.native
+    var sass_match: js.UndefOr[RegExp] = js.undefined
     
     /**
       * Matches Stylus content-type.
       */
-    var stylus_match: js.UndefOr[RegExp] = js.native
+    var stylus_match: js.UndefOr[RegExp] = js.undefined
     
     /**
       * Customize UglifyJS instance (require('uglify-js')).
       */
-    var uglifyJS: js.UndefOr[NodeRequire] = js.native
+    var uglifyJS: js.UndefOr[NodeRequire] = js.undefined
   }
   object ExpressMinifyOptions {
     
@@ -146,38 +144,37 @@ object ExpressMinifyInterfaces {
     }
   }
   
-  @js.native
   trait ExpressMinifyResponse extends StObject {
     
     /**
       * Pass true to disable caching the response data, suitable for dynamic contents.
       */
-    var _no_cache: Boolean = js.native
+    var _no_cache: Boolean
     
     /**
       * Pass true to disable minifying, suitable for already-minified contents.
       */
-    var _no_minify: Boolean = js.native
+    var _no_minify: Boolean
     
     /**
       * Pass true to disable all kind of processing: no compiling, no minifying.
       */
-    var _skip: Boolean = js.native
+    var _skip: Boolean
     
     /**
       * Pass an object to specify custom UglifyJS compressor options (pass false to skip).
       */
-    var _uglifyCompress: js.Object | Boolean = js.native
+    var _uglifyCompress: js.Object | Boolean
     
     /**
       * Pass false to disable mangling names
       */
-    var _uglifyMangle: Boolean = js.native
+    var _uglifyMangle: Boolean
     
     /**
       * Pass an object if you wish to specify additional UglifyJS
       */
-    var _uglifyOutput: js.Object = js.native
+    var _uglifyOutput: js.Object
   }
   object ExpressMinifyResponse {
     

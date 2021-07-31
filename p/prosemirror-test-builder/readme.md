@@ -12,7 +12,7 @@ Helpers for programatically building ProseMirror test documents
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 223773 |
+| # downloads        | 226223 |
 | # stars            | 0 |
 
 ## Links

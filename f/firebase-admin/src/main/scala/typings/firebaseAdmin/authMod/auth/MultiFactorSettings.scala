@@ -2,25 +2,23 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The multi-factor related user settings.
   */
-@js.native
 trait MultiFactorSettings extends StObject {
   
   /**
     * List of second factors enrolled with the current user.
     * Currently only phone second factors are supported.
     */
-  var enrolledFactors: js.Array[MultiFactorInfo] = js.native
+  var enrolledFactors: js.Array[MultiFactorInfo]
   
   /**
     * @return A JSON-serializable representation of this multi-factor object.
     */
-  def toJSON(): js.Object = js.native
+  def toJSON(): js.Object
 }
 object MultiFactorSettings {
   

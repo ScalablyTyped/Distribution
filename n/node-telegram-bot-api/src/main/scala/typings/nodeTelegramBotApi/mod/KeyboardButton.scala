@@ -2,17 +2,15 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyboardButton extends StObject {
   
-  var request_contact: js.UndefOr[Boolean] = js.native
+  var request_contact: js.UndefOr[Boolean] = js.undefined
   
-  var request_location: js.UndefOr[Boolean] = js.native
+  var request_location: js.UndefOr[Boolean] = js.undefined
   
-  var text: String = js.native
+  var text: String
 }
 object KeyboardButton {
   

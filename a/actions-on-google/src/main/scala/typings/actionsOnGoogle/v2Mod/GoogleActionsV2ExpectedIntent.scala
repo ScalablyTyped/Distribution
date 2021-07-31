@@ -3,10 +3,8 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2ExpectedIntent extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait GoogleActionsV2ExpectedIntent extends StObject {
     * `actions.intent.Link ->`
     * [google.actions.v2.LinkValueSpec]
     */
-  var inputValueData: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var inputValueData: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
   /**
     * The built-in intent name, e.g. `actions.intent.TEXT`, or intents
@@ -33,13 +31,13 @@ trait GoogleActionsV2ExpectedIntent extends StObject {
     * intent, it is only used for speech biasing and the input provided by the
     * Google Assistant will be the `actions.intent.TEXT` intent.
     */
-  var intent: js.UndefOr[String] = js.native
+  var intent: js.UndefOr[String] = js.undefined
   
   /**
     * Optionally, a parameter of the intent that is being requested. Only valid
     * for requested intents. Used for speech biasing.
     */
-  var parameterName: js.UndefOr[String] = js.native
+  var parameterName: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2ExpectedIntent {
   
@@ -53,7 +51,7 @@ object GoogleActionsV2ExpectedIntent {
   implicit class GoogleActionsV2ExpectedIntentMutableBuilder[Self <: GoogleActionsV2ExpectedIntent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setInputValueData(value: ApiClientObjectMap[_]): Self = StObject.set(x, "inputValueData", value.asInstanceOf[js.Any])
+    def setInputValueData(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "inputValueData", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInputValueDataUndefined: Self = StObject.set(x, "inputValueData", js.undefined)

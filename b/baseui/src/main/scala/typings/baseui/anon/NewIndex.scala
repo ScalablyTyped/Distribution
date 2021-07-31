@@ -3,17 +3,15 @@ package typings.baseui.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewIndex extends StObject {
   
-  var newIndex: Double = js.native
+  var newIndex: Double
   
-  var newState: js.Array[ReactNode] = js.native
+  var newState: js.Array[ReactNode]
   
-  var oldIndex: Double = js.native
+  var oldIndex: Double
 }
 object NewIndex {
   

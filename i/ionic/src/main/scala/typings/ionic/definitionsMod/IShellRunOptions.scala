@@ -3,17 +3,17 @@ package typings.ionic.definitionsMod
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IShellRunOptions extends IShellOutputOptions {
+trait IShellRunOptions
+  extends StObject
+     with IShellOutputOptions {
   
-  var killOnExit: js.UndefOr[Boolean] = js.native
+  var killOnExit: js.UndefOr[Boolean] = js.undefined
   
-  var stream: js.UndefOr[WritableStream] = js.native
+  var stream: js.UndefOr[WritableStream] = js.undefined
   
-  var truncateErrorOutput: js.UndefOr[Double] = js.native
+  var truncateErrorOutput: js.UndefOr[Double] = js.undefined
 }
 object IShellRunOptions {
   

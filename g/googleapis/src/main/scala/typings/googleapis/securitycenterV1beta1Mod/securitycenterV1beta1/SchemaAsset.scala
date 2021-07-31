@@ -3,7 +3,6 @@ package typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,44 +12,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Asset are only within the context of Cloud SCC and don&#39;t affect the
   * referenced GCP resource.
   */
-@js.native
 trait SchemaAsset extends StObject {
   
   /**
     * The time at which the asset was created in Cloud SCC.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The relative resource name of this asset. See:
     * https://cloud.google.com/apis/design/resource_names#relative_resource_name
     * Example: &quot;organizations/123/assets/456&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Resource managed properties. These properties are managed and defined by
     * the GCP resource and cannot be modified by the user.
     */
-  var resourceProperties: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var resourceProperties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Cloud SCC managed properties. These properties are managed by Cloud SCC
     * and cannot be modified by the user.
     */
-  var securityCenterProperties: js.UndefOr[SchemaSecurityCenterProperties] = js.native
+  var securityCenterProperties: js.UndefOr[SchemaSecurityCenterProperties] = js.undefined
   
   /**
     * User specified security marks. These marks are entirely managed by the
     * user and come from the SecurityMarks resource that belongs to the asset.
     */
-  var securityMarks: js.UndefOr[SchemaSecurityMarks] = js.native
+  var securityMarks: js.UndefOr[SchemaSecurityMarks] = js.undefined
   
   /**
     * The time at which the asset was last updated, added, or deleted in Cloud
     * SCC.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaAsset {
   

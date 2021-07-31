@@ -3,15 +3,13 @@ package typings.elasticApmNode
 import typings.elasticApmNode.mod.Connect.ErrorHandleFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Connect extends StObject {
     
-    def connect(): ErrorHandleFunction = js.native
+    def connect(): ErrorHandleFunction
   }
   object Connect {
     
@@ -29,14 +27,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object Name {
     
@@ -69,17 +66,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Spanid extends StObject {
     
     @JSName("span.id")
-    var spanDotid: js.UndefOr[String] = js.native
+    var spanDotid: js.UndefOr[String] = js.undefined
     
     @JSName("trace.id")
-    var traceDotid: js.UndefOr[String] = js.native
+    var traceDotid: js.UndefOr[String] = js.undefined
     
     @JSName("transaction.id")
-    var transactionDotid: js.UndefOr[String] = js.native
+    var transactionDotid: js.UndefOr[String] = js.undefined
   }
   object Spanid {
     

@@ -7,7 +7,6 @@ import typings.heremaps.H.ui.DistanceMeasurement.Options
 import typings.heremaps.H.ui.i18n.Localization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** ui *****/
@@ -19,7 +18,8 @@ object ui {
   @JSGlobal("H.ui.Control")
   @js.native
   class Control ()
-    extends typings.heremaps.H.ui.Control
+    extends StObject
+       with typings.heremaps.H.ui.Control
   
   /**
     * This class represents a distance measurement control which helps calculating distances between geographical locations indicated by the user clicks.
@@ -31,7 +31,8 @@ object ui {
     * @param opt_options {H.ui.DistanceMeasurement.Options=} - optional parameters to be passed to this control
     */
   class DistanceMeasurement ()
-    extends typings.heremaps.H.ui.Control {
+    extends StObject
+       with typings.heremaps.H.ui.Control {
     def this(opt_options: Options) = this()
   }
   
@@ -41,7 +42,8 @@ object ui {
   @JSGlobal("H.ui.InfoBubble")
   @js.native
   class InfoBubble protected ()
-    extends typings.heremaps.H.ui.InfoBubble {
+    extends StObject
+       with typings.heremaps.H.ui.InfoBubble {
     /**
       * Constructor
       * @param position {H.geo.IPoint} - the geo-position to which this info bubble corresponds
@@ -60,11 +62,11 @@ object ui {
     object State extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.heremaps.H.ui.InfoBubble.State with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.heremaps.H.ui.InfoBubble.State & Double] = js.native
       
-      /* 1 */ val CLOSED: typings.heremaps.H.ui.InfoBubble.State.CLOSED with Double = js.native
+      /* 1 */ val CLOSED: typings.heremaps.H.ui.InfoBubble.State.CLOSED & Double = js.native
       
-      /* 0 */ val OPEN: typings.heremaps.H.ui.InfoBubble.State.OPEN with Double = js.native
+      /* 0 */ val OPEN: typings.heremaps.H.ui.InfoBubble.State.OPEN & Double = js.native
     }
   }
   
@@ -76,31 +78,31 @@ object ui {
   object LayoutAlignment extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.heremaps.H.ui.LayoutAlignment with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.heremaps.H.ui.LayoutAlignment & Double] = js.native
     
-    /* 10 */ val BOTTOM_CENTER: typings.heremaps.H.ui.LayoutAlignment.BOTTOM_CENTER with Double = js.native
+    /* 10 */ val BOTTOM_CENTER: typings.heremaps.H.ui.LayoutAlignment.BOTTOM_CENTER & Double = js.native
     
-    /* 9 */ val BOTTOM_LEFT: typings.heremaps.H.ui.LayoutAlignment.BOTTOM_LEFT with Double = js.native
+    /* 9 */ val BOTTOM_LEFT: typings.heremaps.H.ui.LayoutAlignment.BOTTOM_LEFT & Double = js.native
     
-    /* 11 */ val BOTTOM_RIGHT: typings.heremaps.H.ui.LayoutAlignment.BOTTOM_RIGHT with Double = js.native
+    /* 11 */ val BOTTOM_RIGHT: typings.heremaps.H.ui.LayoutAlignment.BOTTOM_RIGHT & Double = js.native
     
-    /* 5 */ val LEFT_BOTTOM: typings.heremaps.H.ui.LayoutAlignment.LEFT_BOTTOM with Double = js.native
+    /* 5 */ val LEFT_BOTTOM: typings.heremaps.H.ui.LayoutAlignment.LEFT_BOTTOM & Double = js.native
     
-    /* 4 */ val LEFT_MIDDLE: typings.heremaps.H.ui.LayoutAlignment.LEFT_MIDDLE with Double = js.native
+    /* 4 */ val LEFT_MIDDLE: typings.heremaps.H.ui.LayoutAlignment.LEFT_MIDDLE & Double = js.native
     
-    /* 3 */ val LEFT_TOP: typings.heremaps.H.ui.LayoutAlignment.LEFT_TOP with Double = js.native
+    /* 3 */ val LEFT_TOP: typings.heremaps.H.ui.LayoutAlignment.LEFT_TOP & Double = js.native
     
-    /* 8 */ val RIGHT_BOTTOM: typings.heremaps.H.ui.LayoutAlignment.RIGHT_BOTTOM with Double = js.native
+    /* 8 */ val RIGHT_BOTTOM: typings.heremaps.H.ui.LayoutAlignment.RIGHT_BOTTOM & Double = js.native
     
-    /* 7 */ val RIGHT_MIDDLE: typings.heremaps.H.ui.LayoutAlignment.RIGHT_MIDDLE with Double = js.native
+    /* 7 */ val RIGHT_MIDDLE: typings.heremaps.H.ui.LayoutAlignment.RIGHT_MIDDLE & Double = js.native
     
-    /* 6 */ val RIGHT_TOP: typings.heremaps.H.ui.LayoutAlignment.RIGHT_TOP with Double = js.native
+    /* 6 */ val RIGHT_TOP: typings.heremaps.H.ui.LayoutAlignment.RIGHT_TOP & Double = js.native
     
-    /* 1 */ val TOP_CENTER: typings.heremaps.H.ui.LayoutAlignment.TOP_CENTER with Double = js.native
+    /* 1 */ val TOP_CENTER: typings.heremaps.H.ui.LayoutAlignment.TOP_CENTER & Double = js.native
     
-    /* 0 */ val TOP_LEFT: typings.heremaps.H.ui.LayoutAlignment.TOP_LEFT with Double = js.native
+    /* 0 */ val TOP_LEFT: typings.heremaps.H.ui.LayoutAlignment.TOP_LEFT & Double = js.native
     
-    /* 2 */ val TOP_RIGHT: typings.heremaps.H.ui.LayoutAlignment.TOP_RIGHT with Double = js.native
+    /* 2 */ val TOP_RIGHT: typings.heremaps.H.ui.LayoutAlignment.TOP_RIGHT & Double = js.native
   }
   
   /**
@@ -113,7 +115,8 @@ object ui {
     * @param opt_options {H.ui.MapSettingsControl.Options=} - optional parameters to be passed to this control
     */
   class MapSettingsControl ()
-    extends typings.heremaps.H.ui.MapSettingsControl {
+    extends StObject
+       with typings.heremaps.H.ui.MapSettingsControl {
     def this(opt_options: typings.heremaps.H.ui.MapSettingsControl.Options) = this()
   }
   
@@ -127,7 +130,8 @@ object ui {
     * @param opt_options {H.ui.Pano.Options=} - optional parameters to be passed to the map.
     */
   class Pano ()
-    extends typings.heremaps.H.ui.Control {
+    extends StObject
+       with typings.heremaps.H.ui.Control {
     def this(opt_options: typings.heremaps.H.ui.Pano.Options) = this()
   }
   
@@ -141,7 +145,8 @@ object ui {
     * @param opt_options {H.ui.ScaleBar.Options=} - optional parameters to be passed to this scale bar.
     */
   class ScaleBar ()
-    extends typings.heremaps.H.ui.ScaleBar {
+    extends StObject
+       with typings.heremaps.H.ui.ScaleBar {
     def this(opt_options: typings.heremaps.H.ui.ScaleBar.Options) = this()
   }
   
@@ -151,7 +156,8 @@ object ui {
   @JSGlobal("H.ui.UI")
   @js.native
   class UI protected ()
-    extends typings.heremaps.H.ui.UI {
+    extends StObject
+       with typings.heremaps.H.ui.UI {
     /**
       * Constructor
       * @param map {H.Map}
@@ -162,15 +168,16 @@ object ui {
   }
   object UI {
     
-    @JSGlobal("H.ui.UI.createDefault")
+    @JSGlobal("H.ui.UI")
     @js.native
-    def createDefault(map: typings.heremaps.H.Map_, mapTypes: DefaultLayers): typings.heremaps.H.ui.UI = js.native
-    @JSGlobal("H.ui.UI.createDefault")
-    @js.native
-    def createDefault(map: typings.heremaps.H.Map_, mapTypes: DefaultLayers, opt_locale: String): typings.heremaps.H.ui.UI = js.native
-    @JSGlobal("H.ui.UI.createDefault")
-    @js.native
-    def createDefault(map: typings.heremaps.H.Map_, mapTypes: DefaultLayers, opt_locale: Localization): typings.heremaps.H.ui.UI = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createDefault(map: typings.heremaps.H.Map_, mapTypes: DefaultLayers): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
+    @scala.inline
+    def createDefault(map: typings.heremaps.H.Map_, mapTypes: DefaultLayers, opt_locale: String): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any], opt_locale.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
+    @scala.inline
+    def createDefault(map: typings.heremaps.H.Map_, mapTypes: DefaultLayers, opt_locale: Localization): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any], opt_locale.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
     /**
       * This function creates the default UI including the zoom control,
       * map settings control and scalebar and panorama discovery control.
@@ -195,15 +202,12 @@ object ui {
       * @returns {H.ui.UI} - the UI instance configured with the default controls
       */
     /* static member */
-    @JSGlobal("H.ui.UI.createDefault")
-    @js.native
-    def createDefault(map: typings.heremaps.H.Map_, mapTypes: MapTypes): typings.heremaps.H.ui.UI = js.native
-    @JSGlobal("H.ui.UI.createDefault")
-    @js.native
-    def createDefault(map: typings.heremaps.H.Map_, mapTypes: MapTypes, opt_locale: String): typings.heremaps.H.ui.UI = js.native
-    @JSGlobal("H.ui.UI.createDefault")
-    @js.native
-    def createDefault(map: typings.heremaps.H.Map_, mapTypes: MapTypes, opt_locale: Localization): typings.heremaps.H.ui.UI = js.native
+    @scala.inline
+    def createDefault(map: typings.heremaps.H.Map_, mapTypes: MapTypes): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
+    @scala.inline
+    def createDefault(map: typings.heremaps.H.Map_, mapTypes: MapTypes, opt_locale: String): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any], opt_locale.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
+    @scala.inline
+    def createDefault(map: typings.heremaps.H.Map_, mapTypes: MapTypes, opt_locale: Localization): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any], opt_locale.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
   }
   
   /**
@@ -214,11 +218,11 @@ object ui {
   object UnitSystem extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.heremaps.H.ui.UnitSystem with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.heremaps.H.ui.UnitSystem & Double] = js.native
     
-    /* 0 */ val IMPERIAL: typings.heremaps.H.ui.UnitSystem.IMPERIAL with Double = js.native
+    /* 0 */ val IMPERIAL: typings.heremaps.H.ui.UnitSystem.IMPERIAL & Double = js.native
     
-    /* 1 */ val METRIC: typings.heremaps.H.ui.UnitSystem.METRIC with Double = js.native
+    /* 1 */ val METRIC: typings.heremaps.H.ui.UnitSystem.METRIC & Double = js.native
   }
   
   /**
@@ -231,7 +235,8 @@ object ui {
     * @param opt_options {H.ui.ZoomControl.Options=} - optional parameters to be passed to the map.
     */
   class ZoomControl ()
-    extends typings.heremaps.H.ui.ZoomControl {
+    extends StObject
+       with typings.heremaps.H.ui.ZoomControl {
     def this(opt_options: typings.heremaps.H.ui.ZoomControl.Options) = this()
   }
   
@@ -245,7 +250,8 @@ object ui {
     * @param opt_options {H.ui.ZoomRectangle.Options=} - optional parameters to be passed to this control
     */
   class ZoomRectangle ()
-    extends typings.heremaps.H.ui.Control {
+    extends StObject
+       with typings.heremaps.H.ui.Control {
     def this(opt_options: typings.heremaps.H.ui.ZoomRectangle.Options) = this()
   }
   
@@ -263,28 +269,29 @@ object ui {
       * @param opt_children {Array<H.ui.base.Element>=} - optional child elements to be added to this container
       */
     class Container ()
-      extends typings.heremaps.H.ui.base.Container {
+      extends StObject
+         with typings.heremaps.H.ui.base.Container {
       def this(opt_elementType: String) = this()
-      def this(opt_elementType: js.UndefOr[scala.Nothing], opt_className: String) = this()
       def this(opt_elementType: String, opt_className: String) = this()
+      def this(opt_elementType: Unit, opt_className: String) = this()
       def this(
-        opt_elementType: js.UndefOr[scala.Nothing],
-        opt_className: js.UndefOr[scala.Nothing],
-        opt_children: js.Array[typings.heremaps.H.ui.base.Element]
-      ) = this()
-      def this(
-        opt_elementType: js.UndefOr[scala.Nothing],
+        opt_elementType: String,
         opt_className: String,
         opt_children: js.Array[typings.heremaps.H.ui.base.Element]
       ) = this()
       def this(
         opt_elementType: String,
-        opt_className: js.UndefOr[scala.Nothing],
+        opt_className: Unit,
         opt_children: js.Array[typings.heremaps.H.ui.base.Element]
       ) = this()
       def this(
-        opt_elementType: String,
+        opt_elementType: Unit,
         opt_className: String,
+        opt_children: js.Array[typings.heremaps.H.ui.base.Element]
+      ) = this()
+      def this(
+        opt_elementType: Unit,
+        opt_className: Unit,
         opt_children: js.Array[typings.heremaps.H.ui.base.Element]
       ) = this()
     }
@@ -297,10 +304,11 @@ object ui {
       * @param opt_className {string=} - an optional class name to be used on this element
       */
     class Element ()
-      extends typings.heremaps.H.ui.base.Element {
+      extends StObject
+         with typings.heremaps.H.ui.base.Element {
       def this(opt_elementType: String) = this()
-      def this(opt_elementType: js.UndefOr[scala.Nothing], opt_className: String) = this()
       def this(opt_elementType: String, opt_className: String) = this()
+      def this(opt_elementType: Unit, opt_className: String) = this()
     }
   }
   
@@ -315,9 +323,40 @@ object ui {
     @JSGlobal("H.ui.i18n.Localization")
     @js.native
     class Localization protected ()
-      extends typings.heremaps.H.ui.i18n.Localization {
+      extends StObject
+         with typings.heremaps.H.ui.i18n.Localization {
       def this(locale: String) = this()
       def this(locale: String, opt_translationMap: js.Any) = this()
+      
+      /**
+        * This method returns translation keys for current locale. Keys from this set can be used to get translations via translate method.
+        * @returns {Array<string>}
+        */
+      /* CompleteClass */
+      override def getKeys(): js.Array[String] = js.native
+      
+      /**
+        * This method returns current locale code i.e 'en-US'
+        * @returns {string} - locale code
+        */
+      /* CompleteClass */
+      override def getLocale(): String = js.native
+      
+      /**
+        * This method returns a boolean value indicating whether this localization object has a translation for the specified translation key.
+        * @param key {string} - a translation key
+        * @returns {boolean} - true if the key exists, otherwise false
+        */
+      /* CompleteClass */
+      override def hasKey(key: String): Boolean = js.native
+      
+      /**
+        * This method returns translation for provided key. It throws exception if translation is not available
+        * @param key {string} - a translation key
+        * @returns {string} - a localized string corresponding to provided key
+        */
+      /* CompleteClass */
+      override def translate(key: String): String = js.native
     }
     
     /**

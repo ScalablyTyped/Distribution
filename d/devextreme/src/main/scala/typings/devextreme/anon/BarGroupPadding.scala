@@ -22,41 +22,39 @@ import typings.devextreme.mod.DevExpress.viz.ChartSeries
 import typings.devextreme.mod.DevExpress.viz.dxChartCommonSeriesSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BarGroupPadding extends StObject {
   
-  var barGroupPadding: js.UndefOr[Double] = js.native
+  var barGroupPadding: js.UndefOr[Double] = js.undefined
   
-  var barGroupWidth: js.UndefOr[Double] = js.native
+  var barGroupWidth: js.UndefOr[Double] = js.undefined
   
-  var bottomIndent: js.UndefOr[Double] = js.native
+  var bottomIndent: js.UndefOr[Double] = js.undefined
   
-  var commonSeriesSettings: js.UndefOr[dxChartCommonSeriesSettings] = js.native
+  var commonSeriesSettings: js.UndefOr[dxChartCommonSeriesSettings] = js.undefined
   
-  var dataPrepareSettings: js.UndefOr[ConvertToAxisDataType] = js.native
+  var dataPrepareSettings: js.UndefOr[ConvertToAxisDataType] = js.undefined
   
-  var maxBubbleSize: js.UndefOr[Double] = js.native
+  var maxBubbleSize: js.UndefOr[Double] = js.undefined
   
-  var minBubbleSize: js.UndefOr[Double] = js.native
+  var minBubbleSize: js.UndefOr[Double] = js.undefined
   
-  var negativesAsZeroes: js.UndefOr[Boolean] = js.native
+  var negativesAsZeroes: js.UndefOr[Boolean] = js.undefined
   
   var palette: js.UndefOr[
     js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-  ] = js.native
+  ] = js.undefined
   
-  var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.native
+  var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
   
-  var series: js.UndefOr[ChartSeries | js.Array[ChartSeries]] = js.native
+  var series: js.UndefOr[ChartSeries | js.Array[ChartSeries]] = js.undefined
   
-  var seriesTemplate: js.UndefOr[CustomizeSeries] = js.native
+  var seriesTemplate: js.UndefOr[CustomizeSeries] = js.undefined
   
-  var topIndent: js.UndefOr[Double] = js.native
+  var topIndent: js.UndefOr[Double] = js.undefined
   
-  var valueAxis: js.UndefOr[Inverted] = js.native
+  var valueAxis: js.UndefOr[Inverted] = js.undefined
 }
 object BarGroupPadding {
   

@@ -2,13 +2,11 @@ package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the service account configuration for the tenant project.
   */
-@js.native
 trait SchemaServiceAccountConfig extends StObject {
   
   /**
@@ -19,12 +17,12 @@ trait SchemaServiceAccountConfig extends StObject {
     * producers have to guarantee it. The ID must be 6-30 characters long, and
     * match the following regular expression: `[a-z]([-a-z0-9]*[a-z0-9])`.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Roles for the associated service account for the tenant project.
     */
-  var tenantProjectRoles: js.UndefOr[js.Array[String]] = js.native
+  var tenantProjectRoles: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaServiceAccountConfig {
   

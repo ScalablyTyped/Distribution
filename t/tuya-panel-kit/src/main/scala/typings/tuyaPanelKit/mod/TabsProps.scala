@@ -9,65 +9,63 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.bottom
 import typings.tuyaPanelKit.tuyaPanelKitStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabsProps extends StObject {
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var activeColor: js.UndefOr[String] = js.native
+  var activeColor: js.UndefOr[String] = js.undefined
   
-  var activeKey: js.UndefOr[Double | String] = js.native
+  var activeKey: js.UndefOr[Double | String] = js.undefined
   
-  var animationConfig: js.UndefOr[Easing] = js.native
+  var animationConfig: js.UndefOr[Easing] = js.undefined
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var dataSource: js.Array[TabDataSource] = js.native
+  var dataSource: js.Array[TabDataSource]
   
-  var defaultActiveKey: js.UndefOr[Double | String] = js.native
+  var defaultActiveKey: js.UndefOr[Double | String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var extraSpace: js.UndefOr[Double] = js.native
+  var extraSpace: js.UndefOr[Double] = js.undefined
   
-  var maxItem: js.UndefOr[Double] = js.native
+  var maxItem: js.UndefOr[Double] = js.undefined
   
-  var onChange: js.UndefOr[js.Function2[/* tab */ TabDataSource, /* idx */ Double, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function2[/* tab */ TabDataSource, /* idx */ Double, Unit]] = js.undefined
   
-  var preload: js.UndefOr[Boolean] = js.native
+  var preload: js.UndefOr[Boolean] = js.undefined
   
-  var preloadTimeout: js.UndefOr[Double] = js.native
+  var preloadTimeout: js.UndefOr[Double] = js.undefined
   
-  var renderPlaceholder: js.UndefOr[js.Function2[/* activeIndex */ Double, /* child */ ReactNode, ReactNode]] = js.native
+  var renderPlaceholder: js.UndefOr[js.Function2[/* activeIndex */ Double, /* child */ ReactNode, ReactNode]] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var swipeable: js.UndefOr[Boolean] = js.native
+  var swipeable: js.UndefOr[Boolean] = js.undefined
   
-  var tabActiveStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var tabActiveStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var tabActiveTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var tabActiveTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var tabContentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var tabContentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var tabPosition: js.UndefOr[top | bottom] = js.native
+  var tabPosition: js.UndefOr[top | bottom] = js.undefined
   
-  var tabStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var tabStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var tabTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var tabTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var underlineStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var underlineStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var underlineWidth: js.UndefOr[Double] = js.native
+  var underlineWidth: js.UndefOr[Double] = js.undefined
   
-  var velocityThreshold: js.UndefOr[Double] = js.native
+  var velocityThreshold: js.UndefOr[Double] = js.undefined
   
-  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object TabsProps {
   

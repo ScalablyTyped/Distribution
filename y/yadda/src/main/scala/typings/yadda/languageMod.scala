@@ -3,14 +3,15 @@ package typings.yadda
 import typings.yadda.yaddaBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object languageMod {
   
   @JSImport("yadda/lib/localisation/Language", JSImport.Namespace)
   @js.native
-  class ^[TLibrary /* <: Library */] protected () extends Language[TLibrary] {
+  class ^[TLibrary /* <: Library */] protected ()
+    extends StObject
+       with Language[TLibrary] {
     def this(name: String, vocabulary: Vocabulary) = this()
   }
   
@@ -27,13 +28,11 @@ object languageMod {
     def localise_library(library: Library): TLibrary = js.native
   }
   
-  @js.native
   trait Library extends StObject
   
-  @js.native
   trait Vocabulary extends StObject {
     
-    var _steps: js.Array[String] = js.native
+    var _steps: js.Array[String]
   }
   object Vocabulary {
     

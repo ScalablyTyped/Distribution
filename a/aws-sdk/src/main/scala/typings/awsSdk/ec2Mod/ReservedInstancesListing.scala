@@ -2,61 +2,59 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservedInstancesListing extends StObject {
   
   /**
     * A unique, case-sensitive key supplied by the client to ensure that the request is idempotent. For more information, see Ensuring Idempotency.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The time the listing was created.
     */
-  var CreateDate: js.UndefOr[DateTime] = js.native
+  var CreateDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The number of instances in this state.
     */
-  var InstanceCounts: js.UndefOr[InstanceCountList] = js.native
+  var InstanceCounts: js.UndefOr[InstanceCountList] = js.undefined
   
   /**
     * The price of the Reserved Instance listing.
     */
-  var PriceSchedules: js.UndefOr[PriceScheduleList] = js.native
+  var PriceSchedules: js.UndefOr[PriceScheduleList] = js.undefined
   
   /**
     * The ID of the Reserved Instance.
     */
-  var ReservedInstancesId: js.UndefOr[String] = js.native
+  var ReservedInstancesId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Reserved Instance listing.
     */
-  var ReservedInstancesListingId: js.UndefOr[String] = js.native
+  var ReservedInstancesListingId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the Reserved Instance listing.
     */
-  var Status: js.UndefOr[ListingStatus] = js.native
+  var Status: js.UndefOr[ListingStatus] = js.undefined
   
   /**
     * The reason for the current status of the Reserved Instance listing. The response can be blank.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Any tags assigned to the resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The last modified timestamp of the listing.
     */
-  var UpdateDate: js.UndefOr[DateTime] = js.native
+  var UpdateDate: js.UndefOr[DateTime] = js.undefined
 }
 object ReservedInstancesListing {
   

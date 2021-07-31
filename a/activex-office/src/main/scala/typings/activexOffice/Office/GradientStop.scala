@@ -2,24 +2,22 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GradientStop extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Color: ColorFormat = js.native
+  val Color: ColorFormat
   
-  val Creator: Double = js.native
+  val Creator: Double
   
   @JSName("Office.GradientStop_typekey")
-  var OfficeDotGradientStop_typekey: GradientStop = js.native
+  var OfficeDotGradientStop_typekey: GradientStop
   
-  var Position: Double = js.native
+  var Position: Double
   
-  var Transparency: Double = js.native
+  var Transparency: Double
 }
 object GradientStop {
   

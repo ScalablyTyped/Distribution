@@ -2,13 +2,11 @@ package typings.opentypeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Point extends StObject {
   
-  var lastPointOfContour: js.UndefOr[Boolean] = js.native
+  var lastPointOfContour: js.UndefOr[Boolean] = js.undefined
 }
 object Point {
   

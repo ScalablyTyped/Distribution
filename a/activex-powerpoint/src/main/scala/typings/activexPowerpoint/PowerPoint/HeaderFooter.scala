@@ -3,26 +3,24 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderFooter extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var Format: PpDateTimeFormat = js.native
+  var Format: PpDateTimeFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.HeaderFooter_typekey")
-  var PowerPointDotHeaderFooter_typekey: HeaderFooter = js.native
+  var PowerPointDotHeaderFooter_typekey: HeaderFooter
   
-  var Text: String = js.native
+  var Text: String
   
-  var UseFormat: MsoTriState = js.native
+  var UseFormat: MsoTriState
   
-  var Visible: MsoTriState = js.native
+  var Visible: MsoTriState
 }
 object HeaderFooter {
   

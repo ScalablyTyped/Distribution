@@ -6,27 +6,25 @@ import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.Delay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MotionProps extends StObject {
   
-  var animationConfig: js.UndefOr[Delay] = js.native
+  var animationConfig: js.UndefOr[Delay] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var hideDuration: js.UndefOr[Double] = js.native
+  var hideDuration: js.UndefOr[Double] = js.undefined
   
-  var onHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var showDuration: js.UndefOr[Double] = js.native
+  var showDuration: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object MotionProps {
   

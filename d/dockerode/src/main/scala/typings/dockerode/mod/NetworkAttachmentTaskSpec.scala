@@ -4,24 +4,23 @@ import typings.dockerode.anon.ContainerID
 import typings.dockerode.dockerodeStrings.attachment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkAttachmentTaskSpec
-  extends TaskSpecBase
+  extends StObject
+     with TaskSpecBase
      with TaskSpec {
   
-  var NetworkAttachmentSpec: ContainerID = js.native
+  var NetworkAttachmentSpec: ContainerID
   
   @JSName("Runtime")
-  var Runtime_NetworkAttachmentTaskSpec: attachment = js.native
+  var Runtime_NetworkAttachmentTaskSpec: attachment
 }
 object NetworkAttachmentTaskSpec {
   
   @scala.inline
-  def apply(NetworkAttachmentSpec: ContainerID, Runtime: attachment): NetworkAttachmentTaskSpec = {
-    val __obj = js.Dynamic.literal(NetworkAttachmentSpec = NetworkAttachmentSpec.asInstanceOf[js.Any], Runtime = Runtime.asInstanceOf[js.Any])
+  def apply(NetworkAttachmentSpec: ContainerID): NetworkAttachmentTaskSpec = {
+    val __obj = js.Dynamic.literal(NetworkAttachmentSpec = NetworkAttachmentSpec.asInstanceOf[js.Any], Runtime = "attachment")
     __obj.asInstanceOf[NetworkAttachmentTaskSpec]
   }
   

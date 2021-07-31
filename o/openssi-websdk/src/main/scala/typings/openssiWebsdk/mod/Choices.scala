@@ -2,19 +2,17 @@ package typings.openssiWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Choices extends StObject {
   
-  var attr1: js.Any = js.native
+  var attr1: js.Any
   
-  var attributes: js.Any = js.native
+  var attributes: js.Any
   
-  var pred1: js.Any = js.native
+  var pred1: js.Any
   
-  var predicates: js.Any = js.native
+  var predicates: js.Any
 }
 object Choices {
   

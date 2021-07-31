@@ -12,7 +12,7 @@ Run async tasks with dependencies
 | Keywords           | graph, adjacency, list, tasks, priority, priorities, sort, dependencies, topological, topo, sequencer, task, runner |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 386649 |
+| # downloads        | 377766 |
 | # stars            | 0 |
 
 ## Links

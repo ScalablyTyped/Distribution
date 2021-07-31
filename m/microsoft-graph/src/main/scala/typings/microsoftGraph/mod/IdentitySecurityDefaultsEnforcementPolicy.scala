@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdentitySecurityDefaultsEnforcementPolicy extends PolicyBase {
+trait IdentitySecurityDefaultsEnforcementPolicy
+  extends StObject
+     with PolicyBase {
   
   // If set to true, Azure Active Directory security defaults is enabled for the tenant.
-  var isEnabled: js.UndefOr[Boolean] = js.native
+  var isEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object IdentitySecurityDefaultsEnforcementPolicy {
   

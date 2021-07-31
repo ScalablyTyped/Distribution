@@ -10,9 +10,9 @@ Mutator for setting a field as "touched" in 🏁 Final Form
 | ------------------ | :-------------: |
 | Full name          | final-form-set-field-touched |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 113341 |
+| # releases         | 0 |
+| # dependents       | 9 |
+| # downloads        | 161719 |
 | # stars            | 0 |
 
 ## Links

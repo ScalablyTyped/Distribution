@@ -15,81 +15,81 @@ import typings.arcgisJsApi.arcgisJsApiStrings.square
 import typings.arcgisJsApi.arcgisJsApiStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PathSymbol3DLayerProperties extends Symbol3DLayerProperties {
+trait PathSymbol3DLayerProperties
+  extends StObject
+     with Symbol3DLayerProperties {
   
   /**
     * Defines offset of the path cross section relative to the [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#anchor)
     */
-  var anchor: js.UndefOr[center | bottom | top] = js.native
+  var anchor: js.UndefOr[center | bottom | top] = js.undefined
   
   /**
     * Controls the shape at the start and end point of the path.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#cap)
     */
-  var cap: js.UndefOr[none | butt | square | round] = js.native
+  var cap: js.UndefOr[none | butt | square | round] = js.undefined
   
   /**
     * Indicates whether the symbol layer geometry casts shadows in the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#castShadows)
     */
-  var castShadows: js.UndefOr[Boolean] = js.native
+  var castShadows: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The vertical dimension of the cross-section of the path in meters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#height)
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls the shape of the connection between two segments of the path.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#join)
     */
-  var join: js.UndefOr[miter | bevel | round] = js.native
+  var join: js.UndefOr[miter | bevel | round] = js.undefined
   
   /**
     * The material used to shade the path.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#material)
     */
-  var material: js.UndefOr[PathSymbol3DLayerMaterialProperties] = js.native
+  var material: js.UndefOr[PathSymbol3DLayerMaterialProperties] = js.undefined
   
   /**
     * Cross-section profile of the path geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profile)
     */
-  var profile: js.UndefOr[circle | quad] = js.native
+  var profile: js.UndefOr[circle | quad] = js.undefined
   
   /**
     * Defines how the [profile](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profile) is rotated as it is extruded along the [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profileRotation)
     */
-  var profileRotation: js.UndefOr[heading | all] = js.native
+  var profileRotation: js.UndefOr[heading | all] = js.undefined
   
   /**
     * Sets the width and height of the path in meters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#size)
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * The horizontal dimension of the cross-section of the path in meters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#width)
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PathSymbol3DLayerProperties {
   

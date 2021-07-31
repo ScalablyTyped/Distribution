@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyFpgaImageResult extends StObject {
   
   /**
     * The ID of the new AFI.
     */
-  var FpgaImageId: js.UndefOr[String] = js.native
+  var FpgaImageId: js.UndefOr[String] = js.undefined
 }
 object CopyFpgaImageResult {
   

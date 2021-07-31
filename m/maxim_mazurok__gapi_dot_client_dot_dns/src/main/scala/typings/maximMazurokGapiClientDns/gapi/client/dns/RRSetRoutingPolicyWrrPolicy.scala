@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RRSetRoutingPolicyWrrPolicy extends StObject {
   
-  var items: js.UndefOr[js.Array[RRSetRoutingPolicyWrrPolicyWrrPolicyItem]] = js.native
+  var items: js.UndefOr[js.Array[RRSetRoutingPolicyWrrPolicyWrrPolicyItem]] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object RRSetRoutingPolicyWrrPolicy {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableVpcClassicLinkDnsSupportResult extends StObject {
   
   /**
     * Returns true if the request succeeds; otherwise, it returns an error.
     */
-  var Return: js.UndefOr[Boolean] = js.native
+  var Return: js.UndefOr[Boolean] = js.undefined
 }
 object DisableVpcClassicLinkDnsSupportResult {
   

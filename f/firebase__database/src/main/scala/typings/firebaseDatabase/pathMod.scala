@@ -2,7 +2,6 @@ package typings.firebaseDatabase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathMod {
@@ -86,23 +85,25 @@ object pathMod {
   /* static members */
   object Path {
     
+    @JSImport("@firebase/database/dist/src/core/util/Path", "Path")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * @param {!Path} left
       * @param {!Path} right
       * @return {number} -1, 0, 1 if left is less, equal, or greater than the right.
       */
-    @JSImport("@firebase/database/dist/src/core/util/Path", "Path.comparePaths")
-    @js.native
-    def comparePaths(left: Path, right: Path): Double = js.native
+    @scala.inline
+    def comparePaths(left: Path, right: Path): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("comparePaths")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * @param {!Path} outerPath
       * @param {!Path} innerPath
       * @return {!Path} The path from outerPath to innerPath
       */
-    @JSImport("@firebase/database/dist/src/core/util/Path", "Path.relativePath")
-    @js.native
-    def relativePath(outerPath: Path, innerPath: Path): Path = js.native
+    @scala.inline
+    def relativePath(outerPath: Path, innerPath: Path): Path = (^.asInstanceOf[js.Dynamic].applyDynamic("relativePath")(outerPath.asInstanceOf[js.Any], innerPath.asInstanceOf[js.Any])).asInstanceOf[Path]
   }
   
   @JSImport("@firebase/database/dist/src/core/util/Path", "ValidationPath")

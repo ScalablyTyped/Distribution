@@ -47,176 +47,137 @@ import typings.awsSdkProtocolHttp.mod.HttpResponse
 import typings.awsSdkTypes.serdeMod.SerdeContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsJson11Mod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1CreateIdentityPoolCommand")
+  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", JSImport.Namespace)
   @js.native
-  def deserializeAwsJson11CreateIdentityPoolCommand(output: HttpResponse, context: SerdeContext): js.Promise[CreateIdentityPoolCommandOutput] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1DeleteIdentitiesCommand")
-  @js.native
-  def deserializeAwsJson11DeleteIdentitiesCommand(output: HttpResponse, context: SerdeContext): js.Promise[DeleteIdentitiesCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11CreateIdentityPoolCommand(output: HttpResponse, context: SerdeContext): js.Promise[CreateIdentityPoolCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1CreateIdentityPoolCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CreateIdentityPoolCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1DeleteIdentityPoolCommand")
-  @js.native
-  def deserializeAwsJson11DeleteIdentityPoolCommand(output: HttpResponse, context: SerdeContext): js.Promise[DeleteIdentityPoolCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11DeleteIdentitiesCommand(output: HttpResponse, context: SerdeContext): js.Promise[DeleteIdentitiesCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1DeleteIdentitiesCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DeleteIdentitiesCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1DescribeIdentityCommand")
-  @js.native
-  def deserializeAwsJson11DescribeIdentityCommand(output: HttpResponse, context: SerdeContext): js.Promise[DescribeIdentityCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11DeleteIdentityPoolCommand(output: HttpResponse, context: SerdeContext): js.Promise[DeleteIdentityPoolCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1DeleteIdentityPoolCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DeleteIdentityPoolCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1DescribeIdentityPoolCommand")
-  @js.native
-  def deserializeAwsJson11DescribeIdentityPoolCommand(output: HttpResponse, context: SerdeContext): js.Promise[DescribeIdentityPoolCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11DescribeIdentityCommand(output: HttpResponse, context: SerdeContext): js.Promise[DescribeIdentityCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1DescribeIdentityCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DescribeIdentityCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1GetCredentialsForIdentityCommand")
-  @js.native
-  def deserializeAwsJson11GetCredentialsForIdentityCommand(output: HttpResponse, context: SerdeContext): js.Promise[GetCredentialsForIdentityCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11DescribeIdentityPoolCommand(output: HttpResponse, context: SerdeContext): js.Promise[DescribeIdentityPoolCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1DescribeIdentityPoolCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DescribeIdentityPoolCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1GetIdCommand")
-  @js.native
-  def deserializeAwsJson11GetIdCommand(output: HttpResponse, context: SerdeContext): js.Promise[GetIdCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11GetCredentialsForIdentityCommand(output: HttpResponse, context: SerdeContext): js.Promise[GetCredentialsForIdentityCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1GetCredentialsForIdentityCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCredentialsForIdentityCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1GetIdentityPoolRolesCommand")
-  @js.native
-  def deserializeAwsJson11GetIdentityPoolRolesCommand(output: HttpResponse, context: SerdeContext): js.Promise[GetIdentityPoolRolesCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11GetIdCommand(output: HttpResponse, context: SerdeContext): js.Promise[GetIdCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1GetIdCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetIdCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1GetOpenIdTokenCommand")
-  @js.native
-  def deserializeAwsJson11GetOpenIdTokenCommand(output: HttpResponse, context: SerdeContext): js.Promise[GetOpenIdTokenCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11GetIdentityPoolRolesCommand(output: HttpResponse, context: SerdeContext): js.Promise[GetIdentityPoolRolesCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1GetIdentityPoolRolesCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetIdentityPoolRolesCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1GetOpenIdTokenForDeveloperIdentityCommand")
-  @js.native
-  def deserializeAwsJson11GetOpenIdTokenForDeveloperIdentityCommand(output: HttpResponse, context: SerdeContext): js.Promise[GetOpenIdTokenForDeveloperIdentityCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11GetOpenIdTokenCommand(output: HttpResponse, context: SerdeContext): js.Promise[GetOpenIdTokenCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1GetOpenIdTokenCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOpenIdTokenCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1ListIdentitiesCommand")
-  @js.native
-  def deserializeAwsJson11ListIdentitiesCommand(output: HttpResponse, context: SerdeContext): js.Promise[ListIdentitiesCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11GetOpenIdTokenForDeveloperIdentityCommand(output: HttpResponse, context: SerdeContext): js.Promise[GetOpenIdTokenForDeveloperIdentityCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1GetOpenIdTokenForDeveloperIdentityCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOpenIdTokenForDeveloperIdentityCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1ListIdentityPoolsCommand")
-  @js.native
-  def deserializeAwsJson11ListIdentityPoolsCommand(output: HttpResponse, context: SerdeContext): js.Promise[ListIdentityPoolsCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11ListIdentitiesCommand(output: HttpResponse, context: SerdeContext): js.Promise[ListIdentitiesCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1ListIdentitiesCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ListIdentitiesCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1ListTagsForResourceCommand")
-  @js.native
-  def deserializeAwsJson11ListTagsForResourceCommand(output: HttpResponse, context: SerdeContext): js.Promise[ListTagsForResourceCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11ListIdentityPoolsCommand(output: HttpResponse, context: SerdeContext): js.Promise[ListIdentityPoolsCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1ListIdentityPoolsCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ListIdentityPoolsCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1LookupDeveloperIdentityCommand")
-  @js.native
-  def deserializeAwsJson11LookupDeveloperIdentityCommand(output: HttpResponse, context: SerdeContext): js.Promise[LookupDeveloperIdentityCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11ListTagsForResourceCommand(output: HttpResponse, context: SerdeContext): js.Promise[ListTagsForResourceCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1ListTagsForResourceCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ListTagsForResourceCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1MergeDeveloperIdentitiesCommand")
-  @js.native
-  def deserializeAwsJson11MergeDeveloperIdentitiesCommand(output: HttpResponse, context: SerdeContext): js.Promise[MergeDeveloperIdentitiesCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11LookupDeveloperIdentityCommand(output: HttpResponse, context: SerdeContext): js.Promise[LookupDeveloperIdentityCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1LookupDeveloperIdentityCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LookupDeveloperIdentityCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1SetIdentityPoolRolesCommand")
-  @js.native
-  def deserializeAwsJson11SetIdentityPoolRolesCommand(output: HttpResponse, context: SerdeContext): js.Promise[SetIdentityPoolRolesCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11MergeDeveloperIdentitiesCommand(output: HttpResponse, context: SerdeContext): js.Promise[MergeDeveloperIdentitiesCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1MergeDeveloperIdentitiesCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MergeDeveloperIdentitiesCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1TagResourceCommand")
-  @js.native
-  def deserializeAwsJson11TagResourceCommand(output: HttpResponse, context: SerdeContext): js.Promise[TagResourceCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11SetIdentityPoolRolesCommand(output: HttpResponse, context: SerdeContext): js.Promise[SetIdentityPoolRolesCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1SetIdentityPoolRolesCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SetIdentityPoolRolesCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1UnlinkDeveloperIdentityCommand")
-  @js.native
-  def deserializeAwsJson11UnlinkDeveloperIdentityCommand(output: HttpResponse, context: SerdeContext): js.Promise[UnlinkDeveloperIdentityCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11TagResourceCommand(output: HttpResponse, context: SerdeContext): js.Promise[TagResourceCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1TagResourceCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TagResourceCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1UnlinkIdentityCommand")
-  @js.native
-  def deserializeAwsJson11UnlinkIdentityCommand(output: HttpResponse, context: SerdeContext): js.Promise[UnlinkIdentityCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11UnlinkDeveloperIdentityCommand(output: HttpResponse, context: SerdeContext): js.Promise[UnlinkDeveloperIdentityCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1UnlinkDeveloperIdentityCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UnlinkDeveloperIdentityCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1UntagResourceCommand")
-  @js.native
-  def deserializeAwsJson11UntagResourceCommand(output: HttpResponse, context: SerdeContext): js.Promise[UntagResourceCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11UnlinkIdentityCommand(output: HttpResponse, context: SerdeContext): js.Promise[UnlinkIdentityCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1UnlinkIdentityCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UnlinkIdentityCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "deserializeAws_json1_1UpdateIdentityPoolCommand")
-  @js.native
-  def deserializeAwsJson11UpdateIdentityPoolCommand(output: HttpResponse, context: SerdeContext): js.Promise[UpdateIdentityPoolCommandOutput] = js.native
+  @scala.inline
+  def deserializeAwsJson11UntagResourceCommand(output: HttpResponse, context: SerdeContext): js.Promise[UntagResourceCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1UntagResourceCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UntagResourceCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1CreateIdentityPoolCommand")
-  @js.native
-  def serializeAwsJson11CreateIdentityPoolCommand(input: CreateIdentityPoolCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def deserializeAwsJson11UpdateIdentityPoolCommand(output: HttpResponse, context: SerdeContext): js.Promise[UpdateIdentityPoolCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_json1_1UpdateIdentityPoolCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UpdateIdentityPoolCommandOutput]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1DeleteIdentitiesCommand")
-  @js.native
-  def serializeAwsJson11DeleteIdentitiesCommand(input: DeleteIdentitiesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11CreateIdentityPoolCommand(input: CreateIdentityPoolCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1CreateIdentityPoolCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1DeleteIdentityPoolCommand")
-  @js.native
-  def serializeAwsJson11DeleteIdentityPoolCommand(input: DeleteIdentityPoolCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11DeleteIdentitiesCommand(input: DeleteIdentitiesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1DeleteIdentitiesCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1DescribeIdentityCommand")
-  @js.native
-  def serializeAwsJson11DescribeIdentityCommand(input: DescribeIdentityCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11DeleteIdentityPoolCommand(input: DeleteIdentityPoolCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1DeleteIdentityPoolCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1DescribeIdentityPoolCommand")
-  @js.native
-  def serializeAwsJson11DescribeIdentityPoolCommand(input: DescribeIdentityPoolCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11DescribeIdentityCommand(input: DescribeIdentityCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1DescribeIdentityCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1GetCredentialsForIdentityCommand")
-  @js.native
-  def serializeAwsJson11GetCredentialsForIdentityCommand(input: GetCredentialsForIdentityCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11DescribeIdentityPoolCommand(input: DescribeIdentityPoolCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1DescribeIdentityPoolCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1GetIdCommand")
-  @js.native
-  def serializeAwsJson11GetIdCommand(input: GetIdCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11GetCredentialsForIdentityCommand(input: GetCredentialsForIdentityCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1GetCredentialsForIdentityCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1GetIdentityPoolRolesCommand")
-  @js.native
-  def serializeAwsJson11GetIdentityPoolRolesCommand(input: GetIdentityPoolRolesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11GetIdCommand(input: GetIdCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1GetIdCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1GetOpenIdTokenCommand")
-  @js.native
-  def serializeAwsJson11GetOpenIdTokenCommand(input: GetOpenIdTokenCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11GetIdentityPoolRolesCommand(input: GetIdentityPoolRolesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1GetIdentityPoolRolesCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1GetOpenIdTokenForDeveloperIdentityCommand")
-  @js.native
-  def serializeAwsJson11GetOpenIdTokenForDeveloperIdentityCommand(input: GetOpenIdTokenForDeveloperIdentityCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11GetOpenIdTokenCommand(input: GetOpenIdTokenCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1GetOpenIdTokenCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1ListIdentitiesCommand")
-  @js.native
-  def serializeAwsJson11ListIdentitiesCommand(input: ListIdentitiesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11GetOpenIdTokenForDeveloperIdentityCommand(input: GetOpenIdTokenForDeveloperIdentityCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1GetOpenIdTokenForDeveloperIdentityCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1ListIdentityPoolsCommand")
-  @js.native
-  def serializeAwsJson11ListIdentityPoolsCommand(input: ListIdentityPoolsCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11ListIdentitiesCommand(input: ListIdentitiesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1ListIdentitiesCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1ListTagsForResourceCommand")
-  @js.native
-  def serializeAwsJson11ListTagsForResourceCommand(input: ListTagsForResourceCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11ListIdentityPoolsCommand(input: ListIdentityPoolsCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1ListIdentityPoolsCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1LookupDeveloperIdentityCommand")
-  @js.native
-  def serializeAwsJson11LookupDeveloperIdentityCommand(input: LookupDeveloperIdentityCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11ListTagsForResourceCommand(input: ListTagsForResourceCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1ListTagsForResourceCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1MergeDeveloperIdentitiesCommand")
-  @js.native
-  def serializeAwsJson11MergeDeveloperIdentitiesCommand(input: MergeDeveloperIdentitiesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11LookupDeveloperIdentityCommand(input: LookupDeveloperIdentityCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1LookupDeveloperIdentityCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1SetIdentityPoolRolesCommand")
-  @js.native
-  def serializeAwsJson11SetIdentityPoolRolesCommand(input: SetIdentityPoolRolesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11MergeDeveloperIdentitiesCommand(input: MergeDeveloperIdentitiesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1MergeDeveloperIdentitiesCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1TagResourceCommand")
-  @js.native
-  def serializeAwsJson11TagResourceCommand(input: TagResourceCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11SetIdentityPoolRolesCommand(input: SetIdentityPoolRolesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1SetIdentityPoolRolesCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1UnlinkDeveloperIdentityCommand")
-  @js.native
-  def serializeAwsJson11UnlinkDeveloperIdentityCommand(input: UnlinkDeveloperIdentityCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11TagResourceCommand(input: TagResourceCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1TagResourceCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1UnlinkIdentityCommand")
-  @js.native
-  def serializeAwsJson11UnlinkIdentityCommand(input: UnlinkIdentityCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11UnlinkDeveloperIdentityCommand(input: UnlinkDeveloperIdentityCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1UnlinkDeveloperIdentityCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1UntagResourceCommand")
-  @js.native
-  def serializeAwsJson11UntagResourceCommand(input: UntagResourceCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11UnlinkIdentityCommand(input: UnlinkIdentityCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1UnlinkIdentityCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/protocols/Aws_json1_1", "serializeAws_json1_1UpdateIdentityPoolCommand")
-  @js.native
-  def serializeAwsJson11UpdateIdentityPoolCommand(input: UpdateIdentityPoolCommandInput, context: SerdeContext): js.Promise[HttpRequest] = js.native
+  @scala.inline
+  def serializeAwsJson11UntagResourceCommand(input: UntagResourceCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1UntagResourceCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
+  
+  @scala.inline
+  def serializeAwsJson11UpdateIdentityPoolCommand(input: UpdateIdentityPoolCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_json1_1UpdateIdentityPoolCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
 }

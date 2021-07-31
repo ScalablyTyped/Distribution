@@ -24,10 +24,13 @@ import typings.uifabricStyling.uifabricStylingStrings.vertical
 import typings.uifabricUtilities.customizerContextMod.ICustomizerContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylesMod {
+  
+  @JSImport("@uifabric/styling/lib/styles", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@uifabric/styling/lib/styles", "AnimationStyles")
   @js.native
@@ -349,36 +352,27 @@ object stylesMod {
     val ScrollablePane: Double = js.native
   }
   
-  @JSImport("@uifabric/styling/lib/styles", "createFontStyles")
-  @js.native
-  def createFontStyles(): IFontStyles = js.native
-  @JSImport("@uifabric/styling/lib/styles", "createFontStyles")
-  @js.native
-  def createFontStyles(localeCode: String): IFontStyles = js.native
+  @scala.inline
+  def createFontStyles(): IFontStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("createFontStyles")().asInstanceOf[IFontStyles]
+  @scala.inline
+  def createFontStyles(localeCode: String): IFontStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("createFontStyles")(localeCode.asInstanceOf[js.Any]).asInstanceOf[IFontStyles]
   
-  @JSImport("@uifabric/styling/lib/styles", "createTheme")
-  @js.native
-  def createTheme(): Theme = js.native
-  @JSImport("@uifabric/styling/lib/styles", "createTheme")
-  @js.native
-  def createTheme(theme: js.UndefOr[scala.Nothing], depComments: Boolean): Theme = js.native
-  @JSImport("@uifabric/styling/lib/styles", "createTheme")
-  @js.native
-  def createTheme(theme: PartialTheme): Theme = js.native
-  @JSImport("@uifabric/styling/lib/styles", "createTheme")
-  @js.native
-  def createTheme(theme: PartialTheme, depComments: Boolean): Theme = js.native
+  @scala.inline
+  def createTheme(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")().asInstanceOf[Theme]
+  @scala.inline
+  def createTheme(theme: Unit, depComments: Boolean): Theme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[Theme]
+  @scala.inline
+  def createTheme(theme: PartialTheme): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Theme]
+  @scala.inline
+  def createTheme(theme: PartialTheme, depComments: Boolean): Theme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[Theme]
   
-  @JSImport("@uifabric/styling/lib/styles", "focusClear")
-  @js.native
-  def focusClear(): IRawStyle = js.native
+  @scala.inline
+  def focusClear(): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("focusClear")().asInstanceOf[IRawStyle]
   
-  @JSImport("@uifabric/styling/lib/styles", "getEdgeChromiumNoHighContrastAdjustSelector")
-  @js.native
-  def getEdgeChromiumNoHighContrastAdjustSelector(): typings.uifabricStyling.anon.EdgeChromiumHighContrastSelector = js.native
+  @scala.inline
+  def getEdgeChromiumNoHighContrastAdjustSelector(): typings.uifabricStyling.anon.EdgeChromiumHighContrastSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("getEdgeChromiumNoHighContrastAdjustSelector")().asInstanceOf[typings.uifabricStyling.anon.EdgeChromiumHighContrastSelector]
   
-  @JSImport("@uifabric/styling/lib/styles", "getFadedOverflowStyle")
-  @js.native
+  @scala.inline
   def getFadedOverflowStyle(
     theme: ITheme,
     color: js.UndefOr[
@@ -387,38 +381,28 @@ object stylesMod {
     direction: js.UndefOr[horizontal | vertical],
     width: js.UndefOr[String | Double],
     height: js.UndefOr[String | Double]
-  ): IRawStyle = js.native
+  ): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFadedOverflowStyle")(theme.asInstanceOf[js.Any], color.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
   
-  @JSImport("@uifabric/styling/lib/styles", "getFocusOutlineStyle")
-  @js.native
-  def getFocusOutlineStyle(theme: ITheme): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getFocusOutlineStyle")
-  @js.native
-  def getFocusOutlineStyle(theme: ITheme, inset: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], color: String): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getFocusOutlineStyle")
-  @js.native
-  def getFocusOutlineStyle(theme: ITheme, inset: js.UndefOr[scala.Nothing], width: Double): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getFocusOutlineStyle")
-  @js.native
-  def getFocusOutlineStyle(theme: ITheme, inset: js.UndefOr[scala.Nothing], width: Double, color: String): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getFocusOutlineStyle")
-  @js.native
-  def getFocusOutlineStyle(theme: ITheme, inset: Double): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getFocusOutlineStyle")
-  @js.native
-  def getFocusOutlineStyle(theme: ITheme, inset: Double, width: js.UndefOr[scala.Nothing], color: String): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getFocusOutlineStyle")
-  @js.native
-  def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Double): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getFocusOutlineStyle")
-  @js.native
-  def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Double, color: String): IRawStyle = js.native
+  @scala.inline
+  def getFocusOutlineStyle(theme: ITheme): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any]).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getFocusOutlineStyle(theme: ITheme, inset: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Double, color: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Unit, color: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getFocusOutlineStyle(theme: ITheme, inset: Unit, width: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getFocusOutlineStyle(theme: ITheme, inset: Unit, width: Double, color: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getFocusOutlineStyle(theme: ITheme, inset: Unit, width: Unit, color: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
   
-  @JSImport("@uifabric/styling/lib/styles", "getFocusStyle")
-  @js.native
-  def getFocusStyle(theme: ITheme): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getFocusStyle")
-  @js.native
+  @scala.inline
+  def getFocusStyle(theme: ITheme): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusStyle")(theme.asInstanceOf[js.Any]).asInstanceOf[IRawStyle]
+  @scala.inline
   def getFocusStyle(
     theme: ITheme,
     inset: js.UndefOr[Double],
@@ -427,103 +411,70 @@ object stylesMod {
     borderColor: js.UndefOr[String],
     outlineColor: js.UndefOr[String],
     isFocusedOnly: js.UndefOr[Boolean]
-  ): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getFocusStyle")
-  @js.native
-  def getFocusStyle(theme: ITheme, options: IGetFocusStylesOptions): IRawStyle = js.native
+  ): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], position.asInstanceOf[js.Any], highContrastStyle.asInstanceOf[js.Any], borderColor.asInstanceOf[js.Any], outlineColor.asInstanceOf[js.Any], isFocusedOnly.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getFocusStyle(theme: ITheme, options: IGetFocusStylesOptions): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusStyle")(theme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
   
-  @JSImport("@uifabric/styling/lib/styles", "getGlobalClassNames")
-  @js.native
-  def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme): GlobalClassNames[T] = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getGlobalClassNames")
-  @js.native
-  def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme, disableGlobalClassNames: Boolean): GlobalClassNames[T] = js.native
+  @scala.inline
+  def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme): GlobalClassNames[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalClassNames")(classNames.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[GlobalClassNames[T]]
+  @scala.inline
+  def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme, disableGlobalClassNames: Boolean): GlobalClassNames[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalClassNames")(classNames.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], disableGlobalClassNames.asInstanceOf[js.Any])).asInstanceOf[GlobalClassNames[T]]
   
-  @JSImport("@uifabric/styling/lib/styles", "getInputFocusStyle")
-  @js.native
-  def getInputFocusStyle(borderColor: String, borderRadius: String): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getInputFocusStyle")
-  @js.native
-  def getInputFocusStyle(
-    borderColor: String,
-    borderRadius: String,
-    borderType: js.UndefOr[scala.Nothing],
-    borderPosition: Double
-  ): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getInputFocusStyle")
-  @js.native
-  def getInputFocusStyle(borderColor: String, borderRadius: Double): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getInputFocusStyle")
-  @js.native
-  def getInputFocusStyle(
-    borderColor: String,
-    borderRadius: Double,
-    borderType: js.UndefOr[scala.Nothing],
-    borderPosition: Double
-  ): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getInputFocusStyle")
-  @js.native
-  def getInputFocusStyle_border(borderColor: String, borderRadius: String, borderType: border): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getInputFocusStyle")
-  @js.native
-  def getInputFocusStyle_border(borderColor: String, borderRadius: String, borderType: border, borderPosition: Double): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getInputFocusStyle")
-  @js.native
-  def getInputFocusStyle_border(borderColor: String, borderRadius: Double, borderType: border): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getInputFocusStyle")
-  @js.native
-  def getInputFocusStyle_border(borderColor: String, borderRadius: Double, borderType: border, borderPosition: Double): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getInputFocusStyle")
-  @js.native
-  def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: String, borderType: borderBottom): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getInputFocusStyle")
-  @js.native
-  def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: String, borderType: borderBottom, borderPosition: Double): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getInputFocusStyle")
-  @js.native
-  def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: Double, borderType: borderBottom): IRawStyle = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getInputFocusStyle")
-  @js.native
-  def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: Double, borderType: borderBottom, borderPosition: Double): IRawStyle = js.native
+  @scala.inline
+  def getInputFocusStyle(borderColor: String, borderRadius: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getInputFocusStyle(borderColor: String, borderRadius: String, borderType: Unit, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getInputFocusStyle(borderColor: String, borderRadius: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getInputFocusStyle(borderColor: String, borderRadius: Double, borderType: Unit, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
   
-  @JSImport("@uifabric/styling/lib/styles", "getPlaceholderStyles")
-  @js.native
-  def getPlaceholderStyles(styles: IStyle): IStyle = js.native
+  @scala.inline
+  def getInputFocusStyle_border(borderColor: String, borderRadius: String, borderType: border): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getInputFocusStyle_border(borderColor: String, borderRadius: String, borderType: border, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getInputFocusStyle_border(borderColor: String, borderRadius: Double, borderType: border): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getInputFocusStyle_border(borderColor: String, borderRadius: Double, borderType: border, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
   
-  @JSImport("@uifabric/styling/lib/styles", "getScreenSelector")
-  @js.native
-  def getScreenSelector(min: Double, max: Double): String = js.native
+  @scala.inline
+  def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: String, borderType: borderBottom): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: String, borderType: borderBottom, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: Double, borderType: borderBottom): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  @scala.inline
+  def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: Double, borderType: borderBottom, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
   
-  @JSImport("@uifabric/styling/lib/styles", "getTheme")
-  @js.native
-  def getTheme(): ITheme = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getTheme")
-  @js.native
-  def getTheme(depComments: Boolean): ITheme = js.native
+  @scala.inline
+  def getPlaceholderStyles(styles: IStyle): IStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlaceholderStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[IStyle]
   
-  @JSImport("@uifabric/styling/lib/styles", "getThemedContext")
-  @js.native
-  def getThemedContext(context: ICustomizerContext): ICustomizerContext = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getThemedContext")
-  @js.native
-  def getThemedContext(context: ICustomizerContext, scheme: js.UndefOr[scala.Nothing], theme: ITheme): ICustomizerContext = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getThemedContext")
-  @js.native
-  def getThemedContext(context: ICustomizerContext, scheme: ISchemeNames): ICustomizerContext = js.native
-  @JSImport("@uifabric/styling/lib/styles", "getThemedContext")
-  @js.native
-  def getThemedContext(context: ICustomizerContext, scheme: ISchemeNames, theme: ITheme): ICustomizerContext = js.native
+  @scala.inline
+  def getScreenSelector(min: Double, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def getTheme(): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")().asInstanceOf[ITheme]
+  @scala.inline
+  def getTheme(depComments: Boolean): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")(depComments.asInstanceOf[js.Any]).asInstanceOf[ITheme]
+  
+  @scala.inline
+  def getThemedContext(context: ICustomizerContext): ICustomizerContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any]).asInstanceOf[ICustomizerContext]
+  @scala.inline
+  def getThemedContext(context: ICustomizerContext, scheme: Unit, theme: ITheme): ICustomizerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[ICustomizerContext]
+  @scala.inline
+  def getThemedContext(context: ICustomizerContext, scheme: ISchemeNames): ICustomizerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[ICustomizerContext]
+  @scala.inline
+  def getThemedContext(context: ICustomizerContext, scheme: ISchemeNames, theme: ITheme): ICustomizerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[ICustomizerContext]
   
   @JSImport("@uifabric/styling/lib/styles", "hiddenContentStyle")
   @js.native
   val hiddenContentStyle: IRawStyle = js.native
   
-  @JSImport("@uifabric/styling/lib/styles", "loadTheme")
-  @js.native
-  def loadTheme(theme: IPartialTheme): ITheme = js.native
-  @JSImport("@uifabric/styling/lib/styles", "loadTheme")
-  @js.native
-  def loadTheme(theme: IPartialTheme, depComments: Boolean): ITheme = js.native
+  @scala.inline
+  def loadTheme(theme: IPartialTheme): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[ITheme]
+  @scala.inline
+  def loadTheme(theme: IPartialTheme, depComments: Boolean): ITheme = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[ITheme]
   
   @JSImport("@uifabric/styling/lib/styles", "noWrap")
   @js.native
@@ -533,15 +484,12 @@ object stylesMod {
   @js.native
   val normalize: IRawStyle = js.native
   
-  @JSImport("@uifabric/styling/lib/styles", "registerDefaultFontFaces")
-  @js.native
-  def registerDefaultFontFaces(baseUrl: String): Unit = js.native
+  @scala.inline
+  def registerDefaultFontFaces(baseUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDefaultFontFaces")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@uifabric/styling/lib/styles", "registerOnThemeChangeCallback")
-  @js.native
-  def registerOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = js.native
+  @scala.inline
+  def registerOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnThemeChangeCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@uifabric/styling/lib/styles", "removeOnThemeChangeCallback")
-  @js.native
-  def removeOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = js.native
+  @scala.inline
+  def removeOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOnThemeChangeCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

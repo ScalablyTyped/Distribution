@@ -3,25 +3,26 @@ package typings.psTree
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(pid: Double, callback: js.Function2[/* error */ Error, /* children */ js.Array[PS], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("ps-tree", JSImport.Namespace)
   @js.native
-  def apply(pid: Double, callback: js.Function2[/* error */ Error, /* children */ js.Array[PS], Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait PS extends StObject {
     
-    var COMMAND: String = js.native
+    var COMMAND: String
     
-    var PID: String = js.native
+    var PID: String
     
-    var PPID: String = js.native
+    var PPID: String
     
-    var STAT: String = js.native
+    var STAT: String
   }
   object PS {
     

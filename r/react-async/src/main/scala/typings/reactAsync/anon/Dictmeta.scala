@@ -3,14 +3,13 @@ package typings.reactAsync.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictmeta
-  extends /* prop */ StringDictionary[js.Any] {
+  extends StObject
+     with /* prop */ StringDictionary[js.Any] {
   
-  var counter: Double = js.native
+  var counter: Double
 }
 object Dictmeta {
   

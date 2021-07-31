@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IotEventsDestinationConfiguration extends StObject {
   
   /**
     * The name of the AWS IoT Events input to which dataset contents are delivered.
     */
-  var inputName: IotEventsInputName = js.native
+  var inputName: IotEventsInputName
   
   /**
     * The ARN of the role that grants AWS IoT Analytics permission to deliver dataset contents to an AWS IoT Events input.
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
 }
 object IotEventsDestinationConfiguration {
   

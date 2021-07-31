@@ -2,62 +2,60 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormField extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var CalculateOnExit: Boolean = js.native
+  var CalculateOnExit: Boolean
   
-  val CheckBox: typings.activexWord.Word.CheckBox = js.native
+  val CheckBox: typings.activexWord.Word.CheckBox
   
-  def Copy(): Unit = js.native
+  def Copy(): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Cut(): Unit = js.native
+  def Cut(): Unit
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val DropDown: typings.activexWord.Word.DropDown = js.native
+  val DropDown: typings.activexWord.Word.DropDown
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var EntryMacro: String = js.native
+  var EntryMacro: String
   
-  var ExitMacro: String = js.native
+  var ExitMacro: String
   
-  var HelpText: String = js.native
+  var HelpText: String
   
-  var Name: String = js.native
+  var Name: String
   
-  val Next: FormField = js.native
+  val Next: FormField
   
-  var OwnHelp: Boolean = js.native
+  var OwnHelp: Boolean
   
-  var OwnStatus: Boolean = js.native
+  var OwnStatus: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Previous: FormField = js.native
+  val Previous: FormField
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  var Result: String = js.native
+  var Result: String
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
-  var StatusText: String = js.native
+  var StatusText: String
   
-  val TextInput: typings.activexWord.Word.TextInput = js.native
+  val TextInput: typings.activexWord.Word.TextInput
   
-  val Type: WdFieldType = js.native
+  val Type: WdFieldType
   
   @JSName("Word.FormField_typekey")
-  var WordDotFormField_typekey: FormField = js.native
+  var WordDotFormField_typekey: FormField
 }
 object FormField {
   

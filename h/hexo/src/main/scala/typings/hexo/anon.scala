@@ -12,27 +12,25 @@ import typings.hexo.mod.extend.Tag
 import typings.minimist.mod.ParsedArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Args extends StObject {
     
-    val args: ParsedArgs = js.native
+    val args: ParsedArgs
     
-    val debug: Boolean = js.native
+    val debug: Boolean
     
-    val env: String = js.native
+    val env: String
     
-    val init: Boolean = js.native
+    val init: Boolean
     
-    val safe: Boolean = js.native
+    val safe: Boolean
     
-    val silent: Boolean = js.native
+    val silent: Boolean
     
-    val version: String = js.native
+    val version: String
   }
   object Args {
     
@@ -76,22 +74,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Autodetect extends StObject {
     
-    val auto_detect: Boolean = js.native
+    val auto_detect: Boolean
     
-    val enable: Boolean = js.native
+    val enable: Boolean
     
-    val line_number: Boolean = js.native
+    val line_number: Boolean
     
-    val tab_replace: String | Null = js.native
+    val tab_replace: String | Null
   }
   object Autodetect {
     
     @scala.inline
     def apply(auto_detect: Boolean, enable: Boolean, line_number: Boolean): Autodetect = {
-      val __obj = js.Dynamic.literal(auto_detect = auto_detect.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], line_number = line_number.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(auto_detect = auto_detect.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], line_number = line_number.asInstanceOf[js.Any], tab_replace = null)
       __obj.asInstanceOf[Autodetect]
     }
     
@@ -115,53 +112,52 @@ object anon {
     }
   }
   
-  @js.native
   trait Console extends StObject {
     
     /**
       * The console forms the bridge between Hexo and its users. It registers and describes the available console commands.
       */
-    val console: typings.hexo.mod.extend.Console = js.native
+    val console: typings.hexo.mod.extend.Console
     
     /**
       * A deployer helps users quickly deploy their site to a remote server without complicated commands.
       */
-    val deployer: Deployer = js.native
+    val deployer: Deployer
     
     /**
       * A filter is used to modify some specified data. Hexo passes data to filters in sequence and the filters then modify the data one after the other.
       */
-    val filter: Filter = js.native
+    val filter: Filter
     
     /**
       * A generator builds routes based on processed files.
       */
-    val generator: Generator = js.native
+    val generator: Generator
     
     /**
       * A helper makes it easy to quickly add snippets to your templates. We recommend using helpers instead of templates when you’re dealing with more complicated code.
       */
-    val helper: Helper = js.native
+    val helper: Helper
     
     /**
       * A migrator helps users migrate from other systems to Hexo.
       */
-    val migrator: Migrator = js.native
+    val migrator: Migrator
     
     /**
       * A processor is used to process source files in the source folder.
       */
-    val processor: Processor = js.native
+    val processor: Processor
     
     /**
       * A renderer is used to render content.
       */
-    val renderer: Renderer = js.native
+    val renderer: Renderer
     
     /**
       * A tag allows users to quickly and easily insert snippets into their posts.
       */
-    val tag: Tag = js.native
+    val tag: Tag
   }
   object Console {
     
@@ -213,12 +209,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Content extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var path: String = js.native
+    var path: String
   }
   object Content {
     
@@ -239,12 +234,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Desc extends StObject {
     
-    var desc: String = js.native
+    var desc: String
     
-    var name: String = js.native
+    var name: String
   }
   object Desc {
     
@@ -265,11 +259,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var content: String = js.native
+    var content: String
   }
   object Dictkey {
     
@@ -287,12 +281,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Encoding extends StObject {
     
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
   }
   object Encoding {
     
@@ -322,13 +315,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Path
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var path: String = js.native
+    var path: String
     
-    var text: String = js.native
+    var text: String
   }
   object Path {
     

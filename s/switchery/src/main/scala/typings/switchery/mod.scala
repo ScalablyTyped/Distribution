@@ -7,7 +7,6 @@ import typings.switchery.mod.Switchery.Options
 import typings.switchery.mod.Switchery.SwitcheryStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,9 +18,40 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("switchery", JSImport.Default)
   @js.native
-  class default protected () extends Switchery {
+  class default protected ()
+    extends StObject
+       with Switchery {
     def this(node: Node) = this()
     def this(node: Node, options: Options) = this()
+    
+    /**
+      * Unbinding all event handlers attached to the switch element to prepare the object for garbage collection.
+      * @returns {void}
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
+      * Disable switch by unbinding attached events and changing opacity to disabledOpacity value
+      * @returns {void}
+      */
+    /* CompleteClass */
+    override def disable(): Unit = js.native
+    
+    /**
+      * Enable disabled switch by re-adding event handlers and changing the opacity to 1.
+      * @returns {void}
+      */
+    /* CompleteClass */
+    override def enable(): Unit = js.native
+    
+    /**
+      * Check if switch is currently disabled by checking the readonly and disabled attributes on the checkbox and the disabled option set via JS.
+      *  If any of those are present, the returned value is true.
+      * @returns {boolean} whether it's disabled or not.
+      */
+    /* CompleteClass */
+    override def isDisabled(): Boolean = js.native
   }
   @JSImport("switchery", JSImport.Default)
   @js.native
@@ -29,33 +59,32 @@ object mod {
   @scala.inline
   def default_=(x: SwitcheryStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Switchery extends StObject {
     
     /**
       * Unbinding all event handlers attached to the switch element to prepare the object for garbage collection.
       * @returns {void}
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * Disable switch by unbinding attached events and changing opacity to disabledOpacity value
       * @returns {void}
       */
-    def disable(): Unit = js.native
+    def disable(): Unit
     
     /**
       * Enable disabled switch by re-adding event handlers and changing the opacity to 1.
       * @returns {void}
       */
-    def enable(): Unit = js.native
+    def enable(): Unit
     
     /**
       * Check if switch is currently disabled by checking the readonly and disabled attributes on the checkbox and the disabled option set via JS.
       *  If any of those are present, the returned value is true.
       * @returns {boolean} whether it's disabled or not.
       */
-    def isDisabled(): Boolean = js.native
+    def isDisabled(): Boolean
   }
   object Switchery {
     
@@ -65,62 +94,61 @@ object mod {
       __obj.asInstanceOf[Switchery]
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * class name for the switch element (by default styled in switchery.css)
         * @default 'switchery'
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * color of the switch element (HEX or RGB value)
         * @default '#64bd63'
         */
-      var color: js.UndefOr[String] = js.native
+      var color: js.UndefOr[String] = js.undefined
       
       /**
         * enable or disable click events and changing the state of the switch (boolean value)
         * @default false
         */
-      var disabled: js.UndefOr[Boolean] = js.native
+      var disabled: js.UndefOr[Boolean] = js.undefined
       
       /**
         * opacity of the switch when it's disabled (0 to 1)
         * @default 0.5
         */
-      var disabledOpacity: js.UndefOr[Double] = js.native
+      var disabledOpacity: js.UndefOr[Double] = js.undefined
       
       /**
         * color of the jack/handle element
         * @default '#fff'
         */
-      var jackColor: js.UndefOr[String] = js.native
+      var jackColor: js.UndefOr[String] = js.undefined
       
       /**
         * color of unchecked jack/handle element
         * @default 'null'
         */
-      var jackSecondaryColor: js.UndefOr[String] = js.native
+      var jackSecondaryColor: js.UndefOr[String] = js.undefined
       
       /**
         * secondary color for background color and border, when the switch is off
         * @default '#dfdfdf'
         */
-      var secondaryColor: js.UndefOr[String] = js.native
+      var secondaryColor: js.UndefOr[String] = js.undefined
       
       /**
         * size of the switch element (small or large)
         * @default 'default'
         */
-      var size: js.UndefOr[String] = js.native
+      var size: js.UndefOr[String] = js.undefined
       
       /**
         * length of time that the transition will take, ex. '0.4s', '1s', '2.2s' (Note: transition speed of the handle is twice shorter)
         * @default '0.1s'
         */
-      var speed: js.UndefOr[String] = js.native
+      var speed: js.UndefOr[String] = js.undefined
     }
     object Options {
       
@@ -207,7 +235,8 @@ object mod {
     
     @js.native
     trait SwitcheryStatic
-      extends Instantiable1[/* node */ Node, Switchery]
+      extends StObject
+         with Instantiable1[/* node */ Node, Switchery]
          with Instantiable2[/* node */ Node, /* options */ Options, Switchery]
   }
 }

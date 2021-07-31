@@ -2,37 +2,35 @@ package typings.chui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChUIEventInterface extends StObject {
   
-  var doubletap: String = js.native
+  var doubletap: String
   
-  var eventCancel: String = js.native
+  var eventCancel: String
   
-  var eventEnd: String = js.native
+  var eventEnd: String
   
-  var eventMove: String = js.native
+  var eventMove: String
   
-  var eventStart: String = js.native
+  var eventStart: String
   
-  var longtap: String = js.native
+  var longtap: String
   
-  var singletap: String = js.native
+  var singletap: String
   
-  var swipe: String = js.native
+  var swipe: String
   
-  var swipedown: String = js.native
+  var swipedown: String
   
-  var swipeleft: String = js.native
+  var swipeleft: String
   
-  var swiperight: String = js.native
+  var swiperight: String
   
-  var swipeup: String = js.native
+  var swipeup: String
   
-  var tap: String = js.native
+  var tap: String
 }
 object ChUIEventInterface {
   

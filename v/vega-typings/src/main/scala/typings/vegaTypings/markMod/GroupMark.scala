@@ -6,27 +6,26 @@ import typings.vegaTypings.scopeMod.Scope
 import typings.vegaTypings.vegaTypingsStrings.group
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupMark
-  extends BaseMark
+  extends StObject
+     with BaseMark
      with Scope
      with Encodable[GroupEncodeEntry]
      with Mark {
   
   @JSName("from")
-  var from_GroupMark: js.UndefOr[FromFacet] = js.native
+  var from_GroupMark: js.UndefOr[FromFacet] = js.undefined
   
-  var `type`: group = js.native
+  var `type`: group
 }
 object GroupMark {
   
   @scala.inline
-  def apply(`type`: group): GroupMark = {
+  def apply(): GroupMark = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("group")
     __obj.asInstanceOf[GroupMark]
   }
   

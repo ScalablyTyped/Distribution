@@ -5,12 +5,10 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CacheFile extends StObject {
     
     /**
@@ -19,49 +17,49 @@ object anon {
       * files haven't changed and the css files still exist, specifying this option will
       * mean that the less files don't need to be recompiled after a server restart.
       */
-    var cacheFile: js.UndefOr[String] = js.native
+    var cacheFile: js.UndefOr[String] = js.undefined
     
     /**
       * Show more verbose logging?
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Destination directory to output the compiled .css files.
       */
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
     /**
       * Always re-compile less files on each request.
       */
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only recompile once after each server restart.
       * Useful for reducing disk i/o on production.
       */
-    var once: js.UndefOr[Boolean] = js.native
+    var once: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Common root of the source and destination.
       * It is prepended to both the source and destination before being used.
       */
-    var pathRoot: js.UndefOr[String] = js.native
+    var pathRoot: js.UndefOr[String] = js.undefined
     
     /**
       * Object containing functions relevant to preprocessing data.
       */
-    var postprocess: js.UndefOr[Css] = js.native
+    var postprocess: js.UndefOr[Css] = js.undefined
     
     /**
       * Object containing functions relevant to preprocessing data.
       */
-    var preprocess: js.UndefOr[ImportPaths] = js.native
+    var preprocess: js.UndefOr[ImportPaths] = js.undefined
     
     /**
       * Options for the less render.
       */
-    var render: js.UndefOr[Compress] = js.native
+    var render: js.UndefOr[Compress] = js.undefined
     
     /**
       * Function that is in charge of storing the css in the filesystem.
@@ -70,11 +68,11 @@ object anon {
         js.Function4[
           /* pathname */ String, 
           /* css */ String, 
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
           /* next */ js.Function, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object CacheFile {
     
@@ -143,7 +141,7 @@ object anon {
       
       @scala.inline
       def setStoreCss(
-        value: (/* pathname */ String, /* css */ String, /* req */ Request_[ParamsDictionary, _, _, Query], /* next */ js.Function) => Unit
+        value: (/* pathname */ String, /* css */ String, /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* next */ js.Function) => Unit
       ): Self = StObject.set(x, "storeCss", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -151,14 +149,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Compress extends StObject {
     
-    var compress: js.UndefOr[String] = js.native
+    var compress: js.UndefOr[String] = js.undefined
     
-    var paths: js.UndefOr[js.Array[String]] = js.native
+    var paths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var yuicompress: js.UndefOr[Boolean] = js.native
+    var yuicompress: js.UndefOr[Boolean] = js.undefined
   }
   object Compress {
     
@@ -194,15 +191,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Css extends StObject {
     
     /**
       * Function that modifies the compiled css output before being stored.
       */
     var css: js.UndefOr[
-        js.Function2[/* css */ String, /* req */ Request_[ParamsDictionary, _, _, Query], String]
-      ] = js.native
+        js.Function2[
+          /* css */ String, 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          String
+        ]
+      ] = js.undefined
   }
   object Css {
     
@@ -216,14 +216,13 @@ object anon {
     implicit class CssMutableBuilder[Self <: Css] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCss(value: (/* css */ String, /* req */ Request_[ParamsDictionary, _, _, Query]) => String): Self = StObject.set(x, "css", js.Any.fromFunction2(value))
+      def setCss(value: (/* css */ String, /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query]) => String): Self = StObject.set(x, "css", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     }
   }
   
-  @js.native
   trait ImportPaths extends StObject {
     
     /**
@@ -232,24 +231,32 @@ object anon {
     var importPaths: js.UndefOr[
         js.Function2[
           /* paths */ js.Array[String], 
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
           js.Array[String]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Function that modifies the raw less output before being parsed and compiled.
       */
     var less: js.UndefOr[
-        js.Function2[/* css */ String, /* req */ Request_[ParamsDictionary, _, _, Query], String]
-      ] = js.native
+        js.Function2[
+          /* css */ String, 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          String
+        ]
+      ] = js.undefined
     
     /**
       * Function that modifies the less pathname before being loaded from the filesystem.
       */
     var path: js.UndefOr[
-        js.Function2[/* pathname */ String, /* req */ Request_[ParamsDictionary, _, _, Query], String]
-      ] = js.native
+        js.Function2[
+          /* pathname */ String, 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          String
+        ]
+      ] = js.undefined
   }
   object ImportPaths {
     
@@ -264,20 +271,22 @@ object anon {
       
       @scala.inline
       def setImportPaths(
-        value: (/* paths */ js.Array[String], /* req */ Request_[ParamsDictionary, _, _, Query]) => js.Array[String]
+        value: (/* paths */ js.Array[String], /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query]) => js.Array[String]
       ): Self = StObject.set(x, "importPaths", js.Any.fromFunction2(value))
       
       @scala.inline
       def setImportPathsUndefined: Self = StObject.set(x, "importPaths", js.undefined)
       
       @scala.inline
-      def setLess(value: (/* css */ String, /* req */ Request_[ParamsDictionary, _, _, Query]) => String): Self = StObject.set(x, "less", js.Any.fromFunction2(value))
+      def setLess(value: (/* css */ String, /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query]) => String): Self = StObject.set(x, "less", js.Any.fromFunction2(value))
       
       @scala.inline
       def setLessUndefined: Self = StObject.set(x, "less", js.undefined)
       
       @scala.inline
-      def setPath(value: (/* pathname */ String, /* req */ Request_[ParamsDictionary, _, _, Query]) => String): Self = StObject.set(x, "path", js.Any.fromFunction2(value))
+      def setPath(
+        value: (/* pathname */ String, /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query]) => String
+      ): Self = StObject.set(x, "path", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPathUndefined: Self = StObject.set(x, "path", js.undefined)

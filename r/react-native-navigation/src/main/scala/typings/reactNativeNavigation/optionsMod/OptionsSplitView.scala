@@ -10,39 +10,37 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.trailing
 import typings.reactNativeNavigation.reactNativeNavigationStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsSplitView extends StObject {
   
   /**
     * Master view display mode
     * @default 'auto'
     */
-  var displayMode: js.UndefOr[auto | visible | hidden | overlay] = js.native
+  var displayMode: js.UndefOr[auto | visible | hidden | overlay] = js.undefined
   
   /**
     * Set the maximum width of master view
     */
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Set the minimum width of master view
     */
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Set background style of sidebar. Currently works for Mac Catalyst apps only.
     * @default 'none'
     */
-  var primaryBackgroundStyle: js.UndefOr[none | sidebar] = js.native
+  var primaryBackgroundStyle: js.UndefOr[none | sidebar] = js.undefined
   
   /**
     * Master view side. Leading is left. Trailing is right.
     * @default 'leading'
     */
-  var primaryEdge: js.UndefOr[leading | trailing] = js.native
+  var primaryEdge: js.UndefOr[leading | trailing] = js.undefined
 }
 object OptionsSplitView {
   

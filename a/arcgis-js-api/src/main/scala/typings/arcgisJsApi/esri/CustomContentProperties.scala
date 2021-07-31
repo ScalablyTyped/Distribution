@@ -3,32 +3,32 @@ package typings.arcgisJsApi.esri
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomContentProperties extends ContentProperties {
+trait CustomContentProperties
+  extends StObject
+     with ContentProperties {
   
   /**
     * The function that is called to create the custom content element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#creator)
     */
-  var creator: js.UndefOr[PopupTemplateContentCreator] = js.native
+  var creator: js.UndefOr[PopupTemplateContentCreator] = js.undefined
   
   /**
     * The called function to cleanup custom content when it is no longer necessary.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#destroyer)
     */
-  var destroyer: js.UndefOr[PopupTemplateContentDestroyer] = js.native
+  var destroyer: js.UndefOr[PopupTemplateContentDestroyer] = js.undefined
   
   /**
     * An array of field names used in the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#outFields)
     */
-  var outFields: js.UndefOr[js.Array[String]] = js.native
+  var outFields: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CustomContentProperties {
   

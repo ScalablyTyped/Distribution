@@ -2,41 +2,39 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSessionsRequest extends StObject {
   
   /**
     * The authentication method. Specify API for a user authenticated using a streaming URL or SAML for a SAML federated user. The default is to authenticate users using a streaming URL.
     */
-  var AuthenticationType: js.UndefOr[typings.awsSdk.appstreamMod.AuthenticationType] = js.native
+  var AuthenticationType: js.UndefOr[typings.awsSdk.appstreamMod.AuthenticationType] = js.undefined
   
   /**
     * The name of the fleet. This value is case-sensitive.
     */
-  var FleetName: String = js.native
+  var FleetName: String
   
   /**
     * The size of each page of results. The default value is 20 and the maximum value is 50.
     */
-  var Limit: js.UndefOr[Integer] = js.native
+  var Limit: js.UndefOr[Integer] = js.undefined
   
   /**
     * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the stack. This value is case-sensitive.
     */
-  var StackName: String = js.native
+  var StackName: String
   
   /**
     * The user identifier (ID). If you specify a user ID, you must also specify the authentication type.
     */
-  var UserId: js.UndefOr[typings.awsSdk.appstreamMod.UserId] = js.native
+  var UserId: js.UndefOr[typings.awsSdk.appstreamMod.UserId] = js.undefined
 }
 object DescribeSessionsRequest {
   

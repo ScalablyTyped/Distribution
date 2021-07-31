@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
   */
-@js.native
 trait PlusFingerprintFingerprintError extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusFingerprintFingerprintError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
     */
-  var AUTHENTICATE_MISMATCH: js.UndefOr[Double] = js.native
+  var AUTHENTICATE_MISMATCH: js.UndefOr[Double] = js.undefined
   
   /**
     * 指纹识别次数超过限制
@@ -29,7 +27,7 @@ trait PlusFingerprintFingerprintError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
     */
-  var AUTHENTICATE_OVERLIMIT: js.UndefOr[Double] = js.native
+  var AUTHENTICATE_OVERLIMIT: js.UndefOr[Double] = js.undefined
   
   /**
     * 取消指纹识别
@@ -37,7 +35,7 @@ trait PlusFingerprintFingerprintError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
     */
-  var CANCEL: js.UndefOr[Double] = js.native
+  var CANCEL: js.UndefOr[Double] = js.undefined
   
   /**
     * 未录入指纹识别
@@ -45,7 +43,7 @@ trait PlusFingerprintFingerprintError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
     */
-  var FINGERPRINT_UNENROLLED: js.UndefOr[Double] = js.native
+  var FINGERPRINT_UNENROLLED: js.UndefOr[Double] = js.undefined
   
   /**
     * 设备未设置密码锁屏
@@ -53,7 +51,7 @@ trait PlusFingerprintFingerprintError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
     */
-  var KEYGUARD_INSECURE: js.UndefOr[Double] = js.native
+  var KEYGUARD_INSECURE: js.UndefOr[Double] = js.undefined
   
   /**
     * 未知错误
@@ -61,7 +59,7 @@ trait PlusFingerprintFingerprintError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
     */
-  var UNKNOWN_ERROR: js.UndefOr[Double] = js.native
+  var UNKNOWN_ERROR: js.UndefOr[Double] = js.undefined
   
   /**
     * 不支持指纹识别
@@ -69,7 +67,7 @@ trait PlusFingerprintFingerprintError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
     */
-  var UNSUPPORT: js.UndefOr[Double] = js.native
+  var UNSUPPORT: js.UndefOr[Double] = js.undefined
   
   /**
     * 错误代码
@@ -77,7 +75,7 @@ trait PlusFingerprintFingerprintError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
     */
-  var code: js.UndefOr[Double] = js.native
+  var code: js.UndefOr[Double] = js.undefined
   
   /**
     * 错误描述信息
@@ -85,7 +83,7 @@ trait PlusFingerprintFingerprintError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object PlusFingerprintFingerprintError {
   

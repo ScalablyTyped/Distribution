@@ -16,7 +16,6 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,35 +23,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object mod {
   
+  @JSImport("plantuml-encoder", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Decodes encoded PlantUML code.
     * @param encodedPuml The encoded PlantUML code that should be decoded.
     * @returns The decoded PlantUML code.
     */
-  @JSImport("plantuml-encoder", "decode")
-  @js.native
-  def decode(encodedPuml: String): String = js.native
+  @scala.inline
+  def decode(encodedPuml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(encodedPuml.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Encodes PlantUML code.
     * @param puml The PlantUML code that should be encoded.
     * @returns The encoded PlantUML code.
     */
-  @JSImport("plantuml-encoder", "encode")
-  @js.native
-  def encode(puml: String): String = js.native
-  @JSImport("plantuml-encoder", "encode")
-  @js.native
-  def encode(puml: Buffer): String = js.native
-  @JSImport("plantuml-encoder", "encode")
-  @js.native
-  def encode(puml: TypedArray): String = js.native
-  @JSImport("plantuml-encoder", "encode")
-  @js.native
-  def encode(puml: ArrayBuffer): String = js.native
-  @JSImport("plantuml-encoder", "encode")
-  @js.native
-  def encode(puml: DataView): String = js.native
+  @scala.inline
+  def encode(puml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encode(puml: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encode(puml: TypedArray): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encode(puml: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encode(puml: DataView): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Union type for possible typed arrays.

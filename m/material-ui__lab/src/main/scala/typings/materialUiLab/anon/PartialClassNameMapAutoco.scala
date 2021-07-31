@@ -2,54 +2,52 @@ package typings.materialUiLab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/lab.@material-ui/lab/Autocomplete/Autocomplete.AutocompleteClassKey>> */
-@js.native
 trait PartialClassNameMapAutoco extends StObject {
   
-  var clearIndicator: js.UndefOr[String] = js.native
+  var clearIndicator: js.UndefOr[String] = js.undefined
   
-  var clearIndicatorDirty: js.UndefOr[String] = js.native
+  var clearIndicatorDirty: js.UndefOr[String] = js.undefined
   
-  var endAdornment: js.UndefOr[String] = js.native
+  var endAdornment: js.UndefOr[String] = js.undefined
   
-  var focused: js.UndefOr[String] = js.native
+  var focused: js.UndefOr[String] = js.undefined
   
-  var groupLabel: js.UndefOr[String] = js.native
+  var groupLabel: js.UndefOr[String] = js.undefined
   
-  var groupUl: js.UndefOr[String] = js.native
+  var groupUl: js.UndefOr[String] = js.undefined
   
-  var input: js.UndefOr[String] = js.native
+  var input: js.UndefOr[String] = js.undefined
   
-  var inputFocused: js.UndefOr[String] = js.native
+  var inputFocused: js.UndefOr[String] = js.undefined
   
-  var inputRoot: js.UndefOr[String] = js.native
+  var inputRoot: js.UndefOr[String] = js.undefined
   
-  var listbox: js.UndefOr[String] = js.native
+  var listbox: js.UndefOr[String] = js.undefined
   
-  var loading: js.UndefOr[String] = js.native
+  var loading: js.UndefOr[String] = js.undefined
   
-  var noOptions: js.UndefOr[String] = js.native
+  var noOptions: js.UndefOr[String] = js.undefined
   
-  var option: js.UndefOr[String] = js.native
+  var option: js.UndefOr[String] = js.undefined
   
-  var paper: js.UndefOr[String] = js.native
+  var paper: js.UndefOr[String] = js.undefined
   
-  var popper: js.UndefOr[String] = js.native
+  var popper: js.UndefOr[String] = js.undefined
   
-  var popperDisablePortal: js.UndefOr[String] = js.native
+  var popperDisablePortal: js.UndefOr[String] = js.undefined
   
-  var popupIndicator: js.UndefOr[String] = js.native
+  var popupIndicator: js.UndefOr[String] = js.undefined
   
-  var popupIndicatorOpen: js.UndefOr[String] = js.native
+  var popupIndicatorOpen: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
   
-  var tagSizeSmall: js.UndefOr[String] = js.native
+  var tagSizeSmall: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapAutoco {
   

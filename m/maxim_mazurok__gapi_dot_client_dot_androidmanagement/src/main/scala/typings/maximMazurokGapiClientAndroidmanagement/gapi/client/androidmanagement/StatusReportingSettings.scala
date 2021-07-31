@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusReportingSettings extends StObject {
   
   /** Application reporting settings. Only applicable if application_reports_enabled is true. */
-  var applicationReportingSettings: js.UndefOr[ApplicationReportingSettings] = js.native
+  var applicationReportingSettings: js.UndefOr[ApplicationReportingSettings] = js.undefined
   
   /** Whether app reports are enabled. */
-  var applicationReportsEnabled: js.UndefOr[Boolean] = js.native
+  var applicationReportsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether Common Criteria Mode reporting is enabled. */
-  var commonCriteriaModeEnabled: js.UndefOr[Boolean] = js.native
+  var commonCriteriaModeEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether device settings reporting is enabled. */
-  var deviceSettingsEnabled: js.UndefOr[Boolean] = js.native
+  var deviceSettingsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether displays reporting is enabled. Report data is not available for personally owned devices with work profiles. */
-  var displayInfoEnabled: js.UndefOr[Boolean] = js.native
+  var displayInfoEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether hardware status reporting is enabled. Report data is not available for personally owned devices with work profiles. */
-  var hardwareStatusEnabled: js.UndefOr[Boolean] = js.native
+  var hardwareStatusEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether memory reporting is enabled. */
-  var memoryInfoEnabled: js.UndefOr[Boolean] = js.native
+  var memoryInfoEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether network info reporting is enabled. */
-  var networkInfoEnabled: js.UndefOr[Boolean] = js.native
+  var networkInfoEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether power management event reporting is enabled. Report data is not available for personally owned devices with work profiles. */
-  var powerManagementEventsEnabled: js.UndefOr[Boolean] = js.native
+  var powerManagementEventsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether software info reporting is enabled. */
-  var softwareInfoEnabled: js.UndefOr[Boolean] = js.native
+  var softwareInfoEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether system properties reporting is enabled. */
-  var systemPropertiesEnabled: js.UndefOr[Boolean] = js.native
+  var systemPropertiesEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object StatusReportingSettings {
   

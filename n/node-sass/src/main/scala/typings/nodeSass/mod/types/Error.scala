@@ -3,12 +3,11 @@ package typings.nodeSass.mod.types
 import typings.nodeSass.mod._ImporterReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error
-  extends ReturnValue
+  extends StObject
+     with ReturnValue
      with _ImporterReturnType {
   
   /**
@@ -17,7 +16,7 @@ trait Error
     * allow things that aren't types.Error to match it in case statements and
     * assignments.
     */
-  val ___SASS_ERROR___ : js.Symbol = js.native
+  val ___SASS_ERROR___ : js.Symbol
 }
 object Error {
   

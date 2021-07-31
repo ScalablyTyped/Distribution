@@ -2,19 +2,17 @@ package typings.redisInfo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientsInfo extends StObject {
   
-  var blocked_clients: String = js.native
+  var blocked_clients: String
   
-  var client_biggest_input_buf: String = js.native
+  var client_biggest_input_buf: String
   
-  var client_longest_output_list: String = js.native
+  var client_longest_output_list: String
   
-  var connected_clients: String = js.native
+  var connected_clients: String
 }
 object ClientsInfo {
   

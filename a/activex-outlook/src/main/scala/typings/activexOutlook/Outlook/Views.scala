@@ -2,30 +2,28 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Views extends StObject {
   
-  def Add(Name: String, ViewType: OlViewType, SaveOption: OlViewSaveOption): View = js.native
+  def Add(Name: String, ViewType: OlViewType, SaveOption: OlViewSaveOption): View
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: js.Any): View = js.native
+  def Item(Index: js.Any): View
   
   @JSName("Outlook.Views_typekey")
-  var OutlookDotViews_typekey: Views = js.native
+  var OutlookDotViews_typekey: Views
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Remove(Index: js.Any): Unit = js.native
+  def Remove(Index: js.Any): Unit
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object Views {
   

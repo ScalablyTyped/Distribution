@@ -3,29 +3,27 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisSubTickLineCfg extends StObject {
   
   /**
     * 子刻度个数
     * @type {number}
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     * 子刻度线长度
     * @type {number}
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * 坐标轴刻度线的配置项
     * @type {ShapeAttrs}
     */
-  var style: js.UndefOr[ShapeAttrs | ShapeAttrsCallback] = js.native
+  var style: js.UndefOr[ShapeAttrs | ShapeAttrsCallback] = js.undefined
 }
 object AxisSubTickLineCfg {
   

@@ -2,29 +2,27 @@ package typings.firebaseAuthTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserInfo extends StObject {
   
-  var displayName: String | Null = js.native
+  var displayName: String | Null
   
-  var email: String | Null = js.native
+  var email: String | Null
   
-  var phoneNumber: String | Null = js.native
+  var phoneNumber: String | Null
   
-  var photoURL: String | Null = js.native
+  var photoURL: String | Null
   
-  var providerId: String = js.native
+  var providerId: String
   
-  var uid: String = js.native
+  var uid: String
 }
 object UserInfo {
   
   @scala.inline
   def apply(providerId: String, uid: String): UserInfo = {
-    val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], displayName = null, email = null, phoneNumber = null, photoURL = null)
     __obj.asInstanceOf[UserInfo]
   }
   

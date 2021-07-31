@@ -2,21 +2,19 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScpActionDefinition extends StObject {
   
   /**
     *  The policy ID attached. 
     */
-  var PolicyId: typings.awsSdk.budgetsMod.PolicyId = js.native
+  var PolicyId: typings.awsSdk.budgetsMod.PolicyId
   
   /**
     *  A list of target IDs. 
     */
-  var TargetIds: typings.awsSdk.budgetsMod.TargetIds = js.native
+  var TargetIds: typings.awsSdk.budgetsMod.TargetIds
 }
 object ScpActionDefinition {
   

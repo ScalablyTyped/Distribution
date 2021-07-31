@@ -2,17 +2,15 @@ package typings.offscreencanvas
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Quality extends StObject {
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Quality {
     

@@ -4,44 +4,40 @@ import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ladda", "bind")
+  @JSImport("ladda", JSImport.Namespace)
   @js.native
-  def bind(target: String): Unit = js.native
-  @JSImport("ladda", "bind")
-  @js.native
-  def bind(target: String, options: BindOptions): Unit = js.native
-  @JSImport("ladda", "bind")
-  @js.native
-  def bind(target: HTMLElement): Unit = js.native
-  @JSImport("ladda", "bind")
-  @js.native
-  def bind(target: HTMLElement, options: BindOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ladda", "create")
-  @js.native
-  def create(button: HTMLButtonElement): LaddaButton = js.native
+  @scala.inline
+  def bind(target: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def bind(target: String, options: BindOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def bind(target: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def bind(target: HTMLElement, options: BindOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ladda", "stopAll")
-  @js.native
-  def stopAll(): Unit = js.native
+  @scala.inline
+  def create(button: HTMLButtonElement): LaddaButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(button.asInstanceOf[js.Any]).asInstanceOf[LaddaButton]
   
-  @js.native
+  @scala.inline
+  def stopAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopAll")().asInstanceOf[Unit]
+  
   trait BindOptions extends StObject {
     
     /**
       * A function to be called with the Ladda instance when a target button is clicked.
       */
-    var callback: js.UndefOr[js.Function1[/* instance */ LaddaButton, Unit]] = js.native
+    var callback: js.UndefOr[js.Function1[/* instance */ LaddaButton, Unit]] = js.undefined
     
     /**
       * Number of milliseconds to wait before automatically cancelling the animation.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object BindOptions {
     
@@ -68,22 +64,21 @@ object mod {
     }
   }
   
-  @js.native
   trait LaddaButton extends StObject {
     
-    def isLoading(): Boolean = js.native
+    def isLoading(): Boolean
     
-    def remove(): Unit = js.native
+    def remove(): Unit
     
-    def setProgress(progress: Double): Unit = js.native
+    def setProgress(progress: Double): Unit
     
-    def start(): LaddaButton = js.native
+    def start(): LaddaButton
     
-    def startAfter(delay: Double): LaddaButton = js.native
+    def startAfter(delay: Double): LaddaButton
     
-    def stop(): LaddaButton = js.native
+    def stop(): LaddaButton
     
-    def toggle(): LaddaButton = js.native
+    def toggle(): LaddaButton
   }
   object LaddaButton {
     

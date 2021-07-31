@@ -2,80 +2,65 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object htable {
   
-  @JSGlobal("KSR.htable.sht_has_name")
+  @JSGlobal("KSR.htable")
   @js.native
-  def shtHasName(sname: String, sop: String, sval: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.htable.sht_has_str_value")
-  @js.native
-  def shtHasStrValue(sname: String, sop: String, sval: String): Double = js.native
+  @scala.inline
+  def shtHasName(sname: String, sop: String, sval: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_has_name")(sname.asInstanceOf[js.Any], sop.asInstanceOf[js.Any], sval.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_iterator_end")
-  @js.native
-  def shtIteratorEnd(iname: String): Double = js.native
+  @scala.inline
+  def shtHasStrValue(sname: String, sop: String, sval: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_has_str_value")(sname.asInstanceOf[js.Any], sop.asInstanceOf[js.Any], sval.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_iterator_next")
-  @js.native
-  def shtIteratorNext(iname: String): Double = js.native
+  @scala.inline
+  def shtIteratorEnd(iname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sht_iterator_end")(iname.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_iterator_start")
-  @js.native
-  def shtIteratorStart(iname: String, hname: String): Double = js.native
+  @scala.inline
+  def shtIteratorNext(iname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sht_iterator_next")(iname.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_lock")
-  @js.native
-  def shtLock(htname: String, skey: String): Double = js.native
+  @scala.inline
+  def shtIteratorStart(iname: String, hname: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_iterator_start")(iname.asInstanceOf[js.Any], hname.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_reset")
-  @js.native
-  def shtReset(hname: String): Double = js.native
+  @scala.inline
+  def shtLock(htname: String, skey: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_lock")(htname.asInstanceOf[js.Any], skey.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_rm")
-  @js.native
-  def shtRm(hname: String, iname: String): Double = js.native
+  @scala.inline
+  def shtReset(hname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sht_reset")(hname.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_rm_name")
-  @js.native
-  def shtRmName(sname: String, sop: String, sval: String): Double = js.native
+  @scala.inline
+  def shtRm(hname: String, iname: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_rm")(hname.asInstanceOf[js.Any], iname.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_rm_name_re")
-  @js.native
-  def shtRmNameRe(htname: String, rexp: String): Double = js.native
+  @scala.inline
+  def shtRmName(sname: String, sop: String, sval: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_rm_name")(sname.asInstanceOf[js.Any], sop.asInstanceOf[js.Any], sval.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_rm_value")
-  @js.native
-  def shtRmValue(sname: String, sop: String, sval: String): Double = js.native
+  @scala.inline
+  def shtRmNameRe(htname: String, rexp: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_rm_name_re")(htname.asInstanceOf[js.Any], rexp.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_rm_value_re")
-  @js.native
-  def shtRmValueRe(htname: String, rexp: String): Double = js.native
+  @scala.inline
+  def shtRmValue(sname: String, sop: String, sval: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_rm_value")(sname.asInstanceOf[js.Any], sop.asInstanceOf[js.Any], sval.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_setex")
-  @js.native
-  def shtSetex(htname: String, itname: String, itval: Double): Double = js.native
+  @scala.inline
+  def shtRmValueRe(htname: String, rexp: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_rm_value_re")(htname.asInstanceOf[js.Any], rexp.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_seti")
-  @js.native
-  def shtSeti(htname: String, itname: String, itval: Double): Double = js.native
+  @scala.inline
+  def shtSetex(htname: String, itname: String, itval: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_setex")(htname.asInstanceOf[js.Any], itname.asInstanceOf[js.Any], itval.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_sets")
-  @js.native
-  def shtSets(htname: String, itname: String, itval: String): Double = js.native
+  @scala.inline
+  def shtSeti(htname: String, itname: String, itval: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_seti")(htname.asInstanceOf[js.Any], itname.asInstanceOf[js.Any], itval.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_setxi")
-  @js.native
-  def shtSetxi(htname: String, itname: String, itval: Double, exval: Double): Double = js.native
+  @scala.inline
+  def shtSets(htname: String, itname: String, itval: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_sets")(htname.asInstanceOf[js.Any], itname.asInstanceOf[js.Any], itval.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_setxs")
-  @js.native
-  def shtSetxs(htname: String, itname: String, itval: String, exval: Double): Double = js.native
+  @scala.inline
+  def shtSetxi(htname: String, itname: String, itval: Double, exval: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_setxi")(htname.asInstanceOf[js.Any], itname.asInstanceOf[js.Any], itval.asInstanceOf[js.Any], exval.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.htable.sht_unlock")
-  @js.native
-  def shtUnlock(htname: String, skey: String): Double = js.native
+  @scala.inline
+  def shtSetxs(htname: String, itname: String, itval: String, exval: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_setxs")(htname.asInstanceOf[js.Any], itname.asInstanceOf[js.Any], itval.asInstanceOf[js.Any], exval.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def shtUnlock(htname: String, skey: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sht_unlock")(htname.asInstanceOf[js.Any], skey.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

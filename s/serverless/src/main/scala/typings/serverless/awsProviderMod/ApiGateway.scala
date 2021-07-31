@@ -3,31 +3,29 @@ package typings.serverless.awsProviderMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiGateway extends StObject {
   
-  var apiKeySourceType: js.UndefOr[String] = js.native
+  var apiKeySourceType: js.UndefOr[String] = js.undefined
   
-  var binaryMediaTypes: js.UndefOr[js.Array[String]] = js.native
+  var binaryMediaTypes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var metrics: js.UndefOr[Boolean] = js.native
+  var metrics: js.UndefOr[Boolean] = js.undefined
   
-  var minimumCompressionSize: js.UndefOr[Double | String] = js.native
+  var minimumCompressionSize: js.UndefOr[Double | String] = js.undefined
   
-  var restApiId: js.UndefOr[String] = js.native
+  var restApiId: js.UndefOr[String] = js.undefined
   
-  var restApiResources: js.UndefOr[StringDictionary[String]] = js.native
+  var restApiResources: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var restApiRootResourceId: js.UndefOr[String] = js.native
+  var restApiRootResourceId: js.UndefOr[String] = js.undefined
   
-  var shouldStartNameWithService: js.UndefOr[Boolean] = js.native
+  var shouldStartNameWithService: js.UndefOr[Boolean] = js.undefined
   
-  var websocketApiId: js.UndefOr[js.Any] = js.native
+  var websocketApiId: js.UndefOr[js.Any] = js.undefined
 }
 object ApiGateway {
   

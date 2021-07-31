@@ -2,13 +2,11 @@ package typings.sparkpost.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Emailrfc822 extends StObject {
   
-  var email_rfc822: String = js.native
+  var email_rfc822: String
 }
 object Emailrfc822 {
   

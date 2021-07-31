@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceNetworkInterfaceAssociation extends StObject {
   
   /**
     * The carrier IP address associated with the network interface.
     */
-  var CarrierIp: js.UndefOr[String] = js.native
+  var CarrierIp: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the owner of the Elastic IP address.
     */
-  var IpOwnerId: js.UndefOr[String] = js.native
+  var IpOwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The public DNS name.
     */
-  var PublicDnsName: js.UndefOr[String] = js.native
+  var PublicDnsName: js.UndefOr[String] = js.undefined
   
   /**
     * The public IP address or Elastic IP address bound to the network interface.
     */
-  var PublicIp: js.UndefOr[String] = js.native
+  var PublicIp: js.UndefOr[String] = js.undefined
 }
 object InstanceNetworkInterfaceAssociation {
   

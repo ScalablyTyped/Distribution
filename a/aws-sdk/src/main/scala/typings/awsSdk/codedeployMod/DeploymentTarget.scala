@@ -2,33 +2,31 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentTarget extends StObject {
   
-  var cloudFormationTarget: js.UndefOr[CloudFormationTarget] = js.native
+  var cloudFormationTarget: js.UndefOr[CloudFormationTarget] = js.undefined
   
   /**
     * The deployment type that is specific to the deployment's compute platform or deployments initiated by a CloudFormation stack update.
     */
-  var deploymentTargetType: js.UndefOr[DeploymentTargetType] = js.native
+  var deploymentTargetType: js.UndefOr[DeploymentTargetType] = js.undefined
   
   /**
     *  Information about the target for a deployment that uses the Amazon ECS compute platform. 
     */
-  var ecsTarget: js.UndefOr[ECSTarget] = js.native
+  var ecsTarget: js.UndefOr[ECSTarget] = js.undefined
   
   /**
     *  Information about the target for a deployment that uses the EC2/On-premises compute platform. 
     */
-  var instanceTarget: js.UndefOr[InstanceTarget] = js.native
+  var instanceTarget: js.UndefOr[InstanceTarget] = js.undefined
   
   /**
     *  Information about the target for a deployment that uses the AWS Lambda compute platform. 
     */
-  var lambdaTarget: js.UndefOr[LambdaTarget] = js.native
+  var lambdaTarget: js.UndefOr[LambdaTarget] = js.undefined
 }
 object DeploymentTarget {
   

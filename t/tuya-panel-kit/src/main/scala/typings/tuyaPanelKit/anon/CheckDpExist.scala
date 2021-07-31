@@ -8,7 +8,6 @@ import typings.tuyaPanelKit.mod.DpValue
 import typings.tuyaPanelKit.mod.I18NLanMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,7 +18,7 @@ trait CheckDpExist extends StObject {
   
   def deleteDeviceInfo(): js.Promise[Unit] = js.native
   
-  def formatDps(data: Record[Double, _]): Record[String, _] = js.native
+  def formatDps(data: Record[Double, js.Any]): Record[String, js.Any] = js.native
   
   def getBleManagerState(): js.Promise[Boolean] = js.native
   
@@ -46,7 +45,7 @@ trait CheckDpExist extends StObject {
   def getDpSchema(): js.Array[DpSchema] = js.native
   def getDpSchema(code: String): DpSchema = js.native
   
-  def getFunConfig(): Record[String, _] = js.native
+  def getFunConfig(): Record[String, js.Any] = js.native
   
   /**
     * @deprecated
@@ -81,12 +80,12 @@ trait CheckDpExist extends StObject {
   /**
     * @desc 下发 dp 点
     */
-  def putDeviceData(cmd: Record[String, _]): js.Promise[Success] = js.native
+  def putDeviceData(cmd: Record[String, js.Any]): js.Promise[Success] = js.native
   
   /**
     * @desc 局域网下发 dp 点
     */
-  def putLocalDpData(cmd: Record[String, _]): js.Promise[Unit] = js.native
+  def putLocalDpData(cmd: Record[String, js.Any]): js.Promise[Unit] = js.native
   
   def setDevState(state: Record[String, DpValue]): DevInfo[Record[String, DpType]] = js.native
   
@@ -97,5 +96,5 @@ trait CheckDpExist extends StObject {
     */
   def setGState(dp: String, `val`: js.Any): js.Any = js.native
   
-  def setState(dp: String, `val`: js.Any): Record[String, _] = js.native
+  def setState(dp: String, `val`: js.Any): Record[String, js.Any] = js.native
 }

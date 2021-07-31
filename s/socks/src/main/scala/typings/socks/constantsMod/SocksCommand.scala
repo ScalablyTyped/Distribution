@@ -2,7 +2,6 @@ package typings.socks.constantsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,23 @@ sealed trait SocksCommand extends StObject
 object SocksCommand extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocksCommand with Double] = js.native
+  def apply(value: Double): js.UndefOr[SocksCommand & Double] = js.native
   
   @js.native
-  sealed trait associate extends SocksCommand
-  /* 3 */ val associate: typings.socks.constantsMod.SocksCommand.associate with Double = js.native
+  sealed trait associate
+    extends StObject
+       with SocksCommand
+  /* 3 */ val associate: typings.socks.constantsMod.SocksCommand.associate & Double = js.native
   
   @js.native
-  sealed trait bind extends SocksCommand
-  /* 2 */ val bind: typings.socks.constantsMod.SocksCommand.bind with Double = js.native
+  sealed trait bind
+    extends StObject
+       with SocksCommand
+  /* 2 */ val bind: typings.socks.constantsMod.SocksCommand.bind & Double = js.native
   
   @js.native
-  sealed trait connect extends SocksCommand
-  /* 1 */ val connect: typings.socks.constantsMod.SocksCommand.connect with Double = js.native
+  sealed trait connect
+    extends StObject
+       with SocksCommand
+  /* 1 */ val connect: typings.socks.constantsMod.SocksCommand.connect & Double = js.native
 }

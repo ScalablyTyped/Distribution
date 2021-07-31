@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReportsResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "doubleclickbidmanager#listReportsResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Next page's pagination token if one exists. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Retrieved reports. */
-  var reports: js.UndefOr[js.Array[Report]] = js.native
+  var reports: js.UndefOr[js.Array[Report]] = js.undefined
 }
 object ListReportsResponse {
   

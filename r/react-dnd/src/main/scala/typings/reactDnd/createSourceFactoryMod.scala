@@ -8,19 +8,22 @@ import typings.reactDnd.interfacesMod.DragSourceSpec
 import typings.reactDnd.monitorsMod.DragSourceMonitor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createSourceFactoryMod {
   
-  @JSImport("react-dnd/lib/decorators/createSourceFactory", "createSourceFactory")
+  @JSImport("react-dnd/lib/decorators/createSourceFactory", JSImport.Namespace)
   @js.native
-  def createSourceFactory[Props, DragObject](spec: DragSourceSpec[Props, DragObject]): js.Function2[/* monitor */ DragSourceMonitor, /* ref */ RefObject[_], Source] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait Source extends DragSource {
+  @scala.inline
+  def createSourceFactory[Props, DragObject](spec: DragSourceSpec[Props, DragObject]): js.Function2[/* monitor */ DragSourceMonitor, /* ref */ RefObject[js.Any], Source] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSourceFactory")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* monitor */ DragSourceMonitor, /* ref */ RefObject[js.Any], Source]]
+  
+  trait Source
+    extends StObject
+       with DragSource {
     
-    def receiveProps(props: js.Any): Unit = js.native
+    def receiveProps(props: js.Any): Unit
   }
   object Source {
     

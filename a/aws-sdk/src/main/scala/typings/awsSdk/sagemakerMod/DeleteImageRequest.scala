@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteImageRequest extends StObject {
   
   /**
     * The name of the image to delete.
     */
-  var ImageName: typings.awsSdk.sagemakerMod.ImageName = js.native
+  var ImageName: typings.awsSdk.sagemakerMod.ImageName
 }
 object DeleteImageRequest {
   

@@ -4,39 +4,37 @@ import typings.winrt.Windows.Devices.Sms.CellularClass
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMobileBroadbandDeviceInformation extends StObject {
   
-  var cellularClass: CellularClass = js.native
+  var cellularClass: CellularClass
   
-  var currentRadioState: MobileBroadbandRadioState = js.native
+  var currentRadioState: MobileBroadbandRadioState
   
-  var customDataClass: String = js.native
+  var customDataClass: String
   
-  var dataClasses: DataClasses = js.native
+  var dataClasses: DataClasses
   
-  var deviceId: String = js.native
+  var deviceId: String
   
-  var deviceType: MobileBroadbandDeviceType = js.native
+  var deviceType: MobileBroadbandDeviceType
   
-  var firmwareInformation: String = js.native
+  var firmwareInformation: String
   
-  var manufacturer: String = js.native
+  var manufacturer: String
   
-  var mobileEquipmentId: String = js.native
+  var mobileEquipmentId: String
   
-  var model: String = js.native
+  var model: String
   
-  var networkDeviceStatus: NetworkDeviceStatus = js.native
+  var networkDeviceStatus: NetworkDeviceStatus
   
-  var simIccId: String = js.native
+  var simIccId: String
   
-  var subscriberId: String = js.native
+  var subscriberId: String
   
-  var telephoneNumbers: IVectorView[String] = js.native
+  var telephoneNumbers: IVectorView[String]
 }
 object IMobileBroadbandDeviceInformation {
   

@@ -3,19 +3,17 @@ package typings.jpushReactNative.anon
 import typings.jpushReactNative.mod.Extra
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
-  var content: String = js.native
+  var content: String
   
-  var extras: Extra = js.native
+  var extras: Extra
   
-  var messageID: String = js.native
+  var messageID: String
   
-  var title: String = js.native
+  var title: String
 }
 object Content {
   

@@ -3,18 +3,17 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentSymbolParams
-  extends WorkDoneProgressParams
+  extends StObject
+     with WorkDoneProgressParams
      with PartialResultParams {
   
   /**
     * The text document.
     */
-  var textDocument: TextDocumentIdentifier = js.native
+  var textDocument: TextDocumentIdentifier
 }
 object DocumentSymbolParams {
   

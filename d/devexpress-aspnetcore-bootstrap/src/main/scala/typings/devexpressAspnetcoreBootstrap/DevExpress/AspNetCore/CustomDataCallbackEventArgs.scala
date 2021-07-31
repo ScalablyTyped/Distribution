@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomDataCallbackEventArgs extends EventArgs {
+trait CustomDataCallbackEventArgs
+  extends StObject
+     with EventArgs {
   
-  var result: String = js.native
+  var result: String
 }
 object CustomDataCallbackEventArgs {
   

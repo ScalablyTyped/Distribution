@@ -10,14 +10,15 @@ import typings.agGrid.rowNodeCacheMod.RowNodeCache
 import typings.agGrid.rowNodeCacheMod.RowNodeCacheParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowNodeMod {
   
   @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode")
   @js.native
-  class RowNode () extends IEventEmitter {
+  class RowNode ()
+    extends StObject
+       with IEventEmitter {
     
     /** Used by the value service, stores values for a particular change detection turn. */
     var __cacheData: StringDictionary[js.Any] = js.native
@@ -255,9 +256,9 @@ object rowNodeMod {
     def setRowTop(rowTop: Double): Unit = js.native
     
     def setSelected(newValue: Boolean): Unit = js.native
-    def setSelected(newValue: Boolean, clearSelection: js.UndefOr[scala.Nothing], suppressFinishActions: Boolean): Unit = js.native
     def setSelected(newValue: Boolean, clearSelection: Boolean): Unit = js.native
     def setSelected(newValue: Boolean, clearSelection: Boolean, suppressFinishActions: Boolean): Unit = js.native
+    def setSelected(newValue: Boolean, clearSelection: Unit, suppressFinishActions: Boolean): Unit = js.native
     
     def setSelectedInitialValue(selected: Boolean): Unit = js.native
     
@@ -386,12 +387,13 @@ object rowNodeMod {
     def EVENT_UI_LEVEL_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_UI_LEVEL_CHANGED")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait CellChangedEvent extends RowNodeEvent {
+  trait CellChangedEvent
+    extends StObject
+       with RowNodeEvent {
     
-    var column: Column = js.native
+    var column: Column
     
-    var newValue: js.Any = js.native
+    var newValue: js.Any
   }
   object CellChangedEvent {
     
@@ -413,14 +415,15 @@ object rowNodeMod {
     }
   }
   
-  @js.native
-  trait DataChangedEvent extends RowNodeEvent {
+  trait DataChangedEvent
+    extends StObject
+       with RowNodeEvent {
     
-    var newData: js.Any = js.native
+    var newData: js.Any
     
-    var oldData: js.Any = js.native
+    var oldData: js.Any
     
-    var update: Boolean = js.native
+    var update: Boolean
   }
   object DataChangedEvent {
     
@@ -445,10 +448,11 @@ object rowNodeMod {
     }
   }
   
-  @js.native
-  trait RowNodeEvent extends AgEvent {
+  trait RowNodeEvent
+    extends StObject
+       with AgEvent {
     
-    var node: RowNode = js.native
+    var node: RowNode
   }
   object RowNodeEvent {
     
@@ -467,18 +471,17 @@ object rowNodeMod {
     }
   }
   
-  @js.native
   trait SetSelectedParams extends StObject {
     
-    var clearSelection: js.UndefOr[Boolean] = js.native
+    var clearSelection: js.UndefOr[Boolean] = js.undefined
     
-    var groupSelectsFiltered: js.UndefOr[Boolean] = js.native
+    var groupSelectsFiltered: js.UndefOr[Boolean] = js.undefined
     
-    var newValue: Boolean = js.native
+    var newValue: Boolean
     
-    var rangeSelect: js.UndefOr[Boolean] = js.native
+    var rangeSelect: js.UndefOr[Boolean] = js.undefined
     
-    var suppressFinishActions: js.UndefOr[Boolean] = js.native
+    var suppressFinishActions: js.UndefOr[Boolean] = js.undefined
   }
   object SetSelectedParams {
     

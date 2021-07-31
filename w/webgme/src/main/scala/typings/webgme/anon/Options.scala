@@ -2,17 +2,15 @@ package typings.webgme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /**
     * Optional options passed to authorizer module at initialization (via gmeConfig).
     *    config.authentication.authorizer.options = {};
     */
-  var options: js.Any = js.native
+  var options: js.Any
   
   /**
     * Path (absolute) to module implementing AuthorizerBase 
@@ -20,7 +18,7 @@ trait Options extends StObject {
     * setting authorization regarding projects and project creation.
     *   config.authentication.authorizer.path = './src/server/middleware/auth/defaultauthorizer';
     */
-  var path: String = js.native
+  var path: String
 }
 object Options {
   

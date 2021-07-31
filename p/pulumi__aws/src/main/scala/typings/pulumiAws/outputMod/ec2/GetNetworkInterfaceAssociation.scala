@@ -2,36 +2,34 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNetworkInterfaceAssociation extends StObject {
   
   /**
     * The allocation ID.
     */
-  var allocationId: String = js.native
+  var allocationId: String
   
   /**
     * The association ID.
     */
-  var associationId: String = js.native
+  var associationId: String
   
   /**
     * The ID of the Elastic IP address owner.
     */
-  var ipOwnerId: String = js.native
+  var ipOwnerId: String
   
   /**
     * The public DNS name.
     */
-  var publicDnsName: String = js.native
+  var publicDnsName: String
   
   /**
     * The address of the Elastic IP address bound to the network interface.
     */
-  var publicIp: String = js.native
+  var publicIp: String
 }
 object GetNetworkInterfaceAssociation {
   

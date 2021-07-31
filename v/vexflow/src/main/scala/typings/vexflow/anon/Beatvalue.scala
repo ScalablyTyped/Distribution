@@ -2,17 +2,15 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Beatvalue extends StObject {
   
-  var beat_value: js.UndefOr[Double] = js.native
+  var beat_value: js.UndefOr[Double] = js.undefined
   
-  var num_beats: js.UndefOr[Double] = js.native
+  var num_beats: js.UndefOr[Double] = js.undefined
   
-  var resolution: js.UndefOr[Double] = js.native
+  var resolution: js.UndefOr[Double] = js.undefined
 }
 object Beatvalue {
   

@@ -2,31 +2,29 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTheme extends StObject {
   
-  var boardBg: String = js.native
+  var boardBg: String
   
-  var cellBg: String = js.native
+  var cellBg: String
   
-  var cellLine: String = js.native
+  var cellLine: String
   
-  var cellRadius: Double = js.native
+  var cellRadius: Double
   
-  var descFontColor: String = js.native
+  var descFontColor: String
   
-  var fontColor: String = js.native
+  var fontColor: String
   
-  var iconColor: String = js.native
+  var iconColor: String
   
-  var margin: js.Array[Double] = js.native
+  var margin: js.Array[Double]
   
-  var padding: js.Array[Double] = js.native
+  var padding: js.Array[Double]
   
-  var subFontColor: String = js.native
+  var subFontColor: String
 }
 object ListTheme {
   

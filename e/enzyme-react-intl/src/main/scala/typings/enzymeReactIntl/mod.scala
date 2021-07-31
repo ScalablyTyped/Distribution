@@ -11,73 +11,61 @@ import typings.react.mod.ReactElement
 import typings.reactIntl.mod.IntlProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("enzyme-react-intl", "getIntl")
+  @JSImport("enzyme-react-intl", JSImport.Namespace)
   @js.native
-  def getIntl(): IntlProvider = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("enzyme-react-intl", "getLocale")
-  @js.native
-  def getLocale(): String = js.native
+  @scala.inline
+  def getIntl(): IntlProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getIntl")().asInstanceOf[IntlProvider]
   
-  @JSImport("enzyme-react-intl", "loadTranslation")
-  @js.native
-  def loadTranslation(translationFilePath: String): js.Any = js.native
+  @scala.inline
+  def getLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocale")().asInstanceOf[String]
   
-  @JSImport("enzyme-react-intl", "loadTranslationObject")
-  @js.native
-  def loadTranslationObject[T /* <: StringDictionary[String] */](translations: T): T = js.native
+  @scala.inline
+  def loadTranslation(translationFilePath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTranslation")(translationFilePath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("enzyme-react-intl", "mountWithIntl")
-  @js.native
-  def mountWithIntl[P](node: ReactElement): ReactWrapper[P, _, Component[js.Object, js.Object, _]] = js.native
-  @JSImport("enzyme-react-intl", "mountWithIntl")
-  @js.native
-  def mountWithIntl[P](node: ReactElement, options: MountRendererProps): ReactWrapper[P, _, Component[js.Object, js.Object, _]] = js.native
-  @JSImport("enzyme-react-intl", "mountWithIntl")
-  @js.native
-  def mountWithIntl_C_ComponentObjectObjectWildcardPS[C /* <: Component[js.Object, js.Object, _] */, P, S](node: ReactElement): ReactWrapper[P, S, C] = js.native
-  @JSImport("enzyme-react-intl", "mountWithIntl")
-  @js.native
-  def mountWithIntl_C_ComponentObjectObjectWildcardPS[C /* <: Component[js.Object, js.Object, _] */, P, S](node: ReactElement, options: MountRendererProps): ReactWrapper[P, S, C] = js.native
-  @JSImport("enzyme-react-intl", "mountWithIntl")
-  @js.native
-  def mountWithIntl_PS[P, S](node: ReactElement): ReactWrapper[P, S, Component[js.Object, js.Object, _]] = js.native
-  @JSImport("enzyme-react-intl", "mountWithIntl")
-  @js.native
-  def mountWithIntl_PS[P, S](node: ReactElement, options: MountRendererProps): ReactWrapper[P, S, Component[js.Object, js.Object, _]] = js.native
+  @scala.inline
+  def loadTranslationObject[T /* <: StringDictionary[String] */](translations: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTranslationObject")(translations.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("enzyme-react-intl", "renderWithIntl")
-  @js.native
-  def renderWithIntl[P, S](node: ReactElement): Cheerio = js.native
-  @JSImport("enzyme-react-intl", "renderWithIntl")
-  @js.native
-  def renderWithIntl[P, S](node: ReactElement, options: js.Any): Cheerio = js.native
+  @scala.inline
+  def mountWithIntl[P](node: ReactElement): ReactWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mountWithIntl")(node.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]]]
+  @scala.inline
+  def mountWithIntl[P](node: ReactElement, options: MountRendererProps): ReactWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mountWithIntl")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]]]
   
-  @JSImport("enzyme-react-intl", "setLocale")
-  @js.native
-  def setLocale(locale: String): Unit = js.native
+  @scala.inline
+  def mountWithIntl_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, js.Any] */, P, S](node: ReactElement): ReactWrapper[P, S, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("mountWithIntl")(node.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, S, C]]
+  @scala.inline
+  def mountWithIntl_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, js.Any] */, P, S](node: ReactElement, options: MountRendererProps): ReactWrapper[P, S, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("mountWithIntl")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, S, C]]
   
-  @JSImport("enzyme-react-intl", "shallowWithIntl")
-  @js.native
-  def shallowWithIntl[P](node: ReactElement): ShallowWrapper[P, _, Component[js.Object, js.Object, _]] = js.native
-  @JSImport("enzyme-react-intl", "shallowWithIntl")
-  @js.native
-  def shallowWithIntl[P](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, _, Component[js.Object, js.Object, _]] = js.native
-  @JSImport("enzyme-react-intl", "shallowWithIntl")
-  @js.native
-  def shallowWithIntl_C_ComponentObjectObjectWildcardPS[C /* <: Component[js.Object, js.Object, _] */, P, S](node: ReactElement): ShallowWrapper[P, S, C] = js.native
-  @JSImport("enzyme-react-intl", "shallowWithIntl")
-  @js.native
-  def shallowWithIntl_C_ComponentObjectObjectWildcardPS[C /* <: Component[js.Object, js.Object, _] */, P, S](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, S, C] = js.native
-  @JSImport("enzyme-react-intl", "shallowWithIntl")
-  @js.native
-  def shallowWithIntl_PS[P, S](node: ReactElement): ShallowWrapper[P, S, Component[js.Object, js.Object, _]] = js.native
-  @JSImport("enzyme-react-intl", "shallowWithIntl")
-  @js.native
-  def shallowWithIntl_PS[P, S](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, S, Component[js.Object, js.Object, _]] = js.native
+  @scala.inline
+  def mountWithIntl_PS[P, S](node: ReactElement): ReactWrapper[P, S, Component[js.Object, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mountWithIntl")(node.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, S, Component[js.Object, js.Object, js.Any]]]
+  @scala.inline
+  def mountWithIntl_PS[P, S](node: ReactElement, options: MountRendererProps): ReactWrapper[P, S, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mountWithIntl")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, S, Component[js.Object, js.Object, js.Any]]]
+  
+  @scala.inline
+  def renderWithIntl[P, S](node: ReactElement): Cheerio = ^.asInstanceOf[js.Dynamic].applyDynamic("renderWithIntl")(node.asInstanceOf[js.Any]).asInstanceOf[Cheerio]
+  @scala.inline
+  def renderWithIntl[P, S](node: ReactElement, options: js.Any): Cheerio = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithIntl")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cheerio]
+  
+  @scala.inline
+  def setLocale(locale: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def shallowWithIntl[P](node: ReactElement): ShallowWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowWithIntl")(node.asInstanceOf[js.Any]).asInstanceOf[ShallowWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]]]
+  @scala.inline
+  def shallowWithIntl[P](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowWithIntl")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]]]
+  
+  @scala.inline
+  def shallowWithIntl_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, js.Any] */, P, S](node: ReactElement): ShallowWrapper[P, S, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowWithIntl")(node.asInstanceOf[js.Any]).asInstanceOf[ShallowWrapper[P, S, C]]
+  @scala.inline
+  def shallowWithIntl_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, js.Any] */, P, S](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, S, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowWithIntl")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, S, C]]
+  
+  @scala.inline
+  def shallowWithIntl_PS[P, S](node: ReactElement): ShallowWrapper[P, S, Component[js.Object, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowWithIntl")(node.asInstanceOf[js.Any]).asInstanceOf[ShallowWrapper[P, S, Component[js.Object, js.Object, js.Any]]]
+  @scala.inline
+  def shallowWithIntl_PS[P, S](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, S, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowWithIntl")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, S, Component[js.Object, js.Object, js.Any]]]
 }

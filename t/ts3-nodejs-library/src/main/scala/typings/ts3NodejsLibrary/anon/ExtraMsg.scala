@@ -2,21 +2,19 @@ package typings.ts3NodejsLibrary.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtraMsg extends StObject {
   
-  var extraMsg: js.UndefOr[String] = js.native
+  var extraMsg: js.UndefOr[String] = js.undefined
   
-  var failedPermid: js.UndefOr[Double] = js.native
+  var failedPermid: js.UndefOr[Double] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var message: String = js.native
+  var message: String
   
-  var msg: String = js.native
+  var msg: String
 }
 object ExtraMsg {
   

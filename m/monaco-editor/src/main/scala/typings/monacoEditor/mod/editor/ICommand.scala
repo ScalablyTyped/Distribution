@@ -3,10 +3,8 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.Selection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICommand extends StObject {
   
   /**
@@ -15,14 +13,14 @@ trait ICommand extends StObject {
     * @param helper A helper to get inverse edit operations and to get previously tracked selections.
     * @return The cursor state after the command executed.
     */
-  def computeCursorState(model: ITextModel, helper: ICursorStateComputerData): Selection = js.native
+  def computeCursorState(model: ITextModel, helper: ICursorStateComputerData): Selection
   
   /**
     * Get the edit operations needed to execute this command.
     * @param model The model the command will execute on.
     * @param builder A helper to collect the needed edit operations and to track selections.
     */
-  def getEditOperations(model: ITextModel, builder: IEditOperationBuilder): Unit = js.native
+  def getEditOperations(model: ITextModel, builder: IEditOperationBuilder): Unit
 }
 object ICommand {
   

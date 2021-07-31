@@ -4,25 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Cache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Delete extends StObject {
     
-    var _store: StringDictionary[String] = js.native
+    var _store: StringDictionary[String]
     
-    def delete(key: String): Unit = js.native
+    def delete(key: String): Unit
     
-    def get(key: String): String = js.native
+    def get(key: String): String
     
-    def has(key: String): Boolean = js.native
+    def has(key: String): Boolean
     
-    def set(key: String, value: js.Any): js.Any = js.native
+    def set(key: String, value: js.Any): js.Any
     
-    val size: Double = js.native
+    val size: Double
   }
   object Delete {
     
@@ -62,16 +60,15 @@ object anon {
     }
   }
   
-  @js.native
   trait MODULEENTRY extends StObject {
     
-    var MODULE_ENTRY: Cache = js.native
+    var MODULE_ENTRY: Cache
     
-    var PATH: Cache = js.native
+    var PATH: Cache
     
-    var REAL_DIRECTORY_PATH: Cache = js.native
+    var REAL_DIRECTORY_PATH: Cache
     
-    var REAL_FILE_PATH: Cache = js.native
+    var REAL_FILE_PATH: Cache
   }
   object MODULEENTRY {
     

@@ -2,15 +2,16 @@ package typings.antvUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object findMod {
   
-  @JSImport("@antv/util/lib/find", JSImport.Default)
+  @JSImport("@antv/util/lib/find", JSImport.Namespace)
   @js.native
-  def default[T](arr: js.Array[T], predicate: js.Function): T = js.native
-  @JSImport("@antv/util/lib/find", JSImport.Default)
-  @js.native
-  def default[T](arr: js.Array[T], predicate: js.Object): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T](arr: js.Array[T], predicate: js.Function): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def default[T](arr: js.Array[T], predicate: js.Object): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
 }

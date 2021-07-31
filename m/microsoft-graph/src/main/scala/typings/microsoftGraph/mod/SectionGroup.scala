@@ -2,32 +2,32 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SectionGroup extends OnenoteEntityHierarchyModel {
+trait SectionGroup
+  extends StObject
+     with OnenoteEntityHierarchyModel {
   
   // The notebook that contains the section group. Read-only.
-  var parentNotebook: js.UndefOr[NullableOption[Notebook]] = js.native
+  var parentNotebook: js.UndefOr[NullableOption[Notebook]] = js.undefined
   
   // The section group that contains the section group. Read-only.
-  var parentSectionGroup: js.UndefOr[NullableOption[SectionGroup]] = js.native
+  var parentSectionGroup: js.UndefOr[NullableOption[SectionGroup]] = js.undefined
   
   // The section groups in the section. Read-only. Nullable.
-  var sectionGroups: js.UndefOr[NullableOption[js.Array[SectionGroup]]] = js.native
+  var sectionGroups: js.UndefOr[NullableOption[js.Array[SectionGroup]]] = js.undefined
   
   /**
     * The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
     * Read-only.
     */
-  var sectionGroupsUrl: js.UndefOr[NullableOption[String]] = js.native
+  var sectionGroupsUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The sections in the section group. Read-only. Nullable.
-  var sections: js.UndefOr[NullableOption[js.Array[OnenoteSection]]] = js.native
+  var sections: js.UndefOr[NullableOption[js.Array[OnenoteSection]]] = js.undefined
   
   // The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
-  var sectionsUrl: js.UndefOr[NullableOption[String]] = js.native
+  var sectionsUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SectionGroup {
   

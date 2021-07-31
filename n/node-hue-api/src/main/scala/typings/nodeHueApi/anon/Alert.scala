@@ -5,33 +5,31 @@ import typings.nodeHueApi.mod.LightAlert
 import typings.nodeHueApi.mod.LightEffect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alert extends StObject {
   
-  var alert: LightAlert = js.native
+  var alert: LightAlert
   
-  var bri: Double = js.native
+  var bri: Double
   
-  var colormode: js.UndefOr[ColorMode] = js.native
+  var colormode: js.UndefOr[ColorMode] = js.undefined
   
-  var ct: js.UndefOr[Double] = js.native
+  var ct: js.UndefOr[Double] = js.undefined
   
-  var effect: js.UndefOr[LightEffect] = js.native
+  var effect: js.UndefOr[LightEffect] = js.undefined
   
-  var hue: js.UndefOr[Double] = js.native
+  var hue: js.UndefOr[Double] = js.undefined
   
-  var on: Boolean = js.native
+  var on: Boolean
   
-  var reachable: Boolean = js.native
+  var reachable: Boolean
   
-  var rgb: js.UndefOr[js.Array[Double]] = js.native
+  var rgb: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var sat: js.UndefOr[Double] = js.native
+  var sat: js.UndefOr[Double] = js.undefined
   
-  var xy: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var xy: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
 }
 object Alert {
   

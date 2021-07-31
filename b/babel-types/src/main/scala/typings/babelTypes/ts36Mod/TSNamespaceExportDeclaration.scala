@@ -2,18 +2,17 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSNamespaceExportDeclaration
-  extends Node
+  extends StObject
+     with Node
      with Statement {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
   @JSName("type")
-  var type_TSNamespaceExportDeclaration: typings.babelTypes.babelTypesStrings.TSNamespaceExportDeclaration = js.native
+  var type_TSNamespaceExportDeclaration: typings.babelTypes.babelTypesStrings.TSNamespaceExportDeclaration
 }
 object TSNamespaceExportDeclaration {
   

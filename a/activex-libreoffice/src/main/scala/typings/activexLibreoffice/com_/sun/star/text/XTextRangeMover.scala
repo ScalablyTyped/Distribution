@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The movement is specified by the number of paragraphs within the order of paragraphs.
   * @see Text
   */
-@js.native
-trait XTextRangeMover extends XInterface {
+trait XTextRangeMover
+  extends StObject
+     with XInterface {
   
   /** moves the contents to which **xRange** refers forward or backward. */
-  def moveTextRange(xRange: XTextRange, nParagraphs: Double): Unit = js.native
+  def moveTextRange(xRange: XTextRange, nParagraphs: Double): Unit
 }
 object XTextRangeMover {
   

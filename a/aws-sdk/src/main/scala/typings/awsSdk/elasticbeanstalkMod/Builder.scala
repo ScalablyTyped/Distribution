@@ -2,16 +2,14 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Builder extends StObject {
   
   /**
     * The ARN of the builder.
     */
-  var ARN: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ARN] = js.native
+  var ARN: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ARN] = js.undefined
 }
 object Builder {
   

@@ -10,7 +10,6 @@ import typings.std.NotificationOptions
 import typings.std.NotificationPermission
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -32,8 +31,9 @@ object mod extends Shortcut {
       /**
         * All options available during show notification according to https://developer.mozilla.org/en-US/docs/Web/API/notification
         */
-      @js.native
-      trait AugmentedNotificationOptions extends NotificationOptions {
+      trait AugmentedNotificationOptions
+        extends StObject
+           with NotificationOptions {
         
         /**
           * The onclick property of the Notification interface specifies an event listener to receive click events.
@@ -42,7 +42,7 @@ object mod extends Shortcut {
           * The default behavior is to move the focus to the viewport of the notification's related browsing context.
           * If you don't want that behaviour, call preventDefault() on the event object.
           */
-        var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+        var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
         
         /**
           * The onerror property of the Notification interface specifies an event listener to receive error events.
@@ -51,7 +51,7 @@ object mod extends Shortcut {
           * A function which serves as the event handler for the error event. When an error occurs, the specified function will be called.
           * If null, no error handler is in effect.
           */
-        var onError: js.UndefOr[EventListener] = js.native
+        var onError: js.UndefOr[EventListener] = js.undefined
         
         /**
           * The title read-only property of the Notification interface indicates the title of the notification, as specified in the title parameter
@@ -60,7 +60,7 @@ object mod extends Shortcut {
           * Note: This feature is available in Web Workers.
           * Ref: https://developer.mozilla.org/en-US/docs/Web/API/Notification/title
           */
-        var title: js.UndefOr[String] = js.native
+        var title: js.UndefOr[String] = js.undefined
         
         /**
           * The vibrate read-only property of the Notification interface specifies a a vibration pattern for the device's vibration hardware to emit
@@ -70,7 +70,7 @@ object mod extends Shortcut {
           * Ref: https://developer.mozilla.org/en-US/docs/Web/API/Notification/vibrate
           */
         @JSName("vibrate")
-        var vibrate_AugmentedNotificationOptions: js.UndefOr[js.Any] = js.native
+        var vibrate_AugmentedNotificationOptions: js.UndefOr[js.Any] = js.undefined
       }
       object AugmentedNotificationOptions {
         
@@ -110,14 +110,13 @@ object mod extends Shortcut {
       }
       
       // tslint:disable-next-line interface-name
-      @js.native
       trait IDesktopNotificationOptions extends StObject {
         
-        var autoClose: js.UndefOr[Boolean] = js.native
+        var autoClose: js.UndefOr[Boolean] = js.undefined
         
-        var duration: js.UndefOr[Double] = js.native
+        var duration: js.UndefOr[Double] = js.undefined
         
-        var showOnPageHidden: js.UndefOr[Boolean] = js.native
+        var showOnPageHidden: js.UndefOr[Boolean] = js.undefined
       }
       object IDesktopNotificationOptions {
         
@@ -151,13 +150,12 @@ object mod extends Shortcut {
       }
       
       // tslint:disable-next-line interface-name
-      @js.native
       trait IDesktopNotificationProvider extends StObject {
         
         /**
           * Set the default app-wide configuration for desktopNotification
           */
-        def config(options: IDesktopNotificationOptions): Unit = js.native
+        def config(options: IDesktopNotificationOptions): Unit
       }
       object IDesktopNotificationProvider {
         

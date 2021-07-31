@@ -2,29 +2,30 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SeriesChart extends ICompositeChart[SeriesChart] {
+trait SeriesChart
+  extends StObject
+     with ICompositeChart[SeriesChart] {
   
-  def chart(): js.Function1[/* c */ js.Any, BaseMixin[_]] = js.native
-  def chart(t: js.Function1[/* c */ js.Any, BaseMixin[_]]): SeriesChart = js.native
+  def chart(): js.Function1[/* c */ js.Any, BaseMixin[js.Any]] = js.native
+  def chart(t: js.Function1[/* c */ js.Any, BaseMixin[js.Any]]): SeriesChart = js.native
   @JSName("chart")
-  var chart_Original: IGetSet[js.Function1[/* c */ _, BaseMixin[_]], SeriesChart] = js.native
+  var chart_Original: IGetSet[js.Function1[/* c */ js.Any, BaseMixin[js.Any]], SeriesChart] = js.native
   
-  def seriesAccessor(): Accessor[_, _] = js.native
-  def seriesAccessor(t: Accessor[_, _]): SeriesChart = js.native
+  def seriesAccessor(): Accessor[js.Any, js.Any] = js.native
+  def seriesAccessor(t: Accessor[js.Any, js.Any]): SeriesChart = js.native
   @JSName("seriesAccessor")
-  var seriesAccessor_Original: IGetSet[Accessor[_, _], SeriesChart] = js.native
+  var seriesAccessor_Original: IGetSet[Accessor[js.Any, js.Any], SeriesChart] = js.native
   
   def seriesSort(): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
   def seriesSort(t: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): SeriesChart = js.native
   @JSName("seriesSort")
-  var seriesSort_Original: IGetSet[js.Function2[/* a */ _, /* b */ _, Double], SeriesChart] = js.native
+  var seriesSort_Original: IGetSet[js.Function2[/* a */ js.Any, /* b */ js.Any, Double], SeriesChart] = js.native
   
   def valueSort(): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
   def valueSort(t: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): SeriesChart = js.native
   @JSName("valueSort")
-  var valueSort_Original: IGetSet[js.Function2[/* a */ _, /* b */ _, Double], SeriesChart] = js.native
+  var valueSort_Original: IGetSet[js.Function2[/* a */ js.Any, /* b */ js.Any, Double], SeriesChart] = js.native
 }

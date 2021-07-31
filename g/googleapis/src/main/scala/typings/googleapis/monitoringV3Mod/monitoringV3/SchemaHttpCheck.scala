@@ -3,20 +3,18 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information involved in an HTTP/HTTPS uptime check request.
   */
-@js.native
 trait SchemaHttpCheck extends StObject {
   
   /**
     * The authentication information. Optional when creating an HTTP check;
     * defaults to empty.
     */
-  var authInfo: js.UndefOr[SchemaBasicAuthentication] = js.native
+  var authInfo: js.UndefOr[SchemaBasicAuthentication] = js.undefined
   
   /**
     * The list of headers to send as part of the uptime check request. If two
@@ -28,7 +26,7 @@ trait SchemaHttpCheck extends StObject {
     * to be overwritten by the second. The maximum number of headers allowed is
     * 100.
     */
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Boolean specifiying whether to encrypt the header information. Encryption
@@ -38,7 +36,7 @@ trait SchemaHttpCheck extends StObject {
     * mask_headers is set to True then the headers will be obscured with
     * ******.
     */
-  var maskHeaders: js.UndefOr[Boolean] = js.native
+  var maskHeaders: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The path to the page to run the check against. Will be combined with the
@@ -46,19 +44,19 @@ trait SchemaHttpCheck extends StObject {
     * full URL. Optional (defaults to &quot;/&quot;). If the provided path does
     * not begin with &quot;/&quot;, it will be prepended automatically.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The port to the page to run the check against. Will be combined with host
     * (specified within the MonitoredResource) and path to construct the full
     * URL. Optional (defaults to 80 without SSL, or 443 with SSL).
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * If true, use HTTPS instead of HTTP to run the check.
     */
-  var useSsl: js.UndefOr[Boolean] = js.native
+  var useSsl: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaHttpCheck {
   

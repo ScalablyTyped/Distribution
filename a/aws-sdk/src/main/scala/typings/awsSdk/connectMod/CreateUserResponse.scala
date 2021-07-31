@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the user account.
     */
-  var UserArn: js.UndefOr[ARN] = js.native
+  var UserArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The identifier of the user account.
     */
-  var UserId: js.UndefOr[typings.awsSdk.connectMod.UserId] = js.native
+  var UserId: js.UndefOr[typings.awsSdk.connectMod.UserId] = js.undefined
 }
 object CreateUserResponse {
   

@@ -2,16 +2,15 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SmartTags extends StObject {
   
   def Add(Name: String): SmartTag = js.native
-  def Add(Name: String, Range: js.UndefOr[scala.Nothing], Properties: js.Any): SmartTag = js.native
   def Add(Name: String, Range: js.Any): SmartTag = js.native
   def Add(Name: String, Range: js.Any, Properties: js.Any): SmartTag = js.native
+  def Add(Name: String, Range: Unit, Properties: js.Any): SmartTag = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   

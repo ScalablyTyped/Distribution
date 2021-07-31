@@ -2,17 +2,15 @@ package typings.knockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindingChildContextOptions[T] extends StObject {
   
-  var as: js.UndefOr[String] = js.native
+  var as: js.UndefOr[String] = js.undefined
   
-  var extend: js.UndefOr[BindingContextExtendCallback[T]] = js.native
+  var extend: js.UndefOr[BindingContextExtendCallback[T]] = js.undefined
   
-  var noChildContext: js.UndefOr[Boolean] = js.native
+  var noChildContext: js.UndefOr[Boolean] = js.undefined
 }
 object BindingChildContextOptions {
   
@@ -23,7 +21,7 @@ object BindingChildContextOptions {
   }
   
   @scala.inline
-  implicit class BindingChildContextOptionsMutableBuilder[Self <: BindingChildContextOptions[_], T] (val x: Self with BindingChildContextOptions[T]) extends AnyVal {
+  implicit class BindingChildContextOptionsMutableBuilder[Self <: BindingChildContextOptions[?], T] (val x: Self & BindingChildContextOptions[T]) extends AnyVal {
     
     @scala.inline
     def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])

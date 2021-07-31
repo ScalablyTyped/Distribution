@@ -8,70 +8,58 @@ import typings.arangodb.anon.Dictkey
 import typings.arangodb.anon.GraphkeystringCollectiona
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arangodbGeneralGraphMod {
   
-  @JSImport("@arangodb/general-graph", "_graph")
+  @JSImport("@arangodb/general-graph", JSImport.Namespace)
   @js.native
-  def _graph(name: String): GraphkeystringCollectiona = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@arangodb/general-graph", "_create")
-  @js.native
-  def create(name: String): GraphkeystringCollectiona = js.native
-  @JSImport("@arangodb/general-graph", "_create")
-  @js.native
-  def create(name: String, edgeDefinitions: js.UndefOr[scala.Nothing], orphanCollections: js.Array[String]): GraphkeystringCollectiona = js.native
-  @JSImport("@arangodb/general-graph", "_create")
-  @js.native
-  def create(name: String, edgeDefinitions: js.Array[EdgeDefinition]): GraphkeystringCollectiona = js.native
-  @JSImport("@arangodb/general-graph", "_create")
-  @js.native
-  def create(name: String, edgeDefinitions: js.Array[EdgeDefinition], orphanCollections: js.Array[String]): GraphkeystringCollectiona = js.native
+  @scala.inline
+  def _graph(name: String): GraphkeystringCollectiona = ^.asInstanceOf[js.Dynamic].applyDynamic("_graph")(name.asInstanceOf[js.Any]).asInstanceOf[GraphkeystringCollectiona]
   
-  @JSImport("@arangodb/general-graph", "_drop")
-  @js.native
-  def drop(name: String): Boolean = js.native
-  @JSImport("@arangodb/general-graph", "_drop")
-  @js.native
-  def drop(name: String, dropCollections: Boolean): Boolean = js.native
+  @scala.inline
+  def create(name: String): GraphkeystringCollectiona = ^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any]).asInstanceOf[GraphkeystringCollectiona]
+  @scala.inline
+  def create(name: String, edgeDefinitions: js.Array[EdgeDefinition]): GraphkeystringCollectiona = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any], edgeDefinitions.asInstanceOf[js.Any])).asInstanceOf[GraphkeystringCollectiona]
+  @scala.inline
+  def create(name: String, edgeDefinitions: js.Array[EdgeDefinition], orphanCollections: js.Array[String]): GraphkeystringCollectiona = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any], edgeDefinitions.asInstanceOf[js.Any], orphanCollections.asInstanceOf[js.Any])).asInstanceOf[GraphkeystringCollectiona]
+  @scala.inline
+  def create(name: String, edgeDefinitions: Unit, orphanCollections: js.Array[String]): GraphkeystringCollectiona = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any], edgeDefinitions.asInstanceOf[js.Any], orphanCollections.asInstanceOf[js.Any])).asInstanceOf[GraphkeystringCollectiona]
   
-  @JSImport("@arangodb/general-graph", "_edgeDefinitions")
-  @js.native
-  def edgeDefinitions(relations: EdgeDefinition*): js.Array[EdgeDefinition] = js.native
+  @scala.inline
+  def drop(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_drop")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def drop(name: String, dropCollections: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_drop")(name.asInstanceOf[js.Any], dropCollections.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@arangodb/general-graph", "_extendEdgeDefinitions")
-  @js.native
-  def extendEdgeDefinitions(edgeDefinitions: js.Array[EdgeDefinition], relations: EdgeDefinition*): js.Array[EdgeDefinition] = js.native
+  @scala.inline
+  def edgeDefinitions(relations: EdgeDefinition*): js.Array[EdgeDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("_edgeDefinitions")(relations.asInstanceOf[js.Any]).asInstanceOf[js.Array[EdgeDefinition]]
   
-  @JSImport("@arangodb/general-graph", "_list")
-  @js.native
-  def list(): js.Array[String] = js.native
+  @scala.inline
+  def extendEdgeDefinitions(edgeDefinitions: js.Array[EdgeDefinition], relations: EdgeDefinition*): js.Array[EdgeDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("_extendEdgeDefinitions")(edgeDefinitions.asInstanceOf[js.Any], relations.asInstanceOf[js.Any])).asInstanceOf[js.Array[EdgeDefinition]]
   
-  @JSImport("@arangodb/general-graph", "_relation")
-  @js.native
-  def relation(name: String, fromVertexCollections: String, toVertexCollections: String): EdgeDefinition = js.native
-  @JSImport("@arangodb/general-graph", "_relation")
-  @js.native
-  def relation(name: String, fromVertexCollections: String, toVertexCollections: js.Array[String]): EdgeDefinition = js.native
-  @JSImport("@arangodb/general-graph", "_relation")
-  @js.native
-  def relation(name: String, fromVertexCollections: js.Array[String], toVertexCollections: String): EdgeDefinition = js.native
-  @JSImport("@arangodb/general-graph", "_relation")
-  @js.native
-  def relation(name: String, fromVertexCollections: js.Array[String], toVertexCollections: js.Array[String]): EdgeDefinition = js.native
+  @scala.inline
+  def list(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_list")().asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def relation(name: String, fromVertexCollections: String, toVertexCollections: String): EdgeDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("_relation")(name.asInstanceOf[js.Any], fromVertexCollections.asInstanceOf[js.Any], toVertexCollections.asInstanceOf[js.Any])).asInstanceOf[EdgeDefinition]
+  @scala.inline
+  def relation(name: String, fromVertexCollections: String, toVertexCollections: js.Array[String]): EdgeDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("_relation")(name.asInstanceOf[js.Any], fromVertexCollections.asInstanceOf[js.Any], toVertexCollections.asInstanceOf[js.Any])).asInstanceOf[EdgeDefinition]
+  @scala.inline
+  def relation(name: String, fromVertexCollections: js.Array[String], toVertexCollections: String): EdgeDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("_relation")(name.asInstanceOf[js.Any], fromVertexCollections.asInstanceOf[js.Any], toVertexCollections.asInstanceOf[js.Any])).asInstanceOf[EdgeDefinition]
+  @scala.inline
+  def relation(name: String, fromVertexCollections: js.Array[String], toVertexCollections: js.Array[String]): EdgeDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("_relation")(name.asInstanceOf[js.Any], fromVertexCollections.asInstanceOf[js.Any], toVertexCollections.asInstanceOf[js.Any])).asInstanceOf[EdgeDefinition]
   
   type Betweenness = Eccentricity
   
-  @js.native
   trait BetweennessOptions extends StObject {
     
-    var defaultWeight: js.UndefOr[Double] = js.native
+    var defaultWeight: js.UndefOr[Double] = js.undefined
     
-    var direction: js.UndefOr[EdgeDirection] = js.native
+    var direction: js.UndefOr[EdgeDirection] = js.undefined
     
-    var weight: js.UndefOr[String] = js.native
+    var weight: js.UndefOr[String] = js.undefined
   }
   object BetweennessOptions {
     
@@ -108,14 +96,13 @@ object arangodbGeneralGraphMod {
   
   type ClosenessOptions = ShortestPathOptions
   
-  @js.native
   trait CommonNeighbors extends StObject {
     
-    var left: String = js.native
+    var left: String
     
-    var neighbors: js.Array[String] = js.native
+    var neighbors: js.Array[String]
     
-    var right: String = js.native
+    var right: String
   }
   object CommonNeighbors {
     
@@ -144,14 +131,13 @@ object arangodbGeneralGraphMod {
   
   type CommonProperties = StringDictionary[js.UndefOr[js.Array[Dictkey]]]
   
-  @js.native
   trait CommonPropertiesOptions extends StObject {
     
-    var ignoredProperties: js.UndefOr[js.Array[String] | String] = js.native
+    var ignoredProperties: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var vertex1CollectionRestriction: js.UndefOr[js.Array[String] | String] = js.native
+    var vertex1CollectionRestriction: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var vertex2CollectionRestriction: js.UndefOr[js.Array[String] | String] = js.native
+    var vertex2CollectionRestriction: js.UndefOr[js.Array[String] | String] = js.undefined
   }
   object CommonPropertiesOptions {
     
@@ -193,16 +179,15 @@ object arangodbGeneralGraphMod {
     }
   }
   
-  @js.native
   trait ConnectingEdgesOptions extends StObject {
     
-    var edgeCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.native
+    var edgeCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var edgeExamples: js.UndefOr[Example] = js.native
+    var edgeExamples: js.UndefOr[Example] = js.undefined
     
-    var vertex1CollectionRestriction: js.UndefOr[js.Array[String] | String] = js.native
+    var vertex1CollectionRestriction: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var vertex2CollectionRestriction: js.UndefOr[js.Array[String] | String] = js.native
+    var vertex2CollectionRestriction: js.UndefOr[js.Array[String] | String] = js.undefined
   }
   object ConnectingEdgesOptions {
     
@@ -262,14 +247,13 @@ object arangodbGeneralGraphMod {
   
   type DiameterOptions = BetweennessOptions
   
-  @js.native
   trait Distance extends StObject {
     
-    var distance: Double = js.native
+    var distance: Double
     
-    var startVertex: String = js.native
+    var startVertex: String
     
-    var vertex: String = js.native
+    var vertex: String
   }
   object Distance {
     
@@ -297,14 +281,13 @@ object arangodbGeneralGraphMod {
   
   type EccentricityOptions = ShortestPathOptions
   
-  @js.native
   trait EdgeDefinition extends StObject {
     
-    var collection: String = js.native
+    var collection: String
     
-    var from: js.Array[String] = js.native
+    var from: js.Array[String]
     
-    var to: js.Array[String] = js.native
+    var to: js.Array[String]
   }
   object EdgeDefinition {
     
@@ -361,7 +344,7 @@ object arangodbGeneralGraphMod {
     def _commonNeighbors(
       vertex1Example: Example,
       vertex2Example: Example,
-      vertex1Options: js.UndefOr[scala.Nothing],
+      vertex1Options: Unit,
       vertex2Options: NeighborsOptions
     ): js.Array[CommonNeighbors] = js.native
     def _commonNeighbors(vertex1Example: Example, vertex2Example: Example, vertex1Options: NeighborsOptions): js.Array[CommonNeighbors] = js.native
@@ -379,7 +362,7 @@ object arangodbGeneralGraphMod {
     def _countCommonNeighbors(
       vertex1Example: Example,
       vertex2Example: Example,
-      vertex1Options: js.UndefOr[scala.Nothing],
+      vertex1Options: Unit,
       vertex2Options: NeighborsOptions
     ): js.Array[CountCommonNeighbors] = js.native
     def _countCommonNeighbors(vertex1Example: Example, vertex2Example: Example, vertex1Options: NeighborsOptions): js.Array[CountCommonNeighbors] = js.native
@@ -409,17 +392,17 @@ object arangodbGeneralGraphMod {
     
     def _extendEdgeDefinitions(edgeDefinition: EdgeDefinition): Unit = js.native
     
-    def _fromVertex(edgeId: String): Document[_] = js.native
+    def _fromVertex(edgeId: String): Document[js.Any] = js.native
     
-    def _getConnectingEdges(vertexExample1: Example, vertexExample2: Example, options: ConnectingEdgesOptions): Edge[_] = js.native
+    def _getConnectingEdges(vertexExample1: Example, vertexExample2: Example, options: ConnectingEdgesOptions): Edge[js.Any] = js.native
     
     def _neighbors(vertexExample: Example): js.Array[String] = js.native
     def _neighbors(vertexExample: Example, options: NeighborsOptions): js.Array[String] = js.native
     
     def _orphanCollections(): js.Array[String] = js.native
     
-    def _paths(): js.Array[Path[_, _, _, scala.Nothing]] = js.native
-    def _paths(options: PathsOptions): js.Array[Path[_, _, _, scala.Nothing]] = js.native
+    def _paths(): js.Array[Path[js.Any, js.Any, js.Any, scala.Nothing]] = js.native
+    def _paths(options: PathsOptions): js.Array[Path[js.Any, js.Any, js.Any, scala.Nothing]] = js.native
     
     def _radius(vertexExample: Example): Double = js.native
     def _radius(vertexExample: Example, options: RadiusOptions): Double = js.native
@@ -427,28 +410,27 @@ object arangodbGeneralGraphMod {
     def _removeVertexCollection(orphanCollectionName: String): Unit = js.native
     def _removeVertexCollection(orphanCollectionName: String, dropCollection: Boolean): Unit = js.native
     
-    def _shortestPath(startVertexExample: Example, endVertexExample: Example): js.Array[ShortestPath[_]] = js.native
-    def _shortestPath(startVertexExample: Example, endVertexExample: Example, options: ShortestPathOptions): js.Array[ShortestPath[_]] = js.native
+    def _shortestPath(startVertexExample: Example, endVertexExample: Example): js.Array[ShortestPath[js.Any]] = js.native
+    def _shortestPath(startVertexExample: Example, endVertexExample: Example, options: ShortestPathOptions): js.Array[ShortestPath[js.Any]] = js.native
     
-    def _toVertex(edgeId: String): Document[_] = js.native
+    def _toVertex(edgeId: String): Document[js.Any] = js.native
   }
   
-  @js.native
   trait NeighborsOptions extends StObject {
     
-    var direction: js.UndefOr[EdgeDirection] = js.native
+    var direction: js.UndefOr[EdgeDirection] = js.undefined
     
-    var edgeCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.native
+    var edgeCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var edgeExamples: js.UndefOr[Example] = js.native
+    var edgeExamples: js.UndefOr[Example] = js.undefined
     
-    var maxDepth: js.UndefOr[Double] = js.native
+    var maxDepth: js.UndefOr[Double] = js.undefined
     
-    var minDepth: js.UndefOr[Double] = js.native
+    var minDepth: js.UndefOr[Double] = js.undefined
     
-    var neighborExamples: js.UndefOr[Example] = js.native
+    var neighborExamples: js.UndefOr[Example] = js.undefined
     
-    var vertexCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.native
+    var vertexCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.undefined
   }
   object NeighborsOptions {
     
@@ -523,16 +505,15 @@ object arangodbGeneralGraphMod {
     }
   }
   
-  @js.native
   trait Path[A /* <: js.Object */, B /* <: js.Object */, E /* <: js.Object */, V /* <: js.Object */] extends StObject {
     
-    var destination: Document[B] = js.native
+    var destination: Document[B]
     
-    var edges: js.Array[Edge[E]] = js.native
+    var edges: js.Array[Edge[E]]
     
-    var source: Document[A] = js.native
+    var source: Document[A]
     
-    var vertice: js.Array[Document[A | B | V]] = js.native
+    var vertice: js.Array[Document[A | B | V]]
   }
   object Path {
     
@@ -548,7 +529,7 @@ object arangodbGeneralGraphMod {
     }
     
     @scala.inline
-    implicit class PathMutableBuilder[Self <: Path[_, _, _, _], A /* <: js.Object */, B /* <: js.Object */, E /* <: js.Object */, V /* <: js.Object */] (val x: Self with (Path[A, B, E, V])) extends AnyVal {
+    implicit class PathMutableBuilder[Self <: Path[?, ?, ?, ?], A /* <: js.Object */, B /* <: js.Object */, E /* <: js.Object */, V /* <: js.Object */] (val x: Self & (Path[A, B, E, V])) extends AnyVal {
       
       @scala.inline
       def setDestination(value: Document[B]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
@@ -570,16 +551,15 @@ object arangodbGeneralGraphMod {
     }
   }
   
-  @js.native
   trait PathsOptions extends StObject {
     
-    var direction: js.UndefOr[EdgeDirection] = js.native
+    var direction: js.UndefOr[EdgeDirection] = js.undefined
     
-    var followCycles: js.UndefOr[Boolean] = js.native
+    var followCycles: js.UndefOr[Boolean] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
   }
   object PathsOptions {
     
@@ -620,14 +600,13 @@ object arangodbGeneralGraphMod {
   
   type RadiusOptions = BetweennessOptions
   
-  @js.native
   trait ShortestPath[T /* <: js.Object */] extends StObject {
     
-    var distance: Double = js.native
+    var distance: Double
     
-    var edges: js.Array[Edge[T]] = js.native
+    var edges: js.Array[Edge[T]]
     
-    var vertices: js.Array[String] = js.native
+    var vertices: js.Array[String]
   }
   object ShortestPath {
     
@@ -638,7 +617,7 @@ object arangodbGeneralGraphMod {
     }
     
     @scala.inline
-    implicit class ShortestPathMutableBuilder[Self <: ShortestPath[_], T /* <: js.Object */] (val x: Self with ShortestPath[T]) extends AnyVal {
+    implicit class ShortestPathMutableBuilder[Self <: ShortestPath[?], T /* <: js.Object */] (val x: Self & ShortestPath[T]) extends AnyVal {
       
       @scala.inline
       def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
@@ -657,20 +636,19 @@ object arangodbGeneralGraphMod {
     }
   }
   
-  @js.native
   trait ShortestPathOptions extends StObject {
     
-    var defaultWeight: js.UndefOr[Double] = js.native
+    var defaultWeight: js.UndefOr[Double] = js.undefined
     
-    var direction: js.UndefOr[EdgeDirection] = js.native
+    var direction: js.UndefOr[EdgeDirection] = js.undefined
     
-    var edgeCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.native
+    var edgeCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var endVertexCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.native
+    var endVertexCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var startVertexCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.native
+    var startVertexCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var weight: js.UndefOr[String] = js.native
+    var weight: js.UndefOr[String] = js.undefined
   }
   object ShortestPathOptions {
     

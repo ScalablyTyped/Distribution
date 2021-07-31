@@ -2,17 +2,15 @@ package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleActionModel extends StObject {
   
-  var actionType: String = js.native
+  var actionType: String
   
-  var targetField: String = js.native
+  var targetField: String
   
-  var value: String = js.native
+  var value: String
 }
 object RuleActionModel {
   

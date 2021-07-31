@@ -2,12 +2,14 @@ package typings.uiBox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSafeValueMod {
   
-  @JSImport("ui-box/dist/src/get-safe-value", JSImport.Default)
+  @JSImport("ui-box/dist/src/get-safe-value", JSImport.Namespace)
   @js.native
-  def default(value: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 }

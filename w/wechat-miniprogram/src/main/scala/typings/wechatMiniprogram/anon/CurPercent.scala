@@ -2,13 +2,11 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurPercent extends StObject {
   
-  var curPercent: Double = js.native
+  var curPercent: Double
 }
 object CurPercent {
   

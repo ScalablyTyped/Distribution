@@ -9,7 +9,6 @@ import typings.wordpressComponents.shortcutMod.Shortcut.ShortcutType
 import typings.wordpressComponents.toolbarButtonMod.ToolbarButton.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toolbarButtonMod {
@@ -30,60 +29,59 @@ object toolbarButtonMod {
     
     /* Inlined parent @wordpress/components.@wordpress/components/dropdown-menu.default.Control */
     /* Inlined parent std.Pick<@wordpress/components.@wordpress/components/icon-button.default.Props, 'shortcut'> */
-    @js.native
     trait Props extends StObject {
       
       /**
         * Anything to add into the containing element after the button.
         */
-      var children: js.UndefOr[ReactNode] = js.native
+      var children: js.UndefOr[ReactNode] = js.undefined
       
       /**
         * `className` for the button element.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * `className` for the container.
         */
-      var containerClassName: js.UndefOr[String] = js.native
+      var containerClassName: js.UndefOr[String] = js.undefined
       
       /**
         * Any additional props to pass down to `IconButton`.
         */
-      var extraProps: js.UndefOr[PartialProps] = js.native
+      var extraProps: js.UndefOr[PartialProps] = js.undefined
       
       /**
         * Dashicon icon slug.
         */
-      var icon: Icon = js.native
+      var icon: Icon
       
       /**
         * Describes whether or not the button is active.
         */
-      var isActive: js.UndefOr[Boolean] = js.native
+      var isActive: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Describes whether or not the control is disabled.
         */
-      var isDisabled: js.UndefOr[Boolean] = js.native
+      var isDisabled: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Function to invoke when the option is selected.
         */
-      def onClick(): Unit = js.native
+      def onClick(): Unit
       
-      var shortcut: js.UndefOr[ShortcutType] = js.native
+      var shortcut: js.UndefOr[ShortcutType] = js.undefined
       
       /**
         * Subscript text to add to the button.
         */
-      var subscript: js.UndefOr[String] = js.native
+      var subscript: js.UndefOr[String] = js.undefined
       
       /**
         * Human-readable title for the control.
         */
-      var title: String = js.native
+      var title: String
     }
     object Props {
       

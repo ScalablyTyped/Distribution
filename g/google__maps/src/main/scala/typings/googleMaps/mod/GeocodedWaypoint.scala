@@ -2,14 +2,12 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeocodedWaypoint extends StObject {
   
   /** indicates the status code resulting from the geocoding operation. */
-  var geocoder_status: GeocodedWaypointStatus = js.native
+  var geocoder_status: GeocodedWaypointStatus
   
   /**
     * indicates that the geocoder did not return an exact match for the original request, though it was able to match part of the
@@ -21,17 +19,17 @@ trait GeocodedWaypoint extends StObject {
     * Note that if a request includes a misspelled address component, the geocoding service may suggest an alternative address.
     * Suggestions triggered in this way will also be marked as a partial match.
     */
-  var partial_match: Boolean = js.native
+  var partial_match: Boolean
   
   /** unique identifier that can be used with other Google APIs. */
-  var place_id: String = js.native
+  var place_id: String
   
   /**
     * indicates the *address type* of the geocoding result used for calculating directions.
     *
     * An empty list of types indicates there are no known types for the particular address component, for example, Lieu-dit in France.
     */
-  var types: js.Array[AddressType] = js.native
+  var types: js.Array[AddressType]
 }
 object GeocodedWaypoint {
   

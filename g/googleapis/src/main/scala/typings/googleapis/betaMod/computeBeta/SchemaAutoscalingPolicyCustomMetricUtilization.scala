@@ -2,13 +2,11 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Custom utilization metric policy.
   */
-@js.native
 trait SchemaAutoscalingPolicyCustomMetricUtilization extends StObject {
   
   /**
@@ -36,14 +34,14 @@ trait SchemaAutoscalingPolicyCustomMetricUtilization extends StObject {
     * If multiple TimeSeries are returned upon the query execution, the
     * autoscaler will sum their respective values to obtain its scaling value.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier (type) of the Stackdriver Monitoring metric. The metric
     * cannot have negative values.  The metric must have a value type of INT64
     * or DOUBLE.
     */
-  var metric: js.UndefOr[String] = js.native
+  var metric: js.UndefOr[String] = js.undefined
   
   /**
     * If scaling is based on a per-group metric value that represents the total
@@ -58,7 +56,7 @@ trait SchemaAutoscalingPolicyCustomMetricUtilization extends StObject {
     * since this value can&#39;t include a chunk assignable to a single
     * instance, it could be better used with utilization_target instead.
     */
-  var singleInstanceAssignment: js.UndefOr[Double] = js.native
+  var singleInstanceAssignment: js.UndefOr[Double] = js.undefined
   
   /**
     * The target value of the metric that autoscaler should maintain. This must
@@ -69,13 +67,13 @@ trait SchemaAutoscalingPolicyCustomMetricUtilization extends StObject {
     * autoscaler will work to keep this value constant for each of the
     * instances.
     */
-  var utilizationTarget: js.UndefOr[Double] = js.native
+  var utilizationTarget: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines how target utilization value is expressed for a Stackdriver
     * Monitoring metric. Either GAUGE, DELTA_PER_SECOND, or DELTA_PER_MINUTE.
     */
-  var utilizationTargetType: js.UndefOr[String] = js.native
+  var utilizationTargetType: js.UndefOr[String] = js.undefined
 }
 object SchemaAutoscalingPolicyCustomMetricUtilization {
   

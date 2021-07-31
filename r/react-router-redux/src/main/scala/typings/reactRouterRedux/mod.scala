@@ -15,10 +15,13 @@ import typings.redux.mod.Reducer
 import typings.redux.mod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-router-redux", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-router-redux", "CALL_HISTORY_METHOD")
   @js.native
@@ -40,35 +43,27 @@ object mod {
   @js.native
   val LOCATION_CHANGE: /* "@@router/LOCATION_CHANGE" */ String = js.native
   
-  @JSImport("react-router-redux", "createMatchSelector")
-  @js.native
-  def createMatchSelector(path: String): js.Function1[/* state */ Router, `match`[js.Object] | Null] = js.native
+  @scala.inline
+  def createMatchSelector(path: String): js.Function1[/* state */ Router, `match`[js.Object] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMatchSelector")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* state */ Router, `match`[js.Object] | Null]]
   
-  @JSImport("react-router-redux", "go")
-  @js.native
-  def go(n: Double): RouterAction = js.native
+  @scala.inline
+  def go(n: Double): RouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("go")(n.asInstanceOf[js.Any]).asInstanceOf[RouterAction]
   
-  @JSImport("react-router-redux", "goBack")
-  @js.native
-  def goBack(): RouterAction = js.native
+  @scala.inline
+  def goBack(): RouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")().asInstanceOf[RouterAction]
   
-  @JSImport("react-router-redux", "goForward")
-  @js.native
-  def goForward(): RouterAction = js.native
+  @scala.inline
+  def goForward(): RouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("goForward")().asInstanceOf[RouterAction]
   
-  @JSImport("react-router-redux", "push")
-  @js.native
-  def push(location: LocationDescriptor[LocationState]): RouterAction = js.native
-  @JSImport("react-router-redux", "push")
-  @js.native
-  def push(location: LocationDescriptor[LocationState], state: LocationState): RouterAction = js.native
+  @scala.inline
+  def push(location: LocationDescriptor[LocationState]): RouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(location.asInstanceOf[js.Any]).asInstanceOf[RouterAction]
+  @scala.inline
+  def push(location: LocationDescriptor[LocationState], state: LocationState): RouterAction = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(location.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RouterAction]
   
-  @JSImport("react-router-redux", "replace")
-  @js.native
-  def replace(location: LocationDescriptor[LocationState]): RouterAction = js.native
-  @JSImport("react-router-redux", "replace")
-  @js.native
-  def replace(location: LocationDescriptor[LocationState], state: LocationState): RouterAction = js.native
+  @scala.inline
+  def replace(location: LocationDescriptor[LocationState]): RouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(location.asInstanceOf[js.Any]).asInstanceOf[RouterAction]
+  @scala.inline
+  def replace(location: LocationDescriptor[LocationState], state: LocationState): RouterAction = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(location.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RouterAction]
   
   object routerActions {
     
@@ -128,20 +123,18 @@ object mod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("replace")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-router-redux", "routerMiddleware")
-  @js.native
-  def routerMiddleware(history: History[LocationState]): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+  @scala.inline
+  def routerMiddleware(history: History[LocationState]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("routerMiddleware")(history.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
   
   @JSImport("react-router-redux", "routerReducer")
   @js.native
   val routerReducer: Reducer[RouterState, AnyAction] = js.native
   
-  @js.native
   trait ConnectedRouterProps[State] extends StObject {
     
-    var history: History[LocationState] = js.native
+    var history: History[LocationState]
     
-    var store: js.UndefOr[Store[State, AnyAction]] = js.native
+    var store: js.UndefOr[Store[State, AnyAction]] = js.undefined
   }
   object ConnectedRouterProps {
     
@@ -152,7 +145,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ConnectedRouterPropsMutableBuilder[Self <: ConnectedRouterProps[_], State] (val x: Self with ConnectedRouterProps[State]) extends AnyVal {
+    implicit class ConnectedRouterPropsMutableBuilder[Self <: ConnectedRouterProps[?], State] (val x: Self & ConnectedRouterProps[State]) extends AnyVal {
       
       @scala.inline
       def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
@@ -165,12 +158,11 @@ object mod {
     }
   }
   
-  @js.native
   trait LocationActionPayload extends StObject {
     
-    var args: js.UndefOr[js.Array[_]] = js.native
+    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var method: String = js.native
+    var method: String
   }
   object LocationActionPayload {
     
@@ -184,7 +176,7 @@ object mod {
     implicit class LocationActionPayloadMutableBuilder[Self <: LocationActionPayload] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
@@ -197,12 +189,11 @@ object mod {
     }
   }
   
-  @js.native
   trait LocationChangeAction extends StObject {
     
-    var payload: LocationLocationStateprop = js.native
+    var payload: LocationLocationStateprop
     
-    var `type`: /* "@@router/LOCATION_CHANGE" */ String = js.native
+    var `type`: /* "@@router/LOCATION_CHANGE" */ String
   }
   object LocationChangeAction {
     
@@ -224,12 +215,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RouterAction extends StObject {
     
-    var payload: LocationActionPayload = js.native
+    var payload: LocationActionPayload
     
-    var `type`: /* "@@router/CALL_HISTORY_METHOD" */ String = js.native
+    var `type`: /* "@@router/CALL_HISTORY_METHOD" */ String
   }
   object RouterAction {
     
@@ -251,16 +241,15 @@ object mod {
     }
   }
   
-  @js.native
   trait RouterState extends StObject {
     
-    var location: Location[LocationState] | Null = js.native
+    var location: Location[LocationState] | Null
   }
   object RouterState {
     
     @scala.inline
     def apply(): RouterState = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(location = null)
       __obj.asInstanceOf[RouterState]
     }
     

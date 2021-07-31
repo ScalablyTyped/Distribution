@@ -2,41 +2,39 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutAccountDetailsRequest extends StObject {
   
   /**
     * Additional email addresses that you would like to be notified regarding Amazon SES matters.
     */
-  var AdditionalContactEmailAddresses: js.UndefOr[typings.awsSdk.sesv2Mod.AdditionalContactEmailAddresses] = js.native
+  var AdditionalContactEmailAddresses: js.UndefOr[typings.awsSdk.sesv2Mod.AdditionalContactEmailAddresses] = js.undefined
   
   /**
     * The language you would prefer to be contacted with.
     */
-  var ContactLanguage: js.UndefOr[typings.awsSdk.sesv2Mod.ContactLanguage] = js.native
+  var ContactLanguage: js.UndefOr[typings.awsSdk.sesv2Mod.ContactLanguage] = js.undefined
   
   /**
     * The type of email your account will send.
     */
-  var MailType: typings.awsSdk.sesv2Mod.MailType = js.native
+  var MailType: typings.awsSdk.sesv2Mod.MailType
   
   /**
     * Indicates whether or not your account should have production access in the current AWS Region. If the value is false, then your account is in the sandbox. When your account is in the sandbox, you can only send email to verified identities. Additionally, the maximum number of emails you can send in a 24-hour period (your sending quota) is 200, and the maximum number of emails you can send per second (your maximum sending rate) is 1. If the value is true, then your account has production access. When your account has production access, you can send email to any address. The sending quota and maximum sending rate for your account vary based on your specific use case.
     */
-  var ProductionAccessEnabled: js.UndefOr[EnabledWrapper] = js.native
+  var ProductionAccessEnabled: js.UndefOr[EnabledWrapper] = js.undefined
   
   /**
     * A description of the types of email that you plan to send.
     */
-  var UseCaseDescription: typings.awsSdk.sesv2Mod.UseCaseDescription = js.native
+  var UseCaseDescription: typings.awsSdk.sesv2Mod.UseCaseDescription
   
   /**
     * The URL of your website. This information helps us better understand the type of content that you plan to send.
     */
-  var WebsiteURL: typings.awsSdk.sesv2Mod.WebsiteURL = js.native
+  var WebsiteURL: typings.awsSdk.sesv2Mod.WebsiteURL
 }
 object PutAccountDetailsRequest {
   

@@ -2,17 +2,15 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrinterXri extends StObject {
   
-  var `xri-authentication`: js.UndefOr[XriAuthentication] = js.native
+  var `xri-authentication`: js.UndefOr[XriAuthentication] = js.undefined
   
-  var `xri-security`: js.UndefOr[XriSecurity] = js.native
+  var `xri-security`: js.UndefOr[XriSecurity] = js.undefined
   
-  var `xri-uri`: js.UndefOr[String] = js.native
+  var `xri-uri`: js.UndefOr[String] = js.undefined
 }
 object PrinterXri {
   

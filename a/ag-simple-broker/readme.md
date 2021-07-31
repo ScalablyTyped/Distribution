@@ -10,9 +10,9 @@ Simple broker engine for Asyngular
 | ------------------ | :-------------: |
 | Full name          | ag-simple-broker |
 | Keywords           | asyngular, broker, socketcluster, pubsub |
-| # releases         | 19 |
+| # releases         | 10 |
 | # dependents       | 2 |
-| # downloads        | 17419 |
+| # downloads        | 29874 |
 | # stars            | 0 |
 
 ## Links

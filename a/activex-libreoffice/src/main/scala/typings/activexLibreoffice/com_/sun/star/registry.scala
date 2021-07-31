@@ -16,7 +16,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registry {
@@ -134,9 +133,9 @@ object registry {
     *
     * Guarantees: -thread safe
     */
-  @js.native
   trait NestedRegistry
-    extends XSimpleRegistry
+    extends StObject
+       with XSimpleRegistry
        with XInitialization
   object NestedRegistry {
     
@@ -149,7 +148,7 @@ object registry {
       destroy: () => Unit,
       getRootKey: () => XRegistryKey,
       getURL: () => String,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       isReadOnly: () => Boolean,
       isValid: () => Boolean,
       mergeKey: (String, String) => Unit,
@@ -241,21 +240,22 @@ object registry {
   type SimpleRegistry = XSimpleRegistry
   
   /** offers a registry for implementation objects and provides information about the registered implementations. */
-  @js.native
-  trait XImplementationRegistration extends XInterface {
+  trait XImplementationRegistration
+    extends StObject
+       with XInterface {
     
     /**
       * @param implementationName specifies the name of the checked implementation.
       * @returns a sequence with names of the missing services to create an instance of this implementation.
       */
-    def checkInstantiation(implementationName: String): SafeArray[String] = js.native
+    def checkInstantiation(implementationName: String): SafeArray[String]
     
     /**
       * @param aImplementationLoader specifies the name of the needed loader for this type of implementation. For example, the loader "com.sun.star.loader.Share
       * @param aLocation specifies the location of the component with the URL.
       * @returns the names of the implementations registered by the url location.
       */
-    def getImplementations(aImplementationLoader: String, aLocation: String): SafeArray[String] = js.native
+    def getImplementations(aImplementationLoader: String, aLocation: String): SafeArray[String]
     
     /**
       * registers a component which provides one or more implementations.
@@ -263,14 +263,14 @@ object registry {
       * @param aLocation specifies the location of the component with the URL.
       * @param xReg specifies the registry where the component should be installed. If it is a NULL interface, then the component will be installed in the syste
       */
-    def registerImplementation(aImplementationLoader: String, aLocation: String, xReg: XSimpleRegistry): Unit = js.native
+    def registerImplementation(aImplementationLoader: String, aLocation: String, xReg: XSimpleRegistry): Unit
     
     /**
       * revokes a component and all their provided implementations from the registry.
       * @param aLocation specifies the location of the component with the URL.
       * @param xReg specifies the registry where the component should be installed. If it is a NULL interface, then the component will be revoked from the syste
       */
-    def revokeImplementation(aLocation: String, xReg: XSimpleRegistry): Boolean = js.native
+    def revokeImplementation(aLocation: String, xReg: XSimpleRegistry): Boolean
   }
   object XImplementationRegistration {
     
@@ -310,8 +310,9 @@ object registry {
     * register the components name only (library or jar name).
     * @since OOo 2.4
     */
-  @js.native
-  trait XImplementationRegistration2 extends XImplementationRegistration {
+  trait XImplementationRegistration2
+    extends StObject
+       with XImplementationRegistration {
     
     /**
       * registers a component which provides one or more implementations.
@@ -325,7 +326,7 @@ object registry {
       aLocation: String,
       aRegisteredLocation: String,
       xReg: XSimpleRegistry
-    ): Unit = js.native
+    ): Unit
   }
   object XImplementationRegistration2 {
     
@@ -358,29 +359,30 @@ object registry {
     * This is the main interface for registry keys.
     * @see XSimpleRegistry
     */
-  @js.native
-  trait XRegistryKey extends XInterface {
+  trait XRegistryKey
+    extends StObject
+       with XInterface {
     
     /**
       * @returns a sequence of ascii strings if the key contains an ascii list value.
       * @throws InvalidRegistryException if the registry is not open.
       * @throws InvalidValueException if the actual value is not of type ascii list.
       */
-    var AsciiListValue: SafeArray[String] = js.native
+    var AsciiListValue: SafeArray[String]
     
     /**
       * @returns an ascii string value if the key contains one.
       * @throws InvalidRegistryException if the registry is not open.
       * @throws InvalidValueException if the actual value is not of type ascii.
       */
-    var AsciiValue: String = js.native
+    var AsciiValue: String
     
     /**
       * @returns a binary value if the key contains one.
       * @throws InvalidRegistryException if the registry is not open.
       * @throws InvalidValueException if the actual value is not of type binary.
       */
-    var BinaryValue: SafeArray[Double] = js.native
+    var BinaryValue: SafeArray[Double]
     
     /**
       * This is the key of the entry relative to its parent.
@@ -388,53 +390,53 @@ object registry {
       * The access path starts with the root "/" and all parent entry names are delimited with slashes "/" too, like in a UNIX (R) file system. Slashes which
       * are part of single names are represented as hexadecimals preceded with a "%" like in URL syntax.
       */
-    var KeyName: String = js.native
+    var KeyName: String
     
     /**
       * @returns a sequence with the names of all subkeys of the key. If the key has no subkeys, the function returns an empty sequence. If a subkey is a link, th
       * @throws InvalidRegistryException if the registry is not open.
       */
-    val KeyNames: SafeArray[String] = js.native
+    val KeyNames: SafeArray[String]
     
     /**
       * @returns a sequence of longs if the key contains a long list value.
       * @throws InvalidRegistryException if the registry is not open.
       * @throws InvalidValueException if the actual value is not of type long list.
       */
-    var LongListValue: SafeArray[Double] = js.native
+    var LongListValue: SafeArray[Double]
     
     /**
       * @returns a long value if the key contains one.
       * @throws InvalidRegistryException if the registry is not open.
       * @throws InvalidValueException if the value is not of type long.
       */
-    var LongValue: Double = js.native
+    var LongValue: Double
     
     /**
       * @returns a sequence of unicode strings if the key contains an unicode string list value.
       * @throws InvalidRegistryException if the registry is not open.
       * @throws InvalidValueException if the actual value is not of type string list.
       */
-    var StringListValue: SafeArray[String] = js.native
+    var StringListValue: SafeArray[String]
     
     /**
       * @returns a unicode string value if the key contains one.
       * @throws InvalidRegistryException if the registry is not open.
       * @throws InvalidValueException if the actual value is not of type string.
       */
-    var StringValue: String = js.native
+    var StringValue: String
     
     /**
       * @returns the type of the key value or NOT_DEFINED if the key has no value.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    val ValueType: RegistryValueType = js.native
+    val ValueType: RegistryValueType
     
     /**
       * closes a key in the registry.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def closeKey(): Unit = js.native
+    def closeKey(): Unit
     
     /**
       * creates a new key in the registry.
@@ -444,7 +446,7 @@ object registry {
       * @returns a NULL interface if the key could not be created.
       * @throws InvalidRegistryException if the registry is not open, the registry is readonly or if the key exists and is of type LINK.
       */
-    def createKey(aKeyName: String): XRegistryKey = js.native
+    def createKey(aKeyName: String): XRegistryKey
     
     /**
       * creates a new link in the registry.
@@ -453,112 +455,112 @@ object registry {
       * @returns `TRUE` if the link was created. If the link already exists or the link target does not exist, the function returns `FALSE` .
       * @throws InvalidRegistryException if the registry is not open or the registry is readonly.
       */
-    def createLink(aLinkName: String, aLinkTarget: String): Boolean = js.native
+    def createLink(aLinkName: String, aLinkTarget: String): Boolean
     
     /**
       * deletes a key from the registry.
       * @param rKeyName specifies the relative path from the current key to the key which will be deleted.
       * @throws InvalidRegistryException if the registry is not open, the registry is readonly, the key does not exists or if the key is of type LINK.
       */
-    def deleteKey(rKeyName: String): Unit = js.native
+    def deleteKey(rKeyName: String): Unit
     
     /**
       * deletes a link from the registry.
       * @param rLinkName specifies the relative path from the current key to the link which will be deleted.
       * @throws InvalidRegistryException if the registry is not open, the registry is readonly, or if the link does not exist.
       */
-    def deleteLink(rLinkName: String): Unit = js.native
+    def deleteLink(rLinkName: String): Unit
     
     /**
       * @returns a sequence of ascii strings if the key contains an ascii list value.
       * @throws InvalidRegistryException if the registry is not open.
       * @throws InvalidValueException if the actual value is not of type ascii list.
       */
-    def getAsciiListValue(): SafeArray[String] = js.native
+    def getAsciiListValue(): SafeArray[String]
     
     /**
       * @returns an ascii string value if the key contains one.
       * @throws InvalidRegistryException if the registry is not open.
       * @throws InvalidValueException if the actual value is not of type ascii.
       */
-    def getAsciiValue(): String = js.native
+    def getAsciiValue(): String
     
     /**
       * @returns a binary value if the key contains one.
       * @throws InvalidRegistryException if the registry is not open.
       * @throws InvalidValueException if the actual value is not of type binary.
       */
-    def getBinaryValue(): SafeArray[Double] = js.native
+    def getBinaryValue(): SafeArray[Double]
     
     /**
       * @returns a sequence with the names of all subkeys of the key. If the key has no subkeys, the function returns an empty sequence. If a subkey is a link, th
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def getKeyNames(): SafeArray[String] = js.native
+    def getKeyNames(): SafeArray[String]
     
     /**
       * @param rKeyName specifies the relative path from the current key to the key of the type which will be returned.
       * @returns the type of the specified key.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def getKeyType(rKeyName: String): RegistryKeyType = js.native
+    def getKeyType(rKeyName: String): RegistryKeyType
     
     /**
       * @param rLinkName specifies the relative path from the current key to the link which target will be returned.
       * @returns the target (complete path of a key) of the link specified by rLinkName.
       * @throws InvalidRegistryException if the registry is not open or the link does not exists.
       */
-    def getLinkTarget(rLinkName: String): String = js.native
+    def getLinkTarget(rLinkName: String): String
     
     /**
       * @returns a sequence of longs if the key contains a long list value.
       * @throws InvalidRegistryException if the registry is not open.
       * @throws InvalidValueException if the actual value is not of type long list.
       */
-    def getLongListValue(): SafeArray[Double] = js.native
+    def getLongListValue(): SafeArray[Double]
     
     /**
       * @returns a long value if the key contains one.
       * @throws InvalidRegistryException if the registry is not open.
       * @throws InvalidValueException if the value is not of type long.
       */
-    def getLongValue(): Double = js.native
+    def getLongValue(): Double
     
     /**
       * @param aKeyName specifies a relative path from the current key which will be resolved from all links.
       * @returns the resolved name of a key. The function resolve the complete name of the key. If a link could not be resolved, the linktarget concatenated with
       * @throws InvalidRegistryException if the registry is not open or a recursion was detected.
       */
-    def getResolvedName(aKeyName: String): String = js.native
+    def getResolvedName(aKeyName: String): String
     
     /**
       * @returns a sequence of unicode strings if the key contains an unicode string list value.
       * @throws InvalidRegistryException if the registry is not open.
       * @throws InvalidValueException if the actual value is not of type string list.
       */
-    def getStringListValue(): SafeArray[String] = js.native
+    def getStringListValue(): SafeArray[String]
     
     /**
       * @returns a unicode string value if the key contains one.
       * @throws InvalidRegistryException if the registry is not open.
       * @throws InvalidValueException if the actual value is not of type string.
       */
-    def getStringValue(): String = js.native
+    def getStringValue(): String
     
     /**
       * @returns the type of the key value or NOT_DEFINED if the key has no value.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def getValueType(): RegistryValueType = js.native
+    def getValueType(): RegistryValueType
     
     /**
       * checks if the key can be overwritten.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def isReadOnly(): Boolean = js.native
+    def isReadOnly(): Boolean
     
     /** checks if the key points to an open valid key in the data-source. */
-    def isValid(): Boolean = js.native
+    def isValid(): Boolean
     
     /**
       * opens a sub key of the key.
@@ -568,14 +570,14 @@ object registry {
       * @returns a NULL interface if the key does not exist.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def openKey(aKeyName: String): XRegistryKey = js.native
+    def openKey(aKeyName: String): XRegistryKey
     
     /**
       * opens all subkeys of the key. If a subkey is a link, the link will be resolved and the appropriate key will be opened.
       * @returns an empty sequence if the key has no subkeys.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def openKeys(): SafeArray[XRegistryKey] = js.native
+    def openKeys(): SafeArray[XRegistryKey]
     
     /**
       * sets an ASCII string list value to the key.
@@ -584,7 +586,7 @@ object registry {
       * value, the value will be overridden.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def setAsciiListValue(seqValue: SeqEquiv[String]): Unit = js.native
+    def setAsciiListValue(seqValue: SeqEquiv[String]): Unit
     
     /**
       * sets an ASCII string value to the key.
@@ -593,7 +595,7 @@ object registry {
       * value, the value will be overridden.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def setAsciiValue(value: String): Unit = js.native
+    def setAsciiValue(value: String): Unit
     
     /**
       * sets a binary value to the key.
@@ -601,7 +603,7 @@ object registry {
       * If the key already has a value, the value will be overridden.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def setBinaryValue(value: SeqEquiv[Double]): Unit = js.native
+    def setBinaryValue(value: SeqEquiv[Double]): Unit
     
     /**
       * sets a long list value to the key.
@@ -609,7 +611,7 @@ object registry {
       * If the key already has a value, the value will be overridden.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def setLongListValue(seqValue: SeqEquiv[Double]): Unit = js.native
+    def setLongListValue(seqValue: SeqEquiv[Double]): Unit
     
     /**
       * sets a long value to the key.
@@ -617,7 +619,7 @@ object registry {
       * If the key already has a value, the value will be overridden.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def setLongValue(value: Double): Unit = js.native
+    def setLongValue(value: Double): Unit
     
     /**
       * sets a unicode string value to the key.
@@ -625,7 +627,7 @@ object registry {
       * If the key already has a value, the value will be overridden.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def setStringListValue(seqValue: SeqEquiv[String]): Unit = js.native
+    def setStringListValue(seqValue: SeqEquiv[String]): Unit
     
     /**
       * sets a unicode string value to the key.
@@ -633,7 +635,7 @@ object registry {
       * If the key already has a value, the value will be overridden.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def setStringValue(value: String): Unit = js.native
+    def setStringValue(value: String): Unit
   }
   object XRegistryKey {
     
@@ -809,47 +811,48 @@ object registry {
     * store a value and can have multiple subkeys.
     * @see XRegistryKey
     */
-  @js.native
-  trait XSimpleRegistry extends XInterface {
+  trait XSimpleRegistry
+    extends StObject
+       with XInterface {
     
     /**
       * @returns the root key of the registry.
       * @throws InvalidRegistryException if no registry is open
       */
-    val RootKey: XRegistryKey = js.native
+    val RootKey: XRegistryKey
     
     /** returns the URL of the current data source of the registry. */
-    val URL: String = js.native
+    val URL: String
     
     /**
       * disconnects the registry from the data-source.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /**
       * destroys the registry and the data source.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * @returns the root key of the registry.
       * @throws InvalidRegistryException if no registry is open
       */
-    def getRootKey(): XRegistryKey = js.native
+    def getRootKey(): XRegistryKey
     
     /** returns the URL of the current data source of the registry. */
-    def getURL(): String = js.native
+    def getURL(): String
     
     /**
       * checks if the registry is readonly.
       * @throws InvalidRegistryException if the registry is not open.
       */
-    def isReadOnly(): Boolean = js.native
+    def isReadOnly(): Boolean
     
     /** checks if the registry points to a valid data-source. */
-    def isValid(): Boolean = js.native
+    def isValid(): Boolean
     
     /**
       * DEPRECATED: this method lacks a registry key (better than a URL).
@@ -860,7 +863,7 @@ object registry {
       * @throws InvalidRegistryException if the registry is not open.
       * @throws MergeConflictException if any differences occur during merging
       */
-    def mergeKey(aKeyName: String, aUrl: String): Unit = js.native
+    def mergeKey(aKeyName: String, aUrl: String): Unit
     
     /**
       * connects the registry to a persistent data source represented by an URL.
@@ -871,7 +874,7 @@ object registry {
       * @param bCreate specifies if the data source should be created if it does not already exist.
       * @throws InvalidRegistryException if the registry does not exist.
       */
-    def open(rURL: String, bReadOnly: Boolean, bCreate: Boolean): Unit = js.native
+    def open(rURL: String, bReadOnly: Boolean, bCreate: Boolean): Unit
   }
   object XSimpleRegistry {
     

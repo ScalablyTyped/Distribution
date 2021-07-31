@@ -5,19 +5,17 @@ import typings.firebaseFirestoreTypes.mod.FirestoreError
 import typings.firebaseFirestoreTypes.mod.QuerySnapshot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Complete extends StObject {
     
-    var complete: js.UndefOr[js.Function0[Unit]] = js.native
+    var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.undefined
     
-    var next: js.UndefOr[js.Function1[/* value */ Unit, Unit]] = js.native
+    var next: js.UndefOr[js.Function1[/* value */ Unit, Unit]] = js.undefined
   }
   object Complete {
     
@@ -50,10 +48,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Delete extends StObject {
     
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
   }
   object Delete {
     
@@ -71,14 +68,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Error[T] extends StObject {
     
-    var complete: js.UndefOr[js.Function0[Unit]] = js.native
+    var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.undefined
     
-    var next: js.UndefOr[js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]] = js.native
+    var next: js.UndefOr[js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]] = js.undefined
   }
   object Error {
     
@@ -89,7 +85,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error[_], T] (val x: Self with Error[T]) extends AnyVal {
+    implicit class ErrorMutableBuilder[Self <: Error[?], T] (val x: Self & Error[T]) extends AnyVal {
       
       @scala.inline
       def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
@@ -111,14 +107,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Next[T] extends StObject {
     
-    var complete: js.UndefOr[js.Function0[Unit]] = js.native
+    var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.undefined
     
-    var next: js.UndefOr[js.Function1[/* snapshot */ QuerySnapshot[T], Unit]] = js.native
+    var next: js.UndefOr[js.Function1[/* snapshot */ QuerySnapshot[T], Unit]] = js.undefined
   }
   object Next {
     
@@ -129,7 +124,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class NextMutableBuilder[Self <: Next[_], T] (val x: Self with Next[T]) extends AnyVal {
+    implicit class NextMutableBuilder[Self <: Next[?], T] (val x: Self & Next[T]) extends AnyVal {
       
       @scala.inline
       def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))

@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateReportGroupOutput extends StObject {
   
   /**
     *  Information about the report group that was created. 
     */
-  var reportGroup: js.UndefOr[ReportGroup] = js.native
+  var reportGroup: js.UndefOr[ReportGroup] = js.undefined
 }
 object CreateReportGroupOutput {
   

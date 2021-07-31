@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesDeliveryTimelineView extends StObject {
   
-  var enumValues: DeliveryTimelineView = js.native
+  var enumValues: DeliveryTimelineView
 }
 object EnumValuesDeliveryTimelineView {
   

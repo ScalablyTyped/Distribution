@@ -62,10 +62,13 @@ import typings.reactFoundation.xyGridMod.GridContainerProps
 import typings.reactFoundation.xyGridMod.GridProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-foundation", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-foundation", "Accordion")
   @js.native
@@ -412,9 +415,8 @@ object mod {
   @js.native
   val MenuItem: StatelessComponent[MenuItemProps] = js.native
   
-  @JSImport("react-foundation", "MenuText")
-  @js.native
-  def MenuText(props: MenuItemProps): Element = js.native
+  @scala.inline
+  def MenuText(props: MenuItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuText")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-foundation", "NativeProgress")
   @js.native

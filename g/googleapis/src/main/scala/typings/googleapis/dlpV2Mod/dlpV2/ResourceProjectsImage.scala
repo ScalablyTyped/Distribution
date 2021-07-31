@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Projects$Image")
@@ -37,7 +36,7 @@ class ResourceProjectsImage protected () extends StObject {
     */
   def redact(): GaxiosPromise[SchemaGooglePrivacyDlpV2RedactImageResponse] = js.native
   def redact(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2RedactImageResponse]): Unit = js.native
-  def redact(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2RedactImageResponse] = js.native
+  def redact(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2RedactImageResponse] = js.native
   def redact(params: ParamsResourceProjectsImageRedact): GaxiosPromise[SchemaGooglePrivacyDlpV2RedactImageResponse] = js.native
   def redact(
     params: ParamsResourceProjectsImageRedact,

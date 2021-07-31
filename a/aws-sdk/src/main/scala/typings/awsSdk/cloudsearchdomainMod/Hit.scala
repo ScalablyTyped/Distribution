@@ -2,31 +2,29 @@ package typings.awsSdk.cloudsearchdomainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hit extends StObject {
   
   /**
     * The expressions returned from a document that matches the search request.
     */
-  var exprs: js.UndefOr[Exprs] = js.native
+  var exprs: js.UndefOr[Exprs] = js.undefined
   
   /**
     * The fields returned from a document that matches the search request.
     */
-  var fields: js.UndefOr[Fields] = js.native
+  var fields: js.UndefOr[Fields] = js.undefined
   
   /**
     * The highlights returned from a document that matches the search request.
     */
-  var highlights: js.UndefOr[Highlights] = js.native
+  var highlights: js.UndefOr[Highlights] = js.undefined
   
   /**
     * The document ID of a document that matches the search request.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object Hit {
   

@@ -2,22 +2,20 @@ package typings.foundation.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/tabs.html
-@js.native
 trait TabOptions extends StObject {
   
-  var active_class: js.UndefOr[String] = js.native
+  var active_class: js.UndefOr[String] = js.undefined
   
-  var callback: js.UndefOr[js.Function0[_]] = js.native
+  var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var deep_linking: js.UndefOr[Boolean] = js.native
+  var deep_linking: js.UndefOr[Boolean] = js.undefined
   
-  var is_hover: js.UndefOr[Boolean] = js.native
+  var is_hover: js.UndefOr[Boolean] = js.undefined
   
-  var scroll_to_content: js.UndefOr[Boolean] = js.native
+  var scroll_to_content: js.UndefOr[Boolean] = js.undefined
 }
 object TabOptions {
   
@@ -37,7 +35,7 @@ object TabOptions {
     def setActive_classUndefined: Self = StObject.set(x, "active_class", js.undefined)
     
     @scala.inline
-    def setCallback(value: () => _): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
     def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)

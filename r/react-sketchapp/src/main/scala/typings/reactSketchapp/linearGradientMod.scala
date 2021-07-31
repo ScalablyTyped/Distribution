@@ -7,7 +7,6 @@ import typings.reactSketchapp.reactSketchappStrings.objectBoundingBox
 import typings.reactSketchapp.reactSketchappStrings.userSpaceOnUse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linearGradientMod {
@@ -19,22 +18,21 @@ object linearGradientMod {
   
   type LinearGradient = Component[LinearGradientProps, js.Object, js.Any]
   
-  @js.native
   trait LinearGradientProps extends StObject {
     
-    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
     
-    var gradientUnits: js.UndefOr[objectBoundingBox | userSpaceOnUse] = js.native
+    var gradientUnits: js.UndefOr[objectBoundingBox | userSpaceOnUse] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var x1: NumberProp = js.native
+    var x1: NumberProp
     
-    var x2: NumberProp = js.native
+    var x2: NumberProp
     
-    var y1: NumberProp = js.native
+    var y1: NumberProp
     
-    var y2: NumberProp = js.native
+    var y2: NumberProp
   }
   object LinearGradientProps {
     

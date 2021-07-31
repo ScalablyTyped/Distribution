@@ -11,7 +11,6 @@ import typings.reactNativeNavigation.optionsMod.Options
 import typings.reactNativeNavigation.processorSubscriptionMod.ProcessorSubscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navigationMod {
@@ -76,7 +75,7 @@ object navigationMod {
     /**
       * Resolves arguments passed on launch
       */
-    def getLaunchArgs(): js.Promise[_] = js.native
+    def getLaunchArgs(): js.Promise[js.Any] = js.native
     
     val layoutProcessorsStore: js.Any = js.native
     

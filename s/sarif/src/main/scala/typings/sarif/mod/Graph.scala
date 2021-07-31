@@ -2,31 +2,29 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Graph extends StObject {
   
   /**
     * A description of the graph.
     */
-  var description: js.UndefOr[Message] = js.native
+  var description: js.UndefOr[Message] = js.undefined
   
   /**
     * An array of edge objects representing the edges of the graph.
     */
-  var edges: js.UndefOr[js.Array[Edge]] = js.native
+  var edges: js.UndefOr[js.Array[Edge]] = js.undefined
   
   /**
     * An array of node objects representing the nodes of the graph.
     */
-  var nodes: js.UndefOr[js.Array[Node]] = js.native
+  var nodes: js.UndefOr[js.Array[Node]] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the graph.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 object Graph {
   

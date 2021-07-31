@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddScriptToEvaluateOnNewDocumentResponse extends StObject {
   
   /**
     * Identifier of the added script.
     */
-  var identifier: ScriptIdentifier = js.native
+  var identifier: ScriptIdentifier
 }
 object AddScriptToEvaluateOnNewDocumentResponse {
   

@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutPoint extends StObject {
   
-  /** The transformed input point. */ var outPoint: Point = js.native
+  /** The transformed input point. */ var outPoint: Point
   
-  /** True if inPoint was transformed successfully; otherwise, false. */ var returnValue: Boolean = js.native
+  /** True if inPoint was transformed successfully; otherwise, false. */ var returnValue: Boolean
 }
 object OutPoint {
   

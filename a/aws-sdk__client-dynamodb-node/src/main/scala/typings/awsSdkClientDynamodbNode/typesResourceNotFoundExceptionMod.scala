@@ -18,15 +18,14 @@ import typings.awsSdkClientDynamodbNode.updateTableExceptionsUnionMod.UpdateTabl
 import typings.awsSdkClientDynamodbNode.updateTimeToLiveExceptionsUnionMod.UpdateTimeToLiveExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesResourceNotFoundExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ResourceNotFoundExceptionDetails> * / any */ @js.native
-  trait ResourceNotFoundException
-    extends BatchGetItemExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ResourceNotFoundExceptionDetails> * / any */ trait ResourceNotFoundException
+    extends StObject
+       with BatchGetItemExceptionsUnion
        with BatchWriteItemExceptionsUnion
        with DeleteItemExceptionsUnion
        with DeleteTableExceptionsUnion
@@ -43,13 +42,13 @@ object typesResourceNotFoundExceptionMod {
        with UpdateTableExceptionsUnion
        with UpdateTimeToLiveExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ResourceNotFoundException = js.native
+    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ResourceNotFoundException
   }
   object ResourceNotFoundException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ResourceNotFoundException): ResourceNotFoundException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ResourceNotFoundException = {
+      val __obj = js.Dynamic.literal(name = "ResourceNotFoundException")
       __obj.asInstanceOf[ResourceNotFoundException]
     }
     
@@ -61,13 +60,12 @@ object typesResourceNotFoundExceptionMod {
     }
   }
   
-  @js.native
   trait ResourceNotFoundExceptionDetails extends StObject {
     
     /**
       * <p>The resource which is being requested does not exist.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ResourceNotFoundExceptionDetails {
     

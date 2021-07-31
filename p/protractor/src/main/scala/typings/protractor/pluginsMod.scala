@@ -9,7 +9,6 @@ import typings.protractor.configMod.Config
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginsMod {
@@ -38,11 +37,11 @@ object pluginsMod {
       */
     def getResults(): FailedCount = js.native
     
-    def onPageLoad(args: js.Any*): js.Promise[js.Array[_]] = js.native
+    def onPageLoad(args: js.Any*): js.Promise[js.Array[js.Any]] = js.native
     
-    def onPageStable(args: js.Any*): js.Promise[js.Array[_]] = js.native
+    def onPageStable(args: js.Any*): js.Promise[js.Array[js.Any]] = js.native
     
-    def onPrepare(args: js.Any*): Promise[js.Array[_]] = js.native
+    def onPrepare(args: js.Any*): Promise[js.Array[js.Any]] = js.native
     
     /**
       * Generates the handler for a plugin function (e.g. the setup() function)
@@ -57,9 +56,9 @@ object pluginsMod {
     
     var pluginObjs: js.Array[ProtractorPlugin] = js.native
     
-    def postResults(args: js.Any*): Promise[js.Array[_]] = js.native
+    def postResults(args: js.Any*): Promise[js.Array[js.Any]] = js.native
     
-    def postTest(args: js.Any*): Promise[js.Array[_]] = js.native
+    def postTest(args: js.Any*): Promise[js.Array[js.Any]] = js.native
     
     /* private */ def printPluginResults(specResults: js.Any): js.Any = js.native
     
@@ -87,7 +86,7 @@ object pluginsMod {
     /**
       * @see docs/plugins.md#writing-plugins for information on these functions
       */
-    def setup(args: js.Any*): Promise[js.Array[_]] = js.native
+    def setup(args: js.Any*): Promise[js.Array[js.Any]] = js.native
     
     /**
       * Returns true if any loaded plugin has skipAngularStability enabled.
@@ -96,11 +95,11 @@ object pluginsMod {
       */
     def skipAngularStability(): Boolean = js.native
     
-    def teardown(args: js.Any*): Promise[js.Array[_]] = js.native
+    def teardown(args: js.Any*): Promise[js.Array[js.Any]] = js.native
     
-    def waitForCondition(args: js.Any*): js.Promise[js.Array[_]] = js.native
+    def waitForCondition(args: js.Any*): js.Promise[js.Array[js.Any]] = js.native
     
-    def waitForPromise(args: js.Any*): js.Promise[js.Array[_]] = js.native
+    def waitForPromise(args: js.Any*): js.Promise[js.Array[js.Any]] = js.native
   }
   
   @js.native
@@ -110,25 +109,28 @@ object pluginsMod {
   object PromiseType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PromiseType with Double] = js.native
+    def apply(value: Double): js.UndefOr[PromiseType & Double] = js.native
     
     @js.native
-    sealed trait Q extends PromiseType
-    /* 0 */ val Q: typings.protractor.pluginsMod.PromiseType.Q with Double = js.native
+    sealed trait Q
+      extends StObject
+         with PromiseType
+    /* 0 */ val Q: typings.protractor.pluginsMod.PromiseType.Q & Double = js.native
     
     @js.native
-    sealed trait WEBDRIVER extends PromiseType
-    /* 1 */ val WEBDRIVER: typings.protractor.pluginsMod.PromiseType.WEBDRIVER with Double = js.native
+    sealed trait WEBDRIVER
+      extends StObject
+         with PromiseType
+    /* 1 */ val WEBDRIVER: typings.protractor.pluginsMod.PromiseType.WEBDRIVER & Double = js.native
   }
   
-  @js.native
   trait AssertionResult extends StObject {
     
-    var errorMsg: js.UndefOr[String] = js.native
+    var errorMsg: js.UndefOr[String] = js.undefined
     
-    var passed: Boolean = js.native
+    var passed: Boolean
     
-    var stackTrace: js.UndefOr[String] = js.native
+    var stackTrace: js.UndefOr[String] = js.undefined
   }
   object AssertionResult {
     
@@ -158,18 +160,18 @@ object pluginsMod {
     }
   }
   
-  @js.native
   trait PluginConfig
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     @JSName("package")
-    var _package: js.UndefOr[String] = js.native
+    var _package: js.UndefOr[String] = js.undefined
     
-    var `inline`: js.UndefOr[ProtractorPlugin] = js.native
+    var `inline`: js.UndefOr[ProtractorPlugin] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object PluginConfig {
     
@@ -208,7 +210,6 @@ object pluginsMod {
     }
   }
   
-  @js.native
   trait ProtractorPlugin extends StObject {
     
     /**
@@ -229,7 +230,7 @@ object pluginsMod {
       */
     var addFailure: js.UndefOr[
         js.Function2[/* message */ js.UndefOr[String], /* info */ js.UndefOr[SpecName], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Adds a passed assertion to the test's results.
@@ -244,7 +245,7 @@ object pluginsMod {
       *
       * @throws {Error} Throws an error if called after results have been reported
       */
-    var addSuccess: js.UndefOr[js.Function1[/* info */ js.UndefOr[`0`], Unit]] = js.native
+    var addSuccess: js.UndefOr[js.Function1[/* info */ js.UndefOr[`0`], Unit]] = js.undefined
     
     /**
       * Warns the user that something is problematic.
@@ -258,7 +259,7 @@ object pluginsMod {
       *            Defaults to `PLUGIN_NAME + ' Plugin Tests'`.
       *     Defaults to `{}`.
       */
-    var addWarning: js.UndefOr[js.Function2[/* message */ js.UndefOr[String], /* info */ js.UndefOr[`0`], Unit]] = js.native
+    var addWarning: js.UndefOr[js.Function2[/* message */ js.UndefOr[String], /* info */ js.UndefOr[`0`], Unit]] = js.undefined
     
     /**
       * The plugin's configuration object.
@@ -271,7 +272,7 @@ object pluginsMod {
       *
       * @type {Object}
       */
-    var config: js.UndefOr[PluginConfig] = js.native
+    var config: js.UndefOr[PluginConfig] = js.undefined
     
     /**
       * The name of the plugin.  Used when reporting results.
@@ -281,7 +282,7 @@ object pluginsMod {
       *
       * @type {string}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * This is called inside browser.get() directly after the page loads, and before
@@ -298,7 +299,7 @@ object pluginsMod {
       *     protractor will wait for the promise to resolve before continuing.  If
       *     the promise is rejected, a failed assertion is added to the test results.
       */
-    var onPageLoad: js.UndefOr[js.Function1[/* browser */ ProtractorBrowser, Unit | js.Promise[Unit]]] = js.native
+    var onPageLoad: js.UndefOr[js.Function1[/* browser */ ProtractorBrowser, Unit | js.Promise[Unit]]] = js.undefined
     
     /**
       * This is called inside browser.get() directly after angular is done
@@ -316,7 +317,7 @@ object pluginsMod {
       *     protractor will wait for the promise to resolve before continuing.  If
       *     the promise is rejected, a failed assertion is added to the test results.
       */
-    var onPageStable: js.UndefOr[js.Function1[/* browser */ ProtractorBrowser, Unit | js.Promise[Unit]]] = js.native
+    var onPageStable: js.UndefOr[js.Function1[/* browser */ ProtractorBrowser, Unit | js.Promise[Unit]]] = js.undefined
     
     /**
       * This is called before the test have been run but after the test framework has
@@ -334,7 +335,7 @@ object pluginsMod {
       *     for the promise to resolve before continuing.  If the promise is
       *     rejected, a failed assertion is added to the test results.
       */
-    var onPrepare: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+    var onPrepare: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.undefined
     
     /**
       * Called after the test results have been finalized and any jobs have been
@@ -349,7 +350,7 @@ object pluginsMod {
       *     for the promise to resolve before continuing.  If the promise is
       *     rejected, an error is logged to the console.
       */
-    var postResults: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+    var postResults: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.undefined
     
     /**
       * Called after each test block (in Jasmine, this means an `it` block)
@@ -370,7 +371,7 @@ object pluginsMod {
       */
     var postTest: js.UndefOr[
         js.Function2[/* passed */ Boolean, /* testInfo */ js.Any, Unit | js.Promise[Unit]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Sets up plugins before tests are run. This is called after the WebDriver
@@ -385,7 +386,7 @@ object pluginsMod {
       *     for the promise to resolve before continuing.  If the promise is
       *     rejected, a failed assertion is added to the test results.
       */
-    var setup: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+    var setup: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.undefined
     
     /**
       * Used to turn off default checks for angular stability
@@ -402,7 +403,7 @@ object pluginsMod {
       *
       * @type {boolean}
       */
-    var skipAngularStability: js.UndefOr[Boolean] = js.native
+    var skipAngularStability: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This is called after the tests have been run, but before the WebDriver
@@ -417,7 +418,7 @@ object pluginsMod {
       *     for the promise to resolve before continuing.  If the promise is
       *     rejected, a failed assertion is added to the test results.
       */
-    var teardown: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+    var teardown: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.undefined
     
     /**
       * Between every webdriver action, Protractor calls browser.waitForAngular() to
@@ -439,7 +440,7 @@ object pluginsMod {
       *     is returned, a failed assertion is added to the test results, and Protractor
       *     will continue onto the next command.
       */
-    var waitForCondition: js.UndefOr[js.Function1[/* browser */ ProtractorBrowser, js.Promise[Boolean] | Boolean]] = js.native
+    var waitForCondition: js.UndefOr[js.Function1[/* browser */ ProtractorBrowser, js.Promise[Boolean] | Boolean]] = js.undefined
     
     /**
       * Between every webdriver action, Protractor calls browser.waitForAngular() to
@@ -461,7 +462,7 @@ object pluginsMod {
       *     something other than a promise is returned, protractor will continue
       *     onto the next command.
       */
-    var waitForPromise: js.UndefOr[js.Function1[/* browser */ ProtractorBrowser, js.Promise[Unit]]] = js.native
+    var waitForPromise: js.UndefOr[js.Function1[/* browser */ ProtractorBrowser, js.Promise[Unit]]] = js.undefined
   }
   object ProtractorPlugin {
     
@@ -566,12 +567,11 @@ object pluginsMod {
     }
   }
   
-  @js.native
   trait SpecResult extends StObject {
     
-    var assertions: js.Array[AssertionResult] = js.native
+    var assertions: js.Array[AssertionResult]
     
-    var description: String = js.native
+    var description: String
   }
   object SpecResult {
     

@@ -2,10 +2,8 @@ package typings.firebase.mod.default.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersistenceSettings extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PersistenceSettings extends StObject {
     * about it in
     * https://github.com/firebase/firebase-js-sdk/issues/983.
     */
-  var experimentalForceOwningTab: js.UndefOr[Boolean] = js.native
+  var experimentalForceOwningTab: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to synchronize the in-memory state of multiple tabs. Setting this
@@ -31,7 +29,7 @@ trait PersistenceSettings extends StObject {
     * active tabs. If omitted or set to 'false', `enablePersistence()` will fail
     * in all but the first tab.
     */
-  var synchronizeTabs: js.UndefOr[Boolean] = js.native
+  var synchronizeTabs: js.UndefOr[Boolean] = js.undefined
 }
 object PersistenceSettings {
   

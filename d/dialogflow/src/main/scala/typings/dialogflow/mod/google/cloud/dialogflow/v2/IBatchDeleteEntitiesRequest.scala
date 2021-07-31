@@ -2,21 +2,19 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a BatchDeleteEntitiesRequest. */
-@js.native
 trait IBatchDeleteEntitiesRequest extends StObject {
   
   /** BatchDeleteEntitiesRequest entityValues */
-  var entityValues: js.UndefOr[js.Array[String] | Null] = js.native
+  var entityValues: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** BatchDeleteEntitiesRequest languageCode */
-  var languageCode: js.UndefOr[String | Null] = js.native
+  var languageCode: js.UndefOr[String | Null] = js.undefined
   
   /** BatchDeleteEntitiesRequest parent */
-  var parent: js.UndefOr[String | Null] = js.native
+  var parent: js.UndefOr[String | Null] = js.undefined
 }
 object IBatchDeleteEntitiesRequest {
   

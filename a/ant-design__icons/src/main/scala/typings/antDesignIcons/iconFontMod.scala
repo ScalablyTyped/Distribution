@@ -5,24 +5,24 @@ import typings.antDesignIcons.iconMod.IconBaseProps
 import typings.react.mod.SFC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconFontMod {
   
-  @JSImport("@ant-design/icons/dist/components/IconFont", JSImport.Default)
+  @JSImport("@ant-design/icons/dist/components/IconFont", JSImport.Namespace)
   @js.native
-  def default(): SFC[IconFontProps] = js.native
-  @JSImport("@ant-design/icons/dist/components/IconFont", JSImport.Default)
-  @js.native
-  def default(options: CustomIconOptions): SFC[IconFontProps] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): SFC[IconFontProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[SFC[IconFontProps]]
+  @scala.inline
+  def default(options: CustomIconOptions): SFC[IconFontProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[SFC[IconFontProps]]
+  
   trait CustomIconOptions extends StObject {
     
-    var extraCommonProps: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var extraCommonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var scriptUrl: js.UndefOr[String | js.Array[String]] = js.native
+    var scriptUrl: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object CustomIconOptions {
     
@@ -52,11 +52,12 @@ object iconFontMod {
     }
   }
   
-  @js.native
-  trait IconFontProps extends IconBaseProps {
+  trait IconFontProps
+    extends StObject
+       with IconBaseProps {
     
     @JSName("type")
-    var type_IconFontProps: String = js.native
+    var type_IconFontProps: String
   }
   object IconFontProps {
     

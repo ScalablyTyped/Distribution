@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentAuthorInformation extends StObject {
   
   /**
     * The optional icon path for the author
     */
-  var iconPath: js.UndefOr[Uri] = js.native
+  var iconPath: js.UndefOr[Uri] = js.undefined
   
   /**
     * The display name of the author of the comment
     */
-  var name: String = js.native
+  var name: String
 }
 object CommentAuthorInformation {
   

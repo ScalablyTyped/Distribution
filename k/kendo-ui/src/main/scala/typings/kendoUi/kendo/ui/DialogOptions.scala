@@ -2,55 +2,53 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogOptions extends StObject {
   
-  var actions: js.UndefOr[js.Array[DialogAction]] = js.native
+  var actions: js.UndefOr[js.Array[DialogAction]] = js.undefined
   
-  var animation: js.UndefOr[Boolean | DialogAnimation] = js.native
+  var animation: js.UndefOr[Boolean | DialogAnimation] = js.undefined
   
-  var buttonLayout: js.UndefOr[String] = js.native
+  var buttonLayout: js.UndefOr[String] = js.undefined
   
-  var closable: js.UndefOr[Boolean] = js.native
+  var closable: js.UndefOr[Boolean] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ DialogCloseEvent, Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ DialogCloseEvent, Unit]] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var hide: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.native
+  var hide: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.undefined
   
-  var initOpen: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.native
+  var initOpen: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var messages: js.UndefOr[DialogMessages] = js.native
+  var messages: js.UndefOr[DialogMessages] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var modal: js.UndefOr[Boolean | DialogModal] = js.native
+  var modal: js.UndefOr[Boolean | DialogModal] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.undefined
   
-  var show: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.native
+  var show: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String | Boolean] = js.native
+  var title: js.UndefOr[String | Boolean] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object DialogOptions {
   

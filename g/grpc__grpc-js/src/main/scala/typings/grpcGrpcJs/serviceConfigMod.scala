@@ -3,31 +3,31 @@ package typings.grpcGrpcJs
 import typings.grpcGrpcJs.loadBalancingConfigMod.LoadBalancingConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceConfigMod {
   
-  @JSImport("@grpc/grpc-js/build/src/service-config", "extractAndSelectServiceConfig")
+  @JSImport("@grpc/grpc-js/build/src/service-config", JSImport.Namespace)
   @js.native
-  def extractAndSelectServiceConfig(txtRecord: js.Array[js.Array[String]], percentage: Double): ServiceConfig | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@grpc/grpc-js/build/src/service-config", "validateServiceConfig")
-  @js.native
-  def validateServiceConfig(obj: js.Any): ServiceConfig = js.native
+  @scala.inline
+  def extractAndSelectServiceConfig(txtRecord: js.Array[js.Array[String]], percentage: Double): ServiceConfig | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("extractAndSelectServiceConfig")(txtRecord.asInstanceOf[js.Any], percentage.asInstanceOf[js.Any])).asInstanceOf[ServiceConfig | Null]
   
-  @js.native
+  @scala.inline
+  def validateServiceConfig(obj: js.Any): ServiceConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("validateServiceConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[ServiceConfig]
+  
   trait MethodConfig extends StObject {
     
-    var maxRequestBytes: js.UndefOr[Double] = js.native
+    var maxRequestBytes: js.UndefOr[Double] = js.undefined
     
-    var maxResponseBytes: js.UndefOr[Double] = js.native
+    var maxResponseBytes: js.UndefOr[Double] = js.undefined
     
-    var name: js.Array[MethodConfigName] = js.native
+    var name: js.Array[MethodConfigName]
     
-    var timeout: js.UndefOr[String] = js.native
+    var timeout: js.UndefOr[String] = js.undefined
     
-    var waitForReady: js.UndefOr[Boolean] = js.native
+    var waitForReady: js.UndefOr[Boolean] = js.undefined
   }
   object MethodConfig {
     
@@ -72,12 +72,11 @@ object serviceConfigMod {
     }
   }
   
-  @js.native
   trait MethodConfigName extends StObject {
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var service: String = js.native
+    var service: String
   }
   object MethodConfigName {
     
@@ -101,14 +100,13 @@ object serviceConfigMod {
     }
   }
   
-  @js.native
   trait ServiceConfig extends StObject {
     
-    var loadBalancingConfig: js.Array[LoadBalancingConfig] = js.native
+    var loadBalancingConfig: js.Array[LoadBalancingConfig]
     
-    var loadBalancingPolicy: js.UndefOr[String] = js.native
+    var loadBalancingPolicy: js.UndefOr[String] = js.undefined
     
-    var methodConfig: js.Array[MethodConfig] = js.native
+    var methodConfig: js.Array[MethodConfig]
   }
   object ServiceConfig {
     
@@ -141,16 +139,15 @@ object serviceConfigMod {
     }
   }
   
-  @js.native
   trait ServiceConfigCanaryConfig extends StObject {
     
-    var clientHostname: js.UndefOr[js.Array[String]] = js.native
+    var clientHostname: js.UndefOr[js.Array[String]] = js.undefined
     
-    var clientLanguage: js.UndefOr[js.Array[String]] = js.native
+    var clientLanguage: js.UndefOr[js.Array[String]] = js.undefined
     
-    var percentage: js.UndefOr[Double] = js.native
+    var percentage: js.UndefOr[Double] = js.undefined
     
-    var serviceConfig: ServiceConfig = js.native
+    var serviceConfig: ServiceConfig
   }
   object ServiceConfigCanaryConfig {
     

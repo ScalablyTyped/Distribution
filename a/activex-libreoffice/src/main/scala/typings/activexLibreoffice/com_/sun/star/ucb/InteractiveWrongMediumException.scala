@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is thrown when the wrong medium is inserted into a removable drive during an operation. */
-@js.native
-trait InteractiveWrongMediumException extends ClassifiedInteractionRequest {
+trait InteractiveWrongMediumException
+  extends StObject
+     with ClassifiedInteractionRequest {
   
   /** identifies the medium thats needed to continue with the pending operation. */
-  var Medium: js.Any = js.native
+  var Medium: js.Any
 }
 object InteractiveWrongMediumException {
   

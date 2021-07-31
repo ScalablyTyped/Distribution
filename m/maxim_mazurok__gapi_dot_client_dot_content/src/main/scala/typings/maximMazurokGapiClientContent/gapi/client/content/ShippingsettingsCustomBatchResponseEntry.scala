@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShippingsettingsCustomBatchResponseEntry extends StObject {
   
   /** The ID of the request entry to which this entry responds. */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /** A list of errors defined if, and only if, the request failed. */
-  var errors: js.UndefOr[Errors] = js.native
+  var errors: js.UndefOr[Errors] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#shippingsettingsCustomBatchResponseEntry`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The retrieved or updated account shipping settings. */
-  var shippingSettings: js.UndefOr[ShippingSettings] = js.native
+  var shippingSettings: js.UndefOr[ShippingSettings] = js.undefined
 }
 object ShippingsettingsCustomBatchResponseEntry {
   

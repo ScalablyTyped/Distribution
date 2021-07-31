@@ -3,34 +3,28 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.constructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstructorMemberType
-  extends AbstractBase
+  extends StObject
+     with AbstractBase
      with IDLInterfaceMemberType {
   
   /** An array of arguments for the constructor operation. */
-  var arguments: js.Array[Argument] = js.native
+  var arguments: js.Array[Argument]
   
   @JSName("parent")
-  var parent_ConstructorMemberType: InterfaceType = js.native
+  var parent_ConstructorMemberType: InterfaceType
   
   @JSName("type")
-  var type_ConstructorMemberType: constructor = js.native
+  var type_ConstructorMemberType: constructor
 }
 object ConstructorMemberType {
   
   @scala.inline
-  def apply(
-    arguments: js.Array[Argument],
-    extAttrs: js.Array[ExtendedAttribute],
-    parent: InterfaceType,
-    `type`: constructor
-  ): ConstructorMemberType = {
+  def apply(arguments: js.Array[Argument], extAttrs: js.Array[ExtendedAttribute], parent: InterfaceType): ConstructorMemberType = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("constructor")
     __obj.asInstanceOf[ConstructorMemberType]
   }
   

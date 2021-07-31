@@ -10,9 +10,9 @@ Utilities for MDX libraries
 | ------------------ | :-------------: |
 | Full name          | @mdx-js/util |
 | Keywords           | mdx, markdown, react, jsx, remark, mdxast |
-| # releases         | 54 |
+| # releases         | 60 |
 | # dependents       | 8 |
-| # downloads        | 28037418 |
+| # downloads        | 52271840 |
 | # stars            | 0 |
 
 ## Links

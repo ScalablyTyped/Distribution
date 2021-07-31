@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Commentthreads")
@@ -32,7 +31,7 @@ class ResourceCommentthreads protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaCommentThread] = js.native
   def insert(callback: BodyResponseCallback[SchemaCommentThread]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommentThread] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCommentThread] = js.native
   def insert(params: ParamsResourceCommentthreadsInsert): GaxiosPromise[SchemaCommentThread] = js.native
   def insert(params: ParamsResourceCommentthreadsInsert, callback: BodyResponseCallback[SchemaCommentThread]): Unit = js.native
   def insert(
@@ -72,7 +71,7 @@ class ResourceCommentthreads protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCommentThreadListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCommentThreadListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommentThreadListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCommentThreadListResponse] = js.native
   def list(params: ParamsResourceCommentthreadsList): GaxiosPromise[SchemaCommentThreadListResponse] = js.native
   def list(
     params: ParamsResourceCommentthreadsList,
@@ -105,7 +104,7 @@ class ResourceCommentthreads protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaCommentThread] = js.native
   def update(callback: BodyResponseCallback[SchemaCommentThread]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommentThread] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCommentThread] = js.native
   def update(params: ParamsResourceCommentthreadsUpdate): GaxiosPromise[SchemaCommentThread] = js.native
   def update(params: ParamsResourceCommentthreadsUpdate, callback: BodyResponseCallback[SchemaCommentThread]): Unit = js.native
   def update(

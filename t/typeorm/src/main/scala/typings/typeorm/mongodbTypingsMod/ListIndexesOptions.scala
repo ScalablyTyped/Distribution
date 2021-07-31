@@ -2,22 +2,20 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIndexesOptions extends StObject {
   
   /**
     * The batchSize for the returned command cursor or if pre 2.8 the systems batch collection.
     */
-  var batchSize: js.UndefOr[scala.Double] = js.native
+  var batchSize: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * The preferred read preference (ReadPreference.PRIMARY, ReadPreference.PRIMARY_PREFERRED,
     * ReadPreference.SECONDARY, ReadPreference.SECONDARY_PREFERRED, ReadPreference.NEAREST).
     */
-  var readPreference: js.UndefOr[ReadPreference | String] = js.native
+  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
 }
 object ListIndexesOptions {
   

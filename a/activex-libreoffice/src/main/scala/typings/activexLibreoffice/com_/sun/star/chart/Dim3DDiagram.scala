@@ -4,26 +4,25 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is a service for diagrams that support the capability to render themselves as three-dimensional diagrams as well as two-dimensional ones. */
-@js.native
 trait Dim3DDiagram
-  extends X3DDisplay
+  extends StObject
+     with X3DDisplay
      with X3DDefaultSetter {
   
   /** If set to `TRUE` , the chart becomes a three-dimensional chart. Otherwise it is two-dimensional. */
-  var Dim3D: Boolean = js.native
+  var Dim3D: Boolean
   
   /** Perspective of 3D charts ( [0,100] ). */
-  var Perspective: Double = js.native
+  var Perspective: Double
   
   /** Horizontal rotation of 3D charts in degrees ( ]-180,180] ). */
-  var RotationHorizontal: Double = js.native
+  var RotationHorizontal: Double
   
   /** Vertical rotation of 3D charts in degrees ( ]-180,180] ). */
-  var RotationVertical: Double = js.native
+  var RotationVertical: Double
 }
 object Dim3DDiagram {
   

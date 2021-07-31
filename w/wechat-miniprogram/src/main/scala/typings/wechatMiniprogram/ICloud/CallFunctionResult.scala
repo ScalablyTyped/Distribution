@@ -4,13 +4,13 @@ import typings.wechatMiniprogram.AnyObject
 import typings.wechatMiniprogram.IAPISuccessParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CallFunctionResult extends IAPISuccessParam {
+trait CallFunctionResult
+  extends StObject
+     with IAPISuccessParam {
   
-  var result: js.UndefOr[AnyObject | String] = js.native
+  var result: js.UndefOr[AnyObject | String] = js.undefined
 }
 object CallFunctionResult {
   

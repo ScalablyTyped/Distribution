@@ -2,19 +2,17 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxPivotPage extends StObject {
   
-  var qArea: Rect = js.native
+  var qArea: Rect
   
-  var qData: js.Array[NxPivotValuePoint] = js.native
+  var qData: js.Array[NxPivotValuePoint]
   
-  var qLeft: js.Array[NxPivotDimensioncell] = js.native
+  var qLeft: js.Array[NxPivotDimensioncell]
   
-  var qTop: js.Array[NxPivotDimensioncell] = js.native
+  var qTop: js.Array[NxPivotDimensioncell]
 }
 object NxPivotPage {
   

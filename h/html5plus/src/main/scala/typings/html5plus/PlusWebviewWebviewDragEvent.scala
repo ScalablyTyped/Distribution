@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewDragEvent extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait PlusWebviewWebviewDragEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /**
     * 当前操作窗口标识
@@ -32,7 +30,7 @@ trait PlusWebviewWebviewDragEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * 关联窗口标识
@@ -40,7 +38,7 @@ trait PlusWebviewWebviewDragEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var otherId: js.UndefOr[String] = js.native
+  var otherId: js.UndefOr[String] = js.undefined
   
   /**
     * 滑动进度
@@ -51,7 +49,7 @@ trait PlusWebviewWebviewDragEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var progress: js.UndefOr[Double] = js.native
+  var progress: js.UndefOr[Double] = js.undefined
   
   /**
     * 窗口滑动结果
@@ -62,7 +60,7 @@ trait PlusWebviewWebviewDragEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var result: js.UndefOr[String] = js.native
+  var result: js.UndefOr[String] = js.undefined
   
   /**
     * 主窗口标识
@@ -70,7 +68,7 @@ trait PlusWebviewWebviewDragEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var targetId: js.UndefOr[String] = js.native
+  var targetId: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口滑动类型
@@ -81,7 +79,7 @@ trait PlusWebviewWebviewDragEvent extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object PlusWebviewWebviewDragEvent {
   

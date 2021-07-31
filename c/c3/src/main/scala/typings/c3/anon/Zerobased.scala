@@ -2,16 +2,14 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Zerobased extends StObject {
   
   /**
     * Set if min or max value will be 0 on area chart.
     */
-  var zerobased: js.UndefOr[Boolean] = js.native
+  var zerobased: js.UndefOr[Boolean] = js.undefined
 }
 object Zerobased {
   

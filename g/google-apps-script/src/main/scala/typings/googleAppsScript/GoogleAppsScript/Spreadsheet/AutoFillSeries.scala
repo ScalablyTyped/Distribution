@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,8 +15,12 @@ sealed trait AutoFillSeries extends StObject
 object AutoFillSeries extends StObject {
   
   @js.native
-  sealed trait ALTERNATE_SERIES extends AutoFillSeries
+  sealed trait ALTERNATE_SERIES
+    extends StObject
+       with AutoFillSeries
   
   @js.native
-  sealed trait DEFAULT_SERIES extends AutoFillSeries
+  sealed trait DEFAULT_SERIES
+    extends StObject
+       with AutoFillSeries
 }

@@ -2,17 +2,15 @@ package typings.plotlyJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotScene extends StObject {
   
-  var center: Point = js.native
+  var center: Point
   
-  var eye: Point = js.native
+  var eye: Point
   
-  var up: Point = js.native
+  var up: Point
 }
 object PlotScene {
   

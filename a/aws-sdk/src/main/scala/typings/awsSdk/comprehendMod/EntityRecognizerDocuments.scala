@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityRecognizerDocuments extends StObject {
   
   /**
     *  Specifies the Amazon S3 location where the training documents for an entity recognizer are located. The URI must be in the same region as the API endpoint that you are calling.
     */
-  var S3Uri: typings.awsSdk.comprehendMod.S3Uri = js.native
+  var S3Uri: typings.awsSdk.comprehendMod.S3Uri
 }
 object EntityRecognizerDocuments {
   

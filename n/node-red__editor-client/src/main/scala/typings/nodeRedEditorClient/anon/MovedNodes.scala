@@ -3,29 +3,27 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.deleteSubflow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MovedNodes extends StObject {
   
-  var createdLinks: js.UndefOr[js.Array[js.Object]] = js.native
+  var createdLinks: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var links: js.UndefOr[js.Array[js.Object]] = js.native
+  var links: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var movedNodes: js.UndefOr[js.Array[js.Object]] = js.native
+  var movedNodes: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var subflow: js.UndefOr[js.Object] = js.native
+  var subflow: js.UndefOr[js.Object] = js.undefined
   
-  var subflows: js.UndefOr[js.Array[js.Object]] = js.native
+  var subflows: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var t: deleteSubflow = js.native
+  var t: deleteSubflow
 }
 object MovedNodes {
   
   @scala.inline
-  def apply(t: deleteSubflow): MovedNodes = {
-    val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
+  def apply(): MovedNodes = {
+    val __obj = js.Dynamic.literal(t = "deleteSubflow")
     __obj.asInstanceOf[MovedNodes]
   }
   

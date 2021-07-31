@@ -18,41 +18,39 @@ import typings.glaze.glazeStrings.zIndex
 import typings.glaze.themeMod.ScaleTokens
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderWidth extends StObject {
   
-  var border: ScaleTokens[typings.glaze.glazeStrings.border] = js.native
+  var border: ScaleTokens[typings.glaze.glazeStrings.border]
   
-  var borderWidth: ScaleTokens[typings.glaze.glazeStrings.borderWidth] = js.native
+  var borderWidth: ScaleTokens[typings.glaze.glazeStrings.borderWidth]
   
-  var color: ScaleTokens[typings.glaze.glazeStrings.color] = js.native
+  var color: ScaleTokens[typings.glaze.glazeStrings.color]
   
-  var duration: ScaleTokens[animationDuration] = js.native
+  var duration: ScaleTokens[animationDuration]
   
-  var fontFamily: ScaleTokens[typings.glaze.glazeStrings.fontFamily] = js.native
+  var fontFamily: ScaleTokens[typings.glaze.glazeStrings.fontFamily]
   
-  var fontSize: ScaleTokens[typings.glaze.glazeStrings.fontSize] = js.native
+  var fontSize: ScaleTokens[typings.glaze.glazeStrings.fontSize]
   
-  var fontWeight: ScaleTokens[typings.glaze.glazeStrings.fontWeight] = js.native
+  var fontWeight: ScaleTokens[typings.glaze.glazeStrings.fontWeight]
   
-  var letterSpacing: ScaleTokens[typings.glaze.glazeStrings.letterSpacing] = js.native
+  var letterSpacing: ScaleTokens[typings.glaze.glazeStrings.letterSpacing]
   
-  var lineHeight: ScaleTokens[typings.glaze.glazeStrings.lineHeight] = js.native
+  var lineHeight: ScaleTokens[typings.glaze.glazeStrings.lineHeight]
   
-  var opacity: ScaleTokens[typings.glaze.glazeStrings.opacity] = js.native
+  var opacity: ScaleTokens[typings.glaze.glazeStrings.opacity]
   
-  var radius: ScaleTokens[borderRadius] = js.native
+  var radius: ScaleTokens[borderRadius]
   
-  var shadow: ScaleTokens[boxShadow] = js.native
+  var shadow: ScaleTokens[boxShadow]
   
-  var size: ScaleTokens[width] = js.native
+  var size: ScaleTokens[width]
   
-  var spacing: ScaleTokens[margin] = js.native
+  var spacing: ScaleTokens[margin]
   
-  var zIndex: ScaleTokens[typings.glaze.glazeStrings.zIndex] = js.native
+  var zIndex: ScaleTokens[typings.glaze.glazeStrings.zIndex]
 }
 object BorderWidth {
   

@@ -2,39 +2,37 @@ package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used by an IListBinding to provide change notifications when items in a IListDataSource change.
   **/
-@js.native
 trait IListNotificationHandler[T] extends StObject {
   
   //#region Methods
   /**
     * Indicates the start of a notification batch. Objects that are listening for notifications should defer making updates until endNotifications is called.
     **/
-  def beginNotifications(): Unit = js.native
+  def beginNotifications(): Unit
   
   /**
     * Indicates that an item changed.
     * @param newItem The updated item.
     * @param oldItem The original item.
     **/
-  def changed(newItem: IItem[T], oldItem: IItem[T]): Unit = js.native
+  def changed(newItem: IItem[T], oldItem: IItem[T]): Unit
   
   /**
     * Indicates that the number of items in the IListDataSource has changed.
     * @param newCount The updated count.
     * @param oldCount The original count.
     **/
-  def countChanged(newCount: Double, oldCount: Double): Unit = js.native
+  def countChanged(newCount: Double, oldCount: Double): Unit
   
   /**
     * Indicates the end of a notification batch. When the beginNotifications method is called, objects listening for notifications should defer making updates until endNotifications is called.
     **/
-  def endNotifications(): Unit = js.native
+  def endNotifications(): Unit
   
   /**
     * Indicates that the index of an item changed.
@@ -42,7 +40,7 @@ trait IListNotificationHandler[T] extends StObject {
     * @param newIndex The new index.
     * @param oldIndex The original index.
     **/
-  def indexChanged(handle: String, newIndex: Double, oldIndex: Double): Unit = js.native
+  def indexChanged(handle: String, newIndex: Double, oldIndex: Double): Unit
   
   /**
     * Indicates that an item was added to the IListDataSource.
@@ -50,13 +48,13 @@ trait IListNotificationHandler[T] extends StObject {
     * @param previousHandle The temporary ID of the item that precedes the new item.
     * @param nextHandle The temporary ID of the item that follows the new item.
     **/
-  def inserted(itemPromise: IItemPromise[T], previousHandle: String, nextHandle: String): Unit = js.native
+  def inserted(itemPromise: IItemPromise[T], previousHandle: String, nextHandle: String): Unit
   
   /**
     * Indicates that an IItemPromise was fulfilled and that the item is now available.
     * @param item The fulfilled item.
     **/
-  def itemAvailable(item: IItem[T]): Unit = js.native
+  def itemAvailable(item: IItem[T]): Unit
   
   /**
     * Indicates that an item was moved.
@@ -64,14 +62,14 @@ trait IListNotificationHandler[T] extends StObject {
     * @param previousHandle The temporary ID of the item that now precedes the moved item.
     * @param nextHandle The temporary ID of the item that now follows the moved item.
     **/
-  def moved(item: IItemPromise[T], previousHandle: String, nextHandle: String): Unit = js.native
+  def moved(item: IItemPromise[T], previousHandle: String, nextHandle: String): Unit
   
   /**
     * Indicates that an item was removed.
     * @param handle The temporary ID of the item that was removed.
     * @param mirage true if the item never actually existed; false if the item was actually present in the IListDataSource.
     **/
-  def removed(handle: String, mirage: Boolean): Unit = js.native
+  def removed(handle: String, mirage: Boolean): Unit
 }
 object IListNotificationHandler {
   
@@ -92,7 +90,7 @@ object IListNotificationHandler {
   }
   
   @scala.inline
-  implicit class IListNotificationHandlerMutableBuilder[Self <: IListNotificationHandler[_], T] (val x: Self with IListNotificationHandler[T]) extends AnyVal {
+  implicit class IListNotificationHandlerMutableBuilder[Self <: IListNotificationHandler[?], T] (val x: Self & IListNotificationHandler[T]) extends AnyVal {
     
     @scala.inline
     def setBeginNotifications(value: () => Unit): Self = StObject.set(x, "beginNotifications", js.Any.fromFunction0(value))

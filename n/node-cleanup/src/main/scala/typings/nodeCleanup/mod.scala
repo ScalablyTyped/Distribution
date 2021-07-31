@@ -3,30 +3,28 @@ package typings.nodeCleanup
 import typings.nodeCleanup.anon.CtrlC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("node-cleanup", JSImport.Namespace)
-  @js.native
-  def apply(): Unit = js.native
-  @JSImport("node-cleanup", JSImport.Namespace)
-  @js.native
-  def apply(cleanupHandler: js.UndefOr[scala.Nothing], stderrMessages: CtrlC): Unit = js.native
-  @JSImport("node-cleanup", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  @scala.inline
   def apply(
     cleanupHandler: js.Function2[/* exitCode */ Double | Null, /* signal */ String | Null, js.UndefOr[Boolean | Unit]]
-  ): Unit = js.native
-  @JSImport("node-cleanup", JSImport.Namespace)
-  @js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].apply(cleanupHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     cleanupHandler: js.Function2[/* exitCode */ Double | Null, /* signal */ String | Null, js.UndefOr[Boolean | Unit]],
     stderrMessages: CtrlC
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(cleanupHandler.asInstanceOf[js.Any], stderrMessages.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(cleanupHandler: Unit, stderrMessages: CtrlC): Unit = (^.asInstanceOf[js.Dynamic].apply(cleanupHandler.asInstanceOf[js.Any], stderrMessages.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("node-cleanup", "uninstall")
+  @JSImport("node-cleanup", JSImport.Namespace)
   @js.native
-  def uninstall(): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def uninstall(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")().asInstanceOf[Unit]
 }

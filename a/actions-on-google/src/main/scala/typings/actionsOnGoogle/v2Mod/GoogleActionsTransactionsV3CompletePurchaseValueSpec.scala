@@ -2,22 +2,20 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsTransactionsV3CompletePurchaseValueSpec extends StObject {
   
   /**
     * An opaque string specified by developer, which would associate with the
     * purchase and is expected to return as part of purchase data.
     */
-  var developerPayload: js.UndefOr[String] = js.native
+  var developerPayload: js.UndefOr[String] = js.undefined
   
   /**
     * The product being purchased.
     */
-  var skuId: js.UndefOr[GoogleActionsTransactionsV3SkuId] = js.native
+  var skuId: js.UndefOr[GoogleActionsTransactionsV3SkuId] = js.undefined
 }
 object GoogleActionsTransactionsV3CompletePurchaseValueSpec {
   

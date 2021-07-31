@@ -2,24 +2,22 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A service account.
   */
-@js.native
 trait SchemaServiceAccount extends StObject {
   
   /**
     * Email address of the service account.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The list of scopes to be made available for this service account.
     */
-  var scopes: js.UndefOr[js.Array[String]] = js.native
+  var scopes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaServiceAccount {
   

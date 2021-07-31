@@ -3,56 +3,54 @@ package typings.phaser.Phaser.Types.Core
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoaderConfig extends StObject {
   
   /**
     * Should the XHR request use async or not?
     */
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A URL used to resolve paths given to the loader. Example: 'http://labs.phaser.io/assets/'.
     */
-  var baseURL: js.UndefOr[String] = js.native
+  var baseURL: js.UndefOr[String] = js.undefined
   
   /**
     * 'anonymous', 'use-credentials', or `undefined`. If you're not making cross-origin requests, leave this as `undefined`. See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_settings_attributes}.
     */
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of resources the loader will start loading at once.
     */
-  var maxParallelDownloads: js.UndefOr[integer] = js.native
+  var maxParallelDownloads: js.UndefOr[integer] = js.undefined
   
   /**
     * Optional password for all XHR requests.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * A URL path used to resolve relative paths given to the loader. Example: 'images/sprites/'.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The response type of the XHR request, e.g. `blob`, `text`, etc.
     */
-  var responseType: js.UndefOr[String] = js.native
+  var responseType: js.UndefOr[String] = js.undefined
   
   /**
     * Optional XHR timeout value, in ms.
     */
-  var timeout: js.UndefOr[integer] = js.native
+  var timeout: js.UndefOr[integer] = js.undefined
   
   /**
     * Optional username for all XHR requests.
     */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object LoaderConfig {
   

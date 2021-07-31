@@ -3,19 +3,17 @@ package typings.winrtUwp.Windows.Services.Store
 import typings.winrtUwp.Windows.ApplicationModel.Package
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides info about a package for the current app that has an update available for download from the Windows Store. */
-@js.native
 trait StorePackageUpdate extends StObject {
   
   /** Gets the package that has an update available for download from the Windows Store. */
   @JSName("package")
-  var _package: Package = js.native
+  var _package: Package
   
   /** Gets a value that indicates whether the package that has an update available for download from the Windows Store is a mandatory package, as specified by the developer in the Windows Dev Center dashboard. */
-  var mandatory: Boolean = js.native
+  var mandatory: Boolean
 }
 object StorePackageUpdate {
   

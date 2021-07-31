@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderUiTemplateResponse extends StObject {
   
   /**
     * A list of one or more RenderingError objects if any were encountered while rendering the template. If there were no errors, the list is empty.
     */
-  var Errors: RenderingErrorList = js.native
+  var Errors: RenderingErrorList
   
   /**
     * A Liquid template that renders the HTML for the worker UI.
     */
-  var RenderedContent: String = js.native
+  var RenderedContent: String
 }
 object RenderUiTemplateResponse {
   

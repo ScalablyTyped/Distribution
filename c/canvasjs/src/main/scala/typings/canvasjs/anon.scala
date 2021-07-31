@@ -7,19 +7,17 @@ import typings.canvasjs.mod.ChartDataPoint
 import typings.canvasjs.mod.ChartDataSeriesOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Axis extends StObject {
     
-    var axis: ChartAxisYOptions = js.native
+    var axis: ChartAxisYOptions
     
-    var chart: typings.canvasjs.mod.Chart = js.native
+    var chart: typings.canvasjs.mod.Chart
     
-    var stripline: this.type = js.native
+    var stripline: this.type
   }
   object Axis {
     
@@ -43,16 +41,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Chart extends StObject {
     
-    var chart: typings.canvasjs.mod.Chart = js.native
+    var chart: typings.canvasjs.mod.Chart
     
-    var dataPoint: ChartDataPoint = js.native
+    var dataPoint: ChartDataPoint
     
-    var dataSeries: ChartDataSeriesOptions = js.native
+    var dataSeries: ChartDataSeriesOptions
     
-    var legend: this.type = js.native
+    var legend: this.type
   }
   object Chart {
     
@@ -84,12 +81,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DataPoint extends StObject {
     
-    var dataPoint: ChartDataPoint = js.native
+    var dataPoint: ChartDataPoint
     
-    var dataSeries: ChartDataSeriesOptions = js.native
+    var dataSeries: ChartDataSeriesOptions
   }
   object DataPoint {
     
@@ -110,20 +106,19 @@ object anon {
     }
   }
   
-  @js.native
   trait DataSeries extends StObject {
     
-    var chart: typings.canvasjs.mod.Chart = js.native
+    var chart: typings.canvasjs.mod.Chart
     
-    var dataPoint: ChartDataPoint = js.native
+    var dataPoint: ChartDataPoint
     
-    var dataSeries: ChartDataSeriesOptions = js.native
+    var dataSeries: ChartDataSeriesOptions
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var pencent: js.UndefOr[Double] = js.native
+    var pencent: js.UndefOr[Double] = js.undefined
     
-    var total: js.UndefOr[Double] = js.native
+    var total: js.UndefOr[Double] = js.undefined
   }
   object DataSeries {
     
@@ -165,14 +160,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Entries extends StObject {
     
-    var chart: typings.canvasjs.mod.Chart = js.native
+    var chart: typings.canvasjs.mod.Chart
     
-    var entries: js.Array[DataPoint] = js.native
+    var entries: js.Array[DataPoint]
     
-    var toolTip: this.type = js.native
+    var toolTip: this.type
   }
   object Entries {
     
@@ -199,14 +193,13 @@ object anon {
     }
   }
   
-  @js.native
   trait FileName extends StObject {
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var format: jpg | png = js.native
+    var format: jpg | png
     
-    var toDataURL: js.UndefOr[Boolean] = js.native
+    var toDataURL: js.UndefOr[Boolean] = js.undefined
   }
   object FileName {
     
@@ -236,16 +229,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Label extends StObject {
     
-    var axis: ChartAxisYOptions = js.native
+    var axis: ChartAxisYOptions
     
-    var chart: typings.canvasjs.mod.Chart = js.native
+    var chart: typings.canvasjs.mod.Chart
     
-    var label: String = js.native
+    var label: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object Label {
     
@@ -272,16 +264,15 @@ object anon {
     }
   }
   
-  @js.native
   trait X1 extends StObject {
     
-    var x1: Double = js.native
+    var x1: Double
     
-    var x2: Double = js.native
+    var x2: Double
     
-    var y1: Double = js.native
+    var y1: Double
     
-    var y2: Double = js.native
+    var y2: Double
   }
   object X1 {
     

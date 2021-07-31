@@ -7,168 +7,155 @@ import typings.std.Iterable
 import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("iterall", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("iterall", "$$asyncIterator")
   @js.native
   val asyncIterator: js.Symbol = js.native
   
-  @JSImport("iterall", "createAsyncIterator")
-  @js.native
-  def createAsyncIterator(collection: js.Any): Unit | (AsyncIterator[_, _, js.UndefOr[scala.Nothing]]) = js.native
-  @JSImport("iterall", "createAsyncIterator")
-  @js.native
-  def createAsyncIterator(collection: Length): AsyncIterator[_, _, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("iterall", "createAsyncIterator")
-  @js.native
-  def createAsyncIterator[TValue](collection: AsyncIterable[TValue]): AsyncIterator[TValue, _, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("iterall", "createAsyncIterator")
-  @js.native
-  def createAsyncIterator[TValue](collection: Iterable[js.Promise[TValue] | TValue]): AsyncIterator[TValue, _, js.UndefOr[scala.Nothing]] = js.native
+  @scala.inline
+  def createAsyncIterator(collection: js.Any): Unit | (AsyncIterator[js.Any, js.Any, Unit]) = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsyncIterator")(collection.asInstanceOf[js.Any]).asInstanceOf[Unit | (AsyncIterator[js.Any, js.Any, Unit])]
+  @scala.inline
+  def createAsyncIterator(collection: Length): AsyncIterator[js.Any, js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsyncIterator")(collection.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[js.Any, js.Any, Unit]]
+  @scala.inline
+  def createAsyncIterator[TValue](collection: AsyncIterable[TValue]): AsyncIterator[TValue, js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsyncIterator")(collection.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[TValue, js.Any, Unit]]
+  @scala.inline
+  def createAsyncIterator[TValue](collection: Iterable[js.Promise[TValue] | TValue]): AsyncIterator[TValue, js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsyncIterator")(collection.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[TValue, js.Any, Unit]]
   
-  @JSImport("iterall", "createIterator")
-  @js.native
-  def createIterator(collection: js.Any): Unit | (Iterator[_, _, js.UndefOr[scala.Nothing]]) = js.native
-  @JSImport("iterall", "createIterator")
-  @js.native
-  def createIterator(collection: Length): Iterator[_, _, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("iterall", "createIterator")
-  @js.native
-  def createIterator[TValue](collection: Iterable[TValue]): Iterator[TValue, _, js.UndefOr[scala.Nothing]] = js.native
+  @scala.inline
+  def createIterator(collection: js.Any): Unit | (Iterator[js.Any, js.Any, Unit]) = ^.asInstanceOf[js.Dynamic].applyDynamic("createIterator")(collection.asInstanceOf[js.Any]).asInstanceOf[Unit | (Iterator[js.Any, js.Any, Unit])]
+  @scala.inline
+  def createIterator(collection: Length): Iterator[js.Any, js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createIterator")(collection.asInstanceOf[js.Any]).asInstanceOf[Iterator[js.Any, js.Any, Unit]]
+  @scala.inline
+  def createIterator[TValue](collection: Iterable[TValue]): Iterator[TValue, js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createIterator")(collection.asInstanceOf[js.Any]).asInstanceOf[Iterator[TValue, js.Any, Unit]]
   
-  @JSImport("iterall", "forAwaitEach")
-  @js.native
-  def forAwaitEach[TCollection /* <: AsyncIterable[_] */](
+  @scala.inline
+  def forAwaitEach[TCollection /* <: Length */](
+    collection: TCollection,
+    callbackFn: js.Function3[/* value */ js.Any, /* index */ Double, /* collection */ TCollection, js.Any]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAwaitEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def forAwaitEach[TCollection /* <: Length */](
+    collection: TCollection,
+    callbackFn: js.Function3[/* value */ js.Any, /* index */ Double, /* collection */ TCollection, js.Any],
+    thisArg: js.Any
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAwaitEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def forAwaitEach_TCollection_AsyncIterableAny[TCollection /* <: AsyncIterable[js.Any] */](
     collection: TCollection,
     callbackFn: js.Function3[
       /* value */ ResolvedOf[TCollection], 
       /* index */ Double, 
       /* collection */ TCollection, 
-      _
+      js.Any
     ]
-  ): js.Promise[Unit] = js.native
-  @JSImport("iterall", "forAwaitEach")
-  @js.native
-  def forAwaitEach[TCollection /* <: AsyncIterable[_] */](
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAwaitEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def forAwaitEach_TCollection_AsyncIterableAny[TCollection /* <: AsyncIterable[js.Any] */](
     collection: TCollection,
     callbackFn: js.Function3[
       /* value */ ResolvedOf[TCollection], 
       /* index */ Double, 
       /* collection */ TCollection, 
-      _
+      js.Any
     ],
     thisArg: js.Any
-  ): js.Promise[Unit] = js.native
-  @JSImport("iterall", "forAwaitEach")
-  @js.native
-  def forAwaitEach_TCollection_IterableWildcard[TCollection /* <: Iterable[_] */](
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAwaitEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def forAwaitEach_TCollection_IterableAny[TCollection /* <: Iterable[js.Any] */](
     collection: TCollection,
     callbackFn: js.Function3[
       /* value */ ResolvedOf[TCollection], 
       /* index */ Double, 
       /* collection */ TCollection, 
-      _
+      js.Any
     ]
-  ): js.Promise[Unit] = js.native
-  @JSImport("iterall", "forAwaitEach")
-  @js.native
-  def forAwaitEach_TCollection_IterableWildcard[TCollection /* <: Iterable[_] */](
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAwaitEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def forAwaitEach_TCollection_IterableAny[TCollection /* <: Iterable[js.Any] */](
     collection: TCollection,
     callbackFn: js.Function3[
       /* value */ ResolvedOf[TCollection], 
       /* index */ Double, 
       /* collection */ TCollection, 
-      _
+      js.Any
     ],
     thisArg: js.Any
-  ): js.Promise[Unit] = js.native
-  @JSImport("iterall", "forAwaitEach")
-  @js.native
-  def forAwaitEach_TCollection_Length[TCollection /* <: Length */](
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAwaitEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def forEach[TCollection /* <: Length */](
     collection: TCollection,
-    callbackFn: js.Function3[/* value */ js.Any, /* index */ Double, /* collection */ TCollection, _]
-  ): js.Promise[Unit] = js.native
-  @JSImport("iterall", "forAwaitEach")
-  @js.native
-  def forAwaitEach_TCollection_Length[TCollection /* <: Length */](
+    callbackFn: js.Function3[/* value */ js.Any, /* index */ Double, /* collection */ TCollection, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def forEach[TCollection /* <: Length */](
     collection: TCollection,
-    callbackFn: js.Function3[/* value */ js.Any, /* index */ Double, /* collection */ TCollection, _],
+    callbackFn: js.Function3[/* value */ js.Any, /* index */ Double, /* collection */ TCollection, js.Any],
     thisArg: js.Any
-  ): js.Promise[Unit] = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("iterall", "forEach")
-  @js.native
-  def forEach[TCollection /* <: Iterable[_] */](
+  @scala.inline
+  def forEach_TCollection_IterableAny[TCollection /* <: Iterable[js.Any] */](
     collection: TCollection,
-    callbackFn: js.Function3[/* value */ ValueOf[TCollection], /* index */ Double, /* collection */ TCollection, _]
-  ): Unit = js.native
-  @JSImport("iterall", "forEach")
-  @js.native
-  def forEach[TCollection /* <: Iterable[_] */](
+    callbackFn: js.Function3[
+      /* value */ ValueOf[TCollection], 
+      /* index */ Double, 
+      /* collection */ TCollection, 
+      js.Any
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def forEach_TCollection_IterableAny[TCollection /* <: Iterable[js.Any] */](
     collection: TCollection,
-    callbackFn: js.Function3[/* value */ ValueOf[TCollection], /* index */ Double, /* collection */ TCollection, _],
+    callbackFn: js.Function3[
+      /* value */ ValueOf[TCollection], 
+      /* index */ Double, 
+      /* collection */ TCollection, 
+      js.Any
+    ],
     thisArg: js.Any
-  ): Unit = js.native
-  @JSImport("iterall", "forEach")
-  @js.native
-  def forEach_TCollection_Length[TCollection /* <: Length */](
-    collection: TCollection,
-    callbackFn: js.Function3[/* value */ js.Any, /* index */ Double, /* collection */ TCollection, _]
-  ): Unit = js.native
-  @JSImport("iterall", "forEach")
-  @js.native
-  def forEach_TCollection_Length[TCollection /* <: Length */](
-    collection: TCollection,
-    callbackFn: js.Function3[/* value */ js.Any, /* index */ Double, /* collection */ TCollection, _],
-    thisArg: js.Any
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("iterall", "getAsyncIterator")
-  @js.native
-  def getAsyncIterator(asyncIterable: js.Any): Unit | (AsyncIterator[_, _, js.UndefOr[scala.Nothing]]) = js.native
-  @JSImport("iterall", "getAsyncIterator")
-  @js.native
-  def getAsyncIterator[TValue](asyncIterable: AsyncIterable[TValue]): AsyncIterator[TValue, _, js.UndefOr[scala.Nothing]] = js.native
+  @scala.inline
+  def getAsyncIterator(asyncIterable: js.Any): Unit | (AsyncIterator[js.Any, js.Any, Unit]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getAsyncIterator")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[Unit | (AsyncIterator[js.Any, js.Any, Unit])]
+  @scala.inline
+  def getAsyncIterator[TValue](asyncIterable: AsyncIterable[TValue]): AsyncIterator[TValue, js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAsyncIterator")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[TValue, js.Any, Unit]]
   
-  @JSImport("iterall", "getAsyncIteratorMethod")
-  @js.native
-  def getAsyncIteratorMethod(asyncIterable: js.Any): Unit | (js.Function0[AsyncIterator[_, _, js.UndefOr[scala.Nothing]]]) = js.native
-  @JSImport("iterall", "getAsyncIteratorMethod")
-  @js.native
-  def getAsyncIteratorMethod[TValue](asyncIterable: AsyncIterable[TValue]): js.Function0[AsyncIterator[TValue, _, js.UndefOr[scala.Nothing]]] = js.native
+  @scala.inline
+  def getAsyncIteratorMethod(asyncIterable: js.Any): Unit | (js.Function0[AsyncIterator[js.Any, js.Any, Unit]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getAsyncIteratorMethod")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[Unit | (js.Function0[AsyncIterator[js.Any, js.Any, Unit]])]
+  @scala.inline
+  def getAsyncIteratorMethod[TValue](asyncIterable: AsyncIterable[TValue]): js.Function0[AsyncIterator[TValue, js.Any, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAsyncIteratorMethod")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[js.Function0[AsyncIterator[TValue, js.Any, Unit]]]
   
-  @JSImport("iterall", "getIterator")
-  @js.native
-  def getIterator(iterable: js.Any): Unit | (Iterator[_, _, js.UndefOr[scala.Nothing]]) = js.native
-  @JSImport("iterall", "getIterator")
-  @js.native
-  def getIterator[TValue](iterable: Iterable[TValue]): Iterator[TValue, _, js.UndefOr[scala.Nothing]] = js.native
+  @scala.inline
+  def getIterator(iterable: js.Any): Unit | (Iterator[js.Any, js.Any, Unit]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getIterator")(iterable.asInstanceOf[js.Any]).asInstanceOf[Unit | (Iterator[js.Any, js.Any, Unit])]
+  @scala.inline
+  def getIterator[TValue](iterable: Iterable[TValue]): Iterator[TValue, js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIterator")(iterable.asInstanceOf[js.Any]).asInstanceOf[Iterator[TValue, js.Any, Unit]]
   
-  @JSImport("iterall", "getIteratorMethod")
-  @js.native
-  def getIteratorMethod(iterable: js.Any): Unit | (js.Function0[Iterator[_, _, js.UndefOr[scala.Nothing]]]) = js.native
-  @JSImport("iterall", "getIteratorMethod")
-  @js.native
-  def getIteratorMethod[TValue](iterable: Iterable[TValue]): js.Function0[Iterator[TValue, _, js.UndefOr[scala.Nothing]]] = js.native
+  @scala.inline
+  def getIteratorMethod(iterable: js.Any): Unit | (js.Function0[Iterator[js.Any, js.Any, Unit]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getIteratorMethod")(iterable.asInstanceOf[js.Any]).asInstanceOf[Unit | (js.Function0[Iterator[js.Any, js.Any, Unit]])]
+  @scala.inline
+  def getIteratorMethod[TValue](iterable: Iterable[TValue]): js.Function0[Iterator[TValue, js.Any, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIteratorMethod")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Iterator[TValue, js.Any, Unit]]]
   
-  @JSImport("iterall", "isArrayLike")
-  @js.native
-  def isArrayLike(obj: js.Any): /* is iterall.anon.Length */ Boolean = js.native
+  @scala.inline
+  def isArrayLike(obj: js.Any): /* is iterall.anon.Length */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayLike")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is iterall.anon.Length */ Boolean]
   
-  @JSImport("iterall", "isAsyncIterable")
-  @js.native
-  def isAsyncIterable(obj: js.Any): /* is std.AsyncIterable<any> */ Boolean = js.native
+  @scala.inline
+  def isAsyncIterable(obj: js.Any): /* is std.AsyncIterable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsyncIterable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.AsyncIterable<any> */ Boolean]
   
-  @JSImport("iterall", "isCollection")
-  @js.native
-  def isCollection(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isCollection(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("iterall", "isIterable")
-  @js.native
-  def isIterable(obj: js.Any): /* is std.Iterable<any> */ Boolean = js.native
+  @scala.inline
+  def isIterable(obj: js.Any): /* is std.Iterable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Iterable<any> */ Boolean]
   
   @JSImport("iterall", "$$iterator")
   @js.native

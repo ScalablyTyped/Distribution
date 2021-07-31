@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceIdentifier extends StObject {
   
   /** The device’s IMEI number. Validated on input. */
-  var imei: js.UndefOr[String] = js.native
+  var imei: js.UndefOr[String] = js.undefined
   
   /**
     * The device manufacturer’s name. Matches the device's built-in value returned from `android.os.Build.MANUFACTURER`. Allowed values are listed in
     * [manufacturers](/zero-touch/resources/manufacturer-names#manufacturers-names).
     */
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
   /** The device’s MEID number. */
-  var meid: js.UndefOr[String] = js.native
+  var meid: js.UndefOr[String] = js.undefined
   
   /**
     * The device model's name. Matches the device's built-in value returned from `android.os.Build.MODEL`. Allowed values are listed in
     * [models](/zero-touch/resources/manufacturer-names#model-names).
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /** The manufacturer's serial number for the device. This value might not be unique across different device models. */
-  var serialNumber: js.UndefOr[String] = js.native
+  var serialNumber: js.UndefOr[String] = js.undefined
 }
 object DeviceIdentifier {
   

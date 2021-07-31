@@ -4,7 +4,6 @@ import typings.jquery.JQuery.Event
 import typings.wordpressCustomizeBrowser.controlMod.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaControlMod {

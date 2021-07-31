@@ -12,7 +12,7 @@ A readable stream reader that reads a desired number of bytes.
 | Keywords           | binary, stream, reader |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 1227456 |
+| # downloads        | 1360418 |
 | # stars            | 0 |
 
 ## Links

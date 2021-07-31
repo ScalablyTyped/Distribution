@@ -11,8 +11,8 @@ minimalistic-assert ===
 | Full name          | minimalistic-assert |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 89 |
-| # downloads        | 401859943 |
+| # dependents       | 103 |
+| # downloads        | 480035139 |
 | # stars            | 0 |
 
 ## Links

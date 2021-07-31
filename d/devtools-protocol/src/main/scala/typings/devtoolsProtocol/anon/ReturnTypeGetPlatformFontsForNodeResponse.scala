@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.GetPlatformFontsForNodeRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.GetPlatformFontsForNodeResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetPlatformFontsForNodeResponse extends StObject {
   
-  var paramsType: js.Array[GetPlatformFontsForNodeRequest] = js.native
+  var paramsType: js.Array[GetPlatformFontsForNodeRequest]
   
-  var returnType: GetPlatformFontsForNodeResponse = js.native
+  var returnType: GetPlatformFontsForNodeResponse
 }
 object ReturnTypeGetPlatformFontsForNodeResponse {
   

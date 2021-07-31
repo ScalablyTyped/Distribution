@@ -7,7 +7,6 @@ import typings.three.textureMod.Texture
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spriteMaterialMod {
@@ -49,18 +48,19 @@ object spriteMaterialMod {
     var sizeAttenuation: Boolean = js.native
   }
   
-  @js.native
-  trait SpriteMaterialParameters extends MaterialParameters {
+  trait SpriteMaterialParameters
+    extends StObject
+       with MaterialParameters {
     
-    var alphaMap: js.UndefOr[Texture | Null] = js.native
+    var alphaMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var color: js.UndefOr[Color | String | Double] = js.native
+    var color: js.UndefOr[Color | String | Double] = js.undefined
     
-    var map: js.UndefOr[Texture | Null] = js.native
+    var map: js.UndefOr[Texture | Null] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var sizeAttenuation: js.UndefOr[Boolean] = js.native
+    var sizeAttenuation: js.UndefOr[Boolean] = js.undefined
   }
   object SpriteMaterialParameters {
     

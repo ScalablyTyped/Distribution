@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait PromiseConstructor
-  extends /**
+  extends StObject
+     with /**
   * Creates a new Promise.
   * @param executor A callback used to initialize the promise. This callback is passed two arguments:
   * a resolve callback used to resolve the promise with a value or the result of another promise,
@@ -176,10 +176,10 @@ Instantiable1[
     * @param values An array of Promises.
     * @returns A new Promise.
     */
-  def allSettled[T /* <: js.Array[_] */](values: T): js.Promise[
+  def allSettled[T /* <: js.Array[js.Any] */](values: T): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ P in keyof T ]: std.PromiseSettledResult<T[P] extends std.PromiseLike<infer U>? any : T[P]>}
-    */ typings.std.stdStrings.PromiseConstructor with TopLevel[js.Any]
+    */ typings.std.stdStrings.PromiseConstructor & TopLevel[js.Any]
   ] = js.native
   /**
     * Creates a Promise that is resolved with an array of results when all

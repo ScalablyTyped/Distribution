@@ -2,13 +2,11 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The CreateCollectdTimeSeries response.
   */
-@js.native
 trait SchemaCreateCollectdTimeSeriesResponse extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaCreateCollectdTimeSeriesResponse extends StObject {
     * error.Failed requests for which nothing is written will return an error
     * response instead.
     */
-  var payloadErrors: js.UndefOr[js.Array[SchemaCollectdPayloadError]] = js.native
+  var payloadErrors: js.UndefOr[js.Array[SchemaCollectdPayloadError]] = js.undefined
 }
 object SchemaCreateCollectdTimeSeriesResponse {
   

@@ -2,19 +2,17 @@ package typings.nodeRedRuntime.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Menuitemexportlibrary extends StObject {
   
-  var `menu-item-export-library`: js.UndefOr[Boolean] = js.native
+  var `menu-item-export-library`: js.UndefOr[Boolean] = js.undefined
   
-  var `menu-item-help`: js.UndefOr[Url] = js.native
+  var `menu-item-help`: js.UndefOr[Url] = js.undefined
   
-  var `menu-item-import-library`: js.UndefOr[Boolean] = js.native
+  var `menu-item-import-library`: js.UndefOr[Boolean] = js.undefined
   
-  var `menu-item-keyboard-shortcuts`: js.UndefOr[Boolean] = js.native
+  var `menu-item-keyboard-shortcuts`: js.UndefOr[Boolean] = js.undefined
 }
 object Menuitemexportlibrary {
   

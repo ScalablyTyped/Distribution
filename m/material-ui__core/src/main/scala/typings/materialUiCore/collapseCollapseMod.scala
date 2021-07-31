@@ -12,7 +12,6 @@ import typings.react.mod.Ref
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collapseCollapseMod extends Shortcut {
@@ -44,52 +43,51 @@ object collapseCollapseMod extends Shortcut {
   }
   
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/transitions/transition.TransitionProps, @material-ui/core.@material-ui/core/Collapse/Collapse.CollapseClassKey, 'timeout'> */
-  @js.native
   trait CollapseProps extends StObject {
     
-    var addEndListener: js.UndefOr[js.Any] = js.native
+    var addEndListener: js.UndefOr[js.Any] = js.undefined
     
-    var appear: js.UndefOr[Boolean] = js.native
+    var appear: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var classes: js.UndefOr[PartialClassNameMapCollap] = js.native
+    var classes: js.UndefOr[PartialClassNameMapCollap] = js.undefined
     
-    var collapsedHeight: js.UndefOr[String] = js.native
+    var collapsedHeight: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[ReactType[CollapseProps]] = js.native
+    var component: js.UndefOr[ReactType[CollapseProps]] = js.undefined
     
-    var enter: js.UndefOr[Boolean] = js.native
+    var enter: js.UndefOr[Boolean] = js.undefined
     
-    var exit: js.UndefOr[Boolean] = js.native
+    var exit: js.UndefOr[Boolean] = js.undefined
     
-    var in: js.UndefOr[js.Any] = js.native
+    var in: js.UndefOr[js.Any] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
+    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
     
-    var mountOnEnter: js.UndefOr[js.Any] = js.native
+    var mountOnEnter: js.UndefOr[js.Any] = js.undefined
     
-    var onEnter: js.UndefOr[js.Any] = js.native
+    var onEnter: js.UndefOr[js.Any] = js.undefined
     
-    var onEntered: js.UndefOr[js.Any] = js.native
+    var onEntered: js.UndefOr[js.Any] = js.undefined
     
-    var onEntering: js.UndefOr[js.Any] = js.native
+    var onEntering: js.UndefOr[js.Any] = js.undefined
     
-    var onExit: js.UndefOr[js.Any] = js.native
+    var onExit: js.UndefOr[js.Any] = js.undefined
     
-    var onExited: js.UndefOr[js.Any] = js.native
+    var onExited: js.UndefOr[js.Any] = js.undefined
     
-    var onExiting: js.UndefOr[js.Any] = js.native
+    var onExiting: js.UndefOr[js.Any] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
     
-    var timeout: js.UndefOr[js.Any | auto] = js.native
+    var timeout: js.UndefOr[js.Any | auto] = js.undefined
     
-    var unmountOnExit: js.UndefOr[js.Any] = js.native
+    var unmountOnExit: js.UndefOr[js.Any] = js.undefined
   }
   object CollapseProps {
     
@@ -163,10 +161,10 @@ object collapseCollapseMod extends Shortcut {
       def setInUndefined: Self = StObject.set(x, "in", js.undefined)
       
       @scala.inline
-      def setInnerRef(value: Ref[_] | RefObject[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefNull: Self = StObject.set(x, "innerRef", null)

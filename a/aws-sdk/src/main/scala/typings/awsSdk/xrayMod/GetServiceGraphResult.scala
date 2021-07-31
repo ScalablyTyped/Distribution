@@ -2,36 +2,34 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetServiceGraphResult extends StObject {
   
   /**
     * A flag indicating whether the group's filter expression has been consistent, or if the returned service graph may show traces from an older version of the group's filter expression.
     */
-  var ContainsOldGroupVersions: js.UndefOr[Boolean] = js.native
+  var ContainsOldGroupVersions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The end of the time frame for which the graph was generated.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Pagination token.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The services that have processed a traced request during the specified time frame.
     */
-  var Services: js.UndefOr[ServiceList] = js.native
+  var Services: js.UndefOr[ServiceList] = js.undefined
   
   /**
     * The start of the time frame for which the graph was generated.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.native
+  var StartTime: js.UndefOr[Timestamp] = js.undefined
 }
 object GetServiceGraphResult {
   

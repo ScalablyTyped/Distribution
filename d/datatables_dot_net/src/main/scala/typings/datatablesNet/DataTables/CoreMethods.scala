@@ -5,13 +5,14 @@ import typings.std.Event
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region "Namespaces"
 //#region "core-methods"
 @js.native
-trait CoreMethods extends UtilityMethods {
+trait CoreMethods
+  extends StObject
+     with UtilityMethods {
   
   /**
     * Get jquery object
@@ -138,18 +139,13 @@ trait CoreMethods extends UtilityMethods {
     * @param caseInsen Do case-insensitive matching (default, true) or not (false).
     */
   def search(input: String): Api = js.native
-  def search(
-    input: String,
-    regex: js.UndefOr[scala.Nothing],
-    smart: js.UndefOr[scala.Nothing],
-    caseInsen: Boolean
-  ): Api = js.native
-  def search(input: String, regex: js.UndefOr[scala.Nothing], smart: Boolean): Api = js.native
-  def search(input: String, regex: js.UndefOr[scala.Nothing], smart: Boolean, caseInsen: Boolean): Api = js.native
   def search(input: String, regex: Boolean): Api = js.native
-  def search(input: String, regex: Boolean, smart: js.UndefOr[scala.Nothing], caseInsen: Boolean): Api = js.native
   def search(input: String, regex: Boolean, smart: Boolean): Api = js.native
   def search(input: String, regex: Boolean, smart: Boolean, caseInsen: Boolean): Api = js.native
+  def search(input: String, regex: Boolean, smart: Unit, caseInsen: Boolean): Api = js.native
+  def search(input: String, regex: Unit, smart: Boolean): Api = js.native
+  def search(input: String, regex: Unit, smart: Boolean, caseInsen: Boolean): Api = js.native
+  def search(input: String, regex: Unit, smart: Unit, caseInsen: Boolean): Api = js.native
   
   /**
     * Obtain the table's settings object

@@ -8,7 +8,6 @@ import typings.systemLogger.mod.level
 import typings.systemService.anon.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,17 +17,17 @@ object mod {
   object FileRotateType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[fileRotateType with Double] = js.native
+    def apply(value: Double): js.UndefOr[fileRotateType & Double] = js.native
     
-    /* 2 */ val daily: typings.systemLogger.mod.fileRotateType.daily with Double = js.native
+    /* 2 */ val daily: typings.systemLogger.mod.fileRotateType.daily & Double = js.native
     
-    /* 3 */ val hourly: typings.systemLogger.mod.fileRotateType.hourly with Double = js.native
+    /* 3 */ val hourly: typings.systemLogger.mod.fileRotateType.hourly & Double = js.native
     
-    /* 4 */ val minutely: typings.systemLogger.mod.fileRotateType.minutely with Double = js.native
+    /* 4 */ val minutely: typings.systemLogger.mod.fileRotateType.minutely & Double = js.native
     
-    /* 0 */ val monthly: typings.systemLogger.mod.fileRotateType.monthly with Double = js.native
+    /* 0 */ val monthly: typings.systemLogger.mod.fileRotateType.monthly & Double = js.native
     
-    /* 1 */ val weekly: typings.systemLogger.mod.fileRotateType.weekly with Double = js.native
+    /* 1 */ val weekly: typings.systemLogger.mod.fileRotateType.weekly & Double = js.native
   }
   
   @JSImport("system-service", "Level")
@@ -36,19 +35,19 @@ object mod {
   object Level extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[level with Double] = js.native
+    def apply(value: Double): js.UndefOr[level & Double] = js.native
     
-    /* 4 */ val debug: typings.systemLogger.mod.level.debug with Double = js.native
+    /* 4 */ val debug: typings.systemLogger.mod.level.debug & Double = js.native
     
-    /* 0 */ val error: typings.systemLogger.mod.level.error with Double = js.native
+    /* 0 */ val error: typings.systemLogger.mod.level.error & Double = js.native
     
-    /* 2 */ val info: typings.systemLogger.mod.level.info with Double = js.native
+    /* 2 */ val info: typings.systemLogger.mod.level.info & Double = js.native
     
-    /* 5 */ val silly: typings.systemLogger.mod.level.silly with Double = js.native
+    /* 5 */ val silly: typings.systemLogger.mod.level.silly & Double = js.native
     
-    /* 3 */ val verbose: typings.systemLogger.mod.level.verbose with Double = js.native
+    /* 3 */ val verbose: typings.systemLogger.mod.level.verbose & Double = js.native
     
-    /* 1 */ val warn: typings.systemLogger.mod.level.warn with Double = js.native
+    /* 1 */ val warn: typings.systemLogger.mod.level.warn & Double = js.native
   }
   
   @JSImport("system-service", "Logger")
@@ -56,23 +55,11 @@ object mod {
   class Logger ()
     extends typings.systemLogger.mod.Logger {
     def this(configuration: LoggerConfiguration) = this()
-    def this(configuration: js.UndefOr[scala.Nothing], fileConfig: FileConfiguration) = this()
+    def this(configuration: Unit, fileConfig: FileConfiguration) = this()
     def this(configuration: LoggerConfiguration, fileConfig: FileConfiguration) = this()
-    def this(
-      configuration: js.UndefOr[scala.Nothing],
-      fileConfig: js.UndefOr[scala.Nothing],
-      sourceConfig: SourcesConfiguration
-    ) = this()
-    def this(
-      configuration: js.UndefOr[scala.Nothing],
-      fileConfig: FileConfiguration,
-      sourceConfig: SourcesConfiguration
-    ) = this()
-    def this(
-      configuration: LoggerConfiguration,
-      fileConfig: js.UndefOr[scala.Nothing],
-      sourceConfig: SourcesConfiguration
-    ) = this()
+    def this(configuration: Unit, fileConfig: Unit, sourceConfig: SourcesConfiguration) = this()
+    def this(configuration: Unit, fileConfig: FileConfiguration, sourceConfig: SourcesConfiguration) = this()
+    def this(configuration: LoggerConfiguration, fileConfig: Unit, sourceConfig: SourcesConfiguration) = this()
     def this(
       configuration: LoggerConfiguration,
       fileConfig: FileConfiguration,
@@ -107,7 +94,7 @@ object mod {
   @js.native
   class SystemService () extends StObject {
     def this(config: ServiceConfiguration) = this()
-    def this(config: js.UndefOr[scala.Nothing], messageConsumer: MessageConsumer) = this()
+    def this(config: Unit, messageConsumer: MessageConsumer) = this()
     def this(config: ServiceConfiguration, messageConsumer: MessageConsumer) = this()
     
     var config: ServiceConfiguration = js.native
@@ -125,10 +112,9 @@ object mod {
     def validateMessage(message: js.Any): Unit = js.native
   }
   
-  @js.native
   trait ServiceConfiguration extends StObject {
     
-    var log: Config = js.native
+    var log: Config
   }
   object ServiceConfiguration {
     

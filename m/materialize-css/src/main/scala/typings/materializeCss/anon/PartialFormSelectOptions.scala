@@ -2,16 +2,14 @@ package typings.materializeCss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.FormSelectOptions> */
-@js.native
 trait PartialFormSelectOptions extends StObject {
   
-  var classes: js.UndefOr[String] = js.native
+  var classes: js.UndefOr[String] = js.undefined
   
-  var dropdownOptions: js.UndefOr[PartialDropdownOptions] = js.native
+  var dropdownOptions: js.UndefOr[PartialDropdownOptions] = js.undefined
 }
 object PartialFormSelectOptions {
   

@@ -2,26 +2,24 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XMLFileAdapterObject extends StObject {
   
-  var FileURL: String = js.native
+  var FileURL: String
   
   @JSName("InfoPath.XMLFileAdapterObject_typekey")
-  var InfoPathDotXMLFileAdapterObject_typekey: XMLFileAdapterObject = js.native
+  var InfoPathDotXMLFileAdapterObject_typekey: XMLFileAdapterObject
   
-  val Name: String = js.native
+  val Name: String
   
-  def Query(): Unit = js.native
+  def Query(): Unit
   
-  val QueryAllowed: Boolean = js.native
+  val QueryAllowed: Boolean
   
-  def Submit(): Unit = js.native
+  def Submit(): Unit
   
-  val SubmitAllowed: Boolean = js.native
+  val SubmitAllowed: Boolean
 }
 object XMLFileAdapterObject {
   

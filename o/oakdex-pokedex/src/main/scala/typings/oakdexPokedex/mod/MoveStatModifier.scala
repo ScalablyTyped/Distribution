@@ -2,17 +2,15 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveStatModifier extends StObject {
   
-  var affects_user: js.UndefOr[Boolean] = js.native
+  var affects_user: js.UndefOr[Boolean] = js.undefined
   
-  var change_by: Double = js.native
+  var change_by: Double
   
-  var stat: String = js.native
+  var stat: String
 }
 object MoveStatModifier {
   

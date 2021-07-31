@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeList.BatchEditNodeRecovering event.
   */
-@js.native
-trait ASPxClientTreeListBatchEditNodeRecoveringEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientTreeListBatchEditNodeRecoveringEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets the processed node's key value.
     */
-  var nodeKey: String = js.native
+  var nodeKey: String
   
   /**
     * Gets a hashtable that maintains information about recovered cells.
     */
-  var nodeValues: js.Any = js.native
+  var nodeValues: js.Any
 }
 object ASPxClientTreeListBatchEditNodeRecoveringEventArgs {
   

@@ -2,14 +2,12 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Max findings configuration per infoType, per content item or long running
   * DlpJob.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2InfoTypeLimit extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaGooglePrivacyDlpV2InfoTypeLimit extends StObject {
     * info_type, the DLP API applies the limit against all info_types that are
     * found but not specified in another InfoTypeLimit.
     */
-  var infoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.native
+  var infoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.undefined
   
   /**
     * Max findings limit for the given infoType.
     */
-  var maxFindings: js.UndefOr[Double] = js.native
+  var maxFindings: js.UndefOr[Double] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2InfoTypeLimit {
   

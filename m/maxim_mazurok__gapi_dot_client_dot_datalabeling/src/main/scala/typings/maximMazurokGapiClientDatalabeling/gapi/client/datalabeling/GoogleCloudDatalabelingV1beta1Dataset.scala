@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1Dataset extends StObject {
   
   /** Output only. The names of any related resources that are blocking changes to the dataset. */
-  var blockingResources: js.UndefOr[js.Array[String]] = js.native
+  var blockingResources: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. Time the dataset is created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The number of data items in the dataset. */
-  var dataItemCount: js.UndefOr[String] = js.native
+  var dataItemCount: js.UndefOr[String] = js.undefined
   
   /** Optional. User-provided description of the annotation specification set. The description can be up to 10000 characters long. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Required. The display name of the dataset. Maximum of 64 characters. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. This is populated with the original input configs where ImportData is called. It is available only after the clients import data to this dataset. */
-  var inputConfigs: js.UndefOr[js.Array[GoogleCloudDatalabelingV1beta1InputConfig]] = js.native
+  var inputConfigs: js.UndefOr[js.Array[GoogleCloudDatalabelingV1beta1InputConfig]] = js.undefined
   
   /** Last time that the Dataset is migrated to AI Platform V2. If any of the AnnotatedDataset is migrated, the last_migration_time in Dataset is also updated. */
-  var lastMigrateTime: js.UndefOr[String] = js.native
+  var lastMigrateTime: js.UndefOr[String] = js.undefined
   
   /** Output only. Dataset resource name, format is: projects/{project_id}/datasets/{dataset_id} */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1Dataset {
   

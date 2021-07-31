@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldViolation extends StObject {
   
   /** Description of the error. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Path of field with violation. */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
 }
 object FieldViolation {
   

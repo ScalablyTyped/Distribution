@@ -2,26 +2,24 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDeploymentRequest extends StObject {
   
   /**
     * The API identifier.
     */
-  var ApiId: string = js.native
+  var ApiId: string
   
   /**
     * The description for the deployment resource.
     */
-  var Description: js.UndefOr[StringWithLengthBetween0And1024] = js.native
+  var Description: js.UndefOr[StringWithLengthBetween0And1024] = js.undefined
   
   /**
     * The name of the Stage resource for the Deployment resource to create.
     */
-  var StageName: js.UndefOr[StringWithLengthBetween1And128] = js.native
+  var StageName: js.UndefOr[StringWithLengthBetween1And128] = js.undefined
 }
 object CreateDeploymentRequest {
   

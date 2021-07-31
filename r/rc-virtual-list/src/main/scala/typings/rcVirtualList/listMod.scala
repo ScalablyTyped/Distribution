@@ -18,46 +18,47 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
   
-  @JSImport("rc-virtual-list/es/List", JSImport.Default)
+  @JSImport("rc-virtual-list/es/List", JSImport.Namespace)
   @js.native
-  def default[Item](props: Children with ListProps[Item]): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rc-virtual-list/es/List", "RawList")
-  @js.native
-  def RawList[T](props: ListProps[T], ref: Ref[ListRef]): Element = js.native
+  @scala.inline
+  def default[Item](props: Children & ListProps[Item]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @js.native
+  @scala.inline
+  def RawList[T](props: ListProps[T], ref: Ref[ListRef]): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("RawList")(props.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Element]
+  
   trait ListProps[T]
-    extends HTMLAttributes[js.Any] {
+    extends StObject
+       with HTMLAttributes[js.Any] {
     
     @JSName("children")
-    var children_ListProps: RenderFunc[T] = js.native
+    var children_ListProps: RenderFunc[T]
     
-    var component: js.UndefOr[String | FC[_] | (ComponentClass[_, ComponentState])] = js.native
+    var component: js.UndefOr[String | FC[js.Any] | (ComponentClass[js.Any, ComponentState])] = js.undefined
     
-    var data: js.Array[T] = js.native
+    var data: js.Array[T]
     
     /** If not match virtual scroll condition, Set List still use height of container. */
-    var fullHeight: js.UndefOr[Boolean] = js.native
+    var fullHeight: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var itemHeight: js.UndefOr[Double] = js.native
+    var itemHeight: js.UndefOr[Double] = js.undefined
     
-    var itemKey: Key | (js.Function1[/* item */ T, Key]) = js.native
+    var itemKey: Key | (js.Function1[/* item */ T, Key])
     
     @JSName("onScroll")
-    var onScroll_ListProps: js.UndefOr[UIEventHandler[HTMLElement]] = js.native
+    var onScroll_ListProps: js.UndefOr[UIEventHandler[HTMLElement]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
     /** Set `false` will always use real scroll instead of virtual one */
-    var virtual: js.UndefOr[Boolean] = js.native
+    var virtual: js.UndefOr[Boolean] = js.undefined
   }
   object ListProps {
     
@@ -72,13 +73,13 @@ object listMod {
     }
     
     @scala.inline
-    implicit class ListPropsMutableBuilder[Self <: ListProps[_], T] (val x: Self with ListProps[T]) extends AnyVal {
+    implicit class ListPropsMutableBuilder[Self <: ListProps[?], T] (val x: Self & ListProps[T]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: (T, /* index */ Double, /* props */ Style) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
       @scala.inline
-      def setComponent(value: String | FC[_] | (ComponentClass[_, ComponentState])): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: String | FC[js.Any] | (ComponentClass[js.Any, ComponentState])): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
@@ -133,10 +134,9 @@ object listMod {
     }
   }
   
-  @js.native
   trait ListRef extends StObject {
     
-    var scrollTo: ScrollTo = js.native
+    var scrollTo: ScrollTo
   }
   object ListRef {
     

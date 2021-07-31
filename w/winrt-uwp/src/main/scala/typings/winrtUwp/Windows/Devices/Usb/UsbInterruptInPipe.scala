@@ -7,14 +7,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.datareceived
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the pipe that the underlying USB driver opens to communicate with a USB interrupt IN endpoint of the device. The object also enables the app to specify an event handler. That handler that gets invoked when data is read from the endpoint. */
 @js.native
 trait UsbInterruptInPipe extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_datareceived(`type`: datareceived, listener: TypedEventHandler[UsbInterruptInPipe, UsbInterruptInEventArgs]): Unit = js.native
   
@@ -28,12 +27,12 @@ trait UsbInterruptInPipe extends StObject {
   var endpointDescriptor: UsbInterruptInEndpointDescriptor = js.native
   
   /** Raised when the interrupt pipe receives data from the interrupt IN endpoint. */
-  def ondatareceived(ev: UsbInterruptInEventArgs with WinRTEvent[UsbInterruptInPipe]): Unit = js.native
+  def ondatareceived(ev: UsbInterruptInEventArgs & WinRTEvent[UsbInterruptInPipe]): Unit = js.native
   /** Raised when the interrupt pipe receives data from the interrupt IN endpoint. */
   @JSName("ondatareceived")
   var ondatareceived_Original: TypedEventHandler[UsbInterruptInPipe, UsbInterruptInEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_datareceived(`type`: datareceived, listener: TypedEventHandler[UsbInterruptInPipe, UsbInterruptInEventArgs]): Unit = js.native
 }

@@ -2,20 +2,18 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsHighlighted extends StObject {
   
   @JSName("$disabled")
-  var $disabled: Boolean = js.native
+  var $disabled: Boolean
   
   @JSName("$isHighlighted")
-  var $isHighlighted: Boolean = js.native
+  var $isHighlighted: Boolean
   
   @JSName("$selected")
-  var $selected: Boolean = js.native
+  var $selected: Boolean
 }
 object IsHighlighted {
   

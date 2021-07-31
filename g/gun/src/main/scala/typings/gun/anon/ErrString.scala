@@ -2,13 +2,11 @@ package typings.gun.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrString extends StObject {
   
-  var err: String = js.native
+  var err: String
 }
 object ErrString {
   

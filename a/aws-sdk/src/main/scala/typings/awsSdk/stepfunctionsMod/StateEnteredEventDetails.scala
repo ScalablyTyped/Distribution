@@ -2,26 +2,24 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateEnteredEventDetails extends StObject {
   
   /**
     * The string that contains the JSON input data for the state. Length constraints apply to the payload size, and are expressed as bytes in UTF-8 encoding.
     */
-  var input: js.UndefOr[SensitiveData] = js.native
+  var input: js.UndefOr[SensitiveData] = js.undefined
   
   /**
     * Contains details about the input for an execution history event.
     */
-  var inputDetails: js.UndefOr[HistoryEventExecutionDataDetails] = js.native
+  var inputDetails: js.UndefOr[HistoryEventExecutionDataDetails] = js.undefined
   
   /**
     * The name of the state.
     */
-  var name: Name = js.native
+  var name: Name
 }
 object StateEnteredEventDetails {
   

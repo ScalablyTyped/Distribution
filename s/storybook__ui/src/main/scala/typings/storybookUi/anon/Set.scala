@@ -2,21 +2,19 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Set extends StObject {
   
-  def set(v: Double): Unit = js.native
+  def set(v: Double): Unit
   
-  var value: typings.storybookUi.storybookUiNumbers.`1` = js.native
+  var value: typings.storybookUi.storybookUiNumbers.`1`
 }
 object Set {
   
   @scala.inline
-  def apply(set: Double => Unit, value: typings.storybookUi.storybookUiNumbers.`1`): Set = {
-    val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set), value = value.asInstanceOf[js.Any])
+  def apply(set: Double => Unit): Set = {
+    val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set), value = 1)
     __obj.asInstanceOf[Set]
   }
   

@@ -2,19 +2,17 @@ package typings.web3Core.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureObject extends StObject {
   
-  var messageHash: String = js.native
+  var messageHash: String
   
-  var r: String = js.native
+  var r: String
   
-  var s: String = js.native
+  var s: String
   
-  var v: String = js.native
+  var v: String
 }
 object SignatureObject {
   

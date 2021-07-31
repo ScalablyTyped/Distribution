@@ -3,7 +3,6 @@ package typings.bezierJs.BezierJs
 import typings.bezierJs.anon.Typeofutils
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -90,13 +89,13 @@ trait Bezier extends StObject {
   var order: Double = js.native
   
   def outline(d1: Double): PolyBezier = js.native
-  def outline(d1: Double, d2: js.UndefOr[scala.Nothing], d3: js.UndefOr[scala.Nothing], d4: Double): PolyBezier = js.native
-  def outline(d1: Double, d2: js.UndefOr[scala.Nothing], d3: Double): PolyBezier = js.native
-  def outline(d1: Double, d2: js.UndefOr[scala.Nothing], d3: Double, d4: Double): PolyBezier = js.native
   def outline(d1: Double, d2: Double): PolyBezier = js.native
-  def outline(d1: Double, d2: Double, d3: js.UndefOr[scala.Nothing], d4: Double): PolyBezier = js.native
   def outline(d1: Double, d2: Double, d3: Double): PolyBezier = js.native
   def outline(d1: Double, d2: Double, d3: Double, d4: Double): PolyBezier = js.native
+  def outline(d1: Double, d2: Double, d3: Unit, d4: Double): PolyBezier = js.native
+  def outline(d1: Double, d2: Unit, d3: Double): PolyBezier = js.native
+  def outline(d1: Double, d2: Unit, d3: Double, d4: Double): PolyBezier = js.native
+  def outline(d1: Double, d2: Unit, d3: Unit, d4: Double): PolyBezier = js.native
   
   def outlineshapes(d1: Double, d2: Double): js.Array[Shape] = js.native
   def outlineshapes(d1: Double, d2: Double, curveIntersectionThreshold: Double): js.Array[Shape] = js.native

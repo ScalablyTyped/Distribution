@@ -5,7 +5,6 @@ import typings.memfs.encodingMod.TEncodingExtended
 import typings.memfs.nodeMod.Link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object direntMod {
@@ -16,12 +15,14 @@ object direntMod {
   /* static members */
   object default {
     
-    @JSImport("memfs/lib/Dirent", "default.build")
+    @JSImport("memfs/lib/Dirent", JSImport.Default)
     @js.native
-    def build(link: Link): Dirent = js.native
-    @JSImport("memfs/lib/Dirent", "default.build")
-    @js.native
-    def build(link: Link, encoding: TEncodingExtended): Dirent = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def build(link: Link): Dirent = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(link.asInstanceOf[js.Any]).asInstanceOf[Dirent]
+    @scala.inline
+    def build(link: Link, encoding: TEncodingExtended): Dirent = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(link.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Dirent]
   }
   
   @JSImport("memfs/lib/Dirent", "Dirent")
@@ -51,11 +52,13 @@ object direntMod {
   /* static members */
   object Dirent {
     
-    @JSImport("memfs/lib/Dirent", "Dirent.build")
+    @JSImport("memfs/lib/Dirent", "Dirent")
     @js.native
-    def build(link: Link): Dirent = js.native
-    @JSImport("memfs/lib/Dirent", "Dirent.build")
-    @js.native
-    def build(link: Link, encoding: TEncodingExtended): Dirent = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def build(link: Link): Dirent = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(link.asInstanceOf[js.Any]).asInstanceOf[Dirent]
+    @scala.inline
+    def build(link: Link, encoding: TEncodingExtended): Dirent = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(link.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Dirent]
   }
 }

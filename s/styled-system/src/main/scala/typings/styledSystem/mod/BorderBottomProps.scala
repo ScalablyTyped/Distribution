@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderBottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait BorderBottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ext
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom)
     */
-  var borderBottom: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderBottom: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object BorderBottomProps {
   
@@ -25,7 +23,7 @@ object BorderBottomProps {
   }
   
   @scala.inline
-  implicit class BorderBottomPropsMutableBuilder[Self <: BorderBottomProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderBottomProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BorderBottomPropsMutableBuilder[Self <: BorderBottomProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderBottomProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setBorderBottom(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])

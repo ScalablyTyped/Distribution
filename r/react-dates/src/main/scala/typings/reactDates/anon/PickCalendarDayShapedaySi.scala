@@ -9,16 +9,14 @@ import typings.reactDates.mod.ModifiersShape
 import typings.std.HTMLTableDataCellElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-dates.react-dates.CalendarDayShape, 'daySize' | 'onDayClick' | 'onDayMouseEnter' | 'onDayMouseLeave' | 'renderDayContents' | 'isFocused' | 'phrases'> */
-@js.native
 trait PickCalendarDayShapedaySi extends StObject {
   
-  var daySize: js.UndefOr[Double] = js.native
+  var daySize: js.UndefOr[Double] = js.undefined
   
-  var isFocused: js.UndefOr[Boolean] = js.native
+  var isFocused: js.UndefOr[Boolean] = js.undefined
   
   var onDayClick: js.UndefOr[
     js.Function2[
@@ -26,7 +24,7 @@ trait PickCalendarDayShapedaySi extends StObject {
       /* event */ MouseEvent[HTMLTableDataCellElement, NativeMouseEvent], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onDayMouseEnter: js.UndefOr[
     js.Function2[
@@ -34,7 +32,7 @@ trait PickCalendarDayShapedaySi extends StObject {
       /* event */ MouseEvent[HTMLTableDataCellElement, NativeMouseEvent], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onDayMouseLeave: js.UndefOr[
     js.Function2[
@@ -42,13 +40,13 @@ trait PickCalendarDayShapedaySi extends StObject {
       /* event */ MouseEvent[HTMLTableDataCellElement, NativeMouseEvent], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var phrases: js.UndefOr[CalendarDayPhrases] = js.native
+  var phrases: js.UndefOr[CalendarDayPhrases] = js.undefined
   
   var renderDayContents: js.UndefOr[
     (js.Function2[/* day */ Moment, /* modifiers */ ModifiersShape, ReactNode]) | Null
-  ] = js.native
+  ] = js.undefined
 }
 object PickCalendarDayShapedaySi {
   

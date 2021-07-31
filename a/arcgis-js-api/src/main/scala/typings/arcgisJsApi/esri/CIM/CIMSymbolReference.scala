@@ -2,65 +2,63 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMSymbolReference extends StObject {
   
   /**
     * The maximum distance at which symbols are visible. Objects beyond this point don't get rendered.
     */
-  var maxDistance: js.UndefOr[Double] = js.native
+  var maxDistance: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum scale range the symbol reference should be displayed at.
     */
-  var maxScale: js.UndefOr[Double] = js.native
+  var maxScale: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum distance at which symbols are visible. Objects closer than this don't get rendered.
     */
-  var minDistance: js.UndefOr[Double] = js.native
+  var minDistance: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum scale range the symbol reference should be displayed at.
     */
-  var minScale: js.UndefOr[Double] = js.native
+  var minScale: js.UndefOr[Double] = js.undefined
   
   /**
     * The primitive overrides. Typically set by renderers at draw time.
     */
-  var primitiveOverrides: js.UndefOr[js.Array[CIMPrimitiveOverride]] = js.native
+  var primitiveOverrides: js.UndefOr[js.Array[CIMPrimitiveOverride]] = js.undefined
   
   /**
     * An array of scale dependent sizes.
     */
-  var scaleDependentSizeVariation: js.UndefOr[js.Array[CIMScaleDependentSizeVariation]] = js.native
+  var scaleDependentSizeVariation: js.UndefOr[js.Array[CIMScaleDependentSizeVariation]] = js.undefined
   
   /**
     * The style path. Reserved for future use.
     */
-  var stylePath: js.UndefOr[String] = js.native
+  var stylePath: js.UndefOr[String] = js.undefined
   
   /**
     * The symbol.
     */
-  var symbol: js.UndefOr[CIMSymbolType] = js.native
+  var symbol: js.UndefOr[CIMSymbolType] = js.undefined
   
   /**
     * The symbol name.
     */
-  var symbolName: js.UndefOr[String] = js.native
+  var symbolName: js.UndefOr[String] = js.undefined
   
-  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMSymbolReference = js.native
+  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMSymbolReference
 }
 object CIMSymbolReference {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMSymbolReference): CIMSymbolReference = {
+  def apply(): CIMSymbolReference = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMSymbolReference")
     __obj.asInstanceOf[CIMSymbolReference]
   }
   

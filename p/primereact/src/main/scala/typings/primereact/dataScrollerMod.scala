@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataScrollerMod {
@@ -22,36 +21,35 @@ object dataScrollerMod {
     def this(props: DataScrollerProps, context: js.Any) = this()
   }
   
-  @js.native
   trait DataScrollerProps extends StObject {
     
-    var buffer: js.UndefOr[Double] = js.native
+    var buffer: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var footer: js.UndefOr[js.Any] = js.native
+    var footer: js.UndefOr[js.Any] = js.undefined
     
-    var header: js.UndefOr[js.Any] = js.native
+    var header: js.UndefOr[js.Any] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.native
+    var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.undefined
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
-    var loader: js.UndefOr[js.Any] = js.native
+    var loader: js.UndefOr[js.Any] = js.undefined
     
-    var onLazyLoad: js.UndefOr[js.Function1[/* e */ First, Unit]] = js.native
+    var onLazyLoad: js.UndefOr[js.Function1[/* e */ First, Unit]] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var scrollHeight: js.UndefOr[js.Any] = js.native
+    var scrollHeight: js.UndefOr[js.Any] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var value: js.UndefOr[js.Array[_]] = js.native
+    var value: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataScrollerProps {
     
@@ -143,7 +141,7 @@ object dataScrollerMod {
       def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       @scala.inline
-      def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueUndefined: Self = StObject.set(x, "value", js.undefined)

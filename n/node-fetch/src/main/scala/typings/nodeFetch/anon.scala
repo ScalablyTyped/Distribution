@@ -2,15 +2,13 @@ package typings.nodeFetch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var capture: js.UndefOr[Boolean] = js.native
+    var capture: js.UndefOr[Boolean] = js.undefined
   }
   object `0` {
     
@@ -31,14 +29,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Capture extends StObject {
     
-    var capture: js.UndefOr[Boolean] = js.native
+    var capture: js.UndefOr[Boolean] = js.undefined
     
-    var once: js.UndefOr[Boolean] = js.native
+    var once: js.UndefOr[Boolean] = js.undefined
     
-    var passive: js.UndefOr[Boolean] = js.native
+    var passive: js.UndefOr[Boolean] = js.undefined
   }
   object Capture {
     
@@ -71,12 +68,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Size {
     

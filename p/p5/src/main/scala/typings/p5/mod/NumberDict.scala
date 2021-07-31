@@ -2,11 +2,12 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumberDict extends TypedDict {
+trait NumberDict
+  extends StObject
+     with TypedDict {
   
   /**
     *   Add the given number to the value currently stored

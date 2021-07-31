@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings to set up mail merge operations.
   */
-@js.native
 trait MailMergeSettings extends StObject {
   
   /**
     * Gets or sets the index of the row from which the exported range starts.
     */
-  var exportFrom: Double = js.native
+  var exportFrom: Double
   
   /**
     * Gets or sets the number of data rows in the exported mail-merge range.
     */
-  var exportRecordsCount: Double = js.native
+  var exportRecordsCount: Double
   
   /**
     * Gets or sets the merge mode.
     */
-  var mergeMode: MergeMode = js.native
+  var mergeMode: MergeMode
   
   /**
     * Specifies which data rows should be exported into a merged document.
     */
-  var range: MailMergeExportRange = js.native
+  var range: MailMergeExportRange
 }
 object MailMergeSettings {
   

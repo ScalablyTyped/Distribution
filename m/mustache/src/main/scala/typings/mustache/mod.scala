@@ -16,7 +16,6 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,12 +33,35 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("mustache", "Context")
   @js.native
-  class Context protected () extends MustacheContext {
+  class Context protected ()
+    extends StObject
+       with MustacheContext {
     /**
       * Initializes a new instance of the `MustacheContext` class.
       */
     def this(view: js.Any) = this()
     def this(view: js.Any, parentContext: MustacheContext) = this()
+    
+    /**
+      * Returns the value of the given name in this context, traversing up the context hierarchy if the value is absent in this context's view.
+      *
+      * @param name
+      * The name to look up.
+      */
+    /* CompleteClass */
+    override def lookup(name: String): js.Any = js.native
+    
+    /**
+      * Creates a new context using the given view with this context as the parent.
+      *
+      * @param view
+      * The view to create the new context with.
+      */
+    /* CompleteClass */
+    override def push(view: js.Any): MustacheContext = js.native
+    
+    /* CompleteClass */
+    var view: js.Any = js.native
   }
   
   /**
@@ -48,11 +70,52 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("mustache", "Scanner")
   @js.native
-  class Scanner protected () extends MustacheScanner {
+  class Scanner protected ()
+    extends StObject
+       with MustacheScanner {
     /**
       * Initializes a new instance of the `MustacheScanner` class.
       */
     def this(string: String) = this()
+    
+    /**
+      * Returns `true` if the tail is empty (end of string).
+      */
+    /* CompleteClass */
+    override def eos(): Boolean = js.native
+    
+    /* CompleteClass */
+    var pos: Double = js.native
+    
+    /**
+      * Tries to match the given regular expression at the current position.
+      *
+      * @param re
+      * The regex-pattern to match.
+      *
+      * @returns
+      * The matched text if it can match, the empty string otherwise.
+      */
+    /* CompleteClass */
+    override def scan(re: RegExp): String = js.native
+    
+    /**
+      * Skips all text until the given regular expression can be matched.
+      *
+      * @param re
+      * The regex-pattern to match.
+      *
+      * @returns
+      * Returns the skipped string, which is the entire tail if no match can be made.
+      */
+    /* CompleteClass */
+    override def scanUntil(re: RegExp): String = js.native
+    
+    /* CompleteClass */
+    var string: String = js.native
+    
+    /* CompleteClass */
+    var tail: String = js.native
   }
   
   /**
@@ -66,7 +129,9 @@ object mod extends Shortcut {
   /**
     * Initializes a new instance of the `MustacheWriter` class.
     */
-  class Writer () extends MustacheWriter
+  class Writer ()
+    extends StObject
+       with MustacheWriter
   
   type COMMENT = Exclamationmark
   
@@ -79,7 +144,6 @@ object mod extends Shortcut {
   /**
     * Represents a rendering context by wrapping a view object and maintaining a reference to the parent context.
     */
-  @js.native
   trait MustacheContext extends StObject {
     
     /**
@@ -88,9 +152,9 @@ object mod extends Shortcut {
       * @param name
       * The name to look up.
       */
-    def lookup(name: String): js.Any = js.native
+    def lookup(name: String): js.Any
     
-    var parentContext: js.UndefOr[MustacheContext] = js.native
+    var parentContext: js.UndefOr[MustacheContext] = js.undefined
     
     /**
       * Creates a new context using the given view with this context as the parent.
@@ -98,9 +162,9 @@ object mod extends Shortcut {
       * @param view
       * The view to create the new context with.
       */
-    def push(view: js.Any): MustacheContext = js.native
+    def push(view: js.Any): MustacheContext
     
-    var view: js.Any = js.native
+    var view: js.Any
   }
   object MustacheContext {
     
@@ -133,15 +197,14 @@ object mod extends Shortcut {
   /**
     * A simple string scanner that is used by the template parser to find tokens in template strings.
     */
-  @js.native
   trait MustacheScanner extends StObject {
     
     /**
       * Returns `true` if the tail is empty (end of string).
       */
-    def eos(): Boolean = js.native
+    def eos(): Boolean
     
-    var pos: Double = js.native
+    var pos: Double
     
     /**
       * Tries to match the given regular expression at the current position.
@@ -152,7 +215,7 @@ object mod extends Shortcut {
       * @returns
       * The matched text if it can match, the empty string otherwise.
       */
-    def scan(re: RegExp): String = js.native
+    def scan(re: RegExp): String
     
     /**
       * Skips all text until the given regular expression can be matched.
@@ -163,11 +226,11 @@ object mod extends Shortcut {
       * @returns
       * Returns the skipped string, which is the entire tail if no match can be made.
       */
-    def scanUntil(re: RegExp): String = js.native
+    def scanUntil(re: RegExp): String
     
-    var string: String = js.native
+    var string: String
     
-    var tail: String = js.native
+    var tail: String
   }
   object MustacheScanner {
     
@@ -279,21 +342,13 @@ object mod extends Shortcut {
       * The tags to use.
       */
     def render(template: String, view: js.Any): String = js.native
-    def render(
-      template: String,
-      view: js.Any,
-      partials: js.UndefOr[PartialsOrLookupFn],
-      tags: OpeningAndClosingTags
-    ): String = js.native
+    def render(template: String, view: js.Any, partials: Unit, tags: OpeningAndClosingTags): String = js.native
     def render(template: String, view: js.Any, partials: PartialsOrLookupFn): String = js.native
+    def render(template: String, view: js.Any, partials: PartialsOrLookupFn, tags: OpeningAndClosingTags): String = js.native
     def render(template: String, view: MustacheContext): String = js.native
-    def render(
-      template: String,
-      view: MustacheContext,
-      partials: js.UndefOr[PartialsOrLookupFn],
-      tags: OpeningAndClosingTags
-    ): String = js.native
+    def render(template: String, view: MustacheContext, partials: Unit, tags: OpeningAndClosingTags): String = js.native
     def render(template: String, view: MustacheContext, partials: PartialsOrLookupFn): String = js.native
+    def render(template: String, view: MustacheContext, partials: PartialsOrLookupFn, tags: OpeningAndClosingTags): String = js.native
     
     /**
       * The default opening and closing tags used while parsing the templates.
@@ -400,21 +455,13 @@ object mod extends Shortcut {
       * The tags to use.
       */
     def render(template: String, view: js.Any): String = js.native
-    def render(
-      template: String,
-      view: js.Any,
-      partials: js.UndefOr[PartialsOrLookupFn],
-      tags: OpeningAndClosingTags
-    ): String = js.native
+    def render(template: String, view: js.Any, partials: Unit, tags: OpeningAndClosingTags): String = js.native
     def render(template: String, view: js.Any, partials: PartialsOrLookupFn): String = js.native
+    def render(template: String, view: js.Any, partials: PartialsOrLookupFn, tags: OpeningAndClosingTags): String = js.native
     def render(template: String, view: MustacheContext): String = js.native
-    def render(
-      template: String,
-      view: MustacheContext,
-      partials: js.UndefOr[PartialsOrLookupFn],
-      tags: OpeningAndClosingTags
-    ): String = js.native
+    def render(template: String, view: MustacheContext, partials: Unit, tags: OpeningAndClosingTags): String = js.native
     def render(template: String, view: MustacheContext, partials: PartialsOrLookupFn): String = js.native
+    def render(template: String, view: MustacheContext, partials: PartialsOrLookupFn, tags: OpeningAndClosingTags): String = js.native
     
     /**
       * Renders an inverted section block.
@@ -432,13 +479,14 @@ object mod extends Shortcut {
       * An object used to extract the portion of the original template that was contained in a higher-order section.
       */
     def renderInverted(token: js.Array[String], context: MustacheContext): String = js.native
+    def renderInverted(token: js.Array[String], context: MustacheContext, partials: Unit, originalTemplate: String): String = js.native
+    def renderInverted(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
     def renderInverted(
       token: js.Array[String],
       context: MustacheContext,
-      partials: js.UndefOr[PartialsOrLookupFn],
+      partials: PartialsOrLookupFn,
       originalTemplate: String
     ): String = js.native
-    def renderInverted(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
     
     /**
       * Renders a partial.
@@ -456,13 +504,14 @@ object mod extends Shortcut {
       * The tags to use.
       */
     def renderPartial(token: js.Array[String], context: MustacheContext): String = js.native
+    def renderPartial(token: js.Array[String], context: MustacheContext, partials: Unit, tags: OpeningAndClosingTags): String = js.native
+    def renderPartial(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
     def renderPartial(
       token: js.Array[String],
       context: MustacheContext,
-      partials: js.UndefOr[PartialsOrLookupFn],
+      partials: PartialsOrLookupFn,
       tags: OpeningAndClosingTags
     ): String = js.native
-    def renderPartial(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
     
     /**
       * Renders a section block.
@@ -480,13 +529,14 @@ object mod extends Shortcut {
       * An object used to extract the portion of the original template that was contained in a higher-order section.
       */
     def renderSection(token: js.Array[String], context: MustacheContext): String = js.native
+    def renderSection(token: js.Array[String], context: MustacheContext, partials: Unit, originalTemplate: String): String = js.native
+    def renderSection(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
     def renderSection(
       token: js.Array[String],
       context: MustacheContext,
-      partials: js.UndefOr[PartialsOrLookupFn],
+      partials: PartialsOrLookupFn,
       originalTemplate: String
     ): String = js.native
-    def renderSection(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
     
     /**
       * Low-level method that renders the given array of `tokens` using the given `context` and `partials`.
@@ -509,10 +559,16 @@ object mod extends Shortcut {
     def renderTokens(
       tokens: js.Array[js.Array[String]],
       context: MustacheContext,
-      partials: js.UndefOr[PartialsOrLookupFn],
+      partials: Unit,
       originalTemplate: String
     ): String = js.native
     def renderTokens(tokens: js.Array[js.Array[String]], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
+    def renderTokens(
+      tokens: js.Array[js.Array[String]],
+      context: MustacheContext,
+      partials: PartialsOrLookupFn,
+      originalTemplate: String
+    ): String = js.native
     
     /**
       * Renders an unescaped value.
@@ -548,14 +604,13 @@ object mod extends Shortcut {
   
   type SECTION = Numbersign
   
-  @js.native
   trait TemplateCache extends StObject {
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def get(cacheKey: String): js.UndefOr[String] = js.native
+    def get(cacheKey: String): js.UndefOr[String]
     
-    def set(cacheKey: String, value: String): Unit = js.native
+    def set(cacheKey: String, value: String): Unit
   }
   object TemplateCache {
     
@@ -583,7 +638,8 @@ object mod extends Shortcut {
   
   @js.native
   trait TemplateSpans
-    extends Array[
+    extends StObject
+       with Array[
           (js.Tuple4[TemplateSpanType, String, Double, Double]) | (js.Tuple6[TemplateSpanType, String, Double, Double, TemplateSpans, Double]) | (js.Tuple7[TemplateSpanType, String, Double, Double, String, Double, Boolean])
         ]
   

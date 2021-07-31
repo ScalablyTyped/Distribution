@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArcGISImageServiceCapabilities extends Object {
+trait ArcGISImageServiceCapabilities
+  extends StObject
+     with Object {
   
   /**
     * Describes operations supported by the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var operations: ArcGISImageServiceCapabilitiesOperations = js.native
+  var operations: ArcGISImageServiceCapabilitiesOperations
   
   /**
     * Describes [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) operations supported by the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var query: ArcGISImageServiceCapabilitiesQuery = js.native
+  var query: ArcGISImageServiceCapabilitiesQuery
 }
 object ArcGISImageServiceCapabilities {
   

@@ -2,61 +2,59 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeUpdateActionsMessage extends StObject {
   
   /**
     * The cache cluster IDs
     */
-  var CacheClusterIds: js.UndefOr[CacheClusterIdList] = js.native
+  var CacheClusterIds: js.UndefOr[CacheClusterIdList] = js.undefined
   
   /**
     * The Elasticache engine to which the update applies. Either Redis or Memcached 
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of records to include in the response
     */
-  var MaxRecords: js.UndefOr[IntegerOptional] = js.native
+  var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The replication group IDs
     */
-  var ReplicationGroupIds: js.UndefOr[ReplicationGroupIdList] = js.native
+  var ReplicationGroupIds: js.UndefOr[ReplicationGroupIdList] = js.undefined
   
   /**
     * The unique ID of the service update
     */
-  var ServiceUpdateName: js.UndefOr[String] = js.native
+  var ServiceUpdateName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the service update
     */
-  var ServiceUpdateStatus: js.UndefOr[ServiceUpdateStatusList] = js.native
+  var ServiceUpdateStatus: js.UndefOr[ServiceUpdateStatusList] = js.undefined
   
   /**
     * The range of time specified to search for service updates that are in available status
     */
-  var ServiceUpdateTimeRange: js.UndefOr[TimeRangeFilter] = js.native
+  var ServiceUpdateTimeRange: js.UndefOr[TimeRangeFilter] = js.undefined
   
   /**
     * Dictates whether to include node level update status in the response 
     */
-  var ShowNodeLevelUpdateStatus: js.UndefOr[BooleanOptional] = js.native
+  var ShowNodeLevelUpdateStatus: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * The status of the update action.
     */
-  var UpdateActionStatus: js.UndefOr[UpdateActionStatusList] = js.native
+  var UpdateActionStatus: js.UndefOr[UpdateActionStatusList] = js.undefined
 }
 object DescribeUpdateActionsMessage {
   

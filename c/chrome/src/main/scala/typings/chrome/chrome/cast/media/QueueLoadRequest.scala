@@ -2,19 +2,17 @@ package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueueLoadRequest extends StObject {
   
-  var customData: js.Object = js.native
+  var customData: js.Object
   
-  var items: js.Array[QueueItem] = js.native
+  var items: js.Array[QueueItem]
   
-  var repeatMode: RepeatMode = js.native
+  var repeatMode: RepeatMode
   
-  var startIndex: Double = js.native
+  var startIndex: Double
 }
 object QueueLoadRequest {
   

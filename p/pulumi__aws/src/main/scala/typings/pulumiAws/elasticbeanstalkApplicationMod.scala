@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticbeanstalkApplicationMod {
@@ -26,7 +25,7 @@ object elasticbeanstalkApplicationMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ApplicationArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ApplicationArgs, opts: CustomResourceOptions) = this()
     
     val appversionLifecycle: Output_[js.UndefOr[ApplicationAppversionLifecycle]] = js.native
@@ -54,6 +53,10 @@ object elasticbeanstalkApplicationMod {
   /* static members */
   object Application {
     
+    @JSImport("@pulumi/aws/elasticbeanstalk/application", "Application")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Application resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -63,49 +66,43 @@ object elasticbeanstalkApplicationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elasticbeanstalk/application", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Application = js.native
-    @JSImport("@pulumi/aws/elasticbeanstalk/application", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Application = js.native
-    @JSImport("@pulumi/aws/elasticbeanstalk/application", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApplicationState): Application = js.native
-    @JSImport("@pulumi/aws/elasticbeanstalk/application", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): Application = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Application]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApplicationState): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Application]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
     
     /**
       * Returns true if the given object is an instance of Application.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elasticbeanstalk/application", "Application.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/application.Application */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/application.Application */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/application.Application */ Boolean]
   }
   
-  @js.native
   trait ApplicationArgs extends StObject {
     
     val appversionLifecycle: js.UndefOr[
         Input[typings.pulumiAws.inputMod.elasticbeanstalk.ApplicationAppversionLifecycle]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Short description of the application
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the application, must be unique within your account
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of tags for the Elastic Beanstalk Application.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ApplicationArgs {
     
@@ -144,32 +141,31 @@ object elasticbeanstalkApplicationMod {
     }
   }
   
-  @js.native
   trait ApplicationState extends StObject {
     
     val appversionLifecycle: js.UndefOr[
         Input[typings.pulumiAws.inputMod.elasticbeanstalk.ApplicationAppversionLifecycle]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The ARN assigned by AWS for this Elastic Beanstalk Application.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Short description of the application
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the application, must be unique within your account
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of tags for the Elastic Beanstalk Application.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ApplicationState {
     

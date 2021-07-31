@@ -2,21 +2,19 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMembersResponse extends StObject {
   
   /**
     * The list of AWS account identifiers for the member accounts that Detective successfully deleted from the behavior graph.
     */
-  var AccountIds: js.UndefOr[AccountIdList] = js.native
+  var AccountIds: js.UndefOr[AccountIdList] = js.undefined
   
   /**
     * The list of member accounts that Detective was not able to delete from the behavior graph. For each member account, provides the reason that the deletion could not be processed.
     */
-  var UnprocessedAccounts: js.UndefOr[UnprocessedAccountList] = js.native
+  var UnprocessedAccounts: js.UndefOr[UnprocessedAccountList] = js.undefined
 }
 object DeleteMembersResponse {
   

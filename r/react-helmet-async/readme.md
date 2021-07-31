@@ -10,9 +10,9 @@ Thread-safe Helmet for React 16+ and friends
 | ------------------ | :-------------: |
 | Full name          | react-helmet-async |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 87 |
-| # downloads        | 67604136 |
+| # releases         | 14 |
+| # dependents       | 114 |
+| # downloads        | 88736928 |
 | # stars            | 1 |
 
 ## Links

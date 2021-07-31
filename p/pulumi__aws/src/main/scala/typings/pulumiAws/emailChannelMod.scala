@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emailChannelMod {
@@ -58,6 +57,10 @@ object emailChannelMod {
   /* static members */
   object EmailChannel {
     
+    @JSImport("@pulumi/aws/pinpoint/emailChannel", "EmailChannel")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EmailChannel resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,55 +70,49 @@ object emailChannelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/pinpoint/emailChannel", "EmailChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EmailChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/emailChannel", "EmailChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EmailChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/emailChannel", "EmailChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EmailChannelState): EmailChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/emailChannel", "EmailChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EmailChannelState, opts: CustomResourceOptions): EmailChannel = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EmailChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EmailChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EmailChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EmailChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EmailChannelState): EmailChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EmailChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EmailChannelState, opts: CustomResourceOptions): EmailChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EmailChannel]
     
     /**
       * Returns true if the given object is an instance of EmailChannel.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/pinpoint/emailChannel", "EmailChannel.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/emailChannel.EmailChannel */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/emailChannel.EmailChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/emailChannel.EmailChannel */ Boolean]
   }
   
-  @js.native
   trait EmailChannelArgs extends StObject {
     
     /**
       * The application ID.
       */
-    val applicationId: Input[String] = js.native
+    val applicationId: Input[String]
     
     /**
       * Whether the channel is enabled or disabled. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The email address used to send emails from.
       */
-    val fromAddress: Input[String] = js.native
+    val fromAddress: Input[String]
     
     /**
       * The ARN of an identity verified with SES.
       */
-    val identity: Input[String] = js.native
+    val identity: Input[String]
     
     /**
       * The ARN of an IAM Role used to submit events to Mobile Analytics' event ingestion service.
       */
-    val roleArn: Input[String] = js.native
+    val roleArn: Input[String]
   }
   object EmailChannelArgs {
     
@@ -153,38 +150,37 @@ object emailChannelMod {
     }
   }
   
-  @js.native
   trait EmailChannelState extends StObject {
     
     /**
       * The application ID.
       */
-    val applicationId: js.UndefOr[Input[String]] = js.native
+    val applicationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether the channel is enabled or disabled. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The email address used to send emails from.
       */
-    val fromAddress: js.UndefOr[Input[String]] = js.native
+    val fromAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of an identity verified with SES.
       */
-    val identity: js.UndefOr[Input[String]] = js.native
+    val identity: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Messages per second that can be sent.
       */
-    val messagesPerSecond: js.UndefOr[Input[Double]] = js.native
+    val messagesPerSecond: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN of an IAM Role used to submit events to Mobile Analytics' event ingestion service.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
   }
   object EmailChannelState {
     

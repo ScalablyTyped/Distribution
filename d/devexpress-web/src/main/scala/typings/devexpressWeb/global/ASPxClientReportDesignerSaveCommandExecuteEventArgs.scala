@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,4 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Initializes a new instance of the ASPxClientReportDesignerSaveCommandExecuteEventArgs class with the default settings.
   */
 class ASPxClientReportDesignerSaveCommandExecuteEventArgs ()
-  extends typings.devexpressWeb.ASPxClientReportDesignerSaveCommandExecuteEventArgs
+  extends StObject
+     with typings.devexpressWeb.ASPxClientReportDesignerSaveCommandExecuteEventArgs {
+  
+  /**
+    * Specifies whether or not the event was handled.
+    */
+  /* CompleteClass */
+  var handled: Boolean = js.native
+}

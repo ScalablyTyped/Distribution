@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,14 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * State is set to {@link DispatchResultState.DONTKNOW} , Result is empty.
   * @see DispatchResultState
   */
-@js.native
-trait DispatchResultEvent extends EventObject {
+trait DispatchResultEvent
+  extends StObject
+     with EventObject {
   
   /** describes result for given **State** */
-  var Result: js.Any = js.native
+  var Result: js.Any
   
   /** describes state of dispatch */
-  var State: Double = js.native
+  var State: Double
 }
 object DispatchResultEvent {
   

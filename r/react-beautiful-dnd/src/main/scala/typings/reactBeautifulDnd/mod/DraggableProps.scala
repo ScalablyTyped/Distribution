@@ -3,23 +3,21 @@ package typings.reactBeautifulDnd.mod
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggableProps extends StObject {
   
-  var children: DraggableChildrenFn = js.native
+  var children: DraggableChildrenFn
   
-  var disableInteractiveElementBlocking: js.UndefOr[Boolean] = js.native
+  var disableInteractiveElementBlocking: js.UndefOr[Boolean] = js.undefined
   
-  var draggableId: DraggableId = js.native
+  var draggableId: DraggableId
   
-  var index: Double = js.native
+  var index: Double
   
-  var isDragDisabled: js.UndefOr[Boolean] = js.native
+  var isDragDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var shouldRespectForcePress: js.UndefOr[Boolean] = js.native
+  var shouldRespectForcePress: js.UndefOr[Boolean] = js.undefined
 }
 object DraggableProps {
   

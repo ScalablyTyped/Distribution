@@ -8,31 +8,31 @@ import typings.awsSdkClientPinpointBrowser.typesQuietTimeMod.QuietTime
 import typings.awsSdkClientPinpointBrowser.typesQuietTimeMod.UnmarshalledQuietTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesWriteApplicationSettingsRequestMod {
   
-  @js.native
-  trait UnmarshalledWriteApplicationSettingsRequest extends WriteApplicationSettingsRequest {
+  trait UnmarshalledWriteApplicationSettingsRequest
+    extends StObject
+       with WriteApplicationSettingsRequest {
     
     /**
       * Default campaign hook information.
       */
     @JSName("CampaignHook")
-    var CampaignHook_UnmarshalledWriteApplicationSettingsRequest: js.UndefOr[UnmarshalledCampaignHook] = js.native
+    var CampaignHook_UnmarshalledWriteApplicationSettingsRequest: js.UndefOr[UnmarshalledCampaignHook] = js.undefined
     
     /**
       * The limits that apply to each campaign in the project by default. Campaigns can also have their own limits, which override the settings at the project level.
       */
     @JSName("Limits")
-    var Limits_UnmarshalledWriteApplicationSettingsRequest: js.UndefOr[UnmarshalledCampaignLimits] = js.native
+    var Limits_UnmarshalledWriteApplicationSettingsRequest: js.UndefOr[UnmarshalledCampaignLimits] = js.undefined
     
     /**
       * The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own.
       */
     @JSName("QuietTime")
-    var QuietTime_UnmarshalledWriteApplicationSettingsRequest: js.UndefOr[UnmarshalledQuietTime] = js.native
+    var QuietTime_UnmarshalledWriteApplicationSettingsRequest: js.UndefOr[UnmarshalledQuietTime] = js.undefined
   }
   object UnmarshalledWriteApplicationSettingsRequest {
     
@@ -65,28 +65,27 @@ object typesWriteApplicationSettingsRequestMod {
     }
   }
   
-  @js.native
   trait WriteApplicationSettingsRequest extends StObject {
     
     /**
       * Default campaign hook information.
       */
-    var CampaignHook: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesCampaignHookMod.CampaignHook] = js.native
+    var CampaignHook: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesCampaignHookMod.CampaignHook] = js.undefined
     
     /**
       * The CloudWatchMetrics settings for the app.
       */
-    var CloudWatchMetricsEnabled: js.UndefOr[Boolean] = js.native
+    var CloudWatchMetricsEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The limits that apply to each campaign in the project by default. Campaigns can also have their own limits, which override the settings at the project level.
       */
-    var Limits: js.UndefOr[CampaignLimits] = js.native
+    var Limits: js.UndefOr[CampaignLimits] = js.undefined
     
     /**
       * The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own.
       */
-    var QuietTime: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesQuietTimeMod.QuietTime] = js.native
+    var QuietTime: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesQuietTimeMod.QuietTime] = js.undefined
   }
   object WriteApplicationSettingsRequest {
     

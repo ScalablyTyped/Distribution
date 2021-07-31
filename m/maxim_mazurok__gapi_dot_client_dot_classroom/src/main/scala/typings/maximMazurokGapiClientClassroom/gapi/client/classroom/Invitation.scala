@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invitation extends StObject {
   
   /** Identifier of the course to invite the user to. */
-  var courseId: js.UndefOr[String] = js.native
+  var courseId: js.UndefOr[String] = js.undefined
   
   /** Identifier assigned by Classroom. Read-only. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Role to invite the user to have. Must not be `COURSE_ROLE_UNSPECIFIED`. */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the invited user. When specified as a parameter of a request, this identifier can be set to one of the following: * the numeric identifier for the user * the email
     * address of the user * the string literal `"me"`, indicating the requesting user
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object Invitation {
   

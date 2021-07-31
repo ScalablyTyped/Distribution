@@ -4,21 +4,19 @@ import typings.rascal.rascalStrings.exponential
 import typings.rascal.rascalStrings.linear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetryConfig extends StObject {
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var factor: js.UndefOr[Double] = js.native
+  var factor: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var strategy: js.UndefOr[exponential | linear] = js.native
+  var strategy: js.UndefOr[exponential | linear] = js.undefined
 }
 object RetryConfig {
   

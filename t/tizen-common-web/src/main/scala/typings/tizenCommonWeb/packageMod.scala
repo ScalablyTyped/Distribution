@@ -5,35 +5,33 @@ import typings.tizenCommonWeb.applicationMod.ApplicationId
 import typings.tizenCommonWeb.tizenMod.ErrorCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object packageMod {
   
   type PackageId = String
   
-  @js.native
   trait PackageInformation extends StObject {
     
     /**
       * An attribute to store the application ID list of a package.
       */
-    val appIds: js.Array[ApplicationId] = js.native
+    val appIds: js.Array[ApplicationId]
     
     /**
       * An attribute to store the author of a package.
       */
-    val author: String = js.native
+    val author: String
     
     /**
       * An attribute to store the current data size of a package.
       */
-    val dataSize: Double = js.native
+    val dataSize: Double
     
     /**
       * An attribute to store the package description.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * An attribute to store the icon path of a package.
@@ -46,32 +44,32 @@ object packageMod {
       * [packageId](https://docs.tizen.org/application/web/api/3.0/device_api/tv/tizen/application.html#ApplicationInformation::packageId) as the
       * [id](https://docs.tizen.org/application/web/api/3.0/device_api/tv/tizen/package.html#PackageInformation::id) of this package.
       */
-    val iconPath: String = js.native
+    val iconPath: String
     
     /**
       * An attribute to store the identifier of a package.
       */
-    val id: PackageId = js.native
+    val id: PackageId
     
     /**
       * An attribute to store the latest installed or updated time of a package.
       */
-    val lastModified: Date = js.native
+    val lastModified: Date
     
     /**
       * An attribute to store the package name.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * An attribute to store the total installed size(package + data) of a package.
       */
-    val totalSize: Double = js.native
+    val totalSize: Double
     
     /**
       * An attribute to store the package version.
       */
-    val version: String = js.native
+    val version: String
   }
   object PackageInformation {
     
@@ -132,26 +130,25 @@ object packageMod {
   
   type PackageInformationArraySuccessCallback = js.Function1[/* informationArray */ js.Array[PackageInformation], Unit]
   
-  @js.native
   trait PackageInformationEventCallback extends StObject {
     
     /**
       * Called when a package is installed.
       * @param info The information of the installed package.
       */
-    def oninstalled(info: PackageInformation): Unit = js.native
+    def oninstalled(info: PackageInformation): Unit
     
     /**
       * Called when a package is uninstalled.
       * @param id The ID of the uninstalled package.
       */
-    def onuninstalled(id: PackageId): Unit = js.native
+    def onuninstalled(id: PackageId): Unit
     
     /**
       * Called when a package is updated.
       * @param info The information of the updated package.
       */
-    def onupdated(info: PackageInformation): Unit = js.native
+    def onupdated(info: PackageInformation): Unit
   }
   object PackageInformationEventCallback {
     
@@ -299,7 +296,6 @@ object packageMod {
     def unsetPackageInfoEventListener(): Unit = js.native
   }
   
-  @js.native
   trait PackageProgressCallback extends StObject {
     
     /**
@@ -308,14 +304,14 @@ object packageMod {
       *
       * @param id The package ID.
       */
-    def oncomplete(id: PackageId): Unit = js.native
+    def oncomplete(id: PackageId): Unit
     
     /**
       * Called while the request is in progress.
       * @param id The package ID.
       * @param progress The progress in percentage.
       */
-    def onprogress(id: PackageId, progress: Double): Unit = js.native
+    def onprogress(id: PackageId, progress: Double): Unit
   }
   object PackageProgressCallback {
     

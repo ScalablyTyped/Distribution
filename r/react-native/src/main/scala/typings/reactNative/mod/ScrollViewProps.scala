@@ -11,12 +11,11 @@ import typings.reactNative.reactNativeStrings.none
 import typings.reactNative.reactNativeStrings.normal_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollViewProps
-  extends ViewProps
+  extends StObject
+     with ViewProps
      with ScrollViewPropsIOS
      with ScrollViewPropsAndroid {
   
@@ -35,7 +34,7 @@ trait ScrollViewProps
     *     }
     *   });
     */
-  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * A floating-point number that determines how quickly the scroll view
@@ -47,14 +46,14 @@ trait ScrollViewProps
     *  - `'normal'`: 0.998 on iOS, 0.985 on Android (the default)
     *  - `'fast'`: 0.99 on iOS, 0.9 on Android
     */
-  var decelerationRate: js.UndefOr[fast | normal_ | Double] = js.native
+  var decelerationRate: js.UndefOr[fast | normal_ | Double] = js.undefined
   
   /**
     * When true, the scroll view stops on the next index (in relation to scroll position at release)
     * regardless of how fast the gesture is. This can be used for horizontal pagination when the page
     * is less than the width of the ScrollView. The default value is false.
     */
-  var disableIntervalMomentum: js.UndefOr[Boolean] = js.native
+  var disableIntervalMomentum: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, the default JS pan responder on the ScrollView is disabled, and full control over
@@ -63,19 +62,19 @@ trait ScrollViewProps
     * this on regular ScrollView use cases without `snapToInterval` as it may cause unexpected
     * touches to occur while scrolling. The default value is false.
     */
-  var disableScrollViewPanResponder: js.UndefOr[Boolean] = js.native
+  var disableScrollViewPanResponder: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true the scroll view's children are arranged horizontally in a row
     * instead of vertically in a column. The default value is false.
     */
-  var horizontal: js.UndefOr[Boolean | Null] = js.native
+  var horizontal: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * If sticky headers should stick at the bottom instead of the top of the
     * ScrollView. This is usually used with inverted ScrollViews.
     */
-  var invertStickyHeaders: js.UndefOr[Boolean] = js.native
+  var invertStickyHeaders: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines whether the keyboard gets dismissed in response to a drag.
@@ -85,7 +84,7 @@ trait ScrollViewProps
     *     and moves in synchrony with the touch; dragging upwards cancels the
     *     dismissal.
     */
-  var keyboardDismissMode: js.UndefOr[none | interactive | `on-drag`] = js.native
+  var keyboardDismissMode: js.UndefOr[none | interactive | `on-drag`] = js.undefined
   
   /**
     * Determines when the keyboard should stay visible after a tap.
@@ -95,7 +94,7 @@ trait ScrollViewProps
     * - false, deprecated, use 'never' instead
     * - true, deprecated, use 'always' instead
     */
-  var keyboardShouldPersistTaps: js.UndefOr[Boolean | always | never | handled] = js.native
+  var keyboardShouldPersistTaps: js.UndefOr[Boolean | always | never | handled] = js.undefined
   
   /**
     * Called when scrollable content view of the ScrollView changes.
@@ -103,68 +102,68 @@ trait ScrollViewProps
     * It's implemented using onLayout handler attached to the content container which this ScrollView renders.
     *
     */
-  var onContentSizeChange: js.UndefOr[js.Function2[/* w */ Double, /* h */ Double, Unit]] = js.native
+  var onContentSizeChange: js.UndefOr[js.Function2[/* w */ Double, /* h */ Double, Unit]] = js.undefined
   
   /**
     * Fires when scroll view has begun moving
     */
-  var onMomentumScrollBegin: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+  var onMomentumScrollBegin: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
   
   /**
     * Fires when scroll view has finished moving
     */
-  var onMomentumScrollEnd: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+  var onMomentumScrollEnd: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
   
   /**
     * Fires at most once per frame during scrolling.
     * The frequency of the events can be contolled using the scrollEventThrottle prop.
     */
-  var onScroll: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+  var onScroll: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
   
   /**
     * Fires if a user initiates a scroll gesture.
     */
-  var onScrollBeginDrag: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+  var onScrollBeginDrag: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
   
   /**
     * Fires when a user has finished scrolling.
     */
-  var onScrollEndDrag: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+  var onScrollEndDrag: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
   
   /**
     * When true the scroll view stops on multiples of the scroll view's size
     * when scrolling. This can be used for horizontal pagination. The default
     * value is false.
     */
-  var pagingEnabled: js.UndefOr[Boolean] = js.native
+  var pagingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A RefreshControl component, used to provide pull-to-refresh
     * functionality for the ScrollView.
     */
-  var refreshControl: js.UndefOr[ReactElement] = js.native
+  var refreshControl: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * When false, the content does not scroll. The default value is true
     */
-  var scrollEnabled: js.UndefOr[Boolean] = js.native
+  var scrollEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, shows a horizontal scroll indicator.
     */
-  var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.native
+  var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, shows a vertical scroll indicator.
     */
-  var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.native
+  var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use in conjunction with `snapToOffsets`. By default, the end of the list counts as a snap
     * offset. Set `snapToEnd` to false to disable this behavior and allow the list to scroll freely
     * between its end and the last `snapToOffsets` offset. The default value is true.
     */
-  var snapToEnd: js.UndefOr[Boolean] = js.native
+  var snapToEnd: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set, causes the scroll view to stop at multiples of the value of `snapToInterval`.
@@ -172,7 +171,7 @@ trait ScrollViewProps
     * Used in combination with `snapToAlignment` and `decelerationRate="fast"`. Overrides less
     * configurable `pagingEnabled` prop.
     */
-  var snapToInterval: js.UndefOr[Double] = js.native
+  var snapToInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * When set, causes the scroll view to stop at the defined offsets. This can be used for
@@ -180,14 +179,14 @@ trait ScrollViewProps
     * Typically used in combination with `decelerationRate="fast"`. Overrides less configurable
     * `pagingEnabled` and `snapToInterval` props.
     */
-  var snapToOffsets: js.UndefOr[js.Array[Double]] = js.native
+  var snapToOffsets: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Use in conjunction with `snapToOffsets`. By default, the beginning of the list counts as a
     * snap offset. Set `snapToStart` to false to disable this behavior and allow the list to scroll
     * freely between its start and the first `snapToOffsets` offset. The default value is true.
     */
-  var snapToStart: js.UndefOr[Boolean] = js.native
+  var snapToStart: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of child indices determining which children get docked to the
@@ -196,7 +195,7 @@ trait ScrollViewProps
     * top of the scroll view. This property is not supported in conjunction
     * with `horizontal={true}`.
     */
-  var stickyHeaderIndices: js.UndefOr[js.Array[Double]] = js.native
+  var stickyHeaderIndices: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object ScrollViewProps {
   

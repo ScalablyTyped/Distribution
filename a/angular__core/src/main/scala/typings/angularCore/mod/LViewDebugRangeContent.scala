@@ -2,30 +2,28 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * For convenience the static and instance portions of `TView` and `LView` are merged into a single
   * object in `LViewRange`.
   */
-@js.native
 trait LViewDebugRangeContent extends StObject {
   
   /**
     * Index into original `LView` or `TView.data`.
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Value from the `LView[index]` location.
     */
-  var l: js.Any = js.native
+  var l: js.Any
   
   /**
     * Value from the `TView.data[index]` location.
     */
-  var t: js.Any = js.native
+  var t: js.Any
 }
 object LViewDebugRangeContent {
   

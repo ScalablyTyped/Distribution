@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationToken extends StObject {
   
   /** The authentication token to be passed to the device policy client on the device where it can be used to provision the account for which this token was generated. */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object AuthenticationToken {
   

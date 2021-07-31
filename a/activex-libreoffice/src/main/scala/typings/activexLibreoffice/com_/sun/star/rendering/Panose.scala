@@ -2,31 +2,29 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Panose extends StObject {
   
-  var ArmStyle: Double = js.native
+  var ArmStyle: Double
   
-  var Contrast: Double = js.native
+  var Contrast: Double
   
-  var FamilyType: Double = js.native
+  var FamilyType: Double
   
-  var Letterform: Double = js.native
+  var Letterform: Double
   
-  var Midline: Double = js.native
+  var Midline: Double
   
-  var Proportion: Double = js.native
+  var Proportion: Double
   
-  var SerifStyle: Double = js.native
+  var SerifStyle: Double
   
-  var StrokeVariation: Double = js.native
+  var StrokeVariation: Double
   
-  var Weight: Double = js.native
+  var Weight: Double
   
-  var XHeight: Double = js.native
+  var XHeight: Double
 }
 object Panose {
   

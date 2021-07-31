@@ -2,41 +2,39 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpnDetails extends StObject {
   
   /**
     * The IP address of network traffic from AWS to your on-premises data center.
     */
-  var VpnGatewayIp: js.UndefOr[String] = js.native
+  var VpnGatewayIp: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the VPN.
     */
-  var VpnId: js.UndefOr[String] = js.native
+  var VpnId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the VPN.
     */
-  var VpnName: js.UndefOr[String] = js.native
+  var VpnName: js.UndefOr[String] = js.undefined
   
   /**
     * The preshared key (PSK) for the VPN.
     */
-  var VpnPSK: js.UndefOr[StringSensitive] = js.native
+  var VpnPSK: js.UndefOr[StringSensitive] = js.undefined
   
   /**
     * The state of the VPN.
     */
-  var VpnState: js.UndefOr[String] = js.native
+  var VpnState: js.UndefOr[String] = js.undefined
   
   /**
     * The IP address of network traffic from your on-premises data center. A custom AZ receives the network traffic.
     */
-  var VpnTunnelOriginatorIP: js.UndefOr[String] = js.native
+  var VpnTunnelOriginatorIP: js.UndefOr[String] = js.undefined
 }
 object VpnDetails {
   

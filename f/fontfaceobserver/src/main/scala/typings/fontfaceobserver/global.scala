@@ -3,7 +3,6 @@ package typings.fontfaceobserver
 import typings.fontfaceobserver.FontFaceObserver.FontVariant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -11,7 +10,8 @@ object global {
   @JSGlobal("FontFaceObserver")
   @js.native
   class FontFaceObserver protected ()
-    extends typings.fontfaceobserver.FontFaceObserver {
+    extends StObject
+       with typings.fontfaceobserver.FontFaceObserver {
     /**
       * Creates a new FontFaceObserver.
       * @param fontFamilyName Name of the font family to observe.

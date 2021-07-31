@@ -2,18 +2,16 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBandwidthRateLimitInput extends StObject {
   
   /**
     * One of the BandwidthType values that indicates the gateway bandwidth rate limit to delete. Valid Values: UPLOAD | DOWNLOAD | ALL 
     */
-  var BandwidthType: typings.awsSdk.storagegatewayMod.BandwidthType = js.native
+  var BandwidthType: typings.awsSdk.storagegatewayMod.BandwidthType
   
-  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
+  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
 }
 object DeleteBandwidthRateLimitInput {
   

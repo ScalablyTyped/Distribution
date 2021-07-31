@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResponse extends StObject {
   
   /**
     *  The tags used to organize, track, or control access for your flow. 
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object ListTagsForResourceResponse {
   

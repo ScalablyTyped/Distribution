@@ -2,22 +2,20 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2StructuredResponse extends StObject {
   
   /**
     * App provides an order update (e.g.
     * Receipt) after receiving the order.
     */
-  var orderUpdate: js.UndefOr[GoogleActionsV2OrdersOrderUpdate] = js.native
+  var orderUpdate: js.UndefOr[GoogleActionsV2OrdersOrderUpdate] = js.undefined
   
   /**
     * App provides an order update in API v3 format after receiving the order.
     */
-  var orderUpdateV3: js.UndefOr[GoogleActionsOrdersV3OrderUpdate] = js.native
+  var orderUpdateV3: js.UndefOr[GoogleActionsOrdersV3OrderUpdate] = js.undefined
 }
 object GoogleActionsV2StructuredResponse {
   

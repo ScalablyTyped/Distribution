@@ -2,13 +2,11 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The BigQuery table to which the output should be written.
   */
-@js.native
 trait SchemaBigQueryDestination extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaBigQueryDestination extends StObject {
     * exported. If this dataset does not exist, the export call returns an
     * error.
     */
-  var dataset: js.UndefOr[String] = js.native
+  var dataset: js.UndefOr[String] = js.undefined
   
   /**
     * If the destination table already exists and this flag is `TRUE`, the
@@ -24,14 +22,14 @@ trait SchemaBigQueryDestination extends StObject {
     * is not set and the destination table already exists, the export call
     * returns an error.
     */
-  var overwriteTable: js.UndefOr[Boolean] = js.native
+  var overwriteTable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required. The BigQuery table to which the DICOM store should be written.
     * If this table does not exist, a new table with the given name will be
     * created.
     */
-  var table: js.UndefOr[String] = js.native
+  var table: js.UndefOr[String] = js.undefined
 }
 object SchemaBigQueryDestination {
   

@@ -14,19 +14,17 @@ import typings.popperJs.popperJsStrings.top
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Arrow extends StObject {
     
-    var arrow: Left = js.native
+    var arrow: Left
     
-    var popper: Offset = js.native
+    var popper: Offset
     
-    var reference: Offset = js.native
+    var reference: Offset
   }
   object Arrow {
     
@@ -51,24 +49,23 @@ object anon {
   }
   
   /* Inlined popper.js.popper.js.Popper.BaseModifier & {  behavior :popper.js.popper.js.Popper.Behavior | std.Array<popper.js.popper.js.Popper.Position> | undefined,   padding :number | popper.js.popper.js.Popper.Padding | undefined,   boundariesElement :popper.js.popper.js.Popper.Boundary | std.Element | undefined,   flipVariations :boolean | undefined,   flipVariationsByContent :boolean | undefined} */
-  @js.native
   trait BaseModifierbehaviorBehav extends StObject {
     
-    var behavior: js.UndefOr[Behavior | js.Array[Position]] = js.native
+    var behavior: js.UndefOr[Behavior | js.Array[Position]] = js.undefined
     
-    var boundariesElement: js.UndefOr[Boundary | Element] = js.native
+    var boundariesElement: js.UndefOr[Boundary | Element] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var flipVariations: js.UndefOr[Boolean] = js.native
+    var flipVariations: js.UndefOr[Boolean] = js.undefined
     
-    var flipVariationsByContent: js.UndefOr[Boolean] = js.native
+    var flipVariationsByContent: js.UndefOr[Boolean] = js.undefined
     
-    var fn: js.UndefOr[ModifierFn] = js.native
+    var fn: js.UndefOr[ModifierFn] = js.undefined
     
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
     
-    var padding: js.UndefOr[Double | Padding] = js.native
+    var padding: js.UndefOr[Double | Padding] = js.undefined
   }
   object BaseModifierbehaviorBehav {
     
@@ -135,16 +132,15 @@ object anon {
   }
   
   /* Inlined popper.js.popper.js.Popper.BaseModifier & {  element :string | std.Element | undefined} */
-  @js.native
   trait BaseModifierelementstring extends StObject {
     
-    var element: js.UndefOr[String | Element] = js.native
+    var element: js.UndefOr[String | Element] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var fn: js.UndefOr[ModifierFn] = js.native
+    var fn: js.UndefOr[ModifierFn] = js.undefined
     
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
   }
   object BaseModifierelementstring {
     
@@ -184,20 +180,19 @@ object anon {
   }
   
   /* Inlined popper.js.popper.js.Popper.BaseModifier & {  gpuAcceleration :boolean | undefined,   x :'bottom' | 'top' | undefined,   y :'left' | 'right' | undefined} */
-  @js.native
   trait BaseModifiergpuAccelerati extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var fn: js.UndefOr[ModifierFn] = js.native
+    var fn: js.UndefOr[ModifierFn] = js.undefined
     
-    var gpuAcceleration: js.UndefOr[Boolean] = js.native
+    var gpuAcceleration: js.UndefOr[Boolean] = js.undefined
     
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[bottom | top] = js.native
+    var x: js.UndefOr[bottom | top] = js.undefined
     
-    var y: js.UndefOr[left | right] = js.native
+    var y: js.UndefOr[left | right] = js.undefined
   }
   object BaseModifiergpuAccelerati {
     
@@ -249,16 +244,15 @@ object anon {
   }
   
   /* Inlined popper.js.popper.js.BaseModifier & {  name :string} */
-  @js.native
   trait BaseModifiernamestring extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var fn: js.UndefOr[ModifierFn] = js.native
+    var fn: js.UndefOr[ModifierFn] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
   }
   object BaseModifiernamestring {
     
@@ -295,16 +289,15 @@ object anon {
   }
   
   /* Inlined popper.js.popper.js.Popper.BaseModifier & {  offset :number | string | undefined} */
-  @js.native
   trait BaseModifieroffsetnumbers extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var fn: js.UndefOr[ModifierFn] = js.native
+    var fn: js.UndefOr[ModifierFn] = js.undefined
     
-    var offset: js.UndefOr[Double | String] = js.native
+    var offset: js.UndefOr[Double | String] = js.undefined
     
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
   }
   object BaseModifieroffsetnumbers {
     
@@ -344,18 +337,17 @@ object anon {
   }
   
   /* Inlined popper.js.popper.js.Popper.BaseModifier & {  onLoad :std.Function | undefined,   gpuAcceleration :boolean | undefined} */
-  @js.native
   trait BaseModifieronLoadFunctio extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var fn: js.UndefOr[ModifierFn] = js.native
+    var fn: js.UndefOr[ModifierFn] = js.undefined
     
-    var gpuAcceleration: js.UndefOr[Boolean] = js.native
+    var gpuAcceleration: js.UndefOr[Boolean] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function] = js.native
+    var onLoad: js.UndefOr[js.Function] = js.undefined
     
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
   }
   object BaseModifieronLoadFunctio {
     
@@ -401,22 +393,21 @@ object anon {
   }
   
   /* Inlined popper.js.popper.js.Popper.BaseModifier & {  priority :std.Array<popper.js.popper.js.Popper.Position> | undefined,   padding :number | popper.js.popper.js.Popper.Padding | undefined,   boundariesElement :popper.js.popper.js.Popper.Boundary | std.Element | undefined,   escapeWithReference :boolean | undefined} */
-  @js.native
   trait BaseModifierpriorityArray extends StObject {
     
-    var boundariesElement: js.UndefOr[Boundary | Element] = js.native
+    var boundariesElement: js.UndefOr[Boundary | Element] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var escapeWithReference: js.UndefOr[Boolean] = js.native
+    var escapeWithReference: js.UndefOr[Boolean] = js.undefined
     
-    var fn: js.UndefOr[ModifierFn] = js.native
+    var fn: js.UndefOr[ModifierFn] = js.undefined
     
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
     
-    var padding: js.UndefOr[Double | Padding] = js.native
+    var padding: js.UndefOr[Double | Padding] = js.undefined
     
-    var priority: js.UndefOr[js.Array[Position]] = js.native
+    var priority: js.UndefOr[js.Array[Position]] = js.undefined
   }
   object BaseModifierpriorityArray {
     
@@ -476,12 +467,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Left extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Left {
     

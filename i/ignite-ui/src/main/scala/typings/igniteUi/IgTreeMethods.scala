@@ -2,7 +2,6 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,9 +15,9 @@ trait IgTreeMethods extends StObject {
     * @param nodeIndex Specifies the index at which the nodes to be inserted.
     */
   def addNode(node: js.Object): Unit = js.native
-  def addNode(node: js.Object, parent: js.UndefOr[scala.Nothing], nodeIndex: Double): Unit = js.native
   def addNode(node: js.Object, parent: js.Object): Unit = js.native
   def addNode(node: js.Object, parent: js.Object, nodeIndex: Double): Unit = js.native
+  def addNode(node: js.Object, parent: Unit, nodeIndex: Double): Unit = js.native
   
   /**
     * Performs a UI update on the provided node element with the provided data.
@@ -58,21 +57,21 @@ trait IgTreeMethods extends StObject {
   /**
     * Retrieves all the node objects for the nodes that have their checkboxes checked.
     */
-  def checkedNodes(): js.Array[_] = js.native
+  def checkedNodes(): js.Array[js.Any] = js.native
   
   /**
     * Retrieves a node object collection of the immediate children of the provided node element.
     *
     * @param parent Specifies the node element.
     */
-  def children(parent: js.Object): js.Array[_] = js.native
+  def children(parent: js.Object): js.Array[js.Any] = js.native
   
   /**
     * Retrieves a node object collection of the immediate children of the node with the provided path.
     *
     * @param path Specifies the path of the node the children of which are to be retrieved.
     */
-  def childrenByPath(path: String): js.Array[_] = js.native
+  def childrenByPath(path: String): js.Array[js.Any] = js.native
   
   /**
     * Deselects all the selected nodes.
@@ -129,8 +128,8 @@ trait IgTreeMethods extends StObject {
     * @param text The text to search for.
     * @param parent The node element the children of which would be searched.
     */
-  def findImmediateNodesByText(text: String): js.Array[_] = js.native
-  def findImmediateNodesByText(text: String, parent: js.Object): js.Array[_] = js.native
+  def findImmediateNodesByText(text: String): js.Array[js.Any] = js.native
+  def findImmediateNodesByText(text: String, parent: js.Object): js.Array[js.Any] = js.native
   
   /**
     * Retrieves all node objects with the specified text (case sensitive).
@@ -138,8 +137,8 @@ trait IgTreeMethods extends StObject {
     * @param text The text to search for.
     * @param parent The node element to start the search from. If not specified then search would start from the root of the tree.
     */
-  def findNodesByText(text: String): js.Array[_] = js.native
-  def findNodesByText(text: String, parent: js.Object): js.Array[_] = js.native
+  def findNodesByText(text: String): js.Array[js.Any] = js.native
+  def findNodesByText(text: String, parent: js.Object): js.Array[js.Any] = js.native
   
   /**
     * Returns true if the provided node element has its checkbox checkstate checked and false otherwise.
@@ -217,7 +216,7 @@ trait IgTreeMethods extends StObject {
   /**
     * Retrieves all the node objects for the nodes that have their checkboxes partially checked.
     */
-  def partiallyCheckedNodes(): js.Array[_] = js.native
+  def partiallyCheckedNodes(): js.Array[js.Any] = js.native
   
   /**
     * Removes the node with with the specified path and all of its children.
@@ -268,7 +267,7 @@ trait IgTreeMethods extends StObject {
   /**
     * Returns the transaction log stack.
     */
-  def transactionLog(): js.Array[_] = js.native
+  def transactionLog(): js.Array[js.Any] = js.native
   
   /**
     * Applies an unchecked state to a node.
@@ -281,5 +280,5 @@ trait IgTreeMethods extends StObject {
   /**
     * Retrieves all the node objects for the nodes that have their checkboxes unchecked.
     */
-  def uncheckedNodes(): js.Array[_] = js.native
+  def uncheckedNodes(): js.Array[js.Any] = js.native
 }

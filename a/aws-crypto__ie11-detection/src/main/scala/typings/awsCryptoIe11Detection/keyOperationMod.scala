@@ -4,19 +4,17 @@ import typings.awsCryptoIe11Detection.keyMod.Key
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyOperationMod {
   
-  @js.native
   trait KeyOperation extends StObject {
     
-    def oncomplete(event: Event): Unit = js.native
+    def oncomplete(event: Event): Unit
     
-    def onerror(event: Event): Unit = js.native
+    def onerror(event: Event): Unit
     
-    val result: js.UndefOr[Key] = js.native
+    val result: js.UndefOr[Key] = js.undefined
   }
   object KeyOperation {
     

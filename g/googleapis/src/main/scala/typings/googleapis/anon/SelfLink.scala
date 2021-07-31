@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelfLink extends StObject {
   
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object SelfLink {
   

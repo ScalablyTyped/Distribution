@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinimumOrderValueTableStoreCodeSetWithMov extends StObject {
   
   /** A list of unique store codes or empty for the catch all. */
-  var storeCodes: js.UndefOr[js.Array[String]] = js.native
+  var storeCodes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The minimum order value for the given stores. */
-  var value: js.UndefOr[Price] = js.native
+  var value: js.UndefOr[Price] = js.undefined
 }
 object MinimumOrderValueTableStoreCodeSetWithMov {
   

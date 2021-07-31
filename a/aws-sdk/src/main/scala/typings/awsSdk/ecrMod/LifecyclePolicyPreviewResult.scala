@@ -2,36 +2,34 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LifecyclePolicyPreviewResult extends StObject {
   
   /**
     * The type of action to be taken.
     */
-  var action: js.UndefOr[LifecyclePolicyRuleAction] = js.native
+  var action: js.UndefOr[LifecyclePolicyRuleAction] = js.undefined
   
   /**
     * The priority of the applied rule.
     */
-  var appliedRulePriority: js.UndefOr[LifecyclePolicyRulePriority] = js.native
+  var appliedRulePriority: js.UndefOr[LifecyclePolicyRulePriority] = js.undefined
   
   /**
     * The sha256 digest of the image manifest.
     */
-  var imageDigest: js.UndefOr[ImageDigest] = js.native
+  var imageDigest: js.UndefOr[ImageDigest] = js.undefined
   
   /**
     * The date and time, expressed in standard JavaScript date format, at which the current image was pushed to the repository.
     */
-  var imagePushedAt: js.UndefOr[PushTimestamp] = js.native
+  var imagePushedAt: js.UndefOr[PushTimestamp] = js.undefined
   
   /**
     * The list of tags associated with this image.
     */
-  var imageTags: js.UndefOr[ImageTagList] = js.native
+  var imageTags: js.UndefOr[ImageTagList] = js.undefined
 }
 object LifecyclePolicyPreviewResult {
   

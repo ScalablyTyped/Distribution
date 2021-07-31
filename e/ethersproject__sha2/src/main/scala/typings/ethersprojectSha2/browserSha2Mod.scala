@@ -4,24 +4,23 @@ import typings.ethersprojectBytes.mod.BytesLike
 import typings.ethersprojectSha2.typesMod.SupportedAlgorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserSha2Mod {
   
-  @JSImport("@ethersproject/sha2/lib/browser-sha2", "computeHmac")
+  @JSImport("@ethersproject/sha2/lib/browser-sha2", JSImport.Namespace)
   @js.native
-  def computeHmac(algorithm: SupportedAlgorithm, key: BytesLike, data: BytesLike): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ethersproject/sha2/lib/browser-sha2", "ripemd160")
-  @js.native
-  def ripemd160(data: BytesLike): String = js.native
+  @scala.inline
+  def computeHmac(algorithm: SupportedAlgorithm, key: BytesLike, data: BytesLike): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ethersproject/sha2/lib/browser-sha2", "sha256")
-  @js.native
-  def sha256(data: BytesLike): String = js.native
+  @scala.inline
+  def ripemd160(data: BytesLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ripemd160")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ethersproject/sha2/lib/browser-sha2", "sha512")
-  @js.native
-  def sha512(data: BytesLike): String = js.native
+  @scala.inline
+  def sha256(data: BytesLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def sha512(data: BytesLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(data.asInstanceOf[js.Any]).asInstanceOf[String]
 }

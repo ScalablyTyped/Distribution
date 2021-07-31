@@ -10,9 +10,9 @@ Beautiful, seamless iframes with seamless.js -----------------------------------
 | ------------------ | :-------------: |
 | Full name          | seamless |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 25807 |
+| # downloads        | 26948 |
 | # stars            | 0 |
 
 ## Links

@@ -6,32 +6,32 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAccountsClientsInvitationsCreate extends StandardParameters {
+trait ParamsResourceAccountsClientsInvitationsCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Numerical account ID of the client's sponsor buyer. (required)
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Numerical account ID of the client buyer that the user should be
     * associated with. (required)
     */
-  var clientAccountId: js.UndefOr[String] = js.native
+  var clientAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaClientUserInvitation] = js.native
+  var requestBody: js.UndefOr[SchemaClientUserInvitation] = js.undefined
 }
 object ParamsResourceAccountsClientsInvitationsCreate {
   

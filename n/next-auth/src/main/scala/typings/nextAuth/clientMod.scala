@@ -5,123 +5,101 @@ import typings.nextAuth.anon.CallbackUrl
 import typings.nextAuth.anon.GenericObjectcallbackUrls
 import typings.nextAuth.anon.NextContexttriggerEventbo
 import typings.nextAuth.anon.Req
+import typings.nextAuth.mod.User
 import typings.nextAuth.utilsMod.GenericObject
 import typings.nextAuth.utilsMod.SessionBase
 import typings.node.httpMod.IncomingMessage
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientMod {
+  
+  @JSImport("next-auth/client", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("next-auth/client", "Provider")
   @js.native
   val Provider: ContextProvider = js.native
   
-  @JSImport("next-auth/client", "csrfToken")
-  @js.native
-  def csrfToken(): js.Promise[String | Null] = js.native
-  @JSImport("next-auth/client", "csrfToken")
-  @js.native
-  def csrfToken(context: NextContext): js.Promise[String | Null] = js.native
+  @scala.inline
+  def csrfToken(): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("csrfToken")().asInstanceOf[js.Promise[String | Null]]
+  @scala.inline
+  def csrfToken(context: NextContext): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("csrfToken")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
   
   /* was `typeof csrfToken` */
-  @JSImport("next-auth/client", "getCsrfToken")
-  @js.native
-  def getCsrfToken(): js.Promise[String | Null] = js.native
-  @JSImport("next-auth/client", "getCsrfToken")
-  @js.native
-  def getCsrfToken(context: NextContext): js.Promise[String | Null] = js.native
+  @scala.inline
+  def getCsrfToken(): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCsrfToken")().asInstanceOf[js.Promise[String | Null]]
+  @scala.inline
+  def getCsrfToken(context: NextContext): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCsrfToken")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
   
   /* was `typeof providers` */
-  @JSImport("next-auth/client", "getProviders")
-  @js.native
-  def getProviders(): js.Promise[GetProvidersResponse | Null] = js.native
+  @scala.inline
+  def getProviders(): js.Promise[GetProvidersResponse | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProviders")().asInstanceOf[js.Promise[GetProvidersResponse | Null]]
   
   /* was `typeof session` */
-  @JSImport("next-auth/client", "getSession")
-  @js.native
-  def getSession(): js.Promise[Session_ | Null] = js.native
-  @JSImport("next-auth/client", "getSession")
-  @js.native
-  def getSession(context: NextContexttriggerEventbo): js.Promise[Session_ | Null] = js.native
+  @scala.inline
+  def getSession(): js.Promise[Session_ | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSession")().asInstanceOf[js.Promise[Session_ | Null]]
+  @scala.inline
+  def getSession(context: NextContexttriggerEventbo): js.Promise[Session_ | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSession")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Session_ | Null]]
   
-  @JSImport("next-auth/client", "options")
-  @js.native
-  def options(options: SetOptionsParams): Unit = js.native
+  @scala.inline
+  def options(options: SetOptionsParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("next-auth/client", "providers")
-  @js.native
-  def providers(): js.Promise[GetProvidersResponse | Null] = js.native
+  @scala.inline
+  def providers(): js.Promise[GetProvidersResponse | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("providers")().asInstanceOf[js.Promise[GetProvidersResponse | Null]]
   
-  @JSImport("next-auth/client", "session")
-  @js.native
-  def session(): js.Promise[Session_ | Null] = js.native
-  @JSImport("next-auth/client", "session")
-  @js.native
-  def session(context: NextContexttriggerEventbo): js.Promise[Session_ | Null] = js.native
+  @scala.inline
+  def session(): js.Promise[Session_ | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("session")().asInstanceOf[js.Promise[Session_ | Null]]
+  @scala.inline
+  def session(context: NextContexttriggerEventbo): js.Promise[Session_ | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("session")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Session_ | Null]]
   
   /* was `typeof options` */
-  @JSImport("next-auth/client", "setOptions")
-  @js.native
-  def setOptions(options: SetOptionsParams): Unit = js.native
+  @scala.inline
+  def setOptions(options: SetOptionsParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* was `typeof signin` */
-  @JSImport("next-auth/client", "signIn")
-  @js.native
-  def signIn_(): js.Promise[Unit] = js.native
-  @JSImport("next-auth/client", "signIn")
-  @js.native
-  def signIn_(provider: js.UndefOr[scala.Nothing], data: GenericObjectcallbackUrls): js.Promise[Unit] = js.native
-  @JSImport("next-auth/client", "signIn")
-  @js.native
-  def signIn_(provider: String): js.Promise[Unit] = js.native
-  @JSImport("next-auth/client", "signIn")
-  @js.native
-  def signIn_(provider: String, data: GenericObjectcallbackUrls): js.Promise[Unit] = js.native
+  @scala.inline
+  def signIn_(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("signIn")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def signIn_(provider: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("signIn")(provider.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def signIn_(provider: String, data: GenericObjectcallbackUrls): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("signIn")(provider.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def signIn_(provider: Unit, data: GenericObjectcallbackUrls): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("signIn")(provider.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* was `typeof signout` */
-  @JSImport("next-auth/client", "signOut")
-  @js.native
-  def signOut_(): js.Promise[Unit] = js.native
-  @JSImport("next-auth/client", "signOut")
-  @js.native
-  def signOut_(data: CallbackUrl): js.Promise[Unit] = js.native
+  @scala.inline
+  def signOut_(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("signOut")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def signOut_(data: CallbackUrl): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("signOut")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("next-auth/client", "signin")
-  @js.native
-  def signin(): js.Promise[Unit] = js.native
-  @JSImport("next-auth/client", "signin")
-  @js.native
-  def signin(provider: js.UndefOr[scala.Nothing], data: GenericObjectcallbackUrls): js.Promise[Unit] = js.native
-  @JSImport("next-auth/client", "signin")
-  @js.native
-  def signin(provider: String): js.Promise[Unit] = js.native
-  @JSImport("next-auth/client", "signin")
-  @js.native
-  def signin(provider: String, data: GenericObjectcallbackUrls): js.Promise[Unit] = js.native
+  @scala.inline
+  def signin(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("signin")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def signin(provider: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("signin")(provider.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def signin(provider: String, data: GenericObjectcallbackUrls): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("signin")(provider.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def signin(provider: Unit, data: GenericObjectcallbackUrls): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("signin")(provider.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("next-auth/client", "signout")
-  @js.native
-  def signout(): js.Promise[Unit] = js.native
-  @JSImport("next-auth/client", "signout")
-  @js.native
-  def signout(data: CallbackUrl): js.Promise[Unit] = js.native
+  @scala.inline
+  def signout(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("signout")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def signout(data: CallbackUrl): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("signout")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("next-auth/client", "useSession")
-  @js.native
-  def useSession(): js.Tuple2[js.UndefOr[Session_ | Null], Boolean] = js.native
+  @scala.inline
+  def useSession(): js.Tuple2[js.UndefOr[Session_ | Null], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSession")().asInstanceOf[js.Tuple2[js.UndefOr[Session_ | Null], Boolean]]
   
   type ContextProvider = FC[ContextProviderProps]
   
-  @js.native
   trait ContextProviderProps extends StObject {
     
-    var options: js.UndefOr[SetOptionsParams] = js.native
+    var options: js.UndefOr[SetOptionsParams] = js.undefined
     
-    var session: js.UndefOr[Session_ | Null] = js.native
+    var session: js.UndefOr[Session_ | Null] = js.undefined
   }
   object ContextProviderProps {
     
@@ -153,12 +131,11 @@ object clientMod {
   
   type GetProvidersResponse = StringDictionary[SessionProvider]
   
-  @js.native
   trait NextContext extends StObject {
     
-    var ctx: js.UndefOr[Req] = js.native
+    var ctx: js.UndefOr[Req] = js.undefined
     
-    var req: js.UndefOr[IncomingMessage] = js.native
+    var req: js.UndefOr[IncomingMessage] = js.undefined
   }
   object NextContext {
     
@@ -185,18 +162,19 @@ object clientMod {
     }
   }
   
-  @js.native
-  trait SessionProvider extends GenericObject {
+  trait SessionProvider
+    extends StObject
+       with GenericObject {
     
-    var callbackUrl: String = js.native
+    var callbackUrl: String
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var signinUrl: String = js.native
+    var signinUrl: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SessionProvider {
     
@@ -227,18 +205,28 @@ object clientMod {
     }
   }
   
-  type Session_ = SessionBase with GenericObject
+  trait Session_
+    extends StObject
+       with SessionBase
+       with GenericObject
+  object Session_ {
+    
+    @scala.inline
+    def apply(expires: String, user: User): Session_ = {
+      val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Session_]
+    }
+  }
   
-  @js.native
   trait SetOptionsParams extends StObject {
     
-    var basePath: js.UndefOr[String] = js.native
+    var basePath: js.UndefOr[String] = js.undefined
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var clientMaxAge: js.UndefOr[Double] = js.native
+    var clientMaxAge: js.UndefOr[Double] = js.undefined
     
-    var keepAlive: js.UndefOr[Double] = js.native
+    var keepAlive: js.UndefOr[Double] = js.undefined
   }
   object SetOptionsParams {
     

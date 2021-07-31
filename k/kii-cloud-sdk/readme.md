@@ -10,9 +10,9 @@ This is the Kii Cloud SDK
 | ------------------ | :-------------: |
 | Full name          | kii-cloud-sdk |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 1061 |
+| # downloads        | 1330 |
 | # stars            | 1 |
 
 ## Links

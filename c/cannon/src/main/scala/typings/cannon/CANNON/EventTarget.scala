@@ -2,19 +2,17 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventTarget extends StObject {
   
-  def addEventListener(`type`: String, listener: js.Function): EventTarget = js.native
+  def addEventListener(`type`: String, listener: js.Function): EventTarget
   
-  def dispatchEvent(event: IEvent): IEvent = js.native
+  def dispatchEvent(event: IEvent): IEvent
   
-  def hasEventListener(`type`: String, listener: js.Function): Boolean = js.native
+  def hasEventListener(`type`: String, listener: js.Function): Boolean
   
-  def removeEventListener(`type`: String, listener: js.Function): EventTarget = js.native
+  def removeEventListener(`type`: String, listener: js.Function): EventTarget
 }
 object EventTarget {
   

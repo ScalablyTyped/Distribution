@@ -5,14 +5,12 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.low
 import typings.wechatMiniprogram.wechatMiniprogramStrings.medium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartAdvertisingObject extends StObject {
   
   /** 广播自定义参数 */
-  var advertiseRequest: AdvertiseReqObj = js.native
+  var advertiseRequest: AdvertiseReqObj
   
   /** 广播功率
     *
@@ -20,7 +18,7 @@ trait StartAdvertisingObject extends StObject {
     * - 'low': 功率低;
     * - 'medium': 功率适中;
     * - 'high': 功率高; */
-  var powerLevel: js.UndefOr[low | medium | high] = js.native
+  var powerLevel: js.UndefOr[low | medium | high] = js.undefined
 }
 object StartAdvertisingObject {
   

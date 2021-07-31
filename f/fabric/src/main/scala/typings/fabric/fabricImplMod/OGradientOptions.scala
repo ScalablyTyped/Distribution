@@ -3,29 +3,27 @@ package typings.fabric.fabricImplMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OGradientOptions extends StObject {
   
-  var colorStops: js.UndefOr[StringDictionary[String]] = js.native
+  var colorStops: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var gradientTransform: js.UndefOr[js.Any] = js.native
+  var gradientTransform: js.UndefOr[js.Any] = js.undefined
   
-  var r1: js.UndefOr[Double] = js.native
+  var r1: js.UndefOr[Double] = js.undefined
   
-  var r2: js.UndefOr[Double] = js.native
+  var r2: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var x1: js.UndefOr[Double] = js.native
+  var x1: js.UndefOr[Double] = js.undefined
   
-  var x2: js.UndefOr[Double] = js.native
+  var x2: js.UndefOr[Double] = js.undefined
   
-  var y1: js.UndefOr[Double] = js.native
+  var y1: js.UndefOr[Double] = js.undefined
   
-  var y2: js.UndefOr[Double] = js.native
+  var y2: js.UndefOr[Double] = js.undefined
 }
 object OGradientOptions {
   

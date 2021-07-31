@@ -3,17 +3,15 @@ package typings.webix.webix
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
-  var config: StringDictionary[js.Any] = js.native
+  var config: StringDictionary[js.Any]
   
-  def define(property: String, value: js.Any): Unit = js.native
+  def define(property: String, value: js.Any): Unit
   
-  var name: String = js.native
+  var name: String
 }
 object Settings {
   

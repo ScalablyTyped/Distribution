@@ -2,24 +2,22 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RotationEffect extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var By: Double = js.native
+  var By: Double
   
-  var From: Double = js.native
+  var From: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.RotationEffect_typekey")
-  var PowerPointDotRotationEffect_typekey: RotationEffect = js.native
+  var PowerPointDotRotationEffect_typekey: RotationEffect
   
-  var To: Double = js.native
+  var To: Double
 }
 object RotationEffect {
   

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpirationPolicy extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ExpirationPolicy extends StObject {
     * the associated resource. The minimum and maximum allowed values for `ttl` depend on the type of the associated resource, as well. If `ttl` is not set, the associated resource never
     * expires.
     */
-  var ttl: js.UndefOr[String] = js.native
+  var ttl: js.UndefOr[String] = js.undefined
 }
 object ExpirationPolicy {
   

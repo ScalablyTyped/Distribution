@@ -8,18 +8,17 @@ import typings.std.Window
 import typings.testingLibraryDom.anon.DefaultInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
   
   @JSImport("@testing-library/dom/types/events", "createEvent")
   @js.native
-  val createEvent: CreateObject with CreateFunction = js.native
+  val createEvent: CreateObject & CreateFunction = js.native
   
   @JSImport("@testing-library/dom/types/events", "fireEvent")
   @js.native
-  val fireEvent: FireFunction with FireObject = js.native
+  val fireEvent: FireFunction & FireObject = js.native
   
   type CreateFunction = js.Function4[
     /* eventName */ String, 
@@ -30,506 +29,505 @@ object eventsMod {
   ]
   
   /* Inlined {[ K in @testing-library/dom.@testing-library/dom/types/events.EventType ]: (element : std.Document | std.Element | std.Window | std.Node, options : {} | undefined): std.Event} */
-  @js.native
   trait CreateObject extends StObject {
     
     var abort: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var animationEnd: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var animationIteration: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var animationStart: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var blur: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var canPlay: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var canPlayThrough: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var change: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var click: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var compositionEnd: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var compositionStart: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var compositionUpdate: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var contextMenu: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var copy: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var cut: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var dblClick: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var doubleClick: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var drag: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var dragEnd: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var dragEnter: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var dragExit: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var dragLeave: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var dragOver: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var dragStart: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var drop: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var durationChange: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var emptied: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var encrypted: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var ended: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var error: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var focus: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var focusIn: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var focusOut: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var gotPointerCapture: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var input: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var invalid: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var keyDown: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var keyPress: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var keyUp: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var load: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var loadStart: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var loadedData: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var loadedMetadata: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var lostPointerCapture: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var mouseDown: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var mouseEnter: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var mouseLeave: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var mouseMove: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var mouseOut: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var mouseOver: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var mouseUp: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var paste: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var pause: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var play: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var playing: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var pointerCancel: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var pointerDown: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var pointerEnter: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var pointerLeave: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var pointerMove: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var pointerOut: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var pointerOver: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var pointerUp: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var popState: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var progress: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var rateChange: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var reset: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var scroll: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var seeked: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var seeking: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var select: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var stalled: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var submit: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var suspend: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var timeUpdate: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var touchCancel: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var touchEnd: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var touchMove: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var touchStart: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var transitionEnd: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var volumeChange: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var waiting: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
     
     var wheel: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Event
-      ] = js.native
+      ]
   }
   object CreateObject {
     
@@ -1384,506 +1382,505 @@ object eventsMod {
   type FireFunction = js.Function2[/* element */ Document | Element | Window | Node, /* event */ Event, Boolean]
   
   /* Inlined {[ K in @testing-library/dom.@testing-library/dom/types/events.EventType ]: (element : std.Document | std.Element | std.Window | std.Node, options : {} | undefined): boolean} */
-  @js.native
   trait FireObject extends StObject {
     
     var abort: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var animationEnd: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var animationIteration: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var animationStart: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var blur: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var canPlay: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var canPlayThrough: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var change: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var click: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var compositionEnd: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var compositionStart: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var compositionUpdate: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var contextMenu: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var copy: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var cut: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var dblClick: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var doubleClick: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var drag: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var dragEnd: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var dragEnter: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var dragExit: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var dragLeave: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var dragOver: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var dragStart: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var drop: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var durationChange: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var emptied: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var encrypted: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var ended: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var error: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var focus: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var focusIn: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var focusOut: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var gotPointerCapture: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var input: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var invalid: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var keyDown: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var keyPress: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var keyUp: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var load: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var loadStart: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var loadedData: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var loadedMetadata: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var lostPointerCapture: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var mouseDown: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var mouseEnter: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var mouseLeave: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var mouseMove: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var mouseOut: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var mouseOver: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var mouseUp: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var paste: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var pause: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var play: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var playing: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var pointerCancel: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var pointerDown: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var pointerEnter: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var pointerLeave: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var pointerMove: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var pointerOut: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var pointerOver: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var pointerUp: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var popState: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var progress: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var rateChange: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var reset: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var scroll: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var seeked: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var seeking: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var select: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var stalled: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var submit: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var suspend: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var timeUpdate: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var touchCancel: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var touchEnd: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var touchMove: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var touchStart: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var transitionEnd: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var volumeChange: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var waiting: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
     
     var wheel: js.Function2[
         /* element */ Document | Element | Window | Node, 
         /* options */ js.UndefOr[js.Object], 
         Boolean
-      ] = js.native
+      ]
   }
   object FireObject {
     

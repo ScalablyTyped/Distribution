@@ -3,19 +3,19 @@ package typings.officeJsPreview.Excel
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FourRedToBlackSet extends /* index */ NumberDictionary[Icon] {
+trait FourRedToBlackSet
+  extends StObject
+     with /* index */ NumberDictionary[Icon] {
   
-  var blackCircle: Icon = js.native
+  var blackCircle: Icon
   
-  var grayCircle: Icon = js.native
+  var grayCircle: Icon
   
-  var pinkCircle: Icon = js.native
+  var pinkCircle: Icon
   
-  var redCircle: Icon = js.native
+  var redCircle: Icon
 }
 object FourRedToBlackSet {
   

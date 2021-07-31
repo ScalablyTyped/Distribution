@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipMod {
@@ -24,9 +23,9 @@ object tooltipMod {
       
       @JSImport("rmc-tooltip/es/Tooltip", "default.defaultProps.arrowContent")
       @js.native
-      def arrowContent: Null = js.native
+      def arrowContent: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
       @scala.inline
-      def arrowContent_=(x: Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrowContent")(x.asInstanceOf[js.Any])
+      def arrowContent_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrowContent")(x.asInstanceOf[js.Any])
       
       @JSImport("rmc-tooltip/es/Tooltip", "default.defaultProps.destroyTooltipOnHide")
       @js.native
@@ -48,40 +47,39 @@ object tooltipMod {
     }
   }
   
-  @js.native
   trait ITooltipProps extends StObject {
     
-    var afterVisibleChange: js.UndefOr[js.Function] = js.native
+    var afterVisibleChange: js.UndefOr[js.Function] = js.undefined
     
-    var align: js.UndefOr[js.Object] = js.native
+    var align: js.UndefOr[js.Object] = js.undefined
     
-    var animation: js.UndefOr[js.Any] = js.native
+    var animation: js.UndefOr[js.Any] = js.undefined
     
-    var arrowContent: js.UndefOr[js.Any] = js.native
+    var arrowContent: js.UndefOr[js.Any] = js.undefined
     
-    var defaultVisible: js.UndefOr[Boolean] = js.native
+    var defaultVisible: js.UndefOr[Boolean] = js.undefined
     
-    var destroyTooltipOnHide: js.UndefOr[Boolean] = js.native
+    var destroyTooltipOnHide: js.UndefOr[Boolean] = js.undefined
     
-    var getTooltipContainer: js.UndefOr[js.Function] = js.native
+    var getTooltipContainer: js.UndefOr[js.Function] = js.undefined
     
-    var onVisibleChange: js.UndefOr[js.Function] = js.native
+    var onVisibleChange: js.UndefOr[js.Function] = js.undefined
     
-    var overlay: ReactNode | js.Function = js.native
+    var overlay: ReactNode | js.Function
     
-    var overlayClassName: js.UndefOr[String] = js.native
+    var overlayClassName: js.UndefOr[String] = js.undefined
     
-    var overlayStyle: js.UndefOr[js.Object] = js.native
+    var overlayStyle: js.UndefOr[js.Object] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var trigger: js.UndefOr[js.Any] = js.native
+    var trigger: js.UndefOr[js.Any] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object ITooltipProps {
     

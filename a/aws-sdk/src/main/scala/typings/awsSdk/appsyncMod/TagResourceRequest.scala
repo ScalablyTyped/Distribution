@@ -2,21 +2,19 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The GraphqlApi ARN.
     */
-  var resourceArn: ResourceArn = js.native
+  var resourceArn: ResourceArn
   
   /**
     * A TagMap object.
     */
-  var tags: TagMap = js.native
+  var tags: TagMap
 }
 object TagResourceRequest {
   

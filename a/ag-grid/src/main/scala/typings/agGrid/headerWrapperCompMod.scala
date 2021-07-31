@@ -5,7 +5,6 @@ import typings.agGrid.componentMod.Component
 import typings.agGrid.dragAndDropServiceMod.DropTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerWrapperCompMod {

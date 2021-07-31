@@ -5,13 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
-@js.native
 trait XAutoTextContainer2
-  extends XAutoTextContainer
+  extends StObject
+     with XAutoTextContainer
      with XIndexAccess
 object XAutoTextContainer2 {
   

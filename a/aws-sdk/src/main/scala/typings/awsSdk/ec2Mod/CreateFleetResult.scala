@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFleetResult extends StObject {
   
   /**
     * Information about the instances that could not be launched by the fleet. Valid only when Type is set to instant.
     */
-  var Errors: js.UndefOr[CreateFleetErrorsSet] = js.native
+  var Errors: js.UndefOr[CreateFleetErrorsSet] = js.undefined
   
   /**
     * The ID of the EC2 Fleet.
     */
-  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.undefined
   
   /**
     * Information about the instances that were launched by the fleet. Valid only when Type is set to instant.
     */
-  var Instances: js.UndefOr[CreateFleetInstancesSet] = js.native
+  var Instances: js.UndefOr[CreateFleetInstancesSet] = js.undefined
 }
 object CreateFleetResult {
   

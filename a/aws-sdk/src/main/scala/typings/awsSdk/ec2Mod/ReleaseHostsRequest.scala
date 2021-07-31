@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseHostsRequest extends StObject {
   
   /**
     * The IDs of the Dedicated Hosts to release.
     */
-  var HostIds: RequestHostIdList = js.native
+  var HostIds: RequestHostIdList
 }
 object ReleaseHostsRequest {
   

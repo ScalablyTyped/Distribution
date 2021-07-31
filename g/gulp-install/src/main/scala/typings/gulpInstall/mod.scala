@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,18 +14,17 @@ object mod extends Shortcut {
   
   type Install = js.Function1[/* options */ js.UndefOr[Options], ReadWriteStream]
   
-  @js.native
   trait Options extends StObject {
     
-    var allowRoot: js.UndefOr[Boolean] = js.native
+    var allowRoot: js.UndefOr[Boolean] = js.undefined
     
-    var args: js.UndefOr[String | js.Array[String]] = js.native
+    var args: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var ignoreScripts: js.UndefOr[Boolean] = js.native
+    var ignoreScripts: js.UndefOr[Boolean] = js.undefined
     
-    var noOptional: js.UndefOr[Boolean] = js.native
+    var noOptional: js.UndefOr[Boolean] = js.undefined
     
-    var production: js.UndefOr[Boolean] = js.native
+    var production: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

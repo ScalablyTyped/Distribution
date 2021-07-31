@@ -3,45 +3,84 @@ package typings.onfleetNodeOnfleet
 import typings.onfleetNodeOnfleet.anon.BaseUrl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object onfleetMod {
   
   @JSImport("@onfleet/node-onfleet/onfleet", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Onfleet {
+  class ^ protected ()
+    extends StObject
+       with Onfleet {
     def this(api_key: String) = this()
-  }
-  
-  @js.native
-  trait Onfleet extends StObject {
     
+    /* CompleteClass */
     var admins: typings.onfleetNodeOnfleet.administratorsMod.^ = js.native
     
+    /* CompleteClass */
     var api: BaseUrl = js.native
     
+    /* CompleteClass */
     var apiKey: String = js.native
     
+    /* CompleteClass */
     var containers: typings.onfleetNodeOnfleet.containersMod.^ = js.native
     
+    /* CompleteClass */
     var destinations: typings.onfleetNodeOnfleet.destinationsMod.^ = js.native
     
+    /* CompleteClass */
     var hubs: typings.onfleetNodeOnfleet.hubsMod.^ = js.native
     
+    /* CompleteClass */
     var organization: typings.onfleetNodeOnfleet.organizationMod.^ = js.native
     
+    /* CompleteClass */
     var recipients: typings.onfleetNodeOnfleet.recipientsMod.^ = js.native
     
+    /* CompleteClass */
     var tasks: typings.onfleetNodeOnfleet.tasksMod.^ = js.native
     
+    /* CompleteClass */
     var teams: typings.onfleetNodeOnfleet.teamsMod.^ = js.native
     
-    def verifyKey(): js.Promise[Boolean] = js.native
+    /* CompleteClass */
+    override def verifyKey(): js.Promise[Boolean] = js.native
     
+    /* CompleteClass */
     var webhooks: typings.onfleetNodeOnfleet.webhooksMod.^ = js.native
     
+    /* CompleteClass */
     var workers: typings.onfleetNodeOnfleet.workersMod.^ = js.native
+  }
+  
+  trait Onfleet extends StObject {
+    
+    var admins: typings.onfleetNodeOnfleet.administratorsMod.^
+    
+    var api: BaseUrl
+    
+    var apiKey: String
+    
+    var containers: typings.onfleetNodeOnfleet.containersMod.^
+    
+    var destinations: typings.onfleetNodeOnfleet.destinationsMod.^
+    
+    var hubs: typings.onfleetNodeOnfleet.hubsMod.^
+    
+    var organization: typings.onfleetNodeOnfleet.organizationMod.^
+    
+    var recipients: typings.onfleetNodeOnfleet.recipientsMod.^
+    
+    var tasks: typings.onfleetNodeOnfleet.tasksMod.^
+    
+    var teams: typings.onfleetNodeOnfleet.teamsMod.^
+    
+    def verifyKey(): js.Promise[Boolean]
+    
+    var webhooks: typings.onfleetNodeOnfleet.webhooksMod.^
+    
+    var workers: typings.onfleetNodeOnfleet.workersMod.^
   }
   object Onfleet {
     

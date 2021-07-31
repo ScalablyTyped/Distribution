@@ -2,13 +2,11 @@ package typings.winrt.Windows.UI.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPointerVisualizationSettingsStatics extends StObject {
   
-  def getForCurrentView(): PointerVisualizationSettings = js.native
+  def getForCurrentView(): PointerVisualizationSettings
 }
 object IPointerVisualizationSettingsStatics {
   

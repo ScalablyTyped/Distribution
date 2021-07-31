@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectTypeTargetForBrowsing extends StObject {
   
-  def Clone(): IObjectTypeTargetForBrowsing = js.native
+  def Clone(): IObjectTypeTargetForBrowsing
   
-  var TargetObjectType: Double = js.native
+  var TargetObjectType: Double
   
-  var ViewCollection: Double = js.native
+  var ViewCollection: Double
 }
 object IObjectTypeTargetForBrowsing {
   

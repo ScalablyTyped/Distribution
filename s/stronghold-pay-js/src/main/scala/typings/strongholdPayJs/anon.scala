@@ -4,23 +4,21 @@ import typings.strongholdPayJs.mod.global.Stronghold.EVENT
 import typings.strongholdPayJs.mod.global.Stronghold.StrongholdPayError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var err: StrongholdPayError | Null = js.native
+    var err: StrongholdPayError | Null
   }
   object Data {
     
     @scala.inline
     def apply(data: js.Any): Data = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], err = null)
       __obj.asInstanceOf[Data]
     }
     
@@ -38,14 +36,13 @@ object anon {
     }
   }
   
-  @js.native
   trait DisplayMessage_ extends StObject {
     
-    var displayMessage: js.UndefOr[String] = js.native
+    var displayMessage: js.UndefOr[String] = js.undefined
     
-    var drawerId: js.UndefOr[String] = js.native
+    var drawerId: js.UndefOr[String] = js.undefined
     
-    var terminalId: js.UndefOr[String] = js.native
+    var terminalId: js.UndefOr[String] = js.undefined
   }
   object DisplayMessage_ {
     
@@ -78,14 +75,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Displaymessage extends StObject {
     
-    var display_message: js.UndefOr[String] = js.native
+    var display_message: js.UndefOr[String] = js.undefined
     
-    var drawer_id: js.UndefOr[String] = js.native
+    var drawer_id: js.UndefOr[String] = js.undefined
     
-    var terminal_id: js.UndefOr[String] = js.native
+    var terminal_id: js.UndefOr[String] = js.undefined
   }
   object Displaymessage {
     
@@ -118,12 +114,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Event extends StObject {
     
-    var event: EVENT = js.native
+    var event: EVENT
     
-    var payload: Data = js.native
+    var payload: Data
   }
   object Event {
     

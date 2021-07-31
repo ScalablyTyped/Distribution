@@ -7,56 +7,55 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes the common properties of a database column. */
-@js.native
 trait Column
-  extends XDataDescriptorFactory
+  extends StObject
+     with XDataDescriptorFactory
      with XPropertySet {
   
   /** keeps a default value for a column, is provided as string. */
-  var DefaultValue: String = js.native
+  var DefaultValue: String
   
   /** keeps a description of the object. */
-  var Description: String = js.native
+  var Description: String
   
   /**
     * indicates whether the column is automatically numbered, thus read-only.
     * @see com.sun.star.sdbc.ColumnValue
     */
-  var IsAutoIncrement: Boolean = js.native
+  var IsAutoIncrement: Boolean
   
   /** indicates whether the column is a cash value. */
-  var IsCurrency: Boolean = js.native
+  var IsCurrency: Boolean
   
   /**
     * indicates the nullability of values in the designated column.
     * @see com.sun.star.sdbc.ColumnValue
     */
-  var IsNullable: Double = js.native
+  var IsNullable: Double
   
   /** indicates that the column contains some kind of time or date stamp used to track updates. */
-  var IsRowVersion: Boolean = js.native
+  var IsRowVersion: Boolean
   
   /** is the name of the column. */
-  var Name: String = js.native
+  var Name: String
   
   /** gets a column's number of decimal digits. */
-  var Precision: Double = js.native
+  var Precision: Double
   
   /** gets a column's number of digits to right of the decimal point. */
-  var Scale: Double = js.native
+  var Scale: Double
   
   /** is the {@link com.sun.star.sdbc.DataType} of the column. */
-  var Type: Double = js.native
+  var Type: Double
   
   /**
     * is the type name used by the database. If the column type is a user-defined type, then a fully-qualified type name is returned. ** Note: ** May be
     * empty.
     */
-  var TypeName: String = js.native
+  var TypeName: String
 }
 object Column {
   

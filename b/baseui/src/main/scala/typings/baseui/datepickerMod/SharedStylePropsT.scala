@@ -3,53 +3,51 @@ package typings.baseui.datepickerMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedStylePropsT extends StObject {
   
   @JSName("$date")
-  var $date: Date = js.native
+  var $date: Date
   
   @JSName("$disabled")
-  var $disabled: Boolean = js.native
+  var $disabled: Boolean
   
   @JSName("$hasRangeHighlighted")
-  var $hasRangeHighlighted: Boolean = js.native
+  var $hasRangeHighlighted: Boolean
   
   @JSName("$hasRangeOnRight")
-  var $hasRangeOnRight: Boolean = js.native
+  var $hasRangeOnRight: Boolean
   
   @JSName("$hasRangeSelected")
-  var $hasRangeSelected: Boolean = js.native
+  var $hasRangeSelected: Boolean
   
   @JSName("$isHeader")
-  var $isHeader: Boolean = js.native
+  var $isHeader: Boolean
   
   @JSName("$isHighlighted")
-  var $isHighlighted: Boolean = js.native
+  var $isHighlighted: Boolean
   
   @JSName("$isHovered")
-  var $isHovered: Boolean = js.native
+  var $isHovered: Boolean
   
   @JSName("$outsideMonth")
-  var $outsideMonth: Boolean = js.native
+  var $outsideMonth: Boolean
   
   @JSName("$pseudoHighlighted")
-  var $pseudoHighlighted: Boolean = js.native
+  var $pseudoHighlighted: Boolean
   
   @JSName("$pseudoSelected")
-  var $pseudoSelected: Boolean = js.native
+  var $pseudoSelected: Boolean
   
   @JSName("$range")
-  var $range: Boolean = js.native
+  var $range: Boolean
   
   @JSName("$selected")
-  var $selected: Boolean = js.native
+  var $selected: Boolean
   
   @JSName("$startDate")
-  var $startDate: Boolean = js.native
+  var $startDate: Boolean
 }
 object SharedStylePropsT {
   

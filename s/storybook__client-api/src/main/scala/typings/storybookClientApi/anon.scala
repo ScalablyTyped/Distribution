@@ -13,15 +13,13 @@ import typings.storybookClientApi.typesMod.ErrorLike
 import typings.storybookClientApi.typesMod._StorySpecifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Channel extends StObject {
     
-    var channel: typings.storybookChannels.mod.Channel = js.native
+    var channel: typings.storybookChannels.mod.Channel
   }
   object Channel {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var title: String = js.native
+    var title: String
   }
   object Description {
     
@@ -65,18 +62,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: ErrorLike = js.native
+    var error: ErrorLike
     
-    var globalParameters: Parameters = js.native
+    var globalParameters: Parameters
     
-    var globals: Args = js.native
+    var globals: Args
     
-    var kindParameters: StringDictionary[Parameters] = js.native
+    var kindParameters: StringDictionary[Parameters]
     
-    var v: Double = js.native
+    var v: Double
   }
   object Error {
     
@@ -112,14 +108,13 @@ object anon {
     }
   }
   
-  @js.native
   trait GlobalParameters extends StObject {
     
-    var globalParameters: Pick[Parameters, String] = js.native
+    var globalParameters: Pick[Parameters, String]
     
-    var kindParameters: StringDictionary[Pick[Parameters, String]] = js.native
+    var kindParameters: StringDictionary[Pick[Parameters, String]]
     
-    var v: Double = js.native
+    var v: Double
   }
   object GlobalParameters {
     
@@ -147,12 +142,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait Kind extends _StorySpecifier {
+  trait Kind
+    extends StObject
+       with _StorySpecifier {
     
-    var kind: StoryKind = js.native
+    var kind: StoryKind
     
-    var name: StoryName = js.native
+    var name: StoryName
   }
   object Kind {
     
@@ -174,12 +170,11 @@ object anon {
   }
   
   /* Inlined @storybook/client-api.@storybook/client-api/dist/story_store.StoryOptions & {  normalizeParameters :boolean | undefined} */
-  @js.native
   trait StoryOptionsnormalizePara extends StObject {
     
-    var includeDocsOnly: js.UndefOr[Boolean] = js.native
+    var includeDocsOnly: js.UndefOr[Boolean] = js.undefined
     
-    var normalizeParameters: js.UndefOr[Boolean] = js.native
+    var normalizeParameters: js.UndefOr[Boolean] = js.undefined
   }
   object StoryOptionsnormalizePara {
     
@@ -206,10 +201,9 @@ object anon {
     }
   }
   
-  @js.native
   trait StoryStore extends StObject {
     
-    var storyStore: default = js.native
+    var storyStore: default
   }
   object StoryStore {
     
@@ -228,17 +222,16 @@ object anon {
   }
   
   /* Inlined {applyDecorators (fn : @storybook/addons.@storybook/addons.LegacyStoryFn<unknown>, decorators : std.Array<@storybook/client-api.@storybook/client-api/dist/types.DecoratorFunction<unknown>>): any} & @storybook/client-api.@storybook/client-api/dist/story_store.AllowUnsafeOption */
-  @js.native
   trait applyDecoratorsfnLegacySt extends StObject {
     
-    var allowUnsafe: js.UndefOr[Boolean] = js.native
+    var allowUnsafe: js.UndefOr[Boolean] = js.undefined
     
-    def applyDecorators(fn: LegacyStoryFn[_], decorators: js.Array[DecoratorFunction[_]]): js.Any = js.native
+    def applyDecorators(fn: LegacyStoryFn[js.Any], decorators: js.Array[DecoratorFunction[js.Any]]): js.Any
   }
   object applyDecoratorsfnLegacySt {
     
     @scala.inline
-    def apply(applyDecorators: (LegacyStoryFn[_], js.Array[DecoratorFunction[_]]) => js.Any): applyDecoratorsfnLegacySt = {
+    def apply(applyDecorators: (LegacyStoryFn[js.Any], js.Array[DecoratorFunction[js.Any]]) => js.Any): applyDecoratorsfnLegacySt = {
       val __obj = js.Dynamic.literal(applyDecorators = js.Any.fromFunction2(applyDecorators))
       __obj.asInstanceOf[applyDecoratorsfnLegacySt]
     }
@@ -253,7 +246,7 @@ object anon {
       def setAllowUnsafeUndefined: Self = StObject.set(x, "allowUnsafe", js.undefined)
       
       @scala.inline
-      def setApplyDecorators(value: (LegacyStoryFn[_], js.Array[DecoratorFunction[_]]) => js.Any): Self = StObject.set(x, "applyDecorators", js.Any.fromFunction2(value))
+      def setApplyDecorators(value: (LegacyStoryFn[js.Any], js.Array[DecoratorFunction[js.Any]]) => js.Any): Self = StObject.set(x, "applyDecorators", js.Any.fromFunction2(value))
     }
   }
 }

@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** With this interface you can control any object that implements a {@link Presentation} . */
-@js.native
-trait XPresentation extends XInterface {
+trait XPresentation
+  extends StObject
+     with XInterface {
   
   /** The presentation is stopped and the full-screen mode will end. */
-  def end(): Unit = js.native
+  def end(): Unit
   
   /** Starts the presentation from the beginning and shows the actual running time to the user. */
-  def rehearseTimings(): Unit = js.native
+  def rehearseTimings(): Unit
   
   /** The presentation is shown in full-screen and started from the beginning. */
-  def start(): Unit = js.native
+  def start(): Unit
 }
 object XPresentation {
   

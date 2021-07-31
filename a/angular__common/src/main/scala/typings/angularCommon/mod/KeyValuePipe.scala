@@ -6,12 +6,13 @@ import typings.std.ReadonlyMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "KeyValuePipe")
 @js.native
-class KeyValuePipe protected () extends PipeTransform {
+class KeyValuePipe protected ()
+  extends StObject
+     with PipeTransform {
   def this(differs: KeyValueDiffers) = this()
   
   var differ: js.Any = js.native
@@ -22,10 +23,15 @@ class KeyValuePipe protected () extends PipeTransform {
   
   def transform(): Null = js.native
   def transform(
-    input: js.UndefOr[scala.Nothing],
-    compareFn: js.Function2[/* a */ KeyValue[_, _], /* b */ KeyValue[_, _], Double]
+    input: Null,
+    compareFn: js.Function2[/* a */ KeyValue[js.Any, js.Any], /* b */ KeyValue[js.Any, js.Any], Double]
   ): Null = js.native
-  def transform(input: Null, compareFn: js.Function2[/* a */ KeyValue[_, _], /* b */ KeyValue[_, _], Double]): Null = js.native
+  def transform(
+    input: Unit,
+    compareFn: js.Function2[/* a */ KeyValue[js.Any, js.Any], /* b */ KeyValue[js.Any, js.Any], Double]
+  ): Null = js.native
+  /* CompleteClass */
+  override def transform(value: js.Any, args: js.Any*): js.Any = js.native
   def transform[K /* <: String */, V](input: ReadonlyMap[K, V]): (js.Array[KeyValue[K, V]]) | Null = js.native
   def transform[K /* <: String */, V](
     input: ReadonlyMap[K, V],
@@ -53,22 +59,19 @@ class KeyValuePipe protected () extends PipeTransform {
   @JSName("transform")
   def transform_KV_Union[K, V](): (js.Array[KeyValue[K, V]]) | Null = js.native
   @JSName("transform")
-  def transform_KV_Union[K, V](
-    input: js.UndefOr[scala.Nothing],
-    compareFn: js.Function2[/* a */ KeyValue[K, V], /* b */ KeyValue[K, V], Double]
-  ): (js.Array[KeyValue[K, V]]) | Null = js.native
-  @JSName("transform")
   def transform_KV_Union[K, V](input: Null, compareFn: js.Function2[/* a */ KeyValue[K, V], /* b */ KeyValue[K, V], Double]): (js.Array[KeyValue[K, V]]) | Null = js.native
+  @JSName("transform")
+  def transform_KV_Union[K, V](input: Unit, compareFn: js.Function2[/* a */ KeyValue[K, V], /* b */ KeyValue[K, V], Double]): (js.Array[KeyValue[K, V]]) | Null = js.native
   @JSName("transform")
   def transform_K_DoubleV_Union[K /* <: Double */, V](): (js.Array[KeyValue[String, V]]) | Null = js.native
   @JSName("transform")
   def transform_K_DoubleV_Union[K /* <: Double */, V](
-    input: js.UndefOr[scala.Nothing],
+    input: Null,
     compareFn: js.Function2[/* a */ KeyValue[String, V], /* b */ KeyValue[String, V], Double]
   ): (js.Array[KeyValue[String, V]]) | Null = js.native
   @JSName("transform")
   def transform_K_DoubleV_Union[K /* <: Double */, V](
-    input: Null,
+    input: Unit,
     compareFn: js.Function2[/* a */ KeyValue[String, V], /* b */ KeyValue[String, V], Double]
   ): (js.Array[KeyValue[String, V]]) | Null = js.native
   @JSName("transform")
@@ -95,12 +98,9 @@ class KeyValuePipe protected () extends PipeTransform {
   @JSName("transform")
   def transform_K_StringV_Union[K /* <: String */, V](): (js.Array[KeyValue[K, V]]) | Null = js.native
   @JSName("transform")
-  def transform_K_StringV_Union[K /* <: String */, V](
-    input: js.UndefOr[scala.Nothing],
-    compareFn: js.Function2[/* a */ KeyValue[K, V], /* b */ KeyValue[K, V], Double]
-  ): (js.Array[KeyValue[K, V]]) | Null = js.native
-  @JSName("transform")
   def transform_K_StringV_Union[K /* <: String */, V](input: Null, compareFn: js.Function2[/* a */ KeyValue[K, V], /* b */ KeyValue[K, V], Double]): (js.Array[KeyValue[K, V]]) | Null = js.native
+  @JSName("transform")
+  def transform_K_StringV_Union[K /* <: String */, V](input: Unit, compareFn: js.Function2[/* a */ KeyValue[K, V], /* b */ KeyValue[K, V], Double]): (js.Array[KeyValue[K, V]]) | Null = js.native
   @JSName("transform")
   def transform_K_StringV_Union[K /* <: String */, V](input: Record[K, V]): (js.Array[KeyValue[K, V]]) | Null = js.native
   @JSName("transform")

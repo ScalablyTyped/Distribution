@@ -2,59 +2,57 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageEventParameters extends StObject {
   
   /** delimited list of bounce classification codes to search. (See Bounce Classification Codes.) */
-  var bounce_classes: js.UndefOr[(js.Array[String | Double]) | String | Double] = js.native
+  var bounce_classes: js.UndefOr[(js.Array[String | Double]) | String | Double] = js.undefined
   
   /** delimited list of campaign ID’s to search (i.e. the campaign id used during creation of a transmission). */
-  var campaign_ids: js.UndefOr[js.Array[String] | String] = js.native
+  var campaign_ids: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /** Specifies the delimiter for query parameter lists */
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
   /** delimited list of event types to search. Defaults to all event types. */
-  var events: js.UndefOr[js.Array[String] | String] = js.native
+  var events: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /** delimited list of friendly from emails to search. */
-  var friendly_froms: js.UndefOr[js.Array[String] | String] = js.native
+  var friendly_froms: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /** Datetime in format of YYYY-MM-DDTHH:MM. */
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
   /** delimited list of message ID’s to search. */
-  var message_ids: js.UndefOr[js.Array[String] | String] = js.native
+  var message_ids: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /** The results page number to return. Used with per_page for paging through results. */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /** Number of results to return per page. Must be between 1 and 10,000 (inclusive). */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
   /** Bounce/failure/rejection reason that will be matched using a wildcard (e.g., %reason%). */
-  var reason: js.UndefOr[js.Array[String] | String] = js.native
+  var reason: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /** delimited list of recipients to search. */
-  var recipients: js.UndefOr[js.Array[String] | String] = js.native
+  var recipients: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /** delimited list of subaccount ID’s to search. */
-  var subaccounts: js.UndefOr[js.Array[Double] | Double] = js.native
+  var subaccounts: js.UndefOr[js.Array[Double] | Double] = js.undefined
   
   /** delimited list of template ID’s to search. */
-  var template_ids: js.UndefOr[js.Array[String] | String] = js.native
+  var template_ids: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /** Standard timezone identification string. */
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
   
   /** Datetime in format of YYYY-MM-DDTHH:MM. */
-  var to: js.UndefOr[String] = js.native
+  var to: js.UndefOr[String] = js.undefined
   
   /** delimited list of transmission ID’s to search (i.e. id generated during creation of a transmission). */
-  var transmission_ids: js.UndefOr[js.Array[String] | String] = js.native
+  var transmission_ids: js.UndefOr[js.Array[String] | String] = js.undefined
 }
 object MessageEventParameters {
   

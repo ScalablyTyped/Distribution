@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.dataviz.ui.Sparkline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofSparkline extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Sparkline = js.native
+  def extend(proto: js.Object): Sparkline
   
   /* static member */
-  var fn: Sparkline = js.native
+  var fn: Sparkline
 }
 object TypeofSparkline {
   

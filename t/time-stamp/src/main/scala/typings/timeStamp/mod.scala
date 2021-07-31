@@ -3,46 +3,37 @@ package typings.timeStamp
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("time-stamp", JSImport.Default)
+  @JSImport("time-stamp", JSImport.Namespace)
   @js.native
-  def default(): String = js.native
-  @JSImport("time-stamp", JSImport.Default)
-  @js.native
-  def default(pattern: js.UndefOr[scala.Nothing], date: Date): String = js.native
-  @JSImport("time-stamp", JSImport.Default)
-  @js.native
-  def default(pattern: String): String = js.native
-  @JSImport("time-stamp", JSImport.Default)
-  @js.native
-  def default(pattern: String, date: Date): String = js.native
-  @JSImport("time-stamp", JSImport.Default)
-  @js.native
-  def default(pattern: Date): String = js.native
-  @JSImport("time-stamp", JSImport.Default)
-  @js.native
-  def default(pattern: Date, date: Date): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("time-stamp", "utc")
-  @js.native
-  def utc(): String = js.native
-  @JSImport("time-stamp", "utc")
-  @js.native
-  def utc(pattern: js.UndefOr[scala.Nothing], date: Date): String = js.native
-  @JSImport("time-stamp", "utc")
-  @js.native
-  def utc(pattern: String): String = js.native
-  @JSImport("time-stamp", "utc")
-  @js.native
-  def utc(pattern: String, date: Date): String = js.native
-  @JSImport("time-stamp", "utc")
-  @js.native
-  def utc(pattern: Date): String = js.native
-  @JSImport("time-stamp", "utc")
-  @js.native
-  def utc(pattern: Date, date: Date): String = js.native
+  @scala.inline
+  def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
+  @scala.inline
+  def default(pattern: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(pattern: String, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(pattern: Unit, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(pattern: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(pattern: Date, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def utc(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[String]
+  @scala.inline
+  def utc(pattern: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def utc(pattern: String, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def utc(pattern: Unit, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def utc(pattern: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def utc(pattern: Date, date: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(pattern.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
 }

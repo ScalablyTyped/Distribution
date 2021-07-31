@@ -2,19 +2,17 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Appear extends StObject {
   
-  var appear: js.Any = js.native
+  var appear: js.Any
   
-  var enter: Duration = js.native
+  var enter: Duration
   
-  var leave: Duration = js.native
+  var leave: Duration
   
-  var update: Duration = js.native
+  var update: Duration
 }
 object Appear {
   

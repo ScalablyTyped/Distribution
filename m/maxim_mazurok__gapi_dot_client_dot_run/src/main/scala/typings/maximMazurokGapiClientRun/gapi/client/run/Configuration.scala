@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configuration extends StObject {
   
   /** The API version for this call such as "serving.knative.dev/v1". */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /** The kind of resource, in this case always "Configuration". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Metadata associated with this Configuration, including name, namespace, labels, and annotations. */
-  var metadata: js.UndefOr[ObjectMeta] = js.native
+  var metadata: js.UndefOr[ObjectMeta] = js.undefined
   
   /** Spec holds the desired state of the Configuration (from the client). */
-  var spec: js.UndefOr[ConfigurationSpec] = js.native
+  var spec: js.UndefOr[ConfigurationSpec] = js.undefined
   
   /** Status communicates the observed state of the Configuration (from the controller). */
-  var status: js.UndefOr[ConfigurationStatus] = js.native
+  var status: js.UndefOr[ConfigurationStatus] = js.undefined
 }
 object Configuration {
   

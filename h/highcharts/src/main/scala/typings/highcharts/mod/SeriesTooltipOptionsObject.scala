@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesTooltipOptionsObject extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SeriesTooltipOptionsObject extends StObject {
     * the `series.compare` option is set. This is overridable in each series'
     * tooltip options object. The default is to preserve all decimals.
     */
-  var changeDecimals: js.UndefOr[Double] = js.native
+  var changeDecimals: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The HTML of the cluster point's in the tooltip. Works only
@@ -22,7 +20,7 @@ trait SeriesTooltipOptionsObject extends StObject {
     * The cluster tooltip can be also formatted using `tooltip.formatter`
     * callback function and `point.isCluster` flag.
     */
-  var clusterFormat: js.UndefOr[js.Object] = js.native
+  var clusterFormat: js.UndefOr[js.Object] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) For series on a datetime axes, the date
@@ -31,12 +29,12 @@ trait SeriesTooltipOptionsObject extends StObject {
     * used for each unit. For an overview of the replacement codes, see
     * dateFormat.
     */
-  var dateTimeLabelFormats: js.UndefOr[Dictionary[String]] = js.native
+  var dateTimeLabelFormats: js.UndefOr[Dictionary[String]] = js.undefined
   
   /**
     * (Highstock) Distance from point to tooltip in pixels.
     */
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Whether the tooltip should follow the mouse as it moves
@@ -47,7 +45,7 @@ trait SeriesTooltipOptionsObject extends StObject {
     * For touch moves to behave the same way, followTouchMove must be `true`
     * also.
     */
-  var followPointer: js.UndefOr[Boolean] = js.native
+  var followPointer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Whether the tooltip should update as the finger moves on a
@@ -61,12 +59,12 @@ trait SeriesTooltipOptionsObject extends StObject {
     * is true, the tooltip will jump from column to column as the user swipes
     * across the plot area.
     */
-  var followTouchMove: js.UndefOr[Boolean] = js.native
+  var followTouchMove: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) A string to append to the tooltip format.
     */
-  var footerFormat: js.UndefOr[String] = js.native
+  var footerFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) The HTML of the tooltip header line. Variables are enclosed
@@ -76,31 +74,31 @@ trait SeriesTooltipOptionsObject extends StObject {
     * string depending on the type of axis. For datetime axes, the `point.key`
     * date format can be set using `tooltip.xDateFormat`.
     */
-  var headerFormat: js.UndefOr[String] = js.native
+  var headerFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) The format string specifying what to show for _nodes_ in
     * tooltip of a diagram series, as opposed to links.
     */
-  var nodeFormat: js.UndefOr[String] = js.native
+  var nodeFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) A callback for defining the format for _nodes_ in the
     * chart's tooltip, as opposed to links.
     */
-  var nodeFormatter: js.UndefOr[FormatterCallbackFunction[SankeyNodeObject]] = js.native
+  var nodeFormatter: js.UndefOr[FormatterCallbackFunction[SankeyNodeObject]] = js.undefined
   
   /**
     * (Highstock) The HTML of the null point's line in the tooltip. Works
     * analogously to pointFormat.
     */
-  var nullFormat: js.UndefOr[String] = js.native
+  var nullFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Callback function to format the text of the tooltip for
     * visible null points. Works analogously to formatter.
     */
-  var nullFormatter: js.UndefOr[TooltipFormatterCallbackFunction] = js.native
+  var nullFormatter: js.UndefOr[TooltipFormatterCallbackFunction] = js.undefined
   
   /**
     * (Highstock) The HTML of the point's line in the tooltip. Variables are
@@ -113,38 +111,38 @@ trait SeriesTooltipOptionsObject extends StObject {
     * In styled mode, the dot is colored by a class name rather than the point
     * color.
     */
-  var pointFormat: js.UndefOr[String] = js.native
+  var pointFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) A callback function for formatting the HTML output for a
     * single point in the tooltip. Like the `pointFormat` string, but with more
     * flexibility.
     */
-  var pointFormatter: js.UndefOr[FormatterCallbackFunction[Point]] = js.native
+  var pointFormatter: js.UndefOr[FormatterCallbackFunction[Point]] = js.undefined
   
   /**
     * (Highstock) Number of decimals in indicator series.
     */
-  var valueDecimals: js.UndefOr[Double] = js.native
+  var valueDecimals: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) A string to prepend to each series' y value. Overridable in
     * each series' tooltip options object.
     */
-  var valuePrefix: js.UndefOr[String] = js.native
+  var valuePrefix: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) A string to append to each series' y value. Overridable in
     * each series' tooltip options object.
     */
-  var valueSuffix: js.UndefOr[String] = js.native
+  var valueSuffix: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The format for the date in the tooltip
     * header if the X axis is a datetime axis. The default is a best guess
     * based on the smallest distance between points in the chart.
     */
-  var xDateFormat: js.UndefOr[String] = js.native
+  var xDateFormat: js.UndefOr[String] = js.undefined
 }
 object SeriesTooltipOptionsObject {
   

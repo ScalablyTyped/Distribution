@@ -11,7 +11,6 @@ import typings.semanticUiReact.genericMod.SemanticVERTICALALIGNMENTS
 import typings.semanticUiReact.genericMod.SemanticWIDTHS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridColumnMod extends Shortcut {
@@ -20,9 +19,9 @@ object gridColumnMod extends Shortcut {
   @js.native
   val default: StatelessComponent[GridColumnProps] = js.native
   
-  @js.native
   trait GridColumnProps
-    extends StrictGridColumnProps
+    extends StObject
+       with StrictGridColumnProps
        with /* key */ StringDictionary[js.Any]
   object GridColumnProps {
     
@@ -44,53 +43,52 @@ object gridColumnMod extends Shortcut {
   */
   type GridOnlyProp = _GridOnlyProp | String
   
-  @js.native
   trait StrictGridColumnProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** A grid column can be colored. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** A column can specify a width for a computer. */
-    var computer: js.UndefOr[SemanticWIDTHS] = js.native
+    var computer: js.UndefOr[SemanticWIDTHS] = js.undefined
     
     /** A column can sit flush against the left or right edge of a row. */
-    var floated: js.UndefOr[SemanticFLOATS] = js.native
+    var floated: js.UndefOr[SemanticFLOATS] = js.undefined
     
     /** A column can specify a width for a large screen device. */
-    var largeScreen: js.UndefOr[SemanticWIDTHS] = js.native
+    var largeScreen: js.UndefOr[SemanticWIDTHS] = js.undefined
     
     /** A column can specify a width for a mobile device. */
-    var mobile: js.UndefOr[SemanticWIDTHS] = js.native
+    var mobile: js.UndefOr[SemanticWIDTHS] = js.undefined
     
     /** A column can appear only for a specific device, or screen sizes. */
-    var only: js.UndefOr[GridOnlyProp] = js.native
+    var only: js.UndefOr[GridOnlyProp] = js.undefined
     
     /** An can stretch its contents to take up the entire grid or row height. */
-    var stretched: js.UndefOr[Boolean] = js.native
+    var stretched: js.UndefOr[Boolean] = js.undefined
     
     /** A column can specify a width for a tablet device. */
-    var tablet: js.UndefOr[SemanticWIDTHS] = js.native
+    var tablet: js.UndefOr[SemanticWIDTHS] = js.undefined
     
     /** A row can specify its text alignment. */
-    var textAlign: js.UndefOr[SemanticTEXTALIGNMENTS] = js.native
+    var textAlign: js.UndefOr[SemanticTEXTALIGNMENTS] = js.undefined
     
     /** A column can specify its vertical alignment to have all its columns vertically centered. */
-    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.native
+    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.undefined
     
     /** A column can specify a width for a wide screen device. */
-    var widescreen: js.UndefOr[SemanticWIDTHS] = js.native
+    var widescreen: js.UndefOr[SemanticWIDTHS] = js.undefined
     
     /** Represents width of column. */
-    var width: js.UndefOr[SemanticWIDTHS] = js.native
+    var width: js.UndefOr[SemanticWIDTHS] = js.undefined
   }
   object StrictGridColumnProps {
     

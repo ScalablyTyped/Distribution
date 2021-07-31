@@ -11,8 +11,8 @@ JavaScript implementation of Japanese morphological analyzer
 | Full name          | kuromoji |
 | Keywords           | japanese, morphological analyzer, nlp, pos, pos tagger, tokenizer |
 | # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 449882 |
+| # dependents       | 36 |
+| # downloads        | 571350 |
 | # stars            | 2 |
 
 ## Links

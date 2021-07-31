@@ -2,12 +2,12 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PullSignatureSymbol
-  extends PullSymbol
+  extends StObject
+     with PullSymbol
      with InstantiableSymbol {
   
   var _allowedToReferenceTypeParameters: js.Any = js.native
@@ -66,23 +66,23 @@ trait PullSignatureSymbol
     prefix: String,
     shortform: Boolean,
     brackets: Boolean,
-    scopeSymbol: js.UndefOr[scala.Nothing],
-    getParamMarkerInfo: js.UndefOr[scala.Nothing],
-    getTypeParamMarkerInfo: Boolean
-  ): MemberNameArray = js.native
-  def getSignatureTypeNameEx(
-    prefix: String,
-    shortform: Boolean,
-    brackets: Boolean,
-    scopeSymbol: js.UndefOr[scala.Nothing],
+    scopeSymbol: Unit,
     getParamMarkerInfo: Boolean
   ): MemberNameArray = js.native
   def getSignatureTypeNameEx(
     prefix: String,
     shortform: Boolean,
     brackets: Boolean,
-    scopeSymbol: js.UndefOr[scala.Nothing],
+    scopeSymbol: Unit,
     getParamMarkerInfo: Boolean,
+    getTypeParamMarkerInfo: Boolean
+  ): MemberNameArray = js.native
+  def getSignatureTypeNameEx(
+    prefix: String,
+    shortform: Boolean,
+    brackets: Boolean,
+    scopeSymbol: Unit,
+    getParamMarkerInfo: Unit,
     getTypeParamMarkerInfo: Boolean
   ): MemberNameArray = js.native
   def getSignatureTypeNameEx(prefix: String, shortform: Boolean, brackets: Boolean, scopeSymbol: PullSymbol): MemberNameArray = js.native
@@ -91,14 +91,6 @@ trait PullSignatureSymbol
     shortform: Boolean,
     brackets: Boolean,
     scopeSymbol: PullSymbol,
-    getParamMarkerInfo: js.UndefOr[scala.Nothing],
-    getTypeParamMarkerInfo: Boolean
-  ): MemberNameArray = js.native
-  def getSignatureTypeNameEx(
-    prefix: String,
-    shortform: Boolean,
-    brackets: Boolean,
-    scopeSymbol: PullSymbol,
     getParamMarkerInfo: Boolean
   ): MemberNameArray = js.native
   def getSignatureTypeNameEx(
@@ -107,6 +99,14 @@ trait PullSignatureSymbol
     brackets: Boolean,
     scopeSymbol: PullSymbol,
     getParamMarkerInfo: Boolean,
+    getTypeParamMarkerInfo: Boolean
+  ): MemberNameArray = js.native
+  def getSignatureTypeNameEx(
+    prefix: String,
+    shortform: Boolean,
+    brackets: Boolean,
+    scopeSymbol: PullSymbol,
+    getParamMarkerInfo: Unit,
     getTypeParamMarkerInfo: Boolean
   ): MemberNameArray = js.native
   

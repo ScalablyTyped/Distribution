@@ -2,38 +2,36 @@ package typings.jasminePromiseMatchers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jasmine {
   
-  @js.native
   trait Matchers[T] extends StObject {
     
     /**
       * Verifies that a value is a $q Promise.
       */
-    def toBePromise(): Boolean = js.native
+    def toBePromise(): Boolean
     
     /**
       * Verifies that a Promise is (or has been) rejected.
       */
-    def toBeRejected(): Boolean = js.native
+    def toBeRejected(): Boolean
     
     /**
       * Verifies that a Promise is (or has been) rejected with the specified parameter.
       */
-    def toBeRejectedWith(value: js.Any): Boolean = js.native
+    def toBeRejectedWith(value: js.Any): Boolean
     
     /**
       * Verifies that a Promise is (or has been) resolved.
       */
-    def toBeResolved(): Boolean = js.native
+    def toBeResolved(): Boolean
     
     /**
       * Verifies that a Promise is (or has been) resolved with the specified parameter.
       */
-    def toBeResolvedWith(value: js.Any): Boolean = js.native
+    def toBeResolvedWith(value: js.Any): Boolean
   }
   object Matchers {
     
@@ -50,7 +48,7 @@ object jasmine {
     }
     
     @scala.inline
-    implicit class MatchersMutableBuilder[Self <: Matchers[_], T] (val x: Self with Matchers[T]) extends AnyVal {
+    implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
       
       @scala.inline
       def setToBePromise(value: () => Boolean): Self = StObject.set(x, "toBePromise", js.Any.fromFunction0(value))

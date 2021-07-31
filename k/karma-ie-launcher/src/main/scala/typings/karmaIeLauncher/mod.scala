@@ -2,17 +2,15 @@ package typings.karmaIeLauncher
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait CustomLauncher extends StObject {
     
     /** run IE in emulation mode */
-    var `x-ua-compatible`: js.UndefOr[String] = js.native
+    var `x-ua-compatible`: js.UndefOr[String] = js.undefined
   }
   object CustomLauncher {
     

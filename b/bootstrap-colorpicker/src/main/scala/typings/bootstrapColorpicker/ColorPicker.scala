@@ -2,29 +2,27 @@ package typings.bootstrapColorpicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorPicker extends StObject {
   
-  var color: Color = js.native
+  var color: Color
   
-  var component: Boolean = js.native
+  var component: Boolean
   
-  var container: Boolean = js.native
+  var container: Boolean
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var element: JQuery = js.native
+  var element: JQuery
   
-  var format: String = js.native
+  var format: String
   
-  var input: JQuery = js.native
+  var input: JQuery
   
-  var options: ColorPickerOptions = js.native
+  var options: ColorPickerOptions
   
-  var picker: JQuery = js.native
+  var picker: JQuery
 }
 object ColorPicker {
   

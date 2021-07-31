@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.mobile.ui.Collapsible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofCollapsible extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Collapsible = js.native
+  def extend(proto: js.Object): Collapsible
   
   /* static member */
-  var fn: Collapsible = js.native
+  var fn: Collapsible
 }
 object TypeofCollapsible {
   

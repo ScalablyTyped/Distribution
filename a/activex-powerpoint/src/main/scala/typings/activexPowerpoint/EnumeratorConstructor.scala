@@ -85,11 +85,12 @@ import typings.activexPowerpoint.PowerPoint.TextStyles
 import typings.std.Enumerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnumeratorConstructor extends Instantiable1[
+trait EnumeratorConstructor
+  extends StObject
+     with Instantiable1[
       (/* col */ ActionSettings) | (/* col */ AddIns) | (/* col */ AnimationBehaviors) | (/* col */ AnimationPoints) | (/* col */ Borders) | (/* col */ CanvasShapes) | (/* col */ CellRange) | (/* col */ ColorSchemes) | (/* col */ Columns) | (/* col */ Comments) | (/* col */ CustomLayouts) | (/* col */ CustomerData) | (/* col */ Designs) | (/* col */ DiagramNodeChildren) | (/* col */ DiagramNodes) | (/* col */ DocumentWindows) | (/* col */ ExtraColors) | (/* col */ FileConverters) | (/* col */ Fonts) | (/* col */ GroupShapes) | (/* col */ Hyperlinks) | (/* col */ MediaBookmarks) | (/* col */ NamedSlideShows) | (/* col */ ObjectVerbs) | (/* col */ Panes) | (/* col */ Placeholders) | (/* col */ Presentations) | (/* col */ PrintRanges) | (/* col */ ProtectedViewWindows) | (/* col */ PublishObjects) | (/* col */ ResampleMediaTasks) | (/* col */ Rows) | (/* col */ RulerLevels) | (/* col */ Sequence) | (/* col */ Sequences) | (/* col */ ShapeNodes) | (/* col */ ShapeRange) | (/* col */ Shapes) | (/* col */ SlideRange) | (/* col */ SlideShowWindows) | (/* col */ Slides) | (/* col */ TabStops) | (/* col */ Tags) | (/* col */ TextStyleLevels) | (/* col */ TextStyles), 
       Enumerator[
         ActionSetting | AddIn | AnimationBehavior | AnimationPoint | Cell | ColorScheme | Column | Comment | CustomLayout | CustomXMLPart | Design | DiagramNode | DocumentWindow | Effect | FileConverter | Font | Hyperlink | LineFormat | MediaBookmark | MsoRGBType | NamedSlideShow | Pane | Presentation | PrintRange | ProtectedViewWindow | PublishObject | ResampleMediaTask | Row | RulerLevel | Sequence | Shape | ShapeNode | Slide | SlideShowWindow | String | TabStop | TextStyle | TextStyleLevel

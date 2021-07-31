@@ -10,7 +10,6 @@ import typings.apptimizeApptimizeWebSdk.apptimizeApptimizeWebSdkStrings.LOG_LEVE
 import typings.apptimizeApptimizeWebSdk.apptimizeApptimizeWebSdkStrings.LOG_LEVEL_WARN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -94,14 +93,13 @@ object mod extends Shortcut {
     def updateApptimizeMetadataOnce(): Unit = js.native
   }
   
-  @js.native
   trait ConfigAttributes extends StObject {
     
     var log_level: js.UndefOr[
         LOG_LEVEL_VERBOSE | LOG_LEVEL_DEBUG | LOG_LEVEL_INFO | LOG_LEVEL_WARN | LOG_LEVEL_ERROR | LOG_LEVEL_NONE
-      ] = js.native
+      ] = js.undefined
     
-    var result_post_delay_ms: js.UndefOr[Double] = js.native
+    var result_post_delay_ms: js.UndefOr[Double] = js.undefined
   }
   object ConfigAttributes {
     
@@ -132,32 +130,31 @@ object mod extends Shortcut {
   
   type Dictionary[T] = StringDictionary[T]
   
-  @js.native
   trait VariantInfo extends StObject {
     
-    def getAnonymousUserId(): String = js.native
+    def getAnonymousUserId(): String
     
-    def getCurrentPhase(): Double = js.native
+    def getCurrentPhase(): Double
     
-    def getCycle(): Double = js.native
+    def getCycle(): Double
     
-    def getExperimentId(): Double = js.native
+    def getExperimentId(): Double
     
-    def getExperimentName(): String = js.native
+    def getExperimentName(): String
     
-    def getExperimentType(): Double = js.native
+    def getExperimentType(): Double
     
-    def getExperimentTypeName(): String = js.native
+    def getExperimentTypeName(): String
     
-    def getParticipationPhase(): Double = js.native
+    def getParticipationPhase(): Double
     
-    def getUserHasParticipated(): Boolean = js.native
+    def getUserHasParticipated(): Boolean
     
-    def getUserId(): String = js.native
+    def getUserId(): String
     
-    def getVariantId(): Double = js.native
+    def getVariantId(): Double
     
-    def getVariantName(): String = js.native
+    def getVariantName(): String
   }
   object VariantInfo {
     

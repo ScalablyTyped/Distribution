@@ -2,13 +2,11 @@ package typings.oauth2orize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OAuth2Info extends StObject {
   
-  var scope: String = js.native
+  var scope: String
 }
 object OAuth2Info {
   

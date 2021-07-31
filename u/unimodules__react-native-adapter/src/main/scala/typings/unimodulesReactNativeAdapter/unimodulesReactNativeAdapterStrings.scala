@@ -3,13 +3,14 @@ package typings.unimodulesReactNativeAdapter
 import typings.unimodulesReactNativeAdapter.platformMod._PlatformSelectOSType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unimodulesReactNativeAdapterStrings {
   
   @js.native
-  sealed trait default extends _PlatformSelectOSType
+  sealed trait default
+    extends StObject
+       with _PlatformSelectOSType
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
@@ -24,7 +25,9 @@ object unimodulesReactNativeAdapterStrings {
   def android: android = "android".asInstanceOf[android]
   
   @js.native
-  sealed trait electron extends _PlatformSelectOSType
+  sealed trait electron
+    extends StObject
+       with _PlatformSelectOSType
   @scala.inline
   def electron: electron = "electron".asInstanceOf[electron]
   
@@ -39,7 +42,9 @@ object unimodulesReactNativeAdapterStrings {
   def macos: macos = "macos".asInstanceOf[macos]
   
   @js.native
-  sealed trait native extends _PlatformSelectOSType
+  sealed trait native
+    extends StObject
+       with _PlatformSelectOSType
   @scala.inline
   def native: native = "native".asInstanceOf[native]
   

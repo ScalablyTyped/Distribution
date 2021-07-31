@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,39 +12,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.security.Policy
   * @since OOo 1.1.2
   */
-@js.native
-trait XPolicy extends XInterface {
+trait XPolicy
+  extends StObject
+     with XInterface {
   
   /**
     * Gets the default permissions granted to all users.
     * @returns default permissions
     */
-  val DefaultPermissions: SafeArray[_] = js.native
+  val DefaultPermissions: SafeArray[js.Any]
   
   /**
     * Gets the default permissions granted to all users.
     * @returns default permissions
     */
-  def getDefaultPermissions(): SafeArray[_] = js.native
+  def getDefaultPermissions(): SafeArray[js.Any]
   
   /**
     * Gets the permissions of the specified user excluding the default permissions granted to all users.
     * @param userId user id
     * @returns permissions of the specified user
     */
-  def getPermissions(userId: String): SafeArray[_] = js.native
+  def getPermissions(userId: String): SafeArray[js.Any]
   
   /** Refreshes the policy configuration. */
-  def refresh(): Unit = js.native
+  def refresh(): Unit
 }
 object XPolicy {
   
   @scala.inline
   def apply(
-    DefaultPermissions: SafeArray[_],
+    DefaultPermissions: SafeArray[js.Any],
     acquire: () => Unit,
-    getDefaultPermissions: () => SafeArray[_],
-    getPermissions: String => SafeArray[_],
+    getDefaultPermissions: () => SafeArray[js.Any],
+    getPermissions: String => SafeArray[js.Any],
     queryInterface: `type` => js.Any,
     refresh: () => Unit,
     release: () => Unit
@@ -58,13 +58,13 @@ object XPolicy {
   implicit class XPolicyMutableBuilder[Self <: XPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDefaultPermissions(value: SafeArray[_]): Self = StObject.set(x, "DefaultPermissions", value.asInstanceOf[js.Any])
+    def setDefaultPermissions(value: SafeArray[js.Any]): Self = StObject.set(x, "DefaultPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDefaultPermissions(value: () => SafeArray[_]): Self = StObject.set(x, "getDefaultPermissions", js.Any.fromFunction0(value))
+    def setGetDefaultPermissions(value: () => SafeArray[js.Any]): Self = StObject.set(x, "getDefaultPermissions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPermissions(value: String => SafeArray[_]): Self = StObject.set(x, "getPermissions", js.Any.fromFunction1(value))
+    def setGetPermissions(value: String => SafeArray[js.Any]): Self = StObject.set(x, "getPermissions", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))

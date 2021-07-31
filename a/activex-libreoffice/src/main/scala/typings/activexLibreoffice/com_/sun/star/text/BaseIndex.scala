@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,44 +20,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.TableIndex
   * @see com.sun.star.text.ObjectIndex
   */
-@js.native
 trait BaseIndex
-  extends XDocumentIndex
+  extends StObject
+     with XDocumentIndex
      with XRefreshable {
   
   /** specifies the color of the background. */
-  var BackColor: Color = js.native
+  var BackColor: Color
   
   /** contains the name of the filter of the graphic file that is displayed as background graphic */
-  var BackGraphicFilter: String = js.native
+  var BackGraphicFilter: String
   
   /**
     * determines the position of the background graphic.
     * @see GraphicLocation
     */
-  var BackGraphicLocation: GraphicLocation = js.native
+  var BackGraphicLocation: GraphicLocation
   
   /** contains the URL of a graphic file that is displayed as background graphic */
-  var BackGraphicURL: String = js.native
+  var BackGraphicURL: String
   
   /** If `TRUE` , the background color value in "BackColor" is not visible. */
-  var BackTransparent: Boolean = js.native
+  var BackTransparent: Boolean
   
   /** the text section containing the content of the index */
-  var ContentSection: XTextSection = js.native
+  var ContentSection: XTextSection
   
   /**
     * determines if the content of the document index is created from the complete document content or from the current chapter only.
     *
     * It is not available in the bibliography
     */
-  var CreateFromChapter: Boolean = js.native
+  var CreateFromChapter: Boolean
   
   /** the text section containing the header of the index */
-  var HeaderSection: XTextSection = js.native
+  var HeaderSection: XTextSection
   
   /** determines if the index is protected. */
-  var IsProtected: Boolean = js.native
+  var IsProtected: Boolean
   
   /**
     * returns the interface of the level format of the index.
@@ -66,49 +65,49 @@ trait BaseIndex
     * The description of the format of the levels depends on the type of the document index.
     * @see DocumentIndexLevelFormat
     */
-  var LevelFormat: XIndexReplace = js.native
+  var LevelFormat: XIndexReplace
   
   /** contains the name of the paragraph style that is applied to the heading. */
-  var ParaStyleHeading: String = js.native
+  var ParaStyleHeading: String
   
   /** contains the name of the paragraph style that is applied to the 1st level. */
-  var ParaStyleLevel1: String = js.native
+  var ParaStyleLevel1: String
   
   /** contains the name of the paragraph style that is applied to the 10th level. */
-  var ParaStyleLevel10: String = js.native
+  var ParaStyleLevel10: String
   
   /** contains the name of the paragraph style that is applied to the 2nd level. */
-  var ParaStyleLevel2: String = js.native
+  var ParaStyleLevel2: String
   
   /** contains the name of the paragraph style that is applied to the 3rd level. */
-  var ParaStyleLevel3: String = js.native
+  var ParaStyleLevel3: String
   
   /** contains the name of the paragraph style that is applied to the 4th level. */
-  var ParaStyleLevel4: String = js.native
+  var ParaStyleLevel4: String
   
   /** contains the name of the paragraph style that is applied to the 5th level. */
-  var ParaStyleLevel5: String = js.native
+  var ParaStyleLevel5: String
   
   /** contains the name of the paragraph style that is applied to the 6th level. */
-  var ParaStyleLevel6: String = js.native
+  var ParaStyleLevel6: String
   
   /** contains the name of the paragraph style that is applied to the 7th level. */
-  var ParaStyleLevel7: String = js.native
+  var ParaStyleLevel7: String
   
   /** contains the name of the paragraph style that is applied to the 8th level. */
-  var ParaStyleLevel8: String = js.native
+  var ParaStyleLevel8: String
   
   /** contains the name of the paragraph style that is applied to the 9th level. */
-  var ParaStyleLevel9: String = js.native
+  var ParaStyleLevel9: String
   
   /** contains the name of the paragraph style that is applied to the separator level. */
-  var ParaStyleSeparator: String = js.native
+  var ParaStyleSeparator: String
   
   /** contains the column interface. */
-  var TextColumns: XTextColumns = js.native
+  var TextColumns: XTextColumns
   
   /** contains the title of the index. */
-  var Title: String = js.native
+  var Title: String
 }
 object BaseIndex {
   

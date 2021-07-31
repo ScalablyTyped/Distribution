@@ -5,7 +5,6 @@ import typings.kiiCloudSdk.anon.`35`
 import typings.kiiCloudSdk.anon.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("KiiCloud.Kii")
 @js.native
 class Kii ()
-  extends typings.kiiCloudSdk.KiiCloud.Kii
+  extends StObject
+     with typings.kiiCloudSdk.KiiCloud.Kii
 object Kii {
+  
+  @JSGlobal("KiiCloud.Kii")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Authenticate as app admin.
@@ -66,12 +70,10 @@ object Kii {
     *     );
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.authenticateAsAppAdmin")
-  @js.native
-  def authenticateAsAppAdmin(clientId: String, clientSecret: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiAppAdminContext] = js.native
-  @JSGlobal("KiiCloud.Kii.authenticateAsAppAdmin")
-  @js.native
-  def authenticateAsAppAdmin(clientId: String, clientSecret: String, callbacks: `34`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiAppAdminContext] = js.native
+  @scala.inline
+  def authenticateAsAppAdmin(clientId: String, clientSecret: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiAppAdminContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAsAppAdmin")(clientId.asInstanceOf[js.Any], clientSecret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiAppAdminContext]]
+  @scala.inline
+  def authenticateAsAppAdmin(clientId: String, clientSecret: String, callbacks: `34`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiAppAdminContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAsAppAdmin")(clientId.asInstanceOf[js.Any], clientSecret.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiAppAdminContext]]
   
   /**
     * Authenticate as Thing.
@@ -121,12 +123,10 @@ object Kii {
     *     );
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.authenticateAsThing")
-  @js.native
-  def authenticateAsThing(vendorThingID: String, password: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext] = js.native
-  @JSGlobal("KiiCloud.Kii.authenticateAsThing")
-  @js.native
-  def authenticateAsThing(vendorThingID: String, password: String, callbacks: `35`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext] = js.native
+  @scala.inline
+  def authenticateAsThing(vendorThingID: String, password: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAsThing")(vendorThingID.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext]]
+  @scala.inline
+  def authenticateAsThing(vendorThingID: String, password: String, callbacks: `35`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAsThing")(vendorThingID.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext]]
   
   /**
     * Create a KiiThingContext reference
@@ -176,12 +176,10 @@ object Kii {
     *     );
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.authenticateAsThingWithToken")
-  @js.native
-  def authenticateAsThingWithToken(thingID: String, token: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext] = js.native
-  @JSGlobal("KiiCloud.Kii.authenticateAsThingWithToken")
-  @js.native
-  def authenticateAsThingWithToken(thingID: String, token: String, callbacks: `35`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext] = js.native
+  @scala.inline
+  def authenticateAsThingWithToken(thingID: String, token: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAsThingWithToken")(thingID.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext]]
+  @scala.inline
+  def authenticateAsThingWithToken(thingID: String, token: String, callbacks: `35`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateAsThingWithToken")(thingID.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThingContext]]
   
   /**
     * Creates a reference to a bucket for this app
@@ -196,9 +194,8 @@ object Kii {
     *         var bucket = Kii.bucketWithName("myBucket");
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.bucketWithName")
-  @js.native
-  def bucketWithName(bucketName: String): typings.kiiCloudSdk.KiiCloud.KiiBucket = js.native
+  @scala.inline
+  def bucketWithName(bucketName: String): typings.kiiCloudSdk.KiiCloud.KiiBucket = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketWithName")(bucketName.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiBucket]
   
   /**
     * Creates a reference to a encrypted bucket for this app
@@ -213,9 +210,8 @@ object Kii {
     *         var bucket = Kii.encryptedBucketWithName("myBucket");
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.encryptedBucketWithName")
-  @js.native
-  def encryptedBucketWithName(bucketName: String): typings.kiiCloudSdk.KiiCloud.KiiBucket = js.native
+  @scala.inline
+  def encryptedBucketWithName(bucketName: String): typings.kiiCloudSdk.KiiCloud.KiiBucket = ^.asInstanceOf[js.Dynamic].applyDynamic("encryptedBucketWithName")(bucketName.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiBucket]
   
   /**
     * Returns access token lifetime in seconds.
@@ -227,9 +223,8 @@ object Kii {
     * @throws If Kii has not been initialized
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.getAccessTokenExpiration")
-  @js.native
-  def getAccessTokenExpiration(): Double = js.native
+  @scala.inline
+  def getAccessTokenExpiration(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessTokenExpiration")().asInstanceOf[Double]
   
   /**
     * Retrieve the current app ID
@@ -237,9 +232,8 @@ object Kii {
     * @return The current app ID
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.getAppID")
-  @js.native
-  def getAppID(): String = js.native
+  @scala.inline
+  def getAppID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppID")().asInstanceOf[String]
   
   /**
     * Retrieve the current app key
@@ -247,9 +241,8 @@ object Kii {
     * @return The current app key
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.getAppKey")
-  @js.native
-  def getAppKey(): String = js.native
+  @scala.inline
+  def getAppKey(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppKey")().asInstanceOf[String]
   
   /**
     * Kii SDK Build Number
@@ -257,9 +250,8 @@ object Kii {
     * @return current build number of the SDK
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.getBuildNumber")
-  @js.native
-  def getBuildNumber(): String = js.native
+  @scala.inline
+  def getBuildNumber(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBuildNumber")().asInstanceOf[String]
   
   /**
     * Kii SDK Version Number
@@ -267,9 +259,8 @@ object Kii {
     * @return current version number of the SDK
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.getSDKVersion")
-  @js.native
-  def getSDKVersion(): String = js.native
+  @scala.inline
+  def getSDKVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSDKVersion")().asInstanceOf[String]
   
   /**
     * Creates a reference to a group with the given name
@@ -282,9 +273,8 @@ object Kii {
     *         var group = new Kii.groupWithName("myGroup");
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.groupWithName")
-  @js.native
-  def groupWithName(groupName: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = js.native
+  @scala.inline
+  def groupWithName(groupName: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("groupWithName")(groupName.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiGroup]
   
   /**
     * Creates a reference to a group with the given name and a list of default members
@@ -298,9 +288,8 @@ object Kii {
     *         var group = new KiiGroup.groupWithName("myGroup", members);
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.groupWithNameAndMembers")
-  @js.native
-  def groupWithNameAndMembers(groupName: String, members: js.Array[typings.kiiCloudSdk.KiiCloud.KiiUser]): typings.kiiCloudSdk.KiiCloud.KiiGroup = js.native
+  @scala.inline
+  def groupWithNameAndMembers(groupName: String, members: js.Array[typings.kiiCloudSdk.KiiCloud.KiiUser]): typings.kiiCloudSdk.KiiCloud.KiiGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWithNameAndMembers")(groupName.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiGroup]
   
   /**
     * Initialize the Kii SDK
@@ -326,12 +315,10 @@ object Kii {
     *     Kii.initialize("my-app-id", "my-app-key", {});
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.initialize")
-  @js.native
-  def initialize(appID: String, appKey: String): Unit = js.native
-  @JSGlobal("KiiCloud.Kii.initialize")
-  @js.native
-  def initialize(appID: String, appKey: String, analyticsOption: js.Any): Unit = js.native
+  @scala.inline
+  def initialize(appID: String, appKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(appID.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def initialize(appID: String, appKey: String, analyticsOption: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(appID.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], analyticsOption.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Initialize the Kii SDK with a specific URL
@@ -357,12 +344,10 @@ object Kii {
     *     Kii.initializeWithSite("my-app-id", "my-app-key", KiiSite.JP, {});
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.initializeWithSite")
-  @js.native
-  def initializeWithSite(appID: String, appKey: String, site: typings.kiiCloudSdk.KiiCloud.KiiSite): Unit = js.native
-  @JSGlobal("KiiCloud.Kii.initializeWithSite")
-  @js.native
-  def initializeWithSite(appID: String, appKey: String, site: typings.kiiCloudSdk.KiiCloud.KiiSite, analyticsOption: js.Any): Unit = js.native
+  @scala.inline
+  def initializeWithSite(appID: String, appKey: String, site: typings.kiiCloudSdk.KiiCloud.KiiSite): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeWithSite")(appID.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], site.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def initializeWithSite(appID: String, appKey: String, site: typings.kiiCloudSdk.KiiCloud.KiiSite, analyticsOption: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeWithSite")(appID.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], site.asInstanceOf[js.Any], analyticsOption.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Gets a list of topics in app scope
@@ -428,18 +413,14 @@ object Kii {
     *     );
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.listTopics")
-  @js.native
-  def listTopics(): js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]] = js.native
-  @JSGlobal("KiiCloud.Kii.listTopics")
-  @js.native
-  def listTopics(callbacks: js.UndefOr[scala.Nothing], paginationKey: String): js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]] = js.native
-  @JSGlobal("KiiCloud.Kii.listTopics")
-  @js.native
-  def listTopics(callbacks: `4`): js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]] = js.native
-  @JSGlobal("KiiCloud.Kii.listTopics")
-  @js.native
-  def listTopics(callbacks: `4`, paginationKey: String): js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]] = js.native
+  @scala.inline
+  def listTopics(): js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTopics")().asInstanceOf[js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]]]
+  @scala.inline
+  def listTopics(callbacks: Unit, paginationKey: String): js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listTopics")(callbacks.asInstanceOf[js.Any], paginationKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]]]
+  @scala.inline
+  def listTopics(callbacks: `4`): js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTopics")(callbacks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]]]
+  @scala.inline
+  def listTopics(callbacks: `4`, paginationKey: String): js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listTopics")(callbacks.asInstanceOf[js.Any], paginationKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[js.Array[typings.kiiCloudSdk.KiiCloud.KiiTopic], String]]]
   
   /**
     * Instantiate KiiServerCodeEntry with specified entry name.
@@ -457,9 +438,8 @@ object Kii {
     *         var entry = Kii.serverCodeEntry("main");
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.serverCodeEntry")
-  @js.native
-  def serverCodeEntry(entryName: String): typings.kiiCloudSdk.KiiCloud.KiiServerCodeEntry = js.native
+  @scala.inline
+  def serverCodeEntry(entryName: String): typings.kiiCloudSdk.KiiCloud.KiiServerCodeEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("serverCodeEntry")(entryName.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiServerCodeEntry]
   
   /**
     * Instantiate serverCodeEntryWithVersion with specified entry name and version.
@@ -478,9 +458,8 @@ object Kii {
     *         var entry = Kii.serverCodeEntryWithVersion("main", "gulsdf6ful8jvf8uq6fe7vjy6");
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.serverCodeEntryWithVersion")
-  @js.native
-  def serverCodeEntryWithVersion(entryName: String, version: String): typings.kiiCloudSdk.KiiCloud.KiiServerCodeEntry = js.native
+  @scala.inline
+  def serverCodeEntryWithVersion(entryName: String, version: String): typings.kiiCloudSdk.KiiCloud.KiiServerCodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("serverCodeEntryWithVersion")(entryName.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiServerCodeEntry]
   
   /**
     * Set the access token lifetime in seconds.
@@ -501,9 +480,8 @@ object Kii {
     *     Kii.setAccessTokenExpiration(3600);
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.setAccessTokenExpiration")
-  @js.native
-  def setAccessTokenExpiration(expiresIn: Double): Unit = js.native
+  @scala.inline
+  def setAccessTokenExpiration(expiresIn: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccessTokenExpiration")(expiresIn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Instantiate topic belongs to application.
@@ -513,7 +491,6 @@ object Kii {
     * @return topic instance.
     */
   /* static member */
-  @JSGlobal("KiiCloud.Kii.topicWithName")
-  @js.native
-  def topicWithName(topicName: String): typings.kiiCloudSdk.KiiCloud.KiiTopic = js.native
+  @scala.inline
+  def topicWithName(topicName: String): typings.kiiCloudSdk.KiiCloud.KiiTopic = ^.asInstanceOf[js.Dynamic].applyDynamic("topicWithName")(topicName.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiTopic]
 }

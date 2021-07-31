@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,7 +19,9 @@ object GoToType extends StObject {
     * Supported hosts: Excel, Word
     */
   @js.native
-  sealed trait Binding extends GoToType
+  sealed trait Binding
+    extends StObject
+       with GoToType
   
   /**
     * Goes to the specified index by slide number or {@link Office.Index}.
@@ -28,7 +29,9 @@ object GoToType extends StObject {
     * Supported hosts: PowerPoint
     */
   @js.native
-  sealed trait Index extends GoToType
+  sealed trait Index
+    extends StObject
+       with GoToType
   
   /**
     * Goes to a named item using that item's name.
@@ -37,7 +40,9 @@ object GoToType extends StObject {
     * Supported hosts: Excel
     */
   @js.native
-  sealed trait NamedItem extends GoToType
+  sealed trait NamedItem
+    extends StObject
+       with GoToType
   
   /**
     * Goes to a slide using the specified id.
@@ -45,5 +50,7 @@ object GoToType extends StObject {
     * Supported hosts: PowerPoint
     */
   @js.native
-  sealed trait Slide extends GoToType
+  sealed trait Slide
+    extends StObject
+       with GoToType
 }

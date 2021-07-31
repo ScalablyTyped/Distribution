@@ -2,12 +2,12 @@ package typings.uiGrid.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IGridRowOf[TEntity]
-  extends typings.uiGrid.mod.cellNav.IGridRow
+  extends StObject
+     with typings.uiGrid.mod.cellNav.IGridRow
      with typings.uiGrid.mod.edit.IGridRow
      with typings.uiGrid.mod.exporter.IGridRow
      with typings.uiGrid.mod.selection.IGridRow

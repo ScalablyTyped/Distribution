@@ -4,17 +4,15 @@ import typings.expoWebBrowser.expoWebBrowserStrings.failed
 import typings.expoWebBrowser.expoWebBrowserStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var `type`: success | failed = js.native
+    var `type`: success | failed
   }
   object Message {
     
@@ -36,10 +34,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SkipRedirectCheck extends StObject {
     
-    var skipRedirectCheck: js.UndefOr[Boolean] = js.native
+    var skipRedirectCheck: js.UndefOr[Boolean] = js.undefined
   }
   object SkipRedirectCheck {
     

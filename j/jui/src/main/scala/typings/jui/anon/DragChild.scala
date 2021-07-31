@@ -3,45 +3,43 @@ package typings.jui.anon
 import typings.jui.mod.UITreeNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragChild extends StObject {
   
   /**
     * @cfg {Boolean} [drag=false]
     * It is possible to drag the movement of a node.
     */
-  var drag: js.UndefOr[Boolean] = js.native
+  var drag: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @cfg {Boolean} [dragChild=true]
     * It is possible to drag the node movement but the node is not changed to a child node of the target node.
     */
-  var dragChild: js.UndefOr[Boolean] = js.native
+  var dragChild: js.UndefOr[Boolean] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {NodeObject} [root=null]
     * Adds a root node (required).
     */
-  var root: js.UndefOr[UITreeNode] = js.native
+  var root: js.UndefOr[UITreeNode] = js.undefined
   
   /**
     * @cfg {Boolean} [rootFold=false]
     * Folds up a root node.
     */
-  var rootFold: js.UndefOr[Boolean] = js.native
+  var rootFold: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @cfg {Boolean} [rootHide=false]
     * Hides a root node.
     */
-  var rootHide: js.UndefOr[Boolean] = js.native
+  var rootHide: js.UndefOr[Boolean] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
 }
 object DragChild {
   

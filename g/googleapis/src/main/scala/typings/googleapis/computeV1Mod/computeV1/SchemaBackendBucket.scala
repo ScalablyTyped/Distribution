@@ -2,50 +2,48 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A BackendBucket resource. This resource defines a Cloud Storage bucket.
   */
-@js.native
 trait SchemaBackendBucket extends StObject {
   
   /**
     * Cloud Storage bucket name.
     */
-  var bucketName: js.UndefOr[String] = js.native
+  var bucketName: js.UndefOr[String] = js.undefined
   
   /**
     * Cloud CDN configuration for this BackendBucket.
     */
-  var cdnPolicy: js.UndefOr[SchemaBackendBucketCdnPolicy] = js.native
+  var cdnPolicy: js.UndefOr[SchemaBackendBucketCdnPolicy] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional textual description of the resource; provided by the client
     * when the resource is created.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * If true, enable Cloud CDN for this BackendBucket.
     */
-  var enableCdn: js.UndefOr[Boolean] = js.native
+  var enableCdn: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Output Only] Unique identifier for the resource; defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the resource.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -56,12 +54,12 @@ trait SchemaBackendBucket extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaBackendBucket {
   

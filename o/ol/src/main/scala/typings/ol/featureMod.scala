@@ -9,31 +9,31 @@ import typings.std.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object featureMod {
   
+  @JSImport("ol/format/Feature", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ol/format/Feature", JSImport.Default)
   @js.native
-  abstract class default () extends FeatureFormat
+  abstract class default ()
+    extends StObject
+       with FeatureFormat
   
-  @JSImport("ol/format/Feature", "transformExtentWithOptions")
-  @js.native
-  def transformExtentWithOptions(extent: Extent): Extent = js.native
-  @JSImport("ol/format/Feature", "transformExtentWithOptions")
-  @js.native
-  def transformExtentWithOptions(extent: Extent, opt_options: ReadOptions): Extent = js.native
+  @scala.inline
+  def transformExtentWithOptions(extent: Extent): Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("transformExtentWithOptions")(extent.asInstanceOf[js.Any]).asInstanceOf[Extent]
+  @scala.inline
+  def transformExtentWithOptions(extent: Extent, opt_options: ReadOptions): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("transformExtentWithOptions")(extent.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/format/Feature", "transformGeometryWithOptions")
-  @js.native
-  def transformGeometryWithOptions(geometry: typings.ol.geometryMod.default, write: Boolean): typings.ol.geometryMod.default = js.native
-  @JSImport("ol/format/Feature", "transformGeometryWithOptions")
-  @js.native
-  def transformGeometryWithOptions(geometry: typings.ol.geometryMod.default, write: Boolean, opt_options: ReadOptions): typings.ol.geometryMod.default = js.native
-  @JSImport("ol/format/Feature", "transformGeometryWithOptions")
-  @js.native
-  def transformGeometryWithOptions(geometry: typings.ol.geometryMod.default, write: Boolean, opt_options: WriteOptions): typings.ol.geometryMod.default = js.native
+  @scala.inline
+  def transformGeometryWithOptions(geometry: typings.ol.geometryMod.default, write: Boolean): typings.ol.geometryMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("transformGeometryWithOptions")(geometry.asInstanceOf[js.Any], write.asInstanceOf[js.Any])).asInstanceOf[typings.ol.geometryMod.default]
+  @scala.inline
+  def transformGeometryWithOptions(geometry: typings.ol.geometryMod.default, write: Boolean, opt_options: ReadOptions): typings.ol.geometryMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("transformGeometryWithOptions")(geometry.asInstanceOf[js.Any], write.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[typings.ol.geometryMod.default]
+  @scala.inline
+  def transformGeometryWithOptions(geometry: typings.ol.geometryMod.default, write: Boolean, opt_options: WriteOptions): typings.ol.geometryMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("transformGeometryWithOptions")(geometry.asInstanceOf[js.Any], write.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[typings.ol.geometryMod.default]
   
   @js.native
   trait FeatureFormat extends StObject {
@@ -135,14 +135,13 @@ object featureMod {
     def writeGeometry(geometry: typings.ol.geometryMod.default, opt_options: WriteOptions): String = js.native
   }
   
-  @js.native
   trait ReadOptions extends StObject {
     
-    var dataProjection: js.UndefOr[ProjectionLike] = js.native
+    var dataProjection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var featureProjection: js.UndefOr[ProjectionLike] = js.native
+    var featureProjection: js.UndefOr[ProjectionLike] = js.undefined
   }
   object ReadOptions {
     
@@ -175,16 +174,15 @@ object featureMod {
     }
   }
   
-  @js.native
   trait WriteOptions extends StObject {
     
-    var dataProjection: js.UndefOr[ProjectionLike] = js.native
+    var dataProjection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var decimals: js.UndefOr[Double] = js.native
+    var decimals: js.UndefOr[Double] = js.undefined
     
-    var featureProjection: js.UndefOr[ProjectionLike] = js.native
+    var featureProjection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var rightHanded: js.UndefOr[Boolean] = js.native
+    var rightHanded: js.UndefOr[Boolean] = js.undefined
   }
   object WriteOptions {
     

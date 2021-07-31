@@ -4,35 +4,33 @@ import typings.csstype.mod.BackgroundColorProperty
 import typings.csstype.mod.ColorProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MjmlTextProps extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[ColorProperty] = js.native
+  var color: js.UndefOr[ColorProperty] = js.undefined
   
-  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.native
+  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[String | Double] = js.native
+  var fontSize: js.UndefOr[String | Double] = js.undefined
   
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
-  var fontWeight: js.UndefOr[Double] = js.native
+  var fontWeight: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
-  var letterSpacing: js.UndefOr[String] = js.native
+  var letterSpacing: js.UndefOr[String] = js.undefined
   
-  var lineHeight: js.UndefOr[String] = js.native
+  var lineHeight: js.UndefOr[String] = js.undefined
   
-  var textDecoration: js.UndefOr[String] = js.native
+  var textDecoration: js.UndefOr[String] = js.undefined
   
-  var textTransform: js.UndefOr[String] = js.native
+  var textTransform: js.UndefOr[String] = js.undefined
 }
 object MjmlTextProps {
   

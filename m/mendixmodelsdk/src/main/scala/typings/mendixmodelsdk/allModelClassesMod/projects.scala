@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.unitsMod.IStructuralUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projects {
@@ -76,9 +75,8 @@ object projects {
       * Expects one argument, the IFolderBase in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "projects.Folder.createIn")
-    @js.native
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.projectsMod.projects.Folder = js.native
+    @scala.inline
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.projectsMod.projects.Folder = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.projectsMod.projects.Folder]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "projects.Folder.structureTypeName")
@@ -161,9 +159,8 @@ object projects {
       * Expects one argument, the IProject in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "projects.Module.createIn")
-    @js.native
-    def createIn(container: IProject): typings.mendixmodelsdk.projectsMod.projects.Module = js.native
+    @scala.inline
+    def createIn(container: IProject): typings.mendixmodelsdk.projectsMod.projects.Module = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.projectsMod.projects.Module]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "projects.Module.structureTypeName")
@@ -245,9 +242,8 @@ object projects {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "projects.OneTimeConversionMarker.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.projectsMod.projects.OneTimeConversionMarker = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.projectsMod.projects.OneTimeConversionMarker = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.projectsMod.projects.OneTimeConversionMarker]
     
     /**
       * Creates and returns a new OneTimeConversionMarker instance in the SDK and on the server.
@@ -255,9 +251,8 @@ object projects {
       * of the parent ProjectConversion element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "projects.OneTimeConversionMarker.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.projectsMod.projects.ProjectConversion): typings.mendixmodelsdk.projectsMod.projects.OneTimeConversionMarker = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.projectsMod.projects.ProjectConversion): typings.mendixmodelsdk.projectsMod.projects.OneTimeConversionMarker = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.projectsMod.projects.OneTimeConversionMarker]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "projects.OneTimeConversionMarker.structureTypeName")
@@ -333,9 +328,8 @@ object projects {
       * Expects one argument, the IProject in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "projects.ProjectConversion.createIn")
-    @js.native
-    def createIn(container: IProject): typings.mendixmodelsdk.projectsMod.projects.ProjectConversion = js.native
+    @scala.inline
+    def createIn(container: IProject): typings.mendixmodelsdk.projectsMod.projects.ProjectConversion = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.projectsMod.projects.ProjectConversion]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "projects.ProjectConversion.structureTypeName")

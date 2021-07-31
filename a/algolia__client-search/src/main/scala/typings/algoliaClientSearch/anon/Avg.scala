@@ -2,31 +2,29 @@ package typings.algoliaClientSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Avg extends StObject {
   
   /**
     * The average facet value in the result set.
     */
-  var avg: Double = js.native
+  var avg: Double
   
   /**
     * The maximum value in the result set.
     */
-  var max: Double = js.native
+  var max: Double
   
   /**
     * The minimum value in the result set.
     */
-  var min: Double = js.native
+  var min: Double
   
   /**
     * The sum of all values in the result set.
     */
-  var sum: Double = js.native
+  var sum: Double
 }
 object Avg {
   

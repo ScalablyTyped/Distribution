@@ -2,15 +2,13 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsExpandable extends StObject {
   
-  var isExpandable: js.UndefOr[Boolean] = js.native
+  var isExpandable: js.UndefOr[Boolean] = js.undefined
   
-  var isExpanded: js.UndefOr[Boolean] = js.native
+  var isExpanded: js.UndefOr[Boolean] = js.undefined
 }
 object IsExpandable {
   

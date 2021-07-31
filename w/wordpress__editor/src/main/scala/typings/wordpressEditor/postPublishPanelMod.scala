@@ -7,7 +7,6 @@ import typings.std.HTMLDivElement
 import typings.wordpressEditor.postPublishPanelMod.PostPublishPanel.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postPublishPanelMod {
@@ -26,21 +25,22 @@ object postPublishPanelMod {
   
   object PostPublishPanel {
     
-    @js.native
-    trait Props extends HTMLProps[HTMLDivElement] {
+    trait Props
+      extends StObject
+         with HTMLProps[HTMLDivElement] {
       
-      var PostPublishExtension: js.UndefOr[ComponentType[js.Object]] = js.native
+      var PostPublishExtension: js.UndefOr[ComponentType[js.Object]] = js.undefined
       
-      var PrePublishExtension: js.UndefOr[ComponentType[js.Object]] = js.native
+      var PrePublishExtension: js.UndefOr[ComponentType[js.Object]] = js.undefined
       
       @JSName("children")
-      var children_Props: js.UndefOr[scala.Nothing] = js.native
+      var children_Props: js.UndefOr[scala.Nothing] = js.undefined
       
-      var forceIsDirty: js.UndefOr[Boolean] = js.native
+      var forceIsDirty: js.UndefOr[Boolean] = js.undefined
       
-      var forceIsSaving: js.UndefOr[Boolean] = js.native
+      var forceIsSaving: js.UndefOr[Boolean] = js.undefined
       
-      def onClose(): Unit = js.native
+      def onClose(): Unit
     }
     object Props {
       

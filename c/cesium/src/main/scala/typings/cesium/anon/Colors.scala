@@ -3,23 +3,21 @@ package typings.cesium.anon
 import typings.cesium.mod.Cartesian3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Colors extends StObject {
   
-  var colors: js.UndefOr[js.Array[typings.cesium.mod.Color]] = js.native
+  var colors: js.UndefOr[js.Array[typings.cesium.mod.Color]] = js.undefined
   
-  var colorsPerVertex: js.UndefOr[Boolean] = js.native
+  var colorsPerVertex: js.UndefOr[Boolean] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var followSurface: js.UndefOr[Boolean] = js.native
+  var followSurface: js.UndefOr[Boolean] = js.undefined
   
-  var granularity: js.UndefOr[Double] = js.native
+  var granularity: js.UndefOr[Double] = js.undefined
   
-  var positions: js.Array[Cartesian3] = js.native
+  var positions: js.Array[Cartesian3]
 }
 object Colors {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSlidesPositionRequest extends StObject {
   
   /**
     * The index where the slides should be inserted, based on the slide arrangement before the move takes place. Must be between zero and the number of slides in the presentation,
     * inclusive.
     */
-  var insertionIndex: js.UndefOr[Double] = js.native
+  var insertionIndex: js.UndefOr[Double] = js.undefined
   
   /** The IDs of the slides in the presentation that should be moved. The slides in this list must be in existing presentation order, without duplicates. */
-  var slideObjectIds: js.UndefOr[js.Array[String]] = js.native
+  var slideObjectIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object UpdateSlidesPositionRequest {
   

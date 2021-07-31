@@ -5,24 +5,24 @@ import typings.antDesignReactNative.portalHostMod.Operation
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChildrenKey extends Operation {
+trait ChildrenKey
+  extends StObject
+     with Operation {
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var key: Double = js.native
+  var key: Double
   
-  var `type`: mount = js.native
+  var `type`: mount
 }
 object ChildrenKey {
   
   @scala.inline
-  def apply(key: Double, `type`: mount): ChildrenKey = {
+  def apply(key: Double): ChildrenKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mount")
     __obj.asInstanceOf[ChildrenKey]
   }
   

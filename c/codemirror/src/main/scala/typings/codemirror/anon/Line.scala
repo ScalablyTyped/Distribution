@@ -2,15 +2,13 @@ package typings.codemirror.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Line extends StObject {
   
-  var ch: Double = js.native
+  var ch: Double
   
-  var line: Double = js.native
+  var line: Double
 }
 object Line {
   

@@ -2,18 +2,16 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInputSecurityGroupsResponse extends StObject {
   
   /**
     * List of input security groups
     */
-  var InputSecurityGroups: js.UndefOr[listOfInputSecurityGroup] = js.native
+  var InputSecurityGroups: js.UndefOr[listOfInputSecurityGroup] = js.undefined
   
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListInputSecurityGroupsResponse {
   

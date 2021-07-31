@@ -2,19 +2,17 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonMarkerProps extends StObject {
   
-  var marker: js.UndefOr[String] = js.native
+  var marker: js.UndefOr[String] = js.undefined
   
-  var markerEnd: js.UndefOr[String] = js.native
+  var markerEnd: js.UndefOr[String] = js.undefined
   
-  var markerMid: js.UndefOr[String] = js.native
+  var markerMid: js.UndefOr[String] = js.undefined
   
-  var markerStart: js.UndefOr[String] = js.native
+  var markerStart: js.UndefOr[String] = js.undefined
 }
 object CommonMarkerProps {
   

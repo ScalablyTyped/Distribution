@@ -2,21 +2,19 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KernelMemoryScanMatch extends StObject {
   
   /**
     * Memory address where a match was found.
     */
-  var address: UInt64 = js.native
+  var address: UInt64
   
   /**
     * Size of this match.
     */
-  var size: Double = js.native
+  var size: Double
 }
 object KernelMemoryScanMatch {
   

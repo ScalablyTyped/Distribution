@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface provides a method to quickly redraw some {@link XCanvas} primitives, using cached data.
   * @since OOo 2.0
   */
-@js.native
-trait XCachedPrimitive extends XInterface {
+trait XCachedPrimitive
+  extends StObject
+     with XInterface {
   
   /**
     * Redraw the cached primitive.
@@ -24,7 +24,7 @@ trait XCachedPrimitive extends XInterface {
     * @returns a value of type {@link RepaintResult} , denoting the result of this operation.
     * @throws com::sun::star::lang::IllegalArgumentException if the view transformation matrix is singular.
     */
-  def redraw(aState: ViewState): Double = js.native
+  def redraw(aState: ViewState): Double
 }
 object XCachedPrimitive {
   

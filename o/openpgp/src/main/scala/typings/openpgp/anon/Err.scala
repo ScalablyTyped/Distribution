@@ -3,21 +3,19 @@ package typings.openpgp.anon
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Err extends StObject {
   
-  var err: js.Array[Error] | Null = js.native
+  var err: js.Array[Error] | Null
   
-  var keys: js.Array[typings.openpgp.mod.key.Key] = js.native
+  var keys: js.Array[typings.openpgp.mod.key.Key]
 }
 object Err {
   
   @scala.inline
   def apply(keys: js.Array[typings.openpgp.mod.key.Key]): Err = {
-    val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any], err = null)
     __obj.asInstanceOf[Err]
   }
   

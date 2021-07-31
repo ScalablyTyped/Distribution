@@ -19,152 +19,124 @@ import typings.isLite.isLiteStrings.WeakMap
 import typings.isLite.isLiteStrings.WeakSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("is-lite", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object default {
+    
+    @scala.inline
+    def apply(value: js.Any): Types = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Types]
     
     @JSImport("is-lite", JSImport.Default)
     @js.native
-    def apply(value: js.Any): Types = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("is-lite", "default.array")
-    @js.native
-    def array(arg: js.Any): /* is std.Array<any> */ Boolean = js.native
+    @scala.inline
+    def array(arg: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
     
-    @JSImport("is-lite", "default.arrayOf")
-    @js.native
-    def arrayOf(target: js.Array[_], predicate: js.Function1[/* v */ js.Any, Boolean]): Boolean = js.native
+    @scala.inline
+    def arrayOf(target: js.Array[js.Any], predicate: js.Function1[/* v */ js.Any, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOf")(target.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("is-lite", "default.asyncFunction")
-    @js.native
-    def asyncFunction(value: js.Any): /* is std.Function */ Boolean = js.native
+    @scala.inline
+    def asyncFunction(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("asyncFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
     
-    @JSImport("is-lite", "default.boolean")
-    @js.native
-    def boolean(value: js.Any): /* is boolean */ Boolean = js.native
+    @scala.inline
+    def boolean(value: js.Any): /* is boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(value.asInstanceOf[js.Any]).asInstanceOf[/* is boolean */ Boolean]
     
-    @JSImport("is-lite", "default.date")
-    @js.native
-    def date(value: js.Any): /* is std.Date */ Boolean = js.native
+    @scala.inline
+    def date(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
     
-    @JSImport("is-lite", "default.defined")
-    @js.native
-    def defined(value: js.Any): Boolean = js.native
+    @scala.inline
+    def defined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("is-lite", "default.domElement")
-    @js.native
-    def domElement(value: js.Any): /* is std.Element */ Boolean = js.native
+    @scala.inline
+    def domElement(value: js.Any): /* is std.Element */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("domElement")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Element */ Boolean]
     
-    @JSImport("is-lite", "default.empty")
-    @js.native
-    def empty(value: js.Any): Boolean = js.native
+    @scala.inline
+    def empty(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("is-lite", "default.error")
-    @js.native
-    def error(value: js.Any): /* is std.Error */ Boolean = js.native
+    @scala.inline
+    def error(value: js.Any): /* is std.Error */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Error */ Boolean]
     
-    @JSImport("is-lite", "default.function")
-    @js.native
-    def function(value: js.Any): /* is std.Function */ Boolean = js.native
+    @scala.inline
+    def function(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("function")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
     
-    @JSImport("is-lite", "default.generator")
-    @js.native
-    def generator(value: js.Any): /* is std.Generator<unknown, any, unknown> */ Boolean = js.native
+    @scala.inline
+    def generator(value: js.Any): /* is std.Generator<unknown, any, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("generator")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Generator<unknown, any, unknown> */ Boolean]
     
-    @JSImport("is-lite", "default.generatorFunction")
-    @js.native
-    def generatorFunction(value: js.Any): /* is std.GeneratorFunction */ Boolean = js.native
+    @scala.inline
+    def generatorFunction(value: js.Any): /* is std.GeneratorFunction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("generatorFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.GeneratorFunction */ Boolean]
     
-    @JSImport("is-lite", "default.instanceOf")
-    @js.native
-    def instanceOf[T](instance: js.Any, class_ : Class[T]): /* is T */ Boolean = js.native
+    @scala.inline
+    def instanceOf[T](instance: js.Any, class_ : Class[T]): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("instanceOf")(instance.asInstanceOf[js.Any], class_.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
     
-    @JSImport("is-lite", "default.iterable")
-    @js.native
-    def iterable(value: js.Any): /* is std.IterableIterator<unknown> */ Boolean = js.native
+    @scala.inline
+    def iterable(value: js.Any): /* is std.IterableIterator<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("iterable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.IterableIterator<unknown> */ Boolean]
     
-    @JSImport("is-lite", "default.map")
-    @js.native
-    def map(value: js.Any): /* is std.Map<unknown, unknown> */ Boolean = js.native
+    @scala.inline
+    def map(value: js.Any): /* is std.Map<unknown, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Map<unknown, unknown> */ Boolean]
     
-    @JSImport("is-lite", "default.nan")
-    @js.native
-    def nan(value: js.Any): Boolean = js.native
+    @scala.inline
+    def nan(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nan")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("is-lite", "default.nullOrUndefined")
-    @js.native
-    def nullOrUndefined(value: js.Any): Boolean = js.native
+    @scala.inline
+    def `null`(value: js.Any): /* is null */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("null")(value.asInstanceOf[js.Any]).asInstanceOf[/* is null */ Boolean]
     
-    @JSImport("is-lite", "default.number")
-    @js.native
-    def number(value: js.Any): /* is number */ Boolean = js.native
+    @scala.inline
+    def nullOrUndefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nullOrUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("is-lite", "default.numericString")
-    @js.native
-    def numericString(value: js.Any): /* is string */ Boolean = js.native
+    @scala.inline
+    def number(value: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
     
-    @JSImport("is-lite", "default.oneOf")
-    @js.native
-    def oneOf(target: js.Array[_], value: js.Any): Boolean = js.native
+    @scala.inline
+    def numericString(value: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("numericString")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
     
-    @JSImport("is-lite", "default.plainObject")
-    @js.native
-    def plainObject(value: js.Any): /* is is-lite.is-lite.IPlainObject */ Boolean = js.native
+    @scala.inline
+    def `object`(value: js.Any): /* is object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(value.asInstanceOf[js.Any]).asInstanceOf[/* is object */ Boolean]
     
-    @JSImport("is-lite", "default.promise")
-    @js.native
-    def promise(value: js.Any): /* is std.Promise<unknown> */ Boolean = js.native
+    @scala.inline
+    def oneOf(target: js.Array[js.Any], value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(target.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("is-lite", "default.propertyOf")
-    @js.native
-    def propertyOf(target: js.Object, key: String): Boolean = js.native
-    @JSImport("is-lite", "default.propertyOf")
-    @js.native
-    def propertyOf(target: js.Object, key: String, predicate: js.Function1[/* v */ js.Any, Boolean]): Boolean = js.native
+    @scala.inline
+    def plainObject(value: js.Any): /* is is-lite.is-lite.IPlainObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("plainObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is is-lite.is-lite.IPlainObject */ Boolean]
     
-    @JSImport("is-lite", "default.regexp")
-    @js.native
-    def regexp(value: js.Any): /* is std.RegExp */ Boolean = js.native
+    @scala.inline
+    def promise(value: js.Any): /* is std.Promise<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<unknown> */ Boolean]
     
-    @JSImport("is-lite", "default.set")
-    @js.native
-    def set(value: js.Any): /* is std.Set<object> */ Boolean = js.native
+    @scala.inline
+    def propertyOf(target: js.Object, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("propertyOf")(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def propertyOf(target: js.Object, key: String, predicate: js.Function1[/* v */ js.Any, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("propertyOf")(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("is-lite", "default.string")
-    @js.native
-    def string(value: js.Any): /* is string */ Boolean = js.native
+    @scala.inline
+    def regexp(value: js.Any): /* is std.RegExp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.RegExp */ Boolean]
     
-    @JSImport("is-lite", "default.symbol")
-    @js.native
-    def symbol(value: js.Any): /* is symbol */ Boolean = js.native
+    @scala.inline
+    def set(value: js.Any): /* is std.Set<object> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Set<object> */ Boolean]
     
-    @JSImport("is-lite", "default.undefined")
-    @js.native
-    def undefined(value: js.Any): /* is undefined */ Boolean = js.native
+    @scala.inline
+    def string(value: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
     
-    @JSImport("is-lite", "default.weakMap")
-    @js.native
-    def weakMap(value: js.Any): /* is std.WeakMap<object, unknown> */ Boolean = js.native
+    @scala.inline
+    def symbol(value: js.Any): /* is symbol */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(value.asInstanceOf[js.Any]).asInstanceOf[/* is symbol */ Boolean]
     
-    @JSImport("is-lite", "default.weakSet")
-    @js.native
-    def weakSet(value: js.Any): /* is std.WeakSet<object> */ Boolean = js.native
+    @scala.inline
+    def undefined(value: js.Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("undefined")(value.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
     
-    @JSImport("is-lite", "default.null")
-    @js.native
-    def `null`(value: js.Any): /* is null */ Boolean = js.native
+    @scala.inline
+    def weakMap(value: js.Any): /* is std.WeakMap<object, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("weakMap")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.WeakMap<object, unknown> */ Boolean]
     
-    @JSImport("is-lite", "default.object")
-    @js.native
-    def `object`(value: js.Any): /* is object */ Boolean = js.native
+    @scala.inline
+    def weakSet(value: js.Any): /* is std.WeakSet<object> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("weakSet")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.WeakSet<object> */ Boolean]
   }
   
-  @JSImport("is-lite", "getObjectType")
-  @js.native
-  def getObjectType(value: js.Any): String = js.native
+  @scala.inline
+  def getObjectType(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getObjectType")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type Class[T] = Instantiable1[/* args (repeated) */ js.Any, T]
   

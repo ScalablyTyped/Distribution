@@ -4,36 +4,34 @@ import typings.tuyaPanelKit.anon.Data
 import typings.tuyaPanelKit.anon.DataClosing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackNavigationEventMap extends StObject {
   
   /**
     * Event which fires when navigation gesture is canceled.
     */
-  var gestureCancel: Data = js.native
+  var gestureCancel: Data
   
   /**
     * Event which fires when navigation gesture is completed.
     */
-  var gestureEnd: Data = js.native
+  var gestureEnd: Data
   
   /**
     * Event which fires when navigation gesture starts.
     */
-  var gestureStart: Data = js.native
+  var gestureStart: Data
   
   /**
     * Event which fires when a transition animation ends.
     */
-  var transitionEnd: DataClosing = js.native
+  var transitionEnd: DataClosing
   
   /**
     * Event which fires when a transition animation starts.
     */
-  var transitionStart: DataClosing = js.native
+  var transitionStart: DataClosing
 }
 object StackNavigationEventMap {
   

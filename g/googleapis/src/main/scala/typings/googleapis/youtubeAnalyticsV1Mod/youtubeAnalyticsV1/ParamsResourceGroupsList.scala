@@ -6,29 +6,29 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceGroupsList extends StandardParameters {
+trait ParamsResourceGroupsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The id parameter specifies a comma-separated list of the YouTube group
     * ID(s) for the resource(s) that are being retrieved. In a group resource,
     * the id property specifies the group's YouTube group ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Set this parameter's value to true to instruct the API to only return
     * groups owned by the authenticated user.
     */
-  var mine: js.UndefOr[Boolean] = js.native
+  var mine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -42,14 +42,14 @@ trait ParamsResourceGroupsList extends StandardParameters {
     * channel. The CMS account that the user authenticates with must be linked
     * to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * The pageToken parameter identifies a specific page in the result set that
     * should be returned. In an API response, the nextPageToken property
     * identifies the next page that can be retrieved.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceGroupsList {
   

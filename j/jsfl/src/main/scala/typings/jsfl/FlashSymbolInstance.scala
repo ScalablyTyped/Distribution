@@ -2,65 +2,63 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashSymbolInstance extends StObject {
   
-  var accName: String = js.native
+  var accName: String
   
-  var actionScript: String = js.native
+  var actionScript: String
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var bitmapRenderMode: String = js.native
+  var bitmapRenderMode: String
   
-  var blendMode: String = js.native
+  var blendMode: String
   
-  var buttonTracking: String = js.native
+  var buttonTracking: String
   
-  var cacheAsBitmap: Boolean = js.native
+  var cacheAsBitmap: Boolean
   
-  var colorAlphaAmount: Double = js.native
+  var colorAlphaAmount: Double
   
-  var colorAlphaPercent: Double = js.native
+  var colorAlphaPercent: Double
   
-  var colorBlueAmount: Double = js.native
+  var colorBlueAmount: Double
   
-  var colorBluePercent: Double = js.native
+  var colorBluePercent: Double
   
-  var colorGreenAmount: Double = js.native
+  var colorGreenAmount: Double
   
-  var colorGreenPercent: Double = js.native
+  var colorGreenPercent: Double
   
-  var colorMode: String = js.native
+  var colorMode: String
   
-  var colorRedAmount: Double = js.native
+  var colorRedAmount: Double
   
-  var colorRedPercent: Double = js.native
+  var colorRedPercent: Double
   
-  var description: String = js.native
+  var description: String
   
-  var filters: js.Array[FlashFilter] = js.native
+  var filters: js.Array[FlashFilter]
   
-  var firstFrame: Double = js.native
+  var firstFrame: Double
   
-  var forceSimple: Boolean = js.native
+  var forceSimple: Boolean
   
-  var loop: String = js.native
+  var loop: String
   
-  var shortcut: String = js.native
+  var shortcut: String
   
-  var silent: Boolean = js.native
+  var silent: Boolean
   
-  var symbolType: String = js.native
+  var symbolType: String
   
-  var tabIndex: Double = js.native
+  var tabIndex: Double
   
-  var useBackgroundColor: Boolean = js.native
+  var useBackgroundColor: Boolean
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object FlashSymbolInstance {
   

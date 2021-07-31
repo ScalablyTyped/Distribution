@@ -2,15 +2,15 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FormParamDefinition extends PropertyDefinition {
+trait FormParamDefinition
+  extends StObject
+     with PropertyDefinition {
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object FormParamDefinition {
   

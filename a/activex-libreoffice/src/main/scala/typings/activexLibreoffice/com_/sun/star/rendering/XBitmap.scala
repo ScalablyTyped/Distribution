@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealSize2D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link XIntegerBitmap} , {@link XIeeeDoubleBitmap} , {@link XIeeeFloatBitmap} and {@link XHalfFloatBitmap} interfaces.
   * @since OOo 2.0
   */
-@js.native
-trait XBitmap extends XInterface {
+trait XBitmap
+  extends StObject
+     with XInterface {
   
   /**
     * Query the size of the bitmap.
@@ -25,7 +25,7 @@ trait XBitmap extends XInterface {
     * This method queries the bitmap size in pixel.
     * @returns the bitmap size in pixel.
     */
-  val Size: IntegerSize2D = js.native
+  val Size: IntegerSize2D
   
   /**
     * Query a scaled copy of the original bitmap.
@@ -35,7 +35,7 @@ trait XBitmap extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if the size components are outside the specified range.
     * @throws VolatileContentDestroyedException if the contents of a volatile bitmap have been destroyed, and thus cannot be read to generate the scaled bitmap.
     */
-  def getScaledBitmap(newSize: RealSize2D, beFast: Boolean): XBitmap = js.native
+  def getScaledBitmap(newSize: RealSize2D, beFast: Boolean): XBitmap
   
   /**
     * Query the size of the bitmap.
@@ -43,7 +43,7 @@ trait XBitmap extends XInterface {
     * This method queries the bitmap size in pixel.
     * @returns the bitmap size in pixel.
     */
-  def getSize(): IntegerSize2D = js.native
+  def getSize(): IntegerSize2D
   
   /**
     * Query transparency status of the bitmap.
@@ -52,7 +52,7 @@ trait XBitmap extends XInterface {
     * with this bitmap, though much easier to access here (the color space then has a component flagged {@link ColorComponentTag.ALPHA} ).
     * @returns `TRUE` , if the bitmap has alpha data, or `FALSE` if not.
     */
-  def hasAlpha(): Boolean = js.native
+  def hasAlpha(): Boolean
 }
 object XBitmap {
   

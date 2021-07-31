@@ -3,15 +3,15 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Keyframes extends Node {
+trait Keyframes
+  extends StObject
+     with Node {
   
-  var prefix: java.lang.String = js.native
+  var prefix: java.lang.String
   
-  var segments: js.Array[Node] = js.native
+  var segments: js.Array[Node]
 }
 object Keyframes {
   

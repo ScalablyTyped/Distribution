@@ -4,17 +4,15 @@ import typings.cadesplugin.CADESCommon.ValuesOf
 import typings.cadesplugin.CAPICOM.CAPICOM_ENCODING_TYPE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CPAttribute extends StObject {
   
-  var Name: ValuesOf[CADESCOM_ATTRIBUTE] = js.native
+  var Name: ValuesOf[CADESCOM_ATTRIBUTE]
   
-  var Value: js.Any = js.native
+  var Value: js.Any
   
-  var ValueEncoding: ValuesOf[CAPICOM_ENCODING_TYPE] = js.native
+  var ValueEncoding: ValuesOf[CAPICOM_ENCODING_TYPE]
 }
 object CPAttribute {
   

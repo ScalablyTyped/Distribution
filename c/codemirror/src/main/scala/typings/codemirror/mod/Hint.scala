@@ -3,30 +3,28 @@ package typings.codemirror.mod
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Interface used by showHint.js Codemirror add-on
   When completions aren't simple strings, they should be objects with the following properties: */
-@js.native
 trait Hint extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var displayText: js.UndefOr[String] = js.native
+  var displayText: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[Position] = js.native
+  var from: js.UndefOr[Position] = js.undefined
   
   /** Called if a completion is picked. If provided *you* are responsible for applying the completion */
-  var hint: js.UndefOr[js.Function3[/* cm */ Editor, /* data */ Hints, /* cur */ this.type, Unit]] = js.native
+  var hint: js.UndefOr[js.Function3[/* cm */ Editor, /* data */ Hints, /* cur */ this.type, Unit]] = js.undefined
   
   var render: js.UndefOr[
     js.Function3[/* element */ HTMLLIElement, /* data */ Hints, /* cur */ this.type, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var to: js.UndefOr[Position] = js.native
+  var to: js.UndefOr[Position] = js.undefined
 }
 object Hint {
   

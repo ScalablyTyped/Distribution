@@ -2,21 +2,19 @@ package typings.mapboxMapboxSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config extends StObject {
   
-  var config: js.Any = js.native
+  var config: js.Any
   
-  var ownerId: js.UndefOr[String] = js.native
+  var ownerId: js.UndefOr[String] = js.undefined
   
-  var scrollZoom: js.UndefOr[Boolean] = js.native
+  var scrollZoom: js.UndefOr[Boolean] = js.undefined
   
-  var styleId: String = js.native
+  var styleId: String
   
-  var title: js.UndefOr[Boolean] = js.native
+  var title: js.UndefOr[Boolean] = js.undefined
 }
 object Config {
   

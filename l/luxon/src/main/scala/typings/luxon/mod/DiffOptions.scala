@@ -2,13 +2,11 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiffOptions extends StObject {
   
-  var conversionAccuracy: js.UndefOr[ConversionAccuracy] = js.native
+  var conversionAccuracy: js.UndefOr[ConversionAccuracy] = js.undefined
 }
 object DiffOptions {
   

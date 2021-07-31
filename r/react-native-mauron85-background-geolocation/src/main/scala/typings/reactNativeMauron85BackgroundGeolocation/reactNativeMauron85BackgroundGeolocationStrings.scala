@@ -8,174 +8,234 @@ import typings.reactNativeMauron85BackgroundGeolocation.mod.NativeProvider
 import typings.reactNativeMauron85BackgroundGeolocation.mod.iOSActivityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeMauron85BackgroundGeolocationStrings {
   
   @js.native
-  sealed trait AutomotiveNavigation extends iOSActivityType
+  sealed trait AutomotiveNavigation
+    extends StObject
+       with iOSActivityType
   @scala.inline
   def AutomotiveNavigation: AutomotiveNavigation = "AutomotiveNavigation".asInstanceOf[AutomotiveNavigation]
   
   @js.native
-  sealed trait DEBUG extends LogLevel
+  sealed trait DEBUG
+    extends StObject
+       with LogLevel
   @scala.inline
   def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
   
   @js.native
-  sealed trait ERROR extends LogLevel
+  sealed trait ERROR
+    extends StObject
+       with LogLevel
   @scala.inline
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
-  sealed trait Fitness extends iOSActivityType
+  sealed trait Fitness
+    extends StObject
+       with iOSActivityType
   @scala.inline
   def Fitness: Fitness = "Fitness".asInstanceOf[Fitness]
   
   @js.native
-  sealed trait INFO extends LogLevel
+  sealed trait INFO
+    extends StObject
+       with LogLevel
   @scala.inline
   def INFO: INFO = "INFO".asInstanceOf[INFO]
   
   @js.native
-  sealed trait IN_VEHICLE extends ActivityType
+  sealed trait IN_VEHICLE
+    extends StObject
+       with ActivityType
   @scala.inline
   def IN_VEHICLE: IN_VEHICLE = "IN_VEHICLE".asInstanceOf[IN_VEHICLE]
   
   @js.native
-  sealed trait ON_BICYCLE extends ActivityType
+  sealed trait ON_BICYCLE
+    extends StObject
+       with ActivityType
   @scala.inline
   def ON_BICYCLE: ON_BICYCLE = "ON_BICYCLE".asInstanceOf[ON_BICYCLE]
   
   @js.native
-  sealed trait ON_FOOT extends ActivityType
+  sealed trait ON_FOOT
+    extends StObject
+       with ActivityType
   @scala.inline
   def ON_FOOT: ON_FOOT = "ON_FOOT".asInstanceOf[ON_FOOT]
   
   @js.native
-  sealed trait Other extends iOSActivityType
+  sealed trait Other
+    extends StObject
+       with iOSActivityType
   @scala.inline
   def Other: Other = "Other".asInstanceOf[Other]
   
   @js.native
-  sealed trait OtherNavigation extends iOSActivityType
+  sealed trait OtherNavigation
+    extends StObject
+       with iOSActivityType
   @scala.inline
   def OtherNavigation: OtherNavigation = "OtherNavigation".asInstanceOf[OtherNavigation]
   
   @js.native
-  sealed trait RUNNING extends ActivityType
+  sealed trait RUNNING
+    extends StObject
+       with ActivityType
   @scala.inline
   def RUNNING: RUNNING = "RUNNING".asInstanceOf[RUNNING]
   
   @js.native
-  sealed trait STILL extends ActivityType
+  sealed trait STILL
+    extends StObject
+       with ActivityType
   @scala.inline
   def STILL: STILL = "STILL".asInstanceOf[STILL]
   
   @js.native
-  sealed trait TILTING extends ActivityType
+  sealed trait TILTING
+    extends StObject
+       with ActivityType
   @scala.inline
   def TILTING: TILTING = "TILTING".asInstanceOf[TILTING]
   
   @js.native
-  sealed trait TRACE extends LogLevel
+  sealed trait TRACE
+    extends StObject
+       with LogLevel
   @scala.inline
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   
   @js.native
-  sealed trait UNKNOWN extends ActivityType
+  sealed trait UNKNOWN
+    extends StObject
+       with ActivityType
   @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   
   @js.native
-  sealed trait WALKING extends ActivityType
+  sealed trait WALKING
+    extends StObject
+       with ActivityType
   @scala.inline
   def WALKING: WALKING = "WALKING".asInstanceOf[WALKING]
   
   @js.native
-  sealed trait WARN extends LogLevel
+  sealed trait WARN
+    extends StObject
+       with LogLevel
   @scala.inline
   def WARN: WARN = "WARN".asInstanceOf[WARN]
   
   @js.native
-  sealed trait abort_requested extends Event
+  sealed trait abort_requested
+    extends StObject
+       with Event
   @scala.inline
   def abort_requested: abort_requested = "abort_requested".asInstanceOf[abort_requested]
   
   @js.native
   sealed trait activity
-    extends Event
+    extends StObject
+       with Event
        with HeadlessTaskEventName
   @scala.inline
   def activity: activity = "activity".asInstanceOf[activity]
   
   @js.native
-  sealed trait authorization extends Event
+  sealed trait authorization
+    extends StObject
+       with Event
   @scala.inline
   def authorization: authorization = "authorization".asInstanceOf[authorization]
   
   @js.native
-  sealed trait background extends Event
+  sealed trait background
+    extends StObject
+       with Event
   @scala.inline
   def background: background = "background".asInstanceOf[background]
   
   @js.native
-  sealed trait error_ extends Event
+  sealed trait error_
+    extends StObject
+       with Event
   @scala.inline
   def error_ : error_ = "error".asInstanceOf[error_]
   
   @js.native
-  sealed trait foreground extends Event
+  sealed trait foreground
+    extends StObject
+       with Event
   @scala.inline
   def foreground: foreground = "foreground".asInstanceOf[foreground]
   
   @js.native
-  sealed trait fused extends NativeProvider
+  sealed trait fused
+    extends StObject
+       with NativeProvider
   @scala.inline
   def fused: fused = "fused".asInstanceOf[fused]
   
   @js.native
-  sealed trait gps extends NativeProvider
+  sealed trait gps
+    extends StObject
+       with NativeProvider
   @scala.inline
   def gps: gps = "gps".asInstanceOf[gps]
   
   @js.native
-  sealed trait http_authorization extends Event
+  sealed trait http_authorization
+    extends StObject
+       with Event
   @scala.inline
   def http_authorization: http_authorization = "http_authorization".asInstanceOf[http_authorization]
   
   @js.native
   sealed trait location
-    extends Event
+    extends StObject
+       with Event
        with HeadlessTaskEventName
   @scala.inline
   def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait network extends NativeProvider
+  sealed trait network
+    extends StObject
+       with NativeProvider
   @scala.inline
   def network: network = "network".asInstanceOf[network]
   
   @js.native
-  sealed trait passive extends NativeProvider
+  sealed trait passive
+    extends StObject
+       with NativeProvider
   @scala.inline
   def passive: passive = "passive".asInstanceOf[passive]
   
   @js.native
-  sealed trait start extends Event
+  sealed trait start
+    extends StObject
+       with Event
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait stationary
-    extends Event
+    extends StObject
+       with Event
        with HeadlessTaskEventName
   @scala.inline
   def stationary: stationary = "stationary".asInstanceOf[stationary]
   
   @js.native
-  sealed trait stop extends Event
+  sealed trait stop
+    extends StObject
+       with Event
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
 }

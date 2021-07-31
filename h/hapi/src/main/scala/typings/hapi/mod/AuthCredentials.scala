@@ -2,27 +2,25 @@ package typings.hapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthCredentials extends StObject {
   
   /**
     * If set, will only work with routes that set `access.entity` to `app`.
     */
-  var app: js.UndefOr[AppCredentials] = js.native
+  var app: js.UndefOr[AppCredentials] = js.undefined
   
   /**
     * The application scopes to be granted.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthaccessscope)
     */
-  var scope: js.UndefOr[js.Array[String]] = js.native
+  var scope: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If set, will only work with routes that set `access.entity` to `user`.
     */
-  var user: js.UndefOr[UserCredentials] = js.native
+  var user: js.UndefOr[UserCredentials] = js.undefined
 }
 object AuthCredentials {
   

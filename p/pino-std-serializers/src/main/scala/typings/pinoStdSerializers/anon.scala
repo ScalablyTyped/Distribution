@@ -4,15 +4,13 @@ import typings.pinoStdSerializers.mod.SerializedRequest
 import typings.pinoStdSerializers.mod.SerializedResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Req extends StObject {
     
-    var req: SerializedRequest = js.native
+    var req: SerializedRequest
   }
   object Req {
     
@@ -30,10 +28,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Res extends StObject {
     
-    var res: SerializedResponse = js.native
+    var res: SerializedResponse
   }
   object Res {
     

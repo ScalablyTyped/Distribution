@@ -10,9 +10,9 @@ jsSHA implements the complete Secure Hash Standard (SHA) family (SHA-1, SHA-224/
 | ------------------ | :-------------: |
 | Full name          | jssha |
 | Keywords           | SHA-1, SHA-224, SHA3-224, SHA-256, SHA3-256, SHA-384, SHA3-384, SHA-512, SHA3-512, SHAKE-128, SHAKE-256, SHAKE128, SHAKE256, cSHAKE128, cSHAKE256, KMAC128, KMAC256, SHA1, SHA224, SHA256, SHA384, SHA512, SHA-2, SHA2, SHA-3, SHA3, SHAKE, cSHAKE, cSHAKE-128, cSHAKE-256, HMAC, KMAC, KMAC-128, KMAC-256, hash, cryptography |
-| # releases         | 9 |
-| # dependents       | 274 |
-| # downloads        | 11427128 |
+| # releases         | 10 |
+| # dependents       | 287 |
+| # downloads        | 13924629 |
 | # stars            | 5 |
 
 ## Links

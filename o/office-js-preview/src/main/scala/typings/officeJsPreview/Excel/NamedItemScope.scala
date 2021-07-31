@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait NamedItemScope extends StObject
 object NamedItemScope extends StObject {
   
   @js.native
-  sealed trait workbook extends NamedItemScope
+  sealed trait workbook
+    extends StObject
+       with NamedItemScope
   
   @js.native
-  sealed trait worksheet extends NamedItemScope
+  sealed trait worksheet
+    extends StObject
+       with NamedItemScope
 }

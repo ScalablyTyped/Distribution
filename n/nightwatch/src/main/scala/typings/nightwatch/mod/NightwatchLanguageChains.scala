@@ -2,35 +2,33 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NightwatchLanguageChains extends StObject {
   
-  var and: Expect = js.native
+  var and: Expect
   
-  var at: Expect = js.native
+  var at: Expect
   
-  var be: Expect = js.native
+  var be: Expect
   
-  var been: Expect = js.native
+  var been: Expect
   
-  var has: Expect = js.native
+  var has: Expect
   
-  var have: Expect = js.native
+  var have: Expect
   
-  var is: Expect = js.native
+  var is: Expect
   
-  var of: Expect = js.native
+  var of: Expect
   
-  var that: Expect = js.native
+  var that: Expect
   
-  var to: Expect = js.native
+  var to: Expect
   
-  var which: Expect = js.native
+  var which: Expect
   
-  var `with`: Expect = js.native
+  var `with`: Expect
 }
 object NightwatchLanguageChains {
   

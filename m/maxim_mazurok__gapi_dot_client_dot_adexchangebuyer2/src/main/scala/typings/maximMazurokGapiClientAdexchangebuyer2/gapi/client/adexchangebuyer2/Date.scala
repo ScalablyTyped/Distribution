@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Date extends StObject {
   
   /** Day of a month. Must be from 1 to 31 and valid for the year and month, or 0 to specify a year by itself or a year and month where the day isn't significant. */
-  var day: js.UndefOr[Double] = js.native
+  var day: js.UndefOr[Double] = js.undefined
   
   /** Month of a year. Must be from 1 to 12, or 0 to specify a year without a month and day. */
-  var month: js.UndefOr[Double] = js.native
+  var month: js.UndefOr[Double] = js.undefined
   
   /** Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year. */
-  var year: js.UndefOr[Double] = js.native
+  var year: js.UndefOr[Double] = js.undefined
 }
 object Date {
   

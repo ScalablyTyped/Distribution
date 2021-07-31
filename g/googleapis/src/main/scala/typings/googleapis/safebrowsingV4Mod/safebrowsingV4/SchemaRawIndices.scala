@@ -2,19 +2,17 @@ package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of raw indices to remove from a local list.
   */
-@js.native
 trait SchemaRawIndices extends StObject {
   
   /**
     * The indices to remove from a lexicographically-sorted local list.
     */
-  var indices: js.UndefOr[js.Array[Double]] = js.native
+  var indices: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SchemaRawIndices {
   

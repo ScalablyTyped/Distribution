@@ -2,14 +2,12 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Image element shown in widget._
   * @see https://docs.scriptable.app/widgetimage
   */
-@js.native
 trait WidgetImage extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait WidgetImage extends StObject {
     * The image will fill the available space.
     * @see https://docs.scriptable.app/widgetimage/#-applyfillingcontentmode
     */
-  def applyFillingContentMode(): Unit = js.native
+  def applyFillingContentMode(): Unit
   
   /**
     * _Uses fitting content mode._
@@ -26,7 +24,7 @@ trait WidgetImage extends StObject {
     * The image will fit the available space. This content mode is the default.
     * @see https://docs.scriptable.app/widgetimage/#-applyfittingcontentmode
     */
-  def applyFittingContentMode(): Unit = js.native
+  def applyFittingContentMode(): Unit
   
   /**
     * _Border color._
@@ -34,7 +32,7 @@ trait WidgetImage extends StObject {
     * Color of the border around the image. Defaults to black.
     * @see https://docs.scriptable.app/widgetimage/#bordercolor
     */
-  var borderColor: Color = js.native
+  var borderColor: Color
   
   /**
     * _Border width._
@@ -42,7 +40,7 @@ trait WidgetImage extends StObject {
     * Width of the border around the image. Defaults to 0.
     * @see https://docs.scriptable.app/widgetimage/#borderwidth
     */
-  var borderWidth: Double = js.native
+  var borderWidth: Double
   
   /**
     * _Center aligns the image._
@@ -50,7 +48,7 @@ trait WidgetImage extends StObject {
     * Specifies that image should be center aligned.
     * @see https://docs.scriptable.app/widgetimage/#-centeralignimage
     */
-  def centerAlignImage(): Unit = js.native
+  def centerAlignImage(): Unit
   
   /**
     * _Shape the image relative to its container._
@@ -58,7 +56,7 @@ trait WidgetImage extends StObject {
     * When true the corners of the image will be rounded relative to the containing widget. The value of `cornerRadius` is ignored when this is true. Defaults to false.
     * @see https://docs.scriptable.app/widgetimage/#containerrelativeshape
     */
-  var containerRelativeShape: Boolean = js.native
+  var containerRelativeShape: Boolean
   
   /**
     * _Radius of the corners._
@@ -66,13 +64,13 @@ trait WidgetImage extends StObject {
     * Radius of the rounded corners. This property is ignored when `containerRelativeShape` is set to true. Defaults to 0.
     * @see https://docs.scriptable.app/widgetimage/#cornerradius
     */
-  var cornerRadius: Double = js.native
+  var cornerRadius: Double
   
   /**
     * _Image to show in widget._
     * @see https://docs.scriptable.app/widgetimage/#image
     */
-  var image: Image = js.native
+  var image: Image
   
   /**
     * _Opacity when shown in widget._
@@ -80,7 +78,7 @@ trait WidgetImage extends StObject {
     * Opacity of the image. This must be a value between 0 and 1. Defaults to 1.
     * @see https://docs.scriptable.app/widgetimage/#imageopacity
     */
-  var imageOpacity: Double = js.native
+  var imageOpacity: Double
   
   /**
     * _Size of the image in the widget._
@@ -88,7 +86,7 @@ trait WidgetImage extends StObject {
     * Size of the image. When set to null, the image will be shwon at its full size. Defaults to null.
     * @see https://docs.scriptable.app/widgetimage/#imagesize
     */
-  var imageSize: Size = js.native
+  var imageSize: Size
   
   /**
     * _Left aligns the image._
@@ -96,7 +94,7 @@ trait WidgetImage extends StObject {
     * Specifies that image should be left aligned. This is the default.
     * @see https://docs.scriptable.app/widgetimage/#-leftalignimage
     */
-  def leftAlignImage(): Unit = js.native
+  def leftAlignImage(): Unit
   
   /**
     * _Whether the image is resizable._
@@ -104,7 +102,7 @@ trait WidgetImage extends StObject {
     * When set to true, the image can be resized. Defaults to true.
     * @see https://docs.scriptable.app/widgetimage/#resizable
     */
-  var resizable: Boolean = js.native
+  var resizable: Boolean
   
   /**
     * _Right aligns the image._
@@ -112,7 +110,7 @@ trait WidgetImage extends StObject {
     * Specifies that image should be right aligned.
     * @see https://docs.scriptable.app/widgetimage/#-rightalignimage
     */
-  def rightAlignImage(): Unit = js.native
+  def rightAlignImage(): Unit
   
   /**
     * _Tint color of the image._
@@ -120,7 +118,7 @@ trait WidgetImage extends StObject {
     * Changes the color of the image. Set to `null` to show the original image. Defaults to `null`.
     * @see https://docs.scriptable.app/widgetimage/#tintcolor
     */
-  var tintColor: Color = js.native
+  var tintColor: Color
   
   /**
     * _URL to open._
@@ -129,7 +127,7 @@ trait WidgetImage extends StObject {
     * on the widget.
     * @see https://docs.scriptable.app/widgetimage/#url
     */
-  var url: String = js.native
+  var url: String
 }
 object WidgetImage {
   

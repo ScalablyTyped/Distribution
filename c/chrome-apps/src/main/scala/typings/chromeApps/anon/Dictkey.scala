@@ -4,16 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.chromeApps.chrome.webViewRequest.DeclarativeWebRequestConditionsList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictkey
-  extends /** Arguments, see original condition docs in chrome.webViewRequest */
-/* key */ StringDictionary[js.Any | js.Array[_]] {
+  extends StObject
+     with /** Arguments, see original condition docs in chrome.webViewRequest */
+/* key */ StringDictionary[js.Any | js.Array[js.Any]] {
   
   /** Condition */
-  var `type`: DeclarativeWebRequestConditionsList = js.native
+  var `type`: DeclarativeWebRequestConditionsList
 }
 object Dictkey {
   

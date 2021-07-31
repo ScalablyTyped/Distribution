@@ -5,16 +5,15 @@ import typings.reactNativeCommunityCliTypes.androidMod.AndroidProjectParams
 import typings.reactNativeCommunityCliTypes.iosMod.IOSProjectParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Android
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var android: js.UndefOr[AndroidProjectParams] = js.native
+  var android: js.UndefOr[AndroidProjectParams] = js.undefined
   
-  var ios: js.UndefOr[IOSProjectParams] = js.native
+  var ios: js.UndefOr[IOSProjectParams] = js.undefined
 }
 object Android {
   

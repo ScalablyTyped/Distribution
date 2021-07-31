@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishRequest extends StObject {
   
   /** Required. The messages to publish. */
-  var messages: js.UndefOr[js.Array[PubsubMessage]] = js.native
+  var messages: js.UndefOr[js.Array[PubsubMessage]] = js.undefined
 }
 object PublishRequest {
   

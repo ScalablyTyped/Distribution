@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartBulkDeploymentResponse extends StObject {
   
   /**
     * The ARN of the bulk deployment.
     */
-  var BulkDeploymentArn: js.UndefOr[string] = js.native
+  var BulkDeploymentArn: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the bulk deployment.
     */
-  var BulkDeploymentId: js.UndefOr[string] = js.native
+  var BulkDeploymentId: js.UndefOr[string] = js.undefined
 }
 object StartBulkDeploymentResponse {
   

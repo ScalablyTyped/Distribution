@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides properties for image information that is displayed by SystemMediaTransportControlsDisplayUpdater class. */
-@js.native
 trait ImageDisplayProperties extends StObject {
   
   /** Gets or sets the subtitle of the image. */
-  var subtitle: String = js.native
+  var subtitle: String
   
   /** Gets or sets the title of the image. */
-  var title: String = js.native
+  var title: String
 }
 object ImageDisplayProperties {
   

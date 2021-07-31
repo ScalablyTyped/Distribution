@@ -4,24 +4,24 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sparqljs.sparqljsStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Update extends SparqlQuery {
+trait Update
+  extends StObject
+     with SparqlQuery {
   
-  var prefixes: StringDictionary[String] = js.native
+  var prefixes: StringDictionary[String]
   
-  var `type`: update = js.native
+  var `type`: update
   
-  var updates: js.Array[UpdateOperation] = js.native
+  var updates: js.Array[UpdateOperation]
 }
 object Update {
   
   @scala.inline
-  def apply(prefixes: StringDictionary[String], `type`: update, updates: js.Array[UpdateOperation]): Update = {
+  def apply(prefixes: StringDictionary[String], updates: js.Array[UpdateOperation]): Update = {
     val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], updates = updates.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("update")
     __obj.asInstanceOf[Update]
   }
   

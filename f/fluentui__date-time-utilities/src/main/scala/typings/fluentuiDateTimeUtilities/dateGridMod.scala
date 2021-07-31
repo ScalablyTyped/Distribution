@@ -9,52 +9,43 @@ import typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateGridMod {
   
-  @JSImport("@fluentui/date-time-utilities/lib/dateGrid", "findAvailableDate")
+  @JSImport("@fluentui/date-time-utilities/lib/dateGrid", JSImport.Namespace)
   @js.native
-  def findAvailableDate(options: IAvailableDateOptions): js.UndefOr[Date] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@fluentui/date-time-utilities/lib/dateGrid", "getBoundedDateRange")
-  @js.native
-  def getBoundedDateRange(dateRange: js.Array[Date]): js.Array[Date] = js.native
-  @JSImport("@fluentui/date-time-utilities/lib/dateGrid", "getBoundedDateRange")
-  @js.native
-  def getBoundedDateRange(dateRange: js.Array[Date], minDate: js.UndefOr[scala.Nothing], maxDate: Date): js.Array[Date] = js.native
-  @JSImport("@fluentui/date-time-utilities/lib/dateGrid", "getBoundedDateRange")
-  @js.native
-  def getBoundedDateRange(dateRange: js.Array[Date], minDate: Date): js.Array[Date] = js.native
-  @JSImport("@fluentui/date-time-utilities/lib/dateGrid", "getBoundedDateRange")
-  @js.native
-  def getBoundedDateRange(dateRange: js.Array[Date], minDate: Date, maxDate: Date): js.Array[Date] = js.native
+  @scala.inline
+  def findAvailableDate(options: IAvailableDateOptions): js.UndefOr[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAvailableDate")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Date]]
   
-  @JSImport("@fluentui/date-time-utilities/lib/dateGrid", "getDateRangeTypeToUse")
-  @js.native
-  def getDateRangeTypeToUse(dateRangeType: DateRangeType, workWeekDays: js.UndefOr[scala.Nothing], firstDayOfWeek: DayOfWeek): DateRangeType = js.native
-  @JSImport("@fluentui/date-time-utilities/lib/dateGrid", "getDateRangeTypeToUse")
-  @js.native
-  def getDateRangeTypeToUse(dateRangeType: DateRangeType, workWeekDays: js.Array[DayOfWeek], firstDayOfWeek: DayOfWeek): DateRangeType = js.native
+  @scala.inline
+  def getBoundedDateRange(dateRange: js.Array[Date]): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoundedDateRange")(dateRange.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def getBoundedDateRange(dateRange: js.Array[Date], minDate: Unit, maxDate: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundedDateRange")(dateRange.asInstanceOf[js.Any], minDate.asInstanceOf[js.Any], maxDate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def getBoundedDateRange(dateRange: js.Array[Date], minDate: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundedDateRange")(dateRange.asInstanceOf[js.Any], minDate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def getBoundedDateRange(dateRange: js.Array[Date], minDate: Date, maxDate: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundedDateRange")(dateRange.asInstanceOf[js.Any], minDate.asInstanceOf[js.Any], maxDate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
-  @JSImport("@fluentui/date-time-utilities/lib/dateGrid", "getDayGrid")
-  @js.native
-  def getDayGrid(options: IDayGridOptions): js.Array[js.Array[IDay]] = js.native
+  @scala.inline
+  def getDateRangeTypeToUse(dateRangeType: DateRangeType, workWeekDays: js.Array[DayOfWeek], firstDayOfWeek: DayOfWeek): DateRangeType = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeTypeToUse")(dateRangeType.asInstanceOf[js.Any], workWeekDays.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[DateRangeType]
+  @scala.inline
+  def getDateRangeTypeToUse(dateRangeType: DateRangeType, workWeekDays: Unit, firstDayOfWeek: DayOfWeek): DateRangeType = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeTypeToUse")(dateRangeType.asInstanceOf[js.Any], workWeekDays.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[DateRangeType]
   
-  @JSImport("@fluentui/date-time-utilities/lib/dateGrid", "isAfterMaxDate")
-  @js.native
-  def isAfterMaxDate(date: Date, options: IRestrictedDatesOptions): Boolean = js.native
+  @scala.inline
+  def getDayGrid(options: IDayGridOptions): js.Array[js.Array[IDay]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDayGrid")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[IDay]]]
   
-  @JSImport("@fluentui/date-time-utilities/lib/dateGrid", "isBeforeMinDate")
-  @js.native
-  def isBeforeMinDate(date: Date, options: IRestrictedDatesOptions): Boolean = js.native
+  @scala.inline
+  def isAfterMaxDate(date: Date, options: IRestrictedDatesOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAfterMaxDate")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@fluentui/date-time-utilities/lib/dateGrid", "isContiguous")
-  @js.native
-  def isContiguous(days: js.Array[DayOfWeek], isSingleWeek: Boolean, firstDayOfWeek: DayOfWeek): Boolean = js.native
+  @scala.inline
+  def isBeforeMinDate(date: Date, options: IRestrictedDatesOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBeforeMinDate")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@fluentui/date-time-utilities/lib/dateGrid", "isRestrictedDate")
-  @js.native
-  def isRestrictedDate(date: Date, options: IRestrictedDatesOptions): Boolean = js.native
+  @scala.inline
+  def isContiguous(days: js.Array[DayOfWeek], isSingleWeek: Boolean, firstDayOfWeek: DayOfWeek): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContiguous")(days.asInstanceOf[js.Any], isSingleWeek.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isRestrictedDate(date: Date, options: IRestrictedDatesOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRestrictedDate")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

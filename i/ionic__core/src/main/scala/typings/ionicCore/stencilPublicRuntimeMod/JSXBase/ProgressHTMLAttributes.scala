@@ -2,15 +2,15 @@ package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProgressHTMLAttributes[T] extends HTMLAttributes[T] {
+trait ProgressHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var max: js.UndefOr[Double | String] = js.native
+  var max: js.UndefOr[Double | String] = js.undefined
   
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
 }
 object ProgressHTMLAttributes {
   
@@ -21,7 +21,7 @@ object ProgressHTMLAttributes {
   }
   
   @scala.inline
-  implicit class ProgressHTMLAttributesMutableBuilder[Self <: ProgressHTMLAttributes[_], T] (val x: Self with ProgressHTMLAttributes[T]) extends AnyVal {
+  implicit class ProgressHTMLAttributesMutableBuilder[Self <: ProgressHTMLAttributes[?], T] (val x: Self & ProgressHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])

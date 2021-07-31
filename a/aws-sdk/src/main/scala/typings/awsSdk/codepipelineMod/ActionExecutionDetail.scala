@@ -2,61 +2,59 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionExecutionDetail extends StObject {
   
   /**
     * The action execution ID.
     */
-  var actionExecutionId: js.UndefOr[ActionExecutionId] = js.native
+  var actionExecutionId: js.UndefOr[ActionExecutionId] = js.undefined
   
   /**
     * The name of the action.
     */
-  var actionName: js.UndefOr[ActionName] = js.native
+  var actionName: js.UndefOr[ActionName] = js.undefined
   
   /**
     * Input details for the action execution, such as role ARN, Region, and input artifacts.
     */
-  var input: js.UndefOr[ActionExecutionInput] = js.native
+  var input: js.UndefOr[ActionExecutionInput] = js.undefined
   
   /**
     * The last update time of the action execution.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.native
+  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Output details for the action execution, such as the action execution result.
     */
-  var output: js.UndefOr[ActionExecutionOutput] = js.native
+  var output: js.UndefOr[ActionExecutionOutput] = js.undefined
   
   /**
     * The pipeline execution ID for the action execution.
     */
-  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.native
+  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.undefined
   
   /**
     * The version of the pipeline where the action was run.
     */
-  var pipelineVersion: js.UndefOr[PipelineVersion] = js.native
+  var pipelineVersion: js.UndefOr[PipelineVersion] = js.undefined
   
   /**
     * The name of the stage that contains the action.
     */
-  var stageName: js.UndefOr[StageName] = js.native
+  var stageName: js.UndefOr[StageName] = js.undefined
   
   /**
     * The start time of the action execution.
     */
-  var startTime: js.UndefOr[Timestamp] = js.native
+  var startTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  The status of the action execution. Status categories are InProgress, Succeeded, and Failed.
     */
-  var status: js.UndefOr[ActionExecutionStatus] = js.native
+  var status: js.UndefOr[ActionExecutionStatus] = js.undefined
 }
 object ActionExecutionDetail {
   

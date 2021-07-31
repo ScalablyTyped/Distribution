@@ -5,29 +5,30 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/checkbox/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/checkbox/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): CheckboxStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): CheckboxStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[CheckboxStyle]
+  
   trait CheckboxStyle extends StObject {
     
-    var agreeItem: ViewStyle = js.native
+    var agreeItem: ViewStyle
     
-    var agreeItemCheckbox: TextStyle = js.native
+    var agreeItemCheckbox: TextStyle
     
-    var checkboxItemCheckbox: TextStyle = js.native
+    var checkboxItemCheckbox: TextStyle
     
-    var icon: TextStyle = js.native
+    var icon: TextStyle
     
-    var iconRight: TextStyle = js.native
+    var iconRight: TextStyle
     
-    var wrapper: ViewStyle = js.native
+    var wrapper: ViewStyle
   }
   object CheckboxStyle {
     

@@ -12,45 +12,44 @@ import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a component, which controls DatabaseAccessConnections and acts like a shared {@link DataSource} .
   * @deprecated Deprecated
   */
-@js.native
 trait DatabaseAccess
-  extends XDatabaseAccess
+  extends StObject
      with XPropertySet
+     with XDatabaseAccess
      with XCompletedConnection {
   
   /** is a list of arbitrary string tag/value pairs as connection arguments; normally at least a "user" and "password" property should be included. */
-  var ConnectInfo: SafeArray[PropertyValue] = js.native
+  var ConnectInfo: SafeArray[PropertyValue]
   
   /** indicates a database url of the form ; ` jdbc:subprotocol:subname` or ` sdbc:subprotocol:subname` */
-  var ConnectURL: String = js.native
+  var ConnectURL: String
   
   /** indicates that a password is always necessary. */
-  var IsPasswordRequired: Boolean = js.native
+  var IsPasswordRequired: Boolean
   
   /** determines whether modifications on the data access bean are allowed or not. */
-  var IsReadOnly: Boolean = js.native
+  var IsReadOnly: Boolean
   
   /** provides an object for formatting numbers. */
-  var NumberFormatsSupplier: XNumberFormatsSupplier = js.native
+  var NumberFormatsSupplier: XNumberFormatsSupplier
   
   /** defines a list of tables, on which the bean should have it's focus. If empty, all tables are rejected. */
-  var TableFilter: SafeArray[String] = js.native
+  var TableFilter: SafeArray[String]
   
   /** defines a list of table types, on which the bean should have it's focus. If empty, all tables types are rejected. */
-  var TableTypeFilter: SafeArray[String] = js.native
+  var TableTypeFilter: SafeArray[String]
   
   /** is the title of the bean. */
-  var Title: String = js.native
+  var Title: String
   
   /** is the URL of the bean. */
-  var URL: String = js.native
+  var URL: String
 }
 object DatabaseAccess {
   

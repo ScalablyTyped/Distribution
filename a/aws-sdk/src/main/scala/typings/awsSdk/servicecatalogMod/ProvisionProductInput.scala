@@ -2,76 +2,74 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisionProductInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * Passed to CloudFormation. The SNS topic ARNs to which to publish stack-related events.
     */
-  var NotificationArns: js.UndefOr[typings.awsSdk.servicecatalogMod.NotificationArns] = js.native
+  var NotificationArns: js.UndefOr[typings.awsSdk.servicecatalogMod.NotificationArns] = js.undefined
   
   /**
     * The path identifier of the product. This value is optional if the product has a default path, and required if the product has more than one path. To list the paths for a product, use ListLaunchPaths. You must provide the name or ID, but not both.
     */
-  var PathId: js.UndefOr[Id] = js.native
+  var PathId: js.UndefOr[Id] = js.undefined
   
   /**
     * The name of the path. You must provide the name or ID, but not both.
     */
-  var PathName: js.UndefOr[PortfolioDisplayName] = js.native
+  var PathName: js.UndefOr[PortfolioDisplayName] = js.undefined
   
   /**
     * The product identifier. You must provide the name or ID, but not both.
     */
-  var ProductId: js.UndefOr[Id] = js.native
+  var ProductId: js.UndefOr[Id] = js.undefined
   
   /**
     * The name of the product. You must provide the name or ID, but not both.
     */
-  var ProductName: js.UndefOr[ProductViewName] = js.native
+  var ProductName: js.UndefOr[ProductViewName] = js.undefined
   
   /**
     * An idempotency token that uniquely identifies the provisioning request.
     */
-  var ProvisionToken: IdempotencyToken = js.native
+  var ProvisionToken: IdempotencyToken
   
   /**
     * A user-friendly name for the provisioned product. This value must be unique for the AWS account and cannot be updated after the product is provisioned.
     */
-  var ProvisionedProductName: typings.awsSdk.servicecatalogMod.ProvisionedProductName = js.native
+  var ProvisionedProductName: typings.awsSdk.servicecatalogMod.ProvisionedProductName
   
   /**
     * The identifier of the provisioning artifact. You must provide the name or ID, but not both.
     */
-  var ProvisioningArtifactId: js.UndefOr[Id] = js.native
+  var ProvisioningArtifactId: js.UndefOr[Id] = js.undefined
   
   /**
     * The name of the provisioning artifact. You must provide the name or ID, but not both.
     */
-  var ProvisioningArtifactName: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactName] = js.native
+  var ProvisioningArtifactName: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactName] = js.undefined
   
   /**
     * Parameters specified by the administrator that are required for provisioning the product.
     */
-  var ProvisioningParameters: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningParameters] = js.native
+  var ProvisioningParameters: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningParameters] = js.undefined
   
   /**
     * An object that contains information about the provisioning preferences for a stack set.
     */
-  var ProvisioningPreferences: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningPreferences] = js.native
+  var ProvisioningPreferences: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningPreferences] = js.undefined
   
   /**
     * One or more tags.
     */
-  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.undefined
 }
 object ProvisionProductInput {
   

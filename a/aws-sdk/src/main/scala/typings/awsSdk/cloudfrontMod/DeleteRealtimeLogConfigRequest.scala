@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRealtimeLogConfigRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the real-time log configuration to delete.
     */
-  var ARN: js.UndefOr[String] = js.native
+  var ARN: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the real-time log configuration to delete.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
 }
 object DeleteRealtimeLogConfigRequest {
   

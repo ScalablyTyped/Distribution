@@ -2,31 +2,29 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InToto extends StObject {
   
   /** This field contains the expected command used to perform the step. */
-  var expectedCommand: js.UndefOr[js.Array[String]] = js.native
+  var expectedCommand: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The following fields contain in-toto artifact rules identifying the artifacts that enter this supply chain step, and exit the supply chain step, i.e. materials and products of the
     * step.
     */
-  var expectedMaterials: js.UndefOr[js.Array[ArtifactRule]] = js.native
+  var expectedMaterials: js.UndefOr[js.Array[ArtifactRule]] = js.undefined
   
-  var expectedProducts: js.UndefOr[js.Array[ArtifactRule]] = js.native
+  var expectedProducts: js.UndefOr[js.Array[ArtifactRule]] = js.undefined
   
   /** This field contains the public keys that can be used to verify the signatures on the step metadata. */
-  var signingKeys: js.UndefOr[js.Array[SigningKey]] = js.native
+  var signingKeys: js.UndefOr[js.Array[SigningKey]] = js.undefined
   
   /** This field identifies the name of the step in the supply chain. */
-  var stepName: js.UndefOr[String] = js.native
+  var stepName: js.UndefOr[String] = js.undefined
   
   /** This field contains a value that indicates the minimum number of keys that need to be used to sign the step's in-toto link. */
-  var threshold: js.UndefOr[String] = js.native
+  var threshold: js.UndefOr[String] = js.undefined
 }
 object InToto {
   

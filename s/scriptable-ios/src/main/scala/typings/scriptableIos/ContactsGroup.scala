@@ -2,7 +2,6 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `Contact.persistChanges()` to persist the changes.
   * @see https://docs.scriptable.app/contactsgroup/#-new-contactsgroup
   */
-@js.native
 trait ContactsGroup extends StObject {
   
   /**
@@ -23,19 +21,19 @@ trait ContactsGroup extends StObject {
     * @param contact - Contact to add to the group.
     * @see https://docs.scriptable.app/contactsgroup/#-addmember
     */
-  def addMember(contact: Contact): Unit = js.native
+  def addMember(contact: Contact): Unit
   
   /**
     * _Identifier of the contacts group._
     * @see https://docs.scriptable.app/contactsgroup/#identifier
     */
-  var identifier: String = js.native
+  var identifier: String
   
   /**
     * _Name of the contacts group._
     * @see https://docs.scriptable.app/contactsgroup/#name
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * _Removes a contact from the group._
@@ -45,7 +43,7 @@ trait ContactsGroup extends StObject {
     * @param contact - Contact to add to the group.
     * @see https://docs.scriptable.app/contactsgroup/#-removemember
     */
-  def removeMember(contact: Contact): Unit = js.native
+  def removeMember(contact: Contact): Unit
 }
 object ContactsGroup {
   

@@ -9,25 +9,23 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.VarianceKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdKey extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var id: IdentifierKind = js.native
+  var id: IdentifierKind
   
-  var key: FlowTypeKind = js.native
+  var key: FlowTypeKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var static: js.UndefOr[Boolean] = js.native
+  var static: js.UndefOr[Boolean] = js.undefined
   
-  var value: FlowTypeKind = js.native
+  var value: FlowTypeKind
   
-  var variance: js.UndefOr[VarianceKind | plus | minus | Null] = js.native
+  var variance: js.UndefOr[VarianceKind | plus | minus | Null] = js.undefined
 }
 object IdKey {
   

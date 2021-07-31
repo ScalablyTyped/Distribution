@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRemoteAccessSessionConfiguration extends StObject {
   
   /**
     * The billing method for the remote access session.
     */
-  var billingMethod: js.UndefOr[BillingMethod] = js.native
+  var billingMethod: js.UndefOr[BillingMethod] = js.undefined
   
   /**
     * An array of ARNs included in the VPC endpoint configuration.
     */
-  var vpceConfigurationArns: js.UndefOr[AmazonResourceNames] = js.native
+  var vpceConfigurationArns: js.UndefOr[AmazonResourceNames] = js.undefined
 }
 object CreateRemoteAccessSessionConfiguration {
   

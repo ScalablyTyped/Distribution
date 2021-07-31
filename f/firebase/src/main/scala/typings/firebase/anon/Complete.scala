@@ -3,17 +3,15 @@ package typings.firebase.anon
 import typings.firebase.mod.firebase.firestore.FirestoreError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Complete extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.undefined
   
-  var next: js.UndefOr[js.Function1[/* value */ Unit, Unit]] = js.native
+  var next: js.UndefOr[js.Function1[/* value */ Unit, Unit]] = js.undefined
 }
 object Complete {
   

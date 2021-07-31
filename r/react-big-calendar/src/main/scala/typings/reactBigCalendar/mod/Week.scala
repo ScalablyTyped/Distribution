@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-big-calendar", "Week")
@@ -21,15 +20,16 @@ class Week protected ()
 /* static members */
 object Week {
   
-  @JSImport("react-big-calendar", "Week.navigate")
+  @JSImport("react-big-calendar", "Week")
   @js.native
-  def navigate(date: Date, action: NavigateAction): Date = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-big-calendar", "Week.range")
-  @js.native
-  def range(date: Date): js.Array[Date] = js.native
+  @scala.inline
+  def navigate(date: Date, action: NavigateAction): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(date.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("react-big-calendar", "Week.title")
-  @js.native
-  def title(date: Date): String = js.native
+  @scala.inline
+  def range(date: Date): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  
+  @scala.inline
+  def title(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("title")(date.asInstanceOf[js.Any]).asInstanceOf[String]
 }

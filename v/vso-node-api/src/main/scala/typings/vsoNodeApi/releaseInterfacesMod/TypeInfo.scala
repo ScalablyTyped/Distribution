@@ -39,7 +39,6 @@ import typings.vsoNodeApi.anon.EnumValuesSystem
 import typings.vsoNodeApi.anon.EnumValuesUndelete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TypeInfo {

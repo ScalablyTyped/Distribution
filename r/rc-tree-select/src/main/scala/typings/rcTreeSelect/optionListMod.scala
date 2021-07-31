@@ -14,14 +14,13 @@ import typings.std.HTMLDivElement
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionListMod extends Shortcut {
   
   @JSImport("rc-tree-select/es/OptionList", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[OptionListProps[js.Array[DataNode]] with RefAttributes[RefOptionListProps]] = js.native
+  val default: ForwardRefExoticComponent[OptionListProps[js.Array[DataNode]] & RefAttributes[RefOptionListProps]] = js.native
   
   @js.native
   trait OptionListProps[OptionsType /* <: js.Array[js.Object] */] extends StObject {
@@ -69,8 +68,8 @@ object optionListMod extends Shortcut {
     var virtual: js.UndefOr[Boolean] = js.native
   }
   
-  type _To = ForwardRefExoticComponent[OptionListProps[js.Array[DataNode]] with RefAttributes[RefOptionListProps]]
+  type _To = ForwardRefExoticComponent[OptionListProps[js.Array[DataNode]] & RefAttributes[RefOptionListProps]]
   
   /* This means you don't have to write `default`, but can instead just say `optionListMod.foo` */
-  override def _to: ForwardRefExoticComponent[OptionListProps[js.Array[DataNode]] with RefAttributes[RefOptionListProps]] = default
+  override def _to: ForwardRefExoticComponent[OptionListProps[js.Array[DataNode]] & RefAttributes[RefOptionListProps]] = default
 }

@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.hideGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
-  var name: hideGenerator = js.native
+  var name: hideGenerator
 }
 object `2` {
   
   @scala.inline
-  def apply(name: hideGenerator): `2` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `2` = {
+    val __obj = js.Dynamic.literal(name = "hideGenerator")
     __obj.asInstanceOf[`2`]
   }
   

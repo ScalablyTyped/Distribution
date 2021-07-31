@@ -4,17 +4,15 @@ import typings.reactSketchapp.reactSketchappStrings.evenodd
 import typings.reactSketchapp.reactSketchappStrings.nonzero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FillProps extends StObject {
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var fillOpacity: js.UndefOr[NumberProp] = js.native
+  var fillOpacity: js.UndefOr[NumberProp] = js.undefined
   
-  var fillRule: js.UndefOr[evenodd | nonzero] = js.native
+  var fillRule: js.UndefOr[evenodd | nonzero] = js.undefined
 }
 object FillProps {
   

@@ -12,7 +12,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationMod {
@@ -52,16 +51,16 @@ object paginationMod {
     def onChange(p: Double): Unit = js.native
   }
   
-  @js.native
   trait PaginationNativeProps
-    extends PaginationPropsType
+    extends StObject
+       with PaginationPropsType
        with WithThemeStyles[PaginationStyle] {
     
-    var indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var locale: js.UndefOr[NextText] = js.native
+    var locale: js.UndefOr[NextText] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object PaginationNativeProps {
     

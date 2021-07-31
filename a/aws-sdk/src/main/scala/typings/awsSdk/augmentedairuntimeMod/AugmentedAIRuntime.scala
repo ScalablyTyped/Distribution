@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AugmentedAIRuntime extends Service {
   
   @JSName("config")
-  var config_AugmentedAIRuntime: ConfigBase with ClientConfiguration = js.native
+  var config_AugmentedAIRuntime: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Deletes the specified human loop for a flow definition.

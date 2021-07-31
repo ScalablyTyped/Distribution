@@ -3,23 +3,23 @@ package typings.mfiles
 import typings.mfiles.MFiles.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IShellUIEvents extends IEvents {
+trait IShellUIEvents
+  extends StObject
+     with IEvents {
   
-  var OnNewCommonDialogShellFrame: js.UndefOr[js.Function1[/* shellFrame */ IShellFrame, Unit | IShellFrameEvents]] = js.native
+  var OnNewCommonDialogShellFrame: js.UndefOr[js.Function1[/* shellFrame */ IShellFrame, Unit | IShellFrameEvents]] = js.undefined
   
-  var OnNewEmbeddedShellFrame: js.UndefOr[js.Function1[/* shellFrame */ IShellFrame, Unit | IShellFrameEvents]] = js.native
+  var OnNewEmbeddedShellFrame: js.UndefOr[js.Function1[/* shellFrame */ IShellFrame, Unit | IShellFrameEvents]] = js.undefined
   
-  var OnNewNormalShellFrame: js.UndefOr[js.Function1[/* shellFrame */ IShellFrame, Unit | IShellFrameEvents]] = js.native
+  var OnNewNormalShellFrame: js.UndefOr[js.Function1[/* shellFrame */ IShellFrame, Unit | IShellFrameEvents]] = js.undefined
   
-  var OnNewShellFrame: js.UndefOr[js.Function1[/* shellFrame */ IShellFrame, Unit | IShellFrameEvents]] = js.native
+  var OnNewShellFrame: js.UndefOr[js.Function1[/* shellFrame */ IShellFrame, Unit | IShellFrameEvents]] = js.undefined
   
-  var OnStarted: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnStarted: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnStop: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnStop: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IShellUIEvents {
   

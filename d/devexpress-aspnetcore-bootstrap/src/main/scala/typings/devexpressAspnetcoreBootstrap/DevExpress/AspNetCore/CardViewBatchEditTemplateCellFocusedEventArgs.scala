@@ -2,15 +2,15 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CardViewBatchEditTemplateCellFocusedEventArgs extends EventArgs {
+trait CardViewBatchEditTemplateCellFocusedEventArgs
+  extends StObject
+     with EventArgs {
   
-  val column: BootstrapCardViewColumn = js.native
+  val column: BootstrapCardViewColumn
   
-  var handled: Boolean = js.native
+  var handled: Boolean
 }
 object CardViewBatchEditTemplateCellFocusedEventArgs {
   

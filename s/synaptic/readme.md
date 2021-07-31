@@ -12,7 +12,7 @@ architecture-free neural network library
 | Keywords           | neural network, machine learning, long short term memory, perceptron, architecture free |
 | # releases         | 0 |
 | # dependents       | 23 |
-| # downloads        | 27653 |
+| # downloads        | 24507 |
 | # stars            | 19 |
 
 ## Links

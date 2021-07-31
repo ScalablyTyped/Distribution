@@ -9,10 +9,13 @@ import typings.std.Iterable
 import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fetchMod {
+  
+  @JSImport("apollo-server-env/dist/fetch", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("apollo-server-env/dist/fetch", "Body")
   @js.native
@@ -22,7 +25,7 @@ object fetchMod {
     
     val bodyUsed: Boolean = js.native
     
-    def json(): js.Promise[_] = js.native
+    def json(): js.Promise[js.Any] = js.native
     
     def text(): js.Promise[String] = js.native
   }
@@ -30,24 +33,25 @@ object fetchMod {
   @JSImport("apollo-server-env/dist/fetch", "Headers")
   @js.native
   class Headers ()
-    extends Iterable[js.Tuple2[String, String]] {
+    extends StObject
+       with Iterable[js.Tuple2[String, String]] {
     def this(init: HeadersInit) = this()
     
     def append(name: String, value: String): Unit = js.native
     
     def delete(name: String): Unit = js.native
     
-    def entries(): Iterator[js.Tuple2[String, String], _, js.UndefOr[scala.Nothing]] = js.native
+    def entries(): Iterator[js.Tuple2[String, String], js.Any, Unit] = js.native
     
     def get(name: String): String | Null = js.native
     
     def has(name: String): Boolean = js.native
     
-    def keys(): Iterator[String, _, js.UndefOr[scala.Nothing]] = js.native
+    def keys(): Iterator[String, js.Any, Unit] = js.native
     
     def set(name: String, value: String): Unit = js.native
     
-    def values(): Iterator[js.Array[String], _, js.UndefOr[scala.Nothing]] = js.native
+    def values(): Iterator[js.Array[String], js.Any, Unit] = js.native
   }
   
   @JSImport("apollo-server-env/dist/fetch", "Request")
@@ -69,7 +73,8 @@ object fetchMod {
   @js.native
   class Response () extends Body {
     def this(body: BodyInit) = this()
-    def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
+    def this(body: Unit, init: ResponseInit) = this()
+    def this(body: BodyInit, init: ResponseInit) = this()
     
     val headers: Headers = js.native
     
@@ -86,27 +91,27 @@ object fetchMod {
   /* static members */
   object Response {
     
-    @JSImport("apollo-server-env/dist/fetch", "Response.error")
+    @JSImport("apollo-server-env/dist/fetch", "Response")
     @js.native
-    def error(): Response = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("apollo-server-env/dist/fetch", "Response.redirect")
-    @js.native
-    def redirect(url: String): Response = js.native
-    @JSImport("apollo-server-env/dist/fetch", "Response.redirect")
-    @js.native
-    def redirect(url: String, status: Double): Response = js.native
+    @scala.inline
+    def error(): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[Response]
+    
+    @scala.inline
+    def redirect(url: String): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[Response]
+    @scala.inline
+    def redirect(url: String, status: Double): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Response]
   }
   
-  @JSImport("apollo-server-env/dist/fetch", "fetch")
-  @js.native
-  def fetch(): js.Promise[Response] = js.native
-  @JSImport("apollo-server-env/dist/fetch", "fetch")
-  @js.native
-  def fetch(input: js.UndefOr[RequestInfo], init: RequestInit): js.Promise[Response] = js.native
-  @JSImport("apollo-server-env/dist/fetch", "fetch")
-  @js.native
-  def fetch(input: RequestInfo): js.Promise[Response] = js.native
+  @scala.inline
+  def fetch(): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")().asInstanceOf[js.Promise[Response]]
+  @scala.inline
+  def fetch(input: Unit, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+  @scala.inline
+  def fetch(input: RequestInfo): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
+  @scala.inline
+  def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
   
   type BodyInit = ArrayBuffer | ArrayBufferView | String
   
@@ -206,43 +211,42 @@ object fetchMod {
   
   type RequestInfo = Request | String
   
-  @js.native
   trait RequestInit extends StObject {
     
-    var agent: js.UndefOr[RequestAgent | `false`] = js.native
+    var agent: js.UndefOr[RequestAgent | `false`] = js.undefined
     
-    var body: js.UndefOr[BodyInit] = js.native
+    var body: js.UndefOr[BodyInit] = js.undefined
     
-    var cache: js.UndefOr[RequestCache] = js.native
+    var cache: js.UndefOr[RequestCache] = js.undefined
     
     // Cloudflare Workers accept a `cf` property to control Cloudflare features
     // See https://developers.cloudflare.com/workers/reference/cloudflare-features/
-    var cf: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var cf: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var credentials: js.UndefOr[RequestCredentials] = js.native
+    var credentials: js.UndefOr[RequestCredentials] = js.undefined
     
     // The following properties are node-fetch extensions
-    var follow: js.UndefOr[Double] = js.native
+    var follow: js.UndefOr[Double] = js.undefined
     
-    var headers: js.UndefOr[HeadersInit] = js.native
+    var headers: js.UndefOr[HeadersInit] = js.undefined
     
-    var integrity: js.UndefOr[String] = js.native
+    var integrity: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[RequestMode] = js.native
+    var mode: js.UndefOr[RequestMode] = js.undefined
     
-    var redirect: js.UndefOr[RequestRedirect] = js.native
+    var redirect: js.UndefOr[RequestRedirect] = js.undefined
     
-    var referrer: js.UndefOr[String] = js.native
+    var referrer: js.UndefOr[String] = js.undefined
     
-    var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.native
+    var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object RequestInit {
     
@@ -396,17 +400,16 @@ object fetchMod {
     def manual: typings.apolloServerEnv.apolloServerEnvStrings.manual = "manual".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.manual]
   }
   
-  @js.native
   trait ResponseInit extends StObject {
     
-    var headers: js.UndefOr[HeadersInit] = js.native
+    var headers: js.UndefOr[HeadersInit] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
-    var statusText: js.UndefOr[String] = js.native
+    var statusText: js.UndefOr[String] = js.undefined
     
     // Although this isn't part of the spec, `node-fetch` accepts a `url` property
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ResponseInit {
     

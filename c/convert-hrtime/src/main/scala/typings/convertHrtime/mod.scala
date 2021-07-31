@@ -2,7 +2,6 @@ package typings.convertHrtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,18 +15,20 @@ object mod {
   //=> {seconds: 0.000002399, milliseconds: 0.002399, nanoseconds: 2399}
   ```
   */
+  @scala.inline
+  def apply(hrtime: js.Tuple2[Double, Double]): HRTime = ^.asInstanceOf[js.Dynamic].apply(hrtime.asInstanceOf[js.Any]).asInstanceOf[HRTime]
+  
   @JSImport("convert-hrtime", JSImport.Namespace)
   @js.native
-  def apply(hrtime: js.Tuple2[Double, Double]): HRTime = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait HRTime extends StObject {
     
-    var milliseconds: Double = js.native
+    var milliseconds: Double
     
-    var nanoseconds: Double = js.native
+    var nanoseconds: Double
     
-    var seconds: Double = js.native
+    var seconds: Double
   }
   object HRTime {
     

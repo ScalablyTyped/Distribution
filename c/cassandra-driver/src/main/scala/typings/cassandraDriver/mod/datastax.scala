@@ -6,12 +6,15 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datastax {
   
   object graph {
+    
+    @JSImport("cassandra-driver", "datastax.graph")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("cassandra-driver", "datastax.graph.GraphResultSet")
     @js.native
@@ -20,25 +23,20 @@ object datastax {
       def this(rs: ResultSet) = this()
     }
     
-    @JSImport("cassandra-driver", "datastax.graph.asDouble")
-    @js.native
-    def asDouble(value: Double): js.Object = js.native
+    @scala.inline
+    def asDouble(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asDouble")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
-    @JSImport("cassandra-driver", "datastax.graph.asFloat")
-    @js.native
-    def asFloat(value: Double): js.Object = js.native
+    @scala.inline
+    def asFloat(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asFloat")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
-    @JSImport("cassandra-driver", "datastax.graph.asInt")
-    @js.native
-    def asInt(value: Double): js.Object = js.native
+    @scala.inline
+    def asInt(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asInt")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
-    @JSImport("cassandra-driver", "datastax.graph.asTimestamp")
-    @js.native
-    def asTimestamp(value: Date): js.Object = js.native
+    @scala.inline
+    def asTimestamp(value: Date): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asTimestamp")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
-    @JSImport("cassandra-driver", "datastax.graph.asUdt")
-    @js.native
-    def asUdt(value: js.Object): js.Object = js.native
+    @scala.inline
+    def asUdt(value: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asUdt")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     object direction {
       
@@ -89,15 +87,17 @@ object datastax {
     }
     object DateRange {
       
-      /* static member */
-      @JSImport("cassandra-driver", "datastax.search.DateRange.fromBuffer")
+      @JSImport("cassandra-driver", "datastax.search.DateRange")
       @js.native
-      def fromBuffer(value: Buffer): typings.cassandraDriver.searchMod.search.DateRange = js.native
+      val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("cassandra-driver", "datastax.search.DateRange.fromString")
-      @js.native
-      def fromString(value: String): typings.cassandraDriver.searchMod.search.DateRange = js.native
+      @scala.inline
+      def fromBuffer(value: Buffer): typings.cassandraDriver.searchMod.search.DateRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRange]
+      
+      /* static member */
+      @scala.inline
+      def fromString(value: String): typings.cassandraDriver.searchMod.search.DateRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRange]
     }
     
     @JSImport("cassandra-driver", "datastax.search.DateRangeBound")
@@ -106,20 +106,21 @@ object datastax {
       extends typings.cassandraDriver.datastaxMod.datastax.search.DateRangeBound
     object DateRangeBound {
       
-      /* static member */
-      @JSImport("cassandra-driver", "datastax.search.DateRangeBound.fromString")
+      @JSImport("cassandra-driver", "datastax.search.DateRangeBound")
       @js.native
-      def fromString(value: String): typings.cassandraDriver.searchMod.search.DateRangeBound = js.native
+      val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("cassandra-driver", "datastax.search.DateRangeBound.toLowerBound")
-      @js.native
-      def toLowerBound(bound: typings.cassandraDriver.searchMod.search.DateRangeBound): typings.cassandraDriver.searchMod.search.DateRangeBound = js.native
+      @scala.inline
+      def fromString(value: String): typings.cassandraDriver.searchMod.search.DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRangeBound]
       
       /* static member */
-      @JSImport("cassandra-driver", "datastax.search.DateRangeBound.toUpperBound")
-      @js.native
-      def toUpperBound(bound: typings.cassandraDriver.searchMod.search.DateRangeBound): typings.cassandraDriver.searchMod.search.DateRangeBound = js.native
+      @scala.inline
+      def toLowerBound(bound: typings.cassandraDriver.searchMod.search.DateRangeBound): typings.cassandraDriver.searchMod.search.DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("toLowerBound")(bound.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRangeBound]
+      
+      /* static member */
+      @scala.inline
+      def toUpperBound(bound: typings.cassandraDriver.searchMod.search.DateRangeBound): typings.cassandraDriver.searchMod.search.DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("toUpperBound")(bound.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRangeBound]
     }
     
     @JSImport("cassandra-driver", "datastax.search.dateRangePrecision")
@@ -127,23 +128,21 @@ object datastax {
     object dateRangePrecision extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[
-            typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision with Double
-          ] = js.native
+      def apply(value: Double): js.UndefOr[typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision & Double] = js.native
       
-      /* 1 */ val day: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.day with Double = js.native
+      /* 1 */ val day: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.day & Double = js.native
       
-      /* 2 */ val hour: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.hour with Double = js.native
+      /* 2 */ val hour: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.hour & Double = js.native
       
-      /* 5 */ val millisecond: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.millisecond with Double = js.native
+      /* 5 */ val millisecond: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.millisecond & Double = js.native
       
-      /* 3 */ val minute: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.minute with Double = js.native
+      /* 3 */ val minute: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.minute & Double = js.native
       
-      /* 0 */ val month: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.month with Double = js.native
+      /* 0 */ val month: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.month & Double = js.native
       
-      /* 4 */ val second: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.second with Double = js.native
+      /* 4 */ val second: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.second & Double = js.native
       
-      /* 0 */ val year: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.year with Double = js.native
+      /* 0 */ val year: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.year & Double = js.native
     }
   }
 }

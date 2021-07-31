@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArcGISCachedService extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait ArcGISCachedService extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#copyright)
     */
-  var copyright: String = js.native
+  var copyright: String
   
   /**
     * The spatial reference of the layer as defined by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#spatialReference)
     */
-  val spatialReference: SpatialReference = js.native
+  val spatialReference: SpatialReference
   
   /**
     * Contains information about the tiling scheme for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#tileInfo)
     */
-  var tileInfo: TileInfo = js.native
+  var tileInfo: TileInfo
 }
 object ArcGISCachedService {
   

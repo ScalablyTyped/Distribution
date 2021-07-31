@@ -3,23 +3,21 @@ package typings.ethereumProtocol.mod
 import typings.bignumberJs.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallTxDataBase extends StObject {
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var gas: js.UndefOr[Double | String | default] = js.native
+  var gas: js.UndefOr[Double | String | default] = js.undefined
   
-  var gasPrice: js.UndefOr[Double | String | default] = js.native
+  var gasPrice: js.UndefOr[Double | String | default] = js.undefined
   
-  var nonce: js.UndefOr[Double] = js.native
+  var nonce: js.UndefOr[Double] = js.undefined
   
-  var to: js.UndefOr[String] = js.native
+  var to: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Double | String | default] = js.native
+  var value: js.UndefOr[Double | String | default] = js.undefined
 }
 object CallTxDataBase {
   

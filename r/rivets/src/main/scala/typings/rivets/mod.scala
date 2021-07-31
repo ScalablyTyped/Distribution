@@ -7,7 +7,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -57,14 +56,13 @@ object mod {
       var templateDelimiters: js.Array[String] = js.native
     }
     
-    @js.native
     trait View extends StObject {
       
-      def bind(): Unit = js.native
+      def bind(): Unit
       
-      def build(): Unit = js.native
+      def build(): Unit
       
-      def unbind(): Unit = js.native
+      def unbind(): Unit
     }
     object View {
       

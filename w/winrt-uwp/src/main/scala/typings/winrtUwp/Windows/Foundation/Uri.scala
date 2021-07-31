@@ -2,77 +2,75 @@ package typings.winrtUwp.Windows.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines an object that represents a Uniform Resource Identifier (URI) value and parses it into components. The Uri object is used by many other Windows Runtime APIs that are not necessarily confined to web browser scenarios. */
-@js.native
 trait Uri extends StObject {
   
   /** Gets a fully canonical RFC-compliant representation of the current URI. */
-  var absoluteCanonicalUri: String = js.native
+  var absoluteCanonicalUri: String
   
   /** Gets the entire, non-canonical URI (It is non-canonical because it might actually be an IRI, per the Windows.Foundation.Uri encoding behavior; see Remarks.). */
-  var absoluteUri: String = js.native
+  var absoluteUri: String
   
   /**
     * Adds the specified Uniform Resource Identifier (URI) to the current Uri .
     * @param relativeUri A relative URI specified as a string. This relative path is evaluated using the host/authority of the Uri instance where this method is called.
     * @return The combined Uri value.
     */
-  def combineUri(relativeUri: String): Uri = js.native
+  def combineUri(relativeUri: String): Uri
   
   /** Gets the decoded unicode characters that make up the current URI. */
-  var displayIri: String = js.native
+  var displayIri: String
   
   /** Gets a representation of the Uniform Resource Identifier (URI) that can be used for display purposes. */
-  var displayUri: String = js.native
+  var displayUri: String
   
   /** Gets the domain name component, including top-level domain, from a Uniform Resource Identifier (URI). */
-  var domain: String = js.native
+  var domain: String
   
   /**
     * Determines whether the specified Uri object is equal to the current Uri object.
     * @param pUri The Uri object to be compared.
     * @return true if the two Uri values are the same; otherwise, false.
     */
-  def equals(pUri: Uri): Boolean = js.native
+  def equals(pUri: Uri): Boolean
   
   /** Gets the file name extension of the resource that is referenced in the Uri . */
-  var extension: String = js.native
+  var `extension`: String
   
   /** Gets the text following a fragment marker (#), including the fragment marker itself. */
-  var fragment: String = js.native
+  var fragment: String
   
   /** Gets the fully qualified domain name. */
-  var host: String = js.native
+  var host: String
   
   /** Gets the password component of the Uniform Resource Identifier (URI) as stored in this Uri instance. */
-  var password: String = js.native
+  var password: String
   
   /** Gets the path and resource name component of the Uniform Resource Identifier (URI) as stored in this Uri instance. */
-  var path: String = js.native
+  var path: String
   
   /** Gets the port number component of the Uniform Resource Identifier (URI) as stored in this Uri instance */
-  var port: Double = js.native
+  var port: Double
   
   /** Gets the query string component of the Uniform Resource Identifier (URI) as stored in this Uri instance. */
-  var query: String = js.native
+  var query: String
   
   /** Gets a parsed Uniform Resource Identifier (URI) query string. */
-  var queryParsed: WwwFormUrlDecoder = js.native
+  var queryParsed: WwwFormUrlDecoder
   
   /** Gets the entire original Uniform Resource Identifier (URI) string as used to construct this Uri object, before parsing, and without any encoding applied. */
-  var rawUri: String = js.native
+  var rawUri: String
   
   /** Gets the protocol scheme name component of the Uniform Resource Identifier (URI) as stored in this Uri instance */
-  var schemeName: String = js.native
+  var schemeName: String
   
   /** Gets a value that indicates whether parsing determined that the Uniform Resource Identifier (URI) is not well-formed. */
-  var suspicious: Boolean = js.native
+  var suspicious: Boolean
   
   /** Gets the user name component of the Uniform Resource Identifier (URI) as stored in this Uri instance. */
-  var userName: String = js.native
+  var userName: String
 }
 object Uri {
   
@@ -85,7 +83,7 @@ object Uri {
     displayUri: String,
     domain: String,
     equals_ : Uri => Boolean,
-    extension: String,
+    `extension`: String,
     fragment: String,
     host: String,
     password: String,
@@ -98,8 +96,9 @@ object Uri {
     suspicious: Boolean,
     userName: String
   ): Uri = {
-    val __obj = js.Dynamic.literal(absoluteCanonicalUri = absoluteCanonicalUri.asInstanceOf[js.Any], absoluteUri = absoluteUri.asInstanceOf[js.Any], combineUri = js.Any.fromFunction1(combineUri), displayIri = displayIri.asInstanceOf[js.Any], displayUri = displayUri.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], queryParsed = queryParsed.asInstanceOf[js.Any], rawUri = rawUri.asInstanceOf[js.Any], schemeName = schemeName.asInstanceOf[js.Any], suspicious = suspicious.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(absoluteCanonicalUri = absoluteCanonicalUri.asInstanceOf[js.Any], absoluteUri = absoluteUri.asInstanceOf[js.Any], combineUri = js.Any.fromFunction1(combineUri), displayIri = displayIri.asInstanceOf[js.Any], displayUri = displayUri.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], queryParsed = queryParsed.asInstanceOf[js.Any], rawUri = rawUri.asInstanceOf[js.Any], schemeName = schemeName.asInstanceOf[js.Any], suspicious = suspicious.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
     __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Uri]
   }
   

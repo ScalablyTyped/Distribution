@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCelebrityInfoResponse extends StObject {
   
   /**
     * The name of the celebrity.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * An array of URLs pointing to additional celebrity information. 
     */
-  var Urls: js.UndefOr[typings.awsSdk.rekognitionMod.Urls] = js.native
+  var Urls: js.UndefOr[typings.awsSdk.rekognitionMod.Urls] = js.undefined
 }
 object GetCelebrityInfoResponse {
   

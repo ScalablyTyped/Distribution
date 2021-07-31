@@ -3,7 +3,6 @@ package typings.emotionStyledBase
 import typings.emotionStyledBase.mod.ReactClassPropKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emotionStyledBaseStrings {
@@ -474,7 +473,9 @@ object emotionStyledBaseStrings {
   def kbd: kbd = "kbd".asInstanceOf[kbd]
   
   @js.native
-  sealed trait key extends ReactClassPropKeys
+  sealed trait key
+    extends StObject
+       with ReactClassPropKeys
   @scala.inline
   def key: key = "key".asInstanceOf[key]
   
@@ -669,7 +670,9 @@ object emotionStyledBaseStrings {
   def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
-  sealed trait ref extends ReactClassPropKeys
+  sealed trait ref
+    extends StObject
+       with ReactClassPropKeys
   @scala.inline
   def ref: ref = "ref".asInstanceOf[ref]
   

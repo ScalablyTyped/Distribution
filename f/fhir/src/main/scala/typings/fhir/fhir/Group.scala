@@ -2,85 +2,85 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Group of multiple entities
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Group extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Group
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'active'.
     */
-  var _active: js.UndefOr[Element] = js.native
+  var _active: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'actual'.
     */
-  var _actual: js.UndefOr[Element] = js.native
+  var _actual: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'quantity'.
     */
-  var _quantity: js.UndefOr[Element] = js.native
+  var _quantity: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Whether this group's record is in active use
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Descriptive or actual
     */
-  var actual: Boolean = js.native
+  var actual: Boolean
   
   /**
     * Trait of group members
     */
-  var characteristic: js.UndefOr[js.Array[GroupCharacteristic]] = js.native
+  var characteristic: js.UndefOr[js.Array[GroupCharacteristic]] = js.undefined
   
   /**
     * Kind of Group members
     */
-  var code: js.UndefOr[CodeableConcept] = js.native
+  var code: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Unique id
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Who or what is in group
     */
-  var member: js.UndefOr[js.Array[GroupMember]] = js.native
+  var member: js.UndefOr[js.Array[GroupMember]] = js.undefined
   
   /**
     * Label for Group
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Number of members
     */
-  var quantity: js.UndefOr[unsignedInt] = js.native
+  var quantity: js.UndefOr[unsignedInt] = js.undefined
   
   /**
     * person | animal | practitioner | device | medication | substance
     */
-  var `type`: code = js.native
+  var `type`: code
 }
 object Group {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChannelMembershipsForAppInstanceUserRequest extends StObject {
   
   /**
     * The ARN of the app instance users
     */
-  var AppInstanceUserArn: js.UndefOr[ChimeArn] = js.native
+  var AppInstanceUserArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The maximum number of users that you want returned. 
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.chimeMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.chimeMod.MaxResults] = js.undefined
   
   /**
     * The token returned from previous API requests until the number of channel memberships is reached.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.undefined
 }
 object ListChannelMembershipsForAppInstanceUserRequest {
   

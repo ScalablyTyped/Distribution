@@ -2,21 +2,19 @@ package typings.stremioAddonSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoHash extends StObject {
   
   /**
     * OpenSubtitles file hash for the video.
     */
-  var videoHash: String = js.native
+  var videoHash: String
   
   /**
     * Size of the video file in bytes.
     */
-  var videoSize: String = js.native
+  var videoSize: String
 }
 object VideoHash {
   

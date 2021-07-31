@@ -3,33 +3,31 @@ package typings.phonon.Phonon
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhononAjaxObject extends StObject {
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var crossDomain: js.UndefOr[Boolean] = js.native
+  var crossDomain: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var dataType: String = js.native
+  var dataType: String
   
   var error: js.UndefOr[
     js.Function3[/* res */ js.Any, /* flagError */ PhononAjaxErrorFlag, /* xhr */ XMLHttpRequest, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var method: String = js.native
+  var method: String
   
-  def success(res: js.Any, xhr: XMLHttpRequest): Unit = js.native
+  def success(res: js.Any, xhr: XMLHttpRequest): Unit
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object PhononAjaxObject {
   

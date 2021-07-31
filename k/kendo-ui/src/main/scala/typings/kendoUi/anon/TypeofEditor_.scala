@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Editor_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofEditor_ extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Editor_ = js.native
+  def extend(proto: js.Object): Editor_
   
   /* static member */
-  var fn: Editor_ = js.native
+  var fn: Editor_
 }
 object TypeofEditor_ {
   

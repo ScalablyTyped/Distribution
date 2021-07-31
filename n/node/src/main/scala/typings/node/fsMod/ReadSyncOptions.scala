@@ -2,26 +2,24 @@ package typings.node.fsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadSyncOptions extends StObject {
   
   /**
     * @default `length of buffer`
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * @default 0
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * @default null
     */
-  var position: js.UndefOr[Double | Null] = js.native
+  var position: js.UndefOr[Double | Null] = js.undefined
 }
 object ReadSyncOptions {
   

@@ -6,7 +6,6 @@ import typings.reactVirtualized.esGridMod.GridProps
 import typings.reactVirtualized.esGridMod.OverscanIndicesGetter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridMod {

@@ -7,15 +7,13 @@ import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofappDefinition extends StObject {
   
-  def wrapAppDefinition(http: AxiosInstance, data: AppDefinitionProps): AppDefinition = js.native
+  def wrapAppDefinition(http: AxiosInstance, data: AppDefinitionProps): AppDefinition
   
-  def wrapAppDefinitionCollection(http: AxiosInstance, data: CollectionProp[AppDefinitionProps]): Collection[AppDefinition, AppDefinitionProps] = js.native
+  def wrapAppDefinitionCollection(http: AxiosInstance, data: CollectionProp[AppDefinitionProps]): Collection[AppDefinition, AppDefinitionProps]
 }
 object TypeofappDefinition {
   

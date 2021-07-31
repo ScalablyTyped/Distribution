@@ -2,26 +2,24 @@ package typings.d3Indirections
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A resource used by d3, such as a video or audio clip.
   */
-@js.native
 trait Resource[T /* <: ResourceType */] extends StObject {
   
   /** The name of the resource displayed in d3. */
-  var name: String = js.native
+  var name: String
   
   /** THe underlying d3 system filepath of the resource. */
-  var path: String = js.native
+  var path: String
   
   /** The type of resource. */
-  var `type`: T = js.native
+  var `type`: T
   
   /** Unique identifier for the resource. */
-  var uid: String = js.native
+  var uid: String
 }
 object Resource {
   
@@ -33,7 +31,7 @@ object Resource {
   }
   
   @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource[_], T /* <: ResourceType */] (val x: Self with Resource[T]) extends AnyVal {
+  implicit class ResourceMutableBuilder[Self <: Resource[?], T /* <: ResourceType */] (val x: Self & Resource[T]) extends AnyVal {
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

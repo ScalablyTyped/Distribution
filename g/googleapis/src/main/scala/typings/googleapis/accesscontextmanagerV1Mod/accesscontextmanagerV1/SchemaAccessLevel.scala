@@ -2,7 +2,6 @@ package typings.googleapis.accesscontextmanagerV1Mod.accesscontextmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,40 +9,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * services, along with a list of requirements necessary for the label to be
   * applied.
   */
-@js.native
 trait SchemaAccessLevel extends StObject {
   
   /**
     * A `BasicLevel` composed of `Conditions`.
     */
-  var basic: js.UndefOr[SchemaBasicLevel] = js.native
+  var basic: js.UndefOr[SchemaBasicLevel] = js.undefined
   
   /**
     * Output only. Time the `AccessLevel` was created in UTC.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Description of the `AccessLevel` and its use. Does not affect behavior.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Resource name for the Access Level. The `short_name` component
     * must begin with a letter and only include alphanumeric and &#39;_&#39;.
     * Format: `accessPolicies/{policy_id}/accessLevels/{short_name}`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Human readable title. Must be unique within the Policy.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Time the `AccessLevel` was updated in UTC.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaAccessLevel {
   

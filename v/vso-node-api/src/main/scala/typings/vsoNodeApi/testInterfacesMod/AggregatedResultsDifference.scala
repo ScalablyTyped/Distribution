@@ -2,21 +2,19 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregatedResultsDifference extends StObject {
   
-  var increaseInDuration: js.Any = js.native
+  var increaseInDuration: js.Any
   
-  var increaseInFailures: Double = js.native
+  var increaseInFailures: Double
   
-  var increaseInOtherTests: Double = js.native
+  var increaseInOtherTests: Double
   
-  var increaseInPassedTests: Double = js.native
+  var increaseInPassedTests: Double
   
-  var increaseInTotalTests: Double = js.native
+  var increaseInTotalTests: Double
 }
 object AggregatedResultsDifference {
   

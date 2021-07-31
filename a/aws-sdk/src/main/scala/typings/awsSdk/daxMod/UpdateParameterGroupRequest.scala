@@ -2,21 +2,19 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateParameterGroupRequest extends StObject {
   
   /**
     * The name of the parameter group.
     */
-  var ParameterGroupName: String = js.native
+  var ParameterGroupName: String
   
   /**
     * An array of name-value pairs for the parameters in the group. Each element in the array represents a single parameter.
     */
-  var ParameterNameValues: ParameterNameValueList = js.native
+  var ParameterNameValues: ParameterNameValueList
 }
 object UpdateParameterGroupRequest {
   

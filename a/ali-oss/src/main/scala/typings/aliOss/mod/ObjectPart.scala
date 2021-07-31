@@ -2,20 +2,18 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectPart extends StObject {
   
   // {Date} Time when a part is uploaded.
-  var ETag: String = js.native
+  var ETag: String
   
-  var LastModified: js.Any = js.native
+  var LastModified: js.Any
   
-  var PartNumber: Double = js.native
+  var PartNumber: Double
   
-  var size: Double = js.native
+  var size: Double
 }
 object ObjectPart {
   

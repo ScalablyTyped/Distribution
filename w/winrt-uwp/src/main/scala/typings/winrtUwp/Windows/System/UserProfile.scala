@@ -7,7 +7,6 @@ import typings.winrtUwp.Windows.Storage.StorageFile
 import typings.winrtUwp.anon.Second
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables apps get information about users, set globalization preferences, and control the lock screen image. */
@@ -22,15 +21,21 @@ object UserProfile {
     
     /** Indicates you want the large image for the user's account. */
     @js.native
-    sealed trait largeImage extends AccountPictureKind
+    sealed trait largeImage
+      extends StObject
+         with AccountPictureKind
     
     /** Indicates you want the small image for the user's account. */
     @js.native
-    sealed trait smallImage extends AccountPictureKind
+    sealed trait smallImage
+      extends StObject
+         with AccountPictureKind
     
     /** Indicates you want the video for the user's account. */
     @js.native
-    sealed trait video extends AccountPictureKind
+    sealed trait video
+      extends StObject
+         with AccountPictureKind
   }
   
   @js.native
@@ -42,27 +47,39 @@ object UserProfile {
     
     /** Indicates that the picture was not set because the AccountPictureChangeEnabled property is disabled, or the user cancelled the consent prompt. */
     @js.native
-    sealed trait changeDisabled extends SetAccountPictureResult
+    sealed trait changeDisabled
+      extends StObject
+         with SetAccountPictureResult
     
     /** Indicates the picture or video was not set. */
     @js.native
-    sealed trait failure extends SetAccountPictureResult
+    sealed trait failure
+      extends StObject
+         with SetAccountPictureResult
     
     /** Indicates the picture was not set because the file size was too large. */
     @js.native
-    sealed trait fileSizeError extends SetAccountPictureResult
+    sealed trait fileSizeError
+      extends StObject
+         with SetAccountPictureResult
     
     /** Indicates that the picture was not set because the picture was too large. */
     @js.native
-    sealed trait largeOrDynamicError extends SetAccountPictureResult
+    sealed trait largeOrDynamicError
+      extends StObject
+         with SetAccountPictureResult
     
     /** Indicates the picture was successfully set. */
     @js.native
-    sealed trait success extends SetAccountPictureResult
+    sealed trait success
+      extends StObject
+         with SetAccountPictureResult
     
     /** Indicates that the video was not set because of its frame size was too large. */
     @js.native
-    sealed trait videoFrameSizeError extends SetAccountPictureResult
+    sealed trait videoFrameSizeError
+      extends StObject
+         with SetAccountPictureResult
   }
   
   @js.native
@@ -74,58 +91,62 @@ object UserProfile {
     
     /** The feed was not set because the lock screen image slide show is disabled by group policy. */
     @js.native
-    sealed trait changeDisabled extends SetImageFeedResult
+    sealed trait changeDisabled
+      extends StObject
+         with SetImageFeedResult
     
     /** The image feed was set successfully. */
     @js.native
-    sealed trait success extends SetImageFeedResult
+    sealed trait success
+      extends StObject
+         with SetImageFeedResult
     
     /** The operation was canceled by the user. */
     @js.native
-    sealed trait userCanceled extends SetImageFeedResult
+    sealed trait userCanceled
+      extends StObject
+         with SetImageFeedResult
   }
   
   /** Provides a property that lets the caller retrieve the advertising ID, which is an ID used to provide more relevant advertising by understanding which apps are used by the user and how they are used, and to improve quality of service by determining the frequency and effectiveness of ads and to detect fraud and security issues. */
-  @js.native
   trait AdvertisingManager extends StObject
   
   /** Represents a collection of settings that a user can opt-in to during the first run experience. */
-  @js.native
   trait FirstSignInSettings extends StObject {
     
     /**
       * Returns an iterator for the items in the collection.
       * @return The iterator.
       */
-    def first(): IIterator[IKeyValuePair[_, _]] = js.native
+    def first(): IIterator[IKeyValuePair[js.Any, js.Any]]
     
     /**
       * Determines whether the map view contains the specified key.
       * @param key The key to locate in the map view.
       * @return true if the key is found; otherwise, false.
       */
-    def hasKey(key: String): Boolean = js.native
+    def hasKey(key: String): Boolean
     
     /**
       * Returns the item in the map view with the specified key.
       * @param key The key to locate in the map view.
       * @return The item associated with the specified key.
       */
-    def lookup(key: String): js.Any = js.native
+    def lookup(key: String): js.Any
     
     /** Returns the number of elements in the map. */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * Splits the map view into two views.
       */
-    def split(): Second = js.native
+    def split(): Second
   }
   object FirstSignInSettings {
     
     @scala.inline
     def apply(
-      first: () => IIterator[IKeyValuePair[_, _]],
+      first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
       hasKey: String => Boolean,
       lookup: String => js.Any,
       size: Double,
@@ -139,7 +160,7 @@ object UserProfile {
     implicit class FirstSignInSettingsMutableBuilder[Self <: FirstSignInSettings] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFirst(value: () => IIterator[IKeyValuePair[_, _]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
       @scala.inline
       def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
@@ -156,19 +177,15 @@ object UserProfile {
   }
   
   /** A static class for holding various user globalization preferences. */
-  @js.native
   trait GlobalizationPreferences extends StObject
   
   /** Provides properties and methods to manage the full-screen image used as the lock screen background. */
-  @js.native
   trait LockScreen extends StObject
   
   /** Represents information about the user, such as name and account picture. */
-  @js.native
   trait UserInformation extends StObject
   
   /** Provides properties and methods to manage the user's desktop wallpaper and lock screen background image. */
-  @js.native
   trait UserProfilePersonalizationSettings extends StObject {
     
     /**
@@ -176,14 +193,14 @@ object UserProfile {
       * @param imageFile The image to set as the lock screen background.
       * @return The result of the async operation. true if the background image was set successfully; otherwise, false.
       */
-    def trySetLockScreenImageAsync(imageFile: StorageFile): IPromiseWithIAsyncOperation[Boolean] = js.native
+    def trySetLockScreenImageAsync(imageFile: StorageFile): IPromiseWithIAsyncOperation[Boolean]
     
     /**
       * Attempts to set the specified image file as the desktop wallpaper image.
       * @param imageFile The image to set as the desktop background.
       * @return The result of the async operation. true if the background image was set successfully; otherwise, false.
       */
-    def trySetWallpaperImageAsync(imageFile: StorageFile): IPromiseWithIAsyncOperation[Boolean] = js.native
+    def trySetWallpaperImageAsync(imageFile: StorageFile): IPromiseWithIAsyncOperation[Boolean]
   }
   object UserProfilePersonalizationSettings {
     

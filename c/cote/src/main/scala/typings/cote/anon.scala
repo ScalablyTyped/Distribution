@@ -3,17 +3,15 @@ package typings.cote
 import typings.node.httpMod.Server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Monitor extends StObject {
     
-    var monitor: typings.cote.mod.Monitor = js.native
+    var monitor: typings.cote.mod.Monitor
     
-    var server: Server = js.native
+    var server: Server
   }
   object Monitor {
     

@@ -2,15 +2,15 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITitle extends IAnnotation {
+trait ITitle
+  extends StObject
+     with IAnnotation {
   
-  var expand: Boolean = js.native
+  var expand: Boolean
   
-  var padding: Double = js.native
+  var padding: Double
 }
 object ITitle {
   

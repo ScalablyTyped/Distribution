@@ -5,7 +5,6 @@ import typings.googleapis.surveysV2Mod.surveysV2.Options
 import typings.googleapis.surveysV2Mod.surveysV2.Surveys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -3,45 +3,45 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxIncomingMessage Class */
-@js.native
-trait FaxIncomingMessage extends IFaxIncomingMessage {
+trait FaxIncomingMessage
+  extends StObject
+     with IFaxIncomingMessage {
   
   @JSName("FAXCOMEXLib.FaxIncomingMessage_typekey")
-  var FAXCOMEXLibDotFaxIncomingMessage_typekey: FaxIncomingMessage = js.native
+  var FAXCOMEXLibDotFaxIncomingMessage_typekey: FaxIncomingMessage
   
   /** Has Cover page */
-  var HasCoverPage: Boolean = js.native
+  var HasCoverPage: Boolean
   
   /** Reassigns the message */
-  def ReAssign(): Unit = js.native
+  def ReAssign(): Unit
   
   /** Read flag on the message */
-  var Read: Boolean = js.native
+  var Read: Boolean
   
   /** Set of recipient names */
-  var Recipients: String = js.native
+  var Recipients: String
   
   /** Refresh the object */
-  def Refresh(): Unit = js.native
+  def Refresh(): Unit
   
   /** Save the object */
-  def Save(): Unit = js.native
+  def Save(): Unit
   
   /** Sender's fax number */
-  var SenderFaxNumber: String = js.native
+  var SenderFaxNumber: String
   
   /** Sender's name */
-  var SenderName: String = js.native
+  var SenderName: String
   
   /** Contents of cover page subject field */
-  var Subject: String = js.native
+  var Subject: String
   
   /** Is message reassigned? */
-  val WasReAssigned: Boolean = js.native
+  val WasReAssigned: Boolean
 }
 object FaxIncomingMessage {
   

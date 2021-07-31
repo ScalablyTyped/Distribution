@@ -2,16 +2,14 @@ package typings.lodash.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MixinOptions extends StObject {
   
   /**
     * @see _.chain
     */
-  var chain: js.UndefOr[Boolean] = js.native
+  var chain: js.UndefOr[Boolean] = js.undefined
 }
 object MixinOptions {
   

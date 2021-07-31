@@ -2,38 +2,38 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the Floating Action Button's BootstrapFABAction object.
   */
-@js.native
-trait BootstrapClientFABAction extends ASPxClientFABAction {
+trait BootstrapClientFABAction
+  extends StObject
+     with ASPxClientFABAction {
   
-  def GetActionIconCssClass(): String = js.native
+  def GetActionIconCssClass(): String
   
-  def GetBadgeCssClass(): String = js.native
+  def GetBadgeCssClass(): String
   
-  def GetBadgeIconCssClass(): String = js.native
+  def GetBadgeIconCssClass(): String
   
-  def GetBadgeText(): String = js.native
+  def GetBadgeText(): String
   
-  def GetCollapseIconCssClass(): String = js.native
+  def GetCollapseIconCssClass(): String
   
-  def GetExpandIconCssClass(): String = js.native
+  def GetExpandIconCssClass(): String
   
-  def SetActionIconCssClass(cssClass: String): Unit = js.native
+  def SetActionIconCssClass(cssClass: String): Unit
   
-  def SetBadgeCssClass(cssClass: String): Unit = js.native
+  def SetBadgeCssClass(cssClass: String): Unit
   
-  def SetBadgeIconCssClass(cssClass: String): Unit = js.native
+  def SetBadgeIconCssClass(cssClass: String): Unit
   
-  def SetBadgeText(text: String): Unit = js.native
+  def SetBadgeText(text: String): Unit
   
-  def SetCollapseIconCssClass(cssClass: String): Unit = js.native
+  def SetCollapseIconCssClass(cssClass: String): Unit
   
-  def SetExpandIconCssClass(cssClass: String): Unit = js.native
+  def SetExpandIconCssClass(cssClass: String): Unit
 }
 object BootstrapClientFABAction {
   

@@ -8,7 +8,6 @@ import typings.sawtoothSdk.protobufMod.IClientBatchListResponse
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse")
@@ -24,31 +23,35 @@ class ClientBatchListResponse ()
 /* static members */
 object ClientBatchListResponse {
   
+  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Status enum. */
   @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.Status")
   @js.native
   object Status extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status & Double] = js.native
     
-    /* 2 */ val INTERNAL_ERROR: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.INTERNAL_ERROR with Double = js.native
+    /* 2 */ val INTERNAL_ERROR: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.INTERNAL_ERROR & Double = js.native
     
-    /* 8 */ val INVALID_ID: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.INVALID_ID with Double = js.native
+    /* 8 */ val INVALID_ID: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.INVALID_ID & Double = js.native
     
-    /* 6 */ val INVALID_PAGING: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.INVALID_PAGING with Double = js.native
+    /* 6 */ val INVALID_PAGING: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.INVALID_PAGING & Double = js.native
     
-    /* 7 */ val INVALID_SORT: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.INVALID_SORT with Double = js.native
+    /* 7 */ val INVALID_SORT: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.INVALID_SORT & Double = js.native
     
-    /* 3 */ val NOT_READY: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.NOT_READY with Double = js.native
+    /* 3 */ val NOT_READY: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.NOT_READY & Double = js.native
     
-    /* 5 */ val NO_RESOURCE: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.NO_RESOURCE with Double = js.native
+    /* 5 */ val NO_RESOURCE: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.NO_RESOURCE & Double = js.native
     
-    /* 4 */ val NO_ROOT: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.NO_ROOT with Double = js.native
+    /* 4 */ val NO_ROOT: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.NO_ROOT & Double = js.native
     
-    /* 1 */ val OK: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.OK with Double = js.native
+    /* 1 */ val OK: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.OK & Double = js.native
     
-    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.STATUS_UNSET with Double = js.native
+    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.ClientBatchListResponse.Status.STATUS_UNSET & Double = js.native
   }
   
   /**
@@ -56,12 +59,10 @@ object ClientBatchListResponse {
     * @param [properties] Properties to set
     * @returns ClientBatchListResponse instance
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.create")
-  @js.native
-  def create(): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.create")
-  @js.native
-  def create(properties: IClientBatchListResponse): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = js.native
+  @scala.inline
+  def create(): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBatchListResponse]
+  @scala.inline
+  def create(properties: IClientBatchListResponse): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBatchListResponse]
   
   /**
     * Decodes a ClientBatchListResponse message from the specified reader or buffer.
@@ -71,18 +72,14 @@ object ClientBatchListResponse {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.decode")
-  @js.native
-  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBatchListResponse]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBatchListResponse]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBatchListResponse]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBatchListResponse]
   
   /**
     * Decodes a ClientBatchListResponse message from the specified reader or buffer, length delimited.
@@ -91,12 +88,10 @@ object ClientBatchListResponse {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBatchListResponse]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBatchListResponse]
   
   /**
     * Encodes the specified ClientBatchListResponse message. Does not implicitly {@link ClientBatchListResponse.verify|verify} messages.
@@ -104,12 +99,10 @@ object ClientBatchListResponse {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.encode")
-  @js.native
-  def encode(message: IClientBatchListResponse): Writer = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.encode")
-  @js.native
-  def encode(message: IClientBatchListResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IClientBatchListResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IClientBatchListResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ClientBatchListResponse message, length delimited. Does not implicitly {@link ClientBatchListResponse.verify|verify} messages.
@@ -117,21 +110,18 @@ object ClientBatchListResponse {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientBatchListResponse): Writer = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientBatchListResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IClientBatchListResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IClientBatchListResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ClientBatchListResponse message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientBatchListResponse
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientBatchListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBatchListResponse]
   
   /**
     * Creates a plain object from a ClientBatchListResponse message. Also converts values to other types if specified.
@@ -139,19 +129,16 @@ object ClientBatchListResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.toObject")
-  @js.native
-  def toObject(message: typings.sawtoothSdk.protobufMod.ClientBatchListResponse): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.toObject")
-  @js.native
-  def toObject(message: typings.sawtoothSdk.protobufMod.ClientBatchListResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: typings.sawtoothSdk.protobufMod.ClientBatchListResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: typings.sawtoothSdk.protobufMod.ClientBatchListResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ClientBatchListResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBatchListResponse.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

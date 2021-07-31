@@ -3,7 +3,6 @@ package typings.pulumiAws
 import typings.pulumiAws.enumsEc2Mod.PlacementStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object placementStrategyMod {

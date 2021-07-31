@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalytics.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExclusionDuration extends StObject {
   
   /** Whether to make the exclusion TEMPORARY or PERMANENT. */
-  var exclusionDuration: js.UndefOr[String] = js.native
+  var exclusionDuration: js.UndefOr[String] = js.undefined
   
   /** The segment condition that will cause a user to be removed from an audience. */
-  var segment: js.UndefOr[String] = js.native
+  var segment: js.UndefOr[String] = js.undefined
 }
 object ExclusionDuration {
   

@@ -2,7 +2,6 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -12,9 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.typescript.mod.NamedDeclaration because Already inherited
 - typings.typescript.mod.TypeElement because var conflicts: _declarationBrand. Inlined _typeElementBrand, questionToken */ @js.native
 trait MethodSignature
-  extends SignatureDeclarationBase
-     with SignatureDeclaration
-     with _HasJSDoc {
+  extends StObject
+     with SignatureDeclarationBase
+     with HasJSDoc
+     with SignatureDeclaration {
   
   var _typeElementBrand: js.Any = js.native
   

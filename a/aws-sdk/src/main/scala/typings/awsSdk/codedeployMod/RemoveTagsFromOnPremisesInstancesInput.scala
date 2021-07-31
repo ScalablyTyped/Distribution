@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTagsFromOnPremisesInstancesInput extends StObject {
   
   /**
     * The names of the on-premises instances from which to remove tags.
     */
-  var instanceNames: InstanceNameList = js.native
+  var instanceNames: InstanceNameList
   
   /**
     * The tag key-value pairs to remove from the on-premises instances.
     */
-  var tags: TagList = js.native
+  var tags: TagList
 }
 object RemoveTagsFromOnPremisesInstancesInput {
   

@@ -4,14 +4,15 @@ import typings.benchmark.anon.Name
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("benchmark", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Benchmark {
+  class ^ protected ()
+    extends StObject
+       with Benchmark {
     def this(fn: String) = this()
     def this(fn: js.Function) = this()
     def this(options: Options_) = this()
@@ -67,8 +68,8 @@ object mod {
   @js.native
   class Suite () extends StObject {
     def this(name: String) = this()
-    def this(name: js.UndefOr[scala.Nothing], options: Options_) = this()
     def this(name: String, options: Options_) = this()
+    def this(name: Unit, options: Options_) = this()
     
     def abort(): Suite = js.native
     
@@ -105,19 +106,19 @@ object mod {
     
     def listeners(`type`: String): js.Array[js.Function] = js.native
     
-    def map(callback: String): js.Array[_] = js.native
-    def map(callback: js.Function): js.Array[_] = js.native
+    def map(callback: String): js.Array[js.Any] = js.native
+    def map(callback: js.Function): js.Array[js.Any] = js.native
     
     def off(): Suite = js.native
-    def off(`type`: js.UndefOr[scala.Nothing], callback: js.Function): Suite = js.native
     def off(`type`: String): Suite = js.native
     def off(`type`: String, callback: js.Function): Suite = js.native
+    def off(`type`: Unit, callback: js.Function): Suite = js.native
     def off(types: js.Array[String]): Suite = js.native
     
     def on(): Suite = js.native
-    def on(`type`: js.UndefOr[scala.Nothing], callback: js.Function): Suite = js.native
     def on(`type`: String): Suite = js.native
     def on(`type`: String, callback: js.Function): Suite = js.native
+    def on(`type`: Unit, callback: js.Function): Suite = js.native
     def on(types: js.Array[String]): Suite = js.native
     
     def pop(): js.Function = js.native
@@ -128,7 +129,7 @@ object mod {
     
     def reset(): Suite = js.native
     
-    def reverse(): js.Array[_] = js.native
+    def reverse(): js.Array[js.Any] = js.native
     
     def run(): Suite = js.native
     def run(options: Options_): Suite = js.native
@@ -137,13 +138,13 @@ object mod {
     
     def shift(): Benchmark = js.native
     
-    def slice(start: Double, deleteCount: Double, values: js.Any*): js.Array[_] = js.native
-    def slice(start: Double, end: Double): js.Array[_] = js.native
+    def slice(start: Double, deleteCount: Double, values: js.Any*): js.Array[js.Any] = js.native
+    def slice(start: Double, end: Double): js.Array[js.Any] = js.native
     
-    def sort(compareFn: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): js.Array[_] = js.native
+    def sort(compareFn: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): js.Array[js.Any] = js.native
     
-    def splice(start: Double): js.Array[_] = js.native
-    def splice(start: Double, deleteCount: Double): js.Array[_] = js.native
+    def splice(start: Double): js.Array[js.Any] = js.native
+    def splice(start: Double, deleteCount: Double): js.Array[js.Any] = js.native
     
     def unshift(benchmark: Benchmark): Double = js.native
   }
@@ -161,101 +162,76 @@ object mod {
     def options_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("benchmark", "each")
-  @js.native
-  def each(obj: js.Array[_], callback: js.Function): Unit = js.native
-  @JSImport("benchmark", "each")
-  @js.native
-  def each(obj: js.Array[_], callback: js.Function, thisArg: js.Any): Unit = js.native
+  @scala.inline
+  def each(obj: js.Array[js.Any], callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def each(obj: js.Array[js.Any], callback: js.Function, thisArg: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("benchmark", "each")
-  @js.native
-  def each(obj: js.Object, callback: js.Function): Unit = js.native
-  @JSImport("benchmark", "each")
-  @js.native
-  def each(obj: js.Object, callback: js.Function, thisArg: js.Any): Unit = js.native
+  @scala.inline
+  def each(obj: js.Object, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def each(obj: js.Object, callback: js.Function, thisArg: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("benchmark", "filter")
-  @js.native
-  def filter[T](arr: js.Array[T], callback: js.Function1[/* value */ T, _]): js.Array[T] = js.native
-  @JSImport("benchmark", "filter")
-  @js.native
-  def filter[T](arr: js.Array[T], callback: js.Function1[/* value */ T, _], thisArg: js.Any): js.Array[T] = js.native
+  @scala.inline
+  def filter[T](arr: js.Array[T], callback: js.Function1[/* value */ T, js.Any]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def filter[T](arr: js.Array[T], callback: js.Function1[/* value */ T, js.Any], thisArg: js.Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   /* static member */
-  @JSImport("benchmark", "filter")
-  @js.native
-  def filter[T](arr: js.Array[T], filter: String): js.Array[T] = js.native
-  @JSImport("benchmark", "filter")
-  @js.native
-  def filter[T](arr: js.Array[T], filter: String, thisArg: js.Any): js.Array[T] = js.native
+  @scala.inline
+  def filter[T](arr: js.Array[T], filter: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def filter[T](arr: js.Array[T], filter: String, thisArg: js.Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   /* static member */
-  @JSImport("benchmark", "forEach")
-  @js.native
-  def forEach[T](arr: js.Array[T], callback: js.Function1[/* value */ T, _]): Unit = js.native
-  @JSImport("benchmark", "forEach")
-  @js.native
-  def forEach[T](arr: js.Array[T], callback: js.Function1[/* value */ T, _], thisArg: js.Any): Unit = js.native
+  @scala.inline
+  def forEach[T](arr: js.Array[T], callback: js.Function1[/* value */ T, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def forEach[T](arr: js.Array[T], callback: js.Function1[/* value */ T, js.Any], thisArg: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("benchmark", "forOwn")
-  @js.native
-  def forOwn(obj: js.Object, callback: js.Function): Unit = js.native
-  @JSImport("benchmark", "forOwn")
-  @js.native
-  def forOwn(obj: js.Object, callback: js.Function, thisArg: js.Any): Unit = js.native
+  @scala.inline
+  def forOwn(obj: js.Object, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forOwn")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def forOwn(obj: js.Object, callback: js.Function, thisArg: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forOwn")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("benchmark", "formatNumber")
-  @js.native
-  def formatNumber(num: Double): String = js.native
+  @scala.inline
+  def formatNumber(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(num.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("benchmark", "has")
-  @js.native
-  def has(obj: js.Object, path: String): Boolean = js.native
+  @scala.inline
+  def has(obj: js.Object, path: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   /* static member */
-  @JSImport("benchmark", "has")
-  @js.native
-  def has(obj: js.Object, path: js.Array[_]): Boolean = js.native
+  @scala.inline
+  def has(obj: js.Object, path: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("benchmark", "indexOf")
-  @js.native
-  def indexOf[T](arr: js.Array[T], value: T): Double = js.native
-  @JSImport("benchmark", "indexOf")
-  @js.native
-  def indexOf[T](arr: js.Array[T], value: T, fromIndex: Double): Double = js.native
+  @scala.inline
+  def indexOf[T](arr: js.Array[T], value: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(arr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def indexOf[T](arr: js.Array[T], value: T, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(arr.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("benchmark", "invoke")
-  @js.native
-  def invoke(benches: js.Array[Benchmark], name: String, args: js.Any*): js.Array[_] = js.native
-  @JSImport("benchmark", "invoke")
-  @js.native
-  def invoke(benches: js.Array[Benchmark], name: js.Object, args: js.Any*): js.Array[_] = js.native
+  @scala.inline
+  def invoke(benches: js.Array[Benchmark], name: String, args: js.Any*): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(benches.asInstanceOf[js.Any], name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def invoke(benches: js.Array[Benchmark], name: js.Object, args: js.Any*): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(benches.asInstanceOf[js.Any], name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
   /* static member */
-  @JSImport("benchmark", "join")
-  @js.native
-  def join(obj: js.Object): String = js.native
-  @JSImport("benchmark", "join")
-  @js.native
-  def join(obj: js.Object, separator1: js.UndefOr[scala.Nothing], separator2: String): String = js.native
-  @JSImport("benchmark", "join")
-  @js.native
-  def join(obj: js.Object, separator1: String): String = js.native
-  @JSImport("benchmark", "join")
-  @js.native
-  def join(obj: js.Object, separator1: String, separator2: String): String = js.native
+  @scala.inline
+  def join(obj: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def join(obj: js.Object, separator1: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(obj.asInstanceOf[js.Any], separator1.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def join(obj: js.Object, separator1: String, separator2: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(obj.asInstanceOf[js.Any], separator1.asInstanceOf[js.Any], separator2.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def join(obj: js.Object, separator1: Unit, separator2: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(obj.asInstanceOf[js.Any], separator1.asInstanceOf[js.Any], separator2.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @JSImport("benchmark", "map")
-  @js.native
-  def map[T, K](arr: js.Array[T], callback: js.Function1[/* value */ T, K]): js.Array[K] = js.native
-  @JSImport("benchmark", "map")
-  @js.native
-  def map[T, K](arr: js.Array[T], callback: js.Function1[/* value */ T, K], thisArg: js.Any): js.Array[K] = js.native
+  @scala.inline
+  def map[T, K](arr: js.Array[T], callback: js.Function1[/* value */ T, K]): js.Array[K] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[K]]
+  @scala.inline
+  def map[T, K](arr: js.Array[T], callback: js.Function1[/* value */ T, K], thisArg: js.Any): js.Array[K] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[K]]
   
   /* static member */
   @JSImport("benchmark", "options")
@@ -272,17 +248,14 @@ object mod {
   def platform_=(x: Platform_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("platform")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("benchmark", "reduce")
-  @js.native
-  def reduce[T, K](arr: js.Array[T], callback: js.Function2[/* accumulator */ K, /* value */ T, K]): K = js.native
-  @JSImport("benchmark", "reduce")
-  @js.native
-  def reduce[T, K](arr: js.Array[T], callback: js.Function2[/* accumulator */ K, /* value */ T, K], thisArg: js.Any): K = js.native
+  @scala.inline
+  def reduce[T, K](arr: js.Array[T], callback: js.Function2[/* accumulator */ K, /* value */ T, K]): K = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[K]
+  @scala.inline
+  def reduce[T, K](arr: js.Array[T], callback: js.Function2[/* accumulator */ K, /* value */ T, K], thisArg: js.Any): K = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[K]
   
   /* static member */
-  @JSImport("benchmark", "runInContext")
-  @js.native
-  def runInContext(context: js.Object): js.Function = js.native
+  @scala.inline
+  def runInContext(context: js.Object): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("runInContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
   /* static member */
   @JSImport("benchmark", "support")
@@ -331,15 +304,15 @@ object mod {
     var name: String = js.native
     
     def off(): Benchmark = js.native
-    def off(`type`: js.UndefOr[scala.Nothing], listener: js.Function): Benchmark = js.native
     def off(`type`: String): Benchmark = js.native
     def off(`type`: String, listener: js.Function): Benchmark = js.native
+    def off(`type`: Unit, listener: js.Function): Benchmark = js.native
     def off(types: js.Array[String]): Benchmark = js.native
     
     def on(): Benchmark = js.native
-    def on(`type`: js.UndefOr[scala.Nothing], listener: js.Function): Benchmark = js.native
     def on(`type`: String): Benchmark = js.native
     def on(`type`: String, listener: js.Function): Benchmark = js.native
+    def on(`type`: Unit, listener: js.Function): Benchmark = js.native
     def on(types: js.Array[String]): Benchmark = js.native
     
     def reset(): Benchmark = js.native
@@ -358,46 +331,45 @@ object mod {
     var times: Times = js.native
   }
   
-  @js.native
   trait Options_ extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var defer: js.UndefOr[Boolean] = js.native
+    var defer: js.UndefOr[Boolean] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var fn: js.UndefOr[js.Function | String] = js.native
+    var fn: js.UndefOr[js.Function | String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var initCount: js.UndefOr[Double] = js.native
+    var initCount: js.UndefOr[Double] = js.undefined
     
-    var maxTime: js.UndefOr[Double] = js.native
+    var maxTime: js.UndefOr[Double] = js.undefined
     
-    var minSamples: js.UndefOr[Double] = js.native
+    var minSamples: js.UndefOr[Double] = js.undefined
     
-    var minTime: js.UndefOr[Double] = js.native
+    var minTime: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onAbort: js.UndefOr[js.Function] = js.native
+    var onAbort: js.UndefOr[js.Function] = js.undefined
     
-    var onComplete: js.UndefOr[js.Function] = js.native
+    var onComplete: js.UndefOr[js.Function] = js.undefined
     
-    var onCycle: js.UndefOr[js.Function] = js.native
+    var onCycle: js.UndefOr[js.Function] = js.undefined
     
-    var onError: js.UndefOr[js.Function] = js.native
+    var onError: js.UndefOr[js.Function] = js.undefined
     
-    var onReset: js.UndefOr[js.Function] = js.native
+    var onReset: js.UndefOr[js.Function] = js.undefined
     
-    var onStart: js.UndefOr[js.Function] = js.native
+    var onStart: js.UndefOr[js.Function] = js.undefined
     
-    var queued: js.UndefOr[Boolean] = js.native
+    var queued: js.UndefOr[Boolean] = js.undefined
     
-    var setup: js.UndefOr[js.Function | String] = js.native
+    var setup: js.UndefOr[js.Function | String] = js.undefined
     
-    var teardown: js.UndefOr[js.Function | String] = js.native
+    var teardown: js.UndefOr[js.Function | String] = js.undefined
   }
   object Options_ {
     
@@ -526,24 +498,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Platform_ extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var layout: String = js.native
+    var layout: String
     
-    var manufacturer: String = js.native
+    var manufacturer: String
     
-    var name: String = js.native
+    var name: String
     
-    var os: String = js.native
+    var os: String
     
-    var prerelease: String = js.native
+    var prerelease: String
     
-    var product: String = js.native
+    var product: String
     
-    var version: String = js.native
+    var version: String
   }
   object Platform_ {
     
@@ -591,22 +562,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Stats extends StObject {
     
-    var deviation: Double = js.native
+    var deviation: Double
     
-    var mean: Double = js.native
+    var mean: Double
     
-    var moe: Double = js.native
+    var moe: Double
     
-    var rme: Double = js.native
+    var rme: Double
     
-    var sample: js.Array[_] = js.native
+    var sample: js.Array[js.Any]
     
-    var sem: Double = js.native
+    var sem: Double
     
-    var variance: Double = js.native
+    var variance: Double
   }
   object Stats {
     
@@ -616,7 +586,7 @@ object mod {
       mean: Double,
       moe: Double,
       rme: Double,
-      sample: js.Array[_],
+      sample: js.Array[js.Any],
       sem: Double,
       variance: Double
     ): Stats = {
@@ -640,7 +610,7 @@ object mod {
       def setRme(value: Double): Self = StObject.set(x, "rme", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSample(value: js.Array[_]): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
+      def setSample(value: js.Array[js.Any]): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSampleVarargs(value: js.Any*): Self = StObject.set(x, "sample", js.Array(value :_*))
@@ -653,14 +623,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Support_ extends StObject {
     
-    var browser: Boolean = js.native
+    var browser: Boolean
     
-    var decompilation: Boolean = js.native
+    var decompilation: Boolean
     
-    var timeout: Boolean = js.native
+    var timeout: Boolean
   }
   object Support_ {
     
@@ -684,44 +653,43 @@ object mod {
     }
   }
   
-  @js.native
   trait Target extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var compiled: js.UndefOr[js.Function] = js.native
+    var compiled: js.UndefOr[js.Function] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var cycles: js.UndefOr[Double] = js.native
+    var cycles: js.UndefOr[Double] = js.undefined
     
-    var defer: js.UndefOr[Boolean] = js.native
+    var defer: js.UndefOr[Boolean] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var fn: js.UndefOr[js.Function] = js.native
+    var fn: js.UndefOr[js.Function] = js.undefined
     
-    var hz: js.UndefOr[Double] = js.native
+    var hz: js.UndefOr[Double] = js.undefined
     
-    var id: Double = js.native
+    var id: Double
     
-    var initCount: js.UndefOr[Double] = js.native
+    var initCount: js.UndefOr[Double] = js.undefined
     
-    var maxTime: js.UndefOr[Double] = js.native
+    var maxTime: js.UndefOr[Double] = js.undefined
     
-    var minSamples: js.UndefOr[Double] = js.native
+    var minSamples: js.UndefOr[Double] = js.undefined
     
-    var minTime: js.UndefOr[Double] = js.native
+    var minTime: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var options: Options_ = js.native
+    var options: Options_
     
-    var running: Boolean = js.native
+    var running: Boolean
     
-    var stats: js.UndefOr[Stats] = js.native
+    var stats: js.UndefOr[Stats] = js.undefined
     
-    var times: js.UndefOr[Times] = js.native
+    var times: js.UndefOr[Times] = js.undefined
   }
   object Target {
     
@@ -835,16 +803,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Times extends StObject {
     
-    var cycle: Double = js.native
+    var cycle: Double
     
-    var elapsed: Double = js.native
+    var elapsed: Double
     
-    var period: Double = js.native
+    var period: Double
     
-    var timeStamp: Double = js.native
+    var timeStamp: Double
   }
   object Times {
     

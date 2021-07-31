@@ -31,102 +31,71 @@ import typings.three.mod.PerspectiveCamera
 import typings.three.mod.Ray
 import typings.three.mod.Raycaster
 import typings.three.mod.Scene
-import typings.three.mod.Vector2
 import typings.three.mod.WebGLRenderer
+import typings.three.vector2Mod.Vector2
 import typings.three.vector3Mod.Vector3
 import typings.tinyEmitter.mod.TinyEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object canvasMod {
   
-  @JSImport("react-three-fiber/canvas", "isOrthographicCamera")
+  @JSImport("react-three-fiber/canvas", JSImport.Namespace)
   @js.native
-  def isOrthographicCamera(`def`: typings.three.mod.Camera): /* is three.three.OrthographicCamera */ Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isOrthographicCamera(`def`: typings.three.mod.Camera): /* is three.three.OrthographicCamera */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOrthographicCamera")(`def`.asInstanceOf[js.Any]).asInstanceOf[/* is three.three.OrthographicCamera */ Boolean]
   
   @JSImport("react-three-fiber/canvas", "stateContext")
   @js.native
   val stateContext: Context[SharedCanvasContext] = js.native
   
-  @JSImport("react-three-fiber/canvas", "useCanvas")
-  @js.native
-  def useCanvas(props: UseCanvasProps): DomEventHandlers = js.native
+  @scala.inline
+  def useCanvas(props: UseCanvasProps): DomEventHandlers = ^.asInstanceOf[js.Dynamic].applyDynamic("useCanvas")(props.asInstanceOf[js.Any]).asInstanceOf[DomEventHandlers]
   
   type Camera = OrthographicCamera | PerspectiveCamera
   
-  /* Inlined react-three-fiber.react-three-fiber/canvas.SharedCanvasContext & {  captured :std.Array<react-three-fiber.react-three-fiber/canvas.Intersection> | undefined,   noEvents :boolean,   ready :boolean,   active :boolean,   manual :number,   colorManagement :boolean,   vr :boolean,   concurrent :boolean,   invalidateFrameloop :boolean,   frames :number,   subscribers :std.Array<react-three-fiber.react-three-fiber/canvas.Subscription>,   initialClick :react-three-fiber.react-three-fiber/three-types.NamedArrayTuple<(x : number, y : number): void>,   initialHits :std.Array<three.three.Object3D>,   pointer :tiny-emitter.tiny-emitter.TinyEmitter} */
   @js.native
-  trait CanvasContext extends StObject {
+  trait CanvasContext
+    extends StObject
+       with SharedCanvasContext {
     
     var active: Boolean = js.native
     
-    var aspect: Double = js.native
-    
-    var camera: Camera = js.native
-    
     var captured: js.UndefOr[js.Array[Intersection]] = js.native
-    
-    var clock: Clock = js.native
     
     var colorManagement: Boolean = js.native
     
     var concurrent: Boolean = js.native
     
-    var events: DomEventHandlers = js.native
-    
-    def forceResize(): Unit = js.native
-    
     var frames: Double = js.native
-    
-    var gl: WebGLRenderer = js.native
     
     var initialClick: NamedArrayTuple[js.Function2[/* x */ Double, /* y */ Double, Unit]] = js.native
     
     var initialHits: js.Array[Object3D] = js.native
     
-    def intersect(): Unit = js.native
-    def intersect(event: DomEvent): Unit = js.native
-    
-    def invalidate(): Unit = js.native
-    
     var invalidateFrameloop: Boolean = js.native
     
     var manual: Double = js.native
-    
-    var mouse: Vector2 = js.native
     
     var noEvents: Boolean = js.native
     
     var pointer: TinyEmitter = js.native
     
-    var raycaster: Raycaster = js.native
-    
     var ready: Boolean = js.native
     
-    var scene: Scene = js.native
-    
-    def setDefaultCamera(camera: Camera): Unit = js.native
-    
-    var size: RectReadOnly = js.native
-    
-    def subscribe(callback: MutableRefObject[RenderCallback]): js.Function0[Unit] = js.native
-    def subscribe(callback: MutableRefObject[RenderCallback], priority: Double): js.Function0[Unit] = js.native
-    
     var subscribers: js.Array[Subscription] = js.native
-    
-    var viewport: ViewportData = js.native
     
     var vr: Boolean = js.native
   }
   
-  @js.native
   trait CanvasProps extends StObject {
     
     var camera: js.UndefOr[
         Partial[
-          (Object3DNode[typings.three.mod.Camera, Instantiable0[typings.three.mod.Camera]]) with (Object3DNode[PerspectiveCamera, Instantiable0[PerspectiveCamera]]) with (Object3DNode[
+          (Object3DNode[typings.three.mod.Camera, Instantiable0[typings.three.mod.Camera]]) & (Object3DNode[PerspectiveCamera, Instantiable0[PerspectiveCamera]]) & (Object3DNode[
             OrthographicCamera, 
             Instantiable4[
               /* left */ Double, 
@@ -137,39 +106,39 @@ object canvasMod {
             ]
           ])
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var colorManagement: js.UndefOr[Boolean] = js.native
+    var colorManagement: js.UndefOr[Boolean] = js.undefined
     
-    var concurrent: js.UndefOr[Boolean] = js.native
+    var concurrent: js.UndefOr[Boolean] = js.undefined
     
-    var gl: js.UndefOr[PartialWebGLRendererParam] = js.native
+    var gl: js.UndefOr[PartialWebGLRendererParam] = js.undefined
     
-    var invalidateFrameloop: js.UndefOr[Boolean] = js.native
+    var invalidateFrameloop: js.UndefOr[Boolean] = js.undefined
     
-    var noEvents: js.UndefOr[Boolean] = js.native
+    var noEvents: js.UndefOr[Boolean] = js.undefined
     
-    var onCreated: js.UndefOr[js.Function1[/* props */ CanvasContext, js.Promise[_] | Unit]] = js.native
+    var onCreated: js.UndefOr[js.Function1[/* props */ CanvasContext, js.Promise[js.Any] | Unit]] = js.undefined
     
-    var onPointerMissed: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPointerMissed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var orthographic: js.UndefOr[Boolean] = js.native
+    var orthographic: js.UndefOr[Boolean] = js.undefined
     
-    var pixelRatio: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.native
+    var pixelRatio: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.undefined
     
-    var raycaster: js.UndefOr[PartialRaycasterfilterFil] = js.native
+    var raycaster: js.UndefOr[PartialRaycasterfilterFil] = js.undefined
     
-    var resize: js.UndefOr[ResizeOptions] = js.native
+    var resize: js.UndefOr[ResizeOptions] = js.undefined
     
-    var shadowMap: js.UndefOr[Boolean | PartialWebGLShadowMap] = js.native
+    var shadowMap: js.UndefOr[Boolean | PartialWebGLShadowMap] = js.undefined
     
-    var updateDefaultCamera: js.UndefOr[Boolean] = js.native
+    var updateDefaultCamera: js.UndefOr[Boolean] = js.undefined
     
-    var vr: js.UndefOr[Boolean] = js.native
+    var vr: js.UndefOr[Boolean] = js.undefined
     
-    var webgl1: js.UndefOr[Boolean] = js.native
+    var webgl1: js.UndefOr[Boolean] = js.undefined
   }
   object CanvasProps {
     
@@ -185,7 +154,7 @@ object canvasMod {
       @scala.inline
       def setCamera(
         value: Partial[
-              (Object3DNode[typings.three.mod.Camera, Instantiable0[typings.three.mod.Camera]]) with (Object3DNode[PerspectiveCamera, Instantiable0[PerspectiveCamera]]) with (Object3DNode[
+              (Object3DNode[typings.three.mod.Camera, Instantiable0[typings.three.mod.Camera]]) & (Object3DNode[PerspectiveCamera, Instantiable0[PerspectiveCamera]]) & (Object3DNode[
                 OrthographicCamera, 
                 Instantiable4[
                   /* left */ Double, 
@@ -238,7 +207,7 @@ object canvasMod {
       def setNoEventsUndefined: Self = StObject.set(x, "noEvents", js.undefined)
       
       @scala.inline
-      def setOnCreated(value: /* props */ CanvasContext => js.Promise[_] | Unit): Self = StObject.set(x, "onCreated", js.Any.fromFunction1(value))
+      def setOnCreated(value: /* props */ CanvasContext => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onCreated", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCreatedUndefined: Self = StObject.set(x, "onCreated", js.undefined)
@@ -320,7 +289,7 @@ object canvasMod {
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
-      currentTarget: EventTarget with Element,
+      currentTarget: EventTarget & Element,
       defaultPrevented: Boolean,
       delta: Double,
       detail: Double,
@@ -355,7 +324,7 @@ object canvasMod {
       unprojectedPoint: typings.three.mod.Vector3,
       view: AbstractView
     ): typings.reactThreeFiber.canvasMod.MouseEvent = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), intersections = intersections.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), point = point.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), ray = ray.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], sourceEvent = sourceEvent.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), stopped = stopped.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], unprojectedPoint = unprojectedPoint.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), intersections = intersections.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), point = point.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), ray = ray.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], sourceEvent = sourceEvent.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), stopped = stopped.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], unprojectedPoint = unprojectedPoint.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], relatedTarget = null)
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactThreeFiber.canvasMod.MouseEvent]
@@ -372,7 +341,7 @@ object canvasMod {
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
-      currentTarget: EventTarget with Element,
+      currentTarget: EventTarget & Element,
       defaultPrevented: Boolean,
       delta: Double,
       detail: Double,
@@ -417,7 +386,7 @@ object canvasMod {
       view: AbstractView,
       width: Double
     ): typings.reactThreeFiber.canvasMod.PointerEvent = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), height = height.asInstanceOf[js.Any], intersections = intersections.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPrimary = isPrimary.asInstanceOf[js.Any], isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), point = point.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], pressure = pressure.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), ray = ray.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], sourceEvent = sourceEvent.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), stopped = stopped.asInstanceOf[js.Any], tangentialPressure = tangentialPressure.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], tiltX = tiltX.asInstanceOf[js.Any], tiltY = tiltY.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], twist = twist.asInstanceOf[js.Any], unprojectedPoint = unprojectedPoint.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), height = height.asInstanceOf[js.Any], intersections = intersections.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPrimary = isPrimary.asInstanceOf[js.Any], isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), point = point.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], pressure = pressure.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), ray = ray.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], sourceEvent = sourceEvent.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), stopped = stopped.asInstanceOf[js.Any], tangentialPressure = tangentialPressure.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], tiltX = tiltX.asInstanceOf[js.Any], tiltY = tiltY.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], twist = twist.asInstanceOf[js.Any], unprojectedPoint = unprojectedPoint.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], relatedTarget = null)
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactThreeFiber.canvasMod.PointerEvent]
@@ -434,7 +403,7 @@ object canvasMod {
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
-      currentTarget: EventTarget with Element,
+      currentTarget: EventTarget & Element,
       defaultPrevented: Boolean,
       delta: Double,
       deltaMode: Double,
@@ -473,35 +442,34 @@ object canvasMod {
       unprojectedPoint: typings.three.mod.Vector3,
       view: AbstractView
     ): typings.reactThreeFiber.canvasMod.WheelEvent = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], deltaMode = deltaMode.asInstanceOf[js.Any], deltaX = deltaX.asInstanceOf[js.Any], deltaY = deltaY.asInstanceOf[js.Any], deltaZ = deltaZ.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), intersections = intersections.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), point = point.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), ray = ray.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], sourceEvent = sourceEvent.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), stopped = stopped.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], unprojectedPoint = unprojectedPoint.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], deltaMode = deltaMode.asInstanceOf[js.Any], deltaX = deltaX.asInstanceOf[js.Any], deltaY = deltaY.asInstanceOf[js.Any], deltaZ = deltaZ.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), intersections = intersections.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), point = point.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), ray = ray.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], sourceEvent = sourceEvent.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), stopped = stopped.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], unprojectedPoint = unprojectedPoint.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], relatedTarget = null)
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactThreeFiber.canvasMod.WheelEvent]
     }
   }
   
-  @js.native
   trait DomEventHandlers extends StObject {
     
-    def onClick(e: js.Any): Unit = js.native
+    def onClick(e: js.Any): Unit
     
-    def onContextMenu(e: js.Any): Unit = js.native
+    def onContextMenu(e: js.Any): Unit
     
-    def onDoubleClick(e: js.Any): Unit = js.native
+    def onDoubleClick(e: js.Any): Unit
     
-    def onGotPointerCaptureLegacy(e: js.Any): Unit = js.native
+    def onGotPointerCaptureLegacy(e: js.Any): Unit
     
-    def onLostPointerCapture(e: js.Any): Unit = js.native
+    def onLostPointerCapture(e: js.Any): Unit
     
-    def onPointerDown(e: js.Any): Unit = js.native
+    def onPointerDown(e: js.Any): Unit
     
-    def onPointerLeave(e: js.Any): Unit = js.native
+    def onPointerLeave(e: js.Any): Unit
     
-    def onPointerMove(e: js.Any): Unit = js.native
+    def onPointerMove(e: js.Any): Unit
     
-    def onPointerUp(e: js.Any): Unit = js.native
+    def onPointerUp(e: js.Any): Unit
     
-    def onWheel(e: js.Any): Unit = js.native
+    def onWheel(e: js.Any): Unit
   }
   object DomEventHandlers {
     
@@ -563,11 +531,11 @@ object canvasMod {
     js.Array[typings.three.raycasterMod.Intersection]
   ]
   
-  @js.native
   trait Intersection
-    extends typings.three.raycasterMod.Intersection {
+    extends StObject
+       with typings.three.raycasterMod.Intersection {
     
-    var eventObject: Object3D = js.native
+    var eventObject: Object3D
   }
   object Intersection {
     
@@ -592,111 +560,112 @@ object canvasMod {
   }
   
   /* Inlined react-three-fiber.react-three-fiber/canvas.ThreeEvent<react.react.MouseEvent<std.Element, react.react.NativeMouseEvent>> */
-  @js.native
-  trait MouseEvent extends DomEvent {
+  trait MouseEvent
+    extends StObject
+       with DomEvent {
     
-    var altKey: Boolean = js.native
+    var altKey: Boolean
     
-    var bubbles: Boolean = js.native
+    var bubbles: Boolean
     
-    var button: Double = js.native
+    var button: Double
     
-    var buttons: Double = js.native
+    var buttons: Double
     
-    var camera: Camera = js.native
+    var camera: Camera
     
-    var cancelable: Boolean = js.native
+    var cancelable: Boolean
     
-    var clientX: Double = js.native
+    var clientX: Double
     
-    var clientY: Double = js.native
+    var clientY: Double
     
-    var ctrlKey: Boolean = js.native
+    var ctrlKey: Boolean
     
-    var currentTarget: EventTarget with Element = js.native
+    var currentTarget: EventTarget & Element
     
-    var defaultPrevented: Boolean = js.native
+    var defaultPrevented: Boolean
     
-    var delta: Double = js.native
+    var delta: Double
     
-    var detail: Double = js.native
+    var detail: Double
     
-    var distance: Double = js.native
+    var distance: Double
     
-    var distanceToRay: js.UndefOr[Double] = js.native
+    var distanceToRay: js.UndefOr[Double] = js.undefined
     
-    var eventObject: Object3D = js.native
+    var eventObject: Object3D
     
-    var eventPhase: Double = js.native
+    var eventPhase: Double
     
-    var face: js.UndefOr[Face3 | Null] = js.native
+    var face: js.UndefOr[Face3 | Null] = js.undefined
     
-    var faceIndex: js.UndefOr[Double] = js.native
+    var faceIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
       */
-    def getModifierState(key: String): Boolean = js.native
+    def getModifierState(key: String): Boolean
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var instanceId: js.UndefOr[Double] = js.native
+    var instanceId: js.UndefOr[Double] = js.undefined
     
-    var intersections: js.Array[Intersection] = js.native
+    var intersections: js.Array[Intersection]
     
-    def isDefaultPrevented(): Boolean = js.native
+    def isDefaultPrevented(): Boolean
     
-    def isPropagationStopped(): Boolean = js.native
+    def isPropagationStopped(): Boolean
     
-    var isTrusted: Boolean = js.native
+    var isTrusted: Boolean
     
-    var metaKey: Boolean = js.native
+    var metaKey: Boolean
     
-    var movementX: Double = js.native
+    var movementX: Double
     
-    var movementY: Double = js.native
+    var movementY: Double
     
-    var nativeEvent: NativeMouseEvent = js.native
+    var nativeEvent: NativeMouseEvent
     
-    var `object`: typings.three.object3DMod.Object3D = js.native
+    var `object`: typings.three.object3DMod.Object3D
     
-    var pageX: Double = js.native
+    var pageX: Double
     
-    var pageY: Double = js.native
+    var pageY: Double
     
-    def persist(): Unit = js.native
+    def persist(): Unit
     
-    var point: Vector3 = js.native
+    var point: Vector3
     
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
     
-    var ray: Ray = js.native
+    var ray: Ray
     
-    var relatedTarget: EventTarget | Null = js.native
+    var relatedTarget: EventTarget | Null
     
-    var screenX: Double = js.native
+    var screenX: Double
     
-    var screenY: Double = js.native
+    var screenY: Double
     
-    var shiftKey: Boolean = js.native
+    var shiftKey: Boolean
     
-    var sourceEvent: typings.react.mod.MouseEvent[Element, NativeMouseEvent] = js.native
+    var sourceEvent: typings.react.mod.MouseEvent[Element, NativeMouseEvent]
     
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     
-    var stopped: Boolean = js.native
+    var stopped: Boolean
     
-    var target: EventTarget = js.native
+    var target: EventTarget
     
-    var timeStamp: Double = js.native
+    var timeStamp: Double
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var unprojectedPoint: typings.three.mod.Vector3 = js.native
+    var unprojectedPoint: typings.three.mod.Vector3
     
-    var uv: js.UndefOr[typings.three.vector2Mod.Vector2] = js.native
+    var uv: js.UndefOr[Vector2] = js.undefined
     
-    var view: AbstractView = js.native
+    var view: AbstractView
   }
   object MouseEvent {
     
@@ -711,7 +680,7 @@ object canvasMod {
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
-      currentTarget: EventTarget with Element,
+      currentTarget: EventTarget & Element,
       defaultPrevented: Boolean,
       delta: Double,
       detail: Double,
@@ -746,7 +715,7 @@ object canvasMod {
       unprojectedPoint: typings.three.mod.Vector3,
       view: AbstractView
     ): MouseEvent = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), intersections = intersections.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), point = point.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), ray = ray.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], sourceEvent = sourceEvent.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), stopped = stopped.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], unprojectedPoint = unprojectedPoint.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), intersections = intersections.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), point = point.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), ray = ray.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], sourceEvent = sourceEvent.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), stopped = stopped.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], unprojectedPoint = unprojectedPoint.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], relatedTarget = null)
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MouseEvent]
@@ -783,7 +752,7 @@ object canvasMod {
       def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCurrentTarget(value: EventTarget with Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      def setCurrentTarget(value: EventTarget & Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
@@ -924,7 +893,7 @@ object canvasMod {
       def setUnprojectedPoint(value: typings.three.mod.Vector3): Self = StObject.set(x, "unprojectedPoint", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setUv(value: typings.three.vector2Mod.Vector2): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
+      def setUv(value: Vector2): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
@@ -935,131 +904,132 @@ object canvasMod {
   }
   
   /* Inlined react-three-fiber.react-three-fiber/canvas.ThreeEvent<react.react.PointerEvent<std.Element>> */
-  @js.native
-  trait PointerEvent extends DomEvent {
+  trait PointerEvent
+    extends StObject
+       with DomEvent {
     
-    var altKey: Boolean = js.native
+    var altKey: Boolean
     
-    var bubbles: Boolean = js.native
+    var bubbles: Boolean
     
-    var button: Double = js.native
+    var button: Double
     
-    var buttons: Double = js.native
+    var buttons: Double
     
-    var camera: Camera = js.native
+    var camera: Camera
     
-    var cancelable: Boolean = js.native
+    var cancelable: Boolean
     
-    var clientX: Double = js.native
+    var clientX: Double
     
-    var clientY: Double = js.native
+    var clientY: Double
     
-    var ctrlKey: Boolean = js.native
+    var ctrlKey: Boolean
     
-    var currentTarget: EventTarget with Element = js.native
+    var currentTarget: EventTarget & Element
     
-    var defaultPrevented: Boolean = js.native
+    var defaultPrevented: Boolean
     
-    var delta: Double = js.native
+    var delta: Double
     
-    var detail: Double = js.native
+    var detail: Double
     
-    var distance: Double = js.native
+    var distance: Double
     
-    var distanceToRay: js.UndefOr[Double] = js.native
+    var distanceToRay: js.UndefOr[Double] = js.undefined
     
-    var eventObject: Object3D = js.native
+    var eventObject: Object3D
     
-    var eventPhase: Double = js.native
+    var eventPhase: Double
     
-    var face: js.UndefOr[Face3 | Null] = js.native
+    var face: js.UndefOr[Face3 | Null] = js.undefined
     
-    var faceIndex: js.UndefOr[Double] = js.native
+    var faceIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
       */
-    def getModifierState(key: String): Boolean = js.native
+    def getModifierState(key: String): Boolean
     
-    var height: Double = js.native
+    var height: Double
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var instanceId: js.UndefOr[Double] = js.native
+    var instanceId: js.UndefOr[Double] = js.undefined
     
-    var intersections: js.Array[Intersection] = js.native
+    var intersections: js.Array[Intersection]
     
-    def isDefaultPrevented(): Boolean = js.native
+    def isDefaultPrevented(): Boolean
     
-    var isPrimary: Boolean = js.native
+    var isPrimary: Boolean
     
-    def isPropagationStopped(): Boolean = js.native
+    def isPropagationStopped(): Boolean
     
-    var isTrusted: Boolean = js.native
+    var isTrusted: Boolean
     
-    var metaKey: Boolean = js.native
+    var metaKey: Boolean
     
-    var movementX: Double = js.native
+    var movementX: Double
     
-    var movementY: Double = js.native
+    var movementY: Double
     
-    var nativeEvent: NativePointerEvent = js.native
+    var nativeEvent: NativePointerEvent
     
-    var `object`: typings.three.object3DMod.Object3D = js.native
+    var `object`: typings.three.object3DMod.Object3D
     
-    var pageX: Double = js.native
+    var pageX: Double
     
-    var pageY: Double = js.native
+    var pageY: Double
     
-    def persist(): Unit = js.native
+    def persist(): Unit
     
-    var point: Vector3 = js.native
+    var point: Vector3
     
-    var pointerId: Double = js.native
+    var pointerId: Double
     
-    var pointerType: mouse | pen | touch = js.native
+    var pointerType: mouse | pen | touch
     
-    var pressure: Double = js.native
+    var pressure: Double
     
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
     
-    var ray: Ray = js.native
+    var ray: Ray
     
-    var relatedTarget: EventTarget | Null = js.native
+    var relatedTarget: EventTarget | Null
     
-    var screenX: Double = js.native
+    var screenX: Double
     
-    var screenY: Double = js.native
+    var screenY: Double
     
-    var shiftKey: Boolean = js.native
+    var shiftKey: Boolean
     
-    var sourceEvent: typings.react.mod.PointerEvent[Element] = js.native
+    var sourceEvent: typings.react.mod.PointerEvent[Element]
     
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     
-    var stopped: Boolean = js.native
+    var stopped: Boolean
     
-    var tangentialPressure: Double = js.native
+    var tangentialPressure: Double
     
-    var target: EventTarget = js.native
+    var target: EventTarget
     
-    var tiltX: Double = js.native
+    var tiltX: Double
     
-    var tiltY: Double = js.native
+    var tiltY: Double
     
-    var timeStamp: Double = js.native
+    var timeStamp: Double
     
-    var twist: Double = js.native
+    var twist: Double
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var unprojectedPoint: typings.three.mod.Vector3 = js.native
+    var unprojectedPoint: typings.three.mod.Vector3
     
-    var uv: js.UndefOr[typings.three.vector2Mod.Vector2] = js.native
+    var uv: js.UndefOr[Vector2] = js.undefined
     
-    var view: AbstractView = js.native
+    var view: AbstractView
     
-    var width: Double = js.native
+    var width: Double
   }
   object PointerEvent {
     
@@ -1074,7 +1044,7 @@ object canvasMod {
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
-      currentTarget: EventTarget with Element,
+      currentTarget: EventTarget & Element,
       defaultPrevented: Boolean,
       delta: Double,
       detail: Double,
@@ -1119,7 +1089,7 @@ object canvasMod {
       view: AbstractView,
       width: Double
     ): PointerEvent = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), height = height.asInstanceOf[js.Any], intersections = intersections.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPrimary = isPrimary.asInstanceOf[js.Any], isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), point = point.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], pressure = pressure.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), ray = ray.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], sourceEvent = sourceEvent.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), stopped = stopped.asInstanceOf[js.Any], tangentialPressure = tangentialPressure.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], tiltX = tiltX.asInstanceOf[js.Any], tiltY = tiltY.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], twist = twist.asInstanceOf[js.Any], unprojectedPoint = unprojectedPoint.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), height = height.asInstanceOf[js.Any], intersections = intersections.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPrimary = isPrimary.asInstanceOf[js.Any], isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), point = point.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], pressure = pressure.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), ray = ray.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], sourceEvent = sourceEvent.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), stopped = stopped.asInstanceOf[js.Any], tangentialPressure = tangentialPressure.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], tiltX = tiltX.asInstanceOf[js.Any], tiltY = tiltY.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], twist = twist.asInstanceOf[js.Any], unprojectedPoint = unprojectedPoint.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], relatedTarget = null)
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PointerEvent]
@@ -1156,7 +1126,7 @@ object canvasMod {
       def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCurrentTarget(value: EventTarget with Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      def setCurrentTarget(value: EventTarget & Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
@@ -1324,7 +1294,7 @@ object canvasMod {
       def setUnprojectedPoint(value: typings.three.mod.Vector3): Self = StObject.set(x, "unprojectedPoint", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setUv(value: typings.three.vector2Mod.Vector2): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
+      def setUv(value: Vector2): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
@@ -1339,12 +1309,11 @@ object canvasMod {
   
   type RenderCallback = js.Function2[/* state */ CanvasContext, /* delta */ Double, Unit]
   
-  @js.native
   trait ResizeOptions extends StObject {
     
-    var debounce: js.UndefOr[Double | Resize] = js.native
+    var debounce: js.UndefOr[Double | Resize] = js.undefined
     
-    var scroll: js.UndefOr[Boolean] = js.native
+    var scroll: js.UndefOr[Boolean] = js.undefined
   }
   object ResizeOptions {
     
@@ -1391,7 +1360,7 @@ object canvasMod {
     
     def invalidate(): Unit = js.native
     
-    var mouse: Vector2 = js.native
+    var mouse: typings.three.mod.Vector2 = js.native
     
     var raycaster: Raycaster = js.native
     
@@ -1407,12 +1376,11 @@ object canvasMod {
     var viewport: ViewportData = js.native
   }
   
-  @js.native
   trait Subscription extends StObject {
     
-    var priority: Double = js.native
+    var priority: Double
     
-    var ref: MutableRefObject[RenderCallback] = js.native
+    var ref: MutableRefObject[RenderCallback]
   }
   object Subscription {
     
@@ -1433,17 +1401,18 @@ object canvasMod {
     }
   }
   
-  type ThreeEvent[T] = T with Intersection with typings.reactThreeFiber.anon.Camera[T]
+  type ThreeEvent[T] = T & Intersection & typings.reactThreeFiber.anon.Camera[T]
   
-  @js.native
-  trait UseCanvasProps extends CanvasProps {
+  trait UseCanvasProps
+    extends StObject
+       with CanvasProps {
     
-    def forceResize(): Unit = js.native
+    def forceResize(): Unit
     
     @JSName("gl")
-    var gl_UseCanvasProps: WebGLRenderer = js.native
+    var gl_UseCanvasProps: WebGLRenderer
     
-    var size: RectReadOnly = js.native
+    var size: RectReadOnly
   }
   object UseCanvasProps {
     
@@ -1467,16 +1436,15 @@ object canvasMod {
     }
   }
   
-  @js.native
   trait Viewport extends StObject {
     
-    var distance: Double = js.native
+    var distance: Double
     
-    var factor: Double = js.native
+    var factor: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Viewport {
     
@@ -1503,122 +1471,123 @@ object canvasMod {
     }
   }
   
-  type ViewportData = Viewport with (js.Function2[/* camera */ Camera, /* target */ typings.three.mod.Vector3, Viewport])
+  type ViewportData = Viewport & (js.Function2[/* camera */ Camera, /* target */ typings.three.mod.Vector3, Viewport])
   
   /* Inlined react-three-fiber.react-three-fiber/canvas.ThreeEvent<react.react.WheelEvent<std.Element>> */
-  @js.native
-  trait WheelEvent extends DomEvent {
+  trait WheelEvent
+    extends StObject
+       with DomEvent {
     
-    var altKey: Boolean = js.native
+    var altKey: Boolean
     
-    var bubbles: Boolean = js.native
+    var bubbles: Boolean
     
-    var button: Double = js.native
+    var button: Double
     
-    var buttons: Double = js.native
+    var buttons: Double
     
-    var camera: Camera = js.native
+    var camera: Camera
     
-    var cancelable: Boolean = js.native
+    var cancelable: Boolean
     
-    var clientX: Double = js.native
+    var clientX: Double
     
-    var clientY: Double = js.native
+    var clientY: Double
     
-    var ctrlKey: Boolean = js.native
+    var ctrlKey: Boolean
     
-    var currentTarget: EventTarget with Element = js.native
+    var currentTarget: EventTarget & Element
     
-    var defaultPrevented: Boolean = js.native
+    var defaultPrevented: Boolean
     
-    var delta: Double = js.native
+    var delta: Double
     
-    var deltaMode: Double = js.native
+    var deltaMode: Double
     
-    var deltaX: Double = js.native
+    var deltaX: Double
     
-    var deltaY: Double = js.native
+    var deltaY: Double
     
-    var deltaZ: Double = js.native
+    var deltaZ: Double
     
-    var detail: Double = js.native
+    var detail: Double
     
-    var distance: Double = js.native
+    var distance: Double
     
-    var distanceToRay: js.UndefOr[Double] = js.native
+    var distanceToRay: js.UndefOr[Double] = js.undefined
     
-    var eventObject: Object3D = js.native
+    var eventObject: Object3D
     
-    var eventPhase: Double = js.native
+    var eventPhase: Double
     
-    var face: js.UndefOr[Face3 | Null] = js.native
+    var face: js.UndefOr[Face3 | Null] = js.undefined
     
-    var faceIndex: js.UndefOr[Double] = js.native
+    var faceIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
       */
-    def getModifierState(key: String): Boolean = js.native
+    def getModifierState(key: String): Boolean
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var instanceId: js.UndefOr[Double] = js.native
+    var instanceId: js.UndefOr[Double] = js.undefined
     
-    var intersections: js.Array[Intersection] = js.native
+    var intersections: js.Array[Intersection]
     
-    def isDefaultPrevented(): Boolean = js.native
+    def isDefaultPrevented(): Boolean
     
-    def isPropagationStopped(): Boolean = js.native
+    def isPropagationStopped(): Boolean
     
-    var isTrusted: Boolean = js.native
+    var isTrusted: Boolean
     
-    var metaKey: Boolean = js.native
+    var metaKey: Boolean
     
-    var movementX: Double = js.native
+    var movementX: Double
     
-    var movementY: Double = js.native
+    var movementY: Double
     
-    var nativeEvent: NativeWheelEvent = js.native
+    var nativeEvent: NativeWheelEvent
     
-    var `object`: typings.three.object3DMod.Object3D = js.native
+    var `object`: typings.three.object3DMod.Object3D
     
-    var pageX: Double = js.native
+    var pageX: Double
     
-    var pageY: Double = js.native
+    var pageY: Double
     
-    def persist(): Unit = js.native
+    def persist(): Unit
     
-    var point: Vector3 = js.native
+    var point: Vector3
     
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
     
-    var ray: Ray = js.native
+    var ray: Ray
     
-    var relatedTarget: EventTarget | Null = js.native
+    var relatedTarget: EventTarget | Null
     
-    var screenX: Double = js.native
+    var screenX: Double
     
-    var screenY: Double = js.native
+    var screenY: Double
     
-    var shiftKey: Boolean = js.native
+    var shiftKey: Boolean
     
-    var sourceEvent: typings.react.mod.WheelEvent[Element] = js.native
+    var sourceEvent: typings.react.mod.WheelEvent[Element]
     
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     
-    var stopped: Boolean = js.native
+    var stopped: Boolean
     
-    var target: EventTarget = js.native
+    var target: EventTarget
     
-    var timeStamp: Double = js.native
+    var timeStamp: Double
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var unprojectedPoint: typings.three.mod.Vector3 = js.native
+    var unprojectedPoint: typings.three.mod.Vector3
     
-    var uv: js.UndefOr[typings.three.vector2Mod.Vector2] = js.native
+    var uv: js.UndefOr[Vector2] = js.undefined
     
-    var view: AbstractView = js.native
+    var view: AbstractView
   }
   object WheelEvent {
     
@@ -1633,7 +1602,7 @@ object canvasMod {
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
-      currentTarget: EventTarget with Element,
+      currentTarget: EventTarget & Element,
       defaultPrevented: Boolean,
       delta: Double,
       deltaMode: Double,
@@ -1672,7 +1641,7 @@ object canvasMod {
       unprojectedPoint: typings.three.mod.Vector3,
       view: AbstractView
     ): WheelEvent = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], deltaMode = deltaMode.asInstanceOf[js.Any], deltaX = deltaX.asInstanceOf[js.Any], deltaY = deltaY.asInstanceOf[js.Any], deltaZ = deltaZ.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), intersections = intersections.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), point = point.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), ray = ray.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], sourceEvent = sourceEvent.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), stopped = stopped.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], unprojectedPoint = unprojectedPoint.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], deltaMode = deltaMode.asInstanceOf[js.Any], deltaX = deltaX.asInstanceOf[js.Any], deltaY = deltaY.asInstanceOf[js.Any], deltaZ = deltaZ.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), intersections = intersections.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), point = point.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), ray = ray.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], sourceEvent = sourceEvent.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), stopped = stopped.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], unprojectedPoint = unprojectedPoint.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], relatedTarget = null)
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WheelEvent]
@@ -1709,7 +1678,7 @@ object canvasMod {
       def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCurrentTarget(value: EventTarget with Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      def setCurrentTarget(value: EventTarget & Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
@@ -1862,7 +1831,7 @@ object canvasMod {
       def setUnprojectedPoint(value: typings.three.mod.Vector3): Self = StObject.set(x, "unprojectedPoint", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setUv(value: typings.three.vector2Mod.Vector2): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
+      def setUv(value: Vector2): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)

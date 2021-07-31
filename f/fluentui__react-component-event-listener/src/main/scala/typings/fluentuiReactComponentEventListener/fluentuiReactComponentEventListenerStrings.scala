@@ -3,7 +3,6 @@ package typings.fluentuiReactComponentEventListener
 import typings.fluentuiReactComponentEventListener.typesMod.EventTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fluentuiReactComponentEventListenerStrings {
@@ -174,12 +173,16 @@ object fluentuiReactComponentEventListenerStrings {
   def focusout: focusout = "focusout".asInstanceOf[focusout]
   
   @js.native
-  sealed trait fullscreenchange extends EventTypes
+  sealed trait fullscreenchange
+    extends StObject
+       with EventTypes
   @scala.inline
   def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
   
   @js.native
-  sealed trait fullscreenerror extends EventTypes
+  sealed trait fullscreenerror
+    extends StObject
+       with EventTypes
   @scala.inline
   def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
   
@@ -319,12 +322,16 @@ object fluentuiReactComponentEventListenerStrings {
   def pointerleave: pointerleave = "pointerleave".asInstanceOf[pointerleave]
   
   @js.native
-  sealed trait pointerlockchange extends EventTypes
+  sealed trait pointerlockchange
+    extends StObject
+       with EventTypes
   @scala.inline
   def pointerlockchange: pointerlockchange = "pointerlockchange".asInstanceOf[pointerlockchange]
   
   @js.native
-  sealed trait pointerlockerror extends EventTypes
+  sealed trait pointerlockerror
+    extends StObject
+       with EventTypes
   @scala.inline
   def pointerlockerror: pointerlockerror = "pointerlockerror".asInstanceOf[pointerlockerror]
   
@@ -359,7 +366,9 @@ object fluentuiReactComponentEventListenerStrings {
   def ratechange: ratechange = "ratechange".asInstanceOf[ratechange]
   
   @js.native
-  sealed trait readystatechange extends EventTypes
+  sealed trait readystatechange
+    extends StObject
+       with EventTypes
   @scala.inline
   def readystatechange: readystatechange = "readystatechange".asInstanceOf[readystatechange]
   
@@ -474,7 +483,9 @@ object fluentuiReactComponentEventListenerStrings {
   def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
   
   @js.native
-  sealed trait visibilitychange extends EventTypes
+  sealed trait visibilitychange
+    extends StObject
+       with EventTypes
   @scala.inline
   def visibilitychange: visibilitychange = "visibilitychange".asInstanceOf[visibilitychange]
   

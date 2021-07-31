@@ -2,26 +2,24 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingGetGithubPackagesBillingUserResponseData extends StObject {
   
   /**
     * Free storage space (GB) for GitHub Packages.
     */
-  var included_gigabytes_bandwidth: Double = js.native
+  var included_gigabytes_bandwidth: Double
   
   /**
     * Sum of the free and paid storage space (GB) for GitHuub Packages.
     */
-  var total_gigabytes_bandwidth_used: Double = js.native
+  var total_gigabytes_bandwidth_used: Double
   
   /**
     * Total paid storage space (GB) for GitHuub Packages.
     */
-  var total_paid_gigabytes_bandwidth_used: Double = js.native
+  var total_paid_gigabytes_bandwidth_used: Double
 }
 object BillingGetGithubPackagesBillingUserResponseData {
   

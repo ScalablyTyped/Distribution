@@ -4,26 +4,26 @@ import typings.ariaQuery.mod.ARIARole
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matchesMod {
   
-  @JSImport("@testing-library/dom/types/matches", "getDefaultNormalizer")
+  @JSImport("@testing-library/dom/types/matches", JSImport.Namespace)
   @js.native
-  def getDefaultNormalizer(): NormalizerFn = js.native
-  @JSImport("@testing-library/dom/types/matches", "getDefaultNormalizer")
-  @js.native
-  def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getDefaultNormalizer(): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")().asInstanceOf[NormalizerFn]
+  @scala.inline
+  def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizerFn]
   
   type ByRoleMatcher = ARIARole | MatcherFunction | js.Object
   
-  @js.native
   trait DefaultNormalizerOptions extends StObject {
     
-    var collapseWhitespace: js.UndefOr[Boolean] = js.native
+    var collapseWhitespace: js.UndefOr[Boolean] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object DefaultNormalizerOptions {
     
@@ -62,21 +62,20 @@ object matchesMod {
   
   type MatcherFunction = js.Function2[/* content */ String, /* element */ HTMLElement, Boolean]
   
-  @js.native
   trait MatcherOptions extends StObject {
     
     /** Use normalizer with getDefaultNormalizer instead */
-    var collapseWhitespace: js.UndefOr[Boolean] = js.native
+    var collapseWhitespace: js.UndefOr[Boolean] = js.undefined
     
-    var exact: js.UndefOr[Boolean] = js.native
+    var exact: js.UndefOr[Boolean] = js.undefined
     
-    var normalizer: js.UndefOr[NormalizerFn] = js.native
+    var normalizer: js.UndefOr[NormalizerFn] = js.undefined
     
     /** suppress suggestions for a specific query */
-    var suggest: js.UndefOr[Boolean] = js.native
+    var suggest: js.UndefOr[Boolean] = js.undefined
     
     /** Use normalizer with getDefaultNormalizer instead */
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object MatcherOptions {
     

@@ -4,36 +4,37 @@ import typings.awsSdkSharedIniFileLoader.mod.SharedConfigFiles
 import typings.awsSdkTypes.utilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fromSharedConfigFilesMod {
+  
+  @JSImport("@aws-sdk/region-provider/build/fromSharedConfigFiles", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/region-provider/build/fromSharedConfigFiles", "ENV_PROFILE")
   @js.native
   val ENV_PROFILE: /* "AWS_PROFILE" */ String = js.native
   
-  @JSImport("@aws-sdk/region-provider/build/fromSharedConfigFiles", "fromSharedConfigFiles")
-  @js.native
-  def fromSharedConfigFiles(): Provider[String] = js.native
-  @JSImport("@aws-sdk/region-provider/build/fromSharedConfigFiles", "fromSharedConfigFiles")
-  @js.native
-  def fromSharedConfigFiles(init: SharedConfigInit): Provider[String] = js.native
+  @scala.inline
+  def fromSharedConfigFiles(): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSharedConfigFiles")().asInstanceOf[Provider[String]]
+  @scala.inline
+  def fromSharedConfigFiles(init: SharedConfigInit): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSharedConfigFiles")(init.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]
   
-  @js.native
   trait SharedConfigInit
-    extends typings.awsSdkSharedIniFileLoader.mod.SharedConfigInit {
+    extends StObject
+       with typings.awsSdkSharedIniFileLoader.mod.SharedConfigInit {
     
     /**
       * A promise that will be resolved with loaded and parsed credentials files.
       * Used to avoid loading shared config files multiple times.
       */
-    var loadedConfig: js.UndefOr[js.Promise[SharedConfigFiles]] = js.native
+    var loadedConfig: js.UndefOr[js.Promise[SharedConfigFiles]] = js.undefined
     
     /**
       * The configuration profile to use.
       */
-    var profile: js.UndefOr[String] = js.native
+    var profile: js.UndefOr[String] = js.undefined
   }
   object SharedConfigInit {
     

@@ -2,36 +2,36 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SelectHTMLAttributes[T] extends HTMLAttributes[T] {
+trait SelectHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var autoComplete: js.UndefOr[String] = js.native
+  var autoComplete: js.UndefOr[String] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var autocomplete: js.UndefOr[String] = js.native
+  var autocomplete: js.UndefOr[String] = js.undefined
   
-  var autofocus: js.UndefOr[Boolean | String] = js.native
+  var autofocus: js.UndefOr[Boolean | String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean | String] = js.native
+  var disabled: js.UndefOr[Boolean | String] = js.undefined
   
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
   
-  var multiple: js.UndefOr[Boolean | String] = js.native
+  var multiple: js.UndefOr[Boolean | String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   @JSName("onChange")
-  var onChange_SelectHTMLAttributes: js.UndefOr[ChangeEventHandler[T]] = js.native
+  var onChange_SelectHTMLAttributes: js.UndefOr[ChangeEventHandler[T]] = js.undefined
   
-  var required: js.UndefOr[Boolean | String] = js.native
+  var required: js.UndefOr[Boolean | String] = js.undefined
   
-  var size: js.UndefOr[Double | String] = js.native
+  var size: js.UndefOr[Double | String] = js.undefined
   
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
 }
 object SelectHTMLAttributes {
   
@@ -42,7 +42,7 @@ object SelectHTMLAttributes {
   }
   
   @scala.inline
-  implicit class SelectHTMLAttributesMutableBuilder[Self <: SelectHTMLAttributes[_], T] (val x: Self with SelectHTMLAttributes[T]) extends AnyVal {
+  implicit class SelectHTMLAttributesMutableBuilder[Self <: SelectHTMLAttributes[?], T] (val x: Self & SelectHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])

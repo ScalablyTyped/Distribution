@@ -4,26 +4,26 @@ import typings.intlMessageformatParser.intlMessageformatParserNumbers.`1`
 import typings.std.Intl.DateTimeFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DateTimeSkeleton extends Skeleton {
+trait DateTimeSkeleton
+  extends StObject
+     with Skeleton {
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var parsedOptions: DateTimeFormatOptions = js.native
+  var parsedOptions: DateTimeFormatOptions
   
-  var pattern: String = js.native
+  var pattern: String
   
-  var `type`: `1` = js.native
+  var `type`: `1`
 }
 object DateTimeSkeleton {
   
   @scala.inline
-  def apply(parsedOptions: DateTimeFormatOptions, pattern: String, `type`: `1`): DateTimeSkeleton = {
+  def apply(parsedOptions: DateTimeFormatOptions, pattern: String): DateTimeSkeleton = {
     val __obj = js.Dynamic.literal(parsedOptions = parsedOptions.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(1)
     __obj.asInstanceOf[DateTimeSkeleton]
   }
   

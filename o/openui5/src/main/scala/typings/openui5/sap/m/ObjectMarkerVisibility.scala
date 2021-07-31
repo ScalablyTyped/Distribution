@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait ObjectMarkerVisibility extends StObject
 object ObjectMarkerVisibility extends StObject {
   
   @js.native
-  sealed trait IconAndText extends ObjectMarkerVisibility
+  sealed trait IconAndText
+    extends StObject
+       with ObjectMarkerVisibility
   
   @js.native
-  sealed trait IconOnly extends ObjectMarkerVisibility
+  sealed trait IconOnly
+    extends StObject
+       with ObjectMarkerVisibility
   
   @js.native
-  sealed trait TextOnly extends ObjectMarkerVisibility
+  sealed trait TextOnly
+    extends StObject
+       with ObjectMarkerVisibility
 }

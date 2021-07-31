@@ -4,33 +4,32 @@ import typings.qlik.qlikStrings.number
 import typings.qlik.qlikStrings.slider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertySlider
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var component: slider = js.native
+  var component: slider
   
-  var defaultValue: js.UndefOr[Double] = js.native
+  var defaultValue: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CustomPropertySlider: number = js.native
+  var type_CustomPropertySlider: number
 }
 object CustomPropertySlider {
   
   @scala.inline
-  def apply(component: slider, `type`: number): CustomPropertySlider = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): CustomPropertySlider = {
+    val __obj = js.Dynamic.literal(component = "slider")
+    __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[CustomPropertySlider]
   }
   

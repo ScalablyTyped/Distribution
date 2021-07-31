@@ -3,32 +3,30 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollIntoViewIfNeededRequest extends StObject {
   
   /**
     * Identifier of the backend node.
     */
-  var backendNodeId: js.UndefOr[BackendNodeId] = js.native
+  var backendNodeId: js.UndefOr[BackendNodeId] = js.undefined
   
   /**
     * Identifier of the node.
     */
-  var nodeId: js.UndefOr[NodeId] = js.native
+  var nodeId: js.UndefOr[NodeId] = js.undefined
   
   /**
     * JavaScript object id of the node wrapper.
     */
-  var objectId: js.UndefOr[RemoteObjectId] = js.native
+  var objectId: js.UndefOr[RemoteObjectId] = js.undefined
   
   /**
     * The rect to be scrolled into view, relative to the node's border box, in CSS pixels.
     * When omitted, center of the node will be used, similar to Element.scrollIntoView.
     */
-  var rect: js.UndefOr[Rect] = js.native
+  var rect: js.UndefOr[Rect] = js.undefined
 }
 object ScrollIntoViewIfNeededRequest {
   

@@ -2,7 +2,6 @@ package typings.sharepoint.CUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,158 +11,262 @@ sealed trait PMarker extends StObject
 object PMarker extends StObject {
   
   @js.native
-  sealed trait beginSession extends PMarker
+  sealed trait beginSession
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait endSession extends PMarker
+  sealed trait endSession
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIAddAndPositionBackFrameEnd extends PMarker
+  sealed trait perfCUIAddAndPositionBackFrameEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIAddAndPositionBackFrameStart extends PMarker
+  sealed trait perfCUIAddAndPositionBackFrameStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIDropDownOnArrowButtonClickEnd extends PMarker
+  sealed trait perfCUIDropDownOnArrowButtonClickEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIDropDownOnArrowButtonClickStart extends PMarker
+  sealed trait perfCUIDropDownOnArrowButtonClickStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIFlyoutAnchorOnClickEnd extends PMarker
+  sealed trait perfCUIFlyoutAnchorOnClickEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIFlyoutAnchorOnClickStart extends PMarker
+  sealed trait perfCUIFlyoutAnchorOnClickStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonButtonOnClickEnd extends PMarker
+  sealed trait perfCUIRibbonButtonOnClickEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonButtonOnClickStart extends PMarker
+  sealed trait perfCUIRibbonButtonOnClickStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonCompleteConstruction extends PMarker
+  sealed trait perfCUIRibbonCompleteConstruction
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonEditWikiPageEnd extends PMarker
+  sealed trait perfCUIRibbonEditWikiPageEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonEditWikiPageStart extends PMarker
+  sealed trait perfCUIRibbonEditWikiPageStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonInitPercvdEnd extends PMarker
+  sealed trait perfCUIRibbonInitPercvdEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonInitStart extends PMarker
+  sealed trait perfCUIRibbonInitStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonInsertTableOnClickEnd extends PMarker
+  sealed trait perfCUIRibbonInsertTableOnClickEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonInsertTableOnClickStart extends PMarker
+  sealed trait perfCUIRibbonInsertTableOnClickStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonQueryDataEnd extends PMarker
+  sealed trait perfCUIRibbonQueryDataEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonQueryDataStart extends PMarker
+  sealed trait perfCUIRibbonQueryDataStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonTabSwitchWarmEnd extends PMarker
+  sealed trait perfCUIRibbonTabSwitchWarmEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonTabSwitchWarmPercvdEnd extends PMarker
+  sealed trait perfCUIRibbonTabSwitchWarmPercvdEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonTabSwitchWarmStart extends PMarker
+  sealed trait perfCUIRibbonTabSwitchWarmStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonToggleButtonOnClickEnd extends PMarker
+  sealed trait perfCUIRibbonToggleButtonOnClickEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfCUIRibbonToggleButtonOnClickStart extends PMarker
+  sealed trait perfCUIRibbonToggleButtonOnClickStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfPLTxInstrumentEnd extends PMarker
+  sealed trait perfPLTxInstrumentEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfPLTxInstrumentStart extends PMarker
+  sealed trait perfPLTxInstrumentStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfSPSSaveStatusNoteBegin extends PMarker
+  sealed trait perfSPSSaveStatusNoteBegin
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfSPSSaveStatusNoteEnd extends PMarker
+  sealed trait perfSPSSaveStatusNoteEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSBreadcrumbEnd extends PMarker
+  sealed trait perfWSSBreadcrumbEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSBreadcrumbStart extends PMarker
+  sealed trait perfWSSBreadcrumbStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSCalendarRenderEnd extends PMarker
+  sealed trait perfWSSCalendarRenderEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSCalendarRenderStart extends PMarker
+  sealed trait perfWSSCalendarRenderStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSDialogClosed extends PMarker
+  sealed trait perfWSSDialogClosed
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSDialogShow extends PMarker
+  sealed trait perfWSSDialogShow
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSECBClickEnd extends PMarker
+  sealed trait perfWSSECBClickEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSECBClickStart extends PMarker
+  sealed trait perfWSSECBClickStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSFilterSortEnd extends PMarker
+  sealed trait perfWSSFilterSortEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSFilterSortStart extends PMarker
+  sealed trait perfWSSFilterSortStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSMMUOpenEnd extends PMarker
+  sealed trait perfWSSMMUOpenEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSMMUOpenStart extends PMarker
+  sealed trait perfWSSMMUOpenStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSRTEAutoCompleteSetResultsEnd extends PMarker
+  sealed trait perfWSSRTEAutoCompleteSetResultsEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSRTEAutoCompleteSetResultsStart extends PMarker
+  sealed trait perfWSSRTEAutoCompleteSetResultsStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSRTEDialogOnLoadEnd extends PMarker
+  sealed trait perfWSSRTEDialogOnLoadEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSRTEDialogOnOkButtonClickStart extends PMarker
+  sealed trait perfWSSRTEDialogOnOkButtonClickStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSSelectItemEnd extends PMarker
+  sealed trait perfWSSSelectItemEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSSelectItemStart extends PMarker
+  sealed trait perfWSSSelectItemStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSSelectOrDeselectAllEnd extends PMarker
+  sealed trait perfWSSSelectOrDeselectAllEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSSelectOrDeselectAllStart extends PMarker
+  sealed trait perfWSSSelectOrDeselectAllStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSWebPartComponentMouseClickEnd extends PMarker
+  sealed trait perfWSSWebPartComponentMouseClickEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSWebPartComponentMouseClickStart extends PMarker
+  sealed trait perfWSSWebPartComponentMouseClickStart
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSWikiUpdatePanelEnd extends PMarker
+  sealed trait perfWSSWikiUpdatePanelEnd
+    extends StObject
+       with PMarker
   
   @js.native
-  sealed trait perfWSSWikiUpdatePanelStart extends PMarker
+  sealed trait perfWSSWikiUpdatePanelStart
+    extends StObject
+       with PMarker
 }

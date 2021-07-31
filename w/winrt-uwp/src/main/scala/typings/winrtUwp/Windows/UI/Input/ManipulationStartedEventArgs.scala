@@ -4,21 +4,19 @@ import typings.winrtUwp.Windows.Devices.Input.PointerDeviceType
 import typings.winrtUwp.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the ManipulationStarted event. */
-@js.native
 trait ManipulationStartedEventArgs extends StObject {
   
   /** Gets values that indicate the accumulated transformation deltas (translation, rotation, scale) for a manipulation before the ManipulationStarted event. */
-  var cumulative: ManipulationDelta = js.native
+  var cumulative: ManipulationDelta
   
   /** Gets the device type of the input source. */
-  var pointerDeviceType: PointerDeviceType = js.native
+  var pointerDeviceType: PointerDeviceType
   
   /** Gets the location of the pointer associated with the manipulation for the last manipulation event. */
-  var position: Point = js.native
+  var position: Point
 }
 object ManipulationStartedEventArgs {
   

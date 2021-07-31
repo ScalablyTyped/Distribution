@@ -10,7 +10,6 @@ import typings.firebaseDatabase.viewCacheMod.ViewCache
 import typings.firebaseDatabase.writeTreeMod.WriteTreeRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewProcessorMod {

@@ -2,17 +2,16 @@ package typings.vueRouter.routerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteConfigMultipleViews
-  extends RouteConfigBase
+  extends StObject
+     with RouteConfigBase
      with RouteConfig {
   
-  var components: js.UndefOr[Dictionary[Component]] = js.native
+  var components: js.UndefOr[Dictionary[Component]] = js.undefined
   
-  var props: js.UndefOr[Dictionary[Boolean | js.Object | RoutePropsFunction]] = js.native
+  var props: js.UndefOr[Dictionary[Boolean | js.Object | RoutePropsFunction]] = js.undefined
 }
 object RouteConfigMultipleViews {
   

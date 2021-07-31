@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchPermissionModifications extends StObject {
   
   /**
     * The AWS account ID to add to the list of launch permissions for the AMI.
     */
-  var Add: js.UndefOr[LaunchPermissionList] = js.native
+  var Add: js.UndefOr[LaunchPermissionList] = js.undefined
   
   /**
     * The AWS account ID to remove from the list of launch permissions for the AMI.
     */
-  var Remove: js.UndefOr[LaunchPermissionList] = js.native
+  var Remove: js.UndefOr[LaunchPermissionList] = js.undefined
 }
 object LaunchPermissionModifications {
   

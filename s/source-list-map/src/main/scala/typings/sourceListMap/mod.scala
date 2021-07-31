@@ -5,10 +5,13 @@ import typings.sourceListMap.anon.Map
 import typings.sourceListMap.anon.Sources
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("source-list-map", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("source-list-map", "CodeNode")
   @js.native
@@ -52,59 +55,55 @@ object mod {
     def this(generatedCode: CodeNode) = this()
     def this(generatedCode: SourceListMap) = this()
     def this(generatedCode: SourceNode) = this()
-    def this(generatedCode: js.UndefOr[scala.Nothing], source: String) = this()
     def this(generatedCode: String, source: String) = this()
+    def this(generatedCode: Unit, source: String) = this()
     def this(generatedCode: CodeNode, source: String) = this()
     def this(generatedCode: SourceListMap, source: String) = this()
     def this(generatedCode: SourceNode, source: String) = this()
-    def this(
-      generatedCode: js.UndefOr[scala.Nothing],
-      source: js.UndefOr[scala.Nothing],
-      originalSource: String
-    ) = this()
-    def this(generatedCode: js.UndefOr[scala.Nothing], source: String, originalSource: String) = this()
-    def this(generatedCode: String, source: js.UndefOr[scala.Nothing], originalSource: String) = this()
     def this(generatedCode: String, source: String, originalSource: String) = this()
-    def this(generatedCode: CodeNode, source: js.UndefOr[scala.Nothing], originalSource: String) = this()
+    def this(generatedCode: String, source: Unit, originalSource: String) = this()
+    def this(generatedCode: Unit, source: String, originalSource: String) = this()
+    def this(generatedCode: Unit, source: Unit, originalSource: String) = this()
     def this(generatedCode: CodeNode, source: String, originalSource: String) = this()
-    def this(generatedCode: SourceListMap, source: js.UndefOr[scala.Nothing], originalSource: String) = this()
+    def this(generatedCode: CodeNode, source: Unit, originalSource: String) = this()
     def this(generatedCode: SourceListMap, source: String, originalSource: String) = this()
-    def this(generatedCode: SourceNode, source: js.UndefOr[scala.Nothing], originalSource: String) = this()
+    def this(generatedCode: SourceListMap, source: Unit, originalSource: String) = this()
     def this(generatedCode: SourceNode, source: String, originalSource: String) = this()
+    def this(generatedCode: SourceNode, source: Unit, originalSource: String) = this()
     
     def add(generatedCode: String): Unit = js.native
-    def add(generatedCode: String, source: js.UndefOr[scala.Nothing], originalSource: String): Unit = js.native
     def add(generatedCode: String, source: String): Unit = js.native
     def add(generatedCode: String, source: String, originalSource: String): Unit = js.native
+    def add(generatedCode: String, source: Unit, originalSource: String): Unit = js.native
     def add(generatedCode: CodeNode): Unit = js.native
-    def add(generatedCode: CodeNode, source: js.UndefOr[scala.Nothing], originalSource: String): Unit = js.native
     def add(generatedCode: CodeNode, source: String): Unit = js.native
     def add(generatedCode: CodeNode, source: String, originalSource: String): Unit = js.native
+    def add(generatedCode: CodeNode, source: Unit, originalSource: String): Unit = js.native
     def add(generatedCode: SourceListMap): Unit = js.native
-    def add(generatedCode: SourceListMap, source: js.UndefOr[scala.Nothing], originalSource: String): Unit = js.native
     def add(generatedCode: SourceListMap, source: String): Unit = js.native
     def add(generatedCode: SourceListMap, source: String, originalSource: String): Unit = js.native
+    def add(generatedCode: SourceListMap, source: Unit, originalSource: String): Unit = js.native
     def add(generatedCode: SourceNode): Unit = js.native
-    def add(generatedCode: SourceNode, source: js.UndefOr[scala.Nothing], originalSource: String): Unit = js.native
     def add(generatedCode: SourceNode, source: String): Unit = js.native
     def add(generatedCode: SourceNode, source: String, originalSource: String): Unit = js.native
+    def add(generatedCode: SourceNode, source: Unit, originalSource: String): Unit = js.native
     
     var children: js.Array[SourceNode | CodeNode] = js.native
     
     def mapGeneratedCode(fn: js.Function1[/* code */ String, String]): Unit = js.native
     
     def prepend(generatedCode: CodeNode): Unit = js.native
-    def prepend(generatedCode: CodeNode, source: js.UndefOr[scala.Nothing], originalSource: String): Unit = js.native
     def prepend(generatedCode: CodeNode, source: String): Unit = js.native
     def prepend(generatedCode: CodeNode, source: String, originalSource: String): Unit = js.native
+    def prepend(generatedCode: CodeNode, source: Unit, originalSource: String): Unit = js.native
     def prepend(generatedCode: SourceListMap): Unit = js.native
-    def prepend(generatedCode: SourceListMap, source: js.UndefOr[scala.Nothing], originalSource: String): Unit = js.native
     def prepend(generatedCode: SourceListMap, source: String): Unit = js.native
     def prepend(generatedCode: SourceListMap, source: String, originalSource: String): Unit = js.native
+    def prepend(generatedCode: SourceListMap, source: Unit, originalSource: String): Unit = js.native
     def prepend(generatedCode: SourceNode): Unit = js.native
-    def prepend(generatedCode: SourceNode, source: js.UndefOr[scala.Nothing], originalSource: String): Unit = js.native
     def prepend(generatedCode: SourceNode, source: String): Unit = js.native
     def prepend(generatedCode: SourceNode, source: String, originalSource: String): Unit = js.native
+    def prepend(generatedCode: SourceNode, source: Unit, originalSource: String): Unit = js.native
     
     def toStringWithSourceMap(options: File): Map = js.native
   }
@@ -130,7 +129,6 @@ object mod {
     var startingLine: Double = js.native
   }
   
-  @JSImport("source-list-map", "fromStringWithSourceMap")
-  @js.native
-  def fromStringWithSourceMap(code: String, map: Sources): SourceListMap = js.native
+  @scala.inline
+  def fromStringWithSourceMap(code: String, map: Sources): SourceListMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStringWithSourceMap")(code.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[SourceListMap]
 }

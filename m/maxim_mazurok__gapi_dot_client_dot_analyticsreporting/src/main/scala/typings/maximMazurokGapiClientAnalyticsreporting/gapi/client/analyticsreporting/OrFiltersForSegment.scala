@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrFiltersForSegment extends StObject {
   
   /** List of segment filters to be combined with a `OR` operator. */
-  var segmentFilterClauses: js.UndefOr[js.Array[SegmentFilterClause]] = js.native
+  var segmentFilterClauses: js.UndefOr[js.Array[SegmentFilterClause]] = js.undefined
 }
 object OrFiltersForSegment {
   

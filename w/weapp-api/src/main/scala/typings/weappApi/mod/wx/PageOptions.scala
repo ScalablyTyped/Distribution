@@ -3,30 +3,29 @@ package typings.weappApi.mod.wx
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageOptions
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
   /** 页面的初始数据 */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /** 生命周期函数--监听页面隐藏 */
-  var onHide: js.UndefOr[NoneParamCallback] = js.native
+  var onHide: js.UndefOr[NoneParamCallback] = js.undefined
   
   /** 生命周期函数--监听页面加载 */
-  var onLoad: js.UndefOr[js.Function1[/* options */ js.Any, Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function1[/* options */ js.Any, Unit]] = js.undefined
   
   /** 生命周期函数--监听页面渲染完成 */
-  var onReady: js.UndefOr[NoneParamCallback] = js.native
+  var onReady: js.UndefOr[NoneParamCallback] = js.undefined
   
   /** 生命周期函数--监听页面显示 */
-  var onShow: js.UndefOr[NoneParamCallback] = js.native
+  var onShow: js.UndefOr[NoneParamCallback] = js.undefined
   
   /** 生命周期函数--监听页面卸载 */
-  var onUnload: js.UndefOr[NoneParamCallback] = js.native
+  var onUnload: js.UndefOr[NoneParamCallback] = js.undefined
 }
 object PageOptions {
   

@@ -2,31 +2,29 @@ package typings.clearbladejsNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestOptions extends StObject {
   
-  var URI: js.UndefOr[String] = js.native
+  var URI: js.UndefOr[String] = js.undefined
   
-  var authToken: js.UndefOr[String] = js.native
+  var authToken: js.UndefOr[String] = js.undefined
   
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
-  var endpoint: js.UndefOr[String] = js.native
+  var endpoint: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var qs: js.UndefOr[String] = js.native
+  var qs: js.UndefOr[String] = js.undefined
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var systemSecret: String = js.native
+  var systemSecret: String
   
-  var useUser: js.UndefOr[Boolean] = js.native
+  var useUser: js.UndefOr[Boolean] = js.undefined
   
-  var user: js.UndefOr[APIUser] = js.native
+  var user: js.UndefOr[APIUser] = js.undefined
 }
 object RequestOptions {
   

@@ -3,17 +3,15 @@ package typings.ejWebAll.anon
 import typings.ejWebAll.ej.datavisualization.TreeMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTreeMap extends StObject {
   
   /* static member */
-  var Locale: js.Any = js.native
+  var Locale: js.Any
   
   /* static member */
-  var fn: TreeMap = js.native
+  var fn: TreeMap
 }
 object TypeofTreeMap {
   

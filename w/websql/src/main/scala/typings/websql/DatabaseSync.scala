@@ -2,21 +2,19 @@ package typings.websql
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 4.4 Synchronous database API
   */
-@js.native
 trait DatabaseSync extends StObject {
   
-  def changeVersion(oldVersion: DOMString, newVersion: DOMString, callback: SQLTransactionSyncCallback): Unit = js.native
+  def changeVersion(oldVersion: DOMString, newVersion: DOMString, callback: SQLTransactionSyncCallback): Unit
   
-  def readTransaction(callback: SQLTransactionSyncCallback): Unit = js.native
+  def readTransaction(callback: SQLTransactionSyncCallback): Unit
   
-  def transaction(callback: SQLTransactionSyncCallback): Unit = js.native
+  def transaction(callback: SQLTransactionSyncCallback): Unit
   
-  /*readonly/const*/ var version: DOMString = js.native
+  /*readonly/const*/ var version: DOMString
 }
 object DatabaseSync {
   

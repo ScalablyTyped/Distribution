@@ -58,7 +58,6 @@ import typings.vscodeLanguageclient.vscodeLanguageclientStrings.workspaceSlashsy
 import typings.vscodeLanguageserverProtocol.protocolMod.InitializeResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient/lib/client", "BaseLanguageClient")
@@ -151,71 +150,71 @@ abstract class BaseLanguageClient protected () extends StObject {
   var doInitialize: js.Any = js.native
   
   def error(message: String): Unit = js.native
-  def error(message: String, data: js.UndefOr[scala.Nothing], showNotification: Boolean): Unit = js.native
   def error(message: String, data: js.Any): Unit = js.native
   def error(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
+  def error(message: String, data: Unit, showNotification: Boolean): Unit = js.native
   
   var fillInitializeParams: js.Any = js.native
   
   var forceDocumentSync: js.Any = js.native
   
   @JSName("getFeature")
-  def getFeature_textDocumentcodeAction(request: textDocumentSlashcodeAction): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[CodeActionProvider[typings.vscode.mod.CodeAction]] = js.native
+  def getFeature_textDocumentcodeAction(request: textDocumentSlashcodeAction): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[CodeActionProvider[typings.vscode.mod.CodeAction]] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentcompletion(request: textDocumentSlashcompletion): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[CompletionItemProvider[typings.vscode.mod.CompletionItem]] = js.native
+  def getFeature_textDocumentcompletion(request: textDocumentSlashcompletion): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[CompletionItemProvider[typings.vscode.mod.CompletionItem]] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentdeclaration(request: textDocumentSlashdeclaration): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[DeclarationProvider] = js.native
+  def getFeature_textDocumentdeclaration(request: textDocumentSlashdeclaration): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[DeclarationProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentdefinition(request: textDocumentSlashdefinition): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[DefinitionProvider] = js.native
+  def getFeature_textDocumentdefinition(request: textDocumentSlashdefinition): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[DefinitionProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentdidChange(request: textDocumentSlashdidChange): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with (NotificationFeature[js.Function1[/* textDocument */ typings.vscode.mod.TextDocument, Unit]]) = js.native
+  def getFeature_textDocumentdidChange(request: textDocumentSlashdidChange): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & (NotificationFeature[js.Function1[/* textDocument */ typings.vscode.mod.TextDocument, Unit]]) = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentdidClose(request: textDocumentSlashdidClose): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with (NotificationFeature[js.Function1[/* textDocument */ typings.vscode.mod.TextDocument, Unit]]) = js.native
+  def getFeature_textDocumentdidClose(request: textDocumentSlashdidClose): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & (NotificationFeature[js.Function1[/* textDocument */ typings.vscode.mod.TextDocument, Unit]]) = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentdidOpen(request: textDocumentSlashdidOpen): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with (NotificationFeature[js.Function1[/* textDocument */ typings.vscode.mod.TextDocument, Unit]]) = js.native
+  def getFeature_textDocumentdidOpen(request: textDocumentSlashdidOpen): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & (NotificationFeature[js.Function1[/* textDocument */ typings.vscode.mod.TextDocument, Unit]]) = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentdidSave(request: textDocumentSlashdidSave): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with (NotificationFeature[js.Function1[/* textDocument */ typings.vscode.mod.TextDocument, Unit]]) = js.native
+  def getFeature_textDocumentdidSave(request: textDocumentSlashdidSave): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & (NotificationFeature[js.Function1[/* textDocument */ typings.vscode.mod.TextDocument, Unit]]) = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentdocumentColor(request: textDocumentSlashdocumentColor): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[DocumentColorProvider] = js.native
+  def getFeature_textDocumentdocumentColor(request: textDocumentSlashdocumentColor): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[DocumentColorProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentdocumentHighlight(request: textDocumentSlashdocumentHighlight): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[DocumentHighlightProvider] = js.native
+  def getFeature_textDocumentdocumentHighlight(request: textDocumentSlashdocumentHighlight): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[DocumentHighlightProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentdocumentLink(request: textDocumentSlashdocumentLink): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[DocumentLinkProvider[typings.vscode.mod.DocumentLink]] = js.native
+  def getFeature_textDocumentdocumentLink(request: textDocumentSlashdocumentLink): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[DocumentLinkProvider[typings.vscode.mod.DocumentLink]] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentfoldingRange(request: textDocumentSlashfoldingRange): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[FoldingRangeProvider] = js.native
+  def getFeature_textDocumentfoldingRange(request: textDocumentSlashfoldingRange): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[FoldingRangeProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentformatting(request: textDocumentSlashformatting): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[DocumentFormattingEditProvider] = js.native
+  def getFeature_textDocumentformatting(request: textDocumentSlashformatting): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[DocumentFormattingEditProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumenthover(request: textDocumentSlashhover): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[HoverProvider] = js.native
+  def getFeature_textDocumenthover(request: textDocumentSlashhover): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[HoverProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentimplementation(request: textDocumentSlashimplementation): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[ImplementationProvider] = js.native
+  def getFeature_textDocumentimplementation(request: textDocumentSlashimplementation): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[ImplementationProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentonTypeFormatting(request: textDocumentSlashonTypeFormatting): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[OnTypeFormattingEditProvider] = js.native
+  def getFeature_textDocumentonTypeFormatting(request: textDocumentSlashonTypeFormatting): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[OnTypeFormattingEditProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentprepareCallHierarchy(request: textDocumentSlashprepareCallHierarchy): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[TypeDefinitionProvider] = js.native
+  def getFeature_textDocumentprepareCallHierarchy(request: textDocumentSlashprepareCallHierarchy): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[TypeDefinitionProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentrangeFormatting(request: textDocumentSlashrangeFormatting): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[DocumentRangeFormattingEditProvider] = js.native
+  def getFeature_textDocumentrangeFormatting(request: textDocumentSlashrangeFormatting): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[DocumentRangeFormattingEditProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentreferences(request: textDocumentSlashreferences): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[ReferenceProvider] = js.native
+  def getFeature_textDocumentreferences(request: textDocumentSlashreferences): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[ReferenceProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentrename(request: textDocumentSlashrename): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[RenameProvider] = js.native
+  def getFeature_textDocumentrename(request: textDocumentSlashrename): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[RenameProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentselectionRange(request: textDocumentSlashselectionRange): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[SelectionRangeProvider] = js.native
+  def getFeature_textDocumentselectionRange(request: textDocumentSlashselectionRange): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[SelectionRangeProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentsignatureHelp(request: textDocumentSlashsignatureHelp): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[SignatureHelpProvider] = js.native
+  def getFeature_textDocumentsignatureHelp(request: textDocumentSlashsignatureHelp): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[SignatureHelpProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumenttypeDefinition(request: textDocumentSlashtypeDefinition): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[TypeDefinitionProvider] = js.native
+  def getFeature_textDocumenttypeDefinition(request: textDocumentSlashtypeDefinition): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[TypeDefinitionProvider] = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentwillSave(request: textDocumentSlashwillSave): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with (NotificationFeature[js.Function1[/* textDocument */ typings.vscode.mod.TextDocument, Unit]]) = js.native
+  def getFeature_textDocumentwillSave(request: textDocumentSlashwillSave): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & (NotificationFeature[js.Function1[/* textDocument */ typings.vscode.mod.TextDocument, Unit]]) = js.native
   @JSName("getFeature")
-  def getFeature_textDocumentwillSaveWaitUntil(request: textDocumentSlashwillSaveWaitUntil): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with (NotificationFeature[
+  def getFeature_textDocumentwillSaveWaitUntil(request: textDocumentSlashwillSaveWaitUntil): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & (NotificationFeature[
     js.Function1[
       /* textDocument */ typings.vscode.mod.TextDocument, 
       ProviderResult[js.Array[typings.vscode.mod.TextEdit]]
     ]
   ]) = js.native
   @JSName("getFeature")
-  def getFeature_workspacesymbol(request: workspaceSlashsymbol): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with WorkspaceProviderFeature[WorkspaceSymbolProvider[typings.vscode.mod.SymbolInformation]] = js.native
+  def getFeature_workspacesymbol(request: workspaceSlashsymbol): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & WorkspaceProviderFeature[WorkspaceSymbolProvider[typings.vscode.mod.SymbolInformation]] = js.native
   
   var getPublicState: js.Any = js.native
   
@@ -236,15 +235,15 @@ abstract class BaseLanguageClient protected () extends StObject {
   var hookFileEvents: js.Any = js.native
   
   def info(message: String): Unit = js.native
-  def info(message: String, data: js.UndefOr[scala.Nothing], showNotification: Boolean): Unit = js.native
   def info(message: String, data: js.Any): Unit = js.native
   def info(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
+  def info(message: String, data: Unit, showNotification: Boolean): Unit = js.native
   
   var initialize: js.Any = js.native
   
   var initializeFeatures: js.Any = js.native
   
-  def initializeResult: js.UndefOr[InitializeResult[_]] = js.native
+  def initializeResult: js.UndefOr[InitializeResult[js.Any]] = js.native
   
   var isConnectionActive: js.Any = js.native
   
@@ -295,7 +294,7 @@ abstract class BaseLanguageClient protected () extends StObject {
     handler: RequestHandler[P, R, E]
   ): Unit = js.native
   
-  def onTelemetry: typings.vscodeJsonrpc.eventsMod.Event[_] = js.native
+  def onTelemetry: typings.vscodeJsonrpc.eventsMod.Event[js.Any] = js.native
   
   def outputChannel: OutputChannel = js.native
   
@@ -305,10 +304,10 @@ abstract class BaseLanguageClient protected () extends StObject {
   
   /* protected */ def registerBuiltinFeatures(): Unit = js.native
   
-  def registerFeature(feature: DynamicFeature[_]): Unit = js.native
+  def registerFeature(feature: DynamicFeature[js.Any]): Unit = js.native
   def registerFeature(feature: StaticFeature): Unit = js.native
   
-  def registerFeatures(features: js.Array[StaticFeature | DynamicFeature[_]]): Unit = js.native
+  def registerFeatures(features: js.Array[StaticFeature | DynamicFeature[js.Any]]): Unit = js.native
   
   var resolveConnection: js.Any = js.native
   
@@ -353,7 +352,7 @@ abstract class BaseLanguageClient protected () extends StObject {
   def trace_=(value: typings.vscodeJsonrpc.mod.Trace): Unit = js.native
   
   def warn(message: String): Unit = js.native
-  def warn(message: String, data: js.UndefOr[scala.Nothing], showNotification: Boolean): Unit = js.native
   def warn(message: String, data: js.Any): Unit = js.native
   def warn(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
+  def warn(message: String, data: Unit, showNotification: Boolean): Unit = js.native
 }

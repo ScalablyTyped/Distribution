@@ -2,23 +2,21 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileChooser extends StObject {
   
   /**
     * Accept the file chooser request with given paths.
     * If some of the filePaths are relative paths, then they are resolved relative to the current working directory.
     */
-  def accept(filePaths: js.Array[String]): js.Promise[Unit] = js.native
+  def accept(filePaths: js.Array[String]): js.Promise[Unit]
   
   /** Closes the file chooser without selecting any files. */
-  def cancel(): js.Promise[Unit] = js.native
+  def cancel(): js.Promise[Unit]
   
   /** Whether file chooser allow for multiple file selection. */
-  def isMultiple(): Boolean = js.native
+  def isMultiple(): Boolean
 }
 object FileChooser {
   

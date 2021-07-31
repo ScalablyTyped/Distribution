@@ -3,13 +3,16 @@ package typings.ionic
 import typings.ionic.anon.Req
 import typings.ionic.definitionsMod.APIResponse
 import typings.ionic.definitionsMod.APIResponseSuccess
+import typings.ionic.definitionsMod.HttpMethod
 import typings.ionic.definitionsMod.IClient
 import typings.ionic.definitionsMod.IConfig
 import typings.ionic.definitionsMod.IPaginator
 import typings.ionic.definitionsMod.PagePaginatorState
+import typings.ionic.definitionsMod.PaginateArgs
 import typings.ionic.definitionsMod.PaginatorDeps
 import typings.ionic.definitionsMod.PaginatorGuard
 import typings.ionic.definitionsMod.PaginatorRequestGenerator
+import typings.ionic.definitionsMod.PaginatorState
 import typings.ionic.definitionsMod.ResourceClientRequestModifiers
 import typings.ionic.definitionsMod.Response
 import typings.ionic.definitionsMod.SuperAgentError
@@ -19,10 +22,13 @@ import typings.std.IteratorResult
 import typings.superagent.mod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpMod {
+  
+  @JSImport("ionic/lib/http", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ionic/lib/http", "CONTENT_TYPE_JSON")
   @js.native
@@ -30,8 +36,22 @@ object httpMod {
   
   @JSImport("ionic/lib/http", "Client")
   @js.native
-  class Client protected () extends IClient {
+  class Client protected ()
+    extends StObject
+       with IClient {
     def this(config: IConfig) = this()
+    
+    /* CompleteClass */
+    var config: IConfig = js.native
+    
+    /* CompleteClass */
+    override def `do`(req: typings.ionic.definitionsMod.SuperAgentRequest): js.Promise[APIResponseSuccess] = js.native
+    
+    /* CompleteClass */
+    override def make(method: HttpMethod, path: String): js.Promise[Req] = js.native
+    
+    /* CompleteClass */
+    override def paginate[T /* <: Response[js.Array[js.Object]] */](args: PaginateArgs[T]): IPaginator[T, PaginatorState] = js.native
   }
   
   @JSImport("ionic/lib/http", "ERROR_UNKNOWN_CONTENT_TYPE")
@@ -44,7 +64,9 @@ object httpMod {
   
   @JSImport("ionic/lib/http", "Paginator")
   @js.native
-  class Paginator[T /* <: Response[js.Array[js.Object]] */] protected () extends IPaginator[T, PagePaginatorState] {
+  class Paginator[T /* <: Response[js.Array[js.Object]] */] protected ()
+    extends StObject
+       with IPaginator[T, PagePaginatorState] {
     def this(hasClientReqgenGuardStateMax: PaginatorDeps[T, PagePaginatorState]) = this()
     
     var client: IClient = js.native
@@ -58,7 +80,7 @@ object httpMod {
     
     var max: js.UndefOr[Double] = js.native
     
-    def next(): IteratorResult[js.Promise[T], _] = js.native
+    def next(): IteratorResult[js.Promise[T], js.Any] = js.native
     
     /* protected */ def reqgen(): js.Promise[Req] = js.native
     @JSName("reqgen")
@@ -77,7 +99,9 @@ object httpMod {
   
   @JSImport("ionic/lib/http", "TokenPaginator")
   @js.native
-  class TokenPaginator[T /* <: Response[js.Array[js.Object]] */] protected () extends IPaginator[T, TokenPaginatorState] {
+  class TokenPaginator[T /* <: Response[js.Array[js.Object]] */] protected ()
+    extends StObject
+       with IPaginator[T, TokenPaginatorState] {
     def this(hasClientReqgenGuardStateMax: PaginatorDeps[T, TokenPaginatorState]) = this()
     
     var client: IClient = js.native
@@ -93,43 +117,34 @@ object httpMod {
     
     var max: js.UndefOr[Double] = js.native
     
-    def next(): IteratorResult[js.Promise[T], _] = js.native
+    def next(): IteratorResult[js.Promise[T], js.Any] = js.native
     
     /* protected */ def reqgen(): js.Promise[Req] = js.native
     @JSName("reqgen")
     var reqgen_Original: PaginatorRequestGenerator = js.native
   }
   
-  @JSImport("ionic/lib/http", "createFatalAPIFormat")
-  @js.native
-  def createFatalAPIFormat(req: SuperAgentRequest, res: APIResponse): FatalException = js.native
+  @scala.inline
+  def createFatalAPIFormat(req: SuperAgentRequest, res: APIResponse): FatalException = (^.asInstanceOf[js.Dynamic].applyDynamic("createFatalAPIFormat")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[FatalException]
   
-  @JSImport("ionic/lib/http", "formatResponseError")
-  @js.native
-  def formatResponseError(req: SuperAgentRequest): String = js.native
-  @JSImport("ionic/lib/http", "formatResponseError")
-  @js.native
-  def formatResponseError(req: SuperAgentRequest, status: js.UndefOr[scala.Nothing], body: String): String = js.native
-  @JSImport("ionic/lib/http", "formatResponseError")
-  @js.native
-  def formatResponseError(req: SuperAgentRequest, status: js.UndefOr[scala.Nothing], body: js.Object): String = js.native
-  @JSImport("ionic/lib/http", "formatResponseError")
-  @js.native
-  def formatResponseError(req: SuperAgentRequest, status: Double): String = js.native
-  @JSImport("ionic/lib/http", "formatResponseError")
-  @js.native
-  def formatResponseError(req: SuperAgentRequest, status: Double, body: String): String = js.native
-  @JSImport("ionic/lib/http", "formatResponseError")
-  @js.native
-  def formatResponseError(req: SuperAgentRequest, status: Double, body: js.Object): String = js.native
+  @scala.inline
+  def formatResponseError(req: SuperAgentRequest): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatResponseError(req: SuperAgentRequest, status: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatResponseError(req: SuperAgentRequest, status: Double, body: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatResponseError(req: SuperAgentRequest, status: Double, body: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatResponseError(req: SuperAgentRequest, status: Unit, body: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatResponseError(req: SuperAgentRequest, status: Unit, body: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ionic/lib/http", "formatSuperAgentError")
-  @js.native
-  def formatSuperAgentError(e: SuperAgentError): String = js.native
+  @scala.inline
+  def formatSuperAgentError(e: SuperAgentError): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSuperAgentError")(e.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ionic/lib/http", "transformAPIResponse")
-  @js.native
-  def transformAPIResponse(r: SuperAgentResponse): APIResponse = js.native
+  @scala.inline
+  def transformAPIResponse(r: SuperAgentResponse): APIResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("transformAPIResponse")(r.asInstanceOf[js.Any]).asInstanceOf[APIResponse]
   
   type SuperAgentRequest = typings.superagent.mod.SuperAgentRequest
   

@@ -3,61 +3,59 @@ package typings.node.fsMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatsBase[T] extends StObject {
   
-  var atime: Date = js.native
+  var atime: Date
   
-  var atimeMs: T = js.native
+  var atimeMs: T
   
-  var birthtime: Date = js.native
+  var birthtime: Date
   
-  var birthtimeMs: T = js.native
+  var birthtimeMs: T
   
-  var blksize: T = js.native
+  var blksize: T
   
-  var blocks: T = js.native
+  var blocks: T
   
-  var ctime: Date = js.native
+  var ctime: Date
   
-  var ctimeMs: T = js.native
+  var ctimeMs: T
   
-  var dev: T = js.native
+  var dev: T
   
-  var gid: T = js.native
+  var gid: T
   
-  var ino: T = js.native
+  var ino: T
   
-  def isBlockDevice(): Boolean = js.native
+  def isBlockDevice(): Boolean
   
-  def isCharacterDevice(): Boolean = js.native
+  def isCharacterDevice(): Boolean
   
-  def isDirectory(): Boolean = js.native
+  def isDirectory(): Boolean
   
-  def isFIFO(): Boolean = js.native
+  def isFIFO(): Boolean
   
-  def isFile(): Boolean = js.native
+  def isFile(): Boolean
   
-  def isSocket(): Boolean = js.native
+  def isSocket(): Boolean
   
-  def isSymbolicLink(): Boolean = js.native
+  def isSymbolicLink(): Boolean
   
-  var mode: T = js.native
+  var mode: T
   
-  var mtime: Date = js.native
+  var mtime: Date
   
-  var mtimeMs: T = js.native
+  var mtimeMs: T
   
-  var nlink: T = js.native
+  var nlink: T
   
-  var rdev: T = js.native
+  var rdev: T
   
-  var size: T = js.native
+  var size: T
   
-  var uid: T = js.native
+  var uid: T
 }
 object StatsBase {
   
@@ -94,7 +92,7 @@ object StatsBase {
   }
   
   @scala.inline
-  implicit class StatsBaseMutableBuilder[Self <: StatsBase[_], T] (val x: Self with StatsBase[T]) extends AnyVal {
+  implicit class StatsBaseMutableBuilder[Self <: StatsBase[?], T] (val x: Self & StatsBase[T]) extends AnyVal {
     
     @scala.inline
     def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])

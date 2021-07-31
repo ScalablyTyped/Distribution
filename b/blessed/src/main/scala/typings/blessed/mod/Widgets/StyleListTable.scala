@@ -2,21 +2,21 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StyleListTable extends ListElementStyle {
+trait StyleListTable
+  extends StObject
+     with ListElementStyle {
   
   /**
     * Cell style.
     */
-  var cell: js.UndefOr[js.Any] = js.native
+  var cell: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Header style.
     */
-  var header: js.UndefOr[js.Any] = js.native
+  var header: js.UndefOr[js.Any] = js.undefined
 }
 object StyleListTable {
   

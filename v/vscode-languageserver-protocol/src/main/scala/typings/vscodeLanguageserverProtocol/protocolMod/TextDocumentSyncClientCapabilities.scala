@@ -2,33 +2,31 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDocumentSyncClientCapabilities extends StObject {
   
   /**
     * The client supports did save notifications.
     */
-  var didSave: js.UndefOr[Boolean] = js.native
+  var didSave: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether text document synchronization supports dynamic registration.
     */
-  var dynamicRegistration: js.UndefOr[Boolean] = js.native
+  var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The client supports sending will save notifications.
     */
-  var willSave: js.UndefOr[Boolean] = js.native
+  var willSave: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The client supports sending a will save request and
     * waits for a response providing text edits which will
     * be applied to the document before it is saved.
     */
-  var willSaveWaitUntil: js.UndefOr[Boolean] = js.native
+  var willSaveWaitUntil: js.UndefOr[Boolean] = js.undefined
 }
 object TextDocumentSyncClientCapabilities {
   

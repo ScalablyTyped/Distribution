@@ -5,33 +5,31 @@ import typings.std.ArrayBufferView
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesFunctionCodeMod {
   
-  @js.native
   trait FunctionCode extends StObject {
     
     /**
       * <p>An Amazon S3 bucket in the same region as your function.</p>
       */
-    var S3Bucket: js.UndefOr[String] = js.native
+    var S3Bucket: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The Amazon S3 key of the deployment package.</p>
       */
-    var S3Key: js.UndefOr[String] = js.native
+    var S3Key: js.UndefOr[String] = js.undefined
     
     /**
       * <p>For versioned objects, the version of the deployment package object to use.</p>
       */
-    var S3ObjectVersion: js.UndefOr[String] = js.native
+    var S3ObjectVersion: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The base64-encoded contents of your zip file containing your deployment package. AWS SDK and AWS CLI clients handle the encoding for you.</p>
       */
-    var ZipFile: js.UndefOr[ArrayBuffer | ArrayBufferView | String] = js.native
+    var ZipFile: js.UndefOr[ArrayBuffer | ArrayBufferView | String] = js.undefined
   }
   object FunctionCode {
     
@@ -70,14 +68,15 @@ object typesFunctionCodeMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledFunctionCode extends FunctionCode {
+  trait UnmarshalledFunctionCode
+    extends StObject
+       with FunctionCode {
     
     /**
       * <p>The base64-encoded contents of your zip file containing your deployment package. AWS SDK and AWS CLI clients handle the encoding for you.</p>
       */
     @JSName("ZipFile")
-    var ZipFile_UnmarshalledFunctionCode: js.UndefOr[Uint8Array] = js.native
+    var ZipFile_UnmarshalledFunctionCode: js.UndefOr[Uint8Array] = js.undefined
   }
   object UnmarshalledFunctionCode {
     

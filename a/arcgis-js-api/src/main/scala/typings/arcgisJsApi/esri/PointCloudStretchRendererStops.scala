@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointCloudStretchRendererStops extends Object {
+trait PointCloudStretchRendererStops
+  extends StObject
+     with Object {
   
   /**
     * The color value for this stop.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#stops)
     */
-  var color: Color_ = js.native
+  var color: Color_
   
   /**
     * The label for this stop.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#stops)
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The value for this stop.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#stops)
     */
-  var value: Double = js.native
+  var value: Double
 }
 object PointCloudStretchRendererStops {
   

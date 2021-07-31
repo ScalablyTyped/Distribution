@@ -2,36 +2,34 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAnalysisResponse extends StObject {
   
   /**
     * The ID of the analysis.
     */
-  var AnalysisId: js.UndefOr[RestrictiveResourceId] = js.native
+  var AnalysisId: js.UndefOr[RestrictiveResourceId] = js.undefined
   
   /**
     * The ARN of the analysis that you're updating.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.native
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
   
   /**
     * The update status of the last update that was made to the analysis.
     */
-  var UpdateStatus: js.UndefOr[ResourceStatus] = js.native
+  var UpdateStatus: js.UndefOr[ResourceStatus] = js.undefined
 }
 object UpdateAnalysisResponse {
   

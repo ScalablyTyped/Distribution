@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCurrentMetricDataResponse extends StObject {
   
   /**
     * The time at which the metrics were retrieved and cached for pagination.
     */
-  var DataSnapshotTime: js.UndefOr[timestamp] = js.native
+  var DataSnapshotTime: js.UndefOr[timestamp] = js.undefined
   
   /**
     * Information about the real-time metrics.
     */
-  var MetricResults: js.UndefOr[CurrentMetricResults] = js.native
+  var MetricResults: js.UndefOr[CurrentMetricResults] = js.undefined
   
   /**
     * If there are additional results, this is the token for the next set of results. The token expires after 5 minutes from the time it is created. Subsequent requests that use the token must use the same request parameters as the request that generated the token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.connectMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.connectMod.NextToken] = js.undefined
 }
 object GetCurrentMetricDataResponse {
   

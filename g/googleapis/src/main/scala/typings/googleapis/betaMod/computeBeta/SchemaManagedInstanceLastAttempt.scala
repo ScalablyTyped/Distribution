@@ -3,17 +3,15 @@ package typings.googleapis.betaMod.computeBeta
 import typings.googleapis.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaManagedInstanceLastAttempt extends StObject {
   
   /**
     * [Output Only] Encountered errors during the last attempt to create or
     * delete the instance.
     */
-  var errors: js.UndefOr[`3`] = js.native
+  var errors: js.UndefOr[`3`] = js.undefined
 }
 object SchemaManagedInstanceLastAttempt {
   

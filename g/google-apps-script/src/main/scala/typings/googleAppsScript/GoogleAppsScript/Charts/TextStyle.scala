@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -36,14 +35,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *           .setDataTable(sampleData)
   *           .build();
   */
-@js.native
 trait TextStyle extends StObject {
   
-  def getColor(): String = js.native
+  def getColor(): String
   
-  def getFontName(): String = js.native
+  def getFontName(): String
   
-  def getFontSize(): Double = js.native
+  def getFontSize(): Double
 }
 object TextStyle {
   

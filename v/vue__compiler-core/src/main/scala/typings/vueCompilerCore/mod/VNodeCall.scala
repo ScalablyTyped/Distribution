@@ -3,35 +3,34 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`13`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VNodeCall
-  extends JSChildNode
+  extends StObject
      with Node2
-     with BlockCodegenNode {
+     with BlockCodegenNode
+     with JSChildNode {
   
   var children: js.UndefOr[
     js.Array[TemplateChildNode] | TemplateTextChildNode | SlotsExpression | ForRenderListExpression
-  ] = js.native
+  ] = js.undefined
   
-  var directives: js.UndefOr[DirectiveArguments] = js.native
+  var directives: js.UndefOr[DirectiveArguments] = js.undefined
   
-  var disableTracking: Boolean = js.native
+  var disableTracking: Boolean
   
-  var dynamicProps: js.UndefOr[String] = js.native
+  var dynamicProps: js.UndefOr[String] = js.undefined
   
-  var isBlock: Boolean = js.native
+  var isBlock: Boolean
   
-  var patchFlag: js.UndefOr[String] = js.native
+  var patchFlag: js.UndefOr[String] = js.undefined
   
-  var props: js.UndefOr[PropsExpression] = js.native
+  var props: js.UndefOr[PropsExpression] = js.undefined
   
-  var tag: String | js.Symbol | CallExpression = js.native
+  var tag: String | js.Symbol | CallExpression
   
   @JSName("type")
-  var type_VNodeCall: `13` = js.native
+  var type_VNodeCall: `13`
 }
 object VNodeCall {
   
@@ -40,11 +39,10 @@ object VNodeCall {
     disableTracking: Boolean,
     isBlock: Boolean,
     loc: SourceLocation,
-    tag: String | js.Symbol | CallExpression,
-    `type`: `13`
+    tag: String | js.Symbol | CallExpression
   ): VNodeCall = {
     val __obj = js.Dynamic.literal(disableTracking = disableTracking.asInstanceOf[js.Any], isBlock = isBlock.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(13)
     __obj.asInstanceOf[VNodeCall]
   }
   

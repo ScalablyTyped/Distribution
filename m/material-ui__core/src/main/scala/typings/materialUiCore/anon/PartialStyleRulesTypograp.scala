@@ -3,80 +3,78 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Typography.TypographyClassKey>> */
-@js.native
 trait PartialStyleRulesTypograp extends StObject {
   
-  var alignCenter: js.UndefOr[CSSProperties] = js.native
+  var alignCenter: js.UndefOr[CSSProperties] = js.undefined
   
-  var alignJustify: js.UndefOr[CSSProperties] = js.native
+  var alignJustify: js.UndefOr[CSSProperties] = js.undefined
   
-  var alignLeft: js.UndefOr[CSSProperties] = js.native
+  var alignLeft: js.UndefOr[CSSProperties] = js.undefined
   
-  var alignRight: js.UndefOr[CSSProperties] = js.native
+  var alignRight: js.UndefOr[CSSProperties] = js.undefined
   
-  var body1: js.UndefOr[CSSProperties] = js.native
+  var body1: js.UndefOr[CSSProperties] = js.undefined
   
-  var body2: js.UndefOr[CSSProperties] = js.native
+  var body2: js.UndefOr[CSSProperties] = js.undefined
   
-  var button: js.UndefOr[CSSProperties] = js.native
+  var button: js.UndefOr[CSSProperties] = js.undefined
   
-  var caption: js.UndefOr[CSSProperties] = js.native
+  var caption: js.UndefOr[CSSProperties] = js.undefined
   
-  var colorError: js.UndefOr[CSSProperties] = js.native
+  var colorError: js.UndefOr[CSSProperties] = js.undefined
   
-  var colorInherit: js.UndefOr[CSSProperties] = js.native
+  var colorInherit: js.UndefOr[CSSProperties] = js.undefined
   
-  var colorSecondary: js.UndefOr[CSSProperties] = js.native
+  var colorSecondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var colorTextSecondary: js.UndefOr[CSSProperties] = js.native
+  var colorTextSecondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var display1: js.UndefOr[CSSProperties] = js.native
+  var display1: js.UndefOr[CSSProperties] = js.undefined
   
-  var display2: js.UndefOr[CSSProperties] = js.native
+  var display2: js.UndefOr[CSSProperties] = js.undefined
   
-  var display3: js.UndefOr[CSSProperties] = js.native
+  var display3: js.UndefOr[CSSProperties] = js.undefined
   
-  var display4: js.UndefOr[CSSProperties] = js.native
+  var display4: js.UndefOr[CSSProperties] = js.undefined
   
-  var gutterBottom: js.UndefOr[CSSProperties] = js.native
+  var gutterBottom: js.UndefOr[CSSProperties] = js.undefined
   
-  var h1: js.UndefOr[CSSProperties] = js.native
+  var h1: js.UndefOr[CSSProperties] = js.undefined
   
-  var h2: js.UndefOr[CSSProperties] = js.native
+  var h2: js.UndefOr[CSSProperties] = js.undefined
   
-  var h3: js.UndefOr[CSSProperties] = js.native
+  var h3: js.UndefOr[CSSProperties] = js.undefined
   
-  var h4: js.UndefOr[CSSProperties] = js.native
+  var h4: js.UndefOr[CSSProperties] = js.undefined
   
-  var h5: js.UndefOr[CSSProperties] = js.native
+  var h5: js.UndefOr[CSSProperties] = js.undefined
   
-  var h6: js.UndefOr[CSSProperties] = js.native
+  var h6: js.UndefOr[CSSProperties] = js.undefined
   
-  var headline: js.UndefOr[CSSProperties] = js.native
+  var headline: js.UndefOr[CSSProperties] = js.undefined
   
-  var `inline`: js.UndefOr[CSSProperties] = js.native
+  var `inline`: js.UndefOr[CSSProperties] = js.undefined
   
-  var noWrap: js.UndefOr[CSSProperties] = js.native
+  var noWrap: js.UndefOr[CSSProperties] = js.undefined
   
-  var overline: js.UndefOr[CSSProperties] = js.native
+  var overline: js.UndefOr[CSSProperties] = js.undefined
   
-  var paragraph: js.UndefOr[CSSProperties] = js.native
+  var paragraph: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
   
-  var srOnly: js.UndefOr[CSSProperties] = js.native
+  var srOnly: js.UndefOr[CSSProperties] = js.undefined
   
-  var subheading: js.UndefOr[CSSProperties] = js.native
+  var subheading: js.UndefOr[CSSProperties] = js.undefined
   
-  var subtitle1: js.UndefOr[CSSProperties] = js.native
+  var subtitle1: js.UndefOr[CSSProperties] = js.undefined
   
-  var subtitle2: js.UndefOr[CSSProperties] = js.native
+  var subtitle2: js.UndefOr[CSSProperties] = js.undefined
   
-  var title: js.UndefOr[CSSProperties] = js.native
+  var title: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesTypograp {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetComplianceSummaryByConfigRuleResponse extends StObject {
   
   /**
     * The number of AWS Config rules that are compliant and the number that are noncompliant, up to a maximum of 25 for each.
     */
-  var ComplianceSummary: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceSummary] = js.native
+  var ComplianceSummary: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceSummary] = js.undefined
 }
 object GetComplianceSummaryByConfigRuleResponse {
   

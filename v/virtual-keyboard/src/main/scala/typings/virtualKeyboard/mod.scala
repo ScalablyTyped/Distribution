@@ -6,141 +6,139 @@ import typings.std.Event
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   type CustomLayout = StringDictionary[js.Array[String]]
   
-  @js.native
   trait KeyboardOptions extends StObject {
     
-    var acceptValid: js.UndefOr[Boolean] = js.native
+    var acceptValid: js.UndefOr[Boolean] = js.undefined
     
-    var accepted: js.UndefOr[kbEventHandler] = js.native
+    var accepted: js.UndefOr[kbEventHandler] = js.undefined
     
-    var alwaysOpen: js.UndefOr[Boolean] = js.native
+    var alwaysOpen: js.UndefOr[Boolean] = js.undefined
     
-    var appendLocally: js.UndefOr[Boolean] = js.native
+    var appendLocally: js.UndefOr[Boolean] = js.undefined
     
-    var appendTo: js.UndefOr[String | js.Object] = js.native
+    var appendTo: js.UndefOr[String | js.Object] = js.undefined
     
-    var autoAccept: js.UndefOr[Boolean] = js.native
+    var autoAccept: js.UndefOr[Boolean] = js.undefined
     
-    var autoAcceptOnEsc: js.UndefOr[Boolean] = js.native
+    var autoAcceptOnEsc: js.UndefOr[Boolean] = js.undefined
     
-    var autoAcceptOnValid: js.UndefOr[Boolean] = js.native
+    var autoAcceptOnValid: js.UndefOr[Boolean] = js.undefined
     
-    var beforeClose: js.UndefOr[kbEventHandler] = js.native
+    var beforeClose: js.UndefOr[kbEventHandler] = js.undefined
     
-    var beforeInsert: js.UndefOr[kbEventHandler] = js.native
+    var beforeInsert: js.UndefOr[kbEventHandler] = js.undefined
     
-    var beforeVisible: js.UndefOr[kbEventHandler] = js.native
+    var beforeVisible: js.UndefOr[kbEventHandler] = js.undefined
     
-    var buildKey: js.UndefOr[kbEventHandler] = js.native
+    var buildKey: js.UndefOr[kbEventHandler] = js.undefined
     
-    var cancelClose: js.UndefOr[Boolean] = js.native
+    var cancelClose: js.UndefOr[Boolean] = js.undefined
     
-    var canceled: js.UndefOr[kbEventHandler] = js.native
+    var canceled: js.UndefOr[kbEventHandler] = js.undefined
     
-    var caretToEnd: js.UndefOr[Boolean] = js.native
+    var caretToEnd: js.UndefOr[Boolean] = js.undefined
     
-    var change: js.UndefOr[kbEventHandler] = js.native
+    var change: js.UndefOr[kbEventHandler] = js.undefined
     
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
     
-    var closeByClickEvent: js.UndefOr[Boolean] = js.native
+    var closeByClickEvent: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var comboRegex: js.UndefOr[RegExp] = js.native
+    var comboRegex: js.UndefOr[RegExp] = js.undefined
     
-    var combos: js.UndefOr[js.Object] = js.native
+    var combos: js.UndefOr[js.Object] = js.undefined
     
-    var css: js.UndefOr[js.Object] = js.native
+    var css: js.UndefOr[js.Object] = js.undefined
     
-    var customLayout: js.UndefOr[CustomLayout] = js.native
+    var customLayout: js.UndefOr[CustomLayout] = js.undefined
     
-    var display: js.UndefOr[js.Object] = js.native
+    var display: js.UndefOr[js.Object] = js.undefined
     
-    var enterMod: js.UndefOr[String] = js.native
+    var enterMod: js.UndefOr[String] = js.undefined
     
-    var enterNavigation: js.UndefOr[Boolean] = js.native
+    var enterNavigation: js.UndefOr[Boolean] = js.undefined
     
-    var hidden: js.UndefOr[kbEventHandler] = js.native
+    var hidden: js.UndefOr[kbEventHandler] = js.undefined
     
-    var ignoreEsc: js.UndefOr[Boolean] = js.native
+    var ignoreEsc: js.UndefOr[Boolean] = js.undefined
     
-    var initialFocus: js.UndefOr[Boolean] = js.native
+    var initialFocus: js.UndefOr[Boolean] = js.undefined
     
-    var initialized: js.UndefOr[kbEventHandler] = js.native
+    var initialized: js.UndefOr[kbEventHandler] = js.undefined
     
-    var keyBinding: js.UndefOr[String] = js.native
+    var keyBinding: js.UndefOr[String] = js.undefined
     
-    var language: js.UndefOr[String | js.Array[String]] = js.native
+    var language: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var layout: js.UndefOr[String] = js.native
+    var layout: js.UndefOr[String] = js.undefined
     
-    var lockInput: js.UndefOr[Boolean] = js.native
+    var lockInput: js.UndefOr[Boolean] = js.undefined
     
-    var maxInsert: js.UndefOr[Boolean] = js.native
+    var maxInsert: js.UndefOr[Boolean] = js.undefined
     
-    var maxLength: js.UndefOr[Boolean | Double] = js.native
+    var maxLength: js.UndefOr[Boolean | Double] = js.undefined
     
-    var noFocus: js.UndefOr[Boolean] = js.native
+    var noFocus: js.UndefOr[Boolean] = js.undefined
     
-    var openOn: js.UndefOr[String] = js.native
+    var openOn: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[Boolean | js.Object] = js.native
+    var position: js.UndefOr[Boolean | js.Object] = js.undefined
     
-    var preventPaste: js.UndefOr[String] = js.native
+    var preventPaste: js.UndefOr[String] = js.undefined
     
-    var repeatDelay: js.UndefOr[Double] = js.native
+    var repeatDelay: js.UndefOr[Double] = js.undefined
     
-    var repeatRate: js.UndefOr[Double] = js.native
+    var repeatRate: js.UndefOr[Double] = js.undefined
     
-    var reposition: js.UndefOr[Boolean] = js.native
+    var reposition: js.UndefOr[Boolean] = js.undefined
     
-    var resetDefault: js.UndefOr[Boolean] = js.native
+    var resetDefault: js.UndefOr[Boolean] = js.undefined
     
-    var restrictInclude: js.UndefOr[String] = js.native
+    var restrictInclude: js.UndefOr[String] = js.undefined
     
-    var restrictInput: js.UndefOr[Boolean] = js.native
+    var restrictInput: js.UndefOr[Boolean] = js.undefined
     
-    var restricted: js.UndefOr[kbEventHandler] = js.native
+    var restricted: js.UndefOr[kbEventHandler] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var scrollAdjustment: js.UndefOr[Double | String] = js.native
+    var scrollAdjustment: js.UndefOr[Double | String] = js.undefined
     
-    var stayOpen: js.UndefOr[Boolean] = js.native
+    var stayOpen: js.UndefOr[Boolean] = js.undefined
     
-    var stickyShift: js.UndefOr[Boolean] = js.native
+    var stickyShift: js.UndefOr[Boolean] = js.undefined
     
-    var stopAtEnd: js.UndefOr[Boolean] = js.native
+    var stopAtEnd: js.UndefOr[Boolean] = js.undefined
     
-    var switchInput: js.UndefOr[kbEventHandler] = js.native
+    var switchInput: js.UndefOr[kbEventHandler] = js.undefined
     
-    var tabNavigation: js.UndefOr[Boolean] = js.native
+    var tabNavigation: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var updateOnChange: js.UndefOr[Boolean] = js.native
+    var updateOnChange: js.UndefOr[Boolean] = js.undefined
     
-    var useCombos: js.UndefOr[Boolean] = js.native
+    var useCombos: js.UndefOr[Boolean] = js.undefined
     
-    var usePreview: js.UndefOr[Boolean] = js.native
+    var usePreview: js.UndefOr[Boolean] = js.undefined
     
-    var useWheel: js.UndefOr[Boolean] = js.native
+    var useWheel: js.UndefOr[Boolean] = js.undefined
     
-    var userClosed: js.UndefOr[Boolean] = js.native
+    var userClosed: js.UndefOr[Boolean] = js.undefined
     
-    var validate: js.UndefOr[kbEventHandler] = js.native
+    var validate: js.UndefOr[kbEventHandler] = js.undefined
     
-    var visible: js.UndefOr[kbEventHandler] = js.native
+    var visible: js.UndefOr[kbEventHandler] = js.undefined
     
-    var wheelMessage: js.UndefOr[String] = js.native
+    var wheelMessage: js.UndefOr[String] = js.undefined
   }
   object KeyboardOptions {
     
@@ -560,16 +558,15 @@ object mod {
     }
   }
   
-  @js.native
   trait NavigateOptions extends StObject {
     
-    var focusClass: js.UndefOr[String] = js.native
+    var focusClass: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[js.Array[Double]] = js.native
+    var position: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var rowLooping: js.UndefOr[Boolean] = js.native
+    var rowLooping: js.UndefOr[Boolean] = js.undefined
     
-    var toggleMode: js.UndefOr[Boolean] = js.native
+    var toggleMode: js.UndefOr[Boolean] = js.undefined
   }
   object NavigateOptions {
     
@@ -613,12 +610,11 @@ object mod {
   
   object global {
     
-    @js.native
     trait JQuery extends StObject {
       
-      def addNavigation(options: NavigateOptions): this.type = js.native
+      def addNavigation(options: NavigateOptions): this.type
       
-      def keyboard(options: KeyboardOptions): this.type = js.native
+      def keyboard(options: KeyboardOptions): this.type
     }
     object JQuery {
       

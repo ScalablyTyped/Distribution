@@ -4,12 +4,13 @@ import typings.coinbase.coinbaseStrings.user
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("coinbase", "User")
 @js.native
-class User () extends Resource {
+class User ()
+  extends StObject
+     with Resource {
   
   /**
     * User’s avatar url
@@ -66,6 +67,11 @@ class User () extends Resource {
     */
   var profile_url: js.UndefOr[String] = js.native
   
+  /**
+    * Resource type
+    */
+  /* CompleteClass */
+  var resource: ResourceType = js.native
   /**
     * Resource type, constant "user"
     */

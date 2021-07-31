@@ -12,7 +12,7 @@ Typings are for version 6.2
 | Keywords           | sql, sqlite, sqlite3, transactions, user-defined functions, aggregate functions, window functions, database |
 | # releases         | 16 |
 | # dependents       | 0 |
-| # downloads        | 994 |
+| # downloads        | 1808 |
 | # stars            | 0 |
 
 ## Links

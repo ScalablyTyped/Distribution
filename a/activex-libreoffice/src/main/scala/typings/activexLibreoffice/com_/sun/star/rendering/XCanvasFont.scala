@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface provides access to a specific, XCanvas-dependent font incarnation. This font is not universally usable, but belongs to the {@link
   * XCanvas} it was queried from.
   */
-@js.native
-trait XCanvasFont extends XInterface {
+trait XCanvasFont
+  extends StObject
+     with XInterface {
   
   /**
     * Query the list of available font sizes.
@@ -24,10 +24,10 @@ trait XCanvasFont extends XInterface {
     * overall transformation that scales the {@link FontRequest.CellSize} to something not contained in the list returned by this method can lead to visible
     * disturbances.
     */
-  val AvailableSizes: SafeArray[Double] = js.native
+  val AvailableSizes: SafeArray[Double]
   
   /** Query the list of additional font properties. */
-  val ExtraFontProperties: SafeArray[PropertyValue] = js.native
+  val ExtraFontProperties: SafeArray[PropertyValue]
   
   /**
     * Query metric information about the font, that is generic to all its glyphs.
@@ -35,10 +35,10 @@ trait XCanvasFont extends XInterface {
     * Note that the metric values in the returned result are in the font coordinate system, i.e. relative to the corresponding size of this font. That is,
     * when this font was created with a cell size of 20 units, the metrics returned are calculated relative to this size.
     */
-  val FontMetrics: typings.activexLibreoffice.com_.sun.star.rendering.FontMetrics = js.native
+  val FontMetrics: typings.activexLibreoffice.com_.sun.star.rendering.FontMetrics
   
   /** Query the {@link FontRequest} that was used to generate this object. */
-  val FontRequest: typings.activexLibreoffice.com_.sun.star.rendering.FontRequest = js.native
+  val FontRequest: typings.activexLibreoffice.com_.sun.star.rendering.FontRequest
   
   /**
     * Create a text layout interface.
@@ -48,7 +48,7 @@ trait XCanvasFont extends XInterface {
     * @param nDirection Main text direction for the string specified. The main text direction is e.g. important for characters that are not strong, i.e. that
     * @param nRandomSeed Optional random seed for OpenType glyph variations.
     */
-  def createTextLayout(aText: StringContext, nDirection: Double, nRandomSeed: Double): XTextLayout = js.native
+  def createTextLayout(aText: StringContext, nDirection: Double, nRandomSeed: Double): XTextLayout
   
   /**
     * Query the list of available font sizes.
@@ -58,10 +58,10 @@ trait XCanvasFont extends XInterface {
     * overall transformation that scales the {@link FontRequest.CellSize} to something not contained in the list returned by this method can lead to visible
     * disturbances.
     */
-  def getAvailableSizes(): SafeArray[Double] = js.native
+  def getAvailableSizes(): SafeArray[Double]
   
   /** Query the list of additional font properties. */
-  def getExtraFontProperties(): SafeArray[PropertyValue] = js.native
+  def getExtraFontProperties(): SafeArray[PropertyValue]
   
   /**
     * Query metric information about the font, that is generic to all its glyphs.
@@ -69,10 +69,10 @@ trait XCanvasFont extends XInterface {
     * Note that the metric values in the returned result are in the font coordinate system, i.e. relative to the corresponding size of this font. That is,
     * when this font was created with a cell size of 20 units, the metrics returned are calculated relative to this size.
     */
-  def getFontMetrics(): typings.activexLibreoffice.com_.sun.star.rendering.FontMetrics = js.native
+  def getFontMetrics(): typings.activexLibreoffice.com_.sun.star.rendering.FontMetrics
   
   /** Query the {@link FontRequest} that was used to generate this object. */
-  def getFontRequest(): typings.activexLibreoffice.com_.sun.star.rendering.FontRequest = js.native
+  def getFontRequest(): typings.activexLibreoffice.com_.sun.star.rendering.FontRequest
 }
 object XCanvasFont {
   

@@ -5,30 +5,30 @@ import typings.pulumiAws.outputMod.batch.GetJobQueueComputeEnvironmentOrder
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getJobQueueMod {
   
-  @JSImport("@pulumi/aws/batch/getJobQueue", "getJobQueue")
+  @JSImport("@pulumi/aws/batch/getJobQueue", JSImport.Namespace)
   @js.native
-  def getJobQueue(args: GetJobQueueArgs): js.Promise[GetJobQueueResult] = js.native
-  @JSImport("@pulumi/aws/batch/getJobQueue", "getJobQueue")
-  @js.native
-  def getJobQueue(args: GetJobQueueArgs, opts: InvokeOptions): js.Promise[GetJobQueueResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getJobQueue(args: GetJobQueueArgs): js.Promise[GetJobQueueResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJobQueue")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetJobQueueResult]]
+  @scala.inline
+  def getJobQueue(args: GetJobQueueArgs, opts: InvokeOptions): js.Promise[GetJobQueueResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getJobQueue")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetJobQueueResult]]
+  
   trait GetJobQueueArgs extends StObject {
     
     /**
       * The name of the job queue.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetJobQueueArgs {
     
@@ -52,13 +52,12 @@ object getJobQueueMod {
     }
   }
   
-  @js.native
   trait GetJobQueueResult extends StObject {
     
     /**
       * The ARN of the job queue.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The compute environments that are attached to the job queue and the order in
@@ -66,41 +65,41 @@ object getJobQueueMod {
       * * `compute_environment_order.#.order` - The order of the compute environment.
       * * `compute_environment_order.#.compute_environment` - The ARN of the compute environment.
       */
-    val computeEnvironmentOrders: js.Array[GetJobQueueComputeEnvironmentOrder] = js.native
+    val computeEnvironmentOrders: js.Array[GetJobQueueComputeEnvironmentOrder]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * The priority of the job queue. Job queues with a higher priority are evaluated first when
       * associated with the same compute environment.
       */
-    val priority: Double = js.native
+    val priority: Double
     
     /**
       * Describes the ability of the queue to accept new jobs (for example, `ENABLED` or `DISABLED`).
       */
-    val state: String = js.native
+    val state: String
     
     /**
       * The current status of the job queue (for example, `CREATING` or `VALID`).
       */
-    val status: String = js.native
+    val status: String
     
     /**
       * A short, human-readable string to provide additional details about the current status
       * of the job queue.
       */
-    val statusReason: String = js.native
+    val statusReason: String
     
     /**
       * Key-value map of resource tags
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetJobQueueResult {
     

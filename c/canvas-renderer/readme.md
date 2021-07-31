@@ -10,9 +10,9 @@ HTML5 inspired canvas that can be rendered to PNG with no native dependencies.
 | ------------------ | :-------------: |
 | Full name          | canvas-renderer |
 | Keywords           | javascript, canvas, rasterize, rasterizer, renderer, png, polygon |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 252024 |
+| # downloads        | 347791 |
 | # stars            | 1 |
 
 ## Links

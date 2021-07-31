@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInvitationsResponse extends StObject {
   
   /**
     * The details of the invitations returned by the operation.
     */
-  var Invitations: js.UndefOr[InvitationList] = js.native
+  var Invitations: js.UndefOr[InvitationList] = js.undefined
   
   /**
     * The pagination token to use to request the next page of results.
     */
-  var NextToken: js.UndefOr[NonEmptyString] = js.native
+  var NextToken: js.UndefOr[NonEmptyString] = js.undefined
 }
 object ListInvitationsResponse {
   

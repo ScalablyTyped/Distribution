@@ -3,103 +3,84 @@ package typings.cypressCucumberPreprocessor
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepsMod {
   
-  @JSImport("cypress-cucumber-preprocessor/steps", "After")
+  @JSImport("cypress-cucumber-preprocessor/steps", JSImport.Namespace)
   @js.native
-  def After(optionsOrImplementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSImport("cypress-cucumber-preprocessor/steps", "After")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def After(optionsOrImplementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("After")(optionsOrImplementation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def After(
     optionsOrImplementation: js.Function1[/* repeated */ js.Any, Unit],
     implementation: js.Function1[/* repeated */ js.Any, Unit]
-  ): Unit = js.native
-  @JSImport("cypress-cucumber-preprocessor/steps", "After")
-  @js.native
-  def After(optionsOrImplementation: js.Object): Unit = js.native
-  @JSImport("cypress-cucumber-preprocessor/steps", "After")
-  @js.native
-  def After(optionsOrImplementation: js.Object, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("After")(optionsOrImplementation.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def After(optionsOrImplementation: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("After")(optionsOrImplementation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def After(optionsOrImplementation: js.Object, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("After")(optionsOrImplementation.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("cypress-cucumber-preprocessor/steps", "And")
-  @js.native
-  def And(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSImport("cypress-cucumber-preprocessor/steps", "And")
-  @js.native
-  def And(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def And(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("And")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def And(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("And")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("cypress-cucumber-preprocessor/steps", "Before")
-  @js.native
-  def Before(optionsOrImplementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSImport("cypress-cucumber-preprocessor/steps", "Before")
-  @js.native
+  @scala.inline
+  def Before(optionsOrImplementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Before")(optionsOrImplementation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def Before(
     optionsOrImplementation: js.Function1[/* repeated */ js.Any, Unit],
     implementation: js.Function1[/* repeated */ js.Any, Unit]
-  ): Unit = js.native
-  @JSImport("cypress-cucumber-preprocessor/steps", "Before")
-  @js.native
-  def Before(optionsOrImplementation: js.Object): Unit = js.native
-  @JSImport("cypress-cucumber-preprocessor/steps", "Before")
-  @js.native
-  def Before(optionsOrImplementation: js.Object, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Before")(optionsOrImplementation.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def Before(optionsOrImplementation: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Before")(optionsOrImplementation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def Before(optionsOrImplementation: js.Object, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Before")(optionsOrImplementation.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("cypress-cucumber-preprocessor/steps", "But")
-  @js.native
-  def But(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSImport("cypress-cucumber-preprocessor/steps", "But")
-  @js.native
-  def But(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def But(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("But")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def But(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("But")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("cypress-cucumber-preprocessor/steps", "Given")
-  @js.native
-  def Given(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSImport("cypress-cucumber-preprocessor/steps", "Given")
-  @js.native
-  def Given(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def Given(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Given")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def Given(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Given")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("cypress-cucumber-preprocessor/steps", "Then")
-  @js.native
-  def Then(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSImport("cypress-cucumber-preprocessor/steps", "Then")
-  @js.native
-  def Then(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def Then(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Then")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def Then(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Then")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("cypress-cucumber-preprocessor/steps", "When")
-  @js.native
-  def When(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSImport("cypress-cucumber-preprocessor/steps", "When")
-  @js.native
-  def When(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def When(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("When")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def When(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("When")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("cypress-cucumber-preprocessor/steps", "defineParameterType")
-  @js.native
-  def defineParameterType(parameterType: Transform): Unit = js.native
+  @scala.inline
+  def defineParameterType(parameterType: Transform): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defineParameterType")(parameterType.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("cypress-cucumber-preprocessor/steps", "defineStep")
-  @js.native
-  def defineStep(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSImport("cypress-cucumber-preprocessor/steps", "defineStep")
-  @js.native
-  def defineStep(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def defineStep(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineStep")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def defineStep(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineStep")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Transform extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var preferForRegexpMatch: js.UndefOr[Boolean] = js.native
+    var preferForRegexpMatch: js.UndefOr[Boolean] = js.undefined
     
-    var regexp: RegExp = js.native
+    var regexp: RegExp
     
-    def transformer(arg: String*): js.Any = js.native
+    def transformer(arg: String*): js.Any
     
-    var typeName: js.UndefOr[String] = js.native
+    var typeName: js.UndefOr[String] = js.undefined
     
-    var useForSnippets: js.UndefOr[Boolean] = js.native
+    var useForSnippets: js.UndefOr[Boolean] = js.undefined
   }
   object Transform {
     

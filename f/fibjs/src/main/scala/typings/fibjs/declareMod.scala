@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object declareMod {
@@ -16,9 +15,8 @@ object declareMod {
       extends typings.fibjs.globalMod.Buffer
     
     /* was `typeof _Global.GC` */
-    @JSGlobal("GC")
-    @js.native
-    def GC(): Unit = js.native
+    @scala.inline
+    def GC(): Unit = js.Dynamic.global.applyDynamic("GC")().asInstanceOf[Unit]
     
     /* was `typeof _Global.Int64` */
     @JSGlobal("Int64")
@@ -37,9 +35,8 @@ object declareMod {
     val argv: js.Array[js.Any] = js.native
     
     /* was `typeof _Global.clearHrInterval` */
-    @JSGlobal("clearHrInterval")
-    @js.native
-    def clearHrInterval(t: js.Any): Unit = js.native
+    @scala.inline
+    def clearHrInterval(t: js.Any): Unit = js.Dynamic.global.applyDynamic("clearHrInterval")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* was `typeof _Global.__dirname` */
     @JSGlobal("__dirname")
@@ -72,37 +69,30 @@ object declareMod {
     val process: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof processNS */ js.Any = js.native
     
     /* was `typeof _Global.repl` */
-    @JSGlobal("repl")
-    @js.native
-    def repl(): Unit = js.native
-    @JSGlobal("repl")
-    @js.native
-    def repl(cmds: js.Array[_]): Unit = js.native
+    @scala.inline
+    def repl(): Unit = js.Dynamic.global.applyDynamic("repl")().asInstanceOf[Unit]
+    @scala.inline
+    def repl(cmds: js.Array[js.Any]): Unit = js.Dynamic.global.applyDynamic("repl")(cmds.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /* was `typeof _Global.repl` */
-    @JSGlobal("repl")
-    @js.native
-    def repl(out: ClassStream): Unit = js.native
-    @JSGlobal("repl")
-    @js.native
-    def repl(out: ClassStream, cmds: js.Array[_]): Unit = js.native
+    @scala.inline
+    def repl(out: ClassStream): Unit = js.Dynamic.global.applyDynamic("repl")(out.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def repl(out: ClassStream, cmds: js.Array[js.Any]): Unit = (js.Dynamic.global.applyDynamic("repl")(out.asInstanceOf[js.Any], cmds.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* was `typeof _Global.require` */
-    @JSGlobal("require")
-    @js.native
-    def require(id: String): js.Any = js.native
+    @scala.inline
+    def require(id: String): js.Any = js.Dynamic.global.applyDynamic("require")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* was `typeof _Global.setHrInterval` */
-    @JSGlobal("setHrInterval")
-    @js.native
-    def setHrInterval(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = js.native
+    @scala.inline
+    def setHrInterval(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = (js.Dynamic.global.applyDynamic("setHrInterval")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
   }
   
   type GlobalExportsType = js.Any
   
-  @js.native
   trait ModuleType extends StObject {
     
-    var exports: GlobalExportsType = js.native
+    var exports: GlobalExportsType
   }
   object ModuleType {
     

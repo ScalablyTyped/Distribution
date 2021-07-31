@@ -3,26 +3,24 @@ package typings.vsoNodeApi.workInterfacesMod
 import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemTypeReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CategoryConfiguration extends StObject {
   
   /**
     * Name
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Category Reference Name
     */
-  var referenceName: String = js.native
+  var referenceName: String
   
   /**
     * Work item types for the backlog category
     */
-  var workItemTypes: js.Array[WorkItemTypeReference] = js.native
+  var workItemTypes: js.Array[WorkItemTypeReference]
 }
 object CategoryConfiguration {
   

@@ -2,13 +2,11 @@ package typings.sinon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimplifiedSet extends StObject {
   
-  def has(el: js.Any): Boolean = js.native
+  def has(el: js.Any): Boolean
 }
 object SimplifiedSet {
   

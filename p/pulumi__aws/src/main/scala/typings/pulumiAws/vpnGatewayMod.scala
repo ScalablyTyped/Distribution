@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpnGatewayMod {
@@ -25,7 +24,7 @@ object vpnGatewayMod {
       */
     def this(name: String) = this()
     def this(name: String, args: VpnGatewayArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: VpnGatewayArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -56,6 +55,10 @@ object vpnGatewayMod {
   /* static members */
   object VpnGateway {
     
+    @JSImport("@pulumi/aws/ec2/vpnGateway", "VpnGateway")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpnGateway resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -65,50 +68,44 @@ object vpnGatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/vpnGateway", "VpnGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpnGateway = js.native
-    @JSImport("@pulumi/aws/ec2/vpnGateway", "VpnGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpnGateway = js.native
-    @JSImport("@pulumi/aws/ec2/vpnGateway", "VpnGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpnGatewayState): VpnGateway = js.native
-    @JSImport("@pulumi/aws/ec2/vpnGateway", "VpnGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpnGatewayState, opts: CustomResourceOptions): VpnGateway = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpnGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpnGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpnGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpnGatewayState): VpnGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpnGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpnGatewayState, opts: CustomResourceOptions): VpnGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnGateway]
     
     /**
       * Returns true if the given object is an instance of VpnGateway.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/vpnGateway", "VpnGateway.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnGateway.VpnGateway */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnGateway.VpnGateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpnGateway.VpnGateway */ Boolean]
   }
   
-  @js.native
   trait VpnGatewayArgs extends StObject {
     
     /**
       * The Autonomous System Number (ASN) for the Amazon side of the gateway. If you don't specify an ASN, the virtual private gateway is created with the default ASN.
       */
-    val amazonSideAsn: js.UndefOr[Input[String]] = js.native
+    val amazonSideAsn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Availability Zone for the virtual private gateway.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The VPC ID to create in.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object VpnGatewayArgs {
     
@@ -147,33 +144,32 @@ object vpnGatewayMod {
     }
   }
   
-  @js.native
   trait VpnGatewayState extends StObject {
     
     /**
       * The Autonomous System Number (ASN) for the Amazon side of the gateway. If you don't specify an ASN, the virtual private gateway is created with the default ASN.
       */
-    val amazonSideAsn: js.UndefOr[Input[String]] = js.native
+    val amazonSideAsn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the VPN Gateway.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Availability Zone for the virtual private gateway.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The VPC ID to create in.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object VpnGatewayState {
     

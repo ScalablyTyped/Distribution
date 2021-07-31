@@ -2,25 +2,23 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for the `ListProductSets` method.
   */
-@js.native
 trait SchemaListProductSetsResponse extends StObject {
   
   /**
     * Token to retrieve the next page of results, or empty if there are no more
     * results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * List of ProductSets.
     */
-  var productSets: js.UndefOr[js.Array[SchemaProductSet]] = js.native
+  var productSets: js.UndefOr[js.Array[SchemaProductSet]] = js.undefined
 }
 object SchemaListProductSetsResponse {
   

@@ -9,53 +9,53 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AutoCompleteProps[DataItem] extends TextFieldProps {
+trait AutoCompleteProps[DataItem]
+  extends StObject
+     with TextFieldProps {
   
-  var anchorOrigin: js.UndefOr[origin] = js.native
+  var anchorOrigin: js.UndefOr[origin] = js.undefined
   
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
-  var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.native
+  var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.undefined
   
-  var dataSource: js.Array[DataItem] = js.native
+  var dataSource: js.Array[DataItem]
   
-  var dataSourceConfig: js.UndefOr[Text] = js.native
+  var dataSourceConfig: js.UndefOr[Text] = js.undefined
   
-  var disableFocusRipple: js.UndefOr[Boolean] = js.native
+  var disableFocusRipple: js.UndefOr[Boolean] = js.undefined
   
   var filter: js.UndefOr[
     js.Function3[/* searchText */ String, /* key */ String, /* item */ DataItem, Boolean]
-  ] = js.native
+  ] = js.undefined
   
-  var listStyle: js.UndefOr[CSSProperties] = js.native
+  var listStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var maxSearchResults: js.UndefOr[Double] = js.native
+  var maxSearchResults: js.UndefOr[Double] = js.undefined
   
-  var menuCloseDelay: js.UndefOr[Double] = js.native
+  var menuCloseDelay: js.UndefOr[Double] = js.undefined
   
-  var menuProps: js.UndefOr[js.Any] = js.native
+  var menuProps: js.UndefOr[js.Any] = js.undefined
   
-  var menuStyle: js.UndefOr[CSSProperties] = js.native
+  var menuStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var onNewRequest: js.UndefOr[js.Function2[/* chosenRequest */ DataItem, /* index */ Double, Unit]] = js.native
+  var onNewRequest: js.UndefOr[js.Function2[/* chosenRequest */ DataItem, /* index */ Double, Unit]] = js.undefined
   
-  var onUpdateInput: js.UndefOr[js.Function2[/* searchText */ String, /* dataSource */ js.Array[DataItem], Unit]] = js.native
+  var onUpdateInput: js.UndefOr[js.Function2[/* searchText */ String, /* dataSource */ js.Array[DataItem], Unit]] = js.undefined
   
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
   
-  var openOnFocus: js.UndefOr[Boolean] = js.native
+  var openOnFocus: js.UndefOr[Boolean] = js.undefined
   
-  var popoverProps: js.UndefOr[PopoverProps] = js.native
+  var popoverProps: js.UndefOr[PopoverProps] = js.undefined
   
-  var searchText: js.UndefOr[String] = js.native
+  var searchText: js.UndefOr[String] = js.undefined
   
-  var targetOrigin: js.UndefOr[origin] = js.native
+  var targetOrigin: js.UndefOr[origin] = js.undefined
   
-  var textFieldStyle: js.UndefOr[CSSProperties] = js.native
+  var textFieldStyle: js.UndefOr[CSSProperties] = js.undefined
 }
 object AutoCompleteProps {
   
@@ -66,7 +66,7 @@ object AutoCompleteProps {
   }
   
   @scala.inline
-  implicit class AutoCompletePropsMutableBuilder[Self <: AutoCompleteProps[_], DataItem] (val x: Self with AutoCompleteProps[DataItem]) extends AnyVal {
+  implicit class AutoCompletePropsMutableBuilder[Self <: AutoCompleteProps[?], DataItem] (val x: Self & AutoCompleteProps[DataItem]) extends AnyVal {
     
     @scala.inline
     def setAnchorOrigin(value: origin): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])

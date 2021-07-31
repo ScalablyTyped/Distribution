@@ -2,26 +2,24 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabStops extends StObject {
   
-  def Add(Type: PpTabStopType, Position: Double): TabStop = js.native
+  def Add(Type: PpTabStopType, Position: Double): TabStop
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  var DefaultSpacing: Double = js.native
+  var DefaultSpacing: Double
   
-  def Item(Index: Double): TabStop = js.native
+  def Item(Index: Double): TabStop
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.TabStops_typekey")
-  var PowerPointDotTabStops_typekey: TabStops = js.native
+  var PowerPointDotTabStops_typekey: TabStops
 }
 object TabStops {
   

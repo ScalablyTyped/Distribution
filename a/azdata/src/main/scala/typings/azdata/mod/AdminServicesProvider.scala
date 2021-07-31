@@ -3,19 +3,19 @@ package typings.azdata.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AdminServicesProvider extends DataProvider {
+trait AdminServicesProvider
+  extends StObject
+     with DataProvider {
   
-  def createDatabase(connectionUri: String, database: DatabaseInfo): Thenable[CreateDatabaseResponse] = js.native
+  def createDatabase(connectionUri: String, database: DatabaseInfo): Thenable[CreateDatabaseResponse]
   
-  def createLogin(connectionUri: String, login: LoginInfo): Thenable[CreateLoginResponse] = js.native
+  def createLogin(connectionUri: String, login: LoginInfo): Thenable[CreateLoginResponse]
   
-  def getDatabaseInfo(connectionUri: String): Thenable[DatabaseInfo] = js.native
+  def getDatabaseInfo(connectionUri: String): Thenable[DatabaseInfo]
   
-  def getDefaultDatabaseInfo(connectionUri: String): Thenable[DatabaseInfo] = js.native
+  def getDefaultDatabaseInfo(connectionUri: String): Thenable[DatabaseInfo]
 }
 object AdminServicesProvider {
   

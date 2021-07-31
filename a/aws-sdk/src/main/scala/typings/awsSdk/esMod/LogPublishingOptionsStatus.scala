@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogPublishingOptionsStatus extends StObject {
   
   /**
     * The log publishing options configured for the Elasticsearch domain.
     */
-  var Options: js.UndefOr[LogPublishingOptions] = js.native
+  var Options: js.UndefOr[LogPublishingOptions] = js.undefined
   
   /**
     * The status of the log publishing options for the Elasticsearch domain. See OptionStatus for the status information that's included. 
     */
-  var Status: js.UndefOr[OptionStatus] = js.native
+  var Status: js.UndefOr[OptionStatus] = js.undefined
 }
 object LogPublishingOptionsStatus {
   

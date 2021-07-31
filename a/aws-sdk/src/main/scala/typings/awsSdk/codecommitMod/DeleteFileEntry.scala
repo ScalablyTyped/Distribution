@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFileEntry extends StObject {
   
   /**
     * The full path of the file to be deleted, including the name of the file.
     */
-  var filePath: Path = js.native
+  var filePath: Path
 }
 object DeleteFileEntry {
   

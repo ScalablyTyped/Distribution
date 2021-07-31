@@ -2,29 +2,27 @@ package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReelMediaViewerFeedResponseUsersItem extends StObject {
   
-  var friendship_status: js.UndefOr[ListReelMediaViewerFeedResponseFriendshipStatus] = js.native
+  var friendship_status: js.UndefOr[ListReelMediaViewerFeedResponseFriendshipStatus] = js.undefined
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var is_private: Boolean = js.native
+  var is_private: Boolean
   
-  var is_verified: Boolean = js.native
+  var is_verified: Boolean
   
-  var latest_reel_media: js.UndefOr[Double] = js.native
+  var latest_reel_media: js.UndefOr[Double] = js.undefined
   
-  var pk: Double = js.native
+  var pk: Double
   
-  var profile_pic_id: String = js.native
+  var profile_pic_id: String
   
-  var profile_pic_url: String = js.native
+  var profile_pic_url: String
   
-  var username: String = js.native
+  var username: String
 }
 object ListReelMediaViewerFeedResponseUsersItem {
   

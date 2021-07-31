@@ -3,17 +3,15 @@ package typings.three.anon
 import typings.three.uniformsLibMod.IUniform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplacementBias extends StObject {
   
-  var displacementBias: IUniform = js.native
+  var displacementBias: IUniform
   
-  var displacementMap: IUniform = js.native
+  var displacementMap: IUniform
   
-  var displacementScale: IUniform = js.native
+  var displacementScale: IUniform
 }
 object DisplacementBias {
   

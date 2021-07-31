@@ -3,7 +3,6 @@ package typings.styleValueTypes
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -28,16 +27,17 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait HSLA extends Color {
+  trait HSLA
+    extends StObject
+       with Color {
     
-    var alpha: js.UndefOr[Double] = js.native
+    var alpha: js.UndefOr[Double] = js.undefined
     
-    var hue: Double = js.native
+    var hue: Double
     
-    var lightness: Double = js.native
+    var lightness: Double
     
-    var saturation: Double = js.native
+    var saturation: Double
   }
   object HSLA {
     
@@ -69,16 +69,17 @@ object typesMod {
   
   type NumberMap = StringDictionary[Double]
   
-  @js.native
-  trait RGBA extends Color {
+  trait RGBA
+    extends StObject
+       with Color {
     
-    var alpha: js.UndefOr[Double] = js.native
+    var alpha: js.UndefOr[Double] = js.undefined
     
-    var blue: Double = js.native
+    var blue: Double
     
-    var green: Double = js.native
+    var green: Double
     
-    var red: Double = js.native
+    var red: Double
   }
   object RGBA {
     
@@ -110,20 +111,19 @@ object typesMod {
   
   type Transformer = js.Function1[/* v */ js.Any, js.Any]
   
-  @js.native
   trait ValueType extends StObject {
     
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
-    var createTransformer: js.UndefOr[js.Function1[/* template */ String, Transformer]] = js.native
+    var createTransformer: js.UndefOr[js.Function1[/* template */ String, Transformer]] = js.undefined
     
-    var getAnimatableNone: js.UndefOr[js.Function1[/* v */ js.Any, _]] = js.native
+    var getAnimatableNone: js.UndefOr[js.Function1[/* v */ js.Any, js.Any]] = js.undefined
     
-    def parse(v: js.Any): js.Any = js.native
+    def parse(v: js.Any): js.Any
     
-    def test(v: js.Any): Boolean = js.native
+    def test(v: js.Any): Boolean
     
-    var transform: js.UndefOr[Transformer] = js.native
+    var transform: js.UndefOr[Transformer] = js.undefined
   }
   object ValueType {
     
@@ -149,7 +149,7 @@ object typesMod {
       def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
       @scala.inline
-      def setGetAnimatableNone(value: /* v */ js.Any => _): Self = StObject.set(x, "getAnimatableNone", js.Any.fromFunction1(value))
+      def setGetAnimatableNone(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "getAnimatableNone", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetAnimatableNoneUndefined: Self = StObject.set(x, "getAnimatableNone", js.undefined)

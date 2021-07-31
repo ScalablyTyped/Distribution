@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SizeSchemes extends Object {
+trait SizeSchemes
+  extends StObject
+     with Object {
   
   /**
     * The ID of the basemap associated with the given schemes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemes)
     */
-  var basemapId: String = js.native
+  var basemapId: String
   
   /**
     * Indicates whether the average basemap color is `light` or `dark`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemes)
     */
-  var basemapTheme: String = js.native
+  var basemapTheme: String
   
   /**
     * The size scheme best suited for the given basemap and geometry type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemes)
     */
-  var primaryScheme: SizeScheme = js.native
+  var primaryScheme: SizeScheme
   
   /**
     * Additional size schemes that may be used to visualize data of the given geometry type overlaid on the given basemap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemes)
     */
-  var secondarySchemes: js.Array[SizeScheme] = js.native
+  var secondarySchemes: js.Array[SizeScheme]
 }
 object SizeSchemes {
   

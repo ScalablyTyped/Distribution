@@ -20,62 +20,45 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alnum extends StObject {
     
-    var alnum: `a-zA-Z0-9` = js.native
+    var alnum: `a-zA-Z0-9`
     
-    var alpha: `a-zA-Z` = js.native
+    var alpha: `a-zA-Z`
     
-    var ascii: `Backslashx00-Backslashx7F` = js.native
+    var ascii: `Backslashx00-Backslashx7F`
     
-    var blank: SpaceBackslasht = js.native
+    var blank: SpaceBackslasht
     
-    var cntrl: `Backslashx00-Backslashx1FBackslashx7F` = js.native
+    var cntrl: `Backslashx00-Backslashx1FBackslashx7F`
     
-    var digit: `0-9` = js.native
+    var digit: `0-9`
     
-    var graph: `Backslashx21-Backslashx7E` = js.native
+    var graph: `Backslashx21-Backslashx7E`
     
-    var lower: `a-z_` = js.native
+    var lower: `a-z_`
     
-    var print: `Backslashx20-Backslashx7E ` = js.native
+    var print: `Backslashx20-Backslashx7E `
     
-    var punct: `Backslash-ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisBackslashAsteriskPlussignCommaDotSlashColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@[Backslash]^_GraveaccentLeftcurlybracketVerticallineRightcurlybracketTilde` = js.native
+    var punct: `Backslash-ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisBackslashAsteriskPlussignCommaDotSlashColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@[Backslash]^_GraveaccentLeftcurlybracketVerticallineRightcurlybracketTilde`
     
-    var space: SpaceBackslashtBackslashrBackslashnBackslashvBackslashf = js.native
+    var space: SpaceBackslashtBackslashrBackslashnBackslashvBackslashf
     
-    var upper: `A-Z` = js.native
+    var upper: `A-Z`
     
-    var word: `A-Za-z0-9_` = js.native
+    var word: `A-Za-z0-9_`
     
-    var xdigit: `A-Fa-f0-9` = js.native
+    var xdigit: `A-Fa-f0-9`
   }
   object Alnum {
     
     @scala.inline
-    def apply(
-      alnum: `a-zA-Z0-9`,
-      alpha: `a-zA-Z`,
-      ascii: `Backslashx00-Backslashx7F`,
-      blank: SpaceBackslasht,
-      cntrl: `Backslashx00-Backslashx1FBackslashx7F`,
-      digit: `0-9`,
-      graph: `Backslashx21-Backslashx7E`,
-      lower: `a-z_`,
-      print: `Backslashx20-Backslashx7E `,
-      punct: `Backslash-ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisBackslashAsteriskPlussignCommaDotSlashColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@[Backslash]^_GraveaccentLeftcurlybracketVerticallineRightcurlybracketTilde`,
-      space: SpaceBackslashtBackslashrBackslashnBackslashvBackslashf,
-      upper: `A-Z`,
-      word: `A-Za-z0-9_`,
-      xdigit: `A-Fa-f0-9`
-    ): Alnum = {
-      val __obj = js.Dynamic.literal(alnum = alnum.asInstanceOf[js.Any], alpha = alpha.asInstanceOf[js.Any], ascii = ascii.asInstanceOf[js.Any], blank = blank.asInstanceOf[js.Any], cntrl = cntrl.asInstanceOf[js.Any], digit = digit.asInstanceOf[js.Any], graph = graph.asInstanceOf[js.Any], lower = lower.asInstanceOf[js.Any], print = print.asInstanceOf[js.Any], punct = punct.asInstanceOf[js.Any], space = space.asInstanceOf[js.Any], upper = upper.asInstanceOf[js.Any], word = word.asInstanceOf[js.Any], xdigit = xdigit.asInstanceOf[js.Any])
+    def apply(): Alnum = {
+      val __obj = js.Dynamic.literal(alnum = "a-zA-Z0-9", alpha = "a-zA-Z", ascii = "\\x00-\\x7F", blank = " \\t", cntrl = "\\x00-\\x1F\\x7F", digit = "0-9", graph = "\\x21-\\x7E", lower = "a-z", print = "\\x20-\\x7E ", punct = "\\-!\"#$%&'()\\*+,./:;<=>?@[\\]^_`{|}~", space = " \\t\\r\\n\\v\\f", upper = "A-Z", word = "A-Za-z0-9_", xdigit = "A-Fa-f0-9")
       __obj.asInstanceOf[Alnum]
     }
     
@@ -128,120 +111,119 @@ object anon {
     }
   }
   
-  @js.native
   trait CHAR0 extends StObject {
     
     // Digits
-    var CHAR_0: Double = js.native
+    var CHAR_0: Double
     
-    var CHAR_9: Double = js.native
+    var CHAR_9: Double
     
     // Non-alphabetic chars.
-    var CHAR_AMPERSAND: Double = js.native
+    var CHAR_AMPERSAND: Double
     
-    var CHAR_ASTERISK: Double = js.native
+    var CHAR_ASTERISK: Double
     
-    var CHAR_AT: Double = js.native
+    var CHAR_AT: Double
     
-    var CHAR_BACKWARD_SLASH: Double = js.native
+    var CHAR_BACKWARD_SLASH: Double
     
-    var CHAR_CARRIAGE_RETURN: Double = js.native
+    var CHAR_CARRIAGE_RETURN: Double
     
-    var CHAR_CIRCUMFLEX_ACCENT: Double = js.native
+    var CHAR_CIRCUMFLEX_ACCENT: Double
     
-    var CHAR_COLON: Double = js.native
+    var CHAR_COLON: Double
     
-    var CHAR_COMMA: Double = js.native
+    var CHAR_COMMA: Double
     
-    var CHAR_DOT: Double = js.native
+    var CHAR_DOT: Double
     
-    var CHAR_DOUBLE_QUOTE: Double = js.native
+    var CHAR_DOUBLE_QUOTE: Double
     
-    var CHAR_EQUAL: Double = js.native
+    var CHAR_EQUAL: Double
     
-    var CHAR_EXCLAMATION_MARK: Double = js.native
+    var CHAR_EXCLAMATION_MARK: Double
     
-    var CHAR_FORM_FEED: Double = js.native
+    var CHAR_FORM_FEED: Double
     
-    var CHAR_FORWARD_SLASH: Double = js.native
+    var CHAR_FORWARD_SLASH: Double
     
-    var CHAR_GRAVE_ACCENT: Double = js.native
+    var CHAR_GRAVE_ACCENT: Double
     
-    var CHAR_HASH: Double = js.native
+    var CHAR_HASH: Double
     
-    var CHAR_HYPHEN_MINUS: Double = js.native
+    var CHAR_HYPHEN_MINUS: Double
     
-    var CHAR_LEFT_ANGLE_BRACKET: Double = js.native
+    var CHAR_LEFT_ANGLE_BRACKET: Double
     
-    var CHAR_LEFT_CURLY_BRACE: Double = js.native
+    var CHAR_LEFT_CURLY_BRACE: Double
     
-    var CHAR_LEFT_PARENTHESES: Double = js.native
+    var CHAR_LEFT_PARENTHESES: Double
     
-    var CHAR_LEFT_SQUARE_BRACKET: Double = js.native
+    var CHAR_LEFT_SQUARE_BRACKET: Double
     
-    var CHAR_LINE_FEED: Double = js.native
+    var CHAR_LINE_FEED: Double
     
-    var CHAR_LOWERCASE_A: Double = js.native
+    var CHAR_LOWERCASE_A: Double
     
-    var CHAR_LOWERCASE_Z: Double = js.native
+    var CHAR_LOWERCASE_Z: Double
     
-    var CHAR_NO_BREAK_SPACE: Double = js.native
+    var CHAR_NO_BREAK_SPACE: Double
     
-    var CHAR_PERCENT: Double = js.native
+    var CHAR_PERCENT: Double
     
-    var CHAR_PLUS: Double = js.native
+    var CHAR_PLUS: Double
     
-    var CHAR_QUESTION_MARK: Double = js.native
+    var CHAR_QUESTION_MARK: Double
     
-    var CHAR_RIGHT_ANGLE_BRACKET: Double = js.native
+    var CHAR_RIGHT_ANGLE_BRACKET: Double
     
-    var CHAR_RIGHT_CURLY_BRACE: Double = js.native
+    var CHAR_RIGHT_CURLY_BRACE: Double
     
-    var CHAR_RIGHT_PARENTHESES: Double = js.native
+    var CHAR_RIGHT_PARENTHESES: Double
     
-    var CHAR_RIGHT_SQUARE_BRACKET: Double = js.native
+    var CHAR_RIGHT_SQUARE_BRACKET: Double
     
-    var CHAR_SEMICOLON: Double = js.native
+    var CHAR_SEMICOLON: Double
     
-    var CHAR_SINGLE_QUOTE: Double = js.native
+    var CHAR_SINGLE_QUOTE: Double
     
-    var CHAR_SPACE: Double = js.native
+    var CHAR_SPACE: Double
     
-    var CHAR_TAB: Double = js.native
+    var CHAR_TAB: Double
     
-    var CHAR_UNDERSCORE: Double = js.native
+    var CHAR_UNDERSCORE: Double
     
     // Alphabet chars.
-    var CHAR_UPPERCASE_A: Double = js.native
+    var CHAR_UPPERCASE_A: Double
     
-    var CHAR_UPPERCASE_Z: Double = js.native
+    var CHAR_UPPERCASE_Z: Double
     
-    var CHAR_VERTICAL_LINE: Double = js.native
+    var CHAR_VERTICAL_LINE: Double
     
-    var CHAR_ZERO_WIDTH_NOBREAK_SPACE: Double = js.native
+    var CHAR_ZERO_WIDTH_NOBREAK_SPACE: Double
     
-    var MAX_LENGTH: Double = js.native
+    var MAX_LENGTH: Double
     
     // regular expressions
-    var REGEX_BACKSLASH: RegExp = js.native
+    var REGEX_BACKSLASH: RegExp
     
-    var REGEX_NON_SPECIAL_CHARS: RegExp = js.native
+    var REGEX_NON_SPECIAL_CHARS: RegExp
     
-    var REGEX_REMOVE_BACKSLASH: RegExp = js.native
+    var REGEX_REMOVE_BACKSLASH: RegExp
     
-    var REGEX_SPECIAL_CHARS: RegExp = js.native
+    var REGEX_SPECIAL_CHARS: RegExp
     
-    var REGEX_SPECIAL_CHARS_BACKREF: RegExp = js.native
+    var REGEX_SPECIAL_CHARS_BACKREF: RegExp
     
-    var REGEX_SPECIAL_CHARS_GLOBAL: RegExp = js.native
+    var REGEX_SPECIAL_CHARS_GLOBAL: RegExp
     
-    var REPLACEMENTS: _empty = js.native
+    var REPLACEMENTS: _empty
     
-    var SEP: String = js.native
+    var SEP: String
     
-    def extGlobChars(chars: STAR): Record[String, Close] = js.native
+    def extGlobChars(chars: STAR): Record[String, Close]
     
-    def globChars[T /* <: Boolean */](win32: T): /* import warning: importer.ImportType#apply Failed type conversion: typeof POSIX_CHARS */ js.Any = js.native
+    def globChars[T /* <: Boolean */](win32: T): /* import warning: importer.ImportType#apply Failed type conversion: typeof POSIX_CHARS */ js.Any
   }
   object CHAR0 {
     
@@ -475,14 +457,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Close extends StObject {
     
-    var close: String = js.native
+    var close: String
     
-    var open: String = js.native
+    var open: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Close {
     
@@ -507,38 +488,37 @@ object anon {
     }
   }
   
-  @js.native
   trait DOTLITERAL extends StObject {
     
-    var DOTS_SLASH: String = js.native
+    var DOTS_SLASH: String
     
-    var DOT_LITERAL: String = js.native
+    var DOT_LITERAL: String
     
-    var END_ANCHOR: String = js.native
+    var END_ANCHOR: String
     
-    var NO_DOT: String = js.native
+    var NO_DOT: String
     
-    var NO_DOTS: String = js.native
+    var NO_DOTS: String
     
-    var NO_DOTS_SLASH: String = js.native
+    var NO_DOTS_SLASH: String
     
-    var NO_DOT_SLASH: String = js.native
+    var NO_DOT_SLASH: String
     
-    var ONE_CHAR: String = js.native
+    var ONE_CHAR: String
     
-    var PLUS_LITERAL: String = js.native
+    var PLUS_LITERAL: String
     
-    var QMARK: String = js.native
+    var QMARK: String
     
-    var QMARK_LITERAL: String = js.native
+    var QMARK_LITERAL: String
     
-    var QMARK_NO_DOT: String = js.native
+    var QMARK_NO_DOT: String
     
-    var SLASH_LITERAL: String = js.native
+    var SLASH_LITERAL: String
     
-    var STAR: String = js.native
+    var STAR: String
     
-    var START_ANCHOR: String = js.native
+    var START_ANCHOR: String
   }
   object DOTLITERAL {
     
@@ -614,38 +594,37 @@ object anon {
     }
   }
   
-  @js.native
   trait DOTSSLASH extends StObject {
     
-    var DOTS_SLASH: String = js.native
+    var DOTS_SLASH: String
     
-    var DOT_LITERAL: String = js.native
+    var DOT_LITERAL: String
     
-    var END_ANCHOR: String = js.native
+    var END_ANCHOR: String
     
-    var NO_DOT: String = js.native
+    var NO_DOT: String
     
-    var NO_DOTS: String = js.native
+    var NO_DOTS: String
     
-    var NO_DOTS_SLASH: String = js.native
+    var NO_DOTS_SLASH: String
     
-    var NO_DOT_SLASH: String = js.native
+    var NO_DOT_SLASH: String
     
-    var ONE_CHAR: String = js.native
+    var ONE_CHAR: String
     
-    var PLUS_LITERAL: String = js.native
+    var PLUS_LITERAL: String
     
-    var QMARK: String = js.native
+    var QMARK: String
     
-    var QMARK_LITERAL: String = js.native
+    var QMARK_LITERAL: String
     
-    var QMARK_NO_DOT: String = js.native
+    var QMARK_NO_DOT: String
     
-    var SLASH_LITERAL: String = js.native
+    var SLASH_LITERAL: String
     
-    var STAR: String = js.native
+    var STAR: String
     
-    var START_ANCHOR: String = js.native
+    var START_ANCHOR: String
   }
   object DOTSSLASH {
     
@@ -721,14 +700,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Debug extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
     
-    var nocase: js.UndefOr[Boolean] = js.native
+    var nocase: js.UndefOr[Boolean] = js.undefined
   }
   object Debug {
     
@@ -761,14 +739,13 @@ object anon {
     }
   }
   
-  @js.native
   trait IsMatch extends StObject {
     
-    var isMatch: Boolean = js.native
+    var isMatch: Boolean
     
-    var `match`: Boolean = js.native
+    var `match`: Boolean
     
-    var output: js.Any = js.native
+    var output: js.Any
   }
   object IsMatch {
     
@@ -793,10 +770,9 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxLength extends StObject {
     
-    var maxLength: Double = js.native
+    var maxLength: Double
   }
   object MaxLength {
     
@@ -814,10 +790,9 @@ object anon {
     }
   }
   
-  @js.native
   trait STAR extends StObject {
     
-    var STAR: String = js.native
+    var STAR: String
   }
   object STAR {
     
@@ -835,30 +810,25 @@ object anon {
     }
   }
   
-  @js.native
   trait _empty extends StObject {
     
     @JSName("***")
-    var AsteriskAsteriskAsterisk: Asterisk = js.native
+    var AsteriskAsteriskAsterisk: Asterisk
     
     @JSName("**/**")
-    var AsteriskAsteriskSlashAsteriskAsterisk: AsteriskAsterisk = js.native
+    var AsteriskAsteriskSlashAsteriskAsterisk: AsteriskAsterisk
     
     @JSName("**/**/**")
-    var AsteriskAsteriskSlashAsteriskAsteriskSlashAsteriskAsterisk: AsteriskAsterisk = js.native
+    var AsteriskAsteriskSlashAsteriskAsteriskSlashAsteriskAsterisk: AsteriskAsterisk
   }
   object _empty {
     
     @scala.inline
-    def apply(
-      AsteriskAsteriskAsterisk: Asterisk,
-      AsteriskAsteriskSlashAsteriskAsterisk: AsteriskAsterisk,
-      AsteriskAsteriskSlashAsteriskAsteriskSlashAsteriskAsterisk: AsteriskAsterisk
-    ): _empty = {
+    def apply(): _empty = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("***")(AsteriskAsteriskAsterisk.asInstanceOf[js.Any])
-      __obj.updateDynamic("**/**")(AsteriskAsteriskSlashAsteriskAsterisk.asInstanceOf[js.Any])
-      __obj.updateDynamic("**/**/**")(AsteriskAsteriskSlashAsteriskAsteriskSlashAsteriskAsterisk.asInstanceOf[js.Any])
+      __obj.updateDynamic("***")("*")
+      __obj.updateDynamic("**/**")("**")
+      __obj.updateDynamic("**/**/**")("**")
       __obj.asInstanceOf[_empty]
     }
     

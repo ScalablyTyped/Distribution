@@ -2,21 +2,19 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableBodyRow extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var classes: js.UndefOr[js.Object] = js.native
+  var classes: js.UndefOr[js.Object] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
   
-  var options: MUIDataTableOptions = js.native
+  var options: MUIDataTableOptions
   
-  var rowSelected: js.UndefOr[Boolean] = js.native
+  var rowSelected: js.UndefOr[Boolean] = js.undefined
 }
 object MUIDataTableBodyRow {
   
@@ -42,7 +40,7 @@ object MUIDataTableBodyRow {
     def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def setOnClick(value: /* args */ js.Any => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

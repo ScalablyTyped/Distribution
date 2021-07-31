@@ -2,38 +2,36 @@ package typings.googleapis.servicenetworkingV1Mod.servicenetworkingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a subnet that was created or discovered by a private access
   * management service.
   */
-@js.native
 trait SchemaGoogleCloudServicenetworkingV1betaSubnetwork extends StObject {
   
   /**
     * Subnetwork CIDR range in `10.x.x.x/y` format.
     */
-  var ipCidrRange: js.UndefOr[String] = js.native
+  var ipCidrRange: js.UndefOr[String] = js.undefined
   
   /**
     * Subnetwork name. See https://cloud.google.com/compute/docs/vpc/
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * In the Shared VPC host project, the VPC network that&#39;s peered with
     * the consumer network. For example:
     * `projects/1234321/global/networks/host-network`
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * This is a discovered subnet that is not within the current consumer
     * allocated ranges.
     */
-  var outsideAllocation: js.UndefOr[Boolean] = js.native
+  var outsideAllocation: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaGoogleCloudServicenetworkingV1betaSubnetwork {
   

@@ -5,26 +5,26 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** enables the object to handle text tables. */
-@js.native
-trait XTextTablesSupplier extends XInterface {
+trait XTextTablesSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * @returns the collection of "TextTables" currently contained in the object.
     * @see com.sun.star.text.TextTables
     * @see com.sun.star.text.TextTable
     */
-  val TextTables: XNameAccess = js.native
+  val TextTables: XNameAccess
   
   /**
     * @returns the collection of "TextTables" currently contained in the object.
     * @see com.sun.star.text.TextTables
     * @see com.sun.star.text.TextTable
     */
-  def getTextTables(): XNameAccess = js.native
+  def getTextTables(): XNameAccess
 }
 object XTextTablesSupplier {
   

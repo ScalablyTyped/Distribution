@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncounteredLoginScreen extends StObject {
   
   /** Number of encountered distinct login screens. */
-  var distinctScreens: js.UndefOr[Double] = js.native
+  var distinctScreens: js.UndefOr[Double] = js.undefined
   
   /** Subset of login screens. */
-  var screenIds: js.UndefOr[js.Array[String]] = js.native
+  var screenIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object EncounteredLoginScreen {
   

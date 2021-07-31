@@ -2,13 +2,11 @@ package typings.dndCore.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SentinelAction extends StObject {
   
-  var `type`: Identifier = js.native
+  var `type`: Identifier
 }
 object SentinelAction {
   

@@ -2,22 +2,20 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListExecutionsResponse extends StObject {
   
   /**
     * Executions.  Always set.
     */
-  var executions: js.UndefOr[js.Array[SchemaExecution]] = js.native
+  var executions: js.UndefOr[js.Array[SchemaExecution]] = js.undefined
   
   /**
     * A continuation token to resume the query at the next item.  Will only be
     * set if there are more Executions to fetch.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListExecutionsResponse {
   

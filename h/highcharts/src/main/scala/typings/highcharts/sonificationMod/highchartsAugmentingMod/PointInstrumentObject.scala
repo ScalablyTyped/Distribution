@@ -2,36 +2,34 @@ package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An instrument definition for a point, specifying the instrument to play
   * and how to play it.
   */
-@js.native
 trait PointInstrumentObject extends StObject {
   
   /**
     * An Instrument instance or the name of the instrument in the
     * Highcharts.sonification.instruments map.
     */
-  var instrument: String | Instrument = js.native
+  var instrument: String | Instrument
   
   /**
     * Mapping of instrument parameters for this instrument.
     */
-  var instrumentMapping: PointInstrumentMappingObject = js.native
+  var instrumentMapping: PointInstrumentMappingObject
   
   /**
     * Options for this instrument.
     */
-  var instrumentOptions: js.UndefOr[PointInstrumentOptionsObject] = js.native
+  var instrumentOptions: js.UndefOr[PointInstrumentOptionsObject] = js.undefined
   
   /**
     * Callback to call when the instrument has stopped playing.
     */
-  var onEnd: js.UndefOr[js.Function] = js.native
+  var onEnd: js.UndefOr[js.Function] = js.undefined
 }
 object PointInstrumentObject {
   

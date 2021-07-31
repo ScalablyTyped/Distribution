@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEntitiesDetectionJobsResponse extends StObject {
   
   /**
     * A list containing the properties of each job that is returned.
     */
-  var EntitiesDetectionJobPropertiesList: js.UndefOr[typings.awsSdk.comprehendMod.EntitiesDetectionJobPropertiesList] = js.native
+  var EntitiesDetectionJobPropertiesList: js.UndefOr[typings.awsSdk.comprehendMod.EntitiesDetectionJobPropertiesList] = js.undefined
   
   /**
     * Identifies the next page of results to return.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListEntitiesDetectionJobsResponse {
   

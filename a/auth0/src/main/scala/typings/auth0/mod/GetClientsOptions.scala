@@ -2,27 +2,25 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetClientsOptions extends StObject {
   
-  var app_type: js.UndefOr[js.Array[ClientAppType]] = js.native
+  var app_type: js.UndefOr[js.Array[ClientAppType]] = js.undefined
   
-  var fields: js.UndefOr[js.Array[String]] = js.native
+  var fields: js.UndefOr[js.Array[String]] = js.undefined
   
-  var include_fields: js.UndefOr[Boolean] = js.native
+  var include_fields: js.UndefOr[Boolean] = js.undefined
   
-  var include_totals: js.UndefOr[Boolean] = js.native
+  var include_totals: js.UndefOr[Boolean] = js.undefined
   
-  var is_first_party: js.UndefOr[Boolean] = js.native
+  var is_first_party: js.UndefOr[Boolean] = js.undefined
   
-  var is_global: js.UndefOr[Boolean] = js.native
+  var is_global: js.UndefOr[Boolean] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
 }
 object GetClientsOptions {
   

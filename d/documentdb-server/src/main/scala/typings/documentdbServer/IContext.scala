@@ -2,23 +2,21 @@ package typings.documentdbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IContext extends StObject {
   
   /** Gets the collection object. */
-  def getCollection(): ICollection = js.native
+  def getCollection(): ICollection
   
   /** Gets the request object. */
-  def getRequest(): IRequest = js.native
+  def getRequest(): IRequest
   
   /**
     * Gets the response object.
     * Note: this is not available in pre-triggers.
     */
-  def getResponse(): IResponse = js.native
+  def getResponse(): IResponse
 }
 object IContext {
   

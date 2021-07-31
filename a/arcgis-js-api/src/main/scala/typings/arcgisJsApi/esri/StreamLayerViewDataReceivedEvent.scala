@@ -2,15 +2,13 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamLayerViewDataReceivedEvent extends StObject {
   
-  var attributes: js.Any = js.native
+  var attributes: js.Any
   
-  var geometry: js.Any = js.native
+  var geometry: js.Any
 }
 object StreamLayerViewDataReceivedEvent {
   

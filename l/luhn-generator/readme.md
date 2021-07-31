@@ -10,9 +10,9 @@ A generator of numbers that passes the validation of Luhn algorithm or Luhn form
 | ------------------ | :-------------: |
 | Full name          | luhn-generator |
 | Keywords           | luhn, generator, modulus 10, mod 10, algorithm, formula, checksum |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 98763 |
+| # downloads        | 82199 |
 | # stars            | 1 |
 
 ## Links

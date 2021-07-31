@@ -5,26 +5,26 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a cell which can be addressed with a {@link com.sun.star.table.CellRangeAddress} . */
-@js.native
-trait XCellRangeAddressable extends XInterface {
+trait XCellRangeAddressable
+  extends StObject
+     with XInterface {
   
   /**
     * returns the address of the cell range in the spreadsheet document.
     *
     * The {@link com.sun.star.table.CellRangeAddress} can be used to address the range within its document.
     */
-  val RangeAddress: CellRangeAddress = js.native
+  val RangeAddress: CellRangeAddress
   
   /**
     * returns the address of the cell range in the spreadsheet document.
     *
     * The {@link com.sun.star.table.CellRangeAddress} can be used to address the range within its document.
     */
-  def getRangeAddress(): CellRangeAddress = js.native
+  def getRangeAddress(): CellRangeAddress
 }
 object XCellRangeAddressable {
   

@@ -2,19 +2,17 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Ad Slot
   */
-@js.native
 trait SchemaAdSlot extends StObject {
   
   /**
     * Comment for this ad slot.
     */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * Ad slot compatibility. DISPLAY and DISPLAY_INTERSTITIAL refer to
@@ -23,38 +21,38 @@ trait SchemaAdSlot extends StObject {
     * rendering in mobile apps. IN_STREAM_VIDEO refers to rendering in
     * in-stream video ads developed with the VAST standard.
     */
-  var compatibility: js.UndefOr[String] = js.native
+  var compatibility: js.UndefOr[String] = js.undefined
   
   /**
     * Height of this ad slot.
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the placement from an external platform that is linked to this ad
     * slot.
     */
-  var linkedPlacementId: js.UndefOr[String] = js.native
+  var linkedPlacementId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this ad slot.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Payment source type of this ad slot.
     */
-  var paymentSourceType: js.UndefOr[String] = js.native
+  var paymentSourceType: js.UndefOr[String] = js.undefined
   
   /**
     * Primary ad slot of a roadblock inventory item.
     */
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Width of this ad slot.
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object SchemaAdSlot {
   

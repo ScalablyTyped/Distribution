@@ -2,21 +2,19 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Validator extends StObject {
   
   /**
     * Either the JSON Schema content or the Amazon Resource Name (ARN) of an AWS Lambda function.
     */
-  var Content: StringWithLengthBetween0And32768 = js.native
+  var Content: StringWithLengthBetween0And32768
   
   /**
     * AppConfig supports validators of type JSON_SCHEMA and LAMBDA 
     */
-  var Type: ValidatorType = js.native
+  var Type: ValidatorType
 }
 object Validator {
   

@@ -2,10 +2,8 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaHolidaysHoliday extends StObject {
   
   /**
@@ -14,20 +12,20 @@ trait SchemaHolidaysHoliday extends StObject {
     * only be configured in a shipping settings service with matching delivery
     * country. Always present.
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * Date of the holiday, in ISO 8601 format. E.g. &quot;2016-12-25&quot; for
     * Christmas 2016. Always present.
     */
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
   /**
     * Date on which the order has to arrive at the customer&#39;s, in ISO 8601
     * format. E.g. &quot;2016-12-24&quot; for 24th December 2016. Always
     * present.
     */
-  var deliveryGuaranteeDate: js.UndefOr[String] = js.native
+  var deliveryGuaranteeDate: js.UndefOr[String] = js.undefined
   
   /**
     * Hour of the day in the delivery location&#39;s timezone on the guaranteed
@@ -35,18 +33,18 @@ trait SchemaHolidaysHoliday extends StObject {
     * Possible values are: 0 (midnight), 1, ..., 12 (noon), 13, ..., 23. Always
     * present.
     */
-  var deliveryGuaranteeHour: js.UndefOr[String] = js.native
+  var deliveryGuaranteeHour: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier for the holiday to be used when configuring holiday
     * cutoffs. Always present.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The holiday type. Always present.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaHolidaysHoliday {
   

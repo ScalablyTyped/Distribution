@@ -3,7 +3,6 @@ package typings.firebase.mod.firebase.firestore
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,7 +14,7 @@ trait Transaction extends StObject {
     * @param documentRef A reference to the document to be deleted.
     * @return This `Transaction` instance. Used for chaining method calls.
     */
-  def delete(documentRef: DocumentReference[_]): Transaction = js.native
+  def delete(documentRef: DocumentReference[js.Any]): Transaction = js.native
   
   /**
     * Reads the document referenced by the provided `DocumentReference.`
@@ -58,7 +57,7 @@ trait Transaction extends StObject {
     * within the document.
     * @return This `Transaction` instance. Used for chaining method calls.
     */
-  def update(documentRef: DocumentReference[_], data: UpdateData): Transaction = js.native
+  def update(documentRef: DocumentReference[js.Any], data: UpdateData): Transaction = js.native
   /**
     * Updates fields in the document referred to by the provided
     * `DocumentReference`. The update will fail if applied to a document that
@@ -74,6 +73,11 @@ trait Transaction extends StObject {
     * @return A Promise resolved once the data has been successfully written
     * to the backend (Note that it won't resolve while you're offline).
     */
-  def update(documentRef: DocumentReference[_], field: String, value: js.Any, moreFieldsAndValues: js.Any*): Transaction = js.native
-  def update(documentRef: DocumentReference[_], field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): Transaction = js.native
+  def update(documentRef: DocumentReference[js.Any], field: String, value: js.Any, moreFieldsAndValues: js.Any*): Transaction = js.native
+  def update(
+    documentRef: DocumentReference[js.Any],
+    field: FieldPath,
+    value: js.Any,
+    moreFieldsAndValues: js.Any*
+  ): Transaction = js.native
 }

@@ -10,7 +10,6 @@ import typings.libraCore.accessPathPbMod.AccessPath
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetEventsByEventAccessPathRequest")
@@ -45,13 +44,11 @@ object GetEventsByEventAccessPathRequest {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetEventsByEventAccessPathRequest.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): GetEventsByEventAccessPathRequest = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): GetEventsByEventAccessPathRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetEventsByEventAccessPathRequest]
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetEventsByEventAccessPathRequest.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: GetEventsByEventAccessPathRequest, reader: BinaryReader): GetEventsByEventAccessPathRequest = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: GetEventsByEventAccessPathRequest, reader: BinaryReader): GetEventsByEventAccessPathRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetEventsByEventAccessPathRequest]
   
   @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetEventsByEventAccessPathRequest.extensions")
   @js.native
@@ -66,24 +63,21 @@ object GetEventsByEventAccessPathRequest {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetEventsByEventAccessPathRequest.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: GetEventsByEventAccessPathRequest, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: GetEventsByEventAccessPathRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetEventsByEventAccessPathRequest.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: GetEventsByEventAccessPathRequest): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: GetEventsByEventAccessPathRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var accessPath: js.UndefOr[typings.libraCore.accessPathPbMod.AccessPath.AsObject] = js.native
+    var accessPath: js.UndefOr[typings.libraCore.accessPathPbMod.AccessPath.AsObject] = js.undefined
     
-    var ascending: Boolean = js.native
+    var ascending: Boolean
     
-    var limit: String = js.native
+    var limit: String
     
-    var startEventSeqNum: String = js.native
+    var startEventSeqNum: String
   }
   object AsObject {
     

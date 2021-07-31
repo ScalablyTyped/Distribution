@@ -2,90 +2,88 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageSetup extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var BookFoldPrinting: Boolean = js.native
+  var BookFoldPrinting: Boolean
   
-  var BookFoldPrintingSheets: Double = js.native
+  var BookFoldPrintingSheets: Double
   
-  var BookFoldRevPrinting: Boolean = js.native
+  var BookFoldRevPrinting: Boolean
   
-  var BottomMargin: Double = js.native
+  var BottomMargin: Double
   
-  var CharsLine: Double = js.native
+  var CharsLine: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var DifferentFirstPageHeaderFooter: Double = js.native
+  var DifferentFirstPageHeaderFooter: Double
   
-  var FirstPageTray: WdPaperTray = js.native
+  var FirstPageTray: WdPaperTray
   
-  var FooterDistance: Double = js.native
+  var FooterDistance: Double
   
-  var Gutter: Double = js.native
+  var Gutter: Double
   
-  var GutterOnTop: Boolean = js.native
+  var GutterOnTop: Boolean
   
-  var GutterPos: WdGutterStyle = js.native
+  var GutterPos: WdGutterStyle
   
-  var GutterStyle: WdGutterStyleOld = js.native
+  var GutterStyle: WdGutterStyleOld
   
-  var HeaderDistance: Double = js.native
+  var HeaderDistance: Double
   
-  var LayoutMode: WdLayoutMode = js.native
+  var LayoutMode: WdLayoutMode
   
-  var LeftMargin: Double = js.native
+  var LeftMargin: Double
   
-  var LineNumbering: typings.activexWord.Word.LineNumbering = js.native
+  var LineNumbering: typings.activexWord.Word.LineNumbering
   
-  var LinesPage: Double = js.native
+  var LinesPage: Double
   
-  var MirrorMargins: Double = js.native
+  var MirrorMargins: Double
   
-  var OddAndEvenPagesHeaderFooter: Double = js.native
+  var OddAndEvenPagesHeaderFooter: Double
   
-  var Orientation: WdOrientation = js.native
+  var Orientation: WdOrientation
   
-  var OtherPagesTray: WdPaperTray = js.native
+  var OtherPagesTray: WdPaperTray
   
-  var PageHeight: Double = js.native
+  var PageHeight: Double
   
-  var PageWidth: Double = js.native
+  var PageWidth: Double
   
-  var PaperSize: WdPaperSize = js.native
+  var PaperSize: WdPaperSize
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RightMargin: Double = js.native
+  var RightMargin: Double
   
-  var SectionDirection: WdSectionDirection = js.native
+  var SectionDirection: WdSectionDirection
   
-  var SectionStart: WdSectionStart = js.native
+  var SectionStart: WdSectionStart
   
-  def SetAsTemplateDefault(): Unit = js.native
+  def SetAsTemplateDefault(): Unit
   
-  var ShowGrid: Boolean = js.native
+  var ShowGrid: Boolean
   
-  var SuppressEndnotes: Double = js.native
+  var SuppressEndnotes: Double
   
-  var TextColumns: typings.activexWord.Word.TextColumns = js.native
+  var TextColumns: typings.activexWord.Word.TextColumns
   
-  def TogglePortrait(): Unit = js.native
+  def TogglePortrait(): Unit
   
-  var TopMargin: Double = js.native
+  var TopMargin: Double
   
-  var TwoPagesOnOne: Boolean = js.native
+  var TwoPagesOnOne: Boolean
   
-  var VerticalAlignment: WdVerticalAlignment = js.native
+  var VerticalAlignment: WdVerticalAlignment
   
   @JSName("Word.PageSetup_typekey")
-  var WordDotPageSetup_typekey: PageSetup = js.native
+  var WordDotPageSetup_typekey: PageSetup
 }
 object PageSetup {
   

@@ -4,31 +4,29 @@ import typings.webpack.webpackOptionsMod.RuleSetLoader
 import typings.webpack.webpackOptionsMod.RuleSetQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ident extends StObject {
   
   /**
   			 * Unique loader identifier
   			 */
-  var ident: js.UndefOr[String] = js.native
+  var ident: js.UndefOr[String] = js.undefined
   
   /**
   			 * Loader name
   			 */
-  var loader: js.UndefOr[RuleSetLoader] = js.native
+  var loader: js.UndefOr[RuleSetLoader] = js.undefined
   
   /**
   			 * Loader options
   			 */
-  var options: js.UndefOr[RuleSetQuery] = js.native
+  var options: js.UndefOr[RuleSetQuery] = js.undefined
   
   /**
   			 * Loader query
   			 */
-  var query: js.UndefOr[RuleSetQuery] = js.native
+  var query: js.UndefOr[RuleSetQuery] = js.undefined
 }
 object Ident {
   

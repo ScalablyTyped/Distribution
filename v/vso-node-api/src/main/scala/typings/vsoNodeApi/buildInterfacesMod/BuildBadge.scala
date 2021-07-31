@@ -2,21 +2,19 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBadge extends StObject {
   
   /**
     * The ID of the build represented by this badge.
     */
-  var buildId: Double = js.native
+  var buildId: Double
   
   /**
     * A link to the SVG resource.
     */
-  var imageUrl: String = js.native
+  var imageUrl: String
 }
 object BuildBadge {
   

@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property name - The scope name.
   * @param name - The scope name.
   */
-@js.native
 trait ScopeSpace extends StObject {
   
   /**
@@ -18,19 +16,19 @@ trait ScopeSpace extends StObject {
     * @param name - The subspace name.
     * @returns The subspace instance.
     */
-  def getSubSpace(name: String): ScopeSpace = js.native
+  def getSubSpace(name: String): ScopeSpace
   
   /**
     * The scope name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Get (or create, if it doesn't already exist) a variable in the scope.
     * @param name - The variable name.
     * @returns The variable instance.
     */
-  def resolve(name: String): ScopeId = js.native
+  def resolve(name: String): ScopeId
 }
 object ScopeSpace {
   

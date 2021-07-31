@@ -7,12 +7,13 @@ import typings.angularCore.mod.OnDestroy
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "RouterPreloader")
 @js.native
-class RouterPreloader protected () extends OnDestroy {
+class RouterPreloader protected ()
+  extends StObject
+     with OnDestroy {
   def this(
     router: Router,
     moduleLoader: NgModuleFactoryLoader,
@@ -25,7 +26,14 @@ class RouterPreloader protected () extends OnDestroy {
   
   var loader: js.Any = js.native
   
-  def preload(): Observable_[_] = js.native
+  /**
+    * A callback method that performs custom clean-up, invoked immediately
+    * before a directive, pipe, or service instance is destroyed.
+    */
+  /* CompleteClass */
+  override def ngOnDestroy(): Unit = js.native
+  
+  def preload(): Observable_[js.Any] = js.native
   
   var preloadConfig: js.Any = js.native
   

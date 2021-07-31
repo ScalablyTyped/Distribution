@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowRefreshOptions extends StObject {
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var iframe: js.UndefOr[Boolean] = js.native
+  var iframe: js.UndefOr[Boolean] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object WindowRefreshOptions {
   

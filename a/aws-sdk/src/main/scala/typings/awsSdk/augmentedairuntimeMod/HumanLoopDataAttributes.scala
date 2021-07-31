@@ -2,16 +2,14 @@ package typings.awsSdk.augmentedairuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HumanLoopDataAttributes extends StObject {
   
   /**
     * Declares that your content is free of personally identifiable information or adult content. Amazon SageMaker can restrict the Amazon Mechanical Turk workers who can view your task based on this information.
     */
-  var ContentClassifiers: typings.awsSdk.augmentedairuntimeMod.ContentClassifiers = js.native
+  var ContentClassifiers: typings.awsSdk.augmentedairuntimeMod.ContentClassifiers
 }
 object HumanLoopDataAttributes {
   

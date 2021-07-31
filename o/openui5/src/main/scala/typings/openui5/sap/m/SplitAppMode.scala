@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait SplitAppMode extends StObject
 object SplitAppMode extends StObject {
   
   @js.native
-  sealed trait HideMode extends SplitAppMode
+  sealed trait HideMode
+    extends StObject
+       with SplitAppMode
   
   @js.native
-  sealed trait PopoverMode extends SplitAppMode
+  sealed trait PopoverMode
+    extends StObject
+       with SplitAppMode
   
   @js.native
-  sealed trait ShowHideMode extends SplitAppMode
+  sealed trait ShowHideMode
+    extends StObject
+       with SplitAppMode
   
   @js.native
-  sealed trait StretchCompressMode extends SplitAppMode
+  sealed trait StretchCompressMode
+    extends StObject
+       with SplitAppMode
 }

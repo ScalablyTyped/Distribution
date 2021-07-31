@@ -4,53 +4,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeatmapRendererResult extends Object {
+trait HeatmapRendererResult
+  extends StObject
+     with Object {
   
   /**
     * The ID of the basemap used to determine the optimal color stops of the heatmap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#HeatmapRendererResult)
     */
-  var basemapId: String = js.native
+  var basemapId: String
   
   /**
     * Indicates whether the average color of the input view's basemap is `light` or `dark`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#HeatmapRendererResult)
     */
-  var basemapTheme: String = js.native
+  var basemapTheme: String
   
   /**
     * Indicates whether default values are used in the absence of sufficient data and/or statistics from the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#HeatmapRendererResult)
     */
-  var defaultValuesUsed: Boolean = js.native
+  var defaultValuesUsed: Boolean
   
   /**
     * The renderer object configured to best match the given basemap and the spread of the data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#HeatmapRendererResult)
     */
-  var renderer: HeatmapRenderer = js.native
+  var renderer: HeatmapRenderer
   
   /**
     * The color scheme used by the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#HeatmapRendererResult)
     */
-  var scheme: HeatmapScheme = js.native
+  var scheme: HeatmapScheme
   
   /**
     * Basic statistics returned from a query to the service for data from the given field name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#HeatmapRendererResult)
     */
-  var statistics: HeatmapStatisticsResult = js.native
+  var statistics: HeatmapStatisticsResult
 }
 object HeatmapRendererResult {
   

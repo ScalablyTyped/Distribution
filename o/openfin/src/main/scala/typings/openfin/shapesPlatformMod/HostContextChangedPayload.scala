@@ -2,15 +2,13 @@ package typings.openfin.shapesPlatformMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostContextChangedPayload extends StObject {
   
-  var context: js.Any = js.native
+  var context: js.Any
   
-  var reason: HostContextChangedReasons = js.native
+  var reason: HostContextChangedReasons
 }
 object HostContextChangedPayload {
   

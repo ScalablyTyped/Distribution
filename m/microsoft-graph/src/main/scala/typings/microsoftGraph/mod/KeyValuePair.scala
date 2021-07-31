@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyValuePair extends StObject {
   
   // Name for this key-value pair
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   // Value for this key-value pair
-  var value: js.UndefOr[NullableOption[String]] = js.native
+  var value: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object KeyValuePair {
   

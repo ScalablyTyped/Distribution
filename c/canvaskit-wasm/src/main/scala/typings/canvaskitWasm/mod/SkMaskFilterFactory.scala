@@ -2,10 +2,8 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SkMaskFilterFactory extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SkMaskFilterFactory extends StObject {
     * @param sigma - Standard deviation of the Gaussian blur to apply. Must be > 0.
     * @param respectCTM - if true the blur's sigma is modified by the CTM.
     */
-  def MakeBlur(style: BlurStyle, sigma: Double, respectCTM: Boolean): SkMaskFilter = js.native
+  def MakeBlur(style: BlurStyle, sigma: Double, respectCTM: Boolean): SkMaskFilter
 }
 object SkMaskFilterFactory {
   

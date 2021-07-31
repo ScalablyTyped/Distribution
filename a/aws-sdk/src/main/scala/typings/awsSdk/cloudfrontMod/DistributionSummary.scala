@@ -2,111 +2,109 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionSummary extends StObject {
   
   /**
     * The ARN (Amazon Resource Name) for the distribution. For example: arn:aws:cloudfront::123456789012:distribution/EDFDVBD632BHDS5, where 123456789012 is your AWS account ID.
     */
-  var ARN: String = js.native
+  var ARN: String
   
   /**
     * AWS services in China customers must file for an Internet Content Provider (ICP) recordal if they want to serve content publicly on an alternate domain name, also known as a CNAME, that they've added to CloudFront. AliasICPRecordal provides the ICP recordal status for CNAMEs associated with distributions. For more information about ICP recordals, see  Signup, Accounts, and Credentials in Getting Started with AWS services in China.
     */
-  var AliasICPRecordals: js.UndefOr[typings.awsSdk.cloudfrontMod.AliasICPRecordals] = js.native
+  var AliasICPRecordals: js.UndefOr[typings.awsSdk.cloudfrontMod.AliasICPRecordals] = js.undefined
   
   /**
     * A complex type that contains information about CNAMEs (alternate domain names), if any, for this distribution.
     */
-  var Aliases: typings.awsSdk.cloudfrontMod.Aliases = js.native
+  var Aliases: typings.awsSdk.cloudfrontMod.Aliases
   
   /**
     * A complex type that contains zero or more CacheBehavior elements.
     */
-  var CacheBehaviors: typings.awsSdk.cloudfrontMod.CacheBehaviors = js.native
+  var CacheBehaviors: typings.awsSdk.cloudfrontMod.CacheBehaviors
   
   /**
     * The comment originally specified when this distribution was created.
     */
-  var Comment: String = js.native
+  var Comment: String
   
   /**
     * A complex type that contains zero or more CustomErrorResponses elements.
     */
-  var CustomErrorResponses: typings.awsSdk.cloudfrontMod.CustomErrorResponses = js.native
+  var CustomErrorResponses: typings.awsSdk.cloudfrontMod.CustomErrorResponses
   
   /**
     * A complex type that describes the default cache behavior if you don't specify a CacheBehavior element or if files don't match any of the values of PathPattern in CacheBehavior elements. You must create exactly one default cache behavior.
     */
-  var DefaultCacheBehavior: typings.awsSdk.cloudfrontMod.DefaultCacheBehavior = js.native
+  var DefaultCacheBehavior: typings.awsSdk.cloudfrontMod.DefaultCacheBehavior
   
   /**
     * The domain name that corresponds to the distribution, for example, d111111abcdef8.cloudfront.net.
     */
-  var DomainName: String = js.native
+  var DomainName: String
   
   /**
     * Whether the distribution is enabled to accept user requests for content.
     */
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   /**
     *  Specify the maximum HTTP version that you want viewers to use to communicate with CloudFront. The default value for new web distributions is http2. Viewers that don't support HTTP/2 will automatically use an earlier version.
     */
-  var HttpVersion: typings.awsSdk.cloudfrontMod.HttpVersion = js.native
+  var HttpVersion: typings.awsSdk.cloudfrontMod.HttpVersion
   
   /**
     * The identifier for the distribution. For example: EDFDVBD632BHDS5.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * Whether CloudFront responds to IPv6 DNS requests with an IPv6 address for your distribution.
     */
-  var IsIPV6Enabled: Boolean = js.native
+  var IsIPV6Enabled: Boolean
   
   /**
     * The date and time the distribution was last modified.
     */
-  var LastModifiedTime: timestamp = js.native
+  var LastModifiedTime: timestamp
   
   /**
     *  A complex type that contains information about origin groups for this distribution.
     */
-  var OriginGroups: js.UndefOr[typings.awsSdk.cloudfrontMod.OriginGroups] = js.native
+  var OriginGroups: js.UndefOr[typings.awsSdk.cloudfrontMod.OriginGroups] = js.undefined
   
   /**
     * A complex type that contains information about origins for this distribution.
     */
-  var Origins: typings.awsSdk.cloudfrontMod.Origins = js.native
+  var Origins: typings.awsSdk.cloudfrontMod.Origins
   
   /**
     * A complex type that contains information about price class for this streaming distribution. 
     */
-  var PriceClass: typings.awsSdk.cloudfrontMod.PriceClass = js.native
+  var PriceClass: typings.awsSdk.cloudfrontMod.PriceClass
   
   /**
     * A complex type that identifies ways in which you want to restrict distribution of your content.
     */
-  var Restrictions: typings.awsSdk.cloudfrontMod.Restrictions = js.native
+  var Restrictions: typings.awsSdk.cloudfrontMod.Restrictions
   
   /**
     * The current status of the distribution. When the status is Deployed, the distribution's information is propagated to all CloudFront edge locations.
     */
-  var Status: String = js.native
+  var Status: String
   
   /**
     * A complex type that determines the distribution’s SSL/TLS configuration for communicating with viewers.
     */
-  var ViewerCertificate: typings.awsSdk.cloudfrontMod.ViewerCertificate = js.native
+  var ViewerCertificate: typings.awsSdk.cloudfrontMod.ViewerCertificate
   
   /**
     * The Web ACL Id (if any) associated with the distribution.
     */
-  var WebACLId: String = js.native
+  var WebACLId: String
 }
 object DistributionSummary {
   

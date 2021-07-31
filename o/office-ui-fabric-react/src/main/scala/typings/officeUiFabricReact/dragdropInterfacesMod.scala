@@ -8,28 +8,26 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragdropInterfacesMod {
   
-  @js.native
   trait IDragDropContext extends StObject {
     
     /**
       * Data associated with drag & drop action.
       */
-    var data: js.Any = js.native
+    var data: js.Any
     
     /**
       * Index of drag & drop action.
       */
-    var index: Double = js.native
+    var index: Double
     
     /**
       * Whether or not drag & drop region is indivual or group of content.
       */
-    var isGroup: js.UndefOr[Boolean] = js.native
+    var isGroup: js.UndefOr[Boolean] = js.undefined
   }
   object IDragDropContext {
     
@@ -56,13 +54,12 @@ object dragdropInterfacesMod {
     }
   }
   
-  @js.native
   trait IDragDropEvent extends StObject {
     
     /**
       * Whether or not the drag & drop event was handled.
       */
-    var isHandled: js.UndefOr[Boolean] = js.native
+    var isHandled: js.UndefOr[Boolean] = js.undefined
   }
   object IDragDropEvent {
     
@@ -83,18 +80,17 @@ object dragdropInterfacesMod {
     }
   }
   
-  @js.native
   trait IDragDropEvents extends StObject {
     
     /**
       * Whether or not drag action is allowed.
       */
-    var canDrag: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Boolean]] = js.native
+    var canDrag: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Boolean]] = js.undefined
     
     /**
       * Whether the whole group is draggable. This applies after canDrag returns true for the group.
       */
-    var canDragGroups: js.UndefOr[Boolean] = js.native
+    var canDragGroups: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not drop action is allowed.
@@ -105,14 +101,14 @@ object dragdropInterfacesMod {
           /* dragContext */ js.UndefOr[IDragDropContext], 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * On drag end event callback.
       */
     var onDragEnd: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * On drag enter region event callback.
@@ -120,21 +116,21 @@ object dragdropInterfacesMod {
       */
     var onDragEnter: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], String]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * On drag leave region event callback.
       */
     var onDragLeave: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * On drag over event callback.
       */
     var onDragOver: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * On drag start event callback.
@@ -143,18 +139,18 @@ object dragdropInterfacesMod {
         js.Function4[
           /* item */ js.UndefOr[js.Any], 
           /* itemIndex */ js.UndefOr[Double], 
-          /* selectedItems */ js.UndefOr[js.Array[_]], 
+          /* selectedItems */ js.UndefOr[js.Array[js.Any]], 
           /* event */ js.UndefOr[MouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * On drop event callback.
       */
     var onDrop: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object IDragDropEvents {
     
@@ -213,7 +209,7 @@ object dragdropInterfacesMod {
       
       @scala.inline
       def setOnDragStart(
-        value: (/* item */ js.UndefOr[js.Any], /* itemIndex */ js.UndefOr[Double], /* selectedItems */ js.UndefOr[js.Array[_]], /* event */ js.UndefOr[MouseEvent]) => Unit
+        value: (/* item */ js.UndefOr[js.Any], /* itemIndex */ js.UndefOr[Double], /* selectedItems */ js.UndefOr[js.Array[js.Any]], /* event */ js.UndefOr[MouseEvent]) => Unit
       ): Self = StObject.set(x, "onDragStart", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -227,23 +223,22 @@ object dragdropInterfacesMod {
     }
   }
   
-  @js.native
   trait IDragDropHelper extends StObject {
     
     /**
       * Dispose of listeners bound to instance of helper.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
     /**
       * Subscribe to events on a DOM node with drag and drop configuration.
       */
-    def subscribe(root: HTMLElement, events: EventGroup, options: IDragDropOptions): Dispose = js.native
+    def subscribe(root: HTMLElement, events: EventGroup, options: IDragDropOptions): Dispose
     
     /**
       * Unsubscribe to events registered on a DOM node with key.
       */
-    def unsubscribe(root: HTMLElement, key: String): Unit = js.native
+    def unsubscribe(root: HTMLElement, key: String): Unit
   }
   object IDragDropHelper {
     
@@ -271,13 +266,12 @@ object dragdropInterfacesMod {
     }
   }
   
-  @js.native
   trait IDragDropOptions extends StObject {
     
     /**
       * Whether or not drag action is allowed.
       */
-    var canDrag: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Boolean]] = js.native
+    var canDrag: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Boolean]] = js.undefined
     
     /**
       * Whether or not drop action is allowed.
@@ -288,36 +282,36 @@ object dragdropInterfacesMod {
           /* dragContext */ js.UndefOr[IDragDropContext], 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Context associated with drag and drop event.
       */
-    var context: IDragDropContext = js.native
+    var context: IDragDropContext
     
     /**
       * Map of event name to callback function to subscribe to.
       */
-    var eventMap: js.UndefOr[js.Array[Callback]] = js.native
+    var eventMap: js.UndefOr[js.Array[Callback]] = js.undefined
     
     /**
       * Unique key to associate with instance.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * On drag end event callback.
       */
     var onDragEnd: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * On drag over element(s) event callback.
       */
     var onDragOver: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * On drag start event callback.
@@ -326,28 +320,28 @@ object dragdropInterfacesMod {
         js.Function4[
           /* item */ js.UndefOr[js.Any], 
           /* itemIndex */ js.UndefOr[Double], 
-          /* selectedItems */ js.UndefOr[js.Array[_]], 
+          /* selectedItems */ js.UndefOr[js.Array[js.Any]], 
           /* event */ js.UndefOr[MouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * On drop event callback.
       */
     var onDrop: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Selection index on drag and drop event.
       */
-    var selectionIndex: Double = js.native
+    var selectionIndex: Double
     
     /**
       * Callback on drop state update.
       */
-    def updateDropState(isDropping: Boolean, event: DragEvent): Unit = js.native
+    def updateDropState(isDropping: Boolean, event: DragEvent): Unit
   }
   object IDragDropOptions {
     
@@ -406,7 +400,7 @@ object dragdropInterfacesMod {
       
       @scala.inline
       def setOnDragStart(
-        value: (/* item */ js.UndefOr[js.Any], /* itemIndex */ js.UndefOr[Double], /* selectedItems */ js.UndefOr[js.Array[_]], /* event */ js.UndefOr[MouseEvent]) => Unit
+        value: (/* item */ js.UndefOr[js.Any], /* itemIndex */ js.UndefOr[Double], /* selectedItems */ js.UndefOr[js.Array[js.Any]], /* event */ js.UndefOr[MouseEvent]) => Unit
       ): Self = StObject.set(x, "onDragStart", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -426,14 +420,13 @@ object dragdropInterfacesMod {
     }
   }
   
-  @js.native
   trait IDragDropTarget extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var options: IDragDropOptions = js.native
+    var options: IDragDropOptions
     
-    var root: HTMLElement = js.native
+    var root: HTMLElement
   }
   object IDragDropTarget {
     

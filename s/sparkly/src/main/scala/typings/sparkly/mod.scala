@@ -4,7 +4,6 @@ import typings.sparkly.sparklyStrings._empty
 import typings.sparkly.sparklyStrings.fire
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,30 +24,31 @@ object mod {
   //=> '▁▂▃▄▄'
   ```
   */
-  @JSImport("sparkly", JSImport.Namespace)
-  @js.native
-  def apply(numbers: js.Array[Double | _empty]): String = js.native
-  @JSImport("sparkly", JSImport.Namespace)
-  @js.native
-  def apply(numbers: js.Array[Double | _empty], options: Options): String = js.native
+  @scala.inline
+  def apply(numbers: js.Array[Double | _empty]): String = ^.asInstanceOf[js.Dynamic].apply(numbers.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(numbers: js.Array[Double | _empty], options: Options): String = (^.asInstanceOf[js.Dynamic].apply(numbers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("sparkly", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Maximum range.
     		*/
-    val maximum: js.UndefOr[Double] = js.native
+    val maximum: js.UndefOr[Double] = js.undefined
     
     /**
     		Minimum range.
     		*/
-    val minimum: js.UndefOr[Double] = js.native
+    val minimum: js.UndefOr[Double] = js.undefined
     
     /**
     		Style for the sparklines.
     		*/
-    val style: js.UndefOr[fire] = js.native
+    val style: js.UndefOr[fire] = js.undefined
   }
   object Options {
     

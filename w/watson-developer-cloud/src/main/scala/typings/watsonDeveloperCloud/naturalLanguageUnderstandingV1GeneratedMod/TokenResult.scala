@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** TokenResult. */
-@js.native
 trait TokenResult extends StObject {
   
   /** The [lemma](https://wikipedia.org/wiki/Lemma_%28morphology%29) of the token. */
-  var lemma: js.UndefOr[String] = js.native
+  var lemma: js.UndefOr[String] = js.undefined
   
   /** Character offsets indicating the beginning and end of the token in the analyzed text. */
-  var location: js.UndefOr[js.Array[Double]] = js.native
+  var location: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** The part of speech of the token. For descriptions of the values, see [Universal Dependencies POS tags](https://universaldependencies.org/u/pos/). */
-  var part_of_speech: js.UndefOr[String] = js.native
+  var part_of_speech: js.UndefOr[String] = js.undefined
   
   /** The token as it appears in the analyzed text. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object TokenResult {
   

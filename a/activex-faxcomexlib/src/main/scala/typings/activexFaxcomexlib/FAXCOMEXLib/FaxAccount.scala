@@ -2,27 +2,25 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxAccount Class */
-@js.native
 trait FaxAccount extends StObject {
   
   /** Name of the fax account */
-  val AccountName: String = js.native
+  val AccountName: String
   
   @JSName("FAXCOMEXLib.FaxAccount_typekey")
-  var FAXCOMEXLibDotFaxAccount_typekey: FaxAccount = js.native
+  var FAXCOMEXLibDotFaxAccount_typekey: FaxAccount
   
   /** Folders belonging to the account */
-  val Folders: FaxAccountFolders = js.native
+  val Folders: FaxAccountFolders
   
   /** Set bit-wise combination of events the fax account listens to */
-  def ListenToAccountEvents(EventTypes: FAX_ACCOUNT_EVENTS_TYPE_ENUM): Unit = js.native
+  def ListenToAccountEvents(EventTypes: FAX_ACCOUNT_EVENTS_TYPE_ENUM): Unit
   
   /** Events the fax account is listening to */
-  val RegisteredEvents: FAX_ACCOUNT_EVENTS_TYPE_ENUM = js.native
+  val RegisteredEvents: FAX_ACCOUNT_EVENTS_TYPE_ENUM
 }
 object FaxAccount {
   

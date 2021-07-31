@@ -2,11 +2,12 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITextPath extends IShape {
+trait ITextPath
+  extends StObject
+     with IShape {
   
   def getFontFamily(): String = js.native
   

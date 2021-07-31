@@ -20,28 +20,29 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-dropzone", JSImport.Default)
+  @JSImport("react-dropzone", JSImport.Namespace)
   @js.native
-  def default(props: DropzoneProps with RefAttributes[DropzoneRef]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-dropzone", "useDropzone")
-  @js.native
-  def useDropzone(): DropzoneState = js.native
-  @JSImport("react-dropzone", "useDropzone")
-  @js.native
-  def useDropzone(options: DropzoneOptions): DropzoneState = js.native
+  @scala.inline
+  def default(props: DropzoneProps & RefAttributes[DropzoneRef]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @scala.inline
+  def useDropzone(): DropzoneState = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropzone")().asInstanceOf[DropzoneState]
+  @scala.inline
+  def useDropzone(options: DropzoneOptions): DropzoneState = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropzone")(options.asInstanceOf[js.Any]).asInstanceOf[DropzoneState]
   
   type DropEvent = DragEvent[HTMLElement] | ChangeEvent[HTMLInputElement] | typings.std.DragEvent | Event
   
-  @js.native
-  trait DropzoneInputProps extends InputHTMLAttributes[HTMLInputElement] {
+  trait DropzoneInputProps
+    extends StObject
+       with InputHTMLAttributes[HTMLInputElement] {
     
-    var refKey: js.UndefOr[String] = js.native
+    var refKey: js.UndefOr[String] = js.undefined
   }
   object DropzoneInputProps {
     
@@ -63,38 +64,37 @@ object mod {
   }
   
   /* Inlined std.Pick<react.react.HTMLProps<std.HTMLElement>, react-dropzone.react-dropzone.PropTypes> & {  accept :string | std.Array<string> | undefined,   minSize :number | undefined,   maxSize :number | undefined,   maxFiles :number | undefined,   preventDropOnDocument :boolean | undefined,   noClick :boolean | undefined,   noKeyboard :boolean | undefined,   noDrag :boolean | undefined,   noDragEventsBubbling :boolean | undefined,   disabled :boolean | undefined,   onDrop :<T extends std.File>(acceptedFiles : std.Array<T>, fileRejections : std.Array<react-dropzone.react-dropzone.FileRejection>, event : react-dropzone.react-dropzone.DropEvent): void | undefined,   onDropAccepted :<T extends std.File>(files : std.Array<T>, event : react-dropzone.react-dropzone.DropEvent): void | undefined,   onDropRejected :(fileRejections : std.Array<react-dropzone.react-dropzone.FileRejection>, event : react-dropzone.react-dropzone.DropEvent): void | undefined,   getFilesFromEvent :(event : react-dropzone.react-dropzone.DropEvent): std.Promise<std.Array<std.File | std.DataTransferItem>> | undefined,   onFileDialogCancel :(): void | undefined} */
-  @js.native
   trait DropzoneOptions extends StObject {
     
-    var accept: js.UndefOr[String | js.Array[String]] = js.native
+    var accept: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     var getFilesFromEvent: js.UndefOr[
         js.Function1[/* event */ DropEvent, js.Promise[js.Array[File | DataTransferItem]]]
-      ] = js.native
+      ] = js.undefined
     
-    var maxFiles: js.UndefOr[Double] = js.native
+    var maxFiles: js.UndefOr[Double] = js.undefined
     
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
-    var minSize: js.UndefOr[Double] = js.native
+    var minSize: js.UndefOr[Double] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var noClick: js.UndefOr[Boolean] = js.native
+    var noClick: js.UndefOr[Boolean] = js.undefined
     
-    var noDrag: js.UndefOr[Boolean] = js.native
+    var noDrag: js.UndefOr[Boolean] = js.undefined
     
-    var noDragEventsBubbling: js.UndefOr[Boolean] = js.native
+    var noDragEventsBubbling: js.UndefOr[Boolean] = js.undefined
     
-    var noKeyboard: js.UndefOr[Boolean] = js.native
+    var noKeyboard: js.UndefOr[Boolean] = js.undefined
     
-    var onDragEnter: js.UndefOr[DragEventHandler[HTMLElement]] = js.native
+    var onDragEnter: js.UndefOr[DragEventHandler[HTMLElement]] = js.undefined
     
-    var onDragLeave: js.UndefOr[DragEventHandler[HTMLElement]] = js.native
+    var onDragLeave: js.UndefOr[DragEventHandler[HTMLElement]] = js.undefined
     
-    var onDragOver: js.UndefOr[DragEventHandler[HTMLElement]] = js.native
+    var onDragOver: js.UndefOr[DragEventHandler[HTMLElement]] = js.undefined
     
     var onDrop: js.UndefOr[
         js.Function3[
@@ -103,17 +103,17 @@ object mod {
           /* event */ DropEvent, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onDropAccepted: js.UndefOr[js.Function2[/* files */ js.Array[File], /* event */ DropEvent, Unit]] = js.native
+    var onDropAccepted: js.UndefOr[js.Function2[/* files */ js.Array[File], /* event */ DropEvent, Unit]] = js.undefined
     
     var onDropRejected: js.UndefOr[
         js.Function2[/* fileRejections */ js.Array[FileRejection], /* event */ DropEvent, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onFileDialogCancel: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFileDialogCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var preventDropOnDocument: js.UndefOr[Boolean] = js.native
+    var preventDropOnDocument: js.UndefOr[Boolean] = js.undefined
   }
   object DropzoneOptions {
     
@@ -247,10 +247,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait DropzoneProps extends DropzoneOptions {
+  trait DropzoneProps
+    extends StObject
+       with DropzoneOptions {
     
-    var children: js.UndefOr[js.Function1[/* state */ DropzoneState, Element]] = js.native
+    var children: js.UndefOr[js.Function1[/* state */ DropzoneState, Element]] = js.undefined
   }
   object DropzoneProps {
     
@@ -271,10 +272,9 @@ object mod {
     }
   }
   
-  @js.native
   trait DropzoneRef extends StObject {
     
-    def open(): Unit = js.native
+    def open(): Unit
   }
   object DropzoneRef {
     
@@ -292,12 +292,12 @@ object mod {
     }
   }
   
-  @js.native
   trait DropzoneRootProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var refKey: js.UndefOr[String] = js.native
+    var refKey: js.UndefOr[String] = js.undefined
   }
   object DropzoneRootProps {
     
@@ -318,9 +318,10 @@ object mod {
     }
   }
   
-  /* Inlined react-dropzone.react-dropzone.DropzoneRef & {  isFocused :boolean,   isDragActive :boolean,   isDragAccept :boolean,   isDragReject :boolean,   isFileDialogActive :boolean,   draggedFiles :std.Array<std.File>,   acceptedFiles :std.Array<std.File>,   fileRejections :std.Array<react-dropzone.react-dropzone.FileRejection>,   rootRef :react.react.RefObject<std.HTMLElement>,   inputRef :react.react.RefObject<std.HTMLInputElement>, getRootProps (props : react-dropzone.react-dropzone.DropzoneRootProps | undefined): react-dropzone.react-dropzone.DropzoneRootProps, getInputProps (props : react-dropzone.react-dropzone.DropzoneInputProps | undefined): react-dropzone.react-dropzone.DropzoneInputProps} */
   @js.native
-  trait DropzoneState extends StObject {
+  trait DropzoneState
+    extends StObject
+       with DropzoneRef {
     
     var acceptedFiles: js.Array[File] = js.native
     
@@ -346,17 +347,14 @@ object mod {
     
     var isFocused: Boolean = js.native
     
-    def open(): Unit = js.native
-    
     var rootRef: RefObject[HTMLElement] = js.native
   }
   
-  @js.native
   trait FileError extends StObject {
     
-    var code: `file-too-large` | `file-too-small` | `too-many-files` | `file-invalid-type` = js.native
+    var code: `file-too-large` | `file-too-small` | `too-many-files` | `file-invalid-type`
     
-    var message: String = js.native
+    var message: String
   }
   object FileError {
     
@@ -380,12 +378,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FileRejection extends StObject {
     
-    var errors: js.Array[FileError] = js.native
+    var errors: js.Array[FileError]
     
-    var file: File = js.native
+    var file: File
   }
   object FileRejection {
     

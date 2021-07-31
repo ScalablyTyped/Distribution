@@ -6,35 +6,52 @@ import typings.chaiAlmost.mod.global.Chai.ChaiAlmost.Almost
 import typings.chaiAlmost.mod.global.Chai.ChaiAlmost.DeepAlmost
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): ChaiPlugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ChaiPlugin]
+  @scala.inline
+  def apply(tolerance: Double): ChaiPlugin = ^.asInstanceOf[js.Dynamic].apply(tolerance.asInstanceOf[js.Any]).asInstanceOf[ChaiPlugin]
+  
   @JSImport("chai-almost", JSImport.Namespace)
   @js.native
-  def apply(): ChaiPlugin = js.native
-  @JSImport("chai-almost", JSImport.Namespace)
-  @js.native
-  def apply(tolerance: Double): ChaiPlugin = js.native
+  val ^ : js.Any = js.native
   
   object global {
     
     object Chai {
       
-      @js.native
       trait Assertion extends StObject {
         
-        def almost(value: js.Any): Assertion = js.native
-        def almost(value: js.Any, toleranceOverride: Double): Assertion = js.native
+        def almost(value: js.Any): Assertion
+        def almost(value: js.Any, toleranceOverride: Double): Assertion
         @JSName("almost")
-        var almost_Original: Almost = js.native
+        var almost_Original: Almost
+      }
+      object Assertion {
+        
+        @scala.inline
+        def apply(almost: Almost): Assertion = {
+          val __obj = js.Dynamic.literal(almost = almost.asInstanceOf[js.Any])
+          __obj.asInstanceOf[Assertion]
+        }
+        
+        @scala.inline
+        implicit class AssertionMutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
+          
+          @scala.inline
+          def setAlmost(value: Almost): Self = StObject.set(x, "almost", value.asInstanceOf[js.Any])
+        }
       }
       
       object ChaiAlmost {
         
         @js.native
-        trait Almost extends DeepAlmost {
+        trait Almost
+          extends StObject
+             with DeepAlmost {
           
           def eql(value: js.Any): typings.chai.Chai.Assertion = js.native
           def eql(value: js.Any, message: String): typings.chai.Chai.Assertion = js.native
@@ -70,13 +87,27 @@ object mod {
         }
       }
       
-      @js.native
       trait Deep extends StObject {
         
-        def almost(value: js.Any): Assertion = js.native
-        def almost(value: js.Any, toleranceOverride: Double): Assertion = js.native
+        def almost(value: js.Any): Assertion
+        def almost(value: js.Any, toleranceOverride: Double): Assertion
         @JSName("almost")
-        var almost_Original: DeepAlmost = js.native
+        var almost_Original: DeepAlmost
+      }
+      object Deep {
+        
+        @scala.inline
+        def apply(almost: DeepAlmost): Deep = {
+          val __obj = js.Dynamic.literal(almost = almost.asInstanceOf[js.Any])
+          __obj.asInstanceOf[Deep]
+        }
+        
+        @scala.inline
+        implicit class DeepMutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
+          
+          @scala.inline
+          def setAlmost(value: DeepAlmost): Self = StObject.set(x, "almost", value.asInstanceOf[js.Any])
+        }
       }
     }
   }

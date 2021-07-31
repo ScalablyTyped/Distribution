@@ -13,7 +13,6 @@ import typings.instagramPrivateApi.repositoryMod.Repository
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publishServiceMod {
@@ -23,11 +22,11 @@ object publishServiceMod {
   class PublishService protected () extends Repository {
     def this(client: IgApiClient) = this()
     
-    def album(options: PostingAlbumOptions): js.Promise[_] = js.native
+    def album(options: PostingAlbumOptions): js.Promise[js.Any] = js.native
     
     var chance: js.Any = js.native
     
-    def igtvVideo(options: PostingIgtvOptions): js.Promise[_] = js.native
+    def igtvVideo(options: PostingIgtvOptions): js.Promise[js.Any] = js.native
     
     def photo(options: PostingPhotoOptions): js.Promise[MediaRepositoryConfigureResponseRootObject] = js.native
     
@@ -35,8 +34,8 @@ object publishServiceMod {
     
     var segmentedVideo: js.Any = js.native
     
-    def story(options: PostingStoryPhotoOptions): js.Promise[_] = js.native
-    def story(options: PostingStoryVideoOptions): js.Promise[_] = js.native
+    def story(options: PostingStoryPhotoOptions): js.Promise[js.Any] = js.native
+    def story(options: PostingStoryVideoOptions): js.Promise[js.Any] = js.native
     
     var uploadAndConfigureStoryPhoto: js.Any = js.native
     
@@ -51,17 +50,14 @@ object publishServiceMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("instagram-private-api/dist/services/publish.service", "PublishService.catchTranscodeError")
-    @js.native
-    def catchTranscodeError(videoInfo: js.Any, transcodeDelayInMs: Double): js.Function1[/* error */ js.Any, typings.bluebird.mod.^[Unit]] = js.native
+    @scala.inline
+    def catchTranscodeError(videoInfo: js.Any, transcodeDelayInMs: Double): js.Function1[/* error */ js.Any, typings.bluebird.mod.^[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("catchTranscodeError")(videoInfo.asInstanceOf[js.Any], transcodeDelayInMs.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* error */ js.Any, typings.bluebird.mod.^[Unit]]]
     
-    @JSImport("instagram-private-api/dist/services/publish.service", "PublishService.getMP4Duration")
-    @js.native
-    def getMP4Duration(buffer: Buffer): Double = js.native
+    @scala.inline
+    def getMP4Duration(buffer: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMP4Duration")(buffer.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("instagram-private-api/dist/services/publish.service", "PublishService.getVideoInfo")
-    @js.native
-    def getVideoInfo(buffer: Buffer): Duration = js.native
+    @scala.inline
+    def getVideoInfo(buffer: Buffer): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("getVideoInfo")(buffer.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     @JSImport("instagram-private-api/dist/services/publish.service", "PublishService.makeLocationOptions")
     @js.native

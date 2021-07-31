@@ -3,7 +3,6 @@ package typings.twilioSync
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syncerrorMod {
@@ -13,19 +12,27 @@ object syncerrorMod {
   class default protected () extends SyncError {
     def this(message: String) = this()
     def this(message: String, status: Double) = this()
-    def this(message: String, status: js.UndefOr[scala.Nothing], code: Double) = this()
     def this(message: String, status: Double, code: Double) = this()
+    def this(message: String, status: Unit, code: Double) = this()
   }
   
   @JSImport("twilio-sync/lib/utils/syncerror", "SyncError")
   @js.native
-  class SyncError protected () extends Error {
+  class SyncError protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
     def this(message: String, status: Double) = this()
-    def this(message: String, status: js.UndefOr[scala.Nothing], code: Double) = this()
     def this(message: String, status: Double, code: Double) = this()
+    def this(message: String, status: Unit, code: Double) = this()
     
     var code: Double = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var status: Double = js.native
   }

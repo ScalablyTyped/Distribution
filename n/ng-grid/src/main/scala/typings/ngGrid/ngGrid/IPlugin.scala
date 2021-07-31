@@ -2,13 +2,11 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPlugin extends StObject {
   
-  def init(childScope: IGridScope, gridInstance: IGridInstance, services: js.Any): Unit = js.native
+  def init(childScope: IGridScope, gridInstance: IGridInstance, services: js.Any): Unit
 }
 object IPlugin {
   

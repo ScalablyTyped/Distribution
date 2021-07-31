@@ -2,21 +2,19 @@ package typings.overlayscrollbars.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverflowChangedArgs extends StObject {
   
-  var clipped: Boolean = js.native
+  var clipped: Boolean
   
-  var x: Boolean = js.native
+  var x: Boolean
   
-  var xScrollable: Boolean = js.native
+  var xScrollable: Boolean
   
-  var y: Boolean = js.native
+  var y: Boolean
   
-  var yScrollable: Boolean = js.native
+  var yScrollable: Boolean
 }
 object OverflowChangedArgs {
   

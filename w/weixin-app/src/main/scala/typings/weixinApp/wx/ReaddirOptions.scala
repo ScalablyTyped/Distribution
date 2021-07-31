@@ -3,18 +3,17 @@ package typings.weixinApp.wx
 import typings.weixinApp.anon.Files
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReaddirOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
-  var dirPath: String = js.native
+  var dirPath: String
   
   // 要读取的目录路径
   @JSName("success")
-  var success_ReaddirOptions: js.UndefOr[js.Function1[/* res */ Files, Unit]] = js.native
+  var success_ReaddirOptions: js.UndefOr[js.Function1[/* res */ Files, Unit]] = js.undefined
 }
 object ReaddirOptions {
   

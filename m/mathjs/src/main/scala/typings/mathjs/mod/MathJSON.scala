@@ -2,19 +2,17 @@ package typings.mathjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MathJSON extends StObject {
   
-  var fixPrefix: js.UndefOr[Boolean] = js.native
+  var fixPrefix: js.UndefOr[Boolean] = js.undefined
   
-  var mathjs: js.UndefOr[String] = js.native
+  var mathjs: js.UndefOr[String] = js.undefined
   
-  var unit: String = js.native
+  var unit: String
   
-  var value: Double = js.native
+  var value: Double
 }
 object MathJSON {
   

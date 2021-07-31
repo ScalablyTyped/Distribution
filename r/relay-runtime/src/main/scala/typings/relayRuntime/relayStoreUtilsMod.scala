@@ -9,10 +9,13 @@ import typings.relayRuntime.readerNodeMod.ReaderField
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayStoreUtilsMod {
+  
+  @JSImport("relay-runtime/lib/store/RelayStoreUtils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("relay-runtime/lib/store/RelayStoreUtils", "FRAGMENTS_KEY")
   @js.native
@@ -54,43 +57,33 @@ object relayStoreUtilsMod {
   @js.native
   val TYPENAME_KEY: String = js.native
   
-  @JSImport("relay-runtime/lib/store/RelayStoreUtils", "formatStorageKey")
-  @js.native
-  def formatStorageKey(name: String, argValues: Arguments): String = js.native
+  @scala.inline
+  def formatStorageKey(name: String, argValues: Arguments): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatStorageKey")(name.asInstanceOf[js.Any], argValues.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("relay-runtime/lib/store/RelayStoreUtils", "getArgumentValues")
-  @js.native
-  def getArgumentValues(args: js.Array[NormalizationArgument | ReaderArgument], variables: Variables): Arguments = js.native
+  @scala.inline
+  def getArgumentValues(args: js.Array[NormalizationArgument | ReaderArgument], variables: Variables): Arguments = (^.asInstanceOf[js.Dynamic].applyDynamic("getArgumentValues")(args.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[Arguments]
   
-  @JSImport("relay-runtime/lib/store/RelayStoreUtils", "getHandleStorageKey")
-  @js.native
-  def getHandleStorageKey(handleField: NormalizationHandle, variables: Variables): String = js.native
+  @scala.inline
+  def getHandleStorageKey(handleField: NormalizationHandle, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHandleStorageKey")(handleField.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("relay-runtime/lib/store/RelayStoreUtils", "getModuleComponentKey")
-  @js.native
-  def getModuleComponentKey(documentName: String): String = js.native
+  @scala.inline
+  def getModuleComponentKey(documentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleComponentKey")(documentName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("relay-runtime/lib/store/RelayStoreUtils", "getModuleOperationKey")
-  @js.native
-  def getModuleOperationKey(documentName: String): String = js.native
+  @scala.inline
+  def getModuleOperationKey(documentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleOperationKey")(documentName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("relay-runtime/lib/store/RelayStoreUtils", "getStableStorageKey")
-  @js.native
-  def getStableStorageKey(name: String, args: Arguments): String = js.native
+  @scala.inline
+  def getStableStorageKey(name: String, args: Arguments): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStableStorageKey")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("relay-runtime/lib/store/RelayStoreUtils", "getStableVariableValue")
-  @js.native
-  def getStableVariableValue(name: String, variables: Variables): js.Any = js.native
+  @scala.inline
+  def getStableVariableValue(name: String, variables: Variables): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getStableVariableValue")(name.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("relay-runtime/lib/store/RelayStoreUtils", "getStorageKey")
-  @js.native
-  def getStorageKey(field: NormalizationField, variables: Variables): String = js.native
-  @JSImport("relay-runtime/lib/store/RelayStoreUtils", "getStorageKey")
-  @js.native
-  def getStorageKey(field: NormalizationHandle, variables: Variables): String = js.native
-  @JSImport("relay-runtime/lib/store/RelayStoreUtils", "getStorageKey")
-  @js.native
-  def getStorageKey(field: ReaderField, variables: Variables): String = js.native
+  @scala.inline
+  def getStorageKey(field: NormalizationField, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getStorageKey(field: NormalizationHandle, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getStorageKey(field: ReaderField, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Arguments = StringDictionary[js.Any]
 }

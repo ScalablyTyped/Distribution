@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XCommandProcessor
   * @version 1.0
   */
-@js.native
-trait XCommandEnvironment extends XInterface {
+trait XCommandEnvironment
+  extends StObject
+     with XInterface {
   
   /**
     * returns the command's interaction handler.
@@ -23,7 +23,7 @@ trait XCommandEnvironment extends XInterface {
     * If called multiple times, this method should consistently return the same value (to allow caching).
     * @returns an interaction handler
     */
-  val InteractionHandler: XInteractionHandler = js.native
+  val InteractionHandler: XInteractionHandler
   
   /**
     * returns the command's progress handler.
@@ -31,7 +31,7 @@ trait XCommandEnvironment extends XInterface {
     * If called multiple times, this method should consistently return the same value (to allow caching).
     * @returns a progress handler
     */
-  val ProgressHandler: XProgressHandler = js.native
+  val ProgressHandler: XProgressHandler
   
   /**
     * returns the command's interaction handler.
@@ -39,7 +39,7 @@ trait XCommandEnvironment extends XInterface {
     * If called multiple times, this method should consistently return the same value (to allow caching).
     * @returns an interaction handler
     */
-  def getInteractionHandler(): XInteractionHandler = js.native
+  def getInteractionHandler(): XInteractionHandler
   
   /**
     * returns the command's progress handler.
@@ -47,7 +47,7 @@ trait XCommandEnvironment extends XInterface {
     * If called multiple times, this method should consistently return the same value (to allow caching).
     * @returns a progress handler
     */
-  def getProgressHandler(): XProgressHandler = js.native
+  def getProgressHandler(): XProgressHandler
 }
 object XCommandEnvironment {
   

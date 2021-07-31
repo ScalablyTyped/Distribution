@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/bucket-endpoint-middleware |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 2 |
-| # downloads        | 32512 |
+| # releases         | 7 |
+| # dependents       | 0 |
+| # downloads        | 57604 |
 | # stars            | 0 |
 
 ## Links

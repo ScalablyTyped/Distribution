@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2SignInValueSpec extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GoogleActionsV2SignInValueSpec extends StObject {
     * prefix of a prompt for user consent, e.g. \"To track your exercise\", or
     * \"To check your account balance\".
     */
-  var optContext: js.UndefOr[String] = js.native
+  var optContext: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2SignInValueSpec {
   

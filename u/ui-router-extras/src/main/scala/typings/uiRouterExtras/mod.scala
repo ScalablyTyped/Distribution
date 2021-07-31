@@ -7,7 +7,6 @@ import typings.angular.mod.Injectable
 import typings.uiRouterExtras.anon.Redirect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -18,27 +17,26 @@ object mod {
     /*
       * Docs: http://christopherthielen.github.io/ui-router-extras/#/dsr
       */
-    @js.native
     trait IDeepStateRedirectConfig extends StObject {
       
       /*
         * If no deep state has been recorded, DSR will instead redirect to the default substate and params that you specify.
         * If default is a string it is interpreted as the substate.
         */
-      var default: js.UndefOr[String | IRedirectParams] = js.native
+      var default: js.UndefOr[String | IRedirectParams] = js.undefined
       
       /*
         * A callback function that determines whether or not the redirect should actually occur, or changes the redirect to some other state.
         * Return an object: IRedirectParams to change the redirect
         */
-      var fn: js.UndefOr[js.Function1[/* $dsr$ */ Redirect, Boolean | IRedirectParams]] = js.native
+      var fn: js.UndefOr[js.Function1[/* $dsr$ */ Redirect, Boolean | IRedirectParams]] = js.undefined
       
       /*
         * Specify params: true if your DSR state takes parameters.
         * If only a subset of the parameters should be included in the parameter grouping for recording deep states,
         * specify an array of parameter names.
         */
-      var params: js.UndefOr[Boolean | js.Array[String]] = js.native
+      var params: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     }
     object IDeepStateRedirectConfig {
       
@@ -94,26 +92,26 @@ object mod {
     /**
       * A `FutureState` object is a placeholder for full a UI-Router `state`
       */
-    @js.native
     trait IFutureState
-      extends /* key */ StringDictionary[js.Any] {
+      extends StObject
+         with /* key */ StringDictionary[js.Any] {
       
       /**
         * The placeholder state name (fully qualified).
         * Attempted transitions to this state (or any substates) will trigger a lazy load of the full UI-Router `state` represented by this FutureState.
         */
-      var stateName: String = js.native
+      var stateName: String
       
       /**
         * The type of FutureState. This is a used to select a registered StateFactory which is then used to build the full UI-Router `state`
         */
-      var `type`: String = js.native
+      var `type`: String
       
       /**
         * The placeholder url path fragment (the fragment is the URL prefix which the state will be accessed on, not the URL of the state's source code).
         * Attempted navigations to a URL starting with this fragment will trigger a lazy load of the full UI-Router `state` represented by this FutureState.
         */
-      var url: String = js.native
+      var url: String
     }
     object IFutureState {
       
@@ -152,7 +150,6 @@ object mod {
         ]
       ]
     
-    @js.native
     trait IFutureStateProvider extends StObject {
       
       /**
@@ -160,17 +157,17 @@ object mod {
         * `$futureStateProvider` won't reject any state transitions or routes until all resolveFunction promises have been resolved.
         * Resolves may be used to defer routing until the states have been loaded via $http, for instance.
         */
-      def addResolve(resolveFn: IResolveFunction): Unit = js.native
+      def addResolve(resolveFn: IResolveFunction): Unit
       
       /**
         * Registers a `FutureState` object as a placeholder for a full UI-Router `state` or `state` tree.
         */
-      def futureState(state: IFutureState): Unit = js.native
+      def futureState(state: IFutureState): Unit
       
       /**
         * Registers a `StateFactory` function for `FutureState` of type `type`.
         */
-      def stateFactory(`type`: String, stateFactory: IFutureStateFactory): Unit = js.native
+      def stateFactory(`type`: String, stateFactory: IFutureStateFactory): Unit
     }
     object IFutureStateProvider {
       
@@ -198,20 +195,18 @@ object mod {
       }
     }
     
-    @js.native
     trait IFutureStateService extends StObject
     
     /*
       * Previous state
       */
-    @js.native
     trait IPreviousState extends StObject {
       
       var params: js.UndefOr[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ js.Any
-          ] = js.native
+          ] = js.undefined
       
-      var state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any = js.native
+      var state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any
     }
     object IPreviousState {
       
@@ -267,11 +262,11 @@ object mod {
         * @param options State options
         * @return Promise
         */
-      def go(memoName: String): IPromise[_] = js.native
+      def go(memoName: String): IPromise[js.Any] = js.native
       def go(
         memoName: String,
         options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateOptions */ js.Any
-      ): IPromise[_] = js.native
+      ): IPromise[js.Any] = js.native
       
       /**
         * Memorize a state
@@ -280,19 +275,18 @@ object mod {
         * @param defaultStateParams Default state parameters
         */
       def memo(memoName: String): Unit = js.native
-      def memo(memoName: String, defaultStateName: js.UndefOr[scala.Nothing], defaultStateParams: js.Object): Unit = js.native
       def memo(memoName: String, defaultStateName: String): Unit = js.native
       def memo(memoName: String, defaultStateName: String, defaultStateParams: js.Object): Unit = js.native
+      def memo(memoName: String, defaultStateName: Unit, defaultStateParams: js.Object): Unit = js.native
     }
     
-    @js.native
     trait IRedirectParams extends StObject {
       
       var params: js.UndefOr[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ js.Any
-          ] = js.native
+          ] = js.undefined
       
-      var state: String = js.native
+      var state: String
     }
     object IRedirectParams {
       
@@ -321,7 +315,9 @@ object mod {
     type IResolveFunction = Injectable[js.Function1[/* repeated */ js.Any, IPromise[js.Any]]]
     
     @js.native
-    trait IStateProvider extends IServiceProvider {
+    trait IStateProvider
+      extends StObject
+         with IServiceProvider {
       
       def state(config: IStickyState): IStateProvider = js.native
       def state(name: String, config: IStickyState): IStateProvider = js.native
@@ -331,36 +327,35 @@ object mod {
       * Sticky state
       */
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState * / any */ @js.native
-    trait IStickyState extends StObject {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState * / any */ trait IStickyState extends StObject {
       
       /*
         * The most-recently-activate substate of the DSR marked state is remembered.
         * When the DSR marked state is transitioned to directly, UI-Router Extras will instead redirect to the remembered state and parameters.
         * Docs: http://christopherthielen.github.io/ui-router-extras/#/dsr
         */
-      var deepStateRedirect: js.UndefOr[Boolean | IDeepStateRedirectConfig] = js.native
+      var deepStateRedirect: js.UndefOr[Boolean | IDeepStateRedirectConfig] = js.undefined
       
       /*
         * Shortname deepStateRedirect prop
         */
-      var dsr: js.UndefOr[Boolean | IDeepStateRedirectConfig] = js.native
+      var dsr: js.UndefOr[Boolean | IDeepStateRedirectConfig] = js.undefined
       
       /*
         * Function (injectable). Called when a sticky state is navigated away from (inactivated).
         */
-      var onInactivate: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+      var onInactivate: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
       
       /*
         * Function (injectable). Called when an inactive sticky state is navigated to (reactivated).
         */
-      var onReactivate: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+      var onReactivate: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
       
       /*
         * When marking a state sticky, the state must target its own unique named ui-view.
         * Docs: http://christopherthielen.github.io/ui-router-extras/#/sticky
         */
-      var sticky: js.UndefOr[Boolean] = js.native
+      var sticky: js.UndefOr[Boolean] = js.undefined
       
       /*
         * Note: named views are mandatory when using sticky states!
@@ -369,7 +364,7 @@ object mod {
             StringDictionary[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any
             ]
-          ] = js.native
+          ] = js.undefined
     }
     object IStickyState {
       
@@ -427,14 +422,15 @@ object mod {
     /**
       * Sticky state provider
       */
-    @js.native
-    trait IStickyStateProvider extends IServiceProvider {
+    trait IStickyStateProvider
+      extends StObject
+         with IServiceProvider {
       
-      def debugMode(): Boolean = js.native
+      def debugMode(): Boolean
       
-      def enableDebug(enabled: Boolean): Boolean = js.native
+      def enableDebug(enabled: Boolean): Boolean
       
-      def registerStickyState(state: IStickyState): Unit = js.native
+      def registerStickyState(state: IStickyState): Unit
     }
     object IStickyStateProvider {
       

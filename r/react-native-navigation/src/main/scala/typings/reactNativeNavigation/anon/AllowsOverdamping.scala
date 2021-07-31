@@ -4,30 +4,30 @@ import typings.reactNativeNavigation.optionsMod.Interpolation
 import typings.reactNativeNavigation.reactNativeNavigationStrings.spring
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AllowsOverdamping extends Interpolation {
+trait AllowsOverdamping
+  extends StObject
+     with Interpolation {
   
-  var allowsOverdamping: js.UndefOr[Boolean] = js.native
+  var allowsOverdamping: js.UndefOr[Boolean] = js.undefined
   
-  var damping: js.UndefOr[Double] = js.native
+  var damping: js.UndefOr[Double] = js.undefined
   
-  var initialVelocity: js.UndefOr[Double] = js.native
+  var initialVelocity: js.UndefOr[Double] = js.undefined
   
-  var mass: js.UndefOr[Double] = js.native
+  var mass: js.UndefOr[Double] = js.undefined
   
-  var stiffness: js.UndefOr[Double] = js.native
+  var stiffness: js.UndefOr[Double] = js.undefined
   
-  var `type`: spring = js.native
+  var `type`: spring
 }
 object AllowsOverdamping {
   
   @scala.inline
-  def apply(`type`: spring): AllowsOverdamping = {
+  def apply(): AllowsOverdamping = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("spring")
     __obj.asInstanceOf[AllowsOverdamping]
   }
   

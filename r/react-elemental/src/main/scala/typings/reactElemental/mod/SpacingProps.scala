@@ -3,29 +3,27 @@ package typings.reactElemental.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpacingProps extends StObject {
   
-  val bottom: js.UndefOr[Boolean] = js.native
+  val bottom: js.UndefOr[Boolean] = js.undefined
   
-  val children: js.UndefOr[js.Any] = js.native
+  val children: js.UndefOr[js.Any] = js.undefined
   
-  val `inline`: js.UndefOr[Boolean] = js.native
+  val `inline`: js.UndefOr[Boolean] = js.undefined
   
-  val left: js.UndefOr[Boolean] = js.native
+  val left: js.UndefOr[Boolean] = js.undefined
   
-  val padding: js.UndefOr[Boolean] = js.native
+  val padding: js.UndefOr[Boolean] = js.undefined
   
-  val right: js.UndefOr[Boolean] = js.native
+  val right: js.UndefOr[Boolean] = js.undefined
   
-  val size: js.UndefOr[String] = js.native
+  val size: js.UndefOr[String] = js.undefined
   
-  val style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
   
-  val top: js.UndefOr[Boolean] = js.native
+  val top: js.UndefOr[Boolean] = js.undefined
 }
 object SpacingProps {
   

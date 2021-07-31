@@ -2,17 +2,15 @@ package typings.gapiPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldMetadata extends StObject {
   
-  var primary: Boolean = js.native
+  var primary: Boolean
   
-  var source: Source = js.native
+  var source: Source
   
-  var verified: Boolean = js.native
+  var verified: Boolean
 }
 object FieldMetadata {
   

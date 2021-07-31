@@ -12,7 +12,7 @@ Pub/Sub library providing wildcard subscriptions, complex message handling, etc.
 | Keywords           | pub/sub, pub, sub, messaging, message, bus, event, mediator, broker, envelope |
 | # releases         | 0 |
 | # dependents       | 84 |
-| # downloads        | 1354513 |
+| # downloads        | 1594152 |
 | # stars            | 12 |
 
 ## Links

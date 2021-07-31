@@ -8,14 +8,15 @@ import typings.strtok3.typesMod.ITokenizer
 import typings.tokenizerToken.mod.IToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bufferTokenizerMod {
   
   @JSImport("strtok3/lib/BufferTokenizer", "BufferTokenizer")
   @js.native
-  class BufferTokenizer protected () extends ITokenizer {
+  class BufferTokenizer protected ()
+    extends StObject
+       with ITokenizer {
     /**
       * Construct BufferTokenizer
       * @param buffer - Buffer to tokenize

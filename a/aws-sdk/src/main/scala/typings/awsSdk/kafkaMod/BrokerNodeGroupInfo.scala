@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrokerNodeGroupInfo extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait BrokerNodeGroupInfo extends StObject {
     Amazon MSK distributes the broker nodes evenly across the Availability Zones that correspond to the subnets you provide when you create the cluster.
     
     */
-  var BrokerAZDistribution: js.UndefOr[typings.awsSdk.kafkaMod.BrokerAZDistribution] = js.native
+  var BrokerAZDistribution: js.UndefOr[typings.awsSdk.kafkaMod.BrokerAZDistribution] = js.undefined
   
   /**
     * 
     The list of subnets to connect to in the client virtual private cloud (VPC). AWS creates elastic network interfaces inside these subnets. Client applications use elastic network interfaces to produce and consume data. Client subnets can't be in Availability Zone us-east-1e.
     
     */
-  var ClientSubnets: listOfString = js.native
+  var ClientSubnets: listOfString
   
   /**
     * 
@@ -29,21 +27,21 @@ trait BrokerNodeGroupInfo extends StObject {
   kafka.m5.4xlarge, kafka.m5.12xlarge, and kafka.m5.24xlarge.
     
     */
-  var InstanceType: stringMin5Max32 = js.native
+  var InstanceType: stringMin5Max32
   
   /**
     * 
     The AWS security groups to associate with the elastic network interfaces in order to specify who can connect to and communicate with the Amazon MSK cluster. If you don't specify a security group, Amazon MSK uses the default security group associated with the VPC.
     
     */
-  var SecurityGroups: js.UndefOr[listOfString] = js.native
+  var SecurityGroups: js.UndefOr[listOfString] = js.undefined
   
   /**
     * 
     Contains information about storage volumes attached to MSK broker nodes.
     
     */
-  var StorageInfo: js.UndefOr[typings.awsSdk.kafkaMod.StorageInfo] = js.native
+  var StorageInfo: js.UndefOr[typings.awsSdk.kafkaMod.StorageInfo] = js.undefined
 }
 object BrokerNodeGroupInfo {
   

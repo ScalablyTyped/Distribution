@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoMonetizationDetails extends StObject {
   
   /** The value of access indicates whether the video can be monetized or not. */
-  var access: js.UndefOr[AccessPolicy] = js.native
+  var access: js.UndefOr[AccessPolicy] = js.undefined
 }
 object VideoMonetizationDetails {
   

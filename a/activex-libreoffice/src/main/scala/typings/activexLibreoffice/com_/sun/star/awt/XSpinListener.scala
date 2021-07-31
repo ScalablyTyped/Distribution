@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive spin events. */
-@js.native
-trait XSpinListener extends XEventListener {
+trait XSpinListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when the spin field is spun down. */
-  def down(rEvent: SpinEvent): Unit = js.native
+  def down(rEvent: SpinEvent): Unit
   
   /** is invoked when the spin field is set to the lower value. */
-  def first(rEvent: SpinEvent): Unit = js.native
+  def first(rEvent: SpinEvent): Unit
   
   /** is invoked when the spin field is set to the upper value. */
-  def last(rEvent: SpinEvent): Unit = js.native
+  def last(rEvent: SpinEvent): Unit
   
   /** is invoked when the spin field is spun up. */
-  def up(rEvent: SpinEvent): Unit = js.native
+  def up(rEvent: SpinEvent): Unit
 }
 object XSpinListener {
   

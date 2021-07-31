@@ -2,29 +2,27 @@ package typings.freedom.freedom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Storage {
   
-  @js.native
   trait Storage extends StObject {
     
     // Remove all data from storage.
-    def clear(): js.Promise[Unit] = js.native
+    def clear(): js.Promise[Unit]
     
     // Fetch a value for a key.
-    def get(key: String): js.Promise[String] = js.native
+    def get(key: String): js.Promise[String]
     
     // Fetch array of all keys.
-    def keys(): js.Promise[js.Array[String]] = js.native
+    def keys(): js.Promise[js.Array[String]]
     
     // Remove a single key. Fulfills promise with previous value, if exists.
-    def remove(key: String): js.Promise[String] = js.native
+    def remove(key: String): js.Promise[String]
     
     // Sets a value to a key. Fulfills promise with the previous value, if it
     // exists.
-    def set(key: String, value: String): js.Promise[String] = js.native
+    def set(key: String, value: String): js.Promise[String]
   }
   object Storage {
     

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to toggle the case for each character - upper case becomes lower, lower case becomes upper.
   */
-@js.native
-trait ToggleTextCaseCommand extends CommandWithSimpleStateBase {
+trait ToggleTextCaseCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the ToggleTextCaseCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object ToggleTextCaseCommand {
   

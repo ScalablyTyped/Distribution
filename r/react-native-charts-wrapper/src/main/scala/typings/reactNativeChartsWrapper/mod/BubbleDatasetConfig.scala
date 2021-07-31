@@ -2,15 +2,14 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BubbleDatasetConfig
-  extends CommonDatasetConfig
+  extends StObject
+     with CommonDatasetConfig
      with BarLineScatterCandleBubbleConfig {
   
-  var highlightCircleWidth: js.UndefOr[Double] = js.native
+  var highlightCircleWidth: js.UndefOr[Double] = js.undefined
 }
 object BubbleDatasetConfig {
   

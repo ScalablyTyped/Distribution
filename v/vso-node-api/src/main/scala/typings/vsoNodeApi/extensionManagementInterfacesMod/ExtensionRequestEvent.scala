@@ -3,54 +3,53 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 import typings.vsoNodeApi.galleryInterfacesMod.PublishedExtension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionRequestEvent extends StObject {
   
   /**
     * The extension which has been requested
     */
-  var extension: PublishedExtension = js.native
+  var `extension`: PublishedExtension
   
   /**
     * Information about the host for which this extension is requested
     */
-  var host: ExtensionHost = js.native
+  var host: ExtensionHost
   
   /**
     * Name of the collection for which the extension was requested
     */
-  var hostName: String = js.native
+  var hostName: String
   
   /**
     * Gallery host url
     */
-  var links: ExtensionRequestUrls = js.native
+  var links: ExtensionRequestUrls
   
   /**
     * The extension request object
     */
-  var request: ExtensionRequest = js.native
+  var request: ExtensionRequest
   
   /**
     * The type of update that was made
     */
-  var updateType: ExtensionRequestUpdateType = js.native
+  var updateType: ExtensionRequestUpdateType
 }
 object ExtensionRequestEvent {
   
   @scala.inline
   def apply(
-    extension: PublishedExtension,
+    `extension`: PublishedExtension,
     host: ExtensionHost,
     hostName: String,
     links: ExtensionRequestUrls,
     request: ExtensionRequest,
     updateType: ExtensionRequestUpdateType
   ): ExtensionRequestEvent = {
-    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostName = hostName.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], updateType = updateType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], hostName = hostName.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], updateType = updateType.asInstanceOf[js.Any])
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionRequestEvent]
   }
   

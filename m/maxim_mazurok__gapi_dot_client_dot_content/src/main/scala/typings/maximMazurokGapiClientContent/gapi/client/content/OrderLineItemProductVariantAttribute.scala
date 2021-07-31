@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderLineItemProductVariantAttribute extends StObject {
   
   /** The dimension of the variant. */
-  var dimension: js.UndefOr[String] = js.native
+  var dimension: js.UndefOr[String] = js.undefined
   
   /** The value for the dimension. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object OrderLineItemProductVariantAttribute {
   

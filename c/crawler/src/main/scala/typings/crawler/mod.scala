@@ -17,7 +17,6 @@ import typings.node.urlMod.Url
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -52,28 +51,28 @@ object mod {
     val queueSize: Double = js.native
     
     def setLimiterProperty(limiter: String): Unit = js.native
-    def setLimiterProperty(limiter: String, property: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
     def setLimiterProperty(limiter: String, property: String): Unit = js.native
     def setLimiterProperty(limiter: String, property: String, value: js.Any): Unit = js.native
+    def setLimiterProperty(limiter: String, property: Unit, value: js.Any): Unit = js.native
   }
   
-  @js.native
   trait CrawlerRequestOptions
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
     var callback: js.UndefOr[
         js.Function3[/* err */ Error, /* res */ CrawlerRequestResponse, /* done */ js.Function0[Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var html: js.UndefOr[String] = js.native
+    var html: js.UndefOr[String] = js.undefined
     
-    var jQuery: js.UndefOr[js.Any] = js.native
+    var jQuery: js.UndefOr[js.Any] = js.undefined
     
-    var jquery: js.UndefOr[js.Any] = js.native
+    var jquery: js.UndefOr[js.Any] = js.undefined
     
-    var limiter: js.UndefOr[String] = js.native
+    var limiter: js.UndefOr[String] = js.undefined
     
     var preRequest: js.UndefOr[
         js.Function2[
@@ -81,15 +80,15 @@ object mod {
           /* doRequest */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
-    var proxies: js.UndefOr[js.Array[_]] = js.native
+    var proxies: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.native
+    var proxy: js.UndefOr[js.Any] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
   }
   object CrawlerRequestOptions {
     
@@ -147,7 +146,7 @@ object mod {
       def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
       @scala.inline
-      def setProxies(value: js.Array[_]): Self = StObject.set(x, "proxies", value.asInstanceOf[js.Any])
+      def setProxies(value: js.Array[js.Any]): Self = StObject.set(x, "proxies", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setProxiesUndefined: Self = StObject.set(x, "proxies", js.undefined)
@@ -169,71 +168,95 @@ object mod {
     }
   }
   
-  @js.native
   trait CrawlerRequestResponse
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
     @JSName("$")
-    def $(selector: String): Cheerio = js.native
+    def $(selector: String): Cheerio
     @JSName("$")
-    def $(selector: String, context: String): Cheerio = js.native
+    def $(selector: String, context: String): Cheerio
     @JSName("$")
-    def $(selector: String, context: String, root: String): Cheerio = js.native
+    def $(selector: String, context: String, root: String): Cheerio
     @JSName("$")
-    def $(selector: String, context: js.Array[Element]): Cheerio = js.native
+    def $(selector: String, context: js.Array[Element]): Cheerio
     @JSName("$")
-    def $(selector: String, context: js.Array[Element], root: String): Cheerio = js.native
+    def $(selector: String, context: js.Array[Element], root: String): Cheerio
     @JSName("$")
-    def $(selector: String, context: Cheerio): Cheerio = js.native
+    def $(selector: String, context: Cheerio): Cheerio
     @JSName("$")
-    def $(selector: String, context: Cheerio, root: String): Cheerio = js.native
+    def $(selector: String, context: Cheerio, root: String): Cheerio
     @JSName("$")
-    def $(selector: String, context: Element): Cheerio = js.native
+    def $(selector: String, context: Element): Cheerio
     @JSName("$")
-    def $(selector: String, context: Element, root: String): Cheerio = js.native
+    def $(selector: String, context: Element, root: String): Cheerio
     @JSName("$")
-    def $(selector: js.Any): Cheerio = js.native
+    def $(selector: js.Any): Cheerio
     @JSName("$")
-    var $_Original: CheerioAPI = js.native
+    var $_Original: CheerioAPI
     
-    var body: Buffer | String = js.native
+    var body: Buffer | String
     
-    var options: CrawlerRequestOptions = js.native
+    var options: CrawlerRequestOptions
     
-    var request: RequestAsJSON = js.native
+    var request: RequestAsJSON
+  }
+  object CrawlerRequestResponse {
+    
+    @scala.inline
+    def apply($: CheerioAPI, body: Buffer | String, options: CrawlerRequestOptions, request: RequestAsJSON): CrawlerRequestResponse = {
+      val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CrawlerRequestResponse]
+    }
+    
+    @scala.inline
+    implicit class CrawlerRequestResponseMutableBuilder[Self <: CrawlerRequestResponse] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def set$(value: CheerioAPI): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBody(value: Buffer | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOptions(value: CrawlerRequestOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRequest(value: RequestAsJSON): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait CreateCrawlerOptions
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var autoWindowClose: js.UndefOr[Boolean] = js.native
+    var autoWindowClose: js.UndefOr[Boolean] = js.undefined
     
     var callback: js.UndefOr[
         js.Function3[/* err */ Error, /* res */ CrawlerRequestResponse, /* done */ js.Function0[Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var forceUTF8: js.UndefOr[Boolean] = js.native
+    var forceUTF8: js.UndefOr[Boolean] = js.undefined
     
-    var gzip: js.UndefOr[Boolean] = js.native
+    var gzip: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
-    var homogeneous: js.UndefOr[Boolean] = js.native
+    var homogeneous: js.UndefOr[Boolean] = js.undefined
     
-    var incomingEncoding: js.UndefOr[String] = js.native
+    var incomingEncoding: js.UndefOr[String] = js.undefined
     
-    var jQuery: js.UndefOr[js.Any] = js.native
+    var jQuery: js.UndefOr[js.Any] = js.undefined
     
-    var jquery: js.UndefOr[js.Any] = js.native
+    var jquery: js.UndefOr[js.Any] = js.undefined
     
-    var logger: js.UndefOr[Log] = js.native
+    var logger: js.UndefOr[Log] = js.undefined
     
-    var maxConnections: js.UndefOr[Double] = js.native
+    var maxConnections: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     var preRequest: js.UndefOr[
         js.Function2[
@@ -241,29 +264,29 @@ object mod {
           /* doRequest */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
-    var priorityRange: js.UndefOr[Double] = js.native
+    var priorityRange: js.UndefOr[Double] = js.undefined
     
-    var rateLimit: js.UndefOr[Double] = js.native
+    var rateLimit: js.UndefOr[Double] = js.undefined
     
-    var referer: js.UndefOr[`false` | String] = js.native
+    var referer: js.UndefOr[`false` | String] = js.undefined
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
-    var retryTimeout: js.UndefOr[Double] = js.native
+    var retryTimeout: js.UndefOr[Double] = js.undefined
     
-    var rotateUA: js.UndefOr[Boolean] = js.native
+    var rotateUA: js.UndefOr[Boolean] = js.undefined
     
-    var seenreq: js.UndefOr[js.Any] = js.native
+    var seenreq: js.UndefOr[js.Any] = js.undefined
     
-    var skipDuplicates: js.UndefOr[Boolean] = js.native
+    var skipDuplicates: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var userAgent: js.UndefOr[String | js.Array[String]] = js.native
+    var userAgent: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object CreateCrawlerOptions {
     
@@ -431,14 +454,13 @@ object mod {
   // as importing `request` v2.88.2 definitions cause DT tests to fail.
   type Headers = StringDictionary[js.Any]
   
-  @js.native
   trait RequestAsJSON extends StObject {
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var method: String = js.native
+    var method: String
     
-    var uri: Url = js.native
+    var uri: Url
   }
   object RequestAsJSON {
     

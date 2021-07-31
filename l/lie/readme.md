@@ -11,8 +11,8 @@ A basic but performant promise implementation
 | Full name          | lie |
 | Keywords           | lie, promise, async, aplus |
 | # releases         | 0 |
-| # dependents       | 162 |
-| # downloads        | 132157831 |
+| # dependents       | 163 |
+| # downloads        | 162598451 |
 | # stars            | 9 |
 
 ## Links

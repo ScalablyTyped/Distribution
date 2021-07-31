@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.swatchColorPickerTypesMod.ISwatchColorPickerP
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swatchColorPickerBaseMod {
@@ -120,10 +119,9 @@ object swatchColorPickerBaseMod {
     def defaultProps_=(x: ISwatchColorPickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ISwatchColorPickerState extends StObject {
     
-    var selectedIndex: js.UndefOr[Double] = js.native
+    var selectedIndex: js.UndefOr[Double] = js.undefined
   }
   object ISwatchColorPickerState {
     

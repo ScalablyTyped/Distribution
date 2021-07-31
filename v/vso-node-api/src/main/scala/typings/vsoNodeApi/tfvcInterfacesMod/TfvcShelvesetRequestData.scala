@@ -2,46 +2,44 @@ package typings.vsoNodeApi.tfvcInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TfvcShelvesetRequestData extends StObject {
   
   /**
     * Whether to include policyOverride and notes Only applies when requesting a single deep shelveset
     */
-  var includeDetails: Boolean = js.native
+  var includeDetails: Boolean
   
   /**
     * Whether to include the _links field on the shallow references. Does not apply when requesting a single deep shelveset object. Links will always be included in the deep shelveset.
     */
-  var includeLinks: Boolean = js.native
+  var includeLinks: Boolean
   
   /**
     * Whether to include workItems
     */
-  var includeWorkItems: Boolean = js.native
+  var includeWorkItems: Boolean
   
   /**
     * Max number of changes to include
     */
-  var maxChangeCount: Double = js.native
+  var maxChangeCount: Double
   
   /**
     * Max length of comment
     */
-  var maxCommentLength: Double = js.native
+  var maxCommentLength: Double
   
   /**
     * Shelveset's name
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Owner's ID. Could be a name or a guid.
     */
-  var owner: String = js.native
+  var owner: String
 }
 object TfvcShelvesetRequestData {
   

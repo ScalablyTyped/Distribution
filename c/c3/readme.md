@@ -10,9 +10,9 @@ D3-based reusable chart library
 | ------------------ | :-------------: |
 | Full name          | c3 |
 | Keywords           | d3, chart, graph |
-| # releases         | 29 |
-| # dependents       | 113 |
-| # downloads        | 4257015 |
+| # releases         | 25 |
+| # dependents       | 117 |
+| # downloads        | 4594884 |
 | # stars            | 7 |
 
 ## Links

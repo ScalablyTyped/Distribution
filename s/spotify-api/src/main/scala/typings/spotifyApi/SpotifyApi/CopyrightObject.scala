@@ -4,19 +4,17 @@ import typings.spotifyApi.spotifyApiStrings.C
 import typings.spotifyApi.spotifyApiStrings.P
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Copyright object
   * [copyright object](https://developer.spotify.com/web-api/object-model/)
   */
-@js.native
 trait CopyrightObject extends StObject {
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: C | P = js.native
+  var `type`: C | P
 }
 object CopyrightObject {
   

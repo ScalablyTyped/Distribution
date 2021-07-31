@@ -2,17 +2,15 @@ package typings.vanillaSwipe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClientX extends StObject {
     
-    var clientX: Double = js.native
+    var clientX: Double
     
-    var clientY: Double = js.native
+    var clientY: Double
   }
   object ClientX {
     
@@ -33,22 +31,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Delta extends StObject {
     
-    var delta: Double = js.native
+    var delta: Double
     
-    var element: Null = js.native
+    var element: Null
     
-    var mouseTrackingEnabled: Boolean = js.native
+    var mouseTrackingEnabled: Boolean
     
-    var preventDefaultTouchmoveEvent: Boolean = js.native
+    var preventDefaultTouchmoveEvent: Boolean
     
-    var preventTrackingOnMouseleave: Boolean = js.native
+    var preventTrackingOnMouseleave: Boolean
     
-    var rotationAngle: Double = js.native
+    var rotationAngle: Double
     
-    var touchTrackingEnabled: Boolean = js.native
+    var touchTrackingEnabled: Boolean
   }
   object Delta {
     
@@ -92,20 +89,19 @@ object anon {
     }
   }
   
-  @js.native
   trait IsSwiping extends StObject {
     
-    var isSwiping: Boolean = js.native
+    var isSwiping: Boolean
     
-    var start: Double = js.native
+    var start: Double
     
-    var traceX: js.Array[scala.Nothing] = js.native
+    var traceX: js.Array[scala.Nothing]
     
-    var traceY: js.Array[scala.Nothing] = js.native
+    var traceY: js.Array[scala.Nothing]
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object IsSwiping {
     
@@ -151,10 +147,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Passive extends StObject {
     
-    var passive: Boolean = js.native
+    var passive: Boolean
   }
   object Passive {
     
@@ -172,18 +167,31 @@ object anon {
     }
   }
   
-  @js.native
   trait PassiveUndefined extends StObject {
     
-    var passive: js.UndefOr[scala.Nothing] = js.native
+    var passive: Unit
+  }
+  object PassiveUndefined {
+    
+    @scala.inline
+    def apply(passive: Unit): PassiveUndefined = {
+      val __obj = js.Dynamic.literal(passive = passive.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PassiveUndefined]
+    }
+    
+    @scala.inline
+    implicit class PassiveUndefinedMutableBuilder[Self <: PassiveUndefined] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setPassive(value: Unit): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: js.Any = js.native
+    var x: js.Any
     
-    var y: js.Any = js.native
+    var y: js.Any
   }
   object X {
     
@@ -204,12 +212,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Y extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Y {
     

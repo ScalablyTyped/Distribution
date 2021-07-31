@@ -4,40 +4,40 @@ import typings.connect.mod.HandleFunction
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): HandleFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[HandleFunction]
+  @scala.inline
+  def apply(options: Options): HandleFunction = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[HandleFunction]
+  
   @JSImport("connect-livereload", JSImport.Namespace)
   @js.native
-  def apply(): HandleFunction = js.native
-  @JSImport("connect-livereload", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): HandleFunction = js.native
+  val ^ : js.Any = js.native
   
   type FileMatcher = String | RegExp
   
-  @js.native
   trait Options extends StObject {
     
-    var disableCompression: js.UndefOr[Boolean] = js.native
+    var disableCompression: js.UndefOr[Boolean] = js.undefined
     
-    var excludeList: js.UndefOr[js.Array[FileMatcher]] = js.native
+    var excludeList: js.UndefOr[js.Array[FileMatcher]] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var html: js.UndefOr[js.Function1[/* val */ String, Boolean]] = js.native
+    var html: js.UndefOr[js.Function1[/* val */ String, Boolean]] = js.undefined
     
-    var ignore: js.UndefOr[js.Array[FileMatcher]] = js.native
+    var ignore: js.UndefOr[js.Array[FileMatcher]] = js.undefined
     
-    var include: js.UndefOr[js.Array[FileMatcher]] = js.native
+    var include: js.UndefOr[js.Array[FileMatcher]] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var rules: js.UndefOr[js.Array[Rule]] = js.native
+    var rules: js.UndefOr[js.Array[Rule]] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -118,12 +118,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Rule extends StObject {
     
-    def fn(w: String, s: String): String = js.native
+    def fn(w: String, s: String): String
     
-    var `match`: RegExp = js.native
+    var `match`: RegExp
   }
   object Rule {
     

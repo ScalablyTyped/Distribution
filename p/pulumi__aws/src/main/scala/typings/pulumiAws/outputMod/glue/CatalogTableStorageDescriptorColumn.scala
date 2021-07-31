@@ -3,31 +3,29 @@ package typings.pulumiAws.outputMod.glue
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CatalogTableStorageDescriptorColumn extends StObject {
   
   /**
     * Free-form text comment.
     */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the SerDe.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * A map of initialization parameters for the SerDe, in key-value form.
     */
-  var parameters: js.UndefOr[StringDictionary[String]] = js.native
+  var parameters: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The datatype of data in the Column.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object CatalogTableStorageDescriptorColumn {
   

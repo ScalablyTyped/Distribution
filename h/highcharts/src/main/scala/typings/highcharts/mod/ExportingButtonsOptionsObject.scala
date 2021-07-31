@@ -5,44 +5,42 @@ import typings.highcharts.highchartsStrings.menu
 import typings.highcharts.highchartsStrings.menuball
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportingButtonsOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Alignment for the buttons.
     */
-  var align: js.UndefOr[AlignValue] = js.native
+  var align: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel spacing between
     * buttons.
     */
-  var buttonSpacing: js.UndefOr[Double] = js.native
+  var buttonSpacing: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The class name of the context
     * button.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to enable buttons.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Pixel height of the buttons.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The class name of the menu
     * appearing from the button.
     */
-  var menuClassName: js.UndefOr[String] = js.native
+  var menuClassName: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A collection of strings pointing
@@ -52,13 +50,13 @@ trait ExportingButtonsOptionsObject extends StObject {
     * By default, there is the "View in full screen" and "Print" menu items,
     * plus one menu item for each of the available export types.
     */
-  var menuItems: js.UndefOr[js.Array[String]] = js.native
+  var menuItems: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A click handler callback to use
     * on the button directly instead of the popup menu.
     */
-  var onclick: js.UndefOr[js.Function] = js.native
+  var onclick: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The symbol for the button.
@@ -67,49 +65,49 @@ trait ExportingButtonsOptionsObject extends StObject {
     * module. Possible values are "circle", "square", "diamond", "triangle",
     * "triangle-down", "menu", "menuball" or custom shape.
     */
-  var symbol: js.UndefOr[menu | menuball | exportIcon | String | SymbolKeyValue] = js.native
+  var symbol: js.UndefOr[menu | menuball | exportIcon | String | SymbolKeyValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) See
     * navigation.buttonOptions.symbolFill.
     */
-  var symbolFill: js.UndefOr[ColorString] = js.native
+  var symbolFill: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel size of the symbol on
     * the button.
     */
-  var symbolSize: js.UndefOr[Double] = js.native
+  var symbolSize: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the symbol's stroke
     * or line.
     */
-  var symbolStroke: js.UndefOr[ColorString] = js.native
+  var symbolStroke: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel stroke width of the
     * symbol on the button.
     */
-  var symbolStrokeWidth: js.UndefOr[Double] = js.native
+  var symbolStrokeWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The x position of the center of
     * the symbol inside the button.
     */
-  var symbolX: js.UndefOr[Double] = js.native
+  var symbolX: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The y position of the center of
     * the symbol inside the button.
     */
-  var symbolY: js.UndefOr[Double] = js.native
+  var symbolY: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A text string to add to the
     * individual button.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A configuration object for the
@@ -117,7 +115,7 @@ trait ExportingButtonsOptionsObject extends StObject {
     * `stroke` and `fill`. Tri-state button styles are supported by the
     * `states.hover` and `states.select` objects.
     */
-  var theme: js.UndefOr[ExportingButtonsContextButtonThemeOptions] = js.native
+  var theme: js.UndefOr[ExportingButtonsContextButtonThemeOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The key to a lang option setting
@@ -125,30 +123,30 @@ trait ExportingButtonsOptionsObject extends StObject {
     * `contextButtonTitle`, it refers to lang.contextButtonTitle that defaults
     * to "Chart context menu".
     */
-  var titleKey: js.UndefOr[String] = js.native
+  var titleKey: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The vertical alignment of the
     * buttons. Can be one of `"top"`, `"middle"` or `"bottom"`.
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of the button.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The horizontal position of the
     * button relative to the `align` option.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The vertical offset of the
     * button's position relative to its `verticalAlign`.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object ExportingButtonsOptionsObject {
   

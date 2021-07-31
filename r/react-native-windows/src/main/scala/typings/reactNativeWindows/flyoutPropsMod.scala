@@ -4,32 +4,32 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flyoutPropsMod {
   
-  @js.native
-  trait IFlyoutProps extends ViewProps {
+  trait IFlyoutProps
+    extends StObject
+       with ViewProps {
     
-    var horizontalOffset: js.UndefOr[Double] = js.native
+    var horizontalOffset: js.UndefOr[Double] = js.undefined
     
-    var isLightDismissEnabled: js.UndefOr[Boolean] = js.native
+    var isLightDismissEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies whether the area outside the flyout is darkened
       */
-    var isOverlayEnabled: js.UndefOr[Boolean] = js.native
+    var isOverlayEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.undefined
     
-    var placement: js.UndefOr[Placement] = js.native
+    var placement: js.UndefOr[Placement] = js.undefined
     
-    var target: js.UndefOr[ReactNode] = js.native
+    var target: js.UndefOr[ReactNode] = js.undefined
     
-    var verticalOffset: js.UndefOr[Double] = js.native
+    var verticalOffset: js.UndefOr[Double] = js.undefined
   }
   object IFlyoutProps {
     

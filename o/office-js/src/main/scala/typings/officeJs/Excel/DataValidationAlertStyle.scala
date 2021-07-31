@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,11 +17,17 @@ sealed trait DataValidationAlertStyle extends StObject
 object DataValidationAlertStyle extends StObject {
   
   @js.native
-  sealed trait information extends DataValidationAlertStyle
+  sealed trait information
+    extends StObject
+       with DataValidationAlertStyle
   
   @js.native
-  sealed trait stop extends DataValidationAlertStyle
+  sealed trait stop
+    extends StObject
+       with DataValidationAlertStyle
   
   @js.native
-  sealed trait warning extends DataValidationAlertStyle
+  sealed trait warning
+    extends StObject
+       with DataValidationAlertStyle
 }

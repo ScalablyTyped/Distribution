@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.settingsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "settings.LanguageSettings")
@@ -37,9 +36,8 @@ object LanguageSettings {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "settings.LanguageSettings.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.settingsMod.settings.LanguageSettings = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.settingsMod.settings.LanguageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.settingsMod.settings.LanguageSettings]
   
   /**
     * Creates and returns a new LanguageSettings instance in the SDK and on the server.
@@ -47,9 +45,8 @@ object LanguageSettings {
     * of the parent ProjectSettings element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "settings.LanguageSettings.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.settingsMod.settings.ProjectSettings): typings.mendixmodelsdk.settingsMod.settings.LanguageSettings = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.settingsMod.settings.ProjectSettings): typings.mendixmodelsdk.settingsMod.settings.LanguageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.settingsMod.settings.LanguageSettings]
   
   /* static member */
   @JSImport("mendixmodelsdk", "settings.LanguageSettings.structureTypeName")

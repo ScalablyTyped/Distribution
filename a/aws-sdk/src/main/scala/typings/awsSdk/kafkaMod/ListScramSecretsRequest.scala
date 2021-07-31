@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListScramSecretsRequest extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait ListScramSecretsRequest extends StObject {
     The arn of the cluster.
     
     */
-  var ClusterArn: string = js.native
+  var ClusterArn: string
   
   /**
     * 
     The maxResults of the query.
     
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.kafkaMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.kafkaMod.MaxResults] = js.undefined
   
   /**
     * 
     The nextToken of the query.
     
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListScramSecretsRequest {
   

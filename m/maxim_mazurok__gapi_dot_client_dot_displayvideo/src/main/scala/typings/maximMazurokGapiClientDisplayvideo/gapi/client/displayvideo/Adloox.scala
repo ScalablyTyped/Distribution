@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Adloox extends StObject {
   
   /** Adloox's brand safety settings. */
-  var excludedAdlooxCategories: js.UndefOr[js.Array[String]] = js.native
+  var excludedAdlooxCategories: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Adloox {
   

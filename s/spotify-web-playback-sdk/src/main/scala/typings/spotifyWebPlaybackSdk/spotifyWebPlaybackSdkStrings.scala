@@ -3,13 +3,14 @@ package typings.spotifyWebPlaybackSdk
 import typings.spotifyWebPlaybackSdk.Spotify.ErrorTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spotifyWebPlaybackSdkStrings {
   
   @js.native
-  sealed trait account_error extends ErrorTypes
+  sealed trait account_error
+    extends StObject
+       with ErrorTypes
   @scala.inline
   def account_error: account_error = "account_error".asInstanceOf[account_error]
   
@@ -24,7 +25,9 @@ object spotifyWebPlaybackSdkStrings {
   def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait authentication_error extends ErrorTypes
+  sealed trait authentication_error
+    extends StObject
+       with ErrorTypes
   @scala.inline
   def authentication_error: authentication_error = "authentication_error".asInstanceOf[authentication_error]
   
@@ -34,7 +37,9 @@ object spotifyWebPlaybackSdkStrings {
   def episode: episode = "episode".asInstanceOf[episode]
   
   @js.native
-  sealed trait initialization_error extends ErrorTypes
+  sealed trait initialization_error
+    extends StObject
+       with ErrorTypes
   @scala.inline
   def initialization_error: initialization_error = "initialization_error".asInstanceOf[initialization_error]
   
@@ -44,7 +49,9 @@ object spotifyWebPlaybackSdkStrings {
   def not_ready: not_ready = "not_ready".asInstanceOf[not_ready]
   
   @js.native
-  sealed trait playback_error extends ErrorTypes
+  sealed trait playback_error
+    extends StObject
+       with ErrorTypes
   @scala.inline
   def playback_error: playback_error = "playback_error".asInstanceOf[playback_error]
   

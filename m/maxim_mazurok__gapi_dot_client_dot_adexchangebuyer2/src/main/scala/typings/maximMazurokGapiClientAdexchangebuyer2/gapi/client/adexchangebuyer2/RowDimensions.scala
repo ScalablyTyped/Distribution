@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowDimensions extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait RowDimensions extends StObject {
     * [BreakdownDimension.PUBLISHER_IDENTIFIER](https://developers.google.com/authorized-buyers/apis/reference/rest/v2beta1/bidders.accounts.filterSets#FilterSet.BreakdownDimension) was
     * requested.
     */
-  var publisherIdentifier: js.UndefOr[String] = js.native
+  var publisherIdentifier: js.UndefOr[String] = js.undefined
   
   /** The time interval that this row represents. */
-  var timeInterval: js.UndefOr[TimeInterval] = js.native
+  var timeInterval: js.UndefOr[TimeInterval] = js.undefined
 }
 object RowDimensions {
   

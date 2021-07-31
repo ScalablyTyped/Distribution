@@ -10,9 +10,9 @@ TypeScript typings for Content API for Shopping v2.1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.content |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 36 |
+| # releases         | 14 |
+| # dependents       | 1 |
+| # downloads        | 1169 |
 | # stars            | 0 |
 
 ## Links

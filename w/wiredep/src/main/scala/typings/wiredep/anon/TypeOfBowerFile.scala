@@ -3,16 +3,14 @@ package typings.wiredep.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeOfBowerFile extends StObject {
   
   /**
     * match the way this type of file is included
     */
-  var typeOfBowerFile: RegExp = js.native
+  var typeOfBowerFile: RegExp
 }
 object TypeOfBowerFile {
   

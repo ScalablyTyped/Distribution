@@ -10,9 +10,9 @@ Show some ❤️ to process errors
 | ------------------ | :-------------: |
 | Full name          | log-process-errors |
 | Keywords           | process, error-handling, error-handler, error, handling, handler, exception, promise, warnings, logging, uncaught, uncaught-exceptions, uncaughtException, unhandledRejection, rejectionHandled, multipleResolves, debugging, testing, test |
-| # releases         | 71 |
+| # releases         | 24 |
 | # dependents       | 10 |
-| # downloads        | 1682282 |
+| # downloads        | 3118726 |
 | # stars            | 0 |
 
 ## Links

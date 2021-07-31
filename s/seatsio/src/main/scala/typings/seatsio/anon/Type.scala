@@ -4,13 +4,11 @@ import typings.seatsio.seatsioStrings.row
 import typings.seatsio.seatsioStrings.table
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var `type`: row | table = js.native
+  var `type`: row | table
 }
 object Type {
   

@@ -3,11 +3,11 @@ package typings.tern.ternMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Def extends /* key */ StringDictionary[String | Def]
+trait Def
+  extends StObject
+     with /* key */ StringDictionary[String | Def]
 object Def {
   
   @scala.inline

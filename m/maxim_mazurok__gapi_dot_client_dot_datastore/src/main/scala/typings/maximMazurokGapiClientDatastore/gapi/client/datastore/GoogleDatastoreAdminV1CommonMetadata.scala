@@ -3,30 +3,28 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDatastoreAdminV1CommonMetadata extends StObject {
   
   /** The time the operation ended, either successfully or otherwise. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** The client-assigned labels which were provided when the operation was created. May also include additional labels. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GoogleDatastoreAdminV1CommonMetadata with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GoogleDatastoreAdminV1CommonMetadata & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The type of the operation. Can be used as a filter in ListOperationsRequest. */
-  var operationType: js.UndefOr[String] = js.native
+  var operationType: js.UndefOr[String] = js.undefined
   
   /** The time that work began on the operation. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** The current state of the Operation. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object GoogleDatastoreAdminV1CommonMetadata {
   
@@ -49,7 +47,7 @@ object GoogleDatastoreAdminV1CommonMetadata {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GoogleDatastoreAdminV1CommonMetadata with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GoogleDatastoreAdminV1CommonMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

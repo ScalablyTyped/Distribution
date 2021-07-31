@@ -2,14 +2,14 @@ package typings.tern.ternMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseQueryWithFile extends BaseQuery {
+trait BaseQueryWithFile
+  extends StObject
+     with BaseQuery {
   
   /** may hold either a filename, or a string in the form "#N", where N should be an integer referring to one of the files included in the request */
-  var file: String = js.native
+  var file: String
 }
 object BaseQueryWithFile {
   

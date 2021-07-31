@@ -2,21 +2,19 @@ package typings.angularFormly.AngularFormly
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IModelOptions extends StObject {
   
-  var allowInvalid: js.UndefOr[Boolean] = js.native
+  var allowInvalid: js.UndefOr[Boolean] = js.undefined
   
-  var debounce: js.UndefOr[Double] = js.native
+  var debounce: js.UndefOr[Double] = js.undefined
   
-  var getterSetter: js.UndefOr[String] = js.native
+  var getterSetter: js.UndefOr[String] = js.undefined
   
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
   
-  var updateOn: js.UndefOr[String] = js.native
+  var updateOn: js.UndefOr[String] = js.undefined
 }
 object IModelOptions {
   

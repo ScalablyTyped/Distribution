@@ -2,35 +2,33 @@ package typings.googleapis.driveV2Mod.driveV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of properties, key-value pairs that are either public or
   * private to an application.
   */
-@js.native
 trait SchemaPropertyList extends StObject {
   
   /**
     * The ETag of the list.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The list of properties.
     */
-  var items: js.UndefOr[js.Array[SchemaProperty]] = js.native
+  var items: js.UndefOr[js.Array[SchemaProperty]] = js.undefined
   
   /**
     * This is always drive#propertyList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The link back to this list.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaPropertyList {
   

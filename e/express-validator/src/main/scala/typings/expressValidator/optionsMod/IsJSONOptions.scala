@@ -2,13 +2,11 @@ package typings.expressValidator.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsJSONOptions extends StObject {
   
-  var allow_primitives: js.UndefOr[Boolean] = js.native
+  var allow_primitives: js.UndefOr[Boolean] = js.undefined
 }
 object IsJSONOptions {
   

@@ -10,29 +10,27 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.left
 import typings.tuyaPanelKit.tuyaPanelKitStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopBarContentProps extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var position: js.UndefOr[left | center | right] = js.native
+  var position: js.UndefOr[left | center | right] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var subTitle: js.UndefOr[String] = js.native
+  var subTitle: js.UndefOr[String] = js.undefined
   
-  var subTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var subTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 object TopBarContentProps {
   

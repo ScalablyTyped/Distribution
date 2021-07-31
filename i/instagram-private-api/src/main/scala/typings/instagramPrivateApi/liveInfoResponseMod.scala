@@ -2,29 +2,27 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveInfoResponseMod {
   
-  @js.native
   trait LiveInfoResponseBroadcastOwner extends StObject {
     
-    var friendship_status: LiveInfoResponseFriendshipStatus = js.native
+    var friendship_status: LiveInfoResponseFriendshipStatus
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object LiveInfoResponseBroadcastOwner {
     
@@ -72,26 +70,25 @@ object liveInfoResponseMod {
     }
   }
   
-  @js.native
   trait LiveInfoResponseFriendshipStatus extends StObject {
     
-    var blocking: Boolean = js.native
+    var blocking: Boolean
     
-    var followed_by: Boolean = js.native
+    var followed_by: Boolean
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var incoming_request: Boolean = js.native
+    var incoming_request: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_restricted: Boolean = js.native
+    var is_restricted: Boolean
     
-    var muting: Boolean = js.native
+    var muting: Boolean
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
   }
   object LiveInfoResponseFriendshipStatus {
     
@@ -143,44 +140,43 @@ object liveInfoResponseMod {
     }
   }
   
-  @js.native
   trait LiveInfoResponseRootObject extends StObject {
     
-    var broadcast_message: String = js.native
+    var broadcast_message: String
     
-    var broadcast_owner: LiveInfoResponseBroadcastOwner = js.native
+    var broadcast_owner: LiveInfoResponseBroadcastOwner
     
-    var broadcast_status: String = js.native
+    var broadcast_status: String
     
-    var cobroadcasters: js.Array[_] = js.native
+    var cobroadcasters: js.Array[js.Any]
     
-    var dash_abr_playback_url: Null = js.native
+    var dash_abr_playback_url: Null
     
-    var dash_live_predictive_playback_url: String = js.native
+    var dash_live_predictive_playback_url: String
     
-    var dash_playback_url: String = js.native
+    var dash_playback_url: String
     
-    var hide_from_feed_unit: Boolean = js.native
+    var hide_from_feed_unit: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var internal_only: Boolean = js.native
+    var internal_only: Boolean
     
-    var is_gaming_content: Boolean = js.native
+    var is_gaming_content: Boolean
     
-    var is_player_live_trace_enabled: Double = js.native
+    var is_player_live_trace_enabled: Double
     
-    var media_id: String = js.native
+    var media_id: String
     
-    var organic_tracking_token: String = js.native
+    var organic_tracking_token: String
     
-    var published_time: Double = js.native
+    var published_time: Double
     
-    var rtmp_playback_url: String = js.native
+    var rtmp_playback_url: String
     
-    var status: String = js.native
+    var status: String
     
-    var viewer_count: Double = js.native
+    var viewer_count: Double
   }
   object LiveInfoResponseRootObject {
     
@@ -189,7 +185,7 @@ object liveInfoResponseMod {
       broadcast_message: String,
       broadcast_owner: LiveInfoResponseBroadcastOwner,
       broadcast_status: String,
-      cobroadcasters: js.Array[_],
+      cobroadcasters: js.Array[js.Any],
       dash_abr_playback_url: Null,
       dash_live_predictive_playback_url: String,
       dash_playback_url: String,
@@ -222,7 +218,7 @@ object liveInfoResponseMod {
       def setBroadcast_status(value: String): Self = StObject.set(x, "broadcast_status", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCobroadcasters(value: js.Array[_]): Self = StObject.set(x, "cobroadcasters", value.asInstanceOf[js.Any])
+      def setCobroadcasters(value: js.Array[js.Any]): Self = StObject.set(x, "cobroadcasters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCobroadcastersVarargs(value: js.Any*): Self = StObject.set(x, "cobroadcasters", js.Array(value :_*))

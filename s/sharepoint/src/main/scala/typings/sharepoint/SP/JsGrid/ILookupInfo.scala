@@ -2,15 +2,13 @@ package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILookupInfo extends StObject {
   
-  var localString: String = js.native
+  var localString: String
   
-  var value: Double = js.native
+  var value: Double
 }
 object ILookupInfo {
   

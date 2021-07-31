@@ -2,24 +2,22 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Web app entry point configuration.
   */
-@js.native
 trait SchemaGoogleAppsScriptTypeWebAppConfig extends StObject {
   
   /**
     * Who has permission to run the web app.
     */
-  var access: js.UndefOr[String] = js.native
+  var access: js.UndefOr[String] = js.undefined
   
   /**
     * Who to execute the web app as.
     */
-  var executeAs: js.UndefOr[String] = js.native
+  var executeAs: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleAppsScriptTypeWebAppConfig {
   

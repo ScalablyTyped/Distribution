@@ -2,36 +2,34 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlatformBranchSummary extends StObject {
   
   /**
     * The name of the platform branch.
     */
-  var BranchName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.BranchName] = js.native
+  var BranchName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.BranchName] = js.undefined
   
   /**
     * An ordinal number that designates the order in which platform branches have been added to a platform. This can be helpful, for example, if your code calls the ListPlatformBranches action and then displays a list of platform branches. A larger BranchOrder value designates a newer platform branch within the platform.
     */
-  var BranchOrder: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.BranchOrder] = js.native
+  var BranchOrder: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.BranchOrder] = js.undefined
   
   /**
     * The support life cycle state of the platform branch. Possible values: beta | supported | deprecated | retired 
     */
-  var LifecycleState: js.UndefOr[PlatformBranchLifecycleState] = js.native
+  var LifecycleState: js.UndefOr[PlatformBranchLifecycleState] = js.undefined
   
   /**
     * The name of the platform to which this platform branch belongs.
     */
-  var PlatformName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformName] = js.native
+  var PlatformName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformName] = js.undefined
   
   /**
     * The environment tiers that platform versions in this branch support. Possible values: WebServer/Standard | Worker/SQS/HTTP 
     */
-  var SupportedTierList: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SupportedTierList] = js.native
+  var SupportedTierList: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SupportedTierList] = js.undefined
 }
 object PlatformBranchSummary {
   

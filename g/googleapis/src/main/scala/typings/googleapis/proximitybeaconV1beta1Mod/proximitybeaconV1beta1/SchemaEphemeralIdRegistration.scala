@@ -2,7 +2,6 @@ package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,7 +25,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * specification](https://github.com/google/eddystone/tree/master/eddystone-eid)
   * at GitHub.
   */
-@js.native
 trait SchemaEphemeralIdRegistration extends StObject {
   
   /**
@@ -34,14 +32,14 @@ trait SchemaEphemeralIdRegistration extends StObject {
     * key exchange. When this field is populated, `service_ecdh_public_key`
     * must also be populated, and `beacon_identity_key` must not be.
     */
-  var beaconEcdhPublicKey: js.UndefOr[String] = js.native
+  var beaconEcdhPublicKey: js.UndefOr[String] = js.undefined
   
   /**
     * The private key of the beacon. If this field is populated,
     * `beacon_ecdh_public_key` and `service_ecdh_public_key` must not be
     * populated.
     */
-  var beaconIdentityKey: js.UndefOr[String] = js.native
+  var beaconIdentityKey: js.UndefOr[String] = js.undefined
   
   /**
     * The initial clock value of the beacon. The beacon&#39;s clock must have
@@ -50,7 +48,7 @@ trait SchemaEphemeralIdRegistration extends StObject {
     * the service risks registration or resolution failures. If a value is not
     * provided, the default is zero.
     */
-  var initialClockValue: js.UndefOr[String] = js.native
+  var initialClockValue: js.UndefOr[String] = js.undefined
   
   /**
     * An initial ephemeral ID calculated using the clock value submitted as
@@ -59,7 +57,7 @@ trait SchemaEphemeralIdRegistration extends StObject {
     * `service_ecdh_public_key`. This initial EID value will be used by the
     * service to confirm that the key exchange process was successful.
     */
-  var initialEid: js.UndefOr[String] = js.native
+  var initialEid: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the nominal period between each rotation of the beacon&#39;s
@@ -70,14 +68,14 @@ trait SchemaEphemeralIdRegistration extends StObject {
     * beacon&#39;s clock: when the scaler value is K, the beacon will begin
     * broadcasting a new ephemeral ID on average every 2^K seconds.
     */
-  var rotationPeriodExponent: js.UndefOr[Double] = js.native
+  var rotationPeriodExponent: js.UndefOr[Double] = js.undefined
   
   /**
     * The service&#39;s public key used for the Elliptic curve Diffie-Hellman
     * key exchange. When this field is populated, `beacon_ecdh_public_key` must
     * also be populated, and `beacon_identity_key` must not be.
     */
-  var serviceEcdhPublicKey: js.UndefOr[String] = js.native
+  var serviceEcdhPublicKey: js.UndefOr[String] = js.undefined
 }
 object SchemaEphemeralIdRegistration {
   

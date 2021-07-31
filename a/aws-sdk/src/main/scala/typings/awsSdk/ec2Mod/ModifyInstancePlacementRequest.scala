@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyInstancePlacementRequest extends StObject {
   
   /**
     * The affinity setting for the instance.
     */
-  var Affinity: js.UndefOr[typings.awsSdk.ec2Mod.Affinity] = js.native
+  var Affinity: js.UndefOr[typings.awsSdk.ec2Mod.Affinity] = js.undefined
   
   /**
     * The name of the placement group in which to place the instance. For spread placement groups, the instance must have a tenancy of default. For cluster and partition placement groups, the instance must have a tenancy of default or dedicated. To remove an instance from a placement group, specify an empty string ("").
     */
-  var GroupName: js.UndefOr[PlacementGroupName] = js.native
+  var GroupName: js.UndefOr[PlacementGroupName] = js.undefined
   
   /**
     * The ID of the Dedicated Host with which to associate the instance.
     */
-  var HostId: js.UndefOr[DedicatedHostId] = js.native
+  var HostId: js.UndefOr[DedicatedHostId] = js.undefined
   
   /**
     * The ARN of the host resource group in which to place the instance.
     */
-  var HostResourceGroupArn: js.UndefOr[String] = js.native
+  var HostResourceGroupArn: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the instance that you are modifying.
     */
-  var InstanceId: typings.awsSdk.ec2Mod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.ec2Mod.InstanceId
   
   /**
     * Reserved for future use.
     */
-  var PartitionNumber: js.UndefOr[Integer] = js.native
+  var PartitionNumber: js.UndefOr[Integer] = js.undefined
   
   /**
     * The tenancy for the instance.
     */
-  var Tenancy: js.UndefOr[HostTenancy] = js.native
+  var Tenancy: js.UndefOr[HostTenancy] = js.undefined
 }
 object ModifyInstancePlacementRequest {
   

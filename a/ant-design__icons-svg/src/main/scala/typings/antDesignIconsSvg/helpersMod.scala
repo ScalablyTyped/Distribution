@@ -5,24 +5,24 @@ import typings.antDesignIconsSvg.anon.PrimaryColor
 import typings.antDesignIconsSvg.typesMod.IconDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
   
-  @JSImport("@ant-design/icons-svg/lib/helpers", "renderIconDefinitionToSVGElement")
+  @JSImport("@ant-design/icons-svg/lib/helpers", JSImport.Namespace)
   @js.native
-  def renderIconDefinitionToSVGElement(icond: IconDefinition): String = js.native
-  @JSImport("@ant-design/icons-svg/lib/helpers", "renderIconDefinitionToSVGElement")
-  @js.native
-  def renderIconDefinitionToSVGElement(icond: IconDefinition, options: HelperRenderOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def renderIconDefinitionToSVGElement(icond: IconDefinition): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIconDefinitionToSVGElement")(icond.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def renderIconDefinitionToSVGElement(icond: IconDefinition, options: HelperRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderIconDefinitionToSVGElement")(icond.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait HelperRenderOptions extends StObject {
     
-    var extraSVGAttrs: js.UndefOr[StringDictionary[String]] = js.native
+    var extraSVGAttrs: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var placeholders: js.UndefOr[PrimaryColor] = js.native
+    var placeholders: js.UndefOr[PrimaryColor] = js.undefined
   }
   object HelperRenderOptions {
     

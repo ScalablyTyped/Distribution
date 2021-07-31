@@ -2,24 +2,22 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about restriction policy changes to a feature.
   */
-@js.native
 trait SchemaRestrictionChange extends StObject {
   
   /**
     * The feature which had a change in restriction policy.
     */
-  var feature: js.UndefOr[String] = js.native
+  var feature: js.UndefOr[String] = js.undefined
   
   /**
     * The restriction in place after the change.
     */
-  var newRestriction: js.UndefOr[String] = js.native
+  var newRestriction: js.UndefOr[String] = js.undefined
 }
 object SchemaRestrictionChange {
   

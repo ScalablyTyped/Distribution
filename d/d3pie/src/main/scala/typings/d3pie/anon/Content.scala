@@ -8,17 +8,15 @@ import typings.d3pie.d3pieStrings.none
 import typings.d3pie.d3pieStrings.random
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
-  var content: js.Array[Label] = js.native
+  var content: js.Array[Label]
   
-  var smallSegmentGrouping: js.UndefOr[Color] = js.native
+  var smallSegmentGrouping: js.UndefOr[Color] = js.undefined
   
-  var sortOrder: js.UndefOr[none | random | `value-asc` | `value-desc` | `label-asc` | `label-desc`] = js.native
+  var sortOrder: js.UndefOr[none | random | `value-asc` | `value-desc` | `label-asc` | `label-desc`] = js.undefined
 }
 object Content {
   

@@ -2,16 +2,14 @@ package typings.jointjs.mod.dia
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<jointjs.jointjs.dia.BBox, 'width' | 'height'> */
-@js.native
 trait Size extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object Size {
   

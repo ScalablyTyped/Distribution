@@ -2,13 +2,11 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A comment on a file.
   */
-@js.native
 trait SchemaFileComment extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaFileComment extends StObject {
     * compatible with the Drive API; see
     * https://developers.google.com/drive/v3/reference/comments/get
     */
-  var legacyCommentId: js.UndefOr[String] = js.native
+  var legacyCommentId: js.UndefOr[String] = js.undefined
   
   /**
     * The discussion thread to which the comment was added. This identifier is
@@ -24,18 +22,18 @@ trait SchemaFileComment extends StObject {
     * comment in a discussion; see
     * https://developers.google.com/drive/v3/reference/comments/get
     */
-  var legacyDiscussionId: js.UndefOr[String] = js.native
+  var legacyDiscussionId: js.UndefOr[String] = js.undefined
   
   /**
     * The link to the discussion thread containing this comment, for example,
     * &quot;https://docs.google.com/DOCUMENT_ID/edit?disco=THREAD_ID&quot;.
     */
-  var linkToDiscussion: js.UndefOr[String] = js.native
+  var linkToDiscussion: js.UndefOr[String] = js.undefined
   
   /**
     * The Drive item containing this comment.
     */
-  var parent: js.UndefOr[SchemaDriveItem] = js.native
+  var parent: js.UndefOr[SchemaDriveItem] = js.undefined
 }
 object SchemaFileComment {
   

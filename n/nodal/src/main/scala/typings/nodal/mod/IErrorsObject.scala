@@ -3,14 +3,13 @@ package typings.nodal.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IErrorsObject
-  extends /* field */ StringDictionary[js.Array[String]] {
+  extends StObject
+     with /* field */ StringDictionary[js.Array[String]] {
   
-  var _query: js.UndefOr[js.Any] = js.native
+  var _query: js.UndefOr[js.Any] = js.undefined
 }
 object IErrorsObject {
   

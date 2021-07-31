@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Backward extends StObject {
   
-  var backward: scala.Double = js.native
+  var backward: scala.Double
   
-  var forward: scala.Double = js.native
+  var forward: scala.Double
 }
 object Backward {
   

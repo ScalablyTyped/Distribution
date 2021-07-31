@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleFirestoreAdminV1ExportDocumentsMetadata extends StObject {
   
   /** Which collection ids are being exported. */
-  var collectionIds: js.UndefOr[js.Array[String]] = js.native
+  var collectionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The time this operation completed. Will be unset if operation still in progress. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** The state of the export operation. */
-  var operationState: js.UndefOr[String] = js.native
+  var operationState: js.UndefOr[String] = js.undefined
   
   /** Where the entities are being exported to. */
-  var outputUriPrefix: js.UndefOr[String] = js.native
+  var outputUriPrefix: js.UndefOr[String] = js.undefined
   
   /** The progress, in bytes, of this operation. */
-  var progressBytes: js.UndefOr[GoogleFirestoreAdminV1Progress] = js.native
+  var progressBytes: js.UndefOr[GoogleFirestoreAdminV1Progress] = js.undefined
   
   /** The progress, in documents, of this operation. */
-  var progressDocuments: js.UndefOr[GoogleFirestoreAdminV1Progress] = js.native
+  var progressDocuments: js.UndefOr[GoogleFirestoreAdminV1Progress] = js.undefined
   
   /** The time this operation started. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object GoogleFirestoreAdminV1ExportDocumentsMetadata {
   

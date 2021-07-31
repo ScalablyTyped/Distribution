@@ -7,37 +7,35 @@ import typings.googleapis.anon.ColumnType
 import typings.googleapis.anon.Dimensions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Analytics data for a given view (profile).
   */
-@js.native
 trait SchemaGaData extends StObject {
   
   /**
     * Column headers that list dimension names followed by the metric names.
     * The order of dimensions and metrics is same as specified in the request.
     */
-  var columnHeaders: js.UndefOr[js.Array[ColumnType]] = js.native
+  var columnHeaders: js.UndefOr[js.Array[ColumnType]] = js.undefined
   
   /**
     * Determines if Analytics data contains samples.
     */
-  var containsSampledData: js.UndefOr[Boolean] = js.native
+  var containsSampledData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The last refreshed time in seconds for Analytics data.
     */
-  var dataLastRefreshed: js.UndefOr[String] = js.native
+  var dataLastRefreshed: js.UndefOr[String] = js.undefined
   
-  var dataTable: js.UndefOr[Cols] = js.native
+  var dataTable: js.UndefOr[Cols] = js.undefined
   
   /**
     * Unique ID for this data response.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of rows the response can contain, regardless of the
@@ -45,68 +43,68 @@ trait SchemaGaData extends StObject {
     * value of 1000 by default, or otherwise specified by the max-results query
     * parameter.
     */
-  var itemsPerPage: js.UndefOr[Double] = js.native
+  var itemsPerPage: js.UndefOr[Double] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Link to next page for this Analytics data query.
     */
-  var nextLink: js.UndefOr[String] = js.native
+  var nextLink: js.UndefOr[String] = js.undefined
   
   /**
     * Link to previous page for this Analytics data query.
     */
-  var previousLink: js.UndefOr[String] = js.native
+  var previousLink: js.UndefOr[String] = js.undefined
   
   /**
     * Information for the view (profile), for which the Analytics data was
     * requested.
     */
-  var profileInfo: js.UndefOr[AccountId] = js.native
+  var profileInfo: js.UndefOr[AccountId] = js.undefined
   
   /**
     * Analytics data request query parameters.
     */
-  var query: js.UndefOr[Dimensions] = js.native
+  var query: js.UndefOr[Dimensions] = js.undefined
   
   /**
     * Analytics data rows, where each row contains a list of dimension values
     * followed by the metric values. The order of dimensions and metrics is
     * same as specified in the request.
     */
-  var rows: js.UndefOr[js.Array[js.Array[String]]] = js.native
+  var rows: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
   /**
     * The number of samples used to calculate the result.
     */
-  var sampleSize: js.UndefOr[String] = js.native
+  var sampleSize: js.UndefOr[String] = js.undefined
   
   /**
     * Total size of the sample space from which the samples were selected.
     */
-  var sampleSpace: js.UndefOr[String] = js.native
+  var sampleSpace: js.UndefOr[String] = js.undefined
   
   /**
     * Link to this page.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of rows for the query, regardless of the number of rows
     * in the response.
     */
-  var totalResults: js.UndefOr[Double] = js.native
+  var totalResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Total values for the requested metrics over all the results, not just the
     * results returned in this response. The order of the metric totals is same
     * as the metric order specified in the request.
     */
-  var totalsForAllResults: js.UndefOr[StringDictionary[String]] = js.native
+  var totalsForAllResults: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaGaData {
   

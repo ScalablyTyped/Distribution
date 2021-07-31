@@ -6,33 +6,33 @@ import typings.std.CanvasLineCap
 import typings.std.CanvasLineJoin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object strokeMod {
   
   @JSImport("ol/style/Stroke", JSImport.Default)
   @js.native
-  class default () extends Stroke {
+  class default ()
+    extends StObject
+       with Stroke {
     def this(opt_options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var color: js.UndefOr[Color | ColorLike] = js.native
+    var color: js.UndefOr[Color | ColorLike] = js.undefined
     
-    var lineCap: js.UndefOr[CanvasLineCap] = js.native
+    var lineCap: js.UndefOr[CanvasLineCap] = js.undefined
     
-    var lineDash: js.UndefOr[js.Array[Double]] = js.native
+    var lineDash: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var lineDashOffset: js.UndefOr[Double] = js.native
+    var lineDashOffset: js.UndefOr[Double] = js.undefined
     
-    var lineJoin: js.UndefOr[CanvasLineJoin] = js.native
+    var lineJoin: js.UndefOr[CanvasLineJoin] = js.undefined
     
-    var miterLimit: js.UndefOr[Double] = js.native
+    var miterLimit: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThumbnailSetResponse extends StObject {
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Serialized EventId of the request which produced this response. */
-  var eventId: js.UndefOr[String] = js.native
+  var eventId: js.UndefOr[String] = js.undefined
   
   /** A list of thumbnails. */
-  var items: js.UndefOr[js.Array[ThumbnailDetails]] = js.native
+  var items: js.UndefOr[js.Array[ThumbnailDetails]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#thumbnailSetResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The visitorId identifies the visitor. */
-  var visitorId: js.UndefOr[String] = js.native
+  var visitorId: js.UndefOr[String] = js.undefined
 }
 object ThumbnailSetResponse {
   

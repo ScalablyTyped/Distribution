@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AugmentedManifestsListItem extends StObject {
   
   /**
     * The JSON attribute that contains the annotations for your training documents. The number of attribute names that you specify depends on whether your augmented manifest file is the output of a single labeling job or a chained labeling job. If your file is the output of a single labeling job, specify the LabelAttributeName key that was used when the job was created in Ground Truth. If your file is the output of a chained labeling job, specify the LabelAttributeName key for one or more jobs in the chain. Each LabelAttributeName key provides the annotations from an individual job.
     */
-  var AttributeNames: AttributeNamesList = js.native
+  var AttributeNames: AttributeNamesList
   
   /**
     * The Amazon S3 location of the augmented manifest file.
     */
-  var S3Uri: typings.awsSdk.comprehendMod.S3Uri = js.native
+  var S3Uri: typings.awsSdk.comprehendMod.S3Uri
 }
 object AugmentedManifestsListItem {
   

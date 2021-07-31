@@ -7,7 +7,6 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -30,20 +29,19 @@ object mod extends Shortcut {
     def error: typings.screenfull.screenfullStrings.error = "error".asInstanceOf[typings.screenfull.screenfullStrings.error]
   }
   
-  @js.native
   trait RawEventNames extends StObject {
     
-    val exitFullscreen: String = js.native
+    val exitFullscreen: String
     
-    val fullscreenElement: String = js.native
+    val fullscreenElement: String
     
-    val fullscreenEnabled: String = js.native
+    val fullscreenEnabled: String
     
-    val fullscreenchange: String = js.native
+    val fullscreenchange: String
     
-    val fullscreenerror: String = js.native
+    val fullscreenerror: String
     
-    val requestFullscreen: String = js.native
+    val requestFullscreen: String
   }
   object RawEventNames {
     

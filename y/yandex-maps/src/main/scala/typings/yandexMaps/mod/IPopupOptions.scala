@@ -2,23 +2,21 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPopupOptions extends StObject {
   
-  var closeTimeout: js.UndefOr[Double] = js.native
+  var closeTimeout: js.UndefOr[Double] = js.undefined
   
-  var interactivityModel: js.UndefOr[InteractivityModelKey] = js.native
+  var interactivityModel: js.UndefOr[InteractivityModelKey] = js.undefined
   
-  var openTimeout: js.UndefOr[Double] = js.native
+  var openTimeout: js.UndefOr[Double] = js.undefined
   
-  var pane: js.UndefOr[IPane | String] = js.native
+  var pane: js.UndefOr[IPane | String] = js.undefined
   
-  var projection: js.UndefOr[IProjection] = js.native
+  var projection: js.UndefOr[IProjection] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object IPopupOptions {
   

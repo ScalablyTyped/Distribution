@@ -2,16 +2,14 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypefaceFontProviderFactory extends StObject {
   
   /**
     * Return an empty TypefaceFontProvider
     */
-  def Make(): TypefaceFontProvider = js.native
+  def Make(): TypefaceFontProvider
 }
 object TypefaceFontProviderFactory {
   

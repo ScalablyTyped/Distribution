@@ -2,30 +2,28 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomView extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
   @JSName("Excel.CustomView_typekey")
-  var ExcelDotCustomView_typekey: CustomView = js.native
+  var ExcelDotCustomView_typekey: CustomView
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PrintSettings: Boolean = js.native
+  val PrintSettings: Boolean
   
-  val RowColSettings: Boolean = js.native
+  val RowColSettings: Boolean
   
-  def Show(): Unit = js.native
+  def Show(): Unit
 }
 object CustomView {
   

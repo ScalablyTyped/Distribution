@@ -3,16 +3,14 @@ package typings.vscodeLanguageserverTypes.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceEdit extends StObject {
   
   /**
     * Holds changes to existing resources.
     */
-  var changes: js.UndefOr[StringDictionary[js.Array[TextEdit]]] = js.native
+  var changes: js.UndefOr[StringDictionary[js.Array[TextEdit]]] = js.undefined
   
   /**
     * Depending on the client capability `workspace.workspaceEdit.resourceOperations` document changes
@@ -26,7 +24,7 @@ trait WorkspaceEdit extends StObject {
     * If a client neither supports `documentChanges` nor `workspace.workspaceEdit.resourceOperations` then
     * only plain `TextEdit`s using the `changes` property are supported.
     */
-  var documentChanges: js.UndefOr[js.Array[TextDocumentEdit | CreateFile | RenameFile | DeleteFile]] = js.native
+  var documentChanges: js.UndefOr[js.Array[TextDocumentEdit | CreateFile | RenameFile | DeleteFile]] = js.undefined
 }
 object WorkspaceEdit {
   
@@ -36,9 +34,12 @@ object WorkspaceEdit {
     __obj.asInstanceOf[WorkspaceEdit]
   }
   
-  @JSImport("vscode-languageserver-types", "WorkspaceEdit.is")
+  @JSImport("vscode-languageserver-types", "WorkspaceEdit")
   @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean]
   
   @scala.inline
   implicit class WorkspaceEditMutableBuilder[Self <: WorkspaceEdit] (val x: Self) extends AnyVal {

@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dimension extends StObject {
   
-  var dimensionType: js.UndefOr[String] = js.native
+  var dimensionType: js.UndefOr[String] = js.undefined
   
-  var dimensionValues: js.UndefOr[js.Array[DimensionDimensionValue]] = js.native
+  var dimensionValues: js.UndefOr[js.Array[DimensionDimensionValue]] = js.undefined
 }
 object Dimension {
   

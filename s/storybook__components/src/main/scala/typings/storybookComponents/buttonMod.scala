@@ -11,7 +11,6 @@ import typings.storybookComponents.anon.PickLinkPropscolortransla
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonMod {
@@ -24,12 +23,12 @@ object buttonMod {
   @js.native
   val TabButton: StyledComponent[PickButtonPropscolortrans | PickLinkPropscolortransla, TabButtonProps, Theme] = js.native
   
-  @js.native
   trait ButtonProps
-    extends ButtonHTMLAttributes[HTMLButtonElement]
-       with ClassAttributes[HTMLButtonElement] {
+    extends StObject
+       with ClassAttributes[HTMLButtonElement]
+       with ButtonHTMLAttributes[HTMLButtonElement] {
     
-    var href: js.UndefOr[Unit] = js.native
+    var href: js.UndefOr[Unit] = js.undefined
   }
   object ButtonProps {
     
@@ -50,10 +49,9 @@ object buttonMod {
     }
   }
   
-  @js.native
   trait IconButtonProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
   }
   object IconButtonProps {
     
@@ -74,13 +72,13 @@ object buttonMod {
     }
   }
   
-  @js.native
   trait LinkProps
-    extends AnchorHTMLAttributes[HTMLAnchorElement]
-       with ClassAttributes[HTMLAnchorElement] {
+    extends StObject
+       with ClassAttributes[HTMLAnchorElement]
+       with AnchorHTMLAttributes[HTMLAnchorElement] {
     
     @JSName("href")
-    var href_LinkProps: String = js.native
+    var href_LinkProps: String
   }
   object LinkProps {
     
@@ -98,12 +96,11 @@ object buttonMod {
     }
   }
   
-  @js.native
   trait TabButtonProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
   }
   object TabButtonProps {
     

@@ -2,25 +2,23 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationStateData extends StObject {
   
-  var animationToMixTime: Map[Double] = js.native
+  var animationToMixTime: Map[Double]
   
-  var defaultMix: Double = js.native
+  var defaultMix: Double
   
-  def getMix(from: Animation, to: Animation): Double = js.native
+  def getMix(from: Animation, to: Animation): Double
   
-  def setMix(fromName: String, toName: String, duration: Double): Unit = js.native
+  def setMix(fromName: String, toName: String, duration: Double): Unit
   
-  def setMixByName(fromName: String, toName: String, duration: Double): Unit = js.native
+  def setMixByName(fromName: String, toName: String, duration: Double): Unit
   
-  def setMixWith(from: Animation, to: Animation, duration: Double): Unit = js.native
+  def setMixWith(from: Animation, to: Animation, duration: Double): Unit
   
-  var skeletonData: SkeletonData = js.native
+  var skeletonData: SkeletonData
 }
 object AnimationStateData {
   

@@ -2,20 +2,18 @@ package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides APIs for managing change tracking for appointments. */
-@js.native
 trait AppointmentStoreChangeTracker extends StObject {
   
-  var enable: js.Any = js.native
+  var enable: js.Any
   
   /* unmapped type */
-  var getChangeReader: js.Any = js.native
+  var getChangeReader: js.Any
   
   /* unmapped type */
-  var reset: js.Any = js.native
+  var reset: js.Any
 }
 object AppointmentStoreChangeTracker {
   

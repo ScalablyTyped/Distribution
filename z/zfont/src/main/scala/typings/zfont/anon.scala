@@ -9,7 +9,6 @@ import typings.zfont.mod.zdogAugmentingMod.TextGroupOptions
 import typings.zfont.mod.zdogAugmentingMod.TextOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -87,6 +86,6 @@ object anon {
       * Returns a {@link Promise} which resolves as soon as all the fonts currently added to the scene are loaded and ready for use.
       * @see {@link https://github.com/jaames/zfont#zdogtext Zfont API}
       */
-    def waitForFonts(): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
+    def waitForFonts(): js.Promise[js.Array[Unit]] = js.native
   }
 }

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Different sub-interfaces of this interface specify different ways of continuing.
   */
-@js.native
-trait XInteractionContinuation extends XInterface {
+trait XInteractionContinuation
+  extends StObject
+     with XInterface {
   
   /**
     * Select this way of continuing from an {@link com.sun.star.task.XInteractionRequest} (given a choice of various instances of {@link
     * com.sun.star.task.XInteractionContinuation} ).
     */
-  def select(): Unit = js.native
+  def select(): Unit
 }
 object XInteractionContinuation {
   

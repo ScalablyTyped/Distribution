@@ -3,27 +3,25 @@ package typings.openlayers.mod.olx.format
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GMLOptions extends StObject {
   
-  var curve: js.UndefOr[Boolean] = js.native
+  var curve: js.UndefOr[Boolean] = js.undefined
   
-  var featureNS: js.UndefOr[StringDictionary[String] | String] = js.native
+  var featureNS: js.UndefOr[StringDictionary[String] | String] = js.undefined
   
-  var featureType: js.UndefOr[js.Array[String] | String] = js.native
+  var featureType: js.UndefOr[js.Array[String] | String] = js.undefined
   
-  var multiCurve: js.UndefOr[Boolean] = js.native
+  var multiCurve: js.UndefOr[Boolean] = js.undefined
   
-  var multiSurface: js.UndefOr[Boolean] = js.native
+  var multiSurface: js.UndefOr[Boolean] = js.undefined
   
-  var schemaLocation: js.UndefOr[String] = js.native
+  var schemaLocation: js.UndefOr[String] = js.undefined
   
-  var srsName: String = js.native
+  var srsName: String
   
-  var surface: js.UndefOr[Boolean] = js.native
+  var surface: js.UndefOr[Boolean] = js.undefined
 }
 object GMLOptions {
   

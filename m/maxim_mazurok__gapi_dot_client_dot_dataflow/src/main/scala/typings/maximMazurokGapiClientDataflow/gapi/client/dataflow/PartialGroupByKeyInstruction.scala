@@ -3,37 +3,35 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartialGroupByKeyInstruction extends StObject {
   
   /** Describes the input to the partial group-by-key instruction. */
-  var input: js.UndefOr[InstructionInput] = js.native
+  var input: js.UndefOr[InstructionInput] = js.undefined
   
   /** The codec to use for interpreting an element in the input PTable. */
   var inputElementCodec: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[js.Any]
+  ] = js.undefined
   
   /** If this instruction includes a combining function this is the name of the intermediate store between the GBK and the CombineValues. */
-  var originalCombineValuesInputStoreName: js.UndefOr[String] = js.native
+  var originalCombineValuesInputStoreName: js.UndefOr[String] = js.undefined
   
   /** If this instruction includes a combining function, this is the name of the CombineValues instruction lifted into this instruction. */
-  var originalCombineValuesStepName: js.UndefOr[String] = js.native
+  var originalCombineValuesStepName: js.UndefOr[String] = js.undefined
   
   /** Zero or more side inputs. */
-  var sideInputs: js.UndefOr[js.Array[SideInputInfo]] = js.native
+  var sideInputs: js.UndefOr[js.Array[SideInputInfo]] = js.undefined
   
   /** The value combining function to invoke. */
   var valueCombiningFn: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[js.Any]
+  ] = js.undefined
 }
 object PartialGroupByKeyInstruction {
   
@@ -53,7 +51,7 @@ object PartialGroupByKeyInstruction {
     def setInputElementCodec(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[js.Any]
     ): Self = StObject.set(x, "inputElementCodec", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -87,7 +85,7 @@ object PartialGroupByKeyInstruction {
     def setValueCombiningFn(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[js.Any]
     ): Self = StObject.set(x, "valueCombiningFn", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -2,43 +2,41 @@ package typings.jcanvas
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JCanvasSliceDef extends StObject {
   
   /**
     * End angle in degrees from north
     */
-  var end: Double = js.native
+  var end: Double
   
-  var fillStyle: String = js.native
+  var fillStyle: String
   
-  var groups: js.UndefOr[js.Array[String]] = js.native
+  var groups: js.UndefOr[js.Array[String]] = js.undefined
   
-  var layer: js.UndefOr[Boolean] = js.native
+  var layer: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Radius in pixels
     */
-  var radius: Double = js.native
+  var radius: Double
   
   /**
     * Distance between slices as a fraction of the radius
     */
-  var spread: js.UndefOr[Double] = js.native
+  var spread: js.UndefOr[Double] = js.undefined
   
   /**
     * Start angle in degrees from north
     */
-  var start: Double = js.native
+  var start: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object JCanvasSliceDef {
   

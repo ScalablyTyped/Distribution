@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SafeHtmlProto extends StObject {
   
   /**
     * IMPORTANT: Never set or read this field, even from tests, it is private. See documentation at the top of .proto file for programming language packages with which to create or read
     * this message.
     */
-  var privateDoNotAccessOrElseSafeHtmlWrappedValue: js.UndefOr[String] = js.native
+  var privateDoNotAccessOrElseSafeHtmlWrappedValue: js.UndefOr[String] = js.undefined
 }
 object SafeHtmlProto {
   

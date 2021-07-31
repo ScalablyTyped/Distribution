@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNodePoolRequest extends StObject {
   
   /** Deprecated. The name of the cluster. This field has been deprecated and replaced by the parent field. */
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
   
   /** Required. The node pool to create. */
-  var nodePool: js.UndefOr[NodePool] = js.native
+  var nodePool: js.UndefOr[NodePool] = js.undefined
   
   /** The parent (project, location, cluster id) where the node pool will be created. Specified in the format `projects/∗/locations/∗/clusters/ *`. */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The Google Developers Console [project ID or project number](https://developers.google.com/console/help/new/#projectnumber). This field has been deprecated and replaced
     * by the parent field.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and
     * replaced by the parent field.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object CreateNodePoolRequest {
   

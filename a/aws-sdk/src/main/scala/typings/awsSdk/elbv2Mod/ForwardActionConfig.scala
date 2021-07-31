@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForwardActionConfig extends StObject {
   
   /**
     * The target group stickiness for the rule.
     */
-  var TargetGroupStickinessConfig: js.UndefOr[typings.awsSdk.elbv2Mod.TargetGroupStickinessConfig] = js.native
+  var TargetGroupStickinessConfig: js.UndefOr[typings.awsSdk.elbv2Mod.TargetGroupStickinessConfig] = js.undefined
   
   /**
     * One or more target groups. For Network Load Balancers, you can specify a single target group.
     */
-  var TargetGroups: js.UndefOr[TargetGroupList] = js.native
+  var TargetGroups: js.UndefOr[TargetGroupList] = js.undefined
 }
 object ForwardActionConfig {
   

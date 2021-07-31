@@ -8,10 +8,13 @@ import typings.argon2.argon2Numbers.`2`
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("argon2", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("argon2", "argon2d")
   @js.native
@@ -29,55 +32,42 @@ object mod {
   @js.native
   val defaults: Options = js.native
   
-  @JSImport("argon2", "hash")
-  @js.native
-  def hash(plain: String): js.Promise[String] = js.native
-  @JSImport("argon2", "hash")
-  @js.native
-  def hash(plain: String, options: Optionsrawfalseundefined): js.Promise[String] = js.native
-  @JSImport("argon2", "hash")
-  @js.native
-  def hash(plain: String, options: Optionsrawtrue): js.Promise[Buffer] = js.native
-  @JSImport("argon2", "hash")
-  @js.native
-  def hash(plain: Buffer): js.Promise[String] = js.native
-  @JSImport("argon2", "hash")
-  @js.native
-  def hash(plain: Buffer, options: Optionsrawfalseundefined): js.Promise[String] = js.native
-  @JSImport("argon2", "hash")
-  @js.native
-  def hash(plain: Buffer, options: Optionsrawtrue): js.Promise[Buffer] = js.native
+  @scala.inline
+  def hash(plain: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(plain.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def hash(plain: String, options: Optionsrawfalseundefined): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(plain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def hash(plain: String, options: Optionsrawtrue): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(plain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def hash(plain: Buffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(plain.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def hash(plain: Buffer, options: Optionsrawfalseundefined): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(plain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def hash(plain: Buffer, options: Optionsrawtrue): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(plain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
   @JSImport("argon2", "limits")
   @js.native
   val limits: OptionLimits = js.native
   
-  @JSImport("argon2", "needsRehash")
-  @js.native
-  def needsRehash(hash: String): Boolean = js.native
-  @JSImport("argon2", "needsRehash")
-  @js.native
-  def needsRehash(hash: String, options: Options): Boolean = js.native
+  @scala.inline
+  def needsRehash(hash: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("needsRehash")(hash.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def needsRehash(hash: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("needsRehash")(hash.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("argon2", "verify")
-  @js.native
-  def verify(hash: String, plain: String): js.Promise[Boolean] = js.native
-  @JSImport("argon2", "verify")
-  @js.native
-  def verify(hash: String, plain: String, options: Options): js.Promise[Boolean] = js.native
-  @JSImport("argon2", "verify")
-  @js.native
-  def verify(hash: String, plain: Buffer): js.Promise[Boolean] = js.native
-  @JSImport("argon2", "verify")
-  @js.native
-  def verify(hash: String, plain: Buffer, options: Options): js.Promise[Boolean] = js.native
+  @scala.inline
+  def verify(hash: String, plain: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(hash.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def verify(hash: String, plain: String, options: Options): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(hash.asInstanceOf[js.Any], plain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def verify(hash: String, plain: Buffer): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(hash.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def verify(hash: String, plain: Buffer, options: Options): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(hash.asInstanceOf[js.Any], plain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @js.native
   trait NumericLimit extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
   }
   object NumericLimit {
     
@@ -98,16 +88,15 @@ object mod {
     }
   }
   
-  @js.native
   trait OptionLimits extends StObject {
     
-    var hashLength: NumericLimit = js.native
+    var hashLength: NumericLimit
     
-    var memoryCost: NumericLimit = js.native
+    var memoryCost: NumericLimit
     
-    var parallelism: NumericLimit = js.native
+    var parallelism: NumericLimit
     
-    var timeCost: NumericLimit = js.native
+    var timeCost: NumericLimit
   }
   object OptionLimits {
     
@@ -139,30 +128,29 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var associatedData: js.UndefOr[Buffer] = js.native
+    var associatedData: js.UndefOr[Buffer] = js.undefined
     
-    var hashLength: js.UndefOr[Double] = js.native
+    var hashLength: js.UndefOr[Double] = js.undefined
     
-    var memoryCost: js.UndefOr[Double] = js.native
+    var memoryCost: js.UndefOr[Double] = js.undefined
     
-    var parallelism: js.UndefOr[Double] = js.native
+    var parallelism: js.UndefOr[Double] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
-    var salt: js.UndefOr[Buffer] = js.native
+    var salt: js.UndefOr[Buffer] = js.undefined
     
-    var saltLength: js.UndefOr[Double] = js.native
+    var saltLength: js.UndefOr[Double] = js.undefined
     
-    var secret: js.UndefOr[Buffer] = js.native
+    var secret: js.UndefOr[Buffer] = js.undefined
     
-    var timeCost: js.UndefOr[Double] = js.native
+    var timeCost: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[`0` | `1` | `2`] = js.native
+    var `type`: js.UndefOr[`0` | `1` | `2`] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

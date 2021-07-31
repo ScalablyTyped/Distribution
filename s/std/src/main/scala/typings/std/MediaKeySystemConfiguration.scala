@@ -2,25 +2,23 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaKeySystemConfiguration extends StObject {
   
-  var audioCapabilities: js.UndefOr[js.Array[MediaKeySystemMediaCapability]] = js.native
+  var audioCapabilities: js.UndefOr[js.Array[MediaKeySystemMediaCapability]] = js.undefined
   
-  var distinctiveIdentifier: js.UndefOr[MediaKeysRequirement] = js.native
+  var distinctiveIdentifier: js.UndefOr[MediaKeysRequirement] = js.undefined
   
-  var initDataTypes: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var initDataTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
-  var label: js.UndefOr[java.lang.String] = js.native
+  var label: js.UndefOr[java.lang.String] = js.undefined
   
-  var persistentState: js.UndefOr[MediaKeysRequirement] = js.native
+  var persistentState: js.UndefOr[MediaKeysRequirement] = js.undefined
   
-  var sessionTypes: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var sessionTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
-  var videoCapabilities: js.UndefOr[js.Array[MediaKeySystemMediaCapability]] = js.native
+  var videoCapabilities: js.UndefOr[js.Array[MediaKeySystemMediaCapability]] = js.undefined
 }
 object MediaKeySystemConfiguration {
   

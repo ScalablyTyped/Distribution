@@ -2,13 +2,11 @@ package typings.miniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileList extends StObject {
   
-  var fileList: js.Array[Size] = js.native
+  var fileList: js.Array[Size]
 }
 object FileList {
   

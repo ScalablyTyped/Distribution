@@ -2,27 +2,25 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AfterClose extends StObject {
   
-  def afterClose(): Unit = js.native
+  def afterClose(): Unit
   
-  var closable: Boolean = js.native
+  var closable: Boolean
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  def onClose(): Unit = js.native
+  def onClose(): Unit
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var selected: Boolean = js.native
+  var selected: Boolean
   
-  var small: Boolean = js.native
+  var small: Boolean
 }
 object AfterClose {
   

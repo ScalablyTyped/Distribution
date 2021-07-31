@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudtasks.gapi.client.cloudtasks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Queue extends StObject {
   
   /**
     * Overrides for task-level app_engine_routing. These settings apply only to App Engine tasks in this queue. Http tasks are not affected. If set, `app_engine_routing_override` is used
     * for all App Engine tasks in the queue, no matter what the setting is for the task-level app_engine_routing.
     */
-  var appEngineRoutingOverride: js.UndefOr[AppEngineRouting] = js.native
+  var appEngineRoutingOverride: js.UndefOr[AppEngineRouting] = js.undefined
   
   /**
     * Caller-specified and required in CreateQueue, after which it becomes output only. The queue name. The queue name must have the following format:
@@ -21,14 +19,14 @@ trait Queue extends StObject {
     * queue's location. The list of available locations can be obtained by calling ListLocations. For more information, see https://cloud.google.com/about/locations/. * `QUEUE_ID` can
     * contain letters ([A-Za-z]), numbers ([0-9]), or hyphens (-). The maximum length is 100 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The last time this queue was purged. All tasks that were created before this time were purged. A queue can be purged using PurgeQueue, the [App Engine Task Queue SDK,
     * or the Cloud Console](https://cloud.google.com/appengine/docs/standard/python/taskqueue/push/deleting-tasks-and-queues#purging_all_tasks_from_a_queue). Purge time will be truncated
     * to the nearest microsecond. Purge time will be unset if the queue has never been purged.
     */
-  var purgeTime: js.UndefOr[String] = js.native
+  var purgeTime: js.UndefOr[String] = js.undefined
   
   /**
     * Rate limits for task dispatches. rate_limits and retry_config are related because they both control task attempts. However they control task attempts in different ways: *
@@ -37,7 +35,7 @@ trait Queue extends StObject {
     * queue's actual dispatch rate is the result of: * Number of tasks in the queue * User-specified throttling: rate_limits, retry_config, and the queue's state. * System throttling due
     * to `429` (Too Many Requests) or `503` (Service Unavailable) responses from the worker, high error rates, or to smooth sudden large traffic spikes.
     */
-  var rateLimits: js.UndefOr[RateLimits] = js.native
+  var rateLimits: js.UndefOr[RateLimits] = js.undefined
   
   /**
     * Settings that determine the retry behavior. * For tasks created using Cloud Tasks: the queue-level retry settings apply to all tasks in the queue that were created using Cloud
@@ -45,16 +43,16 @@ trait Queue extends StObject {
     * have retry settings explicitly set on the task and were created by the App Engine SDK. See [App Engine
     * documentation](https://cloud.google.com/appengine/docs/standard/python/taskqueue/push/retrying-tasks).
     */
-  var retryConfig: js.UndefOr[RetryConfig] = js.native
+  var retryConfig: js.UndefOr[RetryConfig] = js.undefined
   
   /** Configuration options for writing logs to [Stackdriver Logging](https://cloud.google.com/logging/docs/). If this field is unset, then no logs are written. */
-  var stackdriverLoggingConfig: js.UndefOr[StackdriverLoggingConfig] = js.native
+  var stackdriverLoggingConfig: js.UndefOr[StackdriverLoggingConfig] = js.undefined
   
   /**
     * Output only. The state of the queue. `state` can only be changed by called PauseQueue, ResumeQueue, or uploading
     * [queue.yaml/xml](https://cloud.google.com/appengine/docs/python/config/queueref). UpdateQueue cannot be used to change `state`.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object Queue {
   

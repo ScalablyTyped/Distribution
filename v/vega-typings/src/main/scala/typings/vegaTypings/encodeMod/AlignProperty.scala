@@ -3,13 +3,11 @@ package typings.vegaTypings.encodeMod
 import typings.vegaTypings.anon.Test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignProperty extends StObject {
   
-  var align: js.UndefOr[ProductionRule[ScaledValueRef[Align]]] = js.native
+  var align: js.UndefOr[ProductionRule[ScaledValueRef[Align]]] = js.undefined
 }
 object AlignProperty {
   
@@ -29,6 +27,6 @@ object AlignProperty {
     def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def setAlignVarargs(value: (Test with ScaledValueRef[Align])*): Self = StObject.set(x, "align", js.Array(value :_*))
+    def setAlignVarargs(value: (Test & ScaledValueRef[Align])*): Self = StObject.set(x, "align", js.Array(value :_*))
   }
 }

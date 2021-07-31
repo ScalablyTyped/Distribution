@@ -2,15 +2,13 @@ package typings.logfmt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ContentType extends StObject {
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
   }
   object ContentType {
     
@@ -31,24 +29,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Contentlength extends StObject {
     
-    var content_length: js.UndefOr[String] = js.native
+    var content_length: js.UndefOr[String] = js.undefined
     
-    var content_type: js.UndefOr[String] = js.native
+    var content_type: js.UndefOr[String] = js.undefined
     
-    var ip: String = js.native
+    var ip: String
     
-    var method: String = js.native
+    var method: String
     
-    var path: String = js.native
+    var path: String
     
-    var request_id: js.UndefOr[String] = js.native
+    var request_id: js.UndefOr[String] = js.undefined
     
-    var status: Double = js.native
+    var status: Double
     
-    var time: String = js.native
+    var time: String
   }
   object Contentlength {
     
@@ -96,10 +93,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Delimiter extends StObject {
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
   }
   object Delimiter {
     
@@ -120,10 +116,9 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: js.UndefOr[Boolean] = js.native
+    var end: js.UndefOr[Boolean] = js.undefined
   }
   object End {
     

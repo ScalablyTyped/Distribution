@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddMatterPermissionsRequest extends StObject {
   
   /** Only relevant if send_emails is true. True to CC requestor in the email message. False to not CC requestor. */
-  var ccMe: js.UndefOr[Boolean] = js.native
+  var ccMe: js.UndefOr[Boolean] = js.undefined
   
   /** The MatterPermission to add. */
-  var matterPermission: js.UndefOr[MatterPermission] = js.native
+  var matterPermission: js.UndefOr[MatterPermission] = js.undefined
   
   /** True to send notification email to the added account. False to not send notification email. */
-  var sendEmails: js.UndefOr[Boolean] = js.native
+  var sendEmails: js.UndefOr[Boolean] = js.undefined
 }
 object AddMatterPermissionsRequest {
   

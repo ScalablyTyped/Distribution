@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginGroups extends StObject {
   
   /**
     * The items (origin groups) in a distribution.
     */
-  var Items: js.UndefOr[OriginGroupList] = js.native
+  var Items: js.UndefOr[OriginGroupList] = js.undefined
   
   /**
     * The number of origin groups.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object OriginGroups {
   

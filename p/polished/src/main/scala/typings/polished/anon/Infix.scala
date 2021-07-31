@@ -4,23 +4,21 @@ import typings.polished.polishedStrings.^
 import typings.polished.polishedStrings.`Backslash^`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Infix extends StObject {
   
-  var infix: F = js.native
+  var infix: F
   
-  var regSymbol: `Backslash^` = js.native
+  var regSymbol: `Backslash^`
   
-  var symbol: ^ = js.native
+  var symbol: ^
 }
 object Infix {
   
   @scala.inline
-  def apply(infix: F, regSymbol: `Backslash^`, symbol: ^): Infix = {
-    val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], regSymbol = regSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+  def apply(infix: F): Infix = {
+    val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], regSymbol = "\\^", symbol = "^")
     __obj.asInstanceOf[Infix]
   }
   

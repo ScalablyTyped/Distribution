@@ -2,13 +2,11 @@ package typings.overlayscrollbars.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatedArgs extends StObject {
   
-  var forced: Boolean = js.native
+  var forced: Boolean
 }
 object UpdatedArgs {
   

@@ -5,33 +5,31 @@ import typings.handlebars.hbs.AST.Expression
 import typings.handlebars.hbs.AST.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Handlebars {
   
-  @js.native
   trait Exception extends StObject {
     
-    var column: js.UndefOr[js.Any] = js.native
+    var column: js.UndefOr[js.Any] = js.undefined
     
-    var description: String = js.native
+    var description: String
     
-    var endColumn: js.UndefOr[js.Any] = js.native
+    var endColumn: js.UndefOr[js.Any] = js.undefined
     
-    var endLineNumber: js.UndefOr[js.Any] = js.native
+    var endLineNumber: js.UndefOr[js.Any] = js.undefined
     
-    var fileName: String = js.native
+    var fileName: String
     
-    var lineNumber: js.UndefOr[js.Any] = js.native
+    var lineNumber: js.UndefOr[js.Any] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var name: String = js.native
+    var name: String
     
-    var number: Double = js.native
+    var number: Double
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
   }
   object Exception {
     
@@ -104,22 +102,52 @@ object Handlebars {
     js.Any
   ]
   
-  @js.native
   trait HelperOptions extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    def fn(context: js.Any): String = js.native
-    def fn(context: js.Any, options: typings.handlebars.Handlebars.RuntimeOptions): String = js.native
+    def fn(context: js.Any): String
+    def fn(context: js.Any, options: typings.handlebars.Handlebars.RuntimeOptions): String
     @JSName("fn")
-    var fn_Original: TemplateDelegate[_] = js.native
+    var fn_Original: TemplateDelegate[js.Any]
     
-    var hash: js.Any = js.native
+    var hash: js.Any
     
-    def inverse(context: js.Any): String = js.native
-    def inverse(context: js.Any, options: typings.handlebars.Handlebars.RuntimeOptions): String = js.native
+    def inverse(context: js.Any): String
+    def inverse(context: js.Any, options: typings.handlebars.Handlebars.RuntimeOptions): String
     @JSName("inverse")
-    var inverse_Original: TemplateDelegate[_] = js.native
+    var inverse_Original: TemplateDelegate[js.Any]
+  }
+  object HelperOptions {
+    
+    @scala.inline
+    def apply(
+      fn: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String,
+      hash: js.Any,
+      inverse: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String
+    ): HelperOptions = {
+      val __obj = js.Dynamic.literal(fn = js.Any.fromFunction2(fn), hash = hash.asInstanceOf[js.Any], inverse = js.Any.fromFunction2(inverse))
+      __obj.asInstanceOf[HelperOptions]
+    }
+    
+    @scala.inline
+    implicit class HelperOptionsMutableBuilder[Self <: HelperOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      @scala.inline
+      def setFn(value: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInverse(value: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String): Self = StObject.set(x, "inverse", js.Any.fromFunction2(value))
+    }
   }
   
   @js.native
@@ -163,12 +191,11 @@ object Handlebars {
     def accept(node: Node): Unit = js.native
   }
   
-  @js.native
   trait ParseOptions extends StObject {
     
-    var ignoreStandalone: js.UndefOr[Boolean] = js.native
+    var ignoreStandalone: js.UndefOr[Boolean] = js.undefined
     
-    var srcName: js.UndefOr[String] = js.native
+    var srcName: js.UndefOr[String] = js.undefined
   }
   object ParseOptions {
     
@@ -195,18 +222,17 @@ object Handlebars {
     }
   }
   
-  @js.native
   trait ResolvePartialOptions extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var decorators: js.UndefOr[StringDictionary[js.Function]] = js.native
+    var decorators: js.UndefOr[StringDictionary[js.Function]] = js.undefined
     
-    var helpers: js.UndefOr[StringDictionary[js.Function]] = js.native
+    var helpers: js.UndefOr[StringDictionary[js.Function]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var partials: js.UndefOr[StringDictionary[HandlebarsTemplateDelegate[_]]] = js.native
+    var partials: js.UndefOr[StringDictionary[HandlebarsTemplateDelegate[js.Any]]] = js.undefined
   }
   object ResolvePartialOptions {
     
@@ -241,39 +267,38 @@ object Handlebars {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPartials(value: StringDictionary[HandlebarsTemplateDelegate[_]]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
+      def setPartials(value: StringDictionary[HandlebarsTemplateDelegate[js.Any]]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPartialsUndefined: Self = StObject.set(x, "partials", js.undefined)
     }
   }
   
-  @js.native
   trait RuntimeOptions extends StObject {
     
-    var allowCallsToHelperMissing: js.UndefOr[Boolean] = js.native
+    var allowCallsToHelperMissing: js.UndefOr[Boolean] = js.undefined
     
-    var allowProtoMethodsByDefault: js.UndefOr[Boolean] = js.native
+    var allowProtoMethodsByDefault: js.UndefOr[Boolean] = js.undefined
     
-    var allowProtoPropertiesByDefault: js.UndefOr[Boolean] = js.native
+    var allowProtoPropertiesByDefault: js.UndefOr[Boolean] = js.undefined
     
-    var allowedProtoMethods: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var allowedProtoMethods: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var allowedProtoProperties: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var allowedProtoProperties: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var blockParams: js.UndefOr[js.Array[_]] = js.native
+    var blockParams: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var decorators: js.UndefOr[StringDictionary[js.Function]] = js.native
+    var decorators: js.UndefOr[StringDictionary[js.Function]] = js.undefined
     
-    var depths: js.UndefOr[js.Array[_]] = js.native
+    var depths: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var helpers: js.UndefOr[StringDictionary[js.Function]] = js.native
+    var helpers: js.UndefOr[StringDictionary[js.Function]] = js.undefined
     
-    var partial: js.UndefOr[Boolean] = js.native
+    var partial: js.UndefOr[Boolean] = js.undefined
     
-    var partials: js.UndefOr[StringDictionary[HandlebarsTemplateDelegate[_]]] = js.native
+    var partials: js.UndefOr[StringDictionary[HandlebarsTemplateDelegate[js.Any]]] = js.undefined
   }
   object RuntimeOptions {
     
@@ -317,7 +342,7 @@ object Handlebars {
       def setAllowedProtoPropertiesUndefined: Self = StObject.set(x, "allowedProtoProperties", js.undefined)
       
       @scala.inline
-      def setBlockParams(value: js.Array[_]): Self = StObject.set(x, "blockParams", value.asInstanceOf[js.Any])
+      def setBlockParams(value: js.Array[js.Any]): Self = StObject.set(x, "blockParams", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBlockParamsUndefined: Self = StObject.set(x, "blockParams", js.undefined)
@@ -338,7 +363,7 @@ object Handlebars {
       def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
       
       @scala.inline
-      def setDepths(value: js.Array[_]): Self = StObject.set(x, "depths", value.asInstanceOf[js.Any])
+      def setDepths(value: js.Array[js.Any]): Self = StObject.set(x, "depths", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDepthsUndefined: Self = StObject.set(x, "depths", js.undefined)
@@ -359,17 +384,16 @@ object Handlebars {
       def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
       
       @scala.inline
-      def setPartials(value: StringDictionary[HandlebarsTemplateDelegate[_]]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
+      def setPartials(value: StringDictionary[HandlebarsTemplateDelegate[js.Any]]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPartialsUndefined: Self = StObject.set(x, "partials", js.undefined)
     }
   }
   
-  @js.native
   trait SafeString extends StObject {
     
-    def toHTML(): String = js.native
+    def toHTML(): String
   }
   object SafeString {
     
@@ -396,7 +420,9 @@ object Handlebars {
   ]
   
   @js.native
-  trait Visitor extends ICompiler {
+  trait Visitor
+    extends StObject
+       with ICompiler {
     
     def acceptArray(arr: js.Array[Expression]): Unit = js.native
     

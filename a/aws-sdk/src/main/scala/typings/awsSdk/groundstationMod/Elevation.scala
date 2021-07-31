@@ -2,21 +2,19 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Elevation extends StObject {
   
   /**
     * Elevation angle units.
     */
-  var unit: AngleUnits = js.native
+  var unit: AngleUnits
   
   /**
     * Elevation angle value.
     */
-  var value: Double = js.native
+  var value: Double
 }
 object Elevation {
   

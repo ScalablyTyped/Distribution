@@ -3,52 +3,67 @@ package typings.pkijs
 import typings.asn1js.mod.OctetString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object digestInfoMod {
   
   @JSImport("pkijs/src/DigestInfo", JSImport.Default)
   @js.native
-  class default () extends DigestInfo {
+  class default ()
+    extends StObject
+       with DigestInfo {
     def this(params: js.Any) = this()
+    
+    /* CompleteClass */
+    var digest: OctetString = js.native
+    
+    /* CompleteClass */
+    var digestAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
+    
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
   }
   /* static members */
   object default {
+    
+    @JSImport("pkijs/src/DigestInfo", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Compare values with default values for all class members
       * @param {string} memberName String name for a class member
       * @param {*} memberValue Value to compare with default value
       */
-    @JSImport("pkijs/src/DigestInfo", "default.compareWithDefault")
-    @js.native
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = js.native
+    @scala.inline
+    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("pkijs/src/DigestInfo", "default.defaultValues")
-    @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("pkijs/src/DigestInfo", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/DigestInfo", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait DigestInfo extends StObject {
     
-    var digest: OctetString = js.native
+    var digest: OctetString
     
-    var digestAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
+    var digestAlgorithm: typings.pkijs.algorithmIdentifierMod.default
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    def fromSchema(schema: js.Any): Unit
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toSchema(): js.Any = js.native
+    def toSchema(): js.Any
   }
   object DigestInfo {
     

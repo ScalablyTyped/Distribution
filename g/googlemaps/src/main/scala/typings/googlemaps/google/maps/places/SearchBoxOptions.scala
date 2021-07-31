@@ -4,13 +4,11 @@ import typings.googlemaps.google.maps.LatLngBounds
 import typings.googlemaps.google.maps.LatLngBoundsLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchBoxOptions extends StObject {
   
-  var bounds: LatLngBounds | LatLngBoundsLiteral = js.native
+  var bounds: LatLngBounds | LatLngBoundsLiteral
 }
 object SearchBoxOptions {
   

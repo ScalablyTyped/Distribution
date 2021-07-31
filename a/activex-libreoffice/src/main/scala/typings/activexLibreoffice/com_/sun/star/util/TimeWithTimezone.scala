@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a combined time value with time zone.
   * @since LibreOffice 4.1
   */
-@js.native
 trait TimeWithTimezone extends StObject {
   
   /** the time (in TimeZone) */
-  var TimeInTZ: Time = js.native
+  var TimeInTZ: Time
   
   /**
     * contains the time zone, as signed offset in minutes **from** UTC, that is **east** of UTC, that is the amount of minutes that should be added to UTC
@@ -21,7 +19,7 @@ trait TimeWithTimezone extends StObject {
     *
     * To obtain UTC time from TimeInTZ, you need to **subtract** TimeZone minutes.
     */
-  var Timezone: Double = js.native
+  var Timezone: Double
 }
 object TimeWithTimezone {
   

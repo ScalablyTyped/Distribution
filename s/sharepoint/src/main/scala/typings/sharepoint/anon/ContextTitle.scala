@@ -2,15 +2,13 @@ package typings.sharepoint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextTitle extends StObject {
   
-  var contextTitle: String = js.native
+  var contextTitle: String
   
-  var openDocumentsInClient: Boolean = js.native
+  var openDocumentsInClient: Boolean
 }
 object ContextTitle {
   

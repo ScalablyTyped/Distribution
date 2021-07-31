@@ -2,24 +2,22 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rectangles extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: Double): Rectangle = js.native
+  def Item(Index: Double): Rectangle
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.Rectangles_typekey")
-  var WordDotRectangles_typekey: Rectangles = js.native
+  var WordDotRectangles_typekey: Rectangles
 }
 object Rectangles {
   

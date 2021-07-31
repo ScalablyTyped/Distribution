@@ -10,21 +10,20 @@ import typings.chrome.chrome.browserAction.TabIconDetails
 import typings.chrome.chrome.browserAction.TitleDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofbrowserAction extends StObject {
   
   def disable(): Unit = js.native
-  def disable(tabId: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def disable(tabId: Double): Unit = js.native
   def disable(tabId: Double, callback: js.Function0[Unit]): Unit = js.native
+  def disable(tabId: Unit, callback: js.Function0[Unit]): Unit = js.native
   
   def enable(): Unit = js.native
-  def enable(tabId: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def enable(tabId: Double): Unit = js.native
   def enable(tabId: Double, callback: js.Function0[Unit]): Unit = js.native
+  def enable(tabId: Unit, callback: js.Function0[Unit]): Unit = js.native
   
   def getBadgeBackgroundColor(details: TabDetails, callback: js.Function1[/* result */ ColorArray, Unit]): Unit = js.native
   

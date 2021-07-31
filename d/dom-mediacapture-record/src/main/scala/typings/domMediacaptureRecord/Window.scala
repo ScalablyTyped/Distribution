@@ -5,36 +5,34 @@ import typings.domMediacaptureRecord.anon.TypeofMediaRecorder
 import typings.std.MediaStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
   var BlobEvent: Instantiable2[
     /* type */ String, 
     /* eventInitDict */ BlobEventInit, 
     typings.domMediacaptureRecord.BlobEvent
-  ] = js.native
+  ]
   
-  var MediaRecorder: TypeofMediaRecorder with (Instantiable2[
+  var MediaRecorder: TypeofMediaRecorder & (Instantiable2[
     /* stream */ MediaStream, 
     /* options */ js.UndefOr[MediaRecorderOptions], 
     typings.domMediacaptureRecord.MediaRecorder
-  ]) = js.native
+  ])
   
   var MediaRecorderErrorEvent: Instantiable2[
     /* type */ String, 
     /* eventInitDict */ MediaRecorderErrorEventInit, 
     typings.domMediacaptureRecord.MediaRecorderErrorEvent
-  ] = js.native
+  ]
 }
 object Window {
   
   @scala.inline
   def apply(
     BlobEvent: Instantiable2[/* type */ String, /* eventInitDict */ BlobEventInit, BlobEvent],
-    MediaRecorder: TypeofMediaRecorder with (Instantiable2[
+    MediaRecorder: TypeofMediaRecorder & (Instantiable2[
       /* stream */ MediaStream, 
       /* options */ js.UndefOr[MediaRecorderOptions], 
       MediaRecorder
@@ -57,7 +55,7 @@ object Window {
     
     @scala.inline
     def setMediaRecorder(
-      value: TypeofMediaRecorder with (Instantiable2[
+      value: TypeofMediaRecorder & (Instantiable2[
           /* stream */ MediaStream, 
           /* options */ js.UndefOr[MediaRecorderOptions], 
           MediaRecorder

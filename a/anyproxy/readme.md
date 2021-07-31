@@ -12,7 +12,7 @@ A fully configurable HTTP/HTTPS proxy in Node.js
 | Keywords           | - |
 | # releases         | 12 |
 | # dependents       | 55 |
-| # downloads        | 201887 |
+| # downloads        | 200585 |
 | # stars            | 12 |
 
 ## Links

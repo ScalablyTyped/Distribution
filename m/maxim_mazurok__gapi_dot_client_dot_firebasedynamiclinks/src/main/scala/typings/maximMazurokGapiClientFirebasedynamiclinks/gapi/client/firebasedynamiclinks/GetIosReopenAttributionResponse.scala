@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebased
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIosReopenAttributionResponse extends StObject {
   
   /** The deep-link attributed the app universal link open. For both regular FDL links and invite FDL links. */
-  var deepLink: js.UndefOr[String] = js.native
+  var deepLink: js.UndefOr[String] = js.undefined
   
   /** Optional invitation ID, for only invite typed requested FDL links. */
-  var invitationId: js.UndefOr[String] = js.native
+  var invitationId: js.UndefOr[String] = js.undefined
   
   /** FDL input value of the "&imv=" parameter, minimum app version to be returned to Google Firebase SDK running on iOS-9. */
-  var iosMinAppVersion: js.UndefOr[String] = js.native
+  var iosMinAppVersion: js.UndefOr[String] = js.undefined
   
   /** The entire FDL, expanded from a short link. It is the same as the requested_link, if it is long. */
-  var resolvedLink: js.UndefOr[String] = js.native
+  var resolvedLink: js.UndefOr[String] = js.undefined
   
   /** Scion campaign value to be propagated by iSDK to Scion at app-reopen. */
-  var utmCampaign: js.UndefOr[String] = js.native
+  var utmCampaign: js.UndefOr[String] = js.undefined
   
   /** Scion content value to be propagated by iSDK to Scion at app-reopen. */
-  var utmContent: js.UndefOr[String] = js.native
+  var utmContent: js.UndefOr[String] = js.undefined
   
   /** Scion medium value to be propagated by iSDK to Scion at app-reopen. */
-  var utmMedium: js.UndefOr[String] = js.native
+  var utmMedium: js.UndefOr[String] = js.undefined
   
   /** Scion source value to be propagated by iSDK to Scion at app-reopen. */
-  var utmSource: js.UndefOr[String] = js.native
+  var utmSource: js.UndefOr[String] = js.undefined
   
   /** Scion term value to be propagated by iSDK to Scion at app-reopen. */
-  var utmTerm: js.UndefOr[String] = js.native
+  var utmTerm: js.UndefOr[String] = js.undefined
 }
 object GetIosReopenAttributionResponse {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Radios extends StObject {
   
   /**
     * True if Bluetooth is enabled at the beginning of the test. Otherwise, false.
     */
-  var bluetooth: js.UndefOr[Boolean] = js.native
+  var bluetooth: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True if GPS is enabled at the beginning of the test. Otherwise, false.
     */
-  var gps: js.UndefOr[Boolean] = js.native
+  var gps: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True if NFC is enabled at the beginning of the test. Otherwise, false.
     */
-  var nfc: js.UndefOr[Boolean] = js.native
+  var nfc: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True if Wi-Fi is enabled at the beginning of the test. Otherwise, false.
     */
-  var wifi: js.UndefOr[Boolean] = js.native
+  var wifi: js.UndefOr[Boolean] = js.undefined
 }
 object Radios {
   

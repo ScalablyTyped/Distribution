@@ -2,81 +2,79 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrackEntry extends StObject {
   
-  var alpha: Double = js.native
+  var alpha: Double
   
-  var animation: Animation = js.native
+  var animation: Animation
   
-  var animationEnd: Double = js.native
+  var animationEnd: Double
   
-  var animationLast: Double = js.native
+  var animationLast: Double
   
-  var animationStart: Double = js.native
+  var animationStart: Double
   
-  var attachmentThreshold: Double = js.native
+  var attachmentThreshold: Double
   
-  var delay: Double = js.native
+  var delay: Double
   
-  var drawOrderThreshold: Double = js.native
+  var drawOrderThreshold: Double
   
-  var eventThreshold: Double = js.native
+  var eventThreshold: Double
   
-  def getAnimationTime(): Double = js.native
+  def getAnimationTime(): Double
   
-  var holdPrevious: Boolean = js.native
+  var holdPrevious: Boolean
   
-  var interruptAlpha: Double = js.native
+  var interruptAlpha: Double
   
-  def isComplete(): Boolean = js.native
+  def isComplete(): Boolean
   
-  var listener: AnimationStateListener2 = js.native
+  var listener: AnimationStateListener2
   
-  var loop: Boolean = js.native
+  var loop: Boolean
   
-  var mixBlend: MixBlend = js.native
+  var mixBlend: MixBlend
   
-  var mixDuration: Double = js.native
+  var mixDuration: Double
   
-  var mixTime: Double = js.native
+  var mixTime: Double
   
-  var mixingFrom: TrackEntry = js.native
+  var mixingFrom: TrackEntry
   
-  var mixingTo: TrackEntry = js.native
+  var mixingTo: TrackEntry
   
-  var next: TrackEntry = js.native
+  var next: TrackEntry
   
-  var nextAnimationLast: Double = js.native
+  var nextAnimationLast: Double
   
-  var nextTrackLast: Double = js.native
+  var nextTrackLast: Double
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def resetRotationDirections(): Unit = js.native
+  def resetRotationDirections(): Unit
   
-  def setAnimationLast(animationLast: Double): Unit = js.native
+  def setAnimationLast(animationLast: Double): Unit
   
-  var timeScale: Double = js.native
+  var timeScale: Double
   
-  var timelineHoldMix: js.Array[TrackEntry] = js.native
+  var timelineHoldMix: js.Array[TrackEntry]
   
-  var timelineMode: js.Array[Double] = js.native
+  var timelineMode: js.Array[Double]
   
-  var timelinesRotation: js.Array[Double] = js.native
+  var timelinesRotation: js.Array[Double]
   
-  var totalAlpha: Double = js.native
+  var totalAlpha: Double
   
-  var trackEnd: Double = js.native
+  var trackEnd: Double
   
-  var trackIndex: Double = js.native
+  var trackIndex: Double
   
-  var trackLast: Double = js.native
+  var trackLast: Double
   
-  var trackTime: Double = js.native
+  var trackTime: Double
 }
 object TrackEntry {
   

@@ -4,23 +4,23 @@ import typings.grommet.listMod.PadSizeType
 import typings.grommet.listMod._PadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Left extends _PadType {
+trait Left
+  extends StObject
+     with _PadType {
   
-  var bottom: js.UndefOr[PadSizeType] = js.native
+  var bottom: js.UndefOr[PadSizeType] = js.undefined
   
-  var horizontal: js.UndefOr[PadSizeType] = js.native
+  var horizontal: js.UndefOr[PadSizeType] = js.undefined
   
-  var left: js.UndefOr[PadSizeType] = js.native
+  var left: js.UndefOr[PadSizeType] = js.undefined
   
-  var right: js.UndefOr[PadSizeType] = js.native
+  var right: js.UndefOr[PadSizeType] = js.undefined
   
-  var top: js.UndefOr[PadSizeType] = js.native
+  var top: js.UndefOr[PadSizeType] = js.undefined
   
-  var vertical: js.UndefOr[PadSizeType] = js.native
+  var vertical: js.UndefOr[PadSizeType] = js.undefined
 }
 object Left {
   

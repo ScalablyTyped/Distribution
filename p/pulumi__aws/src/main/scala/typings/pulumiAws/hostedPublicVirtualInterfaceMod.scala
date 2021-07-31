@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hostedPublicVirtualInterfaceMod {
@@ -90,6 +89,10 @@ object hostedPublicVirtualInterfaceMod {
   /* static members */
   object HostedPublicVirtualInterface {
     
+    @JSImport("@pulumi/aws/directconnect/hostedPublicVirtualInterface", "HostedPublicVirtualInterface")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing HostedPublicVirtualInterface resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -99,80 +102,74 @@ object hostedPublicVirtualInterfaceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect/hostedPublicVirtualInterface", "HostedPublicVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID]): HostedPublicVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect/hostedPublicVirtualInterface", "HostedPublicVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): HostedPublicVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect/hostedPublicVirtualInterface", "HostedPublicVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HostedPublicVirtualInterfaceState): HostedPublicVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect/hostedPublicVirtualInterface", "HostedPublicVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HostedPublicVirtualInterfaceState, opts: CustomResourceOptions): HostedPublicVirtualInterface = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): HostedPublicVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[HostedPublicVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): HostedPublicVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HostedPublicVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HostedPublicVirtualInterfaceState): HostedPublicVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[HostedPublicVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HostedPublicVirtualInterfaceState, opts: CustomResourceOptions): HostedPublicVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HostedPublicVirtualInterface]
     
     /**
       * Returns true if the given object is an instance of HostedPublicVirtualInterface.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect/hostedPublicVirtualInterface", "HostedPublicVirtualInterface.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterface.HostedPublicVirtualInterface */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterface.HostedPublicVirtualInterface */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterface.HostedPublicVirtualInterface */ Boolean]
   }
   
-  @js.native
   trait HostedPublicVirtualInterfaceArgs extends StObject {
     
     /**
       * The address family for the BGP peer. `ipv4 ` or `ipv6`.
       */
-    val addressFamily: Input[String] = js.native
+    val addressFamily: Input[String]
     
     /**
       * The IPv4 CIDR address to use to send traffic to Amazon. Required for IPv4 BGP peers.
       */
-    val amazonAddress: js.UndefOr[Input[String]] = js.native
+    val amazonAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
       */
-    val bgpAsn: Input[Double] = js.native
+    val bgpAsn: Input[Double]
     
     /**
       * The authentication key for BGP configuration.
       */
-    val bgpAuthKey: js.UndefOr[Input[String]] = js.native
+    val bgpAuthKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the Direct Connect connection (or LAG) on which to create the virtual interface.
       */
-    val connectionId: Input[String] = js.native
+    val connectionId: Input[String]
     
     /**
       * The IPv4 CIDR destination address to which Amazon should send traffic. Required for IPv4 BGP peers.
       */
-    val customerAddress: js.UndefOr[Input[String]] = js.native
+    val customerAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name for the virtual interface.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS account that will own the new virtual interface.
       */
-    val ownerAccountId: Input[String] = js.native
+    val ownerAccountId: Input[String]
     
     /**
       * A list of routes to be advertised to the AWS network in this region.
       */
-    val routeFilterPrefixes: Input[js.Array[Input[String]]] = js.native
+    val routeFilterPrefixes: Input[js.Array[Input[String]]]
     
     /**
       * The VLAN ID.
       */
-    val vlan: Input[Double] = js.native
+    val vlan: Input[Double]
   }
   object HostedPublicVirtualInterfaceArgs {
     
@@ -239,70 +236,69 @@ object hostedPublicVirtualInterfaceMod {
     }
   }
   
-  @js.native
   trait HostedPublicVirtualInterfaceState extends StObject {
     
     /**
       * The address family for the BGP peer. `ipv4 ` or `ipv6`.
       */
-    val addressFamily: js.UndefOr[Input[String]] = js.native
+    val addressFamily: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv4 CIDR address to use to send traffic to Amazon. Required for IPv4 BGP peers.
       */
-    val amazonAddress: js.UndefOr[Input[String]] = js.native
+    val amazonAddress: js.UndefOr[Input[String]] = js.undefined
     
-    val amazonSideAsn: js.UndefOr[Input[String]] = js.native
+    val amazonSideAsn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the virtual interface.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Direct Connect endpoint on which the virtual interface terminates.
       */
-    val awsDevice: js.UndefOr[Input[String]] = js.native
+    val awsDevice: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
       */
-    val bgpAsn: js.UndefOr[Input[Double]] = js.native
+    val bgpAsn: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The authentication key for BGP configuration.
       */
-    val bgpAuthKey: js.UndefOr[Input[String]] = js.native
+    val bgpAuthKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the Direct Connect connection (or LAG) on which to create the virtual interface.
       */
-    val connectionId: js.UndefOr[Input[String]] = js.native
+    val connectionId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv4 CIDR destination address to which Amazon should send traffic. Required for IPv4 BGP peers.
       */
-    val customerAddress: js.UndefOr[Input[String]] = js.native
+    val customerAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name for the virtual interface.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS account that will own the new virtual interface.
       */
-    val ownerAccountId: js.UndefOr[Input[String]] = js.native
+    val ownerAccountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of routes to be advertised to the AWS network in this region.
       */
-    val routeFilterPrefixes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val routeFilterPrefixes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The VLAN ID.
       */
-    val vlan: js.UndefOr[Input[Double]] = js.native
+    val vlan: js.UndefOr[Input[Double]] = js.undefined
   }
   object HostedPublicVirtualInterfaceState {
     

@@ -2,10 +2,8 @@ package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPagerConfig extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait IPagerConfig extends StObject {
     *
     * @default true
     */
-  var align: js.UndefOr[Boolean] = js.native
+  var align: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum number of items per page. A value less than one indicates all items on one page.
     *
     * @default 10
     */
-  var itemsPerPage: js.UndefOr[Double] = js.native
+  var itemsPerPage: js.UndefOr[Double] = js.undefined
   
   /**
     * Text for Next button.
     *
     * @default 'Next »'
     */
-  var nextText: js.UndefOr[String] = js.native
+  var nextText: js.UndefOr[String] = js.undefined
   
   /**
     * Text for Previous button.
     *
     * @default '« Previous'
     */
-  var previousText: js.UndefOr[String] = js.native
+  var previousText: js.UndefOr[String] = js.undefined
 }
 object IPagerConfig {
   

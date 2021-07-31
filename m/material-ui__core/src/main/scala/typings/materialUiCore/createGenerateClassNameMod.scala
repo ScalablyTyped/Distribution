@@ -2,26 +2,26 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createGenerateClassNameMod {
   
-  @JSImport("@material-ui/core/styles/createGenerateClassName", JSImport.Default)
+  @JSImport("@material-ui/core/styles/createGenerateClassName", JSImport.Namespace)
   @js.native
-  def default(): js.Any = js.native
-  @JSImport("@material-ui/core/styles/createGenerateClassName", JSImport.Default)
-  @js.native
-  def default(options: GenerateClassNameOptions): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Any]
+  @scala.inline
+  def default(options: GenerateClassNameOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   trait GenerateClassNameOptions extends StObject {
     
-    var dangerouslyUseGlobalCSS: js.UndefOr[Boolean] = js.native
+    var dangerouslyUseGlobalCSS: js.UndefOr[Boolean] = js.undefined
     
-    var productionPrefix: js.UndefOr[String] = js.native
+    var productionPrefix: js.UndefOr[String] = js.undefined
     
-    var seed: js.UndefOr[String] = js.native
+    var seed: js.UndefOr[String] = js.undefined
   }
   object GenerateClassNameOptions {
     

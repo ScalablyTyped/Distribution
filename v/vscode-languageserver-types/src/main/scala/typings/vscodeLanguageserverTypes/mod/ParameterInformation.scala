@@ -2,17 +2,15 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterInformation extends StObject {
   
   /**
     * The human-readable doc-comment of this signature. Will be shown
     * in the UI but can be omitted.
     */
-  var documentation: js.UndefOr[String | MarkupContent] = js.native
+  var documentation: js.UndefOr[String | MarkupContent] = js.undefined
   
   /**
     * The label of this parameter information.
@@ -24,7 +22,7 @@ trait ParameterInformation extends StObject {
     * *Note*: a label of type string should be a substring of its containing signature label.
     * Its intended use case is to highlight the parameter label part in the `SignatureInformation.label`.
     */
-  var label: String | (js.Tuple2[Double, Double]) = js.native
+  var label: String | (js.Tuple2[Double, Double])
 }
 object ParameterInformation {
   
@@ -34,24 +32,24 @@ object ParameterInformation {
     __obj.asInstanceOf[ParameterInformation]
   }
   
+  @JSImport("vscode-languageserver-types", "ParameterInformation")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new parameter information literal.
     *
     * @param label A label string.
     * @param documentation A doc string.
     */
-  @JSImport("vscode-languageserver-types", "ParameterInformation.create")
-  @js.native
-  def create(label: String): ParameterInformation = js.native
-  @JSImport("vscode-languageserver-types", "ParameterInformation.create")
-  @js.native
-  def create(label: String, documentation: String): ParameterInformation = js.native
-  @JSImport("vscode-languageserver-types", "ParameterInformation.create")
-  @js.native
-  def create(label: js.Tuple2[Double, Double]): ParameterInformation = js.native
-  @JSImport("vscode-languageserver-types", "ParameterInformation.create")
-  @js.native
-  def create(label: js.Tuple2[Double, Double], documentation: String): ParameterInformation = js.native
+  @scala.inline
+  def create(label: String): ParameterInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[ParameterInformation]
+  @scala.inline
+  def create(label: String, documentation: String): ParameterInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[ParameterInformation]
+  @scala.inline
+  def create(label: js.Tuple2[Double, Double]): ParameterInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[ParameterInformation]
+  @scala.inline
+  def create(label: js.Tuple2[Double, Double], documentation: String): ParameterInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[ParameterInformation]
   
   @scala.inline
   implicit class ParameterInformationMutableBuilder[Self <: ParameterInformation] (val x: Self) extends AnyVal {

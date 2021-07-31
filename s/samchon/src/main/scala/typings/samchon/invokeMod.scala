@@ -6,7 +6,6 @@ import typings.std.Uint8Array
 import typings.sxml.mod.XML
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object invokeMod {
@@ -54,7 +53,7 @@ object invokeMod {
       *
       * @return An array containing values of the contained parameters.
       */
-    def getArguments(): js.Array[_] = js.native
+    def getArguments(): js.Array[js.Any] = js.native
     
     /**
       * Get listener.

@@ -2,13 +2,11 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A column with a semantic tag attached.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2QuasiId extends StObject {
   
   /**
@@ -16,18 +14,18 @@ trait SchemaGooglePrivacyDlpV2QuasiId extends StObject {
     * indicate an auxiliary table that contains statistical information on the
     * possible values of this column (below).
     */
-  var customTag: js.UndefOr[String] = js.native
+  var customTag: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the column. [required]
     */
-  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
   
   /**
     * If no semantic tag is indicated, we infer the statistical model from the
     * distribution of values in the input data
     */
-  var inferred: js.UndefOr[SchemaGoogleProtobufEmpty] = js.native
+  var inferred: js.UndefOr[SchemaGoogleProtobufEmpty] = js.undefined
   
   /**
     * A column can be tagged with a InfoType to use the relevant public dataset
@@ -36,7 +34,7 @@ trait SchemaGooglePrivacyDlpV2QuasiId extends StObject {
     * the list of supported InfoTypes, use ListInfoTypes with the
     * supported_by=RISK_ANALYSIS filter.
     */
-  var infoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.native
+  var infoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2QuasiId {
   

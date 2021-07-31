@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionExecutionFilter extends StObject {
   
   /**
     * The pipeline execution ID used to filter action execution history.
     */
-  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.native
+  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.undefined
 }
 object ActionExecutionFilter {
   

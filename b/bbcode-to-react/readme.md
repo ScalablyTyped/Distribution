@@ -12,7 +12,7 @@ A utility for turning raw BBCode into React elements.
 | Keywords           | bbcode, react, bbcode parser |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 56693 |
+| # downloads        | 52499 |
 | # stars            | 0 |
 
 ## Links

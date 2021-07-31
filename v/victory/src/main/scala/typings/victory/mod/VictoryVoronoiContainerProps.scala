@@ -5,11 +5,11 @@ import typings.victory.victoryStrings.x
 import typings.victory.victoryStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VictoryVoronoiContainerProps extends VictoryContainerProps {
+trait VictoryVoronoiContainerProps
+  extends StObject
+     with VictoryContainerProps {
   
   /**
     * When the activateData prop is set to true, the active prop will be set to true on all
@@ -17,7 +17,7 @@ trait VictoryVoronoiContainerProps extends VictoryContainerProps {
     * and onDeactivated callbacks will still fire, but no mutations to data components will
     * occur via Victory’s event system.
     */
-  var activateData: js.UndefOr[Boolean] = js.native
+  var activateData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When the activateLabels prop is set to true, the active prop will be set to true on all
@@ -26,18 +26,18 @@ trait VictoryVoronoiContainerProps extends VictoryContainerProps {
     * components will occur via Victory’s event system. Labels defined directly on
     * VictoryVoronoiContainer via the labels prop will still appear when this prop is set to false.
     */
-  var activateLabels: js.UndefOr[Boolean] = js.native
+  var activateLabels: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When the disable prop is set to true, VictoryVoronoiContainer events will not fire.
     */
-  var disable: js.UndefOr[Boolean] = js.native
+  var disable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The labelComponent prop specified the component that will be rendered when labels are defined
     * on VictoryVoronoiContainer. If the labels prop is omitted, no label component will be rendered.
     */
-  var labelComponent: js.UndefOr[ReactElement] = js.native
+  var labelComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * When a labels prop is provided to VictoryVoronoiContainer it will render a label component
@@ -48,28 +48,28 @@ trait VictoryVoronoiContainerProps extends VictoryContainerProps {
     * of that point in the array of active points, and points is an array of all active points.
     */
   var labels: js.UndefOr[
-    js.Function3[/* point */ js.Any, /* index */ Double, /* points */ js.Array[_], String]
-  ] = js.native
+    js.Function3[/* point */ js.Any, /* index */ Double, /* points */ js.Array[js.Any], String]
+  ] = js.undefined
   
   /**
     * The onActivated prop accepts a function to be called whenever new data points are activated.
     * The function is called with the parameters points (an array of active data objects) and props
     * (the props used by VictoryVoronoiContainer).
     */
-  var onActivated: js.UndefOr[js.Function2[/* points */ js.Array[_], /* props */ this.type, Unit]] = js.native
+  var onActivated: js.UndefOr[js.Function2[/* points */ js.Array[js.Any], /* props */ this.type, Unit]] = js.undefined
   
   /**
     * The onDeactivated prop accepts a function to be called whenever points are deactivated. The
     * function is called with the parameters points (an array of the newly-deactivated data objects)
     * and props (the props used by VictoryVoronoiContainer).
     */
-  var onDeactivated: js.UndefOr[js.Function2[/* points */ js.Array[_], /* props */ this.type, Unit]] = js.native
+  var onDeactivated: js.UndefOr[js.Function2[/* points */ js.Array[js.Any], /* props */ this.type, Unit]] = js.undefined
   
   /**
     * When the radius prop is set, the voronoi areas associated with each data point will be no larger
     * than the given radius. This prop should be given as a number.
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * The voronoiBlacklist prop is used to specify a list of components to ignore when calculating a
@@ -77,7 +77,7 @@ trait VictoryVoronoiContainerProps extends VictoryContainerProps {
     * array will be ignored by VictoryVoronoiContainer. Ignored components will never be flagged as
     * active, and will not contribute date to shared tooltips or labels.
     */
-  var voronoiBlacklist: js.UndefOr[js.Array[String]] = js.native
+  var voronoiBlacklist: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * When the voronoiDimension prop is set, voronoi selection will only take the given dimension into
@@ -85,14 +85,14 @@ trait VictoryVoronoiContainerProps extends VictoryContainerProps {
     * position will be activated regardless of y value. When this prop is not given, voronoi selection
     * is determined by both x any y values.
     */
-  var voronoiDimension: js.UndefOr[x | y] = js.native
+  var voronoiDimension: js.UndefOr[x | y] = js.undefined
   
   /**
     * When the voronoiPadding prop is given, the area of the chart that will trigger voronoi events is
     * reduced by the given padding on every side. By default, no padding is applied, and the entire range
     * of a given chart may trigger voronoi events. This prop should be given as a number.
     */
-  var voronoiPadding: js.UndefOr[Double] = js.native
+  var voronoiPadding: js.UndefOr[Double] = js.undefined
 }
 object VictoryVoronoiContainerProps {
   
@@ -130,19 +130,19 @@ object VictoryVoronoiContainerProps {
     def setLabelComponentUndefined: Self = StObject.set(x, "labelComponent", js.undefined)
     
     @scala.inline
-    def setLabels(value: (/* point */ js.Any, /* index */ Double, /* points */ js.Array[_]) => String): Self = StObject.set(x, "labels", js.Any.fromFunction3(value))
+    def setLabels(value: (/* point */ js.Any, /* index */ Double, /* points */ js.Array[js.Any]) => String): Self = StObject.set(x, "labels", js.Any.fromFunction3(value))
     
     @scala.inline
     def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setOnActivated(value: (/* points */ js.Array[_], VictoryVoronoiContainerProps) => Unit): Self = StObject.set(x, "onActivated", js.Any.fromFunction2(value))
+    def setOnActivated(value: (/* points */ js.Array[js.Any], VictoryVoronoiContainerProps) => Unit): Self = StObject.set(x, "onActivated", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnActivatedUndefined: Self = StObject.set(x, "onActivated", js.undefined)
     
     @scala.inline
-    def setOnDeactivated(value: (/* points */ js.Array[_], VictoryVoronoiContainerProps) => Unit): Self = StObject.set(x, "onDeactivated", js.Any.fromFunction2(value))
+    def setOnDeactivated(value: (/* points */ js.Array[js.Any], VictoryVoronoiContainerProps) => Unit): Self = StObject.set(x, "onDeactivated", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnDeactivatedUndefined: Self = StObject.set(x, "onDeactivated", js.undefined)

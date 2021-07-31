@@ -2,26 +2,24 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UtilizationByTime extends StObject {
   
   /**
     * The groups that this utilization result uses.
     */
-  var Groups: js.UndefOr[ReservationUtilizationGroups] = js.native
+  var Groups: js.UndefOr[ReservationUtilizationGroups] = js.undefined
   
   /**
     * The period of time that this utilization was used for.
     */
-  var TimePeriod: js.UndefOr[DateInterval] = js.native
+  var TimePeriod: js.UndefOr[DateInterval] = js.undefined
   
   /**
     * The total number of reservation hours that were used.
     */
-  var Total: js.UndefOr[ReservationAggregates] = js.native
+  var Total: js.UndefOr[ReservationAggregates] = js.undefined
 }
 object UtilizationByTime {
   

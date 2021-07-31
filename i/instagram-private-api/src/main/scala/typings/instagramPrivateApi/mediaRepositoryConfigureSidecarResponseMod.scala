@@ -2,21 +2,19 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaRepositoryConfigureSidecarResponseMod {
   
-  @js.native
   trait MediaRepositoryConfigureSidecarResponseCandidatesItem extends StObject {
     
-    var estimated_scans_sizes: js.Array[Double] = js.native
+    var estimated_scans_sizes: js.Array[Double]
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object MediaRepositoryConfigureSidecarResponseCandidatesItem {
     
@@ -46,36 +44,35 @@ object mediaRepositoryConfigureSidecarResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureSidecarResponseCaption extends StObject {
     
-    var bit_flags: Double = js.native
+    var bit_flags: Double
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var created_at_utc: Double = js.native
+    var created_at_utc: Double
     
-    var did_report_as_spam: Boolean = js.native
+    var did_report_as_spam: Boolean
     
-    var has_translation: Boolean = js.native
+    var has_translation: Boolean
     
-    var media_id: String = js.native
+    var media_id: String
     
-    var pk: String = js.native
+    var pk: String
     
-    var share_enabled: Boolean = js.native
+    var share_enabled: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var user: MediaRepositoryConfigureSidecarResponseUser = js.native
+    var user: MediaRepositoryConfigureSidecarResponseUser
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object MediaRepositoryConfigureSidecarResponseCaption {
     
@@ -148,30 +145,29 @@ object mediaRepositoryConfigureSidecarResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureSidecarResponseCarouselMediaItem extends StObject {
     
-    var carousel_parent_id: String = js.native
+    var carousel_parent_id: String
     
-    var fb_user_tags: js.UndefOr[MediaRepositoryConfigureSidecarResponseFbUserTags] = js.native
+    var fb_user_tags: js.UndefOr[MediaRepositoryConfigureSidecarResponseFbUserTags] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var image_versions2: MediaRepositoryConfigureSidecarResponseImageVersions2 = js.native
+    var image_versions2: MediaRepositoryConfigureSidecarResponseImageVersions2
     
-    var media_type: Double = js.native
+    var media_type: Double
     
-    var original_height: Double = js.native
+    var original_height: Double
     
-    var original_width: Double = js.native
+    var original_width: Double
     
-    var pk: String = js.native
+    var pk: String
     
-    var usertags: js.UndefOr[MediaRepositoryConfigureSidecarResponseUsertags] = js.native
+    var usertags: js.UndefOr[MediaRepositoryConfigureSidecarResponseUsertags] = js.undefined
     
-    var video_duration: js.UndefOr[Double] = js.native
+    var video_duration: js.UndefOr[Double] = js.undefined
     
-    var video_versions: js.UndefOr[js.Array[MediaRepositoryConfigureSidecarResponseVideoVersionsItem]] = js.native
+    var video_versions: js.UndefOr[js.Array[MediaRepositoryConfigureSidecarResponseVideoVersionsItem]] = js.undefined
   }
   object MediaRepositoryConfigureSidecarResponseCarouselMediaItem {
     
@@ -242,15 +238,14 @@ object mediaRepositoryConfigureSidecarResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureSidecarResponseFbUserTags extends StObject {
     
-    var in: js.Array[_] = js.native
+    var in: js.Array[js.Any]
   }
   object MediaRepositoryConfigureSidecarResponseFbUserTags {
     
     @scala.inline
-    def apply(in: js.Array[_]): MediaRepositoryConfigureSidecarResponseFbUserTags = {
+    def apply(in: js.Array[js.Any]): MediaRepositoryConfigureSidecarResponseFbUserTags = {
       val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaRepositoryConfigureSidecarResponseFbUserTags]
     }
@@ -259,17 +254,16 @@ object mediaRepositoryConfigureSidecarResponseMod {
     implicit class MediaRepositoryConfigureSidecarResponseFbUserTagsMutableBuilder[Self <: MediaRepositoryConfigureSidecarResponseFbUserTags] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setIn(value: js.Array[_]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      def setIn(value: js.Array[js.Any]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInVarargs(value: js.Any*): Self = StObject.set(x, "in", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureSidecarResponseImageVersions2 extends StObject {
     
-    var candidates: js.Array[MediaRepositoryConfigureSidecarResponseCandidatesItem] = js.native
+    var candidates: js.Array[MediaRepositoryConfigureSidecarResponseCandidatesItem]
   }
   object MediaRepositoryConfigureSidecarResponseImageVersions2 {
     
@@ -290,16 +284,15 @@ object mediaRepositoryConfigureSidecarResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureSidecarResponseInItem extends StObject {
     
-    var duration_in_video_in_sec: Null = js.native
+    var duration_in_video_in_sec: Null
     
-    var position: js.Array[Double] = js.native
+    var position: js.Array[Double]
     
-    var start_time_in_video_in_sec: Null = js.native
+    var start_time_in_video_in_sec: Null
     
-    var user: MediaRepositoryConfigureSidecarResponseUser = js.native
+    var user: MediaRepositoryConfigureSidecarResponseUser
   }
   object MediaRepositoryConfigureSidecarResponseInItem {
     
@@ -334,62 +327,61 @@ object mediaRepositoryConfigureSidecarResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureSidecarResponseMedia extends StObject {
     
-    var can_see_insights_as_brand: Boolean = js.native
+    var can_see_insights_as_brand: Boolean
     
-    var can_view_more_preview_comments: Boolean = js.native
+    var can_view_more_preview_comments: Boolean
     
-    var can_viewer_reshare: Boolean = js.native
+    var can_viewer_reshare: Boolean
     
-    var can_viewer_save: Boolean = js.native
+    var can_viewer_save: Boolean
     
-    var caption: MediaRepositoryConfigureSidecarResponseCaption = js.native
+    var caption: MediaRepositoryConfigureSidecarResponseCaption
     
-    var caption_is_edited: Boolean = js.native
+    var caption_is_edited: Boolean
     
-    var carousel_media: js.Array[MediaRepositoryConfigureSidecarResponseCarouselMediaItem] = js.native
+    var carousel_media: js.Array[MediaRepositoryConfigureSidecarResponseCarouselMediaItem]
     
-    var carousel_media_count: Double = js.native
+    var carousel_media_count: Double
     
-    var client_cache_key: String = js.native
+    var client_cache_key: String
     
-    var code: String = js.native
+    var code: String
     
-    var comment_count: Double = js.native
+    var comment_count: Double
     
-    var comment_likes_enabled: Boolean = js.native
+    var comment_likes_enabled: Boolean
     
-    var comment_threading_enabled: Boolean = js.native
+    var comment_threading_enabled: Boolean
     
-    var device_timestamp: Double = js.native
+    var device_timestamp: Double
     
-    var fb_user_tags: MediaRepositoryConfigureSidecarResponseFbUserTags = js.native
+    var fb_user_tags: MediaRepositoryConfigureSidecarResponseFbUserTags
     
-    var filter_type: Double = js.native
+    var filter_type: Double
     
-    var has_more_comments: Boolean = js.native
+    var has_more_comments: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var max_num_visible_preview_comments: Double = js.native
+    var max_num_visible_preview_comments: Double
     
-    var media_type: Double = js.native
+    var media_type: Double
     
-    var organic_tracking_token: String = js.native
+    var organic_tracking_token: String
     
-    var photo_of_you: Boolean = js.native
+    var photo_of_you: Boolean
     
-    var pk: String = js.native
+    var pk: String
     
-    var preview_comments: js.Array[_] = js.native
+    var preview_comments: js.Array[js.Any]
     
-    var taken_at: Double = js.native
+    var taken_at: Double
     
-    var user: MediaRepositoryConfigureSidecarResponseUser = js.native
+    var user: MediaRepositoryConfigureSidecarResponseUser
     
-    var usertags: MediaRepositoryConfigureSidecarResponseUsertags = js.native
+    var usertags: MediaRepositoryConfigureSidecarResponseUsertags
   }
   object MediaRepositoryConfigureSidecarResponseMedia {
     
@@ -418,7 +410,7 @@ object mediaRepositoryConfigureSidecarResponseMod {
       organic_tracking_token: String,
       photo_of_you: Boolean,
       pk: String,
-      preview_comments: js.Array[_],
+      preview_comments: js.Array[js.Any],
       taken_at: Double,
       user: MediaRepositoryConfigureSidecarResponseUser,
       usertags: MediaRepositoryConfigureSidecarResponseUsertags
@@ -503,7 +495,7 @@ object mediaRepositoryConfigureSidecarResponseMod {
       def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPreview_comments(value: js.Array[_]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
+      def setPreview_comments(value: js.Array[js.Any]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPreview_commentsVarargs(value: js.Any*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))
@@ -519,14 +511,13 @@ object mediaRepositoryConfigureSidecarResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureSidecarResponseRootObject extends StObject {
     
-    var client_sidecar_id: String = js.native
+    var client_sidecar_id: String
     
-    var media: MediaRepositoryConfigureSidecarResponseMedia = js.native
+    var media: MediaRepositoryConfigureSidecarResponseMedia
     
-    var status: String = js.native
+    var status: String
   }
   object MediaRepositoryConfigureSidecarResponseRootObject {
     
@@ -550,38 +541,37 @@ object mediaRepositoryConfigureSidecarResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureSidecarResponseUser extends StObject {
     
-    var allowed_commenter_type: js.UndefOr[String] = js.native
+    var allowed_commenter_type: js.UndefOr[String] = js.undefined
     
-    var can_boost_post: js.UndefOr[Boolean] = js.native
+    var can_boost_post: js.UndefOr[Boolean] = js.undefined
     
-    var can_see_organic_insights: js.UndefOr[Boolean] = js.native
+    var can_see_organic_insights: js.UndefOr[Boolean] = js.undefined
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.native
+    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_unpublished: js.UndefOr[Boolean] = js.native
+    var is_unpublished: js.UndefOr[Boolean] = js.undefined
     
-    var is_verified: js.UndefOr[Boolean] = js.native
+    var is_verified: js.UndefOr[Boolean] = js.undefined
     
-    var latest_reel_media: js.UndefOr[Null] = js.native
+    var latest_reel_media: js.UndefOr[Null] = js.undefined
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var reel_auto_archive: js.UndefOr[String] = js.native
+    var reel_auto_archive: js.UndefOr[String] = js.undefined
     
-    var show_insights_terms: js.UndefOr[Boolean] = js.native
+    var show_insights_terms: js.UndefOr[Boolean] = js.undefined
     
-    var username: String = js.native
+    var username: String
   }
   object MediaRepositoryConfigureSidecarResponseUser {
     
@@ -669,10 +659,9 @@ object mediaRepositoryConfigureSidecarResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureSidecarResponseUsertags extends StObject {
     
-    var in: js.Array[MediaRepositoryConfigureSidecarResponseInItem] = js.native
+    var in: js.Array[MediaRepositoryConfigureSidecarResponseInItem]
   }
   object MediaRepositoryConfigureSidecarResponseUsertags {
     
@@ -693,18 +682,17 @@ object mediaRepositoryConfigureSidecarResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureSidecarResponseVideoVersionsItem extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var id: String = js.native
+    var id: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object MediaRepositoryConfigureSidecarResponseVideoVersionsItem {
     

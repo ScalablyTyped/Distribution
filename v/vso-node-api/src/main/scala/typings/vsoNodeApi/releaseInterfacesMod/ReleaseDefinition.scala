@@ -5,133 +5,131 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseDefinition extends StObject {
   
   /**
     * Gets links to access the release definition.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Gets or sets the list of artifacts.
     */
-  var artifacts: js.Array[Artifact] = js.native
+  var artifacts: js.Array[Artifact]
   
   /**
     * Gets or sets comment.
     */
-  var comment: String = js.native
+  var comment: String
   
   /**
     * Gets or sets the identity who created.
     */
-  var createdBy: IdentityRef = js.native
+  var createdBy: IdentityRef
   
   /**
     * Gets date on which it got created.
     */
-  var createdOn: Date = js.native
+  var createdOn: Date
   
   /**
     * Gets or sets the description.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Gets or sets the list of environments.
     */
-  var environments: js.Array[ReleaseDefinitionEnvironment] = js.native
+  var environments: js.Array[ReleaseDefinitionEnvironment]
   
   /**
     * Gets the unique identifier of this field.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Whether release definition is deleted.
     */
-  var isDeleted: Boolean = js.native
+  var isDeleted: Boolean
   
   /**
     * Gets the reference of last release.
     */
-  var lastRelease: ReleaseReference = js.native
+  var lastRelease: ReleaseReference
   
   /**
     * Gets or sets the identity who modified.
     */
-  var modifiedBy: IdentityRef = js.native
+  var modifiedBy: IdentityRef
   
   /**
     * Gets date on which it got modified.
     */
-  var modifiedOn: Date = js.native
+  var modifiedOn: Date
   
   /**
     * Gets or sets the name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets or sets the path.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * Gets or sets pipeline process.
     */
-  var pipelineProcess: PipelineProcess = js.native
+  var pipelineProcess: PipelineProcess
   
   /**
     * Gets or sets properties.
     */
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /**
     * Gets or sets the release name format.
     */
-  var releaseNameFormat: String = js.native
+  var releaseNameFormat: String
   
-  var retentionPolicy: RetentionPolicy = js.native
+  var retentionPolicy: RetentionPolicy
   
   /**
     * Gets the revision number.
     */
-  var revision: Double = js.native
+  var revision: Double
   
   /**
     * Gets or sets source of release definition.
     */
-  var source: ReleaseDefinitionSource = js.native
+  var source: ReleaseDefinitionSource
   
   /**
     * Gets or sets list of tags.
     */
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
   /**
     * Gets or sets the list of triggers.
     */
-  var triggers: js.Array[ReleaseTriggerBase] = js.native
+  var triggers: js.Array[ReleaseTriggerBase]
   
   /**
     * Gets url to access the release definition.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * Gets or sets the list of variable groups.
     */
-  var variableGroups: js.Array[Double] = js.native
+  var variableGroups: js.Array[Double]
   
   /**
     * Gets or sets the dictionary of variables.
     */
-  var variables: StringDictionary[ConfigurationVariableValue] = js.native
+  var variables: StringDictionary[ConfigurationVariableValue]
 }
 object ReleaseDefinition {
   

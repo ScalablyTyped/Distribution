@@ -9,7 +9,6 @@ import typings.antvG2.antvG2Strings.time
 import typings.antvG2.antvG2Strings.timeCat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,7 +24,7 @@ class Scale[T] () extends StObject {
   
   var getText: js.UndefOr[js.Function1[/* value */ js.Any, String]] = js.native
   
-  var getTicks: js.UndefOr[js.Function0[js.Array[_]]] = js.native
+  var getTicks: js.UndefOr[js.Function0[js.Array[js.Any]]] = js.native
   
   var invert: js.UndefOr[js.Function1[/* n */ Double, T]] = js.native
   
@@ -35,7 +34,7 @@ class Scale[T] () extends StObject {
   
   var tickCount: js.UndefOr[Double] = js.native
   
-  var ticks: js.UndefOr[js.Array[_]] = js.native
+  var ticks: js.UndefOr[js.Array[js.Any]] = js.native
   
   var `type`: js.UndefOr[identity | linear | cat | time | timeCat | log | pow] = js.native
 }

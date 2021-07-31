@@ -7,37 +7,35 @@ import typings.winrt.Windows.Storage.FileProperties.ThumbnailMode
 import typings.winrt.Windows.Storage.FileProperties.ThumbnailOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IQueryOptions extends StObject {
   
-  var applicationSearchFilter: String = js.native
+  var applicationSearchFilter: String
   
-  var dateStackOption: DateStackOption = js.native
+  var dateStackOption: DateStackOption
   
-  var fileTypeFilter: IVector[String] = js.native
+  var fileTypeFilter: IVector[String]
   
-  var folderDepth: FolderDepth = js.native
+  var folderDepth: FolderDepth
   
-  var groupPropertyName: String = js.native
+  var groupPropertyName: String
   
-  var indexerOption: IndexerOption = js.native
+  var indexerOption: IndexerOption
   
-  var language: String = js.native
+  var language: String
   
-  def loadFromString(value: String): Unit = js.native
+  def loadFromString(value: String): Unit
   
-  def saveToString(): String = js.native
+  def saveToString(): String
   
-  def setPropertyPrefetch(options: PropertyPrefetchOptions, propertiesToRetrieve: IIterable[String]): Unit = js.native
+  def setPropertyPrefetch(options: PropertyPrefetchOptions, propertiesToRetrieve: IIterable[String]): Unit
   
-  def setThumbnailPrefetch(mode: ThumbnailMode, requestedSize: Double, options: ThumbnailOptions): Unit = js.native
+  def setThumbnailPrefetch(mode: ThumbnailMode, requestedSize: Double, options: ThumbnailOptions): Unit
   
-  var sortOrder: IVector[SortEntry] = js.native
+  var sortOrder: IVector[SortEntry]
   
-  var userSearchFilter: String = js.native
+  var userSearchFilter: String
 }
 object IQueryOptions {
   

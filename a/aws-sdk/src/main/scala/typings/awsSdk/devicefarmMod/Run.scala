@@ -2,166 +2,164 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Run extends StObject {
   
   /**
     * An app to upload or that has been uploaded.
     */
-  var appUpload: js.UndefOr[AmazonResourceName] = js.native
+  var appUpload: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * The run's ARN.
     */
-  var arn: js.UndefOr[AmazonResourceName] = js.native
+  var arn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * Specifies the billing method for a test run: metered or unmetered. If the parameter is not specified, the default value is metered.  If you have unmetered device slots, you must set this to unmetered to use them. Otherwise, the run is counted toward metered device minutes. 
     */
-  var billingMethod: js.UndefOr[BillingMethod] = js.native
+  var billingMethod: js.UndefOr[BillingMethod] = js.undefined
   
   /**
     * The total number of completed jobs.
     */
-  var completedJobs: js.UndefOr[Integer] = js.native
+  var completedJobs: js.UndefOr[Integer] = js.undefined
   
   /**
     * The run's result counters.
     */
-  var counters: js.UndefOr[Counters] = js.native
+  var counters: js.UndefOr[Counters] = js.undefined
   
   /**
     * When the run was created.
     */
-  var created: js.UndefOr[DateTime] = js.native
+  var created: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Output CustomerArtifactPaths object for the test run.
     */
-  var customerArtifactPaths: js.UndefOr[CustomerArtifactPaths] = js.native
+  var customerArtifactPaths: js.UndefOr[CustomerArtifactPaths] = js.undefined
   
   /**
     * Represents the total (metered or unmetered) minutes used by the test run.
     */
-  var deviceMinutes: js.UndefOr[DeviceMinutes] = js.native
+  var deviceMinutes: js.UndefOr[DeviceMinutes] = js.undefined
   
   /**
     * The ARN of the device pool for the run.
     */
-  var devicePoolArn: js.UndefOr[AmazonResourceName] = js.native
+  var devicePoolArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * The results of a device filter used to select the devices for a test run.
     */
-  var deviceSelectionResult: js.UndefOr[DeviceSelectionResult] = js.native
+  var deviceSelectionResult: js.UndefOr[DeviceSelectionResult] = js.undefined
   
   /**
     * For fuzz tests, this is the number of events, between 1 and 10000, that the UI fuzz test should perform.
     */
-  var eventCount: js.UndefOr[Integer] = js.native
+  var eventCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of minutes the job executes before it times out.
     */
-  var jobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.native
+  var jobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined
   
   /**
     * Information about the locale that is used for the run.
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the location that is used for the run.
     */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /**
     * A message about the run's result.
     */
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
   
   /**
     * The run's name.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The network profile being used for a test run.
     */
-  var networkProfile: js.UndefOr[NetworkProfile] = js.native
+  var networkProfile: js.UndefOr[NetworkProfile] = js.undefined
   
   /**
     * Read-only URL for an object in an S3 bucket where you can get the parsing results of the test package. If the test package doesn't parse, the reason why it doesn't parse appears in the file that this URL points to.
     */
-  var parsingResultUrl: js.UndefOr[String] = js.native
+  var parsingResultUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The run's platform. Allowed values include:   ANDROID   IOS  
     */
-  var platform: js.UndefOr[DevicePlatform] = js.native
+  var platform: js.UndefOr[DevicePlatform] = js.undefined
   
   /**
     * Information about the radio states for the run.
     */
-  var radios: js.UndefOr[Radios] = js.native
+  var radios: js.UndefOr[Radios] = js.undefined
   
   /**
     * The run's result. Allowed values include:   PENDING   PASSED   WARNED   FAILED   SKIPPED   ERRORED   STOPPED  
     */
-  var result: js.UndefOr[ExecutionResult] = js.native
+  var result: js.UndefOr[ExecutionResult] = js.undefined
   
   /**
     * Supporting field for the result field. Set only if result is SKIPPED. PARSING_FAILED if the result is skipped because of test package parsing failure.
     */
-  var resultCode: js.UndefOr[ExecutionResultCode] = js.native
+  var resultCode: js.UndefOr[ExecutionResultCode] = js.undefined
   
   /**
     * For fuzz tests, this is a seed to use for randomizing the UI fuzz test. Using the same seed value between tests ensures identical event sequences.
     */
-  var seed: js.UndefOr[Integer] = js.native
+  var seed: js.UndefOr[Integer] = js.undefined
   
   /**
     * When set to true, for private devices, Device Farm does not sign your app again. For public devices, Device Farm always signs your apps again. For more information about how Device Farm re-signs your apps, see Do you modify my app? in the AWS Device Farm FAQs.
     */
-  var skipAppResign: js.UndefOr[SkipAppResign] = js.native
+  var skipAppResign: js.UndefOr[SkipAppResign] = js.undefined
   
   /**
     * The run's start time.
     */
-  var started: js.UndefOr[DateTime] = js.native
+  var started: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The run's status. Allowed values include:   PENDING   PENDING_CONCURRENCY   PENDING_DEVICE   PROCESSING   SCHEDULING   PREPARING   RUNNING   COMPLETED   STOPPING  
     */
-  var status: js.UndefOr[ExecutionStatus] = js.native
+  var status: js.UndefOr[ExecutionStatus] = js.undefined
   
   /**
     * The run's stop time.
     */
-  var stopped: js.UndefOr[DateTime] = js.native
+  var stopped: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The ARN of the YAML-formatted test specification for the run.
     */
-  var testSpecArn: js.UndefOr[AmazonResourceName] = js.native
+  var testSpecArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * The total number of jobs for the run.
     */
-  var totalJobs: js.UndefOr[Integer] = js.native
+  var totalJobs: js.UndefOr[Integer] = js.undefined
   
   /**
     * The run's type. Must be one of the following values:   BUILTIN_FUZZ   BUILTIN_EXPLORER  For Android, an app explorer that traverses an Android app, interacting with it and capturing screenshots at the same time.    APPIUM_JAVA_JUNIT   APPIUM_JAVA_TESTNG   APPIUM_PYTHON   APPIUM_NODE   APPIUM_RUBY   APPIUM_WEB_JAVA_JUNIT   APPIUM_WEB_JAVA_TESTNG   APPIUM_WEB_PYTHON   APPIUM_WEB_NODE   APPIUM_WEB_RUBY   CALABASH   INSTRUMENTATION   UIAUTOMATION   UIAUTOMATOR   XCTEST   XCTEST_UI  
     */
-  var `type`: js.UndefOr[TestType] = js.native
+  var `type`: js.UndefOr[TestType] = js.undefined
   
   /**
     * The Device Farm console URL for the recording of the run.
     */
-  var webUrl: js.UndefOr[String] = js.native
+  var webUrl: js.UndefOr[String] = js.undefined
 }
 object Run {
   

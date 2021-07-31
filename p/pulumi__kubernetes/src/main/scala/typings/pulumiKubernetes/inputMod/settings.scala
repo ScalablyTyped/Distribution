@@ -10,7 +10,6 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.settingsDotk8sDotioSlash
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settings {
@@ -20,22 +19,21 @@ object settings {
     /**
       * PodPreset is a policy resource that defines additional runtime requirements for a Pod.
       */
-    @js.native
     trait PodPreset extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[Input[settingsDotk8sDotioSlashv1alpha1]] = js.native
+      var apiVersion: js.UndefOr[Input[settingsDotk8sDotioSlashv1alpha1]] = js.undefined
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.PodPreset]] = js.native
+      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.PodPreset]] = js.undefined
       
-      var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+      var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       
-      var spec: js.UndefOr[Input[PodPresetSpec]] = js.native
+      var spec: js.UndefOr[Input[PodPresetSpec]] = js.undefined
     }
     object PodPreset {
       
@@ -77,33 +75,32 @@ object settings {
     /**
       * PodPresetSpec is a description of a pod preset.
       */
-    @js.native
     trait PodPresetSpec extends StObject {
       
       /**
         * Env defines the collection of EnvVar to inject into containers.
         */
-      var env: js.UndefOr[Input[js.Array[Input[EnvVar]]]] = js.native
+      var env: js.UndefOr[Input[js.Array[Input[EnvVar]]]] = js.undefined
       
       /**
         * EnvFrom defines the collection of EnvFromSource to inject into containers.
         */
-      var envFrom: js.UndefOr[Input[js.Array[Input[EnvFromSource]]]] = js.native
+      var envFrom: js.UndefOr[Input[js.Array[Input[EnvFromSource]]]] = js.undefined
       
       /**
         * Selector is a label query over a set of resources, in this case pods. Required.
         */
-      var selector: js.UndefOr[Input[LabelSelector]] = js.native
+      var selector: js.UndefOr[Input[LabelSelector]] = js.undefined
       
       /**
         * VolumeMounts defines the collection of VolumeMount to inject into containers.
         */
-      var volumeMounts: js.UndefOr[Input[js.Array[Input[VolumeMount]]]] = js.native
+      var volumeMounts: js.UndefOr[Input[js.Array[Input[VolumeMount]]]] = js.undefined
       
       /**
         * Volumes defines the collection of Volume to inject into the pod.
         */
-      var volumes: js.UndefOr[Input[js.Array[Input[Volume]]]] = js.native
+      var volumes: js.UndefOr[Input[js.Array[Input[Volume]]]] = js.undefined
     }
     object PodPresetSpec {
       

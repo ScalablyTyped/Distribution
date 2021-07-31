@@ -2,42 +2,40 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MailMessage extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  def CheckName(): Unit = js.native
+  def CheckName(): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  def DisplayMoveDialog(): Unit = js.native
+  def DisplayMoveDialog(): Unit
   
-  def DisplayProperties(): Unit = js.native
+  def DisplayProperties(): Unit
   
-  def DisplaySelectNamesDialog(): Unit = js.native
+  def DisplaySelectNamesDialog(): Unit
   
-  def Forward(): Unit = js.native
+  def Forward(): Unit
   
-  def GoToNext(): Unit = js.native
+  def GoToNext(): Unit
   
-  def GoToPrevious(): Unit = js.native
+  def GoToPrevious(): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Reply(): Unit = js.native
+  def Reply(): Unit
   
-  def ReplyAll(): Unit = js.native
+  def ReplyAll(): Unit
   
-  def ToggleHeader(): Unit = js.native
+  def ToggleHeader(): Unit
   
   @JSName("Word.MailMessage_typekey")
-  var WordDotMailMessage_typekey: MailMessage = js.native
+  var WordDotMailMessage_typekey: MailMessage
 }
 object MailMessage {
   

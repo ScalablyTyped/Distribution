@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
   */
-@js.native
 trait Dialog extends StObject {
   
   /**
@@ -28,12 +26,12 @@ trait Dialog extends StObject {
   def addEventHandler(
     eventType: EventType,
     handler: js.Function1[/* args */ typings.officeJs.anon.Message | typings.officeJs.anon.Error, Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Called from a parent page to close the corresponding dialog box. 
     */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * Delivers a message from the host page, such as a task pane or a UI-less function file, to a dialog that was opened from the page.
@@ -50,12 +48,12 @@ trait Dialog extends StObject {
     *
     * @param message Accepts a message from the host page to deliver to the dialog. Anything that can be serialized to a string, including JSON and XML, can be sent.
     */
-  def messageChild(message: String): Unit = js.native
+  def messageChild(message: String): Unit
   
   /**
     * FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE.
     */
-  def sendMessage(name: String): Unit = js.native
+  def sendMessage(name: String): Unit
 }
 object Dialog {
   

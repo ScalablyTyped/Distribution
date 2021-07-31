@@ -2,14 +2,12 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallMediaState extends StObject {
   
   // The audio media state. Possible values are: active, inactive.
-  var audio: js.UndefOr[NullableOption[MediaState]] = js.native
+  var audio: js.UndefOr[NullableOption[MediaState]] = js.undefined
 }
 object CallMediaState {
   

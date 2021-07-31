@@ -6,7 +6,6 @@ import typings.chromeApps.chromeAppsStrings.error_
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -24,12 +23,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object mediaGalleries {
   
-  @js.native
   trait GalleryChangedEventArgs extends StObject {
     
-    var galleryId: String = js.native
+    var galleryId: String
     
-    var `type`: GalleryChangedType = js.native
+    var `type`: GalleryChangedType
   }
   object GalleryChangedEventArgs {
     
@@ -65,12 +63,11 @@ object mediaGalleries {
     def watch_dropped: typings.chromeApps.chromeAppsStrings.watch_dropped = "watch_dropped".asInstanceOf[typings.chromeApps.chromeAppsStrings.watch_dropped]
   }
   
-  @js.native
   trait GalleryWatchResult extends StObject {
     
-    var galleryId: String = js.native
+    var galleryId: String
     
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object GalleryWatchResult {
     
@@ -109,26 +106,25 @@ object mediaGalleries {
     def yes: typings.chromeApps.chromeAppsStrings.yes = "yes".asInstanceOf[typings.chromeApps.chromeAppsStrings.yes]
   }
   
-  @js.native
   trait MediaFileSystemMetadata extends StObject {
     
     /** If the media gallery is on a removable device, a unique id for the device while the device is online. */
-    var deviceId: js.UndefOr[String] = js.native
+    var deviceId: js.UndefOr[String] = js.undefined
     
     /** A unique and persistent id for the media gallery. */
-    var galleryId: String = js.native
+    var galleryId: String
     
     /** True if the device is currently available. */
-    var isAvailable: Boolean = js.native
+    var isAvailable: Boolean
     
     /** True if the device the media gallery is on was detected as a media device. i.e. a PTP or MTP device, or a DCIM directory is present. */
-    var isMediaDevice: Boolean = js.native
+    var isMediaDevice: Boolean
     
     /** True if the media gallery is on a removable device. */
-    var isRemovable: Boolean = js.native
+    var isRemovable: Boolean
     
     /** The name of the file system. */
-    var name: String = js.native
+    var name: String
   }
   object MediaFileSystemMetadata {
     
@@ -170,7 +166,6 @@ object mediaGalleries {
     }
   }
   
-  @js.native
   trait MediaFileSystemsOptions extends StObject {
     
     /**
@@ -186,7 +181,7 @@ object mediaGalleries {
       * **if_needed**
       * Ask the user to manage permitted galleries only if the return set would otherwise be empty.
       */
-    var interactive: js.UndefOr[Interactive] = js.native
+    var interactive: js.UndefOr[Interactive] = js.undefined
   }
   object MediaFileSystemsOptions {
     
@@ -207,54 +202,53 @@ object mediaGalleries {
     }
   }
   
-  @js.native
   trait Metadata extends StObject {
     
     /** Defined for audio and video only. */
-    var album: js.UndefOr[String] = js.native
+    var album: js.UndefOr[String] = js.undefined
     
-    var artist: js.UndefOr[String] = js.native
+    var artist: js.UndefOr[String] = js.undefined
     
     /**
       * The images embedded in the media file's metadata.
       * This is most often used for album art or video thumbnails.
       */
-    var attachedImages: js.Array[Blob] = js.native
+    var attachedImages: js.Array[Blob]
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var copyright: js.UndefOr[String] = js.native
+    var copyright: js.UndefOr[String] = js.undefined
     
-    var disc: js.UndefOr[integer] = js.native
+    var disc: js.UndefOr[integer] = js.undefined
     
     /** Defined for audio and video. In seconds. */
-    var duration: js.UndefOr[integer] = js.native
+    var duration: js.UndefOr[integer] = js.undefined
     
-    var genre: js.UndefOr[String] = js.native
+    var genre: js.UndefOr[String] = js.undefined
     
     /** Defined for images and video. In pixels. */
-    var height: js.UndefOr[integer] = js.native
+    var height: js.UndefOr[integer] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
     /** The browser sniffed mime type. */
-    var mimeType: String = js.native
+    var mimeType: String
     
     /**
       * All the metadata in the media file.
       * For formats with multiple streams, stream order will be preserved.
       * Container metadata is the first element.
       */
-    var rawTags: js.Array[RawTag] = js.native
+    var rawTags: js.Array[RawTag]
     
     /** Defined for images and video. In degrees. */
-    var rotation: js.UndefOr[integer] = js.native
+    var rotation: js.UndefOr[integer] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var track: js.UndefOr[integer] = js.native
+    var track: js.UndefOr[integer] = js.undefined
     
-    var width: js.UndefOr[integer] = js.native
+    var width: js.UndefOr[integer] = js.undefined
   }
   object Metadata {
     
@@ -362,10 +356,9 @@ object mediaGalleries {
     }
   }
   
-  @js.native
   trait MetadataOptions extends StObject {
     
-    var metadataType: MetadataOptionsType = js.native
+    var metadataType: MetadataOptionsType
   }
   object MetadataOptions {
     
@@ -401,18 +394,17 @@ object mediaGalleries {
     def mimeTypeOnly: typings.chromeApps.chromeAppsStrings.mimeTypeOnly = "mimeTypeOnly".asInstanceOf[typings.chromeApps.chromeAppsStrings.mimeTypeOnly]
   }
   
-  @js.native
   trait RawTag extends StObject {
     
     /**
       * An unfiltered string->string interface of tags for the stream.
       */
-    var tags: StringDictionary[String] = js.native
+    var tags: StringDictionary[String]
     
     /**
       * Describes format of container or codec of stream, i.e. 'mp3' | 'h264'.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object RawTag {
     
@@ -434,7 +426,6 @@ object mediaGalleries {
     }
   }
   
-  @js.native
   trait ScanProgressEventArgs extends StObject {
     
     /**
@@ -442,17 +433,17 @@ object mediaGalleries {
       * some file types can be either audio or video
       * and are included in both counts.
       */
-    var audioCount: js.UndefOr[integer] = js.native
+    var audioCount: js.UndefOr[integer] = js.undefined
     
     /** The number of Galleries found. */
-    var galleryCount: js.UndefOr[integer] = js.native
+    var galleryCount: js.UndefOr[integer] = js.undefined
     
-    var imageCount: js.UndefOr[integer] = js.native
+    var imageCount: js.UndefOr[integer] = js.undefined
     
     /** The type of progress event, i.e. start, finish, etc. */
-    var `type`: ScanProgressType = js.native
+    var `type`: ScanProgressType
     
-    var videoCount: js.UndefOr[integer] = js.native
+    var videoCount: js.UndefOr[integer] = js.undefined
   }
   object ScanProgressEventArgs {
     

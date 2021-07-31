@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDashboard.ItemEndUpdate event.
   */
-@js.native
-trait ASPxClientItemEndUpdateEventArgs extends ASPxClientEventArgs {
+trait ASPxClientItemEndUpdateEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the component name of the dashboard item.
     */
-  var ItemName: String = js.native
+  var ItemName: String
 }
 object ASPxClientItemEndUpdateEventArgs {
   

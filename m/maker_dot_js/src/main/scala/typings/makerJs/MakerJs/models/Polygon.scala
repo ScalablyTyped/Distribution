@@ -4,14 +4,14 @@ import typings.makerJs.MakerJs.IModel
 import typings.makerJs.MakerJs.IPathMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Polygon extends IModel {
+trait Polygon
+  extends StObject
+     with IModel {
   
   @JSName("paths")
-  var paths_Polygon: IPathMap = js.native
+  var paths_Polygon: IPathMap
 }
 object Polygon {
   

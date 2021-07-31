@@ -11,8 +11,8 @@ Small module for fitting a canvas element within the bounds of its parent.
 | Full name          | canvas-fit |
 | Keywords           | canvas, fit, screen, window, browser, stretch, resize |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 2682675 |
+| # dependents       | 17 |
+| # downloads        | 3319737 |
 | # stars            | 0 |
 
 ## Links

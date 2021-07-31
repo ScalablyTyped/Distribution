@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object MediaThumbnailFormat extends StObject {
   
   /** BGRA8 media format. */
   @js.native
-  sealed trait bgra8 extends MediaThumbnailFormat
+  sealed trait bgra8
+    extends StObject
+       with MediaThumbnailFormat
   
   /** BMP media format. */
   @js.native
-  sealed trait bmp extends MediaThumbnailFormat
+  sealed trait bmp
+    extends StObject
+       with MediaThumbnailFormat
 }

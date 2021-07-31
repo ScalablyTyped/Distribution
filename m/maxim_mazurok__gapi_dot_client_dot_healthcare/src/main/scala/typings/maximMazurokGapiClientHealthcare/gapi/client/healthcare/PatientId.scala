@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatientId extends StObject {
   
   /** ID type. For example, MRN or NHS. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** The patient's unique identifier. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object PatientId {
   

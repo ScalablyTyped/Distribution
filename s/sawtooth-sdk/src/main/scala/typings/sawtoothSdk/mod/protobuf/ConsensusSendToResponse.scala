@@ -8,7 +8,6 @@ import typings.sawtoothSdk.protobufMod.IConsensusSendToResponse
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse")
@@ -24,25 +23,29 @@ class ConsensusSendToResponse ()
 /* static members */
 object ConsensusSendToResponse {
   
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Status enum. */
   @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.Status")
   @js.native
   object Status extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status & Double] = js.native
     
-    /* 2 */ val BAD_REQUEST: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status.BAD_REQUEST with Double = js.native
+    /* 2 */ val BAD_REQUEST: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status.BAD_REQUEST & Double = js.native
     
-    /* 4 */ val NOT_READY: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status.NOT_READY with Double = js.native
+    /* 4 */ val NOT_READY: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status.NOT_READY & Double = js.native
     
-    /* 1 */ val OK: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status.OK with Double = js.native
+    /* 1 */ val OK: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status.OK & Double = js.native
     
-    /* 3 */ val SERVICE_ERROR: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status.SERVICE_ERROR with Double = js.native
+    /* 3 */ val SERVICE_ERROR: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status.SERVICE_ERROR & Double = js.native
     
-    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status.STATUS_UNSET with Double = js.native
+    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status.STATUS_UNSET & Double = js.native
     
-    /* 5 */ val UNKNOWN_PEER: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status.UNKNOWN_PEER with Double = js.native
+    /* 5 */ val UNKNOWN_PEER: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status.UNKNOWN_PEER & Double = js.native
   }
   
   /**
@@ -50,12 +53,10 @@ object ConsensusSendToResponse {
     * @param [properties] Properties to set
     * @returns ConsensusSendToResponse instance
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.create")
-  @js.native
-  def create(): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.create")
-  @js.native
-  def create(properties: IConsensusSendToResponse): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = js.native
+  @scala.inline
+  def create(): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusSendToResponse]
+  @scala.inline
+  def create(properties: IConsensusSendToResponse): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusSendToResponse]
   
   /**
     * Decodes a ConsensusSendToResponse message from the specified reader or buffer.
@@ -65,18 +66,14 @@ object ConsensusSendToResponse {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.decode")
-  @js.native
-  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusSendToResponse]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusSendToResponse]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusSendToResponse]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusSendToResponse]
   
   /**
     * Decodes a ConsensusSendToResponse message from the specified reader or buffer, length delimited.
@@ -85,12 +82,10 @@ object ConsensusSendToResponse {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusSendToResponse]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusSendToResponse]
   
   /**
     * Encodes the specified ConsensusSendToResponse message. Does not implicitly {@link ConsensusSendToResponse.verify|verify} messages.
@@ -98,12 +93,10 @@ object ConsensusSendToResponse {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.encode")
-  @js.native
-  def encode(message: IConsensusSendToResponse): Writer = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.encode")
-  @js.native
-  def encode(message: IConsensusSendToResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IConsensusSendToResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IConsensusSendToResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ConsensusSendToResponse message, length delimited. Does not implicitly {@link ConsensusSendToResponse.verify|verify} messages.
@@ -111,21 +104,18 @@ object ConsensusSendToResponse {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IConsensusSendToResponse): Writer = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IConsensusSendToResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IConsensusSendToResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IConsensusSendToResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ConsensusSendToResponse message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ConsensusSendToResponse
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusSendToResponse]
   
   /**
     * Creates a plain object from a ConsensusSendToResponse message. Also converts values to other types if specified.
@@ -133,19 +123,16 @@ object ConsensusSendToResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.toObject")
-  @js.native
-  def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.toObject")
-  @js.native
-  def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusSendToResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ConsensusSendToResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusSendToResponse.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

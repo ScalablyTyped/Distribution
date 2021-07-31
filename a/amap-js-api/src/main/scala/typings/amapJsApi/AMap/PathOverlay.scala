@@ -2,11 +2,12 @@ package typings.amapJsApi.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PathOverlay[ExtraData] extends ShapeOverlay[ExtraData] {
+trait PathOverlay[ExtraData]
+  extends StObject
+     with ShapeOverlay[ExtraData] {
   
   /**
     * 获取范围
@@ -17,54 +18,54 @@ object PathOverlay {
   
   type EventMap[I] = typings.amapJsApi.AMap.ShapeOverlay.EventMap[I]
   
-  @js.native
   trait Options[ExtraData]
-    extends typings.amapJsApi.AMap.Overlay.Options[ExtraData] {
+    extends StObject
+       with typings.amapJsApi.AMap.Overlay.Options[ExtraData] {
     
     /**
       * 折线两端线帽的绘制样式
       */
-    var lineCap: js.UndefOr[StrokeLineCap] = js.native
+    var lineCap: js.UndefOr[StrokeLineCap] = js.undefined
     
     /**
       * 折线拐点的绘制样式
       */
-    var lineJoin: js.UndefOr[StrokeLineJoin] = js.native
+    var lineJoin: js.UndefOr[StrokeLineJoin] = js.undefined
     
     /**
       * 描边线条颜色
       */
-    var strokeColor: js.UndefOr[String] = js.native
+    var strokeColor: js.UndefOr[String] = js.undefined
     
     /**
       * 虚线间隔
       */
-    var strokeDasharray: js.UndefOr[js.Array[Double]] = js.native
+    var strokeDasharray: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * 描边线条透明度
       */
-    var strokeOpacity: js.UndefOr[Double] = js.native
+    var strokeOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * 描边样式
       */
-    var strokeStyle: js.UndefOr[StrokeStyle] = js.native
+    var strokeStyle: js.UndefOr[StrokeStyle] = js.undefined
     
     /**
       * 描边宽度
       */
-    var strokeWeight: js.UndefOr[Double] = js.native
+    var strokeWeight: js.UndefOr[Double] = js.undefined
     
     /**
       * 是否可见
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 覆盖物层级
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -75,7 +76,7 @@ object PathOverlay {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], ExtraData] (val x: Self with Options[ExtraData]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setLineCap(value: StrokeLineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])

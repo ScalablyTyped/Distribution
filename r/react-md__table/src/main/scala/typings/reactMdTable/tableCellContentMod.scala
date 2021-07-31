@@ -7,14 +7,13 @@ import typings.reactMdIcon.textIconSpacingMod.TextIconSpacingProps
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableCellContentMod {
   
   @JSImport("@react-md/table/types/TableCellContent", "TableCellContent")
   @js.native
-  val TableCellContent: ForwardRefExoticComponent[TableCellContentProps with RefAttributes[HTMLButtonElement]] = js.native
+  val TableCellContent: ForwardRefExoticComponent[TableCellContentProps & RefAttributes[HTMLButtonElement]] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdTable.reactMdTableStrings.ascending
@@ -38,29 +37,30 @@ object tableCellContentMod {
     def other: typings.reactMdTable.reactMdTableStrings.other = "other".asInstanceOf[typings.reactMdTable.reactMdTableStrings.other]
   }
   
-  @js.native
-  trait TableCellContentProps extends TextIconSpacingProps {
+  trait TableCellContentProps
+    extends StObject
+       with TextIconSpacingProps {
     
     /**
       * An optional id for the sort order button.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if the icon should be rotated.
       */
-    var rotated: js.UndefOr[Boolean] = js.native
+    var rotated: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The current sort order for this cell. Setting this to `null` will prevent
       * the button from being rendered.
       */
-    var sortOrder: js.UndefOr[SortOrder] = js.native
+    var sortOrder: js.UndefOr[SortOrder] = js.undefined
     
     /**
       * An optional style for the sort order button.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TableCellContentProps {
     

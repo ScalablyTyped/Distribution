@@ -4,39 +4,39 @@ import typings.mapboxGl.mapboxGlStrings.linear
 import typings.mapboxGl.mapboxGlStrings.nearest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RasterPaint extends AnyPaint {
+trait RasterPaint
+  extends StObject
+     with AnyPaint {
   
-  var `raster-brightness-max`: js.UndefOr[Double | Expression] = js.native
+  var `raster-brightness-max`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `raster-brightness-max-transition`: js.UndefOr[Transition] = js.native
+  var `raster-brightness-max-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `raster-brightness-min`: js.UndefOr[Double | Expression] = js.native
+  var `raster-brightness-min`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `raster-brightness-min-transition`: js.UndefOr[Transition] = js.native
+  var `raster-brightness-min-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `raster-contrast`: js.UndefOr[Double | Expression] = js.native
+  var `raster-contrast`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `raster-contrast-transition`: js.UndefOr[Transition] = js.native
+  var `raster-contrast-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `raster-fade-duration`: js.UndefOr[Double | Expression] = js.native
+  var `raster-fade-duration`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `raster-hue-rotate`: js.UndefOr[Double | Expression] = js.native
+  var `raster-hue-rotate`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `raster-hue-rotate-transition`: js.UndefOr[Transition] = js.native
+  var `raster-hue-rotate-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `raster-opacity`: js.UndefOr[Double | Expression] = js.native
+  var `raster-opacity`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `raster-opacity-transition`: js.UndefOr[Transition] = js.native
+  var `raster-opacity-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `raster-resampling`: js.UndefOr[linear | nearest] = js.native
+  var `raster-resampling`: js.UndefOr[linear | nearest] = js.undefined
   
-  var `raster-saturation`: js.UndefOr[Double | Expression] = js.native
+  var `raster-saturation`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `raster-saturation-transition`: js.UndefOr[Transition] = js.native
+  var `raster-saturation-transition`: js.UndefOr[Transition] = js.undefined
 }
 object RasterPaint {
   

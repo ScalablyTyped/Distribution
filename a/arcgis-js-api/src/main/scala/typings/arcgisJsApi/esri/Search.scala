@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Search extends Accessor {
+trait Search
+  extends StObject
+     with Accessor {
   
   /**
     * Indicates whether the place finder is enabled in the web scene or the web map.

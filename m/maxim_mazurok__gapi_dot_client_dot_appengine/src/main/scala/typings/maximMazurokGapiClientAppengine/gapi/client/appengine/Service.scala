@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Service extends StObject {
   
   /** Relative name of the service within the application. Example: default.@OutputOnly */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Full path to the Service resource in the API. Example: apps/myapp/services/default.@OutputOnly */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Ingress settings for this service. Will apply to all versions. */
-  var networkSettings: js.UndefOr[NetworkSettings] = js.native
+  var networkSettings: js.UndefOr[NetworkSettings] = js.undefined
   
   /** Mapping that defines fractional HTTP traffic diversion to different versions within the service. */
-  var split: js.UndefOr[TrafficSplit] = js.native
+  var split: js.UndefOr[TrafficSplit] = js.undefined
 }
 object Service {
   

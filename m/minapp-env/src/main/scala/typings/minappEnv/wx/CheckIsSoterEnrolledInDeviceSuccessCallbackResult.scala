@@ -2,17 +2,15 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckIsSoterEnrolledInDeviceSuccessCallbackResult extends StObject {
   
   /** 错误信息 */
-  var errMs: String = js.native
+  var errMs: String
   
   /** 是否已录入信息 */
-  var isEnrolled: Boolean = js.native
+  var isEnrolled: Boolean
 }
 object CheckIsSoterEnrolledInDeviceSuccessCallbackResult {
   

@@ -2,56 +2,54 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchasedEnvelopesInformation extends StObject {
   
   /**
     * The total amount of the purchase.
     */
-  var amount: js.UndefOr[String] = js.native
+  var amount: js.UndefOr[String] = js.undefined
   
   /**
     * The AppName of the client application.
     */
-  var appName: js.UndefOr[String] = js.native
+  var appName: js.UndefOr[String] = js.undefined
   
   /**
     * The currency code for the account, based on the [ISO 4217 currency code](https://www.iso.org/iso-4217-currency-codes.html).
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * The Platform of the client application
     */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
   /**
     * The Product ID from the AppStore.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * The quantity of envelopes to add to the account.
     */
-  var quantity: js.UndefOr[String] = js.native
+  var quantity: js.UndefOr[String] = js.undefined
   
   /**
     * The encrypted Base64 encoded receipt data.
     */
-  var receiptData: js.UndefOr[String] = js.native
+  var receiptData: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the AppStore.
     */
-  var storeName: js.UndefOr[String] = js.native
+  var storeName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the Transaction ID from the AppStore.
     */
-  var transactionId: js.UndefOr[String] = js.native
+  var transactionId: js.UndefOr[String] = js.undefined
 }
 object PurchasedEnvelopesInformation {
   

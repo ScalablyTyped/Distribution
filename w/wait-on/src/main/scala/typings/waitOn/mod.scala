@@ -4,28 +4,28 @@ import typings.std.Record
 import typings.waitOn.anon.Password
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("wait-on", JSImport.Namespace)
-  @js.native
-  def apply(options: WaitOnOptions): js.Promise[Unit] = js.native
-  @JSImport("wait-on", JSImport.Namespace)
-  @js.native
-  def apply(options: WaitOnOptions, cb: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def apply(options: WaitOnOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(options: WaitOnOptions, cb: js.Function1[/* err */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("wait-on", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait AxiosProxyConfig extends StObject {
     
-    var auth: js.UndefOr[Password] = js.native
+    var auth: js.UndefOr[Password] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
   }
   object AxiosProxyConfig {
     
@@ -58,12 +58,11 @@ object mod {
     }
   }
   
-  @js.native
   trait HttpSignature extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var keyId: String = js.native
+    var keyId: String
   }
   object HttpSignature {
     
@@ -86,12 +85,11 @@ object mod {
   
   type ValidateStatus = js.Function1[/* status */ Double, Boolean]
   
-  @js.native
   trait WaitOnAuth extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var username: String = js.native
+    var username: String
   }
   object WaitOnAuth {
     
@@ -112,96 +110,95 @@ object mod {
     }
   }
   
-  @js.native
   trait WaitOnOptions extends StObject {
     
     /**
       * Https specific option.
       * see https://github.com/request/request#readme for specific details
       */
-    var auth: js.UndefOr[WaitOnAuth] = js.native
+    var auth: js.UndefOr[WaitOnAuth] = js.undefined
     
     /**
       * Initial delay in ms.
       * @default 0
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var followRedirect: js.UndefOr[Boolean] = js.native
+    var followRedirect: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[Record[String, _]] = js.native
+    var headers: js.UndefOr[Record[String, js.Any]] = js.undefined
     
     /**
       * http HEAD/GET timeout to wait for request
       * @default 0
       */
-    var httpTimeout: js.UndefOr[Double] = js.native
+    var httpTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Poll resource interval in ms,
       * @default 250ms
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /**
       * Flag which outputs to stdout, remaining resources waited on and when complete or any error occurs.
       */
-    var log: js.UndefOr[Boolean] = js.native
+    var log: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Proxy options.
       * see https://github.com/axios/axios#config-defaults
       */
-    var proxy: js.UndefOr[AxiosProxyConfig] = js.native
+    var proxy: js.UndefOr[AxiosProxyConfig] = js.undefined
     
     /**
       * Array of string resources to wait for. prefix determines the type of resource with the default type of file:
       */
-    var resources: js.Array[String] = js.native
+    var resources: js.Array[String]
     
     /**
       * Flag to reverse operation so checks are for resources being NOT available.
       * @default false
       */
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Limit of concurrent connections to a resource
       * @default Infinity
       */
-    var simultaneous: js.UndefOr[Double] = js.native
+    var simultaneous: js.UndefOr[Double] = js.undefined
     
-    var strictSSL: js.UndefOr[Boolean] = js.native
+    var strictSSL: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Tcp timeout in ms.
       * @default 300
       */
-    var tcpTimeout: js.UndefOr[Double] = js.native
+    var tcpTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Timeout in ms until it aborts with error.
       * @default Infinity
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Validates whether a status is valid.
       */
-    var validateStatus: js.UndefOr[ValidateStatus] = js.native
+    var validateStatus: js.UndefOr[ValidateStatus] = js.undefined
     
     /**
       * Flag which outputs debug output.
       * @default false
       */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Stabilization time in ms
       * Waits this amount of time for file sizes to stabilize or other resource availability to remain unchanged.
       * @default 750ms.
       */
-    var window: js.UndefOr[Double] = js.native
+    var window: js.UndefOr[Double] = js.undefined
   }
   object WaitOnOptions {
     
@@ -233,7 +230,7 @@ object mod {
       def setFollowRedirectUndefined: Self = StObject.set(x, "followRedirect", js.undefined)
       
       @scala.inline
-      def setHeaders(value: Record[String, _]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)

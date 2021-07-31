@@ -2,10 +2,8 @@ package typings.servicenowLondon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlidePluginManager extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait GlidePluginManager extends StObject {
     * // The plugin Ten Cool Things is active
     * // ...
     */
-  def isActive(pluginId: String): Boolean = js.native
+  def isActive(pluginId: String): Boolean
 }
 object GlidePluginManager {
   

@@ -14,7 +14,6 @@ import typings.wordpressCoreData.wordpressCoreDataStrings.update
 import typings.wordpressCoreData.wordpressCoreDataStrings.view
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -30,38 +29,37 @@ object anon {
     @JSName("receiveCurrentUser")
     def receiveCurrentUser_view(currentUser: User[view]): Unit = js.native
     
-    def receiveEmbedPreview(url: String, preview: Record[String, _]): Unit = js.native
+    def receiveEmbedPreview(url: String, preview: Record[String, js.Any]): Unit = js.native
     
-    def receiveEntityRecords(kind: String, name: String, records: js.Array[Record[String, _]]): Unit = js.native
+    def receiveEntityRecords(kind: String, name: String, records: js.Array[Record[String, js.Any]]): Unit = js.native
     def receiveEntityRecords(
       kind: String,
       name: String,
-      records: js.Array[Record[String, _]],
-      query: js.UndefOr[scala.Nothing],
+      records: js.Array[Record[String, js.Any]],
+      query: Unit,
       invalidateCache: Boolean
     ): Unit = js.native
-    def receiveEntityRecords(kind: String, name: String, records: js.Array[Record[String, _]], query: Record[String, _]): Unit = js.native
     def receiveEntityRecords(
       kind: String,
       name: String,
-      records: js.Array[Record[String, _]],
-      query: Record[String, _],
+      records: js.Array[Record[String, js.Any]],
+      query: Record[String, js.Any]
+    ): Unit = js.native
+    def receiveEntityRecords(
+      kind: String,
+      name: String,
+      records: js.Array[Record[String, js.Any]],
+      query: Record[String, js.Any],
       invalidateCache: Boolean
     ): Unit = js.native
-    def receiveEntityRecords(kind: String, name: String, records: Record[String, _]): Unit = js.native
+    def receiveEntityRecords(kind: String, name: String, records: Record[String, js.Any]): Unit = js.native
+    def receiveEntityRecords(kind: String, name: String, records: Record[String, js.Any], query: Unit, invalidateCache: Boolean): Unit = js.native
+    def receiveEntityRecords(kind: String, name: String, records: Record[String, js.Any], query: Record[String, js.Any]): Unit = js.native
     def receiveEntityRecords(
       kind: String,
       name: String,
-      records: Record[String, _],
-      query: js.UndefOr[scala.Nothing],
-      invalidateCache: Boolean
-    ): Unit = js.native
-    def receiveEntityRecords(kind: String, name: String, records: Record[String, _], query: Record[String, _]): Unit = js.native
-    def receiveEntityRecords(
-      kind: String,
-      name: String,
-      records: Record[String, _],
-      query: Record[String, _],
+      records: Record[String, js.Any],
+      query: Record[String, js.Any],
       invalidateCache: Boolean
     ): Unit = js.native
     
@@ -76,7 +74,7 @@ object anon {
     @JSName("receiveUserQuery")
     def receiveUserQuery_view(queryID: String, users: User[view]): Unit = js.native
     
-    def saveEntityRecord(kind: String, name: String, record: Record[String, _]): IterableIterator[Unit] = js.native
+    def saveEntityRecord(kind: String, name: String, record: Record[String, js.Any]): IterableIterator[Unit] = js.native
   }
   
   @js.native
@@ -107,16 +105,16 @@ object anon {
     
     def getCurrentUser(): User[view] = js.native
     
-    def getEmbedPreview(url: String): js.UndefOr[Record[String, _]] = js.native
+    def getEmbedPreview(url: String): js.UndefOr[Record[String, js.Any]] = js.native
     
     def getEntitiesByKind(kind: String): js.Array[Entity] = js.native
     
     def getEntity(kind: String, name: String): js.UndefOr[Entity] = js.native
     
-    def getEntityRecord(kind: String, name: String, key: Double): js.UndefOr[Record[String, _]] = js.native
+    def getEntityRecord(kind: String, name: String, key: Double): js.UndefOr[Record[String, js.Any]] = js.native
     
-    def getEntityRecords(kind: String, name: String): js.Array[Record[String, _]] = js.native
-    def getEntityRecords(kind: String, name: String, query: Record[String, _]): js.Array[Record[String, _]] = js.native
+    def getEntityRecords(kind: String, name: String): js.Array[Record[String, js.Any]] = js.native
+    def getEntityRecords(kind: String, name: String, query: Record[String, js.Any]): js.Array[Record[String, js.Any]] = js.native
     
     def getThemeSupports(): Partial[Formats] = js.native
     

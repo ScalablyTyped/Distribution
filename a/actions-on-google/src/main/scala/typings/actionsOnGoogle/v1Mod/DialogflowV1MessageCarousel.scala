@@ -1,24 +1,22 @@
 package typings.actionsOnGoogle.v1Mod
 
 import typings.actionsOnGoogle.actionsOnGoogleStrings.carousel_card
-import typings.actionsOnGoogle.actionsOnGoogleStrings.google
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1MessageCarousel
-  extends DialogflowV1BaseGoogleMessage[carousel_card]
+  extends StObject
+     with DialogflowV1BaseGoogleMessage[carousel_card]
      with DialogflowV1Message {
   
-  var items: js.UndefOr[js.Array[DialogflowV1MessageOptionItem]] = js.native
+  var items: js.UndefOr[js.Array[DialogflowV1MessageOptionItem]] = js.undefined
 }
 object DialogflowV1MessageCarousel {
   
   @scala.inline
-  def apply(platform: google): DialogflowV1MessageCarousel = {
-    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+  def apply(): DialogflowV1MessageCarousel = {
+    val __obj = js.Dynamic.literal(platform = "google")
     __obj.asInstanceOf[DialogflowV1MessageCarousel]
   }
   

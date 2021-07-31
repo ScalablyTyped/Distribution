@@ -2,26 +2,24 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentClassifierFilter extends StObject {
   
   /**
     * Filters the list of classifiers based on status.
     */
-  var Status: js.UndefOr[ModelStatus] = js.native
+  var Status: js.UndefOr[ModelStatus] = js.undefined
   
   /**
     * Filters the list of classifiers based on the time that the classifier was submitted for processing. Returns only classifiers submitted after the specified time. Classifiers are returned in descending order, newest to oldest.
     */
-  var SubmitTimeAfter: js.UndefOr[Timestamp] = js.native
+  var SubmitTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Filters the list of classifiers based on the time that the classifier was submitted for processing. Returns only classifiers submitted before the specified time. Classifiers are returned in ascending order, oldest to newest.
     */
-  var SubmitTimeBefore: js.UndefOr[Timestamp] = js.native
+  var SubmitTimeBefore: js.UndefOr[Timestamp] = js.undefined
 }
 object DocumentClassifierFilter {
   

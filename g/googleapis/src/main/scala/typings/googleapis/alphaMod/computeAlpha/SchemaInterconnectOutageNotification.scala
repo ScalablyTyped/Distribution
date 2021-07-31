@@ -2,60 +2,58 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Description of a planned outage on this Interconnect. Next id: 9
   */
-@js.native
 trait SchemaInterconnectOutageNotification extends StObject {
   
   /**
     * If issue_type is IT_PARTIAL_OUTAGE, a list of the Google-side circuit IDs
     * that will be affected.
     */
-  var affectedCircuits: js.UndefOr[js.Array[String]] = js.native
+  var affectedCircuits: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A description about the purpose of the outage.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Scheduled end time for the outage (milliseconds since Unix epoch).
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Form this outage is expected to take. Note that the &quot;IT_&quot;
     * versions of this enum have been deprecated in favor of the unprefixed
     * values.
     */
-  var issueType: js.UndefOr[String] = js.native
+  var issueType: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier for this outage notification.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The party that generated this notification. Note that
     * &quot;NSRC_GOOGLE&quot; has been deprecated in favor of
     * &quot;GOOGLE&quot;
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * Scheduled start time for the outage (milliseconds since Unix epoch).
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * State of this notification. Note that the &quot;NS_&quot; versions of
     * this enum have been deprecated in favor of the unprefixed values.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaInterconnectOutageNotification {
   

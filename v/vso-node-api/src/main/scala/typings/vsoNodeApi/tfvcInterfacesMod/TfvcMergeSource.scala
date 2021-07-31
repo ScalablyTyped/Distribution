@@ -2,31 +2,29 @@ package typings.vsoNodeApi.tfvcInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TfvcMergeSource extends StObject {
   
   /**
     * Indicates if this a rename source. If false, it is a merge source.
     */
-  var isRename: Boolean = js.native
+  var isRename: Boolean
   
   /**
     * The server item of the merge source
     */
-  var serverItem: String = js.native
+  var serverItem: String
   
   /**
     * Start of the version range
     */
-  var versionFrom: Double = js.native
+  var versionFrom: Double
   
   /**
     * End of the version range
     */
-  var versionTo: Double = js.native
+  var versionTo: Double
 }
 object TfvcMergeSource {
   

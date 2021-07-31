@@ -2,21 +2,19 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleOption extends StObject {
   
   /**
     * 
     */
-  var Keyword: typings.awsSdk.networkfirewallMod.Keyword = js.native
+  var Keyword: typings.awsSdk.networkfirewallMod.Keyword
   
   /**
     * 
     */
-  var Settings: js.UndefOr[typings.awsSdk.networkfirewallMod.Settings] = js.native
+  var Settings: js.UndefOr[typings.awsSdk.networkfirewallMod.Settings] = js.undefined
 }
 object RuleOption {
   

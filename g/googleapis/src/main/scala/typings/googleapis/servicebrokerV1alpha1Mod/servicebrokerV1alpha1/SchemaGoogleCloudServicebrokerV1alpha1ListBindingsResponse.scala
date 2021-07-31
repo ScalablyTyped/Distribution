@@ -2,26 +2,24 @@ package typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for the `ListBindings()` method.
   */
-@js.native
 trait SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponse extends StObject {
   
   /**
     * The list of the bindings in the instance.
     */
-  var bindings: js.UndefOr[js.Array[SchemaGoogleCloudServicebrokerV1alpha1Binding]] = js.native
+  var bindings: js.UndefOr[js.Array[SchemaGoogleCloudServicebrokerV1alpha1Binding]] = js.undefined
   
   /**
     * Used to communicate description of the response. Usually for non-standard
     * error codes.
     * https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#service-broker-errors
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * This token allows you to get the next page of results for list requests.
@@ -30,7 +28,7 @@ trait SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponse extends StObjec
     * next list request. Subsequent list requests will have their own
     * `nextPageToken` to continue paging through the results
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponse {
   

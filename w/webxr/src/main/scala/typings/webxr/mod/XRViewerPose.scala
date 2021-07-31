@@ -2,13 +2,13 @@ package typings.webxr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XRViewerPose extends XRPose {
+trait XRViewerPose
+  extends StObject
+     with XRPose {
   
-  val views: js.Array[XRView] = js.native
+  val views: js.Array[XRView]
 }
 object XRViewerPose {
   

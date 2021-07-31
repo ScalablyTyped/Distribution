@@ -2,16 +2,14 @@ package typings.awsSdk.cognitosyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRecordsResponse extends StObject {
   
   /**
     * A list of records that have been updated.
     */
-  var Records: js.UndefOr[RecordList] = js.native
+  var Records: js.UndefOr[RecordList] = js.undefined
 }
 object UpdateRecordsResponse {
   

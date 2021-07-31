@@ -2,7 +2,6 @@ package typings.tuyaPanelKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tuya-panel-kit", "Dialog")
@@ -11,49 +10,40 @@ class Dialog () extends StObject
 /* static members */
 object Dialog {
   
-  @JSImport("tuya-panel-kit", "Dialog.alert")
+  @JSImport("tuya-panel-kit", "Dialog")
   @js.native
-  def alert(option: DialogAlertProps): Unit = js.native
-  @JSImport("tuya-panel-kit", "Dialog.alert")
-  @js.native
-  def alert(option: DialogAlertProps, option2: DialogElse): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tuya-panel-kit", "Dialog.checkbox")
-  @js.native
-  def checkbox(option: DialogCheckboxProps): Unit = js.native
-  @JSImport("tuya-panel-kit", "Dialog.checkbox")
-  @js.native
-  def checkbox(option: DialogCheckboxProps, option2: DialogElse): Unit = js.native
+  @scala.inline
+  def alert(option: DialogAlertProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def alert(option: DialogAlertProps, option2: DialogElse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Dialog.close")
-  @js.native
-  def close(): Unit = js.native
+  @scala.inline
+  def checkbox(option: DialogCheckboxProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkbox")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def checkbox(option: DialogCheckboxProps, option2: DialogElse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkbox")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Dialog.confirm")
-  @js.native
-  def confirm(option: DialogConfirmProps): Unit = js.native
-  @JSImport("tuya-panel-kit", "Dialog.confirm")
-  @js.native
-  def confirm(option: DialogConfirmProps, option2: DialogElse): Unit = js.native
+  @scala.inline
+  def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Dialog.custom")
-  @js.native
-  def custom(option: DialogCustomProps): Unit = js.native
-  @JSImport("tuya-panel-kit", "Dialog.custom")
-  @js.native
-  def custom(option: DialogCustomProps, option2: DialogElse): Unit = js.native
+  @scala.inline
+  def confirm(option: DialogConfirmProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def confirm(option: DialogConfirmProps, option2: DialogElse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Dialog.list")
-  @js.native
-  def list(option: DialogListProps): Unit = js.native
-  @JSImport("tuya-panel-kit", "Dialog.list")
-  @js.native
-  def list(option: DialogListProps, option2: DialogElse): Unit = js.native
+  @scala.inline
+  def custom(option: DialogCustomProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("custom")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def custom(option: DialogCustomProps, option2: DialogElse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("custom")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Dialog.prompt")
-  @js.native
-  def prompt(option: DialogPromptProps): Unit = js.native
-  @JSImport("tuya-panel-kit", "Dialog.prompt")
-  @js.native
-  def prompt(option: DialogPromptProps, option2: DialogElse): Unit = js.native
+  @scala.inline
+  def list(option: DialogListProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def list(option: DialogListProps, option2: DialogElse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def prompt(option: DialogPromptProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def prompt(option: DialogPromptProps, option2: DialogElse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

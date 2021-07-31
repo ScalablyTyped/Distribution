@@ -4,24 +4,24 @@ import typings.awsSdkClientSqsNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetQueueUrlOutputMod {
   
-  @js.native
-  trait GetQueueUrlOutput extends OutputTypesUnion {
+  trait GetQueueUrlOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The URL of the queue.</p>
       */
-    var QueueUrl: js.UndefOr[String] = js.native
+    var QueueUrl: js.UndefOr[String] = js.undefined
   }
   object GetQueueUrlOutput {
     

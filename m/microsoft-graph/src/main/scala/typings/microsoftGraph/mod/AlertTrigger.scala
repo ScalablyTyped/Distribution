@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlertTrigger extends StObject {
   
   // Name of the property serving as a detection trigger.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Type of the property in the key:value pair for interpretation. For example, String, Boolean, etc.
-  var `type`: js.UndefOr[NullableOption[String]] = js.native
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Value of the property serving as a detection trigger.
-  var value: js.UndefOr[NullableOption[String]] = js.native
+  var value: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AlertTrigger {
   

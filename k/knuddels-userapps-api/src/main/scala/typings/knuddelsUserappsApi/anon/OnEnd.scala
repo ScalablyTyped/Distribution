@@ -2,21 +2,19 @@ package typings.knuddelsUserappsApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnEnd extends StObject {
   
   var onEnd: js.UndefOr[
     js.Function2[/* accessibleUserCount */ Double, /* key */ js.UndefOr[String], Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onStart: js.UndefOr[
     js.Function2[/* accessibleUserCount */ Double, /* key */ js.UndefOr[String], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var online: js.UndefOr[Boolean] = js.native
+  var online: js.UndefOr[Boolean] = js.undefined
 }
 object OnEnd {
   

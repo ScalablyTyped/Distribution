@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DriveActivity extends StObject {
   
   /** Details on all actions in this activity. */
-  var actions: js.UndefOr[js.Array[Action]] = js.native
+  var actions: js.UndefOr[js.Array[Action]] = js.undefined
   
   /** All actor(s) responsible for the activity. */
-  var actors: js.UndefOr[js.Array[Actor]] = js.native
+  var actors: js.UndefOr[js.Array[Actor]] = js.undefined
   
   /**
     * Key information about the primary action for this activity. This is either representative, or the most important, of all actions in the activity, according to the
     * ConsolidationStrategy in the request.
     */
-  var primaryActionDetail: js.UndefOr[ActionDetail] = js.native
+  var primaryActionDetail: js.UndefOr[ActionDetail] = js.undefined
   
   /** All Google Drive objects this activity is about (e.g. file, folder, drive). This represents the state of the target immediately after the actions occurred. */
-  var targets: js.UndefOr[js.Array[Target]] = js.native
+  var targets: js.UndefOr[js.Array[Target]] = js.undefined
   
   /** The activity occurred over this time range. */
-  var timeRange: js.UndefOr[TimeRange] = js.native
+  var timeRange: js.UndefOr[TimeRange] = js.undefined
   
   /** The activity occurred at this specific time. */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
 }
 object DriveActivity {
   

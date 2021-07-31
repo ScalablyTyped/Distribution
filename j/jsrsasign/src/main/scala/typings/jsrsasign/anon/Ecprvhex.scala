@@ -2,15 +2,13 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ecprvhex extends StObject {
   
-  var ecprvhex: String = js.native
+  var ecprvhex: String
   
-  var ecpubhex: String = js.native
+  var ecpubhex: String
 }
 object Ecprvhex {
   

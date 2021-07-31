@@ -2,26 +2,24 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaFunctionCompletedEventAttributes extends StObject {
   
   /**
     * The results of the Lambda task.
     */
-  var result: js.UndefOr[Data] = js.native
+  var result: js.UndefOr[Data] = js.undefined
   
   /**
     * The ID of the LambdaFunctionScheduled event that was recorded when this Lambda task was scheduled. To help diagnose issues, use this information to trace back the chain of events leading up to this event.
     */
-  var scheduledEventId: EventId = js.native
+  var scheduledEventId: EventId
   
   /**
     * The ID of the LambdaFunctionStarted event recorded when this activity task started. To help diagnose issues, use this information to trace back the chain of events leading up to this event.
     */
-  var startedEventId: EventId = js.native
+  var startedEventId: EventId
 }
 object LambdaFunctionCompletedEventAttributes {
   

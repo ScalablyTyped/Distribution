@@ -4,12 +4,15 @@ import typings.node.Buffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object hotp {
+    
+    @JSImport("notp", "hotp")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Generate a counter based One Time Password.
@@ -17,24 +20,18 @@ object mod {
       * for every user as this is the seed that is used to calculate the HMAC.
       * @param opt HOTP generate options.
       */
-    @JSImport("notp", "hotp.gen")
-    @js.native
-    def gen(key: String): String = js.native
-    @JSImport("notp", "hotp.gen")
-    @js.native
-    def gen(key: String, opt: HOTPGenOpt): String = js.native
-    @JSImport("notp", "hotp.gen")
-    @js.native
-    def gen(key: Buffer): String = js.native
-    @JSImport("notp", "hotp.gen")
-    @js.native
-    def gen(key: Buffer, opt: HOTPGenOpt): String = js.native
-    @JSImport("notp", "hotp.gen")
-    @js.native
-    def gen(key: Uint8Array): String = js.native
-    @JSImport("notp", "hotp.gen")
-    @js.native
-    def gen(key: Uint8Array, opt: HOTPGenOpt): String = js.native
+    @scala.inline
+    def gen(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def gen(key: String, opt: HOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def gen(key: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def gen(key: Buffer, opt: HOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def gen(key: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def gen(key: Uint8Array, opt: HOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Check a One Time Password based on a counter.
@@ -43,27 +40,25 @@ object mod {
       * every user as it is the seed used to calculate the HMAC.
       * @param opt HOTP verify options.
       */
-    @JSImport("notp", "hotp.verify")
-    @js.native
-    def verify(token: String, key: String): VerifyResult | Null = js.native
-    @JSImport("notp", "hotp.verify")
-    @js.native
-    def verify(token: String, key: String, opt: HOTPVerifyOpt): VerifyResult | Null = js.native
-    @JSImport("notp", "hotp.verify")
-    @js.native
-    def verify(token: String, key: Buffer): VerifyResult | Null = js.native
-    @JSImport("notp", "hotp.verify")
-    @js.native
-    def verify(token: String, key: Buffer, opt: HOTPVerifyOpt): VerifyResult | Null = js.native
-    @JSImport("notp", "hotp.verify")
-    @js.native
-    def verify(token: String, key: Uint8Array): VerifyResult | Null = js.native
-    @JSImport("notp", "hotp.verify")
-    @js.native
-    def verify(token: String, key: Uint8Array, opt: HOTPVerifyOpt): VerifyResult | Null = js.native
+    @scala.inline
+    def verify(token: String, key: String): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    @scala.inline
+    def verify(token: String, key: String, opt: HOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    @scala.inline
+    def verify(token: String, key: Buffer): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    @scala.inline
+    def verify(token: String, key: Buffer, opt: HOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    @scala.inline
+    def verify(token: String, key: Uint8Array): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    @scala.inline
+    def verify(token: String, key: Uint8Array, opt: HOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
   }
   
   object totp {
+    
+    @JSImport("notp", "totp")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Generate a time based One Time Password.
@@ -72,24 +67,18 @@ object mod {
       * @param opt TOTP Generate options.
       *
       */
-    @JSImport("notp", "totp.gen")
-    @js.native
-    def gen(key: String): String = js.native
-    @JSImport("notp", "totp.gen")
-    @js.native
-    def gen(key: String, opt: TOTPGenOpt): String = js.native
-    @JSImport("notp", "totp.gen")
-    @js.native
-    def gen(key: Buffer): String = js.native
-    @JSImport("notp", "totp.gen")
-    @js.native
-    def gen(key: Buffer, opt: TOTPGenOpt): String = js.native
-    @JSImport("notp", "totp.gen")
-    @js.native
-    def gen(key: Uint8Array): String = js.native
-    @JSImport("notp", "totp.gen")
-    @js.native
-    def gen(key: Uint8Array, opt: TOTPGenOpt): String = js.native
+    @scala.inline
+    def gen(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def gen(key: String, opt: TOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def gen(key: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def gen(key: Buffer, opt: TOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def gen(key: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def gen(key: Uint8Array, opt: TOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Check a One Time Password based on a timer.
@@ -98,34 +87,27 @@ object mod {
       * @param opt TOTP verify options.
       *
       */
-    @JSImport("notp", "totp.verify")
-    @js.native
-    def verify(token: String, key: String): VerifyResult | Null = js.native
-    @JSImport("notp", "totp.verify")
-    @js.native
-    def verify(token: String, key: String, opt: TOTPVerifyOpt): VerifyResult | Null = js.native
-    @JSImport("notp", "totp.verify")
-    @js.native
-    def verify(token: String, key: Buffer): VerifyResult | Null = js.native
-    @JSImport("notp", "totp.verify")
-    @js.native
-    def verify(token: String, key: Buffer, opt: TOTPVerifyOpt): VerifyResult | Null = js.native
-    @JSImport("notp", "totp.verify")
-    @js.native
-    def verify(token: String, key: Uint8Array): VerifyResult | Null = js.native
-    @JSImport("notp", "totp.verify")
-    @js.native
-    def verify(token: String, key: Uint8Array, opt: TOTPVerifyOpt): VerifyResult | Null = js.native
+    @scala.inline
+    def verify(token: String, key: String): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    @scala.inline
+    def verify(token: String, key: String, opt: TOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    @scala.inline
+    def verify(token: String, key: Buffer): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    @scala.inline
+    def verify(token: String, key: Buffer, opt: TOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    @scala.inline
+    def verify(token: String, key: Uint8Array): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    @scala.inline
+    def verify(token: String, key: Uint8Array, opt: TOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
   }
   
-  @js.native
   trait HOTPGenOpt extends StObject {
     
     /**
       * Counter value used in generating the token. This should be stored by the
       * application, must be user specific, and be incremented for each request.
       */
-    var counter: js.UndefOr[Double] = js.native
+    var counter: js.UndefOr[Double] = js.undefined
   }
   object HOTPGenOpt {
     
@@ -146,8 +128,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait HOTPVerifyOpt extends HOTPGenOpt {
+  trait HOTPVerifyOpt
+    extends StObject
+       with HOTPGenOpt {
     
     /**
       * The allowable margin for the counter. The function will check 'W' codes in
@@ -161,7 +144,7 @@ object mod {
       *
       * Default - 50
       */
-    var window: js.UndefOr[Double] = js.native
+    var window: js.UndefOr[Double] = js.undefined
   }
   object HOTPVerifyOpt {
     
@@ -182,13 +165,12 @@ object mod {
     }
   }
   
-  @js.native
   trait TOTPGenOpt extends StObject {
     
     /**
       * UNIX Epoch time (overwrite time in test environment, NODE_ENV=test)
       */
-    var _t: js.UndefOr[Double] = js.native
+    var _t: js.UndefOr[Double] = js.undefined
     
     /**
       * The time step of the counter. This must be the same for every request and is
@@ -196,7 +178,7 @@ object mod {
       *
       * Default - 30
       */
-    var time: js.UndefOr[Double] = js.native
+    var time: js.UndefOr[Double] = js.undefined
   }
   object TOTPGenOpt {
     
@@ -223,8 +205,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait TOTPVerifyOpt extends TOTPGenOpt {
+  trait TOTPVerifyOpt
+    extends StObject
+       with TOTPGenOpt {
     
     /**
       * The allowable margin for the counter. The function will check 'W' codes in
@@ -238,7 +221,7 @@ object mod {
       *
       * Default - 50
       */
-    var window: js.UndefOr[Double] = js.native
+    var window: js.UndefOr[Double] = js.undefined
   }
   object TOTPVerifyOpt {
     
@@ -259,13 +242,12 @@ object mod {
     }
   }
   
-  @js.native
   trait VerifyResult extends StObject {
     
     /**
       * Time step difference between the client and the server.
       */
-    var delta: Double = js.native
+    var delta: Double
   }
   object VerifyResult {
     

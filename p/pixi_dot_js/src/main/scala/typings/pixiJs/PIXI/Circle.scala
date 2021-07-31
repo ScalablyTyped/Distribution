@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait Circle extends StObject {
   
   /**
@@ -21,20 +19,20 @@ trait Circle extends StObject {
     * @param {number} y - The Y coordinate of the point to test
     * @return {boolean} Whether the x/y coordinates are within this Circle
     */
-  def contains(x: Double, y: Double): Boolean = js.native
+  def contains(x: Double, y: Double): Boolean
   
   /**
     * Returns the framing rectangle of the circle as a Rectangle object
     *
     * @return {PIXI.Rectangle} the framing rectangle
     */
-  def getBounds(): Rectangle = js.native
+  def getBounds(): Rectangle
   
   /**
     * @member {number} PIXI.Circle#radius
     * @default 0
     */
-  var radius: Double = js.native
+  var radius: Double
   
   /**
     * The type of the object, mainly used to avoid `instanceof` checks
@@ -44,19 +42,19 @@ trait Circle extends StObject {
     * @default PIXI.SHAPES.CIRC
     * @see PIXI.SHAPES
     */
-  val `type`: Double = js.native
+  val `type`: Double
   
   /**
     * @member {number} PIXI.Circle#x
     * @default 0
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * @member {number} PIXI.Circle#y
     * @default 0
     */
-  var y: Double = js.native
+  var y: Double
 }
 object Circle {
   

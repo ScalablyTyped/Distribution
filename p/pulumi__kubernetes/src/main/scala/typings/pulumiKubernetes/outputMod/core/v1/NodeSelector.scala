@@ -2,19 +2,17 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A node selector represents the union of the results of one or more label queries over a set of nodes; that is, it represents the OR of the selectors represented by the node selector terms.
   */
-@js.native
 trait NodeSelector extends StObject {
   
   /**
     * Required. A list of node selector terms. The terms are ORed.
     */
-  var nodeSelectorTerms: js.Array[NodeSelectorTerm] = js.native
+  var nodeSelectorTerms: js.Array[NodeSelectorTerm]
 }
 object NodeSelector {
   

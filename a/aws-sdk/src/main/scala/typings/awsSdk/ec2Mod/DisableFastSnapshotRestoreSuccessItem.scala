@@ -2,66 +2,64 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableFastSnapshotRestoreSuccessItem extends StObject {
   
   /**
     * The Availability Zone.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which fast snapshot restores entered the disabled state.
     */
-  var DisabledTime: js.UndefOr[MillisecondDateTime] = js.native
+  var DisabledTime: js.UndefOr[MillisecondDateTime] = js.undefined
   
   /**
     * The time at which fast snapshot restores entered the disabling state.
     */
-  var DisablingTime: js.UndefOr[MillisecondDateTime] = js.native
+  var DisablingTime: js.UndefOr[MillisecondDateTime] = js.undefined
   
   /**
     * The time at which fast snapshot restores entered the enabled state.
     */
-  var EnabledTime: js.UndefOr[MillisecondDateTime] = js.native
+  var EnabledTime: js.UndefOr[MillisecondDateTime] = js.undefined
   
   /**
     * The time at which fast snapshot restores entered the enabling state.
     */
-  var EnablingTime: js.UndefOr[MillisecondDateTime] = js.native
+  var EnablingTime: js.UndefOr[MillisecondDateTime] = js.undefined
   
   /**
     * The time at which fast snapshot restores entered the optimizing state.
     */
-  var OptimizingTime: js.UndefOr[MillisecondDateTime] = js.native
+  var OptimizingTime: js.UndefOr[MillisecondDateTime] = js.undefined
   
   /**
     * The AWS owner alias that enabled fast snapshot restores on the snapshot. This is intended for future use.
     */
-  var OwnerAlias: js.UndefOr[String] = js.native
+  var OwnerAlias: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the AWS account that enabled fast snapshot restores on the snapshot.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the snapshot.
     */
-  var SnapshotId: js.UndefOr[String] = js.native
+  var SnapshotId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of fast snapshot restores for the snapshot.
     */
-  var State: js.UndefOr[FastSnapshotRestoreStateCode] = js.native
+  var State: js.UndefOr[FastSnapshotRestoreStateCode] = js.undefined
   
   /**
     * The reason for the state transition. The possible values are as follows:    Client.UserInitiated - The state successfully transitioned to enabling or disabling.    Client.UserInitiated - Lifecycle state transition - The state successfully transitioned to optimizing, enabled, or disabled.  
     */
-  var StateTransitionReason: js.UndefOr[String] = js.native
+  var StateTransitionReason: js.UndefOr[String] = js.undefined
 }
 object DisableFastSnapshotRestoreSuccessItem {
   

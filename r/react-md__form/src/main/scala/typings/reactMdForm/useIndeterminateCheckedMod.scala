@@ -5,54 +5,50 @@ import typings.react.mod.SetStateAction
 import typings.reactMdForm.reactMdFormStrings.mixed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useIndeterminateCheckedMod {
   
-  @JSImport("@react-md/form/types/useIndeterminateChecked", "useIndeterminateChecked")
+  @JSImport("@react-md/form/types/useIndeterminateChecked", JSImport.Namespace)
   @js.native
-  def useIndeterminateChecked[T /* <: String */](values: js.Array[T]): IndeterminateCheckedReturnValue[T] = js.native
-  @JSImport("@react-md/form/types/useIndeterminateChecked", "useIndeterminateChecked")
-  @js.native
-  def useIndeterminateChecked[T /* <: String */](
-    values: js.Array[T],
-    defaultCheckedValues: js.UndefOr[scala.Nothing],
-    onChange: js.Function1[/* checkedValues */ js.Array[T], Unit]
-  ): IndeterminateCheckedReturnValue[T] = js.native
-  @JSImport("@react-md/form/types/useIndeterminateChecked", "useIndeterminateChecked")
-  @js.native
-  def useIndeterminateChecked[T /* <: String */](values: js.Array[T], defaultCheckedValues: js.Array[T]): IndeterminateCheckedReturnValue[T] = js.native
-  @JSImport("@react-md/form/types/useIndeterminateChecked", "useIndeterminateChecked")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useIndeterminateChecked[T /* <: String */](values: js.Array[T]): IndeterminateCheckedReturnValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useIndeterminateChecked")(values.asInstanceOf[js.Any]).asInstanceOf[IndeterminateCheckedReturnValue[T]]
+  @scala.inline
+  def useIndeterminateChecked[T /* <: String */](values: js.Array[T], defaultCheckedValues: js.Array[T]): IndeterminateCheckedReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useIndeterminateChecked")(values.asInstanceOf[js.Any], defaultCheckedValues.asInstanceOf[js.Any])).asInstanceOf[IndeterminateCheckedReturnValue[T]]
+  @scala.inline
   def useIndeterminateChecked[T /* <: String */](
     values: js.Array[T],
     defaultCheckedValues: js.Array[T],
     onChange: js.Function1[/* checkedValues */ js.Array[T], Unit]
-  ): IndeterminateCheckedReturnValue[T] = js.native
-  @JSImport("@react-md/form/types/useIndeterminateChecked", "useIndeterminateChecked")
-  @js.native
-  def useIndeterminateChecked[T /* <: String */](values: js.Array[T], defaultCheckedValues: js.Function0[js.Array[T]]): IndeterminateCheckedReturnValue[T] = js.native
-  @JSImport("@react-md/form/types/useIndeterminateChecked", "useIndeterminateChecked")
-  @js.native
+  ): IndeterminateCheckedReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useIndeterminateChecked")(values.asInstanceOf[js.Any], defaultCheckedValues.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[IndeterminateCheckedReturnValue[T]]
+  @scala.inline
+  def useIndeterminateChecked[T /* <: String */](values: js.Array[T], defaultCheckedValues: js.Function0[js.Array[T]]): IndeterminateCheckedReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useIndeterminateChecked")(values.asInstanceOf[js.Any], defaultCheckedValues.asInstanceOf[js.Any])).asInstanceOf[IndeterminateCheckedReturnValue[T]]
+  @scala.inline
   def useIndeterminateChecked[T /* <: String */](
     values: js.Array[T],
     defaultCheckedValues: js.Function0[js.Array[T]],
     onChange: js.Function1[/* checkedValues */ js.Array[T], Unit]
-  ): IndeterminateCheckedReturnValue[T] = js.native
+  ): IndeterminateCheckedReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useIndeterminateChecked")(values.asInstanceOf[js.Any], defaultCheckedValues.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[IndeterminateCheckedReturnValue[T]]
+  @scala.inline
+  def useIndeterminateChecked[T /* <: String */](
+    values: js.Array[T],
+    defaultCheckedValues: Unit,
+    onChange: js.Function1[/* checkedValues */ js.Array[T], Unit]
+  ): IndeterminateCheckedReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useIndeterminateChecked")(values.asInstanceOf[js.Any], defaultCheckedValues.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[IndeterminateCheckedReturnValue[T]]
   
   type GetIndeterminateControlledCheckboxProps[T /* <: String */] = js.Function1[/* value */ T, ProvidedIndeterminateControlledCheckboxProps[T]]
   
-  @js.native
   trait IndeterminateCheckedReturnValue[T /* <: String */] extends StObject {
     
-    var checkedValues: js.Array[T] = js.native
+    var checkedValues: js.Array[T]
     
-    var getProps: GetIndeterminateControlledCheckboxProps[T] = js.native
+    var getProps: GetIndeterminateControlledCheckboxProps[T]
     
-    var rootProps: ProvidedIndeterminateCheckboxProps = js.native
+    var rootProps: ProvidedIndeterminateCheckboxProps
     
-    var setCheckedValues: Dispatch[SetStateAction[js.Array[T]]] = js.native
+    var setCheckedValues: Dispatch[SetStateAction[js.Array[T]]]
   }
   object IndeterminateCheckedReturnValue {
     
@@ -68,7 +64,7 @@ object useIndeterminateCheckedMod {
     }
     
     @scala.inline
-    implicit class IndeterminateCheckedReturnValueMutableBuilder[Self <: IndeterminateCheckedReturnValue[_], T /* <: String */] (val x: Self with IndeterminateCheckedReturnValue[T]) extends AnyVal {
+    implicit class IndeterminateCheckedReturnValueMutableBuilder[Self <: IndeterminateCheckedReturnValue[?], T /* <: String */] (val x: Self & IndeterminateCheckedReturnValue[T]) extends AnyVal {
       
       @scala.inline
       def setCheckedValues(value: js.Array[T]): Self = StObject.set(x, "checkedValues", value.asInstanceOf[js.Any])
@@ -87,16 +83,15 @@ object useIndeterminateCheckedMod {
     }
   }
   
-  @js.native
   trait ProvidedIndeterminateCheckboxProps extends StObject {
     
-    var `aria-checked`: js.UndefOr[mixed] = js.native
+    var `aria-checked`: js.UndefOr[mixed] = js.undefined
     
-    var checked: Boolean = js.native
+    var checked: Boolean
     
-    var indeterminate: Boolean = js.native
+    var indeterminate: Boolean
     
-    def onChange(): Unit = js.native
+    def onChange(): Unit
   }
   object ProvidedIndeterminateCheckboxProps {
     
@@ -126,14 +121,13 @@ object useIndeterminateCheckedMod {
     }
   }
   
-  @js.native
   trait ProvidedIndeterminateControlledCheckboxProps[T /* <: String */] extends StObject {
     
-    var checked: Boolean = js.native
+    var checked: Boolean
     
-    def onChange(): Unit = js.native
+    def onChange(): Unit
     
-    var value: T = js.native
+    var value: T
   }
   object ProvidedIndeterminateControlledCheckboxProps {
     
@@ -144,7 +138,7 @@ object useIndeterminateCheckedMod {
     }
     
     @scala.inline
-    implicit class ProvidedIndeterminateControlledCheckboxPropsMutableBuilder[Self <: ProvidedIndeterminateControlledCheckboxProps[_], T /* <: String */] (val x: Self with ProvidedIndeterminateControlledCheckboxProps[T]) extends AnyVal {
+    implicit class ProvidedIndeterminateControlledCheckboxPropsMutableBuilder[Self <: ProvidedIndeterminateControlledCheckboxProps[?], T /* <: String */] (val x: Self & ProvidedIndeterminateControlledCheckboxProps[T]) extends AnyVal {
       
       @scala.inline
       def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])

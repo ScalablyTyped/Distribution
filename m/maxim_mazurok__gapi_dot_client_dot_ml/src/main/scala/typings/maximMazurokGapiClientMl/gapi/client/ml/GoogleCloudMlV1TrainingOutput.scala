@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1TrainingOutput extends StObject {
   
   /** Details related to built-in algorithms jobs. Only set for built-in algorithms jobs. */
-  var builtInAlgorithmOutput: js.UndefOr[GoogleCloudMlV1BuiltInAlgorithmOutput] = js.native
+  var builtInAlgorithmOutput: js.UndefOr[GoogleCloudMlV1BuiltInAlgorithmOutput] = js.undefined
   
   /** The number of hyperparameter tuning trials that completed successfully. Only set for hyperparameter tuning jobs. */
-  var completedTrialCount: js.UndefOr[String] = js.native
+  var completedTrialCount: js.UndefOr[String] = js.undefined
   
   /** The amount of ML units consumed by the job. */
-  var consumedMLUnits: js.UndefOr[Double] = js.native
+  var consumedMLUnits: js.UndefOr[Double] = js.undefined
   
   /**
     * The TensorFlow summary tag name used for optimizing hyperparameter tuning trials. See
     * [`HyperparameterSpec.hyperparameterMetricTag`](#HyperparameterSpec.FIELDS.hyperparameter_metric_tag) for more information. Only set for hyperparameter tuning jobs.
     */
-  var hyperparameterMetricTag: js.UndefOr[String] = js.native
+  var hyperparameterMetricTag: js.UndefOr[String] = js.undefined
   
   /** Whether this job is a built-in Algorithm job. */
-  var isBuiltInAlgorithmJob: js.UndefOr[Boolean] = js.native
+  var isBuiltInAlgorithmJob: js.UndefOr[Boolean] = js.undefined
   
   /** Whether this job is a hyperparameter tuning job. */
-  var isHyperparameterTuningJob: js.UndefOr[Boolean] = js.native
+  var isHyperparameterTuningJob: js.UndefOr[Boolean] = js.undefined
   
   /** Results for individual Hyperparameter trials. Only set for hyperparameter tuning jobs. */
-  var trials: js.UndefOr[js.Array[GoogleCloudMlV1HyperparameterOutput]] = js.native
+  var trials: js.UndefOr[js.Array[GoogleCloudMlV1HyperparameterOutput]] = js.undefined
 }
 object GoogleCloudMlV1TrainingOutput {
   

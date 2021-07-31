@@ -4,43 +4,41 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angular.mod.IFormController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * see http://docs.angular-formly.com/docs/custom-templates#templates-scope
   */
-@js.native
 trait ITemplateScope extends StObject {
   
   //Shortcut to options.formControl
-  var fc: IFormController | js.Array[IFormController] = js.native
+  var fc: IFormController | js.Array[IFormController]
   
   //all the fields for the form
-  var fields: IFieldArray = js.native
+  var fields: IFieldArray
   
   //the form controller the field is in
-  var form: js.Any = js.native
+  var form: js.Any
   
   //The object passed as options.formState to the formly-form directive. Use this to share state between fields.
-  var formState: js.Object = js.native
+  var formState: js.Object
   
   //The id of the field. You shouldn't have to use this.
-  var id: String = js.native
+  var id: String
   
   //The index of the field the form is on (in ng-repeat)
-  var index: Double = js.native
+  var index: Double
   
   //the model of the form (or the model specified by the field if it was specified).
-  var model: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var model: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var options: ITemplateScopeOptions = js.native
+  var options: ITemplateScopeOptions
   
   //Shortcut to options.validation.errorExistsAndShouldBeVisible
-  var showError: Boolean = js.native
+  var showError: Boolean
   
   //Shortcut to options.templateOptions
-  var to: ITemplateOptions = js.native
+  var to: ITemplateOptions
 }
 object ITemplateScope {
   

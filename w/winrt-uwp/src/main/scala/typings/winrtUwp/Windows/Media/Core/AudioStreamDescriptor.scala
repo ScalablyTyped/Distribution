@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Media.Core
 import typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines an audio media stream. */
-@js.native
 trait AudioStreamDescriptor extends StObject {
   
   /** The encoding properties of the stream. */
-  var encodingProperties: AudioEncodingProperties = js.native
+  var encodingProperties: AudioEncodingProperties
   
   /** Specifies whether the stream is currently in use by the MediaStreamSource . */
-  var isSelected: Boolean = js.native
+  var isSelected: Boolean
   
   /** Gets or sets the RFC-1766 language code for the stream. */
-  var language: String = js.native
+  var language: String
   
   /** Gets or sets the name of the stream. */
-  var name: String = js.native
+  var name: String
 }
 object AudioStreamDescriptor {
   

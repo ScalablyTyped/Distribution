@@ -2,43 +2,41 @@ package typings.instagramPrivateApi.postsInsightsFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostsInsightsFeedResponseNode extends StObject {
   
-  var __typename: String = js.native
+  var __typename: String
   
-  var comment_count: js.UndefOr[Double] = js.native
+  var comment_count: js.UndefOr[Double] = js.undefined
   
-  var creation_time: js.UndefOr[Double] = js.native
+  var creation_time: js.UndefOr[Double] = js.undefined
   
-  var engagement: js.UndefOr[Double] = js.native
+  var engagement: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[PostsInsightsFeedResponseImage] = js.native
+  var image: js.UndefOr[PostsInsightsFeedResponseImage] = js.undefined
   
-  var inline_insights_node: js.UndefOr[PostsInsightsFeedResponseInlineInsightsNode] = js.native
+  var inline_insights_node: js.UndefOr[PostsInsightsFeedResponseInlineInsightsNode] = js.undefined
   
-  var instagram_media_id: js.UndefOr[String] = js.native
+  var instagram_media_id: js.UndefOr[String] = js.undefined
   
-  var instagram_media_type: js.UndefOr[String] = js.native
+  var instagram_media_type: js.UndefOr[String] = js.undefined
   
-  var like_count: js.UndefOr[Double] = js.native
+  var like_count: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var save_count: js.UndefOr[Double] = js.native
+  var save_count: js.UndefOr[Double] = js.undefined
   
-  var shopping_outbound_click_count: js.UndefOr[Double] = js.native
+  var shopping_outbound_click_count: js.UndefOr[Double] = js.undefined
   
-  var shopping_product_click_count: js.UndefOr[Double] = js.native
+  var shopping_product_click_count: js.UndefOr[Double] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
-  var video_view_count: js.UndefOr[Null] = js.native
+  var video_view_count: js.UndefOr[Null] = js.undefined
 }
 object PostsInsightsFeedResponseNode {
   

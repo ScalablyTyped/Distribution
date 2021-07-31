@@ -3,36 +3,34 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableCell extends StObject {
   
   /** The content of the cell. */
-  var content: js.UndefOr[js.Array[StructuralElement]] = js.native
+  var content: js.UndefOr[js.Array[StructuralElement]] = js.undefined
   
   /** The zero-based end index of this cell, exclusive, in UTF-16 code units. */
-  var endIndex: js.UndefOr[Double] = js.native
+  var endIndex: js.UndefOr[Double] = js.undefined
   
   /** The zero-based start index of this cell, in UTF-16 code units. */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
   /** The suggested deletion IDs. If empty, then there are no suggested deletions of this content. */
-  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The suggested insertion IDs. A TableCell may have multiple insertion IDs if it is a nested suggested change. If empty, then this is not a suggested insertion. */
-  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The suggested changes to the table cell style, keyed by suggestion ID. */
   var suggestedTableCellStyleChanges: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedTableCellStyle}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.TableCell with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.TableCell & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The style of the cell. */
-  var tableCellStyle: js.UndefOr[TableCellStyle] = js.native
+  var tableCellStyle: js.UndefOr[TableCellStyle] = js.undefined
 }
 object TableCell {
   
@@ -88,7 +86,7 @@ object TableCell {
     def setSuggestedTableCellStyleChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedTableCellStyle}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.TableCell with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.TableCell & TopLevel[js.Any]
     ): Self = StObject.set(x, "suggestedTableCellStyleChanges", value.asInstanceOf[js.Any])
     
     @scala.inline

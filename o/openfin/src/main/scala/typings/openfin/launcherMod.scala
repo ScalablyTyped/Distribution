@@ -4,40 +4,65 @@ import typings.node.childProcessMod.ChildProcess
 import typings.openfin.wireMod.ConfigWithRuntime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object launcherMod {
   
   @JSImport("openfin/_v2/launcher/launcher", JSImport.Default)
   @js.native
-  class default () extends Launcher
+  class default ()
+    extends StObject
+       with Launcher {
+    
+    /* CompleteClass */
+    var Installer_Work_Dir: String = js.native
+    
+    /* CompleteClass */
+    var OpenFin_Installer: String = js.native
+    
+    /* CompleteClass */
+    var Security_Realm_Config_Key: String = js.native
+    
+    /* CompleteClass */
+    override def launch(config: ConfigWithRuntime, manifestLocation: String, namedPipeName: String): js.Promise[ChildProcess] = js.native
+    
+    /* CompleteClass */
+    var macLaunch: js.Any = js.native
+    
+    /* CompleteClass */
+    var os: js.Any = js.native
+    
+    /* CompleteClass */
+    var winLaunch: js.Any = js.native
+  }
   /* static members */
   object default {
     
-    @JSImport("openfin/_v2/launcher/launcher", "default.IS_SUPPORTED")
+    @JSImport("openfin/_v2/launcher/launcher", JSImport.Default)
     @js.native
-    def IS_SUPPORTED(): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def IS_SUPPORTED(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IS_SUPPORTED")().asInstanceOf[Boolean]
   }
   
-  @js.native
   trait Launcher extends StObject {
     
-    var Installer_Work_Dir: String = js.native
+    var Installer_Work_Dir: String
     
-    var OpenFin_Installer: String = js.native
+    var OpenFin_Installer: String
     
-    var Security_Realm_Config_Key: String = js.native
+    var Security_Realm_Config_Key: String
     
-    def launch(config: ConfigWithRuntime, manifestLocation: String, namedPipeName: String): js.Promise[ChildProcess] = js.native
+    def launch(config: ConfigWithRuntime, manifestLocation: String, namedPipeName: String): js.Promise[ChildProcess]
     
-    var macLaunch: js.Any = js.native
+    var macLaunch: js.Any
     
-    var nixConfig: js.UndefOr[js.Any] = js.native
+    var nixConfig: js.UndefOr[js.Any] = js.undefined
     
-    var os: js.Any = js.native
+    var os: js.Any
     
-    var winLaunch: js.Any = js.native
+    var winLaunch: js.Any
   }
   object Launcher {
     

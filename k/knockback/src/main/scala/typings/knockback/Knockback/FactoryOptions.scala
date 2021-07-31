@@ -2,13 +2,11 @@ package typings.knockback.Knockback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FactoryOptions extends StObject {
   
-  var factories: js.Any = js.native
+  var factories: js.Any
 }
 object FactoryOptions {
   

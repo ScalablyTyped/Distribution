@@ -2,21 +2,19 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationWithSubscribers extends StObject {
   
   /**
     * The notification that is associated with a budget.
     */
-  var Notification: typings.awsSdk.budgetsMod.Notification = js.native
+  var Notification: typings.awsSdk.budgetsMod.Notification
   
   /**
     * A list of subscribers who are subscribed to this notification.
     */
-  var Subscribers: typings.awsSdk.budgetsMod.Subscribers = js.native
+  var Subscribers: typings.awsSdk.budgetsMod.Subscribers
 }
 object NotificationWithSubscribers {
   

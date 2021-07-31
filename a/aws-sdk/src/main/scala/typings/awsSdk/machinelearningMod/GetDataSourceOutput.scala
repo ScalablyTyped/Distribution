@@ -2,102 +2,100 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataSourceOutput extends StObject {
   
   /**
     *  The parameter is true if statistics need to be generated from the observation data. 
     */
-  var ComputeStatistics: js.UndefOr[typings.awsSdk.machinelearningMod.ComputeStatistics] = js.native
+  var ComputeStatistics: js.UndefOr[typings.awsSdk.machinelearningMod.ComputeStatistics] = js.undefined
   
   /**
     * The approximate CPU time in milliseconds that Amazon Machine Learning spent processing the DataSource, normalized and scaled on computation resources. ComputeTime is only available if the DataSource is in the COMPLETED state and the ComputeStatistics is set to true.
     */
-  var ComputeTime: js.UndefOr[LongType] = js.native
+  var ComputeTime: js.UndefOr[LongType] = js.undefined
   
   /**
     * The time that the DataSource was created. The time is expressed in epoch time.
     */
-  var CreatedAt: js.UndefOr[EpochTime] = js.native
+  var CreatedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * The AWS user account from which the DataSource was created. The account type can be either an AWS root account or an AWS Identity and Access Management (IAM) user account.
     */
-  var CreatedByIamUser: js.UndefOr[AwsUserArn] = js.native
+  var CreatedByIamUser: js.UndefOr[AwsUserArn] = js.undefined
   
   /**
     * The location of the data file or directory in Amazon Simple Storage Service (Amazon S3).
     */
-  var DataLocationS3: js.UndefOr[S3Url] = js.native
+  var DataLocationS3: js.UndefOr[S3Url] = js.undefined
   
   /**
     * A JSON string that represents the splitting and rearrangement requirement used when this DataSource was created.
     */
-  var DataRearrangement: js.UndefOr[typings.awsSdk.machinelearningMod.DataRearrangement] = js.native
+  var DataRearrangement: js.UndefOr[typings.awsSdk.machinelearningMod.DataRearrangement] = js.undefined
   
   /**
     * The total size of observations in the data files.
     */
-  var DataSizeInBytes: js.UndefOr[LongType] = js.native
+  var DataSizeInBytes: js.UndefOr[LongType] = js.undefined
   
   /**
     * The ID assigned to the DataSource at creation. This value should be identical to the value of the DataSourceId in the request.
     */
-  var DataSourceId: js.UndefOr[EntityId] = js.native
+  var DataSourceId: js.UndefOr[EntityId] = js.undefined
   
   /**
     * The schema used by all of the data files of this DataSource. Note This parameter is provided as part of the verbose format.
     */
-  var DataSourceSchema: js.UndefOr[DataSchema] = js.native
+  var DataSourceSchema: js.UndefOr[DataSchema] = js.undefined
   
   /**
     * The epoch time when Amazon Machine Learning marked the DataSource as COMPLETED or FAILED. FinishedAt is only available when the DataSource is in the COMPLETED or FAILED state.
     */
-  var FinishedAt: js.UndefOr[EpochTime] = js.native
+  var FinishedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * The time of the most recent edit to the DataSource. The time is expressed in epoch time.
     */
-  var LastUpdatedAt: js.UndefOr[EpochTime] = js.native
+  var LastUpdatedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * A link to the file containing logs of CreateDataSourceFrom* operations.
     */
-  var LogUri: js.UndefOr[PresignedS3Url] = js.native
+  var LogUri: js.UndefOr[PresignedS3Url] = js.undefined
   
   /**
     * The user-supplied description of the most recent details about creating the DataSource.
     */
-  var Message: js.UndefOr[typings.awsSdk.machinelearningMod.Message] = js.native
+  var Message: js.UndefOr[typings.awsSdk.machinelearningMod.Message] = js.undefined
   
   /**
     * A user-supplied name or description of the DataSource.
     */
-  var Name: js.UndefOr[EntityName] = js.native
+  var Name: js.UndefOr[EntityName] = js.undefined
   
   /**
     * The number of data files referenced by the DataSource.
     */
-  var NumberOfFiles: js.UndefOr[LongType] = js.native
+  var NumberOfFiles: js.UndefOr[LongType] = js.undefined
   
-  var RDSMetadata: js.UndefOr[typings.awsSdk.machinelearningMod.RDSMetadata] = js.native
+  var RDSMetadata: js.UndefOr[typings.awsSdk.machinelearningMod.RDSMetadata] = js.undefined
   
-  var RedshiftMetadata: js.UndefOr[typings.awsSdk.machinelearningMod.RedshiftMetadata] = js.native
+  var RedshiftMetadata: js.UndefOr[typings.awsSdk.machinelearningMod.RedshiftMetadata] = js.undefined
   
-  var RoleARN: js.UndefOr[typings.awsSdk.machinelearningMod.RoleARN] = js.native
+  var RoleARN: js.UndefOr[typings.awsSdk.machinelearningMod.RoleARN] = js.undefined
   
   /**
     * The epoch time when Amazon Machine Learning marked the DataSource as INPROGRESS. StartedAt isn't available if the DataSource is in the PENDING state.
     */
-  var StartedAt: js.UndefOr[EpochTime] = js.native
+  var StartedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * The current status of the DataSource. This element can have one of the following values:   PENDING - Amazon ML submitted a request to create a DataSource.  INPROGRESS - The creation process is underway.  FAILED - The request to create a DataSource did not run to completion. It is not usable.  COMPLETED - The creation process completed successfully.  DELETED - The DataSource is marked as deleted. It is not usable. 
     */
-  var Status: js.UndefOr[EntityStatus] = js.native
+  var Status: js.UndefOr[EntityStatus] = js.undefined
 }
 object GetDataSourceOutput {
   

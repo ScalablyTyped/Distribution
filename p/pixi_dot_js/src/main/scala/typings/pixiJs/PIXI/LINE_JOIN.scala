@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,11 +25,17 @@ sealed trait LINE_JOIN extends StObject
 object LINE_JOIN extends StObject {
   
   @js.native
-  sealed trait BEVEL extends LINE_JOIN
+  sealed trait BEVEL
+    extends StObject
+       with LINE_JOIN
   
   @js.native
-  sealed trait MITER extends LINE_JOIN
+  sealed trait MITER
+    extends StObject
+       with LINE_JOIN
   
   @js.native
-  sealed trait ROUND extends LINE_JOIN
+  sealed trait ROUND
+    extends StObject
+       with LINE_JOIN
 }

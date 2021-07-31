@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.browserfs.fSMod.FSModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeFsMod {
@@ -25,7 +24,8 @@ object nodeFsMod {
     @JSImport("browserfs/dist/node/core/node_fs", "default.FS")
     @js.native
     class FS ()
-      extends typings.browserfs.fSMod.FS
+      extends StObject
+         with typings.browserfs.fSMod.FS
     
     type _To = FSModule
     

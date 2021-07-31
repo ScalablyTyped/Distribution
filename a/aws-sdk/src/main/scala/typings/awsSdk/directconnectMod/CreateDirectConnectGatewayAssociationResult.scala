@@ -2,16 +2,14 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDirectConnectGatewayAssociationResult extends StObject {
   
   /**
     * The association to be created.
     */
-  var directConnectGatewayAssociation: js.UndefOr[DirectConnectGatewayAssociation] = js.native
+  var directConnectGatewayAssociation: js.UndefOr[DirectConnectGatewayAssociation] = js.undefined
 }
 object CreateDirectConnectGatewayAssociationResult {
   

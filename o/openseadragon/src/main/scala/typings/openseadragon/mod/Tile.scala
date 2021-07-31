@@ -5,7 +5,6 @@ import typings.std.Element
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "Tile")
@@ -43,18 +42,18 @@ class Tile protected () extends StObject {
   def drawCanvas(
     context: CanvasRenderingContext2D,
     drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
-    scale: js.UndefOr[scala.Nothing],
-    translate: Point
-  ): Unit = js.native
-  def drawCanvas(
-    context: CanvasRenderingContext2D,
-    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
     scale: Double
   ): Unit = js.native
   def drawCanvas(
     context: CanvasRenderingContext2D,
     drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
     scale: Double,
+    translate: Point
+  ): Unit = js.native
+  def drawCanvas(
+    context: CanvasRenderingContext2D,
+    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
+    scale: Unit,
     translate: Point
   ): Unit = js.native
   

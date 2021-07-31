@@ -2,14 +2,12 @@ package typings.semanticUiSite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-site.SemanticUI.Site.NamespaceStubSettings._Impl, 'cache'> */
-@js.native
 trait PickImplcache extends StObject {
   
-  var cache: js.Any = js.native
+  var cache: js.Any
 }
 object PickImplcache {
   

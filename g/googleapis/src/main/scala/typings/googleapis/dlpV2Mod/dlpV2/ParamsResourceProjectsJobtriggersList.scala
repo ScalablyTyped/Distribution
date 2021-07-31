@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsJobtriggersList extends StandardParameters {
+trait ParamsResourceProjectsJobtriggersList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Optional. Allows filtering.  Supported syntax:  * Filter expressions are
@@ -34,7 +34,7 @@ trait ParamsResourceProjectsJobtriggersList extends StandardParameters {
     * state = HEALTHY) * last_run_time > \"2017-12-12T00:00:00+00:00\"  The
     * length of this field should be no more than 500 characters.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Optional comma separated list of triggeredJob fields to order by,
@@ -48,23 +48,23 @@ trait ParamsResourceProjectsJobtriggersList extends StandardParameters {
     * `display_name`: corresponds to JobTrigger's display name. - `status`:
     * corresponds to JobTrigger's status.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Optional size of the page, can be limited by a server.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional page token to continue retrieval. Comes from previous call to
     * ListJobTriggers. `order_by` field must not change for subsequent calls.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The parent resource name, for example `projects/my-project-id`.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsJobtriggersList {
   

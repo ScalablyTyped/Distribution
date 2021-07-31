@@ -2,44 +2,42 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents add-in level functionality for operating or configuring various aspects of the add-in.
   */
-@js.native
 trait Addin extends StObject {
   
   /**
     * Gets the current startup behavior for the add-in.
     */
-  def getStartupBehavior(): js.Promise[StartupBehavior] = js.native
+  def getStartupBehavior(): js.Promise[StartupBehavior]
   
   /**
     * Hides the task pane.
     * @returns A promise that is resolved when the UI is hidden.
     */
-  def hide(): js.Promise[Unit] = js.native
+  def hide(): js.Promise[Unit]
   
   /**
     * Adds a listener for the `onVisbilityModeChanged` event.
     * @param listener - The listener function that is called when the event is emitted. This function takes in a message for the receiving component.
     * @returns A promise that resolves to a function when the listener is added. The `RemoveEventListener` type is defined with `type RemoveEventListener = () => Promise<void>`. Calling it removes the listener.
     */
-  def onVisibilityModeChanged(listener: js.Function1[/* message */ VisibilityModeChangedMessage, Unit]): js.Promise[RemoveEventListener] = js.native
+  def onVisibilityModeChanged(listener: js.Function1[/* message */ VisibilityModeChangedMessage, Unit]): js.Promise[RemoveEventListener]
   
   /**
     * Sets the startup behavior for the add-in for when the document is opened next time.
     * @param behavior - Specifies startup behavior of the add-in.
     */
-  def setStartupBehavior(behavior: StartupBehavior): js.Promise[Unit] = js.native
+  def setStartupBehavior(behavior: StartupBehavior): js.Promise[Unit]
   
   /**
     * Shows the task pane associated with the add-in.
     * @returns A promise that is resolved when the UI is shown.
     */
-  def showAsTaskpane(): js.Promise[Unit] = js.native
+  def showAsTaskpane(): js.Promise[Unit]
 }
 object Addin {
   

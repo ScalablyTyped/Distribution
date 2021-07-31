@@ -2,31 +2,29 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IamActionDefinition extends StObject {
   
   /**
     *  A list of groups to be attached. There must be at least one group. 
     */
-  var Groups: js.UndefOr[typings.awsSdk.budgetsMod.Groups] = js.native
+  var Groups: js.UndefOr[typings.awsSdk.budgetsMod.Groups] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) of the policy to be attached. 
     */
-  var PolicyArn: typings.awsSdk.budgetsMod.PolicyArn = js.native
+  var PolicyArn: typings.awsSdk.budgetsMod.PolicyArn
   
   /**
     *  A list of roles to be attached. There must be at least one role. 
     */
-  var Roles: js.UndefOr[typings.awsSdk.budgetsMod.Roles] = js.native
+  var Roles: js.UndefOr[typings.awsSdk.budgetsMod.Roles] = js.undefined
   
   /**
     *  A list of users to be attached. There must be at least one user. 
     */
-  var Users: js.UndefOr[typings.awsSdk.budgetsMod.Users] = js.native
+  var Users: js.UndefOr[typings.awsSdk.budgetsMod.Users] = js.undefined
 }
 object IamActionDefinition {
   

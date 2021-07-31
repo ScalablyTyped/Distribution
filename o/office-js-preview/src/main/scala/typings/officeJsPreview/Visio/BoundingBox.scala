@@ -2,7 +2,6 @@ package typings.officeJsPreview.Visio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set:  1.1]
   */
-@js.native
 trait BoundingBox extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait BoundingBox extends StObject {
     *
     * [Api set:  1.1]
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     *
@@ -28,7 +26,7 @@ trait BoundingBox extends StObject {
     *
     * [Api set:  1.1]
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     *
@@ -36,7 +34,7 @@ trait BoundingBox extends StObject {
     *
     * [Api set:  1.1]
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     *
@@ -44,7 +42,7 @@ trait BoundingBox extends StObject {
     *
     * [Api set:  1.1]
     */
-  var y: Double = js.native
+  var y: Double
 }
 object BoundingBox {
   

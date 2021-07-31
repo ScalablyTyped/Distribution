@@ -6,22 +6,20 @@ import typings.jestTypes.globalMod.TestCallback
 import typings.jestTypes.globalMod.TestFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Arguments extends StObject {
     
-    var arguments: js.Array[_] = js.native
+    var arguments: js.Array[js.Any]
     
-    var title: String = js.native
+    var title: String
   }
   object Arguments {
     
     @scala.inline
-    def apply(arguments: js.Array[_], title: String): Arguments = {
+    def apply(arguments: js.Array[js.Any], title: String): Arguments = {
       val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[Arguments]
     }
@@ -30,7 +28,7 @@ object anon {
     implicit class ArgumentsMutableBuilder[Self <: Arguments] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArguments(value: js.Array[_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))

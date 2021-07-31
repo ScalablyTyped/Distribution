@@ -2,15 +2,13 @@ package typings.agGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColId extends StObject {
   
-  var colId: String = js.native
+  var colId: String
   
-  var sort: String = js.native
+  var sort: String
 }
 object ColId {
   

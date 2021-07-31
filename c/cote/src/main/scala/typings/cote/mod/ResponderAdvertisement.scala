@@ -2,21 +2,21 @@ package typings.cote.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResponderAdvertisement extends Advertisement {
+trait ResponderAdvertisement
+  extends StObject
+     with Advertisement {
   
   /**
     * Request types that a Responder can listen to.
     */
-  var respondsTo: js.UndefOr[js.Array[String]] = js.native
+  var respondsTo: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Advertisement attribute that lets you target a subgroup of responders using the __subset property of a request.
     */
-  var subset: js.UndefOr[String] = js.native
+  var subset: js.UndefOr[String] = js.undefined
 }
 object ResponderAdvertisement {
   

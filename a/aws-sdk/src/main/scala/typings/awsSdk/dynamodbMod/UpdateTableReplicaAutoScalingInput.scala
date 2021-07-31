@@ -2,28 +2,26 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTableReplicaAutoScalingInput extends StObject {
   
   /**
     * Represents the auto scaling settings of the global secondary indexes of the replica to be updated.
     */
-  var GlobalSecondaryIndexUpdates: js.UndefOr[GlobalSecondaryIndexAutoScalingUpdateList] = js.native
+  var GlobalSecondaryIndexUpdates: js.UndefOr[GlobalSecondaryIndexAutoScalingUpdateList] = js.undefined
   
-  var ProvisionedWriteCapacityAutoScalingUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.native
+  var ProvisionedWriteCapacityAutoScalingUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.undefined
   
   /**
     * Represents the auto scaling settings of replicas of the table that will be modified.
     */
-  var ReplicaUpdates: js.UndefOr[ReplicaAutoScalingUpdateList] = js.native
+  var ReplicaUpdates: js.UndefOr[ReplicaAutoScalingUpdateList] = js.undefined
   
   /**
     * The name of the global table to be updated.
     */
-  var TableName: typings.awsSdk.dynamodbMod.TableName = js.native
+  var TableName: typings.awsSdk.dynamodbMod.TableName
 }
 object UpdateTableReplicaAutoScalingInput {
   

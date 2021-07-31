@@ -17,35 +17,33 @@ import typings.qlik.qlikStrings.TOTAL_EXPR
 import typings.qlik.qlikStrings.TOTAL_OFF
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OtherTotalSpecProp extends StObject {
   
-  var qApplyEvenWhenPossiblyWrongResult: Boolean = js.native
+  var qApplyEvenWhenPossiblyWrongResult: Boolean
   
-  var qForceBadValueKeeping: Boolean = js.native
+  var qForceBadValueKeeping: Boolean
   
-  var qGlobalOtherGrouping: Boolean = js.native
+  var qGlobalOtherGrouping: Boolean
   
-  var qOtherCollapseInnerDimensions: Boolean = js.native
+  var qOtherCollapseInnerDimensions: Boolean
   
-  var qOtherCounted: ValueExpr = js.native
+  var qOtherCounted: ValueExpr
   
-  var qOtherLimit: ValueExpr = js.native
+  var qOtherLimit: ValueExpr
   
-  var qOtherLimitMode: OTHER_GE_LIMIT | OTHER_LE_LIMIT | OTHER_GT_LIMIT | OTHER_LT_LIMIT = js.native
+  var qOtherLimitMode: OTHER_GE_LIMIT | OTHER_LE_LIMIT | OTHER_GT_LIMIT | OTHER_LT_LIMIT
   
-  var qOtherMode: OTHER_OFF | OTHER_COUNTED | OTHER_ABS_LIMITED | OTHER_ABS_ACC_TARGET | OTHER_REL_LIMITED | OTHER_REL_ACC_TARGET = js.native
+  var qOtherMode: OTHER_OFF | OTHER_COUNTED | OTHER_ABS_LIMITED | OTHER_ABS_ACC_TARGET | OTHER_REL_LIMITED | OTHER_REL_ACC_TARGET
   
-  var qOtherSortMode: OTHER_SORT_DEFAULT | OTHER_SORT_DESCENDING | OTHER_SORT_ASCENDING = js.native
+  var qOtherSortMode: OTHER_SORT_DEFAULT | OTHER_SORT_DESCENDING | OTHER_SORT_ASCENDING
   
-  var qReferencedExpression: String = js.native
+  var qReferencedExpression: String
   
-  var qSupressOther: Boolean = js.native
+  var qSupressOther: Boolean
   
-  var qTotalMode: TOTAL_OFF | TOTAL_EXPR = js.native
+  var qTotalMode: TOTAL_OFF | TOTAL_EXPR
 }
 object OtherTotalSpecProp {
   

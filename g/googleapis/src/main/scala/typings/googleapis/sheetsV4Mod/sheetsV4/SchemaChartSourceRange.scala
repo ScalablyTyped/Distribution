@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Source ranges for a chart.
   */
-@js.native
 trait SchemaChartSourceRange extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SchemaChartSourceRange extends StObject {
     * series2 sources: D6:D10      domain sources: A1:A5, C10:C12     series1
     * sources: B1:B5, D10:D12     series2 sources: C1:C5, E10:E12
     */
-  var sources: js.UndefOr[js.Array[SchemaGridRange]] = js.native
+  var sources: js.UndefOr[js.Array[SchemaGridRange]] = js.undefined
 }
 object SchemaChartSourceRange {
   

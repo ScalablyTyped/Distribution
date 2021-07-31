@@ -2,17 +2,15 @@ package typings.xstate.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionMap[TContext, TEvent /* <: EventObject */] extends StObject {
   
-  var actions: js.Array[Action[TContext, TEvent]] = js.native
+  var actions: js.Array[Action[TContext, TEvent]]
   
-  var onEntry: js.Array[Action[TContext, TEvent]] = js.native
+  var onEntry: js.Array[Action[TContext, TEvent]]
   
-  var onExit: js.Array[Action[TContext, TEvent]] = js.native
+  var onExit: js.Array[Action[TContext, TEvent]]
 }
 object ActionMap {
   
@@ -27,7 +25,7 @@ object ActionMap {
   }
   
   @scala.inline
-  implicit class ActionMapMutableBuilder[Self <: ActionMap[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (ActionMap[TContext, TEvent])) extends AnyVal {
+  implicit class ActionMapMutableBuilder[Self <: ActionMap[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (ActionMap[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setActions(value: js.Array[Action[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])

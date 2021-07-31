@@ -2,36 +2,34 @@ package typings.azdata.mod.nb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISessionOptions extends StObject {
   
   /**
     * The id of an existing kernel.
     */
-  var kernelId: js.UndefOr[String] = js.native
+  var kernelId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of kernel (e.g. python3).
     */
-  var kernelName: js.UndefOr[String] = js.native
+  var kernelName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the session.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The path (not including name) to the session.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * The type of the session.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ISessionOptions {
   

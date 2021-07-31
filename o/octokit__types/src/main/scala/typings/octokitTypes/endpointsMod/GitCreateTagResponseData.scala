@@ -5,27 +5,25 @@ import typings.octokitTypes.anon.Payload
 import typings.octokitTypes.anon.ShaType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitCreateTagResponseData extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var `object`: ShaType = js.native
+  var `object`: ShaType
   
-  var sha: String = js.native
+  var sha: String
   
-  var tag: String = js.native
+  var tag: String
   
-  var tagger: DateEmail = js.native
+  var tagger: DateEmail
   
-  var url: String = js.native
+  var url: String
   
-  var verification: Payload = js.native
+  var verification: Payload
 }
 object GitCreateTagResponseData {
   

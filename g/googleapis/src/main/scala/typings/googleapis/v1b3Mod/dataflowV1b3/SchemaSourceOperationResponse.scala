@@ -2,7 +2,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ReportWorkItemStatusRequest.source_operation when the work item is
   * completed.
   */
-@js.native
 trait SchemaSourceOperationResponse extends StObject {
   
   /**
     * A response to a request to get metadata about a source.
     */
-  var getMetadata: js.UndefOr[SchemaSourceGetMetadataResponse] = js.native
+  var getMetadata: js.UndefOr[SchemaSourceGetMetadataResponse] = js.undefined
   
   /**
     * A response to a request to split a source.
     */
-  var split: js.UndefOr[SchemaSourceSplitResponse] = js.native
+  var split: js.UndefOr[SchemaSourceSplitResponse] = js.undefined
 }
 object SchemaSourceOperationResponse {
   

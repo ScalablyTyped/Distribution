@@ -3,29 +3,27 @@ package typings.focusTrap
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("focus-trap", JSImport.Default)
+  @JSImport("focus-trap", JSImport.Namespace)
   @js.native
-  def default(element: String): FocusTrap = js.native
-  @JSImport("focus-trap", JSImport.Default)
-  @js.native
-  def default(element: String, userOptions: Options): FocusTrap = js.native
-  @JSImport("focus-trap", JSImport.Default)
-  @js.native
-  def default(element: HTMLElement): FocusTrap = js.native
-  @JSImport("focus-trap", JSImport.Default)
-  @js.native
-  def default(element: HTMLElement, userOptions: Options): FocusTrap = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(element: String): FocusTrap = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[FocusTrap]
+  @scala.inline
+  def default(element: String, userOptions: Options): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
+  @scala.inline
+  def default(element: HTMLElement): FocusTrap = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[FocusTrap]
+  @scala.inline
+  def default(element: HTMLElement, userOptions: Options): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
   
   /* Inlined std.Pick<focus-trap.focus-trap.Options, 'onActivate'> */
-  @js.native
   trait ActivateOptions extends StObject {
     
-    var onActivate: js.UndefOr[js.Function0[Unit]] = js.native
+    var onActivate: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ActivateOptions {
     
@@ -47,12 +45,11 @@ object mod {
   }
   
   /* Inlined parent std.Pick<focus-trap.focus-trap.Options, 'onDeactivate'> */
-  @js.native
   trait DeactivateOptions extends StObject {
     
-    var onDeactivate: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDeactivate: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var returnFocus: js.UndefOr[Boolean] = js.native
+    var returnFocus: js.UndefOr[Boolean] = js.undefined
   }
   object DeactivateOptions {
     
@@ -95,14 +92,13 @@ object mod {
     def unpause(): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Default: `false`. If `true`, a click outside the focus trap will
       * deactivate the focus trap and allow the click event to do its thing.
       */
-    var clickOutsideDeactivates: js.UndefOr[Boolean] = js.native
+    var clickOutsideDeactivates: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: `true`. If `false`, the `Escape` key will not trigger
@@ -110,7 +106,7 @@ object mod {
       * to force the user to make a decision instead of allowing an easy
       * way out.
       */
-    var escapeDeactivates: js.UndefOr[Boolean] = js.native
+    var escapeDeactivates: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, an error will be thrown if the focus trap contains no
@@ -121,30 +117,30 @@ object mod {
       * tabbable elements. *Make sure the fallback element has a negative
       * `tabindex` so it can be programmatically focused.*
       */
-    var fallbackFocus: js.UndefOr[FocusTarget] = js.native
+    var fallbackFocus: js.UndefOr[FocusTarget] = js.undefined
     
     /**
       * By default, when a focus trap is activated the first element in the
       * focus trap's tab order will receive focus. With this option you can
       * specify a different element to receive that initial focus.
       */
-    var initialFocus: js.UndefOr[FocusTarget] = js.native
+    var initialFocus: js.UndefOr[FocusTarget] = js.undefined
     
     /**
       * A function that will be called when the focus trap activates.
       */
-    var onActivate: js.UndefOr[js.Function0[Unit]] = js.native
+    var onActivate: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A function that will be called when the focus trap deactivates.
       */
-    var onDeactivate: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDeactivate: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Default: `true`. If `false`, when the trap is deactivated,
       * focus will *not* return to the element that had focus before activation.
       */
-    var returnFocusOnDeactivate: js.UndefOr[Boolean] = js.native
+    var returnFocusOnDeactivate: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

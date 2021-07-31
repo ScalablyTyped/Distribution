@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMarkerReplication extends StObject {
   
   /**
     * Indicates whether to replicate delete markers.  Indicates whether to replicate delete markers. 
     */
-  var Status: js.UndefOr[DeleteMarkerReplicationStatus] = js.native
+  var Status: js.UndefOr[DeleteMarkerReplicationStatus] = js.undefined
 }
 object DeleteMarkerReplication {
   

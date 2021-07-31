@@ -2,15 +2,13 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IModelDecorationsChangedEvent extends StObject {
   
-  val affectsMinimap: Boolean = js.native
+  val affectsMinimap: Boolean
   
-  val affectsOverviewRuler: Boolean = js.native
+  val affectsOverviewRuler: Boolean
 }
 object IModelDecorationsChangedEvent {
   

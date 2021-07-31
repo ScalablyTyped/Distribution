@@ -2,7 +2,6 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,7 +19,7 @@ trait InterstitialAd extends StObject {
     * 加载插屏广告。
     *
     * 最低基础库： `2.8.0` */
-  def load(): js.Promise[_] = js.native
+  def load(): js.Promise[js.Any] = js.native
   
   /** [InterstitialAd.offClose(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/ad/InterstitialAd.offClose.html)
     *
@@ -95,5 +94,5 @@ trait InterstitialAd extends StObject {
     * | 2003  | 触发频率限制  | 当前正在播放激励视频广告或者插屏广告，不允许再次展示插屏广告 |
     * | 2004  | 广告渲染失败  | 该项错误不是开发者的异常情况，或因小程序页面切换导致广告渲染失败 |
     * | 2005  | 广告调用异常  | 插屏广告实例不允许跨页面调用 | */
-  def show(): js.Promise[_] = js.native
+  def show(): js.Promise[js.Any] = js.native
 }

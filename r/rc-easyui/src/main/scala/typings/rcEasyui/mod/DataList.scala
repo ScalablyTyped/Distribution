@@ -4,7 +4,6 @@ import typings.rcEasyui.anon.IsMatch
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-easyui", "DataList")
@@ -57,9 +56,12 @@ object DataList {
     
     object locale {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.contextTypes.locale")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.contextTypes.locale
       @JSImport("rc-easyui", "DataList.contextTypes.locale.isRequired")
@@ -69,9 +71,12 @@ object DataList {
     
     object t {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.contextTypes.t")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.contextTypes.t
       @JSImport("rc-easyui", "DataList.contextTypes.t.isRequired")
@@ -81,6 +86,10 @@ object DataList {
   }
   
   object defaultProps {
+    
+    @JSImport("rc-easyui", "DataList.defaultProps")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("rc-easyui", "DataList.defaultProps.border")
     @js.native
@@ -189,57 +198,49 @@ object DataList {
     @js.native
     val hoverCls: String = js.native
     
+    @JSImport("rc-easyui", "DataList.defaultProps.lazy")
+    @js.native
+    val `lazy`: Boolean = js.native
+    
     @JSImport("rc-easyui", "DataList.defaultProps.loading")
     @js.native
     val loading: Boolean = js.native
     
-    @JSImport("rc-easyui", "DataList.defaultProps.onCellClick")
-    @js.native
-    def onCellClick(): Unit = js.native
+    @scala.inline
+    def onCellClick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCellClick")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataList.defaultProps.onCellDblClick")
-    @js.native
-    def onCellDblClick(): Unit = js.native
+    @scala.inline
+    def onCellDblClick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCellDblClick")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataList.defaultProps.onCellSelect")
-    @js.native
-    def onCellSelect(): Unit = js.native
+    @scala.inline
+    def onCellSelect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCellSelect")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataList.defaultProps.onCellUnselect")
-    @js.native
-    def onCellUnselect(): Unit = js.native
+    @scala.inline
+    def onCellUnselect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCellUnselect")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataList.defaultProps.onFilterChange")
-    @js.native
-    def onFilterChange(): Unit = js.native
+    @scala.inline
+    def onFilterChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFilterChange")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataList.defaultProps.onListScroll")
-    @js.native
-    def onListScroll(e: js.Any): Unit = js.native
+    @scala.inline
+    def onListScroll(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onListScroll")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataList.defaultProps.onPageChange")
-    @js.native
-    def onPageChange(): Unit = js.native
+    @scala.inline
+    def onPageChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPageChange")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataList.defaultProps.onRowClick")
-    @js.native
-    def onRowClick(e: js.Any): Unit = js.native
+    @scala.inline
+    def onRowClick(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataList.defaultProps.onRowDblClick")
-    @js.native
-    def onRowDblClick(e: js.Any): Unit = js.native
+    @scala.inline
+    def onRowDblClick(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowDblClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataList.defaultProps.onRowSelect")
-    @js.native
-    def onRowSelect(): Unit = js.native
+    @scala.inline
+    def onRowSelect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowSelect")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataList.defaultProps.onRowUnselect")
-    @js.native
-    def onRowUnselect(): Unit = js.native
+    @scala.inline
+    def onRowUnselect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRowUnselect")().asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "DataList.defaultProps.onSelectionChange")
-    @js.native
-    def onSelectionChange(): Unit = js.native
+    @scala.inline
+    def onSelectionChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSelectionChange")().asInstanceOf[Unit]
     
     @JSImport("rc-easyui", "DataList.defaultProps.pageNumber")
     @js.native
@@ -272,19 +273,18 @@ object DataList {
     @JSImport("rc-easyui", "DataList.defaultProps.virtualScroll")
     @js.native
     val virtualScroll: Boolean = js.native
-    
-    @JSImport("rc-easyui", "DataList.defaultProps.lazy")
-    @js.native
-    val `lazy`: Boolean = js.native
   }
   
   object propTypes {
     
     object border {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.border")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.border
       @JSImport("rc-easyui", "DataList.propTypes.border.isRequired")
@@ -294,9 +294,12 @@ object DataList {
     
     object data {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.data")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.data
       @JSImport("rc-easyui", "DataList.propTypes.data.isRequired")
@@ -306,9 +309,12 @@ object DataList {
     
     object filterBtnPosition {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.filterBtnPosition")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.filterBtnPosition
       @JSImport("rc-easyui", "DataList.propTypes.filterBtnPosition.isRequired")
@@ -318,9 +324,12 @@ object DataList {
     
     object filterDelay {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.filterDelay")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.filterDelay
       @JSImport("rc-easyui", "DataList.propTypes.filterDelay.isRequired")
@@ -330,9 +339,12 @@ object DataList {
     
     object filterMatchingType {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.filterMatchingType")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.filterMatchingType
       @JSImport("rc-easyui", "DataList.propTypes.filterMatchingType.isRequired")
@@ -342,9 +354,12 @@ object DataList {
     
     object filterOperators {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.filterOperators")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.filterOperators
       @JSImport("rc-easyui", "DataList.propTypes.filterOperators.isRequired")
@@ -354,9 +369,12 @@ object DataList {
     
     object filterPosition {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.filterPosition")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.filterPosition
       @JSImport("rc-easyui", "DataList.propTypes.filterPosition.isRequired")
@@ -366,9 +384,12 @@ object DataList {
     
     object filterRules {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.filterRules")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.filterRules
       @JSImport("rc-easyui", "DataList.propTypes.filterRules.isRequired")
@@ -378,9 +399,12 @@ object DataList {
     
     object filterable {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.filterable")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.filterable
       @JSImport("rc-easyui", "DataList.propTypes.filterable.isRequired")
@@ -390,9 +414,12 @@ object DataList {
     
     object hoverCls {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.hoverCls")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.hoverCls
       @JSImport("rc-easyui", "DataList.propTypes.hoverCls.isRequired")
@@ -402,9 +429,12 @@ object DataList {
     
     object idField {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.idField")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.idField
       @JSImport("rc-easyui", "DataList.propTypes.idField.isRequired")
@@ -414,9 +444,12 @@ object DataList {
     
     object itemCls {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.itemCls")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.itemCls
       @JSImport("rc-easyui", "DataList.propTypes.itemCls.isRequired")
@@ -426,9 +459,12 @@ object DataList {
     
     object itemStyle {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.itemStyle")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.itemStyle
       @JSImport("rc-easyui", "DataList.propTypes.itemStyle.isRequired")
@@ -436,11 +472,29 @@ object DataList {
       val isRequired: js.Any = js.native
     }
     
+    object `lazy` {
+      
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      @JSImport("rc-easyui", "DataList.propTypes.lazy")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      // Circular reference from rc_easyui.DataList.propTypes.lazy
+      @JSImport("rc-easyui", "DataList.propTypes.lazy.isRequired")
+      @js.native
+      val isRequired: js.Any = js.native
+    }
+    
     object loadMsg {
+      
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "DataList.propTypes.loadMsg")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.loadMsg
       @JSImport("rc-easyui", "DataList.propTypes.loadMsg.isRequired")
@@ -450,9 +504,12 @@ object DataList {
     
     object loading {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.loading")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.loading
       @JSImport("rc-easyui", "DataList.propTypes.loading.isRequired")
@@ -462,9 +519,12 @@ object DataList {
     
     object onListScroll {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.onListScroll")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.onListScroll
       @JSImport("rc-easyui", "DataList.propTypes.onListScroll.isRequired")
@@ -474,9 +534,12 @@ object DataList {
     
     object pageNumber {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.pageNumber")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.pageNumber
       @JSImport("rc-easyui", "DataList.propTypes.pageNumber.isRequired")
@@ -486,9 +549,12 @@ object DataList {
     
     object pageOptions {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.pageOptions")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.pageOptions
       @JSImport("rc-easyui", "DataList.propTypes.pageOptions.isRequired")
@@ -498,9 +564,12 @@ object DataList {
     
     object pagePosition {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.pagePosition")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.pagePosition
       @JSImport("rc-easyui", "DataList.propTypes.pagePosition.isRequired")
@@ -510,9 +579,12 @@ object DataList {
     
     object pageSize {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.pageSize")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.pageSize
       @JSImport("rc-easyui", "DataList.propTypes.pageSize.isRequired")
@@ -522,9 +594,12 @@ object DataList {
     
     object pagination {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.pagination")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.pagination
       @JSImport("rc-easyui", "DataList.propTypes.pagination.isRequired")
@@ -534,9 +609,12 @@ object DataList {
     
     object renderItem {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.renderItem")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.renderItem
       @JSImport("rc-easyui", "DataList.propTypes.renderItem.isRequired")
@@ -546,9 +624,12 @@ object DataList {
     
     object rowHeight {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.rowHeight")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.rowHeight
       @JSImport("rc-easyui", "DataList.propTypes.rowHeight.isRequired")
@@ -558,9 +639,12 @@ object DataList {
     
     object scrollPosition {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.scrollPosition")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.scrollPosition
       @JSImport("rc-easyui", "DataList.propTypes.scrollPosition.isRequired")
@@ -570,9 +654,12 @@ object DataList {
     
     object selectedCls {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.selectedCls")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.selectedCls
       @JSImport("rc-easyui", "DataList.propTypes.selectedCls.isRequired")
@@ -582,9 +669,12 @@ object DataList {
     
     object selection {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.selection")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.selection
       @JSImport("rc-easyui", "DataList.propTypes.selection.isRequired")
@@ -594,9 +684,12 @@ object DataList {
     
     object selectionMode {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.selectionMode")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.selectionMode
       @JSImport("rc-easyui", "DataList.propTypes.selectionMode.isRequired")
@@ -606,9 +699,12 @@ object DataList {
     
     object total {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.total")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.total
       @JSImport("rc-easyui", "DataList.propTypes.total.isRequired")
@@ -618,24 +714,15 @@ object DataList {
     
     object virtualScroll {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "DataList.propTypes.virtualScroll")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.DataList.propTypes.virtualScroll
       @JSImport("rc-easyui", "DataList.propTypes.virtualScroll.isRequired")
-      @js.native
-      val isRequired: js.Any = js.native
-    }
-    
-    object `lazy` {
-      
-      @JSImport("rc-easyui", "DataList.propTypes.lazy")
-      @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
-      
-      // Circular reference from rc_easyui.DataList.propTypes.lazy
-      @JSImport("rc-easyui", "DataList.propTypes.lazy.isRequired")
       @js.native
       val isRequired: js.Any = js.native
     }

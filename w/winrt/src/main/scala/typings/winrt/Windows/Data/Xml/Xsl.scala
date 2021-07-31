@@ -4,15 +4,13 @@ import typings.winrt.Windows.Data.Xml.Dom.IXmlNode
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Xsl {
   
-  @js.native
   trait IXsltProcessor extends StObject {
     
-    def transformToString(inputNode: IXmlNode): String = js.native
+    def transformToString(inputNode: IXmlNode): String
   }
   object IXsltProcessor {
     
@@ -30,10 +28,9 @@ object Xsl {
     }
   }
   
-  @js.native
   trait IXsltProcessorFactory extends StObject {
     
-    def createInstance(document: XmlDocument): XsltProcessor = js.native
+    def createInstance(document: XmlDocument): XsltProcessor
   }
   object IXsltProcessorFactory {
     
@@ -51,8 +48,9 @@ object Xsl {
     }
   }
   
-  @js.native
-  trait XsltProcessor extends IXsltProcessor
+  trait XsltProcessor
+    extends StObject
+       with IXsltProcessor
   object XsltProcessor {
     
     @scala.inline

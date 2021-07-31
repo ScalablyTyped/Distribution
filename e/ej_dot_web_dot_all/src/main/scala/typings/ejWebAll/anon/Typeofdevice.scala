@@ -2,21 +2,19 @@ package typings.ejWebAll.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofdevice extends StObject {
   
-  def isAndroid(): Boolean = js.native
+  def isAndroid(): Boolean
   
-  def isFlat(): Boolean = js.native
+  def isFlat(): Boolean
   
-  def isIOS(): Boolean = js.native
+  def isIOS(): Boolean
   
-  def isIOS7(): Boolean = js.native
+  def isIOS7(): Boolean
   
-  def isWindows(): Boolean = js.native
+  def isWindows(): Boolean
 }
 object Typeofdevice {
   

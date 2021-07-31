@@ -6,23 +6,21 @@ import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlayTypesMod {
   
-  @js.native
   trait IOverlay extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def setPoster(src: String): Unit = js.native
+    def setPoster(src: String): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object IOverlay {
     
@@ -58,14 +56,13 @@ object overlayTypesMod {
     }
   }
   
-  @js.native
   trait IOverlayAPI extends StObject {
     
-    var hideOverlay: js.UndefOr[js.Function0[Unit]] = js.native
+    var hideOverlay: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var setPoster: js.UndefOr[js.Function1[/* src */ String, Unit]] = js.native
+    var setPoster: js.UndefOr[js.Function1[/* src */ String, Unit]] = js.undefined
     
-    var showOverlay: js.UndefOr[js.Function0[Unit]] = js.native
+    var showOverlay: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IOverlayAPI {
     
@@ -98,10 +95,9 @@ object overlayTypesMod {
     }
   }
   
-  @js.native
   trait IOverlayViewCallbacks extends StObject {
     
-    var onPlayClick: EventListenerOrEventListenerObject = js.native
+    var onPlayClick: EventListenerOrEventListenerObject
   }
   object IOverlayViewCallbacks {
     
@@ -122,12 +118,11 @@ object overlayTypesMod {
     }
   }
   
-  @js.native
   trait IOverlayViewConfig extends StObject {
     
-    var callbacks: IOverlayViewCallbacks = js.native
+    var callbacks: IOverlayViewCallbacks
     
-    var theme: IThemeService = js.native
+    var theme: IThemeService
   }
   object IOverlayViewConfig {
     
@@ -148,18 +143,17 @@ object overlayTypesMod {
     }
   }
   
-  @js.native
   trait IOverlayViewStyles extends StObject {
     
-    var active: String = js.native
+    var active: String
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var overlay: String = js.native
+    var overlay: String
     
-    var poster: String = js.native
+    var poster: String
     
-    var transparency: String = js.native
+    var transparency: String
   }
   object IOverlayViewStyles {
     

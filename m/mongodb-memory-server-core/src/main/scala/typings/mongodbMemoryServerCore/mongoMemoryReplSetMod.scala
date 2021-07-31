@@ -12,7 +12,6 @@ import typings.node.childProcessMod.SpawnOptions
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mongoMemoryReplSetMod {
@@ -96,18 +95,17 @@ object mongoMemoryReplSetMod {
     def waitUntilRunning(): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait MongoMemoryReplSetConfigSettingsT extends StObject {
     
-    var catchUpTimeoutMillis: js.UndefOr[Double] = js.native
+    var catchUpTimeoutMillis: js.UndefOr[Double] = js.undefined
     
-    var chainingAllowed: js.UndefOr[Boolean] = js.native
+    var chainingAllowed: js.UndefOr[Boolean] = js.undefined
     
-    var electionTimeoutMillis: js.UndefOr[Double] = js.native
+    var electionTimeoutMillis: js.UndefOr[Double] = js.undefined
     
-    var heartbeatIntervalMillis: js.UndefOr[Double] = js.native
+    var heartbeatIntervalMillis: js.UndefOr[Double] = js.undefined
     
-    var heartbeatTimeoutSecs: js.UndefOr[Double] = js.native
+    var heartbeatTimeoutSecs: js.UndefOr[Double] = js.undefined
   }
   object MongoMemoryReplSetConfigSettingsT {
     
@@ -152,20 +150,19 @@ object mongoMemoryReplSetMod {
     }
   }
   
-  @js.native
   trait MongoMemoryReplSetOptsT extends StObject {
     
     /**
       * Auto-Start the replSet?
       * @default true
       */
-    var autoStart: js.UndefOr[Boolean] = js.native
+    var autoStart: js.UndefOr[Boolean] = js.undefined
     
-    var binary: js.UndefOr[MongoBinaryOpts] = js.native
+    var binary: js.UndefOr[MongoBinaryOpts] = js.undefined
     
-    var instanceOpts: js.UndefOr[js.Array[MongoMemoryInstancePropBaseT]] = js.native
+    var instanceOpts: js.UndefOr[js.Array[MongoMemoryInstancePropBaseT]] = js.undefined
     
-    var replSet: js.UndefOr[ReplSetOpts] = js.native
+    var replSet: js.UndefOr[ReplSetOpts] = js.undefined
   }
   object MongoMemoryReplSetOptsT {
     
@@ -207,68 +204,67 @@ object mongoMemoryReplSetMod {
     }
   }
   
-  @js.native
   trait ReplSetOpts extends StObject {
     
     /**
       * additional command line args passed to `mongod`
       * @default []
       */
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * enable auth ("--auth" / "--noauth")
       * @default false
       */
-    var auth: js.UndefOr[Boolean] = js.native
+    var auth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Options for "rsConfig"
       * @default {}
       */
-    var configSettings: js.UndefOr[MongoMemoryReplSetConfigSettingsT] = js.native
+    var configSettings: js.UndefOr[MongoMemoryReplSetConfigSettingsT] = js.undefined
     
     /**
       * number of `mongod` servers to start
       * @default 1
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /**
       * database name used in connection string
       * @default uuidv4()
       */
-    var dbName: js.UndefOr[String] = js.native
+    var dbName: js.UndefOr[String] = js.undefined
     
     /**
       * bind to all IP addresses specify `::,0.0.0.0`
       * @default '127.0.0.1'
       */
-    var ip: js.UndefOr[String] = js.native
+    var ip: js.UndefOr[String] = js.undefined
     
     /**
       * replSet name
       * @default 'testset'
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * oplog size (in MB)
       * @default 1
       */
-    var oplogSize: js.UndefOr[Double] = js.native
+    var oplogSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Childprocess spawn options
       * @default {}
       */
-    var spawn: js.UndefOr[SpawnOptions] = js.native
+    var spawn: js.UndefOr[SpawnOptions] = js.undefined
     
     /**
       *`mongod` storage engine type
       * @default 'ephemeralForTest'
       */
-    var storageEngine: js.UndefOr[StorageEngineT] = js.native
+    var storageEngine: js.UndefOr[StorageEngineT] = js.undefined
   }
   object ReplSetOpts {
     

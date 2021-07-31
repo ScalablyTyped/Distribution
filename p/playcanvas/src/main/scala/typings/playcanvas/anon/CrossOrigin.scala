@@ -2,13 +2,11 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrossOrigin extends StObject {
   
-  var crossOrigin: js.UndefOr[Boolean] = js.native
+  var crossOrigin: js.UndefOr[Boolean] = js.undefined
 }
 object CrossOrigin {
   

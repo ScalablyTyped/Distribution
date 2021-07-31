@@ -2,14 +2,12 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result of the δ-presence computation. Note that these results are an
   * estimation, not exact values.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2DeltaPresenceEstimationResult extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaGooglePrivacyDlpV2DeltaPresenceEstimationResult extends StObject {
     * max_probability: 0.4, frequency: 99} mean that there are no record with
     * an estimated probability in [0.1, 0.2) nor larger or equal to 0.4.
     */
-  var deltaPresenceEstimationHistogram: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket]] = js.native
+  var deltaPresenceEstimationHistogram: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2DeltaPresenceEstimationResult {
   

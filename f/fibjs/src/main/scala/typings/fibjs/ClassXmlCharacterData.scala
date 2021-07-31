@@ -2,11 +2,12 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassXmlCharacterData extends ClassXmlNode {
+trait ClassXmlCharacterData
+  extends StObject
+     with ClassXmlNode {
   
   /**
     * 

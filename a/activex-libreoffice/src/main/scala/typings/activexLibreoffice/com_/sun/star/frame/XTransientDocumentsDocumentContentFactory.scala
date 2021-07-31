@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.ucb.XContent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0
   * @version 1.0
   */
-@js.native
-trait XTransientDocumentsDocumentContentFactory extends XInterface {
+trait XTransientDocumentsDocumentContentFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates a {@link com.sun.star.ucb.TransientDocumentsDocumentContent} based on a given {@link com.sun.star.document.OfficeDocument} .
@@ -25,7 +25,7 @@ trait XTransientDocumentsDocumentContentFactory extends XInterface {
     * @returns a document content based on the given document model. The content must be an implementation of service {@link com.sun.star.ucb.TransientDocuments
     * @throws com::sun::star::lang::IllegalArgumentException if the document model cannot be associated with content for any reason.
     */
-  def createDocumentContent(Model: XModel): XContent = js.native
+  def createDocumentContent(Model: XModel): XContent
 }
 object XTransientDocumentsDocumentContentFactory {
   

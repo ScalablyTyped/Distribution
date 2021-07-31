@@ -3,7 +3,6 @@ package typings.pngImg
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,23 +12,24 @@ object mod {
     */
   @JSImport("png-img", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PngImg {
+  class ^ protected ()
+    extends StObject
+       with PngImg {
     /**
       * Create PngImg object from passed buffer with image
       */
     def this(buffer: Buffer) = this()
   }
   
-  @js.native
   trait Color extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object Color {
     
@@ -133,12 +133,11 @@ object mod {
   
   type SaveCallback = js.Function1[/* error */ String, Unit]
   
-  @js.native
   trait Size extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Size {
     

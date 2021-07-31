@@ -2,13 +2,13 @@ package typings.senchaTouch.global.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.Anims")
 @js.native
 class Anims ()
-  extends typings.senchaTouch.Ext.Anims
+  extends StObject
+     with typings.senchaTouch.Ext.Anims
 /* static members */
 object Anims {
   

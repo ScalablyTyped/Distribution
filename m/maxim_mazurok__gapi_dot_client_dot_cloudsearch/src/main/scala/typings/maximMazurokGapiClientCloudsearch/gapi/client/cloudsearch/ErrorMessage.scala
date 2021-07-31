@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorMessage extends StObject {
   
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
 }
 object ErrorMessage {
   

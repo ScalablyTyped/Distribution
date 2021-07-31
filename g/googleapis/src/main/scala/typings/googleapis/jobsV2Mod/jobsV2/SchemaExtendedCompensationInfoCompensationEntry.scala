@@ -2,7 +2,6 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,18 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * can be derived. Its annualized range is determined as (amount or range)
   * times expected_units_per_year.
   */
-@js.native
 trait SchemaExtendedCompensationInfoCompensationEntry extends StObject {
   
   /**
     * Optional.  Monetary amount.
     */
-  var amount: js.UndefOr[SchemaExtendedCompensationInfoDecimal] = js.native
+  var amount: js.UndefOr[SchemaExtendedCompensationInfoDecimal] = js.undefined
   
   /**
     * Optional.  Compensation description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Expected number of units paid each year. If not specified,
@@ -32,28 +30,28 @@ trait SchemaExtendedCompensationInfoCompensationEntry extends StObject {
     * on unit. Default values: - HOURLY: 2080 - DAILY: 260 - WEEKLY: 52 -
     * MONTHLY: 12 - ANNUAL: 1
     */
-  var expectedUnitsPerYear: js.UndefOr[SchemaExtendedCompensationInfoDecimal] = js.native
+  var expectedUnitsPerYear: js.UndefOr[SchemaExtendedCompensationInfoDecimal] = js.undefined
   
   /**
     * Optional.  Compensation range.
     */
-  var range: js.UndefOr[SchemaExtendedCompensationInfoCompensationRange] = js.native
+  var range: js.UndefOr[SchemaExtendedCompensationInfoCompensationRange] = js.undefined
   
   /**
     * Required.  Compensation type.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Frequency of the specified amount.  Default is
     * CompensationUnit.OTHER_COMPENSATION_UNIT.
     */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Indicates compensation amount and range are unset.
     */
-  var unspecified: js.UndefOr[Boolean] = js.native
+  var unspecified: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaExtendedCompensationInfoCompensationEntry {
   

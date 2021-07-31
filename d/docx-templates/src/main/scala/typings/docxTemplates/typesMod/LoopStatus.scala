@@ -2,23 +2,21 @@ package typings.docxTemplates.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoopStatus extends StObject {
   
-  var idx: Double = js.native
+  var idx: Double
   
-  var isIf: js.UndefOr[Boolean] = js.native
+  var isIf: js.UndefOr[Boolean] = js.undefined
   
-  var loopOver: js.Array[VarValue] = js.native
+  var loopOver: js.Array[VarValue]
   
-  var refNode: Node = js.native
+  var refNode: Node
   
-  var refNodeLevel: Double = js.native
+  var refNodeLevel: Double
   
-  var varName: String = js.native
+  var varName: String
 }
 object LoopStatus {
   

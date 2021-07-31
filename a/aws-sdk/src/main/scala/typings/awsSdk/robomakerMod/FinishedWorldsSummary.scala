@@ -2,26 +2,24 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinishedWorldsSummary extends StObject {
   
   /**
     * Information about worlds that failed.
     */
-  var failureSummary: js.UndefOr[FailureSummary] = js.native
+  var failureSummary: js.UndefOr[FailureSummary] = js.undefined
   
   /**
     * The total number of finished worlds.
     */
-  var finishedCount: js.UndefOr[Integer] = js.native
+  var finishedCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * A list of worlds that succeeded.
     */
-  var succeededWorlds: js.UndefOr[Arns] = js.native
+  var succeededWorlds: js.UndefOr[Arns] = js.undefined
 }
 object FinishedWorldsSummary {
   

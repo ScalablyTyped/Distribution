@@ -5,27 +5,18 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reverseMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/reverse", "reverse")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/reverse", JSImport.Namespace)
   @js.native
-  def reverse[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/reverse", "reverse")
-  @js.native
-  def reverse[T /* <: Tensor[Rank] */](x: T, axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/reverse", "reverse")
-  @js.native
-  def reverse[T /* <: Tensor[Rank] */](x: T, axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/reverse", "reverse")
-  @js.native
-  def reverse[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/reverse", "reverse")
-  @js.native
-  def reverse[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/reverse", "reverse")
-  @js.native
-  def reverse[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def reverse[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def reverse[T /* <: Tensor[Rank] */](x: T | TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def reverse[T /* <: Tensor[Rank] */](x: T | TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
 }

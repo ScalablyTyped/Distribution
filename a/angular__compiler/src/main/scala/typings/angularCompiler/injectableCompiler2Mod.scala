@@ -7,23 +7,24 @@ import typings.angularCompiler.r3FactoryMod.R3DependencyMetadata
 import typings.angularCompiler.render3UtilMod.R3Reference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object injectableCompiler2Mod {
   
-  @JSImport("@angular/compiler/src/injectable_compiler_2", "compileInjectable")
+  @JSImport("@angular/compiler/src/injectable_compiler_2", JSImport.Namespace)
   @js.native
-  def compileInjectable(meta: R3InjectableMetadata): InjectableDef = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def compileInjectable(meta: R3InjectableMetadata): InjectableDef = ^.asInstanceOf[js.Dynamic].applyDynamic("compileInjectable")(meta.asInstanceOf[js.Any]).asInstanceOf[InjectableDef]
+  
   trait InjectableDef extends StObject {
     
-    var expression: Expression = js.native
+    var expression: Expression
     
-    var statements: js.Array[Statement] = js.native
+    var statements: js.Array[Statement]
     
-    var `type`: Type = js.native
+    var `type`: Type
   }
   object InjectableDef {
     
@@ -51,28 +52,27 @@ object injectableCompiler2Mod {
     }
   }
   
-  @js.native
   trait R3InjectableMetadata extends StObject {
     
-    var internalType: Expression = js.native
+    var internalType: Expression
     
-    var name: String = js.native
+    var name: String
     
-    var providedIn: Expression = js.native
+    var providedIn: Expression
     
-    var `type`: R3Reference = js.native
+    var `type`: R3Reference
     
-    var typeArgumentCount: Double = js.native
+    var typeArgumentCount: Double
     
-    var useClass: js.UndefOr[Expression] = js.native
+    var useClass: js.UndefOr[Expression] = js.undefined
     
-    var useExisting: js.UndefOr[Expression] = js.native
+    var useExisting: js.UndefOr[Expression] = js.undefined
     
-    var useFactory: js.UndefOr[Expression] = js.native
+    var useFactory: js.UndefOr[Expression] = js.undefined
     
-    var useValue: js.UndefOr[Expression] = js.native
+    var useValue: js.UndefOr[Expression] = js.undefined
     
-    var userDeps: js.UndefOr[js.Array[R3DependencyMetadata]] = js.native
+    var userDeps: js.UndefOr[js.Array[R3DependencyMetadata]] = js.undefined
   }
   object R3InjectableMetadata {
     

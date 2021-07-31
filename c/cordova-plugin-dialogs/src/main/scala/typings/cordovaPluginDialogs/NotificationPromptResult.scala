@@ -2,21 +2,19 @@ package typings.cordovaPluginDialogs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object, passed to promptCallback */
-@js.native
 trait NotificationPromptResult extends StObject {
   
   /**
     * The index of the pressed button. Note that the index uses one-based indexing, so the value is 1, 2, 3, etc.
     * 0 is the result when the dialog is dismissed without a button press.
     */
-  var buttonIndex: Double = js.native
+  var buttonIndex: Double
   
   /** The text entered in the prompt dialog box. */
-  var input1: String = js.native
+  var input1: String
 }
 object NotificationPromptResult {
   

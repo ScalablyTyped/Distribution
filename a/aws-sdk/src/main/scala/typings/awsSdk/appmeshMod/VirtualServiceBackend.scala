@@ -2,21 +2,19 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualServiceBackend extends StObject {
   
   /**
     * A reference to an object that represents the client policy for a backend.
     */
-  var clientPolicy: js.UndefOr[ClientPolicy] = js.native
+  var clientPolicy: js.UndefOr[ClientPolicy] = js.undefined
   
   /**
     * The name of the virtual service that is acting as a virtual node backend.
     */
-  var virtualServiceName: ServiceName = js.native
+  var virtualServiceName: ServiceName
 }
 object VirtualServiceBackend {
   

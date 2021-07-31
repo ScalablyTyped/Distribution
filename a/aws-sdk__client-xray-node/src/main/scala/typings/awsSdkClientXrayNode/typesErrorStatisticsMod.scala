@@ -2,28 +2,26 @@ package typings.awsSdkClientXrayNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesErrorStatisticsMod {
   
-  @js.native
   trait ErrorStatistics extends StObject {
     
     /**
       * <p>The number of requests that failed with untracked 4xx Client Error status codes.</p>
       */
-    var OtherCount: js.UndefOr[Double] = js.native
+    var OtherCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The number of requests that failed with a 419 throttling status code.</p>
       */
-    var ThrottleCount: js.UndefOr[Double] = js.native
+    var ThrottleCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The total number of requests that failed with a 4xx Client Error status code.</p>
       */
-    var TotalCount: js.UndefOr[Double] = js.native
+    var TotalCount: js.UndefOr[Double] = js.undefined
   }
   object ErrorStatistics {
     

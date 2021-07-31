@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoidedPurchase extends StObject {
   
   /** This kind represents a voided purchase object in the androidpublisher service. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The order id which uniquely identifies a one-time purchase, subscription purchase, or subscription renewal. */
-  var orderId: js.UndefOr[String] = js.native
+  var orderId: js.UndefOr[String] = js.undefined
   
   /** The time at which the purchase was made, in milliseconds since the epoch (Jan 1, 1970). */
-  var purchaseTimeMillis: js.UndefOr[String] = js.native
+  var purchaseTimeMillis: js.UndefOr[String] = js.undefined
   
   /** The token which uniquely identifies a one-time purchase or subscription. To uniquely identify subscription renewals use order_id (available starting from version 3 of the API). */
-  var purchaseToken: js.UndefOr[String] = js.native
+  var purchaseToken: js.UndefOr[String] = js.undefined
   
   /** The reason why the purchase was voided, possible values are: 0. Other 1. Remorse 2. Not_received 3. Defective 4. Accidental_purchase 5. Fraud 6. Friendly_fraud 7. Chargeback */
-  var voidedReason: js.UndefOr[Double] = js.native
+  var voidedReason: js.UndefOr[Double] = js.undefined
   
   /** The initiator of voided purchase, possible values are: 0. User 1. Developer 2. Google */
-  var voidedSource: js.UndefOr[Double] = js.native
+  var voidedSource: js.UndefOr[Double] = js.undefined
   
   /** The time at which the purchase was canceled/refunded/charged-back, in milliseconds since the epoch (Jan 1, 1970). */
-  var voidedTimeMillis: js.UndefOr[String] = js.native
+  var voidedTimeMillis: js.UndefOr[String] = js.undefined
 }
 object VoidedPurchase {
   

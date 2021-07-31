@@ -3,24 +3,23 @@ package typings.cssTree.mod
 import typings.cssTree.cssTreeStrings.String
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DSNodeString
-  extends DSNode
+  extends StObject
+     with DSNode
      with DSNodeMultiplied {
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var value: java.lang.String = js.native
+  var value: java.lang.String
 }
 object DSNodeString {
   
   @scala.inline
-  def apply(`type`: String, value: java.lang.String): DSNodeString = {
+  def apply(value: java.lang.String): DSNodeString = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("String")
     __obj.asInstanceOf[DSNodeString]
   }
   

@@ -2,17 +2,15 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaRepositoryCommentResponseMod {
   
-  @js.native
   trait MediaRepositoryCommentResponse extends StObject {
     
-    var comment: MediaRepositoryCommentResponseComment = js.native
+    var comment: MediaRepositoryCommentResponseComment
     
-    var status: String = js.native
+    var status: String
   }
   object MediaRepositoryCommentResponse {
     
@@ -33,28 +31,27 @@ object mediaRepositoryCommentResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryCommentResponseComment extends StObject {
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var created_at_utc: Double = js.native
+    var created_at_utc: Double
     
-    var media_id: String = js.native
+    var media_id: String
     
-    var pk: String = js.native
+    var pk: String
     
-    var share_enabled: Boolean = js.native
+    var share_enabled: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var user: MediaRepositoryCommentResponseUser = js.native
+    var user: MediaRepositoryCommentResponseUser
   }
   object MediaRepositoryCommentResponseComment {
     
@@ -111,28 +108,27 @@ object mediaRepositoryCommentResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryCommentResponseUser extends StObject {
     
-    var allowed_commenter_type: String = js.native
+    var allowed_commenter_type: String
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var reel_auto_archive: String = js.native
+    var reel_auto_archive: String
     
-    var username: String = js.native
+    var username: String
   }
   object MediaRepositoryCommentResponseUser {
     

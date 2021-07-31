@@ -10,34 +10,40 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withI18nMod {
   
-  @JSImport("@lingui/react/withI18n", JSImport.Default)
+  @JSImport("@lingui/react/withI18n", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(): js.Function1[
-    /* WrappedComponent */ ComponentConstructor[_], 
-    ComponentClass[Pick[_, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
-  ] = js.native
-  @JSImport("@lingui/react/withI18n", JSImport.Default)
-  @js.native
+    /* WrappedComponent */ ComponentConstructor[js.Any], 
+    ComponentClass[Pick[js.Any, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[
+    /* WrappedComponent */ ComponentConstructor[js.Any], 
+    ComponentClass[Pick[js.Any, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
+  ]]
+  @scala.inline
   def default(options: withI18nOptions): js.Function1[
-    /* WrappedComponent */ ComponentConstructor[_], 
-    ComponentClass[Pick[_, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
-  ] = js.native
+    /* WrappedComponent */ ComponentConstructor[js.Any], 
+    ComponentClass[Pick[js.Any, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* WrappedComponent */ ComponentConstructor[js.Any], 
+    ComponentClass[Pick[js.Any, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
+  ]]
   
   type ComponentConstructor[P] = (ComponentClass[P, ComponentState]) | StatelessComponent[P]
   
-  @js.native
   trait withI18nOptions extends StObject {
     
-    var update: js.UndefOr[Boolean] = js.native
+    var update: js.UndefOr[Boolean] = js.undefined
     
-    var withHash: js.UndefOr[Boolean] = js.native
+    var withHash: js.UndefOr[Boolean] = js.undefined
     
-    var withRef: js.UndefOr[Boolean] = js.native
+    var withRef: js.UndefOr[Boolean] = js.undefined
   }
   object withI18nOptions {
     
@@ -70,12 +76,11 @@ object withI18nMod {
     }
   }
   
-  @js.native
   trait withI18nProps extends StObject {
     
-    var i18n: I18n_ = js.native
+    var i18n: I18n_
     
-    var i18nHash: js.UndefOr[String | Null] = js.native
+    var i18nHash: js.UndefOr[String | Null] = js.undefined
   }
   object withI18nProps {
     

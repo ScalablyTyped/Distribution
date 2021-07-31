@@ -2,15 +2,13 @@ package typings.normalizeJss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutlineOffset extends StObject {
   
-  var appearance: String = js.native
+  var appearance: String
   
-  var outlineOffset: String = js.native
+  var outlineOffset: String
 }
 object OutlineOffset {
   

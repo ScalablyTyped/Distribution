@@ -11,7 +11,6 @@ import typings.node.streamMod.WritableOptions
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -99,81 +98,81 @@ object mod {
   object Date extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.jsforce.dateEnumMod.Date with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.jsforce.dateEnumMod.Date & Double] = js.native
     
-    /* 9 */ val LAST_90_DAYS: typings.jsforce.dateEnumMod.Date.LAST_90_DAYS with Double = js.native
+    /* 9 */ val LAST_90_DAYS: typings.jsforce.dateEnumMod.Date.LAST_90_DAYS & Double = js.native
     
-    /* 28 */ val LAST_FISCAL_QUARTER: typings.jsforce.dateEnumMod.Date.LAST_FISCAL_QUARTER with Double = js.native
+    /* 28 */ val LAST_FISCAL_QUARTER: typings.jsforce.dateEnumMod.Date.LAST_FISCAL_QUARTER & Double = js.native
     
-    /* 33 */ val LAST_FISCAL_YEAR: typings.jsforce.dateEnumMod.Date.LAST_FISCAL_YEAR with Double = js.native
+    /* 33 */ val LAST_FISCAL_YEAR: typings.jsforce.dateEnumMod.Date.LAST_FISCAL_YEAR & Double = js.native
     
-    /* 6 */ val LAST_MONTH: typings.jsforce.dateEnumMod.Date.LAST_MONTH with Double = js.native
+    /* 6 */ val LAST_MONTH: typings.jsforce.dateEnumMod.Date.LAST_MONTH & Double = js.native
     
-    /* 11 */ val LAST_N_DAYS: typings.jsforce.dateEnumMod.Date.LAST_N_DAYS with Double = js.native
+    /* 11 */ val LAST_N_DAYS: typings.jsforce.dateEnumMod.Date.LAST_N_DAYS & Double = js.native
     
-    /* 31 */ val LAST_N_FISCAL_QUARTERS: typings.jsforce.dateEnumMod.Date.LAST_N_FISCAL_QUARTERS with Double = js.native
+    /* 31 */ val LAST_N_FISCAL_QUARTERS: typings.jsforce.dateEnumMod.Date.LAST_N_FISCAL_QUARTERS & Double = js.native
     
-    /* 36 */ val LAST_N_FISCAL_YEARS: typings.jsforce.dateEnumMod.Date.LAST_N_FISCAL_YEARS with Double = js.native
+    /* 36 */ val LAST_N_FISCAL_YEARS: typings.jsforce.dateEnumMod.Date.LAST_N_FISCAL_YEARS & Double = js.native
     
-    /* 16 */ val LAST_N_MONTHS: typings.jsforce.dateEnumMod.Date.LAST_N_MONTHS with Double = js.native
+    /* 16 */ val LAST_N_MONTHS: typings.jsforce.dateEnumMod.Date.LAST_N_MONTHS & Double = js.native
     
-    /* 21 */ val LAST_N_QUARTERS: typings.jsforce.dateEnumMod.Date.LAST_N_QUARTERS with Double = js.native
+    /* 21 */ val LAST_N_QUARTERS: typings.jsforce.dateEnumMod.Date.LAST_N_QUARTERS & Double = js.native
     
-    /* 14 */ val LAST_N_WEEKS: typings.jsforce.dateEnumMod.Date.LAST_N_WEEKS with Double = js.native
+    /* 14 */ val LAST_N_WEEKS: typings.jsforce.dateEnumMod.Date.LAST_N_WEEKS & Double = js.native
     
-    /* 26 */ val LAST_N_YEARS: typings.jsforce.dateEnumMod.Date.LAST_N_YEARS with Double = js.native
+    /* 26 */ val LAST_N_YEARS: typings.jsforce.dateEnumMod.Date.LAST_N_YEARS & Double = js.native
     
-    /* 18 */ val LAST_QUARTER: typings.jsforce.dateEnumMod.Date.LAST_QUARTER with Double = js.native
+    /* 18 */ val LAST_QUARTER: typings.jsforce.dateEnumMod.Date.LAST_QUARTER & Double = js.native
     
-    /* 3 */ val LAST_WEEK: typings.jsforce.dateEnumMod.Date.LAST_WEEK with Double = js.native
+    /* 3 */ val LAST_WEEK: typings.jsforce.dateEnumMod.Date.LAST_WEEK & Double = js.native
     
-    /* 23 */ val LAST_YEAR: typings.jsforce.dateEnumMod.Date.LAST_YEAR with Double = js.native
+    /* 23 */ val LAST_YEAR: typings.jsforce.dateEnumMod.Date.LAST_YEAR & Double = js.native
     
-    /* 10 */ val NEXT_90_DAYS: typings.jsforce.dateEnumMod.Date.NEXT_90_DAYS with Double = js.native
+    /* 10 */ val NEXT_90_DAYS: typings.jsforce.dateEnumMod.Date.NEXT_90_DAYS & Double = js.native
     
-    /* 29 */ val NEXT_FISCAL_QUARTER: typings.jsforce.dateEnumMod.Date.NEXT_FISCAL_QUARTER with Double = js.native
+    /* 29 */ val NEXT_FISCAL_QUARTER: typings.jsforce.dateEnumMod.Date.NEXT_FISCAL_QUARTER & Double = js.native
     
-    /* 34 */ val NEXT_FISCAL_YEAR: typings.jsforce.dateEnumMod.Date.NEXT_FISCAL_YEAR with Double = js.native
+    /* 34 */ val NEXT_FISCAL_YEAR: typings.jsforce.dateEnumMod.Date.NEXT_FISCAL_YEAR & Double = js.native
     
-    /* 8 */ val NEXT_MONTH: typings.jsforce.dateEnumMod.Date.NEXT_MONTH with Double = js.native
+    /* 8 */ val NEXT_MONTH: typings.jsforce.dateEnumMod.Date.NEXT_MONTH & Double = js.native
     
-    /* 12 */ val NEXT_N_DAYS: typings.jsforce.dateEnumMod.Date.NEXT_N_DAYS with Double = js.native
+    /* 12 */ val NEXT_N_DAYS: typings.jsforce.dateEnumMod.Date.NEXT_N_DAYS & Double = js.native
     
-    /* 30 */ val NEXT_N_FISCAL_QUARTERS: typings.jsforce.dateEnumMod.Date.NEXT_N_FISCAL_QUARTERS with Double = js.native
+    /* 30 */ val NEXT_N_FISCAL_QUARTERS: typings.jsforce.dateEnumMod.Date.NEXT_N_FISCAL_QUARTERS & Double = js.native
     
-    /* 35 */ val NEXT_N_FISCAL_YEARS: typings.jsforce.dateEnumMod.Date.NEXT_N_FISCAL_YEARS with Double = js.native
+    /* 35 */ val NEXT_N_FISCAL_YEARS: typings.jsforce.dateEnumMod.Date.NEXT_N_FISCAL_YEARS & Double = js.native
     
-    /* 15 */ val NEXT_N_MONTHS: typings.jsforce.dateEnumMod.Date.NEXT_N_MONTHS with Double = js.native
+    /* 15 */ val NEXT_N_MONTHS: typings.jsforce.dateEnumMod.Date.NEXT_N_MONTHS & Double = js.native
     
-    /* 20 */ val NEXT_N_QUARTERS: typings.jsforce.dateEnumMod.Date.NEXT_N_QUARTERS with Double = js.native
+    /* 20 */ val NEXT_N_QUARTERS: typings.jsforce.dateEnumMod.Date.NEXT_N_QUARTERS & Double = js.native
     
-    /* 13 */ val NEXT_N_WEEKS: typings.jsforce.dateEnumMod.Date.NEXT_N_WEEKS with Double = js.native
+    /* 13 */ val NEXT_N_WEEKS: typings.jsforce.dateEnumMod.Date.NEXT_N_WEEKS & Double = js.native
     
-    /* 25 */ val NEXT_N_YEARS: typings.jsforce.dateEnumMod.Date.NEXT_N_YEARS with Double = js.native
+    /* 25 */ val NEXT_N_YEARS: typings.jsforce.dateEnumMod.Date.NEXT_N_YEARS & Double = js.native
     
-    /* 19 */ val NEXT_QUARTER: typings.jsforce.dateEnumMod.Date.NEXT_QUARTER with Double = js.native
+    /* 19 */ val NEXT_QUARTER: typings.jsforce.dateEnumMod.Date.NEXT_QUARTER & Double = js.native
     
-    /* 5 */ val NEXT_WEEK: typings.jsforce.dateEnumMod.Date.NEXT_WEEK with Double = js.native
+    /* 5 */ val NEXT_WEEK: typings.jsforce.dateEnumMod.Date.NEXT_WEEK & Double = js.native
     
-    /* 24 */ val NEXT_YEAR: typings.jsforce.dateEnumMod.Date.NEXT_YEAR with Double = js.native
+    /* 24 */ val NEXT_YEAR: typings.jsforce.dateEnumMod.Date.NEXT_YEAR & Double = js.native
     
-    /* 27 */ val THIS_FISCAL_QUARTER: typings.jsforce.dateEnumMod.Date.THIS_FISCAL_QUARTER with Double = js.native
+    /* 27 */ val THIS_FISCAL_QUARTER: typings.jsforce.dateEnumMod.Date.THIS_FISCAL_QUARTER & Double = js.native
     
-    /* 32 */ val THIS_FISCAL_YEAR: typings.jsforce.dateEnumMod.Date.THIS_FISCAL_YEAR with Double = js.native
+    /* 32 */ val THIS_FISCAL_YEAR: typings.jsforce.dateEnumMod.Date.THIS_FISCAL_YEAR & Double = js.native
     
-    /* 7 */ val THIS_MONTH: typings.jsforce.dateEnumMod.Date.THIS_MONTH with Double = js.native
+    /* 7 */ val THIS_MONTH: typings.jsforce.dateEnumMod.Date.THIS_MONTH & Double = js.native
     
-    /* 17 */ val THIS_QUARTER: typings.jsforce.dateEnumMod.Date.THIS_QUARTER with Double = js.native
+    /* 17 */ val THIS_QUARTER: typings.jsforce.dateEnumMod.Date.THIS_QUARTER & Double = js.native
     
-    /* 4 */ val THIS_WEEK: typings.jsforce.dateEnumMod.Date.THIS_WEEK with Double = js.native
+    /* 4 */ val THIS_WEEK: typings.jsforce.dateEnumMod.Date.THIS_WEEK & Double = js.native
     
-    /* 22 */ val THIS_YEAR: typings.jsforce.dateEnumMod.Date.THIS_YEAR with Double = js.native
+    /* 22 */ val THIS_YEAR: typings.jsforce.dateEnumMod.Date.THIS_YEAR & Double = js.native
     
-    /* 1 */ val TODAY: typings.jsforce.dateEnumMod.Date.TODAY with Double = js.native
+    /* 1 */ val TODAY: typings.jsforce.dateEnumMod.Date.TODAY & Double = js.native
     
-    /* 2 */ val TOMORROW: typings.jsforce.dateEnumMod.Date.TOMORROW with Double = js.native
+    /* 2 */ val TOMORROW: typings.jsforce.dateEnumMod.Date.TOMORROW & Double = js.native
     
-    /* 0 */ val YESTERDAY: typings.jsforce.dateEnumMod.Date.YESTERDAY with Double = js.native
+    /* 0 */ val YESTERDAY: typings.jsforce.dateEnumMod.Date.YESTERDAY & Double = js.native
   }
   
   @JSImport("jsforce", "DeployResultLocator")
@@ -194,80 +193,47 @@ object mod {
     extends typings.jsforce.jobMod.Job {
     def this(bulk: typings.jsforce.bulkMod.Bulk) = this()
     def this(bulk: typings.jsforce.bulkMod.Bulk, `type`: String) = this()
-    def this(bulk: typings.jsforce.bulkMod.Bulk, `type`: js.UndefOr[scala.Nothing], operation: String) = this()
     def this(bulk: typings.jsforce.bulkMod.Bulk, `type`: String, operation: String) = this()
-    def this(
-      bulk: typings.jsforce.bulkMod.Bulk,
-      `type`: js.UndefOr[scala.Nothing],
-      operation: js.UndefOr[scala.Nothing],
-      options: BulkOptions
-    ) = this()
-    def this(
-      bulk: typings.jsforce.bulkMod.Bulk,
-      `type`: js.UndefOr[scala.Nothing],
-      operation: String,
-      options: BulkOptions
-    ) = this()
-    def this(
-      bulk: typings.jsforce.bulkMod.Bulk,
-      `type`: String,
-      operation: js.UndefOr[scala.Nothing],
-      options: BulkOptions
-    ) = this()
+    def this(bulk: typings.jsforce.bulkMod.Bulk, `type`: Unit, operation: String) = this()
     def this(bulk: typings.jsforce.bulkMod.Bulk, `type`: String, operation: String, options: BulkOptions) = this()
+    def this(bulk: typings.jsforce.bulkMod.Bulk, `type`: String, operation: Unit, options: BulkOptions) = this()
+    def this(bulk: typings.jsforce.bulkMod.Bulk, `type`: Unit, operation: String, options: BulkOptions) = this()
+    def this(bulk: typings.jsforce.bulkMod.Bulk, `type`: Unit, operation: Unit, options: BulkOptions) = this()
     def this(
       bulk: typings.jsforce.bulkMod.Bulk,
-      `type`: js.UndefOr[scala.Nothing],
-      operation: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      jobId: String
-    ) = this()
-    def this(
-      bulk: typings.jsforce.bulkMod.Bulk,
-      `type`: js.UndefOr[scala.Nothing],
-      operation: js.UndefOr[scala.Nothing],
-      options: BulkOptions,
-      jobId: String
-    ) = this()
-    def this(
-      bulk: typings.jsforce.bulkMod.Bulk,
-      `type`: js.UndefOr[scala.Nothing],
+      `type`: String,
       operation: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       jobId: String
     ) = this()
     def this(
       bulk: typings.jsforce.bulkMod.Bulk,
-      `type`: js.UndefOr[scala.Nothing],
+      `type`: String,
       operation: String,
       options: BulkOptions,
       jobId: String
     ) = this()
+    def this(bulk: typings.jsforce.bulkMod.Bulk, `type`: String, operation: Unit, options: Unit, jobId: String) = this()
     def this(
       bulk: typings.jsforce.bulkMod.Bulk,
       `type`: String,
-      operation: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      jobId: String
-    ) = this()
-    def this(
-      bulk: typings.jsforce.bulkMod.Bulk,
-      `type`: String,
-      operation: js.UndefOr[scala.Nothing],
+      operation: Unit,
       options: BulkOptions,
       jobId: String
     ) = this()
+    def this(bulk: typings.jsforce.bulkMod.Bulk, `type`: Unit, operation: String, options: Unit, jobId: String) = this()
     def this(
       bulk: typings.jsforce.bulkMod.Bulk,
-      `type`: String,
+      `type`: Unit,
       operation: String,
-      options: js.UndefOr[scala.Nothing],
+      options: BulkOptions,
       jobId: String
     ) = this()
+    def this(bulk: typings.jsforce.bulkMod.Bulk, `type`: Unit, operation: Unit, options: Unit, jobId: String) = this()
     def this(
       bulk: typings.jsforce.bulkMod.Bulk,
-      `type`: String,
-      operation: String,
+      `type`: Unit,
+      operation: Unit,
       options: BulkOptions,
       jobId: String
     ) = this()
@@ -379,29 +345,26 @@ object mod {
   /* static members */
   object SfDate {
     
-    @JSImport("jsforce", "SfDate.parseDate")
+    @JSImport("jsforce", "SfDate")
     @js.native
-    def parseDate(str: String): Date = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("jsforce", "SfDate.toDateLiteral")
-    @js.native
-    def toDateLiteral(date: String): typings.jsforce.dateMod.SfDate = js.native
-    @JSImport("jsforce", "SfDate.toDateLiteral")
-    @js.native
-    def toDateLiteral(date: Double): typings.jsforce.dateMod.SfDate = js.native
-    @JSImport("jsforce", "SfDate.toDateLiteral")
-    @js.native
-    def toDateLiteral(date: Date): typings.jsforce.dateMod.SfDate = js.native
+    @scala.inline
+    def parseDate(str: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(str.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @JSImport("jsforce", "SfDate.toDateTimeLiteral")
-    @js.native
-    def toDateTimeLiteral(date: String): typings.jsforce.dateMod.SfDate = js.native
-    @JSImport("jsforce", "SfDate.toDateTimeLiteral")
-    @js.native
-    def toDateTimeLiteral(date: Double): typings.jsforce.dateMod.SfDate = js.native
-    @JSImport("jsforce", "SfDate.toDateTimeLiteral")
-    @js.native
-    def toDateTimeLiteral(date: Date): typings.jsforce.dateMod.SfDate = js.native
+    @scala.inline
+    def toDateLiteral(date: String): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
+    @scala.inline
+    def toDateLiteral(date: Double): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
+    @scala.inline
+    def toDateLiteral(date: Date): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
+    
+    @scala.inline
+    def toDateTimeLiteral(date: String): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateTimeLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
+    @scala.inline
+    def toDateTimeLiteral(date: Double): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateTimeLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
+    @scala.inline
+    def toDateTimeLiteral(date: Date): typings.jsforce.dateMod.SfDate = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateTimeLiteral")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsforce.dateMod.SfDate]
   }
   
   @JSImport("jsforce", "Streaming")
@@ -417,7 +380,7 @@ object mod {
     @js.native
     class AuthFailure protected ()
       extends typings.jsforce.streamingMod.StreamingExtension.AuthFailure {
-      def this(failureCallback: js.Function0[_]) = this()
+      def this(failureCallback: js.Function0[js.Any]) = this()
     }
     
     @JSImport("jsforce", "StreamingExtension.Replay")

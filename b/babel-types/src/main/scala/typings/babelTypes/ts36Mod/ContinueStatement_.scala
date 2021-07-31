@@ -3,27 +3,26 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ContinueStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinueStatement_
-  extends Node
+  extends StObject
+     with Node
      with CompletionStatement
      with Statement
      with Terminatorless {
   
-  var label: Identifier_ = js.native
+  var label: Identifier_
   
   @JSName("type")
-  var type_ContinueStatement_ : ContinueStatement = js.native
+  var type_ContinueStatement_ : ContinueStatement
 }
 object ContinueStatement_ {
   
   @scala.inline
-  def apply(end: Double, label: Identifier_, loc: SourceLocation, start: Double, `type`: ContinueStatement): ContinueStatement_ = {
+  def apply(end: Double, label: Identifier_, loc: SourceLocation, start: Double): ContinueStatement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ContinueStatement")
     __obj.asInstanceOf[ContinueStatement_]
   }
   

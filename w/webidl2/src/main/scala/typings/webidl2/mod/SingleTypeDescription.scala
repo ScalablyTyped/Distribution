@@ -1,19 +1,17 @@
 package typings.webidl2.mod
 
-import typings.webidl2.webidl2Booleans.`false`
 import typings.webidl2.webidl2Strings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SingleTypeDescription
-  extends AbstractNonUnionTypeDescription
+  extends StObject
+     with AbstractNonUnionTypeDescription
      with IDLTypeDescription {
   
   @JSName("generic")
-  var generic_SingleTypeDescription: _empty = js.native
+  var generic_SingleTypeDescription: _empty
   
   /**
     * In most cases, this will just be a string with the type name.
@@ -21,20 +19,19 @@ trait SingleTypeDescription
     * If it is a generic type, it contains the IDL type description for the type in the sequence,
     * the eventual value of the promise, etc.
     */
-  var idlType: String = js.native
+  var idlType: String
 }
 object SingleTypeDescription {
   
   @scala.inline
   def apply(
     extAttrs: js.Array[ExtendedAttribute],
-    generic: _empty,
     idlType: String,
     nullable: Boolean,
-    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription,
-    union: `false`
+    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription
   ): SingleTypeDescription = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = "", idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = false)
+    __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[SingleTypeDescription]
   }
   

@@ -3,17 +3,15 @@ package typings.websocket.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMessage extends StObject {
   
-  var binaryData: js.UndefOr[Buffer] = js.native
+  var binaryData: js.UndefOr[Buffer] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var utf8Data: js.UndefOr[String] = js.native
+  var utf8Data: js.UndefOr[String] = js.undefined
 }
 object IMessage {
   

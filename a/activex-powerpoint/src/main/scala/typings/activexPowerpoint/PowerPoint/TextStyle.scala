@@ -2,24 +2,22 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextStyle extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Levels: TextStyleLevels = js.native
+  val Levels: TextStyleLevels
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.TextStyle_typekey")
-  var PowerPointDotTextStyle_typekey: TextStyle = js.native
+  var PowerPointDotTextStyle_typekey: TextStyle
   
-  val Ruler: typings.activexPowerpoint.PowerPoint.Ruler = js.native
+  val Ruler: typings.activexPowerpoint.PowerPoint.Ruler
   
-  val TextFrame: typings.activexPowerpoint.PowerPoint.TextFrame = js.native
+  val TextFrame: typings.activexPowerpoint.PowerPoint.TextFrame
 }
 object TextStyle {
   

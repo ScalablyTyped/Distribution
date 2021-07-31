@@ -2,15 +2,13 @@ package typings.minecraftScriptingTypesShared
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Range extends StObject {
   
-  var range_max: Double = js.native
+  var range_max: Double
   
-  var range_min: Double = js.native
+  var range_min: Double
 }
 object Range {
   

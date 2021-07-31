@@ -2,89 +2,89 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contract Term List
   */
-@js.native
-trait ContractTerm extends BackboneElement {
+trait ContractTerm
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'issued'.
     */
-  var _issued: js.UndefOr[Element] = js.native
+  var _issued: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'text'.
     */
-  var _text: js.UndefOr[Element] = js.native
+  var _text: js.UndefOr[Element] = js.undefined
   
   /**
     * Contract Term Activity
     */
-  var action: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var action: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Purpose for the Contract Term Action
     */
-  var actionReason: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var actionReason: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Contract Term Agent List
     */
-  var agent: js.UndefOr[js.Array[ContractTermAgent]] = js.native
+  var agent: js.UndefOr[js.Array[ContractTermAgent]] = js.undefined
   
   /**
     * Contract Term Effective Time
     */
-  var applies: js.UndefOr[Period] = js.native
+  var applies: js.UndefOr[Period] = js.undefined
   
   /**
     * Nested Contract Term Group
     */
-  var group: js.UndefOr[js.Array[ContractTerm]] = js.native
+  var group: js.UndefOr[js.Array[ContractTerm]] = js.undefined
   
   /**
     * Contract Term Number
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Contract Term Issue Date Time
     */
-  var issued: js.UndefOr[dateTime] = js.native
+  var issued: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Security Labels that define affected terms
     */
-  var securityLabel: js.UndefOr[js.Array[Coding]] = js.native
+  var securityLabel: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
     * Contract Term Type specific classification
     */
-  var subType: js.UndefOr[CodeableConcept] = js.native
+  var subType: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Human readable Contract term text
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Context of the Contract term
     */
-  var topic: js.UndefOr[js.Array[Reference]] = js.native
+  var topic: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Contract Term Type or Form
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.native
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Contract Term Valued Item List
     */
-  var valuedItem: js.UndefOr[js.Array[ContractTermValuedItem]] = js.native
+  var valuedItem: js.UndefOr[js.Array[ContractTermValuedItem]] = js.undefined
 }
 object ContractTerm {
   

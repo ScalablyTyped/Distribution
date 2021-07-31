@@ -4,24 +4,23 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.quantize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuantizeScale
-  extends BaseScale
+  extends StObject
+     with BaseScale
      with Scale {
   
-  var nice: js.UndefOr[Boolean | Double | SignalRef] = js.native
+  var nice: js.UndefOr[Boolean | Double | SignalRef] = js.undefined
   
-  var padding: js.UndefOr[Double | SignalRef] = js.native
+  var padding: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var range: js.UndefOr[RangeScheme] = js.native
+  var range: js.UndefOr[RangeScheme] = js.undefined
   
   @JSName("type")
-  var type_QuantizeScale: js.UndefOr[quantize] = js.native
+  var type_QuantizeScale: js.UndefOr[quantize] = js.undefined
   
-  var zero: js.UndefOr[Boolean | SignalRef] = js.native
+  var zero: js.UndefOr[Boolean | SignalRef] = js.undefined
 }
 object QuantizeScale {
   

@@ -4,29 +4,29 @@ import typings.reactNavigationRouters.commonActionsMod.Action
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.SET_PARAMS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Type extends Action {
+trait Type
+  extends StObject
+     with Action {
   
   /**
     * List of previously visited route keys.
     */
-  var payload: Params = js.native
+  var payload: Params
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: SET_PARAMS = js.native
+  var `type`: SET_PARAMS
 }
 object Type {
   
   @scala.inline
-  def apply(payload: Params, `type`: SET_PARAMS): Type = {
+  def apply(payload: Params): Type = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SET_PARAMS")
     __obj.asInstanceOf[Type]
   }
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDrive.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Limit extends StObject {
   
   /** The usage limit, if applicable. This will not be present if the user has unlimited storage. */
-  var limit: js.UndefOr[String] = js.native
+  var limit: js.UndefOr[String] = js.undefined
   
   /** The total usage across all services. */
-  var usage: js.UndefOr[String] = js.native
+  var usage: js.UndefOr[String] = js.undefined
   
   /** The usage by all files in Google Drive. */
-  var usageInDrive: js.UndefOr[String] = js.native
+  var usageInDrive: js.UndefOr[String] = js.undefined
   
   /** The usage by trashed files in Google Drive. */
-  var usageInDriveTrash: js.UndefOr[String] = js.native
+  var usageInDriveTrash: js.UndefOr[String] = js.undefined
 }
 object Limit {
   

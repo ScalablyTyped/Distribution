@@ -2,26 +2,24 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRepositoryRequest extends StObject {
   
   /**
     *  If a repository contains images, forces the deletion.
     */
-  var force: js.UndefOr[ForceFlag] = js.native
+  var force: js.UndefOr[ForceFlag] = js.undefined
   
   /**
     * The AWS account ID associated with the registry that contains the repository to delete. If you do not specify a registry, the default registry is assumed.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The name of the repository to delete.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object DeleteRepositoryRequest {
   

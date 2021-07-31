@@ -4,7 +4,6 @@ import typings.homeworks.homeworksStrings.move
 import typings.homeworks.homeworksStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object homeworks {
@@ -12,32 +11,28 @@ object homeworks {
   /**
     * @since 1.0.0
     */
-  @js.native
   trait CheckboxOptions extends StObject
   
   /**
     * @since 1.0.0
     */
-  @js.native
   trait ConverterOptions extends StObject
   
   /**
     * @since 1.0.0
     */
-  @js.native
   trait DropdownOptions extends StObject
   
   /**
     * @since 1.0.44
     */
-  @js.native
   trait Event extends StObject {
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var element: JQuery = js.native
+    var element: JQuery
     
-    var value: String | js.Array[String] | Double = js.native
+    var value: String | js.Array[String] | Double
   }
   object Event {
     
@@ -70,18 +65,16 @@ object homeworks {
   /**
     * @since 1.0.0
     */
-  @js.native
   trait InputOptions extends StObject
   
   /**
     * @since 1.0.44
     */
-  @js.native
   trait RippleEvent extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object RippleEvent {
     
@@ -110,12 +103,11 @@ object homeworks {
   /**
     * @since 1.0.0
     */
-  @js.native
   trait SpinnerOptions extends StObject {
     
-    var empty: js.UndefOr[js.Any] = js.native
+    var empty: js.UndefOr[js.Any] = js.undefined
     
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
   }
   object SpinnerOptions {
     
@@ -145,14 +137,13 @@ object homeworks {
   /**
     * @since 1.0.44
     */
-  @js.native
   trait StepEvent extends StObject {
     
-    var header: js.Array[JQuery] = js.native
+    var header: js.Array[JQuery]
     
-    var index: Double = js.native
+    var index: Double
     
-    var length: Double = js.native
+    var length: Double
   }
   object StepEvent {
     
@@ -187,10 +178,9 @@ object homeworks {
   /**
     * @since 1.0.0
     */
-  @js.native
   trait StepOptions extends StObject {
     
-    var active: js.UndefOr[Double] = js.native
+    var active: js.UndefOr[Double] = js.undefined
   }
   object StepOptions {
     
@@ -214,14 +204,13 @@ object homeworks {
   /**
     * @since 1.0.44
     */
-  @js.native
   trait TabEvent extends StObject {
     
-    var header: js.Array[JQuery] = js.native
+    var header: js.Array[JQuery]
     
-    var index: Double = js.native
+    var index: Double
     
-    var length: Double = js.native
+    var length: Double
   }
   object TabEvent {
     
@@ -256,10 +245,9 @@ object homeworks {
   /**
     * @since 1.0.0
     */
-  @js.native
   trait TabOptions extends StObject {
     
-    var active: js.UndefOr[Double] = js.native
+    var active: js.UndefOr[Double] = js.undefined
   }
   object TabOptions {
     
@@ -283,10 +271,9 @@ object homeworks {
   /**
     * @since 1.0.0
     */
-  @js.native
   trait ToggleOptions extends StObject {
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
   }
   object ToggleOptions {
     
@@ -310,16 +297,15 @@ object homeworks {
   /**
     * @since 1.0.0
     */
-  @js.native
   trait UploadOptions extends StObject {
     
-    var beforeStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var beforeStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var complete: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
+    var complete: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
     var error: js.UndefOr[
         js.Function3[
@@ -328,11 +314,11 @@ object homeworks {
           /* error */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var extensions: js.UndefOr[js.Any] = js.native
+    var extensions: js.UndefOr[js.Any] = js.undefined
     
-    var isBtn: js.UndefOr[Boolean] = js.native
+    var isBtn: js.UndefOr[Boolean] = js.undefined
     
     var success: js.UndefOr[
         js.Function3[
@@ -341,11 +327,11 @@ object homeworks {
           /* xhr */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object UploadOptions {
     

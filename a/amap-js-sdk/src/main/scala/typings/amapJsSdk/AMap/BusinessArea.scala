@@ -2,17 +2,15 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BusinessArea extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var location: String = js.native
+  var location: String
   
-  var name: String = js.native
+  var name: String
 }
 object BusinessArea {
   

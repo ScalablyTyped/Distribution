@@ -2,26 +2,24 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanaryRunConfigOutput extends StObject {
   
   /**
     * Displays whether this canary run used active AWS X-Ray tracing. 
     */
-  var ActiveTracing: js.UndefOr[NullableBoolean] = js.native
+  var ActiveTracing: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The maximum amount of memory available to the canary while it is running, in MB. This value must be a multiple of 64.
     */
-  var MemoryInMB: js.UndefOr[MaxSize3008] = js.native
+  var MemoryInMB: js.UndefOr[MaxSize3008] = js.undefined
   
   /**
     * How long the canary is allowed to run before it must stop.
     */
-  var TimeoutInSeconds: js.UndefOr[MaxFifteenMinutesInSeconds] = js.native
+  var TimeoutInSeconds: js.UndefOr[MaxFifteenMinutesInSeconds] = js.undefined
 }
 object CanaryRunConfigOutput {
   

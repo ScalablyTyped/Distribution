@@ -4,19 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protocolBuffersSchema.anon.From
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Enum extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var options: Options = js.native
+    var options: Options
     
-    var values: StringDictionary[typings.protocolBuffersSchema.anon.Options] = js.native
+    var values: StringDictionary[typings.protocolBuffersSchema.anon.Options]
   }
   object Enum {
     
@@ -44,12 +42,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Extend extends StObject {
     
-    var message: Message = js.native
+    var message: Message
     
-    var name: String = js.native
+    var name: String
   }
   object Extend {
     
@@ -70,12 +67,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Extension extends StObject {
     
-    var from: Double = js.native
+    var from: Double
     
-    var to: Double = js.native
+    var to: Double
   }
   object Extension {
     
@@ -96,24 +92,23 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Field extends StObject {
     
-    var map: From = js.native
+    var map: From
     
-    var name: String = js.native
+    var name: String
     
-    var oneof: Null | String = js.native
+    var oneof: Null | String
     
-    var options: FieldOptions = js.native
+    var options: FieldOptions
     
-    var repeated: Boolean = js.native
+    var repeated: Boolean
     
-    var required: Boolean = js.native
+    var required: Boolean
     
-    var tag: Double = js.native
+    var tag: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Field {
     
@@ -127,7 +122,7 @@ object typesMod {
       tag: Double,
       `type`: String
     ): Field = {
-      val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], repeated = repeated.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], repeated = repeated.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], oneof = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Field]
     }
@@ -166,22 +161,21 @@ object typesMod {
   
   type FieldOptions = StringDictionary[String]
   
-  @js.native
   trait Message extends StObject {
     
-    var enums: js.Array[Enum] = js.native
+    var enums: js.Array[Enum]
     
-    var `extends`: js.Array[Extend] = js.native
+    var `extends`: js.Array[Extend]
     
-    var extensions: js.Array[Extension] = js.native
+    var extensions: js.Array[Extension]
     
-    var fields: js.Array[Field] = js.native
+    var fields: js.Array[Field]
     
-    var messages: js.Array[Message] = js.native
+    var messages: js.Array[Message]
     
-    var name: String = js.native
+    var name: String
     
-    var options: Options = js.native
+    var options: Options
   }
   object Message {
     
@@ -241,20 +235,19 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Method extends StObject {
     
-    var client_streaming: Boolean = js.native
+    var client_streaming: Boolean
     
-    var input_type: String = js.native
+    var input_type: String
     
-    var name: String = js.native
+    var name: String
     
-    var options: Options = js.native
+    var options: Options
     
-    var output_type: String = js.native
+    var output_type: String
     
-    var server_streaming: Boolean = js.native
+    var server_streaming: Boolean
   }
   object Method {
     
@@ -298,25 +291,24 @@ object typesMod {
   
   type Options = StringDictionary[String | Boolean | Option | js.Array[Option]]
   
-  @js.native
   trait Schema extends StObject {
     
     @JSName("package")
-    var _package: Null | String = js.native
+    var _package: Null | String
     
-    var enums: js.Array[Enum] = js.native
+    var enums: js.Array[Enum]
     
-    var `extends`: js.Array[Extend] = js.native
+    var `extends`: js.Array[Extend]
     
-    var imports: js.Array[String] = js.native
+    var imports: js.Array[String]
     
-    var messages: js.Array[Message] = js.native
+    var messages: js.Array[Message]
     
-    var options: Options = js.native
+    var options: Options
     
-    var services: js.UndefOr[js.Array[Service]] = js.native
+    var services: js.UndefOr[js.Array[Service]] = js.undefined
     
-    var syntax: Double = js.native
+    var syntax: Double
   }
   object Schema {
     
@@ -331,6 +323,7 @@ object typesMod {
     ): Schema = {
       val __obj = js.Dynamic.literal(enums = enums.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], syntax = syntax.asInstanceOf[js.Any])
       __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
+      __obj.updateDynamic("package")(null)
       __obj.asInstanceOf[Schema]
     }
     
@@ -384,14 +377,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Service extends StObject {
     
-    var methods: js.Array[Method] = js.native
+    var methods: js.Array[Method]
     
-    var name: String = js.native
+    var name: String
     
-    var options: Options = js.native
+    var options: Options
   }
   object Service {
     

@@ -6,41 +6,41 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceMembersList extends StandardParameters {
+trait ParamsResourceMembersList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Email or immutable ID of the group
     */
-  var groupKey: js.UndefOr[String] = js.native
+  var groupKey: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to list indirect memberships. Default: false.
     */
-  var includeDerivedMembership: js.UndefOr[Boolean] = js.native
+  var includeDerivedMembership: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum number of results to return. Default is 200
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Token to specify next page in the list
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Comma separated role values to filter list results on.
     */
-  var roles: js.UndefOr[String] = js.native
+  var roles: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceMembersList {
   

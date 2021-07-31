@@ -3,48 +3,46 @@ package typings.winrtUwp.Windows.Devices.Geolocation
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the information for identifying a geographic location. */
-@js.native
 trait Geocoordinate extends StObject {
   
   /** The accuracy of the location in meters. */
-  var accuracy: Double = js.native
+  var accuracy: Double
   
   /** The altitude of the location, in meters. */
-  var altitude: Double = js.native
+  var altitude: Double
   
   /** The accuracy of the altitude, in meters. */
-  var altitudeAccuracy: Double = js.native
+  var altitudeAccuracy: Double
   
   /** The current heading in degrees relative to true north. */
-  var heading: Double = js.native
+  var heading: Double
   
   /** The latitude in degrees. */
-  var latitude: Double = js.native
+  var latitude: Double
   
   /** The longitude in degrees. */
-  var longitude: Double = js.native
+  var longitude: Double
   
   /** The location of the Geocoordinate. */
-  var point: Geopoint = js.native
+  var point: Geopoint
   
   /** Gets the source used to obtain a Geocoordinate. */
-  var positionSource: PositionSource = js.native
+  var positionSource: PositionSource
   
   /** Gets the time at which the associated Geocoordinate position was calculated. */
-  var positionSourceTimestamp: Date = js.native
+  var positionSourceTimestamp: Date
   
   /** Gets information about the satellites used to obtain a Geocoordinate. */
-  var satelliteData: GeocoordinateSatelliteData = js.native
+  var satelliteData: GeocoordinateSatelliteData
   
   /** The speed in meters per second. */
-  var speed: Double = js.native
+  var speed: Double
   
   /** The system time at which the location was determined. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object Geocoordinate {
   

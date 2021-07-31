@@ -3,14 +3,16 @@ package typings.owaspPasswordStrengthTest
 import typings.owaspPasswordStrengthTest.anon.PartialTestConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("owasp-password-strength-test", "config")
+  @JSImport("owasp-password-strength-test", JSImport.Namespace)
   @js.native
-  def config(configuration: PartialTestConfig): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def config(configuration: PartialTestConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(configuration.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Inlined std.Readonly<owasp-password-strength-test.owasp-password-strength-test.TestConfig> */
   object configs {
@@ -36,9 +38,8 @@ object mod {
     val minPhraseLength: Double = js.native
   }
   
-  @JSImport("owasp-password-strength-test", "test")
-  @js.native
-  def test(password: String): TestResult = js.native
+  @scala.inline
+  def test(password: String): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(password.asInstanceOf[js.Any]).asInstanceOf[TestResult]
   
   object tests {
     
@@ -61,7 +62,6 @@ object mod {
   
   type PasswordTest = js.Function1[/* password */ String, js.UndefOr[String]]
   
-  @js.native
   trait TestConfig extends StObject {
     
     /**
@@ -69,26 +69,26 @@ object mod {
       * If set to false, the strength-checker will abandon the notion of "passphrases",
       * and will subject all passwords to the same complexity requirements.
       */
-    var allowPassphrases: Boolean = js.native
+    var allowPassphrases: Boolean
     
     /** constraint on a password's maximum length */
-    var maxLength: Double = js.native
+    var maxLength: Double
     
     /** constraint on a password's minimum length */
-    var minLength: Double = js.native
+    var minLength: Double
     
     /**
       * minimum number of optional tests that a password must pass in order to be considered "strong";
       * By default (per the OWASP guidelines), four optional complexity tests are made,
       * and a password must pass at least three of them in order to be considered "strong"
       */
-    var minOptionalTestsToPass: Double = js.native
+    var minOptionalTestsToPass: Double
     
     /**
       * minimum length a password needs to achieve in order to be considered a "passphrase"
       * (and thus exempted from the optional complexity tests by default)
       */
-    var minPhraseLength: Double = js.native
+    var minPhraseLength: Double
   }
   object TestConfig {
     
@@ -124,36 +124,35 @@ object mod {
     }
   }
   
-  @js.native
   trait TestResult extends StObject {
     
     /** error messages associated with the failed tests */
-    var errors: js.Array[String] = js.native
+    var errors: js.Array[String]
     
     /** enumerates which tests have failed, beginning from 0 with the first required test */
-    var failedTests: js.Array[Double] = js.native
+    var failedTests: js.Array[Double]
     
     /** indicates whether or not the password was considered to be a passphrase */
-    var isPassphrase: Boolean = js.native
+    var isPassphrase: Boolean
     
     /** error messages of optional tests that have failed */
-    var optionalTestErrors: js.Array[String] = js.native
+    var optionalTestErrors: js.Array[String]
     
     /**
       * indicates how many of the optional tests were passed;
       * In order for the password to be considered "strong", it (by default) must either be a passphrase,
       * or must pass a number of optional tests that is equal to or greater than configs.minOptionalTestsToPass
       */
-    var optionalTestsPassed: Double = js.native
+    var optionalTestsPassed: Double
     
     /** enumerates which tests have succeeded, beginning from 0 with the first required test */
-    var passedTests: js.Array[Double] = js.native
+    var passedTests: js.Array[Double]
     
     /** error messages of required tests that have failed */
-    var requiredTestErrors: js.Array[String] = js.native
+    var requiredTestErrors: js.Array[String]
     
     /** indicates whether or not the user's password satisfied the strength requirements */
-    var strong: Boolean = js.native
+    var strong: Boolean
   }
   object TestResult {
     

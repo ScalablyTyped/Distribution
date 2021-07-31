@@ -11,8 +11,8 @@ Expose localhost to the world
 | Full name          | localtunnel |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 141 |
-| # downloads        | 24012290 |
+| # dependents       | 153 |
+| # downloads        | 26640801 |
 | # stars            | 86 |
 
 ## Links

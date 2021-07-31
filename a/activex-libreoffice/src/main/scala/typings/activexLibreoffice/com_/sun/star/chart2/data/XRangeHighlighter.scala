@@ -6,23 +6,23 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XRangeHighlighter extends XInterface {
+trait XRangeHighlighter
+  extends StObject
+     with XInterface {
   
   /** Returns a list of ranges that are used by objects that are currently selected. */
-  val SelectedRanges: SafeArray[HighlightedRange] = js.native
+  val SelectedRanges: SafeArray[HighlightedRange]
   
   /** registers an event listener, which is called when the selection is changed and affects different source ranges */
-  def addSelectionChangeListener(xListener: XSelectionChangeListener): Unit = js.native
+  def addSelectionChangeListener(xListener: XSelectionChangeListener): Unit
   
   /** Returns a list of ranges that are used by objects that are currently selected. */
-  def getSelectedRanges(): SafeArray[HighlightedRange] = js.native
+  def getSelectedRanges(): SafeArray[HighlightedRange]
   
   /** unregisters an event listener which was registered with {@link XRangeHighlighter.addSelectionChangeListener()} before. */
-  def removeSelectionChangeListener(xListener: XSelectionChangeListener): Unit = js.native
+  def removeSelectionChangeListener(xListener: XSelectionChangeListener): Unit
 }
 object XRangeHighlighter {
   

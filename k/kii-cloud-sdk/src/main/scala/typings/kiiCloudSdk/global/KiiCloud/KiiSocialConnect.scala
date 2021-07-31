@@ -4,7 +4,6 @@ import typings.kiiCloudSdk.KiiCloud.KiiSocialConnectOptions
 import typings.kiiCloudSdk.anon.`36`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("KiiCloud.KiiSocialConnect")
 @js.native
 class KiiSocialConnect ()
-  extends typings.kiiCloudSdk.KiiCloud.KiiSocialConnect
+  extends StObject
+     with typings.kiiCloudSdk.KiiCloud.KiiSocialConnect
 object KiiSocialConnect {
+  
+  @JSGlobal("KiiCloud.KiiSocialConnect")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Retrieve the current user's access token expiration date from a social network
@@ -28,9 +32,8 @@ object KiiSocialConnect {
     * @return The current access token expiration date, null if unavailable
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiSocialConnect.getAccessTokenExpirationForNetwork")
-  @js.native
-  def getAccessTokenExpirationForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): String = js.native
+  @scala.inline
+  def getAccessTokenExpirationForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessTokenExpirationForNetwork")(networkName.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Retrieve the current user's access token from a social network
@@ -43,9 +46,8 @@ object KiiSocialConnect {
     * @return The current access token, null if unavailable
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiSocialConnect.getAccessTokenForNetwork")
-  @js.native
-  def getAccessTokenForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): String = js.native
+  @scala.inline
+  def getAccessTokenForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessTokenForNetwork")(networkName.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Retrieve the current user's access token object from a social network
@@ -81,9 +83,8 @@ object KiiSocialConnect {
     * @return tokenObject The current access token object, null if unavailable.
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiSocialConnect.getAccessTokenObjectForNetwork")
-  @js.native
-  def getAccessTokenObjectForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): js.Any = js.native
+  @scala.inline
+  def getAccessTokenObjectForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessTokenObjectForNetwork")(networkName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Link the currently logged in user with a social network
@@ -251,16 +252,19 @@ object KiiSocialConnect {
     *      );
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiSocialConnect.linkCurrentUserWithNetwork")
-  @js.native
+  @scala.inline
   def linkCurrentUserWithNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName, options: KiiSocialConnectOptions): js.Promise[
     js.Tuple2[
       typings.kiiCloudSdk.KiiCloud.KiiUser, 
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
     ]
-  ] = js.native
-  @JSGlobal("KiiCloud.KiiSocialConnect.linkCurrentUserWithNetwork")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("linkCurrentUserWithNetwork")(networkName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    js.Tuple2[
+      typings.kiiCloudSdk.KiiCloud.KiiUser, 
+      typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
+    ]
+  ]]
+  @scala.inline
   def linkCurrentUserWithNetwork(
     networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName,
     options: KiiSocialConnectOptions,
@@ -270,7 +274,12 @@ object KiiSocialConnect {
       typings.kiiCloudSdk.KiiCloud.KiiUser, 
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
     ]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("linkCurrentUserWithNetwork")(networkName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    js.Tuple2[
+      typings.kiiCloudSdk.KiiCloud.KiiUser, 
+      typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
+    ]
+  ]]
   
   /**
     * Log a user into the social network provided
@@ -440,16 +449,19 @@ object KiiSocialConnect {
     *      );
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiSocialConnect.logIn")
-  @js.native
+  @scala.inline
   def logIn(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName, options: KiiSocialConnectOptions): js.Promise[
     js.Tuple2[
       typings.kiiCloudSdk.KiiCloud.KiiUser, 
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
     ]
-  ] = js.native
-  @JSGlobal("KiiCloud.KiiSocialConnect.logIn")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("logIn")(networkName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    js.Tuple2[
+      typings.kiiCloudSdk.KiiCloud.KiiUser, 
+      typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
+    ]
+  ]]
+  @scala.inline
   def logIn(
     networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName,
     options: KiiSocialConnectOptions,
@@ -459,7 +471,12 @@ object KiiSocialConnect {
       typings.kiiCloudSdk.KiiCloud.KiiUser, 
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
     ]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("logIn")(networkName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    js.Tuple2[
+      typings.kiiCloudSdk.KiiCloud.KiiUser, 
+      typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
+    ]
+  ]]
   
   /**
     *
@@ -589,14 +606,13 @@ object KiiSocialConnect {
     * @throws For details refer to the table above
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiSocialConnect.setupNetwork")
-  @js.native
+  @scala.inline
   def setupNetwork(
     networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName,
     apiKey: String,
     apiSecret: String,
     extras: js.Any
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupNetwork")(networkName.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], apiSecret.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Unlink the currently logged in user with a social network
@@ -648,20 +664,28 @@ object KiiSocialConnect {
     *      );
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiSocialConnect.unLinkCurrentUserFromNetwork")
-  @js.native
+  @scala.inline
   def unLinkCurrentUserFromNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): js.Promise[
     js.Tuple2[
       typings.kiiCloudSdk.KiiCloud.KiiUser, 
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
     ]
-  ] = js.native
-  @JSGlobal("KiiCloud.KiiSocialConnect.unLinkCurrentUserFromNetwork")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("unLinkCurrentUserFromNetwork")(networkName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    js.Tuple2[
+      typings.kiiCloudSdk.KiiCloud.KiiUser, 
+      typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
+    ]
+  ]]
+  @scala.inline
   def unLinkCurrentUserFromNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName, callbacks: `36`): js.Promise[
     js.Tuple2[
       typings.kiiCloudSdk.KiiCloud.KiiUser, 
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
     ]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("unLinkCurrentUserFromNetwork")(networkName.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    js.Tuple2[
+      typings.kiiCloudSdk.KiiCloud.KiiUser, 
+      typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
+    ]
+  ]]
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStackProvisioningParametersRequest extends StObject {
   
   /**
     * The stack ID.
     */
-  var StackId: String = js.native
+  var StackId: String
 }
 object DescribeStackProvisioningParametersRequest {
   

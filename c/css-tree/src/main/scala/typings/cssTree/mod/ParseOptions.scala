@@ -2,35 +2,33 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParseOptions extends StObject {
   
-  var atrule: js.UndefOr[String] = js.native
+  var atrule: js.UndefOr[String] = js.undefined
   
-  var column: js.UndefOr[Double] = js.native
+  var column: js.UndefOr[Double] = js.undefined
   
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
-  var line: js.UndefOr[Double] = js.native
+  var line: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var onParseError: js.UndefOr[js.Function2[/* error */ SyntaxParseError, /* fallbackNode */ CssNode, Unit]] = js.native
+  var onParseError: js.UndefOr[js.Function2[/* error */ SyntaxParseError, /* fallbackNode */ CssNode, Unit]] = js.undefined
   
-  var parseAtrulePrelude: js.UndefOr[Boolean] = js.native
+  var parseAtrulePrelude: js.UndefOr[Boolean] = js.undefined
   
-  var parseCustomProperty: js.UndefOr[Boolean] = js.native
+  var parseCustomProperty: js.UndefOr[Boolean] = js.undefined
   
-  var parseRulePrelude: js.UndefOr[Boolean] = js.native
+  var parseRulePrelude: js.UndefOr[Boolean] = js.undefined
   
-  var parseValue: js.UndefOr[Boolean] = js.native
+  var parseValue: js.UndefOr[Boolean] = js.undefined
   
-  var positions: js.UndefOr[Boolean] = js.native
+  var positions: js.UndefOr[Boolean] = js.undefined
 }
 object ParseOptions {
   

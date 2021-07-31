@@ -2,51 +2,49 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticateCognitoActionConfig extends StObject {
   
   /**
     * The query parameters (up to 10) to include in the redirect request to the authorization endpoint.
     */
-  var AuthenticationRequestExtraParams: js.UndefOr[AuthenticateCognitoActionAuthenticationRequestExtraParams] = js.native
+  var AuthenticationRequestExtraParams: js.UndefOr[AuthenticateCognitoActionAuthenticationRequestExtraParams] = js.undefined
   
   /**
     * The behavior if the user is not authenticated. The following are possible values:   deny - Return an HTTP 401 Unauthorized error.   allow - Allow the request to be forwarded to the target.   authenticate - Redirect the request to the IdP authorization endpoint. This is the default value.  
     */
-  var OnUnauthenticatedRequest: js.UndefOr[AuthenticateCognitoActionConditionalBehaviorEnum] = js.native
+  var OnUnauthenticatedRequest: js.UndefOr[AuthenticateCognitoActionConditionalBehaviorEnum] = js.undefined
   
   /**
     * The set of user claims to be requested from the IdP. The default is openid. To verify which scope values your IdP supports and how to separate multiple values, see the documentation for your IdP.
     */
-  var Scope: js.UndefOr[AuthenticateCognitoActionScope] = js.native
+  var Scope: js.UndefOr[AuthenticateCognitoActionScope] = js.undefined
   
   /**
     * The name of the cookie used to maintain session information. The default is AWSELBAuthSessionCookie.
     */
-  var SessionCookieName: js.UndefOr[AuthenticateCognitoActionSessionCookieName] = js.native
+  var SessionCookieName: js.UndefOr[AuthenticateCognitoActionSessionCookieName] = js.undefined
   
   /**
     * The maximum duration of the authentication session, in seconds. The default is 604800 seconds (7 days).
     */
-  var SessionTimeout: js.UndefOr[AuthenticateCognitoActionSessionTimeout] = js.native
+  var SessionTimeout: js.UndefOr[AuthenticateCognitoActionSessionTimeout] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon Cognito user pool.
     */
-  var UserPoolArn: AuthenticateCognitoActionUserPoolArn = js.native
+  var UserPoolArn: AuthenticateCognitoActionUserPoolArn
   
   /**
     * The ID of the Amazon Cognito user pool client.
     */
-  var UserPoolClientId: AuthenticateCognitoActionUserPoolClientId = js.native
+  var UserPoolClientId: AuthenticateCognitoActionUserPoolClientId
   
   /**
     * The domain prefix or fully-qualified domain name of the Amazon Cognito user pool.
     */
-  var UserPoolDomain: AuthenticateCognitoActionUserPoolDomain = js.native
+  var UserPoolDomain: AuthenticateCognitoActionUserPoolDomain
 }
 object AuthenticateCognitoActionConfig {
   

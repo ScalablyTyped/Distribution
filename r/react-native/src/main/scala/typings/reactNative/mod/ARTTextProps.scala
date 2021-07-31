@@ -2,15 +2,15 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ARTTextProps extends ARTRenderableMixin {
+trait ARTTextProps
+  extends StObject
+     with ARTRenderableMixin {
   
-  var alignment: js.UndefOr[String] = js.native
+  var alignment: js.UndefOr[String] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
 }
 object ARTTextProps {
   

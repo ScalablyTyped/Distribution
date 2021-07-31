@@ -12,7 +12,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputGroupMod {
@@ -20,15 +19,15 @@ object inputGroupMod {
   @JSImport("@blueprintjs/core/lib/esm/components/forms/inputGroup", "InputGroup")
   @js.native
   class InputGroup protected ()
-    extends AbstractPureComponent2[IInputGroupProps with HTMLInputProps, IInputGroupState, js.Object] {
-    def this(props: IInputGroupProps with HTMLInputProps) = this()
-    def this(props: IInputGroupProps with HTMLInputProps, context: js.Any) = this()
+    extends AbstractPureComponent2[IInputGroupProps & HTMLInputProps, IInputGroupState, js.Object] {
+    def this(props: IInputGroupProps & HTMLInputProps) = this()
+    def this(props: IInputGroupProps & HTMLInputProps, context: js.Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MInputGroup(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MInputGroup(prevProps: IInputGroupProps with HTMLInputProps): Unit = js.native
+    def componentDidUpdate_MInputGroup(prevProps: IInputGroupProps & HTMLInputProps): Unit = js.native
     
     var leftElement: js.Any = js.native
     
@@ -56,9 +55,9 @@ object inputGroupMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IInputGroupProps
-    extends IControlledProps
+    extends StObject
+       with IControlledProps
        with IIntentProps
        with IProps {
     
@@ -68,59 +67,59 @@ object inputGroupMod {
       * the `onChange` handler, or if working with certain libraries like __redux-form__.
       * @default false
       */
-    var asyncControl: js.UndefOr[Boolean] = js.native
+    var asyncControl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the input is non-interactive.
       * Note that `rightElement` must be disabled separately; this prop will not affect it.
       * @default false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the component should take up the full width of its container.
       */
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
     /** Ref handler or a ref object that receives HTML `<input>` element backing this component. */
-    var inputRef: js.UndefOr[IRef[HTMLInputElement]] = js.native
+    var inputRef: js.UndefOr[IRef[HTMLInputElement]] = js.undefined
     
     /** Whether this input should use large styles. */
-    var large: js.UndefOr[Boolean] = js.native
+    var large: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Element to render on the left side of input.  This prop is mutually exclusive
       * with `leftIcon`.
       */
-    var leftElement: js.UndefOr[Element] = js.native
+    var leftElement: js.UndefOr[Element] = js.undefined
     
     /**
       * Name of a Blueprint UI icon to render on the left side of the input group,
       * before the user's cursor.  This prop is mutually exclusive with `leftElement`.
       * Usage with content is deprecated.  Use `leftElement` for elements.
       */
-    var leftIcon: js.UndefOr[IconName | MaybeElement] = js.native
+    var leftIcon: js.UndefOr[IconName | MaybeElement] = js.undefined
     
     /** Placeholder text in the absence of any value. */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * Element to render on right side of input.
       * For best results, use a minimal button, tag, or small spinner.
       */
-    var rightElement: js.UndefOr[Element] = js.native
+    var rightElement: js.UndefOr[Element] = js.undefined
     
     /** Whether the input (and any buttons) should appear with rounded caps. */
-    var round: js.UndefOr[Boolean] = js.native
+    var round: js.UndefOr[Boolean] = js.undefined
     
     /** Whether this input should use small styles. */
-    var small: js.UndefOr[Boolean] = js.native
+    var small: js.UndefOr[Boolean] = js.undefined
     
     /**
       * HTML `input` type attribute.
       * @default "text"
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object IInputGroupProps {
     
@@ -213,12 +212,11 @@ object inputGroupMod {
     }
   }
   
-  @js.native
   trait IInputGroupState extends StObject {
     
-    var leftElementWidth: js.UndefOr[Double] = js.native
+    var leftElementWidth: js.UndefOr[Double] = js.undefined
     
-    var rightElementWidth: js.UndefOr[Double] = js.native
+    var rightElementWidth: js.UndefOr[Double] = js.undefined
   }
   object IInputGroupState {
     

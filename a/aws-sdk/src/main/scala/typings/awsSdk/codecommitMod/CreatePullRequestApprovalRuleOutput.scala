@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePullRequestApprovalRuleOutput extends StObject {
   
   /**
     * Information about the created approval rule.
     */
-  var approvalRule: ApprovalRule = js.native
+  var approvalRule: ApprovalRule
 }
 object CreatePullRequestApprovalRuleOutput {
   

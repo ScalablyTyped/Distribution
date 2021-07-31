@@ -2,17 +2,15 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConsensusRegisterRequest extends StObject {
   
   /** ConsensusRegisterRequest name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** ConsensusRegisterRequest version */
-  var version: js.UndefOr[String | Null] = js.native
+  var version: js.UndefOr[String | Null] = js.undefined
 }
 object IConsensusRegisterRequest {
   

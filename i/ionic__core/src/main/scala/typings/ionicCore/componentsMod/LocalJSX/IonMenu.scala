@@ -4,66 +4,64 @@ import typings.ionicCore.mod.Side
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonMenu extends StObject {
   
   /**
     * The content's id the menu should use.
     */
-  var contentId: js.UndefOr[String] = js.native
+  var contentId: js.UndefOr[String] = js.undefined
   
   /**
     * If `true`, the menu is disabled.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The edge threshold for dragging the menu open. If a drag/swipe happens over this value, the menu is not triggered.
     */
-  var maxEdgeStart: js.UndefOr[Double] = js.native
+  var maxEdgeStart: js.UndefOr[Double] = js.undefined
   
   /**
     * An id for the menu.
     */
-  var menuId: js.UndefOr[String] = js.native
+  var menuId: js.UndefOr[String] = js.undefined
   
   /**
     * Emitted when the menu is closed.
     */
-  var onIonDidClose: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonDidClose: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the menu is open.
     */
-  var onIonDidOpen: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonDidOpen: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the menu is about to be closed.
     */
-  var onIonWillClose: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonWillClose: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted when the menu is about to be opened.
     */
-  var onIonWillOpen: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonWillOpen: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Which side of the view the menu should be placed.
     */
-  var side: js.UndefOr[Side] = js.native
+  var side: js.UndefOr[Side] = js.undefined
   
   /**
     * If `true`, swiping the menu is enabled.
     */
-  var swipeGesture: js.UndefOr[Boolean] = js.native
+  var swipeGesture: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The display type of the menu. Available options: `"overlay"`, `"reveal"`, `"push"`.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object IonMenu {
   

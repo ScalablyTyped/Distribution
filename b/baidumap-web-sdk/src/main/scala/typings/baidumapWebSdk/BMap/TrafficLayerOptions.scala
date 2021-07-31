@@ -2,13 +2,11 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrafficLayerOptions extends StObject {
   
-  var predictDate: js.UndefOr[PredictDate] = js.native
+  var predictDate: js.UndefOr[PredictDate] = js.undefined
 }
 object TrafficLayerOptions {
   

@@ -6,13 +6,14 @@ import typings.ckeditorCkeditor5Utils.mod.Emitter
 import typings.ckeditorCkeditor5Utils.mod.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/view/view
 @JSImport("@ckeditor/ckeditor5-engine", "view.View")
 @js.native
-class View () extends Observable {
+class View ()
+  extends StObject
+     with Observable {
   
   def listenTo(emitter: Emitter, event: String, callback: js.Function, options: Priority): Unit = js.native
   

@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides client functionality for the Insert Table dialog within the  ASPxHtmlEditor.
   */
-@js.native
-trait ASPxClientHtmlEditorInsertTableDialog extends ASPxClientHtmlEditorTableDialog {
+trait ASPxClientHtmlEditorInsertTableDialog
+  extends StObject
+     with ASPxClientHtmlEditorTableDialog {
   
   /**
     * Provides access to the client object of the "Columns" spin editor in the Html Editor's Table dialogs.
     */
-  def GetColumnCountSpinEdit(): ASPxClientSpinEdit = js.native
+  def GetColumnCountSpinEdit(): ASPxClientSpinEdit
   
   /**
     * Provides access to the client object of the "Equal column widths" check box in the Html Editor's Table dialogs.
     */
-  def GetEqualWidthCheckBox(): ASPxClientCheckBox = js.native
+  def GetEqualWidthCheckBox(): ASPxClientCheckBox
   
   /**
     * Provides access to the client object of the "Rows" spin editor in the Html Editor's Table dialogs.
     */
-  def GetRowCountSpinEdit(): ASPxClientSpinEdit = js.native
+  def GetRowCountSpinEdit(): ASPxClientSpinEdit
 }
 object ASPxClientHtmlEditorInsertTableDialog {
   

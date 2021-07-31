@@ -3,20 +3,17 @@ package typings.winrt.Windows.Management
 import typings.winrt.Windows.Storage.ApplicationData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Core {
   
   type ApplicationDataManager = IApplicationDataManager
   
-  @js.native
   trait IApplicationDataManager extends StObject
   
-  @js.native
   trait IApplicationDataManagerStatics extends StObject {
     
-    def createForPackageFamily(packageFamilyName: String): ApplicationData = js.native
+    def createForPackageFamily(packageFamilyName: String): ApplicationData
   }
   object IApplicationDataManagerStatics {
     

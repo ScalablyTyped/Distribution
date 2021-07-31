@@ -6,50 +6,48 @@ import typings.select2.select2Strings.rtl
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options[Result, RemoteResult] extends StObject {
   
-  var ajax: js.UndefOr[AjaxOptions[Result, RemoteResult]] = js.native
+  var ajax: js.UndefOr[AjaxOptions[Result, RemoteResult]] = js.undefined
   
-  var allowClear: js.UndefOr[Boolean] = js.native
+  var allowClear: js.UndefOr[Boolean] = js.undefined
   
-  var amdBase: js.UndefOr[String] = js.native
+  var amdBase: js.UndefOr[String] = js.undefined
   
-  var amdLanguageBase: js.UndefOr[String] = js.native
+  var amdLanguageBase: js.UndefOr[String] = js.undefined
   
-  var closeOnSelect: js.UndefOr[Boolean] = js.native
+  var closeOnSelect: js.UndefOr[Boolean] = js.undefined
   
-  var containerCss: js.UndefOr[js.Any] = js.native
+  var containerCss: js.UndefOr[js.Any] = js.undefined
   
-  var containerCssClass: js.UndefOr[String] = js.native
+  var containerCssClass: js.UndefOr[String] = js.undefined
   
   // Not in https://select2.org/configuration/options-api
-  var createTag: js.UndefOr[js.Function1[/* params */ SearchOptions, IdTextPair | Null]] = js.native
+  var createTag: js.UndefOr[js.Function1[/* params */ SearchOptions, IdTextPair | Null]] = js.undefined
   
-  var data: js.UndefOr[js.Array[DataFormat | GroupedDataFormat]] = js.native
+  var data: js.UndefOr[js.Array[DataFormat | GroupedDataFormat]] = js.undefined
   
-  var dataAdapter: js.UndefOr[js.Any] = js.native
+  var dataAdapter: js.UndefOr[js.Any] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var dir: js.UndefOr[ltr | rtl] = js.native
+  var dir: js.UndefOr[ltr | rtl] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var dropdownAdapter: js.UndefOr[js.Any] = js.native
+  var dropdownAdapter: js.UndefOr[js.Any] = js.undefined
   
-  var dropdownAutoWidth: js.UndefOr[Boolean] = js.native
+  var dropdownAutoWidth: js.UndefOr[Boolean] = js.undefined
   
-  var dropdownCss: js.UndefOr[js.Any] = js.native
+  var dropdownCss: js.UndefOr[js.Any] = js.undefined
   
-  var dropdownCssClass: js.UndefOr[String] = js.native
+  var dropdownCssClass: js.UndefOr[String] = js.undefined
   
-  var dropdownParent: js.UndefOr[JQuery[HTMLElement]] = js.native
+  var dropdownParent: js.UndefOr[JQuery[HTMLElement]] = js.undefined
   
-  var escapeMarkup: js.UndefOr[js.Function1[/* markup */ String, String]] = js.native
+  var escapeMarkup: js.UndefOr[js.Function1[/* markup */ String, String]] = js.undefined
   
   var initSelection: js.UndefOr[
     js.Function2[
@@ -57,13 +55,13 @@ trait Options[Result, RemoteResult] extends StObject {
       /* callback */ js.Function1[/* data */ js.Any, Unit], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var insertTag: js.UndefOr[
     js.Function2[/* data */ js.Array[OptionData | IdTextPair], /* tag */ IdTextPair, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var language: js.UndefOr[String | Translation] = js.native
+  var language: js.UndefOr[String | Translation] = js.undefined
   
   var matcher: js.UndefOr[
     js.Function2[
@@ -71,58 +69,58 @@ trait Options[Result, RemoteResult] extends StObject {
       /* data */ OptGroupData | OptionData, 
       OptGroupData | OptionData | Null
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var maximumInputLength: js.UndefOr[Double] = js.native
+  var maximumInputLength: js.UndefOr[Double] = js.undefined
   
-  var maximumSelectionLength: js.UndefOr[Double] = js.native
+  var maximumSelectionLength: js.UndefOr[Double] = js.undefined
   
-  var minimumInputLength: js.UndefOr[Double] = js.native
+  var minimumInputLength: js.UndefOr[Double] = js.undefined
   
-  var minimumResultsForSearch: js.UndefOr[Double] = js.native
+  var minimumResultsForSearch: js.UndefOr[Double] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var placeholder: js.UndefOr[String | IdTextPair] = js.native
+  var placeholder: js.UndefOr[String | IdTextPair] = js.undefined
   
-  var resultsAdapter: js.UndefOr[js.Any] = js.native
+  var resultsAdapter: js.UndefOr[js.Any] = js.undefined
   
-  var selectOnClose: js.UndefOr[Boolean] = js.native
+  var selectOnClose: js.UndefOr[Boolean] = js.undefined
   
-  var selectionAdapter: js.UndefOr[js.Any] = js.native
+  var selectionAdapter: js.UndefOr[js.Any] = js.undefined
   
   var sorter: js.UndefOr[
     js.Function1[
       /* data */ js.Array[OptGroupData | OptionData | IdTextPair], 
       js.Array[OptGroupData | OptionData | IdTextPair]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var tags: js.UndefOr[Boolean] = js.native
+  var tags: js.UndefOr[Boolean] = js.undefined
   
   var templateResult: js.UndefOr[
     js.Function1[/* result */ LoadingData | Result, String | JQuery[HTMLElement] | Null]
-  ] = js.native
+  ] = js.undefined
   
   var templateSelection: js.UndefOr[
     js.Function1[/* selection */ IdTextPair | LoadingData | Result, String | JQuery[HTMLElement]]
-  ] = js.native
+  ] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var tokenSeparators: js.UndefOr[js.Array[String]] = js.native
+  var tokenSeparators: js.UndefOr[js.Array[String]] = js.undefined
   
   var tokenizer: js.UndefOr[
     js.Function4[
       /* input */ String, 
-      /* selection */ js.Array[_], 
+      /* selection */ js.Array[js.Any], 
       /* selectCallback */ js.Function0[Unit], 
-      /* options */ Options[DataFormat | GroupedDataFormat, _], 
+      /* options */ Options[DataFormat | GroupedDataFormat, js.Any], 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object Options {
   
@@ -133,7 +131,7 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options[_, _], Result, RemoteResult] (val x: Self with (Options[Result, RemoteResult])) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options[?, ?], Result, RemoteResult] (val x: Self & (Options[Result, RemoteResult])) extends AnyVal {
     
     @scala.inline
     def setAjax(value: AjaxOptions[Result, RemoteResult]): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
@@ -377,7 +375,7 @@ object Options {
     
     @scala.inline
     def setTokenizer(
-      value: (/* input */ String, /* selection */ js.Array[_], /* selectCallback */ js.Function0[Unit], /* options */ Options[DataFormat | GroupedDataFormat, _]) => String
+      value: (/* input */ String, /* selection */ js.Array[js.Any], /* selectCallback */ js.Function0[Unit], /* options */ Options[DataFormat | GroupedDataFormat, js.Any]) => String
     ): Self = StObject.set(x, "tokenizer", js.Any.fromFunction4(value))
     
     @scala.inline

@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecHttp2RouteMatchHeaderMatchRange extends StObject {
   
   /**
     * The end of the range.
     */
-  var end: Double = js.native
+  var end: Double
   
   /**
     * The start of the range.
     */
-  var start: Double = js.native
+  var start: Double
 }
 object RouteSpecHttp2RouteMatchHeaderMatchRange {
   

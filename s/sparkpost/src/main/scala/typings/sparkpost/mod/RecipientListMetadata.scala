@@ -2,19 +2,17 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientListMetadata extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var total_accepted_recipients: Double = js.native
+  var total_accepted_recipients: Double
   
-  var total_rejected_recipients: Double = js.native
+  var total_rejected_recipients: Double
 }
 object RecipientListMetadata {
   

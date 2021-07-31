@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object staticMod {
@@ -24,9 +23,9 @@ object staticMod {
     */
   object default {
     
-    @JSImport("ink/build/components/Static", JSImport.Default)
-    @js.native
-    def apply[T](props: Props[T]): Element = js.native
+    @scala.inline
+    def apply[T](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("ink/build/components/Static", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -38,25 +37,26 @@ object staticMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait Props[T] extends Styles {
+  trait Props[T]
+    extends StObject
+       with Styles {
     
     /**
       * Function that is called to render every item in `items` array.
       * First argument is an item itself and second argument is index of that item in `items` array.
       * Note that `key` must be assigned to the root component.
       */
-    def children(item: T, index: Double): ReactNode = js.native
+    def children(item: T, index: Double): ReactNode
     
     /**
       * Array of items of any type to render using a function you pass as a component child.
       */
-    val items: js.Array[T] = js.native
+    val items: js.Array[T]
     
     /**
       * Styles to apply to a container of child elements. See <Box> for supported properties.
       */
-    val style: js.UndefOr[Styles] = js.native
+    val style: js.UndefOr[Styles] = js.undefined
   }
   object Props {
     
@@ -67,7 +67,7 @@ object staticMod {
     }
     
     @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[_], T] (val x: Self with Props[T]) extends AnyVal {
+    implicit class PropsMutableBuilder[Self <: Props[?], T] (val x: Self & Props[T]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: (T, Double) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))

@@ -18,7 +18,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,9 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * com.sun.star.sheet.AccessibleSpreadsheet} for tables in the edit view of a spreadsheet.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleTableView
-  extends XAccessibleContext
+  extends StObject
+     with XAccessibleContext
      with XAccessibleComponent
      with XAccessibleTable
      with XAccessibleSelection

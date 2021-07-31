@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrainingRun extends StObject {
   
   /** Data split result of the training run. Only set when the input data is actually split. */
-  var dataSplitResult: js.UndefOr[DataSplitResult] = js.native
+  var dataSplitResult: js.UndefOr[DataSplitResult] = js.undefined
   
   /** The evaluation metrics over training/eval data that were computed at the end of training. */
-  var evaluationMetrics: js.UndefOr[EvaluationMetrics] = js.native
+  var evaluationMetrics: js.UndefOr[EvaluationMetrics] = js.undefined
   
   /** Global explanations for important features of the model. For multi-class models, there is one entry for each label class. For other models, there is only one entry in the list. */
-  var globalExplanations: js.UndefOr[js.Array[GlobalExplanation]] = js.native
+  var globalExplanations: js.UndefOr[js.Array[GlobalExplanation]] = js.undefined
   
   /** Output of each iteration run, results.size() <= max_iterations. */
-  var results: js.UndefOr[js.Array[IterationResult]] = js.native
+  var results: js.UndefOr[js.Array[IterationResult]] = js.undefined
   
   /** The start time of this training run. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Options that were used for this training run, includes user specified and default options that were used. */
-  var trainingOptions: js.UndefOr[TrainingOptions] = js.native
+  var trainingOptions: js.UndefOr[TrainingOptions] = js.undefined
 }
 object TrainingRun {
   

@@ -2,19 +2,17 @@ package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for KeyManagementService.UpdateCryptoKeyPrimaryVersion.
   */
-@js.native
 trait SchemaUpdateCryptoKeyPrimaryVersionRequest extends StObject {
   
   /**
     * The id of the child CryptoKeyVersion to use as primary.
     */
-  var cryptoKeyVersionId: js.UndefOr[String] = js.native
+  var cryptoKeyVersionId: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateCryptoKeyPrimaryVersionRequest {
   

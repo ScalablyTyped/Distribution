@@ -2,39 +2,37 @@ package typings.opentypeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontNames extends StObject {
   
-  var copyright: LocalizedName = js.native
+  var copyright: LocalizedName
   
-  var description: LocalizedName = js.native
+  var description: LocalizedName
   
-  var designer: LocalizedName = js.native
+  var designer: LocalizedName
   
-  var designerURL: LocalizedName = js.native
+  var designerURL: LocalizedName
   
-  var fontFamily: LocalizedName = js.native
+  var fontFamily: LocalizedName
   
-  var fontSubfamily: LocalizedName = js.native
+  var fontSubfamily: LocalizedName
   
-  var fullName: LocalizedName = js.native
+  var fullName: LocalizedName
   
-  var license: LocalizedName = js.native
+  var license: LocalizedName
   
-  var licenseURL: LocalizedName = js.native
+  var licenseURL: LocalizedName
   
-  var manufacturer: LocalizedName = js.native
+  var manufacturer: LocalizedName
   
-  var manufacturerURL: LocalizedName = js.native
+  var manufacturerURL: LocalizedName
   
-  var postScriptName: LocalizedName = js.native
+  var postScriptName: LocalizedName
   
-  var trademark: LocalizedName = js.native
+  var trademark: LocalizedName
   
-  var version: LocalizedName = js.native
+  var version: LocalizedName
 }
 object FontNames {
   

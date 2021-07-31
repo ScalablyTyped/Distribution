@@ -2,17 +2,15 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TempFileResponse extends StObject {
   
   /** 开发者服务器返回的 HTTP 状态码 */
-  var statusCode: Double = js.native
+  var statusCode: Double
   
   /** 文件的临时路径 */
-  var tempFilePath: String = js.native
+  var tempFilePath: String
 }
 object TempFileResponse {
   

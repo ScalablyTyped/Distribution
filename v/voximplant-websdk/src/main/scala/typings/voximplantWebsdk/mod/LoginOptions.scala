@@ -2,24 +2,22 @@ package typings.voximplantWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    VoxImplant login options
   */
-@js.native
 trait LoginOptions extends StObject {
   
   /**
     *    If set to false Web SDK can be used only for ACD status management
     */
-  var receiveCalls: js.UndefOr[Boolean] = js.native
+  var receiveCalls: js.UndefOr[Boolean] = js.undefined
   
   /**
     *    If set to true user presence will be changed automatically while a call
     */
-  var serverPresenceControl: js.UndefOr[Boolean] = js.native
+  var serverPresenceControl: js.UndefOr[Boolean] = js.undefined
 }
 object LoginOptions {
   

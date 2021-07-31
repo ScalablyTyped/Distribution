@@ -2,115 +2,115 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the intended objective(s) for a patient, group or organization
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Goal extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Goal
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'startDate'.
     */
-  var _startDate: js.UndefOr[Element] = js.native
+  var _startDate: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'statusDate'.
     */
-  var _statusDate: js.UndefOr[Element] = js.native
+  var _statusDate: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'statusReason'.
     */
-  var _statusReason: js.UndefOr[Element] = js.native
+  var _statusReason: js.UndefOr[Element] = js.undefined
   
   /**
     * Issues addressed by this goal
     */
-  var addresses: js.UndefOr[js.Array[Reference]] = js.native
+  var addresses: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * E.g. Treatment, dietary, behavioral, etc.
     */
-  var category: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Code or text describing goal
     */
-  var description: CodeableConcept = js.native
+  var description: CodeableConcept
   
   /**
     * Who's responsible for creating Goal?
     */
-  var expressedBy: js.UndefOr[Reference] = js.native
+  var expressedBy: js.UndefOr[Reference] = js.undefined
   
   /**
     * External Ids for this goal
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Comments about the goal
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.native
+  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
     * What result was achieved regarding the goal?
     */
-  var outcomeCode: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var outcomeCode: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Observation that resulted from goal
     */
-  var outcomeReference: js.UndefOr[js.Array[Reference]] = js.native
+  var outcomeReference: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * high-priority | medium-priority | low-priority
     */
-  var priority: js.UndefOr[CodeableConcept] = js.native
+  var priority: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * When goal pursuit begins
     */
-  var startCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var startCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * When goal pursuit begins
     */
-  var startDate: js.UndefOr[date] = js.native
+  var startDate: js.UndefOr[date] = js.undefined
   
   /**
     * proposed | accepted | planned | in-progress | on-target | ahead-of-target | behind-target | sustaining | achieved | on-hold | cancelled | entered-in-error | rejected
     */
-  var status: code = js.native
+  var status: code
   
   /**
     * When goal status took effect
     */
-  var statusDate: js.UndefOr[date] = js.native
+  var statusDate: js.UndefOr[date] = js.undefined
   
   /**
     * Reason for current status
     */
-  var statusReason: js.UndefOr[String] = js.native
+  var statusReason: js.UndefOr[String] = js.undefined
   
   /**
     * Who this goal is intended for
     */
-  var subject: js.UndefOr[Reference] = js.native
+  var subject: js.UndefOr[Reference] = js.undefined
   
   /**
     * Target outcome for the goal
     */
-  var target: js.UndefOr[GoalTarget] = js.native
+  var target: js.UndefOr[GoalTarget] = js.undefined
 }
 object Goal {
   

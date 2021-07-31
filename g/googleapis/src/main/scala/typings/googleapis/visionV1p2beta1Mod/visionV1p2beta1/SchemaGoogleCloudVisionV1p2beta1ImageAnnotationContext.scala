@@ -2,26 +2,24 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * If an image was produced from a file (e.g. a PDF), this message gives
   * information about the source of that image.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p2beta1ImageAnnotationContext extends StObject {
   
   /**
     * If the file was a PDF or TIFF, this field gives the page number within
     * the file used to produce the image.
     */
-  var pageNumber: js.UndefOr[Double] = js.native
+  var pageNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * The URI of the file used to produce the image.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p2beta1ImageAnnotationContext {
   

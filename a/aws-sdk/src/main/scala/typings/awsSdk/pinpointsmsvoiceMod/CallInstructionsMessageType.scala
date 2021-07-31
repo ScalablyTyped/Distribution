@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointsmsvoiceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallInstructionsMessageType extends StObject {
   
   /**
     * The language to use when delivering the message. For a complete list of supported languages, see the Amazon Polly Developer Guide.
     */
-  var Text: js.UndefOr[NonEmptyString] = js.native
+  var Text: js.UndefOr[NonEmptyString] = js.undefined
 }
 object CallInstructionsMessageType {
   

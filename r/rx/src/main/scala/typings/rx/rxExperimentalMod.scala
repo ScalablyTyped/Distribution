@@ -6,6 +6,7 @@ import typings.rx.Rx.AnonymousSubjectStatic
 import typings.rx.Rx.AsyncSubjectStatic
 import typings.rx.Rx.BehaviorSubject
 import typings.rx.Rx.BehaviorSubjectStatic
+import typings.rx.Rx.CheckedObserver
 import typings.rx.Rx.Comparer
 import typings.rx.Rx.CompositeDisposable
 import typings.rx.Rx.CompositeDisposableStatic
@@ -20,6 +21,7 @@ import typings.rx.Rx.Notification
 import typings.rx.Rx.NotificationStatic
 import typings.rx.Rx.Observable
 import typings.rx.Rx.ObservableStatic
+import typings.rx.Rx.Observer
 import typings.rx.Rx.ObserverStatic
 import typings.rx.Rx.Recorded
 import typings.rx.Rx.RecordedStatic
@@ -50,7 +52,6 @@ import typings.rx.Rx.internals.ScheduledItemStatic
 import typings.rx.anon.GetDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rxExperimentalMod {
@@ -72,30 +73,73 @@ object rxExperimentalMod {
     * @param {Any} onError Observer's OnError action implementation.
     * @param {Any} onCompleted Observer's OnCompleted action implementation.
     */
-  class AnonymousObserverCls[T] () extends AnonymousObserver[T] {
+  class AnonymousObserverCls[T] ()
+    extends StObject
+       with AnonymousObserver[T] {
     def this(onNext: js.Function1[/* value */ T, Unit]) = this()
-    def this(onNext: js.UndefOr[scala.Nothing], onError: js.Function1[/* exception */ js.Any, Unit]) = this()
     def this(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* exception */ js.Any, Unit]) = this()
-    def this(
-      onNext: js.UndefOr[scala.Nothing],
-      onError: js.UndefOr[scala.Nothing],
-      onCompleted: js.Function0[Unit]
-    ) = this()
-    def this(
-      onNext: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* exception */ js.Any, Unit],
-      onCompleted: js.Function0[Unit]
-    ) = this()
-    def this(
-      onNext: js.Function1[/* value */ T, Unit],
-      onError: js.UndefOr[scala.Nothing],
-      onCompleted: js.Function0[Unit]
-    ) = this()
+    def this(onNext: Unit, onError: js.Function1[/* exception */ js.Any, Unit]) = this()
     def this(
       onNext: js.Function1[/* value */ T, Unit],
       onError: js.Function1[/* exception */ js.Any, Unit],
       onCompleted: js.Function0[Unit]
     ) = this()
+    def this(onNext: js.Function1[/* value */ T, Unit], onError: Unit, onCompleted: js.Function0[Unit]) = this()
+    def this(onNext: Unit, onError: js.Function1[/* exception */ js.Any, Unit], onCompleted: js.Function0[Unit]) = this()
+    def this(onNext: Unit, onError: Unit, onCompleted: js.Function0[Unit]) = this()
+    
+    /**
+      *  Hides the identity of an observer.
+      * @returns An observer that hides the identity of the specified observer.
+      */
+    /* CompleteClass */
+    override def asObserver(): Observer[T] = js.native
+    
+    /**
+      *  Checks access to the observer for grammar violations. This includes checking for multiple OnError or OnCompleted calls, as well as reentrancy in any of the observer methods.
+      *  If a violation is detected, an Error is thrown from the offending observer method call.
+      * @returns An observer that checks callbacks invocations against the observer grammar and, if the checks pass, forwards those to the specified observer.
+      */
+    /* CompleteClass */
+    override def checked(): CheckedObserver[T] = js.native
+    
+    /* CompleteClass */
+    override def makeSafe(disposable: IDisposable): Observer[T] = js.native
+    
+    /**
+      * Schedules the invocation of observer methods on the given scheduler.
+      * @param {Scheduler} scheduler Scheduler to schedule observer messages on.
+      * @returns {Observer} Observer whose messages are scheduled on the given scheduler.
+      */
+    /* CompleteClass */
+    override def notifyOn(scheduler: IScheduler): Observer[T] = js.native
+    
+    /**
+      * Notifies the observer of the end of the sequence.
+      */
+    /* CompleteClass */
+    override def onCompleted(): Unit = js.native
+    
+    /**
+      * Notifies the observer that an exception has occurred.
+      * @param {Any} error The error that has occurred.
+      */
+    /* CompleteClass */
+    override def onError(exception: js.Any): Unit = js.native
+    
+    /**
+      * Notifies the observer of a new element in the sequence.
+      * @param {Any} value Next element in the sequence.
+      */
+    /* CompleteClass */
+    override def onNext(value: T): Unit = js.native
+    
+    /**
+      *  Creates a notification callback from an observer.
+      * @returns The action that forwards its input notification to the underlying observer.
+      */
+    /* CompleteClass */
+    override def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
   }
   
   @scala.inline
@@ -112,7 +156,66 @@ object rxExperimentalMod {
     * Creates a subject that can only receive one value and that value is cached for all future observations.
     * @constructor
     */
-  class AnonymousSubjectCls[T] () extends Subject[T]
+  class AnonymousSubjectCls[T] ()
+    extends StObject
+       with Subject[T] {
+    
+    /**
+      *  Hides the identity of an observer.
+      * @returns An observer that hides the identity of the specified observer.
+      */
+    /* CompleteClass */
+    override def asObserver(): Observer[T] = js.native
+    
+    /**
+      *  Checks access to the observer for grammar violations. This includes checking for multiple OnError or OnCompleted calls, as well as reentrancy in any of the observer methods.
+      *  If a violation is detected, an Error is thrown from the offending observer method call.
+      * @returns An observer that checks callbacks invocations against the observer grammar and, if the checks pass, forwards those to the specified observer.
+      */
+    /* CompleteClass */
+    override def checked(): CheckedObserver[T] = js.native
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /* CompleteClass */
+    override def makeSafe(disposable: IDisposable): Observer[T] = js.native
+    
+    /**
+      * Schedules the invocation of observer methods on the given scheduler.
+      * @param {Scheduler} scheduler Scheduler to schedule observer messages on.
+      * @returns {Observer} Observer whose messages are scheduled on the given scheduler.
+      */
+    /* CompleteClass */
+    override def notifyOn(scheduler: IScheduler): Observer[T] = js.native
+    
+    /**
+      * Notifies the observer of the end of the sequence.
+      */
+    /* CompleteClass */
+    override def onCompleted(): Unit = js.native
+    
+    /**
+      * Notifies the observer that an exception has occurred.
+      * @param {Any} error The error that has occurred.
+      */
+    /* CompleteClass */
+    override def onError(exception: js.Any): Unit = js.native
+    
+    /**
+      * Notifies the observer of a new element in the sequence.
+      * @param {Any} value Next element in the sequence.
+      */
+    /* CompleteClass */
+    override def onNext(value: T): Unit = js.native
+    
+    /**
+      *  Creates a notification callback from an observer.
+      * @returns The action that forwards its input notification to the underlying observer.
+      */
+    /* CompleteClass */
+    override def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
+  }
   
   @scala.inline
   def AnonymousSubject_=(x: AnonymousSubjectStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnonymousSubject")(x.asInstanceOf[js.Any])
@@ -128,7 +231,66 @@ object rxExperimentalMod {
     * Creates a subject that can only receive one value and that value is cached for all future observations.
     * @constructor
     */
-  class AsyncSubjectCls[T] () extends Subject[T]
+  class AsyncSubjectCls[T] ()
+    extends StObject
+       with Subject[T] {
+    
+    /**
+      *  Hides the identity of an observer.
+      * @returns An observer that hides the identity of the specified observer.
+      */
+    /* CompleteClass */
+    override def asObserver(): Observer[T] = js.native
+    
+    /**
+      *  Checks access to the observer for grammar violations. This includes checking for multiple OnError or OnCompleted calls, as well as reentrancy in any of the observer methods.
+      *  If a violation is detected, an Error is thrown from the offending observer method call.
+      * @returns An observer that checks callbacks invocations against the observer grammar and, if the checks pass, forwards those to the specified observer.
+      */
+    /* CompleteClass */
+    override def checked(): CheckedObserver[T] = js.native
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /* CompleteClass */
+    override def makeSafe(disposable: IDisposable): Observer[T] = js.native
+    
+    /**
+      * Schedules the invocation of observer methods on the given scheduler.
+      * @param {Scheduler} scheduler Scheduler to schedule observer messages on.
+      * @returns {Observer} Observer whose messages are scheduled on the given scheduler.
+      */
+    /* CompleteClass */
+    override def notifyOn(scheduler: IScheduler): Observer[T] = js.native
+    
+    /**
+      * Notifies the observer of the end of the sequence.
+      */
+    /* CompleteClass */
+    override def onCompleted(): Unit = js.native
+    
+    /**
+      * Notifies the observer that an exception has occurred.
+      * @param {Any} error The error that has occurred.
+      */
+    /* CompleteClass */
+    override def onError(exception: js.Any): Unit = js.native
+    
+    /**
+      * Notifies the observer of a new element in the sequence.
+      * @param {Any} value Next element in the sequence.
+      */
+    /* CompleteClass */
+    override def onNext(value: T): Unit = js.native
+    
+    /**
+      *  Creates a notification callback from an observer.
+      * @returns The action that forwards its input notification to the underlying observer.
+      */
+    /* CompleteClass */
+    override def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
+  }
   
   @scala.inline
   def AsyncSubject_=(x: AsyncSubjectStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AsyncSubject")(x.asInstanceOf[js.Any])
@@ -140,12 +302,70 @@ object rxExperimentalMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx.experimental", "BehaviorSubject")
   @js.native
-  class BehaviorSubjectCls[T] protected () extends BehaviorSubject[T] {
+  class BehaviorSubjectCls[T] protected ()
+    extends StObject
+       with BehaviorSubject[T] {
     /**
       *  Initializes a new instance of the BehaviorSubject class which creates a subject that caches its last value and starts with the specified value.
       *  @param {Mixed} value Initial value sent to observers when no other value has been received by the subject yet.
       */
     def this(initialValue: T) = this()
+    
+    /**
+      *  Hides the identity of an observer.
+      * @returns An observer that hides the identity of the specified observer.
+      */
+    /* CompleteClass */
+    override def asObserver(): Observer[T] = js.native
+    
+    /**
+      *  Checks access to the observer for grammar violations. This includes checking for multiple OnError or OnCompleted calls, as well as reentrancy in any of the observer methods.
+      *  If a violation is detected, an Error is thrown from the offending observer method call.
+      * @returns An observer that checks callbacks invocations against the observer grammar and, if the checks pass, forwards those to the specified observer.
+      */
+    /* CompleteClass */
+    override def checked(): CheckedObserver[T] = js.native
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /* CompleteClass */
+    override def makeSafe(disposable: IDisposable): Observer[T] = js.native
+    
+    /**
+      * Schedules the invocation of observer methods on the given scheduler.
+      * @param {Scheduler} scheduler Scheduler to schedule observer messages on.
+      * @returns {Observer} Observer whose messages are scheduled on the given scheduler.
+      */
+    /* CompleteClass */
+    override def notifyOn(scheduler: IScheduler): Observer[T] = js.native
+    
+    /**
+      * Notifies the observer of the end of the sequence.
+      */
+    /* CompleteClass */
+    override def onCompleted(): Unit = js.native
+    
+    /**
+      * Notifies the observer that an exception has occurred.
+      * @param {Any} error The error that has occurred.
+      */
+    /* CompleteClass */
+    override def onError(exception: js.Any): Unit = js.native
+    
+    /**
+      * Notifies the observer of a new element in the sequence.
+      * @param {Any} value Next element in the sequence.
+      */
+    /* CompleteClass */
+    override def onNext(value: T): Unit = js.native
+    
+    /**
+      *  Creates a notification callback from an observer.
+      * @returns The action that forwards its input notification to the underlying observer.
+      */
+    /* CompleteClass */
+    override def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
   }
   
   @scala.inline
@@ -158,7 +378,9 @@ object rxExperimentalMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx.experimental", "CompositeDisposable")
   @js.native
-  class CompositeDisposableCls protected () extends CompositeDisposable {
+  class CompositeDisposableCls protected ()
+    extends StObject
+       with CompositeDisposable {
     /**
       * Represents a group of disposable resources that are disposed together.
       * @constructor
@@ -169,6 +391,24 @@ object rxExperimentalMod {
       * @constructor
       */
     def this(disposables: js.Array[IDisposable]) = this()
+    
+    /**
+      * Adds a disposable to the CompositeDisposable or disposes the disposable if the CompositeDisposable is disposed.
+      * @param {Mixed} item Disposable to add.
+      */
+    /* CompleteClass */
+    override def add(item: IDisposable): Unit = js.native
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Removes and disposes the first occurrence of a disposable from the CompositeDisposable.
+      * @param {Mixed} item Disposable to remove.
+      * @returns {Boolean} true if found; false otherwise.
+      */
+    /* CompleteClass */
+    override def remove(item: IDisposable): Unit = js.native
   }
   
   @scala.inline
@@ -181,12 +421,17 @@ object rxExperimentalMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx.experimental", "Disposable")
   @js.native
-  class DisposableCls protected () extends Disposable {
+  class DisposableCls protected ()
+    extends StObject
+       with Disposable {
     /**
       * Provides a set of static methods for creating Disposables.
       * @param {Function} dispose Action to run during the first call to dispose. The action is guaranteed to be run at most once.
       */
     def this(action: js.Function0[Unit]) = this()
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
   }
   
   @scala.inline
@@ -195,7 +440,9 @@ object rxExperimentalMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx.experimental", "HistoricalScheduler")
   @js.native
-  class HistoricalSchedulerCls protected () extends VirtualTimeScheduler[Double, Double] {
+  class HistoricalSchedulerCls protected ()
+    extends StObject
+       with VirtualTimeScheduler[Double, Double] {
     /**
       * Creates a new historical scheduler with the specified initial clock value.
       * @constructor
@@ -212,8 +459,66 @@ object rxExperimentalMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx.experimental", "MockObserver")
   @js.native
-  class MockObserverCls[T] protected () extends MockObserver[T] {
+  class MockObserverCls[T] protected ()
+    extends StObject
+       with MockObserver[T] {
     def this(scheduler: IScheduler) = this()
+    
+    /**
+      *  Hides the identity of an observer.
+      * @returns An observer that hides the identity of the specified observer.
+      */
+    /* CompleteClass */
+    override def asObserver(): Observer[T] = js.native
+    
+    /**
+      *  Checks access to the observer for grammar violations. This includes checking for multiple OnError or OnCompleted calls, as well as reentrancy in any of the observer methods.
+      *  If a violation is detected, an Error is thrown from the offending observer method call.
+      * @returns An observer that checks callbacks invocations against the observer grammar and, if the checks pass, forwards those to the specified observer.
+      */
+    /* CompleteClass */
+    override def checked(): CheckedObserver[T] = js.native
+    
+    /* CompleteClass */
+    override def makeSafe(disposable: IDisposable): Observer[T] = js.native
+    
+    /* CompleteClass */
+    var messages: js.Array[Recorded] = js.native
+    
+    /**
+      * Schedules the invocation of observer methods on the given scheduler.
+      * @param {Scheduler} scheduler Scheduler to schedule observer messages on.
+      * @returns {Observer} Observer whose messages are scheduled on the given scheduler.
+      */
+    /* CompleteClass */
+    override def notifyOn(scheduler: IScheduler): Observer[T] = js.native
+    
+    /**
+      * Notifies the observer of the end of the sequence.
+      */
+    /* CompleteClass */
+    override def onCompleted(): Unit = js.native
+    
+    /**
+      * Notifies the observer that an exception has occurred.
+      * @param {Any} error The error that has occurred.
+      */
+    /* CompleteClass */
+    override def onError(exception: js.Any): Unit = js.native
+    
+    /**
+      * Notifies the observer of a new element in the sequence.
+      * @param {Any} value Next element in the sequence.
+      */
+    /* CompleteClass */
+    override def onNext(value: T): Unit = js.native
+    
+    /**
+      *  Creates a notification callback from an observer.
+      * @returns The action that forwards its input notification to the underlying observer.
+      */
+    /* CompleteClass */
+    override def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
   }
   
   @scala.inline
@@ -226,7 +531,9 @@ object rxExperimentalMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx.experimental", "Notification")
   @js.native
-  class NotificationCls[T] protected () extends Notification[T] {
+  class NotificationCls[T] protected ()
+    extends StObject
+       with Notification[T] {
     def this(
       kind: js.Any,
       value: js.Any,
@@ -255,7 +562,8 @@ object rxExperimentalMod {
   @JSImport("rx.experimental", "Plan")
   @js.native
   class Plan[T] ()
-    extends typings.rx.Rx.Plan[T]
+    extends StObject
+       with typings.rx.Rx.Plan[T]
   
   object ReactiveTest {
     
@@ -283,9 +591,8 @@ object rxExperimentalMod {
       * @param ticks Recorded virtual time the OnCompleted notification occurs.
       * @return Recorded OnCompleted notification.
       */
-    @JSImport("rx.experimental", "ReactiveTest.onCompleted")
-    @js.native
-    def onCompleted(ticks: Double): Recorded = js.native
+    @scala.inline
+    def onCompleted(ticks: Double): Recorded = ^.asInstanceOf[js.Dynamic].applyDynamic("onCompleted")(ticks.asInstanceOf[js.Any]).asInstanceOf[Recorded]
     
     /**
       * Factory method for an OnError notification record at a given time with a given error.
@@ -297,9 +604,8 @@ object rxExperimentalMod {
       * @param exception Recorded exception stored in the OnError notification.
       * @return Recorded OnError notification.
       */
-    @JSImport("rx.experimental", "ReactiveTest.onError")
-    @js.native
-    def onError(ticks: Double, exception: js.Any): Recorded = js.native
+    @scala.inline
+    def onError(ticks: Double, exception: js.Any): Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(ticks.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Recorded]
     /**
       * Factory method for an OnError notification record at a given time with a given error.
       *
@@ -310,9 +616,8 @@ object rxExperimentalMod {
       * @param exception Recorded exception stored in the OnError notification.
       * @return Recorded OnError notification.
       */
-    @JSImport("rx.experimental", "ReactiveTest.onError")
-    @js.native
-    def onError(ticks: Double, predicate: js.Function1[/* exception */ js.Any, Boolean]): Recorded = js.native
+    @scala.inline
+    def onError(ticks: Double, predicate: js.Function1[/* exception */ js.Any, Boolean]): Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(ticks.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Recorded]
     
     /**
       * Factory method for an OnNext notification record at a given time with a given value or a predicate function.
@@ -324,9 +629,8 @@ object rxExperimentalMod {
       * @param value Recorded value stored in the OnNext notification or a predicate.
       * @return Recorded OnNext notification.
       */
-    @JSImport("rx.experimental", "ReactiveTest.onNext")
-    @js.native
-    def onNext(ticks: Double, predicate: js.Function1[/* value */ js.Any, Boolean]): Recorded = js.native
+    @scala.inline
+    def onNext(ticks: Double, predicate: js.Function1[/* value */ js.Any, Boolean]): Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onNext")(ticks.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Recorded]
     /**
       * Factory method for an OnNext notification record at a given time with a given value or a predicate function.
       *
@@ -337,9 +641,8 @@ object rxExperimentalMod {
       * @param value Recorded value stored in the OnNext notification or a predicate.
       * @return Recorded OnNext notification.
       */
-    @JSImport("rx.experimental", "ReactiveTest.onNext")
-    @js.native
-    def onNext(ticks: Double, value: js.Any): Recorded = js.native
+    @scala.inline
+    def onNext(ticks: Double, value: js.Any): Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onNext")(ticks.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Recorded]
     
     /**
       * Factory method for a subscription record based on a given subscription and disposal time.
@@ -348,12 +651,10 @@ object rxExperimentalMod {
       * @param end Virtual time indicating when the subscription was disposed.
       * @return Subscription object.
       */
-    @JSImport("rx.experimental", "ReactiveTest.subscribe")
-    @js.native
-    def subscribe(subscribeAt: Double): Subscription = js.native
-    @JSImport("rx.experimental", "ReactiveTest.subscribe")
-    @js.native
-    def subscribe(subscribeAt: Double, unsubscribeAt: Double): Subscription = js.native
+    @scala.inline
+    def subscribe(subscribeAt: Double): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(subscribeAt.asInstanceOf[js.Any]).asInstanceOf[Subscription]
+    @scala.inline
+    def subscribe(subscribeAt: Double, unsubscribeAt: Double): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(subscribeAt.asInstanceOf[js.Any], unsubscribeAt.asInstanceOf[js.Any])).asInstanceOf[Subscription]
     
     /** Default virtual time used to subscribe to observable sequences in unit tests. */
     @JSImport("rx.experimental", "ReactiveTest.subscribed")
@@ -370,7 +671,9 @@ object rxExperimentalMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx.experimental", "Recorded")
   @js.native
-  class RecordedCls protected () extends Recorded {
+  class RecordedCls protected ()
+    extends StObject
+       with Recorded {
     /**
       * Creates a new object recording the production of the specified value at the given virtual time.
       *
@@ -380,7 +683,22 @@ object rxExperimentalMod {
       * @param {Function} comparer An optional comparer.
       */
     def this(time: Double, value: js.Any) = this()
-    def this(time: Double, value: js.Any, equalityComparer: Comparer[_, Boolean]) = this()
+    def this(time: Double, value: js.Any, equalityComparer: Comparer[js.Any, Boolean]) = this()
+    
+    /**
+      * Checks whether the given recorded object is equal to the current instance.
+      *
+      * @param {Recorded} other Recorded object to check for equality.
+      * @returns {Boolean} true if both objects are equal; false otherwise.
+      */
+    /* CompleteClass */
+    override def equals(other: Recorded): Boolean = js.native
+    
+    /* CompleteClass */
+    var time: Double = js.native
+    
+    /* CompleteClass */
+    var value: js.Any = js.native
   }
   
   @scala.inline
@@ -393,13 +711,30 @@ object rxExperimentalMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx.experimental", "RefCountDisposable")
   @js.native
-  class RefCountDisposableCls protected () extends RefCountDisposable {
+  class RefCountDisposableCls protected ()
+    extends StObject
+       with RefCountDisposable {
     /**
       * Initializes a new instance of the RefCountDisposable with the specified disposable.
       * @constructor
       * @param {Disposable} disposable Underlying disposable.
       */
     def this(disposable: IDisposable) = this()
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Returns a dependent disposable that when disposed decreases the refcount on the underlying disposable.
+      * @returns {Disposable} A dependent disposable contributing to the reference count that manages the underlying disposable's lifetime.
+      */
+    /* CompleteClass */
+    override def getDisposable(): IDisposable = js.native
+    
+    /** Is this value disposed. */
+    /* CompleteClass */
+    @JSName("isDisposed")
+    var isDisposed_RefCountDisposable: Boolean = js.native
   }
   
   @scala.inline
@@ -418,14 +753,72 @@ object rxExperimentalMod {
     *  @param {Number} [windowSize] Maximum time length of the replay buffer.
     *  @param {Scheduler} [scheduler] Scheduler the observers are invoked on.
     */
-  class ReplaySubjectCls[T] () extends Subject[T] {
+  class ReplaySubjectCls[T] ()
+    extends StObject
+       with Subject[T] {
     def this(bufferSize: Double) = this()
-    def this(bufferSize: js.UndefOr[scala.Nothing], window: Double) = this()
     def this(bufferSize: Double, window: Double) = this()
-    def this(bufferSize: js.UndefOr[scala.Nothing], window: js.UndefOr[scala.Nothing], scheduler: IScheduler) = this()
-    def this(bufferSize: js.UndefOr[scala.Nothing], window: Double, scheduler: IScheduler) = this()
-    def this(bufferSize: Double, window: js.UndefOr[scala.Nothing], scheduler: IScheduler) = this()
+    def this(bufferSize: Unit, window: Double) = this()
     def this(bufferSize: Double, window: Double, scheduler: IScheduler) = this()
+    def this(bufferSize: Double, window: Unit, scheduler: IScheduler) = this()
+    def this(bufferSize: Unit, window: Double, scheduler: IScheduler) = this()
+    def this(bufferSize: Unit, window: Unit, scheduler: IScheduler) = this()
+    
+    /**
+      *  Hides the identity of an observer.
+      * @returns An observer that hides the identity of the specified observer.
+      */
+    /* CompleteClass */
+    override def asObserver(): Observer[T] = js.native
+    
+    /**
+      *  Checks access to the observer for grammar violations. This includes checking for multiple OnError or OnCompleted calls, as well as reentrancy in any of the observer methods.
+      *  If a violation is detected, an Error is thrown from the offending observer method call.
+      * @returns An observer that checks callbacks invocations against the observer grammar and, if the checks pass, forwards those to the specified observer.
+      */
+    /* CompleteClass */
+    override def checked(): CheckedObserver[T] = js.native
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /* CompleteClass */
+    override def makeSafe(disposable: IDisposable): Observer[T] = js.native
+    
+    /**
+      * Schedules the invocation of observer methods on the given scheduler.
+      * @param {Scheduler} scheduler Scheduler to schedule observer messages on.
+      * @returns {Observer} Observer whose messages are scheduled on the given scheduler.
+      */
+    /* CompleteClass */
+    override def notifyOn(scheduler: IScheduler): Observer[T] = js.native
+    
+    /**
+      * Notifies the observer of the end of the sequence.
+      */
+    /* CompleteClass */
+    override def onCompleted(): Unit = js.native
+    
+    /**
+      * Notifies the observer that an exception has occurred.
+      * @param {Any} error The error that has occurred.
+      */
+    /* CompleteClass */
+    override def onError(exception: js.Any): Unit = js.native
+    
+    /**
+      * Notifies the observer of a new element in the sequence.
+      * @param {Any} value Next element in the sequence.
+      */
+    /* CompleteClass */
+    override def onNext(value: T): Unit = js.native
+    
+    /**
+      *  Creates a notification callback from an observer.
+      * @returns The action that forwards its input notification to the underlying observer.
+      */
+    /* CompleteClass */
+    override def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
   }
   
   @scala.inline
@@ -444,7 +837,24 @@ object rxExperimentalMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx.experimental", "SerialDisposable")
   @js.native
-  class SerialDisposableCls () extends SerialDisposable
+  class SerialDisposableCls ()
+    extends StObject
+       with SerialDisposable {
+    
+    /** Performs the task of cleaning up resources. */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getDisposable(): IDisposable = js.native
+    
+    /** Is this value disposed. */
+    /* CompleteClass */
+    var isDisposed: Boolean = js.native
+    
+    /* CompleteClass */
+    override def setDisposable(value: IDisposable): Unit = js.native
+  }
   
   @scala.inline
   def SerialDisposable_=(x: SerialDisposableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SerialDisposable")(x.asInstanceOf[js.Any])
@@ -456,7 +866,24 @@ object rxExperimentalMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx.experimental", "SingleAssignmentDisposable")
   @js.native
-  class SingleAssignmentDisposableCls () extends SingleAssignmentDisposable
+  class SingleAssignmentDisposableCls ()
+    extends StObject
+       with SingleAssignmentDisposable {
+    
+    /** Performs the task of cleaning up resources. */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getDisposable(): IDisposable = js.native
+    
+    /** Is this value disposed. */
+    /* CompleteClass */
+    var isDisposed: Boolean = js.native
+    
+    /* CompleteClass */
+    override def setDisposable(value: IDisposable): Unit = js.native
+  }
   
   @scala.inline
   def SingleAssignmentDisposable_=(x: SingleAssignmentDisposableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleAssignmentDisposable")(x.asInstanceOf[js.Any])
@@ -471,7 +898,66 @@ object rxExperimentalMod {
   /**
     * Creates a subject.
     */
-  class SubjectCls[T] () extends Subject[T]
+  class SubjectCls[T] ()
+    extends StObject
+       with Subject[T] {
+    
+    /**
+      *  Hides the identity of an observer.
+      * @returns An observer that hides the identity of the specified observer.
+      */
+    /* CompleteClass */
+    override def asObserver(): Observer[T] = js.native
+    
+    /**
+      *  Checks access to the observer for grammar violations. This includes checking for multiple OnError or OnCompleted calls, as well as reentrancy in any of the observer methods.
+      *  If a violation is detected, an Error is thrown from the offending observer method call.
+      * @returns An observer that checks callbacks invocations against the observer grammar and, if the checks pass, forwards those to the specified observer.
+      */
+    /* CompleteClass */
+    override def checked(): CheckedObserver[T] = js.native
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /* CompleteClass */
+    override def makeSafe(disposable: IDisposable): Observer[T] = js.native
+    
+    /**
+      * Schedules the invocation of observer methods on the given scheduler.
+      * @param {Scheduler} scheduler Scheduler to schedule observer messages on.
+      * @returns {Observer} Observer whose messages are scheduled on the given scheduler.
+      */
+    /* CompleteClass */
+    override def notifyOn(scheduler: IScheduler): Observer[T] = js.native
+    
+    /**
+      * Notifies the observer of the end of the sequence.
+      */
+    /* CompleteClass */
+    override def onCompleted(): Unit = js.native
+    
+    /**
+      * Notifies the observer that an exception has occurred.
+      * @param {Any} error The error that has occurred.
+      */
+    /* CompleteClass */
+    override def onError(exception: js.Any): Unit = js.native
+    
+    /**
+      * Notifies the observer of a new element in the sequence.
+      * @param {Any} value Next element in the sequence.
+      */
+    /* CompleteClass */
+    override def onNext(value: T): Unit = js.native
+    
+    /**
+      *  Creates a notification callback from an observer.
+      * @returns The action that forwards its input notification to the underlying observer.
+      */
+    /* CompleteClass */
+    override def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
+  }
   
   @scala.inline
   def Subject_=(x: SubjectStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Subject")(x.asInstanceOf[js.Any])
@@ -483,7 +969,9 @@ object rxExperimentalMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx.experimental", "Subscription")
   @js.native
-  class SubscriptionCls protected () extends Subscription {
+  class SubscriptionCls protected ()
+    extends StObject
+       with Subscription {
     /**
       * Creates a new subscription object with the given virtual subscription and unsubscription time.
       *
@@ -493,6 +981,14 @@ object rxExperimentalMod {
       */
     def this(subscribeAt: Double) = this()
     def this(subscribeAt: Double, unsubscribeAt: Double) = this()
+    
+    /**
+      * Checks whether the given subscription is equal to the current instance.
+      * @param other Subscription object to check for equality.
+      * @returns {Boolean} true if both objects are equal; false otherwise.
+      */
+    /* CompleteClass */
+    override def equals(other: Subscription): Boolean = js.native
   }
   
   @scala.inline
@@ -501,14 +997,18 @@ object rxExperimentalMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx.experimental", "TestScheduler")
   @js.native
-  class TestSchedulerCls () extends TestScheduler
+  class TestSchedulerCls ()
+    extends StObject
+       with TestScheduler
   
   object config {
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rx.experimental", "config.Promise")
     @js.native
-    class Promise[T] protected () extends IPromise[T] {
+    class Promise[T] protected ()
+      extends StObject
+         with IPromise[T] {
       def this(resolver: js.Function2[
                 /* resolvePromise */ js.Function1[/* value */ T, Unit], 
                 /* rejectPromise */ js.Function1[/* reason */ js.Any, Unit], 
@@ -622,7 +1122,49 @@ object rxExperimentalMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("rx.experimental", "internals.AbstractObserver")
     @js.native
-    class AbstractObserverCls[T] () extends AbstractObserver[T]
+    class AbstractObserverCls[T] ()
+      extends StObject
+         with AbstractObserver[T] {
+      
+      /* CompleteClass */
+      override def completed(): Unit = js.native
+      
+      /* CompleteClass */
+      override def dispose(): Unit = js.native
+      
+      /* CompleteClass */
+      override def error(error: js.Any): Unit = js.native
+      
+      /* CompleteClass */
+      override def fail(e: js.Any): Boolean = js.native
+      
+      /* CompleteClass */
+      var isStopped: Boolean = js.native
+      
+      // Must be implemented by other observers
+      /* CompleteClass */
+      override def next(value: T): Unit = js.native
+      
+      /**
+        * Notifies the observer of the end of the sequence.
+        */
+      /* CompleteClass */
+      override def onCompleted(): Unit = js.native
+      
+      /**
+        * Notifies the observer that an exception has occurred.
+        * @param {Any} error The error that has occurred.
+        */
+      /* CompleteClass */
+      override def onError(exception: js.Any): Unit = js.native
+      
+      /**
+        * Notifies the observer of a new element in the sequence.
+        * @param {Any} value Next element in the sequence.
+        */
+      /* CompleteClass */
+      override def onNext(value: T): Unit = js.native
+    }
     
     @scala.inline
     def AbstractObserver_=(x: AbstractObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AbstractObserver")(x.asInstanceOf[js.Any])
@@ -634,8 +1176,41 @@ object rxExperimentalMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("rx.experimental", "internals.PriorityQueue")
     @js.native
-    class PriorityQueueCls[T] protected () extends PriorityQueue[T] {
+    class PriorityQueueCls[T] protected ()
+      extends StObject
+         with PriorityQueue[T] {
       def this(capacity: Double) = this()
+      
+      /* CompleteClass */
+      override def dequeue(): js.Any = js.native
+      
+      /* CompleteClass */
+      override def enqueue(
+        item: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ScheduledItem<TTime> */ js.Any
+      ): Unit = js.native
+      
+      /* CompleteClass */
+      override def heapify(index: Double): Unit = js.native
+      
+      /* CompleteClass */
+      override def isHigherPriority(left: Double, right: Double): Boolean = js.native
+      
+      /* CompleteClass */
+      var length: Double = js.native
+      
+      /* CompleteClass */
+      override def peek(): js.Any = js.native
+      
+      /* CompleteClass */
+      override def percolate(index: Double): Unit = js.native
+      
+      /* CompleteClass */
+      override def remove(
+        item: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ScheduledItem<TTime> */ js.Any
+      ): Boolean = js.native
+      
+      /* CompleteClass */
+      override def removeAt(index: Double): Unit = js.native
     }
     
     @scala.inline
@@ -648,8 +1223,13 @@ object rxExperimentalMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("rx.experimental", "internals.SchedulePeriodicRecursive")
     @js.native
-    class SchedulePeriodicRecursiveCls protected () extends SchedulePeriodicRecursive {
+    class SchedulePeriodicRecursiveCls protected ()
+      extends StObject
+         with SchedulePeriodicRecursive {
       def this(scheduler: js.Any, state: js.Any, period: js.Any, action: js.Any) = this()
+      
+      /* CompleteClass */
+      override def start(): IDisposable = js.native
     }
     
     @scala.inline
@@ -662,7 +1242,9 @@ object rxExperimentalMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("rx.experimental", "internals.ScheduledItem")
     @js.native
-    class ScheduledItemCls[TTime] protected () extends ScheduledItem[TTime] {
+    class ScheduledItemCls[TTime] protected ()
+      extends StObject
+         with ScheduledItem[TTime] {
       def this(
         scheduler: IScheduler,
         state: js.Any,
@@ -676,6 +1258,36 @@ object rxExperimentalMod {
         dueTime: TTime,
         comparer: Comparer[TTime, Double]
       ) = this()
+      
+      /* CompleteClass */
+      override def action(scheduler: IScheduler, state: js.Any): IDisposable = js.native
+      
+      /* CompleteClass */
+      override def compareTo(other: ScheduledItem[TTime]): Double = js.native
+      
+      /* CompleteClass */
+      override def comparer(x: TTime, y: TTime): Double = js.native
+      
+      /* CompleteClass */
+      var disposable: SingleAssignmentDisposable = js.native
+      
+      /* CompleteClass */
+      var dueTime: TTime = js.native
+      
+      /* CompleteClass */
+      override def invoke(): Unit = js.native
+      
+      /* CompleteClass */
+      override def invokeCore(): IDisposable = js.native
+      
+      /* CompleteClass */
+      override def isCancelled(): Boolean = js.native
+      
+      /* CompleteClass */
+      var scheduler: IScheduler = js.native
+      
+      /* CompleteClass */
+      var state: TTime = js.native
     }
     
     @scala.inline

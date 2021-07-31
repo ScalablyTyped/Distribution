@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about the result of attempting to pair a device. */
-@js.native
 trait DevicePairingResult extends StObject {
   
   /** Gets the level of protection used to pair the device. */
-  var protectionLevelUsed: DevicePairingProtectionLevel = js.native
+  var protectionLevelUsed: DevicePairingProtectionLevel
   
   /** Gets the paired status of the device after the pairing action completed. */
-  var status: DevicePairingResultStatus = js.native
+  var status: DevicePairingResultStatus
 }
 object DevicePairingResult {
   

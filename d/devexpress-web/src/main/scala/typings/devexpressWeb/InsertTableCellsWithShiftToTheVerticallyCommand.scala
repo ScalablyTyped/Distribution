@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to insert table cells with a vertical shift into the selected table.
   */
-@js.native
-trait InsertTableCellsWithShiftToTheVerticallyCommand extends CommandWithSimpleStateBase {
+trait InsertTableCellsWithShiftToTheVerticallyCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the InsertTableCellsWithShiftToTheVerticallyCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object InsertTableCellsWithShiftToTheVerticallyCommand {
   

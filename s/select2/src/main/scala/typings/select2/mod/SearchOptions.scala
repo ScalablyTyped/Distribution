@@ -2,13 +2,11 @@ package typings.select2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchOptions extends StObject {
   
-  var term: String = js.native
+  var term: String
 }
 object SearchOptions {
   

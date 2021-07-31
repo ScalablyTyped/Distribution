@@ -2,28 +2,26 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectLogs extends StObject {
   
   /**
     * A list of Connect failure logs.
     */
-  var failures: js.UndefOr[js.Array[/* Contains information about a Connect log entry. */ ConnectLog]] = js.native
+  var failures: js.UndefOr[js.Array[/* Contains information about a Connect log entry. */ ConnectLog]] = js.undefined
   
   /**
     * A list of Connect general logs.
     */
-  var logs: js.UndefOr[js.Array[/* Contains information about a Connect log entry. */ ConnectLog]] = js.native
+  var logs: js.UndefOr[js.Array[/* Contains information about a Connect log entry. */ ConnectLog]] = js.undefined
   
   /**
     * The count of records in the log list.
     */
-  var totalRecords: js.UndefOr[String] = js.native
+  var totalRecords: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ConnectLogs {
   

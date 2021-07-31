@@ -7,48 +7,44 @@ import typings.smoothScrollbar.scrollbarMod.Scrollbar
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollingMod {
   
-  @JSImport("smooth-scrollbar/scrolling", "scrollIntoView")
+  @JSImport("smooth-scrollbar/scrolling", JSImport.Namespace)
   @js.native
-  def scrollIntoView(scrollbar: Scrollbar, elem: HTMLElement): Unit = js.native
-  @JSImport("smooth-scrollbar/scrolling", "scrollIntoView")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def scrollIntoView(scrollbar: Scrollbar, elem: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")(scrollbar.asInstanceOf[js.Any], elem.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def scrollIntoView(
     scrollbar: Scrollbar,
     elem: HTMLElement,
     hasAlignToTopOnlyScrollIfNeededOffsetTopOffsetLeftOffsetBottom: PartialScrollIntoViewOpti
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")(scrollbar.asInstanceOf[js.Any], elem.asInstanceOf[js.Any], hasAlignToTopOnlyScrollIfNeededOffsetTopOffsetLeftOffsetBottom.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("smooth-scrollbar/scrolling", "scrollTo")
-  @js.native
-  def scrollTo(scrollbar: Scrollbar, x: Double, y: Double): Unit = js.native
-  @JSImport("smooth-scrollbar/scrolling", "scrollTo")
-  @js.native
-  def scrollTo(
-    scrollbar: Scrollbar,
-    x: Double,
-    y: Double,
-    duration: js.UndefOr[scala.Nothing],
-    hasEasingCallback: PartialScrollToOptionsCallback
-  ): Unit = js.native
-  @JSImport("smooth-scrollbar/scrolling", "scrollTo")
-  @js.native
-  def scrollTo(scrollbar: Scrollbar, x: Double, y: Double, duration: Double): Unit = js.native
-  @JSImport("smooth-scrollbar/scrolling", "scrollTo")
-  @js.native
+  @scala.inline
+  def scrollTo(scrollbar: Scrollbar, x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(scrollbar.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def scrollTo(scrollbar: Scrollbar, x: Double, y: Double, duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(scrollbar.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def scrollTo(
     scrollbar: Scrollbar,
     x: Double,
     y: Double,
     duration: Double,
     hasEasingCallback: PartialScrollToOptionsCallback
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(scrollbar.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], hasEasingCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def scrollTo(
+    scrollbar: Scrollbar,
+    x: Double,
+    y: Double,
+    duration: Unit,
+    hasEasingCallback: PartialScrollToOptionsCallback
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(scrollbar.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], hasEasingCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("smooth-scrollbar/scrolling", "setPosition")
-  @js.native
-  def setPosition(scrollbar: Scrollbar, x: Double, y: Double): ScrollStatus | Null = js.native
+  @scala.inline
+  def setPosition(scrollbar: Scrollbar, x: Double, y: Double): ScrollStatus | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(scrollbar.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ScrollStatus | Null]
 }

@@ -4,20 +4,18 @@ import typings.awsSdk.serviceMod.WaiterConfiguration
 import typings.awsSdk.signerMod.JobId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/signer.DescribeSigningJobRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
-@js.native
 trait DescribeSigningJobRequest extends StObject {
   
   @JSName("$waiter")
-  var $waiter: js.UndefOr[WaiterConfiguration] = js.native
+  var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
     * The ID of the signing job on input.
     */
-  var jobId: JobId = js.native
+  var jobId: JobId
 }
 object DescribeSigningJobRequest {
   

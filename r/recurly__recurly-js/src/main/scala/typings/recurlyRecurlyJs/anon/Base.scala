@@ -4,23 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.recurlyRecurlyJs.subscriptionMod.SubscriptionPricingStateTax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Base extends StObject {
   
-  var addons: StringDictionary[String] = js.native
+  var addons: StringDictionary[String]
   
-  var base: Plan = js.native
+  var base: Plan
   
-  var currency: Code = js.native
+  var currency: Code
   
-  var next: Addons = js.native
+  var next: Addons
   
-  var now: Addons = js.native
+  var now: Addons
   
-  var taxes: js.Array[SubscriptionPricingStateTax] = js.native
+  var taxes: js.Array[SubscriptionPricingStateTax]
 }
 object Base {
   

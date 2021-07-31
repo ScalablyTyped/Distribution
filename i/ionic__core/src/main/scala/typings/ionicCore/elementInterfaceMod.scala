@@ -5,21 +5,19 @@ import typings.ionicCore.ionicCoreStrings.reset
 import typings.ionicCore.ionicCoreStrings.submit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementInterfaceMod {
   
-  @js.native
   trait AnchorInterface extends StObject {
     
-    var download: js.UndefOr[String] = js.native
+    var download: js.UndefOr[String] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var rel: js.UndefOr[String] = js.native
+    var rel: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
   }
   object AnchorInterface {
     
@@ -58,12 +56,11 @@ object elementInterfaceMod {
     }
   }
   
-  @js.native
   trait ButtonInterface extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var `type`: submit | reset | button = js.native
+    var `type`: submit | reset | button
   }
   object ButtonInterface {
     

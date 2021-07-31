@@ -2,27 +2,25 @@ package typings.reactVirtualized.esGridMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderedSection extends StObject {
   
-  var columnOverscanStartIndex: Double = js.native
+  var columnOverscanStartIndex: Double
   
-  var columnOverscanStopIndex: Double = js.native
+  var columnOverscanStopIndex: Double
   
-  var columnStartIndex: Double = js.native
+  var columnStartIndex: Double
   
-  var columnStopIndex: Double = js.native
+  var columnStopIndex: Double
   
-  var rowOverscanStartIndex: Double = js.native
+  var rowOverscanStartIndex: Double
   
-  var rowOverscanStopIndex: Double = js.native
+  var rowOverscanStopIndex: Double
   
-  var rowStartIndex: Double = js.native
+  var rowStartIndex: Double
   
-  var rowStopIndex: Double = js.native
+  var rowStopIndex: Double
 }
 object RenderedSection {
   

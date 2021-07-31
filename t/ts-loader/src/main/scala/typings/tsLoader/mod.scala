@@ -3,7 +3,6 @@ package typings.tsLoader
 import typings.tsLoader.interfacesMod.LoaderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,9 +10,12 @@ object mod {
   /**
     * The entry point for ts-loader
     */
+  @scala.inline
+  def apply(contents: String): Unit = ^.asInstanceOf[js.Dynamic].apply(contents.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("ts-loader", JSImport.Namespace)
   @js.native
-  def apply(contents: String): Unit = js.native
+  val ^ : js.Any = js.native
   
   type Options = LoaderOptions
 }

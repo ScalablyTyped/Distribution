@@ -2,26 +2,24 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskPackageMetadata extends StObject {
   
   /**
     * Gets the name of the package.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * Gets the url of the package.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * Gets the version of the package.
     */
-  var version: String = js.native
+  var version: String
 }
 object TaskPackageMetadata {
   

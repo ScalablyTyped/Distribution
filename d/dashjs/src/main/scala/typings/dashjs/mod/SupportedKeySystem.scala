@@ -3,25 +3,23 @@ package typings.dashjs.mod
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportedKeySystem extends StObject {
   
-  var cdmData: ArrayBuffer | Null = js.native
+  var cdmData: ArrayBuffer | Null
   
-  var initData: ArrayBuffer = js.native
+  var initData: ArrayBuffer
   
-  var ks: KeySystem = js.native
+  var ks: KeySystem
   
-  var sessionId: String | Null = js.native
+  var sessionId: String | Null
 }
 object SupportedKeySystem {
   
   @scala.inline
   def apply(initData: ArrayBuffer, ks: KeySystem): SupportedKeySystem = {
-    val __obj = js.Dynamic.literal(initData = initData.asInstanceOf[js.Any], ks = ks.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(initData = initData.asInstanceOf[js.Any], ks = ks.asInstanceOf[js.Any], cdmData = null, sessionId = null)
     __obj.asInstanceOf[SupportedKeySystem]
   }
   

@@ -2,19 +2,17 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of creating a video.
   */
-@js.native
 trait SchemaCreateVideoResponse extends StObject {
   
   /**
     * The object ID of the created video.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateVideoResponse {
   

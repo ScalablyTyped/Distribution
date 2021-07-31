@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RsaPssParams extends Algorithm {
+trait RsaPssParams
+  extends StObject
+     with Algorithm {
   
-  var saltLength: Double = js.native
+  var saltLength: Double
 }
 object RsaPssParams {
   

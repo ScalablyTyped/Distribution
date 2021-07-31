@@ -5,7 +5,6 @@ import typings.arcgisJsApi.esri.ScaleRangeResult
 import typings.arcgisJsApi.esri.scaleRangeScaleRangeParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scaleRangeMod extends Shortcut {

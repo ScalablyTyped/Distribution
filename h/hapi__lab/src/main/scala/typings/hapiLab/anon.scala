@@ -2,22 +2,20 @@ package typings.hapiLab
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Omit<@hapi/lab.@hapi/lab.script.TestOptions, 'plan'> */
-  @js.native
   trait OmitTestOptionsplan extends StObject {
     
-    var only: js.UndefOr[Boolean] = js.native
+    var only: js.UndefOr[Boolean] = js.undefined
     
-    var retry: js.UndefOr[Double | Boolean] = js.native
+    var retry: js.UndefOr[Double | Boolean] = js.undefined
     
-    var skip: js.UndefOr[Boolean] = js.native
+    var skip: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object OmitTestOptionsplan {
     

@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -58,164 +57,9 @@ trait Column extends StObject {
   ): Unit = js.native
   
   def SortOld(): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.UndefOr[scala.Nothing],
-    SortFieldType: js.UndefOr[scala.Nothing],
-    SortOrder: js.UndefOr[scala.Nothing],
-    CaseSensitive: js.UndefOr[scala.Nothing],
-    LanguageID: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.UndefOr[scala.Nothing],
-    SortFieldType: js.UndefOr[scala.Nothing],
-    SortOrder: js.UndefOr[scala.Nothing],
-    CaseSensitive: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.UndefOr[scala.Nothing],
-    SortFieldType: js.UndefOr[scala.Nothing],
-    SortOrder: js.UndefOr[scala.Nothing],
-    CaseSensitive: js.Any,
-    LanguageID: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.UndefOr[scala.Nothing],
-    SortFieldType: js.UndefOr[scala.Nothing],
-    SortOrder: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.UndefOr[scala.Nothing],
-    SortFieldType: js.UndefOr[scala.Nothing],
-    SortOrder: js.Any,
-    CaseSensitive: js.UndefOr[scala.Nothing],
-    LanguageID: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.UndefOr[scala.Nothing],
-    SortFieldType: js.UndefOr[scala.Nothing],
-    SortOrder: js.Any,
-    CaseSensitive: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.UndefOr[scala.Nothing],
-    SortFieldType: js.UndefOr[scala.Nothing],
-    SortOrder: js.Any,
-    CaseSensitive: js.Any,
-    LanguageID: js.Any
-  ): Unit = js.native
-  def SortOld(ExcludeHeader: js.UndefOr[scala.Nothing], SortFieldType: js.Any): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.UndefOr[scala.Nothing],
-    SortFieldType: js.Any,
-    SortOrder: js.UndefOr[scala.Nothing],
-    CaseSensitive: js.UndefOr[scala.Nothing],
-    LanguageID: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.UndefOr[scala.Nothing],
-    SortFieldType: js.Any,
-    SortOrder: js.UndefOr[scala.Nothing],
-    CaseSensitive: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.UndefOr[scala.Nothing],
-    SortFieldType: js.Any,
-    SortOrder: js.UndefOr[scala.Nothing],
-    CaseSensitive: js.Any,
-    LanguageID: js.Any
-  ): Unit = js.native
-  def SortOld(ExcludeHeader: js.UndefOr[scala.Nothing], SortFieldType: js.Any, SortOrder: js.Any): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.UndefOr[scala.Nothing],
-    SortFieldType: js.Any,
-    SortOrder: js.Any,
-    CaseSensitive: js.UndefOr[scala.Nothing],
-    LanguageID: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.UndefOr[scala.Nothing],
-    SortFieldType: js.Any,
-    SortOrder: js.Any,
-    CaseSensitive: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.UndefOr[scala.Nothing],
-    SortFieldType: js.Any,
-    SortOrder: js.Any,
-    CaseSensitive: js.Any,
-    LanguageID: js.Any
-  ): Unit = js.native
   def SortOld(ExcludeHeader: js.Any): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.Any,
-    SortFieldType: js.UndefOr[scala.Nothing],
-    SortOrder: js.UndefOr[scala.Nothing],
-    CaseSensitive: js.UndefOr[scala.Nothing],
-    LanguageID: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.Any,
-    SortFieldType: js.UndefOr[scala.Nothing],
-    SortOrder: js.UndefOr[scala.Nothing],
-    CaseSensitive: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.Any,
-    SortFieldType: js.UndefOr[scala.Nothing],
-    SortOrder: js.UndefOr[scala.Nothing],
-    CaseSensitive: js.Any,
-    LanguageID: js.Any
-  ): Unit = js.native
-  def SortOld(ExcludeHeader: js.Any, SortFieldType: js.UndefOr[scala.Nothing], SortOrder: js.Any): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.Any,
-    SortFieldType: js.UndefOr[scala.Nothing],
-    SortOrder: js.Any,
-    CaseSensitive: js.UndefOr[scala.Nothing],
-    LanguageID: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.Any,
-    SortFieldType: js.UndefOr[scala.Nothing],
-    SortOrder: js.Any,
-    CaseSensitive: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.Any,
-    SortFieldType: js.UndefOr[scala.Nothing],
-    SortOrder: js.Any,
-    CaseSensitive: js.Any,
-    LanguageID: js.Any
-  ): Unit = js.native
   def SortOld(ExcludeHeader: js.Any, SortFieldType: js.Any): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.Any,
-    SortFieldType: js.Any,
-    SortOrder: js.UndefOr[scala.Nothing],
-    CaseSensitive: js.UndefOr[scala.Nothing],
-    LanguageID: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.Any,
-    SortFieldType: js.Any,
-    SortOrder: js.UndefOr[scala.Nothing],
-    CaseSensitive: js.Any
-  ): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.Any,
-    SortFieldType: js.Any,
-    SortOrder: js.UndefOr[scala.Nothing],
-    CaseSensitive: js.Any,
-    LanguageID: js.Any
-  ): Unit = js.native
   def SortOld(ExcludeHeader: js.Any, SortFieldType: js.Any, SortOrder: js.Any): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.Any,
-    SortFieldType: js.Any,
-    SortOrder: js.Any,
-    CaseSensitive: js.UndefOr[scala.Nothing],
-    LanguageID: js.Any
-  ): Unit = js.native
   def SortOld(ExcludeHeader: js.Any, SortFieldType: js.Any, SortOrder: js.Any, CaseSensitive: js.Any): Unit = js.native
   def SortOld(
     ExcludeHeader: js.Any,
@@ -224,6 +68,116 @@ trait Column extends StObject {
     CaseSensitive: js.Any,
     LanguageID: js.Any
   ): Unit = js.native
+  def SortOld(
+    ExcludeHeader: js.Any,
+    SortFieldType: js.Any,
+    SortOrder: js.Any,
+    CaseSensitive: Unit,
+    LanguageID: js.Any
+  ): Unit = js.native
+  def SortOld(ExcludeHeader: js.Any, SortFieldType: js.Any, SortOrder: Unit, CaseSensitive: js.Any): Unit = js.native
+  def SortOld(
+    ExcludeHeader: js.Any,
+    SortFieldType: js.Any,
+    SortOrder: Unit,
+    CaseSensitive: js.Any,
+    LanguageID: js.Any
+  ): Unit = js.native
+  def SortOld(
+    ExcludeHeader: js.Any,
+    SortFieldType: js.Any,
+    SortOrder: Unit,
+    CaseSensitive: Unit,
+    LanguageID: js.Any
+  ): Unit = js.native
+  def SortOld(ExcludeHeader: js.Any, SortFieldType: Unit, SortOrder: js.Any): Unit = js.native
+  def SortOld(ExcludeHeader: js.Any, SortFieldType: Unit, SortOrder: js.Any, CaseSensitive: js.Any): Unit = js.native
+  def SortOld(
+    ExcludeHeader: js.Any,
+    SortFieldType: Unit,
+    SortOrder: js.Any,
+    CaseSensitive: js.Any,
+    LanguageID: js.Any
+  ): Unit = js.native
+  def SortOld(
+    ExcludeHeader: js.Any,
+    SortFieldType: Unit,
+    SortOrder: js.Any,
+    CaseSensitive: Unit,
+    LanguageID: js.Any
+  ): Unit = js.native
+  def SortOld(ExcludeHeader: js.Any, SortFieldType: Unit, SortOrder: Unit, CaseSensitive: js.Any): Unit = js.native
+  def SortOld(
+    ExcludeHeader: js.Any,
+    SortFieldType: Unit,
+    SortOrder: Unit,
+    CaseSensitive: js.Any,
+    LanguageID: js.Any
+  ): Unit = js.native
+  def SortOld(
+    ExcludeHeader: js.Any,
+    SortFieldType: Unit,
+    SortOrder: Unit,
+    CaseSensitive: Unit,
+    LanguageID: js.Any
+  ): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: js.Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: js.Any, SortOrder: js.Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: js.Any, SortOrder: js.Any, CaseSensitive: js.Any): Unit = js.native
+  def SortOld(
+    ExcludeHeader: Unit,
+    SortFieldType: js.Any,
+    SortOrder: js.Any,
+    CaseSensitive: js.Any,
+    LanguageID: js.Any
+  ): Unit = js.native
+  def SortOld(
+    ExcludeHeader: Unit,
+    SortFieldType: js.Any,
+    SortOrder: js.Any,
+    CaseSensitive: Unit,
+    LanguageID: js.Any
+  ): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: js.Any, SortOrder: Unit, CaseSensitive: js.Any): Unit = js.native
+  def SortOld(
+    ExcludeHeader: Unit,
+    SortFieldType: js.Any,
+    SortOrder: Unit,
+    CaseSensitive: js.Any,
+    LanguageID: js.Any
+  ): Unit = js.native
+  def SortOld(
+    ExcludeHeader: Unit,
+    SortFieldType: js.Any,
+    SortOrder: Unit,
+    CaseSensitive: Unit,
+    LanguageID: js.Any
+  ): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Unit, SortOrder: js.Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Unit, SortOrder: js.Any, CaseSensitive: js.Any): Unit = js.native
+  def SortOld(
+    ExcludeHeader: Unit,
+    SortFieldType: Unit,
+    SortOrder: js.Any,
+    CaseSensitive: js.Any,
+    LanguageID: js.Any
+  ): Unit = js.native
+  def SortOld(
+    ExcludeHeader: Unit,
+    SortFieldType: Unit,
+    SortOrder: js.Any,
+    CaseSensitive: Unit,
+    LanguageID: js.Any
+  ): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Unit, SortOrder: Unit, CaseSensitive: js.Any): Unit = js.native
+  def SortOld(
+    ExcludeHeader: Unit,
+    SortFieldType: Unit,
+    SortOrder: Unit,
+    CaseSensitive: js.Any,
+    LanguageID: js.Any
+  ): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Unit, SortOrder: Unit, CaseSensitive: Unit, LanguageID: js.Any): Unit = js.native
   
   var Width: Double = js.native
   

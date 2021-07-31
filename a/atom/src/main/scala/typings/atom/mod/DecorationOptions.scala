@@ -10,17 +10,17 @@ import typings.atom.atomStrings.overlay
 import typings.atom.atomStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DecorationOptions extends SharedDecorationOptions {
+trait DecorationOptions
+  extends StObject
+     with SharedDecorationOptions {
   
   /** The name of the gutter we're decorating, if type is "gutter". */
-  var gutterName: js.UndefOr[String] = js.native
+  var gutterName: js.UndefOr[String] = js.undefined
   
   /** One of several supported decoration types. */
-  var `type`: js.UndefOr[line | `line-number` | text | highlight | overlay | gutter | block | cursor_] = js.native
+  var `type`: js.UndefOr[line | `line-number` | text | highlight | overlay | gutter | block | cursor_] = js.undefined
 }
 object DecorationOptions {
   

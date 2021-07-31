@@ -8,45 +8,45 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLFieldSetElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldsetMod {
   
   @JSImport("@react-md/form/types/Fieldset", "Fieldset")
   @js.native
-  val Fieldset: ForwardRefExoticComponent[FieldsetProps with RefAttributes[HTMLFieldSetElement]] = js.native
+  val Fieldset: ForwardRefExoticComponent[FieldsetProps & RefAttributes[HTMLFieldSetElement]] = js.native
   
-  @js.native
-  trait FieldsetProps extends FieldsetHTMLAttributes[HTMLFieldSetElement] {
+  trait FieldsetProps
+    extends StObject
+       with FieldsetHTMLAttributes[HTMLFieldSetElement] {
     
     /**
       * The legend to display. This is required since a fieldset loses most of its'
       * benefit for accessibility without a legend.
       */
-    var legend: ReactNode = js.native
+    var legend: ReactNode
     
     /**
       * An optional classname to apply to the legend.
       */
-    var legendClassName: js.UndefOr[String] = js.native
+    var legendClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if the legend should only be styled to be visible for screen
       * readers.
       */
-    var legendSROnly: js.UndefOr[Boolean] = js.native
+    var legendSROnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional style to apply to the legend element.
       */
-    var legendStyle: js.UndefOr[CSSProperties] = js.native
+    var legendStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Boolean if the fieldset should remove the default browser styles of margin,
       * padding, and border.
       */
-    var unstyled: js.UndefOr[Boolean] = js.native
+    var unstyled: js.UndefOr[Boolean] = js.undefined
   }
   object FieldsetProps {
     

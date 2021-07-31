@@ -2,61 +2,59 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityPool extends StObject {
   
   /**
     * Enables or disables the Basic (Classic) authentication flow. For more information, see Identity Pools (Federated Identities) Authentication Flow in the Amazon Cognito Developer Guide.
     */
-  var AllowClassicFlow: js.UndefOr[ClassicFlow] = js.native
+  var AllowClassicFlow: js.UndefOr[ClassicFlow] = js.undefined
   
   /**
     * TRUE if the identity pool supports unauthenticated logins.
     */
-  var AllowUnauthenticatedIdentities: IdentityPoolUnauthenticated = js.native
+  var AllowUnauthenticatedIdentities: IdentityPoolUnauthenticated
   
   /**
     * A list representing an Amazon Cognito user pool and its client ID.
     */
-  var CognitoIdentityProviders: js.UndefOr[CognitoIdentityProviderList] = js.native
+  var CognitoIdentityProviders: js.UndefOr[CognitoIdentityProviderList] = js.undefined
   
   /**
     * The "domain" by which Cognito will refer to your users.
     */
-  var DeveloperProviderName: js.UndefOr[typings.awsSdk.cognitoidentityMod.DeveloperProviderName] = js.native
+  var DeveloperProviderName: js.UndefOr[typings.awsSdk.cognitoidentityMod.DeveloperProviderName] = js.undefined
   
   /**
     * An identity pool ID in the format REGION:GUID.
     */
-  var IdentityPoolId: typings.awsSdk.cognitoidentityMod.IdentityPoolId = js.native
+  var IdentityPoolId: typings.awsSdk.cognitoidentityMod.IdentityPoolId
   
   /**
     * A string that you provide.
     */
-  var IdentityPoolName: typings.awsSdk.cognitoidentityMod.IdentityPoolName = js.native
+  var IdentityPoolName: typings.awsSdk.cognitoidentityMod.IdentityPoolName
   
   /**
     * The tags that are assigned to the identity pool. A tag is a label that you can apply to identity pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria.
     */
-  var IdentityPoolTags: js.UndefOr[IdentityPoolTagsType] = js.native
+  var IdentityPoolTags: js.UndefOr[IdentityPoolTagsType] = js.undefined
   
   /**
     * A list of OpendID Connect provider ARNs.
     */
-  var OpenIdConnectProviderARNs: js.UndefOr[OIDCProviderList] = js.native
+  var OpenIdConnectProviderARNs: js.UndefOr[OIDCProviderList] = js.undefined
   
   /**
     * An array of Amazon Resource Names (ARNs) of the SAML provider for your identity pool.
     */
-  var SamlProviderARNs: js.UndefOr[SAMLProviderList] = js.native
+  var SamlProviderARNs: js.UndefOr[SAMLProviderList] = js.undefined
   
   /**
     * Optional key:value pairs mapping provider names to provider app IDs.
     */
-  var SupportedLoginProviders: js.UndefOr[IdentityProviders] = js.native
+  var SupportedLoginProviders: js.UndefOr[IdentityProviders] = js.undefined
 }
 object IdentityPool {
   

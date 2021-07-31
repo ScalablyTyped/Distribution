@@ -7,18 +7,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to the settings and options of a database range.
   * @see com.sun.star.sheet.DatabaseRange
   */
-@js.native
-trait XDatabaseRange extends XInterface {
+trait XDatabaseRange
+  extends StObject
+     with XInterface {
   
   /** returns the data area of the database range in the spreadsheet document. */
-  var DataArea: CellRangeAddress = js.native
+  var DataArea: CellRangeAddress
   
   /**
     * returns the filter descriptor stored with the database range.
@@ -26,19 +26,19 @@ trait XDatabaseRange extends XInterface {
     * If the filter descriptor is modified, the new filtering is carried out when {@link XDatabaseRange.refresh()} is called.
     * @see SheetFilterDescriptor
     */
-  val FilterDescriptor: XSheetFilterDescriptor = js.native
+  val FilterDescriptor: XSheetFilterDescriptor
   
   /**
     * returns the database import descriptor stored with this database range.
     * @see DatabaseImportDescriptor
     */
-  val ImportDescriptor: SafeArray[PropertyValue] = js.native
+  val ImportDescriptor: SafeArray[PropertyValue]
   
   /**
     * returns the sort descriptor stored with the database range.
     * @see SheetSortDescriptor2
     */
-  val SortDescriptor: SafeArray[PropertyValue] = js.native
+  val SortDescriptor: SafeArray[PropertyValue]
   
   /**
     * returns the subtotal descriptor stored with the database range.
@@ -46,10 +46,10 @@ trait XDatabaseRange extends XInterface {
     * If the subtotal descriptor is modified, the new subtotals are inserted when {@link XDatabaseRange.refresh()} is called.
     * @see SubTotalDescriptor
     */
-  val SubTotalDescriptor: XSubTotalDescriptor = js.native
+  val SubTotalDescriptor: XSubTotalDescriptor
   
   /** returns the data area of the database range in the spreadsheet document. */
-  def getDataArea(): CellRangeAddress = js.native
+  def getDataArea(): CellRangeAddress
   
   /**
     * returns the filter descriptor stored with the database range.
@@ -57,19 +57,19 @@ trait XDatabaseRange extends XInterface {
     * If the filter descriptor is modified, the new filtering is carried out when {@link XDatabaseRange.refresh()} is called.
     * @see SheetFilterDescriptor
     */
-  def getFilterDescriptor(): XSheetFilterDescriptor = js.native
+  def getFilterDescriptor(): XSheetFilterDescriptor
   
   /**
     * returns the database import descriptor stored with this database range.
     * @see DatabaseImportDescriptor
     */
-  def getImportDescriptor(): SafeArray[PropertyValue] = js.native
+  def getImportDescriptor(): SafeArray[PropertyValue]
   
   /**
     * returns the sort descriptor stored with the database range.
     * @see SheetSortDescriptor2
     */
-  def getSortDescriptor(): SafeArray[PropertyValue] = js.native
+  def getSortDescriptor(): SafeArray[PropertyValue]
   
   /**
     * returns the subtotal descriptor stored with the database range.
@@ -77,13 +77,13 @@ trait XDatabaseRange extends XInterface {
     * If the subtotal descriptor is modified, the new subtotals are inserted when {@link XDatabaseRange.refresh()} is called.
     * @see SubTotalDescriptor
     */
-  def getSubTotalDescriptor(): XSubTotalDescriptor = js.native
+  def getSubTotalDescriptor(): XSubTotalDescriptor
   
   /** executes the stored import, filter, sorting, and subtotals descriptors again. */
-  def refresh(): Unit = js.native
+  def refresh(): Unit
   
   /** sets the data area of the database range. */
-  def setDataArea(aDataArea: CellRangeAddress): Unit = js.native
+  def setDataArea(aDataArea: CellRangeAddress): Unit
 }
 object XDatabaseRange {
   

@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFlattenedDocumentResponse extends StObject {
   
   /**
     * Resulting node.
     */
-  var nodes: js.Array[Node] = js.native
+  var nodes: js.Array[Node]
 }
 object GetFlattenedDocumentResponse {
   

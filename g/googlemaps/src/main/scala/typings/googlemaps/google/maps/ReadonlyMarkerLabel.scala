@@ -2,27 +2,25 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @see {@link MarkerLabel} */
-@js.native
 trait ReadonlyMarkerLabel extends StObject {
   
   /** @see {@link MarkerLabel#color} */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /** @see {@link MarkerLabel#fontFamily} */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /** @see {@link MarkerLabel#fontSize} */
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
   /** @see {@link MarkerLabel#fontWeight} */
-  var fontWeight: js.UndefOr[String] = js.native
+  var fontWeight: js.UndefOr[String] = js.undefined
   
   /** @see {@link MarkerLabel#text} */
-  var text: String = js.native
+  var text: String
 }
 object ReadonlyMarkerLabel {
   

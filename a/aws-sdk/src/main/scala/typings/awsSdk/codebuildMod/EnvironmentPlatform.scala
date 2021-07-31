@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentPlatform extends StObject {
   
   /**
     * The list of programming languages that are available for the specified platform.
     */
-  var languages: js.UndefOr[EnvironmentLanguages] = js.native
+  var languages: js.UndefOr[EnvironmentLanguages] = js.undefined
   
   /**
     * The platform's name.
     */
-  var platform: js.UndefOr[PlatformType] = js.native
+  var platform: js.UndefOr[PlatformType] = js.undefined
 }
 object EnvironmentPlatform {
   

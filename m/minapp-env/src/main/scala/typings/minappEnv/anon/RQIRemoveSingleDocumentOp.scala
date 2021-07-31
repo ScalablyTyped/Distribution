@@ -3,14 +3,12 @@ package typings.minappEnv.anon
 import typings.minappEnv.ICloudConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined minapp-env.RQ<minapp-env.DB.IRemoveSingleDocumentOptions> */
-@js.native
 trait RQIRemoveSingleDocumentOp extends StObject {
   
-  var config: js.UndefOr[ICloudConfig] = js.native
+  var config: js.UndefOr[ICloudConfig] = js.undefined
 }
 object RQIRemoveSingleDocumentOp {
   

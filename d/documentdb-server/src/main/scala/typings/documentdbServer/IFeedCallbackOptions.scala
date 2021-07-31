@@ -2,21 +2,19 @@ package typings.documentdbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information associated with the response to the operation. */
-@js.native
 trait IFeedCallbackOptions extends StObject {
   
   /** Opaque token for continuing the read feed or query. */
-  var continuation: String = js.native
+  var continuation: String
   
   /** Comma delimited string containing the collection's current quota metrics (storage, number of stored procedure, triggers and UDFs) after completion of the operation. */
-  var currentCollectionSizeInMB: String = js.native
+  var currentCollectionSizeInMB: String
   
   /** Comma delimited string containing the collection's maximum quota metrics (storage, number of stored procedure, triggers and UDFs). */
-  var maxCollectionSizeInMB: String = js.native
+  var maxCollectionSizeInMB: String
 }
 object IFeedCallbackOptions {
   

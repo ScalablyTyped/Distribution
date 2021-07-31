@@ -2,10 +2,13 @@ package typings.symlinkOrCopy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("symlink-or-copy", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("symlink-or-copy", "canSymlink")
   @js.native
@@ -19,7 +22,6 @@ object mod {
   @js.native
   val canSymlinkFile: Boolean = js.native
   
-  @JSImport("symlink-or-copy", "sync")
-  @js.native
-  def sync(srcPath: String, destPath: String): Unit = js.native
+  @scala.inline
+  def sync(srcPath: String, destPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(srcPath.asInstanceOf[js.Any], destPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

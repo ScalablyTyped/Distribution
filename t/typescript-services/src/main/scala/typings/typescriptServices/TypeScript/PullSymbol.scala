@@ -2,7 +2,6 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -65,25 +64,13 @@ trait PullSymbol extends StObject {
   def getDeclarations(): js.Array[PullDecl] = js.native
   
   def getDisplayName(): String = js.native
-  def getDisplayName(
-    scopeSymbol: js.UndefOr[scala.Nothing],
-    useConstraintInName: js.UndefOr[scala.Nothing],
-    skipInternalAliasName: Boolean
-  ): String = js.native
-  def getDisplayName(scopeSymbol: js.UndefOr[scala.Nothing], useConstraintInName: Boolean): String = js.native
-  def getDisplayName(
-    scopeSymbol: js.UndefOr[scala.Nothing],
-    useConstraintInName: Boolean,
-    skipInternalAliasName: Boolean
-  ): String = js.native
+  def getDisplayName(scopeSymbol: Unit, useConstraintInName: Boolean): String = js.native
+  def getDisplayName(scopeSymbol: Unit, useConstraintInName: Boolean, skipInternalAliasName: Boolean): String = js.native
+  def getDisplayName(scopeSymbol: Unit, useConstraintInName: Unit, skipInternalAliasName: Boolean): String = js.native
   def getDisplayName(scopeSymbol: PullSymbol): String = js.native
-  def getDisplayName(
-    scopeSymbol: PullSymbol,
-    useConstraintInName: js.UndefOr[scala.Nothing],
-    skipInternalAliasName: Boolean
-  ): String = js.native
   def getDisplayName(scopeSymbol: PullSymbol, useConstraintInName: Boolean): String = js.native
   def getDisplayName(scopeSymbol: PullSymbol, useConstraintInName: Boolean, skipInternalAliasName: Boolean): String = js.native
+  def getDisplayName(scopeSymbol: PullSymbol, useConstraintInName: Unit, skipInternalAliasName: Boolean): String = js.native
   
   /* private */ def getDocCommentArray(symbol: js.Any): js.Any = js.native
   
@@ -104,7 +91,7 @@ trait PullSymbol extends StObject {
   def getIsSynthesized(): js.Any = js.native
   
   def getName(): String = js.native
-  def getName(scopeSymbol: js.UndefOr[scala.Nothing], useConstraintInName: Boolean): String = js.native
+  def getName(scopeSymbol: Unit, useConstraintInName: Boolean): String = js.native
   def getName(scopeSymbol: PullSymbol): String = js.native
   def getName(scopeSymbol: PullSymbol, useConstraintInName: Boolean): String = js.native
   
@@ -121,71 +108,59 @@ trait PullSymbol extends StObject {
   def getRootSymbol(): PullSymbol = js.native
   
   def getScopedName(): String = js.native
+  def getScopedName(scopeSymbol: Unit, skipTypeParametersInName: Boolean): String = js.native
+  def getScopedName(scopeSymbol: Unit, skipTypeParametersInName: Boolean, useConstraintInName: Boolean): String = js.native
   def getScopedName(
-    scopeSymbol: js.UndefOr[scala.Nothing],
-    skipTypeParametersInName: js.UndefOr[scala.Nothing],
-    useConstraintInName: js.UndefOr[scala.Nothing],
+    scopeSymbol: Unit,
+    skipTypeParametersInName: Boolean,
+    useConstraintInName: Boolean,
     skipInternalAliasName: Boolean
   ): String = js.native
   def getScopedName(
-    scopeSymbol: js.UndefOr[scala.Nothing],
-    skipTypeParametersInName: js.UndefOr[scala.Nothing],
-    useConstraintInName: Boolean
+    scopeSymbol: Unit,
+    skipTypeParametersInName: Boolean,
+    useConstraintInName: Unit,
+    skipInternalAliasName: Boolean
   ): String = js.native
+  def getScopedName(scopeSymbol: Unit, skipTypeParametersInName: Unit, useConstraintInName: Boolean): String = js.native
   def getScopedName(
-    scopeSymbol: js.UndefOr[scala.Nothing],
-    skipTypeParametersInName: js.UndefOr[scala.Nothing],
+    scopeSymbol: Unit,
+    skipTypeParametersInName: Unit,
     useConstraintInName: Boolean,
     skipInternalAliasName: Boolean
   ): String = js.native
-  def getScopedName(scopeSymbol: js.UndefOr[scala.Nothing], skipTypeParametersInName: Boolean): String = js.native
   def getScopedName(
-    scopeSymbol: js.UndefOr[scala.Nothing],
-    skipTypeParametersInName: Boolean,
-    useConstraintInName: js.UndefOr[scala.Nothing],
-    skipInternalAliasName: Boolean
-  ): String = js.native
-  def getScopedName(
-    scopeSymbol: js.UndefOr[scala.Nothing],
-    skipTypeParametersInName: Boolean,
-    useConstraintInName: Boolean
-  ): String = js.native
-  def getScopedName(
-    scopeSymbol: js.UndefOr[scala.Nothing],
-    skipTypeParametersInName: Boolean,
-    useConstraintInName: Boolean,
+    scopeSymbol: Unit,
+    skipTypeParametersInName: Unit,
+    useConstraintInName: Unit,
     skipInternalAliasName: Boolean
   ): String = js.native
   def getScopedName(scopeSymbol: PullSymbol): String = js.native
-  def getScopedName(
-    scopeSymbol: PullSymbol,
-    skipTypeParametersInName: js.UndefOr[scala.Nothing],
-    useConstraintInName: js.UndefOr[scala.Nothing],
-    skipInternalAliasName: Boolean
-  ): String = js.native
-  def getScopedName(
-    scopeSymbol: PullSymbol,
-    skipTypeParametersInName: js.UndefOr[scala.Nothing],
-    useConstraintInName: Boolean
-  ): String = js.native
-  def getScopedName(
-    scopeSymbol: PullSymbol,
-    skipTypeParametersInName: js.UndefOr[scala.Nothing],
-    useConstraintInName: Boolean,
-    skipInternalAliasName: Boolean
-  ): String = js.native
   def getScopedName(scopeSymbol: PullSymbol, skipTypeParametersInName: Boolean): String = js.native
-  def getScopedName(
-    scopeSymbol: PullSymbol,
-    skipTypeParametersInName: Boolean,
-    useConstraintInName: js.UndefOr[scala.Nothing],
-    skipInternalAliasName: Boolean
-  ): String = js.native
   def getScopedName(scopeSymbol: PullSymbol, skipTypeParametersInName: Boolean, useConstraintInName: Boolean): String = js.native
   def getScopedName(
     scopeSymbol: PullSymbol,
     skipTypeParametersInName: Boolean,
     useConstraintInName: Boolean,
+    skipInternalAliasName: Boolean
+  ): String = js.native
+  def getScopedName(
+    scopeSymbol: PullSymbol,
+    skipTypeParametersInName: Boolean,
+    useConstraintInName: Unit,
+    skipInternalAliasName: Boolean
+  ): String = js.native
+  def getScopedName(scopeSymbol: PullSymbol, skipTypeParametersInName: Unit, useConstraintInName: Boolean): String = js.native
+  def getScopedName(
+    scopeSymbol: PullSymbol,
+    skipTypeParametersInName: Unit,
+    useConstraintInName: Boolean,
+    skipInternalAliasName: Boolean
+  ): String = js.native
+  def getScopedName(
+    scopeSymbol: PullSymbol,
+    skipTypeParametersInName: Unit,
+    useConstraintInName: Unit,
     skipInternalAliasName: Boolean
   ): String = js.native
   
@@ -199,12 +174,12 @@ trait PullSymbol extends StObject {
   ): MemberName = js.native
   
   def getTypeName(): String = js.native
-  def getTypeName(scopeSymbol: js.UndefOr[scala.Nothing], getPrettyTypeName: Boolean): String = js.native
+  def getTypeName(scopeSymbol: Unit, getPrettyTypeName: Boolean): String = js.native
   def getTypeName(scopeSymbol: PullSymbol): String = js.native
   def getTypeName(scopeSymbol: PullSymbol, getPrettyTypeName: Boolean): String = js.native
   
   def getTypeNameEx(): MemberName = js.native
-  def getTypeNameEx(scopeSymbol: js.UndefOr[scala.Nothing], getPrettyTypeName: Boolean): MemberName = js.native
+  def getTypeNameEx(scopeSymbol: Unit, getPrettyTypeName: Boolean): MemberName = js.native
   def getTypeNameEx(scopeSymbol: PullSymbol): MemberName = js.native
   def getTypeNameEx(scopeSymbol: PullSymbol, getPrettyTypeName: Boolean): MemberName = js.native
   
@@ -280,7 +255,7 @@ trait PullSymbol extends StObject {
   
   def startResolving(): Unit = js.native
   
-  def toString(scopeSymbol: js.UndefOr[scala.Nothing], useConstraintInName: Boolean): String = js.native
+  def toString(scopeSymbol: Unit, useConstraintInName: Boolean): String = js.native
   def toString(scopeSymbol: PullSymbol): String = js.native
   def toString(scopeSymbol: PullSymbol, useConstraintInName: Boolean): String = js.native
   

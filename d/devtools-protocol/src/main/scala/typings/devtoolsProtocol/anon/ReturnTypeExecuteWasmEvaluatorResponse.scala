@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.ExecuteWasmEvaluatorReques
 import typings.devtoolsProtocol.mod.Protocol.Debugger.ExecuteWasmEvaluatorResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeExecuteWasmEvaluatorResponse extends StObject {
   
-  var paramsType: js.Array[ExecuteWasmEvaluatorRequest] = js.native
+  var paramsType: js.Array[ExecuteWasmEvaluatorRequest]
   
-  var returnType: ExecuteWasmEvaluatorResponse = js.native
+  var returnType: ExecuteWasmEvaluatorResponse
 }
 object ReturnTypeExecuteWasmEvaluatorResponse {
   

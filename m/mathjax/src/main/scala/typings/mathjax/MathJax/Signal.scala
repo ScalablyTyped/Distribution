@@ -2,7 +2,6 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -81,5 +80,5 @@ trait Signal extends StObject {
     * they can be informed of the signals that have been posted so far. This can be cleared using the signal’s
     * Clear() method.
     */
-  var posted: js.Array[_] = js.native
+  var posted: js.Array[js.Any] = js.native
 }

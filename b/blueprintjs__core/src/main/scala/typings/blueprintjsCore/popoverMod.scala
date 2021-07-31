@@ -13,7 +13,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverMod {
@@ -163,24 +162,25 @@ object popoverMod {
     def HOVER_TARGET_ONLY_=(x: `hover-target`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOVER_TARGET_ONLY")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IPopoverProps extends IPopoverSharedProps {
+  trait IPopoverProps
+    extends StObject
+       with IPopoverSharedProps {
     
     /** HTML props for the backdrop element. Can be combined with `backdropClassName`. */
-    var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.native
+    var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
     
     /**
       * The content displayed inside the popover. This can instead be provided as
       * the _second_ element in `children` (first is `target`).
       */
-    var content: js.UndefOr[String | Element] = js.native
+    var content: js.UndefOr[String | Element] = js.undefined
     
     /**
       * Whether the wrapper and target should take up the full width of their container.
       * Note that supplying `true` for this prop will force  `targetTagName="div"` and
       * `wrapperTagName="div"`.
       */
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables an invisible overlay beneath the popover that captures clicks and
@@ -190,24 +190,24 @@ object popoverMod {
       * they become focused.
       * @default false
       */
-    var hasBackdrop: js.UndefOr[Boolean] = js.native
+    var hasBackdrop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The kind of interaction that triggers the display of the popover.
       * @default PopoverInteractionKind.CLICK
       */
-    var interactionKind: js.UndefOr[PopoverInteractionKind] = js.native
+    var interactionKind: js.UndefOr[PopoverInteractionKind] = js.undefined
     
     /**
       * Ref supplied to the `Classes.POPOVER` element.
       */
-    var popoverRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.native
+    var popoverRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.undefined
     
     /**
       * The target to which the popover content is attached. This can instead be
       * provided as the _first_ element in `children`.
       */
-    var target: js.UndefOr[String | Element] = js.native
+    var target: js.UndefOr[String | Element] = js.undefined
   }
   object IPopoverProps {
     
@@ -264,14 +264,13 @@ object popoverMod {
     }
   }
   
-  @js.native
   trait IPopoverState extends StObject {
     
-    var hasDarkParent: Boolean = js.native
+    var hasDarkParent: Boolean
     
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
-    var transformOrigin: String = js.native
+    var transformOrigin: String
   }
   object IPopoverState {
     

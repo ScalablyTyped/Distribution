@@ -2,56 +2,54 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoringJobDefinition extends StObject {
   
   /**
     * Baseline configuration used to validate that the data conforms to the specified constraints and statistics
     */
-  var BaselineConfig: js.UndefOr[MonitoringBaselineConfig] = js.native
+  var BaselineConfig: js.UndefOr[MonitoringBaselineConfig] = js.undefined
   
   /**
     * Sets the environment variables in the Docker container.
     */
-  var Environment: js.UndefOr[MonitoringEnvironmentMap] = js.native
+  var Environment: js.UndefOr[MonitoringEnvironmentMap] = js.undefined
   
   /**
     * Configures the monitoring job to run a specified Docker container image.
     */
-  var MonitoringAppSpecification: typings.awsSdk.sagemakerMod.MonitoringAppSpecification = js.native
+  var MonitoringAppSpecification: typings.awsSdk.sagemakerMod.MonitoringAppSpecification
   
   /**
     * The array of inputs for the monitoring job. Currently we support monitoring an Amazon SageMaker Endpoint.
     */
-  var MonitoringInputs: typings.awsSdk.sagemakerMod.MonitoringInputs = js.native
+  var MonitoringInputs: typings.awsSdk.sagemakerMod.MonitoringInputs
   
   /**
     * The array of outputs from the monitoring job to be uploaded to Amazon Simple Storage Service (Amazon S3).
     */
-  var MonitoringOutputConfig: typings.awsSdk.sagemakerMod.MonitoringOutputConfig = js.native
+  var MonitoringOutputConfig: typings.awsSdk.sagemakerMod.MonitoringOutputConfig
   
   /**
     * Identifies the resources, ML compute instances, and ML storage volumes to deploy for a monitoring job. In distributed processing, you specify more than one instance.
     */
-  var MonitoringResources: typings.awsSdk.sagemakerMod.MonitoringResources = js.native
+  var MonitoringResources: typings.awsSdk.sagemakerMod.MonitoringResources
   
   /**
     * Specifies networking options for an monitoring job.
     */
-  var NetworkConfig: js.UndefOr[typings.awsSdk.sagemakerMod.NetworkConfig] = js.native
+  var NetworkConfig: js.UndefOr[typings.awsSdk.sagemakerMod.NetworkConfig] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of an IAM role that Amazon SageMaker can assume to perform tasks on your behalf.
     */
-  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn
   
   /**
     * Specifies a time limit for how long the monitoring job is allowed to run.
     */
-  var StoppingCondition: js.UndefOr[MonitoringStoppingCondition] = js.native
+  var StoppingCondition: js.UndefOr[MonitoringStoppingCondition] = js.undefined
 }
 object MonitoringJobDefinition {
   

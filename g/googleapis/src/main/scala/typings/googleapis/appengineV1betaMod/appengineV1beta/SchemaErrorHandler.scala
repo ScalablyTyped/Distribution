@@ -2,29 +2,27 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Custom static error page to be served when an error occurs.
   */
-@js.native
 trait SchemaErrorHandler extends StObject {
   
   /**
     * Error condition this handler applies to.
     */
-  var errorCode: js.UndefOr[String] = js.native
+  var errorCode: js.UndefOr[String] = js.undefined
   
   /**
     * MIME type of file. Defaults to text/html.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * Static file content to be served for this error.
     */
-  var staticFile: js.UndefOr[String] = js.native
+  var staticFile: js.UndefOr[String] = js.undefined
 }
 object SchemaErrorHandler {
   

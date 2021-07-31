@@ -2,13 +2,12 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** canvas 触摸事件响应 */
-@js.native
 trait TouchCanvas[Mark /* <: IAnyObject */, TargetDataset /* <: IAnyObject */]
-  extends Touch[scala.Nothing, TouchCanvasDetail, Mark, scala.Nothing, TargetDataset]
+  extends StObject
+     with Touch[scala.Nothing, TouchCanvasDetail, Mark, scala.Nothing, TargetDataset]
 object TouchCanvas {
   
   @scala.inline

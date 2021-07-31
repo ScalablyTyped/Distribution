@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionalDefinitionProperties extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait DimensionalDefinitionProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#dimensionName)
     */
-  var dimensionName: js.UndefOr[String] = js.native
+  var dimensionName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the values indicate slices (rather than ranges).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#isSlice)
     */
-  var isSlice: js.UndefOr[Boolean] = js.native
+  var isSlice: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of single values or tuples [min, max] each defining a range of valid values along the specified dimension.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#values)
     */
-  var values: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.native
+  var values: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.undefined
   
   /**
     * The required variable name by which to filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#variableName)
     */
-  var variableName: js.UndefOr[String] = js.native
+  var variableName: js.UndefOr[String] = js.undefined
 }
 object DimensionalDefinitionProperties {
   

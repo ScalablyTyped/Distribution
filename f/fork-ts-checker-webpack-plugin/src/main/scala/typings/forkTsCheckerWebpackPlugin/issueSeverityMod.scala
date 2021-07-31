@@ -2,18 +2,19 @@ package typings.forkTsCheckerWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object issueSeverityMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueSeverity", "compareIssueSeverities")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueSeverity", JSImport.Namespace)
   @js.native
-  def compareIssueSeverities(severityA: IssueSeverity, severityB: IssueSeverity): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueSeverity", "isIssueSeverity")
-  @js.native
-  def isIssueSeverity(value: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/issue/IssueSeverity.IssueSeverity */ Boolean = js.native
+  @scala.inline
+  def compareIssueSeverities(severityA: IssueSeverity, severityB: IssueSeverity): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueSeverities")(severityA.asInstanceOf[js.Any], severityB.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def isIssueSeverity(value: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/issue/IssueSeverity.IssueSeverity */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIssueSeverity")(value.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/issue/IssueSeverity.IssueSeverity */ Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.error

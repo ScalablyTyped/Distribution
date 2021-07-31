@@ -2,13 +2,11 @@ package typings.stripeV3.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OfflineAcceptanceMandate extends StObject {
   
-  var contact_email: String = js.native
+  var contact_email: String
 }
 object OfflineAcceptanceMandate {
   

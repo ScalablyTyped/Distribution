@@ -3,24 +3,24 @@ package typings.twineSugarcube
 import typings.twineSugarcube.extensionsMod.global.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settingsMod {
   
-  @js.native
-  trait ListDefinition[T] extends SettingDefinition {
+  trait ListDefinition[T]
+    extends StObject
+       with SettingDefinition {
     
     /**
       * The default value for the setting and default state of the control. It should have the same value as one of the members of
       * the list array. Leaving it undefined means to use the first array member as the default.
       */
-    var default: js.UndefOr[T] = js.native
+    var default: js.UndefOr[T] = js.undefined
     
     /**
       * The array of items.
       */
-    var list: Array[T] = js.native
+    var list: Array[T]
   }
   object ListDefinition {
     
@@ -31,7 +31,7 @@ object settingsMod {
     }
     
     @scala.inline
-    implicit class ListDefinitionMutableBuilder[Self <: ListDefinition[_], T] (val x: Self with ListDefinition[T]) extends AnyVal {
+    implicit class ListDefinitionMutableBuilder[Self <: ListDefinition[?], T] (val x: Self & ListDefinition[T]) extends AnyVal {
       
       @scala.inline
       def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
@@ -44,28 +44,29 @@ object settingsMod {
     }
   }
   
-  @js.native
-  trait RangeDefinition extends SettingDefinition {
+  trait RangeDefinition
+    extends StObject
+       with SettingDefinition {
     
     /**
       * The default value for the setting and default state of the control. Leaving it undefined means to use the value of max as the default.
       */
-    var default: js.UndefOr[Double] = js.native
+    var default: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum value.
       */
-    var max: Double = js.native
+    var max: Double
     
     /**
       * The minimum value.
       */
-    var min: Double = js.native
+    var min: Double
     
     /**
       * Limits the increments to which the value may be set. It must be evenly divisible into the full range — i.e., max - min.
       */
-    var step: Double = js.native
+    var step: Double
   }
   object RangeDefinition {
     
@@ -95,28 +96,27 @@ object settingsMod {
     }
   }
   
-  @js.native
   trait SettingDefinition extends StObject {
     
     /**
       * Description explaining the control in greater detail.
       */
-    var desc: js.UndefOr[String] = js.native
+    var desc: js.UndefOr[String] = js.undefined
     
     /**
       * Label to use for the control.
       */
-    var label: String = js.native
+    var label: String
     
     /**
       * The function to call when the control's state is changed.
       */
-    var onChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var onChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * The function to call during initialization.
       */
-    var onInit: js.UndefOr[js.Function0[Unit]] = js.native
+    var onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object SettingDefinition {
     
@@ -301,13 +301,14 @@ object settingsMod {
     def save(): Unit = js.native
   }
   
-  @js.native
-  trait ToggleDefinition extends SettingDefinition {
+  trait ToggleDefinition
+    extends StObject
+       with SettingDefinition {
     
     /**
       * The default value for the setting and default state of the control. Leaving it undefined means to use false as the default.
       */
-    var default: js.UndefOr[Boolean] = js.native
+    var default: js.UndefOr[Boolean] = js.undefined
   }
   object ToggleDefinition {
     

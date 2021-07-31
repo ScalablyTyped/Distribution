@@ -3,11 +3,10 @@ package typings.aframe.mod
 import typings.three.mod.Camera
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Component[T /* <: js.Object */, S /* <: System[_] */] extends StObject {
+trait Component[T /* <: js.Object */, S /* <: System[js.Any] */] extends StObject {
   
   var attrName: js.UndefOr[String] = js.native
   
@@ -15,7 +14,7 @@ trait Component[T /* <: js.Object */, S /* <: System[_] */] extends StObject {
   
   var dependencies: js.UndefOr[js.Array[String]] = js.native
   
-  var el: Entity[ObjectMap[Component[_, System[_]]]] = js.native
+  var el: Entity[ObjectMap[Component[js.Any, System[js.Any]]]] = js.native
   
   var events: js.UndefOr[js.Any] = js.native
   

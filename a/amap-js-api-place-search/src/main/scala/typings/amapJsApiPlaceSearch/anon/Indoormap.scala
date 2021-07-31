@@ -3,19 +3,17 @@ package typings.amapJsApiPlaceSearch.anon
 import typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Indoormap extends StObject {
   
-  var indoor_map: `false` = js.native
+  var indoor_map: `false`
 }
 object Indoormap {
   
   @scala.inline
-  def apply(indoor_map: `false`): Indoormap = {
-    val __obj = js.Dynamic.literal(indoor_map = indoor_map.asInstanceOf[js.Any])
+  def apply(): Indoormap = {
+    val __obj = js.Dynamic.literal(indoor_map = false)
     __obj.asInstanceOf[Indoormap]
   }
   

@@ -2,27 +2,25 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directRepositoryCreateGroupThreadResponseMod {
   
-  @js.native
   trait DirectRepositoryCreateGroupThreadResponseFriendshipStatus extends StObject {
     
-    var blocking: Boolean = js.native
+    var blocking: Boolean
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var incoming_request: Boolean = js.native
+    var incoming_request: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_restricted: Boolean = js.native
+    var is_restricted: Boolean
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
   }
   object DirectRepositoryCreateGroupThreadResponseFriendshipStatus {
     
@@ -66,28 +64,27 @@ object directRepositoryCreateGroupThreadResponseMod {
     }
   }
   
-  @js.native
   trait DirectRepositoryCreateGroupThreadResponseInviter extends StObject {
     
-    var allowed_commenter_type: String = js.native
+    var allowed_commenter_type: String
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var reel_auto_archive: String = js.native
+    var reel_auto_archive: String
     
-    var username: String = js.native
+    var username: String
   }
   object DirectRepositoryCreateGroupThreadResponseInviter {
     
@@ -143,74 +140,73 @@ object directRepositoryCreateGroupThreadResponseMod {
     }
   }
   
-  @js.native
   trait DirectRepositoryCreateGroupThreadResponseRootObject extends StObject {
     
-    var admin_user_ids: js.Array[Double] = js.native
+    var admin_user_ids: js.Array[Double]
     
-    var approval_required_for_new_members: Boolean = js.native
+    var approval_required_for_new_members: Boolean
     
-    var archived: Boolean = js.native
+    var archived: Boolean
     
-    var business_thread_folder: Double = js.native
+    var business_thread_folder: Double
     
-    var canonical: Boolean = js.native
+    var canonical: Boolean
     
-    var folder: Double = js.native
+    var folder: Double
     
-    var has_newer: Boolean = js.native
+    var has_newer: Boolean
     
-    var has_older: Boolean = js.native
+    var has_older: Boolean
     
-    var input_mode: Double = js.native
+    var input_mode: Double
     
-    var inviter: DirectRepositoryCreateGroupThreadResponseInviter = js.native
+    var inviter: DirectRepositoryCreateGroupThreadResponseInviter
     
-    var is_group: Boolean = js.native
+    var is_group: Boolean
     
-    var is_pin: Boolean = js.native
+    var is_pin: Boolean
     
-    var items: js.Array[_] = js.native
+    var items: js.Array[js.Any]
     
-    var last_activity_at: Double = js.native
+    var last_activity_at: Double
     
-    var last_seen_at: js.Any = js.native
+    var last_seen_at: js.Any
     
-    var left_users: js.Array[_] = js.native
+    var left_users: js.Array[js.Any]
     
-    var mentions_muted: Boolean = js.native
+    var mentions_muted: Boolean
     
-    var muted: Boolean = js.native
+    var muted: Boolean
     
-    var named: Boolean = js.native
+    var named: Boolean
     
-    var next_cursor: String = js.native
+    var next_cursor: String
     
-    var pending: Boolean = js.native
+    var pending: Boolean
     
-    var pending_score: Double = js.native
+    var pending_score: Double
     
-    var prev_cursor: String = js.native
+    var prev_cursor: String
     
-    var read_state: Double = js.native
+    var read_state: Double
     
-    var status: String = js.native
+    var status: String
     
-    var thread_id: String = js.native
+    var thread_id: String
     
-    var thread_title: String = js.native
+    var thread_title: String
     
-    var thread_type: String = js.native
+    var thread_type: String
     
-    var thread_v2_id: String = js.native
+    var thread_v2_id: String
     
-    var users: js.Array[DirectRepositoryCreateGroupThreadResponseUsersItem] = js.native
+    var users: js.Array[DirectRepositoryCreateGroupThreadResponseUsersItem]
     
-    var valued_request: Boolean = js.native
+    var valued_request: Boolean
     
-    var vc_muted: Boolean = js.native
+    var vc_muted: Boolean
     
-    var viewer_id: Double = js.native
+    var viewer_id: Double
   }
   object DirectRepositoryCreateGroupThreadResponseRootObject {
     
@@ -228,10 +224,10 @@ object directRepositoryCreateGroupThreadResponseMod {
       inviter: DirectRepositoryCreateGroupThreadResponseInviter,
       is_group: Boolean,
       is_pin: Boolean,
-      items: js.Array[_],
+      items: js.Array[js.Any],
       last_activity_at: Double,
       last_seen_at: js.Any,
-      left_users: js.Array[_],
+      left_users: js.Array[js.Any],
       mentions_muted: Boolean,
       muted: Boolean,
       named: Boolean,
@@ -297,7 +293,7 @@ object directRepositoryCreateGroupThreadResponseMod {
       def setIs_pin(value: Boolean): Self = StObject.set(x, "is_pin", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
@@ -309,7 +305,7 @@ object directRepositoryCreateGroupThreadResponseMod {
       def setLast_seen_at(value: js.Any): Self = StObject.set(x, "last_seen_at", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLeft_users(value: js.Array[_]): Self = StObject.set(x, "left_users", value.asInstanceOf[js.Any])
+      def setLeft_users(value: js.Array[js.Any]): Self = StObject.set(x, "left_users", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLeft_usersVarargs(value: js.Any*): Self = StObject.set(x, "left_users", js.Array(value :_*))
@@ -370,30 +366,29 @@ object directRepositoryCreateGroupThreadResponseMod {
     }
   }
   
-  @js.native
   trait DirectRepositoryCreateGroupThreadResponseUsersItem extends StObject {
     
-    var friendship_status: DirectRepositoryCreateGroupThreadResponseFriendshipStatus = js.native
+    var friendship_status: DirectRepositoryCreateGroupThreadResponseFriendshipStatus
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_directapp_installed: Boolean = js.native
+    var is_directapp_installed: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_using_unified_inbox_for_direct: Boolean = js.native
+    var is_using_unified_inbox_for_direct: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object DirectRepositoryCreateGroupThreadResponseUsersItem {
     

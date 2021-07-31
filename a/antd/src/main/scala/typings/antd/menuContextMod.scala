@@ -5,7 +5,6 @@ import typings.antd.configProviderContextMod.DirectionType
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuContextMod extends Shortcut {
@@ -14,14 +13,13 @@ object menuContextMod extends Shortcut {
   @js.native
   val default: Context[MenuContextProps] = js.native
   
-  @js.native
   trait MenuContextProps extends StObject {
     
-    var antdMenuTheme: js.UndefOr[MenuTheme] = js.native
+    var antdMenuTheme: js.UndefOr[MenuTheme] = js.undefined
     
-    var direction: js.UndefOr[DirectionType] = js.native
+    var direction: js.UndefOr[DirectionType] = js.undefined
     
-    var inlineCollapsed: Boolean = js.native
+    var inlineCollapsed: Boolean
   }
   object MenuContextProps {
     

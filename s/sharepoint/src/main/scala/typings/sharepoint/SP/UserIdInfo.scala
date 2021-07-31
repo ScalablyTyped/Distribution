@@ -2,15 +2,15 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UserIdInfo extends ClientValueObject {
+trait UserIdInfo
+  extends StObject
+     with ClientValueObject {
   
-  def get_nameId(): String = js.native
+  def get_nameId(): String
   
-  def get_nameIdIssuer(): String = js.native
+  def get_nameIdIssuer(): String
 }
 object UserIdInfo {
   

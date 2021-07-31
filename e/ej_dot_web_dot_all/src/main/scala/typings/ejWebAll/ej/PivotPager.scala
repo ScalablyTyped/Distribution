@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotPager extends Widget_ {
+trait PivotPager
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -28,54 +29,59 @@ object PivotPager {
     
     ///To set both categorical and series pager for paging.
     @js.native
-    sealed trait Both extends Mode
+    sealed trait Both
+      extends StObject
+         with Mode
     
     ///To set only categorical pager for paging.
     @js.native
-    sealed trait Categorical extends Mode
+    sealed trait Categorical
+      extends StObject
+         with Mode
     
     ///To set only series pager for paging.
     @js.native
-    sealed trait Series extends Mode
+    sealed trait Series
+      extends StObject
+         with Mode
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Contains the current page number in categorical axis.
       * @Default {1}
       */
-    var categoricalCurrentPage: js.UndefOr[Double] = js.native
+    var categoricalCurrentPage: js.UndefOr[Double] = js.undefined
     
     /** Contains the total page count in categorical axis.
       * @Default {1}
       */
-    var categoricalPageCount: js.UndefOr[Double] = js.native
+    var categoricalPageCount: js.UndefOr[Double] = js.undefined
     
     /** Allows the user to set the localized language for the widget.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the pager mode (Only Categorical Pager/Only Series Pager/Both) for the PivotPager.
       * @Default {ej.PivotPager.Mode.Both}
       */
-    var mode: js.UndefOr[Mode | String] = js.native
+    var mode: js.UndefOr[Mode | String] = js.undefined
     
     /** Contains the current page number in series axis.
       * @Default {1}
       */
-    var seriesCurrentPage: js.UndefOr[Double] = js.native
+    var seriesCurrentPage: js.UndefOr[Double] = js.undefined
     
     /** Contains the total page count in series axis.
       * @Default {1}
       */
-    var seriesPageCount: js.UndefOr[Double] = js.native
+    var seriesPageCount: js.UndefOr[Double] = js.undefined
     
     /** Contains the ID of the target element for which paging needs to be done.
       * @Default {â€œâ€}
       */
-    var targetControlID: js.UndefOr[String] = js.native
+    var targetControlID: js.UndefOr[String] = js.undefined
   }
   object Model {
     

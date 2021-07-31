@@ -16,10 +16,13 @@ import typings.reactResponsive.reactResponsiveStrings.portrait
 import typings.reactResponsive.reactResponsiveStrings.progressive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-responsive", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-responsive", JSImport.Default)
   @js.native
@@ -30,36 +33,31 @@ object mod {
   @js.native
   val Context: typings.react.mod.Context[PartialMediaQueryAllQuery] = js.native
   
-  @JSImport("react-responsive", "toQuery")
-  @js.native
-  def toQuery(matchers: PartialMediaQueryAllQuery): String = js.native
+  @scala.inline
+  def toQuery(matchers: PartialMediaQueryAllQuery): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toQuery")(matchers.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("react-responsive", "useMediaQuery")
-  @js.native
-  def useMediaQuery(settings: PartialMediaQueryAllQueryAll): Boolean = js.native
-  @JSImport("react-responsive", "useMediaQuery")
-  @js.native
+  @scala.inline
+  def useMediaQuery(settings: PartialMediaQueryAllQueryAll): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(settings.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
   def useMediaQuery(
     settings: PartialMediaQueryAllQueryAll,
-    device: js.UndefOr[scala.Nothing],
+    device: Unit,
     callback: js.Function1[/* matches */ Boolean, Unit]
-  ): Boolean = js.native
-  @JSImport("react-responsive", "useMediaQuery")
-  @js.native
-  def useMediaQuery(settings: PartialMediaQueryAllQueryAll, device: MediaQueryMatchers): Boolean = js.native
-  @JSImport("react-responsive", "useMediaQuery")
-  @js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(settings.asInstanceOf[js.Any], device.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def useMediaQuery(settings: PartialMediaQueryAllQueryAll, device: MediaQueryMatchers): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(settings.asInstanceOf[js.Any], device.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def useMediaQuery(
     settings: PartialMediaQueryAllQueryAll,
     device: MediaQueryMatchers,
     callback: js.Function1[/* matches */ Boolean, Unit]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(settings.asInstanceOf[js.Any], device.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type MediaQuery = Component[MediaQueryProps, js.Object, js.Any]
   
-  @js.native
   trait MediaQueryAllQueryable
-    extends MediaQueryFeatures
+    extends StObject
+       with MediaQueryFeatures
        with MediaQueryTypes
   object MediaQueryAllQueryable {
     
@@ -70,48 +68,49 @@ object mod {
     }
   }
   
-  @js.native
-  trait MediaQueryFeatures extends MediaQueryMatchers {
+  trait MediaQueryFeatures
+    extends StObject
+       with MediaQueryMatchers {
     
-    var maxAspectRatio: js.UndefOr[String] = js.native
+    var maxAspectRatio: js.UndefOr[String] = js.undefined
     
-    var maxColor: js.UndefOr[Double] = js.native
+    var maxColor: js.UndefOr[Double] = js.undefined
     
-    var maxColorIndex: js.UndefOr[Double] = js.native
+    var maxColorIndex: js.UndefOr[Double] = js.undefined
     
-    var maxDeviceAspectRatio: js.UndefOr[String] = js.native
+    var maxDeviceAspectRatio: js.UndefOr[String] = js.undefined
     
-    var maxDeviceHeight: js.UndefOr[Double | String] = js.native
+    var maxDeviceHeight: js.UndefOr[Double | String] = js.undefined
     
-    var maxDeviceWidth: js.UndefOr[Double | String] = js.native
+    var maxDeviceWidth: js.UndefOr[Double | String] = js.undefined
     
-    var maxHeight: js.UndefOr[Double | String] = js.native
+    var maxHeight: js.UndefOr[Double | String] = js.undefined
     
-    var maxMonochrome: js.UndefOr[Double] = js.native
+    var maxMonochrome: js.UndefOr[Double] = js.undefined
     
-    var maxResolution: js.UndefOr[Double | String] = js.native
+    var maxResolution: js.UndefOr[Double | String] = js.undefined
     
-    var maxWidth: js.UndefOr[Double | String] = js.native
+    var maxWidth: js.UndefOr[Double | String] = js.undefined
     
-    var minAspectRatio: js.UndefOr[String] = js.native
+    var minAspectRatio: js.UndefOr[String] = js.undefined
     
-    var minColor: js.UndefOr[Double] = js.native
+    var minColor: js.UndefOr[Double] = js.undefined
     
-    var minColorIndex: js.UndefOr[Double] = js.native
+    var minColorIndex: js.UndefOr[Double] = js.undefined
     
-    var minDeviceAspectRatio: js.UndefOr[String] = js.native
+    var minDeviceAspectRatio: js.UndefOr[String] = js.undefined
     
-    var minDeviceHeight: js.UndefOr[Double | String] = js.native
+    var minDeviceHeight: js.UndefOr[Double | String] = js.undefined
     
-    var minDeviceWidth: js.UndefOr[Double | String] = js.native
+    var minDeviceWidth: js.UndefOr[Double | String] = js.undefined
     
-    var minHeight: js.UndefOr[Double | String] = js.native
+    var minHeight: js.UndefOr[Double | String] = js.undefined
     
-    var minMonochrome: js.UndefOr[Double] = js.native
+    var minMonochrome: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double | String] = js.native
+    var minResolution: js.UndefOr[Double | String] = js.undefined
     
-    var minWidth: js.UndefOr[Double | String] = js.native
+    var minWidth: js.UndefOr[Double | String] = js.undefined
   }
   object MediaQueryFeatures {
     
@@ -246,34 +245,33 @@ object mod {
     }
   }
   
-  @js.native
   trait MediaQueryMatchers extends StObject {
     
-    var aspectRatio: js.UndefOr[String] = js.native
+    var aspectRatio: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[Boolean] = js.native
+    var color: js.UndefOr[Boolean] = js.undefined
     
-    var colorIndex: js.UndefOr[Boolean] = js.native
+    var colorIndex: js.UndefOr[Boolean] = js.undefined
     
-    var deviceAspectRatio: js.UndefOr[String] = js.native
+    var deviceAspectRatio: js.UndefOr[String] = js.undefined
     
-    var deviceHeight: js.UndefOr[Double | String] = js.native
+    var deviceHeight: js.UndefOr[Double | String] = js.undefined
     
-    var deviceWidth: js.UndefOr[Double | String] = js.native
+    var deviceWidth: js.UndefOr[Double | String] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var monochrome: js.UndefOr[Boolean] = js.native
+    var monochrome: js.UndefOr[Boolean] = js.undefined
     
-    var orientation: js.UndefOr[portrait | landscape] = js.native
+    var orientation: js.UndefOr[portrait | landscape] = js.undefined
     
-    var resolution: js.UndefOr[Double | String] = js.native
+    var resolution: js.UndefOr[Double | String] = js.undefined
     
-    var scan: js.UndefOr[progressive | interlace] = js.native
+    var scan: js.UndefOr[progressive | interlace] = js.undefined
     
-    var `type`: js.UndefOr[MediaQueryType] = js.native
+    var `type`: js.UndefOr[MediaQueryType] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object MediaQueryMatchers {
     
@@ -366,26 +364,29 @@ object mod {
     }
   }
   
-  @js.native
-  trait MediaQueryProps extends MediaQueryAllQueryable {
+  trait MediaQueryProps
+    extends StObject
+       with MediaQueryAllQueryable {
     
-    var children: js.UndefOr[ReactNode | (js.Function1[/* matches */ Boolean, ReactNode])] = js.native
+    var children: js.UndefOr[ReactNode | (js.Function1[/* matches */ Boolean, ReactNode])] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[String | SFC[_] | (ClassType[_, _, _]) | (ComponentClass[_, ComponentState])] = js.native
+    var component: js.UndefOr[
+        String | SFC[js.Any] | (ClassType[js.Any, js.Any, js.Any]) | (ComponentClass[js.Any, ComponentState])
+      ] = js.undefined
     
-    var device: js.UndefOr[MediaQueryMatchers] = js.native
+    var device: js.UndefOr[MediaQueryMatchers] = js.undefined
     
-    var onBeforeChange: js.UndefOr[js.Function1[/* matches */ Boolean, Unit]] = js.native
+    var onBeforeChange: js.UndefOr[js.Function1[/* matches */ Boolean, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* matches */ Boolean, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* matches */ Boolean, Unit]] = js.undefined
     
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var values: js.UndefOr[PartialMediaQueryMatchers] = js.native
+    var values: js.UndefOr[PartialMediaQueryMatchers] = js.undefined
   }
   object MediaQueryProps {
     
@@ -414,7 +415,9 @@ object mod {
       def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       @scala.inline
-      def setComponent(value: String | SFC[_] | (ClassType[_, _, _]) | (ComponentClass[_, ComponentState])): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(
+        value: String | SFC[js.Any] | (ClassType[js.Any, js.Any, js.Any]) | (ComponentClass[js.Any, ComponentState])
+      ): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
@@ -472,30 +475,29 @@ object mod {
   */
   trait MediaQueryType extends StObject
   
-  @js.native
   trait MediaQueryTypes extends StObject {
     
-    var all: js.UndefOr[Boolean] = js.native
+    var all: js.UndefOr[Boolean] = js.undefined
     
-    var aural: js.UndefOr[Boolean] = js.native
+    var aural: js.UndefOr[Boolean] = js.undefined
     
-    var braille: js.UndefOr[Boolean] = js.native
+    var braille: js.UndefOr[Boolean] = js.undefined
     
-    var embossed: js.UndefOr[Boolean] = js.native
+    var embossed: js.UndefOr[Boolean] = js.undefined
     
-    var grid: js.UndefOr[Boolean] = js.native
+    var grid: js.UndefOr[Boolean] = js.undefined
     
-    var handheld: js.UndefOr[Boolean] = js.native
+    var handheld: js.UndefOr[Boolean] = js.undefined
     
-    var print: js.UndefOr[Boolean] = js.native
+    var print: js.UndefOr[Boolean] = js.undefined
     
-    var projection: js.UndefOr[Boolean] = js.native
+    var projection: js.UndefOr[Boolean] = js.undefined
     
-    var screen: js.UndefOr[Boolean] = js.native
+    var screen: js.UndefOr[Boolean] = js.undefined
     
-    var tty: js.UndefOr[Boolean] = js.native
+    var tty: js.UndefOr[Boolean] = js.undefined
     
-    var tv: js.UndefOr[Boolean] = js.native
+    var tv: js.UndefOr[Boolean] = js.undefined
   }
   object MediaQueryTypes {
     

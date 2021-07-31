@@ -2,17 +2,15 @@ package typings.reactWindow.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListOnScrollProps extends StObject {
   
-  var scrollDirection: ScrollDirection = js.native
+  var scrollDirection: ScrollDirection
   
-  var scrollOffset: Double = js.native
+  var scrollOffset: Double
   
-  var scrollUpdateWasRequested: Boolean = js.native
+  var scrollUpdateWasRequested: Boolean
 }
 object ListOnScrollProps {
   

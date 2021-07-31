@@ -2,22 +2,20 @@ package typings.winrtUwp.Windows.System
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessLauncherOptions extends StObject {
   
-  var standardError: js.Any = js.native
+  var standardError: js.Any
   
   /* unmapped type */
-  var standardInput: js.Any = js.native
+  var standardInput: js.Any
   
   /* unmapped type */
-  var standardOutput: js.Any = js.native
+  var standardOutput: js.Any
   
   /* unmapped type */
-  var workingDirectory: js.Any = js.native
+  var workingDirectory: js.Any
 }
 object ProcessLauncherOptions {
   

@@ -2,16 +2,14 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturningOptions extends StObject {
   
   /**
     * Append RETURNING * to get back auto generated values (Postgres only)
     */
-  var returning: js.UndefOr[Boolean] = js.native
+  var returning: js.UndefOr[Boolean] = js.undefined
 }
 object ReturningOptions {
   

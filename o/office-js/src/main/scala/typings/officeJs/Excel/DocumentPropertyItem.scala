@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,50 +14,82 @@ sealed trait DocumentPropertyItem extends StObject
 object DocumentPropertyItem extends StObject {
   
   @js.native
-  sealed trait appName extends DocumentPropertyItem
+  sealed trait appName
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait author extends DocumentPropertyItem
+  sealed trait author
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait category extends DocumentPropertyItem
+  sealed trait category
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait comments extends DocumentPropertyItem
+  sealed trait comments
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait company extends DocumentPropertyItem
+  sealed trait company
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait creation extends DocumentPropertyItem
+  sealed trait creation
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait format extends DocumentPropertyItem
+  sealed trait format
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait keywords extends DocumentPropertyItem
+  sealed trait keywords
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait lastAuth extends DocumentPropertyItem
+  sealed trait lastAuth
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait lastPrint extends DocumentPropertyItem
+  sealed trait lastPrint
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait lastSave extends DocumentPropertyItem
+  sealed trait lastSave
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait manager extends DocumentPropertyItem
+  sealed trait manager
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait revision extends DocumentPropertyItem
+  sealed trait revision
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait subject extends DocumentPropertyItem
+  sealed trait subject
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait template extends DocumentPropertyItem
+  sealed trait template
+    extends StObject
+       with DocumentPropertyItem
   
   @js.native
-  sealed trait title extends DocumentPropertyItem
+  sealed trait title
+    extends StObject
+       with DocumentPropertyItem
 }

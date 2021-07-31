@@ -6,17 +6,15 @@ import typings.node.NodeJS.WritableStream
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Qio {
   
   type BufferReader = QioBufferReader
   
-  @js.native
   trait ForEach extends StObject {
     
-    def forEach(callback: ForEachCallback): Promise[Unit] = js.native
+    def forEach(callback: ForEachCallback): Promise[Unit]
   }
   object ForEach {
     
@@ -37,12 +35,14 @@ object Qio {
   @js.native
   trait ForEachCallback extends StObject {
     
-    def apply(chunk: String): Promise[_] = js.native
-    def apply(chunk: Buffer): Promise[_] = js.native
+    def apply(chunk: String): Promise[js.Any] = js.native
+    def apply(chunk: Buffer): Promise[js.Any] = js.native
   }
   
   @js.native
-  trait Reader extends ForEach {
+  trait Reader
+    extends StObject
+       with ForEach {
     
     def close(): Unit = js.native
     

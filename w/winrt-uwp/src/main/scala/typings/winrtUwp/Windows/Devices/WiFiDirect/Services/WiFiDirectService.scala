@@ -9,14 +9,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.sessiondeferred
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Wi-Fi Direct service. This class is used by code on a device that seeks to use a Wi-Fi Direct Service, to establish a Wi-Fi Direct Service session with the service provider. */
 @js.native
 trait WiFiDirectService extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_sessiondeferred(
     `type`: sessiondeferred,
@@ -43,7 +42,7 @@ trait WiFiDirectService extends StObject {
   def getProvisioningInfoAsync(selectedConfigurationMethod: WiFiDirectServiceConfigurationMethod): IPromiseWithIAsyncOperation[WiFiDirectServiceProvisioningInfo] = js.native
   
   /** Event raised when a session request has been deferred. Note that this does not mean that the request has failed or been denied. It is a notification that the server is performing a long operation, such as waiting for a user to enter a PIN. The seeker that receives this message should begin a 120-second wait before it times out the session request, to give the server time to complete its operation. The event arguments include a buffer supplied by the server in the deferral notification with additional information. */
-  def onsessiondeferred(ev: WiFiDirectServiceSessionDeferredEventArgs with WinRTEvent[WiFiDirectService]): Unit = js.native
+  def onsessiondeferred(ev: WiFiDirectServiceSessionDeferredEventArgs & WinRTEvent[WiFiDirectService]): Unit = js.native
   /** Event raised when a session request has been deferred. Note that this does not mean that the request has failed or been denied. It is a notification that the server is performing a long operation, such as waiting for a user to enter a PIN. The seeker that receives this message should begin a 120-second wait before it times out the session request, to give the server time to complete its operation. The event arguments include a buffer supplied by the server in the deferral notification with additional information. */
   @JSName("onsessiondeferred")
   var onsessiondeferred_Original: TypedEventHandler[WiFiDirectService, WiFiDirectServiceSessionDeferredEventArgs] = js.native
@@ -54,7 +53,7 @@ trait WiFiDirectService extends StObject {
   /** Gets the service information blob from this service instance. */
   var remoteServiceInfo: IBuffer = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_sessiondeferred(
     `type`: sessiondeferred,

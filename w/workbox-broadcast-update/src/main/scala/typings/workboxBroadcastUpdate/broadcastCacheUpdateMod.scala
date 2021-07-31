@@ -5,7 +5,6 @@ import typings.std.Response
 import typings.workboxBroadcastUpdate.broadcastCacheUpdateMod.BroadcastCacheUpdate.NotifyIfUpdatedOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object broadcastCacheUpdateMod {
@@ -19,18 +18,17 @@ object broadcastCacheUpdateMod {
   }
   object BroadcastCacheUpdate {
     
-    @js.native
     trait NotifyIfUpdatedOptions extends StObject {
       
-      var cacheName: String = js.native
+      var cacheName: String
       
-      var event: js.UndefOr[Event] = js.native
+      var event: js.UndefOr[Event] = js.undefined
       
-      var newResponse: Response = js.native
+      var newResponse: Response
       
-      var oldResponse: js.UndefOr[Response] = js.native
+      var oldResponse: js.UndefOr[Response] = js.undefined
       
-      var url: String = js.native
+      var url: String
     }
     object NotifyIfUpdatedOptions {
       
@@ -67,14 +65,13 @@ object broadcastCacheUpdateMod {
     }
   }
   
-  @js.native
   trait BroadcastCacheUpdateOptions extends StObject {
     
-    var channelName: js.UndefOr[String] = js.native
+    var channelName: js.UndefOr[String] = js.undefined
     
-    var deferNoticationTimeout: js.UndefOr[Double] = js.native
+    var deferNoticationTimeout: js.UndefOr[Double] = js.undefined
     
-    var headersToCheck: js.UndefOr[js.Array[String]] = js.native
+    var headersToCheck: js.UndefOr[js.Array[String]] = js.undefined
   }
   object BroadcastCacheUpdateOptions {
     

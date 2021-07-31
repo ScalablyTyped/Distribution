@@ -11,7 +11,6 @@ import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object converterConverterMod {
@@ -33,14 +32,14 @@ object converterConverterMod {
     def convertNode(context: Context, node: Node): js.UndefOr[Reflection] = js.native
     
     def convertType(context: Context): js.UndefOr[Type] = js.native
-    def convertType(context: Context, node: js.UndefOr[scala.Nothing], `type`: typings.typescript.mod.Type): js.UndefOr[Type] = js.native
+    def convertType(context: Context, node: Unit, `type`: typings.typescript.mod.Type): js.UndefOr[Type] = js.native
     def convertType(context: Context, node: Node): js.UndefOr[Type] = js.native
     def convertType(context: Context, node: Node, `type`: typings.typescript.mod.Type): js.UndefOr[Type] = js.native
     
     def convertTypes(context: Context): js.Array[Type] = js.native
-    def convertTypes(context: Context, nodes: js.UndefOr[scala.Nothing], types: js.Array[typings.typescript.mod.Type]): js.Array[Type] = js.native
     def convertTypes(context: Context, nodes: js.Array[Node]): js.Array[Type] = js.native
     def convertTypes(context: Context, nodes: js.Array[Node], types: js.Array[typings.typescript.mod.Type]): js.Array[Type] = js.native
+    def convertTypes(context: Context, nodes: Unit, types: js.Array[typings.typescript.mod.Type]): js.Array[Type] = js.native
     
     var excludeExternals: Boolean = js.native
     
@@ -148,12 +147,11 @@ object converterConverterMod {
     def EVENT_RESOLVE_END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_RESOLVE_END")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ConverterResult extends StObject {
     
-    var errors: js.Array[Diagnostic] = js.native
+    var errors: js.Array[Diagnostic]
     
-    var project: ProjectReflection = js.native
+    var project: ProjectReflection
   }
   object ConverterResult {
     

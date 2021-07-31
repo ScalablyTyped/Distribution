@@ -2,16 +2,14 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeJobFlowsOutput extends StObject {
   
   /**
     * A list of job flows matching the parameters supplied.
     */
-  var JobFlows: js.UndefOr[JobFlowDetailList] = js.native
+  var JobFlows: js.UndefOr[JobFlowDetailList] = js.undefined
 }
 object DescribeJobFlowsOutput {
   

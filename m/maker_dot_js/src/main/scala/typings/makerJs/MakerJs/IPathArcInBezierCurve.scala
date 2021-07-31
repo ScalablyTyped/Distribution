@@ -2,16 +2,16 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An arc path segment in a bezier curve.
   */
-@js.native
-trait IPathArcInBezierCurve extends IPathArc {
+trait IPathArcInBezierCurve
+  extends StObject
+     with IPathArc {
   
-  var bezierData: IBezierRange = js.native
+  var bezierData: IBezierRange
 }
 object IPathArcInBezierCurve {
   

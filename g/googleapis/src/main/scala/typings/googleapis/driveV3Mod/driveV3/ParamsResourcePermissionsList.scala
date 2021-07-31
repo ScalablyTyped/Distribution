@@ -6,46 +6,46 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePermissionsList extends StandardParameters {
+trait ParamsResourcePermissionsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the file or Team Drive.
     */
-  var fileId: js.UndefOr[String] = js.native
+  var fileId: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of permissions to return per page. When not set for
     * files in a Team Drive, at most 100 results will be returned. When not set
     * for files that are not in a Team Drive, the entire list will be returned.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The token for continuing a previous list request on the next page. This
     * should be set to the value of 'nextPageToken' from the previous response.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the requesting application supports Team Drives.
     */
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Issue the request as a domain administrator; if set to true, then the
     * requester will be granted access if they are an administrator of the
     * domain to which the item belongs.
     */
-  var useDomainAdminAccess: js.UndefOr[Boolean] = js.native
+  var useDomainAdminAccess: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourcePermissionsList {
   

@@ -2,17 +2,17 @@ package typings.vscodeLanguageclient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Executable extends _ServerOptions {
+trait Executable
+  extends StObject
+     with _ServerOptions {
   
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
-  var command: String = js.native
+  var command: String
   
-  var options: js.UndefOr[ExecutableOptions] = js.native
+  var options: js.UndefOr[ExecutableOptions] = js.undefined
 }
 object Executable {
   

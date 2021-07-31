@@ -5,43 +5,41 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the information about a contact. */
-@js.native
 trait ContactInformation extends StObject {
   
   /** A read-only list of the custom fields stored with the contact. */
-  var customFields: IVectorView[ContactField] = js.native
+  var customFields: IVectorView[ContactField]
   
   /** A read-only list of email addresses stored with the contact. */
-  var emails: IVectorView[ContactField] = js.native
+  var emails: IVectorView[ContactField]
   
   /**
     * Gets the thumbnail image for the contact.
     * @return An object that provides access to the thumbnail image.
     */
-  def getThumbnailAsync(): IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType] = js.native
+  def getThumbnailAsync(): IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]
   
   /** A read-only list of instant messaging accounts stored with the contact. */
-  var instantMessages: IVectorView[ContactInstantMessageField] = js.native
+  var instantMessages: IVectorView[ContactInstantMessageField]
   
   /** A read-only list of locations stored with the contact. */
-  var locations: IVectorView[ContactLocationField] = js.native
+  var locations: IVectorView[ContactLocationField]
   
   /** The name of the contact. */
-  var name: String = js.native
+  var name: String
   
   /** A read-only list of phone numbers stored with the contact. */
-  var phoneNumbers: IVectorView[ContactField] = js.native
+  var phoneNumbers: IVectorView[ContactField]
   
   /**
     * Enables you to get the value for a custom field that is stored with a contact.
     * @param customName The name of the field.
     * @return The value of the field.
     */
-  def queryCustomFields(customName: String): IVectorView[ContactField] = js.native
+  def queryCustomFields(customName: String): IVectorView[ContactField]
 }
 object ContactInformation {
   

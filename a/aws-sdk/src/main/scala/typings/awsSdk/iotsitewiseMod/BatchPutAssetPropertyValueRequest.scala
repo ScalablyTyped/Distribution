@@ -2,16 +2,14 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchPutAssetPropertyValueRequest extends StObject {
   
   /**
     * The list of asset property value entries for the batch put request. You can specify up to 10 entries per request.
     */
-  var entries: PutAssetPropertyValueEntries = js.native
+  var entries: PutAssetPropertyValueEntries
 }
 object BatchPutAssetPropertyValueRequest {
   

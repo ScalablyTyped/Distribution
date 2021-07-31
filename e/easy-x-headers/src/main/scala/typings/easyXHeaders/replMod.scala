@@ -5,35 +5,36 @@ import typings.easyXHeaders.NodeJS.WritableStream
 import typings.easyXHeaders.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object replMod {
   
-  @JSImport("repl", "start")
+  @JSImport("repl", JSImport.Namespace)
   @js.native
-  def start(options: ReplOptions): EventEmitter = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def start(options: ReplOptions): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
+  
   trait ReplOptions extends StObject {
     
-    var eval: js.UndefOr[js.Function] = js.native
+    var eval: js.UndefOr[js.Function] = js.undefined
     
-    var ignoreUndefined: js.UndefOr[Boolean] = js.native
+    var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
     
-    var input: js.UndefOr[ReadableStream] = js.native
+    var input: js.UndefOr[ReadableStream] = js.undefined
     
-    var output: js.UndefOr[WritableStream] = js.native
+    var output: js.UndefOr[WritableStream] = js.undefined
     
-    var prompt: js.UndefOr[String] = js.native
+    var prompt: js.UndefOr[String] = js.undefined
     
-    var terminal: js.UndefOr[Boolean] = js.native
+    var terminal: js.UndefOr[Boolean] = js.undefined
     
-    var useColors: js.UndefOr[Boolean] = js.native
+    var useColors: js.UndefOr[Boolean] = js.undefined
     
-    var useGlobal: js.UndefOr[Boolean] = js.native
+    var useGlobal: js.UndefOr[Boolean] = js.undefined
     
-    var writer: js.UndefOr[js.Function] = js.native
+    var writer: js.UndefOr[js.Function] = js.undefined
   }
   object ReplOptions {
     

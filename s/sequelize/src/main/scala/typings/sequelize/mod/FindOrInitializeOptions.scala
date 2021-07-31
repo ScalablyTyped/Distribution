@@ -2,19 +2,19 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for Model.findOrInitialize method
   */
-@js.native
-trait FindOrInitializeOptions[TAttributes] extends FindOptions[TAttributes] {
+trait FindOrInitializeOptions[TAttributes]
+  extends StObject
+     with FindOptions[TAttributes] {
   
   /**
     * Default values to use if building a new instance
     */
-  var defaults: js.UndefOr[TAttributes] = js.native
+  var defaults: js.UndefOr[TAttributes] = js.undefined
 }
 object FindOrInitializeOptions {
   
@@ -25,7 +25,7 @@ object FindOrInitializeOptions {
   }
   
   @scala.inline
-  implicit class FindOrInitializeOptionsMutableBuilder[Self <: FindOrInitializeOptions[_], TAttributes] (val x: Self with FindOrInitializeOptions[TAttributes]) extends AnyVal {
+  implicit class FindOrInitializeOptionsMutableBuilder[Self <: FindOrInitializeOptions[?], TAttributes] (val x: Self & FindOrInitializeOptions[TAttributes]) extends AnyVal {
     
     @scala.inline
     def setDefaults(value: TAttributes): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])

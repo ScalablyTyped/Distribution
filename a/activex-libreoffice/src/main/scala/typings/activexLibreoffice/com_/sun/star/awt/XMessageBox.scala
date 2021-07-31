@@ -2,24 +2,22 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to a message box. */
-@js.native
 trait XMessageBox extends StObject {
   
   /** the caption text. */
-  var CaptionText: String = js.native
+  var CaptionText: String
   
   /** the message text. */
-  var MessageText: String = js.native
+  var MessageText: String
   
   /**
     * shows the message box.
     * @returns one of {@link MessageBoxResults} .
     */
-  def execute(): Double = js.native
+  def execute(): Double
 }
 object XMessageBox {
   

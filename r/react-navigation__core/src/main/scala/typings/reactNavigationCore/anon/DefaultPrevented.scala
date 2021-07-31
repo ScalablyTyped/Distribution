@@ -2,21 +2,19 @@ package typings.reactNavigationCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultPrevented extends StObject {
   
   /**
     * Whether `event.preventDefault()` was called on this event object.
     */
-  val defaultPrevented: Boolean = js.native
+  val defaultPrevented: Boolean
   
   /**
     * Prevent the default action which happens on this event.
     */
-  def preventDefault(): Unit = js.native
+  def preventDefault(): Unit
 }
 object DefaultPrevented {
   

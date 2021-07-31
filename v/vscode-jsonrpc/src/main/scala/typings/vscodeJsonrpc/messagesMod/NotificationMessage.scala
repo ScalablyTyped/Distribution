@@ -2,21 +2,21 @@ package typings.vscodeJsonrpc.messagesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NotificationMessage extends Message {
+trait NotificationMessage
+  extends StObject
+     with Message {
   
   /**
     * The method to be invoked.
     */
-  var method: String = js.native
+  var method: String
   
   /**
     * The notification's params.
     */
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
 }
 object NotificationMessage {
   

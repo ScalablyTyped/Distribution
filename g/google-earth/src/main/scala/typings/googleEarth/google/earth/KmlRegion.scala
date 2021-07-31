@@ -2,40 +2,40 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlRegion extends KmlObject {
+trait KmlRegion
+  extends StObject
+     with KmlObject {
   
   /**
     * A bounding box that describes an area of interest defined by geographic coordinates and altitudes.
     */
-  def getLatLonAltBox(): KmlLatLonAltBox = js.native
+  def getLatLonAltBox(): KmlLatLonAltBox
   
   /**
     * LOD is an abbreviation for Level of Detail.
     * Lod describes the size of the projected region on the screen that is required in order for the region to be considered "active.
     * " Also specifies the size of the pixel ramp used for fading in (from transparent to opaque) and fading out (from opaque to transparent).
     */
-  def getLod(): KmlLod = js.native
+  def getLod(): KmlLod
   
   /**
     * Sets the latLonAltBox and lod for the region.
     */
-  def set(latLonAltBox: KmlLatLonAltBox, lod: KmlLod): Unit = js.native
+  def set(latLonAltBox: KmlLatLonAltBox, lod: KmlLod): Unit
   
   /**
     * A bounding box that describes an area of interest defined by geographic coordinates and altitudes.
     */
-  def setLatLonAltBox(latLonAltBox: KmlLatLonAltBox): Unit = js.native
+  def setLatLonAltBox(latLonAltBox: KmlLatLonAltBox): Unit
   
   /**
     * LOD is an abbreviation for Level of Detail.
     * Lod describes the size of the projected region on the screen that is required in order for the region to be considered "active.
     * " Also specifies the size of the pixel ramp used for fading in (from transparent to opaque) and fading out (from opaque to transparent).
     */
-  def setLod(lod: KmlLod): Unit = js.native
+  def setLod(lod: KmlLod): Unit
 }
 object KmlRegion {
   

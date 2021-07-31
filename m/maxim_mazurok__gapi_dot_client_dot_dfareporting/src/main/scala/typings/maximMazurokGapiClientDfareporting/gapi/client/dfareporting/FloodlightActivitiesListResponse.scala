@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FloodlightActivitiesListResponse extends StObject {
   
   /** Floodlight activity collection. */
-  var floodlightActivities: js.UndefOr[js.Array[FloodlightActivity]] = js.native
+  var floodlightActivities: js.UndefOr[js.Array[FloodlightActivity]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#floodlightActivitiesListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Pagination token to be used for the next list operation. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object FloodlightActivitiesListResponse {
   

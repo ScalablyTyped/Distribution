@@ -4,27 +4,27 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flash {
   
-  @js.native
-  trait IBinaryXhr extends IBase {
+  trait IBinaryXhr
+    extends StObject
+       with IBase {
     
     /** [Method] Abort this connection  */
-    var abort: js.UndefOr[js.Function0[Unit]] = js.native
+    var abort: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] As in XMLHttpRequest  */
-    var getAllResponseHeaders: js.UndefOr[js.Function0[Unit]] = js.native
+    var getAllResponseHeaders: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] As in XMLHttpRequest
       * @param header Object
       */
-    var getResponseHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[js.Any], Unit]] = js.native
+    var getResponseHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] As in XMLHttpRequest  */
-    var onreadystatechange: js.UndefOr[js.Function0[Unit]] = js.native
+    var onreadystatechange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] As in XMLHttpRequest
       * @param method Object
@@ -42,23 +42,23 @@ object flash {
           /* password */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] As in XMLHttpRequest
       * @param mimeType Object
       */
-    var overrideMimeType: js.UndefOr[js.Function1[/* mimeType */ js.UndefOr[js.Any], Unit]] = js.native
+    var overrideMimeType: js.UndefOr[js.Function1[/* mimeType */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Property] (number) */
-    var readyState: js.UndefOr[Double] = js.native
+    var readyState: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Array) */
-    var responseBytes: js.UndefOr[Array] = js.native
+    var responseBytes: js.UndefOr[Array] = js.undefined
     
     /** [Method] Initiate the request
       * @param body Array an array of byte values to send.
       */
-    var send: js.UndefOr[js.Function1[/* body */ js.UndefOr[Array], Unit]] = js.native
+    var send: js.UndefOr[js.Function1[/* body */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] As in XMLHttpRequest
       * @param header Object
@@ -66,13 +66,13 @@ object flash {
       */
     var setRequestHeader: js.UndefOr[
         js.Function2[/* header */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Property] (number) */
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
     /** [Property] (String) */
-    var statusText: js.UndefOr[String] = js.native
+    var statusText: js.UndefOr[String] = js.undefined
   }
   object IBinaryXhr {
     

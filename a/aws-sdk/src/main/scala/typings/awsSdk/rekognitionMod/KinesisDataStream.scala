@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KinesisDataStream extends StObject {
   
   /**
     * ARN of the output Amazon Kinesis Data Streams stream.
     */
-  var Arn: js.UndefOr[KinesisDataArn] = js.native
+  var Arn: js.UndefOr[KinesisDataArn] = js.undefined
 }
 object KinesisDataStream {
   

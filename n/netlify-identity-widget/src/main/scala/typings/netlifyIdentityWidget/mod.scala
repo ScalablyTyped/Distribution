@@ -13,108 +13,93 @@ import typings.netlifyIdentityWidget.netlifyIdentityWidgetStrings.signup
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("netlify-identity-widget", "close")
+  @JSImport("netlify-identity-widget", JSImport.Namespace)
   @js.native
-  def close(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("netlify-identity-widget", "currentUser")
-  @js.native
-  def currentUser(): User | Null = js.native
+  @scala.inline
+  def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
   
-  @JSImport("netlify-identity-widget", "init")
-  @js.native
-  def init(): Unit = js.native
-  @JSImport("netlify-identity-widget", "init")
-  @js.native
-  def init(opts: InitOptions): Unit = js.native
+  @scala.inline
+  def currentUser(): User | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("currentUser")().asInstanceOf[User | Null]
   
-  @JSImport("netlify-identity-widget", "logout")
-  @js.native
-  def logout(): js.UndefOr[js.Promise[Unit]] = js.native
+  @scala.inline
+  def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+  @scala.inline
+  def init(opts: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("netlify-identity-widget", "off")
-  @js.native
-  def off_close(event: close): Unit = js.native
-  @JSImport("netlify-identity-widget", "off")
-  @js.native
-  def off_close(event: close, cb: js.Function0[Unit]): Unit = js.native
-  @JSImport("netlify-identity-widget", "off")
-  @js.native
-  def off_error(event: error): Unit = js.native
-  @JSImport("netlify-identity-widget", "off")
-  @js.native
-  def off_error(event: error, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("netlify-identity-widget", "off")
-  @js.native
-  def off_init(event: init): Unit = js.native
-  @JSImport("netlify-identity-widget", "off")
-  @js.native
-  def off_init(event: init, cb: js.Function1[/* user */ User | Null, Unit]): Unit = js.native
-  @JSImport("netlify-identity-widget", "off")
-  @js.native
-  def off_login(event: login): Unit = js.native
-  @JSImport("netlify-identity-widget", "off")
-  @js.native
-  def off_login(event: login, cb: js.Function1[/* user */ User, Unit]): Unit = js.native
-  @JSImport("netlify-identity-widget", "off")
-  @js.native
-  def off_logout(event: logout): Unit = js.native
-  @JSImport("netlify-identity-widget", "off")
-  @js.native
-  def off_logout(event: logout, cb: js.Function0[Unit]): Unit = js.native
-  @JSImport("netlify-identity-widget", "off")
-  @js.native
-  def off_open(event: open): Unit = js.native
-  @JSImport("netlify-identity-widget", "off")
-  @js.native
-  def off_open(event: open, cb: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def logout(): js.UndefOr[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")().asInstanceOf[js.UndefOr[js.Promise[Unit]]]
   
-  @JSImport("netlify-identity-widget", "on")
-  @js.native
-  def on_close(event: close, cb: js.Function0[Unit]): Unit = js.native
-  @JSImport("netlify-identity-widget", "on")
-  @js.native
-  def on_error(event: error, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("netlify-identity-widget", "on")
-  @js.native
-  def on_init(event: init, cb: js.Function1[/* user */ User | Null, Unit]): Unit = js.native
-  @JSImport("netlify-identity-widget", "on")
-  @js.native
-  def on_login(event: login, cb: js.Function1[/* user */ User, Unit]): Unit = js.native
-  @JSImport("netlify-identity-widget", "on")
-  @js.native
-  def on_logout(event: logout, cb: js.Function0[Unit]): Unit = js.native
-  @JSImport("netlify-identity-widget", "on")
-  @js.native
-  def on_open(event: open, cb: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def off_close(event: close): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def off_close(event: close, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("netlify-identity-widget", "open")
-  @js.native
-  def open(): Unit = js.native
-  @JSImport("netlify-identity-widget", "open")
-  @js.native
-  def open_login(tabName: login): Unit = js.native
-  @JSImport("netlify-identity-widget", "open")
-  @js.native
-  def open_signup(tabName: signup): Unit = js.native
+  @scala.inline
+  def off_error(event: error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def off_error(event: error, cb: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("netlify-identity-widget", "refresh")
-  @js.native
-  def refresh(): js.Promise[String] = js.native
-  @JSImport("netlify-identity-widget", "refresh")
-  @js.native
-  def refresh(force: Boolean): js.Promise[String] = js.native
+  @scala.inline
+  def off_init(event: init): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def off_init(event: init, cb: js.Function1[/* user */ User | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("netlify-identity-widget", "setLocale")
-  @js.native
-  def setLocale(locale: String): Unit = js.native
+  @scala.inline
+  def off_login(event: login): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def off_login(event: login, cb: js.Function1[/* user */ User, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def off_logout(event: logout): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def off_logout(event: logout, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def off_open(event: open): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def off_open(event: open, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def on_close(event: close, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def on_error(event: error, cb: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def on_init(event: init, cb: js.Function1[/* user */ User | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def on_login(event: login, cb: js.Function1[/* user */ User, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def on_logout(event: logout, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def on_open(event: open, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def open(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def open_login(tabName: login): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(tabName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def open_signup(tabName: signup): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(tabName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def refresh(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")().asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def refresh(force: Boolean): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")(force.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  
+  @scala.inline
+  def setLocale(locale: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait InitOptions extends StObject {
     
     // Absolute url to endpoint. ONLY USE IN SPECIAL CASES!
@@ -123,19 +108,19 @@ object mod {
     // your app is served from a domain that differs from where the
     // identity endpoint is served.This is common for Cordova or Electron
     // apps where you host from localhost or a file.
-    var APIUrl: js.UndefOr[String] = js.native
+    var APIUrl: js.UndefOr[String] = js.undefined
     
     // The container to attach to. e.g.: '#some-query-selector'
-    var container: js.UndefOr[String] = js.native
+    var container: js.UndefOr[String] = js.undefined
     
     // Initial language
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     // Enable Netlify logo
-    var logo: js.UndefOr[Boolean] = js.native
+    var logo: js.UndefOr[Boolean] = js.undefined
     
     // custom placeholder for name input form
-    var namePlaceholder: js.UndefOr[String] = js.native
+    var namePlaceholder: js.UndefOr[String] = js.undefined
   }
   object InitOptions {
     
@@ -180,18 +165,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var access_token: String = js.native
+    var access_token: String
     
-    var expires_at: String | Double = js.native
+    var expires_at: String | Double
     
-    var expires_in: String | Double = js.native
+    var expires_in: String | Double
     
-    var refresh_token: String = js.native
+    var refresh_token: String
     
-    var token_type: String = js.native
+    var token_type: String
   }
   object Token {
     
@@ -227,38 +211,37 @@ object mod {
     }
   }
   
-  @js.native
   trait User extends StObject {
     
-    var api: ApiURL = js.native
+    var api: ApiURL
     
-    var app_metadata: Provider = js.native
+    var app_metadata: Provider
     
-    var aud: String = js.native
+    var aud: String
     
-    var audience: js.UndefOr[js.Any] = js.native
+    var audience: js.UndefOr[js.Any] = js.undefined
     
-    var confirmed_at: String = js.native
+    var confirmed_at: String
     
-    var created_at: String = js.native
+    var created_at: String
     
-    var email: String = js.native
+    var email: String
     
-    var id: String = js.native
+    var id: String
     
-    var invited_at: String = js.native
+    var invited_at: String
     
-    var recovery_sent_at: String = js.native
+    var recovery_sent_at: String
     
-    var role: String = js.native
+    var role: String
     
-    var token: js.UndefOr[Token] = js.native
+    var token: js.UndefOr[Token] = js.undefined
     
-    var updated_at: String = js.native
+    var updated_at: String
     
-    var url: String = js.native
+    var url: String
     
-    var user_metadata: Avatarurl = js.native
+    var user_metadata: Avatarurl
   }
   object User {
     

@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailureTrace extends StObject {
   
-  var frames: js.UndefOr[js.Array[Frame]] = js.native
+  var frames: js.UndefOr[js.Array[Frame]] = js.undefined
 }
 object FailureTrace {
   

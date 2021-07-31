@@ -2,19 +2,17 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An artifact that can be deployed in some runtime.
   */
-@js.native
 trait SchemaDeployable extends StObject {
   
   /**
     * Required. Resource URI for the artifact being deployed.
     */
-  var resourceUri: js.UndefOr[js.Array[String]] = js.native
+  var resourceUri: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaDeployable {
   

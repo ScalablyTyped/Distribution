@@ -5,11 +5,12 @@ import typings.stylus.mod.Stylus.Nodes.HSLA
 import typings.stylus.mod.Stylus.Nodes.RGBA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofRGBA extends Instantiable4[/* r */ Double, /* g */ Double, /* b */ Double, /* a */ Double, RGBA] {
+trait TypeofRGBA
+  extends StObject
+     with Instantiable4[/* r */ Double, /* g */ Double, /* b */ Double, /* a */ Double, RGBA] {
   
   /**
     * Return a `RGBA` from the given `hsla`.

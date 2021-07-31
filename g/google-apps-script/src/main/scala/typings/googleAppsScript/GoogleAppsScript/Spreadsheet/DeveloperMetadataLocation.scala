@@ -2,24 +2,22 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access developer metadata location information.
   */
-@js.native
 trait DeveloperMetadataLocation extends StObject {
   
-  def getColumn(): Range | Null = js.native
+  def getColumn(): Range | Null
   
-  def getLocationType(): DeveloperMetadataLocationType = js.native
+  def getLocationType(): DeveloperMetadataLocationType
   
-  def getRow(): Range | Null = js.native
+  def getRow(): Range | Null
   
-  def getSheet(): Sheet | Null = js.native
+  def getSheet(): Sheet | Null
   
-  def getSpreadsheet(): typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Spreadsheet | Null = js.native
+  def getSpreadsheet(): typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Spreadsheet | Null
 }
 object DeveloperMetadataLocation {
   

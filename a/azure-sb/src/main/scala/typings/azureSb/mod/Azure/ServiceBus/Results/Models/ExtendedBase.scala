@@ -5,39 +5,39 @@ import typings.azureSb.mod.Azure.ServiceBus.DateString
 import typings.azureSb.mod.Azure.ServiceBus.Duration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtendedBase extends Base {
+trait ExtendedBase
+  extends StObject
+     with Base {
   
-  var AuthorizationRules: String = js.native
+  var AuthorizationRules: String
   
-  var AutoDeleteOnIdle: String = js.native
+  var AutoDeleteOnIdle: String
   
-  var DefaultMessageTimeToLive: String = js.native
+  var DefaultMessageTimeToLive: String
   
-  var DuplicateDetectionHistoryTimeWindow: Duration = js.native
+  var DuplicateDetectionHistoryTimeWindow: Duration
   
-  var EnableBatchedOperations: String = js.native
+  var EnableBatchedOperations: String
   
-  var EnableExpress: String = js.native
+  var EnableExpress: String
   
-  var EnablePartitioning: String = js.native
+  var EnablePartitioning: String
   
-  var EntityAvailabilityStatus: String = js.native
+  var EntityAvailabilityStatus: String
   
-  var IsAnonymousAccessible: String = js.native
+  var IsAnonymousAccessible: String
   
-  var MaxSizeInMegabytes: String = js.native
+  var MaxSizeInMegabytes: String
   
-  var RequiresDuplicateDetection: String = js.native
+  var RequiresDuplicateDetection: String
   
-  var SizeInBytes: String = js.native
+  var SizeInBytes: String
   
-  var Status: EntityStatus = js.native
+  var Status: EntityStatus
   
-  var UpdatedAt: DateString = js.native
+  var UpdatedAt: DateString
 }
 object ExtendedBase {
   

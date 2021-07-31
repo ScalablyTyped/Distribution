@@ -7,7 +7,6 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,10 +17,11 @@ object mod extends Shortcut {
   
   type AsyncBusboy = js.Function2[/* req */ IncomingMessage, /* options */ js.UndefOr[Options], js.Promise[Fields]]
   
-  @js.native
-  trait Options extends BusboyConfig {
+  trait Options
+    extends StObject
+       with BusboyConfig {
     
-    def onFile(fieldname: String, file: ReadableStream, filename: String, encoding: String, mimetype: String): Unit = js.native
+    def onFile(fieldname: String, file: ReadableStream, filename: String, encoding: String, mimetype: String): Unit
   }
   object Options {
     

@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Perception {
@@ -12,18 +11,41 @@ object Perception {
     @JSGlobal("Windows.Perception.People.HeadPose")
     @js.native
     abstract class HeadPose ()
-      extends typings.winrtUwp.Windows.Perception.People.HeadPose
+      extends StObject
+         with typings.winrtUwp.Windows.Perception.People.HeadPose {
+      
+      /* CompleteClass */
+      var forwardDirection: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var position: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var upDirection: js.Any = js.native
+    }
   }
   
   @JSGlobal("Windows.Perception.PerceptionTimestamp")
   @js.native
   abstract class PerceptionTimestamp ()
-    extends typings.winrtUwp.Windows.Perception.PerceptionTimestamp
+    extends StObject
+       with typings.winrtUwp.Windows.Perception.PerceptionTimestamp {
+    
+    /* CompleteClass */
+    var predictionAmount: js.Any = js.native
+    
+    /* unmapped type */
+    /* CompleteClass */
+    var targetTime: js.Any = js.native
+  }
   
   @JSGlobal("Windows.Perception.PerceptionTimestampHelper")
   @js.native
   abstract class PerceptionTimestampHelper ()
-    extends typings.winrtUwp.Windows.Perception.PerceptionTimestampHelper
+    extends StObject
+       with typings.winrtUwp.Windows.Perception.PerceptionTimestampHelper
   object PerceptionTimestampHelper {
     
     @JSGlobal("Windows.Perception.PerceptionTimestampHelper")
@@ -43,7 +65,29 @@ object Perception {
     @JSGlobal("Windows.Perception.Spatial.SpatialAnchor")
     @js.native
     abstract class SpatialAnchor ()
-      extends typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchor
+      extends StObject
+         with typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchor {
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var addEventListener: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var coordinateSystem: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var onrawcoordinatesystemadjusted: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var rawCoordinateSystem: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var removeEventListener: js.Any = js.native
+    }
     object SpatialAnchor {
       
       @JSGlobal("Windows.Perception.Spatial.SpatialAnchor")
@@ -61,7 +105,8 @@ object Perception {
     @JSGlobal("Windows.Perception.Spatial.SpatialAnchorManager")
     @js.native
     abstract class SpatialAnchorManager ()
-      extends typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchorManager
+      extends StObject
+         with typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchorManager
     object SpatialAnchorManager {
       
       @JSGlobal("Windows.Perception.Spatial.SpatialAnchorManager")
@@ -79,17 +124,40 @@ object Perception {
     @JSGlobal("Windows.Perception.Spatial.SpatialAnchorRawCoordinateSystemAdjustedEventArgs")
     @js.native
     abstract class SpatialAnchorRawCoordinateSystemAdjustedEventArgs ()
-      extends typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchorRawCoordinateSystemAdjustedEventArgs
+      extends StObject
+         with typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchorRawCoordinateSystemAdjustedEventArgs {
+      
+      /* CompleteClass */
+      var oldRawCoordinateSystemToNewRawCoordinateSystemTransform: js.Any = js.native
+    }
     
     @JSGlobal("Windows.Perception.Spatial.SpatialAnchorStore")
     @js.native
     abstract class SpatialAnchorStore ()
-      extends typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchorStore
+      extends StObject
+         with typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchorStore {
+      
+      /* CompleteClass */
+      var clear: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var getAllSavedAnchors: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var remove: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var trySave: js.Any = js.native
+    }
     
     @JSGlobal("Windows.Perception.Spatial.SpatialAnchorTransferManager")
     @js.native
     abstract class SpatialAnchorTransferManager ()
-      extends typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchorTransferManager
+      extends StObject
+         with typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchorTransferManager
     object SpatialAnchorTransferManager {
       
       @JSGlobal("Windows.Perception.Spatial.SpatialAnchorTransferManager")
@@ -123,7 +191,8 @@ object Perception {
     @JSGlobal("Windows.Perception.Spatial.SpatialBoundingVolume")
     @js.native
     abstract class SpatialBoundingVolume ()
-      extends typings.winrtUwp.Windows.Perception.Spatial.SpatialBoundingVolume
+      extends StObject
+         with typings.winrtUwp.Windows.Perception.Spatial.SpatialBoundingVolume
     object SpatialBoundingVolume {
       
       @JSGlobal("Windows.Perception.Spatial.SpatialBoundingVolume")
@@ -165,7 +234,12 @@ object Perception {
     @JSGlobal("Windows.Perception.Spatial.SpatialCoordinateSystem")
     @js.native
     abstract class SpatialCoordinateSystem ()
-      extends typings.winrtUwp.Windows.Perception.Spatial.SpatialCoordinateSystem
+      extends StObject
+         with typings.winrtUwp.Windows.Perception.Spatial.SpatialCoordinateSystem {
+      
+      /* CompleteClass */
+      var tryGetTransformTo: js.Any = js.native
+    }
     
     object SpatialLocatability {
       
@@ -211,12 +285,71 @@ object Perception {
     @JSGlobal("Windows.Perception.Spatial.SpatialLocation")
     @js.native
     abstract class SpatialLocation ()
-      extends typings.winrtUwp.Windows.Perception.Spatial.SpatialLocation
+      extends StObject
+         with typings.winrtUwp.Windows.Perception.Spatial.SpatialLocation {
+      
+      /* CompleteClass */
+      var absoluteAngularAcceleration: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var absoluteAngularVelocity: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var absoluteLinearAcceleration: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var absoluteLinearVelocity: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var orientation: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var position: js.Any = js.native
+    }
     
     @JSGlobal("Windows.Perception.Spatial.SpatialLocator")
     @js.native
     abstract class SpatialLocator ()
-      extends typings.winrtUwp.Windows.Perception.Spatial.SpatialLocator
+      extends StObject
+         with typings.winrtUwp.Windows.Perception.Spatial.SpatialLocator {
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var addEventListener: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var createAttachedFrameOfReferenceAtCurrentHeading: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var createStationaryFrameOfReferenceAtCurrentLocation: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var locatability: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var onlocatabilitychanged: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var onpositionaltrackingdeactivating: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var removeEventListener: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var tryLocateAtTimestamp: js.Any = js.native
+    }
     object SpatialLocator {
       
       @JSGlobal("Windows.Perception.Spatial.SpatialLocator")
@@ -234,12 +367,38 @@ object Perception {
     @JSGlobal("Windows.Perception.Spatial.SpatialLocatorAttachedFrameOfReference")
     @js.native
     abstract class SpatialLocatorAttachedFrameOfReference ()
-      extends typings.winrtUwp.Windows.Perception.Spatial.SpatialLocatorAttachedFrameOfReference
+      extends StObject
+         with typings.winrtUwp.Windows.Perception.Spatial.SpatialLocatorAttachedFrameOfReference {
+      
+      /* CompleteClass */
+      var adjustHeading: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var getStationaryCoordinateSystemAtTimestamp: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var relativeOrientation: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var relativePosition: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var tryGetRelativeHeadingAtTimestamp: js.Any = js.native
+    }
     
     @JSGlobal("Windows.Perception.Spatial.SpatialLocatorPositionalTrackingDeactivatingEventArgs")
     @js.native
     abstract class SpatialLocatorPositionalTrackingDeactivatingEventArgs ()
-      extends typings.winrtUwp.Windows.Perception.Spatial.SpatialLocatorPositionalTrackingDeactivatingEventArgs
+      extends StObject
+         with typings.winrtUwp.Windows.Perception.Spatial.SpatialLocatorPositionalTrackingDeactivatingEventArgs {
+      
+      /* CompleteClass */
+      var canceled: js.Any = js.native
+    }
     
     object SpatialPerceptionAccessStatus {
       
@@ -278,29 +437,111 @@ object Perception {
     @JSGlobal("Windows.Perception.Spatial.SpatialStationaryFrameOfReference")
     @js.native
     abstract class SpatialStationaryFrameOfReference ()
-      extends typings.winrtUwp.Windows.Perception.Spatial.SpatialStationaryFrameOfReference
+      extends StObject
+         with typings.winrtUwp.Windows.Perception.Spatial.SpatialStationaryFrameOfReference {
+      
+      /* CompleteClass */
+      var coordinateSystem: js.Any = js.native
+    }
     
     object Surfaces {
       
       @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo")
       @js.native
       abstract class SpatialSurfaceInfo ()
-        extends typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo
+        extends StObject
+           with typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo {
+        
+        /* CompleteClass */
+        var id: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var tryComputeLatestMeshAsync: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var tryGetBounds: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var updateTime: js.Any = js.native
+      }
       
       @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh")
       @js.native
       abstract class SpatialSurfaceMesh ()
-        extends typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh
+        extends StObject
+           with typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh {
+        
+        /* CompleteClass */
+        var coordinateSystem: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var surfaceInfo: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var triangleIndices: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var vertexNormals: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var vertexPositionScale: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var vertexPositions: js.Any = js.native
+      }
       
       @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshBuffer")
       @js.native
       abstract class SpatialSurfaceMeshBuffer ()
-        extends typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshBuffer
+        extends StObject
+           with typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshBuffer {
+        
+        /* CompleteClass */
+        var data: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var elementCount: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var format: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var stride: js.Any = js.native
+      }
       
       @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshOptions")
       @js.native
       abstract class SpatialSurfaceMeshOptions ()
-        extends typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshOptions
+        extends StObject
+           with typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshOptions {
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var includeVertexNormals: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var triangleIndexFormat: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var vertexNormalFormat: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var vertexPositionFormat: js.Any = js.native
+      }
       object SpatialSurfaceMeshOptions {
         
         @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshOptions")
@@ -334,7 +575,33 @@ object Perception {
       @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver")
       @js.native
       abstract class SpatialSurfaceObserver ()
-        extends typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver
+        extends StObject
+           with typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver {
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var addEventListener: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var getObservedSurfaces: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var onobservedsurfaceschanged: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var removeEventListener: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var setBoundingVolume: js.Any = js.native
+        
+        /* unmapped type */
+        /* CompleteClass */
+        var setBoundingVolumes: js.Any = js.native
+      }
       object SpatialSurfaceObserver {
         
         @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver")

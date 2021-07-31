@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This structure is used from the {@link XTextLayout} interface to transport information regarding a text caret.
   * @since OOo 2.0
   */
-@js.native
 trait Caret extends StObject {
   
   /**
@@ -20,14 +18,14 @@ trait Caret extends StObject {
     * This member contains the rotation angle of the caret in degrees, with 0 denoting an unrotated caret (the unrotated caret orientation depends on the
     * writing mode, horizontally or vertically). The rotation angle is positive for counter-clockwise rotations.
     */
-  var CaretAngle: Double = js.native
+  var CaretAngle: Double
   
   /**
     * This contains the main caret index.
     *
     * The main caret index corresponds to the insert position when inserting text in the layout's main text direction.
     */
-  var MainCaretIndex: Double = js.native
+  var MainCaretIndex: Double
   
   /**
     * This contains the secondary caret index.
@@ -35,7 +33,7 @@ trait Caret extends StObject {
     * The secondary caret index, when different from the main caret index, corresponds to the insert position when inserting text at a direction change
     * opposite to the layout's main text direction.
     */
-  var SecondaryCaretIndex: Double = js.native
+  var SecondaryCaretIndex: Double
 }
 object Caret {
   

@@ -3,17 +3,15 @@ package typings.ldclientJsCommon
 import typings.ldclientJsCommon.mod.LDFlagValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Current extends StObject {
     
-    var current: LDFlagValue = js.native
+    var current: LDFlagValue
     
-    var previous: LDFlagValue = js.native
+    var previous: LDFlagValue
   }
   object Current {
     

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudbuild/v1", "cloudbuild_v1.Resource$Projects$Builds")
@@ -30,7 +29,7 @@ class ResourceProjectsBuilds protected () extends StObject {
     */
   def cancel(): GaxiosPromise[SchemaBuild] = js.native
   def cancel(callback: BodyResponseCallback[SchemaBuild]): Unit = js.native
-  def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuild] = js.native
+  def cancel(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBuild] = js.native
   def cancel(params: ParamsResourceProjectsBuildsCancel): GaxiosPromise[SchemaBuild] = js.native
   def cancel(params: ParamsResourceProjectsBuildsCancel, callback: BodyResponseCallback[SchemaBuild]): Unit = js.native
   def cancel(
@@ -65,7 +64,7 @@ class ResourceProjectsBuilds protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceProjectsBuildsCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceProjectsBuildsCreate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(
@@ -97,7 +96,7 @@ class ResourceProjectsBuilds protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaBuild] = js.native
   def get(callback: BodyResponseCallback[SchemaBuild]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuild] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBuild] = js.native
   def get(params: ParamsResourceProjectsBuildsGet): GaxiosPromise[SchemaBuild] = js.native
   def get(params: ParamsResourceProjectsBuildsGet, callback: BodyResponseCallback[SchemaBuild]): Unit = js.native
   def get(
@@ -131,7 +130,7 @@ class ResourceProjectsBuilds protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListBuildsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListBuildsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListBuildsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListBuildsResponse] = js.native
   def list(params: ParamsResourceProjectsBuildsList): GaxiosPromise[SchemaListBuildsResponse] = js.native
   def list(params: ParamsResourceProjectsBuildsList, callback: BodyResponseCallback[SchemaListBuildsResponse]): Unit = js.native
   def list(
@@ -178,7 +177,7 @@ class ResourceProjectsBuilds protected () extends StObject {
     */
   def retry(): GaxiosPromise[SchemaOperation] = js.native
   def retry(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def retry(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def retry(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def retry(params: ParamsResourceProjectsBuildsRetry): GaxiosPromise[SchemaOperation] = js.native
   def retry(params: ParamsResourceProjectsBuildsRetry, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def retry(

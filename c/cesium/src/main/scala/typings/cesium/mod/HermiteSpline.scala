@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.InTangents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "HermiteSpline")
@@ -26,18 +25,19 @@ class HermiteSpline protected () extends StObject {
 }
 object HermiteSpline {
   
-  /* static member */
-  @JSImport("cesium", "HermiteSpline.createC1")
+  @JSImport("cesium", "HermiteSpline")
   @js.native
-  def createC1(): HermiteSpline = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "HermiteSpline.createClampedCubic")
-  @js.native
-  def createClampedCubic(): HermiteSpline | LinearSpline = js.native
+  @scala.inline
+  def createC1(): HermiteSpline = ^.asInstanceOf[js.Dynamic].applyDynamic("createC1")().asInstanceOf[HermiteSpline]
   
   /* static member */
-  @JSImport("cesium", "HermiteSpline.createNaturalCubic")
-  @js.native
-  def createNaturalCubic(): HermiteSpline | LinearSpline = js.native
+  @scala.inline
+  def createClampedCubic(): HermiteSpline | LinearSpline = ^.asInstanceOf[js.Dynamic].applyDynamic("createClampedCubic")().asInstanceOf[HermiteSpline | LinearSpline]
+  
+  /* static member */
+  @scala.inline
+  def createNaturalCubic(): HermiteSpline | LinearSpline = ^.asInstanceOf[js.Dynamic].applyDynamic("createNaturalCubic")().asInstanceOf[HermiteSpline | LinearSpline]
 }

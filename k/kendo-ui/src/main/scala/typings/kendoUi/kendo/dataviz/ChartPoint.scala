@@ -5,11 +5,12 @@ import typings.kendoUi.kendo.drawing.Element
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartPoint extends Observable {
+trait ChartPoint
+  extends StObject
+     with Observable {
   
   var category: String | Date | Double = js.native
   

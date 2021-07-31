@@ -3,23 +3,21 @@ package typings.reactModal
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Content extends StObject {
     
-    var content: Null | HTMLDivElement = js.native
+    var content: Null | HTMLDivElement
     
-    var overlay: Null | HTMLDivElement = js.native
+    var overlay: Null | HTMLDivElement
   }
   object Content {
     
     @scala.inline
     def apply(): Content = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(content = null, overlay = null)
       __obj.asInstanceOf[Content]
     }
     

@@ -1,6 +1,9 @@
 package typings.jupyterlabSettingregistry
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.jupyterlabSettingregistry.anon.Composite
+import typings.jupyterlabSettingregistry.anon.User
+import typings.jupyterlabSettingregistry.anon.phaseinPhaseTransform
 import typings.jupyterlabSettingregistry.settingregistryMod.ISchemaValidator.IError
 import typings.jupyterlabSettingregistry.settingregistryMod.SettingRegistry.IOptions
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
@@ -9,12 +12,13 @@ import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISchema
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISettings
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IShortcut
 import typings.jupyterlabStatedb.interfacesMod.IDataConnector
+import typings.luminoCoreutils.jsonMod.PartialJSONValue
 import typings.luminoCoreutils.jsonMod.ReadonlyJSONObject
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
+import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settingregistryMod {
@@ -24,7 +28,9 @@ object settingregistryMod {
   /**
     * Instantiate a schema validator.
     */
-  class DefaultSchemaValidator () extends ISchemaValidator {
+  class DefaultSchemaValidator ()
+    extends StObject
+       with ISchemaValidator {
     
     /**
       * Add a schema to the validator.
@@ -48,7 +54,9 @@ object settingregistryMod {
   
   @JSImport("@jupyterlab/settingregistry/lib/settingregistry", "SettingRegistry")
   @js.native
-  class SettingRegistry protected () extends ISettingRegistry {
+  class SettingRegistry protected ()
+    extends StObject
+       with ISettingRegistry {
     /**
       * Create a new setting registry.
       */
@@ -88,6 +96,40 @@ object settingregistryMod {
     var _validate: js.Any = js.native
     
     /**
+      * The data connector used by the setting registry.
+      */
+    /* CompleteClass */
+    override val connector: IDataConnector[IPlugin, String, String, String] = js.native
+    
+    /**
+      * Get an individual setting.
+      *
+      * @param plugin - The name of the plugin whose settings are being retrieved.
+      *
+      * @param key - The name of the setting being retrieved.
+      *
+      * @returns A promise that resolves when the setting is retrieved.
+      */
+    /* CompleteClass */
+    override def get(plugin: String, key: String): js.Promise[Composite] = js.native
+    
+    /**
+      * Load a plugin's settings into the setting registry.
+      *
+      * @param plugin - The name of the plugin whose settings are being loaded.
+      *
+      * @returns A promise that resolves with a plugin settings object or rejects
+      * if the plugin is not found.
+      */
+    /* CompleteClass */
+    override def load(plugin: String): js.Promise[ISettings] = js.native
+    
+    /**
+      * A signal that emits the name of a plugin when its settings change.
+      */
+    /* CompleteClass */
+    override val pluginChanged: ISignal[this.type, String] = js.native
+    /**
       * A signal that emits the name of a plugin when its settings change.
       */
     @JSName("pluginChanged")
@@ -96,10 +138,102 @@ object settingregistryMod {
     /**
       * The collection of setting registry plugins.
       */
+    /* CompleteClass */
+    override val plugins: StringDictionary[js.UndefOr[IPlugin]] = js.native
+    /**
+      * The collection of setting registry plugins.
+      */
     @JSName("plugins")
     val plugins_SettingRegistry: StringDictionary[IPlugin] = js.native
+    
+    /**
+      * Reload a plugin's settings into the registry even if they already exist.
+      *
+      * @param plugin - The name of the plugin whose settings are being reloaded.
+      *
+      * @returns A promise that resolves with a plugin settings object or rejects
+      * with a list of `ISchemaValidator.IError` objects if it fails.
+      */
+    /* CompleteClass */
+    override def reload(plugin: String): js.Promise[ISettings] = js.native
+    
+    /**
+      * Remove a single setting in the registry.
+      *
+      * @param plugin - The name of the plugin whose setting is being removed.
+      *
+      * @param key - The name of the setting being removed.
+      *
+      * @returns A promise that resolves when the setting is removed.
+      */
+    /* CompleteClass */
+    override def remove(plugin: String, key: String): js.Promise[Unit] = js.native
+    
+    /**
+      * The schema of the setting registry.
+      */
+    /* CompleteClass */
+    override val schema: ISchema = js.native
+    
+    /**
+      * Set a single setting in the registry.
+      *
+      * @param plugin - The name of the plugin whose setting is being set.
+      *
+      * @param key - The name of the setting being set.
+      *
+      * @param value - The value of the setting being set.
+      *
+      * @returns A promise that resolves when the setting has been saved.
+      *
+      */
+    /* CompleteClass */
+    override def set(plugin: String, key: String, value: PartialJSONValue): js.Promise[Unit] = js.native
+    
+    /**
+      * Register a plugin transform function to act on a specific plugin.
+      *
+      * @param plugin - The name of the plugin whose settings are transformed.
+      *
+      * @param transforms - The transform functions applied to the plugin.
+      *
+      * @returns A disposable that removes the transforms from the registry.
+      *
+      * #### Notes
+      * - `compose` transformations: The registry automatically overwrites a
+      * plugin's default values with user overrides, but a plugin may instead wish
+      * to merge values. This behavior can be accomplished in a `compose`
+      * transformation.
+      * - `fetch` transformations: The registry uses the plugin data that is
+      * fetched from its connector. If a plugin wants to override, e.g. to update
+      * its schema with dynamic defaults, a `fetch` transformation can be applied.
+      */
+    /* CompleteClass */
+    override def transform(plugin: String, transforms: phaseinPhaseTransform): IDisposable = js.native
+    
+    /**
+      * Upload a plugin's settings.
+      *
+      * @param plugin - The name of the plugin whose settings are being set.
+      *
+      * @param raw - The raw plugin settings being uploaded.
+      *
+      * @returns A promise that resolves when the settings have been saved.
+      */
+    /* CompleteClass */
+    override def upload(plugin: String, raw: String): js.Promise[Unit] = js.native
+    
+    /**
+      * The schema validator used by the setting registry.
+      */
+    /* CompleteClass */
+    override val validator: ISchemaValidator = js.native
   }
   object SettingRegistry {
+    
+    @JSImport("@jupyterlab/settingregistry/lib/settingregistry", "SettingRegistry")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Reconcile default and user shortcuts and return the composite list.
@@ -110,25 +244,23 @@ object settingregistryMod {
       *
       * @returns A loadable list of shortcuts (omitting disabled and overridden).
       */
-    @JSImport("@jupyterlab/settingregistry/lib/settingregistry", "SettingRegistry.reconcileShortcuts")
-    @js.native
-    def reconcileShortcuts(defaults: js.Array[IShortcut], user: js.Array[IShortcut]): js.Array[IShortcut] = js.native
+    @scala.inline
+    def reconcileShortcuts(defaults: js.Array[IShortcut], user: js.Array[IShortcut]): js.Array[IShortcut] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileShortcuts")(defaults.asInstanceOf[js.Any], user.asInstanceOf[js.Any])).asInstanceOf[js.Array[IShortcut]]
     
     /**
       * The instantiation options for a setting registry
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The data connector used by the setting registry.
         */
-      var connector: IDataConnector[IPlugin, String, String, String] = js.native
+      var connector: IDataConnector[IPlugin, String, String, String]
       
       /**
         * Preloaded plugin data to populate the setting registry.
         */
-      var plugins: js.UndefOr[js.Array[IPlugin]] = js.native
+      var plugins: js.UndefOr[js.Array[IPlugin]] = js.undefined
       
       /**
         * The number of milliseconds before a `load()` call to the registry waits
@@ -138,12 +270,12 @@ object settingregistryMod {
         * #### Notes
         * The default value is 7000.
         */
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
       
       /**
         * The validator used to enforce the settings JSON schema.
         */
-      var validator: js.UndefOr[ISchemaValidator] = js.native
+      var validator: js.UndefOr[ISchemaValidator] = js.undefined
     }
     object IOptions {
       
@@ -185,11 +317,23 @@ object settingregistryMod {
   
   @JSImport("@jupyterlab/settingregistry/lib/settingregistry", "Settings")
   @js.native
-  class Settings protected () extends ISettings {
+  class Settings protected ()
+    extends StObject
+       with ISettings {
     /**
       * Instantiate a new plugin settings manager.
       */
     def this(options: typings.jupyterlabSettingregistry.settingregistryMod.Settings.IOptions) = this()
+    
+    /**
+      * Calculate the default value of a setting by iterating through the schema.
+      *
+      * @param key - The name of the setting whose default value is calculated.
+      *
+      * @returns A calculated default JSON value for a specific setting.
+      */
+    /* CompleteClass */
+    override def default(key: String): js.UndefOr[PartialJSONValue] = js.native
     
     var _changed: js.Any = js.native
     
@@ -201,6 +345,17 @@ object settingregistryMod {
     var _onPluginChanged: js.Any = js.native
     
     /**
+      * Return the defaults in a commented JSON format.
+      */
+    /* CompleteClass */
+    override def annotatedDefaults(): String = js.native
+    
+    /**
+      * A signal that emits when the plugin's settings have changed.
+      */
+    /* CompleteClass */
+    override val changed: ISignal[this.type, Unit] = js.native
+    /**
       * A signal that emits when the plugin's settings have changed.
       */
     @JSName("changed")
@@ -209,18 +364,68 @@ object settingregistryMod {
     /**
       * The composite of user settings and extension defaults.
       */
+    /* CompleteClass */
+    override val composite: ReadonlyPartialJSONObject = js.native
+    /**
+      * The composite of user settings and extension defaults.
+      */
     @JSName("composite")
     def composite_MSettings: ReadonlyPartialJSONObject = js.native
     
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Get an individual setting.
+      *
+      * @param key - The name of the setting being retrieved.
+      *
+      * @returns The setting value.
+      */
+    /* CompleteClass */
+    override def get(key: String): User = js.native
+    
+    /**
+      * The plugin's ID.
+      */
+    /* CompleteClass */
+    override val id: String = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Test whether the plugin settings manager disposed.
       */
     @JSName("isDisposed")
     def isDisposed_MSettings: Boolean = js.native
     
+    /* CompleteClass */
+    override val plugin: IPlugin = js.native
     @JSName("plugin")
     def plugin_MSettings: IPlugin = js.native
     
+    /**
+      * The plugin settings raw text value.
+      */
+    /* CompleteClass */
+    override val raw: String = js.native
     /**
       * The plugin settings raw text value.
       */
@@ -233,17 +438,76 @@ object settingregistryMod {
     val registry: ISettingRegistry = js.native
     
     /**
+      * Remove a single setting.
+      *
+      * @param key - The name of the setting being removed.
+      *
+      * @returns A promise that resolves when the setting is removed.
+      *
+      * #### Notes
+      * This function is asynchronous because it writes to the setting registry.
+      */
+    /* CompleteClass */
+    override def remove(key: String): js.Promise[Unit] = js.native
+    
+    /**
+      * Save all of the plugin's user settings at once.
+      */
+    /* CompleteClass */
+    override def save(raw: String): js.Promise[Unit] = js.native
+    
+    /**
+      * The plugin's schema.
+      */
+    /* CompleteClass */
+    override val schema: ISchema = js.native
+    /**
       * The plugin's schema.
       */
     @JSName("schema")
     def schema_MSettings: ISchema = js.native
     
     /**
+      * Set a single setting.
+      *
+      * @param key - The name of the setting being set.
+      *
+      * @param value - The value of the setting.
+      *
+      * @returns A promise that resolves when the setting has been saved.
+      *
+      * #### Notes
+      * This function is asynchronous because it writes to the setting registry.
+      */
+    /* CompleteClass */
+    override def set(key: String, value: PartialJSONValue): js.Promise[Unit] = js.native
+    
+    /**
+      * The user settings.
+      */
+    /* CompleteClass */
+    override val user: ReadonlyPartialJSONObject = js.native
+    /**
       * The user settings.
       */
     @JSName("user")
     def user_MSettings: ReadonlyPartialJSONObject = js.native
     
+    /**
+      * Validates raw settings with comments.
+      *
+      * @param raw - The JSON with comments string being validated.
+      *
+      * @returns A list of errors or `null` if valid.
+      */
+    /* CompleteClass */
+    override def validate(raw: String): js.Array[IError] | Null = js.native
+    
+    /**
+      * The published version of the NPM package containing these settings.
+      */
+    /* CompleteClass */
+    override val version: String = js.native
     /**
       * The published version of the NPM package containing these settings.
       */
@@ -255,18 +519,17 @@ object settingregistryMod {
     /**
       * The instantiation options for a `Settings` object.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The setting values for a plugin.
         */
-      var plugin: IPlugin = js.native
+      var plugin: IPlugin
       
       /**
         * The system registry instance used by the settings manager.
         */
-      var registry: ISettingRegistry = js.native
+      var registry: ISettingRegistry
     }
     object IOptions {
       
@@ -311,33 +574,32 @@ object settingregistryMod {
     /**
       * A schema validation error definition.
       */
-    @js.native
     trait IError extends StObject {
       
       /**
         * The path in the data where the error occurred.
         */
-      var dataPath: String = js.native
+      var dataPath: String
       
       /**
         * The keyword whose validation failed.
         */
-      var keyword: String = js.native
+      var keyword: String
       
       /**
         * The error message.
         */
-      var message: String = js.native
+      var message: String
       
       /**
         * Optional parameter metadata that might be included in an error.
         */
-      var params: js.UndefOr[ReadonlyJSONObject] = js.native
+      var params: js.UndefOr[ReadonlyJSONObject] = js.undefined
       
       /**
         * The path in the schema where the error occurred.
         */
-      var schemaPath: String = js.native
+      var schemaPath: String
     }
     object IError {
       

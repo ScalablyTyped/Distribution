@@ -2,13 +2,11 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorPasteOptions extends StObject {
   
-  var split: js.UndefOr[Boolean] = js.native
+  var split: js.UndefOr[Boolean] = js.undefined
 }
 object EditorPasteOptions {
   

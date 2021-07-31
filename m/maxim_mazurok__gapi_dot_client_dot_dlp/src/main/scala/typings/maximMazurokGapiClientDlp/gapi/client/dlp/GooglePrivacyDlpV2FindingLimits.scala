@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2FindingLimits extends StObject {
   
   /** Configuration of findings limit given for specified infoTypes. */
-  var maxFindingsPerInfoType: js.UndefOr[js.Array[GooglePrivacyDlpV2InfoTypeLimit]] = js.native
+  var maxFindingsPerInfoType: js.UndefOr[js.Array[GooglePrivacyDlpV2InfoTypeLimit]] = js.undefined
   
   /**
     * Max number of findings that will be returned for each item scanned. When set within `InspectJobConfig`, the maximum returned is 2000 regardless if this is set higher. When set
     * within `InspectContentRequest`, this field is ignored.
     */
-  var maxFindingsPerItem: js.UndefOr[Double] = js.native
+  var maxFindingsPerItem: js.UndefOr[Double] = js.undefined
   
   /** Max number of findings that will be returned per request/job. When set within `InspectContentRequest`, the maximum returned is 2000 regardless if this is set higher. */
-  var maxFindingsPerRequest: js.UndefOr[Double] = js.native
+  var maxFindingsPerRequest: js.UndefOr[Double] = js.undefined
 }
 object GooglePrivacyDlpV2FindingLimits {
   

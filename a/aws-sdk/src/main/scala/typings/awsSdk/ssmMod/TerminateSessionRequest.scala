@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminateSessionRequest extends StObject {
   
   /**
     * The ID of the session to terminate.
     */
-  var SessionId: typings.awsSdk.ssmMod.SessionId = js.native
+  var SessionId: typings.awsSdk.ssmMod.SessionId
 }
 object TerminateSessionRequest {
   

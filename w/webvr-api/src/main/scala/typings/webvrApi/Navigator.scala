@@ -2,15 +2,13 @@ package typings.webvrApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
-  val activeVRDisplays: js.Array[VRDisplay] = js.native
+  val activeVRDisplays: js.Array[VRDisplay]
   
-  def getVRDisplays(): js.Promise[js.Array[VRDisplay]] = js.native
+  def getVRDisplays(): js.Promise[js.Array[VRDisplay]]
 }
 object Navigator {
   

@@ -4,61 +4,57 @@ import org.scalablytyped.runtime.TopLevel
 import typings.reactNativeSizeMatters.mod.NamedStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extendMod {
   
+  @JSImport("react-native-size-matters/extend", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object ScaledSheet {
     
-    @JSImport("react-native-size-matters/extend", "ScaledSheet.create")
+    @JSImport("react-native-size-matters/extend", "ScaledSheet")
     @js.native
-    def create[T /* <: NamedStyles[_ | T] */](stylesObject: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create[T /* <: NamedStyles[js.Any | T] */](stylesObject: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: react-native.react-native.RegisteredStyle<T[P] & std.Record<std.Extract<keyof T[P], 'fontSize' | 'letterSpacing' | 'lineHeight' | 'textShadowRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomWidth' | 'borderTopWidth' | 'borderRightWidth' | 'borderLeftWidth' | 'borderRadius' | 'shadowRadius' | 'borderWidth' | 'aspectRatio' | 'rotation' | 'scaleX' | 'scaleY' | 'translateX' | 'translateY'>, number>>}
-      */ typings.reactNativeSizeMatters.reactNativeSizeMattersStrings.create with TopLevel[T] = js.native
+      */ typings.reactNativeSizeMatters.reactNativeSizeMattersStrings.create & TopLevel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stylesObject.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in keyof T ]: react-native.react-native.RegisteredStyle<T[P] & std.Record<std.Extract<keyof T[P], 'fontSize' | 'letterSpacing' | 'lineHeight' | 'textShadowRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomWidth' | 'borderTopWidth' | 'borderRightWidth' | 'borderLeftWidth' | 'borderRadius' | 'shadowRadius' | 'borderWidth' | 'aspectRatio' | 'rotation' | 'scaleX' | 'scaleY' | 'translateX' | 'translateY'>, number>>}
+      */ typings.reactNativeSizeMatters.reactNativeSizeMattersStrings.create & TopLevel[T]]
   }
   
-  @JSImport("react-native-size-matters/extend", "moderateScale")
-  @js.native
-  def moderateScale(size: Double): Double = js.native
-  @JSImport("react-native-size-matters/extend", "moderateScale")
-  @js.native
-  def moderateScale(size: Double, factor: Double): Double = js.native
+  @scala.inline
+  def moderateScale(size: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("moderateScale")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def moderateScale(size: Double, factor: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("moderateScale")(size.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-native-size-matters/extend", "moderateVerticalScale")
-  @js.native
-  def moderateVerticalScale(size: Double): Double = js.native
-  @JSImport("react-native-size-matters/extend", "moderateVerticalScale")
-  @js.native
-  def moderateVerticalScale(size: Double, factor: Double): Double = js.native
+  @scala.inline
+  def moderateVerticalScale(size: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("moderateVerticalScale")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def moderateVerticalScale(size: Double, factor: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("moderateVerticalScale")(size.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-native-size-matters/extend", "ms")
-  @js.native
-  def ms(size: Double): Double = js.native
-  @JSImport("react-native-size-matters/extend", "ms")
-  @js.native
-  def ms(size: Double, factor: Double): Double = js.native
+  @scala.inline
+  def ms(size: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ms")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def ms(size: Double, factor: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ms")(size.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-native-size-matters/extend", "mvs")
-  @js.native
-  def mvs(size: Double): Double = js.native
-  @JSImport("react-native-size-matters/extend", "mvs")
-  @js.native
-  def mvs(size: Double, factor: Double): Double = js.native
+  @scala.inline
+  def mvs(size: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mvs")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def mvs(size: Double, factor: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mvs")(size.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-native-size-matters/extend", "s")
-  @js.native
-  def s(size: Double): Double = js.native
+  @scala.inline
+  def s(size: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("s")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("react-native-size-matters/extend", "scale")
-  @js.native
-  def scale(size: Double): Double = js.native
+  @scala.inline
+  def scale(size: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("scale")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("react-native-size-matters/extend", "verticalScale")
-  @js.native
-  def verticalScale(size: Double): Double = js.native
+  @scala.inline
+  def verticalScale(size: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("verticalScale")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("react-native-size-matters/extend", "vs")
-  @js.native
-  def vs(size: Double): Double = js.native
+  @scala.inline
+  def vs(size: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("vs")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

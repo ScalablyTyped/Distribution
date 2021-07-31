@@ -2,13 +2,11 @@ package typings.gapiCalendar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notifications extends StObject {
   
-  var notifications: js.Array[MethodType] = js.native
+  var notifications: js.Array[MethodType]
 }
 object Notifications {
   

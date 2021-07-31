@@ -3,7 +3,6 @@ package typings.dateIoCore
 import typings.dateIoCore.mod.Unit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateIoCoreStrings {
@@ -19,7 +18,9 @@ object dateIoCoreStrings {
   def dayOfMonth: dayOfMonth = "dayOfMonth".asInstanceOf[dayOfMonth]
   
   @js.native
-  sealed trait days extends Unit
+  sealed trait days
+    extends StObject
+       with Unit
   @scala.inline
   def days: days = "days".asInstanceOf[days]
   
@@ -64,7 +65,9 @@ object dateIoCoreStrings {
   def fullTime24h: fullTime24h = "fullTime24h".asInstanceOf[fullTime24h]
   
   @js.native
-  sealed trait hours extends Unit
+  sealed trait hours
+    extends StObject
+       with Unit
   @scala.inline
   def hours: hours = "hours".asInstanceOf[hours]
   
@@ -99,12 +102,16 @@ object dateIoCoreStrings {
   def keyboardDateTime24h: keyboardDateTime24h = "keyboardDateTime24h".asInstanceOf[keyboardDateTime24h]
   
   @js.native
-  sealed trait milliseconds extends Unit
+  sealed trait milliseconds
+    extends StObject
+       with Unit
   @scala.inline
   def milliseconds: milliseconds = "milliseconds".asInstanceOf[milliseconds]
   
   @js.native
-  sealed trait minutes extends Unit
+  sealed trait minutes
+    extends StObject
+       with Unit
   @scala.inline
   def minutes: minutes = "minutes".asInstanceOf[minutes]
   
@@ -129,7 +136,9 @@ object dateIoCoreStrings {
   def monthShort: monthShort = "monthShort".asInstanceOf[monthShort]
   
   @js.native
-  sealed trait months extends Unit
+  sealed trait months
+    extends StObject
+       with Unit
   @scala.inline
   def months: months = "months".asInstanceOf[months]
   
@@ -149,12 +158,16 @@ object dateIoCoreStrings {
   def pm: pm = "pm".asInstanceOf[pm]
   
   @js.native
-  sealed trait quarters extends Unit
+  sealed trait quarters
+    extends StObject
+       with Unit
   @scala.inline
   def quarters: quarters = "quarters".asInstanceOf[quarters]
   
   @js.native
-  sealed trait seconds extends Unit
+  sealed trait seconds
+    extends StObject
+       with Unit
   @scala.inline
   def seconds: seconds = "seconds".asInstanceOf[seconds]
   
@@ -174,7 +187,9 @@ object dateIoCoreStrings {
   def weekdayShort: weekdayShort = "weekdayShort".asInstanceOf[weekdayShort]
   
   @js.native
-  sealed trait weeks extends Unit
+  sealed trait weeks
+    extends StObject
+       with Unit
   @scala.inline
   def weeks: weeks = "weeks".asInstanceOf[weeks]
   
@@ -184,7 +199,9 @@ object dateIoCoreStrings {
   def year: year = "year".asInstanceOf[year]
   
   @js.native
-  sealed trait years extends Unit
+  sealed trait years
+    extends StObject
+       with Unit
   @scala.inline
   def years: years = "years".asInstanceOf[years]
 }

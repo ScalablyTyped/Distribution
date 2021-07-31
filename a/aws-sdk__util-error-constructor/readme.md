@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-error-constructor |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 6 |
-| # downloads        | 175534 |
+| # releases         | 7 |
+| # dependents       | 0 |
+| # downloads        | 301866 |
 | # stars            | 0 |
 
 ## Links

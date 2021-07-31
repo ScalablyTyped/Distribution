@@ -15,32 +15,30 @@ import typings.pdf2image.pdf2imageStrings.jpg
 import typings.pdf2image.pdf2imageStrings.png
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<pdf2image.pdf2image.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var density: js.UndefOr[Double] = js.native
+    var density: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var outputFormat: js.UndefOr[OutputFormat] = js.native
+    var outputFormat: js.UndefOr[OutputFormat] = js.undefined
     
-    var outputType: js.UndefOr[jpg | png | Dotjpg | Dotpng] = js.native
+    var outputType: js.UndefOr[jpg | png | Dotjpg | Dotpng] = js.undefined
     
-    var pages: js.UndefOr[Asterisk | String] = js.native
+    var pages: js.UndefOr[Asterisk | String] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var singleProcess: js.UndefOr[Boolean] = js.native
+    var singleProcess: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PartialOptions {
     
@@ -120,12 +118,12 @@ object anon {
     var Script: Instantiable1[/* code */ String, typings.node.vmMod.Script] = js.native
     
     def compileFunction(code: String): js.Function = js.native
-    def compileFunction(code: String, params: js.UndefOr[scala.Nothing], options: CompileFunctionOptions): js.Function = js.native
     def compileFunction(code: String, params: js.Array[String]): js.Function = js.native
     def compileFunction(code: String, params: js.Array[String], options: CompileFunctionOptions): js.Function = js.native
+    def compileFunction(code: String, params: Unit, options: CompileFunctionOptions): js.Function = js.native
     
     def createContext(): Context = js.native
-    def createContext(sandbox: js.UndefOr[scala.Nothing], options: CreateContextOptions): Context = js.native
+    def createContext(sandbox: Unit, options: CreateContextOptions): Context = js.native
     def createContext(sandbox: Context): Context = js.native
     def createContext(sandbox: Context, options: CreateContextOptions): Context = js.native
     
@@ -154,8 +152,8 @@ object anon {
     def runInContext(code: String, contextifiedSandbox: Context, options: RunningScriptOptions): js.Any = js.native
     
     def runInNewContext(code: String): js.Any = js.native
-    def runInNewContext(code: String, sandbox: js.UndefOr[scala.Nothing], options: String): js.Any = js.native
-    def runInNewContext(code: String, sandbox: js.UndefOr[scala.Nothing], options: RunningScriptOptions): js.Any = js.native
+    def runInNewContext(code: String, sandbox: Unit, options: String): js.Any = js.native
+    def runInNewContext(code: String, sandbox: Unit, options: RunningScriptOptions): js.Any = js.native
     def runInNewContext(code: String, sandbox: Context): js.Any = js.native
     def runInNewContext(code: String, sandbox: Context, options: String): js.Any = js.native
     def runInNewContext(code: String, sandbox: Context, options: RunningScriptOptions): js.Any = js.native

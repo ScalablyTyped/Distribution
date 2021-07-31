@@ -5,158 +5,158 @@ import typings.sharepoint.SPClientTemplates.RenderContext
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContextInfo extends RenderContext {
+trait ContextInfo
+  extends StObject
+     with RenderContext {
   
-  var AllowCreateFolder: Boolean = js.native
+  var AllowCreateFolder: Boolean
   
-  var AllowGridMode: Boolean = js.native
+  var AllowGridMode: Boolean
   
-  var BasePermissions: js.Any = js.native
+  var BasePermissions: js.Any
   
-  var CanShareLinkForNewDocument: Boolean = js.native
+  var CanShareLinkForNewDocument: Boolean
   
-  var CascadeDeleteWarningMessage: String = js.native
+  var CascadeDeleteWarningMessage: String
   
-  var ContentTypesEnabled: Boolean = js.native
+  var ContentTypesEnabled: Boolean
   
   @JSName("CurrentSelectedItems")
-  var CurrentSelectedItems_ContextInfo: Boolean = js.native
+  var CurrentSelectedItems_ContextInfo: Boolean
   
-  var CurrentUserId: Double = js.native
+  var CurrentUserId: Double
   
-  var CurrentUserIsSiteAdmin: Boolean = js.native
+  var CurrentUserIsSiteAdmin: Boolean
   
-  var EnableMinorVersions: Boolean = js.native
+  var EnableMinorVersions: Boolean
   
-  var ExcludeFromOfflineClient: Boolean = js.native
+  var ExcludeFromOfflineClient: Boolean
   
-  var ExternalDataList: Boolean = js.native
+  var ExternalDataList: Boolean
   
-  var HasRelatedCascadeLists: Boolean = js.native
+  var HasRelatedCascadeLists: Boolean
   
-  var HttpPath: String = js.native
+  var HttpPath: String
   
-  var HttpRoot: String = js.native
+  var HttpRoot: String
   
-  var IsAppWeb: Boolean = js.native
+  var IsAppWeb: Boolean
   
-  var IsClientRendering: Boolean = js.native
+  var IsClientRendering: Boolean
   
-  var LastRowIndexSelected: Double = js.native
+  var LastRowIndexSelected: Double
   
-  var LastSelectableRowIdx: Double = js.native
+  var LastSelectableRowIdx: Double
   
-  var LastSelectedItemIID: Double = js.native
+  var LastSelectedItemIID: Double
   
-  var ListData: js.Any = js.native
+  var ListData: js.Any
   
   // SPClientTemplates.ListData_InView | SPClientTemplates.ListData_InForm
-  var ListSchema: typings.sharepoint.SPClientTemplates.ListSchema = js.native
+  var ListSchema: typings.sharepoint.SPClientTemplates.ListSchema
   
-  var ListTitle: String = js.native
+  var ListTitle: String
   
-  var ModerationStatus: Double = js.native
+  var ModerationStatus: Double
   
-  var NewWOPIDocumentEnabled: Boolean = js.native
+  var NewWOPIDocumentEnabled: Boolean
   
-  var NewWOPIDocumentUrl: String = js.native
+  var NewWOPIDocumentUrl: String
   
-  var PortalUrl: String = js.native
+  var PortalUrl: String
   
-  var RecycleBinEnabled: Double = js.native
+  var RecycleBinEnabled: Double
   
-  var RowFocusTimerID: Double = js.native
+  var RowFocusTimerID: Double
   
-  var SelectAllCbx: HTMLElement = js.native
+  var SelectAllCbx: HTMLElement
   
-  var SendToLocationName: String = js.native
+  var SendToLocationName: String
   
-  var SendToLocationUrl: String = js.native
+  var SendToLocationUrl: String
   
-  var SiteTemplateId: Double = js.native
+  var SiteTemplateId: Double
   
-  var SiteTitle: String = js.native
+  var SiteTitle: String
   
-  var StateInitDone: Boolean = js.native
+  var StateInitDone: Boolean
   
-  def TableCbxFocusHandler(instance: js.Any, eventArgs: js.Any): Unit = js.native
+  def TableCbxFocusHandler(instance: js.Any, eventArgs: js.Any): Unit
   
-  def TableMouseoverHandler(instance: js.Any, eventArgs: js.Any): Unit = js.native
+  def TableMouseoverHandler(instance: js.Any, eventArgs: js.Any): Unit
   
-  var TotalListItems: Double = js.native
+  var TotalListItems: Double
   
-  var WorkflowsAssociated: Boolean = js.native
+  var WorkflowsAssociated: Boolean
   
-  var clvp: js.Any = js.native
+  var clvp: js.Any
   
-  var ctxId: Double = js.native
+  var ctxId: Double
   
-  var ctxType: js.Any = js.native
+  var ctxType: js.Any
   
-  var dictSel: js.Any = js.native
+  var dictSel: js.Any
   
-  var displayFormUrl: String = js.native
+  var displayFormUrl: String
   
-  var editFormUrl: String = js.native
+  var editFormUrl: String
   
-  var imagesPath: String = js.native
+  var imagesPath: String
   
-  var inGridFullRender: Boolean = js.native
+  var inGridFullRender: Boolean
   
-  var inGridMode: Boolean = js.native
+  var inGridMode: Boolean
   
-  var isForceCheckout: Boolean = js.native
+  var isForceCheckout: Boolean
   
-  var isModerated: Boolean = js.native
+  var isModerated: Boolean
   
-  var isPortalTemplate: Boolean = js.native
+  var isPortalTemplate: Boolean
   
-  var isVersions: Boolean = js.native
+  var isVersions: Boolean
   
-  var isWebEditorPreview: Boolean = js.native
+  var isWebEditorPreview: Boolean
   
-  var leavingGridMode: Boolean = js.native
+  var leavingGridMode: Boolean
   
-  var listBaseType: Double = js.native
+  var listBaseType: Double
   
-  var listName: String = js.native
+  var listName: String
   
-  var listTemplate: String = js.native
+  var listTemplate: String
   
-  var listUrlDir: String = js.native
+  var listUrlDir: String
   
-  var loadingAsyncData: Boolean = js.native
+  var loadingAsyncData: Boolean
   
-  var newFormUrl: String = js.native
+  var newFormUrl: String
   
-  var noGroupCollapse: Boolean = js.native
+  var noGroupCollapse: Boolean
   
   @JSName("onRefreshFailed")
-  def onRefreshFailed_MContextInfo(context: js.Any, requrest: js.Any, response: js.Any): Unit = js.native
+  def onRefreshFailed_MContextInfo(context: js.Any, requrest: js.Any, response: js.Any): Unit
   
-  var overrideDeleteConfirmation: String = js.native
+  var overrideDeleteConfirmation: String
   
-  var overrideFilterQstring: String = js.native
+  var overrideFilterQstring: String
   
-  var queryString: String = js.native
+  var queryString: String
   
-  var recursiveView: Boolean = js.native
+  var recursiveView: Boolean
   
-  var rootFolder: String = js.native
+  var rootFolder: String
   
-  var rootFolderForDisplay: String = js.native
+  var rootFolderForDisplay: String
   
-  var serverUrl: String = js.native
+  var serverUrl: String
   
-  var verEnabled: Boolean = js.native
+  var verEnabled: Boolean
   
-  var view: String = js.native
+  var view: String
   
-  var wpq: String = js.native
+  var wpq: String
 }
 object ContextInfo {
   

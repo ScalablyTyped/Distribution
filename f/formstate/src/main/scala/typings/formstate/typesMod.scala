@@ -6,30 +6,33 @@ import typings.formstate.anon.Value
 import typings.formstate.formstateBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @JSImport("formstate/lib/core/types", "applyValidators")
+  @JSImport("formstate/lib/core/types", JSImport.Namespace)
   @js.native
-  def applyValidators[TValue](value: TValue, validators: js.Array[Validator[TValue]]): js.Promise[js.UndefOr[String | Null]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait ComposibleValidatable[TValue] extends Validatable[TValue] {
+  @scala.inline
+  def applyValidators[TValue](value: TValue, validators: js.Array[Validator[TValue]]): js.Promise[js.UndefOr[String | Null]] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyValidators")(value.asInstanceOf[js.Any], validators.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String | Null]]]
+  
+  trait ComposibleValidatable[TValue]
+    extends StObject
+       with Validatable[TValue] {
     
     @JSName("_on$Reinit")
-    def _on$Reinit(): Unit = js.native
+    def _on$Reinit(): Unit
     
     /** Used to tell the parent about validation */
     @JSName("_on$ValidationPass")
-    def _on$ValidationPass(): Unit = js.native
+    def _on$ValidationPass(): Unit
     
     /** Used by the parent to register listeners */
-    def _setCompositionParent(config: OnReinit): Unit = js.native
+    def _setCompositionParent(config: OnReinit): Unit
     
     /** Allows a convinient reset for all fields */
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object ComposibleValidatable {
     
@@ -51,7 +54,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class ComposibleValidatableMutableBuilder[Self <: ComposibleValidatable[_], TValue] (val x: Self with ComposibleValidatable[TValue]) extends AnyVal {
+    implicit class ComposibleValidatableMutableBuilder[Self <: ComposibleValidatable[?], TValue] (val x: Self & ComposibleValidatable[TValue]) extends AnyVal {
       
       @scala.inline
       def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
@@ -67,23 +70,22 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Validatable[TValue] extends StObject {
     
     @JSName("$")
-    var $: TValue = js.native
+    var $: TValue
     
-    def disableAutoValidation(): Unit = js.native
+    def disableAutoValidation(): Unit
     
-    def enableAutoValidation(): Unit = js.native
+    def enableAutoValidation(): Unit
     
-    var error: js.UndefOr[String | Null] = js.native
+    var error: js.UndefOr[String | Null] = js.undefined
     
-    var hasError: Boolean = js.native
+    var hasError: Boolean
     
-    def validate(): js.Promise[HasError | Value[TValue]] = js.native
+    def validate(): js.Promise[HasError | Value[TValue]]
     
-    var validating: Boolean = js.native
+    var validating: Boolean
   }
   object Validatable {
     
@@ -101,7 +103,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class ValidatableMutableBuilder[Self <: Validatable[_], TValue] (val x: Self with Validatable[TValue]) extends AnyVal {
+    implicit class ValidatableMutableBuilder[Self <: Validatable[?], TValue] (val x: Self & Validatable[TValue]) extends AnyVal {
       
       @scala.inline
       def set$(value: TValue): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])

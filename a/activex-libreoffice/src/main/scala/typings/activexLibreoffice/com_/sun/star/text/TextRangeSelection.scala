@@ -2,15 +2,13 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextRangeSelection extends StObject {
   
-  var End: TextPosition = js.native
+  var End: TextPosition
   
-  var Start: TextPosition = js.native
+  var Start: TextPosition
 }
 object TextRangeSelection {
   

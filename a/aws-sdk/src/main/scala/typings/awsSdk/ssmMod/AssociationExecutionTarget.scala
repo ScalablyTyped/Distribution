@@ -2,56 +2,54 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociationExecutionTarget extends StObject {
   
   /**
     * The association ID.
     */
-  var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.native
+  var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.undefined
   
   /**
     * The association version.
     */
-  var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.native
+  var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.undefined
   
   /**
     * Detailed information about the execution status.
     */
-  var DetailedStatus: js.UndefOr[StatusName] = js.native
+  var DetailedStatus: js.UndefOr[StatusName] = js.undefined
   
   /**
     * The execution ID.
     */
-  var ExecutionId: js.UndefOr[AssociationExecutionId] = js.native
+  var ExecutionId: js.UndefOr[AssociationExecutionId] = js.undefined
   
   /**
     * The date of the last execution.
     */
-  var LastExecutionDate: js.UndefOr[DateTime] = js.native
+  var LastExecutionDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The location where the association details are saved.
     */
-  var OutputSource: js.UndefOr[typings.awsSdk.ssmMod.OutputSource] = js.native
+  var OutputSource: js.UndefOr[typings.awsSdk.ssmMod.OutputSource] = js.undefined
   
   /**
     * The resource ID, for example, the instance ID where the association ran.
     */
-  var ResourceId: js.UndefOr[AssociationResourceId] = js.native
+  var ResourceId: js.UndefOr[AssociationResourceId] = js.undefined
   
   /**
     * The resource type, for example, instance.
     */
-  var ResourceType: js.UndefOr[AssociationResourceType] = js.native
+  var ResourceType: js.UndefOr[AssociationResourceType] = js.undefined
   
   /**
     * The association execution status.
     */
-  var Status: js.UndefOr[StatusName] = js.native
+  var Status: js.UndefOr[StatusName] = js.undefined
 }
 object AssociationExecutionTarget {
   

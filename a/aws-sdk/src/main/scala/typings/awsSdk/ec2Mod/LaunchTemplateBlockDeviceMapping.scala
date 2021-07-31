@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateBlockDeviceMapping extends StObject {
   
   /**
     * The device name.
     */
-  var DeviceName: js.UndefOr[String] = js.native
+  var DeviceName: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the block device for an EBS volume.
     */
-  var Ebs: js.UndefOr[LaunchTemplateEbsBlockDevice] = js.native
+  var Ebs: js.UndefOr[LaunchTemplateEbsBlockDevice] = js.undefined
   
   /**
     * Suppresses the specified device included in the block device mapping of the AMI.
     */
-  var NoDevice: js.UndefOr[String] = js.native
+  var NoDevice: js.UndefOr[String] = js.undefined
   
   /**
     * The virtual device name (ephemeralN).
     */
-  var VirtualName: js.UndefOr[String] = js.native
+  var VirtualName: js.UndefOr[String] = js.undefined
 }
 object LaunchTemplateBlockDeviceMapping {
   

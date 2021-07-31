@@ -2,21 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConditionalType extends Type {
+trait ConditionalType
+  extends StObject
+     with Type {
   
-  var checkType: Type = js.native
+  var checkType: Type
   
-  var extendsType: Type = js.native
+  var extendsType: Type
   
-  var resolvedFalseType: Type = js.native
+  var resolvedFalseType: Type
   
-  var resolvedTrueType: Type = js.native
+  var resolvedTrueType: Type
   
-  var root: ConditionalRoot = js.native
+  var root: ConditionalRoot
 }
 object ConditionalType {
   

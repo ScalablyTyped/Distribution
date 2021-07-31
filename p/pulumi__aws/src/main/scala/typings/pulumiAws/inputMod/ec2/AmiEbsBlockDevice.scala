@@ -3,53 +3,51 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AmiEbsBlockDevice extends StObject {
   
   /**
     * Boolean controlling whether the EBS volumes created to
     * support each created instance will be deleted once that instance is terminated.
     */
-  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.native
+  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * The path at which the device is exposed to created instances.
     */
-  var deviceName: Input[String] = js.native
+  var deviceName: Input[String]
   
   /**
     * Boolean controlling whether the created EBS volumes will be encrypted. Can't be used with `snapshotId`.
     */
-  var encrypted: js.UndefOr[Input[Boolean]] = js.native
+  var encrypted: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Number of I/O operations per second the
     * created volumes will support.
     */
-  var iops: js.UndefOr[Input[Double]] = js.native
+  var iops: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The id of an EBS snapshot that will be used to initialize the created
     * EBS volumes. If set, the `volumeSize` attribute must be at least as large as the referenced
     * snapshot.
     */
-  var snapshotId: js.UndefOr[Input[String]] = js.native
+  var snapshotId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The size of created volumes in GiB.
     * If `snapshotId` is set and `volumeSize` is omitted then the volume will have the same size
     * as the selected snapshot.
     */
-  var volumeSize: js.UndefOr[Input[Double]] = js.native
+  var volumeSize: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The type of EBS volume to create. Can be one of "standard" (the
     * default), "io1", "io2" or "gp2".
     */
-  var volumeType: js.UndefOr[Input[String]] = js.native
+  var volumeType: js.UndefOr[Input[String]] = js.undefined
 }
 object AmiEbsBlockDevice {
   

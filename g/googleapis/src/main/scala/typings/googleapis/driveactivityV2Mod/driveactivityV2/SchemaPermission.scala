@@ -2,35 +2,33 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The permission setting of an object.
   */
-@js.native
 trait SchemaPermission extends StObject {
   
   /**
     * If true, the item can be discovered (e.g. in the user&#39;s &quot;Shared
     * with me&quot; collection) without needing a link to the item.
     */
-  var allowDiscovery: js.UndefOr[Boolean] = js.native
+  var allowDiscovery: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set, this permission applies to anyone, even logged out users.
     */
-  var anyone: js.UndefOr[SchemaAnyone] = js.native
+  var anyone: js.UndefOr[SchemaAnyone] = js.undefined
   
   /**
     * The domain to whom this permission applies.
     */
-  var domain: js.UndefOr[SchemaDomain] = js.native
+  var domain: js.UndefOr[SchemaDomain] = js.undefined
   
   /**
     * The group to whom this permission applies.
     */
-  var group: js.UndefOr[SchemaGroup] = js.native
+  var group: js.UndefOr[SchemaGroup] = js.undefined
   
   /**
     * Indicates the &lt;a
@@ -38,12 +36,12 @@ trait SchemaPermission extends StObject {
     * permissions role&lt;/a&gt;. The role determines a user&#39;s ability to
     * read, write, and comment on items.
     */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
   /**
     * The user to whom this permission applies.
     */
-  var user: js.UndefOr[SchemaUser] = js.native
+  var user: js.UndefOr[SchemaUser] = js.undefined
 }
 object SchemaPermission {
   

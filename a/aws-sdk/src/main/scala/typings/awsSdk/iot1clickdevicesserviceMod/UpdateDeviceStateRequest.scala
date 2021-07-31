@@ -2,22 +2,20 @@ package typings.awsSdk.iot1clickdevicesserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDeviceStateRequest extends StObject {
   
   /**
     * The unique identifier of the device.
     */
-  var DeviceId: string = js.native
+  var DeviceId: string
   
   /**
     * If true, the device is enabled. If false, the device is
     disabled.
     */
-  var Enabled: js.UndefOr[boolean] = js.native
+  var Enabled: js.UndefOr[boolean] = js.undefined
 }
 object UpdateDeviceStateRequest {
   

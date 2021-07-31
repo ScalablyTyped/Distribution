@@ -2,41 +2,39 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFilterResponse extends StObject {
   
   /**
     * Specifies the action that is to be applied to the findings that match the filter.
     */
-  var Action: FilterAction = js.native
+  var Action: FilterAction
   
   /**
     * The description of the filter.
     */
-  var Description: js.UndefOr[FilterDescription] = js.native
+  var Description: js.UndefOr[FilterDescription] = js.undefined
   
   /**
     * Represents the criteria to be used in the filter for querying findings.
     */
-  var FindingCriteria: typings.awsSdk.guarddutyMod.FindingCriteria = js.native
+  var FindingCriteria: typings.awsSdk.guarddutyMod.FindingCriteria
   
   /**
     * The name of the filter.
     */
-  var Name: FilterName = js.native
+  var Name: FilterName
   
   /**
     * Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.
     */
-  var Rank: js.UndefOr[FilterRank] = js.native
+  var Rank: js.UndefOr[FilterRank] = js.undefined
   
   /**
     * The tags of the filter resource.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object GetFilterResponse {
   

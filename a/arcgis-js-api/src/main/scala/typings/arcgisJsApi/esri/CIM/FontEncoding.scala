@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,15 @@ object FontEncoding extends StObject {
     * Symbol encoding.
     */
   @js.native
-  sealed trait MSSymbol extends FontEncoding
+  sealed trait MSSymbol
+    extends StObject
+       with FontEncoding
   
   /**
     * Unicode.
     */
   @js.native
-  sealed trait Unicode extends FontEncoding
+  sealed trait Unicode
+    extends StObject
+       with FontEncoding
 }

@@ -1,14 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-dragula"
-version := "1.1-dt-20200821Z-0af599"
-scalaVersion := "2.13.3"
+version := "1.1-dt-20200821Z-92c98b"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "dragula" % "3.7-dt-20201002Z-5e2bb5",
-  "org.scalablytyped" %%% "std" % "4.1-40053c")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "dragula" % "3.7-dt-20201002Z-2528a9",
+  "org.scalablytyped" %%% "std" % "4.1-044efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

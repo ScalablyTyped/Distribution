@@ -2,25 +2,23 @@ package typings.ot.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerAdapterCallbacks extends StObject {
   
-  def ack(): Unit = js.native
+  def ack(): Unit
   
-  def client_left(clientId: String): Unit = js.native
+  def client_left(clientId: String): Unit
   
-  def clients(clients: js.Any): Unit = js.native
+  def clients(clients: js.Any): Unit
   
-  def operation(operation: SerializedTextOperation): Unit = js.native
+  def operation(operation: SerializedTextOperation): Unit
   
-  def reconnect(): Unit = js.native
+  def reconnect(): Unit
   
-  def selection(clientId: String, selection: String): Unit = js.native
+  def selection(clientId: String, selection: String): Unit
   
-  def set_name(clientId: String, name: String): Unit = js.native
+  def set_name(clientId: String, name: String): Unit
 }
 object ServerAdapterCallbacks {
   

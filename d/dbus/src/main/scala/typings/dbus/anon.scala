@@ -5,27 +5,25 @@ import typings.dbus.mod.DBusConnection
 import typings.dbus.mod.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bus extends StObject {
     
-    var bus: DBusConnection = js.native
+    var bus: DBusConnection
     
-    def getProperties(callback: js.Function2[/* err */ Error | Null, /* properties */ StringDictionary[js.Any], Unit]): Unit = js.native
+    def getProperties(callback: js.Function2[/* err */ Error | Null, /* properties */ StringDictionary[js.Any], Unit]): Unit
     
-    def getProperty(name: String, callback: js.Function2[/* err */ Error | Null, /* name */ String, Unit]): Unit = js.native
+    def getProperty(name: String, callback: js.Function2[/* err */ Error | Null, /* name */ String, Unit]): Unit
     
-    var interfaceName: String = js.native
+    var interfaceName: String
     
-    var objectPath: String = js.native
+    var objectPath: String
     
-    var serviceName: String = js.native
+    var serviceName: String
     
-    def setProperty(name: String, value: js.Any, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def setProperty(name: String, value: js.Any, callback: js.Function1[/* err */ Error | Null, Unit]): Unit
   }
   object Bus {
     
@@ -71,14 +69,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Getter extends StObject {
     
-    def getter(cb: js.Function1[/* val */ String, Unit]): Unit = js.native
+    def getter(cb: js.Function1[/* val */ String, Unit]): Unit
     
-    var setter: js.UndefOr[js.Function2[/* value */ js.Any, /* done */ js.Function0[Unit], Unit]] = js.native
+    var setter: js.UndefOr[js.Function2[/* value */ js.Any, /* done */ js.Function0[Unit], Unit]] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Getter {
     
@@ -106,12 +103,11 @@ object anon {
     }
   }
   
-  @js.native
   trait In extends StObject {
     
-    var in: String = js.native
+    var in: String
     
-    var out: String = js.native
+    var out: String
   }
   object In {
     
@@ -132,10 +128,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Types extends StObject {
     
-    var types: js.Array[String] = js.native
+    var types: js.Array[String]
   }
   object Types {
     

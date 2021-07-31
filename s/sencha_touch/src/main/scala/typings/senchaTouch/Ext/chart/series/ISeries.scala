@@ -4,50 +4,50 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.mixin.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISeries extends IObservable {
+trait ISeries
+  extends StObject
+     with IObservable {
   
   /** [Config Option] (Object) */
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var background: js.UndefOr[js.Any] = js.native
+  var background: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Array) */
-  var colors: js.UndefOr[Array] = js.native
+  var colors: js.UndefOr[Array] = js.undefined
   
   /** [Method] Returns the value of animate
     * @returns Object
     */
-  var getAnimate: js.UndefOr[js.Function0[_]] = js.native
+  var getAnimate: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of background
     * @returns Object
     */
-  var getBackground: js.UndefOr[js.Function0[_]] = js.native
+  var getBackground: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of colors
     * @returns Array
     */
-  var getColors: js.UndefOr[js.Function0[Array]] = js.native
+  var getColors: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of hidden
     * @returns Boolean|Array
     */
-  var getHidden: js.UndefOr[js.Function0[_]] = js.native
+  var getHidden: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of highlightCfg
     * @returns Object
     */
-  var getHighlightCfg: js.UndefOr[js.Function0[_]] = js.native
+  var getHighlightCfg: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of highlightItem
     * @returns Object
     */
-  var getHighlightItem: js.UndefOr[js.Function0[_]] = js.native
+  var getHighlightItem: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] For a given x y point relative to the main region find a corresponding item from this series if any
     * @param x Number
@@ -60,112 +60,112 @@ trait ISeries extends IObservable {
       /* x */ js.UndefOr[Double], 
       /* y */ js.UndefOr[Double], 
       /* target */ js.UndefOr[js.Any], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns the value of itemInstancing
     * @returns Object
     */
-  var getItemInstancing: js.UndefOr[js.Function0[_]] = js.native
+  var getItemInstancing: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of label
     * @returns Object
     */
-  var getLabel: js.UndefOr[js.Function0[_]] = js.native
+  var getLabel: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of labelField
     * @returns String/String[]
     */
-  var getLabelField: js.UndefOr[js.Function0[_]] = js.native
+  var getLabelField: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of labelOverflowPadding
     * @returns Number
     */
-  var getLabelOverflowPadding: js.UndefOr[js.Function0[Double]] = js.native
+  var getLabelOverflowPadding: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of marker
     * @returns Object
     */
-  var getMarker: js.UndefOr[js.Function0[_]] = js.native
+  var getMarker: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of markerSubStyle
     * @returns Object
     */
-  var getMarkerSubStyle: js.UndefOr[js.Function0[_]] = js.native
+  var getMarkerSubStyle: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of overlaySurface
     * @returns Object
     */
-  var getOverlaySurface: js.UndefOr[js.Function0[_]] = js.native
+  var getOverlaySurface: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of renderer
     * @returns Function
     */
-  var getRenderer: js.UndefOr[js.Function0[_]] = js.native
+  var getRenderer: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of showInLegend
     * @returns Boolean
     */
-  var getShowInLegend: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getShowInLegend: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Performs drawing of this series  */
-  var getSprites: js.UndefOr[js.Function0[Unit]] = js.native
+  var getSprites: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Returns the value of style
     * @returns Object
     */
-  var getStyle: js.UndefOr[js.Function0[_]] = js.native
+  var getStyle: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of subStyle
     * @returns Object
     */
-  var getSubStyle: js.UndefOr[js.Function0[_]] = js.native
+  var getSubStyle: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of surface
     * @returns Object
     */
-  var getSurface: js.UndefOr[js.Function0[_]] = js.native
+  var getSurface: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of title
     * @returns String
     */
-  var getTitle: js.UndefOr[js.Function0[String]] = js.native
+  var getTitle: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (Boolean|Array) */
-  var hidden: js.UndefOr[js.Any] = js.native
+  var hidden: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var highlightCfg: js.UndefOr[js.Any] = js.native
+  var highlightCfg: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var highlightItem: js.UndefOr[js.Any] = js.native
+  var highlightItem: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var itemInstancing: js.UndefOr[js.Any] = js.native
+  var itemInstancing: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var label: js.UndefOr[js.Any] = js.native
+  var label: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/String[]) */
-  var labelField: js.UndefOr[js.Any] = js.native
+  var labelField: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number) */
-  var labelOverflowPadding: js.UndefOr[Double] = js.native
+  var labelOverflowPadding: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Object) */
-  var marker: js.UndefOr[js.Any] = js.native
+  var marker: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var markerSubStyle: js.UndefOr[js.Any] = js.native
+  var markerSubStyle: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var overlaySurface: js.UndefOr[js.Any] = js.native
+  var overlaySurface: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Provide legend information to target array
     * @param target Array The information consists:
     */
-  var provideLegendInfo: js.UndefOr[js.Function1[/* target */ js.UndefOr[Array], Unit]] = js.native
+  var provideLegendInfo: js.UndefOr[js.Function1[/* target */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
@@ -175,33 +175,33 @@ trait ISeries extends IObservable {
   @JSName("relayEvents")
   var relayEvents_ISeries: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Function) */
-  var renderer: js.UndefOr[js.Any] = js.native
+  var renderer: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (String) */
-  var seriesType: js.UndefOr[String] = js.native
+  var seriesType: js.UndefOr[String] = js.undefined
   
   /** [Method] Sets the value of animate
     * @param animate Object The new value.
     */
-  var setAnimate: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], Unit]] = js.native
+  var setAnimate: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of background
     * @param background Object The new value.
     */
-  var setBackground: js.UndefOr[js.Function1[/* background */ js.UndefOr[js.Any], Unit]] = js.native
+  var setBackground: js.UndefOr[js.Function1[/* background */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of colors
     * @param colors Array The new value.
     */
-  var setColors: js.UndefOr[js.Function1[/* colors */ js.UndefOr[Array], Unit]] = js.native
+  var setColors: js.UndefOr[js.Function1[/* colors */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of hidden
     * @param hidden Boolean|Array The new value.
     */
-  var setHidden: js.UndefOr[js.Function1[/* hidden */ js.UndefOr[js.Any], Unit]] = js.native
+  var setHidden: js.UndefOr[js.Function1[/* hidden */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method]
     * @param index Number
@@ -209,110 +209,110 @@ trait ISeries extends IObservable {
     */
   var setHiddenByIndex: js.UndefOr[
     js.Function2[/* index */ js.UndefOr[Double], /* value */ js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the value of highlightCfg
     * @param highlightCfg Object The new value.
     */
-  var setHighlightCfg: js.UndefOr[js.Function1[/* highlightCfg */ js.UndefOr[js.Any], Unit]] = js.native
+  var setHighlightCfg: js.UndefOr[js.Function1[/* highlightCfg */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of highlightItem
     * @param highlightItem Object The new value.
     */
-  var setHighlightItem: js.UndefOr[js.Function1[/* highlightItem */ js.UndefOr[js.Any], Unit]] = js.native
+  var setHighlightItem: js.UndefOr[js.Function1[/* highlightItem */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of itemInstancing
     * @param itemInstancing Object The new value.
     */
-  var setItemInstancing: js.UndefOr[js.Function1[/* itemInstancing */ js.UndefOr[js.Any], Unit]] = js.native
+  var setItemInstancing: js.UndefOr[js.Function1[/* itemInstancing */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of label
     * @param label Object The new value.
     * @returns Object/String The attributes that have been changed or added, or the text for the label. Example to enclose every other label in parentheses: renderer: function (text) { if (index % 2 == 0) { return '(' + text + ')' } } Default value: null.
     */
-  var setLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[js.Any], _]] = js.native
+  var setLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Sets the value of labelField
     * @param labelField String/String[] The new value.
     */
-  var setLabelField: js.UndefOr[js.Function1[/* labelField */ js.UndefOr[js.Any], Unit]] = js.native
+  var setLabelField: js.UndefOr[js.Function1[/* labelField */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of labelOverflowPadding
     * @param labelOverflowPadding Number The new value.
     */
-  var setLabelOverflowPadding: js.UndefOr[js.Function1[/* labelOverflowPadding */ js.UndefOr[Double], Unit]] = js.native
+  var setLabelOverflowPadding: js.UndefOr[js.Function1[/* labelOverflowPadding */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of marker
     * @param marker Object The new value.
     */
-  var setMarker: js.UndefOr[js.Function1[/* marker */ js.UndefOr[js.Any], Unit]] = js.native
+  var setMarker: js.UndefOr[js.Function1[/* marker */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of markerSubStyle
     * @param markerSubStyle Object The new value.
     */
-  var setMarkerSubStyle: js.UndefOr[js.Function1[/* markerSubStyle */ js.UndefOr[js.Any], Unit]] = js.native
+  var setMarkerSubStyle: js.UndefOr[js.Function1[/* markerSubStyle */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of overlaySurface
     * @param overlaySurface Object The new value.
     */
-  var setOverlaySurface: js.UndefOr[js.Function1[/* overlaySurface */ js.UndefOr[js.Any], Unit]] = js.native
+  var setOverlaySurface: js.UndefOr[js.Function1[/* overlaySurface */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of renderer
     * @param renderer Function The new value.
     * @returns Object The attributes that have been changed or added. Note: it is usually possible to add or modify the attributes directly into the config parameter and not return anything, but returning an object with only those attributes that have been changed may allow for optimizations in the rendering of some series. Example to draw every other item in red: renderer: function (sprite, config, rendererData, index) { if (index % 2 == 0) { return { strokeStyle: 'red' }; } }
     */
-  var setRenderer: js.UndefOr[js.Function1[/* renderer */ js.UndefOr[js.Any], _]] = js.native
+  var setRenderer: js.UndefOr[js.Function1[/* renderer */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Sets the value of showInLegend
     * @param showInLegend Boolean The new value.
     */
-  var setShowInLegend: js.UndefOr[js.Function1[/* showInLegend */ js.UndefOr[Boolean], Unit]] = js.native
+  var setShowInLegend: js.UndefOr[js.Function1[/* showInLegend */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of store
     * @param store Object The new value.
     */
-  var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.native
+  var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of style
     * @param style Object The new value.
     */
-  var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[js.Any], Unit]] = js.native
+  var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of subStyle
     * @param subStyle Object The new value.
     */
-  var setSubStyle: js.UndefOr[js.Function1[/* subStyle */ js.UndefOr[js.Any], Unit]] = js.native
+  var setSubStyle: js.UndefOr[js.Function1[/* subStyle */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of surface
     * @param surface Object The new value.
     */
-  var setSurface: js.UndefOr[js.Function1[/* surface */ js.UndefOr[js.Any], Unit]] = js.native
+  var setSurface: js.UndefOr[js.Function1[/* surface */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of title
     * @param title String The new value.
     */
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.native
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var showInLegend: js.UndefOr[Boolean] = js.native
+  var showInLegend: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var store: js.UndefOr[js.Any] = js.native
+  var store: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var style: js.UndefOr[js.Any] = js.native
+  var style: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var subStyle: js.UndefOr[js.Any] = js.native
+  var subStyle: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var surface: js.UndefOr[js.Any] = js.native
+  var surface: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** [Property] (String) */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ISeries {
   
@@ -344,13 +344,13 @@ object ISeries {
     def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def setGetAnimate(value: () => _): Self = StObject.set(x, "getAnimate", js.Any.fromFunction0(value))
+    def setGetAnimate(value: () => js.Any): Self = StObject.set(x, "getAnimate", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetAnimateUndefined: Self = StObject.set(x, "getAnimate", js.undefined)
     
     @scala.inline
-    def setGetBackground(value: () => _): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
+    def setGetBackground(value: () => js.Any): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetBackgroundUndefined: Self = StObject.set(x, "getBackground", js.undefined)
@@ -362,42 +362,42 @@ object ISeries {
     def setGetColorsUndefined: Self = StObject.set(x, "getColors", js.undefined)
     
     @scala.inline
-    def setGetHidden(value: () => _): Self = StObject.set(x, "getHidden", js.Any.fromFunction0(value))
+    def setGetHidden(value: () => js.Any): Self = StObject.set(x, "getHidden", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetHiddenUndefined: Self = StObject.set(x, "getHidden", js.undefined)
     
     @scala.inline
-    def setGetHighlightCfg(value: () => _): Self = StObject.set(x, "getHighlightCfg", js.Any.fromFunction0(value))
+    def setGetHighlightCfg(value: () => js.Any): Self = StObject.set(x, "getHighlightCfg", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetHighlightCfgUndefined: Self = StObject.set(x, "getHighlightCfg", js.undefined)
     
     @scala.inline
-    def setGetHighlightItem(value: () => _): Self = StObject.set(x, "getHighlightItem", js.Any.fromFunction0(value))
+    def setGetHighlightItem(value: () => js.Any): Self = StObject.set(x, "getHighlightItem", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetHighlightItemUndefined: Self = StObject.set(x, "getHighlightItem", js.undefined)
     
     @scala.inline
     def setGetItemForPoint(
-      value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* target */ js.UndefOr[js.Any]) => _
+      value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* target */ js.UndefOr[js.Any]) => js.Any
     ): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction3(value))
     
     @scala.inline
     def setGetItemForPointUndefined: Self = StObject.set(x, "getItemForPoint", js.undefined)
     
     @scala.inline
-    def setGetItemInstancing(value: () => _): Self = StObject.set(x, "getItemInstancing", js.Any.fromFunction0(value))
+    def setGetItemInstancing(value: () => js.Any): Self = StObject.set(x, "getItemInstancing", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetItemInstancingUndefined: Self = StObject.set(x, "getItemInstancing", js.undefined)
     
     @scala.inline
-    def setGetLabel(value: () => _): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+    def setGetLabel(value: () => js.Any): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabelField(value: () => _): Self = StObject.set(x, "getLabelField", js.Any.fromFunction0(value))
+    def setGetLabelField(value: () => js.Any): Self = StObject.set(x, "getLabelField", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetLabelFieldUndefined: Self = StObject.set(x, "getLabelField", js.undefined)
@@ -412,10 +412,10 @@ object ISeries {
     def setGetLabelUndefined: Self = StObject.set(x, "getLabel", js.undefined)
     
     @scala.inline
-    def setGetMarker(value: () => _): Self = StObject.set(x, "getMarker", js.Any.fromFunction0(value))
+    def setGetMarker(value: () => js.Any): Self = StObject.set(x, "getMarker", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMarkerSubStyle(value: () => _): Self = StObject.set(x, "getMarkerSubStyle", js.Any.fromFunction0(value))
+    def setGetMarkerSubStyle(value: () => js.Any): Self = StObject.set(x, "getMarkerSubStyle", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetMarkerSubStyleUndefined: Self = StObject.set(x, "getMarkerSubStyle", js.undefined)
@@ -424,13 +424,13 @@ object ISeries {
     def setGetMarkerUndefined: Self = StObject.set(x, "getMarker", js.undefined)
     
     @scala.inline
-    def setGetOverlaySurface(value: () => _): Self = StObject.set(x, "getOverlaySurface", js.Any.fromFunction0(value))
+    def setGetOverlaySurface(value: () => js.Any): Self = StObject.set(x, "getOverlaySurface", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetOverlaySurfaceUndefined: Self = StObject.set(x, "getOverlaySurface", js.undefined)
     
     @scala.inline
-    def setGetRenderer(value: () => _): Self = StObject.set(x, "getRenderer", js.Any.fromFunction0(value))
+    def setGetRenderer(value: () => js.Any): Self = StObject.set(x, "getRenderer", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetRendererUndefined: Self = StObject.set(x, "getRenderer", js.undefined)
@@ -448,19 +448,19 @@ object ISeries {
     def setGetSpritesUndefined: Self = StObject.set(x, "getSprites", js.undefined)
     
     @scala.inline
-    def setGetStyle(value: () => _): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
+    def setGetStyle(value: () => js.Any): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetStyleUndefined: Self = StObject.set(x, "getStyle", js.undefined)
     
     @scala.inline
-    def setGetSubStyle(value: () => _): Self = StObject.set(x, "getSubStyle", js.Any.fromFunction0(value))
+    def setGetSubStyle(value: () => js.Any): Self = StObject.set(x, "getSubStyle", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetSubStyleUndefined: Self = StObject.set(x, "getSubStyle", js.undefined)
     
     @scala.inline
-    def setGetSurface(value: () => _): Self = StObject.set(x, "getSurface", js.Any.fromFunction0(value))
+    def setGetSurface(value: () => js.Any): Self = StObject.set(x, "getSurface", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetSurfaceUndefined: Self = StObject.set(x, "getSurface", js.undefined)
@@ -604,7 +604,7 @@ object ISeries {
     def setSetItemInstancingUndefined: Self = StObject.set(x, "setItemInstancing", js.undefined)
     
     @scala.inline
-    def setSetLabel(value: /* label */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+    def setSetLabel(value: /* label */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSetLabelField(value: /* labelField */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLabelField", js.Any.fromFunction1(value))
@@ -640,7 +640,7 @@ object ISeries {
     def setSetOverlaySurfaceUndefined: Self = StObject.set(x, "setOverlaySurface", js.undefined)
     
     @scala.inline
-    def setSetRenderer(value: /* renderer */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "setRenderer", js.Any.fromFunction1(value))
+    def setSetRenderer(value: /* renderer */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "setRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSetRendererUndefined: Self = StObject.set(x, "setRenderer", js.undefined)

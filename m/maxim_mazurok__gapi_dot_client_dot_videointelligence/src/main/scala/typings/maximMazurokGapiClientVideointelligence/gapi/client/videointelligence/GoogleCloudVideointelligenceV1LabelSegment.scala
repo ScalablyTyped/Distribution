@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1LabelSegment extends StObject {
   
   /** Confidence that the label is accurate. Range: [0, 1]. */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /** Video segment where a label was detected. */
-  var segment: js.UndefOr[GoogleCloudVideointelligenceV1VideoSegment] = js.native
+  var segment: js.UndefOr[GoogleCloudVideointelligenceV1VideoSegment] = js.undefined
 }
 object GoogleCloudVideointelligenceV1LabelSegment {
   

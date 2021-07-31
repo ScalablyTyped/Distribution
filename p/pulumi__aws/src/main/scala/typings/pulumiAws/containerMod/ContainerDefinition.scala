@@ -3,87 +3,85 @@ package typings.pulumiAws.containerMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerDefinition extends StObject {
   
-  var command: js.UndefOr[js.Array[String]] = js.native
+  var command: js.UndefOr[js.Array[String]] = js.undefined
   
-  var cpu: js.UndefOr[Double] = js.native
+  var cpu: js.UndefOr[Double] = js.undefined
   
-  var dependsOn: js.UndefOr[js.Array[ContainerDependency]] = js.native
+  var dependsOn: js.UndefOr[js.Array[ContainerDependency]] = js.undefined
   
-  var disableNetworking: js.UndefOr[Boolean] = js.native
+  var disableNetworking: js.UndefOr[Boolean] = js.undefined
   
-  var dnsSearchDomains: js.UndefOr[js.Array[String]] = js.native
+  var dnsSearchDomains: js.UndefOr[js.Array[String]] = js.undefined
   
-  var dnsServers: js.UndefOr[js.Array[String]] = js.native
+  var dnsServers: js.UndefOr[js.Array[String]] = js.undefined
   
-  var dockerLabels: js.UndefOr[StringDictionary[String]] = js.native
+  var dockerLabels: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var dockerSecurityOptions: js.UndefOr[js.Array[String]] = js.native
+  var dockerSecurityOptions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var entryPoint: js.UndefOr[js.Array[String]] = js.native
+  var entryPoint: js.UndefOr[js.Array[String]] = js.undefined
   
-  var environment: js.UndefOr[js.Array[KeyValuePair]] = js.native
+  var environment: js.UndefOr[js.Array[KeyValuePair]] = js.undefined
   
-  var essential: js.UndefOr[Boolean] = js.native
+  var essential: js.UndefOr[Boolean] = js.undefined
   
-  var extraHosts: js.UndefOr[js.Array[HostEntry]] = js.native
+  var extraHosts: js.UndefOr[js.Array[HostEntry]] = js.undefined
   
-  var firelensConfiguration: js.UndefOr[FirelensConfiguration] = js.native
+  var firelensConfiguration: js.UndefOr[FirelensConfiguration] = js.undefined
   
-  var healthCheck: js.UndefOr[HealthCheck] = js.native
+  var healthCheck: js.UndefOr[HealthCheck] = js.undefined
   
-  var hostname: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var interactive: js.UndefOr[Boolean] = js.native
+  var interactive: js.UndefOr[Boolean] = js.undefined
   
-  var links: js.UndefOr[js.Array[String]] = js.native
+  var links: js.UndefOr[js.Array[String]] = js.undefined
   
-  var linuxParameters: js.UndefOr[LinuxParameters] = js.native
+  var linuxParameters: js.UndefOr[LinuxParameters] = js.undefined
   
-  var logConfiguration: js.UndefOr[LogConfiguration] = js.native
+  var logConfiguration: js.UndefOr[LogConfiguration] = js.undefined
   
-  var memory: js.UndefOr[Double] = js.native
+  var memory: js.UndefOr[Double] = js.undefined
   
-  var memoryReservation: js.UndefOr[Double] = js.native
+  var memoryReservation: js.UndefOr[Double] = js.undefined
   
-  var mountPoints: js.UndefOr[js.Array[MountPoint]] = js.native
+  var mountPoints: js.UndefOr[js.Array[MountPoint]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var portMappings: js.UndefOr[js.Array[PortMapping]] = js.native
+  var portMappings: js.UndefOr[js.Array[PortMapping]] = js.undefined
   
-  var privileged: js.UndefOr[Boolean] = js.native
+  var privileged: js.UndefOr[Boolean] = js.undefined
   
-  var pseudoTerminal: js.UndefOr[Boolean] = js.native
+  var pseudoTerminal: js.UndefOr[Boolean] = js.undefined
   
-  var readonlyRootFilesystem: js.UndefOr[Boolean] = js.native
+  var readonlyRootFilesystem: js.UndefOr[Boolean] = js.undefined
   
-  var repositoryCredentials: js.UndefOr[RepositoryCredentials] = js.native
+  var repositoryCredentials: js.UndefOr[RepositoryCredentials] = js.undefined
   
-  var resourceRequirements: js.UndefOr[js.Array[ResourceRequirements]] = js.native
+  var resourceRequirements: js.UndefOr[js.Array[ResourceRequirements]] = js.undefined
   
-  var secrets: js.UndefOr[js.Array[Secret]] = js.native
+  var secrets: js.UndefOr[js.Array[Secret]] = js.undefined
   
-  var startTimeout: js.UndefOr[Double] = js.native
+  var startTimeout: js.UndefOr[Double] = js.undefined
   
-  var stopTimeout: js.UndefOr[Double] = js.native
+  var stopTimeout: js.UndefOr[Double] = js.undefined
   
-  var systemControls: js.UndefOr[js.Array[SystemControl]] = js.native
+  var systemControls: js.UndefOr[js.Array[SystemControl]] = js.undefined
   
-  var ulimits: js.UndefOr[js.Array[Ulimit]] = js.native
+  var ulimits: js.UndefOr[js.Array[Ulimit]] = js.undefined
   
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
   
-  var volumesFrom: js.UndefOr[js.Array[VolumeFrom]] = js.native
+  var volumesFrom: js.UndefOr[js.Array[VolumeFrom]] = js.undefined
   
-  var workingDirectory: js.UndefOr[String] = js.native
+  var workingDirectory: js.UndefOr[String] = js.undefined
 }
 object ContainerDefinition {
   

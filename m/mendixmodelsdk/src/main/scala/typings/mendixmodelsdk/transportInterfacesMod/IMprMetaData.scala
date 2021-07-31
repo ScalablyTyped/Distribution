@@ -2,17 +2,15 @@ package typings.mendixmodelsdk.transportInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMprMetaData extends StObject {
   
-  /** docs:keep */ var _BuildVersion: String = js.native
+  /** docs:keep */ var _BuildVersion: String
   
-  /** docs:keep */ var _ProductVersion: String = js.native
+  /** docs:keep */ var _ProductVersion: String
   
-  /** docs:keep */ var _SchemaHash: String = js.native
+  /** docs:keep */ var _SchemaHash: String
 }
 object IMprMetaData {
   

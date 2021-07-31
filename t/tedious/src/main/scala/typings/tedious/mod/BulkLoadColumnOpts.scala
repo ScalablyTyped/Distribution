@@ -2,17 +2,17 @@ package typings.tedious.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BulkLoadColumnOpts extends ParameterOptions {
+trait BulkLoadColumnOpts
+  extends StObject
+     with ParameterOptions {
   
   //  Indicates whether the column accepts NULL values.
-  var nullable: Boolean = js.native
+  var nullable: Boolean
   
   //  If the name of the column is different from the name of the property found on rowObj arguments passed to , then you can use this option to specify the property name.
-  var objName: js.UndefOr[String] = js.native
+  var objName: js.UndefOr[String] = js.undefined
 }
 object BulkLoadColumnOpts {
   

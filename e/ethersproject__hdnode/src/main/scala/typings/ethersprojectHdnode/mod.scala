@@ -5,14 +5,19 @@ import typings.ethersprojectBytes.mod.BytesLike
 import typings.ethersprojectWordlists.mod.Wordlist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@ethersproject/hdnode", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@ethersproject/hdnode", "HDNode")
   @js.native
-  class HDNode protected () extends ExternallyOwnedAccount {
+  class HDNode protected ()
+    extends StObject
+       with ExternallyOwnedAccount {
     def this(
       constructorGuard: js.Any,
       privateKey: String,
@@ -43,6 +48,9 @@ object mod {
     
     var _derive: js.Any = js.native
     
+    /* CompleteClass */
+    override val address: String = js.native
+    
     val chainCode: String = js.native
     
     val depth: Double = js.native
@@ -63,89 +71,76 @@ object mod {
     
     val path: String = js.native
     
+    /* CompleteClass */
+    override val privateKey: String = js.native
+    
     val publicKey: String = js.native
   }
   /* static members */
   object HDNode {
     
-    @JSImport("@ethersproject/hdnode", "HDNode._fromSeed")
+    @JSImport("@ethersproject/hdnode", "HDNode")
     @js.native
-    def _fromSeed(seed: BytesLike, mnemonic: Mnemonic): HDNode = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/hdnode", "HDNode.fromExtendedKey")
-    @js.native
-    def fromExtendedKey(extendedKey: String): HDNode = js.native
+    @scala.inline
+    def _fromSeed(seed: BytesLike, mnemonic: Mnemonic): HDNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromSeed")(seed.asInstanceOf[js.Any], mnemonic.asInstanceOf[js.Any])).asInstanceOf[HDNode]
     
-    @JSImport("@ethersproject/hdnode", "HDNode.fromMnemonic")
-    @js.native
-    def fromMnemonic(mnemonic: String): HDNode = js.native
-    @JSImport("@ethersproject/hdnode", "HDNode.fromMnemonic")
-    @js.native
-    def fromMnemonic(mnemonic: String, password: js.UndefOr[scala.Nothing], wordlist: String): HDNode = js.native
-    @JSImport("@ethersproject/hdnode", "HDNode.fromMnemonic")
-    @js.native
-    def fromMnemonic(mnemonic: String, password: js.UndefOr[scala.Nothing], wordlist: Wordlist): HDNode = js.native
-    @JSImport("@ethersproject/hdnode", "HDNode.fromMnemonic")
-    @js.native
-    def fromMnemonic(mnemonic: String, password: String): HDNode = js.native
-    @JSImport("@ethersproject/hdnode", "HDNode.fromMnemonic")
-    @js.native
-    def fromMnemonic(mnemonic: String, password: String, wordlist: String): HDNode = js.native
-    @JSImport("@ethersproject/hdnode", "HDNode.fromMnemonic")
-    @js.native
-    def fromMnemonic(mnemonic: String, password: String, wordlist: Wordlist): HDNode = js.native
+    @scala.inline
+    def fromExtendedKey(extendedKey: String): HDNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedKey")(extendedKey.asInstanceOf[js.Any]).asInstanceOf[HDNode]
     
-    @JSImport("@ethersproject/hdnode", "HDNode.fromSeed")
-    @js.native
-    def fromSeed(seed: BytesLike): HDNode = js.native
+    @scala.inline
+    def fromMnemonic(mnemonic: String): HDNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any]).asInstanceOf[HDNode]
+    @scala.inline
+    def fromMnemonic(mnemonic: String, password: String): HDNode = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[HDNode]
+    @scala.inline
+    def fromMnemonic(mnemonic: String, password: String, wordlist: String): HDNode = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], password.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[HDNode]
+    @scala.inline
+    def fromMnemonic(mnemonic: String, password: String, wordlist: Wordlist): HDNode = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], password.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[HDNode]
+    @scala.inline
+    def fromMnemonic(mnemonic: String, password: Unit, wordlist: String): HDNode = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], password.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[HDNode]
+    @scala.inline
+    def fromMnemonic(mnemonic: String, password: Unit, wordlist: Wordlist): HDNode = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], password.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[HDNode]
+    
+    @scala.inline
+    def fromSeed(seed: BytesLike): HDNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[HDNode]
   }
   
   @JSImport("@ethersproject/hdnode", "defaultPath")
   @js.native
   val defaultPath: /* "m/44'/60'/0'/0/0" */ String = js.native
   
-  @JSImport("@ethersproject/hdnode", "entropyToMnemonic")
-  @js.native
-  def entropyToMnemonic(entropy: BytesLike): String = js.native
-  @JSImport("@ethersproject/hdnode", "entropyToMnemonic")
-  @js.native
-  def entropyToMnemonic(entropy: BytesLike, wordlist: String): String = js.native
-  @JSImport("@ethersproject/hdnode", "entropyToMnemonic")
-  @js.native
-  def entropyToMnemonic(entropy: BytesLike, wordlist: Wordlist): String = js.native
+  @scala.inline
+  def entropyToMnemonic(entropy: BytesLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("entropyToMnemonic")(entropy.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def entropyToMnemonic(entropy: BytesLike, wordlist: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("entropyToMnemonic")(entropy.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def entropyToMnemonic(entropy: BytesLike, wordlist: Wordlist): String = (^.asInstanceOf[js.Dynamic].applyDynamic("entropyToMnemonic")(entropy.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ethersproject/hdnode", "isValidMnemonic")
-  @js.native
-  def isValidMnemonic(mnemonic: String): Boolean = js.native
-  @JSImport("@ethersproject/hdnode", "isValidMnemonic")
-  @js.native
-  def isValidMnemonic(mnemonic: String, wordlist: Wordlist): Boolean = js.native
+  @scala.inline
+  def isValidMnemonic(mnemonic: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidMnemonic")(mnemonic.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isValidMnemonic(mnemonic: String, wordlist: Wordlist): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidMnemonic")(mnemonic.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@ethersproject/hdnode", "mnemonicToEntropy")
-  @js.native
-  def mnemonicToEntropy(mnemonic: String): String = js.native
-  @JSImport("@ethersproject/hdnode", "mnemonicToEntropy")
-  @js.native
-  def mnemonicToEntropy(mnemonic: String, wordlist: String): String = js.native
-  @JSImport("@ethersproject/hdnode", "mnemonicToEntropy")
-  @js.native
-  def mnemonicToEntropy(mnemonic: String, wordlist: Wordlist): String = js.native
+  @scala.inline
+  def mnemonicToEntropy(mnemonic: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mnemonicToEntropy")(mnemonic.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def mnemonicToEntropy(mnemonic: String, wordlist: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mnemonicToEntropy")(mnemonic.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def mnemonicToEntropy(mnemonic: String, wordlist: Wordlist): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mnemonicToEntropy")(mnemonic.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ethersproject/hdnode", "mnemonicToSeed")
-  @js.native
-  def mnemonicToSeed(mnemonic: String): String = js.native
-  @JSImport("@ethersproject/hdnode", "mnemonicToSeed")
-  @js.native
-  def mnemonicToSeed(mnemonic: String, password: String): String = js.native
+  @scala.inline
+  def mnemonicToSeed(mnemonic: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mnemonicToSeed")(mnemonic.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def mnemonicToSeed(mnemonic: String, password: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mnemonicToSeed")(mnemonic.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait Mnemonic extends StObject {
     
-    val locale: String = js.native
+    val locale: String
     
-    val path: String = js.native
+    val path: String
     
-    val phrase: String = js.native
+    val phrase: String
   }
   object Mnemonic {
     

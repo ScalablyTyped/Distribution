@@ -2,7 +2,6 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
 trait InkStrokeCollectionLoadOptions extends StObject {
   
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait InkStrokeCollectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var floatingInk: js.UndefOr[FloatingInkLoadOptions] = js.native
+  var floatingInk: js.UndefOr[FloatingInkLoadOptions] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait InkStrokeCollectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
 }
 object InkStrokeCollectionLoadOptions {
   

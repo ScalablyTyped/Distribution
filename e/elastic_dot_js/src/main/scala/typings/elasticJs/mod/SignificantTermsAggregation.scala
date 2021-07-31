@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "SignificantTermsAggregation")
 @js.native
-class SignificantTermsAggregation protected () extends Aggregation {
+class SignificantTermsAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     An aggregation that returns interesting or unusual occurrences of terms in
     a set.

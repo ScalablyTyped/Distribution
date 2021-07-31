@@ -9,22 +9,23 @@ import typings.contentfulManagement.commonTypesMod.MetaLinkProps
 import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object environmentAliasMod {
   
-  @JSImport("contentful-management/dist/typings/entities/environment-alias", "wrapEnvironmentAlias")
+  @JSImport("contentful-management/dist/typings/entities/environment-alias", JSImport.Namespace)
   @js.native
-  def wrapEnvironmentAlias(http: AxiosInstance, data: EnvironmentAliasProps): EnvironmentAlias = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/environment-alias", "wrapEnvironmentAliasCollection")
-  @js.native
-  def wrapEnvironmentAliasCollection(http: AxiosInstance, data: CollectionProp[EnvironmentAliasProps]): Collection[EnvironmentAlias, EnvironmentAliasProps] = js.native
+  @scala.inline
+  def wrapEnvironmentAlias(http: AxiosInstance, data: EnvironmentAliasProps): EnvironmentAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEnvironmentAlias")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[EnvironmentAlias]
   
-  @js.native
+  @scala.inline
+  def wrapEnvironmentAliasCollection(http: AxiosInstance, data: CollectionProp[EnvironmentAliasProps]): Collection[EnvironmentAlias, EnvironmentAliasProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEnvironmentAliasCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[EnvironmentAlias, EnvironmentAliasProps]]
+  
   trait EnvironmentAlias
-    extends EnvironmentAliasProps
+    extends StObject
+       with EnvironmentAliasProps
        with DefaultElements[EnvironmentAliasProps] {
     
     /**
@@ -49,7 +50,7 @@ object environmentAliasMod {
       * .catch(console.error)
       * ```
       */
-    def update(data: OmitEnvironmentAliasProps): js.Promise[EnvironmentAlias] = js.native
+    def update(data: OmitEnvironmentAliasProps): js.Promise[EnvironmentAlias]
   }
   object EnvironmentAlias {
     
@@ -72,15 +73,14 @@ object environmentAliasMod {
     }
   }
   
-  @js.native
   trait EnvironmentAliasProps extends StObject {
     
-    var environment: MetaLinkProps = js.native
+    var environment: MetaLinkProps
     
     /**
       * System meta data
       */
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object EnvironmentAliasProps {
     

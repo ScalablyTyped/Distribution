@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverrideQuotaForOriginRequest extends StObject {
   
   /**
     * Security origin.
     */
-  var origin: String = js.native
+  var origin: String
   
   /**
     * The quota size (in bytes) to override the original quota with.
@@ -22,7 +20,7 @@ trait OverrideQuotaForOriginRequest extends StObject {
     * origins, the override will be maintained for each origin until it is
     * disabled (called without a quotaSize).
     */
-  var quotaSize: js.UndefOr[Double] = js.native
+  var quotaSize: js.UndefOr[Double] = js.undefined
 }
 object OverrideQuotaForOriginRequest {
   

@@ -21,23 +21,22 @@ import typings.std.Blob
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Socket = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Socket]
+  @scala.inline
+  def apply(url: String): Socket = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[Socket]
+  @scala.inline
+  def apply(url: String, opts: SocketOptions): Socket = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Socket]
+  @scala.inline
+  def apply(url: Unit, opts: SocketOptions): Socket = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Socket]
+  
   @JSImport("engine.io-client", JSImport.Namespace)
   @js.native
-  def apply(): Socket = js.native
-  @JSImport("engine.io-client", JSImport.Namespace)
-  @js.native
-  def apply(url: js.UndefOr[scala.Nothing], opts: SocketOptions): Socket = js.native
-  @JSImport("engine.io-client", JSImport.Namespace)
-  @js.native
-  def apply(url: String): Socket = js.native
-  @JSImport("engine.io-client", JSImport.Namespace)
-  @js.native
-  def apply(url: String, opts: SocketOptions): Socket = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("engine.io-client", "Socket")
   @js.native
@@ -99,17 +98,16 @@ object mod {
       * Sends a message to the server
       */
     def send(message: Message): this.type = js.native
-    def send(message: Message, opts: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): this.type = js.native
+    def send(message: Message, opts: Unit, cb: js.Function0[Unit]): this.type = js.native
     def send(message: Message, opts: MessageOptions): this.type = js.native
     def send(message: Message, opts: MessageOptions, cb: js.Function0[Unit]): this.type = js.native
   }
   
   type Message = String | ArrayBuffer | ArrayBufferView | Blob
   
-  @js.native
   trait MessageOptions extends StObject {
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
   }
   object MessageOptions {
     
@@ -130,58 +128,57 @@ object mod {
     }
   }
   
-  @js.native
   trait SocketOptions extends StObject {
     
     /**
       * http.Agent to use, defaults to false (NodeJS only)
       */
-    var agent: js.UndefOr[Agent | `false`] = js.native
+    var agent: js.UndefOr[Agent | `false`] = js.undefined
     
     /**
       * An authority certificate or array of authority certificates to check the remote host against.
       * Can be used in Node.js client environment to manually specify certificate information.
       */
-    var ca: js.UndefOr[String | js.Array[String]] = js.native
+    var ca: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Public x509 certificate to use. Can be used in Node.js client environment to manually specify certificate information.
       */
-    var cert: js.UndefOr[String] = js.native
+    var cert: js.UndefOr[String] = js.undefined
     
     /**
       * A string describing the ciphers to use or exclude. Consult the cipher format list for details on the format.
       * Can be used in Node.js client environment to manually specify certificate information.
       */
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
     /**
       * enables XDomainRequest for IE8 to avoid loading bar flashing with click sound. default to false because XDomainRequest has a flaw of not sending cookie.
       */
-    var enablesXDR: js.UndefOr[Boolean] = js.native
+    var enablesXDR: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Headers that will be passed for each request to the server (via xhr-polling and via websockets).
       * These values then can be used during handshake or for special proxies. Can only be used in Node.js client environment.
       */
-    var extraHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var extraHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * forces base 64 encoding for polling transport even when XHR2 responseType is available and WebSocket even if the used standard supports binary.
       */
-    var forceBase64: js.UndefOr[Boolean] = js.native
+    var forceBase64: js.UndefOr[Boolean] = js.undefined
     
     /**
       * forces JSONP for polling transport.
       */
-    var forceJSONP: js.UndefOr[Boolean] = js.native
+    var forceJSONP: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Uses NodeJS implementation for websockets - even if there is a native Browser-Websocket available,
       * which is preferred by default over the NodeJS implementation. (This is useful when using hybrid platforms
       * like nw.js or electron) (false, NodeJS only)
       */
-    var forceNode: js.UndefOr[Boolean] = js.native
+    var forceNode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * determines whether to use JSONP when necessary for polling.
@@ -189,54 +186,54 @@ object mod {
       * if no other transports are available. If another transport is available
       * for opening a connection (e.g. WebSocket) that transport will be used instead.
       */
-    var jsonp: js.UndefOr[Boolean] = js.native
+    var jsonp: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Private key to use for SSL. Can be used in Node.js client environment to manually specify certificate information.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * the local IP address to connect to
       */
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
     /**
       * whether transport upgrades should be restricted to transports supporting binary data (false)
       */
-    var onlyBinaryUpgrades: js.UndefOr[Boolean] = js.native
+    var onlyBinaryUpgrades: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A string of passphrase for the private key or pfx. Can be used in Node.js client environment to manually specify certificate information.
       */
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
     /**
       * path to connect to, default is /engine.io
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * parameters of the WebSocket permessage-deflate extension (see ws module api docs). Set to false to disable. (true)
       */
-    var perMessageDeflate: js.UndefOr[js.Any] = js.native
+    var perMessageDeflate: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Certificate, Private key and CA certificates to use for SSL. Can be used in Node.js client environment to manually specify certificate information.
       */
-    var pfx: js.UndefOr[String] = js.native
+    var pfx: js.UndefOr[String] = js.undefined
     
     /**
       * port the policy server listens on (843)
       */
-    var policyPort: js.UndefOr[Double] = js.native
+    var policyPort: js.UndefOr[Double] = js.undefined
     
     /**
       * If true, the server certificate is verified against the list of supplied CAs.
       * An 'error' event is emitted if verification fails. Verification happens at the connection level,
       * before the HTTP request is sent. Can be used in Node.js client environment to manually specify certificate information.
       */
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     /**
       * defaults to false. If true and if the previous websocket connection to the server succeeded,
@@ -245,34 +242,34 @@ object mod {
       * It is recommended you turn this on only when using SSL/TLS connections,
       * or if you know that your network does not block websockets.
       */
-    var rememberUpgrade: js.UndefOr[Boolean] = js.native
+    var rememberUpgrade: js.UndefOr[Boolean] = js.undefined
     
     /**
       * timestamp parameter (t)
       */
-    var timestampParam: js.UndefOr[String] = js.native
+    var timestampParam: js.UndefOr[String] = js.undefined
     
     /**
       * whether to add the timestamp with each transport request. Note: polling requests are always stamped unless this option is explicitly set to false (false)
       */
-    var timestampRequests: js.UndefOr[Boolean] = js.native
+    var timestampRequests: js.UndefOr[Boolean] = js.undefined
     
     /**
       * hash of options, indexed by transport name, overriding the common options for the given transport
       */
-    var transportOptions: js.UndefOr[StringDictionary[SocketOptions]] = js.native
+    var transportOptions: js.UndefOr[StringDictionary[SocketOptions]] = js.undefined
     
     /**
       * a list of transports to try (in order).
       * Defaults to ['polling', 'websocket'].
       * Engine always attempts to connect directly with the first one, provided the feature detection test for it passes.
       */
-    var transports: js.UndefOr[js.Array[Transport]] = js.native
+    var transports: js.UndefOr[js.Array[Transport]] = js.undefined
     
     /**
       * defaults to true, whether the client should try to upgrade the transport from long-polling to something better.
       */
-    var upgrade: js.UndefOr[Boolean] = js.native
+    var upgrade: js.UndefOr[Boolean] = js.undefined
   }
   object SocketOptions {
     
@@ -457,10 +454,11 @@ object mod {
     def websocket: typings.engineIoClient.engineIoClientStrings.websocket = "websocket".asInstanceOf[typings.engineIoClient.engineIoClientStrings.websocket]
   }
   
-  @js.native
-  trait UpgradeError extends Error {
+  trait UpgradeError
+    extends StObject
+       with Error {
     
-    var transport: String = js.native
+    var transport: String
   }
   object UpgradeError {
     

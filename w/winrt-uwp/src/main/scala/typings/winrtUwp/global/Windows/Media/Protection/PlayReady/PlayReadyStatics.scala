@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides support for returning static or constant data. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyStatics")
 @js.native
 abstract class PlayReadyStatics ()
-  extends typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyStatics
+  extends StObject
+     with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyStatics
 object PlayReadyStatics {
   
   @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyStatics")
@@ -22,9 +22,8 @@ object PlayReadyStatics {
     * @return true if the hardware DRM feature is supported, otherwise false.
     */
   /* static member */
-  @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyStatics.checkSupportedHardware")
-  @js.native
-  def checkSupportedHardware(hwdrmFeature: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyHardwareDRMFeatures): Boolean = js.native
+  @scala.inline
+  def checkSupportedHardware(hwdrmFeature: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyHardwareDRMFeatures): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSupportedHardware")(hwdrmFeature.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** Gets the type of a PlayReady domain join service request. */
   /* static member */

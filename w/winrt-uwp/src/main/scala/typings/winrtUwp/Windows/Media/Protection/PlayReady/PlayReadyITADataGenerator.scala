@@ -3,11 +3,9 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates the PlayReady ITA-specific serialized initialization data. */
-@js.native
 trait PlayReadyITADataGenerator extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait PlayReadyITADataGenerator extends StObject {
     countOfStreams: Double,
     configuration: IPropertySet,
     format: PlayReadyITADataFormat
-  ): js.Array[Double] = js.native
+  ): js.Array[Double]
 }
 object PlayReadyITADataGenerator {
   

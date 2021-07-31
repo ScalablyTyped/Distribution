@@ -5,52 +5,50 @@ import typings.winrtUwp.Windows.Media.MediaProperties.MediaRatio
 import typings.winrtUwp.Windows.Media.MediaProperties.MediaThumbnailFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for managing the low shutter lag photo sequence mode on the capture device. */
-@js.native
 trait LowLagPhotoSequenceControl extends StObject {
   
   /** Gets or sets the desired size for thumbnails, which is the largest length of the image, either width or height. */
-  var desiredThumbnailSize: Double = js.native
+  var desiredThumbnailSize: Double
   
   /**
     * Gets the current frame rate at which pictures can be taken.
     * @return The current frame rate.
     */
-  def getCurrentFrameRate(): MediaRatio = js.native
+  def getCurrentFrameRate(): MediaRatio
   
   /**
     * Gets the highest frame rate supported when video and photos sequences are being captured concurrently.
     * @param captureProperties The media encoding properties.
     * @return The highest concurrent frames per second.
     */
-  def getHighestConcurrentFrameRate(captureProperties: IMediaEncodingProperties): MediaRatio = js.native
+  def getHighestConcurrentFrameRate(captureProperties: IMediaEncodingProperties): MediaRatio
   
   /** Gets a value that specifies if hardware acceleration is supported for thumbnails in photo sequence mode. */
-  var hardwareAcceleratedThumbnailSupported: Double = js.native
+  var hardwareAcceleratedThumbnailSupported: Double
   
   /** Gets the maximum number of past photos that can be stored. */
-  var maxPastPhotos: Double = js.native
+  var maxPastPhotos: Double
   
   /** Gets the maximum number of photos that can be taken per second. */
-  var maxPhotosPerSecond: Double = js.native
+  var maxPhotosPerSecond: Double
   
   /** Gets or sets a value that specifies the number of past photos to store. */
-  var pastPhotoLimit: Double = js.native
+  var pastPhotoLimit: Double
   
   /** Gets or sets the number of photos that are taken per second. */
-  var photosPerSecondLimit: Double = js.native
+  var photosPerSecondLimit: Double
   
   /** Gets a value that specifies if the capture device supports low shutter lag photo sequence mode. */
-  var supported: Boolean = js.native
+  var supported: Boolean
   
   /** Gets a value that enables and disables thumbnail support in photo sequence mode. */
-  var thumbnailEnabled: Boolean = js.native
+  var thumbnailEnabled: Boolean
   
   /** Gets or sets the media format for the thumbnails. */
-  var thumbnailFormat: MediaThumbnailFormat = js.native
+  var thumbnailFormat: MediaThumbnailFormat
 }
 object LowLagPhotoSequenceControl {
   

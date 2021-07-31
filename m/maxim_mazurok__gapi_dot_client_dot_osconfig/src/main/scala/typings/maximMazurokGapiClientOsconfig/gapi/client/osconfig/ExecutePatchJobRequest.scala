@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutePatchJobRequest extends StObject {
   
   /** Description of the patch job. Length of the description is limited to 1024 characters. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Display name for this patch job. This does not have to be unique. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** If this patch is a dry-run only, instances are contacted but will do nothing. */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /** Duration of the patch job. After the duration ends, the patch job times out. */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /** Required. Instances to patch, either explicitly or filtered by some criteria such as zone or labels. */
-  var instanceFilter: js.UndefOr[PatchInstanceFilter] = js.native
+  var instanceFilter: js.UndefOr[PatchInstanceFilter] = js.undefined
   
   /** Patch configuration being applied. If omitted, instances are patched using the default configurations. */
-  var patchConfig: js.UndefOr[PatchConfig] = js.native
+  var patchConfig: js.UndefOr[PatchConfig] = js.undefined
   
   /** Rollout strategy of the patch job. */
-  var rollout: js.UndefOr[PatchRollout] = js.native
+  var rollout: js.UndefOr[PatchRollout] = js.undefined
 }
 object ExecutePatchJobRequest {
   

@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectionRangeProvider extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SelectionRangeProvider extends StObject {
     * @return Selection ranges or a thenable that resolves to such. The lack of a result can be
     * signaled by returning `undefined` or `null`.
     */
-  def provideSelectionRanges(document: TextDocument, positions: js.Array[Position], token: CancellationToken): ProviderResult[js.Array[SelectionRange]] = js.native
+  def provideSelectionRanges(document: TextDocument, positions: js.Array[Position], token: CancellationToken): ProviderResult[js.Array[SelectionRange]]
 }
 object SelectionRangeProvider {
   

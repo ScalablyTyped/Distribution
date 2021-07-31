@@ -10,7 +10,6 @@ import typings.nodeOpenload.anon.Left
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,29 +19,31 @@ object mod {
     * @param config The base config containing the user credentials
     * @returns An Openload singleton
     */
+  @scala.inline
+  def apply(config: OpenloadConfig): Openload = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Openload]
+  
   @JSImport("node-openload", JSImport.Namespace)
   @js.native
-  def apply(config: OpenloadConfig): Openload = js.native
+  val ^ : js.Any = js.native
   
   /**
     * The account info response
     */
-  @js.native
   trait AccountInfo extends StObject {
     
-    var balance: Double = js.native
+    var balance: Double
     
-    var email: String = js.native
+    var email: String
     
-    var extid: String = js.native
+    var extid: String
     
-    var signup_at: String = js.native
+    var signup_at: String
     
-    var storage_left: Double = js.native
+    var storage_left: Double
     
-    var storage_used: String = js.native
+    var storage_used: String
     
-    var traffic: Left = js.native
+    var traffic: Left
   }
   object AccountInfo {
     
@@ -86,22 +87,21 @@ object mod {
     }
   }
   
-  @js.native
   trait DownloadLink extends StObject {
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var name: String = js.native
+    var name: String
     
-    var sha1: String = js.native
+    var sha1: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var token: String = js.native
+    var token: String
     
-    var upload_at: String = js.native
+    var upload_at: String
     
-    var url: String = js.native
+    var url: String
   }
   object DownloadLink {
     
@@ -145,14 +145,13 @@ object mod {
     }
   }
   
-  @js.native
   trait DownloadLinkParam extends StObject {
     
-    var captcha_response: String = js.native
+    var captcha_response: String
     
-    var file: String = js.native
+    var file: String
     
-    var ticket: String = js.native
+    var ticket: String
   }
   object DownloadLinkParam {
     
@@ -176,20 +175,19 @@ object mod {
     }
   }
   
-  @js.native
   trait DownloadTicket extends StObject {
     
-    var captcha_h: Double = js.native
+    var captcha_h: Double
     
-    var captcha_url: String = js.native
+    var captcha_url: String
     
-    var captcha_w: Double = js.native
+    var captcha_w: Double
     
-    var ticket: String = js.native
+    var ticket: String
     
-    var valid_until: String = js.native
+    var valid_until: String
     
-    var wait_time: Double = js.native
+    var wait_time: Double
   }
   object DownloadTicket {
     
@@ -231,12 +229,11 @@ object mod {
   
   type FileInfo = StringDictionary[Contenttype]
   
-  @js.native
   trait ListFolder extends StObject {
     
-    var files: js.Array[Cstatus] = js.native
+    var files: js.Array[Cstatus]
     
-    var folders: js.Array[Id] = js.native
+    var folders: js.Array[Id]
   }
   object ListFolder {
     
@@ -309,17 +306,16 @@ object mod {
     def upload(obj: UploadParam, cb: js.Function1[/* progress */ UploadProgress, Unit]): js.Promise[Upload] = js.native
   }
   
-  @js.native
   trait OpenloadConfig extends StObject {
     
     /* the api_key, available directly from the WebUI after successful login */
-    var api_key: String = js.native
+    var api_key: String
     
     /* the api_login, a string available from the WebUI, NOT the user's e-mail */
-    var api_login: String = js.native
+    var api_login: String
     
     /* the api_version to target, needed for forming the URL, by default 1 */
-    var api_version: js.UndefOr[Double] = js.native
+    var api_version: js.UndefOr[Double] = js.undefined
   }
   object OpenloadConfig {
     
@@ -346,12 +342,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RemoteUpload extends StObject {
     
-    var folderid: String = js.native
+    var folderid: String
     
-    var id: String = js.native
+    var id: String
   }
   object RemoteUpload {
     
@@ -372,14 +367,13 @@ object mod {
     }
   }
   
-  @js.native
   trait RemoteUploadParam extends StObject {
     
-    var folder: js.UndefOr[String] = js.native
+    var folder: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[String] = js.native
+    var headers: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object RemoteUploadParam {
     
@@ -411,12 +405,11 @@ object mod {
   
   type RemoteUploadStatus = NumberDictionary[Added]
   
-  @js.native
   trait RemoteUploadStatusParam extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
   }
   object RemoteUploadStatusParam {
     
@@ -443,24 +436,23 @@ object mod {
     }
   }
   
-  @js.native
   trait RunningFileConverts extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var last_update: String = js.native
+    var last_update: String
     
-    var link: String = js.native
+    var link: String
     
-    var linkextid: String = js.native
+    var linkextid: String
     
-    var name: String = js.native
+    var name: String
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var retries: String = js.native
+    var retries: String
     
-    var status: String = js.native
+    var status: String
   }
   object RunningFileConverts {
     
@@ -508,12 +500,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Upload extends StObject {
     
-    var url: String = js.native
+    var url: String
     
-    var valid_until: String = js.native
+    var valid_until: String
   }
   object Upload {
     
@@ -534,16 +525,15 @@ object mod {
     }
   }
   
-  @js.native
   trait UploadParam extends StObject {
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var file: String | ArrayBuffer = js.native
+    var file: String | ArrayBuffer
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var folder: js.UndefOr[String] = js.native
+    var folder: js.UndefOr[String] = js.undefined
   }
   object UploadParam {
     
@@ -579,14 +569,13 @@ object mod {
     }
   }
   
-  @js.native
   trait UploadProgress extends StObject {
     
-    var percent: Double = js.native
+    var percent: Double
     
-    var total: Double = js.native
+    var total: Double
     
-    var transferred: Double = js.native
+    var transferred: Double
   }
   object UploadProgress {
     

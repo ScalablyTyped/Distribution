@@ -10,9 +10,9 @@ Node.js implementation of port detector
 | ------------------ | :-------------: |
 | Full name          | detect-port |
 | Keywords           | detect, port |
-| # releases         | 2 |
-| # dependents       | 697 |
-| # downloads        | 78207893 |
+| # releases         | 0 |
+| # dependents       | 718 |
+| # downloads        | 100637032 |
 | # stars            | 10 |
 
 ## Links

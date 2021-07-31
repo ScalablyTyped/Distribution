@@ -3,26 +3,25 @@ package typings.mapboxGl.mod
 import typings.mapboxGl.mapboxGlStrings.heatmap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeatmapLayer
-  extends LayerBase
+  extends StObject
+     with LayerBase
      with Layer {
   
-  var layout: js.UndefOr[HeatmapLayout] = js.native
+  var layout: js.UndefOr[HeatmapLayout] = js.undefined
   
-  var paint: js.UndefOr[HeatmapPaint] = js.native
+  var paint: js.UndefOr[HeatmapPaint] = js.undefined
   
-  var `type`: heatmap = js.native
+  var `type`: heatmap
 }
 object HeatmapLayer {
   
   @scala.inline
-  def apply(id: String, `type`: heatmap): HeatmapLayer = {
+  def apply(id: String): HeatmapLayer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("heatmap")
     __obj.asInstanceOf[HeatmapLayer]
   }
   

@@ -2,32 +2,30 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagDetails extends StObject {
   
   /**
     * The total number of resources that use the resource tag. When a tag is initially created and
     * has no associated resources, the value is 0.
     */
-  var count: js.UndefOr[TagCount] = js.native
+  var count: js.UndefOr[TagCount] = js.undefined
   
   /**
     * The tag ID.
     */
-  val id: js.UndefOr[String] = js.native
+  val id: js.UndefOr[String] = js.undefined
   
   /**
     * The tag name.
     */
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
   
   /**
     * The list of tag values.
     */
-  var values: js.UndefOr[js.Array[TagValue]] = js.native
+  var values: js.UndefOr[js.Array[TagValue]] = js.undefined
 }
 object TagDetails {
   

@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnShowingRefusedEventUIParam extends StObject {
   
   /**
     * Array of column keys. Has a value only if the column's key is a string.
     */
-  var columnKeys: js.UndefOr[js.Array[_]] = js.native
+  var columnKeys: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets a reference to the GridHiding widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ColumnShowingRefusedEventUIParam {
   
@@ -30,7 +28,7 @@ object ColumnShowingRefusedEventUIParam {
   implicit class ColumnShowingRefusedEventUIParamMutableBuilder[Self <: ColumnShowingRefusedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setColumnKeys(value: js.Array[_]): Self = StObject.set(x, "columnKeys", value.asInstanceOf[js.Any])
+    def setColumnKeys(value: js.Array[js.Any]): Self = StObject.set(x, "columnKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColumnKeysUndefined: Self = StObject.set(x, "columnKeys", js.undefined)

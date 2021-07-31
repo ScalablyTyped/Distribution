@@ -2,69 +2,67 @@ package typings.xmlbuilder.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the options passed to the XML writer.
   */
-@js.native
 trait WriterOptions extends StObject {
   
   /**
     * Whether to output closing tags for empty element nodes
     */
-  var allowEmpty: js.UndefOr[Boolean] = js.native
+  var allowEmpty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to pretty print text nodes
     */
-  var dontPrettyTextNodes: js.UndefOr[Boolean] = js.native
+  var dontPrettyTextNodes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indentation string for pretty printing
     */
-  var indent: js.UndefOr[String] = js.native
+  var indent: js.UndefOr[String] = js.undefined
   
   /**
     * Newline string for pretty printing
     */
-  var newline: js.UndefOr[String] = js.native
+  var newline: js.UndefOr[String] = js.undefined
   
   /**
     * A fixed number of indents to offset strings
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * Pretty print the XML tree
     */
-  var pretty: js.UndefOr[Boolean] = js.native
+  var pretty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A string to insert before closing slash character
     */
-  var spaceBeforeSlash: js.UndefOr[String | Boolean] = js.native
+  var spaceBeforeSlash: js.UndefOr[String | Boolean] = js.undefined
   
   /**
     * The current state of the writer
     */
-  var state: js.UndefOr[WriterState_] = js.native
+  var state: js.UndefOr[WriterState_] = js.undefined
   
   /**
     * User state object that is saved between writer functions
     */
-  var user: js.UndefOr[js.Any] = js.native
+  var user: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Maximum column width
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * Writer function overrides
     */
-  var writer: js.UndefOr[XMLWriter] = js.native
+  var writer: js.UndefOr[XMLWriter] = js.undefined
 }
 object WriterOptions {
   

@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CalendarGroup extends Entity {
+trait CalendarGroup
+  extends StObject
+     with Entity {
   
   // The calendars in the calendar group. Navigation property. Read-only. Nullable.
-  var calendars: js.UndefOr[NullableOption[js.Array[Calendar]]] = js.native
+  var calendars: js.UndefOr[NullableOption[js.Array[Calendar]]] = js.undefined
   
   /**
     * Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This
     * allows Exchange to apply changes to the correct version of the object. Read-only.
     */
-  var changeKey: js.UndefOr[NullableOption[String]] = js.native
+  var changeKey: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The class identifier. Read-only.
-  var classId: js.UndefOr[NullableOption[String]] = js.native
+  var classId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The group name.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object CalendarGroup {
   

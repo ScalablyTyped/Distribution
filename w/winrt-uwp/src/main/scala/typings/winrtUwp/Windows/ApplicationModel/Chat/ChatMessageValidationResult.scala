@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides results for validation of chat messages. */
-@js.native
 trait ChatMessageValidationResult extends StObject {
   
   /** Gets the maximum number of text fragments allowed for a message. This value has meaning when the SMS text portion of a message is validated. */
-  var maxPartCount: Double = js.native
+  var maxPartCount: Double
   
   /** Gets the total number of text fragments needed for this message. This value has meaning when the SMS text portion of a message is validated. */
-  var partCount: Double = js.native
+  var partCount: Double
   
   /** Gets the number of characters not used in the final message fragments. This value has meaning when the SMS text portion of a message is validated. */
-  var remainingCharacterCountInPart: Double = js.native
+  var remainingCharacterCountInPart: Double
   
   /** Gets the message validation status code. */
-  var status: ChatMessageValidationStatus = js.native
+  var status: ChatMessageValidationStatus
 }
 object ChatMessageValidationResult {
   

@@ -2,25 +2,25 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HomeViewModelProperties extends GoToProperties {
+trait HomeViewModelProperties
+  extends StObject
+     with GoToProperties {
   
   /**
     * The view associated with the widget instance.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home-HomeViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html), or point of view, to zoom to when going home.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home-HomeViewModel.html#viewpoint)
     */
-  var viewpoint: js.UndefOr[ViewpointProperties] = js.native
+  var viewpoint: js.UndefOr[ViewpointProperties] = js.undefined
 }
 object HomeViewModelProperties {
   

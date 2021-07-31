@@ -2,15 +2,13 @@ package typings.chance.Chance
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Currency extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var name: String = js.native
+  var name: String
 }
 object Currency {
   

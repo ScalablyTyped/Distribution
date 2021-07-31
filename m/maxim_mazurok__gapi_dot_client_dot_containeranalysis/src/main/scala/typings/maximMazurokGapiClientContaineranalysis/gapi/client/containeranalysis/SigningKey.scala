@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigningKey extends StObject {
   
   /** key_id is an identifier for the signing key. */
-  var keyId: js.UndefOr[String] = js.native
+  var keyId: js.UndefOr[String] = js.undefined
   
   /** This field contains the corresponding signature scheme. Eg: "rsassa-pss-sha256". */
-  var keyScheme: js.UndefOr[String] = js.native
+  var keyScheme: js.UndefOr[String] = js.undefined
   
   /** This field identifies the specific signing method. Eg: "rsa", "ed25519", and "ecdsa". */
-  var keyType: js.UndefOr[String] = js.native
+  var keyType: js.UndefOr[String] = js.undefined
   
   /** This field contains the actual public key. */
-  var publicKeyValue: js.UndefOr[String] = js.native
+  var publicKeyValue: js.UndefOr[String] = js.undefined
 }
 object SigningKey {
   

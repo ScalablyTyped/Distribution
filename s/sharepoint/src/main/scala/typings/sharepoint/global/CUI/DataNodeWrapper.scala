@@ -2,13 +2,13 @@ package typings.sharepoint.global.CUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CUI.DataNodeWrapper")
 @js.native
 class DataNodeWrapper ()
-  extends typings.sharepoint.CUI.DataNodeWrapper
+  extends StObject
+     with typings.sharepoint.CUI.DataNodeWrapper
 object DataNodeWrapper {
   
   @JSGlobal("CUI.DataNodeWrapper")

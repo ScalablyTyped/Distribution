@@ -2,23 +2,21 @@ package typings.harFormat.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Log extends StObject {
   
   /** Name and version info of used browser. */
-  var browser: js.UndefOr[Browser] = js.native
+  var browser: js.UndefOr[Browser] = js.undefined
   
   /** A comment provided by the user or the application. */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /** Name and version info of the log creator application. */
-  var creator: Creator = js.native
+  var creator: Creator
   
   /** List of all exported (tracked) requests. */
-  var entries: js.Array[Entry] = js.native
+  var entries: js.Array[Entry]
   
   /**
     * List of all exported (tracked) pages.
@@ -32,14 +30,14 @@ trait Log extends StObject {
     * the `<pages>` object is empty and individual requests doesn't have a
     * parent page.
     */
-  var pages: js.UndefOr[js.Array[Page]] = js.native
+  var pages: js.UndefOr[js.Array[Page]] = js.undefined
   
   /**
     * Version number of the format.
     *
     * _If empty, string "1.1" is assumed by default._
     */
-  var version: String = js.native
+  var version: String
 }
 object Log {
   

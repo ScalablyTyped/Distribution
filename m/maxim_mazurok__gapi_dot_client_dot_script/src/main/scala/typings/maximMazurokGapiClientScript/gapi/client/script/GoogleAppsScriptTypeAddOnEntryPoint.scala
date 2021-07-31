@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAppsScriptTypeAddOnEntryPoint extends StObject {
   
   /** The add-on's required list of supported container types. */
-  var addOnType: js.UndefOr[String] = js.native
+  var addOnType: js.UndefOr[String] = js.undefined
   
   /** The add-on's optional description. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The add-on's optional help URL. */
-  var helpUrl: js.UndefOr[String] = js.native
+  var helpUrl: js.UndefOr[String] = js.undefined
   
   /** The add-on's required post install tip URL. */
-  var postInstallTipUrl: js.UndefOr[String] = js.native
+  var postInstallTipUrl: js.UndefOr[String] = js.undefined
   
   /** The add-on's optional report issue URL. */
-  var reportIssueUrl: js.UndefOr[String] = js.native
+  var reportIssueUrl: js.UndefOr[String] = js.undefined
   
   /** The add-on's required title. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object GoogleAppsScriptTypeAddOnEntryPoint {
   

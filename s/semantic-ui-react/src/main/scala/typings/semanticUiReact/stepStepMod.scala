@@ -22,7 +22,6 @@ import typings.semanticUiReact.stepTitleMod.StepTitleProps
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepStepMod extends Shortcut {
@@ -40,7 +39,9 @@ object stepStepMod extends Shortcut {
   val default: StepComponent = js.native
   
   @js.native
-  trait StepComponent extends ComponentClass[StepProps, ComponentState] {
+  trait StepComponent
+    extends StObject
+       with ComponentClass[StepProps, ComponentState] {
     
     var Content: StatelessComponent[StepContentProps] = js.native
     
@@ -51,9 +52,9 @@ object stepStepMod extends Shortcut {
     var Title: StatelessComponent[StepTitleProps] = js.native
   }
   
-  @js.native
   trait StepProps
-    extends StrictStepProps
+    extends StObject
+       with StrictStepProps
        with /* key */ StringDictionary[js.Any]
   object StepProps {
     
@@ -64,41 +65,40 @@ object stepStepMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictStepProps extends StObject {
     
     /** A step can be highlighted as active. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** A step can show that a user has completed it. */
-    var completed: js.UndefOr[Boolean] = js.native
+    var completed: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Shorthand for StepDescription. */
-    var description: js.UndefOr[SemanticShorthandItem[StepDescriptionProps]] = js.native
+    var description: js.UndefOr[SemanticShorthandItem[StepDescriptionProps]] = js.undefined
     
     /** Show that the Loader is inactive. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Render as an `a` tag instead of a `div` and adds the href attribute. */
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
     /** Shorthand for Icon. */
-    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.native
+    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.undefined
     
     /** A step can be link. */
-    var link: js.UndefOr[Boolean] = js.native
+    var link: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Called on click. When passed, the component will render as an `a`.
@@ -113,13 +113,13 @@ object stepStepMod extends Shortcut {
           /* data */ StepProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** A step can show a ordered sequence of steps. Passed from StepGroup. */
-    var ordered: js.UndefOr[Boolean] = js.native
+    var ordered: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for StepTitle. */
-    var title: js.UndefOr[SemanticShorthandItem[StepTitleProps]] = js.native
+    var title: js.UndefOr[SemanticShorthandItem[StepTitleProps]] = js.undefined
   }
   object StrictStepProps {
     

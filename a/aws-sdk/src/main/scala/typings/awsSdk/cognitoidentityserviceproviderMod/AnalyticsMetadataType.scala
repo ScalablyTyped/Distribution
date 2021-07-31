@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsMetadataType extends StObject {
   
   /**
     * The endpoint ID.
     */
-  var AnalyticsEndpointId: js.UndefOr[StringType] = js.native
+  var AnalyticsEndpointId: js.UndefOr[StringType] = js.undefined
 }
 object AnalyticsMetadataType {
   

@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.reactWindow.mod.ListOnItemsRenderedProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,20 +21,19 @@ object mod {
     def resetloadMoreItemsCache(autoReload: Boolean): Unit = js.native
   }
   
-  @js.native
   trait InfiniteLoaderProps extends StObject {
     
-    def children(props: typings.reactWindowInfiniteLoader.anon.OnItemsRendered): ReactNode = js.native
+    def children(props: typings.reactWindowInfiniteLoader.anon.OnItemsRendered): ReactNode
     
-    def isItemLoaded(index: Double): Boolean = js.native
+    def isItemLoaded(index: Double): Boolean
     
-    var itemCount: Double = js.native
+    var itemCount: Double
     
-    def loadMoreItems(startIndex: Double, stopIndex: Double): js.Promise[_] | Null = js.native
+    def loadMoreItems(startIndex: Double, stopIndex: Double): js.Promise[js.Any] | Null
     
-    var minimumBatchSize: js.UndefOr[Double] = js.native
+    var minimumBatchSize: js.UndefOr[Double] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object InfiniteLoaderProps {
     
@@ -44,7 +42,7 @@ object mod {
       children: typings.reactWindowInfiniteLoader.anon.OnItemsRendered => ReactNode,
       isItemLoaded: Double => Boolean,
       itemCount: Double,
-      loadMoreItems: (Double, Double) => js.Promise[_] | Null
+      loadMoreItems: (Double, Double) => js.Promise[js.Any] | Null
     ): InfiniteLoaderProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), isItemLoaded = js.Any.fromFunction1(isItemLoaded), itemCount = itemCount.asInstanceOf[js.Any], loadMoreItems = js.Any.fromFunction2(loadMoreItems))
       __obj.asInstanceOf[InfiniteLoaderProps]
@@ -63,7 +61,7 @@ object mod {
       def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLoadMoreItems(value: (Double, Double) => js.Promise[_] | Null): Self = StObject.set(x, "loadMoreItems", js.Any.fromFunction2(value))
+      def setLoadMoreItems(value: (Double, Double) => js.Promise[js.Any] | Null): Self = StObject.set(x, "loadMoreItems", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMinimumBatchSize(value: Double): Self = StObject.set(x, "minimumBatchSize", value.asInstanceOf[js.Any])

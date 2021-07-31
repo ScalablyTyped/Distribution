@@ -2,13 +2,11 @@ package typings.consola.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsolaReporter extends StObject {
   
-  def log(logObj: ConsolaReporterLogObject, args: ConsolaReporterArgs): Unit = js.native
+  def log(logObj: ConsolaReporterLogObject, args: ConsolaReporterArgs): Unit
 }
 object ConsolaReporter {
   

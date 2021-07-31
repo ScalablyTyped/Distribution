@@ -3,16 +3,16 @@ package typings.jupyterlabNbformat.mod
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IBaseCellJupyterMetadata extends PartialJSONObject {
+trait IBaseCellJupyterMetadata
+  extends StObject
+     with PartialJSONObject {
   
   /**
     * Whether the source is hidden.
     */
-  var source_hidden: Boolean = js.native
+  var source_hidden: Boolean
 }
 object IBaseCellJupyterMetadata {
   

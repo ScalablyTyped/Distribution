@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.unified
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,23 +14,37 @@ sealed trait ContentSwitcherAnimation extends StObject
 object ContentSwitcherAnimation extends StObject {
   
   @js.native
-  sealed trait Fade extends ContentSwitcherAnimation
+  sealed trait Fade
+    extends StObject
+       with ContentSwitcherAnimation
   
   @js.native
-  sealed trait None extends ContentSwitcherAnimation
+  sealed trait None
+    extends StObject
+       with ContentSwitcherAnimation
   
   @js.native
-  sealed trait Rotate extends ContentSwitcherAnimation
+  sealed trait Rotate
+    extends StObject
+       with ContentSwitcherAnimation
   
   @js.native
-  sealed trait SlideOver extends ContentSwitcherAnimation
+  sealed trait SlideOver
+    extends StObject
+       with ContentSwitcherAnimation
   
   @js.native
-  sealed trait SlideRight extends ContentSwitcherAnimation
+  sealed trait SlideRight
+    extends StObject
+       with ContentSwitcherAnimation
   
   @js.native
-  sealed trait ZoomIn extends ContentSwitcherAnimation
+  sealed trait ZoomIn
+    extends StObject
+       with ContentSwitcherAnimation
   
   @js.native
-  sealed trait ZoomOut extends ContentSwitcherAnimation
+  sealed trait ZoomOut
+    extends StObject
+       with ContentSwitcherAnimation
 }

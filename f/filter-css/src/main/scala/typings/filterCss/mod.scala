@@ -6,23 +6,22 @@ import typings.css.mod.Rule
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(inputStylesheet: String, ignorePattern: js.Array[Pattern]): String = (^.asInstanceOf[js.Dynamic].apply(inputStylesheet.asInstanceOf[js.Any], ignorePattern.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(inputStylesheet: String, ignorePattern: js.Array[Pattern], options: Options): String = (^.asInstanceOf[js.Dynamic].apply(inputStylesheet.asInstanceOf[js.Any], ignorePattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(inputStylesheet: String, ignorePattern: Pattern): String = (^.asInstanceOf[js.Dynamic].apply(inputStylesheet.asInstanceOf[js.Any], ignorePattern.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(inputStylesheet: String, ignorePattern: Pattern, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(inputStylesheet.asInstanceOf[js.Any], ignorePattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("filter-css", JSImport.Namespace)
   @js.native
-  def apply(inputStylesheet: String, ignorePattern: js.Array[Pattern]): String = js.native
-  @JSImport("filter-css", JSImport.Namespace)
-  @js.native
-  def apply(inputStylesheet: String, ignorePattern: js.Array[Pattern], options: Options): String = js.native
-  @JSImport("filter-css", JSImport.Namespace)
-  @js.native
-  def apply(inputStylesheet: String, ignorePattern: Pattern): String = js.native
-  @JSImport("filter-css", JSImport.Namespace)
-  @js.native
-  def apply(inputStylesheet: String, ignorePattern: Pattern, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.filterCss.filterCssStrings.`type`
@@ -50,38 +49,37 @@ object mod {
     def `type`: typings.filterCss.filterCssStrings.`type` = "type".asInstanceOf[typings.filterCss.filterCssStrings.`type`]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Whether to match CSS properties like `background-image`.
       * @default true
       */
-    var matchDeclarationProperties: js.UndefOr[Boolean] = js.native
+    var matchDeclarationProperties: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to match CSS values like `url(...)`.
       * @default true
       */
-    var matchDeclarationValues: js.UndefOr[Boolean] = js.native
+    var matchDeclarationValues: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to match media queries like `min-device-pixel-ratio: 2`.
       * @default true
       */
-    var matchMedia: js.UndefOr[Boolean] = js.native
+    var matchMedia: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to match CSS selectors.
       * @default true
       */
-    var matchSelectors: js.UndefOr[Boolean] = js.native
+    var matchSelectors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to match [AST Node types]{@link https://github.com/reworkcss/css#types} like `font-face`.
       * @default true
       */
-    var matchTypes: js.UndefOr[Boolean] = js.native
+    var matchTypes: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

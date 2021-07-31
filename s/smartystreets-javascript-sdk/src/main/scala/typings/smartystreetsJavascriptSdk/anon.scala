@@ -2,25 +2,23 @@ package typings.smartystreetsJavascriptSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AddressCount extends StObject {
     
-    var addressCount: Double = js.native
+    var addressCount: Double
     
-    var bytes: Double = js.native
+    var bytes: Double
     
-    var characterCount: Double = js.native
+    var characterCount: Double
     
-    var lines: js.Any = js.native
+    var lines: js.Any
     
-    var unicode: js.Any = js.native
+    var unicode: js.Any
     
-    var verifiedCount: Double = js.native
+    var verifiedCount: Double
   }
   object AddressCount {
     
@@ -60,12 +58,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Addresses extends StObject {
     
-    var addresses: js.Any = js.native
+    var addresses: js.Any
     
-    var meta: js.Any = js.native
+    var meta: js.Any
   }
   object Addresses {
     

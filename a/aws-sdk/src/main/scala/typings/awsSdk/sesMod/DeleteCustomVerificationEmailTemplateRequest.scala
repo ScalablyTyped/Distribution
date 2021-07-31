@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCustomVerificationEmailTemplateRequest extends StObject {
   
   /**
     * The name of the custom verification email template that you want to delete.
     */
-  var TemplateName: typings.awsSdk.sesMod.TemplateName = js.native
+  var TemplateName: typings.awsSdk.sesMod.TemplateName
 }
 object DeleteCustomVerificationEmailTemplateRequest {
   

@@ -2,27 +2,25 @@ package typings.inversify.interfacesMod.interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindingTypeEnum extends StObject {
   
-  var ConstantValue: BindingType = js.native
+  var ConstantValue: BindingType
   
-  var Constructor: BindingType = js.native
+  var Constructor: BindingType
   
-  var DynamicValue: BindingType = js.native
+  var DynamicValue: BindingType
   
-  var Factory: BindingType = js.native
+  var Factory: BindingType
   
-  var Function: BindingType = js.native
+  var Function: BindingType
   
-  var Instance: BindingType = js.native
+  var Instance: BindingType
   
-  var Invalid: BindingType = js.native
+  var Invalid: BindingType
   
-  var Provider: BindingType = js.native
+  var Provider: BindingType
 }
 object BindingTypeEnum {
   

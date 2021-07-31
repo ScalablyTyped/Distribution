@@ -2,25 +2,23 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for how to validate and process properties on a resource.
   */
-@js.native
 trait SchemaValidationOptions extends StObject {
   
   /**
     * Customize how deployment manager will validate the resource against
     * schema errors.
     */
-  var schemaValidation: js.UndefOr[String] = js.native
+  var schemaValidation: js.UndefOr[String] = js.undefined
   
   /**
     * Specify what to do with extra properties when executing a request.
     */
-  var undeclaredProperties: js.UndefOr[String] = js.native
+  var undeclaredProperties: js.UndefOr[String] = js.undefined
 }
 object SchemaValidationOptions {
   

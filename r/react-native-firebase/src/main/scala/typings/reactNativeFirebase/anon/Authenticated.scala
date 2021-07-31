@@ -2,21 +2,19 @@ package typings.reactNativeFirebase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Authenticated extends StObject {
   
-  var authenticated: Boolean = js.native
+  var authenticated: Boolean
   
-  var user: js.Object | Null = js.native
+  var user: js.Object | Null
 }
 object Authenticated {
   
   @scala.inline
   def apply(authenticated: Boolean): Authenticated = {
-    val __obj = js.Dynamic.literal(authenticated = authenticated.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authenticated = authenticated.asInstanceOf[js.Any], user = null)
     __obj.asInstanceOf[Authenticated]
   }
   

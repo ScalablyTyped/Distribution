@@ -6,7 +6,6 @@ import typings.rcFieldForm.anon.Max
 import typings.rcFieldForm.anon.MismatchString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messagesMod {
@@ -38,9 +37,7 @@ object messagesMod {
     
     @JSImport("rc-field-form/es/utils/messages", "defaultValidateMessages.enum")
     @js.native
-    def enum: String = js.native
-    @scala.inline
-    def enum_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enum")(x.asInstanceOf[js.Any])
+    val `enum`: String = js.native
     
     @JSImport("rc-field-form/es/utils/messages", "defaultValidateMessages.number")
     @js.native

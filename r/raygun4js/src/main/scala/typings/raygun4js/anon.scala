@@ -4,37 +4,35 @@ import typings.raygun4js.mod.BreadcrumbLevel
 import typings.raygun4js.mod.RaygunStackTrace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Browser extends StObject {
     
-    var Browser: String = js.native
+    var Browser: String
     
-    var `Browser-Height`: Double = js.native
+    var `Browser-Height`: Double
     
-    var `Browser-Name`: String = js.native
+    var `Browser-Name`: String
     
-    var `Browser-Version`: String = js.native
+    var `Browser-Version`: String
     
-    var `Browser-Width`: Double = js.native
+    var `Browser-Width`: Double
     
-    var `Color-Depth`: Double = js.native
+    var `Color-Depth`: Double
     
-    var `Document-Mode`: Double = js.native
+    var `Document-Mode`: Double
     
-    var Platform: String = js.native
+    var Platform: String
     
-    var `Screen-Height`: Double = js.native
+    var `Screen-Height`: Double
     
-    var `Screen-Width`: Double = js.native
+    var `Screen-Width`: Double
     
-    var `User-Language`: String = js.native
+    var `User-Language`: String
     
-    var UtcOffset: Double = js.native
+    var UtcOffset: Double
   }
   object Browser {
     
@@ -107,14 +105,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ClassName extends StObject {
     
-    var ClassName: String = js.native
+    var ClassName: String
     
-    var Message: String = js.native
+    var Message: String
     
-    var StackTrace: js.Array[RaygunStackTrace] = js.native
+    var StackTrace: js.Array[RaygunStackTrace]
   }
   object ClassName {
     
@@ -141,26 +138,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Client extends StObject {
     
-    var Client: Version = js.native
+    var Client: Version
     
-    var Environment: Browser = js.native
+    var Environment: Browser
     
-    var Error: ClassName = js.native
+    var Error: ClassName
     
-    var GroupingKey: js.UndefOr[String] = js.native
+    var GroupingKey: js.UndefOr[String] = js.undefined
     
-    var Request: Headers = js.native
+    var Request: Headers
     
-    var Tags: js.Array[String] = js.native
+    var Tags: js.Array[String]
     
-    var User: Email = js.native
+    var User: Email
     
-    var UserCustomData: js.Any = js.native
+    var UserCustomData: js.Any
     
-    var Version: String = js.native
+    var Version: String
   }
   object Client {
     
@@ -217,12 +213,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Duration extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var name: String = js.native
+    var name: String
   }
   object Duration {
     
@@ -243,20 +238,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
-    var Email: js.UndefOr[String] = js.native
+    var Email: js.UndefOr[String] = js.undefined
     
-    var FirstName: js.UndefOr[String] = js.native
+    var FirstName: js.UndefOr[String] = js.undefined
     
-    var FullName: js.UndefOr[String] = js.native
+    var FullName: js.UndefOr[String] = js.undefined
     
-    var Identifier: js.UndefOr[String] = js.native
+    var Identifier: js.UndefOr[String] = js.undefined
     
-    var IsAnonymous: js.UndefOr[Boolean] = js.native
+    var IsAnonymous: js.UndefOr[Boolean] = js.undefined
     
-    var UUID: js.UndefOr[js.Any] = js.native
+    var UUID: js.UndefOr[js.Any] = js.undefined
   }
   object Email {
     
@@ -307,14 +301,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Headers extends StObject {
     
-    var Headers: Host = js.native
+    var Headers: Host
     
-    var QueryString: String = js.native
+    var QueryString: String
     
-    var Url: String = js.native
+    var Url: String
   }
   object Headers {
     
@@ -338,14 +331,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var Host: String = js.native
+    var Host: String
     
-    var Referer: String = js.native
+    var Referer: String
     
-    var `User-Agent`: String = js.native
+    var `User-Agent`: String
   }
   object Host {
     
@@ -370,16 +362,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Level extends StObject {
     
-    var level: BreadcrumbLevel = js.native
+    var level: BreadcrumbLevel
     
-    var location: String = js.native
+    var location: String
     
-    var message: String = js.native
+    var message: String
     
-    var metadata: js.Any = js.native
+    var metadata: js.Any
   }
   object Level {
     
@@ -406,14 +397,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Name {
     
@@ -438,10 +428,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
-    var path: String = js.native
+    var path: String
   }
   object Path {
     
@@ -459,12 +448,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var path: String = js.native
+    var path: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Type {
     
@@ -486,12 +474,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Version extends StObject {
     
-    var Name: String = js.native
+    var Name: String
     
-    var Version: String = js.native
+    var Version: String
   }
   object Version {
     

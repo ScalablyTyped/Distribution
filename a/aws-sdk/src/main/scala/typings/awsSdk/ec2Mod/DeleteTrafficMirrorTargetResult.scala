@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTrafficMirrorTargetResult extends StObject {
   
   /**
     * The ID of the deleted Traffic Mirror target.
     */
-  var TrafficMirrorTargetId: js.UndefOr[String] = js.native
+  var TrafficMirrorTargetId: js.UndefOr[String] = js.undefined
 }
 object DeleteTrafficMirrorTargetResult {
   

@@ -2,17 +2,15 @@ package typings.reactNavigationCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NameRouteName[RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */] extends StObject {
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var name: RouteName = js.native
+  var name: RouteName
   
-  var params: /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[RouteName] */ js.Any = js.native
+  var params: /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[RouteName] */ js.Any
 }
 object NameRouteName {
   
@@ -26,7 +24,7 @@ object NameRouteName {
   }
   
   @scala.inline
-  implicit class NameRouteNameMutableBuilder[Self <: NameRouteName[_], RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */] (val x: Self with NameRouteName[RouteName]) extends AnyVal {
+  implicit class NameRouteNameMutableBuilder[Self <: NameRouteName[?], RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */] (val x: Self & NameRouteName[RouteName]) extends AnyVal {
     
     @scala.inline
     def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

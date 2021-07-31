@@ -2,16 +2,14 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RotateChannelCredentialsRequest extends StObject {
   
   /**
     * The ID of the channel to update.
     */
-  var Id: string = js.native
+  var Id: string
 }
 object RotateChannelCredentialsRequest {
   

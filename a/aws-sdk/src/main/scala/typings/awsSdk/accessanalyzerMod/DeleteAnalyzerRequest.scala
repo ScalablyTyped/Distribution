@@ -2,21 +2,19 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAnalyzerRequest extends StObject {
   
   /**
     * The name of the analyzer to delete.
     */
-  var analyzerName: Name = js.native
+  var analyzerName: Name
   
   /**
     * A client token.
     */
-  var clientToken: js.UndefOr[String] = js.native
+  var clientToken: js.UndefOr[String] = js.undefined
 }
 object DeleteAnalyzerRequest {
   

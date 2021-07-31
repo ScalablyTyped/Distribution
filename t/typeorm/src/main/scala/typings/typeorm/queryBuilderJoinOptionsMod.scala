@@ -2,15 +2,13 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryBuilderJoinOptionsMod {
   
-  @js.native
   trait JoinOptions extends StObject {
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
   }
   object JoinOptions {
     

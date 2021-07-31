@@ -2,10 +2,10 @@ package typings.devexpressAspnetcoreBootstrap.global.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapListBox")
 @js.native
 class BootstrapListBox ()
-  extends typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapListBox
+  extends StObject
+     with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapListBox

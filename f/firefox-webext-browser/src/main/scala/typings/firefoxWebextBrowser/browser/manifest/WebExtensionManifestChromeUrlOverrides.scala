@@ -2,19 +2,17 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebExtensionManifestChromeUrlOverrides extends StObject {
   
   /** @deprecated Unsupported on Firefox at this time. */
-  var bookmarks: js.UndefOr[ExtensionURL] = js.native
+  var bookmarks: js.UndefOr[ExtensionURL] = js.undefined
   
   /** @deprecated Unsupported on Firefox at this time. */
-  var history: js.UndefOr[ExtensionURL] = js.native
+  var history: js.UndefOr[ExtensionURL] = js.undefined
   
-  var newtab: js.UndefOr[ExtensionURL] = js.native
+  var newtab: js.UndefOr[ExtensionURL] = js.undefined
 }
 object WebExtensionManifestChromeUrlOverrides {
   

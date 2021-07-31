@@ -4,7 +4,6 @@ import typings.angular.mod.IHttpPromise
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -12,10 +11,9 @@ object mod {
   
   object featureflags {
     
-    @js.native
     trait FeatureFlagsProvider extends StObject {
       
-      def setInitialFlags(flags: js.Array[FlagData]): Unit = js.native
+      def setInitialFlags(flags: js.Array[FlagData]): Unit
     }
     object FeatureFlagsProvider {
       
@@ -39,29 +37,28 @@ object mod {
       def set(flagsPromise: IHttpPromise[js.Array[FlagData]] | IPromise[js.Array[FlagData]]): Unit = js.native
     }
     
-    @js.native
     trait FlagData extends StObject {
       
       /**
         * Boolean value for enabling/disabling the feature
         */
-      var active: Boolean = js.native
+      var active: Boolean
       
       /**
         * A long description of the flag to further explain the feature being toggled
         * (only visible in the list of flags)
         */
-      var description: String = js.native
+      var description: String
       
       /**
         * Unique key that is used from the markup to resolve whether a flag is active or not.
         */
-      var key: String = js.native
+      var key: String
       
       /**
         * A short name of the flag (only visible in the list of flags)
         */
-      var name: String = js.native
+      var name: String
     }
     object FlagData {
       

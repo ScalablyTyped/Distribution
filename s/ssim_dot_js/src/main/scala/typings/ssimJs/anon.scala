@@ -15,24 +15,22 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any]
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Data {
     
     @scala.inline
-    def apply(data: js.Array[_], height: Double, width: Double): Data = {
+    def apply(data: js.Array[js.Any], height: Double, width: Double): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
@@ -41,7 +39,7 @@ object anon {
     implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
@@ -54,14 +52,13 @@ object anon {
     }
   }
   
-  @js.native
   trait DataHeight extends StObject {
     
-    var data: Int32Array = js.native
+    var data: Int32Array
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object DataHeight {
     
@@ -85,14 +82,15 @@ object anon {
     }
   }
   
-  @js.native
-  trait Height extends ImageMatrix {
+  trait Height
+    extends StObject
+       with ImageMatrix {
     
-    var data: Uint8Array | Int8Array | Uint32Array | Int32Array | Uint16Array = js.native
+    var data: Uint8Array | Int8Array | Uint32Array | Int32Array | Uint16Array
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -120,14 +118,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Mssim extends StObject {
     
-    var mssim: Double = js.native
+    var mssim: Double
     
-    var performance: Double = js.native
+    var performance: Double
     
-    var ssim_map: Matrix = js.native
+    var ssim_map: Matrix
   }
   object Mssim {
     
@@ -152,24 +149,23 @@ object anon {
   }
   
   /* Inlined std.Partial<ssim.js.ssim.js/dist/types.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var bitDepth: js.UndefOr[Double] = js.native
+    var bitDepth: js.UndefOr[Double] = js.undefined
     
-    var downsample: js.UndefOr[original | fast | `false`] = js.native
+    var downsample: js.UndefOr[original | fast | `false`] = js.undefined
     
-    var k1: js.UndefOr[Double] = js.native
+    var k1: js.UndefOr[Double] = js.undefined
     
-    var k2: js.UndefOr[Double] = js.native
+    var k2: js.UndefOr[Double] = js.undefined
     
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
-    var rgb2grayVersion: js.UndefOr[original | integer] = js.native
+    var rgb2grayVersion: js.UndefOr[original | integer] = js.undefined
     
-    var ssim: js.UndefOr[fast | original | bezkrovny | weber] = js.native
+    var ssim: js.UndefOr[fast | original | bezkrovny | weber] = js.undefined
     
-    var windowSize: js.UndefOr[Double] = js.native
+    var windowSize: js.UndefOr[Double] = js.undefined
   }
   object PartialOptions {
     
@@ -232,14 +228,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Width extends StObject {
     
-    var data: Int32Array = js.native
+    var data: Int32Array
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Width {
     

@@ -3,17 +3,15 @@ package typings.bingmaps.Microsoft.Maps
 import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDrawingModeChangedData extends StObject {
   
   /** The new drawing mode. **/
-  var mode: DrawingMode = js.native
+  var mode: DrawingMode
   
   /** The shape being modified by the drawing tools. **/
-  var shape: IPrimitive = js.native
+  var shape: IPrimitive
 }
 object IDrawingModeChangedData {
   

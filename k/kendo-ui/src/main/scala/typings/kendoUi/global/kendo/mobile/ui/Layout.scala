@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.mobile.ui.LayoutOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.mobile.ui.Layout")
 @js.native
 class Layout protected ()
-  extends typings.kendoUi.kendo.mobile.ui.Layout {
+  extends StObject
+     with typings.kendoUi.kendo.mobile.ui.Layout {
   def this(element: Element) = this()
   def this(element: Element, options: LayoutOptions) = this()
 }
@@ -21,9 +21,8 @@ object Layout {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.mobile.ui.Layout.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.Layout = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.Layout = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.mobile.ui.Layout]
   
   /* static member */
   @JSGlobal("kendo.mobile.ui.Layout.fn")

@@ -2,7 +2,6 @@ package typings.alertify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alertify {
@@ -19,9 +18,9 @@ object alertify {
       * @since 0.0.1
       */
     def alert(message: String): IAlertifyStatic = js.native
-    def alert(message: String, fn: js.UndefOr[scala.Nothing], cssClass: String): IAlertifyStatic = js.native
     def alert(message: String, fn: js.Function): IAlertifyStatic = js.native
     def alert(message: String, fn: js.Function, cssClass: String): IAlertifyStatic = js.native
+    def alert(message: String, fn: Unit, cssClass: String): IAlertifyStatic = js.native
     
     /**
       * Create a confirm dialog box
@@ -32,9 +31,9 @@ object alertify {
       * @since 0.0.1
       */
     def confirm(message: String): IAlertifyStatic = js.native
-    def confirm(message: String, fn: js.UndefOr[scala.Nothing], cssClass: String): IAlertifyStatic = js.native
     def confirm(message: String, fn: js.Function): IAlertifyStatic = js.native
     def confirm(message: String, fn: js.Function, cssClass: String): IAlertifyStatic = js.native
+    def confirm(message: String, fn: Unit, cssClass: String): IAlertifyStatic = js.native
     
     /**
       * Attaches alertify.error to window.onerror method
@@ -80,9 +79,9 @@ object alertify {
       * @since 0.0.1
       */
     def log(message: String): IAlertifyStatic = js.native
-    def log(message: String, `type`: js.UndefOr[scala.Nothing], wait: Double): IAlertifyStatic = js.native
     def log(message: String, `type`: String): IAlertifyStatic = js.native
     def log(message: String, `type`: String, wait: Double): IAlertifyStatic = js.native
+    def log(message: String, `type`: Unit, wait: Double): IAlertifyStatic = js.native
     
     /**
       * Create a prompt dialog box
@@ -94,18 +93,13 @@ object alertify {
       * @since 0.0.1
       */
     def prompt(message: String): IAlertifyStatic = js.native
-    def prompt(
-      message: String,
-      fn: js.UndefOr[scala.Nothing],
-      placeholder: js.UndefOr[scala.Nothing],
-      cssClass: String
-    ): IAlertifyStatic = js.native
-    def prompt(message: String, fn: js.UndefOr[scala.Nothing], placeholder: String): IAlertifyStatic = js.native
-    def prompt(message: String, fn: js.UndefOr[scala.Nothing], placeholder: String, cssClass: String): IAlertifyStatic = js.native
     def prompt(message: String, fn: js.Function): IAlertifyStatic = js.native
-    def prompt(message: String, fn: js.Function, placeholder: js.UndefOr[scala.Nothing], cssClass: String): IAlertifyStatic = js.native
     def prompt(message: String, fn: js.Function, placeholder: String): IAlertifyStatic = js.native
     def prompt(message: String, fn: js.Function, placeholder: String, cssClass: String): IAlertifyStatic = js.native
+    def prompt(message: String, fn: js.Function, placeholder: Unit, cssClass: String): IAlertifyStatic = js.native
+    def prompt(message: String, fn: Unit, placeholder: String): IAlertifyStatic = js.native
+    def prompt(message: String, fn: Unit, placeholder: String, cssClass: String): IAlertifyStatic = js.native
+    def prompt(message: String, fn: Unit, placeholder: Unit, cssClass: String): IAlertifyStatic = js.native
     
     /**
       * Used to set alertify properties
@@ -124,12 +118,11 @@ object alertify {
   }
   
   /** Labels for altertify.set function */
-  @js.native
   trait ILabels extends StObject {
     
-    var cancel: js.UndefOr[String] = js.native
+    var cancel: js.UndefOr[String] = js.undefined
     
-    var ok: js.UndefOr[String] = js.native
+    var ok: js.UndefOr[String] = js.undefined
   }
   object ILabels {
     
@@ -159,20 +152,19 @@ object alertify {
   /**
     * Properties for alertify.set function
     */
-  @js.native
   trait IProperties extends StObject {
     
     /** Default button for focus */
-    var buttonFocus: js.UndefOr[String] = js.native
+    var buttonFocus: js.UndefOr[String] = js.undefined
     
     /** Should buttons be displayed in reverse order */
-    var buttonReverse: js.UndefOr[Boolean] = js.native
+    var buttonReverse: js.UndefOr[Boolean] = js.undefined
     
     /** Default value for milliseconds display of log messages */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /** Default values for display of labels */
-    var labels: js.UndefOr[ILabels] = js.native
+    var labels: js.UndefOr[ILabels] = js.undefined
   }
   object IProperties {
     

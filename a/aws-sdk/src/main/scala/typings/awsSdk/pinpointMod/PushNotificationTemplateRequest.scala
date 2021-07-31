@@ -2,56 +2,54 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushNotificationTemplateRequest extends StObject {
   
   /**
     * The message template to use for the ADM (Amazon Device Messaging) channel. This message template overrides the default template for push notification channels (DefaultPushNotificationTemplate).
     */
-  var ADM: js.UndefOr[AndroidPushNotificationTemplate] = js.native
+  var ADM: js.UndefOr[AndroidPushNotificationTemplate] = js.undefined
   
   /**
     * The message template to use for the APNs (Apple Push Notification service) channel. This message template overrides the default template for push notification channels (DefaultPushNotificationTemplate).
     */
-  var APNS: js.UndefOr[APNSPushNotificationTemplate] = js.native
+  var APNS: js.UndefOr[APNSPushNotificationTemplate] = js.undefined
   
   /**
     * The message template to use for the Baidu (Baidu Cloud Push) channel. This message template overrides the default template for push notification channels (DefaultPushNotificationTemplate).
     */
-  var Baidu: js.UndefOr[AndroidPushNotificationTemplate] = js.native
+  var Baidu: js.UndefOr[AndroidPushNotificationTemplate] = js.undefined
   
   /**
     * The default message template to use for push notification channels.
     */
-  var Default: js.UndefOr[DefaultPushNotificationTemplate] = js.native
+  var Default: js.UndefOr[DefaultPushNotificationTemplate] = js.undefined
   
   /**
     * A JSON object that specifies the default values to use for message variables in the message template. This object is a set of key-value pairs. Each key defines a message variable in the template. The corresponding value defines the default value for that variable. When you create a message that's based on the template, you can override these defaults with message-specific and address-specific variables and values.
     */
-  var DefaultSubstitutions: js.UndefOr[string] = js.native
+  var DefaultSubstitutions: js.UndefOr[string] = js.undefined
   
   /**
     * The message template to use for the GCM channel, which is used to send notifications through the Firebase Cloud Messaging (FCM), formerly Google Cloud Messaging (GCM), service. This message template overrides the default template for push notification channels (DefaultPushNotificationTemplate).
     */
-  var GCM: js.UndefOr[AndroidPushNotificationTemplate] = js.native
+  var GCM: js.UndefOr[AndroidPushNotificationTemplate] = js.undefined
   
   /**
     * The unique identifier for the recommender model to use for the message template. Amazon Pinpoint uses this value to determine how to retrieve and process data from a recommender model when it sends messages that use the template, if the template contains message variables for recommendation data.
     */
-  var RecommenderId: js.UndefOr[string] = js.native
+  var RecommenderId: js.UndefOr[string] = js.undefined
   
   /**
     * A custom description of the message template.
     */
-  var TemplateDescription: js.UndefOr[string] = js.native
+  var TemplateDescription: js.UndefOr[string] = js.undefined
   
   /**
     * A string-to-string map of key-value pairs that defines the tags to associate with the message template. Each tag consists of a required tag key and an associated tag value.
     */
-  var tags: js.UndefOr[MapOfString] = js.native
+  var tags: js.UndefOr[MapOfString] = js.undefined
 }
 object PushNotificationTemplateRequest {
   

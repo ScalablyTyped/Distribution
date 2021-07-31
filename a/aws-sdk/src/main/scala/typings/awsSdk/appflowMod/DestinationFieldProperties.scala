@@ -2,36 +2,34 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationFieldProperties extends StObject {
   
   /**
     *  Specifies if the destination field can be created by the current user. 
     */
-  var isCreatable: js.UndefOr[Boolean] = js.native
+  var isCreatable: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Specifies if the destination field can have a null value. 
     */
-  var isNullable: js.UndefOr[Boolean] = js.native
+  var isNullable: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Specifies whether the field can be updated during an UPDATE or UPSERT write operation. 
     */
-  var isUpdatable: js.UndefOr[Boolean] = js.native
+  var isUpdatable: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Specifies if the flow run can either insert new rows in the destination field if they do not already exist, or update them if they do. 
     */
-  var isUpsertable: js.UndefOr[Boolean] = js.native
+  var isUpsertable: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  A list of supported write operations. For each write operation listed, this field can be used in idFieldNames when that write operation is present as a destination option. 
     */
-  var supportedWriteOperations: js.UndefOr[SupportedWriteOperationList] = js.native
+  var supportedWriteOperations: js.UndefOr[SupportedWriteOperationList] = js.undefined
 }
 object DestinationFieldProperties {
   

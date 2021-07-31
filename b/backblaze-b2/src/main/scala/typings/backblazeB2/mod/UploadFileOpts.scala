@@ -4,27 +4,27 @@ import typings.node.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadFileOpts extends CommonArgs {
+trait UploadFileOpts
+  extends StObject
+     with CommonArgs {
   
   /**
     * data length
     * @default  data.byteLength or data.length
     */
-  var contentLength: js.UndefOr[Double] = js.native
+  var contentLength: js.UndefOr[Double] = js.undefined
   
-  var data: Buffer = js.native
+  var data: Buffer
   
-  var fileName: String = js.native
+  var fileName: String
   
   /**
     * data hash
     * @default sha1(data)
     */
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
   /**
     * info headers, prepended with X-Bz-Info- when sent,
@@ -32,19 +32,19 @@ trait UploadFileOpts extends CommonArgs {
     * valid characters should be a-z, A-Z and '-',
     * all other characters will cause an error to be thrown
     */
-  var info: js.UndefOr[Record[String, String]] = js.native
+  var info: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
     * mime type
     * @default 'b2/x-auto'
     */
-  var mime: js.UndefOr[String] = js.native
+  var mime: js.UndefOr[String] = js.undefined
   
-  var onUploadProgress: js.UndefOr[UploadProgressFn | Null] = js.native
+  var onUploadProgress: js.UndefOr[UploadProgressFn | Null] = js.undefined
   
-  var uploadAuthToken: String = js.native
+  var uploadAuthToken: String
   
-  var uploadUrl: String = js.native
+  var uploadUrl: String
 }
 object UploadFileOpts {
   

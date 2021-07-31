@@ -2,21 +2,19 @@ package typings.awsSdk.codestarnotificationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEventTypesFilter extends StObject {
   
   /**
     * The system-generated name of the filter type you want to filter by.
     */
-  var Name: ListEventTypesFilterName = js.native
+  var Name: ListEventTypesFilterName
   
   /**
     * The name of the resource type (for example, pipeline) or service name (for example, CodePipeline) that you want to filter by.
     */
-  var Value: ListEventTypesFilterValue = js.native
+  var Value: ListEventTypesFilterValue
 }
 object ListEventTypesFilter {
   

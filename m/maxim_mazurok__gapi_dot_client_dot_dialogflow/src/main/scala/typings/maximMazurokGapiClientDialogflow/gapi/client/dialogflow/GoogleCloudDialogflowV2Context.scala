@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2Context extends StObject {
   
   /**
     * Optional. The number of conversational query requests after which the context expires. The default is `0`. If set to `0`, the context expires immediately. Contexts expire
     * automatically after 20 minutes if there are no matching queries.
     */
-  var lifespanCount: js.UndefOr[Double] = js.native
+  var lifespanCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Required. The unique identifier of the context. Format: `projects//agent/sessions//contexts/`, or `projects//agent/environments//users//sessions//contexts/`. The `Context ID` is
@@ -21,7 +19,7 @@ trait GoogleCloudDialogflowV2Context extends StObject {
     * environment. If `User ID` is not specified, we assume default '-' user. The following context names are reserved for internal use by Dialogflow. You should not use these contexts or
     * create contexts with these names: * `__system_counters__` * `*_id_dialog_context` * `*_dialog_params_size`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The collection of parameters associated with this context. Depending on your protocol or client library language, this is a map, associative array, symbol table,
@@ -32,8 +30,8 @@ trait GoogleCloudDialogflowV2Context extends StObject {
   var parameters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2Context with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2Context & TopLevel[js.Any]
+  ] = js.undefined
 }
 object GoogleCloudDialogflowV2Context {
   
@@ -62,7 +60,7 @@ object GoogleCloudDialogflowV2Context {
     def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2Context with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2Context & TopLevel[js.Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline

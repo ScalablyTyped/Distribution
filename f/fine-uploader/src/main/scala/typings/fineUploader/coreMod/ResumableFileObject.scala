@@ -2,36 +2,34 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResumableFileObject extends StObject {
   
   /**
     * an object containing any custom resume data for the file
     */
-  var customResumeData: js.UndefOr[js.Any] = js.native
+  var customResumeData: js.UndefOr[js.Any] = js.undefined
   
   /**
     * filename
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * number of bytes to be uploaded
     */
-  var remaining: js.UndefOr[Double] = js.native
+  var remaining: js.UndefOr[Double] = js.undefined
   
   /**
     * total file size in bytes
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * the unique id
     */
-  var uuid: js.UndefOr[Double] = js.native
+  var uuid: js.UndefOr[Double] = js.undefined
 }
 object ResumableFileObject {
   

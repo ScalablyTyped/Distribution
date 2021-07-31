@@ -2,37 +2,35 @@ package typings.devtoolsProtocol.mod.Protocol.Audits
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MixedContentIssueDetails extends StObject {
   
   /**
     * Optional because not every mixed content issue is necessarily linked to a frame.
     */
-  var frame: js.UndefOr[AffectedFrame] = js.native
+  var frame: js.UndefOr[AffectedFrame] = js.undefined
   
   /**
     * The unsafe http url causing the mixed content issue.
     */
-  var insecureURL: String = js.native
+  var insecureURL: String
   
   /**
     * The url responsible for the call to an unsafe url.
     */
-  var mainResourceURL: String = js.native
+  var mainResourceURL: String
   
   /**
     * The mixed content request.
     * Does not always exist (e.g. for unsafe form submission urls).
     */
-  var request: js.UndefOr[AffectedRequest] = js.native
+  var request: js.UndefOr[AffectedRequest] = js.undefined
   
   /**
     * The way the mixed content issue is being resolved.
     */
-  var resolutionStatus: MixedContentResolutionStatus = js.native
+  var resolutionStatus: MixedContentResolutionStatus
   
   /**
     * The type of resource causing the mixed content issue (css, js, iframe,
@@ -40,7 +38,7 @@ trait MixedContentIssueDetails extends StObject {
     * blink::mojom::RequestContextType, which will be replaced
     * by network::mojom::RequestDestination
     */
-  var resourceType: js.UndefOr[MixedContentResourceType] = js.native
+  var resourceType: js.UndefOr[MixedContentResourceType] = js.undefined
 }
 object MixedContentIssueDetails {
   

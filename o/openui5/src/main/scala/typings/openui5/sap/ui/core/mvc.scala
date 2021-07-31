@@ -5,13 +5,14 @@ import typings.openui5.sap.ui.base.EventProvider
 import typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mvc {
   
   @js.native
-  trait View extends Control {
+  trait View
+    extends StObject
+       with Control {
     
     /**
       * Adds some content to the aggregation <code>content</code>.
@@ -274,7 +275,7 @@ object mvc {
       * @since 1.30
       * @returns resolves with the complete view instance, reject with any thrown error
       */
-    def loaded(): JQueryPromise[_] = js.native
+    def loaded(): JQueryPromise[js.Any] = js.native
     
     /**
       * Register a preprocessor for all views of a specific type.The preprocessor can be registered for
@@ -301,33 +302,14 @@ object mvc {
       * @param mSettings optional configuration for preprocessor
       */
     def registerPreprocessor(sType: String, vPreprocessor: String, bSyncSupport: Boolean): Unit = js.native
-    def registerPreprocessor(
-      sType: String,
-      vPreprocessor: String,
-      bSyncSupport: Boolean,
-      bOnDemand: js.UndefOr[scala.Nothing],
-      mSettings: js.Any
-    ): Unit = js.native
     def registerPreprocessor(sType: String, vPreprocessor: String, bSyncSupport: Boolean, bOnDemand: Boolean): Unit = js.native
     def registerPreprocessor(sType: String, vPreprocessor: String, bSyncSupport: Boolean, bOnDemand: Boolean, mSettings: js.Any): Unit = js.native
+    def registerPreprocessor(sType: String, vPreprocessor: String, bSyncSupport: Boolean, bOnDemand: Unit, mSettings: js.Any): Unit = js.native
     def registerPreprocessor(sType: String, vPreprocessor: js.Any, bSyncSupport: Boolean): Unit = js.native
-    def registerPreprocessor(
-      sType: String,
-      vPreprocessor: js.Any,
-      bSyncSupport: Boolean,
-      bOnDemand: js.UndefOr[scala.Nothing],
-      mSettings: js.Any
-    ): Unit = js.native
     def registerPreprocessor(sType: String, vPreprocessor: js.Any, bSyncSupport: Boolean, bOnDemand: Boolean): Unit = js.native
     def registerPreprocessor(sType: String, vPreprocessor: js.Any, bSyncSupport: Boolean, bOnDemand: Boolean, mSettings: js.Any): Unit = js.native
+    def registerPreprocessor(sType: String, vPreprocessor: js.Any, bSyncSupport: Boolean, bOnDemand: Unit, mSettings: js.Any): Unit = js.native
     def registerPreprocessor(sType: PreprocessorType, vPreprocessor: String, bSyncSupport: Boolean): Unit = js.native
-    def registerPreprocessor(
-      sType: PreprocessorType,
-      vPreprocessor: String,
-      bSyncSupport: Boolean,
-      bOnDemand: js.UndefOr[scala.Nothing],
-      mSettings: js.Any
-    ): Unit = js.native
     def registerPreprocessor(sType: PreprocessorType, vPreprocessor: String, bSyncSupport: Boolean, bOnDemand: Boolean): Unit = js.native
     def registerPreprocessor(
       sType: PreprocessorType,
@@ -336,20 +318,27 @@ object mvc {
       bOnDemand: Boolean,
       mSettings: js.Any
     ): Unit = js.native
-    def registerPreprocessor(sType: PreprocessorType, vPreprocessor: js.Any, bSyncSupport: Boolean): Unit = js.native
     def registerPreprocessor(
       sType: PreprocessorType,
-      vPreprocessor: js.Any,
+      vPreprocessor: String,
       bSyncSupport: Boolean,
-      bOnDemand: js.UndefOr[scala.Nothing],
+      bOnDemand: Unit,
       mSettings: js.Any
     ): Unit = js.native
+    def registerPreprocessor(sType: PreprocessorType, vPreprocessor: js.Any, bSyncSupport: Boolean): Unit = js.native
     def registerPreprocessor(sType: PreprocessorType, vPreprocessor: js.Any, bSyncSupport: Boolean, bOnDemand: Boolean): Unit = js.native
     def registerPreprocessor(
       sType: PreprocessorType,
       vPreprocessor: js.Any,
       bSyncSupport: Boolean,
       bOnDemand: Boolean,
+      mSettings: js.Any
+    ): Unit = js.native
+    def registerPreprocessor(
+      sType: PreprocessorType,
+      vPreprocessor: js.Any,
+      bSyncSupport: Boolean,
+      bOnDemand: Unit,
       mSettings: js.Any
     ): Unit = js.native
     
@@ -369,8 +358,8 @@ object mvc {
     def removeContent(vContent: Double): Control = js.native
     def removeContent(vContent: Control): Control = js.native
     
-    def runPreprocessor(sType: String, vSource: String): JQueryPromise[_] | js.Any | String | Element = js.native
-    def runPreprocessor(sType: String, vSource: String, bSync: Boolean): JQueryPromise[_] | js.Any | String | Element = js.native
+    def runPreprocessor(sType: String, vSource: String): JQueryPromise[js.Any] | js.Any | String | Element = js.native
+    def runPreprocessor(sType: String, vSource: String, bSync: Boolean): JQueryPromise[js.Any] | js.Any | String | Element = js.native
     /**
       * Executes preprocessors for a type of source
       * @param sType the type of preprocessor, e.g. "raw", "xml" or "controls"
@@ -379,10 +368,10 @@ object mvc {
       * @param bSync describes the view execution, true if sync
       * @returns a promise resolving with the processed source or an error | the source when bSync=true
       */
-    def runPreprocessor(sType: String, vSource: js.Any): JQueryPromise[_] | js.Any | String | Element = js.native
-    def runPreprocessor(sType: String, vSource: js.Any, bSync: Boolean): JQueryPromise[_] | js.Any | String | Element = js.native
-    def runPreprocessor(sType: String, vSource: Element): JQueryPromise[_] | js.Any | String | Element = js.native
-    def runPreprocessor(sType: String, vSource: Element, bSync: Boolean): JQueryPromise[_] | js.Any | String | Element = js.native
+    def runPreprocessor(sType: String, vSource: js.Any): JQueryPromise[js.Any] | js.Any | String | Element = js.native
+    def runPreprocessor(sType: String, vSource: js.Any, bSync: Boolean): JQueryPromise[js.Any] | js.Any | String | Element = js.native
+    def runPreprocessor(sType: String, vSource: Element): JQueryPromise[js.Any] | js.Any | String | Element = js.native
+    def runPreprocessor(sType: String, vSource: Element, bSync: Boolean): JQueryPromise[js.Any] | js.Any | String | Element = js.native
     
     /**
       * Sets a new value for property <code>displayBlock</code>.Whether the CSS display should be set to
@@ -435,19 +424,29 @@ object mvc {
       object ViewType extends StObject {
         
         @js.native
-        sealed trait HTML extends ViewType
+        sealed trait HTML
+          extends StObject
+             with ViewType
         
         @js.native
-        sealed trait JS extends ViewType
+        sealed trait JS
+          extends StObject
+             with ViewType
         
         @js.native
-        sealed trait JSON extends ViewType
+        sealed trait JSON
+          extends StObject
+             with ViewType
         
         @js.native
-        sealed trait Template extends ViewType
+        sealed trait Template
+          extends StObject
+             with ViewType
         
         @js.native
-        sealed trait XML extends ViewType
+        sealed trait XML
+          extends StObject
+             with ViewType
       }
     }
     
@@ -470,13 +469,15 @@ object mvc {
         * @returns the processed resource or a promise which resolves with the processed resource or an error
         * according to the        declared preprocessor sync capability
         */
-      def process(vSource: js.Any, oViewInfo: js.Any): js.Any | JQueryPromise[_] = js.native
-      def process(vSource: js.Any, oViewInfo: js.Any, mSettings: js.Any): js.Any | JQueryPromise[_] = js.native
+      def process(vSource: js.Any, oViewInfo: js.Any): js.Any | JQueryPromise[js.Any] = js.native
+      def process(vSource: js.Any, oViewInfo: js.Any, mSettings: js.Any): js.Any | JQueryPromise[js.Any] = js.native
     }
   }
   
   @js.native
-  trait XMLView extends View {
+  trait XMLView
+    extends StObject
+       with View {
     
     /**
       * Flag for feature detection of asynchronous loading/rendering
@@ -496,18 +497,26 @@ object mvc {
     object PreprocessorType extends StObject {
       
       @js.native
-      sealed trait CONTROLS extends PreprocessorType
+      sealed trait CONTROLS
+        extends StObject
+           with PreprocessorType
       
       @js.native
-      sealed trait VIEWXML extends PreprocessorType
+      sealed trait VIEWXML
+        extends StObject
+           with PreprocessorType
       
       @js.native
-      sealed trait XML extends PreprocessorType
+      sealed trait XML
+        extends StObject
+           with PreprocessorType
     }
   }
   
   @js.native
-  trait Controller extends EventProvider {
+  trait Controller
+    extends StObject
+       with EventProvider {
     
     /**
       * Returns an Element of the connected view with the given local ID.Views automatically prepend their
@@ -611,7 +620,9 @@ object mvc {
   }
   
   @js.native
-  trait HTMLView extends View {
+  trait HTMLView
+    extends StObject
+       with View {
     
     /**
       * Flag for feature detection of asynchronous loading/rendering
@@ -621,7 +632,9 @@ object mvc {
   }
   
   @js.native
-  trait JSONView extends View {
+  trait JSONView
+    extends StObject
+       with View {
     
     /**
       * Flag for feature detection of asynchronous loading/rendering
@@ -631,7 +644,9 @@ object mvc {
   }
   
   @js.native
-  trait JSView extends View {
+  trait JSView
+    extends StObject
+       with View {
     
     /**
       * Flag for feature detection of asynchronous loading/rendering
@@ -661,5 +676,7 @@ object mvc {
   }
   
   @js.native
-  trait TemplateView extends View
+  trait TemplateView
+    extends StObject
+       with View
 }

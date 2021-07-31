@@ -2,26 +2,24 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Add a list of accounts to a hold.
   */
-@js.native
 trait SchemaAddHeldAccountsRequest extends StObject {
   
   /**
     * Account ids to identify which accounts to add. Only account_ids or only
     * emails should be specified, but not both.
     */
-  var accountIds: js.UndefOr[js.Array[String]] = js.native
+  var accountIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Emails to identify which accounts to add. Only emails or only account_ids
     * should be specified, but not both.
     */
-  var emails: js.UndefOr[js.Array[String]] = js.native
+  var emails: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaAddHeldAccountsRequest {
   

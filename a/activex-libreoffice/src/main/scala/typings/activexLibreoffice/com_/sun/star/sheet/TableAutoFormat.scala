@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,30 +21,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * different types of cells in the range. The AutoFormats are numbered row by row, then column by column.
   * @see com.sun.star.sheet.TableAutoFormatField
   */
-@js.native
 trait TableAutoFormat
-  extends XIndexAccess
+  extends StObject
      with XPropertySet
+     with XIndexAccess
      with XEnumerationAccess
      with XNamed {
   
   /** specifies whether the background settings from the fields are used. */
-  var IncludeBackground: Boolean = js.native
+  var IncludeBackground: Boolean
   
   /** specifies whether the border settings from the fields are used. */
-  var IncludeBorder: Boolean = js.native
+  var IncludeBorder: Boolean
   
   /** specifies whether the font settings from the fields are used. */
-  var IncludeFont: Boolean = js.native
+  var IncludeFont: Boolean
   
   /** specifies whether the justification settings from the fields are used. */
-  var IncludeJustify: Boolean = js.native
+  var IncludeJustify: Boolean
   
   /** specifies whether the number format settings from the fields are used. */
-  var IncludeNumberFormat: Boolean = js.native
+  var IncludeNumberFormat: Boolean
   
   /** specifies whether the column widths and row heights should be updated after applying the format. */
-  var IncludeWidthAndHeight: Boolean = js.native
+  var IncludeWidthAndHeight: Boolean
 }
 object TableAutoFormat {
   

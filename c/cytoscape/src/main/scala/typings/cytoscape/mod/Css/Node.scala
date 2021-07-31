@@ -26,7 +26,6 @@ import typings.cytoscape.mod.EdgeSingular
 import typings.cytoscape.mod.NodeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,25 +40,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.PieChartBackground> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.Events<cytoscape.cytoscape.NodeSingular>> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.TransitionAnimation> */
-@js.native
 trait Node extends StObject {
   
   /**
     * Blackens the node’s body for values from 0 to 1;
     * whitens the node’s body for values from 0 to -1.
     */
-  var `background-blacken`: js.UndefOr[PropertyValueNode[Double]] = js.native
+  var `background-blacken`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
   
   /**
     * How background image clipping is handled;
     * may be node for clipped to node shape or none for no clipping.
     */
-  var `background-clip`: js.UndefOr[PropertyValueNode[clipped | none]] = js.native
+  var `background-clip`: js.UndefOr[PropertyValueNode[clipped | none]] = js.undefined
   
   /**
     * The colour of the node’s body.
     */
-  var `background-color`: js.UndefOr[PropertyValueNode[Colour]] = js.native
+  var `background-color`: js.UndefOr[PropertyValueNode[Colour]] = js.undefined
   
   /**
     * How the background image is fit to the node;
@@ -67,7 +65,7 @@ trait Node extends StObject {
     * contain to fit inside node,
     * or cover to cover the node.
     */
-  var `background-fit`: js.UndefOr[PropertyValueNode[none | contain | cover]] = js.native
+  var `background-fit`: js.UndefOr[PropertyValueNode[none | contain | cover]] = js.undefined
   
   /**
     * Specifies the height of the image.
@@ -78,7 +76,7 @@ trait Node extends StObject {
     * the fitting — thereby overriding the aspect ratio.
     * The auto value is used by default, which uses the height of the image.
     */
-  var `background-height`: js.UndefOr[PropertyValueNode[Double | String]] = js.native
+  var `background-height`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
   /**
     * The URL that points to the image that should be used as the node’s background.
@@ -86,35 +84,35 @@ trait Node extends StObject {
     * You may use a data URI to use embedded images,
     * thereby saving a HTTP request.
     */
-  var `background-image`: js.UndefOr[PropertyValueNode[String]] = js.native
+  var `background-image`: js.UndefOr[PropertyValueNode[String]] = js.undefined
   
   /**
     * The opacity of the background image. [0 1]
     */
-  var `background-image-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.native
+  var `background-image-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
   
   /**
     * The opacity level of the node’s background colour.
     */
-  var `background-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.native
+  var `background-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
   
   /**
     * The x position of the background image,
     * measured in percent(e.g. 50%) or pixels (e.g. 10px).
     */
-  var `background-position-x`: js.UndefOr[PropertyValueNode[Double | String]] = js.native
+  var `background-position-x`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
   /**
     * The y position of the background image,
     * measured in percent(e.g. 50%) or pixels (e.g. 10px).
     */
-  var `background-position-y`: js.UndefOr[PropertyValueNode[Double | String]] = js.native
+  var `background-position-y`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
   /**
     * Whether to repeat the background image;
     * may be no-repeat, repeat-x, repeat-y, or repeat.
     */
-  var `background-repeat`: js.UndefOr[PropertyValueNode[`no-repeat` | `repeat-x` | `repeat-y` | repeat]] = js.native
+  var `background-repeat`: js.UndefOr[PropertyValueNode[`no-repeat` | `repeat-x` | `repeat-y` | repeat]] = js.undefined
   
   /**
     * Specifies the width of the image.
@@ -125,190 +123,190 @@ trait Node extends StObject {
     * in calculating the fitting — thereby overriding the aspect ratio.
     * The auto value is used by default, which uses the width of the image.
     */
-  var `background-width`: js.UndefOr[PropertyValueNode[Double | String]] = js.native
+  var `background-width`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
-  var backgroundColor: js.UndefOr[PropertyValueNode[Colour]] = js.native
+  var backgroundColor: js.UndefOr[PropertyValueNode[Colour]] = js.undefined
   
   /**
     * The colour of the node’s border.
     */
-  var `border-color`: js.UndefOr[PropertyValueNode[Colour]] = js.native
+  var `border-color`: js.UndefOr[PropertyValueNode[Colour]] = js.undefined
   
   /**
     * The opacity of the node’s border.
     * A value between [0 1].
     */
-  var `border-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.native
+  var `border-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
   
   /**
     * The style of the node’s border.
     */
-  var `border-style`: js.UndefOr[PropertyValueNode[LineStyle]] = js.native
+  var `border-style`: js.UndefOr[PropertyValueNode[LineStyle]] = js.undefined
   
   /**
     * The size of the node’s border.
     */
-  var `border-width`: js.UndefOr[PropertyValueNode[Double | String]] = js.native
+  var `border-width`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
-  var color: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.native
+  var color: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.undefined
   
   /**
     * The CSS content field
     */
-  var content: js.UndefOr[PropertyValueNode[String]] = js.native
+  var content: js.UndefOr[PropertyValueNode[String]] = js.undefined
   
-  var display: js.UndefOr[PropertyValue[NodeSingular, none | displayed]] = js.native
+  var display: js.UndefOr[PropertyValue[NodeSingular, none | displayed]] = js.undefined
   
-  var events: js.UndefOr[PropertyValue[NodeSingular, yes | no]] = js.native
+  var events: js.UndefOr[PropertyValue[NodeSingular, yes | no]] = js.undefined
   
-  var `font-family`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.native
+  var `font-family`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
   
-  var `font-size`: js.UndefOr[PropertyValue[NodeSingular, Double | String]] = js.native
+  var `font-size`: js.UndefOr[PropertyValue[NodeSingular, Double | String]] = js.undefined
   
-  var `font-style`: js.UndefOr[PropertyValue[NodeSingular, FontStyle]] = js.native
+  var `font-style`: js.UndefOr[PropertyValue[NodeSingular, FontStyle]] = js.undefined
   
-  var `font-weight`: js.UndefOr[PropertyValue[NodeSingular, FontWeight]] = js.native
+  var `font-weight`: js.UndefOr[PropertyValue[NodeSingular, FontWeight]] = js.undefined
   
-  var ghost: js.UndefOr[PropertyValueNode[yes | no]] = js.native
+  var ghost: js.UndefOr[PropertyValueNode[yes | no]] = js.undefined
   
-  var `ghost-offset-x`: js.UndefOr[PropertyValueNode[Double]] = js.native
+  var `ghost-offset-x`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
   
-  var `ghost-offset-y`: js.UndefOr[PropertyValueNode[Double]] = js.native
+  var `ghost-offset-y`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
   
-  var `ghost-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.native
+  var `ghost-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
   
   /**
     * The height of the node’s body.
     * This property can take on the special value label
     * so the height is automatically based on the node’s label.
     */
-  var height: js.UndefOr[PropertyValueNode[Double | String]] = js.native
+  var height: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
-  var label: js.UndefOr[PropertyValue[NodeSingular, String]] = js.native
+  var label: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
   
-  var `min-zoomed-font-size`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `min-zoomed-font-size`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var opacity: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var opacity: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `overlay-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.native
+  var `overlay-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
   
-  var `overlay-opacity`: js.UndefOr[PropertyValueEdge[Double]] = js.native
+  var `overlay-opacity`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
-  var `overlay-padding`: js.UndefOr[PropertyValueEdge[Double | String]] = js.native
+  var `overlay-padding`: js.UndefOr[PropertyValueEdge[Double | String]] = js.undefined
   
-  var `padding-bottom`: js.UndefOr[PropertyValueNode[String]] = js.native
+  var `padding-bottom`: js.UndefOr[PropertyValueNode[String]] = js.undefined
   
-  var `padding-left`: js.UndefOr[PropertyValueNode[String]] = js.native
+  var `padding-left`: js.UndefOr[PropertyValueNode[String]] = js.undefined
   
-  var `padding-right`: js.UndefOr[PropertyValueNode[String]] = js.native
+  var `padding-right`: js.UndefOr[PropertyValueNode[String]] = js.undefined
   
-  var `padding-top`: js.UndefOr[PropertyValueNode[String]] = js.native
+  var `padding-top`: js.UndefOr[PropertyValueNode[String]] = js.undefined
   
-  var `pie-i-background-color`: js.UndefOr[PropertyValueNode[Colour]] = js.native
+  var `pie-i-background-color`: js.UndefOr[PropertyValueNode[Colour]] = js.undefined
   
-  var `pie-i-background-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.native
+  var `pie-i-background-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
   
-  var `pie-i-background-size`: js.UndefOr[PropertyValueNode[Double]] = js.native
+  var `pie-i-background-size`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
   
-  var `pie-size`: js.UndefOr[PropertyValueNode[String]] = js.native
+  var `pie-size`: js.UndefOr[PropertyValueNode[String]] = js.undefined
   
   /**
     * The shape of the node’s body.
     */
-  var shape: js.UndefOr[PropertyValueNode[NodeShape]] = js.native
+  var shape: js.UndefOr[PropertyValueNode[NodeShape]] = js.undefined
   
-  var `shape-polygon-points`: js.UndefOr[PropertyValueNode[ShapePolygonPoints]] = js.native
+  var `shape-polygon-points`: js.UndefOr[PropertyValueNode[ShapePolygonPoints]] = js.undefined
   
-  var `source-label`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.native
+  var `source-label`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
   
-  var `source-text-margin-x`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `source-text-margin-x`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `source-text-margin-y`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `source-text-margin-y`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `source-text-offset`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `source-text-offset`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `source-text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `source-text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `target-label`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.native
+  var `target-label`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
   
-  var `target-text-margin-x`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `target-text-margin-x`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `target-text-margin-y`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `target-text-margin-y`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `target-text-offset`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `target-text-offset`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `target-text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `target-text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `text-background-color`: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.native
+  var `text-background-color`: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.undefined
   
-  var `text-background-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `text-background-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `text-background-padding`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.native
+  var `text-background-padding`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
   
-  var `text-background-shape`: js.UndefOr[PropertyValue[NodeSingular, rectangle | roundrectangle]] = js.native
+  var `text-background-shape`: js.UndefOr[PropertyValue[NodeSingular, rectangle | roundrectangle]] = js.undefined
   
-  var `text-border-color`: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.native
+  var `text-border-color`: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.undefined
   
-  var `text-border-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `text-border-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `text-border-style`: js.UndefOr[PropertyValue[NodeSingular, LineStyle]] = js.native
+  var `text-border-style`: js.UndefOr[PropertyValue[NodeSingular, LineStyle]] = js.undefined
   
-  var `text-border-width`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `text-border-width`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `text-events`: js.UndefOr[PropertyValue[NodeSingular, yes | no]] = js.native
+  var `text-events`: js.UndefOr[PropertyValue[NodeSingular, yes | no]] = js.undefined
   
-  var `text-halign`: js.UndefOr[PropertyValue[NodeSingular, left | center | right]] = js.native
+  var `text-halign`: js.UndefOr[PropertyValue[NodeSingular, left | center | right]] = js.undefined
   
-  var `text-margin-x`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `text-margin-x`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `text-margin-y`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `text-margin-y`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `text-max-width`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.native
+  var `text-max-width`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
   
-  var `text-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `text-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `text-outline-color`: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.native
+  var `text-outline-color`: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.undefined
   
-  var `text-outline-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `text-outline-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `text-outline-width`: js.UndefOr[PropertyValue[NodeSingular, Double | String]] = js.native
+  var `text-outline-width`: js.UndefOr[PropertyValue[NodeSingular, Double | String]] = js.undefined
   
-  var `text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `text-shadow-blur`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `text-shadow-blur`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `text-shadow-color`: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.native
+  var `text-shadow-color`: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.undefined
   
-  var `text-shadow-offset-x`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `text-shadow-offset-x`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `text-shadow-offset-y`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `text-shadow-offset-y`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `text-shadow-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `text-shadow-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `text-transform`: js.UndefOr[PropertyValue[NodeSingular, TextTranformation]] = js.native
+  var `text-transform`: js.UndefOr[PropertyValue[NodeSingular, TextTranformation]] = js.undefined
   
-  var `text-valign`: js.UndefOr[PropertyValue[NodeSingular, top | center | bottom]] = js.native
+  var `text-valign`: js.UndefOr[PropertyValue[NodeSingular, top | center | bottom]] = js.undefined
   
-  var `text-wrap`: js.UndefOr[PropertyValue[NodeSingular, none | wrap | ellipsis]] = js.native
+  var `text-wrap`: js.UndefOr[PropertyValue[NodeSingular, none | wrap | ellipsis]] = js.undefined
   
-  var `transition-delay`: js.UndefOr[Double] = js.native
+  var `transition-delay`: js.UndefOr[Double] = js.undefined
   
-  var `transition-duration`: js.UndefOr[Double] = js.native
+  var `transition-duration`: js.UndefOr[Double] = js.undefined
   
-  var `transition-property`: js.UndefOr[String] = js.native
+  var `transition-property`: js.UndefOr[String] = js.undefined
   
-  var `transition-timing-function`: js.UndefOr[TransitionTimingFunction] = js.native
+  var `transition-timing-function`: js.UndefOr[TransitionTimingFunction] = js.undefined
   
-  var visibility: js.UndefOr[PropertyValue[NodeSingular, hidden | visible]] = js.native
+  var visibility: js.UndefOr[PropertyValue[NodeSingular, hidden | visible]] = js.undefined
   
   /**
     * The width of the node’s body.
     * This property can take on the special value label
     * so the width is automatically based on the node’s label.
     */
-  var width: js.UndefOr[PropertyValueNode[Double | String]] = js.native
+  var width: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
-  var `z-index`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.native
+  var `z-index`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
 }
 object Node {
   

@@ -5,53 +5,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait heatmapStatisticsHeatmapStatisticsParams extends Object {
+trait heatmapStatisticsHeatmapStatisticsParams
+  extends StObject
+     with Object {
   
   /**
     * The area of influence for each point as a radius in pixels from the point.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#heatmapStatistics)
     */
-  var blurRadius: js.UndefOr[Double] = js.native
+  var blurRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * A subset of features for which to calculate the statistics.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#heatmapStatistics)
     */
-  var features: js.UndefOr[js.Array[Graphic]] = js.native
+  var features: js.UndefOr[js.Array[Graphic]] = js.undefined
   
   /**
     * The name of the numeric field for which the statistics will be generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#heatmapStatistics)
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * The layer from which to generate statistics for the pixel intensity values and a given `field` if provided.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#heatmapStatistics)
     */
-  var layer: FeatureLayer | CSVLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | CSVLayer | GeoJSONLayer
   
   /**
     * Allows for cancelable requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#heatmapStatistics)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * A [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance used to calculate pixel intensity values based on the features in the current view.
     *
     * [Read more...](global.html)
     */
-  var view: MapView = js.native
+  var view: MapView
 }
 object heatmapStatisticsHeatmapStatisticsParams {
   

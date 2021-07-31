@@ -2,16 +2,14 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTCEventBehavior extends StObject {
   
   @JSName("MSHTML.HTCEventBehavior_typekey")
-  var MSHTMLDotHTCEventBehavior_typekey: HTCEventBehavior = js.native
+  var MSHTMLDotHTCEventBehavior_typekey: HTCEventBehavior
   
-  def fire(pVar: IHTMLEventObj): Unit = js.native
+  def fire(pVar: IHTMLEventObj): Unit
 }
 object HTCEventBehavior {
   

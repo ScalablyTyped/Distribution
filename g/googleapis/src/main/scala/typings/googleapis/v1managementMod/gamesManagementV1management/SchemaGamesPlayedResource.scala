@@ -2,27 +2,25 @@ package typings.googleapis.v1managementMod.gamesManagementV1management
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for metadata about a player playing a game with the
   * currently authenticated user.
   */
-@js.native
 trait SchemaGamesPlayedResource extends StObject {
   
   /**
     * True if the player was auto-matched with the currently authenticated
     * user.
     */
-  var autoMatched: js.UndefOr[Boolean] = js.native
+  var autoMatched: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The last time the player played the game in milliseconds since the epoch
     * in UTC.
     */
-  var timeMillis: js.UndefOr[String] = js.native
+  var timeMillis: js.UndefOr[String] = js.undefined
 }
 object SchemaGamesPlayedResource {
   

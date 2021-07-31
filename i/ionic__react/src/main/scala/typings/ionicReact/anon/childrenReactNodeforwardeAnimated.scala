@@ -14,54 +14,52 @@ import typings.std.CustomEvent
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  children :react.react.ReactNode,   forwardedRef :react.react.RefObject<@ionic/core.@ionic/core/dist/types/components.<global>.HTMLIonPopoverElement> | undefined} & std.Pick<@ionic/core.@ionic/core.PopoverOptions<@ionic/core.@ionic/core.ComponentRef>, 'animated' | 'mode' | 'id' | 'translucent' | 'cssClass' | 'backdropDismiss' | 'keyboardClose' | 'enterAnimation' | 'leaveAnimation' | 'showBackdrop' | 'delegate' | 'event'> & @ionic/react.@ionic/react/dist/types/components/createOverlayComponent.ReactOverlayProps & react.react.RefAttributes<@ionic/core.@ionic/core/dist/types/components.<global>.HTMLIonPopoverElement> */
-@js.native
 trait childrenReactNodeforwardeAnimated extends StObject {
   
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
-  var backdropDismiss: js.UndefOr[Boolean] = js.native
+  var backdropDismiss: js.UndefOr[Boolean] = js.undefined
   
-  var children: ReactNode with js.UndefOr[ReactNode] = js.native
+  var children: ReactNode & js.UndefOr[ReactNode]
   
-  var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+  var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var delegate: js.UndefOr[FrameworkDelegate] = js.native
+  var delegate: js.UndefOr[FrameworkDelegate] = js.undefined
   
-  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
-  var event: js.UndefOr[Event] = js.native
+  var event: js.UndefOr[Event] = js.undefined
   
-  var forwardedRef: js.UndefOr[RefObject[HTMLIonPopoverElement]] = js.native
+  var forwardedRef: js.UndefOr[RefObject[HTMLIonPopoverElement]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   
-  var key: js.UndefOr[Key | Null] = js.native
+  var key: js.UndefOr[Key | Null] = js.undefined
   
-  var keyboardClose: js.UndefOr[Boolean] = js.native
+  var keyboardClose: js.UndefOr[Boolean] = js.undefined
   
-  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
-  var mode: js.UndefOr[Mode] = js.native
+  var mode: js.UndefOr[Mode] = js.undefined
   
-  var onDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
-  var onDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
-  var onWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
-  var onWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
-  var ref: js.UndefOr[Ref[HTMLIonPopoverElement]] = js.native
+  var ref: js.UndefOr[Ref[HTMLIonPopoverElement]] = js.undefined
   
-  var showBackdrop: js.UndefOr[Boolean] = js.native
+  var showBackdrop: js.UndefOr[Boolean] = js.undefined
   
-  var translucent: js.UndefOr[Boolean] = js.native
+  var translucent: js.UndefOr[Boolean] = js.undefined
 }
 object childrenReactNodeforwardeAnimated {
   
@@ -87,7 +85,7 @@ object childrenReactNodeforwardeAnimated {
     def setBackdropDismissUndefined: Self = StObject.set(x, "backdropDismiss", js.undefined)
     
     @scala.inline
-    def setChildren(value: ReactNode with js.UndefOr[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    def setChildren(value: ReactNode & js.UndefOr[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
@@ -162,25 +160,25 @@ object childrenReactNodeforwardeAnimated {
     def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setOnDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onDidDismiss", js.Any.fromFunction1(value))
+    def setOnDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onDidDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDidDismissUndefined: Self = StObject.set(x, "onDidDismiss", js.undefined)
     
     @scala.inline
-    def setOnDidPresent(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onDidPresent", js.Any.fromFunction1(value))
+    def setOnDidPresent(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onDidPresent", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDidPresentUndefined: Self = StObject.set(x, "onDidPresent", js.undefined)
     
     @scala.inline
-    def setOnWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onWillDismiss", js.Any.fromFunction1(value))
+    def setOnWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onWillDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnWillDismissUndefined: Self = StObject.set(x, "onWillDismiss", js.undefined)
     
     @scala.inline
-    def setOnWillPresent(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onWillPresent", js.Any.fromFunction1(value))
+    def setOnWillPresent(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onWillPresent", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnWillPresentUndefined: Self = StObject.set(x, "onWillPresent", js.undefined)

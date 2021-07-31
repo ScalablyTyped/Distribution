@@ -2,32 +2,30 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MongoCountPreferences extends StObject {
   
   /**
     * An index name hint for the query.
     */
-  var hint: js.UndefOr[String] = js.native
+  var hint: js.UndefOr[String] = js.undefined
   
   /**
     * The limit of documents to count.
     */
-  var limit: js.UndefOr[scala.Double] = js.native
+  var limit: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * The preferred read preference (ReadPreference.PRIMARY, ReadPreference.PRIMARY_PREFERRED,
     * ReadPreference.SECONDARY, ReadPreference.SECONDARY_PREFERRED, ReadPreference.NEAREST).
     */
-  var readPreference: js.UndefOr[ReadPreference | String] = js.native
+  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
   
   /**
     * The number of documents to skip for the count.
     */
-  var skip: js.UndefOr[Boolean] = js.native
+  var skip: js.UndefOr[Boolean] = js.undefined
 }
 object MongoCountPreferences {
   

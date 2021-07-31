@@ -2,13 +2,11 @@ package typings.googleapis.tpuV1Mod.tpuV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSchedulingConfig extends StObject {
   
-  var preemptible: js.UndefOr[Boolean] = js.native
+  var preemptible: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaSchedulingConfig {
   

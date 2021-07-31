@@ -9,14 +9,12 @@ import typings.chromeApps.chrome.storage.StorageChange
 import typings.chromeApps.chrome.storage.SyncStorageArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofstorage extends StObject {
   
   /** Items in the local storage area are local to each machine. */
-  val local: LocalStorageArea = js.native
+  val local: LocalStorageArea
   
   /**
     * Items in the managed storage area are set by the domain administrator,
@@ -24,15 +22,15 @@ trait Typeofstorage extends StObject {
     * results in an error.
     * @since Chrome 33.
     */
-  val managed: ManagedStorageArea = js.native
+  val managed: ManagedStorageArea
   
   /** Fired when one or more items change. */
   val onChanged: Event[
     js.Function2[/* changes */ StringDictionary[StorageChange], /* areaName */ StorageAreas, Unit]
-  ] = js.native
+  ]
   
   /** Items in the sync storage area are synced using Chrome Sync. */
-  val sync: SyncStorageArea = js.native
+  val sync: SyncStorageArea
 }
 object Typeofstorage {
   

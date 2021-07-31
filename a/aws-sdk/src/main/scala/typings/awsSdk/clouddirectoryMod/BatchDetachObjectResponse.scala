@@ -2,16 +2,14 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDetachObjectResponse extends StObject {
   
   /**
     * The ObjectIdentifier of the detached object.
     */
-  var detachedObjectIdentifier: js.UndefOr[ObjectIdentifier] = js.native
+  var detachedObjectIdentifier: js.UndefOr[ObjectIdentifier] = js.undefined
 }
 object BatchDetachObjectResponse {
   

@@ -2,10 +2,8 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgDoughnutChartMethods extends StObject {
   
   /**
@@ -13,53 +11,53 @@ trait IgDoughnutChartMethods extends StObject {
     *
     * @param seriesObj The series object to be added.
     */
-  def addSeries(seriesObj: js.Object): Unit = js.native
+  def addSeries(seriesObj: js.Object): Unit
   
   /**
     * Destroys the widget.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Returns information about how the doughnut chart is rendered.
     */
-  def exportVisualData(): js.Object = js.native
+  def exportVisualData(): js.Object
   
   /**
     * Causes all of the series that have pending changes e.g. by changed property values to be rendered immediately.
     */
-  def flush(): Unit = js.native
+  def flush(): Unit
   
   /**
     * Returns the center of the doughnut chart.
     */
-  def getCenterCoordinates(): js.Object = js.native
+  def getCenterCoordinates(): js.Object
   
   /**
     * Returns data source of the series.
     *
     * @param series Optional. The series name. If not provided an array of series data sources is returned.
     */
-  def getData(series: String): js.Object = js.native
+  def getData(series: String): js.Object
   
   /**
     * Returns the radius of the chart's hole.
     */
-  def getHoleRadius(): Double = js.native
+  def getHoleRadius(): Double
   
   /**
     * Removes the specified series from the doughnut chart.
     *
     * @param seriesObj The series object identifying the series to be removed.
     */
-  def removeSeries(seriesObj: js.Object): Unit = js.native
+  def removeSeries(seriesObj: js.Object): Unit
   
   /**
     * Updates the series with the specified name with the specified new property values.
     *
     * @param value The series object identifying the series to be updated.
     */
-  def updateSeries(value: js.Object): Unit = js.native
+  def updateSeries(value: js.Object): Unit
 }
 object IgDoughnutChartMethods {
   

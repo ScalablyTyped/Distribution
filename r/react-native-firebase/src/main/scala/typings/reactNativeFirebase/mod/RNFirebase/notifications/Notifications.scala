@@ -2,54 +2,52 @@ package typings.reactNativeFirebase.mod.RNFirebase.notifications
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notifications extends StObject {
   
-  var android: AndroidNotifications = js.native
+  var android: AndroidNotifications
   
   /**
     * Cancels all notifications
     */
-  def cancelAllNotifications(): Unit = js.native
+  def cancelAllNotifications(): Unit
   
   /**
     * Cancels a notification by ID
     */
-  def cancelNotification(notificationId: String): Unit = js.native
+  def cancelNotification(notificationId: String): Unit
   
-  def displayNotification(notification: Notification): js.Promise[Unit] = js.native
+  def displayNotification(notification: Notification): js.Promise[Unit]
   
   /**
     * Returns the current badge number on the app icon.
     */
-  def getBadge(): js.Promise[Double] = js.native
+  def getBadge(): js.Promise[Double]
   
-  def getInitialNotification(): js.Promise[NotificationOpen] = js.native
+  def getInitialNotification(): js.Promise[NotificationOpen]
   
-  def getScheduledNotifications(): js.Promise[js.Array[Notification]] = js.native
+  def getScheduledNotifications(): js.Promise[js.Array[Notification]]
   
-  def onNotification(listener: js.Function1[/* notification */ Notification, _]): js.Function0[_] = js.native
+  def onNotification(listener: js.Function1[/* notification */ Notification, js.Any]): js.Function0[js.Any]
   
-  def onNotificationDisplayed(listener: js.Function1[/* notification */ Notification, _]): js.Function0[_] = js.native
+  def onNotificationDisplayed(listener: js.Function1[/* notification */ Notification, js.Any]): js.Function0[js.Any]
   
-  def onNotificationOpened(listener: js.Function1[/* notificationOpen */ NotificationOpen, _]): js.Function0[_] = js.native
+  def onNotificationOpened(listener: js.Function1[/* notificationOpen */ NotificationOpen, js.Any]): js.Function0[js.Any]
   
-  def removeAllDeliveredNotifications(): Unit = js.native
+  def removeAllDeliveredNotifications(): Unit
   
-  def removeDeliveredNotification(notificationId: String): Unit = js.native
+  def removeDeliveredNotification(notificationId: String): Unit
   
   /**
     * Schedule a local notification to be shown on the device.
     */
-  def scheduleNotification(notification: Notification, schedule: Schedule): js.Any = js.native
+  def scheduleNotification(notification: Notification, schedule: Schedule): js.Any
   
   /**
     * Sets the badge number on the iOS app icon.
     */
-  def setBadge(badge: Double): Unit = js.native
+  def setBadge(badge: Double): Unit
 }
 object Notifications {
   
@@ -62,9 +60,9 @@ object Notifications {
     getBadge: () => js.Promise[Double],
     getInitialNotification: () => js.Promise[NotificationOpen],
     getScheduledNotifications: () => js.Promise[js.Array[Notification]],
-    onNotification: js.Function1[/* notification */ Notification, _] => js.Function0[_],
-    onNotificationDisplayed: js.Function1[/* notification */ Notification, _] => js.Function0[_],
-    onNotificationOpened: js.Function1[/* notificationOpen */ NotificationOpen, _] => js.Function0[_],
+    onNotification: js.Function1[/* notification */ Notification, js.Any] => js.Function0[js.Any],
+    onNotificationDisplayed: js.Function1[/* notification */ Notification, js.Any] => js.Function0[js.Any],
+    onNotificationOpened: js.Function1[/* notificationOpen */ NotificationOpen, js.Any] => js.Function0[js.Any],
     removeAllDeliveredNotifications: () => Unit,
     removeDeliveredNotification: String => Unit,
     scheduleNotification: (Notification, Schedule) => js.Any,
@@ -99,13 +97,13 @@ object Notifications {
     def setGetScheduledNotifications(value: () => js.Promise[js.Array[Notification]]): Self = StObject.set(x, "getScheduledNotifications", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnNotification(value: js.Function1[/* notification */ Notification, _] => js.Function0[_]): Self = StObject.set(x, "onNotification", js.Any.fromFunction1(value))
+    def setOnNotification(value: js.Function1[/* notification */ Notification, js.Any] => js.Function0[js.Any]): Self = StObject.set(x, "onNotification", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnNotificationDisplayed(value: js.Function1[/* notification */ Notification, _] => js.Function0[_]): Self = StObject.set(x, "onNotificationDisplayed", js.Any.fromFunction1(value))
+    def setOnNotificationDisplayed(value: js.Function1[/* notification */ Notification, js.Any] => js.Function0[js.Any]): Self = StObject.set(x, "onNotificationDisplayed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnNotificationOpened(value: js.Function1[/* notificationOpen */ NotificationOpen, _] => js.Function0[_]): Self = StObject.set(x, "onNotificationOpened", js.Any.fromFunction1(value))
+    def setOnNotificationOpened(value: js.Function1[/* notificationOpen */ NotificationOpen, js.Any] => js.Function0[js.Any]): Self = StObject.set(x, "onNotificationOpened", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRemoveAllDeliveredNotifications(value: () => Unit): Self = StObject.set(x, "removeAllDeliveredNotifications", js.Any.fromFunction0(value))

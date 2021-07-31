@@ -9,27 +9,25 @@ import typings.tern.anon.QueryRenameQuery
 import typings.tern.anon.Result
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryRegistry extends StObject {
   
-  var completions: Result = js.native
+  var completions: Result
   
-  var definition: QueryDefinitionQuery = js.native
+  var definition: QueryDefinitionQuery
   
-  var documentation: QueryDocumentationQuery = js.native
+  var documentation: QueryDocumentationQuery
   
-  var files: QueryFilesQuery = js.native
+  var files: QueryFilesQuery
   
-  var properties: QueryPropertiesQuery = js.native
+  var properties: QueryPropertiesQuery
   
-  var refs: QueryRefsQuery = js.native
+  var refs: QueryRefsQuery
   
-  var rename: QueryRenameQuery = js.native
+  var rename: QueryRenameQuery
   
-  var `type`: typings.tern.anon.QueryResult = js.native
+  var `type`: typings.tern.anon.QueryResult
 }
 object QueryRegistry {
   

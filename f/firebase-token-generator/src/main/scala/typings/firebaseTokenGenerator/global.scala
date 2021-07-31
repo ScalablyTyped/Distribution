@@ -2,7 +2,6 @@ package typings.firebaseTokenGenerator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -10,7 +9,8 @@ object global {
   @JSGlobal("FirebaseTokenGenerator")
   @js.native
   class FirebaseTokenGenerator protected ()
-    extends typings.firebaseTokenGenerator.FirebaseTokenGenerator {
+    extends StObject
+       with typings.firebaseTokenGenerator.FirebaseTokenGenerator {
     /**
       * Builds a new object that can generate Firebase authentication tokens.
       * @constructor

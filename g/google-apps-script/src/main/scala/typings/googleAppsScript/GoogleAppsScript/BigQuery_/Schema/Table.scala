@@ -2,67 +2,65 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Table extends StObject {
   
-  var clustering: js.UndefOr[Clustering] = js.native
+  var clustering: js.UndefOr[Clustering] = js.undefined
   
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var encryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.native
+  var encryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.undefined
   
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
-  var expirationTime: js.UndefOr[String] = js.native
+  var expirationTime: js.UndefOr[String] = js.undefined
   
-  var externalDataConfiguration: js.UndefOr[ExternalDataConfiguration] = js.native
+  var externalDataConfiguration: js.UndefOr[ExternalDataConfiguration] = js.undefined
   
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var labels: js.UndefOr[js.Object] = js.native
+  var labels: js.UndefOr[js.Object] = js.undefined
   
-  var lastModifiedTime: js.UndefOr[String] = js.native
+  var lastModifiedTime: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var materializedView: js.UndefOr[MaterializedViewDefinition] = js.native
+  var materializedView: js.UndefOr[MaterializedViewDefinition] = js.undefined
   
-  var model: js.UndefOr[ModelDefinition] = js.native
+  var model: js.UndefOr[ModelDefinition] = js.undefined
   
-  var numBytes: js.UndefOr[String] = js.native
+  var numBytes: js.UndefOr[String] = js.undefined
   
-  var numLongTermBytes: js.UndefOr[String] = js.native
+  var numLongTermBytes: js.UndefOr[String] = js.undefined
   
-  var numPhysicalBytes: js.UndefOr[String] = js.native
+  var numPhysicalBytes: js.UndefOr[String] = js.undefined
   
-  var numRows: js.UndefOr[String] = js.native
+  var numRows: js.UndefOr[String] = js.undefined
   
-  var rangePartitioning: js.UndefOr[RangePartitioning] = js.native
+  var rangePartitioning: js.UndefOr[RangePartitioning] = js.undefined
   
-  var requirePartitionFilter: js.UndefOr[Boolean] = js.native
+  var requirePartitionFilter: js.UndefOr[Boolean] = js.undefined
   
-  var schema: js.UndefOr[TableSchema] = js.native
+  var schema: js.UndefOr[TableSchema] = js.undefined
   
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
-  var streamingBuffer: js.UndefOr[Streamingbuffer] = js.native
+  var streamingBuffer: js.UndefOr[Streamingbuffer] = js.undefined
   
-  var tableReference: js.UndefOr[TableReference] = js.native
+  var tableReference: js.UndefOr[TableReference] = js.undefined
   
-  var timePartitioning: js.UndefOr[TimePartitioning] = js.native
+  var timePartitioning: js.UndefOr[TimePartitioning] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var view: js.UndefOr[ViewDefinition] = js.native
+  var view: js.UndefOr[ViewDefinition] = js.undefined
 }
 object Table {
   

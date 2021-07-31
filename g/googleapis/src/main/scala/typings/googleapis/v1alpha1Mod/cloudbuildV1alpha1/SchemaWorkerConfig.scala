@@ -2,14 +2,12 @@ package typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * WorkerConfig defines the configuration to be used for a creating workers in
   * the pool.
   */
-@js.native
 trait SchemaWorkerConfig extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaWorkerConfig extends StObject {
     * build time. For more information see
     * https://cloud.google.com/cloud-build/docs/api/reference/rest/v1/projects.builds#buildoptions
     */
-  var diskSizeGb: js.UndefOr[String] = js.native
+  var diskSizeGb: js.UndefOr[String] = js.undefined
   
   /**
     * Machine Type of the worker, such as n1-standard-1. See
@@ -32,21 +30,21 @@ trait SchemaWorkerConfig extends StObject {
     * will be created on demand at build time. For more information see
     * https://cloud.google.com/cloud-build/docs/speeding-up-builds#using_custom_virtual_machine_sizes
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * The network definition used to create the worker. If this section is left
     * empty, the workers will be created in WorkerPool.project_id on the
     * default network.
     */
-  var network: js.UndefOr[SchemaNetwork] = js.native
+  var network: js.UndefOr[SchemaNetwork] = js.undefined
   
   /**
     * The tag applied to the worker, and the same tag used by the firewall
     * rule. It is used to identify the Cloud Build workers among other VMs. The
     * default value for tag is `worker`.
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object SchemaWorkerConfig {
   

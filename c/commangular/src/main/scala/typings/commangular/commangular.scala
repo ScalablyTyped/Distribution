@@ -4,7 +4,6 @@ import typings.angular.mod.IPromise
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commangular {
@@ -69,7 +68,6 @@ object commangular {
     * can have multiple command config blocks to separate functional parts of your application.
     * see http://commangular.org/docs/#using-the-provider
     */
-  @js.native
   trait ICommAngularProvider extends StObject {
     
     /**
@@ -77,28 +75,28 @@ object commangular {
       * of flows inside a command group and nesting them how you perfer.
       * see http://commangular.org/docs/#building-command-flows
       */
-    def asFlow(): ICommAngularDescriptor = js.native
+    def asFlow(): ICommAngularDescriptor
     
     /**
       * Used along with mapTo function. Maps commands to be executed parallel
       * see http://commangular.org/docs/#building-parallel-commands
       */
-    def asParallel(): ICommAngularDescriptor = js.native
+    def asParallel(): ICommAngularDescriptor
     
     /**
       * Used along with mapTo function. Creates a sequence of commands that
       * execute after one and other
       * see http://commangular.org/docs/#building-command-sequences
       */
-    def asSequence(): ICommAngularDescriptor = js.native
+    def asSequence(): ICommAngularDescriptor
     
-    def findCommand(eventName: String): ICommAngularDescriptor = js.native
+    def findCommand(eventName: String): ICommAngularDescriptor
     
     /**
       * This function lets you map a even name to a command sequence
       * @param eventName An event that will be watched by commangular
       */
-    def mapTo(eventName: String): ICommAngularDescriptor = js.native
+    def mapTo(eventName: String): ICommAngularDescriptor
   }
   object ICommAngularProvider {
     
@@ -147,8 +145,8 @@ object commangular {
       * @param eventName Name of the even that will trigger a command sequence
       * @param data Data of any type that will be passed to the command.
       */
-    def dispatch(eventName: String): IPromise[_] = js.native
-    def dispatch(eventName: String, data: js.Any): IPromise[_] = js.native
+    def dispatch(eventName: String): IPromise[js.Any] = js.native
+    def dispatch(eventName: String, data: js.Any): IPromise[js.Any] = js.native
   }
   
   ///////////////////////////////////////////////////////////////////////////
@@ -246,14 +244,13 @@ object commangular {
     * The command function/object
     * see http://commangular.org/docs/#commangular-namespace
     */
-  @js.native
   trait ICommand extends StObject {
     
     /**
       * This function is what gets called when the command executes.
       * It can take parameters in as injected by angular
       */
-    def execute(): js.Any = js.native
+    def execute(): js.Any
   }
   object ICommand {
     
@@ -271,19 +268,18 @@ object commangular {
     }
   }
   
-  @js.native
   trait ICommandCall extends StObject {
     
     /**
       * Name of the command that needs to
       * execute
       */
-    var command: String = js.native
+    var command: String
     
     /**
       * Data that needs to be passed to the command
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
   }
   object ICommandCall {
     
@@ -311,7 +307,6 @@ object commangular {
     * Command creation configuration
     * see http://commangular.org/docs/#the-command-config-object
     */
-  @js.native
   trait ICommandConfig extends StObject {
     
     /**
@@ -319,7 +314,7 @@ object commangular {
       * key passed in 'resultKey'. It has to be a string. It means that after the execution of this
       * commands you will be able to inject on the next command using that key and the result of the command will be injected.
       */
-    var resultKey: String = js.native
+    var resultKey: String
   }
   object ICommandConfig {
     
@@ -341,31 +336,30 @@ object commangular {
     * Object type expected to be passed into the callback function
     * of the dispatch() function
     */
-  @js.native
   trait ICommandInfo extends StObject {
     
     /**
       * Indicates if the command execution was cancelled.
       */
-    def canceled(): Boolean = js.native
+    def canceled(): Boolean
     
     /**
       * Indicates if the command was executed????
       */
-    def commandExecuted(): Boolean = js.native
+    def commandExecuted(): Boolean
     
     /**
       * The data that was passed into the command
       * @param key The property name that is in the object that was passed
       */
-    def dataPassed(key: String): js.Any = js.native
+    def dataPassed(key: String): js.Any
     
     /**
       * The data that was returned by the command
       * @param key The result key that was defined in the command. If no result
       *         was defined use 'lastResult' as the key
       */
-    def resultKey(key: String): js.Any = js.native
+    def resultKey(key: String): js.Any
   }
   object ICommandInfo {
     
@@ -402,13 +396,12 @@ object commangular {
     * This must be extended to add custom result keys
     * see http://commangular.org/docs/#returning-result-from-commands
     */
-  @js.native
   trait ICommandResult extends StObject {
     
     /**
       * By defualt the result of the command will be found in this property
       */
-    var lastResult: js.Any = js.native
+    var lastResult: js.Any
   }
   object ICommandResult {
     
@@ -426,14 +419,15 @@ object commangular {
     }
   }
   
-  @js.native
-  trait IResultCommand extends ICommand {
+  trait IResultCommand
+    extends StObject
+       with ICommand {
     
     /**
       * Is executed when the executed method ends with an error. Can receive the error throw by the execute method.
       * @param error The error that occured during execution
       */
-    def onError(error: Error): Unit = js.native
+    def onError(error: Error): Unit
     
     /**
       * Is executed after the execute method and the interception chain and can receive
@@ -441,7 +435,7 @@ object commangular {
       *
       * @param result Value/object returned by the execution.
       */
-    def onResult(result: js.Any): Unit = js.native
+    def onResult(result: js.Any): Unit
   }
   object IResultCommand {
     

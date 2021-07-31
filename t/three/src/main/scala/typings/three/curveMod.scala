@@ -3,7 +3,6 @@ package typings.three
 import typings.three.vector2Mod.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object curveMod {
@@ -96,11 +95,14 @@ object curveMod {
   /* static members */
   object Curve {
     
+    @JSImport("three/src/extras/core/Curve", "Curve")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
     	 * @deprecated since r84.
     	 */
-    @JSImport("three/src/extras/core/Curve", "Curve.create")
-    @js.native
-    def create(constructorFunc: js.Function, getPointFunc: js.Function): js.Function = js.native
+    @scala.inline
+    def create(constructorFunc: js.Function, getPointFunc: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(constructorFunc.asInstanceOf[js.Any], getPointFunc.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   }
 }

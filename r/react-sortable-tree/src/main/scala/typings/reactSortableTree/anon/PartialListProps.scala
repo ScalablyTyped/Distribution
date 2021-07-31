@@ -9,105 +9,99 @@ import typings.reactVirtualized.esGridMod.GridCellRangeRenderer
 import typings.reactVirtualized.esGridMod.OverscanIndices
 import typings.reactVirtualized.esGridMod.OverscanIndicesGetter
 import typings.reactVirtualized.esGridMod.OverscanIndicesGetterParams
-import typings.reactVirtualized.esGridMod.ScrollParams
 import typings.reactVirtualized.esGridMod.ScrollbarPresenceParams
 import typings.reactVirtualized.esGridMod.SectionRenderedParams
 import typings.reactVirtualized.esListMod.ListRowProps
 import typings.reactVirtualized.esListMod.ListRowRenderer
 import typings.reactVirtualized.esListMod.RenderedRows
 import typings.reactVirtualized.esScrollSyncMod.OnScrollParams
-import typings.reactVirtualized.mod.Alignment
 import typings.reactVirtualized.mod.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-virtualized.react-virtualized.ListProps> */
-@js.native
 trait PartialListProps extends StObject {
   
-  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.undefined
   
-  var `aria-readonly`: js.UndefOr[Boolean] = js.native
+  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
   
-  var autoContainerWidth: js.UndefOr[Boolean] = js.native
+  var autoContainerWidth: js.UndefOr[Boolean] = js.undefined
   
-  var autoHeight: js.UndefOr[Boolean] = js.native
+  var autoHeight: js.UndefOr[Boolean] = js.undefined
   
-  var autoWidth: js.UndefOr[Boolean] = js.native
+  var autoWidth: js.UndefOr[Boolean] = js.undefined
   
-  var cellRangeRenderer: js.UndefOr[GridCellRangeRenderer] = js.native
+  var cellRangeRenderer: js.UndefOr[GridCellRangeRenderer] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var containerProps: js.UndefOr[js.Object] = js.native
+  var containerProps: js.UndefOr[js.Object] = js.undefined
   
-  var containerRole: js.UndefOr[String] = js.native
+  var containerRole: js.UndefOr[String] = js.undefined
   
-  var containerStyle: js.UndefOr[CSSProperties] = js.native
+  var containerStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var deferredMeasurementCache: js.UndefOr[CellMeasurerCache] = js.native
+  var deferredMeasurementCache: js.UndefOr[CellMeasurerCache] = js.undefined
   
-  var estimatedColumnSize: js.UndefOr[Double] = js.native
+  var estimatedColumnSize: js.UndefOr[Double] = js.undefined
   
-  var estimatedRowSize: js.UndefOr[Double] = js.native
+  var estimatedRowSize: js.UndefOr[Double] = js.undefined
   
-  var getScrollbarSize: js.UndefOr[js.Function0[Double]] = js.native
+  var getScrollbarSize: js.UndefOr[js.Function0[Double]] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var isScrolling: js.UndefOr[Boolean] = js.native
+  var isScrolling: js.UndefOr[Boolean] = js.undefined
   
-  var noContentRenderer: js.UndefOr[js.Function0[ReactNode]] = js.native
+  var noContentRenderer: js.UndefOr[js.Function0[ReactNode]] = js.undefined
   
-  var noRowsRenderer: js.UndefOr[js.Function0[Element]] = js.native
+  var noRowsRenderer: js.UndefOr[js.Function0[Element]] = js.undefined
   
-  var onRowsRendered: js.UndefOr[js.Function1[/* info */ RenderedRows, Unit]] = js.native
+  var onRowsRendered: js.UndefOr[js.Function1[/* info */ RenderedRows, Unit]] = js.undefined
   
-  var onScroll: js.UndefOr[
-    (js.UndefOr[js.Function1[/* params */ ScrollParams, _]]) with (js.UndefOr[js.Function1[/* params */ OnScrollParams, Unit]])
-  ] = js.native
+  var onScroll: js.UndefOr[js.Function1[/* params */ OnScrollParams, Unit]] = js.undefined
   
-  var onScrollbarPresenceChange: js.UndefOr[js.Function1[/* params */ ScrollbarPresenceParams, _]] = js.native
+  var onScrollbarPresenceChange: js.UndefOr[js.Function1[/* params */ ScrollbarPresenceParams, js.Any]] = js.undefined
   
-  var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, _]] = js.native
+  var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, js.Any]] = js.undefined
   
-  var overscanColumnCount: js.UndefOr[Double] = js.native
+  var overscanColumnCount: js.UndefOr[Double] = js.undefined
   
-  var overscanIndicesGetter: js.UndefOr[OverscanIndicesGetter] = js.native
+  var overscanIndicesGetter: js.UndefOr[OverscanIndicesGetter] = js.undefined
   
-  var overscanRowCount: js.UndefOr[Double] = js.native
+  var overscanRowCount: js.UndefOr[Double] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
-  var rowHeight: js.UndefOr[Double | (js.Function1[/* params */ Index, Double])] = js.native
+  var rowHeight: js.UndefOr[Double | (js.Function1[/* info */ Index, Double])] = js.undefined
   
-  var rowRenderer: js.UndefOr[ListRowRenderer] = js.native
+  var rowRenderer: js.UndefOr[ListRowRenderer] = js.undefined
   
-  var scrollLeft: js.UndefOr[Double] = js.native
+  var scrollLeft: js.UndefOr[Double] = js.undefined
   
-  var scrollToAlignment: js.UndefOr[js.UndefOr[Alignment] with js.UndefOr[String]] = js.native
+  var scrollToAlignment: js.UndefOr[String] = js.undefined
   
-  var scrollToColumn: js.UndefOr[Double] = js.native
+  var scrollToColumn: js.UndefOr[Double] = js.undefined
   
-  var scrollToIndex: js.UndefOr[Double] = js.native
+  var scrollToIndex: js.UndefOr[Double] = js.undefined
   
-  var scrollToRow: js.UndefOr[Double] = js.native
+  var scrollToRow: js.UndefOr[Double] = js.undefined
   
-  var scrollTop: js.UndefOr[Double] = js.native
+  var scrollTop: js.UndefOr[Double] = js.undefined
   
-  var scrollingResetTimeInterval: js.UndefOr[Double] = js.native
+  var scrollingResetTimeInterval: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var tabIndex: js.UndefOr[Double | Null] = js.native
+  var tabIndex: js.UndefOr[Double | Null] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PartialListProps {
   
@@ -241,21 +235,19 @@ object PartialListProps {
     def setOnRowsRenderedUndefined: Self = StObject.set(x, "onRowsRendered", js.undefined)
     
     @scala.inline
-    def setOnScroll(
-      value: (js.UndefOr[js.Function1[/* params */ ScrollParams, _]]) with (js.UndefOr[js.Function1[/* params */ OnScrollParams, Unit]])
-    ): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
+    def setOnScroll(value: /* params */ OnScrollParams => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
     @scala.inline
-    def setOnScrollbarPresenceChange(value: /* params */ ScrollbarPresenceParams => _): Self = StObject.set(x, "onScrollbarPresenceChange", js.Any.fromFunction1(value))
+    def setOnScrollbarPresenceChange(value: /* params */ ScrollbarPresenceParams => js.Any): Self = StObject.set(x, "onScrollbarPresenceChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnScrollbarPresenceChangeUndefined: Self = StObject.set(x, "onScrollbarPresenceChange", js.undefined)
     
     @scala.inline
-    def setOnSectionRendered(value: /* params */ SectionRenderedParams => _): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
+    def setOnSectionRendered(value: /* params */ SectionRenderedParams => js.Any): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSectionRenderedUndefined: Self = StObject.set(x, "onSectionRendered", js.undefined)
@@ -291,10 +283,10 @@ object PartialListProps {
     def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
     @scala.inline
-    def setRowHeight(value: Double | (js.Function1[/* params */ Index, Double])): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    def setRowHeight(value: Double | (js.Function1[/* info */ Index, Double])): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeightFunction1(value: /* params */ Index => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
+    def setRowHeightFunction1(value: /* info */ Index => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
@@ -312,7 +304,7 @@ object PartialListProps {
     def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
     
     @scala.inline
-    def setScrollToAlignment(value: js.UndefOr[Alignment] with js.UndefOr[String]): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
+    def setScrollToAlignment(value: String): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setScrollToAlignmentUndefined: Self = StObject.set(x, "scrollToAlignment", js.undefined)

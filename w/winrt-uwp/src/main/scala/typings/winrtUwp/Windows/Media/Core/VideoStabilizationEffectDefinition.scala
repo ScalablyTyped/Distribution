@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Media.Core
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the definition of a video stabilization effect. */
-@js.native
 trait VideoStabilizationEffectDefinition extends StObject {
   
   /** Gets a string containing the activatable class ID of the video stabilization effect definition. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
   
   /** Gets the set of properties for configuring the VideoStabilizationEffectDefinition object. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
 }
 object VideoStabilizationEffectDefinition {
   

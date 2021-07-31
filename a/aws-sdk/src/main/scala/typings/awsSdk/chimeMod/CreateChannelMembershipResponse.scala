@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateChannelMembershipResponse extends StObject {
   
   /**
     * The ARN of the channel.
     */
-  var ChannelArn: js.UndefOr[ChimeArn] = js.native
+  var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The ARN and metadata of the member being added.
     */
-  var Member: js.UndefOr[Identity] = js.native
+  var Member: js.UndefOr[Identity] = js.undefined
 }
 object CreateChannelMembershipResponse {
   

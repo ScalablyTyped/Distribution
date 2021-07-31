@@ -2,16 +2,14 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataRetrievalPolicy extends StObject {
   
   /**
     * The policy rule. Although this is a list type, currently there must be only one rule, which contains a Strategy field and optionally a BytesPerHour field.
     */
-  var Rules: js.UndefOr[DataRetrievalRulesList] = js.native
+  var Rules: js.UndefOr[DataRetrievalRulesList] = js.undefined
 }
 object DataRetrievalPolicy {
   

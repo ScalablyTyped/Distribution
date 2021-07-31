@@ -7,16 +7,18 @@ import typings.awsSdkClientKmsBrowser.typesListKeysInputMod.ListKeysInput
 import typings.awsSdkClientKmsBrowser.typesListKeysOutputMod.ListKeysOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listKeysCommandMod {
   
   @JSImport("@aws-sdk/client-kms-browser/commands/ListKeysCommand", "ListKeysCommand")
   @js.native
-  class ListKeysCommand protected () extends Command[
+  class ListKeysCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           ListKeysInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object listKeysCommandMod {
         ] {
     def this(input: ListKeysInput) = this()
     
+    /* CompleteClass */
+    override val input: ListKeysInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[ListKeysInput, ListKeysOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: KMSResolvedConfiguration
+    ): Handler[ListKeysInput, ListKeysOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: KMSResolvedConfiguration,
+      options: js.Any
     ): Handler[ListKeysInput, ListKeysOutput] = js.native
   }
 }

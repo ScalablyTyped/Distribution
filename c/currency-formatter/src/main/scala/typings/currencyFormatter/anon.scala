@@ -2,27 +2,25 @@ package typings.currencyFormatter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Code extends StObject {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var decimal: js.UndefOr[String] = js.native
+    var decimal: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[String | Neg] = js.native
+    var format: js.UndefOr[String | Neg] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
-    var symbol: js.UndefOr[String] = js.native
+    var symbol: js.UndefOr[String] = js.undefined
     
-    var thousand: js.UndefOr[String] = js.native
+    var thousand: js.UndefOr[String] = js.undefined
   }
   object Code {
     
@@ -79,14 +77,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Neg extends StObject {
     
-    var neg: String = js.native
+    var neg: String
     
-    var pos: String = js.native
+    var pos: String
     
-    var zero: String = js.native
+    var zero: String
   }
   object Neg {
     

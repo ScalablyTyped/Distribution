@@ -2,30 +2,28 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a Team Drive.
   */
-@js.native
 trait SchemaTeamDrive extends StObject {
   
   /**
     * The resource name of the Team Drive. The format is
     * &quot;teamDrives/TEAM_DRIVE_ID&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The root of this Team Drive.
     */
-  var root: js.UndefOr[SchemaDriveItem] = js.native
+  var root: js.UndefOr[SchemaDriveItem] = js.undefined
   
   /**
     * The title of the Team Drive.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaTeamDrive {
   

@@ -3,11 +3,11 @@ package typings.hapiHapi.mod
 import typings.hapiHapi.hapiHapiBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RouteOptions extends CommonRouteProperties {
+trait RouteOptions
+  extends StObject
+     with CommonRouteProperties {
   
   /**
     * Route authentication configuration. Value can be:
@@ -16,7 +16,7 @@ trait RouteOptions extends CommonRouteProperties {
     * an authentication configuration object.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsapp)
     */
-  var auth: js.UndefOr[`false` | String | RouteOptionsAccess] = js.native
+  var auth: js.UndefOr[`false` | String | RouteOptionsAccess] = js.undefined
 }
 object RouteOptions {
   

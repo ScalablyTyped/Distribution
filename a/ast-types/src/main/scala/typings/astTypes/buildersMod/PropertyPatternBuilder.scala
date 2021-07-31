@@ -8,7 +8,6 @@ import typings.astTypes.kindsMod.PatternKind
 import typings.astTypes.namedTypesMod.namedTypes.PropertyPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

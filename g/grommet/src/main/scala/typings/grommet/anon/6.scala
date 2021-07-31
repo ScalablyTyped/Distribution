@@ -3,15 +3,13 @@ package typings.grommet.anon
 import typings.grommet.utilsMod.BackgroundType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `6` extends StObject {
   
-  var background: js.UndefOr[BackgroundType] = js.native
+  var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var border: js.UndefOr[`3`] = js.native
+  var border: js.UndefOr[`3`] = js.undefined
 }
 object `6` {
   

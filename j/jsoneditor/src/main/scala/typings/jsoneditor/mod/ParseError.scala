@@ -3,24 +3,22 @@ package typings.jsoneditor.mod
 import typings.jsoneditor.jsoneditorStrings.error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParseError extends StObject {
   
-  var line: Double = js.native
+  var line: Double
   
-  var message: String = js.native
+  var message: String
   
-  var `type`: error = js.native
+  var `type`: error
 }
 object ParseError {
   
   @scala.inline
-  def apply(line: Double, message: String, `type`: error): ParseError = {
+  def apply(line: Double, message: String): ParseError = {
     val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[ParseError]
   }
   

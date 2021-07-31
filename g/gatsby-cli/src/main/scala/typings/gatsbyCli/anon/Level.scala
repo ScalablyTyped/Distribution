@@ -2,15 +2,13 @@ package typings.gatsbyCli.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Level extends StObject {
   
-  var level: typings.gatsbyCli.structuredErrorsTypesMod.Level = js.native
+  var level: typings.gatsbyCli.structuredErrorsTypesMod.Level
   
-  def text(context: js.Any): String = js.native
+  def text(context: js.Any): String
 }
 object Level {
   

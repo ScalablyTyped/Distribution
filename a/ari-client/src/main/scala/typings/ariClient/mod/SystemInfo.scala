@@ -2,21 +2,19 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemInfo extends StObject {
   
   /**
     * Entity_id.
     */
-  var entity_id: String = js.native
+  var entity_id: String
   
   /**
     * Asterisk version.
     */
-  var version: String = js.native
+  var version: String
 }
 object SystemInfo {
   

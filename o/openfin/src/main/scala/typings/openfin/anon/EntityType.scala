@@ -2,19 +2,17 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityType extends StObject {
   
-  var entityType: String = js.native
+  var entityType: String
   
-  var name: String = js.native
+  var name: String
   
-  var parentFrame: String = js.native
+  var parentFrame: String
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object EntityType {
   

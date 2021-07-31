@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullRequestMergedStateChangedEventMetadata extends StObject {
   
   /**
     * The name of the branch that the pull request is merged into.
     */
-  var destinationReference: js.UndefOr[ReferenceName] = js.native
+  var destinationReference: js.UndefOr[ReferenceName] = js.undefined
   
   /**
     * Information about the merge state change event.
     */
-  var mergeMetadata: js.UndefOr[MergeMetadata] = js.native
+  var mergeMetadata: js.UndefOr[MergeMetadata] = js.undefined
   
   /**
     * The name of the repository where the pull request was created.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }
 object PullRequestMergedStateChangedEventMetadata {
   

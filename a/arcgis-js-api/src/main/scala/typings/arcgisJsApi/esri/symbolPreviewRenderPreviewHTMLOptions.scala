@@ -5,60 +5,60 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait symbolPreviewRenderPreviewHTMLOptions extends Object {
+trait symbolPreviewRenderPreviewHTMLOptions
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether to disable upsampling for raster images.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html#renderPreviewHTML)
     */
-  var disableUpsampling: js.UndefOr[Boolean] = js.native
+  var disableUpsampling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum size of the symbol preview in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html#renderPreviewHTML)
     */
-  var maxSize: js.UndefOr[Double] = js.native
+  var maxSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The parent node to append to the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html#renderPreviewHTML)
     */
-  var node: js.UndefOr[HTMLElement] = js.native
+  var node: js.UndefOr[HTMLElement] = js.undefined
   
   /**
     * The opacity of the layer represented by the `symbol`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html#renderPreviewHTML)
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether to scale the symbol preview.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html#renderPreviewHTML)
     */
-  var scale: js.UndefOr[Boolean] = js.native
+  var scale: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The size of the symbol preview in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html#renderPreviewHTML)
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * For "tall" symbols in portrait view, then the `tall` value should be used here.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html#renderPreviewHTML)
     */
-  var symbolConfig: js.UndefOr[String] = js.native
+  var symbolConfig: js.UndefOr[String] = js.undefined
 }
 object symbolPreviewRenderPreviewHTMLOptions {
   

@@ -2,29 +2,27 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Menu State
   */
-@js.native
 trait IMenuState extends StObject {
   
   //The tree node that the ctx menu is launched for
-  var currentNode: js.Any = js.native
+  var currentNode: js.Any
   
   //the title to display in the context menu dialog
-  var dialogTitle: String = js.native
+  var dialogTitle: String
   
   //this list of menu items to display
-  var menuActions: js.Any = js.native
+  var menuActions: js.Any
   
   //Whether the context menu is being shown or not
-  var showMenu: Boolean = js.native
+  var showMenu: Boolean
   
   //Whether the menu's dialog is being shown or not
-  var showMenuDialog: Boolean = js.native
+  var showMenuDialog: Boolean
 }
 object IMenuState {
   

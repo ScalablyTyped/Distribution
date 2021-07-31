@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AffineTransform extends StObject {
   
   /** The X coordinate scaling element. */
-  var scaleX: js.UndefOr[Double] = js.native
+  var scaleX: js.UndefOr[Double] = js.undefined
   
   /** The Y coordinate scaling element. */
-  var scaleY: js.UndefOr[Double] = js.native
+  var scaleY: js.UndefOr[Double] = js.undefined
   
   /** The X coordinate shearing element. */
-  var shearX: js.UndefOr[Double] = js.native
+  var shearX: js.UndefOr[Double] = js.undefined
   
   /** The Y coordinate shearing element. */
-  var shearY: js.UndefOr[Double] = js.native
+  var shearY: js.UndefOr[Double] = js.undefined
   
   /** The X coordinate translation element. */
-  var translateX: js.UndefOr[Double] = js.native
+  var translateX: js.UndefOr[Double] = js.undefined
   
   /** The Y coordinate translation element. */
-  var translateY: js.UndefOr[Double] = js.native
+  var translateY: js.UndefOr[Double] = js.undefined
   
   /** The units for translate elements. */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
 }
 object AffineTransform {
   

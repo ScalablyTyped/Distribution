@@ -2,40 +2,38 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSystemInstanceRequest extends StObject {
   
-  var definition: DefinitionDocument = js.native
+  var definition: DefinitionDocument
   
   /**
     * The ARN of the IAM role that AWS IoT Things Graph will assume when it executes the flow. This role must have read and write access to AWS Lambda and AWS IoT and any other AWS services that the flow uses when it executes. This value is required if the value of the target parameter is CLOUD.
     */
-  var flowActionsRoleArn: js.UndefOr[RoleArn] = js.native
+  var flowActionsRoleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The name of the Greengrass group where the system instance will be deployed. This value is required if the value of the target parameter is GREENGRASS.
     */
-  var greengrassGroupName: js.UndefOr[GroupName] = js.native
+  var greengrassGroupName: js.UndefOr[GroupName] = js.undefined
   
-  var metricsConfiguration: js.UndefOr[MetricsConfiguration] = js.native
+  var metricsConfiguration: js.UndefOr[MetricsConfiguration] = js.undefined
   
   /**
     * The name of the Amazon Simple Storage Service bucket that will be used to store and deploy the system instance's resource file. This value is required if the value of the target parameter is GREENGRASS.
     */
-  var s3BucketName: js.UndefOr[S3BucketName] = js.native
+  var s3BucketName: js.UndefOr[S3BucketName] = js.undefined
   
   /**
     * Metadata, consisting of key-value pairs, that can be used to categorize your system instances.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The target type of the deployment. Valid values are GREENGRASS and CLOUD.
     */
-  var target: DeploymentTarget = js.native
+  var target: DeploymentTarget
 }
 object CreateSystemInstanceRequest {
   

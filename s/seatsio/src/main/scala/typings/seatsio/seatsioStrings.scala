@@ -5,7 +5,6 @@ import typings.seatsio.Seatsio.StylePreset
 import typings.seatsio.Seatsio.Violations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object seatsioStrings {
@@ -46,12 +45,16 @@ object seatsioStrings {
   def asymmetrical: asymmetrical = "asymmetrical".asInstanceOf[asymmetrical]
   
   @js.native
-  sealed trait balance extends StylePreset
+  sealed trait balance
+    extends StObject
+       with StylePreset
   @scala.inline
   def balance: balance = "balance".asInstanceOf[balance]
   
   @js.native
-  sealed trait bezels extends StylePreset
+  sealed trait bezels
+    extends StObject
+       with StylePreset
   @scala.inline
   def bezels: bezels = "bezels".asInstanceOf[bezels]
   
@@ -61,12 +64,16 @@ object seatsioStrings {
   def bolder: bolder = "bolder".asInstanceOf[bolder]
   
   @js.native
-  sealed trait bubblegum extends StylePreset
+  sealed trait bubblegum
+    extends StObject
+       with StylePreset
   @scala.inline
   def bubblegum: bubblegum = "bubblegum".asInstanceOf[bubblegum]
   
   @js.native
-  sealed trait consecutiveSeats extends Violations
+  sealed trait consecutiveSeats
+    extends StObject
+       with Violations
   @scala.inline
   def consecutiveSeats: consecutiveSeats = "consecutiveSeats".asInstanceOf[consecutiveSeats]
   
@@ -76,7 +83,9 @@ object seatsioStrings {
   def continue: continue = "continue".asInstanceOf[continue]
   
   @js.native
-  sealed trait dark extends ColorScheme
+  sealed trait dark
+    extends StObject
+       with ColorScheme
   @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
   
@@ -91,12 +100,16 @@ object seatsioStrings {
   def fillHighlightedOption: fillHighlightedOption = "fillHighlightedOption".asInstanceOf[fillHighlightedOption]
   
   @js.native
-  sealed trait flathead extends StylePreset
+  sealed trait flathead
+    extends StObject
+       with StylePreset
   @scala.inline
   def flathead: flathead = "flathead".asInstanceOf[flathead]
   
   @js.native
-  sealed trait leaf extends StylePreset
+  sealed trait leaf
+    extends StObject
+       with StylePreset
   @scala.inline
   def leaf: leaf = "leaf".asInstanceOf[leaf]
   
@@ -106,7 +119,9 @@ object seatsioStrings {
   def lenient: lenient = "lenient".asInstanceOf[lenient]
   
   @js.native
-  sealed trait light extends ColorScheme
+  sealed trait light
+    extends StObject
+       with ColorScheme
   @scala.inline
   def light: light = "light".asInstanceOf[light]
   
@@ -151,7 +166,9 @@ object seatsioStrings {
   def minMax: minMax = "minMax".asInstanceOf[minMax]
   
   @js.native
-  sealed trait noOrphanSeats extends Violations
+  sealed trait noOrphanSeats
+    extends StObject
+       with Violations
   @scala.inline
   def noOrphanSeats: noOrphanSeats = "noOrphanSeats".asInstanceOf[noOrphanSeats]
   

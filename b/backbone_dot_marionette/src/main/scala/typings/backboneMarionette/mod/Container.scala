@@ -7,7 +7,6 @@ import typings.underscore.mod.ListIterator
 import typings.underscore.mod.MemoIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone.marionette", "Container")
@@ -86,7 +85,7 @@ class Container[TView] () extends StObject {
   /**
     * Find a view by model.
     */
-  def findByModel(model: Model[_, ModelSetOptions, js.Object]): TView = js.native
+  def findByModel(model: Model[js.Any, ModelSetOptions, js.Object]): TView = js.native
   
   /**
     * Find a view by model cid.
@@ -146,7 +145,7 @@ class Container[TView] () extends StObject {
   /**
     * @see _.pluck
     */
-  def pluck(propertyName: String): js.Array[_] = js.native
+  def pluck(propertyName: String): js.Array[js.Any] = js.native
   
   /**
     * @see _.reduce
@@ -154,11 +153,7 @@ class Container[TView] () extends StObject {
   def reduce[TResult](iterator: MemoIterator[TView, TResult, List[TView]]): TResult = js.native
   def reduce[TResult](iterator: MemoIterator[TView, TResult, List[TView]], memo: TResult): TResult = js.native
   def reduce[TResult](iterator: MemoIterator[TView, TResult, List[TView]], memo: TResult, context: js.Any): TResult = js.native
-  def reduce[TResult](
-    iterator: MemoIterator[TView, TResult, List[TView]],
-    memo: js.UndefOr[scala.Nothing],
-    context: js.Any
-  ): TResult = js.native
+  def reduce[TResult](iterator: MemoIterator[TView, TResult, List[TView]], memo: Unit, context: js.Any): TResult = js.native
   
   /**
     * @see _.reject

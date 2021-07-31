@@ -3,17 +3,15 @@ package typings.klawSync
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ReaddirSync extends StObject {
     
-    def readdirSync(path: String): js.Array[String] = js.native
+    def readdirSync(path: String): js.Array[String]
     
-    def statSync(path: String): Stats = js.native
+    def statSync(path: String): Stats
   }
   object ReaddirSync {
     

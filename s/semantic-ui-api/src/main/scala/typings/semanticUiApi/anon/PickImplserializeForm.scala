@@ -2,14 +2,12 @@ package typings.semanticUiApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.ApiSettings._Impl, 'serializeForm'> */
-@js.native
 trait PickImplserializeForm extends StObject {
   
-  var serializeForm: Boolean = js.native
+  var serializeForm: Boolean
 }
 object PickImplserializeForm {
   

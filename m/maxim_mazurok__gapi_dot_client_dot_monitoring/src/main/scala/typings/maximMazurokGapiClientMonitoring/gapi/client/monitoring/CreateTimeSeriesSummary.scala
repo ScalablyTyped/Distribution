@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTimeSeriesSummary extends StObject {
   
   /** The number of points that failed to be written. Order is not guaranteed. */
-  var errors: js.UndefOr[js.Array[Error]] = js.native
+  var errors: js.UndefOr[js.Array[Error]] = js.undefined
   
   /** The number of points that were successfully written. */
-  var successPointCount: js.UndefOr[Double] = js.native
+  var successPointCount: js.UndefOr[Double] = js.undefined
   
   /** The number of points in the request. */
-  var totalPointCount: js.UndefOr[Double] = js.native
+  var totalPointCount: js.UndefOr[Double] = js.undefined
 }
 object CreateTimeSeriesSummary {
   

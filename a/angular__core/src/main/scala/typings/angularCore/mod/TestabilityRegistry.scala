@@ -3,7 +3,6 @@ package typings.angularCore.mod
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "TestabilityRegistry")
@@ -22,7 +21,7 @@ class TestabilityRegistry () extends StObject {
   /**
     * Get all registered applications(root elements)
     */
-  def getAllRootElements(): js.Array[_] = js.native
+  def getAllRootElements(): js.Array[js.Any] = js.native
   
   /**
     * Get all registered testabilities

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountPermissionsListResponse extends StObject {
   
   /** Account permission collection. */
-  var accountPermissions: js.UndefOr[js.Array[AccountPermission]] = js.native
+  var accountPermissions: js.UndefOr[js.Array[AccountPermission]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#accountPermissionsListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object AccountPermissionsListResponse {
   

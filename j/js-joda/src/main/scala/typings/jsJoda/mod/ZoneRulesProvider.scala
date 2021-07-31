@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "ZoneRulesProvider")
@@ -10,13 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ZoneRulesProvider () extends StObject
 object ZoneRulesProvider {
   
-  /* static member */
-  @JSImport("js-joda", "ZoneRulesProvider.getAvailableZoneIds")
+  @JSImport("js-joda", "ZoneRulesProvider")
   @js.native
-  def getAvailableZoneIds(): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("js-joda", "ZoneRulesProvider.getRules")
-  @js.native
-  def getRules(zoneId: String): ZoneRules = js.native
+  @scala.inline
+  def getAvailableZoneIds(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableZoneIds")().asInstanceOf[js.Array[String]]
+  
+  /* static member */
+  @scala.inline
+  def getRules(zoneId: String): ZoneRules = ^.asInstanceOf[js.Dynamic].applyDynamic("getRules")(zoneId.asInstanceOf[js.Any]).asInstanceOf[ZoneRules]
 }

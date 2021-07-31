@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse extends StObject {
   
   /** The total count of events purged as a result of the operation. */
-  var purgedEventsCount: js.UndefOr[String] = js.native
+  var purgedEventsCount: js.UndefOr[String] = js.undefined
   
   /** A sampling of events deleted (or will be deleted) depending on the `force` property in the request. Max of 500 items will be returned. */
-  var userEventsSample: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1UserEvent]] = js.native
+  var userEventsSample: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1UserEvent]] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse {
   

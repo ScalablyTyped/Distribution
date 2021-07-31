@@ -4,15 +4,13 @@ import typings.activexWord.Word.Document
 import typings.activexWord.Word.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Wn extends StObject {
   
-  val Doc: Document = js.native
+  val Doc: Document
   
-  val Wn: Window = js.native
+  val Wn: Window
 }
 object Wn {
   

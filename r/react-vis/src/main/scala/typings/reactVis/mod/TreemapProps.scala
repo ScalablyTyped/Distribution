@@ -16,55 +16,53 @@ import typings.reactVis.reactVisStrings.squarify
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreemapProps extends StObject {
   
-  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.native
+  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   // default: ''
-  var data: js.UndefOr[TreemapPoint] = js.native
+  var data: js.UndefOr[TreemapPoint] = js.undefined
   
-  var getColor: js.UndefOr[RVGet[TreemapPoint, color]] = js.native
+  var getColor: js.UndefOr[RVGet[TreemapPoint, color]] = js.undefined
   
-  var getSize: js.UndefOr[RVGet[TreemapPoint, size]] = js.native
+  var getSize: js.UndefOr[RVGet[TreemapPoint, size]] = js.undefined
   
   // default: {'children':[]}
-  var height: Double = js.native
+  var height: Double
   
-  var hideRootNode: js.UndefOr[Boolean] = js.native
+  var hideRootNode: js.UndefOr[Boolean] = js.undefined
   
   // default: false
-  var margin: js.UndefOr[Margin | Double] = js.native
+  var margin: js.UndefOr[Margin | Double] = js.undefined
   
   // default: {'left':40,'right':10,'top':10,'bottom':40}
   var mode: js.UndefOr[
     squarify | resquarify | slice | dice | slicedice | binary | circlePack | partition | `partition-pivot`
-  ] = js.native
+  ] = js.undefined
   
   // default: 'squarify'
-  var onLeafClick: js.UndefOr[RVValueEventHandler[TreemapPoint]] = js.native
+  var onLeafClick: js.UndefOr[RVValueEventHandler[TreemapPoint]] = js.undefined
   
-  var onLeafMouseOut: js.UndefOr[RVValueEventHandler[TreemapPoint]] = js.native
+  var onLeafMouseOut: js.UndefOr[RVValueEventHandler[TreemapPoint]] = js.undefined
   
-  var onLeafMouseOver: js.UndefOr[RVValueEventHandler[TreemapPoint]] = js.native
+  var onLeafMouseOver: js.UndefOr[RVValueEventHandler[TreemapPoint]] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
   // default: 1
   var sortFunction: js.UndefOr[
     js.Function3[/* a */ js.Any, /* b */ js.Any, /* getSize */ RVGet[TreemapPoint, size], Double]
-  ] = js.native
+  ] = js.undefined
   
-  var useCirclePacking: js.UndefOr[Boolean] = js.native
+  var useCirclePacking: js.UndefOr[Boolean] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object TreemapProps {
   

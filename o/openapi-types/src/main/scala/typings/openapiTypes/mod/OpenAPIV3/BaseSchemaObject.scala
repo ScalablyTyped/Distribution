@@ -3,77 +3,75 @@ package typings.openapiTypes.mod.OpenAPIV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseSchemaObject extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
   
-  var additionalProperties: js.UndefOr[Boolean | ReferenceObject | SchemaObject] = js.native
+  var additionalProperties: js.UndefOr[Boolean | ReferenceObject | SchemaObject] = js.undefined
   
-  var allOf: js.UndefOr[js.Array[ReferenceObject | SchemaObject]] = js.native
+  var allOf: js.UndefOr[js.Array[ReferenceObject | SchemaObject]] = js.undefined
   
-  var anyOf: js.UndefOr[js.Array[ReferenceObject | SchemaObject]] = js.native
+  var anyOf: js.UndefOr[js.Array[ReferenceObject | SchemaObject]] = js.undefined
   
-  var deprecated: js.UndefOr[Boolean] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var discriminator: js.UndefOr[DiscriminatorObject] = js.native
+  var discriminator: js.UndefOr[DiscriminatorObject] = js.undefined
   
-  var enum: js.UndefOr[js.Array[_]] = js.native
+  var `enum`: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var example: js.UndefOr[js.Any] = js.native
+  var example: js.UndefOr[js.Any] = js.undefined
   
-  var exclusiveMaximum: js.UndefOr[Boolean] = js.native
+  var exclusiveMaximum: js.UndefOr[Boolean] = js.undefined
   
-  var exclusiveMinimum: js.UndefOr[Boolean] = js.native
+  var exclusiveMinimum: js.UndefOr[Boolean] = js.undefined
   
-  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.native
+  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var maxItems: js.UndefOr[Double] = js.native
+  var maxItems: js.UndefOr[Double] = js.undefined
   
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
-  var maxProperties: js.UndefOr[Double] = js.native
+  var maxProperties: js.UndefOr[Double] = js.undefined
   
-  var maximum: js.UndefOr[Double] = js.native
+  var maximum: js.UndefOr[Double] = js.undefined
   
-  var minItems: js.UndefOr[Double] = js.native
+  var minItems: js.UndefOr[Double] = js.undefined
   
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
   
-  var minProperties: js.UndefOr[Double] = js.native
+  var minProperties: js.UndefOr[Double] = js.undefined
   
-  var minimum: js.UndefOr[Double] = js.native
+  var minimum: js.UndefOr[Double] = js.undefined
   
-  var multipleOf: js.UndefOr[Double] = js.native
+  var multipleOf: js.UndefOr[Double] = js.undefined
   
-  var not: js.UndefOr[ReferenceObject | SchemaObject] = js.native
+  var not: js.UndefOr[ReferenceObject | SchemaObject] = js.undefined
   
-  var nullable: js.UndefOr[Boolean] = js.native
+  var nullable: js.UndefOr[Boolean] = js.undefined
   
-  var oneOf: js.UndefOr[js.Array[ReferenceObject | SchemaObject]] = js.native
+  var oneOf: js.UndefOr[js.Array[ReferenceObject | SchemaObject]] = js.undefined
   
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String] = js.undefined
   
-  var properties: js.UndefOr[StringDictionary[ReferenceObject | SchemaObject]] = js.native
+  var properties: js.UndefOr[StringDictionary[ReferenceObject | SchemaObject]] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var required: js.UndefOr[js.Array[String]] = js.native
+  var required: js.UndefOr[js.Array[String]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var uniqueItems: js.UndefOr[Boolean] = js.native
+  var uniqueItems: js.UndefOr[Boolean] = js.undefined
   
-  var writeOnly: js.UndefOr[Boolean] = js.native
+  var writeOnly: js.UndefOr[Boolean] = js.undefined
   
-  var xml: js.UndefOr[XMLObject] = js.native
+  var xml: js.UndefOr[XMLObject] = js.undefined
 }
 object BaseSchemaObject {
   
@@ -135,7 +133,7 @@ object BaseSchemaObject {
     def setDiscriminatorUndefined: Self = StObject.set(x, "discriminator", js.undefined)
     
     @scala.inline
-    def setEnum(value: js.Array[_]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    def setEnum(value: js.Array[js.Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)

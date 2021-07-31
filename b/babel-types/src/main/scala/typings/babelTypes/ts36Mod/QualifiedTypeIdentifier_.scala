@@ -3,20 +3,19 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.QualifiedTypeIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QualifiedTypeIdentifier_
-  extends Node
+  extends StObject
+     with Node
      with Flow {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var qualification: Identifier_ | QualifiedTypeIdentifier_ = js.native
+  var qualification: Identifier_ | QualifiedTypeIdentifier_
   
   @JSName("type")
-  var type_QualifiedTypeIdentifier_ : QualifiedTypeIdentifier = js.native
+  var type_QualifiedTypeIdentifier_ : QualifiedTypeIdentifier
 }
 object QualifiedTypeIdentifier_ {
   
@@ -26,11 +25,10 @@ object QualifiedTypeIdentifier_ {
     id: Identifier_,
     loc: SourceLocation,
     qualification: Identifier_ | QualifiedTypeIdentifier_,
-    start: Double,
-    `type`: QualifiedTypeIdentifier
+    start: Double
   ): QualifiedTypeIdentifier_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], qualification = qualification.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("QualifiedTypeIdentifier")
     __obj.asInstanceOf[QualifiedTypeIdentifier_]
   }
   

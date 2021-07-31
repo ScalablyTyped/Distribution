@@ -2,35 +2,33 @@ package typings.servicenow.servicenow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlideElementDescriptor extends StObject {
   
-  def getAttachmentEncryptionType(): String = js.native
+  def getAttachmentEncryptionType(): String
   
-  def getEncryptionType(): String = js.native
+  def getEncryptionType(): String
   
-  def getInternalType(): String = js.native
+  def getInternalType(): String
   
-  def getLabel(): String = js.native
+  def getLabel(): String
   
-  def getLength(): Double = js.native
+  def getLength(): Double
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def getPlural(): Boolean = js.native
+  def getPlural(): Boolean
   
-  def hasAttachmentsEncrypted(): Boolean = js.native
+  def hasAttachmentsEncrypted(): Boolean
   
-  def isAutoOrSysID(): Boolean = js.native
+  def isAutoOrSysID(): Boolean
   
-  def isChoiceTable(): Boolean = js.native
+  def isChoiceTable(): Boolean
   
-  def isEdgeEncrypted(): Boolean = js.native
+  def isEdgeEncrypted(): Boolean
   
-  def isVirtual(): Boolean = js.native
+  def isVirtual(): Boolean
 }
 object GlideElementDescriptor {
   

@@ -3,23 +3,21 @@ package typings.winrt.Windows.Networking.Connectivity
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDataPlanStatus extends StObject {
   
-  var dataLimitInMegabytes: Double = js.native
+  var dataLimitInMegabytes: Double
   
-  var dataPlanUsage: DataPlanUsage = js.native
+  var dataPlanUsage: DataPlanUsage
   
-  var inboundBitsPerSecond: Double = js.native
+  var inboundBitsPerSecond: Double
   
-  var maxTransferSizeInMegabytes: Double = js.native
+  var maxTransferSizeInMegabytes: Double
   
-  var nextBillingCycle: Date = js.native
+  var nextBillingCycle: Date
   
-  var outboundBitsPerSecond: Double = js.native
+  var outboundBitsPerSecond: Double
 }
 object IDataPlanStatus {
   

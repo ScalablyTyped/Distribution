@@ -2,23 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranspileOptions extends StObject {
   
-  var compilerOptions: js.UndefOr[CompilerOptions] = js.native
+  var compilerOptions: js.UndefOr[CompilerOptions] = js.undefined
   
-  var fileName: js.UndefOr[java.lang.String] = js.native
+  var fileName: js.UndefOr[java.lang.String] = js.undefined
   
-  var moduleName: js.UndefOr[java.lang.String] = js.native
+  var moduleName: js.UndefOr[java.lang.String] = js.undefined
   
-  var renamedDependencies: js.UndefOr[MapLike[java.lang.String]] = js.native
+  var renamedDependencies: js.UndefOr[MapLike[java.lang.String]] = js.undefined
   
-  var reportDiagnostics: js.UndefOr[Boolean] = js.native
+  var reportDiagnostics: js.UndefOr[Boolean] = js.undefined
   
-  var transformers: js.UndefOr[CustomTransformers] = js.native
+  var transformers: js.UndefOr[CustomTransformers] = js.undefined
 }
 object TranspileOptions {
   

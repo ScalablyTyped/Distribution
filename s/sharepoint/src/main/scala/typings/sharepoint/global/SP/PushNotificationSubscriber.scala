@@ -2,10 +2,10 @@ package typings.sharepoint.global.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.PushNotificationSubscriber")
 @js.native
 class PushNotificationSubscriber ()
-  extends typings.sharepoint.SP.PushNotificationSubscriber
+  extends StObject
+     with typings.sharepoint.SP.PushNotificationSubscriber

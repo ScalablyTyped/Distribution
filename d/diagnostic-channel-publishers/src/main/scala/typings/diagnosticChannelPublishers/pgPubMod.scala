@@ -7,14 +7,16 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pgPubMod {
   
-  @JSImport("diagnostic-channel-publishers/dist/src/pg.pub", "enable")
+  @JSImport("diagnostic-channel-publishers/dist/src/pg.pub", JSImport.Namespace)
   @js.native
-  def enable(): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   @JSImport("diagnostic-channel-publishers/dist/src/pg.pub", "postgres6")
   @js.native
@@ -24,20 +26,19 @@ object pgPubMod {
   @js.native
   val postgres7: IModulePatcher = js.native
   
-  @js.native
   trait IPostgresData extends StObject {
     
-    var database: Port = js.native
+    var database: Port
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var query: Plan = js.native
+    var query: Plan
     
-    var result: js.UndefOr[IPostgresResult] = js.native
+    var result: js.UndefOr[IPostgresResult] = js.undefined
     
-    var time: Date = js.native
+    var time: Date
   }
   object IPostgresData {
     
@@ -76,12 +77,11 @@ object pgPubMod {
     }
   }
   
-  @js.native
   trait IPostgresResult extends StObject {
     
-    var command: String = js.native
+    var command: String
     
-    var rowCount: Double = js.native
+    var rowCount: Double
   }
   object IPostgresResult {
     

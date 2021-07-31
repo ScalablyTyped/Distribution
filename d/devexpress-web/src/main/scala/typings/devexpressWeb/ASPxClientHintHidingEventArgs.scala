@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientHint.Hiding event.
   */
-@js.native
-trait ASPxClientHintHidingEventArgs extends ASPxClientEventArgs {
+trait ASPxClientHintHidingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets or sets a value indicating whether the event should be canceled.
     */
-  var cancel: Boolean = js.native
+  var cancel: Boolean
   
   /**
     * Gets the object that is the hint's content.
     */
-  var contentElement: js.Any = js.native
+  var contentElement: js.Any
   
   /**
     * Gets the object that is the hint element.
     */
-  var hintElement: js.Any = js.native
+  var hintElement: js.Any
   
   /**
     * Gets the object that is the hint's target element.
     */
-  var targetElement: js.Any = js.native
+  var targetElement: js.Any
   
   /**
     * Gets the object that is the hint's title.
     */
-  var titleElement: js.Any = js.native
+  var titleElement: js.Any
 }
 object ASPxClientHintHidingEventArgs {
   

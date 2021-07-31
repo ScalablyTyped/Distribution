@@ -6,7 +6,6 @@ import typings.meteor.Subscription
 import typings.meteorRoles.anon.Fields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Declaring in the format prescribed by Meteor */
@@ -72,42 +71,30 @@ object mod {
       *                         Roles.GLOBAL_GROUP group will be automatically
       *                         included in checks for any group.
       */
-    @JSImport("meteor/alanning:roles", "Roles.addUsersToRoles")
-    @js.native
-    def addUsersToRoles(user: String, roles: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.addUsersToRoles")
-    @js.native
-    def addUsersToRoles(user: String, roles: String, group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.addUsersToRoles")
-    @js.native
-    def addUsersToRoles(user: String, roles: js.Array[String]): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.addUsersToRoles")
-    @js.native
-    def addUsersToRoles(user: String, roles: js.Array[String], group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.addUsersToRoles")
-    @js.native
-    def addUsersToRoles(user: js.Array[js.Object | String], roles: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.addUsersToRoles")
-    @js.native
-    def addUsersToRoles(user: js.Array[js.Object | String], roles: String, group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.addUsersToRoles")
-    @js.native
-    def addUsersToRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.addUsersToRoles")
-    @js.native
-    def addUsersToRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.addUsersToRoles")
-    @js.native
-    def addUsersToRoles(user: js.Object, roles: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.addUsersToRoles")
-    @js.native
-    def addUsersToRoles(user: js.Object, roles: String, group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.addUsersToRoles")
-    @js.native
-    def addUsersToRoles(user: js.Object, roles: js.Array[String]): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.addUsersToRoles")
-    @js.native
-    def addUsersToRoles(user: js.Object, roles: js.Array[String], group: String): Unit = js.native
+    @scala.inline
+    def addUsersToRoles(user: String, roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addUsersToRoles(user: String, roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addUsersToRoles(user: String, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addUsersToRoles(user: String, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addUsersToRoles(user: js.Array[js.Object | String], roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addUsersToRoles(user: js.Array[js.Object | String], roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addUsersToRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addUsersToRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addUsersToRoles(user: js.Object, roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addUsersToRoles(user: js.Object, roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addUsersToRoles(user: js.Object, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addUsersToRoles(user: js.Object, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Create a new role. Whitespace will be trimmed.
@@ -116,9 +103,8 @@ object mod {
       * @param {String} role Name of role
       * @return {String} id of new role
       */
-    @JSImport("meteor/alanning:roles", "Roles.createRole")
-    @js.native
-    def createRole(role: String): String = js.native
+    @scala.inline
+    def createRole(role: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createRole")(role.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Delete an existing role.  Will throw "Role in use" error if any users
@@ -127,9 +113,8 @@ object mod {
       * @method deleteRole
       * @param {String} role Name of role
       */
-    @JSImport("meteor/alanning:roles", "Roles.deleteRole")
-    @js.native
-    def deleteRole(role: String): Unit = js.native
+    @scala.inline
+    def deleteRole(role: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteRole")(role.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Retrieve set of all existing roles
@@ -137,9 +122,8 @@ object mod {
       * @method getAllRoles
       * @return {Cursor} cursor of existing roles
       */
-    @JSImport("meteor/alanning:roles", "Roles.getAllRoles")
-    @js.native
-    def getAllRoles(): Cursor[Role, Role] = js.native
+    @scala.inline
+    def getAllRoles(): Cursor[Role, Role] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllRoles")().asInstanceOf[Cursor[Role, Role]]
     
     /**
       * Retrieve users groups, if any
@@ -150,18 +134,14 @@ object mod {
       *
       * @return {Array} Array of user's groups, unsorted. Roles.GLOBAL_GROUP will be omitted
       */
-    @JSImport("meteor/alanning:roles", "Roles.getGroupsForUser")
-    @js.native
-    def getGroupsForUser(user: String): js.Array[String] = js.native
-    @JSImport("meteor/alanning:roles", "Roles.getGroupsForUser")
-    @js.native
-    def getGroupsForUser(user: String, role: String): js.Array[String] = js.native
-    @JSImport("meteor/alanning:roles", "Roles.getGroupsForUser")
-    @js.native
-    def getGroupsForUser(user: js.Object): js.Array[String] = js.native
-    @JSImport("meteor/alanning:roles", "Roles.getGroupsForUser")
-    @js.native
-    def getGroupsForUser(user: js.Object, role: String): js.Array[String] = js.native
+    @scala.inline
+    def getGroupsForUser(user: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroupsForUser")(user.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def getGroupsForUser(user: String, role: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroupsForUser")(user.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def getGroupsForUser(user: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroupsForUser")(user.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def getGroupsForUser(user: js.Object, role: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroupsForUser")(user.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Retrieve users roles
@@ -172,18 +152,14 @@ object mod {
       *                         User's Roles.GLOBAL_GROUP will also be included.
       * @return {Array} Array of user's roles, unsorted.
       */
-    @JSImport("meteor/alanning:roles", "Roles.getRolesForUser")
-    @js.native
-    def getRolesForUser(user: String): js.Array[String] = js.native
-    @JSImport("meteor/alanning:roles", "Roles.getRolesForUser")
-    @js.native
-    def getRolesForUser(user: String, group: String): js.Array[String] = js.native
-    @JSImport("meteor/alanning:roles", "Roles.getRolesForUser")
-    @js.native
-    def getRolesForUser(user: js.Object): js.Array[String] = js.native
-    @JSImport("meteor/alanning:roles", "Roles.getRolesForUser")
-    @js.native
-    def getRolesForUser(user: js.Object, group: String): js.Array[String] = js.native
+    @scala.inline
+    def getRolesForUser(user: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRolesForUser")(user.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def getRolesForUser(user: String, group: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRolesForUser")(user.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def getRolesForUser(user: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRolesForUser")(user.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def getRolesForUser(user: js.Object, group: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRolesForUser")(user.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Retrieve all users who are in target role.
@@ -203,30 +179,22 @@ object mod {
       *                           through to `Meteor.users.find(query, options)`
       * @return {Cursor} cursor of users in role
       */
-    @JSImport("meteor/alanning:roles", "Roles.getUsersInRole")
-    @js.native
-    def getUsersInRole(role: String): Cursor[User, User] = js.native
-    @JSImport("meteor/alanning:roles", "Roles.getUsersInRole")
-    @js.native
-    def getUsersInRole(role: String, group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User, User] = js.native
-    @JSImport("meteor/alanning:roles", "Roles.getUsersInRole")
-    @js.native
-    def getUsersInRole(role: String, group: String): Cursor[User, User] = js.native
-    @JSImport("meteor/alanning:roles", "Roles.getUsersInRole")
-    @js.native
-    def getUsersInRole(role: String, group: String, options: Fields): Cursor[User, User] = js.native
-    @JSImport("meteor/alanning:roles", "Roles.getUsersInRole")
-    @js.native
-    def getUsersInRole(role: js.Array[String]): Cursor[User, User] = js.native
-    @JSImport("meteor/alanning:roles", "Roles.getUsersInRole")
-    @js.native
-    def getUsersInRole(role: js.Array[String], group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User, User] = js.native
-    @JSImport("meteor/alanning:roles", "Roles.getUsersInRole")
-    @js.native
-    def getUsersInRole(role: js.Array[String], group: String): Cursor[User, User] = js.native
-    @JSImport("meteor/alanning:roles", "Roles.getUsersInRole")
-    @js.native
-    def getUsersInRole(role: js.Array[String], group: String, options: Fields): Cursor[User, User] = js.native
+    @scala.inline
+    def getUsersInRole(role: String): Cursor[User, User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any]).asInstanceOf[Cursor[User, User]]
+    @scala.inline
+    def getUsersInRole(role: String, group: String): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
+    @scala.inline
+    def getUsersInRole(role: String, group: String, options: Fields): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
+    @scala.inline
+    def getUsersInRole(role: String, group: Unit, options: Fields): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
+    @scala.inline
+    def getUsersInRole(role: js.Array[String]): Cursor[User, User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any]).asInstanceOf[Cursor[User, User]]
+    @scala.inline
+    def getUsersInRole(role: js.Array[String], group: String): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
+    @scala.inline
+    def getUsersInRole(role: js.Array[String], group: String, options: Fields): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
+    @scala.inline
+    def getUsersInRole(role: js.Array[String], group: Unit, options: Fields): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
     
     /**
       * Remove users from roles
@@ -243,42 +211,30 @@ object mod {
       * @param {String} [group] Optional. Group name. If supplied, only that
       *                         group will have roles removed.
       */
-    @JSImport("meteor/alanning:roles", "Roles.removeUsersFromRoles")
-    @js.native
-    def removeUsersFromRoles(user: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.removeUsersFromRoles")
-    @js.native
-    def removeUsersFromRoles(user: String, roles: js.UndefOr[scala.Nothing], group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.removeUsersFromRoles")
-    @js.native
-    def removeUsersFromRoles(user: String, roles: js.Array[String]): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.removeUsersFromRoles")
-    @js.native
-    def removeUsersFromRoles(user: String, roles: js.Array[String], group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.removeUsersFromRoles")
-    @js.native
-    def removeUsersFromRoles(user: js.Array[js.Object | String]): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.removeUsersFromRoles")
-    @js.native
-    def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.UndefOr[scala.Nothing], group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.removeUsersFromRoles")
-    @js.native
-    def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.removeUsersFromRoles")
-    @js.native
-    def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.removeUsersFromRoles")
-    @js.native
-    def removeUsersFromRoles(user: js.Object): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.removeUsersFromRoles")
-    @js.native
-    def removeUsersFromRoles(user: js.Object, roles: js.UndefOr[scala.Nothing], group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.removeUsersFromRoles")
-    @js.native
-    def removeUsersFromRoles(user: js.Object, roles: js.Array[String]): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.removeUsersFromRoles")
-    @js.native
-    def removeUsersFromRoles(user: js.Object, roles: js.Array[String], group: String): Unit = js.native
+    @scala.inline
+    def removeUsersFromRoles(user: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def removeUsersFromRoles(user: String, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeUsersFromRoles(user: String, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeUsersFromRoles(user: String, roles: Unit, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeUsersFromRoles(user: js.Array[js.Object | String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeUsersFromRoles(user: js.Array[js.Object | String], roles: Unit, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeUsersFromRoles(user: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def removeUsersFromRoles(user: js.Object, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeUsersFromRoles(user: js.Object, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def removeUsersFromRoles(user: js.Object, roles: Unit, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Set a users roles/permissions.
@@ -304,42 +260,30 @@ object mod {
       *                         Roles.GLOBAL_GROUP group will be automatically
       *                         included in checks for any group.
       */
-    @JSImport("meteor/alanning:roles", "Roles.setUserRoles")
-    @js.native
-    def setUserRoles(user: String, roles: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.setUserRoles")
-    @js.native
-    def setUserRoles(user: String, roles: String, group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.setUserRoles")
-    @js.native
-    def setUserRoles(user: String, roles: js.Array[String]): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.setUserRoles")
-    @js.native
-    def setUserRoles(user: String, roles: js.Array[String], group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.setUserRoles")
-    @js.native
-    def setUserRoles(user: js.Array[js.Object | String], roles: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.setUserRoles")
-    @js.native
-    def setUserRoles(user: js.Array[js.Object | String], roles: String, group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.setUserRoles")
-    @js.native
-    def setUserRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.setUserRoles")
-    @js.native
-    def setUserRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.setUserRoles")
-    @js.native
-    def setUserRoles(user: js.Object, roles: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.setUserRoles")
-    @js.native
-    def setUserRoles(user: js.Object, roles: String, group: String): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.setUserRoles")
-    @js.native
-    def setUserRoles(user: js.Object, roles: js.Array[String]): Unit = js.native
-    @JSImport("meteor/alanning:roles", "Roles.setUserRoles")
-    @js.native
-    def setUserRoles(user: js.Object, roles: js.Array[String], group: String): Unit = js.native
+    @scala.inline
+    def setUserRoles(user: String, roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setUserRoles(user: String, roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setUserRoles(user: String, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setUserRoles(user: String, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setUserRoles(user: js.Array[js.Object | String], roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setUserRoles(user: js.Array[js.Object | String], roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setUserRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setUserRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setUserRoles(user: js.Object, roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setUserRoles(user: js.Object, roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setUserRoles(user: js.Object, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setUserRoles(user: js.Object, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Subscription handle for the currently logged in user's permissions.
@@ -391,47 +335,34 @@ object mod {
       *                         whether group is specified or not.
       * @return {Boolean} true if user is in _any_ of the target roles
       */
-    @JSImport("meteor/alanning:roles", "Roles.userIsInRole")
-    @js.native
-    def userIsInRole(user: String, roles: String): Boolean = js.native
-    @JSImport("meteor/alanning:roles", "Roles.userIsInRole")
-    @js.native
-    def userIsInRole(user: String, roles: String, group: String): Boolean = js.native
-    @JSImport("meteor/alanning:roles", "Roles.userIsInRole")
-    @js.native
-    def userIsInRole(user: String, roles: js.Array[String]): Boolean = js.native
-    @JSImport("meteor/alanning:roles", "Roles.userIsInRole")
-    @js.native
-    def userIsInRole(user: String, roles: js.Array[String], group: String): Boolean = js.native
-    @JSImport("meteor/alanning:roles", "Roles.userIsInRole")
-    @js.native
-    def userIsInRole(user: js.Array[js.Object | String], roles: String): Boolean = js.native
-    @JSImport("meteor/alanning:roles", "Roles.userIsInRole")
-    @js.native
-    def userIsInRole(user: js.Array[js.Object | String], roles: String, group: String): Boolean = js.native
-    @JSImport("meteor/alanning:roles", "Roles.userIsInRole")
-    @js.native
-    def userIsInRole(user: js.Array[js.Object | String], roles: js.Array[String]): Boolean = js.native
-    @JSImport("meteor/alanning:roles", "Roles.userIsInRole")
-    @js.native
-    def userIsInRole(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Boolean = js.native
-    @JSImport("meteor/alanning:roles", "Roles.userIsInRole")
-    @js.native
-    def userIsInRole(user: js.Object, roles: String): Boolean = js.native
-    @JSImport("meteor/alanning:roles", "Roles.userIsInRole")
-    @js.native
-    def userIsInRole(user: js.Object, roles: String, group: String): Boolean = js.native
-    @JSImport("meteor/alanning:roles", "Roles.userIsInRole")
-    @js.native
-    def userIsInRole(user: js.Object, roles: js.Array[String]): Boolean = js.native
-    @JSImport("meteor/alanning:roles", "Roles.userIsInRole")
-    @js.native
-    def userIsInRole(user: js.Object, roles: js.Array[String], group: String): Boolean = js.native
+    @scala.inline
+    def userIsInRole(user: String, roles: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def userIsInRole(user: String, roles: String, group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def userIsInRole(user: String, roles: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def userIsInRole(user: String, roles: js.Array[String], group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def userIsInRole(user: js.Array[js.Object | String], roles: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def userIsInRole(user: js.Array[js.Object | String], roles: String, group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def userIsInRole(user: js.Array[js.Object | String], roles: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def userIsInRole(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def userIsInRole(user: js.Object, roles: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def userIsInRole(user: js.Object, roles: String, group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def userIsInRole(user: js.Object, roles: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def userIsInRole(user: js.Object, roles: js.Array[String], group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @js.native
     trait Role extends StObject {
       
-      var name: String = js.native
+      var name: String
     }
     object Role {
       

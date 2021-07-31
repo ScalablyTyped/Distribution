@@ -12,7 +12,6 @@ import typings.postcssUrl.postcssUrlStrings.rebase
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -27,7 +26,6 @@ object mod extends Shortcut {
   
   type CustomTransformFunction = js.Function2[/* asset */ AbsolutePath, /* dir */ File, String]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -35,27 +33,27 @@ object mod extends Shortcut {
       *
       * @default false
       */
-    var assetsPath: js.UndefOr[Boolean | String] = js.native
+    var assetsPath: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * Specify the base path or list of base paths where to search images from.
       */
-    var basePath: js.UndefOr[String | js.Array[String]] = js.native
+    var basePath: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The fallback method to use if the maximum size is exceeded or the URL contains a hash.
       */
-    var fallback: js.UndefOr[CustomTransformFunction] = js.native
+    var fallback: js.UndefOr[CustomTransformFunction] = js.undefined
     
     /**
       * Determine wether a file should be inlined.
       */
-    var filter: js.UndefOr[RegExp | CustomFilterFunction | String] = js.native
+    var filter: js.UndefOr[RegExp | CustomFilterFunction | String] = js.undefined
     
     /**
       * Hash options
       */
-    var hashOptions: js.UndefOr[Append] = js.native
+    var hashOptions: js.UndefOr[Append] = js.undefined
     
     /**
       * Do not warn when an SVG URL with a fragment is inlined.
@@ -65,40 +63,40 @@ object mod extends Shortcut {
       *
       * @default false
       */
-    var ignoreFragmentWarning: js.UndefOr[Boolean] = js.native
+    var ignoreFragmentWarning: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies whether the URL's fragment identifer value, if present, will be added to the inlined data URI.
       *
       * @default false
       */
-    var includeUriFragment: js.UndefOr[Boolean] = js.native
+    var includeUriFragment: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify the maximum file size to inline (in kilobytes).
       */
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Reduce size of inlined svg (IE9+, Android 3+)
       *
       * @default false
       */
-    var optimizeSvgEncode: js.UndefOr[Boolean] = js.native
+    var optimizeSvgEncode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * URL rewriting mechanism.
       *
       * @default 'rebase'
       */
-    var url: js.UndefOr[copy | `inline` | rebase | CustomTransformFunction] = js.native
+    var url: js.UndefOr[copy | `inline` | rebase | CustomTransformFunction] = js.undefined
     
     /**
       * Rename the path of the files by a hash name.
       *
       * @default false
       */
-    var useHash: js.UndefOr[Boolean] = js.native
+    var useHash: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eipAssociationMod {
@@ -24,7 +23,7 @@ object eipAssociationMod {
       */
     def this(name: String) = this()
     def this(name: String, args: EipAssociationArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: EipAssociationArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -69,6 +68,10 @@ object eipAssociationMod {
   /* static members */
   object EipAssociation {
     
+    @JSImport("@pulumi/aws/ec2/eipAssociation", "EipAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EipAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -78,41 +81,35 @@ object eipAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/eipAssociation", "EipAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EipAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/eipAssociation", "EipAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EipAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/eipAssociation", "EipAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EipAssociationState): EipAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/eipAssociation", "EipAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EipAssociationState, opts: CustomResourceOptions): EipAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EipAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EipAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EipAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EipAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EipAssociationState): EipAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EipAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EipAssociationState, opts: CustomResourceOptions): EipAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EipAssociation]
     
     /**
       * Returns true if the given object is an instance of EipAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/eipAssociation", "EipAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/eipAssociation.EipAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/eipAssociation.EipAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/eipAssociation.EipAssociation */ Boolean]
   }
   
-  @js.native
   trait EipAssociationArgs extends StObject {
     
     /**
       * The allocation ID. This is required for EC2-VPC.
       */
-    val allocationId: js.UndefOr[Input[String]] = js.native
+    val allocationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether to allow an Elastic IP to
       * be re-associated. Defaults to `true` in VPC.
       */
-    val allowReassociation: js.UndefOr[Input[Boolean]] = js.native
+    val allowReassociation: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ID of the instance. This is required for
@@ -120,14 +117,14 @@ object eipAssociationMod {
       * network interface ID, but not both. The operation fails if you specify an
       * instance ID unless exactly one network interface is attached.
       */
-    val instanceId: js.UndefOr[Input[String]] = js.native
+    val instanceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the network interface. If the
       * instance has more than one network interface, you must specify a network
       * interface ID.
       */
-    val networkInterfaceId: js.UndefOr[Input[String]] = js.native
+    val networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The primary or secondary private IP address
@@ -135,12 +132,12 @@ object eipAssociationMod {
       * specified, the Elastic IP address is associated with the primary private IP
       * address.
       */
-    val privateIpAddress: js.UndefOr[Input[String]] = js.native
+    val privateIpAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Elastic IP address. This is required for EC2-Classic.
       */
-    val publicIp: js.UndefOr[Input[String]] = js.native
+    val publicIp: js.UndefOr[Input[String]] = js.undefined
   }
   object EipAssociationArgs {
     
@@ -191,19 +188,18 @@ object eipAssociationMod {
     }
   }
   
-  @js.native
   trait EipAssociationState extends StObject {
     
     /**
       * The allocation ID. This is required for EC2-VPC.
       */
-    val allocationId: js.UndefOr[Input[String]] = js.native
+    val allocationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether to allow an Elastic IP to
       * be re-associated. Defaults to `true` in VPC.
       */
-    val allowReassociation: js.UndefOr[Input[Boolean]] = js.native
+    val allowReassociation: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ID of the instance. This is required for
@@ -211,14 +207,14 @@ object eipAssociationMod {
       * network interface ID, but not both. The operation fails if you specify an
       * instance ID unless exactly one network interface is attached.
       */
-    val instanceId: js.UndefOr[Input[String]] = js.native
+    val instanceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the network interface. If the
       * instance has more than one network interface, you must specify a network
       * interface ID.
       */
-    val networkInterfaceId: js.UndefOr[Input[String]] = js.native
+    val networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The primary or secondary private IP address
@@ -226,12 +222,12 @@ object eipAssociationMod {
       * specified, the Elastic IP address is associated with the primary private IP
       * address.
       */
-    val privateIpAddress: js.UndefOr[Input[String]] = js.native
+    val privateIpAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Elastic IP address. This is required for EC2-Classic.
       */
-    val publicIp: js.UndefOr[Input[String]] = js.native
+    val publicIp: js.UndefOr[Input[String]] = js.undefined
   }
   object EipAssociationState {
     

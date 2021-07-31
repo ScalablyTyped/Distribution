@@ -4,26 +4,27 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matchContainerMod {
   
-  @JSImport("react-relay/lib/relay-experimental/MatchContainer", "MatchContainer")
+  @JSImport("react-relay/lib/relay-experimental/MatchContainer", JSImport.Namespace)
   @js.native
-  def MatchContainer[TProps, TFallback](props: MatchContainerProps[TProps, TFallback]): ElementType[TProps] | TFallback | Null = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def MatchContainer[TProps, TFallback](props: MatchContainerProps[TProps, TFallback]): ElementType[TProps] | TFallback | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MatchContainer")(props.asInstanceOf[js.Any]).asInstanceOf[ElementType[TProps] | TFallback | Null]
   
   /* Inlined std.Readonly<{  fallback :TFallback | null | undefined, loader (module : unknown): react.react.ComponentType<TProps>,   match :react-relay.react-relay/lib/relay-experimental/MatchContainer.MatchPointer | react-relay.react-relay/lib/relay-experimental/MatchContainer.TypenameOnlyPointer | null | undefined,   props :TProps | undefined}> */
-  @js.native
   trait MatchContainerProps[TProps, TFallback] extends StObject {
     
-    val fallback: js.UndefOr[TFallback | Null] = js.native
+    val fallback: js.UndefOr[TFallback | Null] = js.undefined
     
-    val loader: js.Function1[/* module */ js.Any, ComponentType[TProps]] = js.native
+    val loader: js.Function1[/* module */ js.Any, ComponentType[TProps]]
     
-    val `match`: js.UndefOr[MatchPointer | TypenameOnlyPointer | Null] = js.native
+    val `match`: js.UndefOr[MatchPointer | TypenameOnlyPointer | Null] = js.undefined
     
-    val props: js.UndefOr[TProps] = js.native
+    val props: js.UndefOr[TProps] = js.undefined
   }
   object MatchContainerProps {
     
@@ -34,7 +35,7 @@ object matchContainerMod {
     }
     
     @scala.inline
-    implicit class MatchContainerPropsMutableBuilder[Self <: MatchContainerProps[_, _], TProps, TFallback] (val x: Self with (MatchContainerProps[TProps, TFallback])) extends AnyVal {
+    implicit class MatchContainerPropsMutableBuilder[Self <: MatchContainerProps[?, ?], TProps, TFallback] (val x: Self & (MatchContainerProps[TProps, TFallback])) extends AnyVal {
       
       @scala.inline
       def setFallback(value: TFallback): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
@@ -66,15 +67,14 @@ object matchContainerMod {
   }
   
   /* Inlined std.Readonly<{  __fragmentPropName :string | null | undefined,   __module_component :unknown | undefined,    $fragmentRefs :unknown}> */
-  @js.native
   trait MatchPointer extends StObject {
     
     @JSName(" $fragmentRefs")
-    val Space$fragmentRefs: js.Any = js.native
+    val Space$fragmentRefs: js.Any
     
-    val __fragmentPropName: js.UndefOr[String | Null] = js.native
+    val __fragmentPropName: js.UndefOr[String | Null] = js.undefined
     
-    val __module_component: js.UndefOr[js.Any] = js.native
+    val __module_component: js.UndefOr[js.Any] = js.undefined
   }
   object MatchPointer {
     
@@ -176,10 +176,9 @@ object matchContainerMod {
     *
     */
   /* Inlined std.Readonly<{  __typename :string}> */
-  @js.native
   trait TypenameOnlyPointer extends StObject {
     
-    val __typename: String = js.native
+    val __typename: String
   }
   object TypenameOnlyPointer {
     

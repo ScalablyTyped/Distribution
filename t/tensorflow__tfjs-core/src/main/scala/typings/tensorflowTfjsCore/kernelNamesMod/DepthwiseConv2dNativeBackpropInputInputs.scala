@@ -2,16 +2,14 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'dy' | 'filter'> */
-@js.native
 trait DepthwiseConv2dNativeBackpropInputInputs extends StObject {
   
-  var dy: js.UndefOr[js.Any] = js.native
+  var dy: js.UndefOr[js.Any] = js.undefined
   
-  var filter: js.UndefOr[js.Any] = js.native
+  var filter: js.UndefOr[js.Any] = js.undefined
 }
 object DepthwiseConv2dNativeBackpropInputInputs {
   

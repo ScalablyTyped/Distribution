@@ -2,21 +2,19 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorldCount extends StObject {
   
   /**
     * The number of unique floorplans.
     */
-  var floorplanCount: js.UndefOr[FloorplanCount] = js.native
+  var floorplanCount: js.UndefOr[FloorplanCount] = js.undefined
   
   /**
     * The number of unique interiors per floorplan.
     */
-  var interiorCountPerFloorplan: js.UndefOr[InteriorCountPerFloorplan] = js.native
+  var interiorCountPerFloorplan: js.UndefOr[InteriorCountPerFloorplan] = js.undefined
 }
 object WorldCount {
   

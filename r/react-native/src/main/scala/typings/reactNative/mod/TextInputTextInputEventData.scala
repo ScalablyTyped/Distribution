@@ -3,17 +3,15 @@ package typings.reactNative.mod
 import typings.reactNative.anon.End
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextInputTextInputEventData extends StObject {
   
-  var previousText: String = js.native
+  var previousText: String
   
-  var range: End = js.native
+  var range: End
   
-  var text: String = js.native
+  var text: String
 }
 object TextInputTextInputEventData {
   

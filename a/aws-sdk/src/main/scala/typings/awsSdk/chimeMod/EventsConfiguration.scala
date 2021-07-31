@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventsConfiguration extends StObject {
   
   /**
     * The bot ID.
     */
-  var BotId: js.UndefOr[String] = js.native
+  var BotId: js.UndefOr[String] = js.undefined
   
   /**
     * Lambda function ARN that allows a bot to receive outgoing events.
     */
-  var LambdaFunctionArn: js.UndefOr[SensitiveString] = js.native
+  var LambdaFunctionArn: js.UndefOr[SensitiveString] = js.undefined
   
   /**
     * HTTPS endpoint that allows a bot to receive outgoing events.
     */
-  var OutboundEventsHTTPSEndpoint: js.UndefOr[SensitiveString] = js.native
+  var OutboundEventsHTTPSEndpoint: js.UndefOr[SensitiveString] = js.undefined
 }
 object EventsConfiguration {
   

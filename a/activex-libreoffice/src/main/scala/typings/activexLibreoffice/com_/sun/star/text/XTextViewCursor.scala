@@ -4,24 +4,24 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes a cursor in a text document's view. */
-@js.native
-trait XTextViewCursor extends XTextCursor {
+trait XTextViewCursor
+  extends StObject
+     with XTextCursor {
   
   /** @returns the cursor's coordinates relative to the top left position of the first page of the document. */
-  val Position: Point = js.native
+  val Position: Point
   
   /** @returns the cursor's coordinates relative to the top left position of the first page of the document. */
-  def getPosition(): Point = js.native
+  def getPosition(): Point
   
   /** @returns `TRUE` if this cursor is visible for the user. */
-  def isVisible(): Boolean = js.native
+  def isVisible(): Boolean
   
   /** shows or hides this cursor for the user. */
-  def setVisible(bVisible: Boolean): Unit = js.native
+  def setVisible(bVisible: Boolean): Unit
 }
 object XTextViewCursor {
   

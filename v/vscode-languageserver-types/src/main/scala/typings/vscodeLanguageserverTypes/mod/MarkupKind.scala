@@ -4,7 +4,6 @@ import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesStrings.markdo
 import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesStrings.plaintext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -13,6 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait MarkupKind extends StObject
 object MarkupKind {
+  
+  @JSImport("vscode-languageserver-types", "MarkupKind")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Markdown is supported as a content format
@@ -31,7 +34,6 @@ object MarkupKind {
   /**
     * Checks whether the given value is a value of the [MarkupKind](#MarkupKind) type.
     */
-  @JSImport("vscode-languageserver-types", "MarkupKind.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkupKind */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkupKind */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.MarkupKind */ Boolean]
 }

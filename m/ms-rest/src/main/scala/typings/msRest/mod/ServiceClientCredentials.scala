@@ -3,10 +3,8 @@ package typings.msRest.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceClientCredentials extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ServiceClientCredentials extends StObject {
     * @param {WebResource} The WebResource to be signed.
     * @param {function(error)}  callback  The callback function.
     */
-  def signRequest(webResource: WebResource, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def signRequest(webResource: WebResource, callback: js.Function1[/* err */ Error, Unit]): Unit
 }
 object ServiceClientCredentials {
   

@@ -3,66 +3,64 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cookie extends StObject {
   
   /**
     * Cookie domain.
     */
-  var domain: String = js.native
+  var domain: String
   
   /**
     * Cookie expiration date as the number of seconds since the UNIX epoch.
     */
-  var expires: Double = js.native
+  var expires: Double
   
   /**
     * True if cookie is http-only.
     */
-  var httpOnly: Boolean = js.native
+  var httpOnly: Boolean
   
   /**
     * Cookie name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Cookie path.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * Cookie Priority
     */
-  var priority: CookiePriority = js.native
+  var priority: CookiePriority
   
   /**
     * Cookie SameSite type.
     */
-  var sameSite: js.UndefOr[CookieSameSite] = js.native
+  var sameSite: js.UndefOr[CookieSameSite] = js.undefined
   
   /**
     * True if cookie is secure.
     */
-  var secure: Boolean = js.native
+  var secure: Boolean
   
   /**
     * True in case of session cookie.
     */
-  var session: Boolean = js.native
+  var session: Boolean
   
   /**
     * Cookie size.
     */
-  var size: integer = js.native
+  var size: integer
   
   /**
     * Cookie value.
     */
-  var value: String = js.native
+  var value: String
 }
 object Cookie {
   

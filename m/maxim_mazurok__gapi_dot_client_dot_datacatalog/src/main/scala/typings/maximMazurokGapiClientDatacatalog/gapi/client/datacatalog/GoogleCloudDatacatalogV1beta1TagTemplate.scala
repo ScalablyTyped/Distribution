@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1TagTemplate extends StObject {
   
   /** The display name for this template. Defaults to an empty string. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Map of tag template field IDs to the settings for the field. This map is an exhaustive list of the allowed fields. This map must contain at least one field and at most 500
@@ -20,14 +18,14 @@ trait GoogleCloudDatacatalogV1beta1TagTemplate extends StObject {
   var fields: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.datacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1beta1TagTemplateField}
-    */ typings.maximMazurokGapiClientDatacatalog.maximMazurokGapiClientDatacatalogStrings.GoogleCloudDatacatalogV1beta1TagTemplate with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDatacatalog.maximMazurokGapiClientDatacatalogStrings.GoogleCloudDatacatalogV1beta1TagTemplate & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * The resource name of the tag template in URL format. Example: * projects/{project_id}/locations/{location}/tagTemplates/{tag_template_id} Note that this TagTemplate and its child
     * resources may not actually be stored in the location in this name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1TagTemplate {
   
@@ -50,7 +48,7 @@ object GoogleCloudDatacatalogV1beta1TagTemplate {
     def setFields(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.datacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1beta1TagTemplateField}
-      */ typings.maximMazurokGapiClientDatacatalog.maximMazurokGapiClientDatacatalogStrings.GoogleCloudDatacatalogV1beta1TagTemplate with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatacatalog.maximMazurokGapiClientDatacatalogStrings.GoogleCloudDatacatalogV1beta1TagTemplate & TopLevel[js.Any]
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline

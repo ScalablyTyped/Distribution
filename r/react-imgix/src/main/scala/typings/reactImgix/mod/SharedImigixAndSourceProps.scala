@@ -2,29 +2,29 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SharedImigixAndSourceProps extends CommonProps {
+trait SharedImigixAndSourceProps
+  extends StObject
+     with CommonProps {
   
-  var attributeConfig: js.UndefOr[AttributeConfig] = js.native
+  var attributeConfig: js.UndefOr[AttributeConfig] = js.undefined
   
-  var disableLibraryParam: js.UndefOr[Boolean] = js.native
+  var disableLibraryParam: js.UndefOr[Boolean] = js.undefined
   
-  var disableQualityByDPR: js.UndefOr[Boolean] = js.native
+  var disableQualityByDPR: js.UndefOr[Boolean] = js.undefined
   
-  var disableSrcSet: js.UndefOr[Boolean] = js.native
+  var disableSrcSet: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var imgixParams: js.UndefOr[ImigixParams] = js.native
+  var imgixParams: js.UndefOr[ImigixParams] = js.undefined
   
-  var sizes: js.UndefOr[String] = js.native
+  var sizes: js.UndefOr[String] = js.undefined
   
-  var src: String = js.native
+  var src: String
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SharedImigixAndSourceProps {
   

@@ -1,47 +1,45 @@
 organization := "org.scalablytyped"
 name := "react-plotly_dot_js"
-version := "2.2-dt-20200515Z-b30a39"
-scalaVersion := "2.13.3"
+version := "2.2-dt-20200515Z-2995f3"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-b4f267",
-  "org.scalablytyped" %%% "d3" % "6.2-dt-20201118Z-222bdf",
-  "org.scalablytyped" %%% "d3-array" % "2.8-dt-20201116Z-bfcf93",
-  "org.scalablytyped" %%% "d3-axis" % "2.0-dt-20201104Z-a0aa4c",
-  "org.scalablytyped" %%% "d3-brush" % "2.1-dt-20200930Z-67b03f",
-  "org.scalablytyped" %%% "d3-chord" % "2.0-dt-20200929Z-d0b525",
-  "org.scalablytyped" %%% "d3-color" % "2.0-dt-20201117Z-b3fe4c",
-  "org.scalablytyped" %%% "d3-contour" % "2.0-dt-20200930Z-6de8c4",
-  "org.scalablytyped" %%% "d3-delaunay" % "5.3-dt-20200930Z-313e48",
-  "org.scalablytyped" %%% "d3-dispatch" % "2.0-dt-20200930Z-e0ec82",
-  "org.scalablytyped" %%% "d3-drag" % "2.0-dt-20201028Z-2574ff",
-  "org.scalablytyped" %%% "d3-dsv" % "2.0-dt-20201001Z-b6baad",
-  "org.scalablytyped" %%% "d3-ease" % "2.0-dt-20200930Z-1567a4",
-  "org.scalablytyped" %%% "d3-fetch" % "2.0-dt-20201001Z-56d841",
-  "org.scalablytyped" %%% "d3-force" % "2.1-dt-20201002Z-394c2b",
-  "org.scalablytyped" %%% "d3-format" % "2.0-dt-20200930Z-685f3e",
-  "org.scalablytyped" %%% "d3-geo" % "2.0-dt-20201002Z-835234",
-  "org.scalablytyped" %%% "d3-hierarchy" % "2.0-dt-20200929Z-11a1ea",
-  "org.scalablytyped" %%% "d3-interpolate" % "2.0-dt-20201001Z-121073",
-  "org.scalablytyped" %%% "d3-path" % "2.0-dt-20201002Z-f8c6f6",
-  "org.scalablytyped" %%% "d3-quadtree" % "2.0-dt-20200930Z-4d3001",
-  "org.scalablytyped" %%% "d3-random" % "2.2-dt-20201002Z-7b1002",
-  "org.scalablytyped" %%% "d3-scale" % "3.2-dt-20201104Z-3567e5",
-  "org.scalablytyped" %%% "d3-selection" % "2.0-dt-20201002Z-c00acc",
-  "org.scalablytyped" %%% "d3-shape" % "2.0-dt-20201028Z-44996d",
-  "org.scalablytyped" %%% "d3-time" % "2.0-dt-20201002Z-9a0554",
-  "org.scalablytyped" %%% "d3-time-format" % "3.0-dt-20201002Z-74408e",
-  "org.scalablytyped" %%% "d3-timer" % "2.0-dt-20201002Z-3ffd74",
-  "org.scalablytyped" %%% "d3-transition" % "2.0-dt-20201002Z-fcabd1",
-  "org.scalablytyped" %%% "d3-zoom" % "2.0-dt-20201104Z-3dcb5d",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20201002Z-9fb8ea",
-  "org.scalablytyped" %%% "plotly_dot_js" % "1.54-dt-20201028Z-7fad5e",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-7dc507",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-9253ae",
-  "org.scalablytyped" %%% "std" % "4.1-40053c")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "csstype" % "2.6.14-b8d190",
+  "org.scalablytyped" %%% "d3" % "6.2-dt-20201118Z-238d14",
+  "org.scalablytyped" %%% "d3-array" % "2.8-dt-20201116Z-b7e11e",
+  "org.scalablytyped" %%% "d3-axis" % "2.0-dt-20201104Z-0e0933",
+  "org.scalablytyped" %%% "d3-brush" % "2.1-dt-20200930Z-8041c9",
+  "org.scalablytyped" %%% "d3-chord" % "2.0-dt-20200929Z-2c448a",
+  "org.scalablytyped" %%% "d3-color" % "2.0-dt-20201117Z-64d81e",
+  "org.scalablytyped" %%% "d3-contour" % "2.0-dt-20200930Z-42cade",
+  "org.scalablytyped" %%% "d3-delaunay" % "5.3-dt-20200930Z-472d0a",
+  "org.scalablytyped" %%% "d3-dispatch" % "2.0-dt-20200930Z-f1257f",
+  "org.scalablytyped" %%% "d3-drag" % "2.0-dt-20201028Z-cea22b",
+  "org.scalablytyped" %%% "d3-dsv" % "2.0-dt-20201001Z-d03388",
+  "org.scalablytyped" %%% "d3-ease" % "2.0-dt-20200930Z-c67511",
+  "org.scalablytyped" %%% "d3-fetch" % "2.0-dt-20201001Z-d274c2",
+  "org.scalablytyped" %%% "d3-force" % "2.1-dt-20201002Z-46589a",
+  "org.scalablytyped" %%% "d3-format" % "2.0-dt-20200930Z-a75265",
+  "org.scalablytyped" %%% "d3-geo" % "2.0-dt-20201002Z-f96104",
+  "org.scalablytyped" %%% "d3-hierarchy" % "2.0-dt-20200929Z-ecb2ab",
+  "org.scalablytyped" %%% "d3-interpolate" % "2.0-dt-20201001Z-d5db1f",
+  "org.scalablytyped" %%% "d3-path" % "2.0-dt-20201002Z-1156c5",
+  "org.scalablytyped" %%% "d3-quadtree" % "2.0-dt-20200930Z-a61218",
+  "org.scalablytyped" %%% "d3-random" % "2.2-dt-20201002Z-d17e5c",
+  "org.scalablytyped" %%% "d3-scale" % "3.2-dt-20201104Z-e6650a",
+  "org.scalablytyped" %%% "d3-selection" % "2.0-dt-20201002Z-68e4fa",
+  "org.scalablytyped" %%% "d3-shape" % "2.0-dt-20201028Z-f64cca",
+  "org.scalablytyped" %%% "d3-time" % "2.0-dt-20201002Z-ab0101",
+  "org.scalablytyped" %%% "d3-time-format" % "3.0-dt-20201002Z-d95368",
+  "org.scalablytyped" %%% "d3-timer" % "2.0-dt-20201002Z-f43798",
+  "org.scalablytyped" %%% "d3-transition" % "2.0-dt-20201002Z-a74a74",
+  "org.scalablytyped" %%% "d3-zoom" % "2.0-dt-20201104Z-e733a2",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20201002Z-fc1d16",
+  "org.scalablytyped" %%% "plotly_dot_js" % "1.54-dt-20201028Z-45497d",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-a12f9a",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-c80121",
+  "org.scalablytyped" %%% "std" % "4.1-044efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

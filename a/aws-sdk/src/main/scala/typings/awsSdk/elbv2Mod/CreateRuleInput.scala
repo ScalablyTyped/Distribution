@@ -2,36 +2,34 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRuleInput extends StObject {
   
   /**
     * The actions.
     */
-  var Actions: typings.awsSdk.elbv2Mod.Actions = js.native
+  var Actions: typings.awsSdk.elbv2Mod.Actions
   
   /**
     * The conditions.
     */
-  var Conditions: RuleConditionList = js.native
+  var Conditions: RuleConditionList
   
   /**
     * The Amazon Resource Name (ARN) of the listener.
     */
-  var ListenerArn: typings.awsSdk.elbv2Mod.ListenerArn = js.native
+  var ListenerArn: typings.awsSdk.elbv2Mod.ListenerArn
   
   /**
     * The rule priority. A listener can't have multiple rules with the same priority.
     */
-  var Priority: RulePriority = js.native
+  var Priority: RulePriority
   
   /**
     * The tags to assign to the rule.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateRuleInput {
   

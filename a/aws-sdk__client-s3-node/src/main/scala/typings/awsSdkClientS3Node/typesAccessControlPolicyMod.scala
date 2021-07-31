@@ -7,23 +7,21 @@ import typings.awsSdkClientS3Node.typesOwnerMod.UnmarshalledOwner
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAccessControlPolicyMod {
   
-  @js.native
   trait AccessControlPolicy extends StObject {
     
     /**
       * <p>A list of grants.</p>
       */
-    var Grants: js.UndefOr[js.Array[Grant] | Iterable[Grant]] = js.native
+    var Grants: js.UndefOr[js.Array[Grant] | Iterable[Grant]] = js.undefined
     
     /**
       * _Owner shape
       */
-    var Owner: js.UndefOr[typings.awsSdkClientS3Node.typesOwnerMod.Owner] = js.native
+    var Owner: js.UndefOr[typings.awsSdkClientS3Node.typesOwnerMod.Owner] = js.undefined
   }
   object AccessControlPolicy {
     
@@ -53,20 +51,21 @@ object typesAccessControlPolicyMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledAccessControlPolicy extends AccessControlPolicy {
+  trait UnmarshalledAccessControlPolicy
+    extends StObject
+       with AccessControlPolicy {
     
     /**
       * <p>A list of grants.</p>
       */
     @JSName("Grants")
-    var Grants_UnmarshalledAccessControlPolicy: js.UndefOr[js.Array[UnmarshalledGrant]] = js.native
+    var Grants_UnmarshalledAccessControlPolicy: js.UndefOr[js.Array[UnmarshalledGrant]] = js.undefined
     
     /**
       * _Owner shape
       */
     @JSName("Owner")
-    var Owner_UnmarshalledAccessControlPolicy: js.UndefOr[UnmarshalledOwner] = js.native
+    var Owner_UnmarshalledAccessControlPolicy: js.UndefOr[UnmarshalledOwner] = js.undefined
   }
   object UnmarshalledAccessControlPolicy {
     

@@ -6,7 +6,6 @@ import typings.postcss.mod.Plugin_
 import typings.postcssPresetEnv.mod.pluginOptions.features
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -22,7 +21,6 @@ object mod extends Shortcut {
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: PostcssPresetEnv = ^
   
-  @js.native
   trait pluginOptions extends StObject {
     
     /**
@@ -36,7 +34,7 @@ object mod extends Shortcut {
       *
       * Passing `autoprefixer: false` disables autoprefixer.
       */
-    var autoprefixer: js.UndefOr[Boolean | Options] = js.native
+    var autoprefixer: js.UndefOr[Boolean | Options] = js.undefined
     
     /**
       * The browsers option determines which polyfills are required based upon
@@ -51,7 +49,7 @@ object mod extends Shortcut {
       *
       * @default default
       */
-    var browsers: js.UndefOr[String] = js.native
+    var browsers: js.UndefOr[String] = js.undefined
     
     /**
       * The `exportTo` option specifies destinations where variables like
@@ -59,7 +57,7 @@ object mod extends Shortcut {
       * Environment Variables can be exported to, which might be
       * CSS, JS, and JSON files, functions, and directly passed objects.
       */
-    var exportTo: js.UndefOr[String | js.Array[_]] = js.native
+    var exportTo: js.UndefOr[String | js.Array[js.Any]] = js.undefined
     
     /**
       * The features option enables or disables specific polyfills by ID.
@@ -72,7 +70,7 @@ object mod extends Shortcut {
       * Any polyfills not explicitly enabled or disabled through `features`
       * are determined by the `stage` option.
       */
-    var features: js.UndefOr[features] = js.native
+    var features: js.UndefOr[features] = js.undefined
     
     /**
       * The `importFrom` option specifies sources where variables like
@@ -80,7 +78,7 @@ object mod extends Shortcut {
       * Environment Variables can be imported from, which might be
       * CSS, JS, and JSON files, functions, and directly passed objects.
       */
-    var importFrom: js.UndefOr[String | js.Array[_]] = js.native
+    var importFrom: js.UndefOr[String | js.Array[js.Any]] = js.undefined
     
     /**
       * The `insertAfter` keys allow you to insert other PostCSS plugins
@@ -88,7 +86,7 @@ object mod extends Shortcut {
       * PostCSS plugins that must execute before or after certain polyfills.
       * `insertAfter` support chaining one or multiple plugins.
       */
-    var insertAfter: js.UndefOr[js.Object] = js.native
+    var insertAfter: js.UndefOr[js.Object] = js.undefined
     
     /**
       * The `insertBefore` keys allow you to insert other PostCSS plugins
@@ -96,14 +94,14 @@ object mod extends Shortcut {
       * PostCSS plugins that must execute before or after certain polyfills.
       * `insertBefore` support chaining one or multiple plugins.
       */
-    var insertBefore: js.UndefOr[js.Object] = js.native
+    var insertBefore: js.UndefOr[js.Object] = js.undefined
     
     /**
       * The `preserve` option determines whether all plugins should receive
       * a `preserve` option, which may preserve or remove otherwise-polyfilled CSS.
       * By default, this option is not configured.
       */
-    var preserve: js.UndefOr[Boolean] = js.native
+    var preserve: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The stage option determines which CSS features to polyfill,
@@ -119,7 +117,7 @@ object mod extends Shortcut {
       * Without any configuration options, PostCSS Preset Env enables
       * **Stage 2** features.
       */
-    var stage: js.UndefOr[Double] = js.native
+    var stage: js.UndefOr[Double] = js.undefined
   }
   object pluginOptions {
     
@@ -129,74 +127,73 @@ object mod extends Shortcut {
       __obj.asInstanceOf[pluginOptions]
     }
     
-    @js.native
     trait features extends StObject {
       
-      var `all-property`: js.UndefOr[Boolean | js.Object] = js.native
+      var `all-property`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `any-link-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.native
+      var `any-link-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `blank-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.native
+      var `blank-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `break-properties`: js.UndefOr[Boolean | js.Object] = js.native
+      var `break-properties`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `case-insensitive-attributes`: js.UndefOr[Boolean | js.Object] = js.native
+      var `case-insensitive-attributes`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `color-functional-notation`: js.UndefOr[Boolean | js.Object] = js.native
+      var `color-functional-notation`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `color-mod-function`: js.UndefOr[Boolean | js.Object] = js.native
+      var `color-mod-function`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `custom-media-queries`: js.UndefOr[Boolean | js.Object] = js.native
+      var `custom-media-queries`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `custom-properties`: js.UndefOr[Boolean | js.Object] = js.native
+      var `custom-properties`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `custom-selectors`: js.UndefOr[Boolean | js.Object] = js.native
+      var `custom-selectors`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `dir-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.native
+      var `dir-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `double-position-gradients`: js.UndefOr[Boolean | js.Object] = js.native
+      var `double-position-gradients`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `environment-variables`: js.UndefOr[Boolean | js.Object] = js.native
+      var `environment-variables`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `focus-visible-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.native
+      var `focus-visible-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `focus-within-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.native
+      var `focus-within-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `font-variant-property`: js.UndefOr[Boolean | js.Object] = js.native
+      var `font-variant-property`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `gap-properties`: js.UndefOr[Boolean | js.Object] = js.native
+      var `gap-properties`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `gray-function`: js.UndefOr[Boolean | js.Object] = js.native
+      var `gray-function`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `has-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.native
+      var `has-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `hexadecimal-alpha-notation`: js.UndefOr[Boolean | js.Object] = js.native
+      var `hexadecimal-alpha-notation`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `image-set-function`: js.UndefOr[Boolean | js.Object] = js.native
+      var `image-set-function`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `lab-function`: js.UndefOr[Boolean | js.Object] = js.native
+      var `lab-function`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `logical-properties-and-values`: js.UndefOr[Boolean | js.Object] = js.native
+      var `logical-properties-and-values`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `matches-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.native
+      var `matches-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `media-query-ranges`: js.UndefOr[Boolean | js.Object] = js.native
+      var `media-query-ranges`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `nesting-rules`: js.UndefOr[Boolean | js.Object] = js.native
+      var `nesting-rules`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `not-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.native
+      var `not-pseudo-class`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `overflow-property`: js.UndefOr[Boolean | js.Object] = js.native
+      var `overflow-property`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `overflow-wrap-property`: js.UndefOr[Boolean | js.Object] = js.native
+      var `overflow-wrap-property`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `place-properties`: js.UndefOr[Boolean | js.Object] = js.native
+      var `place-properties`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `prefers-color-scheme-query`: js.UndefOr[Boolean | js.Object] = js.native
+      var `prefers-color-scheme-query`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `rebeccapurple-color`: js.UndefOr[Boolean | js.Object] = js.native
+      var `rebeccapurple-color`: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var `system-ui-font-family`: js.UndefOr[Boolean | js.Object] = js.native
+      var `system-ui-font-family`: js.UndefOr[Boolean | js.Object] = js.undefined
     }
     object features {
       
@@ -425,7 +422,7 @@ object mod extends Shortcut {
       def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
       
       @scala.inline
-      def setExportTo(value: String | js.Array[_]): Self = StObject.set(x, "exportTo", value.asInstanceOf[js.Any])
+      def setExportTo(value: String | js.Array[js.Any]): Self = StObject.set(x, "exportTo", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setExportToUndefined: Self = StObject.set(x, "exportTo", js.undefined)
@@ -440,7 +437,7 @@ object mod extends Shortcut {
       def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
       
       @scala.inline
-      def setImportFrom(value: String | js.Array[_]): Self = StObject.set(x, "importFrom", value.asInstanceOf[js.Any])
+      def setImportFrom(value: String | js.Array[js.Any]): Self = StObject.set(x, "importFrom", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImportFromUndefined: Self = StObject.set(x, "importFrom", js.undefined)

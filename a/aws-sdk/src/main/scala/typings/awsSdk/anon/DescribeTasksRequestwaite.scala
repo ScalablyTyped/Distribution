@@ -7,30 +7,28 @@ import typings.awsSdk.ecsMod.TaskFieldList
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/ecs.DescribeTasksRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
-@js.native
 trait DescribeTasksRequestwaite extends StObject {
   
   @JSName("$waiter")
-  var $waiter: js.UndefOr[WaiterConfiguration] = js.native
+  var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the task or tasks to describe. If you do not specify a cluster, the default cluster is assumed. This parameter is required if the task or tasks you are describing were launched in any cluster other than the default cluster.
     */
-  var cluster: js.UndefOr[String] = js.native
+  var cluster: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether you want to see the resource tags for the task. If TAGS is specified, the tags are included in the response. If this field is omitted, tags are not included in the response.
     */
-  var include: js.UndefOr[TaskFieldList] = js.native
+  var include: js.UndefOr[TaskFieldList] = js.undefined
   
   /**
     * A list of up to 100 task IDs or full ARN entries.
     */
-  var tasks: StringList = js.native
+  var tasks: StringList
 }
 object DescribeTasksRequestwaite {
   

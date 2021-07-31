@@ -16,15 +16,14 @@ import typings.awsSdkClientXrayNode.putTraceSegmentsExceptionsUnionMod.PutTraceS
 import typings.awsSdkClientXrayNode.updateSamplingRuleExceptionsUnionMod.UpdateSamplingRuleExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidRequestExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidRequestExceptionDetails> * / any */ @js.native
-  trait InvalidRequestException
-    extends BatchGetTracesExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidRequestExceptionDetails> * / any */ trait InvalidRequestException
+    extends StObject
+       with BatchGetTracesExceptionsUnion
        with CreateSamplingRuleExceptionsUnion
        with DeleteSamplingRuleExceptionsUnion
        with GetEncryptionConfigExceptionsUnion
@@ -39,13 +38,13 @@ object typesInvalidRequestExceptionMod {
        with PutTraceSegmentsExceptionsUnion
        with UpdateSamplingRuleExceptionsUnion {
     
-    var name: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.InvalidRequestException = js.native
+    var name: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.InvalidRequestException
   }
   object InvalidRequestException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.InvalidRequestException): InvalidRequestException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidRequestException = {
+      val __obj = js.Dynamic.literal(name = "InvalidRequestException")
       __obj.asInstanceOf[InvalidRequestException]
     }
     
@@ -57,13 +56,12 @@ object typesInvalidRequestExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidRequestExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
   }
   object InvalidRequestExceptionDetails {
     

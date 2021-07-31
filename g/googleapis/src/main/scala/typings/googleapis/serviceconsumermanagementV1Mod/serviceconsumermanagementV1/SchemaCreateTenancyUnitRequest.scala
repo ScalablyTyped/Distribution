@@ -2,14 +2,12 @@ package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to create a tenancy unit for a service consumer of a managed
   * service.
   */
-@js.native
 trait SchemaCreateTenancyUnitRequest extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaCreateTenancyUnitRequest extends StObject {
     * pair, calling `CreateTenancyUnit` returns the existing tenancy unit if
     * the provided identifier is identical or empty, otherwise the call fails.
     */
-  var tenancyUnitId: js.UndefOr[String] = js.native
+  var tenancyUnitId: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateTenancyUnitRequest {
   

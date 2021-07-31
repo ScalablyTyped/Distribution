@@ -2,49 +2,47 @@ package typings.googleapis.booksV1Mod.booksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaNotification extends StObject {
   
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * The list of crm experiment ids.
     */
-  var crmExperimentIds: js.UndefOr[js.Array[String]] = js.native
+  var crmExperimentIds: js.UndefOr[js.Array[String]] = js.undefined
   
-  var doc_id: js.UndefOr[String] = js.native
+  var doc_id: js.UndefOr[String] = js.undefined
   
-  var doc_type: js.UndefOr[String] = js.native
+  var doc_type: js.UndefOr[String] = js.undefined
   
-  var dont_show_notification: js.UndefOr[Boolean] = js.native
+  var dont_show_notification: js.UndefOr[Boolean] = js.undefined
   
-  var iconUrl: js.UndefOr[String] = js.native
+  var iconUrl: js.UndefOr[String] = js.undefined
   
-  var is_document_mature: js.UndefOr[Boolean] = js.native
+  var is_document_mature: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var notificationGroup: js.UndefOr[String] = js.native
+  var notificationGroup: js.UndefOr[String] = js.undefined
   
-  var notification_type: js.UndefOr[String] = js.native
+  var notification_type: js.UndefOr[String] = js.undefined
   
-  var pcampaign_id: js.UndefOr[String] = js.native
+  var pcampaign_id: js.UndefOr[String] = js.undefined
   
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
-  var show_notification_settings_action: js.UndefOr[Boolean] = js.native
+  var show_notification_settings_action: js.UndefOr[Boolean] = js.undefined
   
-  var targetUrl: js.UndefOr[String] = js.native
+  var targetUrl: js.UndefOr[String] = js.undefined
   
-  var timeToExpireMs: js.UndefOr[String] = js.native
+  var timeToExpireMs: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaNotification {
   

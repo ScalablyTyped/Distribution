@@ -3,26 +3,24 @@ package typings.freedom.freedom
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object UdpSocket {
   
-  @js.native
   trait Implementation extends StObject {
     
-    def bind(address: String, port: Double, continuation: js.Function0[Unit]): Unit = js.native
+    def bind(address: String, port: Double, continuation: js.Function0[Unit]): Unit
     
-    def destroy(continuation: js.Function0[Unit]): Unit = js.native
+    def destroy(continuation: js.Function0[Unit]): Unit
     
-    def getInfo(continuation: js.Function1[/* socketInfo */ SocketInfo, Unit]): Unit = js.native
+    def getInfo(continuation: js.Function1[/* socketInfo */ SocketInfo, Unit]): Unit
     
     def sendTo(
       data: ArrayBuffer,
       address: String,
       port: Double,
       continuation: js.Function1[/* bytesWritten */ Double, Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object Implementation {
     
@@ -57,16 +55,15 @@ object UdpSocket {
   // Type for the chrome.socket.recvFrom callback:
   //   http://developer.chrome.com/apps/socket#method-recvFrom
   // This is also the type returned to onData callbacks.
-  @js.native
   trait RecvFromInfo extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var data: ArrayBuffer = js.native
+    var data: ArrayBuffer
     
-    var port: Double = js.native
+    var port: Double
     
-    var resultCode: Double = js.native
+    var resultCode: Double
   }
   object RecvFromInfo {
     
@@ -93,32 +90,63 @@ object UdpSocket {
     }
   }
   
-  @js.native
   trait Socket extends StObject {
     
-    def bind(address: String, port: Double): js.Promise[Unit] = js.native
+    def bind(address: String, port: Double): js.Promise[Unit]
     
-    def destroy(): js.Promise[Unit] = js.native
+    def destroy(): js.Promise[Unit]
     
-    def getInfo(): js.Promise[SocketInfo] = js.native
+    def getInfo(): js.Promise[SocketInfo]
     
-    def on(name: String, listener: js.Function): Unit = js.native
+    def on(name: String, listener: js.Function): Unit
     
-    def sendTo(a: ArrayBuffer, b: String, c: Double): js.Promise[Double] = js.native
+    def sendTo(a: ArrayBuffer, b: String, c: Double): js.Promise[Double]
     @JSName("sendTo")
-    var sendTo_Original: Method3[ArrayBuffer, String, Double, Double] = js.native
+    var sendTo_Original: Method3[ArrayBuffer, String, Double, Double]
+  }
+  object Socket {
+    
+    @scala.inline
+    def apply(
+      bind: (String, Double) => js.Promise[Unit],
+      destroy: () => js.Promise[Unit],
+      getInfo: () => js.Promise[SocketInfo],
+      on: (String, js.Function) => Unit,
+      sendTo: Method3[ArrayBuffer, String, Double, Double]
+    ): Socket = {
+      val __obj = js.Dynamic.literal(bind = js.Any.fromFunction2(bind), destroy = js.Any.fromFunction0(destroy), getInfo = js.Any.fromFunction0(getInfo), on = js.Any.fromFunction2(on), sendTo = sendTo.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Socket]
+    }
+    
+    @scala.inline
+    implicit class SocketMutableBuilder[Self <: Socket] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBind(value: (String, Double) => js.Promise[Unit]): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setDestroy(value: () => js.Promise[Unit]): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetInfo(value: () => js.Promise[SocketInfo]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setOn(value: (String, js.Function) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setSendTo(value: Method3[ArrayBuffer, String, Double, Double]): Self = StObject.set(x, "sendTo", value.asInstanceOf[js.Any])
+    }
   }
   
   // Type for the chrome.socket.getInfo callback:
   //   https://developer.chrome.com/apps/sockets_udp#type-SocketInfo
   // This is also the type returned by getInfo().
-  @js.native
   trait SocketInfo extends StObject {
     
     // Note that there are other fields but these are the ones we care about.
-    var localAddress: String = js.native
+    var localAddress: String
     
-    var localPort: Double = js.native
+    var localPort: Double
   }
   object SocketInfo {
     

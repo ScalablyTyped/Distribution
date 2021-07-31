@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.GetNodeForLocationRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetNodeForLocationResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetNodeForLocationResponse extends StObject {
   
-  var paramsType: js.Array[GetNodeForLocationRequest] = js.native
+  var paramsType: js.Array[GetNodeForLocationRequest]
   
-  var returnType: GetNodeForLocationResponse = js.native
+  var returnType: GetNodeForLocationResponse
 }
 object ReturnTypeGetNodeForLocationResponse {
   

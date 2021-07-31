@@ -3,39 +3,39 @@ package typings.rollupPluginJson
 import typings.rollup.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rollup-plugin-json", JSImport.Namespace)
-  @js.native
-  def apply(): Plugin = js.native
-  @JSImport("rollup-plugin-json", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Plugin = js.native
+  @scala.inline
+  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  @scala.inline
+  def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
+  @JSImport("rollup-plugin-json", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var exclude: js.UndefOr[String | js.Array[String]] = js.native
+    var exclude: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       *  All JSON files will be parsed by default, but you can also specifically include/exclude files
       */
-    var include: js.UndefOr[String | js.Array[String]] = js.native
+    var include: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * specify indentation for the generated default export — defaults to '\t'
       * @default '\t'
       */
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
     /**
       *  for tree-shaking, properties will be declared as variables, using either `var` or `const`
       *  @default false
       */
-    var preferConst: js.UndefOr[Boolean] = js.native
+    var preferConst: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

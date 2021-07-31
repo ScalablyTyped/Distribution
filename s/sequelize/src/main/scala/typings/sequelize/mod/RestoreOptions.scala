@@ -2,40 +2,40 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for Model.restore
   */
-@js.native
-trait RestoreOptions extends LoggingOptions {
+trait RestoreOptions
+  extends StObject
+     with LoggingOptions {
   
   /**
     * Run before / after bulk restore hooks?
     */
-  var hooks: js.UndefOr[Boolean] = js.native
+  var hooks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, restore will find all records within the where parameter and will execute before / after
     * bulkRestore hooks on each row
     */
-  var individualHooks: js.UndefOr[Boolean] = js.native
+  var individualHooks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * How many rows to undelete
     */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /**
     * Transaction to run query under
     */
-  var transaction: js.UndefOr[Transaction] = js.native
+  var transaction: js.UndefOr[Transaction] = js.undefined
   
   /**
     * Filter the restore
     */
-  var where: js.UndefOr[AnyWhereOptions] = js.native
+  var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 object RestoreOptions {
   

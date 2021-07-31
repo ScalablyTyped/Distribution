@@ -4,17 +4,15 @@ import typings.onfleetNodeOnfleet.tasksMod.Barcode
 import typings.onfleetNodeOnfleet.tasksMod.CapturedBarcode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Captured extends StObject {
   
   /** Once a task is completed for which barcodes have been captured, the capture details can be found here */
-  var captured: js.Array[CapturedBarcode] = js.native
+  var captured: js.Array[CapturedBarcode]
   
   /** The requested barcodes */
-  var required: js.Array[Barcode] = js.native
+  var required: js.Array[Barcode]
 }
 object Captured {
   

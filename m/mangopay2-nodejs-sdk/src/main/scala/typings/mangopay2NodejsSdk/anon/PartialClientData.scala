@@ -4,50 +4,48 @@ import typings.mangopay2NodejsSdk.mod.address.AddressType
 import typings.mangopay2NodejsSdk.mod.client.PlatformCategorization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.client.ClientData> */
-@js.native
 trait PartialClientData extends StObject {
   
-  var AdminEmails: js.UndefOr[js.Array[String]] = js.native
+  var AdminEmails: js.UndefOr[js.Array[String]] = js.undefined
   
-  var BillingEmails: js.UndefOr[js.Array[String]] = js.native
+  var BillingEmails: js.UndefOr[js.Array[String]] = js.undefined
   
-  var ClientId: js.UndefOr[String] = js.native
+  var ClientId: js.UndefOr[String] = js.undefined
   
-  var CompanyReference: js.UndefOr[String] = js.native
+  var CompanyReference: js.UndefOr[String] = js.undefined
   
-  var CreationDate: js.UndefOr[Double] = js.native
+  var CreationDate: js.UndefOr[Double] = js.undefined
   
-  var FraudEmails: js.UndefOr[js.Array[String]] = js.native
+  var FraudEmails: js.UndefOr[js.Array[String]] = js.undefined
   
-  var HeadquartersAddress: js.UndefOr[AddressType] = js.native
+  var HeadquartersAddress: js.UndefOr[AddressType] = js.undefined
   
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
-  var Logo: js.UndefOr[String] = js.native
+  var Logo: js.UndefOr[String] = js.undefined
   
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
-  var PlatformCategorization: js.UndefOr[typings.mangopay2NodejsSdk.mod.client.PlatformCategorization] = js.native
+  var PlatformCategorization: js.UndefOr[typings.mangopay2NodejsSdk.mod.client.PlatformCategorization] = js.undefined
   
-  var PlatformDescription: js.UndefOr[String] = js.native
+  var PlatformDescription: js.UndefOr[String] = js.undefined
   
-  var PlatformURL: js.UndefOr[String] = js.native
+  var PlatformURL: js.UndefOr[String] = js.undefined
   
-  var PrimaryButtonColour: js.UndefOr[String] = js.native
+  var PrimaryButtonColour: js.UndefOr[String] = js.undefined
   
-  var PrimaryThemeColour: js.UndefOr[String] = js.native
+  var PrimaryThemeColour: js.UndefOr[String] = js.undefined
   
-  var RegisteredName: js.UndefOr[String] = js.native
+  var RegisteredName: js.UndefOr[String] = js.undefined
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
   
-  var TaxNumber: js.UndefOr[String] = js.native
+  var TaxNumber: js.UndefOr[String] = js.undefined
   
-  var TechEmails: js.UndefOr[js.Array[String]] = js.native
+  var TechEmails: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PartialClientData {
   

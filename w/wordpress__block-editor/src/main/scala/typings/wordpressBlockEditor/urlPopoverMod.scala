@@ -7,7 +7,6 @@ import typings.react.mod.global.JSX.Element
 import typings.wordpressBlockEditor.urlPopoverMod.URLPopover.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlPopoverMod {
@@ -26,18 +25,18 @@ object urlPopoverMod {
   
   object URLPopover {
     
-    @js.native
     trait Props
-      extends typings.wordpressComponents.popoverMod.Popover.Props {
+      extends StObject
+         with typings.wordpressComponents.popoverMod.Popover.Props {
       
-      var additionalControls: js.UndefOr[ReactNode] = js.native
+      var additionalControls: js.UndefOr[ReactNode] = js.undefined
       
       /**
         * Callback used to return the React Elements that will be rendered inside the settings
         * drawer. When this function is provided, a toggle button will be rendered in the popover
         * that allows the user to open and close the settings drawer.
         */
-      var renderSettings: js.UndefOr[js.Function0[Element]] = js.native
+      var renderSettings: js.UndefOr[js.Function0[Element]] = js.undefined
     }
     object Props {
       

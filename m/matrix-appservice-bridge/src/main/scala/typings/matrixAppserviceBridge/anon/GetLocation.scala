@@ -7,10 +7,8 @@ import typings.matrixAppserviceBridge.thirdpartyMod.ThirdpartyUserResponse
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLocation extends StObject {
   
   var getLocation: js.UndefOr[
@@ -19,9 +17,9 @@ trait GetLocation extends StObject {
       /* fields */ Record[String, js.Array[String] | String], 
       PossiblePromise[js.Array[ThirdpartyLocationResponse]]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var getProtocol: js.UndefOr[js.Function1[/* protocol */ String, PossiblePromise[ThirdpartyProtocolResponse]]] = js.native
+  var getProtocol: js.UndefOr[js.Function1[/* protocol */ String, PossiblePromise[ThirdpartyProtocolResponse]]] = js.undefined
   
   var getUser: js.UndefOr[
     js.Function2[
@@ -29,17 +27,17 @@ trait GetLocation extends StObject {
       /* fields */ Record[String, js.Array[String] | String], 
       PossiblePromise[js.Array[ThirdpartyUserResponse]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var parseLocation: js.UndefOr[
     js.Function1[/* alias */ String, PossiblePromise[js.Array[ThirdpartyLocationResponse]]]
-  ] = js.native
+  ] = js.undefined
   
   var parseUser: js.UndefOr[
     js.Function1[/* userid */ String, PossiblePromise[js.Array[ThirdpartyLocationResponse]]]
-  ] = js.native
+  ] = js.undefined
   
-  var protocols: js.Array[String] = js.native
+  var protocols: js.Array[String]
 }
 object GetLocation {
   

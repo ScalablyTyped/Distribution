@@ -2,19 +2,17 @@ package typings.opentelemetryCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idGeneratorMod {
   
-  @js.native
   trait IdGenerator extends StObject {
     
     /** Returns a span ID composed of 16 lowercase hex characters. */
-    def generateSpanId(): String = js.native
+    def generateSpanId(): String
     
     /** Returns a trace ID composed of 32 lowercase hex characters. */
-    def generateTraceId(): String = js.native
+    def generateTraceId(): String
   }
   object IdGenerator {
     

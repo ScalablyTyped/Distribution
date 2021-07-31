@@ -6,7 +6,6 @@ import typings.maximMazurokGapiClientGmailpostmastertools.anon.Alt
 import typings.maximMazurokGapiClientGmailpostmastertools.anon.Callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -15,17 +14,16 @@ object gapi {
     
     object gmailpostmastertools {
       
-      @js.native
       trait DeliveryError extends StObject {
         
         /** The class of delivery error. */
-        var errorClass: js.UndefOr[String] = js.native
+        var errorClass: js.UndefOr[String] = js.undefined
         
         /** The ratio of messages where the error occurred vs all authenticated traffic. */
-        var errorRatio: js.UndefOr[Double] = js.native
+        var errorRatio: js.UndefOr[Double] = js.undefined
         
         /** The type of delivery error. */
-        var errorType: js.UndefOr[String] = js.native
+        var errorType: js.UndefOr[String] = js.undefined
       }
       object DeliveryError {
         
@@ -58,17 +56,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait Domain extends StObject {
         
         /** Timestamp when the user registered this domain. Assigned by the server. */
-        var createTime: js.UndefOr[String] = js.native
+        var createTime: js.UndefOr[String] = js.undefined
         
         /** The resource name of the Domain. Domain names have the form `domains/{domain_name}`, where domain_name is the fully qualified domain name (i.e., mymail.mydomain.com). */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** User’s permission for this domain. Assigned by the server. */
-        var permission: js.UndefOr[String] = js.native
+        var permission: js.UndefOr[String] = js.undefined
       }
       object Domain {
         
@@ -118,14 +115,13 @@ object gapi {
         var trafficStats: TrafficStatsResource = js.native
       }
       
-      @js.native
       trait FeedbackLoop extends StObject {
         
         /** Feedback loop identifier that uniquely identifies individual campaigns. */
-        var id: js.UndefOr[String] = js.native
+        var id: js.UndefOr[String] = js.undefined
         
         /** The ratio of user marked spam messages with the identifier vs the total number of inboxed messages with that identifier. */
-        var spamRatio: js.UndefOr[Double] = js.native
+        var spamRatio: js.UndefOr[Double] = js.undefined
       }
       object FeedbackLoop {
         
@@ -152,17 +148,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait IpReputation extends StObject {
         
         /** Total number of unique IPs in this reputation category. This metric only pertains to traffic that passed [SPF](http://www.openspf.org/) or [DKIM](http://www.dkim.org/). */
-        var numIps: js.UndefOr[String] = js.native
+        var numIps: js.UndefOr[String] = js.undefined
         
         /** The reputation category this IP reputation represents. */
-        var reputation: js.UndefOr[String] = js.native
+        var reputation: js.UndefOr[String] = js.undefined
         
         /** A sample of IPs in this reputation category. */
-        var sampleIps: js.UndefOr[js.Array[String]] = js.native
+        var sampleIps: js.UndefOr[js.Array[String]] = js.undefined
       }
       object IpReputation {
         
@@ -198,14 +193,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait ListDomainsResponse extends StObject {
         
         /** The list of domains. */
-        var domains: js.UndefOr[js.Array[Domain]] = js.native
+        var domains: js.UndefOr[js.Array[Domain]] = js.undefined
         
         /** Token to retrieve the next page of results, or empty if there are no more results in the list. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object ListDomainsResponse {
         
@@ -235,14 +229,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait ListTrafficStatsResponse extends StObject {
         
         /** Token to retrieve the next page of results, or empty if there are no more results in the list. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
         
         /** The list of TrafficStats. */
-        var trafficStats: js.UndefOr[js.Array[TrafficStats]] = js.native
+        var trafficStats: js.UndefOr[js.Array[TrafficStats]] = js.undefined
       }
       object ListTrafficStatsResponse {
         
@@ -272,57 +265,56 @@ object gapi {
         }
       }
       
-      @js.native
       trait TrafficStats extends StObject {
         
         /** Delivery errors for the domain. This metric only pertains to traffic that passed [SPF](http://www.openspf.org/) or [DKIM](http://www.dkim.org/). */
-        var deliveryErrors: js.UndefOr[js.Array[DeliveryError]] = js.native
+        var deliveryErrors: js.UndefOr[js.Array[DeliveryError]] = js.undefined
         
         /** The ratio of mail that successfully authenticated with DKIM vs. all mail that attempted to authenticate with [DKIM](http://www.dkim.org/). Spoofed mail is excluded. */
-        var dkimSuccessRatio: js.UndefOr[Double] = js.native
+        var dkimSuccessRatio: js.UndefOr[Double] = js.undefined
         
         /**
           * The ratio of mail that passed [DMARC](https://dmarc.org/) alignment checks vs all mail received from the domain that successfully authenticated with either of
           * [SPF](http://www.openspf.org/) or [DKIM](http://www.dkim.org/).
           */
-        var dmarcSuccessRatio: js.UndefOr[Double] = js.native
+        var dmarcSuccessRatio: js.UndefOr[Double] = js.undefined
         
         /** Reputation of the domain. */
-        var domainReputation: js.UndefOr[String] = js.native
+        var domainReputation: js.UndefOr[String] = js.undefined
         
         /**
           * The ratio of incoming mail (to Gmail), that passed secure transport (TLS) vs all mail received from that domain. This metric only pertains to traffic that passed
           * [SPF](http://www.openspf.org/) or [DKIM](http://www.dkim.org/).
           */
-        var inboundEncryptionRatio: js.UndefOr[Double] = js.native
+        var inboundEncryptionRatio: js.UndefOr[Double] = js.undefined
         
         /**
           * Reputation information pertaining to the IP addresses of the email servers for the domain. There is exactly one entry for each reputation category except
           * REPUTATION_CATEGORY_UNSPECIFIED.
           */
-        var ipReputations: js.UndefOr[js.Array[IpReputation]] = js.native
+        var ipReputations: js.UndefOr[js.Array[IpReputation]] = js.undefined
         
         /**
           * The resource name of the traffic statistics. Traffic statistic names have the form `domains/{domain}/trafficStats/{date}`, where domain_name is the fully qualified domain name
           * (i.e., mymail.mydomain.com) of the domain this traffic statistics pertains to and date is the date in yyyymmdd format that these statistics corresponds to. For example:
           * domains/mymail.mydomain.com/trafficStats/20160807
           */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** The ratio of outgoing mail (from Gmail) that was accepted over secure transport (TLS). */
-        var outboundEncryptionRatio: js.UndefOr[Double] = js.native
+        var outboundEncryptionRatio: js.UndefOr[Double] = js.undefined
         
         /**
           * Spammy [Feedback loop identifiers] (https://support.google.com/mail/answer/6254652) with their individual spam rates. This metric only pertains to traffic that is authenticated by
           * [DKIM](http://www.dkim.org/).
           */
-        var spammyFeedbackLoops: js.UndefOr[js.Array[FeedbackLoop]] = js.native
+        var spammyFeedbackLoops: js.UndefOr[js.Array[FeedbackLoop]] = js.undefined
         
         /** The ratio of mail that successfully authenticated with SPF vs. all mail that attempted to authenticate with [SPF](http://www.openspf.org/). Spoofed mail is excluded. */
-        var spfSuccessRatio: js.UndefOr[Double] = js.native
+        var spfSuccessRatio: js.UndefOr[Double] = js.undefined
         
         /** The ratio of user-report spam vs. email that was sent to the inbox. This metric only pertains to emails authenticated by [DKIM](http://www.dkim.org/). */
-        var userReportedSpamRatio: js.UndefOr[Double] = js.native
+        var userReportedSpamRatio: js.UndefOr[Double] = js.undefined
       }
       object TrafficStats {
         

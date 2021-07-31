@@ -2,14 +2,12 @@ package typings.semanticUiApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.ApiSettings._Impl, 'interruptRequests'> */
-@js.native
 trait PickImplinterruptRequests extends StObject {
   
-  var interruptRequests: Boolean = js.native
+  var interruptRequests: Boolean
 }
 object PickImplinterruptRequests {
   

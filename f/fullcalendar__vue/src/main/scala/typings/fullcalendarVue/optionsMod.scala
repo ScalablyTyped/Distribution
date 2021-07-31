@@ -15,25 +15,23 @@ import typings.std.Date
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
   type AllowFunc = js.Function2[/* span */ js.Any, /* movingEvent */ js.Any, Boolean]
   
-  @js.native
   trait BootstrapFontAwesome extends StObject {
     
-    var close: js.UndefOr[String] = js.native
+    var close: js.UndefOr[String] = js.undefined
     
-    var next: js.UndefOr[String] = js.native
+    var next: js.UndefOr[String] = js.undefined
     
-    var nextYear: js.UndefOr[String] = js.native
+    var nextYear: js.UndefOr[String] = js.undefined
     
-    var prev: js.UndefOr[String] = js.native
+    var prev: js.UndefOr[String] = js.undefined
     
-    var prevYear: js.UndefOr[String] = js.native
+    var prevYear: js.UndefOr[String] = js.undefined
   }
   object BootstrapFontAwesome {
     
@@ -78,16 +76,15 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait ButtonIcons extends StObject {
     
-    var next: js.UndefOr[String] = js.native
+    var next: js.UndefOr[String] = js.undefined
     
-    var nextYear: js.UndefOr[String] = js.native
+    var nextYear: js.UndefOr[String] = js.undefined
     
-    var prev: js.UndefOr[String] = js.native
+    var prev: js.UndefOr[String] = js.undefined
     
-    var prevYear: js.UndefOr[String] = js.native
+    var prevYear: js.UndefOr[String] = js.undefined
   }
   object ButtonIcons {
     
@@ -126,295 +123,296 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait CalendarProps extends StObject {
     
-    var allDayDefault: js.UndefOr[Boolean] = js.native
+    var allDayDefault: js.UndefOr[Boolean] = js.undefined
     
-    var allDayHtml: js.UndefOr[String] = js.native
+    var allDayHtml: js.UndefOr[String] = js.undefined
     
-    var allDayMaintainDuration: js.UndefOr[Boolean] = js.native
+    var allDayMaintainDuration: js.UndefOr[Boolean] = js.undefined
     
-    var allDaySlot: js.UndefOr[Boolean] = js.native
+    var allDaySlot: js.UndefOr[Boolean] = js.undefined
     
-    var allDayText: js.UndefOr[String] = js.native
+    var allDayText: js.UndefOr[String] = js.undefined
     
-    var aspectRatio: js.UndefOr[Double] = js.native
+    var aspectRatio: js.UndefOr[Double] = js.undefined
     
-    var bootstrapFontAwesome: js.UndefOr[BootstrapFontAwesome | Boolean] = js.native
+    var bootstrapFontAwesome: js.UndefOr[BootstrapFontAwesome | Boolean] = js.undefined
     
-    var businessHours: js.UndefOr[js.Any] = js.native
+    var businessHours: js.UndefOr[js.Any] = js.undefined
     
-    var buttonIcons: js.UndefOr[ButtonIcons | Boolean] = js.native
+    var buttonIcons: js.UndefOr[ButtonIcons | Boolean] = js.undefined
     
     // compound OptionsInput...
-    var buttonText: js.UndefOr[js.Any] = js.native
+    var buttonText: js.UndefOr[js.Any] = js.undefined
     
-    var cmdFormatter: js.UndefOr[String] = js.native
+    var cmdFormatter: js.UndefOr[String] = js.undefined
     
-    var columnHeader: js.UndefOr[Boolean] = js.native
+    var columnHeader: js.UndefOr[Boolean] = js.undefined
     
-    var columnHeaderFormat: js.UndefOr[FormatterInput] = js.native
+    var columnHeaderFormat: js.UndefOr[FormatterInput] = js.undefined
     
-    var columnHeaderHtml: js.UndefOr[String | (js.Function1[/* date */ DateInput, String])] = js.native
+    var columnHeaderHtml: js.UndefOr[String | (js.Function1[/* date */ DateInput, String])] = js.undefined
     
-    var columnHeaderText: js.UndefOr[String | (js.Function1[/* date */ DateInput, String])] = js.native
+    var columnHeaderText: js.UndefOr[String | (js.Function1[/* date */ DateInput, String])] = js.undefined
     
-    var contentHeight: js.UndefOr[Double | auto | js.Function0[Double]] = js.native
+    var contentHeight: js.UndefOr[Double | auto | js.Function0[Double]] = js.undefined
     
-    var customButtons: js.UndefOr[CustomButtons] = js.native
+    var customButtons: js.UndefOr[CustomButtons] = js.undefined
     
-    var dateAlignment: js.UndefOr[String] = js.native
+    var dateAlignment: js.UndefOr[String] = js.undefined
     
-    var dateIncrement: js.UndefOr[DurationInput] = js.native
+    var dateIncrement: js.UndefOr[DurationInput] = js.undefined
     
-    var datesAboveResources: js.UndefOr[js.Any] = js.native
+    var datesAboveResources: js.UndefOr[js.Any] = js.undefined
     
-    var datesDestroy: js.UndefOr[js.Any] = js.native
+    var datesDestroy: js.UndefOr[js.Any] = js.undefined
     
     // used to be emissions but are now props...
-    var datesRender: js.UndefOr[js.Any] = js.native
+    var datesRender: js.UndefOr[js.Any] = js.undefined
     
-    var dayCount: js.UndefOr[Double] = js.native
+    var dayCount: js.UndefOr[Double] = js.undefined
     
-    var dayPopoverFormat: js.UndefOr[FormatterInput] = js.native
+    var dayPopoverFormat: js.UndefOr[FormatterInput] = js.undefined
     
-    var dayRender: js.UndefOr[js.Any] = js.native
+    var dayRender: js.UndefOr[js.Any] = js.undefined
     
-    var defaultAllDayEventDuration: js.UndefOr[DurationInput] = js.native
+    var defaultAllDayEventDuration: js.UndefOr[DurationInput] = js.undefined
     
-    var defaultDate: js.UndefOr[DateInput] = js.native
+    var defaultDate: js.UndefOr[DateInput] = js.undefined
     
-    var defaultRangeSeparator: js.UndefOr[String] = js.native
+    var defaultRangeSeparator: js.UndefOr[String] = js.undefined
     
-    var defaultTimedEventDuration: js.UndefOr[DurationInput] = js.native
+    var defaultTimedEventDuration: js.UndefOr[DurationInput] = js.undefined
     
-    var defaultView: js.UndefOr[String] = js.native
+    var defaultView: js.UndefOr[String] = js.undefined
     
-    var dir: js.UndefOr[direction] = js.native
+    var dir: js.UndefOr[direction] = js.undefined
     
-    var displayEventEnd: js.UndefOr[Boolean] = js.native
+    var displayEventEnd: js.UndefOr[Boolean] = js.undefined
     
-    var displayEventTime: js.UndefOr[Boolean] = js.native
+    var displayEventTime: js.UndefOr[Boolean] = js.undefined
     
-    var dragRevertDuration: js.UndefOr[Double] = js.native
+    var dragRevertDuration: js.UndefOr[Double] = js.undefined
     
-    var dragScroll: js.UndefOr[Boolean] = js.native
+    var dragScroll: js.UndefOr[Boolean] = js.undefined
     
-    var dropAccept: js.UndefOr[String | (js.Function1[/* draggable */ js.Any, Boolean])] = js.native
+    var dropAccept: js.UndefOr[String | (js.Function1[/* draggable */ js.Any, Boolean])] = js.undefined
     
-    var droppable: js.UndefOr[Boolean] = js.native
+    var droppable: js.UndefOr[Boolean] = js.undefined
     
-    var duration: js.UndefOr[DurationInput] = js.native
+    var duration: js.UndefOr[DurationInput] = js.undefined
     
-    var editable: js.UndefOr[Boolean] = js.native
+    var editable: js.UndefOr[Boolean] = js.undefined
     
-    var endParam: js.UndefOr[String] = js.native
+    var endParam: js.UndefOr[String] = js.undefined
     
-    var eventAllow: js.UndefOr[AllowFunc] = js.native
+    var eventAllow: js.UndefOr[AllowFunc] = js.undefined
     
-    var eventBackgroundColor: js.UndefOr[String] = js.native
+    var eventBackgroundColor: js.UndefOr[String] = js.undefined
     
-    var eventBorderColor: js.UndefOr[String] = js.native
+    var eventBorderColor: js.UndefOr[String] = js.undefined
     
-    var eventClassName: js.UndefOr[js.Array[String] | String] = js.native
+    var eventClassName: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var eventClassNames: js.UndefOr[js.Array[String] | String] = js.native
+    var eventClassNames: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var eventColor: js.UndefOr[String] = js.native
+    var eventColor: js.UndefOr[String] = js.undefined
     
-    var eventConstraint: js.UndefOr[js.Any] = js.native
+    var eventConstraint: js.UndefOr[js.Any] = js.undefined
     
-    var eventDataTransform: js.UndefOr[js.Any] = js.native
+    var eventDataTransform: js.UndefOr[js.Any] = js.undefined
     
-    var eventDestroy: js.UndefOr[js.Any] = js.native
+    var eventDestroy: js.UndefOr[js.Any] = js.undefined
     
-    var eventDragMinDistance: js.UndefOr[Double] = js.native
+    var eventDragMinDistance: js.UndefOr[Double] = js.undefined
     
-    var eventDurationEditable: js.UndefOr[Boolean] = js.native
+    var eventDurationEditable: js.UndefOr[Boolean] = js.undefined
     
-    var eventLimit: js.UndefOr[Boolean | Double] = js.native
+    var eventLimit: js.UndefOr[Boolean | Double] = js.undefined
     
     var eventLimitClick: js.UndefOr[
         popover | week | day | timeGridWeek | timeGridDay | String | (js.Function1[/* arg */ AllDay, Unit])
-      ] = js.native
+      ] = js.undefined
     
-    var eventLimitText: js.UndefOr[String | (js.Function1[/* eventCnt */ Double, String])] = js.native
+    var eventLimitText: js.UndefOr[String | (js.Function1[/* eventCnt */ Double, String])] = js.undefined
     
-    var eventLongPressDelay: js.UndefOr[Double] = js.native
+    var eventLongPressDelay: js.UndefOr[Double] = js.undefined
     
-    var eventOrder: js.UndefOr[String | (js.Array[(js.Function2[/* a */ _, /* b */ _, Double]) | String])] = js.native
+    var eventOrder: js.UndefOr[
+        String | (js.Array[(js.Function2[/* a */ js.Any, /* b */ js.Any, Double]) | String])
+      ] = js.undefined
     
-    var eventOverlap: js.UndefOr[Boolean | OverlapFunc] = js.native
+    var eventOverlap: js.UndefOr[Boolean | OverlapFunc] = js.undefined
     
-    var eventRender: js.UndefOr[js.Any] = js.native
+    var eventRender: js.UndefOr[js.Any] = js.undefined
     
-    var eventResizableFromStart: js.UndefOr[Boolean] = js.native
+    var eventResizableFromStart: js.UndefOr[Boolean] = js.undefined
     
-    var eventSourceFailure: js.UndefOr[js.Any] = js.native
+    var eventSourceFailure: js.UndefOr[js.Any] = js.undefined
     
-    var eventSourceSuccess: js.UndefOr[js.Any] = js.native
+    var eventSourceSuccess: js.UndefOr[js.Any] = js.undefined
     
-    var eventSources: js.UndefOr[js.Array[_]] = js.native
+    var eventSources: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var eventStartEditable: js.UndefOr[Boolean] = js.native
+    var eventStartEditable: js.UndefOr[Boolean] = js.undefined
     
-    var eventTextColor: js.UndefOr[String] = js.native
+    var eventTextColor: js.UndefOr[String] = js.undefined
     
-    var eventTimeFormat: js.UndefOr[FormatterInput] = js.native
+    var eventTimeFormat: js.UndefOr[FormatterInput] = js.undefined
     
-    var events: js.UndefOr[js.Any] = js.native
+    var events: js.UndefOr[js.Any] = js.undefined
     
-    var filterResourcesWithEvents: js.UndefOr[js.Any] = js.native
+    var filterResourcesWithEvents: js.UndefOr[js.Any] = js.undefined
     
-    var firstDay: js.UndefOr[Double] = js.native
+    var firstDay: js.UndefOr[Double] = js.undefined
     
-    var fixedWeekCount: js.UndefOr[Boolean] = js.native
+    var fixedWeekCount: js.UndefOr[Boolean] = js.undefined
     
-    var footer: js.UndefOr[ToolbarInput | Boolean] = js.native
+    var footer: js.UndefOr[ToolbarInput | Boolean] = js.undefined
     
-    var forceEventDuration: js.UndefOr[Boolean] = js.native
+    var forceEventDuration: js.UndefOr[Boolean] = js.undefined
     
-    var googleCalendarApiKey: js.UndefOr[js.Any] = js.native
+    var googleCalendarApiKey: js.UndefOr[js.Any] = js.undefined
     
-    var handleWindowResize: js.UndefOr[Boolean] = js.native
+    var handleWindowResize: js.UndefOr[Boolean] = js.undefined
     
-    var header: js.UndefOr[ToolbarInput | Boolean] = js.native
+    var header: js.UndefOr[ToolbarInput | Boolean] = js.undefined
     
-    var height: js.UndefOr[Double | auto | parent | js.Function0[Double]] = js.native
+    var height: js.UndefOr[Double | auto | parent | js.Function0[Double]] = js.undefined
     
-    var hiddenDays: js.UndefOr[js.Array[Double]] = js.native
+    var hiddenDays: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var lazyFetching: js.UndefOr[Boolean] = js.native
+    var lazyFetching: js.UndefOr[Boolean] = js.undefined
     
-    var listDayAltFormat: js.UndefOr[FormatterInput | Boolean] = js.native
+    var listDayAltFormat: js.UndefOr[FormatterInput | Boolean] = js.undefined
     
-    var listDayFormat: js.UndefOr[FormatterInput | Boolean] = js.native
+    var listDayFormat: js.UndefOr[FormatterInput | Boolean] = js.undefined
     
-    var locale: js.UndefOr[LocaleSingularArg] = js.native
+    var locale: js.UndefOr[LocaleSingularArg] = js.undefined
     
-    var locales: js.UndefOr[js.Array[RawLocale]] = js.native
+    var locales: js.UndefOr[js.Array[RawLocale]] = js.undefined
     
-    var longPressDelay: js.UndefOr[Double] = js.native
+    var longPressDelay: js.UndefOr[Double] = js.undefined
     
-    var maxTime: js.UndefOr[DurationInput] = js.native
+    var maxTime: js.UndefOr[DurationInput] = js.undefined
     
-    var minTime: js.UndefOr[DurationInput] = js.native
+    var minTime: js.UndefOr[DurationInput] = js.undefined
     
-    var navLinkDayClick: js.UndefOr[String | (js.Function2[/* date */ Date, /* jsEvent */ Event, Unit])] = js.native
+    var navLinkDayClick: js.UndefOr[String | (js.Function2[/* date */ Date, /* jsEvent */ Event, Unit])] = js.undefined
     
-    var navLinkWeekClick: js.UndefOr[String | (js.Function2[/* weekStart */ js.Any, /* jsEvent */ Event, Unit])] = js.native
+    var navLinkWeekClick: js.UndefOr[String | (js.Function2[/* weekStart */ js.Any, /* jsEvent */ Event, Unit])] = js.undefined
     
-    var navLinks: js.UndefOr[Boolean] = js.native
+    var navLinks: js.UndefOr[Boolean] = js.undefined
     
-    var nextDayThreshold: js.UndefOr[DurationInput] = js.native
+    var nextDayThreshold: js.UndefOr[DurationInput] = js.undefined
     
-    var noEventsMessage: js.UndefOr[String] = js.native
+    var noEventsMessage: js.UndefOr[String] = js.undefined
     
-    var now: js.UndefOr[DateInput | js.Function0[DateInput]] = js.native
+    var now: js.UndefOr[DateInput | js.Function0[DateInput]] = js.undefined
     
-    var nowIndicator: js.UndefOr[Boolean] = js.native
+    var nowIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var plugins: js.UndefOr[js.Any] = js.native
+    var plugins: js.UndefOr[js.Any] = js.undefined
     
-    var progressiveEventRendering: js.UndefOr[Boolean] = js.native
+    var progressiveEventRendering: js.UndefOr[Boolean] = js.undefined
     
-    var refetchResourcesOnNavigate: js.UndefOr[js.Any] = js.native
+    var refetchResourcesOnNavigate: js.UndefOr[js.Any] = js.undefined
     
-    var rerenderDelay: js.UndefOr[Double | Null] = js.native
+    var rerenderDelay: js.UndefOr[Double | Null] = js.undefined
     
-    var resourceAreaWidth: js.UndefOr[js.Any] = js.native
+    var resourceAreaWidth: js.UndefOr[js.Any] = js.undefined
     
-    var resourceColumns: js.UndefOr[js.Any] = js.native
+    var resourceColumns: js.UndefOr[js.Any] = js.undefined
     
-    var resourceGroupField: js.UndefOr[js.Any] = js.native
+    var resourceGroupField: js.UndefOr[js.Any] = js.undefined
     
-    var resourceGroupText: js.UndefOr[js.Any] = js.native
+    var resourceGroupText: js.UndefOr[js.Any] = js.undefined
     
-    var resourceLabelText: js.UndefOr[js.Any] = js.native
+    var resourceLabelText: js.UndefOr[js.Any] = js.undefined
     
-    var resourceOrder: js.UndefOr[js.Any] = js.native
+    var resourceOrder: js.UndefOr[js.Any] = js.undefined
     
-    var resourceRender: js.UndefOr[js.Any] = js.native
+    var resourceRender: js.UndefOr[js.Any] = js.undefined
     
-    var resourceText: js.UndefOr[js.Any] = js.native
+    var resourceText: js.UndefOr[js.Any] = js.undefined
     
-    var resources: js.UndefOr[js.Any] = js.native
+    var resources: js.UndefOr[js.Any] = js.undefined
     
-    var resourcesInitiallyExpanded: js.UndefOr[js.Any] = js.native
+    var resourcesInitiallyExpanded: js.UndefOr[js.Any] = js.undefined
     
     // scheduler...
-    var schedulerLicenseKey: js.UndefOr[js.Any] = js.native
+    var schedulerLicenseKey: js.UndefOr[js.Any] = js.undefined
     
-    var scrollTime: js.UndefOr[DurationInput] = js.native
+    var scrollTime: js.UndefOr[DurationInput] = js.undefined
     
-    var selectAllow: js.UndefOr[AllowFunc] = js.native
+    var selectAllow: js.UndefOr[AllowFunc] = js.undefined
     
-    var selectConstraint: js.UndefOr[js.Any] = js.native
+    var selectConstraint: js.UndefOr[js.Any] = js.undefined
     
-    var selectLongPressDelay: js.UndefOr[Double] = js.native
+    var selectLongPressDelay: js.UndefOr[Double] = js.undefined
     
-    var selectMinDistance: js.UndefOr[Double] = js.native
+    var selectMinDistance: js.UndefOr[Double] = js.undefined
     
-    var selectMirror: js.UndefOr[Boolean] = js.native
+    var selectMirror: js.UndefOr[Boolean] = js.undefined
     
-    var selectOverlap: js.UndefOr[Boolean | OverlapFunc] = js.native
+    var selectOverlap: js.UndefOr[Boolean | OverlapFunc] = js.undefined
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var showNonCurrentDates: js.UndefOr[Boolean] = js.native
+    var showNonCurrentDates: js.UndefOr[Boolean] = js.undefined
     
-    var slotDuration: js.UndefOr[DurationInput] = js.native
+    var slotDuration: js.UndefOr[DurationInput] = js.undefined
     
-    var slotEventOverlap: js.UndefOr[Boolean] = js.native
+    var slotEventOverlap: js.UndefOr[Boolean] = js.undefined
     
-    var slotLabelFormat: js.UndefOr[FormatterInput] = js.native
+    var slotLabelFormat: js.UndefOr[FormatterInput] = js.undefined
     
-    var slotLabelInterval: js.UndefOr[DurationInput] = js.native
+    var slotLabelInterval: js.UndefOr[DurationInput] = js.undefined
     
-    var slotWidth: js.UndefOr[js.Any] = js.native
+    var slotWidth: js.UndefOr[js.Any] = js.undefined
     
-    var snapDuration: js.UndefOr[DurationInput] = js.native
+    var snapDuration: js.UndefOr[DurationInput] = js.undefined
     
-    var startParam: js.UndefOr[String] = js.native
+    var startParam: js.UndefOr[String] = js.undefined
     
-    var themeSystem: js.UndefOr[String] = js.native
+    var themeSystem: js.UndefOr[String] = js.undefined
     
-    var timeGridEventMinHeight: js.UndefOr[Double] = js.native
+    var timeGridEventMinHeight: js.UndefOr[Double] = js.undefined
     
-    var timeZone: js.UndefOr[String | Boolean] = js.native
+    var timeZone: js.UndefOr[String | Boolean] = js.undefined
     
-    var timeZoneParam: js.UndefOr[String] = js.native
+    var timeZoneParam: js.UndefOr[String] = js.undefined
     
-    var titleFormat: js.UndefOr[FormatterInput] = js.native
+    var titleFormat: js.UndefOr[FormatterInput] = js.undefined
     
-    var titleRangeSeparator: js.UndefOr[String] = js.native
+    var titleRangeSeparator: js.UndefOr[String] = js.undefined
     
-    var unselectAuto: js.UndefOr[Boolean] = js.native
+    var unselectAuto: js.UndefOr[Boolean] = js.undefined
     
-    var unselectCancel: js.UndefOr[String] = js.native
+    var unselectCancel: js.UndefOr[String] = js.undefined
     
-    var validRange: js.UndefOr[DateRangeInput] = js.native
+    var validRange: js.UndefOr[DateRangeInput] = js.undefined
     
-    var viewSkeletonDestroy: js.UndefOr[js.Any] = js.native
+    var viewSkeletonDestroy: js.UndefOr[js.Any] = js.undefined
     
-    var viewSkeletonRender: js.UndefOr[js.Any] = js.native
+    var viewSkeletonRender: js.UndefOr[js.Any] = js.undefined
     
-    var views: js.UndefOr[js.Any] = js.native
+    var views: js.UndefOr[js.Any] = js.undefined
     
-    var visibleRange: js.UndefOr[(js.Function1[/* currentDate */ Date, DateRangeInput]) | DateRangeInput] = js.native
+    var visibleRange: js.UndefOr[(js.Function1[/* currentDate */ Date, DateRangeInput]) | DateRangeInput] = js.undefined
     
-    var weekLabel: js.UndefOr[String] = js.native
+    var weekLabel: js.UndefOr[String] = js.undefined
     
-    var weekNumberCalculation: js.UndefOr[local | ISO | (js.Function1[/* m */ Date, Double])] = js.native
+    var weekNumberCalculation: js.UndefOr[local | ISO | (js.Function1[/* m */ Date, Double])] = js.undefined
     
-    var weekNumbers: js.UndefOr[Boolean] = js.native
+    var weekNumbers: js.UndefOr[Boolean] = js.undefined
     
-    var weekNumbersWithinDays: js.UndefOr[Boolean] = js.native
+    var weekNumbersWithinDays: js.UndefOr[Boolean] = js.undefined
     
-    var weekends: js.UndefOr[Boolean] = js.native
+    var weekends: js.UndefOr[Boolean] = js.undefined
     
-    var windowResizeDelay: js.UndefOr[Double] = js.native
+    var windowResizeDelay: js.UndefOr[Double] = js.undefined
   }
   object CalendarProps {
     
@@ -793,13 +791,13 @@ object optionsMod {
       def setEventLongPressDelayUndefined: Self = StObject.set(x, "eventLongPressDelay", js.undefined)
       
       @scala.inline
-      def setEventOrder(value: String | (js.Array[(js.Function2[/* a */ _, /* b */ _, Double]) | String])): Self = StObject.set(x, "eventOrder", value.asInstanceOf[js.Any])
+      def setEventOrder(value: String | (js.Array[(js.Function2[/* a */ js.Any, /* b */ js.Any, Double]) | String])): Self = StObject.set(x, "eventOrder", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEventOrderUndefined: Self = StObject.set(x, "eventOrder", js.undefined)
       
       @scala.inline
-      def setEventOrderVarargs(value: ((js.Function2[js.Any, js.Any, Double]) | String)*): Self = StObject.set(x, "eventOrder", js.Array(value :_*))
+      def setEventOrderVarargs(value: ((js.Function2[/* a */ js.Any, /* b */ js.Any, Double]) | String)*): Self = StObject.set(x, "eventOrder", js.Array(value :_*))
       
       @scala.inline
       def setEventOverlap(value: Boolean | OverlapFunc): Self = StObject.set(x, "eventOverlap", value.asInstanceOf[js.Any])
@@ -835,7 +833,7 @@ object optionsMod {
       def setEventSourceSuccessUndefined: Self = StObject.set(x, "eventSourceSuccess", js.undefined)
       
       @scala.inline
-      def setEventSources(value: js.Array[_]): Self = StObject.set(x, "eventSources", value.asInstanceOf[js.Any])
+      def setEventSources(value: js.Array[js.Any]): Self = StObject.set(x, "eventSources", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEventSourcesUndefined: Self = StObject.set(x, "eventSources", js.undefined)
@@ -1370,16 +1368,15 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait CustomButton extends StObject {
     
-    var bootstrapFontAwesome: js.UndefOr[js.Any] = js.native
+    var bootstrapFontAwesome: js.UndefOr[js.Any] = js.undefined
     
-    var click: js.UndefOr[js.Function0[_]] = js.native
+    var click: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var icon: js.UndefOr[js.Any] = js.native
+    var icon: js.UndefOr[js.Any] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object CustomButton {
     
@@ -1399,7 +1396,7 @@ object optionsMod {
       def setBootstrapFontAwesomeUndefined: Self = StObject.set(x, "bootstrapFontAwesome", js.undefined)
       
       @scala.inline
-      def setClick(value: () => _): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      def setClick(value: () => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
       @scala.inline
       def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
@@ -1422,12 +1419,11 @@ object optionsMod {
   
   type DateInput = Date | String | Double | js.Array[Double]
   
-  @js.native
   trait DateRangeInput extends StObject {
     
-    var end: js.UndefOr[DateInput] = js.native
+    var end: js.UndefOr[DateInput] = js.undefined
     
-    var start: js.UndefOr[DateInput] = js.native
+    var start: js.UndefOr[DateInput] = js.undefined
   }
   object DateRangeInput {
     
@@ -1462,42 +1458,41 @@ object optionsMod {
   
   type DurationInput = DurationObjectInput | String | Double
   
-  @js.native
   trait DurationObjectInput extends StObject {
     
-    var day: js.UndefOr[Double] = js.native
+    var day: js.UndefOr[Double] = js.undefined
     
-    var days: js.UndefOr[Double] = js.native
+    var days: js.UndefOr[Double] = js.undefined
     
-    var hour: js.UndefOr[Double] = js.native
+    var hour: js.UndefOr[Double] = js.undefined
     
-    var hours: js.UndefOr[Double] = js.native
+    var hours: js.UndefOr[Double] = js.undefined
     
-    var millisecond: js.UndefOr[Double] = js.native
+    var millisecond: js.UndefOr[Double] = js.undefined
     
-    var milliseconds: js.UndefOr[Double] = js.native
+    var milliseconds: js.UndefOr[Double] = js.undefined
     
-    var minute: js.UndefOr[Double] = js.native
+    var minute: js.UndefOr[Double] = js.undefined
     
-    var minutes: js.UndefOr[Double] = js.native
+    var minutes: js.UndefOr[Double] = js.undefined
     
-    var month: js.UndefOr[Double] = js.native
+    var month: js.UndefOr[Double] = js.undefined
     
-    var months: js.UndefOr[Double] = js.native
+    var months: js.UndefOr[Double] = js.undefined
     
-    var ms: js.UndefOr[Double] = js.native
+    var ms: js.UndefOr[Double] = js.undefined
     
-    var second: js.UndefOr[Double] = js.native
+    var second: js.UndefOr[Double] = js.undefined
     
-    var seconds: js.UndefOr[Double] = js.native
+    var seconds: js.UndefOr[Double] = js.undefined
     
-    var week: js.UndefOr[Double] = js.native
+    var week: js.UndefOr[Double] = js.undefined
     
-    var weeks: js.UndefOr[Double] = js.native
+    var weeks: js.UndefOr[Double] = js.undefined
     
-    var year: js.UndefOr[Double] = js.native
+    var year: js.UndefOr[Double] = js.undefined
     
-    var years: js.UndefOr[Double] = js.native
+    var years: js.UndefOr[Double] = js.undefined
   }
   object DurationObjectInput {
     
@@ -1624,11 +1619,11 @@ object optionsMod {
   
   type OverlapFunc = js.Function2[/* stillEvent */ js.Any, /* movingEvent */ js.Any, Boolean]
   
-  @js.native
   trait RawLocale
-    extends /* otherProp */ StringDictionary[js.Any] {
+    extends StObject
+       with /* otherProp */ StringDictionary[js.Any] {
     
-    var code: String = js.native
+    var code: String
   }
   object RawLocale {
     
@@ -1646,14 +1641,13 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait ToolbarInput extends StObject {
     
-    var center: String = js.native
+    var center: String
     
-    var left: String = js.native
+    var left: String
     
-    var right: String = js.native
+    var right: String
   }
   object ToolbarInput {
     

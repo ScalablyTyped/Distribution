@@ -3,17 +3,15 @@ package typings.pubnub.mod
 import typings.pubnub.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddMessageActionParameters extends StObject {
   
-  var action: Value = js.native
+  var action: Value
   
-  var channel: String = js.native
+  var channel: String
   
-  var messageTimetoken: String = js.native
+  var messageTimetoken: String
 }
 object AddMessageActionParameters {
   

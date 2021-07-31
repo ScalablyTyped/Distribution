@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListExportsOutput extends StObject {
   
   /**
     * The output for the ListExports action.
     */
-  var Exports: js.UndefOr[typings.awsSdk.cloudformationMod.Exports] = js.native
+  var Exports: js.UndefOr[typings.awsSdk.cloudformationMod.Exports] = js.undefined
   
   /**
     * If the output exceeds 100 exported output values, a string that identifies the next page of exports. If there is no additional page, this value is null.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
 }
 object ListExportsOutput {
   

@@ -2,17 +2,17 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FontEdgingEnumValues extends EmbindEnum {
+trait FontEdgingEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Alias: FontEdging = js.native
+  var Alias: FontEdging
   
-  var AntiAlias: FontEdging = js.native
+  var AntiAlias: FontEdging
   
-  var SubpixelAntiAlias: FontEdging = js.native
+  var SubpixelAntiAlias: FontEdging
 }
 object FontEdgingEnumValues {
   

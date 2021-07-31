@@ -2,46 +2,44 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListItem extends StObject {
   
   /**
     * The date and time that a schema was created.
     */
-  var CreatedTime: js.UndefOr[CreatedTimestamp] = js.native
+  var CreatedTime: js.UndefOr[CreatedTimestamp] = js.undefined
   
   /**
     * A description for the schema.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * the name of the registry where the schema resides.
     */
-  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the schema.
     */
-  var SchemaArn: js.UndefOr[GlueResourceArn] = js.native
+  var SchemaArn: js.UndefOr[GlueResourceArn] = js.undefined
   
   /**
     * The name of the schema.
     */
-  var SchemaName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var SchemaName: js.UndefOr[SchemaRegistryNameString] = js.undefined
   
   /**
     * The status of the schema.
     */
-  var SchemaStatus: js.UndefOr[typings.awsSdk.glueMod.SchemaStatus] = js.native
+  var SchemaStatus: js.UndefOr[typings.awsSdk.glueMod.SchemaStatus] = js.undefined
   
   /**
     * The date and time that a schema was updated.
     */
-  var UpdatedTime: js.UndefOr[UpdatedTimestamp] = js.native
+  var UpdatedTime: js.UndefOr[UpdatedTimestamp] = js.undefined
 }
 object SchemaListItem {
   

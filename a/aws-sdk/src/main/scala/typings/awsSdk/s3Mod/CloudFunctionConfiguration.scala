@@ -2,30 +2,28 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudFunctionConfiguration extends StObject {
   
   /**
     * Lambda cloud function ARN that Amazon S3 can invoke when it detects events of the specified type.
     */
-  var CloudFunction: js.UndefOr[typings.awsSdk.s3Mod.CloudFunction] = js.native
+  var CloudFunction: js.UndefOr[typings.awsSdk.s3Mod.CloudFunction] = js.undefined
   
-  var Event: js.UndefOr[typings.awsSdk.s3Mod.Event] = js.native
+  var Event: js.UndefOr[typings.awsSdk.s3Mod.Event] = js.undefined
   
   /**
     * Bucket events for which to send notifications.
     */
-  var Events: js.UndefOr[EventList] = js.native
+  var Events: js.UndefOr[EventList] = js.undefined
   
-  var Id: js.UndefOr[NotificationId] = js.native
+  var Id: js.UndefOr[NotificationId] = js.undefined
   
   /**
     * The role supporting the invocation of the Lambda function
     */
-  var InvocationRole: js.UndefOr[CloudFunctionInvocationRole] = js.native
+  var InvocationRole: js.UndefOr[CloudFunctionInvocationRole] = js.undefined
 }
 object CloudFunctionConfiguration {
   

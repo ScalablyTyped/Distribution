@@ -4,7 +4,6 @@ import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.timeMod.Time
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signatureMod {
@@ -26,20 +25,20 @@ object signatureMod {
   /* static members */
   object Signature {
     
-    @JSImport("nodegit/signature", "Signature.default")
+    @JSImport("nodegit/signature", "Signature")
     @js.native
-    def default(repo: Repository): Signature = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/signature", "Signature.create")
-    @js.native
-    def create(name: String, email: String, time: Double, offset: Double): Signature = js.native
+    @scala.inline
+    def default(repo: Repository): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(repo.asInstanceOf[js.Any]).asInstanceOf[Signature]
     
-    @JSImport("nodegit/signature", "Signature.fromBuffer")
-    @js.native
-    def fromBuffer(buf: String): js.Promise[Signature] = js.native
+    @scala.inline
+    def create(name: String, email: String, time: Double, offset: Double): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], email.asInstanceOf[js.Any], time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Signature]
     
-    @JSImport("nodegit/signature", "Signature.now")
-    @js.native
-    def now(name: String, email: String): Signature = js.native
+    @scala.inline
+    def fromBuffer(buf: String): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
+    
+    @scala.inline
+    def now(name: String, email: String): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("now")(name.asInstanceOf[js.Any], email.asInstanceOf[js.Any])).asInstanceOf[Signature]
   }
 }

@@ -12,10 +12,13 @@ import typings.nodeZookeeperClient.nodeZookeeperClientStrings.state
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("node-zookeeper-client", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-zookeeper-client", "ACL")
   @js.native
@@ -361,12 +364,10 @@ object mod {
     def SYNC_CONNECTED_=(x: State): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNC_CONNECTED")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("node-zookeeper-client", "createClient")
-  @js.native
-  def createClient(connectionString: String): Client = js.native
-  @JSImport("node-zookeeper-client", "createClient")
-  @js.native
-  def createClient(connectionString: String, options: PartialOption): Client = js.native
+  @scala.inline
+  def createClient(connectionString: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(connectionString.asInstanceOf[js.Any]).asInstanceOf[Client]
+  @scala.inline
+  def createClient(connectionString: String, options: PartialOption): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(connectionString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
   
   @js.native
   trait Client extends EventEmitter {
@@ -1020,14 +1021,13 @@ object mod {
     def transaction(): Transaction = js.native
   }
   
-  @js.native
   trait Option extends StObject {
     
-    var retries: Double = js.native
+    var retries: Double
     
-    var sessionTimeout: Double = js.native
+    var sessionTimeout: Double
     
-    var spinDelay: Double = js.native
+    var spinDelay: Double
   }
   object Option {
     
@@ -1051,30 +1051,29 @@ object mod {
     }
   }
   
-  @js.native
   trait Stat extends StObject {
     
-    var aversion: Double = js.native
+    var aversion: Double
     
-    var ctime: Double = js.native
+    var ctime: Double
     
-    var cversion: Double = js.native
+    var cversion: Double
     
-    var czxid: Double = js.native
+    var czxid: Double
     
-    var dataLength: Double = js.native
+    var dataLength: Double
     
-    var ephemeralOwner: Double = js.native
+    var ephemeralOwner: Double
     
-    var mtime: Double = js.native
+    var mtime: Double
     
-    var mzxid: Double = js.native
+    var mzxid: Double
     
-    var numChildren: Double = js.native
+    var numChildren: Double
     
-    var pzxid: Double = js.native
+    var pzxid: Double
     
-    var version: Double = js.native
+    var version: Double
   }
   object Stat {
     

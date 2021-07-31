@@ -3,54 +3,52 @@ package typings.node.inspectorMod.Debugger
 import typings.node.inspectorMod.Runtime.RemoteObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JavaScript call frame. Array of call frames form the call stack.
   */
-@js.native
 trait CallFrame extends StObject {
   
   /**
     * Call frame identifier. This identifier is only valid while the virtual machine is paused.
     */
-  var callFrameId: CallFrameId = js.native
+  var callFrameId: CallFrameId
   
   /**
     * Location in the source code.
     */
-  var functionLocation: js.UndefOr[Location] = js.native
+  var functionLocation: js.UndefOr[Location] = js.undefined
   
   /**
     * Name of the JavaScript function called on this call frame.
     */
-  var functionName: String = js.native
+  var functionName: String
   
   /**
     * Location in the source code.
     */
-  var location: Location = js.native
+  var location: Location
   
   /**
     * The value being returned, if the function is at return point.
     */
-  var returnValue: js.UndefOr[RemoteObject] = js.native
+  var returnValue: js.UndefOr[RemoteObject] = js.undefined
   
   /**
     * Scope chain for this call frame.
     */
-  var scopeChain: js.Array[Scope] = js.native
+  var scopeChain: js.Array[Scope]
   
   /**
     * <code>this</code> object for this call frame.
     */
-  var `this`: RemoteObject = js.native
+  var `this`: RemoteObject
   
   /**
     * JavaScript script name or url.
     */
-  var url: String = js.native
+  var url: String
 }
 object CallFrame {
   

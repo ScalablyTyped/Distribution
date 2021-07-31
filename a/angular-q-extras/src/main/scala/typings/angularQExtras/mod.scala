@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -29,11 +28,11 @@ object mod extends Shortcut {
       def allSettled[T](
         promises: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof T ]: T[K] | angular.angular.IPromise<T[K]>}
-        */ typings.angularQExtras.angularQExtrasStrings.IQService with TopLevel[js.Any]
+        */ typings.angularQExtras.angularQExtrasStrings.IQService & TopLevel[js.Any]
       ): IPromise[
             /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof T ]: angular-q-extras.angular-q-extras.angular.PromiseValue<T[K]>}
-        */ typings.angularQExtras.angularQExtrasStrings.IQService with TopLevel[T]
+        */ typings.angularQExtras.angularQExtrasStrings.IQService & TopLevel[T]
           ] = js.native
       // tslint:enable:max-line-length
       def allSettled[TAll](promises: js.Array[TAll | IPromise[TAll]]): IPromise[js.Array[PromiseValue[TAll]]] = js.native
@@ -170,9 +169,9 @@ object mod extends Shortcut {
             ]
           ] = js.native
       
-      def isFulfilledState(promise: PromiseValue[_]): Boolean = js.native
+      def isFulfilledState(promise: PromiseValue[js.Any]): Boolean = js.native
       
-      def isRejectedState(promise: PromiseValue[_]): Boolean = js.native
+      def isRejectedState(promise: PromiseValue[js.Any]): Boolean = js.native
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -189,14 +188,13 @@ object mod extends Shortcut {
       def rejected: typings.angularQExtras.angularQExtrasStrings.rejected = "rejected".asInstanceOf[typings.angularQExtras.angularQExtrasStrings.rejected]
     }
     
-    @js.native
     trait PromiseValue[T] extends StObject {
       
-      var reason: js.UndefOr[js.Any] = js.native
+      var reason: js.UndefOr[js.Any] = js.undefined
       
-      var state: PromiseState = js.native
+      var state: PromiseState
       
-      var value: js.UndefOr[T] = js.native
+      var value: js.UndefOr[T] = js.undefined
     }
     object PromiseValue {
       
@@ -207,7 +205,7 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class PromiseValueMutableBuilder[Self <: PromiseValue[_], T] (val x: Self with PromiseValue[T]) extends AnyVal {
+      implicit class PromiseValueMutableBuilder[Self <: PromiseValue[?], T] (val x: Self & PromiseValue[T]) extends AnyVal {
         
         @scala.inline
         def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])

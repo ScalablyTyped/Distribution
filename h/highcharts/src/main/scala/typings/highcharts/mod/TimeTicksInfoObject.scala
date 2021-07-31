@@ -2,15 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeTicksInfoObject extends TimeNormalizedObject {
+trait TimeTicksInfoObject
+  extends StObject
+     with TimeNormalizedObject {
   
-  var higherRanks: js.Array[String] = js.native
+  var higherRanks: js.Array[String]
   
-  var totalRange: Double = js.native
+  var totalRange: Double
 }
 object TimeTicksInfoObject {
   

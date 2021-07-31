@@ -1,43 +1,43 @@
 package typings.ethereumjsVm
 
-import typings.bnJs.mod.^
 import typings.ethereumjsTx.mod.Transaction
 import typings.ethereumjsVm.bloomMod.default
 import typings.ethereumjsVm.evmMod.EVMResult
 import typings.ethereumjsVm.evmMod.ExecResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runTxMod {
   
-  @JSImport("ethereumjs-vm/dist/runTx", JSImport.Default)
+  @JSImport("ethereumjs-vm/dist/runTx", JSImport.Namespace)
   @js.native
-  def default(opts: RunTxOpts): js.Promise[RunTxResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(opts: RunTxOpts): js.Promise[RunTxResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RunTxResult]]
+  
   trait RunTxOpts extends StObject {
     
     /**
       * The block to which the `tx` belongs
       */
-    var block: js.UndefOr[js.Any] = js.native
+    var block: js.UndefOr[js.Any] = js.undefined
     
     /**
       * If true, skips the balance check
       */
-    var skipBalance: js.UndefOr[Boolean] = js.native
+    var skipBalance: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, skips the nonce check
       */
-    var skipNonce: js.UndefOr[Boolean] = js.native
+    var skipNonce: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A [`Transaction`](https://github.com/ethereum/ethereumjs-tx) to run
       */
-    var tx: Transaction = js.native
+    var tx: Transaction
   }
   object RunTxOpts {
     
@@ -73,28 +73,34 @@ object runTxMod {
     }
   }
   
-  @js.native
-  trait RunTxResult extends EVMResult {
+  trait RunTxResult
+    extends StObject
+       with EVMResult {
     
     /**
       * The amount of ether used by this transaction
       */
-    var amountSpent: ^ = js.native
+    var amountSpent: typings.bnJs.mod.^
     
     /**
       * Bloom filter resulted from transaction
       */
-    var bloom: default = js.native
+    var bloom: default
     
     /**
       * The amount of gas as that was refunded during the transaction (i.e. `gasUsed = totalGasConsumed - gasRefund`)
       */
-    var gasRefund: js.UndefOr[^] = js.native
+    var gasRefund: js.UndefOr[typings.bnJs.mod.^] = js.undefined
   }
   object RunTxResult {
     
     @scala.inline
-    def apply(amountSpent: ^, bloom: default, execResult: ExecResult, gasUsed: ^): RunTxResult = {
+    def apply(
+      amountSpent: typings.bnJs.mod.^,
+      bloom: default,
+      execResult: ExecResult,
+      gasUsed: typings.bnJs.mod.^
+    ): RunTxResult = {
       val __obj = js.Dynamic.literal(amountSpent = amountSpent.asInstanceOf[js.Any], bloom = bloom.asInstanceOf[js.Any], execResult = execResult.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any])
       __obj.asInstanceOf[RunTxResult]
     }
@@ -103,13 +109,13 @@ object runTxMod {
     implicit class RunTxResultMutableBuilder[Self <: RunTxResult] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAmountSpent(value: ^): Self = StObject.set(x, "amountSpent", value.asInstanceOf[js.Any])
+      def setAmountSpent(value: typings.bnJs.mod.^): Self = StObject.set(x, "amountSpent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBloom(value: default): Self = StObject.set(x, "bloom", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGasRefund(value: ^): Self = StObject.set(x, "gasRefund", value.asInstanceOf[js.Any])
+      def setGasRefund(value: typings.bnJs.mod.^): Self = StObject.set(x, "gasRefund", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGasRefundUndefined: Self = StObject.set(x, "gasRefund", js.undefined)

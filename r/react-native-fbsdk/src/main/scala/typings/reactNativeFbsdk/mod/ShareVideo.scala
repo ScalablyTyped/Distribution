@@ -2,16 +2,14 @@ package typings.reactNativeFbsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareVideo extends StObject {
   
   /**
     * The URL to the video. Must point to the location of the video on disk.
     */
-  var localUrl: String = js.native
+  var localUrl: String
 }
 object ShareVideo {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeImagesResult extends StObject {
   
   /**
     * Information about the images.
     */
-  var Images: js.UndefOr[ImageList] = js.native
+  var Images: js.UndefOr[ImageList] = js.undefined
 }
 object DescribeImagesResult {
   

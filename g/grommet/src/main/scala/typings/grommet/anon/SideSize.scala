@@ -2,15 +2,13 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SideSize extends StObject {
   
-  var side: js.UndefOr[String] = js.native
+  var side: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
 }
 object SideSize {
   

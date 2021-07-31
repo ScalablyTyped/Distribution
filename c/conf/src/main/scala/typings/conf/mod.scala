@@ -12,20 +12,22 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("conf", JSImport.Default)
   @js.native
-  class default[T /* <: Record[String, _] */] () extends Conf[T] {
+  class default[T /* <: Record[String, js.Any] */] ()
+    extends StObject
+       with Conf[T] {
     def this(partialOptions: Partial[Options[T]]) = this()
   }
   
   @js.native
-  trait Conf[T /* <: Record[String, _] */]
-    extends Iterable[
+  trait Conf[T /* <: Record[String, js.Any] */]
+    extends StObject
+       with Iterable[
           js.Tuple2[
             /* keyof T */ String, 
             /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any

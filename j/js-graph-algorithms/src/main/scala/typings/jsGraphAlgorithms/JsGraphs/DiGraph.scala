@@ -2,29 +2,27 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiGraph extends StObject {
   
-  var V: Double = js.native
+  var V: Double
   
-  def addEdge(v: Double, w: Double): Unit = js.native
+  def addEdge(v: Double, w: Double): Unit
   
-  def adj(v: Double): js.Array[Double] = js.native
+  def adj(v: Double): js.Array[Double]
   
-  var adjList: js.Any = js.native
+  var adjList: js.Any
   
-  def edge(v: Double, w: Double): Edge | Null = js.native
+  def edge(v: Double, w: Double): Edge | Null
   
-  var edges: js.Any = js.native
+  var edges: js.Any
   
-  def node(v: Double): Node = js.native
+  def node(v: Double): Node
   
-  var nodeInfo: js.Any = js.native
+  var nodeInfo: js.Any
   
-  def reverse(): DiGraph = js.native
+  def reverse(): DiGraph
 }
 object DiGraph {
   

@@ -3,17 +3,18 @@ package typings.protobufjs
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pbtsMod {
   
-  @JSImport("protobufjs/cli/pbts", "main")
+  @JSImport("protobufjs/cli/pbts", JSImport.Namespace)
   @js.native
-  def main(args: js.Array[String]): js.UndefOr[Double] = js.native
-  @JSImport("protobufjs/cli/pbts", "main")
-  @js.native
-  def main(args: js.Array[String], callback: pbtsCallback): js.UndefOr[Double] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def main(args: js.Array[String]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("main")(args.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
+  def main(args: js.Array[String], callback: pbtsCallback): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("main")(args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
   type pbtsCallback = js.Function2[/* err */ Error | Null, /* output */ js.UndefOr[String], Unit]
 }

@@ -7,37 +7,35 @@ import typings.minappEnv.minappEnvStrings.compressed
 import typings.minappEnv.minappEnvStrings.original
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseImageOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ChooseImageCompleteCallback] = js.native
+  var complete: js.UndefOr[ChooseImageCompleteCallback] = js.undefined
   
   /** 最多可以选择的图片张数 */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ChooseImageFailCallback] = js.native
+  var fail: js.UndefOr[ChooseImageFailCallback] = js.undefined
   
   /** 所选的图片的尺寸
     *
     * 可选值：
     * - 'original': 原图;
     * - 'compressed': 压缩图; */
-  var sizeType: js.UndefOr[Array[original | compressed]] = js.native
+  var sizeType: js.UndefOr[Array[original | compressed]] = js.undefined
   
   /** 选择图片的来源
     *
     * 可选值：
     * - 'album': 从相册选图;
     * - 'camera': 使用相机; */
-  var sourceType: js.UndefOr[Array[album | camera]] = js.native
+  var sourceType: js.UndefOr[Array[album | camera]] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[ChooseImageSuccessCallback] = js.native
+  var success: js.UndefOr[ChooseImageSuccessCallback] = js.undefined
 }
 object ChooseImageOption {
   

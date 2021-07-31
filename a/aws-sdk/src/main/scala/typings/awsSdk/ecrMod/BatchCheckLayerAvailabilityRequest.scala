@@ -2,26 +2,24 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchCheckLayerAvailabilityRequest extends StObject {
   
   /**
     * The digests of the image layers to check.
     */
-  var layerDigests: BatchedOperationLayerDigestList = js.native
+  var layerDigests: BatchedOperationLayerDigestList
   
   /**
     * The AWS account ID associated with the registry that contains the image layers to check. If you do not specify a registry, the default registry is assumed.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The name of the repository that is associated with the image layers to check.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object BatchCheckLayerAvailabilityRequest {
   

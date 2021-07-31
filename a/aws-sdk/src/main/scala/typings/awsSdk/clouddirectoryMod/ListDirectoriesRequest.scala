@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDirectoriesRequest extends StObject {
   
   /**
     * The maximum number of results to retrieve.
     */
-  var MaxResults: js.UndefOr[NumberResults] = js.native
+  var MaxResults: js.UndefOr[NumberResults] = js.undefined
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
   
   /**
     * The state of the directories in the list. Can be either Enabled, Disabled, or Deleted.
     */
-  var state: js.UndefOr[DirectoryState] = js.native
+  var state: js.UndefOr[DirectoryState] = js.undefined
 }
 object ListDirectoriesRequest {
   

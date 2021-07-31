@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceRequest extends StObject {
   
-  var headers: StringDictionary[String] = js.native
+  var headers: StringDictionary[String]
   
-  var id: Double = js.native
+  var id: Double
   
-  var method: String = js.native
+  var method: String
   
-  var time: Date = js.native
+  var time: Date
   
-  var url: String = js.native
+  var url: String
 }
 object ResourceRequest {
   

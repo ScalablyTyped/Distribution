@@ -4,10 +4,8 @@ import typings.egg.anon.FieldNameSize
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFileStreamOptions extends StObject {
   
   var checkFile: js.UndefOr[
@@ -19,14 +17,14 @@ trait GetFileStreamOptions extends StObject {
       /* mimetype */ String, 
       Unit | Error
     ]
-  ] = js.native
+  ] = js.undefined
   
   // required file submit, default is true
-  var defCharset: js.UndefOr[String] = js.native
+  var defCharset: js.UndefOr[String] = js.undefined
   
-  var limits: js.UndefOr[FieldNameSize] = js.native
+  var limits: js.UndefOr[FieldNameSize] = js.undefined
   
-  var requireFile: js.UndefOr[Boolean] = js.native
+  var requireFile: js.UndefOr[Boolean] = js.undefined
 }
 object GetFileStreamOptions {
   

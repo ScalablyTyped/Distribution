@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse extends StObject {
   
   /** The param to be passed in the ToS link. */
-  var accountTicketId: js.UndefOr[String] = js.native
+  var accountTicketId: js.UndefOr[String] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse {
   

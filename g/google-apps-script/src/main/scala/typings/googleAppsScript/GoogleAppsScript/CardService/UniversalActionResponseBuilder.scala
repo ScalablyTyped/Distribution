@@ -2,20 +2,18 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for the UniversalActionResponse objects.
   */
-@js.native
 trait UniversalActionResponseBuilder extends StObject {
   
-  def build(): UniversalActionResponse = js.native
+  def build(): UniversalActionResponse
   
-  def displayAddOnCards(cardObjects: js.Array[Card]): UniversalActionResponseBuilder = js.native
+  def displayAddOnCards(cardObjects: js.Array[Card]): UniversalActionResponseBuilder
   
-  def setOpenLink(openLink: OpenLink): UniversalActionResponseBuilder = js.native
+  def setOpenLink(openLink: OpenLink): UniversalActionResponseBuilder
 }
 object UniversalActionResponseBuilder {
   

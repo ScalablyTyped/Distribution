@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoboScriptExecution extends StObject {
   
   /** The number of Robo script actions executed successfully. */
-  var successfulActions: js.UndefOr[Double] = js.native
+  var successfulActions: js.UndefOr[Double] = js.undefined
   
   /** The total number of actions in the Robo script. */
-  var totalActions: js.UndefOr[Double] = js.native
+  var totalActions: js.UndefOr[Double] = js.undefined
 }
 object RoboScriptExecution {
   

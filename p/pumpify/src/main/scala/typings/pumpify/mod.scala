@@ -5,7 +5,6 @@ import typings.duplexify.mod.Duplexify
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,9 +19,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("pumpify", "ctor")
-  @js.native
-  def ctor(opts: PumpifyFactoryOptions): Instantiable1[/* streams (repeated) */ Stream, Pumpify] = js.native
+  @scala.inline
+  def ctor(opts: PumpifyFactoryOptions): Instantiable1[/* streams (repeated) */ Stream, Pumpify] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[/* streams (repeated) */ Stream, Pumpify]]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pumpify", "obj")
@@ -43,16 +41,15 @@ object mod {
     def setPipeline(streams: js.Array[Stream]): Unit = js.native
   }
   
-  @js.native
   trait PumpifyFactoryOptions extends StObject {
     
-    var autoDestroy: Boolean = js.native
+    var autoDestroy: Boolean
     
-    var destroy: Boolean = js.native
+    var destroy: Boolean
     
-    var highWaterMark: Double = js.native
+    var highWaterMark: Double
     
-    var objectMode: Boolean = js.native
+    var objectMode: Boolean
   }
   object PumpifyFactoryOptions {
     

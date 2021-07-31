@@ -2,10 +2,8 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientWithMultichannelAddresses extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait RecipientWithMultichannelAddresses extends StObject {
     * If both address and multichannel_addresses are specified only multichannel_addresses will be used.
     *
     */
-  var address: js.UndefOr[Address | String] = js.native
+  var address: js.UndefOr[Address | String] = js.undefined
   
   /**
     * Array of Multichannel Address objects for a recipient. At a minimum, address or multichannel_addresses is required.
     * If both address and multichannel_addresses are specified only multichannel_addresses will be used.
     *
     */
-  var multichannel_addresses: js.Array[MultichannelAddress] = js.native
+  var multichannel_addresses: js.Array[MultichannelAddress]
 }
 object RecipientWithMultichannelAddresses {
   

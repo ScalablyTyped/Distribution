@@ -6,43 +6,41 @@ import typings.postmark.outboundMessageEventsMod.MessageEvent
 import typings.postmark.supportingTypesMod.Hash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outboundMessageMod {
   
-  @js.native
   trait OutboundMessage extends StObject {
     
-    var Attachments: js.Array[Attachment] = js.native
+    var Attachments: js.Array[Attachment]
     
-    var Bcc: js.Array[Recipient] = js.native
+    var Bcc: js.Array[Recipient]
     
-    var Cc: js.Array[Recipient] = js.native
+    var Cc: js.Array[Recipient]
     
-    var From: String = js.native
+    var From: String
     
-    var MessageID: String = js.native
+    var MessageID: String
     
-    var MessageStream: String = js.native
+    var MessageStream: String
     
-    var Metadata: Hash[String] = js.native
+    var Metadata: Hash[String]
     
-    var ReceivedAt: String = js.native
+    var ReceivedAt: String
     
-    var Recipients: js.Array[String] = js.native
+    var Recipients: js.Array[String]
     
-    var Status: String = js.native
+    var Status: String
     
-    var Subject: String = js.native
+    var Subject: String
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
     
-    var To: js.Array[Recipient] = js.native
+    var To: js.Array[Recipient]
     
-    var TrackLinks: LinkTrackingOptions = js.native
+    var TrackLinks: LinkTrackingOptions
     
-    var TrackOpens: Boolean = js.native
+    var TrackOpens: Boolean
   }
   object OutboundMessage {
     
@@ -135,16 +133,17 @@ object outboundMessageMod {
     }
   }
   
-  @js.native
-  trait OutboundMessageDetails extends OutboundMessage {
+  trait OutboundMessageDetails
+    extends StObject
+       with OutboundMessage {
     
-    var Body: String = js.native
+    var Body: String
     
-    var HtmlBody: js.UndefOr[String] = js.native
+    var HtmlBody: js.UndefOr[String] = js.undefined
     
-    var MessageEvents: js.Array[MessageEvent] = js.native
+    var MessageEvents: js.Array[MessageEvent]
     
-    var TextBody: js.UndefOr[String] = js.native
+    var TextBody: js.UndefOr[String] = js.undefined
   }
   object OutboundMessageDetails {
     
@@ -197,10 +196,9 @@ object outboundMessageMod {
     }
   }
   
-  @js.native
   trait OutboundMessageDump extends StObject {
     
-    var Body: String = js.native
+    var Body: String
   }
   object OutboundMessageDump {
     
@@ -218,12 +216,11 @@ object outboundMessageMod {
     }
   }
   
-  @js.native
   trait OutboundMessages extends StObject {
     
-    var Messages: js.Array[OutboundMessage] = js.native
+    var Messages: js.Array[OutboundMessage]
     
-    var TotalCount: String = js.native
+    var TotalCount: String
   }
   object OutboundMessages {
     
@@ -247,12 +244,11 @@ object outboundMessageMod {
     }
   }
   
-  @js.native
   trait Recipient extends StObject {
     
-    var Email: String = js.native
+    var Email: String
     
-    var Name: String = js.native
+    var Name: String
   }
   object Recipient {
     

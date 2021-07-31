@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderRefund extends StObject {
   
   /** The actor that created the refund. Acceptable values are: - "`customer`" - "`googleBot`" - "`googleCustomerService`" - "`googlePayments`" - "`googleSabre`" - "`merchant`" */
-  var actor: js.UndefOr[String] = js.native
+  var actor: js.UndefOr[String] = js.undefined
   
   /** The amount that is refunded. */
-  var amount: js.UndefOr[Price] = js.native
+  var amount: js.UndefOr[Price] = js.undefined
   
   /** Date on which the item has been created, in ISO 8601 format. */
-  var creationDate: js.UndefOr[String] = js.native
+  var creationDate: js.UndefOr[String] = js.undefined
   
   /**
     * The reason for the refund. Acceptable values are: - "`adjustment`" - "`autoPostInternal`" - "`autoPostInvalidBillingAddress`" - "`autoPostNoInventory`" - "`autoPostPriceError`" -
@@ -26,10 +24,10 @@ trait OrderRefund extends StObject {
     * "`priceAdjustment`" - "`priceError`" - "`productArrivedDamaged`" - "`productNotAsDescribed`" - "`promoReallocation`" - "`qualityNotAsExpected`" - "`returnRefundAbuse`" -
     * "`shippingCostAdjustment`" - "`shippingPriceError`" - "`taxAdjustment`" - "`taxError`" - "`undeliverableShippingAddress`" - "`unsupportedPoBoxAddress`" - "`wrongProductShipped`"
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /** The explanation of the reason. */
-  var reasonText: js.UndefOr[String] = js.native
+  var reasonText: js.UndefOr[String] = js.undefined
 }
 object OrderRefund {
   

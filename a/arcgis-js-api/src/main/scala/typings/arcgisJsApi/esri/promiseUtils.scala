@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,7 +12,7 @@ trait promiseUtils extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-promiseUtils.html#create)
     */
-  def create(executor: Executor): js.Promise[_] = js.native
+  def create(executor: Executor): js.Promise[js.Any] = js.native
   
   /**
     * Creates a special error object which is used to signal aborted requests in promise chains.
@@ -35,7 +34,7 @@ trait promiseUtils extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-promiseUtils.html#eachAlways)
     */
-  def eachAlways(promises: js.Array[js.Promise[_]]): js.Promise[js.Array[EachAlwaysResult]] | js.Any = js.native
+  def eachAlways(promises: js.Array[js.Promise[js.Any]]): js.Promise[js.Array[EachAlwaysResult]] | js.Any = js.native
   
   /**
     * A convenience utility method for filtering an array of values using an asynchronous predicate function.

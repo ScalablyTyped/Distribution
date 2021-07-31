@@ -2,17 +2,15 @@ package typings.gm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelInfo[T] extends StObject {
   
-  var Blue: T = js.native
+  var Blue: T
   
-  var Green: T = js.native
+  var Green: T
   
-  var Red: T = js.native
+  var Red: T
 }
 object ChannelInfo {
   
@@ -23,7 +21,7 @@ object ChannelInfo {
   }
   
   @scala.inline
-  implicit class ChannelInfoMutableBuilder[Self <: ChannelInfo[_], T] (val x: Self with ChannelInfo[T]) extends AnyVal {
+  implicit class ChannelInfoMutableBuilder[Self <: ChannelInfo[?], T] (val x: Self & ChannelInfo[T]) extends AnyVal {
     
     @scala.inline
     def setBlue(value: T): Self = StObject.set(x, "Blue", value.asInstanceOf[js.Any])

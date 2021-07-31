@@ -2,21 +2,19 @@ package typings.randomstring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Randomstring {
   
-  @js.native
   trait GenerateOptions extends StObject {
     
-    var capitalization: js.UndefOr[String] = js.native
+    var capitalization: js.UndefOr[String] = js.undefined
     
-    var charset: js.UndefOr[String] = js.native
+    var charset: js.UndefOr[String] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var readable: js.UndefOr[Boolean] = js.native
+    var readable: js.UndefOr[Boolean] = js.undefined
   }
   object GenerateOptions {
     

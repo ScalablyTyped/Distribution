@@ -2,37 +2,35 @@ package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Global classes and objects related to sonification.
   */
-@js.native
 trait SonificationObject extends StObject {
   
   /**
     * The Earcon class.
     */
-  var Earcon: js.Function = js.native
+  var Earcon: js.Function
   
   /**
     * The Instrument class.
     */
-  var Instrument: js.Function = js.native
+  var Instrument: js.Function
   
   /**
     * Note fade-out-time in milliseconds. Most notes are faded out quickly
     * by default if there is time. This is to avoid abrupt stops which will
     * cause perceived clicks.
     */
-  var fadeOutDuration: Double = js.native
+  var fadeOutDuration: Double
   
   /**
     * Predefined instruments, given as an object with a map between the
     * instrument name and the Highcharts.Instrument object.
     */
-  var instruments: js.Object = js.native
+  var instruments: js.Object
 }
 object SonificationObject {
   

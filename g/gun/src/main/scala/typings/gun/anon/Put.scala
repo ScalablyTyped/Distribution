@@ -4,13 +4,11 @@ import typings.gun.mod.Gun.DisallowArray
 import typings.gun.mod.Gun.Saveable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Put[DataType] extends StObject {
   
-  def put(data: DisallowArray[Saveable[DataType]]): Unit = js.native
+  def put(data: DisallowArray[Saveable[DataType]]): Unit
 }
 object Put {
   
@@ -21,7 +19,7 @@ object Put {
   }
   
   @scala.inline
-  implicit class PutMutableBuilder[Self <: Put[_], DataType] (val x: Self with Put[DataType]) extends AnyVal {
+  implicit class PutMutableBuilder[Self <: Put[?], DataType] (val x: Self & Put[DataType]) extends AnyVal {
     
     @scala.inline
     def setPut(value: DisallowArray[Saveable[DataType]] => Unit): Self = StObject.set(x, "put", js.Any.fromFunction1(value))

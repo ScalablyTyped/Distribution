@@ -2,15 +2,13 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LevelTipDto extends StObject {
   
-  var effect: js.Array[String] = js.native
+  var effect: js.Array[String]
   
-  var label: js.Array[String] = js.native
+  var label: js.Array[String]
 }
 object LevelTipDto {
   

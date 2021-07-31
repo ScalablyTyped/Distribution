@@ -4,7 +4,6 @@ import typings.nodeRedRegistry.mod.NodeStatusFill
 import typings.nodeRedRegistry.mod.NodeStatusShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeRedRegistryStrings {
@@ -20,7 +19,9 @@ object nodeRedRegistryStrings {
   def NodeSettings: NodeSettings = "NodeSettings".asInstanceOf[NodeSettings]
   
   @js.native
-  sealed trait blue extends NodeStatusFill
+  sealed trait blue
+    extends StObject
+       with NodeStatusFill
   @scala.inline
   def blue: blue = "blue".asInstanceOf[blue]
   
@@ -30,17 +31,23 @@ object nodeRedRegistryStrings {
   def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait dot extends NodeStatusShape
+  sealed trait dot
+    extends StObject
+       with NodeStatusShape
   @scala.inline
   def dot: dot = "dot".asInstanceOf[dot]
   
   @js.native
-  sealed trait green extends NodeStatusFill
+  sealed trait green
+    extends StObject
+       with NodeStatusFill
   @scala.inline
   def green: green = "green".asInstanceOf[green]
   
   @js.native
-  sealed trait grey extends NodeStatusFill
+  sealed trait grey
+    extends StObject
+       with NodeStatusFill
   @scala.inline
   def grey: grey = "grey".asInstanceOf[grey]
   
@@ -60,12 +67,16 @@ object nodeRedRegistryStrings {
   def password: password = "password".asInstanceOf[password]
   
   @js.native
-  sealed trait red extends NodeStatusFill
+  sealed trait red
+    extends StObject
+       with NodeStatusFill
   @scala.inline
   def red: red = "red".asInstanceOf[red]
   
   @js.native
-  sealed trait ring extends NodeStatusShape
+  sealed trait ring
+    extends StObject
+       with NodeStatusShape
   @scala.inline
   def ring: ring = "ring".asInstanceOf[ring]
   
@@ -75,7 +86,9 @@ object nodeRedRegistryStrings {
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait yellow extends NodeStatusFill
+  sealed trait yellow
+    extends StObject
+       with NodeStatusFill
   @scala.inline
   def yellow: yellow = "yellow".asInstanceOf[yellow]
 }

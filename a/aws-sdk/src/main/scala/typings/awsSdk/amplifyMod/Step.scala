@@ -2,66 +2,64 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Step extends StObject {
   
   /**
     *  The URL to the artifact for the execution step. 
     */
-  var artifactsUrl: js.UndefOr[ArtifactsUrl] = js.native
+  var artifactsUrl: js.UndefOr[ArtifactsUrl] = js.undefined
   
   /**
     *  The context for the current step. Includes a build image if the step is build. 
     */
-  var context: js.UndefOr[Context] = js.native
+  var context: js.UndefOr[Context] = js.undefined
   
   /**
     *  The end date and time of the execution step. 
     */
-  var endTime: EndTime = js.native
+  var endTime: EndTime
   
   /**
     *  The URL to the logs for the execution step. 
     */
-  var logUrl: js.UndefOr[LogUrl] = js.native
+  var logUrl: js.UndefOr[LogUrl] = js.undefined
   
   /**
     *  The list of screenshot URLs for the execution step, if relevant. 
     */
-  var screenshots: js.UndefOr[Screenshots] = js.native
+  var screenshots: js.UndefOr[Screenshots] = js.undefined
   
   /**
     *  The start date and time of the execution step. 
     */
-  var startTime: StartTime = js.native
+  var startTime: StartTime
   
   /**
     *  The status of the execution step. 
     */
-  var status: JobStatus = js.native
+  var status: JobStatus
   
   /**
     *  The reason for the current step status. 
     */
-  var statusReason: js.UndefOr[StatusReason] = js.native
+  var statusReason: js.UndefOr[StatusReason] = js.undefined
   
   /**
     *  The name of the execution step. 
     */
-  var stepName: StepName = js.native
+  var stepName: StepName
   
   /**
     *  The URL to the test artifact for the execution step. 
     */
-  var testArtifactsUrl: js.UndefOr[TestArtifactsUrl] = js.native
+  var testArtifactsUrl: js.UndefOr[TestArtifactsUrl] = js.undefined
   
   /**
     *  The URL to the test configuration for the execution step. 
     */
-  var testConfigUrl: js.UndefOr[TestConfigUrl] = js.native
+  var testConfigUrl: js.UndefOr[TestConfigUrl] = js.undefined
 }
 object Step {
   

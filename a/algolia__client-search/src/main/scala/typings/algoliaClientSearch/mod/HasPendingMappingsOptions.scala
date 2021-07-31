@@ -2,10 +2,8 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasPendingMappingsOptions extends StObject {
   
   /**
@@ -15,14 +13,14 @@ trait HasPendingMappingsOptions extends StObject {
     *
     * @internal
     */
-  val getClusters: js.UndefOr[Boolean] = js.native
+  val getClusters: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If the clusters pending mapping state should be on the response.
     *
     * @defaultValue false
     */
-  val retrieveMappings: js.UndefOr[Boolean] = js.native
+  val retrieveMappings: js.UndefOr[Boolean] = js.undefined
 }
 object HasPendingMappingsOptions {
   

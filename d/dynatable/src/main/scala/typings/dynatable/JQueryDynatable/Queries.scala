@@ -2,10 +2,8 @@ package typings.dynatable.JQueryDynatable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Queries extends StObject {
   
   /**
@@ -15,20 +13,20 @@ trait Queries extends StObject {
     * @param value The value we wish to find
     * @return A reference to the related Dynatable object
     */
-  def add(name: String, value: js.Any): Dynatable = js.native
+  def add(name: String, value: js.Any): Dynatable
   
   /** functions object for Queries */
-  var functions: QueriesFunctions = js.native
+  var functions: QueriesFunctions
   
   /** Set up the initial search parameters */
-  def init(): Unit = js.native
+  def init(): Unit
   
   /**
     * Check if search feature is enabled
     *
     * @return A boolean if search feature is enabled
     */
-  def initOnLoad(): Boolean = js.native
+  def initOnLoad(): Boolean
   
   /**
     * Remove the query from the dataset
@@ -36,20 +34,20 @@ trait Queries extends StObject {
     * @param name The key for for the query to be removed
     * @return A reference to the related Dynatable object
     */
-  def remove(name: String): Dynatable = js.native
+  def remove(name: String): Dynatable
   
   /**  Run a search with all the saved queries */
-  def run(): js.Any = js.native
+  def run(): js.Any
   
   /**
     * Shortcut for performing simple query from built-in search
     *
     * @param q The value that will be searched for
     */
-  def runSearch(q: js.Any): Unit = js.native
+  def runSearch(q: js.Any): Unit
   
   /** Set up the input fields for creating queries */
-  def setupInputs(): Unit = js.native
+  def setupInputs(): Unit
 }
 object Queries {
   

@@ -2,31 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of ASPxClientDashboardParameter objects.
   */
-@js.native
 trait ASPxClientDashboardParameters extends StObject {
   
   /**
     * Returns a dashboard parameter by its index in the ASPxClientDashboardParameters collection. A ASPxClientDashboardParameter object that is the client-side dashboard parameter.
     * @param index An integer value that specifies the parameter index.
     */
-  def GetParameterByIndex(index: Double): ASPxClientDashboardParameter = js.native
+  def GetParameterByIndex(index: Double): ASPxClientDashboardParameter
   
   /**
     * Returns a dashboard parameter by its name. A ASPxClientDashboardParameter object that is the client-side dashboard parameter.
     * @param name A String object that specifies the parameter name.
     */
-  def GetParameterByName(name: String): ASPxClientDashboardParameter = js.native
+  def GetParameterByName(name: String): ASPxClientDashboardParameter
   
   /**
     * Returns an array of dashboard parameters from the ASPxClientDashboardParameters collection.
     */
-  def GetParameterList(): js.Array[ASPxClientDashboardParameter] = js.native
+  def GetParameterList(): js.Array[ASPxClientDashboardParameter]
 }
 object ASPxClientDashboardParameters {
   

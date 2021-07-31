@@ -5,19 +5,17 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonInformation extends StObject {
   
-  var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var icon: String = js.native
+  var icon: String
   
-  var title: String = js.native
+  var title: String
   
-  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 object ButtonInformation {
   

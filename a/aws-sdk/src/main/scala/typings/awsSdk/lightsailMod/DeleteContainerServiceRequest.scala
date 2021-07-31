@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteContainerServiceRequest extends StObject {
   
   /**
     * The name of the container service to delete.
     */
-  var serviceName: ContainerServiceName = js.native
+  var serviceName: ContainerServiceName
 }
 object DeleteContainerServiceRequest {
   

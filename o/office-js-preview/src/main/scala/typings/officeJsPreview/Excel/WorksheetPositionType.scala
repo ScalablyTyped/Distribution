@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,27 @@ sealed trait WorksheetPositionType extends StObject
 object WorksheetPositionType extends StObject {
   
   @js.native
-  sealed trait after extends WorksheetPositionType
+  sealed trait after
+    extends StObject
+       with WorksheetPositionType
   
   @js.native
-  sealed trait before extends WorksheetPositionType
+  sealed trait before
+    extends StObject
+       with WorksheetPositionType
   
   @js.native
-  sealed trait beginning extends WorksheetPositionType
+  sealed trait beginning
+    extends StObject
+       with WorksheetPositionType
   
   @js.native
-  sealed trait end extends WorksheetPositionType
+  sealed trait end
+    extends StObject
+       with WorksheetPositionType
   
   @js.native
-  sealed trait none extends WorksheetPositionType
+  sealed trait none
+    extends StObject
+       with WorksheetPositionType
 }

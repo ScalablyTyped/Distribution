@@ -2,41 +2,39 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetParametersByPathRequest extends StObject {
   
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[GetParametersByPathMaxResults] = js.native
+  var MaxResults: js.UndefOr[GetParametersByPathMaxResults] = js.undefined
   
   /**
     * A token to start the list. Use this token to get the next set of results. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
     * Filters to limit the request results.  For GetParametersByPath, the following filter Key names are supported: Type, KeyId, Label, and DataType. The following Key values are not supported for GetParametersByPath: tag, Name, Path, and Tier. 
     */
-  var ParameterFilters: js.UndefOr[ParameterStringFilterList] = js.native
+  var ParameterFilters: js.UndefOr[ParameterStringFilterList] = js.undefined
   
   /**
     * The hierarchy for the parameter. Hierarchies start with a forward slash (/) and end with the parameter name. A parameter name hierarchy can have a maximum of 15 levels. Here is an example of a hierarchy: /Finance/Prod/IAD/WinServ2016/license33 
     */
-  var Path: PSParameterName = js.native
+  var Path: PSParameterName
   
   /**
     * Retrieve all parameters within a hierarchy.  If a user has access to a path, then the user can access all levels of that path. For example, if a user has permission to access path /a, then the user can also access /a/b. Even if a user has explicitly been denied access in IAM for parameter /a/b, they can still call the GetParametersByPath API action recursively for /a and view /a/b. 
     */
-  var Recursive: js.UndefOr[Boolean] = js.native
+  var Recursive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Retrieve all parameters in a hierarchy with their value decrypted.
     */
-  var WithDecryption: js.UndefOr[Boolean] = js.native
+  var WithDecryption: js.UndefOr[Boolean] = js.undefined
 }
 object GetParametersByPathRequest {
   

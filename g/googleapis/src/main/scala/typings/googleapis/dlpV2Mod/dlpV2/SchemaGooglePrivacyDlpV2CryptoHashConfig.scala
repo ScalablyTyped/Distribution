@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * integer values can be hashed. See
   * https://cloud.google.com/dlp/docs/pseudonymization to learn more.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CryptoHashConfig extends StObject {
   
   /**
     * The key used by the hash function.
     */
-  var cryptoKey: js.UndefOr[SchemaGooglePrivacyDlpV2CryptoKey] = js.native
+  var cryptoKey: js.UndefOr[SchemaGooglePrivacyDlpV2CryptoKey] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CryptoHashConfig {
   

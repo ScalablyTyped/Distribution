@@ -11,8 +11,8 @@ Get oEmbed data from given URL.
 | Full name          | oembed-parser |
 | Keywords           | oembed, extractor, parser, util |
 | # releases         | 16 |
-| # dependents       | 10 |
-| # downloads        | 333470 |
+| # dependents       | 13 |
+| # downloads        | 519577 |
 | # stars            | 0 |
 
 ## Links

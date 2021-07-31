@@ -2,21 +2,19 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIndicesResponse extends StObject {
   
   /**
     * List of index response
     */
-  var items: js.Array[Indice] = js.native
+  var items: js.Array[Indice]
   
   /**
     * Number of pages
     */
-  var nbPages: Double = js.native
+  var nbPages: Double
 }
 object ListIndicesResponse {
   

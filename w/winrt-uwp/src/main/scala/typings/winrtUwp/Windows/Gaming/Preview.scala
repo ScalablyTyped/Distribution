@@ -2,32 +2,29 @@ package typings.winrtUwp.Windows.Gaming
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Preview {
   
   object GamesEnumeration {
     
-    @js.native
     trait GameList extends StObject
     
-    @js.native
     trait GameListEntry extends StObject {
       
-      var category: js.Any = js.native
+      var category: js.Any
       
       /* unmapped type */
-      var displayInfo: js.Any = js.native
+      var displayInfo: js.Any
       
       /* unmapped type */
-      var launchAsync: js.Any = js.native
+      var launchAsync: js.Any
       
       /* unmapped type */
-      var properties: js.Any = js.native
+      var properties: js.Any
       
       /* unmapped type */
-      var setCategoryAsync: js.Any = js.native
+      var setCategoryAsync: js.Any
     }
     object GameListEntry {
       

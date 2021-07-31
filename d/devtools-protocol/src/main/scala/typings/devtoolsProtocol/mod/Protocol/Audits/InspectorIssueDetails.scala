@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Audits
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InspectorIssueDetails extends StObject {
   
-  var blockedByResponseIssueDetails: js.UndefOr[BlockedByResponseIssueDetails] = js.native
+  var blockedByResponseIssueDetails: js.UndefOr[BlockedByResponseIssueDetails] = js.undefined
   
-  var contentSecurityPolicyIssueDetails: js.UndefOr[ContentSecurityPolicyIssueDetails] = js.native
+  var contentSecurityPolicyIssueDetails: js.UndefOr[ContentSecurityPolicyIssueDetails] = js.undefined
   
-  var heavyAdIssueDetails: js.UndefOr[HeavyAdIssueDetails] = js.native
+  var heavyAdIssueDetails: js.UndefOr[HeavyAdIssueDetails] = js.undefined
   
-  var mixedContentIssueDetails: js.UndefOr[MixedContentIssueDetails] = js.native
+  var mixedContentIssueDetails: js.UndefOr[MixedContentIssueDetails] = js.undefined
   
-  var sameSiteCookieIssueDetails: js.UndefOr[SameSiteCookieIssueDetails] = js.native
+  var sameSiteCookieIssueDetails: js.UndefOr[SameSiteCookieIssueDetails] = js.undefined
 }
 object InspectorIssueDetails {
   

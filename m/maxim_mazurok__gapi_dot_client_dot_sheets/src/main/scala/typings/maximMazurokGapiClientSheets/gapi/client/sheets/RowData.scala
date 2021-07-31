@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowData extends StObject {
   
   /** The values in the row, one per column. */
-  var values: js.UndefOr[js.Array[CellData]] = js.native
+  var values: js.UndefOr[js.Array[CellData]] = js.undefined
 }
 object RowData {
   

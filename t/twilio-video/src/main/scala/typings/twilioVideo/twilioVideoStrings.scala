@@ -9,7 +9,6 @@ import typings.twilioVideo.mod.TrackSwitchOffMode
 import typings.twilioVideo.mod.VideoCodec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object twilioVideoStrings {
@@ -45,7 +44,9 @@ object twilioVideoStrings {
   def `Client sent an invalid signaling message`: `Client sent an invalid signaling message` = ("Client sent an invalid signaling message").asInstanceOf[`Client sent an invalid signaling message`]
   
   @js.native
-  sealed trait H264 extends VideoCodec
+  sealed trait H264
+    extends StObject
+       with VideoCodec
   @scala.inline
   def H264: H264 = "H264".asInstanceOf[H264]
   
@@ -90,12 +91,16 @@ object twilioVideoStrings {
   def `No supported codec`: `No supported codec` = ("No supported codec").asInstanceOf[`No supported codec`]
   
   @js.native
-  sealed trait PCMA extends AudioCodec
+  sealed trait PCMA
+    extends StObject
+       with AudioCodec
   @scala.inline
   def PCMA: PCMA = "PCMA".asInstanceOf[PCMA]
   
   @js.native
-  sealed trait PCMU extends AudioCodec
+  sealed trait PCMU
+    extends StObject
+       with AudioCodec
   @scala.inline
   def PCMU: PCMU = "PCMU".asInstanceOf[PCMU]
   
@@ -280,12 +285,16 @@ object twilioVideoStrings {
   def `Unable to create Room`: `Unable to create Room` = ("Unable to create Room").asInstanceOf[`Unable to create Room`]
   
   @js.native
-  sealed trait VP8 extends VideoCodec
+  sealed trait VP8
+    extends StObject
+       with VideoCodec
   @scala.inline
   def VP8: VP8 = "VP8".asInstanceOf[VP8]
   
   @js.native
-  sealed trait VP9 extends VideoCodec
+  sealed trait VP9
+    extends StObject
+       with VideoCodec
   @scala.inline
   def VP9: VP9 = "VP9".asInstanceOf[VP9]
   
@@ -295,7 +304,9 @@ object twilioVideoStrings {
   def au1: au1 = "au1".asInstanceOf[au1]
   
   @js.native
-  sealed trait audio extends Kind
+  sealed trait audio
+    extends StObject
+       with Kind
   @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]
   
@@ -305,12 +316,16 @@ object twilioVideoStrings {
   def br1: br1 = "br1".asInstanceOf[br1]
   
   @js.native
-  sealed trait collaboration extends BandwidthProfileMode
+  sealed trait collaboration
+    extends StObject
+       with BandwidthProfileMode
   @scala.inline
   def collaboration: collaboration = "collaboration".asInstanceOf[collaboration]
   
   @js.native
-  sealed trait data extends Kind
+  sealed trait data
+    extends StObject
+       with Kind
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   
@@ -320,22 +335,30 @@ object twilioVideoStrings {
   def de1: de1 = "de1".asInstanceOf[de1]
   
   @js.native
-  sealed trait debug extends LogLevel
+  sealed trait debug
+    extends StObject
+       with LogLevel
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait detected extends TrackSwitchOffMode
+  sealed trait detected
+    extends StObject
+       with TrackSwitchOffMode
   @scala.inline
   def detected: detected = "detected".asInstanceOf[detected]
   
   @js.native
-  sealed trait disabled extends TrackSwitchOffMode
+  sealed trait disabled
+    extends StObject
+       with TrackSwitchOffMode
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait error
+    extends StObject
+       with LogLevel
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -345,12 +368,16 @@ object twilioVideoStrings {
   def gll: gll = "gll".asInstanceOf[gll]
   
   @js.native
-  sealed trait grid extends BandwidthProfileMode
+  sealed trait grid
+    extends StObject
+       with BandwidthProfileMode
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait high extends Priority
+  sealed trait high
+    extends StObject
+       with Priority
   @scala.inline
   def high: high = "high".asInstanceOf[high]
   
@@ -360,12 +387,16 @@ object twilioVideoStrings {
   def ie1: ie1 = "ie1".asInstanceOf[ie1]
   
   @js.native
-  sealed trait info extends LogLevel
+  sealed trait info
+    extends StObject
+       with LogLevel
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait isac extends AudioCodec
+  sealed trait isac
+    extends StObject
+       with AudioCodec
   @scala.inline
   def isac: isac = "isac".asInstanceOf[isac]
   
@@ -375,27 +406,37 @@ object twilioVideoStrings {
   def jp1: jp1 = "jp1".asInstanceOf[jp1]
   
   @js.native
-  sealed trait low extends Priority
+  sealed trait low
+    extends StObject
+       with Priority
   @scala.inline
   def low: low = "low".asInstanceOf[low]
   
   @js.native
-  sealed trait off extends LogLevel
+  sealed trait off
+    extends StObject
+       with LogLevel
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait opus extends AudioCodec
+  sealed trait opus
+    extends StObject
+       with AudioCodec
   @scala.inline
   def opus: opus = "opus".asInstanceOf[opus]
   
   @js.native
-  sealed trait predicted extends TrackSwitchOffMode
+  sealed trait predicted
+    extends StObject
+       with TrackSwitchOffMode
   @scala.inline
   def predicted: predicted = "predicted".asInstanceOf[predicted]
   
   @js.native
-  sealed trait presentation extends BandwidthProfileMode
+  sealed trait presentation
+    extends StObject
+       with BandwidthProfileMode
   @scala.inline
   def presentation: presentation = "presentation".asInstanceOf[presentation]
   
@@ -405,7 +446,9 @@ object twilioVideoStrings {
   def sg1: sg1 = "sg1".asInstanceOf[sg1]
   
   @js.native
-  sealed trait standard extends Priority
+  sealed trait standard
+    extends StObject
+       with Priority
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   
@@ -420,12 +463,16 @@ object twilioVideoStrings {
   def us2: us2 = "us2".asInstanceOf[us2]
   
   @js.native
-  sealed trait video extends Kind
+  sealed trait video
+    extends StObject
+       with Kind
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   
   @js.native
-  sealed trait warn extends LogLevel
+  sealed trait warn
+    extends StObject
+       with LogLevel
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }

@@ -11,8 +11,8 @@ The lodash method `_.sortedIndex` exported as a module.
 | Full name          | lodash.sortedindex |
 | Keywords           | lodash-modularized, sortedindex |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 15973 |
+| # dependents       | 9 |
+| # downloads        | 28352 |
 | # stars            | 1 |
 
 ## Links

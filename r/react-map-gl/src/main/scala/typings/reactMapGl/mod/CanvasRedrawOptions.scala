@@ -3,13 +3,13 @@ package typings.reactMapGl.mod
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CanvasRedrawOptions extends HTMLRedrawOptions {
+trait CanvasRedrawOptions
+  extends StObject
+     with HTMLRedrawOptions {
   
-  var ctx: CanvasRenderingContext2D = js.native
+  var ctx: CanvasRenderingContext2D
 }
 object CanvasRedrawOptions {
   

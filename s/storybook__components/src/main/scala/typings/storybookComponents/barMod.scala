@@ -6,7 +6,6 @@ import typings.std.Pick
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object barMod {
@@ -19,14 +18,13 @@ object barMod {
   @js.native
   val FlexBar: FunctionComponent[FlexBarProps] = js.native
   
-  @js.native
   trait FlexBarProps extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var border: js.UndefOr[Boolean] = js.native
+    var border: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
   }
   object FlexBarProps {
     
@@ -59,12 +57,11 @@ object barMod {
     }
   }
   
-  @js.native
   trait SideProps extends StObject {
     
-    var left: js.UndefOr[Boolean] = js.native
+    var left: js.UndefOr[Boolean] = js.undefined
     
-    var right: js.UndefOr[Boolean] = js.native
+    var right: js.UndefOr[Boolean] = js.undefined
   }
   object SideProps {
     

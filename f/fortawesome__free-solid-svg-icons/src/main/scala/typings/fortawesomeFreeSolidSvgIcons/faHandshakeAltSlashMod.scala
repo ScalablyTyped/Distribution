@@ -5,7 +5,6 @@ import typings.fortawesomeFontawesomeCommonTypes.mod.IconName
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconPrefix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object faHandshakeAltSlashMod {

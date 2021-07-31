@@ -7,7 +7,6 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -22,8 +21,8 @@ object typesMod {
   object ElectronArtifactDetails {
     
     @scala.inline
-    def ElectronGenericArtifactDetails(artifactName: String, isGeneric: `true`, version: String): typings.electronGet.typesMod.ElectronGenericArtifactDetails = {
-      val __obj = js.Dynamic.literal(artifactName = artifactName.asInstanceOf[js.Any], isGeneric = isGeneric.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    def ElectronGenericArtifactDetails(artifactName: String, version: String): typings.electronGet.typesMod.ElectronGenericArtifactDetails = {
+      val __obj = js.Dynamic.literal(artifactName = artifactName.asInstanceOf[js.Any], isGeneric = true, version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.electronGet.typesMod.ElectronGenericArtifactDetails]
     }
     
@@ -34,7 +33,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ElectronDownloadRequest extends StObject {
     
     /**
@@ -42,12 +40,12 @@ object typesMod {
       * * `electron`
       * * `ffmpeg`
       */
-    var artifactName: String = js.native
+    var artifactName: String
     
     /**
       * The version of Electron associated with the artifact.
       */
-    var version: String = js.native
+    var version: String
   }
   object ElectronDownloadRequest {
     
@@ -68,7 +66,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ElectronDownloadRequestOptions extends StObject {
     
     /**
@@ -80,36 +77,36 @@ object typesMod {
       * * MacOS: `~/Library/Caches/electron/`
       * * Windows: `%LOCALAPPDATA%/electron/Cache` or `~/AppData/Local/electron/Cache/`
       */
-    var cacheRoot: js.UndefOr[String] = js.native
+    var cacheRoot: js.UndefOr[String] = js.undefined
     
     /**
       * Options passed to the downloader module.
       */
-    var downloadOptions: js.UndefOr[DownloadOptions] = js.native
+    var downloadOptions: js.UndefOr[DownloadOptions] = js.undefined
     
     /**
       * The custom [[Downloader]] class used to download artifacts. Defaults to the
       * built-in [[GotDownloader]].
       */
-    var downloader: js.UndefOr[Downloader[_]] = js.native
+    var downloader: js.UndefOr[Downloader[js.Any]] = js.undefined
     
     /**
       * Whether to download an artifact regardless of whether it's in the cache directory.
       *
       * Defaults to `false`.
       */
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Options related to specifying an artifact mirror.
       */
-    var mirrorOptions: js.UndefOr[MirrorOptions] = js.native
+    var mirrorOptions: js.UndefOr[MirrorOptions] = js.undefined
     
     /**
       * A temporary directory for downloads.
       * It is used before artifacts are put into cache.
       */
-    var tempDirectory: js.UndefOr[String] = js.native
+    var tempDirectory: js.UndefOr[String] = js.undefined
     
     /**
       * When set to `true`, disables checking that the artifact download completed successfully
@@ -117,7 +114,7 @@ object typesMod {
       *
       * Defaults to `false`.
       */
-    var unsafelyDisableChecksums: js.UndefOr[Boolean] = js.native
+    var unsafelyDisableChecksums: js.UndefOr[Boolean] = js.undefined
   }
   object ElectronDownloadRequestOptions {
     
@@ -143,7 +140,7 @@ object typesMod {
       def setDownloadOptionsUndefined: Self = StObject.set(x, "downloadOptions", js.undefined)
       
       @scala.inline
-      def setDownloader(value: Downloader[_]): Self = StObject.set(x, "downloader", value.asInstanceOf[js.Any])
+      def setDownloader(value: Downloader[js.Any]): Self = StObject.set(x, "downloader", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDownloaderUndefined: Self = StObject.set(x, "downloader", js.undefined)
@@ -174,79 +171,20 @@ object typesMod {
     }
   }
   
-  /* Inlined {  isGeneric :true} & @electron/get.@electron/get/dist/cjs/types.ElectronDownloadRequest & @electron/get.@electron/get/dist/cjs/types.ElectronDownloadRequestOptions */
-  @js.native
   trait ElectronGenericArtifactDetails
-    extends ElectronArtifactDetails
+    extends StObject
+       with ElectronDownloadRequest
+       with ElectronDownloadRequestOptions
+       with ElectronArtifactDetails
        with ElectronPlatformArtifactDetailsWithDefaults {
     
-    /**
-      * The type of artifact. For example:
-      * * `electron`
-      * * `ffmpeg`
-      */
-    var artifactName: String = js.native
-    
-    /**
-      * The directory that caches Electron artifact downloads.
-      *
-      * The default value is dependent upon the host platform:
-      *
-      * * Linux: `$XDG_CACHE_HOME` or `~/.cache/electron/`
-      * * MacOS: `~/Library/Caches/electron/`
-      * * Windows: `%LOCALAPPDATA%/electron/Cache` or `~/AppData/Local/electron/Cache/`
-      */
-    var cacheRoot: js.UndefOr[String] = js.native
-    
-    /**
-      * Options passed to the downloader module.
-      */
-    var downloadOptions: js.UndefOr[DownloadOptions] = js.native
-    
-    /**
-      * The custom [[Downloader]] class used to download artifacts. Defaults to the
-      * built-in [[GotDownloader]].
-      */
-    var downloader: js.UndefOr[Downloader[_]] = js.native
-    
-    /**
-      * Whether to download an artifact regardless of whether it's in the cache directory.
-      *
-      * Defaults to `false`.
-      */
-    var force: js.UndefOr[Boolean] = js.native
-    
-    var isGeneric: `true` = js.native
-    
-    /**
-      * Options related to specifying an artifact mirror.
-      */
-    var mirrorOptions: js.UndefOr[MirrorOptions] = js.native
-    
-    /**
-      * A temporary directory for downloads.
-      * It is used before artifacts are put into cache.
-      */
-    var tempDirectory: js.UndefOr[String] = js.native
-    
-    /**
-      * When set to `true`, disables checking that the artifact download completed successfully
-      * with the correct payload.
-      *
-      * Defaults to `false`.
-      */
-    var unsafelyDisableChecksums: js.UndefOr[Boolean] = js.native
-    
-    /**
-      * The version of Electron associated with the artifact.
-      */
-    var version: String = js.native
+    var isGeneric: `true`
   }
   object ElectronGenericArtifactDetails {
     
     @scala.inline
-    def apply(artifactName: String, isGeneric: `true`, version: String): ElectronGenericArtifactDetails = {
-      val __obj = js.Dynamic.literal(artifactName = artifactName.asInstanceOf[js.Any], isGeneric = isGeneric.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    def apply(artifactName: String, version: String): ElectronGenericArtifactDetails = {
+      val __obj = js.Dynamic.literal(artifactName = artifactName.asInstanceOf[js.Any], isGeneric = true, version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElectronGenericArtifactDetails]
     }
     
@@ -254,61 +192,15 @@ object typesMod {
     implicit class ElectronGenericArtifactDetailsMutableBuilder[Self <: ElectronGenericArtifactDetails] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArtifactName(value: String): Self = StObject.set(x, "artifactName", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCacheRoot(value: String): Self = StObject.set(x, "cacheRoot", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCacheRootUndefined: Self = StObject.set(x, "cacheRoot", js.undefined)
-      
-      @scala.inline
-      def setDownloadOptions(value: DownloadOptions): Self = StObject.set(x, "downloadOptions", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDownloadOptionsUndefined: Self = StObject.set(x, "downloadOptions", js.undefined)
-      
-      @scala.inline
-      def setDownloader(value: Downloader[_]): Self = StObject.set(x, "downloader", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDownloaderUndefined: Self = StObject.set(x, "downloader", js.undefined)
-      
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
-      
-      @scala.inline
       def setIsGeneric(value: `true`): Self = StObject.set(x, "isGeneric", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMirrorOptions(value: MirrorOptions): Self = StObject.set(x, "mirrorOptions", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMirrorOptionsUndefined: Self = StObject.set(x, "mirrorOptions", js.undefined)
-      
-      @scala.inline
-      def setTempDirectory(value: String): Self = StObject.set(x, "tempDirectory", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTempDirectoryUndefined: Self = StObject.set(x, "tempDirectory", js.undefined)
-      
-      @scala.inline
-      def setUnsafelyDisableChecksums(value: Boolean): Self = StObject.set(x, "unsafelyDisableChecksums", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUnsafelyDisableChecksumsUndefined: Self = StObject.set(x, "unsafelyDisableChecksums", js.undefined)
-      
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined {  platform :string,   arch :string,   artifactSuffix :string | undefined,   isGeneric :false | undefined} & @electron/get.@electron/get/dist/cjs/types.ElectronDownloadRequest & @electron/get.@electron/get/dist/cjs/types.ElectronDownloadRequestOptions */
-  @js.native
-  trait ElectronPlatformArtifactDetails extends ElectronArtifactDetails {
+  trait ElectronPlatformArtifactDetails
+    extends StObject
+       with ElectronDownloadRequest
+       with ElectronDownloadRequestOptions
+       with ElectronArtifactDetails {
     
     /**
       * The target artifact architecture. These are Node-style architecture names, for example:
@@ -316,52 +208,11 @@ object typesMod {
       * * `x64`
       * * `armv7l`
       */
-    var arch: String = js.native
+    var arch: String
     
-    /**
-      * The type of artifact. For example:
-      * * `electron`
-      * * `ffmpeg`
-      */
-    var artifactName: String = js.native
+    var artifactSuffix: js.UndefOr[String] = js.undefined
     
-    var artifactSuffix: js.UndefOr[String] = js.native
-    
-    /**
-      * The directory that caches Electron artifact downloads.
-      *
-      * The default value is dependent upon the host platform:
-      *
-      * * Linux: `$XDG_CACHE_HOME` or `~/.cache/electron/`
-      * * MacOS: `~/Library/Caches/electron/`
-      * * Windows: `%LOCALAPPDATA%/electron/Cache` or `~/AppData/Local/electron/Cache/`
-      */
-    var cacheRoot: js.UndefOr[String] = js.native
-    
-    /**
-      * Options passed to the downloader module.
-      */
-    var downloadOptions: js.UndefOr[DownloadOptions] = js.native
-    
-    /**
-      * The custom [[Downloader]] class used to download artifacts. Defaults to the
-      * built-in [[GotDownloader]].
-      */
-    var downloader: js.UndefOr[Downloader[_]] = js.native
-    
-    /**
-      * Whether to download an artifact regardless of whether it's in the cache directory.
-      *
-      * Defaults to `false`.
-      */
-    var force: js.UndefOr[Boolean] = js.native
-    
-    var isGeneric: js.UndefOr[`false`] = js.native
-    
-    /**
-      * Options related to specifying an artifact mirror.
-      */
-    var mirrorOptions: js.UndefOr[MirrorOptions] = js.native
+    var isGeneric: js.UndefOr[`false`] = js.undefined
     
     /**
       * The target artifact platform. These are Node-style platform names, for example:
@@ -369,26 +220,7 @@ object typesMod {
       * * `darwin`
       * * `linux`
       */
-    var platform: String = js.native
-    
-    /**
-      * A temporary directory for downloads.
-      * It is used before artifacts are put into cache.
-      */
-    var tempDirectory: js.UndefOr[String] = js.native
-    
-    /**
-      * When set to `true`, disables checking that the artifact download completed successfully
-      * with the correct payload.
-      *
-      * Defaults to `false`.
-      */
-    var unsafelyDisableChecksums: js.UndefOr[Boolean] = js.native
-    
-    /**
-      * The version of Electron associated with the artifact.
-      */
-    var version: String = js.native
+    var platform: String
   }
   object ElectronPlatformArtifactDetails {
     
@@ -405,37 +237,10 @@ object typesMod {
       def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setArtifactName(value: String): Self = StObject.set(x, "artifactName", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setArtifactSuffix(value: String): Self = StObject.set(x, "artifactSuffix", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArtifactSuffixUndefined: Self = StObject.set(x, "artifactSuffix", js.undefined)
-      
-      @scala.inline
-      def setCacheRoot(value: String): Self = StObject.set(x, "cacheRoot", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCacheRootUndefined: Self = StObject.set(x, "cacheRoot", js.undefined)
-      
-      @scala.inline
-      def setDownloadOptions(value: DownloadOptions): Self = StObject.set(x, "downloadOptions", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDownloadOptionsUndefined: Self = StObject.set(x, "downloadOptions", js.undefined)
-      
-      @scala.inline
-      def setDownloader(value: Downloader[_]): Self = StObject.set(x, "downloader", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDownloaderUndefined: Self = StObject.set(x, "downloader", js.undefined)
-      
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
       
       @scala.inline
       def setIsGeneric(value: `false`): Self = StObject.set(x, "isGeneric", value.asInstanceOf[js.Any])
@@ -444,28 +249,7 @@ object typesMod {
       def setIsGenericUndefined: Self = StObject.set(x, "isGeneric", js.undefined)
       
       @scala.inline
-      def setMirrorOptions(value: MirrorOptions): Self = StObject.set(x, "mirrorOptions", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMirrorOptionsUndefined: Self = StObject.set(x, "mirrorOptions", js.undefined)
-      
-      @scala.inline
       def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTempDirectory(value: String): Self = StObject.set(x, "tempDirectory", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTempDirectoryUndefined: Self = StObject.set(x, "tempDirectory", js.undefined)
-      
-      @scala.inline
-      def setUnsafelyDisableChecksums(value: Boolean): Self = StObject.set(x, "unsafelyDisableChecksums", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUnsafelyDisableChecksumsUndefined: Self = StObject.set(x, "unsafelyDisableChecksums", js.undefined)
-      
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -477,8 +261,8 @@ object typesMod {
   object ElectronPlatformArtifactDetailsWithDefaults {
     
     @scala.inline
-    def ElectronGenericArtifactDetails(artifactName: String, isGeneric: `true`, version: String): typings.electronGet.typesMod.ElectronGenericArtifactDetails = {
-      val __obj = js.Dynamic.literal(artifactName = artifactName.asInstanceOf[js.Any], isGeneric = isGeneric.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    def ElectronGenericArtifactDetails(artifactName: String, version: String): typings.electronGet.typesMod.ElectronGenericArtifactDetails = {
+      val __obj = js.Dynamic.literal(artifactName = artifactName.asInstanceOf[js.Any], isGeneric = true, version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.electronGet.typesMod.ElectronGenericArtifactDetails]
     }
     
@@ -489,42 +273,41 @@ object typesMod {
     }
   }
   
-  @js.native
   trait MirrorOptions extends StObject {
     
     /**
       * The name of the directory to download from,
       * often scoped by version number e.g 'v4.0.4'
       */
-    var customDir: js.UndefOr[String] = js.native
+    var customDir: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the asset to download,
       * e.g 'electron-v4.0.4-linux-x64.zip'
       */
-    var customFilename: js.UndefOr[String] = js.native
+    var customFilename: js.UndefOr[String] = js.undefined
     
     /**
       * The base URL of the mirror to download from,
       * e.g https://github.com/electron/electron/releases/download
       */
-    var mirror: js.UndefOr[String] = js.native
+    var mirror: js.UndefOr[String] = js.undefined
     
     /**
       * The Electron nightly-specific mirror URL.
       */
-    var nightlyMirror: js.UndefOr[String] = js.native
+    var nightlyMirror: js.UndefOr[String] = js.undefined
     
     /**
       * DEPRECATED - see nightlyMirror.
       */
-    var nightly_mirror: js.UndefOr[String] = js.native
+    var nightly_mirror: js.UndefOr[String] = js.undefined
     
     /**
       * A function allowing customization of the url returned
       * from getArtifactRemoteURL().
       */
-    var resolveAssetURL: js.UndefOr[js.Function1[/* opts */ DownloadOptions, js.Promise[String]]] = js.native
+    var resolveAssetURL: js.UndefOr[js.Function1[/* opts */ DownloadOptions, js.Promise[String]]] = js.undefined
   }
   object MirrorOptions {
     

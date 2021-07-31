@@ -7,22 +7,21 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.TRIANGLE
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScatterDatasetConfig
-  extends CommonDatasetConfig
+  extends StObject
+     with CommonDatasetConfig
      with BarLineScatterCandleBubbleConfig
      with LineScatterCandleRadarConfig {
   
-  var scatterShape: js.UndefOr[SQUARE | CIRCLE | TRIANGLE | CROSS | X] = js.native
+  var scatterShape: js.UndefOr[SQUARE | CIRCLE | TRIANGLE | CROSS | X] = js.undefined
   
-  var scatterShapeHoleColor: js.UndefOr[Color] = js.native
+  var scatterShapeHoleColor: js.UndefOr[Color] = js.undefined
   
-  var scatterShapeHoleRadius: js.UndefOr[Double] = js.native
+  var scatterShapeHoleRadius: js.UndefOr[Double] = js.undefined
   
-  var scatterShapeSize: js.UndefOr[Double] = js.native
+  var scatterShapeSize: js.UndefOr[Double] = js.undefined
 }
 object ScatterDatasetConfig {
   

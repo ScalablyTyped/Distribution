@@ -2,20 +2,20 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DiagnosticWithLocation extends Diagnostic {
+trait DiagnosticWithLocation
+  extends StObject
+     with Diagnostic {
   
   @JSName("file")
-  var file_DiagnosticWithLocation: SourceFile = js.native
+  var file_DiagnosticWithLocation: SourceFile
   
   @JSName("length")
-  var length_DiagnosticWithLocation: Double = js.native
+  var length_DiagnosticWithLocation: Double
   
   @JSName("start")
-  var start_DiagnosticWithLocation: Double = js.native
+  var start_DiagnosticWithLocation: Double
 }
 object DiagnosticWithLocation {
   

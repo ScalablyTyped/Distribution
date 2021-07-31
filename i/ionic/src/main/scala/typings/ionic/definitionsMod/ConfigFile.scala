@@ -2,63 +2,61 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigFile extends StObject {
   
   @JSName("features.ssl-commands")
-  var `featuresDotssl-commands`: js.UndefOr[Boolean] = js.native
+  var `featuresDotssl-commands`: js.UndefOr[Boolean] = js.undefined
   
   @JSName("git.host")
-  var gitDothost: js.UndefOr[String] = js.native
+  var gitDothost: js.UndefOr[String] = js.undefined
   
   @JSName("git.port")
-  var gitDotport: js.UndefOr[Double] = js.native
+  var gitDotport: js.UndefOr[Double] = js.undefined
   
   @JSName("git.setup")
-  var gitDotsetup: js.UndefOr[Boolean] = js.native
+  var gitDotsetup: js.UndefOr[Boolean] = js.undefined
   
-  var interactive: js.UndefOr[Boolean] = js.native
+  var interactive: js.UndefOr[Boolean] = js.undefined
   
-  var npmClient: NpmClient = js.native
+  var npmClient: NpmClient
   
   @JSName("org.id")
-  var orgDotid: js.UndefOr[String] = js.native
+  var orgDotid: js.UndefOr[String] = js.undefined
   
-  var proxy: js.UndefOr[String] = js.native
+  var proxy: js.UndefOr[String] = js.undefined
   
   @JSName("ssl.cafile")
-  var sslDotcafile: js.UndefOr[String | js.Array[String]] = js.native
+  var sslDotcafile: js.UndefOr[String | js.Array[String]] = js.undefined
   
   @JSName("ssl.certfile")
-  var sslDotcertfile: js.UndefOr[String | js.Array[String]] = js.native
+  var sslDotcertfile: js.UndefOr[String | js.Array[String]] = js.undefined
   
   @JSName("ssl.keyfile")
-  var sslDotkeyfile: js.UndefOr[String | js.Array[String]] = js.native
+  var sslDotkeyfile: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var telemetry: Boolean = js.native
+  var telemetry: Boolean
   
   @JSName("tokens.telemetry")
-  var tokensDottelemetry: js.UndefOr[String] = js.native
+  var tokensDottelemetry: js.UndefOr[String] = js.undefined
   
   @JSName("tokens.user")
-  var tokensDotuser: js.UndefOr[String] = js.native
+  var tokensDotuser: js.UndefOr[String] = js.undefined
   
   @JSName("urls.api")
-  var urlsDotapi: js.UndefOr[String] = js.native
+  var urlsDotapi: js.UndefOr[String] = js.undefined
   
   @JSName("urls.dash")
-  var urlsDotdash: js.UndefOr[String] = js.native
+  var urlsDotdash: js.UndefOr[String] = js.undefined
   
   @JSName("user.email")
-  var userDotemail: js.UndefOr[String] = js.native
+  var userDotemail: js.UndefOr[String] = js.undefined
   
   @JSName("user.id")
-  var userDotid: js.UndefOr[Double] = js.native
+  var userDotid: js.UndefOr[Double] = js.undefined
   
-  var version: String = js.native
+  var version: String
 }
 object ConfigFile {
   

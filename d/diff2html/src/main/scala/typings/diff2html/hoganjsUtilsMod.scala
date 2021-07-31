@@ -6,22 +6,26 @@ import typings.hoganJs.mod.Partials
 import typings.hoganJs.mod.Template_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hoganjsUtilsMod {
   
   @JSImport("diff2html/lib/hoganjs-utils", JSImport.Default)
   @js.native
-  class default protected () extends HoganJsUtils {
+  class default protected ()
+    extends StObject
+       with HoganJsUtils {
     def this(hasCompiledTemplatesRawTemplates: HoganJsUtilsConfig) = this()
   }
   /* static members */
   object default {
     
-    @JSImport("diff2html/lib/hoganjs-utils", "default.compile")
+    @JSImport("diff2html/lib/hoganjs-utils", JSImport.Default)
     @js.native
-    def compile(templateString: String): Template_ = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def compile(templateString: String): Template_ = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(templateString.asInstanceOf[js.Any]).asInstanceOf[Template_]
   }
   
   type CompiledTemplates = StringDictionary[Template_]
@@ -32,13 +36,7 @@ object hoganjsUtilsMod {
     var preCompiledTemplates: js.Any = js.native
     
     def render(namespace: String, view: String, params: Context): String = js.native
-    def render(
-      namespace: String,
-      view: String,
-      params: Context,
-      partials: js.UndefOr[scala.Nothing],
-      indent: String
-    ): String = js.native
+    def render(namespace: String, view: String, params: Context, partials: Unit, indent: String): String = js.native
     def render(namespace: String, view: String, params: Context, partials: Partials): String = js.native
     def render(namespace: String, view: String, params: Context, partials: Partials, indent: String): String = js.native
     
@@ -47,12 +45,11 @@ object hoganjsUtilsMod {
     var templateKey: js.Any = js.native
   }
   
-  @js.native
   trait HoganJsUtilsConfig extends StObject {
     
-    var compiledTemplates: js.UndefOr[CompiledTemplates] = js.native
+    var compiledTemplates: js.UndefOr[CompiledTemplates] = js.undefined
     
-    var rawTemplates: js.UndefOr[RawTemplates] = js.native
+    var rawTemplates: js.UndefOr[RawTemplates] = js.undefined
   }
   object HoganJsUtilsConfig {
     

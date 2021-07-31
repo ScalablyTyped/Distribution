@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetNodeStackTracesEnabledRequest extends StObject {
   
   /**
     * Enable or disable.
     */
-  var enable: Boolean = js.native
+  var enable: Boolean
 }
 object SetNodeStackTracesEnabledRequest {
   

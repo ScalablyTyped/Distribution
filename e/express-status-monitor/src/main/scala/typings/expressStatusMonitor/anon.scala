@@ -2,28 +2,26 @@ package typings.expressStatusMonitor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cpu extends StObject {
     
-    var cpu: js.UndefOr[Boolean] = js.native
+    var cpu: js.UndefOr[Boolean] = js.undefined
     
     /** @default true */
-    var heap: js.UndefOr[Boolean] = js.native
+    var heap: js.UndefOr[Boolean] = js.undefined
     
-    var load: js.UndefOr[Boolean] = js.native
+    var load: js.UndefOr[Boolean] = js.undefined
     
-    var mem: js.UndefOr[Boolean] = js.native
+    var mem: js.UndefOr[Boolean] = js.undefined
     
-    var responseTime: js.UndefOr[Boolean] = js.native
+    var responseTime: js.UndefOr[Boolean] = js.undefined
     
-    var rps: js.UndefOr[Boolean] = js.native
+    var rps: js.UndefOr[Boolean] = js.undefined
     
-    var statusCodes: js.UndefOr[Boolean] = js.native
+    var statusCodes: js.UndefOr[Boolean] = js.undefined
   }
   object Cpu {
     

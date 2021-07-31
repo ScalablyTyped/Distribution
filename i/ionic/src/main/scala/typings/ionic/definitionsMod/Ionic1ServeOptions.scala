@@ -2,19 +2,19 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Ionic1ServeOptions extends ServeOptions {
+trait Ionic1ServeOptions
+  extends StObject
+     with ServeOptions {
   
-  var consolelogs: Boolean = js.native
+  var consolelogs: Boolean
   
-  var livereloadPort: Double = js.native
+  var livereloadPort: Double
   
-  var notificationPort: Double = js.native
+  var notificationPort: Double
   
-  var serverlogs: Boolean = js.native
+  var serverlogs: Boolean
 }
 object Ionic1ServeOptions {
   

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,25 +13,37 @@ object ViewSizePreference extends StObject {
   
   /** The app does not have a window size preference specified. Windows, rather than the app, sets the size preference, which defaults to UseHalf. */
   @js.native
-  sealed trait default extends ViewSizePreference
+  sealed trait default
+    extends StObject
+       with ViewSizePreference
   
   /** The window uses 50% (half) of the available horizontal screen pixels. */
   @js.native
-  sealed trait useHalf extends ViewSizePreference
+  sealed trait useHalf
+    extends StObject
+       with ViewSizePreference
   
   /** The window uses less than 50% of the available horizontal screen pixels. */
   @js.native
-  sealed trait useLess extends ViewSizePreference
+  sealed trait useLess
+    extends StObject
+       with ViewSizePreference
   
   /** The window uses the minimum horizontal pixel width (either 320 or 500 pixels) specifies in the app's manifest (such as package.appxmanifest). */
   @js.native
-  sealed trait useMinimum extends ViewSizePreference
+  sealed trait useMinimum
+    extends StObject
+       with ViewSizePreference
   
   /** The window uses more than 50% of the available horizontal screen pixels. */
   @js.native
-  sealed trait useMore extends ViewSizePreference
+  sealed trait useMore
+    extends StObject
+       with ViewSizePreference
   
   /** The window has no visible component. */
   @js.native
-  sealed trait useNone extends ViewSizePreference
+  sealed trait useNone
+    extends StObject
+       with ViewSizePreference
 }

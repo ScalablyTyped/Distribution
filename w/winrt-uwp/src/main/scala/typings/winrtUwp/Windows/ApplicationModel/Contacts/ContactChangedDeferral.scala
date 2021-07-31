@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The deferral object to use while asynchronously processing ContactChanged events. */
-@js.native
 trait ContactChangedDeferral extends StObject {
   
   /** Call this method in order to release the deferral object when all asynchronous processing has finished. */
-  def complete(): Unit = js.native
+  def complete(): Unit
 }
 object ContactChangedDeferral {
   

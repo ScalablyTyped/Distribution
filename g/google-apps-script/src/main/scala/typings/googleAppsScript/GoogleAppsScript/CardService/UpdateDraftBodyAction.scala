@@ -2,18 +2,16 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an action that updates the email draft body.
   */
-@js.native
 trait UpdateDraftBodyAction extends StObject {
   
-  def addUpdateContent(content: String, contentType: ContentType): UpdateDraftBodyAction = js.native
+  def addUpdateContent(content: String, contentType: ContentType): UpdateDraftBodyAction
   
-  def setUpdateType(updateType: UpdateDraftBodyType): UpdateDraftBodyAction = js.native
+  def setUpdateType(updateType: UpdateDraftBodyType): UpdateDraftBodyAction
 }
 object UpdateDraftBodyAction {
   

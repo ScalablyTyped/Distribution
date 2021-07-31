@@ -2,27 +2,25 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Slider
-@js.native
 trait SliderSettings extends StObject {
   
   //Events
-  var change: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var slide: js.UndefOr[js.Function2[/* e */ js.Any, /* value */ Double, _]] = js.native
+  var slide: js.UndefOr[js.Function2[/* e */ js.Any, /* value */ Double, js.Any]] = js.undefined
   
-  var uiLibrary: js.UndefOr[String] = js.native
+  var uiLibrary: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SliderSettings {
   
@@ -36,7 +34,7 @@ object SliderSettings {
   implicit class SliderSettingsMutableBuilder[Self <: SliderSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setChange(value: /* e */ js.Any => _): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    def setChange(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
     def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
@@ -54,7 +52,7 @@ object SliderSettings {
     def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def setSlide(value: (/* e */ js.Any, /* value */ Double) => _): Self = StObject.set(x, "slide", js.Any.fromFunction2(value))
+    def setSlide(value: (/* e */ js.Any, /* value */ Double) => js.Any): Self = StObject.set(x, "slide", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSlideUndefined: Self = StObject.set(x, "slide", js.undefined)

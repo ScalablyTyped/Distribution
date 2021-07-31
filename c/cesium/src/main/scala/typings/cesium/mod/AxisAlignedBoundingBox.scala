@@ -2,18 +2,17 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "AxisAlignedBoundingBox")
 @js.native
 class AxisAlignedBoundingBox () extends StObject {
   def this(minimum: Cartesian3) = this()
-  def this(minimum: js.UndefOr[scala.Nothing], maximum: Cartesian3) = this()
+  def this(minimum: Unit, maximum: Cartesian3) = this()
   def this(minimum: Cartesian3, maximum: Cartesian3) = this()
-  def this(minimum: js.UndefOr[scala.Nothing], maximum: js.UndefOr[scala.Nothing], center: Cartesian3) = this()
-  def this(minimum: js.UndefOr[scala.Nothing], maximum: Cartesian3, center: Cartesian3) = this()
-  def this(minimum: Cartesian3, maximum: js.UndefOr[scala.Nothing], center: Cartesian3) = this()
+  def this(minimum: Unit, maximum: Unit, center: Cartesian3) = this()
+  def this(minimum: Unit, maximum: Cartesian3, center: Cartesian3) = this()
+  def this(minimum: Cartesian3, maximum: Unit, center: Cartesian3) = this()
   def this(minimum: Cartesian3, maximum: Cartesian3, center: Cartesian3) = this()
   
   var center: Cartesian3 = js.native
@@ -31,38 +30,33 @@ class AxisAlignedBoundingBox () extends StObject {
 }
 object AxisAlignedBoundingBox {
   
-  /* static member */
-  @JSImport("cesium", "AxisAlignedBoundingBox.clone")
+  @JSImport("cesium", "AxisAlignedBoundingBox")
   @js.native
-  def clone_(box: AxisAlignedBoundingBox): AxisAlignedBoundingBox = js.native
-  @JSImport("cesium", "AxisAlignedBoundingBox.clone")
-  @js.native
-  def clone_(box: AxisAlignedBoundingBox, result: AxisAlignedBoundingBox): AxisAlignedBoundingBox = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "AxisAlignedBoundingBox.equals")
-  @js.native
-  def equals_(): Boolean = js.native
-  @JSImport("cesium", "AxisAlignedBoundingBox.equals")
-  @js.native
-  def equals_(left: js.UndefOr[scala.Nothing], right: AxisAlignedBoundingBox): Boolean = js.native
-  @JSImport("cesium", "AxisAlignedBoundingBox.equals")
-  @js.native
-  def equals_(left: AxisAlignedBoundingBox): Boolean = js.native
-  @JSImport("cesium", "AxisAlignedBoundingBox.equals")
-  @js.native
-  def equals_(left: AxisAlignedBoundingBox, right: AxisAlignedBoundingBox): Boolean = js.native
+  @scala.inline
+  def clone_(box: AxisAlignedBoundingBox): AxisAlignedBoundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(box.asInstanceOf[js.Any]).asInstanceOf[AxisAlignedBoundingBox]
+  @scala.inline
+  def clone_(box: AxisAlignedBoundingBox, result: AxisAlignedBoundingBox): AxisAlignedBoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(box.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[AxisAlignedBoundingBox]
   
   /* static member */
-  @JSImport("cesium", "AxisAlignedBoundingBox.fromPoints")
-  @js.native
-  def fromPoints(positions: js.Array[Cartesian3]): AxisAlignedBoundingBox = js.native
-  @JSImport("cesium", "AxisAlignedBoundingBox.fromPoints")
-  @js.native
-  def fromPoints(positions: js.Array[Cartesian3], result: AxisAlignedBoundingBox): AxisAlignedBoundingBox = js.native
+  @scala.inline
+  def equals_(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")().asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(left: Unit, right: AxisAlignedBoundingBox): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(left: AxisAlignedBoundingBox): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(left: AxisAlignedBoundingBox, right: AxisAlignedBoundingBox): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("cesium", "AxisAlignedBoundingBox.intersect")
-  @js.native
-  def intersect(box: AxisAlignedBoundingBox, plane: Cartesian4): Intersect = js.native
+  @scala.inline
+  def fromPoints(positions: js.Array[Cartesian3]): AxisAlignedBoundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(positions.asInstanceOf[js.Any]).asInstanceOf[AxisAlignedBoundingBox]
+  @scala.inline
+  def fromPoints(positions: js.Array[Cartesian3], result: AxisAlignedBoundingBox): AxisAlignedBoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(positions.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[AxisAlignedBoundingBox]
+  
+  /* static member */
+  @scala.inline
+  def intersect(box: AxisAlignedBoundingBox, plane: Cartesian4): Intersect = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(box.asInstanceOf[js.Any], plane.asInstanceOf[js.Any])).asInstanceOf[Intersect]
 }

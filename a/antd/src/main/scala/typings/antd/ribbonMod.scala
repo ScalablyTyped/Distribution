@@ -8,7 +8,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ribbonMod extends Shortcut {
@@ -31,22 +30,21 @@ object ribbonMod extends Shortcut {
     def start: typings.antd.antdStrings.start = "start".asInstanceOf[typings.antd.antdStrings.start]
   }
   
-  @js.native
   trait RibbonProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[LiteralUnion[PresetColorType, String]] = js.native
+    var color: js.UndefOr[LiteralUnion[PresetColorType, String]] = js.undefined
     
-    var placement: js.UndefOr[RibbonPlacement] = js.native
+    var placement: js.UndefOr[RibbonPlacement] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var text: js.UndefOr[ReactNode] = js.native
+    var text: js.UndefOr[ReactNode] = js.undefined
   }
   object RibbonProps {
     

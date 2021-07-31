@@ -4,17 +4,15 @@ import typings.builderUtilRuntime.builderUtilRuntimeStrings.`1`
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockMapApiMod {
   
-  @js.native
   trait BlockMap extends StObject {
     
-    var files: js.Array[BlockMapFile] = js.native
+    var files: js.Array[BlockMapFile]
     
-    var version: `1` | `2` = js.native
+    var version: `1` | `2`
   }
   object BlockMap {
     
@@ -38,12 +36,13 @@ object blockMapApiMod {
     }
   }
   
-  @js.native
-  trait BlockMapFile extends FileChunks {
+  trait BlockMapFile
+    extends StObject
+       with FileChunks {
     
-    var name: String = js.native
+    var name: String
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object BlockMapFile {
     
@@ -64,12 +63,11 @@ object blockMapApiMod {
     }
   }
   
-  @js.native
   trait FileChunks extends StObject {
     
-    var checksums: js.Array[String] = js.native
+    var checksums: js.Array[String]
     
-    var sizes: js.Array[Double] = js.native
+    var sizes: js.Array[Double]
   }
   object FileChunks {
     

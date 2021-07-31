@@ -10,9 +10,9 @@ Typings are for version 1.0.403
 | ------------------ | :-------------: |
 | Full name          | wix-animations |
 | Keywords           | - |
-| # releases         | 128 |
+| # releases         | 129 |
 | # dependents       | 1 |
-| # downloads        | 89890 |
+| # downloads        | 99239 |
 | # stars            | 0 |
 
 ## Links

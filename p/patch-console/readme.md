@@ -12,7 +12,7 @@ Patch console methods to intercept output
 | Keywords           | stdout, stderr, patch, console, intercept, log, logs |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 11828 |
+| # downloads        | 178472 |
 | # stars            | 0 |
 
 ## Links

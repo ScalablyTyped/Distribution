@@ -2,10 +2,8 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait And extends StObject {
   
   @JSName("$and")
@@ -13,21 +11,21 @@ trait And extends StObject {
     js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor.Mongo.Query<T> */ js.Object
     ]
-  ] = js.native
+  ] = js.undefined
   
   @JSName("$nor")
   var $nor: js.UndefOr[
     js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor.Mongo.Query<T> */ js.Object
     ]
-  ] = js.native
+  ] = js.undefined
   
   @JSName("$or")
   var $or: js.UndefOr[
     js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor.Mongo.Query<T> */ js.Object
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object And {
   

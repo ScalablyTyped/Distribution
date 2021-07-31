@@ -2,23 +2,21 @@ package typings.amqplib.propertiesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Options {
   
-  @js.native
   trait AssertExchange extends StObject {
     
-    var alternateExchange: js.UndefOr[String] = js.native
+    var alternateExchange: js.UndefOr[String] = js.undefined
     
-    var arguments: js.UndefOr[js.Any] = js.native
+    var arguments: js.UndefOr[js.Any] = js.undefined
     
-    var autoDelete: js.UndefOr[Boolean] = js.native
+    var autoDelete: js.UndefOr[Boolean] = js.undefined
     
-    var durable: js.UndefOr[Boolean] = js.native
+    var durable: js.UndefOr[Boolean] = js.undefined
     
-    var internal: js.UndefOr[Boolean] = js.native
+    var internal: js.UndefOr[Boolean] = js.undefined
   }
   object AssertExchange {
     
@@ -63,28 +61,27 @@ object Options {
     }
   }
   
-  @js.native
   trait AssertQueue extends StObject {
     
-    var arguments: js.UndefOr[js.Any] = js.native
+    var arguments: js.UndefOr[js.Any] = js.undefined
     
-    var autoDelete: js.UndefOr[Boolean] = js.native
+    var autoDelete: js.UndefOr[Boolean] = js.undefined
     
-    var deadLetterExchange: js.UndefOr[String] = js.native
+    var deadLetterExchange: js.UndefOr[String] = js.undefined
     
-    var deadLetterRoutingKey: js.UndefOr[String] = js.native
+    var deadLetterRoutingKey: js.UndefOr[String] = js.undefined
     
-    var durable: js.UndefOr[Boolean] = js.native
+    var durable: js.UndefOr[Boolean] = js.undefined
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
-    var expires: js.UndefOr[Double] = js.native
+    var expires: js.UndefOr[Double] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var maxPriority: js.UndefOr[Double] = js.native
+    var maxPriority: js.UndefOr[Double] = js.undefined
     
-    var messageTtl: js.UndefOr[Double] = js.native
+    var messageTtl: js.UndefOr[Double] = js.undefined
   }
   object AssertQueue {
     
@@ -159,7 +156,6 @@ object Options {
     }
   }
   
-  @js.native
   trait Connect extends StObject {
     
     /**
@@ -168,63 +164,63 @@ object Options {
       *
       * Default value: 0x1000 (4kb) - That's the allowed minimum, it will fit many purposes
       */
-    var frameMax: js.UndefOr[Double] = js.native
+    var frameMax: js.UndefOr[Double] = js.undefined
     
     /**
       * The period of the connection heartbeat in seconds.
       *
       * Default value: 0
       */
-    var heartbeat: js.UndefOr[Double] = js.native
+    var heartbeat: js.UndefOr[Double] = js.undefined
     
     /**
       * Hostname used for connecting to the server.
       *
       * Default value: 'localhost'
       */
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
     /**
       * The desired locale for error messages. RabbitMQ only ever uses en_US
       *
       * Default value: 'en_US'
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /**
       * Password used for authenticating against the server.
       *
       * Default value: 'guest'
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /**
       * Port used for connecting to the server.
       *
       * Default value: 5672
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * The to be used protocol
       *
       * Default value: 'amqp'
       */
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
     /**
       * Username used for authenticating against the server.
       *
       * Default value: 'guest'
       */
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
     
     /**
       * What VHost shall be used.
       *
       * Default value: '/'
       */
-    var vhost: js.UndefOr[String] = js.native
+    var vhost: js.UndefOr[String] = js.undefined
   }
   object Connect {
     
@@ -293,20 +289,19 @@ object Options {
     }
   }
   
-  @js.native
   trait Consume extends StObject {
     
-    var arguments: js.UndefOr[js.Any] = js.native
+    var arguments: js.UndefOr[js.Any] = js.undefined
     
-    var consumerTag: js.UndefOr[String] = js.native
+    var consumerTag: js.UndefOr[String] = js.undefined
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
-    var noAck: js.UndefOr[Boolean] = js.native
+    var noAck: js.UndefOr[Boolean] = js.undefined
     
-    var noLocal: js.UndefOr[Boolean] = js.native
+    var noLocal: js.UndefOr[Boolean] = js.undefined
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
   }
   object Consume {
     
@@ -357,10 +352,9 @@ object Options {
     }
   }
   
-  @js.native
   trait DeleteExchange extends StObject {
     
-    var ifUnused: js.UndefOr[Boolean] = js.native
+    var ifUnused: js.UndefOr[Boolean] = js.undefined
   }
   object DeleteExchange {
     
@@ -381,12 +375,11 @@ object Options {
     }
   }
   
-  @js.native
   trait DeleteQueue extends StObject {
     
-    var ifEmpty: js.UndefOr[Boolean] = js.native
+    var ifEmpty: js.UndefOr[Boolean] = js.undefined
     
-    var ifUnused: js.UndefOr[Boolean] = js.native
+    var ifUnused: js.UndefOr[Boolean] = js.undefined
   }
   object DeleteQueue {
     
@@ -413,10 +406,9 @@ object Options {
     }
   }
   
-  @js.native
   trait Get extends StObject {
     
-    var noAck: js.UndefOr[Boolean] = js.native
+    var noAck: js.UndefOr[Boolean] = js.undefined
   }
   object Get {
     
@@ -437,42 +429,41 @@ object Options {
     }
   }
   
-  @js.native
   trait Publish extends StObject {
     
-    var BCC: js.UndefOr[String | js.Array[String]] = js.native
+    var BCC: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var CC: js.UndefOr[String | js.Array[String]] = js.native
+    var CC: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var appId: js.UndefOr[String] = js.native
+    var appId: js.UndefOr[String] = js.undefined
     
-    var contentEncoding: js.UndefOr[String] = js.native
+    var contentEncoding: js.UndefOr[String] = js.undefined
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var correlationId: js.UndefOr[String] = js.native
+    var correlationId: js.UndefOr[String] = js.undefined
     
-    var deliveryMode: js.UndefOr[Boolean | Double] = js.native
+    var deliveryMode: js.UndefOr[Boolean | Double] = js.undefined
     
-    var expiration: js.UndefOr[String | Double] = js.native
+    var expiration: js.UndefOr[String | Double] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var mandatory: js.UndefOr[Boolean] = js.native
+    var mandatory: js.UndefOr[Boolean] = js.undefined
     
-    var messageId: js.UndefOr[String] = js.native
+    var messageId: js.UndefOr[String] = js.undefined
     
-    var persistent: js.UndefOr[Boolean] = js.native
+    var persistent: js.UndefOr[Boolean] = js.undefined
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
-    var replyTo: js.UndefOr[String] = js.native
+    var replyTo: js.UndefOr[String] = js.undefined
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var userId: js.UndefOr[String] = js.native
+    var userId: js.UndefOr[String] = js.undefined
   }
   object Publish {
     

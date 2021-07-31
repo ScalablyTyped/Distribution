@@ -2,41 +2,39 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceError extends StObject {
   
   /**
     * When the error occurred.
     */
-  var CreatedAt: js.UndefOr[DateTime] = js.native
+  var CreatedAt: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The instance ID.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * A message that describes the error.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
   
   /**
     * The error ID.
     */
-  var ServiceErrorId: js.UndefOr[String] = js.native
+  var ServiceErrorId: js.UndefOr[String] = js.undefined
   
   /**
     * The stack ID.
     */
-  var StackId: js.UndefOr[String] = js.native
+  var StackId: js.UndefOr[String] = js.undefined
   
   /**
     * The error type.
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
 }
 object ServiceError {
   

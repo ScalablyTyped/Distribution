@@ -27,7 +27,6 @@ import typings.tinycolor2.tinycolor2Strings.rgb
 import typings.tinycolor2.tinycolor2Strings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -40,20 +39,22 @@ object mod extends Shortcut {
     *
     * @param color - the color as one of the valid color input format.
     */
-  class ^ () extends Instance {
+  class ^ ()
+    extends StObject
+       with Instance {
     def this(color: ColorInput) = this()
-    def this(color: js.UndefOr[ColorInput], opts: ConstructorOptions) = this()
+    def this(color: Unit, opts: ConstructorOptions) = this()
+    def this(color: ColorInput, opts: ConstructorOptions) = this()
   }
   @JSImport("tinycolor2", JSImport.Namespace)
   @js.native
-  val ^ : Constructor = js.native
+  val ^ : js.Object & Constructor = js.native
   
   object ColorFormats {
     
-    @js.native
     trait Alpha extends StObject {
       
-      var a: Double = js.native
+      var a: Double
     }
     object Alpha {
       
@@ -71,14 +72,15 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
-    trait HSL extends _ColorInputWithoutInstance {
+    trait HSL
+      extends StObject
+         with _ColorInputWithoutInstance {
       
-      var h: Double = js.native
+      var h: Double
       
-      var l: Double = js.native
+      var l: Double
       
-      var s: Double = js.native
+      var s: Double
     }
     object HSL {
       
@@ -104,9 +106,9 @@ object mod extends Shortcut {
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.tinycolor2.mod._ColorInput because Already inherited
-    - typings.tinycolor2.mod._ColorInputWithoutInstance because Already inherited */ @js.native
-    trait HSLA
-      extends HSL
+    - typings.tinycolor2.mod._ColorInputWithoutInstance because Already inherited */ trait HSLA
+      extends StObject
+         with HSL
          with Alpha
     object HSLA {
       
@@ -117,14 +119,15 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
-    trait HSV extends _ColorInputWithoutInstance {
+    trait HSV
+      extends StObject
+         with _ColorInputWithoutInstance {
       
-      var h: Double = js.native
+      var h: Double
       
-      var s: Double = js.native
+      var s: Double
       
-      var v: Double = js.native
+      var v: Double
     }
     object HSV {
       
@@ -150,10 +153,11 @@ object mod extends Shortcut {
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.tinycolor2.mod._ColorInput because Already inherited
-    - typings.tinycolor2.mod._ColorInputWithoutInstance because Already inherited */ @js.native
-    trait HSVA extends HSV {
+    - typings.tinycolor2.mod._ColorInputWithoutInstance because Already inherited */ trait HSVA
+      extends StObject
+         with HSV {
       
-      var a: Double = js.native
+      var a: Double
     }
     object HSVA {
       
@@ -171,14 +175,15 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
-    trait PRGB extends _ColorInputWithoutInstance {
+    trait PRGB
+      extends StObject
+         with _ColorInputWithoutInstance {
       
-      var b: String = js.native
+      var b: String
       
-      var g: String = js.native
+      var g: String
       
-      var r: String = js.native
+      var r: String
     }
     object PRGB {
       
@@ -204,9 +209,9 @@ object mod extends Shortcut {
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.tinycolor2.mod._ColorInput because Already inherited
-    - typings.tinycolor2.mod._ColorInputWithoutInstance because Already inherited */ @js.native
-    trait PRGBA
-      extends PRGB
+    - typings.tinycolor2.mod._ColorInputWithoutInstance because Already inherited */ trait PRGBA
+      extends StObject
+         with PRGB
          with Alpha
     object PRGBA {
       
@@ -217,14 +222,15 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
-    trait RGB extends _ColorInputWithoutInstance {
+    trait RGB
+      extends StObject
+         with _ColorInputWithoutInstance {
       
-      var b: Double = js.native
+      var b: Double
       
-      var g: Double = js.native
+      var g: Double
       
-      var r: Double = js.native
+      var r: Double
     }
     object RGB {
       
@@ -250,9 +256,9 @@ object mod extends Shortcut {
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.tinycolor2.mod._ColorInput because Already inherited
-    - typings.tinycolor2.mod._ColorInputWithoutInstance because Already inherited */ @js.native
-    trait RGBA
-      extends RGB
+    - typings.tinycolor2.mod._ColorInputWithoutInstance because Already inherited */ trait RGBA
+      extends StObject
+         with RGB
          with Alpha
     object RGBA {
       
@@ -285,25 +291,31 @@ object mod extends Shortcut {
   
   @js.native
   trait Constructor
-    extends /**
+    extends StObject
+       with /**
     * Create a tinycolor instance of the color named.
     *
     * @param color - the color as one of the valid color input format.
     */
   Instantiable0[Instance]
        with Instantiable1[/* color */ ColorInput, Instance]
-       with Instantiable2[js.UndefOr[/* color */ ColorInput], /* opts */ ConstructorOptions, Instance] {
+       with Instantiable2[
+          (/* color */ ColorInput) | (/* color */ Unit), 
+          /* opts */ ConstructorOptions, 
+          Instance
+        ] {
     
     def apply(): Instance = js.native
-    def apply(color: js.UndefOr[ColorInput], opts: ConstructorOptions): Instance = js.native
+    def apply(color: Unit, opts: ConstructorOptions): Instance = js.native
     def apply(color: ColorInput): Instance = js.native
+    def apply(color: ColorInput, opts: ConstructorOptions): Instance = js.native
     
     /**
       * Compares two colors. Each colors can be any color inputs.
       */
     def equals(): Boolean = js.native
-    def equals(color1: js.UndefOr[ColorInput], color2: ColorInput): Boolean = js.native
-    def equals(color1: ColorInput): Boolean = js.native
+    def equals(color1: Unit, color2: ColorInput): Boolean = js.native
+    def equals(color1: ColorInput, color2: ColorInput): Boolean = js.native
     
     /**
       * Create a tinycolor instance based off the relative values.
@@ -368,12 +380,11 @@ object mod extends Shortcut {
     def readability(color1: ColorInput, color2: ColorInput): Double = js.native
   }
   
-  @js.native
   trait ConstructorOptions extends StObject {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var gradientType: js.UndefOr[Boolean] = js.native
+    var gradientType: js.UndefOr[Boolean] = js.undefined
   }
   object ConstructorOptions {
     
@@ -401,7 +412,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait Instance extends _ColorInput {
+  trait Instance
+    extends StObject
+       with _ColorInput {
     
     /**
       * Gets an analogous color scheme based off of the current color.
@@ -412,9 +425,9 @@ object mod extends Shortcut {
       *  Default value: 30.
       */
     def analogous(): js.Array[Instance] = js.native
-    def analogous(results: js.UndefOr[scala.Nothing], slices: Double): js.Array[Instance] = js.native
     def analogous(results: Double): js.Array[Instance] = js.native
     def analogous(results: Double, slices: Double): js.Array[Instance] = js.native
+    def analogous(results: Unit, slices: Double): js.Array[Instance] = js.native
     
     /**
       * Brighten the color a given amount.
@@ -648,10 +661,11 @@ object mod extends Shortcut {
     def triad(): js.Tuple3[Instance, Instance, Instance] = js.native
   }
   
-  @js.native
-  trait MostReadableArgs extends WCAG2Options {
+  trait MostReadableArgs
+    extends StObject
+       with WCAG2Options {
     
-    var includeFallbackColors: js.UndefOr[Boolean] = js.native
+    var includeFallbackColors: js.UndefOr[Boolean] = js.undefined
   }
   object MostReadableArgs {
     
@@ -672,12 +686,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait WCAG2Options extends StObject {
     
-    var level: js.UndefOr[AA | AAA] = js.native
+    var level: js.UndefOr[AA | AAA] = js.undefined
     
-    var size: js.UndefOr[large | small] = js.native
+    var size: js.UndefOr[large | small] = js.undefined
   }
   object WCAG2Options {
     
@@ -706,7 +719,9 @@ object mod extends Shortcut {
   
   trait _ColorInput extends StObject
   
-  trait _ColorInputWithoutInstance extends _ColorInput
+  trait _ColorInputWithoutInstance
+    extends StObject
+       with _ColorInput
   object _ColorInputWithoutInstance {
     
     @scala.inline
@@ -758,8 +773,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Constructor
+  type _To = js.Object & Constructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Constructor = ^
+  override def _to: js.Object & Constructor = ^
 }

@@ -2,15 +2,15 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RectButtonProperties extends BaseButtonProperties {
+trait RectButtonProperties
+  extends StObject
+     with BaseButtonProperties {
   
-  var activeOpacity: js.UndefOr[Double] = js.native
+  var activeOpacity: js.UndefOr[Double] = js.undefined
   
-  var underlayColor: js.UndefOr[String] = js.native
+  var underlayColor: js.UndefOr[String] = js.undefined
 }
 object RectButtonProperties {
   

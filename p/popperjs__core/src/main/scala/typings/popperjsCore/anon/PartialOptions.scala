@@ -7,24 +7,22 @@ import typings.popperjsCore.typesMod.Padding
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/utils/detectOverflow.Options> */
-@js.native
 trait PartialOptions extends StObject {
   
-  var altBoundary: js.UndefOr[Boolean] = js.native
+  var altBoundary: js.UndefOr[Boolean] = js.undefined
   
-  var boundary: js.UndefOr[Boundary] = js.native
+  var boundary: js.UndefOr[Boundary] = js.undefined
   
-  var elementContext: js.UndefOr[Context] = js.native
+  var elementContext: js.UndefOr[Context] = js.undefined
   
-  var padding: js.UndefOr[Padding] = js.native
+  var padding: js.UndefOr[Padding] = js.undefined
   
-  var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.native
+  var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.undefined
   
-  var rootBoundary: js.UndefOr[RootBoundary] = js.native
+  var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
 }
 object PartialOptions {
   

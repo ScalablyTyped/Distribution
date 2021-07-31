@@ -3,11 +3,12 @@ package typings.mendixmodelsdk.domainmodelsMod.domainmodels
 import typings.mendixmodelsdk.enumerationsMod.enumerations.IEnumeration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEnumerationAttributeType extends IAttributeType {
+trait IEnumerationAttributeType
+  extends StObject
+     with IAttributeType {
   
   /**
     * This property is required and cannot be set to null.

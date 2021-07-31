@@ -4,45 +4,43 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.octokitTypes.anon.Blog
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsUpdateLegacyResponseData extends StObject {
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var description: String = js.native
+  var description: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var members_count: Double = js.native
+  var members_count: Double
   
-  var members_url: String = js.native
+  var members_url: String
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var organization: Blog = js.native
+  var organization: Blog
   
-  var parent: StringDictionary[js.Any] = js.native
+  var parent: StringDictionary[js.Any]
   
-  var permission: String = js.native
+  var permission: String
   
-  var privacy: String = js.native
+  var privacy: String
   
-  var repos_count: Double = js.native
+  var repos_count: Double
   
-  var repositories_url: String = js.native
+  var repositories_url: String
   
-  var slug: String = js.native
+  var slug: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object TeamsUpdateLegacyResponseData {
   

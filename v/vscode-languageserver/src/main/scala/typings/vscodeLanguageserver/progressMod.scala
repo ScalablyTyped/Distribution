@@ -9,30 +9,29 @@ import typings.vscodeLanguageserverProtocol.protocolMod.PartialResultParams
 import typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressMod {
+  
+  @JSImport("vscode-languageserver/lib/progress", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vscode-languageserver/lib/progress", "ProgressFeature")
   @js.native
   val ProgressFeature: Feature[_RemoteWindow, WindowProgress] = js.native
   
-  @JSImport("vscode-languageserver/lib/progress", "attachPartialResult")
-  @js.native
-  def attachPartialResult[R](connection: ProgressContext, params: PartialResultParams): js.UndefOr[ResultProgress[R]] = js.native
+  @scala.inline
+  def attachPartialResult[R](connection: ProgressContext, params: PartialResultParams): js.UndefOr[ResultProgress[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachPartialResult")(connection.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultProgress[R]]]
   
-  @JSImport("vscode-languageserver/lib/progress", "attachWorkDone")
-  @js.native
-  def attachWorkDone(connection: ProgressContext): WorkDoneProgress = js.native
-  @JSImport("vscode-languageserver/lib/progress", "attachWorkDone")
-  @js.native
-  def attachWorkDone(connection: ProgressContext, params: WorkDoneProgressParams): WorkDoneProgress = js.native
+  @scala.inline
+  def attachWorkDone(connection: ProgressContext): WorkDoneProgress = ^.asInstanceOf[js.Dynamic].applyDynamic("attachWorkDone")(connection.asInstanceOf[js.Any]).asInstanceOf[WorkDoneProgress]
+  @scala.inline
+  def attachWorkDone(connection: ProgressContext, params: WorkDoneProgressParams): WorkDoneProgress = (^.asInstanceOf[js.Dynamic].applyDynamic("attachWorkDone")(connection.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[WorkDoneProgress]
   
-  @js.native
   trait ProgressContext extends StObject {
     
-    def sendProgress[P](`type`: ProgressType[P], token: ProgressToken, value: P): Unit = js.native
+    def sendProgress[P](`type`: ProgressType[P], token: ProgressToken, value: P): Unit
   }
   object ProgressContext {
     
@@ -50,10 +49,9 @@ object progressMod {
     }
   }
   
-  @js.native
   trait ResultProgress[R] extends StObject {
     
-    def report(data: R): Unit = js.native
+    def report(data: R): Unit
   }
   object ResultProgress {
     
@@ -64,7 +62,7 @@ object progressMod {
     }
     
     @scala.inline
-    implicit class ResultProgressMutableBuilder[Self <: ResultProgress[_], R] (val x: Self with ResultProgress[R]) extends AnyVal {
+    implicit class ResultProgressMutableBuilder[Self <: ResultProgress[?], R] (val x: Self & ResultProgress[R]) extends AnyVal {
       
       @scala.inline
       def setReport(value: R => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
@@ -84,18 +82,13 @@ object progressMod {
   trait WorkDoneProgress extends StObject {
     
     def begin(title: String): Unit = js.native
-    def begin(
-      title: String,
-      percentage: js.UndefOr[scala.Nothing],
-      message: js.UndefOr[scala.Nothing],
-      cancellable: Boolean
-    ): Unit = js.native
-    def begin(title: String, percentage: js.UndefOr[scala.Nothing], message: String): Unit = js.native
-    def begin(title: String, percentage: js.UndefOr[scala.Nothing], message: String, cancellable: Boolean): Unit = js.native
     def begin(title: String, percentage: Double): Unit = js.native
-    def begin(title: String, percentage: Double, message: js.UndefOr[scala.Nothing], cancellable: Boolean): Unit = js.native
     def begin(title: String, percentage: Double, message: String): Unit = js.native
     def begin(title: String, percentage: Double, message: String, cancellable: Boolean): Unit = js.native
+    def begin(title: String, percentage: Double, message: Unit, cancellable: Boolean): Unit = js.native
+    def begin(title: String, percentage: Unit, message: String): Unit = js.native
+    def begin(title: String, percentage: Unit, message: String, cancellable: Boolean): Unit = js.native
+    def begin(title: String, percentage: Unit, message: Unit, cancellable: Boolean): Unit = js.native
     
     def done(): Unit = js.native
     

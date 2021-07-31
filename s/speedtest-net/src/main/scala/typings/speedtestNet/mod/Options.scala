@@ -2,10 +2,8 @@ package typings.speedtestNet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait Options extends StObject {
     * GDPR terms you can read their disclaimer by running the speedtest-net
     * CLI without the --accept-license option.
     */
-  var acceptGdpr: js.UndefOr[Boolean] = js.native
+  var acceptGdpr: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to `true` to accept the Ookla EULA, TOS and Privacy policy. This
@@ -22,34 +20,34 @@ trait Options extends StObject {
     * the Ookla license terms, you can view the links to their agreements
     * by running the speedtest-net CLI without the --accept-license option.
     */
-  var acceptLicense: js.UndefOr[Boolean] = js.native
+  var acceptLicense: js.UndefOr[Boolean] = js.undefined
   
   /** Binary executable path of the Ookla speedtest CLI */
-  var binary: js.UndefOr[String] = js.native
+  var binary: js.UndefOr[String] = js.undefined
   
   /** Default '1.0.0' Binary executable version */
-  var binaryVersion: js.UndefOr[String] = js.native
+  var binaryVersion: js.UndefOr[String] = js.undefined
   
   /**
     * A cancellation function created with `speedTest.makeCancel()` to
     * cancel the test.
     */
-  var cancel: js.UndefOr[CancelFunction] = js.native
+  var cancel: js.UndefOr[CancelFunction] = js.undefined
   
   /** Server host to connect to */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /** Function to handle progress events */
-  var progress: js.UndefOr[ProgressFunction] = js.native
+  var progress: js.UndefOr[ProgressFunction] = js.undefined
   
   /** ID of the server to restrict the tests against. */
-  var serverId: js.UndefOr[String] = js.native
+  var serverId: js.UndefOr[String] = js.undefined
   
   /** IP of the network interface to bind */
-  var sourceIp: js.UndefOr[String] = js.native
+  var sourceIp: js.UndefOr[String] = js.undefined
   
   /** Log level for `{ type: log }` progress events */
-  var verbosity: js.UndefOr[Double] = js.native
+  var verbosity: js.UndefOr[Double] = js.undefined
 }
 object Options {
   

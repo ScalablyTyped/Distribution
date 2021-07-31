@@ -2,21 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PullHelpers {
   
-  @js.native
   trait OtherPullDeclsWalker extends StObject {
     
-    var currentlyWalkingOtherDecls: js.Any = js.native
+    var currentlyWalkingOtherDecls: js.Any
     
     def walkOtherPullDecls(
       currentDecl: PullDecl,
       otherDecls: js.Array[PullDecl],
       callBack: js.Function1[/* otherDecl */ PullDecl, Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object OtherPullDeclsWalker {
     
@@ -40,20 +38,19 @@ object PullHelpers {
     }
   }
   
-  @js.native
   trait PullTypeSymbolStructureWalker extends StObject {
     
-    def callSignatureWalk(signatureSymbol: PullSignatureSymbol): Boolean = js.native
+    def callSignatureWalk(signatureSymbol: PullSignatureSymbol): Boolean
     
-    def constructSignatureWalk(signatureSymbol: PullSignatureSymbol): Boolean = js.native
+    def constructSignatureWalk(signatureSymbol: PullSignatureSymbol): Boolean
     
-    def indexSignatureWalk(signatureSymbol: PullSignatureSymbol): Boolean = js.native
+    def indexSignatureWalk(signatureSymbol: PullSignatureSymbol): Boolean
     
-    def memberSymbolWalk(memberSymbol: PullSymbol): Boolean = js.native
+    def memberSymbolWalk(memberSymbol: PullSymbol): Boolean
     
-    def signatureParameterWalk(parameterSymbol: PullSymbol): Boolean = js.native
+    def signatureParameterWalk(parameterSymbol: PullSymbol): Boolean
     
-    def signatureReturnTypeWalk(returnType: PullTypeSymbol): Boolean = js.native
+    def signatureReturnTypeWalk(returnType: PullTypeSymbol): Boolean
   }
   object PullTypeSymbolStructureWalker {
     
@@ -93,12 +90,11 @@ object PullHelpers {
     }
   }
   
-  @js.native
   trait SignatureInfoForFuncDecl extends StObject {
     
-    var allSignatures: js.Array[PullSignatureSymbol] = js.native
+    var allSignatures: js.Array[PullSignatureSymbol]
     
-    var signature: PullSignatureSymbol = js.native
+    var signature: PullSignatureSymbol
   }
   object SignatureInfoForFuncDecl {
     

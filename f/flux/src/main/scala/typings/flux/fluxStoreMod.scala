@@ -4,7 +4,6 @@ import typings.fbemitter.mod.EventEmitter
 import typings.fbemitter.mod.EventSubscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fluxStoreMod {
@@ -16,27 +15,24 @@ object fluxStoreMod {
     */
   @JSImport("flux/lib/FluxStore", JSImport.Namespace)
   @js.native
-  abstract class ^[TPayload] protected () extends FluxStore[TPayload] {
+  abstract class ^[TPayload] protected ()
+    extends StObject
+       with FluxStore[TPayload] {
     /**
       * Constructs and registers an instance of this store with the given dispatcher.
       */
     def this(dispatcher: typings.flux.dispatcherMod.^[TPayload]) = this()
-  }
-  
-  /**
-    * This class represents the most basic functionality for a FluxStore. Do not
-    * extend this store directly; instead extend FluxReduceStore when creating a
-    * new store.
-    */
-  @js.native
-  trait FluxStore[TPayload] extends StObject {
     
+    /* CompleteClass */
     var __changeEvent: String = js.native
     
+    /* CompleteClass */
     var __changed: Boolean = js.native
     
+    /* CompleteClass */
     var __className: String = js.native
     
+    /* CompleteClass */
     var __dispatcher: typings.flux.dispatcherMod.^[TPayload] = js.native
     
     /**
@@ -44,8 +40,10 @@ object fluxStoreMod {
       * This can only be invoked when dispatching.
       * Changes are de-duplicated and resolved at the end of this store's __onDispatch function.
       */
-    /* protected */ def __emitChange(): Unit = js.native
+    /* CompleteClass */
+    /* protected */ override def __emitChange(): Unit = js.native
     
+    /* CompleteClass */
     var __emitter: EventEmitter = js.native
     
     /**
@@ -53,39 +51,109 @@ object fluxStoreMod {
       * be used for things like catching changes and emitting them after the
       * subclass has handled a payload.
       */
-    /* protected */ def __invokeOnDispatch(payload: TPayload): Unit = js.native
+    /* CompleteClass */
+    /* protected */ override def __invokeOnDispatch(payload: TPayload): Unit = js.native
     
     /**
       * Subclasses must override this method.
       * This is how the store receives actions from the dispatcher.
       * All state mutation logic must be done during this method.
       */
-    /* protected */ def __onDispatch(payload: TPayload): Unit = js.native
+    /* CompleteClass */
+    /* protected */ override def __onDispatch(payload: TPayload): Unit = js.native
     
     /**
       * Adds a listener to the store, when the store changes the given callback will be called.
       * A token is returned that can be used to remove the listener.
       * Calling the remove() function on the returned token will remove the listener.
       */
-    def addListener(callback: js.Function0[Unit]): EventSubscription = js.native
+    /* CompleteClass */
+    override def addListener(callback: js.Function0[Unit]): EventSubscription = js.native
     
     /**
       * Returns the dispatch token that the dispatcher recognizes this store by.
       * Can be used to waitFor() this store.
       */
-    def getDispatchToken(): String = js.native
+    /* CompleteClass */
+    override def getDispatchToken(): String = js.native
     
     /**
       * Returns the dispatcher this store is registered with.
       */
-    def getDispatcher(): typings.flux.dispatcherMod.^[TPayload] = js.native
+    /* CompleteClass */
+    override def getDispatcher(): typings.flux.dispatcherMod.^[TPayload] = js.native
     
     /**
       * Ask if a store has changed during the current dispatch.
       * Can only be invoked while dispatching.
       * This can be used for constructing derived stores that depend on data from other stores.
       */
-    def hasChanged(): Boolean = js.native
+    /* CompleteClass */
+    override def hasChanged(): Boolean = js.native
+  }
+  
+  /**
+    * This class represents the most basic functionality for a FluxStore. Do not
+    * extend this store directly; instead extend FluxReduceStore when creating a
+    * new store.
+    */
+  trait FluxStore[TPayload] extends StObject {
+    
+    var __changeEvent: String
+    
+    var __changed: Boolean
+    
+    var __className: String
+    
+    var __dispatcher: typings.flux.dispatcherMod.^[TPayload]
+    
+    /**
+      * Emit an event notifying all listeners that this store has changed.
+      * This can only be invoked when dispatching.
+      * Changes are de-duplicated and resolved at the end of this store's __onDispatch function.
+      */
+    /* protected */ def __emitChange(): Unit
+    
+    var __emitter: EventEmitter
+    
+    /**
+      * This method encapsulates all logic for invoking __onDispatch. It should
+      * be used for things like catching changes and emitting them after the
+      * subclass has handled a payload.
+      */
+    /* protected */ def __invokeOnDispatch(payload: TPayload): Unit
+    
+    /**
+      * Subclasses must override this method.
+      * This is how the store receives actions from the dispatcher.
+      * All state mutation logic must be done during this method.
+      */
+    /* protected */ def __onDispatch(payload: TPayload): Unit
+    
+    /**
+      * Adds a listener to the store, when the store changes the given callback will be called.
+      * A token is returned that can be used to remove the listener.
+      * Calling the remove() function on the returned token will remove the listener.
+      */
+    def addListener(callback: js.Function0[Unit]): EventSubscription
+    
+    /**
+      * Returns the dispatch token that the dispatcher recognizes this store by.
+      * Can be used to waitFor() this store.
+      */
+    def getDispatchToken(): String
+    
+    /**
+      * Returns the dispatcher this store is registered with.
+      */
+    def getDispatcher(): typings.flux.dispatcherMod.^[TPayload]
+    
+    /**
+      * Ask if a store has changed during the current dispatch.
+      * Can only be invoked while dispatching.
+      * This can be used for constructing derived stores that depend on data from other stores.
+      */
+    def hasChanged(): Boolean
   }
   object FluxStore {
     
@@ -109,7 +177,7 @@ object fluxStoreMod {
     }
     
     @scala.inline
-    implicit class FluxStoreMutableBuilder[Self <: FluxStore[_], TPayload] (val x: Self with FluxStore[TPayload]) extends AnyVal {
+    implicit class FluxStoreMutableBuilder[Self <: FluxStore[?], TPayload] (val x: Self & FluxStore[TPayload]) extends AnyVal {
       
       @scala.inline
       def setAddListener(value: js.Function0[Unit] => EventSubscription): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))

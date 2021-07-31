@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgWidget
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,19 +16,19 @@ trait IgWidget
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
 }
 object IgWidget {
   

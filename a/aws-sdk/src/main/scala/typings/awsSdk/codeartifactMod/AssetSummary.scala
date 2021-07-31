@@ -2,26 +2,24 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetSummary extends StObject {
   
   /**
     *  The hashes of the asset. 
     */
-  var hashes: js.UndefOr[AssetHashes] = js.native
+  var hashes: js.UndefOr[AssetHashes] = js.undefined
   
   /**
     *  The name of the asset. 
     */
-  var name: AssetName = js.native
+  var name: AssetName
   
   /**
     *  The size of the asset. 
     */
-  var size: js.UndefOr[LongOptional] = js.native
+  var size: js.UndefOr[LongOptional] = js.undefined
 }
 object AssetSummary {
   

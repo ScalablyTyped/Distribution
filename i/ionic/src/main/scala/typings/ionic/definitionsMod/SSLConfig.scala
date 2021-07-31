@@ -2,17 +2,15 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SSLConfig extends StObject {
   
-  var cafile: js.UndefOr[String | js.Array[String]] = js.native
+  var cafile: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var certfile: js.UndefOr[String | js.Array[String]] = js.native
+  var certfile: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var keyfile: js.UndefOr[String | js.Array[String]] = js.native
+  var keyfile: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object SSLConfig {
   

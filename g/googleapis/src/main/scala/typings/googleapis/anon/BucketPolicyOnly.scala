@@ -2,13 +2,11 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketPolicyOnly extends StObject {
   
-  var bucketPolicyOnly: js.UndefOr[Enabled] = js.native
+  var bucketPolicyOnly: js.UndefOr[Enabled] = js.undefined
 }
 object BucketPolicyOnly {
   

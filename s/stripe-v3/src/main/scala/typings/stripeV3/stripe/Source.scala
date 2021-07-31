@@ -6,31 +6,29 @@ import typings.stripeV3.anon.Bankcode
 import typings.stripeV3.anon.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
-  var card: js.UndefOr[Card] = js.native
+  var card: js.UndefOr[Card] = js.undefined
   
-  var client_secret: String = js.native
+  var client_secret: String
   
-  var created: Double = js.native
+  var created: Double
   
-  var currency: String = js.native
+  var currency: String
   
-  var id: String = js.native
+  var id: String
   
-  var owner: Address = js.native
+  var owner: Address
   
-  var redirect: js.UndefOr[Status] = js.native
+  var redirect: js.UndefOr[Status] = js.undefined
   
-  var sepa_debit: js.UndefOr[Bankcode] = js.native
+  var sepa_debit: js.UndefOr[Bankcode] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var three_d_secure: js.UndefOr[Authenticated] = js.native
+  var three_d_secure: js.UndefOr[Authenticated] = js.undefined
 }
 object Source {
   

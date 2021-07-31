@@ -2,13 +2,11 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageHyphenFallback[TLength] extends StObject {
   
-  var size: js.UndefOr[PageSizeProperty[TLength] | js.Array[PageSizeProperty[TLength]]] = js.native
+  var size: js.UndefOr[PageSizeProperty[TLength] | js.Array[PageSizeProperty[TLength]]] = js.undefined
 }
 object PageHyphenFallback {
   
@@ -19,7 +17,7 @@ object PageHyphenFallback {
   }
   
   @scala.inline
-  implicit class PageHyphenFallbackMutableBuilder[Self <: PageHyphenFallback[_], TLength] (val x: Self with PageHyphenFallback[TLength]) extends AnyVal {
+  implicit class PageHyphenFallbackMutableBuilder[Self <: PageHyphenFallback[?], TLength] (val x: Self & PageHyphenFallback[TLength]) extends AnyVal {
     
     @scala.inline
     def setSize(value: PageSizeProperty[TLength] | js.Array[PageSizeProperty[TLength]]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])

@@ -11,29 +11,27 @@ import typings.devextreme.devextremeStrings.stdError
 import typings.devextreme.devextremeStrings.variance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EdgeLength extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var displayMode: js.UndefOr[auto | high | low | none] = js.native
+  var displayMode: js.UndefOr[auto | high | low | none] = js.undefined
   
-  var edgeLength: js.UndefOr[Double] = js.native
+  var edgeLength: js.UndefOr[Double] = js.undefined
   
-  var highValueField: js.UndefOr[String] = js.native
+  var highValueField: js.UndefOr[String] = js.undefined
   
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
-  var lowValueField: js.UndefOr[String] = js.native
+  var lowValueField: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[fixed | percent | stdDeviation | stdError | variance] = js.native
+  var `type`: js.UndefOr[fixed | percent | stdDeviation | stdError | variance] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object EdgeLength {
   

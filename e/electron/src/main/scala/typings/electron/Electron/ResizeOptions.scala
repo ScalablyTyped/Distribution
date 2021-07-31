@@ -2,16 +2,14 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResizeOptions extends StObject {
   
   /**
     * Defaults to the image's height.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The desired quality of the resize image. Possible values are `good`, `better`,
@@ -20,12 +18,12 @@ trait ResizeOptions extends StObject {
     * the capabilities (CPU, GPU) of the underlying platform. It is possible for all
     * three methods to be mapped to the same algorithm on a given platform.
     */
-  var quality: js.UndefOr[String] = js.native
+  var quality: js.UndefOr[String] = js.undefined
   
   /**
     * Defaults to the image's width.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ResizeOptions {
   

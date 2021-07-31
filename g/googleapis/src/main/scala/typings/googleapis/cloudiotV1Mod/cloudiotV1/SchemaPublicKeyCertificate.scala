@@ -2,29 +2,27 @@ package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A public key certificate format and data.
   */
-@js.native
 trait SchemaPublicKeyCertificate extends StObject {
   
   /**
     * The certificate data.
     */
-  var certificate: js.UndefOr[String] = js.native
+  var certificate: js.UndefOr[String] = js.undefined
   
   /**
     * The certificate format.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The certificate details. Used only for X.509 certificates.
     */
-  var x509Details: js.UndefOr[SchemaX509CertificateDetails] = js.native
+  var x509Details: js.UndefOr[SchemaX509CertificateDetails] = js.undefined
 }
 object SchemaPublicKeyCertificate {
   

@@ -5,17 +5,15 @@ import typings.playable.playbackEngineTypesMod.IPlaybackEngine
 import typings.playable.rootContainerTypesMod.IRootContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventEmitterRootContainer extends StObject {
   
-  var engine: IPlaybackEngine = js.native
+  var engine: IPlaybackEngine
   
-  var eventEmitter: IEventEmitter = js.native
+  var eventEmitter: IEventEmitter
   
-  var rootContainer: IRootContainer = js.native
+  var rootContainer: IRootContainer
 }
 object EventEmitterRootContainer {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostalCode extends StObject {
   
   /** Postal code. This is equivalent to the id field. */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /** Country code of the country to which this postal code belongs. */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /** DART ID of the country to which this postal code belongs. */
-  var countryDartId: js.UndefOr[String] = js.native
+  var countryDartId: js.UndefOr[String] = js.undefined
   
   /** ID of this postal code. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#postalCode". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object PostalCode {
   

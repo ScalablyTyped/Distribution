@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.sdb
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * properties are needed or unneeded. ;  The descriptor factory allows you to create instances which offer all properties potentially needed at a
   * descriptor.
   */
-@js.native
 trait XDataAccessDescriptorFactory extends StObject {
   
   /** creates a {@link DataAccessDescriptor} which supports all properties defined for this service, even if they're normally optional only. */
-  def createDataAccessDescriptor(): XPropertySet = js.native
+  def createDataAccessDescriptor(): XPropertySet
 }
 object XDataAccessDescriptorFactory {
   

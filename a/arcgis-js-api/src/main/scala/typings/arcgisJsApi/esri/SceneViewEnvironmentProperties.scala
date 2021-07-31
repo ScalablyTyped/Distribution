@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneViewEnvironmentProperties extends Object {
+trait SceneViewEnvironmentProperties
+  extends StObject
+     with Object {
   
   /**
     * Atmosphere conditions of the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var atmosphere: js.UndefOr[SceneViewEnvironmentAtmosphereProperties] = js.native
+  var atmosphere: js.UndefOr[SceneViewEnvironmentAtmosphereProperties] = js.undefined
   
   /**
     * Indicates whether atmosphere visualization is enabled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var atmosphereEnabled: js.UndefOr[Boolean] = js.native
+  var atmosphereEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies how the background of the scene (which lies behind sky, stars and atmosphere) should be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var background: js.UndefOr[BackgroundProperties] = js.native
+  var background: js.UndefOr[BackgroundProperties] = js.undefined
   
   /**
     * Lighting conditions of the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var lighting: js.UndefOr[SceneViewEnvironmentLightingProperties] = js.native
+  var lighting: js.UndefOr[SceneViewEnvironmentLightingProperties] = js.undefined
   
   /**
     * Indicates whether stars visualization is enabled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var starsEnabled: js.UndefOr[Boolean] = js.native
+  var starsEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object SceneViewEnvironmentProperties {
   

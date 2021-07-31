@@ -5,11 +5,11 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XColorScheme extends XInterface {
+trait XColorScheme
+  extends StObject
+     with XInterface {
   
   /**
     * returns the default color for the nth data series.
@@ -20,7 +20,7 @@ trait XColorScheme extends XInterface {
     * default colors (n), the method should return the modulus (i mod n), i.e., the colors should repeat in a cyclic way.
     * @param nIndex The index of the series. This is used to obtain the correct default color.
     */
-  def getColorByIndex(nIndex: Double): Color = js.native
+  def getColorByIndex(nIndex: Double): Color
 }
 object XColorScheme {
   

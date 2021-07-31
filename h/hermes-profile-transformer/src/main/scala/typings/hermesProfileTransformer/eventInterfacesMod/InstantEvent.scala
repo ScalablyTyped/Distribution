@@ -3,18 +3,17 @@ package typings.hermesProfileTransformer.eventInterfacesMod
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.INSTANT_EVENTS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstantEvent
-  extends SharedEventProperties
+  extends StObject
+     with SharedEventProperties
      with Event {
   
   @JSName("ph")
-  var ph_InstantEvent: INSTANT_EVENTS = js.native
+  var ph_InstantEvent: INSTANT_EVENTS
   
-  var s: String = js.native
+  var s: String
 }
 object InstantEvent {
   

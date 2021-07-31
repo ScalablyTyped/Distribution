@@ -2,21 +2,19 @@ package typings.spotifyApi.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Play History Object
   * [](https://developer.spotify.com/web-api/web-api-personalization-endpoints/get-recently-played/#play-history-object)
   */
-@js.native
 trait PlayHistoryObject extends StObject {
   
-  var context: ContextObject = js.native
+  var context: ContextObject
   
-  var played_at: String = js.native
+  var played_at: String
   
-  var track: TrackObjectSimplified = js.native
+  var track: TrackObjectSimplified
 }
 object PlayHistoryObject {
   

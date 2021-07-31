@@ -2,7 +2,6 @@ package typings.agoraRtcSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In most cases, you can prompt the user to resume the playback ([[Stream.resume]]) by a user gesture except when the {@link status} is "aborted".
   */
-@js.native
 trait StreamPlayError extends StObject {
   
   /**
@@ -25,14 +23,14 @@ trait StreamPlayError extends StObject {
     *
     * Due to the differences in browsers, `reason` may have different values for the same event.
     */
-  val reason: String = js.native
+  val reason: String
   
   /**
     * The status of the player:
     * - "aborted": The player is removed before the stream is played successfully.
     * - "paused": The player is stopped.
     */
-  val status: String = js.native
+  val status: String
 }
 object StreamPlayError {
   

@@ -5,28 +5,44 @@ import typings.storybookAddons.distMod.Config
 import typings.storybookAddons.typesMod.Types_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providerMod {
   
   @JSImport("@storybook/core/dist/client/manager/provider", JSImport.Default)
   @js.native
-  class default () extends ReactProvider
-  
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider * / any */ @js.native
-  trait ReactProvider extends StObject {
+  class default ()
+    extends StObject
+       with ReactProvider {
     
+    /* CompleteClass */
     var addons: js.Any = js.native
     
+    /* CompleteClass */
     var channel: js.Any = js.native
     
-    def getConfig(): Config = js.native
+    /* CompleteClass */
+    override def getConfig(): Config = js.native
     
-    def getElements(`type`: Types_): Collection = js.native
+    /* CompleteClass */
+    override def getElements(`type`: Types_): Collection = js.native
     
-    def handleAPI(api: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def handleAPI(api: js.Any): Unit = js.native
+  }
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider * / any */ trait ReactProvider extends StObject {
+    
+    var addons: js.Any
+    
+    var channel: js.Any
+    
+    def getConfig(): Config
+    
+    def getElements(`type`: Types_): Collection
+    
+    def handleAPI(api: js.Any): Unit
   }
   object ReactProvider {
     

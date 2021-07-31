@@ -10,9 +10,9 @@ A really simple message queue based on Redis
 | ------------------ | :-------------: |
 | Full name          | rsmq |
 | Keywords           | queue, messagequeue, jobs, message-queue, redis |
-| # releases         | 6 |
-| # dependents       | 43 |
-| # downloads        | 1004021 |
+| # releases         | 3 |
+| # dependents       | 47 |
+| # downloads        | 1286359 |
 | # stars            | 20 |
 
 ## Links

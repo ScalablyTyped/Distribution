@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alertcenterMod {
+  
+  @JSImport("googleapis/build/src/apis/alertcenter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -47,12 +50,11 @@ object alertcenterMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1beta1")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/alertcenter", "alertcenter")
-  @js.native
-  def alertcenter(options: Options): Alertcenter = js.native
-  @JSImport("googleapis/build/src/apis/alertcenter", "alertcenter")
-  @js.native
-  def alertcenter_v1beta1(version: v1beta1): Alertcenter = js.native
+  @scala.inline
+  def alertcenter(options: Options): Alertcenter = ^.asInstanceOf[js.Dynamic].applyDynamic("alertcenter")(options.asInstanceOf[js.Any]).asInstanceOf[Alertcenter]
+  
+  @scala.inline
+  def alertcenter_v1beta1(version: v1beta1): Alertcenter = ^.asInstanceOf[js.Dynamic].applyDynamic("alertcenter")(version.asInstanceOf[js.Any]).asInstanceOf[Alertcenter]
   
   object auth extends Shortcut {
     
@@ -83,9 +85,12 @@ object alertcenterMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/alertcenter", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/alertcenter", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

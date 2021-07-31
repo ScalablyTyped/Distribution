@@ -3,26 +3,26 @@ package typings.sparqljs.mod
 import typings.sparqljs.sparqljsStrings.service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServicePattern extends BlockPattern {
+trait ServicePattern
+  extends StObject
+     with BlockPattern {
   
-  var name: IriTerm = js.native
+  var name: IriTerm
   
-  var patterns: js.Array[Pattern] = js.native
+  var patterns: js.Array[Pattern]
   
-  var silent: Boolean = js.native
+  var silent: Boolean
   
-  var `type`: service = js.native
+  var `type`: service
 }
 object ServicePattern {
   
   @scala.inline
-  def apply(name: IriTerm, patterns: js.Array[Pattern], silent: Boolean, `type`: service): ServicePattern = {
+  def apply(name: IriTerm, patterns: js.Array[Pattern], silent: Boolean): ServicePattern = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("service")
     __obj.asInstanceOf[ServicePattern]
   }
   

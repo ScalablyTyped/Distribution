@@ -3,7 +3,6 @@ package typings.activexExcel.Excel
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -97,9 +96,9 @@ trait QueryTable extends StObject {
   var RowNumbers: Boolean = js.native
   
   def SaveAsODC(ODCFileName: String): Unit = js.native
-  def SaveAsODC(ODCFileName: String, Description: js.UndefOr[scala.Nothing], Keywords: String): Unit = js.native
   def SaveAsODC(ODCFileName: String, Description: String): Unit = js.native
   def SaveAsODC(ODCFileName: String, Description: String, Keywords: String): Unit = js.native
+  def SaveAsODC(ODCFileName: String, Description: Unit, Keywords: String): Unit = js.native
   
   var SaveData: Boolean = js.native
   

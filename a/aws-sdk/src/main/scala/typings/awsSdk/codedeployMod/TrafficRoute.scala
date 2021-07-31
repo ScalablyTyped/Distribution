@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrafficRoute extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of one listener. The listener identifies the route between a target group and a load balancer. This is an array of strings with a maximum size of one. 
     */
-  var listenerArns: js.UndefOr[ListenerArnList] = js.native
+  var listenerArns: js.UndefOr[ListenerArnList] = js.undefined
 }
 object TrafficRoute {
   

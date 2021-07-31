@@ -12,39 +12,36 @@ import typings.vegaLite.unitMod.UnitModel
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipMod {
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/tooltip", "tooltip")
+  @JSImport("vega-lite/build/src/compile/mark/encode/tooltip", JSImport.Namespace)
   @js.native
-  def tooltip(model: UnitModel): PartialRecordVgEncodeChan | Tooltip = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/tooltip", "tooltip")
-  @js.native
-  def tooltip(model: UnitModel, opt: ReactiveGeom): PartialRecordVgEncodeChan | Tooltip = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/tooltip", "tooltipData")
-  @js.native
-  def tooltipData(encoding: Encoding[String], stack: StackProperties, config: Config[ExprRef | SignalRef]): js.Object = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/tooltip", "tooltipData")
-  @js.native
+  @scala.inline
+  def tooltip(model: UnitModel): PartialRecordVgEncodeChan | Tooltip = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(model.asInstanceOf[js.Any]).asInstanceOf[PartialRecordVgEncodeChan | Tooltip]
+  @scala.inline
+  def tooltip(model: UnitModel, opt: ReactiveGeom): PartialRecordVgEncodeChan | Tooltip = (^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(model.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[PartialRecordVgEncodeChan | Tooltip]
+  
+  @scala.inline
+  def tooltipData(encoding: Encoding[String], stack: StackProperties, config: Config[ExprRef | SignalRef]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("tooltipData")(encoding.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
   def tooltipData(
     encoding: Encoding[String],
     stack: StackProperties,
     config: Config[ExprRef | SignalRef],
     hasReactiveGeom: ReactiveGeom
-  ): js.Object = js.native
+  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("tooltipData")(encoding.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], config.asInstanceOf[js.Any], hasReactiveGeom.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/tooltip", "tooltipRefForEncoding")
-  @js.native
-  def tooltipRefForEncoding(encoding: Encoding[String], stack: StackProperties, config: Config[ExprRef | SignalRef]): Signal = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/tooltip", "tooltipRefForEncoding")
-  @js.native
+  @scala.inline
+  def tooltipRefForEncoding(encoding: Encoding[String], stack: StackProperties, config: Config[ExprRef | SignalRef]): Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("tooltipRefForEncoding")(encoding.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Signal]
+  @scala.inline
   def tooltipRefForEncoding(
     encoding: Encoding[String],
     stack: StackProperties,
     config: Config[ExprRef | SignalRef],
     hasReactiveGeom: ReactiveGeom
-  ): Signal = js.native
+  ): Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("tooltipRefForEncoding")(encoding.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], config.asInstanceOf[js.Any], hasReactiveGeom.asInstanceOf[js.Any])).asInstanceOf[Signal]
 }

@@ -3,23 +3,21 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionProfile extends StObject {
   
   /** A CloudSQL database connection profile. */
-  var cloudsql: js.UndefOr[CloudSqlConnectionProfile] = js.native
+  var cloudsql: js.UndefOr[CloudSqlConnectionProfile] = js.undefined
   
   /** Output only. The timestamp when the resource was created. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z". */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The connection profile display name. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. The error details in case of state FAILED. */
-  var error: js.UndefOr[Status] = js.native
+  var error: js.UndefOr[Status] = js.undefined
   
   /**
     * The resource labels for connection profile to use to annotate any related underlying resources such as Compute Engine VMs. An object containing a list of "key": "value" pairs.
@@ -28,23 +26,23 @@ trait ConnectionProfile extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.ConnectionProfile with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.ConnectionProfile & TopLevel[js.Any]
+  ] = js.undefined
   
   /** A MySQL database connection profile. */
-  var mysql: js.UndefOr[MySqlConnectionProfile] = js.native
+  var mysql: js.UndefOr[MySqlConnectionProfile] = js.undefined
   
   /** The name of this connection profile resource in the form of projects/{project}/locations/{location}/instances/{instance}. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The database provider. */
-  var provider: js.UndefOr[String] = js.native
+  var provider: js.UndefOr[String] = js.undefined
   
   /** The current connection profile state (e.g. DRAFT, READY, or FAILED). */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. The timestamp when the resource was last updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z". */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object ConnectionProfile {
   
@@ -85,7 +83,7 @@ object ConnectionProfile {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.ConnectionProfile with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.ConnectionProfile & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

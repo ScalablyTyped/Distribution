@@ -5,20 +5,18 @@ import typings.trtcJsSdk.trtcJsSdkStrings.environment
 import typings.trtcJsSdk.trtcJsSdkStrings.user
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamConfig extends StObject {
   
   /** 是否从麦克风采集音频 */
-  var audio: Boolean = js.native
+  var audio: Boolean
   
   /** 音频源 */
-  var audioSource: js.UndefOr[MediaStreamTrack] = js.native
+  var audioSource: js.UndefOr[MediaStreamTrack] = js.undefined
   
   /** 摄像头设备 deviceId，通过 getCameras() 获取 */
-  var cameraId: js.UndefOr[String] = js.native
+  var cameraId: js.UndefOr[String] = js.undefined
   
   /**
     * 在移动设备上，可通过该参数选择使用前置或后置摄像头：
@@ -27,22 +25,22 @@ trait StreamConfig extends StObject {
     *
     * **注意** 请勿同时使用 cameraId 和 facingMode 参数。
     */
-  var facingMode: js.UndefOr[user | environment] = js.native
+  var facingMode: js.UndefOr[user | environment] = js.undefined
   
   /** 麦克风设备 deviceId，通过 getMicrophones() 获取 */
-  var microphoneId: js.UndefOr[String] = js.native
+  var microphoneId: js.UndefOr[String] = js.undefined
   
   /** 视频显示是否为镜像，默认为 true。建议在使用前置摄像头时开启，使用后置摄像头时关闭。镜像设置不适用于屏幕分享。 */
-  var mirror: js.UndefOr[Boolean] = js.native
+  var mirror: js.UndefOr[Boolean] = js.undefined
   
   /** 是否采集屏幕分享流 */
-  var screen: js.UndefOr[Boolean] = js.native
+  var screen: js.UndefOr[Boolean] = js.undefined
   
   /** 是否从摄像头采集视频 */
-  var video: Boolean = js.native
+  var video: Boolean
   
   /** 视频源 */
-  var videoSource: js.UndefOr[MediaStreamTrack] = js.native
+  var videoSource: js.UndefOr[MediaStreamTrack] = js.undefined
 }
 object StreamConfig {
   

@@ -3,37 +3,37 @@ package typings.reactNativeFbsdk.mod
 import typings.reactNativeFbsdk.reactNativeFbsdkStrings.photo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SharePhotoContent extends ShareContent {
+trait SharePhotoContent
+  extends StObject
+     with ShareContent {
   
   /**
     * Common parameters for share content;
     */
-  var commonParameters: js.UndefOr[ShareContentCommonParameters] = js.native
+  var commonParameters: js.UndefOr[ShareContentCommonParameters] = js.undefined
   
   /**
     * The type of content to be shared is photo.
     */
-  var contentType: photo = js.native
+  var contentType: photo
   
   /**
     * URL for the content being shared.
     */
-  var contentUrl: js.UndefOr[String] = js.native
+  var contentUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Photos to be shared.
     */
-  var photos: js.Array[SharePhoto] = js.native
+  var photos: js.Array[SharePhoto]
 }
 object SharePhotoContent {
   
   @scala.inline
-  def apply(contentType: photo, photos: js.Array[SharePhoto]): SharePhotoContent = {
-    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any])
+  def apply(photos: js.Array[SharePhoto]): SharePhotoContent = {
+    val __obj = js.Dynamic.literal(contentType = "photo", photos = photos.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharePhotoContent]
   }
   

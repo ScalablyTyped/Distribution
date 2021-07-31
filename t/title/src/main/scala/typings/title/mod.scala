@@ -2,19 +2,19 @@ package typings.title
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("title", JSImport.Namespace)
-  @js.native
-  def apply(newtitle: String): Unit = js.native
-  @JSImport("title", JSImport.Namespace)
-  @js.native
-  def apply(pattern: String, newtitle: String): Unit = js.native
+  @scala.inline
+  def apply(newtitle: String): Unit = ^.asInstanceOf[js.Dynamic].apply(newtitle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(pattern: String, newtitle: String): Unit = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], newtitle.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("title", "reset")
+  @JSImport("title", JSImport.Namespace)
   @js.native
-  def reset(): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
 }

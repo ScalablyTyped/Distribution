@@ -6,37 +6,37 @@ import typings.textTable.textTableStrings.l
 import typings.textTable.textTableStrings.r
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("text-table", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     /** An array of arrays containing strings, numbers, or other printable values. */
   rows: js.Array[js.Array[js.Object]]
-  ): String = js.native
-  @JSImport("text-table", JSImport.Namespace)
-  @js.native
+  ): String = ^.asInstanceOf[js.Dynamic].apply(rows.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
   def apply(
     /** An array of arrays containing strings, numbers, or other printable values. */
   rows: js.Array[js.Array[js.Object]],
     /** A configuration object to customize table output. */
   options: Options
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].apply(rows.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("text-table", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /** An array of alignment types for each column, default ['l','l',...]. */
-    var align: js.UndefOr[js.Array[js.UndefOr[l | r | c | Dot | Null]]] = js.native
+    var align: js.UndefOr[js.Array[js.UndefOr[l | r | c | Dot | Null]]] = js.undefined
     
     /** Separator to use between columns, (default: ' '). */
-    var hsep: js.UndefOr[String] = js.native
+    var hsep: js.UndefOr[String] = js.undefined
     
     /** A callback function to use when calculating the string length. */
-    var stringLength: js.UndefOr[js.Function1[/* str */ String, Double]] = js.native
+    var stringLength: js.UndefOr[js.Function1[/* str */ String, Double]] = js.undefined
   }
   object Options {
     

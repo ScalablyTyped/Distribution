@@ -15,7 +15,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.sdbc.XConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tools {
@@ -54,10 +53,11 @@ object tools {
   }
   
   /** @since LibreOffice 4.1 */
-  @js.native
-  trait ConnectionTools extends XConnectionTools {
+  trait ConnectionTools
+    extends StObject
+       with XConnectionTools {
     
-    def createWithConnection(Connection: XConnection): Unit = js.native
+    def createWithConnection(Connection: XConnection): Unit
   }
   object ConnectionTools {
     
@@ -89,11 +89,12 @@ object tools {
     * @see com.sun.star.sdbcx.XConnection
     * @since OOo 3.3
     */
-  @js.native
-  trait XConnectionSupplier extends XInitialization {
+  trait XConnectionSupplier
+    extends StObject
+       with XInitialization {
     
     /** returns the source connection. */
-    var ActiveConnection: XConnection = js.native
+    var ActiveConnection: XConnection
   }
   object XConnectionSupplier {
     
@@ -101,7 +102,7 @@ object tools {
     def apply(
       ActiveConnection: XConnection,
       acquire: () => Unit,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit
     ): XConnectionSupplier = {
@@ -127,25 +128,24 @@ object tools {
     * Note that nearly all functionality provided by this interface is also available by other means, it's only provided here for convenience purposes.
     * @since OOo 2.0.4
     */
-  @js.native
   trait XConnectionTools extends StObject {
     
     /** provides access to the application-level data source meta data */
-    val DataSourceMetaData: XDataSourceMetaData = js.native
+    val DataSourceMetaData: XDataSourceMetaData
     
     /**
       * returns an instance supporting the {@link XObjectNames} interface, which provides access to functionality around table and query names.
       *
       * The returned object is guaranteed to not be `NULL` .
       */
-    val ObjectNames: XObjectNames = js.native
+    val ObjectNames: XObjectNames
     
     /**
       * creates an instance supporting the {@link XTableName} interface, which can be used to manipulate table names for various purposes.
       *
       * The returned object is guaranteed to not be `NULL` .
       */
-    def createTableName(): XTableName = js.native
+    def createTableName(): XTableName
     
     /**
       * get the composer initialized with a command and command type.
@@ -153,10 +153,10 @@ object tools {
       * @param command the object. This may be a table name, a query name, or an SQL statement, depending on the value of _nCommandType
       * @returns the composer filled with command and command type.
       */
-    def getComposer(commandType: Double, command: String): XSingleSelectQueryComposer = js.native
+    def getComposer(commandType: Double, command: String): XSingleSelectQueryComposer
     
     /** provides access to the application-level data source meta data */
-    def getDataSourceMetaData(): XDataSourceMetaData = js.native
+    def getDataSourceMetaData(): XDataSourceMetaData
     
     /**
       * get fields for a result set given by a "command descriptor"
@@ -168,14 +168,14 @@ object tools {
       * @param keepFieldsAlive If (and only if) {@link CommandType} is {@link CommandType.COMMAND} , the fields collection which is returned by this function
       * @returns the container of the columns (aka fields) of the object
       */
-    def getFieldsByCommandDescriptor(commandType: Double, command: String, keepFieldsAlive: js.Array[XComponent]): XNameAccess = js.native
+    def getFieldsByCommandDescriptor(commandType: Double, command: String, keepFieldsAlive: js.Array[XComponent]): XNameAccess
     
     /**
       * returns an instance supporting the {@link XObjectNames} interface, which provides access to functionality around table and query names.
       *
       * The returned object is guaranteed to not be `NULL` .
       */
-    def getObjectNames(): XObjectNames = js.native
+    def getObjectNames(): XObjectNames
   }
   object XConnectionTools {
     
@@ -219,11 +219,10 @@ object tools {
     }
   }
   
-  @js.native
   trait XDataSourceMetaData extends StObject {
     
     /** determines whether the data source supports queries in the `FROM` part of a `SELECT` statement. */
-    def supportsQueriesInFrom(): Boolean = js.native
+    def supportsQueriesInFrom(): Boolean
   }
   object XDataSourceMetaData {
     
@@ -248,8 +247,9 @@ object tools {
     * @see com.sun.star.sdbcx.XDrop
     * @since OOo 3.3
     */
-  @js.native
-  trait XIndexAlteration extends XConnectionSupplier {
+  trait XIndexAlteration
+    extends StObject
+       with XConnectionSupplier {
     
     /**
       * creates a new object using the given descriptor and appends it to the related container. ** Note: ** The descriptor will not be changed and can be
@@ -258,7 +258,7 @@ object tools {
       * @param descriptor the descriptor which should be serve to append a new object
       * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
       */
-    def addIndex(table: XPropertySet, descriptor: XPropertySet): Unit = js.native
+    def addIndex(table: XPropertySet, descriptor: XPropertySet): Unit
     
     /**
       * drops an object of the related container identified by its name.
@@ -266,7 +266,7 @@ object tools {
       * @param index the name of the column to be dropped
       * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
       */
-    def dropIndex(table: XPropertySet, index: String): Unit = js.native
+    def dropIndex(table: XPropertySet, index: String): Unit
   }
   object XIndexAlteration {
     
@@ -276,7 +276,7 @@ object tools {
       acquire: () => Unit,
       addIndex: (XPropertySet, XPropertySet) => Unit,
       dropIndex: (XPropertySet, String) => Unit,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit
     ): XIndexAlteration = {
@@ -302,8 +302,9 @@ object tools {
     * @see com.sun.star.sdbcx.XDrop
     * @since OOo 3.3
     */
-  @js.native
-  trait XKeyAlteration extends XConnectionSupplier {
+  trait XKeyAlteration
+    extends StObject
+       with XConnectionSupplier {
     
     /**
       * creates a new object using the given descriptor and appends it to the related container. ** Note: ** The descriptor will not be changed and can be
@@ -312,7 +313,7 @@ object tools {
       * @param descriptor the descriptor which should be serve to append a new object
       * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
       */
-    def addKey(table: XPropertySet, descriptor: XPropertySet): Unit = js.native
+    def addKey(table: XPropertySet, descriptor: XPropertySet): Unit
     
     /**
       * drops an object of the related container identified by its name.
@@ -320,7 +321,7 @@ object tools {
       * @param key the key to be dropped
       * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
       */
-    def dropKey(table: XPropertySet, key: XPropertySet): Unit = js.native
+    def dropKey(table: XPropertySet, key: XPropertySet): Unit
   }
   object XKeyAlteration {
     
@@ -330,7 +331,7 @@ object tools {
       acquire: () => Unit,
       addKey: (XPropertySet, XPropertySet) => Unit,
       dropKey: (XPropertySet, XPropertySet) => Unit,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit
     ): XKeyAlteration = {
@@ -368,7 +369,6 @@ object tools {
     * @see XConnectionTools
     * @since OOo 2.0.4
     */
-  @js.native
   trait XObjectNames extends StObject {
     
     /**
@@ -381,7 +381,7 @@ object tools {
       * @see com.sun.star.sdb.ErrorMessageDialog
       * @see com.sun.star.sdb.InteractionHandler
       */
-    def checkNameForCreate(CommandType: Double, Name: String): Unit = js.native
+    def checkNameForCreate(CommandType: Double, Name: String): Unit
     
     /**
       * converts the given object name to a name which is valid in the database.
@@ -390,7 +390,7 @@ object tools {
       * by the database, with an underscore character (_).
       * @see com.sun.star.sdbc.XDatabaseMetaData.getExtraNameCharacters
       */
-    def convertToSQLName(Name: String): String = js.native
+    def convertToSQLName(Name: String): String
     
     /**
       * checks whether a given name is used as table respectively query name in the database.
@@ -405,7 +405,7 @@ object tools {
       * @see checkNameIsUsed
       * @throws com::sun::star::lang::IllegalArgumentException if {@link CommandType} specifies an invalid command type.
       */
-    def isNameUsed(CommandType: Double, Name: String): Boolean = js.native
+    def isNameUsed(CommandType: Double, Name: String): Boolean
     
     /**
       * checks whether a given name is valid as table or query name
@@ -415,7 +415,7 @@ object tools {
       * For queries, names are nearly arbitrary, except that usual quoting characters must not be part of the name.
       * @see com.sun.star.sdbc.XDatabaseMetaData.getExtraNameCharacters
       */
-    def isNameValid(CommandType: Double, Name: String): Boolean = js.native
+    def isNameValid(CommandType: Double, Name: String): Boolean
     
     /**
       * suggests a (unique) table or query name
@@ -432,7 +432,7 @@ object tools {
       * @param BaseName specifies the base of the to-be-created object name. If empty, a default base name will be used.
       * @throws com::sun::star::lang::IllegalArgumentException if {@link CommandType} specifies an invalid command type.
       */
-    def suggestName(CommandType: Double, BaseName: String): String = js.native
+    def suggestName(CommandType: Double, BaseName: String): String
   }
   object XObjectNames {
     
@@ -477,8 +477,9 @@ object tools {
     * @see com.sun.star.sdbcx.XDrop
     * @since OOo 3.3
     */
-  @js.native
-  trait XTableAlteration extends XConnectionSupplier {
+  trait XTableAlteration
+    extends StObject
+       with XConnectionSupplier {
     
     /**
       * creates a new object using the given descriptor and appends it to the related container. ** Note: ** The descriptor will not be changed and can be
@@ -488,7 +489,7 @@ object tools {
       * @see com.sun.star.sdbcx.XAppend
       * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
       */
-    def addColumn(table: XPropertySet, descriptor: XPropertySet): Unit = js.native
+    def addColumn(table: XPropertySet, descriptor: XPropertySet): Unit
     
     /**
       * alter the column defined by name
@@ -498,7 +499,7 @@ object tools {
       * @see com.sun.star.sdbcx.XAlterTable
       * @throws com::sun::star::sdbc::SQLException
       */
-    def alterColumnByName(table: XPropertySet, columnName: String, columnDescriptor: XPropertySet): Unit = js.native
+    def alterColumnByName(table: XPropertySet, columnName: String, columnDescriptor: XPropertySet): Unit
     
     /**
       * drops an object of the related container identified by its name.
@@ -507,7 +508,7 @@ object tools {
       * @see com.sun.star.sdbcx.XDrop
       * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
       */
-    def dropColumn(table: XPropertySet, columnName: String): Unit = js.native
+    def dropColumn(table: XPropertySet, columnName: String): Unit
   }
   object XTableAlteration {
     
@@ -518,7 +519,7 @@ object tools {
       addColumn: (XPropertySet, XPropertySet) => Unit,
       alterColumnByName: (XPropertySet, String, XPropertySet) => Unit,
       dropColumn: (XPropertySet, String) => Unit,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit
     ): XTableAlteration = {
@@ -559,11 +560,10 @@ object tools {
     * @see com.sun.star.sdb.DataSource.Settings
     * @since OOo 2.0.4
     */
-  @js.native
   trait XTableName extends StObject {
     
     /** denotes the name of the catalog which the table is a part of */
-    var CatalogName: String = js.native
+    var CatalogName: String
     
     /**
       * represents the table name in a form to be used in a `SELECT` statement.
@@ -572,10 +572,10 @@ object tools {
       * names in `SELECT` statements. Using this attribute, you can generate a table name which respects those settings.
       * @see com.sun.star.sdb.DataSource.Settings
       */
-    var NameForSelect: String = js.native
+    var NameForSelect: String
     
     /** denotes the name of the schema which the table is a part of */
-    var SchemaName: String = js.native
+    var SchemaName: String
     
     /**
       * is the {@link com.sun.star.sdb.Table} object specified by the current name.
@@ -585,10 +585,10 @@ object tools {
       * @throws com::sun::star::container::NoSuchElementException if, upon getting the attribute value, the current composed table name represented by this insta
       * @throws com::sun::star::lang::IllegalArgumentException if you try to set an object which does not denote a table from the underlying database.
       */
-    var Table: XPropertySet = js.native
+    var Table: XPropertySet
     
     /** denotes the mere, unqualified table name, excluding any catalog and schema. */
-    var TableName: String = js.native
+    var TableName: String
     
     /**
       * returns the composed table name, including the catalog and schema name, respecting the database's quoting requirements, plus
@@ -597,14 +597,14 @@ object tools {
       * @see CompositionType
       * @throws com::sun::star::IllegalArgumentException if the given Type does not denote a valid {@link CompositionType}
       */
-    def getComposedName(Type: Double, Quote: Boolean): String = js.native
+    def getComposedName(Type: Double, Quote: Boolean): String
     
     /**
       * sets a new composed table name
       * @param ComposedName specifies the composed table name
       * @param Type specifies the composition type which was used to create the composed table name
       */
-    def setComposedName(ComposedName: String, Type: Double): Unit = js.native
+    def setComposedName(ComposedName: String, Type: Double): Unit
   }
   object XTableName {
     
@@ -653,8 +653,9 @@ object tools {
     * @see com.sun.star.sdb.DataSource.Settings
     * @since OOo 3.3
     */
-  @js.native
-  trait XTableRename extends XConnectionSupplier {
+  trait XTableRename
+    extends StObject
+       with XConnectionSupplier {
     
     /**
       * rename the given table to the new name
@@ -662,7 +663,7 @@ object tools {
       * @param newName the new name of the table
       * @throws com::sun::star::sdbc::SQLException
       */
-    def rename(table: XPropertySet, newName: String): Unit = js.native
+    def rename(table: XPropertySet, newName: String): Unit
   }
   object XTableRename {
     
@@ -670,7 +671,7 @@ object tools {
     def apply(
       ActiveConnection: XConnection,
       acquire: () => Unit,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit,
       rename: (XPropertySet, String) => Unit
@@ -693,8 +694,9 @@ object tools {
     * @see com.sun.star.sdbcx.View
     * @since OOo 3.3
     */
-  @js.native
-  trait XViewAccess extends XConnectionSupplier {
+  trait XViewAccess
+    extends StObject
+       with XConnectionSupplier {
     
     /**
       * allows to alter the SQL statement of a view
@@ -702,14 +704,14 @@ object tools {
       * @param command the new SQL statement
       * @throws com::sun::star::sdbc::SQLException
       */
-    def alterCommand(view: XPropertySet, command: String): Unit = js.native
+    def alterCommand(view: XPropertySet, command: String): Unit
     
     /**
       * returns the SQL statement of the view
       * @param view the table to be renamed
       * @throws com::sun::star::sdbc::SQLException
       */
-    def getCommand(view: XPropertySet): String = js.native
+    def getCommand(view: XPropertySet): String
   }
   object XViewAccess {
     
@@ -719,7 +721,7 @@ object tools {
       acquire: () => Unit,
       alterCommand: (XPropertySet, String) => Unit,
       getCommand: XPropertySet => String,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit
     ): XViewAccess = {

@@ -5,17 +5,18 @@ import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(filename: String): BabelifyObject = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[BabelifyObject]
+  @scala.inline
+  def apply(filename: String, opts: BabelifyOptions): BabelifyObject = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BabelifyObject]
+  
   @JSImport("babelify", JSImport.Namespace)
   @js.native
-  def apply(filename: String): BabelifyObject = js.native
-  @JSImport("babelify", JSImport.Namespace)
-  @js.native
-  def apply(filename: String, opts: BabelifyOptions): BabelifyObject = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("babelify", "BabelifyObject")
   @js.native
@@ -28,25 +29,24 @@ object mod {
     def _transform(buf: Buffer, encoding: String, callback: js.Function0[Unit]): Unit = js.native
   }
   
-  @JSImport("babelify", "configure")
-  @js.native
-  def configure(opts: BabelifyOptions): js.Function1[/* filename */ String, BabelifyObject] = js.native
+  @scala.inline
+  def configure(opts: BabelifyOptions): js.Function1[/* filename */ String, BabelifyObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* filename */ String, BabelifyObject]]
   
   type BabelifyConstructor = js.Function2[/* filename */ String, /* opts */ BabelifyOptions, BabelifyObject]
   
-  @js.native
   trait BabelifyOptions
-    extends typings.babelCore.mod.TransformOptions {
+    extends StObject
+       with typings.babelCore.mod.TransformOptions {
     
     /** These are passed to babel.util.canCompile() for each filename
       * default: null
       */
-    var extensions: js.UndefOr[String | js.Array[String]] = js.native
+    var extensions: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** if true, a 'sourceFileName' property with a value equal to the current file being transformed is included with the options passed to babel.transform()
       * default: false
       */
-    var sourceMapsAbsolute: js.UndefOr[Boolean] = js.native
+    var sourceMapsAbsolute: js.UndefOr[Boolean] = js.undefined
   }
   object BabelifyOptions {
     

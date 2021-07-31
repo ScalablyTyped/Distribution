@@ -2,34 +2,32 @@ package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Report status.
   */
-@js.native
 trait SchemaReportStatus extends StObject {
   
   /**
     * If the report failed, this records the cause.
     */
-  var failure: js.UndefOr[SchemaReportFailure] = js.native
+  var failure: js.UndefOr[SchemaReportFailure] = js.undefined
   
   /**
     * The time when this report either completed successfully or failed.
     */
-  var finishTimeMs: js.UndefOr[String] = js.native
+  var finishTimeMs: js.UndefOr[String] = js.undefined
   
   /**
     * The file type of the report.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the report.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaReportStatus {
   

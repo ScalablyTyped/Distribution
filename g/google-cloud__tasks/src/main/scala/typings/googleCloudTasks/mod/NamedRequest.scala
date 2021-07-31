@@ -2,16 +2,14 @@ package typings.googleCloudTasks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamedRequest extends StObject {
   
   /**
     * The resource name of the queue. For example: projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID
     */
-  var name: String = js.native
+  var name: String
 }
 object NamedRequest {
   

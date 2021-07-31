@@ -5,7 +5,6 @@ import typings.tape.mod.TestOptions
 import typings.tapePromise.mod.AsyncTapeFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -28,7 +27,7 @@ object anon {
       * Create a new test harness instance, which is a function like test(),
       * but with a new pending stack and test state.
       */
-    def createHarness(): AsyncTapeFunction with FnCall = js.native
+    def createHarness(): AsyncTapeFunction & FnCall = js.native
     
     def only(cb: typings.tapePromise.mod.TestCase): Unit = js.native
     /**

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateRange extends StObject {
   
   /** The upper bound of the date range, inclusive. Must specify a positive value for `year`, `month`, and `day`. */
-  var endDate: js.UndefOr[Date] = js.native
+  var endDate: js.UndefOr[Date] = js.undefined
   
   /** The lower bound of the date range, inclusive. Must specify a positive value for `year`, `month`, and `day`. */
-  var startDate: js.UndefOr[Date] = js.native
+  var startDate: js.UndefOr[Date] = js.undefined
 }
 object DateRange {
   

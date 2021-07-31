@@ -3,25 +3,24 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.interface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterfaceType
-  extends AbstractContainer
+  extends StObject
+     with AbstractContainer
      with IDLRootType {
   
   /** A string giving the name of an interface this one inherits from, null otherwise. */
-  var inheritance: String | Null = js.native
+  var inheritance: String | Null
   
   @JSName("members")
-  var members_InterfaceType: js.Array[IDLInterfaceMemberType] = js.native
+  var members_InterfaceType: js.Array[IDLInterfaceMemberType]
   
   @JSName("parent")
-  var parent_InterfaceType: Null = js.native
+  var parent_InterfaceType: Null
   
   @JSName("type")
-  var type_InterfaceType: interface = js.native
+  var type_InterfaceType: interface
 }
 object InterfaceType {
   
@@ -31,11 +30,10 @@ object InterfaceType {
     members: js.Array[IDLInterfaceMemberType],
     name: String,
     parent: Null,
-    partial: Boolean,
-    `type`: interface
+    partial: Boolean
   ): InterfaceType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any], inheritance = null)
+    __obj.updateDynamic("type")("interface")
     __obj.asInstanceOf[InterfaceType]
   }
   

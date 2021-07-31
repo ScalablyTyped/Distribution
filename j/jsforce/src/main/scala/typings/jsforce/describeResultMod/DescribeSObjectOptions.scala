@@ -2,15 +2,13 @@ package typings.jsforce.describeResultMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSObjectOptions extends StObject {
   
-  var ifModifiedSince: js.UndefOr[String] = js.native
+  var ifModifiedSince: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object DescribeSObjectOptions {
   

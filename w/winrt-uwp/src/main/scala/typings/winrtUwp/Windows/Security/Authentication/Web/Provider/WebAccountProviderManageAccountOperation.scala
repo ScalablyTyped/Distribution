@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Security.Authentication.Web.Provider
 import typings.winrtUwp.Windows.Security.Credentials.WebAccount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a manage account operation. */
-@js.native
 trait WebAccountProviderManageAccountOperation extends StObject {
   
   /** Gets the kind of web provider operation. */
-  var kind: WebAccountProviderOperationKind = js.native
+  var kind: WebAccountProviderOperationKind
   
   /** Informs the activating application that the operation completed successfully. */
-  def reportCompleted(): Unit = js.native
+  def reportCompleted(): Unit
   
   /** Gets the web account to manage. */
-  var webAccount: WebAccount = js.native
+  var webAccount: WebAccount
 }
 object WebAccountProviderManageAccountOperation {
   

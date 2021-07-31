@@ -2,19 +2,17 @@ package typings.inAppPurchase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClientEmail extends StObject {
     
     // client email from Google API service account JSON key file
-    var clientEmail: String = js.native
+    var clientEmail: String
     
     // private key string from Google API service account JSON key file
-    var privateKey: String = js.native
+    var privateKey: String
   }
   object ClientEmail {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var signature: String = js.native
+    var signature: String
   }
   object Data {
     
@@ -61,12 +58,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IgnoreCanceled extends StObject {
     
-    var ignoreCanceled: Boolean = js.native
+    var ignoreCanceled: Boolean
     
-    var ignoreExpired: Boolean = js.native
+    var ignoreExpired: Boolean
   }
   object IgnoreCanceled {
     

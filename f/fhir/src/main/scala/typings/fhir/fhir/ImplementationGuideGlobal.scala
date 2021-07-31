@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Profiles that apply globally
   */
-@js.native
-trait ImplementationGuideGlobal extends BackboneElement {
+trait ImplementationGuideGlobal
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Profile that all resources must conform to
     */
-  var profile: Reference = js.native
+  var profile: Reference
   
   /**
     * Type this profiles applies to
     */
-  var `type`: code = js.native
+  var `type`: code
 }
 object ImplementationGuideGlobal {
   

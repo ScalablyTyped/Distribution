@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Expands macro in expressions, i.e. substitudes macro names.
   * @since OOo 1.1.2
   */
-@js.native
-trait XMacroExpander extends XInterface {
+trait XMacroExpander
+  extends StObject
+     with XInterface {
   
   /**
     * Expands macrofied expressions.
@@ -20,7 +20,7 @@ trait XMacroExpander extends XInterface {
     * @returns demacrofied expression
     * @throws IllegalArgumentException if a macro name is unknown, thus cannot be expanded
     */
-  def expandMacros(exp: String): String = js.native
+  def expandMacros(exp: String): String
 }
 object XMacroExpander {
   

@@ -2,13 +2,11 @@ package typings.knockoutValidation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutValidationValidateOptions extends StObject {
   
-  var throttle: js.UndefOr[Double] = js.native
+  var throttle: js.UndefOr[Double] = js.undefined
 }
 object KnockoutValidationValidateOptions {
   

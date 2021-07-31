@@ -2,12 +2,14 @@ package typings.antvPathUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isPolygonsIntersectMod {
   
-  @JSImport("@antv/path-util/lib/is-polygons-intersect", JSImport.Default)
+  @JSImport("@antv/path-util/lib/is-polygons-intersect", JSImport.Namespace)
   @js.native
-  def default(points1: js.Any, points2: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(points1: js.Any, points2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(points1.asInstanceOf[js.Any], points2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

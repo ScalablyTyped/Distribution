@@ -11,8 +11,8 @@ Generate a random integer
 | Full name          | random-int |
 | Keywords           | rand, random, randomize, int, integer, number, max, min, math, generate, generator |
 | # releases         | 3 |
-| # dependents       | 66 |
-| # downloads        | 1576826 |
+| # dependents       | 70 |
+| # downloads        | 2319362 |
 | # stars            | 4 |
 
 ## Links

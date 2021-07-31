@@ -9,31 +9,29 @@ import typings.angularMaterial.anon.CLOSE_
 import typings.angularMaterial.anon.FADE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPanelService extends StObject {
   
-  var absPosition: BOTTOM = js.native
+  var absPosition: BOTTOM
   
-  var animation: FADE = js.native
+  var animation: FADE
   
-  var closeReasons: CLICKOUTSIDE = js.native
+  var closeReasons: CLICKOUTSIDE
   
-  def create(opt_config: IPanelConfig): IPanelRef = js.native
+  def create(opt_config: IPanelConfig): IPanelRef
   
-  var interceptorTypes: CLOSE_ = js.native
+  var interceptorTypes: CLOSE_
   
-  def newPanelAnimation(): IPanelAnimation = js.native
+  def newPanelAnimation(): IPanelAnimation
   
-  def newPanelPosition(): IPanelPosition = js.native
+  def newPanelPosition(): IPanelPosition
   
-  def open(opt_config: IPanelConfig): IPromise[IPanelRef] = js.native
+  def open(opt_config: IPanelConfig): IPromise[IPanelRef]
   
-  var xPosition: ALIGNEND = js.native
+  var xPosition: ALIGNEND
   
-  var yPosition: ABOVE = js.native
+  var yPosition: ABOVE
 }
 object IPanelService {
   

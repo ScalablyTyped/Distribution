@@ -94,39 +94,39 @@ import typings.typescriptServices.TypeScript.WhileStatementSyntax
 import typings.typescriptServices.TypeScript.WithStatementSyntax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Formatter extends MultipleTokenIndenter {
+trait Formatter
+  extends StObject
+     with MultipleTokenIndenter {
   
-  /* private */ def RecordRuleEdits(rule: js.Any, t1: js.Any, t2: js.Any): js.Any = js.native
+  /* private */ def RecordRuleEdits(rule: js.Any, t1: js.Any, t2: js.Any): js.Any
   
-  /* private */ def findCommonParents(parent1: js.Any, parent2: js.Any): js.Any = js.native
+  /* private */ def findCommonParents(parent1: js.Any, parent2: js.Any): js.Any
   
-  /* private */ def formatPair(t1: js.Any, t1Parent: js.Any, t2: js.Any, t2Parent: js.Any): js.Any = js.native
+  /* private */ def formatPair(t1: js.Any, t1Parent: js.Any, t2: js.Any, t2Parent: js.Any): js.Any
   
-  var formattingContext: js.Any = js.native
+  var formattingContext: js.Any
   
-  var formattingRequestKind: js.Any = js.native
+  var formattingRequestKind: js.Any
   
-  /* private */ def getLineNumber(span: js.Any): js.Any = js.native
+  /* private */ def getLineNumber(span: js.Any): js.Any
   
-  var previousTokenParent: js.Any = js.native
+  var previousTokenParent: js.Any
   
-  var previousTokenSpan: js.Any = js.native
+  var previousTokenSpan: js.Any
   
-  /* private */ def processToken(token: js.Any): js.Any = js.native
+  /* private */ def processToken(token: js.Any): js.Any
   
-  /* private */ def processTrivia(triviaList: js.Any, fullStart: js.Any): js.Any = js.native
+  /* private */ def processTrivia(triviaList: js.Any, fullStart: js.Any): js.Any
   
-  var rulesProvider: js.Any = js.native
+  var rulesProvider: js.Any
   
-  var scriptHasErrors: js.Any = js.native
+  var scriptHasErrors: js.Any
   
-  /* private */ def trimWhitespace(line: js.Any, token: js.Any): js.Any = js.native
+  /* private */ def trimWhitespace(line: js.Any, token: js.Any): js.Any
   
-  /* private */ def trimWhitespaceInLineRange(startLine: js.Any, endLine: js.Any, token: js.Any): js.Any = js.native
+  /* private */ def trimWhitespaceInLineRange(startLine: js.Any, endLine: js.Any, token: js.Any): js.Any
 }
 object Formatter {
   

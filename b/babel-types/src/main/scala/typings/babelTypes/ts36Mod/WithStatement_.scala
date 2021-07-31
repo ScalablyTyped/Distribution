@@ -3,20 +3,19 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.WithStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WithStatement_
-  extends Node
+  extends StObject
+     with Node
      with Statement {
   
-  var body: BlockStatement_ | Statement = js.native
+  var body: BlockStatement_ | Statement
   
-  var `object`: Expression = js.native
+  var `object`: Expression
   
   @JSName("type")
-  var type_WithStatement_ : WithStatement = js.native
+  var type_WithStatement_ : WithStatement
 }
 object WithStatement_ {
   
@@ -26,12 +25,11 @@ object WithStatement_ {
     end: Double,
     loc: SourceLocation,
     `object`: Expression,
-    start: Double,
-    `type`: WithStatement
+    start: Double
   ): WithStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WithStatement")
     __obj.asInstanceOf[WithStatement_]
   }
   

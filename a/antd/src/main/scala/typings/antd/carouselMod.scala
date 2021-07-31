@@ -13,14 +13,13 @@ import typings.react.mod.RefAttributes
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselMod extends Shortcut {
   
   @JSImport("antd/lib/carousel", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[CarouselProps with RefAttributes[_]] = js.native
+  val default: ForwardRefExoticComponent[CarouselProps & RefAttributes[js.Any]] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.antd.antdStrings.scrollx
@@ -37,124 +36,123 @@ object carouselMod extends Shortcut {
   }
   
   /* Inlined parent std.Omit<@ant-design/react-slick.@ant-design/react-slick.Settings, 'dots' | 'dotsClass'> */
-  @js.native
   trait CarouselProps extends StObject {
     
-    var accessibility: js.UndefOr[Boolean] = js.native
+    var accessibility: js.UndefOr[Boolean] = js.undefined
     
-    var adaptiveHeight: js.UndefOr[Boolean] = js.native
+    var adaptiveHeight: js.UndefOr[Boolean] = js.undefined
     
-    var afterChange: js.UndefOr[js.Function1[/* currentSlide */ Double, Unit]] = js.native
+    var afterChange: js.UndefOr[js.Function1[/* currentSlide */ Double, Unit]] = js.undefined
     
-    var appendDots: js.UndefOr[js.Function1[/* dots */ ReactNode, Element]] = js.native
+    var appendDots: js.UndefOr[js.Function1[/* dots */ ReactNode, Element]] = js.undefined
     
-    var arrows: js.UndefOr[Boolean] = js.native
+    var arrows: js.UndefOr[Boolean] = js.undefined
     
-    var asNavFor: js.UndefOr[Slider] = js.native
+    var asNavFor: js.UndefOr[Slider] = js.undefined
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var autoplaySpeed: js.UndefOr[Double] = js.native
+    var autoplaySpeed: js.UndefOr[Double] = js.undefined
     
-    var beforeChange: js.UndefOr[js.Function2[/* currentSlide */ Double, /* nextSlide */ Double, Unit]] = js.native
+    var beforeChange: js.UndefOr[js.Function2[/* currentSlide */ Double, /* nextSlide */ Double, Unit]] = js.undefined
     
-    var centerMode: js.UndefOr[Boolean] = js.native
+    var centerMode: js.UndefOr[Boolean] = js.undefined
     
-    var centerPadding: js.UndefOr[String] = js.native
+    var centerPadding: js.UndefOr[String] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var cssEase: js.UndefOr[String] = js.native
+    var cssEase: js.UndefOr[String] = js.undefined
     
-    var customPaging: js.UndefOr[js.Function1[/* index */ Double, Element]] = js.native
+    var customPaging: js.UndefOr[js.Function1[/* index */ Double, Element]] = js.undefined
     
-    var dotPosition: js.UndefOr[DotPosition] = js.native
+    var dotPosition: js.UndefOr[DotPosition] = js.undefined
     
-    var dots: js.UndefOr[Boolean | ClassName] = js.native
+    var dots: js.UndefOr[Boolean | ClassName] = js.undefined
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
-    var edgeFriction: js.UndefOr[Double] = js.native
+    var edgeFriction: js.UndefOr[Double] = js.undefined
     
-    var effect: js.UndefOr[CarouselEffect] = js.native
+    var effect: js.UndefOr[CarouselEffect] = js.undefined
     
-    var fade: js.UndefOr[Boolean] = js.native
+    var fade: js.UndefOr[Boolean] = js.undefined
     
-    var focusOnSelect: js.UndefOr[Boolean] = js.native
+    var focusOnSelect: js.UndefOr[Boolean] = js.undefined
     
-    var infinite: js.UndefOr[Boolean] = js.native
+    var infinite: js.UndefOr[Boolean] = js.undefined
     
-    var initialSlide: js.UndefOr[Double] = js.native
+    var initialSlide: js.UndefOr[Double] = js.undefined
     
-    var lazyLoad: js.UndefOr[LazyLoadTypes] = js.native
+    var lazyLoad: js.UndefOr[LazyLoadTypes] = js.undefined
     
-    var nextArrow: js.UndefOr[Element] = js.native
+    var nextArrow: js.UndefOr[Element] = js.undefined
     
-    var onEdge: js.UndefOr[js.Function1[/* swipeDirection */ SwipeDirection, Unit]] = js.native
+    var onEdge: js.UndefOr[js.Function1[/* swipeDirection */ SwipeDirection, Unit]] = js.undefined
     
-    var onInit: js.UndefOr[js.Function0[Unit]] = js.native
+    var onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLazyLoad: js.UndefOr[js.Function1[/* slidesToLoad */ js.Array[Double], Unit]] = js.native
+    var onLazyLoad: js.UndefOr[js.Function1[/* slidesToLoad */ js.Array[Double], Unit]] = js.undefined
     
-    var onReInit: js.UndefOr[js.Function0[Unit]] = js.native
+    var onReInit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSwipe: js.UndefOr[js.Function1[/* swipeDirection */ SwipeDirection, Unit]] = js.native
+    var onSwipe: js.UndefOr[js.Function1[/* swipeDirection */ SwipeDirection, Unit]] = js.undefined
     
-    var pauseOnDotsHover: js.UndefOr[Boolean] = js.native
+    var pauseOnDotsHover: js.UndefOr[Boolean] = js.undefined
     
-    var pauseOnFocus: js.UndefOr[Boolean] = js.native
+    var pauseOnFocus: js.UndefOr[Boolean] = js.undefined
     
-    var pauseOnHover: js.UndefOr[Boolean] = js.native
+    var pauseOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var prevArrow: js.UndefOr[Element] = js.native
+    var prevArrow: js.UndefOr[Element] = js.undefined
     
-    var responsive: js.UndefOr[js.Array[ResponsiveObject]] = js.native
+    var responsive: js.UndefOr[js.Array[ResponsiveObject]] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var slickGoTo: js.UndefOr[Double] = js.native
+    var slickGoTo: js.UndefOr[Double] = js.undefined
     
-    var slide: js.UndefOr[String] = js.native
+    var slide: js.UndefOr[String] = js.undefined
     
-    var slidesPerRow: js.UndefOr[Double] = js.native
+    var slidesPerRow: js.UndefOr[Double] = js.undefined
     
-    var slidesToScroll: js.UndefOr[Double] = js.native
+    var slidesToScroll: js.UndefOr[Double] = js.undefined
     
-    var slidesToShow: js.UndefOr[Double] = js.native
+    var slidesToShow: js.UndefOr[Double] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var swipe: js.UndefOr[Boolean] = js.native
+    var swipe: js.UndefOr[Boolean] = js.undefined
     
-    var swipeEvent: js.UndefOr[js.Function1[/* swipeDirection */ SwipeDirection, Unit]] = js.native
+    var swipeEvent: js.UndefOr[js.Function1[/* swipeDirection */ SwipeDirection, Unit]] = js.undefined
     
-    var swipeToSlide: js.UndefOr[Boolean] = js.native
+    var swipeToSlide: js.UndefOr[Boolean] = js.undefined
     
-    var touchMove: js.UndefOr[Boolean] = js.native
+    var touchMove: js.UndefOr[Boolean] = js.undefined
     
-    var touchThreshold: js.UndefOr[Double] = js.native
+    var touchThreshold: js.UndefOr[Double] = js.undefined
     
-    var useCSS: js.UndefOr[Boolean] = js.native
+    var useCSS: js.UndefOr[Boolean] = js.undefined
     
-    var useTransform: js.UndefOr[Boolean] = js.native
+    var useTransform: js.UndefOr[Boolean] = js.undefined
     
-    var variableWidth: js.UndefOr[Boolean] = js.native
+    var variableWidth: js.UndefOr[Boolean] = js.undefined
     
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
     
-    var verticalSwiping: js.UndefOr[Boolean] = js.native
+    var verticalSwiping: js.UndefOr[Boolean] = js.undefined
     
-    var waitForAnimate: js.UndefOr[Boolean] = js.native
+    var waitForAnimate: js.UndefOr[Boolean] = js.undefined
   }
   object CarouselProps {
     
@@ -542,8 +540,8 @@ object carouselMod extends Shortcut {
     def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
   }
   
-  type _To = ForwardRefExoticComponent[CarouselProps with RefAttributes[_]]
+  type _To = ForwardRefExoticComponent[CarouselProps & RefAttributes[js.Any]]
   
   /* This means you don't have to write `default`, but can instead just say `carouselMod.foo` */
-  override def _to: ForwardRefExoticComponent[CarouselProps with RefAttributes[_]] = default
+  override def _to: ForwardRefExoticComponent[CarouselProps & RefAttributes[js.Any]] = default
 }

@@ -4,18 +4,20 @@ import typings.algoliaLoggerCommon.anon.ReadonlyPromisevoid
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@algolia/logger-common", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@algolia/logger-common", "LogLevelEnum")
   @js.native
   val LogLevelEnum: Record[String, LogLevelType] = js.native
   
-  @JSImport("@algolia/logger-common", "createNullLogger")
-  @js.native
-  def createNullLogger(): Logger = js.native
+  @scala.inline
+  def createNullLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createNullLogger")().asInstanceOf[Logger]
   
   /* Rewritten from type alias, can be one of: 
     - typings.algoliaLoggerCommon.algoliaLoggerCommonNumbers.`1`

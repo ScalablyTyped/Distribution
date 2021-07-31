@@ -1,0 +1,29 @@
+package typings.devtools.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Cookie extends StObject {
+  
+  var cookie: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Cookie */ js.Any
+}
+object Cookie {
+  
+  @scala.inline
+  def apply(
+    cookie: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Cookie */ js.Any
+  ): Cookie = {
+    val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Cookie]
+  }
+  
+  @scala.inline
+  implicit class CookieMutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCookie(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Cookie */ js.Any
+    ): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+  }
+}

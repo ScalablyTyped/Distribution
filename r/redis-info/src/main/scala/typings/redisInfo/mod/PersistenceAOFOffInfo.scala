@@ -3,13 +3,11 @@ package typings.redisInfo.mod
 import typings.redisInfo.mod.Flag.OFF
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersistenceAOFOffInfo extends StObject {
   
-  var aof_enabled: OFF = js.native
+  var aof_enabled: OFF
 }
 object PersistenceAOFOffInfo {
   

@@ -8,41 +8,39 @@ import typings.argon2.argon2Numbers.`2`
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined argon2.argon2.Options & {  raw :false | undefined} */
-  @js.native
   trait Optionsrawfalseundefined extends StObject {
     
-    var associatedData: js.UndefOr[Buffer] = js.native
+    var associatedData: js.UndefOr[Buffer] = js.undefined
     
-    var hashLength: js.UndefOr[Double] = js.native
+    var hashLength: js.UndefOr[Double] = js.undefined
     
-    var memoryCost: js.UndefOr[Double] = js.native
+    var memoryCost: js.UndefOr[Double] = js.undefined
     
-    var parallelism: js.UndefOr[Double] = js.native
+    var parallelism: js.UndefOr[Double] = js.undefined
     
-    var raw: js.UndefOr[Boolean] with js.UndefOr[`false`] = js.native
+    var raw: js.UndefOr[Boolean] & js.UndefOr[`false`]
     
-    var salt: js.UndefOr[Buffer] = js.native
+    var salt: js.UndefOr[Buffer] = js.undefined
     
-    var saltLength: js.UndefOr[Double] = js.native
+    var saltLength: js.UndefOr[Double] = js.undefined
     
-    var secret: js.UndefOr[Buffer] = js.native
+    var secret: js.UndefOr[Buffer] = js.undefined
     
-    var timeCost: js.UndefOr[Double] = js.native
+    var timeCost: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[`0` | `1` | `2`] = js.native
+    var `type`: js.UndefOr[`0` | `1` | `2`] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object Optionsrawfalseundefined {
     
     @scala.inline
-    def apply(raw: js.UndefOr[Boolean] with js.UndefOr[`false`]): Optionsrawfalseundefined = {
+    def apply(raw: js.UndefOr[Boolean] & js.UndefOr[`false`]): Optionsrawfalseundefined = {
       val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsrawfalseundefined]
     }
@@ -75,7 +73,7 @@ object anon {
       def setParallelismUndefined: Self = StObject.set(x, "parallelism", js.undefined)
       
       @scala.inline
-      def setRaw(value: js.UndefOr[Boolean] with js.UndefOr[`false`]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      def setRaw(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSalt(value: Buffer): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
@@ -116,35 +114,34 @@ object anon {
   }
   
   /* Inlined argon2.argon2.Options & {  raw :true} */
-  @js.native
   trait Optionsrawtrue extends StObject {
     
-    var associatedData: js.UndefOr[Buffer] = js.native
+    var associatedData: js.UndefOr[Buffer] = js.undefined
     
-    var hashLength: js.UndefOr[Double] = js.native
+    var hashLength: js.UndefOr[Double] = js.undefined
     
-    var memoryCost: js.UndefOr[Double] = js.native
+    var memoryCost: js.UndefOr[Double] = js.undefined
     
-    var parallelism: js.UndefOr[Double] = js.native
+    var parallelism: js.UndefOr[Double] = js.undefined
     
-    var raw: js.UndefOr[Boolean] with `true` = js.native
+    var raw: js.UndefOr[Boolean] & `true`
     
-    var salt: js.UndefOr[Buffer] = js.native
+    var salt: js.UndefOr[Buffer] = js.undefined
     
-    var saltLength: js.UndefOr[Double] = js.native
+    var saltLength: js.UndefOr[Double] = js.undefined
     
-    var secret: js.UndefOr[Buffer] = js.native
+    var secret: js.UndefOr[Buffer] = js.undefined
     
-    var timeCost: js.UndefOr[Double] = js.native
+    var timeCost: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[`0` | `1` | `2`] = js.native
+    var `type`: js.UndefOr[`0` | `1` | `2`] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object Optionsrawtrue {
     
     @scala.inline
-    def apply(raw: js.UndefOr[Boolean] with `true`): Optionsrawtrue = {
+    def apply(raw: js.UndefOr[Boolean] & `true`): Optionsrawtrue = {
       val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsrawtrue]
     }
@@ -177,7 +174,7 @@ object anon {
       def setParallelismUndefined: Self = StObject.set(x, "parallelism", js.undefined)
       
       @scala.inline
-      def setRaw(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      def setRaw(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSalt(value: Buffer): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])

@@ -2,7 +2,6 @@ package typings.d3Indirections
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,17 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * an indirection is changed, all indirections controlled by the
   * same indirection controller will also be affected.
   */
-@js.native
 trait IndirectionBase extends StObject {
   
   /** The display name of this indirection. */
-  var name: String = js.native
+  var name: String
   
   /** The type of resource the indirection controller is associated with. */
-  var resourceType: ResourceType = js.native
+  var resourceType: ResourceType
   
   /** Unique identifier for this indirection. */
-  var uid: String = js.native
+  var uid: String
 }
 object IndirectionBase {
   

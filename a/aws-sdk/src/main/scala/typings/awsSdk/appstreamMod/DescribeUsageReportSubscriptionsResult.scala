@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeUsageReportSubscriptionsResult extends StObject {
   
   /**
     * The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the usage report subscription.
     */
-  var UsageReportSubscriptions: js.UndefOr[UsageReportSubscriptionList] = js.native
+  var UsageReportSubscriptions: js.UndefOr[UsageReportSubscriptionList] = js.undefined
 }
 object DescribeUsageReportSubscriptionsResult {
   

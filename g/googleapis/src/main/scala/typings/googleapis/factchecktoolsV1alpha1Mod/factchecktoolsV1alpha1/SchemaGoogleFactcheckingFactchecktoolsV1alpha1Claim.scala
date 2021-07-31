@@ -2,36 +2,34 @@ package typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the claim.
   */
-@js.native
 trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1Claim extends StObject {
   
   /**
     * The date that the claim was made.
     */
-  var claimDate: js.UndefOr[String] = js.native
+  var claimDate: js.UndefOr[String] = js.undefined
   
   /**
     * One or more reviews of this claim (namely, a fact-checking article).
     */
-  var claimReview: js.UndefOr[js.Array[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview]] = js.native
+  var claimReview: js.UndefOr[js.Array[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview]] = js.undefined
   
   /**
     * A person or organization stating the claim. For instance, &quot;John
     * Doe&quot;.
     */
-  var claimant: js.UndefOr[String] = js.native
+  var claimant: js.UndefOr[String] = js.undefined
   
   /**
     * The claim text. For instance, &quot;Crime has doubled in the last 2
     * years.&quot;
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1Claim {
   

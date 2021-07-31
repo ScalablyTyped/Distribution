@@ -4,25 +4,23 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.fail
 import typings.instagramPrivateApi.instagramPrivateApiStrings.login_required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loginRequiredResponseMod {
   
-  @js.native
   trait LoginRequiredResponse extends StObject {
     
-    var logout_reason: Double = js.native
+    var logout_reason: Double
     
-    var message: login_required = js.native
+    var message: login_required
     
-    var status: fail = js.native
+    var status: fail
   }
   object LoginRequiredResponse {
     
     @scala.inline
-    def apply(logout_reason: Double, message: login_required, status: fail): LoginRequiredResponse = {
-      val __obj = js.Dynamic.literal(logout_reason = logout_reason.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(logout_reason: Double): LoginRequiredResponse = {
+      val __obj = js.Dynamic.literal(logout_reason = logout_reason.asInstanceOf[js.Any], message = "login_required", status = "fail")
       __obj.asInstanceOf[LoginRequiredResponse]
     }
     

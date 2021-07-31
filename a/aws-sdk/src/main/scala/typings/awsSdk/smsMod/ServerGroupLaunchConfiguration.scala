@@ -2,26 +2,24 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerGroupLaunchConfiguration extends StObject {
   
   /**
     * The launch order of servers in the server group.
     */
-  var launchOrder: js.UndefOr[LaunchOrder] = js.native
+  var launchOrder: js.UndefOr[LaunchOrder] = js.undefined
   
   /**
     * The ID of the server group with which the launch configuration is associated.
     */
-  var serverGroupId: js.UndefOr[ServerGroupId] = js.native
+  var serverGroupId: js.UndefOr[ServerGroupId] = js.undefined
   
   /**
     * The launch configuration for servers in the server group.
     */
-  var serverLaunchConfigurations: js.UndefOr[ServerLaunchConfigurations] = js.native
+  var serverLaunchConfigurations: js.UndefOr[ServerLaunchConfigurations] = js.undefined
 }
 object ServerGroupLaunchConfiguration {
   

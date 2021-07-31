@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewAccountDefinition extends StObject {
   
   /**
     * The account name for the new account.
     */
-  var accountName: js.UndefOr[String] = js.native
+  var accountName: js.UndefOr[String] = js.undefined
   
   /**
     * The list of
@@ -26,48 +24,48 @@ trait NewAccountDefinition extends StObject {
     */
   var accountSettings: js.UndefOr[
     /* Contains account settings information. Used in requests to set property values. Used in responses to report property values. */ AccountSettingsInformation
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A complex type that contains the following information for the new account: `Street1`, `Street2`, `City`, `State`, `Zip`, `Phone`, and `Fax`.
     */
   var addressInformation: js.UndefOr[
     /* Contains information about the address associated with the account. */ AccountAddress
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A complex type that has information about the credit card used to pay for this account.
     */
   var creditCardInformation: js.UndefOr[
     /* This object contains information about a credit card that is associated with an account. */ CreditCardInformation
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Information about the bank that processes direct debits for the payment plan.
     */
   var directDebitProcessorInformation: js.UndefOr[
     /* Contains information about a bank that processes a customer's direct debit payments. */ DirectDebitProcessorInformation
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The Distributor Code that you received from DocuSign.
     */
-  var distributorCode: js.UndefOr[String] = js.native
+  var distributorCode: js.UndefOr[String] = js.undefined
   
   /**
     * The password for the `distributorCode`.
     */
-  var distributorPassword: js.UndefOr[String] = js.native
+  var distributorPassword: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var envelopePartitionId: js.UndefOr[String] = js.native
+  var envelopePartitionId: js.UndefOr[String] = js.undefined
   
   /**
     * A complex type with the initial user information for the new account. Note that some user information is set internally based on the plan and cannot be overridden.
     */
-  var initialUser: js.UndefOr[UserInformation] = js.native
+  var initialUser: js.UndefOr[UserInformation] = js.undefined
   
   /**
     * The payment method used for the billing plan. Valid values are:
@@ -82,29 +80,29 @@ trait NewAccountDefinition extends StObject {
     * - `DigitalExternal`
     * - `DirectDebit`
     */
-  var paymentMethod: js.UndefOr[String] = js.native
+  var paymentMethod: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the entity that processes payments for the billing plan.
     */
-  var paymentProcessorInformation: js.UndefOr[PaymentProcessorInformation] = js.native
+  var paymentProcessorInformation: js.UndefOr[PaymentProcessorInformation] = js.undefined
   
   /**
     * An object used to identify the features and attributes of the account being created.
     */
   var planInformation: js.UndefOr[
     /* An object used to identify the features and attributes of the account being created. */ PlanInformation
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A complex type that contains properties for entering referral and discount information.
     */
-  var referralInformation: js.UndefOr[ReferralInformation] = js.native
+  var referralInformation: js.UndefOr[ReferralInformation] = js.undefined
   
   /**
     * Contains properties that map a DocuSign user to a social account such as Facebook or Yahoo.
     */
-  var socialAccountInformation: js.UndefOr[SocialAccountInformation] = js.native
+  var socialAccountInformation: js.UndefOr[SocialAccountInformation] = js.undefined
 }
 object NewAccountDefinition {
   

@@ -2,23 +2,21 @@ package typings.stremioAddonSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManifestExtra extends StObject {
   
   /**
     * Set to true if this property must always be passed.
     */
-  var isRequired: js.UndefOr[Boolean] = js.native
+  var isRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the property
     *
     * This name will be used in the extraProps argument itself.
     */
-  var name: Extra = js.native
+  var name: Extra
   
   /**
     * Possible values for this property.
@@ -31,14 +29,14 @@ trait ManifestExtra extends StObject {
     *
     * e.g. { name: "skip", options: ["0", "100", "200"] }
     */
-  var options: js.UndefOr[js.Array[String]] = js.native
+  var options: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The limit of values a user may select from the pre-set options list
     *
     * By default this is set to 1.
     */
-  var optionsLimit: js.UndefOr[Double] = js.native
+  var optionsLimit: js.UndefOr[Double] = js.undefined
 }
 object ManifestExtra {
   

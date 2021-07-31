@@ -8,7 +8,6 @@ import typings.crossDomainUtils.crossDomainUtilsStrings.mockColon
 import typings.crossDomainUtils.crossDomainUtilsStrings.popup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {

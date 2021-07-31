@@ -2,21 +2,21 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CIMMarkerStrokePlacement extends CIMMarkerPlacementBase {
+trait CIMMarkerStrokePlacement
+  extends StObject
+     with CIMMarkerPlacementBase {
   
   /**
     * A value indicating whether to angle the marker to the line.
     */
-  var angleToLine: js.UndefOr[Boolean] = js.native
+  var angleToLine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The offset.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
 }
 object CIMMarkerStrokePlacement {
   

@@ -2,13 +2,11 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdWordsBuilder[E] extends StObject {
   
-  def build(): AdWordsOperation[E] = js.native
+  def build(): AdWordsOperation[E]
 }
 object AdWordsBuilder {
   
@@ -19,7 +17,7 @@ object AdWordsBuilder {
   }
   
   @scala.inline
-  implicit class AdWordsBuilderMutableBuilder[Self <: AdWordsBuilder[_], E] (val x: Self with AdWordsBuilder[E]) extends AnyVal {
+  implicit class AdWordsBuilderMutableBuilder[Self <: AdWordsBuilder[?], E] (val x: Self & AdWordsBuilder[E]) extends AnyVal {
     
     @scala.inline
     def setBuild(value: () => AdWordsOperation[E]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))

@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConnectorProfilesResponse extends StObject {
   
   /**
     *  Returns information about the connector profiles associated with the flow. 
     */
-  var connectorProfileDetails: js.UndefOr[ConnectorProfileDetailList] = js.native
+  var connectorProfileDetails: js.UndefOr[ConnectorProfileDetailList] = js.undefined
   
   /**
     *  The pagination token for the next page of data. If nextToken=null, this means that all records have been fetched. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeConnectorProfilesResponse {
   

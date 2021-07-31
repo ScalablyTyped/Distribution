@@ -2,31 +2,29 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResolverQueryLogConfigAssociationsResponse extends StObject {
   
   /**
     * If there are more than MaxResults query logging associations, you can submit another ListResolverQueryLogConfigAssociations request to get the next group of associations. In the next request, specify the value of NextToken from the previous response. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.route53resolverMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.route53resolverMod.NextToken] = js.undefined
   
   /**
     * A list that contains one ResolverQueryLogConfigAssociations element for each query logging association that matches the values that you specified for Filter.
     */
-  var ResolverQueryLogConfigAssociations: js.UndefOr[ResolverQueryLogConfigAssociationList] = js.native
+  var ResolverQueryLogConfigAssociations: js.UndefOr[ResolverQueryLogConfigAssociationList] = js.undefined
   
   /**
     * The total number of query logging associations that were created by the current account in the specified Region. This count can differ from the number of associations that are returned in a ListResolverQueryLogConfigAssociations response, depending on the values that you specify in the request.
     */
-  var TotalCount: js.UndefOr[Count] = js.native
+  var TotalCount: js.UndefOr[Count] = js.undefined
   
   /**
     * The total number of query logging associations that were created by the current account in the specified Region and that match the filters that were specified in the ListResolverQueryLogConfigAssociations request. For the total number of associations that were created by the current account in the specified Region, see TotalCount.
     */
-  var TotalFilteredCount: js.UndefOr[Count] = js.native
+  var TotalFilteredCount: js.UndefOr[Count] = js.undefined
 }
 object ListResolverQueryLogConfigAssociationsResponse {
   

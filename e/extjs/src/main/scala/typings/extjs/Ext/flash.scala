@@ -2,53 +2,52 @@ package typings.extjs.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flash {
   
-  @js.native
   trait IComponent
-    extends typings.extjs.Ext.IComponent {
+    extends StObject
+       with typings.extjs.Ext.IComponent {
     
     /** [Property] (String) */
-    var EXPRESS_INSTALL_URL: js.UndefOr[java.lang.String] = js.native
+    var EXPRESS_INSTALL_URL: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var backgroundColor: js.UndefOr[java.lang.String] = js.native
+    var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var expressInstall: js.UndefOr[Boolean] = js.native
+    var expressInstall: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var flashAttributes: js.UndefOr[js.Any] = js.native
+    var flashAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var flashParams: js.UndefOr[js.Any] = js.native
+    var flashParams: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var flashVars: js.UndefOr[js.Any] = js.native
+    var flashVars: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var flashVersion: js.UndefOr[java.lang.String] = js.native
+    var flashVersion: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Retrieves the id of the SWF object embed element  */
-    var getSwfId: js.UndefOr[js.Function0[Unit]] = js.native
+    var getSwfId: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Property] (Ext.Element) */
-    var swf: js.UndefOr[IElement] = js.native
+    var swf: js.UndefOr[IElement] = js.undefined
     
     /** [Config Option] (String/Number) */
-    var swfHeight: js.UndefOr[js.Any] = js.native
+    var swfHeight: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String/Number) */
-    var swfWidth: js.UndefOr[js.Any] = js.native
+    var swfWidth: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var url: js.UndefOr[java.lang.String] = js.native
+    var url: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var wmode: js.UndefOr[java.lang.String] = js.native
+    var wmode: js.UndefOr[java.lang.String] = js.undefined
   }
   object IComponent {
     

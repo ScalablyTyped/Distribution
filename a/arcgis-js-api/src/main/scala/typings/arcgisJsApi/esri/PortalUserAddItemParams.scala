@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PortalUserAddItemParams extends Object {
+trait PortalUserAddItemParams
+  extends StObject
+     with Object {
   
   /**
     * The component used to stream the data represented by the item to the client.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#addItem)
     */
-  var data: js.UndefOr[String | js.Any] = js.native
+  var data: js.UndefOr[String | js.Any] = js.undefined
   
   /**
     * The portal folder in which to store the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#addItem)
     */
-  var folder: js.UndefOr[String | PortalFolder] = js.native
+  var folder: js.UndefOr[String | PortalFolder] = js.undefined
   
   /**
     * The item to add to the user's content.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#addItem)
     */
-  var item: PortalItem = js.native
+  var item: PortalItem
 }
 object PortalUserAddItemParams {
   

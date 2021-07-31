@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageEditorMessagesPanesCrop extends StObject {
   
-  var aspectRatio: js.UndefOr[String] = js.native
+  var aspectRatio: js.UndefOr[String] = js.undefined
   
-  var aspectRatioItems: js.UndefOr[ImageEditorMessagesPanesCropAspectRatioItems] = js.native
+  var aspectRatioItems: js.UndefOr[ImageEditorMessagesPanesCropAspectRatioItems] = js.undefined
   
-  var landscape: js.UndefOr[String] = js.native
+  var landscape: js.UndefOr[String] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
-  var portrait: js.UndefOr[String] = js.native
+  var portrait: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ImageEditorMessagesPanesCrop {
   

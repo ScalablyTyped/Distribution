@@ -2,31 +2,29 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateEndpointInput extends StObject {
   
   /**
     * The name of the new endpoint configuration.
     */
-  var EndpointConfigName: typings.awsSdk.sagemakerMod.EndpointConfigName = js.native
+  var EndpointConfigName: typings.awsSdk.sagemakerMod.EndpointConfigName
   
   /**
     * The name of the endpoint whose configuration you want to update.
     */
-  var EndpointName: typings.awsSdk.sagemakerMod.EndpointName = js.native
+  var EndpointName: typings.awsSdk.sagemakerMod.EndpointName
   
   /**
     * When you are updating endpoint resources with UpdateEndpointInput$RetainAllVariantProperties, whose value is set to true, ExcludeRetainedVariantProperties specifies the list of type VariantProperty to override with the values provided by EndpointConfig. If you don't specify a value for ExcludeAllVariantProperties, no variant properties are overridden. 
     */
-  var ExcludeRetainedVariantProperties: js.UndefOr[VariantPropertyList] = js.native
+  var ExcludeRetainedVariantProperties: js.UndefOr[VariantPropertyList] = js.undefined
   
   /**
     * When updating endpoint resources, enables or disables the retention of variant properties, such as the instance count or the variant weight. To retain the variant properties of an endpoint when updating it, set RetainAllVariantProperties to true. To use the variant properties specified in a new EndpointConfig call when updating an endpoint, set RetainAllVariantProperties to false.
     */
-  var RetainAllVariantProperties: js.UndefOr[Boolean] = js.native
+  var RetainAllVariantProperties: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateEndpointInput {
   

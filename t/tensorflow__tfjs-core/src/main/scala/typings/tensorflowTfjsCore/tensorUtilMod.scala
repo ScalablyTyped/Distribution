@@ -5,24 +5,23 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensorUtilMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util", "assertTypesMatch")
+  @JSImport("@tensorflow/tfjs-core/dist/tensor_util", JSImport.Namespace)
   @js.native
-  def assertTypesMatch(a: Tensor[Rank], b: Tensor[Rank]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util", "getTensorsInContainer")
-  @js.native
-  def getTensorsInContainer(result: TensorContainer): js.Array[Tensor[Rank]] = js.native
+  @scala.inline
+  def assertTypesMatch(a: Tensor[Rank], b: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTypesMatch")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util", "isTensorInList")
-  @js.native
-  def isTensorInList(tensor: Tensor[Rank], tensorList: js.Array[Tensor[Rank]]): Boolean = js.native
+  @scala.inline
+  def getTensorsInContainer(result: TensorContainer): js.Array[Tensor[Rank]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTensorsInContainer")(result.asInstanceOf[js.Any]).asInstanceOf[js.Array[Tensor[Rank]]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util", "makeTypesMatch")
-  @js.native
-  def makeTypesMatch[T /* <: Tensor[Rank] */](a: T, b: T): js.Tuple2[T, T] = js.native
+  @scala.inline
+  def isTensorInList(tensor: Tensor[Rank], tensorList: js.Array[Tensor[Rank]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTensorInList")(tensor.asInstanceOf[js.Any], tensorList.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def makeTypesMatch[T /* <: Tensor[Rank] */](a: T, b: T): js.Tuple2[T, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeTypesMatch")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[T, T]]
 }

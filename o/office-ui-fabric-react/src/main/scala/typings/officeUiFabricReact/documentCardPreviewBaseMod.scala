@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPrev
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardPreviewBaseMod {

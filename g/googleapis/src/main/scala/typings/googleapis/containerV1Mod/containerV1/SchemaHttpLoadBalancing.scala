@@ -2,7 +2,6 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * which makes it easy to set up HTTP load balancers for services in a
   * cluster.
   */
-@js.native
 trait SchemaHttpLoadBalancing extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaHttpLoadBalancing extends StObject {
     * When enabled, it runs a small pod in the cluster that manages the load
     * balancers.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaHttpLoadBalancing {
   

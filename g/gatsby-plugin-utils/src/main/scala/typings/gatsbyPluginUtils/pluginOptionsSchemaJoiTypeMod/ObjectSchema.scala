@@ -3,11 +3,12 @@ package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectSchema[TSchema] extends AnySchema {
+trait ObjectSchema[TSchema]
+  extends StObject
+     with AnySchema {
   
   /**
     * Defines an all-or-nothing relationship between keys where if one of the peers is present, all of them are required as well.

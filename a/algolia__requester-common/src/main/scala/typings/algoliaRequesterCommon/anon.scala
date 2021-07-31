@@ -3,20 +3,18 @@ package typings.algoliaRequesterCommon
 import typings.algoliaRequesterCommon.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<std.Promise<@algolia/requester-common.@algolia/requester-common.Response>> */
-  @js.native
   trait ReadonlyPromiseResponse extends StObject {
     
-    def `catch`[TResult](): js.Promise[Response | TResult] = js.native
+    def `catch`[TResult](): js.Promise[Response | TResult]
     
-    def `finally`(): js.Promise[Response] = js.native
+    def `finally`(): js.Promise[Response]
     
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
   }
   object ReadonlyPromiseResponse {
     
@@ -48,14 +46,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<std.Promise<void>> */
-  @js.native
   trait ReadonlyPromisevoid extends StObject {
     
-    def `catch`[TResult](): js.Promise[Unit | TResult] = js.native
+    def `catch`[TResult](): js.Promise[Unit | TResult]
     
-    def `finally`(): js.Promise[Unit] = js.native
+    def `finally`(): js.Promise[Unit]
     
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
   }
   object ReadonlyPromisevoid {
     

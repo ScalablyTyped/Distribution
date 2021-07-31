@@ -4,51 +4,51 @@ import typings.mapboxGl.mapboxGlStrings.map
 import typings.mapboxGl.mapboxGlStrings.viewport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LinePaint extends AnyPaint {
+trait LinePaint
+  extends StObject
+     with AnyPaint {
   
-  var `line-blur`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `line-blur`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `line-blur-transition`: js.UndefOr[Transition] = js.native
+  var `line-blur-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `line-color`: js.UndefOr[String | StyleFunction | Expression] = js.native
+  var `line-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
   
-  var `line-color-transition`: js.UndefOr[Transition] = js.native
+  var `line-color-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `line-dasharray`: js.UndefOr[js.Array[Double] | Expression] = js.native
+  var `line-dasharray`: js.UndefOr[js.Array[Double] | Expression] = js.undefined
   
-  var `line-dasharray-transition`: js.UndefOr[Transition] = js.native
+  var `line-dasharray-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `line-gap-width`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `line-gap-width`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `line-gap-width-transition`: js.UndefOr[Transition] = js.native
+  var `line-gap-width-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `line-gradient`: js.UndefOr[Expression] = js.native
+  var `line-gradient`: js.UndefOr[Expression] = js.undefined
   
-  var `line-offset`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `line-offset`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `line-offset-transition`: js.UndefOr[Transition] = js.native
+  var `line-offset-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `line-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `line-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `line-opacity-transition`: js.UndefOr[Transition] = js.native
+  var `line-opacity-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `line-pattern`: js.UndefOr[String | Expression] = js.native
+  var `line-pattern`: js.UndefOr[String | Expression] = js.undefined
   
-  var `line-pattern-transition`: js.UndefOr[Transition] = js.native
+  var `line-pattern-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `line-translate`: js.UndefOr[js.Array[Double] | Expression] = js.native
+  var `line-translate`: js.UndefOr[js.Array[Double] | Expression] = js.undefined
   
-  var `line-translate-anchor`: js.UndefOr[map | viewport] = js.native
+  var `line-translate-anchor`: js.UndefOr[map | viewport] = js.undefined
   
-  var `line-translate-transition`: js.UndefOr[Transition] = js.native
+  var `line-translate-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `line-width`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `line-width`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `line-width-transition`: js.UndefOr[Transition] = js.native
+  var `line-width-transition`: js.UndefOr[Transition] = js.undefined
 }
 object LinePaint {
   

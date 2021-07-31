@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataSourceMod {
@@ -82,6 +81,10 @@ object dataSourceMod {
   /* static members */
   object DataSource {
     
+    @JSImport("@pulumi/aws/appsync/dataSource", "DataSource")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DataSource resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -91,75 +94,69 @@ object dataSourceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appsync/dataSource", "DataSource.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DataSource = js.native
-    @JSImport("@pulumi/aws/appsync/dataSource", "DataSource.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DataSource = js.native
-    @JSImport("@pulumi/aws/appsync/dataSource", "DataSource.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DataSourceState): DataSource = js.native
-    @JSImport("@pulumi/aws/appsync/dataSource", "DataSource.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DataSourceState, opts: CustomResourceOptions): DataSource = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DataSource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DataSource]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DataSource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DataSource]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DataSourceState): DataSource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DataSource]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DataSourceState, opts: CustomResourceOptions): DataSource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DataSource]
     
     /**
       * Returns true if the given object is an instance of DataSource.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appsync/dataSource", "DataSource.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/dataSource.DataSource */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/dataSource.DataSource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appsync/dataSource.DataSource */ Boolean]
   }
   
-  @js.native
   trait DataSourceArgs extends StObject {
     
     /**
       * The API ID for the GraphQL API for the DataSource.
       */
-    val apiId: Input[String] = js.native
+    val apiId: Input[String]
     
     /**
       * A description of the DataSource.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * DynamoDB settings. See below
       */
-    val dynamodbConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceDynamodbConfig]] = js.native
+    val dynamodbConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceDynamodbConfig]] = js.undefined
     
     /**
       * Amazon Elasticsearch settings. See below
       */
-    val elasticsearchConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceElasticsearchConfig]] = js.native
+    val elasticsearchConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceElasticsearchConfig]] = js.undefined
     
     /**
       * HTTP settings. See below
       */
-    val httpConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceHttpConfig]] = js.native
+    val httpConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceHttpConfig]] = js.undefined
     
     /**
       * AWS Lambda settings. See below
       */
-    val lambdaConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceLambdaConfig]] = js.native
+    val lambdaConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceLambdaConfig]] = js.undefined
     
     /**
       * A user-supplied name for the DataSource.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM service role ARN for the data source.
       */
-    val serviceRoleArn: js.UndefOr[Input[String]] = js.native
+    val serviceRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
       */
-    val `type`: Input[String] = js.native
+    val `type`: Input[String]
   }
   object DataSourceArgs {
     
@@ -223,58 +220,57 @@ object dataSourceMod {
     }
   }
   
-  @js.native
   trait DataSourceState extends StObject {
     
     /**
       * The API ID for the GraphQL API for the DataSource.
       */
-    val apiId: js.UndefOr[Input[String]] = js.native
+    val apiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description of the DataSource.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * DynamoDB settings. See below
       */
-    val dynamodbConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceDynamodbConfig]] = js.native
+    val dynamodbConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceDynamodbConfig]] = js.undefined
     
     /**
       * Amazon Elasticsearch settings. See below
       */
-    val elasticsearchConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceElasticsearchConfig]] = js.native
+    val elasticsearchConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceElasticsearchConfig]] = js.undefined
     
     /**
       * HTTP settings. See below
       */
-    val httpConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceHttpConfig]] = js.native
+    val httpConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceHttpConfig]] = js.undefined
     
     /**
       * AWS Lambda settings. See below
       */
-    val lambdaConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceLambdaConfig]] = js.native
+    val lambdaConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.DataSourceLambdaConfig]] = js.undefined
     
     /**
       * A user-supplied name for the DataSource.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM service role ARN for the data source.
       */
-    val serviceRoleArn: js.UndefOr[Input[String]] = js.native
+    val serviceRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object DataSourceState {
     

@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupManagersResizeAdvancedRequest extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait SchemaInstanceGroupManagersResizeAdvancedRequest extends StObject {
     * in any way.  You can see which instances is being creating in which mode
     * by calling the get or listManagedInstances API.
     */
-  var noCreationRetries: js.UndefOr[Boolean] = js.native
+  var noCreationRetries: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of running instances that the managed instance group should
@@ -33,7 +31,7 @@ trait SchemaInstanceGroupManagersResizeAdvancedRequest extends StObject {
     * instances to maintain the number of instances specified by this
     * parameter.
     */
-  var targetSize: js.UndefOr[Double] = js.native
+  var targetSize: js.UndefOr[Double] = js.undefined
 }
 object SchemaInstanceGroupManagersResizeAdvancedRequest {
   

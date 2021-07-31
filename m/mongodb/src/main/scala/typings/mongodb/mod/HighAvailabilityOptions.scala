@@ -2,32 +2,30 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighAvailabilityOptions extends StObject {
   
   /**
     * Default: false;
     */
-  var domainsEnabled: js.UndefOr[Boolean] = js.native
+  var domainsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default: true; Turn on high availability monitoring.
     */
-  var ha: js.UndefOr[Boolean] = js.native
+  var ha: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default: 10000; The High availability period for replicaset inquiry
     */
-  var haInterval: js.UndefOr[scala.Double] = js.native
+  var haInterval: js.UndefOr[scala.Double] = js.undefined
   
   /** The ReadPreference mode as listed here: http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html */
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   
   /** An object representing read preference tags, see: http://mongodb.github.io/node-mongodb-native/3.1/api/ReadPreference.html */
-  var readPreferenceTags: js.UndefOr[js.Array[String]] = js.native
+  var readPreferenceTags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object HighAvailabilityOptions {
   

@@ -2,7 +2,6 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,19 @@ sealed trait EMaskUnits extends StObject
 object EMaskUnits extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[EMaskUnits with String] = js.native
+  def apply(value: String): js.UndefOr[EMaskUnits & String] = js.native
   
   @js.native
   sealed trait OBJECT_BOUNDING_BOX
-    extends EMaskUnits
+    extends StObject
+       with EMaskUnits
        with TMaskUnits
-  /* "objectBoundingBox" */ val OBJECT_BOUNDING_BOX: typings.reactNativeSvg.mod.EMaskUnits.OBJECT_BOUNDING_BOX with String = js.native
+  /* "objectBoundingBox" */ val OBJECT_BOUNDING_BOX: typings.reactNativeSvg.mod.EMaskUnits.OBJECT_BOUNDING_BOX & String = js.native
   
   @js.native
   sealed trait USER_SPACE_ON_USE
-    extends EMaskUnits
+    extends StObject
+       with EMaskUnits
        with TMaskUnits
-  /* "userSpaceOnUse" */ val USER_SPACE_ON_USE: typings.reactNativeSvg.mod.EMaskUnits.USER_SPACE_ON_USE with String = js.native
+  /* "userSpaceOnUse" */ val USER_SPACE_ON_USE: typings.reactNativeSvg.mod.EMaskUnits.USER_SPACE_ON_USE & String = js.native
 }

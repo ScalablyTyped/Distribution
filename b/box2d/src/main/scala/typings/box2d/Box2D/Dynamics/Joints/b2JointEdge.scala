@@ -3,31 +3,29 @@ package typings.box2d.Box2D.Dynamics.Joints
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2JointEdge extends StObject {
   
   /**
     * The joint.
     **/
-  var joint: b2Joint = js.native
+  var joint: b2Joint
   
   /**
     * The next joint edge in the body's joint list.
     **/
-  var next: b2JointEdge = js.native
+  var next: b2JointEdge
   
   /**
     * Provides quick access to the other body attached.
     **/
-  var other: b2Body = js.native
+  var other: b2Body
   
   /**
     * The previous joint edge in the body's joint list.
     **/
-  var prev: b2JointEdge = js.native
+  var prev: b2JointEdge
 }
 object b2JointEdge {
   

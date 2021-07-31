@@ -2,16 +2,14 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageLensDataExport extends StObject {
   
   /**
     * A container for the bucket where the S3 Storage Lens metrics export will be located.
     */
-  var S3BucketDestination: typings.awsSdk.s3controlMod.S3BucketDestination = js.native
+  var S3BucketDestination: typings.awsSdk.s3controlMod.S3BucketDestination
 }
 object StorageLensDataExport {
   

@@ -12,7 +12,7 @@ A module for creating Web apps with ChocolateChip-UI
 | Keywords           | JavaScript, ChocolateChip-UI, Hybrid App, Mobile, Web App, iOS, Android |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2610 |
+| # downloads        | 2427 |
 | # stars            | 2 |
 
 ## Links

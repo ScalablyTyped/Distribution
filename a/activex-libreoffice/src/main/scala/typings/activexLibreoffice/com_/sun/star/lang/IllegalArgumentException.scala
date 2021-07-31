@@ -4,19 +4,19 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This exception is thrown to indicate that a method has passed an illegal or inappropriate argument. */
-@js.native
-trait IllegalArgumentException extends Exception {
+trait IllegalArgumentException
+  extends StObject
+     with Exception {
   
   /**
     * identifies the position of the illegal argument.
     *
     * This field is -1 if the position is not known.
     */
-  var ArgumentPosition: Double = js.native
+  var ArgumentPosition: Double
 }
 object IllegalArgumentException {
   

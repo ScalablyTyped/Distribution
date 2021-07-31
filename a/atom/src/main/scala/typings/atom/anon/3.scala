@@ -6,15 +6,13 @@ import typings.atom.atomStrings.native
 import typings.atom.atomStrings.poll
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `3` extends StObject {
   
-  var newValue: native | experimental | poll | atom = js.native
+  var newValue: native | experimental | poll | atom
   
-  var oldValue: js.UndefOr[native | experimental | poll | atom] = js.native
+  var oldValue: js.UndefOr[native | experimental | poll | atom] = js.undefined
 }
 object `3` {
   

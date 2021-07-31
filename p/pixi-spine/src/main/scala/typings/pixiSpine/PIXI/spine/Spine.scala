@@ -13,7 +13,6 @@ import typings.std.Float32Array
 import typings.std.Uint16Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -41,7 +40,7 @@ trait Spine extends StObject {
   def destroy(): Unit = js.native
   def destroy(options: js.Any): Unit = js.native
   
-  def hackAttachmentGroups(nameSuffix: String, group: js.Any, outGroup: js.Any): js.Array[js.Array[_]] = js.native
+  def hackAttachmentGroups(nameSuffix: String, group: js.Any, outGroup: js.Any): js.Array[js.Array[js.Any]] = js.native
   
   def hackTextureAttachment(slotName: String, attachmentName: String, texture: js.Any): Boolean = js.native
   def hackTextureAttachment(
@@ -54,32 +53,32 @@ trait Spine extends StObject {
   def hackTextureBySlotIndex(slotIndex: Double): Boolean = js.native
   def hackTextureBySlotIndex(
     slotIndex: Double,
-    texture: js.UndefOr[scala.Nothing],
-    size: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any
-  ): Boolean = js.native
-  def hackTextureBySlotIndex(
-    slotIndex: Double,
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
   ): Boolean = js.native
   def hackTextureBySlotIndex(
     slotIndex: Double,
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    size: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any
+  ): Boolean = js.native
+  def hackTextureBySlotIndex(
+    slotIndex: Double,
+    texture: Unit,
     size: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any
   ): Boolean = js.native
   
   def hackTextureBySlotName(slotName: String): Boolean = js.native
   def hackTextureBySlotName(
     slotName: String,
-    texture: js.UndefOr[scala.Nothing],
-    size: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any
-  ): Boolean = js.native
-  def hackTextureBySlotName(
-    slotName: String,
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
   ): Boolean = js.native
   def hackTextureBySlotName(
     slotName: String,
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    size: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any
+  ): Boolean = js.native
+  def hackTextureBySlotName(
+    slotName: String,
+    texture: Unit,
     size: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any
   ): Boolean = js.native
   
@@ -96,45 +95,45 @@ trait Spine extends StObject {
   ): SpineMesh = js.native
   def newMesh(
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
-    vertices: js.UndefOr[scala.Nothing],
-    uvs: js.UndefOr[scala.Nothing],
-    indices: js.UndefOr[scala.Nothing],
+    vertices: Unit,
+    uvs: Unit,
+    indices: Unit,
     drawMode: Double
   ): SpineMesh = js.native
   def newMesh(
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
-    vertices: js.UndefOr[scala.Nothing],
-    uvs: js.UndefOr[scala.Nothing],
+    vertices: Unit,
+    uvs: Unit,
     indices: Uint16Array
   ): SpineMesh = js.native
   def newMesh(
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
-    vertices: js.UndefOr[scala.Nothing],
-    uvs: js.UndefOr[scala.Nothing],
+    vertices: Unit,
+    uvs: Unit,
     indices: Uint16Array,
     drawMode: Double
   ): SpineMesh = js.native
   def newMesh(
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
-    vertices: js.UndefOr[scala.Nothing],
+    vertices: Unit,
     uvs: Float32Array
   ): SpineMesh = js.native
   def newMesh(
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
-    vertices: js.UndefOr[scala.Nothing],
+    vertices: Unit,
     uvs: Float32Array,
-    indices: js.UndefOr[scala.Nothing],
+    indices: Unit,
     drawMode: Double
   ): SpineMesh = js.native
   def newMesh(
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
-    vertices: js.UndefOr[scala.Nothing],
+    vertices: Unit,
     uvs: Float32Array,
     indices: Uint16Array
   ): SpineMesh = js.native
   def newMesh(
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
-    vertices: js.UndefOr[scala.Nothing],
+    vertices: Unit,
     uvs: Float32Array,
     indices: Uint16Array,
     drawMode: Double
@@ -146,20 +145,20 @@ trait Spine extends StObject {
   def newMesh(
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
     vertices: Float32Array,
-    uvs: js.UndefOr[scala.Nothing],
-    indices: js.UndefOr[scala.Nothing],
+    uvs: Unit,
+    indices: Unit,
     drawMode: Double
   ): SpineMesh = js.native
   def newMesh(
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
     vertices: Float32Array,
-    uvs: js.UndefOr[scala.Nothing],
+    uvs: Unit,
     indices: Uint16Array
   ): SpineMesh = js.native
   def newMesh(
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
     vertices: Float32Array,
-    uvs: js.UndefOr[scala.Nothing],
+    uvs: Unit,
     indices: Uint16Array,
     drawMode: Double
   ): SpineMesh = js.native
@@ -172,7 +171,7 @@ trait Spine extends StObject {
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
     vertices: Float32Array,
     uvs: Float32Array,
-    indices: js.UndefOr[scala.Nothing],
+    indices: Unit,
     drawMode: Double
   ): SpineMesh = js.native
   def newMesh(
@@ -200,7 +199,7 @@ trait Spine extends StObject {
   var skeleton: Skeleton = js.native
   
   var slotContainers: js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Container */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Container */ js.Any
   ] = js.native
   
   var spineData: SkeletonData = js.native
@@ -210,7 +209,7 @@ trait Spine extends StObject {
   var stateData: AnimationStateData = js.native
   
   var tempClipContainers: js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Container */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Container */ js.Any
   ] = js.native
   
   def tint: Double = js.native

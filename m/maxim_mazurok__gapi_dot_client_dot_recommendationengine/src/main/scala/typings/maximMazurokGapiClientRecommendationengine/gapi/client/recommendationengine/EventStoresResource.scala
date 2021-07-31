@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventStoresResource extends StObject {
   
-  var operations: OperationsResource = js.native
+  var operations: OperationsResource
   
-  var placements: PlacementsResource = js.native
+  var placements: PlacementsResource
   
-  var predictionApiKeyRegistrations: PredictionApiKeyRegistrationsResource = js.native
+  var predictionApiKeyRegistrations: PredictionApiKeyRegistrationsResource
   
-  var userEvents: UserEventsResource = js.native
+  var userEvents: UserEventsResource
 }
 object EventStoresResource {
   

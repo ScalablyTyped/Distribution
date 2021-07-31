@@ -4,7 +4,6 @@ import typings.grommetIcons.anon.Colors
 import typings.grommetIcons.anon.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themesMod {

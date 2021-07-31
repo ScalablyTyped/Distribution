@@ -2,12 +2,14 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isObjectMod {
   
-  @JSImport("rxjs/internal/util/isObject", "isObject")
+  @JSImport("rxjs/internal/util/isObject", JSImport.Namespace)
   @js.native
-  def isObject(x: js.Any): /* is std.Object */ Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isObject(x: js.Any): /* is std.Object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(x.asInstanceOf[js.Any]).asInstanceOf[/* is std.Object */ Boolean]
 }

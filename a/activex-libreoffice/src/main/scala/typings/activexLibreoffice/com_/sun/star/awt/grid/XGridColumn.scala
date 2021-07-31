@@ -7,20 +7,19 @@ import typings.activexLibreoffice.com_.sun.star.style.HorizontalAlignment
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link XGridColumn} defines the properties and behavior of a column in a grid control.
   * @since OOo 3.3
   */
-@js.native
 trait XGridColumn
-  extends XComponent
+  extends StObject
+     with XComponent
      with XCloneable {
   
   /** specifies the current width of the column. */
-  var ColumnWidth: Double = js.native
+  var ColumnWidth: Double
   
   /**
     * denotes the index of the data column which should be used to fetch this grid column's data
@@ -34,7 +33,7 @@ trait XGridColumn
     * If `DataColumnIndex` is negative, the it will be ignored, then the column's index within its column model, as determined by the {@link Index}
     * attribute, will be used.
     */
-  var DataColumnIndex: Double = js.native
+  var DataColumnIndex: Double
   
   /**
     * specifies the flexibility of the column when it is automatically resized due to the grid control as a whole being resized.
@@ -48,37 +47,37 @@ trait XGridColumn
     *
     * A column's flexibility cannot be negative, attempts to set a negative value will raise an exception.
     */
-  var Flexibility: Double = js.native
+  var Flexibility: Double
   
   /**
     * is the help text associated with the column.
     *
     * A grid control will usually display a column's help text as tooltip.
     */
-  var HelpText: String = js.native
+  var HelpText: String
   
   /** Specifies the horizontal alignment of the content in the control. */
-  var HorizontalAlign: HorizontalAlignment = js.native
+  var HorizontalAlign: HorizontalAlignment
   
   /**
     * specifies an identifier of the column
     *
     * This identifier will not be evaluated by the grid control, or its model. It is merely for clients to identify particular columns.
     */
-  var Identifier: js.Any = js.native
+  var Identifier: js.Any
   
   /**
     * denotes the index of the column within the grid column model it belongs to
     *
     * If the column is not yet part of a column model, `Index` is -1.
     */
-  var Index: Double = js.native
+  var Index: Double
   
   /** specifies the maximal width the column can have. */
-  var MaxWidth: Double = js.native
+  var MaxWidth: Double
   
   /** specifies the minimal width the column can have. */
-  var MinWidth: Double = js.native
+  var MinWidth: Double
   
   /**
     * controls whether or not the column's width is fixed or not.
@@ -86,22 +85,22 @@ trait XGridColumn
     * If this is `TRUE` , the user can interactively change the column's width. Also, the column is subject to auto-resizing, if its {@link Flexibility}
     * attribute is greater `0` .
     */
-  var Resizeable: Boolean = js.native
+  var Resizeable: Boolean
   
   /** A title is displayed in the column header row if {@link UnoControlGridModel.ShowColumnHeader()} is set to `TRUE` */
-  var Title: String = js.native
+  var Title: String
   
   /**
     * Adds a listener for the {@link GridColumnEvent} posted after the grid changes.
     * @param Listener the listener to add.
     */
-  def addGridColumnListener(Listener: XGridColumnListener): Unit = js.native
+  def addGridColumnListener(Listener: XGridColumnListener): Unit
   
   /**
     * Removes a listener previously added with addColumnListener().
     * @param Listener the listener to remove.
     */
-  def removeGridColumnListener(Listener: XGridColumnListener): Unit = js.native
+  def removeGridColumnListener(Listener: XGridColumnListener): Unit
 }
 object XGridColumn {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSkillsStoreSkillsByCategoryRequest extends StObject {
   
   /**
     * The category ID for which the skills are being retrieved from the skill store.
     */
-  var CategoryId: typings.awsSdk.alexaforbusinessMod.CategoryId = js.native
+  var CategoryId: typings.awsSdk.alexaforbusinessMod.CategoryId
   
   /**
     * The maximum number of skills returned per paginated calls.
     */
-  var MaxResults: js.UndefOr[SkillListMaxResults] = js.native
+  var MaxResults: js.UndefOr[SkillListMaxResults] = js.undefined
   
   /**
     * The tokens used for pagination.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.undefined
 }
 object ListSkillsStoreSkillsByCategoryRequest {
   

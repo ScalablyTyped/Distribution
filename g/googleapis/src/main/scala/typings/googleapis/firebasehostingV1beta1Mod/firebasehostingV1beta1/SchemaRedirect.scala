@@ -2,7 +2,6 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * configuration for returning an HTTP redirect response given a matching
   * request URL path.
   */
-@js.native
 trait SchemaRedirect extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaRedirect extends StObject {
     * pattern](/docs/hosting/full-config#glob_pattern_matching) to match
     * against the request URL path.
     */
-  var glob: js.UndefOr[String] = js.native
+  var glob: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The value to put in the HTTP location header of the response.
@@ -29,13 +27,13 @@ trait SchemaRedirect extends StObject {
     * &lt;br&gt;&quot;location&quot;:
     * &quot;https://example.com/foo/:capture&quot;&lt;/code&gt;
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The status HTTP code to return in the response. It must be a
     * valid 3xx status code.
     */
-  var statusCode: js.UndefOr[Double] = js.native
+  var statusCode: js.UndefOr[Double] = js.undefined
 }
 object SchemaRedirect {
   

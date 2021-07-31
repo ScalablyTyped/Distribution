@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.ExportNamespaceSpecifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `174` extends StObject {
   
-  var `type`: ExportNamespaceSpecifier = js.native
+  var `type`: ExportNamespaceSpecifier
 }
 object `174` {
   
   @scala.inline
-  def apply(`type`: ExportNamespaceSpecifier): `174` = {
+  def apply(): `174` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ExportNamespaceSpecifier")
     __obj.asInstanceOf[`174`]
   }
   

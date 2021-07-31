@@ -7,7 +7,6 @@ import typings.microsoftteams.microsoftteamsNumbers.`3`
 import typings.microsoftteams.microsoftteamsNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,66 +14,65 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object microsoftTeams {
   
-  @js.native
   trait Context extends StObject {
     
     /**
       * The Microsoft Teams ID for the channel with which the content is associated.
       */
-    var channelId: js.UndefOr[String] = js.native
+    var channelId: js.UndefOr[String] = js.undefined
     
     /**
       * The name for the channel with which the content is associated.
       */
-    var channelName: js.UndefOr[String] = js.native
+    var channelName: js.UndefOr[String] = js.undefined
     
     /**
       * The developer-defined unique ID for the entity this content points to.
       */
-    var entityId: String = js.native
+    var entityId: String
     
     /**
       * The Office 365 group ID for the team with which the content is associated.
       * This field is available only when the identity permission is requested in the manifest.
       */
-    var groupId: js.UndefOr[String] = js.native
+    var groupId: js.UndefOr[String] = js.undefined
     
     /**
       * Indication whether the tab is in full-screen mode.
       */
-    var isFullScreen: js.UndefOr[Boolean] = js.native
+    var isFullScreen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The current locale that the user has configured for the app formatted as
       * languageId-countryId (for example, en-us).
       */
-    var locale: String = js.native
+    var locale: String
     
     /**
       * The developer-defined unique ID for the sub-entity this content points to.
       * This field should be used to restore to a specific state within an entity, such as scrolling to or activating a specific piece of content.
       */
-    var subEntityId: js.UndefOr[String] = js.native
+    var subEntityId: js.UndefOr[String] = js.undefined
     
     /**
       * The Microsoft Teams ID for the team with which the content is associated.
       */
-    var teamId: js.UndefOr[String] = js.native
+    var teamId: js.UndefOr[String] = js.undefined
     
     /**
       * The name for the team with which the content is associated.
       */
-    var teamName: js.UndefOr[String] = js.native
+    var teamName: js.UndefOr[String] = js.undefined
     
     /**
       * The type of the team.
       */
-    var teamType: js.UndefOr[TeamType] = js.native
+    var teamType: js.UndefOr[TeamType] = js.undefined
     
     /**
       * The current UI theme.
       */
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
     /**
       * The Azure AD tenant ID of the current user.
@@ -82,7 +80,7 @@ object microsoftTeams {
       * be used only as a hint as to who the user is and never as proof of identity.
       * This field is available only when the identity permission is requested in the manifest.
       */
-    var tid: js.UndefOr[String] = js.native
+    var tid: js.UndefOr[String] = js.undefined
     
     /**
       * The UPN of the current user.
@@ -90,7 +88,7 @@ object microsoftTeams {
       * be used only as a hint as to who the user is and never as proof of identity.
       * This field is available only when the identity permission is requested in the manifest.
       */
-    var upn: js.UndefOr[String] = js.native
+    var upn: js.UndefOr[String] = js.undefined
   }
   object Context {
     
@@ -177,25 +175,24 @@ object microsoftTeams {
     }
   }
   
-  @js.native
   trait DeepLinkParameters extends StObject {
     
     /**
       * The developer-defined unique ID for the sub-entity to which this deep link points in the current entity.
       * This field should be used to restore to a specific state within an entity, such as scrolling to or activating a specific piece of content.
       */
-    var subEntityId: String = js.native
+    var subEntityId: String
     
     /**
       * The label for the sub-entity that should be displayed when the deep link is rendered in a client.
       */
-    var subEntityLabel: String = js.native
+    var subEntityLabel: String
     
     /**
       * The fallback URL to which to navigate the user if the client cannot render the page.
       * This URL should lead directly to the sub-entity.
       */
-    var subEntityWebUrl: js.UndefOr[String] = js.native
+    var subEntityWebUrl: js.UndefOr[String] = js.undefined
   }
   object DeepLinkParameters {
     
@@ -222,10 +219,9 @@ object microsoftTeams {
     }
   }
   
-  @js.native
   trait TabInformation extends StObject {
     
-    var teamTabs: js.Array[TabInstance] = js.native
+    var teamTabs: js.Array[TabInstance]
   }
   object TabInformation {
     
@@ -246,34 +242,33 @@ object microsoftTeams {
     }
   }
   
-  @js.native
   trait TabInstance extends StObject {
     
-    var channelId: js.UndefOr[String] = js.native
+    var channelId: js.UndefOr[String] = js.undefined
     
-    var channelIsFavorite: js.UndefOr[Boolean] = js.native
+    var channelIsFavorite: js.UndefOr[Boolean] = js.undefined
     
-    var channelName: js.UndefOr[String] = js.native
+    var channelName: js.UndefOr[String] = js.undefined
     
-    var entityId: js.UndefOr[String] = js.native
+    var entityId: js.UndefOr[String] = js.undefined
     
-    var groupId: js.UndefOr[String] = js.native
+    var groupId: js.UndefOr[String] = js.undefined
     
-    var internalTabInstanceId: js.UndefOr[String] = js.native
+    var internalTabInstanceId: js.UndefOr[String] = js.undefined
     
-    var lastViewUnixEpochTime: js.UndefOr[String] = js.native
+    var lastViewUnixEpochTime: js.UndefOr[String] = js.undefined
     
-    var tabName: String = js.native
+    var tabName: String
     
-    var teamId: js.UndefOr[String] = js.native
+    var teamId: js.UndefOr[String] = js.undefined
     
-    var teamIsFavorite: js.UndefOr[Boolean] = js.native
+    var teamIsFavorite: js.UndefOr[Boolean] = js.undefined
     
-    var teamName: js.UndefOr[String] = js.native
+    var teamName: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var websiteUrl: js.UndefOr[String] = js.native
+    var websiteUrl: js.UndefOr[String] = js.undefined
   }
   object TabInstance {
     
@@ -363,18 +358,17 @@ object microsoftTeams {
     }
   }
   
-  @js.native
   trait TabInstanceParameters extends StObject {
     
     /**
       * Flag allowing to select favorite channels only
       */
-    var favoriteChannelsOnly: js.UndefOr[Boolean] = js.native
+    var favoriteChannelsOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Flag allowing to select favorite teams only
       */
-    var favoriteTeamsOnly: js.UndefOr[Boolean] = js.native
+    var favoriteTeamsOnly: js.UndefOr[Boolean] = js.undefined
   }
   object TabInstanceParameters {
     
@@ -433,23 +427,22 @@ object microsoftTeams {
     */
   object authentication {
     
-    @js.native
     trait AuthTokenRequest extends StObject {
       
       /**
         * A function that is called if the token request fails, with the reason for the failure.
         */
-      var failureCallback: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.native
+      var failureCallback: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.undefined
       
       /**
         * An array of resource URIs identifying the target resources for which the token should be requested.
         */
-      var resources: js.Array[String] = js.native
+      var resources: js.Array[String]
       
       /**
         * A function that is called if the token request succeeds, with the resulting token.
         */
-      var successCallback: js.UndefOr[js.Function1[/* token */ String, Unit]] = js.native
+      var successCallback: js.UndefOr[js.Function1[/* token */ String, Unit]] = js.undefined
     }
     object AuthTokenRequest {
       
@@ -482,33 +475,32 @@ object microsoftTeams {
       }
     }
     
-    @js.native
     trait AuthenticateParameters extends StObject {
       
       /**
         * A function that is called if the authentication fails, with the reason for the failure returned from the authentication pop-up.
         */
-      var failureCallback: js.UndefOr[js.Function1[/* reason */ js.UndefOr[String], Unit]] = js.native
+      var failureCallback: js.UndefOr[js.Function1[/* reason */ js.UndefOr[String], Unit]] = js.undefined
       
       /**
         * The preferred height for the pop-up. This value can be ignored if outside the acceptable bounds.
         */
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
       /**
         * A function that is called if the authentication succeeds, with the result returned from the authentication pop-up.
         */
-      var successCallback: js.UndefOr[js.Function1[/* result */ js.UndefOr[String], Unit]] = js.native
+      var successCallback: js.UndefOr[js.Function1[/* result */ js.UndefOr[String], Unit]] = js.undefined
       
       /**
         * The URL for the authentication pop-up.
         */
-      var url: String = js.native
+      var url: String
       
       /**
         * The preferred width for the pop-up. This value can be ignored if outside the acceptable bounds.
         */
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object AuthenticateParameters {
       
@@ -550,19 +542,18 @@ object microsoftTeams {
       }
     }
     
-    @js.native
     trait UserProfile extends StObject {
       
       /**
         * Identifies how the subject of the token was authenticated.
         */
-      var amr: js.Array[String] = js.native
+      var amr: js.Array[String]
       
       /**
         * The intended recipient of the token. The application that receives the token must verify that the audience
         * value is correct and reject any tokens intended for a different audience.
         */
-      var aud: String = js.native
+      var aud: String
       
       /**
         * Defines the time interval within which a token is valid. The service that validates the token should verify
@@ -570,37 +561,37 @@ object microsoftTeams {
         * allow for up to five minutes beyond the token lifetime to account for any differences in clock time ("time
         * skew") between Azure AD and the service.
         */
-      var exp: Double = js.native
+      var exp: Double
       
       /**
         * Provides the last name, surname, or family name of the user as defined in the Azure AD user object.
         */
-      var family_name: String = js.native
+      var family_name: String
       
       /**
         * Provides the first or "given" name of the user, as set on the Azure AD user object.
         */
-      var given_name: String = js.native
+      var given_name: String
       
       /**
         * Stores the time at which the token was issued. It is often used to measure token freshness.
         */
-      var iat: Double = js.native
+      var iat: Double
       
       /**
         * Identifies the security token service (STS) that constructs and returns the token. In the tokens that Azure AD
         * returns, the issuer is sts.windows.net. The GUID in the issuer claim value is the tenant ID of the Azure AD
         * directory. The tenant ID is an immutable and reliable identifier of the directory.
         */
-      var iss: String = js.native
+      var iss: String
       
-      var nbf: Double = js.native
+      var nbf: Double
       
       /**
         * Contains a unique identifier of an object in Azure AD. This value is immutable and cannot be reassigned or
         * reused. Use the object ID to identify an object in queries to Azure AD.
         */
-      var oid: String = js.native
+      var oid: String
       
       /**
         * Identifies the principal about which the token asserts information, such as the user of an application.
@@ -608,30 +599,30 @@ object microsoftTeams {
         * checks safely. Because the subject is always present in the tokens the Azure AD issues, we recommended
         * using this value in a general-purpose authorization system.
         */
-      var sub: String = js.native
+      var sub: String
       
       /**
         * An immutable, non-reusable identifier that identifies the directory tenant that issued the token. You can
         * use this value to access tenant-specific directory resources in a multitenant application. For example,
         * you can use this value to identify the tenant in a call to the Graph API.
         */
-      var tid: String = js.native
+      var tid: String
       
       /**
         * Provides a human-readable value that identifies the subject of the token. This value is not guaranteed to
         * be unique within a tenant and is designed to be used only for display purposes.
         */
-      var unique_name: String = js.native
+      var unique_name: String
       
       /**
         * Stores the user name of the user principal.
         */
-      var upn: String = js.native
+      var upn: String
       
       /**
         * Stores the version number of the token.
         */
-      var ver: String = js.native
+      var ver: String
     }
     object UserProfile {
       
@@ -706,18 +697,17 @@ object microsoftTeams {
       }
     }
     
-    @js.native
     trait UserRequest extends StObject {
       
       /**
         * A function that is called if the token request fails, with the reason for the failure.
         */
-      var failureCallback: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.native
+      var failureCallback: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.undefined
       
       /**
         * A function that is called if the token request succeeds, with the resulting token.
         */
-      var successCallback: js.UndefOr[js.Function1[/* user */ UserProfile, Unit]] = js.native
+      var successCallback: js.UndefOr[js.Function1[/* user */ UserProfile, Unit]] = js.undefined
     }
     object UserRequest {
       
@@ -783,34 +773,33 @@ object microsoftTeams {
       def notifySuccess(): Unit = js.native
     }
     
-    @js.native
     trait Settings extends StObject {
       
       /**
         * Sets the URL to use for the content of this instance.
         */
-      var contentUrl: String = js.native
+      var contentUrl: String
       
       /**
         * The developer-defined unique ID for the entity to which this content points.
         */
-      var entityId: String = js.native
+      var entityId: String
       
       /**
         * Sets the URL for the removal configuration experience.
         */
-      var removeUrl: js.UndefOr[String] = js.native
+      var removeUrl: js.UndefOr[String] = js.undefined
       
       /**
         * A suggested display name for the new content.
         * In the settings for an existing instance being updated, this call has no effect.
         */
-      var suggestedDisplayName: js.UndefOr[String] = js.native
+      var suggestedDisplayName: js.UndefOr[String] = js.undefined
       
       /**
         * Sets the URL to use for the external link to view the underlying resource in a browser.
         */
-      var websiteUrl: js.UndefOr[String] = js.native
+      var websiteUrl: js.UndefOr[String] = js.undefined
     }
     object Settings {
       

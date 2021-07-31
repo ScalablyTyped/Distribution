@@ -6,73 +6,73 @@ import typings.tuyaPanelKit.anon.Value2x
 import typings.tuyaPanelKit.themeMod.StopsProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ComposeProps extends GestureProps {
+trait ComposeProps
+  extends StObject
+     with GestureProps {
   
-  var andDegree1: js.UndefOr[Double] = js.native
+  var andDegree1: js.UndefOr[Double] = js.undefined
   
-  var backColor: js.UndefOr[String] = js.native
+  var backColor: js.UndefOr[String] = js.undefined
   
-  var backStrokeOpacity: js.UndefOr[Double] = js.native
+  var backStrokeOpacity: js.UndefOr[Double] = js.undefined
   
-  var endColor: js.UndefOr[String] = js.native
+  var endColor: js.UndefOr[String] = js.undefined
   
-  var foreColor: js.UndefOr[String | js.Array[StopsProps] | StringDictionary[String]] = js.native
+  var foreColor: js.UndefOr[String | js.Array[StopsProps] | StringDictionary[String]] = js.undefined
   
-  var foreStrokeOpacity: js.UndefOr[Double] = js.native
+  var foreStrokeOpacity: js.UndefOr[Double] = js.undefined
   
-  var max1: js.UndefOr[Double] = js.native
+  var max1: js.UndefOr[Double] = js.undefined
   
-  var max2: js.UndefOr[Double] = js.native
+  var max2: js.UndefOr[Double] = js.undefined
   
-  var min1: js.UndefOr[Double] = js.native
+  var min1: js.UndefOr[Double] = js.undefined
   
-  var min2: js.UndefOr[Double] = js.native
+  var min2: js.UndefOr[Double] = js.undefined
   
-  var needCircle1: js.UndefOr[Boolean] = js.native
+  var needCircle1: js.UndefOr[Boolean] = js.undefined
   
-  var needCircle2: js.UndefOr[Boolean] = js.native
+  var needCircle2: js.UndefOr[Boolean] = js.undefined
   
-  var onSlidingComplete: js.UndefOr[js.Function1[/* argus */ Value2x, Unit]] = js.native
+  var onSlidingComplete: js.UndefOr[js.Function1[/* argus */ Value2x, Unit]] = js.undefined
   
-  var onValueChange: js.UndefOr[js.Function1[/* argus */ Value1, Unit]] = js.native
+  var onValueChange: js.UndefOr[js.Function1[/* argus */ Value1, Unit]] = js.undefined
   
-  var reduceDegree2: js.UndefOr[Double] = js.native
+  var reduceDegree2: js.UndefOr[Double] = js.undefined
   
-  var scaleHeight1: js.UndefOr[Double] = js.native
+  var scaleHeight1: js.UndefOr[Double] = js.undefined
   
-  var scaleHeight2: js.UndefOr[Double] = js.native
+  var scaleHeight2: js.UndefOr[Double] = js.undefined
   
-  var startColor: js.UndefOr[String] = js.native
+  var startColor: js.UndefOr[String] = js.undefined
   
-  var startDegree1: js.UndefOr[Double] = js.native
+  var startDegree1: js.UndefOr[Double] = js.undefined
   
-  var startDegree2: js.UndefOr[Double] = js.native
+  var startDegree2: js.UndefOr[Double] = js.undefined
   
-  var stepValue: js.UndefOr[Double] = js.native
+  var stepValue: js.UndefOr[Double] = js.undefined
   
-  var thumbFill: js.UndefOr[String] = js.native
+  var thumbFill: js.UndefOr[String] = js.undefined
   
-  var thumbFill2: js.UndefOr[String] = js.native
+  var thumbFill2: js.UndefOr[String] = js.undefined
   
-  var thumbRadius1: js.UndefOr[Double] = js.native
+  var thumbRadius1: js.UndefOr[Double] = js.undefined
   
-  var thumbRadius2: js.UndefOr[Double] = js.native
+  var thumbRadius2: js.UndefOr[Double] = js.undefined
   
-  var thumbStroke: js.UndefOr[String] = js.native
+  var thumbStroke: js.UndefOr[String] = js.undefined
   
-  var thumbStroke2: js.UndefOr[String] = js.native
+  var thumbStroke2: js.UndefOr[String] = js.undefined
   
-  var thumbStrokeWidth: js.UndefOr[Double] = js.native
+  var thumbStrokeWidth: js.UndefOr[Double] = js.undefined
   
-  var thumbStrokeWidth2: js.UndefOr[Double] = js.native
+  var thumbStrokeWidth2: js.UndefOr[Double] = js.undefined
   
-  var value1: js.UndefOr[Double] = js.native
+  var value1: js.UndefOr[Double] = js.undefined
   
-  var value2: js.UndefOr[Double] = js.native
+  var value2: js.UndefOr[Double] = js.undefined
 }
 object ComposeProps {
   

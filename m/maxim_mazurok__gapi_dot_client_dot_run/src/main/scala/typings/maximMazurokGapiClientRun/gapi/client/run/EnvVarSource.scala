@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvVarSource extends StObject {
   
   /** (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Selects a key of a ConfigMap. */
-  var configMapKeyRef: js.UndefOr[ConfigMapKeySelector] = js.native
+  var configMapKeyRef: js.UndefOr[ConfigMapKeySelector] = js.undefined
   
   /** (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Selects a key of a secret in the pod's namespace */
-  var secretKeyRef: js.UndefOr[SecretKeySelector] = js.native
+  var secretKeyRef: js.UndefOr[SecretKeySelector] = js.undefined
 }
 object EnvVarSource {
   

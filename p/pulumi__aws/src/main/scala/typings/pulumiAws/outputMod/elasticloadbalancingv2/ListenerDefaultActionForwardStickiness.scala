@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.elasticloadbalancingv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenerDefaultActionForwardStickiness extends StObject {
   
   /**
     * The time period, in seconds, during which requests from a client should be routed to the same target group. The range is 1-604800 seconds (7 days).
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * Indicates whether target group stickiness is enabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object ListenerDefaultActionForwardStickiness {
   

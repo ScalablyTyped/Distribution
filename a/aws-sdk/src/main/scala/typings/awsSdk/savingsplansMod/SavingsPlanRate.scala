@@ -2,51 +2,49 @@ package typings.awsSdk.savingsplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingsPlanRate extends StObject {
   
   /**
     * The currency.
     */
-  var currency: js.UndefOr[CurrencyCode] = js.native
+  var currency: js.UndefOr[CurrencyCode] = js.undefined
   
   /**
     * The specific AWS operation for the line item in the billing report.
     */
-  var operation: js.UndefOr[SavingsPlanRateOperation] = js.native
+  var operation: js.UndefOr[SavingsPlanRateOperation] = js.undefined
   
   /**
     * The product type.
     */
-  var productType: js.UndefOr[SavingsPlanProductType] = js.native
+  var productType: js.UndefOr[SavingsPlanProductType] = js.undefined
   
   /**
     * The properties.
     */
-  var properties: js.UndefOr[SavingsPlanRatePropertyList] = js.native
+  var properties: js.UndefOr[SavingsPlanRatePropertyList] = js.undefined
   
   /**
     * The rate.
     */
-  var rate: js.UndefOr[Amount] = js.native
+  var rate: js.UndefOr[Amount] = js.undefined
   
   /**
     * The service.
     */
-  var serviceCode: js.UndefOr[SavingsPlanRateServiceCode] = js.native
+  var serviceCode: js.UndefOr[SavingsPlanRateServiceCode] = js.undefined
   
   /**
     * The unit.
     */
-  var unit: js.UndefOr[SavingsPlanRateUnit] = js.native
+  var unit: js.UndefOr[SavingsPlanRateUnit] = js.undefined
   
   /**
     * The usage details of the line item in the billing report.
     */
-  var usageType: js.UndefOr[SavingsPlanRateUsageType] = js.native
+  var usageType: js.UndefOr[SavingsPlanRateUsageType] = js.undefined
 }
 object SavingsPlanRate {
   

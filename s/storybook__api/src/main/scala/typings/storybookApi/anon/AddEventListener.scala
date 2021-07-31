@@ -3,21 +3,19 @@ package typings.storybookApi.anon
 import typings.storybookApi.shortcutsMod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddEventListener extends StObject {
   
-  def addEventListener(): Unit = js.native
+  def addEventListener(): Unit
   
-  def dispatchEvent(event: Event): Boolean = js.native
+  def dispatchEvent(event: Event): Boolean
   
-  def getAttribute(attr: String): String | Null = js.native
+  def getAttribute(attr: String): String | Null
   
-  def removeEventListener(): Boolean = js.native
+  def removeEventListener(): Boolean
   
-  var tagName: String = js.native
+  var tagName: String
 }
 object AddEventListener {
   

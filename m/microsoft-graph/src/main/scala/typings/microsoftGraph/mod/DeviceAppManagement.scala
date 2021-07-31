@@ -2,38 +2,38 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceAppManagement extends Entity {
+trait DeviceAppManagement
+  extends StObject
+     with Entity {
   
   // Android managed app policies.
-  var androidManagedAppProtections: js.UndefOr[NullableOption[js.Array[AndroidManagedAppProtection]]] = js.native
+  var androidManagedAppProtections: js.UndefOr[NullableOption[js.Array[AndroidManagedAppProtection]]] = js.undefined
   
   // Default managed app policies.
-  var defaultManagedAppProtections: js.UndefOr[NullableOption[js.Array[DefaultManagedAppProtection]]] = js.native
+  var defaultManagedAppProtections: js.UndefOr[NullableOption[js.Array[DefaultManagedAppProtection]]] = js.undefined
   
   // iOS managed app policies.
-  var iosManagedAppProtections: js.UndefOr[NullableOption[js.Array[IosManagedAppProtection]]] = js.native
+  var iosManagedAppProtections: js.UndefOr[NullableOption[js.Array[IosManagedAppProtection]]] = js.undefined
   
   // Whether the account is enabled for syncing applications from the Microsoft Store for Business.
-  var isEnabledForMicrosoftStoreForBusiness: js.UndefOr[Boolean] = js.native
+  var isEnabledForMicrosoftStoreForBusiness: js.UndefOr[Boolean] = js.undefined
   
   // Managed app policies.
-  var managedAppPolicies: js.UndefOr[NullableOption[js.Array[ManagedAppPolicy]]] = js.native
+  var managedAppPolicies: js.UndefOr[NullableOption[js.Array[ManagedAppPolicy]]] = js.undefined
   
   // The managed app registrations.
-  var managedAppRegistrations: js.UndefOr[NullableOption[js.Array[ManagedAppRegistration]]] = js.native
+  var managedAppRegistrations: js.UndefOr[NullableOption[js.Array[ManagedAppRegistration]]] = js.undefined
   
   // The managed app statuses.
-  var managedAppStatuses: js.UndefOr[NullableOption[js.Array[ManagedAppStatus]]] = js.native
+  var managedAppStatuses: js.UndefOr[NullableOption[js.Array[ManagedAppStatus]]] = js.undefined
   
   // The Managed eBook.
-  var managedEBooks: js.UndefOr[NullableOption[js.Array[ManagedEBook]]] = js.native
+  var managedEBooks: js.UndefOr[NullableOption[js.Array[ManagedEBook]]] = js.undefined
   
   // Windows information protection for apps running on devices which are MDM enrolled.
-  var mdmWindowsInformationProtectionPolicies: js.UndefOr[NullableOption[js.Array[MdmWindowsInformationProtectionPolicy]]] = js.native
+  var mdmWindowsInformationProtectionPolicies: js.UndefOr[NullableOption[js.Array[MdmWindowsInformationProtectionPolicy]]] = js.undefined
   
   /**
     * The locale information used to sync applications from the Microsoft Store for Business. Cultures that are specific to a
@@ -42,31 +42,31 @@ trait DeviceAppManagement extends Entity {
     * &amp;lt;country/regioncode2&amp;gt; is an uppercase two-letter code derived from ISO 3166. For example, en-US for
     * English (United States) is a specific culture.
     */
-  var microsoftStoreForBusinessLanguage: js.UndefOr[NullableOption[String]] = js.native
+  var microsoftStoreForBusinessLanguage: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The last time an application sync from the Microsoft Store for Business was completed.
-  var microsoftStoreForBusinessLastCompletedApplicationSyncTime: js.UndefOr[String] = js.native
+  var microsoftStoreForBusinessLastCompletedApplicationSyncTime: js.UndefOr[String] = js.undefined
   
   // The last time the apps from the Microsoft Store for Business were synced successfully for the account.
-  var microsoftStoreForBusinessLastSuccessfulSyncDateTime: js.UndefOr[String] = js.native
+  var microsoftStoreForBusinessLastSuccessfulSyncDateTime: js.UndefOr[String] = js.undefined
   
   // The mobile app categories.
-  var mobileAppCategories: js.UndefOr[NullableOption[js.Array[MobileAppCategory]]] = js.native
+  var mobileAppCategories: js.UndefOr[NullableOption[js.Array[MobileAppCategory]]] = js.undefined
   
   // The Managed Device Mobile Application Configurations.
-  var mobileAppConfigurations: js.UndefOr[NullableOption[js.Array[ManagedDeviceMobileAppConfiguration]]] = js.native
+  var mobileAppConfigurations: js.UndefOr[NullableOption[js.Array[ManagedDeviceMobileAppConfiguration]]] = js.undefined
   
   // The mobile apps.
-  var mobileApps: js.UndefOr[NullableOption[js.Array[MobileApp]]] = js.native
+  var mobileApps: js.UndefOr[NullableOption[js.Array[MobileApp]]] = js.undefined
   
   // Targeted managed app configurations.
-  var targetedManagedAppConfigurations: js.UndefOr[NullableOption[js.Array[TargetedManagedAppConfiguration]]] = js.native
+  var targetedManagedAppConfigurations: js.UndefOr[NullableOption[js.Array[TargetedManagedAppConfiguration]]] = js.undefined
   
   // List of Vpp tokens for this organization.
-  var vppTokens: js.UndefOr[NullableOption[js.Array[VppToken]]] = js.native
+  var vppTokens: js.UndefOr[NullableOption[js.Array[VppToken]]] = js.undefined
   
   // Windows information protection for apps running on devices which are not MDM enrolled.
-  var windowsInformationProtectionPolicies: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionPolicy]]] = js.native
+  var windowsInformationProtectionPolicies: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionPolicy]]] = js.undefined
 }
 object DeviceAppManagement {
   

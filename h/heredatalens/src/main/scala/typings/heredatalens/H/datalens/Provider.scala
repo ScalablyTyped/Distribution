@@ -3,7 +3,6 @@ package typings.heredatalens.H.datalens
 import typings.heredatalens.H.datalens.Service.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Provider
-  extends typings.heremaps.H.map.provider.Provider {
+  extends StObject
+     with typings.heremaps.H.map.provider.Provider {
   
   /**
     * Retrieves the provider data.

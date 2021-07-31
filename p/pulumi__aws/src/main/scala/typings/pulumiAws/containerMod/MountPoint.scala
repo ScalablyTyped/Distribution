@@ -2,17 +2,15 @@ package typings.pulumiAws.containerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MountPoint extends StObject {
   
-  var containerPath: js.UndefOr[String] = js.native
+  var containerPath: js.UndefOr[String] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var sourceVolume: js.UndefOr[String] = js.native
+  var sourceVolume: js.UndefOr[String] = js.undefined
 }
 object MountPoint {
   

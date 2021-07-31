@@ -26,10 +26,13 @@ import typings.tensorflowTfjsLayers.trainingUtilsMod.ClassWeight
 import typings.tensorflowTfjsLayers.trainingUtilsMod.ClassWeightMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trainingMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "Functional")
   @js.native
@@ -539,21 +542,10 @@ object trainingMod {
       ] = js.native
     
     /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
-    /* protected */ def standardizeUserDataXY(
-      x: js.Array[Tensor[Rank]],
-      y: js.Array[Tensor[Rank]],
-      checkBatchAxis: js.UndefOr[scala.Nothing],
-      batchSize: Double
-    ): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+    /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], checkBatchAxis: Unit, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
-    /* protected */ def standardizeUserDataXY(
-      x: js.Array[Tensor[Rank]],
-      y: StringDictionary[Tensor[Rank]],
-      checkBatchAxis: js.UndefOr[scala.Nothing],
-      batchSize: Double
-    ): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(
       x: js.Array[Tensor[Rank]],
@@ -561,22 +553,17 @@ object trainingMod {
       checkBatchAxis: Boolean,
       batchSize: Double
     ): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
-    /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: Tensor[Rank]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(
       x: js.Array[Tensor[Rank]],
-      y: Tensor[Rank],
-      checkBatchAxis: js.UndefOr[scala.Nothing],
+      y: StringDictionary[Tensor[Rank]],
+      checkBatchAxis: Unit,
       batchSize: Double
     ): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+    /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: Tensor[Rank]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: Tensor[Rank], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: Tensor[Rank], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+    /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: Tensor[Rank], checkBatchAxis: Unit, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
-    /* protected */ def standardizeUserDataXY(
-      x: StringDictionary[Tensor[Rank]],
-      y: js.Array[Tensor[Rank]],
-      checkBatchAxis: js.UndefOr[scala.Nothing],
-      batchSize: Double
-    ): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(
       x: StringDictionary[Tensor[Rank]],
@@ -584,13 +571,13 @@ object trainingMod {
       checkBatchAxis: Boolean,
       batchSize: Double
     ): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
-    /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(
       x: StringDictionary[Tensor[Rank]],
-      y: StringDictionary[Tensor[Rank]],
-      checkBatchAxis: js.UndefOr[scala.Nothing],
+      y: js.Array[Tensor[Rank]],
+      checkBatchAxis: Unit,
       batchSize: Double
     ): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+    /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: StringDictionary[Tensor[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(
       x: StringDictionary[Tensor[Rank]],
@@ -598,37 +585,28 @@ object trainingMod {
       checkBatchAxis: Boolean,
       batchSize: Double
     ): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
-    /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: Tensor[Rank]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(
       x: StringDictionary[Tensor[Rank]],
-      y: Tensor[Rank],
-      checkBatchAxis: js.UndefOr[scala.Nothing],
+      y: StringDictionary[Tensor[Rank]],
+      checkBatchAxis: Unit,
       batchSize: Double
     ): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+    /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: Tensor[Rank]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: Tensor[Rank], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: Tensor[Rank], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+    /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: Tensor[Rank], checkBatchAxis: Unit, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: js.Array[Tensor[Rank]]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
-    /* protected */ def standardizeUserDataXY(
-      x: Tensor[Rank],
-      y: js.Array[Tensor[Rank]],
-      checkBatchAxis: js.UndefOr[scala.Nothing],
-      batchSize: Double
-    ): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: js.Array[Tensor[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: js.Array[Tensor[Rank]], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+    /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: js.Array[Tensor[Rank]], checkBatchAxis: Unit, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: StringDictionary[Tensor[Rank]]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
-    /* protected */ def standardizeUserDataXY(
-      x: Tensor[Rank],
-      y: StringDictionary[Tensor[Rank]],
-      checkBatchAxis: js.UndefOr[scala.Nothing],
-      batchSize: Double
-    ): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: StringDictionary[Tensor[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: StringDictionary[Tensor[Rank]], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+    /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: StringDictionary[Tensor[Rank]], checkBatchAxis: Unit, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: Tensor[Rank]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
-    /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: Tensor[Rank], checkBatchAxis: js.UndefOr[scala.Nothing], batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: Tensor[Rank], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: Tensor[Rank], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+    /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: Tensor[Rank], checkBatchAxis: Unit, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
     
     /**
       * Setter used for force stopping of LayersModel.fit() (i.e., training).
@@ -700,27 +678,27 @@ object trainingMod {
       * @doc {heading: 'Models', subheading: 'Classes'}
       */
     def summary(): Unit = js.native
-    def summary(
-      lineLength: js.UndefOr[scala.Nothing],
-      positions: js.UndefOr[scala.Nothing],
-      printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def summary(lineLength: js.UndefOr[scala.Nothing], positions: js.Array[Double]): Unit = js.native
-    def summary(
-      lineLength: js.UndefOr[scala.Nothing],
-      positions: js.Array[Double],
-      printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
-    ): Unit = js.native
     def summary(lineLength: Double): Unit = js.native
-    def summary(
-      lineLength: Double,
-      positions: js.UndefOr[scala.Nothing],
-      printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
-    ): Unit = js.native
     def summary(lineLength: Double, positions: js.Array[Double]): Unit = js.native
     def summary(
       lineLength: Double,
       positions: js.Array[Double],
+      printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+    ): Unit = js.native
+    def summary(
+      lineLength: Double,
+      positions: Unit,
+      printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+    ): Unit = js.native
+    def summary(lineLength: Unit, positions: js.Array[Double]): Unit = js.native
+    def summary(
+      lineLength: Unit,
+      positions: js.Array[Double],
+      printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+    ): Unit = js.native
+    def summary(
+      lineLength: Unit,
+      positions: Unit,
       printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
     ): Unit = js.native
     
@@ -789,227 +767,177 @@ object trainingMod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "checkArrayLengths")
-  @js.native
-  def checkArrayLengths(inputs: js.Array[Tensor[Rank]], targets: js.Array[Tensor[Rank]]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "checkArrayLengths")
-  @js.native
-  def checkArrayLengths(inputs: js.Array[Tensor[Rank]], targets: js.Array[Tensor[Rank]], weights: js.Array[Tensor[Rank]]): Unit = js.native
+  @scala.inline
+  def checkArrayLengths(inputs: js.Array[Tensor[Rank]], targets: js.Array[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkArrayLengths")(inputs.asInstanceOf[js.Any], targets.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def checkArrayLengths(inputs: js.Array[Tensor[Rank]], targets: js.Array[Tensor[Rank]], weights: js.Array[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkArrayLengths")(inputs.asInstanceOf[js.Any], targets.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "collectMetrics")
-  @js.native
-  def collectMetrics(metrics: String, outputNames: js.Array[String]): js.Array[js.Array[String | LossOrMetricFn]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "collectMetrics")
-  @js.native
-  def collectMetrics(metrics: js.Array[String | LossOrMetricFn], outputNames: js.Array[String]): js.Array[js.Array[String | LossOrMetricFn]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "collectMetrics")
-  @js.native
-  def collectMetrics(metrics: StringDictionary[String | LossOrMetricFn], outputNames: js.Array[String]): js.Array[js.Array[String | LossOrMetricFn]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "collectMetrics")
-  @js.native
-  def collectMetrics(metrics: LossOrMetricFn, outputNames: js.Array[String]): js.Array[js.Array[String | LossOrMetricFn]] = js.native
+  @scala.inline
+  def collectMetrics(metrics: String, outputNames: js.Array[String]): js.Array[js.Array[String | LossOrMetricFn]] = (^.asInstanceOf[js.Dynamic].applyDynamic("collectMetrics")(metrics.asInstanceOf[js.Any], outputNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[String | LossOrMetricFn]]]
+  @scala.inline
+  def collectMetrics(metrics: js.Array[String | LossOrMetricFn], outputNames: js.Array[String]): js.Array[js.Array[String | LossOrMetricFn]] = (^.asInstanceOf[js.Dynamic].applyDynamic("collectMetrics")(metrics.asInstanceOf[js.Any], outputNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[String | LossOrMetricFn]]]
+  @scala.inline
+  def collectMetrics(metrics: StringDictionary[String | LossOrMetricFn], outputNames: js.Array[String]): js.Array[js.Array[String | LossOrMetricFn]] = (^.asInstanceOf[js.Dynamic].applyDynamic("collectMetrics")(metrics.asInstanceOf[js.Any], outputNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[String | LossOrMetricFn]]]
+  @scala.inline
+  def collectMetrics(metrics: LossOrMetricFn, outputNames: js.Array[String]): js.Array[js.Array[String | LossOrMetricFn]] = (^.asInstanceOf[js.Dynamic].applyDynamic("collectMetrics")(metrics.asInstanceOf[js.Any], outputNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[String | LossOrMetricFn]]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "isDataArray")
-  @js.native
-  def isDataArray(x: js.Array[Tensor[Rank]]): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "isDataArray")
-  @js.native
-  def isDataArray(x: StringDictionary[Tensor[Rank]]): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "isDataArray")
-  @js.native
-  def isDataArray(x: Tensor[Rank]): Boolean = js.native
+  @scala.inline
+  def isDataArray(x: js.Array[Tensor[Rank]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataArray")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isDataArray(x: StringDictionary[Tensor[Rank]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataArray")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isDataArray(x: Tensor[Rank]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataArray")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "isDataDict")
-  @js.native
-  def isDataDict(x: js.Array[Tensor[Rank]]): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "isDataDict")
-  @js.native
-  def isDataDict(x: StringDictionary[Tensor[Rank]]): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "isDataDict")
-  @js.native
-  def isDataDict(x: Tensor[Rank]): Boolean = js.native
+  @scala.inline
+  def isDataDict(x: js.Array[Tensor[Rank]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataDict")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isDataDict(x: StringDictionary[Tensor[Rank]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataDict")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isDataDict(x: Tensor[Rank]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataDict")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "isDataTensor")
-  @js.native
-  def isDataTensor(x: js.Array[Tensor[Rank]]): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "isDataTensor")
-  @js.native
-  def isDataTensor(x: StringDictionary[js.Array[Tensor[Rank]] | Tensor[Rank]]): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "isDataTensor")
-  @js.native
-  def isDataTensor(x: Tensor[Rank]): Boolean = js.native
+  @scala.inline
+  def isDataTensor(x: js.Array[Tensor[Rank]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataTensor")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isDataTensor(x: StringDictionary[js.Array[Tensor[Rank]] | Tensor[Rank]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataTensor")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isDataTensor(x: Tensor[Rank]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataTensor")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(data: js.Array[Tensor[Rank]], names: js.Array[String]): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(
-    data: js.Array[Tensor[Rank]],
-    names: js.Array[String],
-    shapes: js.UndefOr[scala.Nothing],
-    checkBatchAxis: js.UndefOr[scala.Nothing],
-    exceptionPrefix: String
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(
-    data: js.Array[Tensor[Rank]],
-    names: js.Array[String],
-    shapes: js.UndefOr[scala.Nothing],
-    checkBatchAxis: Boolean
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(
-    data: js.Array[Tensor[Rank]],
-    names: js.Array[String],
-    shapes: js.UndefOr[scala.Nothing],
-    checkBatchAxis: Boolean,
-    exceptionPrefix: String
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(data: js.Array[Tensor[Rank]], names: js.Array[String], shapes: js.Array[Shape]): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(
-    data: js.Array[Tensor[Rank]],
-    names: js.Array[String],
-    shapes: js.Array[Shape],
-    checkBatchAxis: js.UndefOr[scala.Nothing],
-    exceptionPrefix: String
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
+  @scala.inline
+  def standardizeInputData(data: js.Array[Tensor[Rank]], names: js.Array[String]): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def standardizeInputData(data: js.Array[Tensor[Rank]], names: js.Array[String], shapes: js.Array[Shape]): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
   def standardizeInputData(
     data: js.Array[Tensor[Rank]],
     names: js.Array[String],
     shapes: js.Array[Shape],
     checkBatchAxis: Boolean
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
   def standardizeInputData(
     data: js.Array[Tensor[Rank]],
     names: js.Array[String],
     shapes: js.Array[Shape],
     checkBatchAxis: Boolean,
     exceptionPrefix: String
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(data: StringDictionary[Tensor[Rank]], names: js.Array[String]): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any], exceptionPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
   def standardizeInputData(
-    data: StringDictionary[Tensor[Rank]],
+    data: js.Array[Tensor[Rank]],
     names: js.Array[String],
-    shapes: js.UndefOr[scala.Nothing],
-    checkBatchAxis: js.UndefOr[scala.Nothing],
+    shapes: js.Array[Shape],
+    checkBatchAxis: Unit,
     exceptionPrefix: String
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any], exceptionPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def standardizeInputData(data: js.Array[Tensor[Rank]], names: js.Array[String], shapes: Unit, checkBatchAxis: Boolean): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
   def standardizeInputData(
-    data: StringDictionary[Tensor[Rank]],
+    data: js.Array[Tensor[Rank]],
     names: js.Array[String],
-    shapes: js.UndefOr[scala.Nothing],
-    checkBatchAxis: Boolean
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(
-    data: StringDictionary[Tensor[Rank]],
-    names: js.Array[String],
-    shapes: js.UndefOr[scala.Nothing],
+    shapes: Unit,
     checkBatchAxis: Boolean,
     exceptionPrefix: String
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(data: StringDictionary[Tensor[Rank]], names: js.Array[String], shapes: js.Array[Shape]): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any], exceptionPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
   def standardizeInputData(
-    data: StringDictionary[Tensor[Rank]],
+    data: js.Array[Tensor[Rank]],
     names: js.Array[String],
-    shapes: js.Array[Shape],
-    checkBatchAxis: js.UndefOr[scala.Nothing],
+    shapes: Unit,
+    checkBatchAxis: Unit,
     exceptionPrefix: String
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any], exceptionPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def standardizeInputData(data: StringDictionary[Tensor[Rank]], names: js.Array[String]): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def standardizeInputData(data: StringDictionary[Tensor[Rank]], names: js.Array[String], shapes: js.Array[Shape]): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
   def standardizeInputData(
     data: StringDictionary[Tensor[Rank]],
     names: js.Array[String],
     shapes: js.Array[Shape],
     checkBatchAxis: Boolean
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
   def standardizeInputData(
     data: StringDictionary[Tensor[Rank]],
     names: js.Array[String],
     shapes: js.Array[Shape],
     checkBatchAxis: Boolean,
     exceptionPrefix: String
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(data: Tensor[Rank], names: js.Array[String]): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any], exceptionPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
   def standardizeInputData(
-    data: Tensor[Rank],
-    names: js.Array[String],
-    shapes: js.UndefOr[scala.Nothing],
-    checkBatchAxis: js.UndefOr[scala.Nothing],
-    exceptionPrefix: String
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(
-    data: Tensor[Rank],
-    names: js.Array[String],
-    shapes: js.UndefOr[scala.Nothing],
-    checkBatchAxis: Boolean
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(
-    data: Tensor[Rank],
-    names: js.Array[String],
-    shapes: js.UndefOr[scala.Nothing],
-    checkBatchAxis: Boolean,
-    exceptionPrefix: String
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(data: Tensor[Rank], names: js.Array[String], shapes: js.Array[Shape]): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(
-    data: Tensor[Rank],
+    data: StringDictionary[Tensor[Rank]],
     names: js.Array[String],
     shapes: js.Array[Shape],
-    checkBatchAxis: js.UndefOr[scala.Nothing],
+    checkBatchAxis: Unit,
     exceptionPrefix: String
-  ): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
-  def standardizeInputData(data: Tensor[Rank], names: js.Array[String], shapes: js.Array[Shape], checkBatchAxis: Boolean): js.Array[Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "standardizeInputData")
-  @js.native
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any], exceptionPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def standardizeInputData(
+    data: StringDictionary[Tensor[Rank]],
+    names: js.Array[String],
+    shapes: Unit,
+    checkBatchAxis: Boolean
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def standardizeInputData(
+    data: StringDictionary[Tensor[Rank]],
+    names: js.Array[String],
+    shapes: Unit,
+    checkBatchAxis: Boolean,
+    exceptionPrefix: String
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any], exceptionPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def standardizeInputData(
+    data: StringDictionary[Tensor[Rank]],
+    names: js.Array[String],
+    shapes: Unit,
+    checkBatchAxis: Unit,
+    exceptionPrefix: String
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any], exceptionPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def standardizeInputData(data: Tensor[Rank], names: js.Array[String]): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def standardizeInputData(data: Tensor[Rank], names: js.Array[String], shapes: js.Array[Shape]): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def standardizeInputData(data: Tensor[Rank], names: js.Array[String], shapes: js.Array[Shape], checkBatchAxis: Boolean): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
   def standardizeInputData(
     data: Tensor[Rank],
     names: js.Array[String],
     shapes: js.Array[Shape],
     checkBatchAxis: Boolean,
     exceptionPrefix: String
-  ): js.Array[Tensor[Rank]] = js.native
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any], exceptionPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def standardizeInputData(
+    data: Tensor[Rank],
+    names: js.Array[String],
+    shapes: js.Array[Shape],
+    checkBatchAxis: Unit,
+    exceptionPrefix: String
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any], exceptionPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def standardizeInputData(data: Tensor[Rank], names: js.Array[String], shapes: Unit, checkBatchAxis: Boolean): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def standardizeInputData(
+    data: Tensor[Rank],
+    names: js.Array[String],
+    shapes: Unit,
+    checkBatchAxis: Boolean,
+    exceptionPrefix: String
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any], exceptionPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
+  @scala.inline
+  def standardizeInputData(
+    data: Tensor[Rank],
+    names: js.Array[String],
+    shapes: Unit,
+    checkBatchAxis: Unit,
+    exceptionPrefix: String
+  ): js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeInputData")(data.asInstanceOf[js.Any], names.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any], checkBatchAxis.asInstanceOf[js.Any], exceptionPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Tensor[Rank]]]
   
-  @js.native
   trait ModelCompileArgs extends StObject {
     
     /**
@@ -1019,7 +947,7 @@ object trainingMod {
       * The loss value that will be minimized by the model will then be the sum
       * of all individual losses.
       */
-    var loss: String | (js.Array[LossOrMetricFn | String]) | (StringDictionary[LossOrMetricFn | String]) | LossOrMetricFn = js.native
+    var loss: String | (js.Array[LossOrMetricFn | String]) | (StringDictionary[LossOrMetricFn | String]) | LossOrMetricFn
     
     /**
       * List of metrics to be evaluated by the model during training and testing.
@@ -1029,12 +957,12 @@ object trainingMod {
       */
     var metrics: js.UndefOr[
         String | LossOrMetricFn | (js.Array[String | LossOrMetricFn]) | (StringDictionary[String | LossOrMetricFn])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * An instance of `tf.train.Optimizer` or a string name for an Optimizer.
       */
-    var optimizer: String | Optimizer = js.native
+    var optimizer: String | Optimizer
   }
   object ModelCompileArgs {
     
@@ -1080,31 +1008,30 @@ object trainingMod {
     }
   }
   
-  @js.native
   trait ModelEvaluateArgs extends StObject {
     
     /**
       * Batch size (Integer). If unspecified, it will default to 32.
       */
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Tensor of weights to weight the contribution of different samples to the
       * loss and metrics.
       */
-    var sampleWeight: js.UndefOr[Tensor[Rank]] = js.native
+    var sampleWeight: js.UndefOr[Tensor[Rank]] = js.undefined
     
     /**
       * integer: total number of steps (batches of samples)
       * before declaring the evaluation round finished. Ignored with the default
       * value of `undefined`.
       */
-    var steps: js.UndefOr[Double] = js.native
+    var steps: js.UndefOr[Double] = js.undefined
     
     /**
       * Verbosity mode.
       */
-    var verbose: js.UndefOr[ModelLoggingVerbosity] = js.native
+    var verbose: js.UndefOr[ModelLoggingVerbosity] = js.undefined
   }
   object ModelEvaluateArgs {
     

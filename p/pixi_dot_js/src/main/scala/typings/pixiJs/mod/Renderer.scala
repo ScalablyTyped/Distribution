@@ -3,7 +3,6 @@ package typings.pixiJs.mod
 import typings.pixiJs.anon.BackgroundColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,10 +20,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "Renderer")
 @js.native
 class Renderer ()
-  extends typings.pixiJs.PIXI.Renderer {
+  extends StObject
+     with typings.pixiJs.PIXI.Renderer {
   def this(options: BackgroundColor) = this()
 }
 object Renderer {
+  
+  @JSImport("pixi.js", "Renderer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Adds a plugin to the renderer.
@@ -34,7 +38,6 @@ object Renderer {
     * @param {Function} ctor - The constructor function or class for the plugin.
     */
   /* static member */
-  @JSImport("pixi.js", "Renderer.registerPlugin")
-  @js.native
-  def registerPlugin(pluginName: String, ctor: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  @scala.inline
+  def registerPlugin(pluginName: String, ctor: js.Function1[/* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(pluginName.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

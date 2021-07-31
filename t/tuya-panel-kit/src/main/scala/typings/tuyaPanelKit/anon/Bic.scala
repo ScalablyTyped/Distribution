@@ -3,15 +3,13 @@ package typings.tuyaPanelKit.anon
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bic extends StObject {
   
-  var bic: js.Array[Code] = js.native
+  var bic: js.Array[Code]
   
-  var fun: js.UndefOr[Record[String, _]] = js.native
+  var fun: js.UndefOr[Record[String, js.Any]] = js.undefined
 }
 object Bic {
   
@@ -31,7 +29,7 @@ object Bic {
     def setBicVarargs(value: Code*): Self = StObject.set(x, "bic", js.Array(value :_*))
     
     @scala.inline
-    def setFun(value: Record[String, _]): Self = StObject.set(x, "fun", value.asInstanceOf[js.Any])
+    def setFun(value: Record[String, js.Any]): Self = StObject.set(x, "fun", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFunUndefined: Self = StObject.set(x, "fun", js.undefined)

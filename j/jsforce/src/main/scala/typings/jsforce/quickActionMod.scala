@@ -4,7 +4,6 @@ import typings.jsforce.connectionMod.Callback
 import typings.jsforce.recordMod.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object quickActionMod {
@@ -14,15 +13,15 @@ object quickActionMod {
   class QuickAction () extends StObject {
     
     /** Retrieve default field values in the action */
-    def defaultValues(): js.Promise[Record[_]] = js.native
-    def defaultValues(callback: Callback[Record[_]]): js.Promise[Record[_]] = js.native
+    def defaultValues(): js.Promise[Record[js.Any]] = js.native
+    def defaultValues(callback: Callback[Record[js.Any]]): js.Promise[Record[js.Any]] = js.native
     /**
       * Retrieve default field values in the action for the given record
       * @param contextId Id of record
       * @param callback Callback function
       */
-    def defaultValues(contextId: String): js.Promise[Record[_]] = js.native
-    def defaultValues(contextId: String, callback: Callback[Record[_]]): js.Promise[Record[_]] = js.native
+    def defaultValues(contextId: String): js.Promise[Record[js.Any]] = js.native
+    def defaultValues(contextId: String, callback: Callback[Record[js.Any]]): js.Promise[Record[js.Any]] = js.native
     
     /**
       * Describe the action's information (including layout, etc.)
@@ -41,23 +40,22 @@ object quickActionMod {
     def execute[T](contextId: String, record: Record[T], callback: Callback[QuickActionResult]): js.Promise[QuickActionResult] = js.native
   }
   
-  @js.native
   trait QuickActionDescribeInfo extends StObject {
     
     /** Object type used for the action */
-    var contextSobjectType: String = js.native
+    var contextSobjectType: String
     
     /** Layout sections that comprise an action */
-    var layout: js.Object = js.native
+    var layout: js.Object
     
     /** Field name in the target object which refers parent(context) object record ID */
-    var targetParentField: String = js.native
+    var targetParentField: String
     
     /** Record type of the targeted record */
-    var targetRecordTypeId: String = js.native
+    var targetRecordTypeId: String
     
     /** Object type of the action to target */
-    var targetSobjectType: String = js.native
+    var targetSobjectType: String
   }
   object QuickActionDescribeInfo {
     
@@ -93,20 +91,19 @@ object quickActionMod {
     }
   }
   
-  @js.native
   trait QuickActionInfo extends StObject {
     
     /** Label of the action */
-    var label: String = js.native
+    var label: String
     
     /** Name of the action */
-    var name: String = js.native
+    var name: String
     
     /** Type of the action (e.g. Create, Update, Post, LogACall) */
-    var `type`: String = js.native
+    var `type`: String
     
     /** Endpoint URL information of the action */
-    var urls: js.Object = js.native
+    var urls: js.Object
   }
   object QuickActionInfo {
     

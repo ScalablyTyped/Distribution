@@ -2,21 +2,19 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFailuresForLicenseConfigurationOperationsResponse extends StObject {
   
   /**
     * License configuration operations that failed.
     */
-  var LicenseOperationFailureList: js.UndefOr[typings.awsSdk.licensemanagerMod.LicenseOperationFailureList] = js.native
+  var LicenseOperationFailureList: js.UndefOr[typings.awsSdk.licensemanagerMod.LicenseOperationFailureList] = js.undefined
   
   /**
     * Token for the next set of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListFailuresForLicenseConfigurationOperationsResponse {
   

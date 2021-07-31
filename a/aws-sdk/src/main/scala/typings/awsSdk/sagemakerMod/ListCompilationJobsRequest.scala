@@ -2,61 +2,59 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCompilationJobsRequest extends StObject {
   
   /**
     * A filter that returns the model compilation jobs that were created after a specified time. 
     */
-  var CreationTimeAfter: js.UndefOr[CreationTime] = js.native
+  var CreationTimeAfter: js.UndefOr[CreationTime] = js.undefined
   
   /**
     * A filter that returns the model compilation jobs that were created before a specified time.
     */
-  var CreationTimeBefore: js.UndefOr[CreationTime] = js.native
+  var CreationTimeBefore: js.UndefOr[CreationTime] = js.undefined
   
   /**
     * A filter that returns the model compilation jobs that were modified after a specified time.
     */
-  var LastModifiedTimeAfter: js.UndefOr[LastModifiedTime] = js.native
+  var LastModifiedTimeAfter: js.UndefOr[LastModifiedTime] = js.undefined
   
   /**
     * A filter that returns the model compilation jobs that were modified before a specified time.
     */
-  var LastModifiedTimeBefore: js.UndefOr[LastModifiedTime] = js.native
+  var LastModifiedTimeBefore: js.UndefOr[LastModifiedTime] = js.undefined
   
   /**
     * The maximum number of model compilation jobs to return in the response.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * A filter that returns the model compilation jobs whose name contains a specified string.
     */
-  var NameContains: js.UndefOr[typings.awsSdk.sagemakerMod.NameContains] = js.native
+  var NameContains: js.UndefOr[typings.awsSdk.sagemakerMod.NameContains] = js.undefined
   
   /**
     * If the result of the previous ListCompilationJobs request was truncated, the response includes a NextToken. To retrieve the next set of model compilation jobs, use the token in the next request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * The field by which to sort results. The default is CreationTime.
     */
-  var SortBy: js.UndefOr[ListCompilationJobsSortBy] = js.native
+  var SortBy: js.UndefOr[ListCompilationJobsSortBy] = js.undefined
   
   /**
     * The sort order for results. The default is Ascending.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.undefined
   
   /**
     * A filter that retrieves model compilation jobs with a specific DescribeCompilationJobResponse$CompilationJobStatus status.
     */
-  var StatusEquals: js.UndefOr[CompilationJobStatus] = js.native
+  var StatusEquals: js.UndefOr[CompilationJobStatus] = js.undefined
 }
 object ListCompilationJobsRequest {
   

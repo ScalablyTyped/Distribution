@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeContentUpdate extends StObject {
   
   /**
     * Describes an update to the location of code for an application.
     */
-  var S3ContentLocationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.S3ContentLocationUpdate] = js.native
+  var S3ContentLocationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.S3ContentLocationUpdate] = js.undefined
   
   /**
     * Describes an update to the text code for an application.
     */
-  var TextContentUpdate: js.UndefOr[TextContent] = js.native
+  var TextContentUpdate: js.UndefOr[TextContent] = js.undefined
   
   /**
     * Describes an update to the zipped code for an application.
     */
-  var ZipFileContentUpdate: js.UndefOr[ZipFileContent] = js.native
+  var ZipFileContentUpdate: js.UndefOr[ZipFileContent] = js.undefined
 }
 object CodeContentUpdate {
   

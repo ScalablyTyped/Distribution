@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInboundCrossClusterSearchConnectionsResponse extends StObject {
   
   /**
     * Consists of list of InboundCrossClusterSearchConnection matching the specified filter criteria.
     */
-  var CrossClusterSearchConnections: js.UndefOr[InboundCrossClusterSearchConnections] = js.native
+  var CrossClusterSearchConnections: js.UndefOr[InboundCrossClusterSearchConnections] = js.undefined
   
   /**
     * If more results are available and NextToken is present, make the next request to the same API with the received NextToken to paginate the remaining results. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.esMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.esMod.NextToken] = js.undefined
 }
 object DescribeInboundCrossClusterSearchConnectionsResponse {
   

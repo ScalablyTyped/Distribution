@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Disambiguation information for the entity. */
-@js.native
 trait DisambiguationResult extends StObject {
   
   /** Link to the corresponding DBpedia resource. */
-  var dbpedia_resource: js.UndefOr[String] = js.native
+  var dbpedia_resource: js.UndefOr[String] = js.undefined
   
   /** Common entity name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Entity subtype information. */
-  var subtype: js.UndefOr[js.Array[String]] = js.native
+  var subtype: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DisambiguationResult {
   

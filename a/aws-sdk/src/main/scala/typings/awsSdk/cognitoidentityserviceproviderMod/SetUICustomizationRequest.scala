@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetUICustomizationRequest extends StObject {
   
   /**
     * The CSS values in the UI customization.
     */
-  var CSS: js.UndefOr[CSSType] = js.native
+  var CSS: js.UndefOr[CSSType] = js.undefined
   
   /**
     * The client ID for the client app.
     */
-  var ClientId: js.UndefOr[ClientIdType] = js.native
+  var ClientId: js.UndefOr[ClientIdType] = js.undefined
   
   /**
     * The uploaded logo image for the UI customization.
     */
-  var ImageFile: js.UndefOr[ImageFileType] = js.native
+  var ImageFile: js.UndefOr[ImageFileType] = js.undefined
   
   /**
     * The user pool ID for the user pool.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object SetUICustomizationRequest {
   

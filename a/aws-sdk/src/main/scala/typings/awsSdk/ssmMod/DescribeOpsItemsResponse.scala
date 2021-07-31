@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeOpsItemsResponse extends StObject {
   
   /**
     * The token for the next set of items to return. Use this token to get the next set of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * A list of OpsItems.
     */
-  var OpsItemSummaries: js.UndefOr[typings.awsSdk.ssmMod.OpsItemSummaries] = js.native
+  var OpsItemSummaries: js.UndefOr[typings.awsSdk.ssmMod.OpsItemSummaries] = js.undefined
 }
 object DescribeOpsItemsResponse {
   

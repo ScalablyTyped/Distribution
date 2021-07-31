@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RebootCacheClusterMessage extends StObject {
   
   /**
     * The cluster identifier. This parameter is stored as a lowercase string.
     */
-  var CacheClusterId: String = js.native
+  var CacheClusterId: String
   
   /**
     * A list of cache node IDs to reboot. A node ID is a numeric identifier (0001, 0002, etc.). To reboot an entire cluster, specify all of the cache node IDs.
     */
-  var CacheNodeIdsToReboot: CacheNodeIdsList = js.native
+  var CacheNodeIdsToReboot: CacheNodeIdsList
 }
 object RebootCacheClusterMessage {
   

@@ -3,21 +3,19 @@ package typings.wepy.anon
 import typings.wepy.wxEnhancedMod.LagLng
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationEnd extends StObject {
   
-  def animationEnd(): Unit = js.native
+  def animationEnd(): Unit
   
-  var autoRotate: Boolean = js.native
+  var autoRotate: Boolean
   
-  var destination: LagLng = js.native
+  var destination: LagLng
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var markerId: Double = js.native
+  var markerId: Double
 }
 object AnimationEnd {
   

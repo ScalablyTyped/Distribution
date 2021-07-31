@@ -3,29 +3,27 @@ package typings.irc
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Channel extends StObject {
     
-    var channel: Idlength = js.native
+    var channel: Idlength
     
-    var kicklength: Double = js.native
+    var kicklength: Double
     
-    var maxlist: js.Array[Double] = js.native
+    var maxlist: js.Array[Double]
     
-    var maxtargets: js.Array[String] = js.native
+    var maxtargets: js.Array[String]
     
-    var modes: Double = js.native
+    var modes: Double
     
-    var nicklength: Double = js.native
+    var nicklength: Double
     
-    var topiclength: Double = js.native
+    var topiclength: Double
     
-    var usermodes: String = js.native
+    var usermodes: String
   }
   object Channel {
     
@@ -79,18 +77,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Created extends StObject {
     
-    var created: String = js.native
+    var created: String
     
-    var key: String = js.native
+    var key: String
     
-    var mode: String = js.native
+    var mode: String
     
-    var serverName: String = js.native
+    var serverName: String
     
-    var users: StringDictionary[String] = js.native
+    var users: StringDictionary[String]
   }
   object Created {
     
@@ -120,18 +117,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Idlength extends StObject {
     
-    var idlength: js.Array[String] = js.native
+    var idlength: js.Array[String]
     
-    var length: Double = js.native
+    var length: Double
     
-    var limit: js.Array[String] = js.native
+    var limit: js.Array[String]
     
-    var modes: StringDictionary[String] = js.native
+    var modes: StringDictionary[String]
     
-    var types: String = js.native
+    var types: String
   }
   object Idlength {
     

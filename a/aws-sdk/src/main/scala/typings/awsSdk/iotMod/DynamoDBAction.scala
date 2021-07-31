@@ -2,61 +2,59 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynamoDBAction extends StObject {
   
   /**
     * The hash key name.
     */
-  var hashKeyField: HashKeyField = js.native
+  var hashKeyField: HashKeyField
   
   /**
     * The hash key type. Valid values are "STRING" or "NUMBER"
     */
-  var hashKeyType: js.UndefOr[DynamoKeyType] = js.native
+  var hashKeyType: js.UndefOr[DynamoKeyType] = js.undefined
   
   /**
     * The hash key value.
     */
-  var hashKeyValue: HashKeyValue = js.native
+  var hashKeyValue: HashKeyValue
   
   /**
     * The type of operation to be performed. This follows the substitution template, so it can be ${operation}, but the substitution must result in one of the following: INSERT, UPDATE, or DELETE.
     */
-  var operation: js.UndefOr[DynamoOperation] = js.native
+  var operation: js.UndefOr[DynamoOperation] = js.undefined
   
   /**
     * The action payload. This name can be customized.
     */
-  var payloadField: js.UndefOr[PayloadField] = js.native
+  var payloadField: js.UndefOr[PayloadField] = js.undefined
   
   /**
     * The range key name.
     */
-  var rangeKeyField: js.UndefOr[RangeKeyField] = js.native
+  var rangeKeyField: js.UndefOr[RangeKeyField] = js.undefined
   
   /**
     * The range key type. Valid values are "STRING" or "NUMBER"
     */
-  var rangeKeyType: js.UndefOr[DynamoKeyType] = js.native
+  var rangeKeyType: js.UndefOr[DynamoKeyType] = js.undefined
   
   /**
     * The range key value.
     */
-  var rangeKeyValue: js.UndefOr[RangeKeyValue] = js.native
+  var rangeKeyValue: js.UndefOr[RangeKeyValue] = js.undefined
   
   /**
     * The ARN of the IAM role that grants access to the DynamoDB table.
     */
-  var roleArn: AwsArn = js.native
+  var roleArn: AwsArn
   
   /**
     * The name of the DynamoDB table.
     */
-  var tableName: TableName = js.native
+  var tableName: TableName
 }
 object DynamoDBAction {
   

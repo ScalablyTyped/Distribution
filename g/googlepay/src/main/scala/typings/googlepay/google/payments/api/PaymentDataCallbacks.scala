@@ -2,7 +2,6 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,20 +24,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * }
   * ```
   */
-@js.native
 trait PaymentDataCallbacks extends StObject {
   
   /**
     * This method is called when a payment is authorized in the payment
     * sheet.
     */
-  var onPaymentAuthorized: js.UndefOr[PaymentAuthorizedHandler] = js.native
+  var onPaymentAuthorized: js.UndefOr[PaymentAuthorizedHandler] = js.undefined
   
   /**
     * This method handles payment data changes in the payment sheet such as
     * shipping address and shipping options.
     */
-  var onPaymentDataChanged: js.UndefOr[PaymentDataChangedHandler] = js.native
+  var onPaymentDataChanged: js.UndefOr[PaymentDataChangedHandler] = js.undefined
 }
 object PaymentDataCallbacks {
   

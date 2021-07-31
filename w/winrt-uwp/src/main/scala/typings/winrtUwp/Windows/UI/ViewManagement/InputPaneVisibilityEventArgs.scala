@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.UI.ViewManagement
 import typings.winrtUwp.Windows.Foundation.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the input pane Hiding and Showing events. */
-@js.native
 trait InputPaneVisibilityEventArgs extends StObject {
   
   /** Identifies whether the application has taken steps to ensure that the input pane doesn't cover the UI element that has focus. */
-  var ensuredFocusedElementInView: Boolean = js.native
+  var ensuredFocusedElementInView: Boolean
   
   /** Gets the region of the application's window that the input pane is covering. */
-  var occludedRect: Rect = js.native
+  var occludedRect: Rect
 }
 object InputPaneVisibilityEventArgs {
   

@@ -6,7 +6,6 @@ import typings.std.Error
 import typings.through.mod.ThroughStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -33,7 +32,8 @@ object mod extends Shortcut {
   
   @js.native
   trait ParseError
-    extends Error
+    extends StObject
+       with Error
        with Instantiable3[/* error */ js.Any, /* src */ String, /* file */ String, ParseError] {
     
     var annotated: String = js.native

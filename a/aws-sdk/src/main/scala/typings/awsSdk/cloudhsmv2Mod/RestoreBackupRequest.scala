@@ -2,16 +2,14 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreBackupRequest extends StObject {
   
   /**
     * The ID of the backup to be restored. To find the ID of a backup, use the DescribeBackups operation.
     */
-  var BackupId: typings.awsSdk.cloudhsmv2Mod.BackupId = js.native
+  var BackupId: typings.awsSdk.cloudhsmv2Mod.BackupId
 }
 object RestoreBackupRequest {
   

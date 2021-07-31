@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object descriptionMod {
@@ -17,14 +16,15 @@ object descriptionMod {
   
   type Description = Component[DescriptionProps, js.Any, js.Any]
   
-  @js.native
-  trait DescriptionProps extends ColProps {
+  trait DescriptionProps
+    extends StObject
+       with ColProps {
     
-    var column: js.UndefOr[Double] = js.native
+    var column: js.UndefOr[Double] = js.undefined
     
-    var key: js.UndefOr[String | Double] = js.native
+    var key: js.UndefOr[String | Double] = js.undefined
     
-    var term: js.UndefOr[ReactNode] = js.native
+    var term: js.UndefOr[ReactNode] = js.undefined
   }
   object DescriptionProps {
     

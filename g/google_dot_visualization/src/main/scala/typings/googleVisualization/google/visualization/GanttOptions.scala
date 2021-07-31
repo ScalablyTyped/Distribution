@@ -3,47 +3,45 @@ package typings.googleVisualization.google.visualization
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttOptions extends StObject {
   
-  var arrow: js.UndefOr[GanttArrow] = js.native
+  var arrow: js.UndefOr[GanttArrow] = js.undefined
   
-  var barCornerRadius: js.UndefOr[Double] = js.native
+  var barCornerRadius: js.UndefOr[Double] = js.undefined
   
-  var barHeight: js.UndefOr[Double] = js.native
+  var barHeight: js.UndefOr[Double] = js.undefined
   
-  var criticalPathEnabled: js.UndefOr[Boolean] = js.native
+  var criticalPathEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var criticalPathStyle: js.UndefOr[ChartStroke] = js.native
+  var criticalPathStyle: js.UndefOr[ChartStroke] = js.undefined
   
-  var defaultStartDate: js.UndefOr[Date | Double] = js.native
+  var defaultStartDate: js.UndefOr[Date | Double] = js.undefined
   
-  var innerGridDarkTrack: js.UndefOr[ChartFill] = js.native
+  var innerGridDarkTrack: js.UndefOr[ChartFill] = js.undefined
   
-  var innerGridHorizLine: js.UndefOr[ChartStroke] = js.native
+  var innerGridHorizLine: js.UndefOr[ChartStroke] = js.undefined
   
-  var innerGridTrack: js.UndefOr[ChartFill] = js.native
+  var innerGridTrack: js.UndefOr[ChartFill] = js.undefined
   
-  var labelMaxWidth: js.UndefOr[Double] = js.native
+  var labelMaxWidth: js.UndefOr[Double] = js.undefined
   
-  var labelStyle: js.UndefOr[LabelStyle] = js.native
+  var labelStyle: js.UndefOr[LabelStyle] = js.undefined
   
-  var percentEnabled: js.UndefOr[Boolean] = js.native
+  var percentEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var percentStyle: js.UndefOr[ChartFill] = js.native
+  var percentStyle: js.UndefOr[ChartFill] = js.undefined
   
-  var shadowEnabled: js.UndefOr[Boolean] = js.native
+  var shadowEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var shadowOffset: js.UndefOr[Double] = js.native
+  var shadowOffset: js.UndefOr[Double] = js.undefined
   
-  var shadowStyle: js.UndefOr[ChartFill] = js.native
+  var shadowStyle: js.UndefOr[ChartFill] = js.undefined
   
-  var sortTasks: js.UndefOr[Boolean] = js.native
+  var sortTasks: js.UndefOr[Boolean] = js.undefined
   
-  var trackHeight: js.UndefOr[Double] = js.native
+  var trackHeight: js.UndefOr[Double] = js.undefined
 }
 object GanttOptions {
   

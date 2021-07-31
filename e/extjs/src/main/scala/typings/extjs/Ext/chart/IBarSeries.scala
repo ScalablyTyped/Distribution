@@ -3,45 +3,45 @@ package typings.extjs.Ext.chart
 import typings.extjs.Ext.chart.series.ICartesian
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IBarSeries extends ICartesian {
+trait IBarSeries
+  extends StObject
+     with ICartesian {
   
   /** [Config Option] (Boolean) */
-  var column: js.UndefOr[Boolean] = js.native
+  var column: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Draws the series for the current chart  */
-  var drawSeries: js.UndefOr[js.Function0[Unit]] = js.native
+  var drawSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var groupGutter: js.UndefOr[Double] = js.native
+  var groupGutter: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var gutter: js.UndefOr[Double] = js.native
+  var gutter: js.UndefOr[Double] = js.undefined
   
   /** [Method] Highlight the given series item
     * @param item Object
     */
   @JSName("highlightItem")
-  var highlightItem_IBarSeries: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
+  var highlightItem_IBarSeries: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var stacked: js.UndefOr[Boolean] = js.native
+  var stacked: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var style: js.UndefOr[js.Any] = js.native
+  var style: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Un highlight any existing highlights */
   @JSName("unHighlightItem")
-  var unHighlightItem_IBarSeries: js.UndefOr[js.Function0[Unit]] = js.native
+  var unHighlightItem_IBarSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Number/Object) */
-  var xPadding: js.UndefOr[js.Any] = js.native
+  var xPadding: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number/Object) */
-  var yPadding: js.UndefOr[js.Any] = js.native
+  var yPadding: js.UndefOr[js.Any] = js.undefined
 }
 object IBarSeries {
   

@@ -7,7 +7,6 @@ import typings.reactNativeMaps.anon.NorthEast
 import typings.reactNativeMaps.anon.PartialCamera
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -35,9 +34,9 @@ trait MapView
   def coordinateForPoint(point: Point): js.Promise[LatLng] = js.native
   
   def fitToCoordinates(): Unit = js.native
-  def fitToCoordinates(coordinates: js.UndefOr[scala.Nothing], options: Animated): Unit = js.native
   def fitToCoordinates(coordinates: js.Array[LatLng]): Unit = js.native
   def fitToCoordinates(coordinates: js.Array[LatLng], options: Animated): Unit = js.native
+  def fitToCoordinates(coordinates: Unit, options: Animated): Unit = js.native
   
   def fitToElements(animated: Boolean): Unit = js.native
   

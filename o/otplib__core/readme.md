@@ -11,8 +11,8 @@ core method for otplib
 | Full name          | @otplib/core |
 | Keywords           | otplib-core |
 | # releases         | 6 |
-| # dependents       | 9 |
-| # downloads        | 637934 |
+| # dependents       | 11 |
+| # downloads        | 1552867 |
 | # stars            | 0 |
 
 ## Links

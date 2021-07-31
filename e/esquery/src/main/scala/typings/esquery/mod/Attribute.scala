@@ -9,32 +9,31 @@ import typings.esquery.esqueryStrings.LessthansignEqualssign
 import typings.esquery.esqueryStrings.attribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute
-  extends SubjectSelectorAtom
+  extends StObject
+     with SubjectSelectorAtom
      with Selector
      with SubjectSelector {
   
-  var name: String = js.native
+  var name: String
   
   var operator: js.UndefOr[
     Equalssign | ExclamationmarkEqualssign | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign
-  ] = js.native
+  ] = js.undefined
   
   @JSName("type")
-  var type_Attribute: attribute = js.native
+  var type_Attribute: attribute
   
-  var value: js.UndefOr[Literal | RegExpLiteral | Type] = js.native
+  var value: js.UndefOr[Literal | RegExpLiteral | Type] = js.undefined
 }
 object Attribute {
   
   @scala.inline
-  def apply(name: String, `type`: attribute): Attribute = {
+  def apply(name: String): Attribute = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("attribute")
     __obj.asInstanceOf[Attribute]
   }
   

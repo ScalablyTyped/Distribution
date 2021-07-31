@@ -2,28 +2,26 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationMetadata extends StObject {
   
   /** The name of the API method that initiated the operation. */
-  var apiMethodName: js.UndefOr[String] = js.native
+  var apiMethodName: js.UndefOr[String] = js.undefined
   
   /** Specifies if cancellation was requested for the operation. */
-  var cancelRequested: js.UndefOr[Boolean] = js.native
+  var cancelRequested: js.UndefOr[Boolean] = js.undefined
   
-  var counter: js.UndefOr[ProgressCounter] = js.native
+  var counter: js.UndefOr[ProgressCounter] = js.undefined
   
   /** The time at which the operation was created by the API. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The time at which execution was completed. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** A link to audit and error logs in the log viewer. Error logs are generated only by some operations, listed at [Viewing logs](/healthcare/docs/how-tos/logging). */
-  var logsUrl: js.UndefOr[String] = js.native
+  var logsUrl: js.UndefOr[String] = js.undefined
 }
 object OperationMetadata {
   

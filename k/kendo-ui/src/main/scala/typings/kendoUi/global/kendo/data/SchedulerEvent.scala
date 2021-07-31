@@ -8,13 +8,13 @@ import typings.kendoUi.kendo.data.DataSourceSchemaModelWithFieldsObject
 import typings.kendoUi.kendo.data.SchedulerEventData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.data.SchedulerEvent")
 @js.native
 class SchedulerEvent ()
-  extends typings.kendoUi.kendo.data.SchedulerEvent {
+  extends StObject
+     with typings.kendoUi.kendo.data.SchedulerEvent {
   def this(data: SchedulerEventData) = this()
 }
 object SchedulerEvent {
@@ -24,19 +24,23 @@ object SchedulerEvent {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.data.SchedulerEvent.define")
-  @js.native
-  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofSchedulerEvent with (Instantiable1[
+  @scala.inline
+  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofSchedulerEvent & (Instantiable1[
     /* data */ js.UndefOr[SchedulerEventData], 
     typings.kendoUi.kendo.data.SchedulerEvent
-  ]) = js.native
+  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofSchedulerEvent & (Instantiable1[
+    /* data */ js.UndefOr[SchedulerEventData], 
+    typings.kendoUi.kendo.data.SchedulerEvent
+  ])]
   /* static member */
-  @JSGlobal("kendo.data.SchedulerEvent.define")
-  @js.native
-  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofSchedulerEvent with (Instantiable1[
+  @scala.inline
+  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofSchedulerEvent & (Instantiable1[
     /* data */ js.UndefOr[SchedulerEventData], 
     typings.kendoUi.kendo.data.SchedulerEvent
-  ]) = js.native
+  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofSchedulerEvent & (Instantiable1[
+    /* data */ js.UndefOr[SchedulerEventData], 
+    typings.kendoUi.kendo.data.SchedulerEvent
+  ])]
   
   /* static member */
   @JSGlobal("kendo.data.SchedulerEvent.fields")

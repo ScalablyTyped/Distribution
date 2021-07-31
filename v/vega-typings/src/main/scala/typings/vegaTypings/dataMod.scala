@@ -15,19 +15,19 @@ import typings.vegaTypings.vegaTypingsStrings.json
 import typings.vegaTypings.vegaTypingsStrings.tsv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataMod {
   
-  @js.native
-  trait BaseData extends Data {
+  trait BaseData
+    extends StObject
+       with Data {
     
-    var name: String = js.native
+    var name: String
     
-    var on: js.UndefOr[js.Array[OnTrigger]] = js.native
+    var on: js.UndefOr[js.Array[OnTrigger]] = js.undefined
     
-    var transform: js.UndefOr[js.Array[Transforms]] = js.native
+    var transform: js.UndefOr[js.Array[Transforms]] = js.undefined
   }
   object BaseData {
     
@@ -103,7 +103,9 @@ object dataMod {
     - typings.vegaTypings.vegaTypingsStrings.date
     - typings.vegaTypings.vegaTypingsStrings.string
   */
-  trait DataType extends TypeInference
+  trait DataType
+    extends StObject
+       with TypeInference
   object DataType {
     
     @scala.inline
@@ -130,23 +132,24 @@ object dataMod {
   */
   type Format = _Format | FormatTopoJSON
   
-  @js.native
-  trait FormatDSV extends _Format {
+  trait FormatDSV
+    extends StObject
+       with _Format {
     
-    var delimiter: String = js.native
+    var delimiter: String
     
-    var header: js.UndefOr[js.Array[String]] = js.native
+    var header: js.UndefOr[js.Array[String]] = js.undefined
     
-    var parse: js.UndefOr[Parse] = js.native
+    var parse: js.UndefOr[Parse] = js.undefined
     
-    var `type`: dsv = js.native
+    var `type`: dsv
   }
   object FormatDSV {
     
     @scala.inline
-    def apply(delimiter: String, `type`: dsv): FormatDSV = {
+    def apply(delimiter: String): FormatDSV = {
       val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("dsv")
       __obj.asInstanceOf[FormatDSV]
     }
     
@@ -176,23 +179,24 @@ object dataMod {
     }
   }
   
-  @js.native
-  trait FormatJSON extends _Format {
+  trait FormatJSON
+    extends StObject
+       with _Format {
     
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
-    var parse: js.UndefOr[Parse] = js.native
+    var parse: js.UndefOr[Parse] = js.undefined
     
-    var property: js.UndefOr[String | SignalRef] = js.native
+    var property: js.UndefOr[String | SignalRef] = js.undefined
     
-    var `type`: json = js.native
+    var `type`: json
   }
   object FormatJSON {
     
     @scala.inline
-    def apply(`type`: json): FormatJSON = {
+    def apply(): FormatJSON = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("json")
       __obj.asInstanceOf[FormatJSON]
     }
     
@@ -222,14 +226,15 @@ object dataMod {
     }
   }
   
-  @js.native
-  trait FormatSV extends _Format {
+  trait FormatSV
+    extends StObject
+       with _Format {
     
-    var header: js.UndefOr[js.Array[String]] = js.native
+    var header: js.UndefOr[js.Array[String]] = js.undefined
     
-    var parse: js.UndefOr[Parse] = js.native
+    var parse: js.UndefOr[Parse] = js.undefined
     
-    var `type`: csv | tsv = js.native
+    var `type`: csv | tsv
   }
   object FormatSV {
     
@@ -263,21 +268,16 @@ object dataMod {
     }
   }
   
-  type FormatTopoJSON = Property with (Feature | Filter)
+  type FormatTopoJSON = Property & (Feature | Filter)
   
   type Parse = auto | (StringDictionary[DataType | String])
   
-  /* Inlined {  source :string | std.Array<string>} & vega-typings.vega-typings/types/spec/data.BaseData */
-  @js.native
-  trait SourceData extends Data {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.vegaTypings.dataMod.Data because Already inherited */ trait SourceData
+    extends StObject
+       with BaseData {
     
-    var name: String = js.native
-    
-    var on: js.UndefOr[js.Array[OnTrigger]] = js.native
-    
-    var source: String | js.Array[String] = js.native
-    
-    var transform: js.UndefOr[js.Array[Transforms]] = js.native
+    var source: String | js.Array[String]
   }
   object SourceData {
     
@@ -291,51 +291,25 @@ object dataMod {
     implicit class SourceDataMutableBuilder[Self <: SourceData] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOn(value: js.Array[OnTrigger]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
-      
-      @scala.inline
-      def setOnVarargs(value: OnTrigger*): Self = StObject.set(x, "on", js.Array(value :_*))
-      
-      @scala.inline
       def setSource(value: String | js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
-      
-      @scala.inline
-      def setTransform(value: js.Array[Transforms]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
-      
-      @scala.inline
-      def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value :_*))
     }
   }
   
   type URI = String
   
-  /* Inlined {  url :vega-typings.vega-typings/types/spec/data.URI | vega-typings.vega-typings/types/spec.SignalRef,   format :vega-typings.vega-typings/types/spec/data.Format | vega-typings.vega-typings/types/spec.SignalRef | undefined,   async :boolean | vega-typings.vega-typings/types/spec.SignalRef | undefined} & vega-typings.vega-typings/types/spec/data.BaseData */
-  @js.native
-  trait UrlData extends Data {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.vegaTypings.dataMod.Data because Already inherited */ trait UrlData
+    extends StObject
+       with BaseData {
     
-    var async: js.UndefOr[Boolean | SignalRef] = js.native
+    var async: js.UndefOr[Boolean | SignalRef] = js.undefined
     
-    var format: js.UndefOr[Format | SignalRef] = js.native
+    var format: js.UndefOr[Format | SignalRef] = js.undefined
     
-    var name: String = js.native
-    
-    var on: js.UndefOr[js.Array[OnTrigger]] = js.native
-    
-    var transform: js.UndefOr[js.Array[Transforms]] = js.native
-    
-    var url: URI | SignalRef = js.native
+    var url: URI | SignalRef
   }
   object UrlData {
     
@@ -361,46 +335,20 @@ object dataMod {
       def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
       @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOn(value: js.Array[OnTrigger]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
-      
-      @scala.inline
-      def setOnVarargs(value: OnTrigger*): Self = StObject.set(x, "on", js.Array(value :_*))
-      
-      @scala.inline
-      def setTransform(value: js.Array[Transforms]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
-      
-      @scala.inline
-      def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value :_*))
-      
-      @scala.inline
       def setUrl(value: URI | SignalRef): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined {  values :std.Array<vega-typings.vega-typings/types/spec/data.Datum> | object,   format :vega-typings.vega-typings/types/spec/data.Format | vega-typings.vega-typings/types/spec.SignalRef | undefined,   async :boolean | vega-typings.vega-typings/types/spec.SignalRef | undefined} & vega-typings.vega-typings/types/spec/data.BaseData */
-  @js.native
-  trait ValuesData extends Data {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.vegaTypings.dataMod.Data because Already inherited */ trait ValuesData
+    extends StObject
+       with BaseData {
     
-    var async: js.UndefOr[Boolean | SignalRef] = js.native
+    var async: js.UndefOr[Boolean | SignalRef] = js.undefined
     
-    var format: js.UndefOr[Format | SignalRef] = js.native
+    var format: js.UndefOr[Format | SignalRef] = js.undefined
     
-    var name: String = js.native
-    
-    var on: js.UndefOr[js.Array[OnTrigger]] = js.native
-    
-    var transform: js.UndefOr[js.Array[Transforms]] = js.native
-    
-    var values: js.Array[Datum] | js.Object = js.native
+    var values: js.Array[Datum] | js.Object
   }
   object ValuesData {
     
@@ -426,27 +374,6 @@ object dataMod {
       def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
       @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOn(value: js.Array[OnTrigger]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
-      
-      @scala.inline
-      def setOnVarargs(value: OnTrigger*): Self = StObject.set(x, "on", js.Array(value :_*))
-      
-      @scala.inline
-      def setTransform(value: js.Array[Transforms]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
-      
-      @scala.inline
-      def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value :_*))
-      
-      @scala.inline
       def setValues(value: js.Array[Datum] | js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -458,16 +385,16 @@ object dataMod {
   object _Format {
     
     @scala.inline
-    def FormatDSV(delimiter: String, `type`: dsv): typings.vegaTypings.dataMod.FormatDSV = {
+    def FormatDSV(delimiter: String): typings.vegaTypings.dataMod.FormatDSV = {
       val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("dsv")
       __obj.asInstanceOf[typings.vegaTypings.dataMod.FormatDSV]
     }
     
     @scala.inline
-    def FormatJSON(`type`: json): typings.vegaTypings.dataMod.FormatJSON = {
+    def FormatJSON(): typings.vegaTypings.dataMod.FormatJSON = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("json")
       __obj.asInstanceOf[typings.vegaTypings.dataMod.FormatJSON]
     }
     

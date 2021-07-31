@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.externalPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `35` extends StObject {
   
-  var name: externalPattern = js.native
+  var name: externalPattern
 }
 object `35` {
   
   @scala.inline
-  def apply(name: externalPattern): `35` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `35` = {
+    val __obj = js.Dynamic.literal(name = "externalPattern")
     __obj.asInstanceOf[`35`]
   }
   

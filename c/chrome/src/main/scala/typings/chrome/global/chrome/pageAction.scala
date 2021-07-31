@@ -7,7 +7,6 @@ import typings.chrome.chrome.pageAction.PopupDetails
 import typings.chrome.chrome.pageAction.TitleDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -24,20 +23,16 @@ object pageAction {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.pageAction.getPopup")
-  @js.native
-  def getPopup(details: GetDetails, callback: js.Function1[/* result */ String, Unit]): Unit = js.native
+  @scala.inline
+  def getPopup(details: GetDetails, callback: js.Function1[/* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPopup")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.pageAction.getTitle")
-  @js.native
-  def getTitle(details: GetDetails, callback: js.Function1[/* result */ String, Unit]): Unit = js.native
+  @scala.inline
+  def getTitle(details: GetDetails, callback: js.Function1[/* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getTitle")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.pageAction.hide")
-  @js.native
-  def hide(tabId: Double): Unit = js.native
-  @JSGlobal("chrome.pageAction.hide")
-  @js.native
-  def hide(tabId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def hide(tabId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(tabId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def hide(tabId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hide")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("chrome.pageAction.onClicked")
   @js.native
@@ -45,31 +40,23 @@ object pageAction {
   @scala.inline
   def onClicked_=(x: PageActionClickedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onClicked")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.pageAction.setIcon")
-  @js.native
-  def setIcon(details: IconDetails): Unit = js.native
-  @JSGlobal("chrome.pageAction.setIcon")
-  @js.native
-  def setIcon(details: IconDetails, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setIcon(details: IconDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIcon")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setIcon(details: IconDetails, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setIcon")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.pageAction.setPopup")
-  @js.native
-  def setPopup(details: PopupDetails): Unit = js.native
-  @JSGlobal("chrome.pageAction.setPopup")
-  @js.native
-  def setPopup(details: PopupDetails, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setPopup(details: PopupDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPopup")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setPopup(details: PopupDetails, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPopup")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.pageAction.setTitle")
-  @js.native
-  def setTitle(details: TitleDetails): Unit = js.native
-  @JSGlobal("chrome.pageAction.setTitle")
-  @js.native
-  def setTitle(details: TitleDetails, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setTitle(details: TitleDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTitle")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setTitle(details: TitleDetails, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTitle")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.pageAction.show")
-  @js.native
-  def show(tabId: Double): Unit = js.native
-  @JSGlobal("chrome.pageAction.show")
-  @js.native
-  def show(tabId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def show(tabId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(tabId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def show(tabId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

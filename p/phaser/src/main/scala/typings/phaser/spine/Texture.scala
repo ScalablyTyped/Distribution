@@ -3,21 +3,19 @@ package typings.phaser.spine
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Texture extends StObject {
   
-  var _image: HTMLImageElement = js.native
+  var _image: HTMLImageElement
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
-  def getImage(): HTMLImageElement = js.native
+  def getImage(): HTMLImageElement
   
-  def setFilters(minFilter: TextureFilter, magFilter: TextureFilter): Unit = js.native
+  def setFilters(minFilter: TextureFilter, magFilter: TextureFilter): Unit
   
-  def setWraps(uWrap: TextureWrap, vWrap: TextureWrap): Unit = js.native
+  def setWraps(uWrap: TextureWrap, vWrap: TextureWrap): Unit
 }
 object Texture {
   

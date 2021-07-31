@@ -4,22 +4,20 @@ import typings.pulumiPulumi.outputMod.Inputs
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var state: Record[String, _] = js.native
+    var state: Record[String, js.Any]
   }
   object Id {
     
     @scala.inline
-    def apply(id: String, state: Record[String, _]): Id = {
+    def apply(id: String, state: Record[String, js.Any]): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
@@ -31,14 +29,13 @@ object anon {
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setState(value: Record[String, _]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      def setState(value: Record[String, js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Init extends StObject {
     
-    def init(): js.Promise[Inputs] = js.native
+    def init(): js.Promise[Inputs]
   }
   object Init {
     
@@ -56,10 +53,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Urn extends StObject {
     
-    var urn: String = js.native
+    var urn: String
   }
   object Urn {
     

@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassBreakInfoProperties extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait ClassBreakInfoProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#label)
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the maximum value for the class break.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#maxValue)
     */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the minimum value for the class break.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#minValue)
     */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines the symbol used to render features with data values that are within the bounds defined for the class break.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#symbol)
     */
-  var symbol: js.UndefOr[SymbolProperties] = js.native
+  var symbol: js.UndefOr[SymbolProperties] = js.undefined
 }
 object ClassBreakInfoProperties {
   

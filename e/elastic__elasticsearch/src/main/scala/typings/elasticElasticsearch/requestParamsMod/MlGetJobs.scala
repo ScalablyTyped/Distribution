@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlGetJobs extends Generic {
+trait MlGetJobs
+  extends StObject
+     with Generic {
   
-  var allow_no_jobs: js.UndefOr[Boolean] = js.native
+  var allow_no_jobs: js.UndefOr[Boolean] = js.undefined
   
-  var allow_no_match: js.UndefOr[Boolean] = js.native
+  var allow_no_match: js.UndefOr[Boolean] = js.undefined
   
-  var job_id: js.UndefOr[String] = js.native
+  var job_id: js.UndefOr[String] = js.undefined
 }
 object MlGetJobs {
   

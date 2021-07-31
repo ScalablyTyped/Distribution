@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Who performed charged service
   */
-@js.native
-trait ChargeItemParticipant extends BackboneElement {
+trait ChargeItemParticipant
+  extends StObject
+     with BackboneElement {
   
   /**
     * Individual who was performing
     */
-  var actor: Reference = js.native
+  var actor: Reference
   
   /**
     * What type of performance was done
     */
-  var role: js.UndefOr[CodeableConcept] = js.native
+  var role: js.UndefOr[CodeableConcept] = js.undefined
 }
 object ChargeItemParticipant {
   

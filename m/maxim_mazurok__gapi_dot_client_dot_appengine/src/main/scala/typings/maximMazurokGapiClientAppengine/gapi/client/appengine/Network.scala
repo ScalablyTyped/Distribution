@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Network extends StObject {
   
   /** List of ports, or port pairs, to forward from the virtual machine to the application container. Only applicable in the App Engine flexible environment. */
-  var forwardedPorts: js.UndefOr[js.Array[String]] = js.native
+  var forwardedPorts: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Tag to apply to the instance during creation. Only applicable in the App Engine flexible environment. */
-  var instanceTag: js.UndefOr[String] = js.native
+  var instanceTag: js.UndefOr[String] = js.undefined
   
   /** Google Compute Engine network where the virtual machines are created. Specify the short name, not the resource path.Defaults to default. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Enable session affinity. Only applicable in the App Engine flexible environment. */
-  var sessionAffinity: js.UndefOr[Boolean] = js.native
+  var sessionAffinity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Google Cloud Platform sub-network where the virtual machines are created. Specify the short name, not the resource path.If a subnetwork name is specified, a network name will also
@@ -28,7 +26,7 @@ trait Network extends StObject {
     * subnetwork_name must be specified and the IP address is created from the IPCidrRange of the subnetwork.If specified, the subnetwork must exist in the same region as the App Engine
     * flexible environment application.
     */
-  var subnetworkName: js.UndefOr[String] = js.native
+  var subnetworkName: js.UndefOr[String] = js.undefined
 }
 object Network {
   

@@ -5,23 +5,21 @@ import typings.cadesplugin.cadespluginNumbers.`0`
 import typings.cadesplugin.cadespluginNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CAPICOM_ENCODING_TYPE extends StObject {
   
-  val CAPICOM_ENCODE_ANY: `-1` = js.native
+  val CAPICOM_ENCODE_ANY: `-1`
   
-  val CAPICOM_ENCODE_BASE64: `0` = js.native
+  val CAPICOM_ENCODE_BASE64: `0`
   
-  val CAPICOM_ENCODE_BINARY: `1` = js.native
+  val CAPICOM_ENCODE_BINARY: `1`
 }
 object CAPICOM_ENCODING_TYPE {
   
   @scala.inline
-  def apply(CAPICOM_ENCODE_ANY: `-1`, CAPICOM_ENCODE_BASE64: `0`, CAPICOM_ENCODE_BINARY: `1`): CAPICOM_ENCODING_TYPE = {
-    val __obj = js.Dynamic.literal(CAPICOM_ENCODE_ANY = CAPICOM_ENCODE_ANY.asInstanceOf[js.Any], CAPICOM_ENCODE_BASE64 = CAPICOM_ENCODE_BASE64.asInstanceOf[js.Any], CAPICOM_ENCODE_BINARY = CAPICOM_ENCODE_BINARY.asInstanceOf[js.Any])
+  def apply(): CAPICOM_ENCODING_TYPE = {
+    val __obj = js.Dynamic.literal(CAPICOM_ENCODE_ANY = -1, CAPICOM_ENCODE_BASE64 = 0, CAPICOM_ENCODE_BINARY = 1)
     __obj.asInstanceOf[CAPICOM_ENCODING_TYPE]
   }
   

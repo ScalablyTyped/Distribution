@@ -2,34 +2,32 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationFolder extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val DisplayName: String = js.native
+  val DisplayName: String
   
-  val Folder: typings.activexOutlook.Outlook.Folder = js.native
+  val Folder: typings.activexOutlook.Outlook.Folder
   
-  val IsRemovable: Boolean = js.native
+  val IsRemovable: Boolean
   
-  var IsSelected: Boolean = js.native
+  var IsSelected: Boolean
   
-  var IsSideBySide: Boolean = js.native
+  var IsSideBySide: Boolean
   
   @JSName("Outlook.NavigationFolder_typekey")
-  var OutlookDotNavigationFolder_typekey: NavigationFolder = js.native
+  var OutlookDotNavigationFolder_typekey: NavigationFolder
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Position: Double = js.native
+  var Position: Double
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object NavigationFolder {
   

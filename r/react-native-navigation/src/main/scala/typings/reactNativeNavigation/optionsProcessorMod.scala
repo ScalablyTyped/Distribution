@@ -10,7 +10,6 @@ import typings.reactNativeNavigation.storeMod.Store
 import typings.reactNativeNavigation.uniqueIdProviderMod.UniqueIdProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsProcessorMod {

@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageMod {
@@ -18,16 +17,17 @@ object imageMod {
   trait Image
     extends Component[ImageProps, js.Object, js.Any]
   
-  @js.native
-  trait ImageProps extends HTMLProps[Image] {
+  trait ImageProps
+    extends StObject
+       with HTMLProps[Image] {
     
-    var circle: js.UndefOr[Boolean] = js.native
+    var circle: js.UndefOr[Boolean] = js.undefined
     
-    var responsive: js.UndefOr[Boolean] = js.native
+    var responsive: js.UndefOr[Boolean] = js.undefined
     
-    var rounded: js.UndefOr[Boolean] = js.native
+    var rounded: js.UndefOr[Boolean] = js.undefined
     
-    var thumbnail: js.UndefOr[Boolean] = js.native
+    var thumbnail: js.UndefOr[Boolean] = js.undefined
   }
   object ImageProps {
     

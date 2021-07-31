@@ -10,79 +10,77 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeElements.anon.PartialImageProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CardProps extends StObject {
   
   /**
     * Outer container style
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Additional divider styling
     * (if title provided)
     */
-  var dividerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var dividerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Subtitle rendered over the image
     * (only works if image prop is present)
     */
-  var featuredSubtitle: js.UndefOr[String] = js.native
+  var featuredSubtitle: js.UndefOr[String] = js.undefined
   
   /**
     * Styling for featured subtitle
     */
-  var featuredSubtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var featuredSubtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Title rendered over the image
     * (only works if image prop is present)
     */
-  var featuredTitle: js.UndefOr[String] = js.native
+  var featuredTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Styling for featured title
     */
-  var featuredTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var featuredTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Add an image as the heading with the image prop
     */
-  var image: js.UndefOr[ImageSourcePropType] = js.native
+  var image: js.UndefOr[ImageSourcePropType] = js.undefined
   
   /**
     * Optional properties to pass to the image if provided e.g "resizeMode"
     */
-  var imageProps: js.UndefOr[PartialImageProps] = js.native
+  var imageProps: js.UndefOr[PartialImageProps] = js.undefined
   
   /**
     * Specify image styling if image is provided
     */
-  var imageStyle: js.UndefOr[ImageStyle] = js.native
+  var imageStyle: js.UndefOr[ImageStyle] = js.undefined
   
   /**
     * Specify styling for view surrounding image
     */
-  var imageWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var imageWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Card title
     */
-  var title: js.UndefOr[String | ReactElement] = js.native
+  var title: js.UndefOr[String | ReactElement] = js.undefined
   
   /**
     * Additional title styling (if title provided)
     */
-  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Inner container style
     */
-  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object CardProps {
   

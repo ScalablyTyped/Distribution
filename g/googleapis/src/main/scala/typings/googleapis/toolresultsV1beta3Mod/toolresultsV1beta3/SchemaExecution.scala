@@ -2,7 +2,6 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of an execution message is 1 MiB.  An Execution can be updated until its
   * state is set to COMPLETE at which point it becomes immutable.
   */
-@js.native
 trait SchemaExecution extends StObject {
   
   /**
@@ -21,34 +19,34 @@ trait SchemaExecution extends StObject {
     * response: set if the execution state is COMPLETE. - In create/update
     * request: never set
     */
-  var completionTime: js.UndefOr[SchemaTimestamp] = js.native
+  var completionTime: js.UndefOr[SchemaTimestamp] = js.undefined
   
   /**
     * The time when the Execution was created.  This value will be set
     * automatically when CreateExecution is called.  - In response: always set
     * - In create/update request: never set
     */
-  var creationTime: js.UndefOr[SchemaTimestamp] = js.native
+  var creationTime: js.UndefOr[SchemaTimestamp] = js.undefined
   
   /**
     * A unique identifier within a History for this Execution.  Returns
     * INVALID_ARGUMENT if this field is set or overwritten by the caller.  - In
     * response always set - In create/update request: never set
     */
-  var executionId: js.UndefOr[String] = js.native
+  var executionId: js.UndefOr[String] = js.undefined
   
   /**
     * Classify the result, for example into SUCCESS or FAILURE  - In response:
     * present if set by create/update request - In create/update request:
     * optional
     */
-  var outcome: js.UndefOr[SchemaOutcome] = js.native
+  var outcome: js.UndefOr[SchemaOutcome] = js.undefined
   
   /**
     * Lightweight information about execution request.  - In response: present
     * if set by create - In create: optional - In update: optional
     */
-  var specification: js.UndefOr[SchemaSpecification] = js.native
+  var specification: js.UndefOr[SchemaSpecification] = js.undefined
   
   /**
     * The initial state is IN_PROGRESS.  The only legal state transitions is
@@ -60,14 +58,14 @@ trait SchemaExecution extends StObject {
     * outcome of the step is not set, the outcome will be set to INCONCLUSIVE.
     * - In response always set - In create/update request: optional
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * TestExecution Matrix ID that the TestExecutionService uses.  - In
     * response: present if set by create - In create: optional - In update:
     * never set
     */
-  var testExecutionMatrixId: js.UndefOr[String] = js.native
+  var testExecutionMatrixId: js.UndefOr[String] = js.undefined
 }
 object SchemaExecution {
   

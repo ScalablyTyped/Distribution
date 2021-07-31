@@ -4,10 +4,8 @@ import typings.reactInstantsearchCore.anon.HighlightProperty
 import typings.reactInstantsearchCore.anon.IsHighlighted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightProvided[TDoc] extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait HighlightProvided[TDoc] extends StObject {
     * }) as Array<Array<{value: string, isHighlighted: boolean}>>
     * ```
     */
-  def highlight(configuration: HighlightProperty[TDoc]): js.Array[IsHighlighted] = js.native
+  def highlight(configuration: HighlightProperty[TDoc]): js.Array[IsHighlighted]
 }
 object HighlightProvided {
   
@@ -37,7 +35,7 @@ object HighlightProvided {
   }
   
   @scala.inline
-  implicit class HighlightProvidedMutableBuilder[Self <: HighlightProvided[_], TDoc] (val x: Self with HighlightProvided[TDoc]) extends AnyVal {
+  implicit class HighlightProvidedMutableBuilder[Self <: HighlightProvided[?], TDoc] (val x: Self & HighlightProvided[TDoc]) extends AnyVal {
     
     @scala.inline
     def setHighlight(value: HighlightProperty[TDoc] => js.Array[IsHighlighted]): Self = StObject.set(x, "highlight", js.Any.fromFunction1(value))

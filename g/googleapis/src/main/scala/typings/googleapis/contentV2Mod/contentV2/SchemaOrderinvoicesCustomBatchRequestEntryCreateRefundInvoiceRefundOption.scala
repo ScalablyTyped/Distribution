@@ -2,21 +2,19 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption extends StObject {
   
   /**
     * Optional description of the refund reason.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [required] Reason for the refund.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object SchemaOrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption {
   

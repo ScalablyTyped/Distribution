@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basePathMappingMod {
@@ -49,6 +48,10 @@ object basePathMappingMod {
   /* static members */
   object BasePathMapping {
     
+    @JSImport("@pulumi/aws/apigateway/basePathMapping", "BasePathMapping")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing BasePathMapping resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,50 +61,44 @@ object basePathMappingMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/basePathMapping", "BasePathMapping.get")
-    @js.native
-    def get(name: String, id: Input[ID]): BasePathMapping = js.native
-    @JSImport("@pulumi/aws/apigateway/basePathMapping", "BasePathMapping.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): BasePathMapping = js.native
-    @JSImport("@pulumi/aws/apigateway/basePathMapping", "BasePathMapping.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BasePathMappingState): BasePathMapping = js.native
-    @JSImport("@pulumi/aws/apigateway/basePathMapping", "BasePathMapping.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BasePathMappingState, opts: CustomResourceOptions): BasePathMapping = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): BasePathMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BasePathMapping]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BasePathMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BasePathMapping]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BasePathMappingState): BasePathMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BasePathMapping]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BasePathMappingState, opts: CustomResourceOptions): BasePathMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BasePathMapping]
     
     /**
       * Returns true if the given object is an instance of BasePathMapping.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/basePathMapping", "BasePathMapping.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/basePathMapping.BasePathMapping */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/basePathMapping.BasePathMapping */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/basePathMapping.BasePathMapping */ Boolean]
   }
   
-  @js.native
   trait BasePathMappingArgs extends StObject {
     
     /**
       * Path segment that must be prepended to the path when accessing the API via this mapping. If omitted, the API is exposed at the root of the given domain.
       */
-    val basePath: js.UndefOr[Input[String]] = js.native
+    val basePath: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The already-registered domain name to connect the API to.
       */
-    val domainName: Input[String] = js.native
+    val domainName: Input[String]
     
     /**
       * The id of the API to connect.
       */
-    val restApi: Input[String | RestApi] = js.native
+    val restApi: Input[String | RestApi]
     
     /**
       * The name of a specific deployment stage to expose at the given path. If omitted, callers may select any stage by including its name as a path element after the base path.
       */
-    val stageName: js.UndefOr[Input[String]] = js.native
+    val stageName: js.UndefOr[Input[String]] = js.undefined
   }
   object BasePathMappingArgs {
     
@@ -134,28 +131,27 @@ object basePathMappingMod {
     }
   }
   
-  @js.native
   trait BasePathMappingState extends StObject {
     
     /**
       * Path segment that must be prepended to the path when accessing the API via this mapping. If omitted, the API is exposed at the root of the given domain.
       */
-    val basePath: js.UndefOr[Input[String]] = js.native
+    val basePath: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The already-registered domain name to connect the API to.
       */
-    val domainName: js.UndefOr[Input[String]] = js.native
+    val domainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of the API to connect.
       */
-    val restApi: js.UndefOr[Input[String | RestApi]] = js.native
+    val restApi: js.UndefOr[Input[String | RestApi]] = js.undefined
     
     /**
       * The name of a specific deployment stage to expose at the given path. If omitted, callers may select any stage by including its name as a path element after the base path.
       */
-    val stageName: js.UndefOr[Input[String]] = js.native
+    val stageName: js.UndefOr[Input[String]] = js.undefined
   }
   object BasePathMappingState {
     

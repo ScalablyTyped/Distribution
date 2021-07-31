@@ -2,23 +2,21 @@ package typings.awsSdkClientKinesisBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesHashKeyRangeMod {
   
-  @js.native
   trait HashKeyRange extends StObject {
     
     /**
       * <p>The ending hash key of the hash key range.</p>
       */
-    var EndingHashKey: String = js.native
+    var EndingHashKey: String
     
     /**
       * <p>The starting hash key of the hash key range.</p>
       */
-    var StartingHashKey: String = js.native
+    var StartingHashKey: String
   }
   object HashKeyRange {
     

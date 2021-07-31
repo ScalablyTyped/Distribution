@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JustifySelfProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -16,10 +14,10 @@ trait JustifySelfProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends St
     */
   var justifySelf: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object JustifySelfProps {
   
@@ -30,12 +28,12 @@ object JustifySelfProps {
   }
   
   @scala.inline
-  implicit class JustifySelfPropsMutableBuilder[Self <: JustifySelfProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with JustifySelfProps[ThemeType]) extends AnyVal {
+  implicit class JustifySelfPropsMutableBuilder[Self <: JustifySelfProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & JustifySelfProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setJustifySelf(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
@@ -47,6 +45,8 @@ object JustifySelfProps {
     def setJustifySelfUndefined: Self = StObject.set(x, "justifySelf", js.undefined)
     
     @scala.inline
-    def setJustifySelfVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "justifySelf", js.Array(value :_*))
+    def setJustifySelfVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ js.Any) | Null)*
+    ): Self = StObject.set(x, "justifySelf", js.Array(value :_*))
   }
 }

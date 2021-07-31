@@ -6,24 +6,24 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to the settings of a scenario sheet.
   * @see com.sun.star.sheet.Spreadsheet
   */
-@js.native
-trait XScenario extends XInterface {
+trait XScenario
+  extends StObject
+     with XInterface {
   
   /** returns `TRUE` if the current object is a scenario. */
-  val IsScenario: Boolean = js.native
+  val IsScenario: Boolean
   
   /** returns the comment for the scenario. */
-  var ScenarioComment: String = js.native
+  var ScenarioComment: String
   
   /** adds more ranges to the scenario. */
-  def addRanges(aRanges: SeqEquiv[CellRangeAddress]): Unit = js.native
+  def addRanges(aRanges: SeqEquiv[CellRangeAddress]): Unit
   
   /**
     * applies the scenario.
@@ -31,16 +31,16 @@ trait XScenario extends XInterface {
     * The contents of the scenario ranges are copied into the first non-scenario sheet which is in front of the sheet containing the scenario by itself.
     */
   @JSName("apply")
-  def apply(): Unit = js.native
+  def apply(): Unit
   
   /** returns `TRUE` if the current object is a scenario. */
-  def getIsScenario(): Boolean = js.native
+  def getIsScenario(): Boolean
   
   /** returns the comment for the scenario. */
-  def getScenarioComment(): String = js.native
+  def getScenarioComment(): String
   
   /** sets a new comment for the scenario. */
-  def setScenarioComment(aScenarioComment: String): Unit = js.native
+  def setScenarioComment(aScenarioComment: String): Unit
 }
 object XScenario {
   

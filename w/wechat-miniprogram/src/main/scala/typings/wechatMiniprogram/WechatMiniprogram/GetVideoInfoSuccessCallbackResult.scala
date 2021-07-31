@@ -10,25 +10,23 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.right
 import typings.wechatMiniprogram.wechatMiniprogramStrings.up
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVideoInfoSuccessCallbackResult extends StObject {
   
   /** 视频码率，单位 kbps */
-  var bitrate: Double = js.native
+  var bitrate: Double
   
   /** 视频长度 */
-  var duration: Double = js.native
+  var duration: Double
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 视频帧率 */
-  var fps: Double = js.native
+  var fps: Double
   
   /** 视频的长，单位 px */
-  var height: Double = js.native
+  var height: Double
   
   /** 画面方向
     *
@@ -41,16 +39,16 @@ trait GetVideoInfoSuccessCallbackResult extends StObject {
     * - 'down-mirrored': 同down，但水平翻转;
     * - 'left-mirrored': 同left，但垂直翻转;
     * - 'right-mirrored': 同right，但垂直翻转; */
-  var orientation: up | down | left | right | `up-mirrored` | `down-mirrored` | `left-mirrored` | `right-mirrored` = js.native
+  var orientation: up | down | left | right | `up-mirrored` | `down-mirrored` | `left-mirrored` | `right-mirrored`
   
   /** 视频大小，单位 kB */
-  var size: Double = js.native
+  var size: Double
   
   /** 视频格式 */
-  var `type`: String = js.native
+  var `type`: String
   
   /** 视频的宽，单位 px */
-  var width: Double = js.native
+  var width: Double
 }
 object GetVideoInfoSuccessCallbackResult {
   

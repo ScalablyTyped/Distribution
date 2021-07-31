@@ -2,15 +2,13 @@ package typings.durandal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurandalNavigationOptions extends StObject {
   
-  var replace: Boolean = js.native
+  var replace: Boolean
   
-  var trigger: Boolean = js.native
+  var trigger: Boolean
 }
 object DurandalNavigationOptions {
   

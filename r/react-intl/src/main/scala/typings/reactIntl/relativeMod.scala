@@ -8,7 +8,6 @@ import typings.reactIntl.anon.PartialStateCurrentValueInSeconds
 import typings.reactIntl.anon.PickPropsunitvalue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relativeMod {
@@ -37,9 +36,8 @@ object relativeMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-intl/lib/src/components/relative", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: Props, state: State): PartialStateCurrentValueInSeconds | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: Props, state: State): PartialStateCurrentValueInSeconds | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialStateCurrentValueInSeconds | Null]
   }
   
   @JSImport("react-intl/lib/src/components/relative", "FormattedRelativeTime")
@@ -80,22 +78,22 @@ object relativeMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-intl/lib/src/components/relative", "FormattedRelativeTime.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: Props, state: State): PartialStateCurrentValueInSeconds | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: Props, state: State): PartialStateCurrentValueInSeconds | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialStateCurrentValueInSeconds | Null]
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/relative-time.IntlRelativeTimeFormatOptions extends 'localeMatcher' ? never : @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/relative-time.IntlRelativeTimeFormatOptions */ @js.native
-  trait Props extends CustomFormatConfig {
+  - Dropped @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/relative-time.IntlRelativeTimeFormatOptions extends 'localeMatcher' ? never : @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/relative-time.IntlRelativeTimeFormatOptions */ trait Props
+    extends StObject
+       with CustomFormatConfig {
     
-    var children: js.UndefOr[js.Function1[/* value */ String, ReactChild]] = js.native
+    var children: js.UndefOr[js.Function1[/* value */ String, ReactChild]] = js.undefined
     
-    var unit: js.UndefOr[RelativeTimeUnit] = js.native
+    var unit: js.UndefOr[RelativeTimeUnit] = js.undefined
     
-    var updateIntervalInSeconds: js.UndefOr[Double] = js.native
+    var updateIntervalInSeconds: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object Props {
     
@@ -134,14 +132,13 @@ object relativeMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var currentValueInSeconds: Double = js.native
+    var currentValueInSeconds: Double
     
-    var prevUnit: js.UndefOr[RelativeTimeUnit] = js.native
+    var prevUnit: js.UndefOr[RelativeTimeUnit] = js.undefined
     
-    var prevValue: js.UndefOr[Double] = js.native
+    var prevValue: js.UndefOr[Double] = js.undefined
   }
   object State {
     

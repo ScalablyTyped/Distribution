@@ -2,21 +2,19 @@ package typings.awsSdk.codestarnotificationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationRuleSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the notification rule.
     */
-  var Arn: js.UndefOr[NotificationRuleArn] = js.native
+  var Arn: js.UndefOr[NotificationRuleArn] = js.undefined
   
   /**
     * The unique ID of the notification rule.
     */
-  var Id: js.UndefOr[NotificationRuleId] = js.native
+  var Id: js.UndefOr[NotificationRuleId] = js.undefined
 }
 object NotificationRuleSummary {
   

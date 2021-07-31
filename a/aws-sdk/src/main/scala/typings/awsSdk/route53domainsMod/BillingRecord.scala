@@ -2,36 +2,34 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingRecord extends StObject {
   
   /**
     * The date that the operation was billed, in Unix format.
     */
-  var BillDate: js.UndefOr[Timestamp] = js.native
+  var BillDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the domain that the billing record applies to. If the domain name contains characters other than a-z, 0-9, and - (hyphen), such as an internationalized domain name, then this value is in Punycode. For more information, see DNS Domain Name Format in the Amazon Route 53 Developer Guide.
     */
-  var DomainName: js.UndefOr[typings.awsSdk.route53domainsMod.DomainName] = js.native
+  var DomainName: js.UndefOr[typings.awsSdk.route53domainsMod.DomainName] = js.undefined
   
   /**
     * The ID of the invoice that is associated with the billing record.
     */
-  var InvoiceId: js.UndefOr[typings.awsSdk.route53domainsMod.InvoiceId] = js.native
+  var InvoiceId: js.UndefOr[typings.awsSdk.route53domainsMod.InvoiceId] = js.undefined
   
   /**
     * The operation that you were charged for.
     */
-  var Operation: js.UndefOr[OperationType] = js.native
+  var Operation: js.UndefOr[OperationType] = js.undefined
   
   /**
     * The price that you were charged for the operation, in US dollars. Example value: 12.0
     */
-  var Price: js.UndefOr[typings.awsSdk.route53domainsMod.Price] = js.native
+  var Price: js.UndefOr[typings.awsSdk.route53domainsMod.Price] = js.undefined
 }
 object BillingRecord {
   

@@ -3,7 +3,6 @@ package typings.screeps
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,7 +44,7 @@ trait RawMemory extends StObject {
     * Set new memory value.
     * @param value New memory value as a string.
     */
-  def set(value: String): js.UndefOr[scala.Nothing] = js.native
+  def set(value: String): Unit = js.native
   
   /**
     * Request a memory segment of another user.
@@ -59,29 +58,29 @@ trait RawMemory extends StObject {
     * @param username The name of another user. Pass `null` to clear the foreign segment.
     * @param id The ID of the requested segment from 0 to 99. If undefined, the user's default public segment is requested as set by `setDefaultPublicSegment`.
     */
-  def setActiveForeignSegment(): js.UndefOr[scala.Nothing] = js.native
-  def setActiveForeignSegment(username: String): js.UndefOr[scala.Nothing] = js.native
-  def setActiveForeignSegment(username: String, id: Double): js.UndefOr[scala.Nothing] = js.native
-  def setActiveForeignSegment(username: Null, id: Double): js.UndefOr[scala.Nothing] = js.native
+  def setActiveForeignSegment(): Unit = js.native
+  def setActiveForeignSegment(username: String): Unit = js.native
+  def setActiveForeignSegment(username: String, id: Double): Unit = js.native
+  def setActiveForeignSegment(username: Null, id: Double): Unit = js.native
   
   /**
     * Request memory segments using the list of their IDs. Memory segments will become available on the next tick in RawMemory.segments object.
     * @param ids An array of segment IDs. Each ID should be a number from 0 to 99. Maximum 10 segments can be active at the same time. Subsequent calls of setActiveSegments override previous ones.
     */
-  def setActiveSegments(ids: js.Array[Double]): js.UndefOr[scala.Nothing] = js.native
+  def setActiveSegments(ids: js.Array[Double]): Unit = js.native
   
   /**
     * Set the specified segment as your default public segment. It will be returned if no id parameter is passed to `setActiveForeignSegment` by another user.
     *
     * @param id The ID of the requested segment from 0 to 99. Pass `null` to clear the foreign segment.
     */
-  def setDefaultPublicSegment(): js.UndefOr[scala.Nothing] = js.native
-  def setDefaultPublicSegment(id: Double): js.UndefOr[scala.Nothing] = js.native
+  def setDefaultPublicSegment(): Unit = js.native
+  def setDefaultPublicSegment(id: Double): Unit = js.native
   
   /**
     * Set specified segments as public. Other users will be able to request access to them using `setActiveForeignSegment`.
     *
     * @param ids An array of segment IDs. Each ID should be a number from 0 to 99. Subsequent calls of `setPublicSegments` override previous ones.
     */
-  def setPublicSegments(ids: js.Array[Double]): js.UndefOr[scala.Nothing] = js.native
+  def setPublicSegments(ids: js.Array[Double]): Unit = js.native
 }

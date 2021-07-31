@@ -5,28 +5,26 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createStopwordList` operation. */
-@js.native
 trait CreateStopwordListParams extends StObject {
   
   /** The ID of the collection. */
-  var collection_id: String = js.native
+  var collection_id: String
   
   /** The ID of the environment. */
-  var environment_id: String = js.native
+  var environment_id: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** The content of the stopword list to ingest. */
-  var stopword_file: ReadableStream | FileObject | Buffer = js.native
+  var stopword_file: ReadableStream | FileObject | Buffer
   
   /** The filename for stopword_file. */
-  var stopword_filename: String = js.native
+  var stopword_filename: String
 }
 object CreateStopwordListParams {
   

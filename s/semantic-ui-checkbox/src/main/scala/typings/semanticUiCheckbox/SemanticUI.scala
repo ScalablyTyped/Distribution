@@ -90,7 +90,6 @@ import typings.semanticUiCheckbox.semanticUiCheckboxStrings.verbose
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -183,73 +182,75 @@ object SemanticUI {
       * Set as indeterminate checkbox
       */
     def apply(behavior: indeterminate): JQuery = js.native
-    def apply(behavior: setting, name: beforeChecked, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
     def apply(
       behavior: setting,
       name: beforeChecked,
       value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
     ): JQuery = js.native
-    def apply(behavior: setting, name: beforeDeterminate, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
+    def apply(behavior: setting, name: beforeChecked, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
     def apply(
       behavior: setting,
       name: beforeDeterminate,
       value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
     ): JQuery = js.native
-    def apply(behavior: setting, name: beforeIndeterminate, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
+    def apply(behavior: setting, name: beforeDeterminate, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
     def apply(
       behavior: setting,
       name: beforeIndeterminate,
       value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
     ): JQuery = js.native
-    def apply(behavior: setting, name: beforeUnchecked, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
+    def apply(behavior: setting, name: beforeIndeterminate, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
     def apply(
       behavior: setting,
       name: beforeUnchecked,
       value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
     ): JQuery = js.native
+    def apply(behavior: setting, name: beforeUnchecked, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
     def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
     def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: fireOnInit, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: fireOnInit, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: fireOnInit, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onChecked, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+    def apply(behavior: setting, name: onChange, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
     def apply(behavior: setting, name: onChecked, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onDeterminate, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+    def apply(behavior: setting, name: onChecked, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
     def apply(behavior: setting, name: onDeterminate, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onDisabled, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+    def apply(behavior: setting, name: onDeterminate, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
     def apply(behavior: setting, name: onDisabled, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onDisable, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+    def apply(behavior: setting, name: onDisabled, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
     def apply(behavior: setting, name: onDisable, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onEnabled, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+    def apply(behavior: setting, name: onDisable, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
     def apply(behavior: setting, name: onEnabled, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onEnable, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+    def apply(behavior: setting, name: onEnabled, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
     def apply(behavior: setting, name: onEnable, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onIndeterminate, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+    def apply(behavior: setting, name: onEnable, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
     def apply(
       behavior: setting,
       name: onIndeterminate,
       value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onUnchecked, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+    def apply(behavior: setting, name: onIndeterminate, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
     def apply(behavior: setting, name: onUnchecked, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: onUnchecked, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
+    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: uncheckable, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: uncheckable, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: uncheckable, value: Unit): auto | Boolean = js.native
     def apply(behavior: setting, name: uncheckable, value: auto): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: CheckboxSettings): JQuery = js.native
     /**
       * Switches a checkbox from current state
@@ -267,28 +268,27 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'checked'
           */
-        var checked: String = js.native
+        var checked: String
         
         /**
           * @default 'disabled'
           */
-        var disabled: String = js.native
+        var disabled: String
         
         /**
           * @default 'radio'
           */
-        var radio: String = js.native
+        var radio: String
         
         /**
           * @default 'read-only'
           */
-        var readOnly: String = js.native
+        var readOnly: String
       }
       object Impl {
         
@@ -315,20 +315,19 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplchecked | PickImpldisabled | PickImplradio | PickImplreadOnly) with PartialPickImplkeyofImplChecked
+      type Param = (PickImplchecked | PickImpldisabled | PickImplradio | PickImplreadOnly) & PartialPickImplkeyofImplChecked
     }
     type ClassNameSettings = Param
     
     /* Inlined semantic-ui-checkbox.SemanticUI.Checkbox.ErrorSettings.Param */
-    @js.native
     trait ErrorSettings extends StObject {
       
-      var method: String with js.UndefOr[String] = js.native
+      var method: String & js.UndefOr[String]
     }
     object ErrorSettings {
       
       @scala.inline
-      def apply(method: String with js.UndefOr[String]): ErrorSettings = {
+      def apply(method: String & js.UndefOr[String]): ErrorSettings = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[ErrorSettings]
       }
@@ -337,16 +336,15 @@ object SemanticUI {
       implicit class ErrorSettingsMutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setMethod(value: String with js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'The method you called is not defined.'
           */
-        var method: String = js.native
+        var method: String
       }
       object Impl {
         
@@ -365,15 +363,14 @@ object SemanticUI {
       }
       
       /* Inlined std.Pick<semantic-ui-checkbox.SemanticUI.Checkbox.ErrorSettings._Impl, 'method'> & std.Partial<std.Pick<semantic-ui-checkbox.SemanticUI.Checkbox.ErrorSettings._Impl, keyof semantic-ui-checkbox.SemanticUI.Checkbox.ErrorSettings._Impl>> */
-      @js.native
       trait Param extends StObject {
         
-        var method: String with js.UndefOr[String] = js.native
+        var method: String & js.UndefOr[String]
       }
       object Param {
         
         @scala.inline
-        def apply(method: String with js.UndefOr[String]): typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings.Param = {
+        def apply(method: String & js.UndefOr[String]): typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings.Param = {
           val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings.Param]
         }
@@ -382,25 +379,24 @@ object SemanticUI {
         implicit class ParamMutableBuilder[Self <: typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings.Param] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setMethod(value: String with js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+          def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
     }
     
     object SelectorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'input[type=checkbox], input[type=radio]'
           */
-        var input: String = js.native
+        var input: String
         
         /**
           * @default 'label'
           */
-        var label: String = js.native
+        var label: String
       }
       object Impl {
         
@@ -421,63 +417,62 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplinput | PickImpllabel) with PartialPickImplkeyofImplInput
+      type Param = (PickImplinput | PickImpllabel) & PartialPickImplkeyofImplInput
     }
     type SelectorSettings = typings.semanticUiCheckbox.SemanticUI.Checkbox.SelectorSettings.Param
   }
   
   object CheckboxSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * Callback before a checkbox is checked. Can cancel change by returning false
         */
-      def beforeChecked(): Unit | `false` = js.native
+      def beforeChecked(): Unit | `false`
       
       /**
         * Callback before a checkbox is set to determinate. Can cancel change by returning false
         */
-      def beforeDeterminate(): Unit | `false` = js.native
+      def beforeDeterminate(): Unit | `false`
       
       /**
         * Callback before a checkbox is set to undeterminate. Can cancel change by returning false
         */
-      def beforeIndeterminate(): Unit | `false` = js.native
+      def beforeIndeterminate(): Unit | `false`
       
       /**
         * Callback before a checkbox is unchecked. Can cancel change by returning false
         */
-      def beforeUnchecked(): Unit | `false` = js.native
+      def beforeUnchecked(): Unit | `false`
       
       /**
         * Class names used to determine element state
         */
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * Whether callbacks for checked status should be fired on init as well as change
         *
         * @default false
         */
-      var fireOnInit: Boolean = js.native
+      var fireOnInit: Boolean
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -485,75 +480,75 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       // endregion
       // region Callbacks
       /**
         * Callback after a checkbox is either checked or unchecked.
         */
-      def onChange(): Unit = js.native
+      def onChange(): Unit
       
       /**
         * Callback after a checkbox is checked.
         */
-      def onChecked(): Unit = js.native
+      def onChecked(): Unit
       
       /**
         * Callback after a checkbox is set to determinate.
         */
-      def onDeterminate(): Unit = js.native
+      def onDeterminate(): Unit
       
       /**
         * Callback after a checkbox is disabled.
         */
-      def onDisable(): Unit = js.native
+      def onDisable(): Unit
       
       /**
         * Callback after a checkbox is disabled.
         *
         * @deprecated
         */
-      def onDisabled(): Unit = js.native
+      def onDisabled(): Unit
       
       /**
         * Callback after a checkbox is enabled.
         */
-      def onEnable(): Unit = js.native
+      def onEnable(): Unit
       
       /**
         * Callback after a checkbox is enabled.
         *
         * @deprecated
         */
-      def onEnabled(): Unit = js.native
+      def onEnabled(): Unit
       
       /**
         * Callback after a checkbox is set to undeterminate.
         */
-      def onIndeterminate(): Unit = js.native
+      def onIndeterminate(): Unit
       
       /**
         * Callback after a checkbox is unchecked.
         */
-      def onUnchecked(): Unit = js.native
+      def onUnchecked(): Unit
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       // endregion
       // region DOM Settings
       /**
         * Selectors used to find parts of a module
         */
-      var selector: SelectorSettings = js.native
+      var selector: SelectorSettings
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       // region Behavior
       /**
@@ -561,12 +556,12 @@ object SemanticUI {
         *
         * @default 'auto'
         */
-      var uncheckable: auto | Boolean = js.native
+      var uncheckable: auto | Boolean
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -678,7 +673,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImpluncheckable | PickImplfireOnInit | PickImplonChange | PickImplonChecked | PickImplonIndeterminate | PickImplonDeterminate | PickImplonUnchecked | PickImplbeforeChecked | PickImplbeforeIndetermina | PickImplbeforeDeterminate | PickImplbeforeUnchecked | PickImplonEnable | PickImplonDisable | PickImplonEnabled | PickImplonDisabled | PickImplselector | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImpluncheckable | PickImplfireOnInit | PickImplonChange | PickImplonChecked | PickImplonIndeterminate | PickImplonDeterminate | PickImplonUnchecked | PickImplbeforeChecked | PickImplbeforeIndetermina | PickImplbeforeDeterminate | PickImplbeforeUnchecked | PickImplonEnable | PickImplonDisable | PickImplonEnabled | PickImplonDisabled | PickImplselector | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/checkbox.html#/settings}

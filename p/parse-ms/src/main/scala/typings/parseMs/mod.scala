@@ -2,7 +2,6 @@ package typings.parseMs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,26 +23,28 @@ object mod {
   // }
   ```
   */
+  @scala.inline
+  def apply(milliseconds: Double): Parsed = ^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any]).asInstanceOf[Parsed]
+  
   @JSImport("parse-ms", JSImport.Namespace)
   @js.native
-  def apply(milliseconds: Double): Parsed = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Parsed extends StObject {
     
-    var days: Double = js.native
+    var days: Double
     
-    var hours: Double = js.native
+    var hours: Double
     
-    var microseconds: Double = js.native
+    var microseconds: Double
     
-    var milliseconds: Double = js.native
+    var milliseconds: Double
     
-    var minutes: Double = js.native
+    var minutes: Double
     
-    var nanoseconds: Double = js.native
+    var nanoseconds: Double
     
-    var seconds: Double = js.native
+    var seconds: Double
   }
   object Parsed {
     

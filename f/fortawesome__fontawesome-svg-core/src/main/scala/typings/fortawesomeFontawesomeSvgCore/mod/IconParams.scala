@@ -3,19 +3,19 @@ package typings.fortawesomeFontawesomeSvgCore.mod
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconLookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IconParams extends Params {
+trait IconParams
+  extends StObject
+     with Params {
   
-  var mask: js.UndefOr[IconLookup] = js.native
+  var mask: js.UndefOr[IconLookup] = js.undefined
   
-  var maskId: js.UndefOr[String] = js.native
+  var maskId: js.UndefOr[String] = js.undefined
   
-  var symbol: js.UndefOr[FaSymbol] = js.native
+  var symbol: js.UndefOr[FaSymbol] = js.undefined
   
-  var transform: js.UndefOr[Transform] = js.native
+  var transform: js.UndefOr[Transform] = js.undefined
 }
 object IconParams {
   

@@ -2,7 +2,6 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,8 +18,8 @@ trait EventEmitter extends StObject {
     * @param context - Optional context object to use when invoking the
     *   listener
     */
-  def addListener(eventType: String, listener: js.Function1[/* repeated */ js.Any, _]): EmitterSubscription = js.native
-  def addListener(eventType: String, listener: js.Function1[/* repeated */ js.Any, _], context: js.Any): EmitterSubscription = js.native
+  def addListener(eventType: String, listener: js.Function1[/* repeated */ js.Any, js.Any]): EmitterSubscription = js.native
+  def addListener(eventType: String, listener: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): EmitterSubscription = js.native
   
   /**
     * Emits an event of the given type with the given data. All handlers of that
@@ -56,7 +55,7 @@ trait EventEmitter extends StObject {
     * @param context - Optional context object to use when invoking the
     *   listener
     */
-  def once(eventType: String, listener: js.Function1[/* repeated */ js.Any, _], context: js.Any): EmitterSubscription = js.native
+  def once(eventType: String, listener: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): EmitterSubscription = js.native
   
   /**
     * Removes all of the registered listeners, including those registered as
@@ -104,7 +103,7 @@ trait EventEmitter extends StObject {
     *   }); // removes the listener if already registered
     *
     */
-  def removeListener(eventType: String, listener: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def removeListener(eventType: String, listener: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /**
     * Removes a specific subscription. Called by the `remove()` method of the

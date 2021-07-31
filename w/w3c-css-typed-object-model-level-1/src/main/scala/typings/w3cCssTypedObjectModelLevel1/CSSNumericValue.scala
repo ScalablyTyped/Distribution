@@ -2,31 +2,31 @@ package typings.w3cCssTypedObjectModelLevel1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CSSNumericValue extends CSSStyleValue {
+trait CSSNumericValue
+  extends StObject
+     with CSSStyleValue {
   
-  def add(values: CSSNumberish*): CSSNumericValue = js.native
+  def add(values: CSSNumberish*): CSSNumericValue
   
-  def div(values: CSSNumberish*): CSSNumericValue = js.native
+  def div(values: CSSNumberish*): CSSNumericValue
   
-  def equals(values: CSSNumberish*): Boolean = js.native
+  def equals(values: CSSNumberish*): Boolean
   
-  def max(values: CSSNumberish*): CSSNumericValue = js.native
+  def max(values: CSSNumberish*): CSSNumericValue
   
-  def min(values: CSSNumberish*): CSSNumericValue = js.native
+  def min(values: CSSNumberish*): CSSNumericValue
   
-  def mul(values: CSSNumberish*): CSSNumericValue = js.native
+  def mul(values: CSSNumberish*): CSSNumericValue
   
-  def sub(values: CSSNumberish*): CSSNumericValue = js.native
+  def sub(values: CSSNumberish*): CSSNumericValue
   
-  def to(unit: String): CSSUnitValue = js.native
+  def to(unit: String): CSSUnitValue
   
-  def toSum(units: String*): CSSMathSum = js.native
+  def toSum(units: String*): CSSMathSum
   
-  def `type`(): CSSNumericType = js.native
+  def `type`(): CSSNumericType
 }
 object CSSNumericValue {
   

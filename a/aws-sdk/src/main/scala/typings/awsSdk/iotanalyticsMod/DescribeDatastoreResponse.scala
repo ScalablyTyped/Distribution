@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDatastoreResponse extends StObject {
   
   /**
     * Information about the data store.
     */
-  var datastore: js.UndefOr[Datastore] = js.native
+  var datastore: js.UndefOr[Datastore] = js.undefined
   
   /**
     * Additional statistical information about the data store. Included if the includeStatistics parameter is set to true in the request.
     */
-  var statistics: js.UndefOr[DatastoreStatistics] = js.native
+  var statistics: js.UndefOr[DatastoreStatistics] = js.undefined
 }
 object DescribeDatastoreResponse {
   

@@ -11,8 +11,8 @@ Word Processing Document library
 | Full name          | word |
 | Keywords           | word |
 | # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 1116391 |
+| # dependents       | 10 |
+| # downloads        | 6429313 |
 | # stars            | 0 |
 
 ## Links

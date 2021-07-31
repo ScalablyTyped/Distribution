@@ -6,14 +6,15 @@ import typings.reactDnd.optionsMod.DragPreviewOptions
 import typings.reactDnd.optionsMod.DragSourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceConnectorMod {
   
   @JSImport("react-dnd/lib/common/SourceConnector", "SourceConnector")
   @js.native
-  class SourceConnector protected () extends Connector {
+  class SourceConnector protected ()
+    extends StObject
+       with Connector {
     def this(backend: Backend) = this()
     
     val backend: js.Any = js.native

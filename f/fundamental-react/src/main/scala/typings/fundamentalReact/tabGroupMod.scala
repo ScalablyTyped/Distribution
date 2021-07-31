@@ -7,7 +7,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabGroupMod {
@@ -32,23 +31,23 @@ object tabGroupMod {
   
   type TabGroup = Component[TabGroupProps, js.Object, js.Any]
   
-  @js.native
   trait TabGroupProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
     
     var onTabClick: js.UndefOr[
         js.Function2[/* event */ MouseEvent[Element, NativeMouseEvent], /* index */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var selectedIndex: js.UndefOr[Double] = js.native
+    var selectedIndex: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[js.Any] = js.native
+    var size: js.UndefOr[js.Any] = js.undefined
     
-    var tabGroupProps: js.UndefOr[js.Any] = js.native
+    var tabGroupProps: js.UndefOr[js.Any] = js.undefined
   }
   object TabGroupProps {
     

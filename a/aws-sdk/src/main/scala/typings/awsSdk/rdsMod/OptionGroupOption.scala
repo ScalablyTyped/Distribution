@@ -2,91 +2,89 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionGroupOption extends StObject {
   
   /**
     * If the option requires a port, specifies the default port for the option.
     */
-  var DefaultPort: js.UndefOr[IntegerOptional] = js.native
+  var DefaultPort: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The description of the option.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the engine that this option can be applied to.
     */
-  var EngineName: js.UndefOr[String] = js.native
+  var EngineName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the major engine version that the option is available for.
     */
-  var MajorEngineVersion: js.UndefOr[String] = js.native
+  var MajorEngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum required engine version for the option to be applied.
     */
-  var MinimumRequiredMinorEngineVersion: js.UndefOr[String] = js.native
+  var MinimumRequiredMinorEngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the option.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The option settings that are available (and the default value) for each option in an option group.
     */
-  var OptionGroupOptionSettings: js.UndefOr[OptionGroupOptionSettingsList] = js.native
+  var OptionGroupOptionSettings: js.UndefOr[OptionGroupOptionSettingsList] = js.undefined
   
   /**
     * The versions that are available for the option.
     */
-  var OptionGroupOptionVersions: js.UndefOr[OptionGroupOptionVersionsList] = js.native
+  var OptionGroupOptionVersions: js.UndefOr[OptionGroupOptionVersionsList] = js.undefined
   
   /**
     * The options that conflict with this option.
     */
-  var OptionsConflictsWith: js.UndefOr[typings.awsSdk.rdsMod.OptionsConflictsWith] = js.native
+  var OptionsConflictsWith: js.UndefOr[typings.awsSdk.rdsMod.OptionsConflictsWith] = js.undefined
   
   /**
     * The options that are prerequisites for this option.
     */
-  var OptionsDependedOn: js.UndefOr[typings.awsSdk.rdsMod.OptionsDependedOn] = js.native
+  var OptionsDependedOn: js.UndefOr[typings.awsSdk.rdsMod.OptionsDependedOn] = js.undefined
   
   /**
     * Permanent options can never be removed from an option group. An option group containing a permanent option can't be removed from a DB instance.
     */
-  var Permanent: js.UndefOr[Boolean] = js.native
+  var Permanent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Persistent options can't be removed from an option group while DB instances are associated with the option group. If you disassociate all DB instances from the option group, your can remove the persistent option from the option group.
     */
-  var Persistent: js.UndefOr[Boolean] = js.native
+  var Persistent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether the option requires a port.
     */
-  var PortRequired: js.UndefOr[Boolean] = js.native
+  var PortRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, you must enable the Auto Minor Version Upgrade setting for your DB instance before you can use this option. You can enable Auto Minor Version Upgrade when you first create your DB instance, or by modifying your DB instance later. 
     */
-  var RequiresAutoMinorEngineVersionUpgrade: js.UndefOr[Boolean] = js.native
+  var RequiresAutoMinorEngineVersionUpgrade: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, you can change the option to an earlier version of the option. This only applies to options that have different versions available. 
     */
-  var SupportsOptionVersionDowngrade: js.UndefOr[BooleanOptional] = js.native
+  var SupportsOptionVersionDowngrade: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * If true, you can only use this option with a DB instance that is in a VPC. 
     */
-  var VpcOnly: js.UndefOr[Boolean] = js.native
+  var VpcOnly: js.UndefOr[Boolean] = js.undefined
 }
 object OptionGroupOption {
   

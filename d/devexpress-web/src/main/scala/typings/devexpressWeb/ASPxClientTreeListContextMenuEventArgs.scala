@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeList.ContextMenu event.
   */
-@js.native
-trait ASPxClientTreeListContextMenuEventArgs extends ASPxClientEventArgs {
+trait ASPxClientTreeListContextMenuEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets or sets whether to invoke the browser's context menu.
     */
-  var cancel: Boolean = js.native
+  var cancel: Boolean
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
   
   /**
     * Gets a value that identifies the right-clicked object.
     */
-  var objectKey: js.Any = js.native
+  var objectKey: js.Any
   
   /**
     * Identifies which tree list element has been right-clicked.
     */
-  var objectType: String = js.native
+  var objectType: String
 }
 object ASPxClientTreeListContextMenuEventArgs {
   

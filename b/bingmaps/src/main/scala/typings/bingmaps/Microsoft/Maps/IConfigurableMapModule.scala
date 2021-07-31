@@ -2,17 +2,15 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConfigurableMapModule extends StObject {
   
   /** Name of the module to load. Supported values: "Microsoft.Maps.GeoXml", "Microsoft.Maps.GeoJson". */
-  var moduleName: String = js.native
+  var moduleName: String
   
   /** A set of steps to execute after a module is loaded. */
-  var moduleOptions: PostModuleAction | js.Array[PostModuleAction] = js.native
+  var moduleOptions: PostModuleAction | js.Array[PostModuleAction]
 }
 object IConfigurableMapModule {
   

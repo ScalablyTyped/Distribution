@@ -2,25 +2,25 @@ package typings.reactNativeCalendars.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DotMarking extends Marking {
+trait DotMarking
+  extends StObject
+     with Marking {
   
-  var activeOpacity: js.UndefOr[Double] = js.native
+  var activeOpacity: js.UndefOr[Double] = js.undefined
   
-  var disableTouchEvent: js.UndefOr[Boolean] = js.native
+  var disableTouchEvent: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var dotColor: js.UndefOr[String] = js.native
+  var dotColor: js.UndefOr[String] = js.undefined
   
-  var marked: js.UndefOr[Boolean] = js.native
+  var marked: js.UndefOr[Boolean] = js.undefined
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var selectedColor: js.UndefOr[String] = js.native
+  var selectedColor: js.UndefOr[String] = js.undefined
 }
 object DotMarking {
   

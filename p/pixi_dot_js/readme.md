@@ -10,9 +10,9 @@ PixiJS without the CanvasRenderer fallback, modern browsers only
 | ------------------ | :-------------: |
 | Full name          | pixi.js |
 | Keywords           | - |
-| # releases         | 33 |
-| # dependents       | 340 |
-| # downloads        | 1574360 |
+| # releases         | 36 |
+| # dependents       | 363 |
+| # downloads        | 1703386 |
 | # stars            | 30 |
 
 ## Links

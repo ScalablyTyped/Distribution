@@ -11,7 +11,6 @@ import typings.std.JSON
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,7 +25,7 @@ trait ChocolateChipStatic extends StObject {
     *
     * @param callback A function to execute after the DOM is ready.
     */
-  def apply(callback: js.Function0[_]): Unit = js.native
+  def apply(callback: js.Function0[js.Any]): Unit = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     *
@@ -121,7 +120,7 @@ trait ChocolateChipStatic extends StObject {
     * @param array An array of elements.
     * @param callback A callback to execute on each element. This has two parameters: the context, followed by the index of the current iteration.
     */
-  def each[T](array: js.Array[T], callback: js.Function2[/* ctx */ T, /* idx */ Double, _]): js.Any = js.native
+  def each[T](array: js.Array[T], callback: js.Function2[/* ctx */ T, /* idx */ Double, js.Any]): js.Any = js.native
   
   /**
     * Extend the ChocolateChipJS object itself with the provided object.
@@ -404,7 +403,7 @@ trait ChocolateChipStatic extends StObject {
     * @param result The result of a method to test if it can be returned in an array.
     * @return An array holding the results of a method, otherwise an empty array.
     */
-  def returnResult(result: js.Array[HTMLElement]): js.Array[_] = js.native
+  def returnResult(result: js.Array[HTMLElement]): js.Array[js.Any] = js.native
   
   /**
     * This method takes a referenced form and serializes its element names and values, which it returns as a string. This is required if you want to send form data.
@@ -426,7 +425,7 @@ trait ChocolateChipStatic extends StObject {
     * @param topic A topic to subscribe to. This can be a single term, or any type of namespaced term with delimiters.
     * @param callback You can receive any type: string, number, array, object, etc.
     */
-  def subscribe(topic: String, callback: js.Function2[/* topic */ String, /* data */ js.Any, _]): Boolean = js.native
+  def subscribe(topic: String, callback: js.Function2[/* topic */ String, /* data */ js.Any, js.Any]): Boolean = js.native
   
   /**
     * This method parses a string and an optoinal variable name and returns a parsed template in the form of a function. You can then pass this function data to get rendered nodes.

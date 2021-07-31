@@ -2,35 +2,33 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollapsibleOptions extends StObject {
   
-  var collapseCueText: js.UndefOr[String] = js.native
+  var collapseCueText: js.UndefOr[String] = js.undefined
   
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
-  var collapsedIcon: js.UndefOr[String] = js.native
+  var collapsedIcon: js.UndefOr[String] = js.undefined
   
-  var contentTheme: js.UndefOr[String] = js.native
+  var contentTheme: js.UndefOr[String] = js.undefined
   
-  var expandCueText: js.UndefOr[String] = js.native
+  var expandCueText: js.UndefOr[String] = js.undefined
   
-  var expandedIcon: js.UndefOr[String] = js.native
+  var expandedIcon: js.UndefOr[String] = js.undefined
   
-  var heading: js.UndefOr[String] = js.native
+  var heading: js.UndefOr[String] = js.undefined
   
-  var iconpos: js.UndefOr[String] = js.native
+  var iconpos: js.UndefOr[String] = js.undefined
   
-  var initSelector: js.UndefOr[String] = js.native
+  var initSelector: js.UndefOr[String] = js.undefined
   
-  var inset: js.UndefOr[Boolean] = js.native
+  var inset: js.UndefOr[Boolean] = js.undefined
   
-  var mini: js.UndefOr[Boolean] = js.native
+  var mini: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object CollapsibleOptions {
   

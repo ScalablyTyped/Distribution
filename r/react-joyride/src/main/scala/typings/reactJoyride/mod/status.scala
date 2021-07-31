@@ -10,42 +10,31 @@ import typings.reactJoyride.reactJoyrideStrings.skipped
 import typings.reactJoyride.reactJoyrideStrings.waiting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait status extends StObject {
   
-  var ERROR: error = js.native
+  var ERROR: error
   
-  var FINISHED: finished = js.native
+  var FINISHED: finished
   
-  var IDLE: idle = js.native
+  var IDLE: idle
   
-  var PAUSED: paused = js.native
+  var PAUSED: paused
   
-  var READY: ready = js.native
+  var READY: ready
   
-  var RUNNING: running = js.native
+  var RUNNING: running
   
-  var SKIPPED: skipped = js.native
+  var SKIPPED: skipped
   
-  var WAITING: waiting = js.native
+  var WAITING: waiting
 }
 object status {
   
   @scala.inline
-  def apply(
-    ERROR: error,
-    FINISHED: finished,
-    IDLE: idle,
-    PAUSED: paused,
-    READY: ready,
-    RUNNING: running,
-    SKIPPED: skipped,
-    WAITING: waiting
-  ): status = {
-    val __obj = js.Dynamic.literal(ERROR = ERROR.asInstanceOf[js.Any], FINISHED = FINISHED.asInstanceOf[js.Any], IDLE = IDLE.asInstanceOf[js.Any], PAUSED = PAUSED.asInstanceOf[js.Any], READY = READY.asInstanceOf[js.Any], RUNNING = RUNNING.asInstanceOf[js.Any], SKIPPED = SKIPPED.asInstanceOf[js.Any], WAITING = WAITING.asInstanceOf[js.Any])
+  def apply(): status = {
+    val __obj = js.Dynamic.literal(ERROR = "error", FINISHED = "finished", IDLE = "idle", PAUSED = "paused", READY = "ready", RUNNING = "running", SKIPPED = "skipped", WAITING = "waiting")
     __obj.asInstanceOf[status]
   }
   

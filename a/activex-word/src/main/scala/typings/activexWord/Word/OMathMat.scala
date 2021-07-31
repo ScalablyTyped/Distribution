@@ -2,40 +2,38 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMathMat extends StObject {
   
-  var Align: WdOMathVertAlignType = js.native
+  var Align: WdOMathVertAlignType
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  def Cell(Row: Double, Col: Double): OMath = js.native
+  def Cell(Row: Double, Col: Double): OMath
   
-  var ColGap: Double = js.native
+  var ColGap: Double
   
-  var ColGapRule: WdOMathSpacingRule = js.native
+  var ColGapRule: WdOMathSpacingRule
   
-  var ColSpacing: Double = js.native
+  var ColSpacing: Double
   
-  val Cols: OMathMatCols = js.native
+  val Cols: OMathMatCols
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var PlcHoldHidden: Boolean = js.native
+  var PlcHoldHidden: Boolean
   
-  var RowSpacing: Double = js.native
+  var RowSpacing: Double
   
-  var RowSpacingRule: WdOMathSpacingRule = js.native
+  var RowSpacingRule: WdOMathSpacingRule
   
-  val Rows: OMathMatRows = js.native
+  val Rows: OMathMatRows
   
   @JSName("Word.OMathMat_typekey")
-  var WordDotOMathMat_typekey: OMathMat = js.native
+  var WordDotOMathMat_typekey: OMathMat
 }
 object OMathMat {
   

@@ -2,21 +2,19 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BluetoothAdapterState extends StObject {
   
   /**
     * 蓝牙适配器是否可用
     */
-  var available: Boolean = js.native
+  var available: Boolean
   
   /**
     * 蓝牙适配器是否处于搜索状态
     */
-  var discovering: Boolean = js.native
+  var discovering: Boolean
 }
 object BluetoothAdapterState {
   

@@ -3,7 +3,6 @@ package typings.typeorm.mongodbTypingsMod
 import typings.typeorm.platformPlatformToolsMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/driver/mongodb/typings", "GridFSBucketReadStream")
@@ -17,10 +16,15 @@ class GridFSBucketReadStream protected () extends Readable {
     * @param filter The query to use to find the file document.
     * @param options Optional settings.
     */
-  def this(chunks: Collection[_], files: Collection[_], readPreference: js.Object, filter: js.Object) = this()
   def this(
-    chunks: Collection[_],
-    files: Collection[_],
+    chunks: Collection[js.Any],
+    files: Collection[js.Any],
+    readPreference: js.Object,
+    filter: js.Object
+  ) = this()
+  def this(
+    chunks: Collection[js.Any],
+    files: Collection[js.Any],
     readPreference: js.Object,
     filter: js.Object,
     options: GridFSBucketReadStreamOptions

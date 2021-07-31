@@ -2,7 +2,6 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,16 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * interfaces
   */
 // chayns.getUser()
-@js.native
 trait GetUserConfig extends StObject {
   
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
-  var fbId: js.UndefOr[String] = js.native
+  var fbId: js.UndefOr[String] = js.undefined
   
-  var personId: js.UndefOr[String] = js.native
+  var personId: js.UndefOr[String] = js.undefined
   
-  var userId: js.UndefOr[Double] = js.native
+  var userId: js.UndefOr[Double] = js.undefined
 }
 object GetUserConfig {
   

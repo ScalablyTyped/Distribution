@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoscalingPolicyScaleInControl extends StObject {
   
   /**
     * Maximum allowed number (or %) of VMs that can be deducted from the peak recommendation during the window autoscaler looks at when computing recommendations. Possibly all these VMs
     * can be deleted at once so user service needs to be prepared to lose that many VMs in one step.
     */
-  var maxScaledInReplicas: js.UndefOr[FixedOrPercent] = js.native
+  var maxScaledInReplicas: js.UndefOr[FixedOrPercent] = js.undefined
   
   /** How long back autoscaling should look when computing recommendations to include directives regarding slower scale in, as described above. */
-  var timeWindowSec: js.UndefOr[Double] = js.native
+  var timeWindowSec: js.UndefOr[Double] = js.undefined
 }
 object AutoscalingPolicyScaleInControl {
   

@@ -2,17 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapNavigationOptions extends StObject {
   
   /**
     * (Highmaps) General options for the map navigation buttons. Individual
     * options can be given from the mapNavigation.buttons option set.
     */
-  var buttonOptions: js.UndefOr[MapNavigationButtonOptions] = js.native
+  var buttonOptions: js.UndefOr[MapNavigationButtonOptions] = js.undefined
   
   /**
     * (Highmaps) The individual buttons for the map navigation. This usually
@@ -21,31 +19,31 @@ trait MapNavigationOptions extends StObject {
     * be overridden. But default, the `onclick`, `text` and `y` options are
     * individual.
     */
-  var buttons: js.UndefOr[MapNavigationButtonsOptions] = js.native
+  var buttons: js.UndefOr[MapNavigationButtonsOptions] = js.undefined
   
   /**
     * (Highmaps) Whether to enable navigation buttons. By default it inherits
     * the enabled setting.
     */
-  var enableButtons: js.UndefOr[Boolean] = js.native
+  var enableButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highmaps) Enables zooming in on an area on double clicking in the map.
     * By default it inherits the enabled setting.
     */
-  var enableDoubleClickZoom: js.UndefOr[Boolean] = js.native
+  var enableDoubleClickZoom: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highmaps) Whether to zoom in on an area when that area is double
     * clicked.
     */
-  var enableDoubleClickZoomTo: js.UndefOr[Boolean] = js.native
+  var enableDoubleClickZoomTo: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highmaps) Enables zooming by mouse wheel. By default it inherits the
     * enabled setting.
     */
-  var enableMouseWheelZoom: js.UndefOr[Boolean] = js.native
+  var enableMouseWheelZoom: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highmaps) Whether to enable multitouch zooming. Note that if the chart
@@ -53,7 +51,7 @@ trait MapNavigationOptions extends StObject {
     * touchdrag on the web page, so you should make sure the user is not
     * trapped inside the chart. By default it inherits the enabled setting.
     */
-  var enableTouchZoom: js.UndefOr[Boolean] = js.native
+  var enableTouchZoom: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highmaps) Whether to enable map navigation. The default is not to enable
@@ -66,13 +64,13 @@ trait MapNavigationOptions extends StObject {
     * multitouch zoom, double click zoom, double click zoom to element and
     * mousewheel zoom.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highmaps) Sensitivity of mouse wheel or trackpad scrolling. 1 is no
     * sensitivity, while with 2, one mousewheel delta will zoom in 50%.
     */
-  var mouseWheelSensitivity: js.UndefOr[Double] = js.native
+  var mouseWheelSensitivity: js.UndefOr[Double] = js.undefined
 }
 object MapNavigationOptions {
   

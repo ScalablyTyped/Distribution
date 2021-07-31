@@ -4,10 +4,8 @@ import typings.vegaLite.exprMod.ExprRef
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineOverlayMixins[ES /* <: ExprRef | SignalRef */] extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait LineOverlayMixins[ES /* <: ExprRef | SignalRef */] extends StObject {
     *
     * __Default value:__ `false`.
     */
-  var line: js.UndefOr[Boolean | OverlayMarkDef[ES]] = js.native
+  var line: js.UndefOr[Boolean | OverlayMarkDef[ES]] = js.undefined
 }
 object LineOverlayMixins {
   
@@ -30,7 +28,7 @@ object LineOverlayMixins {
   }
   
   @scala.inline
-  implicit class LineOverlayMixinsMutableBuilder[Self <: LineOverlayMixins[_], ES /* <: ExprRef | SignalRef */] (val x: Self with LineOverlayMixins[ES]) extends AnyVal {
+  implicit class LineOverlayMixinsMutableBuilder[Self <: LineOverlayMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & LineOverlayMixins[ES]) extends AnyVal {
     
     @scala.inline
     def setLine(value: Boolean | OverlayMarkDef[ES]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])

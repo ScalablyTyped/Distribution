@@ -4,7 +4,6 @@ import typings.fridaGum.ArmWriterOptions
 import typings.fridaGum.NativePointerValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ArmWriter")
 @js.native
 class ArmWriter protected ()
-  extends typings.fridaGum.ArmWriter {
+  extends StObject
+     with typings.fridaGum.ArmWriter {
   /**
     * Creates a new code writer for generating ARM machine code
     * written directly to memory at `codeAddress`.

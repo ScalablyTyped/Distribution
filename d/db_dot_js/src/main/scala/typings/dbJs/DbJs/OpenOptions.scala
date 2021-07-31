@@ -2,17 +2,15 @@ package typings.dbJs.DbJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenOptions extends StObject {
   
-  var schema: js.UndefOr[js.Any] = js.native
+  var schema: js.UndefOr[js.Any] = js.undefined
   
-  var server: String = js.native
+  var server: String
   
-  var version: Double = js.native
+  var version: Double
 }
 object OpenOptions {
   

@@ -3,173 +3,238 @@ package typings.snekfetch
 import typings.snekfetch.mod.methods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snekfetchStrings {
   
   @js.native
-  sealed trait ACL extends methods
+  sealed trait ACL
+    extends StObject
+       with methods
   @scala.inline
   def ACL: ACL = "ACL".asInstanceOf[ACL]
   
   @js.native
-  sealed trait BIND extends methods
+  sealed trait BIND
+    extends StObject
+       with methods
   @scala.inline
   def BIND: BIND = "BIND".asInstanceOf[BIND]
   
   @js.native
-  sealed trait CHECKOUT extends methods
+  sealed trait CHECKOUT
+    extends StObject
+       with methods
   @scala.inline
   def CHECKOUT: CHECKOUT = "CHECKOUT".asInstanceOf[CHECKOUT]
   
   @js.native
-  sealed trait CONNECT extends methods
+  sealed trait CONNECT
+    extends StObject
+       with methods
   @scala.inline
   def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
   
   @js.native
-  sealed trait COPY extends methods
+  sealed trait COPY
+    extends StObject
+       with methods
   @scala.inline
   def COPY: COPY = "COPY".asInstanceOf[COPY]
   
   @js.native
-  sealed trait DELETE extends methods
+  sealed trait DELETE
+    extends StObject
+       with methods
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait GET extends methods
+  sealed trait GET
+    extends StObject
+       with methods
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait HEAD extends methods
+  sealed trait HEAD
+    extends StObject
+       with methods
   @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
-  sealed trait LINK extends methods
+  sealed trait LINK
+    extends StObject
+       with methods
   @scala.inline
   def LINK: LINK = "LINK".asInstanceOf[LINK]
   
   @js.native
-  sealed trait LOCK extends methods
+  sealed trait LOCK
+    extends StObject
+       with methods
   @scala.inline
   def LOCK: LOCK = "LOCK".asInstanceOf[LOCK]
   
   @js.native
-  sealed trait MERGE extends methods
+  sealed trait MERGE
+    extends StObject
+       with methods
   @scala.inline
   def MERGE: MERGE = "MERGE".asInstanceOf[MERGE]
   
   @js.native
-  sealed trait MKACTIVITY extends methods
+  sealed trait MKACTIVITY
+    extends StObject
+       with methods
   @scala.inline
   def MKACTIVITY: MKACTIVITY = "MKACTIVITY".asInstanceOf[MKACTIVITY]
   
   @js.native
-  sealed trait MKCALENDAR extends methods
+  sealed trait MKCALENDAR
+    extends StObject
+       with methods
   @scala.inline
   def MKCALENDAR: MKCALENDAR = "MKCALENDAR".asInstanceOf[MKCALENDAR]
   
   @js.native
-  sealed trait MKCOL extends methods
+  sealed trait MKCOL
+    extends StObject
+       with methods
   @scala.inline
   def MKCOL: MKCOL = "MKCOL".asInstanceOf[MKCOL]
   
   @js.native
-  sealed trait MOVE extends methods
+  sealed trait MOVE
+    extends StObject
+       with methods
   @scala.inline
   def MOVE: MOVE = "MOVE".asInstanceOf[MOVE]
   
   @js.native
-  sealed trait NOTIFY extends methods
+  sealed trait NOTIFY
+    extends StObject
+       with methods
   @scala.inline
   def NOTIFY: NOTIFY = "NOTIFY".asInstanceOf[NOTIFY]
   
   @js.native
-  sealed trait OPTIONS extends methods
+  sealed trait OPTIONS
+    extends StObject
+       with methods
   @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
   @js.native
-  sealed trait PATCH extends methods
+  sealed trait PATCH
+    extends StObject
+       with methods
   @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
-  sealed trait POST extends methods
+  sealed trait POST
+    extends StObject
+       with methods
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait PROPFIND extends methods
+  sealed trait PROPFIND
+    extends StObject
+       with methods
   @scala.inline
   def PROPFIND: PROPFIND = "PROPFIND".asInstanceOf[PROPFIND]
   
   @js.native
-  sealed trait PROPPATCH extends methods
+  sealed trait PROPPATCH
+    extends StObject
+       with methods
   @scala.inline
   def PROPPATCH: PROPPATCH = "PROPPATCH".asInstanceOf[PROPPATCH]
   
   @js.native
-  sealed trait PURGE extends methods
+  sealed trait PURGE
+    extends StObject
+       with methods
   @scala.inline
   def PURGE: PURGE = "PURGE".asInstanceOf[PURGE]
   
   @js.native
-  sealed trait PUT extends methods
+  sealed trait PUT
+    extends StObject
+       with methods
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait REBIND extends methods
+  sealed trait REBIND
+    extends StObject
+       with methods
   @scala.inline
   def REBIND: REBIND = "REBIND".asInstanceOf[REBIND]
   
   @js.native
-  sealed trait REPORT extends methods
+  sealed trait REPORT
+    extends StObject
+       with methods
   @scala.inline
   def REPORT: REPORT = "REPORT".asInstanceOf[REPORT]
   
   @js.native
-  sealed trait SEARCH extends methods
+  sealed trait SEARCH
+    extends StObject
+       with methods
   @scala.inline
   def SEARCH: SEARCH = "SEARCH".asInstanceOf[SEARCH]
   
   @js.native
-  sealed trait SOURCE extends methods
+  sealed trait SOURCE
+    extends StObject
+       with methods
   @scala.inline
   def SOURCE: SOURCE = "SOURCE".asInstanceOf[SOURCE]
   
   @js.native
-  sealed trait SUBSCRIBE extends methods
+  sealed trait SUBSCRIBE
+    extends StObject
+       with methods
   @scala.inline
   def SUBSCRIBE: SUBSCRIBE = "SUBSCRIBE".asInstanceOf[SUBSCRIBE]
   
   @js.native
-  sealed trait TRACE extends methods
+  sealed trait TRACE
+    extends StObject
+       with methods
   @scala.inline
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   
   @js.native
-  sealed trait UNBIND extends methods
+  sealed trait UNBIND
+    extends StObject
+       with methods
   @scala.inline
   def UNBIND: UNBIND = "UNBIND".asInstanceOf[UNBIND]
   
   @js.native
-  sealed trait UNLINK extends methods
+  sealed trait UNLINK
+    extends StObject
+       with methods
   @scala.inline
   def UNLINK: UNLINK = "UNLINK".asInstanceOf[UNLINK]
   
   @js.native
-  sealed trait UNLOCK extends methods
+  sealed trait UNLOCK
+    extends StObject
+       with methods
   @scala.inline
   def UNLOCK: UNLOCK = "UNLOCK".asInstanceOf[UNLOCK]
   
   @js.native
-  sealed trait UNSUBSCRIBE extends methods
+  sealed trait UNSUBSCRIBE
+    extends StObject
+       with methods
   @scala.inline
   def UNSUBSCRIBE: UNSUBSCRIBE = "UNSUBSCRIBE".asInstanceOf[UNSUBSCRIBE]
 }

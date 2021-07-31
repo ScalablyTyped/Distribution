@@ -2,16 +2,16 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileManagerOptions extends ListOptions[ListElementStyle] {
+trait FileManagerOptions
+  extends StObject
+     with ListOptions[ListElementStyle] {
   
   /**
     * Current working directory.
     */
-  var cwd: js.UndefOr[String] = js.native
+  var cwd: js.UndefOr[String] = js.undefined
 }
 object FileManagerOptions {
   

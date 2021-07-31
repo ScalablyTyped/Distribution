@@ -3,28 +3,35 @@ package typings.wonderJs
 import typings.wonderJs.materialMod.Material
 import typings.wonderJs.quadCommandMod.QuadCommand
 import typings.wonderJs.shaderMod.Shader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/material/ShaderManager", JSImport.Namespace)
-@js.native
-object shaderManagerMod extends js.Object {
+object shaderManagerMod {
+  
+  @JSImport("wonder.js/dist/es2015/material/ShaderManager", "ShaderManager")
   @js.native
-  class ShaderManager protected () extends js.Object {
+  class ShaderManager protected () extends StObject {
     def this(material: Material) = this()
-    val shader: Shader = js.native
+    
     def dispose(): Unit = js.native
+    
     def init(): Unit = js.native
+    
     def setShader(shader: Shader): Unit = js.native
+    
+    val shader: Shader = js.native
+    
     def update(quadCmd: QuadCommand): Unit = js.native
   }
-  
   /* static members */
-  @js.native
-  object ShaderManager extends js.Object {
-    def create(material: Material): ShaderManager = js.native
+  object ShaderManager {
+    
+    @JSImport("wonder.js/dist/es2015/material/ShaderManager", "ShaderManager")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(material: Material): ShaderManager = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(material.asInstanceOf[js.Any]).asInstanceOf[ShaderManager]
   }
-  
 }
-

@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
-@js.native
 trait PlusMapsSearchPolicy extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusMapsSearchPolicy extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var DRIVING_DIS_FIRST: js.UndefOr[Double] = js.native
+  var DRIVING_DIS_FIRST: js.UndefOr[Double] = js.undefined
   
   /**
     * 最少费用优先
@@ -28,7 +26,7 @@ trait PlusMapsSearchPolicy extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var DRIVING_FEE_FIRST: js.UndefOr[Double] = js.native
+  var DRIVING_FEE_FIRST: js.UndefOr[Double] = js.undefined
   
   /**
     * 无高速公路线路
@@ -36,7 +34,7 @@ trait PlusMapsSearchPolicy extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var DRIVING_NO_EXPRESSWAY: js.UndefOr[Double] = js.native
+  var DRIVING_NO_EXPRESSWAY: js.UndefOr[Double] = js.undefined
   
   /**
     * 选择车票花销最少优先
@@ -44,7 +42,7 @@ trait PlusMapsSearchPolicy extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var TRANSIT_FEE_FIRST: js.UndefOr[Double] = js.native
+  var TRANSIT_FEE_FIRST: js.UndefOr[Double] = js.undefined
   
   /**
     * 时间优先
@@ -52,7 +50,7 @@ trait PlusMapsSearchPolicy extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var TRANSIT_TIME_FIRST: js.UndefOr[Double] = js.native
+  var TRANSIT_TIME_FIRST: js.UndefOr[Double] = js.undefined
   
   /**
     * 最少换乘优先
@@ -60,7 +58,7 @@ trait PlusMapsSearchPolicy extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var TRANSIT_TRANSFER_FIRST: js.UndefOr[Double] = js.native
+  var TRANSIT_TRANSFER_FIRST: js.UndefOr[Double] = js.undefined
   
   /**
     * 最少步行距离优先
@@ -68,7 +66,7 @@ trait PlusMapsSearchPolicy extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var TRANSIT_WALK_FIRST: js.UndefOr[Double] = js.native
+  var TRANSIT_WALK_FIRST: js.UndefOr[Double] = js.undefined
 }
 object PlusMapsSearchPolicy {
   

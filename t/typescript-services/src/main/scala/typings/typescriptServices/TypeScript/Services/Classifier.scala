@@ -2,29 +2,27 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Classifier extends StObject {
   
-  /* private */ def addResult(text: js.Any, offset: js.Any, result: js.Any, length: js.Any, kind: js.Any): js.Any = js.native
+  /* private */ def addResult(text: js.Any, offset: js.Any, result: js.Any, length: js.Any, kind: js.Any): js.Any
   
-  var characterWindow: js.Any = js.native
+  var characterWindow: js.Any
   
-  /* private */ def classFromKind(kind: js.Any): js.Any = js.native
+  /* private */ def classFromKind(kind: js.Any): js.Any
   
-  var diagnostics: js.Any = js.native
+  var diagnostics: js.Any
   
-  def getClassificationsForLine(text: String, lexState: EndOfLineState): ClassificationResult = js.native
+  def getClassificationsForLine(text: String, lexState: EndOfLineState): ClassificationResult
   
-  var host: IClassifierHost = js.native
+  var host: IClassifierHost
   
-  /* private */ def processToken(text: js.Any, offset: js.Any, token: js.Any, result: js.Any): js.Any = js.native
+  /* private */ def processToken(text: js.Any, offset: js.Any, token: js.Any, result: js.Any): js.Any
   
-  /* private */ def processTriviaList(text: js.Any, offset: js.Any, triviaList: js.Any, result: js.Any): js.Any = js.native
+  /* private */ def processTriviaList(text: js.Any, offset: js.Any, triviaList: js.Any, result: js.Any): js.Any
   
-  var scanner: js.Any = js.native
+  var scanner: js.Any
 }
 object Classifier {
   

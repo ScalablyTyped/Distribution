@@ -3,15 +3,13 @@ package typings.vscode.anon
 import typings.vscode.mod.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inserting extends StObject {
   
-  var inserting: Range = js.native
+  var inserting: Range
   
-  var replacing: Range = js.native
+  var replacing: Range
 }
 object Inserting {
   

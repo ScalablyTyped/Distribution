@@ -2,23 +2,23 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChartPlotAreaClickEvent extends ChartEvent {
+trait ChartPlotAreaClickEvent
+  extends StObject
+     with ChartEvent {
   
-  var category: js.UndefOr[js.Any] = js.native
+  var category: js.UndefOr[js.Any] = js.undefined
   
-  var element: js.UndefOr[js.Any] = js.native
+  var element: js.UndefOr[js.Any] = js.undefined
   
-  var originalEvent: js.UndefOr[js.Any] = js.native
+  var originalEvent: js.UndefOr[js.Any] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
   
-  var x: js.UndefOr[js.Any] = js.native
+  var x: js.UndefOr[js.Any] = js.undefined
   
-  var y: js.UndefOr[js.Any] = js.native
+  var y: js.UndefOr[js.Any] = js.undefined
 }
 object ChartPlotAreaClickEvent {
   

@@ -2,41 +2,41 @@ package typings.nodeZendesk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Organizations {
   
-  @js.native
-  trait Model extends AuditableModel {
+  trait Model
+    extends StObject
+       with AuditableModel {
     
-    var details: js.UndefOr[String | Null] = js.native
+    var details: js.UndefOr[String | Null] = js.undefined
     
-    var domain_names: js.UndefOr[js.Array[String]] = js.native
+    var domain_names: js.UndefOr[js.Array[String]] = js.undefined
     
-    var external_id: js.UndefOr[String | Null] = js.native
+    var external_id: js.UndefOr[String | Null] = js.undefined
     
-    var group_id: js.UndefOr[Double | Null] = js.native
+    var group_id: js.UndefOr[Double | Null] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var notes: js.UndefOr[String | Null] = js.native
+    var notes: js.UndefOr[String | Null] = js.undefined
     
-    var organization_fields: js.UndefOr[js.Object | Null] = js.native
+    var organization_fields: js.UndefOr[js.Object | Null] = js.undefined
     
-    var shared_comments: js.UndefOr[Boolean] = js.native
+    var shared_comments: js.UndefOr[Boolean] = js.undefined
     
-    var shared_tickets: js.UndefOr[Boolean] = js.native
+    var shared_tickets: js.UndefOr[Boolean] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
     
-    val url: js.UndefOr[String] = js.native
+    val url: js.UndefOr[String] = js.undefined
   }
   object Model {
     
     @scala.inline
     def apply(created_at: String, id: ZendeskID, name: String): Model = {
-      val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], updated_at = null)
       __obj.asInstanceOf[Model]
     }
     

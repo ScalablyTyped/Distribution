@@ -11,7 +11,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod extends Shortcut {
@@ -20,14 +19,13 @@ object listMod extends Shortcut {
   @js.native
   val default: FunctionComponent[ListProps] = js.native
   
-  @js.native
   trait ListField extends StObject {
     
-    var isListField: Boolean = js.native
+    var isListField: Boolean
     
-    var key: Double = js.native
+    var key: Double
     
-    var name: Double = js.native
+    var name: Double
   }
   object ListField {
     
@@ -55,7 +53,7 @@ object listMod extends Shortcut {
   trait ListOperations extends StObject {
     
     def add(): Unit = js.native
-    def add(defaultValue: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
+    def add(defaultValue: Unit, index: Double): Unit = js.native
     def add(defaultValue: StoreValue): Unit = js.native
     def add(defaultValue: StoreValue, index: Double): Unit = js.native
     
@@ -65,7 +63,6 @@ object listMod extends Shortcut {
     def remove(index: Double): Unit = js.native
   }
   
-  @js.native
   trait ListProps extends StObject {
     
     var children: js.UndefOr[
@@ -75,15 +72,15 @@ object listMod extends Shortcut {
           /* meta */ Meta, 
           Element | ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var initialValue: js.UndefOr[js.Array[_]] = js.native
+    var initialValue: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var name: NamePath = js.native
+    var name: NamePath
     
-    var rules: js.UndefOr[js.Array[ValidatorRule]] = js.native
+    var rules: js.UndefOr[js.Array[ValidatorRule]] = js.undefined
     
-    var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.native
+    var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
   }
   object ListProps {
     
@@ -105,7 +102,7 @@ object listMod extends Shortcut {
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       @scala.inline
-      def setInitialValue(value: js.Array[_]): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+      def setInitialValue(value: js.Array[js.Any]): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)

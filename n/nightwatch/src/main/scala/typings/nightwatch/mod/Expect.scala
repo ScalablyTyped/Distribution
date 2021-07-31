@@ -3,13 +3,13 @@ package typings.nightwatch.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Expect
-  extends NightwatchBrowser
-     with NightwatchLanguageChains {
+  extends StObject
+     with NightwatchLanguageChains
+     with NightwatchBrowser {
   
   /**
     * Checks if the type (i.e. tag name) of a specified element is of an expected value.

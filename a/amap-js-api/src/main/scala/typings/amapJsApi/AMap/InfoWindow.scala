@@ -8,11 +8,12 @@ import typings.amapJsApi.anon.Target
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InfoWindow[ExtraData] extends Overlay[ExtraData] {
+trait InfoWindow[ExtraData]
+  extends StObject
+     with Overlay[ExtraData] {
   
   /**
     * 关闭信息窗体
@@ -125,14 +126,13 @@ object InfoWindow {
     def `top-right`: typings.amapJsApi.amapJsApiStrings.`top-right` = "top-right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`top-right`]
   }
   
-  @js.native
   trait EventMap[I] extends StObject {
     
-    var change: Event_[typings.amapJsApi.amapJsApiStrings.change, Target[I]] = js.native
+    var change: Event_[typings.amapJsApi.amapJsApiStrings.change, Target[I]]
     
-    var close: Event_[typings.amapJsApi.amapJsApiStrings.close, Target[I]] = js.native
+    var close: Event_[typings.amapJsApi.amapJsApiStrings.close, Target[I]]
     
-    var open: Event_[typings.amapJsApi.amapJsApiStrings.open, Target[I]] = js.native
+    var open: Event_[typings.amapJsApi.amapJsApiStrings.open, Target[I]]
   }
   object EventMap {
     
@@ -143,7 +143,7 @@ object InfoWindow {
     }
     
     @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap[_], I] (val x: Self with EventMap[I]) extends AnyVal {
+    implicit class EventMapMutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       @scala.inline
       def setChange(value: Event_[change, Target[I]]): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
@@ -156,57 +156,57 @@ object InfoWindow {
     }
   }
   
-  @js.native
   trait Options[ExtraData]
-    extends typings.amapJsApi.AMap.Overlay.Options[ExtraData] {
+    extends StObject
+       with typings.amapJsApi.AMap.Overlay.Options[ExtraData] {
     
     /**
       * 信息窗体锚点
       */
-    var anchor: js.UndefOr[Anchor] = js.native
+    var anchor: js.UndefOr[Anchor] = js.undefined
     
     /**
       * 是否自动调整窗体到视野内
       */
-    var autoMove: js.UndefOr[Boolean] = js.native
+    var autoMove: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 控制是否在鼠标点击地图后关闭信息窗体
       */
-    var closeWhenClickMap: js.UndefOr[Boolean] = js.native
+    var closeWhenClickMap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 显示内容
       */
-    var content: js.UndefOr[String | HTMLElement] = js.native
+    var content: js.UndefOr[String | HTMLElement] = js.undefined
     
     // internal
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * 是否自定义窗体
       */
-    var isCustom: js.UndefOr[Boolean] = js.native
+    var isCustom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 信息窗体显示位置偏移量
       */
-    var offset: js.UndefOr[Pixel] = js.native
+    var offset: js.UndefOr[Pixel] = js.undefined
     
     /**
       * 信息窗体显示基点位置
       */
-    var position: js.UndefOr[LocationValue] = js.native
+    var position: js.UndefOr[LocationValue] = js.undefined
     
     /**
       * 是否显示信息窗体阴影
       */
-    var showShadow: js.UndefOr[Boolean] = js.native
+    var showShadow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 信息窗体尺寸
       */
-    var size: js.UndefOr[SizeValue] = js.native
+    var size: js.UndefOr[SizeValue] = js.undefined
   }
   object Options {
     
@@ -217,7 +217,7 @@ object InfoWindow {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], ExtraData] (val x: Self with Options[ExtraData]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])

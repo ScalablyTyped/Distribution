@@ -2,15 +2,13 @@ package typings.leafletRoutingMachine.mod.Routing_
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorControlOptions extends StObject {
   
-  var formatMessage: js.UndefOr[js.Function1[/* error */ IError, String]] = js.native
+  var formatMessage: js.UndefOr[js.Function1[/* error */ IError, String]] = js.undefined
   
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
 }
 object ErrorControlOptions {
   

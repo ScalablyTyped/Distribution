@@ -3,7 +3,6 @@ package typings.rcEasyui.mod
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-easyui", "Layout")
@@ -44,9 +43,12 @@ object Layout {
     
     object locale {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Layout.contextTypes.locale")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Layout.contextTypes.locale
       @JSImport("rc-easyui", "Layout.contextTypes.locale.isRequired")
@@ -56,9 +58,12 @@ object Layout {
     
     object t {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Layout.contextTypes.t")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Layout.contextTypes.t
       @JSImport("rc-easyui", "Layout.contextTypes.t.isRequired")
@@ -69,26 +74,30 @@ object Layout {
   
   object defaultProps {
     
-    @JSImport("rc-easyui", "Layout.defaultProps.onPanelResizeStart")
+    @JSImport("rc-easyui", "Layout.defaultProps")
     @js.native
-    def onPanelResizeStart(e: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("rc-easyui", "Layout.defaultProps.onPanelResizeStop")
-    @js.native
-    def onPanelResizeStop(e: js.Any): Unit = js.native
+    @scala.inline
+    def onPanelResizeStart(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPanelResizeStart")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "Layout.defaultProps.onPanelResizing")
-    @js.native
-    def onPanelResizing(e: js.Any): Unit = js.native
+    @scala.inline
+    def onPanelResizeStop(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPanelResizeStop")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def onPanelResizing(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPanelResizing")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object propTypes {
     
     object selectedTab {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Layout.propTypes.selectedTab")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Layout.propTypes.selectedTab
       @JSImport("rc-easyui", "Layout.propTypes.selectedTab.isRequired")

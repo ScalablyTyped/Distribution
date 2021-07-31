@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,533 +17,887 @@ sealed trait GeometricShapeType extends StObject
 object GeometricShapeType extends StObject {
   
   @js.native
-  sealed trait accentBorderCallout1 extends GeometricShapeType
+  sealed trait accentBorderCallout1
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait accentBorderCallout2 extends GeometricShapeType
+  sealed trait accentBorderCallout2
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait accentBorderCallout3 extends GeometricShapeType
+  sealed trait accentBorderCallout3
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait accentCallout1 extends GeometricShapeType
+  sealed trait accentCallout1
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait accentCallout2 extends GeometricShapeType
+  sealed trait accentCallout2
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait accentCallout3 extends GeometricShapeType
+  sealed trait accentCallout3
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait actionButtonBackPrevious extends GeometricShapeType
+  sealed trait actionButtonBackPrevious
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait actionButtonBeginning extends GeometricShapeType
+  sealed trait actionButtonBeginning
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait actionButtonBlank extends GeometricShapeType
+  sealed trait actionButtonBlank
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait actionButtonDocument extends GeometricShapeType
+  sealed trait actionButtonDocument
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait actionButtonEnd extends GeometricShapeType
+  sealed trait actionButtonEnd
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait actionButtonForwardNext extends GeometricShapeType
+  sealed trait actionButtonForwardNext
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait actionButtonHelp extends GeometricShapeType
+  sealed trait actionButtonHelp
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait actionButtonHome extends GeometricShapeType
+  sealed trait actionButtonHome
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait actionButtonInformation extends GeometricShapeType
+  sealed trait actionButtonInformation
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait actionButtonMovie extends GeometricShapeType
+  sealed trait actionButtonMovie
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait actionButtonReturn extends GeometricShapeType
+  sealed trait actionButtonReturn
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait actionButtonSound extends GeometricShapeType
+  sealed trait actionButtonSound
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait arc extends GeometricShapeType
+  sealed trait arc
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait bentArrow extends GeometricShapeType
+  sealed trait bentArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait bentUpArrow extends GeometricShapeType
+  sealed trait bentUpArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait bevel extends GeometricShapeType
+  sealed trait bevel
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait blockArc extends GeometricShapeType
+  sealed trait blockArc
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait borderCallout1 extends GeometricShapeType
+  sealed trait borderCallout1
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait borderCallout2 extends GeometricShapeType
+  sealed trait borderCallout2
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait borderCallout3 extends GeometricShapeType
+  sealed trait borderCallout3
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait bracePair extends GeometricShapeType
+  sealed trait bracePair
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait bracketPair extends GeometricShapeType
+  sealed trait bracketPair
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait callout1 extends GeometricShapeType
+  sealed trait callout1
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait callout2 extends GeometricShapeType
+  sealed trait callout2
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait callout3 extends GeometricShapeType
+  sealed trait callout3
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait can extends GeometricShapeType
+  sealed trait can
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait chartPlus extends GeometricShapeType
+  sealed trait chartPlus
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait chartStar extends GeometricShapeType
+  sealed trait chartStar
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait chartX extends GeometricShapeType
+  sealed trait chartX
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait chevron extends GeometricShapeType
+  sealed trait chevron
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait chord extends GeometricShapeType
+  sealed trait chord
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait circularArrow extends GeometricShapeType
+  sealed trait circularArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait cloud extends GeometricShapeType
+  sealed trait cloud
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait cloudCallout extends GeometricShapeType
+  sealed trait cloudCallout
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait corner extends GeometricShapeType
+  sealed trait corner
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait cornerTabs extends GeometricShapeType
+  sealed trait cornerTabs
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait cube extends GeometricShapeType
+  sealed trait cube
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait curvedDownArrow extends GeometricShapeType
+  sealed trait curvedDownArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait curvedLeftArrow extends GeometricShapeType
+  sealed trait curvedLeftArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait curvedRightArrow extends GeometricShapeType
+  sealed trait curvedRightArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait curvedUpArrow extends GeometricShapeType
+  sealed trait curvedUpArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait decagon extends GeometricShapeType
+  sealed trait decagon
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait diagonalStripe extends GeometricShapeType
+  sealed trait diagonalStripe
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait diamond extends GeometricShapeType
+  sealed trait diamond
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait dodecagon extends GeometricShapeType
+  sealed trait dodecagon
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait donut extends GeometricShapeType
+  sealed trait donut
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait doubleWave extends GeometricShapeType
+  sealed trait doubleWave
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait downArrow extends GeometricShapeType
+  sealed trait downArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait downArrowCallout extends GeometricShapeType
+  sealed trait downArrowCallout
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait ellipse extends GeometricShapeType
+  sealed trait ellipse
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait ellipseRibbon extends GeometricShapeType
+  sealed trait ellipseRibbon
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait ellipseRibbon2 extends GeometricShapeType
+  sealed trait ellipseRibbon2
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartAlternateProcess extends GeometricShapeType
+  sealed trait flowChartAlternateProcess
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartCollate extends GeometricShapeType
+  sealed trait flowChartCollate
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartConnector extends GeometricShapeType
+  sealed trait flowChartConnector
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartDecision extends GeometricShapeType
+  sealed trait flowChartDecision
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartDelay extends GeometricShapeType
+  sealed trait flowChartDelay
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartDisplay extends GeometricShapeType
+  sealed trait flowChartDisplay
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartDocument extends GeometricShapeType
+  sealed trait flowChartDocument
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartExtract extends GeometricShapeType
+  sealed trait flowChartExtract
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartInputOutput extends GeometricShapeType
+  sealed trait flowChartInputOutput
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartInternalStorage extends GeometricShapeType
+  sealed trait flowChartInternalStorage
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartMagneticDisk extends GeometricShapeType
+  sealed trait flowChartMagneticDisk
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartMagneticDrum extends GeometricShapeType
+  sealed trait flowChartMagneticDrum
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartMagneticTape extends GeometricShapeType
+  sealed trait flowChartMagneticTape
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartManualInput extends GeometricShapeType
+  sealed trait flowChartManualInput
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartManualOperation extends GeometricShapeType
+  sealed trait flowChartManualOperation
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartMerge extends GeometricShapeType
+  sealed trait flowChartMerge
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartMultidocument extends GeometricShapeType
+  sealed trait flowChartMultidocument
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartOfflineStorage extends GeometricShapeType
+  sealed trait flowChartOfflineStorage
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartOffpageConnector extends GeometricShapeType
+  sealed trait flowChartOffpageConnector
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartOnlineStorage extends GeometricShapeType
+  sealed trait flowChartOnlineStorage
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartOr extends GeometricShapeType
+  sealed trait flowChartOr
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartPredefinedProcess extends GeometricShapeType
+  sealed trait flowChartPredefinedProcess
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartPreparation extends GeometricShapeType
+  sealed trait flowChartPreparation
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartProcess extends GeometricShapeType
+  sealed trait flowChartProcess
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartPunchedCard extends GeometricShapeType
+  sealed trait flowChartPunchedCard
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartPunchedTape extends GeometricShapeType
+  sealed trait flowChartPunchedTape
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartSort extends GeometricShapeType
+  sealed trait flowChartSort
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartSummingJunction extends GeometricShapeType
+  sealed trait flowChartSummingJunction
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait flowChartTerminator extends GeometricShapeType
+  sealed trait flowChartTerminator
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait foldedCorner extends GeometricShapeType
+  sealed trait foldedCorner
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait frame extends GeometricShapeType
+  sealed trait frame
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait funnel extends GeometricShapeType
+  sealed trait funnel
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait gear6 extends GeometricShapeType
+  sealed trait gear6
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait gear9 extends GeometricShapeType
+  sealed trait gear9
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait halfFrame extends GeometricShapeType
+  sealed trait halfFrame
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait heart extends GeometricShapeType
+  sealed trait heart
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait heptagon extends GeometricShapeType
+  sealed trait heptagon
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait hexagon extends GeometricShapeType
+  sealed trait hexagon
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait homePlate extends GeometricShapeType
+  sealed trait homePlate
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait horizontalScroll extends GeometricShapeType
+  sealed trait horizontalScroll
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait irregularSeal1 extends GeometricShapeType
+  sealed trait irregularSeal1
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait irregularSeal2 extends GeometricShapeType
+  sealed trait irregularSeal2
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait leftArrow extends GeometricShapeType
+  sealed trait leftArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait leftArrowCallout extends GeometricShapeType
+  sealed trait leftArrowCallout
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait leftBrace extends GeometricShapeType
+  sealed trait leftBrace
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait leftBracket extends GeometricShapeType
+  sealed trait leftBracket
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait leftCircularArrow extends GeometricShapeType
+  sealed trait leftCircularArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait leftRightArrow extends GeometricShapeType
+  sealed trait leftRightArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait leftRightArrowCallout extends GeometricShapeType
+  sealed trait leftRightArrowCallout
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait leftRightCircularArrow extends GeometricShapeType
+  sealed trait leftRightCircularArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait leftRightRibbon extends GeometricShapeType
+  sealed trait leftRightRibbon
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait leftRightUpArrow extends GeometricShapeType
+  sealed trait leftRightUpArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait leftUpArrow extends GeometricShapeType
+  sealed trait leftUpArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait lightningBolt extends GeometricShapeType
+  sealed trait lightningBolt
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait lineInverse extends GeometricShapeType
+  sealed trait lineInverse
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait mathDivide extends GeometricShapeType
+  sealed trait mathDivide
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait mathEqual extends GeometricShapeType
+  sealed trait mathEqual
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait mathMinus extends GeometricShapeType
+  sealed trait mathMinus
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait mathMultiply extends GeometricShapeType
+  sealed trait mathMultiply
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait mathNotEqual extends GeometricShapeType
+  sealed trait mathNotEqual
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait mathPlus extends GeometricShapeType
+  sealed trait mathPlus
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait moon extends GeometricShapeType
+  sealed trait moon
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait noSmoking extends GeometricShapeType
+  sealed trait noSmoking
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait nonIsoscelesTrapezoid extends GeometricShapeType
+  sealed trait nonIsoscelesTrapezoid
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait notchedRightArrow extends GeometricShapeType
+  sealed trait notchedRightArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait octagon extends GeometricShapeType
+  sealed trait octagon
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait parallelogram extends GeometricShapeType
+  sealed trait parallelogram
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait pentagon extends GeometricShapeType
+  sealed trait pentagon
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait pie extends GeometricShapeType
+  sealed trait pie
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait pieWedge extends GeometricShapeType
+  sealed trait pieWedge
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait plaque extends GeometricShapeType
+  sealed trait plaque
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait plaqueTabs extends GeometricShapeType
+  sealed trait plaqueTabs
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait plus extends GeometricShapeType
+  sealed trait plus
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait quadArrow extends GeometricShapeType
+  sealed trait quadArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait quadArrowCallout extends GeometricShapeType
+  sealed trait quadArrowCallout
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait rectangle extends GeometricShapeType
+  sealed trait rectangle
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait ribbon extends GeometricShapeType
+  sealed trait ribbon
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait ribbon2 extends GeometricShapeType
+  sealed trait ribbon2
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait rightArrow extends GeometricShapeType
+  sealed trait rightArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait rightArrowCallout extends GeometricShapeType
+  sealed trait rightArrowCallout
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait rightBrace extends GeometricShapeType
+  sealed trait rightBrace
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait rightBracket extends GeometricShapeType
+  sealed trait rightBracket
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait rightTriangle extends GeometricShapeType
+  sealed trait rightTriangle
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait round1Rectangle extends GeometricShapeType
+  sealed trait round1Rectangle
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait round2DiagonalRectangle extends GeometricShapeType
+  sealed trait round2DiagonalRectangle
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait round2SameRectangle extends GeometricShapeType
+  sealed trait round2SameRectangle
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait roundRectangle extends GeometricShapeType
+  sealed trait roundRectangle
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait smileyFace extends GeometricShapeType
+  sealed trait smileyFace
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait snip1Rectangle extends GeometricShapeType
+  sealed trait snip1Rectangle
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait snip2DiagonalRectangle extends GeometricShapeType
+  sealed trait snip2DiagonalRectangle
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait snip2SameRectangle extends GeometricShapeType
+  sealed trait snip2SameRectangle
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait snipRoundRectangle extends GeometricShapeType
+  sealed trait snipRoundRectangle
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait squareTabs extends GeometricShapeType
+  sealed trait squareTabs
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait star10 extends GeometricShapeType
+  sealed trait star10
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait star12 extends GeometricShapeType
+  sealed trait star12
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait star16 extends GeometricShapeType
+  sealed trait star16
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait star24 extends GeometricShapeType
+  sealed trait star24
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait star32 extends GeometricShapeType
+  sealed trait star32
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait star4 extends GeometricShapeType
+  sealed trait star4
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait star5 extends GeometricShapeType
+  sealed trait star5
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait star6 extends GeometricShapeType
+  sealed trait star6
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait star7 extends GeometricShapeType
+  sealed trait star7
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait star8 extends GeometricShapeType
+  sealed trait star8
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait stripedRightArrow extends GeometricShapeType
+  sealed trait stripedRightArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait sun extends GeometricShapeType
+  sealed trait sun
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait swooshArrow extends GeometricShapeType
+  sealed trait swooshArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait teardrop extends GeometricShapeType
+  sealed trait teardrop
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait trapezoid extends GeometricShapeType
+  sealed trait trapezoid
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait triangle extends GeometricShapeType
+  sealed trait triangle
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait upArrow extends GeometricShapeType
+  sealed trait upArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait upArrowCallout extends GeometricShapeType
+  sealed trait upArrowCallout
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait upDownArrow extends GeometricShapeType
+  sealed trait upDownArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait upDownArrowCallout extends GeometricShapeType
+  sealed trait upDownArrowCallout
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait uturnArrow extends GeometricShapeType
+  sealed trait uturnArrow
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait verticalScroll extends GeometricShapeType
+  sealed trait verticalScroll
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait wave extends GeometricShapeType
+  sealed trait wave
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait wedgeEllipseCallout extends GeometricShapeType
+  sealed trait wedgeEllipseCallout
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait wedgeRRectCallout extends GeometricShapeType
+  sealed trait wedgeRRectCallout
+    extends StObject
+       with GeometricShapeType
   
   @js.native
-  sealed trait wedgeRectCallout extends GeometricShapeType
+  sealed trait wedgeRectCallout
+    extends StObject
+       with GeometricShapeType
 }

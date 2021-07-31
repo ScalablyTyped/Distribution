@@ -11,12 +11,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.right
 import typings.arcgisJsApi.arcgisJsApiStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapViewProperties
-  extends ViewProperties
+  extends StObject
+     with ViewProperties
      with BreakpointsOwnerProperties {
   
   /**
@@ -24,35 +23,35 @@ trait MapViewProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#background)
     */
-  var background: js.UndefOr[ColorBackgroundProperties] = js.native
+  var background: js.UndefOr[ColorBackgroundProperties] = js.undefined
   
   /**
     * Represents the view's center point; when setting the center, you may pass a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) instance or an array of numbers representing a longitude/latitude pair (`[-100.4593, 36.9014]`).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#center)
     */
-  var center: js.UndefOr[PointProperties | js.Array[Double]] = js.native
+  var center: js.UndefOr[PointProperties | js.Array[Double]] = js.undefined
   
   /**
     * Specifies constraints to [scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale), [zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#zoom), and [rotation](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#rotation) that may be applied to the MapView.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints)
     */
-  var constraints: js.UndefOr[MapViewConstraints] = js.native
+  var constraints: js.UndefOr[MapViewConstraints] = js.undefined
   
   /**
     * The extent represents the visible portion of a [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) within the view as an instance of [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#extent)
     */
-  var extent: js.UndefOr[ExtentProperties] = js.native
+  var extent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
     * Options for configuring the highlight.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
-  var highlightOptions: js.UndefOr[MapViewHighlightOptionsProperties] = js.native
+  var highlightOptions: js.UndefOr[MapViewHighlightOptionsProperties] = js.undefined
   
   /**
     * Defines which anchor stays still while resizing the browser window.
@@ -61,35 +60,35 @@ trait MapViewProperties
     */
   var resizeAlign: js.UndefOr[
     center | left | right | top | bottom | `top-left` | `top-right` | `bottom-left` | `bottom-right`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The clockwise rotation of due north in relation to the top of the view in degrees.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#rotation)
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * Represents the map scale at the center of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale)
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * Represents the current view as a [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html) or point of observation on the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#viewpoint)
     */
-  var viewpoint: js.UndefOr[ViewpointProperties] = js.native
+  var viewpoint: js.UndefOr[ViewpointProperties] = js.undefined
   
   /**
     * Represents the level of detail (LOD) at the center of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#zoom)
     */
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object MapViewProperties {
   

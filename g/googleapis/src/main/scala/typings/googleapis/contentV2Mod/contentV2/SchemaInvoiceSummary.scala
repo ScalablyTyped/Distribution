@@ -2,41 +2,39 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInvoiceSummary extends StObject {
   
   /**
     * Summary of the total amounts of the additional charges.
     */
-  var additionalChargeSummaries: js.UndefOr[js.Array[SchemaInvoiceSummaryAdditionalChargeSummary]] = js.native
+  var additionalChargeSummaries: js.UndefOr[js.Array[SchemaInvoiceSummaryAdditionalChargeSummary]] = js.undefined
   
   /**
     * Deprecated.
     */
-  var customerBalance: js.UndefOr[SchemaAmount] = js.native
+  var customerBalance: js.UndefOr[SchemaAmount] = js.undefined
   
   /**
     * Deprecated.
     */
-  var googleBalance: js.UndefOr[SchemaAmount] = js.native
+  var googleBalance: js.UndefOr[SchemaAmount] = js.undefined
   
   /**
     * Deprecated.
     */
-  var merchantBalance: js.UndefOr[SchemaAmount] = js.native
+  var merchantBalance: js.UndefOr[SchemaAmount] = js.undefined
   
   /**
     * [required] Total price for the product.
     */
-  var productTotal: js.UndefOr[SchemaAmount] = js.native
+  var productTotal: js.UndefOr[SchemaAmount] = js.undefined
   
   /**
     * Deprecated.
     */
-  var promotionSummaries: js.UndefOr[js.Array[SchemaPromotion]] = js.native
+  var promotionSummaries: js.UndefOr[js.Array[SchemaPromotion]] = js.undefined
 }
 object SchemaInvoiceSummary {
   

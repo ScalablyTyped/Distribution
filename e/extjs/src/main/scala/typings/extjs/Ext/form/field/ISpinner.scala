@@ -3,51 +3,51 @@ package typings.extjs.Ext.form.field
 import typings.extjs.Ext.IElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISpinner extends ITrigger {
+trait ISpinner
+  extends StObject
+     with ITrigger {
   
   /** [Config Option] (Boolean) */
-  var keyNavEnabled: js.UndefOr[Boolean] = js.native
+  var keyNavEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var mouseWheelEnabled: js.UndefOr[Boolean] = js.native
+  var mouseWheelEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] This method is called when the spinner down button is clicked or when the down arrow key is pressed if keyNavEnabled  */
-  var onSpinDown: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSpinDown: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] This method is called when the spinner up button is clicked or when the up arrow key is pressed if keyNavEnabled is */
-  var onSpinUp: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSpinUp: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Sets whether the spinner down button is enabled
     * @param enabled Boolean true to enable the button, false to disable it.
     */
-  var setSpinDownEnabled: js.UndefOr[js.Function1[/* enabled */ js.UndefOr[Boolean], Unit]] = js.native
+  var setSpinDownEnabled: js.UndefOr[js.Function1[/* enabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets whether the spinner up button is enabled
     * @param enabled Boolean true to enable the button, false to disable it.
     */
-  var setSpinUpEnabled: js.UndefOr[js.Function1[/* enabled */ js.UndefOr[Boolean], Unit]] = js.native
+  var setSpinUpEnabled: js.UndefOr[js.Function1[/* enabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Triggers the spinner to step down fires the spin and spindown events and calls the onSpinDown method  */
-  var spinDown: js.UndefOr[js.Function0[Unit]] = js.native
+  var spinDown: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Property] (Ext.Element) */
-  var spinDownEl: js.UndefOr[IElement] = js.native
+  var spinDownEl: js.UndefOr[IElement] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var spinDownEnabled: js.UndefOr[Boolean] = js.native
+  var spinDownEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Triggers the spinner to step up fires the spin and spinup events and calls the onSpinUp method  */
-  var spinUp: js.UndefOr[js.Function0[Unit]] = js.native
+  var spinUp: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Property] (Ext.Element) */
-  var spinUpEl: js.UndefOr[IElement] = js.native
+  var spinUpEl: js.UndefOr[IElement] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var spinUpEnabled: js.UndefOr[Boolean] = js.native
+  var spinUpEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object ISpinner {
   

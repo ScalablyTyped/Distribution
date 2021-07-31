@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PendingAggregationRequest extends StObject {
   
   /**
     * The 12-digit account ID of the account requesting to aggregate data.
     */
-  var RequesterAccountId: js.UndefOr[AccountId] = js.native
+  var RequesterAccountId: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The region requesting to aggregate data. 
     */
-  var RequesterAwsRegion: js.UndefOr[AwsRegion] = js.native
+  var RequesterAwsRegion: js.UndefOr[AwsRegion] = js.undefined
 }
 object PendingAggregationRequest {
   

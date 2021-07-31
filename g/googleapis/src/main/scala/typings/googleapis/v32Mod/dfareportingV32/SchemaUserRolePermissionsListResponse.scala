@@ -2,25 +2,23 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * User Role Permission List Response
   */
-@js.native
 trait SchemaUserRolePermissionsListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#userRolePermissionsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * User role permission collection.
     */
-  var userRolePermissions: js.UndefOr[js.Array[SchemaUserRolePermission]] = js.native
+  var userRolePermissions: js.UndefOr[js.Array[SchemaUserRolePermission]] = js.undefined
 }
 object SchemaUserRolePermissionsListResponse {
   

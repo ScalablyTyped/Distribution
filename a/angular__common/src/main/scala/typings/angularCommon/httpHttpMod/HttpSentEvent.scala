@@ -3,14 +3,13 @@ package typings.angularCommon.httpHttpMod
 import typings.angularCommon.httpHttpMod.HttpEventType.Sent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpSentEvent
-  extends HttpEvent[js.Any] {
+  extends StObject
+     with HttpEvent[js.Any] {
   
-  var `type`: Sent = js.native
+  var `type`: Sent
 }
 object HttpSentEvent {
   

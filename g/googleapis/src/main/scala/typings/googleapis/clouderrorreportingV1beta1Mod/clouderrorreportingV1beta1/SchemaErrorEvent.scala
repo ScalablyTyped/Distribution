@@ -2,36 +2,34 @@ package typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An error event which is returned by the Error Reporting system.
   */
-@js.native
 trait SchemaErrorEvent extends StObject {
   
   /**
     * Data about the context in which the error occurred.
     */
-  var context: js.UndefOr[SchemaErrorContext] = js.native
+  var context: js.UndefOr[SchemaErrorContext] = js.undefined
   
   /**
     * Time when the event occurred as provided in the error report. If the
     * report did not contain a timestamp, the time the error was received by
     * the Error Reporting system is used.
     */
-  var eventTime: js.UndefOr[String] = js.native
+  var eventTime: js.UndefOr[String] = js.undefined
   
   /**
     * The stack trace that was reported or logged by the service.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * The `ServiceContext` for which this error was reported.
     */
-  var serviceContext: js.UndefOr[SchemaServiceContext] = js.native
+  var serviceContext: js.UndefOr[SchemaServiceContext] = js.undefined
 }
 object SchemaErrorEvent {
   

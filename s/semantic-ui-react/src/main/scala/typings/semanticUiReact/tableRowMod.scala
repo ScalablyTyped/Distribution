@@ -13,7 +13,6 @@ import typings.semanticUiReact.semanticUiReactStrings.right
 import typings.semanticUiReact.tableCellMod.TableCellProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableRowMod extends Shortcut {
@@ -22,47 +21,46 @@ object tableRowMod extends Shortcut {
   @js.native
   val default: StatelessComponent[TableRowProps] = js.native
   
-  @js.native
   trait StrictTableRowProps extends StObject {
     
     /** A row can be active or selected by a user. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** An element type to render as (string or function). */
-    var cellAs: js.UndefOr[js.Any] = js.native
+    var cellAs: js.UndefOr[js.Any] = js.undefined
     
     /** Shorthand array of props for TableCell. */
-    var cells: js.UndefOr[SemanticShorthandCollection[TableCellProps]] = js.native
+    var cells: js.UndefOr[SemanticShorthandCollection[TableCellProps]] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** A row can be disabled. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** A row may call attention to an error or a negative value. */
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
     /** A row may let a user know whether a value is bad. */
-    var negative: js.UndefOr[Boolean] = js.native
+    var negative: js.UndefOr[Boolean] = js.undefined
     
     /** A row may let a user know whether a value is good. */
-    var positive: js.UndefOr[Boolean] = js.native
+    var positive: js.UndefOr[Boolean] = js.undefined
     
     /** A table row can adjust its text alignment. */
-    var textAlign: js.UndefOr[center | left | right] = js.native
+    var textAlign: js.UndefOr[center | left | right] = js.undefined
     
     /** A table row can adjust its vertical alignment. */
-    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.native
+    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.undefined
     
     /** A row may warn a user. */
-    var warning: js.UndefOr[Boolean] = js.native
+    var warning: js.UndefOr[Boolean] = js.undefined
   }
   object StrictTableRowProps {
     
@@ -158,9 +156,9 @@ object tableRowMod extends Shortcut {
     }
   }
   
-  @js.native
   trait TableRowProps
-    extends StrictTableRowProps
+    extends StObject
+       with StrictTableRowProps
        with /* key */ StringDictionary[js.Any]
   object TableRowProps {
     

@@ -3,26 +3,25 @@ package typings.clsHooked
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("cls-hooked", "createNamespace")
+  @JSImport("cls-hooked", JSImport.Namespace)
   @js.native
-  def createNamespace(name: String): Namespace = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cls-hooked", "destroyNamespace")
-  @js.native
-  def destroyNamespace(name: String): Unit = js.native
+  @scala.inline
+  def createNamespace(name: String): Namespace = ^.asInstanceOf[js.Dynamic].applyDynamic("createNamespace")(name.asInstanceOf[js.Any]).asInstanceOf[Namespace]
   
-  @JSImport("cls-hooked", "getNamespace")
-  @js.native
-  def getNamespace(name: String): js.UndefOr[Namespace] = js.native
+  @scala.inline
+  def destroyNamespace(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyNamespace")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("cls-hooked", "reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def getNamespace(name: String): js.UndefOr[Namespace] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamespace")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Namespace]]
+  
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
   @js.native
   trait Namespace extends StObject {

@@ -2,11 +2,12 @@ package typings.canvasjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartLegend extends ChartLegendOptions {
+trait ChartLegend
+  extends StObject
+     with ChartLegendOptions {
   
   /**
     * Returns the specified property of legend.

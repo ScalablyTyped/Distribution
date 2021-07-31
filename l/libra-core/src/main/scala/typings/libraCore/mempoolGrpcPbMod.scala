@@ -18,9 +18,9 @@ import typings.libraCore.mempoolPbMod.GetBlockRequest
 import typings.libraCore.mempoolPbMod.GetBlockResponse
 import typings.libraCore.mempoolPbMod.HealthCheckRequest
 import typings.libraCore.mempoolPbMod.HealthCheckResponse
+import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mempoolGrpcPbMod {
@@ -118,43 +118,78 @@ object mempoolGrpcPbMod {
     ): ClientUnaryCall = js.native
   }
   
-  @js.native
   trait IMempoolServer extends StObject {
     
     def addTransactionWithValidation(
       call: ServerUnaryCall[AddTransactionWithValidationRequest],
       callback: sendUnaryData[AddTransactionWithValidationResponse]
-    ): Unit = js.native
+    ): Unit
     @JSName("addTransactionWithValidation")
-    var addTransactionWithValidation_Original: handleUnaryCall[AddTransactionWithValidationRequest, AddTransactionWithValidationResponse] = js.native
+    var addTransactionWithValidation_Original: handleUnaryCall[AddTransactionWithValidationRequest, AddTransactionWithValidationResponse]
     
     def commitTransactions(
       call: ServerUnaryCall[CommitTransactionsRequest],
       callback: sendUnaryData[CommitTransactionsResponse]
-    ): Unit = js.native
+    ): Unit
     @JSName("commitTransactions")
-    var commitTransactions_Original: handleUnaryCall[CommitTransactionsRequest, CommitTransactionsResponse] = js.native
+    var commitTransactions_Original: handleUnaryCall[CommitTransactionsRequest, CommitTransactionsResponse]
     
-    def getBlock(call: ServerUnaryCall[GetBlockRequest], callback: sendUnaryData[GetBlockResponse]): Unit = js.native
+    def getBlock(call: ServerUnaryCall[GetBlockRequest], callback: sendUnaryData[GetBlockResponse]): Unit
     @JSName("getBlock")
-    var getBlock_Original: handleUnaryCall[GetBlockRequest, GetBlockResponse] = js.native
+    var getBlock_Original: handleUnaryCall[GetBlockRequest, GetBlockResponse]
     
-    def healthCheck(call: ServerUnaryCall[HealthCheckRequest], callback: sendUnaryData[HealthCheckResponse]): Unit = js.native
+    def healthCheck(call: ServerUnaryCall[HealthCheckRequest], callback: sendUnaryData[HealthCheckResponse]): Unit
     @JSName("healthCheck")
-    var healthCheck_Original: handleUnaryCall[HealthCheckRequest, HealthCheckResponse] = js.native
+    var healthCheck_Original: handleUnaryCall[HealthCheckRequest, HealthCheckResponse]
+  }
+  object IMempoolServer {
+    
+    @scala.inline
+    def apply(
+      addTransactionWithValidation: (/* call */ ServerUnaryCall[AddTransactionWithValidationRequest], /* callback */ sendUnaryData[AddTransactionWithValidationResponse]) => Unit,
+      commitTransactions: (/* call */ ServerUnaryCall[CommitTransactionsRequest], /* callback */ sendUnaryData[CommitTransactionsResponse]) => Unit,
+      getBlock: (/* call */ ServerUnaryCall[GetBlockRequest], /* callback */ sendUnaryData[GetBlockResponse]) => Unit,
+      healthCheck: (/* call */ ServerUnaryCall[HealthCheckRequest], /* callback */ sendUnaryData[HealthCheckResponse]) => Unit
+    ): IMempoolServer = {
+      val __obj = js.Dynamic.literal(addTransactionWithValidation = js.Any.fromFunction2(addTransactionWithValidation), commitTransactions = js.Any.fromFunction2(commitTransactions), getBlock = js.Any.fromFunction2(getBlock), healthCheck = js.Any.fromFunction2(healthCheck))
+      __obj.asInstanceOf[IMempoolServer]
+    }
+    
+    @scala.inline
+    implicit class IMempoolServerMutableBuilder[Self <: IMempoolServer] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAddTransactionWithValidation(
+        value: (/* call */ ServerUnaryCall[AddTransactionWithValidationRequest], /* callback */ sendUnaryData[AddTransactionWithValidationResponse]) => Unit
+      ): Self = StObject.set(x, "addTransactionWithValidation", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setCommitTransactions(
+        value: (/* call */ ServerUnaryCall[CommitTransactionsRequest], /* callback */ sendUnaryData[CommitTransactionsResponse]) => Unit
+      ): Self = StObject.set(x, "commitTransactions", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setGetBlock(
+        value: (/* call */ ServerUnaryCall[GetBlockRequest], /* callback */ sendUnaryData[GetBlockResponse]) => Unit
+      ): Self = StObject.set(x, "getBlock", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setHealthCheck(
+        value: (/* call */ ServerUnaryCall[HealthCheckRequest], /* callback */ sendUnaryData[HealthCheckResponse]) => Unit
+      ): Self = StObject.set(x, "healthCheck", js.Any.fromFunction2(value))
+    }
   }
   
   /* Inlined parent grpc.grpc.ServiceDefinition<grpc.grpc.UntypedServiceImplementation> */
-  @js.native
   trait IMempoolService extends StObject {
     
-    var addTransactionWithValidation: IMempoolServiceIAddTransactionWithValidation = js.native
+    var addTransactionWithValidation: IMempoolServiceIAddTransactionWithValidation
     
-    var commitTransactions: IMempoolServiceICommitTransactions = js.native
+    var commitTransactions: IMempoolServiceICommitTransactions
     
-    var getBlock: IMempoolServiceIGetBlock = js.native
+    var getBlock: IMempoolServiceIGetBlock
     
-    var healthCheck: IMempoolServiceIHealthCheck = js.native
+    var healthCheck: IMempoolServiceIHealthCheck
   }
   object IMempoolService {
     
@@ -186,15 +221,83 @@ object mempoolGrpcPbMod {
     }
   }
   
-  @js.native
-  trait IMempoolServiceIAddTransactionWithValidation extends MethodDefinition[AddTransactionWithValidationRequest, AddTransactionWithValidationResponse]
+  trait IMempoolServiceIAddTransactionWithValidation
+    extends StObject
+       with MethodDefinition[AddTransactionWithValidationRequest, AddTransactionWithValidationResponse]
+  object IMempoolServiceIAddTransactionWithValidation {
+    
+    @scala.inline
+    def apply(
+      path: String,
+      requestDeserialize: /* data */ Buffer => AddTransactionWithValidationRequest,
+      requestSerialize: AddTransactionWithValidationRequest => Buffer,
+      requestStream: Boolean,
+      responseDeserialize: /* data */ Buffer => AddTransactionWithValidationResponse,
+      responseSerialize: AddTransactionWithValidationResponse => Buffer,
+      responseStream: Boolean
+    ): IMempoolServiceIAddTransactionWithValidation = {
+      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], requestDeserialize = js.Any.fromFunction1(requestDeserialize), requestSerialize = js.Any.fromFunction1(requestSerialize), requestStream = requestStream.asInstanceOf[js.Any], responseDeserialize = js.Any.fromFunction1(responseDeserialize), responseSerialize = js.Any.fromFunction1(responseSerialize), responseStream = responseStream.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IMempoolServiceIAddTransactionWithValidation]
+    }
+  }
   
-  @js.native
-  trait IMempoolServiceICommitTransactions extends MethodDefinition[CommitTransactionsRequest, CommitTransactionsResponse]
+  trait IMempoolServiceICommitTransactions
+    extends StObject
+       with MethodDefinition[CommitTransactionsRequest, CommitTransactionsResponse]
+  object IMempoolServiceICommitTransactions {
+    
+    @scala.inline
+    def apply(
+      path: String,
+      requestDeserialize: /* data */ Buffer => CommitTransactionsRequest,
+      requestSerialize: CommitTransactionsRequest => Buffer,
+      requestStream: Boolean,
+      responseDeserialize: /* data */ Buffer => CommitTransactionsResponse,
+      responseSerialize: CommitTransactionsResponse => Buffer,
+      responseStream: Boolean
+    ): IMempoolServiceICommitTransactions = {
+      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], requestDeserialize = js.Any.fromFunction1(requestDeserialize), requestSerialize = js.Any.fromFunction1(requestSerialize), requestStream = requestStream.asInstanceOf[js.Any], responseDeserialize = js.Any.fromFunction1(responseDeserialize), responseSerialize = js.Any.fromFunction1(responseSerialize), responseStream = responseStream.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IMempoolServiceICommitTransactions]
+    }
+  }
   
-  @js.native
-  trait IMempoolServiceIGetBlock extends MethodDefinition[GetBlockRequest, GetBlockResponse]
+  trait IMempoolServiceIGetBlock
+    extends StObject
+       with MethodDefinition[GetBlockRequest, GetBlockResponse]
+  object IMempoolServiceIGetBlock {
+    
+    @scala.inline
+    def apply(
+      path: String,
+      requestDeserialize: /* data */ Buffer => GetBlockRequest,
+      requestSerialize: GetBlockRequest => Buffer,
+      requestStream: Boolean,
+      responseDeserialize: /* data */ Buffer => GetBlockResponse,
+      responseSerialize: GetBlockResponse => Buffer,
+      responseStream: Boolean
+    ): IMempoolServiceIGetBlock = {
+      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], requestDeserialize = js.Any.fromFunction1(requestDeserialize), requestSerialize = js.Any.fromFunction1(requestSerialize), requestStream = requestStream.asInstanceOf[js.Any], responseDeserialize = js.Any.fromFunction1(responseDeserialize), responseSerialize = js.Any.fromFunction1(responseSerialize), responseStream = responseStream.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IMempoolServiceIGetBlock]
+    }
+  }
   
-  @js.native
-  trait IMempoolServiceIHealthCheck extends MethodDefinition[HealthCheckRequest, HealthCheckResponse]
+  trait IMempoolServiceIHealthCheck
+    extends StObject
+       with MethodDefinition[HealthCheckRequest, HealthCheckResponse]
+  object IMempoolServiceIHealthCheck {
+    
+    @scala.inline
+    def apply(
+      path: String,
+      requestDeserialize: /* data */ Buffer => HealthCheckRequest,
+      requestSerialize: HealthCheckRequest => Buffer,
+      requestStream: Boolean,
+      responseDeserialize: /* data */ Buffer => HealthCheckResponse,
+      responseSerialize: HealthCheckResponse => Buffer,
+      responseStream: Boolean
+    ): IMempoolServiceIHealthCheck = {
+      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], requestDeserialize = js.Any.fromFunction1(requestDeserialize), requestSerialize = js.Any.fromFunction1(requestSerialize), requestStream = requestStream.asInstanceOf[js.Any], responseDeserialize = js.Any.fromFunction1(responseDeserialize), responseSerialize = js.Any.fromFunction1(responseSerialize), responseStream = responseStream.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IMempoolServiceIHealthCheck]
+    }
+  }
 }

@@ -8,47 +8,47 @@ import typings.xlsx.xlsxStrings.file
 import typings.xlsx.xlsxStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WritingOptions extends CommonOptions {
+trait WritingOptions
+  extends StObject
+     with CommonOptions {
   
   /** Override workbook properties on save */
-  var Props: js.UndefOr[Properties] = js.native
+  var Props: js.UndefOr[Properties] = js.undefined
   
   /**
     * Generate Shared String Table
     * @default false
     */
-  var bookSST: js.UndefOr[Boolean] = js.native
+  var bookSST: js.UndefOr[Boolean] = js.undefined
   
   /**
     * File format of generated workbook
     * @default 'xlsx'
     */
-  var bookType: js.UndefOr[BookType] = js.native
+  var bookType: js.UndefOr[BookType] = js.undefined
   
   /**
     * Use ZIP compression for ZIP-based formats
     * @default false
     */
-  var compression: js.UndefOr[Boolean] = js.native
+  var compression: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Suppress "number stored as text" errors in generated files
     * @default true
     */
-  var ignoreEC: js.UndefOr[Boolean] = js.native
+  var ignoreEC: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name of Worksheet (for single-sheet formats)
     * @default ''
     */
-  var sheet: js.UndefOr[String] = js.native
+  var sheet: js.UndefOr[String] = js.undefined
   
   /** Output data encoding */
-  var `type`: js.UndefOr[base64 | binary | buffer | file | array | string] = js.native
+  var `type`: js.UndefOr[base64 | binary | buffer | file | array | string] = js.undefined
 }
 object WritingOptions {
   

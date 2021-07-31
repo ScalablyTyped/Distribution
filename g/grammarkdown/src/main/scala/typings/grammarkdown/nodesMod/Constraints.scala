@@ -4,7 +4,6 @@ import typings.grammarkdown.tokensMod.SyntaxKind.CloseBracketToken
 import typings.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/nodes", "Constraints")
@@ -15,12 +14,12 @@ class Constraints protected ()
   def this(openBracketToken: Token[OpenBracketToken], elements: js.Array[Argument]) = this()
   def this(
     openBracketToken: Token[OpenBracketToken],
-    elements: js.UndefOr[scala.Nothing],
+    elements: js.Array[Argument],
     closeBracketToken: Token[CloseBracketToken]
   ) = this()
   def this(
     openBracketToken: Token[OpenBracketToken],
-    elements: js.Array[Argument],
+    elements: Unit,
     closeBracketToken: Token[CloseBracketToken]
   ) = this()
   

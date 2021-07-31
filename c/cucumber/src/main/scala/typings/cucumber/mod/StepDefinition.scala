@@ -2,23 +2,21 @@ package typings.cucumber.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepDefinition extends StObject {
   
   // tslint:disable:ban-types
-  var code: js.Function = js.native
+  var code: js.Function
   
   // tslint:enable:ban-types
-  var line: Double = js.native
+  var line: Double
   
-  var pattern: js.Any = js.native
+  var pattern: js.Any
   
-  var unwrappedCode: js.UndefOr[js.Function] = js.native
+  var unwrappedCode: js.UndefOr[js.Function] = js.undefined
   
-  var uri: String = js.native
+  var uri: String
 }
 object StepDefinition {
   

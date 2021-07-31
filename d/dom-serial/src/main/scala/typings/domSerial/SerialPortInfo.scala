@@ -2,12 +2,11 @@ package typings.domSerial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerialPortInfo
-  extends SerialPortInfoBase
+  extends StObject
+     with SerialPortInfoBase
      with SerialPortFilter
 object SerialPortInfo {
   

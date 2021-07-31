@@ -6,7 +6,6 @@ import typings.chromeApps.chrome.fileBrowserHandler.SelectFileParameters
 import typings.chromeApps.chrome.fileBrowserHandler.SelectionResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -25,6 +24,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object fileBrowserHandler {
   
+  @JSGlobal("chrome.fileBrowserHandler")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Fired when file system action is executed from ChromeOS file browser.
     */
@@ -42,7 +45,6 @@ object fileBrowserHandler {
     * @param params Parameters that will be used while selecting the file.
     * @param callback Function called upon completion.
     */
-  @JSGlobal("chrome.fileBrowserHandler.selectFile")
-  @js.native
-  def selectFile(params: SelectFileParameters, callback: js.Function1[/* result */ SelectionResult, Unit]): Unit = js.native
+  @scala.inline
+  def selectFile(params: SelectFileParameters, callback: js.Function1[/* result */ SelectionResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectFile")(params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

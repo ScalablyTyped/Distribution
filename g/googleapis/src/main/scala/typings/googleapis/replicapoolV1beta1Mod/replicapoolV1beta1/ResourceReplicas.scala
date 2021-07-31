@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/replicapool/v1beta1", "replicapool_v1beta1.Resource$Replicas")
@@ -34,7 +33,7 @@ class ResourceReplicas protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaReplica] = js.native
   def delete(callback: BodyResponseCallback[SchemaReplica]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReplica] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReplica] = js.native
   def delete(params: ParamsResourceReplicasDelete): GaxiosPromise[SchemaReplica] = js.native
   def delete(params: ParamsResourceReplicasDelete, callback: BodyResponseCallback[SchemaReplica]): Unit = js.native
   def delete(
@@ -66,7 +65,7 @@ class ResourceReplicas protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaReplica] = js.native
   def get(callback: BodyResponseCallback[SchemaReplica]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReplica] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReplica] = js.native
   def get(params: ParamsResourceReplicasGet): GaxiosPromise[SchemaReplica] = js.native
   def get(params: ParamsResourceReplicasGet, callback: BodyResponseCallback[SchemaReplica]): Unit = js.native
   def get(
@@ -99,7 +98,7 @@ class ResourceReplicas protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaReplicasListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaReplicasListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReplicasListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReplicasListResponse] = js.native
   def list(params: ParamsResourceReplicasList): GaxiosPromise[SchemaReplicasListResponse] = js.native
   def list(params: ParamsResourceReplicasList, callback: BodyResponseCallback[SchemaReplicasListResponse]): Unit = js.native
   def list(
@@ -131,7 +130,7 @@ class ResourceReplicas protected () extends StObject {
     */
   def restart(): GaxiosPromise[SchemaReplica] = js.native
   def restart(callback: BodyResponseCallback[SchemaReplica]): Unit = js.native
-  def restart(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReplica] = js.native
+  def restart(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReplica] = js.native
   def restart(params: ParamsResourceReplicasRestart): GaxiosPromise[SchemaReplica] = js.native
   def restart(params: ParamsResourceReplicasRestart, callback: BodyResponseCallback[SchemaReplica]): Unit = js.native
   def restart(

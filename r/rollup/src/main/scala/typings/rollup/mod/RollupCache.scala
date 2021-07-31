@@ -3,15 +3,13 @@ package typings.rollup.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RollupCache extends StObject {
   
-  var modules: js.Array[ModuleJSON] = js.native
+  var modules: js.Array[ModuleJSON]
   
-  var plugins: js.UndefOr[Record[String, SerializablePluginCache]] = js.native
+  var plugins: js.UndefOr[Record[String, SerializablePluginCache]] = js.undefined
 }
 object RollupCache {
   

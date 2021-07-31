@@ -10,9 +10,9 @@ Mime database interface
 | ------------------ | :-------------: |
 | Full name          | mimos |
 | Keywords           | mime, database, content-type |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 6 |
-| # downloads        | 8435802 |
+| # downloads        | 7622712 |
 | # stars            | 0 |
 
 ## Links

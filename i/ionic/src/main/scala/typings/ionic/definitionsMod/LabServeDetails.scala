@@ -2,17 +2,15 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabServeDetails extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var port: Double = js.native
+  var port: Double
   
-  var projectType: ProjectType = js.native
+  var projectType: ProjectType
 }
 object LabServeDetails {
   

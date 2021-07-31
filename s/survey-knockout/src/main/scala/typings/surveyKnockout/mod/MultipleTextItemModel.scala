@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "MultipleTextItemModel")
@@ -13,8 +12,8 @@ class MultipleTextItemModel ()
      with ISurveyData
      with ISurveyImpl {
   def this(name: js.Any) = this()
-  def this(name: js.UndefOr[scala.Nothing], title: String) = this()
   def this(name: js.Any, title: String) = this()
+  def this(name: Unit, title: String) = this()
   
   /* protected */ def createEditor(name: String): QuestionTextModel = js.native
   
@@ -25,7 +24,28 @@ class MultipleTextItemModel ()
     */
   val fullTitle: String = js.native
   
+  /* CompleteClass */
+  override def geSurveyData(): ISurveyData = js.native
+  
+  /* CompleteClass */
+  override def getDataFilteredProperties(): js.Any = js.native
+  
+  /* CompleteClass */
+  override def getDataFilteredValues(): js.Any = js.native
+  
   def getMaxLength(): js.Any = js.native
+  
+  /* CompleteClass */
+  override def getSurvey(): ISurvey = js.native
+  
+  /* CompleteClass */
+  override def getTextProcessor(): ITextProcessor = js.native
+  
+  /* CompleteClass */
+  override def getValidatorTitle(): String = js.native
+  
+  /* CompleteClass */
+  override def getValidators(): js.Array[SurveyValidator] = js.native
   
   val id: String = js.native
   
@@ -84,6 +104,9 @@ class MultipleTextItemModel ()
     * @see name
     */
   var title: String = js.native
+  
+  /* CompleteClass */
+  var validatedValue: js.Any = js.native
   
   /**
     * The list of question validators.

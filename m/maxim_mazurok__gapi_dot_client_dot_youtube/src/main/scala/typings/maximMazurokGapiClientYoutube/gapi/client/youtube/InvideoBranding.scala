@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvideoBranding extends StObject {
   
   /** The bytes the uploaded image. Only used in api to youtube communication. */
-  var imageBytes: js.UndefOr[String] = js.native
+  var imageBytes: js.UndefOr[String] = js.undefined
   
   /** The url of the uploaded image. Only used in apiary to api communication. */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /** The spatial position within the video where the branding watermark will be displayed. */
-  var position: js.UndefOr[InvideoPosition] = js.native
+  var position: js.UndefOr[InvideoPosition] = js.undefined
   
   /** The channel to which this branding links. If not present it defaults to the current channel. */
-  var targetChannelId: js.UndefOr[String] = js.native
+  var targetChannelId: js.UndefOr[String] = js.undefined
   
   /** The temporal position within the video where watermark will be displayed. */
-  var timing: js.UndefOr[InvideoTiming] = js.native
+  var timing: js.UndefOr[InvideoTiming] = js.undefined
 }
 object InvideoBranding {
   

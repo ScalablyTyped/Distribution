@@ -3,19 +3,17 @@ package typings.pixiJs.PIXI
 import typings.pixiJs.anon.LoadElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILoaderOptions extends StObject {
   
-  var crossOrigin: js.UndefOr[Boolean | String] = js.native
+  var crossOrigin: js.UndefOr[Boolean | String] = js.undefined
   
-  var loadType: js.UndefOr[Double] = js.native
+  var loadType: js.UndefOr[Double] = js.undefined
   
-  var metadata: js.UndefOr[LoadElement] = js.native
+  var metadata: js.UndefOr[LoadElement] = js.undefined
   
-  var xhrType: js.UndefOr[String] = js.native
+  var xhrType: js.UndefOr[String] = js.undefined
 }
 object ILoaderOptions {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.elastictranscoderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPipelinesRequest extends StObject {
   
   /**
     * To list pipelines in chronological order by the date and time that they were created, enter true. To list pipelines in reverse chronological order, enter false.
     */
-  var Ascending: js.UndefOr[typings.awsSdk.elastictranscoderMod.Ascending] = js.native
+  var Ascending: js.UndefOr[typings.awsSdk.elastictranscoderMod.Ascending] = js.undefined
   
   /**
     * When Elastic Transcoder returns more than one page of results, use pageToken in subsequent GET requests to get each successive page of results. 
     */
-  var PageToken: js.UndefOr[Id] = js.native
+  var PageToken: js.UndefOr[Id] = js.undefined
 }
 object ListPipelinesRequest {
   

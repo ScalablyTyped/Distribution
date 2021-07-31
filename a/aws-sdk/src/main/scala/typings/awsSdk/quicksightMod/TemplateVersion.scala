@@ -2,56 +2,54 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateVersion extends StObject {
   
   /**
     * The time that this template version was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.native
+  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * Schema of the dataset identified by the placeholder. Any dashboard created from this template should be bound to new datasets matching the same schema described through this API operation.
     */
-  var DataSetConfigurations: js.UndefOr[DataSetConfigurationList] = js.native
+  var DataSetConfigurations: js.UndefOr[DataSetConfigurationList] = js.undefined
   
   /**
     * The description of the template.
     */
-  var Description: js.UndefOr[VersionDescription] = js.native
+  var Description: js.UndefOr[VersionDescription] = js.undefined
   
   /**
     * Errors associated with this template version.
     */
-  var Errors: js.UndefOr[TemplateErrorList] = js.native
+  var Errors: js.UndefOr[TemplateErrorList] = js.undefined
   
   /**
     * A list of the associated sheets with the unique identifier and name of each sheet.
     */
-  var Sheets: js.UndefOr[SheetList] = js.native
+  var Sheets: js.UndefOr[SheetList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of an analysis or template that was used to create this template.
     */
-  var SourceEntityArn: js.UndefOr[Arn] = js.native
+  var SourceEntityArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[ResourceStatus] = js.native
+  var Status: js.UndefOr[ResourceStatus] = js.undefined
   
   /**
     * The ARN of the theme associated with this version of the template.
     */
-  var ThemeArn: js.UndefOr[Arn] = js.native
+  var ThemeArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The version number of the template version.
     */
-  var VersionNumber: js.UndefOr[typings.awsSdk.quicksightMod.VersionNumber] = js.native
+  var VersionNumber: js.UndefOr[typings.awsSdk.quicksightMod.VersionNumber] = js.undefined
 }
 object TemplateVersion {
   

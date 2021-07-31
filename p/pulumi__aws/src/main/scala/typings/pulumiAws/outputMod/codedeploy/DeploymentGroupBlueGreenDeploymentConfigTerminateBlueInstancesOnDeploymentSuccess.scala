@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.codedeploy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeployment
     * * `TERMINATE`: Instances are terminated after a specified wait time.
     * * `KEEP_ALIVE`: Instances are left running after they are deregistered from the load balancer and removed from the deployment group.
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * The number of minutes to wait after a successful blue/green deployment before terminating instances from the original environment.
     */
-  var terminationWaitTimeInMinutes: js.UndefOr[Double] = js.native
+  var terminationWaitTimeInMinutes: js.UndefOr[Double] = js.undefined
 }
 object DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess {
   

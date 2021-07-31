@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IapCredential extends StObject {
   
   /** Authentication configuration when Web-Security-Scanner service account is added in Identity-Aware-Proxy (IAP) access policies. */
-  var iapTestServiceAccountInfo: js.UndefOr[IapTestServiceAccountInfo] = js.native
+  var iapTestServiceAccountInfo: js.UndefOr[IapTestServiceAccountInfo] = js.undefined
 }
 object IapCredential {
   

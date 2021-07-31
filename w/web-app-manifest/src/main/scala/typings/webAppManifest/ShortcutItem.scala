@@ -2,7 +2,6 @@ package typings.webAppManifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see https://w3c.github.io/manifest/#shortcutitem-and-its-members
   */
-@js.native
 trait ShortcutItem extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait ShortcutItem extends StObject {
     *
     * @see https://w3c.github.io/manifest/#description-member-0
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The `icons` member of an `ShortcutItem` member is an `array` of `ImageResource`s that can serve as iconic
@@ -27,7 +25,7 @@ trait ShortcutItem extends StObject {
     *
     * @see https://w3c.github.io/manifest/#icons-member-0
     */
-  var icons: js.UndefOr[js.Array[ImageResource]] = js.native
+  var icons: js.UndefOr[js.Array[ImageResource]] = js.undefined
   
   /**
     * The `name` member of a `ShortcutItem` is a `string` that represents the name of the shortcut as it is usually
@@ -35,7 +33,7 @@ trait ShortcutItem extends StObject {
     *
     * @see https://w3c.github.io/manifest/#name-member-0
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The `short_name` member of a `ShortcutItem` is a `string` that represents a short version of the name of
@@ -43,7 +41,7 @@ trait ShortcutItem extends StObject {
     *
     * @see https://w3c.github.io/manifest/#short_name-member-0
     */
-  var short_name: js.UndefOr[String] = js.native
+  var short_name: js.UndefOr[String] = js.undefined
   
   /**
     * The `url` member of a `ShortcutItem` is the URL within the application's scope that opens when the
@@ -51,7 +49,7 @@ trait ShortcutItem extends StObject {
     *
     * @see https://w3c.github.io/manifest/#url-member
     */
-  var url: String = js.native
+  var url: String
 }
 object ShortcutItem {
   

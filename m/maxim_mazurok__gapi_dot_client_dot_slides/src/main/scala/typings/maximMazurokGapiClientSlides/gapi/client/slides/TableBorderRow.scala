@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableBorderRow extends StObject {
   
   /** Properties of each border cell. When a border's adjacent table cells are merged, it is not included in the response. */
-  var tableBorderCells: js.UndefOr[js.Array[TableBorderCell]] = js.native
+  var tableBorderCells: js.UndefOr[js.Array[TableBorderCell]] = js.undefined
 }
 object TableBorderRow {
   

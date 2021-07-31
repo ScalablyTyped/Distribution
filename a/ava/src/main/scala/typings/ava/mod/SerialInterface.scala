@@ -2,7 +2,6 @@ package typings.ava.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,12 +12,12 @@ trait SerialInterface[Context] extends StObject {
   /**
   	 * Declare a serial test that uses one or more macros. The macro is responsible for generating a unique test title.
   	 */
-  def apply[T /* <: js.Array[_] */](
+  def apply[T /* <: js.Array[js.Any] */](
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
   /** Declare a serial test that uses one or more macros. Additional arguments are passed to the macro. */
-  def apply[T /* <: js.Array[_] */](
+  def apply[T /* <: js.Array[js.Any] */](
     title: String,
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
@@ -32,13 +31,13 @@ trait SerialInterface[Context] extends StObject {
   def after(title: String, implementation: Implementation[Context]): Unit = js.native
   /** Declare a hook that is run once, after all tests have passed. */
   /** Declare a serial hook that is run once, after all tests have passed. */
-  def after[T /* <: js.Array[_] */](
+  def after[T /* <: js.Array[js.Any] */](
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
   /** Declare a hook that is run once, after all tests have passed. Additional arguments are passed to the macro. */
   /** Declare a serial hook that is run once, after all tests have passed. */
-  def after[T /* <: js.Array[_] */](
+  def after[T /* <: js.Array[js.Any] */](
     title: String,
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
@@ -52,13 +51,13 @@ trait SerialInterface[Context] extends StObject {
   def afterEach(title: String, implementation: Implementation[Context]): Unit = js.native
   /** Declare a hook that is run once, after all tests have passed. */
   /** Declare a serial hook that is run after each passing test. */
-  def afterEach[T /* <: js.Array[_] */](
+  def afterEach[T /* <: js.Array[js.Any] */](
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
   /** Declare a hook that is run once, after all tests have passed. Additional arguments are passed to the macro. */
   /** Declare a serial hook that is run after each passing test. */
-  def afterEach[T /* <: js.Array[_] */](
+  def afterEach[T /* <: js.Array[js.Any] */](
     title: String,
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
@@ -79,13 +78,13 @@ trait SerialInterface[Context] extends StObject {
   def before(title: String, implementation: Implementation[Context]): Unit = js.native
   /** Declare a hook that is run once, before all tests. */
   /** Declare a serial hook that is run once, before all tests. */
-  def before[T /* <: js.Array[_] */](
+  def before[T /* <: js.Array[js.Any] */](
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
   /** Declare a hook that is run once, before all tests. Additional arguments are passed to the macro. */
   /** Declare a serial hook that is run once, before all tests. */
-  def before[T /* <: js.Array[_] */](
+  def before[T /* <: js.Array[js.Any] */](
     title: String,
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
@@ -99,13 +98,13 @@ trait SerialInterface[Context] extends StObject {
   def beforeEach(title: String, implementation: Implementation[Context]): Unit = js.native
   /** Declare a hook that is run once, before all tests. */
   /** Declare a serial hook that is run before each test. */
-  def beforeEach[T /* <: js.Array[_] */](
+  def beforeEach[T /* <: js.Array[js.Any] */](
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
   /** Declare a hook that is run once, before all tests. Additional arguments are passed to the macro. */
   /** Declare a serial hook that is run before each test. */
-  def beforeEach[T /* <: js.Array[_] */](
+  def beforeEach[T /* <: js.Array[js.Any] */](
     title: String,
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
@@ -126,7 +125,7 @@ trait SerialInterface[Context] extends StObject {
   	 * The macro is responsible for generating a unique test title.
   	 */
   /** Declare a serial test that must call `t.end()` when it's done. */
-  def cb[T /* <: js.Array[_] */](
+  def cb[T /* <: js.Array[js.Any] */](
     macros: OneOrMoreCbMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
@@ -135,7 +134,7 @@ trait SerialInterface[Context] extends StObject {
   	 * Additional arguments are passed to the macro.
   	 */
   /** Declare a serial test that must call `t.end()` when it's done. */
-  def cb[T /* <: js.Array[_] */](
+  def cb[T /* <: js.Array[js.Any] */](
     title: String,
     macros: OneOrMoreCbMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
@@ -152,7 +151,7 @@ trait SerialInterface[Context] extends StObject {
   	 * The test is expected to fail.
   	 */
   /** Declare a serial test that is expected to fail. */
-  def failing[T /* <: js.Array[_] */](
+  def failing[T /* <: js.Array[js.Any] */](
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
@@ -161,7 +160,7 @@ trait SerialInterface[Context] extends StObject {
   	 * The test is expected to fail.
   	 */
   /** Declare a serial test that is expected to fail. */
-  def failing[T /* <: js.Array[_] */](
+  def failing[T /* <: js.Array[js.Any] */](
     title: String,
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
@@ -176,7 +175,7 @@ trait SerialInterface[Context] extends StObject {
   	 * Declare a test that uses one or more macros. The macro is responsible for generating a unique test title.
   	 * Only this test and others declared with `.only()` are run.
   	 */
-  def only[T /* <: js.Array[_] */](
+  def only[T /* <: js.Array[js.Any] */](
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
@@ -184,7 +183,7 @@ trait SerialInterface[Context] extends StObject {
   	 * Declare a test that uses one or more macros. Additional arguments are passed to the macro.
   	 * Only this test and others declared with `.only()` are run.
   	 */
-  def only[T /* <: js.Array[_] */](
+  def only[T /* <: js.Array[js.Any] */](
     title: String,
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
@@ -195,12 +194,12 @@ trait SerialInterface[Context] extends StObject {
   /** Skip this test. */
   def skip(title: String, implementation: Implementation[Context]): Unit = js.native
   /** Skip this test. */
-  def skip[T /* <: js.Array[_] */](
+  def skip[T /* <: js.Array[js.Any] */](
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
   /** Skip this test. */
-  def skip[T /* <: js.Array[_] */](
+  def skip[T /* <: js.Array[js.Any] */](
     title: String,
     macros: OneOrMoreMacros[T, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T

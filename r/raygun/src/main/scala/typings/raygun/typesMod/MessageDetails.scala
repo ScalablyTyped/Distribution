@@ -3,33 +3,31 @@ package typings.raygun.typesMod
 import typings.raygun.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageDetails extends StObject {
   
-  var client: Name = js.native
+  var client: Name
   
-  var correlationId: String | Null = js.native
+  var correlationId: String | Null
   
-  var environment: Environment = js.native
+  var environment: Environment
   
-  var error: BuiltError = js.native
+  var error: BuiltError
   
-  var groupingKey: String | Null = js.native
+  var groupingKey: String | Null
   
-  var machineName: String = js.native
+  var machineName: String
   
-  var request: RequestDetails = js.native
+  var request: RequestDetails
   
-  var tags: js.Array[Tag] = js.native
+  var tags: js.Array[Tag]
   
-  var user: UserDetails = js.native
+  var user: UserDetails
   
-  var userCustomData: CustomData = js.native
+  var userCustomData: CustomData
   
-  var version: String = js.native
+  var version: String
 }
 object MessageDetails {
   
@@ -45,7 +43,7 @@ object MessageDetails {
     userCustomData: CustomData,
     version: String
   ): MessageDetails = {
-    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], machineName = machineName.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], userCustomData = userCustomData.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], machineName = machineName.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], userCustomData = userCustomData.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], correlationId = null, groupingKey = null)
     __obj.asInstanceOf[MessageDetails]
   }
   

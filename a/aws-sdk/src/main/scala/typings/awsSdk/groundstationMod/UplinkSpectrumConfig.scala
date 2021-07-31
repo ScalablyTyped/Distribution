@@ -2,21 +2,19 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UplinkSpectrumConfig extends StObject {
   
   /**
     * Center frequency of an uplink spectral Config. Valid values are between 2025 to 2120 MHz.
     */
-  var centerFrequency: Frequency = js.native
+  var centerFrequency: Frequency
   
   /**
     * Polarization of an uplink spectral Config. Capturing both "RIGHT_HAND" and "LEFT_HAND" polarization requires two separate configs.
     */
-  var polarization: js.UndefOr[Polarization] = js.native
+  var polarization: js.UndefOr[Polarization] = js.undefined
 }
 object UplinkSpectrumConfig {
   

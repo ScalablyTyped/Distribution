@@ -12,48 +12,46 @@ import typings.awsSdkClientS3Browser.typesSelectParametersMod.SelectParameters
 import typings.awsSdkClientS3Browser.typesSelectParametersMod.UnmarshalledSelectParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRestoreRequestMod {
   
-  @js.native
   trait RestoreRequest extends StObject {
     
     /**
       * <p>Lifetime of the active copy in days. Do not use with restores that specify OutputLocation.</p>
       */
-    var Days: js.UndefOr[Double] = js.native
+    var Days: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The optional description for the job.</p>
       */
-    var Description: js.UndefOr[String] = js.native
+    var Description: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Glacier related parameters pertaining to this job. Do not use with restores that specify OutputLocation.</p>
       */
-    var GlacierJobParameters: js.UndefOr[typings.awsSdkClientS3Browser.typesGlacierJobParametersMod.GlacierJobParameters] = js.native
+    var GlacierJobParameters: js.UndefOr[typings.awsSdkClientS3Browser.typesGlacierJobParametersMod.GlacierJobParameters] = js.undefined
     
     /**
       * <p>Describes the location where the restore job's output is stored.</p>
       */
-    var OutputLocation: js.UndefOr[typings.awsSdkClientS3Browser.typesOutputLocationMod.OutputLocation] = js.native
+    var OutputLocation: js.UndefOr[typings.awsSdkClientS3Browser.typesOutputLocationMod.OutputLocation] = js.undefined
     
     /**
       * <p>Describes the parameters for Select job types.</p>
       */
-    var SelectParameters: js.UndefOr[typings.awsSdkClientS3Browser.typesSelectParametersMod.SelectParameters] = js.native
+    var SelectParameters: js.UndefOr[typings.awsSdkClientS3Browser.typesSelectParametersMod.SelectParameters] = js.undefined
     
     /**
       * <p>Glacier retrieval tier at which the restore will be processed.</p>
       */
-    var Tier: js.UndefOr[Standard_ | Bulk | Expedited | String] = js.native
+    var Tier: js.UndefOr[Standard_ | Bulk | Expedited | String] = js.undefined
     
     /**
       * <p>Type of restore request.</p>
       */
-    var Type: js.UndefOr[SELECT | String] = js.native
+    var Type: js.UndefOr[SELECT | String] = js.undefined
   }
   object RestoreRequest {
     
@@ -110,26 +108,27 @@ object typesRestoreRequestMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledRestoreRequest extends RestoreRequest {
+  trait UnmarshalledRestoreRequest
+    extends StObject
+       with RestoreRequest {
     
     /**
       * <p>Glacier related parameters pertaining to this job. Do not use with restores that specify OutputLocation.</p>
       */
     @JSName("GlacierJobParameters")
-    var GlacierJobParameters_UnmarshalledRestoreRequest: js.UndefOr[UnmarshalledGlacierJobParameters] = js.native
+    var GlacierJobParameters_UnmarshalledRestoreRequest: js.UndefOr[UnmarshalledGlacierJobParameters] = js.undefined
     
     /**
       * <p>Describes the location where the restore job's output is stored.</p>
       */
     @JSName("OutputLocation")
-    var OutputLocation_UnmarshalledRestoreRequest: js.UndefOr[UnmarshalledOutputLocation] = js.native
+    var OutputLocation_UnmarshalledRestoreRequest: js.UndefOr[UnmarshalledOutputLocation] = js.undefined
     
     /**
       * <p>Describes the parameters for Select job types.</p>
       */
     @JSName("SelectParameters")
-    var SelectParameters_UnmarshalledRestoreRequest: js.UndefOr[UnmarshalledSelectParameters] = js.native
+    var SelectParameters_UnmarshalledRestoreRequest: js.UndefOr[UnmarshalledSelectParameters] = js.undefined
   }
   object UnmarshalledRestoreRequest {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStreamKeysRequest extends StObject {
   
   /**
     * Channel ARN used to filter the list.
     */
-  var channelArn: ChannelArn = js.native
+  var channelArn: ChannelArn
   
   /**
     * Maximum number of streamKeys to return.
     */
-  var maxResults: js.UndefOr[MaxStreamKeyResults] = js.native
+  var maxResults: js.UndefOr[MaxStreamKeyResults] = js.undefined
   
   /**
     * The first stream key to retrieve. This is used for pagination; see the nextToken response field.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListStreamKeysRequest {
   

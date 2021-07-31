@@ -3,18 +3,17 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.sequence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueDescriptionSequence
-  extends AbstractValueDescription
+  extends StObject
+     with AbstractValueDescription
      with ValueDescription {
   
   @JSName("type")
-  var type_ValueDescriptionSequence: sequence = js.native
+  var type_ValueDescriptionSequence: sequence
   
-  var value: js.Array[js.Any] = js.native
+  var value: js.Array[js.Any]
 }
 object ValueDescriptionSequence {
   
@@ -22,11 +21,10 @@ object ValueDescriptionSequence {
   def apply(
     extAttrs: js.Array[ExtendedAttribute],
     parent: Argument | ConstantMemberType | FieldType,
-    `type`: sequence,
     value: js.Array[js.Any]
   ): ValueDescriptionSequence = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sequence")
     __obj.asInstanceOf[ValueDescriptionSequence]
   }
   

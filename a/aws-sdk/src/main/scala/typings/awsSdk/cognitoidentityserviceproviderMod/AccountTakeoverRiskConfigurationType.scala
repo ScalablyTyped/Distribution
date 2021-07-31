@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountTakeoverRiskConfigurationType extends StObject {
   
   /**
     * Account takeover risk configuration actions
     */
-  var Actions: AccountTakeoverActionsType = js.native
+  var Actions: AccountTakeoverActionsType
   
   /**
     * The notify configuration used to construct email notifications.
     */
-  var NotifyConfiguration: js.UndefOr[NotifyConfigurationType] = js.native
+  var NotifyConfiguration: js.UndefOr[NotifyConfigurationType] = js.undefined
 }
 object AccountTakeoverRiskConfigurationType {
   

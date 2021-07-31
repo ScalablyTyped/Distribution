@@ -3,30 +3,29 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.AssignmentExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait AssignmentExpression_
-  extends Expression
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait AssignmentExpression_
+  extends StObject
+     with BaseNode
+     with Expression {
   
-  var left: LVal = js.native
+  var left: LVal
   
-  var operator: String = js.native
+  var operator: String
   
-  var right: Expression = js.native
+  var right: Expression
   
   @JSName("type")
-  var type_AssignmentExpression_ : AssignmentExpression = js.native
+  var type_AssignmentExpression_ : AssignmentExpression
 }
 object AssignmentExpression_ {
   
   @scala.inline
-  def apply(left: LVal, operator: String, right: Expression, `type`: AssignmentExpression): AssignmentExpression_ = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(left: LVal, operator: String, right: Expression): AssignmentExpression_ = {
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("AssignmentExpression")
     __obj.asInstanceOf[AssignmentExpression_]
   }
   

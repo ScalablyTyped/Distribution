@@ -3,13 +3,11 @@ package typings.vegaLite.anon
 import typings.vegaTypings.scaleMod.ScaleField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueScaleField extends StObject {
   
-  var value: ScaleField = js.native
+  var value: ScaleField
 }
 object ValueScaleField {
   

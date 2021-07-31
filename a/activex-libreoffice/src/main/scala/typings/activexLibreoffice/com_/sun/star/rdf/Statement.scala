@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.rdf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,16 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XRepository
   * @since OOo 3.2
   */
-@js.native
 trait Statement extends StObject {
   
-  var Graph: XURI = js.native
+  var Graph: XURI
   
-  var Object: XNode = js.native
+  var Object: XNode
   
-  var Predicate: XURI = js.native
+  var Predicate: XURI
   
-  var Subject: XResource = js.native
+  var Subject: XResource
 }
 object Statement {
   

@@ -2,48 +2,48 @@ package typings.tizenCommonWeb.systeminfoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SystemInfoDisplay extends SystemInfoProperty {
+trait SystemInfoDisplay
+  extends StObject
+     with SystemInfoProperty {
   
   /**
     * The current brightness of a display ranging between ***0 ***to ***1***.
     */
-  val brightness: Double = js.native
+  val brightness: Double
   
   /**
     * Resolution of this device, along its height, in dots per inch.
     */
-  val dotsPerInchHeight: Double = js.native
+  val dotsPerInchHeight: Double
   
   /**
     * Resolution of this device, along its width, in dots per inch.
     */
-  val dotsPerInchWidth: Double = js.native
+  val dotsPerInchWidth: Double
   
   /**
     * The display's physical height in millimeters.
     */
-  val physicalHeight: Double = js.native
+  val physicalHeight: Double
   
   /**
     * The display's physical width in millimeters.
     */
-  val physicalWidth: Double = js.native
+  val physicalWidth: Double
   
   /**
     * The total number of addressable pixels in the vertical direction of a rectangular element
     * (such as Camera, Display, Image, Video, ...) when held in its default orientation.
     */
-  val resolutionHeight: Double = js.native
+  val resolutionHeight: Double
   
   /**
     * The total number of addressable pixels in the horizontal direction of a rectangular entity
     * (such as Camera, Display, Image, Video, ...) when held in its default orientation.
     */
-  val resolutionWidth: Double = js.native
+  val resolutionWidth: Double
 }
 object SystemInfoDisplay {
   

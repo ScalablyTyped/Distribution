@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUpdateRequest extends StObject {
   
   /** The constraints associated with this request. */
-  var constraints: js.UndefOr[Constraints] = js.native
+  var constraints: js.UndefOr[Constraints] = js.undefined
   
   /** The type of platform at risk by entries present in the list. */
-  var platformType: js.UndefOr[String] = js.native
+  var platformType: js.UndefOr[String] = js.undefined
   
   /** The current state of the client for the requested list (the encrypted client state that was received from the last successful list update). */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** The types of entries present in the list. */
-  var threatEntryType: js.UndefOr[String] = js.native
+  var threatEntryType: js.UndefOr[String] = js.undefined
   
   /** The type of threat posed by entries present in the list. */
-  var threatType: js.UndefOr[String] = js.native
+  var threatType: js.UndefOr[String] = js.undefined
 }
 object ListUpdateRequest {
   

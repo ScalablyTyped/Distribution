@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArchiveFindingsRequest extends StObject {
   
   /**
     * The ID of the detector that specifies the GuardDuty service whose findings you want to archive.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
     * The IDs of the findings that you want to archive.
     */
-  var FindingIds: typings.awsSdk.guarddutyMod.FindingIds = js.native
+  var FindingIds: typings.awsSdk.guarddutyMod.FindingIds
 }
 object ArchiveFindingsRequest {
   

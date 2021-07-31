@@ -11,8 +11,8 @@ Renamed to rehype
 | Full name          | hast |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 55392 |
+| # dependents       | 2 |
+| # downloads        | 39799 |
 | # stars            | 0 |
 
 ## Links

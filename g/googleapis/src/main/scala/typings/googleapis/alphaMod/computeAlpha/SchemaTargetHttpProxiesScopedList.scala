@@ -3,22 +3,20 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTargetHttpProxiesScopedList extends StObject {
   
   /**
     * A list of TargetHttpProxies contained in this scope.
     */
-  var targetHttpProxies: js.UndefOr[js.Array[SchemaTargetHttpProxy]] = js.native
+  var targetHttpProxies: js.UndefOr[js.Array[SchemaTargetHttpProxy]] = js.undefined
   
   /**
     * Informational warning which replaces the list of backend services when
     * the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaTargetHttpProxiesScopedList {
   

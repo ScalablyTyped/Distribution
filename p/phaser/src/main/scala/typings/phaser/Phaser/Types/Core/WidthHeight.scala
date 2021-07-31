@@ -3,21 +3,19 @@ package typings.phaser.Phaser.Types.Core
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WidthHeight extends StObject {
   
   /**
     * The height.
     */
-  var height: js.UndefOr[integer] = js.native
+  var height: js.UndefOr[integer] = js.undefined
   
   /**
     * The width.
     */
-  var width: js.UndefOr[integer] = js.native
+  var width: js.UndefOr[integer] = js.undefined
 }
 object WidthHeight {
   

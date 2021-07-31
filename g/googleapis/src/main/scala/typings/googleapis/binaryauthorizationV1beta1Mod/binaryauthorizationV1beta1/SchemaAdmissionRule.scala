@@ -2,7 +2,6 @@ package typings.googleapis.binaryauthorizationV1beta1Mod.binaryauthorizationV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,18 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * matching an admission whitelist pattern are exempted from admission rules
   * and will never block a pod creation.
   */
-@js.native
 trait SchemaAdmissionRule extends StObject {
   
   /**
     * Required. The action when a pod creation is denied by the admission rule.
     */
-  var enforcementMode: js.UndefOr[String] = js.native
+  var enforcementMode: js.UndefOr[String] = js.undefined
   
   /**
     * Required. How this admission rule will be evaluated.
     */
-  var evaluationMode: js.UndefOr[String] = js.native
+  var evaluationMode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The resource names of the attestors that must attest to a
@@ -34,7 +32,7 @@ trait SchemaAdmissionRule extends StObject {
     * evaluation_mode field specifies REQUIRE_ATTESTATION, otherwise it must be
     * empty.
     */
-  var requireAttestationsBy: js.UndefOr[js.Array[String]] = js.native
+  var requireAttestationsBy: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaAdmissionRule {
   

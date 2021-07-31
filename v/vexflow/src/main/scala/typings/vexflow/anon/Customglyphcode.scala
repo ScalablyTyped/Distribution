@@ -2,35 +2,33 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Customglyphcode extends StObject {
   
-  var custom_glyph_code: js.UndefOr[String] = js.native
+  var custom_glyph_code: js.UndefOr[String] = js.undefined
   
-  var displaced: js.UndefOr[Boolean] = js.native
+  var displaced: js.UndefOr[Boolean] = js.undefined
   
-  var duration: String = js.native
+  var duration: String
   
-  var glyph_font_scale: js.UndefOr[Double] = js.native
+  var glyph_font_scale: js.UndefOr[Double] = js.undefined
   
-  var line: Double = js.native
+  var line: Double
   
-  var note_type: js.UndefOr[String] = js.native
+  var note_type: js.UndefOr[String] = js.undefined
   
-  var slashed: js.UndefOr[Boolean] = js.native
+  var slashed: js.UndefOr[Boolean] = js.undefined
   
-  var stem_direction: js.UndefOr[Double] = js.native
+  var stem_direction: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var x_shift: Double = js.native
+  var x_shift: Double
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object Customglyphcode {
   

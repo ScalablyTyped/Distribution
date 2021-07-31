@@ -10,14 +10,13 @@ import typings.tablesorter.testableOptionsMod.TestableOptions
 import typings.tablesorter.toggleableOptionsMod.ToggleableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object html5NumberOptionsMod {
   
-  @js.native
   trait Html5NumberOptions
-    extends IntervalOptions
+    extends StObject
+       with IntervalOptions
        with ControlOptions
        with DefaultValueOptions[Double]
        with ComparableOptions

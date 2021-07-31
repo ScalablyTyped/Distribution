@@ -2,45 +2,43 @@ package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains items that were requested from an IListDataAdapter and provides some information about those items.
   **/
-@js.native
 trait IFetchResult[T] extends StObject {
   
   //#region Properties
   /**
     * Gets or sets the index of the requested item in the IListDataAdapter object's data source.
     **/
-  var absoluteIndex: Double = js.native
+  var absoluteIndex: Double
   
   /**
     * Gets or sets a value that indicates whether this IFetchResult contains the last items at the end of the IListDataAdapter object's data source.
     **/
-  var atEnd: Boolean = js.native
+  var atEnd: Boolean
   
   /**
     * Gets or sets a value that indicates whether this IFetchResult contains the first items at the beginning of the IListDataAdapter object's data source.
     **/
-  var atStart: Boolean = js.native
+  var atStart: Boolean
   
   /**
     * Gets or sets the items returned by the fetch operation.
     **/
-  var items: js.Array[T] = js.native
+  var items: js.Array[T]
   
   /**
     * Gets or sets the location of the requested item within the items array.
     **/
-  var offset: Double = js.native
+  var offset: Double
   
   /**
     * Gets or sets the number of items in the IListDataAdapter object's underlying data source.
     **/
-  var totalCount: Double = js.native
+  var totalCount: Double
 }
 object IFetchResult {
   
@@ -58,7 +56,7 @@ object IFetchResult {
   }
   
   @scala.inline
-  implicit class IFetchResultMutableBuilder[Self <: IFetchResult[_], T] (val x: Self with IFetchResult[T]) extends AnyVal {
+  implicit class IFetchResultMutableBuilder[Self <: IFetchResult[?], T] (val x: Self & IFetchResult[T]) extends AnyVal {
     
     @scala.inline
     def setAbsoluteIndex(value: Double): Self = StObject.set(x, "absoluteIndex", value.asInstanceOf[js.Any])

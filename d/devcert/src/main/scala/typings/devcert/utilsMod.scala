@@ -6,45 +6,38 @@ import typings.node.childProcessMod.ExecFileSyncOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("devcert/dist/utils", "mktmp")
+  @JSImport("devcert/dist/utils", JSImport.Namespace)
   @js.native
-  def mktmp(): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("devcert/dist/utils", "openssl")
-  @js.native
-  def openssl(args: js.Array[String]): Buffer = js.native
+  @scala.inline
+  def mktmp(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mktmp")().asInstanceOf[String]
   
-  @JSImport("devcert/dist/utils", "reportableError")
-  @js.native
-  def reportableError(message: String): Error = js.native
+  @scala.inline
+  def openssl(args: js.Array[String]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("openssl")(args.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("devcert/dist/utils", "run")
-  @js.native
-  def run(cmd: String, args: js.Array[String]): Buffer = js.native
-  @JSImport("devcert/dist/utils", "run")
-  @js.native
-  def run(cmd: String, args: js.Array[String], options: ExecFileSyncOptions): Buffer = js.native
+  @scala.inline
+  def reportableError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("reportableError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @JSImport("devcert/dist/utils", "sudo")
-  @js.native
-  def sudo(cmd: String): js.Promise[String | Null] = js.native
+  @scala.inline
+  def run(cmd: String, args: js.Array[String]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def run(cmd: String, args: js.Array[String], options: ExecFileSyncOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("devcert/dist/utils", "sudoAppend")
-  @js.native
-  def sudoAppend(file: String): Unit = js.native
-  @JSImport("devcert/dist/utils", "sudoAppend")
-  @js.native
-  def sudoAppend(file: String, input: String): Unit = js.native
-  @JSImport("devcert/dist/utils", "sudoAppend")
-  @js.native
-  def sudoAppend(file: String, input: ArrayBufferView): Unit = js.native
+  @scala.inline
+  def sudo(cmd: String): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("sudo")(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
   
-  @JSImport("devcert/dist/utils", "waitForUser")
-  @js.native
-  def waitForUser(): js.Promise[js.Object] = js.native
+  @scala.inline
+  def sudoAppend(file: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sudoAppend")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def sudoAppend(file: String, input: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sudoAppend")(file.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sudoAppend(file: String, input: ArrayBufferView): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sudoAppend")(file.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def waitForUser(): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForUser")().asInstanceOf[js.Promise[js.Object]]
 }

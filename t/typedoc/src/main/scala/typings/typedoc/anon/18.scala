@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.disableSources
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `18` extends StObject {
   
-  var name: disableSources = js.native
+  var name: disableSources
 }
 object `18` {
   
   @scala.inline
-  def apply(name: disableSources): `18` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `18` = {
+    val __obj = js.Dynamic.literal(name = "disableSources")
     __obj.asInstanceOf[`18`]
   }
   

@@ -23,7 +23,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.activexLibreoffice.com_.sun.star.xml.dom.views.XAbstractView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object events {
@@ -46,10 +45,11 @@ object events {
     def REMOVAL: `2` = 2.asInstanceOf[`2`]
   }
   
-  @js.native
-  trait EventException extends Exception {
+  trait EventException
+    extends StObject
+       with Exception {
     
-    var code: Double = js.native
+    var code: Double
   }
   object EventException {
     
@@ -155,10 +155,11 @@ object events {
     def CAPTURING_PHASE: `0` = 0.asInstanceOf[`0`]
   }
   
-  @js.native
-  trait XDocumentEvent extends XInterface {
+  trait XDocumentEvent
+    extends StObject
+       with XInterface {
     
-    def createEvent(eventType: String): XEvent = js.native
+    def createEvent(eventType: String): XEvent
   }
   object XDocumentEvent {
     
@@ -181,42 +182,43 @@ object events {
     }
   }
   
-  @js.native
-  trait XEvent extends XInterface {
+  trait XEvent
+    extends StObject
+       with XInterface {
     
-    val Bubbles: Boolean = js.native
+    val Bubbles: Boolean
     
-    val Cancelable: Boolean = js.native
+    val Cancelable: Boolean
     
-    val CurrentTarget: XEventTarget = js.native
+    val CurrentTarget: XEventTarget
     
-    val EventPhase: PhaseType = js.native
+    val EventPhase: PhaseType
     
-    val Target: XEventTarget = js.native
+    val Target: XEventTarget
     
-    val TimeStamp: Time = js.native
+    val TimeStamp: Time
     
-    val Type: String = js.native
+    val Type: String
     
-    def getBubbles(): Boolean = js.native
+    def getBubbles(): Boolean
     
-    def getCancelable(): Boolean = js.native
+    def getCancelable(): Boolean
     
-    def getCurrentTarget(): XEventTarget = js.native
+    def getCurrentTarget(): XEventTarget
     
-    def getEventPhase(): PhaseType = js.native
+    def getEventPhase(): PhaseType
     
-    def getTarget(): XEventTarget = js.native
+    def getTarget(): XEventTarget
     
-    def getTimeStamp(): Time = js.native
+    def getTimeStamp(): Time
     
-    def getType(): String = js.native
+    def getType(): String
     
-    def initEvent(eventTypeArg: String, canBubbleArg: Boolean, cancelableArg: Boolean): Unit = js.native
+    def initEvent(eventTypeArg: String, canBubbleArg: Boolean, cancelableArg: Boolean): Unit
     
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
     
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
   }
   object XEvent {
     
@@ -303,10 +305,11 @@ object events {
     }
   }
   
-  @js.native
-  trait XEventListener extends XInterface {
+  trait XEventListener
+    extends StObject
+       with XInterface {
     
-    def handleEvent(evt: XEvent): Unit = js.native
+    def handleEvent(evt: XEvent): Unit
   }
   object XEventListener {
     
@@ -329,14 +332,15 @@ object events {
     }
   }
   
-  @js.native
-  trait XEventTarget extends XInterface {
+  trait XEventTarget
+    extends StObject
+       with XInterface {
     
-    def addEventListener(eventType: String, listener: XEventListener, useCapture: Boolean): Unit = js.native
+    def addEventListener(eventType: String, listener: XEventListener, useCapture: Boolean): Unit
     
-    def dispatchEvent(evt: XEvent): Boolean = js.native
+    def dispatchEvent(evt: XEvent): Boolean
     
-    def removeEventListener(eventType: String, listener: XEventListener, useCapture: Boolean): Unit = js.native
+    def removeEventListener(eventType: String, listener: XEventListener, useCapture: Boolean): Unit
   }
   object XEventTarget {
     
@@ -367,48 +371,49 @@ object events {
     }
   }
   
-  @js.native
-  trait XMouseEvent extends XUIEvent {
+  trait XMouseEvent
+    extends StObject
+       with XUIEvent {
     
-    val AltKey: Boolean = js.native
+    val AltKey: Boolean
     
-    val Button: Double = js.native
+    val Button: Double
     
-    val ClientX: Double = js.native
+    val ClientX: Double
     
-    val ClientY: Double = js.native
+    val ClientY: Double
     
-    val CtrlKey: Boolean = js.native
+    val CtrlKey: Boolean
     
-    val MetaKey: Boolean = js.native
+    val MetaKey: Boolean
     
-    val RelatedTarget: XEventTarget = js.native
+    val RelatedTarget: XEventTarget
     
-    val ScreenX: Double = js.native
+    val ScreenX: Double
     
-    val ScreenY: Double = js.native
+    val ScreenY: Double
     
-    val ShiftKey: Boolean = js.native
+    val ShiftKey: Boolean
     
-    def getAltKey(): Boolean = js.native
+    def getAltKey(): Boolean
     
-    def getButton(): Double = js.native
+    def getButton(): Double
     
-    def getClientX(): Double = js.native
+    def getClientX(): Double
     
-    def getClientY(): Double = js.native
+    def getClientY(): Double
     
-    def getCtrlKey(): Boolean = js.native
+    def getCtrlKey(): Boolean
     
-    def getMetaKey(): Boolean = js.native
+    def getMetaKey(): Boolean
     
-    def getRelatedTarget(): XEventTarget = js.native
+    def getRelatedTarget(): XEventTarget
     
-    def getScreenX(): Double = js.native
+    def getScreenX(): Double
     
-    def getScreenY(): Double = js.native
+    def getScreenY(): Double
     
-    def getShiftKey(): Boolean = js.native
+    def getShiftKey(): Boolean
     
     def initMouseEvent(
       typeArg: String,
@@ -426,7 +431,7 @@ object events {
       metaKeyArg: Boolean,
       buttonArg: Double,
       relatedTargetArg: XEventTarget
-    ): Unit = js.native
+    ): Unit
   }
   object XMouseEvent {
     
@@ -553,28 +558,29 @@ object events {
     }
   }
   
-  @js.native
-  trait XMutationEvent extends XEvent {
+  trait XMutationEvent
+    extends StObject
+       with XEvent {
     
-    val AttrChange: AttrChangeType = js.native
+    val AttrChange: AttrChangeType
     
-    val AttrName: String = js.native
+    val AttrName: String
     
-    val NewValue: String = js.native
+    val NewValue: String
     
-    val PrevValue: String = js.native
+    val PrevValue: String
     
-    val RelatedNode: XNode = js.native
+    val RelatedNode: XNode
     
-    def getAttrChange(): AttrChangeType = js.native
+    def getAttrChange(): AttrChangeType
     
-    def getAttrName(): String = js.native
+    def getAttrName(): String
     
-    def getNewValue(): String = js.native
+    def getNewValue(): String
     
-    def getPrevValue(): String = js.native
+    def getPrevValue(): String
     
-    def getRelatedNode(): XNode = js.native
+    def getRelatedNode(): XNode
     
     def initMutationEvent(
       typeArg: String,
@@ -585,7 +591,7 @@ object events {
       newValueArg: String,
       attrNameArg: String,
       attrChangeArg: AttrChangeType
-    ): Unit = js.native
+    ): Unit
   }
   object XMutationEvent {
     
@@ -665,16 +671,17 @@ object events {
     }
   }
   
-  @js.native
-  trait XUIEvent extends XEvent {
+  trait XUIEvent
+    extends StObject
+       with XEvent {
     
-    val Detail: Double = js.native
+    val Detail: Double
     
-    val View: XAbstractView = js.native
+    val View: XAbstractView
     
-    def getDetail(): Double = js.native
+    def getDetail(): Double
     
-    def getView(): XAbstractView = js.native
+    def getView(): XAbstractView
     
     def initUIEvent(
       typeArg: String,
@@ -682,7 +689,7 @@ object events {
       cancelableArg: Boolean,
       viewArg: XAbstractView,
       detailArg: Double
-    ): Unit = js.native
+    ): Unit
   }
   object XUIEvent {
     

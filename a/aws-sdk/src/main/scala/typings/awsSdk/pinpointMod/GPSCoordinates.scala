@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GPSCoordinates extends StObject {
   
   /**
     * The latitude coordinate of the location.
     */
-  var Latitude: double = js.native
+  var Latitude: double
   
   /**
     * The longitude coordinate of the location.
     */
-  var Longitude: double = js.native
+  var Longitude: double
 }
 object GPSCoordinates {
   

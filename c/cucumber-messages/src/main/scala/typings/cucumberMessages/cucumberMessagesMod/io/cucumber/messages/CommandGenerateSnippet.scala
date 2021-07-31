@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a CommandGenerateSnippet. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new CommandGenerateSnippet.
   * @param [properties] Properties to set
   */
-class CommandGenerateSnippet () extends ICommandGenerateSnippet {
+class CommandGenerateSnippet ()
+  extends StObject
+     with ICommandGenerateSnippet {
   def this(properties: ICommandGenerateSnippet) = this()
   
   /** CommandGenerateSnippet actionId. */
@@ -36,18 +37,20 @@ class CommandGenerateSnippet () extends ICommandGenerateSnippet {
 }
 object CommandGenerateSnippet {
   
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new CommandGenerateSnippet instance using the specified properties.
     * @param [properties] Properties to set
     * @returns CommandGenerateSnippet instance
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.create")
-  @js.native
-  def create(): CommandGenerateSnippet = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.create")
-  @js.native
-  def create(properties: ICommandGenerateSnippet): CommandGenerateSnippet = js.native
+  @scala.inline
+  def create(): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommandGenerateSnippet]
+  @scala.inline
+  def create(properties: ICommandGenerateSnippet): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
   
   /**
     * Decodes a CommandGenerateSnippet message from the specified reader or buffer.
@@ -58,18 +61,14 @@ object CommandGenerateSnippet {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.decode")
-  @js.native
-  def decode(reader: Reader): CommandGenerateSnippet = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): CommandGenerateSnippet = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.decode")
-  @js.native
-  def decode(reader: Uint8Array): CommandGenerateSnippet = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): CommandGenerateSnippet = js.native
+  @scala.inline
+  def decode(reader: Reader): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
+  @scala.inline
+  def decode(reader: Reader, length: Double): CommandGenerateSnippet = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandGenerateSnippet]
+  @scala.inline
+  def decode(reader: Uint8Array): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): CommandGenerateSnippet = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandGenerateSnippet]
   
   /**
     * Decodes a CommandGenerateSnippet message from the specified reader or buffer, length delimited.
@@ -79,12 +78,10 @@ object CommandGenerateSnippet {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): CommandGenerateSnippet = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): CommandGenerateSnippet = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
   
   /**
     * Encodes the specified CommandGenerateSnippet message. Does not implicitly {@link io.cucumber.messages.CommandGenerateSnippet.verify|verify} messages.
@@ -93,12 +90,10 @@ object CommandGenerateSnippet {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.encode")
-  @js.native
-  def encode(message: ICommandGenerateSnippet): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.encode")
-  @js.native
-  def encode(message: ICommandGenerateSnippet, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ICommandGenerateSnippet): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ICommandGenerateSnippet, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified CommandGenerateSnippet message, length delimited. Does not implicitly {@link io.cucumber.messages.CommandGenerateSnippet.verify|verify} messages.
@@ -107,12 +102,10 @@ object CommandGenerateSnippet {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ICommandGenerateSnippet): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ICommandGenerateSnippet, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ICommandGenerateSnippet): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ICommandGenerateSnippet, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a CommandGenerateSnippet message from a plain object. Also converts values to their respective internal types.
@@ -120,9 +113,8 @@ object CommandGenerateSnippet {
     * @returns CommandGenerateSnippet
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): CommandGenerateSnippet = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
   
   /**
     * Creates a plain object from a CommandGenerateSnippet message. Also converts values to other types if specified.
@@ -131,12 +123,10 @@ object CommandGenerateSnippet {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.toObject")
-  @js.native
-  def toObject(message: CommandGenerateSnippet): StringDictionary[js.Any] = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.toObject")
-  @js.native
-  def toObject(message: CommandGenerateSnippet, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: CommandGenerateSnippet): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: CommandGenerateSnippet, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a CommandGenerateSnippet message.
@@ -144,7 +134,6 @@ object CommandGenerateSnippet {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandGenerateSnippet.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

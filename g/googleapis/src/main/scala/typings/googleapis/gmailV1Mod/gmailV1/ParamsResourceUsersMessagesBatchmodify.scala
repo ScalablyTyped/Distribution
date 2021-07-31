@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUsersMessagesBatchmodify extends StandardParameters {
+trait ParamsResourceUsersMessagesBatchmodify
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaBatchModifyMessagesRequest] = js.native
+  var requestBody: js.UndefOr[SchemaBatchModifyMessagesRequest] = js.undefined
   
   /**
     * The user's email address. The special value me can be used to indicate
     * the authenticated user.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUsersMessagesBatchmodify {
   

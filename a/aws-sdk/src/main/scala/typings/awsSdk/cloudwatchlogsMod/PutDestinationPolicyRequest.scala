@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutDestinationPolicyRequest extends StObject {
   
   /**
     * An IAM policy document that authorizes cross-account users to deliver their log events to the associated destination. This can be up to 5120 bytes.
     */
-  var accessPolicy: AccessPolicy = js.native
+  var accessPolicy: AccessPolicy
   
   /**
     * A name for an existing destination.
     */
-  var destinationName: DestinationName = js.native
+  var destinationName: DestinationName
 }
 object PutDestinationPolicyRequest {
   

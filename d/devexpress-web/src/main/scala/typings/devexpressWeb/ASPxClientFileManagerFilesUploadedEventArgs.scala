@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.FilesUploaded event.
   */
-@js.native
-trait ASPxClientFileManagerFilesUploadedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFileManagerFilesUploadedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets an array of uploaded file names.
     */
-  var fileNames: js.Array[String] = js.native
+  var fileNames: js.Array[String]
   
   /**
     * Gets the path to the folder where files are uploaded.
     */
-  var folder: String = js.native
+  var folder: String
 }
 object ASPxClientFileManagerFilesUploadedEventArgs {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSizeConstraintSetResponse extends StObject {
   
   /**
     * The ChangeToken that you used to submit the CreateSizeConstraintSet request. You can also use this value to query the status of the request. For more information, see GetChangeTokenStatus.
     */
-  var ChangeToken: js.UndefOr[typings.awsSdk.wafregionalMod.ChangeToken] = js.native
+  var ChangeToken: js.UndefOr[typings.awsSdk.wafregionalMod.ChangeToken] = js.undefined
   
   /**
     * A SizeConstraintSet that contains no SizeConstraint objects.
     */
-  var SizeConstraintSet: js.UndefOr[typings.awsSdk.wafregionalMod.SizeConstraintSet] = js.native
+  var SizeConstraintSet: js.UndefOr[typings.awsSdk.wafregionalMod.SizeConstraintSet] = js.undefined
 }
 object CreateSizeConstraintSetResponse {
   

@@ -3,31 +3,29 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientContributionProviderDetails extends StObject {
   
   /**
     * Friendly name for the provider.
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * Unique identifier for this provider. The provider name can be used to cache the contribution data and refer back to it when looking for changes
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Properties associated with the provider
     */
-  var properties: StringDictionary[String] = js.native
+  var properties: StringDictionary[String]
   
   /**
     * Version of contributions assoicated with this contribution provider.
     */
-  var version: String = js.native
+  var version: String
 }
 object ClientContributionProviderDetails {
   

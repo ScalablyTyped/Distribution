@@ -2,7 +2,6 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,13 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * &quot;dateRange&quot;: { &quot;startDate&quot;: &quot;2015-07-01&quot;,
   * &quot;endDate&quot;: &quot;2015-07-01&quot; }       }]     }
   */
-@js.native
 trait SchemaCohortGroup extends StObject {
   
   /**
     * The definition for the cohort.
     */
-  var cohorts: js.UndefOr[js.Array[SchemaCohort]] = js.native
+  var cohorts: js.UndefOr[js.Array[SchemaCohort]] = js.undefined
   
   /**
     * Enable Life Time Value (LTV).  LTV measures lifetime value for users
@@ -45,7 +43,7 @@ trait SchemaCohortGroup extends StObject {
     * The `viewId` must be an   [app view
     * ID](https://support.google.com/analytics/answer/2649553#WebVersusAppViews)
     */
-  var lifetimeValue: js.UndefOr[Boolean] = js.native
+  var lifetimeValue: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaCohortGroup {
   

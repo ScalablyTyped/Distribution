@@ -1,20 +1,18 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__settingregistry"
-version := "2.2.5-88033f"
-scalaVersion := "2.13.3"
+version := "2.2.5-2cdb69"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "jupyterlab__statedb" % "2.2.5-4b2871",
-  "org.scalablytyped" %%% "lumino__algorithm" % "1.3.3-6bbf10",
-  "org.scalablytyped" %%% "lumino__commands" % "1.11.4-8bc52a",
-  "org.scalablytyped" %%% "lumino__coreutils" % "1.5.3-5b541b",
-  "org.scalablytyped" %%% "lumino__disposable" % "1.4.3-c29ef2",
-  "org.scalablytyped" %%% "lumino__signaling" % "1.4.3-db0b39",
-  "org.scalablytyped" %%% "lumino__virtualdom" % "1.7.3-79bff6",
-  "org.scalablytyped" %%% "std" % "4.1-40053c")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "jupyterlab__statedb" % "2.2.5-db136d",
+  "org.scalablytyped" %%% "lumino__algorithm" % "1.3.3-5e1252",
+  "org.scalablytyped" %%% "lumino__commands" % "1.11.4-99e88d",
+  "org.scalablytyped" %%% "lumino__coreutils" % "1.5.3-23f033",
+  "org.scalablytyped" %%% "lumino__disposable" % "1.4.3-d888b6",
+  "org.scalablytyped" %%% "lumino__signaling" % "1.4.3-7b273a",
+  "org.scalablytyped" %%% "lumino__virtualdom" % "1.7.3-5072cd",
+  "org.scalablytyped" %%% "std" % "4.1-044efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

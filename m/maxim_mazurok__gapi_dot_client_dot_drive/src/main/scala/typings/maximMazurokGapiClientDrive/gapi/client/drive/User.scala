@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
   /** A plain text displayable name for this user. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The email address of the user. This may not be present in certain contexts if the user has not made their email address visible to the requester. */
-  var emailAddress: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "drive#user". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Whether this user is the requesting user. */
-  var me: js.UndefOr[Boolean] = js.native
+  var me: js.UndefOr[Boolean] = js.undefined
   
   /** The user's ID as visible in Permission resources. */
-  var permissionId: js.UndefOr[String] = js.native
+  var permissionId: js.UndefOr[String] = js.undefined
   
   /** A link to the user's profile photo, if available. */
-  var photoLink: js.UndefOr[String] = js.native
+  var photoLink: js.UndefOr[String] = js.undefined
 }
 object User {
   

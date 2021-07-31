@@ -2,7 +2,6 @@ package typings.timezonecomplete
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localeMod {
@@ -180,16 +179,15 @@ object localeMod {
   @js.native
   val WEEKDAY_TWO_LETTERS: js.Array[String] = js.native
   
-  @js.native
   trait DayPeriod extends StObject {
     
-    var am: String = js.native
+    var am: String
     
-    var midnight: String = js.native
+    var midnight: String
     
-    var noon: String = js.native
+    var noon: String
     
-    var pm: String = js.native
+    var pm: String
   }
   object DayPeriod {
     
@@ -216,85 +214,84 @@ object localeMod {
     }
   }
   
-  @js.native
   trait Locale extends StObject {
     
-    var dayPeriodAbbreviated: DayPeriod = js.native
+    var dayPeriodAbbreviated: DayPeriod
     
     /**
       * Fixed day period names (AM/PM/noon/midnight, format 'a' and 'b')
       */
-    var dayPeriodNarrow: DayPeriod = js.native
+    var dayPeriodNarrow: DayPeriod
     
-    var dayPeriodWide: DayPeriod = js.native
+    var dayPeriodWide: DayPeriod
     
-    var eraAbbreviated: js.Tuple2[String, String] = js.native
+    var eraAbbreviated: js.Tuple2[String, String]
     
     /**
       * Era names: AD, BC
       */
-    var eraNarrow: js.Tuple2[String, String] = js.native
+    var eraNarrow: js.Tuple2[String, String]
     
-    var eraWide: js.Tuple2[String, String] = js.native
+    var eraWide: js.Tuple2[String, String]
     
     /**
       * Month names
       */
-    var longMonthNames: js.Array[String] = js.native
+    var longMonthNames: js.Array[String]
     
     /**
       * Week day names, starting with sunday
       */
-    var longWeekdayNames: js.Array[String] = js.native
+    var longWeekdayNames: js.Array[String]
     
     /**
       * Month letters
       */
-    var monthLetters: js.Array[String] = js.native
+    var monthLetters: js.Array[String]
     
     /**
       * Quarter abbreviations e.g. 1st, 2nd, 3rd, 4th
       */
-    var quarterAbbreviations: js.Array[String] = js.native
+    var quarterAbbreviations: js.Array[String]
     
     /**
       * The letter indicating a quarter e.g. "Q" (becomes Q1, Q2, Q3, Q4)
       */
-    var quarterLetter: String = js.native
+    var quarterLetter: String
     
     /**
       * The word for 'quarter'
       */
-    var quarterWord: String = js.native
+    var quarterWord: String
     
     /**
       * Three-letter month names
       */
-    var shortMonthNames: js.Array[String] = js.native
+    var shortMonthNames: js.Array[String]
     
-    var shortWeekdayNames: js.Array[String] = js.native
+    var shortWeekdayNames: js.Array[String]
     
     /**
       * In some languages, months need different names when used stand-alone
       */
-    var standAloneLongMonthNames: js.Array[String] = js.native
+    var standAloneLongMonthNames: js.Array[String]
     
-    var standAloneMonthLetters: js.Array[String] = js.native
+    var standAloneMonthLetters: js.Array[String]
     
-    var standAloneQuarterAbbreviations: js.Array[String] = js.native
+    var standAloneQuarterAbbreviations: js.Array[String]
     
     /**
       * In some languages, quarters need different names when used stand-alone
       */
-    var standAloneQuarterLetter: String = js.native
+    var standAloneQuarterLetter: String
     
-    var standAloneQuarterWord: String = js.native
+    var standAloneQuarterWord: String
     
-    var standAloneShortMonthNames: js.Array[String] = js.native
+    var standAloneShortMonthNames: js.Array[String]
     
-    var weekdayLetters: js.Array[String] = js.native
+    var weekdayLetters: js.Array[String]
     
-    var weekdayTwoLetters: js.Array[String] = js.native
+    var weekdayTwoLetters: js.Array[String]
   }
   object Locale {
     
@@ -434,85 +431,84 @@ object localeMod {
     }
   }
   
-  @js.native
   trait PartialLocale extends StObject {
     
-    var dayPeriodAbbreviated: js.UndefOr[DayPeriod] = js.native
+    var dayPeriodAbbreviated: js.UndefOr[DayPeriod] = js.undefined
     
     /**
       * Fixed day period names (AM/PM/noon/midnight, format 'a' and 'b')
       */
-    var dayPeriodNarrow: js.UndefOr[DayPeriod] = js.native
+    var dayPeriodNarrow: js.UndefOr[DayPeriod] = js.undefined
     
-    var dayPeriodWide: js.UndefOr[DayPeriod] = js.native
+    var dayPeriodWide: js.UndefOr[DayPeriod] = js.undefined
     
-    var eraAbbreviated: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var eraAbbreviated: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
     /**
       * Era names: AD, BC
       */
-    var eraNarrow: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var eraNarrow: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var eraWide: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var eraWide: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
     /**
       * Month names
       */
-    var longMonthNames: js.UndefOr[js.Array[String]] = js.native
+    var longMonthNames: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Week day names, starting with sunday
       */
-    var longWeekdayNames: js.UndefOr[js.Array[String]] = js.native
+    var longWeekdayNames: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Month letters
       */
-    var monthLetters: js.UndefOr[js.Array[String]] = js.native
+    var monthLetters: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Quarter abbreviations e.g. 1st, 2nd, 3rd, 4th
       */
-    var quarterAbbreviations: js.UndefOr[js.Array[String]] = js.native
+    var quarterAbbreviations: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The letter indicating a quarter e.g. "Q" (becomes Q1, Q2, Q3, Q4)
       */
-    var quarterLetter: js.UndefOr[String] = js.native
+    var quarterLetter: js.UndefOr[String] = js.undefined
     
     /**
       * The word for 'quarter'
       */
-    var quarterWord: js.UndefOr[String] = js.native
+    var quarterWord: js.UndefOr[String] = js.undefined
     
     /**
       * Three-letter month names
       */
-    var shortMonthNames: js.UndefOr[js.Array[String]] = js.native
+    var shortMonthNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    var shortWeekdayNames: js.UndefOr[js.Array[String]] = js.native
+    var shortWeekdayNames: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * In some languages, months need different names when used stand-alone
       */
-    var standAloneLongMonthNames: js.UndefOr[js.Array[String]] = js.native
+    var standAloneLongMonthNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    var standAloneMonthLetters: js.UndefOr[js.Array[String]] = js.native
+    var standAloneMonthLetters: js.UndefOr[js.Array[String]] = js.undefined
     
-    var standAloneQuarterAbbreviations: js.UndefOr[js.Array[String]] = js.native
+    var standAloneQuarterAbbreviations: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * In some languages, quarters need different names when used stand-alone
       */
-    var standAloneQuarterLetter: js.UndefOr[String] = js.native
+    var standAloneQuarterLetter: js.UndefOr[String] = js.undefined
     
-    var standAloneQuarterWord: js.UndefOr[String] = js.native
+    var standAloneQuarterWord: js.UndefOr[String] = js.undefined
     
-    var standAloneShortMonthNames: js.UndefOr[js.Array[String]] = js.native
+    var standAloneShortMonthNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    var weekdayLetters: js.UndefOr[js.Array[String]] = js.native
+    var weekdayLetters: js.UndefOr[js.Array[String]] = js.undefined
     
-    var weekdayTwoLetters: js.UndefOr[js.Array[String]] = js.native
+    var weekdayTwoLetters: js.UndefOr[js.Array[String]] = js.undefined
   }
   object PartialLocale {
     

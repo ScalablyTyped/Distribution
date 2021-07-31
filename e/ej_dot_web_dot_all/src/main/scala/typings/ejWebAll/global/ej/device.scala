@@ -2,28 +2,26 @@ package typings.ejWebAll.global.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object device {
   
-  @JSGlobal("ej.device.isAndroid")
+  @JSGlobal("ej.device")
   @js.native
-  def isAndroid(): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("ej.device.isFlat")
-  @js.native
-  def isFlat(): Boolean = js.native
+  @scala.inline
+  def isAndroid(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAndroid")().asInstanceOf[Boolean]
   
-  @JSGlobal("ej.device.isIOS")
-  @js.native
-  def isIOS(): Boolean = js.native
+  @scala.inline
+  def isFlat(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFlat")().asInstanceOf[Boolean]
   
-  @JSGlobal("ej.device.isIOS7")
-  @js.native
-  def isIOS7(): Boolean = js.native
+  @scala.inline
+  def isIOS(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIOS")().asInstanceOf[Boolean]
   
-  @JSGlobal("ej.device.isWindows")
-  @js.native
-  def isWindows(): Boolean = js.native
+  @scala.inline
+  def isIOS7(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIOS7")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isWindows(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWindows")().asInstanceOf[Boolean]
 }

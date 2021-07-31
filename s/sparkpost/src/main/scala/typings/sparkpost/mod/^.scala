@@ -2,7 +2,6 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sparkpost", JSImport.Namespace)
@@ -12,8 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param apiKey A passed in apiKey will take precedence over an environment variable
   * @param options Additional options
   */
-class ^ () extends SparkPost {
+class ^ ()
+  extends StObject
+     with SparkPost {
   def this(apiKey: String) = this()
-  def this(apiKey: js.UndefOr[scala.Nothing], options: ConstructorOptions) = this()
   def this(apiKey: String, options: ConstructorOptions) = this()
+  def this(apiKey: Unit, options: ConstructorOptions) = this()
 }

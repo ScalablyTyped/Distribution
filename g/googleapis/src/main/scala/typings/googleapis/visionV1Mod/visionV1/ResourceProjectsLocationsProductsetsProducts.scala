@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vision/v1", "vision_v1.Resource$Projects$Locations$Productsets$Products")
@@ -35,7 +34,7 @@ class ResourceProjectsLocationsProductsetsProducts protected () extends StObject
     */
   def list(): GaxiosPromise[SchemaListProductsInProductSetResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListProductsInProductSetResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListProductsInProductSetResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListProductsInProductSetResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsProductsetsProductsList): GaxiosPromise[SchemaListProductsInProductSetResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsProductsetsProductsList,

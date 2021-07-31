@@ -5,15 +5,13 @@ import typings.octokitTypes.endpointsMod.ChecksListAnnotationsResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersChecksListAnnotationsEndpoint extends StObject {
   
-  var parameters: ChecksListAnnotationsEndpoint = js.native
+  var parameters: ChecksListAnnotationsEndpoint
   
-  var response: OctokitResponse[ChecksListAnnotationsResponseData] = js.native
+  var response: OctokitResponse[ChecksListAnnotationsResponseData]
 }
 object ParametersChecksListAnnotationsEndpoint {
   

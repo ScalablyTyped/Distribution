@@ -3,7 +3,6 @@ package typings.firebaseAdmin.authMod.auth
 import typings.firebaseAdmin.firebaseNamespaceApiMod.FirebaseArrayIndexError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,24 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link auth.Auth.importUsers `importUsers()`} method for batch
   * importing users to Firebase Auth.
   */
-@js.native
 trait UserImportResult extends StObject {
   
   /**
     * An array of errors corresponding to the provided users to import. The
     * length of this array is equal to [`failureCount`](#failureCount).
     */
-  var errors: js.Array[FirebaseArrayIndexError] = js.native
+  var errors: js.Array[FirebaseArrayIndexError]
   
   /**
     * The number of user records that failed to import to Firebase Auth.
     */
-  var failureCount: Double = js.native
+  var failureCount: Double
   
   /**
     * The number of user records that successfully imported to Firebase Auth.
     */
-  var successCount: Double = js.native
+  var successCount: Double
 }
 object UserImportResult {
   

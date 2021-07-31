@@ -3,7 +3,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,70 +12,69 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * match the various computational requirements of the various stages of the
   * job.
   */
-@js.native
 trait SchemaWorkerPool extends StObject {
   
   /**
     * Settings for autoscaling of this WorkerPool.
     */
-  var autoscalingSettings: js.UndefOr[SchemaAutoscalingSettings] = js.native
+  var autoscalingSettings: js.UndefOr[SchemaAutoscalingSettings] = js.undefined
   
   /**
     * Data disks that are used by a VM in this workflow.
     */
-  var dataDisks: js.UndefOr[js.Array[SchemaDisk]] = js.native
+  var dataDisks: js.UndefOr[js.Array[SchemaDisk]] = js.undefined
   
   /**
     * The default package set to install.  This allows the service to select a
     * default set of packages which are useful to worker harnesses written in a
     * particular language.
     */
-  var defaultPackageSet: js.UndefOr[String] = js.native
+  var defaultPackageSet: js.UndefOr[String] = js.undefined
   
   /**
     * Size of root disk for VMs, in GB.  If zero or unspecified, the service
     * will attempt to choose a reasonable default.
     */
-  var diskSizeGb: js.UndefOr[Double] = js.native
+  var diskSizeGb: js.UndefOr[Double] = js.undefined
   
   /**
     * Fully qualified source image for disks.
     */
-  var diskSourceImage: js.UndefOr[String] = js.native
+  var diskSourceImage: js.UndefOr[String] = js.undefined
   
   /**
     * Type of root disk for VMs.  If empty or unspecified, the service will
     * attempt to choose a reasonable default.
     */
-  var diskType: js.UndefOr[String] = js.native
+  var diskType: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration for VM IPs.
     */
-  var ipConfiguration: js.UndefOr[String] = js.native
+  var ipConfiguration: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of the worker pool; currently only `harness` and `shuffle` are
     * supported.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Machine type (e.g. &quot;n1-standard-1&quot;).  If empty or unspecified,
     * the service will attempt to choose a reasonable default.
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata to set on the Google Compute Engine VMs.
     */
-  var metadata: js.UndefOr[StringDictionary[String]] = js.native
+  var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Network to which VMs will be assigned.  If empty or unspecified, the
     * service will use the network &quot;default&quot;.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * The number of threads per worker harness. If empty or unspecified, the
@@ -84,42 +82,42 @@ trait SchemaWorkerPool extends StObject {
     * on the selected machine type for batch, or 1 by convention for
     * streaming).
     */
-  var numThreadsPerWorker: js.UndefOr[Double] = js.native
+  var numThreadsPerWorker: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of Google Compute Engine workers in this pool needed to execute
     * the job.  If zero or unspecified, the service will attempt to choose a
     * reasonable default.
     */
-  var numWorkers: js.UndefOr[Double] = js.native
+  var numWorkers: js.UndefOr[Double] = js.undefined
   
   /**
     * The action to take on host maintenance, as defined by the Google Compute
     * Engine API.
     */
-  var onHostMaintenance: js.UndefOr[String] = js.native
+  var onHostMaintenance: js.UndefOr[String] = js.undefined
   
   /**
     * Packages to be installed on workers.
     */
-  var packages: js.UndefOr[js.Array[SchemaPackage]] = js.native
+  var packages: js.UndefOr[js.Array[SchemaPackage]] = js.undefined
   
   /**
     * Extra arguments for this worker pool.
     */
-  var poolArgs: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var poolArgs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Subnetwork to which VMs will be assigned, if desired.  Expected to be of
     * the form &quot;regions/REGION/subnetworks/SUBNETWORK&quot;.
     */
-  var subnetwork: js.UndefOr[String] = js.native
+  var subnetwork: js.UndefOr[String] = js.undefined
   
   /**
     * Settings passed through to Google Compute Engine workers when using the
     * standard Dataflow task runner.  Users should ignore this field.
     */
-  var taskrunnerSettings: js.UndefOr[SchemaTaskRunnerSettings] = js.native
+  var taskrunnerSettings: js.UndefOr[SchemaTaskRunnerSettings] = js.undefined
   
   /**
     * Sets the policy for determining when to turndown worker pool. Allowed
@@ -135,19 +133,19 @@ trait SchemaWorkerPool extends StObject {
     * If unknown or unspecified, the service will attempt to choose a
     * reasonable default.
     */
-  var teardownPolicy: js.UndefOr[String] = js.native
+  var teardownPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Docker container image that executes the Cloud Dataflow worker
     * harness, residing in Google Container Registry.
     */
-  var workerHarnessContainerImage: js.UndefOr[String] = js.native
+  var workerHarnessContainerImage: js.UndefOr[String] = js.undefined
   
   /**
     * Zone to run the worker pools in.  If empty or unspecified, the service
     * will attempt to choose a reasonable default.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaWorkerPool {
   

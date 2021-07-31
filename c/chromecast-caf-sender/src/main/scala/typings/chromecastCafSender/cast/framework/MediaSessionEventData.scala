@@ -3,13 +3,13 @@ package typings.chromecastCafSender.cast.framework
 import typings.chrome.chrome.cast.media.Media
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaSessionEventData extends EventData {
+trait MediaSessionEventData
+  extends StObject
+     with EventData {
   
-  var mediaSession: Media = js.native
+  var mediaSession: Media
 }
 object MediaSessionEventData {
   

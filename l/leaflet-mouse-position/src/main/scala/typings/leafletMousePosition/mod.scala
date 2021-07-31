@@ -5,7 +5,6 @@ import typings.leafletMousePosition.mod.Control_.MousePosition
 import typings.leafletMousePosition.mod.Control_.MousePositionControlOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -23,26 +22,27 @@ object mod {
       var options_MousePosition: MousePositionControlOptions = js.native
     }
     
-    @js.native
-    trait MousePositionControlOptions extends ControlOptions {
+    trait MousePositionControlOptions
+      extends StObject
+         with ControlOptions {
       
-      var emptyString: js.UndefOr[String] = js.native
+      var emptyString: js.UndefOr[String] = js.undefined
       
-      var formatter: js.UndefOr[js.Function2[/* lng */ Double, /* lat */ Double, String]] = js.native
+      var formatter: js.UndefOr[js.Function2[/* lng */ Double, /* lat */ Double, String]] = js.undefined
       
-      var latFormatter: js.UndefOr[js.Function1[/* lat */ Double, String]] = js.native
+      var latFormatter: js.UndefOr[js.Function1[/* lat */ Double, String]] = js.undefined
       
-      var lngFirst: js.UndefOr[Boolean] = js.native
+      var lngFirst: js.UndefOr[Boolean] = js.undefined
       
-      var lngFormatter: js.UndefOr[js.Function1[/* lng */ Double, String]] = js.native
+      var lngFormatter: js.UndefOr[js.Function1[/* lng */ Double, String]] = js.undefined
       
-      var numDigits: js.UndefOr[Double] = js.native
+      var numDigits: js.UndefOr[Double] = js.undefined
       
-      var prefix: js.UndefOr[String] = js.native
+      var prefix: js.UndefOr[String] = js.undefined
       
-      var separator: js.UndefOr[String] = js.native
+      var separator: js.UndefOr[String] = js.undefined
       
-      var wrapLng: js.UndefOr[Boolean] = js.native
+      var wrapLng: js.UndefOr[Boolean] = js.undefined
     }
     object MousePositionControlOptions {
       
@@ -114,18 +114,19 @@ object mod {
   
   object control {
     
-    @JSImport("leaflet", "control.mousePosition")
+    @JSImport("leaflet", "control")
     @js.native
-    def mousePosition(): MousePosition = js.native
-    @JSImport("leaflet", "control.mousePosition")
-    @js.native
-    def mousePosition(options: MousePositionControlOptions): MousePosition = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def mousePosition(): MousePosition = ^.asInstanceOf[js.Dynamic].applyDynamic("mousePosition")().asInstanceOf[MousePosition]
+    @scala.inline
+    def mousePosition(options: MousePositionControlOptions): MousePosition = ^.asInstanceOf[js.Dynamic].applyDynamic("mousePosition")(options.asInstanceOf[js.Any]).asInstanceOf[MousePosition]
   }
   
-  @js.native
   trait MapOptions extends StObject {
     
-    var positionControl: js.UndefOr[Boolean] = js.native
+    var positionControl: js.UndefOr[Boolean] = js.undefined
   }
   object MapOptions {
     

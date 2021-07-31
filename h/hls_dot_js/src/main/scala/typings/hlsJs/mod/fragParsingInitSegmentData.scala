@@ -2,19 +2,17 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait fragParsingInitSegmentData extends StObject {
   
-  var codecs: js.Any = js.native
+  var codecs: js.Any
   
-  var frag: Fragment = js.native
+  var frag: Fragment
   
-  var id: String = js.native
+  var id: String
   
-  var moov: js.Any = js.native
+  var moov: js.Any
 }
 object fragParsingInitSegmentData {
   

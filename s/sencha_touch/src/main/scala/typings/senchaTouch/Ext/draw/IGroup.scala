@@ -4,58 +4,58 @@ import typings.senchaTouch.Ext.draw.sprite.ISprite
 import typings.senchaTouch.Ext.mixin.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGroup extends IObservable {
+trait IGroup
+  extends StObject
+     with IObservable {
   
   /** [Method] Add sprite to group
     * @param sprite Ext.draw.sprite.Sprite
     */
-  var add: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[ISprite], Unit]] = js.native
+  var add: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[ISprite], Unit]] = js.undefined
   
   /** [Method] Add a list of sprites to group
     * @param sprites Array|Ext.draw.sprite.Sprite
     */
-  var addAll: js.UndefOr[js.Function1[/* sprites */ js.UndefOr[js.Any], Unit]] = js.native
+  var addAll: js.UndefOr[js.Function1[/* sprites */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Clear the group
     * @param destroySprite Boolean
     */
-  var clear: js.UndefOr[js.Function1[/* destroySprite */ js.UndefOr[Boolean], Unit]] = js.native
+  var clear: js.UndefOr[js.Function1[/* destroySprite */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Iterate all sprites with specific function
     * @param fn Function Function to iterate.
     */
-  var each: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.native
+  var each: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Get the sprite with id or index
     * @param id String|Number
     * @returns Ext.draw.sprite.Sprite
     */
-  var get: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], ISprite]] = js.native
+  var get: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], ISprite]] = js.undefined
   
   /** [Method] Get the i th sprite of the group
     * @param index Number
     * @returns Ext.draw.sprite.Sprite
     */
-  var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], ISprite]] = js.native
+  var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], ISprite]] = js.undefined
   
   /** [Method] Return the minimal bounding box that contains all the sprites bounding boxes in this group
     * @param isWithTransform Object
     */
-  var getBBox: js.UndefOr[js.Function1[/* isWithTransform */ js.UndefOr[js.Any], Unit]] = js.native
+  var getBBox: js.UndefOr[js.Function1[/* isWithTransform */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Returns the value of surface
     * @returns Object
     */
-  var getSurface: js.UndefOr[js.Function0[_]] = js.native
+  var getSurface: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Hide all sprites in the group
     * @param o Boolean Whether to re-render the frame.
     */
-  var hide: js.UndefOr[js.Function1[/* o */ js.UndefOr[Boolean], Unit]] = js.native
+  var hide: js.UndefOr[js.Function1[/* o */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
@@ -65,7 +65,7 @@ trait IGroup extends IObservable {
   @JSName("relayEvents")
   var relayEvents_IGroup: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Remote sprite from group
     * @param sprite Ext.draw.sprite.Sprite
@@ -73,25 +73,25 @@ trait IGroup extends IObservable {
     */
   var remove: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[ISprite], /* destroySprite */ js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Set attributes to all sprites in the group
     * @param o Object Sprite attribute options just like in Ext.draw.sprite.Sprite.
     */
-  var setAttributes: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], Unit]] = js.native
+  var setAttributes: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Set dirty flag for all sprites in the group */
-  var setDirty: js.UndefOr[js.Function0[Unit]] = js.native
+  var setDirty: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Sets the value of surface
     * @param surface Object The new value.
     */
-  var setSurface: js.UndefOr[js.Function1[/* surface */ js.UndefOr[js.Any], Unit]] = js.native
+  var setSurface: js.UndefOr[js.Function1[/* surface */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Display all sprites in the group
     * @param o Boolean Whether to re-render the frame.
     */
-  var show: js.UndefOr[js.Function1[/* o */ js.UndefOr[Boolean], Unit]] = js.native
+  var show: js.UndefOr[js.Function1[/* o */ js.UndefOr[Boolean], Unit]] = js.undefined
 }
 object IGroup {
   
@@ -144,7 +144,7 @@ object IGroup {
     def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
     
     @scala.inline
-    def setGetSurface(value: () => _): Self = StObject.set(x, "getSurface", js.Any.fromFunction0(value))
+    def setGetSurface(value: () => js.Any): Self = StObject.set(x, "getSurface", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetSurfaceUndefined: Self = StObject.set(x, "getSurface", js.undefined)

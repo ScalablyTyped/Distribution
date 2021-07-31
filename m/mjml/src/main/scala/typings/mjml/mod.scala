@@ -6,34 +6,32 @@ import typings.mjml.mjmlStrings.soft
 import typings.mjml.mjmlStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mjml", JSImport.Namespace)
-  @js.native
-  def apply(inp: String): MJMLParseResults = js.native
-  @JSImport("mjml", JSImport.Namespace)
-  @js.native
-  def apply(inp: String, opts: MJMLParsingOpts): MJMLParseResults = js.native
-  @JSImport("mjml", JSImport.Namespace)
-  @js.native
-  def apply(inp: MJMLJsonObject): MJMLParseResults = js.native
-  @JSImport("mjml", JSImport.Namespace)
-  @js.native
-  def apply(inp: MJMLJsonObject, opts: MJMLParsingOpts): MJMLParseResults = js.native
+  @scala.inline
+  def apply(inp: String): MJMLParseResults = ^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any]).asInstanceOf[MJMLParseResults]
+  @scala.inline
+  def apply(inp: String, opts: MJMLParsingOpts): MJMLParseResults = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MJMLParseResults]
+  @scala.inline
+  def apply(inp: MJMLJsonObject): MJMLParseResults = ^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any]).asInstanceOf[MJMLParseResults]
+  @scala.inline
+  def apply(inp: MJMLJsonObject, opts: MJMLParsingOpts): MJMLParseResults = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MJMLParseResults]
   
+  @JSImport("mjml", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait MJMLJsonObject extends StObject {
     
-    var attributes: js.Object = js.native
+    var attributes: js.Object
     
-    var children: js.UndefOr[js.Array[MJMLJsonObject]] = js.native
+    var children: js.UndefOr[js.Array[MJMLJsonObject]] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var tagName: String = js.native
+    var tagName: String
   }
   object MJMLJsonObject {
     
@@ -69,14 +67,13 @@ object mod {
     }
   }
   
-  @js.native
   trait MJMLMinifyOptions extends StObject {
     
-    var collapseWhitespace: js.UndefOr[Boolean] = js.native
+    var collapseWhitespace: js.UndefOr[Boolean] = js.undefined
     
-    var minifyCSS: js.UndefOr[Boolean] = js.native
+    var minifyCSS: js.UndefOr[Boolean] = js.undefined
     
-    var removeEmptyAttributes: js.UndefOr[Boolean] = js.native
+    var removeEmptyAttributes: js.UndefOr[Boolean] = js.undefined
   }
   object MJMLMinifyOptions {
     
@@ -109,16 +106,15 @@ object mod {
     }
   }
   
-  @js.native
   trait MJMLParseError extends StObject {
     
-    var formattedMessage: String = js.native
+    var formattedMessage: String
     
-    var line: Double = js.native
+    var line: Double
     
-    var message: String = js.native
+    var message: String
     
-    var tagName: String = js.native
+    var tagName: String
   }
   object MJMLParseError {
     
@@ -145,12 +141,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MJMLParseResults extends StObject {
     
-    var errors: js.Array[MJMLParseError] = js.native
+    var errors: js.Array[MJMLParseError]
     
-    var html: String = js.native
+    var html: String
   }
   object MJMLParseResults {
     
@@ -174,22 +169,21 @@ object mod {
     }
   }
   
-  @js.native
   trait MJMLParsingOpts extends StObject {
     
-    var beautify: js.UndefOr[Boolean] = js.native
+    var beautify: js.UndefOr[Boolean] = js.undefined
     
-    var filePath: js.UndefOr[String] = js.native
+    var filePath: js.UndefOr[String] = js.undefined
     
-    var fonts: js.UndefOr[StringDictionary[String]] = js.native
+    var fonts: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var keepComments: js.UndefOr[Boolean] = js.native
+    var keepComments: js.UndefOr[Boolean] = js.undefined
     
-    var minify: js.UndefOr[Boolean] = js.native
+    var minify: js.UndefOr[Boolean] = js.undefined
     
-    var minifyOptions: js.UndefOr[MJMLMinifyOptions] = js.native
+    var minifyOptions: js.UndefOr[MJMLMinifyOptions] = js.undefined
     
-    var validationLevel: js.UndefOr[strict | soft | skip] = js.native
+    var validationLevel: js.UndefOr[strict | soft | skip] = js.undefined
   }
   object MJMLParsingOpts {
     

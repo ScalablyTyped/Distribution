@@ -2,12 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Events that occur due to the user interacting with a pointing device (such as a mouse). Common events using this interface include click, dblclick, mouseup, mousedown. */
 @js.native
-trait MouseEvent extends UIEvent {
+trait MouseEvent
+  extends StObject
+     with UIEvent {
   
   val altKey: scala.Boolean = js.native
   

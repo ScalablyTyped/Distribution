@@ -13,10 +13,8 @@ import typings.reactNativeElements.reactNativeElementsStrings.success
 import typings.reactNativeElements.reactNativeElementsStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BadgeProps extends StObject {
   
   /**
@@ -24,46 +22,46 @@ trait BadgeProps extends StObject {
     *
     * @default View (if onPress then TouchableOpacity)
     */
-  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
   /**
     * Additional styling for badge (background) view component
     */
-  var badgeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var badgeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Style for the container
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Function called when pressed on the badge
     */
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Determines color of the indicator
     *
     * @default primary
     */
-  var status: js.UndefOr[primary | success | warning | error] = js.native
+  var status: js.UndefOr[primary | success | warning | error] = js.undefined
   
   /*
     * Props for the text in the badge
     */
-  var textProps: js.UndefOr[TextProperties] = js.native
+  var textProps: js.UndefOr[TextProperties] = js.undefined
   
   /**
     * Style for the text in the badge
     */
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Text value to be displayed by badge
     *
     * @default null
     */
-  var value: js.UndefOr[ReactNode] = js.native
+  var value: js.UndefOr[ReactNode] = js.undefined
 }
 object BadgeProps {
   

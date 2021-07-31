@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateTargetsWithJobRequest extends StObject {
   
   /**
     * An optional comment string describing why the job was associated with the targets.
     */
-  var comment: js.UndefOr[Comment] = js.native
+  var comment: js.UndefOr[Comment] = js.undefined
   
   /**
     * The unique identifier you assigned to this job when it was created.
     */
-  var jobId: JobId = js.native
+  var jobId: JobId
   
   /**
     * The namespace used to indicate that a job is a customer-managed job. When you specify a value for this parameter, AWS IoT Core sends jobs notifications to MQTT topics that contain the value in the following format.  $aws/things/THING_NAME/jobs/JOB_ID/notify-namespace-NAMESPACE_ID/   The namespaceId feature is in public preview. 
     */
-  var namespaceId: js.UndefOr[NamespaceId] = js.native
+  var namespaceId: js.UndefOr[NamespaceId] = js.undefined
   
   /**
     * A list of thing group ARNs that define the targets of the job.
     */
-  var targets: JobTargets = js.native
+  var targets: JobTargets
 }
 object AssociateTargetsWithJobRequest {
   

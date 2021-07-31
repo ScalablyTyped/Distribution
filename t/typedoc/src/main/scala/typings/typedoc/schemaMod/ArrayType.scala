@@ -2,18 +2,18 @@ package typings.typedoc.schemaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.ArrayType, 'type' | 'elementType'> */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ @js.native
-trait ArrayType extends SomeType {
+- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait ArrayType
+  extends StObject
+     with SomeType {
   
-  var elementType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type = js.native
+  var elementType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type
   
-  var `type`: (ModelToObject[/* "array" */ String]) | (/* "array" */ String) = js.native
+  var `type`: (ModelToObject[/* "array" */ String]) | (/* "array" */ String)
 }
 object ArrayType {
   

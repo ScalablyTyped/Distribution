@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("poker-evaluator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("poker-evaluator", "CARDS")
   @js.native
@@ -17,9 +20,8 @@ object mod {
   @js.native
   val HANDTYPES: js.Array[HandName] = js.native
   
-  @JSImport("poker-evaluator", "evalHand")
-  @js.native
-  def evalHand(cards: js.Array[Double | String]): EvaluatedHand = js.native
+  @scala.inline
+  def evalHand(cards: js.Array[Double | String]): EvaluatedHand = ^.asInstanceOf[js.Dynamic].applyDynamic("evalHand")(cards.asInstanceOf[js.Any]).asInstanceOf[EvaluatedHand]
   
   @JSImport("poker-evaluator", "ranks")
   @js.native
@@ -27,17 +29,16 @@ object mod {
   
   type Deck = StringDictionary[Double]
   
-  @js.native
   trait EvaluatedHand extends StObject {
     
-    var handName: HandName = js.native
+    var handName: HandName
     
     // Index of HANDTYPES array
-    var handRank: Double = js.native
+    var handRank: Double
     
-    var handType: Double = js.native
+    var handType: Double
     
-    var value: Double = js.native
+    var value: Double
   }
   object EvaluatedHand {
     

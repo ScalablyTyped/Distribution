@@ -2,21 +2,19 @@ package typings.urijs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Hostname extends StObject {
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[String] = js.native
+    var port: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Hostname {
     
@@ -55,12 +53,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Password extends StObject {
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Password {
     
@@ -87,12 +84,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Port extends StObject {
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[String] = js.native
+    var port: js.UndefOr[String] = js.undefined
   }
   object Port {
     

@@ -6,20 +6,21 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("async-csv", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @param options
     */
-  @JSImport("async-csv", "generate")
-  @js.native
-  def generate(): js.Promise[js.Array[_]] = js.native
-  @JSImport("async-csv", "generate")
-  @js.native
-  def generate(options: CsvGenerateOptions): js.Promise[js.Array[_]] = js.native
+  @scala.inline
+  def generate(): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[js.Promise[js.Array[js.Any]]]
+  @scala.inline
+  def generate(options: CsvGenerateOptions): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
   
   /**
     * Parses a CSV file into an array of rows.
@@ -27,12 +28,10 @@ object mod {
     * @param input
     * @param options
     */
-  @JSImport("async-csv", "parse")
-  @js.native
-  def parse(input: String): js.Promise[js.Array[_]] = js.native
-  @JSImport("async-csv", "parse")
-  @js.native
-  def parse(input: String, options: CsvParseOptions): js.Promise[js.Array[_]] = js.native
+  @scala.inline
+  def parse(input: String): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  @scala.inline
+  def parse(input: String, options: CsvParseOptions): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
   
   /**
     * Converts an array of rows into a CSV string.
@@ -40,12 +39,10 @@ object mod {
     * @param data
     * @param options
     */
-  @JSImport("async-csv", "stringify")
-  @js.native
-  def stringify(data: js.Array[js.Array[js.UndefOr[String | Double | Null]]]): js.Promise[String] = js.native
-  @JSImport("async-csv", "stringify")
-  @js.native
-  def stringify(data: js.Array[js.Array[js.UndefOr[String | Double | Null]]], options: CsvStringifyOptions): js.Promise[String] = js.native
+  @scala.inline
+  def stringify(data: js.Array[js.Array[js.UndefOr[String | Double | Null]]]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def stringify(data: js.Array[js.Array[js.UndefOr[String | Double | Null]]], options: CsvStringifyOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
     *
@@ -53,8 +50,7 @@ object mod {
     * @param handler
     * @param options
     */
-  @JSImport("async-csv", "transform")
-  @js.native
+  @scala.inline
   def transform[T, U](
     data: js.Array[T],
     handler: js.Function3[
@@ -63,9 +59,8 @@ object mod {
       /* params */ js.UndefOr[js.Any], 
       U
     ]
-  ): js.Promise[js.Array[U]] = js.native
-  @JSImport("async-csv", "transform")
-  @js.native
+  ): js.Promise[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(data.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[U]]]
+  @scala.inline
   def transform[T, U](
     data: js.Array[T],
     handler: js.Function3[
@@ -75,28 +70,27 @@ object mod {
       U
     ],
     options: TransformOptions
-  ): js.Promise[js.Array[U]] = js.native
+  ): js.Promise[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(data.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[U]]]
   
   type Cast[T] = js.Function2[/* value */ T, /* context */ CastingContext, String]
   
-  @js.native
   trait CastingContext extends StObject {
     
-    val column: js.UndefOr[Double | String] = js.native
+    val column: js.UndefOr[Double | String] = js.undefined
     
-    val empty_lines: Double = js.native
+    val empty_lines: Double
     
-    val header: Boolean = js.native
+    val header: Boolean
     
-    val index: Double = js.native
+    val index: Double
     
-    val invalid_field_length: Double = js.native
+    val invalid_field_length: Double
     
-    val lines: Double = js.native
+    val lines: Double
     
-    val quoting: Boolean = js.native
+    val quoting: Boolean
     
-    val records: Double = js.native
+    val records: Double
   }
   object CastingContext {
     
@@ -152,97 +146,96 @@ object mod {
   
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - scala.Null
     - typings.asyncCsv.asyncCsvBooleans.`false`
     - typings.asyncCsv.anon.Name
   */
   type ColumnOption = js.UndefOr[_ColumnOption | String | Null]
   
-  @js.native
   trait CsvGenerateOptions extends StObject {
     
     /**
       * Define the number of generated fields and the generation method.
       */
-    var columns: js.UndefOr[Double | js.Array[String]] = js.native
+    var columns: js.UndefOr[Double | js.Array[String]] = js.undefined
     
     /**
       * Set the field delimiter.
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Period to run in milliseconds.
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * If specified, then buffers will be decoded to strings using the
       * specified encoding.
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * When to stop the generation.
       */
-    var end: js.UndefOr[Double | Date] = js.native
+    var end: js.UndefOr[Double | Date] = js.undefined
     
     /**
       * One or multiple characters to print at the end of the file; only
       * apply when objectMode is disabled.
       */
-    var eof: js.UndefOr[Boolean | String] = js.native
+    var eof: js.UndefOr[Boolean | String] = js.undefined
     
-    var fixedSize: js.UndefOr[Boolean] = js.native
+    var fixedSize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Generate buffers equals length as defined by the
       * `highWaterMark` option.
       */
-    var fixed_size: js.UndefOr[Boolean] = js.native
+    var fixed_size: js.UndefOr[Boolean] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of bytes to store in the internal buffer before
       * ceasing to read from the underlying resource.
       */
-    var high_water_mark: js.UndefOr[Double] = js.native
+    var high_water_mark: js.UndefOr[Double] = js.undefined
     
     /**
       * Number of lines or records to generate.
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var maxWordLength: js.UndefOr[Double] = js.native
+    var maxWordLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum number of characters per word.
       */
-    var max_word_length: js.UndefOr[Double] = js.native
+    var max_word_length: js.UndefOr[Double] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether this stream should behave as a stream of objects.
       */
-    var object_mode: js.UndefOr[Boolean] = js.native
+    var object_mode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * One or multiple characters used to delimit records.
       */
-    var row_delimiter: js.UndefOr[String] = js.native
+    var row_delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Generate idempotent random characters if a number provided.
       */
-    var seed: js.UndefOr[Boolean | Double] = js.native
+    var seed: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * The time to wait between the generation of each records
       */
-    var sleep: js.UndefOr[Double] = js.native
+    var sleep: js.UndefOr[Double] = js.undefined
   }
   object CsvGenerateOptions {
     
@@ -368,7 +361,6 @@ object mod {
     }
   }
   
-  @js.native
   trait CsvParseOptions extends StObject {
     
     /**
@@ -377,7 +369,7 @@ object mod {
       *
       * @deprecated Use {@link cast}
       */
-    var auto_parse: js.UndefOr[Boolean | CastingFunction] = js.native
+    var auto_parse: js.UndefOr[Boolean | CastingFunction] = js.undefined
     
     /**
       * If true, the parser will attempt to convert read data types to dates.
@@ -385,13 +377,13 @@ object mod {
       *
       * @deprecated Use {@link cast_date}
       */
-    var auto_parse_date: js.UndefOr[Boolean | CastingDateFunction] = js.native
+    var auto_parse_date: js.UndefOr[Boolean | CastingDateFunction] = js.undefined
     
     /**
       * If true, detect and exclude the byte order mark (BOM) from the CSV
       * input, if present.
       */
-    var bom: js.UndefOr[Boolean] = js.native
+    var bom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the parser will attempt to convert input string to native
@@ -399,7 +391,7 @@ object mod {
       * as second argument and return a new value. More information about the
       * context properties is available below.
       */
-    var cast: js.UndefOr[Boolean | CastingFunction] = js.native
+    var cast: js.UndefOr[Boolean | CastingFunction] = js.undefined
     
     /**
       * If true, the parser will attempt to convert input string to dates.
@@ -407,7 +399,7 @@ object mod {
       * It requires the "auto_parse" option. Be careful, it relies
       * on `Date.parse`.
       */
-    var cast_date: js.UndefOr[Boolean | CastingDateFunction] = js.native
+    var cast_date: js.UndefOr[Boolean | CastingDateFunction] = js.undefined
     
     /**
       * List of fields as an array, a user defined callback accepting the
@@ -417,130 +409,130 @@ object mod {
       */
     var columns: js.UndefOr[
         js.Array[ColumnOption] | Boolean | (js.Function1[/* record */ js.Any, js.Array[ColumnOption]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Treat all the characters after this one as a comment.
       * Default to '' (disabled).
       */
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
     /**
       * Set the field delimiter. One character only, defaults to comma.
       */
-    var delimiter: js.UndefOr[String | Buffer] = js.native
+    var delimiter: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * Set the escape character, one character only.
       * Defaults to double quotes.
       */
-    var escape: js.UndefOr[String | Buffer] = js.native
+    var escape: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * Start handling records from the requested number of records.
       */
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
     /**
       * Start handling records from the requested line number.
       */
-    var from_line: js.UndefOr[Double] = js.native
+    var from_line: js.UndefOr[Double] = js.undefined
     
     /**
       * Generate two properties `info` and `record` where `info` is a
       * snapshot of the info object at the time the record was created and
       * `record` is the parsed array or object.
       */
-    var info: js.UndefOr[Boolean] = js.native
+    var info: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, ignore whitespace immediately following the delimiter (i.e.
       * left-trim all fields), defaults to false. Does not remove whitespace
       * in a quoted field.
       */
-    var ltrim: js.UndefOr[Boolean] = js.native
+    var ltrim: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Maximum number of characters to be contained in the field and line
       * buffers before an exception is raised, used to guard against a wrong
       * delimiter or `record_delimiter`, default to 128,000 characters.
       */
-    var max_record_size: js.UndefOr[Double] = js.native
+    var max_record_size: js.UndefOr[Double] = js.undefined
     
     /**
       * Name of header-record title to name objects by.
       */
-    var objname: js.UndefOr[String] = js.native
+    var objname: js.UndefOr[String] = js.undefined
     
     /**
       * Optional character surrounding a field, one character only, defaults
       * to double quotes.
       */
-    var quote: js.UndefOr[String | Boolean | Buffer] = js.native
+    var quote: js.UndefOr[String | Boolean | Buffer] = js.undefined
     
     /**
       * Generate two properties raw and row where raw is the original CSV row
       * content and row is the parsed array or object.
       */
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
     /**
       * One or multiple characters used to delimit record rows; defaults to
       * auto discovery if not provided. Supported auto discovery method are
       * Linux ("\n"), Apple ("\r") and Windows ("\r\n") row delimiters.
       */
-    var record_delimiter: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.native
+    var record_delimiter: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.undefined
     
     /**
       * Preserve quotes inside unquoted field.
       */
-    var relax: js.UndefOr[Boolean] = js.native
+    var relax: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Discard inconsistent columns count, default to false.
       */
-    var relax_column_count: js.UndefOr[Boolean] = js.native
+    var relax_column_count: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, ignore whitespace immediately preceding the delimiter (i.e.
       * right-trim all fields), defaults to false. Does not remove whitespace
       * in a quoted field.
       */
-    var rtrim: js.UndefOr[Boolean] = js.native
+    var rtrim: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Dont generate empty values for empty lines.
       * Defaults to false
       */
-    var skip_empty_lines: js.UndefOr[Boolean] = js.native
+    var skip_empty_lines: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Don't generate records for lines containing empty column values
       * (column matching /\s*\/), defaults to false.
       */
-    var skip_lines_with_empty_values: js.UndefOr[Boolean] = js.native
+    var skip_lines_with_empty_values: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Skip a line with error found inside and directly go process the
       * next line.
       */
-    var skip_lines_with_error: js.UndefOr[Boolean] = js.native
+    var skip_lines_with_error: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Stop handling records after the requested number of records.
       */
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
     
     /**
       * Stop handling records after the requested line number.
       */
-    var to_line: js.UndefOr[Double] = js.native
+    var to_line: js.UndefOr[Double] = js.undefined
     
     /**
       * If `true`, ignore whitespace immediately around the delimiter,
       * defaults to `false`. Does not remove whitespace in a quoted field.
       */
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object CsvParseOptions {
     
@@ -740,13 +732,12 @@ object mod {
     }
   }
   
-  @js.native
   trait CsvStringifyOptions extends StObject {
     
     /**
       * Key-value object which defines custom cast for certain data types
       */
-    var cast: js.UndefOr[typings.asyncCsv.anon.Boolean] = js.native
+    var cast: js.UndefOr[typings.asyncCsv.anon.Boolean] = js.undefined
     
     /**
       * List of fields, applied when `transform` returns an object, the order
@@ -756,62 +747,62 @@ object mod {
       * see the "header" option on how to print columns names on the
       * first line.
       */
-    var columns: js.UndefOr[(js.Array[ParseColumnOption | String]) | PlainObject[String]] = js.native
+    var columns: js.UndefOr[(js.Array[ParseColumnOption | String]) | PlainObject[String]] = js.undefined
     
     /**
       * Set the field delimiter, one character only, defaults to a comma.
       */
-    var delimiter: js.UndefOr[String | Buffer] = js.native
+    var delimiter: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * Add the value of "options.RecordDelimiter" on the last line, default
       * to true.
       */
-    var eof: js.UndefOr[Boolean] = js.native
+    var eof: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defaults to the escape read option.
       */
-    var escape: js.UndefOr[String | Buffer] = js.native
+    var escape: js.UndefOr[String | Buffer] = js.undefined
     
-    var header: js.UndefOr[Boolean] = js.native
+    var header: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The quote characters, defaults to the ", an empty quote value will
       * preserve the original field.
       */
-    var quote: js.UndefOr[String | Buffer | Boolean] = js.native
+    var quote: js.UndefOr[String | Buffer | Boolean] = js.undefined
     
     /**
       * Boolean, default to false, quote all the non-empty fields even if
       * not required.
       */
-    var quoted: js.UndefOr[Boolean] = js.native
+    var quoted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean, no default, quote empty fields and overrides `quoted_string`
       * on empty strings when defined.
       */
-    var quoted_empty: js.UndefOr[Boolean] = js.native
+    var quoted_empty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean, default to false, quote all fields matching a
       * regular expression.
       */
-    var quoted_match: js.UndefOr[Boolean] = js.native
+    var quoted_match: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean, default to false, quote all fields of type string even if
       * not required.
       */
-    var quoted_string: js.UndefOr[Boolean] = js.native
+    var quoted_string: js.UndefOr[Boolean] = js.undefined
     
     /**
       * String used to delimit record rows or a special value. Special values
       * are 'auto', 'unix', 'mac', 'windows', 'ascii', 'unicode'. Defaults
       * to 'auto' (discovered in source or 'unix' if no source is specified).
       */
-    var record_delimiter: js.UndefOr[RecordDelimiter] = js.native
+    var record_delimiter: js.UndefOr[RecordDelimiter] = js.undefined
   }
   object CsvStringifyOptions {
     
@@ -917,25 +908,24 @@ object mod {
   */
   type RecordDelimiter = _RecordDelimiter | String | Buffer
   
-  @js.native
   trait TransformOptions extends StObject {
     
     /**
       * In the absence of a consumer, like a `stream.Readable`, trigger the
       * consumption of the stream.
       */
-    var consume: js.UndefOr[Boolean] = js.native
+    var consume: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of transformation callbacks to run in parallel; only apply
       * with asynchronous handlers; default to "100".
       */
-    var parallel: js.UndefOr[Double] = js.native
+    var parallel: js.UndefOr[Double] = js.undefined
     
     /**
       * Pass user defined parameters to the user handler as last argument.
       */
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
   }
   object TransformOptions {
     

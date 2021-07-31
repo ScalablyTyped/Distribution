@@ -2,39 +2,37 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource to hold the state and status of a user&#39;s domain mapping.
   */
-@js.native
 trait SchemaDomainMapping extends StObject {
   
   /**
     * The API version for this call such as &quot;v1alpha1&quot;.
     */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of resource, in this case &quot;DomainMapping&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata associated with this BuildTemplate.
     */
-  var metadata: js.UndefOr[SchemaObjectMeta] = js.native
+  var metadata: js.UndefOr[SchemaObjectMeta] = js.undefined
   
   /**
     * The spec for this DomainMapping.
     */
-  var spec: js.UndefOr[SchemaDomainMappingSpec] = js.native
+  var spec: js.UndefOr[SchemaDomainMappingSpec] = js.undefined
   
   /**
     * The current status of the DomainMapping.
     */
-  var status: js.UndefOr[SchemaDomainMappingStatus] = js.native
+  var status: js.UndefOr[SchemaDomainMappingStatus] = js.undefined
 }
 object SchemaDomainMapping {
   

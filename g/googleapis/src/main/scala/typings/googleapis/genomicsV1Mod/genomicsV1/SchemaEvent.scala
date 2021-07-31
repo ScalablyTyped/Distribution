@@ -3,13 +3,11 @@ package typings.googleapis.genomicsV1Mod.genomicsV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Carries information about events that occur during pipeline execution.
   */
-@js.native
 trait SchemaEvent extends StObject {
   
   /**
@@ -17,17 +15,17 @@ trait SchemaEvent extends StObject {
     * change at any time without notice. Any application logic must use the
     * information in the `details` field.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Machine-readable details about the event.
     */
-  var details: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var details: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The time at which the event occurred.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
 }
 object SchemaEvent {
   

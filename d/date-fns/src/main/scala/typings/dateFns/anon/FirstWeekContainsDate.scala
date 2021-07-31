@@ -8,21 +8,19 @@ import typings.dateFns.dateFnsNumbers.`5`
 import typings.dateFns.dateFnsNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstWeekContainsDate extends StObject {
   
-  var firstWeekContainsDate: js.UndefOr[Double] = js.native
+  var firstWeekContainsDate: js.UndefOr[Double] = js.undefined
   
-  var locale: js.UndefOr[typings.dateFns.mod.Locale] = js.native
+  var locale: js.UndefOr[typings.dateFns.mod.Locale] = js.undefined
   
-  var useAdditionalDayOfYearTokens: js.UndefOr[Boolean] = js.native
+  var useAdditionalDayOfYearTokens: js.UndefOr[Boolean] = js.undefined
   
-  var useAdditionalWeekYearTokens: js.UndefOr[Boolean] = js.native
+  var useAdditionalWeekYearTokens: js.UndefOr[Boolean] = js.undefined
   
-  var weekStartsOn: js.UndefOr[typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.native
+  var weekStartsOn: js.UndefOr[typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
 }
 object FirstWeekContainsDate {
   

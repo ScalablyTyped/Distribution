@@ -4,25 +4,23 @@ import typings.tizenAccessory.anon.Oncomplete
 import typings.tizenAccessory.anon.Onprogress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SAFileTransfer extends StObject {
   
-  def cancelFile(id: String): Unit = js.native
+  def cancelFile(id: String): Unit
   
-  val defaultReceivePath: String = js.native
+  val defaultReceivePath: String
   
-  def receiveFile(id: String, localPath: String): Unit = js.native
+  def receiveFile(id: String, localPath: String): Unit
   
-  def rejectFile(id: String): Unit = js.native
+  def rejectFile(id: String): Unit
   
-  def sendFile(peerAgent: SAPeerAgent, filePath: String): Double = js.native
+  def sendFile(peerAgent: SAPeerAgent, filePath: String): Double
   
-  def setFileReceiveListener(callback: Onprogress): Unit = js.native
+  def setFileReceiveListener(callback: Onprogress): Unit
   
-  def setFileSendListener(callback: Oncomplete): Unit = js.native
+  def setFileSendListener(callback: Oncomplete): Unit
 }
 object SAFileTransfer {
   

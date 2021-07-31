@@ -9,14 +9,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.statusupdated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the magnetic stripe reader device. */
 @js.native
 trait MagneticStripeReader extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statusupdated(
     `type`: statusupdated,
@@ -52,12 +51,12 @@ trait MagneticStripeReader extends StObject {
   def getErrorReportingType(): MagneticStripeReaderErrorReportingType = js.native
   
   /** Occurs when the device detects an operation status change. */
-  def onstatusupdated(ev: MagneticStripeReaderStatusUpdatedEventArgs with WinRTEvent[MagneticStripeReader]): Unit = js.native
+  def onstatusupdated(ev: MagneticStripeReaderStatusUpdatedEventArgs & WinRTEvent[MagneticStripeReader]): Unit = js.native
   /** Occurs when the device detects an operation status change. */
   @JSName("onstatusupdated")
   var onstatusupdated_Original: TypedEventHandler[MagneticStripeReader, MagneticStripeReaderStatusUpdatedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statusupdated(
     `type`: statusupdated,

@@ -4,16 +4,17 @@ import typings.node.Buffer
 import typings.word.typesMod.WJSDoc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlMod {
   
-  @JSImport("word/dist/typings/codecs/XML", "parse_str")
+  @JSImport("word/dist/typings/codecs/XML", JSImport.Namespace)
   @js.native
-  def parseStr(data: String): WJSDoc = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("word/dist/typings/codecs/XML", "read")
-  @js.native
-  def read(data: Buffer): WJSDoc = js.native
+  @scala.inline
+  def parseStr(data: String): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("parse_str")(data.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
+  
+  @scala.inline
+  def read(data: Buffer): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(data.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
 }

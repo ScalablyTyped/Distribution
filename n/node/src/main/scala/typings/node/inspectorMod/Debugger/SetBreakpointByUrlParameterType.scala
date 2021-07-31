@@ -2,41 +2,39 @@ package typings.node.inspectorMod.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetBreakpointByUrlParameterType extends StObject {
   
   /**
     * Offset in the line to set breakpoint at.
     */
-  var columnNumber: js.UndefOr[Double] = js.native
+  var columnNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * Expression to use as a breakpoint condition. When specified, debugger will only stop on the breakpoint if this expression evaluates to true.
     */
-  var condition: js.UndefOr[String] = js.native
+  var condition: js.UndefOr[String] = js.undefined
   
   /**
     * Line number to set breakpoint at.
     */
-  var lineNumber: Double = js.native
+  var lineNumber: Double
   
   /**
     * Script hash of the resources to set breakpoint on.
     */
-  var scriptHash: js.UndefOr[String] = js.native
+  var scriptHash: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the resources to set breakpoint on.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * Regex pattern for the URLs of the resources to set breakpoints on. Either <code>url</code> or <code>urlRegex</code> must be specified.
     */
-  var urlRegex: js.UndefOr[String] = js.native
+  var urlRegex: js.UndefOr[String] = js.undefined
 }
 object SetBreakpointByUrlParameterType {
   

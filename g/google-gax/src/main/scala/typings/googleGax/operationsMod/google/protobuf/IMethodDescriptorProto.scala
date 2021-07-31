@@ -2,30 +2,28 @@ package typings.googleGax.operationsMod.google.protobuf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a MethodDescriptorProto. */
-@js.native
 trait IMethodDescriptorProto extends StObject {
   
   /** MethodDescriptorProto clientStreaming */
-  var clientStreaming: js.UndefOr[Boolean | Null] = js.native
+  var clientStreaming: js.UndefOr[Boolean | Null] = js.undefined
   
   /** MethodDescriptorProto inputType */
-  var inputType: js.UndefOr[String | Null] = js.native
+  var inputType: js.UndefOr[String | Null] = js.undefined
   
   /** MethodDescriptorProto name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** MethodDescriptorProto options */
-  var options: js.UndefOr[IMethodOptions | Null] = js.native
+  var options: js.UndefOr[IMethodOptions | Null] = js.undefined
   
   /** MethodDescriptorProto outputType */
-  var outputType: js.UndefOr[String | Null] = js.native
+  var outputType: js.UndefOr[String | Null] = js.undefined
   
   /** MethodDescriptorProto serverStreaming */
-  var serverStreaming: js.UndefOr[Boolean | Null] = js.native
+  var serverStreaming: js.UndefOr[Boolean | Null] = js.undefined
 }
 object IMethodDescriptorProto {
   

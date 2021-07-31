@@ -3,18 +3,18 @@ package typings.miniprogram
 import typings.miniprogram.anon.Digest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetFileArgs extends AsyncCallback[Digest] {
+trait GetFileArgs
+  extends StObject
+     with AsyncCallback[Digest] {
   
-  var apFilePath: String = js.native
+  var apFilePath: String
   
   /**
     * Digest algorithm, supporting md5 and sha1, md5 by default.
     */
-  var digestAlgorithm: js.UndefOr[String] = js.native
+  var digestAlgorithm: js.UndefOr[String] = js.undefined
 }
 object GetFileArgs {
   

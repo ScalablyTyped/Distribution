@@ -3,32 +3,30 @@ package typings.powerappsComponentFramework.ComponentFramework.PropertyHelper
 import typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.PrivilegeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Entity metadata security privileges.
   */
-@js.native
 trait SecurityPrivilegeMetadata extends StObject {
   
-  var CanBeBasic: Boolean = js.native
+  var CanBeBasic: Boolean
   
-  var CanBeDeep: Boolean = js.native
+  var CanBeDeep: Boolean
   
-  var CanBeEntityReference: Boolean = js.native
+  var CanBeEntityReference: Boolean
   
-  var CanBeGlobal: Boolean = js.native
+  var CanBeGlobal: Boolean
   
-  var CanBeLocal: Boolean = js.native
+  var CanBeLocal: Boolean
   
-  var CanBeParentEntityReference: Boolean = js.native
+  var CanBeParentEntityReference: Boolean
   
-  var Name: String = js.native
+  var Name: String
   
-  var PrivilegeId: String = js.native
+  var PrivilegeId: String
   
-  var PrivilegeType: typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.PrivilegeType = js.native
+  var PrivilegeType: typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.PrivilegeType
 }
 object SecurityPrivilegeMetadata {
   

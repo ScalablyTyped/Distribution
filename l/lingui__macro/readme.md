@@ -10,9 +10,9 @@ Macro for generating messages in ICU MessageFormat syntax
 | ------------------ | :-------------: |
 | Full name          | @lingui/macro |
 | Keywords           | babel-plugin-macros |
-| # releases         | 24 |
-| # dependents       | 3 |
-| # downloads        | 1935573 |
+| # releases         | 38 |
+| # dependents       | 7 |
+| # downloads        | 3922631 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ This is a plugin for the moment.js JavaScript library, to display date/time rang
 | Full name          | moment-precise-range-plugin |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 506857 |
+| # dependents       | 13 |
+| # downloads        | 628766 |
 | # stars            | 0 |
 
 ## Links

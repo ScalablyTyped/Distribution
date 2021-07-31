@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PeeringAttachmentStatus extends StObject {
   
   /**
     * The status code.
     */
-  var Code: js.UndefOr[String] = js.native
+  var Code: js.UndefOr[String] = js.undefined
   
   /**
     * The status message, if applicable.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
 }
 object PeeringAttachmentStatus {
   

@@ -14,7 +14,6 @@ import typings.std.Partial
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -135,17 +134,16 @@ trait Object[T /* <: Attributes */] extends StObject {
   def save[K /* <: Extract[/* keyof T */ String, String] */](
     attrs: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: T[key]}
-    */ typings.parse.parseStrings.Object with TopLevel[T]) | Partial[T]
+    */ typings.parse.parseStrings.Object & TopLevel[T]) | Partial[T]
   ): js.Promise[this.type] = js.native
   def save[K /* <: Extract[/* keyof T */ String, String] */](
-    attrs: js.UndefOr[
-      (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    attrs: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: T[key]}
-    */ typings.parse.parseStrings.Object with TopLevel[T]) | Partial[T]
-    ],
+    */ typings.parse.parseStrings.Object & TopLevel[T]) | Partial[T],
     options: SaveOptions
   ): js.Promise[this.type] = js.native
   def save[K /* <: Extract[/* keyof T */ String, String] */](attrs: Null, options: SaveOptions): js.Promise[this.type] = js.native
+  def save[K /* <: Extract[/* keyof T */ String, String] */](attrs: Unit, options: SaveOptions): js.Promise[this.type] = js.native
   def save[K /* <: Extract[/* keyof T */ String, String] */](key: K, value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any): js.Promise[this.type] = js.native
   def save[K /* <: Extract[/* keyof T */ String, String] */](
     key: K,
@@ -156,12 +154,12 @@ trait Object[T /* <: Attributes */] extends StObject {
   def set[K /* <: Extract[/* keyof T */ String, String] */](
     attrs: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: T[key]}
-    */ typings.parse.parseStrings.Object with TopLevel[T]) | Partial[T]
+    */ typings.parse.parseStrings.Object & TopLevel[T]) | Partial[T]
   ): this.type | `false` = js.native
   def set[K /* <: Extract[/* keyof T */ String, String] */](
     attrs: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: T[key]}
-    */ typings.parse.parseStrings.Object with TopLevel[T]) | Partial[T],
+    */ typings.parse.parseStrings.Object & TopLevel[T]) | Partial[T],
     options: SetOptions
   ): this.type | `false` = js.native
   def set[K /* <: Extract[/* keyof T */ String, String] */](key: K, value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any): this.type | `false` = js.native
@@ -174,7 +172,7 @@ trait Object[T /* <: Attributes */] extends StObject {
   def setACL(acl: ACL): this.type | `false` = js.native
   def setACL(acl: ACL, options: SuccessFailureOptions): this.type | `false` = js.native
   
-  def toJSON(): ToJSON[T] with JSONBaseAttributes = js.native
+  def toJSON(): ToJSON[T] & JSONBaseAttributes = js.native
   
   def toPointer(): Pointer = js.native
   
@@ -195,19 +193,21 @@ object Object extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Parse.Object")
   @js.native
-  class ^[T /* <: Attributes */] protected () extends Object[T] {
+  class ^[T /* <: Attributes */] protected ()
+    extends StObject
+       with Object[T] {
     def this(className: String, attributes: T) = this()
     def this(className: String, attributes: T, options: js.Any) = this()
   }
   
   @JSGlobal("Parse.Object")
   @js.native
-  val ^ : ObjectConstructor = js.native
+  val ^ : js.Object & ObjectConstructor = js.native
   
-  @js.native
   trait DestroyAllOptions
-    extends ScopeOptions
+    extends StObject
        with BatchSizeOption
+       with ScopeOptions
   object DestroyAllOptions {
     
     @scala.inline
@@ -217,10 +217,10 @@ object Object extends Shortcut {
     }
   }
   
-  @js.native
-  trait DestroyOptions
-    extends SuccessFailureOptions
-       with WaitOption
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.parse.mod.global.Parse.WaitOption because var conflicts: wait. Inlined  */ trait DestroyOptions
+    extends StObject
+       with SuccessFailureOptions
        with ScopeOptions
   object DestroyOptions {
     
@@ -249,9 +249,9 @@ object Object extends Shortcut {
     /* import warning: importer.ImportType#apply Failed type conversion: T['toJSON'] */ js.Any
   ]) | T | ToJSON[T] | String
   
-  @js.native
   trait FetchAllOptions
-    extends SuccessFailureOptions
+    extends StObject
+       with SuccessFailureOptions
        with ScopeOptions
   object FetchAllOptions {
     
@@ -262,9 +262,9 @@ object Object extends Shortcut {
     }
   }
   
-  @js.native
   trait FetchOptions
-    extends SuccessFailureOptions
+    extends StObject
+       with SuccessFailureOptions
        with ScopeOptions
   object FetchOptions {
     
@@ -275,10 +275,10 @@ object Object extends Shortcut {
     }
   }
   
-  @js.native
   trait SaveAllOptions
-    extends ScopeOptions
+    extends StObject
        with BatchSizeOption
+       with ScopeOptions
   object SaveAllOptions {
     
     @scala.inline
@@ -288,13 +288,13 @@ object Object extends Shortcut {
     }
   }
   
-  @js.native
-  trait SaveOptions
-    extends SuccessFailureOptions
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.parse.mod.global.Parse.WaitOption because var conflicts: wait. Inlined  */ trait SaveOptions
+    extends StObject
        with CascadeSaveOption
+       with SuccessFailureOptions
        with SilentOption
        with ScopeOptions
-       with WaitOption
   object SaveOptions {
     
     @scala.inline
@@ -304,12 +304,12 @@ object Object extends Shortcut {
     }
   }
   
-  @js.native
   trait SetOptions
-    extends ErrorOption
+    extends StObject
+       with ErrorOption
        with SilentOption {
     
-    var promise: js.UndefOr[js.Any] = js.native
+    var promise: js.UndefOr[js.Any] = js.undefined
   }
   object SetOptions {
     
@@ -332,14 +332,14 @@ object Object extends Shortcut {
   
   type ToJSON[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: parse.parse.<global>.Parse.Object.Encode<T[K]>}
-    */ typings.parse.parseStrings.ToJSON with TopLevel[T]
+    */ typings.parse.parseStrings.ToJSON & TopLevel[T]
   
   trait _Encode[T] extends StObject
   object _Encode {
     
     @scala.inline
-    def Iso(__type: typings.parse.parseStrings.Date, iso: String): typings.parse.anon.Iso = {
-      val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], iso = iso.asInstanceOf[js.Any])
+    def Iso(iso: String): typings.parse.anon.Iso = {
+      val __obj = js.Dynamic.literal(__type = "Date", iso = iso.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.parse.anon.Iso]
     }
     
@@ -350,8 +350,8 @@ object Object extends Shortcut {
     }
   }
   
-  type _To = ObjectConstructor
+  type _To = js.Object & ObjectConstructor
   
   /* This means you don't have to write `^`, but can instead just say `Object.foo` */
-  override def _to: ObjectConstructor = ^
+  override def _to: js.Object & ObjectConstructor = ^
 }

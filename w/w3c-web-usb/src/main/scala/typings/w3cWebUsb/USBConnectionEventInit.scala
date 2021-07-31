@@ -3,13 +3,13 @@ package typings.w3cWebUsb
 import typings.std.EventInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait USBConnectionEventInit extends EventInit {
+trait USBConnectionEventInit
+  extends StObject
+     with EventInit {
   
-  var device: USBDevice = js.native
+  var device: USBDevice
 }
 object USBConnectionEventInit {
   

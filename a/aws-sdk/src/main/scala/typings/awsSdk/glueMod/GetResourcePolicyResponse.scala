@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResourcePolicyResponse extends StObject {
   
   /**
     * The date and time at which the policy was created.
     */
-  var CreateTime: js.UndefOr[Timestamp] = js.native
+  var CreateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Contains the hash value associated with this policy.
     */
-  var PolicyHash: js.UndefOr[HashString] = js.native
+  var PolicyHash: js.UndefOr[HashString] = js.undefined
   
   /**
     * Contains the requested policy document, in JSON format.
     */
-  var PolicyInJson: js.UndefOr[PolicyJsonString] = js.native
+  var PolicyInJson: js.UndefOr[PolicyJsonString] = js.undefined
   
   /**
     * The date and time at which the policy was last updated.
     */
-  var UpdateTime: js.UndefOr[Timestamp] = js.native
+  var UpdateTime: js.UndefOr[Timestamp] = js.undefined
 }
 object GetResourcePolicyResponse {
   

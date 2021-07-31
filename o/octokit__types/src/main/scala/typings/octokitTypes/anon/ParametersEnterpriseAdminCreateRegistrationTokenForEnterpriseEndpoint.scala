@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.EnterpriseAdminCreateRegistrationTokenF
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersEnterpriseAdminCreateRegistrationTokenForEnterpriseEndpoint extends StObject {
   
-  var parameters: EnterpriseAdminCreateRegistrationTokenForEnterpriseEndpoint = js.native
+  var parameters: EnterpriseAdminCreateRegistrationTokenForEnterpriseEndpoint
   
-  var request: EnterpriseAdminCreateRegistrationTokenForEnterpriseRequestOptions = js.native
+  var request: EnterpriseAdminCreateRegistrationTokenForEnterpriseRequestOptions
   
-  var response: OctokitResponse[EnterpriseAdminCreateRegistrationTokenForEnterpriseResponseData] = js.native
+  var response: OctokitResponse[EnterpriseAdminCreateRegistrationTokenForEnterpriseResponseData]
 }
 object ParametersEnterpriseAdminCreateRegistrationTokenForEnterpriseEndpoint {
   

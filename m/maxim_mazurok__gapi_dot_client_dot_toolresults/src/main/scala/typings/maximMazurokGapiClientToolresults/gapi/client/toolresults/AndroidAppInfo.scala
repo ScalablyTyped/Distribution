@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidAppInfo extends StObject {
   
   /** The name of the app. Optional */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The package name of the app. Required. */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /** The internal version code of the app. Optional. */
-  var versionCode: js.UndefOr[String] = js.native
+  var versionCode: js.UndefOr[String] = js.undefined
   
   /** The version name of the app. Optional. */
-  var versionName: js.UndefOr[String] = js.native
+  var versionName: js.UndefOr[String] = js.undefined
 }
 object AndroidAppInfo {
   

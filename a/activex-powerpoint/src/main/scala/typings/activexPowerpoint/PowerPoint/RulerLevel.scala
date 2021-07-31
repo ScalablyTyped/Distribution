@@ -2,22 +2,20 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RulerLevel extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var FirstMargin: Double = js.native
+  var FirstMargin: Double
   
-  var LeftMargin: Double = js.native
+  var LeftMargin: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.RulerLevel_typekey")
-  var PowerPointDotRulerLevel_typekey: RulerLevel = js.native
+  var PowerPointDotRulerLevel_typekey: RulerLevel
 }
 object RulerLevel {
   

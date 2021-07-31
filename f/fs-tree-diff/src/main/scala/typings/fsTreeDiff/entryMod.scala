@@ -4,54 +4,56 @@ import typings.node.fsMod.Stats
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entryMod {
   
   @JSImport("fs-tree-diff/lib/entry", JSImport.Default)
   @js.native
-  class default protected () extends Entry {
+  class default protected ()
+    extends StObject
+       with Entry {
     def this(relativePath: String) = this()
     def this(relativePath: String, size: Double) = this()
-    def this(relativePath: String, size: js.UndefOr[scala.Nothing], mtime: Double) = this()
-    def this(relativePath: String, size: js.UndefOr[scala.Nothing], mtime: Date) = this()
     def this(relativePath: String, size: Double, mtime: Double) = this()
     def this(relativePath: String, size: Double, mtime: Date) = this()
-    def this(
-      relativePath: String,
-      size: js.UndefOr[scala.Nothing],
-      mtime: js.UndefOr[scala.Nothing],
-      mode: Double
-    ) = this()
-    def this(relativePath: String, size: js.UndefOr[scala.Nothing], mtime: Double, mode: Double) = this()
-    def this(relativePath: String, size: js.UndefOr[scala.Nothing], mtime: Date, mode: Double) = this()
-    def this(relativePath: String, size: Double, mtime: js.UndefOr[scala.Nothing], mode: Double) = this()
+    def this(relativePath: String, size: Unit, mtime: Double) = this()
+    def this(relativePath: String, size: Unit, mtime: Date) = this()
     def this(relativePath: String, size: Double, mtime: Double, mode: Double) = this()
+    def this(relativePath: String, size: Double, mtime: Unit, mode: Double) = this()
     def this(relativePath: String, size: Double, mtime: Date, mode: Double) = this()
+    def this(relativePath: String, size: Unit, mtime: Double, mode: Double) = this()
+    def this(relativePath: String, size: Unit, mtime: Unit, mode: Double) = this()
+    def this(relativePath: String, size: Unit, mtime: Date, mode: Double) = this()
+    
+    /* CompleteClass */
+    override def isDirectory(): Boolean = js.native
+    
+    /* CompleteClass */
+    var relativePath: String = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("fs-tree-diff/lib/entry", "default.fromStat")
+    @JSImport("fs-tree-diff/lib/entry", JSImport.Default)
     @js.native
-    def fromStat(relativePath: String, stat: Stats): Entry = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("fs-tree-diff/lib/entry", "default.isDirectory")
-    @js.native
-    def isDirectory(entry: Entry): Boolean = js.native
+    @scala.inline
+    def fromStat(relativePath: String, stat: Stats): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStat")(relativePath.asInstanceOf[js.Any], stat.asInstanceOf[js.Any])).asInstanceOf[Entry]
     
-    @JSImport("fs-tree-diff/lib/entry", "default.isFile")
-    @js.native
-    def isFile(entry: Entry): Boolean = js.native
+    @scala.inline
+    def isDirectory(entry: Entry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDirectory")(entry.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def isFile(entry: Entry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFile")(entry.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
-  @js.native
   trait BaseEntry extends StObject {
     
-    def isDirectory(): Boolean = js.native
+    def isDirectory(): Boolean
     
-    var relativePath: String = js.native
+    var relativePath: String
   }
   object BaseEntry {
     
@@ -72,14 +74,15 @@ object entryMod {
     }
   }
   
-  @js.native
-  trait DefaultEntry extends BaseEntry {
+  trait DefaultEntry
+    extends StObject
+       with BaseEntry {
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[Double | Date] = js.native
+    var mtime: js.UndefOr[Double | Date] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object DefaultEntry {
     
@@ -112,8 +115,9 @@ object entryMod {
     }
   }
   
-  @js.native
-  trait Entry extends DefaultEntry
+  trait Entry
+    extends StObject
+       with DefaultEntry
   object Entry {
     
     @scala.inline

@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Media.Import
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a sidecar file or a sibling file to a PhotoImportItem . */
-@js.native
 trait PhotoImportSidecar extends StObject {
   
   /** Gets the date of the sidecar or sibling file. */
-  var date: Date = js.native
+  var date: Date
   
   /** Gets the name of the sidecar or sibling file. */
-  var name: String = js.native
+  var name: String
   
   /** Gets the size of the sidecar or sibling file, in bytes. */
-  var sizeInBytes: Double = js.native
+  var sizeInBytes: Double
 }
 object PhotoImportSidecar {
   

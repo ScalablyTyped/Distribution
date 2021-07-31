@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutDestinationRequest extends StObject {
   
   /**
     * A name for the destination.
     */
-  var destinationName: DestinationName = js.native
+  var destinationName: DestinationName
   
   /**
     * The ARN of an IAM role that grants CloudWatch Logs permissions to call the Amazon Kinesis PutRecord operation on the destination stream.
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
   
   /**
     * The ARN of an Amazon Kinesis stream to which to deliver matching log events.
     */
-  var targetArn: TargetArn = js.native
+  var targetArn: TargetArn
 }
 object PutDestinationRequest {
   

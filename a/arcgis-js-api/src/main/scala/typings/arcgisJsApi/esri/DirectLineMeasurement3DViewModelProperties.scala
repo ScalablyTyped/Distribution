@@ -12,10 +12,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectLineMeasurement3DViewModelProperties extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait DirectLineMeasurement3DViewModelProperties extends StObject {
     */
   var unit: js.UndefOr[
     metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
-  ] = js.native
+  ] = js.undefined
   
   /**
     * List of unit systems (imperial, metric) and specific units for displaying the distance values.
@@ -36,14 +34,14 @@ trait DirectLineMeasurement3DViewModelProperties extends StObject {
     js.Array[
       metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#view)
     */
-  var view: js.UndefOr[SceneViewProperties] = js.native
+  var view: js.UndefOr[SceneViewProperties] = js.undefined
 }
 object DirectLineMeasurement3DViewModelProperties {
   

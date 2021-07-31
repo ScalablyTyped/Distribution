@@ -5,19 +5,17 @@ import typings.evernote.mod.Errors.EDAMUserException
 import typings.evernote.mod.Types.UserID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityID extends StObject {
   
-  var identityID: js.UndefOr[typings.evernote.mod.Types.IdentityID] = js.native
+  var identityID: js.UndefOr[typings.evernote.mod.Types.IdentityID] = js.undefined
   
-  var notFoundException: js.UndefOr[EDAMNotFoundException] = js.native
+  var notFoundException: js.UndefOr[EDAMNotFoundException] = js.undefined
   
-  var userException: js.UndefOr[EDAMUserException] = js.native
+  var userException: js.UndefOr[EDAMUserException] = js.undefined
   
-  var userID: js.UndefOr[UserID] = js.native
+  var userID: js.UndefOr[UserID] = js.undefined
 }
 object IdentityID {
   

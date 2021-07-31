@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events related to manipulations on tabs.
   */
-@js.native
-trait BootstrapClientTabControlTabEventArgs extends ASPxClientEventArgs {
+trait BootstrapClientTabControlTabEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the tab object related to the event.
     */
-  var tab: BootstrapClientTab = js.native
+  var tab: BootstrapClientTab
 }
 object BootstrapClientTabControlTabEventArgs {
   

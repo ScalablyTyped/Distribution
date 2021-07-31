@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentOptions extends StObject {
   
   /**
     * An optional string to show as placeholder in the comment input box when it's focused.
     */
-  var placeHolder: js.UndefOr[String] = js.native
+  var placeHolder: js.UndefOr[String] = js.undefined
   
   /**
     * An optional string to show on the comment input box when it's collapsed.
     */
-  var prompt: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.undefined
 }
 object CommentOptions {
   

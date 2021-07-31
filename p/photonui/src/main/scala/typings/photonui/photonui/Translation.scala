@@ -3,11 +3,12 @@ package typings.photonui.photonui
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Translation extends Base {
+trait Translation
+  extends StObject
+     with Base {
   
   def addCatalogs(catalogs: StringDictionary[js.Any]): Unit = js.native
   

@@ -5,27 +5,27 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gives access to both the primary and the secondary y-axis of a diagram.
   * @see XChartDocument
   */
-@js.native
-trait XTwoAxisYSupplier extends XAxisYSupplier {
+trait XTwoAxisYSupplier
+  extends StObject
+     with XAxisYSupplier {
   
   /**
     * @returns the properties of the secondary **y** -axis of the diagram.  The returned property set contains scaling properties as well as formatting properties.
     * @see ChartAxis
     */
-  val SecondaryYAxis: XPropertySet = js.native
+  val SecondaryYAxis: XPropertySet
   
   /**
     * @returns the properties of the secondary **y** -axis of the diagram.  The returned property set contains scaling properties as well as formatting properties.
     * @see ChartAxis
     */
-  def getSecondaryYAxis(): XPropertySet = js.native
+  def getSecondaryYAxis(): XPropertySet
 }
 object XTwoAxisYSupplier {
   

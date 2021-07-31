@@ -2,19 +2,17 @@ package typings.polished
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linearGradientConfigurationMod {
   
-  @js.native
   trait LinearGradientConfiguration extends StObject {
     
-    var colorStops: js.Array[String] = js.native
+    var colorStops: js.Array[String]
     
-    var fallback: js.UndefOr[String] = js.native
+    var fallback: js.UndefOr[String] = js.undefined
     
-    var toDirection: js.UndefOr[String] = js.native
+    var toDirection: js.UndefOr[String] = js.undefined
   }
   object LinearGradientConfiguration {
     

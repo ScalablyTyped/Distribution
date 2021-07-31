@@ -3,20 +3,18 @@ package typings.strongholdPayJs.mod.global.Stronghold
 import typings.strongholdPayJs.anon.DisplayMessage_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TipDataDropin extends StObject {
   
   /**
     * The amount to charge, specified in the smallest divisible currency unit. For example, number of cents of United States dollar.
     */
-  var amount: Double = js.native
+  var amount: Double
   
-  var beneficiaryName: String = js.native
+  var beneficiaryName: String
   
-  var details: js.UndefOr[DisplayMessage_] = js.native
+  var details: js.UndefOr[DisplayMessage_] = js.undefined
 }
 object TipDataDropin {
   

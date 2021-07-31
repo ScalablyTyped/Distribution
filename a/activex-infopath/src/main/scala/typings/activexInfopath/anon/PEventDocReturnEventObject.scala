@@ -3,13 +3,11 @@ package typings.activexInfopath.anon
 import typings.activexInfopath.InfoPath.DocReturnEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PEventDocReturnEventObject extends StObject {
   
-  val pEvent: DocReturnEventObject = js.native
+  val pEvent: DocReturnEventObject
 }
 object PEventDocReturnEventObject {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -241,10 +240,9 @@ object mod {
     def ttl(key: Key, ttl: Double, cb: Callback[Boolean]): Boolean = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var arrayValueSize: js.UndefOr[Double] = js.native
+    var arrayValueSize: js.UndefOr[Double] = js.undefined
     
     /**
     		 * time in seconds to check all data and delete expired keys
@@ -252,9 +250,9 @@ object mod {
     		 * @type {number}
     		 * @memberof Options
     		 */
-    var checkperiod: js.UndefOr[Double] = js.native
+    var checkperiod: js.UndefOr[Double] = js.undefined
     
-    var deleteOnExpire: js.UndefOr[Boolean] = js.native
+    var deleteOnExpire: js.UndefOr[Boolean] = js.undefined
     
     /**
     		 * enable legacy callbacks.
@@ -263,9 +261,9 @@ object mod {
     		 * @type {boolean}
     		 * @memberof Options
     		 */
-    var enableLegacyCallbacks: js.UndefOr[Boolean] = js.native
+    var enableLegacyCallbacks: js.UndefOr[Boolean] = js.undefined
     
-    var errorOnMissing: js.UndefOr[Boolean] = js.native
+    var errorOnMissing: js.UndefOr[Boolean] = js.undefined
     
     /**
     		 * If enabled, all values will be stringified during the set operation
@@ -273,7 +271,7 @@ object mod {
     		 * @type {boolean}
     		 * @memberof Options
     		 */
-    var forceString: js.UndefOr[Boolean] = js.native
+    var forceString: js.UndefOr[Boolean] = js.undefined
     
     /**
     		 * max amount of keys that are being stored.
@@ -282,11 +280,11 @@ object mod {
     		 * @type {number}
     		 * @memberof Options
     		 */
-    var maxKeys: js.UndefOr[Double] = js.native
+    var maxKeys: js.UndefOr[Double] = js.undefined
     
-    var objectValueSize: js.UndefOr[Double] = js.native
+    var objectValueSize: js.UndefOr[Double] = js.undefined
     
-    var promiseValueSize: js.UndefOr[Double] = js.native
+    var promiseValueSize: js.UndefOr[Double] = js.undefined
     
     /**
     		 * standard time to live in seconds. 0 = infinity
@@ -294,7 +292,7 @@ object mod {
     		 * @type {number}
     		 * @memberof Options
     		 */
-    var stdTTL: js.UndefOr[Double] = js.native
+    var stdTTL: js.UndefOr[Double] = js.undefined
     
     /**
     		 * en/disable cloning of variables.
@@ -306,7 +304,7 @@ object mod {
     		 * @type {boolean}
     		 * @memberof Options
     		 */
-    var useClones: js.UndefOr[Boolean] = js.native
+    var useClones: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -387,18 +385,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Stats extends StObject {
     
-    var hits: Double = js.native
+    var hits: Double
     
-    var keys: Double = js.native
+    var keys: Double
     
-    var ksize: Double = js.native
+    var ksize: Double
     
-    var misses: Double = js.native
+    var misses: Double
     
-    var vsize: Double = js.native
+    var vsize: Double
   }
   object Stats {
     
@@ -428,14 +425,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ValueSetItem[T] extends StObject {
     
-    var key: Key = js.native
+    var key: Key
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
     
-    var `val`: T = js.native
+    var `val`: T
   }
   object ValueSetItem {
     
@@ -447,7 +443,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ValueSetItemMutableBuilder[Self <: ValueSetItem[_], T] (val x: Self with ValueSetItem[T]) extends AnyVal {
+    implicit class ValueSetItemMutableBuilder[Self <: ValueSetItem[?], T] (val x: Self & ValueSetItem[T]) extends AnyVal {
       
       @scala.inline
       def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
@@ -463,14 +459,13 @@ object mod {
     }
   }
   
-  @js.native
   trait WrappedValue[T] extends StObject {
     
     // ttl
-    var t: Double = js.native
+    var t: Double
     
     // value
-    var v: T = js.native
+    var v: T
   }
   object WrappedValue {
     
@@ -481,7 +476,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class WrappedValueMutableBuilder[Self <: WrappedValue[_], T] (val x: Self with WrappedValue[T]) extends AnyVal {
+    implicit class WrappedValueMutableBuilder[Self <: WrappedValue[?], T] (val x: Self & WrappedValue[T]) extends AnyVal {
       
       @scala.inline
       def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])

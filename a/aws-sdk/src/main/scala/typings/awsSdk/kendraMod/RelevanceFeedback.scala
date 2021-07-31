@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelevanceFeedback extends StObject {
   
   /**
     * Whether to document was relevant or not relevant to the search.
     */
-  var RelevanceValue: RelevanceType = js.native
+  var RelevanceValue: RelevanceType
   
   /**
     * The unique identifier of the search result that the user provided relevance feedback for.
     */
-  var ResultId: typings.awsSdk.kendraMod.ResultId = js.native
+  var ResultId: typings.awsSdk.kendraMod.ResultId
 }
 object RelevanceFeedback {
   

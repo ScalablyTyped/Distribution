@@ -2,21 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents an entry from a component which implements the {@link XLocalizedAliases} . */
-@js.native
 trait AliasProgrammaticPair extends StObject {
   
   /** determines the name which is registered as an alias for a programmatic name. */
-  var Alias: String = js.native
+  var Alias: String
   
   /**
     * determines which programmatic name belongs to the alias.
     * @see com.sun.star.util.XLocalizedAliases
     */
-  var ProgrammaticName: String = js.native
+  var ProgrammaticName: String
 }
 object AliasProgrammaticPair {
   

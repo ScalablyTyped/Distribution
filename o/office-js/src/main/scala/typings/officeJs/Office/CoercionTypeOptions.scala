@@ -2,19 +2,17 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides an option for the data format.
   */
-@js.native
 trait CoercionTypeOptions extends StObject {
   
   /**
     * The desired data format.
     */
-  var coercionType: js.UndefOr[CoercionType | String] = js.native
+  var coercionType: js.UndefOr[CoercionType | String] = js.undefined
 }
 object CoercionTypeOptions {
   

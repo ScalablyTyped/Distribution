@@ -9,29 +9,27 @@ import typings.layuiSrc.layuiSrcStrings.xs
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorPickerOption extends StObject {
   
-  var aplha: js.UndefOr[Boolean] = js.native
+  var aplha: js.UndefOr[Boolean] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* color */ js.Any, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* color */ js.Any, Unit]] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var colors: js.UndefOr[js.Array[String]] = js.native
+  var colors: js.UndefOr[js.Array[String]] = js.undefined
   
-  var done: js.UndefOr[js.Function1[/* color */ js.Any, Unit]] = js.native
+  var done: js.UndefOr[js.Function1[/* color */ js.Any, Unit]] = js.undefined
   
-  var elem: js.UndefOr[String | HTMLElement] = js.native
+  var elem: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var format: js.UndefOr[hex | rgb | rgba] = js.native
+  var format: js.UndefOr[hex | rgb | rgba] = js.undefined
   
-  var predefine: js.UndefOr[Boolean] = js.native
+  var predefine: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[lg | sm | xs] = js.native
+  var size: js.UndefOr[lg | sm | xs] = js.undefined
 }
 object ColorPickerOption {
   

@@ -5,32 +5,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait sizeRangeSizeRangeParams extends Object {
+trait sizeRangeSizeRangeParams
+  extends StObject
+     with Object {
   
   /**
     * The layer for which to generate a suggested min/max size range based on scale for a size visual variable.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-heuristics-sizeRange.html#sizeRange)
     */
-  var layer: FeatureLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | GeoJSONLayer
   
   /**
     * Allows for cancelable requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-heuristics-sizeRange.html#sizeRange)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * The [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) where the layer will be rendered.
     *
     * [Read more...](global.html)
     */
-  var view: MapView = js.native
+  var view: MapView
 }
 object sizeRangeSizeRangeParams {
   

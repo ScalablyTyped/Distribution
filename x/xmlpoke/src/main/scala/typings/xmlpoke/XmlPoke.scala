@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object XmlPoke {
@@ -34,10 +33,11 @@ object XmlPoke {
     def withBasePath(xpath: String): API = js.native
   }
   
-  @js.native
-  trait CDataValue extends _Value {
+  trait CDataValue
+    extends StObject
+       with _Value {
     
-    var value: String = js.native
+    var value: String
   }
   object CDataValue {
     
@@ -55,9 +55,9 @@ object XmlPoke {
     }
   }
   
-  @js.native
   trait PathToValueMap
-    extends /* xpath */ StringDictionary[Value]
+    extends StObject
+       with /* xpath */ StringDictionary[Value]
        with _Value
   object PathToValueMap {
     
@@ -70,7 +70,9 @@ object XmlPoke {
   
   // ghost module
   @js.native
-  trait Transform extends _Value {
+  trait Transform
+    extends StObject
+       with _Value {
     
     def apply(node: Node, value: String): Value = js.native
   }
@@ -86,10 +88,11 @@ object XmlPoke {
   */
   type Value = _Value | String | Boolean | Double
   
-  @js.native
-  trait XmlValue extends _Value {
+  trait XmlValue
+    extends StObject
+       with _Value {
     
-    var value: String = js.native
+    var value: String
   }
   object XmlValue {
     

@@ -3,27 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhirKitClient.fhirKitClientStrings.Account
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Version extends StObject {
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: Account = js.native
+  var resourceType: Account
   
-  var version: String = js.native
+  var version: String
 }
 object Version {
   
   @scala.inline
-  def apply(id: String, resourceType: Account, version: String): Version = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+  def apply(id: String, version: String): Version = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = "Account", version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Version]
   }
   

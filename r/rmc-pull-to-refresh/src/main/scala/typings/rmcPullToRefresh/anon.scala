@@ -2,17 +2,15 @@ package typings.rmcPullToRefresh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CurrSt extends StObject {
     
-    var currSt: String = js.native
+    var currSt: String
     
-    var dragOnEdge: Boolean = js.native
+    var dragOnEdge: Boolean
   }
   object CurrSt {
     

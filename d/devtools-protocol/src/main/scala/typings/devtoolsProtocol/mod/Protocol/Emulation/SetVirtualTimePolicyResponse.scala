@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetVirtualTimePolicyResponse extends StObject {
   
   /**
     * Absolute timestamp at which virtual time was first enabled (up time in milliseconds).
     */
-  var virtualTimeTicksBase: Double = js.native
+  var virtualTimeTicksBase: Double
 }
 object SetVirtualTimePolicyResponse {
   

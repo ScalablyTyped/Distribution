@@ -8,11 +8,9 @@ import typings.officeJs.officeJsStrings.RichText
 import typings.officeJs.officeJsStrings.Table
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "paragraph.toJSON()". */
-@js.native
 trait ParagraphData extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -29,7 +27,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var image: js.UndefOr[ImageData] = js.native
+  var image: js.UndefOr[ImageData] = js.undefined
   
   /**
     *
@@ -37,7 +35,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var inkWords: js.UndefOr[js.Array[InkWordData]] = js.native
+  var inkWords: js.UndefOr[js.Array[InkWordData]] = js.undefined
   
   /**
     *
@@ -45,7 +43,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.native
+  var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.undefined
   
   /**
     *
@@ -53,7 +51,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var richText: js.UndefOr[RichTextData] = js.native
+  var richText: js.UndefOr[RichTextData] = js.undefined
   
   /**
     *
@@ -61,7 +59,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var table: js.UndefOr[TableData] = js.native
+  var table: js.UndefOr[TableData] = js.undefined
   
   /**
     *
@@ -69,7 +67,7 @@ trait ParagraphData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var `type`: js.UndefOr[ParagraphType | RichText | Image | Table | Ink | Other] = js.native
+  var `type`: js.UndefOr[ParagraphType | RichText | Image | Table | Ink | Other] = js.undefined
 }
 object ParagraphData {
   

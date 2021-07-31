@@ -2,30 +2,29 @@ package typings.relayRuntime.normalizationNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NormalizationLinkedField
-  extends NormalizationField
+  extends StObject
+     with NormalizationField
      with NormalizationSelectableNode {
   
   // 'LinkedField';
-  val alias: js.UndefOr[String | Null] = js.native
+  val alias: js.UndefOr[String | Null] = js.undefined
   
-  val args: js.Array[NormalizationArgument] = js.native
+  val args: js.Array[NormalizationArgument]
   
-  val concreteType: js.UndefOr[String | Null] = js.native
+  val concreteType: js.UndefOr[String | Null] = js.undefined
   
-  val kind: String = js.native
+  val kind: String
   
-  val name: String = js.native
+  val name: String
   
-  val plural: Boolean = js.native
+  val plural: Boolean
   
-  val selections: js.Array[NormalizationSelection] = js.native
+  val selections: js.Array[NormalizationSelection]
   
-  val storageKey: js.UndefOr[String | Null] = js.native
+  val storageKey: js.UndefOr[String | Null] = js.undefined
 }
 object NormalizationLinkedField {
   

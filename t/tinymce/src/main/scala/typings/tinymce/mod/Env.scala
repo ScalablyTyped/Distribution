@@ -2,39 +2,37 @@ package typings.tinymce.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Env extends StObject {
   
-  var android: Boolean = js.native
+  var android: Boolean
   
-  var ceFalse: Boolean = js.native
+  var ceFalse: Boolean
   
-  var contentEditable: Boolean = js.native
+  var contentEditable: Boolean
   
-  var documentMode: Boolean = js.native
+  var documentMode: Boolean
   
-  var fileApi: Boolean = js.native
+  var fileApi: Boolean
   
-  var gecko: Boolean = js.native
+  var gecko: Boolean
   
-  var iOS: Boolean = js.native
+  var iOS: Boolean
   
-  var ie: Boolean = js.native
+  var ie: Boolean
   
-  var mac: Boolean = js.native
+  var mac: Boolean
   
-  var noCaretAfter: Boolean = js.native
+  var noCaretAfter: Boolean
   
-  var opera: Boolean = js.native
+  var opera: Boolean
   
-  var range: Boolean = js.native
+  var range: Boolean
   
-  var transparentSrc: Boolean = js.native
+  var transparentSrc: Boolean
   
-  var webKit: Boolean = js.native
+  var webKit: Boolean
 }
 object Env {
   

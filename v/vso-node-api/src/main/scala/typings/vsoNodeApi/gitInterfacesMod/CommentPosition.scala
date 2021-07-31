@@ -2,21 +2,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentPosition extends StObject {
   
   /**
     * The line number of a thread's position. Starts at 1.
     */
-  var line: Double = js.native
+  var line: Double
   
   /**
     * The character offset of a thread's position inside of a line. Starts at 0.
     */
-  var offset: Double = js.native
+  var offset: Double
 }
 object CommentPosition {
   

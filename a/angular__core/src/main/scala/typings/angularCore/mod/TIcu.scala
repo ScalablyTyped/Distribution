@@ -2,28 +2,26 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TIcu extends StObject {
   
   /**
     * Index in `LView` where the anchor node is stored. `<!-- ICU 0:0 -->`
     */
-  var anchorIdx: Double = js.native
+  var anchorIdx: Double
   
   /**
     * A list of case values which the current ICU will try to match.
     *
     * The last value is `other`
     */
-  var cases: js.Array[_] = js.native
+  var cases: js.Array[js.Any]
   
   /**
     * A set of OpCodes to apply in order to build up the DOM render tree for the ICU
     */
-  var create: js.Array[IcuCreateOpCodes] = js.native
+  var create: js.Array[IcuCreateOpCodes]
   
   /**
     * Currently selected ICU case pointer.
@@ -37,29 +35,29 @@ trait TIcu extends StObject {
     *         regardless of the `mask`. (After the execution the flag is cleared)
     *   `>=0` A currently selected case index.
     */
-  var currentCaseLViewIndex: Double = js.native
+  var currentCaseLViewIndex: Double
   
   /**
     * A set of OpCodes to apply in order to destroy the DOM render tree for the ICU.
     */
-  var remove: js.Array[I18nRemoveOpCodes] = js.native
+  var remove: js.Array[I18nRemoveOpCodes]
   
   /**
     * Defines the ICU type of `select` or `plural`
     */
-  var `type`: IcuType = js.native
+  var `type`: IcuType
   
   /**
     * A set of OpCodes to apply in order to update the DOM render tree for the ICU bindings.
     */
-  var update: js.Array[I18nUpdateOpCodes] = js.native
+  var update: js.Array[I18nUpdateOpCodes]
 }
 object TIcu {
   
   @scala.inline
   def apply(
     anchorIdx: Double,
-    cases: js.Array[_],
+    cases: js.Array[js.Any],
     create: js.Array[IcuCreateOpCodes],
     currentCaseLViewIndex: Double,
     remove: js.Array[I18nRemoveOpCodes],
@@ -78,7 +76,7 @@ object TIcu {
     def setAnchorIdx(value: Double): Self = StObject.set(x, "anchorIdx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCases(value: js.Array[_]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
+    def setCases(value: js.Array[js.Any]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCasesVarargs(value: js.Any*): Self = StObject.set(x, "cases", js.Array(value :_*))

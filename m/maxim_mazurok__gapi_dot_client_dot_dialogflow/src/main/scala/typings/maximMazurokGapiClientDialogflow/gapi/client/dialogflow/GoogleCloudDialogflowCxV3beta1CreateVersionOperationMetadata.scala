@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowCxV3beta1CreateVersionOperationMetadata extends StObject {
   
   /** Name of the created version. Format: `projects//locations//agents//flows//versions/`. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowCxV3beta1CreateVersionOperationMetadata {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.connectparticipantMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendEventResponse extends StObject {
   
   /**
     * The time when the event was sent. It's specified in ISO 8601 format: yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
     */
-  var AbsoluteTime: js.UndefOr[Instant] = js.native
+  var AbsoluteTime: js.UndefOr[Instant] = js.undefined
   
   /**
     * The ID of the response.
     */
-  var Id: js.UndefOr[ChatItemId] = js.native
+  var Id: js.UndefOr[ChatItemId] = js.undefined
 }
 object SendEventResponse {
   

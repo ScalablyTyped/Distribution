@@ -2,17 +2,17 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience] extends AdWordsTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience] {
+trait AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience]
+  extends StObject
+     with AdWordsTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience] {
   
-  def getTargetingSetting(): String = js.native
+  def getTargetingSetting(): String
   
-  def newUserListBuilder(): SearchAdGroupAudienceBuilder[SearchAdGroupAudience] = js.native
+  def newUserListBuilder(): SearchAdGroupAudienceBuilder[SearchAdGroupAudience]
   
-  def setTargetingSetting(criterionTypeGroup: CriterionTypeGroup, targetingSetting: TargetingSetting): Unit = js.native
+  def setTargetingSetting(criterionTypeGroup: CriterionTypeGroup, targetingSetting: TargetingSetting): Unit
 }
 object AdGroupTargeting {
   
@@ -29,7 +29,7 @@ object AdGroupTargeting {
   }
   
   @scala.inline
-  implicit class AdGroupTargetingMutableBuilder[Self <: AdGroupTargeting[_, _], SearchAdGroupAudience, SearchAdGroupExcludedAudience] (val x: Self with (AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience])) extends AnyVal {
+  implicit class AdGroupTargetingMutableBuilder[Self <: AdGroupTargeting[?, ?], SearchAdGroupAudience, SearchAdGroupExcludedAudience] (val x: Self & (AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience])) extends AnyVal {
     
     @scala.inline
     def setGetTargetingSetting(value: () => String): Self = StObject.set(x, "getTargetingSetting", js.Any.fromFunction0(value))

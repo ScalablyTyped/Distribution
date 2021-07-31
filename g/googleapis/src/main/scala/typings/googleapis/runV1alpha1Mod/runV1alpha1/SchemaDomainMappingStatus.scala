@@ -2,25 +2,23 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The current state of the Domain Mapping.
   */
-@js.native
 trait SchemaDomainMappingStatus extends StObject {
   
   /**
     * Array of observed DomainMappingConditions, indicating the current state
     * of the DomainMapping.
     */
-  var conditions: js.UndefOr[js.Array[SchemaDomainMappingCondition]] = js.native
+  var conditions: js.UndefOr[js.Array[SchemaDomainMappingCondition]] = js.undefined
   
   /**
     * The name of the route that the mapping currently points to.
     */
-  var mappedRouteName: js.UndefOr[String] = js.native
+  var mappedRouteName: js.UndefOr[String] = js.undefined
   
   /**
     * ObservedGeneration is the &#39;Generation&#39; of the DomainMapping that
@@ -28,14 +26,14 @@ trait SchemaDomainMappingStatus extends StObject {
     * reconciliation should poll until observedGeneration = metadata.generation
     * and the Ready condition&#39;s status is True or False.
     */
-  var observedGeneration: js.UndefOr[Double] = js.native
+  var observedGeneration: js.UndefOr[Double] = js.undefined
   
   /**
     * The resource records required to configure this domain mapping. These
     * records must be added to the domain&#39;s DNS configuration in order to
     * serve the application via this domain mapping.
     */
-  var resourceRecords: js.UndefOr[js.Array[SchemaResourceRecord]] = js.native
+  var resourceRecords: js.UndefOr[js.Array[SchemaResourceRecord]] = js.undefined
 }
 object SchemaDomainMappingStatus {
   

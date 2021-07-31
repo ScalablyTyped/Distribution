@@ -7,17 +7,15 @@ import typings.wordpressShortcode.wordpressShortcodeStrings.closed
 import typings.wordpressShortcode.wordpressShortcodeStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attrs extends StObject {
     
-    var attrs: ShortcodeAttrs = js.native
+    var attrs: ShortcodeAttrs
     
-    var tag: String = js.native
+    var tag: String
   }
   object Attrs {
     
@@ -67,19 +65,18 @@ object anon {
     def clear(): Unit = js.native
   }
   
-  @js.native
   trait Content extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var `type`: closed = js.native
+    var `type`: closed
   }
   object Content {
     
     @scala.inline
-    def apply(content: String, `type`: closed): Content = {
+    def apply(content: String): Content = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("closed")
       __obj.asInstanceOf[Content]
     }
     
@@ -95,12 +92,11 @@ object anon {
   }
   
   /* Inlined std.Partial<@wordpress/shortcode.@wordpress/shortcode.ShortcodeAttrs> */
-  @js.native
   trait PartialShortcodeAttrs extends StObject {
     
-    var named: js.UndefOr[Record[String, js.UndefOr[String]]] = js.native
+    var named: js.UndefOr[Record[String, js.UndefOr[String]]] = js.undefined
     
-    var numeric: js.UndefOr[js.Array[String]] = js.native
+    var numeric: js.UndefOr[js.Array[String]] = js.undefined
   }
   object PartialShortcodeAttrs {
     
@@ -131,16 +127,15 @@ object anon {
   }
   
   /* Inlined std.Partial<@wordpress/shortcode.@wordpress/shortcode.ShortcodeOptions> */
-  @js.native
   trait PartialShortcodeOptions extends StObject {
     
-    var attrs: js.UndefOr[PartialShortcodeAttrs | String] = js.native
+    var attrs: js.UndefOr[PartialShortcodeAttrs | String] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[closed | `self-closing` | single] = js.native
+    var `type`: js.UndefOr[closed | `self-closing` | single] = js.undefined
   }
   object PartialShortcodeOptions {
     
@@ -179,10 +174,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: `self-closing` | single = js.native
+    var `type`: `self-closing` | single
   }
   object Type {
     

@@ -11,7 +11,6 @@ import typings.storybookComponents.typesMod.Args
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object argsTableArgsTableMod {
@@ -27,15 +26,19 @@ object argsTableArgsTableMod {
   object ArgsTableError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ArgsTableError with String] = js.native
+    def apply(value: String): js.UndefOr[ArgsTableError & String] = js.native
     
     @js.native
-    sealed trait ARGS_UNSUPPORTED extends ArgsTableError
-    /* "Args unsupported. See Args documentation for your framework." */ val ARGS_UNSUPPORTED: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.ARGS_UNSUPPORTED with String = js.native
+    sealed trait ARGS_UNSUPPORTED
+      extends StObject
+         with ArgsTableError
+    /* "Args unsupported. See Args documentation for your framework." */ val ARGS_UNSUPPORTED: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.ARGS_UNSUPPORTED & String = js.native
     
     @js.native
-    sealed trait NO_COMPONENT extends ArgsTableError
-    /* "No component found." */ val NO_COMPONENT: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.NO_COMPONENT with String = js.native
+    sealed trait NO_COMPONENT
+      extends StObject
+         with ArgsTableError
+    /* "No component found." */ val NO_COMPONENT: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.NO_COMPONENT & String = js.native
   }
   
   @JSImport("@storybook/components/dist/blocks/ArgsTable/ArgsTable", "TableWrapper")
@@ -46,10 +49,11 @@ object argsTableArgsTableMod {
     Theme
   ] = js.native
   
-  @js.native
-  trait ArgsTableErrorProps extends ArgsTableProps {
+  trait ArgsTableErrorProps
+    extends StObject
+       with ArgsTableProps {
     
-    var error: ArgsTableError = js.native
+    var error: ArgsTableError
   }
   object ArgsTableErrorProps {
     
@@ -87,22 +91,23 @@ object argsTableArgsTableMod {
     }
   }
   
-  @js.native
-  trait ArgsTableRowProps extends ArgsTableProps {
+  trait ArgsTableRowProps
+    extends StObject
+       with ArgsTableProps {
     
-    var args: js.UndefOr[Args] = js.native
+    var args: js.UndefOr[Args] = js.undefined
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var inAddonPanel: js.UndefOr[Boolean] = js.native
+    var inAddonPanel: js.UndefOr[Boolean] = js.undefined
     
-    var initialExpandedArgs: js.UndefOr[Boolean] = js.native
+    var initialExpandedArgs: js.UndefOr[Boolean] = js.undefined
     
-    var resetArgs: js.UndefOr[js.Function1[/* argNames */ js.UndefOr[js.Array[String]], Unit]] = js.native
+    var resetArgs: js.UndefOr[js.Function1[/* argNames */ js.UndefOr[js.Array[String]], Unit]] = js.undefined
     
-    var rows: ArgTypes = js.native
+    var rows: ArgTypes
     
-    var updateArgs: js.UndefOr[js.Function1[/* args */ Args, Unit]] = js.native
+    var updateArgs: js.UndefOr[js.Function1[/* args */ Args, Unit]] = js.undefined
   }
   object ArgsTableRowProps {
     

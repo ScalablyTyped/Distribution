@@ -2,13 +2,11 @@ package typings.reactInstantsearchCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configure extends StObject {
   
-  var configure: HitsPerPage = js.native
+  var configure: HitsPerPage
 }
 object Configure {
   

@@ -2,41 +2,39 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SafeAreaResult extends StObject {
   
   /**
     * 安全区域右下角纵坐标
     */
-  var bottom: js.UndefOr[Double] = js.native
+  var bottom: js.UndefOr[Double] = js.undefined
   
   /**
     * 安全区域的高度，单位逻辑像素
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * 安全区域左上角横坐标
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     * 安全区域右下角横坐标
     */
-  var right: js.UndefOr[Double] = js.native
+  var right: js.UndefOr[Double] = js.undefined
   
   /**
     * 安全区域左上角纵坐标
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     * 安全区域的宽度，单位逻辑像素
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SafeAreaResult {
   

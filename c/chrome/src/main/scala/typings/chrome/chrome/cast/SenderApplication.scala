@@ -2,23 +2,21 @@ package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SenderApplication extends StObject {
   
-  var packageId: String | Null = js.native
+  var packageId: String | Null
   
-  var platform: SenderPlatform = js.native
+  var platform: SenderPlatform
   
-  var url: String | Null = js.native
+  var url: String | Null
 }
 object SenderApplication {
   
   @scala.inline
   def apply(platform: SenderPlatform): SenderApplication = {
-    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any], packageId = null, url = null)
     __obj.asInstanceOf[SenderApplication]
   }
   

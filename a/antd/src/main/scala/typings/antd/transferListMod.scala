@@ -27,7 +27,6 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transferListMod {
@@ -53,14 +52,13 @@ object transferListMod {
   
   type RenderListFunction[T] = js.Function1[/* props */ TransferListBodyProps[T], ReactNode]
   
-  @js.native
   trait RenderedItem[RecordType] extends StObject {
     
-    var item: RecordType = js.native
+    var item: RecordType
     
-    var renderedEl: ReactNode = js.native
+    var renderedEl: ReactNode
     
-    var renderedText: String = js.native
+    var renderedText: String
   }
   object RenderedItem {
     
@@ -71,7 +69,7 @@ object transferListMod {
     }
     
     @scala.inline
-    implicit class RenderedItemMutableBuilder[Self <: RenderedItem[_], RecordType] (val x: Self with RenderedItem[RecordType]) extends AnyVal {
+    implicit class RenderedItemMutableBuilder[Self <: RenderedItem[?], RecordType] (val x: Self & RenderedItem[RecordType]) extends AnyVal {
       
       @scala.inline
       def setItem(value: RecordType): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
@@ -103,18 +101,18 @@ object transferListMod {
     def getCheckBox(
       filteredItems: js.Array[RecordType],
       onItemSelectAll: js.Function2[/* dataSource */ js.Array[String], /* checkAll */ Boolean, Unit],
-      showSelectAll: js.UndefOr[scala.Nothing],
-      disabled: Boolean
-    ): `false` | Element = js.native
-    def getCheckBox(
-      filteredItems: js.Array[RecordType],
-      onItemSelectAll: js.Function2[/* dataSource */ js.Array[String], /* checkAll */ Boolean, Unit],
       showSelectAll: Boolean
     ): `false` | Element = js.native
     def getCheckBox(
       filteredItems: js.Array[RecordType],
       onItemSelectAll: js.Function2[/* dataSource */ js.Array[String], /* checkAll */ Boolean, Unit],
       showSelectAll: Boolean,
+      disabled: Boolean
+    ): `false` | Element = js.native
+    def getCheckBox(
+      filteredItems: js.Array[RecordType],
+      onItemSelectAll: js.Function2[/* dataSource */ js.Array[String], /* checkAll */ Boolean, Unit],
+      showSelectAll: Unit,
       disabled: Boolean
     ): `false` | Element = js.native
     
@@ -141,19 +139,7 @@ object transferListMod {
       notFoundContent: ReactNode,
       filteredRenderItems: js.Array[RenderedItem[RecordType]],
       checkedKeys: js.Array[String],
-      renderList: js.UndefOr[scala.Nothing],
-      showSearch: js.UndefOr[scala.Nothing],
-      disabled: Boolean
-    ): ReactNode = js.native
-    def getListBody(
-      prefixCls: String,
-      searchPlaceholder: String,
-      filterValue: String,
-      filteredItems: js.Array[RecordType],
-      notFoundContent: ReactNode,
-      filteredRenderItems: js.Array[RenderedItem[RecordType]],
-      checkedKeys: js.Array[String],
-      renderList: js.UndefOr[scala.Nothing],
+      renderList: Unit,
       showSearch: Boolean
     ): ReactNode = js.native
     def getListBody(
@@ -164,8 +150,20 @@ object transferListMod {
       notFoundContent: ReactNode,
       filteredRenderItems: js.Array[RenderedItem[RecordType]],
       checkedKeys: js.Array[String],
-      renderList: js.UndefOr[scala.Nothing],
+      renderList: Unit,
       showSearch: Boolean,
+      disabled: Boolean
+    ): ReactNode = js.native
+    def getListBody(
+      prefixCls: String,
+      searchPlaceholder: String,
+      filterValue: String,
+      filteredItems: js.Array[RecordType],
+      notFoundContent: ReactNode,
+      filteredRenderItems: js.Array[RenderedItem[RecordType]],
+      checkedKeys: js.Array[String],
+      renderList: Unit,
+      showSearch: Unit,
       disabled: Boolean
     ): ReactNode = js.native
     def getListBody(
@@ -187,18 +185,6 @@ object transferListMod {
       filteredRenderItems: js.Array[RenderedItem[RecordType]],
       checkedKeys: js.Array[String],
       renderList: RenderListFunction[RecordType],
-      showSearch: js.UndefOr[scala.Nothing],
-      disabled: Boolean
-    ): ReactNode = js.native
-    def getListBody(
-      prefixCls: String,
-      searchPlaceholder: String,
-      filterValue: String,
-      filteredItems: js.Array[RecordType],
-      notFoundContent: ReactNode,
-      filteredRenderItems: js.Array[RenderedItem[RecordType]],
-      checkedKeys: js.Array[String],
-      renderList: RenderListFunction[RecordType],
       showSearch: Boolean
     ): ReactNode = js.native
     def getListBody(
@@ -213,6 +199,18 @@ object transferListMod {
       showSearch: Boolean,
       disabled: Boolean
     ): ReactNode = js.native
+    def getListBody(
+      prefixCls: String,
+      searchPlaceholder: String,
+      filterValue: String,
+      filteredItems: js.Array[RecordType],
+      notFoundContent: ReactNode,
+      filteredRenderItems: js.Array[RenderedItem[RecordType]],
+      checkedKeys: js.Array[String],
+      renderList: RenderListFunction[RecordType],
+      showSearch: Unit,
+      disabled: Boolean
+    ): ReactNode = js.native
     
     def getSelectAllLabel(selectedCount: Double, totalCount: Double): ReactNode = js.native
     
@@ -224,7 +222,7 @@ object transferListMod {
     
     def renderItem(item: RecordType): RenderedItem[RecordType] = js.native
     
-    def renderListBody(renderList: js.UndefOr[scala.Nothing], props: TransferListBodyProps[RecordType]): BodyContent = js.native
+    def renderListBody(renderList: Unit, props: TransferListBodyProps[RecordType]): BodyContent = js.native
     def renderListBody(renderList: RenderListFunction[RecordType], props: TransferListBodyProps[RecordType]): BodyContent = js.native
     
     var timer: Double = js.native
@@ -232,53 +230,54 @@ object transferListMod {
     var triggerScrollTimer: Double = js.native
   }
   
-  @js.native
-  trait TransferListProps[RecordType] extends TransferLocale {
+  trait TransferListProps[RecordType]
+    extends StObject
+       with TransferLocale {
     
-    var checkedKeys: js.Array[String] = js.native
+    var checkedKeys: js.Array[String]
     
-    var dataSource: js.Array[RecordType] = js.native
+    var dataSource: js.Array[RecordType]
     
-    var direction: TransferDirection = js.native
+    var direction: TransferDirection
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var filterOption: js.UndefOr[js.Function2[/* filterText */ String, /* item */ RecordType, Boolean]] = js.native
+    var filterOption: js.UndefOr[js.Function2[/* filterText */ String, /* item */ RecordType, Boolean]] = js.undefined
     
-    var footer: js.UndefOr[js.Function1[/* props */ TransferListProps[RecordType], ReactNode]] = js.native
+    var footer: js.UndefOr[js.Function1[/* props */ TransferListProps[RecordType], ReactNode]] = js.undefined
     
-    def handleClear(): Unit = js.native
+    def handleClear(): Unit
     
-    def handleFilter(e: ChangeEvent[HTMLInputElement]): Unit = js.native
+    def handleFilter(e: ChangeEvent[HTMLInputElement]): Unit
     
-    var onItemRemove: js.UndefOr[js.Function1[/* keys */ js.Array[String], Unit]] = js.native
+    var onItemRemove: js.UndefOr[js.Function1[/* keys */ js.Array[String], Unit]] = js.undefined
     
-    def onItemSelect(key: String, check: Boolean): Unit = js.native
+    def onItemSelect(key: String, check: Boolean): Unit
     
-    def onItemSelectAll(dataSource: js.Array[String], checkAll: Boolean): Unit = js.native
+    def onItemSelectAll(dataSource: js.Array[String], checkAll: Boolean): Unit
     
-    def onScroll(e: UIEvent[HTMLUListElement, NativeUIEvent]): Unit = js.native
+    def onScroll(e: UIEvent[HTMLUListElement, NativeUIEvent]): Unit
     
-    var pagination: js.UndefOr[PaginationType] = js.native
+    var pagination: js.UndefOr[PaginationType] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
     /** render item */
-    var render: js.UndefOr[js.Function1[/* item */ RecordType, RenderResult]] = js.native
+    var render: js.UndefOr[js.Function1[/* item */ RecordType, RenderResult]] = js.undefined
     
-    var renderList: js.UndefOr[RenderListFunction[RecordType]] = js.native
+    var renderList: js.UndefOr[RenderListFunction[RecordType]] = js.undefined
     
-    var selectAllLabel: js.UndefOr[SelectAllLabel] = js.native
+    var selectAllLabel: js.UndefOr[SelectAllLabel] = js.undefined
     
-    var showRemove: js.UndefOr[Boolean] = js.native
+    var showRemove: js.UndefOr[Boolean] = js.undefined
     
-    var showSearch: js.UndefOr[Boolean] = js.native
+    var showSearch: js.UndefOr[Boolean] = js.undefined
     
-    var showSelectAll: js.UndefOr[Boolean] = js.native
+    var showSelectAll: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var titleText: String = js.native
+    var titleText: String
   }
   object TransferListProps {
     
@@ -310,7 +309,7 @@ object transferListMod {
     }
     
     @scala.inline
-    implicit class TransferListPropsMutableBuilder[Self <: TransferListProps[_], RecordType] (val x: Self with TransferListProps[RecordType]) extends AnyVal {
+    implicit class TransferListPropsMutableBuilder[Self <: TransferListProps[?], RecordType] (val x: Self & TransferListProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setCheckedKeys(value: js.Array[String]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
@@ -425,11 +424,10 @@ object transferListMod {
     }
   }
   
-  @js.native
   trait TransferListState extends StObject {
     
     /** Filter input value */
-    var filterValue: String = js.native
+    var filterValue: String
   }
   object TransferListState {
     

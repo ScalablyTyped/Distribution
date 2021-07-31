@@ -3,51 +3,49 @@ package typings.appleMapkitJsBrowser.mapkit
 import typings.appleMapkitJsBrowser.mapkit.Directions.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a route, including step-by-step instructions, distance,
   * and estimated travel time.
   */
-@js.native
 trait Route extends StObject {
   
   /**
     * The route distance in meters.
     */
-  var distance: Double = js.native
+  var distance: Double
   
   /**
     * The expected travel time in seconds.
     */
-  var expectedTravelTime: Double = js.native
+  var expectedTravelTime: Double
   
   /**
     * The name assigned to the route.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * An array of coordinate objects representing the path of the route.
     * @deprecated
     */
-  var path: js.Array[Coordinate] = js.native
+  var path: js.Array[Coordinate]
   
   /**
     * An instance of a polyline overlay that represents the path of a route.
     */
-  var polyline: PolylineOverlay = js.native
+  var polyline: PolylineOverlay
   
   /**
     * An array of steps that comprise the overall route.
     */
-  var steps: js.Array[RouteStep] = js.native
+  var steps: js.Array[RouteStep]
   
   /**
     * The overall route transport type.
     */
-  var transportType: Transport = js.native
+  var transportType: Transport
 }
 object Route {
   

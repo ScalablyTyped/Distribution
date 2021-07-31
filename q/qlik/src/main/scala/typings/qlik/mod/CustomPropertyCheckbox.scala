@@ -3,25 +3,24 @@ package typings.qlik.mod
 import typings.qlik.qlikStrings.boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyCheckbox
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var defaultValue: js.UndefOr[Boolean] = js.native
+  var defaultValue: js.UndefOr[Boolean] = js.undefined
   
   @JSName("type")
-  var type_CustomPropertyCheckbox: boolean = js.native
+  var type_CustomPropertyCheckbox: boolean
 }
 object CustomPropertyCheckbox {
   
   @scala.inline
-  def apply(`type`: boolean): CustomPropertyCheckbox = {
+  def apply(): CustomPropertyCheckbox = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[CustomPropertyCheckbox]
   }
   

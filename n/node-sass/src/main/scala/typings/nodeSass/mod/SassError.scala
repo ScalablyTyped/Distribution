@@ -3,19 +3,19 @@ package typings.nodeSass.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SassError extends Error {
+trait SassError
+  extends StObject
+     with Error {
   
-  var column: Double = js.native
+  var column: Double
   
-  var file: String = js.native
+  var file: String
   
-  var line: Double = js.native
+  var line: Double
   
-  var status: Double = js.native
+  var status: Double
 }
 object SassError {
   

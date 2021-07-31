@@ -10,9 +10,9 @@ TypeScript typings for Enterprise License Manager API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.licensing |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 21 |
 | # dependents       | 1 |
-| # downloads        | 59 |
+| # downloads        | 1657 |
 | # stars            | 0 |
 
 ## Links

@@ -2,16 +2,14 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContactReachabilityStatusRequest extends StObject {
   
   /**
     * The name of the domain for which you want to know whether the registrant contact has confirmed that the email address is valid.
     */
-  var domainName: js.UndefOr[DomainName] = js.native
+  var domainName: js.UndefOr[DomainName] = js.undefined
 }
 object GetContactReachabilityStatusRequest {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileSystemSize extends StObject {
   
   /**
     * The time at which the size of data, returned in the Value field, was determined. The value is the integer number of seconds since 1970-01-01T00:00:00Z.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.efsMod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.efsMod.Timestamp] = js.undefined
   
   /**
     * The latest known metered size (in bytes) of data stored in the file system.
     */
-  var Value: FileSystemSizeValue = js.native
+  var Value: FileSystemSizeValue
   
   /**
     * The latest known metered size (in bytes) of data stored in the Infrequent Access storage class.
     */
-  var ValueInIA: js.UndefOr[FileSystemNullableSizeValue] = js.native
+  var ValueInIA: js.UndefOr[FileSystemNullableSizeValue] = js.undefined
   
   /**
     * The latest known metered size (in bytes) of data stored in the Standard storage class.
     */
-  var ValueInStandard: js.UndefOr[FileSystemNullableSizeValue] = js.native
+  var ValueInStandard: js.UndefOr[FileSystemNullableSizeValue] = js.undefined
 }
 object FileSystemSize {
   

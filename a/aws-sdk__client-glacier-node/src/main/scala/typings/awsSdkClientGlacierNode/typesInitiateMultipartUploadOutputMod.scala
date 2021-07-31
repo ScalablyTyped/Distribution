@@ -4,29 +4,29 @@ import typings.awsSdkClientGlacierNode.outputTypesUnionMod._OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInitiateMultipartUploadOutputMod {
   
-  @js.native
-  trait InitiateMultipartUploadOutput extends _OutputTypesUnion {
+  trait InitiateMultipartUploadOutput
+    extends StObject
+       with _OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The relative URI path of the multipart upload ID Amazon Glacier created.</p>
       */
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The ID of the multipart upload. This value is also included as part of the location.</p>
       */
-    var uploadId: js.UndefOr[String] = js.native
+    var uploadId: js.UndefOr[String] = js.undefined
   }
   object InitiateMultipartUploadOutput {
     

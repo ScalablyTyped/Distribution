@@ -2,15 +2,13 @@ package typings.cloudeventsSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Base64Parser extends StObject {
   
-  var decorator: js.Any = js.native
+  var decorator: js.Any
   
-  def parse(payload: js.Any): js.Any = js.native
+  def parse(payload: js.Any): js.Any
 }
 object Base64Parser {
   

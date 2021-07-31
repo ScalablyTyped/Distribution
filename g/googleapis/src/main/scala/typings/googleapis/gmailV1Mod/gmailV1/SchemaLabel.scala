@@ -2,62 +2,60 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Labels are used to categorize messages and threads within the user&#39;s
   * mailbox.
   */
-@js.native
 trait SchemaLabel extends StObject {
   
   /**
     * The color to assign to the label. Color is only available for labels that
     * have their type set to user.
     */
-  var color: js.UndefOr[SchemaLabelColor] = js.native
+  var color: js.UndefOr[SchemaLabelColor] = js.undefined
   
   /**
     * The immutable ID of the label.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The visibility of the label in the label list in the Gmail web interface.
     */
-  var labelListVisibility: js.UndefOr[String] = js.native
+  var labelListVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * The visibility of the label in the message list in the Gmail web
     * interface.
     */
-  var messageListVisibility: js.UndefOr[String] = js.native
+  var messageListVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of messages with the label.
     */
-  var messagesTotal: js.UndefOr[Double] = js.native
+  var messagesTotal: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of unread messages with the label.
     */
-  var messagesUnread: js.UndefOr[Double] = js.native
+  var messagesUnread: js.UndefOr[Double] = js.undefined
   
   /**
     * The display name of the label.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of threads with the label.
     */
-  var threadsTotal: js.UndefOr[Double] = js.native
+  var threadsTotal: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of unread threads with the label.
     */
-  var threadsUnread: js.UndefOr[Double] = js.native
+  var threadsUnread: js.UndefOr[Double] = js.undefined
   
   /**
     * The owner type for the label. User labels are created by the user and can
@@ -69,7 +67,7 @@ trait SchemaLabel extends StObject {
     * UNREAD labels from messages and threads, but cannot apply or remove the
     * DRAFTS or SENT labels from messages or threads.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaLabel {
   

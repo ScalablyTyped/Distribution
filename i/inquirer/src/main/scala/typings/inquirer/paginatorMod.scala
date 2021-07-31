@@ -2,7 +2,6 @@ package typings.inquirer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginatorMod {
@@ -12,7 +11,9 @@ object paginatorMod {
     */
   @JSImport("inquirer/lib/utils/paginator", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Paginator {
+  class ^ protected ()
+    extends StObject
+       with Paginator {
     /**
       * Initializes a new instance of the `Paginator` class.
       *
@@ -20,17 +21,11 @@ object paginatorMod {
       * A screen-manager for drawing the paginated content.
       */
     def this(screenManager: typings.inquirer.screenManagerMod.^) = this()
-  }
-  
-  /**
-    * Provides the functionality to draw paginated content using a `ScreenManager`.
-    */
-  @js.native
-  trait Paginator extends StObject {
     
     /**
       * Gets or sets the index of the last focused line.
       */
+    /* CompleteClass */
     var lastIndex: Double = js.native
     
     /**
@@ -45,17 +40,55 @@ object paginatorMod {
       * @returns
       * The paginated content.
       */
-    def paginate(content: String, selectedIndex: Double): String = js.native
+    /* CompleteClass */
+    override def paginate(content: String, selectedIndex: Double): String = js.native
     
     /**
       * Gets or sets the index of the currently focused line.
       */
+    /* CompleteClass */
     var pointer: Double = js.native
     
     /**
       * Gets or sets an object for drawing the paginated content.
       */
+    /* CompleteClass */
     var screen: typings.inquirer.screenManagerMod.^ = js.native
+  }
+  
+  /**
+    * Provides the functionality to draw paginated content using a `ScreenManager`.
+    */
+  trait Paginator extends StObject {
+    
+    /**
+      * Gets or sets the index of the last focused line.
+      */
+    var lastIndex: Double
+    
+    /**
+      * Paginates the specified `content`.
+      *
+      * @param content
+      * The content to paginate.
+      *
+      * @param selectedIndex
+      * The number of the selected line.
+      *
+      * @returns
+      * The paginated content.
+      */
+    def paginate(content: String, selectedIndex: Double): String
+    
+    /**
+      * Gets or sets the index of the currently focused line.
+      */
+    var pointer: Double
+    
+    /**
+      * Gets or sets an object for drawing the paginated content.
+      */
+    var screen: typings.inquirer.screenManagerMod.^
   }
   object Paginator {
     

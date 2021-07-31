@@ -2,27 +2,25 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorBaseProps extends StObject {
   
-  var column: ExcelColumn = js.native
+  var column: ExcelColumn
   
-  var height: Double = js.native
+  var height: Double
   
-  def onBlur(): Unit = js.native
+  def onBlur(): Unit
   
-  def onCommit(): Unit = js.native
+  def onCommit(): Unit
   
-  def onCommitCancel(): Unit = js.native
+  def onCommitCancel(): Unit
   
-  var rowData: js.Any = js.native
+  var rowData: js.Any
   
-  var rowMetaData: js.Any = js.native
+  var rowMetaData: js.Any
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object EditorBaseProps {
   

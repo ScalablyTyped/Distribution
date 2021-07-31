@@ -5,13 +5,11 @@ import typings.yandexMaps.yandexMapsStrings.off
 import typings.yandexMaps.yandexMapsStrings.on
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanoramasItemMode extends StObject {
   
-  var panoramasItemMode: on | off | ifMercator = js.native
+  var panoramasItemMode: on | off | ifMercator
 }
 object PanoramasItemMode {
   

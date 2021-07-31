@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,21 +16,21 @@ trait IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension
     * A caption for the measures dimension.
     * The default value is "Measures".
     */
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
   /**
     * An array of measure metadata objects.
     */
   var measures: js.UndefOr[
     js.Array[IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A unique name for the measures dimension.
     * The default value is "Measures". This name is used to create the names of dimensions using the following pattern:
     * [<measuresDimensionMetadata.name>].[<measureMetadata.name>]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension {
   

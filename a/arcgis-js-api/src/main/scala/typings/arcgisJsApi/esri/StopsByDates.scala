@@ -5,18 +5,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StopsByDates extends Object {
+trait StopsByDates
+  extends StObject
+     with Object {
   
   /**
     * Array of dates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByDates)
     */
-  var dates: js.Array[Date] = js.native
+  var dates: js.Array[Date]
 }
 object StopsByDates {
   

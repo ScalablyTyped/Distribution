@@ -8,16 +8,15 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
   type FunctionRet[T] = js.Array[js.Function1[/* props */ js.Array[js.Any] | scala.Nothing, T]]
   
-  type GetIntersectionFromPlugins[PluginFuncArr /* <: FunctionRet[JimpPlugin[Image] | JimpType[Image]] */] = UnionToIntersection[Exclude[GetPluginFuncArrValues[PluginFuncArr], js.UndefOr[scala.Nothing]]]
+  type GetIntersectionFromPlugins[PluginFuncArr /* <: FunctionRet[JimpPlugin[Image] | JimpType[Image]] */] = UnionToIntersection[Exclude[GetPluginFuncArrValues[PluginFuncArr], Unit]]
   
-  type GetIntersectionFromPluginsStatics[PluginFuncArr /* <: FunctionRet[JimpPlugin[Image] | JimpType[Image]] */] = UnionToIntersection[GetPluginFuncArrConsts[PluginFuncArr]] with DecodersEncoders[PluginFuncArr]
+  type GetIntersectionFromPluginsStatics[PluginFuncArr /* <: FunctionRet[JimpPlugin[Image] | JimpType[Image]] */] = UnionToIntersection[GetPluginFuncArrConsts[PluginFuncArr]] & DecodersEncoders[PluginFuncArr]
   
   type GetPluginConst[Q] = js.Object | WellFormedConstants[Q]
   

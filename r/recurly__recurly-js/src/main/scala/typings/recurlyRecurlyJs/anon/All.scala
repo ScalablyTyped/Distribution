@@ -3,23 +3,21 @@ package typings.recurlyRecurlyJs.anon
 import typings.recurlyRecurlyJs.elementsMod.IndividualElementOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait All extends StObject {
   
-  var all: js.UndefOr[IndividualElementOptions] = js.native
+  var all: js.UndefOr[IndividualElementOptions] = js.undefined
   
-  var card: js.UndefOr[CardElementOptionsselecto] = js.native
+  var card: js.UndefOr[CardElementOptionsselecto] = js.undefined
   
-  var cvv: js.UndefOr[IndividualElementOptionss] = js.native
+  var cvv: js.UndefOr[IndividualElementOptionss] = js.undefined
   
-  var month: js.UndefOr[IndividualElementOptionss] = js.native
+  var month: js.UndefOr[IndividualElementOptionss] = js.undefined
   
-  var number: js.UndefOr[IndividualElementOptionss] = js.native
+  var number: js.UndefOr[IndividualElementOptionss] = js.undefined
   
-  var year: js.UndefOr[IndividualElementOptionss] = js.native
+  var year: js.UndefOr[IndividualElementOptionss] = js.undefined
 }
 object All {
   

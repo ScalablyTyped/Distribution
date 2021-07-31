@@ -4,19 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebixFilter extends StObject {
   
-  def getValue(node: HTMLElement): js.Any = js.native
+  def getValue(node: HTMLElement): js.Any
   
-  def refresh(master: baseview, node: HTMLElement, value: js.Any): Unit = js.native
+  def refresh(master: baseview, node: HTMLElement, value: js.Any): Unit
   
-  def render(master: baseview, config: StringDictionary[js.Any]): String = js.native
+  def render(master: baseview, config: StringDictionary[js.Any]): String
   
-  def setValue(node: HTMLElement, value: js.Any): js.Any = js.native
+  def setValue(node: HTMLElement, value: js.Any): js.Any
 }
 object WebixFilter {
   

@@ -2,14 +2,12 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `rangeBorderCollection.toJSON()`. */
-@js.native
 trait RangeBorderCollectionData extends StObject {
   
-  var items: js.UndefOr[js.Array[RangeBorderData]] = js.native
+  var items: js.UndefOr[js.Array[RangeBorderData]] = js.undefined
 }
 object RangeBorderCollectionData {
   

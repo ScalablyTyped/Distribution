@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerMessagesViews extends StObject {
   
-  var agenda: js.UndefOr[String] = js.native
+  var agenda: js.UndefOr[String] = js.undefined
   
-  var day: js.UndefOr[String] = js.native
+  var day: js.UndefOr[String] = js.undefined
   
-  var month: js.UndefOr[String] = js.native
+  var month: js.UndefOr[String] = js.undefined
   
-  var week: js.UndefOr[String] = js.native
+  var week: js.UndefOr[String] = js.undefined
 }
 object SchedulerMessagesViews {
   

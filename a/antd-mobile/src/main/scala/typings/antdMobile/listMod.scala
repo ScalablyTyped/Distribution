@@ -9,7 +9,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
@@ -26,11 +25,9 @@ object listMod {
     
     @JSImport("antd-mobile/lib/list", "default.Item")
     @js.native
-    def Item: (Instantiable1[/* props */ ListItemProps, typings.antdMobile.listItemMod.default]) with TypeofItem = js.native
+    def Item: (Instantiable1[/* props */ ListItemProps, typings.antdMobile.listItemMod.default]) & TypeofItem = js.native
     @scala.inline
-    def Item_=(
-      x: (Instantiable1[/* props */ ListItemProps, typings.antdMobile.listItemMod.default]) with TypeofItem
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    def Item_=(x: (Instantiable1[/* props */ ListItemProps, typings.antdMobile.listItemMod.default]) & TypeofItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/list", "default.defaultProps")
     @js.native
@@ -43,16 +40,17 @@ object listMod {
   trait List
     extends Component[ListProps, js.Any, js.Any]
   
-  @js.native
-  trait ListProps extends ListPropsType {
+  trait ListProps
+    extends StObject
+       with ListPropsType {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ListProps {
     

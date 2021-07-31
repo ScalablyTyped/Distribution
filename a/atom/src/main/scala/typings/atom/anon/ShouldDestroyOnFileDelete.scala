@@ -2,20 +2,18 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShouldDestroyOnFileDelete extends StObject {
   
   /**
     *  A function that returns a Boolean indicating whether the buffer should
     *  be destroyed if its file is deleted.
     */
-  var shouldDestroyOnFileDelete: js.UndefOr[js.Function0[Boolean]] = js.native
+  var shouldDestroyOnFileDelete: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** The initial string text of the buffer. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object ShouldDestroyOnFileDelete {
   

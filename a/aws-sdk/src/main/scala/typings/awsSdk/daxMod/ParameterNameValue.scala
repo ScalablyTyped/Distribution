@@ -2,21 +2,19 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterNameValue extends StObject {
   
   /**
     * The name of the parameter.
     */
-  var ParameterName: js.UndefOr[String] = js.native
+  var ParameterName: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the parameter.
     */
-  var ParameterValue: js.UndefOr[String] = js.native
+  var ParameterValue: js.UndefOr[String] = js.undefined
 }
 object ParameterNameValue {
   

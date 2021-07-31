@@ -3,14 +3,15 @@ package typings.jexl
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expressionMod {
   
   @JSImport("jexl/Expression", JSImport.Default)
   @js.native
-  class default protected () extends Expression {
+  class default protected ()
+    extends StObject
+       with Expression {
     def this(lang: js.Any, exprStr: String) = this()
   }
   
@@ -35,8 +36,8 @@ object expressionMod {
       *      made accessible to the Jexl expression when evaluating it
       * @returns resolves with the result of the evaluation.
       */
-    def eval(): js.Promise[_] = js.native
-    def eval(context: Context): js.Promise[_] = js.native
+    def eval(): js.Promise[js.Any] = js.native
+    def eval(context: Context): js.Promise[js.Any] = js.native
     
     /**
       * Synchronously evaluates the expression within an optional context.

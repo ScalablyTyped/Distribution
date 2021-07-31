@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportDicomDataRequest extends StObject {
   
   /**
     * The BigQuery output destination. You can only export to a BigQuery dataset that's in the same project as the DICOM store you're exporting from. The Cloud Healthcare Service Agent
     * requires two IAM roles on the BigQuery location: `roles/bigquery.dataEditor` and `roles/bigquery.jobUser`.
     */
-  var bigqueryDestination: js.UndefOr[GoogleCloudHealthcareV1DicomBigQueryDestination] = js.native
+  var bigqueryDestination: js.UndefOr[GoogleCloudHealthcareV1DicomBigQueryDestination] = js.undefined
   
   /** The Cloud Storage output destination. The Cloud Healthcare Service Agent requires the `roles/storage.objectAdmin` Cloud IAM roles on the Cloud Storage location. */
-  var gcsDestination: js.UndefOr[GoogleCloudHealthcareV1DicomGcsDestination] = js.native
+  var gcsDestination: js.UndefOr[GoogleCloudHealthcareV1DicomGcsDestination] = js.undefined
 }
 object ExportDicomDataRequest {
   

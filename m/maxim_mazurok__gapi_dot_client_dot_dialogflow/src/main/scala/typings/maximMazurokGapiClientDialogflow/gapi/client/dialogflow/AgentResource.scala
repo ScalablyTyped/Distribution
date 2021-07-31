@@ -13,7 +13,6 @@ import typings.maximMazurokGapiClientDialogflow.anon.PrettyPrintQuotaUser
 import typings.maximMazurokGapiClientDialogflow.anon.Uploadprotocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,9 +22,9 @@ trait AgentResource extends StObject {
   
   var environments: EnvironmentsResource = js.native
   
-  def export(request: Alt, body: GoogleCloudDialogflowV2ExportAgentRequest): Request[GoogleLongrunningOperation] = js.native
+  def `export`(request: Alt, body: GoogleCloudDialogflowV2ExportAgentRequest): Request[GoogleLongrunningOperation] = js.native
   /** Exports the specified agent to a ZIP file. Operation */
-  def export(request: KeyOauthtoken): Request[GoogleLongrunningOperation] = js.native
+  def `export`(request: KeyOauthtoken): Request[GoogleLongrunningOperation] = js.native
   
   /** Retrieves the fulfillment. */
   def getFulfillment(): Request[GoogleCloudDialogflowV2Fulfillment] = js.native

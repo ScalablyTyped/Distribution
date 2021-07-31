@@ -4,19 +4,17 @@ import typings.vsoNodeApi.coreInterfacesMod.SourceControlTypes
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VersionControlProjectInfo extends StObject {
   
-  var defaultSourceControlType: SourceControlTypes = js.native
+  var defaultSourceControlType: SourceControlTypes
   
-  var project: TeamProjectReference = js.native
+  var project: TeamProjectReference
   
-  var supportsGit: Boolean = js.native
+  var supportsGit: Boolean
   
-  var supportsTFVC: Boolean = js.native
+  var supportsTFVC: Boolean
 }
 object VersionControlProjectInfo {
   

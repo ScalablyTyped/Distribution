@@ -3,19 +3,17 @@ package typings.angularMeteor
 import typings.angularMeteor.mod.meteor.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bind extends StObject {
     
     /**
       * @param scope - The scope the document will be bound to.
       * @param model - The name of the scope's model variable that the document will be bound to.
       */
-    def bind(scope: IScope, model: String): Unit = js.native
+    def bind(scope: IScope, model: String): Unit
   }
   object Bind {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
-    var email: String = js.native
+    var email: String
   }
   object Email {
     
@@ -54,14 +51,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Height {
     
@@ -94,10 +90,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object Id {
     
@@ -115,16 +110,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Password extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var password: String = js.native
+    var password: String
     
-    var profile: js.UndefOr[js.Object] = js.native
+    var profile: js.UndefOr[js.Object] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Password {
     
@@ -160,10 +154,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Username extends StObject {
     
-    var username: String = js.native
+    var username: String
   }
   object Username {
     

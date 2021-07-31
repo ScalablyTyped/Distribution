@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WizardStepper extends StObject {
   
-  var indicator: js.UndefOr[Boolean] = js.native
+  var indicator: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[Boolean] = js.native
+  var label: js.UndefOr[Boolean] = js.undefined
   
-  var linear: js.UndefOr[Boolean] = js.native
+  var linear: js.UndefOr[Boolean] = js.undefined
 }
 object WizardStepper {
   

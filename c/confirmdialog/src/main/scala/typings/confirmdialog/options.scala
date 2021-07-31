@@ -2,17 +2,15 @@ package typings.confirmdialog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object options {
   
-  @js.native
   trait buttonOptionss extends StObject {
     
-    var cancel: js.UndefOr[js.Function0[Unit]] = js.native
+    var cancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var confirm: js.UndefOr[js.Function0[Unit]] = js.native
+    var confirm: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object buttonOptionss {
     
@@ -39,64 +37,63 @@ object options {
     }
   }
   
-  @js.native
   trait confirmOptions extends StObject {
     
-    var autoClose: js.UndefOr[String] = js.native
+    var autoClose: js.UndefOr[String] = js.undefined
     
-    var backgroundDismiss: js.UndefOr[js.Any] = js.native
+    var backgroundDismiss: js.UndefOr[js.Any] = js.undefined
     
-    var backgroundDismissAnimation: js.UndefOr[String] = js.native
+    var backgroundDismissAnimation: js.UndefOr[String] = js.undefined
     
-    var bootstrapClasses: js.UndefOr[js.Any] = js.native
+    var bootstrapClasses: js.UndefOr[js.Any] = js.undefined
     
-    var boxWidth: js.UndefOr[String] = js.native
+    var boxWidth: js.UndefOr[String] = js.undefined
     
-    var buttons: js.UndefOr[js.Any] = js.native
+    var buttons: js.UndefOr[js.Any] = js.undefined
     
-    var closeIcon: js.UndefOr[js.Any] = js.native
+    var closeIcon: js.UndefOr[js.Any] = js.undefined
     
-    var closeIconClass: js.UndefOr[String] = js.native
+    var closeIconClass: js.UndefOr[String] = js.undefined
     
-    var columnClass: js.UndefOr[String] = js.native
+    var columnClass: js.UndefOr[String] = js.undefined
     
-    var containerFluid: js.UndefOr[Boolean] = js.native
+    var containerFluid: js.UndefOr[Boolean] = js.undefined
     
-    var content: js.UndefOr[js.Any] = js.native
+    var content: js.UndefOr[js.Any] = js.undefined
     
-    var contentLoaded: js.UndefOr[js.Function0[Unit]] = js.native
+    var contentLoaded: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var dragWindowBorder: js.UndefOr[Boolean] = js.native
+    var dragWindowBorder: js.UndefOr[Boolean] = js.undefined
     
-    var dragWindowGap: js.UndefOr[Double] = js.native
+    var dragWindowGap: js.UndefOr[Double] = js.undefined
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var escapeKey: js.UndefOr[String | Boolean] = js.native
+    var escapeKey: js.UndefOr[String | Boolean] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var lazyOpen: js.UndefOr[Boolean] = js.native
+    var lazyOpen: js.UndefOr[Boolean] = js.undefined
     
-    var onAction: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAction: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onContentReady: js.UndefOr[js.Any] = js.native
+    var onContentReady: js.UndefOr[js.Any] = js.undefined
     
-    var onDestroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDestroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOpenBefore: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpenBefore: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var title: js.UndefOr[String | Boolean] = js.native
+    var title: js.UndefOr[String | Boolean] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var typeAnimated: js.UndefOr[Boolean] = js.native
+    var typeAnimated: js.UndefOr[Boolean] = js.undefined
     
-    var useBootstrap: js.UndefOr[Boolean] = js.native
+    var useBootstrap: js.UndefOr[Boolean] = js.undefined
   }
   object confirmOptions {
     

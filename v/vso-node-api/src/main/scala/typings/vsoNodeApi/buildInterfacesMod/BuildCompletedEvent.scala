@@ -2,26 +2,26 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildCompletedEvent extends BuildUpdatedEvent {
+trait BuildCompletedEvent
+  extends StObject
+     with BuildUpdatedEvent {
   
   /**
     * errors associated with a build used for build notifications
     */
-  var buildErrors: js.Array[BuildRequestValidationResult] = js.native
+  var buildErrors: js.Array[BuildRequestValidationResult]
   
   /**
     * warnings associated with a build used for build notifications
     */
-  var buildWarnings: js.Array[BuildRequestValidationResult] = js.native
+  var buildWarnings: js.Array[BuildRequestValidationResult]
   
   /**
     * Changes associated with a build used for build notifications
     */
-  var changes: js.Array[Change] = js.native
+  var changes: js.Array[Change]
 }
 object BuildCompletedEvent {
   

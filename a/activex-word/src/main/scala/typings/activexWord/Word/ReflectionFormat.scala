@@ -3,30 +3,28 @@ package typings.activexWord.Word
 import typings.activexOffice.Office.MsoReflectionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReflectionFormat extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Blur: Double = js.native
+  var Blur: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Offset: Double = js.native
+  var Offset: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Size: Double = js.native
+  var Size: Double
   
-  var Transparency: Double = js.native
+  var Transparency: Double
   
-  var Type: MsoReflectionType = js.native
+  var Type: MsoReflectionType
   
   @JSName("Word.ReflectionFormat_typekey")
-  var WordDotReflectionFormat_typekey: ReflectionFormat = js.native
+  var WordDotReflectionFormat_typekey: ReflectionFormat
 }
 object ReflectionFormat {
   

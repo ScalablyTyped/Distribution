@@ -14,7 +14,6 @@ import typings.reactNativeModalPopover.popoverGeometryMod.Size
 import typings.reactNativeModalPopover.reactNativeModalPopoverStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverMod {
@@ -104,38 +103,37 @@ object popoverMod {
     def `portrait-upside-down`: typings.reactNativeModalPopover.reactNativeModalPopoverStrings.`portrait-upside-down` = "portrait-upside-down".asInstanceOf[typings.reactNativeModalPopover.reactNativeModalPopoverStrings.`portrait-upside-down`]
   }
   
-  @js.native
   trait PopoverProps extends StObject {
     
-    var arrowSize: js.UndefOr[Size] = js.native
+    var arrowSize: js.UndefOr[Size] = js.undefined
     
-    var arrowStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var arrowStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var backgroundStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var backgroundStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var displayArea: js.UndefOr[Rect] = js.native
+    var displayArea: js.UndefOr[Rect] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* show */ Boolean, js.Function1[/* value */ Double, Double]]] = js.native
+    var easing: js.UndefOr[js.Function1[/* show */ Boolean, js.Function1[/* value */ Double, Double]]] = js.undefined
     
-    var fromRect: Rect = js.native
+    var fromRect: Rect
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var placement: js.UndefOr[Placement | auto] = js.native
+    var placement: js.UndefOr[Placement | auto] = js.undefined
     
-    var popoverStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var popoverStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var supportedOrientations: js.UndefOr[js.Array[Orientation]] = js.native
+    var supportedOrientations: js.UndefOr[js.Array[Orientation]] = js.undefined
     
-    var useNativeDriver: js.UndefOr[Boolean] = js.native
+    var useNativeDriver: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object PopoverProps {
     
@@ -252,16 +250,17 @@ object popoverMod {
     }
   }
   
-  @js.native
-  trait PopoverState extends Geometry {
+  trait PopoverState
+    extends StObject
+       with Geometry {
     
-    var animation: Value = js.native
+    var animation: Value
     
-    var contentSize: Size = js.native
+    var contentSize: Size
     
-    var isAwaitingShow: Boolean = js.native
+    var isAwaitingShow: Boolean
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object PopoverState {
     

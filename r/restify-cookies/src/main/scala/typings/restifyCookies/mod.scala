@@ -6,36 +6,37 @@ import typings.restifyCookies.restifyCookiesStrings.strict
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("restify-cookies", "parse")
+  @JSImport("restify-cookies", JSImport.Namespace)
   @js.native
-  def parse(): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def parse(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[js.Any]
   
   /* augmented module */
   object restifyAugmentingMod {
     
-    @js.native
     trait CookieOptions extends StObject {
       
-      var domain: js.UndefOr[String] = js.native
+      var domain: js.UndefOr[String] = js.undefined
       
-      var encode: js.UndefOr[js.Function1[/* input */ String, String]] = js.native
+      var encode: js.UndefOr[js.Function1[/* input */ String, String]] = js.undefined
       
-      var expires: js.UndefOr[Date] = js.native
+      var expires: js.UndefOr[Date] = js.undefined
       
-      var httpOnly: js.UndefOr[Boolean] = js.native
+      var httpOnly: js.UndefOr[Boolean] = js.undefined
       
-      var maxAge: js.UndefOr[Double] = js.native
+      var maxAge: js.UndefOr[Double] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var sameSite: js.UndefOr[Boolean | lax | strict | none] = js.native
+      var sameSite: js.UndefOr[Boolean | lax | strict | none] = js.undefined
       
-      var secure: js.UndefOr[Boolean] = js.native
+      var secure: js.UndefOr[Boolean] = js.undefined
     }
     object CookieOptions {
       
@@ -98,10 +99,9 @@ object mod {
       }
     }
     
-    @js.native
     trait Request extends StObject {
       
-      var cookies: js.Any = js.native
+      var cookies: js.Any
     }
     object Request {
       

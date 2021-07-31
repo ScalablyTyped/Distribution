@@ -2,21 +2,19 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinishingStitching extends StObject {
   
-  var `stitching-angle`: js.UndefOr[Double] = js.native
+  var `stitching-angle`: js.UndefOr[Double] = js.undefined
   
-  var `stitching-locations`: js.UndefOr[js.Array[Double]] = js.native
+  var `stitching-locations`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `stitching-method`: js.UndefOr[StitchingMethod] = js.native
+  var `stitching-method`: js.UndefOr[StitchingMethod] = js.undefined
   
-  var `stitching-offset`: js.UndefOr[Double] = js.native
+  var `stitching-offset`: js.UndefOr[Double] = js.undefined
   
-  var `stitching-reference-edge`: js.UndefOr[ReferenceEdge] = js.native
+  var `stitching-reference-edge`: js.UndefOr[ReferenceEdge] = js.undefined
 }
 object FinishingStitching {
   

@@ -2,19 +2,17 @@ package typings.normalizeJss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
-  var fontSize: String = js.native
+  var fontSize: String
   
-  var lineHeight: Double = js.native
+  var lineHeight: Double
   
-  var position: String = js.native
+  var position: String
   
-  var verticalAlign: String = js.native
+  var verticalAlign: String
 }
 object Position {
   

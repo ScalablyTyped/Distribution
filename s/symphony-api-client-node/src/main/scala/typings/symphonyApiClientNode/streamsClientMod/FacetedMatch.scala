@@ -2,15 +2,13 @@ package typings.symphonyApiClientNode.streamsClientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FacetedMatch extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var facet: String = js.native
+  var facet: String
 }
 object FacetedMatch {
   

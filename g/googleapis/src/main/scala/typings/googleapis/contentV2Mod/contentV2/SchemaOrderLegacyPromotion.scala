@@ -2,13 +2,11 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderLegacyPromotion extends StObject {
   
-  var benefits: js.UndefOr[js.Array[SchemaOrderLegacyPromotionBenefit]] = js.native
+  var benefits: js.UndefOr[js.Array[SchemaOrderLegacyPromotionBenefit]] = js.undefined
   
   /**
     * The date and time frame when the promotion is active and ready for
@@ -19,34 +17,34 @@ trait SchemaOrderLegacyPromotion extends StObject {
     * the sale starts (in Greenwich Mean Time, GMT), followed by an expression
     * of the time zone for the sale. The end date is in the same format.
     */
-  var effectiveDates: js.UndefOr[String] = js.native
+  var effectiveDates: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The text code that corresponds to the promotion when applied on
     * the retailer?s website.
     */
-  var genericRedemptionCode: js.UndefOr[String] = js.native
+  var genericRedemptionCode: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID of the promotion.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The full title of the promotion.
     */
-  var longTitle: js.UndefOr[String] = js.native
+  var longTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the promotion is applicable to all products or only specific
     * products.
     */
-  var productApplicability: js.UndefOr[String] = js.native
+  var productApplicability: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that the promotion is valid online.
     */
-  var redemptionChannel: js.UndefOr[String] = js.native
+  var redemptionChannel: js.UndefOr[String] = js.undefined
 }
 object SchemaOrderLegacyPromotion {
   

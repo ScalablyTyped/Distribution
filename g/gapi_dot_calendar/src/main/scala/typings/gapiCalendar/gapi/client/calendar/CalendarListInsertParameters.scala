@@ -2,18 +2,16 @@ package typings.gapiCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarListInsertParameters extends StObject {
   
   // Parameters
   // Optional query parameters
-  var colorRgbFormat: js.UndefOr[Boolean] = js.native
+  var colorRgbFormat: js.UndefOr[Boolean] = js.undefined
   
   // CalendarList resource
-  var resource: CalendarListInput = js.native
+  var resource: CalendarListInput
 }
 object CalendarListInsertParameters {
   

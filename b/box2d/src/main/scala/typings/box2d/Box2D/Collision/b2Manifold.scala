@@ -3,53 +3,51 @@ package typings.box2d.Box2D.Collision
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2Manifold extends StObject {
   
   /**
     * Copies the manifold.
     * @return Copy of this manifold.
     **/
-  def Copy(): b2Manifold = js.native
+  def Copy(): b2Manifold
   
   /**
     * Resets this manifold.
     **/
-  def Reset(): Unit = js.native
+  def Reset(): Unit
   
   /**
     * Sets this manifold from another manifold.
     * @param m Manifold to copy values from.
     **/
-  def Set(m: b2Manifold): Unit = js.native
+  def Set(m: b2Manifold): Unit
   
   /**
     * Not used for Type e_points
     **/
-  var m_localPlaneNormal: b2Vec2 = js.native
+  var m_localPlaneNormal: b2Vec2
   
   /**
     * Usage depends on manifold type
     **/
-  var m_localPoint: b2Vec2 = js.native
+  var m_localPoint: b2Vec2
   
   /**
     * The number of manifold points
     **/
-  var m_pointCount: Double = js.native
+  var m_pointCount: Double
   
   /**
     * The points of contact
     **/
-  var m_points: js.Array[b2ManifoldPoint] = js.native
+  var m_points: js.Array[b2ManifoldPoint]
   
   /**
     * Manifold type.
     **/
-  var m_type: Double = js.native
+  var m_type: Double
 }
 object b2Manifold {
   

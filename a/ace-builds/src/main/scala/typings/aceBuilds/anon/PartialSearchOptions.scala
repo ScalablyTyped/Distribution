@@ -4,34 +4,32 @@ import typings.aceBuilds.mod.Ace.Range
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ace-builds.ace-builds.Ace.SearchOptions> */
-@js.native
 trait PartialSearchOptions extends StObject {
   
-  var backwards: js.UndefOr[Boolean] = js.native
+  var backwards: js.UndefOr[Boolean] = js.undefined
   
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
-  var needle: js.UndefOr[String | RegExp] = js.native
+  var needle: js.UndefOr[String | RegExp] = js.undefined
   
-  var preserveCase: js.UndefOr[Boolean] = js.native
+  var preserveCase: js.UndefOr[Boolean] = js.undefined
   
-  var preventScroll: js.UndefOr[Boolean] = js.native
+  var preventScroll: js.UndefOr[Boolean] = js.undefined
   
-  var range: js.UndefOr[Range] = js.native
+  var range: js.UndefOr[Range] = js.undefined
   
-  var regExp: js.UndefOr[RegExp] = js.native
+  var regExp: js.UndefOr[RegExp] = js.undefined
   
-  var skipCurrent: js.UndefOr[Boolean] = js.native
+  var skipCurrent: js.UndefOr[Boolean] = js.undefined
   
-  var start: js.UndefOr[Range] = js.native
+  var start: js.UndefOr[Range] = js.undefined
   
-  var wholeWord: js.UndefOr[String] = js.native
+  var wholeWord: js.UndefOr[String] = js.undefined
   
-  var wrap: js.UndefOr[Boolean] = js.native
+  var wrap: js.UndefOr[Boolean] = js.undefined
 }
 object PartialSearchOptions {
   

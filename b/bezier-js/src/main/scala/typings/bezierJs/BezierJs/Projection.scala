@@ -2,15 +2,15 @@ package typings.bezierJs.BezierJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Projection extends Point {
+trait Projection
+  extends StObject
+     with Point {
   
-  var d: js.UndefOr[Double] = js.native
+  var d: js.UndefOr[Double] = js.undefined
   
-  var t: js.UndefOr[Double] = js.native
+  var t: js.UndefOr[Double] = js.undefined
 }
 object Projection {
   

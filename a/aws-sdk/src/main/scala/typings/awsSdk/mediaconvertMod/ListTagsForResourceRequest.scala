@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource that you want to list tags for. To get the ARN, send a GET request with the resource name.
     */
-  var Arn: string = js.native
+  var Arn: string
 }
 object ListTagsForResourceRequest {
   

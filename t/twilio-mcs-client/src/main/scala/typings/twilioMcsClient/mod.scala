@@ -7,7 +7,6 @@ import typings.twilioMcsClient.networkMod.Network
 import typings.twilioMcsClient.transportMod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -173,14 +172,13 @@ object mod {
   */
   type LogLevel = _LogLevel | Null
   
-  @js.native
   trait Options extends StObject {
     
-    var logLevel: js.UndefOr[LogLevel] = js.native
+    var logLevel: js.UndefOr[LogLevel] = js.undefined
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var transport: js.UndefOr[Transport] = js.native
+    var transport: js.UndefOr[Transport] = js.undefined
   }
   object Options {
     

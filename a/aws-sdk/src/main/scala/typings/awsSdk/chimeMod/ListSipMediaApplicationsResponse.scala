@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSipMediaApplicationsResponse extends StObject {
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[NextTokenString] = js.native
+  var NextToken: js.UndefOr[NextTokenString] = js.undefined
   
   /**
     * List of SIP media applications and application details.
     */
-  var SipMediaApplications: js.UndefOr[SipMediaApplicationList] = js.native
+  var SipMediaApplications: js.UndefOr[SipMediaApplicationList] = js.undefined
 }
 object ListSipMediaApplicationsResponse {
   

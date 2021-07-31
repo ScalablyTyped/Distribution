@@ -2,66 +2,64 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Required<exceljs.exceljs.TableProperties> */
-@js.native
 trait Table extends StObject {
   
   /**
   	 * Add a new column, including column defn and values
   	 * inserts at colNumber or adds to the right
   	 */
-  def addColumn(column: TableColumnProperties, values: js.Array[_], colIndex: Double): Unit = js.native
+  def addColumn(column: TableColumnProperties, values: js.Array[js.Any], colIndex: Double): Unit
   
   /**
   	 * Add a row of data, either insert at rowNumber or append
   	 */
-  def addRow(values: js.Array[_], rowNumber: Double): Unit = js.native
+  def addRow(values: js.Array[js.Any], rowNumber: Double): Unit
   
-  var columns: js.Array[TableColumnProperties] = js.native
+  var columns: js.Array[TableColumnProperties]
   
   /**
   	 * Commit changes
   	 */
-  def commit(): Unit = js.native
+  def commit(): Unit
   
-  var displayName: String = js.native
+  var displayName: String
   
   /**
   	 * Get column
   	 */
-  def getColumn(colIndex: Double): TableColumn = js.native
+  def getColumn(colIndex: Double): TableColumn
   
-  var headerRow: Boolean = js.native
+  var headerRow: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var ref: String = js.native
+  var ref: String
   
   /**
   	 * Remove a column with data
   	 */
-  def removeColumns(colIndex: Double, count: Double): Unit = js.native
+  def removeColumns(colIndex: Double, count: Double): Unit
   
   /**
   	 * Remove a rows of data
   	 */
-  def removeRows(rowIndex: Double, count: Double): Unit = js.native
+  def removeRows(rowIndex: Double, count: Double): Unit
   
-  var rows: js.Array[js.Array[_]] = js.native
+  var rows: js.Array[js.Array[js.Any]]
   
-  var style: TableStyleProperties = js.native
+  var style: TableStyleProperties
   
-  var totalsRow: Boolean = js.native
+  var totalsRow: Boolean
 }
 object Table {
   
   @scala.inline
   def apply(
-    addColumn: (TableColumnProperties, js.Array[_], Double) => Unit,
-    addRow: (js.Array[_], Double) => Unit,
+    addColumn: (TableColumnProperties, js.Array[js.Any], Double) => Unit,
+    addRow: (js.Array[js.Any], Double) => Unit,
     columns: js.Array[TableColumnProperties],
     commit: () => Unit,
     displayName: String,
@@ -71,7 +69,7 @@ object Table {
     ref: String,
     removeColumns: (Double, Double) => Unit,
     removeRows: (Double, Double) => Unit,
-    rows: js.Array[js.Array[_]],
+    rows: js.Array[js.Array[js.Any]],
     style: TableStyleProperties,
     totalsRow: Boolean
   ): Table = {
@@ -83,10 +81,10 @@ object Table {
   implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAddColumn(value: (TableColumnProperties, js.Array[_], Double) => Unit): Self = StObject.set(x, "addColumn", js.Any.fromFunction3(value))
+    def setAddColumn(value: (TableColumnProperties, js.Array[js.Any], Double) => Unit): Self = StObject.set(x, "addColumn", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAddRow(value: (js.Array[_], Double) => Unit): Self = StObject.set(x, "addRow", js.Any.fromFunction2(value))
+    def setAddRow(value: (js.Array[js.Any], Double) => Unit): Self = StObject.set(x, "addRow", js.Any.fromFunction2(value))
     
     @scala.inline
     def setColumns(value: js.Array[TableColumnProperties]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
@@ -119,7 +117,7 @@ object Table {
     def setRemoveRows(value: (Double, Double) => Unit): Self = StObject.set(x, "removeRows", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRows(value: js.Array[js.Array[_]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))

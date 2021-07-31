@@ -4,23 +4,21 @@ import typings.gatsbyCli.constantsMod.ActivityStatuses
 import typings.gatsbyCli.constantsMod.ActivityTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Current extends StObject {
   
-  var current: js.UndefOr[Double] = js.native
+  var current: js.UndefOr[Double] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var status: js.UndefOr[ActivityStatuses] = js.native
+  var status: js.UndefOr[ActivityStatuses] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
   
-  var `type`: ActivityTypes = js.native
+  var `type`: ActivityTypes
 }
 object Current {
   

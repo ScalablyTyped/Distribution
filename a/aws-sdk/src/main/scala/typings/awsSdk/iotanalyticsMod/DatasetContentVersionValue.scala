@@ -2,16 +2,14 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetContentVersionValue extends StObject {
   
   /**
     * The name of the dataset whose latest contents are used as input to the notebook or application.
     */
-  var datasetName: DatasetName = js.native
+  var datasetName: DatasetName
 }
 object DatasetContentVersionValue {
   

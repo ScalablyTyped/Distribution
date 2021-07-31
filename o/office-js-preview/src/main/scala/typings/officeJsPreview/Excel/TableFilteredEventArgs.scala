@@ -3,7 +3,6 @@ package typings.officeJsPreview.Excel
 import typings.officeJsPreview.officeJsPreviewStrings.TableFiltered
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@js.native
 trait TableFilteredEventArgs extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait TableFilteredEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var tableId: String = js.native
+  var tableId: String
   
   /**
     *
@@ -32,7 +30,7 @@ trait TableFilteredEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var `type`: TableFiltered = js.native
+  var `type`: TableFiltered
   
   /**
     *
@@ -41,14 +39,14 @@ trait TableFilteredEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object TableFilteredEventArgs {
   
   @scala.inline
-  def apply(tableId: String, `type`: TableFiltered, worksheetId: String): TableFilteredEventArgs = {
+  def apply(tableId: String, worksheetId: String): TableFilteredEventArgs = {
     val __obj = js.Dynamic.literal(tableId = tableId.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TableFiltered")
     __obj.asInstanceOf[TableFilteredEventArgs]
   }
   

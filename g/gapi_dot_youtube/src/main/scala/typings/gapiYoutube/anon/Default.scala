@@ -2,21 +2,19 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Default extends StObject {
   
   /**
     * The default value for the property.
     */
-  var default: String = js.native
+  var default: String
   
   /**
     * A list of objects that specify language-specific values for the property.
     */
-  var localized: js.Array[Language] = js.native
+  var localized: js.Array[Language]
 }
 object Default {
   

@@ -2,19 +2,17 @@ package typings.elasticElasticsearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DATA_ extends StObject {
   
-  var DATA: String = js.native
+  var DATA: String
   
-  var INGEST: String = js.native
+  var INGEST: String
   
-  var MASTER: String = js.native
+  var MASTER: String
   
-  var ML: String = js.native
+  var ML: String
 }
 object DATA_ {
   

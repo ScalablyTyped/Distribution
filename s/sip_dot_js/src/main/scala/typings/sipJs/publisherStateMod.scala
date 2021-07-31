@@ -2,7 +2,6 @@ package typings.sipJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publisherStateMod {
@@ -14,22 +13,30 @@ object publisherStateMod {
   object PublisherState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[PublisherState with String] = js.native
+    def apply(value: String): js.UndefOr[PublisherState & String] = js.native
     
     @js.native
-    sealed trait Initial extends PublisherState
-    /* "Initial" */ val Initial: typings.sipJs.publisherStateMod.PublisherState.Initial with String = js.native
+    sealed trait Initial
+      extends StObject
+         with PublisherState
+    /* "Initial" */ val Initial: typings.sipJs.publisherStateMod.PublisherState.Initial & String = js.native
     
     @js.native
-    sealed trait Published extends PublisherState
-    /* "Published" */ val Published: typings.sipJs.publisherStateMod.PublisherState.Published with String = js.native
+    sealed trait Published
+      extends StObject
+         with PublisherState
+    /* "Published" */ val Published: typings.sipJs.publisherStateMod.PublisherState.Published & String = js.native
     
     @js.native
-    sealed trait Terminated extends PublisherState
-    /* "Terminated" */ val Terminated: typings.sipJs.publisherStateMod.PublisherState.Terminated with String = js.native
+    sealed trait Terminated
+      extends StObject
+         with PublisherState
+    /* "Terminated" */ val Terminated: typings.sipJs.publisherStateMod.PublisherState.Terminated & String = js.native
     
     @js.native
-    sealed trait Unpublished extends PublisherState
-    /* "Unpublished" */ val Unpublished: typings.sipJs.publisherStateMod.PublisherState.Unpublished with String = js.native
+    sealed trait Unpublished
+      extends StObject
+         with PublisherState
+    /* "Unpublished" */ val Unpublished: typings.sipJs.publisherStateMod.PublisherState.Unpublished & String = js.native
   }
 }

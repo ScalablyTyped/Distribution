@@ -2,13 +2,11 @@ package typings.googleapis.dnsV1beta2Mod.dnsV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaResponseHeader extends StObject {
   
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
 }
 object SchemaResponseHeader {
   

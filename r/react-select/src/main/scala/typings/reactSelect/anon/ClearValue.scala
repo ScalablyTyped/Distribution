@@ -7,7 +7,6 @@ import typings.reactSelect.typesMod.OptionsType
 import typings.reactSelect.typesMod.ValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,11 +26,11 @@ trait ClearValue[OptionType /* <: OptionTypeBase */] extends StObject {
   
   var isRtl: Boolean = js.native
   
-  var options: OptionsType[_] = js.native
+  var options: OptionsType[js.Any] = js.native
   
   def selectOption(newValue: OptionType): Unit = js.native
   
-  var selectProps: ReadonlychildrenReactNode with Props[OptionType] = js.native
+  var selectProps: ReadonlychildrenReactNode & Props[OptionType] = js.native
   
   def setValue(newValue: ValueType[OptionType], action: ActionTypes): Unit = js.native
   def setValue(newValue: ValueType[OptionType], action: ActionTypes, option: OptionType): Unit = js.native

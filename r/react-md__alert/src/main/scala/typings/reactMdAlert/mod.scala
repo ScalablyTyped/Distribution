@@ -16,10 +16,13 @@ import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@react-md/alert", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-md/alert", "AddMessageContext")
   @js.native
@@ -39,9 +42,12 @@ object mod {
   
   object MessageQueue {
     
+    @scala.inline
+    def apply[M /* <: ToastMessage */](hasTimeoutDuplicatesDefaultQueueChildrenProps: MessageQueueProps[M]): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasTimeoutDuplicatesDefaultQueueChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/alert", "MessageQueue")
     @js.native
-    def apply[M /* <: ToastMessage */](hasTimeoutDuplicatesDefaultQueueChildrenProps: MessageQueueProps[M]): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -95,25 +101,21 @@ object mod {
   
   @JSImport("@react-md/alert", "Snackbar")
   @js.native
-  val Snackbar: ForwardRefExoticComponent[SnackbarProps with RefAttributes[HTMLDivElement]] = js.native
+  val Snackbar: ForwardRefExoticComponent[SnackbarProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("@react-md/alert", "Toast")
   @js.native
-  val Toast: ForwardRefExoticComponent[ToastProps with RefAttributes[HTMLDivElement]] = js.native
+  val Toast: ForwardRefExoticComponent[ToastProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @JSImport("@react-md/alert", "useAddMessage")
-  @js.native
-  def useAddMessage[M /* <: Message */](): AddMessage[M] = js.native
+  @scala.inline
+  def useAddMessage[M /* <: Message */](): AddMessage[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAddMessage")().asInstanceOf[AddMessage[M]]
   
-  @JSImport("@react-md/alert", "useMessageQueueActions")
-  @js.native
-  def useMessageQueueActions[M /* <: Message */](): MessageQueueActions[M] = js.native
+  @scala.inline
+  def useMessageQueueActions[M /* <: Message */](): MessageQueueActions[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMessageQueueActions")().asInstanceOf[MessageQueueActions[M]]
   
-  @JSImport("@react-md/alert", "useMessageVisibility")
-  @js.native
-  def useMessageVisibility(): Boolean = js.native
+  @scala.inline
+  def useMessageVisibility(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMessageVisibility")().asInstanceOf[Boolean]
   
-  @JSImport("@react-md/alert", "useQueue")
-  @js.native
-  def useQueue[M /* <: Message */](): js.Array[M] = js.native
+  @scala.inline
+  def useQueue[M /* <: Message */](): js.Array[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueue")().asInstanceOf[js.Array[M]]
 }

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the results of a window (app view) consolidation operation. */
-@js.native
 trait ApplicationViewConsolidatedEventArgs extends StObject {
   
   /** Indicates whether the window consolidation was user- or system-initiated. */
-  var isUserInitiated: Boolean = js.native
+  var isUserInitiated: Boolean
 }
 object ApplicationViewConsolidatedEventArgs {
   

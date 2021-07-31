@@ -2,25 +2,23 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationError extends StObject {
   
-  var context: js.Any = js.native
+  var context: js.Any
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  def getKey(validator: Validator, property: String): String = js.native
+  def getKey(validator: Validator, property: String): String
   
-  var key: String = js.native
+  var key: String
   
-  var property: IProperty = js.native
+  var property: IProperty
   
-  var propertyName: String = js.native
+  var propertyName: String
   
-  var validator: Validator = js.native
+  var validator: Validator
 }
 object ValidationError {
   

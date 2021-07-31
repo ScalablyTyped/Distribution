@@ -2,10 +2,8 @@ package typings.angularForms.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Validator extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait Validator extends StObject {
     *
     * @param fn The callback function
     */
-  var registerOnValidatorChange: js.UndefOr[js.Function1[/* fn */ js.Function0[Unit], Unit]] = js.native
+  var registerOnValidatorChange: js.UndefOr[js.Function1[/* fn */ js.Function0[Unit], Unit]] = js.undefined
   
   /**
     * @description
@@ -25,7 +23,7 @@ trait Validator extends StObject {
     * @returns A map of validation errors if validation fails,
     * otherwise null.
     */
-  def validate(control: AbstractControl): ValidationErrors | Null = js.native
+  def validate(control: AbstractControl): ValidationErrors | Null
 }
 object Validator {
   

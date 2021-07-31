@@ -2,23 +2,21 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CandleStickValue extends StObject {
   
-  var close: Double = js.native
+  var close: Double
   
-  var marker: js.UndefOr[String] = js.native
+  var marker: js.UndefOr[String] = js.undefined
   
-  var open: Double = js.native
+  var open: Double
   
-  var shadowH: Double = js.native
+  var shadowH: Double
   
-  var shadowL: Double = js.native
+  var shadowL: Double
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
 }
 object CandleStickValue {
   

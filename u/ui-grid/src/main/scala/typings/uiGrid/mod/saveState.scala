@@ -5,12 +5,10 @@ import typings.uiGrid.mod.grouping.IGridGroupingConfiguration
 import typings.uiGrid.mod.treeBase.ITreeState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object saveState {
   
-  @js.native
   trait IGridOptions extends StObject {
     
     /**
@@ -18,7 +16,7 @@ object saveState {
       * Defaults to true
       * @default true
       */
-    var saveFilter: js.UndefOr[Boolean] = js.native
+    var saveFilter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Save the current focused cell. On returning to this focused cell we'll also scroll.
@@ -36,14 +34,14 @@ object saveState {
       * Defaults to true (unless saveScroll is true)
       * @default true
       */
-    var saveFocus: js.UndefOr[Boolean] = js.native
+    var saveFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Save the grouping configuration. If set to true and the grouping feature is not enabled then does
       * nothing. Defaults to true
       * @default true
       */
-    var saveGrouping: js.UndefOr[Boolean] = js.native
+    var saveGrouping: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Save the grouping row expanded states.
@@ -54,7 +52,7 @@ object saveState {
       * Defaults to false
       * @default false
       */
-    var saveGroupingExpandedStates: js.UndefOr[Boolean] = js.native
+    var saveGroupingExpandedStates: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Restore the current column order.
@@ -63,14 +61,14 @@ object saveState {
       * Defaults to true
       * @default true
       */
-    var saveOrder: js.UndefOr[Boolean] = js.native
+    var saveOrder: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Save pinning state for columns.
       * Defaults to true
       * @default true
       */
-    var savePinning: js.UndefOr[Boolean] = js.native
+    var savePinning: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function that can be called, passing in a rowEntity, and that will return a unique id for that row.
@@ -82,7 +80,7 @@ object saveState {
       * Defaults to undefined
       * @default undefined
       */
-    var saveRowIdentity: js.UndefOr[Boolean] = js.native
+    var saveRowIdentity: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Save the current scroll position.
@@ -97,7 +95,7 @@ object saveState {
       * Defaults to false
       * @default false
       */
-    var saveScroll: js.UndefOr[Boolean] = js.native
+    var saveScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Save the currently selected rows.
@@ -110,7 +108,7 @@ object saveState {
       * Defaults to true
       * @default true
       */
-    var saveSelection: js.UndefOr[Boolean] = js.native
+    var saveSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Save the current sort state for each column
@@ -118,7 +116,7 @@ object saveState {
       *
       * @default true
       */
-    var saveSort: js.UndefOr[Boolean] = js.native
+    var saveSort: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Save the treeView configuration. If set to true and the treeView feature is not enabled then does
@@ -126,14 +124,14 @@ object saveState {
       *
       * @default true;
       */
-    var saveTreeView: js.UndefOr[Boolean] = js.native
+    var saveTreeView: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Save whether or not columns are visible
       * Defaults to true
       * @default true
       */
-    var saveVisible: js.UndefOr[Boolean] = js.native
+    var saveVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Save the current column widths.
@@ -142,7 +140,7 @@ object saveState {
       * Defaults to true
       * @default true
       */
-    var saveWidths: js.UndefOr[Boolean] = js.native
+    var saveWidths: js.UndefOr[Boolean] = js.undefined
   }
   object IGridOptions {
     
@@ -235,7 +233,6 @@ object saveState {
     }
   }
   
-  @js.native
   trait IGridSaveStateApi extends StObject {
     
     // Methods
@@ -244,13 +241,13 @@ object saveState {
       * @param {ng.IScope} $scope A scope we can broadcast on
       * @param {IGridSavedState} state The state that should ve restored into the grid
       */
-    def restore($scope: IScope, state: IGridSavedState): Unit = js.native
+    def restore($scope: IScope, state: IGridSavedState): Unit
     
     /**
       * Packages the current state of the grid into an object, and provides it to the user for saving
       * @returns {IGridSavedState} Current grid state as a POJO
       */
-    def save(): IGridSavedState = js.native
+    def save(): IGridSavedState
   }
   object IGridSaveStateApi {
     
@@ -271,18 +268,17 @@ object saveState {
     }
   }
   
-  @js.native
   trait IGridSavedState extends StObject {
     
-    var columns: js.UndefOr[js.Array[ISavedColumn]] = js.native
+    var columns: js.UndefOr[js.Array[ISavedColumn]] = js.undefined
     
-    var grouping: IGridGroupingConfiguration = js.native
+    var grouping: IGridGroupingConfiguration
     
-    var scrollFocus: js.UndefOr[ISavedScrollFocus] = js.native
+    var scrollFocus: js.UndefOr[ISavedScrollFocus] = js.undefined
     
-    var selection: js.Array[IRowVal] = js.native
+    var selection: js.Array[IRowVal]
     
-    var treeView: ITreeState = js.native
+    var treeView: ITreeState
   }
   object IGridSavedState {
     
@@ -324,12 +320,11 @@ object saveState {
     }
   }
   
-  @js.native
   trait IRowVal extends StObject {
     
-    var identity: Boolean = js.native
+    var identity: Boolean
     
-    var row: Double | js.Any = js.native
+    var row: Double | js.Any
   }
   object IRowVal {
     
@@ -350,20 +345,19 @@ object saveState {
     }
   }
   
-  @js.native
   trait ISavedColumn extends StObject {
     
-    var filters: js.UndefOr[js.Array[IFilterOptions]] = js.native
+    var filters: js.UndefOr[js.Array[IFilterOptions]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var pinned: js.UndefOr[String] = js.native
+    var pinned: js.UndefOr[String] = js.undefined
     
-    var sort: js.UndefOr[ISortInfo] = js.native
+    var sort: js.UndefOr[ISortInfo] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ISavedColumn {
     
@@ -414,14 +408,13 @@ object saveState {
     }
   }
   
-  @js.native
   trait ISavedScrollFocus extends StObject {
     
-    var colName: js.UndefOr[String] = js.native
+    var colName: js.UndefOr[String] = js.undefined
     
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
-    var rowVal: js.UndefOr[IRowVal] = js.native
+    var rowVal: js.UndefOr[IRowVal] = js.undefined
   }
   object ISavedScrollFocus {
     

@@ -8,7 +8,6 @@ import typings.diff2html.typesMod.OutputFormatType
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diff2htmlUiMod {
@@ -20,9 +19,9 @@ object diff2htmlUiMod {
     def this(target: HTMLElement) = this()
     def this(target: HTMLElement, diffInput: String) = this()
     def this(target: HTMLElement, diffInput: js.Array[DiffFile]) = this()
-    def this(target: HTMLElement, diffInput: js.UndefOr[scala.Nothing], config: Diff2HtmlUIConfig) = this()
     def this(target: HTMLElement, diffInput: String, config: Diff2HtmlUIConfig) = this()
     def this(target: HTMLElement, diffInput: js.Array[DiffFile], config: Diff2HtmlUIConfig) = this()
+    def this(target: HTMLElement, diffInput: Unit, config: Diff2HtmlUIConfig) = this()
   }
   
   object defaultDiff2HtmlUIConfig {

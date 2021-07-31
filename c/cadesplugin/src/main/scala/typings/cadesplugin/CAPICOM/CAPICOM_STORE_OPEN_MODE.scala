@@ -4,34 +4,27 @@ import typings.cadesplugin.cadespluginNumbers.`0`
 import typings.cadesplugin.cadespluginNumbers.`128`
 import typings.cadesplugin.cadespluginNumbers.`1`
 import typings.cadesplugin.cadespluginNumbers.`256`
-import typings.cadesplugin.cadespluginNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CAPICOM_STORE_OPEN_MODE extends StoreOpenModePlugin {
+trait CAPICOM_STORE_OPEN_MODE
+  extends StObject
+     with StoreOpenModePlugin {
   
-  val CAPICOM_STORE_OPEN_EXISTING_ONLY: `128` = js.native
+  val CAPICOM_STORE_OPEN_EXISTING_ONLY: `128`
   
-  val CAPICOM_STORE_OPEN_INCLUDE_ARCHIVED: `256` = js.native
+  val CAPICOM_STORE_OPEN_INCLUDE_ARCHIVED: `256`
   
-  val CAPICOM_STORE_OPEN_READ_ONLY: `0` = js.native
+  val CAPICOM_STORE_OPEN_READ_ONLY: `0`
   
-  val CAPICOM_STORE_OPEN_READ_WRITE: `1` = js.native
+  val CAPICOM_STORE_OPEN_READ_WRITE: `1`
 }
 object CAPICOM_STORE_OPEN_MODE {
   
   @scala.inline
-  def apply(
-    CAPICOM_STORE_OPEN_EXISTING_ONLY: `128`,
-    CAPICOM_STORE_OPEN_INCLUDE_ARCHIVED: `256`,
-    CAPICOM_STORE_OPEN_MAXIMUM_ALLOWED: `2`,
-    CAPICOM_STORE_OPEN_READ_ONLY: `0`,
-    CAPICOM_STORE_OPEN_READ_WRITE: `1`
-  ): CAPICOM_STORE_OPEN_MODE = {
-    val __obj = js.Dynamic.literal(CAPICOM_STORE_OPEN_EXISTING_ONLY = CAPICOM_STORE_OPEN_EXISTING_ONLY.asInstanceOf[js.Any], CAPICOM_STORE_OPEN_INCLUDE_ARCHIVED = CAPICOM_STORE_OPEN_INCLUDE_ARCHIVED.asInstanceOf[js.Any], CAPICOM_STORE_OPEN_MAXIMUM_ALLOWED = CAPICOM_STORE_OPEN_MAXIMUM_ALLOWED.asInstanceOf[js.Any], CAPICOM_STORE_OPEN_READ_ONLY = CAPICOM_STORE_OPEN_READ_ONLY.asInstanceOf[js.Any], CAPICOM_STORE_OPEN_READ_WRITE = CAPICOM_STORE_OPEN_READ_WRITE.asInstanceOf[js.Any])
+  def apply(): CAPICOM_STORE_OPEN_MODE = {
+    val __obj = js.Dynamic.literal(CAPICOM_STORE_OPEN_EXISTING_ONLY = 128, CAPICOM_STORE_OPEN_INCLUDE_ARCHIVED = 256, CAPICOM_STORE_OPEN_MAXIMUM_ALLOWED = 2, CAPICOM_STORE_OPEN_READ_ONLY = 0, CAPICOM_STORE_OPEN_READ_WRITE = 1)
     __obj.asInstanceOf[CAPICOM_STORE_OPEN_MODE]
   }
   

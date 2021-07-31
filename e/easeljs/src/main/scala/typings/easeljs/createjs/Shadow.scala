@@ -2,20 +2,18 @@ package typings.easeljs.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shadow extends StObject {
   
   // properties
-  var blur: Double = js.native
+  var blur: Double
   
-  var color: String = js.native
+  var color: String
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
 }
 object Shadow {
   

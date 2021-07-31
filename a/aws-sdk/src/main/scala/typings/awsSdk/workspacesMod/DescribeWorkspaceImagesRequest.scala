@@ -2,31 +2,29 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWorkspaceImagesRequest extends StObject {
   
   /**
     * The identifier of the image.
     */
-  var ImageIds: js.UndefOr[WorkspaceImageIdList] = js.native
+  var ImageIds: js.UndefOr[WorkspaceImageIdList] = js.undefined
   
   /**
     * The type (owned or shared) of the image.
     */
-  var ImageType: js.UndefOr[typings.awsSdk.workspacesMod.ImageType] = js.native
+  var ImageType: js.UndefOr[typings.awsSdk.workspacesMod.ImageType] = js.undefined
   
   /**
     * The maximum number of items to return.
     */
-  var MaxResults: js.UndefOr[Limit] = js.native
+  var MaxResults: js.UndefOr[Limit] = js.undefined
   
   /**
     * If you received a NextToken from a previous call that was paginated, provide this token to receive the next set of results.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object DescribeWorkspaceImagesRequest {
   

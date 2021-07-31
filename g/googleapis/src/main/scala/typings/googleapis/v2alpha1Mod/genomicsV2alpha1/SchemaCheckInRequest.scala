@@ -3,34 +3,32 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The parameters to the CheckIn method.
   */
-@js.native
 trait SchemaCheckInRequest extends StObject {
   
   /**
     * The deadline has expired and the worker needs more time.
     */
-  var deadlineExpired: js.UndefOr[SchemaEmpty] = js.native
+  var deadlineExpired: js.UndefOr[SchemaEmpty] = js.undefined
   
   /**
     * A workflow specific event occurred.
     */
-  var event: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var event: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The operation has finished with the given result.
     */
-  var result: js.UndefOr[SchemaStatus] = js.native
+  var result: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * Data about the status of the worker VM.
     */
-  var workerStatus: js.UndefOr[SchemaWorkerStatus] = js.native
+  var workerStatus: js.UndefOr[SchemaWorkerStatus] = js.undefined
 }
 object SchemaCheckInRequest {
   

@@ -8,7 +8,6 @@ import typings.enigmaJs.enigmaJsStrings.resumed
 import typings.enigmaJs.enigmaJsStrings.suspended
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object enigmaJS {
@@ -16,60 +15,59 @@ object enigmaJS {
   /**
     * This section describes the configuration object that is sent into enigma.create(config).
     */
-  @js.native
   trait IConfig extends StObject {
     
     /**
       * ES6-compatible Promise library.
       */
-    var Promise: js.UndefOr[js.Any] = js.native
+    var Promise: js.UndefOr[js.Any] = js.undefined
     
     /**
       * A function to use when instantiating the WebSocket, mandatory for Node.js.
       */
-    var createSocket: js.UndefOr[js.Any] = js.native
+    var createSocket: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Mixins to extend/augment the QIX Engine API.
       * See Mixins section for more information how each entry in this array should look like.
       * Mixins are applied in the array order.
       */
-    var mixins: js.UndefOr[js.Array[IMixin]] = js.native
+    var mixins: js.UndefOr[js.Array[IMixin]] = js.undefined
     
     /**
       * An object containing additional JSON-RPC request parameters.
       * protocol.delta :  Set to false to disable the use of the bandwidth-reducing delta protocol.
       */
-    var protocol: js.UndefOr[js.Any] = js.native
+    var protocol: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Interceptors for augmenting requests before they are sent to QIX Engine.
       * See Interceptors section for more information how each entry in this array should look like.
       * Interceptors are applied in the array order.
       */
-    var requestInterceptors: js.UndefOr[js.Array[IRequestInterceptors]] = js.native
+    var requestInterceptors: js.UndefOr[js.Array[IRequestInterceptors]] = js.undefined
     
     /**
       * Interceptors for augmenting responses before they are sent to QIX Engine.
       * See Interceptors section for more information how each entry in this array should look like.
       * Interceptors are applied in the array order.
       */
-    var responseInterceptors: js.UndefOr[js.Array[IResponseInterceptors]] = js.native
+    var responseInterceptors: js.UndefOr[js.Array[IResponseInterceptors]] = js.undefined
     
     /**
       * Object containing the specification for the API to generate. Corresponds to a specific version of the QIX Engine API.
       */
-    var schema: js.Object = js.native
+    var schema: js.Object
     
     /**
       * Set to true if the session should be suspended instead of closed when the websocket is closed.
       */
-    var suspendOnClose: js.UndefOr[Boolean] = js.native
+    var suspendOnClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * String containing a proper websocket URL to QIX Engine.
       */
-    var url: String = js.native
+    var url: String
   }
   object IConfig {
     
@@ -190,15 +188,14 @@ object enigmaJS {
     var `type`: String = js.native
   }
   
-  @js.native
   trait IMixin extends StObject {
     
     /**
       * mixin.extend is an object containing methods to extend the generated API with. These method names cannot already exist or enigma.js will throw an error.
       */
-    var extend: js.UndefOr[js.Any] = js.native
+    var extend: js.UndefOr[js.Any] = js.undefined
     
-    def init(args: Api): Unit = js.native
+    def init(args: Api): Unit
     
     /**
       * mixin.override is an object containing methods that overrides existing API methods.
@@ -206,14 +203,14 @@ object enigmaJS {
       * Be careful when overriding, you may break expected behaviors in other mixins or your application.
       * base is a reference to the previous mixin method, can be used to invoke the mixin chain before this mixin method.
       */
-    var `override`: js.UndefOr[js.Any] = js.native
+    var `override`: js.UndefOr[js.Any] = js.undefined
     
     /**
       * QIX Engine types like for example GenericObject, Doc, GenericBookmark, are supported but also custom GenericObject
       * types such as barchart, story and myCustomType.
       * An API will get both their generic type as well as custom type mixins applied.
       */
-    var types: js.Array[MixinType] = js.native
+    var types: js.Array[MixinType]
   }
   object IMixin {
     
@@ -249,11 +246,10 @@ object enigmaJS {
     }
   }
   
-  @js.native
   trait IProtocol extends StObject {
     
     // Set to false to disable the use of the bandwidth-reducing delta protocol.
-    var delta: js.UndefOr[Boolean] = js.native
+    var delta: js.UndefOr[Boolean] = js.undefined
   }
   object IProtocol {
     
@@ -274,7 +270,6 @@ object enigmaJS {
     }
   }
   
-  @js.native
   trait IRequestInterceptors extends StObject {
     
     /**
@@ -284,8 +279,8 @@ object enigmaJS {
       * @returns request the new request
       */
     var onFulfilled: js.UndefOr[
-        js.Function3[/* session */ ISession, /* request */ js.Any, /* result */ js.Any, _]
-      ] = js.native
+        js.Function3[/* session */ ISession, /* request */ js.Any, /* result */ js.Any, js.Any]
+      ] = js.undefined
   }
   object IRequestInterceptors {
     
@@ -299,14 +294,13 @@ object enigmaJS {
     implicit class IRequestInterceptorsMutableBuilder[Self <: IRequestInterceptors] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnFulfilled(value: (/* session */ ISession, /* request */ js.Any, /* result */ js.Any) => _): Self = StObject.set(x, "onFulfilled", js.Any.fromFunction3(value))
+      def setOnFulfilled(value: (/* session */ ISession, /* request */ js.Any, /* result */ js.Any) => js.Any): Self = StObject.set(x, "onFulfilled", js.Any.fromFunction3(value))
       
       @scala.inline
       def setOnFulfilledUndefined: Self = StObject.set(x, "onFulfilled", js.undefined)
     }
   }
   
-  @js.native
   trait IResponseInterceptors extends StObject {
     
     /**
@@ -316,8 +310,8 @@ object enigmaJS {
       * @param error is whatever the previous interceptor resolved with.
       */
     var onFulfilled: js.UndefOr[
-        js.Function3[/* session */ ISession, /* request */ js.Any, /* result */ js.Any, js.Promise[_]]
-      ] = js.native
+        js.Function3[/* session */ ISession, /* request */ js.Any, /* result */ js.Any, js.Promise[js.Any]]
+      ] = js.undefined
     
     /**
       * This method is invoked when a previous interceptor has rejected the promise, use this to handle for example errors before they are sent into mixins.
@@ -326,8 +320,8 @@ object enigmaJS {
       * @param error is whatever the previous interceptor rejected with.
       */
     var onRejected: js.UndefOr[
-        js.Function3[/* session */ ISession, /* request */ js.Any, /* error */ js.Any, js.Promise[_]]
-      ] = js.native
+        js.Function3[/* session */ ISession, /* request */ js.Any, /* error */ js.Any, js.Promise[js.Any]]
+      ] = js.undefined
   }
   object IResponseInterceptors {
     
@@ -341,13 +335,13 @@ object enigmaJS {
     implicit class IResponseInterceptorsMutableBuilder[Self <: IResponseInterceptors] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnFulfilled(value: (/* session */ ISession, /* request */ js.Any, /* result */ js.Any) => js.Promise[_]): Self = StObject.set(x, "onFulfilled", js.Any.fromFunction3(value))
+      def setOnFulfilled(value: (/* session */ ISession, /* request */ js.Any, /* result */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "onFulfilled", js.Any.fromFunction3(value))
       
       @scala.inline
       def setOnFulfilledUndefined: Self = StObject.set(x, "onFulfilled", js.undefined)
       
       @scala.inline
-      def setOnRejected(value: (/* session */ ISession, /* request */ js.Any, /* error */ js.Any) => js.Promise[_]): Self = StObject.set(x, "onRejected", js.Any.fromFunction3(value))
+      def setOnRejected(value: (/* session */ ISession, /* request */ js.Any, /* error */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "onRejected", js.Any.fromFunction3(value))
       
       @scala.inline
       def setOnRejectedUndefined: Self = StObject.set(x, "onRejected", js.undefined)
@@ -364,7 +358,7 @@ object enigmaJS {
       * Note: you need to manually invoke this when you want to close a session and config.suspendOnClose is true.
       * @return Promise.
       */
-    def close(): js.Promise[_] = js.native
+    def close(): js.Promise[js.Any] = js.native
     
     def on(event: String, func: js.Any): Unit = js.native
     @JSName("on")
@@ -409,14 +403,14 @@ object enigmaJS {
       * Note: Eventually resolved when the websocket (and potentially the previously opened document, and generated APIs) has been restored,
       * rejected when it fails any of those steps, or when onlyIfAttached is true and a new QIX Engine session was created.
       */
-    def resume(): js.Promise[_] = js.native
-    def resume(onlyIfAttached: Boolean): js.Promise[_] = js.native
+    def resume(): js.Promise[js.Any] = js.native
+    def resume(onlyIfAttached: Boolean): js.Promise[js.Any] = js.native
     
     /**
       * Suspends the enigma.js session by closing the websocket and rejecting all method calls until it has been resumed again.
       * @return Promise.
       */
-    def suspend(): js.Promise[_] = js.native
+    def suspend(): js.Promise[js.Any] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

@@ -2,15 +2,13 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorValue extends StObject {
   
-  var color: js.UndefOr[String | Dark] = js.native
+  var color: js.UndefOr[String | Dark] = js.undefined
   
-  var value: Double = js.native
+  var value: Double
 }
 object ColorValue {
   

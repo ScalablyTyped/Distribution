@@ -10,9 +10,9 @@ The Expo SDK
 | ------------------ | :-------------: |
 | Full name          | expo |
 | Keywords           | expo |
-| # releases         | 118 |
-| # dependents       | 206 |
-| # downloads        | 2737193 |
+| # releases         | 88 |
+| # dependents       | 345 |
+| # downloads        | 5070676 |
 | # stars            | 8 |
 
 ## Links

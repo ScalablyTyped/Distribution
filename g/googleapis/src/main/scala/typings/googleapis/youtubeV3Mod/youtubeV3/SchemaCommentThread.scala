@@ -2,7 +2,6 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,36 +9,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and all its replies. It can also include the top level comment itself and
   * some of the replies.
   */
-@js.native
 trait SchemaCommentThread extends StObject {
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the comment thread.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#commentThread&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The replies object contains a limited number of replies (if any) to the
     * top level comment found in the snippet.
     */
-  var replies: js.UndefOr[SchemaCommentThreadReplies] = js.native
+  var replies: js.UndefOr[SchemaCommentThreadReplies] = js.undefined
   
   /**
     * The snippet object contains basic details about the comment thread and
     * also the top level comment.
     */
-  var snippet: js.UndefOr[SchemaCommentThreadSnippet] = js.native
+  var snippet: js.UndefOr[SchemaCommentThreadSnippet] = js.undefined
 }
 object SchemaCommentThread {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCreateAccountStatusResponse extends StObject {
   
   /**
     * A structure that contains the current status of an account creation request.
     */
-  var CreateAccountStatus: js.UndefOr[typings.awsSdk.organizationsMod.CreateAccountStatus] = js.native
+  var CreateAccountStatus: js.UndefOr[typings.awsSdk.organizationsMod.CreateAccountStatus] = js.undefined
 }
 object DescribeCreateAccountStatusResponse {
   

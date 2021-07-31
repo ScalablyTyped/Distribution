@@ -3,37 +3,35 @@ package typings.reactBootstrapTable.mod
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpandColumnOptions extends StObject {
   
   /**
     * set the width of indicator column.
     */
-  var columnWidth: js.UndefOr[Double | String] = js.native
+  var columnWidth: js.UndefOr[Double | String] = js.undefined
   
   /**
     * If both an indicator column and a selection column are displaying, this specifies whether the indicator column
     * should be shown first. Default is true, false will move the expand indicator column after selection column.
     */
-  var expandColumnBeforeSelectColumn: js.UndefOr[Boolean] = js.native
+  var expandColumnBeforeSelectColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
     * a callback function to customize the appearance of the indicator column.
     */
-  var expandColumnComponent: js.UndefOr[js.Function1[/* props */ ExpandColumnComponentProps, String | ReactElement]] = js.native
+  var expandColumnComponent: js.UndefOr[js.Function1[/* props */ ExpandColumnComponentProps, String | ReactElement]] = js.undefined
   
   /**
     * Will enable an indicator column at first column if true. Default is false.
     */
-  var expandColumnVisible: js.UndefOr[Boolean] = js.native
+  var expandColumnVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * a callback function to customise the header column
     */
-  var expandedColumnHeaderComponent: js.UndefOr[js.Function1[/* props */ ExpandedColumnHeaderProps, String | ReactElement]] = js.native
+  var expandedColumnHeaderComponent: js.UndefOr[js.Function1[/* props */ ExpandedColumnHeaderProps, String | ReactElement]] = js.undefined
 }
 object ExpandColumnOptions {
   

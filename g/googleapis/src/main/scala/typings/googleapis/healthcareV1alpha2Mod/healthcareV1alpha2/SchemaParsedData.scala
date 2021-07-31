@@ -2,16 +2,14 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The content of a HL7v2 message in a structured format.
   */
-@js.native
 trait SchemaParsedData extends StObject {
   
-  var segments: js.UndefOr[js.Array[SchemaSegment]] = js.native
+  var segments: js.UndefOr[js.Array[SchemaSegment]] = js.undefined
 }
 object SchemaParsedData {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,21 +19,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see NoSuchFilterRequest
   * @see com.sun.star.task.XInteractionAbort
   */
-@js.native
-trait XInteractionFilterSelect extends XInteractionContinuation {
+trait XInteractionFilterSelect
+  extends StObject
+     with XInteractionContinuation {
   
   /** used by detection to get selected filter */
-  var Filter: String = js.native
+  var Filter: String
   
   /** used by detection to get selected filter */
-  def getFilter(): String = js.native
+  def getFilter(): String
   
   /**
     * used by interaction to set selected filter
     *
     * This value must be saved till another one will be set and must be provided on {@link getFilter()} for interest users.
     */
-  def setFilter(Name: String): Unit = js.native
+  def setFilter(Name: String): Unit
 }
 object XInteractionFilterSelect {
   

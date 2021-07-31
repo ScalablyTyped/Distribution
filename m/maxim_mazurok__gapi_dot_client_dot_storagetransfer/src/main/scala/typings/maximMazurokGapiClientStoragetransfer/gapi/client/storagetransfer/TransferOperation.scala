@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransferOperation extends StObject {
   
   /** Information about the progress of the transfer operation. */
-  var counters: js.UndefOr[TransferCounters] = js.native
+  var counters: js.UndefOr[TransferCounters] = js.undefined
   
   /** End time of this transfer execution. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Summarizes errors encountered with sample error log entries. */
-  var errorBreakdowns: js.UndefOr[js.Array[ErrorSummary]] = js.native
+  var errorBreakdowns: js.UndefOr[js.Array[ErrorSummary]] = js.undefined
   
   /** A globally unique ID assigned by the system. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Notification configuration. */
-  var notificationConfig: js.UndefOr[NotificationConfig] = js.native
+  var notificationConfig: js.UndefOr[NotificationConfig] = js.undefined
   
   /** The ID of the Google Cloud Platform Project that owns the operation. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Start time of this transfer execution. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Status of the transfer operation. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** The name of the transfer job that triggers this transfer operation. */
-  var transferJobName: js.UndefOr[String] = js.native
+  var transferJobName: js.UndefOr[String] = js.undefined
   
   /** Transfer specification. */
-  var transferSpec: js.UndefOr[TransferSpec] = js.native
+  var transferSpec: js.UndefOr[TransferSpec] = js.undefined
 }
 object TransferOperation {
   

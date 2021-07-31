@@ -2,39 +2,37 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderLegacyPromotionBenefit extends StObject {
   
   /**
     * The discount in the order price when the promotion is applied.
     */
-  var discount: js.UndefOr[SchemaPrice] = js.native
+  var discount: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The OfferId(s) that were purchased in this order and map to this specific
     * benefit of the promotion.
     */
-  var offerIds: js.UndefOr[js.Array[String]] = js.native
+  var offerIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Further describes the benefit of the promotion. Note that we will expand
     * on this enumeration as we support new promotion sub-types.
     */
-  var subType: js.UndefOr[String] = js.native
+  var subType: js.UndefOr[String] = js.undefined
   
   /**
     * The impact on tax when the promotion is applied.
     */
-  var taxImpact: js.UndefOr[SchemaPrice] = js.native
+  var taxImpact: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Describes whether the promotion applies to products (e.g. 20% off) or to
     * shipping (e.g. Free Shipping).
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaOrderLegacyPromotionBenefit {
   

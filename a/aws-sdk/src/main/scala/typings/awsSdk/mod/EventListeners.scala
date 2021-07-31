@@ -2,35 +2,32 @@ package typings.awsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object EventListeners {
   
   object Core {
     
-    @JSImport("aws-sdk", "EventListeners.Core.HTTP_DATA")
+    @JSImport("aws-sdk", "EventListeners.Core")
     @js.native
-    def HTTP_DATA(): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("aws-sdk", "EventListeners.Core.SEND")
-    @js.native
-    def SEND(): Unit = js.native
+    @scala.inline
+    def HTTP_DATA(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HTTP_DATA")().asInstanceOf[Unit]
     
-    @JSImport("aws-sdk", "EventListeners.Core.VALIDATE_CREDENTIALS")
-    @js.native
-    def VALIDATE_CREDENTIALS(): Unit = js.native
+    @scala.inline
+    def SEND(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SEND")().asInstanceOf[Unit]
     
-    @JSImport("aws-sdk", "EventListeners.Core.VALIDATE_PARAMETERS")
-    @js.native
-    def VALIDATE_PARAMETERS(): Unit = js.native
+    @scala.inline
+    def VALIDATE_CREDENTIALS(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("VALIDATE_CREDENTIALS")().asInstanceOf[Unit]
     
-    @JSImport("aws-sdk", "EventListeners.Core.VALIDATE_REGION")
-    @js.native
-    def VALIDATE_REGION(): Unit = js.native
+    @scala.inline
+    def VALIDATE_PARAMETERS(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("VALIDATE_PARAMETERS")().asInstanceOf[Unit]
     
-    @JSImport("aws-sdk", "EventListeners.Core.removeListener")
-    @js.native
-    def removeListener(eventName: String, eventListener: js.Function): Unit = js.native
+    @scala.inline
+    def VALIDATE_REGION(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("VALIDATE_REGION")().asInstanceOf[Unit]
+    
+    @scala.inline
+    def removeListener(eventName: String, eventListener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchListObjectChildrenResponse extends StObject {
   
   /**
     * The children structure, which is a map with the key as the LinkName and ObjectIdentifier as the value.
     */
-  var Children: js.UndefOr[LinkNameToObjectIdentifierMap] = js.native
+  var Children: js.UndefOr[LinkNameToObjectIdentifierMap] = js.undefined
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
 }
 object BatchListObjectChildrenResponse {
   

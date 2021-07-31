@@ -2,7 +2,6 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (cross_series_reducer and group_by_fields). For more details, see
   * Aggregation.
   */
-@js.native
 trait SchemaAggregation extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait SchemaAggregation extends StObject {
     * equal ALIGN_NONE, then this field must be defined; otherwise an error is
     * returned.
     */
-  var alignmentPeriod: js.UndefOr[String] = js.native
+  var alignmentPeriod: js.UndefOr[String] = js.undefined
   
   /**
     * The approach to be used to combine time series. Not all reducer functions
@@ -37,7 +35,7 @@ trait SchemaAggregation extends StObject {
     * ALIGN_NONE and alignmentPeriod must be specified; otherwise, an error is
     * returned.
     */
-  var crossSeriesReducer: js.UndefOr[String] = js.native
+  var crossSeriesReducer: js.UndefOr[String] = js.undefined
   
   /**
     * The set of fields to preserve when crossSeriesReducer is specified. The
@@ -53,7 +51,7 @@ trait SchemaAggregation extends StObject {
     * into a single output time series. If crossSeriesReducer is not defined,
     * this field is ignored.
     */
-  var groupByFields: js.UndefOr[js.Array[String]] = js.native
+  var groupByFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The approach to be used to align individual time series. Not all
@@ -65,7 +63,7 @@ trait SchemaAggregation extends StObject {
     * and not equal ALIGN_NONE and alignmentPeriod must be specified;
     * otherwise, an error is returned.
     */
-  var perSeriesAligner: js.UndefOr[String] = js.native
+  var perSeriesAligner: js.UndefOr[String] = js.undefined
 }
 object SchemaAggregation {
   

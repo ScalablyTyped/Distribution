@@ -2,15 +2,13 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorDetails extends StObject {
   
-  val field: String = js.native
+  val field: String
   
-  val issue: String = js.native
+  val issue: String
 }
 object ErrorDetails {
   

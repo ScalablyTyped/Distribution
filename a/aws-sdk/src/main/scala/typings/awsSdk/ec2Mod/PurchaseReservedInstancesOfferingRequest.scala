@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchaseReservedInstancesOfferingRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of Reserved Instances to purchase.
     */
-  var InstanceCount: Integer = js.native
+  var InstanceCount: Integer
   
   /**
     * Specified for Reserved Instance Marketplace offerings to limit the total order and ensure that the Reserved Instances are not purchased at unexpected prices.
     */
-  var LimitPrice: js.UndefOr[ReservedInstanceLimitPrice] = js.native
+  var LimitPrice: js.UndefOr[ReservedInstanceLimitPrice] = js.undefined
   
   /**
     * The time at which to purchase the Reserved Instance, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var PurchaseTime: js.UndefOr[DateTime] = js.native
+  var PurchaseTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The ID of the Reserved Instance offering to purchase.
     */
-  var ReservedInstancesOfferingId: typings.awsSdk.ec2Mod.ReservedInstancesOfferingId = js.native
+  var ReservedInstancesOfferingId: typings.awsSdk.ec2Mod.ReservedInstancesOfferingId
 }
 object PurchaseReservedInstancesOfferingRequest {
   

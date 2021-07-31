@@ -2,19 +2,17 @@ package typings.jsmediatags.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagFrameHeader extends StObject {
   
-  var flags: js.UndefOr[TagFrameFlags] = js.native
+  var flags: js.UndefOr[TagFrameFlags] = js.undefined
   
-  var headerSize: Double = js.native
+  var headerSize: Double
   
-  var id: String = js.native
+  var id: String
   
-  var size: Double = js.native
+  var size: Double
 }
 object TagFrameHeader {
   

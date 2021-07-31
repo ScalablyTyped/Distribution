@@ -12,7 +12,7 @@ Adapters for fetching oEmbed data for the OEmbed field type
 | Keywords           | - |
 | # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 4329 |
+| # downloads        | 4232 |
 | # stars            | 0 |
 
 ## Links

@@ -4,18 +4,16 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Media.Devices.Core.FrameController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the results of a High Dynamic Range (HDR) analysis operation from the SceneAnalysisEffect . */
-@js.native
 trait HighDynamicRangeOutput extends StObject {
   
   /** Gets a value indicating the certainty of the results of the HDR analysis. */
-  var certainty: Double = js.native
+  var certainty: Double
   
   /** Gets a set of FrameController objects representing the suggested frame controllers settings for capturing a variable photo sequence with the High Dynamic Range (HDR) technique. */
-  var frameControllers: IVectorView[FrameController] = js.native
+  var frameControllers: IVectorView[FrameController]
 }
 object HighDynamicRangeOutput {
   

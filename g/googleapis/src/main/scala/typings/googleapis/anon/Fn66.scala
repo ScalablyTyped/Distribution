@@ -5,7 +5,6 @@ import typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1.Optio
 import typings.googleapis.googleapisStrings.v1alpha1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

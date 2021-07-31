@@ -4,19 +4,19 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides a method to apply TableAutoFormats to a cell range. */
-@js.native
-trait XAutoFormattable extends XInterface {
+trait XAutoFormattable
+  extends StObject
+     with XInterface {
   
   /**
     * applies an AutoFormat to the cell range of the current context.
     * @param aName is the name of the AutoFormat to apply.
     * @throws com::sun::star::lang::IllegalArgumentException if the specified AutoFormat does not exist.
     */
-  def autoFormat(aName: String): Unit = js.native
+  def autoFormat(aName: String): Unit
 }
 object XAutoFormattable {
   

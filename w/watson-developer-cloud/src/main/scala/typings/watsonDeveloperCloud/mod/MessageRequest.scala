@@ -2,33 +2,31 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A request sent to the workspace, including the user input and context. */
-@js.native
 trait MessageRequest extends StObject {
   
   /** An array of objects describing any actions requested by the dialog node. */
-  var actions: js.UndefOr[js.Array[DialogNodeAction]] = js.native
+  var actions: js.UndefOr[js.Array[DialogNodeAction]] = js.undefined
   
   /** Whether to return more than one intent. A value of `true` indicates that all matching intents are returned. */
-  var alternate_intents: js.UndefOr[Boolean] = js.native
+  var alternate_intents: js.UndefOr[Boolean] = js.undefined
   
   /** State information for the conversation. To maintain state, include the context from the previous response. */
-  var context: js.UndefOr[Context] = js.native
+  var context: js.UndefOr[Context] = js.undefined
   
   /** Entities to use when evaluating the message. Include entities from the previous response to continue using those entities rather than detecting entities in the new input. */
-  var entities: js.UndefOr[js.Array[RuntimeEntity]] = js.native
+  var entities: js.UndefOr[js.Array[RuntimeEntity]] = js.undefined
   
   /** An input object that includes the input text. */
-  var input: js.UndefOr[MessageInput] = js.native
+  var input: js.UndefOr[MessageInput] = js.undefined
   
   /** Intents to use when evaluating the user input. Include intents from the previous response to continue using those intents rather than trying to recognize intents in the new input. */
-  var intents: js.UndefOr[js.Array[RuntimeIntent]] = js.native
+  var intents: js.UndefOr[js.Array[RuntimeIntent]] = js.undefined
   
   /** An output object that includes the response to the user, the dialog nodes that were triggered, and messages from the log. */
-  var output: js.UndefOr[OutputData] = js.native
+  var output: js.UndefOr[OutputData] = js.undefined
 }
 object MessageRequest {
   

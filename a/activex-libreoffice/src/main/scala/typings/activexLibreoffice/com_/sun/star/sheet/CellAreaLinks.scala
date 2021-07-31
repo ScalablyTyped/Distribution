@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.CellAreaLink
   * @see com.sun.star.sheet.SpreadsheetDocument
   */
-@js.native
 trait CellAreaLinks
-  extends XAreaLinks
+  extends StObject
+     with XAreaLinks
      with XEnumerationAccess
 object CellAreaLinks {
   

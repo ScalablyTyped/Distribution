@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookChartSeries extends Entity {
+trait WorkbookChartSeries
+  extends StObject
+     with Entity {
   
   // Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
-  var format: js.UndefOr[NullableOption[WorkbookChartSeriesFormat]] = js.native
+  var format: js.UndefOr[NullableOption[WorkbookChartSeriesFormat]] = js.undefined
   
   // Represents the name of a series in a chart.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Represents a collection of all points in the series. Read-only.
-  var points: js.UndefOr[NullableOption[js.Array[WorkbookChartPoint]]] = js.native
+  var points: js.UndefOr[NullableOption[js.Array[WorkbookChartPoint]]] = js.undefined
 }
 object WorkbookChartSeries {
   

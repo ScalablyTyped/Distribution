@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionTrigger extends StObject {
   
   /**
     * Detail related to the event that started a pipeline execution, such as the webhook ARN of the webhook that triggered the pipeline execution or the user ARN for a user-initiated start-pipeline-execution CLI command.
     */
-  var triggerDetail: js.UndefOr[TriggerDetail] = js.native
+  var triggerDetail: js.UndefOr[TriggerDetail] = js.undefined
   
   /**
     * The type of change-detection method, command, or user interaction that started a pipeline execution.
     */
-  var triggerType: js.UndefOr[TriggerType] = js.native
+  var triggerType: js.UndefOr[TriggerType] = js.undefined
 }
 object ExecutionTrigger {
   

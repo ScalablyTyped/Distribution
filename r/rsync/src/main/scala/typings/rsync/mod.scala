@@ -7,7 +7,6 @@ import typings.node.childProcessMod.ChildProcess
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,19 +14,20 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rsync", JSImport.Namespace)
   @js.native
-  class ^ () extends Rsync
+  class ^ ()
+    extends StObject
+       with Rsync
   @JSImport("rsync", JSImport.Namespace)
   @js.native
   val ^ : RsyncStatic = js.native
   
   type Flag = StringDictionary[Boolean]
   
-  @js.native
   trait Pattern extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var pattern: String = js.native
+    var pattern: String
   }
   object Pattern {
     
@@ -134,7 +134,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait RsyncStatic extends Instantiable0[Rsync]
+  trait RsyncStatic
+    extends StObject
+       with Instantiable0[Rsync]
   
   type StreamDataHandler = js.Function1[/* data */ js.Any, Unit]
   

@@ -20,7 +20,6 @@ import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectsMod {
@@ -68,6 +67,14 @@ object projectsMod {
       @JSName("name")
       val name_FDocument: String = js.native
       
+      /**
+        * Returns the qualified name of this element, or
+        * null if this element is not a part of the model,
+        * or if it or one of its namespace containers does not have a
+        * valid name.
+        */
+      /* CompleteClass */
+      override val qualifiedName: String | Null = js.native
       @JSName("qualifiedName")
       def qualifiedName_MDocument: String | Null = js.native
     }
@@ -131,9 +138,8 @@ object projectsMod {
         * Expects one argument, the IFolderBase in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Folder.createIn")
-      @js.native
-      def createIn(container: IFolderBase): Folder = js.native
+      @scala.inline
+      def createIn(container: IFolderBase): Folder = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Folder]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Folder.structureTypeName")
@@ -325,9 +331,8 @@ object projectsMod {
         * Expects one argument, the IProject in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Module.createIn")
-      @js.native
-      def createIn(container: IProject): Module = js.native
+      @scala.inline
+      def createIn(container: IProject): Module = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Module]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Module.structureTypeName")
@@ -426,9 +431,8 @@ object projectsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/projects", "projects.OneTimeConversionMarker.create")
-      @js.native
-      def create(model: IModel): OneTimeConversionMarker = js.native
+      @scala.inline
+      def create(model: IModel): OneTimeConversionMarker = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[OneTimeConversionMarker]
       
       /**
         * Creates and returns a new OneTimeConversionMarker instance in the SDK and on the server.
@@ -436,9 +440,8 @@ object projectsMod {
         * of the parent ProjectConversion element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/projects", "projects.OneTimeConversionMarker.createIn")
-      @js.native
-      def createIn(container: ProjectConversion): OneTimeConversionMarker = js.native
+      @scala.inline
+      def createIn(container: ProjectConversion): OneTimeConversionMarker = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[OneTimeConversionMarker]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.OneTimeConversionMarker.structureTypeName")
@@ -550,9 +553,8 @@ object projectsMod {
         * Expects one argument, the IProject in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/projects", "projects.ProjectConversion.createIn")
-      @js.native
-      def createIn(container: IProject): ProjectConversion = js.native
+      @scala.inline
+      def createIn(container: IProject): ProjectConversion = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ProjectConversion]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.ProjectConversion.structureTypeName")
@@ -616,7 +618,8 @@ object projectsMod {
     
     @js.native
     trait IDocument
-      extends IModuleDocument
+      extends StObject
+         with IModuleDocument
          with IByNameReferrable {
       
       val name: String = js.native
@@ -625,16 +628,17 @@ object projectsMod {
     /**
       * See: {@link https://docs.mendix.com/refguide/resources relevant section in reference guide}
       */
-    @js.native
-    trait IFolder extends IFolderBase {
+    trait IFolder
+      extends StObject
+         with IFolderBase {
       
-      var name: String = js.native
+      var name: String
     }
     object IFolder {
       
       @scala.inline
       def apply(
-        allProperties: () => js.Array[AbstractProperty[_, _]],
+        allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         container: IStructuralUnit,
         containerAsFolderBase: IFolderBase,
         containerAsProject: IProject,
@@ -645,10 +649,10 @@ object projectsMod {
         isLoadable: Boolean,
         isLoaded: Boolean,
         isReadOnly: Boolean,
-        loadedProperties: () => js.Array[AbstractProperty[_, _]],
+        loadedProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         model: IModel,
         name: String,
-        publicProperties: () => js.Array[AbstractProperty[_, _]],
+        publicProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         structureTypeName: String,
         toJSON: () => js.Object,
         traverse: js.Function1[IFolder, Unit] => Unit,
@@ -668,25 +672,26 @@ object projectsMod {
       }
     }
     
-    @js.native
-    trait IFolderBase extends IStructuralUnit {
+    trait IFolderBase
+      extends StObject
+         with IStructuralUnit {
       
-      val containerAsFolderBase: IFolderBase = js.native
+      val containerAsFolderBase: IFolderBase
       
-      val containerAsProject: IProject = js.native
+      val containerAsProject: IProject
       
-      var documents: IList[IDocument] = js.native
+      var documents: IList[IDocument]
       
-      var folders: IList[IFolder] = js.native
+      var folders: IList[IFolder]
       
       @JSName("model")
-      val model_IFolderBase: IModel = js.native
+      val model_IFolderBase: IModel
     }
     object IFolderBase {
       
       @scala.inline
       def apply(
-        allProperties: () => js.Array[AbstractProperty[_, _]],
+        allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         container: IStructuralUnit,
         containerAsFolderBase: IFolderBase,
         containerAsProject: IProject,
@@ -697,9 +702,9 @@ object projectsMod {
         isLoadable: Boolean,
         isLoaded: Boolean,
         isReadOnly: Boolean,
-        loadedProperties: () => js.Array[AbstractProperty[_, _]],
+        loadedProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         model: IModel,
-        publicProperties: () => js.Array[AbstractProperty[_, _]],
+        publicProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         structureTypeName: String,
         toJSON: () => js.Object,
         traverse: js.Function1[IFolderBase, Unit] => Unit,
@@ -734,38 +739,39 @@ object projectsMod {
     /**
       * See: {@link https://docs.mendix.com/refguide/modules relevant section in reference guide}
       */
-    @js.native
-    trait IModule extends IFolderBase {
+    trait IModule
+      extends StObject
+         with IFolderBase {
       
-      var appStoreGuid: String = js.native
+      var appStoreGuid: String
       
       /**
         * In version 8.13.0: introduced
         */
-      var appStorePackageId: Double = js.native
+      var appStorePackageId: Double
       
-      var appStoreVersion: String = js.native
+      var appStoreVersion: String
       
-      var appStoreVersionGuid: String = js.native
+      var appStoreVersionGuid: String
       
       /**
         * This property is required and cannot be set to null.
         */
-      var domainModel: IDomainModel = js.native
+      var domainModel: IDomainModel
       
-      var fromAppStore: Boolean = js.native
+      var fromAppStore: Boolean
       
       /**
         * In version 8.5.0: introduced
         */
-      var isReusableComponent: Boolean = js.native
+      var isReusableComponent: Boolean
       
       /**
         * This property is required and cannot be set to null.
         */
-      var moduleSecurity: IModuleSecurity = js.native
+      var moduleSecurity: IModuleSecurity
       
-      var name: String = js.native
+      var name: String
       
       /**
         * The index of where this Module appears in the project.
@@ -773,13 +779,13 @@ object projectsMod {
         * Also, its value needs to be unique among its siblings (meaning, in code: <tt>containerAsProject.modules</tt>) in the project.
         * In other words: <tt>containerAsProject.modules.map(m => m.sortedIndex)</tt> (TS syntax) needs to be a list with unique values.
         */
-      var sortIndex: Double = js.native
+      var sortIndex: Double
     }
     object IModule {
       
       @scala.inline
       def apply(
-        allProperties: () => js.Array[AbstractProperty[_, _]],
+        allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         appStoreGuid: String,
         appStorePackageId: Double,
         appStoreVersion: String,
@@ -797,11 +803,11 @@ object projectsMod {
         isLoaded: Boolean,
         isReadOnly: Boolean,
         isReusableComponent: Boolean,
-        loadedProperties: () => js.Array[AbstractProperty[_, _]],
+        loadedProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         model: IModel,
         moduleSecurity: IModuleSecurity,
         name: String,
-        publicProperties: () => js.Array[AbstractProperty[_, _]],
+        publicProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         sortIndex: Double,
         structureTypeName: String,
         toJSON: () => js.Object,
@@ -853,7 +859,9 @@ object projectsMod {
       * Interfaces and instance classes for types from the Mendix sub meta model `Projects`.
       */
     @js.native
-    trait IModuleDocument extends IModelUnit {
+    trait IModuleDocument
+      extends StObject
+         with IModelUnit {
       
       val containerAsFolderBase: IFolderBase = js.native
       
@@ -866,28 +874,29 @@ object projectsMod {
     /**
       * See: {@link https://docs.mendix.com/refguide/project relevant section in reference guide}
       */
-    @js.native
-    trait IProject extends IStructuralUnit {
+    trait IProject
+      extends StObject
+         with IStructuralUnit {
       
-      var isSystemProject: Boolean = js.native
+      var isSystemProject: Boolean
       
       @JSName("model")
-      val model_IProject: IModel = js.native
+      val model_IProject: IModel
       
-      var modules: IList[IModule] = js.native
+      var modules: IList[IModule]
       
       /**
         * This property is required and cannot be set to null.
         */
-      var projectConversion: IProjectConversion = js.native
+      var projectConversion: IProjectConversion
       
-      var projectDocuments: IList[IProjectDocument] = js.native
+      var projectDocuments: IList[IProjectDocument]
     }
     object IProject {
       
       @scala.inline
       def apply(
-        allProperties: () => js.Array[AbstractProperty[_, _]],
+        allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         container: IStructuralUnit,
         delete: () => Unit,
         id: String,
@@ -895,12 +904,12 @@ object projectsMod {
         isLoaded: Boolean,
         isReadOnly: Boolean,
         isSystemProject: Boolean,
-        loadedProperties: () => js.Array[AbstractProperty[_, _]],
+        loadedProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         model: IModel,
         modules: IList[IModule],
         projectConversion: IProjectConversion,
         projectDocuments: IList[IProjectDocument],
-        publicProperties: () => js.Array[AbstractProperty[_, _]],
+        publicProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         structureTypeName: String,
         toJSON: () => js.Object,
         traverse: js.Function1[IProject, Unit] => Unit,
@@ -933,7 +942,9 @@ object projectsMod {
     }
     
     @js.native
-    trait IProjectConversion extends IModelUnit {
+    trait IProjectConversion
+      extends StObject
+         with IModelUnit {
       
       val containerAsProject: IProject = js.native
       
@@ -945,7 +956,9 @@ object projectsMod {
       * See: {@link https://docs.mendix.com/refguide/project relevant section in reference guide}
       */
     @js.native
-    trait IProjectDocument extends IModelUnit {
+    trait IProjectDocument
+      extends StObject
+         with IModelUnit {
       
       val containerAsProject: IProject = js.native
       

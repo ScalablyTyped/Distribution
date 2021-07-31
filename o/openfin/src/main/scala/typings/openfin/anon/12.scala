@@ -3,15 +3,13 @@ package typings.openfin.anon
 import typings.openfin.windowOptionMod.Accelerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `12` extends StObject {
   
-  var newVal: js.UndefOr[Accelerator] = js.native
+  var newVal: js.UndefOr[Accelerator] = js.undefined
   
-  var oldVal: js.UndefOr[Accelerator] = js.native
+  var oldVal: js.UndefOr[Accelerator] = js.undefined
 }
 object `12` {
   

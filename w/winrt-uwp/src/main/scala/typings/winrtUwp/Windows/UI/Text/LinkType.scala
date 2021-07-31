@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,37 +13,55 @@ object LinkType extends StObject {
   
   /** A URI that is automatically recognized. */
   @js.native
-  sealed trait autoLink extends LinkType
+  sealed trait autoLink
+    extends StObject
+       with LinkType
   
   /** An email address that is automatically recognized. */
   @js.native
-  sealed trait autoLinkEmail extends LinkType
+  sealed trait autoLinkEmail
+    extends StObject
+       with LinkType
   
   /** A file name, including the full path, that is automatically recognized. */
   @js.native
-  sealed trait autoLinkPath extends LinkType
+  sealed trait autoLinkPath
+    extends StObject
+       with LinkType
   
   /** A phone number that is automatically recognized. */
   @js.native
-  sealed trait autoLinkPhone extends LinkType
+  sealed trait autoLinkPhone
+    extends StObject
+       with LinkType
   
   /** A link specified by the client; that is, not an autolink or a friendly-name link. */
   @js.native
-  sealed trait clientLink extends LinkType
+  sealed trait clientLink
+    extends StObject
+       with LinkType
   
   /** The address URI part of friendly-name link. The address it the part that is sent when the user clicks the name. */
   @js.native
-  sealed trait friendlyLinkAddress extends LinkType
+  sealed trait friendlyLinkAddress
+    extends StObject
+       with LinkType
   
   /** The name part of a friendly-name link. The name is the part that is displayed. */
   @js.native
-  sealed trait friendlyLinkName extends LinkType
+  sealed trait friendlyLinkName
+    extends StObject
+       with LinkType
   
   /** Not a link. */
   @js.native
-  sealed trait notALink extends LinkType
+  sealed trait notALink
+    extends StObject
+       with LinkType
   
   /** A mix of link and nonlink attributes. */
   @js.native
-  sealed trait undefined extends LinkType
+  sealed trait undefined
+    extends StObject
+       with LinkType
 }

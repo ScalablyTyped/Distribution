@@ -2,27 +2,25 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A TextElement describes the content of a range of indices in the text
   * content of a Shape or TableCell.
   */
-@js.native
 trait SchemaTextElement extends StObject {
   
   /**
     * A TextElement representing a spot in the text that is dynamically
     * replaced with content that can change over time.
     */
-  var autoText: js.UndefOr[SchemaAutoText] = js.native
+  var autoText: js.UndefOr[SchemaAutoText] = js.undefined
   
   /**
     * The zero-based end index of this text element, exclusive, in Unicode code
     * units.
     */
-  var endIndex: js.UndefOr[Double] = js.native
+  var endIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * A marker representing the beginning of a new paragraph.  The
@@ -31,12 +29,12 @@ trait SchemaTextElement extends StObject {
     * this paragraph&#39;s range are considered to be part of this paragraph.
     * The range of indices of two separate paragraphs will never overlap.
     */
-  var paragraphMarker: js.UndefOr[SchemaParagraphMarker] = js.native
+  var paragraphMarker: js.UndefOr[SchemaParagraphMarker] = js.undefined
   
   /**
     * The zero-based start index of this text element, in Unicode code units.
     */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * A TextElement representing a run of text where all of the characters in
@@ -45,7 +43,7 @@ trait SchemaTextElement extends StObject {
     * `paragraph_marker` TextElement. In other words, a TextRun will never span
     * multiple paragraphs.
     */
-  var textRun: js.UndefOr[SchemaTextRun] = js.native
+  var textRun: js.UndefOr[SchemaTextRun] = js.undefined
 }
 object SchemaTextElement {
   

@@ -4,23 +4,23 @@ import typings.vegaTypings.layoutMod._LayoutOffset
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColumnFooter extends _LayoutOffset {
+trait ColumnFooter
+  extends StObject
+     with _LayoutOffset {
   
-  var columnFooter: js.UndefOr[Double | SignalRef] = js.native
+  var columnFooter: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var columnHeader: js.UndefOr[Double | SignalRef] = js.native
+  var columnHeader: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var columnTitle: js.UndefOr[Double | SignalRef] = js.native
+  var columnTitle: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var rowFooter: js.UndefOr[Double | SignalRef] = js.native
+  var rowFooter: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var rowHeader: js.UndefOr[Double | SignalRef] = js.native
+  var rowHeader: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var rowTitle: js.UndefOr[Double | SignalRef] = js.native
+  var rowTitle: js.UndefOr[Double | SignalRef] = js.undefined
 }
 object ColumnFooter {
   

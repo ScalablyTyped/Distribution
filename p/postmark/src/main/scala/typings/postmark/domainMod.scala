@@ -2,7 +2,6 @@ package typings.postmark
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domainMod {
@@ -26,20 +25,19 @@ object domainMod {
     var ReturnPathDomain: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait Domain extends StObject {
     
-    var DKIMVerified: Boolean = js.native
+    var DKIMVerified: Boolean
     
-    var ID: Double = js.native
+    var ID: Double
     
-    var Name: String = js.native
+    var Name: String
     
-    var ReturnPathDomainVerified: Boolean = js.native
+    var ReturnPathDomainVerified: Boolean
     
-    var SPFVerified: Boolean = js.native
+    var SPFVerified: Boolean
     
-    var WeakDKIM: Boolean = js.native
+    var WeakDKIM: Boolean
   }
   object Domain {
     
@@ -79,32 +77,33 @@ object domainMod {
     }
   }
   
-  @js.native
-  trait DomainDetails extends Domain {
+  trait DomainDetails
+    extends StObject
+       with Domain {
     
-    var DKIMHost: String = js.native
+    var DKIMHost: String
     
-    var DKIMPendingHost: String = js.native
+    var DKIMPendingHost: String
     
-    var DKIMPendingTextValue: String = js.native
+    var DKIMPendingTextValue: String
     
-    var DKIMRevokedHost: String = js.native
+    var DKIMRevokedHost: String
     
-    var DKIMRevokedTextValue: String = js.native
+    var DKIMRevokedTextValue: String
     
-    var DKIMTextValue: String = js.native
+    var DKIMTextValue: String
     
-    var DKIMUpdateStatus: String = js.native
+    var DKIMUpdateStatus: String
     
-    var ReturnPathDomain: String = js.native
+    var ReturnPathDomain: String
     
-    var ReturnPathDomainCNAMEValue: String = js.native
+    var ReturnPathDomainCNAMEValue: String
     
-    var SPFHost: String = js.native
+    var SPFHost: String
     
-    var SPFTextValue: String = js.native
+    var SPFTextValue: String
     
-    var SafeToRemoveRevokedKeyFromDNS: String = js.native
+    var SafeToRemoveRevokedKeyFromDNS: String
   }
   object DomainDetails {
     
@@ -174,12 +173,11 @@ object domainMod {
     }
   }
   
-  @js.native
   trait Domains extends StObject {
     
-    var Domains: js.Array[Domain] = js.native
+    var Domains: js.Array[Domain]
     
-    var TotalCount: Double = js.native
+    var TotalCount: Double
   }
   object Domains {
     

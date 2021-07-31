@@ -2,31 +2,29 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyDBProxyTargetGroupRequest extends StObject {
   
   /**
     * The settings that determine the size and behavior of the connection pool for the target group.
     */
-  var ConnectionPoolConfig: js.UndefOr[ConnectionPoolConfiguration] = js.native
+  var ConnectionPoolConfig: js.UndefOr[ConnectionPoolConfiguration] = js.undefined
   
   /**
     * The name of the new proxy to which to assign the target group.
     */
-  var DBProxyName: String = js.native
+  var DBProxyName: String
   
   /**
     * The new name for the modified DBProxyTarget. An identifier must begin with a letter and must contain only ASCII letters, digits, and hyphens; it can't end with a hyphen or contain two consecutive hyphens.
     */
-  var NewName: js.UndefOr[String] = js.native
+  var NewName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the new target group to assign to the proxy.
     */
-  var TargetGroupName: String = js.native
+  var TargetGroupName: String
 }
 object ModifyDBProxyTargetGroupRequest {
   

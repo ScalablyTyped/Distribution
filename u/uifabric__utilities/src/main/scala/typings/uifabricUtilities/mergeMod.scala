@@ -4,12 +4,14 @@ import typings.std.Partial
 import typings.uifabricUtilities.uifabricUtilitiesBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mergeMod {
   
-  @JSImport("@uifabric/utilities/lib/merge", "merge")
+  @JSImport("@uifabric/utilities/lib/merge", JSImport.Namespace)
   @js.native
-  def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[T]
 }

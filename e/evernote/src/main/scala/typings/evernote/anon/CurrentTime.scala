@@ -4,23 +4,21 @@ import typings.evernote.mod.Types.MessageEventID
 import typings.evernote.mod.Types.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentTime extends StObject {
   
-  var currentTime: js.UndefOr[Timestamp] = js.native
+  var currentTime: js.UndefOr[Timestamp] = js.undefined
   
-  var fullSyncBefore: js.UndefOr[Timestamp] = js.native
+  var fullSyncBefore: js.UndefOr[Timestamp] = js.undefined
   
-  var updateCount: js.UndefOr[Double] = js.native
+  var updateCount: js.UndefOr[Double] = js.undefined
   
-  var uploaded: js.UndefOr[Double] = js.native
+  var uploaded: js.UndefOr[Double] = js.undefined
   
-  var userLastUpdated: js.UndefOr[Timestamp] = js.native
+  var userLastUpdated: js.UndefOr[Timestamp] = js.undefined
   
-  var userMaxMessageEventId: js.UndefOr[MessageEventID] = js.native
+  var userMaxMessageEventId: js.UndefOr[MessageEventID] = js.undefined
 }
 object CurrentTime {
   

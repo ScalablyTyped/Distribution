@@ -3,13 +3,11 @@ package typings.braintree.mod
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreditCardVerificationGateway extends StObject {
   
-  def search(searchFn: js.Any): Readable = js.native
+  def search(searchFn: js.Any): Readable
 }
 object CreditCardVerificationGateway {
   

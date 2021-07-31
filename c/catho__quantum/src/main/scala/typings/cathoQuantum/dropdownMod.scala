@@ -6,7 +6,6 @@ import typings.downshift.mod.ControllerStateAndHelpers
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownMod {
@@ -18,24 +17,23 @@ object dropdownMod {
   
   type Dropdown = Component[DropdownProps, js.Object, js.Any]
   
-  @js.native
   trait DropdownProps extends StObject {
     
-    var autocomplete: js.UndefOr[Boolean] = js.native
+    var autocomplete: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var helperText: js.UndefOr[String] = js.native
+    var helperText: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var ignoreSpecialChars: js.UndefOr[Boolean] = js.native
+    var ignoreSpecialChars: js.UndefOr[Boolean] = js.undefined
     
-    var items: js.UndefOr[js.Array[ItemPropType]] = js.native
+    var items: js.UndefOr[js.Array[ItemPropType]] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /** More about stateAndHelpers parameter here https://github.com/downshift-js/downshift#children-function */
     var onChange: js.UndefOr[
@@ -44,15 +42,15 @@ object dropdownMod {
           /* stateAndHelpers */ ControllerStateAndHelpers[ItemPropType], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var selectedItem: js.UndefOr[ItemPropType] = js.native
+    var selectedItem: js.UndefOr[ItemPropType] = js.undefined
     
-    var theme: js.UndefOr[BaseFontSize] = js.native
+    var theme: js.UndefOr[BaseFontSize] = js.undefined
   }
   object DropdownProps {
     

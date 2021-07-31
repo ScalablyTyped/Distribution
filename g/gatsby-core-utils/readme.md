@@ -10,9 +10,9 @@ A collection of gatsby utils used in different gatsby packages
 | ------------------ | :-------------: |
 | Full name          | gatsby-core-utils |
 | Keywords           | gatsby, gatsby-core-utils |
-| # releases         | 85 |
-| # dependents       | 89 |
-| # downloads        | 24685601 |
+| # releases         | 104 |
+| # dependents       | 94 |
+| # downloads        | 29645994 |
 | # stars            | 0 |
 
 ## Links

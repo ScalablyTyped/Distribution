@@ -4,30 +4,28 @@ import typings.vscodeLanguageserverProtocol.anon.CommitCharactersSupport
 import typings.vscodeLanguageserverProtocol.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionClientCapabilities extends StObject {
   
   /**
     * The client supports the following `CompletionItem` specific
     * capabilities.
     */
-  var completionItem: js.UndefOr[CommitCharactersSupport] = js.native
+  var completionItem: js.UndefOr[CommitCharactersSupport] = js.undefined
   
-  var completionItemKind: js.UndefOr[`0`] = js.native
+  var completionItemKind: js.UndefOr[`0`] = js.undefined
   
   /**
     * The client supports to send additional context information for a
     * `textDocument/completion` requestion.
     */
-  var contextSupport: js.UndefOr[Boolean] = js.native
+  var contextSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether completion supports dynamic registration.
     */
-  var dynamicRegistration: js.UndefOr[Boolean] = js.native
+  var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
 }
 object CompletionClientCapabilities {
   

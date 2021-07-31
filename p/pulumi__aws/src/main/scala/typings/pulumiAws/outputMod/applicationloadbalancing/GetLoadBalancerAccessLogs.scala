@@ -2,17 +2,15 @@ package typings.pulumiAws.outputMod.applicationloadbalancing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLoadBalancerAccessLogs extends StObject {
   
-  var bucket: String = js.native
+  var bucket: String
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var prefix: String = js.native
+  var prefix: String
 }
 object GetLoadBalancerAccessLogs {
   

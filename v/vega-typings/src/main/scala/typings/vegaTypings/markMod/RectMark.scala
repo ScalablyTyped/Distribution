@@ -5,23 +5,22 @@ import typings.vegaTypings.encodeMod.RectEncodeEntry
 import typings.vegaTypings.vegaTypingsStrings.rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RectMark
-  extends BaseMark
+  extends StObject
+     with BaseMark
      with Encodable[RectEncodeEntry]
      with Mark {
   
-  var `type`: rect = js.native
+  var `type`: rect
 }
 object RectMark {
   
   @scala.inline
-  def apply(`type`: rect): RectMark = {
+  def apply(): RectMark = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("rect")
     __obj.asInstanceOf[RectMark]
   }
   

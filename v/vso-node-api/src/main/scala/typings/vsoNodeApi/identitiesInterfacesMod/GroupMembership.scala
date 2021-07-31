@@ -2,19 +2,17 @@ package typings.vsoNodeApi.identitiesInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupMembership extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var descriptor: IdentityDescriptor = js.native
+  var descriptor: IdentityDescriptor
   
-  var id: String = js.native
+  var id: String
   
-  var queriedId: String = js.native
+  var queriedId: String
 }
 object GroupMembership {
   

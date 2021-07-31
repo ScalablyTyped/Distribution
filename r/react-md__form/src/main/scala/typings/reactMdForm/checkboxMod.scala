@@ -6,17 +6,17 @@ import typings.reactMdForm.inputToggleMod.InputToggleProps
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxMod {
   
   @JSImport("@react-md/form/types/toggle/Checkbox", "Checkbox")
   @js.native
-  val Checkbox: ForwardRefExoticComponent[CheckboxProps with RefAttributes[HTMLInputElement]] = js.native
+  val Checkbox: ForwardRefExoticComponent[CheckboxProps & RefAttributes[HTMLInputElement]] = js.native
   
-  @js.native
-  trait CheckboxProps extends InputToggleProps {
+  trait CheckboxProps
+    extends StObject
+       with InputToggleProps {
     
     /**
       * Boolean if the checkbox can have an indeterminate state. This is used when
@@ -24,7 +24,7 @@ object checkboxMod {
       * related checkboxes. This should be enabled when not all the related
       * checkboxes have been checked.
       */
-    var indeterminate: js.UndefOr[Boolean] = js.native
+    var indeterminate: js.UndefOr[Boolean] = js.undefined
   }
   object CheckboxProps {
     

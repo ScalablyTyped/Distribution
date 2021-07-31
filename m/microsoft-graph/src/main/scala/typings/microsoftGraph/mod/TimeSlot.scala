@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeSlot extends StObject {
   
   // The date, time, and time zone that a period begins.
-  var end: js.UndefOr[DateTimeTimeZone] = js.native
+  var end: js.UndefOr[DateTimeTimeZone] = js.undefined
   
   // The date, time, and time zone that a period ends.
-  var start: js.UndefOr[DateTimeTimeZone] = js.native
+  var start: js.UndefOr[DateTimeTimeZone] = js.undefined
 }
 object TimeSlot {
   

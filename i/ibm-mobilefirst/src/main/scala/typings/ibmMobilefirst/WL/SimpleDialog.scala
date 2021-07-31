@@ -2,17 +2,15 @@ package typings.ibmMobilefirst.WL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SimpleDialog {
   
-  @js.native
   trait Button extends StObject {
     
-    var handler: js.UndefOr[js.Function] = js.native
+    var handler: js.UndefOr[js.Function] = js.undefined
     
-    var text: String = js.native
+    var text: String
   }
   object Button {
     
@@ -36,12 +34,11 @@ object SimpleDialog {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var text: String = js.native
+    var text: String
     
-    var title: String = js.native
+    var title: String
   }
   object Options {
     

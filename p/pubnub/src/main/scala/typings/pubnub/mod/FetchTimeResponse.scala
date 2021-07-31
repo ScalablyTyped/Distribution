@@ -2,14 +2,12 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // fetch time
-@js.native
 trait FetchTimeResponse extends StObject {
   
-  var timetoken: Double = js.native
+  var timetoken: Double
 }
 object FetchTimeResponse {
   

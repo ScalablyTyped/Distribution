@@ -6,16 +6,14 @@ import typings.uniApp.uniAppStrings.easeOut
 import typings.uniApp.uniAppStrings.linear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationBarAnimation extends StObject {
   
   /**
     * 动画变化时间，默认0，单位：毫秒
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * 动画变化方式，默认 linear
@@ -24,7 +22,7 @@ trait NavigationBarAnimation extends StObject {
     * - easeOut: 动画以低速结束
     * - easeInOut: 动画以低速开始和结束
     */
-  var timingFunc: js.UndefOr[linear | easeIn | easeOut | easeInOut] = js.native
+  var timingFunc: js.UndefOr[linear | easeIn | easeOut | easeInOut] = js.undefined
 }
 object NavigationBarAnimation {
   

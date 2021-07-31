@@ -3,21 +3,21 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChannelTalkingFinished extends Event {
+trait ChannelTalkingFinished
+  extends StObject
+     with Event {
   
   /**
     * The channel on which talking completed.
     */
-  var channel: Channel = js.native
+  var channel: Channel
   
   /**
     * The length of time, in milliseconds, that talking was detected on the channel.
     */
-  var duration: Double = js.native
+  var duration: Double
 }
 object ChannelTalkingFinished {
   

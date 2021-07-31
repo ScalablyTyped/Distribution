@@ -2,16 +2,14 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSizeConstraintSetResponse extends StObject {
   
   /**
     * Information about the SizeConstraintSet that you specified in the GetSizeConstraintSet request. For more information, see the following topics:    SizeConstraintSet: Contains SizeConstraintSetId, SizeConstraints, and Name     SizeConstraints: Contains an array of SizeConstraint objects. Each SizeConstraint object contains FieldToMatch, TextTransformation, ComparisonOperator, and Size     FieldToMatch: Contains Data and Type   
     */
-  var SizeConstraintSet: js.UndefOr[typings.awsSdk.wafMod.SizeConstraintSet] = js.native
+  var SizeConstraintSet: js.UndefOr[typings.awsSdk.wafMod.SizeConstraintSet] = js.undefined
 }
 object GetSizeConstraintSetResponse {
   

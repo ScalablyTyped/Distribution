@@ -2,19 +2,17 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaUrls extends StObject {
   
-  def getFullMediaUrl(): String = js.native
+  def getFullMediaUrl(): String
   
-  def getPreviewMediaUrl(): String = js.native
+  def getPreviewMediaUrl(): String
   
-  def getShrunkenMediaUrl(): String = js.native
+  def getShrunkenMediaUrl(): String
   
-  def getVideoThumbnailMediaUrl(): String = js.native
+  def getVideoThumbnailMediaUrl(): String
 }
 object MediaUrls {
   

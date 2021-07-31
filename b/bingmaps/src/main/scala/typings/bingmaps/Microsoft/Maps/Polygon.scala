@@ -2,11 +2,12 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Polygon extends IPrimitive {
+trait Polygon
+  extends StObject
+     with IPrimitive {
   
   /**
     * Gets the fill color of the inside of the polygon. Will be string or Color object depending on the the what method was used in the pushpin options.

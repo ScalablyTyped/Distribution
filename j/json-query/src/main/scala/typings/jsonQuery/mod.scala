@@ -3,44 +3,48 @@ package typings.jsonQuery
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(selector: SelectorWithQueryParams, options: Options): Result = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  @scala.inline
+  def apply(selector: Selector, options: Options): Result = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  
   @JSImport("json-query", JSImport.Namespace)
   @js.native
-  def apply(selector: SelectorWithQueryParams, options: Options): Result = js.native
-  @JSImport("json-query", JSImport.Namespace)
-  @js.native
-  def apply(selector: Selector, options: Options): Result = js.native
+  val ^ : js.Any = js.native
   
   type Context = js.Any
   
-  type Filter = js.Function2[/* input */ Context, /* repeated */ js.Any, Context]
+  @js.native
+  trait Filter extends StObject {
+    
+    def apply(input: Context, args: js.Any*): Context = js.native
+  }
   
   type Locals = StringDictionary[Filter]
   
-  @js.native
   trait Options extends StObject {
     
-    var allowRegexp: js.UndefOr[Boolean] = js.native
+    var allowRegexp: js.UndefOr[Boolean] = js.undefined
     
-    var context: js.UndefOr[Context] = js.native
+    var context: js.UndefOr[Context] = js.undefined
     
-    var data: js.UndefOr[Context] = js.native
+    var data: js.UndefOr[Context] = js.undefined
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var globals: js.UndefOr[Boolean] = js.native
+    var globals: js.UndefOr[Boolean] = js.undefined
     
-    var locals: js.UndefOr[Locals] = js.native
+    var locals: js.UndefOr[Locals] = js.undefined
     
-    var parent: js.UndefOr[Context] = js.native
+    var parent: js.UndefOr[Context] = js.undefined
     
-    var rootContext: js.UndefOr[Context] = js.native
+    var rootContext: js.UndefOr[Context] = js.undefined
     
-    var source: js.UndefOr[Context] = js.native
+    var source: js.UndefOr[Context] = js.undefined
   }
   object Options {
     
@@ -111,21 +115,20 @@ object mod {
   
   type QueryParam = js.Any
   
-  @js.native
   trait Result extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var parents: js.Array[String] = js.native
+    var parents: js.Array[String]
     
-    var references: js.Array[_] = js.native
+    var references: js.Array[js.Any]
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Result {
     
     @scala.inline
-    def apply(key: String, parents: js.Array[String], references: js.Array[_], value: js.Any): Result = {
+    def apply(key: String, parents: js.Array[String], references: js.Array[js.Any], value: js.Any): Result = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
@@ -143,7 +146,7 @@ object mod {
       def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
       
       @scala.inline
-      def setReferences(value: js.Array[_]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+      def setReferences(value: js.Array[js.Any]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setReferencesVarargs(value: js.Any*): Self = StObject.set(x, "references", js.Array(value :_*))

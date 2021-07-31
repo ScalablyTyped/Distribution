@@ -2,15 +2,13 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoLeftAndRightSwapInRTL extends StObject {
   
-  var doLeftAndRightSwapInRTL: Boolean = js.native
+  var doLeftAndRightSwapInRTL: Boolean
   
-  var isRTL: Boolean = js.native
+  var isRTL: Boolean
 }
 object DoLeftAndRightSwapInRTL {
   

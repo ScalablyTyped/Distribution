@@ -2,166 +2,164 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolType extends StObject {
   
   /**
     * Use this setting to define which verified available method a user can use to recover their password when they call ForgotPassword. It allows you to define a preferred method when a user has more than one method available. With this setting, SMS does not qualify for a valid password recovery mechanism if the user also has SMS MFA enabled. In the absence of this setting, Cognito uses the legacy behavior to determine the recovery method where SMS is preferred over email.
     */
-  var AccountRecoverySetting: js.UndefOr[AccountRecoverySettingType] = js.native
+  var AccountRecoverySetting: js.UndefOr[AccountRecoverySettingType] = js.undefined
   
   /**
     * The configuration for AdminCreateUser requests.
     */
-  var AdminCreateUserConfig: js.UndefOr[AdminCreateUserConfigType] = js.native
+  var AdminCreateUserConfig: js.UndefOr[AdminCreateUserConfigType] = js.undefined
   
   /**
     * Specifies the attributes that are aliased in a user pool.
     */
-  var AliasAttributes: js.UndefOr[AliasAttributesListType] = js.native
+  var AliasAttributes: js.UndefOr[AliasAttributesListType] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the user pool.
     */
-  var Arn: js.UndefOr[ArnType] = js.native
+  var Arn: js.UndefOr[ArnType] = js.undefined
   
   /**
     * Specifies the attributes that are auto-verified in a user pool.
     */
-  var AutoVerifiedAttributes: js.UndefOr[VerifiedAttributesListType] = js.native
+  var AutoVerifiedAttributes: js.UndefOr[VerifiedAttributesListType] = js.undefined
   
   /**
     * The date the user pool was created.
     */
-  var CreationDate: js.UndefOr[DateType] = js.native
+  var CreationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * A custom domain name that you provide to Amazon Cognito. This parameter applies only if you use a custom domain to host the sign-up and sign-in pages for your application. For example: auth.example.com. For more information about adding a custom domain to your user pool, see Using Your Own Domain for the Hosted UI.
     */
-  var CustomDomain: js.UndefOr[DomainType] = js.native
+  var CustomDomain: js.UndefOr[DomainType] = js.undefined
   
   /**
     * The device configuration.
     */
-  var DeviceConfiguration: js.UndefOr[DeviceConfigurationType] = js.native
+  var DeviceConfiguration: js.UndefOr[DeviceConfigurationType] = js.undefined
   
   /**
     * Holds the domain prefix if the user pool has a domain associated with it.
     */
-  var Domain: js.UndefOr[DomainType] = js.native
+  var Domain: js.UndefOr[DomainType] = js.undefined
   
   /**
     * The email configuration.
     */
-  var EmailConfiguration: js.UndefOr[EmailConfigurationType] = js.native
+  var EmailConfiguration: js.UndefOr[EmailConfigurationType] = js.undefined
   
   /**
     * The reason why the email configuration cannot send the messages to your users.
     */
-  var EmailConfigurationFailure: js.UndefOr[StringType] = js.native
+  var EmailConfigurationFailure: js.UndefOr[StringType] = js.undefined
   
   /**
     * The contents of the email verification message.
     */
-  var EmailVerificationMessage: js.UndefOr[EmailVerificationMessageType] = js.native
+  var EmailVerificationMessage: js.UndefOr[EmailVerificationMessageType] = js.undefined
   
   /**
     * The subject of the email verification message.
     */
-  var EmailVerificationSubject: js.UndefOr[EmailVerificationSubjectType] = js.native
+  var EmailVerificationSubject: js.UndefOr[EmailVerificationSubjectType] = js.undefined
   
   /**
     * A number estimating the size of the user pool.
     */
-  var EstimatedNumberOfUsers: js.UndefOr[IntegerType] = js.native
+  var EstimatedNumberOfUsers: js.UndefOr[IntegerType] = js.undefined
   
   /**
     * The ID of the user pool.
     */
-  var Id: js.UndefOr[UserPoolIdType] = js.native
+  var Id: js.UndefOr[UserPoolIdType] = js.undefined
   
   /**
     * The AWS Lambda triggers associated with the user pool.
     */
-  var LambdaConfig: js.UndefOr[LambdaConfigType] = js.native
+  var LambdaConfig: js.UndefOr[LambdaConfigType] = js.undefined
   
   /**
     * The date the user pool was last modified.
     */
-  var LastModifiedDate: js.UndefOr[DateType] = js.native
+  var LastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * Can be one of the following values:    OFF - MFA tokens are not required and cannot be specified during user registration.    ON - MFA tokens are required for all user registrations. You can only specify required when you are initially creating a user pool.    OPTIONAL - Users have the option when registering to create an MFA token.  
     */
-  var MfaConfiguration: js.UndefOr[UserPoolMfaType] = js.native
+  var MfaConfiguration: js.UndefOr[UserPoolMfaType] = js.undefined
   
   /**
     * The name of the user pool.
     */
-  var Name: js.UndefOr[UserPoolNameType] = js.native
+  var Name: js.UndefOr[UserPoolNameType] = js.undefined
   
   /**
     * The policies associated with the user pool.
     */
-  var Policies: js.UndefOr[UserPoolPolicyType] = js.native
+  var Policies: js.UndefOr[UserPoolPolicyType] = js.undefined
   
   /**
     * A container with the schema attributes of a user pool.
     */
-  var SchemaAttributes: js.UndefOr[SchemaAttributesListType] = js.native
+  var SchemaAttributes: js.UndefOr[SchemaAttributesListType] = js.undefined
   
   /**
     * The contents of the SMS authentication message.
     */
-  var SmsAuthenticationMessage: js.UndefOr[SmsVerificationMessageType] = js.native
+  var SmsAuthenticationMessage: js.UndefOr[SmsVerificationMessageType] = js.undefined
   
   /**
     * The SMS configuration.
     */
-  var SmsConfiguration: js.UndefOr[SmsConfigurationType] = js.native
+  var SmsConfiguration: js.UndefOr[SmsConfigurationType] = js.undefined
   
   /**
     * The reason why the SMS configuration cannot send the messages to your users.
     */
-  var SmsConfigurationFailure: js.UndefOr[StringType] = js.native
+  var SmsConfigurationFailure: js.UndefOr[StringType] = js.undefined
   
   /**
     * The contents of the SMS verification message.
     */
-  var SmsVerificationMessage: js.UndefOr[SmsVerificationMessageType] = js.native
+  var SmsVerificationMessage: js.UndefOr[SmsVerificationMessageType] = js.undefined
   
   /**
     * The status of a user pool.
     */
-  var Status: js.UndefOr[StatusType] = js.native
+  var Status: js.UndefOr[StatusType] = js.undefined
   
   /**
     * The user pool add-ons.
     */
-  var UserPoolAddOns: js.UndefOr[UserPoolAddOnsType] = js.native
+  var UserPoolAddOns: js.UndefOr[UserPoolAddOnsType] = js.undefined
   
   /**
     * The tags that are assigned to the user pool. A tag is a label that you can apply to user pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria.
     */
-  var UserPoolTags: js.UndefOr[UserPoolTagsType] = js.native
+  var UserPoolTags: js.UndefOr[UserPoolTagsType] = js.undefined
   
   /**
     * Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up.
     */
-  var UsernameAttributes: js.UndefOr[UsernameAttributesListType] = js.native
+  var UsernameAttributes: js.UndefOr[UsernameAttributesListType] = js.undefined
   
   /**
     * You can choose to enable case sensitivity on the username input for the selected sign-in option. For example, when this is set to False, users will be able to sign in using either "username" or "Username". This configuration is immutable once it has been set. For more information, see UsernameConfigurationType.
     */
-  var UsernameConfiguration: js.UndefOr[UsernameConfigurationType] = js.native
+  var UsernameConfiguration: js.UndefOr[UsernameConfigurationType] = js.undefined
   
   /**
     * The template for verification messages.
     */
-  var VerificationMessageTemplate: js.UndefOr[VerificationMessageTemplateType] = js.native
+  var VerificationMessageTemplate: js.UndefOr[VerificationMessageTemplateType] = js.undefined
 }
 object UserPoolType {
   

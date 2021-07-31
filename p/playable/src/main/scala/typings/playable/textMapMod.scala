@@ -4,14 +4,15 @@ import typings.playable.anon.ConfigIPlayerConfig
 import typings.playable.textMapTypesMod.ITextMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textMapMod {
   
   @JSImport("playable/dist/src/modules/text-map/text-map", JSImport.Default)
   @js.native
-  class default protected () extends TextMap {
+  class default protected ()
+    extends StObject
+       with TextMap {
     def this(hasConfig: ConfigIPlayerConfig) = this()
   }
   /* static members */
@@ -35,7 +36,9 @@ object textMapMod {
   }
   
   @js.native
-  trait TextMap extends ITextMap {
+  trait TextMap
+    extends StObject
+       with ITextMap {
     
     var _textMap: js.Any = js.native
   }

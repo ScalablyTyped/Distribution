@@ -2,16 +2,14 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMemberOutput extends StObject {
   
   /**
     * The properties of a member.
     */
-  var Member: js.UndefOr[typings.awsSdk.managedblockchainMod.Member] = js.native
+  var Member: js.UndefOr[typings.awsSdk.managedblockchainMod.Member] = js.undefined
 }
 object GetMemberOutput {
   

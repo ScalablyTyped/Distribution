@@ -10,9 +10,9 @@ A SQL query identifier
 | ------------------ | :-------------: |
 | Full name          | sql-query-identifier |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 11333 |
+| # downloads        | 19028 |
 | # stars            | 0 |
 
 ## Links

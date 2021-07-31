@@ -2,14 +2,12 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Optional. The config settings for Compute Engine resources in an instance
   * group, such as a master or worker group.
   */
-@js.native
 trait SchemaInstanceGroupConfig extends StObject {
   
   /**
@@ -17,30 +15,30 @@ trait SchemaInstanceGroupConfig extends StObject {
     * instances.Beta Feature: This feature is still under development. It may
     * be changed before final release.
     */
-  var accelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.native
+  var accelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.undefined
   
   /**
     * Optional. Disk option config settings.
     */
-  var diskConfig: js.UndefOr[SchemaDiskConfig] = js.native
+  var diskConfig: js.UndefOr[SchemaDiskConfig] = js.undefined
   
   /**
     * Optional. The Compute Engine image resource used for cluster instances.
     * It can be specified or may be inferred from SoftwareConfig.image_version.
     */
-  var imageUri: js.UndefOr[String] = js.native
+  var imageUri: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The list of instance names. Cloud Dataproc derives the names
     * from cluster_name, num_instances, and the instance group.
     */
-  var instanceNames: js.UndefOr[js.Array[String]] = js.native
+  var instanceNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. Specifies that this instance group contains preemptible
     * instances.
     */
-  var isPreemptible: js.UndefOr[Boolean] = js.native
+  var isPreemptible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. The Compute Engine machine type used for cluster instances.A
@@ -51,19 +49,19 @@ trait SchemaInstanceGroupConfig extends StObject {
     * Auto Zone Placement feature, you must use the short name of the machine
     * type resource, for example, n1-standard-2.
     */
-  var machineTypeUri: js.UndefOr[String] = js.native
+  var machineTypeUri: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The config for Compute Engine Instance Group Manager that
     * manages this group. This is only used for preemptible instance groups.
     */
-  var managedGroupConfig: js.UndefOr[SchemaManagedGroupConfig] = js.native
+  var managedGroupConfig: js.UndefOr[SchemaManagedGroupConfig] = js.undefined
   
   /**
     * Optional. The number of VM instances in the instance group. For master
     * instance groups, must be set to 1.
     */
-  var numInstances: js.UndefOr[Double] = js.native
+  var numInstances: js.UndefOr[Double] = js.undefined
 }
 object SchemaInstanceGroupConfig {
   

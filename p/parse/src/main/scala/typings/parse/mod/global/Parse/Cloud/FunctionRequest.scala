@@ -4,19 +4,17 @@ import typings.parse.mod.global.Parse.Attributes
 import typings.parse.mod.global.Parse.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionRequest[T /* <: Params */] extends StObject {
   
-  var installationId: js.UndefOr[String] = js.native
+  var installationId: js.UndefOr[String] = js.undefined
   
-  var master: js.UndefOr[Boolean] = js.native
+  var master: js.UndefOr[Boolean] = js.undefined
   
-  var params: T = js.native
+  var params: T
   
-  var user: js.UndefOr[User[Attributes]] = js.native
+  var user: js.UndefOr[User[Attributes]] = js.undefined
 }
 object FunctionRequest {
   
@@ -27,7 +25,7 @@ object FunctionRequest {
   }
   
   @scala.inline
-  implicit class FunctionRequestMutableBuilder[Self <: FunctionRequest[_], T /* <: Params */] (val x: Self with FunctionRequest[T]) extends AnyVal {
+  implicit class FunctionRequestMutableBuilder[Self <: FunctionRequest[?], T /* <: Params */] (val x: Self & FunctionRequest[T]) extends AnyVal {
     
     @scala.inline
     def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])

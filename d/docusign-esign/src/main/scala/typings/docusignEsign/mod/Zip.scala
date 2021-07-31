@@ -2,15 +2,13 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Zip extends StObject {
   
-  var anchorAllowWhiteSpaceInCharacters: js.UndefOr[String] = js.native
+  var anchorAllowWhiteSpaceInCharacters: js.UndefOr[String] = js.undefined
   
-  var anchorAllowWhiteSpaceInCharactersMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var anchorAllowWhiteSpaceInCharactersMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * This property controls how [anchor tabs][AnchorTabs] are placed. When **true**,
@@ -47,12 +45,12 @@ trait Zip extends StObject {
     *
     * [AnchorTabs]: https://developers.docusign.com/esign-rest-api/guides/concepts/tabs#autoplace
     */
-  var anchorCaseSensitive: js.UndefOr[String] = js.native
+  var anchorCaseSensitive: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `anchorCaseSensitive` property is editable.
     */
-  var anchorCaseSensitiveMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var anchorCaseSensitiveMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * This property controls how [anchor tabs][AnchorTabs] are aligned in relation to the anchor text. Possible values are :
@@ -65,22 +63,22 @@ trait Zip extends StObject {
     * [AnchorTabs]: https://developers.docusign.com/esign-rest-api/guides/concepts/tabs#autoplace
     *
     */
-  var anchorHorizontalAlignment: js.UndefOr[String] = js.native
+  var anchorHorizontalAlignment: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `anchorHorizontalAlignment` property is editable.
     */
-  var anchorHorizontalAlignmentMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var anchorHorizontalAlignmentMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, this tab is ignored if the `anchorString` is not found in the document.
     */
-  var anchorIgnoreIfNotPresent: js.UndefOr[String] = js.native
+  var anchorIgnoreIfNotPresent: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `anchorIgnoreIfNotPresent` property is editable.
     */
-  var anchorIgnoreIfNotPresentMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var anchorIgnoreIfNotPresentMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, the text string in a document must match the value of the `anchorString` property in its entirety for an [anchor tab][AnchorTab] to be created.
@@ -119,42 +117,42 @@ trait Zip extends StObject {
     * [AnchorTab]: https://developers.docusign.com/esign-rest-api/guides/concepts/tabs#autoplace
     *
     */
-  var anchorMatchWholeWord: js.UndefOr[String] = js.native
+  var anchorMatchWholeWord: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `anchorMatchWholeWord` property is editable.
     */
-  var anchorMatchWholeWordMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var anchorMatchWholeWordMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Specifies the string to find in the document and use as the basis for tab placement.
     */
-  var anchorString: js.UndefOr[String] = js.native
+  var anchorString: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `anchorString` property is editable.
     */
-  var anchorStringMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var anchorStringMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var anchorTabProcessorVersion: js.UndefOr[String] = js.native
+  var anchorTabProcessorVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var anchorTabProcessorVersionMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var anchorTabProcessorVersionMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Specifies the units of the X and Y offset. Units may be pixels, millimeters, centimeters, or inches.
     */
-  var anchorUnits: js.UndefOr[String] = js.native
+  var anchorUnits: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `anchorUnits` property is editable.
     */
-  var anchorUnitsMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var anchorUnitsMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Specifies the X axis location of the tab in `anchorUnits` relative to the `anchorString`.
@@ -162,12 +160,12 @@ trait Zip extends StObject {
     * **Note**: When you provide an x- and y-coordinate for the sign here tab, the tab appears 21 points lower than the value you provide for the y-coordinate.
     * To align the tab as expected, subtract 21 from the expected y-value.
     */
-  var anchorXOffset: js.UndefOr[String] = js.native
+  var anchorXOffset: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `anchorXOffset` property is editable.
     */
-  var anchorXOffsetMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var anchorXOffsetMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Specifies the Y axis location of the tab in `anchorUnits` relative to the `anchorString`.
@@ -175,22 +173,22 @@ trait Zip extends StObject {
     * **Note**: When you provide an x- and y-coordinate for the sign here tab, the tab appears 21 points lower than the value you provide for the y-coordinate.
     * To align the tab as expected, subtract 21 from the expected y-value.
     */
-  var anchorYOffset: js.UndefOr[String] = js.native
+  var anchorYOffset: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `anchorYOffset` property is editable.
     */
-  var anchorYOffsetMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var anchorYOffsetMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, the information in the tab is bold.
     */
-  var bold: js.UndefOr[String] = js.native
+  var bold: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `bold` property is editable.
     */
-  var boldMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var boldMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, the field appears normally while the recipient is adding or modifying the information in the field,
@@ -201,22 +199,22 @@ trait Zip extends StObject {
     *
     * This setting applies only to text boxes and does not affect list boxes, radio buttons, or check boxes.
     */
-  var concealValueOnDocument: js.UndefOr[String] = js.native
+  var concealValueOnDocument: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `concealValueOnDocument` property is editable.
     */
-  var concealValueOnDocumentMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var concealValueOnDocumentMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * For conditional fields this is the `tabLabel` of the parent tab that controls this tab's visibility.
     */
-  var conditionalParentLabel: js.UndefOr[String] = js.native
+  var conditionalParentLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `conditionalParentLabel` property is editable.
     */
-  var conditionalParentLabelMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var conditionalParentLabelMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * For conditional fields, this is the value of the parent tab that controls the tab's visibility.
@@ -224,54 +222,54 @@ trait Zip extends StObject {
     * If the parent tab is a Checkbox, Radio button, Optional Signature, or Optional Initial use "on" as the value to show that the parent tab is active.
     *
     */
-  var conditionalParentValue: js.UndefOr[String] = js.native
+  var conditionalParentValue: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `conditionalParentValue` property is editable.
     */
-  var conditionalParentValueMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var conditionalParentValueMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The DocuSign-generated custom tab id for the custom tab to be applied. This can only be used when adding new tabs for a recipient.
     * When used, the new tab inherits all the custom tab properties.
     */
-  var customTabId: js.UndefOr[String] = js.native
+  var customTabId: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `customTabId` property is editable.
     */
-  var customTabIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var customTabIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, disables the auto sizing of single line text boxes in the signing screen when the signer enters data.
     * If disabled users will only be able enter as much data as the text box can hold. By default this is false.
     * This property only affects single line text boxes.
     */
-  var disableAutoSize: js.UndefOr[String] = js.native
+  var disableAutoSize: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `disableAutoSize` property is editable.
     */
-  var disableAutoSizeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var disableAutoSizeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The `documentId` is set by the API client. It is an integer that falls between `1` and 2,147,483,647.
     * The value is encoded as a string without commas. The values `1`, `2`, `3`, and so on are typically used to identify the first few documents in an envelope.
     * Tab definitions include a `documentId` property that specifies the document on which to place the tab.
     */
-  var documentId: js.UndefOr[String] = js.native
+  var documentId: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `documentId` property is editable.
     */
-  var documentIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var documentIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The font to be used for the tab value. Supported fonts include:
@@ -294,7 +292,7 @@ trait Zip extends StObject {
     * - Verdana
     *
     */
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
   /**
     * The font color to use for the information in the tab. Possible values are:
@@ -311,17 +309,17 @@ trait Zip extends StObject {
     * - White
     *
     */
-  var fontColor: js.UndefOr[String] = js.native
+  var fontColor: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `fontColor` property is editable.
     */
-  var fontColorMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var fontColorMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Metadata that indicates whether the `font` property is editable.
     */
-  var fontMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var fontMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The font size used for the information in the tab. Possible values are:
@@ -344,179 +342,179 @@ trait Zip extends StObject {
     * - Size48
     * - Size72
     */
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `fontSize` property is editable.
     */
-  var fontSizeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var fontSizeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * An integer specifying the order in which the guided form HTML should render. The order is relative to the `formPageLabel`, the group by which to place the guided form HTML block.
     */
-  var formOrder: js.UndefOr[String] = js.native
+  var formOrder: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `formOrder` property is editable.
     */
-  var formOrderMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var formOrderMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * A string specifying the group in which to place the guided form HTML. Each group displays as a separate guided forms page in the signing experience.
     */
-  var formPageLabel: js.UndefOr[String] = js.native
+  var formPageLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `formPageLabel` property is editable.
     */
-  var formPageLabelMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var formPageLabelMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * An integer specifying the order in which to present the guided form pages.
     */
-  var formPageNumber: js.UndefOr[String] = js.native
+  var formPageNumber: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `fromPageNumber` property is editable.
     */
-  var formPageNumberMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var formPageNumberMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The height of the tab in pixels.
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `height` property is editable.
     */
-  var heightMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var heightMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, the information in the tab is italic.
     */
-  var italic: js.UndefOr[String] = js.native
+  var italic: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `italic` property is editable.
     */
-  var italicMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var italicMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var localePolicy: js.UndefOr[LocalePolicyTab] = js.native
+  var localePolicy: js.UndefOr[LocalePolicyTab] = js.undefined
   
   /**
     * When set to **true**, the signer cannot change the data of the custom tab.
     */
-  var locked: js.UndefOr[String] = js.native
+  var locked: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `locked` property is editable.
     */
-  var lockedMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var lockedMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * An optional value that describes the maximum length of the property when the property is a string.
     */
-  var maxLength: js.UndefOr[String] = js.native
+  var maxLength: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `maxLength` property is editable.
     */
-  var maxLengthMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var maxLengthMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Contains the information necessary to map the tab to a field in SalesForce.
     */
   var mergeField: js.UndefOr[
     /* Contains information for transfering values between Salesforce data fields and DocuSign Tabs. */ MergeField
-  ] = js.native
+  ] = js.undefined
   
-  var mergeFieldXml: js.UndefOr[String] = js.native
+  var mergeFieldXml: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the tab. For example, `Sign Here` or `Initial Here`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `name` property is editable. Read only.
     */
-  var nameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var nameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The initial value of the tab when it was sent to the recipient.
     */
-  var originalValue: js.UndefOr[String] = js.native
+  var originalValue: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `originalValue` property is editable.
     */
-  var originalValueMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var originalValueMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The page number on which the tab is located. For supplemental documents, this value must be `1`.
     */
-  var pageNumber: js.UndefOr[String] = js.native
+  var pageNumber: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `pageNumber` property is editable.
     */
-  var pageNumberMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var pageNumberMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * A local reference that senders use to map recipients to other objects, such as specific document tabs.
     * Within an envelope, each `recipientId` must be unique, but there is no uniqueness requirement across envelopes.
     * For example, many envelopes assign the first recipient a `recipientId` of `1`.
     */
-  var recipientId: js.UndefOr[String] = js.native
+  var recipientId: js.UndefOr[String] = js.undefined
   
   /**
     * The globally-unique identifier (GUID) for a specific recipient on a specific envelope. If the same recipient is associated with multiple envelopes,
     * they will have a different GUID for each one. Read only.
     */
-  var recipientIdGuid: js.UndefOr[String] = js.native
+  var recipientIdGuid: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `recipientIdGuid` property is editable.
     */
-  var recipientIdGuidMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var recipientIdGuidMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Metadata that indicates whether the `recipientId` property is editable.
     */
-  var recipientIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var recipientIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true** and shared is true, information must be entered in this field to complete the envelope.
     */
-  var requireAll: js.UndefOr[String] = js.native
+  var requireAll: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `requireAll` property is editable.
     */
-  var requireAllMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var requireAllMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Optional element for field markup. When set to **true**, the signer is required to initial when they modify a shared field.
     */
-  var requireInitialOnSharedChange: js.UndefOr[String] = js.native
+  var requireInitialOnSharedChange: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `requireInitialOnSharedChange` property is editable.
     */
-  var requireInitialOnSharedChangeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var requireInitialOnSharedChangeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, the signer is required to fill out this tab.
     */
-  var required: js.UndefOr[String] = js.native
+  var required: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `required` property is editable.
     */
-  var requiredMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var requiredMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, the sender must populate the tab before an envelope can be sent using the template.
@@ -525,24 +523,24 @@ trait Zip extends StObject {
     *
     * Tabs with a `senderRequired` value of true cannot be deleted from an envelope.
     */
-  var senderRequired: js.UndefOr[String] = js.native
+  var senderRequired: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `senderRequired` property is editable.
     */
-  var senderRequiredMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var senderRequiredMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, this custom tab is shared.
     */
-  var shared: js.UndefOr[String] = js.native
+  var shared: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `shared` property is editable.
     */
-  var sharedMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var sharedMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
-  var smartContractInformation: js.UndefOr[SmartContractInformation] = js.native
+  var smartContractInformation: js.UndefOr[SmartContractInformation] = js.undefined
   
   /**
     * The status of the tab. Possible values are:
@@ -553,32 +551,32 @@ trait Zip extends StObject {
     * - `na`: Used when the `status` property is not applicable to the tab type. (For example, a tab that has the `tabType` `SignerAttachmentOptional`).
     *
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `status` property is editable.
     */
-  var statusMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var statusMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * An array of tab group labels that uniquely identify tab groups. To assign a tab to a `tabGroup`, you assign the `TabGroupLabel` to the `Tab.TabGroupLabels` array.
     */
-  var tabGroupLabels: js.UndefOr[js.Array[String]] = js.native
+  var tabGroupLabels: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Metadata that indicates whether the `tabGroupLabels` property is editable.
     */
-  var tabGroupLabelsMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var tabGroupLabelsMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The unique identifier for the tab.
     */
-  var tabId: js.UndefOr[String] = js.native
+  var tabId: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `tabId` property is editable.
     */
-  var tabIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var tabIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The label associated with the tab. This value may be an empty string.
@@ -587,12 +585,12 @@ trait Zip extends StObject {
     * Maximum Length: 500 characters.
     *
     */
-  var tabLabel: js.UndefOr[String] = js.native
+  var tabLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `tabLabel` property is editable.
     */
-  var tabLabelMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var tabLabelMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * A positive integer that sets the order the tab is navigated to during signing.
@@ -600,112 +598,112 @@ trait Zip extends StObject {
     * Tabs on a page are navigated to in ascending order, starting with the lowest number and moving to the highest.
     * If two or more tabs have the same `tabOrder` value, the normal auto-navigation setting behavior for the envelope is used.
     */
-  var tabOrder: js.UndefOr[String] = js.native
+  var tabOrder: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `tabOrder` property is editable.
     */
-  var tabOrderMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var tabOrderMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Indicates the type of tab (for example, `signHere` or `initialHere`).
     */
-  var tabType: js.UndefOr[String] = js.native
+  var tabType: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `tabType` property is editable.
     */
-  var tabTypeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var tabTypeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, the sender cannot change any attributes of the recipient. Used only when working with template recipients.
     */
-  var templateLocked: js.UndefOr[String] = js.native
+  var templateLocked: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `templateLocked` property is editable.
     */
-  var templateLockedMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var templateLockedMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, the sender may not remove the recipient. Used only when working with template recipients.
     */
-  var templateRequired: js.UndefOr[String] = js.native
+  var templateRequired: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `templateRequired` property is editable.
     */
-  var templateRequiredMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var templateRequiredMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Metadata that indicates whether the `toolTip` property is editable.
     */
-  var toolTipMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var toolTipMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The text of a tooltip that appears when a user hovers over a form field or tab.
     */
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the information in the tab is underlined.
     */
-  var underline: js.UndefOr[String] = js.native
+  var underline: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `underline` property is editable.
     */
-  var underlineMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var underlineMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, ZIP+4 format is used.
     */
-  var useDash4: js.UndefOr[String] = js.native
+  var useDash4: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `useDash4` property is editable.
     */
-  var useDash4Metadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var useDash4Metadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The message displayed if the custom tab fails input validation (either custom of embedded).
     */
-  var validationMessage: js.UndefOr[String] = js.native
+  var validationMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `validationMessage` property is editable.
     */
-  var validationMessageMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var validationMessageMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * A regular expression used to validate input for the tab.
     */
-  var validationPattern: js.UndefOr[String] = js.native
+  var validationPattern: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `validationPattern` property is editable.
     */
-  var validationPatternMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var validationPatternMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Specifies the value of the tab.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `value` property is editable.
     */
-  var valueMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var valueMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The width of the tab in pixels.
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `width` property is editable.
     */
-  var widthMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var widthMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * This property indicates the horizontal offset of the object on the page.
@@ -713,22 +711,22 @@ trait Zip extends StObject {
     * Required. May be zero.
     *
     */
-  var xPosition: js.UndefOr[String] = js.native
+  var xPosition: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `xPosition` property is editable.
     */
-  var xPositionMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var xPositionMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * This indicates the vertical offset of the object on the page. DocuSign uses 72 DPI when determining position.
     */
-  var yPosition: js.UndefOr[String] = js.native
+  var yPosition: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `yPosition` property is editable.
     */
-  var yPositionMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var yPositionMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
 }
 object Zip {
   

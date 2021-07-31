@@ -3,7 +3,6 @@ package typings.chromeApps.chrome
 import typings.std.SubtleCrypto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object enterprise {
@@ -34,7 +33,6 @@ object enterprise {
     */
   object platformKeys {
     
-    @js.native
     trait Token extends StObject {
       
       /**
@@ -42,7 +40,7 @@ object enterprise {
         * Static IDs are 'user' and 'system', referring to the platform's user-specific and the system-wide hardware token, respectively.
         * Any other tokens (with other identifiers) might be returned by enterprise.platformKeys.getTokens.
         */
-      var id: String = js.native
+      var id: String
       
       /**
         * Implements the WebCrypto's SubtleCrypto interface.
@@ -53,7 +51,7 @@ object enterprise {
         * nor can they be used with window.crypto.subtle. Equally,
         * Key objects created with window.crypto.subtle cannot be used with this interface.
         */
-      var subtleCrypto: SubtleCrypto = js.native
+      var subtleCrypto: SubtleCrypto
     }
     object Token {
       

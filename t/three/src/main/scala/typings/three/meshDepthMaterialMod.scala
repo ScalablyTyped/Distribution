@@ -6,7 +6,6 @@ import typings.three.materialMod.MaterialParameters
 import typings.three.textureMod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meshDepthMaterialMod {
@@ -59,24 +58,25 @@ object meshDepthMaterialMod {
     var wireframeLinewidth: Double = js.native
   }
   
-  @js.native
-  trait MeshDepthMaterialParameters extends MaterialParameters {
+  trait MeshDepthMaterialParameters
+    extends StObject
+       with MaterialParameters {
     
-    var alphaMap: js.UndefOr[Texture | Null] = js.native
+    var alphaMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var depthPacking: js.UndefOr[DepthPackingStrategies] = js.native
+    var depthPacking: js.UndefOr[DepthPackingStrategies] = js.undefined
     
-    var displacementBias: js.UndefOr[Double] = js.native
+    var displacementBias: js.UndefOr[Double] = js.undefined
     
-    var displacementMap: js.UndefOr[Texture | Null] = js.native
+    var displacementMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var displacementScale: js.UndefOr[Double] = js.native
+    var displacementScale: js.UndefOr[Double] = js.undefined
     
-    var map: js.UndefOr[Texture | Null] = js.native
+    var map: js.UndefOr[Texture | Null] = js.undefined
     
-    var wireframe: js.UndefOr[Boolean] = js.native
+    var wireframe: js.UndefOr[Boolean] = js.undefined
     
-    var wireframeLinewidth: js.UndefOr[Double] = js.native
+    var wireframeLinewidth: js.UndefOr[Double] = js.undefined
   }
   object MeshDepthMaterialParameters {
     

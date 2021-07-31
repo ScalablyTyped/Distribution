@@ -2,20 +2,18 @@ package typings.googleapis.webmastersV3Mod.webmastersV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List of sitemaps.
   */
-@js.native
 trait SchemaSitemapsListResponse extends StObject {
   
   /**
     * Contains detailed information about a specific URL submitted as a
     * sitemap.
     */
-  var sitemap: js.UndefOr[js.Array[SchemaWmxSitemap]] = js.native
+  var sitemap: js.UndefOr[js.Array[SchemaWmxSitemap]] = js.undefined
 }
 object SchemaSitemapsListResponse {
   

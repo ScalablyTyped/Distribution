@@ -4,64 +4,51 @@ import typings.rxjs.typesMod.OperatorFunction
 import typings.rxjs.typesMod.SchedulerLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bufferTimeMod {
   
-  @JSImport("rxjs/internal/operators/bufferTime", "bufferTime")
+  @JSImport("rxjs/internal/operators/bufferTime", JSImport.Namespace)
   @js.native
-  def bufferTime[T](bufferTimeSpan: Double): OperatorFunction[T, js.Array[T]] = js.native
-  @JSImport("rxjs/internal/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: js.UndefOr[scala.Nothing], maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
-  @JSImport("rxjs/internal/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](
-    bufferTimeSpan: Double,
-    bufferCreationInterval: js.UndefOr[scala.Nothing],
-    maxBufferSize: Double,
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, js.Array[T]] = js.native
-  @JSImport("rxjs/internal/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](
-    bufferTimeSpan: Double,
-    bufferCreationInterval: js.UndefOr[scala.Nothing],
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, js.Array[T]] = js.native
-  @JSImport("rxjs/internal/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double): OperatorFunction[T, js.Array[T]] = js.native
-  @JSImport("rxjs/internal/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
-  @JSImport("rxjs/internal/operators/bufferTime", "bufferTime")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def bufferTime[T](bufferTimeSpan: Double): OperatorFunction[T, js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, js.Array[T]]]
+  @scala.inline
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double): OperatorFunction[T, js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.Array[T]]]
+  @scala.inline
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], maxBufferSize.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.Array[T]]]
+  @scala.inline
   def bufferTime[T](
     bufferTimeSpan: Double,
     bufferCreationInterval: Double,
     maxBufferSize: Double,
     scheduler: SchedulerLike
-  ): OperatorFunction[T, js.Array[T]] = js.native
-  @JSImport("rxjs/internal/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = js.native
-  @JSImport("rxjs/internal/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
-  @JSImport("rxjs/internal/operators/bufferTime", "bufferTime")
-  @js.native
+  ): OperatorFunction[T, js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], maxBufferSize.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.Array[T]]]
+  @scala.inline
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.Array[T]]]
+  @scala.inline
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], maxBufferSize.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.Array[T]]]
+  @scala.inline
   def bufferTime[T](
     bufferTimeSpan: Double,
     bufferCreationInterval: Null,
     maxBufferSize: Double,
     scheduler: SchedulerLike
-  ): OperatorFunction[T, js.Array[T]] = js.native
-  @JSImport("rxjs/internal/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = js.native
-  @JSImport("rxjs/internal/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](bufferTimeSpan: Double, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = js.native
+  ): OperatorFunction[T, js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], maxBufferSize.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.Array[T]]]
+  @scala.inline
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.Array[T]]]
+  @scala.inline
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Unit, maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], maxBufferSize.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.Array[T]]]
+  @scala.inline
+  def bufferTime[T](
+    bufferTimeSpan: Double,
+    bufferCreationInterval: Unit,
+    maxBufferSize: Double,
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], maxBufferSize.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.Array[T]]]
+  @scala.inline
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Unit, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.Array[T]]]
+  @scala.inline
+  def bufferTime[T](bufferTimeSpan: Double, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.Array[T]]]
 }

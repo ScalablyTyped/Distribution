@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMatchmakingConfigurationsOutput extends StObject {
   
   /**
     * A collection of requested matchmaking configurations.
     */
-  var Configurations: js.UndefOr[MatchmakingConfigurationList] = js.native
+  var Configurations: js.UndefOr[MatchmakingConfigurationList] = js.undefined
   
   /**
     * A token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
     */
-  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.native
+  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
 object DescribeMatchmakingConfigurationsOutput {
   

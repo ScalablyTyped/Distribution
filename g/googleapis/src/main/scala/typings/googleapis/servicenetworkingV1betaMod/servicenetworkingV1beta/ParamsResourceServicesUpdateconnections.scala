@@ -6,22 +6,22 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceServicesUpdateconnections extends StandardParameters {
+trait ParamsResourceServicesUpdateconnections
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * If a previously defined allocated range is removed, force flag must be
     * set to true.
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The service producer peering service that is managing peering
@@ -29,18 +29,18 @@ trait ParamsResourceServicesUpdateconnections extends StandardParameters {
     * that support this functionality, this is
     * `services/servicenetworking.googleapis.com`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaConnection] = js.native
+  var requestBody: js.UndefOr[SchemaConnection] = js.undefined
   
   /**
     * The update mask. If this is omitted, it defaults to "*". You can only
     * update the listed peering ranges.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceServicesUpdateconnections {
   

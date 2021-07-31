@@ -5,25 +5,23 @@ import typings.rtpParser.rtpParserStrings.A
 import typings.rtpParser.rtpParserStrings.L16
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `9` extends StObject {
   
-  var channels: typings.rtpParser.rtpParserNumbers.`1` = js.native
+  var channels: typings.rtpParser.rtpParserNumbers.`1`
   
-  var clockRate: `44100` = js.native
+  var clockRate: `44100`
   
-  var mediaType: A = js.native
+  var mediaType: A
   
-  var name: L16 = js.native
+  var name: L16
 }
 object `9` {
   
   @scala.inline
-  def apply(channels: typings.rtpParser.rtpParserNumbers.`1`, clockRate: `44100`, mediaType: A, name: L16): `9` = {
-    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], clockRate = clockRate.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(): `9` = {
+    val __obj = js.Dynamic.literal(channels = 1, clockRate = 44100, mediaType = "A", name = "L16")
     __obj.asInstanceOf[`9`]
   }
   

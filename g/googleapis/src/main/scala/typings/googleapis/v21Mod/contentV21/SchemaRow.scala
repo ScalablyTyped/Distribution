@@ -2,10 +2,8 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRow extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaRow extends StObject {
     * columnHeaders for two-dimensional tables, a length of 1 for
     * one-dimensional tables. Required.
     */
-  var cells: js.UndefOr[js.Array[SchemaValue]] = js.native
+  var cells: js.UndefOr[js.Array[SchemaValue]] = js.undefined
 }
 object SchemaRow {
   

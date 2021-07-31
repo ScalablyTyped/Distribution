@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormDataItem extends StObject {
   
   /**
@@ -13,27 +11,27 @@ trait FormDataItem extends StObject {
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The selected value in a list.
     */
-  var listSelectedValue: js.UndefOr[String] = js.native
+  var listSelectedValue: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the form field.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The initial value associated with the form field.
     */
-  var originalValue: js.UndefOr[String] = js.native
+  var originalValue: js.UndefOr[String] = js.undefined
   
   /**
     * The current value associated with the form field.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object FormDataItem {
   

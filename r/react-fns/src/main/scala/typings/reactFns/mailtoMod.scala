@@ -5,7 +5,6 @@ import typings.react.mod.SFC
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mailtoMod {
@@ -14,18 +13,19 @@ object mailtoMod {
   @js.native
   val Mailto: SFC[MailtoProps] = js.native
   
-  @js.native
-  trait MailtoProps extends HTMLAttributes[HTMLAnchorElement] {
+  trait MailtoProps
+    extends StObject
+       with HTMLAttributes[HTMLAnchorElement] {
     
-    var bcc: js.UndefOr[js.Array[String]] = js.native
+    var bcc: js.UndefOr[js.Array[String]] = js.undefined
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var cc: js.UndefOr[js.Array[String]] = js.native
+    var cc: js.UndefOr[js.Array[String]] = js.undefined
     
-    var email: String = js.native
+    var email: String
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
   }
   object MailtoProps {
     

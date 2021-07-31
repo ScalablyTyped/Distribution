@@ -2,42 +2,40 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartTagAction extends StObject {
   
-  val ActiveXControl: js.Any = js.native
+  val ActiveXControl: js.Any
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var CheckboxState: Boolean = js.native
+  var CheckboxState: Boolean
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Execute(): Unit = js.native
+  def Execute(): Unit
   
-  var ExpandDocumentFragment: Boolean = js.native
+  var ExpandDocumentFragment: Boolean
   
-  var ExpandHelp: Boolean = js.native
+  var ExpandHelp: Boolean
   
-  var ListSelection: Double = js.native
+  var ListSelection: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PresentInPane: Boolean = js.native
+  val PresentInPane: Boolean
   
-  var RadioGroupSelection: Double = js.native
+  var RadioGroupSelection: Double
   
-  var TextboxText: String = js.native
+  var TextboxText: String
   
-  val Type: WdSmartTagControlType = js.native
+  val Type: WdSmartTagControlType
   
   @JSName("Word.SmartTagAction_typekey")
-  var WordDotSmartTagAction_typekey: SmartTagAction = js.native
+  var WordDotSmartTagAction_typekey: SmartTagAction
 }
 object SmartTagAction {
   

@@ -2,17 +2,15 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CandidatesParameters extends StObject {
   
   /** List of candidates to show in the candidate window */
-  var candidates: js.Array[CandidateTemplate] = js.native
+  var candidates: js.Array[CandidateTemplate]
   
   /** ID of the context that owns the candidate window. */
-  var contextID: Double = js.native
+  var contextID: Double
 }
 object CandidatesParameters {
   

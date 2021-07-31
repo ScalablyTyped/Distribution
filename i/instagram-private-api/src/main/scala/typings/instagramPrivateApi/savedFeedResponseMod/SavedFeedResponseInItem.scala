@@ -2,21 +2,19 @@ package typings.instagramPrivateApi.savedFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedFeedResponseInItem extends StObject {
   
-  var duration_in_video_in_sec: js.UndefOr[Null] = js.native
+  var duration_in_video_in_sec: js.UndefOr[Null] = js.undefined
   
-  var position: js.Array[Double | String] = js.native
+  var position: js.Array[Double | String]
   
-  var product: js.UndefOr[SavedFeedResponseProduct] = js.native
+  var product: js.UndefOr[SavedFeedResponseProduct] = js.undefined
   
-  var start_time_in_video_in_sec: js.UndefOr[Null] = js.native
+  var start_time_in_video_in_sec: js.UndefOr[Null] = js.undefined
   
-  var user: js.UndefOr[SavedFeedResponseUser] = js.native
+  var user: js.UndefOr[SavedFeedResponseUser] = js.undefined
 }
 object SavedFeedResponseInItem {
   

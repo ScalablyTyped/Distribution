@@ -2,17 +2,15 @@ package typings.mongodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait N extends StObject {
   
   //The total count of documents deleted.
-  var n: js.UndefOr[Double] = js.native
+  var n: js.UndefOr[Double] = js.undefined
   
   //Is 1 if the command executed correctly.
-  var ok: js.UndefOr[Double] = js.native
+  var ok: js.UndefOr[Double] = js.undefined
 }
 object N {
   

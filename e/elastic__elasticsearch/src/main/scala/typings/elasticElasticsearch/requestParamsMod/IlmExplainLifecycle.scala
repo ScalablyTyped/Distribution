@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IlmExplainLifecycle extends Generic {
+trait IlmExplainLifecycle
+  extends StObject
+     with Generic {
   
-  var index: String = js.native
+  var index: String
   
-  var only_errors: js.UndefOr[Boolean] = js.native
+  var only_errors: js.UndefOr[Boolean] = js.undefined
   
-  var only_managed: js.UndefOr[Boolean] = js.native
+  var only_managed: js.UndefOr[Boolean] = js.undefined
 }
 object IlmExplainLifecycle {
   

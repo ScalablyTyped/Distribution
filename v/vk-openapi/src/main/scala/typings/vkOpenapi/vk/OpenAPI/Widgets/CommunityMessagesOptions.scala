@@ -4,33 +4,31 @@ import typings.vkOpenapi.vk.OpenAPI.NumericBoolean
 import typings.vkOpenapi.vkOpenapiNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommunityMessagesOptions extends StObject {
   
-  var buttonType: js.UndefOr[String] = js.native
+  var buttonType: js.UndefOr[String] = js.undefined
   
-  var disableButtonTooltip: js.UndefOr[`1`] = js.native
+  var disableButtonTooltip: js.UndefOr[`1`] = js.undefined
   
-  var disableExpandChatSound: js.UndefOr[`1`] = js.native
+  var disableExpandChatSound: js.UndefOr[`1`] = js.undefined
   
-  var disableNewMessagesSound: js.UndefOr[`1`] = js.native
+  var disableNewMessagesSound: js.UndefOr[`1`] = js.undefined
   
-  var disableTitleChange: js.UndefOr[`1`] = js.native
+  var disableTitleChange: js.UndefOr[`1`] = js.undefined
   
-  var expandTimeout: js.UndefOr[Double] = js.native
+  var expandTimeout: js.UndefOr[Double] = js.undefined
   
-  var expanded: js.UndefOr[`1`] = js.native
+  var expanded: js.UndefOr[`1`] = js.undefined
   
-  var onCanNotWrite: js.UndefOr[js.Function1[/* reason */ OnCanNotWriteReason, Unit]] = js.native
+  var onCanNotWrite: js.UndefOr[js.Function1[/* reason */ OnCanNotWriteReason, Unit]] = js.undefined
   
-  var tooltipButtonText: js.UndefOr[String] = js.native
+  var tooltipButtonText: js.UndefOr[String] = js.undefined
   
-  var welcomeScreen: js.UndefOr[NumericBoolean] = js.native
+  var welcomeScreen: js.UndefOr[NumericBoolean] = js.undefined
   
-  var widgetPosition: js.UndefOr[String] = js.native
+  var widgetPosition: js.UndefOr[String] = js.undefined
 }
 object CommunityMessagesOptions {
   

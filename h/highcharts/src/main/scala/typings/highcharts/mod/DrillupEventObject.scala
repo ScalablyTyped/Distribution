@@ -3,38 +3,36 @@ package typings.highcharts.mod
 import typings.highcharts.highchartsStrings.drillup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrillupEventObject extends StObject {
   
   /**
     * Prevents the default behaviour of the event.
     */
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
   /**
     * Options for the new series.
     */
-  var seriesOptions: js.UndefOr[SeriesOptionsType] = js.native
+  var seriesOptions: js.UndefOr[SeriesOptionsType] = js.undefined
   
   /**
     * The event target.
     */
-  var target: Chart_ = js.native
+  var target: Chart_
   
   /**
     * The event type.
     */
-  var `type`: drillup = js.native
+  var `type`: drillup
 }
 object DrillupEventObject {
   
   @scala.inline
-  def apply(preventDefault: js.Function, target: Chart_, `type`: drillup): DrillupEventObject = {
+  def apply(preventDefault: js.Function, target: Chart_): DrillupEventObject = {
     val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("drillup")
     __obj.asInstanceOf[DrillupEventObject]
   }
   

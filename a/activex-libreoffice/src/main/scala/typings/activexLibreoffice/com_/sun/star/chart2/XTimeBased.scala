@@ -4,22 +4,22 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XTimeBased extends XInterface {
+trait XTimeBased
+  extends StObject
+     with XInterface {
   
-  def setRange(start: Double, end: Double): Unit = js.native
+  def setRange(start: Double, end: Double): Unit
   
   /**
     * point is the zero based index into the time based array
     * @returns FALSE if the point is outside of the supported array
     */
-  def setToPointInTime(point: Double): Boolean = js.native
+  def setToPointInTime(point: Double): Boolean
   
   /** @returns FALSE if the data wrapped around */
-  def switchToNext(wrap: Boolean): Boolean = js.native
+  def switchToNext(wrap: Boolean): Boolean
 }
 object XTimeBased {
   

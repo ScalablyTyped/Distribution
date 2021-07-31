@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about which values in a pivot group should be used for sorting.
   */
-@js.native
 trait SchemaPivotGroupSortValueBucket extends StObject {
   
   /**
@@ -21,13 +19,13 @@ trait SchemaPivotGroupSortValueBucket extends StObject {
     * Total&quot; over the column groups. If a single value is listed, this
     * would correspond to using the &quot;Total&quot; of that bucket.
     */
-  var buckets: js.UndefOr[js.Array[SchemaExtendedValue]] = js.native
+  var buckets: js.UndefOr[js.Array[SchemaExtendedValue]] = js.undefined
   
   /**
     * The offset in the PivotTable.values list which the values in this
     * grouping should be sorted by.
     */
-  var valuesIndex: js.UndefOr[Double] = js.native
+  var valuesIndex: js.UndefOr[Double] = js.undefined
 }
 object SchemaPivotGroupSortValueBucket {
   

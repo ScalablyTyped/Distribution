@@ -2,14 +2,12 @@ package typings.nodemailer.smtpConnectionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationOAuth2 extends StObject {
   
   /**  if set then forces smtp-connection to use XOAuth2 for authentication */
-  var oauth2: OAuth2 = js.native
+  var oauth2: OAuth2
 }
 object AuthenticationOAuth2 {
   

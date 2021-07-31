@@ -4,17 +4,17 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.task.XInteractionContinuation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interaction continuation specifying authentication success.
   * @since LibreOffice 4.4
   */
-@js.native
-trait XInteractionAuthFallback extends XInteractionContinuation {
+trait XInteractionAuthFallback
+  extends StObject
+     with XInteractionContinuation {
   
-  def setCode(code: String): Unit = js.native
+  def setCode(code: String): Unit
 }
 object XInteractionAuthFallback {
   

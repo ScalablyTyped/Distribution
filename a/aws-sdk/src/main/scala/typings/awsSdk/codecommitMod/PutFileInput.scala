@@ -2,56 +2,54 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutFileInput extends StObject {
   
   /**
     * The name of the branch where you want to add or update the file. If this is an empty repository, this branch is created.
     */
-  var branchName: BranchName = js.native
+  var branchName: BranchName
   
   /**
     * A message about why this file was added or updated. Although it is optional, a message makes the commit history for your repository more useful.
     */
-  var commitMessage: js.UndefOr[Message] = js.native
+  var commitMessage: js.UndefOr[Message] = js.undefined
   
   /**
     * An email address for the person adding or updating the file.
     */
-  var email: js.UndefOr[Email] = js.native
+  var email: js.UndefOr[Email] = js.undefined
   
   /**
     * The content of the file, in binary object format. 
     */
-  var fileContent: FileContent = js.native
+  var fileContent: FileContent
   
   /**
     * The file mode permissions of the blob. Valid file mode permissions are listed here.
     */
-  var fileMode: js.UndefOr[FileModeTypeEnum] = js.native
+  var fileMode: js.UndefOr[FileModeTypeEnum] = js.undefined
   
   /**
     * The name of the file you want to add or update, including the relative path to the file in the repository.  If the path does not currently exist in the repository, the path is created as part of adding the file. 
     */
-  var filePath: Path = js.native
+  var filePath: Path
   
   /**
     * The name of the person adding or updating the file. Although it is optional, a name makes the commit history for your repository more useful.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The full commit ID of the head commit in the branch where you want to add or update the file. If this is an empty repository, no commit ID is required. If this is not an empty repository, a commit ID is required.  The commit ID must match the ID of the head commit at the time of the operation. Otherwise, an error occurs, and the file is not added or updated.
     */
-  var parentCommitId: js.UndefOr[CommitId] = js.native
+  var parentCommitId: js.UndefOr[CommitId] = js.undefined
   
   /**
     * The name of the repository where you want to add or update the file.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object PutFileInput {
   

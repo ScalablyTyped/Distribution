@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CorpusQuery extends StObject {
   
   /** Details pertaining to Drive holds. If set, corpus must be Drive. */
-  var driveQuery: js.UndefOr[HeldDriveQuery] = js.native
+  var driveQuery: js.UndefOr[HeldDriveQuery] = js.undefined
   
   /** Details pertaining to Groups holds. If set, corpus must be Groups. */
-  var groupsQuery: js.UndefOr[HeldGroupsQuery] = js.native
+  var groupsQuery: js.UndefOr[HeldGroupsQuery] = js.undefined
   
   /** Details pertaining to Hangouts Chat holds. If set, corpus must be Hangouts Chat. */
-  var hangoutsChatQuery: js.UndefOr[HeldHangoutsChatQuery] = js.native
+  var hangoutsChatQuery: js.UndefOr[HeldHangoutsChatQuery] = js.undefined
   
   /** Details pertaining to mail holds. If set, corpus must be mail. */
-  var mailQuery: js.UndefOr[HeldMailQuery] = js.native
+  var mailQuery: js.UndefOr[HeldMailQuery] = js.undefined
 }
 object CorpusQuery {
   

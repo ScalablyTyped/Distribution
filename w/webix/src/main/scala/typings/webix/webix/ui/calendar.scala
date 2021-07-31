@@ -6,11 +6,12 @@ import typings.webix.webix.Date
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait calendar extends baseview {
+trait calendar
+  extends StObject
+     with baseview {
   
   @JSName("$scope")
   var $scope: js.Any = js.native
@@ -20,7 +21,7 @@ trait calendar extends baseview {
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   @JSName("config")
   var config_calendar: calendarConfig = js.native

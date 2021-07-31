@@ -3,42 +3,40 @@ package typings.activexWord.Word
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comment extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Author: String = js.native
+  var Author: String
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Date: VarDate = js.native
+  val Date: VarDate
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  def Edit(): Unit = js.native
+  def Edit(): Unit
   
-  val Index: Double = js.native
+  val Index: Double
   
-  var Initial: String = js.native
+  var Initial: String
   
-  val IsInk: Boolean = js.native
+  val IsInk: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  val Reference: typings.activexWord.Word.Range = js.native
+  val Reference: typings.activexWord.Word.Range
   
-  val Scope: typings.activexWord.Word.Range = js.native
+  val Scope: typings.activexWord.Word.Range
   
-  var ShowTip: Boolean = js.native
+  var ShowTip: Boolean
   
   @JSName("Word.Comment_typekey")
-  var WordDotComment_typekey: Comment = js.native
+  var WordDotComment_typekey: Comment
 }
 object Comment {
   

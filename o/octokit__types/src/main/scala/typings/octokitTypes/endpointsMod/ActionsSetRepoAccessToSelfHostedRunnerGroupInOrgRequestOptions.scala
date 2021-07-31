@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: PUT = js.native
+  var method: PUT
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: `SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories` = js.native
+  var url: `SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`
 }
 object ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: PUT,
-    request: RequestRequestOptions,
-    url: `SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`
-  ): ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PUT", request = request.asInstanceOf[js.Any], url = "/orgs/:org/actions/runner-groups/:runner_group_id/repositories")
     __obj.asInstanceOf[ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgRequestOptions]
   }
   

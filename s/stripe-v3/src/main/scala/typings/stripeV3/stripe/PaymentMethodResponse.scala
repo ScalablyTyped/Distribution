@@ -3,15 +3,13 @@ package typings.stripeV3.stripe
 import typings.stripeV3.stripe.paymentMethod.PaymentMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentMethodResponse extends StObject {
   
-  var error: js.UndefOr[Error] = js.native
+  var error: js.UndefOr[Error] = js.undefined
   
-  var paymentMethod: js.UndefOr[PaymentMethod] = js.native
+  var paymentMethod: js.UndefOr[PaymentMethod] = js.undefined
 }
 object PaymentMethodResponse {
   

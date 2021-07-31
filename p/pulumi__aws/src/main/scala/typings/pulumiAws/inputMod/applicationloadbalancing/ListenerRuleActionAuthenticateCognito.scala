@@ -4,51 +4,49 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenerRuleActionAuthenticateCognito extends StObject {
   
   /**
     * The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
     */
-  var authenticationRequestExtraParams: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var authenticationRequestExtraParams: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   
   /**
     * The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
     */
-  var onUnauthenticatedRequest: js.UndefOr[Input[String]] = js.native
+  var onUnauthenticatedRequest: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The set of user claims to be requested from the IdP.
     */
-  var scope: js.UndefOr[Input[String]] = js.native
+  var scope: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The name of the cookie used to maintain session information.
     */
-  var sessionCookieName: js.UndefOr[Input[String]] = js.native
+  var sessionCookieName: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The maximum duration of the authentication session, in seconds.
     */
-  var sessionTimeout: js.UndefOr[Input[Double]] = js.native
+  var sessionTimeout: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The ARN of the Cognito user pool.
     */
-  var userPoolArn: Input[String] = js.native
+  var userPoolArn: Input[String]
   
   /**
     * The ID of the Cognito user pool client.
     */
-  var userPoolClientId: Input[String] = js.native
+  var userPoolClientId: Input[String]
   
   /**
     * The domain prefix or fully-qualified domain name of the Cognito user pool.
     */
-  var userPoolDomain: Input[String] = js.native
+  var userPoolDomain: Input[String]
 }
 object ListenerRuleActionAuthenticateCognito {
   

@@ -2,18 +2,16 @@ package typings.foundation.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/reveal.html
-@js.native
 trait RevealCSSOptions extends StObject {
   
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object RevealCSSOptions {
   

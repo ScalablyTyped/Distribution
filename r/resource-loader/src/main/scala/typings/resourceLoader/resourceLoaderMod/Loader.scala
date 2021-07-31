@@ -9,7 +9,6 @@ import typings.resourceLoader.resourceLoaderMod.Loader.OnStartSignal
 import typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,8 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Loader () extends StObject {
   def this(baseUrl: String) = this()
-  def this(baseUrl: js.UndefOr[scala.Nothing], concurrency: Double) = this()
   def this(baseUrl: String, concurrency: Double) = this()
+  def this(baseUrl: Unit, concurrency: Double) = this()
   
   /**
     * Adds a resource (or multiple resources) to the loader queue.
@@ -76,7 +75,7 @@ class Loader () extends StObject {
     */
   def add(name: String, url: String): this.type = js.native
   def add(name: String, url: String, callback: OnCompleteSignal): this.type = js.native
-  def add(name: String, url: String, options: js.UndefOr[scala.Nothing], callback: OnCompleteSignal): this.type = js.native
+  def add(name: String, url: String, options: Unit, callback: OnCompleteSignal): this.type = js.native
   def add(name: String, url: String, options: IAddOptions): this.type = js.native
   def add(name: String, url: String, options: IAddOptions, callback: OnCompleteSignal): this.type = js.native
   /** @function
@@ -104,7 +103,7 @@ class Loader () extends StObject {
     */
   def add(url: String): this.type = js.native
   def add(url: String, callback: OnCompleteSignal): this.type = js.native
-  def add(url: String, options: js.UndefOr[scala.Nothing], callback: OnCompleteSignal): this.type = js.native
+  def add(url: String, options: Unit, callback: OnCompleteSignal): this.type = js.native
   def add(url: String, options: IAddOptions): this.type = js.native
   def add(url: String, options: IAddOptions, callback: OnCompleteSignal): this.type = js.native
   
@@ -155,7 +154,7 @@ class Loader () extends StObject {
     * @return {this} Returns itself.
     */
   def load(): this.type = js.native
-  def load(cb: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def load(cb: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
   
   /**
     * Loading state of the loader, true if it is currently loading resources.
@@ -217,7 +216,7 @@ class Loader () extends StObject {
     * @param {function} fn - The middleware function to register.
     * @return {this} Returns itself.
     */
-  def pre(fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def pre(fn: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
   
   /**
     * The progress percent of the loader going through the queue.
@@ -248,9 +247,13 @@ class Loader () extends StObject {
     * @param {function} fn - The middleware function to register.
     * @return {this} Returns itself.
     */
-  def use(fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def use(fn: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
 }
 object Loader {
+  
+  @JSImport("resource-loader", "Loader")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Sets up a middleware function that will run *before* the
@@ -261,9 +264,8 @@ object Loader {
     * @return {Loader} Returns itself.
     */
   /* static member */
-  @JSImport("resource-loader", "Loader.pre")
-  @js.native
-  def pre(fn: js.Function1[/* repeated */ js.Any, _]): Loader = js.native
+  @scala.inline
+  def pre(fn: js.Function1[/* repeated */ js.Any, js.Any]): Loader = ^.asInstanceOf[js.Dynamic].applyDynamic("pre")(fn.asInstanceOf[js.Any]).asInstanceOf[Loader]
   
   /**
     * Sets up a middleware function that will run *after* the
@@ -274,9 +276,8 @@ object Loader {
     * @return {Loader} Returns itself.
     */
   /* static member */
-  @JSImport("resource-loader", "Loader.use")
-  @js.native
-  def use(fn: js.Function1[/* repeated */ js.Any, _]): Loader = js.native
+  @scala.inline
+  def use(fn: js.Function1[/* repeated */ js.Any, js.Any]): Loader = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(fn.asInstanceOf[js.Any]).asInstanceOf[Loader]
   
   /**
     * When the loader completes loading resources it dispatches this callback.

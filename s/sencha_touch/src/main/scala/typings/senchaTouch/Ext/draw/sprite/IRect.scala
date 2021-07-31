@@ -2,33 +2,33 @@ package typings.senchaTouch.Ext.draw.sprite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IRect extends IPath {
+trait IRect
+  extends StObject
+     with IPath {
   
   /** [Config Option] (Number) */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /** [Method] Update the path
     * @param path Object
     * @param attr Object
     */
   @JSName("updatePath")
-  var updatePath_IRect: js.UndefOr[js.Function2[/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any], Unit]] = js.native
+  var updatePath_IRect: js.UndefOr[js.Function2[/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object IRect {
   

@@ -5,23 +5,23 @@ import typings.materialSelect.iconFoundationMod.MDCSelectIconFoundation
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   @js.native
-  trait MDCSelectEvent extends Event {
+  trait MDCSelectEvent
+    extends StObject
+       with Event {
     
     val detail: MDCSelectEventDetail = js.native
   }
   
-  @js.native
   trait MDCSelectEventDetail extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var value: String = js.native
+    var value: String
   }
   object MDCSelectEventDetail {
     
@@ -42,12 +42,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait MDCSelectFoundationMap extends StObject {
     
-    var helperText: MDCSelectHelperTextFoundation = js.native
+    var helperText: MDCSelectHelperTextFoundation
     
-    var leadingIcon: MDCSelectIconFoundation = js.native
+    var leadingIcon: MDCSelectIconFoundation
   }
   object MDCSelectFoundationMap {
     

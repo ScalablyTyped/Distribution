@@ -9,51 +9,49 @@ import typings.phaser.Phaser.Device.OS
 import typings.phaser.Phaser.Device.Video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceConf extends StObject {
   
   /**
     * The Audio Device functions.
     */
-  var audio: Audio = js.native
+  var audio: Audio
   
   /**
     * The Browser Device functions.
     */
-  var browser: Browser = js.native
+  var browser: Browser
   
   /**
     * The Canvas Device functions.
     */
-  var canvasFeatures: CanvasFeatures = js.native
+  var canvasFeatures: CanvasFeatures
   
   /**
     * The Features Device functions.
     */
-  var features: Features = js.native
+  var features: Features
   
   /**
     * The Fullscreen Device functions.
     */
-  var fullscreen: Fullscreen = js.native
+  var fullscreen: Fullscreen
   
   /**
     * The Input Device functions.
     */
-  var input: typings.phaser.Phaser.Device.Input = js.native
+  var input: typings.phaser.Phaser.Device.Input
   
   /**
     * The OS Device functions.
     */
-  var os: OS = js.native
+  var os: OS
   
   /**
     * The Video Device functions.
     */
-  var video: Video = js.native
+  var video: Video
 }
 object DeviceConf {
   

@@ -14,7 +14,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameReplace
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This service extends {@link GroupAccess} to support modifying values.
   */
-@js.native
 trait GroupUpdate
-  extends GroupAccess
+  extends StObject
+     with GroupAccess
      with XNameReplace {
   
   /**
@@ -33,14 +32,14 @@ trait GroupUpdate
     * @returns `NULL` if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XHierarchicalPropertySet
     */
   /* InferMemberOverrides */
-  override def getHierarchicalPropertySetInfo(): XHierarchicalPropertySetInfo = js.native
+  override def getHierarchicalPropertySetInfo(): XHierarchicalPropertySetInfo
   
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
     */
   /* InferMemberOverrides */
-  override def getPropertySetInfo(): XPropertySetInfo = js.native
+  override def getPropertySetInfo(): XPropertySetInfo
   
   /**
     * @param aPropertyName contains the sequence of property names.
@@ -48,7 +47,7 @@ trait GroupUpdate
     * @throws UnknownPropertyException if one property does not exist.
     */
   /* InferMemberOverrides */
-  override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState] = js.native
+  override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState]
 }
 object GroupUpdate {
   
@@ -72,16 +71,16 @@ object GroupUpdate {
     getExactName: String => String,
     getHierarchicalPropertySetInfo: () => XHierarchicalPropertySetInfo,
     getHierarchicalPropertyValue: String => js.Any,
-    getHierarchicalPropertyValues: SeqEquiv[String] => SafeArray[_],
+    getHierarchicalPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
     getProperties: () => SafeArray[Property],
     getPropertyByName: String => Property,
     getPropertyDefault: String => js.Any,
-    getPropertyDefaults: SeqEquiv[String] => SafeArray[_],
+    getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyState: String => PropertyState,
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],
     getPropertyValue: String => js.Any,
-    getPropertyValues: SeqEquiv[String] => SafeArray[_],
+    getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
     hasByHierarchicalName: String => Boolean,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
@@ -95,11 +94,11 @@ object GroupUpdate {
     replaceByName: (String, js.Any) => Unit,
     setAllPropertiesToDefault: () => Unit,
     setHierarchicalPropertyValue: (String, js.Any) => Unit,
-    setHierarchicalPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit,
+    setHierarchicalPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit,
     setPropertiesToDefault: SeqEquiv[String] => Unit,
     setPropertyToDefault: String => Unit,
     setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit
+    setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit
   ): GroupUpdate = {
     val __obj = js.Dynamic.literal(ElementNames = ElementNames.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], HierarchicalPropertySetInfo = HierarchicalPropertySetInfo.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addContainerListener = js.Any.fromFunction1(addContainerListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getByHierarchicalName = js.Any.fromFunction1(getByHierarchicalName), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), getExactName = js.Any.fromFunction1(getExactName), getHierarchicalPropertySetInfo = js.Any.fromFunction0(getHierarchicalPropertySetInfo), getHierarchicalPropertyValue = js.Any.fromFunction1(getHierarchicalPropertyValue), getHierarchicalPropertyValues = js.Any.fromFunction1(getHierarchicalPropertyValues), getProperties = js.Any.fromFunction0(getProperties), getPropertyByName = js.Any.fromFunction1(getPropertyByName), getPropertyDefault = js.Any.fromFunction1(getPropertyDefault), getPropertyDefaults = js.Any.fromFunction1(getPropertyDefaults), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyState = js.Any.fromFunction1(getPropertyState), getPropertyStates = js.Any.fromFunction1(getPropertyStates), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), hasByHierarchicalName = js.Any.fromFunction1(hasByHierarchicalName), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), hasPropertyByName = js.Any.fromFunction1(hasPropertyByName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeContainerListener = js.Any.fromFunction1(removeContainerListener), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), replaceByName = js.Any.fromFunction2(replaceByName), setAllPropertiesToDefault = js.Any.fromFunction0(setAllPropertiesToDefault), setHierarchicalPropertyValue = js.Any.fromFunction2(setHierarchicalPropertyValue), setHierarchicalPropertyValues = js.Any.fromFunction2(setHierarchicalPropertyValues), setPropertiesToDefault = js.Any.fromFunction1(setPropertiesToDefault), setPropertyToDefault = js.Any.fromFunction1(setPropertyToDefault), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues))
     __obj.asInstanceOf[GroupUpdate]

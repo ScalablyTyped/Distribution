@@ -2,17 +2,15 @@ package typings.asn1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait GrowthFactor extends StObject {
     
-    var growthFactor: Double = js.native
+    var growthFactor: Double
     
-    var size: Double = js.native
+    var size: Double
   }
   object GrowthFactor {
     

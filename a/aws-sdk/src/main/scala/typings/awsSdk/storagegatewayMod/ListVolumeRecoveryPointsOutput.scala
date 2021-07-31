@@ -2,18 +2,16 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListVolumeRecoveryPointsOutput extends StObject {
   
-  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
+  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
   
   /**
     * An array of VolumeRecoveryPointInfo objects.
     */
-  var VolumeRecoveryPointInfos: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeRecoveryPointInfos] = js.native
+  var VolumeRecoveryPointInfos: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeRecoveryPointInfos] = js.undefined
 }
 object ListVolumeRecoveryPointsOutput {
   

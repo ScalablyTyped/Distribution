@@ -2,21 +2,19 @@ package typings.backlogJs.mod.Option
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Wiki {
   
-  @js.native
   trait GetWikisHistoryParams extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var maxId: js.UndefOr[Double] = js.native
+    var maxId: js.UndefOr[Double] = js.undefined
     
-    var minId: js.UndefOr[Double] = js.native
+    var minId: js.UndefOr[Double] = js.undefined
     
-    var order: js.UndefOr[Order] = js.native
+    var order: js.UndefOr[Order] = js.undefined
   }
   object GetWikisHistoryParams {
     
@@ -55,14 +53,13 @@ object Wiki {
     }
   }
   
-  @js.native
   trait PatchWikiParams extends StObject {
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var mailNotify: js.UndefOr[Boolean] = js.native
+    var mailNotify: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object PatchWikiParams {
     
@@ -95,16 +92,15 @@ object Wiki {
     }
   }
   
-  @js.native
   trait PostWikiParams extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var mailNotify: js.UndefOr[Boolean] = js.native
+    var mailNotify: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var projectId: Double = js.native
+    var projectId: Double
   }
   object PostWikiParams {
     

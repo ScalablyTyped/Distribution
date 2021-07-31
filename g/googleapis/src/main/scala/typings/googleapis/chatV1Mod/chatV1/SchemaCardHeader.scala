@@ -2,33 +2,31 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCardHeader extends StObject {
   
   /**
     * The image&#39;s type (e.g. square border or circular border).
     */
-  var imageStyle: js.UndefOr[String] = js.native
+  var imageStyle: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the image in the card header.
     */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The subtitle of the card header.
     */
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
   /**
     * The title must be specified. The header has a fixed height: if both a
     * title and subtitle is specified, each will take up 1 line. If only the
     * title is specified, it will take up both lines.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaCardHeader {
   

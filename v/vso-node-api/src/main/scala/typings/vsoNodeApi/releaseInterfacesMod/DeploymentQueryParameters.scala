@@ -3,43 +3,41 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentQueryParameters extends StObject {
   
-  var artifactSourceId: String = js.native
+  var artifactSourceId: String
   
-  var artifactTypeId: String = js.native
+  var artifactTypeId: String
   
-  var artifactVersions: js.Array[String] = js.native
+  var artifactVersions: js.Array[String]
   
-  var deploymentStatus: DeploymentStatus = js.native
+  var deploymentStatus: DeploymentStatus
   
-  var deploymentsPerEnvironment: Double = js.native
+  var deploymentsPerEnvironment: Double
   
-  var environments: js.Array[DefinitionEnvironmentReference] = js.native
+  var environments: js.Array[DefinitionEnvironmentReference]
   
-  var expands: DeploymentExpands = js.native
+  var expands: DeploymentExpands
   
-  var isDeleted: Boolean = js.native
+  var isDeleted: Boolean
   
-  var latestDeploymentsOnly: Boolean = js.native
+  var latestDeploymentsOnly: Boolean
   
-  var maxDeploymentsPerEnvironment: Double = js.native
+  var maxDeploymentsPerEnvironment: Double
   
-  var maxModifiedTime: Date = js.native
+  var maxModifiedTime: Date
   
-  var minModifiedTime: Date = js.native
+  var minModifiedTime: Date
   
-  var operationStatus: DeploymentOperationStatus = js.native
+  var operationStatus: DeploymentOperationStatus
   
-  var queryOrder: ReleaseQueryOrder = js.native
+  var queryOrder: ReleaseQueryOrder
   
-  var queryType: DeploymentsQueryType = js.native
+  var queryType: DeploymentsQueryType
   
-  var sourceBranch: String = js.native
+  var sourceBranch: String
 }
 object DeploymentQueryParameters {
   

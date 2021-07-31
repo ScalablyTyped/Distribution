@@ -5,15 +5,13 @@ import typings.relayRuntime.relayRuntimeTypesMod.VariablesOf
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnComplete[TQuery /* <: OperationType */] extends StObject {
   
-  var UNSTABLE_extraVariables: js.UndefOr[Partial[VariablesOf[TQuery]]] = js.native
+  var UNSTABLE_extraVariables: js.UndefOr[Partial[VariablesOf[TQuery]]] = js.undefined
   
-  var onComplete: js.UndefOr[js.Function1[/* arg */ typings.std.Error | Null, Unit]] = js.native
+  var onComplete: js.UndefOr[js.Function1[/* arg */ typings.std.Error | Null, Unit]] = js.undefined
 }
 object OnComplete {
   
@@ -24,7 +22,7 @@ object OnComplete {
   }
   
   @scala.inline
-  implicit class OnCompleteMutableBuilder[Self <: OnComplete[_], TQuery /* <: OperationType */] (val x: Self with OnComplete[TQuery]) extends AnyVal {
+  implicit class OnCompleteMutableBuilder[Self <: OnComplete[?], TQuery /* <: OperationType */] (val x: Self & OnComplete[TQuery]) extends AnyVal {
     
     @scala.inline
     def setOnComplete(value: /* arg */ typings.std.Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))

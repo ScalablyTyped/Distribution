@@ -16,29 +16,27 @@ import typings.vegaTypings.valuesMod.StringValue
 import typings.vegaTypings.valuesMod.TextBaselineValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object titleMod {
   
-  @js.native
   trait BaseTitle extends StObject {
     
     // ---------- Shared Text Properties ----------
     /**
       * Horizontal text alignment for title text. One of `"left"`, `"center"`, or `"right"`.
       */
-    var align: js.UndefOr[AlignValue] = js.native
+    var align: js.UndefOr[AlignValue] = js.undefined
     
     /**
       * The anchor position for placing the title and subtitle text. One of `"start"`, `"middle"`, or `"end"`. For example, with an orientation of top these anchor positions map to a left-, center-, or right-aligned title.
       */
-    var anchor: js.UndefOr[AnchorValue] = js.native
+    var anchor: js.UndefOr[AnchorValue] = js.undefined
     
     /**
       * Angle in degrees of title and subtitle text.
       */
-    var angle: js.UndefOr[NumberValue] = js.native
+    var angle: js.UndefOr[NumberValue] = js.undefined
     
     // ---------- ARIA ----------
     /**
@@ -47,117 +45,117 @@ object titleMod {
       *
       * __Default value:__ `true`
       */
-    var aria: js.UndefOr[Boolean] = js.native
+    var aria: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Vertical text baseline for title and subtitle text. One of `"alphabetic"` (default), `"top"`, `"middle"`, `"bottom"`, `"line-top"`, or `"line-bottom"`. The `"line-top"` and `"line-bottom"` values operate similarly to `"top"` and `"bottom"`, but are calculated relative to the *lineHeight* rather than *fontSize* alone.
       */
-    var baseline: js.UndefOr[TextBaselineValue] = js.native
+    var baseline: js.UndefOr[TextBaselineValue] = js.undefined
     
     // ---------- Title Text ----------
     /**
       * Text color for title text.
       */
-    var color: js.UndefOr[ColorValue] = js.native
+    var color: js.UndefOr[ColorValue] = js.undefined
     
     /**
       * Delta offset for title and subtitle text x-coordinate.
       */
-    var dx: js.UndefOr[NumberValue] = js.native
+    var dx: js.UndefOr[NumberValue] = js.undefined
     
     /**
       * Delta offset for title and subtitle text y-coordinate.
       */
-    var dy: js.UndefOr[NumberValue] = js.native
+    var dy: js.UndefOr[NumberValue] = js.undefined
     
     /**
       * Font name for title text.
       */
-    var font: js.UndefOr[StringValue] = js.native
+    var font: js.UndefOr[StringValue] = js.undefined
     
     /**
       * Font size in pixels for title text.
       *
       * @minimum 0
       */
-    var fontSize: js.UndefOr[NumberValue] = js.native
+    var fontSize: js.UndefOr[NumberValue] = js.undefined
     
     /**
       * Font style for title text.
       */
-    var fontStyle: js.UndefOr[FontStyleValue] = js.native
+    var fontStyle: js.UndefOr[FontStyleValue] = js.undefined
     
     /**
       * Font weight for title text.
       * This can be either a string (e.g `"bold"`, `"normal"`) or a number (`100`, `200`, `300`, ..., `900` where `"normal"` = `400` and `"bold"` = `700`).
       */
-    var fontWeight: js.UndefOr[FontWeightValue] = js.native
+    var fontWeight: js.UndefOr[FontWeightValue] = js.undefined
     
     /**
       * The reference frame for the anchor position, one of `"bounds"` (to anchor relative to the full bounding box) or `"group"` (to anchor relative to the group width or height).
       */
-    var frame: js.UndefOr[TitleFrame | StringValue] = js.native
+    var frame: js.UndefOr[TitleFrame | StringValue] = js.undefined
     
     /**
       * The maximum allowed length in pixels of title and subtitle text.
       *
       * @minimum 0
       */
-    var limit: js.UndefOr[NumberValue] = js.native
+    var limit: js.UndefOr[NumberValue] = js.undefined
     
     /**
       * Line height in pixels for multi-line title text or title text with `"line-top"` or `"line-bottom"` baseline.
       */
-    var lineHeight: js.UndefOr[NumberValue] = js.native
+    var lineHeight: js.UndefOr[NumberValue] = js.undefined
     
     /**
       * The orthogonal offset in pixels by which to displace the title group from its position along the edge of the chart.
       */
-    var offset: js.UndefOr[NumberValue] = js.native
+    var offset: js.UndefOr[NumberValue] = js.undefined
     
     /**
       * Default title orientation (`"top"`, `"bottom"`, `"left"`, or `"right"`)
       */
-    var orient: js.UndefOr[TitleOrient | SignalRef] = js.native
+    var orient: js.UndefOr[TitleOrient | SignalRef] = js.undefined
     
     // ---------- Subtitle Text ----------
     /**
       * Text color for subtitle text.
       */
-    var subtitleColor: js.UndefOr[ColorValue] = js.native
+    var subtitleColor: js.UndefOr[ColorValue] = js.undefined
     
     /**
       * Font name for subtitle text.
       */
-    var subtitleFont: js.UndefOr[StringValue] = js.native
+    var subtitleFont: js.UndefOr[StringValue] = js.undefined
     
     /**
       * Font size in pixels for subtitle text.
       *
       * @minimum 0
       */
-    var subtitleFontSize: js.UndefOr[NumberValue] = js.native
+    var subtitleFontSize: js.UndefOr[NumberValue] = js.undefined
     
     /**
       * Font style for subtitle text.
       */
-    var subtitleFontStyle: js.UndefOr[FontStyleValue] = js.native
+    var subtitleFontStyle: js.UndefOr[FontStyleValue] = js.undefined
     
     /**
       * Font weight for subtitle text.
       * This can be either a string (e.g `"bold"`, `"normal"`) or a number (`100`, `200`, `300`, ..., `900` where `"normal"` = `400` and `"bold"` = `700`).
       */
-    var subtitleFontWeight: js.UndefOr[FontWeightValue] = js.native
+    var subtitleFontWeight: js.UndefOr[FontWeightValue] = js.undefined
     
     /**
       * Line height in pixels for multi-line subtitle text.
       */
-    var subtitleLineHeight: js.UndefOr[NumberValue] = js.native
+    var subtitleLineHeight: js.UndefOr[NumberValue] = js.undefined
     
     /**
       * The padding in pixels between title and subtitle text.
       */
-    var subtitlePadding: js.UndefOr[NumberValue] = js.native
+    var subtitlePadding: js.UndefOr[NumberValue] = js.undefined
     
     /**
       * 	The integer z-index indicating the layering of the title group relative to other axis, mark, and legend groups.
@@ -167,7 +165,7 @@ object titleMod {
       * @TJS-type integer
       * @minimum 0
       */
-    var zindex: js.UndefOr[Double] = js.native
+    var zindex: js.UndefOr[Double] = js.undefined
   }
   object BaseTitle {
     
@@ -341,38 +339,39 @@ object titleMod {
     }
   }
   
-  @js.native
-  trait Title extends BaseTitle {
+  trait Title
+    extends StObject
+       with BaseTitle {
     
     /**
       * Mark definitions for custom title encoding.
       */
-    var encode: js.UndefOr[TitleEncode | Encode[TextEncodeEntry]] = js.native
+    var encode: js.UndefOr[TitleEncode | Encode[TextEncodeEntry]] = js.undefined
     
     /**
       * A boolean flag indicating if the title element should respond to input events such as mouse hover. (**Deprecated.**)
       */
-    var interactive: js.UndefOr[Boolean] = js.native
+    var interactive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A mark name property to apply to the title text mark. (**Deprecated.**)
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * A mark style property to apply to the title text mark. If not specified, a default style of `"group-title"` is applied. (**Deprecated**)
       */
-    var style: js.UndefOr[String | js.Array[String]] = js.native
+    var style: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The subtitle text.
       */
-    var subtitle: js.UndefOr[Text | SignalRef] = js.native
+    var subtitle: js.UndefOr[Text | SignalRef] = js.undefined
     
     /**
       * The title text.
       */
-    var text: Text | SignalRef = js.native
+    var text: Text | SignalRef
   }
   object Title {
     
@@ -437,23 +436,22 @@ object titleMod {
   */
   type TitleAnchor = _TitleAnchor | Null
   
-  @js.native
   trait TitleEncode extends StObject {
     
     /**
       * Custom encoding for the title container group.
       */
-    var group: js.UndefOr[GuideEncodeEntry[GroupEncodeEntry]] = js.native
+    var group: js.UndefOr[GuideEncodeEntry[GroupEncodeEntry]] = js.undefined
     
     /**
       * Custom encoding for the subtitle text.
       */
-    var subtitle: js.UndefOr[GuideEncodeEntry[TextEncodeEntry]] = js.native
+    var subtitle: js.UndefOr[GuideEncodeEntry[TextEncodeEntry]] = js.undefined
     
     /**
       * Custom encoding for the title text.
       */
-    var title: js.UndefOr[GuideEncodeEntry[TextEncodeEntry]] = js.native
+    var title: js.UndefOr[GuideEncodeEntry[TextEncodeEntry]] = js.undefined
   }
   object TitleEncode {
     

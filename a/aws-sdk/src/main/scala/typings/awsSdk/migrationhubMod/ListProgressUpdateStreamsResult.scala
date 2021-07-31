@@ -2,21 +2,19 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProgressUpdateStreamsResult extends StObject {
   
   /**
     * If there are more streams created than the max result, return the next token to be passed to the next call as a bookmark of where to start from.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * List of progress update streams up to the max number of results passed in the input.
     */
-  var ProgressUpdateStreamSummaryList: js.UndefOr[typings.awsSdk.migrationhubMod.ProgressUpdateStreamSummaryList] = js.native
+  var ProgressUpdateStreamSummaryList: js.UndefOr[typings.awsSdk.migrationhubMod.ProgressUpdateStreamSummaryList] = js.undefined
 }
 object ListProgressUpdateStreamsResult {
   

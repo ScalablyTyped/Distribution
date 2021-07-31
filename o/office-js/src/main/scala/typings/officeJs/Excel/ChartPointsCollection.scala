@@ -8,7 +8,6 @@ import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait ChartPointsCollection extends ClientObject {
+trait ChartPointsCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -57,7 +58,7 @@ trait ChartPointsCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ChartPointsCollection = js.native
-  def load(options: ChartPointsCollectionLoadOptions with CollectionLoadOptions): ChartPointsCollection = js.native
+  def load(options: ChartPointsCollectionLoadOptions & CollectionLoadOptions): ChartPointsCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): ChartPointsCollection = js.native
   def load(propertyNames: String): ChartPointsCollection = js.native
   def load(propertyNames: js.Array[String]): ChartPointsCollection = js.native

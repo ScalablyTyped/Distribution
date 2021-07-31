@@ -6,29 +6,27 @@ import typings.openlayers.mod.Tile
 import typings.openlayers.mod.TileLoadFunctionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileJSONOptions extends StObject {
   
-  var attributions: js.UndefOr[AttributionLike] = js.native
+  var attributions: js.UndefOr[AttributionLike] = js.undefined
   
-  var cacheSize: js.UndefOr[Double] = js.native
+  var cacheSize: js.UndefOr[Double] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
-  var jsonp: js.UndefOr[Boolean] = js.native
+  var jsonp: js.UndefOr[Boolean] = js.undefined
   
-  var reprojectionErrorThreshold: js.UndefOr[Double] = js.native
+  var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
   
-  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.native
+  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.undefined
   
-  var transition: js.UndefOr[Double] = js.native
+  var transition: js.UndefOr[Double] = js.undefined
   
-  var url: String = js.native
+  var url: String
   
-  var wrapX: js.UndefOr[Boolean] = js.native
+  var wrapX: js.UndefOr[Boolean] = js.undefined
 }
 object TileJSONOptions {
   

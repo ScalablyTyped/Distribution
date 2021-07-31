@@ -2,29 +2,27 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings of the file that hasn't passed validation.
   */
-@js.native
 trait ASPxClientUploadControlInvalidFileInfo extends StObject {
   
   /**
     * Gets the error type.
     */
-  var errorType: ASPxClientUploadControlValidationErrorTypeConsts = js.native
+  var errorType: ASPxClientUploadControlValidationErrorTypeConsts
   
   /**
     * Gets the name of the invalid file.
     */
-  var fileName: String = js.native
+  var fileName: String
   
   /**
     * Gets the size of the invalid file.
     */
-  var fileSize: Double = js.native
+  var fileSize: Double
 }
 object ASPxClientUploadControlInvalidFileInfo {
   

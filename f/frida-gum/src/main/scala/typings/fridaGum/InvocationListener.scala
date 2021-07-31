@@ -2,16 +2,14 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvocationListener extends StObject {
   
   /**
     * Detaches listener previously attached through `Interceptor#attach()`.
     */
-  def detach(): Unit = js.native
+  def detach(): Unit
 }
 object InvocationListener {
   

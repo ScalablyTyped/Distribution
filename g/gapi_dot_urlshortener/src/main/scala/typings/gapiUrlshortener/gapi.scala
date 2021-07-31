@@ -6,7 +6,6 @@ import typings.gapiUrlshortener.anon.Projection
 import typings.gapiUrlshortener.anon.RequestBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -15,23 +14,22 @@ object gapi {
     
     object urlshortener {
       
-      @js.native
       trait url extends StObject {
         
         /**
           * Expands a short URL or gets creation time and analytics.
           */
-        def get(`object`: Fields): HttpRequest[GoogleApiUrlShortenerUrlResource] = js.native
+        def get(`object`: Fields): HttpRequest[GoogleApiUrlShortenerUrlResource]
         
         /**
           * Creates a new short URL.
           */
-        def insert(`object`: RequestBody): HttpRequest[GoogleApiUrlShortenerUrlResource] = js.native
+        def insert(`object`: RequestBody): HttpRequest[GoogleApiUrlShortenerUrlResource]
         
         /**
           * Retrieves a list of URLs shortened by a user.
           */
-        def list(`object`: Projection): HttpRequest[GoogleApiUrlShortenerUrlResource] = js.native
+        def list(`object`: Projection): HttpRequest[GoogleApiUrlShortenerUrlResource]
       }
       object url {
         

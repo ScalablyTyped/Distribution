@@ -2,18 +2,16 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for DriveItemsSelectedActionResponse objects.
   */
-@js.native
 trait DriveItemsSelectedActionResponseBuilder extends StObject {
   
-  def build(): DriveItemsSelectedActionResponse = js.native
+  def build(): DriveItemsSelectedActionResponse
   
-  def requestFileScope(itemId: String): DriveItemsSelectedActionResponseBuilder = js.native
+  def requestFileScope(itemId: String): DriveItemsSelectedActionResponseBuilder
 }
 object DriveItemsSelectedActionResponseBuilder {
   

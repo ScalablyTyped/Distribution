@@ -6,25 +6,26 @@ import typings.ava.pluginMod.SharedWorker.Plugin.RegistrationOptions
 import typings.std.AsyncIterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginMod {
   
-  @JSImport("ava/plugin", "registerSharedWorker")
+  @JSImport("ava/plugin", JSImport.Namespace)
   @js.native
-  def registerSharedWorker_experimental[Data](options: RegistrationOptions[experimental, Data]): Protocol[Data] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def registerSharedWorker_experimental[Data](options: RegistrationOptions[experimental, Data]): Protocol[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSharedWorker")(options.asInstanceOf[js.Any]).asInstanceOf[Protocol[Data]]
   
   object SharedWorker {
     
     object Experimental {
       
-      @js.native
       trait BroadcastMessage[Data] extends StObject {
         
-        val id: String = js.native
+        val id: String
         
-        def replies(): AsyncIterableIterator[ReceivedMessage[Data]] = js.native
+        def replies(): AsyncIterableIterator[ReceivedMessage[Data]]
       }
       object BroadcastMessage {
         
@@ -35,7 +36,7 @@ object pluginMod {
         }
         
         @scala.inline
-        implicit class BroadcastMessageMutableBuilder[Self <: BroadcastMessage[_], Data] (val x: Self with BroadcastMessage[Data]) extends AnyVal {
+        implicit class BroadcastMessageMutableBuilder[Self <: BroadcastMessage[?], Data] (val x: Self & BroadcastMessage[Data]) extends AnyVal {
           
           @scala.inline
           def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -45,20 +46,19 @@ object pluginMod {
         }
       }
       
-      @js.native
       trait Protocol[Data] extends StObject {
         
-        def broadcast(data: Data): BroadcastMessage[Data] = js.native
+        def broadcast(data: Data): BroadcastMessage[Data]
         
-        val initialData: Data = js.native
+        val initialData: Data
         
-        val protocol: experimental = js.native
+        val protocol: experimental
         
-        def ready(): typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data] = js.native
+        def ready(): typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data]
         
-        def subscribe(): AsyncIterableIterator[ReceivedMessage[Data]] = js.native
+        def subscribe(): AsyncIterableIterator[ReceivedMessage[Data]]
         
-        def testWorkers(): AsyncIterableIterator[TestWorker[Data]] = js.native
+        def testWorkers(): AsyncIterableIterator[TestWorker[Data]]
       }
       object Protocol {
         
@@ -66,17 +66,16 @@ object pluginMod {
         def apply[Data](
           broadcast: Data => BroadcastMessage[Data],
           initialData: Data,
-          protocol: experimental,
           ready: () => typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data],
           subscribe: () => AsyncIterableIterator[ReceivedMessage[Data]],
           testWorkers: () => AsyncIterableIterator[TestWorker[Data]]
         ): typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data] = {
-          val __obj = js.Dynamic.literal(broadcast = js.Any.fromFunction1(broadcast), initialData = initialData.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], ready = js.Any.fromFunction0(ready), subscribe = js.Any.fromFunction0(subscribe), testWorkers = js.Any.fromFunction0(testWorkers))
+          val __obj = js.Dynamic.literal(broadcast = js.Any.fromFunction1(broadcast), initialData = initialData.asInstanceOf[js.Any], protocol = "experimental", ready = js.Any.fromFunction0(ready), subscribe = js.Any.fromFunction0(subscribe), testWorkers = js.Any.fromFunction0(testWorkers))
           __obj.asInstanceOf[typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data]]
         }
         
         @scala.inline
-        implicit class ProtocolMutableBuilder[Self <: typings.ava.pluginMod.SharedWorker.Experimental.Protocol[_], Data] (val x: Self with typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data]) extends AnyVal {
+        implicit class ProtocolMutableBuilder[Self <: typings.ava.pluginMod.SharedWorker.Experimental.Protocol[?], Data] (val x: Self & typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data]) extends AnyVal {
           
           @scala.inline
           def setBroadcast(value: Data => BroadcastMessage[Data]): Self = StObject.set(x, "broadcast", js.Any.fromFunction1(value))
@@ -98,12 +97,11 @@ object pluginMod {
         }
       }
       
-      @js.native
       trait PublishedMessage[Data] extends StObject {
         
-        val id: String = js.native
+        val id: String
         
-        def replies(): AsyncIterableIterator[ReceivedMessage[Data]] = js.native
+        def replies(): AsyncIterableIterator[ReceivedMessage[Data]]
       }
       object PublishedMessage {
         
@@ -114,7 +112,7 @@ object pluginMod {
         }
         
         @scala.inline
-        implicit class PublishedMessageMutableBuilder[Self <: PublishedMessage[_], Data] (val x: Self with PublishedMessage[Data]) extends AnyVal {
+        implicit class PublishedMessageMutableBuilder[Self <: PublishedMessage[?], Data] (val x: Self & PublishedMessage[Data]) extends AnyVal {
           
           @scala.inline
           def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -124,27 +122,26 @@ object pluginMod {
         }
       }
       
-      @js.native
       trait ReceivedMessage[Data] extends StObject {
         
-        val data: Data = js.native
+        val data: Data
         
-        val id: String = js.native
+        val id: String
         
-        def reply(data: Data): PublishedMessage[Data] = js.native
+        def reply(data: Data): PublishedMessage[Data]
         
-        val testWorker: TestWorker[_] = js.native
+        val testWorker: TestWorker[js.Any]
       }
       object ReceivedMessage {
         
         @scala.inline
-        def apply[Data](data: Data, id: String, reply: Data => PublishedMessage[Data], testWorker: TestWorker[_]): ReceivedMessage[Data] = {
+        def apply[Data](data: Data, id: String, reply: Data => PublishedMessage[Data], testWorker: TestWorker[js.Any]): ReceivedMessage[Data] = {
           val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], reply = js.Any.fromFunction1(reply), testWorker = testWorker.asInstanceOf[js.Any])
           __obj.asInstanceOf[ReceivedMessage[Data]]
         }
         
         @scala.inline
-        implicit class ReceivedMessageMutableBuilder[Self <: ReceivedMessage[_], Data] (val x: Self with ReceivedMessage[Data]) extends AnyVal {
+        implicit class ReceivedMessageMutableBuilder[Self <: ReceivedMessage[?], Data] (val x: Self & ReceivedMessage[Data]) extends AnyVal {
           
           @scala.inline
           def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -156,22 +153,21 @@ object pluginMod {
           def setReply(value: Data => PublishedMessage[Data]): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
           
           @scala.inline
-          def setTestWorker(value: TestWorker[_]): Self = StObject.set(x, "testWorker", value.asInstanceOf[js.Any])
+          def setTestWorker(value: TestWorker[js.Any]): Self = StObject.set(x, "testWorker", value.asInstanceOf[js.Any])
         }
       }
       
-      @js.native
       trait TestWorker[Data] extends StObject {
         
-        val file: String = js.native
+        val file: String
         
-        val id: String = js.native
+        val id: String
         
-        def publish(data: Data): PublishedMessage[Data] = js.native
+        def publish(data: Data): PublishedMessage[Data]
         
-        def subscribe(): AsyncIterableIterator[ReceivedMessage[Data]] = js.native
+        def subscribe(): AsyncIterableIterator[ReceivedMessage[Data]]
         
-        def teardown[TeardownFn /* <: js.Function0[Unit] */](fn: TeardownFn): TeardownFn = js.native
+        def teardown[TeardownFn /* <: js.Function0[Unit] */](fn: TeardownFn): TeardownFn
       }
       object TestWorker {
         
@@ -188,7 +184,7 @@ object pluginMod {
         }
         
         @scala.inline
-        implicit class TestWorkerMutableBuilder[Self <: TestWorker[_], Data] (val x: Self with TestWorker[Data]) extends AnyVal {
+        implicit class TestWorkerMutableBuilder[Self <: TestWorker[?], Data] (val x: Self & TestWorker[Data]) extends AnyVal {
           
           @scala.inline
           def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
@@ -210,11 +206,10 @@ object pluginMod {
     
     type Factory = js.Function1[/* options */ FactoryOptions, Unit]
     
-    @js.native
     trait FactoryOptions extends StObject {
       
       @JSName("negotiateProtocol")
-      def negotiateProtocol_experimental[Data](supported: js.Array[experimental]): typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data] = js.native
+      def negotiateProtocol_experimental[Data](supported: js.Array[experimental]): typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data]
     }
     object FactoryOptions {
       
@@ -238,18 +233,17 @@ object pluginMod {
       
       object Experimental {
         
-        @js.native
         trait Protocol[Data] extends StObject {
           
-          val available: js.Promise[Unit] = js.native
+          val available: js.Promise[Unit]
           
-          val currentlyAvailable: Boolean = js.native
+          val currentlyAvailable: Boolean
           
-          val protocol: experimental = js.native
+          val protocol: experimental
           
-          def publish(data: Data): PublishedMessage[Data] = js.native
+          def publish(data: Data): PublishedMessage[Data]
           
-          def subscribe(): AsyncIterableIterator[ReceivedMessage[Data]] = js.native
+          def subscribe(): AsyncIterableIterator[ReceivedMessage[Data]]
         }
         object Protocol {
           
@@ -257,16 +251,15 @@ object pluginMod {
           def apply[Data](
             available: js.Promise[Unit],
             currentlyAvailable: Boolean,
-            protocol: experimental,
             publish: Data => PublishedMessage[Data],
             subscribe: () => AsyncIterableIterator[ReceivedMessage[Data]]
           ): Protocol[Data] = {
-            val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], currentlyAvailable = currentlyAvailable.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], publish = js.Any.fromFunction1(publish), subscribe = js.Any.fromFunction0(subscribe))
+            val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], currentlyAvailable = currentlyAvailable.asInstanceOf[js.Any], protocol = "experimental", publish = js.Any.fromFunction1(publish), subscribe = js.Any.fromFunction0(subscribe))
             __obj.asInstanceOf[Protocol[Data]]
           }
           
           @scala.inline
-          implicit class ProtocolMutableBuilder[Self <: Protocol[_], Data] (val x: Self with Protocol[Data]) extends AnyVal {
+          implicit class ProtocolMutableBuilder[Self <: Protocol[?], Data] (val x: Self & Protocol[Data]) extends AnyVal {
             
             @scala.inline
             def setAvailable(value: js.Promise[Unit]): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
@@ -285,12 +278,11 @@ object pluginMod {
           }
         }
         
-        @js.native
         trait PublishedMessage[Data] extends StObject {
           
-          val id: String = js.native
+          val id: String
           
-          def replies(): AsyncIterableIterator[ReceivedMessage[Data]] = js.native
+          def replies(): AsyncIterableIterator[ReceivedMessage[Data]]
         }
         object PublishedMessage {
           
@@ -301,7 +293,7 @@ object pluginMod {
           }
           
           @scala.inline
-          implicit class PublishedMessageMutableBuilder[Self <: PublishedMessage[_], Data] (val x: Self with PublishedMessage[Data]) extends AnyVal {
+          implicit class PublishedMessageMutableBuilder[Self <: PublishedMessage[?], Data] (val x: Self & PublishedMessage[Data]) extends AnyVal {
             
             @scala.inline
             def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -311,14 +303,13 @@ object pluginMod {
           }
         }
         
-        @js.native
         trait ReceivedMessage[Data] extends StObject {
           
-          val data: Data = js.native
+          val data: Data
           
-          val id: String = js.native
+          val id: String
           
-          def reply(data: Data): PublishedMessage[Data] = js.native
+          def reply(data: Data): PublishedMessage[Data]
         }
         object ReceivedMessage {
           
@@ -329,7 +320,7 @@ object pluginMod {
           }
           
           @scala.inline
-          implicit class ReceivedMessageMutableBuilder[Self <: ReceivedMessage[_], Data] (val x: Self with ReceivedMessage[Data]) extends AnyVal {
+          implicit class ReceivedMessageMutableBuilder[Self <: ReceivedMessage[?], Data] (val x: Self & ReceivedMessage[Data]) extends AnyVal {
             
             @scala.inline
             def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -343,16 +334,15 @@ object pluginMod {
         }
       }
       
-      @js.native
       trait RegistrationOptions[Identifier /* <: ProtocolIdentifier */, Data] extends StObject {
         
-        val filename: String = js.native
+        val filename: String
         
-        val initialData: js.UndefOr[Data] = js.native
+        val initialData: js.UndefOr[Data] = js.undefined
         
-        val supportedProtocols: js.Array[Identifier] = js.native
+        val supportedProtocols: js.Array[Identifier]
         
-        val teardown: js.UndefOr[js.Function0[Unit]] = js.native
+        val teardown: js.UndefOr[js.Function0[Unit]] = js.undefined
       }
       object RegistrationOptions {
         
@@ -363,7 +353,7 @@ object pluginMod {
         }
         
         @scala.inline
-        implicit class RegistrationOptionsMutableBuilder[Self <: RegistrationOptions[_, _], Identifier /* <: ProtocolIdentifier */, Data] (val x: Self with (RegistrationOptions[Identifier, Data])) extends AnyVal {
+        implicit class RegistrationOptionsMutableBuilder[Self <: RegistrationOptions[?, ?], Identifier /* <: ProtocolIdentifier */, Data] (val x: Self & (RegistrationOptions[Identifier, Data])) extends AnyVal {
           
           @scala.inline
           def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])

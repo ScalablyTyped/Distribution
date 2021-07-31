@@ -2,23 +2,21 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapTypeControlOptions extends StObject {
   
-  var mapTypeIds: js.Array[MapTypeId] | Null = js.native
+  var mapTypeIds: js.Array[MapTypeId] | Null
   
-  var position: Position = js.native
+  var position: Position
   
-  var style: MapTypeControlStyle = js.native
+  var style: MapTypeControlStyle
 }
 object MapTypeControlOptions {
   
   @scala.inline
   def apply(position: Position, style: MapTypeControlStyle): MapTypeControlOptions = {
-    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], mapTypeIds = null)
     __obj.asInstanceOf[MapTypeControlOptions]
   }
   

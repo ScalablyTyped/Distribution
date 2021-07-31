@@ -2,47 +2,45 @@ package typings.angularMaterial.mod.angularAugmentingMod.material
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColorPalette extends StObject {
   
-  var amber: IPalette = js.native
+  var amber: IPalette
   
-  var blue: IPalette = js.native
+  var blue: IPalette
   
-  var `blue-grey`: IPalette = js.native
+  var `blue-grey`: IPalette
   
-  var brown: IPalette = js.native
+  var brown: IPalette
   
-  var cyan: IPalette = js.native
+  var cyan: IPalette
   
-  var `deep-orange`: IPalette = js.native
+  var `deep-orange`: IPalette
   
-  var `deep-purple`: IPalette = js.native
+  var `deep-purple`: IPalette
   
-  var green: IPalette = js.native
+  var green: IPalette
   
-  var grey: IPalette = js.native
+  var grey: IPalette
   
-  var indigo: IPalette = js.native
+  var indigo: IPalette
   
-  var `light-blue`: IPalette = js.native
+  var `light-blue`: IPalette
   
-  var `light-green`: IPalette = js.native
+  var `light-green`: IPalette
   
-  var lime: IPalette = js.native
+  var lime: IPalette
   
-  var orange: IPalette = js.native
+  var orange: IPalette
   
-  var pink: IPalette = js.native
+  var pink: IPalette
   
-  var red: IPalette = js.native
+  var red: IPalette
   
-  var teal: IPalette = js.native
+  var teal: IPalette
   
-  var yellow: IPalette = js.native
+  var yellow: IPalette
 }
 object IColorPalette {
   

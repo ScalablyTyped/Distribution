@@ -4,18 +4,20 @@ import typings.diagnosticChannel.patchRequireMod.IModulePatchMap
 import typings.diagnosticChannel.patchRequireMod.IModulePatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("diagnostic-channel", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("diagnostic-channel", "channel")
   @js.native
   val channel: IChannel = js.native
   
-  @JSImport("diagnostic-channel", "makePatchingRequire")
-  @js.native
-  def makePatchingRequire(knownPatches: IModulePatchMap): js.Function1[/* moduleId */ String, _] = js.native
+  @scala.inline
+  def makePatchingRequire(knownPatches: IModulePatchMap): js.Function1[/* moduleId */ String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePatchingRequire")(knownPatches.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* moduleId */ String, js.Any]]
   
   @js.native
   trait IChannel extends StObject {
@@ -41,16 +43,15 @@ object mod {
   
   type IFilter = js.Function1[/* publishing */ Boolean, Boolean]
   
-  @js.native
   trait ISpanContext extends StObject {
     
-    var spanId: String = js.native
+    var spanId: String
     
-    var traceFlags: js.UndefOr[String] = js.native
+    var traceFlags: js.UndefOr[String] = js.undefined
     
-    var traceId: String = js.native
+    var traceId: String
     
-    var tracestate: js.UndefOr[String] = js.native
+    var tracestate: js.UndefOr[String] = js.undefined
   }
   object ISpanContext {
     
@@ -83,12 +84,11 @@ object mod {
     }
   }
   
-  @js.native
   trait IStandardEvent[T] extends StObject {
     
-    var data: T = js.native
+    var data: T
     
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object IStandardEvent {
     
@@ -99,7 +99,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class IStandardEventMutableBuilder[Self <: IStandardEvent[_], T] (val x: Self with IStandardEvent[T]) extends AnyVal {
+    implicit class IStandardEventMutableBuilder[Self <: IStandardEvent[?], T] (val x: Self & IStandardEvent[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

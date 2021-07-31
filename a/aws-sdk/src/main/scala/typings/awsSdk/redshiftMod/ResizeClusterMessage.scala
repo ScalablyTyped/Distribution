@@ -2,36 +2,34 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResizeClusterMessage extends StObject {
   
   /**
     * A boolean value indicating whether the resize operation is using the classic resize process. If you don't provide this parameter or set the value to false, the resize type is elastic. 
     */
-  var Classic: js.UndefOr[BooleanOptional] = js.native
+  var Classic: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * The unique identifier for the cluster to resize.
     */
-  var ClusterIdentifier: String = js.native
+  var ClusterIdentifier: String
   
   /**
     * The new cluster type for the specified cluster.
     */
-  var ClusterType: js.UndefOr[String] = js.native
+  var ClusterType: js.UndefOr[String] = js.undefined
   
   /**
     * The new node type for the nodes you are adding. If not specified, the cluster's current node type is used.
     */
-  var NodeType: js.UndefOr[String] = js.native
+  var NodeType: js.UndefOr[String] = js.undefined
   
   /**
     * The new number of nodes for the cluster. If not specified, the cluster's current number of nodes is used.
     */
-  var NumberOfNodes: js.UndefOr[Integer] = js.native
+  var NumberOfNodes: js.UndefOr[Integer] = js.undefined
 }
 object ResizeClusterMessage {
   

@@ -3,7 +3,6 @@ package typings.postmark
 import typings.postmark.messageSupportingTypesMod.LinkTrackingOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverMod {
@@ -82,50 +81,49 @@ object serverMod {
     var TrackOpens: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
   trait Server extends StObject {
     
-    var ApiTokens: js.Array[String] = js.native
+    var ApiTokens: js.Array[String]
     
-    var BounceHookUrl: js.UndefOr[String] = js.native
+    var BounceHookUrl: js.UndefOr[String] = js.undefined
     
-    var ClickHookUrl: js.UndefOr[String] = js.native
+    var ClickHookUrl: js.UndefOr[String] = js.undefined
     
-    var Color: String = js.native
+    var Color: String
     
-    var DeliveryHookUrl: js.UndefOr[String] = js.native
+    var DeliveryHookUrl: js.UndefOr[String] = js.undefined
     
-    var EnableSmtpApiErrorHooks: Boolean = js.native
+    var EnableSmtpApiErrorHooks: Boolean
     
-    var ID: Double = js.native
+    var ID: Double
     
-    var InboundAddress: String = js.native
+    var InboundAddress: String
     
-    var InboundDomain: js.UndefOr[String] = js.native
+    var InboundDomain: js.UndefOr[String] = js.undefined
     
-    var InboundHash: String = js.native
+    var InboundHash: String
     
-    var InboundHookUrl: js.UndefOr[String] = js.native
+    var InboundHookUrl: js.UndefOr[String] = js.undefined
     
-    var InboundSpamThreshold: Double = js.native
+    var InboundSpamThreshold: Double
     
-    var IncludeBounceContentInHook: Boolean = js.native
+    var IncludeBounceContentInHook: Boolean
     
-    var Name: String = js.native
+    var Name: String
     
-    var OpenHookUrl: js.UndefOr[String] = js.native
+    var OpenHookUrl: js.UndefOr[String] = js.undefined
     
-    var PostFirstOpenOnly: Boolean = js.native
+    var PostFirstOpenOnly: Boolean
     
-    var RawEmailEnabled: Boolean = js.native
+    var RawEmailEnabled: Boolean
     
-    var ServerLink: String = js.native
+    var ServerLink: String
     
-    var SmtpApiActivated: Boolean = js.native
+    var SmtpApiActivated: Boolean
     
-    var TrackLinks: LinkTrackingOptions = js.native
+    var TrackLinks: LinkTrackingOptions
     
-    var TrackOpens: js.UndefOr[Boolean] = js.native
+    var TrackOpens: js.UndefOr[Boolean] = js.undefined
   }
   object Server {
     

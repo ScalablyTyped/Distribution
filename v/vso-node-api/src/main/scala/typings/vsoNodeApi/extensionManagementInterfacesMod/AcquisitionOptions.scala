@@ -2,36 +2,34 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcquisitionOptions extends StObject {
   
   /**
     * Default Operation for the ItemId in this target
     */
-  var defaultOperation: AcquisitionOperation = js.native
+  var defaultOperation: AcquisitionOperation
   
   /**
     * The item id that this options refer to
     */
-  var itemId: String = js.native
+  var itemId: String
   
   /**
     * Operations allowed for the ItemId in this target
     */
-  var operations: js.Array[AcquisitionOperation] = js.native
+  var operations: js.Array[AcquisitionOperation]
   
   /**
     * Additional properties which can be added to the request.
     */
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /**
     * The target that this options refer to
     */
-  var target: String = js.native
+  var target: String
 }
 object AcquisitionOptions {
   

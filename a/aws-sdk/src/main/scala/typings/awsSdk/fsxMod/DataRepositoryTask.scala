@@ -2,61 +2,59 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataRepositoryTask extends StObject {
   
-  var CreationTime: typings.awsSdk.fsxMod.CreationTime = js.native
+  var CreationTime: typings.awsSdk.fsxMod.CreationTime
   
   /**
     * The time that Amazon FSx completed processing the task, populated after the task is complete.
     */
-  var EndTime: js.UndefOr[typings.awsSdk.fsxMod.EndTime] = js.native
+  var EndTime: js.UndefOr[typings.awsSdk.fsxMod.EndTime] = js.undefined
   
   /**
     * Failure message describing why the task failed, it is populated only when Lifecycle is set to FAILED.
     */
-  var FailureDetails: js.UndefOr[DataRepositoryTaskFailureDetails] = js.native
+  var FailureDetails: js.UndefOr[DataRepositoryTaskFailureDetails] = js.undefined
   
-  var FileSystemId: typings.awsSdk.fsxMod.FileSystemId = js.native
+  var FileSystemId: typings.awsSdk.fsxMod.FileSystemId
   
   /**
     * The lifecycle status of the data repository task, as follows:    PENDING - Amazon FSx has not started the task.    EXECUTING - Amazon FSx is processing the task.    FAILED - Amazon FSx was not able to complete the task. For example, there may be files the task failed to process. The DataRepositoryTaskFailureDetails property provides more information about task failures.    SUCCEEDED - FSx completed the task successfully.    CANCELED - Amazon FSx canceled the task and it did not complete.    CANCELING - FSx is in process of canceling the task.    You cannot delete an FSx for Lustre file system if there are data repository tasks for the file system in the PENDING or EXECUTING states. Please retry when the data repository task is finished (with a status of CANCELED, SUCCEEDED, or FAILED). You can use the DescribeDataRepositoryTask action to monitor the task status. Contact the FSx team if you need to delete your file system immediately. 
     */
-  var Lifecycle: DataRepositoryTaskLifecycle = js.native
+  var Lifecycle: DataRepositoryTaskLifecycle
   
   /**
     * An array of paths on the Amazon FSx for Lustre file system that specify the data for the data repository task to process. For example, in an EXPORT_TO_REPOSITORY task, the paths specify which data to export to the linked data repository. (Default) If Paths is not specified, Amazon FSx uses the file system root directory.
     */
-  var Paths: js.UndefOr[DataRepositoryTaskPaths] = js.native
+  var Paths: js.UndefOr[DataRepositoryTaskPaths] = js.undefined
   
-  var Report: js.UndefOr[CompletionReport] = js.native
+  var Report: js.UndefOr[CompletionReport] = js.undefined
   
-  var ResourceARN: js.UndefOr[typings.awsSdk.fsxMod.ResourceARN] = js.native
+  var ResourceARN: js.UndefOr[typings.awsSdk.fsxMod.ResourceARN] = js.undefined
   
   /**
     * The time that Amazon FSx began processing the task.
     */
-  var StartTime: js.UndefOr[typings.awsSdk.fsxMod.StartTime] = js.native
+  var StartTime: js.UndefOr[typings.awsSdk.fsxMod.StartTime] = js.undefined
   
   /**
     * Provides the status of the number of files that the task has processed successfully and failed to process.
     */
-  var Status: js.UndefOr[DataRepositoryTaskStatus] = js.native
+  var Status: js.UndefOr[DataRepositoryTaskStatus] = js.undefined
   
-  var Tags: js.UndefOr[typings.awsSdk.fsxMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.fsxMod.Tags] = js.undefined
   
   /**
     * The system-generated, unique 17-digit ID of the data repository task.
     */
-  var TaskId: typings.awsSdk.fsxMod.TaskId = js.native
+  var TaskId: typings.awsSdk.fsxMod.TaskId
   
   /**
     * The type of data repository task; EXPORT_TO_REPOSITORY is the only type currently supported.
     */
-  var Type: DataRepositoryTaskType = js.native
+  var Type: DataRepositoryTaskType
 }
 object DataRepositoryTask {
   

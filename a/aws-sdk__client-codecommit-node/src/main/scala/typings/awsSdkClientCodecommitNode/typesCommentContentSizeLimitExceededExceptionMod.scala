@@ -6,28 +6,25 @@ import typings.awsSdkClientCodecommitNode.postCommentReplyExceptionsUnionMod.Pos
 import typings.awsSdkClientCodecommitNode.updateCommentExceptionsUnionMod.UpdateCommentExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCommentContentSizeLimitExceededExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_CommentContentSizeLimitExceededExceptionDetails> * / any */ @js.native
-  trait CommentContentSizeLimitExceededException
-    extends PostCommentForComparedCommitExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_CommentContentSizeLimitExceededExceptionDetails> * / any */ trait CommentContentSizeLimitExceededException
+    extends StObject
+       with PostCommentForComparedCommitExceptionsUnion
        with PostCommentForPullRequestExceptionsUnion
        with PostCommentReplyExceptionsUnion
        with UpdateCommentExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentContentSizeLimitExceededException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentContentSizeLimitExceededException
   }
   object CommentContentSizeLimitExceededException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentContentSizeLimitExceededException
-    ): CommentContentSizeLimitExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): CommentContentSizeLimitExceededException = {
+      val __obj = js.Dynamic.literal(name = "CommentContentSizeLimitExceededException")
       __obj.asInstanceOf[CommentContentSizeLimitExceededException]
     }
     
@@ -41,6 +38,5 @@ object typesCommentContentSizeLimitExceededExceptionMod {
     }
   }
   
-  @js.native
   trait CommentContentSizeLimitExceededExceptionDetails extends StObject
 }

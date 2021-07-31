@@ -2,7 +2,6 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The factorId of this second factor is
   * {@link firebase.auth.PhoneMultiFactorGenerator.FACTOR_ID}.
   */
-@js.native
-trait PhoneMultiFactorInfo extends MultiFactorInfo {
+trait PhoneMultiFactorInfo
+  extends StObject
+     with MultiFactorInfo {
   
   /**
     * The phone number associated with the current second factor.
     */
-  var phoneNumber: String = js.native
+  var phoneNumber: String
 }
 object PhoneMultiFactorInfo {
   

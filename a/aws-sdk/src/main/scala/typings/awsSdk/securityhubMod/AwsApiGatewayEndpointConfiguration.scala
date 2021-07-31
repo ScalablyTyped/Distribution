@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsApiGatewayEndpointConfiguration extends StObject {
   
   /**
     * A list of endpoint types for the REST API. For an edge-optimized API, the endpoint type is EDGE. For a Regional API, the endpoint type is REGIONAL. For a private API, the endpoint type is PRIVATE.
     */
-  var Types: js.UndefOr[NonEmptyStringList] = js.native
+  var Types: js.UndefOr[NonEmptyStringList] = js.undefined
 }
 object AwsApiGatewayEndpointConfiguration {
   

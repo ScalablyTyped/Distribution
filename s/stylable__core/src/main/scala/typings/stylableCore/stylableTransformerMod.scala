@@ -23,10 +23,13 @@ import typings.stylableCore.stylableResolverMod.CSSResolve
 import typings.stylableCore.stylableResolverMod.StylableResolver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableTransformerMod {
+  
+  @JSImport("@stylable/core/cjs/stylable-transformer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@stylable/core/cjs/stylable-transformer", "StylableTransformer")
   @js.native
@@ -75,22 +78,16 @@ object stylableTransformerMod {
       meta: StylableMeta,
       node: SelectorAstNode,
       name: String,
-      classesExport: js.UndefOr[scala.Nothing],
-      rule: js.UndefOr[scala.Nothing],
+      classesExport: Unit,
+      rule: Unit,
       originMeta: StylableMeta
     ): CSSResolve[StylableSymbol] = js.native
+    def handleClass(meta: StylableMeta, node: SelectorAstNode, name: String, classesExport: Unit, rule: Rule_): CSSResolve[StylableSymbol] = js.native
     def handleClass(
       meta: StylableMeta,
       node: SelectorAstNode,
       name: String,
-      classesExport: js.UndefOr[scala.Nothing],
-      rule: Rule_
-    ): CSSResolve[StylableSymbol] = js.native
-    def handleClass(
-      meta: StylableMeta,
-      node: SelectorAstNode,
-      name: String,
-      classesExport: js.UndefOr[scala.Nothing],
+      classesExport: Unit,
       rule: Rule_,
       originMeta: StylableMeta
     ): CSSResolve[StylableSymbol] = js.native
@@ -100,7 +97,7 @@ object stylableTransformerMod {
       node: SelectorAstNode,
       name: String,
       classesExport: Record[String, String],
-      rule: js.UndefOr[scala.Nothing],
+      rule: Unit,
       originMeta: StylableMeta
     ): CSSResolve[StylableSymbol] = js.native
     def handleClass(
@@ -137,7 +134,7 @@ object stylableTransformerMod {
       name: String,
       selectorNode: SelectorAstNode,
       addedSelectors: js.Array[AdditionalSelector],
-      rule: js.UndefOr[scala.Nothing],
+      rule: Unit,
       originMeta: StylableMeta
     ): CSSResolve[StylableSymbol] = js.native
     def handlePseudoElement(
@@ -189,38 +186,14 @@ object stylableTransformerMod {
     def scopeRule(meta: StylableMeta, rule: Rule_, _classesExport: Record[String, String]): String = js.native
     
     def scopeSelector(originMeta: StylableMeta, selector: String): ScopedSelectorResults = js.native
-    def scopeSelector(
-      originMeta: StylableMeta,
-      selector: String,
-      classesExport: js.UndefOr[scala.Nothing],
-      calcPaths: js.UndefOr[scala.Nothing],
-      rule: Rule_
-    ): ScopedSelectorResults = js.native
-    def scopeSelector(
-      originMeta: StylableMeta,
-      selector: String,
-      classesExport: js.UndefOr[scala.Nothing],
-      calcPaths: Boolean
-    ): ScopedSelectorResults = js.native
-    def scopeSelector(
-      originMeta: StylableMeta,
-      selector: String,
-      classesExport: js.UndefOr[scala.Nothing],
-      calcPaths: Boolean,
-      rule: Rule_
-    ): ScopedSelectorResults = js.native
+    def scopeSelector(originMeta: StylableMeta, selector: String, classesExport: Unit, calcPaths: Boolean): ScopedSelectorResults = js.native
+    def scopeSelector(originMeta: StylableMeta, selector: String, classesExport: Unit, calcPaths: Boolean, rule: Rule_): ScopedSelectorResults = js.native
+    def scopeSelector(originMeta: StylableMeta, selector: String, classesExport: Unit, calcPaths: Unit, rule: Rule_): ScopedSelectorResults = js.native
     def scopeSelector(originMeta: StylableMeta, selector: String, classesExport: Record[String, String]): ScopedSelectorResults = js.native
     def scopeSelector(
       originMeta: StylableMeta,
       selector: String,
       classesExport: Record[String, String],
-      calcPaths: js.UndefOr[scala.Nothing],
-      rule: Rule_
-    ): ScopedSelectorResults = js.native
-    def scopeSelector(
-      originMeta: StylableMeta,
-      selector: String,
-      classesExport: Record[String, String],
       calcPaths: Boolean
     ): ScopedSelectorResults = js.native
     def scopeSelector(
@@ -230,40 +203,23 @@ object stylableTransformerMod {
       calcPaths: Boolean,
       rule: Rule_
     ): ScopedSelectorResults = js.native
+    def scopeSelector(
+      originMeta: StylableMeta,
+      selector: String,
+      classesExport: Record[String, String],
+      calcPaths: Unit,
+      rule: Rule_
+    ): ScopedSelectorResults = js.native
     
     def scopeSelector2(originMeta: StylableMeta, selector: String): Elements = js.native
-    def scopeSelector2(
-      originMeta: StylableMeta,
-      selector: String,
-      _classesExport: js.UndefOr[scala.Nothing],
-      _calcPaths: js.UndefOr[scala.Nothing],
-      rule: Rule_
-    ): Elements = js.native
-    def scopeSelector2(
-      originMeta: StylableMeta,
-      selector: String,
-      _classesExport: js.UndefOr[scala.Nothing],
-      _calcPaths: Boolean
-    ): Elements = js.native
-    def scopeSelector2(
-      originMeta: StylableMeta,
-      selector: String,
-      _classesExport: js.UndefOr[scala.Nothing],
-      _calcPaths: Boolean,
-      rule: Rule_
-    ): Elements = js.native
+    def scopeSelector2(originMeta: StylableMeta, selector: String, _classesExport: Unit, _calcPaths: Boolean): Elements = js.native
+    def scopeSelector2(originMeta: StylableMeta, selector: String, _classesExport: Unit, _calcPaths: Boolean, rule: Rule_): Elements = js.native
+    def scopeSelector2(originMeta: StylableMeta, selector: String, _classesExport: Unit, _calcPaths: Unit, rule: Rule_): Elements = js.native
     def scopeSelector2(originMeta: StylableMeta, selector: String, _classesExport: Record[String, String]): Elements = js.native
     def scopeSelector2(
       originMeta: StylableMeta,
       selector: String,
       _classesExport: Record[String, String],
-      _calcPaths: js.UndefOr[scala.Nothing],
-      rule: Rule_
-    ): Elements = js.native
-    def scopeSelector2(
-      originMeta: StylableMeta,
-      selector: String,
-      _classesExport: Record[String, String],
       _calcPaths: Boolean
     ): Elements = js.native
     def scopeSelector2(
@@ -271,6 +227,13 @@ object stylableTransformerMod {
       selector: String,
       _classesExport: Record[String, String],
       _calcPaths: Boolean,
+      rule: Rule_
+    ): Elements = js.native
+    def scopeSelector2(
+      originMeta: StylableMeta,
+      selector: String,
+      _classesExport: Record[String, String],
+      _calcPaths: Unit,
       rule: Rule_
     ): Elements = js.native
     
@@ -279,56 +242,45 @@ object stylableTransformerMod {
     def transform(meta: StylableMeta): StylableResults = js.native
     
     def transformAst(ast: Root_, meta: StylableMeta): Unit = js.native
+    def transformAst(ast: Root_, meta: StylableMeta, metaExports: Unit, variableOverride: Unit, path: js.Array[String]): Unit = js.native
     def transformAst(
       ast: Root_,
       meta: StylableMeta,
-      metaExports: js.UndefOr[scala.Nothing],
-      variableOverride: js.UndefOr[scala.Nothing],
-      path: js.UndefOr[scala.Nothing],
-      mixinTransform: Boolean
-    ): Unit = js.native
-    def transformAst(
-      ast: Root_,
-      meta: StylableMeta,
-      metaExports: js.UndefOr[scala.Nothing],
-      variableOverride: js.UndefOr[scala.Nothing],
-      path: js.Array[String]
-    ): Unit = js.native
-    def transformAst(
-      ast: Root_,
-      meta: StylableMeta,
-      metaExports: js.UndefOr[scala.Nothing],
-      variableOverride: js.UndefOr[scala.Nothing],
+      metaExports: Unit,
+      variableOverride: Unit,
       path: js.Array[String],
       mixinTransform: Boolean
     ): Unit = js.native
     def transformAst(
       ast: Root_,
       meta: StylableMeta,
-      metaExports: js.UndefOr[scala.Nothing],
-      variableOverride: Record[String, String]
-    ): Unit = js.native
-    def transformAst(
-      ast: Root_,
-      meta: StylableMeta,
-      metaExports: js.UndefOr[scala.Nothing],
-      variableOverride: Record[String, String],
-      path: js.UndefOr[scala.Nothing],
+      metaExports: Unit,
+      variableOverride: Unit,
+      path: Unit,
       mixinTransform: Boolean
     ): Unit = js.native
+    def transformAst(ast: Root_, meta: StylableMeta, metaExports: Unit, variableOverride: Record[String, String]): Unit = js.native
     def transformAst(
       ast: Root_,
       meta: StylableMeta,
-      metaExports: js.UndefOr[scala.Nothing],
+      metaExports: Unit,
       variableOverride: Record[String, String],
       path: js.Array[String]
     ): Unit = js.native
     def transformAst(
       ast: Root_,
       meta: StylableMeta,
-      metaExports: js.UndefOr[scala.Nothing],
+      metaExports: Unit,
       variableOverride: Record[String, String],
       path: js.Array[String],
+      mixinTransform: Boolean
+    ): Unit = js.native
+    def transformAst(
+      ast: Root_,
+      meta: StylableMeta,
+      metaExports: Unit,
+      variableOverride: Record[String, String],
+      path: Unit,
       mixinTransform: Boolean
     ): Unit = js.native
     def transformAst(ast: Root_, meta: StylableMeta, metaExports: StylableExports): Unit = js.native
@@ -336,23 +288,23 @@ object stylableTransformerMod {
       ast: Root_,
       meta: StylableMeta,
       metaExports: StylableExports,
-      variableOverride: js.UndefOr[scala.Nothing],
-      path: js.UndefOr[scala.Nothing],
-      mixinTransform: Boolean
-    ): Unit = js.native
-    def transformAst(
-      ast: Root_,
-      meta: StylableMeta,
-      metaExports: StylableExports,
-      variableOverride: js.UndefOr[scala.Nothing],
+      variableOverride: Unit,
       path: js.Array[String]
     ): Unit = js.native
     def transformAst(
       ast: Root_,
       meta: StylableMeta,
       metaExports: StylableExports,
-      variableOverride: js.UndefOr[scala.Nothing],
+      variableOverride: Unit,
       path: js.Array[String],
+      mixinTransform: Boolean
+    ): Unit = js.native
+    def transformAst(
+      ast: Root_,
+      meta: StylableMeta,
+      metaExports: StylableExports,
+      variableOverride: Unit,
+      path: Unit,
       mixinTransform: Boolean
     ): Unit = js.native
     def transformAst(
@@ -366,14 +318,6 @@ object stylableTransformerMod {
       meta: StylableMeta,
       metaExports: StylableExports,
       variableOverride: Record[String, String],
-      path: js.UndefOr[scala.Nothing],
-      mixinTransform: Boolean
-    ): Unit = js.native
-    def transformAst(
-      ast: Root_,
-      meta: StylableMeta,
-      metaExports: StylableExports,
-      variableOverride: Record[String, String],
       path: js.Array[String]
     ): Unit = js.native
     def transformAst(
@@ -384,49 +328,53 @@ object stylableTransformerMod {
       path: js.Array[String],
       mixinTransform: Boolean
     ): Unit = js.native
+    def transformAst(
+      ast: Root_,
+      meta: StylableMeta,
+      metaExports: StylableExports,
+      variableOverride: Record[String, String],
+      path: Unit,
+      mixinTransform: Boolean
+    ): Unit = js.native
     
     def transformGlobals(ast: Root_, meta: StylableMeta): Unit = js.native
   }
   
-  @JSImport("@stylable/core/cjs/stylable-transformer", "removeSTDirective")
-  @js.native
-  def removeSTDirective(root: Root_): Unit = js.native
+  @scala.inline
+  def removeSTDirective(root: Root_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSTDirective")(root.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object transformerWarnings {
     
-    @JSImport("@stylable/core/cjs/stylable-transformer", "transformerWarnings.CANNOT_EXTEND_JS")
+    @JSImport("@stylable/core/cjs/stylable-transformer", "transformerWarnings")
     @js.native
-    def CANNOT_EXTEND_JS(): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core/cjs/stylable-transformer", "transformerWarnings.CANNOT_EXTEND_UNKNOWN_SYMBOL")
-    @js.native
-    def CANNOT_EXTEND_UNKNOWN_SYMBOL(name: String): String = js.native
+    @scala.inline
+    def CANNOT_EXTEND_JS(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_EXTEND_JS")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-transformer", "transformerWarnings.IMPORT_ISNT_EXTENDABLE")
-    @js.native
-    def IMPORT_ISNT_EXTENDABLE(): String = js.native
+    @scala.inline
+    def CANNOT_EXTEND_UNKNOWN_SYMBOL(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_EXTEND_UNKNOWN_SYMBOL")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-transformer", "transformerWarnings.KEYFRAME_NAME_RESERVED")
-    @js.native
-    def KEYFRAME_NAME_RESERVED(name: String): String = js.native
+    @scala.inline
+    def IMPORT_ISNT_EXTENDABLE(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("IMPORT_ISNT_EXTENDABLE")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-transformer", "transformerWarnings.UNKNOWN_IMPORT_ALIAS")
-    @js.native
-    def UNKNOWN_IMPORT_ALIAS(name: String): String = js.native
+    @scala.inline
+    def KEYFRAME_NAME_RESERVED(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("KEYFRAME_NAME_RESERVED")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-transformer", "transformerWarnings.UNKNOWN_PSEUDO_ELEMENT")
-    @js.native
-    def UNKNOWN_PSEUDO_ELEMENT(name: String): String = js.native
+    @scala.inline
+    def UNKNOWN_IMPORT_ALIAS(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_IMPORT_ALIAS")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def UNKNOWN_PSEUDO_ELEMENT(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_PSEUDO_ELEMENT")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @js.native
   trait AdditionalSelector extends StObject {
     
-    var customElementChunk: String = js.native
+    var customElementChunk: String
     
-    var node: SelectorAstNode = js.native
+    var node: SelectorAstNode
     
-    var selectorNode: SelectorAstNode = js.native
+    var selectorNode: SelectorAstNode
   }
   object AdditionalSelector {
     
@@ -464,12 +412,11 @@ object stylableTransformerMod {
     def production: typings.stylableCore.stylableCoreStrings.production = "production".asInstanceOf[typings.stylableCore.stylableCoreStrings.production]
   }
   
-  @js.native
   trait KeyFrameWithNode extends StObject {
     
-    var node: Node = js.native
+    var node: Node
     
-    var value: String = js.native
+    var value: String
   }
   object KeyFrameWithNode {
     
@@ -490,12 +437,11 @@ object stylableTransformerMod {
     }
   }
   
-  @js.native
   trait MetaParts extends StObject {
     
-    var `class`: Record[String, js.Array[CSSResolve[ClassSymbol | ElementSymbol]]] = js.native
+    var `class`: Record[String, js.Array[CSSResolve[ClassSymbol | ElementSymbol]]]
     
-    var element: Record[String, js.Array[CSSResolve[ClassSymbol | ElementSymbol]]] = js.native
+    var element: Record[String, js.Array[CSSResolve[ClassSymbol | ElementSymbol]]]
   }
   object MetaParts {
     
@@ -520,14 +466,13 @@ object stylableTransformerMod {
     }
   }
   
-  @js.native
   trait ResolvedElement extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var resolved: js.Array[CSSResolve[ClassSymbol | ElementSymbol]] = js.native
+    var resolved: js.Array[CSSResolve[ClassSymbol | ElementSymbol]]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ResolvedElement {
     
@@ -555,14 +500,13 @@ object stylableTransformerMod {
     }
   }
   
-  @js.native
   trait ScopeAnchor extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var resolved: js.Array[CSSResolve[ClassSymbol | ElementSymbol]] = js.native
+    var resolved: js.Array[CSSResolve[ClassSymbol | ElementSymbol]]
     
-    var `type`: `class` | element | `pseudo-element` = js.native
+    var `type`: `class` | element | `pseudo-element`
   }
   object ScopeAnchor {
     
@@ -594,38 +538,37 @@ object stylableTransformerMod {
     }
   }
   
-  @js.native
   trait ScopeContext extends StObject {
     
-    var additionalSelectors: js.Array[js.Function0[Unit]] = js.native
+    var additionalSelectors: js.Array[js.Function0[Unit]]
     
-    var chunk: js.UndefOr[SelectorChunk2] = js.native
+    var chunk: js.UndefOr[SelectorChunk2] = js.undefined
     
-    var chunks: js.UndefOr[js.Array[SelectorChunk2]] = js.native
+    var chunks: js.UndefOr[js.Array[SelectorChunk2]] = js.undefined
     
-    def createNestedContext(selectorAst: SelectorAstNode): ScopeContext = js.native
+    def createNestedContext(selectorAst: SelectorAstNode): ScopeContext
     
-    var currentAnchor: js.UndefOr[ScopeAnchor] = js.native
+    var currentAnchor: js.UndefOr[ScopeAnchor] = js.undefined
     
-    var elements: js.Array[_] = js.native
+    var elements: js.Array[js.Any]
     
-    def initRootAnchor(anchor: ScopeAnchor): Unit = js.native
+    def initRootAnchor(anchor: ScopeAnchor): Unit
     
-    var metaParts: js.UndefOr[MetaParts] = js.native
+    var metaParts: js.UndefOr[MetaParts] = js.undefined
     
-    var node: js.UndefOr[SelectorAstNode] = js.native
+    var node: js.UndefOr[SelectorAstNode] = js.undefined
     
-    var originMeta: StylableMeta = js.native
+    var originMeta: StylableMeta
     
-    var rule: Rule_ = js.native
+    var rule: Rule_
     
-    var selectorAst: SelectorAstNode = js.native
+    var selectorAst: SelectorAstNode
     
-    var selectorIndex: Double = js.native
+    var selectorIndex: Double
     
-    def setCurrentAnchor(anchor: ScopeAnchor): Unit = js.native
+    def setCurrentAnchor(anchor: ScopeAnchor): Unit
     
-    var transformGlobals: Boolean = js.native
+    var transformGlobals: Boolean
   }
   object ScopeContext {
     
@@ -633,7 +576,7 @@ object stylableTransformerMod {
     def apply(
       additionalSelectors: js.Array[js.Function0[Unit]],
       createNestedContext: SelectorAstNode => ScopeContext,
-      elements: js.Array[_],
+      elements: js.Array[js.Any],
       initRootAnchor: ScopeAnchor => Unit,
       originMeta: StylableMeta,
       rule: Rule_,
@@ -680,7 +623,7 @@ object stylableTransformerMod {
       def setCurrentAnchorUndefined: Self = StObject.set(x, "currentAnchor", js.undefined)
       
       @scala.inline
-      def setElements(value: js.Array[_]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      def setElements(value: js.Array[js.Any]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setElementsVarargs(value: js.Any*): Self = StObject.set(x, "elements", js.Array(value :_*))
@@ -720,18 +663,17 @@ object stylableTransformerMod {
     }
   }
   
-  @js.native
   trait ScopedSelectorResults extends StObject {
     
-    var current: StylableMeta = js.native
+    var current: StylableMeta
     
-    var elements: js.Array[js.Array[ResolvedElement]] = js.native
+    var elements: js.Array[js.Array[ResolvedElement]]
     
-    var selector: String = js.native
+    var selector: String
     
-    var selectorAst: SelectorAstNode = js.native
+    var selectorAst: SelectorAstNode
     
-    var symbol: StylableSymbol | Null = js.native
+    var symbol: StylableSymbol | Null
   }
   object ScopedSelectorResults {
     
@@ -742,7 +684,7 @@ object stylableTransformerMod {
       selector: String,
       selectorAst: SelectorAstNode
     ): ScopedSelectorResults = {
-      val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], selectorAst = selectorAst.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], selectorAst = selectorAst.asInstanceOf[js.Any], symbol = null)
       __obj.asInstanceOf[ScopedSelectorResults]
     }
     
@@ -772,16 +714,15 @@ object stylableTransformerMod {
     }
   }
   
-  @js.native
   trait StylableExports extends StObject {
     
-    var classes: Record[String, String] = js.native
+    var classes: Record[String, String]
     
-    var keyframes: Record[String, String] = js.native
+    var keyframes: Record[String, String]
     
-    var stVars: Record[String, String] = js.native
+    var stVars: Record[String, String]
     
-    var vars: Record[String, String] = js.native
+    var vars: Record[String, String]
   }
   object StylableExports {
     
@@ -813,12 +754,11 @@ object stylableTransformerMod {
     }
   }
   
-  @js.native
   trait StylableResults extends StObject {
     
-    var exports: StylableExports = js.native
+    var exports: StylableExports
     
-    var meta: StylableMeta = js.native
+    var meta: StylableMeta
   }
   object StylableResults {
     
@@ -839,12 +779,11 @@ object stylableTransformerMod {
     }
   }
   
-  @js.native
   trait TransformHooks extends StObject {
     
-    var postProcessor: js.UndefOr[typings.stylableCore.stylableTransformerMod.postProcessor[js.Object]] = js.native
+    var postProcessor: js.UndefOr[typings.stylableCore.stylableTransformerMod.postProcessor[js.Object]] = js.undefined
     
-    var replaceValueHook: js.UndefOr[typings.stylableCore.stylableTransformerMod.replaceValueHook] = js.native
+    var replaceValueHook: js.UndefOr[typings.stylableCore.stylableTransformerMod.replaceValueHook] = js.undefined
   }
   object TransformHooks {
     
@@ -859,7 +798,7 @@ object stylableTransformerMod {
       
       @scala.inline
       def setPostProcessor(
-        value: (/* stylableResults */ StylableResults, /* transformer */ StylableTransformer) => StylableResults with js.Object
+        value: (/* stylableResults */ StylableResults, /* transformer */ StylableTransformer) => StylableResults & js.Object
       ): Self = StObject.set(x, "postProcessor", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -875,24 +814,23 @@ object stylableTransformerMod {
     }
   }
   
-  @js.native
   trait TransformerOptions extends StObject {
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
-    var diagnostics: Diagnostics = js.native
+    var diagnostics: Diagnostics
     
-    var fileProcessor: FileProcessor[StylableMeta] = js.native
+    var fileProcessor: FileProcessor[StylableMeta]
     
-    var keepValues: js.UndefOr[Boolean] = js.native
+    var keepValues: js.UndefOr[Boolean] = js.undefined
     
-    var mode: js.UndefOr[EnvMode] = js.native
+    var mode: js.UndefOr[EnvMode] = js.undefined
     
-    var postProcessor: js.UndefOr[typings.stylableCore.stylableTransformerMod.postProcessor[js.Object]] = js.native
+    var postProcessor: js.UndefOr[typings.stylableCore.stylableTransformerMod.postProcessor[js.Object]] = js.undefined
     
-    var replaceValueHook: js.UndefOr[typings.stylableCore.stylableTransformerMod.replaceValueHook] = js.native
+    var replaceValueHook: js.UndefOr[typings.stylableCore.stylableTransformerMod.replaceValueHook] = js.undefined
     
-    def requireModule(modulePath: String): js.Any = js.native
+    def requireModule(modulePath: String): js.Any
   }
   object TransformerOptions {
     
@@ -935,7 +873,7 @@ object stylableTransformerMod {
       
       @scala.inline
       def setPostProcessor(
-        value: (/* stylableResults */ StylableResults, /* transformer */ StylableTransformer) => StylableResults with js.Object
+        value: (/* stylableResults */ StylableResults, /* transformer */ StylableTransformer) => StylableResults & js.Object
       ): Self = StObject.set(x, "postProcessor", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -957,7 +895,7 @@ object stylableTransformerMod {
   type postProcessor[T] = js.Function2[
     /* stylableResults */ StylableResults, 
     /* transformer */ StylableTransformer, 
-    StylableResults with T
+    StylableResults & T
   ]
   
   type replaceValueHook = js.Function4[

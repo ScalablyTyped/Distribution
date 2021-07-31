@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportTasksMessage extends StObject {
   
   /**
     * Information about an export of a snapshot to Amazon S3.
     */
-  var ExportTasks: js.UndefOr[ExportTasksList] = js.native
+  var ExportTasks: js.UndefOr[ExportTasksList] = js.undefined
   
   /**
     * A pagination token that can be used in a later DescribeExportTasks request. A marker is used for pagination to identify the location to begin output for the next response of DescribeExportTasks.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object ExportTasksMessage {
   

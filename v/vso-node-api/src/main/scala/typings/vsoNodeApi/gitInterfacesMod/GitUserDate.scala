@@ -3,26 +3,24 @@ package typings.vsoNodeApi.gitInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitUserDate extends StObject {
   
   /**
     * Date of the Git operation.
     */
-  var date: Date = js.native
+  var date: Date
   
   /**
     * Email address of the user performing the Git operation.
     */
-  var email: String = js.native
+  var email: String
   
   /**
     * Name of the user performing the Git operation.
     */
-  var name: String = js.native
+  var name: String
 }
 object GitUserDate {
   

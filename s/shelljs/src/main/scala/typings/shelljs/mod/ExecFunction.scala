@@ -5,7 +5,6 @@ import typings.shelljs.anon.ExecOptionsasyncfalseunde
 import typings.shelljs.anon.ExecOptionsasynctrue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,7 +16,7 @@ trait ExecFunction extends StObject {
     * @param command The command to execute.
     * @return        Returns an object containing the return code and output as string.
     */
-  def apply(command: String): typings.shelljs.mod.ShellString = js.native
+  def apply(command: String): ShellString = js.native
   /**
     * Executes the given command synchronously.
     *
@@ -33,7 +32,7 @@ trait ExecFunction extends StObject {
     * @return        Returns an object containing the return code and output as string,
     *                or if `{async: true}` was passed, a `ChildProcess`.
     */
-  def apply(command: String, options: ExecOptionsasyncfalseunde): typings.shelljs.mod.ShellString = js.native
+  def apply(command: String, options: ExecOptionsasyncfalseunde): ShellString = js.native
   /**
     * Executes the given command asynchronously.
     *
@@ -51,7 +50,7 @@ trait ExecFunction extends StObject {
     * @return        Returns an object containing the return code and output as string,
     *                or if `{async: true}` was passed, a `ChildProcess`.
     */
-  def apply(command: String, options: ExecOptions): typings.shelljs.mod.ShellString | ChildProcess = js.native
+  def apply(command: String, options: ExecOptions): ShellString | ChildProcess = js.native
   /**
     * Executes the given command synchronously.
     *

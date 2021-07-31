@@ -2,21 +2,21 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxValidationSummary control.
   */
-@js.native
-trait ASPxClientValidationSummary extends ASPxClientControl {
+trait ASPxClientValidationSummary
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs on the client side when the validation summary's visibility is changed.
     */
   var VisibilityChanged: ASPxClientEvent[
     ASPxClientValidationSummaryVisibilityChangedEventHandler[ASPxClientValidationSummary]
-  ] = js.native
+  ]
 }
 object ASPxClientValidationSummary {
   

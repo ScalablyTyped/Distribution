@@ -2,15 +2,13 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadFileOptions extends StObject {
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var flag: js.UndefOr[String] = js.native
+  var flag: js.UndefOr[String] = js.undefined
 }
 object ReadFileOptions {
   

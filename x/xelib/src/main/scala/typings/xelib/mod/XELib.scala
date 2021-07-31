@@ -8,7 +8,6 @@ import typings.xelib.xelibBooleans.`false`
 import typings.xelib.xelibBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -188,50 +187,6 @@ trait XELib extends StObject {
     * If `valueFn` is falsy, the record's handle is used as the value.
     */
   def BuildReferenceMap[V](id: Handle): StringDictionary[V] = js.native
-  def BuildReferenceMap[V](
-    id: Handle,
-    /**
-    * @default ''
-    */
-  search: js.UndefOr[scala.Nothing],
-    /**
-    * @default xelib.EditorID
-    * @see EditorID
-    */
-  keyFn: js.UndefOr[scala.Nothing],
-    /**
-    * @default null
-    */
-  valueFn: js.Function1[/* rec */ RecordHandle, V]
-  ): StringDictionary[V] = js.native
-  def BuildReferenceMap[V](
-    id: Handle,
-    /**
-    * @default ''
-    */
-  search: js.UndefOr[scala.Nothing],
-    /**
-    * @default xelib.EditorID
-    * @see EditorID
-    */
-  keyFn: js.Function1[/* rec */ RecordHandle, String]
-  ): StringDictionary[V] = js.native
-  def BuildReferenceMap[V](
-    id: Handle,
-    /**
-    * @default ''
-    */
-  search: js.UndefOr[scala.Nothing],
-    /**
-    * @default xelib.EditorID
-    * @see EditorID
-    */
-  keyFn: js.Function1[/* rec */ RecordHandle, String],
-    /**
-    * @default null
-    */
-  valueFn: js.Function1[/* rec */ RecordHandle, V]
-  ): StringDictionary[V] = js.native
   def BuildReferenceMap[V](id: Handle, /**
     * @default ''
     */
@@ -246,7 +201,19 @@ trait XELib extends StObject {
     * @default xelib.EditorID
     * @see EditorID
     */
-  keyFn: js.UndefOr[scala.Nothing],
+  keyFn: js.Function1[/* rec */ RecordHandle, String]
+  ): StringDictionary[V] = js.native
+  def BuildReferenceMap[V](
+    id: Handle,
+    /**
+    * @default ''
+    */
+  search: String,
+    /**
+    * @default xelib.EditorID
+    * @see EditorID
+    */
+  keyFn: js.Function1[/* rec */ RecordHandle, String],
     /**
     * @default null
     */
@@ -262,6 +229,22 @@ trait XELib extends StObject {
     * @default xelib.EditorID
     * @see EditorID
     */
+  keyFn: Unit,
+    /**
+    * @default null
+    */
+  valueFn: js.Function1[/* rec */ RecordHandle, V]
+  ): StringDictionary[V] = js.native
+  def BuildReferenceMap[V](
+    id: Handle,
+    /**
+    * @default ''
+    */
+  search: Unit,
+    /**
+    * @default xelib.EditorID
+    * @see EditorID
+    */
   keyFn: js.Function1[/* rec */ RecordHandle, String]
   ): StringDictionary[V] = js.native
   def BuildReferenceMap[V](
@@ -269,12 +252,28 @@ trait XELib extends StObject {
     /**
     * @default ''
     */
-  search: String,
+  search: Unit,
     /**
     * @default xelib.EditorID
     * @see EditorID
     */
   keyFn: js.Function1[/* rec */ RecordHandle, String],
+    /**
+    * @default null
+    */
+  valueFn: js.Function1[/* rec */ RecordHandle, V]
+  ): StringDictionary[V] = js.native
+  def BuildReferenceMap[V](
+    id: Handle,
+    /**
+    * @default ''
+    */
+  search: Unit,
+    /**
+    * @default xelib.EditorID
+    * @see EditorID
+    */
+  keyFn: Unit,
     /**
     * @default null
     */
@@ -682,9 +681,9 @@ trait XELib extends StObject {
     * @returns Form ID of the record id.
     */
   def GetFormID(id: RecordHandle): Double = js.native
-  def GetFormID(id: RecordHandle, native: js.UndefOr[scala.Nothing], local: Boolean): Double = js.native
   def GetFormID(id: RecordHandle, native: Boolean): Double = js.native
   def GetFormID(id: RecordHandle, native: Boolean, local: Boolean): Double = js.native
+  def GetFormID(id: RecordHandle, native: Unit, local: Boolean): Double = js.native
   /**
     * Finds the first item in the `FormIDs` array on `record` matching `value`.
     * @returns Handle to the element if found, else returns 0.
@@ -736,9 +735,9 @@ trait XELib extends StObject {
     * @returns Form ID of the record id as a hexadecimal string.
     */
   def GetHexFormID(id: RecordHandle): String = js.native
-  def GetHexFormID(id: RecordHandle, native: js.UndefOr[scala.Nothing], local: Boolean): String = js.native
   def GetHexFormID(id: RecordHandle, native: Boolean): String = js.native
   def GetHexFormID(id: RecordHandle, native: Boolean, local: Boolean): String = js.native
+  def GetHexFormID(id: RecordHandle, native: Unit, local: Boolean): String = js.native
   
   /**
     * @returns Handle for the file that record id is injected into.
@@ -1321,7 +1320,7 @@ trait XELib extends StObject {
     */
   def ResolveElements[P /* <: StringDictionary[String] */](id: Handle, paths: P): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof P ]: xelib.xelib.Zeroable<xelib.xelib.ElementHandle>}
-    */ typings.xelib.xelibStrings.XELib with TopLevel[js.Any] = js.native
+    */ typings.xelib.xelibStrings.XELib & TopLevel[js.Any] = js.native
   
   /**
     * Raises an exception if any element fails to resolve.
@@ -1330,7 +1329,7 @@ trait XELib extends StObject {
     */
   def ResolveElementsEx[P /* <: StringDictionary[String] */](id: Handle, paths: P): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof P ]: xelib.xelib.ElementHandle}
-    */ typings.xelib.xelibStrings.XELib with TopLevel[js.Any] = js.native
+    */ typings.xelib.xelibStrings.XELib & TopLevel[js.Any] = js.native
   
   /**
     * Rotates record id by vector degrees.
@@ -1395,9 +1394,9 @@ trait XELib extends StObject {
     * @returns Form ID of the record id as a hexadecimal string.
     */
   def SetFormID(id: RecordHandle, newFormID: Double): String = js.native
-  def SetFormID(id: RecordHandle, newFormID: Double, native: js.UndefOr[scala.Nothing], fixReferences: Boolean): String = js.native
   def SetFormID(id: RecordHandle, newFormID: Double, native: Boolean): String = js.native
   def SetFormID(id: RecordHandle, newFormID: Double, native: Boolean, fixReferences: Boolean): String = js.native
+  def SetFormID(id: RecordHandle, newFormID: Double, native: Unit, fixReferences: Boolean): String = js.native
   
   /**
     * Sets the game mode to gameMode.

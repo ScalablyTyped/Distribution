@@ -14,29 +14,29 @@ import typings.elasticsearch.elasticsearchStrings.urgent
 import typings.elasticsearch.elasticsearchStrings.yellow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClusterHealthParams extends GenericParams {
+trait ClusterHealthParams
+  extends StObject
+     with GenericParams {
   
-  var index: js.UndefOr[NameList] = js.native
+  var index: js.UndefOr[NameList] = js.undefined
   
-  var level: js.UndefOr[cluster | indices | shards] = js.native
+  var level: js.UndefOr[cluster | indices | shards] = js.undefined
   
-  var local: js.UndefOr[Boolean] = js.native
+  var local: js.UndefOr[Boolean] = js.undefined
   
-  var masterTimeout: js.UndefOr[TimeSpan] = js.native
+  var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var waitForActiveShards: js.UndefOr[String] = js.native
+  var waitForActiveShards: js.UndefOr[String] = js.undefined
   
-  var waitForEvents: js.UndefOr[immediate | urgent | high | normal | low | languid] = js.native
+  var waitForEvents: js.UndefOr[immediate | urgent | high | normal | low | languid] = js.undefined
   
-  var waitForNodes: js.UndefOr[String] = js.native
+  var waitForNodes: js.UndefOr[String] = js.undefined
   
-  var waitForRelocatingShards: js.UndefOr[Boolean] = js.native
+  var waitForRelocatingShards: js.UndefOr[Boolean] = js.undefined
   
-  var waitForStatus: js.UndefOr[green | yellow | red] = js.native
+  var waitForStatus: js.UndefOr[green | yellow | red] = js.undefined
 }
 object ClusterHealthParams {
   

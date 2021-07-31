@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolClientDescription extends StObject {
   
   /**
     * The ID of the client associated with the user pool.
     */
-  var ClientId: js.UndefOr[ClientIdType] = js.native
+  var ClientId: js.UndefOr[ClientIdType] = js.undefined
   
   /**
     * The client name from the user pool client description.
     */
-  var ClientName: js.UndefOr[ClientNameType] = js.native
+  var ClientName: js.UndefOr[ClientNameType] = js.undefined
   
   /**
     * The user pool ID for the user pool where you want to describe the user pool client.
     */
-  var UserPoolId: js.UndefOr[UserPoolIdType] = js.native
+  var UserPoolId: js.UndefOr[UserPoolIdType] = js.undefined
 }
 object UserPoolClientDescription {
   

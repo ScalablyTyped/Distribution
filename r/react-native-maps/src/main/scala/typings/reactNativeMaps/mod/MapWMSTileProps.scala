@@ -3,23 +3,23 @@ package typings.reactNativeMaps.mod
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapWMSTileProps extends ViewProps {
+trait MapWMSTileProps
+  extends StObject
+     with ViewProps {
   
-  var maximumZ: js.UndefOr[Double] = js.native
+  var maximumZ: js.UndefOr[Double] = js.undefined
   
-  var minimumZ: js.UndefOr[Double] = js.native
+  var minimumZ: js.UndefOr[Double] = js.undefined
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var tileSize: Double = js.native
+  var tileSize: Double
   
-  var urlTemplate: String = js.native
+  var urlTemplate: String
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object MapWMSTileProps {
   

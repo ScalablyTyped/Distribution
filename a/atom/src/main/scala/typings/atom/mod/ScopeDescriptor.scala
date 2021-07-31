@@ -2,14 +2,12 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScopeDescriptor extends StObject {
   
   /** Returns all scopes for this descriptor. */
-  def getScopesArray(): js.Array[String] = js.native
+  def getScopesArray(): js.Array[String]
 }
 object ScopeDescriptor {
   

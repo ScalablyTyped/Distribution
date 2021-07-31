@@ -3,28 +3,26 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object docdb {
   
-  @js.native
   trait ClusterParameterGroupParameter extends StObject {
     
     /**
       * Valid values are `immediate` and `pending-reboot`. Defaults to `pending-reboot`.
       */
-    var applyMethod: js.UndefOr[Input[String]] = js.native
+    var applyMethod: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the documentDB parameter.
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * The value of the documentDB parameter.
       */
-    var value: Input[String] = js.native
+    var value: Input[String]
   }
   object ClusterParameterGroupParameter {
     

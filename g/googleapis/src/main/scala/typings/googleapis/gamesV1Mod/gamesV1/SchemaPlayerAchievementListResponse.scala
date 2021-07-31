@@ -2,30 +2,28 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a list of achievement objects.
   */
-@js.native
 trait SchemaPlayerAchievementListResponse extends StObject {
   
   /**
     * The achievements.
     */
-  var items: js.UndefOr[js.Array[SchemaPlayerAchievement]] = js.native
+  var items: js.UndefOr[js.Array[SchemaPlayerAchievement]] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#playerAchievementListResponse.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token corresponding to the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaPlayerAchievementListResponse {
   

@@ -10,9 +10,9 @@ A node.js library for creating map images with markers, polylines, polygons and 
 | ------------------ | :-------------: |
 | Full name          | staticmaps |
 | Keywords           | openstreetmap, osm, staticmaps, staticmap, map, maps |
-| # releases         | 28 |
+| # releases         | 24 |
 | # dependents       | 1 |
-| # downloads        | 24677 |
+| # downloads        | 31960 |
 | # stars            | 3 |
 
 ## Links

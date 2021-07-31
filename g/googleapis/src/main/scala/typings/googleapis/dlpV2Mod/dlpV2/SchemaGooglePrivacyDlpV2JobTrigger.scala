@@ -2,30 +2,28 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains a configuration to make dlp api calls on a repeating basis. See
   * https://cloud.google.com/dlp/docs/concepts-job-triggers to learn more.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2JobTrigger extends StObject {
   
   /**
     * The creation timestamp of a triggeredJob, output only field.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * User provided description (max 256 chars)
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Display name (max 100 chars)
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * A stream of errors encountered when the trigger was activated. Repeated
@@ -33,38 +31,38 @@ trait SchemaGooglePrivacyDlpV2JobTrigger extends StObject {
     * return the last 100 errors. Whenever the JobTrigger is modified this list
     * will be cleared. Output only field.
     */
-  var errors: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Error]] = js.native
+  var errors: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Error]] = js.undefined
   
-  var inspectJob: js.UndefOr[SchemaGooglePrivacyDlpV2InspectJobConfig] = js.native
+  var inspectJob: js.UndefOr[SchemaGooglePrivacyDlpV2InspectJobConfig] = js.undefined
   
   /**
     * The timestamp of the last time this trigger executed, output only field.
     */
-  var lastRunTime: js.UndefOr[String] = js.native
+  var lastRunTime: js.UndefOr[String] = js.undefined
   
   /**
     * Unique resource name for the triggeredJob, assigned by the service when
     * the triggeredJob is created, for example
     * `projects/dlp-test-project/triggeredJobs/53234423`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A status for this trigger. [required]
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * A list of triggers which will be OR&#39;ed together. Only one in the list
     * needs to trigger for a job to be started. The list may contain only a
     * single Schedule trigger and must have at least one object.
     */
-  var triggers: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Trigger]] = js.native
+  var triggers: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Trigger]] = js.undefined
   
   /**
     * The last update timestamp of a triggeredJob, output only field.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2JobTrigger {
   

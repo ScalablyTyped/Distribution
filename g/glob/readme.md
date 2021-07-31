@@ -11,9 +11,9 @@ a little globber
 | Full name          | glob |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 16114 |
-| # downloads        | 1661078372 |
-| # stars            | 352 |
+| # dependents       | 16852 |
+| # downloads        | 1755927086 |
+| # stars            | 353 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/node-glob#readme)

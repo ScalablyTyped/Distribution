@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a texture used in the 3D model. */
-@js.native
 trait Printing3DModelTexture extends StObject {
   
   /** Gets or sets the texture resource used by the texture. */
-  var textureResource: Printing3DTextureResource = js.native
+  var textureResource: Printing3DTextureResource
   
   /** Get or sets a value that indicates how tiling should occur in the U axis in order to fill the overall requested area. */
-  var tileStyleU: Printing3DTextureEdgeBehavior = js.native
+  var tileStyleU: Printing3DTextureEdgeBehavior
   
   /** Gets or sets a value that indicates how tiling should occur in the V axis in order to fill the overall requested area. */
-  var tileStyleV: Printing3DTextureEdgeBehavior = js.native
+  var tileStyleV: Printing3DTextureEdgeBehavior
 }
 object Printing3DModelTexture {
   

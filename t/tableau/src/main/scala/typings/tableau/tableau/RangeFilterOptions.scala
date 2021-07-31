@@ -3,20 +3,18 @@ package typings.tableau.tableau
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangeFilterOptions extends StObject {
   
   /** Maximum value for the range (inclusive). Optional. Leave blank if you want a >= filter. */
-  var max: Double | Date = js.native
+  var max: Double | Date
   
   /** Minimum value for the range (inclusive). Optional. Leave blank if you want a <= filter. */
-  var min: Double | Date = js.native
+  var min: Double | Date
   
   /** The null values to include */
-  var nullOption: NullOption = js.native
+  var nullOption: NullOption
 }
 object RangeFilterOptions {
   

@@ -4,10 +4,8 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.dark
 import typings.wechatMiniprogram.wechatMiniprogramStrings.light
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnThemeChangeCallbackResult extends StObject {
   
   /** 系统当前的主题，取值为`light`或`dark`
@@ -15,7 +13,7 @@ trait OnThemeChangeCallbackResult extends StObject {
     * 可选值：
     * - 'dark': 深色主题;
     * - 'light': 浅色主题; */
-  var theme: dark | light = js.native
+  var theme: dark | light
 }
 object OnThemeChangeCallbackResult {
   

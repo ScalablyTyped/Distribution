@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListApplicationRevisionsOutput extends StObject {
   
   /**
     * If a large amount of information is returned, an identifier is also returned. It can be used in a subsequent list application revisions call to return the next set of application revisions in the list.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * A list of locations that contain the matching revisions.
     */
-  var revisions: js.UndefOr[RevisionLocationList] = js.native
+  var revisions: js.UndefOr[RevisionLocationList] = js.undefined
 }
 object ListApplicationRevisionsOutput {
   

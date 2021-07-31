@@ -4,43 +4,41 @@ import typings.atom.atomStrings.`line-number`
 import typings.atom.atomStrings.decorated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GutterOptions extends StObject {
   
   /** String added to the CSS classnames of the gutter's root DOM element. */
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
   /**
     * Function called by a 'line-number' gutter to generate the label for each
     * line number element. Should return a String that will be used to label the
     * corresponding line.
     */
-  var labelFn: js.UndefOr[js.Function1[/* lineData */ LineDataExtended, String]] = js.native
+  var labelFn: js.UndefOr[js.Function1[/* lineData */ LineDataExtended, String]] = js.undefined
   
   /** (required) A unique String to identify this gutter. */
-  var name: String = js.native
+  var name: String
   
   /**
     * Function to be called when a mousedown event is received by a line-number
     * element within this type: 'line-number' Gutter. If unspecified, the default
     * behavior is to select the clicked buffer row.
     */
-  var onMouseDown: js.UndefOr[js.Function1[/* lineData */ LineData, Unit]] = js.native
+  var onMouseDown: js.UndefOr[js.Function1[/* lineData */ LineData, Unit]] = js.undefined
   
   /**
     * Function to be called when a mousemove event occurs on a line-number
     * element within within this type: 'line-number' Gutter.
     */
-  var onMouseMove: js.UndefOr[js.Function1[/* lineData */ LineData, Unit]] = js.native
+  var onMouseMove: js.UndefOr[js.Function1[/* lineData */ LineData, Unit]] = js.undefined
   
   /**
     * A Number that determines stacking order between gutters.
     * Lower priority items are forced closer to the edges of the window. (default: -100)
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     * String specifying the type of gutter to create.
@@ -48,13 +46,13 @@ trait GutterOptions extends StObject {
     * Gutter::decorateMarker.
     * 'line-number' gutters.
     */
-  var `type`: js.UndefOr[decorated | `line-number`] = js.native
+  var `type`: js.UndefOr[decorated | `line-number`] = js.undefined
   
   /**
     * Boolean specifying whether the gutter is visible initially after being created.
     * (default: true)
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object GutterOptions {
   

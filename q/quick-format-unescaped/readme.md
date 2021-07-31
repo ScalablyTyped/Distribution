@@ -10,9 +10,9 @@ Solves a problem with util.format
 | ------------------ | :-------------: |
 | Full name          | quick-format-unescaped |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 8 |
-| # downloads        | 37495046 |
+| # releases         | 4 |
+| # dependents       | 9 |
+| # downloads        | 52465701 |
 | # stars            | 0 |
 
 ## Links

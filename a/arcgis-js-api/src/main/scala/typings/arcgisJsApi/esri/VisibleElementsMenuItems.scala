@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VisibleElementsMenuItems extends Object {
+trait VisibleElementsMenuItems
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether to display the `Clear selection` menu item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
     */
-  var clearSelection: js.UndefOr[Boolean] = js.native
+  var clearSelection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to display the `Refresh data` menu item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
     */
-  var refreshData: js.UndefOr[Boolean] = js.native
+  var refreshData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to enable toggling column visibility within the menu.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
     */
-  var toggleColumns: js.UndefOr[js.Any] = js.native
+  var toggleColumns: js.UndefOr[js.Any] = js.undefined
 }
 object VisibleElementsMenuItems {
   

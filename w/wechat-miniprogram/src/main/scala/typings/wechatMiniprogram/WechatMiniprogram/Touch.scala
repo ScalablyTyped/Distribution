@@ -2,18 +2,18 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 触摸事件 */
-@js.native
-trait Touch[Detail /* <: IAnyObject */, T /* <: TouchDetail | TouchCanvasDetail */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] extends CustomEvent[Detail, Mark, CurrentTargetDataset, TargetDataset] {
+trait Touch[Detail /* <: IAnyObject */, T /* <: TouchDetail | TouchCanvasDetail */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */]
+  extends StObject
+     with CustomEvent[Detail, Mark, CurrentTargetDataset, TargetDataset] {
   
   /** 触摸事件，当前变化的触摸点信息的数组 */
-  var changedTouches: js.Array[T] = js.native
+  var changedTouches: js.Array[T]
   
   /** 触摸事件，当前停留在屏幕中的触摸点信息的数组 */
-  var touches: js.Array[T] = js.native
+  var touches: js.Array[T]
 }
 object Touch {
   
@@ -33,7 +33,7 @@ object Touch {
   }
   
   @scala.inline
-  implicit class TouchMutableBuilder[Self <: Touch[_, _, _, _, _], Detail /* <: IAnyObject */, T /* <: TouchDetail | TouchCanvasDetail */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] (val x: Self with (Touch[Detail, T, Mark, CurrentTargetDataset, TargetDataset])) extends AnyVal {
+  implicit class TouchMutableBuilder[Self <: Touch[?, ?, ?, ?, ?], Detail /* <: IAnyObject */, T /* <: TouchDetail | TouchCanvasDetail */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] (val x: Self & (Touch[Detail, T, Mark, CurrentTargetDataset, TargetDataset])) extends AnyVal {
     
     @scala.inline
     def setChangedTouches(value: js.Array[T]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])

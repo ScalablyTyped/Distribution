@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A transaction.
   */
-@js.native
 trait SchemaTransaction extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaTransaction extends StObject {
     * do not have IDs, because single-use transactions do not support multiple
     * requests.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * For snapshot read-only transactions, the read timestamp chosen for the
@@ -26,7 +24,7 @@ trait SchemaTransaction extends StObject {
     * RFC3339 UTC \&quot;Zulu\&quot; format, accurate to nanoseconds. Example:
     * `&quot;2014-10-02T15:01:23.045123456Z&quot;`.
     */
-  var readTimestamp: js.UndefOr[String] = js.native
+  var readTimestamp: js.UndefOr[String] = js.undefined
 }
 object SchemaTransaction {
   

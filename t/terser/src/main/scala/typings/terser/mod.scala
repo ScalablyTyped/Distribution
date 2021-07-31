@@ -11,10 +11,13 @@ import typings.terser.terserStrings.some
 import typings.terser.terserStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("terser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait InlineFunctions extends StObject
@@ -23,23 +26,31 @@ object mod {
   object InlineFunctions extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[InlineFunctions with Double] = js.native
+    def apply(value: Double): js.UndefOr[InlineFunctions & Double] = js.native
     
     @js.native
-    sealed trait Disabled extends InlineFunctions
-    /* 0 */ val Disabled: typings.terser.mod.InlineFunctions.Disabled with Double = js.native
+    sealed trait Disabled
+      extends StObject
+         with InlineFunctions
+    /* 0 */ val Disabled: typings.terser.mod.InlineFunctions.Disabled & Double = js.native
     
     @js.native
-    sealed trait SimpleFunctions extends InlineFunctions
-    /* 1 */ val SimpleFunctions: typings.terser.mod.InlineFunctions.SimpleFunctions with Double = js.native
+    sealed trait SimpleFunctions
+      extends StObject
+         with InlineFunctions
+    /* 1 */ val SimpleFunctions: typings.terser.mod.InlineFunctions.SimpleFunctions & Double = js.native
     
     @js.native
-    sealed trait WithArguments extends InlineFunctions
-    /* 2 */ val WithArguments: typings.terser.mod.InlineFunctions.WithArguments with Double = js.native
+    sealed trait WithArguments
+      extends StObject
+         with InlineFunctions
+    /* 2 */ val WithArguments: typings.terser.mod.InlineFunctions.WithArguments & Double = js.native
     
     @js.native
-    sealed trait WithArgumentsAndVariables extends InlineFunctions
-    /* 3 */ val WithArgumentsAndVariables: typings.terser.mod.InlineFunctions.WithArgumentsAndVariables with Double = js.native
+    sealed trait WithArgumentsAndVariables
+      extends StObject
+         with InlineFunctions
+    /* 3 */ val WithArgumentsAndVariables: typings.terser.mod.InlineFunctions.WithArgumentsAndVariables & Double = js.native
   }
   
   @js.native
@@ -49,154 +60,155 @@ object mod {
   object OutputQuoteStyle extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[OutputQuoteStyle with Double] = js.native
+    def apply(value: Double): js.UndefOr[OutputQuoteStyle & Double] = js.native
     
     @js.native
-    sealed trait AlwaysDouble extends OutputQuoteStyle
-    /* 2 */ val AlwaysDouble: typings.terser.mod.OutputQuoteStyle.AlwaysDouble with Double = js.native
+    sealed trait AlwaysDouble
+      extends StObject
+         with OutputQuoteStyle
+    /* 2 */ val AlwaysDouble: typings.terser.mod.OutputQuoteStyle.AlwaysDouble & Double = js.native
     
     @js.native
-    sealed trait AlwaysOriginal extends OutputQuoteStyle
-    /* 3 */ val AlwaysOriginal: typings.terser.mod.OutputQuoteStyle.AlwaysOriginal with Double = js.native
+    sealed trait AlwaysOriginal
+      extends StObject
+         with OutputQuoteStyle
+    /* 3 */ val AlwaysOriginal: typings.terser.mod.OutputQuoteStyle.AlwaysOriginal & Double = js.native
     
     @js.native
-    sealed trait AlwaysSingle extends OutputQuoteStyle
-    /* 1 */ val AlwaysSingle: typings.terser.mod.OutputQuoteStyle.AlwaysSingle with Double = js.native
+    sealed trait AlwaysSingle
+      extends StObject
+         with OutputQuoteStyle
+    /* 1 */ val AlwaysSingle: typings.terser.mod.OutputQuoteStyle.AlwaysSingle & Double = js.native
     
     @js.native
-    sealed trait PreferDouble extends OutputQuoteStyle
-    /* 0 */ val PreferDouble: typings.terser.mod.OutputQuoteStyle.PreferDouble with Double = js.native
+    sealed trait PreferDouble
+      extends StObject
+         with OutputQuoteStyle
+    /* 0 */ val PreferDouble: typings.terser.mod.OutputQuoteStyle.PreferDouble & Double = js.native
   }
   
-  @JSImport("terser", "minify")
-  @js.native
-  def minify(files: String): js.Promise[MinifyOutput] = js.native
-  @JSImport("terser", "minify")
-  @js.native
-  def minify(files: String, options: MinifyOptions): js.Promise[MinifyOutput] = js.native
-  @JSImport("terser", "minify")
-  @js.native
-  def minify(files: js.Array[String]): js.Promise[MinifyOutput] = js.native
-  @JSImport("terser", "minify")
-  @js.native
-  def minify(files: js.Array[String], options: MinifyOptions): js.Promise[MinifyOutput] = js.native
-  @JSImport("terser", "minify")
-  @js.native
-  def minify(files: StringDictionary[String]): js.Promise[MinifyOutput] = js.native
-  @JSImport("terser", "minify")
-  @js.native
-  def minify(files: StringDictionary[String], options: MinifyOptions): js.Promise[MinifyOutput] = js.native
+  @scala.inline
+  def minify(files: String): js.Promise[MinifyOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("minify")(files.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MinifyOutput]]
+  @scala.inline
+  def minify(files: String, options: MinifyOptions): js.Promise[MinifyOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("minify")(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinifyOutput]]
+  @scala.inline
+  def minify(files: js.Array[String]): js.Promise[MinifyOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("minify")(files.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MinifyOutput]]
+  @scala.inline
+  def minify(files: js.Array[String], options: MinifyOptions): js.Promise[MinifyOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("minify")(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinifyOutput]]
+  @scala.inline
+  def minify(files: StringDictionary[String]): js.Promise[MinifyOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("minify")(files.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MinifyOutput]]
+  @scala.inline
+  def minify(files: StringDictionary[String], options: MinifyOptions): js.Promise[MinifyOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("minify")(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinifyOutput]]
   
-  @js.native
   trait CompressOptions extends StObject {
     
-    var arguments: js.UndefOr[Boolean] = js.native
+    var arguments: js.UndefOr[Boolean] = js.undefined
     
-    var arrows: js.UndefOr[Boolean] = js.native
+    var arrows: js.UndefOr[Boolean] = js.undefined
     
-    var booleans: js.UndefOr[Boolean] = js.native
+    var booleans: js.UndefOr[Boolean] = js.undefined
     
-    var booleans_as_integers: js.UndefOr[Boolean] = js.native
+    var booleans_as_integers: js.UndefOr[Boolean] = js.undefined
     
-    var collapse_vars: js.UndefOr[Boolean] = js.native
+    var collapse_vars: js.UndefOr[Boolean] = js.undefined
     
-    var comparisons: js.UndefOr[Boolean] = js.native
+    var comparisons: js.UndefOr[Boolean] = js.undefined
     
-    var computed_props: js.UndefOr[Boolean] = js.native
+    var computed_props: js.UndefOr[Boolean] = js.undefined
     
-    var conditionals: js.UndefOr[Boolean] = js.native
+    var conditionals: js.UndefOr[Boolean] = js.undefined
     
-    var dead_code: js.UndefOr[Boolean] = js.native
+    var dead_code: js.UndefOr[Boolean] = js.undefined
     
-    var defaults: js.UndefOr[Boolean] = js.native
+    var defaults: js.UndefOr[Boolean] = js.undefined
     
-    var directives: js.UndefOr[Boolean] = js.native
+    var directives: js.UndefOr[Boolean] = js.undefined
     
-    var drop_console: js.UndefOr[Boolean] = js.native
+    var drop_console: js.UndefOr[Boolean] = js.undefined
     
-    var drop_debugger: js.UndefOr[Boolean] = js.native
+    var drop_debugger: js.UndefOr[Boolean] = js.undefined
     
-    var ecma: js.UndefOr[ECMA] = js.native
+    var ecma: js.UndefOr[ECMA] = js.undefined
     
-    var evaluate: js.UndefOr[Boolean] = js.native
+    var evaluate: js.UndefOr[Boolean] = js.undefined
     
-    var expression: js.UndefOr[Boolean] = js.native
+    var expression: js.UndefOr[Boolean] = js.undefined
     
-    var global_defs: js.UndefOr[js.Object] = js.native
+    var global_defs: js.UndefOr[js.Object] = js.undefined
     
-    var hoist_funs: js.UndefOr[Boolean] = js.native
+    var hoist_funs: js.UndefOr[Boolean] = js.undefined
     
-    var hoist_props: js.UndefOr[Boolean] = js.native
+    var hoist_props: js.UndefOr[Boolean] = js.undefined
     
-    var hoist_vars: js.UndefOr[Boolean] = js.native
+    var hoist_vars: js.UndefOr[Boolean] = js.undefined
     
-    var ie8: js.UndefOr[Boolean] = js.native
+    var ie8: js.UndefOr[Boolean] = js.undefined
     
-    var if_return: js.UndefOr[Boolean] = js.native
+    var if_return: js.UndefOr[Boolean] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean | InlineFunctions] = js.native
+    var `inline`: js.UndefOr[Boolean | InlineFunctions] = js.undefined
     
-    var join_vars: js.UndefOr[Boolean] = js.native
+    var join_vars: js.UndefOr[Boolean] = js.undefined
     
-    var keep_classnames: js.UndefOr[Boolean | RegExp] = js.native
+    var keep_classnames: js.UndefOr[Boolean | RegExp] = js.undefined
     
-    var keep_fargs: js.UndefOr[Boolean] = js.native
+    var keep_fargs: js.UndefOr[Boolean] = js.undefined
     
-    var keep_fnames: js.UndefOr[Boolean | RegExp] = js.native
+    var keep_fnames: js.UndefOr[Boolean | RegExp] = js.undefined
     
-    var keep_infinity: js.UndefOr[Boolean] = js.native
+    var keep_infinity: js.UndefOr[Boolean] = js.undefined
     
-    var loops: js.UndefOr[Boolean] = js.native
+    var loops: js.UndefOr[Boolean] = js.undefined
     
-    var module: js.UndefOr[Boolean] = js.native
+    var module: js.UndefOr[Boolean] = js.undefined
     
-    var negate_iife: js.UndefOr[Boolean] = js.native
+    var negate_iife: js.UndefOr[Boolean] = js.undefined
     
-    var passes: js.UndefOr[Double] = js.native
+    var passes: js.UndefOr[Double] = js.undefined
     
-    var properties: js.UndefOr[Boolean] = js.native
+    var properties: js.UndefOr[Boolean] = js.undefined
     
-    var pure_funcs: js.UndefOr[js.Array[String]] = js.native
+    var pure_funcs: js.UndefOr[js.Array[String]] = js.undefined
     
-    var pure_getters: js.UndefOr[Boolean | strict] = js.native
+    var pure_getters: js.UndefOr[Boolean | strict] = js.undefined
     
-    var reduce_funcs: js.UndefOr[Boolean] = js.native
+    var reduce_funcs: js.UndefOr[Boolean] = js.undefined
     
-    var reduce_vars: js.UndefOr[Boolean] = js.native
+    var reduce_vars: js.UndefOr[Boolean] = js.undefined
     
-    var sequences: js.UndefOr[Boolean | Double] = js.native
+    var sequences: js.UndefOr[Boolean | Double] = js.undefined
     
-    var side_effects: js.UndefOr[Boolean] = js.native
+    var side_effects: js.UndefOr[Boolean] = js.undefined
     
-    var switches: js.UndefOr[Boolean] = js.native
+    var switches: js.UndefOr[Boolean] = js.undefined
     
-    var top_retain: js.UndefOr[Null | String | js.Array[String] | RegExp] = js.native
+    var top_retain: js.UndefOr[Null | String | js.Array[String] | RegExp] = js.undefined
     
-    var toplevel: js.UndefOr[Boolean] = js.native
+    var toplevel: js.UndefOr[Boolean] = js.undefined
     
-    var typeofs: js.UndefOr[Boolean] = js.native
+    var typeofs: js.UndefOr[Boolean] = js.undefined
     
-    var unsafe: js.UndefOr[Boolean] = js.native
+    var unsafe: js.UndefOr[Boolean] = js.undefined
     
-    var unsafe_Function: js.UndefOr[Boolean] = js.native
+    var unsafe_Function: js.UndefOr[Boolean] = js.undefined
     
-    var unsafe_arrows: js.UndefOr[Boolean] = js.native
+    var unsafe_arrows: js.UndefOr[Boolean] = js.undefined
     
-    var unsafe_comps: js.UndefOr[Boolean] = js.native
+    var unsafe_comps: js.UndefOr[Boolean] = js.undefined
     
-    var unsafe_math: js.UndefOr[Boolean] = js.native
+    var unsafe_math: js.UndefOr[Boolean] = js.undefined
     
-    var unsafe_methods: js.UndefOr[Boolean] = js.native
+    var unsafe_methods: js.UndefOr[Boolean] = js.undefined
     
-    var unsafe_proto: js.UndefOr[Boolean] = js.native
+    var unsafe_proto: js.UndefOr[Boolean] = js.undefined
     
-    var unsafe_regexp: js.UndefOr[Boolean] = js.native
+    var unsafe_regexp: js.UndefOr[Boolean] = js.undefined
     
-    var unsafe_symbols: js.UndefOr[Boolean] = js.native
+    var unsafe_symbols: js.UndefOr[Boolean] = js.undefined
     
-    var unsafe_undefined: js.UndefOr[Boolean] = js.native
+    var unsafe_undefined: js.UndefOr[Boolean] = js.undefined
     
-    var unused: js.UndefOr[Boolean] = js.native
+    var unused: js.UndefOr[Boolean] = js.undefined
   }
   object CompressOptions {
     
@@ -578,58 +590,57 @@ object mod {
     def `5`: typings.terser.terserNumbers.`5` = 5.asInstanceOf[typings.terser.terserNumbers.`5`]
   }
   
-  @js.native
   trait FormatOptions extends StObject {
     
-    var ascii_only: js.UndefOr[Boolean] = js.native
+    var ascii_only: js.UndefOr[Boolean] = js.undefined
     
-    var beautify: js.UndefOr[Boolean] = js.native
+    var beautify: js.UndefOr[Boolean] = js.undefined
     
-    var braces: js.UndefOr[Boolean] = js.native
+    var braces: js.UndefOr[Boolean] = js.undefined
     
     var comments: js.UndefOr[
         Boolean | all | some | RegExp | (js.Function2[/* node */ js.Any, /* comment */ Col, Boolean])
-      ] = js.native
+      ] = js.undefined
     
-    var ecma: js.UndefOr[ECMA] = js.native
+    var ecma: js.UndefOr[ECMA] = js.undefined
     
-    var ie8: js.UndefOr[Boolean] = js.native
+    var ie8: js.UndefOr[Boolean] = js.undefined
     
-    var indent_level: js.UndefOr[Double] = js.native
+    var indent_level: js.UndefOr[Double] = js.undefined
     
-    var indent_start: js.UndefOr[Double] = js.native
+    var indent_start: js.UndefOr[Double] = js.undefined
     
-    var inline_script: js.UndefOr[Boolean] = js.native
+    var inline_script: js.UndefOr[Boolean] = js.undefined
     
-    var keep_quoted_props: js.UndefOr[Boolean] = js.native
+    var keep_quoted_props: js.UndefOr[Boolean] = js.undefined
     
-    var max_line_len: js.UndefOr[Double | `false`] = js.native
+    var max_line_len: js.UndefOr[Double | `false`] = js.undefined
     
-    var preamble: js.UndefOr[String] = js.native
+    var preamble: js.UndefOr[String] = js.undefined
     
-    var preserve_annotations: js.UndefOr[Boolean] = js.native
+    var preserve_annotations: js.UndefOr[Boolean] = js.undefined
     
-    var quote_keys: js.UndefOr[Boolean] = js.native
+    var quote_keys: js.UndefOr[Boolean] = js.undefined
     
-    var quote_style: js.UndefOr[OutputQuoteStyle] = js.native
+    var quote_style: js.UndefOr[OutputQuoteStyle] = js.undefined
     
-    var safari10: js.UndefOr[Boolean] = js.native
+    var safari10: js.UndefOr[Boolean] = js.undefined
     
-    var semicolons: js.UndefOr[Boolean] = js.native
+    var semicolons: js.UndefOr[Boolean] = js.undefined
     
-    var shebang: js.UndefOr[Boolean] = js.native
+    var shebang: js.UndefOr[Boolean] = js.undefined
     
-    var shorthand: js.UndefOr[Boolean] = js.native
+    var shorthand: js.UndefOr[Boolean] = js.undefined
     
-    var source_map: js.UndefOr[SourceMapOptions] = js.native
+    var source_map: js.UndefOr[SourceMapOptions] = js.undefined
     
-    var webkit: js.UndefOr[Boolean] = js.native
+    var webkit: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var wrap_func_args: js.UndefOr[Boolean] = js.native
+    var wrap_func_args: js.UndefOr[Boolean] = js.undefined
     
-    var wrap_iife: js.UndefOr[Boolean] = js.native
+    var wrap_iife: js.UndefOr[Boolean] = js.undefined
   }
   object FormatOptions {
     
@@ -793,24 +804,23 @@ object mod {
     }
   }
   
-  @js.native
   trait MangleOptions extends StObject {
     
-    var eval: js.UndefOr[Boolean] = js.native
+    var eval: js.UndefOr[Boolean] = js.undefined
     
-    var keep_classnames: js.UndefOr[Boolean | RegExp] = js.native
+    var keep_classnames: js.UndefOr[Boolean | RegExp] = js.undefined
     
-    var keep_fnames: js.UndefOr[Boolean | RegExp] = js.native
+    var keep_fnames: js.UndefOr[Boolean | RegExp] = js.undefined
     
-    var module: js.UndefOr[Boolean] = js.native
+    var module: js.UndefOr[Boolean] = js.undefined
     
-    var properties: js.UndefOr[Boolean | ManglePropertiesOptions] = js.native
+    var properties: js.UndefOr[Boolean | ManglePropertiesOptions] = js.undefined
     
-    var reserved: js.UndefOr[js.Array[String]] = js.native
+    var reserved: js.UndefOr[js.Array[String]] = js.undefined
     
-    var safari10: js.UndefOr[Boolean] = js.native
+    var safari10: js.UndefOr[Boolean] = js.undefined
     
-    var toplevel: js.UndefOr[Boolean] = js.native
+    var toplevel: js.UndefOr[Boolean] = js.undefined
   }
   object MangleOptions {
     
@@ -876,18 +886,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ManglePropertiesOptions extends StObject {
     
-    var builtins: js.UndefOr[Boolean] = js.native
+    var builtins: js.UndefOr[Boolean] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var keep_quoted: js.UndefOr[Boolean | strict] = js.native
+    var keep_quoted: js.UndefOr[Boolean | strict] = js.undefined
     
-    var regex: js.UndefOr[RegExp | String] = js.native
+    var regex: js.UndefOr[RegExp | String] = js.undefined
     
-    var reserved: js.UndefOr[js.Array[String]] = js.native
+    var reserved: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ManglePropertiesOptions {
     
@@ -935,37 +944,36 @@ object mod {
     }
   }
   
-  @js.native
   trait MinifyOptions extends StObject {
     
-    var compress: js.UndefOr[Boolean | CompressOptions] = js.native
+    var compress: js.UndefOr[Boolean | CompressOptions] = js.undefined
     
-    var ecma: js.UndefOr[ECMA] = js.native
+    var ecma: js.UndefOr[ECMA] = js.undefined
     
-    var format: js.UndefOr[FormatOptions] = js.native
+    var format: js.UndefOr[FormatOptions] = js.undefined
     
-    var ie8: js.UndefOr[Boolean] = js.native
+    var ie8: js.UndefOr[Boolean] = js.undefined
     
-    var keep_classnames: js.UndefOr[Boolean | RegExp] = js.native
+    var keep_classnames: js.UndefOr[Boolean | RegExp] = js.undefined
     
-    var keep_fnames: js.UndefOr[Boolean | RegExp] = js.native
+    var keep_fnames: js.UndefOr[Boolean | RegExp] = js.undefined
     
-    var mangle: js.UndefOr[Boolean | MangleOptions] = js.native
+    var mangle: js.UndefOr[Boolean | MangleOptions] = js.undefined
     
-    var module: js.UndefOr[Boolean] = js.native
+    var module: js.UndefOr[Boolean] = js.undefined
     
-    var nameCache: js.UndefOr[js.Object] = js.native
+    var nameCache: js.UndefOr[js.Object] = js.undefined
     
     /** @deprecated */
-    var output: js.UndefOr[FormatOptions] = js.native
+    var output: js.UndefOr[FormatOptions] = js.undefined
     
-    var parse: js.UndefOr[ParseOptions] = js.native
+    var parse: js.UndefOr[ParseOptions] = js.undefined
     
-    var safari10: js.UndefOr[Boolean] = js.native
+    var safari10: js.UndefOr[Boolean] = js.undefined
     
-    var sourceMap: js.UndefOr[Boolean | SourceMapOptions] = js.native
+    var sourceMap: js.UndefOr[Boolean | SourceMapOptions] = js.undefined
     
-    var toplevel: js.UndefOr[Boolean] = js.native
+    var toplevel: js.UndefOr[Boolean] = js.undefined
   }
   object MinifyOptions {
     
@@ -1064,12 +1072,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MinifyOutput extends StObject {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var map: js.UndefOr[RawSourceMap | String] = js.native
+    var map: js.UndefOr[RawSourceMap | String] = js.undefined
   }
   object MinifyOutput {
     
@@ -1096,16 +1103,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseOptions extends StObject {
     
-    var bare_returns: js.UndefOr[Boolean] = js.native
+    var bare_returns: js.UndefOr[Boolean] = js.undefined
     
-    var ecma: js.UndefOr[ECMA] = js.native
+    var ecma: js.UndefOr[ECMA] = js.undefined
     
-    var html5_comments: js.UndefOr[Boolean] = js.native
+    var html5_comments: js.UndefOr[Boolean] = js.undefined
     
-    var shebang: js.UndefOr[Boolean] = js.native
+    var shebang: js.UndefOr[Boolean] = js.undefined
   }
   object ParseOptions {
     
@@ -1144,19 +1150,18 @@ object mod {
     }
   }
   
-  @js.native
   trait SourceMapOptions extends StObject {
     
     /** Source map object, 'inline' or source map file content */
-    var content: js.UndefOr[RawSourceMap | String] = js.native
+    var content: js.UndefOr[RawSourceMap | String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var includeSources: js.UndefOr[Boolean] = js.native
+    var includeSources: js.UndefOr[Boolean] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String | `inline`] = js.native
+    var url: js.UndefOr[String | `inline`] = js.undefined
   }
   object SourceMapOptions {
     

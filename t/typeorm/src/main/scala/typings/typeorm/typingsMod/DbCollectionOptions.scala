@@ -2,56 +2,54 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DbCollectionOptions extends StObject {
   
   /**
     * Specify a journal write concern.
     */
-  var j: js.UndefOr[Boolean] = js.native
+  var j: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A primary key factory object for generation of custom _id keys.
     */
-  var pkFactory: js.UndefOr[js.Object] = js.native
+  var pkFactory: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Return document results as raw BSON buffers.
     */
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify a read concern for the collection. (only MongoDB 3.2 or higher supported).
     */
-  var readConcern: js.UndefOr[ReadConcern] = js.native
+  var readConcern: js.UndefOr[ReadConcern] = js.undefined
   
   /**
     * The preferred read preference (ReadPreference.PRIMARY, ReadPreference.PRIMARY_PREFERRED, ReadPreference.SECONDARY, ReadPreference.SECONDARY_PREFERRED, ReadPreference.NEAREST).
     */
-  var readPreference: js.UndefOr[ReadPreference | String] = js.native
+  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
   
   /**
     * Serialize functions on any object.
     */
-  var serializeFunctions: js.UndefOr[Boolean] = js.native
+  var serializeFunctions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Returns an error if the collection does not exist.
     */
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The write concern.
     */
-  var w: js.UndefOr[scala.Double | String] = js.native
+  var w: js.UndefOr[scala.Double | String] = js.undefined
   
   /**
     * The write concern timeout.
     */
-  var wtimeout: js.UndefOr[scala.Double] = js.native
+  var wtimeout: js.UndefOr[scala.Double] = js.undefined
 }
 object DbCollectionOptions {
   

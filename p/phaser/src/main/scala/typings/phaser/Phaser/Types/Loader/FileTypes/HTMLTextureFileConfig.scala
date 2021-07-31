@@ -4,41 +4,39 @@ import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLTextureFileConfig extends StObject {
   
   /**
     * The default file extension to use if no url is provided.
     */
-  var extension: js.UndefOr[String] = js.native
+  var `extension`: js.UndefOr[String] = js.undefined
   
   /**
     * The height of the texture the HTML will be rendered to.
     */
-  var height: js.UndefOr[integer] = js.native
+  var height: js.UndefOr[integer] = js.undefined
   
   /**
     * The key of the file. Must be unique within both the Loader and the Texture Manager.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * The absolute or relative URL to load the file from.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the texture the HTML will be rendered to.
     */
-  var width: js.UndefOr[integer] = js.native
+  var width: js.UndefOr[integer] = js.undefined
   
   /**
     * Extra XHR Settings specifically for this file.
     */
-  var xhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var xhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
 }
 object HTMLTextureFileConfig {
   

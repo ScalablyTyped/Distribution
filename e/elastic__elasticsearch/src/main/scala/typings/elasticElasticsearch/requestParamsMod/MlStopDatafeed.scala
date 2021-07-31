@@ -2,23 +2,23 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlStopDatafeed[T] extends Generic {
+trait MlStopDatafeed[T]
+  extends StObject
+     with Generic {
   
-  var allow_no_datafeeds: js.UndefOr[Boolean] = js.native
+  var allow_no_datafeeds: js.UndefOr[Boolean] = js.undefined
   
-  var allow_no_match: js.UndefOr[Boolean] = js.native
+  var allow_no_match: js.UndefOr[Boolean] = js.undefined
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var datafeed_id: String = js.native
+  var datafeed_id: String
   
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object MlStopDatafeed {
   
@@ -29,7 +29,7 @@ object MlStopDatafeed {
   }
   
   @scala.inline
-  implicit class MlStopDatafeedMutableBuilder[Self <: MlStopDatafeed[_], T] (val x: Self with MlStopDatafeed[T]) extends AnyVal {
+  implicit class MlStopDatafeedMutableBuilder[Self <: MlStopDatafeed[?], T] (val x: Self & MlStopDatafeed[T]) extends AnyVal {
     
     @scala.inline
     def setAllow_no_datafeeds(value: Boolean): Self = StObject.set(x, "allow_no_datafeeds", value.asInstanceOf[js.Any])

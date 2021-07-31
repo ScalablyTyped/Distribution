@@ -2,46 +2,44 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateImageRequest extends StObject {
   
   /**
     *  The idempotency token used to make this request idempotent. 
     */
-  var clientToken: ClientToken = js.native
+  var clientToken: ClientToken
   
   /**
     *  The Amazon Resource Name (ARN) of the distribution configuration that defines and configures the outputs of your pipeline. 
     */
-  var distributionConfigurationArn: js.UndefOr[DistributionConfigurationArn] = js.native
+  var distributionConfigurationArn: js.UndefOr[DistributionConfigurationArn] = js.undefined
   
   /**
     *  Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default. 
     */
-  var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.native
+  var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) of the image recipe that defines how images are configured, tested, and assessed. 
     */
-  var imageRecipeArn: ImageRecipeArn = js.native
+  var imageRecipeArn: ImageRecipeArn
   
   /**
     *  The image tests configuration of the image. 
     */
-  var imageTestsConfiguration: js.UndefOr[ImageTestsConfiguration] = js.native
+  var imageTestsConfiguration: js.UndefOr[ImageTestsConfiguration] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) of the infrastructure configuration that defines the environment in which your image will be built and tested. 
     */
-  var infrastructureConfigurationArn: InfrastructureConfigurationArn = js.native
+  var infrastructureConfigurationArn: InfrastructureConfigurationArn
   
   /**
     *  The tags of the image. 
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateImageRequest {
   

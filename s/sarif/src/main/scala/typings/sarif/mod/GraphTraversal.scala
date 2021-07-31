@@ -3,46 +3,44 @@ package typings.sarif.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphTraversal extends StObject {
   
   /**
     * A description of this graph traversal.
     */
-  var description: js.UndefOr[Message] = js.native
+  var description: js.UndefOr[Message] = js.undefined
   
   /**
     * The sequences of edges traversed by this graph traversal.
     */
-  var edgeTraversals: js.UndefOr[js.Array[EdgeTraversal]] = js.native
+  var edgeTraversals: js.UndefOr[js.Array[EdgeTraversal]] = js.undefined
   
   /**
     * Values of relevant expressions at the start of the graph traversal that remain constant for the graph traversal.
     */
-  var immutableState: js.UndefOr[StringDictionary[MultiformatMessageString]] = js.native
+  var immutableState: js.UndefOr[StringDictionary[MultiformatMessageString]] = js.undefined
   
   /**
     * Values of relevant expressions at the start of the graph traversal that may change during graph traversal.
     */
-  var initialState: js.UndefOr[StringDictionary[MultiformatMessageString]] = js.native
+  var initialState: js.UndefOr[StringDictionary[MultiformatMessageString]] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the graph traversal.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * The index within the result.graphs to be associated with the result.
     */
-  var resultGraphIndex: js.UndefOr[Double] = js.native
+  var resultGraphIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The index within the run.graphs to be associated with the result.
     */
-  var runGraphIndex: js.UndefOr[Double] = js.native
+  var runGraphIndex: js.UndefOr[Double] = js.undefined
 }
 object GraphTraversal {
   

@@ -2,15 +2,15 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPixelCircleGeometry extends IPixelGeometry {
+trait IPixelCircleGeometry
+  extends StObject
+     with IPixelGeometry {
   
-  def getCoordinates(): js.Array[Double] = js.native
+  def getCoordinates(): js.Array[Double]
   
-  def getRadius(): Double = js.native
+  def getRadius(): Double
 }
 object IPixelCircleGeometry {
   

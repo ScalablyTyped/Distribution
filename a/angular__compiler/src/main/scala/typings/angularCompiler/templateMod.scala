@@ -20,8 +20,17 @@ import typings.angularCompiler.outputAstMod.FunctionExpr
 import typings.angularCompiler.outputAstMod.IfStmt_
 import typings.angularCompiler.outputAstMod.ReadVarExpr
 import typings.angularCompiler.outputAstMod.Statement
+import typings.angularCompiler.r3AstMod.BoundAttribute
 import typings.angularCompiler.r3AstMod.BoundEvent
+import typings.angularCompiler.r3AstMod.BoundText
+import typings.angularCompiler.r3AstMod.Content
+import typings.angularCompiler.r3AstMod.Element
+import typings.angularCompiler.r3AstMod.Icu
 import typings.angularCompiler.r3AstMod.Node
+import typings.angularCompiler.r3AstMod.Reference
+import typings.angularCompiler.r3AstMod.Template
+import typings.angularCompiler.r3AstMod.Text
+import typings.angularCompiler.r3AstMod.TextAttribute
 import typings.angularCompiler.r3AstMod.Variable
 import typings.angularCompiler.r3AstMod.Visitor
 import typings.angularCompiler.selectorMod.CssSelector
@@ -31,14 +40,19 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object templateMod {
   
+  @JSImport("@angular/compiler/src/render3/view/template", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@angular/compiler/src/render3/view/template", "BindingScope")
   @js.native
-  class BindingScope protected () extends LocalResolver {
+  class BindingScope protected ()
+    extends StObject
+       with LocalResolver {
     
     var bindingLevel: Double = js.native
     
@@ -49,6 +63,9 @@ object templateMod {
     def get(name: String): Expression | Null = js.native
     
     def getComponentProperty(name: String): Expression = js.native
+    
+    /* CompleteClass */
+    override def getLocal(name: String): Expression | Null = js.native
     
     /**
       * Gets or creates a shared context variable and returns its expression. Note that
@@ -71,6 +88,9 @@ object templateMod {
     def nestedScope(level: Double): BindingScope = js.native
     def nestedScope(level: Double, globals: Set[String]): BindingScope = js.native
     
+    /* CompleteClass */
+    override def notifyImplicitReceiverUse(): Unit = js.native
+    
     var parent: js.Any = js.native
     
     var referenceNameIndex: js.Any = js.native
@@ -90,13 +110,6 @@ object templateMod {
       * @param localRef Whether or not this is a local ref
       */
     def set(retrievalLevel: Double, name: String, lhs: Expression): BindingScope = js.native
-    def set(
-      retrievalLevel: Double,
-      name: String,
-      lhs: Expression,
-      priority: js.UndefOr[scala.Nothing],
-      declareLocalCallback: DeclareLocalVarCallback
-    ): BindingScope = js.native
     def set(retrievalLevel: Double, name: String, lhs: Expression, priority: Double): BindingScope = js.native
     def set(
       retrievalLevel: Double,
@@ -105,13 +118,20 @@ object templateMod {
       priority: Double,
       declareLocalCallback: DeclareLocalVarCallback
     ): BindingScope = js.native
+    def set(
+      retrievalLevel: Double,
+      name: String,
+      lhs: Expression,
+      priority: Unit,
+      declareLocalCallback: DeclareLocalVarCallback
+    ): BindingScope = js.native
     @JSName("set")
     def set_true(
       retrievalLevel: Double,
       name: String,
       lhs: Expression,
-      priority: js.UndefOr[scala.Nothing],
-      declareLocalCallback: js.UndefOr[scala.Nothing],
+      priority: Double,
+      declareLocalCallback: Unit,
       localRef: `true`
     ): BindingScope = js.native
     @JSName("set")
@@ -119,7 +139,7 @@ object templateMod {
       retrievalLevel: Double,
       name: String,
       lhs: Expression,
-      priority: js.UndefOr[scala.Nothing],
+      priority: Double,
       declareLocalCallback: DeclareLocalVarCallback,
       localRef: `true`
     ): BindingScope = js.native
@@ -128,8 +148,8 @@ object templateMod {
       retrievalLevel: Double,
       name: String,
       lhs: Expression,
-      priority: Double,
-      declareLocalCallback: js.UndefOr[scala.Nothing],
+      priority: Unit,
+      declareLocalCallback: Unit,
       localRef: `true`
     ): BindingScope = js.native
     @JSName("set")
@@ -137,7 +157,7 @@ object templateMod {
       retrievalLevel: Double,
       name: String,
       lhs: Expression,
-      priority: Double,
+      priority: Unit,
       declareLocalCallback: DeclareLocalVarCallback,
       localRef: `true`
     ): BindingScope = js.native
@@ -149,9 +169,12 @@ object templateMod {
   /* static members */
   object BindingScope {
     
-    @JSImport("@angular/compiler/src/render3/view/template", "BindingScope.createRootScope")
+    @JSImport("@angular/compiler/src/render3/view/template", "BindingScope")
     @js.native
-    def createRootScope(): BindingScope = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createRootScope(): BindingScope = ^.asInstanceOf[js.Dynamic].applyDynamic("createRootScope")().asInstanceOf[BindingScope]
   }
   
   @JSImport("@angular/compiler/src/render3/view/template", "LEADING_TRIVIA_CHARS")
@@ -161,7 +184,8 @@ object templateMod {
   @JSImport("@angular/compiler/src/render3/view/template", "TemplateDefinitionBuilder")
   @js.native
   class TemplateDefinitionBuilder protected ()
-    extends Visitor[Unit]
+    extends StObject
+       with Visitor[Unit]
        with LocalResolver {
     def this(
       constantPool: ConstantPool,
@@ -171,7 +195,7 @@ object templateMod {
       i18nContext: I18nContext | Null,
       templateIndex: Double | Null,
       templateName: String | Null,
-      directiveMatcher: SelectorMatcher[_] | Null,
+      directiveMatcher: SelectorMatcher[js.Any] | Null,
       directives: Set[Expression],
       pipeTypeByName: Map[String, Expression],
       pipes: Set[Expression],
@@ -256,17 +280,17 @@ object templateMod {
     var bindingContext: js.Any = js.native
     
     def buildTemplateFunction(nodes: js.Array[Node], variables: js.Array[Variable]): FunctionExpr = js.native
-    def buildTemplateFunction(
-      nodes: js.Array[Node],
-      variables: js.Array[Variable],
-      ngContentSelectorsOffset: js.UndefOr[scala.Nothing],
-      i18n: I18nMeta
-    ): FunctionExpr = js.native
     def buildTemplateFunction(nodes: js.Array[Node], variables: js.Array[Variable], ngContentSelectorsOffset: Double): FunctionExpr = js.native
     def buildTemplateFunction(
       nodes: js.Array[Node],
       variables: js.Array[Variable],
       ngContentSelectorsOffset: Double,
+      i18n: I18nMeta
+    ): FunctionExpr = js.native
+    def buildTemplateFunction(
+      nodes: js.Array[Node],
+      variables: js.Array[Variable],
+      ngContentSelectorsOffset: Unit,
       i18n: I18nMeta
     ): FunctionExpr = js.native
     
@@ -321,6 +345,9 @@ object templateMod {
       */
     var getImplicitReceiverExpr: js.Any = js.native
     
+    /* CompleteClass */
+    override def getLocal(name: String): Expression | Null = js.native
+    
     var getNamespaceInstruction: js.Any = js.native
     
     def getNgContentSelectors(): Expression | Null = js.native
@@ -371,6 +398,9 @@ object templateMod {
     
     var matchDirectives: js.Any = js.native
     
+    /* CompleteClass */
+    override def notifyImplicitReceiverUse(): Unit = js.native
+    
     var pipeTypeByName: js.Any = js.native
     
     var pipes: js.Any = js.native
@@ -397,22 +427,50 @@ object templateMod {
     
     var updateInstructionWithAdvance: js.Any = js.native
     
+    /* CompleteClass */
+    override def visitBoundAttribute(attribute: BoundAttribute): Unit = js.native
     def visitBoundAttribute[T](arg: Expression): scala.Nothing = js.native
     def visitBoundAttribute[T](arg: Statement): scala.Nothing = js.native
     def visitBoundAttribute[T](arg: Node): scala.Nothing = js.native
     
+    /* CompleteClass */
+    override def visitBoundEvent(attribute: BoundEvent): Unit = js.native
     def visitBoundEvent[T](arg: Expression): scala.Nothing = js.native
     def visitBoundEvent[T](arg: Statement): scala.Nothing = js.native
     def visitBoundEvent[T](arg: Node): scala.Nothing = js.native
     
+    /* CompleteClass */
+    override def visitBoundText(text: BoundText): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitContent(content: Content): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitElement(element: Element): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitIcu(icu: Icu): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitReference(reference: Reference): Unit = js.native
     def visitReference[T](arg: Expression): scala.Nothing = js.native
     def visitReference[T](arg: Statement): scala.Nothing = js.native
     def visitReference[T](arg: Node): scala.Nothing = js.native
     
+    /* CompleteClass */
+    override def visitTemplate(template: Template): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitText(text: Text): Unit = js.native
+    
+    /* CompleteClass */
+    override def visitTextAttribute(attribute: TextAttribute): Unit = js.native
     def visitTextAttribute[T](arg: Expression): scala.Nothing = js.native
     def visitTextAttribute[T](arg: Statement): scala.Nothing = js.native
     def visitTextAttribute[T](arg: Node): scala.Nothing = js.native
     
+    /* CompleteClass */
+    override def visitVariable(variable: Variable): Unit = js.native
     def visitVariable[T](arg: Expression): scala.Nothing = js.native
     def visitVariable[T](arg: Statement): scala.Nothing = js.native
     def visitVariable[T](arg: Node): scala.Nothing = js.native
@@ -447,80 +505,63 @@ object templateMod {
     def updatePipeSlotOffsets(bindingSlots: Double): Unit = js.native
   }
   
-  @JSImport("@angular/compiler/src/render3/view/template", "createCssSelector")
-  @js.native
-  def createCssSelector(elementName: String, attributes: StringDictionary[String]): CssSelector = js.native
+  @scala.inline
+  def createCssSelector(elementName: String, attributes: StringDictionary[String]): CssSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("createCssSelector")(elementName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[CssSelector]
   
-  @JSImport("@angular/compiler/src/render3/view/template", "getTranslationDeclStmts")
-  @js.native
-  def getTranslationDeclStmts(message: Message, variable: ReadVarExpr, closureVar: ReadVarExpr): js.Array[Statement] = js.native
-  @JSImport("@angular/compiler/src/render3/view/template", "getTranslationDeclStmts")
-  @js.native
-  def getTranslationDeclStmts(
-    message: Message,
-    variable: ReadVarExpr,
-    closureVar: ReadVarExpr,
-    params: js.UndefOr[scala.Nothing],
-    transformFn: js.Function1[/* raw */ ReadVarExpr, Expression]
-  ): js.Array[Statement] = js.native
-  @JSImport("@angular/compiler/src/render3/view/template", "getTranslationDeclStmts")
-  @js.native
+  @scala.inline
+  def getTranslationDeclStmts(message: Message, variable: ReadVarExpr, closureVar: ReadVarExpr): js.Array[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslationDeclStmts")(message.asInstanceOf[js.Any], variable.asInstanceOf[js.Any], closureVar.asInstanceOf[js.Any])).asInstanceOf[js.Array[Statement]]
+  @scala.inline
   def getTranslationDeclStmts(
     message: Message,
     variable: ReadVarExpr,
     closureVar: ReadVarExpr,
     params: StringDictionary[Expression]
-  ): js.Array[Statement] = js.native
-  @JSImport("@angular/compiler/src/render3/view/template", "getTranslationDeclStmts")
-  @js.native
+  ): js.Array[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslationDeclStmts")(message.asInstanceOf[js.Any], variable.asInstanceOf[js.Any], closureVar.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Array[Statement]]
+  @scala.inline
   def getTranslationDeclStmts(
     message: Message,
     variable: ReadVarExpr,
     closureVar: ReadVarExpr,
     params: StringDictionary[Expression],
     transformFn: js.Function1[/* raw */ ReadVarExpr, Expression]
-  ): js.Array[Statement] = js.native
+  ): js.Array[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslationDeclStmts")(message.asInstanceOf[js.Any], variable.asInstanceOf[js.Any], closureVar.asInstanceOf[js.Any], params.asInstanceOf[js.Any], transformFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[Statement]]
+  @scala.inline
+  def getTranslationDeclStmts(
+    message: Message,
+    variable: ReadVarExpr,
+    closureVar: ReadVarExpr,
+    params: Unit,
+    transformFn: js.Function1[/* raw */ ReadVarExpr, Expression]
+  ): js.Array[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslationDeclStmts")(message.asInstanceOf[js.Any], variable.asInstanceOf[js.Any], closureVar.asInstanceOf[js.Any], params.asInstanceOf[js.Any], transformFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[Statement]]
   
-  @JSImport("@angular/compiler/src/render3/view/template", "makeBindingParser")
-  @js.native
-  def makeBindingParser(): BindingParser = js.native
-  @JSImport("@angular/compiler/src/render3/view/template", "makeBindingParser")
-  @js.native
-  def makeBindingParser(interpolationConfig: InterpolationConfig): BindingParser = js.native
+  @scala.inline
+  def makeBindingParser(): BindingParser = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBindingParser")().asInstanceOf[BindingParser]
+  @scala.inline
+  def makeBindingParser(interpolationConfig: InterpolationConfig): BindingParser = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBindingParser")(interpolationConfig.asInstanceOf[js.Any]).asInstanceOf[BindingParser]
   
-  @JSImport("@angular/compiler/src/render3/view/template", "parseTemplate")
-  @js.native
-  def parseTemplate(template: String, templateUrl: String): ParsedTemplate = js.native
-  @JSImport("@angular/compiler/src/render3/view/template", "parseTemplate")
-  @js.native
-  def parseTemplate(template: String, templateUrl: String, options: ParseTemplateOptions): ParsedTemplate = js.native
+  @scala.inline
+  def parseTemplate(template: String, templateUrl: String): ParsedTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTemplate")(template.asInstanceOf[js.Any], templateUrl.asInstanceOf[js.Any])).asInstanceOf[ParsedTemplate]
+  @scala.inline
+  def parseTemplate(template: String, templateUrl: String, options: ParseTemplateOptions): ParsedTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTemplate")(template.asInstanceOf[js.Any], templateUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedTemplate]
   
-  @JSImport("@angular/compiler/src/render3/view/template", "prepareEventListenerParameters")
-  @js.native
-  def prepareEventListenerParameters(eventAst: BoundEvent): js.Array[Expression] = js.native
-  @JSImport("@angular/compiler/src/render3/view/template", "prepareEventListenerParameters")
-  @js.native
-  def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: js.UndefOr[scala.Nothing], scope: BindingScope): js.Array[Expression] = js.native
-  @JSImport("@angular/compiler/src/render3/view/template", "prepareEventListenerParameters")
-  @js.native
-  def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: String): js.Array[Expression] = js.native
-  @JSImport("@angular/compiler/src/render3/view/template", "prepareEventListenerParameters")
-  @js.native
-  def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: String, scope: BindingScope): js.Array[Expression] = js.native
-  @JSImport("@angular/compiler/src/render3/view/template", "prepareEventListenerParameters")
-  @js.native
-  def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: Null, scope: BindingScope): js.Array[Expression] = js.native
+  @scala.inline
+  def prepareEventListenerParameters(eventAst: BoundEvent): js.Array[Expression] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any]).asInstanceOf[js.Array[Expression]]
+  @scala.inline
+  def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: String): js.Array[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any], handlerName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Expression]]
+  @scala.inline
+  def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: String, scope: BindingScope): js.Array[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any], handlerName.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[Expression]]
+  @scala.inline
+  def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: Null, scope: BindingScope): js.Array[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any], handlerName.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[Expression]]
+  @scala.inline
+  def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: Unit, scope: BindingScope): js.Array[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any], handlerName.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[Expression]]
   
-  @JSImport("@angular/compiler/src/render3/view/template", "renderFlagCheckIfStmt")
-  @js.native
-  def renderFlagCheckIfStmt(flags: RenderFlags, statements: js.Array[Statement]): IfStmt_ = js.native
+  @scala.inline
+  def renderFlagCheckIfStmt(flags: RenderFlags, statements: js.Array[Statement]): IfStmt_ = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFlagCheckIfStmt")(flags.asInstanceOf[js.Any], statements.asInstanceOf[js.Any])).asInstanceOf[IfStmt_]
   
-  @JSImport("@angular/compiler/src/render3/view/template", "resolveSanitizationFn")
-  @js.native
-  def resolveSanitizationFn(context: SecurityContext): ExternalExpr | Null = js.native
-  @JSImport("@angular/compiler/src/render3/view/template", "resolveSanitizationFn")
-  @js.native
-  def resolveSanitizationFn(context: SecurityContext, isAttribute: Boolean): ExternalExpr | Null = js.native
+  @scala.inline
+  def resolveSanitizationFn(context: SecurityContext): ExternalExpr | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSanitizationFn")(context.asInstanceOf[js.Any]).asInstanceOf[ExternalExpr | Null]
+  @scala.inline
+  def resolveSanitizationFn(context: SecurityContext, isAttribute: Boolean): ExternalExpr | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSanitizationFn")(context.asInstanceOf[js.Any], isAttribute.asInstanceOf[js.Any])).asInstanceOf[ExternalExpr | Null]
   
   /**
     * This is used when one refers to variable such as: 'let abc = nextContext(2).$implicit`.
@@ -536,20 +577,19 @@ object templateMod {
     * context variable and a local ref accessing the same parent view, the context var
     * declaration should always come before the local ref declaration.
     */
-  @js.native
   trait BindingData extends StObject {
     
-    var declare: Boolean = js.native
+    var declare: Boolean
     
-    var declareLocalCallback: js.UndefOr[DeclareLocalVarCallback] = js.native
+    var declareLocalCallback: js.UndefOr[DeclareLocalVarCallback] = js.undefined
     
-    var lhs: Expression = js.native
+    var lhs: Expression
     
-    var localRef: Boolean = js.native
+    var localRef: Boolean
     
-    var priority: Double = js.native
+    var priority: Double
     
-    var retrievalLevel: Double = js.native
+    var retrievalLevel: Double
   }
   object BindingData {
     
@@ -585,12 +625,11 @@ object templateMod {
     }
   }
   
-  @js.native
   trait ComponentDefConsts extends StObject {
     
-    var constExpressions: js.Array[Expression] = js.native
+    var constExpressions: js.Array[Expression]
     
-    var prepareStatements: js.Array[Statement] = js.native
+    var prepareStatements: js.Array[Statement]
   }
   object ComponentDefConsts {
     
@@ -619,7 +658,6 @@ object templateMod {
   
   type DeclareLocalVarCallback = js.Function2[/* scope */ BindingScope, /* relativeLevel */ Double, js.Array[Statement]]
   
-  @js.native
   trait ParseTemplateOptions extends StObject {
     
     /**
@@ -630,7 +668,7 @@ object templateMod {
       * For now set this option to false if you have migrated the translation files to use the new
       * `$localize` message id format and you are not using compile time translation merging.
       */
-    var enableI18nLegacyMessageIdFormat: js.UndefOr[Boolean] = js.native
+    var enableI18nLegacyMessageIdFormat: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If this text is stored in a JavaScript string, then we have to deal with escape sequences.
@@ -655,7 +693,7 @@ object templateMod {
       * The line continuation (`\` followed by a newline) should be removed from a token
       * but the new line should increment the current line for source mapping.
       */
-    var escapedString: js.UndefOr[Boolean] = js.native
+    var escapedString: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If this text is stored in an external template (e.g. via `templateUrl`) then we need to decide
@@ -665,30 +703,30 @@ object templateMod {
       * If `true` then we will normalize ICU expression line endings.
       * The default is `false`, but this will be switched in a future major release.
       */
-    var i18nNormalizeLineEndingsInICUs: js.UndefOr[Boolean] = js.native
+    var i18nNormalizeLineEndingsInICUs: js.UndefOr[Boolean] = js.undefined
     
     /**
       * How to parse interpolation markers.
       */
-    var interpolationConfig: js.UndefOr[InterpolationConfig] = js.native
+    var interpolationConfig: js.UndefOr[InterpolationConfig] = js.undefined
     
     /**
       * An array of characters that should be considered as leading trivia.
       * Leading trivia are characters that are not important to the developer, and so should not be
       * included in source-map segments.  A common example is whitespace.
       */
-    var leadingTriviaChars: js.UndefOr[js.Array[String]] = js.native
+    var leadingTriviaChars: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Include whitespace nodes in the parsed output.
       */
-    var preserveWhitespaces: js.UndefOr[Boolean] = js.native
+    var preserveWhitespaces: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The start and end point of the text to parse within the `source` string.
       * The entire `source` string is parsed if this is not provided.
       * */
-    var range: js.UndefOr[LexerRange] = js.native
+    var range: js.UndefOr[LexerRange] = js.undefined
   }
   object ParseTemplateOptions {
     
@@ -748,7 +786,6 @@ object templateMod {
     }
   }
   
-  @js.native
   trait ParsedTemplate extends StObject {
     
     /**
@@ -756,37 +793,37 @@ object templateMod {
       *
       * `null` if there are no errors. Otherwise, the array of errors is guaranteed to be non-empty.
       */
-    var errors: js.Array[ParseError] | Null = js.native
+    var errors: js.Array[ParseError] | Null
     
     /**
       * How to parse interpolation markers.
       */
-    var interpolationConfig: js.UndefOr[InterpolationConfig] = js.native
+    var interpolationConfig: js.UndefOr[InterpolationConfig] = js.undefined
     
     /**
       * Any ng-content selectors extracted from the template.
       */
-    var ngContentSelectors: js.Array[String] = js.native
+    var ngContentSelectors: js.Array[String]
     
     /**
       * The template AST, parsed from the template.
       */
-    var nodes: js.Array[Node] = js.native
+    var nodes: js.Array[Node]
     
     /**
       * Include whitespace nodes in the parsed output.
       */
-    var preserveWhitespaces: js.UndefOr[Boolean] = js.native
+    var preserveWhitespaces: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Any styleUrls extracted from the metadata.
       */
-    var styleUrls: js.Array[String] = js.native
+    var styleUrls: js.Array[String]
     
     /**
       * Any inline styles extracted from the metadata.
       */
-    var styles: js.Array[String] = js.native
+    var styles: js.Array[String]
     
     /**
       * The string contents of the template.
@@ -794,7 +831,7 @@ object templateMod {
       * This is the "logical" template string, after expansion of any escaped characters (for inline
       * templates). This may differ from the actual template bytes as they appear in the .ts file.
       */
-    var template: String = js.native
+    var template: String
   }
   object ParsedTemplate {
     
@@ -806,7 +843,7 @@ object templateMod {
       styles: js.Array[String],
       template: String
     ): ParsedTemplate = {
-      val __obj = js.Dynamic.literal(ngContentSelectors = ngContentSelectors.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], styleUrls = styleUrls.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(ngContentSelectors = ngContentSelectors.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], styleUrls = styleUrls.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], errors = null)
       __obj.asInstanceOf[ParsedTemplate]
     }
     

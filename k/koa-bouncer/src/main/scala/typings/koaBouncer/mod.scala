@@ -10,17 +10,28 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("koa-bouncer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("koa-bouncer", "ValidationError")
   @js.native
-  class ValidationError protected () extends Error {
+  class ValidationError protected ()
+    extends StObject
+       with Error {
     def this(key: String, message: String) = this()
     
     var bouncer: Key = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("koa-bouncer", "Validator")
@@ -83,8 +94,8 @@ object mod {
     def isHexColor(): Validator = js.native
     def isHexColor(tip: String): Validator = js.native
     
-    def isIn(arr: js.Array[_]): Validator = js.native
-    def isIn(arr: js.Array[_], tip: String): Validator = js.native
+    def isIn(arr: js.Array[js.Any]): Validator = js.native
+    def isIn(arr: js.Array[js.Any], tip: String): Validator = js.native
     
     def isInt(): Validator = js.native
     def isInt(tip: String): Validator = js.native
@@ -95,8 +106,8 @@ object mod {
     def isLength(min: Double, max: Double): Validator = js.native
     def isLength(min: Double, max: Double, tip: String): Validator = js.native
     
-    def isNotIn(arr: js.Array[_]): Validator = js.native
-    def isNotIn(arr: js.Array[_], tip: String): Validator = js.native
+    def isNotIn(arr: js.Array[js.Any]): Validator = js.native
+    def isNotIn(arr: js.Array[js.Any], tip: String): Validator = js.native
     
     def isNumeric(): Validator = js.native
     def isNumeric(tip: String): Validator = js.native
@@ -124,8 +135,8 @@ object mod {
     def required(): Validator = js.native
     def required(tip: String): Validator = js.native
     
-    def tap(f: js.Function1[/* arg */ js.Any, _]): Validator = js.native
-    def tap(f: js.Function1[/* arg */ js.Any, _], tip: String): Validator = js.native
+    def tap(f: js.Function1[/* arg */ js.Any, js.Any]): Validator = js.native
+    def tap(f: js.Function1[/* arg */ js.Any, js.Any], tip: String): Validator = js.native
     
     def toArray(): Validator = js.native
     
@@ -152,30 +163,29 @@ object mod {
   /* static members */
   object Validator {
     
-    @JSImport("koa-bouncer", "Validator.addMethod")
+    @JSImport("koa-bouncer", "Validator")
     @js.native
-    def addMethod(name: String, fn: js.Function): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def addMethod(name: String, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMethod")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("koa-bouncer", "isSafeInteger")
-  @js.native
-  def isSafeInteger(n: Double): Boolean = js.native
+  @scala.inline
+  def isSafeInteger(n: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeInteger")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("koa-bouncer", "middleware")
-  @js.native
-  def middleware(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-bouncer", "middleware")
-  @js.native
-  def middleware(opts: MiddlewareOption): Middleware[DefaultState, DefaultContext] = js.native
+  @scala.inline
+  def middleware(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def middleware(opts: MiddlewareOption): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
-  @js.native
   trait MiddlewareOption extends StObject {
     
-    var getBody: js.UndefOr[js.Function1[/* ctx */ Context, _]] = js.native
+    var getBody: js.UndefOr[js.Function1[/* ctx */ Context, js.Any]] = js.undefined
     
-    var getParams: js.UndefOr[js.Function1[/* ctx */ Context, _]] = js.native
+    var getParams: js.UndefOr[js.Function1[/* ctx */ Context, js.Any]] = js.undefined
     
-    var getQuery: js.UndefOr[js.Function1[/* ctx */ Context, _]] = js.native
+    var getQuery: js.UndefOr[js.Function1[/* ctx */ Context, js.Any]] = js.undefined
   }
   object MiddlewareOption {
     
@@ -189,19 +199,19 @@ object mod {
     implicit class MiddlewareOptionMutableBuilder[Self <: MiddlewareOption] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetBody(value: /* ctx */ Context => _): Self = StObject.set(x, "getBody", js.Any.fromFunction1(value))
+      def setGetBody(value: /* ctx */ Context => js.Any): Self = StObject.set(x, "getBody", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetBodyUndefined: Self = StObject.set(x, "getBody", js.undefined)
       
       @scala.inline
-      def setGetParams(value: /* ctx */ Context => _): Self = StObject.set(x, "getParams", js.Any.fromFunction1(value))
+      def setGetParams(value: /* ctx */ Context => js.Any): Self = StObject.set(x, "getParams", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetParamsUndefined: Self = StObject.set(x, "getParams", js.undefined)
       
       @scala.inline
-      def setGetQuery(value: /* ctx */ Context => _): Self = StObject.set(x, "getQuery", js.Any.fromFunction1(value))
+      def setGetQuery(value: /* ctx */ Context => js.Any): Self = StObject.set(x, "getQuery", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetQueryUndefined: Self = StObject.set(x, "getQuery", js.undefined)

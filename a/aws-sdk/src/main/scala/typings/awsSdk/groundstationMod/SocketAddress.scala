@@ -2,21 +2,19 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocketAddress extends StObject {
   
   /**
     * Name of a socket address.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Port of a socket address.
     */
-  var port: Integer = js.native
+  var port: Integer
 }
 object SocketAddress {
   

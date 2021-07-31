@@ -2,21 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGFilterPrimitiveStandardAttributes extends StObject {
   
-  val height: SVGAnimatedLength = js.native
+  val height: SVGAnimatedLength
   
-  val result: SVGAnimatedString = js.native
+  val result: SVGAnimatedString
   
-  val width: SVGAnimatedLength = js.native
+  val width: SVGAnimatedLength
   
-  val x: SVGAnimatedLength = js.native
+  val x: SVGAnimatedLength
   
-  val y: SVGAnimatedLength = js.native
+  val y: SVGAnimatedLength
 }
 object SVGFilterPrimitiveStandardAttributes {
   

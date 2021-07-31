@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IdentifiableLanguages. */
-@js.native
 trait IdentifiableLanguages extends StObject {
   
   /** A list of all languages that the service can identify. */
-  var languages: js.Array[IdentifiableLanguage] = js.native
+  var languages: js.Array[IdentifiableLanguage]
 }
 object IdentifiableLanguages {
   

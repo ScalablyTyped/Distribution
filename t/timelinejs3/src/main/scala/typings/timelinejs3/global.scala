@@ -5,7 +5,6 @@ import typings.timelinejs3.TL.ITimelineConfig
 import typings.timelinejs3.TL.ITimelineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -19,7 +18,9 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("TL.Timeline")
     @js.native
-    class Timeline protected () extends ITimeline {
+    class Timeline protected ()
+      extends StObject
+         with ITimeline {
       def this(containerId: String, data: String) = this()
       def this(containerId: String, data: ITimelineConfig) = this()
       def this(containerId: String, data: String, options: ITimelineOptions) = this()

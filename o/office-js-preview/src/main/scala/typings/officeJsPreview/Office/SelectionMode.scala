@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,23 @@ sealed trait SelectionMode extends StObject
 object SelectionMode extends StObject {
   
   @js.native
-  sealed trait Default extends SelectionMode
+  sealed trait Default
+    extends StObject
+       with SelectionMode
   
   /**
     * The cursor is moved to the beginning of the location.
     */
   @js.native
-  sealed trait None extends SelectionMode
+  sealed trait None
+    extends StObject
+       with SelectionMode
   
   /**
     * The location will be selected (highlighted).
     */
   @js.native
-  sealed trait Selected extends SelectionMode
+  sealed trait Selected
+    extends StObject
+       with SelectionMode
 }

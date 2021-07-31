@@ -3,16 +3,14 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ɵDirectiveDef[T] extends StObject {
   
   /**
     * Function to create and refresh content queries associated with a given directive.
     */
-  var contentQueries: ContentQueriesFunction[T] | Null = js.native
+  var contentQueries: ContentQueriesFunction[T] | Null
   
   /**
     * @deprecated This is only here because `NgOnChanges` incorrectly uses declared name instead of
@@ -20,23 +18,23 @@ trait ɵDirectiveDef[T] extends StObject {
     */
   val declaredInputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any] = js.native
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
   
   /**
     * Name under which the directive is exported (for use with local references in template)
     */
-  val exportAs: js.Array[String] | Null = js.native
+  val exportAs: js.Array[String] | Null
   
   /**
     * Factory function used to create a new directive instance. Will be null initially.
     * Populated when the factory is first requested by directive instantiation logic.
     */
-  val factory: FactoryFn[T] | Null = js.native
+  val factory: FactoryFn[T] | Null
   
   /**
     * The features applied to this directive
     */
-  val features: js.Array[DirectiveDefFeature] | Null = js.native
+  val features: js.Array[DirectiveDefFeature] | Null
   
   /**
     * Assign static attribute values to a host element.
@@ -68,12 +66,12 @@ trait ɵDirectiveDef[T] extends StObject {
     * the entries. The marker values themselves are set via entries found in the
     * [AttributeMarker] enum.
     */
-  val hostAttrs: TAttributes | Null = js.native
+  val hostAttrs: TAttributes | Null
   
   /**
     * Refreshes host bindings on the associated directive.
     */
-  val hostBindings: HostBindingsFunction[T] | Null = js.native
+  val hostBindings: HostBindingsFunction[T] | Null
   
   /**
     * The number of bindings in this directive `hostBindings` (including pure fn bindings).
@@ -81,7 +79,7 @@ trait ɵDirectiveDef[T] extends StObject {
     * Used to calculate the length of the component's LView array, so we
     * can pre-fill the array and set the host binding start index.
     */
-  val hostVars: Double = js.native
+  val hostVars: Double
   
   /**
     * A dictionary mapping the inputs' minified property names to their public API names, which
@@ -90,7 +88,7 @@ trait ɵDirectiveDef[T] extends StObject {
     */
   val inputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any] = js.native
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
   
   /**
     * A dictionary mapping the outputs' minified property names to their public API names, which
@@ -99,17 +97,17 @@ trait ɵDirectiveDef[T] extends StObject {
     */
   val outputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any] = js.native
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
   
   /** Function that resolves providers and publishes them into the DI system. */
   var providersResolver: (js.Function2[
     /* def */ ɵDirectiveDef[T], 
     /* processProvidersFn */ js.UndefOr[ProcessProvidersFunction], 
     Unit
-  ]) | Null = js.native
+  ]) | Null
   
   /** The selectors that will be used to match nodes to this directive. */
-  val selectors: ɵCssSelectorList = js.native
+  val selectors: ɵCssSelectorList
   
   var setInput: (js.ThisFunction4[
     /* this */ ɵDirectiveDef[T], 
@@ -118,17 +116,17 @@ trait ɵDirectiveDef[T] extends StObject {
     /* publicName */ String, 
     /* privateName */ String, 
     Unit
-  ]) | Null = js.native
+  ]) | Null
   
   /** Token representing the directive. Used by DI. */
-  val `type`: typings.angularCore.mod.Type[T] = js.native
+  val `type`: Type[T]
   
   /**
     * Query-related instructions for a directive. Note that while directives don't have a
     * view and as such view queries won't necessarily do anything, there might be
     * components that extend the directive.
     */
-  var viewQuery: ViewQueriesFunction[T] | Null = js.native
+  var viewQuery: ViewQueriesFunction[T] | Null
 }
 object ɵDirectiveDef {
   
@@ -136,24 +134,24 @@ object ɵDirectiveDef {
   def apply[T](
     declaredInputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any],
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any],
     hostVars: Double,
     inputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any],
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any],
     outputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any],
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any],
     selectors: ɵCssSelectorList,
-    `type`: typings.angularCore.mod.Type[T]
+    `type`: Type[T]
   ): ɵDirectiveDef[T] = {
-    val __obj = js.Dynamic.literal(declaredInputs = declaredInputs.asInstanceOf[js.Any], hostVars = hostVars.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(declaredInputs = declaredInputs.asInstanceOf[js.Any], hostVars = hostVars.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any], contentQueries = null, exportAs = null, factory = null, features = null, hostAttrs = null, hostBindings = null, providersResolver = null, setInput = null, viewQuery = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ɵDirectiveDef[T]]
   }
   
   @scala.inline
-  implicit class ɵDirectiveDefMutableBuilder[Self <: ɵDirectiveDef[_], T] (val x: Self with ɵDirectiveDef[T]) extends AnyVal {
+  implicit class ɵDirectiveDefMutableBuilder[Self <: ɵDirectiveDef[?], T] (val x: Self & ɵDirectiveDef[T]) extends AnyVal {
     
     @scala.inline
     def setContentQueries(value: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit): Self = StObject.set(x, "contentQueries", js.Any.fromFunction3(value))
@@ -165,7 +163,7 @@ object ɵDirectiveDef {
     def setDeclaredInputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: string}
-      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any]
+      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
     ): Self = StObject.set(x, "declaredInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -214,14 +212,14 @@ object ɵDirectiveDef {
     def setInputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: string}
-      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any]
+      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
     ): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOutputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: string}
-      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any]
+      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
     ): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -254,7 +252,7 @@ object ɵDirectiveDef {
     def setSetInputNull: Self = StObject.set(x, "setInput", null)
     
     @scala.inline
-    def setType(value: typings.angularCore.mod.Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setViewQuery(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "viewQuery", js.Any.fromFunction2(value))

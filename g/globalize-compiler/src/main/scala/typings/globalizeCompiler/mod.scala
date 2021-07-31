@@ -5,60 +5,57 @@ import typings.estree.mod.Program
 import typings.globalize.globalizeMod.Static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("globalize-compiler", "compile")
+  @JSImport("globalize-compiler", JSImport.Namespace)
   @js.native
-  def compile(formattersAndParsers: js.Array[FormatterOrParserFunction]): String = js.native
-  @JSImport("globalize-compiler", "compile")
-  @js.native
-  def compile(formattersAndParsers: js.Array[FormatterOrParserFunction], options: CompileOptions): String = js.native
-  @JSImport("globalize-compiler", "compile")
-  @js.native
-  def compile(formattersAndParsers: StringDictionary[FormatterOrParserFunction]): String = js.native
-  @JSImport("globalize-compiler", "compile")
-  @js.native
-  def compile(formattersAndParsers: StringDictionary[FormatterOrParserFunction], options: CompileOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("globalize-compiler", "compileExtracts")
-  @js.native
-  def compileExtracts(attributes: CompileExtractsAttributes): String = js.native
+  @scala.inline
+  def compile(formattersAndParsers: js.Array[FormatterOrParserFunction]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formattersAndParsers.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def compile(formattersAndParsers: js.Array[FormatterOrParserFunction], options: CompileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formattersAndParsers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def compile(formattersAndParsers: StringDictionary[FormatterOrParserFunction]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formattersAndParsers.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def compile(formattersAndParsers: StringDictionary[FormatterOrParserFunction], options: CompileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formattersAndParsers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("globalize-compiler", "extract")
-  @js.native
-  def extract(input: String): ExtractFunction = js.native
-  @JSImport("globalize-compiler", "extract")
-  @js.native
-  def extract(input: Program): ExtractFunction = js.native
+  @scala.inline
+  def compileExtracts(attributes: CompileExtractsAttributes): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compileExtracts")(attributes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
-  trait CompileExtractsAttributes extends CompileOptions {
+  @scala.inline
+  def extract(input: String): ExtractFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(input.asInstanceOf[js.Any]).asInstanceOf[ExtractFunction]
+  @scala.inline
+  def extract(input: Program): ExtractFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(input.asInstanceOf[js.Any]).asInstanceOf[ExtractFunction]
+  
+  trait CompileExtractsAttributes
+    extends StObject
+       with CompileOptions {
     
     /**
       * an Object with CLDR data (in the JSON format) or a Function taking one argument: locale, a String; returning
       *  an Object with the CLDR data for the passed locale. Defaults to the entire supplemental data plus the entire
       *  main data for the defaultLocale.
       */
-    var cldr: js.UndefOr[js.Object | (js.Function1[/* locale */ String, js.Object])] = js.native
+    var cldr: js.UndefOr[js.Object | (js.Function1[/* locale */ String, js.Object])] = js.undefined
     
     /**
       * a locale to be used as Globalize.locale(defaultLocale) when generating the extracted formatters and parsers.
       */
-    var defaultLocale: String = js.native
+    var defaultLocale: String
     
     /**
       * an Array of extracts obtained by @see{GlobalizeCompilerStatic.extract}
       */
-    var extracts: ExtractFunction | js.Array[ExtractFunction] = js.native
+    var extracts: ExtractFunction | js.Array[ExtractFunction]
     
     /**
       * an Object with messages data (in the JSON format) or a Function taking one argument: locale, a String; returning
       *  an Object with the messages data for the passed locale. Defaults to {}.
       */
-    var messages: js.UndefOr[js.Object | (js.Function1[/* locale */ String, js.Object])] = js.native
+    var messages: js.UndefOr[js.Object | (js.Function1[/* locale */ String, js.Object])] = js.undefined
   }
   object CompileExtractsAttributes {
     
@@ -103,13 +100,12 @@ object mod {
     }
   }
   
-  @js.native
   trait CompileOptions extends StObject {
     
     /**
       * A function that replaces the default template.
       */
-    var template: js.UndefOr[js.Function1[/* options */ CompileTemplateOptions, String]] = js.native
+    var template: js.UndefOr[js.Function1[/* options */ CompileTemplateOptions, String]] = js.undefined
   }
   object CompileOptions {
     
@@ -130,18 +126,17 @@ object mod {
     }
   }
   
-  @js.native
   trait CompileTemplateOptions extends StObject {
     
     /**
       * the source of the compiled formatters and parsers.
       */
-    var code: String = js.native
+    var code: String
     
     /**
       * a list of globalize runtime modules that the compiled code depends on, e.g. globalize-runtime/number.
       */
-    var dependencies: js.Array[String] = js.native
+    var dependencies: js.Array[String]
   }
   object CompileTemplateOptions {
     

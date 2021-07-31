@@ -2,7 +2,6 @@ package typings.dashjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dashjs", "MetricsList")
@@ -13,23 +12,23 @@ class MetricsList () extends StObject {
   
   var BufferState: js.Array[IBufferState] = js.native
   
-  var DVBErrors: js.Array[_] = js.native
+  var DVBErrors: js.Array[js.Any] = js.native
   
   var DVRInfo: js.Array[IDVRInfo] = js.native
   
   var DroppedFrames: js.Array[IDroppedFrames] = js.native
   
-  var HttpList: js.Array[_] = js.native
+  var HttpList: js.Array[js.Any] = js.native
   
-  var ManifestUpdate: js.Array[_] = js.native
+  var ManifestUpdate: js.Array[js.Any] = js.native
   
-  var PlayList: js.Array[_] = js.native
+  var PlayList: js.Array[js.Any] = js.native
   
-  var RepSwitchList: js.Array[_] = js.native
+  var RepSwitchList: js.Array[js.Any] = js.native
   
   var RequestsQueue: typings.dashjs.mod.RequestsQueue | Null = js.native
   
-  var SchedulingInfo: js.Array[_] = js.native
+  var SchedulingInfo: js.Array[js.Any] = js.native
   
-  var TcpList: js.Array[_] = js.native
+  var TcpList: js.Array[js.Any] = js.native
 }

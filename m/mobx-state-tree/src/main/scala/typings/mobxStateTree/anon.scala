@@ -34,21 +34,19 @@ import typings.mobxStateTree.unionMod.UnionOptions
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var acceptsUndefined: `false` = js.native
+    var acceptsUndefined: `false`
   }
   object `0` {
     
     @scala.inline
-    def apply(acceptsUndefined: `false`): `0` = {
-      val __obj = js.Dynamic.literal(acceptsUndefined = acceptsUndefined.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(acceptsUndefined = false)
       __obj.asInstanceOf[`0`]
     }
     
@@ -60,10 +58,9 @@ object anon {
     }
   }
   
-  @js.native
   trait AcceptsUndefined extends StObject {
     
-    var acceptsUndefined: js.UndefOr[Boolean] = js.native
+    var acceptsUndefined: js.UndefOr[Boolean] = js.undefined
   }
   object AcceptsUndefined {
     
@@ -84,14 +81,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Actions[A /* <: ModelActions */, V /* <: js.Object */, VS /* <: js.Object */] extends StObject {
     
-    var actions: js.UndefOr[A] = js.native
+    var actions: js.UndefOr[A] = js.undefined
     
-    var state: js.UndefOr[VS] = js.native
+    var state: js.UndefOr[VS] = js.undefined
     
-    var views: js.UndefOr[V] = js.native
+    var views: js.UndefOr[V] = js.undefined
   }
   object Actions {
     
@@ -102,7 +98,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ActionsMutableBuilder[Self <: Actions[_, _, _], A /* <: ModelActions */, V /* <: js.Object */, VS /* <: js.Object */] (val x: Self with (Actions[A, V, VS])) extends AnyVal {
+    implicit class ActionsMutableBuilder[Self <: Actions[?, ?, ?], A /* <: ModelActions */, V /* <: js.Object */, VS /* <: js.Object */] (val x: Self & (Actions[A, V, VS])) extends AnyVal {
       
       @scala.inline
       def setActions(value: A): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
@@ -144,7 +140,7 @@ object anon {
   trait Fn0 extends StObject {
     
     def apply[IT /* <: IAnyComplexType */](subType: IT): IMaybe[IReferenceType[IT]] = js.native
-    def apply[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] | js.Object) with AcceptsUndefined): IMaybe[IReferenceType[IT]] = js.native
+    def apply[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] | js.Object) & AcceptsUndefined): IMaybe[IReferenceType[IT]] = js.native
   }
   
   @js.native
@@ -171,17 +167,17 @@ object anon {
     
     def apply[T](): IType[T, T, T] = js.native
     def apply[T](defaultValue: T): IType[js.UndefOr[T | Null], T, T] = js.native
-    def apply[C](subType: IType[C, _, _]): IType[C, C, C] = js.native
+    def apply[C](subType: IType[C, js.Any, js.Any]): IType[C, C, C] = js.native
   }
   
   @js.native
   trait FnCallNameABCDEFGHI extends StObject {
     
-    def apply[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB](A: IModelType[PA, OA, FCA, FSA], B: IModelType[PB, OB, FCB, FSB]): IModelType[PA with PB, OA with OB, CustomJoin[FCA, FCB], CustomJoin[FSA, FSB]] = js.native
-    def apply[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB](name: String, A: IModelType[PA, OA, FCA, FSA], B: IModelType[PB, OB, FCB, FSB]): IModelType[PA with PB, OA with OB, CustomJoin[FCA, FCB], CustomJoin[FSA, FSB]] = js.native
+    def apply[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB](A: IModelType[PA, OA, FCA, FSA], B: IModelType[PB, OB, FCB, FSB]): IModelType[PA & PB, OA & OB, CustomJoin[FCA, FCB], CustomJoin[FSA, FSB]] = js.native
+    def apply[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB](name: String, A: IModelType[PA, OA, FCA, FSA], B: IModelType[PB, OB, FCB, FSB]): IModelType[PA & PB, OA & OB, CustomJoin[FCA, FCB], CustomJoin[FSA, FSB]] = js.native
     def apply[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC](A: IModelType[PA, OA, FCA, FSA], B: IModelType[PB, OB, FCB, FSB], C: IModelType[PC, OC, FCC, FSC]): IModelType[
-        PA with PB with PC, 
-        OA with OB with OC, 
+        PA & PB & PC, 
+        OA & OB & OC, 
         CustomJoin[FCA, CustomJoin[FCB, FCC]], 
         CustomJoin[FSA, CustomJoin[FSB, FSC]]
       ] = js.native
@@ -191,8 +187,8 @@ object anon {
       B: IModelType[PB, OB, FCB, FSB],
       C: IModelType[PC, OC, FCC, FSC]
     ): IModelType[
-        PA with PB with PC, 
-        OA with OB with OC, 
+        PA & PB & PC, 
+        OA & OB & OC, 
         CustomJoin[FCA, CustomJoin[FCB, FCC]], 
         CustomJoin[FSA, CustomJoin[FSB, FSC]]
       ] = js.native
@@ -202,8 +198,8 @@ object anon {
       C: IModelType[PC, OC, FCC, FSC],
       D: IModelType[PD, OD, FCD, FSD]
     ): IModelType[
-        PA with PB with PC with PD, 
-        OA with OB with OC with OD, 
+        PA & PB & PC & PD, 
+        OA & OB & OC & OD, 
         CustomJoin[FCA, CustomJoin[FCB, CustomJoin[FCC, FCD]]], 
         CustomJoin[FSA, CustomJoin[FSB, CustomJoin[FSC, FSD]]]
       ] = js.native
@@ -214,8 +210,8 @@ object anon {
       C: IModelType[PC, OC, FCC, FSC],
       D: IModelType[PD, OD, FCD, FSD]
     ): IModelType[
-        PA with PB with PC with PD, 
-        OA with OB with OC with OD, 
+        PA & PB & PC & PD, 
+        OA & OB & OC & OD, 
         CustomJoin[FCA, CustomJoin[FCB, CustomJoin[FCC, FCD]]], 
         CustomJoin[FSA, CustomJoin[FSB, CustomJoin[FSC, FSD]]]
       ] = js.native
@@ -226,8 +222,8 @@ object anon {
       D: IModelType[PD, OD, FCD, FSD],
       E: IModelType[PE, OE, FCE, FSE]
     ): IModelType[
-        PA with PB with PC with PD with PE, 
-        OA with OB with OC with OD with OE, 
+        PA & PB & PC & PD & PE, 
+        OA & OB & OC & OD & OE, 
         CustomJoin[FCA, CustomJoin[FCB, CustomJoin[FCC, CustomJoin[FCD, FCE]]]], 
         CustomJoin[FSA, CustomJoin[FSB, CustomJoin[FSC, CustomJoin[FSD, FSE]]]]
       ] = js.native
@@ -239,8 +235,8 @@ object anon {
       D: IModelType[PD, OD, FCD, FSD],
       E: IModelType[PE, OE, FCE, FSE]
     ): IModelType[
-        PA with PB with PC with PD with PE, 
-        OA with OB with OC with OD with OE, 
+        PA & PB & PC & PD & PE, 
+        OA & OB & OC & OD & OE, 
         CustomJoin[FCA, CustomJoin[FCB, CustomJoin[FCC, CustomJoin[FCD, FCE]]]], 
         CustomJoin[FSA, CustomJoin[FSB, CustomJoin[FSC, CustomJoin[FSD, FSE]]]]
       ] = js.native
@@ -252,8 +248,8 @@ object anon {
       E: IModelType[PE, OE, FCE, FSE],
       F: IModelType[PF, OF, FCF, FSF]
     ): IModelType[
-        PA with PB with PC with PD with PE with PF, 
-        OA with OB with OC with OD with OE with OF, 
+        PA & PB & PC & PD & PE & PF, 
+        OA & OB & OC & OD & OE & OF, 
         CustomJoin[FCA, CustomJoin[FCB, CustomJoin[FCC, CustomJoin[FCD, CustomJoin[FCE, FCF]]]]], 
         CustomJoin[FSA, CustomJoin[FSB, CustomJoin[FSC, CustomJoin[FSD, CustomJoin[FSE, FSF]]]]]
       ] = js.native
@@ -266,8 +262,8 @@ object anon {
       E: IModelType[PE, OE, FCE, FSE],
       F: IModelType[PF, OF, FCF, FSF]
     ): IModelType[
-        PA with PB with PC with PD with PE with PF, 
-        OA with OB with OC with OD with OE with OF, 
+        PA & PB & PC & PD & PE & PF, 
+        OA & OB & OC & OD & OE & OF, 
         CustomJoin[FCA, CustomJoin[FCB, CustomJoin[FCC, CustomJoin[FCD, CustomJoin[FCE, FCF]]]]], 
         CustomJoin[FSA, CustomJoin[FSB, CustomJoin[FSC, CustomJoin[FSD, CustomJoin[FSE, FSF]]]]]
       ] = js.native
@@ -280,8 +276,8 @@ object anon {
       F: IModelType[PF, OF, FCF, FSF],
       G: IModelType[PG, OG, FCG, FSG]
     ): IModelType[
-        PA with PB with PC with PD with PE with PF with PG, 
-        OA with OB with OC with OD with OE with OF with OG, 
+        PA & PB & PC & PD & PE & PF & PG, 
+        OA & OB & OC & OD & OE & OF & OG, 
         CustomJoin[
           FCA, 
           CustomJoin[FCB, CustomJoin[FCC, CustomJoin[FCD, CustomJoin[FCE, CustomJoin[FCF, FCG]]]]]
@@ -301,8 +297,8 @@ object anon {
       F: IModelType[PF, OF, FCF, FSF],
       G: IModelType[PG, OG, FCG, FSG]
     ): IModelType[
-        PA with PB with PC with PD with PE with PF with PG, 
-        OA with OB with OC with OD with OE with OF with OG, 
+        PA & PB & PC & PD & PE & PF & PG, 
+        OA & OB & OC & OD & OE & OF & OG, 
         CustomJoin[
           FCA, 
           CustomJoin[FCB, CustomJoin[FCC, CustomJoin[FCD, CustomJoin[FCE, CustomJoin[FCF, FCG]]]]]
@@ -322,8 +318,8 @@ object anon {
       G: IModelType[PG, OG, FCG, FSG],
       H: IModelType[PH, OH, FCH, FSH]
     ): IModelType[
-        PA with PB with PC with PD with PE with PF with PG with PH, 
-        OA with OB with OC with OD with OE with OF with OG with OH, 
+        PA & PB & PC & PD & PE & PF & PG & PH, 
+        OA & OB & OC & OD & OE & OF & OG & OH, 
         CustomJoin[
           FCA, 
           CustomJoin[
@@ -350,8 +346,8 @@ object anon {
       G: IModelType[PG, OG, FCG, FSG],
       H: IModelType[PH, OH, FCH, FSH]
     ): IModelType[
-        PA with PB with PC with PD with PE with PF with PG with PH, 
-        OA with OB with OC with OD with OE with OF with OG with OH, 
+        PA & PB & PC & PD & PE & PF & PG & PH, 
+        OA & OB & OC & OD & OE & OF & OG & OH, 
         CustomJoin[
           FCA, 
           CustomJoin[
@@ -378,8 +374,8 @@ object anon {
       H: IModelType[PH, OH, FCH, FSH],
       I: IModelType[PI, OI, FCI, FSI]
     ): IModelType[
-        PA with PB with PC with PD with PE with PF with PG with PH with PI, 
-        OA with OB with OC with OD with OE with OF with OG with OH with OI, 
+        PA & PB & PC & PD & PE & PF & PG & PH & PI, 
+        OA & OB & OC & OD & OE & OF & OG & OH & OI, 
         CustomJoin[
           FCA, 
           CustomJoin[
@@ -413,8 +409,8 @@ object anon {
       H: IModelType[PH, OH, FCH, FSH],
       I: IModelType[PI, OI, FCI, FSI]
     ): IModelType[
-        PA with PB with PC with PD with PE with PF with PG with PH with PI, 
-        OA with OB with OC with OD with OE with OF with OG with OH with OI, 
+        PA & PB & PC & PD & PE & PF & PG & PH & PI, 
+        OA & OB & OC & OD & OE & OF & OG & OH & OI, 
         CustomJoin[
           FCA, 
           CustomJoin[
@@ -900,7 +896,7 @@ object anon {
   @js.native
   trait FnCallTypeDefaultValueOrFunctionOptionalValues extends StObject {
     
-    def apply[IT /* <: IAnyType */](`type`: IT, defaultValueOrFunction: OptionalDefaultValueOrFunction[IT]): IOptionalIType[IT, js.Array[js.UndefOr[scala.Nothing]]] = js.native
+    def apply[IT /* <: IAnyType */](`type`: IT, defaultValueOrFunction: OptionalDefaultValueOrFunction[IT]): IOptionalIType[IT, js.Array[Unit]] = js.native
     def apply[IT /* <: IAnyType */, OptionalVals /* <: ValidOptionalValues */](
       `type`: IT,
       defaultValueOrFunction: OptionalDefaultValueOrFunction[IT],
@@ -935,11 +931,11 @@ object anon {
   @js.native
   trait FnCallValue extends StObject {
     
-    def apply(value: js.UndefOr[scala.Nothing]): ISimpleType[js.UndefOr[scala.Nothing]] = js.native
     def apply(value: String): ISimpleType[String] = js.native
     def apply(value: Boolean): ISimpleType[Boolean] = js.native
     def apply(value: Double): ISimpleType[Double] = js.native
     def apply(value: Null): ISimpleType[Null] = js.native
+    def apply(value: Unit): ISimpleType[Unit] = js.native
     def apply(value: Date): ISimpleType[Date] = js.native
   }
   

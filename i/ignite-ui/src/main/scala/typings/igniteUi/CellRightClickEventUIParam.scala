@@ -3,46 +3,44 @@ package typings.igniteUi
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellRightClickEventUIParam extends StObject {
   
   /**
     * Gets a reference to cell DOM element.
     */
-  var cellElement: js.UndefOr[Element] = js.native
+  var cellElement: js.UndefOr[Element] = js.undefined
   
   /**
     * Gets the column index of the DOM element.
     */
-  var colIndex: js.UndefOr[Double] = js.native
+  var colIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the column key.
     */
-  var colKey: js.UndefOr[String] = js.native
+  var colKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the grid.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the row DOM element.
     */
-  var row: js.UndefOr[Element] = js.native
+  var row: js.UndefOr[Element] = js.undefined
   
   /**
     * Gets the row index.
     */
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the row key.
     */
-  var rowKey: js.UndefOr[js.Any] = js.native
+  var rowKey: js.UndefOr[js.Any] = js.undefined
 }
 object CellRightClickEventUIParam {
   

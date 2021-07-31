@@ -2,16 +2,14 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LifecycleConfigurationDescription extends StObject {
   
   /**
     * An array of lifecycle management policies. Currently, EFS supports a maximum of one policy per file system.
     */
-  var LifecyclePolicies: js.UndefOr[typings.awsSdk.efsMod.LifecyclePolicies] = js.native
+  var LifecyclePolicies: js.UndefOr[typings.awsSdk.efsMod.LifecyclePolicies] = js.undefined
 }
 object LifecycleConfigurationDescription {
   

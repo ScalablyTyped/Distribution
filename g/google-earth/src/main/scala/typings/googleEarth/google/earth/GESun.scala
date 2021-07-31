@@ -2,23 +2,21 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GESun extends StObject {
   
   /**
     *  Specifies whether the feature is drawn in the 3D viewer when it is initially loaded.
     *  In order for a feature to be visible, the visibility property and all of its ancestors must also be set to 1.
     */
-  def getVisibility(): Boolean = js.native
+  def getVisibility(): Boolean
   
   /**
     *  Specifies whether the feature is drawn in the 3D viewer when it is initially loaded.
     *  In order for a feature to be visible, the visibility property and all of its ancestors must also be set to 1.
     */
-  def setVisibility(visibility: Boolean): Unit = js.native
+  def setVisibility(visibility: Boolean): Unit
 }
 object GESun {
   

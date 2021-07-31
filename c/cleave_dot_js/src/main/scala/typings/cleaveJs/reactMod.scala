@@ -7,7 +7,6 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMod extends Shortcut {
@@ -22,10 +21,10 @@ object reactMod extends Shortcut {
   }
   @JSImport("cleave.js/react", JSImport.Namespace)
   @js.native
-  val ^ : ComponentClass[Props, ComponentState] = js.native
+  val ^ : js.Object & (ComponentClass[Props, ComponentState]) = js.native
   
-  type _To = ComponentClass[Props, ComponentState]
+  type _To = js.Object & (ComponentClass[Props, ComponentState])
   
   /* This means you don't have to write `^`, but can instead just say `reactMod.foo` */
-  override def _to: ComponentClass[Props, ComponentState] = ^
+  override def _to: js.Object & (ComponentClass[Props, ComponentState]) = ^
 }

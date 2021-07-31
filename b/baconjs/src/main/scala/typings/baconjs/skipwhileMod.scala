@@ -8,20 +8,20 @@ import typings.baconjs.replyMod.Reply
 import typings.baconjs.typesMod.EventSink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skipwhileMod {
   
-  @JSImport("baconjs/types/skipwhile", JSImport.Default)
+  @JSImport("baconjs/types/skipwhile", JSImport.Namespace)
   @js.native
-  def default[V](src: typings.baconjs.observableMod.default[V], f: PredicateOrProperty[V]): typings.baconjs.observableMod.default[V] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("baconjs/types/skipwhile", "skipWhile")
-  @js.native
-  def skipWhile[V](src: default[V], f: PredicateOrProperty[V]): default[V] = js.native
+  @scala.inline
+  def default[V](src: typings.baconjs.observableMod.default[V], f: PredicateOrProperty[V]): typings.baconjs.observableMod.default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[V]]
   
-  @JSImport("baconjs/types/skipwhile", "skipWhileT")
-  @js.native
-  def skipWhileT[V](f: Predicate[V]): js.Function2[/* event */ Event[V], /* sink */ EventSink[V], Reply] = js.native
+  @scala.inline
+  def skipWhile[V](src: default[V], f: PredicateOrProperty[V]): default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("skipWhile")(src.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[default[V]]
+  
+  @scala.inline
+  def skipWhileT[V](f: Predicate[V]): js.Function2[/* event */ Event[V], /* sink */ EventSink[V], Reply] = ^.asInstanceOf[js.Dynamic].applyDynamic("skipWhileT")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* event */ Event[V], /* sink */ EventSink[V], Reply]]
 }

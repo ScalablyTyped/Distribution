@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerModuleNameCache extends StObject {
   
-  def get(directory: java.lang.String): js.UndefOr[ResolvedModuleWithFailedLookupLocations] = js.native
+  def get(directory: java.lang.String): js.UndefOr[ResolvedModuleWithFailedLookupLocations]
   
-  def set(directory: java.lang.String, result: ResolvedModuleWithFailedLookupLocations): Unit = js.native
+  def set(directory: java.lang.String, result: ResolvedModuleWithFailedLookupLocations): Unit
 }
 object PerModuleNameCache {
   

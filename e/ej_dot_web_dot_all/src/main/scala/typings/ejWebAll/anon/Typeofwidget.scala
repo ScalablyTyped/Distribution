@@ -3,25 +3,23 @@ package typings.ejWebAll.anon
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofwidget extends StObject {
   
-  val autoInit: Boolean = js.native
+  val autoInit: Boolean
   
-  def destroyAll(elements: Element): Unit = js.native
+  def destroyAll(elements: Element): Unit
   
-  def init(element: Element): Unit = js.native
+  def init(element: Element): Unit
   
-  def register(pluginName: String, className: String, prototype: js.Any): Unit = js.native
+  def register(pluginName: String, className: String, prototype: js.Any): Unit
   
-  def registerInstance(element: Element, pluginName: String, className: String, prototype: js.Any): Unit = js.native
+  def registerInstance(element: Element, pluginName: String, className: String, prototype: js.Any): Unit
   
-  val registeredInstances: js.Array[_] = js.native
+  val registeredInstances: js.Array[js.Any]
   
-  val registeredWidgets: js.Array[_] = js.native
+  val registeredWidgets: js.Array[js.Any]
 }
 object Typeofwidget {
   
@@ -32,8 +30,8 @@ object Typeofwidget {
     init: Element => Unit,
     register: (String, String, js.Any) => Unit,
     registerInstance: (Element, String, String, js.Any) => Unit,
-    registeredInstances: js.Array[_],
-    registeredWidgets: js.Array[_]
+    registeredInstances: js.Array[js.Any],
+    registeredWidgets: js.Array[js.Any]
   ): Typeofwidget = {
     val __obj = js.Dynamic.literal(autoInit = autoInit.asInstanceOf[js.Any], destroyAll = js.Any.fromFunction1(destroyAll), init = js.Any.fromFunction1(init), register = js.Any.fromFunction3(register), registerInstance = js.Any.fromFunction4(registerInstance), registeredInstances = registeredInstances.asInstanceOf[js.Any], registeredWidgets = registeredWidgets.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofwidget]
@@ -58,13 +56,13 @@ object Typeofwidget {
     def setRegisterInstance(value: (Element, String, String, js.Any) => Unit): Self = StObject.set(x, "registerInstance", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setRegisteredInstances(value: js.Array[_]): Self = StObject.set(x, "registeredInstances", value.asInstanceOf[js.Any])
+    def setRegisteredInstances(value: js.Array[js.Any]): Self = StObject.set(x, "registeredInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRegisteredInstancesVarargs(value: js.Any*): Self = StObject.set(x, "registeredInstances", js.Array(value :_*))
     
     @scala.inline
-    def setRegisteredWidgets(value: js.Array[_]): Self = StObject.set(x, "registeredWidgets", value.asInstanceOf[js.Any])
+    def setRegisteredWidgets(value: js.Array[js.Any]): Self = StObject.set(x, "registeredWidgets", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRegisteredWidgetsVarargs(value: js.Any*): Self = StObject.set(x, "registeredWidgets", js.Array(value :_*))

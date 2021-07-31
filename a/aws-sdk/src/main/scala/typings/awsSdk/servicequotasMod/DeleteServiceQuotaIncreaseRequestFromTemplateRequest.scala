@@ -2,26 +2,24 @@ package typings.awsSdk.servicequotasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteServiceQuotaIncreaseRequestFromTemplateRequest extends StObject {
   
   /**
     * Specifies the AWS Region for the quota that you want to delete.
     */
-  var AwsRegion: typings.awsSdk.servicequotasMod.AwsRegion = js.native
+  var AwsRegion: typings.awsSdk.servicequotasMod.AwsRegion
   
   /**
     * Specifies the code for the quota that you want to delete.
     */
-  var QuotaCode: typings.awsSdk.servicequotasMod.QuotaCode = js.native
+  var QuotaCode: typings.awsSdk.servicequotasMod.QuotaCode
   
   /**
     * Specifies the code for the service that you want to delete.
     */
-  var ServiceCode: typings.awsSdk.servicequotasMod.ServiceCode = js.native
+  var ServiceCode: typings.awsSdk.servicequotasMod.ServiceCode
 }
 object DeleteServiceQuotaIncreaseRequestFromTemplateRequest {
   

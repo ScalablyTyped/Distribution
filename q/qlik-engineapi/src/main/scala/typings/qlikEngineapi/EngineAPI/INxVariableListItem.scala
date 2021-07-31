@@ -2,35 +2,33 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxVariableListItem...
   */
-@js.native
 trait INxVariableListItem extends StObject {
   
   /**
     * Data.
     */
-  var qData: js.Any = js.native
+  var qData: js.Any
   
   /**
     * Definition of the variable. It can be a value or an expression.
     */
-  var qDefinition: String = js.native
+  var qDefinition: String
   
   /**
     * Description of the variable.
     */
-  var qDescription: String = js.native
+  var qDescription: String
   
   /**
     * Identifier and type of the object.
     * >> This parameter is mandatory.
     */
-  var qInfo: INxInfo = js.native
+  var qInfo: INxInfo
   
   /**
     * If set to true, it means that the variable is a system variable.
@@ -39,7 +37,7 @@ trait INxVariableListItem extends StObject {
     * >> This parameter is optional.
     * >> The default value is false.
     */
-  var qIsConfig: js.UndefOr[Boolean] = js.native
+  var qIsConfig: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, it means that the variable is reserved.
@@ -50,24 +48,24 @@ trait INxVariableListItem extends StObject {
     * - ScriptError is a reserved variable, set by the engine.
     * - DayNames is a reserved variable, set by the user.
     */
-  var qIsReserved: js.UndefOr[Boolean] = js.native
+  var qIsReserved: js.UndefOr[Boolean] = js.undefined
   
   // ? nicht dokumentiert
   /**
     * If set to true, it means that the variable was defined via script.
     */
-  var qIsScriptCreated: Boolean = js.native
+  var qIsScriptCreated: Boolean
   
   /**
     * Information about publishing and permissions.
     * >> This parameter is optional.
     */
-  var qMeta: js.UndefOr[INxMeta] = js.native
+  var qMeta: js.UndefOr[INxMeta] = js.undefined
   
   /**
     * Name of the variable.
     */
-  var qName: String = js.native
+  var qName: String
 }
 object INxVariableListItem {
   

@@ -11,8 +11,8 @@ Simple XML to JavaScript object converter.
 | Full name          | xml2js |
 | Keywords           | xml, json |
 | # releases         | 5 |
-| # dependents       | 5296 |
-| # downloads        | 394455308 |
+| # dependents       | 5540 |
+| # downloads        | 466736971 |
 | # stars            | 280 |
 
 ## Links

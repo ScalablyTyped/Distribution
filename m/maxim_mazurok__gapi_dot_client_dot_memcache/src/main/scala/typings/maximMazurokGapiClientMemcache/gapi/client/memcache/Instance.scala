@@ -3,79 +3,77 @@ package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instance extends StObject {
   
   /**
     * The full name of the Google Compute Engine [network](https://cloud.google.com/vpc/docs/vpc) to which the instance is connected. If left unspecified, the `default` network will be
     * used.
     */
-  var authorizedNetwork: js.UndefOr[String] = js.native
+  var authorizedNetwork: js.UndefOr[String] = js.undefined
   
   /** Output only. The time the instance was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. Endpoint for Discovery API */
-  var discoveryEndpoint: js.UndefOr[String] = js.native
+  var discoveryEndpoint: js.UndefOr[String] = js.undefined
   
   /** User provided name for the instance only used for display purposes. Cannot be more than 80 characters. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** List of messages that describe current statuses of memcached instance. */
-  var instanceMessages: js.UndefOr[js.Array[InstanceMessage]] = js.native
+  var instanceMessages: js.UndefOr[js.Array[InstanceMessage]] = js.undefined
   
   /** Resource labels to represent user-provided metadata. Refer to cloud documentation on labels for more details. https://cloud.google.com/compute/docs/labeling-resources */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.Instance with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.Instance & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Output only. The full version of memcached server running on this instance. System automatically determines the full memcached version for an instance based on the input
     * MemcacheVersion. The full version format will be "memcached-1.5.16".
     */
-  var memcacheFullVersion: js.UndefOr[String] = js.native
+  var memcacheFullVersion: js.UndefOr[String] = js.undefined
   
   /** Output only. List of Memcached nodes. Refer to [Node] message for more details. */
-  var memcacheNodes: js.UndefOr[js.Array[Node]] = js.native
+  var memcacheNodes: js.UndefOr[js.Array[Node]] = js.undefined
   
   /**
     * The major version of Memcached software. If not provided, latest supported version will be used. Currently the latest supported major version is MEMCACHE_1_5. The minor version will
     * be automatically determined by our system based on the latest supported minor version.
     */
-  var memcacheVersion: js.UndefOr[String] = js.native
+  var memcacheVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Unique name of the resource in this scope including project and location using the form: `projects/{project_id}/locations/{location_id}/instances/{instance_id}` Note:
     * Memcached instances are managed and addressed at regional level so location_id here refers to a GCP region; however, users may choose which zones Memcached nodes within an instances
     * should be provisioned in. Refer to [zones] field for more details.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. Configuration for Memcached nodes. */
-  var nodeConfig: js.UndefOr[NodeConfig] = js.native
+  var nodeConfig: js.UndefOr[NodeConfig] = js.undefined
   
   /** Required. Number of nodes in the Memcached instance. */
-  var nodeCount: js.UndefOr[Double] = js.native
+  var nodeCount: js.UndefOr[Double] = js.undefined
   
   /** Optional: User defined parameters to apply to the memcached process on each node. */
-  var parameters: js.UndefOr[MemcacheParameters] = js.native
+  var parameters: js.UndefOr[MemcacheParameters] = js.undefined
   
   /** Output only. The state of this Memcached instance. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. The time the instance was updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Zones where Memcached nodes should be provisioned in. Memcached nodes will be equally distributed across these zones. If not provided, the service will by default create nodes in
     * all zones in the region for the instance.
     */
-  var zones: js.UndefOr[js.Array[String]] = js.native
+  var zones: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Instance {
   
@@ -125,7 +123,7 @@ object Instance {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.Instance with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -2,17 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadBuildProgramHost extends StObject {
   
-  def getCurrentDirectory(): java.lang.String = js.native
+  def getCurrentDirectory(): java.lang.String
   
-  def readFile(fileName: java.lang.String): js.UndefOr[java.lang.String] = js.native
+  def readFile(fileName: java.lang.String): js.UndefOr[java.lang.String]
   
-  def useCaseSensitiveFileNames(): Boolean = js.native
+  def useCaseSensitiveFileNames(): Boolean
 }
 object ReadBuildProgramHost {
   

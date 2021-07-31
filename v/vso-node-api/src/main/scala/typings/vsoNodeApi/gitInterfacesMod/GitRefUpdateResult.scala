@@ -2,56 +2,54 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitRefUpdateResult extends StObject {
   
   /**
     * Custom message for the result object For instance, Reason for failing.
     */
-  var customMessage: String = js.native
+  var customMessage: String
   
   /**
     * Whether the ref is locked or not
     */
-  var isLocked: Boolean = js.native
+  var isLocked: Boolean
   
   /**
     * Ref name
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * New object ID
     */
-  var newObjectId: String = js.native
+  var newObjectId: String
   
   /**
     * Old object ID
     */
-  var oldObjectId: String = js.native
+  var oldObjectId: String
   
   /**
     * Name of the plugin that rejected the updated.
     */
-  var rejectedBy: String = js.native
+  var rejectedBy: String
   
   /**
     * Repository ID
     */
-  var repositoryId: String = js.native
+  var repositoryId: String
   
   /**
     * True if the ref update succeeded, false otherwise
     */
-  var success: Boolean = js.native
+  var success: Boolean
   
   /**
     * Status of the update from the TFS server.
     */
-  var updateStatus: GitRefUpdateStatus = js.native
+  var updateStatus: GitRefUpdateStatus
 }
 object GitRefUpdateResult {
   

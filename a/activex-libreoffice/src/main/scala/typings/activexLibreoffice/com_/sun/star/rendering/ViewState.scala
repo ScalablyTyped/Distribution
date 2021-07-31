@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 import typings.activexLibreoffice.com_.sun.star.geometry.AffineMatrix2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This structure contains information considered the view state, i.e. the invariant setup used when painting a whole view of something.
   * @since OOo 2.0
   */
-@js.native
 trait ViewState extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait ViewState extends StObject {
     *
     * This member is used to transform coordinates of draw operations from user space to screen space.
     */
-  var AffineTransform: AffineMatrix2D = js.native
+  var AffineTransform: AffineMatrix2D
   
   /**
     * The clipping area associated with the view.
@@ -31,7 +29,7 @@ trait ViewState extends StObject {
     * course). Specifying an empty {@link XPolyPolygon2D} , i.e. a poly-polygon containing zero polygons, or an {@link XPolyPolygon2D} with any number of
     * empty sub-polygons, denotes the NULL clip. That means, nothing rendered to the canvas will be visible.
     */
-  var Clip: XPolyPolygon2D = js.native
+  var Clip: XPolyPolygon2D
 }
 object ViewState {
   

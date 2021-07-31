@@ -4,21 +4,19 @@ import typings.fsJetpack.fsJetpackStrings.follow
 import typings.fsJetpack.fsJetpackStrings.report
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InspectOptions extends StObject {
   
-  var absolutePath: js.UndefOr[Boolean] = js.native
+  var absolutePath: js.UndefOr[Boolean] = js.undefined
   
-  var checksum: js.UndefOr[Checksum] = js.native
+  var checksum: js.UndefOr[Checksum] = js.undefined
   
-  var mode: js.UndefOr[Boolean] = js.native
+  var mode: js.UndefOr[Boolean] = js.undefined
   
-  var symlinks: js.UndefOr[report | follow] = js.native
+  var symlinks: js.UndefOr[report | follow] = js.undefined
   
-  var times: js.UndefOr[Boolean] = js.native
+  var times: js.UndefOr[Boolean] = js.undefined
 }
 object InspectOptions {
   

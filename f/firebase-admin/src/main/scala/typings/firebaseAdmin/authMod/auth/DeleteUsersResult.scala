@@ -3,7 +3,6 @@ package typings.firebaseAdmin.authMod.auth
 import typings.firebaseAdmin.firebaseNamespaceApiMod.FirebaseArrayIndexError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link auth.Auth.deleteUsers `deleteUsers()`}
   * API.
   */
-@js.native
 trait DeleteUsersResult extends StObject {
   
   /**
@@ -19,19 +17,19 @@ trait DeleteUsersResult extends StObject {
     * were encountered during the deletion. Length of this list is equal to
     * the return value of [`failureCount`](#failureCount).
     */
-  var errors: js.Array[FirebaseArrayIndexError] = js.native
+  var errors: js.Array[FirebaseArrayIndexError]
   
   /**
     * The number of user records that failed to be deleted (possibly zero).
     */
-  var failureCount: Double = js.native
+  var failureCount: Double
   
   /**
     * The number of users that were deleted successfully (possibly zero).
     * Users that did not exist prior to calling `deleteUsers()` are
     * considered to be successfully deleted.
     */
-  var successCount: Double = js.native
+  var successCount: Double
 }
 object DeleteUsersResult {
   

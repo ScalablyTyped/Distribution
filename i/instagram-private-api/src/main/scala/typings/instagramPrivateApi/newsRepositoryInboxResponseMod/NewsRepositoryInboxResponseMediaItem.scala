@@ -2,17 +2,15 @@ package typings.instagramPrivateApi.newsRepositoryInboxResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewsRepositoryInboxResponseMediaItem extends StObject {
   
-  var comment_threading_enabled: js.UndefOr[Boolean] = js.native
+  var comment_threading_enabled: js.UndefOr[Boolean] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var image: String = js.native
+  var image: String
 }
 object NewsRepositoryInboxResponseMediaItem {
   

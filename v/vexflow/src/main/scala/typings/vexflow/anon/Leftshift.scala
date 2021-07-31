@@ -2,17 +2,15 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Leftshift extends StObject {
   
-  var left_shift: Double = js.native
+  var left_shift: Double
   
-  var right_shift: Double = js.native
+  var right_shift: Double
   
-  var text_line: Double = js.native
+  var text_line: Double
 }
 object Leftshift {
   

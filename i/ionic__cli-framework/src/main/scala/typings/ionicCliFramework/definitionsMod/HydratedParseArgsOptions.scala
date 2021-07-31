@@ -4,23 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.minimist.mod.Opts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HydratedParseArgsOptions extends Opts {
+trait HydratedParseArgsOptions
+  extends StObject
+     with Opts {
   
   @JSName("alias")
-  var alias_HydratedParseArgsOptions: StringDictionary[js.Array[String]] = js.native
+  var alias_HydratedParseArgsOptions: StringDictionary[js.Array[String]]
   
   @JSName("boolean")
-  var boolean_HydratedParseArgsOptions: js.Array[String] = js.native
+  var boolean_HydratedParseArgsOptions: js.Array[String]
   
   @JSName("default")
-  var default_HydratedParseArgsOptions: StringDictionary[String | Boolean] = js.native
+  var default_HydratedParseArgsOptions: StringDictionary[String | Boolean]
   
   @JSName("string")
-  var string_HydratedParseArgsOptions: js.Array[String] = js.native
+  var string_HydratedParseArgsOptions: js.Array[String]
 }
 object HydratedParseArgsOptions {
   

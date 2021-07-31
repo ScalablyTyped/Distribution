@@ -8,45 +8,43 @@ import typings.reactVirtualized.esTableMod.TableCellRenderer
 import typings.reactVirtualized.esTableMod.TableHeaderRowRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellDataGetter extends StObject {
   
-  var `aria-label`: Requireable[String] = js.native
+  var `aria-label`: Requireable[String]
   
-  var cellDataGetter: Requireable[TableCellDataGetter] = js.native
+  var cellDataGetter: Requireable[TableCellDataGetter]
   
-  var cellRenderer: Requireable[TableCellRenderer] = js.native
+  var cellRenderer: Requireable[TableCellRenderer]
   
-  var className: Requireable[String] = js.native
+  var className: Requireable[String]
   
-  var columnData: Requireable[js.Object] = js.native
+  var columnData: Requireable[js.Object]
   
-  var dataKey: Validator[String] = js.native
+  var dataKey: Validator[String]
   
-  var disableSort: Requireable[Boolean] = js.native
+  var disableSort: Requireable[Boolean]
   
-  var flexGrow: Requireable[Double] = js.native
+  var flexGrow: Requireable[Double]
   
-  var flexShrink: Requireable[Double] = js.native
+  var flexShrink: Requireable[Double]
   
-  var headerClassName: Requireable[String] = js.native
+  var headerClassName: Requireable[String]
   
-  var headerRenderer: Validator[TableHeaderRowRenderer] = js.native
+  var headerRenderer: Validator[TableHeaderRowRenderer]
   
-  var id: Requireable[String] = js.native
+  var id: Requireable[String]
   
-  var label: Requireable[String] = js.native
+  var label: Requireable[String]
   
-  var maxWidth: Requireable[Double] = js.native
+  var maxWidth: Requireable[Double]
   
-  var minWidth: Requireable[Double] = js.native
+  var minWidth: Requireable[Double]
   
-  var style: Requireable[CSSProperties] = js.native
+  var style: Requireable[CSSProperties]
   
-  var width: Validator[Double] = js.native
+  var width: Validator[Double]
 }
 object CellDataGetter {
   

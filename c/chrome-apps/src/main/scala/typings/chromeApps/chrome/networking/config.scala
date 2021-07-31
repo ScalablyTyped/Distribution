@@ -11,7 +11,6 @@ import typings.chromeApps.chromeAppsStrings.`WPA-PSK`
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -27,7 +26,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object config {
   
-  @js.native
   trait NetworkInfo extends StObject {
     
     /**
@@ -36,27 +34,27 @@ object config {
       * hex-encoded string with bytes separated by colons, e.g.
       * 45:67:89:ab:cd:ef.
       */
-    var BSSID: js.UndefOr[String] = js.native
+    var BSSID: js.UndefOr[String] = js.undefined
     
     /** A unique identifier of the network. */
-    var GUID: js.UndefOr[String] = js.native
+    var GUID: js.UndefOr[String] = js.undefined
     
     /**
       * A hex-encoded byte sequence.
       */
-    var HexSSID: js.UndefOr[String] = js.native
+    var HexSSID: js.UndefOr[String] = js.undefined
     
     /**
       * The decoded SSID of the network (default encoding is UTF-8).
       * To filter for non-UTF-8 SSIDs, use HexSSID instead.
       */
-    var SSID: js.UndefOr[String] = js.native
+    var SSID: js.UndefOr[String] = js.undefined
     
     /** Identifier indicating the security type of the network. */
-    var Security: js.UndefOr[None | `WEP-PSK` | `WPA-PSK` | `WPA-EAP`] = js.native
+    var Security: js.UndefOr[None | `WEP-PSK` | `WPA-PSK` | `WPA-EAP`] = js.undefined
     
     /** Currently only WiFi supported. */
-    var Type: ToStringLiteral[WIFI, WI_FI, Exclude[WI_FI, WiFi]] = js.native
+    var Type: ToStringLiteral[WIFI, WI_FI, Exclude[WI_FI, WiFi]]
   }
   object NetworkInfo {
     
@@ -104,13 +102,12 @@ object config {
     }
   }
   
-  @js.native
   trait NetworkInfoFilterHexSSID extends StObject {
     
     /**
       * A hex-encoded byte sequence.
       */
-    var HexSSID: js.UndefOr[String] = js.native
+    var HexSSID: js.UndefOr[String] = js.undefined
   }
   object NetworkInfoFilterHexSSID {
     
@@ -131,14 +128,13 @@ object config {
     }
   }
   
-  @js.native
   trait NetworkInfoFilterSSID extends StObject {
     
     /**
       * The decoded SSID of the network (default encoding is UTF-8).
       * To filter for non-UTF-8 SSIDs, use HexSSID instead.
       */
-    var SSID: js.UndefOr[String] = js.native
+    var SSID: js.UndefOr[String] = js.undefined
   }
   object NetworkInfoFilterSSID {
     

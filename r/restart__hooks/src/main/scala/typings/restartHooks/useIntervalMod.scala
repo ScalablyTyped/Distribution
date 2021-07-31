@@ -2,14 +2,16 @@ package typings.restartHooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useIntervalMod {
   
-  @JSImport("@restart/hooks/cjs/useInterval", JSImport.Default)
+  @JSImport("@restart/hooks/cjs/useInterval", JSImport.Namespace)
   @js.native
-  def default(fn: js.Function0[Unit], ms: Double): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(fn: js.Function0[Unit], ms: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Creates a pausable `setInterval` that is properly cleaned up when a component unmounted
     *
@@ -32,9 +34,8 @@ object useIntervalMod {
     * @param ms The milliseconds duration of the interval
     * @param paused Whether or not the interval is currently running
     */
-  @JSImport("@restart/hooks/cjs/useInterval", JSImport.Default)
-  @js.native
-  def default(fn: js.Function0[Unit], ms: Double, paused: Boolean): Unit = js.native
+  @scala.inline
+  def default(fn: js.Function0[Unit], ms: Double, paused: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], ms.asInstanceOf[js.Any], paused.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Creates a pausable `setInterval` that _fires_ immediately and is
     * properly cleaned up when a component unmounted
@@ -54,7 +55,6 @@ object useIntervalMod {
     * rather than waiting for the first interval to elapse
     *
     */
-  @JSImport("@restart/hooks/cjs/useInterval", JSImport.Default)
-  @js.native
-  def default(fn: js.Function0[Unit], ms: Double, paused: Boolean, runImmediately: Boolean): Unit = js.native
+  @scala.inline
+  def default(fn: js.Function0[Unit], ms: Double, paused: Boolean, runImmediately: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], ms.asInstanceOf[js.Any], paused.asInstanceOf[js.Any], runImmediately.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

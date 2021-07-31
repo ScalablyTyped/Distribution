@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudServicenetworkingV1ConsumerConfigReservedRange extends StObject {
   
   /**
     * The starting address of the reserved range. The address must be a valid IPv4 address in the x.x.x.x format. This value combined with the IP prefix length is the CIDR range for the
     * reserved range.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /** The prefix length of the reserved range. */
-  var ipPrefixLength: js.UndefOr[Double] = js.native
+  var ipPrefixLength: js.UndefOr[Double] = js.undefined
   
   /** The name of the reserved range. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudServicenetworkingV1ConsumerConfigReservedRange {
   

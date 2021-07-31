@@ -7,7 +7,6 @@ import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalHeaderMod extends Shortcut {
@@ -16,9 +15,9 @@ object modalHeaderMod extends Shortcut {
   @js.native
   val default: StatelessComponent[ModalHeaderProps] = js.native
   
-  @js.native
   trait ModalHeaderProps
-    extends StrictModalHeaderProps
+    extends StObject
+       with StrictModalHeaderProps
        with /* key */ StringDictionary[js.Any]
   object ModalHeaderProps {
     
@@ -29,20 +28,19 @@ object modalHeaderMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictModalHeaderProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
   }
   object StrictModalHeaderProps {
     

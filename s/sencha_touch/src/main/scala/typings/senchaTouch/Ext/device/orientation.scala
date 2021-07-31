@@ -3,13 +3,13 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.mixin.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object orientation {
   
-  @js.native
-  trait IAbstract extends IObservable {
+  trait IAbstract
+    extends StObject
+       with IObservable {
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -19,7 +19,7 @@ object orientation {
     @JSName("relayEvents")
     var relayEvents_IAbstract: js.UndefOr[
         js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-      ] = js.native
+      ] = js.undefined
   }
   object IAbstract {
     

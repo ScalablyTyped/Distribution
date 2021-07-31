@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.reactBootstrap.mod.TransitionCallbacks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabMod {
@@ -60,23 +59,24 @@ object tabMod {
     extends Component[TabProps, js.Object, js.Any]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in {[ P in keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab> ]: P} & {[ P in 'title' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab>] ]: react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab>[P]} */ @js.native
-  trait TabProps extends TransitionCallbacks {
+  - Dropped {[ P in {[ P in keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab> ]: P} & {[ P in 'title' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab>] ]: react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab>[P]} */ trait TabProps
+    extends StObject
+       with TransitionCallbacks {
     
-    var animation: js.UndefOr[Boolean] = js.native
+    var animation: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.native
+    var eventKey: js.UndefOr[js.Any] = js.undefined
     
-    var tabClassName: js.UndefOr[String] = js.native
+    var tabClassName: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
     // TODO: Add more specific type
-    var unmountOnExit: js.UndefOr[Boolean] = js.native
+    var unmountOnExit: js.UndefOr[Boolean] = js.undefined
   }
   object TabProps {
     

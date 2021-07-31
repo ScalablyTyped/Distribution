@@ -2,36 +2,34 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaFunctionInfo extends StObject {
   
   /**
     *  The version of a Lambda function that production traffic points to. 
     */
-  var currentVersion: js.UndefOr[Version] = js.native
+  var currentVersion: js.UndefOr[Version] = js.undefined
   
   /**
     *  The alias of a Lambda function. For more information, see AWS Lambda Function Aliases in the AWS Lambda Developer Guide.
     */
-  var functionAlias: js.UndefOr[LambdaFunctionAlias] = js.native
+  var functionAlias: js.UndefOr[LambdaFunctionAlias] = js.undefined
   
   /**
     *  The name of a Lambda function. 
     */
-  var functionName: js.UndefOr[LambdaFunctionName] = js.native
+  var functionName: js.UndefOr[LambdaFunctionName] = js.undefined
   
   /**
     *  The version of a Lambda function that production traffic points to after the Lambda function is deployed. 
     */
-  var targetVersion: js.UndefOr[Version] = js.native
+  var targetVersion: js.UndefOr[Version] = js.undefined
   
   /**
     *  The percentage of production traffic that the target version of a Lambda function receives. 
     */
-  var targetVersionWeight: js.UndefOr[TrafficWeight] = js.native
+  var targetVersionWeight: js.UndefOr[TrafficWeight] = js.undefined
 }
 object LambdaFunctionInfo {
   

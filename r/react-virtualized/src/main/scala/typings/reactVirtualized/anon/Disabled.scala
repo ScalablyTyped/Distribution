@@ -5,27 +5,25 @@ import typings.reactVirtualized.reactVirtualizedNumbers.`0`
 import typings.reactVirtualized.reactVirtualizedStrings.edges
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disabled extends StObject {
   
-  var disabled: `false` = js.native
+  var disabled: `false`
   
-  var isControlled: `false` = js.native
+  var isControlled: `false`
   
-  var mode: edges = js.native
+  var mode: edges
   
-  var scrollToColumn: `0` = js.native
+  var scrollToColumn: `0`
   
-  var scrollToRow: `0` = js.native
+  var scrollToRow: `0`
 }
 object Disabled {
   
   @scala.inline
-  def apply(disabled: `false`, isControlled: `false`, mode: edges, scrollToColumn: `0`, scrollToRow: `0`): Disabled = {
-    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], isControlled = isControlled.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], scrollToColumn = scrollToColumn.asInstanceOf[js.Any], scrollToRow = scrollToRow.asInstanceOf[js.Any])
+  def apply(): Disabled = {
+    val __obj = js.Dynamic.literal(disabled = false, isControlled = false, mode = "edges", scrollToColumn = 0, scrollToRow = 0)
     __obj.asInstanceOf[Disabled]
   }
   

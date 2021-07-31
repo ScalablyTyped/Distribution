@@ -2,27 +2,25 @@ package typings.servicenow.servicenow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SOAPResponseV2 extends StObject {
   
-  def getBody(): String = js.native
+  def getBody(): String
   
-  def getErrorCode(): Double = js.native
+  def getErrorCode(): Double
   
-  def getErrorMessage(): String = js.native
+  def getErrorMessage(): String
   
-  def getHeader(name: String): String = js.native
+  def getHeader(name: String): String
   
-  def getHeaders(): js.Object = js.native
+  def getHeaders(): js.Object
   
-  def getStatusCode(): Double = js.native
+  def getStatusCode(): Double
   
-  def haveError(): Boolean = js.native
+  def haveError(): Boolean
   
-  def waitForResponse(timeoutSecs: Double): Unit = js.native
+  def waitForResponse(timeoutSecs: Double): Unit
 }
 object SOAPResponseV2 {
   

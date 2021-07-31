@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderRightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait BorderRightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exte
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right)
     */
-  var borderRight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderRight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object BorderRightProps {
   
@@ -25,7 +23,7 @@ object BorderRightProps {
   }
   
   @scala.inline
-  implicit class BorderRightPropsMutableBuilder[Self <: BorderRightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderRightProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BorderRightPropsMutableBuilder[Self <: BorderRightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderRightProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setBorderRight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])

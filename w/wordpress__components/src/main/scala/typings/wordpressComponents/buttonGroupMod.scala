@@ -8,7 +8,6 @@ import typings.std.HTMLDivElement
 import typings.wordpressComponents.buttonGroupMod.ButtonGroup.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonGroupMod {
@@ -27,11 +26,12 @@ object buttonGroupMod {
   
   object ButtonGroup {
     
-    @js.native
-    trait Props extends HTMLProps[HTMLDivElement] {
+    trait Props
+      extends StObject
+         with HTMLProps[HTMLDivElement] {
       
       @JSName("children")
-      var children_Props: ReactNode = js.native
+      var children_Props: ReactNode
     }
     object Props {
       

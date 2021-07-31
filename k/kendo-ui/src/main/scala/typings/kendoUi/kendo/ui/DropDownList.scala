@@ -4,11 +4,12 @@ import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DropDownList extends Widget {
+trait DropDownList
+  extends StObject
+     with Widget {
   
   def close(): Unit = js.native
   

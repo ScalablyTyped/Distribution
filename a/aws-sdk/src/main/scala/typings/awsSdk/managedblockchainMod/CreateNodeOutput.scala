@@ -2,16 +2,14 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNodeOutput extends StObject {
   
   /**
     * The unique identifier of the node.
     */
-  var NodeId: js.UndefOr[ResourceIdString] = js.native
+  var NodeId: js.UndefOr[ResourceIdString] = js.undefined
 }
 object CreateNodeOutput {
   

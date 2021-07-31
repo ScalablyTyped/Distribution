@@ -2,19 +2,17 @@ package typings.sailthruClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Error extends StObject {
     
-    var error: String = js.native
+    var error: String
     
-    var errormsg: String = js.native
+    var errormsg: String
     
-    var statusCode: String = js.native
+    var statusCode: String
   }
   object Error {
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Full extends StObject {
     
-    var full: js.UndefOr[Url] = js.native
+    var full: js.UndefOr[Url] = js.undefined
     
-    var thumb: js.UndefOr[Url] = js.native
+    var thumb: js.UndefOr[Url] = js.undefined
   }
   object Full {
     
@@ -70,14 +67,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Limit extends StObject {
     
-    var limit: Double = js.native
+    var limit: Double
     
-    var remaining: Double = js.native
+    var remaining: Double
     
-    var reset: Double = js.native
+    var reset: Double
   }
   object Limit {
     
@@ -101,10 +97,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var url: String = js.native
+    var url: String
   }
   object Url {
     

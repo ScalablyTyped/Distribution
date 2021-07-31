@@ -2,26 +2,24 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogSubscription extends StObject {
   
   /**
     * Identifier (ID) of the directory that you want to associate with the log subscription.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
     * The name of the log group.
     */
-  var LogGroupName: js.UndefOr[typings.awsSdk.directoryserviceMod.LogGroupName] = js.native
+  var LogGroupName: js.UndefOr[typings.awsSdk.directoryserviceMod.LogGroupName] = js.undefined
   
   /**
     * The date and time that the log subscription was created.
     */
-  var SubscriptionCreatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.SubscriptionCreatedDateTime] = js.native
+  var SubscriptionCreatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.SubscriptionCreatedDateTime] = js.undefined
 }
 object LogSubscription {
   

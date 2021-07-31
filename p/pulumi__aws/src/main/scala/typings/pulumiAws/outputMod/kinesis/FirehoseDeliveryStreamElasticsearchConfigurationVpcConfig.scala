@@ -2,28 +2,26 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseDeliveryStreamElasticsearchConfigurationVpcConfig extends StObject {
   
   /**
     * The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary [IAM permissions](https://docs.aws.amazon.com/firehose/latest/dev/controlling-access.html#using-iam-es-vpc)
     */
-  var roleArn: String = js.native
+  var roleArn: String
   
   /**
     * A list of security group IDs to associate with Kinesis Firehose.
     */
-  var securityGroupIds: js.Array[String] = js.native
+  var securityGroupIds: js.Array[String]
   
   /**
     * A list of subnet IDs to associate with Kinesis Firehose.
     */
-  var subnetIds: js.Array[String] = js.native
+  var subnetIds: js.Array[String]
   
-  var vpcId: String = js.native
+  var vpcId: String
 }
 object FirehoseDeliveryStreamElasticsearchConfigurationVpcConfig {
   

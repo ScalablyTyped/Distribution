@@ -7,16 +7,14 @@ import typings.chance.chanceStrings.Questionmark
 import typings.chance.chanceStrings.Semicolon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<chance.Chance.SentenceOptions> */
-@js.native
 trait PartialSentenceOptions extends StObject {
   
-  var punctuation: js.UndefOr[Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean] = js.native
+  var punctuation: js.UndefOr[Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean] = js.undefined
   
-  var words: js.UndefOr[Double] = js.native
+  var words: js.UndefOr[Double] = js.undefined
 }
 object PartialSentenceOptions {
   

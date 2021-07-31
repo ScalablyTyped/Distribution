@@ -11,7 +11,6 @@ import typings.std.Range
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dom {
@@ -23,25 +22,13 @@ object dom {
     def this(doc: Document, settings: js.Object) = this()
     
     def add[T](parentElm: String, name: String): Element | js.Array[T] = js.native
-    def add[T](
-      parentElm: String,
-      name: String,
-      attrs: js.UndefOr[scala.Nothing],
-      html: js.UndefOr[scala.Nothing],
-      create: Boolean
-    ): Element | js.Array[T] = js.native
-    def add[T](parentElm: String, name: String, attrs: js.UndefOr[scala.Nothing], html: String): Element | js.Array[T] = js.native
-    def add[T](parentElm: String, name: String, attrs: js.UndefOr[scala.Nothing], html: String, create: Boolean): Element | js.Array[T] = js.native
     def add[T](parentElm: String, name: String, attrs: js.Object): Element | js.Array[T] = js.native
-    def add[T](
-      parentElm: String,
-      name: String,
-      attrs: js.Object,
-      html: js.UndefOr[scala.Nothing],
-      create: Boolean
-    ): Element | js.Array[T] = js.native
     def add[T](parentElm: String, name: String, attrs: js.Object, html: String): Element | js.Array[T] = js.native
     def add[T](parentElm: String, name: String, attrs: js.Object, html: String, create: Boolean): Element | js.Array[T] = js.native
+    def add[T](parentElm: String, name: String, attrs: js.Object, html: Unit, create: Boolean): Element | js.Array[T] = js.native
+    def add[T](parentElm: String, name: String, attrs: Unit, html: String): Element | js.Array[T] = js.native
+    def add[T](parentElm: String, name: String, attrs: Unit, html: String, create: Boolean): Element | js.Array[T] = js.native
+    def add[T](parentElm: String, name: String, attrs: Unit, html: Unit, create: Boolean): Element | js.Array[T] = js.native
     
     def addClass[T](elm: String, cls: String): String | js.Array[T] = js.native
     
@@ -51,16 +38,16 @@ object dom {
     def bind(target: Element, name: String, func: js.Function0[Unit], scope: js.Object): js.Function0[Unit] = js.native
     
     def create(name: String): Element = js.native
-    def create(name: String, attrs: js.UndefOr[scala.Nothing], html: String): Element = js.native
     def create(name: String, attrs: js.Object): Element = js.native
     def create(name: String, attrs: js.Object, html: String): Element = js.native
+    def create(name: String, attrs: Unit, html: String): Element = js.native
     
     def createFragment(html: String): DocumentFragment = js.native
     
     def createHTML(name: String): String = js.native
-    def createHTML(name: String, attrs: js.UndefOr[scala.Nothing], html: String): String = js.native
     def createHTML(name: String, attrs: js.Object): String = js.native
     def createHTML(name: String, attrs: js.Object, html: String): String = js.native
+    def createHTML(name: String, attrs: Unit, html: String): String = js.native
     
     def createRng(): Range = js.native
     
@@ -184,8 +171,8 @@ object dom {
   @js.native
   class DomQuery () extends StObject {
     def this(selector: String) = this()
-    def this(selector: js.UndefOr[scala.Nothing], context: Document) = this()
     def this(selector: String, context: Document) = this()
+    def this(selector: Unit, context: Document) = this()
     
     def add[T](items: js.Array[T]): DomQuery = js.native
     def add[T](items: js.Array[T], sort: Boolean): DomQuery = js.native
@@ -255,9 +242,9 @@ object dom {
     def nextUntil(node: Element, until: String): DomQuery = js.native
     
     def off(): DomQuery = js.native
-    def off(name: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): DomQuery = js.native
     def off(name: String): DomQuery = js.native
     def off(name: String, callback: js.Function0[Unit]): DomQuery = js.native
+    def off(name: Unit, callback: js.Function0[Unit]): DomQuery = js.native
     
     def offset(): js.Object | DomQuery = js.native
     def offset(offset: js.Object): js.Object | DomQuery = js.native
@@ -326,9 +313,9 @@ object dom {
     def collapse(toStart: Boolean): Unit = js.native
     
     def getBookmark(): js.Object = js.native
-    def getBookmark(`type`: js.UndefOr[scala.Nothing], normalized: Boolean): js.Object = js.native
     def getBookmark(`type`: Double): js.Object = js.native
     def getBookmark(`type`: Double, normalized: Boolean): js.Object = js.native
+    def getBookmark(`type`: Unit, normalized: Boolean): js.Object = js.native
     
     def getContent(): String = js.native
     def getContent(args: js.Object): String = js.native
@@ -358,7 +345,7 @@ object dom {
     def setContent(content: String, args: js.Object): Unit = js.native
     
     def setCursorLocation(): Unit = js.native
-    def setCursorLocation(node: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
+    def setCursorLocation(node: Unit, offset: Double): Unit = js.native
     def setCursorLocation(node: Node): Unit = js.native
     def setCursorLocation(node: Node, offset: Double): Unit = js.native
     
@@ -391,9 +378,9 @@ object dom {
   trait BookmarkManager extends StObject {
     
     def getBookmark(): js.Object = js.native
-    def getBookmark(`type`: js.UndefOr[scala.Nothing], normalized: Boolean): js.Object = js.native
     def getBookmark(`type`: Double): js.Object = js.native
     def getBookmark(`type`: Double, normalized: Boolean): js.Object = js.native
+    def getBookmark(`type`: Unit, normalized: Boolean): js.Object = js.native
     
     def isBookmarkNode(node: HTMLElement): Boolean = js.native
     
@@ -411,17 +398,16 @@ object dom {
     def fire(target: js.Object, name: String, args: js.Object): EventUtils = js.native
     
     def unbind(target: js.Object): EventUtils = js.native
-    def unbind(target: js.Object, names: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): EventUtils = js.native
     def unbind(target: js.Object, names: String): EventUtils = js.native
     def unbind(target: js.Object, names: String, callback: js.Function0[Unit]): EventUtils = js.native
+    def unbind(target: js.Object, names: Unit, callback: js.Function0[Unit]): EventUtils = js.native
   }
   
-  @js.native
   trait RangeUtils extends StObject {
     
-    def compareRanges(rng1: Range, rng2: Range): Boolean = js.native
+    def compareRanges(rng1: Range, rng2: Range): Boolean
     
-    def getCaretRangeFromPoint(clientX: Double, clientY: Double, doc: Document): Range = js.native
+    def getCaretRangeFromPoint(clientX: Double, clientY: Double, doc: Document): Range
   }
   object RangeUtils {
     
@@ -449,61 +435,32 @@ object dom {
   trait ScriptLoader extends StObject {
     
     def add(url: String): Unit = js.native
-    def add(
-      url: String,
-      success: js.UndefOr[scala.Nothing],
-      scope: js.UndefOr[scala.Nothing],
-      failure: js.Function0[Unit]
-    ): Unit = js.native
-    def add(url: String, success: js.UndefOr[scala.Nothing], scope: js.Object): Unit = js.native
-    def add(url: String, success: js.UndefOr[scala.Nothing], scope: js.Object, failure: js.Function0[Unit]): Unit = js.native
     def add(url: String, success: js.Function0[Unit]): Unit = js.native
-    def add(
-      url: String,
-      success: js.Function0[Unit],
-      scope: js.UndefOr[scala.Nothing],
-      failure: js.Function0[Unit]
-    ): Unit = js.native
     def add(url: String, success: js.Function0[Unit], scope: js.Object): Unit = js.native
     def add(url: String, success: js.Function0[Unit], scope: js.Object, failure: js.Function0[Unit]): Unit = js.native
+    def add(url: String, success: js.Function0[Unit], scope: Unit, failure: js.Function0[Unit]): Unit = js.native
+    def add(url: String, success: Unit, scope: js.Object): Unit = js.native
+    def add(url: String, success: Unit, scope: js.Object, failure: js.Function0[Unit]): Unit = js.native
+    def add(url: String, success: Unit, scope: Unit, failure: js.Function0[Unit]): Unit = js.native
     
     def isDone(url: String): Boolean = js.native
     
     def load(url: String): Unit = js.native
-    def load(url: String, callback1: js.UndefOr[scala.Nothing], callback2: js.Function0[Unit]): Unit = js.native
     def load(url: String, callback1: js.Function0[Unit]): Unit = js.native
     def load(url: String, callback1: js.Function0[Unit], callback2: js.Function0[Unit]): Unit = js.native
+    def load(url: String, callback1: Unit, callback2: js.Function0[Unit]): Unit = js.native
     
     def loadQueue(): Unit = js.native
-    def loadQueue(success: js.UndefOr[scala.Nothing], failure: js.UndefOr[scala.Nothing], scope: js.Object): Unit = js.native
-    def loadQueue(success: js.UndefOr[scala.Nothing], failure: js.Function0[Unit]): Unit = js.native
-    def loadQueue(success: js.UndefOr[scala.Nothing], failure: js.Function0[Unit], scope: js.Object): Unit = js.native
     def loadQueue(success: js.Function0[Unit]): Unit = js.native
-    def loadQueue(success: js.Function0[Unit], failure: js.UndefOr[scala.Nothing], scope: js.Object): Unit = js.native
     def loadQueue(success: js.Function0[Unit], failure: js.Function0[Unit]): Unit = js.native
     def loadQueue(success: js.Function0[Unit], failure: js.Function0[Unit], scope: js.Object): Unit = js.native
+    def loadQueue(success: js.Function0[Unit], failure: Unit, scope: js.Object): Unit = js.native
+    def loadQueue(success: Unit, failure: js.Function0[Unit]): Unit = js.native
+    def loadQueue(success: Unit, failure: js.Function0[Unit], scope: js.Object): Unit = js.native
+    def loadQueue(success: Unit, failure: Unit, scope: js.Object): Unit = js.native
     
     def loadScripts(scripts: js.Array[String]): Unit = js.native
-    def loadScripts(
-      scripts: js.Array[String],
-      callback1: js.UndefOr[scala.Nothing],
-      scope: js.UndefOr[scala.Nothing],
-      callback2: js.Function0[Unit]
-    ): Unit = js.native
-    def loadScripts(scripts: js.Array[String], callback1: js.UndefOr[scala.Nothing], scope: js.Object): Unit = js.native
-    def loadScripts(
-      scripts: js.Array[String],
-      callback1: js.UndefOr[scala.Nothing],
-      scope: js.Object,
-      callback2: js.Function0[Unit]
-    ): Unit = js.native
     def loadScripts(scripts: js.Array[String], callback1: js.Function0[Unit]): Unit = js.native
-    def loadScripts(
-      scripts: js.Array[String],
-      callback1: js.Function0[Unit],
-      scope: js.UndefOr[scala.Nothing],
-      callback2: js.Function0[Unit]
-    ): Unit = js.native
     def loadScripts(scripts: js.Array[String], callback1: js.Function0[Unit], scope: js.Object): Unit = js.native
     def loadScripts(
       scripts: js.Array[String],
@@ -511,18 +468,26 @@ object dom {
       scope: js.Object,
       callback2: js.Function0[Unit]
     ): Unit = js.native
+    def loadScripts(
+      scripts: js.Array[String],
+      callback1: js.Function0[Unit],
+      scope: Unit,
+      callback2: js.Function0[Unit]
+    ): Unit = js.native
+    def loadScripts(scripts: js.Array[String], callback1: Unit, scope: js.Object): Unit = js.native
+    def loadScripts(scripts: js.Array[String], callback1: Unit, scope: js.Object, callback2: js.Function0[Unit]): Unit = js.native
+    def loadScripts(scripts: js.Array[String], callback1: Unit, scope: Unit, callback2: js.Function0[Unit]): Unit = js.native
     
     def markDone(url: String): Unit = js.native
   }
   
-  @js.native
   trait TreeWalker extends StObject {
     
-    def current(): typings.tinymce.mod.html.Node = js.native
+    def current(): typings.tinymce.mod.html.Node
     
-    def next(): typings.tinymce.mod.html.Node = js.native
+    def next(): typings.tinymce.mod.html.Node
     
-    def prev(): typings.tinymce.mod.html.Node = js.native
+    def prev(): typings.tinymce.mod.html.Node
   }
   object TreeWalker {
     

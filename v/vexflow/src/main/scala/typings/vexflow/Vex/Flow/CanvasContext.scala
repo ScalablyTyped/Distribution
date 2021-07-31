@@ -3,11 +3,12 @@ package typings.vexflow.Vex.Flow
 import typings.vexflow.Vex.IRenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasContext extends IRenderContext {
+trait CanvasContext
+  extends StObject
+     with IRenderContext {
   
   //inconsistent name: x -> x2, y -> y2
   @JSName("arc")

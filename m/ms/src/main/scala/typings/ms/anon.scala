@@ -2,15 +2,13 @@ package typings.ms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Long extends StObject {
     
-    var long: Boolean = js.native
+    var long: Boolean
   }
   object Long {
     

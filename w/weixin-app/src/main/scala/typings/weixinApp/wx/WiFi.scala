@@ -2,23 +2,21 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WiFi extends StObject {
   
   /** Wi-Fi 的BSSID */
-  var BSSID: String = js.native
+  var BSSID: String
   
   /** Wi-Fi 的SSID */
-  var SSID: String = js.native
+  var SSID: String
   
   /** Wi-Fi 是否安全 */
-  var secure: Boolean = js.native
+  var secure: Boolean
   
   /** Wi-Fi 信号强度 */
-  var signalStrength: Double = js.native
+  var signalStrength: Double
 }
 object WiFi {
   

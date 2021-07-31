@@ -2,43 +2,44 @@ package typings.pgConnectionString
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pg-connection-string", "parse")
+  @JSImport("pg-connection-string", JSImport.Namespace)
   @js.native
-  def parse(connectionString: String): ConnectionOptions = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def parse(connectionString: String): ConnectionOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(connectionString.asInstanceOf[js.Any]).asInstanceOf[ConnectionOptions]
+  
   trait ConnectionOptions extends StObject {
     
-    var application_name: js.UndefOr[String] = js.native
+    var application_name: js.UndefOr[String] = js.undefined
     
-    var client_encoding: js.UndefOr[String] = js.native
+    var client_encoding: js.UndefOr[String] = js.undefined
     
-    var database: js.UndefOr[String | Null] = js.native
+    var database: js.UndefOr[String | Null] = js.undefined
     
-    var fallback_application_name: js.UndefOr[String] = js.native
+    var fallback_application_name: js.UndefOr[String] = js.undefined
     
-    var host: String | Null = js.native
+    var host: String | Null
     
-    var options: js.UndefOr[String] = js.native
+    var options: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[String | Null] = js.native
+    var port: js.UndefOr[String | Null] = js.undefined
     
-    var ssl: js.UndefOr[Boolean | String] = js.native
+    var ssl: js.UndefOr[Boolean | String] = js.undefined
     
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object ConnectionOptions {
     
     @scala.inline
     def apply(): ConnectionOptions = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(host = null)
       __obj.asInstanceOf[ConnectionOptions]
     }
     

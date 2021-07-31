@@ -4,23 +4,21 @@ import typings.std.RegExp
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ellipsis extends StObject {
   
-  var ellipsis: js.UndefOr[Boolean | String] = js.native
+  var ellipsis: js.UndefOr[Boolean | String] = js.undefined
   
-  var eol: js.UndefOr[String] = js.native
+  var eol: js.UndefOr[String] = js.undefined
   
-  var hyphen: js.UndefOr[String | RegExp] = js.native
+  var hyphen: js.UndefOr[String | RegExp] = js.undefined
   
-  var maxLineCount: js.UndefOr[Double] = js.native
+  var maxLineCount: js.UndefOr[Double] = js.undefined
   
-  var separator: js.UndefOr[String | js.Any] = js.native
+  var separator: js.UndefOr[String | js.Any] = js.undefined
   
-  var svgDocument: js.UndefOr[SVGElement] = js.native
+  var svgDocument: js.UndefOr[SVGElement] = js.undefined
 }
 object Ellipsis {
   

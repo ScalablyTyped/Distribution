@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Calculation. */
-@js.native
 trait Calculation extends StObject {
   
   /** The field where the aggregation is located in the document. */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /** Value of the aggregation. */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object Calculation {
   

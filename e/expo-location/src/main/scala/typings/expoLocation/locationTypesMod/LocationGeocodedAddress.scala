@@ -2,37 +2,35 @@ package typings.expoLocation.locationTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationGeocodedAddress extends StObject {
   
-  var city: String | Null = js.native
+  var city: String | Null
   
-  var country: String | Null = js.native
+  var country: String | Null
   
-  var district: String | Null = js.native
+  var district: String | Null
   
-  var isoCountryCode: String | Null = js.native
+  var isoCountryCode: String | Null
   
-  var name: String | Null = js.native
+  var name: String | Null
   
-  var postalCode: String | Null = js.native
+  var postalCode: String | Null
   
-  var region: String | Null = js.native
+  var region: String | Null
   
-  var street: String | Null = js.native
+  var street: String | Null
   
-  var subregion: String | Null = js.native
+  var subregion: String | Null
   
-  var timezone: String | Null = js.native
+  var timezone: String | Null
 }
 object LocationGeocodedAddress {
   
   @scala.inline
   def apply(): LocationGeocodedAddress = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(city = null, country = null, district = null, isoCountryCode = null, name = null, postalCode = null, region = null, street = null, subregion = null, timezone = null)
     __obj.asInstanceOf[LocationGeocodedAddress]
   }
   

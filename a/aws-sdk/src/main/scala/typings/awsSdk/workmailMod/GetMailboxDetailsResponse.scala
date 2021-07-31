@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMailboxDetailsResponse extends StObject {
   
   /**
     * The maximum allowed mailbox size, in MB, for the specified user.
     */
-  var MailboxQuota: js.UndefOr[typings.awsSdk.workmailMod.MailboxQuota] = js.native
+  var MailboxQuota: js.UndefOr[typings.awsSdk.workmailMod.MailboxQuota] = js.undefined
   
   /**
     * The current mailbox size, in MB, for the specified user.
     */
-  var MailboxSize: js.UndefOr[typings.awsSdk.workmailMod.MailboxSize] = js.native
+  var MailboxSize: js.UndefOr[typings.awsSdk.workmailMod.MailboxSize] = js.undefined
 }
 object GetMailboxDetailsResponse {
   

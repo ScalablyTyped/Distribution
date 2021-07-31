@@ -2,7 +2,6 @@ package typings.sharepoint.Srch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,35 +11,57 @@ sealed trait EventType extends StObject
 object EventType extends StObject {
   
   @js.native
-  sealed trait batchQueryIssuing extends EventType
+  sealed trait batchQueryIssuing
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait batchResultReady extends EventType
+  sealed trait batchResultReady
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait load extends EventType
+  sealed trait load
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait none extends EventType
+  sealed trait none
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait postLoad extends EventType
+  sealed trait postLoad
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait preLoad extends EventType
+  sealed trait preLoad
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait queryIssuing extends EventType
+  sealed trait queryIssuing
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait queryReady extends EventType
+  sealed trait queryReady
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait queryStateChanged extends EventType
+  sealed trait queryStateChanged
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait resultReady extends EventType
+  sealed trait resultReady
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait resultRendered extends EventType
+  sealed trait resultRendered
+    extends StObject
+       with EventType
 }

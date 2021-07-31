@@ -12,7 +12,6 @@ import typings.keyv.keyvStrings.sqlite
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,8 +24,8 @@ object mod {
   class ^[TValue] () extends Keyv[TValue] {
     def this(opts: Options[TValue]) = this()
     def this(uri: String) = this()
-    def this(uri: js.UndefOr[scala.Nothing], opts: Options[TValue]) = this()
     def this(uri: String, opts: Options[TValue]) = this()
+    def this(uri: Unit, opts: Options[TValue]) = this()
   }
   
   @js.native
@@ -54,30 +53,30 @@ object mod {
     def set(key: String, value: TValue, ttl: Double): js.Promise[`true`] = js.native
   }
   
-  @js.native
   trait Options[TValue]
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /** Specify an adapter to use. e.g `'redis'` or `'mongodb'`. */
-    var adapter: js.UndefOr[redis | mongodb | mongo | sqlite | postgresql | postgres | mysql] = js.native
+    var adapter: js.UndefOr[redis | mongodb | mongo | sqlite | postgresql | postgres | mysql] = js.undefined
     
     /** A custom deserialization function. */
-    var deserialize: js.UndefOr[js.Function1[/* data */ String, TValue]] = js.native
+    var deserialize: js.UndefOr[js.Function1[/* data */ String, TValue]] = js.undefined
     
     /** Namespace for the current instance. */
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
     /** A custom serialization function. */
-    var serialize: js.UndefOr[js.Function1[/* data */ TValue, String]] = js.native
+    var serialize: js.UndefOr[js.Function1[/* data */ TValue, String]] = js.undefined
     
     /** The storage adapter instance to be used by Keyv. */
-    var store: js.UndefOr[Store[TValue]] = js.native
+    var store: js.UndefOr[Store[TValue]] = js.undefined
     
     /** Default TTL. Can be overridden by specififying a TTL on `.set()`. */
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
     
     /** The connection string URI. */
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -88,7 +87,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], TValue] (val x: Self with Options[TValue]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], TValue] (val x: Self & Options[TValue]) extends AnyVal {
       
       @scala.inline
       def setAdapter(value: redis | mongodb | mongo | sqlite | postgresql | postgres | mysql): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])

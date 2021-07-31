@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionContext extends StObject {
   
   /**
@@ -15,12 +13,12 @@ trait CompletionContext extends StObject {
     *
     * The trigger character is already in the document when the completion provider is triggered.
     */
-  val triggerCharacter: js.UndefOr[String] = js.native
+  val triggerCharacter: js.UndefOr[String] = js.undefined
   
   /**
     * How the completion was triggered.
     */
-  val triggerKind: CompletionTriggerKind = js.native
+  val triggerKind: CompletionTriggerKind
 }
 object CompletionContext {
   

@@ -2,31 +2,29 @@ package typings.coinbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientConstructOpts extends StObject {
   
   /**
     * OAuth2 access token
     */
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
   /**
     * API key (obtain this from the coinbase website)
     */
-  var apiKey: js.UndefOr[String] = js.native
+  var apiKey: js.UndefOr[String] = js.undefined
   
   /**
     * API key secret (obtain this from the coinbase website)
     */
-  var apiSecret: js.UndefOr[String] = js.native
+  var apiSecret: js.UndefOr[String] = js.undefined
   
   /**
     * API version in 'yyyy-mm-dd' format, see https://developers.coinbase.com/api/v2#changelog
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object ClientConstructOpts {
   

@@ -2,15 +2,13 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseEvent extends StObject {
   
-  var cancel: Boolean = js.native
+  var cancel: Boolean
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object BaseEvent {
   

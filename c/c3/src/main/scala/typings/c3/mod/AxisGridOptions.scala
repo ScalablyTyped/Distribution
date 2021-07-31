@@ -2,25 +2,23 @@ package typings.c3.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisGridOptions extends StObject {
   
   /**
     * Show additional grid lines along x axis.
     * If x axis is `category` axis, value can be category name. If x axis is `timeseries` axis, value can be date string, `Date` object and unixtime integer.
     */
-  var lines: js.UndefOr[js.Array[GridLineOptions]] = js.native
+  var lines: js.UndefOr[js.Array[GridLineOptions]] = js.undefined
   
   /**
     * Show grids along an axis.
     */
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
   /** Not used. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object AxisGridOptions {
   

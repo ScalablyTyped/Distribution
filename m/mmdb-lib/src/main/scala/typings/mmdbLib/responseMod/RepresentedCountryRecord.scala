@@ -2,13 +2,13 @@ package typings.mmdbLib.responseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RepresentedCountryRecord extends RegisteredCountryRecord {
+trait RepresentedCountryRecord
+  extends StObject
+     with RegisteredCountryRecord {
   
-  val `type`: String = js.native
+  val `type`: String
 }
 object RepresentedCountryRecord {
   

@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jobsMod {
+  
+  @JSImport("googleapis/build/src/apis/jobs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -116,9 +119,12 @@ object jobsMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/jobs", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/jobs", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -162,22 +168,19 @@ object jobsMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/jobs", "jobs")
-  @js.native
-  def jobs(options: Options): Jobs = js.native
-  @JSImport("googleapis/build/src/apis/jobs", "jobs")
-  @js.native
-  def jobs(options: typings.googleapis.jobsV3Mod.jobsV3.Options): typings.googleapis.jobsV3Mod.jobsV3.Jobs = js.native
-  @JSImport("googleapis/build/src/apis/jobs", "jobs")
-  @js.native
-  def jobs(options: typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Options): typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs = js.native
-  @JSImport("googleapis/build/src/apis/jobs", "jobs")
-  @js.native
-  def jobs_v2(version: v2): Jobs = js.native
-  @JSImport("googleapis/build/src/apis/jobs", "jobs")
-  @js.native
-  def jobs_v3(version: v3): typings.googleapis.jobsV3Mod.jobsV3.Jobs = js.native
-  @JSImport("googleapis/build/src/apis/jobs", "jobs")
-  @js.native
-  def jobs_v3p1beta1(version: v3p1beta1): typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs = js.native
+  @scala.inline
+  def jobs(options: Options): Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(options.asInstanceOf[js.Any]).asInstanceOf[Jobs]
+  @scala.inline
+  def jobs(options: typings.googleapis.jobsV3Mod.jobsV3.Options): typings.googleapis.jobsV3Mod.jobsV3.Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.jobsV3Mod.jobsV3.Jobs]
+  @scala.inline
+  def jobs(options: typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Options): typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs]
+  
+  @scala.inline
+  def jobs_v2(version: v2): Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(version.asInstanceOf[js.Any]).asInstanceOf[Jobs]
+  
+  @scala.inline
+  def jobs_v3(version: v3): typings.googleapis.jobsV3Mod.jobsV3.Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.jobsV3Mod.jobsV3.Jobs]
+  
+  @scala.inline
+  def jobs_v3p1beta1(version: v3p1beta1): typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs]
 }

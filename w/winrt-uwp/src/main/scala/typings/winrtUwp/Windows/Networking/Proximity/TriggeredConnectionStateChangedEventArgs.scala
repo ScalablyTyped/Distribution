@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Networking.Proximity
 import typings.winrtUwp.Windows.Networking.Sockets.StreamSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains properties that the TriggeredConnectionStateChanged event passes to an application. */
-@js.native
 trait TriggeredConnectionStateChangedEventArgs extends StObject {
   
   /** Gets the unique identifier for the connection in progress. */
-  var id: Double = js.native
+  var id: Double
   
   /** Gets the StreamSocket instance for the connection. */
-  var socket: StreamSocket = js.native
+  var socket: StreamSocket
   
   /** Gets the state of the connection in progress. */
-  var state: TriggeredConnectState = js.native
+  var state: TriggeredConnectState
 }
 object TriggeredConnectionStateChangedEventArgs {
   

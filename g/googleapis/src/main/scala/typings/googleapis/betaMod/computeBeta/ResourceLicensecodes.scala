@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Licensecodes")
@@ -32,7 +31,7 @@ class ResourceLicensecodes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaLicenseCode] = js.native
   def get(callback: BodyResponseCallback[SchemaLicenseCode]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLicenseCode] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLicenseCode] = js.native
   def get(params: ParamsResourceLicensecodesGet): GaxiosPromise[SchemaLicenseCode] = js.native
   def get(params: ParamsResourceLicensecodesGet, callback: BodyResponseCallback[SchemaLicenseCode]): Unit = js.native
   def get(

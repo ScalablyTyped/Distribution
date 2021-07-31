@@ -3,35 +3,35 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getDocumentMod {
   
-  @JSImport("@pulumi/aws/ssm/getDocument", "getDocument")
+  @JSImport("@pulumi/aws/ssm/getDocument", JSImport.Namespace)
   @js.native
-  def getDocument(args: GetDocumentArgs): js.Promise[GetDocumentResult] = js.native
-  @JSImport("@pulumi/aws/ssm/getDocument", "getDocument")
-  @js.native
-  def getDocument(args: GetDocumentArgs, opts: InvokeOptions): js.Promise[GetDocumentResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getDocument(args: GetDocumentArgs): js.Promise[GetDocumentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDocumentResult]]
+  @scala.inline
+  def getDocument(args: GetDocumentArgs, opts: InvokeOptions): js.Promise[GetDocumentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDocumentResult]]
+  
   trait GetDocumentArgs extends StObject {
     
     /**
       * Returns the document in the specified format. The document format can be either JSON or YAML. JSON is the default format.
       */
-    val documentFormat: js.UndefOr[String] = js.native
+    val documentFormat: js.UndefOr[String] = js.undefined
     
     /**
       * The document version for which you want information.
       */
-    val documentVersion: js.UndefOr[String] = js.native
+    val documentVersion: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the Systems Manager document.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetDocumentArgs {
     
@@ -61,34 +61,33 @@ object getDocumentMod {
     }
   }
   
-  @js.native
   trait GetDocumentResult extends StObject {
     
     /**
       * The ARN of the document.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The contents of the document.
       */
-    val content: String = js.native
+    val content: String
     
-    val documentFormat: js.UndefOr[String] = js.native
+    val documentFormat: js.UndefOr[String] = js.undefined
     
     /**
       * The type of the document.
       */
-    val documentType: String = js.native
+    val documentType: String
     
-    val documentVersion: js.UndefOr[String] = js.native
+    val documentVersion: js.UndefOr[String] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
   }
   object GetDocumentResult {
     

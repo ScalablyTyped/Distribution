@@ -2,17 +2,15 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseDefinitionGatesStep extends StObject {
   
-  var gates: js.Array[ReleaseDefinitionGate] = js.native
+  var gates: js.Array[ReleaseDefinitionGate]
   
-  var gatesOptions: ReleaseDefinitionGatesOptions = js.native
+  var gatesOptions: ReleaseDefinitionGatesOptions
   
-  var id: Double = js.native
+  var id: Double
 }
 object ReleaseDefinitionGatesStep {
   

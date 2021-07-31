@@ -2,25 +2,23 @@ package typings.plugapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Media extends StObject {
   
-  var author: String = js.native
+  var author: String
   
-  var cid: String = js.native
+  var cid: String
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var format: Double = js.native
+  var format: Double
   
-  var id: Double = js.native
+  var id: Double
   
-  var image: String = js.native
+  var image: String
   
-  var title: String = js.native
+  var title: String
 }
 object Media {
   

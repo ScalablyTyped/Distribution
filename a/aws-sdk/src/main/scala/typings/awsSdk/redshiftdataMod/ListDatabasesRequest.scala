@@ -2,41 +2,39 @@ package typings.awsSdk.redshiftdataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDatabasesRequest extends StObject {
   
   /**
     * The cluster identifier. This parameter is required when authenticating using either AWS Secrets Manager or temporary credentials. 
     */
-  var ClusterIdentifier: Location = js.native
+  var ClusterIdentifier: Location
   
   /**
     * The name of the database. This parameter is required when authenticating using temporary credentials. 
     */
-  var Database: js.UndefOr[String] = js.native
+  var Database: js.UndefOr[String] = js.undefined
   
   /**
     * The database user name. This parameter is required when authenticating using temporary credentials. 
     */
-  var DbUser: js.UndefOr[String] = js.native
+  var DbUser: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of databases to return in the response. If more databases exist than fit in one response, then NextToken is returned to page through the results. 
     */
-  var MaxResults: js.UndefOr[PageSize] = js.native
+  var MaxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     * A value that indicates the starting point for the next set of response records in a subsequent request. If a value is returned in a response, you can retrieve the next set of records by providing this returned NextToken value in the next NextToken parameter and retrying the command. If the NextToken field is empty, all response records have been retrieved for the request. 
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name or ARN of the secret that enables access to the database. This parameter is required when authenticating using AWS Secrets Manager. 
     */
-  var SecretArn: js.UndefOr[typings.awsSdk.redshiftdataMod.SecretArn] = js.native
+  var SecretArn: js.UndefOr[typings.awsSdk.redshiftdataMod.SecretArn] = js.undefined
 }
 object ListDatabasesRequest {
   

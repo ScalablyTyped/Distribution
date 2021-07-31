@@ -10,9 +10,9 @@ The core SDK for UNL Location Services
 | ------------------ | :-------------: |
 | Full name          | unl-core |
 | Keywords           | polyhash, cluster, locationId, geocode, geolocation, latitude, longitude, elevation, unl core, unl |
-| # releases         | 7 |
+| # releases         | 11 |
 | # dependents       | 0 |
-| # downloads        | 2556 |
+| # downloads        | 3844 |
 | # stars            | 0 |
 
 ## Links

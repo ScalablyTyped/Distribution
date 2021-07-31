@@ -3,15 +3,13 @@ package typings.screeps.anon
 import typings.screeps.PowerConstant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Power extends StObject {
   
-  var power: PowerConstant = js.native
+  var power: PowerConstant
   
-  var targetId: String = js.native
+  var targetId: String
 }
 object Power {
   

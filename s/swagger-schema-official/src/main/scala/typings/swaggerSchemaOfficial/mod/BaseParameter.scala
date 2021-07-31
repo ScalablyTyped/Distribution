@@ -7,19 +7,17 @@ import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.path
 import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseParameter extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var in: body | query | path | header | formData = js.native
+  var in: body | query | path | header | formData
   
-  var name: String = js.native
+  var name: String
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
 }
 object BaseParameter {
   

@@ -2,19 +2,19 @@ package typings.recharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DotProps extends EventAttributes {
+trait DotProps
+  extends StObject
+     with EventAttributes {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var cx: js.UndefOr[Double] = js.native
+  var cx: js.UndefOr[Double] = js.undefined
   
-  var cy: js.UndefOr[Double] = js.native
+  var cy: js.UndefOr[Double] = js.undefined
   
-  var r: js.UndefOr[Double] = js.native
+  var r: js.UndefOr[Double] = js.undefined
 }
 object DotProps {
   

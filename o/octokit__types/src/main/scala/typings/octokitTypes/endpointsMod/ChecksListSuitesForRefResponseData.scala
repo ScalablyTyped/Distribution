@@ -3,15 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.After
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChecksListSuitesForRefResponseData extends StObject {
   
-  var check_suites: js.Array[After] = js.native
+  var check_suites: js.Array[After]
   
-  var total_count: Double = js.native
+  var total_count: Double
 }
 object ChecksListSuitesForRefResponseData {
   

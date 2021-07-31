@@ -2,14 +2,12 @@ package typings.realpathNative
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("realpath-native", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String): String = js.native
+  @scala.inline
+  def apply(filepath: String): String = ^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("realpath-native", JSImport.Namespace)
   @js.native

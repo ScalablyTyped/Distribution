@@ -9,7 +9,6 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventQueueMod {
@@ -60,6 +59,10 @@ object eventQueueMod {
   /* static members */
   object EventQueue {
     
+    @JSImport("matrix-appservice-bridge/lib/components/event-queue", "EventQueue")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Factory for EventQueues.
       *
@@ -68,9 +71,8 @@ object eventQueueMod {
       *     is consumed.
       * @return {EventQueue} The newly created EventQueue.
       */
-    @JSImport("matrix-appservice-bridge/lib/components/event-queue", "EventQueue.create")
-    @js.native
-    def create(opts: `0`, consumeFn: ConsumeCallback): EventQueueSingle | EventQueuePerRoom | EventQueueNone = js.native
+    @scala.inline
+    def create(opts: `0`, consumeFn: ConsumeCallback): EventQueueSingle | EventQueuePerRoom | EventQueueNone = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any], consumeFn.asInstanceOf[js.Any])).asInstanceOf[EventQueueSingle | EventQueuePerRoom | EventQueueNone]
   }
   
   @JSImport("matrix-appservice-bridge/lib/components/event-queue", "EventQueueNone")

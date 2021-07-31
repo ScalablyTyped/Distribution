@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a collection of email messages. */
-@js.native
 trait EmailMessageBatch extends StObject {
   
   /** Gets a batch of email messages. */
-  var messages: IVectorView[EmailMessage] = js.native
+  var messages: IVectorView[EmailMessage]
   
   /** Gets the status of the email batch read. */
-  var status: EmailBatchStatus = js.native
+  var status: EmailBatchStatus
 }
 object EmailMessageBatch {
   

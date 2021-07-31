@@ -2,15 +2,13 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hash extends StObject {
   
-  var hash: Alg = js.native
+  var hash: Alg
   
-  var oid: String = js.native
+  var oid: String
 }
 object Hash {
   

@@ -2,32 +2,32 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceEnrollmentConfiguration extends Entity {
+trait DeviceEnrollmentConfiguration
+  extends StObject
+     with Entity {
   
   // The list of group assignments for the device configuration profile.
-  var assignments: js.UndefOr[NullableOption[js.Array[EnrollmentConfigurationAssignment]]] = js.native
+  var assignments: js.UndefOr[NullableOption[js.Array[EnrollmentConfigurationAssignment]]] = js.undefined
   
   // Not yet documented
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   // Not yet documented
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Not yet documented
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Not yet documented
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   // Not yet documented
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   // Not yet documented
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object DeviceEnrollmentConfiguration {
   

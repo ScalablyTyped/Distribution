@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAppsResponse extends StObject {
   
   /**
     * The list of apps.
     */
-  var Apps: js.UndefOr[AppList] = js.native
+  var Apps: js.UndefOr[AppList] = js.undefined
   
   /**
     * If the previous response was truncated, you will receive this token. Use it in your next request to receive the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
 }
 object ListAppsResponse {
   

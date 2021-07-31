@@ -14,7 +14,6 @@ import typings.std.RequestInit
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceMod {
@@ -24,13 +23,6 @@ object serviceMod {
   class Service protected ()
     extends FirebaseFunctions
        with FirebaseService {
-    def this(
-      app_ : FirebaseApp,
-      authProvider: Provider[FirebaseAuthInternalName],
-      messagingProvider: Provider[FirebaseMessagingName],
-      regionOrCustomDomain_ : js.UndefOr[scala.Nothing],
-      fetchImpl: FnCall
-    ) = this()
     /**
       * Creates a new Functions service for the given app and (optional) region or custom domain.
       * @param app_ The FirebaseApp to use.
@@ -45,6 +37,13 @@ object serviceMod {
       regionOrCustomDomain_ : String,
       fetchImpl: FnCall
     ) = this()
+    def this(
+      app_ : FirebaseApp,
+      authProvider: Provider[FirebaseAuthInternalName],
+      messagingProvider: Provider[FirebaseMessagingName],
+      regionOrCustomDomain_ : Unit,
+      fetchImpl: FnCall
+    ) = this()
     
     @JSName("INTERNAL")
     var INTERNAL_Service: Delete = js.native
@@ -54,6 +53,9 @@ object serviceMod {
       * @param name The name of the callable.
       */
     def _url(name: String): String = js.native
+    
+    /* CompleteClass */
+    var app: typings.firebaseAppTypes.mod.FirebaseApp = js.native
     
     var app_ : js.Any = js.native
     
@@ -94,14 +96,13 @@ object serviceMod {
     val serializer: js.Any = js.native
   }
   
-  @js.native
   trait HttpResponseBody extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var error: js.UndefOr[Details] = js.native
+    var error: js.UndefOr[Details] = js.undefined
     
-    var result: js.UndefOr[js.Any] = js.native
+    var result: js.UndefOr[js.Any] = js.undefined
   }
   object HttpResponseBody {
     

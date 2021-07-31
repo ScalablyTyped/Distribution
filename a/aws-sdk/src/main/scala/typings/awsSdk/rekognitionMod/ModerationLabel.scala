@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModerationLabel extends StObject {
   
   /**
     * Specifies the confidence that Amazon Rekognition has that the label has been correctly identified. If you don't specify the MinConfidence parameter in the call to DetectModerationLabels, the operation returns labels with a confidence value greater than or equal to 50 percent.
     */
-  var Confidence: js.UndefOr[Percent] = js.native
+  var Confidence: js.UndefOr[Percent] = js.undefined
   
   /**
     * The label name for the type of unsafe content detected in the image.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The name for the parent label. Labels at the top level of the hierarchy have the parent label "".
     */
-  var ParentName: js.UndefOr[String] = js.native
+  var ParentName: js.UndefOr[String] = js.undefined
 }
 object ModerationLabel {
   

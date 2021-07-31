@@ -2,21 +2,19 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddOnAddRequest extends StObject {
   
-  var amount: js.UndefOr[String] = js.native
+  var amount: js.UndefOr[String] = js.undefined
   
-  var inheritedFromId: String = js.native
+  var inheritedFromId: String
   
-  var neverExpires: js.UndefOr[Boolean] = js.native
+  var neverExpires: js.UndefOr[Boolean] = js.undefined
   
-  var numberOfBillingCycles: js.UndefOr[Double] = js.native
+  var numberOfBillingCycles: js.UndefOr[Double] = js.undefined
   
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
 }
 object AddOnAddRequest {
   

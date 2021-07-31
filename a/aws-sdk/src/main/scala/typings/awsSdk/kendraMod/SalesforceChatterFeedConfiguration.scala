@@ -2,31 +2,29 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SalesforceChatterFeedConfiguration extends StObject {
   
   /**
     * The name of the column in the Salesforce FeedItem table that contains the content to index. Typically this is the Body column.
     */
-  var DocumentDataFieldName: DataSourceFieldName = js.native
+  var DocumentDataFieldName: DataSourceFieldName
   
   /**
     * The name of the column in the Salesforce FeedItem table that contains the title of the document. This is typically the Title collumn.
     */
-  var DocumentTitleFieldName: js.UndefOr[DataSourceFieldName] = js.native
+  var DocumentTitleFieldName: js.UndefOr[DataSourceFieldName] = js.undefined
   
   /**
     * Maps fields from a Salesforce chatter feed into Amazon Kendra index fields.
     */
-  var FieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.native
+  var FieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.undefined
   
   /**
     * Filters the documents in the feed based on status of the user. When you specify ACTIVE_USERS only documents from users who have an active account are indexed. When you specify STANDARD_USER only documents for Salesforce standard users are documented. You can specify both.
     */
-  var IncludeFilterTypes: js.UndefOr[SalesforceChatterFeedIncludeFilterTypes] = js.native
+  var IncludeFilterTypes: js.UndefOr[SalesforceChatterFeedIncludeFilterTypes] = js.undefined
 }
 object SalesforceChatterFeedConfiguration {
   

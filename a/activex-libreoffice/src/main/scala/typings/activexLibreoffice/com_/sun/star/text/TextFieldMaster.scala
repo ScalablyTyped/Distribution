@@ -8,24 +8,24 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A {@link TextFieldMaster} specifies important data for its DependentTextFields. */
-@js.native
-trait TextFieldMaster extends XPropertySet {
+trait TextFieldMaster
+  extends StObject
+     with XPropertySet {
   
   /** contains a sequence of all fields that depend on this master. */
-  var DependentTextFields: SafeArray[XDependentTextField] = js.native
+  var DependentTextFields: SafeArray[XDependentTextField]
   
   /** contains the instance name as it is used in the {@link com.sun.star.text.XTextFieldsSupplier} . */
-  var InstanceName: String = js.native
+  var InstanceName: String
   
   /**
     * determines the name of the field master. The name is void as long as the instance is not member of the document structure. When the value is being set
     * the instance is inserted into the document and the name cannot be changed afterwards. That does not apply to the Database text field master.
     */
-  var Name: String = js.native
+  var Name: String
 }
 object TextFieldMaster {
   

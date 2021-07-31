@@ -2,17 +2,15 @@ package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartSamplingRequest extends StObject {
   
   /**
     * Average sample interval in bytes. Poisson distribution is used for the intervals. The
     * default value is 32768 bytes.
     */
-  var samplingInterval: js.UndefOr[Double] = js.native
+  var samplingInterval: js.UndefOr[Double] = js.undefined
 }
 object StartSamplingRequest {
   

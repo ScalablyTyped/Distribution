@@ -4,25 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.RegisteredStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Current extends StObject {
   
-  var current: Double = js.native
+  var current: Double
   
-  var indicatorStyle: Null = js.native
+  var indicatorStyle: Null
   
-  var mode: String = js.native
+  var mode: String
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  var simple: Boolean = js.native
+  var simple: Boolean
   
-  var styles: StringDictionary[RegisteredStyle[_]] = js.native
+  var styles: StringDictionary[RegisteredStyle[js.Any]]
   
-  var total: Double = js.native
+  var total: Double
 }
 object Current {
   
@@ -33,7 +31,7 @@ object Current {
     mode: String,
     onChange: () => Unit,
     simple: Boolean,
-    styles: StringDictionary[RegisteredStyle[_]],
+    styles: StringDictionary[RegisteredStyle[js.Any]],
     total: Double
   ): Current = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], indicatorStyle = indicatorStyle.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), simple = simple.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
@@ -59,7 +57,7 @@ object Current {
     def setSimple(value: Boolean): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])

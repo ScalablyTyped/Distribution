@@ -5,60 +5,60 @@ import typings.recharts.anon.PartialMargin
 import typings.recharts.rechartsStrings.centric
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.recharts.mod.CategoricalChartWrapper because var conflicts: onClick, onMouseDown, onMouseEnter, onMouseLeave, onMouseMove, onMouseUp. Inlined syncId, compact, width, height, data, layout, stackOffset, throttleDelay, margin, barCategoryGap, barGap, barSize, baseValue, maxBarSize, style, className, children, reverseStackOrder */ @js.native
-trait PieChartProps extends EventAttributes {
+- typings.recharts.mod.CategoricalChartWrapper because var conflicts: onClick, onMouseDown, onMouseEnter, onMouseLeave, onMouseMove, onMouseUp. Inlined syncId, compact, width, height, data, layout, stackOffset, throttleDelay, margin, barCategoryGap, barGap, barSize, baseValue, maxBarSize, style, className, children, reverseStackOrder */ trait PieChartProps
+  extends StObject
+     with EventAttributes {
   
-  var barCategoryGap: js.UndefOr[Double | String] = js.native
+  var barCategoryGap: js.UndefOr[Double | String] = js.undefined
   
-  var barGap: js.UndefOr[Double | String] = js.native
+  var barGap: js.UndefOr[Double | String] = js.undefined
   
-  var barSize: js.UndefOr[Double | String] = js.native
+  var barSize: js.UndefOr[Double | String] = js.undefined
   
-  var baseValue: js.UndefOr[BaseValueType] = js.native
+  var baseValue: js.UndefOr[BaseValueType] = js.undefined
   
-  var children: js.UndefOr[ReactNode | js.Array[ReactNode]] = js.native
+  var children: js.UndefOr[ReactNode | js.Array[ReactNode]] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var compact: js.UndefOr[Boolean] = js.native
+  var compact: js.UndefOr[Boolean] = js.undefined
   
-  var cx: js.UndefOr[Double | String] = js.native
+  var cx: js.UndefOr[Double | String] = js.undefined
   
-  var cy: js.UndefOr[Double | String] = js.native
+  var cy: js.UndefOr[Double | String] = js.undefined
   
-  var data: js.UndefOr[js.Array[js.Object]] = js.native
+  var data: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var endAngle: js.UndefOr[Double] = js.native
+  var endAngle: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var innerRadius: js.UndefOr[Double | String] = js.native
+  var innerRadius: js.UndefOr[Double | String] = js.undefined
   
-  var layout: js.UndefOr[centric] = js.native
+  var layout: js.UndefOr[centric] = js.undefined
   
-  var margin: js.UndefOr[PartialMargin] = js.native
+  var margin: js.UndefOr[PartialMargin] = js.undefined
   
-  var maxBarSize: js.UndefOr[Double] = js.native
+  var maxBarSize: js.UndefOr[Double] = js.undefined
   
-  var outerRadius: js.UndefOr[Double | String] = js.native
+  var outerRadius: js.UndefOr[Double | String] = js.undefined
   
-  var reverseStackOrder: js.UndefOr[Boolean] = js.native
+  var reverseStackOrder: js.UndefOr[Boolean] = js.undefined
   
-  var stackOffset: js.UndefOr[StackOffsetType] = js.native
+  var stackOffset: js.UndefOr[StackOffsetType] = js.undefined
   
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[js.Object] = js.native
+  var style: js.UndefOr[js.Object] = js.undefined
   
-  var syncId: js.UndefOr[String | Double] = js.native
+  var syncId: js.UndefOr[String | Double] = js.undefined
   
-  var throttleDelay: js.UndefOr[Double] = js.native
+  var throttleDelay: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PieChartProps {
   

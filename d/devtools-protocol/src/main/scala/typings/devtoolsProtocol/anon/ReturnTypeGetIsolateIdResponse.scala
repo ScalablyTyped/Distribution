@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Runtime.GetIsolateIdResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetIsolateIdResponse extends StObject {
   
-  var paramsType: js.Array[js.Any] = js.native
+  var paramsType: js.Array[js.Any]
   
-  var returnType: GetIsolateIdResponse = js.native
+  var returnType: GetIsolateIdResponse
 }
 object ReturnTypeGetIsolateIdResponse {
   

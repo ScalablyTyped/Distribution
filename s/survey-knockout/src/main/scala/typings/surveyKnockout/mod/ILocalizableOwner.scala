@@ -2,17 +2,15 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILocalizableOwner extends StObject {
   
-  def getLocale(): String = js.native
+  def getLocale(): String
   
-  def getMarkdownHtml(text: String): String = js.native
+  def getMarkdownHtml(text: String): String
   
-  def getProcessedText(text: String): String = js.native
+  def getProcessedText(text: String): String
 }
 object ILocalizableOwner {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UtteranceData extends StObject {
   
   /**
     * The number of times that the utterance was processed.
     */
-  var count: js.UndefOr[Count] = js.native
+  var count: js.UndefOr[Count] = js.undefined
   
   /**
     * The total number of individuals that used the utterance.
     */
-  var distinctUsers: js.UndefOr[Count] = js.native
+  var distinctUsers: js.UndefOr[Count] = js.undefined
   
   /**
     * The date that the utterance was first recorded.
     */
-  var firstUtteredDate: js.UndefOr[Timestamp] = js.native
+  var firstUtteredDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The date that the utterance was last recorded.
     */
-  var lastUtteredDate: js.UndefOr[Timestamp] = js.native
+  var lastUtteredDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The text that was entered by the user or the text representation of an audio clip.
     */
-  var utteranceString: js.UndefOr[UtteranceString] = js.native
+  var utteranceString: js.UndefOr[UtteranceString] = js.undefined
 }
 object UtteranceData {
   

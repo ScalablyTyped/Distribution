@@ -2,21 +2,19 @@ package typings.nodeWgetPromise
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait OnProgress extends StObject {
     
-    var onProgress: js.UndefOr[js.Any] = js.native
+    var onProgress: js.UndefOr[js.Any] = js.undefined
     
-    var onStart: js.UndefOr[js.Any] = js.native
+    var onStart: js.UndefOr[js.Any] = js.undefined
     
-    var output: js.UndefOr[String] = js.native
+    var output: js.UndefOr[String] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object OnProgress {
     

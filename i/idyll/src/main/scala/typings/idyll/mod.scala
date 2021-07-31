@@ -4,17 +4,18 @@ import typings.idyll.anon.Compiler
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): IdyllInstance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[IdyllInstance]
+  @scala.inline
+  def apply(options: Options, callback: js.Function0[Unit]): IdyllInstance = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IdyllInstance]
+  
   @JSImport("idyll", JSImport.Namespace)
   @js.native
-  def apply(options: Options): IdyllInstance = js.native
-  @JSImport("idyll", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, callback: js.Function0[Unit]): IdyllInstance = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.idyll.idyllStrings.COMPONENT_DIRS
@@ -55,96 +56,95 @@ object mod {
     def getPaths(): Paths = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Compiler options
       */
-    var compiler: js.UndefOr[typings.idyllCompiler.mod.Options] = js.native
+    var compiler: js.UndefOr[typings.idyllCompiler.mod.Options] = js.undefined
     
     /**
       * The components directory
       */
-    var components: js.UndefOr[Boolean] = js.native
+    var components: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom CSS file to include in output
       */
-    var css: js.UndefOr[String] = js.native
+    var css: js.UndefOr[String] = js.undefined
     
     /**
       * The datasets directory
       */
-    var datasets: js.UndefOr[String] = js.native
+    var datasets: js.UndefOr[String] = js.undefined
     
     /**
       * The default component directory
       * This corresponds to where the idyll-components package stays
       */
-    var defaultComponents: js.UndefOr[Boolean] = js.native
+    var defaultComponents: js.UndefOr[Boolean] = js.undefined
     
     /**
       * used internally by IdyllInstance
       */
-    var inputConfig: js.UndefOr[Compiler] = js.native
+    var inputConfig: js.UndefOr[Compiler] = js.undefined
     
     /**
       * the idyll file to be compiled into
       */
-    var inputFile: js.UndefOr[String] = js.native
+    var inputFile: js.UndefOr[String] = js.undefined
     
     /**
       * The layout defined in idyll-layouts package
       */
-    var layout: js.UndefOr[String] = js.native
+    var layout: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to minify output build
       */
-    var minify: js.UndefOr[Boolean] = js.native
+    var minify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The output directory for compiled documents
       */
-    var output: js.UndefOr[String] = js.native
+    var output: js.UndefOr[String] = js.undefined
     
     /**
       * Custom port to bind the local server to.
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       *
       * Pre-render HTML as part of the build
       */
-    var ssr: js.UndefOr[Boolean] = js.native
+    var ssr: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Temporary directory used by idyll
       */
-    var temp: js.UndefOr[String] = js.native
+    var temp: js.UndefOr[String] = js.undefined
     
     /**
       * path to HTML template
       *
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /**
       * The theme defined in idyll-theme package
       */
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
     /**
       * Custom browserify transforms to apply.
       */
-    var transform: js.UndefOr[js.Array[String]] = js.native
+    var transform: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Monitor input files and rebuild on changes
       */
-    var watch: js.UndefOr[Boolean] = js.native
+    var watch: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -265,36 +265,35 @@ object mod {
   }
   
   /* Inlined std.Record<idyll.idyll.PredefinedFile, string> & std.Record<idyll.idyll.ComponentFiles, std.Array<string>> */
-  @js.native
   trait Paths extends StObject {
     
-    var APP_PATH: String = js.native
+    var APP_PATH: String
     
-    var COMPONENT_DIRS: js.Array[String] = js.native
+    var COMPONENT_DIRS: js.Array[String]
     
-    var CSS_INPUT_FILE: String = js.native
+    var CSS_INPUT_FILE: String
     
-    var CSS_OUTPUT_FILE: String = js.native
+    var CSS_OUTPUT_FILE: String
     
-    var DATA_DIR: String = js.native
+    var DATA_DIR: String
     
-    var DEFAULT_COMPONENT_DIRS: js.Array[String] = js.native
+    var DEFAULT_COMPONENT_DIRS: js.Array[String]
     
-    var HTML_OUTPUT_FILE: String = js.native
+    var HTML_OUTPUT_FILE: String
     
-    var HTML_TEMPLATE_FILE: String = js.native
+    var HTML_TEMPLATE_FILE: String
     
-    var IDYLL_INPUT_FILE: String = js.native
+    var IDYLL_INPUT_FILE: String
     
-    var INPUT_DIR: String = js.native
+    var INPUT_DIR: String
     
-    var JS_OUTPUT_FILE: String = js.native
+    var JS_OUTPUT_FILE: String
     
-    var OUTPUT_DIR: String = js.native
+    var OUTPUT_DIR: String
     
-    var PACKAGE_FILE: String = js.native
+    var PACKAGE_FILE: String
     
-    var TMP_DIR: String = js.native
+    var TMP_DIR: String
   }
   object Paths {
     

@@ -4,7 +4,6 @@ import typings.node.streamMod.Stream
 import typings.progress.mod.ProgressBarOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,7 +14,9 @@ object mod {
     * Create a new @see MultiProgress with the given stream, or stderr by default
     * @param stream A stream to write the progress bars to
     */
-  class ^ () extends MultiProgress {
+  class ^ ()
+    extends StObject
+       with MultiProgress {
     def this(stream: Stream) = this()
   }
   

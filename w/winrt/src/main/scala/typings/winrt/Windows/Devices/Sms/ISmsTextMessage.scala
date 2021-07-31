@@ -4,29 +4,29 @@ import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISmsTextMessage extends ISmsMessage {
+trait ISmsTextMessage
+  extends StObject
+     with ISmsMessage {
   
-  var body: String = js.native
+  var body: String
   
-  var encoding: SmsEncoding = js.native
+  var encoding: SmsEncoding
   
-  var from: String = js.native
+  var from: String
   
-  var partCount: Double = js.native
+  var partCount: Double
   
-  var partNumber: Double = js.native
+  var partNumber: Double
   
-  var partReferenceId: Double = js.native
+  var partReferenceId: Double
   
-  var timestamp: Date = js.native
+  var timestamp: Date
   
-  var to: String = js.native
+  var to: String
   
-  def toBinaryMessages(format: SmsDataFormat): IVectorView[ISmsBinaryMessage] = js.native
+  def toBinaryMessages(format: SmsDataFormat): IVectorView[ISmsBinaryMessage]
 }
 object ISmsTextMessage {
   

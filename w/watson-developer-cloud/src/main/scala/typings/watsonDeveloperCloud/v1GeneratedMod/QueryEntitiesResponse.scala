@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object that contains an array of entities resulting from the query. */
-@js.native
 trait QueryEntitiesResponse extends StObject {
   
   /** Array of entities that results from the query. */
-  var entities: js.UndefOr[js.Array[QueryEntitiesResponseItem]] = js.native
+  var entities: js.UndefOr[js.Array[QueryEntitiesResponseItem]] = js.undefined
 }
 object QueryEntitiesResponse {
   

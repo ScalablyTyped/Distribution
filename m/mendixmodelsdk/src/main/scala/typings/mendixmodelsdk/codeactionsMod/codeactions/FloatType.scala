@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -52,9 +51,8 @@ object FloatType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.FloatType.create")
-  @js.native
-  def create(model: IModel): FloatType = js.native
+  @scala.inline
+  def create(model: IModel): FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[FloatType]
   
   /**
     * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -65,9 +63,8 @@ object FloatType {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.FloatType.createInBasicParameterTypeUnderType")
-  @js.native
-  def createInBasicParameterTypeUnderType(container: BasicParameterType): FloatType = js.native
+  @scala.inline
+  def createInBasicParameterTypeUnderType(container: BasicParameterType): FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[FloatType]
   
   /**
     * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -78,9 +75,8 @@ object FloatType {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.FloatType.createInCodeActionUnderActionReturnType")
-  @js.native
-  def createInCodeActionUnderActionReturnType(container: CodeAction): FloatType = js.native
+  @scala.inline
+  def createInCodeActionUnderActionReturnType(container: CodeAction): FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[FloatType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.FloatType.structureTypeName")

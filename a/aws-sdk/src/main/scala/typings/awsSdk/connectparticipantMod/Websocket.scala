@@ -2,21 +2,19 @@ package typings.awsSdk.connectparticipantMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Websocket extends StObject {
   
   /**
     * The URL expiration timestamp in ISO date format. It's specified in ISO 8601 format: yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
     */
-  var ConnectionExpiry: js.UndefOr[ISO8601Datetime] = js.native
+  var ConnectionExpiry: js.UndefOr[ISO8601Datetime] = js.undefined
   
   /**
     * The URL of the websocket.
     */
-  var Url: js.UndefOr[PreSignedConnectionUrl] = js.native
+  var Url: js.UndefOr[PreSignedConnectionUrl] = js.undefined
 }
 object Websocket {
   

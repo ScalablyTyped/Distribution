@@ -2,31 +2,29 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListImageBuildVersionsRequest extends StObject {
   
   /**
     * The filters. 
     */
-  var filters: js.UndefOr[FilterList] = js.native
+  var filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the image whose build versions you want to retrieve. 
     */
-  var imageVersionArn: ImageVersionArn = js.native
+  var imageVersionArn: ImageVersionArn
   
   /**
     * The maximum items to return in a request. 
     */
-  var maxResults: js.UndefOr[RestrictedInteger] = js.native
+  var maxResults: js.UndefOr[RestrictedInteger] = js.undefined
   
   /**
     * A token to specify where to start paginating. This is the NextToken from a previously truncated response. 
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListImageBuildVersionsRequest {
   

@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientHtmlEditorDialogInitializedEventArgs")
 @js.native
 class ASPxClientHtmlEditorDialogInitializedEventArgs ()
-  extends typings.devexpressWeb.ASPxClientHtmlEditorDialogInitializedEventArgs
+  extends StObject
+     with typings.devexpressWeb.ASPxClientHtmlEditorDialogInitializedEventArgs {
+  
+  /**
+    * Gets a dialog object related to the event.
+    */
+  /* CompleteClass */
+  var dialog: typings.devexpressWeb.ASPxClientHtmlEditorDialogBase = js.native
+  
+  /**
+    * Gets the name of the dialog that has been initialized.
+    */
+  /* CompleteClass */
+  var dialogName: String = js.native
+}

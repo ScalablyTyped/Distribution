@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateClusterRequest extends StObject {
   
   /**
@@ -13,72 +11,72 @@ trait CreateClusterRequest extends StObject {
     Information about the broker nodes in the cluster.
     
     */
-  var BrokerNodeGroupInfo: typings.awsSdk.kafkaMod.BrokerNodeGroupInfo = js.native
+  var BrokerNodeGroupInfo: typings.awsSdk.kafkaMod.BrokerNodeGroupInfo
   
   /**
     * 
     Includes all client authentication related information.
     
     */
-  var ClientAuthentication: js.UndefOr[typings.awsSdk.kafkaMod.ClientAuthentication] = js.native
+  var ClientAuthentication: js.UndefOr[typings.awsSdk.kafkaMod.ClientAuthentication] = js.undefined
   
   /**
     * 
     The name of the cluster.
     
     */
-  var ClusterName: stringMin1Max64 = js.native
+  var ClusterName: stringMin1Max64
   
   /**
     * 
     Represents the configuration that you want MSK to use for the brokers in a cluster.
     
     */
-  var ConfigurationInfo: js.UndefOr[typings.awsSdk.kafkaMod.ConfigurationInfo] = js.native
+  var ConfigurationInfo: js.UndefOr[typings.awsSdk.kafkaMod.ConfigurationInfo] = js.undefined
   
   /**
     * 
     Includes all encryption-related information.
     
     */
-  var EncryptionInfo: js.UndefOr[typings.awsSdk.kafkaMod.EncryptionInfo] = js.native
+  var EncryptionInfo: js.UndefOr[typings.awsSdk.kafkaMod.EncryptionInfo] = js.undefined
   
   /**
     * 
     Specifies the level of monitoring for the MSK cluster. The possible values are DEFAULT, PER_BROKER, PER_TOPIC_PER_BROKER, and PER_TOPIC_PER_PARTITION.
     
     */
-  var EnhancedMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.EnhancedMonitoring] = js.native
+  var EnhancedMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.EnhancedMonitoring] = js.undefined
   
   /**
     * 
     The version of Apache Kafka.
     
     */
-  var KafkaVersion: stringMin1Max128 = js.native
+  var KafkaVersion: stringMin1Max128
   
-  var LoggingInfo: js.UndefOr[typings.awsSdk.kafkaMod.LoggingInfo] = js.native
+  var LoggingInfo: js.UndefOr[typings.awsSdk.kafkaMod.LoggingInfo] = js.undefined
   
   /**
     * 
     The number of broker nodes in the cluster.
     
     */
-  var NumberOfBrokerNodes: integerMin1Max15 = js.native
+  var NumberOfBrokerNodes: integerMin1Max15
   
   /**
     * 
     The settings for open monitoring.
     
     */
-  var OpenMonitoring: js.UndefOr[OpenMonitoringInfo] = js.native
+  var OpenMonitoring: js.UndefOr[OpenMonitoringInfo] = js.undefined
   
   /**
     * 
     Create tags when creating the cluster.
     
     */
-  var Tags: js.UndefOr[mapOfString] = js.native
+  var Tags: js.UndefOr[mapOfString] = js.undefined
 }
 object CreateClusterRequest {
   

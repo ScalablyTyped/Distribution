@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDashboardsInput extends StObject {
   
   /**
     * The dashboards to be deleted. This parameter is required.
     */
-  var DashboardNames: typings.awsSdk.cloudwatchMod.DashboardNames = js.native
+  var DashboardNames: typings.awsSdk.cloudwatchMod.DashboardNames
 }
 object DeleteDashboardsInput {
   

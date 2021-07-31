@@ -2,26 +2,24 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartLifecyclePolicyPreviewRequest extends StObject {
   
   /**
     * The policy to be evaluated against. If you do not specify a policy, the current policy for the repository is used.
     */
-  var lifecyclePolicyText: js.UndefOr[LifecyclePolicyText] = js.native
+  var lifecyclePolicyText: js.UndefOr[LifecyclePolicyText] = js.undefined
   
   /**
     * The AWS account ID associated with the registry that contains the repository. If you do not specify a registry, the default registry is assumed.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The name of the repository to be evaluated.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object StartLifecyclePolicyPreviewRequest {
   

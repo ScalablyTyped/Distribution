@@ -4,7 +4,6 @@ import typings.lodashDecorators.commonMod.LodashDecorator
 import typings.lodashDecorators.decoratorConfigMod.DecoratorConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decoratorFactoryMod {
@@ -26,5 +25,9 @@ object decoratorFactoryMod {
     def createInstanceDecorator(config: DecoratorConfig): GenericDecorator = js.native
   }
   
-  type GenericDecorator = js.Function1[/* repeated */ js.Any, LodashDecorator]
+  @js.native
+  trait GenericDecorator extends StObject {
+    
+    def apply(args: js.Any*): LodashDecorator = js.native
+  }
 }

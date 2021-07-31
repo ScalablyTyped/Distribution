@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDashboardResponse extends StObject {
   
   /**
     * The Secure Socket Layer (SSL) properties that apply for the resource.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The ID of the dashboard.
     */
-  var DashboardId: js.UndefOr[RestrictiveResourceId] = js.native
+  var DashboardId: js.UndefOr[RestrictiveResourceId] = js.undefined
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.native
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
 }
 object DeleteDashboardResponse {
   

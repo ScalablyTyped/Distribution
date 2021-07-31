@@ -3,22 +3,20 @@ package typings.vscode.anon
 import typings.vscode.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Target extends StObject {
   
   /**
     * A target URI to open with more information about the diagnostic error.
     */
-  var target: Uri = js.native
+  var target: Uri
   
   /**
     * A code or identifier for this diagnostic.
     * Should be used for later processing, e.g. when providing [code actions](#CodeActionContext).
     */
-  var value: String | Double = js.native
+  var value: String | Double
 }
 object Target {
   

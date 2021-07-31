@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedDeviceMobileAppConfigurationAssignment extends Entity {
+trait ManagedDeviceMobileAppConfigurationAssignment
+  extends StObject
+     with Entity {
   
   // Assignment target that the T&amp;C policy is assigned to.
-  var target: js.UndefOr[NullableOption[DeviceAndAppManagementAssignmentTarget]] = js.native
+  var target: js.UndefOr[NullableOption[DeviceAndAppManagementAssignmentTarget]] = js.undefined
 }
 object ManagedDeviceMobileAppConfigurationAssignment {
   

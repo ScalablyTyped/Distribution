@@ -2,46 +2,44 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThingDocument extends StObject {
   
   /**
     * The attributes.
     */
-  var attributes: js.UndefOr[Attributes] = js.native
+  var attributes: js.UndefOr[Attributes] = js.undefined
   
   /**
     * Indicates whether the thing is connected to the AWS IoT service.
     */
-  var connectivity: js.UndefOr[ThingConnectivity] = js.native
+  var connectivity: js.UndefOr[ThingConnectivity] = js.undefined
   
   /**
     * The shadow.
     */
-  var shadow: js.UndefOr[JsonDocument] = js.native
+  var shadow: js.UndefOr[JsonDocument] = js.undefined
   
   /**
     * Thing group names.
     */
-  var thingGroupNames: js.UndefOr[ThingGroupNameList] = js.native
+  var thingGroupNames: js.UndefOr[ThingGroupNameList] = js.undefined
   
   /**
     * The thing ID.
     */
-  var thingId: js.UndefOr[ThingId] = js.native
+  var thingId: js.UndefOr[ThingId] = js.undefined
   
   /**
     * The thing name.
     */
-  var thingName: js.UndefOr[ThingName] = js.native
+  var thingName: js.UndefOr[ThingName] = js.undefined
   
   /**
     * The thing type name.
     */
-  var thingTypeName: js.UndefOr[ThingTypeName] = js.native
+  var thingTypeName: js.UndefOr[ThingTypeName] = js.undefined
 }
 object ThingDocument {
   

@@ -2,23 +2,21 @@ package typings.instagramPrivateApi.postsInsightsFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostsInsightsFeedResponseMetrics extends StObject {
   
-  var impression_count: Double = js.native
+  var impression_count: Double
   
-  var owner_account_follows_count: Double = js.native
+  var owner_account_follows_count: Double
   
-  var owner_profile_views_count: Double = js.native
+  var owner_profile_views_count: Double
   
-  var profile_actions: PostsInsightsFeedResponseProfileActions = js.native
+  var profile_actions: PostsInsightsFeedResponseProfileActions
   
-  var reach_count: Double = js.native
+  var reach_count: Double
   
-  var share_count: PostsInsightsFeedResponseShareCount = js.native
+  var share_count: PostsInsightsFeedResponseShareCount
 }
 object PostsInsightsFeedResponseMetrics {
   

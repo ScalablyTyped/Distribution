@@ -4,26 +4,24 @@ import typings.googleCloudStorage.anon.Max
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSignedPolicyOptions extends StObject {
   
-  var acl: js.UndefOr[String] = js.native
+  var acl: js.UndefOr[String] = js.undefined
   
-  var contentLengthRange: js.UndefOr[Max] = js.native
+  var contentLengthRange: js.UndefOr[Max] = js.undefined
   
   @JSName("equals")
-  var equals_FGetSignedPolicyOptions: js.UndefOr[js.Array[js.Array[String] | String]] = js.native
+  var equals_FGetSignedPolicyOptions: js.UndefOr[js.Array[js.Array[String] | String]] = js.undefined
   
-  var expires: String | Double | Date = js.native
+  var expires: String | Double | Date
   
-  var startsWith: js.UndefOr[js.Array[js.Array[String] | String]] = js.native
+  var startsWith: js.UndefOr[js.Array[js.Array[String] | String]] = js.undefined
   
-  var successRedirect: js.UndefOr[String] = js.native
+  var successRedirect: js.UndefOr[String] = js.undefined
   
-  var successStatus: js.UndefOr[String] = js.native
+  var successStatus: js.UndefOr[String] = js.undefined
 }
 object GetSignedPolicyOptions {
   

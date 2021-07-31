@@ -3,15 +3,13 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.ui.format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomizeTextFormat extends StObject {
   
-  var customizeText: js.UndefOr[js.Function1[/* markerValue */ `26`, String]] = js.native
+  var customizeText: js.UndefOr[js.Function1[/* markerValue */ `26`, String]] = js.undefined
   
-  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
 }
 object CustomizeTextFormat {
   

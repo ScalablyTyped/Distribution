@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergeDeveloperIdentitiesInput extends StObject {
   
   /**
     * User identifier for the destination user. The value should be a DeveloperUserIdentifier.
     */
-  var DestinationUserIdentifier: DeveloperUserIdentifier = js.native
+  var DestinationUserIdentifier: DeveloperUserIdentifier
   
   /**
     * The "domain" by which Cognito will refer to your users. This is a (pseudo) domain name that you provide while creating an identity pool. This name acts as a placeholder that allows your backend and the Cognito service to communicate about the developer provider. For the DeveloperProviderName, you can use letters as well as period (.), underscore (_), and dash (-).
     */
-  var DeveloperProviderName: typings.awsSdk.cognitoidentityMod.DeveloperProviderName = js.native
+  var DeveloperProviderName: typings.awsSdk.cognitoidentityMod.DeveloperProviderName
   
   /**
     * An identity pool ID in the format REGION:GUID.
     */
-  var IdentityPoolId: typings.awsSdk.cognitoidentityMod.IdentityPoolId = js.native
+  var IdentityPoolId: typings.awsSdk.cognitoidentityMod.IdentityPoolId
   
   /**
     * User identifier for the source user. The value should be a DeveloperUserIdentifier.
     */
-  var SourceUserIdentifier: DeveloperUserIdentifier = js.native
+  var SourceUserIdentifier: DeveloperUserIdentifier
 }
 object MergeDeveloperIdentitiesInput {
   

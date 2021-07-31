@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigtableadmin/v2", "bigtableadmin_v2.Resource$Projects$Instances$Clusters")
@@ -32,7 +31,7 @@ class ResourceProjectsInstancesClusters protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceProjectsInstancesClustersCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(
     params: ParamsResourceProjectsInstancesClustersCreate,
@@ -64,7 +63,7 @@ class ResourceProjectsInstancesClusters protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsInstancesClustersDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsInstancesClustersDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -93,7 +92,7 @@ class ResourceProjectsInstancesClusters protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaCluster] = js.native
   def get(callback: BodyResponseCallback[SchemaCluster]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCluster] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCluster] = js.native
   def get(params: ParamsResourceProjectsInstancesClustersGet): GaxiosPromise[SchemaCluster] = js.native
   def get(params: ParamsResourceProjectsInstancesClustersGet, callback: BodyResponseCallback[SchemaCluster]): Unit = js.native
   def get(
@@ -123,7 +122,7 @@ class ResourceProjectsInstancesClusters protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListClustersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListClustersResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListClustersResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListClustersResponse] = js.native
   def list(params: ParamsResourceProjectsInstancesClustersList): GaxiosPromise[SchemaListClustersResponse] = js.native
   def list(
     params: ParamsResourceProjectsInstancesClustersList,
@@ -156,7 +155,7 @@ class ResourceProjectsInstancesClusters protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceProjectsInstancesClustersUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(
     params: ParamsResourceProjectsInstancesClustersUpdate,

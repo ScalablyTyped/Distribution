@@ -10,9 +10,9 @@ CSS for Components
 | ------------------ | :-------------: |
 | Full name          | @stylable/core |
 | Keywords           | - |
-| # releases         | 84 |
+| # releases         | 91 |
 | # dependents       | 24 |
-| # downloads        | 310367 |
+| # downloads        | 350254 |
 | # stars            | 0 |
 
 ## Links

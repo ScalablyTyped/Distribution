@@ -2,11 +2,12 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SyntaxTreeToAstVisitor extends ISyntaxVisitor {
+trait SyntaxTreeToAstVisitor
+  extends StObject
+     with ISyntaxVisitor {
   
   var compilationSettings: js.Any = js.native
   
@@ -39,13 +40,7 @@ trait SyntaxTreeToAstVisitor extends ISyntaxVisitor {
   /* private */ def setCommentsAndSpan(ast: js.Any, fullStart: js.Any, node: js.Any): js.Any = js.native
   
   def setSpan(span: AST, fullStart: Double, element: ISyntaxElement): Unit = js.native
-  def setSpan(
-    span: AST,
-    fullStart: Double,
-    element: ISyntaxElement,
-    firstToken: js.UndefOr[scala.Nothing],
-    lastToken: ISyntaxToken
-  ): Unit = js.native
+  def setSpan(span: AST, fullStart: Double, element: ISyntaxElement, firstToken: Unit, lastToken: ISyntaxToken): Unit = js.native
   def setSpan(span: AST, fullStart: Double, element: ISyntaxElement, firstToken: ISyntaxToken): Unit = js.native
   def setSpan(
     span: AST,

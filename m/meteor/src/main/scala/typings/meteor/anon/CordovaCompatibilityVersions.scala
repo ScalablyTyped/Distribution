@@ -2,21 +2,19 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CordovaCompatibilityVersions extends StObject {
   
-  var PUBLIC_SETTINGS: js.Any = js.native
+  var PUBLIC_SETTINGS: js.Any
   
-  var cordovaCompatibilityVersions: js.UndefOr[js.Any] = js.native
+  var cordovaCompatibilityVersions: js.UndefOr[js.Any] = js.undefined
   
-  var format: String = js.native
+  var format: String
   
-  var manifest: js.Any = js.native
+  var manifest: js.Any
   
-  var version: String = js.native
+  var version: String
 }
 object CordovaCompatibilityVersions {
   

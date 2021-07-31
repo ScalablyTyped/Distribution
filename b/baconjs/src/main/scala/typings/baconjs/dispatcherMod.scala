@@ -7,65 +7,225 @@ import typings.baconjs.typesMod.Subscribe
 import typings.baconjs.typesMod.Unsub
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dispatcherMod {
   
   @JSImport("baconjs/types/internal/dispatcher", JSImport.Default)
   @js.native
-  class default[V, O] protected () extends Dispatcher[V, O] {
+  class default[V, O] protected ()
+    extends StObject
+       with Dispatcher[V, O] {
     def this(observable: O, _subscribe: Subscribe[V]) = this()
     def this(observable: O, _subscribe: Subscribe[V], _handleEvent: EventSink[V]) = this()
-  }
-  
-  @js.native
-  trait Dispatcher[V, O] extends StObject {
     
-    var _handleEvent: js.UndefOr[EventSink[V]] = js.native
-    
-    def _subscribe(arg: EventSink[V]): Unsub = js.native
+    /* CompleteClass */
+    override def _subscribe(arg: EventSink[V]): Unsub = js.native
+    /* CompleteClass */
     @JSName("_subscribe")
     var _subscribe_Original: Subscribe[V] = js.native
     
+    /* CompleteClass */
     var ended: Boolean = js.native
     
-    def handleEvent(event: Event[V]): js.Any = js.native
+    /* CompleteClass */
+    override def handleEvent(event: Event[V]): js.Any = js.native
     
-    def hasSubscribers(): Boolean = js.native
+    /* CompleteClass */
+    override def hasSubscribers(): Boolean = js.native
     
-    def inspect(): js.Any = js.native
+    /* CompleteClass */
+    override def inspect(): js.Any = js.native
     
+    /* CompleteClass */
     var observable: O = js.native
     
+    /* CompleteClass */
     var prevError: js.Any = js.native
     
-    def push(event: Event[V]): js.Any = js.native
+    /* CompleteClass */
+    override def push(event: Event[V]): js.Any = js.native
     
-    def pushIt(event: Event[V]): js.UndefOr[Reply] = js.native
+    /* CompleteClass */
+    override def pushIt(event: Event[V]): js.UndefOr[Reply] = js.native
     
-    def pushToSubscriptions(event: Event[V]): Boolean = js.native
+    /* CompleteClass */
+    override def pushToSubscriptions(event: Event[V]): Boolean = js.native
     
+    /* CompleteClass */
     var pushing: Boolean = js.native
     
+    /* CompleteClass */
     var queue: js.Array[Event[V]] = js.native
     
-    def removeSub(subscription: Subscription[V]): js.Array[Subscription[V]] = js.native
+    /* CompleteClass */
+    override def removeSub(subscription: Subscription[V]): js.Array[Subscription[V]] = js.native
     
-    def subscribe(sink: EventSink[V]): js.Function0[Unit] = js.native
+    /* CompleteClass */
+    override def subscribe(sink: EventSink[V]): js.Function0[Unit] = js.native
     
+    /* CompleteClass */
     var subscriptions: js.Array[Subscription[V]] = js.native
     
-    var unsubSrc: js.UndefOr[Unsub] = js.native
-    
-    def unsubscribeFromSource(): Unit = js.native
+    /* CompleteClass */
+    override def unsubscribeFromSource(): Unit = js.native
   }
   
-  @js.native
+  trait Dispatcher[V, O] extends StObject {
+    
+    var _handleEvent: js.UndefOr[EventSink[V]] = js.undefined
+    
+    def _subscribe(arg: EventSink[V]): Unsub
+    @JSName("_subscribe")
+    var _subscribe_Original: Subscribe[V]
+    
+    var ended: Boolean
+    
+    def handleEvent(event: Event[V]): js.Any
+    
+    def hasSubscribers(): Boolean
+    
+    def inspect(): js.Any
+    
+    var observable: O
+    
+    var prevError: js.Any
+    
+    def push(event: Event[V]): js.Any
+    
+    def pushIt(event: Event[V]): js.UndefOr[Reply]
+    
+    def pushToSubscriptions(event: Event[V]): Boolean
+    
+    var pushing: Boolean
+    
+    var queue: js.Array[Event[V]]
+    
+    def removeSub(subscription: Subscription[V]): js.Array[Subscription[V]]
+    
+    def subscribe(sink: EventSink[V]): js.Function0[Unit]
+    
+    var subscriptions: js.Array[Subscription[V]]
+    
+    var unsubSrc: js.UndefOr[Unsub] = js.undefined
+    
+    def unsubscribeFromSource(): Unit
+  }
+  object Dispatcher {
+    
+    @scala.inline
+    def apply[V, O](
+      _subscribe: /* arg */ EventSink[V] => Unsub,
+      ended: Boolean,
+      handleEvent: Event[V] => js.Any,
+      hasSubscribers: () => Boolean,
+      inspect: () => js.Any,
+      observable: O,
+      prevError: js.Any,
+      push: Event[V] => js.Any,
+      pushIt: Event[V] => js.UndefOr[Reply],
+      pushToSubscriptions: Event[V] => Boolean,
+      pushing: Boolean,
+      queue: js.Array[Event[V]],
+      removeSub: Subscription[V] => js.Array[Subscription[V]],
+      subscribe: EventSink[V] => js.Function0[Unit],
+      subscriptions: js.Array[Subscription[V]],
+      unsubscribeFromSource: () => Unit
+    ): Dispatcher[V, O] = {
+      val __obj = js.Dynamic.literal(_subscribe = js.Any.fromFunction1(_subscribe), ended = ended.asInstanceOf[js.Any], handleEvent = js.Any.fromFunction1(handleEvent), hasSubscribers = js.Any.fromFunction0(hasSubscribers), inspect = js.Any.fromFunction0(inspect), observable = observable.asInstanceOf[js.Any], prevError = prevError.asInstanceOf[js.Any], push = js.Any.fromFunction1(push), pushIt = js.Any.fromFunction1(pushIt), pushToSubscriptions = js.Any.fromFunction1(pushToSubscriptions), pushing = pushing.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], removeSub = js.Any.fromFunction1(removeSub), subscribe = js.Any.fromFunction1(subscribe), subscriptions = subscriptions.asInstanceOf[js.Any], unsubscribeFromSource = js.Any.fromFunction0(unsubscribeFromSource))
+      __obj.asInstanceOf[Dispatcher[V, O]]
+    }
+    
+    @scala.inline
+    implicit class DispatcherMutableBuilder[Self <: Dispatcher[?, ?], V, O] (val x: Self & (Dispatcher[V, O])) extends AnyVal {
+      
+      @scala.inline
+      def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHandleEvent(value: Event[V] => js.Any): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setHasSubscribers(value: () => Boolean): Self = StObject.set(x, "hasSubscribers", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setInspect(value: () => js.Any): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setObservable(value: O): Self = StObject.set(x, "observable", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPrevError(value: js.Any): Self = StObject.set(x, "prevError", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPush(value: Event[V] => js.Any): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setPushIt(value: Event[V] => js.UndefOr[Reply]): Self = StObject.set(x, "pushIt", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setPushToSubscriptions(value: Event[V] => Boolean): Self = StObject.set(x, "pushToSubscriptions", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setPushing(value: Boolean): Self = StObject.set(x, "pushing", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setQueue(value: js.Array[Event[V]]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setQueueVarargs(value: Event[V]*): Self = StObject.set(x, "queue", js.Array(value :_*))
+      
+      @scala.inline
+      def setRemoveSub(value: Subscription[V] => js.Array[Subscription[V]]): Self = StObject.set(x, "removeSub", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setSubscribe(value: EventSink[V] => js.Function0[Unit]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setSubscriptions(value: js.Array[Subscription[V]]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSubscriptionsVarargs(value: Subscription[V]*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+      
+      @scala.inline
+      def setUnsubSrc(value: () => Unit): Self = StObject.set(x, "unsubSrc", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setUnsubSrcUndefined: Self = StObject.set(x, "unsubSrc", js.undefined)
+      
+      @scala.inline
+      def setUnsubscribeFromSource(value: () => Unit): Self = StObject.set(x, "unsubscribeFromSource", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def set_handleEvent(value: /* event */ Event[V] => Reply): Self = StObject.set(x, "_handleEvent", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def set_handleEventUndefined: Self = StObject.set(x, "_handleEvent", js.undefined)
+      
+      @scala.inline
+      def set_subscribe(value: /* arg */ EventSink[V] => Unsub): Self = StObject.set(x, "_subscribe", js.Any.fromFunction1(value))
+    }
+  }
+  
   trait Subscription[V] extends StObject {
     
-    def sink(event: Event[V]): Reply = js.native
+    def sink(event: Event[V]): Reply
     @JSName("sink")
-    var sink_Original: EventSink[V] = js.native
+    var sink_Original: EventSink[V]
+  }
+  object Subscription {
+    
+    @scala.inline
+    def apply[V](sink: /* event */ Event[V] => Reply): Subscription[V] = {
+      val __obj = js.Dynamic.literal(sink = js.Any.fromFunction1(sink))
+      __obj.asInstanceOf[Subscription[V]]
+    }
+    
+    @scala.inline
+    implicit class SubscriptionMutableBuilder[Self <: Subscription[?], V] (val x: Self & Subscription[V]) extends AnyVal {
+      
+      @scala.inline
+      def setSink(value: /* event */ Event[V] => Reply): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
+    }
   }
 }

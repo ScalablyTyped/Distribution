@@ -3,14 +3,12 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * All information about the execution of a command, suitable for providing as
   * the Bots interface&#39;s `Lease.result` field.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult extends StObject {
     * also have its own idea of what this should be, but this excludes the
     * overhead of the RPCs and the bot response time.
     */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /**
     * The exit code of the process. An exit code of &quot;0&quot; should only
     * be trusted if `status` has a code of OK (otherwise it may simply be
     * unset).
     */
-  var exitCode: js.UndefOr[Double] = js.native
+  var exitCode: js.UndefOr[Double] = js.undefined
   
   /**
     * Implementation-dependent metadata about the task. Both servers and bots
@@ -35,7 +33,7 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult extends StObject {
     * considered an error for the bot to provide the server with a field that
     * it doesn&#39;t know about.
     */
-  var metadata: js.UndefOr[js.Array[StringDictionary[_]]] = js.native
+  var metadata: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
   
   /**
     * The output files. The blob referenced by the digest should contain one of
@@ -43,20 +41,20 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult extends StObject {
     * DirectoryMetadata of the returned filesystem    * A LUCI-style .isolated
     * file
     */
-  var outputs: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2Digest] = js.native
+  var outputs: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2Digest] = js.undefined
   
   /**
     * The amount of time *not* spent executing the command (ie
     * uploading/downloading files).
     */
-  var overhead: js.UndefOr[String] = js.native
+  var overhead: js.UndefOr[String] = js.undefined
   
   /**
     * An overall status for the command. For example, if the command timed out,
     * this might have a code of DEADLINE_EXCEEDED; if it was killed by the OS
     * for memory exhaustion, it might have a code of RESOURCE_EXHAUSTED.
     */
-  var status: js.UndefOr[SchemaGoogleRpcStatus] = js.native
+  var status: js.UndefOr[SchemaGoogleRpcStatus] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult {
   
@@ -82,7 +80,7 @@ object SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult {
     def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
     
     @scala.inline
-    def setMetadata(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    def setMetadata(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

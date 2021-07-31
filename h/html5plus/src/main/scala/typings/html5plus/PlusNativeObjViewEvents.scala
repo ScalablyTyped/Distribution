@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
-@js.native
 trait PlusNativeObjViewEvents extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusNativeObjViewEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var click: js.UndefOr[String] = js.native
+  var click: js.UndefOr[String] = js.undefined
   
   /**
     * 双击事件
@@ -29,7 +27,7 @@ trait PlusNativeObjViewEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var doubleclick: js.UndefOr[String] = js.native
+  var doubleclick: js.UndefOr[String] = js.undefined
   
   /**
     * 结束触屏事件
@@ -38,7 +36,7 @@ trait PlusNativeObjViewEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var touchend: js.UndefOr[String] = js.native
+  var touchend: js.UndefOr[String] = js.undefined
   
   /**
     * 触摸滑屏事件
@@ -47,7 +45,7 @@ trait PlusNativeObjViewEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var touchmove: js.UndefOr[String] = js.native
+  var touchmove: js.UndefOr[String] = js.undefined
   
   /**
     * 开始触屏事件
@@ -56,7 +54,7 @@ trait PlusNativeObjViewEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var touchstart: js.UndefOr[String] = js.native
+  var touchstart: js.UndefOr[String] = js.undefined
 }
 object PlusNativeObjViewEvents {
   

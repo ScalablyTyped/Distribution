@@ -2,19 +2,17 @@ package typings.bootbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Group extends StObject {
     
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var value: String = js.native
+    var value: String
   }
   object Group {
     

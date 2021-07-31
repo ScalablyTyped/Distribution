@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.DateRangePickerOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.DateRangePicker")
 @js.native
 class DateRangePicker protected ()
-  extends typings.kendoUi.kendo.ui.DateRangePicker {
+  extends StObject
+     with typings.kendoUi.kendo.ui.DateRangePicker {
   def this(element: Element) = this()
   def this(element: Element, options: DateRangePickerOptions) = this()
 }
@@ -21,9 +21,8 @@ object DateRangePicker {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.DateRangePicker.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.DateRangePicker = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.DateRangePicker = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.DateRangePicker]
   
   /* static member */
   @JSGlobal("kendo.ui.DateRangePicker.fn")

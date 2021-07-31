@@ -2,36 +2,34 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsElbLoadBalancerListener extends StObject {
   
   /**
     * The port on which the instance is listening.
     */
-  var InstancePort: js.UndefOr[Integer] = js.native
+  var InstancePort: js.UndefOr[Integer] = js.undefined
   
   /**
     * The protocol to use to route traffic to instances. Valid values: HTTP | HTTPS | TCP | SSL 
     */
-  var InstanceProtocol: js.UndefOr[NonEmptyString] = js.native
+  var InstanceProtocol: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The port on which the load balancer is listening. On EC2-VPC, you can specify any port from the range 1-65535. On EC2-Classic, you can specify any port from the following list: 25, 80, 443, 465, 587, 1024-65535.
     */
-  var LoadBalancerPort: js.UndefOr[Integer] = js.native
+  var LoadBalancerPort: js.UndefOr[Integer] = js.undefined
   
   /**
     * The load balancer transport protocol to use for routing. Valid values: HTTP | HTTPS | TCP | SSL 
     */
-  var Protocol: js.UndefOr[NonEmptyString] = js.native
+  var Protocol: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ARN of the server certificate.
     */
-  var SslCertificateId: js.UndefOr[NonEmptyString] = js.native
+  var SslCertificateId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsElbLoadBalancerListener {
   

@@ -4,13 +4,15 @@ import typings.symphonyApiClientNode.anon.StreamTypes
 import typings.symphonyApiClientNode.streamsClientMod.StreamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adminClientMod {
   
-  @JSImport("symphony-api-client-node/AdminClient", "adminListEnterpriseStreamsV2")
+  @JSImport("symphony-api-client-node/AdminClient", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def adminListEnterpriseStreamsV2(
     streamTypes: js.Array[StreamType],
     scope: String,
@@ -21,42 +23,38 @@ object adminClientMod {
     endDate: Double,
     skip: Double,
     limit: Double
-  ): js.Promise[AdminStreamListResponse] = js.native
+  ): js.Promise[AdminStreamListResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("adminListEnterpriseStreamsV2")(streamTypes.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], privacy.asInstanceOf[js.Any], status.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AdminStreamListResponse]]
   
-  @JSImport("symphony-api-client-node/AdminClient", "importMessages")
-  @js.native
-  def importMessages(messageList: js.Array[ImportMessage]): js.Promise[js.Array[ImportMessageResult]] = js.native
+  @scala.inline
+  def importMessages(messageList: js.Array[ImportMessage]): js.Promise[js.Array[ImportMessageResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("importMessages")(messageList.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ImportMessageResult]]]
   
-  @JSImport("symphony-api-client-node/AdminClient", "streamMembers")
-  @js.native
-  def streamMembers(id: String, skip: Double, limit: Double): js.Promise[StreamMembers_] = js.native
+  @scala.inline
+  def streamMembers(id: String, skip: Double, limit: Double): js.Promise[StreamMembers_] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamMembers")(id.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StreamMembers_]]
   
-  @JSImport("symphony-api-client-node/AdminClient", "suppressMessage")
-  @js.native
-  def suppressMessage(id: String): js.Promise[SuppressedMessage] = js.native
+  @scala.inline
+  def suppressMessage(id: String): js.Promise[SuppressedMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressMessage")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SuppressedMessage]]
   
-  @js.native
   trait AdminStreamAttributes extends StObject {
     
-    var createdByUserId: Double = js.native
+    var createdByUserId: Double
     
-    var createdDate: Double = js.native
+    var createdDate: Double
     
-    var lastMessageDate: Double = js.native
+    var lastMessageDate: Double
     
-    var lastModifiedDate: Double = js.native
+    var lastModifiedDate: Double
     
-    var members: js.UndefOr[js.Array[Double]] = js.native
+    var members: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var membersCount: Double = js.native
+    var membersCount: Double
     
-    var originCompany: String = js.native
+    var originCompany: String
     
-    var originCompanyId: Double = js.native
+    var originCompanyId: Double
     
-    var roomDescription: js.UndefOr[String] = js.native
+    var roomDescription: js.UndefOr[String] = js.undefined
     
-    var roomName: js.UndefOr[String] = js.native
+    var roomName: js.UndefOr[String] = js.undefined
   }
   object AdminStreamAttributes {
     
@@ -121,20 +119,19 @@ object adminClientMod {
     }
   }
   
-  @js.native
   trait AdminStreamInfo extends StObject {
     
-    var attributes: AdminStreamAttributes = js.native
+    var attributes: AdminStreamAttributes
     
-    var id: String = js.native
+    var id: String
     
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
-    var isExternal: Boolean = js.native
+    var isExternal: Boolean
     
-    var isPublic: Boolean = js.native
+    var isPublic: Boolean
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object AdminStreamInfo {
     
@@ -175,18 +172,17 @@ object adminClientMod {
     }
   }
   
-  @js.native
   trait AdminStreamListResponse extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var filter: StreamTypes = js.native
+    var filter: StreamTypes
     
-    var limit: Double = js.native
+    var limit: Double
     
-    var skip: Double = js.native
+    var skip: Double
     
-    var streams: js.Array[AdminStreamInfo] = js.native
+    var streams: js.Array[AdminStreamInfo]
   }
   object AdminStreamListResponse {
     
@@ -225,22 +221,21 @@ object adminClientMod {
     }
   }
   
-  @js.native
   trait ImportMessage extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var intendedMessageFromUserId: Double = js.native
+    var intendedMessageFromUserId: Double
     
-    var intendedMessageTimestamp: Double = js.native
+    var intendedMessageTimestamp: Double
     
-    var message: String = js.native
+    var message: String
     
-    var originalMessageId: js.UndefOr[String] = js.native
+    var originalMessageId: js.UndefOr[String] = js.undefined
     
-    var originatingSystemId: String = js.native
+    var originatingSystemId: String
     
-    var streamId: String = js.native
+    var streamId: String
   }
   object ImportMessage {
     
@@ -288,16 +283,15 @@ object adminClientMod {
     }
   }
   
-  @js.native
   trait ImportMessageResult extends StObject {
     
-    var diagnostic: js.UndefOr[String] = js.native
+    var diagnostic: js.UndefOr[String] = js.undefined
     
-    var messageId: js.UndefOr[String] = js.native
+    var messageId: js.UndefOr[String] = js.undefined
     
-    var originalMessageId: js.UndefOr[String] = js.native
+    var originalMessageId: js.UndefOr[String] = js.undefined
     
-    var originatingSystemId: String = js.native
+    var originatingSystemId: String
   }
   object ImportMessageResult {
     
@@ -333,16 +327,15 @@ object adminClientMod {
     }
   }
   
-  @js.native
   trait StreamMember extends StObject {
     
-    var isCreator: Boolean = js.native
+    var isCreator: Boolean
     
-    var isOwner: js.UndefOr[Boolean] = js.native
+    var isOwner: js.UndefOr[Boolean] = js.undefined
     
-    var joinDate: Double = js.native
+    var joinDate: Double
     
-    var user: StreamUser = js.native
+    var user: StreamUser
   }
   object StreamMember {
     
@@ -372,16 +365,15 @@ object adminClientMod {
     }
   }
   
-  @js.native
   trait StreamMembers_ extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var limit: Double = js.native
+    var limit: Double
     
-    var members: js.Array[StreamMember] = js.native
+    var members: js.Array[StreamMember]
     
-    var skip: Double = js.native
+    var skip: Double
   }
   object StreamMembers_ {
     
@@ -411,24 +403,23 @@ object adminClientMod {
     }
   }
   
-  @js.native
   trait StreamUser extends StObject {
     
-    var company: js.UndefOr[String] = js.native
+    var company: js.UndefOr[String] = js.undefined
     
-    var companyId: js.UndefOr[Double] = js.native
+    var companyId: js.UndefOr[Double] = js.undefined
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var firstName: js.UndefOr[String] = js.native
+    var firstName: js.UndefOr[String] = js.undefined
     
-    var isExternal: Boolean = js.native
+    var isExternal: Boolean
     
-    var lastName: js.UndefOr[String] = js.native
+    var lastName: js.UndefOr[String] = js.undefined
     
-    var userId: Double = js.native
+    var userId: Double
   }
   object StreamUser {
     
@@ -485,14 +476,13 @@ object adminClientMod {
     }
   }
   
-  @js.native
   trait SuppressedMessage extends StObject {
     
-    var messageId: String = js.native
+    var messageId: String
     
-    var suppressed: Boolean = js.native
+    var suppressed: Boolean
     
-    var suppressionDate: Double = js.native
+    var suppressionDate: Double
   }
   object SuppressedMessage {
     

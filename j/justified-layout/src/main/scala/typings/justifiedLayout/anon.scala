@@ -2,21 +2,19 @@ package typings.justifiedLayout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Bottom {
     
@@ -43,12 +41,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -69,12 +66,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Horizontal extends StObject {
     
-    var horizontal: Double = js.native
+    var horizontal: Double
     
-    var vertical: Double = js.native
+    var vertical: Double
   }
   object Horizontal {
     

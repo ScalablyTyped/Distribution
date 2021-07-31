@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JsxAttributes extends ObjectLiteralExpressionBase[JsxAttributeLike] {
+trait JsxAttributes
+  extends StObject
+     with ObjectLiteralExpressionBase[JsxAttributeLike] {
   
   @JSName("kind")
   val kind_JsxAttributes: typings.typescript.mod.SyntaxKind.JsxAttributes = js.native

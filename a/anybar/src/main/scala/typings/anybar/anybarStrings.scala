@@ -3,68 +3,91 @@ package typings.anybar
 import typings.anybar.mod.AnybarStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anybarStrings {
   
   @js.native
-  sealed trait black extends AnybarStatus
+  sealed trait black
+    extends StObject
+       with AnybarStatus
   @scala.inline
   def black: black = "black".asInstanceOf[black]
   
   @js.native
-  sealed trait blue extends AnybarStatus
+  sealed trait blue
+    extends StObject
+       with AnybarStatus
   @scala.inline
   def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
-  sealed trait cyan extends AnybarStatus
+  sealed trait cyan
+    extends StObject
+       with AnybarStatus
   @scala.inline
   def cyan: cyan = "cyan".asInstanceOf[cyan]
   
   @js.native
-  sealed trait exclamation extends AnybarStatus
+  sealed trait exclamation
+    extends StObject
+       with AnybarStatus
   @scala.inline
   def exclamation: exclamation = "exclamation".asInstanceOf[exclamation]
   
   @js.native
-  sealed trait green extends AnybarStatus
+  sealed trait green
+    extends StObject
+       with AnybarStatus
   @scala.inline
   def green: green = "green".asInstanceOf[green]
   
   @js.native
-  sealed trait orange extends AnybarStatus
+  sealed trait orange
+    extends StObject
+       with AnybarStatus
   @scala.inline
   def orange: orange = "orange".asInstanceOf[orange]
   
   @js.native
-  sealed trait purple extends AnybarStatus
+  sealed trait purple
+    extends StObject
+       with AnybarStatus
   @scala.inline
   def purple: purple = "purple".asInstanceOf[purple]
   
   @js.native
-  sealed trait question extends AnybarStatus
+  sealed trait question
+    extends StObject
+       with AnybarStatus
   @scala.inline
   def question: question = "question".asInstanceOf[question]
   
   @js.native
-  sealed trait quit extends AnybarStatus
+  sealed trait quit
+    extends StObject
+       with AnybarStatus
   @scala.inline
   def quit: quit = "quit".asInstanceOf[quit]
   
   @js.native
-  sealed trait red extends AnybarStatus
+  sealed trait red
+    extends StObject
+       with AnybarStatus
   @scala.inline
   def red: red = "red".asInstanceOf[red]
   
   @js.native
-  sealed trait white extends AnybarStatus
+  sealed trait white
+    extends StObject
+       with AnybarStatus
   @scala.inline
   def white: white = "white".asInstanceOf[white]
   
   @js.native
-  sealed trait yellow extends AnybarStatus
+  sealed trait yellow
+    extends StObject
+       with AnybarStatus
   @scala.inline
   def yellow: yellow = "yellow".asInstanceOf[yellow]
 }

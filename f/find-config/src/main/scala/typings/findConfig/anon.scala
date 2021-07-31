@@ -2,19 +2,17 @@ package typings.findConfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cwd extends StObject {
     
-    var cwd: String = js.native
+    var cwd: String
     
-    var dir: String = js.native
+    var dir: String
     
-    var path: String = js.native
+    var path: String
   }
   object Cwd {
     

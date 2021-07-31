@@ -2,18 +2,18 @@ package typings.xstate.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InvokeDefinition[TContext, TEvent /* <: EventObject */] extends ActivityDefinition[TContext, TEvent] {
+trait InvokeDefinition[TContext, TEvent /* <: EventObject */]
+  extends StObject
+     with ActivityDefinition[TContext, TEvent] {
   
   /**
     * If `true`, events sent to the parent service will be forwarded to the invoked service.
     *
     * Default: `false`
     */
-  var autoForward: js.UndefOr[Boolean] = js.native
+  var autoForward: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Data from the parent machine's context to set as the (partial or full) context
@@ -21,19 +21,19 @@ trait InvokeDefinition[TContext, TEvent /* <: EventObject */] extends ActivityDe
     *
     * Data should be mapped to match the child machine's context shape.
     */
-  var data: js.UndefOr[(Mapper[TContext, TEvent, _]) | (PropertyMapper[TContext, TEvent, _])] = js.native
+  var data: js.UndefOr[(Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])] = js.undefined
   
   /**
     * @deprecated
     *
     *  Use `autoForward` property instead of `forward`. Support for `forward` will get removed in the future.
     */
-  var forward: js.UndefOr[Boolean] = js.native
+  var forward: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The source of the machine to be invoked, or the machine itself.
     */
-  var src: String | InvokeSourceDefinition = js.native
+  var src: String | InvokeSourceDefinition
 }
 object InvokeDefinition {
   
@@ -45,7 +45,7 @@ object InvokeDefinition {
   }
   
   @scala.inline
-  implicit class InvokeDefinitionMutableBuilder[Self <: InvokeDefinition[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (InvokeDefinition[TContext, TEvent])) extends AnyVal {
+  implicit class InvokeDefinitionMutableBuilder[Self <: InvokeDefinition[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (InvokeDefinition[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setAutoForward(value: Boolean): Self = StObject.set(x, "autoForward", value.asInstanceOf[js.Any])
@@ -54,10 +54,10 @@ object InvokeDefinition {
     def setAutoForwardUndefined: Self = StObject.set(x, "autoForward", js.undefined)
     
     @scala.inline
-    def setData(value: (Mapper[TContext, TEvent, _]) | (PropertyMapper[TContext, TEvent, _])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: (Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFunction2(value: (TContext, TEvent) => _): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
+    def setDataFunction2(value: (TContext, TEvent) => js.Any): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

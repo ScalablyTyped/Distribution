@@ -6,23 +6,23 @@ import typings.devextreme.devextremeStrings.sessionStorage
 import typings.devextreme.mod.global.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomLoad extends StObject {
   
-  var customLoad: js.UndefOr[js.Function0[typings.devextreme.mod.global.Promise[_] | JQueryPromise[_]]] = js.native
+  var customLoad: js.UndefOr[
+    js.Function0[typings.devextreme.mod.global.Promise[js.Any] | JQueryPromise[js.Any]]
+  ] = js.undefined
   
-  var customSave: js.UndefOr[js.Function1[/* state */ js.Any, _]] = js.native
+  var customSave: js.UndefOr[js.Function1[/* state */ js.Any, js.Any]] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var savingTimeout: js.UndefOr[Double] = js.native
+  var savingTimeout: js.UndefOr[Double] = js.undefined
   
-  var storageKey: js.UndefOr[String] = js.native
+  var storageKey: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[custom | localStorage | sessionStorage] = js.native
+  var `type`: js.UndefOr[custom | localStorage | sessionStorage] = js.undefined
 }
 object CustomLoad {
   
@@ -36,13 +36,13 @@ object CustomLoad {
   implicit class CustomLoadMutableBuilder[Self <: CustomLoad] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCustomLoad(value: () => typings.devextreme.mod.global.Promise[_] | JQueryPromise[_]): Self = StObject.set(x, "customLoad", js.Any.fromFunction0(value))
+    def setCustomLoad(value: () => typings.devextreme.mod.global.Promise[js.Any] | JQueryPromise[js.Any]): Self = StObject.set(x, "customLoad", js.Any.fromFunction0(value))
     
     @scala.inline
     def setCustomLoadUndefined: Self = StObject.set(x, "customLoad", js.undefined)
     
     @scala.inline
-    def setCustomSave(value: /* state */ js.Any => _): Self = StObject.set(x, "customSave", js.Any.fromFunction1(value))
+    def setCustomSave(value: /* state */ js.Any => js.Any): Self = StObject.set(x, "customSave", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCustomSaveUndefined: Self = StObject.set(x, "customSave", js.undefined)

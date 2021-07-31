@@ -11,8 +11,8 @@ Diff & Patch for Javascript objects
 | Full name          | jsondiffpatch |
 | Keywords           | json, diff, patch |
 | # releases         | 3 |
-| # dependents       | 259 |
-| # downloads        | 3653245 |
+| # dependents       | 273 |
+| # downloads        | 4814148 |
 | # stars            | 9 |
 
 ## Links

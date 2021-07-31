@@ -2,48 +2,46 @@ package typings.datatablesNetRowreorder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DataTables {
   
-  @js.native
   trait RowReorderSettings extends StObject {
     
     /**
       * Configure the data point that will be used for the reordering data
       */
-    var dataSrc: js.UndefOr[String] = js.native
+    var dataSrc: js.UndefOr[String] = js.undefined
     
     /**
       * Attach an Editor instance for database updating
       */
-    var editor: js.UndefOr[js.Any] = js.native
+    var editor: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Enable / disable RowReorder's user interaction
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the options for the Editor form when submitting data
       */
-    var formOptions: js.UndefOr[js.Any] = js.native
+    var formOptions: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Define the selector used to pick the elements that will start a drag
       */
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
     
     /**
       * Horizontal position control of the row being dragged
       */
-    var snapX: js.UndefOr[Double | Boolean] = js.native
+    var snapX: js.UndefOr[Double | Boolean] = js.undefined
     
     /**
       * Control automatic of data when a row is dropped
       */
-    var update: js.UndefOr[Boolean] = js.native
+    var update: js.UndefOr[Boolean] = js.undefined
   }
   object RowReorderSettings {
     
@@ -100,13 +98,12 @@ object DataTables {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /**
       * Enable and configure the RowReorder extension for DataTables
       */
-    var rowReorder: js.UndefOr[RowReorderSettings] = js.native
+    var rowReorder: js.UndefOr[RowReorderSettings] = js.undefined
   }
   object Settings {
     

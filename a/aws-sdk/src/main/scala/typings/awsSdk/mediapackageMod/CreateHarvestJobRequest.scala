@@ -2,35 +2,33 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateHarvestJobRequest extends StObject {
   
   /**
     * The end of the time-window which will be harvested
     */
-  var EndTime: string = js.native
+  var EndTime: string
   
   /**
     * The ID of the HarvestJob. The ID must be unique within the region
   and it cannot be changed after the HarvestJob is submitted
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * The ID of the OriginEndpoint that the HarvestJob will harvest from.
   This cannot be changed after the HarvestJob is submitted.
     */
-  var OriginEndpointId: string = js.native
+  var OriginEndpointId: string
   
-  var S3Destination: typings.awsSdk.mediapackageMod.S3Destination = js.native
+  var S3Destination: typings.awsSdk.mediapackageMod.S3Destination
   
   /**
     * The start of the time-window which will be harvested
     */
-  var StartTime: string = js.native
+  var StartTime: string
 }
 object CreateHarvestJobRequest {
   

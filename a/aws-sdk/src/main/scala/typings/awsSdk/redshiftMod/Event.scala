@@ -2,46 +2,44 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
   /**
     * The date and time of the event.
     */
-  var Date: js.UndefOr[TStamp] = js.native
+  var Date: js.UndefOr[TStamp] = js.undefined
   
   /**
     * A list of the event categories. Values: Configuration, Management, Monitoring, Security
     */
-  var EventCategories: js.UndefOr[EventCategoriesList] = js.native
+  var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
   
   /**
     * The identifier of the event.
     */
-  var EventId: js.UndefOr[String] = js.native
+  var EventId: js.UndefOr[String] = js.undefined
   
   /**
     * The text of this event.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
   
   /**
     * The severity of the event. Values: ERROR, INFO
     */
-  var Severity: js.UndefOr[String] = js.native
+  var Severity: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the source of the event.
     */
-  var SourceIdentifier: js.UndefOr[String] = js.native
+  var SourceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The source type for this event.
     */
-  var SourceType: js.UndefOr[typings.awsSdk.redshiftMod.SourceType] = js.native
+  var SourceType: js.UndefOr[typings.awsSdk.redshiftMod.SourceType] = js.undefined
 }
 object Event {
   

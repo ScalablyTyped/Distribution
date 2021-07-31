@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewAnimationProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ViewAnimationProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#target)
     */
-  var target: js.UndefOr[ViewpointProperties] = js.native
+  var target: js.UndefOr[ViewpointProperties] = js.undefined
 }
 object ViewAnimationProperties {
   

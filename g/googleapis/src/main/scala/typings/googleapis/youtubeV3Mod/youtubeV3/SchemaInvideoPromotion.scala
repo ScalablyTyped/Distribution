@@ -2,32 +2,30 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes an invideo promotion campaign consisting of multiple promoted
   * items. A campaign belongs to a single channel_id.
   */
-@js.native
 trait SchemaInvideoPromotion extends StObject {
   
   /**
     * The default temporal position within the video where the promoted item
     * will be displayed. Can be overriden by more specific timing in the item.
     */
-  var defaultTiming: js.UndefOr[SchemaInvideoTiming] = js.native
+  var defaultTiming: js.UndefOr[SchemaInvideoTiming] = js.undefined
   
   /**
     * List of promoted items in decreasing priority.
     */
-  var items: js.UndefOr[js.Array[SchemaPromotedItem]] = js.native
+  var items: js.UndefOr[js.Array[SchemaPromotedItem]] = js.undefined
   
   /**
     * The spatial position within the video where the promoted item will be
     * displayed.
     */
-  var position: js.UndefOr[SchemaInvideoPosition] = js.native
+  var position: js.UndefOr[SchemaInvideoPosition] = js.undefined
   
   /**
     * Indicates whether the channel&#39;s promotional campaign uses &quot;smart
@@ -36,7 +34,7 @@ trait SchemaInvideoPromotion extends StObject {
     * the viewing experience. This feature also picks up a single promotion to
     * show on each video.
     */
-  var useSmartTiming: js.UndefOr[Boolean] = js.native
+  var useSmartTiming: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaInvideoPromotion {
   

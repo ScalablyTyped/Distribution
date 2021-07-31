@@ -4,53 +4,39 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("jdataview", JSImport.Namespace)
   @js.native
-  class ^ protected () extends jDataView {
+  class ^ protected ()
+    extends StObject
+       with jDataView {
     def this(buffer: String) = this()
     def this(buffer: Bytes) = this()
     def this(byteCount: Double) = this()
     def this(buffer: String, offset: Double) = this()
     def this(buffer: Bytes, offset: Double) = this()
     def this(byteCount: Double, offset: Double) = this()
-    def this(buffer: String, offset: js.UndefOr[scala.Nothing], length: Double) = this()
     def this(buffer: String, offset: Double, length: Double) = this()
-    def this(buffer: Bytes, offset: js.UndefOr[scala.Nothing], length: Double) = this()
+    def this(buffer: String, offset: Unit, length: Double) = this()
     def this(buffer: Bytes, offset: Double, length: Double) = this()
-    def this(byteCount: Double, offset: js.UndefOr[scala.Nothing], length: Double) = this()
+    def this(buffer: Bytes, offset: Unit, length: Double) = this()
     def this(byteCount: Double, offset: Double, length: Double) = this()
-    def this(
-      buffer: String,
-      offset: js.UndefOr[scala.Nothing],
-      length: js.UndefOr[scala.Nothing],
-      littleEndian: Boolean
-    ) = this()
-    def this(buffer: String, offset: js.UndefOr[scala.Nothing], length: Double, littleEndian: Boolean) = this()
-    def this(buffer: String, offset: Double, length: js.UndefOr[scala.Nothing], littleEndian: Boolean) = this()
+    def this(byteCount: Double, offset: Unit, length: Double) = this()
     def this(buffer: String, offset: Double, length: Double, littleEndian: Boolean) = this()
-    def this(
-      buffer: Bytes,
-      offset: js.UndefOr[scala.Nothing],
-      length: js.UndefOr[scala.Nothing],
-      littleEndian: Boolean
-    ) = this()
-    def this(buffer: Bytes, offset: js.UndefOr[scala.Nothing], length: Double, littleEndian: Boolean) = this()
-    def this(buffer: Bytes, offset: Double, length: js.UndefOr[scala.Nothing], littleEndian: Boolean) = this()
+    def this(buffer: String, offset: Double, length: Unit, littleEndian: Boolean) = this()
+    def this(buffer: String, offset: Unit, length: Double, littleEndian: Boolean) = this()
+    def this(buffer: String, offset: Unit, length: Unit, littleEndian: Boolean) = this()
     def this(buffer: Bytes, offset: Double, length: Double, littleEndian: Boolean) = this()
-    def this(
-      byteCount: Double,
-      offset: js.UndefOr[scala.Nothing],
-      length: js.UndefOr[scala.Nothing],
-      littleEndian: Boolean
-    ) = this()
-    def this(byteCount: Double, offset: js.UndefOr[scala.Nothing], length: Double, littleEndian: Boolean) = this()
-    def this(byteCount: Double, offset: Double, length: js.UndefOr[scala.Nothing], littleEndian: Boolean) = this()
+    def this(buffer: Bytes, offset: Double, length: Unit, littleEndian: Boolean) = this()
+    def this(buffer: Bytes, offset: Unit, length: Double, littleEndian: Boolean) = this()
+    def this(buffer: Bytes, offset: Unit, length: Unit, littleEndian: Boolean) = this()
     def this(byteCount: Double, offset: Double, length: Double, littleEndian: Boolean) = this()
+    def this(byteCount: Double, offset: Double, length: Unit, littleEndian: Boolean) = this()
+    def this(byteCount: Double, offset: Unit, length: Double, littleEndian: Boolean) = this()
+    def this(byteCount: Double, offset: Unit, length: Unit, littleEndian: Boolean) = this()
   }
   
   @JSImport("jdataview", "Int64")
@@ -60,10 +46,13 @@ object mod {
   }
   object Int64 {
     
-    /* static member */
-    @JSImport("jdataview", "Int64.fromNumber")
+    @JSImport("jdataview", "Int64")
     @js.native
-    def fromNumber(number: Double): Int64 = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def fromNumber(number: Double): Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[Int64]
   }
   
   @JSImport("jdataview", "Uint64")
@@ -77,16 +66,20 @@ object mod {
   }
   object Uint64 {
     
-    /* static member */
-    @JSImport("jdataview", "Uint64.fromNumber")
+    @JSImport("jdataview", "Uint64")
     @js.native
-    def fromNumber(number: Double): Uint64 = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def fromNumber(number: Double): Uint64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[Uint64]
   }
   
-  @js.native
-  trait Buffer extends Bytes {
+  trait Buffer
+    extends StObject
+       with Bytes {
     
-    var byteLength: Double = js.native
+    var byteLength: Double
   }
   object Buffer {
     
@@ -104,10 +97,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait Bytes extends /* index */ NumberDictionary[Double] {
+  trait Bytes
+    extends StObject
+       with /* index */ NumberDictionary[Double] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object Bytes {
     
@@ -126,45 +120,42 @@ object mod {
   }
   
   @js.native
-  trait jDataView extends DataView {
+  trait jDataView
+    extends StObject
+       with DataView {
     
     def createBuffer(bytes: Double*): Buffer = js.native
     
     def getBytes(length: Double): js.Array[Double] = js.native
-    def getBytes(
-      length: Double,
-      byteOffset: js.UndefOr[scala.Nothing],
-      littleEndian: js.UndefOr[scala.Nothing],
-      toArray: Boolean
-    ): js.Array[Double] = js.native
-    def getBytes(length: Double, byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): js.Array[Double] = js.native
-    def getBytes(length: Double, byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean, toArray: Boolean): js.Array[Double] = js.native
     def getBytes(length: Double, byteOffset: Double): js.Array[Double] = js.native
-    def getBytes(length: Double, byteOffset: Double, littleEndian: js.UndefOr[scala.Nothing], toArray: Boolean): js.Array[Double] = js.native
     def getBytes(length: Double, byteOffset: Double, littleEndian: Boolean): js.Array[Double] = js.native
     def getBytes(length: Double, byteOffset: Double, littleEndian: Boolean, toArray: Boolean): js.Array[Double] = js.native
+    def getBytes(length: Double, byteOffset: Double, littleEndian: Unit, toArray: Boolean): js.Array[Double] = js.native
+    def getBytes(length: Double, byteOffset: Unit, littleEndian: Boolean): js.Array[Double] = js.native
+    def getBytes(length: Double, byteOffset: Unit, littleEndian: Boolean, toArray: Boolean): js.Array[Double] = js.native
+    def getBytes(length: Double, byteOffset: Unit, littleEndian: Unit, toArray: Boolean): js.Array[Double] = js.native
     
     // Strings and Blobs
     def getChar(): String = js.native
     def getChar(byteOffset: Double): String = js.native
     
     def getFloat32(): Double = js.native
-    def getFloat32(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Double = js.native
+    def getFloat32(byteOffset: Unit, littleEndian: Boolean): Double = js.native
     
     def getFloat64(): Double = js.native
-    def getFloat64(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Double = js.native
+    def getFloat64(byteOffset: Unit, littleEndian: Boolean): Double = js.native
     
     def getInt16(): Double = js.native
-    def getInt16(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Double = js.native
+    def getInt16(byteOffset: Unit, littleEndian: Boolean): Double = js.native
     
     def getInt32(): Double = js.native
-    def getInt32(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Double = js.native
+    def getInt32(byteOffset: Unit, littleEndian: Boolean): Double = js.native
     
     // 64 bit integers
     def getInt64(): Int64 = js.native
-    def getInt64(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Int64 = js.native
     def getInt64(byteOffset: Double): Int64 = js.native
     def getInt64(byteOffset: Double, littleEndian: Boolean): Int64 = js.native
+    def getInt64(byteOffset: Unit, littleEndian: Boolean): Int64 = js.native
     
     // Specification getters
     def getInt8(): Double = js.native
@@ -174,20 +165,20 @@ object mod {
     def getSigned(bitLength: Double, byteOffset: Double): Double = js.native
     
     def getString(byteLength: Double): String = js.native
-    def getString(byteLength: Double, byteOffset: js.UndefOr[scala.Nothing], encoding: String): String = js.native
     def getString(byteLength: Double, byteOffset: Double): String = js.native
     def getString(byteLength: Double, byteOffset: Double, encoding: String): String = js.native
+    def getString(byteLength: Double, byteOffset: Unit, encoding: String): String = js.native
     
     def getUint16(): Double = js.native
-    def getUint16(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Double = js.native
+    def getUint16(byteOffset: Unit, littleEndian: Boolean): Double = js.native
     
     def getUint32(): Double = js.native
-    def getUint32(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Double = js.native
+    def getUint32(byteOffset: Unit, littleEndian: Boolean): Double = js.native
     
     def getUint64(): Uint64 = js.native
-    def getUint64(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Uint64 = js.native
     def getUint64(byteOffset: Double): Uint64 = js.native
     def getUint64(byteOffset: Double, littleEndian: Boolean): Uint64 = js.native
+    def getUint64(byteOffset: Unit, littleEndian: Boolean): Uint64 = js.native
     
     def getUint8(): Double = js.native
     
@@ -218,9 +209,9 @@ object mod {
     def skip(byteLength: Double): Double = js.native
     
     def slice(start: Double): jDataView = js.native
-    def slice(start: Double, end: js.UndefOr[scala.Nothing], forceCopy: Boolean): jDataView = js.native
     def slice(start: Double, end: Double): jDataView = js.native
     def slice(start: Double, end: Double, forceCopy: Boolean): jDataView = js.native
+    def slice(start: Double, end: Unit, forceCopy: Boolean): jDataView = js.native
     
     def tell(): Double = js.native
     

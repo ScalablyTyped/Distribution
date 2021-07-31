@@ -2,43 +2,41 @@ package typings.vueMarkdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayReplaceAt extends StObject {
   
-  var arrayReplaceAt: js.Any = js.native
+  var arrayReplaceAt: js.Any
   
-  var assign: js.Any = js.native
+  var assign: js.Any
   
-  var escapeHtml: js.Any = js.native
+  var escapeHtml: js.Any
   
-  var escapeRE: js.Any = js.native
+  var escapeRE: js.Any
   
-  var fromCodePoint: js.Any = js.native
+  var fromCodePoint: js.Any
   
-  var has: js.Any = js.native
+  var has: js.Any
   
-  var isMdAsciiPunct: js.Any = js.native
+  var isMdAsciiPunct: js.Any
   
-  var isPunctChar: js.Any = js.native
+  var isPunctChar: js.Any
   
-  var isSpace: js.Any = js.native
+  var isSpace: js.Any
   
-  var isString: js.Any = js.native
+  var isString: js.Any
   
-  var isValidEntityCode: js.Any = js.native
+  var isValidEntityCode: js.Any
   
-  var isWhiteSpace: js.Any = js.native
+  var isWhiteSpace: js.Any
   
-  var lib: Mdurl = js.native
+  var lib: Mdurl
   
-  var normalizeReference: js.Any = js.native
+  var normalizeReference: js.Any
   
-  var unescapeAll: js.Any = js.native
+  var unescapeAll: js.Any
   
-  var unescapeMd: js.Any = js.native
+  var unescapeMd: js.Any
 }
 object ArrayReplaceAt {
   

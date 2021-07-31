@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects$Agent$Entitytypes$Entities")
@@ -30,7 +29,7 @@ class ResourceProjectsAgentEntitytypesEntities protected () extends StObject {
     */
   def batchCreate(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchCreate(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def batchCreate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def batchCreate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchCreate(params: ParamsResourceProjectsAgentEntitytypesEntitiesBatchcreate): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchCreate(
     params: ParamsResourceProjectsAgentEntitytypesEntitiesBatchcreate,
@@ -64,7 +63,7 @@ class ResourceProjectsAgentEntitytypesEntities protected () extends StObject {
     */
   def batchDelete(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchDelete(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def batchDelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def batchDelete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchDelete(params: ParamsResourceProjectsAgentEntitytypesEntitiesBatchdelete): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchDelete(
     params: ParamsResourceProjectsAgentEntitytypesEntitiesBatchdelete,
@@ -100,7 +99,7 @@ class ResourceProjectsAgentEntitytypesEntities protected () extends StObject {
     */
   def batchUpdate(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchUpdate(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def batchUpdate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def batchUpdate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchUpdate(params: ParamsResourceProjectsAgentEntitytypesEntitiesBatchupdate): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchUpdate(
     params: ParamsResourceProjectsAgentEntitytypesEntitiesBatchupdate,

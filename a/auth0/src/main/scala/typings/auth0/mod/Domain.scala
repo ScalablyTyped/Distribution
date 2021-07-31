@@ -3,29 +3,27 @@ package typings.auth0.mod
 import typings.auth0.anon.Methods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Domain extends StObject {
   
-  var custom_client_ip_header: js.UndefOr[String] = js.native
+  var custom_client_ip_header: js.UndefOr[String] = js.undefined
   
-  var custom_domain_id: String = js.native
+  var custom_domain_id: String
   
-  var domain: String = js.native
+  var domain: String
   
-  var origin_domain_name: js.UndefOr[String] = js.native
+  var origin_domain_name: js.UndefOr[String] = js.undefined
   
-  var primary: Boolean = js.native
+  var primary: Boolean
   
-  var status: CustomDomainStatus = js.native
+  var status: CustomDomainStatus
   
-  var tls_policy: js.UndefOr[String] = js.native
+  var tls_policy: js.UndefOr[String] = js.undefined
   
-  var `type`: CustomDomainType = js.native
+  var `type`: CustomDomainType
   
-  var verification: Methods = js.native
+  var verification: Methods
 }
 object Domain {
   

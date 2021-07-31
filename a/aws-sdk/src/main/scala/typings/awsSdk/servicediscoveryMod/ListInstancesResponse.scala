@@ -2,21 +2,19 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInstancesResponse extends StObject {
   
   /**
     * Summary information about the instances that are associated with the specified service.
     */
-  var Instances: js.UndefOr[InstanceSummaryList] = js.native
+  var Instances: js.UndefOr[InstanceSummaryList] = js.undefined
   
   /**
     * If more than MaxResults instances match the specified criteria, you can submit another ListInstances request to get the next group of results. Specify the value of NextToken from the previous response in the next request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.servicediscoveryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.servicediscoveryMod.NextToken] = js.undefined
 }
 object ListInstancesResponse {
   

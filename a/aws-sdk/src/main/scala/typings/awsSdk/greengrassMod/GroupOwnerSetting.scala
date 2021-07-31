@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupOwnerSetting extends StObject {
   
   /**
     * If true, AWS IoT Greengrass automatically adds the specified Linux OS group owner of the resource to the Lambda process privileges. Thus the Lambda process will have the file access permissions of the added Linux group.
     */
-  var AutoAddGroupOwner: js.UndefOr[boolean] = js.native
+  var AutoAddGroupOwner: js.UndefOr[boolean] = js.undefined
   
   /**
     * The name of the Linux OS group whose privileges will be added to the Lambda process. This field is optional.
     */
-  var GroupOwner: js.UndefOr[string] = js.native
+  var GroupOwner: js.UndefOr[string] = js.undefined
 }
 object GroupOwnerSetting {
   

@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 
   */
 object hashMod {
+  
+  @JSImport("hash", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("hash", "MD2")
   @js.native
@@ -48,86 +51,65 @@ object hashMod {
   @js.native
   val SHA512_ : /* 8 */ Double = js.native
   
-  @JSImport("hash", "digest")
-  @js.native
-  def digest(algo: Double): ClassDigest = js.native
-  @JSImport("hash", "digest")
-  @js.native
-  def digest(algo: Double, data: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def digest(algo: Double): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("digest")(algo.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  @scala.inline
+  def digest(algo: Double, data: ClassBuffer): ClassDigest = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(algo.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "hmac")
-  @js.native
-  def hmac(algo: Double, key: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def hmac(algo: Double, key: ClassBuffer): ClassDigest = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "hmac_md2")
-  @js.native
-  def hmacMd2(key: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def hmacMd2(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_md2")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "hmac_md4")
-  @js.native
-  def hmacMd4(key: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def hmacMd4(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_md4")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "hmac_md5")
-  @js.native
-  def hmacMd5(key: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def hmacMd5(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_md5")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "hmac_ripemd160")
-  @js.native
-  def hmacRipemd160(key: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def hmacRipemd160(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_ripemd160")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "hmac_sha1")
-  @js.native
-  def hmacSha1(key: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def hmacSha1(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha1")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "hmac_sha224")
-  @js.native
-  def hmacSha224(key: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def hmacSha224(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha224")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "hmac_sha256")
-  @js.native
-  def hmacSha256(key: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def hmacSha256(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha256")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "hmac_sha384")
-  @js.native
-  def hmacSha384(key: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def hmacSha384(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha384")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "hmac_sha512")
-  @js.native
-  def hmacSha512(key: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def hmacSha512(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha512")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "md2")
-  @js.native
-  def md2(data: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def md2(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("md2")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "md4")
-  @js.native
-  def md4(data: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def md4(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("md4")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "md5")
-  @js.native
-  def md5(data: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def md5(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "ripemd160")
-  @js.native
-  def ripemd160(data: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def ripemd160(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("ripemd160")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "sha1")
-  @js.native
-  def sha1(data: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def sha1(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "sha224")
-  @js.native
-  def sha224(data: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def sha224(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("sha224")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "sha256")
-  @js.native
-  def sha256(data: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def sha256(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "sha384")
-  @js.native
-  def sha384(data: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def sha384(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("hash", "sha512")
-  @js.native
-  def sha512(data: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def sha512(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
 }

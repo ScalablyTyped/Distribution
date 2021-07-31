@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,43 +15,12 @@ trait Cycle extends StObject {
   
   // the actual fn for effecting a transition
   def commonReset(currSlideElement: Element, nextSlideElement: Element, options: CycleOptions): Unit = js.native
-  def commonReset(
-    currSlideElement: Element,
-    nextSlideElement: Element,
-    options: CycleOptions,
-    w: js.UndefOr[scala.Nothing],
-    h: js.UndefOr[scala.Nothing],
-    rev: Boolean
-  ): Unit = js.native
-  def commonReset(
-    currSlideElement: Element,
-    nextSlideElement: Element,
-    options: CycleOptions,
-    w: js.UndefOr[scala.Nothing],
-    h: Boolean
-  ): Unit = js.native
-  def commonReset(
-    currSlideElement: Element,
-    nextSlideElement: Element,
-    options: CycleOptions,
-    w: js.UndefOr[scala.Nothing],
-    h: Boolean,
-    rev: Boolean
-  ): Unit = js.native
   def commonReset(currSlideElement: Element, nextSlideElement: Element, options: CycleOptions, w: Boolean): Unit = js.native
   def commonReset(
     currSlideElement: Element,
     nextSlideElement: Element,
     options: CycleOptions,
     w: Boolean,
-    h: js.UndefOr[scala.Nothing],
-    rev: Boolean
-  ): Unit = js.native
-  def commonReset(
-    currSlideElement: Element,
-    nextSlideElement: Element,
-    options: CycleOptions,
-    w: Boolean,
     h: Boolean
   ): Unit = js.native
   def commonReset(
@@ -61,6 +29,31 @@ trait Cycle extends StObject {
     options: CycleOptions,
     w: Boolean,
     h: Boolean,
+    rev: Boolean
+  ): Unit = js.native
+  def commonReset(
+    currSlideElement: Element,
+    nextSlideElement: Element,
+    options: CycleOptions,
+    w: Boolean,
+    h: Unit,
+    rev: Boolean
+  ): Unit = js.native
+  def commonReset(currSlideElement: Element, nextSlideElement: Element, options: CycleOptions, w: Unit, h: Boolean): Unit = js.native
+  def commonReset(
+    currSlideElement: Element,
+    nextSlideElement: Element,
+    options: CycleOptions,
+    w: Unit,
+    h: Boolean,
+    rev: Boolean
+  ): Unit = js.native
+  def commonReset(
+    currSlideElement: Element,
+    nextSlideElement: Element,
+    options: CycleOptions,
+    w: Unit,
+    h: Unit,
     rev: Boolean
   ): Unit = js.native
   

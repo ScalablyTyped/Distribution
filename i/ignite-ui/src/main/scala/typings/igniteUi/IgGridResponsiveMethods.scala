@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridResponsiveMethods extends StObject {
   
   /**
     * Destroys the responsive widget.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Returns the currently active responsive mode.
     */
-  def getCurrentResponsiveMode(): Unit = js.native
+  def getCurrentResponsiveMode(): Unit
 }
 object IgGridResponsiveMethods {
   

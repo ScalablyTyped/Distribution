@@ -2,18 +2,16 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestValidators extends StObject {
   
   /**
     * The current page of elements from this collection.
     */
-  var items: js.UndefOr[ListOfRequestValidator] = js.native
+  var items: js.UndefOr[ListOfRequestValidator] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
 }
 object RequestValidators {
   

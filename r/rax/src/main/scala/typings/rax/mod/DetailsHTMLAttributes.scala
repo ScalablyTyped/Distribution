@@ -2,13 +2,13 @@ package typings.rax.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DetailsHTMLAttributes[T] extends HTMLAttributes[T] {
+trait DetailsHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
 }
 object DetailsHTMLAttributes {
   
@@ -19,7 +19,7 @@ object DetailsHTMLAttributes {
   }
   
   @scala.inline
-  implicit class DetailsHTMLAttributesMutableBuilder[Self <: DetailsHTMLAttributes[_], T] (val x: Self with DetailsHTMLAttributes[T]) extends AnyVal {
+  implicit class DetailsHTMLAttributesMutableBuilder[Self <: DetailsHTMLAttributes[?], T] (val x: Self & DetailsHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])

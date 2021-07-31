@@ -3,14 +3,12 @@ package typings.semanticUiVisibility.anon
 import typings.semanticUiVisibility.semanticUiVisibilityBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-visibility.SemanticUI.VisibilitySettings._Impl, 'transition'> */
-@js.native
 trait PickImpltransition extends StObject {
   
-  var transition: `false` | String = js.native
+  var transition: `false` | String
 }
 object PickImpltransition {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1ClassificationMetadata extends StObject {
   
   /** Whether the classification task is multi-label or not. */
-  var isMultiLabel: js.UndefOr[Boolean] = js.native
+  var isMultiLabel: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1ClassificationMetadata {
   

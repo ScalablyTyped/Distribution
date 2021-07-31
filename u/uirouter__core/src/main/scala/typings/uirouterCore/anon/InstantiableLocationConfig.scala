@@ -7,11 +7,15 @@ import typings.uirouterCore.coreservicesMod.LocationConfig
 import typings.uirouterCore.routerMod.UIRouter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableLocationConfig
-  extends Instantiable0[LocationConfig]
+  extends StObject
+     with Instantiable0[LocationConfig]
      with Instantiable1[/* uiRouter */ UIRouter, LocationConfig]
-     with Instantiable2[js.UndefOr[/* uiRouter */ UIRouter], /* isHtml5 */ Boolean, LocationConfig]
+     with Instantiable2[
+      (/* uiRouter */ UIRouter) | (/* uiRouter */ Unit), 
+      /* isHtml5 */ Boolean, 
+      LocationConfig
+    ]

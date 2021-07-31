@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParagraphElement extends StObject {
   
   /** An auto text paragraph element. */
-  var autoText: js.UndefOr[AutoText] = js.native
+  var autoText: js.UndefOr[AutoText] = js.undefined
   
   /** A column break paragraph element. */
-  var columnBreak: js.UndefOr[ColumnBreak] = js.native
+  var columnBreak: js.UndefOr[ColumnBreak] = js.undefined
   
   /** The zero-base end index of this paragraph element, exclusive, in UTF-16 code units. */
-  var endIndex: js.UndefOr[Double] = js.native
+  var endIndex: js.UndefOr[Double] = js.undefined
   
   /** An equation paragraph element. */
-  var equation: js.UndefOr[Equation] = js.native
+  var equation: js.UndefOr[Equation] = js.undefined
   
   /** A footnote reference paragraph element. */
-  var footnoteReference: js.UndefOr[FootnoteReference] = js.native
+  var footnoteReference: js.UndefOr[FootnoteReference] = js.undefined
   
   /** A horizontal rule paragraph element. */
-  var horizontalRule: js.UndefOr[HorizontalRule] = js.native
+  var horizontalRule: js.UndefOr[HorizontalRule] = js.undefined
   
   /** An inline object paragraph element. */
-  var inlineObjectElement: js.UndefOr[InlineObjectElement] = js.native
+  var inlineObjectElement: js.UndefOr[InlineObjectElement] = js.undefined
   
   /** A page break paragraph element. */
-  var pageBreak: js.UndefOr[PageBreak] = js.native
+  var pageBreak: js.UndefOr[PageBreak] = js.undefined
   
   /** The zero-based start index of this paragraph element, in UTF-16 code units. */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
   /** A text run paragraph element. */
-  var textRun: js.UndefOr[TextRun] = js.native
+  var textRun: js.UndefOr[TextRun] = js.undefined
 }
 object ParagraphElement {
   

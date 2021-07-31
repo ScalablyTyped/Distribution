@@ -2,25 +2,23 @@ package typings.select2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Translation extends StObject {
   
-  var errorLoading: js.UndefOr[js.Function0[String]] = js.native
+  var errorLoading: js.UndefOr[js.Function0[String]] = js.undefined
   
-  var inputTooLong: js.UndefOr[js.Function1[/* arg */ TranslationArg, String]] = js.native
+  var inputTooLong: js.UndefOr[js.Function1[/* arg */ TranslationArg, String]] = js.undefined
   
-  var inputTooShort: js.UndefOr[js.Function1[/* arg */ TranslationArg, String]] = js.native
+  var inputTooShort: js.UndefOr[js.Function1[/* arg */ TranslationArg, String]] = js.undefined
   
-  var loadingMore: js.UndefOr[js.Function0[String]] = js.native
+  var loadingMore: js.UndefOr[js.Function0[String]] = js.undefined
   
-  var maximumSelected: js.UndefOr[js.Function1[/* arg */ TranslationArg, String]] = js.native
+  var maximumSelected: js.UndefOr[js.Function1[/* arg */ TranslationArg, String]] = js.undefined
   
-  var noResults: js.UndefOr[js.Function0[String]] = js.native
+  var noResults: js.UndefOr[js.Function0[String]] = js.undefined
   
-  var searching: js.UndefOr[js.Function0[String]] = js.native
+  var searching: js.UndefOr[js.Function0[String]] = js.undefined
 }
 object Translation {
   

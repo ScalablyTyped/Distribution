@@ -2,16 +2,14 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResponse extends StObject {
   
   /**
     * The tags for the specified resource. 
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object ListTagsForResourceResponse {
   

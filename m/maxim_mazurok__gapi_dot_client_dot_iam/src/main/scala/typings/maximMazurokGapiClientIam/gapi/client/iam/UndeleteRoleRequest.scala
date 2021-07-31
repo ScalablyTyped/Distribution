@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UndeleteRoleRequest extends StObject {
   
   /** Used to perform a consistent read-modify-write. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
 }
 object UndeleteRoleRequest {
   

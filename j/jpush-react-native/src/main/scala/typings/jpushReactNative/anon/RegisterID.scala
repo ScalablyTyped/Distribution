@@ -2,13 +2,11 @@ package typings.jpushReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterID extends StObject {
   
-  var registerID: String = js.native
+  var registerID: String
 }
 object RegisterID {
   

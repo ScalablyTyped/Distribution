@@ -2,17 +2,15 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataTableCellFilter extends StObject {
   
-  var column: Double = js.native
+  var column: Double
   
-  var maxValue: js.UndefOr[js.Any] = js.native
+  var maxValue: js.UndefOr[js.Any] = js.undefined
   
-  var minValue: js.UndefOr[js.Any] = js.native
+  var minValue: js.UndefOr[js.Any] = js.undefined
   
   var test: js.UndefOr[
     js.Function4[
@@ -22,9 +20,9 @@ trait DataTableCellFilter extends StObject {
       /* data */ js.UndefOr[DataTable | DataView], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object DataTableCellFilter {
   

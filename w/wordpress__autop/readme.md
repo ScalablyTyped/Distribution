@@ -10,9 +10,9 @@ WordPress's automatic paragraph functions `autop` and `removep`.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/autop |
 | Keywords           | wordpress, gutenberg, autop |
-| # releases         | 13 |
+| # releases         | 15 |
 | # dependents       | 8 |
-| # downloads        | 494917 |
+| # downloads        | 718775 |
 | # stars            | 0 |
 
 ## Links

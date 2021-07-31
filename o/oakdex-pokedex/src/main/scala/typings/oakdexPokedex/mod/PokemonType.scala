@@ -3,17 +3,15 @@ package typings.oakdexPokedex.mod
 import typings.oakdexPokedex.anon.Bug
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PokemonType extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var effectivness: Bug = js.native
+  var effectivness: Bug
   
-  var names: Translations = js.native
+  var names: Translations
 }
 object PokemonType {
   

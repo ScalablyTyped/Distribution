@@ -2,67 +2,65 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Dialog
-@js.native
 trait DialogSettings extends StObject {
   
-  var autoOpen: js.UndefOr[Boolean] = js.native
+  var autoOpen: js.UndefOr[Boolean] = js.undefined
   
-  var closeButtonInHeader: js.UndefOr[Boolean] = js.native
+  var closeButtonInHeader: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnEscape: js.UndefOr[Boolean] = js.native
+  var closeOnEscape: js.UndefOr[Boolean] = js.undefined
   
   //Events
-  var closed: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var closed: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var closing: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var closing: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var drag: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var drag: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var dragStart: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var dragStart: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var dragStop: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var dragStop: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var initialized: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var initialized: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
-  var opened: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var opened: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var opening: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var opening: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var resizable: js.UndefOr[Boolean] = js.native
+  var resizable: js.UndefOr[Boolean] = js.undefined
   
-  var resize: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var resize: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var resizeStart: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var resizeStart: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var resizeStop: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var resizeStop: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var scrollable: js.UndefOr[Boolean] = js.native
+  var scrollable: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var uiLibrary: js.UndefOr[String] = js.native
+  var uiLibrary: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object DialogSettings {
   
@@ -94,28 +92,28 @@ object DialogSettings {
     def setCloseOnEscapeUndefined: Self = StObject.set(x, "closeOnEscape", js.undefined)
     
     @scala.inline
-    def setClosed(value: /* e */ js.Any => _): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
+    def setClosed(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
     
     @scala.inline
     def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
     @scala.inline
-    def setClosing(value: /* e */ js.Any => _): Self = StObject.set(x, "closing", js.Any.fromFunction1(value))
+    def setClosing(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "closing", js.Any.fromFunction1(value))
     
     @scala.inline
     def setClosingUndefined: Self = StObject.set(x, "closing", js.undefined)
     
     @scala.inline
-    def setDrag(value: /* e */ js.Any => _): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
+    def setDrag(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragStart(value: /* e */ js.Any => _): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
+    def setDragStart(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
     
     @scala.inline
-    def setDragStop(value: /* e */ js.Any => _): Self = StObject.set(x, "dragStop", js.Any.fromFunction1(value))
+    def setDragStop(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "dragStop", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDragStopUndefined: Self = StObject.set(x, "dragStop", js.undefined)
@@ -136,7 +134,7 @@ object DialogSettings {
     def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setInitialized(value: /* e */ js.Any => _): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
+    def setInitialized(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
     
     @scala.inline
     def setInitializedUndefined: Self = StObject.set(x, "initialized", js.undefined)
@@ -178,13 +176,13 @@ object DialogSettings {
     def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
     @scala.inline
-    def setOpened(value: /* e */ js.Any => _): Self = StObject.set(x, "opened", js.Any.fromFunction1(value))
+    def setOpened(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "opened", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
     
     @scala.inline
-    def setOpening(value: /* e */ js.Any => _): Self = StObject.set(x, "opening", js.Any.fromFunction1(value))
+    def setOpening(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "opening", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOpeningUndefined: Self = StObject.set(x, "opening", js.undefined)
@@ -196,16 +194,16 @@ object DialogSettings {
     def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
     @scala.inline
-    def setResize(value: /* e */ js.Any => _): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
+    def setResize(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResizeStart(value: /* e */ js.Any => _): Self = StObject.set(x, "resizeStart", js.Any.fromFunction1(value))
+    def setResizeStart(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "resizeStart", js.Any.fromFunction1(value))
     
     @scala.inline
     def setResizeStartUndefined: Self = StObject.set(x, "resizeStart", js.undefined)
     
     @scala.inline
-    def setResizeStop(value: /* e */ js.Any => _): Self = StObject.set(x, "resizeStop", js.Any.fromFunction1(value))
+    def setResizeStop(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "resizeStop", js.Any.fromFunction1(value))
     
     @scala.inline
     def setResizeStopUndefined: Self = StObject.set(x, "resizeStop", js.undefined)

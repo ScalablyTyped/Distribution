@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Animation.SetPausedRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `26` extends StObject {
   
-  var paramsType: js.Array[SetPausedRequest] = js.native
+  var paramsType: js.Array[SetPausedRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `26` {
   

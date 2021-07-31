@@ -11,7 +11,6 @@ import typings.chromeApps.chrome.integer
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,23 +25,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object bluetoothLowEnergy {
   
+  @JSGlobal("chrome.bluetoothLowEnergy")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Establishes a connection between the application and the device with the given address. A device may be already connected and its GATT services available without calling connect, however, an app that wants to access GATT services of a device should call this function to make sure that a connection to the device is maintained. If the device is not connected, all GATT services of the device will be discovered after a successful call to connect.
     * @param deviceAddress The Bluetooth address of the remote device to which a GATT connection should be opened.
     * @param callback Called when the connect request has completed.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.connect")
-  @js.native
-  def connect(deviceAddress: String, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def connect(deviceAddress: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(deviceAddress.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Establishes a connection between the application and the device with the given address. A device may be already connected and its GATT services available without calling connect, however, an app that wants to access GATT services of a device should call this function to make sure that a connection to the device is maintained. If the device is not connected, all GATT services of the device will be discovered after a successful call to connect.
     * @param deviceAddress The Bluetooth address of the remote device to which a GATT connection should be opened.
     * @param properties Connection properties (optional).
     * @param callback Called when the connect request has completed.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.connect")
-  @js.native
-  def connect(deviceAddress: String, properties: IProperties, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def connect(deviceAddress: String, properties: IProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(deviceAddress.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a locally hosted GATT characteristic. This characteristic must be hosted under a valid service. If the service ID is not valid, the lastError will be set. This function is only available if the app has both the bluetooth:low_energy and the bluetooth:peripheral permissions set to true. The peripheral permission may not be available to all apps.
@@ -51,13 +52,12 @@ object bluetoothLowEnergy {
     * @param serviceId ID of the service to create this characteristic for.
     * @param callback Called with the created characteristic's unique ID.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.createCharacteristic")
-  @js.native
+  @scala.inline
   def createCharacteristic(
     characteristic: Characteristic,
     serviceId: String,
     callback: js.Function1[/* characteristicId */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createCharacteristic")(characteristic.asInstanceOf[js.Any], serviceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a locally hosted GATT descriptor. This descriptor must be hosted under a valid characteristic. If the characteristic ID is not valid, the lastError will be set. This function is only available if the app has both the bluetooth:low_energy and the bluetooth:peripheral permissions set to true. The peripheral permission may not be available to all apps.
@@ -66,13 +66,12 @@ object bluetoothLowEnergy {
     * @param characteristicId ID of the characteristic to create this descriptor for.
     * @param callback Called with the created desciptor's unique ID.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.createDescriptor")
-  @js.native
+  @scala.inline
   def createDescriptor(
     descriptor: Descriptor,
     characteristicId: String,
     callback: js.Function1[/* descriptorId */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDescriptor")(descriptor.asInstanceOf[js.Any], characteristicId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a locally hosted GATT service. This service can be registered to be available on a local GATT server. This function is only available if the app has both the bluetooth:low_energy and the bluetooth:peripheral permissions set to true. The peripheral permission may not be available to all apps.
@@ -80,75 +79,66 @@ object bluetoothLowEnergy {
     * @param service The service to create.
     * @param callback Called with the created services's unique ID.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.createService")
-  @js.native
-  def createService(service: Service, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def createService(service: Service, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createService")(service.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Closes the app's connection to the device with the given address. Note that this will not always destroy the physical link itself, since there may be other apps with open connections.
     * @param deviceAddress The Bluetooth address of the remote device.
     * @param [callback] Called when the disconnect request has completed.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.disconnect")
-  @js.native
-  def disconnect(deviceAddress: String): Unit = js.native
-  @JSGlobal("chrome.bluetoothLowEnergy.disconnect")
-  @js.native
-  def disconnect(deviceAddress: String, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def disconnect(deviceAddress: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(deviceAddress.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def disconnect(deviceAddress: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(deviceAddress.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get the GATT characteristic with the given instance ID that belongs to the given GATT service, if the characteristic exists.
     * @param characteristicId The instance ID of the requested GATT characteristic.
     * @param callback Called with the requested Characteristic object.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.getCharacteristic")
-  @js.native
-  def getCharacteristic(characteristicId: String, callback: js.Function1[/* result */ Characteristic, Unit]): Unit = js.native
+  @scala.inline
+  def getCharacteristic(characteristicId: String, callback: js.Function1[/* result */ Characteristic, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getCharacteristic")(characteristicId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get a list of all discovered GATT characteristics that belong to the given service.
     * @param serviceId The instance ID of the GATT service whose characteristics should be returned.
     * @param callback Called with the list of characteristics that belong to the given service.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.getCharacteristics")
-  @js.native
-  def getCharacteristics(serviceId: String, callback: js.Function1[/* result */ js.Array[Characteristic], Unit]): Unit = js.native
+  @scala.inline
+  def getCharacteristics(serviceId: String, callback: js.Function1[/* result */ js.Array[Characteristic], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getCharacteristics")(serviceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get the GATT characteristic descriptor with the given instance ID.
     * @param descriptorId The instance ID of the requested GATT characteristic descriptor.
     * @param callback Called with the requested Descriptor object.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.getDescriptor")
-  @js.native
-  def getDescriptor(descriptorId: String, callback: js.Function1[/* result */ Descriptor, Unit]): Unit = js.native
+  @scala.inline
+  def getDescriptor(descriptorId: String, callback: js.Function1[/* result */ Descriptor, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDescriptor")(descriptorId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get a list of GATT characteristic descriptors that belong to the given characteristic.
     * @param characteristicId The instance ID of the GATT characteristic whose descriptors should be returned.
     * @param callback Called with the list of descriptors that belong to the given characteristic.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.getDescriptors")
-  @js.native
-  def getDescriptors(characteristicId: String, callback: js.Function1[/* result */ js.Array[Descriptor], Unit]): Unit = js.native
+  @scala.inline
+  def getDescriptors(characteristicId: String, callback: js.Function1[/* result */ js.Array[Descriptor], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDescriptors")(characteristicId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get a list of GATT services that are included by the given service.
     * @param serviceId The instance ID of the GATT service whose included services should be returned.
     * @param callback Called with the list of GATT services included from the given service.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.getIncludedServices")
-  @js.native
-  def getIncludedServices(serviceId: String, callback: js.Function1[/* result */ js.Array[Service], Unit]): Unit = js.native
+  @scala.inline
+  def getIncludedServices(serviceId: String, callback: js.Function1[/* result */ js.Array[Service], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getIncludedServices")(serviceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get the GATT service with the given instance ID.
     * @param serviceId The instance ID of the requested GATT service.
     * @param callback Called with the requested Service object.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.getService")
-  @js.native
-  def getService(serviceId: String, callback: js.Function1[/* result */ Service, Unit]): Unit = js.native
+  @scala.inline
+  def getService(serviceId: String, callback: js.Function1[/* result */ Service, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(serviceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get all the GATT services that were discovered on the remote device with the given device address.
@@ -156,9 +146,8 @@ object bluetoothLowEnergy {
     * @param deviceAddress The Bluetooth address of the remote device whose GATT services should be returned.
     * @param callback Called with the list of requested Service objects.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.getServices")
-  @js.native
-  def getServices(deviceAddress: String, callback: js.Function1[/* result */ js.Array[Service], Unit]): Unit = js.native
+  @scala.inline
+  def getServices(deviceAddress: String, callback: js.Function1[/* result */ js.Array[Service], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getServices")(deviceAddress.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Notify a remote device of a new value for a characteristic.
@@ -171,9 +160,8 @@ object bluetoothLowEnergy {
     * @param notification Notification object
     * @param callback Callback called once the notification or indication has been sent successfully.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.notifyCharacteristicValueChanged")
-  @js.native
-  def notifyCharacteristicValueChanged(characteristicId: String, notification: INotification, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def notifyCharacteristicValueChanged(characteristicId: String, notification: INotification, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notifyCharacteristicValueChanged")(characteristicId.asInstanceOf[js.Any], notification.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired when a connected central device requests to read the value of
@@ -272,18 +260,16 @@ object bluetoothLowEnergy {
     * @param characteristicId The instance ID of the GATT characteristic whose value should be read from the remote device.
     * @param callback Called with the Characteristic object whose value was requested. The value field of the returned Characteristic object contains the result of the read request.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.readCharacteristicValue")
-  @js.native
-  def readCharacteristicValue(characteristicId: String, callback: js.Function1[/* result */ Characteristic, Unit]): Unit = js.native
+  @scala.inline
+  def readCharacteristicValue(characteristicId: String, callback: js.Function1[/* result */ Characteristic, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readCharacteristicValue")(characteristicId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Retrieve the value of a specified characteristic descriptor from a remote peripheral.
     * @param descriptorId The instance ID of the GATT characteristic descriptor whose value should be read from the remote device.
     * @param callback Called with the Descriptor object whose value was requested. The value field of the returned Descriptor object contains the result of the read request.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.readDescriptorValue")
-  @js.native
-  def readDescriptorValue(descriptorId: String, callback: js.Function1[/* result */ Descriptor, Unit]): Unit = js.native
+  @scala.inline
+  def readDescriptorValue(descriptorId: String, callback: js.Function1[/* result */ Descriptor, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readDescriptorValue")(descriptorId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create an advertisement and register it for advertising.
@@ -303,9 +289,8 @@ object bluetoothLowEnergy {
     * @param advertisement The advertisement to advertise.
     * @param callback Called once the registeration is done and we've started advertising. Returns the id of the created advertisement.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.registerAdvertisement")
-  @js.native
-  def registerAdvertisement(advertisement: Advertisement, callback: js.Function1[/* advertisementId */ integer, Unit]): Unit = js.native
+  @scala.inline
+  def registerAdvertisement(advertisement: Advertisement, callback: js.Function1[/* advertisementId */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAdvertisement")(advertisement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Register the given service with the local GATT server.
@@ -317,9 +302,8 @@ object bluetoothLowEnergy {
     * @param serviceId Unique ID of a created service.
     * @param callback Callback with the result of the register operation.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.registerService")
-  @js.native
-  def registerService(serviceId: String, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def registerService(serviceId: String, callback: js.Function1[/* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerService")(serviceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Remove the specified service, unregistering it if it was registered.
@@ -331,30 +315,26 @@ object bluetoothLowEnergy {
     * @param serviceId Unique ID of a current registered service.
     * @param [callback] Callback called once the service is removed.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.removeService")
-  @js.native
-  def removeService(serviceId: String): Unit = js.native
-  @JSGlobal("chrome.bluetoothLowEnergy.removeService")
-  @js.native
-  def removeService(serviceId: String, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def removeService(serviceId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeService")(serviceId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def removeService(serviceId: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeService")(serviceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Resets advertising on the current device. It will unregister and stop all existing advertisements.
     * @since Chrome 61.
     * @param callback Called once the advertisements are reset.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.resetAdvertising")
-  @js.native
-  def resetAdvertising(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def resetAdvertising(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetAdvertising")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Sends a response for a characteristic or descriptor read/write request. This function is only available if the app has both the bluetooth:low_energy and the bluetooth:peripheral permissions set to true. The peripheral permission may not be available to all apps.
     * @since Chrome 52.
     * @param response The response to the request.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.sendRequestResponse")
-  @js.native
-  def sendRequestResponse(response: IResponse): Unit = js.native
+  @scala.inline
+  def sendRequestResponse(response: IResponse): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendRequestResponse")(response.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Set's the interval betweeen two consecutive advertisements.
@@ -367,9 +347,8 @@ object bluetoothLowEnergy {
     * @param maxInterval Maximum interval between advertisments (in milliseconds). This cannot be more than 10240ms (as per the spec).
     * @param callback Called once the interval has been set.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.setAdvertisingInterval")
-  @js.native
-  def setAdvertisingInterval(minInterval: integer, maxInterval: integer, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setAdvertisingInterval(minInterval: integer, maxInterval: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAdvertisingInterval")(minInterval.asInstanceOf[js.Any], maxInterval.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Enable value notifications/indications from the specified characteristic. Once enabled, an application can listen to notifications using the onCharacteristicValueChanged event.
@@ -377,9 +356,8 @@ object bluetoothLowEnergy {
     * @param characteristicId The instance ID of the GATT characteristic that notifications should be enabled on.
     * @param callback Called when the request has completed.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.startCharacteristicNotifications")
-  @js.native
-  def startCharacteristicNotifications(characteristicId: String, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def startCharacteristicNotifications(characteristicId: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startCharacteristicNotifications")(characteristicId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Enable value notifications/indications from the specified characteristic. Once enabled, an application can listen to notifications using the onCharacteristicValueChanged event.
     * @see onCharacteristicValueChanged
@@ -387,21 +365,18 @@ object bluetoothLowEnergy {
     * @param properties Notification session properties (optional).
     * @param callback Called when the request has completed.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.startCharacteristicNotifications")
-  @js.native
-  def startCharacteristicNotifications(characteristicId: String, properties: IProperties, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def startCharacteristicNotifications(characteristicId: String, properties: IProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startCharacteristicNotifications")(characteristicId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Disable value notifications/indications from the specified characteristic. After a successful call, the application will stop receiving notifications/indications from this characteristic.
     * @param characteristicId The instance ID of the GATT characteristic on which this app's notification session should be stopped.
     * @param [callback] Called when the request has completed (optional).
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.stopCharacteristicNotifications")
-  @js.native
-  def stopCharacteristicNotifications(characteristicId: String): Unit = js.native
-  @JSGlobal("chrome.bluetoothLowEnergy.stopCharacteristicNotifications")
-  @js.native
-  def stopCharacteristicNotifications(characteristicId: String, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def stopCharacteristicNotifications(characteristicId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopCharacteristicNotifications")(characteristicId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def stopCharacteristicNotifications(characteristicId: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stopCharacteristicNotifications")(characteristicId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Unregisters an advertisement and stops its advertising.
@@ -411,9 +386,8 @@ object bluetoothLowEnergy {
     * @param advertisementId Id of the advertisement to unregister.
     * @param callback Called once the advertisement is unregistered and is no longer being advertised.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.unregisterAdvertisement")
-  @js.native
-  def unregisterAdvertisement(advertisementId: integer, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def unregisterAdvertisement(advertisementId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterAdvertisement")(advertisementId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Unregister the given service with the local GATT server.
@@ -425,9 +399,8 @@ object bluetoothLowEnergy {
     * @param serviceId Unique ID of a current registered service.
     * @param callback Callback with the result of the register operation.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.unregisterService")
-  @js.native
-  def unregisterService(serviceId: String, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def unregisterService(serviceId: String, callback: js.Function1[/* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterService")(serviceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Write the value of a specified characteristic from a remote peripheral.
@@ -435,9 +408,8 @@ object bluetoothLowEnergy {
     * @param value The value that should be sent to the remote characteristic as part of the write request.
     * @param callback Called when the write request has completed.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.writeCharacteristicValue")
-  @js.native
-  def writeCharacteristicValue(characteristicId: String, value: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def writeCharacteristicValue(characteristicId: String, value: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeCharacteristicValue")(characteristicId.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Write the value of a specified characteristic descriptor from a remote peripheral.
@@ -445,7 +417,6 @@ object bluetoothLowEnergy {
     * @param value The value that should be sent to the remote descriptor as part of the write request.
     * @param callback Called when the write request has completed.
     */
-  @JSGlobal("chrome.bluetoothLowEnergy.writeDescriptorValue")
-  @js.native
-  def writeDescriptorValue(descriptorId: String, value: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def writeDescriptorValue(descriptorId: String, value: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeDescriptorValue")(descriptorId.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

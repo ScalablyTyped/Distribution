@@ -2,23 +2,21 @@ package typings.awsSdkClientLambdaNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesFunctionCodeLocationMod {
   
-  @js.native
   trait FunctionCodeLocation extends StObject {
     
     /**
       * <p>The presigned URL you can use to download the function's .zip file that you previously uploaded. The URL is valid for up to 10 minutes.</p>
       */
-    var Location: js.UndefOr[String] = js.native
+    var Location: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The repository from which you can download the function.</p>
       */
-    var RepositoryType: js.UndefOr[String] = js.native
+    var RepositoryType: js.UndefOr[String] = js.undefined
   }
   object FunctionCodeLocation {
     

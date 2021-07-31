@@ -4,13 +4,11 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X extends StObject {
   
-  def x(): Tensor[Rank] = js.native
+  def x(): Tensor[Rank]
 }
 object X {
   

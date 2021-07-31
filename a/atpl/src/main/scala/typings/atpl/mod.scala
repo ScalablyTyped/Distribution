@@ -3,50 +3,44 @@ package typings.atpl
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("atpl", "compile")
+  @JSImport("atpl", JSImport.Namespace)
   @js.native
-  def compile(templateString: String, options: js.Any): js.Function1[/* context */ js.Any, String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("atpl", "__express")
-  @js.native
-  def express(filename: String, options: js.Any, callback: js.Function): js.Any = js.native
+  @scala.inline
+  def compile(templateString: String, options: js.Any): js.Function1[/* context */ js.Any, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(templateString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* context */ js.Any, String]]
   
-  @JSImport("atpl", "registerExtension")
-  @js.native
-  def registerExtension(items: js.Any): Unit = js.native
+  @scala.inline
+  def express(filename: String, options: js.Any, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__express")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("atpl", "registerFilters")
-  @js.native
-  def registerFilters(items: js.Any): Unit = js.native
+  @scala.inline
+  def registerExtension(items: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerExtension")(items.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("atpl", "registerFunctions")
-  @js.native
-  def registerFunctions(items: js.Any): Unit = js.native
+  @scala.inline
+  def registerFilters(items: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFilters")(items.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("atpl", "registerTags")
-  @js.native
-  def registerTags(items: js.Any): Unit = js.native
+  @scala.inline
+  def registerFunctions(items: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFunctions")(items.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("atpl", "registerTests")
-  @js.native
-  def registerTests(items: js.Any): Unit = js.native
+  @scala.inline
+  def registerTags(items: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerTags")(items.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("atpl", "renderFile")
-  @js.native
+  @scala.inline
+  def registerTests(items: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerTests")(items.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
   def renderFile(
     viewsPath: String,
     filename: String,
     parameters: js.Any,
     cache: Boolean,
     done: js.Function2[/* err */ Error, /* result */ js.UndefOr[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(viewsPath.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("atpl", "renderFileSync")
-  @js.native
-  def renderFileSync(viewsPath: String, filename: String, parameters: js.Any, cache: Boolean): String = js.native
+  @scala.inline
+  def renderFileSync(viewsPath: String, filename: String, parameters: js.Any, cache: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFileSync")(viewsPath.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[String]
 }

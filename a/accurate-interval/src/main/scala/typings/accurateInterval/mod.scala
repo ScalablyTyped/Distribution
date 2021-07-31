@@ -2,19 +2,20 @@ package typings.accurateInterval
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(func: js.Function1[/* scheduledTime */ Double, Unit], interval: Double, opts: Opts): AccurateInterval = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccurateInterval]
+  
   @JSImport("accurate-interval", JSImport.Namespace)
   @js.native
-  def apply(func: js.Function1[/* scheduledTime */ Double, Unit], interval: Double, opts: Opts): AccurateInterval = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait AccurateInterval extends StObject {
     
-    def clear(): Unit = js.native
+    def clear(): Unit
   }
   object AccurateInterval {
     
@@ -32,12 +33,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Opts extends StObject {
     
-    var aligned: Boolean = js.native
+    var aligned: Boolean
     
-    var immediate: Boolean = js.native
+    var immediate: Boolean
   }
   object Opts {
     

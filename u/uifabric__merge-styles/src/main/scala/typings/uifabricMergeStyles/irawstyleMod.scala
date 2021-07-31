@@ -6,14 +6,13 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istyleMod._IStyleBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object irawstyleMod {
   
-  @js.native
   trait IRawStyle
-    extends IRawStyleBase
+    extends StObject
+       with IRawStyleBase
        with /**
     * Allow css variables, strings, objects. While we should have more strict typing
     * here, partners are broken in many unpredictable cases where typescript can't infer
@@ -25,13 +24,13 @@ object irawstyleMod {
     /**
       * Display name for the style.
       */
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated - The selectors wrapper is no longer required. You may add selectors as siblings to other
       * style properties, like most css-in-js libraries support.
       */
-    var selectors: js.UndefOr[StringDictionary[IStyle]] = js.native
+    var selectors: js.UndefOr[StringDictionary[IStyle]] = js.undefined
   }
   object IRawStyle {
     

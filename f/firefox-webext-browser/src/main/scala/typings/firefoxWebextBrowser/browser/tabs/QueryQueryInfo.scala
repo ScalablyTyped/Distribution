@@ -2,76 +2,74 @@ package typings.firefoxWebextBrowser.browser.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryQueryInfo extends StObject {
   
   /** Whether the tabs are active in their windows. */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the tabs are drawing attention. */
-  var attention: js.UndefOr[Boolean] = js.native
+  var attention: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the tabs are audible. */
-  var audible: js.UndefOr[Boolean] = js.native
+  var audible: js.UndefOr[Boolean] = js.undefined
   
   /** True if the tab is using the camera. */
-  var camera: js.UndefOr[Boolean] = js.native
+  var camera: js.UndefOr[Boolean] = js.undefined
   
   /** The CookieStoreId used for the tab. */
-  var cookieStoreId: js.UndefOr[String] = js.native
+  var cookieStoreId: js.UndefOr[String] = js.undefined
   
   /** Whether the tabs are in the current window. */
-  var currentWindow: js.UndefOr[Boolean] = js.native
+  var currentWindow: js.UndefOr[Boolean] = js.undefined
   
   /** True while the tabs are not loaded with content. */
-  var discarded: js.UndefOr[Boolean] = js.native
+  var discarded: js.UndefOr[Boolean] = js.undefined
   
   /** True while the tabs are hidden. */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the tabs are highlighted. Works as an alias of active. */
-  var highlighted: js.UndefOr[Boolean] = js.native
+  var highlighted: js.UndefOr[Boolean] = js.undefined
   
   /** The position of the tabs within their windows. */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /** Whether the tabs are in the last focused window. */
-  var lastFocusedWindow: js.UndefOr[Boolean] = js.native
+  var lastFocusedWindow: js.UndefOr[Boolean] = js.undefined
   
   /** True if the tab is using the microphone. */
-  var microphone: js.UndefOr[Boolean] = js.native
+  var microphone: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the tabs are muted. */
-  var muted: js.UndefOr[Boolean] = js.native
+  var muted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the tab that opened this tab. If specified, the opener tab must be in the same window as this tab.
     */
-  var openerTabId: js.UndefOr[Double] = js.native
+  var openerTabId: js.UndefOr[Double] = js.undefined
   
   /** Whether the tabs are pinned. */
-  var pinned: js.UndefOr[Boolean] = js.native
+  var pinned: js.UndefOr[Boolean] = js.undefined
   
   /** True for any screen sharing, or a string to specify type of screen sharing. */
-  var screen: js.UndefOr[Boolean | QueryQueryInfoScreen] = js.native
+  var screen: js.UndefOr[Boolean | QueryQueryInfoScreen] = js.undefined
   
   /** Whether the tabs have completed loading. */
-  var status: js.UndefOr[TabStatus] = js.native
+  var status: js.UndefOr[TabStatus] = js.undefined
   
   /** Match page titles against a pattern. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** Match tabs against one or more URL patterns. Note that fragment identifiers are not matched. */
-  var url: js.UndefOr[String | js.Array[String]] = js.native
+  var url: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** The ID of the parent window, or `windows.WINDOW_ID_CURRENT` for the current window. */
-  var windowId: js.UndefOr[Double] = js.native
+  var windowId: js.UndefOr[Double] = js.undefined
   
   /** The type of window the tabs are in. */
-  var windowType: js.UndefOr[WindowType] = js.native
+  var windowType: js.UndefOr[WindowType] = js.undefined
 }
 object QueryQueryInfo {
   

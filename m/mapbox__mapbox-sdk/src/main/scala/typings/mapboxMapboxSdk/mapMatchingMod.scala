@@ -12,41 +12,43 @@ import typings.mapboxMapboxSdk.mod.SdkConfig
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapMatchingMod {
   
-  @JSImport("@mapbox/mapbox-sdk/services/map-matching", JSImport.Default)
+  @JSImport("@mapbox/mapbox-sdk/services/map-matching", JSImport.Namespace)
   @js.native
-  def default(config: SdkConfig): MapMatchingService = js.native
-  @JSImport("@mapbox/mapbox-sdk/services/map-matching", JSImport.Default)
-  @js.native
-  def default(config: typings.mapboxMapboxSdk.mod.default): MapMatchingService = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait MapMatchingPoint extends Point {
+  @scala.inline
+  def default(config: SdkConfig): MapMatchingService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[MapMatchingService]
+  @scala.inline
+  def default(config: typings.mapboxMapboxSdk.mod.default): MapMatchingService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[MapMatchingService]
+  
+  trait MapMatchingPoint
+    extends StObject
+       with Point {
     
     /**
       * Whether this coordinate is waypoint or not. The first and last coordinates will always be waypoints.
       */
-    var isWaypoint: js.UndefOr[Boolean] = js.native
+    var isWaypoint: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A number in meters indicating the assumed precision of the used tracking device.
       */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
     /**
       * Datetime corresponding to the coordinate.
       */
-    var timestamp: js.UndefOr[String | Double | Date] = js.native
+    var timestamp: js.UndefOr[String | Double | Date] = js.undefined
     
     /**
       * Custom name for the waypoint used for the arrival instruction in banners and voice instructions.
       * Will be ignored unless isWaypoint is true.
       */
-    var waypointName: js.UndefOr[Boolean] = js.native
+    var waypointName: js.UndefOr[Boolean] = js.undefined
   }
   object MapMatchingPoint {
     
@@ -85,48 +87,47 @@ object mapMatchingMod {
     }
   }
   
-  @js.native
   trait MapMatchingRequest extends StObject {
     
     /**
       * Specify additional metadata that should be returned.
       */
-    var annotations: js.UndefOr[DirectionsAnnotation] = js.native
+    var annotations: js.UndefOr[DirectionsAnnotation] = js.undefined
     
     /**
       * Format of the returned geometry. (optional, default "polyline")
       */
-    var geometries: js.UndefOr[DirectionsGeometry] = js.native
+    var geometries: js.UndefOr[DirectionsGeometry] = js.undefined
     
     /**
       * Language of returned turn-by-turn text instructions. See supported languages. (optional, default "en")
       */
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
     /**
       * Type of returned overview geometry. (optional, default "simplified"
       */
-    var overview: js.UndefOr[DirectionsOverview] = js.native
+    var overview: js.UndefOr[DirectionsOverview] = js.undefined
     
     /**
       * An ordered array of MapMatchingPoints, between 2 and 100 (inclusive).
       */
-    var points: js.Array[MapMatchingPoint] = js.native
+    var points: js.Array[MapMatchingPoint]
     
     /**
       * A directions profile ID. (optional, default driving)
       */
-    var profile: js.UndefOr[DirectionsProfile] = js.native
+    var profile: js.UndefOr[DirectionsProfile] = js.undefined
     
     /**
       * Whether to return steps and turn-by-turn instructions. (optional, default false)
       */
-    var steps: js.UndefOr[Boolean] = js.native
+    var steps: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to transparently remove clusters and re-sample traces for improved map matching results. (optional, default false)
       */
-    var tidy: js.UndefOr[Boolean] = js.native
+    var tidy: js.UndefOr[Boolean] = js.undefined
   }
   object MapMatchingRequest {
     
@@ -189,25 +190,24 @@ object mapMatchingMod {
     }
   }
   
-  @js.native
   trait MapMatchingResponse extends StObject {
     
     /**
       * A string depicting the state of the response; see below for options
       */
-    var code: String = js.native
+    var code: String
     
     /**
       * An array of Match objects.
       */
-    var matchings: js.Array[Matching] = js.native
+    var matchings: js.Array[Matching]
     
     /**
       * An array of Tracepoint objects representing the location an input point was matched with.
       * Array of Waypoint objects representing all input points of the trace in the order they were matched.
       * If a trace point is omitted by map matching because it is an outlier, the entry will be null.
       */
-    var tracepoints: js.Array[Tracepoint] = js.native
+    var tracepoints: js.Array[Tracepoint]
   }
   object MapMatchingResponse {
     
@@ -237,10 +237,9 @@ object mapMatchingMod {
     }
   }
   
-  @js.native
   trait MapMatchingService extends StObject {
     
-    def getMatch(request: MapMatchingRequest): MapiRequest = js.native
+    def getMatch(request: MapMatchingRequest): MapiRequest
   }
   object MapMatchingService {
     
@@ -258,25 +257,24 @@ object mapMatchingMod {
     }
   }
   
-  @js.native
   trait Matching extends StObject {
     
     /**
       * a number between 0 (low) and 1 (high) indicating level of confidence in the returned match
       */
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var distance: Double = js.native
+    var distance: Double
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var geometry: String = js.native
+    var geometry: String
     
-    var legs: js.Array[Leg] = js.native
+    var legs: js.Array[Leg]
     
-    var weight: Double = js.native
+    var weight: Double
     
-    var weight_name: String = js.native
+    var weight_name: String
   }
   object Matching {
     
@@ -323,15 +321,14 @@ object mapMatchingMod {
     }
   }
   
-  @js.native
   trait Point extends StObject {
     
     /**
       * Used to indicate how requested routes consider from which side of the road to approach a waypoint.
       */
-    var approach: js.UndefOr[DirectionsApproach] = js.native
+    var approach: js.UndefOr[DirectionsApproach] = js.undefined
     
-    var coordinates: LngLatLike = js.native
+    var coordinates: LngLatLike
   }
   object Point {
     
@@ -355,28 +352,27 @@ object mapMatchingMod {
     }
   }
   
-  @js.native
   trait Tracepoint extends StObject {
     
     /**
       * Number of probable alternative matchings for this trace point. A value of zero indicates that this point was matched unambiguously.
       * Split the trace at these points for incremental map matching.
       */
-    var alternatives_count: Double = js.native
+    var alternatives_count: Double
     
-    var location: js.Array[Double] = js.native
+    var location: js.Array[Double]
     
     /**
       * Index to the match object in matchings the sub-trace was matched to.
       */
-    var matchings_index: Double = js.native
+    var matchings_index: Double
     
-    var name: String = js.native
+    var name: String
     
     /**
       * Index of the waypoint inside the matched route.
       */
-    var waypoint_index: Double = js.native
+    var waypoint_index: Double
   }
   object Tracepoint {
     

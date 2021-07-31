@@ -4,7 +4,6 @@ import typings.vsoNodeApi.anon.EnumValuesCancelledFailed
 import typings.vsoNodeApi.anon.Fields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operationsInterfacesMod {
@@ -16,49 +15,61 @@ object operationsInterfacesMod {
   object OperationStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[OperationStatus with Double] = js.native
+    def apply(value: Double): js.UndefOr[OperationStatus & Double] = js.native
     
     /**
       * The operation was cancelled by the user.
       */
     @js.native
-    sealed trait Cancelled extends OperationStatus
-    /* 3 */ val Cancelled: typings.vsoNodeApi.operationsInterfacesMod.OperationStatus.Cancelled with Double = js.native
+    sealed trait Cancelled
+      extends StObject
+         with OperationStatus
+    /* 3 */ val Cancelled: typings.vsoNodeApi.operationsInterfacesMod.OperationStatus.Cancelled & Double = js.native
     
     /**
       * The operation completed with a failure.
       */
     @js.native
-    sealed trait Failed extends OperationStatus
-    /* 5 */ val Failed: typings.vsoNodeApi.operationsInterfacesMod.OperationStatus.Failed with Double = js.native
+    sealed trait Failed
+      extends StObject
+         with OperationStatus
+    /* 5 */ val Failed: typings.vsoNodeApi.operationsInterfacesMod.OperationStatus.Failed & Double = js.native
     
     /**
       * The operation is in progress.
       */
     @js.native
-    sealed trait InProgress extends OperationStatus
-    /* 2 */ val InProgress: typings.vsoNodeApi.operationsInterfacesMod.OperationStatus.InProgress with Double = js.native
+    sealed trait InProgress
+      extends StObject
+         with OperationStatus
+    /* 2 */ val InProgress: typings.vsoNodeApi.operationsInterfacesMod.OperationStatus.InProgress & Double = js.native
     
     /**
       * The operation object does not have the status set.
       */
     @js.native
-    sealed trait NotSet extends OperationStatus
-    /* 0 */ val NotSet: typings.vsoNodeApi.operationsInterfacesMod.OperationStatus.NotSet with Double = js.native
+    sealed trait NotSet
+      extends StObject
+         with OperationStatus
+    /* 0 */ val NotSet: typings.vsoNodeApi.operationsInterfacesMod.OperationStatus.NotSet & Double = js.native
     
     /**
       * The operation has been queued.
       */
     @js.native
-    sealed trait Queued extends OperationStatus
-    /* 1 */ val Queued: typings.vsoNodeApi.operationsInterfacesMod.OperationStatus.Queued with Double = js.native
+    sealed trait Queued
+      extends StObject
+         with OperationStatus
+    /* 1 */ val Queued: typings.vsoNodeApi.operationsInterfacesMod.OperationStatus.Queued & Double = js.native
     
     /**
       * The operation completed successfully.
       */
     @js.native
-    sealed trait Succeeded extends OperationStatus
-    /* 4 */ val Succeeded: typings.vsoNodeApi.operationsInterfacesMod.OperationStatus.Succeeded with Double = js.native
+    sealed trait Succeeded
+      extends StObject
+         with OperationStatus
+    /* 4 */ val Succeeded: typings.vsoNodeApi.operationsInterfacesMod.OperationStatus.Succeeded & Double = js.native
   }
   
   object TypeInfo {
@@ -80,23 +91,22 @@ object operationsInterfacesMod {
     def OperationStatus_=(x: EnumValuesCancelledFailed): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OperationStatus")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait OperationReference extends StObject {
     
     /**
       * The identifier for this operation.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The current status of the operation.
       */
-    var status: OperationStatus = js.native
+    var status: OperationStatus
     
     /**
       * Url to get the full object.
       */
-    var url: String = js.native
+    var url: String
   }
   object OperationReference {
     

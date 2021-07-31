@@ -19,7 +19,6 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cascaderMod {
@@ -30,6 +29,10 @@ object cascaderMod {
     def this(props: CascaderProps) = this()
   }
   object default {
+    
+    @JSImport("antd/lib/cascader", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /* static member */
     object defaultProps {
@@ -70,9 +73,8 @@ object cascaderMod {
     }
     
     /* static member */
-    @JSImport("antd/lib/cascader", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: CascaderProps, hasPrevProps: CascaderState): PartialCascaderState = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: CascaderProps, hasPrevProps: CascaderState): PartialCascaderState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], hasPrevProps.asInstanceOf[js.Any])).asInstanceOf[PartialCascaderState]
   }
   
   @js.native
@@ -92,8 +94,8 @@ object cascaderMod {
     
     def focus(): Unit = js.native
     
-    def generateFilteredOptions(prefixCls: js.UndefOr[scala.Nothing], renderEmpty: RenderEmptyHandler): js.Array[CascaderOptionType] = js.native
     def generateFilteredOptions(prefixCls: String, renderEmpty: RenderEmptyHandler): js.Array[CascaderOptionType] = js.native
+    def generateFilteredOptions(prefixCls: Unit, renderEmpty: RenderEmptyHandler): js.Array[CascaderOptionType] = js.native
     
     def getLabel(): js.Any = js.native
     
@@ -114,7 +116,10 @@ object cascaderMod {
     
     var input: js.Any = js.native
     
-    def renderCascader(hasGetPopupContainerGetPrefixClsRenderEmptyDirection: ConfigConsumerProps, locale: CascaderLocale): Element = js.native
+    def renderCascader(
+      hasGetContextPopupContainerGetPrefixClsRenderEmptyDirection: ConfigConsumerProps,
+      locale: CascaderLocale
+    ): Element = js.native
     
     def saveInput(node: typings.antd.inputMod.default): Unit = js.native
     
@@ -136,10 +141,9 @@ object cascaderMod {
     def hover: typings.antd.antdStrings.hover = "hover".asInstanceOf[typings.antd.antdStrings.hover]
   }
   
-  @js.native
   trait CascaderLocale extends StObject {
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
   }
   object CascaderLocale {
     
@@ -160,21 +164,21 @@ object cascaderMod {
     }
   }
   
-  @js.native
   trait CascaderOptionType
-    extends /* customProp */ StringDictionary[js.Any] {
+    extends StObject
+       with /* customProp */ StringDictionary[js.Any] {
     
-    var children: js.UndefOr[js.Array[CascaderOptionType]] = js.native
+    var children: js.UndefOr[js.Array[CascaderOptionType]] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var isLeaf: js.UndefOr[Boolean] = js.native
+    var isLeaf: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
   }
   object CascaderOptionType {
     
@@ -228,29 +232,28 @@ object cascaderMod {
     }
   }
   
-  @js.native
   trait CascaderProps extends StObject {
     
     /** 是否支持清除 */
-    var allowClear: js.UndefOr[Boolean] = js.native
+    var allowClear: js.UndefOr[Boolean] = js.undefined
     
     /** 自动获取焦点 */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     /** whether has border style */
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
     /** 当此项为 true 时，点选每级菜单选项值都会发生变化 */
-    var changeOnSelect: js.UndefOr[Boolean] = js.native
+    var changeOnSelect: js.UndefOr[Boolean] = js.undefined
     
     /** 自定义类名 */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** 默认的选中项 */
-    var defaultValue: js.UndefOr[CascaderValueType] = js.native
+    var defaultValue: js.UndefOr[CascaderValueType] = js.undefined
     
     /** 禁用 */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** 选择后展示的渲染函数 */
     var displayRender: js.UndefOr[
@@ -259,33 +262,33 @@ object cascaderMod {
           /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]], 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var dropdownRender: js.UndefOr[js.Function1[/* menus */ ReactNode, ReactNode]] = js.native
+    var dropdownRender: js.UndefOr[js.Function1[/* menus */ ReactNode, ReactNode]] = js.undefined
     
-    var expandIcon: js.UndefOr[ReactNode] = js.native
+    var expandIcon: js.UndefOr[ReactNode] = js.undefined
     
     /** 次级菜单的展开方式，可选 'click' 和 'hover' */
-    var expandTrigger: js.UndefOr[CascaderExpandTrigger] = js.native
+    var expandTrigger: js.UndefOr[CascaderExpandTrigger] = js.undefined
     
     /** use this after antd@3.7.0 */
-    var fieldNames: js.UndefOr[FieldNamesType] = js.native
+    var fieldNames: js.UndefOr[FieldNamesType] = js.undefined
     
-    var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.native
+    var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
     
     /** 输入框id */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inputPrefixCls: js.UndefOr[String] = js.native
+    var inputPrefixCls: js.UndefOr[String] = js.undefined
     
     var loadData: js.UndefOr[
         js.Function1[/* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** 输入框name */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var notFoundContent: js.UndefOr[ReactNode] = js.native
+    var notFoundContent: js.UndefOr[ReactNode] = js.undefined
     
     /** 选择完成后的回调 */
     var onChange: js.UndefOr[
@@ -294,39 +297,39 @@ object cascaderMod {
           /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** 浮层可见变化时回调 */
-    var onPopupVisibleChange: js.UndefOr[js.Function1[/* popupVisible */ Boolean, Unit]] = js.native
+    var onPopupVisibleChange: js.UndefOr[js.Function1[/* popupVisible */ Boolean, Unit]] = js.undefined
     
     /** 可选项数据源 */
-    var options: js.Array[CascaderOptionType] = js.native
+    var options: js.Array[CascaderOptionType]
     
     /** 输入框占位文本 */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /** 自定义浮层类名 */
-    var popupClassName: js.UndefOr[String] = js.native
+    var popupClassName: js.UndefOr[String] = js.undefined
     
     /** 浮层预设位置：`bottomLeft` `bottomRight` `topLeft` `topRight` */
-    var popupPlacement: js.UndefOr[String] = js.native
+    var popupPlacement: js.UndefOr[String] = js.undefined
     
-    var popupVisible: js.UndefOr[Boolean] = js.native
+    var popupVisible: js.UndefOr[Boolean] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var showSearch: js.UndefOr[Boolean | ShowSearchType] = js.native
+    var showSearch: js.UndefOr[Boolean | ShowSearchType] = js.undefined
     
     /** 输入框大小，可选 `large` `default` `small` */
-    var size: js.UndefOr[SizeType] = js.native
+    var size: js.UndefOr[SizeType] = js.undefined
     
     /** 自定义样式 */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var suffixIcon: js.UndefOr[ReactNode] = js.native
+    var suffixIcon: js.UndefOr[ReactNode] = js.undefined
     
     /** 指定选中项 */
-    var value: js.UndefOr[CascaderValueType] = js.native
+    var value: js.UndefOr[CascaderValueType] = js.undefined
   }
   object CascaderProps {
     
@@ -537,20 +540,19 @@ object cascaderMod {
     }
   }
   
-  @js.native
   trait CascaderState extends StObject {
     
-    var flattenOptions: js.UndefOr[js.Array[js.Array[CascaderOptionType]]] = js.native
+    var flattenOptions: js.UndefOr[js.Array[js.Array[CascaderOptionType]]] = js.undefined
     
-    var inputFocused: Boolean = js.native
+    var inputFocused: Boolean
     
-    var inputValue: String = js.native
+    var inputValue: String
     
-    var popupVisible: js.UndefOr[Boolean] = js.native
+    var popupVisible: js.UndefOr[Boolean] = js.undefined
     
-    var prevProps: CascaderProps = js.native
+    var prevProps: CascaderProps
     
-    var value: CascaderValueType = js.native
+    var value: CascaderValueType
   }
   object CascaderState {
     
@@ -597,14 +599,13 @@ object cascaderMod {
   
   type CascaderValueType = js.Array[String | Double]
   
-  @js.native
   trait FieldNamesType extends StObject {
     
-    var children: js.UndefOr[String] = js.native
+    var children: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
   }
   object FieldNamesType {
     
@@ -637,14 +638,13 @@ object cascaderMod {
     }
   }
   
-  @js.native
   trait FilledFieldNamesType extends StObject {
     
-    var children: String = js.native
+    var children: String
     
-    var label: String = js.native
+    var label: String
     
-    var value: String | Double = js.native
+    var value: String | Double
   }
   object FilledFieldNamesType {
     
@@ -668,7 +668,6 @@ object cascaderMod {
     }
   }
   
-  @js.native
   trait ShowSearchType extends StObject {
     
     var filter: js.UndefOr[
@@ -678,11 +677,11 @@ object cascaderMod {
           /* names */ FilledFieldNamesType, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var limit: js.UndefOr[Double | `false`] = js.native
+    var limit: js.UndefOr[Double | `false`] = js.undefined
     
-    var matchInputWidth: js.UndefOr[Boolean] = js.native
+    var matchInputWidth: js.UndefOr[Boolean] = js.undefined
     
     var render: js.UndefOr[
         js.Function4[
@@ -692,7 +691,7 @@ object cascaderMod {
           /* names */ FilledFieldNamesType, 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
     var sort: js.UndefOr[
         js.Function4[
@@ -702,7 +701,7 @@ object cascaderMod {
           /* names */ FilledFieldNamesType, 
           Double
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ShowSearchType {
     

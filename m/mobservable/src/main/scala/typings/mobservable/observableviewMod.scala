@@ -6,10 +6,13 @@ import typings.mobservable.interfacesMod.Lambda
 import typings.mobservable.simpleeventemitterMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observableviewMod {
+  
+  @JSImport("mobservable/lib/observableview", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mobservable/lib/observableview", "ObservableView")
   @js.native
@@ -36,7 +39,6 @@ object observableviewMod {
     def set(x: js.Any): Unit = js.native
   }
   
-  @JSImport("mobservable/lib/observableview", "throwingViewSetter")
-  @js.native
-  def throwingViewSetter(name: js.Any): Lambda = js.native
+  @scala.inline
+  def throwingViewSetter(name: js.Any): Lambda = ^.asInstanceOf[js.Dynamic].applyDynamic("throwingViewSetter")(name.asInstanceOf[js.Any]).asInstanceOf[Lambda]
 }

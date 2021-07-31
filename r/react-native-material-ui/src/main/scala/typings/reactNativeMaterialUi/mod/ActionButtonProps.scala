@@ -6,25 +6,23 @@ import typings.reactNativeMaterialUi.reactNativeMaterialUiStrings.speedDial
 import typings.reactNativeMaterialUi.reactNativeMaterialUiStrings.toolbar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionButtonProps extends StObject {
   
-  var actions: js.UndefOr[js.Array[Element | typings.reactNativeMaterialUi.anon.Icon | String]] = js.native
+  var actions: js.UndefOr[js.Array[Element | typings.reactNativeMaterialUi.anon.Icon | String]] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var style: js.UndefOr[Container] = js.native
+  var style: js.UndefOr[Container] = js.undefined
   
-  var transition: js.UndefOr[toolbar | speedDial] = js.native
+  var transition: js.UndefOr[toolbar | speedDial] = js.undefined
 }
 object ActionButtonProps {
   

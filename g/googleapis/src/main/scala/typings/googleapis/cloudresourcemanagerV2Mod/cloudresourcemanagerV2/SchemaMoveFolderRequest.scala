@@ -2,13 +2,11 @@ package typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The MoveFolder request message.
   */
-@js.native
 trait SchemaMoveFolderRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaMoveFolderRequest extends StObject {
     * under. Must be of the form `folders/{folder_id}` or
     * `organizations/{org_id}`.
     */
-  var destinationParent: js.UndefOr[String] = js.native
+  var destinationParent: js.UndefOr[String] = js.undefined
 }
 object SchemaMoveFolderRequest {
   

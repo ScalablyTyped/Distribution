@@ -11,7 +11,6 @@ import typings.web3Shh.web3ShhStrings.error
 import typings.web3Shh.web3ShhStrings.messages
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -41,7 +40,7 @@ object mod {
     def deleteSymKey(id: String): js.Promise[Boolean] = js.native
     def deleteSymKey(id: String, callback: js.Function2[/* error */ Error, /* result */ Boolean, Unit]): js.Promise[Boolean] = js.native
     
-    def extend(extension: Extension): js.Any = js.native
+    def extend(`extension`: Extension): js.Any = js.native
     
     def generateSymKeyFromPassword(password: String): js.Promise[String] = js.native
     def generateSymKeyFromPassword(password: String, callback: js.Function2[/* error */ Error, /* key */ String, Unit]): js.Promise[String] = js.native
@@ -81,10 +80,7 @@ object mod {
     def newKeyPair(callback: js.Function2[/* error */ Error, /* key */ String, Unit]): js.Promise[String] = js.native
     
     def newMessageFilter(): js.Promise[String] = js.native
-    def newMessageFilter(
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error, /* result */ String, Unit]
-    ): js.Promise[String] = js.native
+    def newMessageFilter(options: Unit, callback: js.Function2[/* error */ Error, /* result */ String, Unit]): js.Promise[String] = js.native
     def newMessageFilter(options: SubscriptionOptions): js.Promise[String] = js.native
     def newMessageFilter(options: SubscriptionOptions, callback: js.Function2[/* error */ Error, /* result */ String, Unit]): js.Promise[String] = js.native
     
@@ -125,16 +121,15 @@ object mod {
     val providers: Providers = js.native
   }
   
-  @js.native
   trait Info extends StObject {
     
-    var maxMessageSize: Double = js.native
+    var maxMessageSize: Double
     
-    var memory: Double = js.native
+    var memory: Double
     
-    var messages: Double = js.native
+    var messages: Double
     
-    var minPow: Double = js.native
+    var minPow: Double
   }
   object Info {
     
@@ -161,26 +156,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Notification extends StObject {
     
-    var hash: String = js.native
+    var hash: String
     
-    var padding: Double = js.native
+    var padding: Double
     
-    var payload: String = js.native
+    var payload: String
     
-    var pow: Double = js.native
+    var pow: Double
     
-    var recipientPublicKey: js.UndefOr[String] = js.native
+    var recipientPublicKey: js.UndefOr[String] = js.undefined
     
-    var sig: js.UndefOr[String] = js.native
+    var sig: js.UndefOr[String] = js.undefined
     
-    var timestamp: String = js.native
+    var timestamp: String
     
-    var topic: String = js.native
+    var topic: String
     
-    var ttl: Double = js.native
+    var ttl: Double
   }
   object Notification {
     
@@ -236,24 +230,23 @@ object mod {
     }
   }
   
-  @js.native
   trait PostBase extends StObject {
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var payload: String = js.native
+    var payload: String
     
-    var powTarget: js.UndefOr[Double] = js.native
+    var powTarget: js.UndefOr[Double] = js.undefined
     
-    var powTime: js.UndefOr[Double] = js.native
+    var powTime: js.UndefOr[Double] = js.undefined
     
-    var sig: js.UndefOr[String] = js.native
+    var sig: js.UndefOr[String] = js.undefined
     
-    var targetPeer: js.UndefOr[Double] = js.native
+    var targetPeer: js.UndefOr[Double] = js.undefined
     
-    var topic: String = js.native
+    var topic: String
     
-    var ttl: Double = js.native
+    var ttl: Double
   }
   object PostBase {
     
@@ -307,10 +300,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait PostWithPubKey extends PostBase {
+  trait PostWithPubKey
+    extends StObject
+       with PostBase {
     
-    var pubKey: String = js.native
+    var pubKey: String
   }
   object PostWithPubKey {
     
@@ -328,10 +322,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait PostWithSymKey extends PostBase {
+  trait PostWithSymKey
+    extends StObject
+       with PostBase {
     
-    var symKeyID: String = js.native
+    var symKeyID: String
   }
   object PostWithSymKey {
     
@@ -358,22 +353,21 @@ object mod {
     def on_error(`type`: error, handler: js.Function1[/* data */ Error, Unit]): Unit = js.native
   }
   
-  @js.native
   trait SubscriptionOptions extends StObject {
     
-    var allowP2P: js.UndefOr[Boolean] = js.native
+    var allowP2P: js.UndefOr[Boolean] = js.undefined
     
-    var minPow: js.UndefOr[Double] = js.native
+    var minPow: js.UndefOr[Double] = js.undefined
     
-    var privateKeyID: js.UndefOr[String] = js.native
+    var privateKeyID: js.UndefOr[String] = js.undefined
     
-    var sig: js.UndefOr[String] = js.native
+    var sig: js.UndefOr[String] = js.undefined
     
-    var symKeyID: js.UndefOr[String] = js.native
+    var symKeyID: js.UndefOr[String] = js.undefined
     
-    var topics: js.UndefOr[js.Array[String]] = js.native
+    var topics: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object SubscriptionOptions {
     

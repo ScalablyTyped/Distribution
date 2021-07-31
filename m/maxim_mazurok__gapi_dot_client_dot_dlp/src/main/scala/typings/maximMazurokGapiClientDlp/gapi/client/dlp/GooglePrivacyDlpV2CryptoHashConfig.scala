@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2CryptoHashConfig extends StObject {
   
   /** The key used by the hash function. */
-  var cryptoKey: js.UndefOr[GooglePrivacyDlpV2CryptoKey] = js.native
+  var cryptoKey: js.UndefOr[GooglePrivacyDlpV2CryptoKey] = js.undefined
 }
 object GooglePrivacyDlpV2CryptoHashConfig {
   

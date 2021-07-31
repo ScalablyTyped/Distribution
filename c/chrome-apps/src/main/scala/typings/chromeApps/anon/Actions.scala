@@ -3,18 +3,16 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.webViewRequest.DeclarativeWebRequestEventList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Actions extends StObject {
   
-  var actions: js.UndefOr[js.Array[TypeDeclarativeWebRequestActionsList]] = js.native
+  var actions: js.UndefOr[js.Array[TypeDeclarativeWebRequestActionsList]] = js.undefined
   
-  var conditions: js.UndefOr[js.Array[Dictkey]] = js.native
+  var conditions: js.UndefOr[js.Array[Dictkey]] = js.undefined
   
   /** Event name */
-  var event: js.UndefOr[DeclarativeWebRequestEventList] = js.native
+  var event: js.UndefOr[DeclarativeWebRequestEventList] = js.undefined
 }
 object Actions {
   

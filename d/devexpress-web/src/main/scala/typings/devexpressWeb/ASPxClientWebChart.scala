@@ -2,99 +2,99 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the WebChartControl control.
   */
-@js.native
-trait ASPxClientWebChart extends ASPxClientWebChartElement {
+trait ASPxClientWebChart
+  extends StObject
+     with ASPxClientWebChartElement {
   
   /**
     * Provides access to the chart's collection of annotations.
     */
-  var annotations: js.Array[ASPxClientAnnotation] = js.native
+  var annotations: js.Array[ASPxClientAnnotation]
   
   /**
     * Gets the name of the appearance, which is currently used to draw the chart's elements.
     */
-  var appearanceName: String = js.native
+  var appearanceName: String
   
   /**
     * Gets the client-side Chart Control that owns the current chart.
     */
-  var chartControl: ASPxClientWebChartControl = js.native
+  var chartControl: ASPxClientWebChartControl
   
   /**
     * Gets the settings for a crosshair cursor concerning its position and appearance on a diagram.
     */
-  var crosshairOptions: ASPxClientCrosshairOptions = js.native
+  var crosshairOptions: ASPxClientCrosshairOptions
   
   /**
     * Gets a css postfix for a chart.
     */
-  var cssPostfix: String = js.native
+  var cssPostfix: String
   
   /**
     * Gets the chart's diagram and provides access to its settings.
     */
-  var diagram: ASPxClientWebChartElement = js.native
+  var diagram: ASPxClientWebChartElement
   
   /**
     * Gets the chart's legend and provides access to its settings.
     */
-  var legend: ASPxClientLegend = js.native
+  var legend: ASPxClientLegend
   
   /**
     * Returns the collection of legends.
     */
-  var legends: js.Array[ASPxClientLegend] = js.native
+  var legends: js.Array[ASPxClientLegend]
   
   /**
     * Gets the name of the palette currently used to draw the chart's series.
     */
-  var paletteName: String = js.native
+  var paletteName: String
   
   /**
     * Gets or sets a value which specifies how the chart elements are selected.
     */
-  var selectionMode: String = js.native
+  var selectionMode: String
   
   /**
     * Provides access to the chart's collection of series.
     */
-  var series: js.Array[ASPxClientSeries] = js.native
+  var series: js.Array[ASPxClientSeries]
   
   /**
     * Gets a value indicating whether a crosshair cursor should be shown.
     */
-  var showCrosshair: Boolean = js.native
+  var showCrosshair: Boolean
   
   /**
     * Gets a value indicating whether point tooltips should be shown.
     */
-  var showPointToolTip: Boolean = js.native
+  var showPointToolTip: Boolean
   
   /**
     * Gets a value indicating whether series tooltips should be shown.
     */
-  var showSeriesToolTip: Boolean = js.native
+  var showSeriesToolTip: Boolean
   
   /**
     * Provides access to the collection of chart titles.
     */
-  var titles: js.Array[ASPxClientChartTitle] = js.native
+  var titles: js.Array[ASPxClientChartTitle]
   
   /**
     * Returns the tooltip controller that shows tooltips for chart elements.
     */
-  var toolTipController: ASPxClientToolTipController = js.native
+  var toolTipController: ASPxClientToolTipController
   
   /**
     * Gets a value that contains information on how the tooltip position is defined, for example, relative to a mouse pointer or chart element.
     */
-  var toolTipPosition: ASPxClientToolTipPosition = js.native
+  var toolTipPosition: ASPxClientToolTipPosition
 }
 object ASPxClientWebChart {
   

@@ -3,24 +3,24 @@ package typings.chromeApps.chrome.runtime
 import typings.chromeApps.chromeAppsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AutomationNonInteractive extends _AutomationOptions {
+trait AutomationNonInteractive
+  extends StObject
+     with _AutomationOptions {
   
-  var desktop: js.UndefOr[`false`] = js.native
+  var desktop: js.UndefOr[`false`] = js.undefined
   
-  var interact: `false` = js.native
+  var interact: `false`
   
   /** Patterns for matching, use chrome url pattern */
-  var matches: js.UndefOr[js.Array[String | UrlMatches]] = js.native
+  var matches: js.UndefOr[js.Array[String | UrlMatches]] = js.undefined
 }
 object AutomationNonInteractive {
   
   @scala.inline
-  def apply(interact: `false`): AutomationNonInteractive = {
-    val __obj = js.Dynamic.literal(interact = interact.asInstanceOf[js.Any])
+  def apply(): AutomationNonInteractive = {
+    val __obj = js.Dynamic.literal(interact = false)
     __obj.asInstanceOf[AutomationNonInteractive]
   }
   

@@ -4,22 +4,22 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An instance of the HttpError class. */
-@js.native
-trait HttpError extends Error {
+trait HttpError
+  extends StObject
+     with Error {
   
-  var code: String = js.native
+  var code: String
   
   /** The HTTP response status code for the HTTP error. */
-  var statusCode: Double = js.native
+  var statusCode: Double
   
   /** A human-readable title for the HTTP error. */
-  var title: String = js.native
+  var title: String
   
-  def toObject(skip: (String | RegExp)*): js.Any = js.native
+  def toObject(skip: (String | RegExp)*): js.Any
 }
 object HttpError {
   

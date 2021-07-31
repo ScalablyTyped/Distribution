@@ -7,17 +7,20 @@ import typings.standardVersion.mod.Options.Skip
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
   @JSImport("standard-version", JSImport.Namespace)
   @js.native
-  def apply(options: Options): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait Options extends Config {
+  trait Options
+    extends StObject
+       with Config {
     
     /**
       * @default
@@ -27,7 +30,7 @@ object mod {
       *   'composer.lock'
       * ]
       */
-    var bumpFiles: js.UndefOr[js.Array[String]] = js.native
+    var bumpFiles: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Use a custom header when generating and updating changelog.
@@ -35,7 +38,7 @@ object mod {
       * @deprecated
       * This option will be removed in the next major version, please use `header`.
       */
-    var changelogHeader: js.UndefOr[String] = js.native
+    var changelogHeader: js.UndefOr[String] = js.undefined
     
     /**
       * Commit all staged changes, not just files affected by standard-version.
@@ -43,7 +46,7 @@ object mod {
       * @default
       * false
       */
-    var commitAll: js.UndefOr[Boolean] = js.native
+    var commitAll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * See the commands that running standard-version would run.
@@ -51,7 +54,7 @@ object mod {
       * @default
       * false
       */
-    var dryRun: js.UndefOr[Boolean] = js.native
+    var dryRun: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Is this the first release?
@@ -59,7 +62,7 @@ object mod {
       * @default
       * false
       */
-    var firstRelease: js.UndefOr[Boolean] = js.native
+    var firstRelease: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Fallback to git tags for version, if no meta-information file is found (e.g.,
@@ -68,7 +71,7 @@ object mod {
       * @default
       * true
       */
-    var gitTagFallback: js.UndefOr[Boolean] = js.native
+    var gitTagFallback: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Read the CHANGELOG from this file.
@@ -76,7 +79,7 @@ object mod {
       * @default
       * 'CHANGELOG.md'
       */
-    var infile: js.UndefOr[String | Buffer | URL | Double] = js.native
+    var infile: js.UndefOr[String | Buffer | URL | Double] = js.undefined
     
     /**
       * Commit message, replaces %s with new version.
@@ -85,7 +88,7 @@ object mod {
       * This option will be removed in the next major version, please use
       * `releaseCommitMessageFormat`.
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * Bypass pre-commit or commit-msg git hooks during the commit phase.
@@ -93,7 +96,7 @@ object mod {
       * @default
       * false
       */
-    var noVerify: js.UndefOr[Boolean] = js.native
+    var noVerify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default
@@ -104,17 +107,17 @@ object mod {
       *   'composer.json'
       * ]
       */
-    var packageFiles: js.UndefOr[js.Array[String]] = js.native
+    var packageFiles: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Only populate commits made under this path.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * Make a pre-release with optional option value to specify a tag id.
       */
-    var prerelease: js.UndefOr[String] = js.native
+    var prerelease: js.UndefOr[String] = js.undefined
     
     /**
       * Commit message guideline preset.
@@ -122,12 +125,12 @@ object mod {
       * @default
       * require.resolve('conventional-changelog-conventionalcommits')
       */
-    var preset: js.UndefOr[String] = js.native
+    var preset: js.UndefOr[String] = js.undefined
     
     /**
       * Specify the release type manually (like npm version <major|minor|patch>).
       */
-    var releaseAs: js.UndefOr[String] = js.native
+    var releaseAs: js.UndefOr[String] = js.undefined
     
     /**
       * Provide scripts to execute for lifecycle events (prebump, precommit, etc.,).
@@ -135,7 +138,7 @@ object mod {
       * @default
       * {}
       */
-    var scripts: js.UndefOr[Scripts] = js.native
+    var scripts: js.UndefOr[Scripts] = js.undefined
     
     /**
       * Should the git commit and tag be signed?
@@ -143,7 +146,7 @@ object mod {
       * @default
       * false
       */
-    var sign: js.UndefOr[Boolean] = js.native
+    var sign: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Don't print logs and errors.
@@ -151,7 +154,7 @@ object mod {
       * @default
       * false
       */
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Map of steps in the release process that should be skipped.
@@ -159,7 +162,7 @@ object mod {
       * @default
       * {}
       */
-    var skip: js.UndefOr[Skip] = js.native
+    var skip: js.UndefOr[Skip] = js.undefined
     
     /**
       * Set a custom prefix for the git tag to be created.
@@ -167,7 +170,7 @@ object mod {
       * @default
       * 'v'
       */
-    var tagPrefix: js.UndefOr[String] = js.native
+    var tagPrefix: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -301,57 +304,56 @@ object mod {
       def setTagPrefixUndefined: Self = StObject.set(x, "tagPrefix", js.undefined)
     }
     
-    @js.native
     trait Scripts extends StObject {
       
       /**
         * Executed after the version is bumped.
         */
-      var postbump: js.UndefOr[String] = js.native
+      var postbump: js.UndefOr[String] = js.undefined
       
       /**
         * Executes after the CHANGELOG is generated.
         */
-      var postchangelog: js.UndefOr[String] = js.native
+      var postchangelog: js.UndefOr[String] = js.undefined
       
       /**
         * Called after the commit step.
         */
-      var postcommit: js.UndefOr[String] = js.native
+      var postcommit: js.UndefOr[String] = js.undefined
       
       /**
         * Called after the tagging step.
         */
-      var posttag: js.UndefOr[String] = js.native
+      var posttag: js.UndefOr[String] = js.undefined
       
       /**
         * Executed before the version is bumped. If the `prebump` script returns a
         * version #, it will be used rather than the version calculated by
         * `standard-version`.
         */
-      var prebump: js.UndefOr[String] = js.native
+      var prebump: js.UndefOr[String] = js.undefined
       
       /**
         * Executes before the CHANGELOG is generated.
         */
-      var prechangelog: js.UndefOr[String] = js.native
+      var prechangelog: js.UndefOr[String] = js.undefined
       
       /**
         * Called before the commit step.
         */
-      var precommit: js.UndefOr[String] = js.native
+      var precommit: js.UndefOr[String] = js.undefined
       
       /**
         * Executed before anything happens. If the `prerelease` script returns a
         * non-zero exit code, versioning will be aborted, but it has no other effect on
         * the process.
         */
-      var prerelease: js.UndefOr[String] = js.native
+      var prerelease: js.UndefOr[String] = js.undefined
       
       /**
         * Called before the tagging step.
         */
-      var pretag: js.UndefOr[String] = js.native
+      var pretag: js.UndefOr[String] = js.undefined
     }
     object Scripts {
       
@@ -421,16 +423,15 @@ object mod {
     }
     
     /* Inlined std.Partial<std.Record<'bump' | 'changelog' | 'commit' | 'tag', boolean>> */
-    @js.native
     trait Skip extends StObject {
       
-      var bump: js.UndefOr[Boolean] = js.native
+      var bump: js.UndefOr[Boolean] = js.undefined
       
-      var changelog: js.UndefOr[Boolean] = js.native
+      var changelog: js.UndefOr[Boolean] = js.undefined
       
-      var commit: js.UndefOr[Boolean] = js.native
+      var commit: js.UndefOr[Boolean] = js.undefined
       
-      var tag: js.UndefOr[Boolean] = js.native
+      var tag: js.UndefOr[Boolean] = js.undefined
     }
     object Skip {
       

@@ -2,21 +2,19 @@ package typings.javascriptStringify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AsyncFunction extends StObject {
     
-    var AsyncFunction: String = js.native
+    var AsyncFunction: String
     
-    var AsyncGeneratorFunction: String = js.native
+    var AsyncGeneratorFunction: String
     
-    var Function: String = js.native
+    var Function: String
     
-    var GeneratorFunction: String = js.native
+    var GeneratorFunction: String
   }
   object AsyncFunction {
     

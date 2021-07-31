@@ -3,22 +3,22 @@ package typings.awsSdkClientLambdaNode
 import typings.awsSdkClientLambdaNode.addPermissionExceptionsUnionMod.AddPermissionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPolicyLengthExceededExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PolicyLengthExceededExceptionDetails> * / any */ @js.native
-  trait PolicyLengthExceededException extends AddPermissionExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PolicyLengthExceededExceptionDetails> * / any */ trait PolicyLengthExceededException
+    extends StObject
+       with AddPermissionExceptionsUnion {
     
-    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.PolicyLengthExceededException = js.native
+    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.PolicyLengthExceededException
   }
   object PolicyLengthExceededException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.PolicyLengthExceededException): PolicyLengthExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): PolicyLengthExceededException = {
+      val __obj = js.Dynamic.literal(name = "PolicyLengthExceededException")
       __obj.asInstanceOf[PolicyLengthExceededException]
     }
     
@@ -30,18 +30,17 @@ object typesPolicyLengthExceededExceptionMod {
     }
   }
   
-  @js.native
   trait PolicyLengthExceededExceptionDetails extends StObject {
     
     /**
       * _String shape
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
     
     /**
       * _String shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object PolicyLengthExceededExceptionDetails {
     

@@ -38,7 +38,6 @@ import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -96,9 +95,8 @@ object IfExpression {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.create")
-  @js.native
-  def create(model: IModel): IfExpression = js.native
+  @scala.inline
+  def create(model: IModel): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -109,9 +107,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInAppServiceCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): IfExpression = js.native
+  @scala.inline
+  def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -122,9 +119,8 @@ object IfExpression {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInBasicCodeActionParameterValueUnderArgumentModel")
-  @js.native
-  def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): IfExpression = js.native
+  @scala.inline
+  def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -135,9 +131,8 @@ object IfExpression {
     *  7.9.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInBasicJavaActionParameterValueUnderArgumentModel")
-  @js.native
-  def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): IfExpression = js.native
+  @scala.inline
+  def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -148,9 +143,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInBinaryExpressionUnderLeft")
-  @js.native
-  def createInBinaryExpressionUnderLeft(container: BinaryExpression): IfExpression = js.native
+  @scala.inline
+  def createInBinaryExpressionUnderLeft(container: BinaryExpression): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -161,9 +155,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInBinaryExpressionUnderRight")
-  @js.native
-  def createInBinaryExpressionUnderRight(container: BinaryExpression): IfExpression = js.native
+  @scala.inline
+  def createInBinaryExpressionUnderRight(container: BinaryExpression): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -174,9 +167,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInBinaryRequestHandlingUnderExpressionModel")
-  @js.native
-  def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): IfExpression = js.native
+  @scala.inline
+  def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -187,9 +179,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInChangeListActionUnderValueModel")
-  @js.native
-  def createInChangeListActionUnderValueModel(container: ChangeListAction): IfExpression = js.native
+  @scala.inline
+  def createInChangeListActionUnderValueModel(container: ChangeListAction): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -200,9 +191,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInChangeVariableActionUnderValueModel")
-  @js.native
-  def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): IfExpression = js.native
+  @scala.inline
+  def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -213,9 +203,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInConditionalSettingsUnderExpressionModel")
-  @js.native
-  def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): IfExpression = js.native
+  @scala.inline
+  def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -226,9 +215,8 @@ object IfExpression {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInConsumedODataServiceUnderTimeoutModel")
-  @js.native
-  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): IfExpression = js.native
+  @scala.inline
+  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -239,9 +227,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInCreateVariableActionUnderInitialValueModel")
-  @js.native
-  def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): IfExpression = js.native
+  @scala.inline
+  def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -252,9 +239,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInCustomRangeUnderLimitExpressionModel")
-  @js.native
-  def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): IfExpression = js.native
+  @scala.inline
+  def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -265,9 +251,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInCustomRangeUnderOffsetExpressionModel")
-  @js.native
-  def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): IfExpression = js.native
+  @scala.inline
+  def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -278,9 +263,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInDocumentTemplateParameterMappingUnderArgumentModel")
-  @js.native
-  def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): IfExpression = js.native
+  @scala.inline
+  def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -291,9 +275,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInEndEventUnderReturnValueModel")
-  @js.native
-  def createInEndEventUnderReturnValueModel(container: EndEvent): IfExpression = js.native
+  @scala.inline
+  def createInEndEventUnderReturnValueModel(container: EndEvent): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -304,9 +287,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInExpressionSplitConditionUnderExpressionModel")
-  @js.native
-  def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): IfExpression = js.native
+  @scala.inline
+  def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -317,9 +299,8 @@ object IfExpression {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInFormDataPartUnderValueModel")
-  @js.native
-  def createInFormDataPartUnderValueModel(container: FormDataPart): IfExpression = js.native
+  @scala.inline
+  def createInFormDataPartUnderValueModel(container: FormDataPart): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -330,9 +311,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInFunctionCallExpressionUnderArguments")
-  @js.native
-  def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): IfExpression = js.native
+  @scala.inline
+  def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -343,9 +323,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInGenerateDocumentActionUnderMarginBottomInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): IfExpression = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -356,9 +335,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInGenerateDocumentActionUnderMarginLeftInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): IfExpression = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -369,9 +347,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInGenerateDocumentActionUnderMarginRightInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): IfExpression = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -382,9 +359,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInGenerateDocumentActionUnderMarginTopInInchModel")
-  @js.native
-  def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): IfExpression = js.native
+  @scala.inline
+  def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -395,9 +371,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInHttpConfigurationUnderCustomLocationModel")
-  @js.native
-  def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): IfExpression = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -408,9 +383,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInHttpConfigurationUnderPassword")
-  @js.native
-  def createInHttpConfigurationUnderPassword(container: HttpConfiguration): IfExpression = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderPassword(container: HttpConfiguration): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -421,9 +395,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInHttpConfigurationUnderUsername")
-  @js.native
-  def createInHttpConfigurationUnderUsername(container: HttpConfiguration): IfExpression = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderUsername(container: HttpConfiguration): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -434,9 +407,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInHttpHeaderEntryUnderValueModel")
-  @js.native
-  def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): IfExpression = js.native
+  @scala.inline
+  def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -447,9 +419,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInIfExpressionUnderCondition")
-  @js.native
-  def createInIfExpressionUnderCondition(container: IfExpression): IfExpression = js.native
+  @scala.inline
+  def createInIfExpressionUnderCondition(container: IfExpression): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -460,9 +431,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInIfExpressionUnderIfFalse")
-  @js.native
-  def createInIfExpressionUnderIfFalse(container: IfExpression): IfExpression = js.native
+  @scala.inline
+  def createInIfExpressionUnderIfFalse(container: IfExpression): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -473,9 +443,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInIfExpressionUnderIfTrue")
-  @js.native
-  def createInIfExpressionUnderIfTrue(container: IfExpression): IfExpression = js.native
+  @scala.inline
+  def createInIfExpressionUnderIfTrue(container: IfExpression): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -486,9 +455,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInInspectAttributeUnderExpressionModel")
-  @js.native
-  def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): IfExpression = js.native
+  @scala.inline
+  def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -499,9 +467,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInLogMessageActionUnderNodeModel")
-  @js.native
-  def createInLogMessageActionUnderNodeModel(container: LogMessageAction): IfExpression = js.native
+  @scala.inline
+  def createInLogMessageActionUnderNodeModel(container: LogMessageAction): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -512,9 +479,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInMemberChangeUnderValueModel")
-  @js.native
-  def createInMemberChangeUnderValueModel(container: MemberChange): IfExpression = js.native
+  @scala.inline
+  def createInMemberChangeUnderValueModel(container: MemberChange): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -525,9 +491,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInMicroflowCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): IfExpression = js.native
+  @scala.inline
+  def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -538,9 +503,8 @@ object IfExpression {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInNanoflowCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): IfExpression = js.native
+  @scala.inline
+  def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -551,9 +515,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInParenthesisExpressionUnderExpression")
-  @js.native
-  def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): IfExpression = js.native
+  @scala.inline
+  def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -564,9 +527,8 @@ object IfExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInProxyConfigurationUnderHostExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): IfExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -577,9 +539,8 @@ object IfExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInProxyConfigurationUnderPasswordExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): IfExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -590,9 +551,8 @@ object IfExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInProxyConfigurationUnderPortExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): IfExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -603,9 +563,8 @@ object IfExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInProxyConfigurationUnderUseConfigurationExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): IfExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -616,9 +575,8 @@ object IfExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInProxyConfigurationUnderUsernameExpressionModel")
-  @js.native
-  def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): IfExpression = js.native
+  @scala.inline
+  def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -629,9 +587,8 @@ object IfExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInRestCallActionUnderTimeOutModel")
-  @js.native
-  def createInRestCallActionUnderTimeOutModel(container: RestCallAction): IfExpression = js.native
+  @scala.inline
+  def createInRestCallActionUnderTimeOutModel(container: RestCallAction): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -642,9 +599,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInRuleCallParameterMappingUnderArgumentModel")
-  @js.native
-  def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): IfExpression = js.native
+  @scala.inline
+  def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -655,9 +611,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInTemplateArgumentUnderExpressionModel")
-  @js.native
-  def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): IfExpression = js.native
+  @scala.inline
+  def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -668,9 +623,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInUnaryExpressionUnderExpression")
-  @js.native
-  def createInUnaryExpressionUnderExpression(container: UnaryExpression): IfExpression = js.native
+  @scala.inline
+  def createInUnaryExpressionUnderExpression(container: UnaryExpression): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -681,9 +635,8 @@ object IfExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInWebServiceCallActionUnderTimeOutModel")
-  @js.native
-  def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): IfExpression = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -694,9 +647,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInWebServiceOperationParameterMappingUnderArgumentModel")
-  @js.native
-  def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): IfExpression = js.native
+  @scala.inline
+  def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
@@ -707,9 +659,8 @@ object IfExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.createInWidgetValidationUnderExpressionModel")
-  @js.native
-  def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): IfExpression = js.native
+  @scala.inline
+  def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): IfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[IfExpression]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.IfExpression.structureTypeName")

@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ItemAttachment extends Attachment {
+trait ItemAttachment
+  extends StObject
+     with Attachment {
   
   // The attached message or event. Navigation property.
-  var item: js.UndefOr[NullableOption[OutlookItem]] = js.native
+  var item: js.UndefOr[NullableOption[OutlookItem]] = js.undefined
 }
 object ItemAttachment {
   

@@ -2,7 +2,6 @@ package typings.easyXapiSupertest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object punycodeMod {
@@ -11,28 +10,23 @@ object punycodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("punycode", "decode")
-  @js.native
-  def decode(string: String): String = js.native
+  @scala.inline
+  def decode(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("punycode", "encode")
-  @js.native
-  def encode(string: String): String = js.native
+  @scala.inline
+  def encode(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("punycode", "toASCII")
-  @js.native
-  def toASCII(domain: String): String = js.native
+  @scala.inline
+  def toASCII(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toASCII")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("punycode", "toUnicode")
-  @js.native
-  def toUnicode(domain: String): String = js.native
+  @scala.inline
+  def toUnicode(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUnicode")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait ucs2 extends StObject {
     
-    def decode(string: String): String = js.native
+    def decode(string: String): String
     
-    def encode(codePoints: js.Array[Double]): String = js.native
+    def encode(codePoints: js.Array[Double]): String
   }
   object ucs2 {
     

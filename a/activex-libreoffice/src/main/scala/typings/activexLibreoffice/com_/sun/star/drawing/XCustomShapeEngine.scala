@@ -6,33 +6,33 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The {@link XCustomShapeEngine} */
-@js.native
-trait XCustomShapeEngine extends XInterface {
+trait XCustomShapeEngine
+  extends StObject
+     with XInterface {
   
   /** @returns a collection of interaction handles */
-  val Interaction: SafeArray[XCustomShapeHandle] = js.native
+  val Interaction: SafeArray[XCustomShapeHandle]
   
   /** @returns the line geometry of the object */
-  val LineGeometry: PolyPolygonBezierCoords = js.native
+  val LineGeometry: PolyPolygonBezierCoords
   
   /** @returns the text bound of the shape */
-  val TextBounds: Rectangle = js.native
+  val TextBounds: Rectangle
   
   /** @returns a collection of interaction handles */
-  def getInteraction(): SafeArray[XCustomShapeHandle] = js.native
+  def getInteraction(): SafeArray[XCustomShapeHandle]
   
   /** @returns the line geometry of the object */
-  def getLineGeometry(): PolyPolygonBezierCoords = js.native
+  def getLineGeometry(): PolyPolygonBezierCoords
   
   /** @returns the text bound of the shape */
-  def getTextBounds(): Rectangle = js.native
+  def getTextBounds(): Rectangle
   
   /** @returns a the shape that is representing the {@link CustomShape} */
-  def render(): XShape = js.native
+  def render(): XShape
 }
 object XCustomShapeEngine {
   

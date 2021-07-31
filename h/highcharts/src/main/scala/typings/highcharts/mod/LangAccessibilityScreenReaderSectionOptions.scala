@@ -2,27 +2,25 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangAccessibilityScreenReaderSectionOptions extends StObject {
   
-  var afterRegionLabel: js.UndefOr[String] = js.native
+  var afterRegionLabel: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Language options for annotation
     * descriptions.
     */
-  var annotations: js.UndefOr[LangAccessibilityScreenReaderSectionAnnotationsOptions] = js.native
+  var annotations: js.UndefOr[LangAccessibilityScreenReaderSectionAnnotationsOptions] = js.undefined
   
-  var beforeRegionLabel: js.UndefOr[String] = js.native
+  var beforeRegionLabel: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Label for the end of the chart.
     * Announced by screen readers.
     */
-  var endOfChartMarker: js.UndefOr[String] = js.native
+  var endOfChartMarker: js.UndefOr[String] = js.undefined
 }
 object LangAccessibilityScreenReaderSectionOptions {
   

@@ -2,26 +2,24 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A known user.
   */
-@js.native
 trait SchemaKnownUser extends StObject {
   
   /**
     * True if this is the user making the request.
     */
-  var isCurrentUser: js.UndefOr[Boolean] = js.native
+  var isCurrentUser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The identifier for this user that can be used with the People API to get
     * more information. The format is &quot;people/ACCOUNT_ID&quot;. See
     * https://developers.google.com/people/.
     */
-  var personName: js.UndefOr[String] = js.native
+  var personName: js.UndefOr[String] = js.undefined
 }
 object SchemaKnownUser {
   

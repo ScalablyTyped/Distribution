@@ -3,15 +3,15 @@ package typings.protobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.protobufjs.mod.AnyNestedObject because Already inherited */ @js.native
-trait IService extends INamespace {
+- typings.protobufjs.mod.AnyNestedObject because Already inherited */ trait IService
+  extends StObject
+     with INamespace {
   
   /** Method descriptors */
-  var methods: StringDictionary[IMethod] = js.native
+  var methods: StringDictionary[IMethod]
 }
 object IService {
   

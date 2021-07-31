@@ -2,61 +2,59 @@ package typings.pulumiAws.outputMod.iot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleDynamodb extends StObject {
   
   /**
     * The hash key name.
     */
-  var hashKeyField: String = js.native
+  var hashKeyField: String
   
   /**
     * The hash key type. Valid values are "STRING" or "NUMBER".
     */
-  var hashKeyType: js.UndefOr[String] = js.native
+  var hashKeyType: js.UndefOr[String] = js.undefined
   
   /**
     * The hash key value.
     */
-  var hashKeyValue: String = js.native
+  var hashKeyValue: String
   
   /**
     * The operation. Valid values are "INSERT", "UPDATE", or "DELETE".
     */
-  var operation: js.UndefOr[String] = js.native
+  var operation: js.UndefOr[String] = js.undefined
   
   /**
     * The action payload.
     */
-  var payloadField: js.UndefOr[String] = js.native
+  var payloadField: js.UndefOr[String] = js.undefined
   
   /**
     * The range key name.
     */
-  var rangeKeyField: js.UndefOr[String] = js.native
+  var rangeKeyField: js.UndefOr[String] = js.undefined
   
   /**
     * The range key type. Valid values are "STRING" or "NUMBER".
     */
-  var rangeKeyType: js.UndefOr[String] = js.native
+  var rangeKeyType: js.UndefOr[String] = js.undefined
   
   /**
     * The range key value.
     */
-  var rangeKeyValue: js.UndefOr[String] = js.native
+  var rangeKeyValue: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the IAM role that grants access to the DynamoDB table.
     */
-  var roleArn: String = js.native
+  var roleArn: String
   
   /**
     * The name of the DynamoDB table.
     */
-  var tableName: String = js.native
+  var tableName: String
 }
 object TopicRuleDynamodb {
   

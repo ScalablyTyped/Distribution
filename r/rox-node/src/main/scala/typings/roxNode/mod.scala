@@ -5,10 +5,13 @@ import typings.roxNode.roxNodeStrings.verbose
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("rox-node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rox-node", "Configuration")
   @js.native
@@ -49,23 +52,31 @@ object mod {
   object RoxFetcherStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[RoxFetcherStatus with String] = js.native
+    def apply(value: String): js.UndefOr[RoxFetcherStatus & String] = js.native
     
     @js.native
-    sealed trait AppliedFromCache extends RoxFetcherStatus
-    /* "APPLIED_FROM_CACHE" */ val AppliedFromCache: typings.roxNode.mod.RoxFetcherStatus.AppliedFromCache with String = js.native
+    sealed trait AppliedFromCache
+      extends StObject
+         with RoxFetcherStatus
+    /* "APPLIED_FROM_CACHE" */ val AppliedFromCache: typings.roxNode.mod.RoxFetcherStatus.AppliedFromCache & String = js.native
     
     @js.native
-    sealed trait AppliedFromEmbedded extends RoxFetcherStatus
-    /* "APPLIED_FROM_EMBEDDED" */ val AppliedFromEmbedded: typings.roxNode.mod.RoxFetcherStatus.AppliedFromEmbedded with String = js.native
+    sealed trait AppliedFromEmbedded
+      extends StObject
+         with RoxFetcherStatus
+    /* "APPLIED_FROM_EMBEDDED" */ val AppliedFromEmbedded: typings.roxNode.mod.RoxFetcherStatus.AppliedFromEmbedded & String = js.native
     
     @js.native
-    sealed trait AppliedFromNetwork extends RoxFetcherStatus
-    /* "APPLIED_FROM_NETWORK" */ val AppliedFromNetwork: typings.roxNode.mod.RoxFetcherStatus.AppliedFromNetwork with String = js.native
+    sealed trait AppliedFromNetwork
+      extends StObject
+         with RoxFetcherStatus
+    /* "APPLIED_FROM_NETWORK" */ val AppliedFromNetwork: typings.roxNode.mod.RoxFetcherStatus.AppliedFromNetwork & String = js.native
     
     @js.native
-    sealed trait ErrorFetchFailed extends RoxFetcherStatus
-    /* "ERROR_FETCH_FAILED" */ val ErrorFetchFailed: typings.roxNode.mod.RoxFetcherStatus.ErrorFetchFailed with String = js.native
+    sealed trait ErrorFetchFailed
+      extends StObject
+         with RoxFetcherStatus
+    /* "ERROR_FETCH_FAILED" */ val ErrorFetchFailed: typings.roxNode.mod.RoxFetcherStatus.ErrorFetchFailed & String = js.native
   }
   
   @JSImport("rox-node", "Variant")
@@ -87,30 +98,29 @@ object mod {
   
   object dynamicApi {
     
+    @JSImport("rox-node", "dynamicApi")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Getting boolean value of a flag
       */
-    @JSImport("rox-node", "dynamicApi.isEnabled")
-    @js.native
-    def isEnabled(nameSpacedFlagName: String, defaultValue: Boolean): Boolean = js.native
-    @JSImport("rox-node", "dynamicApi.isEnabled")
-    @js.native
-    def isEnabled(nameSpacedFlagName: String, defaultValue: Boolean, context: js.Any): Boolean = js.native
+    @scala.inline
+    def isEnabled(nameSpacedFlagName: String, defaultValue: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isEnabled(nameSpacedFlagName: String, defaultValue: Boolean, context: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Getting string value of a Variant flag
       */
-    @JSImport("rox-node", "dynamicApi.value")
-    @js.native
-    def value(nameSpacedFlagName: String, defaultValue: String): String = js.native
-    @JSImport("rox-node", "dynamicApi.value")
-    @js.native
-    def value(nameSpacedFlagName: String, defaultValue: String, context: js.Any): String = js.native
+    @scala.inline
+    def value(nameSpacedFlagName: String, defaultValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("value")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def value(nameSpacedFlagName: String, defaultValue: String, context: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("value")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @JSImport("rox-node", "fetch")
-  @js.native
-  def fetch(): Unit = js.native
+  @scala.inline
+  def fetch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")().asInstanceOf[Unit]
   
   @JSImport("rox-node", "flags")
   @js.native
@@ -118,34 +128,34 @@ object mod {
   
   object overrides {
     
+    @JSImport("rox-node", "overrides")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Clears all override values
       */
-    @JSImport("rox-node", "overrides.clearAllOverrides")
-    @js.native
-    def clearAllOverrides(): Unit = js.native
+    @scala.inline
+    def clearAllOverrides(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAllOverrides")().asInstanceOf[Unit]
     
     /**
       * Clears the override value from the flag (and the disk).
       *
       * https://support.rollout.io/docs/javascript-browser-api#section--rox-overrides-clearoverride-
       */
-    @JSImport("rox-node", "overrides.clearOverride")
-    @js.native
-    def clearOverride(nameSpacedFlagName: String): Unit = js.native
+    @scala.inline
+    def clearOverride(nameSpacedFlagName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearOverride")(nameSpacedFlagName.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rox-node", "overrides.getOriginalValue")
-    @js.native
-    def getOriginalValue(nameSpacedFlagName: String): String = js.native
+    @scala.inline
+    def getOriginalValue(nameSpacedFlagName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalValue")(nameSpacedFlagName.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * full flag name including namespace
       *
       * https://support.rollout.io/docs/javascript-browser-api#section--rox-overrides-hasoverride-
       */
-    @JSImport("rox-node", "overrides.hasOverride")
-    @js.native
-    def hasOverride(nameSpacedFlagName: String): Boolean = js.native
+    @scala.inline
+    def hasOverride(nameSpacedFlagName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOverride")(nameSpacedFlagName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Sets an override value on a specific flag, this function accepts two parameters flag name (
@@ -157,66 +167,53 @@ object mod {
       *
       * Note that for boolean flag we still give the value as a string.
       */
-    @JSImport("rox-node", "overrides.setOverride")
-    @js.native
-    def setOverride(nameSpacedFlagName: String, value: String): Unit = js.native
+    @scala.inline
+    def setOverride(nameSpacedFlagName: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOverride")(nameSpacedFlagName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("rox-node", "register")
-  @js.native
-  def register(namespace: String, roxContainer: RoxContainer): Unit = js.native
+  @scala.inline
+  def register(namespace: String, roxContainer: RoxContainer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(namespace.asInstanceOf[js.Any], roxContainer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rox-node", "setContext")
-  @js.native
-  def setContext(globalContext: js.Any): Unit = js.native
+  @scala.inline
+  def setContext(globalContext: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(globalContext.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("rox-node", "setCustomBooleanProperty")
-  @js.native
-  def setCustomBooleanProperty(name: String, value: js.Function1[/* context */ js.UndefOr[js.Any], Boolean]): Unit = js.native
-  @JSImport("rox-node", "setCustomBooleanProperty")
-  @js.native
-  def setCustomBooleanProperty(name: String, value: Boolean): Unit = js.native
+  @scala.inline
+  def setCustomBooleanProperty(name: String, value: js.Function1[/* context */ js.UndefOr[js.Any], Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomBooleanProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setCustomBooleanProperty(name: String, value: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomBooleanProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rox-node", "setCustomNumberProperty")
-  @js.native
-  def setCustomNumberProperty(name: String, value: js.Function1[/* context */ js.UndefOr[js.Any], Double]): Unit = js.native
-  @JSImport("rox-node", "setCustomNumberProperty")
-  @js.native
-  def setCustomNumberProperty(name: String, value: Double): Unit = js.native
+  @scala.inline
+  def setCustomNumberProperty(name: String, value: js.Function1[/* context */ js.UndefOr[js.Any], Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomNumberProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setCustomNumberProperty(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomNumberProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rox-node", "setCustomStringProperty")
-  @js.native
-  def setCustomStringProperty(name: String, value: String): Unit = js.native
-  @JSImport("rox-node", "setCustomStringProperty")
-  @js.native
-  def setCustomStringProperty(name: String, value: js.Function1[/* context */ js.UndefOr[js.Any], String]): Unit = js.native
+  @scala.inline
+  def setCustomStringProperty(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomStringProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setCustomStringProperty(name: String, value: js.Function1[/* context */ js.UndefOr[js.Any], String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomStringProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rox-node", "setDynamicCustomPropertyRule")
-  @js.native
-  def setDynamicCustomPropertyRule(handler: js.Function2[/* propName */ String, /* context */ js.Any, Double | String | Boolean]): Unit = js.native
+  @scala.inline
+  def setDynamicCustomPropertyRule(handler: js.Function2[/* propName */ String, /* context */ js.Any, Double | String | Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDynamicCustomPropertyRule")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("rox-node", "setup")
-  @js.native
-  def setup(apiKey: String): js.Promise[_] = js.native
-  @JSImport("rox-node", "setup")
-  @js.native
-  def setup(apiKey: String, options: RoxSetupOptions): js.Promise[_] = js.native
+  @scala.inline
+  def setup(apiKey: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def setup(apiKey: String, options: RoxSetupOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(apiKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   type BasicType[T] = String | Double | Boolean
   
   type RoxContainer = StringDictionary[Flag | Configuration[js.Any] | Variant[String]]
   
-  @js.native
   trait RoxExperiment extends StObject {
     
-    var identifier: String = js.native
+    var identifier: String
     
-    var isArchived: Boolean = js.native
+    var isArchived: Boolean
     
-    var labels: js.Array[String] = js.native
+    var labels: js.Array[String]
     
     //  experiment id
-    var name: String = js.native
+    var name: String
   }
   object RoxExperiment {
     
@@ -246,16 +243,15 @@ object mod {
     }
   }
   
-  @js.native
   trait RoxFetcherResult extends StObject {
     
-    var creationDate: Date = js.native
+    var creationDate: Date
     
-    var errorDetails: js.UndefOr[String] = js.native
+    var errorDetails: js.UndefOr[String] = js.undefined
     
-    var fetcherStatus: RoxFetcherStatus = js.native
+    var fetcherStatus: RoxFetcherStatus
     
-    var hasChanges: Boolean = js.native
+    var hasChanges: Boolean
   }
   object RoxFetcherResult {
     
@@ -285,12 +281,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RoxReporting extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object RoxReporting {
     
@@ -311,19 +306,18 @@ object mod {
     }
   }
   
-  @js.native
   trait RoxSetupOptions extends StObject {
     
     // https://support.rollout.io/docs/configuration-fetched-handler
-    var configurationFetchedHandler: js.UndefOr[js.Function1[/* fetcherResult */ RoxFetcherResult, Unit]] = js.native
+    var configurationFetchedHandler: js.UndefOr[js.Function1[/* fetcherResult */ RoxFetcherResult, Unit]] = js.undefined
     
-    var debugLevel: js.UndefOr[verbose] = js.native
+    var debugLevel: js.UndefOr[verbose] = js.undefined
     
-    var devModeSecret: js.UndefOr[String] = js.native
+    var devModeSecret: js.UndefOr[String] = js.undefined
     
-    var disableNetworkFetch: js.UndefOr[Boolean] = js.native
+    var disableNetworkFetch: js.UndefOr[Boolean] = js.undefined
     
-    var fetchIntervalInSec: js.UndefOr[Double] = js.native
+    var fetchIntervalInSec: js.UndefOr[Double] = js.undefined
     
     // https://support.rollout.io/docs/nodejs-api#section-using-the-impressionhandler-option
     var impressionHandler: js.UndefOr[
@@ -333,18 +327,18 @@ object mod {
           /* context */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
     /**
       * Set Roxy's URL for automated tests or local development.
       *
       * https://support.rollout.io/docs/microservices-automated-testing-and-local-development
       */
-    var roxy: js.UndefOr[String] = js.native
+    var roxy: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object RoxSetupOptions {
     

@@ -2,23 +2,21 @@ package typings.karma.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config_ extends StObject {
   
-  var LOG_DEBUG: String = js.native
+  var LOG_DEBUG: String
   
-  var LOG_DISABLE: String = js.native
+  var LOG_DISABLE: String
   
-  var LOG_ERROR: String = js.native
+  var LOG_ERROR: String
   
-  var LOG_INFO: String = js.native
+  var LOG_INFO: String
   
-  var LOG_WARN: String = js.native
+  var LOG_WARN: String
   
-  def set(config: ConfigOptions): Unit = js.native
+  def set(config: ConfigOptions): Unit
 }
 object Config_ {
   

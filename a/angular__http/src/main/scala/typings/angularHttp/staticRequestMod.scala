@@ -9,7 +9,6 @@ import typings.angularHttp.interfacesMod.RequestArgs
 import typings.std.ArrayBufferConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object staticRequestMod {
@@ -18,7 +17,8 @@ object staticRequestMod {
   @JSImport("@angular/http/src/static_request", "ArrayBuffer")
   @js.native
   class ArrayBuffer protected ()
-    extends typings.std.ArrayBuffer {
+    extends StObject
+       with typings.std.ArrayBuffer {
     def this(byteLength: Double) = this()
   }
   @JSImport("@angular/http/src/static_request", "ArrayBuffer")

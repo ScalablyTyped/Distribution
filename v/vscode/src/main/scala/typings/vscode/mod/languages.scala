@@ -3,176 +3,143 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object languages {
   
-  @JSImport("vscode", "languages.createDiagnosticCollection")
+  @JSImport("vscode", "languages")
   @js.native
-  def createDiagnosticCollection(): DiagnosticCollection = js.native
-  @JSImport("vscode", "languages.createDiagnosticCollection")
-  @js.native
-  def createDiagnosticCollection(name: String): DiagnosticCollection = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vscode", "languages.getDiagnostics")
-  @js.native
-  def getDiagnostics(): js.Array[js.Tuple2[Uri, js.Array[Diagnostic]]] = js.native
-  @JSImport("vscode", "languages.getDiagnostics")
-  @js.native
-  def getDiagnostics(resource: Uri): js.Array[Diagnostic] = js.native
+  @scala.inline
+  def createDiagnosticCollection(): DiagnosticCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiagnosticCollection")().asInstanceOf[DiagnosticCollection]
+  @scala.inline
+  def createDiagnosticCollection(name: String): DiagnosticCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiagnosticCollection")(name.asInstanceOf[js.Any]).asInstanceOf[DiagnosticCollection]
   
-  @JSImport("vscode", "languages.getLanguages")
-  @js.native
-  def getLanguages(): Thenable[js.Array[String]] = js.native
+  @scala.inline
+  def getDiagnostics(): js.Array[js.Tuple2[Uri, js.Array[Diagnostic]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDiagnostics")().asInstanceOf[js.Array[js.Tuple2[Uri, js.Array[Diagnostic]]]]
+  @scala.inline
+  def getDiagnostics(resource: Uri): js.Array[Diagnostic] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDiagnostics")(resource.asInstanceOf[js.Any]).asInstanceOf[js.Array[Diagnostic]]
+  
+  @scala.inline
+  def getLanguages(): Thenable[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguages")().asInstanceOf[Thenable[js.Array[String]]]
+  
+  @scala.inline
+  def `match`(selector: DocumentSelector, document: TextDocument): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(selector.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("vscode", "languages.onDidChangeDiagnostics")
   @js.native
   val onDidChangeDiagnostics: Event[DiagnosticChangeEvent] = js.native
   
-  @JSImport("vscode", "languages.registerCallHierarchyProvider")
-  @js.native
-  def registerCallHierarchyProvider(selector: DocumentSelector, provider: CallHierarchyProvider): Disposable = js.native
+  @scala.inline
+  def registerCallHierarchyProvider(selector: DocumentSelector, provider: CallHierarchyProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCallHierarchyProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerCodeActionsProvider")
-  @js.native
-  def registerCodeActionsProvider(selector: DocumentSelector, provider: CodeActionProvider[CodeAction]): Disposable = js.native
-  @JSImport("vscode", "languages.registerCodeActionsProvider")
-  @js.native
+  @scala.inline
+  def registerCodeActionsProvider(selector: DocumentSelector, provider: CodeActionProvider[CodeAction]): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCodeActionsProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  @scala.inline
   def registerCodeActionsProvider(
     selector: DocumentSelector,
     provider: CodeActionProvider[CodeAction],
     metadata: CodeActionProviderMetadata
-  ): Disposable = js.native
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCodeActionsProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerCodeLensProvider")
-  @js.native
-  def registerCodeLensProvider(selector: DocumentSelector, provider: CodeLensProvider[CodeLens]): Disposable = js.native
+  @scala.inline
+  def registerCodeLensProvider(selector: DocumentSelector, provider: CodeLensProvider[CodeLens]): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCodeLensProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerColorProvider")
-  @js.native
-  def registerColorProvider(selector: DocumentSelector, provider: DocumentColorProvider): Disposable = js.native
+  @scala.inline
+  def registerColorProvider(selector: DocumentSelector, provider: DocumentColorProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerColorProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerCompletionItemProvider")
-  @js.native
+  @scala.inline
   def registerCompletionItemProvider(
     selector: DocumentSelector,
     provider: CompletionItemProvider[CompletionItem],
     triggerCharacters: String*
-  ): Disposable = js.native
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCompletionItemProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], triggerCharacters.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerDeclarationProvider")
-  @js.native
-  def registerDeclarationProvider(selector: DocumentSelector, provider: DeclarationProvider): Disposable = js.native
+  @scala.inline
+  def registerDeclarationProvider(selector: DocumentSelector, provider: DeclarationProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDeclarationProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerDefinitionProvider")
-  @js.native
-  def registerDefinitionProvider(selector: DocumentSelector, provider: DefinitionProvider): Disposable = js.native
+  @scala.inline
+  def registerDefinitionProvider(selector: DocumentSelector, provider: DefinitionProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDefinitionProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerDocumentFormattingEditProvider")
-  @js.native
-  def registerDocumentFormattingEditProvider(selector: DocumentSelector, provider: DocumentFormattingEditProvider): Disposable = js.native
+  @scala.inline
+  def registerDocumentFormattingEditProvider(selector: DocumentSelector, provider: DocumentFormattingEditProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDocumentFormattingEditProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerDocumentHighlightProvider")
-  @js.native
-  def registerDocumentHighlightProvider(selector: DocumentSelector, provider: DocumentHighlightProvider): Disposable = js.native
+  @scala.inline
+  def registerDocumentHighlightProvider(selector: DocumentSelector, provider: DocumentHighlightProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDocumentHighlightProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerDocumentLinkProvider")
-  @js.native
-  def registerDocumentLinkProvider(selector: DocumentSelector, provider: DocumentLinkProvider[DocumentLink]): Disposable = js.native
+  @scala.inline
+  def registerDocumentLinkProvider(selector: DocumentSelector, provider: DocumentLinkProvider[DocumentLink]): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDocumentLinkProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerDocumentRangeFormattingEditProvider")
-  @js.native
-  def registerDocumentRangeFormattingEditProvider(selector: DocumentSelector, provider: DocumentRangeFormattingEditProvider): Disposable = js.native
+  @scala.inline
+  def registerDocumentRangeFormattingEditProvider(selector: DocumentSelector, provider: DocumentRangeFormattingEditProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDocumentRangeFormattingEditProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerDocumentRangeSemanticTokensProvider")
-  @js.native
+  @scala.inline
   def registerDocumentRangeSemanticTokensProvider(
     selector: DocumentSelector,
     provider: DocumentRangeSemanticTokensProvider,
     legend: SemanticTokensLegend
-  ): Disposable = js.native
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDocumentRangeSemanticTokensProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], legend.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerDocumentSemanticTokensProvider")
-  @js.native
-  def registerDocumentSemanticTokensProvider(selector: DocumentSelector, provider: DocumentSemanticTokensProvider, legend: SemanticTokensLegend): Disposable = js.native
+  @scala.inline
+  def registerDocumentSemanticTokensProvider(selector: DocumentSelector, provider: DocumentSemanticTokensProvider, legend: SemanticTokensLegend): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDocumentSemanticTokensProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], legend.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerDocumentSymbolProvider")
-  @js.native
-  def registerDocumentSymbolProvider(selector: DocumentSelector, provider: DocumentSymbolProvider): Disposable = js.native
-  @JSImport("vscode", "languages.registerDocumentSymbolProvider")
-  @js.native
+  @scala.inline
+  def registerDocumentSymbolProvider(selector: DocumentSelector, provider: DocumentSymbolProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDocumentSymbolProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  @scala.inline
   def registerDocumentSymbolProvider(
     selector: DocumentSelector,
     provider: DocumentSymbolProvider,
     metaData: DocumentSymbolProviderMetadata
-  ): Disposable = js.native
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDocumentSymbolProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], metaData.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerEvaluatableExpressionProvider")
-  @js.native
-  def registerEvaluatableExpressionProvider(selector: DocumentSelector, provider: EvaluatableExpressionProvider): Disposable = js.native
+  @scala.inline
+  def registerEvaluatableExpressionProvider(selector: DocumentSelector, provider: EvaluatableExpressionProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerEvaluatableExpressionProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerFoldingRangeProvider")
-  @js.native
-  def registerFoldingRangeProvider(selector: DocumentSelector, provider: FoldingRangeProvider): Disposable = js.native
+  @scala.inline
+  def registerFoldingRangeProvider(selector: DocumentSelector, provider: FoldingRangeProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFoldingRangeProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerHoverProvider")
-  @js.native
-  def registerHoverProvider(selector: DocumentSelector, provider: HoverProvider): Disposable = js.native
+  @scala.inline
+  def registerHoverProvider(selector: DocumentSelector, provider: HoverProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHoverProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerImplementationProvider")
-  @js.native
-  def registerImplementationProvider(selector: DocumentSelector, provider: ImplementationProvider): Disposable = js.native
+  @scala.inline
+  def registerImplementationProvider(selector: DocumentSelector, provider: ImplementationProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerImplementationProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerOnTypeFormattingEditProvider")
-  @js.native
+  @scala.inline
   def registerOnTypeFormattingEditProvider(
     selector: DocumentSelector,
     provider: OnTypeFormattingEditProvider,
     firstTriggerCharacter: String,
     moreTriggerCharacter: String*
-  ): Disposable = js.native
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOnTypeFormattingEditProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], firstTriggerCharacter.asInstanceOf[js.Any], moreTriggerCharacter.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerReferenceProvider")
-  @js.native
-  def registerReferenceProvider(selector: DocumentSelector, provider: ReferenceProvider): Disposable = js.native
+  @scala.inline
+  def registerReferenceProvider(selector: DocumentSelector, provider: ReferenceProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerReferenceProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerRenameProvider")
-  @js.native
-  def registerRenameProvider(selector: DocumentSelector, provider: RenameProvider): Disposable = js.native
+  @scala.inline
+  def registerRenameProvider(selector: DocumentSelector, provider: RenameProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRenameProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerSelectionRangeProvider")
-  @js.native
-  def registerSelectionRangeProvider(selector: DocumentSelector, provider: SelectionRangeProvider): Disposable = js.native
+  @scala.inline
+  def registerSelectionRangeProvider(selector: DocumentSelector, provider: SelectionRangeProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSelectionRangeProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerSignatureHelpProvider")
-  @js.native
+  @scala.inline
   def registerSignatureHelpProvider(
     selector: DocumentSelector,
     provider: SignatureHelpProvider,
     metadata: SignatureHelpProviderMetadata
-  ): Disposable = js.native
-  @JSImport("vscode", "languages.registerSignatureHelpProvider")
-  @js.native
-  def registerSignatureHelpProvider(selector: DocumentSelector, provider: SignatureHelpProvider, triggerCharacters: String*): Disposable = js.native
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSignatureHelpProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  @scala.inline
+  def registerSignatureHelpProvider(selector: DocumentSelector, provider: SignatureHelpProvider, triggerCharacters: String*): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSignatureHelpProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], triggerCharacters.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerTypeDefinitionProvider")
-  @js.native
-  def registerTypeDefinitionProvider(selector: DocumentSelector, provider: TypeDefinitionProvider): Disposable = js.native
+  @scala.inline
+  def registerTypeDefinitionProvider(selector: DocumentSelector, provider: TypeDefinitionProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTypeDefinitionProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.registerWorkspaceSymbolProvider")
-  @js.native
-  def registerWorkspaceSymbolProvider(provider: WorkspaceSymbolProvider[SymbolInformation]): Disposable = js.native
+  @scala.inline
+  def registerWorkspaceSymbolProvider(provider: WorkspaceSymbolProvider[SymbolInformation]): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("registerWorkspaceSymbolProvider")(provider.asInstanceOf[js.Any]).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.setLanguageConfiguration")
-  @js.native
-  def setLanguageConfiguration(language: String, configuration: LanguageConfiguration): Disposable = js.native
+  @scala.inline
+  def setLanguageConfiguration(language: String, configuration: LanguageConfiguration): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("setLanguageConfiguration")(language.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("vscode", "languages.setTextDocumentLanguage")
-  @js.native
-  def setTextDocumentLanguage(document: TextDocument, languageId: String): Thenable[TextDocument] = js.native
-  
-  @JSImport("vscode", "languages.match")
-  @js.native
-  def `match`(selector: DocumentSelector, document: TextDocument): Double = js.native
+  @scala.inline
+  def setTextDocumentLanguage(document: TextDocument, languageId: String): Thenable[TextDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("setTextDocumentLanguage")(document.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any])).asInstanceOf[Thenable[TextDocument]]
 }

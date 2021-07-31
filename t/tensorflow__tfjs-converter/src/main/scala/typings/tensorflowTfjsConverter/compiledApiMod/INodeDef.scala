@@ -3,26 +3,24 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INodeDef extends StObject {
   
   /** NodeDef attr */
-  var attr: js.UndefOr[StringDictionary[IAttrValue] | Null] = js.native
+  var attr: js.UndefOr[StringDictionary[IAttrValue] | Null] = js.undefined
   
   /** NodeDef device */
-  var device: js.UndefOr[String | Null] = js.native
+  var device: js.UndefOr[String | Null] = js.undefined
   
   /** NodeDef input */
-  var input: js.UndefOr[js.Array[String] | Null] = js.native
+  var input: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** NodeDef name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** NodeDef op */
-  var op: js.UndefOr[String | Null] = js.native
+  var op: js.UndefOr[String | Null] = js.undefined
 }
 object INodeDef {
   

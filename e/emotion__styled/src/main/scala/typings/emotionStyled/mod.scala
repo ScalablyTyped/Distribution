@@ -137,7 +137,6 @@ import typings.emotionStyled.emotionStyledStrings.wbr
 import typings.emotionStyledBase.mod.CreateStyledComponentIntrinsic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -148,290 +147,290 @@ object mod extends Shortcut {
   
   @js.native
   trait CreateStyled[Theme /* <: js.Object */]
-    extends typings.emotionStyledBase.mod.CreateStyled[Theme]
+    extends StObject
+       with typings.emotionStyledBase.mod.CreateStyled[Theme]
        with StyledTags[Theme]
   
-  @js.native
   trait StyledTags[Theme /* <: js.Object */] extends StObject {
     
     /**
       * @desc
       * HTML tags
       */
-    var a: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.a, js.Object, Theme] = js.native
+    var a: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.a, js.Object, Theme]
     
-    var abbr: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.abbr, js.Object, Theme] = js.native
+    var abbr: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.abbr, js.Object, Theme]
     
-    var address: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.address, js.Object, Theme] = js.native
+    var address: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.address, js.Object, Theme]
     
-    var area: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.area, js.Object, Theme] = js.native
+    var area: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.area, js.Object, Theme]
     
-    var article: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.article, js.Object, Theme] = js.native
+    var article: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.article, js.Object, Theme]
     
-    var aside: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.aside, js.Object, Theme] = js.native
+    var aside: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.aside, js.Object, Theme]
     
-    var audio: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.audio, js.Object, Theme] = js.native
+    var audio: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.audio, js.Object, Theme]
     
-    var b: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.b, js.Object, Theme] = js.native
+    var b: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.b, js.Object, Theme]
     
-    var base: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.base, js.Object, Theme] = js.native
+    var base: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.base, js.Object, Theme]
     
-    var bdi: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.bdi, js.Object, Theme] = js.native
+    var bdi: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.bdi, js.Object, Theme]
     
-    var bdo: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.bdo, js.Object, Theme] = js.native
+    var bdo: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.bdo, js.Object, Theme]
     
-    var big: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.big, js.Object, Theme] = js.native
+    var big: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.big, js.Object, Theme]
     
-    var blockquote: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.blockquote, js.Object, Theme] = js.native
+    var blockquote: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.blockquote, js.Object, Theme]
     
-    var body: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.body, js.Object, Theme] = js.native
+    var body: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.body, js.Object, Theme]
     
-    var br: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.br, js.Object, Theme] = js.native
+    var br: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.br, js.Object, Theme]
     
-    var button: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.button, js.Object, Theme] = js.native
+    var button: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.button, js.Object, Theme]
     
-    var canvas: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.canvas, js.Object, Theme] = js.native
+    var canvas: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.canvas, js.Object, Theme]
     
-    var caption: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.caption, js.Object, Theme] = js.native
+    var caption: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.caption, js.Object, Theme]
     
     /**
       * @desc
       * SVG tags
       */
-    var circle: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.circle, js.Object, Theme] = js.native
+    var circle: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.circle, js.Object, Theme]
     
-    var cite: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.cite, js.Object, Theme] = js.native
+    var cite: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.cite, js.Object, Theme]
     
-    var clipPath: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.clipPath, js.Object, Theme] = js.native
+    var clipPath: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.clipPath, js.Object, Theme]
     
-    var code: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.code, js.Object, Theme] = js.native
+    var code: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.code, js.Object, Theme]
     
-    var col: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.col, js.Object, Theme] = js.native
+    var col: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.col, js.Object, Theme]
     
-    var colgroup: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.colgroup, js.Object, Theme] = js.native
+    var colgroup: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.colgroup, js.Object, Theme]
     
-    var data: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.data, js.Object, Theme] = js.native
+    var data: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.data, js.Object, Theme]
     
-    var datalist: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.datalist, js.Object, Theme] = js.native
+    var datalist: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.datalist, js.Object, Theme]
     
-    var dd: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.dd, js.Object, Theme] = js.native
+    var dd: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.dd, js.Object, Theme]
     
-    var defs: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.defs, js.Object, Theme] = js.native
+    var defs: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.defs, js.Object, Theme]
     
-    var del: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.del, js.Object, Theme] = js.native
+    var del: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.del, js.Object, Theme]
     
-    var details: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.details, js.Object, Theme] = js.native
+    var details: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.details, js.Object, Theme]
     
-    var dfn: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.dfn, js.Object, Theme] = js.native
+    var dfn: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.dfn, js.Object, Theme]
     
-    var dialog: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.dialog, js.Object, Theme] = js.native
+    var dialog: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.dialog, js.Object, Theme]
     
-    var div: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.div, js.Object, Theme] = js.native
+    var div: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.div, js.Object, Theme]
     
-    var dl: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.dl, js.Object, Theme] = js.native
+    var dl: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.dl, js.Object, Theme]
     
-    var dt: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.dt, js.Object, Theme] = js.native
+    var dt: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.dt, js.Object, Theme]
     
-    var ellipse: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.ellipse, js.Object, Theme] = js.native
+    var ellipse: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.ellipse, js.Object, Theme]
     
-    var em: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.em, js.Object, Theme] = js.native
+    var em: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.em, js.Object, Theme]
     
-    var embed: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.embed, js.Object, Theme] = js.native
+    var embed: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.embed, js.Object, Theme]
     
-    var fieldset: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.fieldset, js.Object, Theme] = js.native
+    var fieldset: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.fieldset, js.Object, Theme]
     
-    var figcaption: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.figcaption, js.Object, Theme] = js.native
+    var figcaption: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.figcaption, js.Object, Theme]
     
-    var figure: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.figure, js.Object, Theme] = js.native
+    var figure: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.figure, js.Object, Theme]
     
-    var footer: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.footer, js.Object, Theme] = js.native
+    var footer: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.footer, js.Object, Theme]
     
-    var foreignObject: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.foreignObject, js.Object, Theme] = js.native
+    var foreignObject: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.foreignObject, js.Object, Theme]
     
-    var form: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.form, js.Object, Theme] = js.native
+    var form: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.form, js.Object, Theme]
     
-    var g: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.g, js.Object, Theme] = js.native
+    var g: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.g, js.Object, Theme]
     
-    var h1: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.h1, js.Object, Theme] = js.native
+    var h1: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.h1, js.Object, Theme]
     
-    var h2: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.h2, js.Object, Theme] = js.native
+    var h2: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.h2, js.Object, Theme]
     
-    var h3: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.h3, js.Object, Theme] = js.native
+    var h3: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.h3, js.Object, Theme]
     
-    var h4: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.h4, js.Object, Theme] = js.native
+    var h4: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.h4, js.Object, Theme]
     
-    var h5: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.h5, js.Object, Theme] = js.native
+    var h5: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.h5, js.Object, Theme]
     
-    var h6: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.h6, js.Object, Theme] = js.native
+    var h6: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.h6, js.Object, Theme]
     
-    var head: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.head, js.Object, Theme] = js.native
+    var head: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.head, js.Object, Theme]
     
-    var header: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.header, js.Object, Theme] = js.native
+    var header: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.header, js.Object, Theme]
     
-    var hgroup: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.hgroup, js.Object, Theme] = js.native
+    var hgroup: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.hgroup, js.Object, Theme]
     
-    var hr: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.hr, js.Object, Theme] = js.native
+    var hr: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.hr, js.Object, Theme]
     
-    var html: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.html, js.Object, Theme] = js.native
+    var html: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.html, js.Object, Theme]
     
-    var i: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.i, js.Object, Theme] = js.native
+    var i: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.i, js.Object, Theme]
     
-    var iframe: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.iframe, js.Object, Theme] = js.native
+    var iframe: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.iframe, js.Object, Theme]
     
-    var image: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.image, js.Object, Theme] = js.native
+    var image: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.image, js.Object, Theme]
     
-    var img: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.img, js.Object, Theme] = js.native
+    var img: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.img, js.Object, Theme]
     
-    var input: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.input, js.Object, Theme] = js.native
+    var input: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.input, js.Object, Theme]
     
-    var ins: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.ins, js.Object, Theme] = js.native
+    var ins: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.ins, js.Object, Theme]
     
-    var kbd: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.kbd, js.Object, Theme] = js.native
+    var kbd: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.kbd, js.Object, Theme]
     
-    var keygen: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.keygen, js.Object, Theme] = js.native
+    var keygen: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.keygen, js.Object, Theme]
     
-    var label: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.label, js.Object, Theme] = js.native
+    var label: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.label, js.Object, Theme]
     
-    var legend: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.legend, js.Object, Theme] = js.native
+    var legend: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.legend, js.Object, Theme]
     
-    var li: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.li, js.Object, Theme] = js.native
+    var li: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.li, js.Object, Theme]
     
-    var line: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.line, js.Object, Theme] = js.native
+    var line: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.line, js.Object, Theme]
     
-    var linearGradient: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.linearGradient, js.Object, Theme] = js.native
+    var linearGradient: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.linearGradient, js.Object, Theme]
     
-    var link: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.link, js.Object, Theme] = js.native
+    var link: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.link, js.Object, Theme]
     
-    var main: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.main, js.Object, Theme] = js.native
+    var main: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.main, js.Object, Theme]
     
-    var map: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.map, js.Object, Theme] = js.native
+    var map: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.map, js.Object, Theme]
     
-    var mark: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.mark, js.Object, Theme] = js.native
+    var mark: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.mark, js.Object, Theme]
     
-    var mask: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.mask, js.Object, Theme] = js.native
+    var mask: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.mask, js.Object, Theme]
     
     /**
       * @desc
       * marquee tag is not supported by @types/react
       */
     // 'marquee': CreateStyledComponentIntrinsic<'marquee', {}, Theme>;
-    var menu: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.menu, js.Object, Theme] = js.native
+    var menu: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.menu, js.Object, Theme]
     
-    var menuitem: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.menuitem, js.Object, Theme] = js.native
+    var menuitem: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.menuitem, js.Object, Theme]
     
-    var meta: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.meta, js.Object, Theme] = js.native
+    var meta: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.meta, js.Object, Theme]
     
-    var meter: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.meter, js.Object, Theme] = js.native
+    var meter: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.meter, js.Object, Theme]
     
-    var nav: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.nav, js.Object, Theme] = js.native
+    var nav: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.nav, js.Object, Theme]
     
-    var noscript: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.noscript, js.Object, Theme] = js.native
+    var noscript: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.noscript, js.Object, Theme]
     
-    var `object`: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.`object`, js.Object, Theme] = js.native
+    var `object`: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.`object`, js.Object, Theme]
     
-    var ol: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.ol, js.Object, Theme] = js.native
+    var ol: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.ol, js.Object, Theme]
     
-    var optgroup: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.optgroup, js.Object, Theme] = js.native
+    var optgroup: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.optgroup, js.Object, Theme]
     
-    var option: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.option, js.Object, Theme] = js.native
+    var option: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.option, js.Object, Theme]
     
-    var output: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.output, js.Object, Theme] = js.native
+    var output: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.output, js.Object, Theme]
     
-    var p: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.p, js.Object, Theme] = js.native
+    var p: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.p, js.Object, Theme]
     
-    var param: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.param, js.Object, Theme] = js.native
+    var param: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.param, js.Object, Theme]
     
-    var path: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.path, js.Object, Theme] = js.native
+    var path: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.path, js.Object, Theme]
     
-    var pattern: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.pattern, js.Object, Theme] = js.native
+    var pattern: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.pattern, js.Object, Theme]
     
-    var picture: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.picture, js.Object, Theme] = js.native
+    var picture: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.picture, js.Object, Theme]
     
-    var polygon: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.polygon, js.Object, Theme] = js.native
+    var polygon: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.polygon, js.Object, Theme]
     
-    var polyline: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.polyline, js.Object, Theme] = js.native
+    var polyline: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.polyline, js.Object, Theme]
     
-    var pre: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.pre, js.Object, Theme] = js.native
+    var pre: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.pre, js.Object, Theme]
     
-    var progress: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.progress, js.Object, Theme] = js.native
+    var progress: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.progress, js.Object, Theme]
     
-    var q: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.q, js.Object, Theme] = js.native
+    var q: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.q, js.Object, Theme]
     
-    var radialGradient: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.radialGradient, js.Object, Theme] = js.native
+    var radialGradient: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.radialGradient, js.Object, Theme]
     
-    var rect: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.rect, js.Object, Theme] = js.native
+    var rect: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.rect, js.Object, Theme]
     
-    var rp: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.rp, js.Object, Theme] = js.native
+    var rp: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.rp, js.Object, Theme]
     
-    var rt: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.rt, js.Object, Theme] = js.native
+    var rt: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.rt, js.Object, Theme]
     
-    var ruby: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.ruby, js.Object, Theme] = js.native
+    var ruby: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.ruby, js.Object, Theme]
     
-    var s: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.s, js.Object, Theme] = js.native
+    var s: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.s, js.Object, Theme]
     
-    var samp: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.samp, js.Object, Theme] = js.native
+    var samp: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.samp, js.Object, Theme]
     
-    var script: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.script, js.Object, Theme] = js.native
+    var script: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.script, js.Object, Theme]
     
-    var section: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.section, js.Object, Theme] = js.native
+    var section: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.section, js.Object, Theme]
     
-    var select: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.select, js.Object, Theme] = js.native
+    var select: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.select, js.Object, Theme]
     
-    var small: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.small, js.Object, Theme] = js.native
+    var small: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.small, js.Object, Theme]
     
-    var source: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.source, js.Object, Theme] = js.native
+    var source: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.source, js.Object, Theme]
     
-    var span: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.span, js.Object, Theme] = js.native
+    var span: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.span, js.Object, Theme]
     
-    var stop: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.stop, js.Object, Theme] = js.native
+    var stop: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.stop, js.Object, Theme]
     
-    var strong: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.strong, js.Object, Theme] = js.native
+    var strong: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.strong, js.Object, Theme]
     
-    var style: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.style, js.Object, Theme] = js.native
+    var style: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.style, js.Object, Theme]
     
-    var sub: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.sub, js.Object, Theme] = js.native
+    var sub: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.sub, js.Object, Theme]
     
-    var summary: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.summary, js.Object, Theme] = js.native
+    var summary: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.summary, js.Object, Theme]
     
-    var sup: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.sup, js.Object, Theme] = js.native
+    var sup: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.sup, js.Object, Theme]
     
-    var svg: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.svg, js.Object, Theme] = js.native
+    var svg: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.svg, js.Object, Theme]
     
-    var table: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.table, js.Object, Theme] = js.native
+    var table: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.table, js.Object, Theme]
     
-    var tbody: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.tbody, js.Object, Theme] = js.native
+    var tbody: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.tbody, js.Object, Theme]
     
-    var td: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.td, js.Object, Theme] = js.native
+    var td: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.td, js.Object, Theme]
     
-    var text: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.text, js.Object, Theme] = js.native
+    var text: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.text, js.Object, Theme]
     
-    var textarea: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.textarea, js.Object, Theme] = js.native
+    var textarea: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.textarea, js.Object, Theme]
     
-    var tfoot: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.tfoot, js.Object, Theme] = js.native
+    var tfoot: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.tfoot, js.Object, Theme]
     
-    var th: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.th, js.Object, Theme] = js.native
+    var th: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.th, js.Object, Theme]
     
-    var thead: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.thead, js.Object, Theme] = js.native
+    var thead: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.thead, js.Object, Theme]
     
-    var time: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.time, js.Object, Theme] = js.native
+    var time: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.time, js.Object, Theme]
     
-    var title: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.title, js.Object, Theme] = js.native
+    var title: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.title, js.Object, Theme]
     
-    var tr: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.tr, js.Object, Theme] = js.native
+    var tr: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.tr, js.Object, Theme]
     
-    var track: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.track, js.Object, Theme] = js.native
+    var track: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.track, js.Object, Theme]
     
-    var tspan: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.tspan, js.Object, Theme] = js.native
+    var tspan: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.tspan, js.Object, Theme]
     
-    var u: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.u, js.Object, Theme] = js.native
+    var u: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.u, js.Object, Theme]
     
-    var ul: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.ul, js.Object, Theme] = js.native
+    var ul: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.ul, js.Object, Theme]
     
-    var `var`: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.`var`, js.Object, Theme] = js.native
+    var `var`: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.`var`, js.Object, Theme]
     
-    var video: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.video, js.Object, Theme] = js.native
+    var video: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.video, js.Object, Theme]
     
-    var wbr: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.wbr, js.Object, Theme] = js.native
+    var wbr: CreateStyledComponentIntrinsic[typings.emotionStyled.emotionStyledStrings.wbr, js.Object, Theme]
   }
   object StyledTags {
     
@@ -578,7 +577,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class StyledTagsMutableBuilder[Self <: StyledTags[_], Theme /* <: js.Object */] (val x: Self with StyledTags[Theme]) extends AnyVal {
+    implicit class StyledTagsMutableBuilder[Self <: StyledTags[?], Theme /* <: js.Object */] (val x: Self & StyledTags[Theme]) extends AnyVal {
       
       @scala.inline
       def setA(value: CreateStyledComponentIntrinsic[a, js.Object, Theme]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])

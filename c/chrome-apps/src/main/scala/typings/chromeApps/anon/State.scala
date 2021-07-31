@@ -14,13 +14,11 @@ import typings.chromeApps.chromeAppsStrings.temporary_unavailable_
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait State extends StObject {
   
-  var description: String = js.native
+  var description: String
   
   var state: ToStringLiteral[
     AUTHENTICATIONREQUIRED, 
@@ -29,7 +27,7 @@ trait State extends StObject {
       /* keyof chrome-apps.anon.AUTHENTICATIONREQUIRED */ INITIALIZING | RUNNING | AUTHENTICATION_REQUIRED | TEMPORARY_UNAVAILABLE | DISABLED, 
       temporary_unavailable_ | authentication_required_ | disabled__ | initializing_ | running_
     ]
-  ] = js.native
+  ]
 }
 object State {
   

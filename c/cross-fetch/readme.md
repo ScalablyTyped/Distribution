@@ -10,9 +10,9 @@ Universal WHATWG Fetch API for Node, Browsers and React Native
 | ------------------ | :-------------: |
 | Full name          | cross-fetch |
 | Keywords           | fetch, http, url, promise, async, await, isomorphic, universal, node, react, native, browser, ponyfill, whatwg, xhr, ajax |
-| # releases         | 7 |
-| # dependents       | 1055 |
-| # downloads        | 117965101 |
+| # releases         | 6 |
+| # dependents       | 1337 |
+| # downloads        | 179989326 |
 | # stars            | 7 |
 
 ## Links

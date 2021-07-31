@@ -5,48 +5,46 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Controls how the Contact Picker user interface opens and what information it shows. */
-@js.native
 trait ContactPicker extends StObject {
   
   /** Sets the text for the confirmation button in the Contact Picker user interface. */
-  var commitButtonText: String = js.native
+  var commitButtonText: String
   
   /** Sets the contact fields your app is interested in. */
-  var desiredFields: IVector[String] = js.native
+  var desiredFields: IVector[String]
   
   /** Gets the ways to connect with a contact. */
-  var desiredFieldsWithContactFieldType: IVector[ContactFieldType] = js.native
+  var desiredFieldsWithContactFieldType: IVector[ContactFieldType]
   
   /**
     * Launches the Contact Picker to select a single contact.
     * @return The operation that launches the Contact Picker.
     */
-  def pickContactAsync(): IPromiseWithIAsyncOperation[Contact] = js.native
+  def pickContactAsync(): IPromiseWithIAsyncOperation[Contact]
   
   /**
     * Launches the Contact Picker for selecting multiple contacts.
     * @return The operation that launches the contact picker.
     */
-  def pickContactsAsync(): IPromiseWithIAsyncOperation[IVector[_]] = js.native
+  def pickContactsAsync(): IPromiseWithIAsyncOperation[IVector[js.Any]]
   
   /**
     * Launches the Contact Picker for selecting multiple contacts.
     * @return The operation that launches the contact picker.
     */
-  def pickMultipleContactsAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def pickMultipleContactsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
   
   /**
     * Launches the Contact Picker for selecting a single contact.
     * @return The operation that launches the Contact Picker.
     */
-  def pickSingleContactAsync(): IPromiseWithIAsyncOperation[ContactInformation] = js.native
+  def pickSingleContactAsync(): IPromiseWithIAsyncOperation[ContactInformation]
   
   /** Controls whether the Contact Picker shows contacts as a complete entity or as a collection of fields. */
-  var selectionMode: ContactSelectionMode = js.native
+  var selectionMode: ContactSelectionMode
 }
 object ContactPicker {
   
@@ -56,8 +54,8 @@ object ContactPicker {
     desiredFields: IVector[String],
     desiredFieldsWithContactFieldType: IVector[ContactFieldType],
     pickContactAsync: () => IPromiseWithIAsyncOperation[Contact],
-    pickContactsAsync: () => IPromiseWithIAsyncOperation[IVector[_]],
-    pickMultipleContactsAsync: () => IPromiseWithIAsyncOperation[IVectorView[_]],
+    pickContactsAsync: () => IPromiseWithIAsyncOperation[IVector[js.Any]],
+    pickMultipleContactsAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
     pickSingleContactAsync: () => IPromiseWithIAsyncOperation[ContactInformation],
     selectionMode: ContactSelectionMode
   ): ContactPicker = {
@@ -81,10 +79,10 @@ object ContactPicker {
     def setPickContactAsync(value: () => IPromiseWithIAsyncOperation[Contact]): Self = StObject.set(x, "pickContactAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPickContactsAsync(value: () => IPromiseWithIAsyncOperation[IVector[_]]): Self = StObject.set(x, "pickContactsAsync", js.Any.fromFunction0(value))
+    def setPickContactsAsync(value: () => IPromiseWithIAsyncOperation[IVector[js.Any]]): Self = StObject.set(x, "pickContactsAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPickMultipleContactsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[_]]): Self = StObject.set(x, "pickMultipleContactsAsync", js.Any.fromFunction0(value))
+    def setPickMultipleContactsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "pickMultipleContactsAsync", js.Any.fromFunction0(value))
     
     @scala.inline
     def setPickSingleContactAsync(value: () => IPromiseWithIAsyncOperation[ContactInformation]): Self = StObject.set(x, "pickSingleContactAsync", js.Any.fromFunction0(value))

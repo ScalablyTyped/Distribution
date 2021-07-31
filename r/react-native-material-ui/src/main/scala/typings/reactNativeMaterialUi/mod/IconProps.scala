@@ -2,19 +2,17 @@ package typings.reactNativeMaterialUi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconProps extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[ViewStyle | js.Array[ViewStyle]] = js.native
+  var style: js.UndefOr[ViewStyle | js.Array[ViewStyle]] = js.undefined
 }
 object IconProps {
   

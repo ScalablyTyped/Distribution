@@ -13,7 +13,6 @@ import typings.html5plus.html5plusStrings.right
 import typings.html5plus.html5plusStrings.share
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
   
   /**
@@ -31,7 +29,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
   /**
     * 按钮上显示的角标文本
@@ -39,7 +37,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var badgeText: js.UndefOr[String] = js.native
+  var badgeText: js.UndefOr[String] = js.undefined
   
   /**
     * 按钮上文字颜色
@@ -49,7 +47,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * 按下状态按钮文字颜色
@@ -59,7 +57,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var colorPressed: js.UndefOr[String] = js.native
+  var colorPressed: js.UndefOr[String] = js.undefined
   
   /**
     * 按钮在标题栏上的显示位置
@@ -76,7 +74,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var float: js.UndefOr[right | left] = js.native
+  var float: js.UndefOr[right | left] = js.undefined
   
   /**
     * 按钮上文字大小
@@ -86,7 +84,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
   /**
     * 按钮上文字使用的字体文件路径
@@ -98,7 +96,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var fontSrc: js.UndefOr[String] = js.native
+  var fontSrc: js.UndefOr[String] = js.undefined
   
   /**
     * 按钮上文字的粗细
@@ -115,7 +113,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var fontWeight: js.UndefOr[normal | bold] = js.native
+  var fontWeight: js.UndefOr[normal | bold] = js.undefined
   
   /**
     * 按钮点击后触发的回调函数
@@ -123,7 +121,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var onclick: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onclick: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
   
   /**
     * 按钮上是否显示红点
@@ -132,7 +130,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var redDot: js.UndefOr[Boolean] = js.native
+  var redDot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否显示选择指示图标
@@ -141,7 +139,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var select: js.UndefOr[Boolean] = js.native
+  var select: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 按钮上显示的文字
@@ -149,7 +147,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * 按钮样式
@@ -174,7 +172,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `type`: js.UndefOr[forward | back | share | favorite | home | menu | close] = js.native
+  var `type`: js.UndefOr[forward | back | share | favorite | home | menu | close] = js.undefined
   
   /**
     * 按钮的宽度
@@ -185,7 +183,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object PlusWebviewWebviewTitleNViewButtonStyles {
   

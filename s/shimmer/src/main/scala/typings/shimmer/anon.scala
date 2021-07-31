@@ -2,15 +2,13 @@ package typings.shimmer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Logger extends StObject {
     
-    var logger: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.native
+    var logger: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.undefined
   }
   object Logger {
     

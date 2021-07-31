@@ -2,29 +2,27 @@ package typings.reactNativeShare.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultipleOptions extends StObject {
   
-  var excludedActivityTypes: js.UndefOr[String] = js.native
+  var excludedActivityTypes: js.UndefOr[String] = js.undefined
   
-  var failOnCancel: js.UndefOr[Boolean] = js.native
+  var failOnCancel: js.UndefOr[Boolean] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var showAppsToView: js.UndefOr[Boolean] = js.native
+  var showAppsToView: js.UndefOr[Boolean] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var urls: js.Array[String] = js.native
+  var urls: js.Array[String]
 }
 object MultipleOptions {
   

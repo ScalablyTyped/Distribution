@@ -9,7 +9,6 @@ import typings.matrixAppserviceBridge.usersMatrixMod.MatrixUser
 import typings.matrixAppserviceBridge.usersRemoteMod.RemoteUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bridgeContextMod {
@@ -43,20 +42,19 @@ object bridgeContextMod {
     val targets: BridgeContextTargets = js.native
   }
   
-  @js.native
   trait BridgeContextRoom extends StObject {
     
-    var matrix: MatrixRoom = js.native
+    var matrix: MatrixRoom
     
-    var remote: RemoteRoom | Null = js.native
+    var remote: RemoteRoom | Null
     
-    var remotes: js.Array[RemoteRoom] = js.native
+    var remotes: js.Array[RemoteRoom]
   }
   object BridgeContextRoom {
     
     @scala.inline
     def apply(matrix: MatrixRoom, remotes: js.Array[RemoteRoom]): BridgeContextRoom = {
-      val __obj = js.Dynamic.literal(matrix = matrix.asInstanceOf[js.Any], remotes = remotes.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(matrix = matrix.asInstanceOf[js.Any], remotes = remotes.asInstanceOf[js.Any], remote = null)
       __obj.asInstanceOf[BridgeContextRoom]
     }
     
@@ -80,20 +78,19 @@ object bridgeContextMod {
     }
   }
   
-  @js.native
   trait BridgeContextSenders extends StObject {
     
-    var matrix: MatrixUser = js.native
+    var matrix: MatrixUser
     
-    var remote: RemoteUser | Null = js.native
+    var remote: RemoteUser | Null
     
-    var remotes: js.Array[RemoteUser] = js.native
+    var remotes: js.Array[RemoteUser]
   }
   object BridgeContextSenders {
     
     @scala.inline
     def apply(matrix: MatrixUser, remotes: js.Array[RemoteUser]): BridgeContextSenders = {
-      val __obj = js.Dynamic.literal(matrix = matrix.asInstanceOf[js.Any], remotes = remotes.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(matrix = matrix.asInstanceOf[js.Any], remotes = remotes.asInstanceOf[js.Any], remote = null)
       __obj.asInstanceOf[BridgeContextSenders]
     }
     
@@ -117,20 +114,19 @@ object bridgeContextMod {
     }
   }
   
-  @js.native
   trait BridgeContextTargets extends StObject {
     
-    var matrix: MatrixUser | Null = js.native
+    var matrix: MatrixUser | Null
     
-    var remote: RemoteUser | Null = js.native
+    var remote: RemoteUser | Null
     
-    var remotes: js.Array[RemoteUser] = js.native
+    var remotes: js.Array[RemoteUser]
   }
   object BridgeContextTargets {
     
     @scala.inline
     def apply(remotes: js.Array[RemoteUser]): BridgeContextTargets = {
-      val __obj = js.Dynamic.literal(remotes = remotes.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(remotes = remotes.asInstanceOf[js.Any], matrix = null, remote = null)
       __obj.asInstanceOf[BridgeContextTargets]
     }
     
